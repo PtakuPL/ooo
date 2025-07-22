@@ -47,7 +47,11 @@ jobs:
             ./vcpkg/bootstrap-vcpkg.sh
           fi
           ./vcpkg/vcpkg install boost
-          ./vcpkg/vcpkg install python3 --binarysource="clear;default"
+
+      - name: Show vcpkg build logs if failed
+        if: failure()
+        run: |
+          find vcpkg/buildtrees -name '*-err.log' -exec echo '--- {} ---' \; -exec cat {} \; || true
 
       - name: Configure and build
         run: |

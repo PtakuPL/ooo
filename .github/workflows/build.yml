@@ -17,23 +17,17 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt update
-          sudo apt install -y cmake ninja-build g++ git curl zip unzip tar pkg-config libboost-all-dev
+          sudo apt install -y cmake ninja-build g++ git curl zip unzip tar pkg-config libboost-all-dev autoconf automake libtool
 
       - name: Clean build directory
         run: |
           rm -rf Tibia/silnik/budowa_silnik
 
-      - name: Clone vcpkg
+      - name: Clone vcpkg and install boost
         run: |
           git clone https://github.com/microsoft/vcpkg.git
           ./vcpkg/bootstrap-vcpkg.sh
           ./vcpkg/vcpkg install boost
-
-        -name: Install system dependencies
-        run: |
-          sudo apt update
-          sudo apt install -y cmake ninja-build g++ git curl zip unzip tar pkg-config libboost-all-dev \
-          autoconf automake libtool
 
       - name: Configure and build
         run: |
@@ -43,6 +37,11 @@ jobs:
             -G Ninja
           cmake --build Tibia/silnik/budowa_silnik --config Release
 
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: Tibia/silnik/budowa_silnik
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:

@@ -14,6 +14,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # CACHE: zmień klucz cache na nowy, aby wymusić świeży cache
       - name: Setup vcpkg cache
         uses: actions/cache@v4
         with:
@@ -21,7 +22,7 @@ jobs:
             ~/.cache/vcpkg
             vcpkg/installed
             vcpkg/buildtrees
-          key: ${{ runner.os }}-vcpkg-${{ hashFiles('vcpkg.json') }}
+          key: ${{ runner.os }}-vcpkg-v2-${{ hashFiles('vcpkg.json') }}
           restore-keys: |
             ${{ runner.os }}-vcpkg-
 
@@ -33,7 +34,7 @@ jobs:
             autoconf automake libtool libtool-bin m4 gperf gettext texinfo \
             libboost-all-dev libbz2-dev libssl-dev libreadline-dev \
             libsqlite3-dev zlib1g-dev tk-dev uuid-dev pkg-config libffi-dev \
-            python3 python3-dev python3-pip \
+            python3 python3-dev python3-pip python3-setuptools \
             libncurses-dev libgdbm-dev libnss3-dev liblzma-dev \
             bison flex gawk
 
@@ -49,6 +50,12 @@ jobs:
           ./vcpkg/vcpkg install boost
           ./vcpkg/vcpkg install python3 --binarysource="clear;default"
 
+      # Jeśli budowa się nie powiedzie, pokaż logi z autoconf
+      - name: Show Python3 autoconf log (if build failed)
+        if: failure()
+        run: |
+          cat /home/runner/work/${{ github.repository }}/vcpkg/buildtrees/python3/autoconf-x64-linux-err.log || true
+
       - name: Configure and build
         run: |
           cmake -S Tibia/silnik/canary -B Tibia/silnik/budowa_silnik \
@@ -62,3 +69,4 @@ jobs:
         with:
           name: build-output
           path: Tibia/silnik/budowa_silnik
+          

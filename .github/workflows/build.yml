@@ -8,13 +8,12 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # CACHE: zmień klucz cache na nowy, aby wymusić świeży cache
       - name: Setup vcpkg cache
         uses: actions/cache@v4
         with:
@@ -50,12 +49,6 @@ jobs:
           ./vcpkg/vcpkg install boost
           ./vcpkg/vcpkg install python3 --binarysource="clear;default"
 
-      # Jeśli budowa się nie powiedzie, pokaż logi z autoconf
-      - name: Show Python3 autoconf log (if build failed)
-        if: failure()
-        run: |
-          cat /home/runner/work/${{ github.repository }}/vcpkg/buildtrees/python3/autoconf-x64-linux-err.log || true
-
       - name: Configure and build
         run: |
           cmake -S Tibia/silnik/canary -B Tibia/silnik/budowa_silnik \
@@ -69,4 +62,3 @@ jobs:
         with:
           name: build-output
           path: Tibia/silnik/budowa_silnik
-          

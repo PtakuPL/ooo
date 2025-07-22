@@ -21,7 +21,6 @@
     "zlib",
     "bshoshany-thread-pool",
     "atomic-queue",
-
     {
       "name": "opentelemetry-cpp",
       "default-features": true,
@@ -34,6 +33,12 @@
     {
       "name": "mpir",
       "platform": "windows"
+    }
+  ],
+  "overrides": [
+    {
+      "name": "python3",
+      "version-string": "0"
     }
   ],
   "builtin-baseline": "d6995a0cf3cafda5e9e52749fad075dd62bfd90c"

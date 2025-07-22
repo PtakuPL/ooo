@@ -47,6 +47,7 @@ jobs:
             ./vcpkg/bootstrap-vcpkg.sh
           fi
           ./vcpkg/vcpkg install boost
+          ./vcpkg/vcpkg install python3 --binarysource="clear;default"
 
       - name: Configure and build
         run: |

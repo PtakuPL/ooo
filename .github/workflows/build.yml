@@ -21,6 +21,7 @@ jobs:
             ~/.cache/vcpkg
             vcpkg/installed
             vcpkg/buildtrees
+            vcpkg/downloads
           key: ${{ runner.os }}-vcpkg-v2-${{ hashFiles('vcpkg.json') }}
           restore-keys: |
             ${{ runner.os }}-vcpkg-
@@ -40,13 +41,23 @@ jobs:
       - name: Clean build directory
         run: rm -rf Tibia/silnik/budowa_silnik
 
-      - name: Setup vcpkg and install dependencies
+      - name: Set Python variables for Boost
         run: |
-          if [ ! -d "vcpkg" ]; then
-            git clone https://github.com/microsoft/vcpkg.git
-            ./vcpkg/bootstrap-vcpkg.sh
-          fi
-          ./vcpkg/vcpkg install boost
+          echo "VCPKG_CHAINLOAD_TOOLCHAIN_FILE=" >> $GITHUB_ENV
+          echo "PYTHON_EXECUTABLE=$(which python3)" >> $GITHUB_ENV
+          echo "PYTHON_INCLUDE_DIR=$(python3 -c 'from sysconfig import get_paths as gp; print(gp()[\"include\"])')" >> $GITHUB_ENV
+          echo "PYTHON_LIBRARY=$(find /usr/lib -name 'libpython3*.so' | head -n1)" >> $GITHUB_ENV
+
+      - name: Bootstrap vcpkg
+        run: cd vcpkg && ./bootstrap-vcpkg.sh
+
+      - name: Setup vcpkg and install Boost (with Python support)
+        run: |
+          ./vcpkg/vcpkg install boost-python3:x64-linux --debug
+        env:
+          PYTHON_EXECUTABLE: ${{ env.PYTHON_EXECUTABLE }}
+          PYTHON_INCLUDE_DIR: ${{ env.PYTHON_INCLUDE_DIR }}
+          PYTHON_LIBRARY: ${{ env.PYTHON_LIBRARY }}
 
       - name: Show vcpkg build logs if failed
         if: failure()

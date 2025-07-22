@@ -33,18 +33,21 @@ jobs:
           sudo apt-get install -y \
             autoconf automake libtool libtool-bin m4 gperf gettext texinfo \
             libboost-all-dev libbz2-dev libssl-dev libreadline-dev \
-            libsqlite3-dev zlib1g-dev tk-dev uuid-dev
+            libsqlite3-dev zlib1g-dev tk-dev uuid-dev pkg-config libffi-dev
 
       - name: Clean build directory
         run: rm -rf Tibia/silnik/budowa_silnik
 
-      - name: Clone vcpkg and install boost
+      - name: Clone or update vcpkg and install boost and python3
         run: |
           if [ ! -d "vcpkg" ]; then
             git clone https://github.com/microsoft/vcpkg.git
             ./vcpkg/bootstrap-vcpkg.sh
+          else
+            cd vcpkg && git pull && ./bootstrap-vcpkg.sh
+            cd ..
           fi
-          ./vcpkg/vcpkg install boost
+          ./vcpkg/vcpkg install boost python3
 
       - name: Configure and build
         run: |

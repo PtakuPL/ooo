@@ -14,10 +14,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install dependencies
+      - name: Install system dependencies
         run: |
           sudo apt update
-          sudo apt install -y cmake ninja-build g++ git curl zip unzip tar pkg-config
+          sudo apt install -y cmake ninja-build g++ git curl zip unzip tar pkg-config libboost-all-dev
 
       - name: Clean build directory
         run: |
@@ -27,6 +27,7 @@ jobs:
         run: |
           git clone https://github.com/microsoft/vcpkg.git
           ./vcpkg/bootstrap-vcpkg.sh
+          ./vcpkg/vcpkg install boost
 
       - name: Configure and build
         run: |
@@ -34,10 +35,10 @@ jobs:
             -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake \
             -DCMAKE_BUILD_TYPE=Release \
             -G Ninja
-          cmake --build Tibia/budowa_silnik --config Release
+          cmake --build Tibia/silnik/budowa_silnik --config Release
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
           name: build-output
-          path: Tibia/budowa_silnik
+          path: Tibia/silnik/budowa_silnik

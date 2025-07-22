@@ -1,0 +1,46 @@
+name: Build Canary Engine
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y cmake ninja-build g++ git curl zip unzip tar pkg-config cppcheck
+
+      - name: Clone vcpkg
+        run: |
+          git clone https://github.com/microsoft/vcpkg.git
+          cd vcpkg
+          ./bootstrap-vcpkg.sh
+
+      - name: Static code analysis with cppcheck
+        run: |
+          cppcheck --enable=all --inconclusive --error-exitcode=1 Tibia/canary/src
+
+      - name: Configure and build
+        run: |
+          set -e
+          set -x
+          cmake -S Tibia/canary -B Tibia/budowa_silnik \
+            -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake \
+            -DCMAKE_BUILD_TYPE=Release \
+            -G Ninja
+          cmake --build Tibia/budowa_silnik --config Release
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-output
+          path: Tibia/budowa_silnik/bin/

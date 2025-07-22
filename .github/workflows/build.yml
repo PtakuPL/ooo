@@ -24,10 +24,13 @@ jobs:
 
       - name: Install system dependencies
         run: |
-          sudo apt update
-          sudo apt install -y cmake ninja-build g++ git curl zip unzip tar pkg-config \
-            libboost-all-dev autoconf automake libtool m4 libbz2-dev libssl-dev libreadline-dev libsqlite3-dev zlib1g-dev tk-dev uuid-dev build-essential
-
+          sudo apt-get update
+          sudo apt-get install -y \
+            cmake ninja-build g++ git curl zip unzip tar pkg-config \
+            autoconf automake libtool libtool-bin m4 gperf gettext texinfo \
+            libboost-all-dev libbz2-dev libssl-dev libreadline-dev \
+            libsqlite3-dev zlib1g-dev tk-dev uuid-dev build-essential
+            
       - name: Clean build directory
         run: rm -rf Tibia/silnik/budowa_silnik
 

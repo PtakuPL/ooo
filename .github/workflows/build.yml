@@ -59,7 +59,7 @@ jobs:
 
       - name: Setup vcpkg and install Boost (with Python support)
         run: |
-          ./vcpkg/vcpkg install boost-python3:x64-linux --debug
+          ./vcpkg/vcpkg install boost-python --debug
         env:
           PYTHON_EXECUTABLE: ${{ env.PYTHON_EXECUTABLE }}
           PYTHON_INCLUDE_DIR: ${{ env.PYTHON_INCLUDE_DIR }}

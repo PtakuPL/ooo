@@ -18,15 +18,16 @@ jobs:
         uses: actions/cache@v3
         with:
           path: vcpkg
-          key: ${{ runner.os }}-vcpkg-${{ hashFiles('**/vcpkg.json') }}
+          key: ${{ runner.os }}-vcpkg-${{ hashFiles('**/vcpkg.json') }}-${{ hashFiles('**/CONTROL') }}
           restore-keys: |
             ${{ runner.os }}-vcpkg-
 
       - name: Install system dependencies
         run: |
-          sudo apt update
-          sudo apt install -y cmake ninja-build g++ git curl zip unzip tar pkg-config \
-            libboost-all-dev autoconf automake libtool m4 libbz2-dev
+          sudo apt-get update
+          sudo apt-get install -y \
+            cmake ninja-build g++ git curl zip unzip tar pkg-config libboost-all-dev \
+            autoconf automake libtool m4 libffi-dev libbz2-dev libssl-dev libreadline-dev libsqlite3-dev zlib1g-dev tk-dev uuid-dev build-essential
 
       - name: Clean build directory
         run: |
@@ -38,6 +39,8 @@ jobs:
             git clone https://github.com/microsoft/vcpkg.git
             ./vcpkg/bootstrap-vcpkg.sh
           fi
+          export VCPKG_FEATURE_FLAGS=manifests,versions
+          export VCPKG_PREFER_SYSTEM_LIBS=1
           ./vcpkg/vcpkg install boost
 
       - name: Configure and build
@@ -48,6 +51,11 @@ jobs:
             -G Ninja
           cmake --build Tibia/silnik/budowa_silnik --config Release
 
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: Tibia/silnik/budowa_silnik
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:

@@ -1,0 +1,70 @@
+In file included from /home/ptaku/serweryt/Tibia/silnik/canary/src/creatures/players/grouping/groups.cpp:12:
+/home/ptaku/serweryt/Tibia/silnik/canary/src/config/configmanager.hpp:51:80: error: no type named 'source_location' in namespace 'std'
+        [[nodiscard]] const std::string &getString(const ConfigKey_t &key, const std::source_location &location = std::source_location::current()) const;
+                                                                                 ~~~~~^
+/home/ptaku/serweryt/Tibia/silnik/canary/src/config/configmanager.hpp:52:69: error: no type named 'source_location' in namespace 'std'
+        [[nodiscard]] int32_t getNumber(const ConfigKey_t &key, const std::source_location &location = std::source_location::current()) const;
+                                                                      ~~~~~^
+/home/ptaku/serweryt/Tibia/silnik/canary/src/config/configmanager.hpp:53:67: error: no type named 'source_location' in namespace 'std'
+        [[nodiscard]] bool getBoolean(const ConfigKey_t &key, const std::source_location &location = std::source_location::current()) const;
+                                                                    ~~~~~^
+/home/ptaku/serweryt/Tibia/silnik/canary/src/config/configmanager.hpp:54:66: error: no type named 'source_location' in namespace 'std'
+        [[nodiscard]] float getFloat(const ConfigKey_t &key, const std::source_location &location = std::source_location::current()) const;
+                                                                   ~~~~~^
+/home/ptaku/serweryt/Tibia/silnik/canary/src/config/configmanager.hpp:51:113: error: no member named 'source_location' in namespace 'std'
+        [[nodiscard]] const std::string &getString(const ConfigKey_t &key, const std::source_location &location = std::source_location::current()) const;
+                                                                                                                  ~~~~~^
+/home/ptaku/serweryt/Tibia/silnik/canary/src/config/configmanager.hpp:52:102: error: no member named 'source_location' in namespace 'std'
+        [[nodiscard]] int32_t getNumber(const ConfigKey_t &key, const std::source_location &location = std::source_location::current()) const;
+                                                                                                       ~~~~~^
+/home/ptaku/serweryt/Tibia/silnik/canary/src/config/configmanager.hpp:53:100: error: no member named 'source_location' in namespace 'std'
+        [[nodiscard]] bool getBoolean(const ConfigKey_t &key, const std::source_location &location = std::source_location::current()) const;
+                                                                                                     ~~~~~^
+/home/ptaku/serweryt/Tibia/silnik/canary/src/config/configmanager.hpp:54:99: error: no member named 'source_location' in namespace 'std'
+        [[nodiscard]] float getFloat(const ConfigKey_t &key, const std::source_location &location = std::source_location::current()) const;
+                                                                                                    ~~~~~^
+In file included from /home/ptaku/serweryt/Tibia/silnik/canary/src/creatures/players/grouping/groups.cpp:13:
+In file included from /home/ptaku/serweryt/Tibia/silnik/canary/src/game/game.hpp:29:
+In file included from /home/ptaku/serweryt/Tibia/silnik/canary/src/lua/creature/raids.hpp:25:
+In file included from /home/ptaku/serweryt/Tibia/silnik/canary/src/lua/scripts/luascript.hpp:20:
+In file included from /home/ptaku/serweryt/Tibia/silnik/canary/src/lua/functions/lua_functions_loader.hpp:27:
+In file included from /home/ptaku/serweryt/Tibia/silnik/canary/src/lua/scripts/script_environment.hpp:20:
+/home/ptaku/serweryt/Tibia/silnik/canary/src/database/database.hpp:119:4: error: use of undeclared identifier 'g_logger'
+                        g_logger().error("[DBResult::getNumber] - Column '{}' doesn't exist in the result set", s);
+                        ^
+/home/ptaku/serweryt/Tibia/silnik/canary/src/database/database.hpp:158:6: error: use of undeclared identifier 'g_logger'
+                                        g_logger().error("Invalid signed type T");
+                                        ^
+/home/ptaku/serweryt/Tibia/silnik/canary/src/database/database.hpp:174:6: error: use of undeclared identifier 'g_logger'
+                                        g_logger().error("Column '{}' has an invalid unsigned T is invalid", s);
+                                        ^
+/home/ptaku/serweryt/Tibia/silnik/canary/src/database/database.hpp:179:4: error: use of undeclared identifier 'g_logger'
+                        g_logger().error("Column '{}' has an invalid value set, error code: {}", s, e.what());
+                        ^
+/home/ptaku/serweryt/Tibia/silnik/canary/src/database/database.hpp:183:4: error: use of undeclared identifier 'g_logger'
+                        g_logger().error("Column '{}' has a value out of range, error code: {}", s, e.what());
+                        ^
+/home/ptaku/serweryt/Tibia/silnik/canary/src/database/database.hpp:251:5: error: use of undeclared identifier 'g_logger'
+                                g_logger().error("[{}] Error occurred during transaction, error: {}", __FUNCTION__, exception.what());
+                                ^
+/home/ptaku/serweryt/Tibia/silnik/canary/src/database/database.hpp:273:4: error: use of undeclared identifier 'g_logger'
+                        g_logger().error("[{}] An error occurred while starting the transaction, error: {}", __FUNCTION__, exception.what());
+                        ^
+/home/ptaku/serweryt/Tibia/silnik/canary/src/database/database.hpp:290:4: error: use of undeclared identifier 'g_logger'
+                        g_logger().error("[{}] An error occurred while rolling back the transaction, error: {}", __FUNCTION__, exception.what());
+                        ^
+/home/ptaku/serweryt/Tibia/silnik/canary/src/database/database.hpp:297:4: error: use of undeclared identifier 'g_logger'
+                        g_logger().error("Transaction not started");
+                        ^
+/home/ptaku/serweryt/Tibia/silnik/canary/src/database/database.hpp:308:4: error: use of undeclared identifier 'g_logger'
+                        g_logger().error("[{}] An error occurred while committing the transaction, error: {}", __FUNCTION__, exception.what());
+                        ^
+In file included from /home/ptaku/serweryt/Tibia/silnik/canary/src/creatures/players/grouping/groups.cpp:13:
+In file included from /home/ptaku/serweryt/Tibia/silnik/canary/src/game/game.hpp:29:
+In file included from /home/ptaku/serweryt/Tibia/silnik/canary/src/lua/creature/raids.hpp:25:
+In file included from /home/ptaku/serweryt/Tibia/silnik/canary/src/lua/scripts/luascript.hpp:20:
+In file included from /home/ptaku/serweryt/Tibia/silnik/canary/src/lua/functions/lua_functions_loader.hpp:27:
+/home/ptaku/serweryt/Tibia/silnik/canary/src/lua/scripts/script_environment.hpp:101:2: error: use of undeclared identifier 'phmap'
+        phmap::flat_hash_map<uint32_t, std::shared_ptr<Item>> localMap;
+        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]

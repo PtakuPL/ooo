@@ -1,0 +1,10 @@
+vcpkg/
+vcpkg_installed/
+libprotocd.a
+libopentelemetry_metrics.a
+libprotobufd.a
+libopentelemetry_metrics.a
+Tibia/silnik/include-what-you-use/
+Tibia/silnik/iwyu/iwyu/
+*.log
+*.a

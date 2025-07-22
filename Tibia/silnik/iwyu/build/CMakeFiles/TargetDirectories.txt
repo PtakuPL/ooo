@@ -1,0 +1,13 @@
+/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/intrinsics_gen.dir
+/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/omp_gen.dir
+/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/acc_gen.dir
+/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/RISCVTargetParserTableGen.dir
+/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/clang-tablegen-targets.dir
+/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/include-what-you-use.dir
+/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/test.dir
+/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/edit_cache.dir
+/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/rebuild_cache.dir
+/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/list_install_components.dir
+/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/install.dir
+/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/install/local.dir
+/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/install/strip.dir

@@ -1,0 +1,1854 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      The system is: Linux - 6.6.87.2-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:17 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-yEttNj"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-yEttNj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-yEttNj'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8b1ee/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8b1ee.dir/build.make CMakeFiles/cmTC_8b1ee.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-yEttNj'
+        Building C object CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8b1ee.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8b1ee.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccylmq7v.s
+        GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 38987c28e967c64056a6454abdef726e
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8b1ee.dir/'
+         as -v --64 -o CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.o /tmp/ccylmq7v.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_8b1ee
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b1ee.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.o -o cmTC_8b1ee 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8b1ee' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8b1ee.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyGYytN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8b1ee /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8b1ee' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8b1ee.'
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-yEttNj'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-yEttNj']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8b1ee/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_8b1ee.dir/build.make CMakeFiles/cmTC_8b1ee.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-yEttNj']
+        ignore line: [Building C object CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8b1ee.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8b1ee.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccylmq7v.s]
+        ignore line: [GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 38987c28e967c64056a6454abdef726e]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8b1ee.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.o /tmp/ccylmq7v.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_8b1ee]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b1ee.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.o -o cmTC_8b1ee ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8b1ee' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8b1ee.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyGYytN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8b1ee /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccyGYytN.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8b1ee] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_8b1ee.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:17 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-mN9NGS"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-mN9NGS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-mN9NGS'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8de4b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8de4b.dir/build.make CMakeFiles/cmTC_8de4b.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-mN9NGS'
+        Building CXX object CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8de4b.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8de4b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccDhdnh9.s
+        GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/13
+         /usr/include/x86_64-linux-gnu/c++/13
+         /usr/include/c++/13/backward
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: c81c05345ce537099dafd5580045814a
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8de4b.dir/'
+         as -v --64 -o CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccDhdnh9.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_8de4b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8de4b.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8de4b 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8de4b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8de4b.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccV9U6IK.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8de4b /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8de4b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8de4b.'
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-mN9NGS'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/13]
+          add: [/usr/include/x86_64-linux-gnu/c++/13]
+          add: [/usr/include/c++/13/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-mN9NGS']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8de4b/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_8de4b.dir/build.make CMakeFiles/cmTC_8de4b.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-mN9NGS']
+        ignore line: [Building CXX object CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8de4b.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8de4b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccDhdnh9.s]
+        ignore line: [GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/13]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/include/c++/13/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: c81c05345ce537099dafd5580045814a]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8de4b.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccDhdnh9.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_8de4b]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8de4b.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8de4b ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8de4b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8de4b.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccV9U6IK.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8de4b /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccV9U6IK.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8de4b] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_8de4b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/lib/llvm-18/cmake/FindFFI.cmake:59 (check_c_source_compiles)"
+      - "/usr/lib/llvm-18/cmake/LLVMConfig.cmake:279 (find_package)"
+      - "CMakeLists.txt:19 (find_package)"
+    checks:
+      - "Performing Test HAVE_FFI_CALL"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-84U0bE"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-84U0bE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "HAVE_FFI_CALL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-84U0bE'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3f9ee/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3f9ee.dir/build.make CMakeFiles/cmTC_3f9ee.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-84U0bE'
+        Building C object CMakeFiles/cmTC_3f9ee.dir/src.c.o
+        /usr/bin/cc -DHAVE_FFI_CALL   -o CMakeFiles/cmTC_3f9ee.dir/src.c.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-84U0bE/src.c
+        Linking C executable cmTC_3f9ee
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f9ee.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_3f9ee.dir/src.c.o -o cmTC_3f9ee  /usr/lib/x86_64-linux-gnu/libffi.so 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-84U0bE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/lib/llvm-18/cmake/FindTerminfo.cmake:32 (check_c_source_compiles)"
+      - "/usr/lib/llvm-18/cmake/LLVMConfig.cmake:291 (find_package)"
+      - "CMakeLists.txt:19 (find_package)"
+    checks:
+      - "Performing Test Terminfo_LINKABLE"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-OkJVrW"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-OkJVrW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "Terminfo_LINKABLE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-OkJVrW'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_99afa/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_99afa.dir/build.make CMakeFiles/cmTC_99afa.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-OkJVrW'
+        Building C object CMakeFiles/cmTC_99afa.dir/src.c.o
+        /usr/bin/cc -DTerminfo_LINKABLE   -o CMakeFiles/cmTC_99afa.dir/src.c.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-OkJVrW/src.c
+        Linking C executable cmTC_99afa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99afa.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_99afa.dir/src.c.o -o cmTC_99afa  /usr/lib/x86_64-linux-gnu/libtinfo.so 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-OkJVrW'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:312 (check_c_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:380 (add_flag_or_print_warning)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test C_SUPPORTS_FPIC"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-f3cY8r"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-f3cY8r"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "C_SUPPORTS_FPIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-f3cY8r'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5bbac/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5bbac.dir/build.make CMakeFiles/cmTC_5bbac.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-f3cY8r'
+        Building C object CMakeFiles/cmTC_5bbac.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS_FPIC  -Werror -fPIC -o CMakeFiles/cmTC_5bbac.dir/src.c.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-f3cY8r/src.c
+        Linking C executable cmTC_5bbac
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bbac.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_5bbac.dir/src.c.o -o cmTC_5bbac 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-f3cY8r'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:313 (check_cxx_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:380 (add_flag_or_print_warning)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_FPIC"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-M3qink"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-M3qink"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_FPIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-M3qink'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d8ecc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d8ecc.dir/build.make CMakeFiles/cmTC_d8ecc.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-M3qink'
+        Building CXX object CMakeFiles/cmTC_d8ecc.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_FPIC  -Werror -fPIC -o CMakeFiles/cmTC_d8ecc.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-M3qink/src.cxx
+        Linking CXX executable cmTC_d8ecc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8ecc.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_d8ecc.dir/src.cxx.o -o cmTC_d8ecc 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-M3qink'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:305 (check_c_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:391 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test C_SUPPORTS_FNO_SEMANTIC_INTERPOSITION"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-f4Jre5"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-f4Jre5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -fPIC"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "C_SUPPORTS_FNO_SEMANTIC_INTERPOSITION"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-f4Jre5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_68ff8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_68ff8.dir/build.make CMakeFiles/cmTC_68ff8.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-f4Jre5'
+        Building C object CMakeFiles/cmTC_68ff8.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS_FNO_SEMANTIC_INTERPOSITION  -fPIC    -Werror -fno-semantic-interposition -o CMakeFiles/cmTC_68ff8.dir/src.c.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-f4Jre5/src.c
+        Linking C executable cmTC_68ff8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68ff8.dir/link.txt --verbose=1
+        /usr/bin/cc  -fPIC  CMakeFiles/cmTC_68ff8.dir/src.c.o -o cmTC_68ff8 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-f4Jre5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:307 (check_cxx_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:391 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_FNO_SEMANTIC_INTERPOSITION"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-13yz53"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-13yz53"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_FNO_SEMANTIC_INTERPOSITION"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-13yz53'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0fd50/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0fd50.dir/build.make CMakeFiles/cmTC_0fd50.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-13yz53'
+        Building CXX object CMakeFiles/cmTC_0fd50.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_FNO_SEMANTIC_INTERPOSITION  -fPIC    -Werror -fno-semantic-interposition -o CMakeFiles/cmTC_0fd50.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-13yz53/src.cxx
+        Linking CXX executable cmTC_0fd50
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0fd50.dir/link.txt --verbose=1
+        /usr/bin/c++  -fPIC  CMakeFiles/cmTC_0fd50.dir/src.cxx.o -o cmTC_0fd50 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-13yz53'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:416 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-faXzFM"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-faXzFM"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-faXzFM'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dcc67/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dcc67.dir/build.make CMakeFiles/cmTC_dcc67.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-faXzFM'
+        Building CXX object CMakeFiles/cmTC_dcc67.dir/src.cxx.o
+        /usr/bin/c++ -DSUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG  -fPIC -fno-semantic-interposition    -fvisibility-inlines-hidden -o CMakeFiles/cmTC_dcc67.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-faXzFM/src.cxx
+        Linking CXX executable cmTC_dcc67
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcc67.dir/link.txt --verbose=1
+        /usr/bin/c++  -fPIC -fno-semantic-interposition  CMakeFiles/cmTC_dcc67.dir/src.cxx.o -o cmTC_dcc67 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-faXzFM'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:305 (check_c_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:639 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test C_SUPPORTS_WERROR_DATE_TIME"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-KsrKK7"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-KsrKK7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -fPIC -fno-semantic-interposition"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "C_SUPPORTS_WERROR_DATE_TIME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-KsrKK7'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bcc35/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bcc35.dir/build.make CMakeFiles/cmTC_bcc35.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-KsrKK7'
+        Building C object CMakeFiles/cmTC_bcc35.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS_WERROR_DATE_TIME  -fPIC -fno-semantic-interposition    -Werror -Werror=date-time -o CMakeFiles/cmTC_bcc35.dir/src.c.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-KsrKK7/src.c
+        Linking C executable cmTC_bcc35
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcc35.dir/link.txt --verbose=1
+        /usr/bin/cc  -fPIC -fno-semantic-interposition  CMakeFiles/cmTC_bcc35.dir/src.c.o -o cmTC_bcc35 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-KsrKK7'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:307 (check_cxx_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:639 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_WERROR_DATE_TIME"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-1PW39x"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-1PW39x"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_WERROR_DATE_TIME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-1PW39x'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9ac83/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9ac83.dir/build.make CMakeFiles/cmTC_9ac83.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-1PW39x'
+        Building CXX object CMakeFiles/cmTC_9ac83.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_WERROR_DATE_TIME  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden    -Werror -Werror=date-time -o CMakeFiles/cmTC_9ac83.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-1PW39x/src.cxx
+        Linking CXX executable cmTC_9ac83
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ac83.dir/link.txt --verbose=1
+        /usr/bin/c++  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden  CMakeFiles/cmTC_9ac83.dir/src.cxx.o -o cmTC_9ac83 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-1PW39x'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:305 (check_c_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:640 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-qfVVAj"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-qfVVAj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -fPIC -fno-semantic-interposition -Werror=date-time"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-qfVVAj'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_68ca9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_68ca9.dir/build.make CMakeFiles/cmTC_68ca9.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-qfVVAj'
+        Building C object CMakeFiles/cmTC_68ca9.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW  -fPIC -fno-semantic-interposition -Werror=date-time    -Werror -Werror=unguarded-availability-new -o CMakeFiles/cmTC_68ca9.dir/src.c.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-qfVVAj/src.c
+        cc1: error: '-Werror=unguarded-availability-new': no option '-Wunguarded-availability-new'
+        gmake[1]: *** [CMakeFiles/cmTC_68ca9.dir/build.make:78: CMakeFiles/cmTC_68ca9.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-qfVVAj'
+        gmake: *** [Makefile:127: cmTC_68ca9/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:307 (check_cxx_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:640 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-rHWEt5"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-rHWEt5"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-rHWEt5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_71da6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_71da6.dir/build.make CMakeFiles/cmTC_71da6.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-rHWEt5'
+        Building CXX object CMakeFiles/cmTC_71da6.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time    -Werror -Werror=unguarded-availability-new -o CMakeFiles/cmTC_71da6.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-rHWEt5/src.cxx
+        cc1plus: error: '-Werror=unguarded-availability-new': no option '-Wunguarded-availability-new'
+        gmake[1]: *** [CMakeFiles/cmTC_71da6.dir/build.make:78: CMakeFiles/cmTC_71da6.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-rHWEt5'
+        gmake: *** [Makefile:127: cmTC_71da6/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:305 (check_c_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:650 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test C_SUPPORTS_CMAKE_CXX_FLAGS"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-HmWv2P"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-HmWv2P"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -fPIC -fno-semantic-interposition -Werror=date-time"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "C_SUPPORTS_CMAKE_CXX_FLAGS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-HmWv2P'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b9a84/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b9a84.dir/build.make CMakeFiles/cmTC_b9a84.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-HmWv2P'
+        Building C object CMakeFiles/cmTC_b9a84.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS_CMAKE_CXX_FLAGS  -fPIC -fno-semantic-interposition -Werror=date-time    -Werror -fno-lifetime-dse -o CMakeFiles/cmTC_b9a84.dir/src.c.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-HmWv2P/src.c
+        Linking C executable cmTC_b9a84
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9a84.dir/link.txt --verbose=1
+        /usr/bin/cc  -fPIC -fno-semantic-interposition -Werror=date-time  CMakeFiles/cmTC_b9a84.dir/src.c.o -o cmTC_b9a84 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-HmWv2P'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:307 (check_cxx_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:650 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_CMAKE_CXX_FLAGS"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-e4f2GZ"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-e4f2GZ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_CMAKE_CXX_FLAGS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-e4f2GZ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aa8b7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_aa8b7.dir/build.make CMakeFiles/cmTC_aa8b7.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-e4f2GZ'
+        Building CXX object CMakeFiles/cmTC_aa8b7.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_CMAKE_CXX_FLAGS  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time    -Werror -fno-lifetime-dse -o CMakeFiles/cmTC_aa8b7.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-e4f2GZ/src.cxx
+        Linking CXX executable cmTC_aa8b7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa8b7.dir/link.txt --verbose=1
+        /usr/bin/c++  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time  CMakeFiles/cmTC_aa8b7.dir/src.cxx.o -o cmTC_aa8b7 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-e4f2GZ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:786 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_MISSING_FIELD_INITIALIZERS_FLAG"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-V7gMRV"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-V7gMRV"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_MISSING_FIELD_INITIALIZERS_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-V7gMRV'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2fd6d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2fd6d.dir/build.make CMakeFiles/cmTC_2fd6d.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-V7gMRV'
+        Building CXX object CMakeFiles/cmTC_2fd6d.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_MISSING_FIELD_INITIALIZERS_FLAG  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual    -Wmissing-field-initializers -o CMakeFiles/cmTC_2fd6d.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-V7gMRV/src.cxx
+        Linking CXX executable cmTC_2fd6d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2fd6d.dir/link.txt --verbose=1
+        /usr/bin/c++  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual  CMakeFiles/cmTC_2fd6d.dir/src.cxx.o -o cmTC_2fd6d 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-V7gMRV'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:305 (check_c_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:805 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test C_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-Ef9pmF"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-Ef9pmF"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "C_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-Ef9pmF'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_508fe/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_508fe.dir/build.make CMakeFiles/cmTC_508fe.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-Ef9pmF'
+        Building C object CMakeFiles/cmTC_508fe.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG  -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers    -Werror -Wimplicit-fallthrough -o CMakeFiles/cmTC_508fe.dir/src.c.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-Ef9pmF/src.c
+        Linking C executable cmTC_508fe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_508fe.dir/link.txt --verbose=1
+        /usr/bin/cc  -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers  CMakeFiles/cmTC_508fe.dir/src.c.o -o cmTC_508fe 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-Ef9pmF'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:307 (check_cxx_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:805 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-AmJp16"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-AmJp16"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-AmJp16'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b285e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b285e.dir/build.make CMakeFiles/cmTC_b285e.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-AmJp16'
+        Building CXX object CMakeFiles/cmTC_b285e.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers    -Werror -Wimplicit-fallthrough -o CMakeFiles/cmTC_b285e.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-AmJp16/src.cxx
+        Linking CXX executable cmTC_b285e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b285e.dir/link.txt --verbose=1
+        /usr/bin/c++  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers  CMakeFiles/cmTC_b285e.dir/src.cxx.o -o cmTC_b285e 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-AmJp16'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:305 (check_c_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:806 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test C_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-MsOHnY"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-MsOHnY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "C_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-MsOHnY'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_de9bd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_de9bd.dir/build.make CMakeFiles/cmTC_de9bd.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-MsOHnY'
+        Building C object CMakeFiles/cmTC_de9bd.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG  -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough    -Werror -Wcovered-switch-default -o CMakeFiles/cmTC_de9bd.dir/src.c.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-MsOHnY/src.c
+        cc: error: unrecognized command-line option '-Wcovered-switch-default'; did you mean '-Wno-switch-default'?
+        gmake[1]: *** [CMakeFiles/cmTC_de9bd.dir/build.make:78: CMakeFiles/cmTC_de9bd.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-MsOHnY'
+        gmake: *** [Makefile:127: cmTC_de9bd/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:307 (check_cxx_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:806 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-4c4Xr4"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-4c4Xr4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-4c4Xr4'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_07c76/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_07c76.dir/build.make CMakeFiles/cmTC_07c76.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-4c4Xr4'
+        Building CXX object CMakeFiles/cmTC_07c76.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough    -Werror -Wcovered-switch-default -o CMakeFiles/cmTC_07c76.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-4c4Xr4/src.cxx
+        c++: error: unrecognized command-line option '-Wcovered-switch-default'; did you mean '-Wno-switch-default'?
+        gmake[1]: *** [CMakeFiles/cmTC_07c76.dir/build.make:78: CMakeFiles/cmTC_07c76.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-4c4Xr4'
+        gmake: *** [Makefile:127: cmTC_07c76/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:817 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_CLASS_MEMACCESS_FLAG"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-FUfpoA"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-FUfpoA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_CLASS_MEMACCESS_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-FUfpoA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_88e92/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_88e92.dir/build.make CMakeFiles/cmTC_88e92.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-FUfpoA'
+        Building CXX object CMakeFiles/cmTC_88e92.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_CLASS_MEMACCESS_FLAG  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull    -Wclass-memaccess -o CMakeFiles/cmTC_88e92.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-FUfpoA/src.cxx
+        Linking CXX executable cmTC_88e92
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88e92.dir/link.txt --verbose=1
+        /usr/bin/c++  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull  CMakeFiles/cmTC_88e92.dir/src.cxx.o -o cmTC_88e92 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-FUfpoA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:827 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_REDUNDANT_MOVE_FLAG"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-lrmyix"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-lrmyix"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_REDUNDANT_MOVE_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-lrmyix'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_289b5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_289b5.dir/build.make CMakeFiles/cmTC_289b5.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-lrmyix'
+        Building CXX object CMakeFiles/cmTC_289b5.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_REDUNDANT_MOVE_FLAG  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess    -Wredundant-move -o CMakeFiles/cmTC_289b5.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-lrmyix/src.cxx
+        Linking CXX executable cmTC_289b5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_289b5.dir/link.txt --verbose=1
+        /usr/bin/c++  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess  CMakeFiles/cmTC_289b5.dir/src.cxx.o -o cmTC_289b5 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-lrmyix'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:829 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_PESSIMIZING_MOVE_FLAG"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-fxT6a3"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-fxT6a3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_PESSIMIZING_MOVE_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-fxT6a3'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8d91d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8d91d.dir/build.make CMakeFiles/cmTC_8d91d.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-fxT6a3'
+        Building CXX object CMakeFiles/cmTC_8d91d.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_PESSIMIZING_MOVE_FLAG  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move    -Wpessimizing-move -o CMakeFiles/cmTC_8d91d.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-fxT6a3/src.cxx
+        Linking CXX executable cmTC_8d91d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d91d.dir/link.txt --verbose=1
+        /usr/bin/c++  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move  CMakeFiles/cmTC_8d91d.dir/src.cxx.o -o cmTC_8d91d 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-fxT6a3'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:834 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_NOEXCEPT_TYPE_FLAG"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-as6Qga"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-as6Qga"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_NOEXCEPT_TYPE_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-as6Qga'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a34af/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a34af.dir/build.make CMakeFiles/cmTC_a34af.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-as6Qga'
+        Building CXX object CMakeFiles/cmTC_a34af.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_NOEXCEPT_TYPE_FLAG  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move    -Wnoexcept-type -o CMakeFiles/cmTC_a34af.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-as6Qga/src.cxx
+        Linking CXX executable cmTC_a34af
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a34af.dir/link.txt --verbose=1
+        /usr/bin/c++  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move  CMakeFiles/cmTC_a34af.dir/src.cxx.o -o cmTC_a34af 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-as6Qga'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:842 (CHECK_CXX_SOURCE_COMPILES)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_WONT_WARN_ON_FINAL_NONVIRTUALDTOR"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-vtJ5TC"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-vtJ5TC"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_WONT_WARN_ON_FINAL_NONVIRTUALDTOR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-vtJ5TC'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_39a10/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_39a10.dir/build.make CMakeFiles/cmTC_39a10.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-vtJ5TC'
+        Building CXX object CMakeFiles/cmTC_39a10.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_WONT_WARN_ON_FINAL_NONVIRTUALDTOR  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type  -Werror=non-virtual-dtor -o CMakeFiles/cmTC_39a10.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-vtJ5TC/src.cxx
+        /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-vtJ5TC/src.cxx:2:36: error: ‘class base’ has virtual functions and accessible non-virtual destructor [-Werror=non-virtual-dtor]
+            2 |                              class base {friend f; public: virtual void anchor();protected: ~base();};
+              |                                    ^~~~
+        cc1plus: some warnings being treated as errors
+        gmake[1]: *** [CMakeFiles/cmTC_39a10.dir/build.make:78: CMakeFiles/cmTC_39a10.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-vtJ5TC'
+        gmake: *** [Makefile:127: cmTC_39a10/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:854 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-aCdQeZ"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-aCdQeZ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-aCdQeZ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_659cc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_659cc.dir/build.make CMakeFiles/cmTC_659cc.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-aCdQeZ'
+        Building CXX object CMakeFiles/cmTC_659cc.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor    -Wsuggest-override -o CMakeFiles/cmTC_659cc.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-aCdQeZ/src.cxx
+        Linking CXX executable cmTC_659cc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_659cc.dir/link.txt --verbose=1
+        /usr/bin/c++  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor  CMakeFiles/cmTC_659cc.dir/src.cxx.o -o cmTC_659cc 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-aCdQeZ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:858 (CHECK_CXX_SOURCE_COMPILES)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_WSUGGEST_OVERRIDE_ALLOWS_ONLY_FINAL"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-5PPCpa"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-5PPCpa"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_WSUGGEST_OVERRIDE_ALLOWS_ONLY_FINAL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-5PPCpa'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a1ab7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a1ab7.dir/build.make CMakeFiles/cmTC_a1ab7.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-5PPCpa'
+        Building CXX object CMakeFiles/cmTC_a1ab7.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_WSUGGEST_OVERRIDE_ALLOWS_ONLY_FINAL  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor  -Werror=suggest-override -o CMakeFiles/cmTC_a1ab7.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-5PPCpa/src.cxx
+        Linking CXX executable cmTC_a1ab7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1ab7.dir/link.txt --verbose=1
+        /usr/bin/c++  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor  -Werror=suggest-override CMakeFiles/cmTC_a1ab7.dir/src.cxx.o -o cmTC_a1ab7 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-5PPCpa'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:870 (CHECK_C_SOURCE_COMPILES)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test C_WCOMMENT_ALLOWS_LINE_WRAP"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-3iJ4Xc"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-3iJ4Xc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "C_WCOMMENT_ALLOWS_LINE_WRAP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-3iJ4Xc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_69f5b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_69f5b.dir/build.make CMakeFiles/cmTC_69f5b.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-3iJ4Xc'
+        Building C object CMakeFiles/cmTC_69f5b.dir/src.c.o
+        /usr/bin/cc -DC_WCOMMENT_ALLOWS_LINE_WRAP  -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough  -Werror -Wcomment -o CMakeFiles/cmTC_69f5b.dir/src.c.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-3iJ4Xc/src.c
+        /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-3iJ4Xc/src.c:1:1: error: multi-line comment [-Werror=comment]
+            1 | // \\
+              | ^
+        cc1: all warnings being treated as errors
+        gmake[1]: *** [CMakeFiles/cmTC_69f5b.dir/build.make:78: CMakeFiles/cmTC_69f5b.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-3iJ4Xc'
+        gmake: *** [Makefile:127: cmTC_69f5b/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:305 (check_c_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:878 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test C_SUPPORTS_STRING_CONVERSION_FLAG"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-6b567P"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-6b567P"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-comment"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "C_SUPPORTS_STRING_CONVERSION_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-6b567P'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_730a9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_730a9.dir/build.make CMakeFiles/cmTC_730a9.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-6b567P'
+        Building C object CMakeFiles/cmTC_730a9.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS_STRING_CONVERSION_FLAG  -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-comment    -Werror -Wstring-conversion -o CMakeFiles/cmTC_730a9.dir/src.c.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-6b567P/src.c
+        cc: error: unrecognized command-line option '-Wstring-conversion'; did you mean '-Wsign-conversion'?
+        gmake[1]: *** [CMakeFiles/cmTC_730a9.dir/build.make:78: CMakeFiles/cmTC_730a9.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-6b567P'
+        gmake: *** [Makefile:127: cmTC_730a9/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:307 (check_cxx_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:878 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_STRING_CONVERSION_FLAG"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-cTpZOk"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-cTpZOk"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_STRING_CONVERSION_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-cTpZOk'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d5062/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d5062.dir/build.make CMakeFiles/cmTC_d5062.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-cTpZOk'
+        Building CXX object CMakeFiles/cmTC_d5062.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_STRING_CONVERSION_FLAG  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment    -Werror -Wstring-conversion -o CMakeFiles/cmTC_d5062.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-cTpZOk/src.cxx
+        c++: error: unrecognized command-line option '-Wstring-conversion'; did you mean '-Wsign-conversion'?
+        gmake[1]: *** [CMakeFiles/cmTC_d5062.dir/build.make:78: CMakeFiles/cmTC_d5062.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-cTpZOk'
+        gmake: *** [Makefile:127: cmTC_d5062/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:884 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_MISLEADING_INDENTATION_FLAG"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-MHfRkT"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-MHfRkT"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_MISLEADING_INDENTATION_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-MHfRkT'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4d838/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4d838.dir/build.make CMakeFiles/cmTC_4d838.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-MHfRkT'
+        Building CXX object CMakeFiles/cmTC_4d838.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_MISLEADING_INDENTATION_FLAG  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment    -Wmisleading-indentation -o CMakeFiles/cmTC_4d838.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-MHfRkT/src.cxx
+        Linking CXX executable cmTC_4d838
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d838.dir/link.txt --verbose=1
+        /usr/bin/c++  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment  CMakeFiles/cmTC_4d838.dir/src.cxx.o -o cmTC_4d838 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-MHfRkT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:305 (check_c_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:892 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test C_SUPPORTS_CTAD_MAYBE_UNSPPORTED_FLAG"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-DWezH8"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-DWezH8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-comment"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "C_SUPPORTS_CTAD_MAYBE_UNSPPORTED_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-DWezH8'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c190e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c190e.dir/build.make CMakeFiles/cmTC_c190e.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-DWezH8'
+        Building C object CMakeFiles/cmTC_c190e.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS_CTAD_MAYBE_UNSPPORTED_FLAG  -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-comment    -Werror -Wctad-maybe-unsupported -o CMakeFiles/cmTC_c190e.dir/src.c.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-DWezH8/src.c
+        cc1: error: command-line option '-Wctad-maybe-unsupported' is valid for C++/ObjC++ but not for C [-Werror]
+        cc1: all warnings being treated as errors
+        gmake[1]: *** [CMakeFiles/cmTC_c190e.dir/build.make:78: CMakeFiles/cmTC_c190e.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-DWezH8'
+        gmake: *** [Makefile:127: cmTC_c190e/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:307 (check_cxx_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:892 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_CTAD_MAYBE_UNSPPORTED_FLAG"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-2VREdu"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-2VREdu"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_CTAD_MAYBE_UNSPPORTED_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-2VREdu'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3b128/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3b128.dir/build.make CMakeFiles/cmTC_3b128.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-2VREdu'
+        Building CXX object CMakeFiles/cmTC_3b128.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_CTAD_MAYBE_UNSPPORTED_FLAG  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation    -Werror -Wctad-maybe-unsupported -o CMakeFiles/cmTC_3b128.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-2VREdu/src.cxx
+        Linking CXX executable cmTC_3b128
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b128.dir/link.txt --verbose=1
+        /usr/bin/c++  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation  CMakeFiles/cmTC_3b128.dir/src.cxx.o -o cmTC_3b128 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-2VREdu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:1084 (check_c_compiler_flag)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test C_SUPPORTS_FNO_FUNCTION_SECTIONS"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-In1bpY"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-In1bpY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-comment"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "C_SUPPORTS_FNO_FUNCTION_SECTIONS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-In1bpY'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e50f7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e50f7.dir/build.make CMakeFiles/cmTC_e50f7.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-In1bpY'
+        Building C object CMakeFiles/cmTC_e50f7.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS_FNO_FUNCTION_SECTIONS  -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-comment    -Werror -fno-function-sections -o CMakeFiles/cmTC_e50f7.dir/src.c.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-In1bpY/src.c
+        Linking C executable cmTC_e50f7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e50f7.dir/link.txt --verbose=1
+        /usr/bin/cc  -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-comment  CMakeFiles/cmTC_e50f7.dir/src.c.o -o cmTC_e50f7 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-In1bpY'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:305 (check_c_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:1088 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test C_SUPPORTS_FFUNCTION_SECTIONS"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-SK96kJ"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-SK96kJ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-comment"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "C_SUPPORTS_FFUNCTION_SECTIONS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-SK96kJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_264a1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_264a1.dir/build.make CMakeFiles/cmTC_264a1.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-SK96kJ'
+        Building C object CMakeFiles/cmTC_264a1.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS_FFUNCTION_SECTIONS  -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-comment    -Werror -ffunction-sections -o CMakeFiles/cmTC_264a1.dir/src.c.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-SK96kJ/src.c
+        Linking C executable cmTC_264a1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_264a1.dir/link.txt --verbose=1
+        /usr/bin/cc  -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-comment  CMakeFiles/cmTC_264a1.dir/src.c.o -o cmTC_264a1 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-SK96kJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:307 (check_cxx_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:1088 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_FFUNCTION_SECTIONS"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-znWT0M"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-znWT0M"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_FFUNCTION_SECTIONS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-znWT0M'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_65cd2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_65cd2.dir/build.make CMakeFiles/cmTC_65cd2.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-znWT0M'
+        Building CXX object CMakeFiles/cmTC_65cd2.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_FFUNCTION_SECTIONS  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported    -Werror -ffunction-sections -o CMakeFiles/cmTC_65cd2.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-znWT0M/src.cxx
+        Linking CXX executable cmTC_65cd2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65cd2.dir/link.txt --verbose=1
+        /usr/bin/c++  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported  CMakeFiles/cmTC_65cd2.dir/src.cxx.o -o cmTC_65cd2 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-znWT0M'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:305 (check_c_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:1092 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test C_SUPPORTS_FDATA_SECTIONS"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-sJM49Z"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-sJM49Z"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-comment -ffunction-sections"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "C_SUPPORTS_FDATA_SECTIONS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-sJM49Z'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fedbd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fedbd.dir/build.make CMakeFiles/cmTC_fedbd.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-sJM49Z'
+        Building C object CMakeFiles/cmTC_fedbd.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS_FDATA_SECTIONS  -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-comment -ffunction-sections    -Werror -fdata-sections -o CMakeFiles/cmTC_fedbd.dir/src.c.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-sJM49Z/src.c
+        Linking C executable cmTC_fedbd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fedbd.dir/link.txt --verbose=1
+        /usr/bin/cc  -fPIC -fno-semantic-interposition -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-comment -ffunction-sections  CMakeFiles/cmTC_fedbd.dir/src.c.o -o cmTC_fedbd 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-sJM49Z'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:307 (check_cxx_compiler_flag)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:1092 (add_flag_if_supported)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Performing Test CXX_SUPPORTS_FDATA_SECTIONS"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-iW9fTU"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-iW9fTU"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -ffunction-sections"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "CXX_SUPPORTS_FDATA_SECTIONS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-iW9fTU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f0ab9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f0ab9.dir/build.make CMakeFiles/cmTC_f0ab9.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-iW9fTU'
+        Building CXX object CMakeFiles/cmTC_f0ab9.dir/src.cxx.o
+        /usr/bin/c++ -DCXX_SUPPORTS_FDATA_SECTIONS  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -ffunction-sections    -Werror -fdata-sections -o CMakeFiles/cmTC_f0ab9.dir/src.cxx.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-iW9fTU/src.cxx
+        Linking CXX executable cmTC_f0ab9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0ab9.dir/link.txt --verbose=1
+        /usr/bin/c++  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -ffunction-sections  CMakeFiles/cmTC_f0ab9.dir/src.cxx.o -o cmTC_f0ab9 
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-iW9fTU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/usr/lib/llvm-18/cmake/HandleLLVMOptions.cmake:1307 (check_symbol_exists)"
+      - "CMakeLists.txt:24 (include)"
+    checks:
+      - "Looking for os_signpost_interval_begin"
+    directories:
+      source: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-GRMjzw"
+      binary: "/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-GRMjzw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -fPIC -fno-semantic-interposition -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-comment -ffunction-sections -fdata-sections"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake;/usr/lib/llvm-18/cmake"
+    buildResult:
+      variable: "macos_signposts_available"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-GRMjzw'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fe207/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fe207.dir/build.make CMakeFiles/cmTC_fe207.dir/build
+        gmake[1]: Entering directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-GRMjzw'
+        Building C object CMakeFiles/cmTC_fe207.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -fPIC -fno-semantic-interposition -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-comment -ffunction-sections -fdata-sections  -o CMakeFiles/cmTC_fe207.dir/CheckSymbolExists.c.o -c /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-GRMjzw/CheckSymbolExists.c
+        /home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-GRMjzw/CheckSymbolExists.c:2:10: fatal error: os/signpost.h: No such file or directory
+            2 | #include <os/signpost.h>
+              |          ^~~~~~~~~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_fe207.dir/build.make:78: CMakeFiles/cmTC_fe207.dir/CheckSymbolExists.c.o] Error 1
+        gmake[1]: Leaving directory '/home/ptaku/serweryt/Tibia/silnik/iwyu/build/CMakeFiles/CMakeScratch/TryCompile-GRMjzw'
+        gmake: *** [Makefile:127: cmTC_fe207/fast] Error 2
+        
+      exitCode: 2
+...

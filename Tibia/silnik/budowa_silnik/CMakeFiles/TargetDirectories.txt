@@ -1,0 +1,4 @@
+/home/ptaku/serweryt/Tibia/silnik/budowa_silnik/CMakeFiles/canary_lib.dir
+/home/ptaku/serweryt/Tibia/silnik/budowa_silnik/CMakeFiles/canary.dir
+/home/ptaku/serweryt/Tibia/silnik/budowa_silnik/CMakeFiles/edit_cache.dir
+/home/ptaku/serweryt/Tibia/silnik/budowa_silnik/CMakeFiles/rebuild_cache.dir

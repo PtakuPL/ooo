@@ -30,8 +30,7 @@ jobs:
             autoconf automake libtool m4 libffi-dev libbz2-dev libssl-dev libreadline-dev libsqlite3-dev zlib1g-dev tk-dev uuid-dev build-essential
 
       - name: Clean build directory
-        run: |
-          rm -rf Tibia/silnik/budowa_silnik
+        run: rm -rf Tibia/silnik/budowa_silnik
 
       - name: Clone vcpkg and install boost
         run: |
@@ -51,11 +50,6 @@ jobs:
             -G Ninja
           cmake --build Tibia/silnik/budowa_silnik --config Release
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-output
-          path: Tibia/silnik/budowa_silnik
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:

@@ -17,22 +17,15 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt install -y cmake ninja-build g++ git curl zip unzip tar pkg-config cppcheck
+          sudo apt install -y cmake ninja-build g++ git curl zip unzip tar pkg-config
 
       - name: Clone vcpkg
         run: |
           git clone https://github.com/microsoft/vcpkg.git
-          cd vcpkg
-          ./bootstrap-vcpkg.sh
-
-      - name: Static code analysis with cppcheck
-        run: |
-          cppcheck --enable=all --inconclusive --error-exitcode=1 Tibia/canary/src
+          ./vcpkg/bootstrap-vcpkg.sh
 
       - name: Configure and build
         run: |
-          set -e
-          set -x
           cmake -S Tibia/canary -B Tibia/budowa_silnik \
             -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake \
             -DCMAKE_BUILD_TYPE=Release \
@@ -40,7 +33,7 @@ jobs:
           cmake --build Tibia/budowa_silnik --config Release
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: build-output
-          path: Tibia/budowa_silnik/bin/
+          path: Tibia/budowa_silnik

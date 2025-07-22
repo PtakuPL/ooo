@@ -41,6 +41,12 @@ jobs:
       - name: Clean build directory
         run: rm -rf Tibia/silnik/budowa_silnik
 
+      - name: Clone vcpkg
+        run: |
+          if [ ! -d "vcpkg" ]; then
+            git clone https://github.com/microsoft/vcpkg.git
+          fi
+
       - name: Set Python variables for Boost
         run: |
           echo "VCPKG_CHAINLOAD_TOOLCHAIN_FILE=" >> $GITHUB_ENV

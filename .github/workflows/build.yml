@@ -29,6 +29,12 @@ jobs:
           ./vcpkg/bootstrap-vcpkg.sh
           ./vcpkg/vcpkg install boost
 
+        -name: Install system dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y cmake ninja-build g++ git curl zip unzip tar pkg-config libboost-all-dev \
+          autoconf automake libtool
+
       - name: Configure and build
         run: |
           cmake -S Tibia/silnik/canary -B Tibia/silnik/budowa_silnik \

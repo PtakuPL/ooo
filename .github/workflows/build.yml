@@ -26,7 +26,7 @@ jobs:
 
       - name: Configure and build
         run: |
-          cmake -S Tibia/canary -B Tibia/budowa_silnik \
+          cmake -S Tibia/silnik/canary -B Tibia/silnik/budowa_silnik \
             -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake \
             -DCMAKE_BUILD_TYPE=Release \
             -G Ninja

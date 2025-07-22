@@ -25,7 +25,8 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt update
-          sudo apt install -y cmake ninja-build g++ git curl zip unzip tar pkg-config libboost-all-dev autoconf automake libtool m4
+          sudo apt install -y cmake ninja-build g++ git curl zip unzip tar pkg-config \
+            libboost-all-dev autoconf automake libtool m4 libbz2-dev
 
       - name: Clean build directory
         run: |

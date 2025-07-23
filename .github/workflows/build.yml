@@ -14,6 +14,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Remove vcpkg cache (for debugging)
+        run: rm -rf ~/.cache/vcpkg vcpkg/installed vcpkg/buildtrees vcpkg/downloads
+
       - name: Setup vcpkg cache
         uses: actions/cache@v4
         with:
@@ -26,7 +29,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-vcpkg-
 
-      - name: Install dependencies
+      - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y \

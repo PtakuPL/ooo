@@ -28,13 +28,13 @@ jobs:
         with:
           access_token: ${{ github.token }}
 
-  job:
+  build:
     if: ${{ github.event_name == 'push' || !github.event.pull_request.draft }}
     name: ${{ matrix.os }}-${{ matrix.buildtype }}
     runs-on: ${{ matrix.os }}
-  timeout-minutes: 60
-    
-  strategy:
+    timeout-minutes: 60
+
+    strategy:
       fail-fast: false
       matrix:
         os: [ubuntu-22.04, ubuntu-24.04]
@@ -48,6 +48,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@main
+
 
       - name: Install Linux Dependencies
         run: >

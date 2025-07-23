@@ -51,8 +51,8 @@ jobs:
       - name: Bootstrap vcpkg
         run: cd vcpkg && ./bootstrap-vcpkg.sh
 
-      - name: Dump vcpkg dependency tree
-        run: ./vcpkg/vcpkg depend-info --dot > deps.dot && cat deps.dot
+      - name: Wygeneruj zależności DOT
+        run: ./vcpkg/vcpkg depend-info boost zlib curl --format=dot > deps.dot && cat deps.dot
 
       - name: Install dependencies via vcpkg
         run: |

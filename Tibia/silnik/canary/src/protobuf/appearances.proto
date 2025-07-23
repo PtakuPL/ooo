@@ -1,5 +1,3 @@
-#include <optional>
-#include <map>
 syntax = "proto2";
 
 package Canary.protobuf.appearances;

@@ -1,4 +1,3 @@
----
 name: Build - Ubuntu
 
 on:
@@ -97,12 +96,14 @@ jobs:
       - name: Configure CMake
         uses: lukka/run-cmake@v10
         with:
+          cmakeListsTxtPath: Tibia/silnik/canary/CMakeLists.txt
           configurePreset: ${{ matrix.buildtype }}
           configurePresetAdditionalArgs: '["-DBUILD_TESTS=ON"]'
 
       - name: Build with CMake
         uses: lukka/run-cmake@v10
         with:
+          cmakeListsTxtPath: Tibia/silnik/canary/CMakeLists.txt
           buildPreset: ${{ matrix.buildtype }}
 
       - name: Debug Build Output

@@ -1,13 +1,3 @@
-#include "pch.hpp"
-#include <thread>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -20,10 +10,6 @@
 #pragma once
 
 #include "utils/lockfree.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 
 /**
  * @brief A lock-free object pool for efficient memory allocation and reuse.

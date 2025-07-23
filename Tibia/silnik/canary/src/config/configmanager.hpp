@@ -1,5 +1,3 @@
-#include "pch.hpp"
-#include "lua/global/shared_object.hpp"
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -12,17 +10,6 @@
 #pragma once
 
 #include "config_enums.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <source_location>
-#include <cstdint>
-#include <lua.hpp>
-#include <variant>          // dla std::variant
-#include <source_location>  // dla std::source_location
-#include <unordered_map>    // dla std::unordered_map
-#include <string>           // dla std::string (jeśli jeszcze nie ma)
-#include <memory>           // dla std::shared_ptr (jeśli jeszcze nie ma
 
 using ConfigValue = std::variant<std::string, int32_t, bool, float>;
 using OTCFeatures = std::vector<uint8_t>;

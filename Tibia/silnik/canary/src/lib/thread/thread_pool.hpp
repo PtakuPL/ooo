@@ -1,18 +1,3 @@
-#ifndef __SRC_LIB_THREAD_THREAD_POOL_HPP_
-#define __SRC_LIB_THREAD_THREAD_POOL_HPP_
-
-#include "pch.hpp"
-#include <atomic>
-#include <thread>
-#include <mutex>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -25,10 +10,6 @@
 #pragma once
 
 #include "BS_thread_pool.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 
 class ThreadPool {
 public:
@@ -93,5 +74,3 @@ private:
 };
 
 constexpr auto g_threadPool = ThreadPool::getInstance;
-
-#endif // __SRC_LIB_THREAD_THREAD_POOL_HPP_

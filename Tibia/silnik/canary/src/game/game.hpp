@@ -1,21 +1,3 @@
-#ifndef __SRC_GAME_GAME_HPP_
-#define __SRC_GAME_GAME_HPP_
-
-#include "pch.hpp"
-#include <parallel_hashmap/phmap.h>
-#include <functional>
-#include <unordered_map>
-#include <chrono>
-#include <unordered_set>
-#include "lib/logging/log_with_spd_log.hpp"
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -28,10 +10,6 @@
 #pragma once
 
 #include "creatures/appearance/outfit/outfit.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "creatures/players/components/player_badge.hpp"
 #include "creatures/players/components/player_title.hpp"
 #include "creatures/players/grouping/familiars.hpp"
@@ -969,5 +947,3 @@ private:
 };
 
 constexpr auto g_game = Game::getInstance;
-
-#endif // __SRC_GAME_GAME_HPP_

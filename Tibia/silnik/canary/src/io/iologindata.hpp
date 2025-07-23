@@ -1,17 +1,3 @@
-#ifndef __SRC_IO_IOLOGINDATA_HPP_
-#define __SRC_IO_IOLOGINDATA_HPP_
-
-#include "pch.hpp"
-#include <functional>
-#include <vector>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -93,5 +79,3 @@ public:
 private:
 	static bool savePlayerGuard(const std::shared_ptr<Player> &player);
 };
-
-#endif // __SRC_IO_IOLOGINDATA_HPP_

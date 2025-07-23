@@ -1,13 +1,3 @@
-#include "pch.hpp"
-#include <functional>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -19,10 +9,6 @@
 #pragma once
 
 #include "account/account_repository_db.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "lib/di/injector.hpp"
 #include "lib/logging/log_with_spd_log.hpp"
 #include "kv/kv_sql.hpp"

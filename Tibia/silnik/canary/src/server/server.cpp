@@ -1,7 +1,3 @@
-#include "pch.hpp"
-#include <string>
-#include <chrono>
-#include "lib/logging/log_with_spd_log.hpp"
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -12,7 +8,7 @@
  */
 
 #include "server/server.hpp"
-#include <algorithm>
+
 #include "server/network/message/outputmessage.hpp"
 #include "config/configmanager.hpp"
 #include "game/scheduling/dispatcher.hpp"

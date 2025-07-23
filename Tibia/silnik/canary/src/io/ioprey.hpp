@@ -1,12 +1,3 @@
-#include "pch.hpp"
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -20,10 +11,6 @@
 
 // TODO: Remove circular includes (maybe shared_ptr?)
 #include "server/network/message/networkmessage.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 
 class PreySlot;
 class TaskHuntingSlot;

@@ -1,7 +1,3 @@
-#include "pch.hpp"
-#include <functional>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -14,11 +10,6 @@
 #pragma once
 
 #include "enums/item_attribute.hpp"
-#include <string>
-#include <vector>
-#include <algorithm>
-#include <map>
-#include <cstdint>
 #include "items/functions/item/custom_attribute.hpp"
 
 class ItemAttributeHelper {

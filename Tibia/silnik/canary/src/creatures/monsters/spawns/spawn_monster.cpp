@@ -1,10 +1,3 @@
-#include "pch.hpp"
-#include <map>
-#include <vector>
-#include <memory>
-#include <string>
-#include <unordered_map>
-#include "lib/logging/log_with_spd_log.hpp"
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -14,7 +7,6 @@
  * Website: https://docs.opentibiabr.com/
  */
 
-#include <algorithm>
 #include "creatures/monsters/spawns/spawn_monster.hpp"
 
 #include "config/configmanager.hpp"

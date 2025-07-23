@@ -1,17 +1,3 @@
-#ifndef __SRC_UTILS_DEFINITIONS_HPP_
-#define __SRC_UTILS_DEFINITIONS_HPP_
-
-#include "pch.hpp"
-#include <functional>
-#include <source_location>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -74,5 +60,3 @@
 #ifndef M_PI
 	#define M_PI 3.14159265358979323846
 #endif
-
-#endif // __SRC_UTILS_DEFINITIONS_HPP_

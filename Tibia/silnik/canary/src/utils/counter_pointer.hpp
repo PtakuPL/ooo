@@ -1,17 +1,3 @@
-#ifndef __SRC_UTILS_COUNTER_POINTER_HPP_
-#define __SRC_UTILS_COUNTER_POINTER_HPP_
-
-#include "pch.hpp"
-#include <map>
-#include <unordered_map>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -46,5 +32,3 @@ private:
 };
 
 constexpr auto g_counterPointer = SharedPtrManager::getInstance;
-
-#endif // __SRC_UTILS_COUNTER_POINTER_HPP_

@@ -1,12 +1,3 @@
-#include "pch.hpp"
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 //
 // Copyright (c) 2012-2020 Kris Jusiak (kris at jusiak dot net)
 //
@@ -16,10 +7,6 @@
 #pragma once
 
 #include <memory>
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include <typeindex>
 #include <unordered_map>
 #if !defined(BOOST_DI_NOT_THREAD_SAFE)

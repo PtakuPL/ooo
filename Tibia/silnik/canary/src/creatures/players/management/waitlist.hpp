@@ -1,17 +1,3 @@
-#ifndef __SRC_CREATURES_PLAYERS_MANAGEMENT_WAITLIST_HPP_
-#define __SRC_CREATURES_PLAYERS_MANAGEMENT_WAITLIST_HPP_
-
-#include "pch.hpp"
-#include <parallel_hashmap/phmap.h>
-#include <map>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -58,5 +44,3 @@ private:
 	void addPlayerToList(const std::shared_ptr<Player> &player) const;
 	std::unique_ptr<WaitListInfo> info;
 };
-
-#endif // __SRC_CREATURES_PLAYERS_MANAGEMENT_WAITLIST_HPP_

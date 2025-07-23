@@ -1,22 +1,3 @@
-#ifndef __SRC_CREATURES_CREATURE_HPP_
-#define __SRC_CREATURES_CREATURE_HPP_
-
-#include "pch.hpp"
-#include "lua/global/shared_object.hpp"
-#include <parallel_hashmap/phmap.h>
-#include <functional>
-#include <atomic>
-#include <thread>
-#include <chrono>
-#include <unordered_set>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -29,10 +10,6 @@
 #pragma once
 
 #include "creatures/creatures_definitions.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "game/game_definitions.hpp"
 #include "game/movement/position.hpp"
 #include "items/thing.hpp"
@@ -927,5 +904,3 @@ private:
 	std::vector<uint16_t> attachedEffectList;
 	std::string shader;
 };
-
-#endif // __SRC_CREATURES_CREATURE_HPP_

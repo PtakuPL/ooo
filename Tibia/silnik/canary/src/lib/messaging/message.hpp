@@ -1,12 +1,3 @@
-#include "pch.hpp"
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -18,10 +9,6 @@
 #pragma once
 
 #include <eventpp/utilities/scopedremover.h>
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include <eventpp/eventdispatcher.h>
 
 template <typename T>

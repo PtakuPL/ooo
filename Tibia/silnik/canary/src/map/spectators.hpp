@@ -1,19 +1,3 @@
-#ifndef __SRC_MAP_SPECTATORS_HPP_
-#define __SRC_MAP_SPECTATORS_HPP_
-
-#include "pch.hpp"
-#include <parallel_hashmap/phmap.h>
-#include <optional>
-#include <map>
-#include <vector>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -122,5 +106,3 @@ private:
 
 	CreatureVector creatures;
 };
-
-#endif // __SRC_MAP_SPECTATORS_HPP_

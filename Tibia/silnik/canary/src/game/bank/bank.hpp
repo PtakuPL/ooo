@@ -1,17 +1,3 @@
-#ifndef __SRC_GAME_BANK_BANK_HPP_
-#define __SRC_GAME_BANK_BANK_HPP_
-
-#include "pch.hpp"
-#include "lua/global/shared_object.hpp"
-#include <functional>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -67,5 +53,3 @@ private:
 	}
 	std::shared_ptr<Bankable> m_bankable;
 };
-
-#endif // __SRC_GAME_BANK_BANK_HPP_

@@ -1,17 +1,3 @@
-#ifndef __SRC_GAME_ZONES_ZONE_HPP_
-#define __SRC_GAME_ZONES_ZONE_HPP_
-
-#include "pch.hpp"
-#include <parallel_hashmap/phmap.h>
-#include <unordered_set>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -24,10 +10,6 @@
 #pragma once
 
 #include "game/movement/position.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "items/item.hpp"
 #include "creatures/creature.hpp"
 
@@ -246,5 +228,3 @@ protected:
 	static phmap::parallel_flat_hash_map<std::string, std::shared_ptr<Zone>> zones;
 	static phmap::parallel_flat_hash_map<uint32_t, std::shared_ptr<Zone>> zonesByID;
 };
-
-#endif // __SRC_GAME_ZONES_ZONE_HPP_

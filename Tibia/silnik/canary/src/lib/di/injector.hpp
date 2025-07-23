@@ -1,12 +1,3 @@
-#include "pch.hpp"
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 //
 // Copyright (c) 2012-2020 Kris Jusiak (kris at jusiak dot net)
 //
@@ -16,10 +7,6 @@
 #pragma once
 
 #include "lib/di/runtime_provider.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 
 BOOST_DI_NAMESPACE_BEGIN
 namespace extension {

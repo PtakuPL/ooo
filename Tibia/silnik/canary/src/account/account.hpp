@@ -1,13 +1,3 @@
-#include "pch.hpp"
-#include "account_info.hpp"
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -18,18 +8,6 @@
  */
 
 #pragma once
-#include <cstdint>
-#include <vector>
-#include <map>
-#include <string>
-#include <memory>
-#include <tuple>
-#include <parallel_hashmap/phmap.h>
-
-// oraz pliki nagłówkowe z enumami
-#include "enums/account_coins.hpp"
-#include "enums/account_errors.hpp"
-#include "enums/account_type.hpp"
 
 struct AccountInfo;
 

@@ -1,9 +1,3 @@
-#include "pch.hpp"
-#include "lua/global/shared_object.hpp"
-#include <functional>
-#include <map>
-#include <source_location>
-#include "lib/logging/log_with_spd_log.hpp"
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -19,11 +13,6 @@
 #include "game/game.hpp"
 #include "server/network/webhook/webhook.hpp"
 #include "utils/tools.hpp"
-
-#include <lua.hpp>
-#include <string>
-#include <unordered_map>
-#include <cstdint>
 
 #if LUA_VERSION_NUM >= 502
 	#undef lua_strlen

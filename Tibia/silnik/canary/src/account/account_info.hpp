@@ -1,14 +1,3 @@
-#include "pch.hpp"
-#ifndef ACCOUNT_INFO_HPP
-#define ACCOUNT_INFO_HPP
-
-// zawartość pliku
-
-#endif // ACCOUNT_INFO_HPP
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -26,9 +15,6 @@
 #endif
 
 #include "enums/account_type.hpp"
-#include <string>
-#include <vector>
-#include <map>
 
 struct AccountInfo {
 	~AccountInfo() = default;

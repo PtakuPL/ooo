@@ -1,18 +1,3 @@
-#ifndef __SRC_CREATURES_PLAYERS_COMPONENTS_WHEEL_PLAYER_WHEEL_HPP_
-#define __SRC_CREATURES_PLAYERS_COMPONENTS_WHEEL_PLAYER_WHEEL_HPP_
-
-#include "pch.hpp"
-#include <functional>
-#include <unordered_map>
-#include <unordered_set>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -25,10 +10,6 @@
 #pragma once
 
 #include "creatures/creatures_definitions.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "creatures/players/components/wheel/wheel_definitions.hpp"
 
 class Creature;
@@ -560,5 +541,3 @@ private:
 	std::vector<PlayerWheelGem> m_revealedGems;
 	std::vector<PlayerWheelGem> m_destroyedGems;
 };
-
-#endif // __SRC_CREATURES_PLAYERS_COMPONENTS_WHEEL_PLAYER_WHEEL_HPP_

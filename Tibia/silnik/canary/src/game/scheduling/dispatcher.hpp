@@ -1,21 +1,3 @@
-#ifndef __SRC_GAME_SCHEDULING_DISPATCHER_HPP_
-#define __SRC_GAME_SCHEDULING_DISPATCHER_HPP_
-
-#include "pch.hpp"
-#include <parallel_hashmap/phmap.h>
-#include <functional>
-#include <atomic>
-#include <thread>
-#include <mutex>
-#include <chrono>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -28,10 +10,6 @@
 #pragma once
 
 #include "task.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "lib/thread/thread_pool.hpp"
 
 static constexpr uint16_t DISPATCHER_TASK_EXPIRATION = 2000;
@@ -262,5 +240,3 @@ private:
 };
 
 constexpr auto g_dispatcher = Dispatcher::getInstance;
-
-#endif // __SRC_GAME_SCHEDULING_DISPATCHER_HPP_

@@ -1,18 +1,3 @@
-#ifndef __SRC_ITEMS_ITEM_HPP_
-#define __SRC_ITEMS_ITEM_HPP_
-
-#include "pch.hpp"
-#include "lua/global/shared_object.hpp"
-#include <functional>
-#include "lib/logging/log_with_spd_log.hpp"
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -25,10 +10,6 @@
 #pragma once
 
 #include "enums/item_attribute.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "io/fileloader.hpp"
 #include "items/functions/item/attribute.hpp"
 #include "items/items.hpp"
@@ -770,5 +751,3 @@ private:
 using ItemList = std::list<std::shared_ptr<Item>>;
 using ItemDeque = std::deque<std::shared_ptr<Item>>;
 using StashContainerList = std::vector<std::pair<std::shared_ptr<Item>, uint32_t>>;
-
-#endif // __SRC_ITEMS_ITEM_HPP_

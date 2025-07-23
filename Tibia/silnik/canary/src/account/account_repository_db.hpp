@@ -1,13 +1,3 @@
-#include "pch.hpp"
-#include "account_info.hpp"
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -19,16 +9,10 @@
 
 #pragma once
 
-#include <cstdint>
-#include <vector>
-#include <map>
-#include <memory>
-#include <string>
-#include <unordered_map>
-
 #include "account/account_repository.hpp"
-#include "enums/account_coins.hpp"            // jeśli tak się nazywa enum CoinType
 
+enum class CoinType : uint8_t;
+enum class CoinTransactionType : uint8_t;
 
 class AccountRepositoryDB final : public AccountRepository {
 public:

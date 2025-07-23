@@ -1,6 +1,3 @@
-#include "pch.hpp"
-#include <map>
-#include <memory>
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2023 OpenTibiaBR <opentibiabr@outlook.com>

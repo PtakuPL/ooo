@@ -1,17 +1,3 @@
-#ifndef __SRC_CREATURES_NPCS_NPCS_HPP_
-#define __SRC_CREATURES_NPCS_NPCS_HPP_
-
-#include "pch.hpp"
-#include "lua/global/shared_object.hpp"
-#include <unordered_set>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -24,10 +10,6 @@
 #pragma once
 
 #include "creatures/creatures_definitions.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "utils/utils_definitions.hpp"
 
 class LuaScriptInterface;
@@ -134,5 +116,3 @@ private:
 };
 
 constexpr auto g_npcs = Npcs::getInstance;
-
-#endif // __SRC_CREATURES_NPCS_NPCS_HPP_

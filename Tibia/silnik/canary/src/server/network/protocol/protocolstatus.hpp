@@ -1,12 +1,3 @@
-#include "pch.hpp"
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -19,10 +10,6 @@
 #pragma once
 
 #include "server/network/message/networkmessage.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "server/network/protocol/protocol.hpp"
 
 class ProtocolStatus final : public Protocol {

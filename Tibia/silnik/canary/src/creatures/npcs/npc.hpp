@@ -1,17 +1,3 @@
-#ifndef __SRC_CREATURES_NPCS_NPC_HPP_
-#define __SRC_CREATURES_NPCS_NPC_HPP_
-
-#include "pch.hpp"
-#include <parallel_hashmap/phmap.h>
-#include <unordered_map>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -24,10 +10,6 @@
 #pragma once
 
 #include "creatures/creature.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 
 enum Direction : uint8_t;
 struct Position;
@@ -169,5 +151,3 @@ private:
 };
 
 constexpr auto g_npc = Npc::getInstance;
-
-#endif // __SRC_CREATURES_NPCS_NPC_HPP_

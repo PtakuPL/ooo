@@ -1,17 +1,3 @@
-#ifndef __SRC_CREATURES_COMBAT_CONDITION_HPP_
-#define __SRC_CREATURES_COMBAT_CONDITION_HPP_
-
-#include "pch.hpp"
-#include "lua/global/shared_object.hpp"
-#include <unordered_set>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -24,10 +10,6 @@
 #pragma once
 
 #include "creatures/creatures_definitions.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "game/movement/position.hpp"
 
 enum class PlayerIcon : uint8_t;
@@ -433,5 +415,3 @@ public:
 
 	std::shared_ptr<Condition> clone() const override;
 };
-
-#endif // __SRC_CREATURES_COMBAT_CONDITION_HPP_

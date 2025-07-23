@@ -1,18 +1,3 @@
-#ifndef __SRC_KV_VALUE_WRAPPER_PROTO_HPP_
-#define __SRC_KV_VALUE_WRAPPER_PROTO_HPP_
-
-#include "pch.hpp"
-#include <parallel_hashmap/phmap.h>
-#include <map>
-#include <vector>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -53,5 +38,3 @@ namespace ProtoHelpers {
 	void setProtoArrayValue(Canary::protobuf::kv::ValueWrapper &protoValue, const ArrayType &arg);
 	void setProtoMapValue(Canary::protobuf::kv::ValueWrapper &protoValue, const MapType &arg);
 }
-
-#endif // __SRC_KV_VALUE_WRAPPER_PROTO_HPP_

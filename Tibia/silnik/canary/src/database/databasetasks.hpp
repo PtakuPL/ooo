@@ -1,17 +1,3 @@
-#ifndef __SRC_DATABASE_DATABASETASKS_HPP_
-#define __SRC_DATABASE_DATABASETASKS_HPP_
-
-#include "pch.hpp"
-#include <functional>
-#include <thread>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -24,10 +10,6 @@
 #pragma once
 
 #include "database/database.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "lib/thread/thread_pool.hpp"
 
 class DatabaseTasks {
@@ -49,5 +31,3 @@ private:
 };
 
 constexpr auto g_databaseTasks = DatabaseTasks::getInstance;
-
-#endif // __SRC_DATABASE_DATABASETASKS_HPP_

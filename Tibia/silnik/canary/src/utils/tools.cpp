@@ -1,14 +1,3 @@
-#include "pch.hpp"
-#include <parallel_hashmap/phmap.h>
-#include <regex>
-#include <functional>
-#include <thread>
-#include <vector>
-#include <unordered_map>
-#include <chrono>
-#include <unordered_set>
-#include <source_location>
-#include "lib/logging/log_with_spd_log.hpp"
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -19,14 +8,6 @@
  */
 
 #include "utils/tools.hpp"
-#include <pugixml.hpp>
-#include <cmath>
-#include <algorithm>
-#include <cctype>
-#include <ranges>
-#include <string>
-#include <map>
-#include <stdexcept>
 
 #include "core.hpp"
 #include "enums/object_category.hpp"

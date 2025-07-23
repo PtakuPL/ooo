@@ -1,7 +1,3 @@
-#include "pch.hpp"
-#include <vector>
-#include <memory>
-#include <string>
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -18,7 +14,6 @@
 #include "creatures/appearance/attached_effects/attached_effects.hpp"
 #include "kv/kv.hpp"
 #include "server/network/protocol/protocolgame.hpp"
-#include <algorithm>
 
 PlayerAttachedEffects::PlayerAttachedEffects(Player &player) :
 	m_player(player) {

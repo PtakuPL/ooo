@@ -1,17 +1,3 @@
-#ifndef __SRC_LUA_CREATURE_MOVEMENT_HPP_
-#define __SRC_LUA_CREATURE_MOVEMENT_HPP_
-
-#include "pch.hpp"
-#include "lua/global/shared_object.hpp"
-#include <functional>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -24,10 +10,6 @@
 #pragma once
 
 #include "declarations.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 
 class MoveEvent;
 class LuaScriptInterface;
@@ -311,5 +293,3 @@ private:
 	friend class MoveEventFunctions;
 	friend class ItemParse;
 };
-
-#endif // __SRC_LUA_CREATURE_MOVEMENT_HPP_

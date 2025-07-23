@@ -1,18 +1,3 @@
-#ifndef __SRC_GAME_SCHEDULING_TASK_HPP_
-#define __SRC_GAME_SCHEDULING_TASK_HPP_
-
-#include "pch.hpp"
-#include <functional>
-#include <atomic>
-#include <unordered_set>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -127,5 +112,3 @@ private:
 
 	friend class Dispatcher;
 };
-
-#endif // __SRC_GAME_SCHEDULING_TASK_HPP_

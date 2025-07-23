@@ -1,13 +1,3 @@
-#include "pch.hpp"
-#include <chrono>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -32,9 +22,6 @@
 #endif
 
 #include "kv/value_wrapper.hpp"
-#include <vector>
-#include <map>
-#include <cstdint>
 
 class KV : public std::enable_shared_from_this<KV> {
 public:

@@ -1,10 +1,3 @@
-#include "pch.hpp"
-#include <functional>
-#include <thread>
-#include <map>
-#include <string>
-#include <chrono>
-#include "lib/logging/log_with_spd_log.hpp"
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -40,8 +33,6 @@
 #include "server/network/protocol/protocolstatus.hpp"
 #include "server/network/webhook/webhook.hpp"
 #include "creatures/players/vocations/vocation.hpp"
-#include <fmt/core.h>
-#include <fstream>
 
 CanaryServer::CanaryServer(
 	Logger &logger,
@@ -176,7 +167,7 @@ int CanaryServer::run() {
 		return EXIT_FAILURE;
 	}
 
-	logger.info(fmt::format("{} {}", g_configManager().getString(SERVER_NAME), "server online!"));
+	logger.info("{} {}", g_configManager().getString(SERVER_NAME), "server online!");
 	g_logger().setLevel(g_configManager().getString(LOGLEVEL));
 
 	serviceManager.run();
@@ -202,7 +193,7 @@ void CanaryServer::setWorldType() {
 		);
 	}
 
-	logger.debug(fmt::format("World type set as {}", asUpperCaseString(worldType)));
+	logger.debug("World type set as {}", asUpperCaseString(worldType));
 }
 
 void CanaryServer::loadMaps() const {
@@ -254,7 +245,7 @@ void CanaryServer::logInfos() {
 	logger.debug("Linked with {} for Lua support", LUAJIT_VERSION);
 #endif
 
-	logger.info(fmt::format("A server developed by: {}", ProtocolStatus::SERVER_DEVELOPERS));
+	logger.info("A server developed by: {}", ProtocolStatus::SERVER_DEVELOPERS);
 	logger.info("Visit our website for updates, support, and resources: "
 	            "https://docs.opentibiabr.com/");
 }
@@ -319,7 +310,7 @@ void CanaryServer::loadConfigLua() {
 	if (!c_test.is_open()) {
 		std::ifstream config_lua_dist(configName + ".dist");
 		if (config_lua_dist.is_open()) {
-			logger.info(fmt::format("Copying {}.dist to {}", configName, configName));
+			logger.info("Copying {}.dist to {}", configName, configName);
 			std::ofstream config_lua(configName);
 			config_lua << config_lua_dist.rdbuf();
 			config_lua.close();
@@ -362,7 +353,7 @@ void CanaryServer::initializeDatabase() {
 	if (!Database::getInstance().connect()) {
 		throw FailedToInitializeCanary("Failed to connect to database!");
 	}
-	logger.debug(fmt::format("MySQL Version: {}", Database::getClientVersion()));
+	logger.debug("MySQL Version: {}", Database::getClientVersion());
 
 	logger.debug("Running database manager...");
 	if (!DatabaseManager::isDatabaseSetup()) {
@@ -404,7 +395,7 @@ void CanaryServer::loadModules() {
 	modulesLoadHelper(Item::items.loadFromXml(), "items.xml");
 
 	const auto datapackFolder = g_configManager().getString(DATA_DIRECTORY);
-	logger.debug(fmt::format("Loading core scripts on folder: {}/", coreFolder));
+	logger.debug("Loading core scripts on folder: {}/", coreFolder);
 	// Load first core Lua libs
 	modulesLoadHelper((g_luaEnvironment().loadFile(coreFolder + "/core.lua", "core.lua") == 0), "core.lua");
 	modulesLoadHelper(g_scripts().loadScripts(coreFolder + "/scripts/lib", true, false), coreFolder + "/scripts/libs");
@@ -414,7 +405,7 @@ void CanaryServer::loadModules() {
 	modulesLoadHelper(g_events().loadFromXml(), "events/events.xml");
 	modulesLoadHelper(g_modules().loadFromXml(), "modules/modules.xml");
 
-	logger.debug(fmt::format("Loading datapack scripts on folder: {}/", datapackFolder));
+	logger.debug("Loading datapack scripts on folder: {}/", datapackFolder);
 	modulesLoadHelper(g_scripts().loadScripts(datapackFolder + "/scripts/lib", true, false), datapackFolder + "/scripts/libs");
 	// Load scripts
 	modulesLoadHelper(g_scripts().loadScripts(datapackFolder + "/scripts", false, false), datapackFolder + "/scripts");
@@ -429,7 +420,7 @@ void CanaryServer::loadModules() {
 }
 
 void CanaryServer::modulesLoadHelper(bool loaded, std::string moduleName) {
-	logger.debug(fmt::format("Loading {}", moduleName));
+	logger.debug("Loading {}", moduleName);
 	if (!loaded) {
 		throw FailedToInitializeCanary(fmt::format("Cannot load: {}", moduleName));
 	}

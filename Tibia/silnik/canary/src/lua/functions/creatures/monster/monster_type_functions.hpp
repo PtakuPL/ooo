@@ -1,17 +1,3 @@
-#ifndef __SRC_LUA_FUNCTIONS_CREATURES_MONSTER_MONSTER_TYPE_FUNCTIONS_HPP_
-#define __SRC_LUA_FUNCTIONS_CREATURES_MONSTER_MONSTER_TYPE_FUNCTIONS_HPP_
-
-#include "pch.hpp"
-#include "lua/global/shared_object.hpp"
-#include <vector>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -158,5 +144,3 @@ private:
 	static int luaMonsterTypeGetMonstersByRace(lua_State* L);
 	static int luaMonsterTypeGetMonstersByBestiaryStars(lua_State* L);
 };
-
-#endif // __SRC_LUA_FUNCTIONS_CREATURES_MONSTER_MONSTER_TYPE_FUNCTIONS_HPP_

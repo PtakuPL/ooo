@@ -1,17 +1,3 @@
-#ifndef __SRC_CREATURES_PLAYERS_COMPONENTS_PLAYER_ATTACHED_EFFECTS_HPP_
-#define __SRC_CREATURES_PLAYERS_COMPONENTS_PLAYER_ATTACHED_EFFECTS_HPP_
-
-#include "pch.hpp"
-#include <map>
-#include <unordered_set>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -148,5 +134,3 @@ private:
 
 	Player &m_player;
 };
-
-#endif // __SRC_CREATURES_PLAYERS_COMPONENTS_PLAYER_ATTACHED_EFFECTS_HPP_

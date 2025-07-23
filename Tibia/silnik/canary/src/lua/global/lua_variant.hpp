@@ -1,12 +1,3 @@
-#include "pch.hpp"
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -19,8 +10,6 @@
 #pragma once
 
 #include "enums/lua_variant_type.hpp"
-#include <vector>
-#include <map>
 #include "game/movement/position.hpp"
 
 #ifndef USE_PRECOMPILED_HEADERS

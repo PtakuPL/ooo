@@ -1,17 +1,3 @@
-#ifndef __SRC_LUA_CALLBACKS_EVENTS_CALLBACKS_HPP_
-#define __SRC_LUA_CALLBACKS_EVENTS_CALLBACKS_HPP_
-
-#include "pch.hpp"
-#include <parallel_hashmap/phmap.h>
-#include <functional>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -24,10 +10,6 @@
 #pragma once
 
 #include "lua/callbacks/callbacks_definitions.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "lua/callbacks/event_callback.hpp"
 
 class EventCallback;
@@ -164,5 +146,3 @@ private:
 };
 
 constexpr auto g_callbacks = EventsCallbacks::getInstance;
-
-#endif // __SRC_LUA_CALLBACKS_EVENTS_CALLBACKS_HPP_

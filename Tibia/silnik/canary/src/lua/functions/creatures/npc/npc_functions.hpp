@@ -1,17 +1,3 @@
-#ifndef __SRC_LUA_FUNCTIONS_CREATURES_NPC_NPC_FUNCTIONS_HPP_
-#define __SRC_LUA_FUNCTIONS_CREATURES_NPC_NPC_FUNCTIONS_HPP_
-
-#include "pch.hpp"
-#include "lua/global/shared_object.hpp"
-#include <functional>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -24,10 +10,6 @@
 #pragma once
 
 #include "lua/functions/creatures/npc/npc_type_functions.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "lua/functions/creatures/npc/shop_functions.hpp"
 class NpcFunctions {
 private:
@@ -69,5 +51,3 @@ private:
 
 	friend class CreatureFunctions;
 };
-
-#endif // __SRC_LUA_FUNCTIONS_CREATURES_NPC_NPC_FUNCTIONS_HPP_

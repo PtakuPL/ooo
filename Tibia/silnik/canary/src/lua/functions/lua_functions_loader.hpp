@@ -1,19 +1,3 @@
-#ifndef __SRC_LUA_FUNCTIONS_LUA_FUNCTIONS_LOADER_HPP_
-#define __SRC_LUA_FUNCTIONS_LUA_FUNCTIONS_LOADER_HPP_
-
-#include "pch.hpp"
-#include "lua/global/shared_object.hpp"
-#include <functional>
-#include <source_location>
-#include "lib/logging/log_with_spd_log.hpp"
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -26,10 +10,6 @@
 #pragma once
 
 #include "declarations.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "lua/scripts/luajit_sync.hpp"
 #include "game/movement/position.hpp"
 #include "lua/scripts/script_environment.hpp"
@@ -315,5 +295,3 @@ public:
 	static int32_t scriptEnvIndex;
 	static int validateDispatcherContext(std::string_view fncName);
 };
-
-#endif // __SRC_LUA_FUNCTIONS_LUA_FUNCTIONS_LOADER_HPP_

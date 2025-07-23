@@ -1,7 +1,3 @@
-#include "pch.hpp"
-#include <map>
-
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -12,15 +8,6 @@
  */
 
 #pragma once
-
-
-#include <cstdint>   // dla uint8_t, uint16_t itd.
-#include <string>    // dla std::string
-#include <memory>
-#include <vector>           // dla std::vector
-#include <variant>          // dla std::variant
-#include <source_location>  // dla std::source_location
-#include <unordered_map>    // dla std::unordered_map
 
 struct Aura {
 	Aura(uint16_t initId, const std::string &name) :

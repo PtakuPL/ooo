@@ -1,78 +1,119 @@
-name: Build Canary Engine
+---
+name: Build - Ubuntu
 
 on:
-  push:
-    branches: [master]
+  workflow_dispatch:
   pull_request:
-    branches: [master]
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - "src/**"
+  merge_group:
+  push:
+    paths:
+      - "src/**"
+    branches:
+      - main
+
+env:
+  CMAKE_BUILD_PARALLEL_LEVEL: 2
+  MAKEFLAGS: "-j 2"
 
 jobs:
-  build:
-    runs-on: ubuntu-22.04
+  cancel-runs:
+    if: github.event_name == 'pull_request' && github.ref != 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.9.1
+        with:
+          access_token: ${{ github.token }}
+
+  job:
+    if: ${{ github.event_name == 'push' || !github.event.pull_request.draft }}
+    name: ${{ matrix.os }}-${{ matrix.buildtype }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-22.04, ubuntu-24.04]
+        buildtype: [linux-release, linux-debug]
+        include:
+          - os: ubuntu-22.04
+            triplet: x64-linux
+          - os: ubuntu-24.04
+            triplet: x64-linux
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@main
 
-      - name: Remove vcpkg cache (for debugging)
-        run: rm -rf ~/.cache/vcpkg vcpkg/installed vcpkg/buildtrees vcpkg/downloads
+      - name: Install Linux Dependencies
+        run: >
+          sudo apt-get update && sudo apt-get install ccache linux-headers-"$(uname -r)"
 
-      - name: Setup vcpkg cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cache/vcpkg
-            vcpkg/installed
-            vcpkg/buildtrees
-            vcpkg/downloads
-          key: ${{ runner.os }}-vcpkg-v2-${{ hashFiles('vcpkg.json') }}
-          restore-keys: |
-            ${{ runner.os }}-vcpkg-
-
-      - name: Install system dependencies
+      - name: Switch to gcc-13 on Ubuntu 22.04
+        if: matrix.os == 'ubuntu-22.04'
         run: |
+          sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
           sudo apt-get update
-          sudo apt-get install -y \
-            build-essential cmake ninja-build g++ git curl zip unzip tar pkg-config \
-            python3 python3-dev python3-pip python3-setuptools \
-            libffi-dev libssl-dev libbz2-dev libreadline-dev libsqlite3-dev zlib1g-dev \
-            libncurses-dev libgdbm-dev libnss3-dev liblzma-dev \
-            bison flex gawk autoconf automake libtool m4
+          sudo apt install gcc-13 g++-13 -y
+          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 100 --slave /usr/bin/g++ g++ /usr/bin/g++-13 --slave /usr/bin/gcov gcov /usr/bin/gcov-12
+          sudo update-alternatives --set gcc /usr/bin/gcc-13
 
-      - name: Clean build directory
-        run: rm -rf Tibia/silnik/budowa_silnik
-
-      - name: Clone vcpkg
+      - name: Switch to gcc-14 on Ubuntu 24.04
+        if: matrix.os == 'ubuntu-24.04'
         run: |
-          if [ ! -d "vcpkg" ]; then
-            git clone https://github.com/microsoft/vcpkg.git
-          fi
+          sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
+          sudo apt-get update
+          sudo apt-get install gcc-14 g++-14 -y
+          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-14 100 --slave /usr/bin/g++ g++ /usr/bin/g++-14 --slave /usr/bin/gcov gcov /usr/bin/gcov-14
+          sudo update-alternatives --set gcc /usr/bin/gcc-14
 
-      - name: Bootstrap vcpkg
-        run: cd vcpkg && ./bootstrap-vcpkg.sh
-
-      - name: Wygeneruj zależności DOT
-        run: ./vcpkg/vcpkg depend-info boost zlib curl --format=dot > deps.dot && cat deps.dot
-
-      - name: Install dependencies via vcpkg
-        run: |
-          ./vcpkg/vcpkg install boost boost-python
-
-      - name: Show vcpkg build logs if failed
-        if: failure()
-        run: |
-          find vcpkg/buildtrees -name '*-err.log' -exec echo '--- {} ---' \; -exec cat {} \; || true
-
-      - name: Configure and build
-        run: |
-          cmake -S Tibia/silnik/canary -B Tibia/silnik/budowa_silnik \
-            -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake \
-            -DCMAKE_BUILD_TYPE=Release \
-            -G Ninja
-          cmake --build Tibia/silnik/budowa_silnik --config Release
-
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
+      - name: CCache
+        uses: hendrikmuhs/ccache-action@main
         with:
-          name: build-output
-          path: Tibia/silnik/budowa_silnik
+          max-size: "1G"
+          key: ccache-${{ matrix.os }}-${{ matrix.buildtype }}
+          restore-keys: |
+            ccache-${{ matrix.os }}
+
+      - name: Restore artifacts and install vcpkg
+        id: vcpkg-step
+        run: |
+          vcpkgCommitId=$(grep '.builtin-baseline' vcpkg.json | awk -F: '{print $2}' | tr -d '," ')
+          echo "vcpkg commit ID: $vcpkgCommitId"
+          echo "VCPKG_GIT_COMMIT_ID=$vcpkgCommitId" >> "$GITHUB_ENV"
+
+      - name: Get vcpkg commit id from vcpkg.json
+        uses: lukka/run-vcpkg@main
+        with:
+          vcpkgGitURL: "https://github.com/microsoft/vcpkg.git"
+          vcpkgGitCommitId: ${{ env.VCPKG_GIT_COMMIT_ID }}
+
+      - name: Get latest CMake and ninja
+        uses: lukka/get-cmake@main
+
+      - name: Run CMake
+        uses: lukka/run-cmake@main
+        with:
+          configurePreset: ${{ matrix.buildtype }}
+          buildPreset: ${{ matrix.buildtype }}
+          configurePresetAdditionalArgs: "['-DBUILD_TESTS=ON']"
+
+      - name: Create and Upload Artifact
+        uses: actions/upload-artifact@main
+        with:
+          name: canary-${{ matrix.os }}-${{ matrix.buildtype }}-${{ github.sha }}
+          path: |
+            ${{ github.workspace }}/build/${{ matrix.buildtype }}/bin/
+
+      - name: Run Unit Tests
+        run: |
+          cd ${{ github.workspace }}/build/${{ matrix.buildtype }}/tests/unit
+          ctest --verbose
+
+#      - name: Run Integration Tests
+#        run: |
+#          cd ${{ github.workspace }}/build/${{ matrix.buildtype }}/tests/integration
+#          ctest --verbose

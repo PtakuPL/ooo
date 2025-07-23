@@ -1,13 +1,3 @@
-#include "pch.hpp"
-#include <functional>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -20,10 +10,6 @@
 #pragma once
 
 #include "creatures/creatures_definitions.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "creatures/players/components/wheel/wheel_definitions.hpp"
 #include "creatures/players/components/wheel/wheel_spells.hpp"
 

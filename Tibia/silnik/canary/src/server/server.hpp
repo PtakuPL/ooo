@@ -1,17 +1,3 @@
-#ifndef __SRC_SERVER_SERVER_HPP_
-#define __SRC_SERVER_SERVER_HPP_
-
-#include "pch.hpp"
-#include <parallel_hashmap/phmap.h>
-#include "lib/logging/log_with_spd_log.hpp"
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -24,10 +10,6 @@
 #pragma once
 
 #include "lib/metrics/metrics.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "server/network/connection/connection.hpp"
 #include "server/signals.hpp"
 
@@ -158,5 +140,3 @@ bool ServiceManager::add(uint16_t port) {
 
 	return service_port->add_service(std::make_shared<Service<ProtocolType>>());
 }
-
-#endif // __SRC_SERVER_SERVER_HPP_

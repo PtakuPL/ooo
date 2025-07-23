@@ -1,8 +1,3 @@
-#include "pch.hpp"
-#include <memory>
-#include <string>
-#include <chrono>
-#include "lib/logging/log_with_spd_log.hpp"
 #ifdef FEATURE_METRICS
 /**
  * Canary - A free and open-source MMORPG server emulator

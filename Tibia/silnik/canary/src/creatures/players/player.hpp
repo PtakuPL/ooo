@@ -1,20 +1,3 @@
-#ifndef __SRC_CREATURES_PLAYERS_PLAYER_HPP_
-#define __SRC_CREATURES_PLAYERS_PLAYER_HPP_
-
-#include "pch.hpp"
-#include <parallel_hashmap/phmap.h>
-#include <functional>
-#include <mutex>
-#include <unordered_map>
-#include <unordered_set>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -27,10 +10,6 @@
 #pragma once
 
 #include "creatures/creature.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "enums/forge_conversion.hpp"
 #include "game/bank/bank.hpp"
 #include "grouping/guild.hpp"
@@ -1757,5 +1736,3 @@ private:
 		return marriageSpouse;
 	}
 };
-
-#endif // __SRC_CREATURES_PLAYERS_PLAYER_HPP_

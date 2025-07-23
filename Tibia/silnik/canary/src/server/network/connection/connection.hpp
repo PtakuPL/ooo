@@ -1,18 +1,3 @@
-#ifndef __SRC_SERVER_NETWORK_CONNECTION_CONNECTION_HPP_
-#define __SRC_SERVER_NETWORK_CONNECTION_CONNECTION_HPP_
-
-#include "pch.hpp"
-#include <parallel_hashmap/phmap.h>
-#include <mutex>
-#include <chrono>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -25,10 +10,6 @@
 #pragma once
 
 #include "declarations.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 // TODO: Remove circular includes (maybe shared_ptr?)
 #include "server/network/message/networkmessage.hpp"
 
@@ -130,5 +111,3 @@ private:
 	friend class ServicePort;
 	friend class ConnectionManager;
 };
-
-#endif // __SRC_SERVER_NETWORK_CONNECTION_CONNECTION_HPP_

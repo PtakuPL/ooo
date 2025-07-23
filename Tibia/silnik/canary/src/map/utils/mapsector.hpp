@@ -1,17 +1,3 @@
-#ifndef __SRC_MAP_UTILS_MAPSECTOR_HPP_
-#define __SRC_MAP_UTILS_MAPSECTOR_HPP_
-
-#include "pch.hpp"
-#include <mutex>
-#include "lib/logging/log_with_spd_log.hpp"
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2023 OpenTibiaBR <opentibiabr@outlook.com>
@@ -24,10 +10,6 @@
 #pragma once
 
 #include "map/map_const.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 
 class Creature;
 class Tile;
@@ -130,5 +112,3 @@ private:
 	friend class Spectators;
 	friend class MapCache;
 };
-
-#endif // __SRC_MAP_UTILS_MAPSECTOR_HPP_

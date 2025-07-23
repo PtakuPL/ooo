@@ -1,19 +1,3 @@
-#ifndef __SRC_GAME_SCHEDULING_SAVE_MANAGER_HPP_
-#define __SRC_GAME_SCHEDULING_SAVE_MANAGER_HPP_
-
-#include "pch.hpp"
-#include <parallel_hashmap/phmap.h>
-#include <atomic>
-#include <thread>
-#include <chrono>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -26,10 +10,6 @@
 #pragma once
 
 #include "lib/thread/thread_pool.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 
 class KVStore;
 class Logger;
@@ -69,5 +49,3 @@ private:
 };
 
 constexpr auto g_saveManager = SaveManager::getInstance;
-
-#endif // __SRC_GAME_SCHEDULING_SAVE_MANAGER_HPP_

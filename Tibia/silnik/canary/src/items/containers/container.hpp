@@ -1,17 +1,3 @@
-#ifndef __SRC_ITEMS_CONTAINERS_CONTAINER_HPP_
-#define __SRC_ITEMS_CONTAINERS_CONTAINER_HPP_
-
-#include "pch.hpp"
-#include <functional>
-#include <unordered_set>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -24,10 +10,6 @@
 #pragma once
 
 #include "items/cylinder.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "items/item.hpp"
 #include "items/tile.hpp"
 
@@ -327,5 +309,3 @@ private:
 	friend class ContainerIterator;
 	friend class IOMapSerialize;
 };
-
-#endif // __SRC_ITEMS_CONTAINERS_CONTAINER_HPP_

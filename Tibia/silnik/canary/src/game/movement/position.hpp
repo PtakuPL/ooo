@@ -1,4 +1,3 @@
-#include "pch.hpp"
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -9,11 +8,6 @@
  */
 
 #pragma once
-
-#include <cstdint>
-#include <string>
-#include <memory>
-#include <fmt/format.h>
 
 enum Direction : uint8_t {
 	DIRECTION_NORTH = 0,

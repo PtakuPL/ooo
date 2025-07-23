@@ -1,13 +1,3 @@
-#include "pch.hpp"
-#include <parallel_hashmap/phmap.h>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -20,8 +10,6 @@
 #pragma once
 
 #include <string>
-#include <map>
-#include <cstdint>
 #include <vector>
 #include <unordered_map>
 #include <variant>

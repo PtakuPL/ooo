@@ -1,17 +1,3 @@
-#ifndef __SRC_CREATURES_APPEARANCE_OUTFIT_OUTFIT_HPP_
-#define __SRC_CREATURES_APPEARANCE_OUTFIT_OUTFIT_HPP_
-
-#include "pch.hpp"
-#include <map>
-#include <cstdint>
-#include <string>
-#include <memory>
-#include <vector>           // dla std::vector
-#include <variant>          // dla std::variant
-#include <source_location>  // dla std::source_location
-#include <unordered_map>    // dla std::unordered_map
-
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -66,5 +52,3 @@ public:
 
 	std::shared_ptr<Outfit> getOutfitByName(PlayerSex_t sex, const std::string &name) const;
 };
-
-#endif // __SRC_CREATURES_APPEARANCE_OUTFIT_OUTFIT_HPP_

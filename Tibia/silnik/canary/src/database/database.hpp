@@ -1,8 +1,3 @@
-#include "pch.hpp"
-#include <functional>
-
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -15,12 +10,6 @@
 #pragma once
 
 #include "declarations.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
-#include "lib/logging/logger.hpp"
-#include "lib/logging/log_with_spd_log.hpp"
 
 #ifndef USE_PRECOMPILED_HEADERS
 	#include <mysql/mysql.h>

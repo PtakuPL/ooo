@@ -1,17 +1,3 @@
-#ifndef __SRC_ITEMS_DECAY_DECAY_HPP_
-#define __SRC_ITEMS_DECAY_DECAY_HPP_
-
-#include "pch.hpp"
-#include <map>
-#include <vector>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -47,5 +33,3 @@ private:
 };
 
 constexpr auto g_decay = Decay::getInstance;
-
-#endif // __SRC_ITEMS_DECAY_DECAY_HPP_

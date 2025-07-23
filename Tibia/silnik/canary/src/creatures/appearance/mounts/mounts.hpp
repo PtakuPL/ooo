@@ -1,5 +1,3 @@
-#include "pch.hpp"
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -10,13 +8,6 @@
  */
 
 #pragma once
-
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
-#include <memory>
-#include <parallel_hashmap/phmap.h>
 
 struct Mount {
 	Mount(uint8_t initId, uint16_t initClientId, std::string initName, int32_t initSpeed, bool initPremium, std::string initType) :

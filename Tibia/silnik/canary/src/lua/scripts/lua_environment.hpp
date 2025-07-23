@@ -1,18 +1,3 @@
-#ifndef __SRC_LUA_SCRIPTS_LUA_ENVIRONMENT_HPP_
-#define __SRC_LUA_SCRIPTS_LUA_ENVIRONMENT_HPP_
-
-#include "pch.hpp"
-#include "lua/global/shared_object.hpp"
-#include <parallel_hashmap/phmap.h>
-#include <unordered_map>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -25,10 +10,6 @@
 #pragma once
 
 #include "creatures/combat/combat.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "declarations.hpp"
 #include "lua/scripts/luascript.hpp"
 #include "items/weapons/weapons.hpp"
@@ -89,5 +70,3 @@ private:
 };
 
 constexpr auto g_luaEnvironment = LuaEnvironment::getInstance;
-
-#endif // __SRC_LUA_SCRIPTS_LUA_ENVIRONMENT_HPP_

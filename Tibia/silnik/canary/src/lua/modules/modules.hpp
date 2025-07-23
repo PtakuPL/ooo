@@ -1,13 +1,3 @@
-#include "pch.hpp"
-#include <pugixml.hpp>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -20,10 +10,6 @@
 #pragma once
 
 #include "declarations.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "lib/di/container.hpp"
 #include "lua/global/baseevents.hpp"
 #include "lua/scripts/luascript.hpp"

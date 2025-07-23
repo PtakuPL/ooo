@@ -1,5 +1,3 @@
-
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -17,7 +15,6 @@
 
 // Utils
 #include "utils/benchmark.hpp"
-#include <cstdint>
 #include "utils/definitions.hpp"
 #include "utils/simd.hpp"
 #include "utils/vectorset.hpp"

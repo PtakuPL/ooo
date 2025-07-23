@@ -1,17 +1,3 @@
-#ifndef __SRC_ITEMS_ITEMS_HPP_
-#define __SRC_ITEMS_ITEMS_HPP_
-
-#include "pch.hpp"
-#include <pugixml.hpp>
-#include <unordered_map>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -24,10 +10,6 @@
 #pragma once
 
 #include "creatures/creatures_definitions.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "game/movement/position.hpp"
 #include "items/items_definitions.hpp"
 #include "utils/utils_definitions.hpp"
@@ -477,5 +459,3 @@ private:
 	std::unordered_map<uint16_t, uint16_t> dummys;
 	InventoryVector inventory;
 };
-
-#endif // __SRC_ITEMS_ITEMS_HPP_

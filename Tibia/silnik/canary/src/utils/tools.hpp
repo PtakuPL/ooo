@@ -1,19 +1,3 @@
-#ifndef __SRC_UTILS_TOOLS_HPP_
-#define __SRC_UTILS_TOOLS_HPP_
-
-#include "pch.hpp"
-#include <functional>
-#include <map>
-#include <vector>
-#include <source_location>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -231,5 +215,3 @@ const std::map<uint8_t, uint16_t> &getMaxValuePerSkill();
 
 float calculateEquipmentLoss(uint8_t blessingAmount, bool isContainer = false);
 uint8_t calculateMaxPvpReduction(uint8_t blessCount, bool isPromoted = false);
-
-#endif // __SRC_UTILS_TOOLS_HPP_

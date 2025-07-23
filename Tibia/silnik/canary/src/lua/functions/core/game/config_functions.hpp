@@ -1,18 +1,3 @@
-#ifndef __SRC_LUA_FUNCTIONS_CORE_GAME_CONFIG_FUNCTIONS_HPP_
-#define __SRC_LUA_FUNCTIONS_CORE_GAME_CONFIG_FUNCTIONS_HPP_
-
-#include "pch.hpp"
-#include "lua/global/shared_object.hpp"
-#include <optional>
-#include <functional>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -25,10 +10,6 @@
 #pragma once
 
 #include "declarations.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 class ConfigFunctions {
 public:
 	static void init(lua_State* L);
@@ -66,5 +47,3 @@ private:
 	static int luaConfigManagerGetNumber(lua_State* L);
 	static int luaConfigManagerGetString(lua_State* L);
 };
-
-#endif // __SRC_LUA_FUNCTIONS_CORE_GAME_CONFIG_FUNCTIONS_HPP_

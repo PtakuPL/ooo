@@ -1,19 +1,3 @@
-#ifndef __SRC_IO_FILELOADER_HPP_
-#define __SRC_IO_FILELOADER_HPP_
-
-#include "pch.hpp"
-#include <mio/mmap.hpp>
-#include <list>
-#include <map>
-#include <vector>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -177,5 +161,3 @@ public:
 private:
 	std::vector<char> buffer;
 };
-
-#endif // __SRC_IO_FILELOADER_HPP_

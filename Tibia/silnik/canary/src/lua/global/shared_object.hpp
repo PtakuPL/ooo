@@ -1,7 +1,3 @@
-#include "pch.hpp"
-
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -14,10 +10,6 @@
 #pragma once
 
 #include <parallel_hashmap/phmap.h>
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 
 class SharedObject;
 using SharedObjectPtr = std::shared_ptr<SharedObject>;

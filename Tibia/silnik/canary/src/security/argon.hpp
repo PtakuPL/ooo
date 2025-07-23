@@ -1,17 +1,3 @@
-#ifndef __SRC_SECURITY_ARGON_HPP_
-#define __SRC_SECURITY_ARGON_HPP_
-
-#include "pch.hpp"
-#include <regex>
-#include <vector>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -48,5 +34,3 @@ private:
 	uint32_t t_cost {};
 	uint32_t parallelism {};
 };
-
-#endif // __SRC_SECURITY_ARGON_HPP_

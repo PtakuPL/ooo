@@ -1,20 +1,3 @@
-#ifndef __SRC_MAP_HOUSE_HOUSE_HPP_
-#define __SRC_MAP_HOUSE_HOUSE_HPP_
-
-#include "pch.hpp"
-#include "lua/global/shared_object.hpp"
-#include <parallel_hashmap/phmap.h>
-#include <functional>
-#include <unordered_map>
-#include <chrono>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -27,10 +10,6 @@
 #pragma once
 
 #include "items/containers/container.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "declarations.hpp"
 #include "map/house/housetile.hpp"
 #include "game/movement/position.hpp"
@@ -447,5 +426,3 @@ private:
 	HouseMap houseMap;
 	HouseMap houseMapClientId;
 };
-
-#endif // __SRC_MAP_HOUSE_HOUSE_HPP_

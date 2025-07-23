@@ -1,5 +1,3 @@
-#include "pch.hpp"
-#include <functional>
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -10,11 +8,6 @@
  */
 
 #pragma once
-
-#include <pugixml.hpp>
-#include <cstdint>
-#include <string>
-#include <memory>
 
 class LuaScriptInterface;
 class Event;

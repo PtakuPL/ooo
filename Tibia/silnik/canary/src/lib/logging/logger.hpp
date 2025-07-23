@@ -1,9 +1,3 @@
-#include "pch.hpp"
-#include <functional>
-#include <thread>
-
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -15,16 +9,6 @@
 #pragma once
 
 #include "utils/transparent_string_hash.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
-#include <fmt/core.h>
-#include <fmt/format.h>
-#include "lib/logging/log_with_spd_log.hpp"
-#include <unordered_map>
-#include <ctime>
-#include <chrono>
 
 namespace spdlog {
 	class logger;

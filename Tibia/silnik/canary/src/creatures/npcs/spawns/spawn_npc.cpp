@@ -1,9 +1,3 @@
-#include "pch.hpp"
-#include <map>
-#include <vector>
-#include <memory>
-#include <string>
-#include "lib/logging/log_with_spd_log.hpp"
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -25,7 +19,6 @@
 #include "lua/creature/events.hpp"
 #include "map/spectators.hpp"
 #include "utils/pugicast.hpp"
-#include <algorithm>
 
 static constexpr int32_t MINSPAWN_INTERVAL = 1000; // 1 second
 static constexpr int32_t MAXSPAWN_INTERVAL = 86400000; // 1 day

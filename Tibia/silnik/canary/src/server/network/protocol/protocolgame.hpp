@@ -1,17 +1,3 @@
-#ifndef __SRC_SERVER_NETWORK_PROTOCOL_PROTOCOLGAME_HPP_
-#define __SRC_SERVER_NETWORK_PROTOCOL_PROTOCOLGAME_HPP_
-
-#include "pch.hpp"
-#include <functional>
-#include <unordered_set>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -24,10 +10,6 @@
 #pragma once
 
 #include "server/network/protocol/protocol.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "game/movement/position.hpp"
 #include "utils/utils_definitions.hpp"
 
@@ -595,5 +577,3 @@ private:
 		m_playerDeathTime = 0;
 	}
 };
-
-#endif // __SRC_SERVER_NETWORK_PROTOCOL_PROTOCOLGAME_HPP_

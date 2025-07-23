@@ -1,8 +1,3 @@
-#include "pch.hpp"
-#include <optional>
-
-
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -16,7 +11,6 @@
 
 #ifndef USE_PRECOMPILED_HEADERS
 	#include <string>
-	#include <array>
 	#include <utility>
 	#include <vector>
 	#include <map>
@@ -25,7 +19,6 @@
 	#include <cstdint>
 	#include <memory>
 	#include <cmath>
-	#include <algorithm>
 #endif
 
 // Enum
@@ -131,16 +124,16 @@ enum ConditionType_t : uint8_t {
 
 // constexpr definiting suppressible conditions
 constexpr bool IsConditionSuppressible(ConditionType_t condition) {
-constexpr std::array<ConditionType_t, 8> suppressibleConditions = {
-    CONDITION_POISON,
-    CONDITION_FIRE,
-    CONDITION_ENERGY,
-    CONDITION_BLEEDING,
-    CONDITION_PARALYZE,
-    CONDITION_DROWN,
-    CONDITION_FREEZING,
-    CONDITION_CURSED,
-};
+	constexpr std::array suppressibleConditions = {
+		CONDITION_POISON,
+		CONDITION_FIRE,
+		CONDITION_ENERGY,
+		CONDITION_BLEEDING,
+		CONDITION_PARALYZE,
+		CONDITION_DROWN,
+		CONDITION_FREEZING,
+		CONDITION_CURSED,
+	};
 
 	return std::ranges::any_of(suppressibleConditions, [condition](const auto &suppressibleCondition) {
 		return condition == suppressibleCondition;

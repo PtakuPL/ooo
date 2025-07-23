@@ -1,17 +1,3 @@
-#ifndef __SRC_LUA_FUNCTIONS_CORE_GAME_CORE_GAME_FUNCTIONS_HPP_
-#define __SRC_LUA_FUNCTIONS_CORE_GAME_CORE_GAME_FUNCTIONS_HPP_
-
-#include "pch.hpp"
-#include "lua/global/shared_object.hpp"
-#include <functional>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -24,10 +10,6 @@
 #pragma once
 
 #include "lua/scripts/luascript.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "lua/functions/core/game/config_functions.hpp"
 #include "lua/functions/core/game/game_functions.hpp"
 #include "lua/functions/core/game/bank_functions.hpp"
@@ -54,5 +36,3 @@ public:
 
 private:
 };
-
-#endif // __SRC_LUA_FUNCTIONS_CORE_GAME_CORE_GAME_FUNCTIONS_HPP_

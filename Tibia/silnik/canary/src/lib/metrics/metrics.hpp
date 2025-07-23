@@ -1,20 +1,3 @@
-#ifndef __SRC_LIB_METRICS_METRICS_HPP_
-#define __SRC_LIB_METRICS_METRICS_HPP_
-
-#include "pch.hpp"
-#include <parallel_hashmap/phmap.h>
-#include <map>
-#include <vector>
-#include <mutex>
-#include <chrono>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -240,5 +223,3 @@ constexpr auto g_metrics
 	= metrics::Metrics::getInstance;
 
 #endif // FEATURE_METRICS
-
-#endif // __SRC_LIB_METRICS_METRICS_HPP_

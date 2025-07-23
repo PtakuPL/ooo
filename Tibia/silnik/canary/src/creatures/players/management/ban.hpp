@@ -1,17 +1,3 @@
-#ifndef __SRC_CREATURES_PLAYERS_MANAGEMENT_BAN_HPP_
-#define __SRC_CREATURES_PLAYERS_MANAGEMENT_BAN_HPP_
-
-#include "pch.hpp"
-#include <map>
-#include <mutex>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -55,5 +41,3 @@ public:
 	static bool isIpBanned(uint32_t clientIP, BanInfo &banInfo);
 	static bool isPlayerNamelocked(uint32_t playerId);
 };
-
-#endif // __SRC_CREATURES_PLAYERS_MANAGEMENT_BAN_HPP_

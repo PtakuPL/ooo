@@ -1,19 +1,3 @@
-#ifndef __SRC_SERVER_NETWORK_MESSAGE_NETWORKMESSAGE_HPP_
-#define __SRC_SERVER_NETWORK_MESSAGE_NETWORKMESSAGE_HPP_
-
-#include "pch.hpp"
-#include <optional>
-#include <functional>
-#include <source_location>
-#include "lib/logging/log_with_spd_log.hpp"
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -26,10 +10,6 @@
 #pragma once
 
 #include "utils/const.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "declarations.hpp"
 
 class Item;
@@ -197,5 +177,3 @@ protected:
 	NetworkMessageInfo info;
 	std::array<uint8_t, NETWORKMESSAGE_MAXSIZE> buffer = {};
 };
-
-#endif // __SRC_SERVER_NETWORK_MESSAGE_NETWORKMESSAGE_HPP_

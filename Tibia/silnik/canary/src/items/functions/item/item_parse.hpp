@@ -1,18 +1,3 @@
-#ifndef __SRC_ITEMS_FUNCTIONS_ITEM_ITEM_PARSE_HPP_
-#define __SRC_ITEMS_FUNCTIONS_ITEM_ITEM_PARSE_HPP_
-
-#include "pch.hpp"
-#include <pugixml.hpp>
-#include <parallel_hashmap/phmap.h>
-#include <functional>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -25,10 +10,6 @@
 #pragma once
 
 #include "creatures/combat/condition.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "declarations.hpp"
 #include "items/item.hpp"
 #include "items/items.hpp"
@@ -351,5 +332,3 @@ private:
 	static void parseFieldCombatDamage(const std::shared_ptr<ConditionDamage> &conditionDamage, pugi::xml_node attributeNode);
 	static void createAndRegisterScript(ItemType &itemType, pugi::xml_node attributeNode, MoveEvent_t eventType = MOVE_EVENT_NONE, WeaponType_t weaponType = WEAPON_NONE);
 };
-
-#endif // __SRC_ITEMS_FUNCTIONS_ITEM_ITEM_PARSE_HPP_

@@ -1,18 +1,3 @@
-#ifndef __SRC_IO_FILESTREAM_HPP_
-#define __SRC_IO_FILESTREAM_HPP_
-
-#include "pch.hpp"
-#include <mio/mmap.hpp>
-#include <map>
-#include <vector>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -58,5 +43,3 @@ private:
 
 	std::vector<uint8_t> m_data;
 };
-
-#endif // __SRC_IO_FILESTREAM_HPP_

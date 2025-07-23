@@ -1,7 +1,3 @@
-#include "pch.hpp"
-
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -14,11 +10,6 @@
 #pragma once
 
 #include "utils/utils_definitions.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
-#include <magic_enum/magic_enum.hpp>
 
 struct Group {
 	std::string name;

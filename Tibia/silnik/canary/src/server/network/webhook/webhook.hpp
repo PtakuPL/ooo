@@ -1,17 +1,3 @@
-#ifndef __SRC_SERVER_NETWORK_WEBHOOK_WEBHOOK_HPP_
-#define __SRC_SERVER_NETWORK_WEBHOOK_WEBHOOK_HPP_
-
-#include "pch.hpp"
-#include <thread>
-#include <mutex>
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
-
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -24,10 +10,6 @@
 #pragma once
 
 #include "lib/thread/thread_pool.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 
 struct WebhookTask {
 	std::string payload;
@@ -66,5 +48,3 @@ private:
 };
 
 constexpr auto g_webhook = Webhook::getInstance;
-
-#endif // __SRC_SERVER_NETWORK_WEBHOOK_WEBHOOK_HPP_

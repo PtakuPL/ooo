@@ -28,11 +28,10 @@ jobs:
         with:
           access_token: ${{ github.token }}
 
-  build:
+  job:
     if: ${{ github.event_name == 'push' || !github.event.pull_request.draft }}
     name: ${{ matrix.os }}-${{ matrix.buildtype }}
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 60
 
     strategy:
       fail-fast: false
@@ -59,9 +58,7 @@ jobs:
           sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
           sudo apt-get update
           sudo apt install gcc-13 g++-13 -y
-          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 100 \
-            --slave /usr/bin/g++ g++ /usr/bin/g++-13 \
-            --slave /usr/bin/gcov gcov /usr/bin/gcov-12
+          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 100 --slave /usr/bin/g++ g++ /usr/bin/g++-13 --slave /usr/bin/gcov gcov /usr/bin/gcov-12
           sudo update-alternatives --set gcc /usr/bin/gcc-13
 
       - name: Switch to gcc-14 on Ubuntu 24.04
@@ -70,9 +67,7 @@ jobs:
           sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
           sudo apt-get update
           sudo apt-get install gcc-14 g++-14 -y
-          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-14 100 \
-            --slave /usr/bin/g++ g++ /usr/bin/g++-14 \
-            --slave /usr/bin/gcov gcov /usr/bin/gcov-14
+          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-14 100 --slave /usr/bin/g++ g++ /usr/bin/g++-14 --slave /usr/bin/gcov gcov /usr/bin/gcov-14
           sudo update-alternatives --set gcc /usr/bin/gcc-14
 
       - name: CCache

@@ -97,6 +97,7 @@ jobs:
       - name: Run CMake
         uses: lukka/run-cmake@main
         with:
+          cmakeListsTxtPath: Tibia/silnik/canary/CMakeLists.txt
           configurePreset: ${{ matrix.buildtype }}
           buildPreset: ${{ matrix.buildtype }}
           configurePresetAdditionalArgs: "['-DBUILD_TESTS=ON']"

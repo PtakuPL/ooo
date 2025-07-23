@@ -1,9 +1,4 @@
-#include "pch.hpp"
-#include <functional>
-#include <map>
-#include <memory>
-#include <string>
-#include "lib/logging/log_with_spd_log.hpp"
+
 /**
  * Canary - A free and open-source MMORPG server emulator
  * Copyright (©) 2019-2024 OpenTibiaBR <opentibiabr@outlook.com>
@@ -12,9 +7,6 @@
  * Contributors: https://github.com/opentibiabr/canary/graphs/contributors
  * Website: https://docs.opentibiabr.com/
  */
-#include <magic_enum.hpp>
-#include <pugixml.hpp>
-#include <lua.hpp>
 
 #include "lua/scripts/luascript.hpp"
 

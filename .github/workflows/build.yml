@@ -94,13 +94,21 @@ jobs:
       - name: Get latest CMake and ninja
         uses: lukka/get-cmake@main
 
-      - name: Run CMake
-        uses: lukka/run-cmake@main
+      - name: Configure CMake
+        uses: lukka/run-cmake@v10
         with:
-          cmakeListsTxtPath: Tibia/silnik/canary/CMakeLists.txt
           configurePreset: ${{ matrix.buildtype }}
+          configurePresetAdditionalArgs: '["-DBUILD_TESTS=ON"]'
+
+      - name: Build with CMake
+        uses: lukka/run-cmake@v10
+        with:
           buildPreset: ${{ matrix.buildtype }}
-          configurePresetAdditionalArgs: "['-DBUILD_TESTS=ON']"
+
+      - name: Debug Build Output
+        run: |
+          echo "Zawartość katalogu build:"
+          ls -R ${{ github.workspace }}/build/${{ matrix.buildtype }} || true
 
       - name: Create and Upload Artifact
         uses: actions/upload-artifact@main

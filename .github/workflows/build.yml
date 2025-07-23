@@ -32,7 +32,6 @@ jobs:
     if: ${{ github.event_name == 'push' || !github.event.pull_request.draft }}
     name: ${{ matrix.os }}-${{ matrix.buildtype }}
     runs-on: ${{ matrix.os }}
-
         timeout-minutes: 60
 
     strategy:

@@ -1,17 +1,6 @@
 #ifndef __SRC_LUA_SCRIPTS_LUASCRIPT_HPP_
 #define __SRC_LUA_SCRIPTS_LUASCRIPT_HPP_
 
-#include "pch.hpp"
-#include "lua/global/shared_object.hpp"
-#include <functional>
-#include "lib/logging/log_with_spd_log.hpp"
-#include <cstdint>
-#include <string>
-#include <memory>
-
-#include <cstdint>
-#include <string>
-#include <memory>
 
 /**
  * Canary - A free and open-source MMORPG server emulator
@@ -25,10 +14,6 @@
 #pragma once
 
 #include "lua/functions/lua_functions_loader.hpp"
-#include <string>
-#include <vector>
-#include <map>
-#include <cstdint>
 #include "lua/scripts/script_environment.hpp"
 
 class LuaScriptInterface : public Lua {

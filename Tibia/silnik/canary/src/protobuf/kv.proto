@@ -1,4 +1,3 @@
-#include <map>
  syntax = "proto3";
 
 package Canary.protobuf.kv;

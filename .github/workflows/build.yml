@@ -127,7 +127,7 @@ jobs:
         with:
           name: canary-${{ matrix.os }}-${{ matrix.buildtype }}-${{ github.sha }}
           path: |
-            ${{ github.workspace }}/build/${{ matrix.buildtype }}/bin/
+            ${{ github.workspace }}/Tibia/silnik/canary/build/${{ matrix.buildtype }}/bin/
 
       - name: Run Unit Tests
         run: |

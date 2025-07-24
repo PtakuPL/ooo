@@ -106,6 +106,12 @@ jobs:
           cmakeListsTxtPath: Tibia/silnik/canary/CMakeLists.txt
           buildPreset: ${{ matrix.buildtype }}
 
+      - name: Find all files after build
+        run: |
+          echo "::group::Pliki po kompilacji"
+          find ${{ github.workspace }} -type f | sort
+          echo "::endgroup::"
+
       - name: Debug Build Output
         run: |
           echo "Zawartość katalogu build:"

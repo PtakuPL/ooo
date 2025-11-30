@@ -1,0 +1,999 @@
+Directory 'build' already exists, moving to it
+Clean build directory
+Configuring
+-- Running vcpkg install
+Detecting compiler hash for triplet x64-linux...
+Compiler found: /usr/bin/c++
+The following packages will be built and installed:
+    abseil:x64-linux@20230125.0#1
+  * alsa:x64-linux@1.2.6.1#2
+    asio:x64-linux@1.24.0#1
+  * brotli:x64-linux@1.0.9#5
+    bshoshany-thread-pool:x64-linux@3.3.0
+  * bzip2[core,tool]:x64-linux@1.0.8#3
+    cpp-httplib:x64-linux@0.11.3#1
+    discord-rpc:x64-linux@3.4.0#2
+  * egl-registry:x64-linux@2022-09-20
+    fmt:x64-linux@9.1.0#1
+    freetype[brotli,bzip2,core,png,zlib]:x64-linux@2.12.1#3
+    fribidi:x64-linux@1.0.12
+    glew:x64-linux@2.2.0
+    harfbuzz:x64-linux@7.0.0
+    liblzma:x64-linux@5.4.1#1
+    libogg:x64-linux@1.3.5#1
+  * libpng:x64-linux@1.6.39#1
+    libvorbis:x64-linux@1.3.7#2
+    luajit:x64-linux@2023-01-04
+    nlohmann-json:x64-linux@3.11.2
+    openal-soft:x64-linux@1.23.0
+  * opengl:x64-linux@2022-12-04#3
+  * opengl-registry:x64-linux@2022-09-29#1
+    openssl:x64-linux@3.1.0#1
+    parallel-hashmap:x64-linux@1.3.8
+    physfs:x64-linux@3.2.0#1
+    protobuf:x64-linux@3.21.12
+    pugixml:x64-linux@1.13.0
+  * rapidjson:x64-linux@2022-06-28#3
+    stduuid:x64-linux@1.2.2
+  * vcpkg-cmake:x64-linux@2022-12-22
+  * vcpkg-cmake-config:x64-linux@2022-02-06#1
+  * vcpkg-cmake-get-vars:x64-linux@2023-03-02
+  * vcpkg-tool-meson:x64-linux@0.63
+    zlib:x64-linux@1.2.13
+Additional packages (*) will be modified to complete this operation.
+Restored 35 package(s) from /home/ptaku/.cache/vcpkg/archives in 3.6 s. Use --debug to see more details.
+Installing 1/35 vcpkg-cmake-config:x64-linux@2022-02-06#1...
+Elapsed time to handle vcpkg-cmake-config:x64-linux: 1.94 ms
+vcpkg-cmake-config:x64-linux package ABI: e942080f47e45fec6f08d74a619c69b242f4d6794a48631b606376001c55d904
+Installing 2/35 vcpkg-cmake:x64-linux@2022-12-22...
+Elapsed time to handle vcpkg-cmake:x64-linux: 953 us
+vcpkg-cmake:x64-linux package ABI: fef7b36ac4531c25d7972b535629a72037149c819e0bff4a3e868001e9b2b176
+Installing 3/35 abseil:x64-linux@20230125.0#1...
+Elapsed time to handle abseil:x64-linux: 62.7 ms
+abseil:x64-linux package ABI: 5fc65245bc5b57e793a746f0ab8591862e8286e1fadc4ec086c4a6197e2101c7
+Installing 4/35 asio:x64-linux@1.24.0#1...
+Elapsed time to handle asio:x64-linux: 32.8 ms
+asio:x64-linux package ABI: 4b85ecc768dacaae1be1e4d386e35d2e74670e5b1ec1cc687d52b56ae0eff64e
+Installing 5/35 bshoshany-thread-pool:x64-linux@3.3.0...
+Elapsed time to handle bshoshany-thread-pool:x64-linux: 3.17 ms
+bshoshany-thread-pool:x64-linux package ABI: acf4e8d1f5dbefda657220d3560966107dc9baea23bbaee539687076a9f7a13a
+Installing 6/35 brotli:x64-linux@1.0.9#5...
+Elapsed time to handle brotli:x64-linux: 5.44 ms
+brotli:x64-linux package ABI: b031b5b3366b27b8618dd346bb65e8ac91ef02a3ae2772c433ef436a0dc91ee4
+Installing 7/35 cpp-httplib:x64-linux@0.11.3#1...
+Elapsed time to handle cpp-httplib:x64-linux: 7.6 ms
+cpp-httplib:x64-linux package ABI: 489fad0ae1f4d68ee3c2c725823656be00133361fc06a78e0bd58dc33f18d708
+Installing 8/35 rapidjson:x64-linux@2022-06-28#3...
+Elapsed time to handle rapidjson:x64-linux: 10.1 ms
+rapidjson:x64-linux package ABI: 31cae48fda899d96d1a0cfd78857bffadced8f2bc33f45e1fba4763f45e17154
+Installing 9/35 discord-rpc:x64-linux@3.4.0#2...
+Elapsed time to handle discord-rpc:x64-linux: 7.73 ms
+discord-rpc:x64-linux package ABI: 2a1b55933633fa7ebba08309a8de10aacdfaec99ef30864e8ca3252abe7ee73a
+Installing 10/35 fmt:x64-linux@9.1.0#1...
+Elapsed time to handle fmt:x64-linux: 5.26 ms
+fmt:x64-linux package ABI: 0d1f9797533841c7939ebf12352fdce34e189ba4bcac2f67928d9a5c4ec2f3c4
+Installing 11/35 zlib:x64-linux@1.2.13...
+Elapsed time to handle zlib:x64-linux: 5.99 ms
+zlib:x64-linux package ABI: 0e7bce1e49521b7f8934f7c1f93376b1487a2b100abbd01ceb4d49da64bb8b28
+Installing 12/35 libpng:x64-linux@1.6.39#1...
+Elapsed time to handle libpng:x64-linux: 8.4 ms
+libpng:x64-linux package ABI: 9c3e56aaf7e05af075b8ec50f4a3d62f3bc5c5066f04b45de1593067fcc2ae0b
+Installing 13/35 bzip2[core,tool]:x64-linux@1.0.8#3...
+Elapsed time to handle bzip2:x64-linux: 6.87 ms
+bzip2:x64-linux package ABI: ba06beada24a0e85ee14b1ba46d23cecbf035aea059f5a6385235e6a636e4273
+Installing 14/35 freetype[brotli,bzip2,core,png,zlib]:x64-linux@2.12.1#3...
+Elapsed time to handle freetype:x64-linux: 11.7 ms
+freetype:x64-linux package ABI: 3d92c5688db3109be2bc8a415cd6832b42b931613ec58ef122d47b857066c8fc
+Installing 15/35 vcpkg-tool-meson:x64-linux@0.63...
+Elapsed time to handle vcpkg-tool-meson:x64-linux: 68.1 ms
+vcpkg-tool-meson:x64-linux package ABI: a3521313069e0557b009afd48d0836691f8f8d0a500c799c716e15babf9a2bab
+Installing 16/35 fribidi:x64-linux@1.0.12...
+Elapsed time to handle fribidi:x64-linux: 6.56 ms
+fribidi:x64-linux package ABI: ca751f82e6430cd06baa4c1388e802fa3b4f9562b68937d74ab22e3213d821df
+Installing 17/35 egl-registry:x64-linux@2022-09-20...
+Elapsed time to handle egl-registry:x64-linux: 8.41 ms
+egl-registry:x64-linux package ABI: c9b000c183cce4d1f57332496c0f3c8b8280e6acd10470f8128e8a0461984d95
+Installing 18/35 opengl-registry:x64-linux@2022-09-29#1...
+Elapsed time to handle opengl-registry:x64-linux: 12.5 ms
+opengl-registry:x64-linux package ABI: 833a2516be76eed49a936e5fcebe49ae7e5105532a89f99158f1e0398699eb87
+Installing 19/35 opengl:x64-linux@2022-12-04#3...
+Elapsed time to handle opengl:x64-linux: 4.84 ms
+opengl:x64-linux package ABI: 2a207262cb1336e9943dba00011e1a4a592e99c9429aa728d884b90a40799e5f
+Installing 20/35 glew:x64-linux@2.2.0...
+Elapsed time to handle glew:x64-linux: 6.18 ms
+glew:x64-linux package ABI: c5461f8d89adc935d001decc5f574aebd000fdbbcdfc02289c079c74f783733d
+Installing 21/35 harfbuzz:x64-linux@7.0.0...
+Elapsed time to handle harfbuzz:x64-linux: 10.9 ms
+harfbuzz:x64-linux package ABI: 6d9b1ebd1e21ffaf29398977bb722b6dfd359d56859874738241b0ca7c72492a
+Installing 22/35 liblzma:x64-linux@5.4.1#1...
+Elapsed time to handle liblzma:x64-linux: 8.08 ms
+liblzma:x64-linux package ABI: 6102d8759fa30466fee3849289a775bae36acd80f52b41143b79bb68e63e6a17
+Installing 23/35 libogg:x64-linux@1.3.5#1...
+Elapsed time to handle libogg:x64-linux: 10.1 ms
+libogg:x64-linux package ABI: 64e68db23b893e8af041ffda004e20747bbbac06a717f7ce31e132b318bf8f21
+Installing 24/35 libvorbis:x64-linux@1.3.7#2...
+Elapsed time to handle libvorbis:x64-linux: 7.48 ms
+libvorbis:x64-linux package ABI: 762f2bb744ac98a4ffa59d4ec2ffd1ee5c6cd86f46fbb99b79a83f8677a6ab79
+Installing 25/35 luajit:x64-linux@2023-01-04...
+Elapsed time to handle luajit:x64-linux: 11 ms
+luajit:x64-linux package ABI: 51f7f5ba4ae2e330de861151856544078dedfb34f284a49ee111666dee341f2b
+Installing 26/35 nlohmann-json:x64-linux@3.11.2...
+Elapsed time to handle nlohmann-json:x64-linux: 13.5 ms
+nlohmann-json:x64-linux package ABI: 92eca6f6fe7ab08f4348f143e91f1402a6d71d8068d316c560eb0ce22731867a
+Installing 27/35 alsa:x64-linux@1.2.6.1#2...
+Elapsed time to handle alsa:x64-linux: 15.3 ms
+alsa:x64-linux package ABI: 9e124d0cd4b88a09d40aa0f80de29515e0bd972312e57f75fcae79cefecc750e
+Installing 28/35 openal-soft:x64-linux@1.23.0...
+Elapsed time to handle openal-soft:x64-linux: 9.04 ms
+openal-soft:x64-linux package ABI: a0034976b06ba73baf2252a8f8f3685834c8d11495f92a1756fb2c3c698aba53
+Installing 29/35 vcpkg-cmake-get-vars:x64-linux@2023-03-02...
+Elapsed time to handle vcpkg-cmake-get-vars:x64-linux: 7.74 ms
+vcpkg-cmake-get-vars:x64-linux package ABI: 2d70ca150c2b9b3e1d05d2260a3f6f8e6a8fea2f1512027d76c429772f8c8b44
+Installing 30/35 openssl:x64-linux@3.1.0#1...
+Elapsed time to handle openssl:x64-linux: 14.8 ms
+openssl:x64-linux package ABI: 604be263b04eab59ba01816576a3b532d941579ae0e4a6f6fb008b32bef3ce80
+Installing 31/35 parallel-hashmap:x64-linux@1.3.8...
+Elapsed time to handle parallel-hashmap:x64-linux: 8.34 ms
+parallel-hashmap:x64-linux package ABI: 5e0afb6b257ed0f45ca1eee0324024e0907112054072ddd3c7c469a3cfc3f142
+Installing 32/35 physfs:x64-linux@3.2.0#1...
+Elapsed time to handle physfs:x64-linux: 8.7 ms
+physfs:x64-linux package ABI: 6bcf7fba8b65384554d04b6b3bf91c761bdb7eda135e22545a6072037f8be3a8
+Installing 33/35 protobuf:x64-linux@3.21.12...
+Elapsed time to handle protobuf:x64-linux: 18.8 ms
+protobuf:x64-linux package ABI: 1d26706dcce5ecd2556523390b1de2719cd048e6df335ffa516ee5983ed0c10f
+Installing 34/35 pugixml:x64-linux@1.13.0...
+Elapsed time to handle pugixml:x64-linux: 6.02 ms
+pugixml:x64-linux package ABI: 86772310f1f951a51b10243ff67b47715d33f15bed600151d87bc0c8dc30dced
+Installing 35/35 stduuid:x64-linux@1.2.2...
+Elapsed time to handle stduuid:x64-linux: 6.36 ms
+stduuid:x64-linux package ABI: fb9e8175d5c188475a7e30fa55f1f7791fd8bae7c584cd3c5649b38b9c97963b
+Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Some packages did not declare an SPDX license. Check the `copyright` file for each package for more information about their licensing.
+Packages installed in this vcpkg installation declare the following licenses:
+(FTL OR GPL-2.0-or-later)
+Apache-2.0
+BSD-3-Clause
+BSL-1.0
+LGPL-2.0-or-later
+LGPL-2.1-or-later
+MIT
+MIT-Modern-Variant
+Zlib
+bzip2-1.0.6
+libpng-2.0
+abseil provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(absl CONFIG REQUIRED)
+  # note: 170 additional targets are not displayed.
+  target_link_libraries(main PRIVATE absl::any absl::log absl::base absl::bits)
+
+abseil provides pkg-config modules:
+
+  # Abseil absl_check library
+  absl_absl_check
+
+  # Abseil absl_log library
+  absl_absl_log
+
+  # Abseil algorithm library
+  absl_algorithm
+
+  # Abseil algorithm_container library
+  absl_algorithm_container
+
+  # Abseil any library
+  absl_any
+
+  # Abseil any_invocable library
+  absl_any_invocable
+
+  # Abseil atomic_hook library
+  absl_atomic_hook
+
+  # Abseil bad_any_cast library
+  absl_bad_any_cast
+
+  # Abseil bad_any_cast_impl library
+  absl_bad_any_cast_impl
+
+  # Abseil bad_optional_access library
+  absl_bad_optional_access
+
+  # Abseil bad_variant_access library
+  absl_bad_variant_access
+
+  # Abseil base library
+  absl_base
+
+  # Abseil base_internal library
+  absl_base_internal
+
+  # Abseil bind_front library
+  absl_bind_front
+
+  # Abseil bits library
+  absl_bits
+
+  # Abseil btree library
+  absl_btree
+
+  # Abseil check library
+  absl_check
+
+  # Abseil city library
+  absl_city
+
+  # Abseil civil_time library
+  absl_civil_time
+
+  # Abseil cleanup library
+  absl_cleanup
+
+  # Abseil cleanup_internal library
+  absl_cleanup_internal
+
+  # Abseil common_policy_traits library
+  absl_common_policy_traits
+
+  # Abseil compare library
+  absl_compare
+
+  # Abseil compressed_tuple library
+  absl_compressed_tuple
+
+  # Abseil config library
+  absl_config
+
+  # Abseil container_common library
+  absl_container_common
+
+  # Abseil container_memory library
+  absl_container_memory
+
+  # Abseil cord library
+  absl_cord
+
+  # Abseil cord_internal library
+  absl_cord_internal
+
+  # Abseil cordz_functions library
+  absl_cordz_functions
+
+  # Abseil cordz_handle library
+  absl_cordz_handle
+
+  # Abseil cordz_info library
+  absl_cordz_info
+
+  # Abseil cordz_sample_token library
+  absl_cordz_sample_token
+
+  # Abseil cordz_statistics library
+  absl_cordz_statistics
+
+  # Abseil cordz_update_scope library
+  absl_cordz_update_scope
+
+  # Abseil cordz_update_tracker library
+  absl_cordz_update_tracker
+
+  # Abseil core_headers library
+  absl_core_headers
+
+  # Abseil counting_allocator library
+  absl_counting_allocator
+
+  # Abseil crc32c library
+  absl_crc32c
+
+  # Abseil crc_cord_state library
+  absl_crc_cord_state
+
+  # Abseil crc_cpu_detect library
+  absl_crc_cpu_detect
+
+  # Abseil crc_internal library
+  absl_crc_internal
+
+  # Abseil debugging library
+  absl_debugging
+
+  # Abseil debugging_internal library
+  absl_debugging_internal
+
+  # Abseil demangle_internal library
+  absl_demangle_internal
+
+  # Abseil die_if_null library
+  absl_die_if_null
+
+  # Abseil dynamic_annotations library
+  absl_dynamic_annotations
+
+  # Abseil endian library
+  absl_endian
+
+  # Abseil errno_saver library
+  absl_errno_saver
+
+  # Abseil examine_stack library
+  absl_examine_stack
+
+  # Abseil exponential_biased library
+  absl_exponential_biased
+
+  # Abseil failure_signal_handler library
+  absl_failure_signal_handler
+
+  # Abseil fast_type_id library
+  absl_fast_type_id
+
+  # Abseil fixed_array library
+  absl_fixed_array
+
+  # Abseil flags library
+  absl_flags
+
+  # Abseil flags_commandlineflag library
+  absl_flags_commandlineflag
+
+  # Abseil flags_commandlineflag_internal library
+  absl_flags_commandlineflag_internal
+
+  # Abseil flags_config library
+  absl_flags_config
+
+  # Abseil flags_internal library
+  absl_flags_internal
+
+  # Abseil flags_marshalling library
+  absl_flags_marshalling
+
+  # Abseil flags_parse library
+  absl_flags_parse
+
+  # Abseil flags_path_util library
+  absl_flags_path_util
+
+  # Abseil flags_private_handle_accessor library
+  absl_flags_private_handle_accessor
+
+  # Abseil flags_program_name library
+  absl_flags_program_name
+
+  # Abseil flags_reflection library
+  absl_flags_reflection
+
+  # Abseil flags_usage library
+  absl_flags_usage
+
+  # Abseil flags_usage_internal library
+  absl_flags_usage_internal
+
+  # Abseil flat_hash_map library
+  absl_flat_hash_map
+
+  # Abseil flat_hash_set library
+  absl_flat_hash_set
+
+  # Abseil function_ref library
+  absl_function_ref
+
+  # Abseil graphcycles_internal library
+  absl_graphcycles_internal
+
+  # Abseil hash library
+  absl_hash
+
+  # Abseil hash_function_defaults library
+  absl_hash_function_defaults
+
+  # Abseil hash_policy_traits library
+  absl_hash_policy_traits
+
+  # Abseil hashtable_debug library
+  absl_hashtable_debug
+
+  # Abseil hashtable_debug_hooks library
+  absl_hashtable_debug_hooks
+
+  # Abseil hashtablez_sampler library
+  absl_hashtablez_sampler
+
+  # Abseil inlined_vector library
+  absl_inlined_vector
+
+  # Abseil inlined_vector_internal library
+  absl_inlined_vector_internal
+
+  # Abseil int128 library
+  absl_int128
+
+  # Abseil kernel_timeout_internal library
+  absl_kernel_timeout_internal
+
+  # Abseil layout library
+  absl_layout
+
+  # Abseil leak_check library
+  absl_leak_check
+
+  # Abseil log library
+  absl_log
+
+  # Abseil log_entry library
+  absl_log_entry
+
+  # Abseil log_flags library
+  absl_log_flags
+
+  # Abseil log_globals library
+  absl_log_globals
+
+  # Abseil log_initialize library
+  absl_log_initialize
+
+  # Abseil log_internal_append_truncated library
+  absl_log_internal_append_truncated
+
+  # Abseil log_internal_check_impl library
+  absl_log_internal_check_impl
+
+  # Abseil log_internal_check_op library
+  absl_log_internal_check_op
+
+  # Abseil log_internal_conditions library
+  absl_log_internal_conditions
+
+  # Abseil log_internal_config library
+  absl_log_internal_config
+
+  # Abseil log_internal_flags library
+  absl_log_internal_flags
+
+  # Abseil log_internal_format library
+  absl_log_internal_format
+
+  # Abseil log_internal_globals library
+  absl_log_internal_globals
+
+  # Abseil log_internal_log_impl library
+  absl_log_internal_log_impl
+
+  # Abseil log_internal_log_sink_set library
+  absl_log_internal_log_sink_set
+
+  # Abseil log_internal_message library
+  absl_log_internal_message
+
+  # Abseil log_internal_nullguard library
+  absl_log_internal_nullguard
+
+  # Abseil log_internal_nullstream library
+  absl_log_internal_nullstream
+
+  # Abseil log_internal_proto library
+  absl_log_internal_proto
+
+  # Abseil log_internal_strip library
+  absl_log_internal_strip
+
+  # Abseil log_internal_structured library
+  absl_log_internal_structured
+
+  # Abseil log_internal_voidify library
+  absl_log_internal_voidify
+
+  # Abseil log_severity library
+  absl_log_severity
+
+  # Abseil log_sink library
+  absl_log_sink
+
+  # Abseil log_sink_registry library
+  absl_log_sink_registry
+
+  # Abseil log_streamer library
+  absl_log_streamer
+
+  # Abseil log_structured library
+  absl_log_structured
+
+  # Abseil low_level_hash library
+  absl_low_level_hash
+
+  # Abseil malloc_internal library
+  absl_malloc_internal
+
+  # Abseil memory library
+  absl_memory
+
+  # Abseil meta library
+  absl_meta
+
+  # Abseil node_hash_map library
+  absl_node_hash_map
+
+  # Abseil node_hash_set library
+  absl_node_hash_set
+
+  # Abseil node_slot_policy library
+  absl_node_slot_policy
+
+  # Abseil non_temporal_arm_intrinsics library
+  absl_non_temporal_arm_intrinsics
+
+  # Abseil non_temporal_memcpy library
+  absl_non_temporal_memcpy
+
+  # Abseil numeric library
+  absl_numeric
+
+  # Abseil numeric_representation library
+  absl_numeric_representation
+
+  # Abseil optional library
+  absl_optional
+
+  # Abseil periodic_sampler library
+  absl_periodic_sampler
+
+  # Abseil prefetch library
+  absl_prefetch
+
+  # Abseil pretty_function library
+  absl_pretty_function
+
+  # Abseil random_bit_gen_ref library
+  absl_random_bit_gen_ref
+
+  # Abseil random_distributions library
+  absl_random_distributions
+
+  # Abseil random_internal_distribution_caller library
+  absl_random_internal_distribution_caller
+
+  # Abseil random_internal_distribution_test_util library
+  absl_random_internal_distribution_test_util
+
+  # Abseil random_internal_fast_uniform_bits library
+  absl_random_internal_fast_uniform_bits
+
+  # Abseil random_internal_fastmath library
+  absl_random_internal_fastmath
+
+  # Abseil random_internal_generate_real library
+  absl_random_internal_generate_real
+
+  # Abseil random_internal_iostream_state_saver library
+  absl_random_internal_iostream_state_saver
+
+  # Abseil random_internal_mock_helpers library
+  absl_random_internal_mock_helpers
+
+  # Abseil random_internal_nonsecure_base library
+  absl_random_internal_nonsecure_base
+
+  # Abseil random_internal_pcg_engine library
+  absl_random_internal_pcg_engine
+
+  # Abseil random_internal_platform library
+  absl_random_internal_platform
+
+  # Abseil random_internal_pool_urbg library
+  absl_random_internal_pool_urbg
+
+  # Abseil random_internal_randen library
+  absl_random_internal_randen
+
+  # Abseil random_internal_randen_engine library
+  absl_random_internal_randen_engine
+
+  # Abseil random_internal_randen_hwaes library
+  absl_random_internal_randen_hwaes
+
+  # Abseil random_internal_randen_hwaes_impl library
+  absl_random_internal_randen_hwaes_impl
+
+  # Abseil random_internal_randen_slow library
+  absl_random_internal_randen_slow
+
+  # Abseil random_internal_salted_seed_seq library
+  absl_random_internal_salted_seed_seq
+
+  # Abseil random_internal_seed_material library
+  absl_random_internal_seed_material
+
+  # Abseil random_internal_traits library
+  absl_random_internal_traits
+
+  # Abseil random_internal_uniform_helper library
+  absl_random_internal_uniform_helper
+
+  # Abseil random_internal_wide_multiply library
+  absl_random_internal_wide_multiply
+
+  # Abseil random_random library
+  absl_random_random
+
+  # Abseil random_seed_gen_exception library
+  absl_random_seed_gen_exception
+
+  # Abseil random_seed_sequences library
+  absl_random_seed_sequences
+
+  # Abseil raw_hash_map library
+  absl_raw_hash_map
+
+  # Abseil raw_hash_set library
+  absl_raw_hash_set
+
+  # Abseil raw_logging_internal library
+  absl_raw_logging_internal
+
+  # Abseil sample_recorder library
+  absl_sample_recorder
+
+  # Abseil scoped_set_env library
+  absl_scoped_set_env
+
+  # Abseil span library
+  absl_span
+
+  # Abseil spinlock_wait library
+  absl_spinlock_wait
+
+  # Abseil stacktrace library
+  absl_stacktrace
+
+  # Abseil status library
+  absl_status
+
+  # Abseil statusor library
+  absl_statusor
+
+  # Abseil str_format library
+  absl_str_format
+
+  # Abseil str_format_internal library
+  absl_str_format_internal
+
+  # Abseil strerror library
+  absl_strerror
+
+  # Abseil strings library
+  absl_strings
+
+  # Abseil strings_internal library
+  absl_strings_internal
+
+  # Abseil symbolize library
+  absl_symbolize
+
+  # Abseil synchronization library
+  absl_synchronization
+
+  # Abseil throw_delegate library
+  absl_throw_delegate
+
+  # Abseil time library
+  absl_time
+
+  # Abseil time_zone library
+  absl_time_zone
+
+  # Abseil type_traits library
+  absl_type_traits
+
+  # Abseil utility library
+  absl_utility
+
+  # Abseil variant library
+  absl_variant
+
+asio provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(asio CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE asio::asio)
+
+bshoshany-thread-pool is header-only and can be used from CMake via:
+
+  find_path(BSHOSHANY_THREAD_POOL_INCLUDE_DIRS "BS_thread_pool.hpp")
+  target_include_directories(main PRIVATE ${BSHOSHANY_THREAD_POOL_INCLUDE_DIRS})
+
+cpp-httplib provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(httplib CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE httplib::httplib)
+
+The package fmt provides CMake targets:
+
+    find_package(fmt CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE fmt::fmt)
+
+    # Or use the header-only version
+    find_package(fmt CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE fmt::fmt-header-only)
+
+The package zlib is compatible with built-in CMake targets:
+
+    find_package(ZLIB REQUIRED)
+    target_link_libraries(main PRIVATE ZLIB::ZLIB)
+
+freetype is compatible with built-in CMake targets:
+
+    find_package(Freetype REQUIRED)
+    target_link_libraries(main PRIVATE Freetype::Freetype) # since CMake 3.10
+
+fribidi provides pkg-config modules:
+
+  # Unicode Bidirectional Algorithm Library
+  fribidi
+
+The package glew is compatible with built-in CMake targets:
+
+    find_package(GLEW REQUIRED)
+    target_link_libraries(main PRIVATE GLEW::GLEW)
+
+harfbuzz provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(harfbuzz CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE harfbuzz::harfbuzz)
+
+harfbuzz provides pkg-config modules:
+
+  # HarfBuzz font subsetter
+  harfbuzz-subset
+
+  # HarfBuzz text shaping library
+  harfbuzz
+
+liblzma is compatible with built-in CMake targets:
+
+    find_package(LibLZMA REQUIRED)
+    target_link_libraries(main PRIVATE LibLZMA::LibLZMA)
+
+liblzma provides CMake targets:
+
+    find_package(liblzma CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE liblzma::liblzma)
+
+libogg provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(Ogg CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Ogg::ogg)
+
+libogg provides pkg-config modules:
+
+  # ogg is a library for manipulating ogg bitstreams
+  ogg
+
+The package libvorbis provides CMake targets:
+
+    # Vorbis reference encoder and decoder, low-level API
+    find_package(Vorbis CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE Vorbis::vorbis)
+
+    # Audio stream decoding and basic manipulation, high-level API
+    find_package(Vorbis CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE Vorbis::vorbisfile)
+
+    # Convenience API for setting up an encoding environment
+    find_package(Vorbis CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE Vorbis::vorbisenc)
+
+luajit provides pkg-config modules:
+
+  # Just-in-time compiler for Lua
+  luajit
+
+The package nlohmann-json provides CMake targets:
+
+    find_package(nlohmann_json CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE nlohmann_json::nlohmann_json)
+
+The package nlohmann-json can be configured to not provide implicit conversions via a custom triplet file:
+
+    set(nlohmann-json_IMPLICIT_CONVERSIONS OFF)
+
+For more information, see the docs here:
+    
+    https://json.nlohmann.me/api/macros/json_use_implicit_conversions/
+
+The package openal-soft provides CMake targets:
+
+    find_package(OpenAL CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE OpenAL::OpenAL)
+
+The package openssl is compatible with built-in CMake targets:
+
+    find_package(OpenSSL REQUIRED)
+    target_link_libraries(main PRIVATE OpenSSL::SSL OpenSSL::Crypto)
+
+parallel-hashmap is header-only and can be used from CMake via:
+
+  find_path(PARALLEL_HASHMAP_INCLUDE_DIRS "parallel_hashmap/btree.h")
+  target_include_directories(main PRIVATE ${PARALLEL_HASHMAP_INCLUDE_DIRS})
+
+physfs provides CMake targets:
+
+    find_package(PhysFS CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE $<IF:$<TARGET_EXISTS:PhysFS::PhysFS>,PhysFS::PhysFS,PhysFS::PhysFS-static>)
+
+physfs is compatible with built-in CMake targets:
+
+    find_package(PhysFS REQUIRED)
+    target_include_directories(main PRIVATE ${PHYSFS_INCLUDE_DIR})
+    target_link_libraries(main PRIVATE ${PHYSFS_LIBRARY})
+
+protobuf provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(protobuf CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE protobuf::libprotoc protobuf::libprotobuf protobuf::libprotobuf-lite)
+
+protobuf provides pkg-config modules:
+
+  # Google's Data Interchange Format
+  protobuf-lite
+
+  # Google's Data Interchange Format
+  protobuf
+
+pugixml provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(pugixml CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE pugixml::static pugixml::pugixml)
+
+pugixml provides pkg-config modules:
+
+  # Light-weight, simple and fast XML parser for C++ with XPath support.
+  pugixml
+
+stduuid provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(stduuid CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE stduuid)
+
+All requested installations completed successfully in: 445 ms
+-- Running vcpkg install - done
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Enabled:[m [32m[1mipo[m
+-- Found ZLIB: /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/build/vcpkg_installed/x64-linux/lib/libz.a (found version "1.2.13")  
+-- Found BZip2: /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/build/vcpkg_installed/x64-linux/lib/libbz2.a (found version "1.0.8") 
+-- Looking for BZ2_bzCompressInit
+-- Looking for BZ2_bzCompressInit - found
+-- Found PNG: /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/build/vcpkg_installed/x64-linux/lib/libpng16.a (found version "1.6.39") 
+-- Found Freetype: /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/build/vcpkg_installed/x64-linux/lib/libfreetype.a (found version "2.12.1") 
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") 
+-- Checking for module 'fribidi'
+--   Found fribidi, version 1.0.12
+-- Found Protobuf: /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/build/vcpkg_installed/x64-linux/lib/libprotobuf.a (found version "3.21.12") 
+-- Found Threads: TRUE  
+-- Found Protobuf Compiler: /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/build/vcpkg_installed/x64-linux/tools/protobuf/protoc
+-- Use precompiled header: ON
+-- Enabled:[m [32m[1mBuild unity for speed up compilation[m
+-- Disabled:[m [33m[1masan[m
+-- Disabled:[m [33m[1mDEBUG LOG[m
+-- Build type: 
+-- Build commit: 
+-- Build revision: 
+-- Checking for module 'physfs'
+--   Found physfs, version 3.2.0
+-- Found LibLZMA: /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/build/vcpkg_installed/x64-linux/lib/liblzma.a (found version "5.4.1") 
+-- Found X11: /usr/include   
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+CMake Deprecation Warning at build/vcpkg_installed/x64-linux/share/openal-soft/OpenALConfig.cmake:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+Call Stack (most recent call first):
+  /home/ptaku/serweryt/Tibia/silnik/canary_test/vcpkg/scripts/buildsystems/vcpkg.cmake:908 (_find_package)
+  src/CMakeLists.txt:408 (find_package)
+
+
+-- Found VorbisFile: /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/build/vcpkg_installed/x64-linux/debug/lib/libvorbisfile.a  
+CMake Warning (dev) at /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (X11) does
+  not match the name of the calling package (OpenGL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.28/Modules/FindX11.cmake:665 (find_package_handle_standard_args)
+  cmake/FindOpenGL.cmake:128 (INCLUDE)
+  /home/ptaku/serweryt/Tibia/silnik/canary_test/vcpkg/scripts/buildsystems/vcpkg.cmake:908 (_find_package)
+  src/CMakeLists.txt:455 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found LuaJIT: /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/build/vcpkg_installed/x64-linux/debug/lib/libluajit-5.1.a  
+-- Configuring done (107.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/build
+[  3%] Running cpp protocol buffer compiler on /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/src/protobuf/appearances.proto
+[  6%] Running cpp protocol buffer compiler on /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/src/protobuf/staticdata.proto
+[ 10%] Running cpp protocol buffer compiler on /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/src/protobuf/sounds.proto
+[ 13%] Building CXX object src/protobuf/CMakeFiles/protobuf.dir/appearances.pb.cc.o
+[ 20%] Building CXX object src/protobuf/CMakeFiles/protobuf.dir/sounds.pb.cc.o
+[ 20%] Building CXX object src/protobuf/CMakeFiles/protobuf.dir/staticdata.pb.cc.o
+[ 23%] Linking CXX static library libprotobuf.a
+[ 23%] Built target protobuf
+[ 26%] Building CXX object src/CMakeFiles/otclient.dir/cmake_pch.hxx.gch
+[ 40%] Building CXX object src/CMakeFiles/otclient.dir/Unity/unity_15_cxx.cxx.o
+[ 40%] Building CXX object src/CMakeFiles/otclient.dir/Unity/unity_17_cxx.cxx.o
+[ 40%] Building CXX object src/CMakeFiles/otclient.dir/Unity/unity_16_cxx.cxx.o
+[ 46%] Building CXX object src/CMakeFiles/otclient.dir/Unity/unity_18_cxx.cxx.o
+[ 46%] Building CXX object src/CMakeFiles/otclient.dir/Unity/unity_19_cxx.cxx.o
+[ 30%] Building CXX object src/CMakeFiles/otclient.dir/Unity/unity_20_cxx.cxx.o
+[ 50%] Building CXX object src/CMakeFiles/otclient.dir/Unity/unity_14_cxx.cxx.o
+[ 53%] Building CXX object src/CMakeFiles/otclient.dir/Unity/unity_13_cxx.cxx.o
+In file included from /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/src/framework/graphics/bitmapfont.cpp:34,
+                 from /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/build/src/CMakeFiles/otclient.dir/Unity/unity_14_cxx.cxx:7:
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/src/framework/text/LocaleShaping.h:14:43: error: ‘Auto’ is not a member of ‘TextDirection’
+   14 |   TextDirection direction{ TextDirection::Auto };
+      |                                           ^~~~
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/src/framework/text/LocaleShaping.h:14:48: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘TextDirection’ in initialization
+   14 |   TextDirection direction{ TextDirection::Auto };
+      |                                                ^
+In file included from /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/build/src/CMakeFiles/otclient.dir/Unity/unity_14_cxx.cxx:10:
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/src/framework/graphics/cachedtext.cpp: In member function ‘void CachedText::rebuildTTFCoords(const Rect&)’:
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/src/framework/graphics/cachedtext.cpp:85:16: error: ‘using Point = class TPoint<int>’ {aka ‘class TPoint<int>’} has no member named ‘translate’; did you mean ‘translated’?
+   85 |         offset.translate(0, rect.height() - m_textSize.height());
+      |                ^~~~~~~~~
+      |                translated
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/src/framework/graphics/cachedtext.cpp:87:16: error: ‘using Point = class TPoint<int>’ {aka ‘class TPoint<int>’} has no member named ‘translate’; did you mean ‘translated’?
+   87 |         offset.translate(0, (rect.height() - m_textSize.height()) / 2);
+      |                ^~~~~~~~~
+      |                translated
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/src/framework/graphics/cachedtext.cpp:91:16: error: ‘using Point = class TPoint<int>’ {aka ‘class TPoint<int>’} has no member named ‘translate’; did you mean ‘translated’?
+   91 |         offset.translate(rect.width() - m_textSize.width(), 0);
+      |                ^~~~~~~~~
+      |                translated
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/src/framework/graphics/cachedtext.cpp:93:16: error: ‘using Point = class TPoint<int>’ {aka ‘class TPoint<int>’} has no member named ‘translate’; did you mean ‘translated’?
+   93 |         offset.translate((rect.width() - m_textSize.width()) / 2, 0);
+      |                ^~~~~~~~~
+      |                translated
+In file included from /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/src/framework/graphics/framebuffer.cpp:28,
+                 from /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/build/src/CMakeFiles/otclient.dir/Unity/unity_15_cxx.cxx:10:
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/src/framework/core/asyncdispatcher.h:27:8: error: ‘BS::thread_pool’ is not a template
+   27 | extern BS::thread_pool<> g_asyncDispatcher;
+      |        ^~
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/src/framework/graphics/framebuffer.cpp: In lambda function:
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/src/framework/graphics/framebuffer.cpp:200:27: error: ‘class BS::thread_pool’ has no member named ‘detach_task’
+  200 |         g_asyncDispatcher.detach_task([size, pixels, file] {
+      |                           ^~~~~~~~~~~
+In file included from /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/build/src/CMakeFiles/otclient.dir/Unity/unity_18_cxx.cxx:16:
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/src/framework/ui/uitextedit.cpp: In member function ‘virtual void UITextEdit::drawSelf(DrawPoolType)’:
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/src/framework/ui/uitextedit.cpp:123:28: error: invalid ‘static_cast’ from type ‘<unresolved overloaded function type>’ to type ‘float’
+  123 |                 float bx = static_cast<float>(m_drawArea.left);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

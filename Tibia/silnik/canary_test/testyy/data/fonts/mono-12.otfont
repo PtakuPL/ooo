@@ -1,0 +1,7 @@
+Font
+  name: mono-12
+  type: ttf
+  source: /fonts/ttf/NotoSansMono-Regular.ttf
+  bold-source: /fonts/ttf/NotoSansMono-Regular.ttf
+  size: 12
+  fallback: [ ]

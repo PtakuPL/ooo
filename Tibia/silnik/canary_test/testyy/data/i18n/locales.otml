@@ -1,0 +1,236 @@
+Locales
+  entry
+    label: Polski
+    tag: pl-PL
+    script: Latn
+    dir: LTR
+  entry
+    label: Hiszpański
+    tag: es-ES
+    script: Latn
+    dir: LTR
+  entry
+    label: Portugalski
+    tag: pt-PT
+    script: Latn
+    dir: LTR
+  entry
+    label: Brazylijski
+    tag: pt-BR
+    script: Latn
+    dir: LTR
+  entry
+    label: Francuski
+    tag: fr-FR
+    script: Latn
+    dir: LTR
+  entry
+    label: Niemiecki
+    tag: de-DE
+    script: Latn
+    dir: LTR
+  entry
+    label: Rosyjski
+    tag: ru-RU
+    script: Cyrl
+    dir: LTR
+  entry
+    label: Ukraiński
+    tag: uk-UA
+    script: Cyrl
+    dir: LTR
+  entry
+    label: Grecki
+    tag: el-GR
+    script: Grek
+    dir: LTR
+  entry
+    label: Chiński
+    tag: zh-Hans-CN
+    script: Hans
+    dir: LTR
+  entry
+    label: Japoński
+    tag: ja-JP
+    script: Jpan
+    dir: LTR
+  entry
+    label: Rumuński
+    tag: ro-RO
+    script: Latn
+    dir: LTR
+  entry
+    label: Węgierski
+    tag: hu-HU
+    script: Latn
+    dir: LTR
+  entry
+    label: Słowacki
+    tag: sk-SK
+    script: Latn
+    dir: LTR
+  entry
+    label: Czeski
+    tag: cs-CZ
+    script: Latn
+    dir: LTR
+  entry
+    label: Włoski
+    tag: it-IT
+    script: Latn
+    dir: LTR
+  entry
+    label: Szwedzki
+    tag: sv-SE
+    script: Latn
+    dir: LTR
+  entry
+    label: Norweski
+    tag: nb-NO
+    script: Latn
+    dir: LTR
+  entry
+    label: Litewski
+    tag: lt-LT
+    script: Latn
+    dir: LTR
+  entry
+    label: Holenderski
+    tag: nl-NL
+    script: Latn
+    dir: LTR
+  entry
+    label: Turecki
+    tag: tr-TR
+    script: Latn
+    dir: LTR
+  entry
+    label: Bułgarski
+    tag: bg-BG
+    script: Cyrl
+    dir: LTR
+  entry
+    label: Serbski
+    tag: sr-Cyrl-RS
+    script: Cyrl
+    dir: LTR
+  entry
+    label: Egipski
+    tag: ar-EG
+    script: Arab
+    dir: RTL
+  entry
+    label: Arabia Saudyjska
+    tag: ar-SA
+    script: Arab
+    dir: RTL
+  entry
+    label: Izrael
+    tag: he-IL
+    script: Hebr
+    dir: RTL
+  entry
+    label: Gruzja
+    tag: ka-GE
+    script: Geor
+    dir: LTR
+  entry
+    label: Irański
+    tag: fa-IR
+    script: Arab
+    dir: RTL
+  entry
+    label: Indyjski
+    tag: hi-IN
+    script: Deva
+    dir: LTR
+  entry
+    label: Tajlandia
+    tag: th-TH
+    script: Thai
+    dir: LTR
+  entry
+    label: Filipiny
+    tag: fil-PH
+    script: Latn
+    dir: LTR
+  entry
+    label: Wietnam
+    tag: vi-VN
+    script: Latn
+    dir: LTR
+  entry
+    label: Meksykański
+    tag: es-MX
+    script: Latn
+    dir: LTR
+  entry
+    label: Kazachstan
+    tag: kk-KZ
+    script: Cyrl
+    dir: LTR
+  entry
+    label: Nigeria
+    tag: en-NG
+    script: Latn
+    dir: LTR
+  entry
+    label: Azerbejdżan
+    tag: az-Latn-AZ
+    script: Latn
+    dir: LTR
+  entry
+    label: Tunezja
+    tag: ar-TN
+    script: Arab
+    dir: RTL
+  entry
+    label: Korea Południowa
+    tag: ko-KR
+    script: Kore
+    dir: LTR
+  entry
+    label: Kolumbijski
+    tag: es-CO
+    script: Latn
+    dir: LTR
+  entry
+    label: Argentyński
+    tag: es-AR
+    script: Latn
+    dir: LTR
+  entry
+    label: Pakistan
+    tag: ur-PK
+    script: Arab
+    dir: RTL
+  entry
+    label: Turkmenistan
+    tag: tk-TM
+    script: Latn
+    dir: LTR
+  entry
+    label: Uzbekistan
+    tag: uz-Latn-UZ
+    script: Latn
+    dir: LTR
+  entry
+    label: Maroko
+    tag: ar-MA
+    script: Arab
+    dir: RTL
+  entry
+    label: Etiopski
+    tag: am-ET
+    script: Ethi
+    dir: LTR
+  entry
+    label: Malezyjski
+    tag: ms-MY
+    script: Latn
+    dir: LTR
+  entry
+    label: Indonezyjski
+    tag: id-ID
+    script: Latn
+    dir: LTR

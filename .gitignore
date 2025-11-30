@@ -1,0 +1,21 @@
+vcpkg/
+vcpkg_installed/
+libprotocd.a
+libopentelemetry_metrics.a
+libprotobufd.a
+libopentelemetry_metrics.a
+Tibia/silnik/include-what-you-use/
+Tibia/silnik/iwyu/iwyu/
+*.log
+*.a
+# Build binaries
+Tibia/silnik/canary_test/canary
+Tibia/silnik/canary_test/canary-debug
+
+# testyy build artifacts
+Tibia/silnik/canary_test/testyy/build/
+Tibia/silnik/canary_test/testyy/otclient
+Tibia/silnik/canary_test/testyy/*.exe
+Tibia/silnik/canary_test/testyy/*.dll
+Tibia/silnik/canary_test/testyy/*.a
+Tibia/silnik/canary_test/testyy/.git/

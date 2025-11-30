@@ -1,0 +1,8 @@
+NotoSans-12.otfont
+{
+    type: "ttf"
+    source: "fonts/NotoSans-Regular.ttf"
+    size: 12
+    dpi: 96
+    fallback: [ "NotoSansCJK-Regular.ttf", "NotoNaskhArabic.ttf" ]
+}

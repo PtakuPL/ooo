@@ -8,3 +8,6 @@ Tibia/silnik/include-what-you-use/
 Tibia/silnik/iwyu/iwyu/
 *.log
 *.a
+# Build binaries
+Tibia/silnik/canary_test/canary
+Tibia/silnik/canary_test/canary-debug

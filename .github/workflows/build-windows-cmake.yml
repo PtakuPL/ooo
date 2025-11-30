@@ -1,20 +1,29 @@
 ---
-name: Build - Windows - CMake
+name: Build - Windows - CMake (OTClient)
 on:
   workflow_dispatch:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
-      - "src/**"
+      - "Tibia/silnik/canary_test/testyy/src/**"
+      - "Tibia/silnik/canary_test/testyy/CMakeLists.txt"
+      - "Tibia/silnik/canary_test/testyy/CMakePresets.json"
+      - "Tibia/silnik/canary_test/testyy/vcpkg.json"
   merge_group:
   push:
     paths:
-      - "src/**"
+      - "Tibia/silnik/canary_test/testyy/src/**"
+      - "Tibia/silnik/canary_test/testyy/CMakeLists.txt"
+      - "Tibia/silnik/canary_test/testyy/CMakePresets.json"
+      - "Tibia/silnik/canary_test/testyy/vcpkg.json"
     branches:
       - main
+
 env:
   CMAKE_BUILD_PARALLEL_LEVEL: 2
   MAKEFLAGS: "-j 2"
+  SOURCE_DIR: Tibia/silnik/canary_test/testyy
+
 jobs:
   cancel-runs:
     if: github.event_name == 'pull_request' && github.ref != 'refs/heads/main'
@@ -57,6 +66,7 @@ jobs:
 
       - name: Restore artifacts and install vcpkg
         id: vcpkg-step
+        working-directory: ${{ env.SOURCE_DIR }}
         run: |
           $json=Get-Content vcpkg.json -Raw | ConvertFrom-Json
           $vcpkgCommitId=$json.'builtin-baseline'
@@ -75,12 +85,13 @@ jobs:
       - name: Run CMake
         uses: lukka/run-cmake@main
         with:
+          cmakeListsTxtPath: ${{ github.workspace }}/${{ env.SOURCE_DIR }}/CMakeLists.txt
           configurePreset: ${{ matrix.buildtype }}
           buildPreset: ${{ matrix.buildtype }}
 
       - name: Create and Upload Artifact
         uses: actions/upload-artifact@main
         with:
-          name: canary-${{ matrix.buildtype }}-${{ github.sha }}
+          name: otclient-${{ matrix.buildtype }}-${{ github.sha }}
           path: |
-            ${{ github.workspace }}/build/${{ matrix.buildtype }}/bin/
+            ${{ github.workspace }}/${{ env.SOURCE_DIR }}/build/${{ matrix.buildtype }}/

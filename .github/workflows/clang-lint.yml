@@ -3,11 +3,11 @@ name: Clang-format
 on:
   pull_request:
     paths:
-      - "Tibia/silnik/canary_test/src/**"
+      - "src/**"
   merge_group:
   push:
     paths:
-      - "Tibia/silnik/canary_test/src/**"
+      - "src/**"
 jobs:
   cancel-runs:
     if: github.event_name == 'pull_request' && github.ref != 'refs/heads/main'
@@ -39,8 +39,8 @@ jobs:
         if: ${{ github.ref != 'refs/heads/main' }}
         uses: DoozyX/clang-format-lint-action@v0.17
         with:
-          source: "Tibia/silnik/canary_test/src"
-          exclude: "Tibia/silnik/canary_test/src/protobuf"
+          source: "src"
+          exclude: "src/protobuf"
           extensions: "cpp,hpp,h"
           clangFormatVersion: 17
           inplace: true

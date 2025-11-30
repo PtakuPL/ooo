@@ -5,27 +5,16 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
-      - "Tibia/silnik/canary_test/src/**"
-      - "Tibia/silnik/canary_test/tests/**"
-      - "Tibia/silnik/canary_test/vcpkg.json"
-      - "Tibia/silnik/canary_test/CMakeLists.txt"
-      - "Tibia/silnik/canary_test/CMakePresets.json"
+      - "src/**"
   merge_group:
   push:
     paths:
-      - "Tibia/silnik/canary_test/src/**"
-      - "Tibia/silnik/canary_test/tests/**"
-      - "Tibia/silnik/canary_test/vcpkg.json"
-      - "Tibia/silnik/canary_test/CMakeLists.txt"
-      - "Tibia/silnik/canary_test/CMakePresets.json"
+      - "src/**"
     branches:
       - main
-
 env:
   CMAKE_BUILD_PARALLEL_LEVEL: 2
   MAKEFLAGS: "-j 2"
-  SOURCE_DIR: Tibia/silnik/canary_test
-
 jobs:
   cancel-runs:
     if: github.event_name == 'pull_request' && github.ref != 'refs/heads/main'
@@ -68,7 +57,6 @@ jobs:
 
       - name: Restore artifacts and install vcpkg
         id: vcpkg-step
-        working-directory: ${{ env.SOURCE_DIR }}
         run: |
           $json=Get-Content vcpkg.json -Raw | ConvertFrom-Json
           $vcpkgCommitId=$json.'builtin-baseline'
@@ -87,7 +75,6 @@ jobs:
       - name: Run CMake
         uses: lukka/run-cmake@main
         with:
-          cmakeListsTxtPath: ${{ github.workspace }}/${{ env.SOURCE_DIR }}/CMakeLists.txt
           configurePreset: ${{ matrix.buildtype }}
           buildPreset: ${{ matrix.buildtype }}
 
@@ -96,4 +83,4 @@ jobs:
         with:
           name: canary-${{ matrix.buildtype }}-${{ github.sha }}
           path: |
-            ${{ github.workspace }}/${{ env.SOURCE_DIR }}/build/${{ matrix.buildtype }}/bin/
+            ${{ github.workspace }}/build/${{ matrix.buildtype }}/bin/

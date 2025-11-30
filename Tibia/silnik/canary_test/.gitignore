@@ -400,3 +400,17 @@ database_backup
 
 # CLION
 cmake-build-*
+
+# Large files and build artifacts
+large_files_zip/
+*.zip
+
+# OTClient binaries and build
+testyy/build/
+testyy/otclient
+testyy/*.exe
+testyy/*.dll
+testyy/vcpkg_installed/
+
+# Windows ADS files
+*:Zone.Identifier

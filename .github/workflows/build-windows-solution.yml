@@ -6,13 +6,11 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
-      - "Tibia/silnik/canary_test/src/**"
-      - "Tibia/silnik/canary_test/vcpkg.json"
+      - "src/**"
   merge_group:
   push:
     paths:
-      - "Tibia/silnik/canary_test/src/**"
-      - "Tibia/silnik/canary_test/vcpkg.json"
+      - "src/**"
     branches:
       - main
 
@@ -22,7 +20,6 @@ env:
   GITHUB_WORKSPACE: ${{ github.workspace }}
   VCPKG_ROOT: ${{ github.workspace }}/vcpkg
   VCPKG_TRIPLET: x64-windows
-  SOURCE_DIR: Tibia/silnik/canary_test
 
 jobs:
   cancel-runs:
@@ -55,13 +52,12 @@ jobs:
         uses: actions/checkout@main
 
       - name: Install vcpkg
-        working-directory: ${{ env.SOURCE_DIR }}
         run: |
           $vcpkgJson = Get-Content .\vcpkg.json -Raw | ConvertFrom-Json
           $vcpkgCommitId = $vcpkgJson.'builtin-baseline'.Trim()
           Write-Host "vcpkg commit ID: $vcpkgCommitId"
-          git clone https://github.com/Microsoft/vcpkg.git $env:GITHUB_WORKSPACE\vcpkg
-          cd $env:GITHUB_WORKSPACE\vcpkg
+          git clone https://github.com/Microsoft/vcpkg.git
+          cd vcpkg
           git checkout $vcpkgCommitId
           .\bootstrap-vcpkg.bat
           .\vcpkg integrate install
@@ -70,27 +66,17 @@ jobs:
         run: |
           Write-Host "Workspace: $env:GITHUB_WORKSPACE"
           Write-Host "Vcpkg Path: $env:GITHUB_WORKSPACE\vcpkg"
-          Write-Host "Source Dir: $env:GITHUB_WORKSPACE\${{ env.SOURCE_DIR }}"
           Write-Host "Triplet: ${{ matrix.triplet }}"
 
-      - name: Generate Visual Studio Solution with CMake
-        working-directory: ${{ env.SOURCE_DIR }}
-        run: |
-          New-Item -ItemType Directory -Force -Path build
-          cmake -B build -G "Visual Studio 17 2022" -A x64 `
-            -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" `
-            -DVCPKG_TARGET_TRIPLET=${{ matrix.triplet }}
-
       - name: Build project
-        working-directory: ${{ env.SOURCE_DIR }}
         env:
           GITHUB_WORKSPACE: ${{ github.workspace }}
-        run: msbuild.exe /p:VcpkgEnableManifest=true /p:Configuration=${{ matrix.buildtype }} /p:Platform=x64 build\canary.sln
+        run: msbuild.exe /p:VcpkgEnableManifest=true /p:Configuration=Debug /p:Platform=x64 /p:GITHUB_WORKSPACE="$env:GITHUB_WORKSPACE" vcproj/canary.sln
 
       - name: Upload artifacts
         uses: actions/upload-artifact@main
         with:
           name: ${{ matrix.os }}-${{ matrix.buildtype }}
           path: |
-            ${{ github.workspace }}/${{ env.SOURCE_DIR }}/build/**/*.dll
-            ${{ github.workspace }}/${{ env.SOURCE_DIR }}/build/**/*.exe
+            ${{ github.workspace }}/*.dll
+            ${{ github.workspace }}/*.exe

@@ -11,3 +11,16 @@ Tibia/silnik/iwyu/iwyu/
 # Build binaries
 Tibia/silnik/canary_test/canary
 Tibia/silnik/canary_test/canary-debug
+
+# Large files zip parts
+**/large_files_zip/
+*.zip
+
+# OTClient binaries
+**/testyy/otclient
+**/testyy/build/
+**/testyy/*.exe
+**/testyy/vcpkg_installed/
+
+# Windows ADS files
+*:Zone.Identifier

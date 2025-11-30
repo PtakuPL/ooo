@@ -6,13 +6,18 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
-      - "src/**"
+      - "Tibia/silnik/canary_test/src/**"
+      - "Tibia/silnik/canary_test/docker/**"
   merge_group:
   push:
     paths:
-      - "src/**"
+      - "Tibia/silnik/canary_test/src/**"
+      - "Tibia/silnik/canary_test/docker/**"
     branches:
       - main
+
+env:
+  SOURCE_DIR: Tibia/silnik/canary_test
 
 jobs:
   cancel-runs:
@@ -58,7 +63,8 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         uses: docker/build-push-action@v3.2.0
         with:
-          file: docker/Dockerfile.x86
+          context: ${{ env.SOURCE_DIR }}
+          file: ${{ env.SOURCE_DIR }}/docker/Dockerfile.x86
           tags: ghcr.io/${{ github.repository }}:${{ steps.gitversion.outputs.semVer }}
           cache-from: type=gha, scope=${{ github.workflow }}
           cache-to: type=gha, scope=${{ github.workflow }}
@@ -68,7 +74,8 @@ jobs:
         if: ${{ github.event_name == 'push' }}
         uses: docker/build-push-action@v3.2.0
         with:
-          file: docker/Dockerfile.x86
+          context: ${{ env.SOURCE_DIR }}
+          file: ${{ env.SOURCE_DIR }}/docker/Dockerfile.x86
           push: true
           tags: ghcr.io/${{ github.repository }}:${{ steps.gitversion.outputs.semVer }}
           cache-from: type=gha, scope=${{ github.workflow }}
@@ -106,7 +113,8 @@ jobs:
       - name: Build
         uses: docker/build-push-action@v3.2.0
         with:
-          file: docker/Dockerfile.arm
+          context: ${{ env.SOURCE_DIR }}
+          file: ${{ env.SOURCE_DIR }}/docker/Dockerfile.arm
           tags: ghcr.io/${{ github.repository }}:${{ steps.gitversion.outputs.semVer }}
           cache-from: type=gha, scope=${{ github.workflow }}
           cache-to: type=gha, scope=${{ github.workflow }}

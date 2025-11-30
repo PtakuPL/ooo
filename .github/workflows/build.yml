@@ -5,17 +5,26 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
-      - "src/**"
+      - "Tibia/silnik/canary_test/src/**"
+      - "Tibia/silnik/canary_test/tests/**"
+      - "Tibia/silnik/canary_test/vcpkg.json"
+      - "Tibia/silnik/canary_test/CMakeLists.txt"
+      - "Tibia/silnik/canary_test/CMakePresets.json"
   merge_group:
   push:
     paths:
-      - "src/**"
+      - "Tibia/silnik/canary_test/src/**"
+      - "Tibia/silnik/canary_test/tests/**"
+      - "Tibia/silnik/canary_test/vcpkg.json"
+      - "Tibia/silnik/canary_test/CMakeLists.txt"
+      - "Tibia/silnik/canary_test/CMakePresets.json"
     branches:
       - main
 
 env:
   CMAKE_BUILD_PARALLEL_LEVEL: 2
   MAKEFLAGS: "-j 2"
+  SOURCE_DIR: Tibia/silnik/canary_test
 
 jobs:
   cancel-runs:
@@ -79,6 +88,7 @@ jobs:
 
       - name: Restore artifacts and install vcpkg
         id: vcpkg-step
+        working-directory: ${{ env.SOURCE_DIR }}
         run: |
           vcpkgCommitId=$(grep '.builtin-baseline' vcpkg.json | awk -F: '{print $2}' | tr -d '," ')
           echo "vcpkg commit ID: $vcpkgCommitId"
@@ -96,34 +106,34 @@ jobs:
       - name: Configure CMake
         uses: lukka/run-cmake@v10
         with:
-          cmakeListsTxtPath: Tibia/silnik/canary/CMakeLists.txt
+          cmakeListsTxtPath: ${{ github.workspace }}/${{ env.SOURCE_DIR }}/CMakeLists.txt
           configurePreset: ${{ matrix.buildtype }}
           configurePresetAdditionalArgs: '["-DBUILD_TESTS=ON"]'
 
       - name: Build with CMake
         uses: lukka/run-cmake@v10
         with:
-          cmakeListsTxtPath: Tibia/silnik/canary/CMakeLists.txt
+          cmakeListsTxtPath: ${{ github.workspace }}/${{ env.SOURCE_DIR }}/CMakeLists.txt
           buildPreset: ${{ matrix.buildtype }}
 
       - name: Debug Build Output
         run: |
           echo "Zawartość katalogu build:"
-          ls -R ${{ github.workspace }}/build/${{ matrix.buildtype }} || true
+          ls -R ${{ github.workspace }}/${{ env.SOURCE_DIR }}/build/${{ matrix.buildtype }} || true
 
       - name: Create and Upload Artifact
         uses: actions/upload-artifact@main
         with:
           name: canary-${{ matrix.os }}-${{ matrix.buildtype }}-${{ github.sha }}
           path: |
-            ${{ github.workspace }}/build/${{ matrix.buildtype }}/bin/
+            ${{ github.workspace }}/${{ env.SOURCE_DIR }}/build/${{ matrix.buildtype }}/bin/
 
       - name: Run Unit Tests
         run: |
-          cd ${{ github.workspace }}/build/${{ matrix.buildtype }}/tests/unit
+          cd ${{ github.workspace }}/${{ env.SOURCE_DIR }}/build/${{ matrix.buildtype }}/tests/unit
           ctest --verbose
 
 #      - name: Run Integration Tests
 #        run: |
-#          cd ${{ github.workspace }}/build/${{ matrix.buildtype }}/tests/integration
+#          cd ${{ github.workspace }}/${{ env.SOURCE_DIR }}/build/${{ matrix.buildtype }}/tests/integration
 #          ctest --verbose

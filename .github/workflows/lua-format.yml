@@ -3,11 +3,11 @@ name: Lua-format
 on:
   pull_request:
     paths:
-      - "data*/**"
+      - "Tibia/silnik/canary_test/data*/**"
   merge_group:
   push:
     paths:
-      - "data*/**"
+      - "Tibia/silnik/canary_test/data*/**"
 jobs:
   lua-formatter:
     runs-on: ubuntu-latest
@@ -29,7 +29,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: latest
-          args: .
+          args: Tibia/silnik/canary_test
 
       - name: Run add and commit
         if: ${{ github.ref != 'refs/heads/main' }}

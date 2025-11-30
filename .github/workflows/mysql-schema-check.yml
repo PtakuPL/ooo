@@ -5,13 +5,16 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
-      - "schema.sql"
+      - "Tibia/silnik/canary_test/schema.sql"
   merge_group:
   push:
     paths:
-      - "schema.sql"
+      - "Tibia/silnik/canary_test/schema.sql"
     branches:
       - main
+
+env:
+  SOURCE_DIR: Tibia/silnik/canary_test
 
 jobs:
   mysql-schema-check:
@@ -40,4 +43,4 @@ jobs:
           mysql -e "SHOW DATABASES" -uroot -proot
       - name: Import Canary Schema
         run: |
-          mysql -uroot -proot canary < schema.sql
+          mysql -uroot -proot canary < ${{ env.SOURCE_DIR }}/schema.sql

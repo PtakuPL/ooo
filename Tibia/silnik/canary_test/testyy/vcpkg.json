@@ -1,0 +1,35 @@
+{
+  "name": "otclient",
+  "version-string": "1.0.0",
+  "dependencies": [
+    "asio",
+    "abseil",
+    "fmt",
+    "cpp-httplib",
+    "discord-rpc",
+    "liblzma",
+    "libogg",
+    
+    "libvorbis",
+    "nlohmann-json",
+    "harfbuzz",
+    "freetype",
+    "fribidi",
+    "openal-soft",
+    "openssl",
+    "parallel-hashmap",
+    "physfs",
+    "protobuf",
+    "pugixml",
+    "stduuid",
+    "zlib",
+    "bshoshany-thread-pool",
+    { "name": "glew",   "platform": "windows | linux | osx" },
+    { "name": "opengl", "platform": "windows" },
+    { "name": "angle",  "platform": "windows" },
+    { "name": "luajit" },
+    { "name": "pkgconf", "host": true, "platform": "windows" }
+  ],
+  "builtin-baseline": "5b1214315250939257ef5d62ecdcbca18cf4fb1c"
+  
+}

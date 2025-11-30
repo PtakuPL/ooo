@@ -1,0 +1,73 @@
+/*
+ * Copyright (c) 2010-2025 OTClient <https://github.com/edubart/otclient>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+
+#pragma once
+
+#include "declarations.h"
+
+#include <string>
+#include <string_view>
+#include <vector>
+
+class CachedText
+{
+public:
+    CachedText();
+
+    void draw(const Rect& rect, const Color& color);
+
+    void wrapText(int maxWidth);
+    void setFont(const BitmapFontPtr& font);
+    void setText(std::string_view text);
+    void setAlign(Fw::AlignmentFlag align);
+
+    Size getTextSize() const { return m_textSize; }
+    std::string getText() const { return m_text; }
+    bool hasText() const { return !m_text.empty(); }
+    BitmapFontPtr getFont() const { return m_font; }
+    Fw::AlignmentFlag getAlign() const { return m_align; }
+
+private:
+    void update();
+    void rebuildTTFCoords(const Rect& rect);
+    void drawTTF(const Rect& rect, const Color& color);
+
+    std::vector<std::pair<Rect, Rect>> m_TextureCoords;
+    std::vector<Point> m_glyphsPositions;
+    struct CachedGlyph {
+        TexturePtr texture;
+        Rect src;
+        Rect dest;
+    };
+    std::vector<CachedGlyph> m_ttfGlyphs;
+    std::vector<std::pair<TexturePtr, CoordsBufferPtr>> m_ttfBatches;
+
+    std::string m_text;
+    Size m_textSize;
+    Rect m_textScreenCoords;
+    BitmapFontPtr m_font;
+    Fw::AlignmentFlag m_align;
+
+    const AtlasRegion* m_atlasRegion = nullptr;
+
+    CoordsBufferPtr m_coordsBuffer;
+};

@@ -1,0 +1,166 @@
+# Internacjonalizacja Testyy — Kolejne Kroki i Priorytety
+
+Dokument utworzony: 2025-01-XX  
+Ostatnia aktualizacja: 2025-11-30
+
+---
+
+## Spis treści
+1. [Priorytety naprawcze (CI)](#priorytety-naprawcze-ci)
+2. [Optymalizacje i dopracowanie](#optymalizacje-i-dopracowanie)
+3. [Testy i dokumentacja](#testy-i-dokumentacja)
+4. [Długoterminowe cele](#długoterminowe-cele)
+5. [Szczegóły techniczne](#szczegóły-techniczne)
+
+---
+
+## Priorytety naprawcze (CI)
+
+### 1. Naprawić konflikt typów w asyncdispatcher (KRYTYCZNE)
+- **Błąd:** `error: conflicting declaration 'thread_pool<...auto...> g_asyncDispatcher'` w `asyncdispatcher.cpp:41`.
+- **Przyczyna:** Nagłówek deklaruje `extern BS::thread_pool g_asyncDispatcher;`, implementacja definiuje `BS::thread_pool g_asyncDispatcher{ ... };` z domyślnymi parametrami.
+- **Działania:**
+  1. W `src/framework/core/asyncdispatcher.h` zmień deklarację na `extern BS::thread_pool<> g_asyncDispatcher;` lub jawnie wypisz parametry szablonu.
+  2. Upewnij się, że definicja w `.cpp` ma identyczny typ (`BS::thread_pool<> g_asyncDispatcher{ getThreadCount() };`).
+- **Weryfikacja:** lokalny build `cmake --build . --target otclient` bez błędu; logi SonarCloud czyste.
+
+### 2. Zaktualizować vcpkg baseline / wersje portów (KRYTYCZNE)
+- **Błąd:** Brak wpisów dla `abseil@20250814.1`, `angle@chromium_7258#2`, `asio@1.32.0` w bazie wersji (`builtin-baseline = b322346f...`).
+- **Działania (opcje):**
+  - **O1:** Zaktualizować `builtin-baseline` w `vcpkg.json` do aktualnego commitu (np. `2025-11-xx`) i pozwolić vcpkg dobrać wersje.
+  - **O2:** Utrzymać stary baseline, ale dodać overlay ports w `vcpkg/ports/` + skonfigurować workflow (usunąć `browser/overlay-ports/**` z `vcpkgJsonIgnores`).
+  - **O3:** Zrezygnować z pinów wersji dla tych trzech bibliotek.
+- **Weryfikacja:** `vcpkg install --manifest` przechodzi na Windows i Linux.
+
+### 3. Uprzątnąć ostrzeżenia kompilatora (ŚREDNIE)
+- **eventdispatcher.h:104:** usuń podwójny średnik `};;`.
+- **platformwindow.h:84:** oznacz `color` jako `[[maybe_unused]]` lub usuń nazwę parametru.
+- **Cel:** Czysty build bez warningów, by łatwiej zauważać nowe regresje.
+
+### 4. Naprawić `build-linux.yml` (NISKIE, ale mylące)
+- Plik zawiera konfigurację Windows. Zmień nazwę lub podmień na prawdziwy workflow Ubuntu (z pakietami `libglew-dev`, `libx11-dev`, itd.).
+
+---
+
+## Optymalizacje i dopracowanie
+
+### A. Batching w `TTFFont::drawText` (WYSOKI)
+- Grupować quady według atlasu i wysyłać do `DrawPool` jednym wywołaniem.
+- Dodać API `addTexturedRectsBatch` lub podobne.
+- Korzyść: mniejsza liczba draw calli i lepsza wydajność UI.
+
+### B. `uploadSubImage` dla atlasu (ŚREDNI)
+- Zamiast re-uploadować cały atlas, aktualizować tylko region nowego glifu.
+- Wymaga wsparcia po stronie `Texture` (np. `updateSubRegion`).
+
+### C. Cache shapingu (ŚREDNI)
+- `CachedText` powinien przechowywać `std::vector<ShapedGlyph>`.
+- Unikamy wielokrotnego wywoływania HarfBuzz dla tego samego tekstu.
+
+---
+
+## Testy i dokumentacja
+
+### 1. Testy jednostkowe `TTFFont` (WYSOKI)
+- Załadowanie fontu, pomiar szerokości, obsługa UTF-8 wielobajtowego.
+- Plik docelowy: `tests/framework/text/ttffont_test.cpp`.
+
+### 2. Testy `TextShaper` (ŚREDNI)
+- ASCII, RTL, kombinowane znaki (np. `e + ́`).
+
+### 3. Smoke test UI w CI (ŚREDNI)
+- Headless test rysujący przykładowy tekst i porównujący obraz (lub sprawdzający brak crasha).
+
+### 4. Dokumentacja modułu tekstowego (NISKI)
+- `src/framework/text/README.md` z opisem pipeline'u i instrukcjami dodawania fontów/fallbacków.
+
+---
+
+## Długoterminowe cele
+
+### Pełna obsługa caret/selection z grapheme clusters
+- Wymaga biblioteki ICU lub tabel Unicode.
+- Integracja z `UITextEdit` i klawiaturą.
+
+### Font fallback i paczki językowe
+- Konfiguracja fallbacków (np. Noto Sans CJK, Noto Emoji).
+- Automatyczny dobór fontu gdy glif nie istnieje.
+
+### Kolorowe emoji
+- Obsługa COLR/CPAL lub CBDT w FreeType.
+- Potrzebne wsparcie RGBA w atlasie i DrawPool.
+
+---
+
+## Szczegóły techniczne
+
+### Asyncdispatcher — przykład zmiany
+```cpp
+// asyncdispatcher.h
+extern BS::thread_pool<> g_asyncDispatcher;
+
+// asyncdispatcher.cpp
+BS::thread_pool<> g_asyncDispatcher{ getThreadCount() };
+```
+
+### Aktualizacja `vcpkg.json`
+```json
+{
+  "builtin-baseline": "<nowy_commit>",
+  "dependencies": [
+    { "name": "abseil" },
+    { "name": "angle" },
+    { "name": "asio" }
+  ]
+  // overrides opcjonalnie, jeśli potrzebne
+}
+```
+
+### TTFFont batching — szkic
+```cpp
+std::unordered_map<int, std::vector<TexturedQuad>> batches;
+for (const auto& glyph : shaped) {
+    auto info = cacheGlyph(glyph.codepoint);
+    batches[info.atlasId].push_back({destRect, info.texCoords});
+}
+for (auto& [atlasId, quads] : batches) {
+    g_drawPool.addTexturedRectsBatch(m_atlases[atlasId].texture, quads);
+}
+```
+
+---
+
+## Tabela priorytetów
+
+| # | Zadanie | Priorytet | ETA | Zależności |
+|---|---------|-----------|-----|------------|
+| 1 | Naprawić asyncdispatcher | 🔥 | 5 min | brak |
+| 2 | Zaktualizować vcpkg baseline | 🔥 | 30 min | brak |
+| 3 | Ostrzeżenia eventdispatcher/platformwindow | ⚠️ | 5 min | #1 |
+| 4 | build-linux.yml cleanup | ⚠️ | 10 min | #1 |
+| 5 | TTFFont batching | ⬆️ | 1-2 h | #1-4 |
+| 6 | Cache shapingu | ⬆️ | 1 h | #5 |
+| 7 | Atlas subimage upload | ⬇️ | 1 h | #5 |
+| 8 | Testy TTFFont/TextShaper | ⬆️ | 3 h | #5-6 |
+| 9 | Smoke test UI w CI | ⬆️ | 2 h | #8 |
+| 10 | Dokumentacja modułu tekstu | ⬇️ | 1 h | #8-9 |
+
+Legenda: 🔥 krytyczne, ⚠️ średnie, ⬆️ ważne po CI, ⬇️ nice-to-have.
+
+---
+
+Aktualizuj ten dokument po każdym wykonanym kroku — zaznaczaj ✅/⏳/❌ przy zadaniach oraz dopisuj daty wdrożeń.
+- [x] Dodać `vcpkg install --manifest` step do workflowów (preflight) plus `vcpkg search` diagnostyka (done).
+
+## Checklista implementacyjna (small PRs)
+1. PR: dodanie `/utf-8` dla MSVC (zrobione).
+2. PR: `uitextedit` – TTF fast path + selection logic (zrobione).
+3. PR: `TTFFont` — batch per atlas + uploadSubImage; testy performance.
+4. PR: `CachedText` — shaper run buffer for TTF; cursor selection fix based on clusters.
+5. PR: Database migrations & tests for `utf8mb4`.
+6. PR: Reintroduce `libobfuscate` as overlay port OR add docs/instructions for re-adding the port.
+7. PR: Unit tests + Phantom smoke tests in GH Action.
+
+---
+
+Jeśli chcesz, mogę od razu dodać pierwszy test jak `NetworkMessage` binary-safe (jeden niewielki test w `tests/unit`), a następnie zaplanować PR do TTFFont batchowania. Który krok preferujesz? (Proponuję teraz testy C.)

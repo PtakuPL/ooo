@@ -1302,20 +1302,20 @@ end
 
 local  function getWeaponSkillName(skillType)
         local skillNames = {
-            [0] = "Fist Fighting",
-            [1] = "Club Fighting",
-            [2] = "Sword Fighting",
-            [3] = "Axe Fighting",
-            [4] = "Distance Fighting",
-            [5] = "Shielding",
-            [6] = "Fishing",
-            [7] = "Magic Level",
-            [8] = "Critical Hits",
-            [9] = "Life Leech",
-            [10] = "Mana Leech"
+            [0] = tr("Fist Fighting"),
+            [1] = tr("Club Fighting"),
+            [2] = tr("Sword Fighting"),
+            [3] = tr("Axe Fighting"),
+            [4] = tr("Distance Fighting"),
+            [5] = tr("Shielding"),
+            [6] = tr("Fishing"),
+            [7] = tr("Magic Level"),
+            [8] = tr("Critical Hits"),
+            [9] = tr("Life Leech"),
+            [10] = tr("Mana Leech")
         }
         
-        return skillNames[skillType] or "Fighting Skill"
+        return skillNames[skillType] or tr("Fighting Skill")
     end
     function Cyclopedia.onCyclopediaCharacterOffenceStats(data)
         UI.OffenceStats.rightPanel:destroyChildren()
@@ -1323,47 +1323,47 @@ local  function getWeaponSkillName(skillType)
     
         local attackValue = data.weaponAttack + data.weaponFlatModifier + data.weaponDamage + data.weaponSkillLevel
         local stats = {
-            {name = "Flat Damage and healing", value = data.flatDamage or 0, icon = false, percent = false},
-            {name = "Attack Value", value = attackValue, icon = true, weaponElement = data.weaponElement},
-            {name = "From Base Attack", value = data.weaponAttack or 0, align = "center", icon = false},
-            {name = "From Equipment", value = data.weaponFlatModifier or 0, align = "center", icon = false},
+            {name = tr("Flat Damage and healing"), value = data.flatDamage or 0, icon = false, percent = false},
+            {name = tr("Attack Value"), value = attackValue, icon = true, weaponElement = data.weaponElement},
+            {name = tr("From Base Attack"), value = data.weaponAttack or 0, align = "center", icon = false},
+            {name = tr("From Equipment"), value = data.weaponFlatModifier or 0, align = "center", icon = false},
     
             {name = getWeaponSkillName(data.weaponSkillType), value = data.weaponSkillLevel or 0, align = "center", icon = false},
-            {name = "From Combat Tactics", value = data.weaponDamage or 0, align = "center", icon = false},
+            {name = tr("From Combat Tactics"), value = data.weaponDamage or 0, align = "center", icon = false},
     
-            {name = "Life Leech", value = data.lifeLeech or 0, icon = false, percent = true},
-            {name = "From Base", value = data.lifeLeechBase or 0, align = "center", percent = true, icon = false},
-            {name = "From Equipment", value = data.lifeLeechImbuement or 0, align = "center", percent = true, icon = false},
-            {name = "From Wheel", value = data.lifeLeechWheel or 0, align = "center", percent = true, icon = false},
+            {name = tr("Life Leech"), value = data.lifeLeech or 0, icon = false, percent = true},
+            {name = tr("From Base"), value = data.lifeLeechBase or 0, align = "center", percent = true, icon = false},
+            {name = tr("From Equipment"), value = data.lifeLeechImbuement or 0, align = "center", percent = true, icon = false},
+            {name = tr("From Wheel"), value = data.lifeLeechWheel or 0, align = "center", percent = true, icon = false},
     
-            {name = "Mana Leech", value = data.manaLeech or 0, icon = false, percent = true},
-            {name = "From Base", value = data.manaLeechBase or 0, align = "center", percent = true, icon = false},
-            {name = "From Equipment", value = data.manaLeechImbuement or 0, align = "center", percent = true, icon = false},
-            {name = "From Wheel", value = data.manaLeechWheel or 0, align = "center", percent = true, icon = false},
+            {name = tr("Mana Leech"), value = data.manaLeech or 0, icon = false, percent = true},
+            {name = tr("From Base"), value = data.manaLeechBase or 0, align = "center", percent = true, icon = false},
+            {name = tr("From Equipment"), value = data.manaLeechImbuement or 0, align = "center", percent = true, icon = false},
+            {name = tr("From Wheel"), value = data.manaLeechWheel or 0, align = "center", percent = true, icon = false},
     
-            {name = "Onslaught", value = data.onslaught or 0, icon = false, percent = true},
-            {name = "From Base", value = data.onslaughtBase or 0, align = "center", percent = true, icon = false},
-            {name = "From Amplification", value = data.onslaughtBonus or 0, align = "center", percent = true, icon = false},
+            {name = tr("Onslaught"), value = data.onslaught or 0, icon = false, percent = true},
+            {name = tr("From Base"), value = data.onslaughtBase or 0, align = "center", percent = true, icon = false},
+            {name = tr("From Amplification"), value = data.onslaughtBonus or 0, align = "center", percent = true, icon = false},
     
-            {name = "Critical Hit", parent = "right", value = "", icon = false},
-            {name = "     Chance", parent = "right", value = data.critChance or 0, percent = true, icon = false},
-            {name = "     Extra Damage", parent = "right", value = data.critDamage or 0, percent = true, icon = false},
-            {name = "From Base", parent = "right", value = data.critDamageBase or 0, align = "center", percent = true, icon = false},
-            {name = "From Equipment", parent = "right", value = data.critDamageImbuement or 0, align = "center", percent = true, icon = false},
-            {name = "From Wheel", parent = "right", value = data.critDamageWheel or 0, align = "center", percent = true, icon = false}
+            {name = tr("Critical Hit"), parent = "right", value = "", icon = false},
+            {name = tr("     Chance"), parent = "right", value = data.critChance or 0, percent = true, icon = false},
+            {name = tr("     Extra Damage"), parent = "right", value = data.critDamage or 0, percent = true, icon = false},
+            {name = tr("From Base"), parent = "right", value = data.critDamageBase or 0, align = "center", percent = true, icon = false},
+            {name = tr("From Equipment"), parent = "right", value = data.critDamageImbuement or 0, align = "center", percent = true, icon = false},
+            {name = tr("From Wheel"), parent = "right", value = data.critDamageWheel or 0, align = "center", percent = true, icon = false}
         }
         
         if data.perfectShotDamage then
             for i = 1, 5 do
                 if data.perfectShotDamage[i] and data.perfectShotDamage[i] > 0 then
                     table.insert(stats, {
-                        name = "Perfect Shot Damage Bonus", 
+                        name = tr("Perfect Shot Damage Bonus"), 
                         parent = "right", 
                         value = "", 
                         icon = false
                     })
                     table.insert(stats, {
-                        name = "     +" .. data.perfectShotDamage[i] .. " from range " .. i, 
+                        name = "     +" .. data.perfectShotDamage[i] .. tr(" from range ") .. i, 
                         parent = "right", 
                         value = "", 
                         align = "center", 

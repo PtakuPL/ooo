@@ -838,7 +838,7 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
         end
 
         local lootExists = quickLoot.lootExists(lookThing:getId())
-        local optionText = lootExists and "Remove from" or "Add to"
+        local optionText = lootExists and tr("Remove from") or tr("Add to")
         local actionFunction = lootExists and quickLoot.removeLootList or quickLoot.addLootList
 
         menu.addOption(menu, tr(optionText .. " loot list"), function()

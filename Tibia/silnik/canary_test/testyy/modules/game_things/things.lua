@@ -47,10 +47,10 @@ local function load(version)
     if version >= 1281 and not g_game.getFeature(GameLoadSprInsteadProtobuf) then
         local filePath = resolvepath(string.format('/things/%d/', version))
         if not g_things.loadAppearances(filePath) then
-            errorList[#errorList + 1] = "Couldn't load assets"
+            errorList[#errorList + 1] = tr("Couldn't load assets")
         end
         if not g_things.loadStaticData(filePath) then
-            errorList[#errorList + 1] = "Couldn't load staticdata"
+            errorList[#errorList + 1] = tr("Couldn't load staticdata")
         end
     else
         local datPath, sprPath

@@ -42,11 +42,11 @@ local function downloadFiles(url, files, index, retries, doneCallback)
   httpOperationId = HTTP.download(url .. file, file,
     function(file, checksum, err)
       if not err and checksum ~= file_checksum then
-        err = "Invalid checksum of: " .. file .. ".\nShould be " .. file_checksum .. ", is: " .. checksum
+        err = tr("Invalid checksum of:") .. " " .. file .. ".\n" .. tr("Should be") .. " " .. file_checksum .. ", " .. tr("is:") .. " " .. checksum
       end
       if err then
         if retries >= Updater.maxRetries then
-          Updater.error("Can't download file: " .. file .. ".\nError: " .. err)
+          Updater.error(tr("Can't download file:") .. " " .. file .. ".\n" .. tr("Error:") .. " " .. err)
         else
           scheduledEvent = scheduleEvent(function()
             downloadFiles(url, files, index, retries + 1, doneCallback)
@@ -66,7 +66,7 @@ local function updateFiles(data, keepCurrentFiles)
   if not updaterWindow then return end
 
   if type(data) ~= "table" then
-    return Updater.error("Invalid data from updater api (not table)")
+    return Updater.error(tr("Invalid data from updater api (not table)"))
   end
 
   if type(data.error) == 'string' and data.error:len() > 0 then
@@ -74,7 +74,7 @@ local function updateFiles(data, keepCurrentFiles)
   end
 
   if not data.files or type(data.url) ~= 'string' or data.url:len() < 4 then
-    return Updater.error("Invalid data from updater api: " .. json.encode(data, 2))
+    return Updater.error(tr("Invalid data from updater api:") .. " " .. json.encode(data, 2))
   end
 
   if data.keepFiles then

@@ -9,7 +9,7 @@ MainWindow
     font: verdana-11px-monochrome
     text-align: center
     color: #c0c0c0
-    text: Mode: "Chat On"
+    !text: tr('Mode: "Chat On"')
   
   FlatPanel
     id: keyCombo

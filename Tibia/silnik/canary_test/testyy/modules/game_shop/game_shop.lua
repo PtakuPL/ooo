@@ -594,8 +594,8 @@ function onOfferBuy(self)
             title,
             msg,
             {
-                {text = "Yes", callback = changeName},
-                {text = "No", callback = buyCanceled},
+                {text = tr("Yes"), callback = changeName},
+                {text = tr("No"), callback = buyCanceled},
                 anchor = AnchorHorizontalCenter
             },
             changeName,
@@ -607,8 +607,8 @@ function onOfferBuy(self)
             title,
             msg,
             {
-                {text = "Yes", callback = buyConfirmed},
-                {text = "No", callback = buyCanceled},
+                {text = tr("Yes"), callback = buyConfirmed},
+                {text = tr("No"), callback = buyCanceled},
                 anchor = AnchorHorizontalCenter
             },
             buyConfirmed,

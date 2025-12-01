@@ -437,11 +437,11 @@ function CharacterList.show()
 
     local autoReconnect = g_settings.getBoolean('autoReconnect', false)
     autoReconnectButton:setOn(autoReconnect)
-    local reconnectStatus = autoReconnect and "On" or "Off"
+    local reconnectStatus = autoReconnect and tr("On") or tr("Off")
     if not g_game.getFeature(GameEnterGameShowAppearance) then
-        autoReconnectButton:setText('Auto reconnect:\n ' .. reconnectStatus)
+        autoReconnectButton:setText(tr('Auto reconnect') .. ':\n ' .. reconnectStatus)
     else
-        autoReconnectButton:setText('Auto reconnect: ' .. reconnectStatus)
+        autoReconnectButton:setText(tr('Auto reconnect') .. ': ' .. reconnectStatus)
     end
 end
 

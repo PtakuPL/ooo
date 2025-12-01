@@ -196,12 +196,12 @@ function updateTasks(data)
         table.insert(playerTaskIds, task.id)
         button.creature:setOutfit(task.looktype)
         button.name:setText(task.name)
-        button.kills:setText('Kills: ' .. task.done .. '/' .. task.kills)
-        button.reward:setText('Reward: ' .. task.exp .. ' exp')
+        button.kills:setText(tr('Kills') .. ': ' .. task.done .. '/' .. task.kills)
+        button.reward:setText(tr('Reward') .. ': ' .. task.exp .. ' exp')
         if not (task.taskPoints == nil) then
-          button.rewardTaskPoints:setText('Task Points: ' .. task.taskPoints .. '')
+          button.rewardTaskPoints:setText(tr('Task Points') .. ': ' .. task.taskPoints .. '')
         else
-          button.rewardTaskPoints:setText('Task Points: 0')
+          button.rewardTaskPoints:setText(tr('Task Points') .. ': 0')
         end
         local progress = 159 * task.done / task.kills
         button.progress:setWidth(progress)
@@ -214,12 +214,12 @@ function updateTasks(data)
             button:setId(task.id)
             button.creature:setOutfit(task.looktype)
             button.name:setText(task.name)
-            button.kills:setText('Kills: ' .. task.kills)
-            button.reward:setText('Reward: ' .. task.exp .. ' exp')
+            button.kills:setText(tr('Kills') .. ': ' .. task.kills)
+            button.reward:setText(tr('Reward') .. ': ' .. task.exp .. ' exp')
             if not (task.taskPoints == nil) then
-              button.rewardTaskPoints:setText('Task Points: ' .. task.taskPoints .. '')
+              button.rewardTaskPoints:setText(tr('Task Points') .. ': ' .. task.taskPoints .. '')
             else
-              button.rewardTaskPoints:setText('Task Points: 0')
+              button.rewardTaskPoints:setText(tr('Task Points') .. ': 0')
             end
             button.progress:setWidth(0)
             selectionList:focusChild(button)

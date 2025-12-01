@@ -47,19 +47,18 @@ jobs:
         run: |
           fallback=5b1214315250939257ef5d62ecdcbca18cf4fb1c
           commit=""
-            if [[ -f "$GITHUB_WORKSPACE/vcpkg.json" ]]; then
-            commit=$(python3 - <<'PY'
-      import json, os
-      from pathlib import Path
-      root = Path(os.environ.get('GITHUB_WORKSPACE', '.'))
-      try:
-        data = json.loads((root / 'vcpkg.json').read_text())
-        print(data.get('builtin-baseline', ''))
-      except Exception:
-        print('')
-      PY
-      )
-            fi
+          if [[ -f "vcpkg.json" ]]; then
+            commit=$(python3 <<'PY'
+import json
+try:
+  with open('vcpkg.json') as f:
+    data = json.load(f)
+  print(data.get('builtin-baseline', ''))
+except Exception:
+  print('')
+PY
+)
+          fi
           if [[ $commit =~ ^[0-9a-f]{40}$ ]]; then
             echo "vcpkgGitCommitId=$commit" >> "$GITHUB_OUTPUT"
             echo "Using builtin-baseline $commit"

@@ -174,11 +174,11 @@ end
 
 local function refreshTypeList()
     offerTypeList:clearOptions()
-    offerTypeList:addOption('Buy')
+    offerTypeList:addOption(tr('Buy'))
 
     if Market.isItemSelected() then
         if Market.getDepotCount(selectedItem.item.marketData.tradeAs) > 0 then
-            offerTypeList:addOption('Sell')
+            offerTypeList:addOption(tr('Sell'))
         end
     end
 end
@@ -778,7 +778,7 @@ local function onChangeOfferType(combobox, option)
     local item = selectedItem.item
     local maximum = item.thingType:isStackable() and MarketMaxAmountStackable or MarketMaxAmount
 
-    if option == 'Sell' then
+    if option == tr('Sell') then
         maximum = math.min(maximum, Market.getDepotCount(item.marketData.tradeAs))
         amountEdit:setMaximum(maximum)
     else
@@ -974,12 +974,12 @@ local function initInterface()
     -- setup offers
     buyButton = itemOffersPanel:getChildById('buyButton')
     buyButton.onClick = function()
-        openAmountWindow(Market.acceptMarketOffer, MarketAction.Buy, 'Buy')
+        openAmountWindow(Market.acceptMarketOffer, MarketAction.Buy, tr('Buy'))
     end
 
     sellButton = itemOffersPanel:getChildById('sellButton')
     sellButton.onClick = function()
-        openAmountWindow(Market.acceptMarketOffer, MarketAction.Sell, 'Sell')
+        openAmountWindow(Market.acceptMarketOffer, MarketAction.Sell, tr('Sell'))
     end
 
     -- setup selected item

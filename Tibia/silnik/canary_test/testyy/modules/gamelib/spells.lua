@@ -2875,27 +2875,27 @@ SpellIcons = {
 }
 
 VocationNames = {
-    [0] = 'None',
-    [1] = 'Sorcerer',
-    [2] = 'Druid',
-    [3] = 'Paladin',
-    [4] = 'Knight',
-    [5] = 'Master Sorcerer',
-    [6] = 'Elder Druid',
-    [7] = 'Royal Paladin',
-    [8] = 'Elite Knight'
+    [0] = tr('None'),
+    [1] = tr('Sorcerer'),
+    [2] = tr('Druid'),
+    [3] = tr('Paladin'),
+    [4] = tr('Knight'),
+    [5] = tr('Master Sorcerer'),
+    [6] = tr('Elder Druid'),
+    [7] = tr('Royal Paladin'),
+    [8] = tr('Elite Knight')
 }
 
 SpellGroups = {
-    [1] = 'Attack',
-    [2] = 'Healing',
-    [3] = 'Support',
-    [4] = 'Special',
-    [5] = 'Crippling',
-    [6] = 'Focus',
-    [7] = 'UltimateStrike',
-    [8] = 'GreatBeams',
-    [9] = 'BurstOfNature'
+    [1] = tr('Attack'),
+    [2] = tr('Healing'),
+    [3] = tr('Support'),
+    [4] = tr('Special'),
+    [5] = tr('Crippling'),
+    [6] = tr('Focus'),
+    [7] = tr('UltimateStrike'),
+    [8] = tr('GreatBeams'),
+    [9] = tr('BurstOfNature')
 }
 
 Spells = {}

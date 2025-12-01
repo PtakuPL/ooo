@@ -87,8 +87,8 @@ function QuickLoot.Define()
 
         local accepted = quickLootController.ui.filters.accepted
         local skipped = quickLootController.ui.filters.skipped
-        local add_text = string.format("Add to %s Loot List", widget:getId():gsub("^%l", string.upper))
-        local clear_text = string.format("Clear %s Loot List", widget:getId():gsub("^%l", string.upper))
+        local add_text = string.format(tr("Add to %s Loot List"), widget:getId():gsub("^%l", string.upper))
+        local clear_text = string.format(tr("Clear %s Loot List"), widget:getId():gsub("^%l", string.upper))
 
         if widget == skipped and isChecked then
             quickLootController.ui.filters.accepted:setChecked(false)

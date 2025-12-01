@@ -1396,7 +1396,7 @@ UIWidget
       RoundCheckBox
         id: list
         width: 85
-        text: show as list
+        !text: tr('show as list')
         color: #C0C0C0
         text-offset: 15 0
         anchors.centerIn: parent
@@ -1405,7 +1405,7 @@ UIWidget
       RoundCheckBox
         id: grid
         width: 100
-        text: show as grid
+        !text: tr('show as grid')
         color: #C0C0C0
         text-offset: 15 0
         anchors.verticalCenter: parent.verticalCenter
@@ -1706,7 +1706,7 @@ UIWidget
           padding-bottom: 5
           margin: 5
           margin-bottom: 1
-          text: hirelings
+          !text: tr('Hirelings')
 
           Label
             id: PurchasedHireLings
@@ -1732,7 +1732,7 @@ UIWidget
             anchors.top: PurchasedHireLings.bottom
             anchors.left: parent.left
             margin-top: 2
-            text: hireling jobs:
+            !text: tr('Hireling Jobs:')
 
           Label
             id: hirelingOutfits
@@ -1741,7 +1741,7 @@ UIWidget
             anchors.top: prev.bottom
             anchors.left: parent.left
             margin-top: 2
-            text: hirelingOutfits:
+            !text: tr('Hireling Outfits:')
 
         MiniPanel
           id: houseItems

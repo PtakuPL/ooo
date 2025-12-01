@@ -13,13 +13,13 @@ on:
       - "src/**"
       - "tests/**/*.cpp"
     branches:
-      - main
+      - master
 env:
   CMAKE_BUILD_PARALLEL_LEVEL: 2
   MAKEFLAGS: "-j 2"
 jobs:
   cancel-runs:
-    if: github.event_name == 'pull_request' && github.ref != 'refs/heads/main'
+    if: github.event_name == 'pull_request' && github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
       - name: Cancel Previous Runs

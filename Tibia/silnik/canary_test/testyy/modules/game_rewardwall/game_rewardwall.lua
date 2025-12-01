@@ -76,12 +76,12 @@ local CONST_WINDOWS_BOX = {
 
 local BOX_CONFIGS = {
     [CONST_WINDOWS_BOX.ALREADY] = {
-        title = "Warning",
-        content = "Sorry, you have already taken your daily reward or you are unable to collect it"
+        title = tr("Warning"),
+        content = tr("Sorry, you have already taken your daily reward or you are unable to collect it")
     },
     [CONST_WINDOWS_BOX.CONFIRMATION_IRA] = {
-        title = "Confirmation of using Instant Reward Access",
-        content = "Remember! You can always collect your daily reward for free by visiting a reward shrine!\n\nYou Currently own 3x Instant Reward Access. Do you really want to use one to claim your daily reward now?",
+        title = tr("Confirmation of using Instant Reward Access"),
+        content = tr("Remember! You can always collect your daily reward for free by visiting a reward shrine!\n\nYou Currently own 3x Instant Reward Access. Do you really want to use one to claim your daily reward now?"),
         okCallback = function()
             g_game.requestGetRewardDaily(bonusShrine, actualUsed)
             if windowsPickWindow then
@@ -96,8 +96,8 @@ local BOX_CONFIGS = {
         end
     },
     [CONST_WINDOWS_BOX.NO_IRA] = {
-        title = "Warning: No Sufficient Instant Reward Access",
-        content = "Remember! you can always collect your daily reward for free by visiting a reward shrine!\nyou do not have an Instant Reward Access.\nVisit the store to buy more!"
+        title = tr("Warning: No Sufficient Instant Reward Access"),
+        content = tr("Remember! you can always collect your daily reward for free by visiting a reward shrine!\nyou do not have an Instant Reward Access.\nVisit the store to buy more!")
     }
 }
 

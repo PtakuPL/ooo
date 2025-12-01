@@ -189,7 +189,7 @@ function createEditWindow(widget)
     local id = widget:getId():sub(4)
     -- @Groups
     if not g_game.getFeature(GameVipGroups) then
-        editVipWindow:setText('Edit VIP')
+        editVipWindow:setText(tr('Edit VIP'))
         editVipWindow:setSize('272 170')
     else
         editVipWindow:setHeight(350 + 2 * (#vipGroups))
@@ -761,8 +761,8 @@ end
 function createEditGroupWindow(groupName, groupId)
     if not addGroupWindow then
         addGroupWindow = g_ui.displayUI('addgroup')
-        addGroupWindow:setText('Edit VIP group')
-        addGroupWindow.header:setText('Please enter a group name:')
+        addGroupWindow:setText(tr('Edit VIP group'))
+        addGroupWindow.header:setText(tr('Please enter a group name:'))
         addGroupWindow.name:setText(groupName)
         function addGroupWindow.onEnter()
             editGroup(groupId)

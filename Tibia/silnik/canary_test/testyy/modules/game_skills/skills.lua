@@ -262,7 +262,7 @@ function online()
     skillsWindow:setupOnStart() -- load character window configuration
     refresh()
     if g_game.getFeature(GameEnterGameShowAppearance) then
-        skillsWindow:recursiveGetChildById('regenerationTime'):getChildByIndex(1):setText('Food')
+        skillsWindow:recursiveGetChildById('regenerationTime'):getChildByIndex(1):setText(tr('Food'))
     end
 end
 

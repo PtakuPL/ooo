@@ -153,10 +153,10 @@ function resetSlots()
     emptyImbue:setVisible(false)
     clearImbue:setVisible(false)
     for i = 1, 3 do
-        imbuingWindow.itemInfo.slots:getChildByIndex(i):setText('Slot ' .. i)
+        imbuingWindow.itemInfo.slots:getChildByIndex(i):setText(tr('Slot') .. ' ' .. i)
         imbuingWindow.itemInfo.slots:getChildByIndex(i):setEnabled(false)
         imbuingWindow.itemInfo.slots:getChildByIndex(i):setTooltip(
-            'Items can have up to three imbuements slots. This slot is not available for this item.')
+            tr('Items can have up to three imbuements slots. This slot is not available for this item.'))
         imbuingWindow.itemInfo.slots:getChildByIndex(i).onClick = nil
     end
 end
@@ -165,7 +165,7 @@ function selectSlot(widget, slotId, activeSlot)
     if activeSlot then
         emptyImbue:setVisible(false)
         widget:setText(activeSlot[1]['name'])
-        clearImbue.title:setText('Clear Imbuement "' .. activeSlot[1]['name'] .. '"')
+        clearImbue.title:setText(tr('Clear Imbuement') .. ' "' .. activeSlot[1]['name'] .. '"')
         clearImbue.groups:clearOptions()
         clearImbue.groups:addOption(activeSlot[1]['group'])
         clearImbue.imbuement:clearOptions()
@@ -185,7 +185,7 @@ function selectSlot(widget, slotId, activeSlot)
 
         local yesCallback = function()
             g_game.clearImbuement(slotId)
-            widget:setText('Slot ' .. (slotId + 1))
+            widget:setText(tr('Slot') .. ' ' .. (slotId + 1))
             if clearConfirmWindow then
                 clearConfirmWindow:destroy()
                 clearConfirmWindow = nil

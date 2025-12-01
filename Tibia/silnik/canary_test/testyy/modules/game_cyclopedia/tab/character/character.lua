@@ -790,14 +790,14 @@ function Cyclopedia.loadCharacterGeneralStats(data, skills)
         math.min(data.staminaMinutes, 180) % 60)
     local storeExpBonusTime = format(data.XpBoostBonusRemainingTime)
     local expGainRateTooltip = string.format(
-        "Your current XP gain rate amounts to %d%%.\nYour XP gain rate is calculated as follows:\n- Base XP gain rate: %d%%",
+        tr("Your current XP gain rate amounts to %d%%.\nYour XP gain rate is calculated as follows:\n- Base XP gain rate: %d%%"),
         expGainRate, data.baseExpGain)
 
     expGainRateTooltip = hasStoreExpBonus and expGainRateTooltip ..
-                             string.format("\n- XP boost: %d%% (%s h remaining).", data.XpBoostPercent,
+                             string.format(tr("\n- XP boost: %d%% (%s h remaining)."), data.XpBoostPercent,
             storeExpBonusTime) or expGainRateTooltip
     expGainRateTooltip = hasStaminaBonus and expGainRateTooltip ..
-                             string.format("\n- Stamina bonus: x1.5 (%s h remaining).", staminaBonusTime) or
+                             string.format(tr("\n- Stamina bonus: x1.5 (%s h remaining)."), staminaBonusTime) or
                              expGainRateTooltip
 
     UI.CharacterStats.expGainRate:setTooltip(expGainRateTooltip)

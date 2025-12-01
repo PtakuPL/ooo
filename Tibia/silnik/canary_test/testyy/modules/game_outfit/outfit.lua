@@ -598,14 +598,14 @@ function newPreset()
     --  presetWidget.creature:setCenter(true)
 
     settings.presets[presetId] = {
-        title = "New Preset",
+        title = tr("New Preset"),
         outfit = outfitCopy,
-        aura = "None",
-        effects = "None",
-        wings = "None",
-        shader = "None",
+        aura = tr("None"),
+        effects = tr("None"),
+        wings = tr("None"),
+        shader = tr("None"),
         mounted = window.configure.mount.check:isChecked(),
-        familiar = "None"
+        familiar = tr("None")
     }
 
     presetWidget:focus()

@@ -248,6 +248,42 @@ locale = {
     ["Client needs update."] = "클라이언트 업데이트가 필요합니다.",
     ["Update needed"] = "업데이트 필요",
     
+    -- Reward Wall & Cyclopedia / 보상 벽 및 사이클로피디아
+    ["Date"] = "날짜", -- Nalcha
+    ["Streak"] = "연속", -- Yeonsok
+    ["Event"] = "이벤트", -- Ibenteu
+    ["Free capacity"] = "남은 용량", -- Nameun yongryang
+    ["Total weight"] = "총 무게", -- Chong muge
+    ["Unknown bonus."] = "알 수 없는 보너스.", -- Al su eomneun boneoseu
+    ["Not yet, UI missing"] = "아직, UI 누락", -- Ajik, UI nurak
+    ["Unlocks at 1500 Boss Points"] = "1500 보스 포인트에서 잠금 해제", -- 1500 boseu pointeueseo jamgeum haeje
+    ["Equipment Loot Bonus"] = "장비 드롭 보너스", -- Jangbi deurop boneoseu
+    ["Next"] = "다음", -- Daeum
+    ["fully unlocked"] = "완전 잠금 해제", -- Wanjeon jamgeum haeje
+    ["Equipment loot bonus"] = "장비 드롭 보너스", -- Jangbi deurop boneoseu
+    ["Kill bonus"] = "킬 보너스", -- Kil boneoseu
+    ["Boosted Boss"] = "부스트 보스", -- Buseut boseu
+    ["Slot"] = "슬롯", -- Seullot
+    ["Locked"] = "잠김", -- Jamgim
+    ["Select Boss"] = "보스 선택", -- Boseu seontaek
+    ["Unlocks at %d Boss Points"] = "%d 보스 포인트에서 잠금 해제", -- %d boseu pointeueseo jamgeum haeje
+    
+    -- House / 집
+    ["Your Limit"] = "귀하의 한도", -- Gwihaui hando
+    ["There is no bid so far."] = "아직 입찰이 없습니다.", -- Ajik ipchali eobsseumnida
+    ["Be the first to bid on this house."] = "이 집에 첫 입찰을 하세요.", -- I jibe cheot ipchareul haseyo
+    ["When the auction ends, the winning bid plus the rent for the first month"] = "경매 종료 시, 낙찰가와 첫 달 임대료가", -- Gyeongmae jongryo si, nakchalgawa cheot dal imdaeryoga
+    ["will be debited to your bank account."] = "은행 계좌에서 인출됩니다.", -- Eunhaeng gyejwaeseo inchuldoemnida
+    ["Auction"] = "경매", -- Gyeongmae
+    ["Highest Bidder"] = "최고 입찰자", -- Choego ipcharja
+    ["End Time"] = "종료 시간", -- Jongryo sigan
+    ["Highest Bid"] = "최고 입찰가", -- Choego ipchalga
+    ["Rental Details"] = "임대 세부사항", -- Imdae sebusahang
+    ["Tenant"] = "임차인", -- Imchain
+    ["Paid Until"] = "결제 완료", -- Gyeolje wanryo
+    ["New Owner"] = "새 소유자", -- Sae soyuja
+    ["Transfer"] = "양도", -- Yangdo
+    
     -- Misc / 기타
     ["Server"] = "서버", -- Seobeo
     ["Port"] = "포트", -- Poteu

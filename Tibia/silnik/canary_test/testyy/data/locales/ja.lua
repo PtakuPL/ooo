@@ -248,6 +248,42 @@ locale = {
     ["Client needs update."] = "クライアントの更新が必要です。",
     ["Update needed"] = "更新が必要",
     
+    -- Reward Wall & Cyclopedia / 報酬ウォールとサイクロペディア
+    ["Date"] = "日付", -- Hizuke
+    ["Streak"] = "連続", -- Renzoku
+    ["Event"] = "イベント", -- Ibento
+    ["Free capacity"] = "空き容量", -- Aki youryou
+    ["Total weight"] = "総重量", -- Soujuuryou
+    ["Unknown bonus."] = "不明なボーナス。", -- Fumei na boonasu
+    ["Not yet, UI missing"] = "まだです、UIがありません", -- Mada desu, UI ga arimasen
+    ["Unlocks at 1500 Boss Points"] = "1500ボスポイントで解除", -- 1500 bosu pointo de kaijo
+    ["Equipment Loot Bonus"] = "装備ドロップボーナス", -- Soubi doroppu boonasu
+    ["Next"] = "次", -- Tsugi
+    ["fully unlocked"] = "完全に解除", -- Kanzen ni kaijo
+    ["Equipment loot bonus"] = "装備ドロップボーナス", -- Soubi doroppu boonasu
+    ["Kill bonus"] = "キルボーナス", -- Kiru boonasu
+    ["Boosted Boss"] = "ブーストボス", -- Buusuto bosu
+    ["Slot"] = "スロット", -- Surotto
+    ["Locked"] = "ロック済み", -- Rokku zumi
+    ["Select Boss"] = "ボス選択", -- Bosu sentaku
+    ["Unlocks at %d Boss Points"] = "%dボスポイントで解除", -- %d bosu pointo de kaijo
+    
+    -- House / 家
+    ["Your Limit"] = "あなたの上限", -- Anata no jougen
+    ["There is no bid so far."] = "まだ入札がありません。", -- Mada nyuusatsu ga arimasen
+    ["Be the first to bid on this house."] = "この家に最初に入札してください。", -- Kono ie ni saisho ni nyuusatsu shite kudasai
+    ["When the auction ends, the winning bid plus the rent for the first month"] = "オークション終了時、落札額と初月の家賃が", -- Ookushon shuuryou ji, rakusatsugaku to shogetsu no yachin ga
+    ["will be debited to your bank account."] = "銀行口座から引き落とされます。", -- Ginkou kouza kara hikiotosaremasu
+    ["Auction"] = "オークション", -- Ookushon
+    ["Highest Bidder"] = "最高入札者", -- Saikou nyuusatsusha
+    ["End Time"] = "終了時間", -- Shuuryou jikan
+    ["Highest Bid"] = "最高入札額", -- Saikou nyuusatsugaku
+    ["Rental Details"] = "賃貸詳細", -- Chintai shousai
+    ["Tenant"] = "借主", -- Karinushi
+    ["Paid Until"] = "支払い済み", -- Shiharai zumi
+    ["New Owner"] = "新オーナー", -- Shin oonaa
+    ["Transfer"] = "譲渡", -- Jouto
+    
     -- Misc / その他
     ["Server"] = "サーバー", -- Saabaa
     ["Port"] = "ポート", -- Pooto

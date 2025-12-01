@@ -869,7 +869,7 @@ function Cyclopedia.bidHouse(widget)
         if house.bidHolderLimit then
             local label = g_ui.createWidget("Label", UI.bidArea)
             label:setId("yourLimit")
-            label:setText("Your Limit: ")
+            label:setText(tr("Your Limit") .. ": ")
             label:setColor("#909090")
             label:setWidth(90)
             label:setHeight(15)
@@ -904,7 +904,7 @@ function Cyclopedia.bidHouse(widget)
 
         local label = g_ui.createWidget("Label", UI.bidArea)
         label:setId("soFar")
-        label:setText("There is not bid so far.")
+        label:setText(tr("There is no bid so far."))
         label:setColor("#C0C0C0")
         label:addAnchor(AnchorTop, "prev", AnchorBottom)
         label:addAnchor(AnchorLeft, "parent", AnchorLeft)
@@ -943,11 +943,11 @@ function Cyclopedia.bidHouse(widget)
 
     if house.hasBid then
         bidArea.information:setText(string.format(
-            "When the auction ends at %s the\nwinning bid plus the rent for the first month ( %s) will\nbe debited to your bank account.",
+            tr("When the auction ends at %s the winning bid plus the rent for the first month (%s) will be debited to your bank account."),
             time, (house.rent)))
     else
-        bidArea.information:setText("When the auction ends, the winning bid plus the rent for\nthe first month( " ..
-                                        (house.rent) .. ") will de debited yo your bank account.")
+        bidArea.information:setText(tr("When the auction ends, the winning bid plus the rent for the first month") .. " (" ..
+                                        (house.rent) .. ") " .. tr("will be debited to your bank account."))
     end
 
     function UI.bidArea.cancel.onClick()
@@ -1293,14 +1293,14 @@ function Cyclopedia.selectHouse(widget)
     resetSelectedInfo()
 
     if widget.data.hasBid then
-        UI.LateralBase.AuctionLabel:setText("Auction")
+        UI.LateralBase.AuctionLabel:setText(tr("Auction"))
 
         local formattedDate = os.date("%b %d, %H:%M", widget.data.bidEnd)
         local date = string.format("%s %s", formattedDate, "CET")
 
-        UI.LateralBase.AuctionText:setColoredText("{Hightest Bidder: , #909090}" .. widget.data.bidName ..
-                                                      "\n{      End Time: , #909090}" .. date ..
-                                                      "\n{   Highest Bid: , #909090}")
+        UI.LateralBase.AuctionText:setColoredText("{" .. tr("Highest Bidder") .. ": , #909090}" .. widget.data.bidName ..
+                                                      "\n{      " .. tr("End Time") .. ": , #909090}" .. date ..
+                                                      "\n{   " .. tr("Highest Bid") .. ": , #909090}")
         UI.LateralBase.highestBid:setVisible(true)
         UI.LateralBase.highestBidGold:setVisible(true)
         UI.LateralBase.highestBid:setText(comma_value(widget.data.hightestBid))
@@ -1315,9 +1315,9 @@ function Cyclopedia.selectHouse(widget)
         local formattedDate = os.date("%b %d, %H:%M", widget.data.paidUntil)
         local date = string.format("%s %s", formattedDate, "CET")
 
-        UI.LateralBase.AuctionLabel:setText("Rental Details")
-        UI.LateralBase.AuctionText:setColoredText("{            Tenant: , #909090}" .. widget.data.owner ..
-                                                      "\n{         Paid Until: , #909090}" .. date)
+        UI.LateralBase.AuctionLabel:setText(tr("Rental Details"))
+        UI.LateralBase.AuctionText:setColoredText("{            " .. tr("Tenant") .. ": , #909090}" .. widget.data.owner ..
+                                                      "\n{         " .. tr("Paid Until") .. ": , #909090}" .. date)
 
         if widget.data.inTransfer then
             formattedDate = os.date("%b %d, %H:%M", widget.data.transferTime)
@@ -1325,23 +1325,23 @@ function Cyclopedia.selectHouse(widget)
 
             UI.LateralBase.subAuctionLabel:setVisible(true)
             UI.LateralBase.subAuctionText:setVisible(true)
-            UI.LateralBase.subAuctionText:setColoredText("{      New Owner:  , #909090}" .. widget.data.transferName ..
-                                                             "\n{                Date:  , #909090}" .. date)
+            UI.LateralBase.subAuctionText:setColoredText("{      " .. tr("New Owner") .. ":  , #909090}" .. widget.data.transferName ..
+                                                             "\n{                " .. tr("Date") .. ":  , #909090}" .. date)
             UI.LateralBase.transferLabel:setVisible(true)
             UI.LateralBase.transferValue:setVisible(true)
             UI.LateralBase.transferGold:setVisible(true)
             UI.LateralBase.transferValue:setText(comma_value(widget.data.transferValue))
         end
     else
-        UI.LateralBase.AuctionLabel:setText("Auction")
-        UI.LateralBase.AuctionText:setText("There is no bid so far.\nBe the first to bid on this house.")
+        UI.LateralBase.AuctionLabel:setText(tr("Auction"))
+        UI.LateralBase.AuctionText:setText(tr("There is no bid so far.") .. "\n" .. tr("Be the first to bid on this house."))
     end
 
     if widget.data.rented then
         if widget.data.isYourOwner then
             local button = g_ui.createWidget("Button", UI.LateralBase)
             button:setId("transferButton")
-            button:setText("Transfer")
+            button:setText(tr("Transfer"))
             button:setColor("#C0C0C0")
             -- button:setFont("verdana-bold-8px-antialiased")
             button:setWidth(64)

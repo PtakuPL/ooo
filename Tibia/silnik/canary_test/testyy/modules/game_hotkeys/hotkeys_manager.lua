@@ -135,7 +135,7 @@ function terminate()
         onGameEnd = offline
     })
 
-    Keybind.delete("Windows", "Show/hide Hotkeys")
+    Keybind.delete(tr("Windows"), tr("Show/hide Hotkeys"))
 
     unload()
 

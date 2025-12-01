@@ -216,9 +216,9 @@ function terminate()
 
     logoutButton:destroy()
     gameRootPanel:destroy()
-    Keybind.delete("Movement", "Stop All Actions")
-    Keybind.delete("Misc", "Logout")
-    Keybind.delete("UI", "Clear All Texts")
+    Keybind.delete(tr("Movement"), tr("Stop All Actions"))
+    Keybind.delete(tr("Misc"), tr("Logout"))
+    Keybind.delete(tr("UI"), tr("Clear All Texts"))
 end
 
 function onGameStart()

@@ -193,7 +193,7 @@ function terminate()
     end
 
 
-    Keybind.delete("UI", "Toggle Top Menu")
+    Keybind.delete(tr("UI"), tr("Toggle Top Menu"))
 end
 
 function hide()

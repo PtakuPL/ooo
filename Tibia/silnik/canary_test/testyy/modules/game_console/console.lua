@@ -612,7 +612,7 @@ function clear()
         channelsWindow = nil
     end
     if g_game.getClientVersion() < 862 then
-        Keybind.delete("Dialogs", "Open Rule Violation")
+        Keybind.delete(tr("Dialogs"), tr("Open Rule Violation"))
     end
 
     if readOnlyModeEnabled then

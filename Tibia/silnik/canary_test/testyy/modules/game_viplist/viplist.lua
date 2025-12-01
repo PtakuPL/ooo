@@ -55,7 +55,7 @@ function controllerVip:onInit()
 end
 
 function controllerVip:onTerminate()
-    Keybind.delete("Windows", "Show/hide VIP list")
+    Keybind.delete(tr("Windows"), tr("Show/hide VIP list"))
     local ArrayWidgets = {addVipWindow, editVipWindow, vipWindow, vipButton, addGroupWindow}
     for _, widget in ipairs(ArrayWidgets) do
         if widget ~= nil or widget then

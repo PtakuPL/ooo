@@ -32,7 +32,7 @@ function terminate()
     ProtocolGame.unregisterExtendedJSONOpcode(215, parseOpcode)
     taskButton:destroy()
     destroy()
-    Keybind.delete('Windows', 'show/hide Tasks Windows')
+    Keybind.delete(tr('Windows'), tr('show/hide Tasks Windows'))
 end
 
 function onGameStart()

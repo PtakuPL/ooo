@@ -219,7 +219,7 @@ function terminate()
     }
     g_settings.setNode('terminal-window', settings)
 
-    Keybind.delete("Misc.", "Toggle Terminal")
+    Keybind.delete(tr("Misc."), tr("Toggle Terminal"))
     g_logger.setOnLog(nil)
     terminalWindow:destroy()
     terminalButton:destroy()

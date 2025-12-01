@@ -316,7 +316,7 @@ function onPreyLocked(slot, unlockState, timeUntilFreeReroll, wildcards)
     if not prey then
         return
     end
-    prey.title:setText('Locked')
+    prey.title:setText(tr('Locked'))
     prey.inactive:hide()
     prey.active:hide()
     prey.locked:show()

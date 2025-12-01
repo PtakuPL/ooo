@@ -74,7 +74,7 @@ function init()
                             end
                         end
                         emptyImbue.requiredItems:getChildByIndex(i).item:setItemId(source['item']:getId())
-                        emptyImbue.requiredItems:getChildByIndex(i).item:setTooltip('The imbuement requires ' ..
+                        emptyImbue.requiredItems:getChildByIndex(i).item:setTooltip(tr('The imbuement requires') .. ' ' ..
                                                                                         source['description'] .. '.')
                     end
                     for i = 3, widget.currentIndex + 1, -1 do
@@ -281,7 +281,7 @@ function Imbuing.onImbuementWindow(itemId, slots, activeSlots, imbuements, needI
             selectSlot(widget, i - 1)
         end
         slot:setTooltip(
-            'Use this slot to imbue your item. Depending on the item you can have up to three different imbuements.')
+            tr('Use this slot to imbue your item. Depending on the item you can have up to three different imbuements.'))
         slot:setEnabled(true)
 
         if slot:getId() == 'slot0' then

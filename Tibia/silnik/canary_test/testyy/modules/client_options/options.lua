@@ -121,7 +121,7 @@ local function setupComboBox()
     end
 
 
-    for k, t in pairs({ 'Normal', 'Fade', 'Locked', 'Always', 'Always with transparency' }) do
+    for k, t in pairs({ tr('Normal'), tr('Fade'), tr('Locked'), tr('Always'), tr('Always with transparency') }) do
         floorViewModeCombobox:addOption(t, k - 1)
     end
 
@@ -129,7 +129,7 @@ local function setupComboBox()
         setOption('floorViewMode', comboBox:getCurrentOption().data)
     end
 
-    for k, v in pairs({ { 'None', 'none' }, { 'Frames', 'frames' }, { 'Corners', 'corners' } }) do
+    for k, v in pairs({ { tr('None'), 'none' }, { tr('Frames'), 'frames' }, { tr('Corners'), 'corners' } }) do
         framesRarityCombobox:addOption(v[1], v[2])
     end
 

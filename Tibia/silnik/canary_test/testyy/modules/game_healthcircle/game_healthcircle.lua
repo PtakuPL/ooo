@@ -562,7 +562,7 @@ function addToOptionsModule()
     distFromCenScrollbar:setValue(distanceFromCenter)
     opacityScrollbar:setText(tr('Opacity') .. ': ' .. opacityCircle)
     opacityScrollbar:setValue(opacityCircle * 100)
-    modules.client_options.addButton("Interface", "HP/MP Circle", optionPanel)
+    modules.client_options.addButton(tr("Interface"), tr("HP/MP Circle"), optionPanel)
 end
 
 function updateStatsBar()
@@ -595,6 +595,6 @@ function destroyOptionsModule()
     chooseStatsBarDimension = nil
     chooseStatsBarPlacement = nil
 
-    modules.client_options.removeButton("Interface", "HP/MP Circle")
+    modules.client_options.removeButton(tr("Interface"), tr("HP/MP Circle"))
     optionPanel = nil
 end

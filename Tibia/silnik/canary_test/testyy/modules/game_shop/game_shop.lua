@@ -570,13 +570,13 @@ end
 
 function onOfferBuy(self)
     if not selectedOffer then
-        displayInfoBox("Error", "Something went wrong, make sure to select category and offer.")
+        displayInfoBox(tr("Error"), tr("Something went wrong, make sure to select category and offer."))
         return
     end
 
     hide()
 
-    local title = "Purchase Confirmation"
+    local title = tr("Purchase Confirmation")
     local msg
     if self.count and self.count > 1 then
         msg =
@@ -718,7 +718,7 @@ function onGameShopMsg(data)
     displayInfoBoxWithCallback(
         title,
         text,
-        {{text = "Ok", callback = defaultCallback}},
+        {{text = tr("Ok"), callback = defaultCallback}},
         function()
             show()
         end

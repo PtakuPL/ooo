@@ -94,7 +94,7 @@ function screenshotController:onGameStart()
     })
     optionPanel:recursiveGetChildById("keepBlacklog"):disable() -- no compatibility 11/07/24
    
-    modules.client_options.addButton("Misc.", "Screenshot", optionPanel)
+    modules.client_options.addButton(tr("Misc."), tr("Screenshot"), optionPanel)
 end
 
 function screenshotController:onGameEnd()
@@ -148,7 +148,7 @@ end
 -- LuaFormatter on
 
 function destroyOptionsModule()
-    modules.client_options.removeButton("Misc.","Screenshot")
+    modules.client_options.removeButton(tr("Misc."), tr("Screenshot"))
     if optionPanel and not optionPanel:isDestroyed() then
         optionPanel:destroy()
         optionPanel = nil

@@ -1432,32 +1432,32 @@ local  function getWeaponSkillName(skillType)
         UI.DeffenceStats.leftPanel:destroyChildren()
     
         local stats = {
-            {name = "Defence Value", value = data.defense or 0, icon = false, percent = false},
-            {name = "From Equipment", value = data.defenseEquipment or 0, align = "center", icon = false},
-            {name = "From Wheel", value = data.defenseWheel or 0, align = "center", icon = false},
+            {name = tr("Defence Value"), value = data.defense or 0, icon = false, percent = false},
+            {name = tr("From Equipment"), value = data.defenseEquipment or 0, align = "center", icon = false},
+            {name = tr("From Wheel"), value = data.defenseWheel or 0, align = "center", icon = false},
             {name = getWeaponSkillName(data.defenseSkillType), value = data.shieldingSkill or 0, align = "center", icon = false},
             
-            {name = "Armor Value", value = data.armor or 0, icon = false, percent = false},
+            {name = tr("Armor Value"), value = data.armor or 0, icon = false, percent = false},
             
-            {name = "Mitigation", value = data.mitigation or 0, icon = false, percent = true},
-            {name = "From Shielding", value = data.mitigationShield or 0, align = "center", percent = true, icon = false},
-            {name = "From Combat Tactics", value = data.mitigationCombatTactics or 0, align = "center", percent = true, icon = false},
-            {name = "From Base", value = data.mitigationBase or 0, align = "center", percent = true, icon = false},
-            {name = "From Equipment", value = data.mitigationEquipment or 0, align = "center", percent = true, icon = false},
-            {name = "From Wheel", value = data.mitigationWheel or 0, align = "center", percent = true, icon = false},
+            {name = tr("Mitigation"), value = data.mitigation or 0, icon = false, percent = true},
+            {name = tr("From Shielding"), value = data.mitigationShield or 0, align = "center", percent = true, icon = false},
+            {name = tr("From Combat Tactics"), value = data.mitigationCombatTactics or 0, align = "center", percent = true, icon = false},
+            {name = tr("From Base"), value = data.mitigationBase or 0, align = "center", percent = true, icon = false},
+            {name = tr("From Equipment"), value = data.mitigationEquipment or 0, align = "center", percent = true, icon = false},
+            {name = tr("From Wheel"), value = data.mitigationWheel or 0, align = "center", percent = true, icon = false},
             
-            {name = "Dodge", value = data.dodgeTotal or 0, icon = false, percent = true},
-            {name = "From Base", value = data.dodgeBase or 0, align = "center", percent = true, icon = false},
-            {name = "From Amplification", value = data.dodgeBonus or 0, align = "center", percent = true, icon = false},
-            {name = "From Wheel", value = data.dodgeWheel or 0, align = "center", percent = true, icon = false},
+            {name = tr("Dodge"), value = data.dodgeTotal or 0, icon = false, percent = true},
+            {name = tr("From Base"), value = data.dodgeBase or 0, align = "center", percent = true, icon = false},
+            {name = tr("From Amplification"), value = data.dodgeBonus or 0, align = "center", percent = true, icon = false},
+            {name = tr("From Wheel"), value = data.dodgeWheel or 0, align = "center", percent = true, icon = false},
             
-            {name = "Magic Shield Capacity", value = data.magicShieldCapacity or 0, icon = false, percent = false},
-            {name = "Flat", value = data.magicShieldCapacityFlat or 0, align = "center", icon = false},
-            {name = "Percent", value = data.magicShieldCapacityPercent or 0, align = "center", percent = true, icon = false},
+            {name = tr("Magic Shield Capacity"), value = data.magicShieldCapacity or 0, icon = false, percent = false},
+            {name = tr("Flat"), value = data.magicShieldCapacityFlat or 0, align = "center", icon = false},
+            {name = tr("Percent"), value = data.magicShieldCapacityPercent or 0, align = "center", percent = true, icon = false},
             
-            {name = "Reflect Physical", value = data.reflectPhysical or 0, icon = false, percent = false},
+            {name = tr("Reflect Physical"), value = data.reflectPhysical or 0, icon = false, percent = false},
             
-            {name = "Resistances", parent = "right", value = "", icon = false}
+            {name = tr("Resistances"), parent = "right", value = "", icon = false}
         }
         
         local resistanceMap = {}

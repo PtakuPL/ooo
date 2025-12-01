@@ -3,7 +3,6 @@ name: Tests - Lua
 
 on:
   pull_request:
-  merge_group:
   push:
     branches:
       - main
@@ -18,7 +17,7 @@ jobs:
         run: sudo apt-get update
 
       - name: Setup Lua
-        run: sudo apt-get install -y libluajit-5.1-dev
+        run: sudo apt-get install -y lua5.1 liblua5.1-0-dev
 
       - name: Check out code.
         uses: actions/checkout@main

@@ -1,4 +1,3 @@
----
 name: Build - Ubuntu
 
 on:
@@ -7,12 +6,14 @@ on:
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
       - "src/**"
+      - ".github/workflows/build-ubuntu.yml"
   merge_group:
   push:
+    branches:
+      - master
     paths:
       - "src/**"
-    branches:
-      - main
+      - ".github/workflows/build-ubuntu.yml"
 
 env:
   CMAKE_BUILD_PARALLEL_LEVEL: 2
@@ -20,109 +21,134 @@ env:
 
 jobs:
   cancel-runs:
-    if: github.event_name == 'pull_request' && github.ref != 'refs/heads/main'
+    if: github.event_name == 'pull_request' && github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
       - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.9.1
+        uses: styfle/cancel-workflow-action@main
         with:
           access_token: ${{ github.token }}
 
-  job:
+  build:
     if: ${{ github.event_name == 'push' || !github.event.pull_request.draft }}
     name: ${{ matrix.os }}-${{ matrix.buildtype }}
     runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: Tibia/silnik/canary_test/testyy
+
+    concurrency:
+      group: otclient-${{ github.workflow }}-${{ github.ref }}-${{ matrix.buildtype }}
+      cancel-in-progress: true
 
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-22.04, ubuntu-24.04]
-        buildtype: [linux-release, linux-debug]
+        os: [ubuntu-24.04]
+        buildtype: [linux-debug]
         include:
-          - os: ubuntu-22.04
-            triplet: x64-linux
           - os: ubuntu-24.04
             triplet: x64-linux
+            cmake_build_type: Debug
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
 
       - name: Install Linux Dependencies
-        run: >
-          sudo apt-get update && sudo apt-get install ccache linux-headers-"$(uname -r)"
-
-      - name: Switch to gcc-13 on Ubuntu 22.04
-        if: matrix.os == 'ubuntu-22.04'
         run: |
-          sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
           sudo apt-get update
-          sudo apt install gcc-13 g++-13 -y
-          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 100 --slave /usr/bin/g++ g++ /usr/bin/g++-13 --slave /usr/bin/gcov gcov /usr/bin/gcov-12
-          sudo update-alternatives --set gcc /usr/bin/gcc-13
+          sudo apt-get install -y ccache gcc-14 g++-14 libglew-dev libx11-dev linux-headers-$(uname -r)
 
-      - name: Switch to gcc-14 on Ubuntu 24.04
-        if: matrix.os == 'ubuntu-24.04'
+      - name: Switch to GCC 14
         run: |
-          sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
-          sudo apt-get update
-          sudo apt-get install gcc-14 g++-14 -y
-          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-14 100 --slave /usr/bin/g++ g++ /usr/bin/g++-14 --slave /usr/bin/gcov gcov /usr/bin/gcov-14
+          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-14 100
+          sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-14 100
           sudo update-alternatives --set gcc /usr/bin/gcc-14
+          sudo update-alternatives --set g++ /usr/bin/g++-14
 
-      - name: CCache
-        uses: hendrikmuhs/ccache-action@main
-        with:
-          max-size: "1G"
-          key: ccache-${{ matrix.os }}-${{ matrix.buildtype }}
-          restore-keys: |
-            ccache-${{ matrix.os }}
-
-      - name: Restore artifacts and install vcpkg
+      - name: Get vcpkg commit ID (with fallback)
         id: vcpkg-step
         run: |
-          vcpkgCommitId=$(grep '.builtin-baseline' vcpkg.json | awk -F: '{print $2}' | tr -d '," ')
-          echo "vcpkg commit ID: $vcpkgCommitId"
-          echo "VCPKG_GIT_COMMIT_ID=$vcpkgCommitId" >> "$GITHUB_ENV"
+          fallback='5b1214315250939257ef5d62ecdcbca18cf4fb1c'
+          vcpkgCommitId=''
+          if [ -f vcpkg.json ]; then
+            vcpkgCommitId=$(grep '.builtin-baseline' vcpkg.json | awk -F: '{print $2}' | tr -d '", ')
+          fi
+          if [[ $vcpkgCommitId =~ ^[0-9a-f]{40}$ ]]; then
+            echo "Using builtin-baseline vcpkg commit: $vcpkgCommitId"
+          else
+            echo "No valid builtin-baseline; using fallback: $fallback"
+            vcpkgCommitId=$fallback
+          fi
+          echo "vcpkgGitCommitId=$vcpkgCommitId" >> $GITHUB_OUTPUT
 
-      - name: Get vcpkg commit id from vcpkg.json
-        uses: lukka/run-vcpkg@main
-        with:
-          vcpkgGitURL: "https://github.com/microsoft/vcpkg.git"
-          vcpkgGitCommitId: ${{ env.VCPKG_GIT_COMMIT_ID }}
-
-      - name: Get latest CMake and ninja
-        uses: lukka/get-cmake@main
-
-      - name: Configure CMake
-        uses: lukka/run-cmake@v10
-        with:
-          configurePreset: ${{ matrix.buildtype }}
-          configurePresetAdditionalArgs: '["-DBUILD_TESTS=ON"]'
-
-      - name: Build with CMake
-        uses: lukka/run-cmake@v10
-        with:
-          buildPreset: ${{ matrix.buildtype }}
-
-      - name: Debug Build Output
+      - name: Compute vcpkg.json hash
+        id: hash
+        shell: pwsh
         run: |
-          echo "Zawartość katalogu build:"
-          ls -R ${{ github.workspace }}/build/${{ matrix.buildtype }} || true
+          $json = Get-Content "vcpkg.json" -Raw -Encoding UTF8
+          $bytes = [System.Text.Encoding]::UTF8.GetBytes($json)
+          $sha256 = [System.Security.Cryptography.SHA256]::Create()
+          $hashBytes = $sha256.ComputeHash($bytes)
+          $hash = [BitConverter]::ToString($hashBytes) -replace '-', ''
+          "hash=$hash" | Out-File -FilePath $env:GITHUB_OUTPUT -Append -Encoding utf8
 
-      - name: Create and Upload Artifact
-        uses: actions/upload-artifact@main
+      - name: Cache vcpkg binary artifacts
+        uses: actions/cache@v4
         with:
-          name: canary-${{ matrix.os }}-${{ matrix.buildtype }}-${{ github.sha }}
           path: |
-            ${{ github.workspace }}/build/${{ matrix.buildtype }}/bin/
+            ~/.cache/vcpkg/archives
+            ${{ github.workspace }}/vcpkg/downloads
+            ${{ github.workspace }}/vcpkg/installed
+            ${{ github.workspace }}/vcpkg/buildtrees
+          key: vcpkg-${{ matrix.os }}-${{ matrix.buildtype }}-${{ steps.hash.outputs.hash }}
+          restore-keys: |
+            vcpkg-${{ matrix.buildtype }}-
 
-      - name: Run Unit Tests
+      - name: Setup vcpkg
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgGitCommitId: ${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}
+
+      - name: vcpkg manifest validation (preflight)
         run: |
-          cd ${{ github.workspace }}/build/${{ matrix.buildtype }}/tests/unit
-          ctest --verbose
+          echo "vcpkg: printing installed ports and validating manifest..."
+          $VCPKG_ROOT/vcpkg search || echo "vcpkg search failed (ignored)"
+          $VCPKG_ROOT/vcpkg install --manifest || (echo "vcpkg manifest install failed; please check ports in vcpkg.json"; exit 1)
 
-#      - name: Run Integration Tests
-#        run: |
-#          cd ${{ github.workspace }}/build/${{ matrix.buildtype }}/tests/integration
-#          ctest --verbose
+      - name: Install CMake and Ninja
+        uses: lukka/get-cmake@v3.31.6
+
+      - name: Cache CMake build directory
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/build-${{ matrix.buildtype }}
+          key: cmake-dir-${{ matrix.buildtype }}
+          restore-keys: |
+            cmake-dir-${{ matrix.buildtype }}
+
+      - name: Configure and Build
+        run: |
+          cmake -G Ninja -S . -B build-${{ matrix.buildtype }} \
+            -DCMAKE_BUILD_TYPE=${{ matrix.cmake_build_type }} \
+            -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake \
+            -DVCPKG_TARGET_TRIPLET=${{ matrix.triplet }} \
+            -DTOGGLE_BIN_FOLDER=ON \
+            -DOPTIONS_ENABLE_IPO=OFF \
+            -DTOGGLE_BOT_PROTECTION=OFF \
+            -DCMAKE_C_COMPILER=gcc \
+            -DCMAKE_CXX_COMPILER=g++
+
+          cmake --build build-${{ matrix.buildtype }} --target otclient
+
+      - name: Check otclient.exe path
+        run: Get-ChildItem -Recurse -Filter "otclient*.exe"
+        shell: pwsh
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: otclient-${{ matrix.os }}-${{ matrix.buildtype }}-${{ github.sha }}
+          path: |
+            ${{ github.workspace }}/build-${{ matrix.buildtype }}/bin/

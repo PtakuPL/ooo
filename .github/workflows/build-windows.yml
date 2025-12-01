@@ -1,0 +1,93 @@
+name: build-windows
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+    paths-ignore:
+      - "**/*.md"
+  pull_request:
+
+concurrency:
+  group: windows-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: Tibia/silnik/canary_test/testyy
+
+    env:
+      VCPKG_DEFAULT_TRIPLET: x64-windows-static
+      VCPKG_DEFAULT_HOST_TRIPLET: x64-windows
+      VCPKG_FEATURE_FLAGS: manifests,binarycaching
+      VCPKG_BINARY_SOURCES: clear;x-gha,readwrite
+      CMAKE_BUILD_PARALLEL_LEVEL: 8
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: false   # nie używamy submodułu vcpkg/
+
+      - name: Setup MSVC (VS 2022, x64)
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+
+      - name: Install CMake + Ninja
+        uses: lukka/get-cmake@latest
+
+      # run-vcpkg: brak vcpkgDirectory, pin na pełny SHA, jeden manifest w root
+      - name: Setup vcpkg (pin + manifest)
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgGitURL: https://github.com/microsoft/vcpkg.git
+          vcpkgGitCommitId: 5b1214315250939257ef5d62ecdcbca18cf4fb1c
+          runVcpkgInstall: true
+          vcpkgJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg.json'
+          vcpkgConfigurationJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg-configuration.json'
+          vcpkgJsonIgnores: "['**/vcpkg/**','**/browser/overlay-ports/**']"
+          doNotUpdateVcpkg: false
+          doNotCache: false
+          useShell: true
+          runVcpkgFormatString: "[`install`, `--recurse`, `--clean-after-build`, `--x-install-root`, `$[env.VCPKG_INSTALLED_DIR]`, `--triplet`, `$[env.VCPKG_DEFAULT_TRIPLET]`]"
+          logCollectionRegExps: "\s*\"(.+CMakeOutput\.log)\"\.\s*;\s*\"(.+CMakeError\.log)\"\.\s*;\s*(.+out\.log)\s*;\s+(.+err\.log)\s*;\s*(.+vcpkg.+\.log)\s*"
+
+      - name: Configure (CMake + vcpkg toolchain, VS generator)
+        shell: pwsh
+        run: >
+          cmake -S . -B build
+          -G "Visual Studio 17 2022" -A x64
+          -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT\scripts\buildsystems\vcpkg.cmake"
+          -DVCPKG_TARGET_TRIPLET="$env:VCPKG_DEFAULT_TRIPLET"
+          -DCMAKE_BUILD_TYPE=Release
+          -DCMAKE_VERBOSE_MAKEFILE=ON
+
+      - name: Build (Release)
+        shell: pwsh
+        run: cmake --build build --config Release --parallel
+
+      - name: Upload artifacts
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-release-${{ github.run_number }}
+          path: |
+            build/**/Release/*.exe
+            build/**/*.dll
+            build/*.pdb
+          if-no-files-found: warn
+
+      - name: Upload CMake logs (on failure)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cmake-logs-windows
+          path: |
+            build/CMakeFiles/CMakeOutput.log
+            build/CMakeFiles/CMakeError.log
+          if-no-files-found: warn

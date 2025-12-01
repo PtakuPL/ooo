@@ -3,7 +3,7 @@ name: build-windows
 on:
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [ master ]
     paths-ignore:
       - "**/*.md"
   pull_request:

@@ -10,7 +10,7 @@ on:
   merge_group:
   push:
     branches:
-      - main
+      - master
     paths:
       - "src/**"
       - ".github/workflows/build-ubuntu.yml"
@@ -21,7 +21,7 @@ env:
 
 jobs:
   cancel-runs:
-    if: github.event_name == 'pull_request' && github.ref != 'refs/heads/main'
+    if: github.event_name == 'pull_request' && github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
       - name: Cancel Previous Runs

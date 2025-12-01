@@ -1220,15 +1220,15 @@ function Cyclopedia.loadCharacterBadges(showAccountInformation, playerOnline, pl
         playerOnlineStatusColor = "#00ff00"
     end
 
-    local accountStatus = "Free"
+    local accountStatus = tr("Free")
     local accountStatusColor = "#ff0000"
     if playerPremium == 1 then
-        accountStatus = "Premium"
+        accountStatus = tr("Premium")
         accountStatusColor = "#00ff00"
     end
 
     if not loyaltyTitle or loyaltyTitle == "" then
-        loyaltyTitle = "None"
+        loyaltyTitle = tr("None")
     end
 
     Cyclopedia.setCharacterSkillValue("accountStatus", accountStatus, accountStatusColor)

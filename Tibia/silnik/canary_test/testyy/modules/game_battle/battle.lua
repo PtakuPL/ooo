@@ -113,8 +113,8 @@ function init() -- Initiating the module (load)
     end
 
     -- Adding SortType and SortOrder options
-    local sortTypeOptions = { 'Name', 'Distance', 'Age', 'Health' }
-    local sortOrderOptions = { 'Asc.', 'Desc.' }
+    local sortTypeOptions = { tr('Name'), tr('Distance'), tr('Age'), tr('Health') }
+    local sortOrderOptions = { tr('Asc.'), tr('Desc.') }
 
     local sortTypeBox = battleWindow:recursiveGetChildById('sortTypeBox')
     for i, v in ipairs(sortTypeOptions) do

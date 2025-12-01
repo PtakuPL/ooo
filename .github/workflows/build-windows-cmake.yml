@@ -6,18 +6,20 @@ on:
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
       - "src/**"
+      - "tests/**/*.cpp"
   merge_group:
   push:
     paths:
       - "src/**"
+      - "tests/**/*.cpp"
     branches:
-      - main
+      - master
 env:
   CMAKE_BUILD_PARALLEL_LEVEL: 2
   MAKEFLAGS: "-j 2"
 jobs:
   cancel-runs:
-    if: github.event_name == 'pull_request' && github.ref != 'refs/heads/main'
+    if: github.event_name == 'pull_request' && github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
       - name: Cancel Previous Runs
@@ -40,7 +42,13 @@ jobs:
               sccache
     steps:
       - name: Checkout repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
+
+      - name: Remove nested git directories (upstream mirrors)
+        shell: bash
+        run: |
+          rm -rf oryginall/canary-serwer/.git || true
+          rm -rf oryginall/otclient/.git || true
 
       - name: CCache
         uses: hendrikmuhs/ccache-action@main
@@ -75,6 +83,7 @@ jobs:
       - name: Run CMake
         uses: lukka/run-cmake@main
         with:
+          configurePresetAdditionalArgs: "['-DTOGGLE_BIN_FOLDER=ON']"
           configurePreset: ${{ matrix.buildtype }}
           buildPreset: ${{ matrix.buildtype }}
 
@@ -84,3 +93,11 @@ jobs:
           name: canary-${{ matrix.buildtype }}-${{ github.sha }}
           path: |
             ${{ github.workspace }}/build/${{ matrix.buildtype }}/bin/
+
+      - name: Run Unit Tests
+        run: |
+          ctest -V -R unit
+
+      - name: Run Integration Tests
+        run: |
+          ctest -V -R integration

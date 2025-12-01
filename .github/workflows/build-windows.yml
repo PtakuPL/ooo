@@ -17,7 +17,7 @@ jobs:
     runs-on: windows-latest
     defaults:
       run:
-        working-directory: Tibia/silnik/canary_test/testyy
+        working-directory: testyy
 
     env:
       VCPKG_DEFAULT_TRIPLET: x64-windows-static
@@ -33,6 +33,12 @@ jobs:
           fetch-depth: 0
           submodules: false   # nie używamy submodułu vcpkg/
 
+      - name: Remove nested git directories (upstream mirrors)
+        shell: bash
+        run: |
+          rm -rf oryginall/canary-serwer/.git || true
+          rm -rf oryginall/otclient/.git || true
+
       - name: Setup MSVC (VS 2022, x64)
         uses: ilammy/msvc-dev-cmd@v1
         with:
@@ -41,21 +47,42 @@ jobs:
       - name: Install CMake + Ninja
         uses: lukka/get-cmake@latest
 
-      # run-vcpkg: brak vcpkgDirectory, pin na pełny SHA, jeden manifest w root
-      - name: Setup vcpkg (pin + manifest)
+      - name: Resolve vcpkg commit (builtin-baseline or fallback)
+        id: vcpkg-commit
+        shell: bash
+        run: |
+          fallback=5b1214315250939257ef5d62ecdcbca18cf4fb1c
+          commit=""
+          if [[ -f "testyy/vcpkg.json" ]]; then
+            commit=$(python3 <<'PY'
+import json,sys
+try:
+  with open('testyy/vcpkg.json') as f:
+    data = json.load(f)
+  print(data.get('builtin-baseline', ''))
+except Exception:
+  print('')
+PY
+)
+          fi
+          if [[ $commit =~ ^[0-9a-f]{40}$ ]]; then
+            echo "vcpkgGitCommitId=$commit" >> "$GITHUB_OUTPUT"
+            echo "Using builtin-baseline $commit"
+          else
+            echo "vcpkgGitCommitId=$fallback" >> "$GITHUB_OUTPUT"
+            echo "Using fallback commit $fallback"
+          fi
+
+      - name: Setup vcpkg (manifest install)
         uses: lukka/run-vcpkg@v11
         with:
           vcpkgGitURL: https://github.com/microsoft/vcpkg.git
-          vcpkgGitCommitId: 5b1214315250939257ef5d62ecdcbca18cf4fb1c
+          vcpkgGitCommitId: ${{ steps.vcpkg-commit.outputs.vcpkgGitCommitId }}
           runVcpkgInstall: true
-          vcpkgJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg.json'
-          vcpkgConfigurationJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg-configuration.json'
+          vcpkgJsonGlob: 'testyy/vcpkg.json'
+          vcpkgConfigurationJsonGlob: 'testyy/vcpkg-configuration.json'
           vcpkgJsonIgnores: "['**/vcpkg/**','**/browser/overlay-ports/**']"
-          doNotUpdateVcpkg: false
           doNotCache: false
-          useShell: true
-          runVcpkgFormatString: "[`install`, `--recurse`, `--clean-after-build`, `--x-install-root`, `$[env.VCPKG_INSTALLED_DIR]`, `--triplet`, `$[env.VCPKG_DEFAULT_TRIPLET]`]"
-          logCollectionRegExps: "\s*\"(.+CMakeOutput\.log)\"\.\s*;\s*\"(.+CMakeError\.log)\"\.\s*;\s*(.+out\.log)\s*;\s+(.+err\.log)\s*;\s*(.+vcpkg.+\.log)\s*"
 
       - name: Configure (CMake + vcpkg toolchain, VS generator)
         shell: pwsh

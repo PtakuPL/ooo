@@ -18,7 +18,7 @@ jobs:
     runs-on: windows-2022
     defaults:
       run:
-        working-directory: Tibia/silnik/canary_test/testyy
+        working-directory: testyy
     strategy:
       matrix:
         buildtype: [Debug]
@@ -26,6 +26,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Remove nested git directories (upstream mirrors)
+      shell: bash
+      run: |
+        rm -rf oryginall/canary-serwer/.git || true
+        rm -rf oryginall/otclient/.git || true
     - uses: microsoft/setup-msbuild@v1.1
 
     - name: Get vcpkg commit ID

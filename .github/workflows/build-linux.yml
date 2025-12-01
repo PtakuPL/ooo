@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: Tibia/silnik/canary_test/testyy
+        working-directory: testyy
 
     env:
       VCPKG_DEFAULT_TRIPLET: x64-linux
@@ -31,6 +31,11 @@ jobs:
           fetch-depth: 0
           submodules: false
 
+      - name: Remove nested git directories (upstream mirrors)
+        run: |
+          rm -rf oryginall/canary-serwer/.git || true
+          rm -rf oryginall/otclient/.git || true
+
       - name: Install system dependencies
         run: |
           sudo apt-get update
@@ -44,11 +49,21 @@ jobs:
       - name: Resolve vcpkg commit (builtin-baseline or fallback)
         id: vcpkg-commit
         shell: bash
+        working-directory: testyy
         run: |
           fallback=5b1214315250939257ef5d62ecdcbca18cf4fb1c
           commit=""
           if [[ -f "vcpkg.json" ]]; then
-            commit=$(python3 -c "import json; data=json.load(open('vcpkg.json')); print(data.get('builtin-baseline', ''))")
+            commit=$(python3 <<'PY'
+import json
+try:
+  with open('vcpkg.json') as f:
+    data = json.load(f)
+  print(data.get('builtin-baseline', ''))
+except Exception:
+  print('')
+PY
+)
           fi
           if [[ $commit =~ ^[0-9a-f]{40}$ ]]; then
             echo "vcpkgGitCommitId=$commit" >> "$GITHUB_OUTPUT"
@@ -67,8 +82,8 @@ jobs:
           vcpkgGitURL: https://github.com/microsoft/vcpkg.git
           vcpkgGitCommitId: ${{ steps.vcpkg-commit.outputs.vcpkgGitCommitId }}
           runVcpkgInstall: true
-          vcpkgJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg.json'
-          vcpkgConfigurationJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg-configuration.json'
+          vcpkgJsonGlob: 'testyy/vcpkg.json'
+          vcpkgConfigurationJsonGlob: 'testyy/vcpkg-configuration.json'
           doNotCache: false
 
       - name: Configure (CMake + Ninja)

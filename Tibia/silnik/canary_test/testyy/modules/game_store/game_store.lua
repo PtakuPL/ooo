@@ -835,7 +835,7 @@ function getCoinsWebsite()
     if GameStore.website.WEBSITE_GETCOINS ~= "" then
         g_platform.openUrl(GameStore.website.WEBSITE_GETCOINS)
     else
-        sendMessageBox("Error", "No data for store URL.")
+        sendMessageBox(tr("Error"), tr("No data for store URL."))
     end
 end
 -- /*=============================================

@@ -273,7 +273,7 @@ function onPreyRerollPrice(price)
         for j, state in pairs({panel.active, panel.inactive}) do
             local price = state.reroll.price.text
             local progressBar = state.reroll.button.time
-            if progressBar:getText() ~= 'Free' then
+            if progressBar:getText() ~= tr('Free') then
                 price:setText(comma_value(rerollPrice))
             else
                 price:setText('0')
@@ -298,7 +298,7 @@ function setTimeUntilFreeReroll(slot, timeUntilFreeReroll) -- minutes
         if timeUntilFreeReroll > 0 then
             price:setText(comma_value(rerollPrice))
         else
-            price:setText('Free')
+            price:setText(tr('Free'))
         end
     end
 end

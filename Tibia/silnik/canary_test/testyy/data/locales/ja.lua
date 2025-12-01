@@ -316,6 +316,10 @@ locale = {
     ["Back"] = "戻る", -- Modoru
     ["History"] = "履歴", -- Rireki
     
+    -- Outfit / 衣装
+    ["New Preset"] = "新しいプリセット", -- Atarashii purisetto
+    ["Outfit - Default"] = "衣装 - デフォルト", -- Ishou - deforuto
+    
     -- Misc / その他
     ["Server"] = "サーバー", -- Saabaa
     ["Port"] = "ポート", -- Pooto

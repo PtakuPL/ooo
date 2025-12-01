@@ -316,6 +316,10 @@ locale = {
     ["Back"] = "Назад",
     ["History"] = "История",
     
+    -- Outfit
+    ["New Preset"] = "Новый пресет",
+    ["Outfit - Default"] = "Костюм - по умолчанию",
+    
     -- Misc
     ["Server"] = "Сервер",
     ["Port"] = "Порт",

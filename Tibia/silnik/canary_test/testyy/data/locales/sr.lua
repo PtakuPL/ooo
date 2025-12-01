@@ -316,6 +316,10 @@ locale = {
     ["Back"] = "Nazad",
     ["History"] = "Istorija",
     
+    -- Outfit
+    ["New Preset"] = "Novi preset",
+    ["Outfit - Default"] = "Odelo - Podrazumevano",
+    
     -- Misc
     ["Server"] = "Server",
     ["Port"] = "Port",

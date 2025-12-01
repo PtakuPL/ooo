@@ -316,6 +316,10 @@ locale = {
     ["Back"] = "뒤로", -- Dwiro
     ["History"] = "기록", -- Girok
     
+    -- Outfit / 의상
+    ["New Preset"] = "새 프리셋", -- Sae peuliset
+    ["Outfit - Default"] = "의상 - 기본값", -- Uisang - gibonkaps
+    
     -- Misc / 기타
     ["Server"] = "서버", -- Seobeo
     ["Port"] = "포트", -- Poteu

@@ -315,6 +315,10 @@ locale = {
     ["Back"] = "Înapoi",
     ["History"] = "Istoric",
     
+    -- Outfit
+    ["New Preset"] = "Preset nou",
+    ["Outfit - Default"] = "Costum - Implicit",
+    
     -- Misc
     ["Server"] = "Server",
     ["Port"] = "Port",

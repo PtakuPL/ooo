@@ -528,7 +528,7 @@ function rewardWallController:onClickDisplayWindowsPickRewardWindow(event)
             windowsPickWindow:getChildById('capacity'):setText(tr("Free capacity") .. ": " ..
                                                                    g_game:getLocalPlayer():getFreeCapacity() .. " oz")
 
-            local text = string.format("You have selected [color=#D33C3C]0[/color] of %d reward items", itemsToSelect)
+            local text = string.format(tr("You have selected [color=#D33C3C]0[/color] of %d reward items"), itemsToSelect)
             windowsPickWindow:getChildById('rewardLabel'):parseColoredText(text, "#c0c0c0")
 
             for i, item in pairs(event.target.rewardItem) do

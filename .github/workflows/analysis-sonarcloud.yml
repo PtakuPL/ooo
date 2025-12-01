@@ -21,6 +21,9 @@ jobs:
   sonarcloud:
     name: SonarCloud
     runs-on: ubuntu-22.04
+    defaults:
+      run:
+        working-directory: Tibia/silnik/canary_test/testyy
 
     steps:
       - name: Checkout repository
@@ -56,7 +59,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: $HOME/.ccache
-          key: ccache-${{ runner.os }}-${{ hashFiles('CMakeLists.txt', 'vcpkg.json', 'src/**/*.cpp', 'src/**/*.h') }}
+          key: ccache-${{ runner.os }}-${{ hashFiles('Tibia/silnik/canary_test/testyy/CMakeLists.txt', 'Tibia/silnik/canary_test/testyy/vcpkg.json', 'Tibia/silnik/canary_test/testyy/src/**/*.cpp', 'Tibia/silnik/canary_test/testyy/src/**/*.h') }}
           restore-keys: |
             ccache-${{ runner.os }}-
 
@@ -64,7 +67,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: $HOME/.cfamily
-          key: sonar-cfamily-${{ runner.os }}-${{ hashFiles('CMakeLists.txt', 'vcpkg.json', 'src/**/*.cpp', 'src/**/*.h') }}
+          key: sonar-cfamily-${{ runner.os }}-${{ hashFiles('Tibia/silnik/canary_test/testyy/CMakeLists.txt', 'Tibia/silnik/canary_test/testyy/vcpkg.json', 'Tibia/silnik/canary_test/testyy/src/**/*.cpp', 'Tibia/silnik/canary_test/testyy/src/**/*.h') }}
           restore-keys: |
             sonar-cfamily-${{ runner.os }}-
 
@@ -115,8 +118,8 @@ PY
         with:
           vcpkgGitCommitId: ${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}
           runVcpkgInstall: true
-          vcpkgJsonGlob: './vcpkg.json'
-          vcpkgConfigurationJsonGlob: './vcpkg-configuration.json'
+          vcpkgJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg.json'
+          vcpkgConfigurationJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg-configuration.json'
           vcpkgJsonIgnores: "['**/vcpkg/**', '**/browser/overlay-ports/**']"
 
       - name: vcpkg manifest validation (preflight)

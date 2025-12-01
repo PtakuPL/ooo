@@ -17,7 +17,7 @@ jobs:
     runs-on: windows-latest
     defaults:
       run:
-        working-directory: testyy
+        working-directory: Tibia/silnik/canary_test/testyy
 
     env:
       VCPKG_DEFAULT_TRIPLET: x64-windows-static
@@ -53,11 +53,11 @@ jobs:
         run: |
           fallback=5b1214315250939257ef5d62ecdcbca18cf4fb1c
           commit=""
-          if [[ -f "testyy/vcpkg.json" ]]; then
+          if [[ -f "Tibia/silnik/canary_test/testyy/vcpkg.json" ]]; then
             commit=$(python3 <<'PY'
 import json,sys
 try:
-  with open('testyy/vcpkg.json') as f:
+  with open('Tibia/silnik/canary_test/testyy/vcpkg.json') as f:
     data = json.load(f)
   print(data.get('builtin-baseline', ''))
 except Exception:
@@ -79,8 +79,8 @@ PY
           vcpkgGitURL: https://github.com/microsoft/vcpkg.git
           vcpkgGitCommitId: ${{ steps.vcpkg-commit.outputs.vcpkgGitCommitId }}
           runVcpkgInstall: true
-          vcpkgJsonGlob: 'testyy/vcpkg.json'
-          vcpkgConfigurationJsonGlob: 'testyy/vcpkg-configuration.json'
+          vcpkgJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg.json'
+          vcpkgConfigurationJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg-configuration.json'
           vcpkgJsonIgnores: "['**/vcpkg/**','**/browser/overlay-ports/**']"
           doNotCache: false
 

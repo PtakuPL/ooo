@@ -5,12 +5,12 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
-      - 'testyy/src/**'
-      - 'testyy/android/**'
+      - 'Tibia/silnik/canary_test/testyy/src/**'
+      - 'Tibia/silnik/canary_test/testyy/android/**'
   push:
     paths:
-      - 'testyy/src/**'
-      - 'testyy/android/**'
+      - 'Tibia/silnik/canary_test/testyy/src/**'
+      - 'Tibia/silnik/canary_test/testyy/android/**'
     branches:
       - master
 
@@ -34,7 +34,7 @@ jobs:
     timeout-minutes: 60
     defaults:
       run:
-        working-directory: testyy
+        working-directory: Tibia/silnik/canary_test/testyy
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -99,5 +99,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: otclient-android-armv7-${{ github.sha }}
-          path: testyy/android/otclientv8/ARM/Release/otclientv8_armv7a.apk
+          path: Tibia/silnik/canary_test/testyy/android/otclientv8/ARM/Release/otclientv8_armv7a.apk
           if-no-files-found: error

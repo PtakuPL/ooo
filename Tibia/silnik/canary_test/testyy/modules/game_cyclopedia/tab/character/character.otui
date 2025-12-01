@@ -1324,7 +1324,7 @@ UIWidget
       CheckBox
         id: inventory
         width: 85
-        text: Inventory
+        !text: tr("Inventory")
         color: #C0C0C0
         text-offset: 15 0
         anchors.top: parent.top
@@ -1335,7 +1335,7 @@ UIWidget
       CheckBox
         id: depot
         width: 85
-        text: Depot
+        !text: tr("Depot")
         color: #C0C0C0
         text-offset: 15 0
         anchors.top: inventory.top
@@ -1345,7 +1345,7 @@ UIWidget
       CheckBox
         id: stash
         width: 100
-        text: Supply Stash
+        !text: tr("Supply Stash")
         color: #C0C0C0
         text-offset: 15 0
         anchors.top: depot.bottom
@@ -1355,7 +1355,7 @@ UIWidget
       CheckBox
         id: inbox
         width: 100
-        text: Inbox
+        !text: tr("Inbox")
         color: #C0C0C0
         text-offset: 15 0
         anchors.top: depot.top
@@ -1365,7 +1365,7 @@ UIWidget
       CheckBox
         id: store
         width: 100
-        text: Store Inbox
+        !text: tr("Store Inbox")
         color: #C0C0C0
         text-offset: 15 0
         anchors.top: inbox.bottom
@@ -1432,7 +1432,7 @@ UIWidget
       RoundCheckBox
         id: outfits
         width: 85
-        text: Outfits
+        !text: tr("Outfits")
         color: #C0C0C0
         text-offset: 15 0
         anchors.verticalCenter: parent.verticalCenter
@@ -1442,7 +1442,7 @@ UIWidget
       RoundCheckBox
         id: mounts
         width: 85
-        text: Mounts
+        !text: tr("Mounts")
         color: #C0C0C0
         text-offset: 15 0
         margin-bottom: 3
@@ -1452,7 +1452,7 @@ UIWidget
       RoundCheckBox
         id: familiars
         width: 85
-        text: Familiars
+        !text: tr("Familiars")
         color: #C0C0C0
         text-offset: 15 0
         anchors.verticalCenter: parent.verticalCenter

@@ -51,7 +51,7 @@ UIWidget
     height: 32
   
     Label
-      !text: 'Floor View Mode:'
+      !text: tr('Floor View Mode') .. ':'
       anchors.left: parent.left
       margin-left: 18
       color: #c0c0c0ff
@@ -98,7 +98,7 @@ UIWidget
   
     OptionCheckBox
       id: floatingEffect
-      !text: 'Draw Floating Effects'
+      !text: tr('Draw Floating Effects')
       
   SmallReversedQtPanel
     anchors.left: parent.left

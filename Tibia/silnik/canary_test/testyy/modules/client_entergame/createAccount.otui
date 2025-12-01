@@ -54,7 +54,7 @@ PanelCreateYourAccount < Panel
 MainWindow
   id: mainWindow
   size: 513 390
-  text: "Start Your Journey"
+  !text: tr("Start Your Journey")
   @onEscape: destroyCreateAccount()
 
   Panel
@@ -100,7 +100,7 @@ MainWindow
     MiniPanel
       id: createYourAccount
       size: 712 123
-      text: "Create Your Account"
+      !text: tr("Create Your Account")
       anchors.top: parent.top
       anchors.left: parent.left
       anchors.right: parent.right
@@ -152,7 +152,7 @@ MainWindow
           spacing: 2
         QtCheckBox
           id: checkboxPrivacy
-          text: "I agree to the Tibia Service Agreement,\n Tibia Rules and Tibia Privacy Policy. "
+          !text: tr("I agree to the Tibia Service Agreement,\n Tibia Rules and Tibia Privacy Policy.")
           width: 273
           margin-left: 50
 
@@ -168,7 +168,7 @@ MainWindow
     MiniPanel
       id: createYourCharacter
       height: 95
-      text: "Create Your Character"
+      !text: tr("Create Your Character")
       margin-top: 5
       anchors.top: prev.bottom
       anchors.left: parent.left
@@ -207,7 +207,7 @@ MainWindow
             image-source: /images/ui/createaccount/icon-no
 
         Button
-          text: "Suggest Name"
+          !text: tr("Suggest Name")
           font: cipsoftFont
           @onClick: onClickSuggestName()
       Panel
@@ -223,7 +223,7 @@ MainWindow
           type: horizontalBox
           spacing:26
         Label
-          text: Character Sex:
+          !text: tr("Character Sex") .. ":"
         RadioBox
           id: Male
           text-horizontal-auto-resize: true
@@ -256,7 +256,7 @@ MainWindow
           type: horizontalBox
           spacing: 35
         Label
-          text: Recommended World:
+          !text: tr("Recommended World") .. ":"
         Label
           id: worldLabel
           margin-left:-25
@@ -270,7 +270,7 @@ MainWindow
           $disabled:
             image-source: /images/ui/createaccount/icon-no
         Button
-          text: "Change World"
+          !text: tr("Change World")
           font: cipsoftFont
           margin-left: -30
           @onClick: toggleMainPanels(true)
@@ -281,7 +281,7 @@ MainWindow
       anchors.left: parent.left
       anchors.right: parent.right
     Button
-      text: "Already Registered"
+      !text: tr("Already Registered")
       size: 115 22
       margin-top: 15
       margin-left: 5
@@ -291,7 +291,7 @@ MainWindow
       @onClick: toggleCreateAccount(true)
     UIButton
       id: buttonStartPlaying
-      text: "Start Playing"
+      !text: tr("Start Playing")
       size: 120 33
       margin-top: 10
       margin-right: 5
@@ -317,7 +317,7 @@ MainWindow
       anchors.left: parent.left
       anchors.right: parent.right
     Label
-      text: "This site is protected by ReCAPTCHA and  the google Privacy Policy and Terms of Services apply."
+      !text: tr("This site is protected by ReCAPTCHA and  the google Privacy Policy and Terms of Services apply.")
       margin-top: 5
       font: cipsoftFont
       anchors.top: prev.bottom
@@ -408,7 +408,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          text: Password Requirements
+          !text: tr("Password Requirements")
           text-offset: 5 5
       Panel
         height: 14
@@ -428,7 +428,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          text: 10 - 29 Characters
+          !text: tr("10 - 29 Characters")
           text-offset: 10 2
 
       Panel
@@ -449,7 +449,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          text: No invalid Character
+          !text: tr("No invalid Character")
           text-offset: 10 2
 
       Panel
@@ -470,7 +470,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          text: At least one lower case letter (a-z)
+          !text: tr("At least one lower case letter (a-z)")
           text-offset: 10 2
       Panel
         height: 14
@@ -490,7 +490,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          text: At least one upper case letter (A-Z)
+          !text: tr("At least one upper case letter (A-Z)")
           text-offset: 10 2
       Panel
         height: 14
@@ -510,7 +510,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          text: At least one number(0-9)
+          !text: tr("At least one number(0-9)")
           text-offset: 10 2
   Panel
     id: mainPanelSelectAGameWorldToPlayOn
@@ -540,7 +540,7 @@ MainWindow
     MiniPanel
       id: panelSelectAGameWorldToPlayOn
       size: 712 215
-      text: "Select a Game World to Play On"
+      !text: tr("Select a Game World to Play On")
       anchors.top: parent.top
       anchors.left: parent.left
       anchors.right: parent.right
@@ -564,7 +564,7 @@ MainWindow
         QtComboBox
           id: comboBoxWorld
         Label
-          text: Pvp Type:
+          !text: tr("Pvp Type") .. ":"
         QtComboBox
           id: comboBoxPvp
 
@@ -587,7 +587,7 @@ MainWindow
         pixels-scroll: true
       MiniPanel
         id: worldInfo
-        text: World Name
+        !text: tr("Information")
         background-color: #404040
         anchors.top: panelSelectworldAndPvp.bottom
         anchors.left: textListAllWorlds.right
@@ -595,7 +595,7 @@ MainWindow
         anchors.bottom: parent.bottom
         margin-left: 5
         margin-top: 5
-        text: Information
+        !text: tr("Information")
         layout: verticalBox
 
         Panel
@@ -605,7 +605,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            text: Player Online:
+            !text: tr("Player Online") .. ":"
 
           Label
             id: PlayersOnline
@@ -620,7 +620,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            text: PvP Type:
+            !text: tr("PvP Type") .. ":"
 
           Label
             id: PvPType
@@ -635,7 +635,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            text: World Locations:
+            !text: tr("World Locations") .. ":"
 
           Label
             id: Region
@@ -650,7 +650,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            text: Creation Date
+            !text: tr("Creation Date")
 
           Label
             id: CreationDate
@@ -665,7 +665,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            text: BattleEye Status:
+            !text: tr("BattleEye Status") .. ":"
 
           Label
             id: BattlEyeActivationTimestamp
@@ -680,7 +680,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            text: Premium Only:
+            !text: tr("Premium Only") .. ":"
 
           Label
             id: PremiumOnly
@@ -695,7 +695,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            text: Transfer Type:
+            !text: tr("Transfer Type") .. ":"
 
           Label
             id: TransferType
@@ -710,7 +710,7 @@ MainWindow
       anchors.right: parent.right
 
     Button
-      text: "back"
+      !text: tr("Back")
       size: 115 22
       margin-top: 10
       margin-left: 5
@@ -720,7 +720,7 @@ MainWindow
       @onClick: toggleMainPanels(false)
 
     Button
-      text: "Ok"
+      !text: tr("Ok")
       size: 115 22
       margin-top: 10
       margin-left: 5
@@ -730,7 +730,7 @@ MainWindow
       @onClick: onClickOkChangeWorld()
 
     Button
-      text: "Reset"
+      !text: tr("Reset")
       size: 115 22
       margin-top: 10
       margin-right: 5

@@ -773,7 +773,7 @@ function Cyclopedia.actionCharmButton(widget)
     local type = widget:getText()
     local data = widget:getParent().data
 
-    if type == "Unlock" then
+    if type == tr("Unlock") then
         local function yesCallback()
             if isModernUI then
                 g_game.BuyCharmRune(0, data.id, 0)
@@ -849,7 +849,7 @@ function Cyclopedia.actionCharmButton(widget)
         end
     end
 
-    if type == "Remove" then
+    if type == tr("Remove") then
         local function yesCallback()
             g_game.BuyCharmRune(data.id, 2)
             if confirmWindow then

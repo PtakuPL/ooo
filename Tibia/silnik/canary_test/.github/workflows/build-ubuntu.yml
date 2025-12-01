@@ -33,6 +33,9 @@ jobs:
     if: ${{ github.event_name == 'push' || !github.event.pull_request.draft }}
     name: ${{ matrix.os }}-${{ matrix.buildtype }}
     runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: testyy
 
     concurrency:
       group: otclient-${{ github.workflow }}-${{ github.ref }}-${{ matrix.buildtype }}

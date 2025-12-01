@@ -13,6 +13,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: testyy
 
     env:
       VCPKG_DEFAULT_TRIPLET: x64-linux
@@ -41,6 +44,7 @@ jobs:
       - name: Resolve vcpkg commit (builtin-baseline or fallback)
         id: vcpkg-commit
         shell: bash
+        working-directory: testyy
         run: |
           fallback=5b1214315250939257ef5d62ecdcbca18cf4fb1c
           commit=""
@@ -74,8 +78,8 @@ jobs:
           vcpkgGitURL: https://github.com/microsoft/vcpkg.git
           vcpkgGitCommitId: ${{ steps.vcpkg-commit.outputs.vcpkgGitCommitId }}
           runVcpkgInstall: true
-          vcpkgJsonGlob: 'vcpkg.json'
-          vcpkgConfigurationJsonGlob: 'vcpkg-configuration.json'
+          vcpkgJsonGlob: 'testyy/vcpkg.json'
+          vcpkgConfigurationJsonGlob: 'testyy/vcpkg-configuration.json'
           doNotCache: false
 
       - name: Configure (CMake + Ninja)

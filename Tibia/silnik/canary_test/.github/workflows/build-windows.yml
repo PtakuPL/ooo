@@ -15,6 +15,9 @@ concurrency:
 jobs:
   build:
     runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: testyy
 
     env:
       VCPKG_DEFAULT_TRIPLET: x64-windows-static
@@ -45,8 +48,8 @@ jobs:
           vcpkgGitURL: https://github.com/microsoft/vcpkg.git
           vcpkgGitCommitId: 5b1214315250939257ef5d62ecdcbca18cf4fb1c
           runVcpkgInstall: true
-          vcpkgJsonGlob: 'vcpkg.json'
-          vcpkgConfigurationJsonGlob: 'vcpkg-configuration.json'
+          vcpkgJsonGlob: 'testyy/vcpkg.json'
+          vcpkgConfigurationJsonGlob: 'testyy/vcpkg-configuration.json'
           vcpkgJsonIgnores: "['**/vcpkg/**','**/browser/overlay-ports/**']"
           doNotUpdateVcpkg: false
           doNotCache: false

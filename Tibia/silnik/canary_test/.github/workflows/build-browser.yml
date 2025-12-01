@@ -27,6 +27,9 @@ jobs:
   build:
     name: ${{ matrix.buildtype }}
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: testyy
 
     concurrency:
       group: otclient-emscripten-${{ github.workflow }}-${{ github.ref }}-${{ matrix.buildtype }}

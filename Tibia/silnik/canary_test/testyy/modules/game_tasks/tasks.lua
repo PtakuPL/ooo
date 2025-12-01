@@ -12,8 +12,8 @@ function init()
     window = g_ui.displayUI('tasks')
     window:setVisible(false)
 
-    Keybind.new('Windows', 'show/hide Tasks Windows', 'Ctrl+A', '')
-    Keybind.bind('Windows', 'show/hide Tasks Windows', {
+    Keybind.new(tr('Windows'), tr('show/hide Tasks Windows'), 'Ctrl+A', '')
+    Keybind.bind(tr('Windows'), tr('show/hide Tasks Windows'), {
       {
         type = KEY_DOWN,
         callback = toggleWindow,

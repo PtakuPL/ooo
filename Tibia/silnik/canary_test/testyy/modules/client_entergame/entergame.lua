@@ -127,8 +127,8 @@ end
 -- public functions
 function EnterGame.init()
     enterGame = g_ui.displayUI('entergame')
-    Keybind.new("Misc.", "Change Character", "Ctrl+G", "")
-    Keybind.bind("Misc.", "Change Character", {
+    Keybind.new(tr("Misc."), tr("Change Character"), "Ctrl+G", "")
+    Keybind.bind(tr("Misc."), tr("Change Character"), {
       {
         type = KEY_DOWN,
         callback = EnterGame.openWindow,

@@ -130,8 +130,8 @@ function init()
 )
 
 
-    Keybind.new("UI", "Toggle Top Menu", "Ctrl+Shift+T", "")
-    Keybind.bind("UI", "Toggle Top Menu", {
+    Keybind.new(tr("UI"), tr("Toggle Top Menu"), "Ctrl+Shift+T", "")
+    Keybind.bind(tr("UI"), tr("Toggle Top Menu"), {
       {
         type = KEY_DOWN,
         callback = toggle,

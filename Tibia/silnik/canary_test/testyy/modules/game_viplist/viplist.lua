@@ -20,8 +20,8 @@ local globalSettings = {
 controllerVip = Controller:new()
 function controllerVip:onInit()
 
-    Keybind.new("Windows", "Show/hide VIP list", "Ctrl+P", "")
-    Keybind.bind("Windows", "Show/hide VIP list", {
+    Keybind.new(tr("Windows"), tr("Show/hide VIP list"), "Ctrl+P", "")
+    Keybind.bind(tr("Windows"), tr("Show/hide VIP list"), {
       {
         type = KEY_DOWN,
         callback = toggle,

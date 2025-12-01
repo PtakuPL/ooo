@@ -126,7 +126,7 @@ PY
         run: |
           echo "vcpkg: printing installed ports and validating manifest..."
           $VCPKG_ROOT/vcpkg search || echo "vcpkg search failed (ignored)"
-          $VCPKG_ROOT/vcpkg install --manifest || (echo "vcpkg manifest install failed; please check ports in vcpkg.json"; exit 1)
+          $VCPKG_ROOT/vcpkg install || (echo "vcpkg manifest install failed; please check ports in vcpkg.json"; exit 1)
 
       - name: Install sonar-scanner
         uses: SonarSource/sonarcloud-github-c-cpp@v1

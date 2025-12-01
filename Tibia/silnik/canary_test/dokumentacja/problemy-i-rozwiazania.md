@@ -53,3 +53,29 @@ Zbiór najważniejszych problemów napotkanych podczas rozwoju projektu oraz spo
 - ewentualne zmiany w API/systemie budowania na platformach CI.
 
 Te punkty można rozwijać w miarę pojawiania się kolejnych doświadczeń.
+
+## 6. GitHub Actions - Duplikaty i błędy składni YAML w workflow (01.12.2025)
+
+**Problem:**
+- Pliki workflow zawierały duplikaty sekcji `name:` i innych kluczy YAML
+- Python commands używały niepoprawnego heredoc syntax, który był zbyt długi i ucinany
+- CMake 4.2.0 w GitHub Actions wymaga minimum CMake 3.5, a niektóre porty vcpkg miały starsze wersje
+- Błędy kompilacji związane z `CMake Error: Compatibility with CMake < 3.5 has been removed`
+- Ścieżki w cache używały `$HOME` zamiast `~`, co mogło powodować problemy
+
+**Rozwiązanie:**
+- Usunięto wszystkie duplikaty sekcji w plikach:
+  - `.github/workflows/build-linux.yml`
+  - `.github/workflows/build-windows.yml`
+  - `.github/workflows/analysis-sonarcloud.yml`
+- Zamieniono Python heredoc na prostsze wywołanie: `python3 -c "import json; print(json.load(open('vcpkg.json')).get('builtin-baseline',''))"`
+- Dodano wymuszenie CMake 3.27.0 w akcji `lukka/get-cmake@latest` poprzez parametr `cmakeVersion: '~3.27.0'`
+- Poprawiono ścieżki cache z `$HOME/.ccache` na `~/.ccache`
+- Ujednolicono format ścieżek w artifact upload (dodano pełne ścieżki z working-directory)
+- Commit: `979c22988` - "Fix GitHub Actions workflows: remove duplicates, fix Python commands, add CMake 3.27 constraint"
+
+**Status:** Zmiany wypushowane na branch master, oczekujemy na wynik kompilacji w GitHub Actions.
+
+**Dodatkowe notatki:**
+- Błędy kompilacji udokumentowane w `testyy/bledykompilacji.md`
+- Główny problem dotyczył pakietu `brotli` w vcpkg, który wymagał CMake 3.5+

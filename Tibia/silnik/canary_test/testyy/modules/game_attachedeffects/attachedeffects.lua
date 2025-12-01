@@ -72,7 +72,7 @@ function getName(id)
     if type(id) == "number" then
         return AttachedEffectManager.get(id).name
     else
-        return "None"
+        return tr("None")
     end
 end
 
@@ -80,6 +80,6 @@ function thingId(id)
     if type(id) == "number" then
         return AttachedEffectManager.get(id).thingId
     else
-        return "None"
+        return tr("None")
     end
 end

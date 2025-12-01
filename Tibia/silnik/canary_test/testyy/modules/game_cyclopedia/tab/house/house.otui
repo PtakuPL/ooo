@@ -790,7 +790,7 @@ UIWidget
       anchors.left: prev.right
       margin-left: 5
       padding-top: 1
-      placeholder: Name of new owner
+      !placeholder: tr('Name of new owner')
       placeholder-color: #6E706F
     UIWidget
       id: errorName

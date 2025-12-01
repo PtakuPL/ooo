@@ -1102,7 +1102,7 @@ UIWidget
       RoundCheckBox
         id: all
         width: 85
-        text: All
+        !text: tr("All")
         color: #C0C0C0
         text-offset: 15 0
         anchors.top: parent.top
@@ -1113,7 +1113,7 @@ UIWidget
       RoundCheckBox
         id: locked
         width: 85
-        text: Locked
+        !text: tr("Locked")
         color: #C0C0C0
         text-offset: 15 0
         anchors.top: all.bottom
@@ -1123,7 +1123,7 @@ UIWidget
       RoundCheckBox
         id: accomplished
         width: 100
-        text: Accomplished
+        !text: tr("Accomplished")
         color: #C0C0C0
         text-offset: 15 0
         anchors.top: locked.bottom

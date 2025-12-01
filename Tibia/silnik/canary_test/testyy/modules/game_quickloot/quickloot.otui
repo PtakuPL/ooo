@@ -196,7 +196,7 @@ Window
       margin-top: 5
       anchors.top: label.bottom
       anchors.left: parent.left
-      text: Skipped Loot
+      !text: tr("Skipped Loot")
       color: #C0C0C0
       width: 84
       checked: true
@@ -208,7 +208,7 @@ Window
       margin-top: 5
       anchors.top: skipped.bottom
       anchors.left: parent.left
-      text: Accepted Loot
+      !text: tr("Accepted Loot")
       color: #C0C0C0
       width: 84
       @onClick: QuickLoot.filter(self, self:isChecked())

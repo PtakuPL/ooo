@@ -39,14 +39,14 @@ MainWindow
     anchors.left: parent.left
     anchors.top: rewardList.bottom
     margin-top: 10
-    text: Free capacity: 737.60 oz
+    text: tr("Free capacity: 737.60 oz")
 
   Label
     id: weight
     anchors.right: parent.right
     anchors.top: rewardList.bottom
     margin-top: 10
-    text: Total weight: 0.00 oz
+    text: tr("Total weight: 0.00 oz")
 
   HorizontalSeparator
     id: separator
@@ -61,7 +61,7 @@ MainWindow
     anchors.top: prev.bottom
     size: 45 20
     margin-top: 5
-    text: Close
+    text: tr("Close")
     font: cipsoftFont
     @onClick: modules.game_rewardwall.destroyPickReward(true)
 
@@ -72,7 +72,7 @@ MainWindow
     size: 60 20
     margin-top: 5
     margin-right: 10
-    text: Ok
+    text: tr("Ok")
     color: #FFFFFF
     font: cipsoftFont
     enabled: false

@@ -589,7 +589,7 @@ function clear()
     consoleTabBar:removeTab(serverTab)
     serverTab = nil
 
-    local npcTab = consoleTabBar:getTab('NPCs')
+    local npcTab = consoleTabBar:getTab(tr('NPCs'))
     if npcTab then
         consoleTabBar:removeTab(npcTab)
         npcTab = nil
@@ -715,7 +715,7 @@ function removeTab(tab)
             end
         end
         g_game.leaveChannel(tab.channelId)
-    elseif tab:getText() == 'NPCs' then
+    elseif tab:getText() == tr('NPCs') then
         g_game.closeNpcChannel()
     end
 
@@ -768,7 +768,7 @@ end
 function addPrivateText(text, speaktype, name, isPrivateCommand, creatureName)
     local focus = false
     if speaktype.npcChat then
-        name = 'NPCs'
+        name = tr('NPCs')
         focus = true
     end
 
@@ -2087,7 +2087,7 @@ function online()
     serverTab = addTab(tr('Server Log'), false)
 
     if g_game.getClientVersion() >= 820 then
-        local tab = addTab('NPCs', false)
+        local tab = addTab(tr('NPCs'), false)
         tab.npcChat = true
     end
     if g_game.getClientVersion() < 862 then

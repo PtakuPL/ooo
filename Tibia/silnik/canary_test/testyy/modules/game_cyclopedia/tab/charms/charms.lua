@@ -812,7 +812,7 @@ function Cyclopedia.actionCharmButton(widget)
                 }, yesCallback, noCallback)
         end
     end
-    if type == "Select" or type == "Select Creature" then
+    if type == tr("Select") or type == tr("Select Creature") then
         local function yesCallback()
             if isModernUI then
                 g_game.BuyCharmRune(1, data.id, Cyclopedia.Charms.SelectedCreature)
@@ -944,7 +944,7 @@ function Cyclopedia.actionSelectCharmButton(widget)
     local confirmWindow
     local type = widget:getText()
     local data = UI.InformationBase.data
-    if type == "Select" or type == "Select Creature" then
+    if type == tr("Select") or type == tr("Select Creature") then
         local function yesCallback()
             if isModernUI then
                 g_game.BuyCharmRune(1, data.id, Cyclopedia.Charms.SelectedCreature)

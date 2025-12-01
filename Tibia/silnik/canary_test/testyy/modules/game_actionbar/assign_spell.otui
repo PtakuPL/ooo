@@ -23,7 +23,7 @@ SpellListLabel < Label
     color: #ffffff
 
 MainWindow
-  text: Assign Spell
+  text: tr('Assign Spell')
   size: 280 480
   @onEscape: modules.game_actionbar.closeSpellAssignWindow()
   @onEnter: modules.game_actionbar.spellAssignAccept()
@@ -56,7 +56,7 @@ MainWindow
 
   Label
     id: filterLabel
-    text: Filter
+    text: tr('Filter')
     anchors.left: parent.left
     anchors.top: splitter.bottom
     margin-top: 8
@@ -91,7 +91,7 @@ MainWindow
 
   Label
     id: parameterLabel
-    text: Parameter
+    text: tr('Parameter')
     anchors.left: parent.left
     anchors.bottom: applyButton.top
     margin-bottom: 8
@@ -107,11 +107,11 @@ MainWindow
     id: applyButton
     anchors.bottom: parent.bottom
     anchors.left: parent.left
-    text: Apply
+    text: tr('Apply')
     @onClick: modules.game_actionbar.spellAssignAccept()
   Button
     id: cancelButton
     anchors.bottom: parent.bottom
     anchors.right: parent.right
-    text: Cancel
+    text: tr('Cancel')
     @onClick: modules.game_actionbar.closeSpellAssignWindow()

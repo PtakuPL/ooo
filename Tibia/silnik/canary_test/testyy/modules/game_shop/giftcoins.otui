@@ -17,13 +17,13 @@ MainWindow
     margin-top: 4
     text-wrap: true
     height: 56
-    text: Please select the amount of Tibia Coins you like to gift and enter the name of the character that should receive the Tibia Coins.
+    text: tr('Please select the amount of Tibia Coins you like to gift and enter the name of the character that should receive the Tibia Coins.')
 
   GiftCoinsLabel
     anchors.top: prev.bottom
     anchors.left: parent.left
     margin-top: 10
-    text: Reciepient:
+    text: tr('Recipient:')
 
   TextEdit
     id: recipient
@@ -39,7 +39,7 @@ MainWindow
     margin-top: 10
     text-align: left
     text-horizontal-auto-resize: true
-    text: Transferable Tibia Coins:
+    text: tr('Transferable Tibia Coins:')
 
   UIWidget
     anchors.left: prev.right
@@ -82,7 +82,7 @@ MainWindow
     margin-top: 10
     text-align: left
     text-horizontal-auto-resize: true
-    text: Transferable Task points:
+    text: tr('Transferable Task points:')
 
   UIWidget
     id: taskPointsCoin

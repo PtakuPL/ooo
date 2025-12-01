@@ -419,7 +419,7 @@ MainWindow
   Button
     anchors.top: prev.top
     anchors.left: prev.right
-    text: Get
+    text: tr('Get')
     text-align: left
     text-offset: 16 0
     color: #C0C0C0
@@ -463,7 +463,7 @@ MainWindow
     HistoryHeader
       anchors.left: parent.left
       text-align: center
-      text: Date
+      text: tr('Date')
       size: 131 16
 
     VerticalSeparator
@@ -475,7 +475,7 @@ MainWindow
       anchors.left: prev.right
       margin-left: 1
       text-align: center
-      text: Balance
+      text: tr('Balance')
       size: 90 16
 
     VerticalSeparator
@@ -488,7 +488,7 @@ MainWindow
       anchors.right: parent.right
       margin-left: 1
       text-align: center
-      text: Description
+      text: tr('Description')
       height: 16
 
     FlatPanel
@@ -503,7 +503,7 @@ MainWindow
 
     Button
       id: prevPageButton
-      text: Prev Page
+      text: tr('Prev Page')
       width: 96
       anchors.bottom: parent.bottom
       anchors.left: parent.left
@@ -512,7 +512,7 @@ MainWindow
 
     Button
       id: nextPageButton
-      text: Next Page
+      text: tr('Next Page')
       width: 96
       anchors.bottom: parent.bottom
       anchors.right: parent.right

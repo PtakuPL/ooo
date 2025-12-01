@@ -628,21 +628,21 @@ function rewardWallController:onhoverRewardType(event)
     if rewardType == bundleType.ITEMS then
         rewardTexts = {
             free = string.format(
-                "Reward for Free Accounts:\nPick %d items from the list. Among\nother items it contains: health\npotion, a fire bomb rune, a\nthundestorm rune.",
+                tr("Reward for Free Accounts:\nPick %d items from the list. Among\nother items it contains: health\npotion, a fire bomb rune, a\nthundestorm rune."),
                 freeAmount),
             premium = string.format(
-                "Reward for Premium Accounts:\nPick %d items from the list. Among\nother items it contains: health\npotion, a fire bomb rune, a\nthundestorm rune.",
+                tr("Reward for Premium Accounts:\nPick %d items from the list. Among\nother items it contains: health\npotion, a fire bomb rune, a\nthundestorm rune."),
                 premiumAmount)
         }
     elseif rewardType == bundleType.PREY then
         rewardTexts = {
-            free = string.format("Reward for Free Accounts:\n * %d x Prey Wildcard", freeAmount),
-            premium = string.format("Reward for Premium Accounts:\n * %d x Prey Wildcard", premiumAmount)
+            free = string.format(tr("Reward for Free Accounts:\n * %d x Prey Wildcard"), freeAmount),
+            premium = string.format(tr("Reward for Premium Accounts:\n * %d x Prey Wildcard"), premiumAmount)
         }
     elseif rewardType == bundleType.XPBOOST then
         rewardTexts = {
-            free = string.format("Reward for Free Accounts:\n * %d minutes 50%% XP Boost", freeAmount),
-            premium = string.format("Reward for Premium Accounts:\n * %d minutes 50%% XP Boost", premiumAmount)
+            free = string.format(tr("Reward for Free Accounts:\n * %d minutes 50%% XP Boost"), freeAmount),
+            premium = string.format(tr("Reward for Premium Accounts:\n * %d minutes 50%% XP Boost"), premiumAmount)
         }
     else
         print("WARNING: Unknown rewardType:", rewardType)
@@ -655,9 +655,9 @@ end
 
 function rewardWallController:onhoverStatusReward(event)
     local statusReward = {
-        [STATUS.COLLECTED] = "You have already collected this daily reward.\nThe daily rewards follow a specific cycle where each day you claim it, you get another reward. The cycle repeats after 7 claimed rewards. You will be able to claim this daily reward again as soon as you have reached this postion in the next cycle.",
-        [STATUS.ACTIVE] = "The daily reward can be claimed now.\nIf you claim this reward now, it will cost you one Instant Reward Access.\nGet your daily reward for free by visiting a reward shrine.\nYou did not claim your daily reward in time.\nToo bad, you do not have enough Daily Reward Jokers.",
-        [STATUS.LOCKED] = "This daily reward is still locked.\nFirst collect the previous daily rewards of this cycle."
+        [STATUS.COLLECTED] = tr("You have already collected this daily reward.\nThe daily rewards follow a specific cycle where each day you claim it, you get another reward. The cycle repeats after 7 claimed rewards. You will be able to claim this daily reward again as soon as you have reached this postion in the next cycle."),
+        [STATUS.ACTIVE] = tr("The daily reward can be claimed now.\nIf you claim this reward now, it will cost you one Instant Reward Access.\nGet your daily reward for free by visiting a reward shrine.\nYou did not claim your daily reward in time.\nToo bad, you do not have enough Daily Reward Jokers."),
+        [STATUS.LOCKED] = tr("This daily reward is still locked.\nFirst collect the previous daily rewards of this cycle.")
     }
     if not event.value then
         rewardWallController.ui.infoPanel:setText("")
@@ -715,7 +715,7 @@ function onTextChangeChangeNumber(getPanel)
     local color = alreadyUsed == 0 and "#D33C3C" or "#00FF00"
     windowsPickWindow:getChildById('btnOk'):setEnabled(alreadyUsed > 0)
 
-    local text = string.format("You have selected [color=%s]%d[/color] of %d reward items", color, alreadyUsed,
+    local text = string.format(tr("You have selected [color=%s]%d[/color] of %d reward items"), color, alreadyUsed,
         getPanel.itemsToSelect)
     windowsPickWindow:getChildById('rewardLabel'):parseColoredText(text)
     getPanel:getChildById('weight'):setText(string.format("%.2f oz", actualUsed[itemId] * getPanel.totalWeight))

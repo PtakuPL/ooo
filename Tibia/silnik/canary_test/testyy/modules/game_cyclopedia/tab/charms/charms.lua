@@ -585,10 +585,10 @@ local function setupModernVersionUpgrade(widget, UI_BASE)
 
         UI.InformationBase.verticalPanelUnLockClearChram.PriceBaseCharm.Value:setText(comma_value(pointsValue))
         local tierButtons = {
-            [3] = "Fully Unlocked",
-            [2] = string.format("Upgrade to %d%%", charmEntry.chance[3] or 0),
-            [1] = string.format("Upgrade to %d%%", charmEntry.chance[2] or 0),
-            [0] = "Unlock"
+            [3] = tr("Fully Unlocked"),
+            [2] = string.format(tr("Upgrade to %d%%"), charmEntry.chance[3] or 0),
+            [1] = string.format(tr("Upgrade to %d%%"), charmEntry.chance[2] or 0),
+            [0] = tr("Unlock")
         }
         UI_BASE.UnlockButton:setText(tierButtons[tier])
         if tier >= 0 and tier < 3 then

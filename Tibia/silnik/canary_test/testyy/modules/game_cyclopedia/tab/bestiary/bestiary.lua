@@ -805,12 +805,12 @@ function onAddLootClick(widget, mousePosition, mouseButton)
     menu:setGameMenu(true)
 
     if not quickLoot.lootExists(itemId, lootFilterValue) then
-        menu:addOption("Add to Loot List",
+        menu:addOption(tr("Add to Loot List"),
         function()
             quickLoot.addLootList(itemId, lootFilterValue)
         end)
     else
-        menu:addOption("Remove from Loot List", 
+        menu:addOption(tr("Remove from Loot List"), 
         function() 
             quickLoot.removeLootList(itemId, lootFilterValue)
         end)

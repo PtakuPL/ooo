@@ -488,7 +488,7 @@ end
 function onParseStoreCreateProducts(storeProducts)
     local comboBox = controllerShop.ui.panelItem.comboBoxContainer.showAll
     comboBox:clearOptions()
-    comboBox:addOption("Disable", 0)
+    comboBox:addOption(tr("Disable"), 0)
 
     if #storeProducts.menuFilter > 0 then
         for k, t in pairs(storeProducts.menuFilter) do

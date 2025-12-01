@@ -374,9 +374,9 @@ end
 
 function Cyclopedia.loadCharacterAchievements()
     if not Cyclopedia.Character.Achievements.Loaded then
-        UI.CharacterAchievements.sort:addOption("Alphabetically", 1, true)
-        UI.CharacterAchievements.sort:addOption("By Grade", 2, true)
-        UI.CharacterAchievements.sort:addOption("By Unlock Date", 3, true)
+        UI.CharacterAchievements.sort:addOption(tr("Alphabetically"), 1, true)
+        UI.CharacterAchievements.sort:addOption(tr("By Grade"), 2, true)
+        UI.CharacterAchievements.sort:addOption(tr("By Unlock Date"), 3, true)
         Cyclopedia.achievementFilter(UI.CharacterAchievements.filters.accomplished)
         Cyclopedia.Character.Achievements.Loaded = true
     end

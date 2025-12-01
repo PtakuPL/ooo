@@ -42,7 +42,13 @@ jobs:
               sccache
     steps:
       - name: Checkout repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
+
+      - name: Remove nested git directories (upstream mirrors)
+        shell: bash
+        run: |
+          rm -rf oryginall/canary-serwer/.git || true
+          rm -rf oryginall/otclient/.git || true
 
       - name: CCache
         uses: hendrikmuhs/ccache-action@main

@@ -31,6 +31,11 @@ jobs:
           fetch-depth: 0
           submodules: false
 
+      - name: Remove nested git directories (upstream mirrors)
+        run: |
+          rm -rf oryginall/canary-serwer/.git || true
+          rm -rf oryginall/otclient/.git || true
+
       - name: Install system dependencies
         run: |
           sudo apt-get update

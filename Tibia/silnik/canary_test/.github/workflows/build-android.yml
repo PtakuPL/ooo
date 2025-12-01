@@ -1,0 +1,103 @@
+name: Build - Android
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - 'testyy/src/**'
+      - 'testyy/android/**'
+  push:
+    paths:
+      - 'testyy/src/**'
+      - 'testyy/android/**'
+    branches:
+      - master
+
+env:
+  CMAKE_BUILD_PARALLEL_LEVEL: 4
+  MAKEFLAGS: '-j 4'
+
+jobs:
+  cancel-runs:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.11.0
+        with:
+          access_token: ${{ github.token }}
+
+  android:
+    name: android-apk
+    runs-on: windows-2022
+    timeout-minutes: 60
+    defaults:
+      run:
+        working-directory: testyy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: false
+          fetch-depth: 0
+
+      - name: Remove nested git directories (upstream mirrors)
+        shell: bash
+        run: |
+          rm -rf oryginall/canary-serwer/.git || true
+          rm -rf oryginall/otclient/.git || true
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Ensure 7zip
+        run: choco install -y 7zip
+
+      - name: Download Android build bundle
+        shell: powershell
+        run: |
+          $files = @(
+            @{ Name = 'jdk.zip'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/jdk8u302-b08.zip' },
+            @{ Name = 'ndk.zip'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/android-ndk-r23c-windows.zip' },
+            @{ Name = 'ant.zip'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/apache-ant-1.9.7-bin.zip' },
+            @{ Name = 'android_libs.7z'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/android-libs.7z' },
+            @{ Name = 'build-tools.zip'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/build-tools_r30-windows.zip' },
+            @{ Name = 'create_android_assets.ps1'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/create_android_assets.ps1' }
+          )
+          foreach ($f in $files) { Invoke-WebRequest -Uri $f.Url -OutFile $f.Name }
+
+      - name: Extract bundles
+        shell: powershell
+        run: |
+          New-Item -ItemType Directory -Force -Path C:\Android\android-sdk | Out-Null
+          7z x jdk.zip -aoa -oC:\Android\android-sdk
+          7z x ndk.zip -aoa -oC:\Android\android-sdk
+          7z x ant.zip -aoa -oC:\Android\android-sdk
+          7z x android_libs.7z -aoa -oC:\Android
+          7z x build-tools.zip -aoa -oC:\Android\android-sdk
+
+      - name: Prepare assets (data.zip)
+        shell: powershell
+        run: |
+          powershell -ExecutionPolicy Bypass -File .\create_android_assets.ps1
+
+      - name: Build APK (ARMv7)
+        shell: powershell
+        run: |
+          cd android
+          $env:VS_AndroidHome="C:\Android\android-sdk\build-tools_r30-windows"
+          $env:VS_NdkRoot="C:\Android\android-sdk\android-ndk-r23c"
+          $env:VS_AntHome="C:\Android\android-sdk\apache-ant-1.9.7"
+          $env:VS_JavaHome="C:\Android\android-sdk\jdk8u302-b08"
+          MSBuild.exe /p:Configuration=Release /p:Platform="ARM" /p:BUILD_REVISION=${{ github.run_number }}
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: otclient-android-armv7-${{ github.sha }}
+          path: testyy/android/otclientv8/ARM/Release/otclientv8_armv7a.apk
+          if-no-files-found: error

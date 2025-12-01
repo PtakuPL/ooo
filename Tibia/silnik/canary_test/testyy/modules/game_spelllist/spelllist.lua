@@ -172,8 +172,8 @@ function init()
     if g_game.isOnline() then
         online()
     end
-    Keybind.new("Windows", "Show/hide spell list", "Alt+L", "")
-    Keybind.bind("Windows", "Show/hide spell list", {
+    Keybind.new(tr("Windows"), tr("Show/hide spell list"), "Alt+L", "")
+    Keybind.bind(tr("Windows"), tr("Show/hide spell list"), {
       {
         type = KEY_DOWN,
         callback = toggle,
@@ -195,7 +195,7 @@ function terminate()
     vocationRadioGroup:destroy()
     groupRadioGroup:destroy()
     premiumRadioGroup:destroy()
-    Keybind.delete("Windows", "Show/hide spell list")
+    Keybind.delete(tr("Windows"), tr("Show/hide spell list"))
 end
 
 function initializeSpelllist()

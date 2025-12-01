@@ -108,13 +108,13 @@ local function save()
 end
 
 local sortFunctions = {
-    ["Alphabetically (A-Z)"] = function(a, b)
+    [tr("Alphabetically (A-Z)")] = function(a, b)
         return a:getText() < b:getText()
     end,
-    ["Alphabetically (Z-A)"] = function(a, b)
+    [tr("Alphabetically (Z-A)")] = function(a, b)
         return a:getText() > b:getText()
     end,
-    ["Completed on Top"] = function(a, b)
+    [tr("Completed on Top")] = function(a, b)
         local aCompleted = a.isComplete or false
         local bCompleted = b.isComplete or false
 
@@ -126,7 +126,7 @@ local sortFunctions = {
             return a:getText() < b:getText()
         end
     end,
-    ["Completed on Bottom"] = function(a, b)
+    [tr("Completed on Bottom")] = function(a, b)
         local aCompleted = a.isComplete or false
         local bCompleted = b.isComplete or false
 
@@ -283,7 +283,7 @@ local function setupQuestItemClickHandler(item, isQuestList)
             else
                 self:setImageColor("#ffffff")
                 self:setVisible(false)
-                sortQuestList(UITextList.questLogList, questLogController.currentSortOrder or "Alphabetically (A-Z)")
+                sortQuestList(UITextList.questLogList, questLogController.currentSortOrder or tr("Alphabetically (A-Z)"))
             end
             return true
         end
@@ -450,7 +450,7 @@ local function onQuestLog(questList)
         setupQuestItemClickHandler(itemCat, true)
         categoryColor = categoryColor == COLORS.BASE_1 and COLORS.BASE_2 or COLORS.BASE_1
     end
-    sortQuestList(UITextList.questLogList, "Alphabetically (A-Z)")
+    sortQuestList(UITextList.questLogList, tr("Alphabetically (A-Z)"))
     updateQuestCounter()
 end
 
@@ -642,8 +642,8 @@ function questLogController:onInit()
         '/images/options/button_questlog', function()
             toggle()
         end, false, 1000)
-    Keybind.new("Windows", "Show/hide quest Log", "", "")
-    Keybind.bind("Windows", "Show/hide quest Log", {{
+    Keybind.new(tr("Windows"), tr("Show/hide quest Log"), "", "")
+    Keybind.bind(tr("Windows"), tr("Show/hide quest Log"), {{
         type = KEY_DOWN,
         callback = function()
             show()
@@ -654,7 +654,7 @@ end
 function questLogController:onTerminate()
     questLogButton, trackerMiniWindow, buttonQuestLogTrackerButton = destroyWindows(
         {questLogButton, trackerMiniWindow, buttonQuestLogTrackerButton})
-    Keybind.delete("Windows", "Show/hide quest Log")
+    Keybind.delete(tr("Windows"), tr("Show/hide quest Log"))
 end
 
 function questLogController:onGameStart()

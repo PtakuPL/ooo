@@ -257,10 +257,10 @@ function controller:onTerminate()
     panels = {}
     extraWidgets = {}
     buttons = {}
-    Keybind.delete("UI", "Toggle Fullscreen")
-    Keybind.delete("UI", "Show/hide Creature Names and Bars")
-    Keybind.delete("UI", "Show/hide FPS / lag indicator")
-    Keybind.delete("Sound", "Mute/unmute")
+    Keybind.delete(tr("UI"), tr("Toggle Fullscreen"))
+    Keybind.delete(tr("UI"), tr("Show/hide Creature Names and Bars"))
+    Keybind.delete(tr("UI"), tr("Show/hide FPS / lag indicator"))
+    Keybind.delete(tr("Sound"), tr("Mute/unmute"))
 
     terminate_binds()
 end

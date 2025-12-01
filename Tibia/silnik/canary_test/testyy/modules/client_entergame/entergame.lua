@@ -265,7 +265,7 @@ function EnterGame.firstShow()
 end
 
 function EnterGame.terminate()
-    Keybind.delete("Misc.", "Change Character")
+    Keybind.delete(tr("Misc."), tr("Change Character"))
 
     disconnect(clientBox, {
         onOptionChange = EnterGame.onClientVersionChange

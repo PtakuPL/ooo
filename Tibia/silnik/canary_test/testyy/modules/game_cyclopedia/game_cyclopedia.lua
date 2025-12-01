@@ -213,8 +213,8 @@ function controllerCyclopedia:onGameEnd()
     end
     hide()
     saveFilters()
-    Keybind.delete("Windows", "Show/hide Bosstiary Tracker")
-    Keybind.delete("Windows", "Show/hide Bestiary Tracker")
+    Keybind.delete(tr("Windows"), tr("Show/hide Bosstiary Tracker"))
+    Keybind.delete(tr("Windows"), tr("Show/hide Bestiary Tracker"))
 end
 
 function controllerCyclopedia:onTerminate()

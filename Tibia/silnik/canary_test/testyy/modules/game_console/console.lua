@@ -462,12 +462,12 @@ function terminate()
         clear()
     end
 
-    Keybind.delete("Chat Channel", "Close Current Channel")
-    Keybind.delete("Chat Channel", "Next Channel")
-    Keybind.delete("Chat Channel", "Previous Channel")
-    Keybind.delete("Chat Channel", "Open Channel List")
-    Keybind.delete("Chat Channel", "Open Help Channel")
-    Keybind.delete("Chat", "Send current chat line")
+    Keybind.delete(tr("Chat Channel"), tr("Close Current Channel"))
+    Keybind.delete(tr("Chat Channel"), tr("Next Channel"))
+    Keybind.delete(tr("Chat Channel"), tr("Previous Channel"))
+    Keybind.delete(tr("Chat Channel"), tr("Open Channel List"))
+    Keybind.delete(tr("Chat Channel"), tr("Open Help Channel"))
+    Keybind.delete(tr("Chat"), tr("Send current chat line"))
     saveCommunicationSettings()
     clearReadOnlyTab()
     if readOnlyModeEnabled then

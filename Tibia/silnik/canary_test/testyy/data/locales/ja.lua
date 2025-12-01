@@ -304,6 +304,18 @@ locale = {
     -- Trackers / トラッカー
     ["Bosstiary Tracker"] = "ボスティアリトラッカー", -- Bosutiari torakkaa
     
+    -- Store & Shop / ストアとショップ
+    ["Balance"] = "残高", -- Zandaka
+    ["Page"] = "ページ", -- Peeji
+    ["Buy"] = "購入", -- Kounyuu
+    ["Configurable"] = "設定可能", -- Settei kanou
+    ["Amount to gift"] = "ギフト金額", -- Gifuto kingaku
+    
+    -- Blessing / 祝福
+    ["Record of Blessings"] = "祝福の記録", -- Shukufuku no kiroku
+    ["Back"] = "戻る", -- Modoru
+    ["History"] = "履歴", -- Rireki
+    
     -- Misc / その他
     ["Server"] = "サーバー", -- Saabaa
     ["Port"] = "ポート", -- Pooto

@@ -304,6 +304,18 @@ locale = {
     -- Trackers
     ["Bosstiary Tracker"] = "Bosstiary Praćenje",
     
+    -- Store & Shop
+    ["Balance"] = "Stanje",
+    ["Page"] = "Stranica",
+    ["Buy"] = "Kupi",
+    ["Configurable"] = "Podesivo",
+    ["Amount to gift"] = "Iznos za poklon",
+    
+    -- Blessing
+    ["Record of Blessings"] = "Evidencija blagoslova",
+    ["Back"] = "Nazad",
+    ["History"] = "Istorija",
+    
     -- Misc
     ["Server"] = "Server",
     ["Port"] = "Port",

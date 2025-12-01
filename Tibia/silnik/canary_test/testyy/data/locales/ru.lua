@@ -304,6 +304,18 @@ locale = {
     -- Trackers
     ["Bosstiary Tracker"] = "Трекер боссов",
     
+    -- Store & Shop
+    ["Balance"] = "Баланс",
+    ["Page"] = "Страница",
+    ["Buy"] = "Купить",
+    ["Configurable"] = "Настраиваемый",
+    ["Amount to gift"] = "Сумма подарка",
+    
+    -- Blessing
+    ["Record of Blessings"] = "Журнал благословений",
+    ["Back"] = "Назад",
+    ["History"] = "История",
+    
     -- Misc
     ["Server"] = "Сервер",
     ["Port"] = "Порт",

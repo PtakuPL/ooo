@@ -303,6 +303,18 @@ locale = {
     -- Trackers
     ["Bosstiary Tracker"] = "Tracker Bosstiary",
     
+    -- Store & Shop
+    ["Balance"] = "Sold",
+    ["Page"] = "Pagina",
+    ["Buy"] = "Cumpără",
+    ["Configurable"] = "Configurabil",
+    ["Amount to gift"] = "Suma de oferit",
+    
+    -- Blessing
+    ["Record of Blessings"] = "Istoric binecuvântări",
+    ["Back"] = "Înapoi",
+    ["History"] = "Istoric",
+    
     -- Misc
     ["Server"] = "Server",
     ["Port"] = "Port",

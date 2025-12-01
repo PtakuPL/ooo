@@ -304,6 +304,18 @@ locale = {
     -- Trackers / 트래커
     ["Bosstiary Tracker"] = "보스티아리 트래커", -- Boseutiari teulaekeo
     
+    -- Store & Shop / 상점
+    ["Balance"] = "잔액", -- Janaek
+    ["Page"] = "페이지", -- Peiji
+    ["Buy"] = "구매", -- Gumae
+    ["Configurable"] = "설정 가능", -- Seoljeong ganeung
+    ["Amount to gift"] = "선물할 금액", -- Seonmulhal geumak
+    
+    -- Blessing / 축복
+    ["Record of Blessings"] = "축복 기록", -- Chukbok girok
+    ["Back"] = "뒤로", -- Dwiro
+    ["History"] = "기록", -- Girok
+    
     -- Misc / 기타
     ["Server"] = "서버", -- Seobeo
     ["Port"] = "포트", -- Poteu

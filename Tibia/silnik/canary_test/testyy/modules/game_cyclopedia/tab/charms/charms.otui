@@ -114,7 +114,7 @@ UIWidget
       anchors.bottom: parent.bottom
       margin-bottom: 10
       color: #C0C0C0
-      placeholder: Type to search
+      !placeholder: tr('Type to search')
       placeholder-color: #6E706F
       padding-top: 1
       size: 140 17

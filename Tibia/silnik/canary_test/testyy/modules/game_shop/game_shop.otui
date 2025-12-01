@@ -352,7 +352,7 @@ MainWindow
     anchors.bottom: prev.bottom
     margin: 7
     margin-right: 29
-    placeholder: Type to search
+    !placeholder: tr('Type to search')
     placeholder-color: #667070
     color: #C0C0C0
     @onTextChange: modules.game_shop.onTypeSearch(self)

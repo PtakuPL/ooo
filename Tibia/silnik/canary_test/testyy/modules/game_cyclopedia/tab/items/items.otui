@@ -158,7 +158,7 @@ UIWidget
     padding-right: 15
     margin-left: 5
     height: 17
-    placeholder: Type to search
+    !placeholder: tr('Type to search')
     placeholder-color: #6E706F
     @onTextChange: modules.game_cyclopedia.Cyclopedia.ItemSearch(self:getText())
   UIWidget
@@ -374,7 +374,7 @@ UIWidget
       anchors.right: parent.right
       anchors.left: MarketGoldPriceBase.left
       margin-top: 2
-      placeholder: Type to set
+      !placeholder: tr('Type to set')
       placeholder-color: #6E706F
     Label
       id: OwnLootLabel

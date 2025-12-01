@@ -68,7 +68,7 @@ TextEditQuestLog < Panel
     anchors.fill: parent
     margin-left: 5
     height: 17
-    placeholder: Type to search
+    !placeholder: tr('Type to search')
     placeholder-color: #6E706F
     @onTextChange : onSearchTextChange(self:getText())
 

@@ -100,7 +100,7 @@ MainWindow
     TextEdit
       id: search
       anchors.fill: parent
-      placeholder: Search by name
+      !placeholder: tr('Search by name')
 
   ScrollablePanel
     id: selectionList

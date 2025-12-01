@@ -243,7 +243,7 @@ StoreWindow
     margin-bottom: 10
     height: 17
     width: 180
-    placeholder: Type to search
+    !placeholder: tr('Type to search')
     placeholder-color: #6E706F
 
   UIWidget

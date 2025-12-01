@@ -5,8 +5,7 @@ on:
   pull_request_target:
     types: [opened, synchronize, reopened]
   push:
-    branches:
-      - master
+    branches: [ master ]
 
 env:
   VCPKG_BUILD_TYPE: release
@@ -30,8 +29,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: ${{ github.event_name == 'push' && github.ref || github.event.pull_request.head.ref }}
-          repository: ${{ github.event_name == 'push' && github.repository || github.event.pull_request.head.repo.full_name }}
 
       - name: Remove nested git directories (upstream mirrors)
         run: |
@@ -58,23 +55,23 @@ jobs:
       - name: Cache CCache
         uses: actions/cache@v4
         with:
-          path: $HOME/.ccache
-          key: ccache-${{ runner.os }}-${{ hashFiles('Tibia/silnik/canary_test/testyy/CMakeLists.txt', 'Tibia/silnik/canary_test/testyy/vcpkg.json', 'Tibia/silnik/canary_test/testyy/src/**/*.cpp', 'Tibia/silnik/canary_test/testyy/src/**/*.h') }}
+          path: ~/.ccache
+          key: ccache-${{ runner.os }}-${{ hashFiles('Tibia/silnik/canary_test/testyy/CMakeLists.txt','Tibia/silnik/canary_test/testyy/vcpkg.json') }}
           restore-keys: |
             ccache-${{ runner.os }}-
 
       - name: Cache SonarCloud analysis data
         uses: actions/cache@v4
         with:
-          path: $HOME/.cfamily
-          key: sonar-cfamily-${{ runner.os }}-${{ hashFiles('Tibia/silnik/canary_test/testyy/CMakeLists.txt', 'Tibia/silnik/canary_test/testyy/vcpkg.json', 'Tibia/silnik/canary_test/testyy/src/**/*.cpp', 'Tibia/silnik/canary_test/testyy/src/**/*.h') }}
+          path: ~/.cfamily
+          key: sonar-cfamily-${{ runner.os }}-${{ hashFiles('Tibia/silnik/canary_test/testyy/CMakeLists.txt','Tibia/silnik/canary_test/testyy/vcpkg.json') }}
           restore-keys: |
             sonar-cfamily-${{ runner.os }}-
 
       - name: Cache SonarCloud packages
         uses: actions/cache@v4
         with:
-          path: $HOME/.sonar/cache
+          path: ~/.sonar/cache
           key: sonar-packages-${{ runner.os }}
           restore-keys: |
             sonar-packages-${{ runner.os }}-
@@ -82,15 +79,13 @@ jobs:
       - name: Resolve vcpkg commit (builtin-baseline or fallback)
         id: vcpkg-step
         shell: bash
+        working-directory: Tibia/silnik/canary_test/testyy
         run: |
           fallback=5b1214315250939257ef5d62ecdcbca18cf4fb1c
-          commit=""
-          if [[ -f "vcpkg.json" ]]; then
-            commit=$(python3 -c 'import json,sys;
-try:
- print(json.load(open("Tibia/silnik/canary_test/testyy/vcpkg.json")).get("builtin-baseline", "")))
-except Exception:
- print("")')
+          if [ -f vcpkg.json ]; then
+            commit=$(python3 -c "import json; print(json.load(open('vcpkg.json')).get('builtin-baseline',''))")
+          else
+            commit=""
           fi
           if [[ $commit =~ ^[0-9a-f]{40}$ ]]; then
             echo "vcpkgGitCommitId=$commit" >> "$GITHUB_OUTPUT"
@@ -103,19 +98,26 @@ except Exception:
       - name: Cache vcpkg installed packages
         uses: actions/cache@v4
         with:
-          path: build/vcpkg_installed
+          path: Tibia/silnik/canary_test/testyy/build/vcpkg_installed
           key: vcpkg-installed-${{ runner.os }}-${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}
           restore-keys: |
             vcpkg-installed-${{ runner.os }}-
 
+      - name: Setup CMake + Ninja
+        uses: lukka/get-cmake@latest
+        with:
+          cmakeVersion: '~3.27.0'
+
       - name: Setup vcpkg (manifest install)
         uses: lukka/run-vcpkg@v11
         with:
+          vcpkgGitURL: https://github.com/microsoft/vcpkg.git
           vcpkgGitCommitId: ${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}
           runVcpkgInstall: true
-          vcpkgJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg.json'
-          vcpkgConfigurationJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg-configuration.json'
-          vcpkgJsonIgnores: "['**/vcpkg/**', '**/browser/overlay-ports/**']"
+          vcpkgJsonGlob: Tibia/silnik/canary_test/testyy/vcpkg.json
+          vcpkgConfigurationJsonGlob: Tibia/silnik/canary_test/testyy/vcpkg-configuration.json
+          vcpkgJsonIgnores: "['**/vcpkg/**','**/browser/overlay-ports/**']"
+          doNotCache: false
 
       - name: vcpkg manifest validation (preflight)
         run: |

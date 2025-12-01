@@ -31,7 +31,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          submodules: false   # nie używamy submodułu vcpkg/
+          submodules: false
 
       - name: Remove nested git directories (upstream mirrors)
         shell: bash
@@ -46,19 +46,19 @@ jobs:
 
       - name: Install CMake + Ninja
         uses: lukka/get-cmake@latest
+        with:
+          cmakeVersion: '~3.27.0'
 
       - name: Resolve vcpkg commit (builtin-baseline or fallback)
         id: vcpkg-commit
         shell: bash
         run: |
           fallback=5b1214315250939257ef5d62ecdcbca18cf4fb1c
-          commit=""
-          if [[ -f "Tibia/silnik/canary_test/testyy/vcpkg.json" ]]; then
-            commit=$(python3 -c 'import json,sys;
-try:
- print(json.load(open("testyy/vcpkg.json")).get("builtin-baseline", "")))
-except Exception:
- print("")')
+          vcpkg_file="Tibia/silnik/canary_test/testyy/vcpkg.json"
+          if [ -f "$vcpkg_file" ]; then
+            commit=$(python -c "import json; print(json.load(open('$vcpkg_file')).get('builtin-baseline',''))" 2>/dev/null || echo "")
+          else
+            commit=""
           fi
           if [[ $commit =~ ^[0-9a-f]{40}$ ]]; then
             echo "vcpkgGitCommitId=$commit" >> "$GITHUB_OUTPUT"
@@ -74,20 +74,20 @@ except Exception:
           vcpkgGitURL: https://github.com/microsoft/vcpkg.git
           vcpkgGitCommitId: ${{ steps.vcpkg-commit.outputs.vcpkgGitCommitId }}
           runVcpkgInstall: true
-          vcpkgJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg.json'
-          vcpkgConfigurationJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg-configuration.json'
+          vcpkgJsonGlob: Tibia/silnik/canary_test/testyy/vcpkg.json
+          vcpkgConfigurationJsonGlob: Tibia/silnik/canary_test/testyy/vcpkg-configuration.json
           vcpkgJsonIgnores: "['**/vcpkg/**','**/browser/overlay-ports/**']"
           doNotCache: false
 
       - name: Configure (CMake + vcpkg toolchain, VS generator)
         shell: pwsh
-        run: >
-          cmake -S . -B build
-          -G "Visual Studio 17 2022" -A x64
-          -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT\scripts\buildsystems\vcpkg.cmake"
-          -DVCPKG_TARGET_TRIPLET="$env:VCPKG_DEFAULT_TRIPLET"
-          -DCMAKE_BUILD_TYPE=Release
-          -DCMAKE_VERBOSE_MAKEFILE=ON
+        run: |
+          cmake -S . -B build `
+            -G "Visual Studio 17 2022" -A x64 `
+            -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT\scripts\buildsystems\vcpkg.cmake" `
+            -DVCPKG_TARGET_TRIPLET="$env:VCPKG_DEFAULT_TRIPLET" `
+            -DCMAKE_BUILD_TYPE=Release `
+            -DCMAKE_VERBOSE_MAKEFILE=ON
 
       - name: Build (Release)
         shell: pwsh
@@ -99,9 +99,9 @@ except Exception:
         with:
           name: windows-release-${{ github.run_number }}
           path: |
-            build/**/Release/*.exe
-            build/**/*.dll
-            build/*.pdb
+            Tibia/silnik/canary_test/testyy/build/**/Release/*.exe
+            Tibia/silnik/canary_test/testyy/build/**/*.dll
+            Tibia/silnik/canary_test/testyy/build/*.pdb
           if-no-files-found: warn
 
       - name: Upload CMake logs (on failure)
@@ -110,6 +110,6 @@ except Exception:
         with:
           name: cmake-logs-windows
           path: |
-            build/CMakeFiles/CMakeOutput.log
-            build/CMakeFiles/CMakeError.log
+            Tibia/silnik/canary_test/testyy/build/CMakeFiles/CMakeOutput.log
+            Tibia/silnik/canary_test/testyy/build/CMakeFiles/CMakeError.log
           if-no-files-found: warn

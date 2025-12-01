@@ -52,13 +52,10 @@ jobs:
         working-directory: Tibia/silnik/canary_test/testyy
         run: |
           fallback=5b1214315250939257ef5d62ecdcbca18cf4fb1c
-          commit=""
-          if [[ -f "vcpkg.json" ]]; then
-            commit=$(python3 -c 'import json,sys;
-try:
- print(json.load(open("vcpkg.json")).get("builtin-baseline", "")))
-except Exception:
- print("")')
+          if [ -f vcpkg.json ]; then
+            commit=$(python3 -c "import json; print(json.load(open('vcpkg.json')).get('builtin-baseline',''))")
+          else
+            commit=""
           fi
           if [[ $commit =~ ^[0-9a-f]{40}$ ]]; then
             echo "vcpkgGitCommitId=$commit" >> "$GITHUB_OUTPUT"
@@ -70,6 +67,8 @@ except Exception:
 
       - name: Setup CMake + Ninja
         uses: lukka/get-cmake@latest
+        with:
+          cmakeVersion: '~3.27.0'
 
       - name: Setup vcpkg (manifest install)
         uses: lukka/run-vcpkg@v11
@@ -77,19 +76,19 @@ except Exception:
           vcpkgGitURL: https://github.com/microsoft/vcpkg.git
           vcpkgGitCommitId: ${{ steps.vcpkg-commit.outputs.vcpkgGitCommitId }}
           runVcpkgInstall: true
-          vcpkgJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg.json'
-          vcpkgConfigurationJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg-configuration.json'
+          vcpkgJsonGlob: Tibia/silnik/canary_test/testyy/vcpkg.json
+          vcpkgConfigurationJsonGlob: Tibia/silnik/canary_test/testyy/vcpkg-configuration.json
           doNotCache: false
 
       - name: Configure (CMake + Ninja)
-        run: >
-          cmake -S . -B build/linux-release
-          -G Ninja
-          -DCMAKE_BUILD_TYPE=Release
-          -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
-          -DVCPKG_TARGET_TRIPLET=$VCPKG_DEFAULT_TRIPLET
-          -DOTC_ENABLE_TTF=ON -DOTC_ENABLE_HARFBUZZ=ON -DOTC_ENABLE_FRIBIDI=ON
-          -DCMAKE_VERBOSE_MAKEFILE=ON
+        run: |
+          cmake -S . -B build/linux-release \
+            -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake \
+            -DVCPKG_TARGET_TRIPLET=$VCPKG_DEFAULT_TRIPLET \
+            -DOTC_ENABLE_TTF=ON -DOTC_ENABLE_HARFBUZZ=ON -DOTC_ENABLE_FRIBIDI=ON \
+            -DCMAKE_VERBOSE_MAKEFILE=ON
 
       - name: Build (Release)
         run: cmake --build build/linux-release --parallel
@@ -100,8 +99,8 @@ except Exception:
         with:
           name: otclient-linux-x64
           path: |
-            build/linux-release/otclient
-            build/linux-release/otclient*
+            Tibia/silnik/canary_test/testyy/build/linux-release/otclient
+            Tibia/silnik/canary_test/testyy/build/linux-release/otclient*
           if-no-files-found: warn
 
       - name: Upload CMake logs (on failure)
@@ -110,6 +109,6 @@ except Exception:
         with:
           name: cmake-logs-linux
           path: |
-            build/linux-release/CMakeFiles/CMakeOutput.log
-            build/linux-release/CMakeFiles/CMakeError.log
+            Tibia/silnik/canary_test/testyy/build/linux-release/CMakeFiles/CMakeOutput.log
+            Tibia/silnik/canary_test/testyy/build/linux-release/CMakeFiles/CMakeError.log
           if-no-files-found: warn

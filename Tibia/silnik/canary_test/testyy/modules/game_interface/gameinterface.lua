@@ -149,8 +149,8 @@ function bindKeys()
         gameMapPanel:zoomOut()
     end, gameRootPanel)
 
-    Keybind.new("Movement", "Stop All Actions", "Escape", "", true)
-    Keybind.bind("Movement", "Stop All Actions", {
+    Keybind.new(tr("Movement"), tr("Stop All Actions"), "Escape", "", true)
+    Keybind.bind(tr("Movement"), tr("Stop All Actions"), {
         {
             type = KEY_PRESS,
             callback = function()
@@ -161,16 +161,16 @@ function bindKeys()
         }
     }, gameRootPanel)
 
-    Keybind.new("Misc", "Logout", "Ctrl+L", "Ctrl+Q")
-    Keybind.bind("Misc", "Logout", {
+    Keybind.new(tr("Misc"), tr("Logout"), "Ctrl+L", "Ctrl+Q")
+    Keybind.bind(tr("Misc"), tr("Logout"), {
         {
             type = KEY_PRESS,
             callback = function() tryLogout(false) end,
         }
     }, gameRootPanel)
 
-    Keybind.new("UI", "Clear All Texts", "Ctrl+W", "")
-    Keybind.bind("UI", "Clear All Texts", {
+    Keybind.new(tr("UI"), tr("Clear All Texts"), "Ctrl+W", "")
+    Keybind.bind(tr("UI"), tr("Clear All Texts"), {
         {
             type = KEY_DOWN,
             callback = function()

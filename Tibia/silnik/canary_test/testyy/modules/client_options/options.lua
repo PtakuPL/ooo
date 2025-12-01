@@ -218,15 +218,15 @@ function controller:onInit()
     addEvent(setup)
     init_binds()
 
-    Keybind.new("UI", "Toggle Fullscreen", "Ctrl+Shift+F", "")
-    Keybind.bind("UI", "Toggle Fullscreen", {
+    Keybind.new(tr("UI"), tr("Toggle Fullscreen"), "Ctrl+Shift+F", "")
+    Keybind.bind(tr("UI"), tr("Toggle Fullscreen"), {
         {
             type = KEY_DOWN,
             callback = function() toggleOption('fullscreen') end,
         }
     })
-    Keybind.new("UI", "Show/hide FPS / lag indicator", "", "")
-    Keybind.bind("UI", "Show/hide FPS / lag indicator", { {
+    Keybind.new(tr("UI"), tr("Show/hide FPS / lag indicator"), "", "")
+    Keybind.bind(tr("UI"), tr("Show/hide FPS / lag indicator"), { {
         type = KEY_DOWN,
         callback = function()
             toggleOption('showPing')
@@ -234,16 +234,16 @@ function controller:onInit()
         end
     } })
 
-    Keybind.new("UI", "Show/hide Creature Names and Bars", "Ctrl+N", "")
-    Keybind.bind("UI", "Show/hide Creature Names and Bars", {
+    Keybind.new(tr("UI"), tr("Show/hide Creature Names and Bars"), "Ctrl+N", "")
+    Keybind.bind(tr("UI"), tr("Show/hide Creature Names and Bars"), {
         {
             type = KEY_DOWN,
             callback = toggleDisplays,
         }
     })
 
-    Keybind.new("Sound", "Mute/unmute", "", "")
-    Keybind.bind("Sound", "Mute/unmute", {
+    Keybind.new(tr("Sound"), tr("Mute/unmute"), "", "")
+    Keybind.bind(tr("Sound"), tr("Mute/unmute"), {
         {
             type = KEY_DOWN,
             callback = function() toggleOption('enableAudio') end,

@@ -248,46 +248,46 @@ function init()
 
     -- tibia like hotkeys
     local gameRootPanel = modules.game_interface.getRootPanel()
-    Keybind.new("Chat Channel", "Next Channel", "Tab", "")
-    Keybind.bind("Chat Channel", "Next Channel", {
+    Keybind.new(tr("Chat Channel"), tr("Next Channel"), "Tab", "")
+    Keybind.bind(tr("Chat Channel"), tr("Next Channel"), {
         {
           type = KEY_PRESS,
           callback = function() consoleTabBar:selectNextTab() end,
         }
       }, consolePanel)
 
-    Keybind.new("Chat Channel", "Previous Channel", "Shift+Tab", "")
-    Keybind.bind("Chat Channel", "Previous Channel", {
+    Keybind.new(tr("Chat Channel"), tr("Previous Channel"), "Shift+Tab", "")
+    Keybind.bind(tr("Chat Channel"), tr("Previous Channel"), {
         {
           type = KEY_PRESS,
           callback = function() consoleTabBar:selectPrevTab() end,
         }
     }, consolePanel)
-    Keybind.new("Chat", "Send current chat line", { [CHAT_MODE.ON] = "Enter", [CHAT_MODE.OFF] = "" }, "")
-    Keybind.bind("Chat", "Send current chat line", {
+    Keybind.new(tr("Chat"), tr("Send current chat line"), { [CHAT_MODE.ON] = "Enter", [CHAT_MODE.OFF] = "" }, "")
+    Keybind.bind(tr("Chat"), tr("Send current chat line"), {
         {
           type = KEY_DOWN,
           callback = sendCurrentMessage,
         }
       }, consolePanel)
-    Keybind.new("Chat Channel", "Open Channel List", "Ctrl+O", "")
-    Keybind.bind("Chat Channel", "Open Channel List", {
+    Keybind.new(tr("Chat Channel"), tr("Open Channel List"), "Ctrl+O", "")
+    Keybind.bind(tr("Chat Channel"), tr("Open Channel List"), {
         {
           type = KEY_DOWN,
           callback = g_game.requestChannels,
         }
       }, gameRootPanel)
-    Keybind.new("Chat Channel", "Close Current Channel", "Ctrl+E", "")
+    Keybind.new(tr("Chat Channel"), tr("Close Current Channel"), "Ctrl+E", "")
 
-    Keybind.bind("Chat Channel", "Close Current Channel", {
+    Keybind.bind(tr("Chat Channel"), tr("Close Current Channel"), {
       {
         type = KEY_DOWN,
         callback = removeCurrentTab,
       }
     }, gameRootPanel)
 
-    Keybind.new("Chat Channel", "Open Help Channel", "Ctrl+H", "")
-    Keybind.bind("Chat Channel", "Open Help Channel", {
+    Keybind.new(tr("Chat Channel"), tr("Open Help Channel"), "Ctrl+H", "")
+    Keybind.bind(tr("Chat Channel"), tr("Open Help Channel"), {
         {
           type = KEY_DOWN,
           callback = openHelp,
@@ -2091,9 +2091,9 @@ function online()
         tab.npcChat = true
     end
     if g_game.getClientVersion() < 862 then
-        Keybind.new("Dialogs", "Open Rule Violation", "Ctrl+R", "")
+        Keybind.new(tr("Dialogs"), tr("Open Rule Violation"), "Ctrl+R", "")
         local gameRootPanel = modules.game_interface.getRootPanel()
-        Keybind.bind("Dialogs", "Open Rule Violation", {
+        Keybind.bind(tr("Dialogs"), tr("Open Rule Violation"), {
           {
             type = KEY_DOWN,
             callback = openPlayerReportRuleViolationWindow,

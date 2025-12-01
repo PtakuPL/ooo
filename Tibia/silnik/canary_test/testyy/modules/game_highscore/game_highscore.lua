@@ -7,11 +7,11 @@ local vocationArray = {}
 local Category = {}
 
 local tempFixworldType = {
-    {0, "Open Pvp"},
-    {1, "Optional Pvp"},
-    {2, "Hardcore Pvp"},
-    {3, "Retro Open Pvp"},
-    {4, "Retro Hardcore Pvp"}
+    {0, tr("Open PvP")},
+    {1, tr("Optional PvP")},
+    {2, tr("Hardcore PvP")},
+    {3, tr("Retro Open PvP")},
+    {4, tr("Retro Hardcore PvP")}
 }
 
 local serverSide = {

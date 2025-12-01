@@ -82,8 +82,8 @@ function init() -- Initiating the module (load)
     battleWindow = g_ui.loadUI('battle')
 
     -- Binding Ctrl + B shortcut
-    Keybind.new("Windows", "Show/hide battle list", "Ctrl+B", "")
-    Keybind.bind("Windows", "Show/hide battle list", {
+    Keybind.new(tr("Windows"), tr("Show/hide battle list"), "Ctrl+B", "")
+    Keybind.bind(tr("Windows"), tr("Show/hide battle list"), {
         {
             type = KEY_DOWN,
             callback = toggle,
@@ -1098,7 +1098,7 @@ function terminate() -- Terminating the Module (unload)
     filterPanel = nil
     toggleFilterButton = nil
 
-    Keybind.delete("Windows", "Show/hide battle list")
+    Keybind.delete(tr("Windows"), tr("Show/hide battle list"))
 
     disconnect(g_game, {
         onAttackingCreatureChange = onAttack,

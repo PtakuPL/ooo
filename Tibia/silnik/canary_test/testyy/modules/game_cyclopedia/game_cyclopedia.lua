@@ -187,15 +187,15 @@ function controllerCyclopedia:onGameStart()
         trackerMiniWindow:setupOnStart()
         loadFilters()
         Cyclopedia.BossSlots.UnlockBosses = {}
-        Keybind.new("Windows", "Show/hide Bosstiary Tracker", "", "")
+        Keybind.new(tr("Windows"), tr("Show/hide Bosstiary Tracker"), "", "")
 
-        Keybind.bind("Windows", "Show/hide Bosstiary Tracker", {{
+        Keybind.bind(tr("Windows"), tr("Show/hide Bosstiary Tracker"), {{
             type = KEY_DOWN,
             callback = Cyclopedia.toggleBosstiaryTracker
         }})
 
-        Keybind.new("Windows", "Show/hide Bestiary Tracker", "", "")
-        Keybind.bind("Windows", "Show/hide Bestiary Tracker", {{
+        Keybind.new(tr("Windows"), tr("Show/hide Bestiary Tracker"), "", "")
+        Keybind.bind(tr("Windows"), tr("Show/hide Bestiary Tracker"), {{
             type = KEY_DOWN,
             callback = Cyclopedia.toggleBestiaryTracker
         }})

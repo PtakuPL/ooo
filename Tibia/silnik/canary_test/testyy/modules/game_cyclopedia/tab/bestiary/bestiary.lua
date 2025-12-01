@@ -788,7 +788,7 @@ function onTrackerClick(widget, mousePosition, mouseButton)
     local menu = g_ui.createWidget("PopupMenu")
 
     menu:setGameMenu(true)
-    menu:addOption("stop Tracking " .. widget.label:getText(), function()
+    menu:addOption(tr("stop Tracking") .. " " .. widget.label:getText(), function()
         g_game.sendStatusTrackerBestiary(taskId, false)
     end)
     menu:display(menuPosition)

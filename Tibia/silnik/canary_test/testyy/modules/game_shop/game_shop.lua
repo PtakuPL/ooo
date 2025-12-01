@@ -738,7 +738,7 @@ function displayInfoBoxWithCallback(title, message, callback)
         UIMessageBox.display(
         title,
         message,
-        {{text = "Ok", callback = defaultCallback}},
+        {{text = tr("Ok"), callback = defaultCallback}},
         defaultCallback,
         defaultCallback
     )

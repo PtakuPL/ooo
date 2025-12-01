@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: testyy
+        working-directory: Tibia/silnik/canary_test/testyy
 
     env:
       VCPKG_DEFAULT_TRIPLET: x64-linux
@@ -49,7 +49,7 @@ jobs:
       - name: Resolve vcpkg commit (builtin-baseline or fallback)
         id: vcpkg-commit
         shell: bash
-        working-directory: testyy
+        working-directory: Tibia/silnik/canary_test/testyy
         run: |
           fallback=5b1214315250939257ef5d62ecdcbca18cf4fb1c
           commit=""
@@ -82,8 +82,8 @@ PY
           vcpkgGitURL: https://github.com/microsoft/vcpkg.git
           vcpkgGitCommitId: ${{ steps.vcpkg-commit.outputs.vcpkgGitCommitId }}
           runVcpkgInstall: true
-          vcpkgJsonGlob: 'testyy/vcpkg.json'
-          vcpkgConfigurationJsonGlob: 'testyy/vcpkg-configuration.json'
+          vcpkgJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg.json'
+          vcpkgConfigurationJsonGlob: 'Tibia/silnik/canary_test/testyy/vcpkg-configuration.json'
           doNotCache: false
 
       - name: Configure (CMake + Ninja)

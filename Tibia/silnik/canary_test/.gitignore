@@ -409,3 +409,4 @@ database_backup
 
 # CLION
 cmake-build-*
+*:Zone.Identifier

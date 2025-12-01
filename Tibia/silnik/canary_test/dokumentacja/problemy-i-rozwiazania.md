@@ -79,3 +79,29 @@ Te punkty można rozwijać w miarę pojawiania się kolejnych doświadczeń.
 **Dodatkowe notatki:**
 - Błędy kompilacji udokumentowane w `testyy/bledykompilacji.md`
 - Główny problem dotyczył pakietu `brotli` w vcpkg, który wymagał CMake 3.5+
+
+## 7. vcpkg build Windows - MSYS2 mirror 404 (01.12.2025)
+
+**Problem:**
+- Po naprawieniu Zone.Identifier, build Windows kończy się błędem podczas instalacji vcpkg dependencies
+- Konkretnie: `abseil:x64-windows-static` nie może pobrać `mingw-w64-i686-libwinpthread-git-9.0.0.6373.5be8fcd83-1-any.pkg.tar.zst`
+- Wszystkie mirrory MSYS2 zwracają HTTP 404
+- Błąd: `Failed to download file with error: 1`
+- To zewnętrzny problem - plik został usunięty/przeniesiony w repozytoriach MSYS2
+
+**Temporary Status:**
+- Build Linux działa poprawnie (nie wymaga MSYS2)
+- Build Windows zablokowany przez brak dostępu do pakietu MSYS2
+- Problem nie jest po naszej stronie - to infrastruktura upstream
+
+**Możliwe rozwiązania:**
+1. Poczekać aż MSYS2 naprawi swoje repozytoria
+2. Użyć starszej wersji vcpkg baseline (przed zmianą tej zależności)
+3. Tymczasowo wyłączyć workflow build-windows
+4. Dodać custom vcpkg overlay z patchowanym abseil
+
+**Link do błędu:**
+- Nie można pobrać: `mingw-w64-i686-libwinpthread-git-9.0.0.6373.5be8fcd83-1`
+- Próbowano wszystkich mirrorów: repo.msys2.org, futureware.at, yandex.ru, tsinghua, ustc, bit.edu.cn, selfnet.de, sjtug
+
+**Status:** Oczekujemy na naprawę upstream lub rozważamy workaround.

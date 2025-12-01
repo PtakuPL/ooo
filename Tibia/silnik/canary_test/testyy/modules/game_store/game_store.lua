@@ -610,10 +610,10 @@ function onParseStoreGetHistory(currentPage, pageCount, historyData)
     headerRow:setBackgroundColor("#363636")
     headerRow:setBorderColor("#00000077")
     headerRow:setBorderWidth(1)
-    headerRow.date:setText("Date")
-    headerRow.Balance:setText("Balance")
-    headerRow.Description:setText("Description")
-    controllerShop.ui.transferHistory.lblPage:setText(string.format("Page %d/%d", currentPage + 1, pageCount))
+    headerRow.date:setText(tr("Date"))
+    headerRow.Balance:setText(tr("Balance"))
+    headerRow.Description:setText(tr("Description"))
+    controllerShop.ui.transferHistory.lblPage:setText(string.format(tr("Page") .. " %d/%d", currentPage + 1, pageCount))
     for i, data in ipairs(historyData) do
         local row = g_ui.createWidget("historyData2", transferHistory)
         row.date:setText(convert_timestamp(data[1]))
@@ -903,11 +903,11 @@ function chooseOffert(self, focusedChild)
         priceLabel:setText(offer.price)
 
         if offer.count and offer.count > 0 then
-            offerPanel:getChildById('btnBuy'):setText("Buy " .. offer.count .. "x")
+            offerPanel:getChildById('btnBuy'):setText(tr("Buy") .. " " .. offer.count .. "x")
         end
 
         if product.configurable then
-            offerPanel:getChildById('btnBuy'):setText("Configurable")
+            offerPanel:getChildById('btnBuy'):setText(tr("Configurable"))
         end
 
         local isTransferable = offer.coinType == GameStore.CoinType.Transferable

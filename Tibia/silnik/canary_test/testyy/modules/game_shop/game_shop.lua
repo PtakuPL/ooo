@@ -188,7 +188,7 @@ function updateHistory()
         widget:getChildById("description"):setText(history[i].name)
     end
 
-    historyPanel:getChildById("pageLabel"):setText("Page " .. currentPage .. "/" .. totalPages)
+    historyPanel:getChildById("pageLabel"):setText(tr("Page") .. " " .. currentPage .. "/" .. totalPages)
 end
 
 function onGameShopUpdateHistory(historyList)
@@ -488,10 +488,10 @@ function updateDescription(self)
     buyButton:setEnabled(self.data.price <= globalPoints)
 
     if self.additionalPriceValue and self.additionalCountValue then
-        buyButton:setText("Buy " .. self.data.count)
+        buyButton:setText(tr("Buy") .. " " .. self.data.count)
 
         additionalPriceWidget:setEnabled(self.additionalPriceValue <= globalPoints)
-        additionalBuyButton:setText("Buy " .. self.additionalCountValue)
+        additionalBuyButton:setText(tr("Buy") .. " " .. self.additionalCountValue)
         additionalBuyButton:show()
         additionalBuyButton:setEnabled(self.additionalPriceValue <= globalPoints)
         additionalBuyButton.price = self.additionalPriceValue
@@ -510,7 +510,7 @@ function updateDescription(self)
         buyButton.price = nil
         buyButton.count = nil
 
-        buyButton:setText("Buy")
+        buyButton:setText(tr("Buy"))
         additionalPriceWidget:hide()
     end
 
@@ -746,11 +746,11 @@ function displayInfoBoxWithCallback(title, message, callback)
 end
 
 function changeCoinsAmount(value)
-    transferWindow:getChildById("coinsAmountLabel"):setText("Amount to gift: " .. comma_value(value))
+    transferWindow:getChildById("coinsAmountLabel"):setText(tr("Amount to gift") .. ": " .. comma_value(value))
 end
 
 function changeTaskPointsAmount(value)
-    transferWindow:getChildById("taskPointsAmountLabel"):setText("Amount to gift: " .. comma_value(value))
+    transferWindow:getChildById("taskPointsAmountLabel"):setText(tr("Amount to gift") .. ": " .. comma_value(value))
 end
 
 function confirmGiftCoins()

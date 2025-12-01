@@ -31,11 +31,11 @@ local function getMinutesDifference(t1, t2)
     local diffInHours = diffInMinutes / 60
 
     if diffInHours >= 1 then
-        return string.format("Last Update: %.0f Hrs Ago", diffInHours)
+        return string.format(tr("Last Update: %.0f Hrs Ago"), diffInHours)
     elseif diffInMinutes >= 1 then
-        return string.format("Last Update: %.0f minutes Ago", diffInMinutes)
+        return string.format(tr("Last Update: %.0f minutes Ago"), diffInMinutes)
     else
-        return string.format("Last Update: %.0f Second Ago", math.abs(diffInSeconds))
+        return string.format(tr("Last Update: %.0f Second Ago"), math.abs(diffInSeconds))
     end
 end
 

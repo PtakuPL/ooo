@@ -626,19 +626,19 @@ local function updateExperienceRate(localPlayer)
 
     widget:setText(math.floor(expRateTotal) .. "%")
 
-    local tooltip = string.format("Your current XP gain rate amounts to %d%%.", math.floor(expRateTotal))
+    local tooltip = string.format(tr("Your current XP gain rate amounts to %d%%."), math.floor(expRateTotal))
     tooltip = tooltip ..
-                  string.format("\nYour XP gain rate is calculated as follows:\n- Base XP gain rate %d%%", baseRate)
+                  string.format(tr("\nYour XP gain rate is calculated as follows:\n- Base XP gain rate %d%%"), baseRate)
 
     if (ExpRating[ExperienceRate.VOUCHER] or 0) > 0 then
-        tooltip = tooltip .. string.format("\n- Voucher: %d%%", ExpRating[ExperienceRate.VOUCHER])
+        tooltip = tooltip .. string.format(tr("\n- Voucher: %d%%"), ExpRating[ExperienceRate.VOUCHER])
     end
 
     if (ExpRating[ExperienceRate.XP_BOOST] or 0) > 0 then
-        tooltip = tooltip .. string.format("\n- XP Boost: %d%% (%s h remaining)", ExpRating[ExperienceRate.XP_BOOST],
+        tooltip = tooltip .. string.format(tr("\n- XP Boost: %d%% (%s h remaining)"), ExpRating[ExperienceRate.XP_BOOST],
             formatTimeBySeconds(localPlayer:getStoreExpBoostTime()))
     end
-    tooltip = tooltip .. string.format("\n- Stamina multiplier: x%.1f (%s h remaining)", staminaMultiplier / 100,
+    tooltip = tooltip .. string.format(tr("\n- Stamina multiplier: x%.1f (%s h remaining)"), staminaMultiplier / 100,
         formatTimeByMinutes(localPlayer:getStamina() - 2340))
 
     xpgainrate:setTooltip(tooltip)

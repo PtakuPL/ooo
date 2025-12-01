@@ -283,6 +283,26 @@ locale = {
     ["Paid Until"] = "Plaćeno do",
     ["New Owner"] = "Novi vlasnik",
     ["Transfer"] = "Prenos",
+    ["Move Out"] = "Iseli se",
+    ["Cancel Transfer"] = "Otkaži prenos",
+    ["Reject Transfer"] = "Odbij prenos",
+    ["Accept Transfer"] = "Prihvati prenos",
+    ["Bid"] = "Licitiraj",
+    
+    -- Bestiary & Charms
+    ["Total"] = "Ukupno",
+    ["Known"] = "Poznato",
+    ["Unknown"] = "Nepoznato",
+    ["Fully Unlocked"] = "Potpuno otključano",
+    ["Unlock"] = "Otključaj",
+    
+    -- Quick Loot
+    ["Loot when Quick Looting"] = "Sakupljaj pri brzom pljačkanju",
+    ["Skip when Quick Looting"] = "Preskoči pri brzom pljačkanju",
+    ["Classification"] = "Klasifikacija",
+    
+    -- Trackers
+    ["Bosstiary Tracker"] = "Bosstiary Praćenje",
     
     -- Misc
     ["Server"] = "Server",

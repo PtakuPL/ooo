@@ -293,8 +293,8 @@ function Cyclopedia.CreateBestiaryCategoryItem(Data)
     widget.ClassIcon:setImageSource("/game_cyclopedia/images/bestiary/creatures/" .. Data.name:lower():gsub(" ", "_"))
     widget.Category = Data.name
     widget:setColor("#C0C0C0")
-    widget.TotalValue:setText(string.format("Total: %d", Data.amount))
-    widget.KnownValue:setText(string.format("Known: %d", Data.know))
+    widget.TotalValue:setText(string.format(tr("Total") .. ": %d", Data.amount))
+    widget.KnownValue:setText(string.format(tr("Known") .. ": %d", Data.know))
 
     function widget.ClassBase:onClick()
         UI.BackPageButton:setEnabled(true)
@@ -437,7 +437,7 @@ function Cyclopedia.CreateBestiaryCreaturesItem(data)
         if data.currentLevel < 1 then
             widget.KillsLabel:setText("?")
             widget.Sprite:getCreature():setShader("Outfit - cyclopedia-black")
-            widget.Name:setText("Unknown")
+            widget.Name:setText(tr("Unknown"))
             widget.AnimusMastery:setVisible(false)
         else
             widget.KillsLabel:setText(string.format("%d / 3", data.currentLevel - 1))

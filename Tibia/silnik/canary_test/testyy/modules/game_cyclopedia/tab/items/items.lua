@@ -280,9 +280,9 @@ function Cyclopedia.internalCreateItem(data)
         widget:setBackgroundColor("#585858")
        
         if modules.game_quickloot.QuickLoot.data.filter == 2 then
-            UI.InfoBase.quickLootCheck:setText("Loot when Quick Looting")
+            UI.InfoBase.quickLootCheck:setText(tr("Loot when Quick Looting"))
         else
-            UI.InfoBase.quickLootCheck:setText('Skip when Quick Looting')
+            UI.InfoBase.quickLootCheck:setText(tr("Skip when Quick Looting"))
         end
         UI.InfoBase.quickLootCheck.onCheckChange = function(self, checked)
             if checked then
@@ -489,7 +489,7 @@ function Cyclopedia.loadItemDetail(itemId, descriptions)
 
     if classification > 0 then
         local widget = g_ui.createWidget("UIWidget", UI.InfoBase.DetailsBase.List)
-        widget:setText("Classification: " .. classification)
+        widget:setText(tr("Classification") .. ": " .. classification)
         widget:setColor("#C0C0C0")
     end
 end

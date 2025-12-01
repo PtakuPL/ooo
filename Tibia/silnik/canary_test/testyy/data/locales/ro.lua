@@ -282,6 +282,26 @@ locale = {
     ["Paid Until"] = "Plătit până la",
     ["New Owner"] = "Noul proprietar",
     ["Transfer"] = "Transfer",
+    ["Move Out"] = "Evacuare",
+    ["Cancel Transfer"] = "Anulează transferul",
+    ["Reject Transfer"] = "Respinge transferul",
+    ["Accept Transfer"] = "Acceptă transferul",
+    ["Bid"] = "Licitează",
+    
+    -- Bestiary & Charms
+    ["Total"] = "Total",
+    ["Known"] = "Cunoscut",
+    ["Unknown"] = "Necunoscut",
+    ["Fully Unlocked"] = "Complet deblocat",
+    ["Unlock"] = "Deblochează",
+    
+    -- Quick Loot
+    ["Loot when Quick Looting"] = "Colectează la loot rapid",
+    ["Skip when Quick Looting"] = "Sari la loot rapid",
+    ["Classification"] = "Clasificare",
+    
+    -- Trackers
+    ["Bosstiary Tracker"] = "Tracker Bosstiary",
     
     -- Misc
     ["Server"] = "Server",

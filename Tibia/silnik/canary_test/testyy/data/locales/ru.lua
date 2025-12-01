@@ -283,6 +283,26 @@ locale = {
     ["Paid Until"] = "Оплачено до",
     ["New Owner"] = "Новый владелец",
     ["Transfer"] = "Передать",
+    ["Move Out"] = "Выселиться",
+    ["Cancel Transfer"] = "Отменить передачу",
+    ["Reject Transfer"] = "Отклонить передачу",
+    ["Accept Transfer"] = "Принять передачу",
+    ["Bid"] = "Ставка",
+    
+    -- Bestiary & Charms
+    ["Total"] = "Всего",
+    ["Known"] = "Известно",
+    ["Unknown"] = "Неизвестно",
+    ["Fully Unlocked"] = "Полностью открыто",
+    ["Unlock"] = "Открыть",
+    
+    -- Quick Loot
+    ["Loot when Quick Looting"] = "Лутать при быстром сборе",
+    ["Skip when Quick Looting"] = "Пропускать при быстром сборе",
+    ["Classification"] = "Классификация",
+    
+    -- Trackers
+    ["Bosstiary Tracker"] = "Трекер боссов",
     
     -- Misc
     ["Server"] = "Сервер",

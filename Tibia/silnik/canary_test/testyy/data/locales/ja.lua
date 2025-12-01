@@ -283,6 +283,26 @@ locale = {
     ["Paid Until"] = "支払い済み", -- Shiharai zumi
     ["New Owner"] = "新オーナー", -- Shin oonaa
     ["Transfer"] = "譲渡", -- Jouto
+    ["Move Out"] = "退去", -- Taikyo
+    ["Cancel Transfer"] = "譲渡キャンセル", -- Jouto kyanseru
+    ["Reject Transfer"] = "譲渡拒否", -- Jouto kyohi
+    ["Accept Transfer"] = "譲渡承認", -- Jouto shounin
+    ["Bid"] = "入札", -- Nyuusatsu
+    
+    -- Bestiary & Charms / ベスティアリ＆チャーム
+    ["Total"] = "合計", -- Goukei
+    ["Known"] = "既知", -- Kichi
+    ["Unknown"] = "不明", -- Fumei
+    ["Fully Unlocked"] = "完全解除", -- Kanzen kaijo
+    ["Unlock"] = "解除", -- Kaijo
+    
+    -- Quick Loot / クイックルート
+    ["Loot when Quick Looting"] = "クイックルート時に収集", -- Kuikku ruuto ji ni shuushuu
+    ["Skip when Quick Looting"] = "クイックルート時にスキップ", -- Kuikku ruuto ji ni sukippu
+    ["Classification"] = "分類", -- Bunrui
+    
+    -- Trackers / トラッカー
+    ["Bosstiary Tracker"] = "ボスティアリトラッカー", -- Bosutiari torakkaa
     
     -- Misc / その他
     ["Server"] = "サーバー", -- Saabaa

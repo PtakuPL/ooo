@@ -283,6 +283,26 @@ locale = {
     ["Paid Until"] = "결제 완료", -- Gyeolje wanryo
     ["New Owner"] = "새 소유자", -- Sae soyuja
     ["Transfer"] = "양도", -- Yangdo
+    ["Move Out"] = "퇴거", -- Toegeo
+    ["Cancel Transfer"] = "양도 취소", -- Yangdo chwiso
+    ["Reject Transfer"] = "양도 거부", -- Yangdo geobu
+    ["Accept Transfer"] = "양도 승인", -- Yangdo seung-in
+    ["Bid"] = "입찰", -- Ipchal
+    
+    -- Bestiary & Charms / 베스티아리 & 부적
+    ["Total"] = "총", -- Chong
+    ["Known"] = "알려진", -- Alryeojin
+    ["Unknown"] = "알 수 없음", -- Al su eobseum
+    ["Fully Unlocked"] = "완전 잠금해제", -- Wanjeon jamgeumhaeje
+    ["Unlock"] = "잠금해제", -- Jamgeumhaeje
+    
+    -- Quick Loot / 빠른 전리품
+    ["Loot when Quick Looting"] = "빠른 전리품 수집 시 획득", -- Ppareun jeollipum sujip si hoekdeuk
+    ["Skip when Quick Looting"] = "빠른 전리품 수집 시 건너뛰기", -- Ppareun jeollipum sujip si geonneotteugi
+    ["Classification"] = "분류", -- Bunryu
+    
+    -- Trackers / 트래커
+    ["Bosstiary Tracker"] = "보스티아리 트래커", -- Boseutiari teulaekeo
     
     -- Misc / 기타
     ["Server"] = "서버", -- Seobeo

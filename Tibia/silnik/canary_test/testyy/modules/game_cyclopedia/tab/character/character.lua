@@ -66,7 +66,7 @@ function showCharacter()
     if g_game.isOnline() then
         local player = g_game.getLocalPlayer()
         UI.CharacterBase:setText(player:getName())
-        UI.CharacterBase.InfoLabel:setText(string.format("Level: %d\n%s", player:getLevel(), player:getVocationNameByClientId()))
+        UI.CharacterBase.InfoLabel:setText(string.format(tr("Level") .. ": %d\n%s", player:getLevel(), player:getVocationNameByClientId()))
         UI.CharacterBase.Outfit:setOutfit(player:getOutfit())
 
         UI.InfoBase.outfitPanel.Sprite:setOutfit(player:getOutfit())
@@ -1274,9 +1274,9 @@ function Cyclopedia.onParseCyclopediaStoreSummary(xpBoostTime, dailyRewardXpBoos
     UI.StoreSummary.ListBase.List.dailyReward.InstantRewardAccessValue:setText(instantRewards)
 
     if hasCharmExpansion then
-        UI.StoreSummary.ListBase.List.CharmPanel.CharmExpansionValue:setText("Yes")
+        UI.StoreSummary.ListBase.List.CharmPanel.CharmExpansionValue:setText(tr("Yes"))
     else
-        UI.StoreSummary.ListBase.List.CharmPanel.CharmExpansionValue:setText("No")
+        UI.StoreSummary.ListBase.List.CharmPanel.CharmExpansionValue:setText(tr("No"))
     end
 
     UI.StoreSummary.ListBase.List.hirelings.PurchasedHirelingsValue:setText(hirelingsObtained)

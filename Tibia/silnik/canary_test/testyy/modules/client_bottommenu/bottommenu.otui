@@ -39,7 +39,7 @@ Panel
     text-auto-resize: true
     color: #e98d02
     margin-bottom: 110
-    text: OTClient Redemption
+    !text: tr('OTClient Redemption')
     font: verdana-11px-rounded
     font-scale: 4
     shader: Map - Party

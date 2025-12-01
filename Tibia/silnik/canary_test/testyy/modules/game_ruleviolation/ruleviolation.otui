@@ -32,7 +32,7 @@ RVTextEdit < TextEdit
 MainWindow
   id: ruleViolationWindow
   size: 400 445
-  text: Rule Violation
+  !text: tr('Rule Violation')
   @onEscape: hide()
 
   RVLabel

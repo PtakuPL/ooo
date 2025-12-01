@@ -207,7 +207,7 @@ ActivePreyPanel < Panel
       image-border: 1
       size: 155 15
       font: verdana-11px-rounded
-      text: Automatic Bonus Rer...
+      !text: tr('Automatic Bonus Rer...')
       margin-left: 5
 
   CardLabel
@@ -234,7 +234,7 @@ ActivePreyPanel < Panel
       image-border: 1
       size: 155 15
       font: verdana-11px-rounded
-      text: Lock Prey
+      !text: tr('Lock Prey')
       margin-left: 5
 
   CardLabel
@@ -449,7 +449,7 @@ CardLabel < FlatPanel
     anchors.right: parent.right
     anchors.verticalCenter: parent.verticalCenter
     image-source: /images/game/prey/prey_wildcard
-    tooltip: Prey Wildcards
+    !tooltip: tr('Prey Wildcards')
 
   UIWidget
     id: text
@@ -469,7 +469,7 @@ GoldLabel < FlatPanel
     anchors.right: parent.right
     anchors.verticalCenter: parent.verticalCenter
     image-source: /images/game/prey/prey_gold
-    tooltip: Gold Coins
+    !tooltip: tr('Gold Coins')
 
   UIWidget
     id: text
@@ -584,7 +584,7 @@ MainWindow
     anchors.right: parent.right
     anchors.bottom: parent.bottom
     size: 45 21
-    text: Close
+    !text: tr('Close')
     font: cipsoftFont
     @onClick: modules.game_prey.hide()
 
@@ -607,7 +607,7 @@ MainWindow
     margin-left: 10
     size: 26 20
     anchors.verticalCenter: closeButton.verticalCenter
-    tooltip: Go to the Store to get more Prey Wildcards!
+    !tooltip: tr('Go to the Store to get more Prey Wildcards!')
     image-source: /images/game/prey/prey_smallstore
     image-clip: 0 0 26 20
     background-color: #17354e
@@ -652,7 +652,7 @@ PreyCreature < Panel
     anchors.bottom: prev.bottom
     margin-bottom: 7
     anchors.right: parent.right
-    text: Inactive
+    !text: tr('Inactive')
     font: verdana-11px-rounded
     text-align: left
 

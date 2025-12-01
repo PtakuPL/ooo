@@ -967,12 +967,12 @@ function Cyclopedia.configureCharacterCategories()
 
     local buttons = {
         {
-            text = "General Stats",
+            text = tr("General Stats"),
             icon = "/game_cyclopedia/images/character_icons/icon_generalstats",
             subCategories = function()
                 local categories = {
                     {
-                        text = "Character Stats",
+                        text = tr("Character Stats"),
                         icon = "/game_cyclopedia/images/character_icons/icon-character-generalstats-overview",
                         open = "CharacterStats"
                     }
@@ -980,23 +980,23 @@ function Cyclopedia.configureCharacterCategories()
                 
                 if g_game.getClientVersion() < 1410 then
                     table.insert(categories, {
-                        text = "Combat Stats",
+                        text = tr("Combat Stats"),
                         icon = "/game_cyclopedia/images/character_icons/icon-character-generalstats-combatstats",
                         open = "CombatStats"
                     })
                 else
                     table.insert(categories, {
-                        text = "Offence Stats",
+                        text = tr("Offence Stats"),
                         icon = "/game_cyclopedia/images/character_icons/icon-character-generalstats-combatstats",
                         open = "OffenceStats"
                     })
                     table.insert(categories, {
-                        text = "Deffence Stats",
+                        text = tr("Deffence Stats"),
                         icon = "/game_cyclopedia/images/character_icons/icon-character-generalstats-defence",
                         open = "DeffenceStats"
                     })
                     table.insert(categories, {
-                        text = "Misc. Stats",
+                        text = tr("Misc. Stats"),
                         icon = "/game_cyclopedia/images/character_icons/icon-character-generalstats-misc",
                         open = "MiscStats"
                     })
@@ -1006,43 +1006,43 @@ function Cyclopedia.configureCharacterCategories()
             end
         },
         {
-            text = "Battle Results",
+            text = tr("Battle Results"),
             icon = "/game_cyclopedia/images/character_icons/icon_battleresults",
             subCategories = {
                 {
-                    text = "Recent Deaths",
+                    text = tr("Recent Deaths"),
                     icon = "/game_cyclopedia/images/character_icons/icon-character-battleresults-recentdeaths",
                     open = "RecentDeaths"
                 },
                 {
-                    text = "Recent PvP Kills",
+                    text = tr("Recent PvP Kills"),
                     icon = "/game_cyclopedia/images/character_icons/icon-character-battleresults-recentpvpkills",
                     open = "RecentKills"
                 }
             }
         },
         {
-            text = "Achievements",
+            text = tr("Achievements"),
             icon = "/game_cyclopedia/images/character_icons/icon_achievement",
             open = "CharacterAchievements"
         },
         {
-            text = "Item Summary",
+            text = tr("Item Summary"),
             icon = "/game_cyclopedia/images/character_icons/icon_items",
             open = "CharacterItems"
         },
         {
-            text = "Appearances",
+            text = tr("Appearances"),
             icon = "/game_cyclopedia/images/character_icons/icon_outfitsmounts",
             open = "CharacterAppearances"
         },
         {
-            text = "Store Summary",
+            text = tr("Store Summary"),
             icon = "/game_cyclopedia/images/character_icons/icon-character-store",
             open = "StoreSummary"
         },
         {
-            text = "Character Titles",
+            text = tr("Character Titles"),
             icon = "/game_cyclopedia/images/character_icons/icon-character-titles",
             open = "CharacterTitles"
         }

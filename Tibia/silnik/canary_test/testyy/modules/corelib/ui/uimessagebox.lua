@@ -76,7 +76,7 @@ function displayInfoBox(title, message)
         messageBox:ok()
     end
     messageBox = UIMessageBox.display(title, message, {{
-        text = 'Ok',
+        text = tr('Ok'),
         callback = defaultCallback
     }}, defaultCallback, defaultCallback)
     return messageBox
@@ -88,7 +88,7 @@ function displayErrorBox(title, message)
         messageBox:ok()
     end
     messageBox = UIMessageBox.display(title, message, {{
-        text = 'Ok',
+        text = tr('Ok'),
         callback = defaultCallback
     }}, defaultCallback, defaultCallback)
     return messageBox
@@ -100,7 +100,7 @@ function displayCancelBox(title, message)
         messageBox:cancel()
     end
     messageBox = UIMessageBox.display(title, message, {{
-        text = 'Cancel',
+        text = tr('Cancel'),
         callback = defaultCallback
     }}, defaultCallback, defaultCallback)
     return messageBox

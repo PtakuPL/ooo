@@ -970,7 +970,7 @@ function chooseOffert(self, focusedChild)
             end
 
             if product.name == "Hireling Apprentice" then -- test with canary , need improve identifier
-                return displayErrorBox(controllerShop.ui:getText(), "not yet, UI missing")
+                return displayErrorBox(controllerShop.ui:getText(), tr("Not yet, UI missing"))
             end
 
             local function acceptFunc()

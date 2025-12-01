@@ -3,7 +3,7 @@ local UI = nil
 function showBossSlot()
     UI = g_ui.loadUI("boss_slots", contentContainer)
     UI:show()
-    UI.RightBase.LockLabel:setText("Unlocks at 1500 Boss Points")
+    UI.RightBase.LockLabel:setText(tr("Unlocks at 1500 Boss Points"))
     g_game.requestBossSlootInfo()
     controllerCyclopedia.ui.CharmsBase:setVisible(false)
     controllerCyclopedia.ui.GoldBase:setVisible(true)
@@ -66,12 +66,12 @@ function Cyclopedia.loadBossSlots(data)
     UI.Sprite:setOutfit(raceData.outfit)
 
     UI.Sprite:getCreature():setStaticWalking(1000)
-    UI.TopBase.InfoLabel:setText(string.format("Equipment Loot Bonus: %d%% Next: %d%%", data.currentBonus,
+    UI.TopBase.InfoLabel:setText(string.format(tr("Equipment Loot Bonus") .. ": %d%% " .. tr("Next") .. ": %d%%", data.currentBonus,
         data.nextBonus))
 
     local fullText = ""
     if data.playerPoints >= CONFIG[data.todaySlotData.bossRace].MASTERY then
-        fullText = "(fully unlocked)"
+        fullText = "(" .. tr("fully unlocked") .. ")"
     end
 
     local progress = UI.BoostedProgress
@@ -100,7 +100,7 @@ function Cyclopedia.loadBossSlots(data)
         progress.goldStar:setImageSource("/game_cyclopedia/images/boss/icon_star_dark")
     end
 
-    UI.MainLabel:setText(string.format("Equipment loot bonus: %d%%\nKill bonus: %dx", data.todaySlotData.lootBonus,
+    UI.MainLabel:setText(string.format(tr("Equipment loot bonus") .. ": %d%%\n" .. tr("Kill bonus") .. ": %dx", data.todaySlotData.lootBonus,
         data.todaySlotData.killBonus))
 
     Cyclopedia.setBosstiarySlotsProgress(data.playerPoints, data.totalPointsNextBonus)
@@ -115,7 +115,7 @@ function Cyclopedia.loadBossSlots(data)
 
     local unlockedBosses = data.bossIdSlotTwo
 
-    UI.MidTitle:setText(string.format("Boosted Boss: %s", format(raceData.name)))
+    UI.MidTitle:setText(string.format(tr("Boosted Boss") .. ": %s", format(raceData.name)))
     Cyclopedia.setBosstiarySlotsBossProgress(UI.BoostedProgress, data.todaySlotData.killCount,
         CONFIG[data.todaySlotData.bossRace].MASTERY)
     UI.TypeIcon:setImageSource(ICONS[data.todaySlotData.bossRace])
@@ -189,15 +189,15 @@ function Cyclopedia.setEmptySlot(widget, slot, bossIdSlotTwo)
     widget.LockLabel:setVisible(true)
     widget.SelectBoss:setVisible(false)
     widget.ActivedBoss:setVisible(false)
-    widget:setText(string.format("Slot %d: Locked", slot))
-    widget.LockLabel:setText(string.format("Unlocks at %d Boss Points", bossIdSlotTwo))
+    widget:setText(string.format(tr("Slot") .. " %d: " .. tr("Locked"), slot))
+    widget.LockLabel:setText(string.format(tr("Unlocks at %d Boss Points"), bossIdSlotTwo))
 end
 
 function Cyclopedia.setLockedSlot(widget, slot, unlockedBosses)
     widget.LockLabel:setVisible(false)
     widget.SelectBoss:setVisible(true)
     widget.ActivedBoss:setVisible(false)
-    widget:setText(string.format("Slot %d: Select Boss", slot))
+    widget:setText(string.format(tr("Slot") .. " %d: " .. tr("Select Boss"), slot))
     widget.SelectBoss.ListBase.List:destroyChildren()
 
     local function format(string)
@@ -241,7 +241,7 @@ function Cyclopedia.setActiveSlot(widget, slot, slotData, data, bossId)
     widget.LockLabel:setVisible(false)
     widget.SelectBoss:setVisible(false)
     widget.ActivedBoss:setVisible(true)
-    widget:setText(string.format("Slot %d: %s", slot, raceData.name))
+    widget:setText(string.format(tr("Slot") .. " %d: %s", slot, raceData.name))
     widget.ActivedBoss.TypeIcon:setImageSource(ICONS[slotData.bossRace])
 
     Cyclopedia.setBosstiarySlotsBossProgress(widget.ActivedBoss.Progress, slotData.killBonus,
@@ -281,7 +281,7 @@ function Cyclopedia.setActiveSlot(widget, slot, slotData, data, bossId)
 
     widget.ActivedBoss.Sprite:setOutfit(raceData.outfit)
     widget.ActivedBoss.Sprite:getCreature():setStaticWalking(1000)
-    widget.ActivedBoss.EquipmentLabel:setText(string.format("Equipment loot bonus: %d%%", slotData.lootBonus))
+    widget.ActivedBoss.EquipmentLabel:setText(string.format(tr("Equipment loot bonus") .. ": %d%%", slotData.lootBonus))
     widget.ActivedBoss.Value:setText(comma_value(slotData.removePrice))
 
     if g_game.getLocalPlayer():getResourceBalance(1) ~= nil then

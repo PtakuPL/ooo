@@ -370,9 +370,9 @@ local function onRewardHistory(rewardHistory)
     headerRow:setBackgroundColor("#363636")
     headerRow:setBorderColor("#00000077")
     headerRow:setBorderWidth(1)
-    headerRow.date:setText("Date")
-    headerRow.Balance:setText("Streak")
-    headerRow.Description:setText("Event")
+    headerRow.date:setText(tr("Date"))
+    headerRow.Balance:setText(tr("Streak"))
+    headerRow.Description:setText(tr("Event"))
 
     for i, data in ipairs(rewardHistory) do
         local row = g_ui.createWidget("historyData2", transferHistory)
@@ -525,7 +525,7 @@ function rewardWallController:onClickDisplayWindowsPickRewardWindow(event)
             end
             windowsPickWindow = g_ui.displayUI('styles/pickreward')
             windowsPickWindow:show()
-            windowsPickWindow:getChildById('capacity'):setText("Free capacity: " ..
+            windowsPickWindow:getChildById('capacity'):setText(tr("Free capacity") .. ": " ..
                                                                    g_game:getLocalPlayer():getFreeCapacity() .. " oz")
 
             local text = string.format("You have selected [color=#D33C3C]0[/color] of %d reward items", itemsToSelect)
@@ -570,7 +570,7 @@ function rewardWallController:onhoverBonus(event)
     local bonus = bonuses[index]
 
     if not bonus then
-        rewardWallController.ui.infoPanel:setText("Unknown bonus.")
+        rewardWallController.ui.infoPanel:setText(tr("Unknown bonus."))
         return
     end
 
@@ -730,7 +730,7 @@ function onTextChangeChangeNumber(getPanel)
             end
         end
     end
-    windowsPickWindow:getChildById("weight"):setText(string.format("Total weight: %.2f oz", totalWeight))
+    windowsPickWindow:getChildById("weight"):setText(string.format(tr("Total weight") .. ": %.2f oz", totalWeight))
     windowsPickWindow:getChildById("weight"):resizeToText()
 end
 

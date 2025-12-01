@@ -1,0 +1,112 @@
+name: build-linux
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+  pull_request:
+
+concurrency:
+  group: linux-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      VCPKG_DEFAULT_TRIPLET: x64-linux
+      VCPKG_DEFAULT_HOST_TRIPLET: x64-linux
+      VCPKG_FEATURE_FLAGS: manifests,binarycaching
+      VCPKG_BINARY_SOURCES: clear;x-gha,readwrite
+      CMAKE_BUILD_PARALLEL_LEVEL: 8
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: false
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            build-essential ninja-build ccache pkg-config \
+            libxi-dev libxrandr-dev libxinerama-dev libxcursor-dev \
+            libglu1-mesa-dev libgl1-mesa-dev libx11-dev libxext-dev \
+            libopenal-dev libvorbis-dev liblzma-dev libbz2-dev \
+            libssl-dev libpng-dev
+
+      - name: Resolve vcpkg commit (builtin-baseline or fallback)
+        id: vcpkg-commit
+        shell: bash
+        run: |
+          fallback=5b1214315250939257ef5d62ecdcbca18cf4fb1c
+          commit=""
+            if [[ -f "$GITHUB_WORKSPACE/vcpkg.json" ]]; then
+            commit=$(python3 - <<'PY'
+      import json, os
+      from pathlib import Path
+      root = Path(os.environ.get('GITHUB_WORKSPACE', '.'))
+      try:
+        data = json.loads((root / 'vcpkg.json').read_text())
+        print(data.get('builtin-baseline', ''))
+      except Exception:
+        print('')
+      PY
+      )
+            fi
+          if [[ $commit =~ ^[0-9a-f]{40}$ ]]; then
+            echo "vcpkgGitCommitId=$commit" >> "$GITHUB_OUTPUT"
+            echo "Using builtin-baseline $commit"
+          else
+            echo "vcpkgGitCommitId=$fallback" >> "$GITHUB_OUTPUT"
+            echo "Using fallback commit $fallback"
+          fi
+
+      - name: Setup CMake + Ninja
+        uses: lukka/get-cmake@latest
+
+      - name: Setup vcpkg (manifest install)
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgGitURL: https://github.com/microsoft/vcpkg.git
+          vcpkgGitCommitId: ${{ steps.vcpkg-commit.outputs.vcpkgGitCommitId }}
+          runVcpkgInstall: true
+          vcpkgJsonGlob: 'vcpkg.json'
+          vcpkgConfigurationJsonGlob: 'vcpkg-configuration.json'
+          doNotCache: false
+
+      - name: Configure (CMake + Ninja)
+        run: >
+          cmake -S . -B build/linux-release
+          -G Ninja
+          -DCMAKE_BUILD_TYPE=Release
+          -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
+          -DVCPKG_TARGET_TRIPLET=$VCPKG_DEFAULT_TRIPLET
+          -DOTC_ENABLE_TTF=ON -DOTC_ENABLE_HARFBUZZ=ON -DOTC_ENABLE_FRIBIDI=ON
+          -DCMAKE_VERBOSE_MAKEFILE=ON
+
+      - name: Build (Release)
+        run: cmake --build build/linux-release --parallel
+
+      - name: Upload artifacts
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: otclient-linux-x64
+          path: |
+            build/linux-release/otclient
+            build/linux-release/otclient*
+          if-no-files-found: warn
+
+      - name: Upload CMake logs (on failure)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cmake-logs-linux
+          path: |
+            build/linux-release/CMakeFiles/CMakeOutput.log
+            build/linux-release/CMakeFiles/CMakeError.log
+          if-no-files-found: warn

@@ -1145,7 +1145,7 @@ function Cyclopedia.reloadHouseList()
                 if data.shop then
                     local icon = g_ui.createWidget("HouseIcon", widget.icons)
                     -- icon:setImageSource("/game_cyclopedia/images/house-shop")
-                    icon:setTooltip("This house is a shop.")
+                    icon:setTooltip(tr("This house is a shop."))
                 end
             end
         end
@@ -1280,7 +1280,7 @@ function Cyclopedia.selectHouse(widget)
     if widget.data.shop then
         local icon = g_ui.createWidget("HouseIcon", UI.LateralBase.icons)
         -- icon:setImageSource("/game_cyclopedia/images/house-shop")
-        icon:setTooltip("This house is a shop.")
+        icon:setTooltip(tr("This house is a shop."))
     end
 
     if widget.data.description ~= "" then

@@ -54,16 +54,11 @@ jobs:
           fallback=5b1214315250939257ef5d62ecdcbca18cf4fb1c
           commit=""
           if [[ -f "Tibia/silnik/canary_test/testyy/vcpkg.json" ]]; then
-            commit=$(python3 <<'PY'
-import json,sys
+            commit=$(python3 -c 'import json,sys;
 try:
-  with open('Tibia/silnik/canary_test/testyy/vcpkg.json') as f:
-    data = json.load(f)
-  print(data.get('builtin-baseline', ''))
+ print(json.load(open("testyy/vcpkg.json")).get("builtin-baseline", "")))
 except Exception:
-  print('')
-PY
-)
+ print("")')
           fi
           if [[ $commit =~ ^[0-9a-f]{40}$ ]]; then
             echo "vcpkgGitCommitId=$commit" >> "$GITHUB_OUTPUT"

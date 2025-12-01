@@ -121,7 +121,7 @@ end
 
 function start()
     if (not selectedEntry) then
-        return not setTaskConsoleText("Please select monster from monster list.", "red")
+        return not setTaskConsoleText(tr("Please select monster from monster list."), "red")
     end
 
     sendOpcode({
@@ -132,7 +132,7 @@ end
 
 function finish()
     if (not selectedEntry) then
-        return not setTaskConsoleText("Please select monster from monster list.", "red")
+        return not setTaskConsoleText(tr("Please select monster from monster list."), "red")
     end
 
     sendOpcode({
@@ -150,7 +150,7 @@ function abort()
     end
 
     if (not selectedEntry) then
-        return not setTaskConsoleText("Please select monster from monster list.", "red")
+        return not setTaskConsoleText(tr("Please select monster from monster list."), "red")
     end
 
     local yesFunc = function()

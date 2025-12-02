@@ -512,7 +512,7 @@ function checkSellAllTooltip()
             if amount > 0 then
                 if data and amount > 0 then
                     info = info .. (not first and '\n' or '') .. amount .. ' ' .. data.name .. ' (' .. data.price *
-                               amount .. ' gold)'
+                               amount .. tr(' gold') .. ')'
 
                     total = total + (data.price * amount)
                     if first then
@@ -523,7 +523,7 @@ function checkSellAllTooltip()
         end
     end
     if info ~= '' then
-        info = info .. '\nTotal: ' .. total .. ' gold'
+        info = info .. '\n' .. tr("Total: %s gold", total)
         sellAllButton:setTooltip(info)
     else
         sellAllButton:setEnabled(false)

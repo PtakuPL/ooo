@@ -12,7 +12,7 @@ MainWindow
     anchors.right: parent.right
     anchors.top: parent.top
     margin-top: 10
-    text: you have selected 0 of 2 reward items.
+    !text: tr('you have selected 0 of 2 reward items.')
 
   TextList
     id: rewardList

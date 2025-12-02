@@ -128,15 +128,15 @@ function Cyclopedia.CreateBosstiaryCreature(data)
 
     if data.category == CATEGORY.BANE then
         widget.TypeIcon:setTooltip(
-            "Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30")
+            tr("Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30"))
         -- widget.TypeIcon:setTooltipAlign(AlignTopLeft)
     elseif data.category == CATEGORY.ARCHFOE then
         widget.TypeIcon:setTooltip(
-            "Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60")
+            tr("Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60"))
         -- widget.TypeIcon:setTooltipAlign(AlignTopLeft)
     elseif data.category == CATEGORY.NEMESIS then
         widget.TypeIcon:setTooltip(
-            "Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60")
+            tr("Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60"))
         -- widget.TypeIcon:setTooltipAlign(AlignTopLeft)
     end
     widget.ProgressValue:setText(data.kills)

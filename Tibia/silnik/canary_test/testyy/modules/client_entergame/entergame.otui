@@ -84,7 +84,7 @@ EnterGameWindow
   UIWidget
     id: rememberEmailTip
     image-source: /images/icons/show_gui_help_grey
-    !specialtooltip: 'Be aware that your email address will be stored on your configuration file "config.otml" if you activate this option.'
+    !specialtooltip: tr('Be aware that your email address will be stored on your configuration file "config.otml" if you activate this option.')
     anchors.right: accountNameTextEdit.right
     anchors.verticalCenter: rememberEmailBox.verticalCenter
     visible: false

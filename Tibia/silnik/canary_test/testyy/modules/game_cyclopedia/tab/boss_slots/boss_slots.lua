@@ -121,11 +121,11 @@ function Cyclopedia.loadBossSlots(data)
     UI.TypeIcon:setImageSource(ICONS[data.todaySlotData.bossRace])
 
     local tooltip =
-        "Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30"
+        tr("Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30")
 
     tooltip = data.todaySlotData.bossRace == CATEGORY.ARCHFOE and
-                  "Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60" or
-                  "Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60"
+                  tr("Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60") or
+                  tr("Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60")
 
     UI.TypeIcon:setTooltip(tooltip)
     -- UI.TypeIcon:setTooltipAlign(AlignTopLeft)
@@ -218,12 +218,12 @@ function Cyclopedia.setLockedSlot(widget, slot, unlockedBosses)
         internalWidget.TypeIcon:setImageSource(ICONS[internalData.category])
 
         local tooltip = internalData.category == CATEGORY.ARCHFOE and
-                            "Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60" or
-                            "Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60"
+                            tr("Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60") or
+                            tr("Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60")
 
         if internalData.category ~= CATEGORY.ARCHFOE then
             tooltip =
-                "Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30"
+                tr("Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30")
         end
 
         internalWidget.TypeIcon:setTooltip(tooltip)
@@ -248,18 +248,18 @@ function Cyclopedia.setActiveSlot(widget, slot, slotData, data, bossId)
         CONFIG[slotData.bossRace].MASTERY)
 
     local tooltip = slotData.bossRace == CATEGORY.ARCHFOE and
-                        "Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60" or
-                        "Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60"
+                        tr("Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60") or
+                        tr("Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60")
 
     if slotData.bossRace ~= CATEGORY.ARCHFOE then
         tooltip =
-            "Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30"
+            tr("Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30")
     end
 
     widget.ActivedBoss.TypeIcon:setTooltip(tooltip)
     widget.ActivedBoss.Progress.ProgressBorder1:setTooltip()
 
-    local fullText = slotData.killBonus >= CONFIG[slotData.bossRace].MASTERY and "(fully unlocked)" or ""
+    local fullText = slotData.killBonus >= CONFIG[slotData.bossRace].MASTERY and tr("(fully unlocked)") or ""
 
     local progress = widget.ActivedBoss.Progress
     progress.ProgressBorder1:setTooltip(string.format(" %d / %d %s", slotData.killBonus,
@@ -299,7 +299,7 @@ function Cyclopedia.setActiveSlot(widget, slot, slotData, data, bossId)
     end
 
     widget.ActivedBoss.RemoveButton:setTooltip(string.format(
-        "It will cost you %s gold to remove the currently selected boss from this slot.",
+        tr("It will cost you %s gold to remove the currently selected boss from this slot."),
         comma_value(slotData.removePrice)))
 end
 
@@ -387,11 +387,11 @@ function Cyclopedia.readjustSelectBoss()
             internalWidget.TypeIcon:setImageSource(icons[internalData.category])
 
             local tooltip =
-                "Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30"
+                tr("Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30")
 
             tooltip = internalData.category == CATEGORY.ARCHFOE and
-                          "Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60" or
-                          "Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60"
+                          tr("Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60") or
+                          tr("Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60")
 
             internalWidget.TypeIcon:setTooltip(tooltip)
         end

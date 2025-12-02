@@ -130,7 +130,7 @@ end
 function Keybind.new(category, action, primary, secondary, alone)
   local index = category .. '_' .. action
   if Keybind.defaultKeybinds[index] then
-    pwarning(string.format("Keybind for [%s: %s] is already in use", category, action))
+    pwarning(string.format(tr("Keybind for [%s: %s] is already in use"), category, action))
     return
   end
 
@@ -166,7 +166,7 @@ function Keybind.new(category, action, primary, secondary, alone)
   if Keybind.defaultKeys[CHAT_MODE.ON][keys[CHAT_MODE.ON].primary] then
     local primaryIndex = Keybind.defaultKeys[CHAT_MODE.ON][keys[CHAT_MODE.ON].primary]
     local primaryKeybind = Keybind.defaultKeybinds[primaryIndex]
-    perror(string.format("Default primary key (Chat Mode On) assigned to [%s: %s] is already in use by [%s: %s]",
+    perror(string.format(tr("Default primary key (Chat Mode On) assigned to [%s: %s] is already in use by [%s: %s]"),
       category, action, primaryKeybind.category, primaryKeybind.action))
     return
   end
@@ -174,7 +174,7 @@ function Keybind.new(category, action, primary, secondary, alone)
   if Keybind.defaultKeys[CHAT_MODE.OFF][keys[CHAT_MODE.OFF].primary] then
     local primaryIndex = Keybind.defaultKeys[CHAT_MODE.OFF][keys[CHAT_MODE.OFF].primary]
     local primaryKeybind = Keybind.defaultKeybinds[primaryIndex]
-    perror(string.format("Default primary key (Chat Mode Off) assigned to [%s: %s] is already in use by [%s: %s]",
+    perror(string.format(tr("Default primary key (Chat Mode Off) assigned to [%s: %s] is already in use by [%s: %s]"),
       category, action, primaryKeybind.category, primaryKeybind.action))
     return
   end
@@ -182,7 +182,7 @@ function Keybind.new(category, action, primary, secondary, alone)
   if keys[CHAT_MODE.ON].secondary and Keybind.defaultKeys[CHAT_MODE.ON][keys[CHAT_MODE.ON].secondary] then
     local secondaryIndex = Keybind.defaultKeys[CHAT_MODE.ON][keys[CHAT_MODE.ON].secondary]
     local secondaryKeybind = Keybind.defaultKeybinds[secondaryIndex]
-    perror(string.format("Default secondary key (Chat Mode On) assigned to [%s: %s] is already in use by [%s: %s]",
+    perror(string.format(tr("Default secondary key (Chat Mode On) assigned to [%s: %s] is already in use by [%s: %s]"),
       category, action, secondaryKeybind.category, secondaryKeybind.action))
     return
   end
@@ -190,7 +190,7 @@ function Keybind.new(category, action, primary, secondary, alone)
   if keys[CHAT_MODE.OFF].secondary and Keybind.defaultKeys[CHAT_MODE.OFF][keys[CHAT_MODE.OFF].secondary] then
     local secondaryIndex = Keybind.defaultKeys[CHAT_MODE.OFF][keys[CHAT_MODE.OFF].secondary]
     local secondaryKeybind = Keybind.defaultKeybinds[secondaryIndex]
-    perror(string.format("Default secondary key (Chat Mode Off) assigned to [%s: %s] is already in use by [%s: %s]",
+    perror(string.format(tr("Default secondary key (Chat Mode Off) assigned to [%s: %s] is already in use by [%s: %s]"),
       category, action, secondaryKeybind.category, secondaryKeybind.action))
     return
   end

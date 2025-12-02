@@ -143,7 +143,7 @@ function onProcessHighscores(serverName, world, worldType, battlEye, vocations, 
     ui.prev:setEnabled(not isFirstPage)
     ui.prevLast:setEnabled(not isFirstPage)
     ui.ownRankButton:setEnabled(true)
-    ui.page:setText(page .. " / " .. totalInPages)
+    ui.page:setText(tr("Page") .. " " .. page .. " / " .. totalInPages)
 
     local diferenciaEnMinutos = getMinutesDifference(entriesTs, os.time())
     ui.last_update:setText(diferenciaEnMinutos)

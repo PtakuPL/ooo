@@ -26,7 +26,7 @@ function OutputMessage:addData(data)
         self:addU8(NetworkMessageTypes.Table)
         self:addTable(data)
     else
-        perror('Invalid data type ' .. type(data))
+        perror(tr('Invalid data type') .. ' ' .. type(data))
     end
 end
 

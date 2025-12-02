@@ -186,7 +186,7 @@ function setLocale(name)
     return
   end
   if not locale then
-    pwarning('Locale ' .. name .. ' does not exist.')
+    pwarning(tr('Locale') .. ' ' .. name .. ' ' .. tr('does not exist.'))
     return false
   end
   if currentLocale then

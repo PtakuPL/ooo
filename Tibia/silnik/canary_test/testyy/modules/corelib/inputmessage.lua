@@ -17,7 +17,7 @@ function InputMessage:getData()
     elseif dataType == NetworkMessageTypes.Table then
         return self:getTable()
     else
-        perror('Unknown data type ' .. dataType)
+        perror(tr('Unknown data type') .. ' ' .. dataType)
     end
     return nil
 end

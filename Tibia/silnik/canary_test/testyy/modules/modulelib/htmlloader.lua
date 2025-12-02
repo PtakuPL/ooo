@@ -136,7 +136,7 @@ function HtmlLoader(path, parent, controller)
         local els = root:find(css.selector)
 
         if css.checkExist and #els == 0 then
-            pwarning('[' .. path .. '][style] selector(' .. css.selector .. ') no element was found.')
+            pwarning('[' .. path .. '][style] selector(' .. css.selector .. ') ' .. tr('no element was found.'))
         end
 
         for _, el in pairs(els) do

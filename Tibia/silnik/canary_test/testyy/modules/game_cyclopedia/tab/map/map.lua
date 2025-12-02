@@ -43,7 +43,7 @@ function Cyclopedia.loadMap()
     end
 
     if not loaded then
-        print("Minimap couldn't be loaded, file missing?")
+        print(tr("Minimap couldn't be loaded, file missing?"))
     end
 
     minimapWidget:load()

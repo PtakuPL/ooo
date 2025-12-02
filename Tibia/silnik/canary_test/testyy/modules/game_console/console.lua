@@ -1624,7 +1624,7 @@ function onTalk(name, level, mode, message, channelId, creaturePos)
     speaktype = SpeakTypes[mode]
 
     if not speaktype then
-        perror('unhandled onTalk message mode ' .. mode .. ': ' .. message)
+        perror(tr('unhandled onTalk message mode') .. ' ' .. mode .. ': ' .. message)
         return
     end
 
@@ -1703,8 +1703,8 @@ function onTalk(name, level, mode, message, channelId, creaturePos)
             addText(composedMessage, speaktype, channel, name)
         else
             -- server sent a message on a channel that is not open
-            pwarning('message in channel id ' .. channelId ..
-                         ' which is unknown, this is a server bug, relogin if you want to see messages in this channel')
+            pwarning(tr('message in channel id') .. ' ' .. channelId ..
+                         ' ' .. tr('which is unknown, this is a server bug, relogin if you want to see messages in this channel'))
         end
     end
 end

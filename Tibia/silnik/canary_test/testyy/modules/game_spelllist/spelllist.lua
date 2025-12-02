@@ -73,7 +73,7 @@ function setSpelllistProfile(name)
         SpelllistProfile = name
         changeSpelllistProfile(oldProfile)
     else
-        perror('Spelllist profile \'' .. name .. '\' could not be set.')
+        perror(tr('Spelllist profile') .. ' \'' .. name .. '\' ' .. tr('could not be set.'))
     end
 end
 
@@ -214,7 +214,7 @@ function initializeSpelllist()
         end
 
         if not (iconId) then
-            perror('Spell icon \'' .. info.icon .. '\' not found.')
+            perror(tr('Spell icon') .. ' \'' .. info.icon .. '\' ' .. tr('not found.'))
         end
 
         tmpLabel:setHeight(SpelllistSettings[SpelllistProfile].iconSize.height + 4)

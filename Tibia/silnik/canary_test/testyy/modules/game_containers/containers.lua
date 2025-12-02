@@ -73,7 +73,7 @@ end
 function refreshContainerPages(container)
     local currentPage = 1 + math.floor(container:getFirstIndex() / container:getCapacity())
     local pages = 1 + math.floor(math.max(0, (container:getSize() - 1)) / container:getCapacity())
-    container.window:recursiveGetChildById('pageLabel'):setText(string.format('Page %i of %i', currentPage, pages))
+    container.window:recursiveGetChildById('pageLabel'):setText(string.format(tr('Page %i of %i'), currentPage, pages))
 
     local prevPageButton = container.window:recursiveGetChildById('prevPageButton')
     if currentPage == 1 then

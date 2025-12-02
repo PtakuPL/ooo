@@ -100,26 +100,24 @@ function onUpdateBlessDialog(data)
     if (data.promotion ~= 0) then
         BlessingController.ui.promotionStatus2.premium_only:setOn(true)
         BlessingController.ui.promotionStatus2.rank:setColoredText(
-            "Your character is promoted and your account has Premium\nstatus. As a result, your XP loss is reduced by {30%, #f75f5f}.")
+            tr("Your character is promoted and your account has Premium\nstatus. As a result, your XP loss is reduced by {30%, #f75f5f}."))
     else
         BlessingController.ui.promotionStatus2.rank:setColoredText(
-            "Your character is promoted and your account has Premium\nstatus. As a result, your XP loss is reduced by {0%, #f75f5f}.")
+            tr("Your character is promoted and your account has Premium\nstatus. As a result, your XP loss is reduced by {0%, #f75f5f}."))
             BlessingController.ui.promotionStatus2.premium_only:setOn(false)
     end
 
     BlessingController.ui.promotionStatus.fightRules:setColoredText(
-        "- Depending on the fair fight rules, you will lose between {" .. data.pvpMinXpLoss .. ", #f75f5f} and {" ..
-            data.pvpMaxXpLoss .. "%, #f75f5f} less XP and skill points \nupon your next PvP death.")
+        tr("- Depending on the fair fight rules, you will lose between {%s, #f75f5f} and {%s%%, #f75f5f} less XP and skill points \nupon your next PvP death.", data.pvpMinXpLoss, data.pvpMaxXpLoss))
 
     BlessingController.ui.promotionStatus.expLoss:setColoredText(
-        "- You will lose {" .. data.pveExpLoss .. "%, #f75f5f}% less XP and skill points upon your next PvE death.")
+        tr("- You will lose {%s%%, #f75f5f}%% less XP and skill points upon your next PvE death.", data.pveExpLoss))
 
     BlessingController.ui.promotionStatus.containerLoss:setColoredText(
-        "- There is a {" .. data.equipPvpLoss ..
-            "%, #f75f5f} chance that you will lose your equipped container on your next death.")
+        tr("- There is a {%s%%, #f75f5f} chance that you will lose your equipped container on your next death.", data.equipPvpLoss))
 
     BlessingController.ui.promotionStatus.equipmentLoss:setColoredText(
-        "- There is a {" .. data.equipPveLoss .. "%, #f75f5f} chance that you will lose items upon your next death.")
+        tr("- There is a {%s%%, #f75f5f} chance that you will lose items upon your next death.", data.equipPveLoss))
 
     BlessingController.ui.blessingHistory:getChildByIndex(1):destroyChildren()
     local row2 = g_ui.createWidget("historyData", BlessingController.ui.blessingHistory:getChildByIndex(1))

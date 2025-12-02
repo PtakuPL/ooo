@@ -55,9 +55,9 @@ function showHouse()
     Cyclopedia.selectTown({
         data = 0
     })
-    UI.TopBase.StatesOption:setOption("All States", true)
-    UI.TopBase.CityOption:setOption("Own Houses", true)
-    UI.TopBase.SortOption:setOption("Sort by name", true)
+    UI.TopBase.StatesOption:setOption(tr("All States"), true)
+    UI.TopBase.CityOption:setOption(tr("Own Houses"), true)
+    UI.TopBase.SortOption:setOption(tr("Sort by name"), true)
 
     Cyclopedia.House.lastTown = nil
 end
@@ -92,11 +92,11 @@ Cyclopedia.CityList = {
 }
 
 Cyclopedia.SortList = {
-    { Title = "Sort by name" },
-    { Title = "Sort by size" },
-    { Title = "Sort by rent" },
-    { Title = "Sort by bid" },
-    { Title = "Sort by auction end" }
+    { Title = tr("Sort by name") },
+    { Title = tr("Sort by size") },
+    { Title = tr("Sort by rent") },
+    { Title = tr("Sort by bid") },
+    { Title = tr("Sort by auction end") }
 }
 
 local function resetButtons()
@@ -320,8 +320,8 @@ function Cyclopedia.rejectTransfer()
             end
             ]]--
 
-            UI.TopBase.StatesOption:setOption("All States", true)
-            UI.TopBase.SortOption:setOption("Sort by name", true)
+            UI.TopBase.StatesOption:setOption(tr("All States"), true)
+            UI.TopBase.SortOption:setOption(tr("Sort by name"), true)
         end
 
         local function noCallback()

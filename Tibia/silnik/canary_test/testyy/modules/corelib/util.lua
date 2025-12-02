@@ -74,7 +74,7 @@ function connect(object, arg1, arg2, arg3)
         end
 
         if type(slot) ~= 'function' then
-            perror(debug.traceback('unable to connect a non function value'))
+            perror(debug.traceback(tr('unable to connect a non function value')))
         end
 
         if type(object[signal]) == 'table' then
@@ -100,7 +100,7 @@ function disconnect(object, arg1, arg2)
     elseif type(arg1) == 'table' then
         signalsAndSlots = arg1
     else
-        perror(debug.traceback('unable to disconnect'))
+        perror(debug.traceback(tr('unable to disconnect')))
     end
 
     for signal, slot in pairs(signalsAndSlots) do
@@ -126,7 +126,7 @@ end
 
 function newclass(name)
     if not name then
-        perror(debug.traceback('new class has no name.'))
+        perror(debug.traceback(tr('new class has no name.')))
     end
 
     local class = {}
@@ -148,7 +148,7 @@ end
 
 function extends(base, name)
     if not name then
-        perror(debug.traceback('extended class has no name.'))
+        perror(debug.traceback(tr('extended class has no name.')))
     end
 
     local derived = {}

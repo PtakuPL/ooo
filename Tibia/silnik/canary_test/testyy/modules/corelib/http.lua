@@ -10,7 +10,7 @@ HTTP = {
 
 function HTTP.get(url, callback)
   if not g_http or not g_http.get then
-    return error("HTTP.get is not supported")
+    return error(tr("HTTP.get is not supported"))
   end
   local operation = g_http.get(url, HTTP.timeout)
   HTTP.operations[operation] = { type = "get", url = url, callback = callback }
@@ -19,7 +19,7 @@ end
 
 function HTTP.getJSON(url, callback)
   if not g_http or not g_http.get then
-    return error("HTTP.getJSON is not supported")
+    return error(tr("HTTP.getJSON is not supported"))
   end
   local operation = g_http.get(url, HTTP.timeout)
   HTTP.operations[operation] = { type = "get", json = true, url = url, callback = callback }
@@ -28,7 +28,7 @@ end
 
 function HTTP.post(url, data, callback, checkContentLength)
   if not g_http or not g_http.post then
-    return error("HTTP.post is not supported")
+    return error(tr("HTTP.post is not supported"))
   end
   local is_json = false
   if type(data) == "table" then
@@ -47,7 +47,7 @@ end
 
 function HTTP.postJSON(url, data, callback)
   if not g_http or not g_http.post then
-    return error("HTTP.postJSON is not supported")
+    return error(tr("HTTP.postJSON is not supported"))
   end
   if type(data) == "table" then
     data = json.encode(data)
@@ -59,7 +59,7 @@ end
 
 function HTTP.download(url, file, callback, progressCallback)
   if not g_http or not g_http.download then
-    return error("HTTP.download is not supported")
+    return error(tr("HTTP.download is not supported"))
   end
   local operation = g_http.download(url, file, HTTP.timeout)
   HTTP.operations[operation] = {
@@ -74,7 +74,7 @@ end
 
 function HTTP.downloadImage(url, callback)
   if not g_http or not g_http.download then
-    return error("HTTP.downloadImage is not supported")
+    return error(tr("HTTP.downloadImage is not supported"))
   end
   if HTTP.images[url] ~= nil then
     if callback then
@@ -91,7 +91,7 @@ end
 
 function HTTP.webSocket(url, callbacks, timeout, jsonWebsocket)
   if not g_http or not g_http.ws then
-    return error("WebSocket is not supported")
+    return error(tr("WebSocket is not supported"))
   end
   if not timeout or timeout < 1 then
     timeout = HTTP.websocketTimeout

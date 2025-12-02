@@ -580,12 +580,12 @@ function onOfferBuy(self)
     local msg
     if self.count and self.count > 1 then
         msg =
-            "Do you want to buy " ..
-            self.count .. "x " .. selectedOffer.data.name .. " for " .. comma_value(self.price) .. " points?"
+            tr("Do you want to buy") .. " " ..
+            self.count .. "x " .. selectedOffer.data.name .. " " .. tr("for") .. " " .. comma_value(self.price) .. " " .. tr("points?")
     else
         msg =
-            "Do you want to buy " ..
-            selectedOffer.data.name .. " for " .. comma_value(selectedOffer.data.price) .. " points?"
+            tr("Do you want to buy") .. " " ..
+            selectedOffer.data.name .. " " .. tr("for") .. " " .. comma_value(selectedOffer.data.price) .. " " .. tr("points?")
     end
 
     if selectedOffer.data.name == "Name Change" then
@@ -703,10 +703,10 @@ function onGameShopMsg(data)
     local title = nil
     local close = false
     if type == "info" then
-        title = "Store Information"
+        title = tr("Store Information")
         close = data.close
     elseif type == "error" then
-        title = "Store Error"
+        title = tr("Store Error")
         close = true
     end
 

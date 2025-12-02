@@ -292,7 +292,7 @@ function updateFps(fps)
             end
 
             local midFps = math.floor((fpsMin + fpsMax) / 2)
-            fpsLabel:setTooltip('Min: ' .. fpsMin .. '\nMid: ' .. midFps .. '\nMax: ' .. fpsMax)
+            fpsLabel:setTooltip(tr('Min:') .. ' ' .. fpsMin .. '\n' .. tr('Mid:') .. ' ' .. midFps .. '\n' .. tr('Max:') .. ' ' .. fpsMax)
         else
             fpsLabel:removeTooltip()
         end

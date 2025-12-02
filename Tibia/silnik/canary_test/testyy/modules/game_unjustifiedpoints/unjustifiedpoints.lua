@@ -129,10 +129,10 @@ function onSkullChange(localPlayer, skull)
 
     if skull == SkullRed or skull == SkullBlack then
         currentSkullWidget:setIcon(getSkullImagePath(skull))
-        currentSkullWidget:setTooltip('Remaining skull time')
+        currentSkullWidget:setTooltip(tr('Remaining skull time'))
     else
         currentSkullWidget:setIcon('')
-        currentSkullWidget:setTooltip('You have no skull')
+        currentSkullWidget:setTooltip(tr('You have no skull'))
     end
 
     daySkullWidget:setIcon(getSkullImagePath(getNextSkullId(skull)))

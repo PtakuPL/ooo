@@ -99,7 +99,7 @@ function init()
 
     hotkeyActionCombo = hotkeysWindow:getChildById('hotkeyActionCombo')
 
-    hotkeyActionCombo:addOption('None', 0)
+    hotkeyActionCombo:addOption(tr('None'), 0)
     for _, action in pairs(HotkeyActions) do
         hotkeyActionCombo:addOption(action.text, action.id)
     end
@@ -861,15 +861,15 @@ end
 
 function printHotkeyBlockingInfo()
     local count, sources = getHotkeyBlockingInfo()
-    print("=== Hotkey Blocking Info ===")
-    print("Total blocks: " .. count)
+    print("=== " .. tr("Hotkey Blocking Info") .. " ===")
+    print(tr("Total blocks:") .. " " .. count)
     if count > 0 then
-        print("Active sources:")
+        print(tr("Active sources:"))
         for i, source in ipairs(sources) do
             print("  " .. i .. ". " .. source)
         end
     else
-        print("No active blocks")
+        print(tr("No active blocks"))
     end
     print("===========================")
 end

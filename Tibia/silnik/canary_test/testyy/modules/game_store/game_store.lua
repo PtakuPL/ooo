@@ -983,7 +983,7 @@ function chooseOffert(self, focusedChild)
                         destroyWindow(processingWindow)
                     end
                     controllerShop.ui:hide()
-                    processingWindow = displayGeneralBox('Processing purchase.', 'Your purchase is being processed',
+                    processingWindow = displayGeneralBox(tr('Processing purchase.'), tr('Your purchase is being processed'),
                     {
                       { text = tr('ok'),  callback = closeWindow },
                       anchor = 50

@@ -352,7 +352,7 @@ local function onOpenRewardWall(bonusShrines, nextRewardTime, dayStreakDay, wasD
     updateDailyRewards(dayStreakDay, wasDailyRewardTaken)
     rewardWallController.ui.restingAreaPanel.restingAreaInfo.rewardStreakIcon:setText(dayStreakLevel)
     rewardWallController.ui.restingAreaPanel.restingAreaInfo.timeLeft:setText(
-        (timeLeft == 0 and "Expired") or (timeLeft == 90001 and "< 1 min") or timeLeft)
+        (timeLeft == 0 and tr("Expired")) or (timeLeft == 90001 and tr("< 1 min")) or timeLeft)
     rewardWallController.ui.restingAreaPanel.restingAreaInfo.restingAreaGold.text:setText(tokens)
     rewardWallController.ui.footerPanel.footerGold1.text:setText(tokens)
     rewardWallController.ui.restingAreaPanel.restingAreaInfo.rewardStreakIcon:setImageSource(
@@ -645,7 +645,7 @@ function rewardWallController:onhoverRewardType(event)
             premium = string.format(tr("Reward for Premium Accounts:\n * %d minutes 50%% XP Boost"), premiumAmount)
         }
     else
-        print("WARNING: Unknown rewardType:", rewardType)
+        print(tr("WARNING: Unknown rewardType:"), rewardType)
         return
     end
 

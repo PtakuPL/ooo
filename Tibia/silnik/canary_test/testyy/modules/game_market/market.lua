@@ -1419,7 +1419,7 @@ function Market.createNewOffer()
     local timeCheck = os.time() - lastCreatedOffer
     if timeCheck < offerExhaust[type] then
         local waitTime = math.ceil(offerExhaust[type] - timeCheck)
-        errorMsg = errorMsg .. 'You must wait ' .. waitTime .. ' seconds before creating a new offer.\n'
+        errorMsg = errorMsg .. tr('You must wait') .. ' ' .. waitTime .. ' ' .. tr('seconds before creating a new offer.') .. '\n'
     end
 
     if errorMsg ~= '' then

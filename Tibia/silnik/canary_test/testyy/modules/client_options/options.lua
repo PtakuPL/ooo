@@ -352,11 +352,11 @@ function toggle()
 end
 
 function addTab(name, panel, icon)
-    print("to prevent the error use Ex = g_ui.loadUI('option_healthcircle',modules.client_options:getPanel()) ")
+    print(tr("to prevent the error use Ex = g_ui.loadUI('option_healthcircle',modules.client_options:getPanel())"))
 end
 
 function removeTab(v)
-    print("to prevent the error use Ex   modules.client_options.addButton('Interface', 'HP/MP Circle', optionPanel)")
+    print(tr("to prevent the error use Ex   modules.client_options.addButton('Interface', 'HP/MP Circle', optionPanel)"))
 end
 
 local function toggleSubCategories(parent, isOpen)
@@ -426,7 +426,7 @@ local function createSubWidget(parent, subId, subButton)
             panelToShow:setVisible(true)
             controller.ui.selectedOption = panelToShow
         else
-            print("Error: panelToShow is nil or does not exist in panels")
+            print(tr("Error: panelToShow is nil or does not exist in panels"))
         end
         if subWidget.callbackFunc then
             subWidget.callbackFunc()
@@ -514,7 +514,7 @@ function configureCharacterCategories()
                 panelToShow:setVisible(true)
                 controller.ui.selectedOption = panelToShow
             else
-                print("Error: panelToShow is nil or does not exist in panels")
+                print(tr("Error: panelToShow is nil or does not exist in panels"))
             end
 
             controller.ui.openedCategory = parent

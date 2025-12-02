@@ -388,8 +388,8 @@ function Cyclopedia.acceptTransfer()
             Cyclopedia.House.ignore = true
 
             -- g_game.requestShowHouses("")
-            UI.TopBase.StatesOption:setOption("All States", true)
-            UI.TopBase.SortOption:setOption("Sort by name", true)
+            UI.TopBase.StatesOption:setOption(tr("All States"), true)
+            UI.TopBase.SortOption:setOption(tr("Sort by name"), true)
         end
 
         local function noCallback()
@@ -463,8 +463,8 @@ function Cyclopedia.cancelTransfer()
             end
             ]]--
 
-            UI.TopBase.StatesOption:setOption("All States", true)
-            UI.TopBase.SortOption:setOption("Sort by name", true)
+            UI.TopBase.StatesOption:setOption(tr("All States"), true)
+            UI.TopBase.SortOption:setOption(tr("Sort by name"), true)
         end
 
         local function noCallback()
@@ -574,8 +574,8 @@ function Cyclopedia.transferHouse()
             end
             ]]--
 
-            UI.TopBase.StatesOption:setOption("All States", true)
-            UI.TopBase.SortOption:setOption("Sort by name", true)
+            UI.TopBase.StatesOption:setOption(tr("All States"), true)
+            UI.TopBase.SortOption:setOption(tr("Sort by name"), true)
         end
 
         local function noCallback()

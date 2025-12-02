@@ -198,7 +198,7 @@ function StatsBar.getCurrentStatsBarWithPosition()
     -- i.e. statsBarTop.largeOnTop
         return statsBar[fullPosition]
     else
-        print("No stats bar with position found for:", statsBar)
+        print(tr("No stats bar with position found for:"), statsBar)
     end
 
     return nil
@@ -221,7 +221,7 @@ function StatsBar.getCurrentStatsBar()
     if statsBars[statsBar] then
         return statsBars[statsBar]
     else
-        print("No stats bar found for:", statsBar)
+        print(tr("No stats bar found for:"), statsBar)
     end
 
     return nil
@@ -385,7 +385,7 @@ function constructStatsBar(dimension, placement)
 
     modules.game_healthcircle.setStatsBarOption()
     else 
-        print("No stats bar found for:", dimensionOnPlacement .. " on constructStatsBar()")
+        print(tr("No stats bar found for:"), dimensionOnPlacement .. " on constructStatsBar()")
     end
 end
 
@@ -497,7 +497,7 @@ function StatsBar.reloadCurrentTab()
     if statsBarsDimensions[dimension] then
         return constructStatsBar(dimension, currentStats.placement)
     else 
-        print("No stats bars dimensions found: ", dimension, " on reloadCurrentTab()")
+        print(tr("No stats bars dimensions found:"), dimension, " on reloadCurrentTab()")
         return
     end
 end

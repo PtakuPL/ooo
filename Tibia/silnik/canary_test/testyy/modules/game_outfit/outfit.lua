@@ -348,7 +348,7 @@ function create(player, outfitList, creatureMount, mountList, familiarList, wing
 
     if settings.currentPreset == nil then
         loadDefaultSettings()
-        print("game_outfit error funtion loadSettings()")
+        print(tr("game_outfit error function loadSettings()"))
     end
     if settings.currentPreset > 0 then
         local preset = settings.presets[settings.currentPreset]

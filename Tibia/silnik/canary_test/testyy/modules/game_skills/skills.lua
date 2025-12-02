@@ -693,13 +693,13 @@ end
 
 function onFlatDamageHealingChange(localPlayer, flatBonus)
     local tooltips =
-        "This flat bonus is the main source of your character's power, added \nto most of the damage and healing values you cause."
+        tr("This flat bonus is the main source of your character's power, added \nto most of the damage and healing values you cause.")
     setSkillValueWithTooltips('damageHealing', flatBonus, tooltips, false)
 end
 
 function onAttackInfoChange(localPlayer, attackValue, attackElement)
     local tooltips =
-        "This is your character's basic attack power whenever you enter a \nfight with a weapon or your fists. It does not apply to any spells \nyou cast. The attack value is calculated from the weapon's attack\n value, the corresponding weapon skill, combat tactics, the bonus \nreceived from the Revelation Perks and the player's level. The \nvalue represents the average damage you would inflict on a\ncreature which had no kind of defence or protection."
+        tr("This is your character's basic attack power whenever you enter a \nfight with a weapon or your fists. It does not apply to any spells \nyou cast. The attack value is calculated from the weapon's attack\n value, the corresponding weapon skill, combat tactics, the bonus \nreceived from the Revelation Perks and the player's level. The \nvalue represents the average damage you would inflict on a\ncreature which had no kind of defence or protection.")
     setSkillValueWithTooltips('attackValue', attackValue, tooltips, false)
     local skill = skillsWindow:recursiveGetChildById("attackValue")
     if skill then
@@ -721,12 +721,12 @@ end
 
 function onImbuementsChange(localPlayer, lifeLeech, manaLeech, critChance, critDamage, onslaught)
     local lifeLeechTooltips =
-        "You have a +11.4% chance to trigger Onslaught, granting you 60% increased damage for all attacks."
-    local manaLeechTooltips = "You have a +1% chance to cause +1% extra damage."
+        tr("You have a +11.4% chance to trigger Onslaught, granting you 60% increased damage for all attacks.")
+    local manaLeechTooltips = tr("You have a +1% chance to cause +1% extra damage.")
     local critChanceTooltips =
-        "Critical Hits deal more damage than normal attacks. They have a chance to be \ntriggered during combat, inflicting additional damage beyond the standard amount."
-    local critDamageTooltips = "You get +1% of the damage dealt as mana"
-    local onslaughtTooltips = "You get +1% of the damage dealt as hit points"
+        tr("Critical Hits deal more damage than normal attacks. They have a chance to be \ntriggered during combat, inflicting additional damage beyond the standard amount.")
+    local critDamageTooltips = tr("You get +1% of the damage dealt as mana")
+    local onslaughtTooltips = tr("You get +1% of the damage dealt as hit points")
     skillsWindow:recursiveGetChildById("criticalHit"):setVisible(true)
     setSkillValueWithTooltips('lifeLeech', lifeLeech, lifeLeechTooltips, true)
     setSkillValueWithTooltips('manaLeech', manaLeech, manaLeechTooltips, true)
@@ -765,12 +765,12 @@ end
 function onDefenseInfoChange(localPlayer, defense, armor, mitigation, dodge, damageReflection)
     skillsWindow:recursiveGetChildById("separadorOnDefenseInfoChange"):setVisible(true)
     local defenseToolstip =
-        "When attacked, you have a +9.6% chance to trigger Dodge, which \nwill fully mitigate the damage."
+        tr("When attacked, you have a +9.6% chance to trigger Dodge, which \nwill fully mitigate the damage.")
     local armorToolstip =
-        "Mitigation reduces most of the damage you take and varies based\non your shielding skill, equipped weapon, chosen combat tactics \nand any mitigation multipliers acquired in your Wheel of Destiny."
-    local mitigationToolstip = "This shows how well your armor protects you from all physical\nattacks."
+        tr("Mitigation reduces most of the damage you take and varies based\non your shielding skill, equipped weapon, chosen combat tactics \nand any mitigation multipliers acquired in your Wheel of Destiny.")
+    local mitigationToolstip = tr("This shows how well your armor protects you from all physical\nattacks.")
     local dodgetToolstip =
-        "This is your protection against all physical attacks in close combat \nas well as all distance physical attacks. The higher the defence value, the less damage you will take from melee physical hits. The defence\n value is calculated from your shield and/or weapon\n defence and the corresponding skill. Careful! \nYour defence value protects you only from hits of two creatures in a single round."
+        tr("This is your protection against all physical attacks in close combat \nas well as all distance physical attacks. The higher the defence value, the less damage you will take from melee physical hits. The defence\n value is calculated from your shield and/or weapon\n defence and the corresponding skill. Careful! \nYour defence value protects you only from hits of two creatures in a single round.")
     setSkillValueWithTooltips('defenceValue', defense, defenseToolstip, false)
     setSkillValueWithTooltips('armorValue', armor, armorToolstip, false)
     setSkillValueWithTooltips('mitigation', mitigation, mitigationToolstip, true)
@@ -781,15 +781,12 @@ end
 
 function onForgeBonusesChange(localPlayer, momentum, transcendence, amplification)
     skillsWindow:recursiveGetChildById("separadorOnForgeBonusesChange"):setVisible(true)
-    local momentumTooltip = "During combat, you have a +" .. math.floor(momentum * 10000) / 100 ..
-                                "% chance to trigger Momentum\n, which reduces all spell cooldowns by 2 seconds."
+    local momentumTooltip = tr("During combat, you have a +%s%% chance to trigger Momentum\n, which reduces all spell cooldowns by 2 seconds.", math.floor(momentum * 10000) / 100)
 
-    local transcendenceTooltip = "During combat, you have a +" .. math.floor(transcendence * 10000) / 100 ..
-                                     "% chance to trigger\nTranscendence, which transforms your character into a vocation-\nspecific avatar for 7 seconds. " ..
-                                     "While in this form, you will benefit\nfrom a 15% damage reduction and guaranteed critical hits that \ndeal an additional 15% damage."
+    local transcendenceTooltip = tr("During combat, you have a +%s%% chance to trigger\nTranscendence, which transforms your character into a vocation-\nspecific avatar for 7 seconds. While in this form, you will benefit\nfrom a 15%% damage reduction and guaranteed critical hits that \ndeal an additional 15%% damage.", math.floor(transcendence * 10000) / 100)
 
     local amplificationTooltip =
-        "Effects of tiered items are amplified by +" .. math.floor(amplification * 10000) / 100 .. "%."
+        tr("Effects of tiered items are amplified by +%s%%.", math.floor(amplification * 10000) / 100)
 
     setSkillValueWithTooltips('momentum', momentum, momentumTooltip, true)
     setSkillValueWithTooltips('transcendence', transcendence, transcendenceTooltip, true)

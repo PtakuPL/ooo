@@ -408,9 +408,9 @@ function CharacterList.create(characters, account, otui)
         local autoReconnect = not g_settings.getBoolean('autoReconnect', false)
         autoReconnectButton:setOn(autoReconnect)
         g_settings.set('autoReconnect', autoReconnect)
-        local statusText = autoReconnect and 'Auto reconnect: On' or 'Auto reconnect: off'
+        local statusText = autoReconnect and tr('Auto reconnect') .. ': ' .. tr('On') or tr('Auto reconnect') .. ': ' .. tr('Off')
         if not g_game.getFeature(GameEnterGameShowAppearance) then
-            statusText = autoReconnect and 'Auto reconnect:\n On' or 'Auto reconnect:\n off'
+            statusText = autoReconnect and tr('Auto reconnect') .. ':\n ' .. tr('On') or tr('Auto reconnect') .. ':\n ' .. tr('Off')
         end
         
         autoReconnectButton:setText(statusText)

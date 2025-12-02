@@ -55,7 +55,7 @@ MainWindow
     margin-top: 10
     text-align: left
     text-horizontal-auto-resize: true
-    text: Amount to gift: 0
+    !text: tr('Amount to gift: 0')
 
   UIWidget
     anchors.left: prev.right
@@ -99,7 +99,7 @@ MainWindow
     margin-top: 10
     text-align: left
     text-horizontal-auto-resize: true
-    text: Amount to gift: 0
+    !text: tr('Amount to gift: 0')
 
   UIWidget
     id: taskPointsLabelCoin

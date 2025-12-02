@@ -824,7 +824,7 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
     if modules.game_bot and useThing and useThing:isItem() then
         menu:addSeparator()
         local useThingId = useThing:getId()
-        menu:addOption("ID: " .. useThingId, function() g_window.setClipboardText(useThingId) end)
+        menu:addOption(tr("ID") .. ": " .. useThingId, function() g_window.setClipboardText(useThingId) end)
     end
 
     if g_game.getFeature(GameThingQuickLoot) and modules.game_quickloot and lookThing and not lookThing:isCreature() and lookThing:isPickupable() then

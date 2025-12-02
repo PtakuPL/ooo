@@ -645,7 +645,7 @@ function Cyclopedia.loadCharacterCombatStats(data, mitigation, additionalSkillsA
             widget.item:setVirtual(true)
             local minutes = concoctionsArray[i][2] / 60
             local itemName = widget.item:getItem():getMarketData().name
-            widget.item:setTooltip(string.format("%s: %.0f minutes", itemName, minutes))
+            widget.item:setTooltip(tr("%s: %.0f minutes", itemName, minutes))
             widget.amount:setVisible(false)
         end
     end

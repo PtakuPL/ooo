@@ -163,14 +163,14 @@ function Cyclopedia.loadBestiarySelectedCreature(data)
 
     local fullText = ""
     if data.killCounter >= data.lastProgressKillCount then
-        fullText = "(fully unlocked)"
+        fullText = tr("(fully unlocked)")
     end
 
-    UI.ListBase.CreatureInfo.ProgressBorder1:setTooltip(string.format(" %d / %d %s", data.killCounter,
+    UI.ListBase.CreatureInfo.ProgressBorder1:setTooltip(tr(" %d / %d %s", data.killCounter,
         data.thirdDifficulty, fullText))
-    UI.ListBase.CreatureInfo.ProgressBorder2:setTooltip(string.format(" %d / %d %s", data.killCounter,
+    UI.ListBase.CreatureInfo.ProgressBorder2:setTooltip(tr(" %d / %d %s", data.killCounter,
         data.secondUnlock, fullText))
-    UI.ListBase.CreatureInfo.ProgressBorder3:setTooltip(string.format(" %d / %d %s", data.killCounter,
+    UI.ListBase.CreatureInfo.ProgressBorder3:setTooltip(tr(" %d / %d %s", data.killCounter,
         data.lastProgressKillCount, fullText))
     UI.ListBase.CreatureInfo.LeftBase.TrackCheck.raceId = data.id
 

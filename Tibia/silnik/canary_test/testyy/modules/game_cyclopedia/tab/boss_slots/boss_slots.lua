@@ -75,11 +75,11 @@ function Cyclopedia.loadBossSlots(data)
     end
 
     local progress = UI.BoostedProgress
-    progress.ProgressBorder1:setTooltip(string.format(" %d / %d %s", data.playerPoints,
+    progress.ProgressBorder1:setTooltip(tr(" %d / %d %s", data.playerPoints,
         CONFIG[data.todaySlotData.bossRace].PROWESS, fullText))
-    progress.ProgressBorder2:setTooltip(string.format(" %d / %d %s", data.playerPoints,
+    progress.ProgressBorder2:setTooltip(tr(" %d / %d %s", data.playerPoints,
         CONFIG[data.todaySlotData.bossRace].EXPERTISE, fullText))
-    progress.ProgressBorder3:setTooltip(string.format(" %d / %d %s", data.playerPoints,
+    progress.ProgressBorder3:setTooltip(tr(" %d / %d %s", data.playerPoints,
         CONFIG[data.todaySlotData.bossRace].MASTERY, fullText))
 
     if data.playerPoints >= CONFIG[data.todaySlotData.bossRace].PROWESS then
@@ -262,11 +262,11 @@ function Cyclopedia.setActiveSlot(widget, slot, slotData, data, bossId)
     local fullText = slotData.killBonus >= CONFIG[slotData.bossRace].MASTERY and tr("(fully unlocked)") or ""
 
     local progress = widget.ActivedBoss.Progress
-    progress.ProgressBorder1:setTooltip(string.format(" %d / %d %s", slotData.killBonus,
+    progress.ProgressBorder1:setTooltip(tr(" %d / %d %s", slotData.killBonus,
         CONFIG[slotData.bossRace].PROWESS, fullText))
-    progress.ProgressBorder2:setTooltip(string.format(" %d / %d %s", slotData.killBonus,
+    progress.ProgressBorder2:setTooltip(tr(" %d / %d %s", slotData.killBonus,
         CONFIG[slotData.bossRace].EXPERTISE, fullText))
-    progress.ProgressBorder3:setTooltip(string.format(" %d / %d %s", slotData.killBonus,
+    progress.ProgressBorder3:setTooltip(tr(" %d / %d %s", slotData.killBonus,
         CONFIG[slotData.bossRace].MASTERY, fullText))
 
     progress.bronzeStar:setImageSource(slotData.killBonus >= CONFIG[slotData.bossRace].PROWESS and
@@ -298,8 +298,7 @@ function Cyclopedia.setActiveSlot(widget, slot, slotData, data, bossId)
         g_game.requestBossSlotAction(slot, 0)
     end
 
-    widget.ActivedBoss.RemoveButton:setTooltip(string.format(
-        tr("It will cost you %s gold to remove the currently selected boss from this slot."),
+    widget.ActivedBoss.RemoveButton:setTooltip(tr("It will cost you %s gold to remove the currently selected boss from this slot.",
         comma_value(slotData.removePrice)))
 end
 

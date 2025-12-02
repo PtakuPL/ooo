@@ -121,8 +121,8 @@ end
 
 local function premiumStatusWindwos(isPremium)
     rewardWallController.ui.premiumStatus.premiumMessage:setText(isPremium and
-                                                                     "Great! You benefit from the best possible rewards and bonuses due to your premium status." or
-                                                                     "With a Premium account, you would benefit from even better rewards and bonuses.")
+                                                                     tr("Great! You benefit from the best possible rewards and bonuses due to your premium status.") or
+                                                                     tr("With a Premium account, you would benefit from even better rewards and bonuses."))
     rewardWallController.ui.premiumStatus.premiumButton:setOn(not isPremium)
     rewardWallController.ui.infoPanel.free:setColor(isPremium and "#909090" or "#FFFFFF")
     rewardWallController.ui.infoPanel.premium:setColor(isPremium and "#FFFFFF" or "#909090")

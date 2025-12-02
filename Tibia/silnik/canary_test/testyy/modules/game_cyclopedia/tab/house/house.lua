@@ -64,13 +64,13 @@ end
 
 Cyclopedia.House = {}
 Cyclopedia.StateList = {
-    { Title = "All States" },
-    { Title = "Auctioned" },
-    { Title = "Rented" }
+    { Title = tr("All States") },
+    { Title = tr("Auctioned") },
+    { Title = tr("Rented") }
 }
 
 Cyclopedia.CityList = {
-    [0] = { Title = "Own Houses" },
+    [0] = { Title = tr("Own Houses") },
     { Title = "Ab'Dendriel" },
     { Title = "Ankrahmun" },
     { Title = "Carlin" },
@@ -1428,7 +1428,7 @@ function Cyclopedia.selectHouse(widget)
             button:setTooltip("")
         elseif widget.data.canBid == 11 then
             button:setTooltip(
-                "A character of your account already holds the highest bid for \nanother house. You may olny bid for one house at the same time.")
+                tr("A character of your account already holds the highest bid for \nanother house. You may only bid for one house at the same time."))
             button:setTooltipAlign(AlignTopLeft)
             button:setEnabled(false)
         else

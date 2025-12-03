@@ -70,7 +70,7 @@ jobs:
       - name: Get vcpkg commit ID (with fallback)
         id: vcpkg-step
         run: |
-          fallback='5b1214315250939257ef5d62ecdcbca18cf4fb1c'
+          fallback='4c4abc2e8727221ede31021349386dac674309b0'
           vcpkgCommitId=''
           if [ -f vcpkg.json ]; then
             vcpkgCommitId=$(grep '.builtin-baseline' vcpkg.json | awk -F: '{print $2}' | tr -d '", ')

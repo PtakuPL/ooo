@@ -69,6 +69,7 @@ jobs:
     - name: Configure and Build
       uses: lukka/run-cmake@main
       with:
+        cmakeListsTxtPath: ${{ github.workspace }}/Tibia/silnik/canary_test/testyy/CMakeLists.txt
         configurePreset: windows-debug-msbuild
         buildPreset: windows-debug-msbuild
 

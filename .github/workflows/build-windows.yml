@@ -53,8 +53,8 @@ jobs:
         id: vcpkg-commit
         shell: bash
         run: |
-          fallback=5b1214315250939257ef5d62ecdcbca18cf4fb1c
-          vcpkg_file="Tibia/silnik/canary_test/testyy/vcpkg.json"
+          fallback=a1049b68bfd84320dfcc89b5441d1ac0b76a8ad9
+          vcpkg_file="vcpkg.json"
           if [ -f "$vcpkg_file" ]; then
             commit=$(python -c "import json; print(json.load(open('$vcpkg_file')).get('builtin-baseline',''))" 2>/dev/null || echo "")
           else

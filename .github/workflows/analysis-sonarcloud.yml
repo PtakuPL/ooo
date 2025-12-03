@@ -81,7 +81,7 @@ jobs:
         shell: bash
         working-directory: Tibia/silnik/canary_test/testyy
         run: |
-          fallback=5b1214315250939257ef5d62ecdcbca18cf4fb1c
+          fallback=a1049b68bfd84320dfcc89b5441d1ac0b76a8ad9
           if [ -f vcpkg.json ]; then
             commit=$(python3 -c "import json; print(json.load(open('vcpkg.json')).get('builtin-baseline',''))")
           else

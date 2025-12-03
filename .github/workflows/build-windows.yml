@@ -113,3 +113,78 @@ jobs:
             Tibia/silnik/canary_test/testyy/build/CMakeFiles/CMakeOutput.log
             Tibia/silnik/canary_test/testyy/build/CMakeFiles/CMakeError.log
           if-no-files-found: warn
+
+  build-msys2:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: msys2 {0}
+        working-directory: Tibia/silnik/canary_test/testyy
+
+    env:
+      CMAKE_PREFIX_PATH: /mingw64
+      PKG_CONFIG_PATH: /mingw64/lib/pkgconfig:/mingw64/share/pkgconfig
+      CMAKE_BUILD_PARALLEL_LEVEL: 8
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: false
+
+      - name: Remove nested git directories (upstream mirrors)
+        run: |
+          rm -rf oryginall/canary-serwer/.git || true
+          rm -rf oryginall/otclient/.git || true
+
+      - name: Setup MSYS2 (MINGW64)
+        uses: msys2/setup-msys2@v2
+        with:
+          msystem: MINGW64
+          update: true
+          install: >-
+            base-devel
+            mingw-w64-x86_64-toolchain
+            mingw-w64-x86_64-cmake
+            mingw-w64-x86_64-ninja
+            mingw-w64-x86_64-harfbuzz
+            mingw-w64-x86_64-fribidi
+            mingw-w64-x86_64-freetype
+            mingw-w64-x86_64-openssl
+            mingw-w64-x86_64-openal
+            mingw-w64-x86_64-glew
+
+      - name: Configure (CMake + Ninja, MINGW64)
+        run: |
+          cmake -S . -B build \
+            -G "Ninja" \
+            -DCMAKE_PREFIX_PATH="$CMAKE_PREFIX_PATH" \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_VERBOSE_MAKEFILE=ON \
+            -DCMAKE_C_COMPILER=/mingw64/bin/gcc \
+            -DCMAKE_CXX_COMPILER=/mingw64/bin/g++
+
+      - name: Build (Release)
+        run: cmake --build build --parallel
+
+      - name: Upload artifacts
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-mingw64-release-${{ github.run_number }}
+          path: |
+            Tibia/silnik/canary_test/testyy/build/**/*.exe
+            Tibia/silnik/canary_test/testyy/build/**/*.dll
+            Tibia/silnik/canary_test/testyy/build/**/*.pdb
+          if-no-files-found: warn
+
+      - name: Upload CMake logs (on failure)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cmake-logs-windows-mingw64
+          path: |
+            Tibia/silnik/canary_test/testyy/build/CMakeFiles/CMakeOutput.log
+            Tibia/silnik/canary_test/testyy/build/CMakeFiles/CMakeError.log
+          if-no-files-found: warn

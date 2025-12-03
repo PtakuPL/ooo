@@ -126,7 +126,7 @@ jobs:
           $VCPKG_ROOT/vcpkg install || (echo "vcpkg manifest install failed; please check ports in vcpkg.json"; exit 1)
 
       - name: Install sonar-scanner
-        uses: SonarSource/sonarcloud-github-c-cpp@v1
+        uses: SonarSource/sonarqube-scan-action/install-build-wrapper@v6
 
       - name: Generate compilation database
         run: |
@@ -140,28 +140,29 @@ jobs:
 
       - name: Run PR sonar-scanner
         if: ${{ github.event_name == 'pull_request' || github.event_name == 'pull_request_target' }}
+        uses: SonarSource/sonarqube-scan-action@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          BRANCH: ${{ github.event.pull_request.head.ref }}
-        run: |
-          sonar-scanner \
-            --define sonar.cfamily.threads=${{ steps.cpu-count.outputs.count }} \
-            --define sonar.cfamily.cache.enabled=true \
-            --define sonar.cfamily.cache.path="$HOME/.cfamily" \
-            --define sonar.cfamily.compile-commands=build/compile_commands.json \
-            --define sonar.pullrequest.key=${{ github.event.pull_request.number }} \
-            --define sonar.pullrequest.branch=$BRANCH \
-            --define sonar.pullrequest.base=${{ github.event.pull_request.base.ref }}
+        with:
+          args: >
+            -Dsonar.cfamily.threads=${{ steps.cpu-count.outputs.count }}
+            -Dsonar.cfamily.cache.enabled=true
+            "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
+            -Dsonar.cfamily.compile-commands=build/compile_commands.json
+            -Dsonar.pullrequest.key=${{ github.event.pull_request.number }}
+            -Dsonar.pullrequest.branch=${{ github.event.pull_request.head.ref }}
+            -Dsonar.pullrequest.base=${{ github.event.pull_request.base.ref }}
 
       - name: Run sonar-scanner
         if: ${{ github.event_name == 'push' }}
+        uses: SonarSource/sonarqube-scan-action@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: |
-          sonar-scanner \
-            --define sonar.cfamily.threads=${{ steps.cpu-count.outputs.count }} \
-            --define sonar.cfamily.cache.enabled=true \
-            --define sonar.cfamily.cache.path="$HOME/.cfamily" \
-            --define sonar.cfamily.compile-commands=build/compile_commands.json
+        with:
+          args: >
+            -Dsonar.cfamily.threads=${{ steps.cpu-count.outputs.count }}
+            -Dsonar.cfamily.cache.enabled=true
+            "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
+            -Dsonar.cfamily.compile-commands=build/compile_commands.json

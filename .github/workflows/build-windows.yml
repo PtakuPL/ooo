@@ -82,11 +82,12 @@ jobs:
       - name: Configure (CMake + vcpkg toolchain, VS generator)
         shell: pwsh
         run: |
+          # Note: CMAKE_BUILD_TYPE is not used with multi-config generators like Visual Studio
+          # The build configuration is set via --config during the build step instead
           cmake -S . -B build `
             -G "Visual Studio 17 2022" -A x64 `
             -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT\scripts\buildsystems\vcpkg.cmake" `
             -DVCPKG_TARGET_TRIPLET="$env:VCPKG_DEFAULT_TRIPLET" `
-            -DCMAKE_BUILD_TYPE=Release `
             -DCMAKE_VERBOSE_MAKEFILE=ON
 
       - name: Build (Release)

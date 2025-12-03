@@ -114,6 +114,8 @@ if (MSVC)
   target_compile_options(${PROJECT_NAME} PUBLIC /utf-8 /bigobj)
   # Link-Time Code Generation triggers ICEs in some TU; keep it disabled explicitly
   target_link_options(${PROJECT_NAME} PRIVATE /LTCG:OFF)
+  # Prevent Windows.h from defining min/max macros that conflict with std::min/std::max
+  target_compile_definitions(${PROJECT_NAME} PRIVATE NOMINMAX)
 endif()
 
 if(THREADS_HAVE_PTHREAD_ARG)

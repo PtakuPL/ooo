@@ -30,6 +30,11 @@
     { "name": "luajit" },
     { "name": "pkgconf", "host": true, "platform": "windows" }
   ],
-  "builtin-baseline": "4c4abc2e8727221ede31021349386dac674309b0"
-  
+  "builtin-baseline": "4c4abc2e8727221ede31021349386dac674309b0",
+  "overrides": [
+    {
+      "name": "bshoshany-thread-pool",
+      "version": "4.1.0"
+    }
+  ]
 }

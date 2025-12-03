@@ -30,8 +30,8 @@ jobs:
 
   android:
     name: android-apk
-    runs-on: windows-2022
-    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
     defaults:
       run:
         working-directory: Tibia/silnik/canary_test/testyy
@@ -54,50 +54,35 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Ensure 7zip
-        run: choco install -y 7zip
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
 
-      - name: Download Android build bundle
-        shell: powershell
-        run: |
-          $files = @(
-            @{ Name = 'jdk.zip'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/jdk8u302-b08.zip' },
-            @{ Name = 'ndk.zip'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/android-ndk-r23c-windows.zip' },
-            @{ Name = 'ant.zip'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/apache-ant-1.9.7-bin.zip' },
-            @{ Name = 'android_libs.7z'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/android-libs.7z' },
-            @{ Name = 'build-tools.zip'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/build-tools_r30-windows.zip' },
-            @{ Name = 'create_android_assets.ps1'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/create_android_assets.ps1' }
-          )
-          foreach ($f in $files) { Invoke-WebRequest -Uri $f.Url -OutFile $f.Name }
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11'
 
-      - name: Extract bundles
-        shell: powershell
+      - name: Build APK with Gradle
+        working-directory: Tibia/silnik/canary_test/testyy/android
         run: |
-          New-Item -ItemType Directory -Force -Path C:\Android\android-sdk | Out-Null
-          7z x jdk.zip -aoa -oC:\Android\android-sdk
-          7z x ndk.zip -aoa -oC:\Android\android-sdk
-          7z x ant.zip -aoa -oC:\Android\android-sdk
-          7z x android_libs.7z -aoa -oC:\Android
-          7z x build-tools.zip -aoa -oC:\Android\android-sdk
+          chmod +x ./gradlew
+          ./gradlew assembleRelease --no-daemon --stacktrace
 
-      - name: Prepare assets (data.zip)
-        shell: powershell
+      - name: Find APK
+        id: find-apk
+        working-directory: Tibia/silnik/canary_test/testyy/android
         run: |
-          powershell -ExecutionPolicy Bypass -File .\create_android_assets.ps1
-
-      - name: Build APK (ARMv7)
-        shell: powershell
-        run: |
-          cd android
-          $env:VS_AndroidHome="C:\Android\android-sdk\build-tools_r30-windows"
-          $env:VS_NdkRoot="C:\Android\android-sdk\android-ndk-r23c"
-          $env:VS_AntHome="C:\Android\android-sdk\apache-ant-1.9.7"
-          $env:VS_JavaHome="C:\Android\android-sdk\jdk8u302-b08"
-          MSBuild.exe /p:Configuration=Release /p:Platform="ARM" /p:BUILD_REVISION=${{ github.run_number }}
+          APK_PATH=$(find . -name "*.apk" -type f | head -n 1)
+          if [ -z "$APK_PATH" ]; then
+            echo "No APK found"
+            exit 1
+          fi
+          echo "apk_path=$APK_PATH" >> "$GITHUB_OUTPUT"
+          echo "Found APK: $APK_PATH"
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: otclient-android-armv7-${{ github.sha }}
-          path: Tibia/silnik/canary_test/testyy/android/otclientv8/ARM/Release/otclientv8_armv7a.apk
-          if-no-files-found: error
+          name: otclient-android-${{ github.sha }}
+          path: ${{ steps.find-apk.outputs.apk_path }}
+          if-no-files-found: warn

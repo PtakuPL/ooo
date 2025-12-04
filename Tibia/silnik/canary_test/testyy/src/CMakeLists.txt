@@ -750,8 +750,8 @@ if(MSVC)
           ${DirectX_LIBRARY}
           ${DirectX_LIBRARIES}
           ${OGG_LIBRARY}
-          ${VORBISFILE_LIBRARY}
           ${VORBIS_LIBRARY}
+          ${VORBISFILE_LIBRARY}
           ${GMP_LIBRARY}
           ${OPENSSL_LIBRARIES}
           ${DBGHELP_LIBRARY}
@@ -793,8 +793,8 @@ elseif(ANDROID)
           ${NLOHMANN_JSON_LIBRARY}
           ${EGL_LIBRARY}
           ${OGG_LIBRARY}
-          ${VORBISFILE_LIBRARY}
           ${VORBIS_LIBRARY}
+          ${VORBISFILE_LIBRARY}
           ${GMP_LIBRARY}
           ${OpenAL_LIBRARY}
           ${OPENSSL_LIBRARIES}
@@ -845,8 +845,8 @@ elseif(WASM)
           ${DirectX_LIBRARY}
           ${DirectX_LIBRARIES}
           ${OGG_LIBRARY}
-          ${VORBISFILE_LIBRARY}
           ${VORBIS_LIBRARY}
+          ${VORBISFILE_LIBRARY}
           ${GMP_LIBRARY}
           ${STDUUID}
           ${FOUNDATION}
@@ -930,8 +930,8 @@ else() # Linux
           ${DirectX_LIBRARY}
           ${DirectX_LIBRARIES}
           ${OGG_LIBRARY}
-          ${VORBISFILE_LIBRARY}
           ${VORBIS_LIBRARY}
+          ${VORBISFILE_LIBRARY}
           ${GMP_LIBRARY}
           ${STDUUID}
           ${FOUNDATION}

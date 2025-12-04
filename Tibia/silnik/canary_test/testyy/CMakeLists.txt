@@ -19,6 +19,12 @@ endif()
 set(VCPKG_FEATURE_FLAGS "versions")
 set(VCPKG_BUILD_TYPE "release")
 
+# For MSVC with static triplet (x64-windows-static), use static runtime library
+# This ensures consistency between vcpkg libraries and project code
+if(MSVC AND VCPKG_TARGET_TRIPLET MATCHES ".*-static$")
+    set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+endif()
+
 if (VCPKG_TARGET_ANDROID)
     include("cmake/vcpkg_android.cmake")
 	set(Android_INCLUDES ${Android_INCLUDES} ${CMAKE_SOURCE_DIR}/android/app/libs/include)

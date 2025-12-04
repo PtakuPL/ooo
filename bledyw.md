@@ -1,6 +1,20 @@
-# Błędy kompilacji CI/CD
+# Błędy kompilacji CI/CD - Kompletny raport
 
-## Windows Build (441 errors, 3 warnings)
+## Aktualny status workflow na master (2025-12-04)
+
+| Workflow | Status | Plik | Uwagi |
+|----------|--------|------|-------|
+| build-linux | ✅ SUCCESS | build-linux.yml | Run #300 |
+| Build - Ubuntu | ✅ SUCCESS | build-ubuntu.yml | Run #44 |
+| Build - Windows - Solution | ✅ SUCCESS | build-windows-solution.yml | Run #32 |
+| build-windows (vcpkg) | ❌ FAILURE | build-windows.yml | Run #298 - 441 errors |
+| Build - Emscripten | ❌ FAILURE | build-browser.yml | LuaJIT not supported |
+| Build - Android | ❌ FAILURE | build-android.yml | sdkmanager not found |
+| Analysis - SonarCloud | ❌ FAILURE | analysis-sonarcloud.yml | Missing SONAR_TOKEN |
+
+---
+
+## 1. Windows Build - vcpkg (441 errors, 3 warnings)
 
 ### RuntimeLibrary Mismatch (LNK2038)
 Biblioteki vcpkg skompilowane z `/MT` (static), ale projekt kompilowany z `/MD` (dynamic).
@@ -123,7 +137,7 @@ D:\a\ooo\ooo\Tibia\silnik\canary_test\testyy\Release\otclient.exe : fatal error 
 
 ---
 
-## Emscripten Build
+## 2. Build - Emscripten (build-browser.yml)
 
 ### LuaJIT Architecture Error
 ```
@@ -141,9 +155,11 @@ Makefile:271: *** Unsupported target architecture.  Stop.
 
 **Przyczyna:** LuaJIT nie wspiera architektury wasm32-emscripten. Należy użyć `lua` zamiast `luajit` dla tej platformy.
 
+**Rozwiązanie (zaimplementowane w PR):** W `vcpkg.json` dodano warunek platformy dla `luajit` (tylko windows | linux | osx) i dodano `lua` jako zależność dla wasm32-emscripten.
+
 ---
 
-## Android Build
+## 3. Build - Android (build-android.yml)
 
 ### sdkmanager Not Found
 ```
@@ -156,30 +172,110 @@ At D:\a\_temp\e2a5c34e-45de-4bf4-92a4-8e1f4dd29387.ps1:3 char:12
     + FullyQualifiedErrorId : CommandNotFoundException
 ```
 
-**Przyczyna:** `sdkmanager` nie jest w PATH na Windows runner. Należy użyć pełnej ścieżki do sdkmanager lub użyć preinstalowanego CMake.
+**Przyczyna:** `sdkmanager` nie jest w PATH na Windows runner.
+
+**Rozwiązanie (zaimplementowane w PR):** Użycie pełnej ścieżki do sdkmanager: `$env:ANDROID_HOME\cmdline-tools\latest\bin\sdkmanager.bat`
 
 ---
 
-## Podsumowanie błędów
+## 4. Analysis - SonarCloud (analysis-sonarcloud.yml)
 
-| Platforma | Błędy | Ostrzeżenia | Główna przyczyna |
-|-----------|-------|-------------|------------------|
-| Windows | 441 | 3 | RuntimeLibrary mismatch (MT vs MD) + vorbis linking |
-| Emscripten | 2 | 0 | LuaJIT nie wspiera wasm32 |
-| Android | 1 | 0 | sdkmanager nie w PATH |
+### Missing SONAR_TOKEN Secret
+```
+Error: You must define the following environment variable to run this GitHub Action: SONAR_TOKEN
+```
+
+**Przyczyna:** Brak skonfigurowanego sekretu `SONAR_TOKEN` w repozytorium.
+
+**Rozwiązanie:** Wymaga ręcznej konfiguracji przez właściciela repozytorium:
+1. Wygenerować token na https://sonarcloud.io/account/security
+2. Dodać jako GitHub Secret: Settings → Secrets → Actions → `SONAR_TOKEN`
+
+### Git Submodule Error
+```
+warning: Could not find remote repository for submodule 'Tibia/silnik/canary_test/oryginall/canary-serwer'
+```
+
+**Przyczyna:** Brakujący wpis w `.gitmodules` lub nieprawidłowy URL repozytorium.
+
+---
+
+## 5. build-linux (build-linux.yml) - ✅ SUCCESS
+
+Aktualnie działa poprawnie (Run #300).
+
+---
+
+## 6. Build - Ubuntu (build-ubuntu.yml) - ✅ SUCCESS
+
+Aktualnie działa poprawnie (Run #44).
+
+---
+
+## 7. Build - Windows - Solution (build-windows-solution.yml) - ✅ SUCCESS
+
+Aktualnie działa poprawnie (Run #32).
+
+---
+
+## Podsumowanie wszystkich workflow
+
+| Platforma | Workflow | Błędy | Status | Główna przyczyna |
+|-----------|----------|-------|--------|------------------|
+| Windows (vcpkg) | build-windows.yml | 441 | ❌ FAILURE | RuntimeLibrary mismatch (MT vs MD) + vorbis linking |
+| Windows (Solution) | build-windows-solution.yml | 0 | ✅ SUCCESS | - |
+| Emscripten | build-browser.yml | 2 | ❌ FAILURE | LuaJIT nie wspiera wasm32 |
+| Android | build-android.yml | 1 | ❌ FAILURE | sdkmanager nie w PATH |
+| SonarCloud | analysis-sonarcloud.yml | 2 | ❌ FAILURE | Brak SONAR_TOKEN + submodule |
+| Linux | build-linux.yml | 0 | ✅ SUCCESS | - |
+| Ubuntu | build-ubuntu.yml | 0 | ✅ SUCCESS | - |
 
 ---
 
 ## Proponowane rozwiązania
 
-### Windows
-1. **RuntimeLibrary fix**: Ustawić `CMAKE_MSVC_RUNTIME_LIBRARY` na `MultiThreaded$<$<CONFIG:Debug>:Debug>` dla static triplet
-2. **Vorbis fix**: Upewnić się, że `vorbis.lib` jest linkowany przed `vorbisfile.lib`, lub jawnie dodać `vorbis` do target_link_libraries
+### 1. Windows (vcpkg) - build-windows.yml
 
-### Emscripten
+**Problem:** RuntimeLibrary mismatch (MT vs MD) + Vorbis unresolved externals
+
+**Rozwiązanie:**
+1. **RuntimeLibrary fix**: Ustawić `CMAKE_MSVC_RUNTIME_LIBRARY` na `MultiThreaded$<$<CONFIG:Debug>:Debug>` dla static triplet lub zmienić vcpkg triplet na `x64-windows` (dynamic)
+2. **Vorbis fix**: Upewnić się, że `vorbis.lib` jest linkowany przed `vorbisfile.lib`, lub jawnie dodać `vorbis` do target_link_libraries
+3. **Alternatywa**: Usunąć flagi `/flto=auto` które nie są obsługiwane przez MSVC
+
+### 2. Emscripten - build-browser.yml
+
+**Problem:** LuaJIT nie wspiera architektury wasm32-emscripten
+
+**Rozwiązanie (zaimplementowane w PR):**
 1. W `vcpkg.json` dodać warunek platformy dla `luajit` (tylko windows | linux | osx)
 2. Dodać `lua` jako zależność dla wasm32-emscripten
 
-### Android
+### 3. Android - build-android.yml
+
+**Problem:** sdkmanager nie jest w PATH na Windows runner
+
+**Rozwiązanie (zaimplementowane w PR):**
 1. Użyć pełnej ścieżki do sdkmanager: `$env:ANDROID_HOME\cmdline-tools\latest\bin\sdkmanager.bat`
 2. Lub użyć preinstalowanego CMake z GitHub runners zamiast instalować przez sdkmanager
+
+### 4. SonarCloud - analysis-sonarcloud.yml
+
+**Problem:** Brak skonfigurowanego sekretu SONAR_TOKEN
+
+**Rozwiązanie (wymaga ręcznej konfiguracji):**
+1. Wygenerować token na https://sonarcloud.io/account/security
+2. Dodać jako GitHub Secret: Settings → Secrets → Actions → `SONAR_TOKEN`
+3. Opcjonalnie: naprawić `.gitmodules` dla brakującego submodule
+
+---
+
+## Status napraw w tym PR
+
+| Workflow | Status naprawy | Commit |
+|----------|---------------|--------|
+| models-demo.yml | ✅ Naprawione | `cd6f8ee` - polskie słowa kluczowe, hardcoded token |
+| build-browser.yml (Emscripten) | ✅ Naprawione | `b0e471f` - LuaJIT → lua dla wasm32 |
+| build-android.yml | ✅ Naprawione | `c4fb634` - pełna ścieżka do sdkmanager |
+| build-windows.yml (vcpkg) | ⏳ W trakcie | RuntimeLibrary + vorbis - wymaga dalszych zmian |
+| analysis-sonarcloud.yml | ⚠️ Wymaga konfiguracji | Użytkownik musi dodać SONAR_TOKEN secret |

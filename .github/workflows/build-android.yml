@@ -80,6 +80,12 @@ jobs:
           7z x android_libs.7z -aoa -oC:\Android
           7z x build-tools.zip -aoa -oC:\Android\android-sdk
 
+      - name: Install CMake via sdkmanager
+        shell: powershell
+        run: |
+          # Install CMake 3.22.1 that's available in Android SDK
+          echo "y" | sdkmanager --install "cmake;3.22.1"
+
       - name: Prepare assets (data.zip)
         shell: powershell
         run: |
@@ -95,7 +101,7 @@ jobs:
         working-directory: Tibia/silnik/canary_test/testyy/android
         env:
           ANDROID_NDK_HOME: C:\Android\android-sdk\android-ndk-r23c
-          ANDROID_SDK_ROOT: C:\Android\android-sdk
+          ANDROID_SDK_ROOT: ${{ env.ANDROID_HOME }}
         run: |
           chmod +x ./gradlew 2>/dev/null || true
           ./gradlew assembleRelease --no-daemon --stacktrace

@@ -145,6 +145,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
+          projectBaseDir: Tibia/silnik/canary_test/testyy
           args: >
             -Dsonar.cfamily.threads=${{ steps.cpu-count.outputs.count }}
             -Dsonar.cfamily.cache.enabled=true
@@ -161,6 +162,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
+          projectBaseDir: Tibia/silnik/canary_test/testyy
           args: >
             -Dsonar.cfamily.threads=${{ steps.cpu-count.outputs.count }}
             -Dsonar.cfamily.cache.enabled=true

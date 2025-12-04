@@ -22,7 +22,9 @@
 
 #pragma once
 
-#include <BS_thread_pool.hpp>
+// Use local copy of BS_thread_pool.hpp (v4.1.0) to ensure API compatibility
+// vcpkg may install newer version (v5.0.0) with different API (submit_task instead of submit)
+#include "../util/BS_thread_pool.hpp"
 
 // Updated to use non-templated BS::thread_pool from current bshoshany-thread-pool version
 extern BS::thread_pool g_asyncDispatcher;

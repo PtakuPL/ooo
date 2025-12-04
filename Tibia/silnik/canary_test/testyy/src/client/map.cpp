@@ -1112,7 +1112,7 @@ void Map::findPathAsync(const Position& start, const Position& goal, const std::
         }
     }
 
-    (void)g_asyncDispatcher.submit([=] {
+    (void)g_asyncDispatcher.submit_task([=] {
         const auto ret = g_map.newFindPath(start, goal, visibleNodes);
         g_dispatcher.addEvent(std::bind(callback, ret));
     });

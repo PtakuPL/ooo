@@ -403,7 +403,7 @@ void MapView::updateVisibleTiles()
             for (auto& floor : m_floorThreads[i])
                 floor.cachedVisibleTiles.clear();
 
-            tasks.push_back(g_asyncDispatcher.submit([=, this] {
+            tasks.push_back(g_asyncDispatcher.submit_task([=, this] {
                 processDiagonalRange(m_floorThreads[i], start, end);
             }));
         }

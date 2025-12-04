@@ -10,6 +10,10 @@ Ten plik służy do śledzenia postępów w naprawie błędów CI/CD między ses
 
 **Status:** ✅ Zmiany wykonane, oczekuje na weryfikację CI
 
+**Commity:**
+- `570edff` - Główne naprawy Windows build
+- `ba269a0` - Uproszczenie logiki detekcji static triplet
+
 #### Wykonane naprawy:
 
 ##### 1. RuntimeLibrary Mismatch (LNK2038) - ✅ NAPRAWIONE
@@ -18,7 +22,7 @@ Ten plik służy do śledzenia postępów w naprawie błędów CI/CD między ses
 **Zmiana:**
 - Przeniesiono ustawienie `CMAKE_MSVC_RUNTIME_LIBRARY` PRZED wywołanie `project()`
 - Dodano `cmake_policy(SET CMP0091 NEW)` dla poprawnego działania MSVC_RUNTIME_LIBRARY
-- Sprawdzanie triplet działa teraz poprawnie przed `project()` (bo MSVC nie jest jeszcze zdefiniowane)
+- Uproszczona logika detekcji triplet (używa zmiennej pomocniczej)
 
 ##### 2. LTO Flag `-flto=auto` - ✅ NAPRAWIONE
 **Problem:** `-flto=auto` to flaga GCC, nie wspierana przez MSVC

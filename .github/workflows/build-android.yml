@@ -31,7 +31,7 @@ jobs:
   android:
     name: android-apk
     runs-on: windows-2022
-    timeout-minutes: 60
+    timeout-minutes: 90
     defaults:
       run:
         working-directory: Tibia/silnik/canary_test/testyy
@@ -80,24 +80,48 @@ jobs:
           7z x android_libs.7z -aoa -oC:\Android
           7z x build-tools.zip -aoa -oC:\Android\android-sdk
 
+      - name: Install CMake via sdkmanager
+        shell: powershell
+        run: |
+          # Install CMake 3.22.1 that's available in Android SDK
+          echo "y" | sdkmanager --install "cmake;3.22.1"
+
       - name: Prepare assets (data.zip)
         shell: powershell
         run: |
           powershell -ExecutionPolicy Bypass -File .\create_android_assets.ps1
 
-      - name: Build APK (ARMv7)
-        shell: powershell
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11'
+
+      - name: Build APK with Gradle
+        shell: bash
+        working-directory: Tibia/silnik/canary_test/testyy/android
+        env:
+          ANDROID_NDK_HOME: C:\Android\android-sdk\android-ndk-r23c
+          ANDROID_SDK_ROOT: ${{ env.ANDROID_HOME }}
         run: |
-          cd android
-          $env:VS_AndroidHome="C:\Android\android-sdk\build-tools_r30-windows"
-          $env:VS_NdkRoot="C:\Android\android-sdk\android-ndk-r23c"
-          $env:VS_AntHome="C:\Android\android-sdk\apache-ant-1.9.7"
-          $env:VS_JavaHome="C:\Android\android-sdk\jdk8u302-b08"
-          MSBuild.exe /p:Configuration=Release /p:Platform="ARM" /p:BUILD_REVISION=${{ github.run_number }}
+          chmod +x ./gradlew 2>/dev/null || true
+          ./gradlew assembleRelease --no-daemon --stacktrace
+
+      - name: Find APK
+        id: find-apk
+        shell: bash
+        working-directory: Tibia/silnik/canary_test/testyy/android
+        run: |
+          APK_PATH=$(find . -name "*.apk" -type f | head -n 1)
+          if [ -z "$APK_PATH" ]; then
+            echo "No APK found"
+            exit 1
+          fi
+          echo "apk_path=$APK_PATH" >> "$GITHUB_OUTPUT"
+          echo "Found APK: $APK_PATH"
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: otclient-android-armv7-${{ github.sha }}
-          path: Tibia/silnik/canary_test/testyy/android/otclientv8/ARM/Release/otclientv8_armv7a.apk
-          if-no-files-found: error
+          name: otclient-android-${{ github.sha }}
+          path: ${{ steps.find-apk.outputs.apk_path }}
+          if-no-files-found: warn

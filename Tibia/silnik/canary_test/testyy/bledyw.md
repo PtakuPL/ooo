@@ -210,7 +210,7 @@ note: previous declaration as 'BS::thread_pool<0> g_asyncDispatcher'
 ```
 
 ### Przyczyna
-CMakeLists.txt próbował znaleźć BS_thread_pool.hpp poprzez `find_path`, co mogło znaleźć wersję z vcpkg zamiast lokalnej kopii. Różne wersje mają różne API:
+Plik CMakeLists.txt próbował znaleźć BS_thread_pool.hpp poprzez `find_path`. Ta operacja mogła znaleźć wersję z vcpkg zamiast lokalnej kopii. Różne wersje mają różne API:
 - v3.x: `BS::thread_pool<0>` (templated)
 - v4.1.0: `BS::thread_pool` (non-templated, używa `submit_task()`)
 - v5.x: `BS::thread_pool<>` (templated z domyślnymi parametrami)

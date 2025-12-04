@@ -198,6 +198,31 @@ cmake --build build --config Release --parallel
 
 ---
 
+## 5. Konflikt deklaracji BS::thread_pool (template vs non-template)
+
+### Opis
+Konflikt między lokalną wersją BS::thread_pool (v4.1.0, non-templated) a wersją vcpkg (v3.3.0 lub nowszą, templated).
+
+### Błąd kompilacji
+```
+error: conflicting declaration 'thread_pool<...auto...> g_asyncDispatcher'
+note: previous declaration as 'BS::thread_pool<0> g_asyncDispatcher'
+```
+
+### Przyczyna
+CMakeLists.txt próbował znaleźć BS_thread_pool.hpp poprzez `find_path`, co mogło znaleźć wersję z vcpkg zamiast lokalnej kopii. Różne wersje mają różne API:
+- v3.x: `BS::thread_pool<0>` (templated)
+- v4.1.0: `BS::thread_pool` (non-templated, używa `submit_task()`)
+- v5.x: `BS::thread_pool<>` (templated z domyślnymi parametrami)
+
+### Rozwiązanie
+Usunięto `find_path(BS_THREAD_POOL_INCLUDE_DIR ...)` i `${BS_THREAD_POOL_INCLUDE_DIR}` z CMakeLists.txt. Projekt teraz używa wyłącznie lokalnej kopii w `src/framework/util/BS_thread_pool.hpp` (v4.1.0), która jest dołączana poprzez ścieżkę względną w `asyncdispatcher.h`.
+
+### Status
+✅ **NAPRAWIONE** - CMakeLists.txt zaktualizowany, używana jest wyłącznie lokalna kopia
+
+---
+
 ## Historia zmian
 
 | Data | Commit | Opis |
@@ -205,6 +230,7 @@ cmake --build build --config Release --parallel
 | 2025-12-04 | `f5a2703` | Naprawiono API BS::thread_pool (submit → submit_task) |
 | 2025-12-04 | `64d7a16` | Dodano dokumentację błędów (bledyw.md) |
 | 2025-12-04 | TBD | Naprawiono Windows SDK (Vista → Windows 10) |
+| 2025-12-04 | TBD | Naprawiono konflikt template BS::thread_pool |
 
 ---
 

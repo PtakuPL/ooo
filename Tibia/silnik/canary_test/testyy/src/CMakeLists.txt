@@ -322,15 +322,9 @@ include(FetchContent)
   endif()
 
 # Header-only BS_thread_pool (task scheduler)
-find_path(BS_THREAD_POOL_INCLUDE_DIR NAMES BS_thread_pool.hpp)
-if(NOT BS_THREAD_POOL_INCLUDE_DIR)
-  FetchContent_Declare(bs_thread_pool
-    GIT_REPOSITORY https://github.com/bshoshany/thread-pool.git
-    GIT_TAG v4.1.0
-  )
-  FetchContent_MakeAvailable(bs_thread_pool)
-  set(BS_THREAD_POOL_INCLUDE_DIR ${bs_thread_pool_SOURCE_DIR}/include)
-endif()
+# Use the local copy in src/framework/util/BS_thread_pool.hpp (v4.1.0)
+# This avoids conflicts with vcpkg versions which may have different APIs
+# The local copy is included via relative path in asyncdispatcher.h
 
 # phmap (parallel-hashmap) may be available via a CMake config (e.g. vcpkg)
 # or only as system headers. Try the imported target first, then fall back to
@@ -736,7 +730,6 @@ if(MSVC)
           ${PHYSFS_INCLUDE_DIR}
           ${PARALLEL_HASHMAP_INCLUDE_DIRS}
           ${NLOHMANN_JSON_INCLUDE_DIR}
-          ${BS_THREAD_POOL_INCLUDE_DIR}
           ${STDUUID_INCLUDE_DIRS}
   )
   target_link_libraries(${PROJECT_NAME}
@@ -830,7 +823,6 @@ elseif(WASM)
           ${NLOHMANN_JSON_INCLUDE_DIR}
           ${OPENSSL_INCLUDE_DIR}
           ${BROWSER_INCLUDE_DIR}
-          ${BS_THREAD_POOL_INCLUDE_DIR}
           ${STDUUID_INCLUDE_DIRS}
   )
   target_link_libraries(${PROJECT_NAME}
@@ -916,7 +908,6 @@ else() # Linux
           ${PARALLEL_HASHMAP_INCLUDE_DIRS}
           ${NLOHMANN_JSON_INCLUDE_DIR}
           ${OPENSSL_INCLUDE_DIR}
-          ${BS_THREAD_POOL_INCLUDE_DIR}
           ${STDUUID_INCLUDE_DIRS}
   )
   target_link_libraries(${PROJECT_NAME}

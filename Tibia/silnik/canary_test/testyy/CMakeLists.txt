@@ -19,10 +19,20 @@ endif()
 set(VCPKG_FEATURE_FLAGS "versions")
 set(VCPKG_BUILD_TYPE "release")
 
-# For MSVC with static triplet (x64-windows-static), use static runtime library
+# For static triplet (x64-windows-static), use static runtime library (/MT)
 # This ensures consistency between vcpkg libraries and project code
-if(MSVC AND VCPKG_TARGET_TRIPLET MATCHES ".*-static$")
-    set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+# Must be set BEFORE project() for it to take effect on MSVC
+# Check for static triplet by name pattern (works before project() call)
+if(VCPKG_TARGET_TRIPLET MATCHES ".*-static$" OR DEFINED ENV{VCPKG_DEFAULT_TRIPLET})
+    # Check if triplet ends with -static
+    if(VCPKG_TARGET_TRIPLET MATCHES ".*-static$")
+        # Set policy CMP0091 to NEW to enable CMAKE_MSVC_RUNTIME_LIBRARY
+        cmake_policy(SET CMP0091 NEW)
+        set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>" CACHE STRING "MSVC runtime library")
+    elseif("$ENV{VCPKG_DEFAULT_TRIPLET}" MATCHES ".*-static$")
+        cmake_policy(SET CMP0091 NEW)
+        set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>" CACHE STRING "MSVC runtime library")
+    endif()
 endif()
 
 if (VCPKG_TARGET_ANDROID)

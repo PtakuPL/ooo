@@ -83,8 +83,15 @@ jobs:
       - name: Install CMake via sdkmanager
         shell: powershell
         run: |
-          # Install CMake 3.22.1 that's available in Android SDK
-          echo "y" | sdkmanager --install "cmake;3.22.1"
+          # Use full path to sdkmanager from ANDROID_HOME
+          $sdkmanager = "$env:ANDROID_HOME\cmdline-tools\latest\bin\sdkmanager.bat"
+          if (Test-Path $sdkmanager) {
+            echo "y" | & $sdkmanager --install "cmake;3.22.1"
+          } else {
+            # Fallback - CMake may already be available via GitHub runner
+            Write-Host "sdkmanager not found, checking if CMake is preinstalled..."
+            cmake --version
+          }
 
       - name: Prepare assets (data.zip)
         shell: powershell

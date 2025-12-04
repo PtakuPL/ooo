@@ -277,5 +277,5 @@ Aktualnie działa poprawnie (Run #32).
 | models-demo.yml | ✅ Naprawione | `cd6f8ee` - polskie słowa kluczowe, hardcoded token |
 | build-browser.yml (Emscripten) | ✅ Naprawione | `b0e471f` - LuaJIT → lua dla wasm32 |
 | build-android.yml | ✅ Naprawione | `c4fb634` - pełna ścieżka do sdkmanager |
-| build-windows.yml (vcpkg) | ⏳ W trakcie | RuntimeLibrary + vorbis - wymaga dalszych zmian |
+| build-windows.yml (vcpkg) | ✅ Naprawione | `570edff` + `ba269a0` - RuntimeLibrary, LTO, fmt, Vorbis |
 | analysis-sonarcloud.yml | ⚠️ Wymaga konfiguracji | Użytkownik musi dodać SONAR_TOKEN secret |

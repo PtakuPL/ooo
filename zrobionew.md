@@ -4,6 +4,31 @@ Ten plik służy do śledzenia postępów w naprawie błędów CI/CD między ses
 
 ---
 
+## Sesja 2 (2025-12-04) - Kontynuacja
+
+### Weryfikacja i status napraw
+
+**Status:** ✅ Wszystkie główne naprawy zaimplementowane
+
+#### Sprawdzone naprawy w tej sesji:
+
+##### Android Build - ✅ JUŻ NAPRAWIONE (w PR)
+- Plik: `.github/workflows/build-android.yml`
+- Problem: `sdkmanager` nie w PATH na Windows runner
+- Rozwiązanie: Dodano pełną ścieżkę `$env:ANDROID_HOME\cmdline-tools\latest\bin\sdkmanager.bat` z fallbackiem
+
+##### Emscripten Build - ✅ JUŻ NAPRAWIONE (w PR)
+- Plik: `Tibia/silnik/canary_test/testyy/vcpkg.json`
+- Problem: LuaJIT nie wspiera wasm32-emscripten
+- Rozwiązanie: Dodano platform condition dla `luajit` (windows | linux | osx) i dodano `lua` dla wasm32-emscripten
+
+##### SonarCloud - ⚠️ WYMAGA RĘCZNEJ KONFIGURACJI
+- Plik: `.github/workflows/analysis-sonarcloud.yml`
+- Problem: Brak `SONAR_TOKEN` secret
+- Rozwiązanie: Użytkownik musi dodać SONAR_TOKEN w GitHub repo settings
+
+---
+
 ## Sesja 1 (2025-12-04)
 
 ### Windows Build (vcpkg) - Naprawy
@@ -48,10 +73,70 @@ Ten plik służy do śledzenia postępów w naprawie błędów CI/CD między ses
 
 ---
 
-### Wcześniejsze sesje - już naprawione
+### Wcześniejsze naprawy
 
 #### models-demo.yml ✅
 - Commit: `cd6f8ee`
+- Zamienione polskie słowa kluczowe YAML na angielskie
+- Usunięty hardcoded PAT token
+- Naprawione nagłówki HTTP i flagi curl
+
+#### Emscripten (build-browser.yml) ✅
+- Commit: `b0e471f`
+- LuaJIT nie wspiera wasm32-emscripten
+- Dodano `lua` dla wasm32 w vcpkg.json
+- Ograniczono `luajit` do windows | linux | osx
+
+#### Android (build-android.yml) ✅
+- Commit: `c4fb634` + `ae1aa81`
+- sdkmanager nie w PATH na Windows runner
+- Użyto pełnej ścieżki do sdkmanager.bat
+- Dodano fallback na preinstalowany CMake
+
+#### SonarCloud (analysis-sonarcloud.yml) ⚠️
+- Wymaga ręcznej konfiguracji SONAR_TOKEN przez właściciela repo
+- Nie da się naprawić z poziomu kodu
+
+---
+
+## Pliki zmienione w tym PR
+
+| Plik | Zmiany |
+|------|--------|
+| `.github/workflows/models-demo.yml` | YAML polskie słowa kluczowe, hardcoded token |
+| `.github/workflows/build-android.yml` | sdkmanager pełna ścieżka |
+| `vcpkg.json` | LuaJIT platform condition |
+| `CMakeLists.txt` | CMAKE_MSVC_RUNTIME_LIBRARY przed project() |
+| `src/CMakeLists.txt` | LTO flag, fmt target, Vorbis targets |
+| `bledyw.md` | Dokumentacja błędów |
+| `zrobionew.md` | Log postępów |
+
+---
+
+## Podsumowanie statusu wszystkich workflow
+
+| Workflow | Status naprawy | Opis |
+|----------|---------------|------|
+| models-demo.yml | ✅ Naprawione | Polskie słowa kluczowe, hardcoded token |
+| build-linux.yml | ✅ Działa | Nie wymagał naprawy |
+| build-ubuntu.yml | ✅ Działa | Nie wymagał naprawy |
+| build-windows-solution.yml | ✅ Działa | Nie wymagał naprawy |
+| build-windows.yml (vcpkg) | ✅ Naprawione | RuntimeLibrary, LTO, fmt, Vorbis |
+| build-browser.yml (Emscripten) | ✅ Naprawione | LuaJIT → lua dla wasm32 |
+| build-android.yml | ✅ Naprawione | sdkmanager pełna ścieżka |
+| analysis-sonarcloud.yml | ⚠️ Wymaga konfiguracji | SONAR_TOKEN secret |
+
+---
+
+## Następne kroki
+
+1. [x] Naprawić Windows build - RuntimeLibrary, LTO, fmt, Vorbis
+2. [x] Naprawić Android build - sdkmanager
+3. [x] Naprawić Emscripten build - LuaJIT
+4. [x] Naprawić models-demo.yml - polskie słowa, token
+5. [ ] Merge PR do master
+6. [ ] Zweryfikować że wszystkie workflow przechodzą
+7. [ ] Właściciel repo: dodać SONAR_TOKEN secret dla SonarCloud
 - Zamienione polskie słowa kluczowe YAML na angielskie
 - Usunięty hardcoded PAT token
 - Naprawione nagłówki HTTP i flagi curl

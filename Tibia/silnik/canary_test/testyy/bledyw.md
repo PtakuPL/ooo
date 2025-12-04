@@ -44,21 +44,58 @@ m_streamFiles[streamSource] = g_asyncDispatcher.submit_task([=]() -> SoundFilePt
 
 ---
 
-## 2. Prywatne składniki BS::thread_pool
+## 2. Prywatne składniki BS::thread_pool (KRYTYCZNY)
 
 ### Opis
-Kod próbuje uzyskać dostęp do prywatnych składników klasy `thread_info_index`.
+Lokalna kopia pliku `BS_thread_pool.hpp` zawierała niepoprawne deklaracje `friend class`. Deklaracja `friend class thread_pool;` wewnątrz namespace `BS::this_thread` powinna używać pełnej kwalifikacji: `friend class BS::thread_pool;`.
 
 ### Błąd kompilacji
 ```
-error: 'BS::this_thread::optional_index BS::this_thread::thread_info_index::index' is private
+error: 'BS::this_thread::optional_index BS::this_thread::thread_info_index::index' is private within this context
+  909 |         this_thread::get_index.index = idx;
+      |                                ^~~~~
+
+error: 'BS::this_thread::optional_pool BS::this_thread::thread_info_pool::pool' is private within this context
+  910 |         this_thread::get_pool.pool = this;
+      |                               ^~~~
 ```
 
-### Analiza
-Po sprawdzeniu kodu źródłowego, składniki `thread_info_index` i `thread_info_pool` są używane **tylko wewnątrz** pliku `BS_thread_pool.hpp` (linie 104-159). Kod użytkownika NIE używa tych prywatnych składników bezpośrednio.
+### Pliki do naprawy
+| Plik | Linia | Problem | Status |
+|------|-------|---------|--------|
+| `src/framework/util/BS_thread_pool.hpp` | 106 | `friend class thread_pool;` powinno być `friend class BS::thread_pool;` | ✅ Naprawione |
+| `src/framework/util/BS_thread_pool.hpp` | 131 | `friend class thread_pool;` powinno być `friend class BS::thread_pool;` | ✅ Naprawione |
+
+### Rozwiązanie
+Zmiana deklaracji friend class z niepełnej kwalifikacji na pełną kwalifikację namespace:
+
+```cpp
+// PRZED (linia 106)
+class thread_info_index
+{
+    friend class thread_pool;
+
+// PO
+class thread_info_index
+{
+    friend class BS::thread_pool;
+
+// PRZED (linia 131)
+class thread_info_pool
+{
+    friend class thread_pool;
+
+// PO
+class thread_info_pool
+{
+    friend class BS::thread_pool;
+```
+
+### Przyczyna
+Klasy `thread_info_index` i `thread_info_pool` są zdefiniowane wewnątrz namespace `BS::this_thread`, podczas gdy klasa `thread_pool` jest w namespace `BS`. Bez pełnej kwalifikacji kompilator szuka `thread_pool` w bieżącym namespace `BS::this_thread` zamiast w `BS`.
 
 ### Status
-✅ **NIE WYMAGA NAPRAWY** - składniki są używane tylko wewnętrznie przez bibliotekę
+✅ **NAPRAWIONE** - Zmieniono `friend class thread_pool;` na `friend class BS::thread_pool;` w obu klasach
 
 ---
 
@@ -127,16 +164,25 @@ std::future<void> mapThread = g_asyncDispatcher.submit_task(...);
 
 ## Podsumowanie Workflow
 
+### build-ubuntu.yml (Linux)
+| Problem | Status |
+|---------|--------|
+| BS::thread_pool API (submit → submit_task) | ✅ Naprawione |
+| BS::thread_pool friend class declarations | ✅ Naprawione |
+| Kompilacja | ⏳ Oczekuje na weryfikację |
+
 ### build-linux.yml
 | Problem | Status |
 |---------|--------|
 | BS::thread_pool API | ✅ Naprawione |
+| BS::thread_pool friend class declarations | ✅ Naprawione |
 | Kompilacja | ⏳ Oczekuje na zatwierdzenie workflow |
 
 ### build-windows.yml
 | Problem | Status |
 |---------|--------|
 | BS::thread_pool API | ✅ Naprawione |
+| BS::thread_pool friend class declarations | ✅ Naprawione |
 | Windows SDK | ✅ Naprawione (Windows 10 - 0x0A00) |
 | Kompilacja | ⏳ Oczekuje na zatwierdzenie workflow |
 
@@ -144,6 +190,7 @@ std::future<void> mapThread = g_asyncDispatcher.submit_task(...);
 | Problem | Status |
 |---------|--------|
 | BS::thread_pool API | ✅ Naprawione |
+| BS::thread_pool friend class declarations | ✅ Naprawione |
 | Windows SDK | ✅ Naprawione (Windows 10 - 0x0A00) |
 | Kompilacja | ⏳ Oczekuje na zatwierdzenie workflow |
 
@@ -205,6 +252,7 @@ cmake --build build --config Release --parallel
 | 2025-12-04 | `f5a2703` | Naprawiono API BS::thread_pool (submit → submit_task) |
 | 2025-12-04 | `64d7a16` | Dodano dokumentację błędów (bledyw.md) |
 | 2025-12-04 | TBD | Naprawiono Windows SDK (Vista → Windows 10) |
+| 2025-12-04 | TBD | Naprawiono friend class declarations w BS_thread_pool.hpp |
 
 ---
 

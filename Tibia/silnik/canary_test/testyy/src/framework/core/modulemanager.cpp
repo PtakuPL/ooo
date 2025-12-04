@@ -221,6 +221,6 @@ void ModuleManager::enableAutoReload() {
             return;
 
         processing.store(true);
-        (void)g_asyncDispatcher.submit(action);
+        (void)g_asyncDispatcher.submit_task(action);
     }, 500);
 }

@@ -101,7 +101,7 @@ void LoginHttp::httpLogin(const std::string& host, const std::string& path,
                           const std::string& password, int request_id,
                           bool httpLogin) {
 #ifndef __EMSCRIPTEN__
-    (void)g_asyncDispatcher.submit(
+    (void)g_asyncDispatcher.submit_task(
         [this, host, path, port, email, password, request_id, httpLogin] {
         httplib::Result result =
             this->loginHttpsJson(host, path, port, email, password);
@@ -142,7 +142,7 @@ void LoginHttp::httpLogin(const std::string& host, const std::string& path,
         }
     });
 #else
-    (void)g_asyncDispatcher.submit(
+    (void)g_asyncDispatcher.submit_task(
         [this, host, path, port, email, password, request_id, httpLogin] {
         emscripten_fetch_attr_t attr;
         emscripten_fetch_attr_init(&attr);

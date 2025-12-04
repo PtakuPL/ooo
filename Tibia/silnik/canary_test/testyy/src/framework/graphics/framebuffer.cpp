@@ -198,7 +198,7 @@ void FrameBuffer::doScreenshot(std::string file, const uint16_t x, const uint16_
         internalRelease();
 
         // Updated API: replace deprecated detach_task with submit and ignore returned future
-        (void)g_asyncDispatcher.submit([size, pixels, file] {
+        (void)g_asyncDispatcher.submit_task([size, pixels, file] {
             try {
                 Image image(size, 4, pixels->data());
                 image.flipVertically();

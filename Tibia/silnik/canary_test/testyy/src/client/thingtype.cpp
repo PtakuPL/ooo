@@ -681,7 +681,7 @@ const TexturePtr& ThingType::getTexture(const int animationPhase)
             m_loading = false;
         };
 
-        (void)g_asyncDispatcher.submit(std::move(action));
+        (void)g_asyncDispatcher.submit_task(std::move(action));
     }
 
     return m_textureNull;

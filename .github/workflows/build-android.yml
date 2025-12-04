@@ -83,13 +83,15 @@ jobs:
       - name: Install CMake via sdkmanager
         shell: powershell
         run: |
-          # Use full path to sdkmanager from ANDROID_HOME
+          # Try to use sdkmanager from GitHub runner's ANDROID_HOME
           $sdkmanager = "$env:ANDROID_HOME\cmdline-tools\latest\bin\sdkmanager.bat"
           if (Test-Path $sdkmanager) {
+            Write-Host "Using sdkmanager at: $sdkmanager"
             echo "y" | & $sdkmanager --install "cmake;3.22.1"
           } else {
-            # Fallback - CMake may already be available via GitHub runner
-            Write-Host "sdkmanager not found, checking if CMake is preinstalled..."
+            # CMake is preinstalled on GitHub runners
+            Write-Host "sdkmanager not found at $sdkmanager"
+            Write-Host "Using preinstalled CMake from GitHub runner..."
             cmake --version
           }
 

@@ -22,10 +22,10 @@ Ten plik służy do śledzenia postępów w naprawie błędów CI/CD między ses
 - Problem: LuaJIT nie wspiera wasm32-emscripten
 - Rozwiązanie: Dodano platform condition dla `luajit` (windows | linux | osx) i dodano `lua` dla wasm32-emscripten
 
-##### SonarCloud - ⚠️ WYMAGA RĘCZNEJ KONFIGURACJI
+##### SonarCloud - ✅ NAPRAWIONE
 - Plik: `.github/workflows/analysis-sonarcloud.yml`
-- Problem: Brak `SONAR_TOKEN` secret
-- Rozwiązanie: Użytkownik musi dodać SONAR_TOKEN w GitHub repo settings
+- Problem: Workflow używał `secrets.SONAR_TOKEN`, ale w repozytorium secret nazywa się `SONARCLOUDTOKEN`
+- Rozwiązanie: Zmieniono `${{ secrets.SONAR_TOKEN }}` na `${{ secrets.SONARCLOUDTOKEN }}`
 
 ---
 
@@ -124,7 +124,7 @@ Ten plik służy do śledzenia postępów w naprawie błędów CI/CD między ses
 | build-windows.yml (vcpkg) | ✅ Naprawione | RuntimeLibrary, LTO, fmt, Vorbis |
 | build-browser.yml (Emscripten) | ✅ Naprawione | LuaJIT → lua dla wasm32 |
 | build-android.yml | ✅ Naprawione | sdkmanager pełna ścieżka |
-| analysis-sonarcloud.yml | ⚠️ Wymaga konfiguracji | SONAR_TOKEN secret |
+| analysis-sonarcloud.yml | ✅ Naprawione | SONAR_TOKEN → SONARCLOUDTOKEN |
 
 ---
 
@@ -134,9 +134,9 @@ Ten plik służy do śledzenia postępów w naprawie błędów CI/CD między ses
 2. [x] Naprawić Android build - sdkmanager
 3. [x] Naprawić Emscripten build - LuaJIT
 4. [x] Naprawić models-demo.yml - polskie słowa, token
-5. [ ] Merge PR do master
-6. [ ] Zweryfikować że wszystkie workflow przechodzą
-7. [ ] Właściciel repo: dodać SONAR_TOKEN secret dla SonarCloud
+5. [x] Naprawić SonarCloud - zmiana nazwy secret z SONAR_TOKEN na SONARCLOUDTOKEN
+6. [ ] Merge PR do master
+7. [ ] Zweryfikować że wszystkie workflow przechodzą
 - Zamienione polskie słowa kluczowe YAML na angielskie
 - Usunięty hardcoded PAT token
 - Naprawione nagłówki HTTP i flagi curl

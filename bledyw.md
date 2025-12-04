@@ -261,12 +261,10 @@ Aktualnie działa poprawnie (Run #32).
 
 ### 4. SonarCloud - analysis-sonarcloud.yml
 
-**Problem:** Brak skonfigurowanego sekretu SONAR_TOKEN
+**Problem:** Workflow używał `secrets.SONAR_TOKEN`, ale w repozytorium secret nazywa się `SONARCLOUDTOKEN`
 
-**Rozwiązanie (wymaga ręcznej konfiguracji):**
-1. Wygenerować token na https://sonarcloud.io/account/security
-2. Dodać jako GitHub Secret: Settings → Secrets → Actions → `SONAR_TOKEN`
-3. Opcjonalnie: naprawić `.gitmodules` dla brakującego submodule
+**Rozwiązanie (zaimplementowane w PR):**
+1. Zmieniono `${{ secrets.SONAR_TOKEN }}` na `${{ secrets.SONARCLOUDTOKEN }}` w workflow
 
 ---
 
@@ -278,4 +276,4 @@ Aktualnie działa poprawnie (Run #32).
 | build-browser.yml (Emscripten) | ✅ Naprawione | `b0e471f` - LuaJIT → lua dla wasm32 |
 | build-android.yml | ✅ Naprawione | `c4fb634` - pełna ścieżka do sdkmanager |
 | build-windows.yml (vcpkg) | ✅ Naprawione | `570edff` + `ba269a0` - RuntimeLibrary, LTO, fmt, Vorbis |
-| analysis-sonarcloud.yml | ⚠️ Wymaga konfiguracji | Użytkownik musi dodać SONAR_TOKEN secret |
+| analysis-sonarcloud.yml | ✅ Naprawione | Zmieniono SONAR_TOKEN → SONARCLOUDTOKEN |

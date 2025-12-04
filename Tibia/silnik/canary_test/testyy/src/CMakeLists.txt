@@ -689,11 +689,12 @@ target_link_options(${PROJECT_NAME} PUBLIC -flto=auto)
 # *****************************************************************************
 if(MSVC)
 
-  # Set variables to have Windows Vista Value so httplib will build 'inet_pton'
+  # Set variables to have Windows 10 Value for full C++20 support including std::from_chars
   target_compile_definitions(${PROJECT_NAME}
           PRIVATE
-          NTDDI_VERSION=0x06000000
-          _WIN32_WINNT=0x0600
+          NTDDI_VERSION=0x0A000000
+          _WIN32_WINNT=0x0A00
+          WINVER=0x0A00
   )
 
   target_compile_options(${PROJECT_NAME} PUBLIC /MP /FS /Zf /EHsc /bigobj)

@@ -54,18 +54,11 @@ Kod próbuje uzyskać dostęp do prywatnych składników klasy `thread_info_inde
 error: 'BS::this_thread::optional_index BS::this_thread::thread_info_index::index' is private
 ```
 
-### Rozwiązanie
-Użyj publicznych akcesorów zamiast bezpośredniego dostępu:
-```cpp
-// PRZED
-thread_info_index.index = value;
-
-// PO - użyj właściwych metod publicznych
-// Sprawdź dokumentację BS_thread_pool.hpp dla prawidłowych akcesorów
-```
+### Analiza
+Po sprawdzeniu kodu źródłowego, składniki `thread_info_index` i `thread_info_pool` są używane **tylko wewnątrz** pliku `BS_thread_pool.hpp` (linie 104-159). Kod użytkownika NIE używa tych prywatnych składników bezpośrednio.
 
 ### Status
-⚠️ **Może wymagać naprawy jeśli kod używa prywatnych składników**
+✅ **NIE WYMAGA NAPRAWY** - składniki są używane tylko wewnętrznie przez bibliotekę
 
 ---
 
@@ -82,10 +75,15 @@ warning: The Windows SDK version is lower than required
 
 ### Rozwiązanie
 
-#### Opcja A: W CMakeLists.txt
+#### Opcja A: W CMakeLists.txt (ZASTOSOWANE)
 ```cmake
-if(WIN32)
-    add_compile_definitions(_WIN32_WINNT=0x0A00)  # Windows 10
+if(MSVC)
+  target_compile_definitions(${PROJECT_NAME}
+          PRIVATE
+          NTDDI_VERSION=0x0A000000  # Windows 10
+          _WIN32_WINNT=0x0A00       # Windows 10
+          WINVER=0x0A00             # Windows 10
+  )
 endif()
 ```
 
@@ -95,7 +93,7 @@ set(VCPKG_CMAKE_SYSTEM_VERSION 10)
 ```
 
 ### Status
-⚠️ **Do sprawdzenia w nowych buildach**
+✅ **NAPRAWIONE - zmieniono z Windows Vista (0x0600) na Windows 10 (0x0A00)**
 
 ---
 
@@ -139,14 +137,14 @@ std::future<void> mapThread = g_asyncDispatcher.submit_task(...);
 | Problem | Status |
 |---------|--------|
 | BS::thread_pool API | ✅ Naprawione |
-| Windows SDK | ⚠️ Do weryfikacji |
+| Windows SDK | ✅ Naprawione (Windows 10 - 0x0A00) |
 | Kompilacja | ⏳ Oczekuje na zatwierdzenie workflow |
 
 ### build-windows-solution.yml
 | Problem | Status |
 |---------|--------|
 | BS::thread_pool API | ✅ Naprawione |
-| Windows SDK | ⚠️ Do weryfikacji |
+| Windows SDK | ✅ Naprawione (Windows 10 - 0x0A00) |
 | Kompilacja | ⏳ Oczekuje na zatwierdzenie workflow |
 
 ---
@@ -205,6 +203,8 @@ cmake --build build --config Release --parallel
 | Data | Commit | Opis |
 |------|--------|------|
 | 2025-12-04 | `f5a2703` | Naprawiono API BS::thread_pool (submit → submit_task) |
+| 2025-12-04 | `64d7a16` | Dodano dokumentację błędów (bledyw.md) |
+| 2025-12-04 | TBD | Naprawiono Windows SDK (Vista → Windows 10) |
 
 ---
 

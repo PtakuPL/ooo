@@ -328,9 +328,240 @@ locale = {
     ["Task"] = "Задание",
     ["Tasks"] = "Задания",
     ["Task Progress"] = "Прогресс задания",
+    
+    -- Directions
+    ["North"] = "Север",
+    ["South"] = "Юг",
+    ["East"] = "Восток",
+    ["West"] = "Запад",
+    ["Northeast"] = "Северо-восток",
+    ["Northwest"] = "Северо-запад",
+    ["Southeast"] = "Юго-восток",
+    ["Southwest"] = "Юго-запад",
+    
+    -- Time
+    ["Second"] = "Секунда",
+    ["Seconds"] = "Секунды",
+    ["Minute"] = "Минута",
+    ["Minutes"] = "Минуты",
+    ["Hour"] = "Час",
+    ["Hours"] = "Часы",
+    ["Day"] = "День",
+    ["Days"] = "Дни",
+    
+    -- Rule violations
+    ["Offensive Name"] = "Оскорбительное имя",
+    ["Invalid Name Format"] = "Неверный формат имени",
+    ["Name Inciting Rule Violation"] = "Имя, провоцирующее нарушение правил",
+    ["Name Containing Insult"] = "Имя, содержащее оскорбление",
+    ["Unsuitable Name"] = "Неподходящее имя",
+    ["Name Supporting Rule Violation"] = "Имя, поддерживающее нарушение правил",
+    ["Offensive Statement"] = "Оскорбительное заявление",
+    ["Spamming"] = "Спам",
+    ["Illegal Advertising"] = "Незаконная реклама",
+    ["Off-Topic Public Statement"] = "Публичное заявление не по теме",
+    ["Non-English Public Statement"] = "Публичное заявление не на английском",
+    ["Inciting Rule Violation"] = "Провокация нарушения правил",
+    ["Bug Abuse"] = "Использование багов",
+    
+    -- Connection messages
+    ["Connection error"] = "Ошибка подключения",
+    ["Connection refused"] = "Подключение отклонено",
+    ["Connection timed out"] = "Время подключения истекло",
+    ["Unable to connect"] = "Невозможно подключиться",
+    ["Could not connect to server"] = "Не удалось подключиться к серверу",
+    ["Lost connection to server"] = "Потеряно соединение с сервером",
+    
+    -- Display settings
+    ["Show creature health bar"] = "Показать полосу здоровья существ",
+    ["Show creature mana bar"] = "Показать полосу маны существ",
+    ["Show creature names"] = "Показать имена существ",
+    ["Show player names"] = "Показать имена игроков",
+    ["Show NPC names"] = "Показать имена NPC",
+    ["Show monster names"] = "Показать имена монстров",
+    
+    -- Edit options
+    ["Edit Name"] = "Изменить имя",
+    ["Edit Description"] = "Изменить описание",
+    ["Edit Hotkey"] = "Изменить горячую клавишу",
+    ["Edit VIP List"] = "Изменить VIP список",
+    
+    -- Combat stats
+    ["Critical Hit Chance"] = "Шанс критического удара",
+    ["Critical Hit Damage"] = "Урон критического удара",
+    ["Life Leech Chance"] = "Шанс поглощения жизни",
+    ["Life Leech Amount"] = "Количество поглощения жизни",
+    ["Mana Leech Chance"] = "Шанс поглощения маны",
+    ["Mana Leech Amount"] = "Количество поглощения маны",
+    
+    -- Market
+    ["Market Error"] = "Ошибка рынка",
+    ["Invalid price"] = "Неверная цена",
+    ["Item not found"] = "Предмет не найден",
+    ["Offer created"] = "Предложение создано",
+    ["Offer cancelled"] = "Предложение отменено",
+    ["Total Price"] = "Общая цена",
+    ["Piece Price"] = "Цена за штуку",
+    ["Seller Name"] = "Имя продавца",
+    ["Buyer Name"] = "Имя покупателя",
+    
+    -- PvP settings
+    ["Open PvP"] = "Открытый PvP",
+    ["Optional PvP"] = "Опциональный PvP",
+    ["Hardcore PvP"] = "Хардкорный PvP",
+    ["Skull Time"] = "Время черепа",
+    
+    -- Sorting options
+    ["Sort by Name"] = "Сортировать по имени",
+    ["Sort by Status"] = "Сортировать по статусу",
+    ["Sort by Type"] = "Сортировать по типу",
+    ["Sort by Level"] = "Сортировать по уровню",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Токен аутентификатора",
+    ["Two-Factor Authentication"] = "Двухфакторная аутентификация",
+    ["Enter your token"] = "Введите ваш токен",
+    
+    -- Format strings
+    ["You have %s"] = "У вас %s",
+    ["%s has been added to your VIP list"] = "%s добавлен в ваш VIP список",
+    ["%s has logged in"] = "%s вошёл в игру",
+    ["%s has logged out"] = "%s вышел из игры",
+    ["Next level in %s"] = "Следующий уровень через %s",
+    ["Current level: %d"] = "Текущий уровень: %d",
+    
+    -- Additional UI elements
+    ["Select All"] = "Выбрать всё",
+    ["Deselect All"] = "Снять выбор",
+    ["Apply"] = "Применить",
+    ["Reset"] = "Сбросить",
+    ["Confirm"] = "Подтвердить",
+    ["Continue"] = "Продолжить",
+    ["Back"] = "Назад",
+    ["Next"] = "Далее",
+    ["Previous"] = "Предыдущий",
+    ["Finish"] = "Завершить",
+    ["Skip"] = "Пропустить",
+    ["Retry"] = "Повторить",
+    
+    -- Game messages
+    ["You have been kicked"] = "Вы были выброшены",
+    ["Server is full"] = "Сервер переполнен",
+    ["Server is under maintenance"] = "Сервер на обслуживании",
+    ["Invalid account or password"] = "Неверный аккаунт или пароль",
+    ["Account is suspended"] = "Аккаунт заблокирован",
+    ["Please try again later"] = "Пожалуйста, попробуйте позже",
+    
+    -- Inventory slots
+    ["Helmet"] = "Шлем",
+    ["Amulet"] = "Амулет",
+    ["Backpack"] = "Рюкзак",
+    ["Armor"] = "Броня",
+    ["Right Hand"] = "Правая рука",
+    ["Left Hand"] = "Левая рука",
+    ["Legs"] = "Ноги",
+    ["Boots"] = "Ботинки",
+    ["Ring"] = "Кольцо",
+    ["Ammo"] = "Боеприпасы",
+    
+    -- Elements
+    ["Fire"] = "Огонь",
+    ["Ice"] = "Лёд",
+    ["Earth"] = "Земля",
+    ["Energy"] = "Энергия",
+    ["Holy"] = "Святость",
+    ["Death"] = "Смерть",
+    ["Physical"] = "Физический",
+    
+    -- House system extended
+    ["House Transfer"] = "Передача дома",
+    ["House Auction"] = "Аукцион дома",
+    ["Rent"] = "Аренда",
+    ["Rent Due"] = "Срок аренды",
+    ["Owner"] = "Владелец",
+    ["Sub-Owner"] = "Совладелец",
+    ["Guest List"] = "Список гостей",
+    ["Door Rights"] = "Права на дверь",
+    
+    -- Screenshots
+    ["Screenshot"] = "Скриншот",
+    ["Screenshots"] = "Скриншоты",
+    ["Take Screenshot"] = "Сделать скриншот",
+    ["Screenshot saved"] = "Скриншот сохранён",
+    
+    -- Audio settings
+    ["Master Volume"] = "Общая громкость",
+    ["Music Volume"] = "Громкость музыки",
+    ["Sound Volume"] = "Громкость звуков",
+    ["Effects Volume"] = "Громкость эффектов",
+    ["Mute All"] = "Выключить всё",
+    
+    -- Advanced settings
+    ["Advanced Settings"] = "Расширенные настройки",
+    ["Reset to Defaults"] = "Сбросить по умолчанию",
+    ["Import Settings"] = "Импорт настроек",
+    ["Export Settings"] = "Экспорт настроек",
+    
+    -- Cyclopedia extended
+    ["Badges"] = "Значки",
+    ["Achievements"] = "Достижения",
+    ["Titles"] = "Титулы",
+    ["Spells"] = "Заклинания",
+    ["Items"] = "Предметы",
+    ["Monsters"] = "Монстры",
+    ["Bosses"] = "Боссы",
+    ["NPCs"] = "NPC",
+    ["World Map"] = "Карта мира",
+    
+    -- Loot system extended
+    ["Loot Statistics"] = "Статистика добычи",
+    ["Loot Channel"] = "Канал добычи",
+    ["Show Loot"] = "Показать добычу",
+    ["Hide Loot"] = "Скрыть добычу",
+    ["Loot Filter"] = "Фильтр добычи",
+    
+    -- Events
+    ["Event"] = "Событие",
+    ["Events"] = "События",
+    ["Active Events"] = "Активные события",
+    ["Event Schedule"] = "Расписание событий",
+    
+    -- Prey system
+    ["Prey"] = "Добыча",
+    ["Prey Slot"] = "Слот добычи",
+    ["Select Prey"] = "Выбрать добычу",
+    ["Bonus"] = "Бонус",
+    ["Reroll"] = "Перебросить",
+    
+    -- Quick actions
+    ["Quick Access"] = "Быстрый доступ",
+    ["Quick Actions"] = "Быстрые действия",
+    ["Quick Spells"] = "Быстрые заклинания",
+    
+    -- Map features
+    ["Map"] = "Карта",
+    ["Map Options"] = "Настройки карты",
+    ["Show Markers"] = "Показать метки",
+    ["Hide Markers"] = "Скрыть метки",
+    ["Clear All Markers"] = "Очистить все метки",
+    
+    -- Chat channels
+    ["Trade Channel"] = "Торговый канал",
+    ["Help Channel"] = "Канал помощи",
+    ["World Chat"] = "Мировой чат",
+    ["Local Chat"] = "Локальный чат",
+    ["Guild Chat"] = "Гильдейский чат",
+    ["Party Chat"] = "Чат группы",
+    ["Private Channel"] = "Приватный канал",
+    
+    -- Guild
+    ["Guild"] = "Гильдия",
+    ["Guild Name"] = "Название гильдии",
+    ["Guild Members"] = "Члены гильдии",
+    ["Guild Ranks"] = "Ранги гильдии",
+    ["Invite to Guild"] = "Пригласить в гильдию",
+    ["Leave Guild"] = "Покинуть гильдию",
   }
 }
-
-modules.client_locales.installLocale(locale)
 
 modules.client_locales.installLocale(locale)

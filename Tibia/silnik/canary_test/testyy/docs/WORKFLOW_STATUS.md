@@ -157,28 +157,36 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ---
 
-### 4. Android Build - CMake Toolchain / Protobuf
+### 4. Android Build - Multiple Issues
 
-**Problem:**  
-CMake cannot find Protobuf libraries during Android cross-compilation.
+**Problem 1: PkgConfig Missing**  
+```
+CMake Error: Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE)
+```
 
 **Root Cause:**  
-Android cross-compilation requires the host protoc compiler but tries to find Android-specific libraries.
+Windows runner doesn't have pkg-config installed, and FriBidi falls back to pkg-config when CMake CONFIG is not found.
 
 **Solution:**  
-1. Install protobuf compiler on the host system
-2. Pass the host protoc path to CMake:
+Install pkgconfiglite via Chocolatey:
 ```yaml
-- name: Install protobuf compiler
+- name: Ensure 7zip and pkg-config
   run: |
-    sudo apt-get update
-    sudo apt-get install -y protobuf-compiler libprotobuf-dev
+    choco install -y 7zip pkgconfiglite
+```
 
-- name: Configure CMake
-  run: |
-    cmake ... \
-      -DProtobuf_PROTOC_EXECUTABLE=$(which protoc) \
-      ...
+**Problem 2: LTO Linker Error**
+```
+clang++: error: invalid linker name in argument '-fuse-ld=gold'
+```
+
+**Root Cause:**  
+NDK 29.x doesn't support the `gold` linker with LTO. The `-flto` flag in build.gradle triggers this error.
+
+**Solution:**  
+Removed `-flto` from `android/app/build.gradle`:
+```gradle
+cppFlags '-std=c++20'  // removed '-flto'
 ```
 
 **Status:** ✅ Fixed in PR #29
@@ -230,19 +238,20 @@ Updated `build-windows-cmake.yml`:
 3. [x] Fix Docker workflow - added python3
 4. [x] Fix Windows CMake path triggers
 5. [x] Fix Android SonarCloud protobuf
+6. [x] Fix Android build (pkg-config + LTO linker error)
 
 ### Requires Manual Action
-6. [ ] **SonarCloud Linux** - Disable "Automatic Analysis" in SonarCloud UI
+7. [ ] **SonarCloud Linux** - Disable "Automatic Analysis" in SonarCloud UI
    - Go to: https://sonarcloud.io → Project Settings → Administration → Analysis Method
    - Toggle OFF "Automatic Analysis"
 
 ### Medium Priority
-7. [ ] Enable linting workflows (clang-format, cmake-format, lua-format)
-8. [ ] Enable Lua tests
+8. [ ] Enable linting workflows (clang-format, cmake-format, lua-format)
+9. [ ] Enable Lua tests
 
 ### Low Priority
-9. [ ] Configure PR labeler
-10. [ ] Setup issue auto-labeling
+10. [ ] Configure PR labeler
+11. [ ] Setup issue auto-labeling
 
 ---
 
@@ -250,15 +259,14 @@ Updated `build-windows-cmake.yml`:
 
 | Category | Working | Fixed in PR | Needs Manual Action | Inactive | Total |
 |----------|---------|-------------|---------------------|----------|-------|
-| Build | 2 | 5 | 0 | 4 | 11 |
+| Build | 2 | 6 | 0 | 4 | 12 |
 | Analysis | 1 | 1 | 1 | 1 | 4 |
 | Linting | 0 | 0 | 0 | 3 | 3 |
 | Other | 0 | 0 | 0 | 6 | 6 |
 
 **After PR #29 is merged:**
-- Build: 7 working, 0 failed
+- Build: 8 working, 0 failed
 - Analysis: 2 working, 1 needs manual config
-| **Total** | **3** | **8** | **14** | **32** |
 
 ---
 

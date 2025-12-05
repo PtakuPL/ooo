@@ -28,7 +28,9 @@
 ```cmake
 if(EMSCRIPTEN OR WASM)
     FIND_PATH(LUA_INCLUDE_DIR NAMES lua.h PATH_SUFFIXES lua54 lua5.4 lua)
-    SET(_LUA_STATIC_LIBS liblua54.a liblua5.4.a liblua.a lua54 lua5.4 lua)
+    # Static library file names (.a files) and library names
+    SET(_LUA_STATIC_LIBS liblua54.a liblua5.4.a liblua.a)
+    SET(_LUA_SHARED_LIBS lua54 lua5.4 lua)
 else()
     # Standard Lua 5.1 paths for non-WASM builds
     ...
@@ -40,7 +42,7 @@ endif()
 
 **Problem:** MSVC triggers C1001 internal compiler error on complex template code in `cast.h` around line 157 when using `/O2` optimization.
 
-**Solution:** Added optimization level reduction for Release/RelWithDebInfo builds:
+**Solution:** Added optimization level reduction for Release/RelWithDebInfo builds. The workaround is applied globally because `cast.h` is a header-only template library included via `stdext.h` across all source files:
 ```cmake
 if (MSVC)
   # Workaround for MSVC Internal Compiler Error (ICE) on complex template code

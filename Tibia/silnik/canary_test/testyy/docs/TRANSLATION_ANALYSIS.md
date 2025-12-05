@@ -247,3 +247,5 @@ end
 | 2025-12-05 | Added priority list and translation guidelines |
 | 2025-12-05 | Portuguese (pt) translations expanded: 355 → 784 entries |
 | 2025-12-05 | Russian (ru) translations expanded: 356 → 924 entries |
+| 2025-12-05 | Spanish (es) translations expanded: 494 → 946 entries |
+| 2025-12-05 | French (fr) translations expanded: 509 → 957 entries |

@@ -94,6 +94,144 @@ locale = {
     ["You are dead."] = "Duq mahacats eq.",
     ["Language"] = "Lezun",
     ["Email"] = "El. pastat",
+    
+    -- Combat Skills
+    ["Fist Fighting"] = "Բdelays  payk",
+    ["Club Fighting"] = "Mak payk",
+    ["Sword Fighting"] = "Sur payk",
+    ["Axe Fighting"] = "Kacin payk",
+    ["Distance Fighting"] = "Herakavo payk",
+    ["Shielding"] = "Pashpanutyun",
+    ["Fishing"] = "Dzknors",
+    ["Magic Level"] = "Kaxardakan makardak",
+    
+    -- Game Interface
+    ["Health"] = "Aroxjutyun",
+    ["Health Info Window"] = "Aroxjutyan teghekutyan patuhan",
+    ["You are burning"] = "Duq ayrvum eq",
+    ["You are cursed"] = "Duq anecvats eq",
+    ["You are dazzled"] = "Duq kushatsvats eq",
+    ["You are drowning"] = "Duq kheghdum eq",
+    ["You are drunk"] = "Duq harben eq",
+    ["You are electrified"] = "Duq elekrizacvats eq",
+    ["You are freezing"] = "Duq sarrchum eq",
+    ["You are hasted"] = "Duq aragacvats eq",
+    ["You are hexed"] = "Duq kaxardvats eq",
+    ["You are hungry"] = "Duq kagh eq",
+    ["You are paralyzed"] = "Duq katvaets eq",
+    ["You are poisoned"] = "Duq tuxavorvats eq",
+    ["You are protected by a magic shield"] = "Duq pashpanvats eq kaxardakan vahan",
+    ["You are strengthened"] = "Duq zoracvats eq",
+    ["You are within a protection zone"] = "Duq pashpanutyun gonum eq",
+    ["You may not logout during a fight"] = "Chek karox elq payki jamanak",
+    ["You must enter a valid server address and port"] = "Petq e mutqel chambar server hascen ev port",
+    
+    -- Hotkey Management
+    ["Hotkeys"] = "Tak stexner",
+    ["Add Preset"] = "Avelacnel nakhnakan",
+    ["Copy Preset"] = "Patchen nakhnakan",
+    ["Rename Preset"] = "Veraanvanel nakhnakan",
+    ["Delete Preset"] = "Jnjel nakhnakan",
+    ["New preset name:"] = "Nor nakhnakan anun:",
+    ["Assign Object to Hotkey"] = "Havaqel ararka tak stexin",
+    ["Set Object"] = "Teghavrel ararka",
+    ["Clear Object"] = "Makel ararka",
+    ["Use on yourself"] = "Ogtagortsel qez vra",
+    ["Use on target"] = "Ogtagortsel npataki vra",
+    ["With crosshair"] = "Khachy nshan",
+    
+    -- Cyclopedia/Bestiary
+    ["Cyclopedia"] = "Cyclopedia",
+    ["Bestiary"] = "Bestiary",
+    ["Bosstiary"] = "Bosstiary",
+    ["Charm Points"] = "Hrashq miarner",
+    ["Monsters Killed"] = "Spanvats hrashkner",
+    ["Boss Points"] = "Boss miarner",
+    
+    -- Rarity Levels
+    ["Common"] = "Hasar",
+    ["Uncommon"] = "Vochy hasar",
+    ["Rare"] = "Harvadk",
+    ["Semi-Rare"] = "Kes harvadk",
+    ["Very Rare"] = "Shatt harvadk",
+    
+    -- House System
+    ["House"] = "Tun",
+    ["Invite"] = "Hraver",
+    ["Exclude"] = "Batsarjel",
+    ["Transfer"] = "Poxancel",
+    ["Guest List"] = "Hyureri cank",
+    ["Sub-Owner List"] = "Yenterk. teratsneri cank",
+    
+    -- Imbuing
+    ["Imbuing"] = "Imbuing",
+    ["Imbuements"] = "Imbuements",
+    ["Apply"] = "Kirel",
+    ["Slots"] = "Bujner",
+    
+    -- Store/Rewards
+    ["Store"] = "Khanun",
+    ["Rewards"] = "Mrcanner",
+    ["Daily Reward"] = "Ameanor mrcan",
+    ["Claim"] = "Havakel",
+    
+    -- Updater
+    ["Updater"] = "Taragol",
+    ["Checking for updates..."] = "Stugvum en taragolner...",
+    ["Downloading update..."] = "Nerkberel taragol...",
+    ["Update complete"] = "Taragoly lriv e",
+    ["No updates available"] = "Chka taragolner",
+    
+    -- Loot Management
+    ["Loot"] = "Havakvats",
+    ["Auto Loot"] = "Ink. havakvats",
+    ["Quick Loot"] = "Arag havakvats",
+    ["Loot Container"] = "Havakvats arku",
+    
+    -- Chat Modes
+    ["Say"] = "Asel",
+    ["Whisper"] = "Shpshel",
+    ["Yell"] = "Goroshel",
+    ["NPC"] = "NPC",
+    ["Private Message"] = "Anhat haghord",
+    
+    -- Party System
+    ["Party"] = "Khumb",
+    ["Create Party"] = "Steghcel khumb",
+    ["Join Party"] = "Mianal khumb",
+    ["Leave Party"] = "Thakel khumb",
+    ["Pass Leadership"] = "Poxancel gharavar",
+    
+    -- Reporting
+    ["Report"] = "Hashvetv",
+    ["Report Bug"] = "Hashvetv skhal",
+    ["Report Player"] = "Hashvetv khaghats",
+    ["Rule Violation"] = "Kanon khotum",
+    
+    -- Tasks
+    ["Tasks"] = "Araqelut",
+    ["Daily Tasks"] = "Ameanor araqelut",
+    ["Weekly Tasks"] = "Shabatakan araqelut",
+    ["Complete"] = "Lriv",
+    ["In Progress"] = "Ynthats",
+    
+    -- Directions
+    ["North"] = "Hyus",
+    ["South"] = "Harav",
+    ["East"] = "Arevelq",
+    ["West"] = "Arevmutq",
+    ["Northwest"] = "Hyus-arevmutq",
+    ["Northeast"] = "Hyus-arevelq",
+    ["Southwest"] = "Harav-arevmutq",
+    ["Southeast"] = "Harav-arevelq",
+    
+    -- Time
+    ["Today"] = "Aysor",
+    ["Yesterday"] = "Yerek",
+    ["seconds"] = "varkyan",
+    ["minutes"] = "rope",
+    ["hours"] = "jam",
+    ["days"] = "or",
   }
 }
 

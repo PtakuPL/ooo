@@ -94,6 +94,144 @@ locale = {
     ["You are dead."] = "Umekufa.",
     ["Language"] = "Lugha",
     ["Email"] = "Barua pepe",
+    
+    -- Combat Skills
+    ["Fist Fighting"] = "Kupigana kwa ngumi",
+    ["Club Fighting"] = "Kupigana kwa rungu",
+    ["Sword Fighting"] = "Kupigana kwa upanga",
+    ["Axe Fighting"] = "Kupigana kwa shoka",
+    ["Distance Fighting"] = "Kupigana kwa mbali",
+    ["Shielding"] = "Kujilinda",
+    ["Fishing"] = "Uvuvi",
+    ["Magic Level"] = "Kiwango cha uchawi",
+    
+    -- Game Interface
+    ["Health"] = "Afya",
+    ["Health Info Window"] = "Dirisha la taarifa za afya",
+    ["You are burning"] = "Unawaka moto",
+    ["You are cursed"] = "Umelaaniwa",
+    ["You are dazzled"] = "Umepofushwa",
+    ["You are drowning"] = "Unazama",
+    ["You are drunk"] = "Umelewa",
+    ["You are electrified"] = "Umechomwa na umeme",
+    ["You are freezing"] = "Unaganda",
+    ["You are hasted"] = "Umehimizwa",
+    ["You are hexed"] = "Umepigwa na uchawi",
+    ["You are hungry"] = "Una njaa",
+    ["You are paralyzed"] = "Umepooza",
+    ["You are poisoned"] = "Umepata sumu",
+    ["You are protected by a magic shield"] = "Unalindwa na ngao ya kichawi",
+    ["You are strengthened"] = "Umeimarishwa",
+    ["You are within a protection zone"] = "Uko katika eneo la ulinzi",
+    ["You may not logout during a fight"] = "Huwezi kutoka wakati wa mapigano",
+    ["You must enter a valid server address and port"] = "Lazima uweke anwani ya seva halali na bandari",
+    
+    -- Hotkey Management
+    ["Hotkeys"] = "Vitufe vya haraka",
+    ["Add Preset"] = "Ongeza preset",
+    ["Copy Preset"] = "Nakili preset",
+    ["Rename Preset"] = "Badilisha jina la preset",
+    ["Delete Preset"] = "Futa preset",
+    ["New preset name:"] = "Jina jipya la preset:",
+    ["Assign Object to Hotkey"] = "Weka kitu kwa kitufe cha haraka",
+    ["Set Object"] = "Weka kitu",
+    ["Clear Object"] = "Futa kitu",
+    ["Use on yourself"] = "Tumia kwa nafsi",
+    ["Use on target"] = "Tumia kwa lengo",
+    ["With crosshair"] = "Na alama ya msalaba",
+    
+    -- Cyclopedia/Bestiary
+    ["Cyclopedia"] = "Cyclopedia",
+    ["Bestiary"] = "Bestiary",
+    ["Bosstiary"] = "Bosstiary",
+    ["Charm Points"] = "Pointi za Charm",
+    ["Monsters Killed"] = "Mazimwi yaliyouawa",
+    ["Boss Points"] = "Pointi za Boss",
+    
+    -- Rarity Levels
+    ["Common"] = "Ya kawaida",
+    ["Uncommon"] = "Isiyo ya kawaida",
+    ["Rare"] = "Adimu",
+    ["Semi-Rare"] = "Nusu adimu",
+    ["Very Rare"] = "Adimu sana",
+    
+    -- House System
+    ["House"] = "Nyumba",
+    ["Invite"] = "Alika",
+    ["Exclude"] = "Ondoa",
+    ["Transfer"] = "Hamisha",
+    ["Guest List"] = "Orodha ya wageni",
+    ["Sub-Owner List"] = "Orodha ya wamiliki wadogo",
+    
+    -- Imbuing
+    ["Imbuing"] = "Imbuing",
+    ["Imbuements"] = "Imbuements",
+    ["Apply"] = "Tumia",
+    ["Slots"] = "Nafasi",
+    
+    -- Store/Rewards
+    ["Store"] = "Duka",
+    ["Rewards"] = "Zawadi",
+    ["Daily Reward"] = "Zawadi ya kila siku",
+    ["Claim"] = "Dai",
+    
+    -- Updater
+    ["Updater"] = "Kisasisho",
+    ["Checking for updates..."] = "Kuangalia masasisho...",
+    ["Downloading update..."] = "Kupakua sasisho...",
+    ["Update complete"] = "Sasisho limekamilika",
+    ["No updates available"] = "Hakuna masasisho",
+    
+    -- Loot Management
+    ["Loot"] = "Nyara",
+    ["Auto Loot"] = "Nyara ya kiotomatiki",
+    ["Quick Loot"] = "Nyara ya haraka",
+    ["Loot Container"] = "Chombo cha nyara",
+    
+    -- Chat Modes
+    ["Say"] = "Sema",
+    ["Whisper"] = "Nong'ona",
+    ["Yell"] = "Piga kelele",
+    ["NPC"] = "NPC",
+    ["Private Message"] = "Ujumbe wa faragha",
+    
+    -- Party System
+    ["Party"] = "Kikundi",
+    ["Create Party"] = "Unda kikundi",
+    ["Join Party"] = "Jiunge na kikundi",
+    ["Leave Party"] = "Ondoka kikundi",
+    ["Pass Leadership"] = "Kabidhi uongozi",
+    
+    -- Reporting
+    ["Report"] = "Ripoti",
+    ["Report Bug"] = "Ripoti hitilafu",
+    ["Report Player"] = "Ripoti mchezaji",
+    ["Rule Violation"] = "Ukiukaji wa sheria",
+    
+    -- Tasks
+    ["Tasks"] = "Kazi",
+    ["Daily Tasks"] = "Kazi za kila siku",
+    ["Weekly Tasks"] = "Kazi za kila wiki",
+    ["Complete"] = "Imekamilika",
+    ["In Progress"] = "Inaendelea",
+    
+    -- Directions
+    ["North"] = "Kaskazini",
+    ["South"] = "Kusini",
+    ["East"] = "Mashariki",
+    ["West"] = "Magharibi",
+    ["Northwest"] = "Kaskazini-magharibi",
+    ["Northeast"] = "Kaskazini-mashariki",
+    ["Southwest"] = "Kusini-magharibi",
+    ["Southeast"] = "Kusini-mashariki",
+    
+    -- Time
+    ["Today"] = "Leo",
+    ["Yesterday"] = "Jana",
+    ["seconds"] = "sekunde",
+    ["minutes"] = "dakika",
+    ["hours"] = "masaa",
+    ["days"] = "siku",
   }
 }
 

@@ -94,6 +94,144 @@ locale = {
     ["You are dead."] = "Сіз қайтыс болдыңыз.",
     ["Language"] = "Тіл",
     ["Email"] = "Электрондық пошта",
+    
+    -- Combat Skills
+    ["Fist Fighting"] = "Жұдырықпен ұрыс",
+    ["Club Fighting"] = "Таяқпен ұрыс",
+    ["Sword Fighting"] = "Қылышпен ұрыс",
+    ["Axe Fighting"] = "Балтамен ұрыс",
+    ["Distance Fighting"] = "Қашықтықтан ұрыс",
+    ["Shielding"] = "Қалқан",
+    ["Fishing"] = "Балық аулау",
+    ["Magic Level"] = "Сиқыр деңгейі",
+    
+    -- Game Interface
+    ["Health"] = "Денсаулық",
+    ["Health Info Window"] = "Денсаулық туралы ақпарат терезесі",
+    ["You are burning"] = "Сіз жанып тұрсыз",
+    ["You are cursed"] = "Сіз қарғысқа ұшырадыңыз",
+    ["You are dazzled"] = "Көзіңіз қамасып кетті",
+    ["You are drowning"] = "Сіз батып барасыз",
+    ["You are drunk"] = "Сіз мас болдыңыз",
+    ["You are electrified"] = "Сізге ток тиді",
+    ["You are freezing"] = "Сіз қатып барасыз",
+    ["You are hasted"] = "Сіз жылдамдатылдыңыз",
+    ["You are hexed"] = "Сіз сиқырландыңыз",
+    ["You are hungry"] = "Сіз аш болдыңыз",
+    ["You are paralyzed"] = "Сіз парализдендіңіз",
+    ["You are poisoned"] = "Сіз уланып қалдыңыз",
+    ["You are protected by a magic shield"] = "Сіз сиқырлы қалқанмен қорғалғансыз",
+    ["You are strengthened"] = "Сіз күшейтілдіңіз",
+    ["You are within a protection zone"] = "Сіз қорғау аймағында болдыңыз",
+    ["You may not logout during a fight"] = "Ұрыс кезінде шыға алмайсыз",
+    ["You must enter a valid server address and port"] = "Дұрыс сервер мекенжайы мен портты енгізіңіз",
+    
+    -- Hotkey Management
+    ["Hotkeys"] = "Жылдам пернелер",
+    ["Add Preset"] = "Алдын ала орнату қосу",
+    ["Copy Preset"] = "Алдын ала орнатуды көшіру",
+    ["Rename Preset"] = "Алдын ала орнату атын өзгерту",
+    ["Delete Preset"] = "Алдын ала орнатуды жою",
+    ["New preset name:"] = "Жаңа алдын ала орнату атауы:",
+    ["Assign Object to Hotkey"] = "Нысанды жылдам пернеге тағайындау",
+    ["Set Object"] = "Нысанды орнату",
+    ["Clear Object"] = "Нысанды тазалау",
+    ["Use on yourself"] = "Өзіңізде қолдану",
+    ["Use on target"] = "Мақсатта қолдану",
+    ["With crosshair"] = "Көздеуішпен",
+    
+    -- Cyclopedia/Bestiary
+    ["Cyclopedia"] = "Циклопедия",
+    ["Bestiary"] = "Бестиарий",
+    ["Bosstiary"] = "Босстиарий",
+    ["Charm Points"] = "Сұлулық ұпайлары",
+    ["Monsters Killed"] = "Өлтірілген құбыжықтар",
+    ["Boss Points"] = "Босс ұпайлары",
+    
+    -- Rarity Levels
+    ["Common"] = "Жиі",
+    ["Uncommon"] = "Жиі емес",
+    ["Rare"] = "Сирек",
+    ["Semi-Rare"] = "Жартылай сирек",
+    ["Very Rare"] = "Өте сирек",
+    
+    -- House System
+    ["House"] = "Үй",
+    ["Invite"] = "Шақыру",
+    ["Exclude"] = "Шығару",
+    ["Transfer"] = "Тасымалдау",
+    ["Guest List"] = "Қонақтар тізімі",
+    ["Sub-Owner List"] = "Қосалқы иелер тізімі",
+    
+    -- Imbuing
+    ["Imbuing"] = "Имбуинг",
+    ["Imbuements"] = "Имбуэменттер",
+    ["Apply"] = "Қолдану",
+    ["Slots"] = "Ұяшықтар",
+    
+    -- Store/Rewards
+    ["Store"] = "Дүкен",
+    ["Rewards"] = "Сыйлықтар",
+    ["Daily Reward"] = "Күнделікті сыйлық",
+    ["Claim"] = "Алу",
+    
+    -- Updater
+    ["Updater"] = "Жаңартушы",
+    ["Checking for updates..."] = "Жаңартулар тексерілуде...",
+    ["Downloading update..."] = "Жаңарту жүктелуде...",
+    ["Update complete"] = "Жаңарту аяқталды",
+    ["No updates available"] = "Жаңартулар жоқ",
+    
+    -- Loot Management
+    ["Loot"] = "Олжа",
+    ["Auto Loot"] = "Авто олжа",
+    ["Quick Loot"] = "Жылдам олжа",
+    ["Loot Container"] = "Олжа контейнері",
+    
+    -- Chat Modes
+    ["Say"] = "Айту",
+    ["Whisper"] = "Сыбырлау",
+    ["Yell"] = "Айқайлау",
+    ["NPC"] = "NPC",
+    ["Private Message"] = "Жеке хабарлама",
+    
+    -- Party System
+    ["Party"] = "Топ",
+    ["Create Party"] = "Топ құру",
+    ["Join Party"] = "Топқа қосылу",
+    ["Leave Party"] = "Топтан шығу",
+    ["Pass Leadership"] = "Көшбасшылықты беру",
+    
+    -- Reporting
+    ["Report"] = "Есеп",
+    ["Report Bug"] = "Қате туралы хабарлау",
+    ["Report Player"] = "Ойыншы туралы хабарлау",
+    ["Rule Violation"] = "Ереже бұзушылық",
+    
+    -- Tasks
+    ["Tasks"] = "Тапсырмалар",
+    ["Daily Tasks"] = "Күнделікті тапсырмалар",
+    ["Weekly Tasks"] = "Апталық тапсырмалар",
+    ["Complete"] = "Аяқталды",
+    ["In Progress"] = "Орындалуда",
+    
+    -- Directions
+    ["North"] = "Солтүстік",
+    ["South"] = "Оңтүстік",
+    ["East"] = "Шығыс",
+    ["West"] = "Батыс",
+    ["Northwest"] = "Солтүстік-батыс",
+    ["Northeast"] = "Солтүстік-шығыс",
+    ["Southwest"] = "Оңтүстік-батыс",
+    ["Southeast"] = "Оңтүстік-шығыс",
+    
+    -- Time
+    ["Today"] = "Бүгін",
+    ["Yesterday"] = "Кеше",
+    ["seconds"] = "секунд",
+    ["minutes"] = "минут",
+    ["hours"] = "сағат",
+    ["days"] = "күн",
   }
 }
 

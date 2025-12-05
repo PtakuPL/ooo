@@ -94,6 +94,144 @@ locale = {
     ["You are dead."] = "Patay ka na.",
     ["Language"] = "Wika",
     ["Email"] = "Email",
+    
+    -- Combat Skills
+    ["Fist Fighting"] = "Pagsuntok",
+    ["Club Fighting"] = "Paggamit ng Pamalo",
+    ["Sword Fighting"] = "Paglaban gamit ang Espada",
+    ["Axe Fighting"] = "Paglaban gamit ang Palakol",
+    ["Distance Fighting"] = "Malalayong Labanan",
+    ["Shielding"] = "Pagtatanggol",
+    ["Fishing"] = "Pangingisda",
+    ["Magic Level"] = "Antas ng Mahika",
+    
+    -- Game Interface
+    ["Health"] = "Buhay",
+    ["Health Info Window"] = "Window ng Impormasyon ng Buhay",
+    ["You are burning"] = "Nasusunog ka",
+    ["You are cursed"] = "Sinumpa ka",
+    ["You are dazzled"] = "Nabulag ka",
+    ["You are drowning"] = "Nalulunod ka",
+    ["You are drunk"] = "Lasing ka",
+    ["You are electrified"] = "Nakuryente ka",
+    ["You are freezing"] = "Nagyeyelo ka",
+    ["You are hasted"] = "Mabilis ka",
+    ["You are hexed"] = "Nasumpa ka",
+    ["You are hungry"] = "Nagugutom ka",
+    ["You are paralyzed"] = "Naparalisa ka",
+    ["You are poisoned"] = "Nalason ka",
+    ["You are protected by a magic shield"] = "Protektado ka ng mahiwagang kalasag",
+    ["You are strengthened"] = "Lumakas ka",
+    ["You are within a protection zone"] = "Nasa proteksyon zone ka",
+    ["You may not logout during a fight"] = "Hindi ka maaaring mag-logout habang nakikipaglaban",
+    ["You must enter a valid server address and port"] = "Kailangan mong maglagay ng wastong server address at port",
+    
+    -- Hotkey Management
+    ["Hotkeys"] = "Mga Hotkey",
+    ["Add Preset"] = "Magdagdag ng Preset",
+    ["Copy Preset"] = "Kopyahin ang Preset",
+    ["Rename Preset"] = "Palitan ang Pangalan ng Preset",
+    ["Delete Preset"] = "Burahin ang Preset",
+    ["New preset name:"] = "Bagong pangalan ng preset:",
+    ["Assign Object to Hotkey"] = "I-assign ang Object sa Hotkey",
+    ["Set Object"] = "Itakda ang Object",
+    ["Clear Object"] = "Burahin ang Object",
+    ["Use on yourself"] = "Gamitin sa sarili",
+    ["Use on target"] = "Gamitin sa target",
+    ["With crosshair"] = "Gamit ang crosshair",
+    
+    -- Cyclopedia/Bestiary
+    ["Cyclopedia"] = "Cyclopedia",
+    ["Bestiary"] = "Bestiary",
+    ["Bosstiary"] = "Bosstiary",
+    ["Charm Points"] = "Charm Points",
+    ["Monsters Killed"] = "Mga Pinatay na Halimaw",
+    ["Boss Points"] = "Boss Points",
+    
+    -- Rarity Levels
+    ["Common"] = "Karaniwang",
+    ["Uncommon"] = "Hindi karaniwan",
+    ["Rare"] = "Bihira",
+    ["Semi-Rare"] = "Medyo bihira",
+    ["Very Rare"] = "Napakabihira",
+    
+    -- House System
+    ["House"] = "Bahay",
+    ["Invite"] = "Imbitahin",
+    ["Exclude"] = "Alisin",
+    ["Transfer"] = "Ilipat",
+    ["Guest List"] = "Listahan ng mga Bisita",
+    ["Sub-Owner List"] = "Listahan ng mga Sub-Owner",
+    
+    -- Imbuing
+    ["Imbuing"] = "Imbuing",
+    ["Imbuements"] = "Mga Imbuement",
+    ["Apply"] = "I-apply",
+    ["Slots"] = "Mga Slot",
+    
+    -- Store/Rewards
+    ["Store"] = "Tindahan",
+    ["Rewards"] = "Mga Gantimpala",
+    ["Daily Reward"] = "Pang-araw-araw na Gantimpala",
+    ["Claim"] = "Kunin",
+    
+    -- Updater
+    ["Updater"] = "Updater",
+    ["Checking for updates..."] = "Sinusuri ang mga update...",
+    ["Downloading update..."] = "Dina-download ang update...",
+    ["Update complete"] = "Tapos na ang update",
+    ["No updates available"] = "Walang available na mga update",
+    
+    -- Loot Management
+    ["Loot"] = "Loot",
+    ["Auto Loot"] = "Auto Loot",
+    ["Quick Loot"] = "Mabilis na Loot",
+    ["Loot Container"] = "Lalagyan ng Loot",
+    
+    -- Chat Modes
+    ["Say"] = "Sabihin",
+    ["Whisper"] = "Bulong",
+    ["Yell"] = "Sigaw",
+    ["NPC"] = "NPC",
+    ["Private Message"] = "Pribadong Mensahe",
+    
+    -- Party System
+    ["Party"] = "Grupo",
+    ["Create Party"] = "Gumawa ng Grupo",
+    ["Join Party"] = "Sumali sa Grupo",
+    ["Leave Party"] = "Umalis sa Grupo",
+    ["Pass Leadership"] = "Ipasa ang Liderato",
+    
+    -- Reporting
+    ["Report"] = "Ulat",
+    ["Report Bug"] = "Mag-ulat ng Bug",
+    ["Report Player"] = "Mag-ulat ng Manlalaro",
+    ["Rule Violation"] = "Paglabag sa Patakaran",
+    
+    -- Tasks
+    ["Tasks"] = "Mga Gawain",
+    ["Daily Tasks"] = "Pang-araw-araw na Gawain",
+    ["Weekly Tasks"] = "Lingguhang Gawain",
+    ["Complete"] = "Tapos",
+    ["In Progress"] = "Kasalukuyang ginagawa",
+    
+    -- Directions
+    ["North"] = "Hilaga",
+    ["South"] = "Timog",
+    ["East"] = "Silangan",
+    ["West"] = "Kanluran",
+    ["Northwest"] = "Hilagang-kanluran",
+    ["Northeast"] = "Hilagang-silangan",
+    ["Southwest"] = "Timog-kanluran",
+    ["Southeast"] = "Timog-silangan",
+    
+    -- Time
+    ["Today"] = "Ngayon",
+    ["Yesterday"] = "Kahapon",
+    ["seconds"] = "segundo",
+    ["minutes"] = "minuto",
+    ["hours"] = "oras",
+    ["days"] = "araw",
   }
 }
 

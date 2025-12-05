@@ -94,6 +94,144 @@ locale = {
     ["You are dead."] = "თქვენ მკვდარი ხართ.",
     ["Language"] = "ენა",
     ["Email"] = "ელ-ფოსტა",
+    
+    -- Combat Skills
+    ["Fist Fighting"] = "მუშტიკრივი",
+    ["Club Fighting"] = "კეტით ბრძოლა",
+    ["Sword Fighting"] = "ხმლით ბრძოლა",
+    ["Axe Fighting"] = "ცულით ბრძოლა",
+    ["Distance Fighting"] = "დისტანციური ბრძოლა",
+    ["Shielding"] = "ფარი",
+    ["Fishing"] = "თევზაობა",
+    ["Magic Level"] = "მაგიის დონე",
+    
+    -- Game Interface
+    ["Health"] = "ჯანმრთელობა",
+    ["Health Info Window"] = "ჯანმრთელობის ინფორმაციის ფანჯარა",
+    ["You are burning"] = "თქვენ იწვით",
+    ["You are cursed"] = "თქვენ შეწყევლილი ხართ",
+    ["You are dazzled"] = "თქვენ დაბრმავებული ხართ",
+    ["You are drowning"] = "თქვენ იხრჩობით",
+    ["You are drunk"] = "თქვენ მთვრალი ხართ",
+    ["You are electrified"] = "თქვენ ელექტროშოკირებული ხართ",
+    ["You are freezing"] = "თქვენ იყინებით",
+    ["You are hasted"] = "თქვენ დაჩქარებული ხართ",
+    ["You are hexed"] = "თქვენ მოჯადოებული ხართ",
+    ["You are hungry"] = "თქვენ მშიერი ხართ",
+    ["You are paralyzed"] = "თქვენ პარალიზებული ხართ",
+    ["You are poisoned"] = "თქვენ მოწამლული ხართ",
+    ["You are protected by a magic shield"] = "თქვენ დაცული ხართ ჯადოსნური ფარით",
+    ["You are strengthened"] = "თქვენ გაძლიერებული ხართ",
+    ["You are within a protection zone"] = "თქვენ დაცვის ზონაში ხართ",
+    ["You may not logout during a fight"] = "ბრძოლის დროს ვერ გახვალთ",
+    ["You must enter a valid server address and port"] = "შეიყვანეთ სწორი სერვერის მისამართი და პორტი",
+    
+    -- Hotkey Management
+    ["Hotkeys"] = "ცხელი კლავიშები",
+    ["Add Preset"] = "პრესეტის დამატება",
+    ["Copy Preset"] = "პრესეტის კოპირება",
+    ["Rename Preset"] = "პრესეტის გადარქმევა",
+    ["Delete Preset"] = "პრესეტის წაშლა",
+    ["New preset name:"] = "ახალი პრესეტის სახელი:",
+    ["Assign Object to Hotkey"] = "ობიექტის მინიჭება ცხელ კლავიშზე",
+    ["Set Object"] = "ობიექტის დაყენება",
+    ["Clear Object"] = "ობიექტის გასუფთავება",
+    ["Use on yourself"] = "საკუთარ თავზე გამოყენება",
+    ["Use on target"] = "სამიზნეზე გამოყენება",
+    ["With crosshair"] = "ჯვრით",
+    
+    -- Cyclopedia/Bestiary
+    ["Cyclopedia"] = "ციკლოპედია",
+    ["Bestiary"] = "ბესტიარი",
+    ["Bosstiary"] = "ბოსტიარი",
+    ["Charm Points"] = "მომხიბვლელობის ქულები",
+    ["Monsters Killed"] = "მოკლული მონსტრები",
+    ["Boss Points"] = "ბოსის ქულები",
+    
+    -- Rarity Levels
+    ["Common"] = "ჩვეულებრივი",
+    ["Uncommon"] = "არაჩვეულებრივი",
+    ["Rare"] = "იშვიათი",
+    ["Semi-Rare"] = "ნახევრად იშვიათი",
+    ["Very Rare"] = "ძალიან იშვიათი",
+    
+    -- House System
+    ["House"] = "სახლი",
+    ["Invite"] = "მოწვევა",
+    ["Exclude"] = "გამორიცხვა",
+    ["Transfer"] = "გადაცემა",
+    ["Guest List"] = "სტუმრების სია",
+    ["Sub-Owner List"] = "თანამფლობელების სია",
+    
+    -- Imbuing
+    ["Imbuing"] = "ინფუზია",
+    ["Imbuements"] = "ინფუზიები",
+    ["Apply"] = "გამოყენება",
+    ["Slots"] = "სლოტები",
+    
+    -- Store/Rewards
+    ["Store"] = "მაღაზია",
+    ["Rewards"] = "ჯილდოები",
+    ["Daily Reward"] = "ყოველდღიური ჯილდო",
+    ["Claim"] = "მოთხოვნა",
+    
+    -- Updater
+    ["Updater"] = "განახლების პროგრამა",
+    ["Checking for updates..."] = "განახლებების შემოწმება...",
+    ["Downloading update..."] = "განახლების ჩამოტვირთვა...",
+    ["Update complete"] = "განახლება დასრულებულია",
+    ["No updates available"] = "განახლებები არ არის",
+    
+    -- Loot Management
+    ["Loot"] = "ნადავლი",
+    ["Auto Loot"] = "ავტომატური ნადავლი",
+    ["Quick Loot"] = "სწრაფი ნადავლი",
+    ["Loot Container"] = "ნადავლის კონტეინერი",
+    
+    -- Chat Modes
+    ["Say"] = "თქვა",
+    ["Whisper"] = "ჩურჩული",
+    ["Yell"] = "ყვირილი",
+    ["NPC"] = "NPC",
+    ["Private Message"] = "პირადი შეტყობინება",
+    
+    -- Party System
+    ["Party"] = "ჯგუფი",
+    ["Create Party"] = "ჯგუფის შექმნა",
+    ["Join Party"] = "ჯგუფში გაწევრიანება",
+    ["Leave Party"] = "ჯგუფიდან გასვლა",
+    ["Pass Leadership"] = "ლიდერობის გადაცემა",
+    
+    -- Reporting
+    ["Report"] = "შეტყობინება",
+    ["Report Bug"] = "შეცდომის შეტყობინება",
+    ["Report Player"] = "მოთამაშის შეტყობინება",
+    ["Rule Violation"] = "წესების დარღვევა",
+    
+    -- Tasks
+    ["Tasks"] = "დავალებები",
+    ["Daily Tasks"] = "ყოველდღიური დავალებები",
+    ["Weekly Tasks"] = "ყოველკვირეული დავალებები",
+    ["Complete"] = "დასრულებული",
+    ["In Progress"] = "მიმდინარეობს",
+    
+    -- Directions
+    ["North"] = "ჩრდილოეთი",
+    ["South"] = "სამხრეთი",
+    ["East"] = "აღმოსავლეთი",
+    ["West"] = "დასავლეთი",
+    ["Northwest"] = "ჩრდილო-დასავლეთი",
+    ["Northeast"] = "ჩრდილო-აღმოსავლეთი",
+    ["Southwest"] = "სამხრეთ-დასავლეთი",
+    ["Southeast"] = "სამხრეთ-აღმოსავლეთი",
+    
+    -- Time
+    ["Today"] = "დღეს",
+    ["Yesterday"] = "გუშინ",
+    ["seconds"] = "წამი",
+    ["minutes"] = "წუთი",
+    ["hours"] = "საათი",
+    ["days"] = "დღე",
   }
 }
 

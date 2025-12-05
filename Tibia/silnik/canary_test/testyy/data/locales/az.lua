@@ -94,6 +94,144 @@ locale = {
     ["You are dead."] = "Öldünüz.",
     ["Language"] = "Dil",
     ["Email"] = "E-poçt",
+    
+    -- Combat Skills
+    ["Fist Fighting"] = "Yumruq döyüşü",
+    ["Club Fighting"] = "Dəyənək döyüşü",
+    ["Sword Fighting"] = "Qılınc döyüşü",
+    ["Axe Fighting"] = "Balta döyüşü",
+    ["Distance Fighting"] = "Məsafədən döyüş",
+    ["Shielding"] = "Qalxan",
+    ["Fishing"] = "Balıqçılıq",
+    ["Magic Level"] = "Sehrli səviyyə",
+    
+    -- Game Interface
+    ["Health"] = "Can",
+    ["Health Info Window"] = "Can məlumat pəncərəsi",
+    ["You are burning"] = "Yanırsınız",
+    ["You are cursed"] = "Lənətləndiz",
+    ["You are dazzled"] = "Gözləriniz qamaşdı",
+    ["You are drowning"] = "Boğulursunuz",
+    ["You are drunk"] = "Sərxoşsunuz",
+    ["You are electrified"] = "Elektrik vuruldu",
+    ["You are freezing"] = "Donursunuz",
+    ["You are hasted"] = "Sürətləndiz",
+    ["You are hexed"] = "Cadunandınız",
+    ["You are hungry"] = "Acsınız",
+    ["You are paralyzed"] = "Felcdiniz",
+    ["You are poisoned"] = "Zəhərləndiz",
+    ["You are protected by a magic shield"] = "Sehrli qalxanla qorunursunuz",
+    ["You are strengthened"] = "Gücləndiniz",
+    ["You are within a protection zone"] = "Qoruma zonasındasınız",
+    ["You may not logout during a fight"] = "Döyüş zamanı çıxa bilməzsiniz",
+    ["You must enter a valid server address and port"] = "Düzgün server ünvanı və port daxil etməlisiniz",
+    
+    -- Hotkey Management
+    ["Hotkeys"] = "Qısa yollar",
+    ["Add Preset"] = "Hazırlıq əlavə et",
+    ["Copy Preset"] = "Hazırlığı kopyala",
+    ["Rename Preset"] = "Hazırlığın adını dəyiş",
+    ["Delete Preset"] = "Hazırlığı sil",
+    ["New preset name:"] = "Yeni hazırlıq adı:",
+    ["Assign Object to Hotkey"] = "Qısa yola obyekt təyin et",
+    ["Set Object"] = "Obyekt təyin et",
+    ["Clear Object"] = "Obyekti təmizlə",
+    ["Use on yourself"] = "Özündə istifadə et",
+    ["Use on target"] = "Hədəfdə istifadə et",
+    ["With crosshair"] = "Nişangahla",
+    
+    -- Cyclopedia/Bestiary
+    ["Cyclopedia"] = "Cyclopedia",
+    ["Bestiary"] = "Bestiary",
+    ["Bosstiary"] = "Bosstiary",
+    ["Charm Points"] = "Cazibə xalları",
+    ["Monsters Killed"] = "Öldürülən canavarlar",
+    ["Boss Points"] = "Boss xalları",
+    
+    -- Rarity Levels
+    ["Common"] = "Adi",
+    ["Uncommon"] = "Nadir",
+    ["Rare"] = "Nadir",
+    ["Semi-Rare"] = "Yarım-nadir",
+    ["Very Rare"] = "Çox nadir",
+    
+    -- House System
+    ["House"] = "Ev",
+    ["Invite"] = "Dəvət et",
+    ["Exclude"] = "Xaric et",
+    ["Transfer"] = "Transfer",
+    ["Guest List"] = "Qonaq siyahısı",
+    ["Sub-Owner List"] = "Alt sahiblər siyahısı",
+    
+    -- Imbuing
+    ["Imbuing"] = "Imbuing",
+    ["Imbuements"] = "Imbuements",
+    ["Apply"] = "Tətbiq et",
+    ["Slots"] = "Yuvalar",
+    
+    -- Store/Rewards
+    ["Store"] = "Mağaza",
+    ["Rewards"] = "Mükafatlar",
+    ["Daily Reward"] = "Gündəlik mükafat",
+    ["Claim"] = "Tələb et",
+    
+    -- Updater
+    ["Updater"] = "Yeniləyici",
+    ["Checking for updates..."] = "Yeniləmələr yoxlanılır...",
+    ["Downloading update..."] = "Yeniləmə endirilir...",
+    ["Update complete"] = "Yeniləmə tamamlandı",
+    ["No updates available"] = "Yeniləmə yoxdur",
+    
+    -- Loot Management
+    ["Loot"] = "Qənimət",
+    ["Auto Loot"] = "Avtomatik qənimət",
+    ["Quick Loot"] = "Sürətli qənimət",
+    ["Loot Container"] = "Qənimət konteyneri",
+    
+    -- Chat Modes
+    ["Say"] = "De",
+    ["Whisper"] = "Pıçıltı",
+    ["Yell"] = "Qışqır",
+    ["NPC"] = "NPC",
+    ["Private Message"] = "Şəxsi mesaj",
+    
+    -- Party System
+    ["Party"] = "Grup",
+    ["Create Party"] = "Grup yarat",
+    ["Join Party"] = "Gruba qatıl",
+    ["Leave Party"] = "Grupdan çıx",
+    ["Pass Leadership"] = "Liderliyi ötür",
+    
+    -- Reporting
+    ["Report"] = "Şikayət",
+    ["Report Bug"] = "Xəta bildir",
+    ["Report Player"] = "Oyunçu bildir",
+    ["Rule Violation"] = "Qayda pozuntusu",
+    
+    -- Tasks
+    ["Tasks"] = "Tapşırıqlar",
+    ["Daily Tasks"] = "Gündəlik tapşırıqlar",
+    ["Weekly Tasks"] = "Həftəlik tapşırıqlar",
+    ["Complete"] = "Tamamlandı",
+    ["In Progress"] = "Davam edir",
+    
+    -- Directions
+    ["North"] = "Şimal",
+    ["South"] = "Cənub",
+    ["East"] = "Şərq",
+    ["West"] = "Qərb",
+    ["Northwest"] = "Şimal-qərb",
+    ["Northeast"] = "Şimal-şərq",
+    ["Southwest"] = "Cənub-qərb",
+    ["Southeast"] = "Cənub-şərq",
+    
+    -- Time
+    ["Today"] = "Bu gün",
+    ["Yesterday"] = "Dünən",
+    ["seconds"] = "saniyə",
+    ["minutes"] = "dəqiqə",
+    ["hours"] = "saat",
+    ["days"] = "gün",
   }
 }
 

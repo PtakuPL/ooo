@@ -94,6 +94,144 @@ locale = {
     ["You are dead."] = "Siz o'ldingiz.",
     ["Language"] = "Til",
     ["Email"] = "Elektron pochta",
+    
+    -- Combat Skills
+    ["Fist Fighting"] = "Musht bilan jang",
+    ["Club Fighting"] = "Tayoq bilan jang",
+    ["Sword Fighting"] = "Qilich bilan jang",
+    ["Axe Fighting"] = "Bolta bilan jang",
+    ["Distance Fighting"] = "Masofadan jang",
+    ["Shielding"] = "Qalqon",
+    ["Fishing"] = "Baliq ovi",
+    ["Magic Level"] = "Sehrli daraja",
+    
+    -- Game Interface
+    ["Health"] = "Sog'liq",
+    ["Health Info Window"] = "Sog'liq ma'lumot oynasi",
+    ["You are burning"] = "Siz yonayapsiz",
+    ["You are cursed"] = "Siz la'natlangansiz",
+    ["You are dazzled"] = "Ko'zingiz qamashdi",
+    ["You are drowning"] = "Siz cho'kayapsiz",
+    ["You are drunk"] = "Siz mast bo'ldingiz",
+    ["You are electrified"] = "Sizga tok urdi",
+    ["You are freezing"] = "Siz muzlayapsiz",
+    ["You are hasted"] = "Siz tezlashtirilgansiz",
+    ["You are hexed"] = "Siz sehrlanganasiz",
+    ["You are hungry"] = "Siz ochsiz",
+    ["You are paralyzed"] = "Siz falajsiz",
+    ["You are poisoned"] = "Siz zaharlandingiz",
+    ["You are protected by a magic shield"] = "Siz sehrli qalqon bilan himoyalangansiz",
+    ["You are strengthened"] = "Siz kuchaytirilgansiz",
+    ["You are within a protection zone"] = "Siz himoya zonasida ekansiz",
+    ["You may not logout during a fight"] = "Jang paytida chiqa olmaysiz",
+    ["You must enter a valid server address and port"] = "To'g'ri server manzili va portni kiriting",
+    
+    -- Hotkey Management
+    ["Hotkeys"] = "Tez tugmalar",
+    ["Add Preset"] = "Preset qo'shish",
+    ["Copy Preset"] = "Presetni nusxalash",
+    ["Rename Preset"] = "Preset nomini o'zgartirish",
+    ["Delete Preset"] = "Presetni o'chirish",
+    ["New preset name:"] = "Yangi preset nomi:",
+    ["Assign Object to Hotkey"] = "Obyektni tez tugmaga tayinlash",
+    ["Set Object"] = "Obyektni o'rnatish",
+    ["Clear Object"] = "Obyektni tozalash",
+    ["Use on yourself"] = "O'zingizda ishlatish",
+    ["Use on target"] = "Maqsadda ishlatish",
+    ["With crosshair"] = "Nishon bilan",
+    
+    -- Cyclopedia/Bestiary
+    ["Cyclopedia"] = "Cyclopedia",
+    ["Bestiary"] = "Bestiary",
+    ["Bosstiary"] = "Bosstiary",
+    ["Charm Points"] = "Joziba ballari",
+    ["Monsters Killed"] = "O'ldirilgan yirtqichlar",
+    ["Boss Points"] = "Boss ballari",
+    
+    -- Rarity Levels
+    ["Common"] = "Oddiy",
+    ["Uncommon"] = "Kam uchraydi",
+    ["Rare"] = "Kam",
+    ["Semi-Rare"] = "Yarim kam",
+    ["Very Rare"] = "Juda kam",
+    
+    -- House System
+    ["House"] = "Uy",
+    ["Invite"] = "Taklif qilish",
+    ["Exclude"] = "Chiqarish",
+    ["Transfer"] = "O'tkazish",
+    ["Guest List"] = "Mehmonlar ro'yxati",
+    ["Sub-Owner List"] = "Qo'shimcha egalar ro'yxati",
+    
+    -- Imbuing
+    ["Imbuing"] = "Imbuing",
+    ["Imbuements"] = "Imbuements",
+    ["Apply"] = "Qo'llash",
+    ["Slots"] = "Bo'shliqlar",
+    
+    -- Store/Rewards
+    ["Store"] = "Do'kon",
+    ["Rewards"] = "Mukofotlar",
+    ["Daily Reward"] = "Kunlik mukofot",
+    ["Claim"] = "Olish",
+    
+    -- Updater
+    ["Updater"] = "Yangilovchi",
+    ["Checking for updates..."] = "Yangilanishlar tekshirilmoqda...",
+    ["Downloading update..."] = "Yangilanish yuklanmoqda...",
+    ["Update complete"] = "Yangilash tugallandi",
+    ["No updates available"] = "Yangilanishlar yo'q",
+    
+    -- Loot Management
+    ["Loot"] = "O'lja",
+    ["Auto Loot"] = "Avto o'lja",
+    ["Quick Loot"] = "Tez o'lja",
+    ["Loot Container"] = "O'lja idishi",
+    
+    -- Chat Modes
+    ["Say"] = "Aytish",
+    ["Whisper"] = "Shivirlamoq",
+    ["Yell"] = "Baqirmoq",
+    ["NPC"] = "NPC",
+    ["Private Message"] = "Shaxsiy xabar",
+    
+    -- Party System
+    ["Party"] = "Guruh",
+    ["Create Party"] = "Guruh yaratish",
+    ["Join Party"] = "Guruhga qo'shilish",
+    ["Leave Party"] = "Guruhdan chiqish",
+    ["Pass Leadership"] = "Rahbarlikni berish",
+    
+    -- Reporting
+    ["Report"] = "Hisobot",
+    ["Report Bug"] = "Xato haqida xabar berish",
+    ["Report Player"] = "O'yinchi haqida xabar berish",
+    ["Rule Violation"] = "Qoida buzilishi",
+    
+    -- Tasks
+    ["Tasks"] = "Vazifalar",
+    ["Daily Tasks"] = "Kunlik vazifalar",
+    ["Weekly Tasks"] = "Haftalik vazifalar",
+    ["Complete"] = "Tugallandi",
+    ["In Progress"] = "Jarayonda",
+    
+    -- Directions
+    ["North"] = "Shimol",
+    ["South"] = "Janub",
+    ["East"] = "Sharq",
+    ["West"] = "G'arb",
+    ["Northwest"] = "Shimoliy-g'arb",
+    ["Northeast"] = "Shimoliy-sharq",
+    ["Southwest"] = "Janubiy-g'arb",
+    ["Southeast"] = "Janubiy-sharq",
+    
+    -- Time
+    ["Today"] = "Bugun",
+    ["Yesterday"] = "Kecha",
+    ["seconds"] = "soniya",
+    ["minutes"] = "daqiqa",
+    ["hours"] = "soat",
+    ["days"] = "kun",
   }
 }
 

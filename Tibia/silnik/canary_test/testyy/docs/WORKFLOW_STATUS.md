@@ -224,30 +224,40 @@ Updated `build-windows-cmake.yml`:
 
 ## Next Steps
 
-### High Priority
-1. [ ] Fix Docker workflow Dockerfile path
-2. [ ] Fix Android NDK configuration
-3. [ ] Fix Windows CMake vcpkg triplet
+### Fixed in PR #29 (pending merge)
+1. [x] Fix Emscripten/WASM Lua detection
+2. [x] Fix Windows MSVC C1001 (disabled ASAN)
+3. [x] Fix Docker workflow - added python3
+4. [x] Fix Windows CMake path triggers
+5. [x] Fix Android SonarCloud protobuf
+
+### Requires Manual Action
+6. [ ] **SonarCloud Linux** - Disable "Automatic Analysis" in SonarCloud UI
+   - Go to: https://sonarcloud.io → Project Settings → Administration → Analysis Method
+   - Toggle OFF "Automatic Analysis"
 
 ### Medium Priority
-4. [ ] Investigate SonarCloud Linux token issues
-5. [ ] Enable linting workflows (clang-format, cmake-format, lua-format)
+7. [ ] Enable linting workflows (clang-format, cmake-format, lua-format)
+8. [ ] Enable Lua tests
 
 ### Low Priority
-6. [ ] Enable Lua tests
-7. [ ] Configure PR labeler
-8. [ ] Setup issue auto-labeling
+9. [ ] Configure PR labeler
+10. [ ] Setup issue auto-labeling
 
 ---
 
 ## Summary Statistics
 
-| Category | Working | Failed | Inactive | Total |
-|----------|---------|--------|----------|-------|
-| Build | 2 | 5 | 4 | 11 |
-| Analysis | 1 | 3 | 1 | 5 |
-| Linting | 0 | 0 | 3 | 3 |
-| Other | 0 | 0 | 6 | 6 |
+| Category | Working | Fixed in PR | Needs Manual Action | Inactive | Total |
+|----------|---------|-------------|---------------------|----------|-------|
+| Build | 2 | 5 | 0 | 4 | 11 |
+| Analysis | 1 | 1 | 1 | 1 | 4 |
+| Linting | 0 | 0 | 0 | 3 | 3 |
+| Other | 0 | 0 | 0 | 6 | 6 |
+
+**After PR #29 is merged:**
+- Build: 7 working, 0 failed
+- Analysis: 2 working, 1 needs manual config
 | **Total** | **3** | **8** | **14** | **32** |
 
 ---

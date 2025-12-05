@@ -116,8 +116,11 @@ if (MSVC)
   target_link_options(${PROJECT_NAME} PRIVATE /LTCG:OFF)
   # Prevent Windows.h from defining min/max macros that conflict with std::min/std::max
   target_compile_definitions(${PROJECT_NAME} PRIVATE NOMINMAX)
-  # Workaround for MSVC Internal Compiler Error (ICE) on complex template code
-  # Reduce optimization level for files that trigger C1001 errors
+  # Workaround for MSVC Internal Compiler Error (ICE) C1001 on complex template code
+  # The ICE occurs in cast.h which is included via stdext.h across all source files.
+  # Since it's a header-only template library, we can't target specific source files.
+  # Using /O1 globally is necessary as the ICE triggers during template instantiation
+  # across multiple TUs. /O1 still provides optimizations (for size) while being safer.
   target_compile_options(${PROJECT_NAME} PRIVATE
     $<$<CONFIG:Release>:/O1>  # Use /O1 (minimize size) instead of /O2 (maximize speed) for Release
     $<$<CONFIG:RelWithDebInfo>:/O1>

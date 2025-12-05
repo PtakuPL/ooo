@@ -1,4 +1,4 @@
-name: Analysis - SonarCloud
+name: Analysis - SonarCloud (Linux)
 
 on:
   workflow_dispatch:
@@ -7,18 +7,22 @@ on:
   push:
     branches: [ master ]
 
+permissions:
+  contents: read
+  pull-requests: read
+
 env:
-  VCPKG_BUILD_TYPE: release
   CMAKE_BUILD_PARALLEL_LEVEL: 4
   MAKEFLAGS: '-j 4'
-  VCPKG_DEFAULT_TRIPLET: x64-linux
-  VCPKG_DEFAULT_HOST_TRIPLET: x64-linux
   VCPKG_FEATURE_FLAGS: manifests,binarycaching
   VCPKG_BINARY_SOURCES: clear;x-gha,readwrite
+  VCPKG_BUILD_TYPE: release
+  VCPKG_DEFAULT_TRIPLET: x64-linux
+  VCPKG_DEFAULT_HOST_TRIPLET: x64-linux
 
 jobs:
-  sonarcloud:
-    name: SonarCloud
+  sonarcloud-linux:
+    name: SonarCloud (Linux)
     runs-on: ubuntu-22.04
     defaults:
       run:

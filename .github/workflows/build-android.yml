@@ -17,6 +17,7 @@ on:
 env:
   CMAKE_BUILD_PARALLEL_LEVEL: 4
   MAKEFLAGS: '-j 4'
+  VCPKG_ROOT: C:\vcpkg
 
 jobs:
   cancel-runs:
@@ -31,7 +32,7 @@ jobs:
   android:
     name: android-apk
     runs-on: windows-2022
-    timeout-minutes: 90
+    timeout-minutes: 120
     defaults:
       run:
         working-directory: Tibia/silnik/canary_test/testyy
@@ -53,6 +54,37 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
+
+      - name: Get vcpkg commit ID
+        id: vcpkg-step
+        shell: bash
+        run: |
+          vcpkgCommitId=$(grep '.builtin-baseline' vcpkg.json | awk -F: '{print $2}' | tr -d '," ')
+          echo "vcpkgGitCommitId=$vcpkgCommitId" >> $GITHUB_OUTPUT
+          echo "hash=$(sha256sum vcpkg.json | cut -d' ' -f1)" >> $GITHUB_OUTPUT
+
+      - name: Cache vcpkg
+        uses: actions/cache@v4
+        with:
+          path: |
+            C:\vcpkg
+            ${{ env.LOCALAPPDATA }}\vcpkg
+          key: vcpkg-android-${{ steps.vcpkg-step.outputs.hash }}
+          restore-keys: |
+            vcpkg-android-
+
+      - name: Setup vcpkg
+        shell: powershell
+        run: |
+          if (-not (Test-Path "C:\vcpkg")) {
+            git clone https://github.com/microsoft/vcpkg.git C:\vcpkg
+          }
+          cd C:\vcpkg
+          git fetch --all
+          git checkout ${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}
+          if (-not (Test-Path "C:\vcpkg\vcpkg.exe")) {
+            .\bootstrap-vcpkg.bat
+          }
 
       - name: Ensure 7zip
         run: choco install -y 7zip
@@ -100,6 +132,26 @@ jobs:
         run: |
           powershell -ExecutionPolicy Bypass -File .\create_android_assets.ps1
 
+      - name: Cache Gradle
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: gradle-android-${{ hashFiles('Tibia/silnik/canary_test/testyy/android/**/*.gradle*', 'Tibia/silnik/canary_test/testyy/android/**/gradle-wrapper.properties') }}
+          restore-keys: |
+            gradle-android-
+
+      - name: Cache Android build directory
+        uses: actions/cache@v4
+        with:
+          path: |
+            Tibia/silnik/canary_test/testyy/android/app/build
+            Tibia/silnik/canary_test/testyy/android/app/.cxx
+          key: android-build-${{ hashFiles('Tibia/silnik/canary_test/testyy/src/**/*.cpp', 'Tibia/silnik/canary_test/testyy/src/**/*.h', 'Tibia/silnik/canary_test/testyy/src/**/*.hpp', 'Tibia/silnik/canary_test/testyy/CMakeLists.txt') }}
+          restore-keys: |
+            android-build-
+
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
@@ -111,9 +163,10 @@ jobs:
         env:
           ANDROID_NDK_HOME: C:\Android\android-sdk\android-ndk-r23c
           ANDROID_SDK_ROOT: ${{ env.ANDROID_HOME }}
+          VCPKG_ROOT: C:\vcpkg
         run: |
           chmod +x ./gradlew 2>/dev/null || true
-          ./gradlew assembleRelease --no-daemon --stacktrace
+          ./gradlew assembleRelease --no-daemon --stacktrace --build-cache
 
       - name: Find APK
         id: find-apk

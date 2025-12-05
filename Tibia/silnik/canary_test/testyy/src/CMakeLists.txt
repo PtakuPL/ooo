@@ -480,7 +480,12 @@ else()
     find_package(GLEW REQUIRED)
     find_package(LuaJIT REQUIRED)
   else()
-    set(LUA_LIBRARY ${LUA_LIBRARY} ${CMAKE_SOURCE_DIR}/browser/include/lua51/liblua.a)
+    # For WASM builds, find Lua via vcpkg (lua package for emscripten platform)
+    find_package(Lua REQUIRED)
+    # Use LUA_LIBRARIES if available, otherwise fall back to LUA_LIBRARY
+    if(LUA_LIBRARIES)
+      set(LUA_LIBRARY ${LUA_LIBRARIES})
+    endif()
     set(BROWSER_INCLUDE_DIR ${BROWSER_INCLUDE_DIR} ${CMAKE_SOURCE_DIR}/browser/include)
   endif()
 endif()
@@ -834,6 +839,7 @@ elseif(WASM)
           ${NLOHMANN_JSON_INCLUDE_DIR}
           ${OPENSSL_INCLUDE_DIR}
           ${BROWSER_INCLUDE_DIR}
+          ${LUA_INCLUDE_DIR}
           ${BS_THREAD_POOL_INCLUDE_DIR}
           ${STDUUID_INCLUDE_DIRS}
   )

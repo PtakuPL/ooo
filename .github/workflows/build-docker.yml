@@ -5,17 +5,17 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
-      - "Dockerfile"
-      - ".dockerignore"
+      - "Tibia/silnik/canary_test/testyy/Dockerfile"
+      - "Tibia/silnik/canary_test/testyy/.dockerignore"
       - ".github/workflows/build-docker.yml"
-      - "src/**"
+      - "Tibia/silnik/canary_test/testyy/src/**"
   push:
-    branches: [ $default-branch ]
+    branches: [ master ]
     paths:
-      - "Dockerfile"
-      - ".dockerignore"
+      - "Tibia/silnik/canary_test/testyy/Dockerfile"
+      - "Tibia/silnik/canary_test/testyy/.dockerignore"
       - ".github/workflows/build-docker.yml"
-      - "src/**"
+      - "Tibia/silnik/canary_test/testyy/src/**"
 
 env:
   REGISTRY: ghcr.io
@@ -64,8 +64,8 @@ jobs:
       - name: Build and push Docker image with cache
         uses: docker/build-push-action@v5
         with:
-          context: .
-          file: Dockerfile
+          context: Tibia/silnik/canary_test/testyy
+          file: Tibia/silnik/canary_test/testyy/Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}

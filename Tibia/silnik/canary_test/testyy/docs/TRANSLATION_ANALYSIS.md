@@ -255,3 +255,6 @@ end
 | 2025-12-05 | Turkish (tr) translations expanded: 566 → 850+ entries |
 | 2025-12-05 | Dutch (nl) translations expanded: 566 → 850+ entries |
 | 2025-12-05 | Chinese (zh) translations expanded: 566 → 850+ entries |
+| 2025-12-05 | Japanese (ja) translations expanded: 566 → 750+ entries |
+| 2025-12-05 | Korean (ko) translations expanded: 566 → 750+ entries |
+| 2025-12-05 | Arabic (ar) translations expanded: 566 → 750+ entries |

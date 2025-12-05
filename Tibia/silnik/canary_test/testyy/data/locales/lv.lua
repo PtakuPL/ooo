@@ -8,6 +8,7 @@ locale = {
   thousandsSeperator = ' ',
 
   translation = {
+    -- Base UI
     ["Accept"] = "Pieņemt",
     ["Account name"] = "Konta nosaukums",
     ["Account Status"] = "Konta statuss",
@@ -94,6 +95,152 @@ locale = {
     ["You are dead."] = "Tu esi miris.",
     ["Language"] = "Valoda",
     ["Email"] = "E-pasts",
+    
+    -- Combat Skills
+    ["Fist Fighting"] = "Dūru cīņa",
+    ["Club Fighting"] = "Rungas cīņa",
+    ["Sword Fighting"] = "Zobena cīņa",
+    ["Axe Fighting"] = "Cirvja cīņa",
+    ["Distance Fighting"] = "Tālcīņa",
+    ["Shielding"] = "Vairoga lietošana",
+    ["Fishing"] = "Makšķerēšana",
+    ["Critical Hit Chance"] = "Kritiskā trāpījuma iespēja",
+    ["Critical Hit Damage"] = "Kritiskā trāpījuma bojājums",
+    ["Life Leech Chance"] = "Dzīvības zādzības iespēja",
+    ["Life Leech Amount"] = "Dzīvības zādzības daudzums",
+    ["Mana Leech Chance"] = "Manas zādzības iespēja",
+    ["Mana Leech Amount"] = "Manas zādzības daudzums",
+    ["Magic Level"] = "Maģijas līmenis",
+    
+    -- Game UI Extended
+    ["Health"] = "Veselība",
+    ["Health Info"] = "Veselības info",
+    ["Mana Info"] = "Manas info",
+    ["Experience Info"] = "Pieredzes info",
+    ["Regeneration Time"] = "Atjaunošanas laiks",
+    ["Offline Training"] = "Bezsaistes treniņš",
+    ["Total Experience"] = "Kopējā pieredze",
+    ["Store Inbox"] = "Veikala iesūtne",
+    ["Prey Wildcards"] = "Medījuma džokeri",
+    ["Max Level"] = "Maks. līmenis",
+    ["Min Level"] = "Min. līmenis",
+    
+    -- Hotkey Presets
+    ["Preset Name"] = "Iestatījuma nosaukums",
+    ["Add Hotkey Preset"] = "Pievienot karstā taustiņa iestatījumu",
+    ["Copy Hotkey Preset"] = "Kopēt karstā taustiņa iestatījumu",
+    ["Rename Hotkey Preset"] = "Pārdēvēt karstā taustiņa iestatījumu",
+    ["Delete Hotkey Preset"] = "Dzēst karstā taustiņa iestatījumu",
+    ["Hotkeys"] = "Karstie taustiņi",
+    ["Current hotkeys preset"] = "Pašreizējais karstie taustiņi iestatījums",
+    ["Add new preset"] = "Pievienot jaunu iestatījumu",
+    
+    -- Cyclopedia / Bestiary
+    ["Cyclopedia"] = "Ciklopēdija",
+    ["Bestiary"] = "Bestiārijs",
+    ["Bosstiary"] = "Bostiarijs",
+    ["Bestiary Tracker"] = "Bestiārija izsekotājs",
+    ["Creatures"] = "Radījumi",
+    ["Charm Points"] = "Burvju punkti",
+    ["Charms"] = "Burvji",
+    ["Unlock Charm"] = "Atbloķēt burvju",
+    ["Points"] = "Punkti",
+    ["Kills"] = "Nogalināšanas",
+    
+    -- Rarity Levels
+    ["Common"] = "Parasts",
+    ["Uncommon"] = "Neparasts",
+    ["Rare"] = "Rets",
+    ["Semi Rare"] = "Daļēji rets",
+    ["Very Rare"] = "Ļoti rets",
+    ["Rarity"] = "Retums",
+    
+    -- House System
+    ["House"] = "Māja",
+    ["Houses"] = "Mājas",
+    ["Rent"] = "Īre",
+    ["Bid"] = "Solījums",
+    ["Owner"] = "Īpašnieks",
+    ["House Info"] = "Mājas info",
+    ["Invite"] = "Uzaicināt",
+    ["Sub-Owner"] = "Apakšīpašnieks",
+    ["Guest"] = "Viesis",
+    ["Door"] = "Durvis",
+    ["Beds"] = "Gultas",
+    ["Size"] = "Izmērs",
+    
+    -- Status Effects
+    ["Poisoned"] = "Saindēts",
+    ["Burning"] = "Degošs",
+    ["Electrified"] = "Elektrizēts",
+    ["Drunk"] = "Piedzēries",
+    ["Slowed"] = "Palēnināts",
+    ["Haste"] = "Steidzīgs",
+    ["Drowning"] = "Slīkstošs",
+    ["Freezing"] = "Sasalstošs",
+    ["Cursed"] = "Nolādēts",
+    ["Magic Shield"] = "Maģiskais vairogs",
+    ["Bleeding"] = "Asiņojošs",
+    ["Hungry"] = "Izsalcis",
+    
+    -- Store and Rewards
+    ["Store"] = "Veikals",
+    ["Reward"] = "Balva",
+    ["Rewards"] = "Balvas",
+    ["Daily Reward"] = "Ikdienas balva",
+    ["Claim"] = "Pieprasīt",
+    ["Collect"] = "Savākt",
+    ["Bonus"] = "Bonuss",
+    ["Offer"] = "Piedāvājums",
+    ["Discount"] = "Atlaide",
+    ["Purchase"] = "Pirkums",
+    ["Transfer"] = "Pārskaitījums",
+    ["History"] = "Vēsture",
+    
+    -- Updater
+    ["Updater"] = "Atjauninātājs",
+    ["Downloading update..."] = "Lejupielādē atjauninājumu...",
+    ["Checking for updates..."] = "Pārbauda atjauninājumus...",
+    ["Update available"] = "Atjauninājums pieejams",
+    ["No updates available"] = "Nav pieejamu atjauninājumu",
+    ["Download complete"] = "Lejupielāde pabeigta",
+    ["Update failed"] = "Atjauninājums neizdevās",
+    ["Restart required"] = "Nepieciešama restartēšana",
+    
+    -- Chat Modes
+    ["Chat"] = "Tērzēšana",
+    ["Whisper"] = "Čukstēt",
+    ["Yell"] = "Kliegt",
+    ["Say"] = "Teikt",
+    ["NPC"] = "NPC",
+    ["Private"] = "Privāts",
+    ["Party Chat"] = "Grupas tērzēšana",
+    ["Guild Chat"] = "Ģildes tērzēšana",
+    
+    -- Party System
+    ["Party"] = "Grupa",
+    ["Leader"] = "Vadītājs",
+    ["Member"] = "Dalībnieks",
+    ["Invite to Party"] = "Uzaicināt grupā",
+    ["Join Party"] = "Pievienoties grupai",
+    ["Leave Party"] = "Pamest grupu",
+    
+    -- Directions
+    ["North"] = "Ziemeļi",
+    ["South"] = "Dienvidi",
+    ["East"] = "Austrumi",
+    ["West"] = "Rietumi",
+    ["Northeast"] = "Ziemeļaustrumi",
+    ["Northwest"] = "Ziemeļrietumi",
+    ["Southeast"] = "Dienvidaustrumi",
+    ["Southwest"] = "Dienvidrietumi",
+    
+    -- Time
+    ["Day"] = "Diena",
+    ["Night"] = "Nakts",
+    ["Hour"] = "Stunda",
+    ["Minute"] = "Minūte",
+    ["Second"] = "Sekunde",
   }
 }
 

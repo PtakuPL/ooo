@@ -8,6 +8,7 @@ locale = {
   thousandsSeperator = ' ',
 
   translation = {
+    -- Base UI
     ["Accept"] = "Nõustu",
     ["Account name"] = "Konto nimi",
     ["Account Status"] = "Konto staatus",
@@ -94,6 +95,151 @@ locale = {
     ["You are dead."] = "Sa oled surnud.",
     ["Language"] = "Keel",
     ["Email"] = "E-post",
+    
+    -- Combat Skills
+    ["Fist Fighting"] = "Rusikatevõitlus",
+    ["Club Fighting"] = "Nuiavõitlus",
+    ["Sword Fighting"] = "Mõõgavõitlus",
+    ["Axe Fighting"] = "Kirvevõitlus",
+    ["Distance Fighting"] = "Kaugvõitlus",
+    ["Shielding"] = "Kilpi kasutamine",
+    ["Fishing"] = "Kalapüük",
+    ["Critical Hit Chance"] = "Kriitilise löögi võimalus",
+    ["Critical Hit Damage"] = "Kriitilise löögi kahju",
+    ["Life Leech Chance"] = "Eluvarguse võimalus",
+    ["Life Leech Amount"] = "Eluvarguse kogus",
+    ["Mana Leech Chance"] = "Manavarguse võimalus",
+    ["Mana Leech Amount"] = "Manavarguse kogus",
+    ["Magic Level"] = "Maagia tase",
+    
+    -- Game UI Extended
+    ["Health"] = "Tervis",
+    ["Health Info"] = "Tervise info",
+    ["Mana Info"] = "Mana info",
+    ["Experience Info"] = "Kogemuse info",
+    ["Regeneration Time"] = "Taastumise aeg",
+    ["Offline Training"] = "Võrguühenduseta treening",
+    ["Total Experience"] = "Kogukogemus",
+    ["Store Inbox"] = "Poe postkast",
+    ["Max Level"] = "Max tase",
+    ["Min Level"] = "Min tase",
+    
+    -- Hotkey Presets
+    ["Preset Name"] = "Eelseadistuse nimi",
+    ["Add Hotkey Preset"] = "Lisa kiirklahvi eelseadistus",
+    ["Copy Hotkey Preset"] = "Kopeeri kiirklahvi eelseadistus",
+    ["Rename Hotkey Preset"] = "Nimeta kiirklahvi eelseadistus ümber",
+    ["Delete Hotkey Preset"] = "Kustuta kiirklahvi eelseadistus",
+    ["Hotkeys"] = "Kiirklahvid",
+    ["Current hotkeys preset"] = "Praegune kiirklahvide eelseadistus",
+    ["Add new preset"] = "Lisa uus eelseadistus",
+    
+    -- Cyclopedia / Bestiary
+    ["Cyclopedia"] = "Tsüklopeedia",
+    ["Bestiary"] = "Bestiaar",
+    ["Bosstiary"] = "Bostiaar",
+    ["Bestiary Tracker"] = "Bestiaari jälgija",
+    ["Creatures"] = "Olendid",
+    ["Charm Points"] = "Võlupunktid",
+    ["Charms"] = "Võlud",
+    ["Unlock Charm"] = "Ava võlu",
+    ["Points"] = "Punktid",
+    ["Kills"] = "Tapmised",
+    
+    -- Rarity Levels
+    ["Common"] = "Tavaline",
+    ["Uncommon"] = "Ebatavaline",
+    ["Rare"] = "Haruldane",
+    ["Semi Rare"] = "Poolharuldane",
+    ["Very Rare"] = "Väga haruldane",
+    ["Rarity"] = "Haruldus",
+    
+    -- House System
+    ["House"] = "Maja",
+    ["Houses"] = "Majad",
+    ["Rent"] = "Üür",
+    ["Bid"] = "Pakkumine",
+    ["Owner"] = "Omanik",
+    ["House Info"] = "Maja info",
+    ["Invite"] = "Kutsu",
+    ["Sub-Owner"] = "Alamomanik",
+    ["Guest"] = "Külaline",
+    ["Door"] = "Uks",
+    ["Beds"] = "Voodid",
+    ["Size"] = "Suurus",
+    
+    -- Status Effects
+    ["Poisoned"] = "Mürgitatud",
+    ["Burning"] = "Põlev",
+    ["Electrified"] = "Elektrifitseeritud",
+    ["Drunk"] = "Purjus",
+    ["Slowed"] = "Aeglustatud",
+    ["Haste"] = "Kiirustav",
+    ["Drowning"] = "Uppuv",
+    ["Freezing"] = "Külmuv",
+    ["Cursed"] = "Neetu",
+    ["Magic Shield"] = "Maagiline kilp",
+    ["Bleeding"] = "Veritsemine",
+    ["Hungry"] = "Näljane",
+    
+    -- Store and Rewards
+    ["Store"] = "Pood",
+    ["Reward"] = "Tasu",
+    ["Rewards"] = "Tasud",
+    ["Daily Reward"] = "Igapäevane tasu",
+    ["Claim"] = "Nõua",
+    ["Collect"] = "Kogu",
+    ["Bonus"] = "Boonus",
+    ["Offer"] = "Pakkumine",
+    ["Discount"] = "Allahindlus",
+    ["Purchase"] = "Ost",
+    ["Transfer"] = "Ülekanne",
+    ["History"] = "Ajalugu",
+    
+    -- Updater
+    ["Updater"] = "Uuendaja",
+    ["Downloading update..."] = "Laadib uuendust alla...",
+    ["Checking for updates..."] = "Kontrollib uuendusi...",
+    ["Update available"] = "Uuendus saadaval",
+    ["No updates available"] = "Uuendusi pole saadaval",
+    ["Download complete"] = "Allalaadimine valmis",
+    ["Update failed"] = "Uuendamine ebaõnnestus",
+    ["Restart required"] = "Taaskäivitus nõutav",
+    
+    -- Chat Modes
+    ["Chat"] = "Vestlus",
+    ["Whisper"] = "Sosistamine",
+    ["Yell"] = "Karjumine",
+    ["Say"] = "Ütle",
+    ["NPC"] = "NPC",
+    ["Private"] = "Privaatne",
+    ["Party Chat"] = "Grupijutt",
+    ["Guild Chat"] = "Gildijutt",
+    
+    -- Party System
+    ["Party"] = "Grupp",
+    ["Leader"] = "Juht",
+    ["Member"] = "Liige",
+    ["Invite to Party"] = "Kutsu gruppi",
+    ["Join Party"] = "Liitu grupiga",
+    ["Leave Party"] = "Lahku grupist",
+    
+    -- Directions
+    ["North"] = "Põhi",
+    ["South"] = "Lõuna",
+    ["East"] = "Ida",
+    ["West"] = "Lääs",
+    ["Northeast"] = "Kirre",
+    ["Northwest"] = "Loode",
+    ["Southeast"] = "Kagu",
+    ["Southwest"] = "Edel",
+    
+    -- Time
+    ["Day"] = "Päev",
+    ["Night"] = "Öö",
+    ["Hour"] = "Tund",
+    ["Minute"] = "Minut",
+    ["Second"] = "Sekund",
   }
 }
 

@@ -8,6 +8,7 @@ locale = {
   thousandsSeperator = '.',
 
   translation = {
+    -- Base UI
     ["Accept"] = "Aceptar",
     ["Account name"] = "Nome da conta",
     ["Account Status"] = "Estado da conta",
@@ -94,6 +95,151 @@ locale = {
     ["You are dead."] = "Estás morto.",
     ["Language"] = "Idioma",
     ["Email"] = "Correo electrónico",
+    
+    -- Combat Skills
+    ["Fist Fighting"] = "Loita con puños",
+    ["Club Fighting"] = "Loita con mazas",
+    ["Sword Fighting"] = "Loita con espadas",
+    ["Axe Fighting"] = "Loita con machadas",
+    ["Distance Fighting"] = "Loita a distancia",
+    ["Shielding"] = "Uso do escudo",
+    ["Fishing"] = "Pesca",
+    ["Critical Hit Chance"] = "Probabilidade de golpe crítico",
+    ["Critical Hit Damage"] = "Dano de golpe crítico",
+    ["Life Leech Chance"] = "Probabilidade de roubo de vida",
+    ["Life Leech Amount"] = "Cantidade de roubo de vida",
+    ["Mana Leech Chance"] = "Probabilidade de roubo de mana",
+    ["Mana Leech Amount"] = "Cantidade de roubo de mana",
+    ["Magic Level"] = "Nivel de maxia",
+    
+    -- Game UI Extended
+    ["Health"] = "Saúde",
+    ["Health Info"] = "Info de saúde",
+    ["Mana Info"] = "Info de mana",
+    ["Experience Info"] = "Info de experiencia",
+    ["Regeneration Time"] = "Tempo de rexeneración",
+    ["Offline Training"] = "Adestramento fóra de liña",
+    ["Total Experience"] = "Experiencia total",
+    ["Store Inbox"] = "Bandeixa da tenda",
+    ["Max Level"] = "Nivel máximo",
+    ["Min Level"] = "Nivel mínimo",
+    
+    -- Hotkey Presets
+    ["Preset Name"] = "Nome do preset",
+    ["Add Hotkey Preset"] = "Engadir preset de atallos",
+    ["Copy Hotkey Preset"] = "Copiar preset de atallos",
+    ["Rename Hotkey Preset"] = "Renomear preset de atallos",
+    ["Delete Hotkey Preset"] = "Eliminar preset de atallos",
+    ["Hotkeys"] = "Atallos",
+    ["Current hotkeys preset"] = "Preset de atallos actual",
+    ["Add new preset"] = "Engadir novo preset",
+    
+    -- Cyclopedia / Bestiary
+    ["Cyclopedia"] = "Ciclopedia",
+    ["Bestiary"] = "Bestiario",
+    ["Bosstiary"] = "Bostiario",
+    ["Bestiary Tracker"] = "Rastrexador do bestiario",
+    ["Creatures"] = "Criaturas",
+    ["Charm Points"] = "Puntos de encanto",
+    ["Charms"] = "Encantos",
+    ["Unlock Charm"] = "Desbloquear encanto",
+    ["Points"] = "Puntos",
+    ["Kills"] = "Mortes",
+    
+    -- Rarity Levels
+    ["Common"] = "Común",
+    ["Uncommon"] = "Pouco común",
+    ["Rare"] = "Raro",
+    ["Semi Rare"] = "Semi raro",
+    ["Very Rare"] = "Moi raro",
+    ["Rarity"] = "Rareza",
+    
+    -- House System
+    ["House"] = "Casa",
+    ["Houses"] = "Casas",
+    ["Rent"] = "Aluguer",
+    ["Bid"] = "Oferta",
+    ["Owner"] = "Propietario",
+    ["House Info"] = "Info da casa",
+    ["Invite"] = "Convidar",
+    ["Sub-Owner"] = "Subpropietario",
+    ["Guest"] = "Convidado",
+    ["Door"] = "Porta",
+    ["Beds"] = "Camas",
+    ["Size"] = "Tamaño",
+    
+    -- Status Effects
+    ["Poisoned"] = "Envelenado",
+    ["Burning"] = "Ardendo",
+    ["Electrified"] = "Electrificado",
+    ["Drunk"] = "Borracho",
+    ["Slowed"] = "Ralentizado",
+    ["Haste"] = "Présa",
+    ["Drowning"] = "Afogándose",
+    ["Freezing"] = "Conxelándose",
+    ["Cursed"] = "Maldito",
+    ["Magic Shield"] = "Escudo máxico",
+    ["Bleeding"] = "Sangrando",
+    ["Hungry"] = "Faminto",
+    
+    -- Store and Rewards
+    ["Store"] = "Tenda",
+    ["Reward"] = "Recompensa",
+    ["Rewards"] = "Recompensas",
+    ["Daily Reward"] = "Recompensa diaria",
+    ["Claim"] = "Reclamar",
+    ["Collect"] = "Recoller",
+    ["Bonus"] = "Bonificación",
+    ["Offer"] = "Oferta",
+    ["Discount"] = "Desconto",
+    ["Purchase"] = "Compra",
+    ["Transfer"] = "Transferencia",
+    ["History"] = "Historial",
+    
+    -- Updater
+    ["Updater"] = "Actualizador",
+    ["Downloading update..."] = "Descargando actualización...",
+    ["Checking for updates..."] = "Comprobando actualizacións...",
+    ["Update available"] = "Actualización dispoñible",
+    ["No updates available"] = "Non hai actualizacións dispoñibles",
+    ["Download complete"] = "Descarga completa",
+    ["Update failed"] = "A actualización fallou",
+    ["Restart required"] = "Require reinicio",
+    
+    -- Chat Modes
+    ["Chat"] = "Chat",
+    ["Whisper"] = "Murmurar",
+    ["Yell"] = "Berrar",
+    ["Say"] = "Dicir",
+    ["NPC"] = "NPC",
+    ["Private"] = "Privado",
+    ["Party Chat"] = "Chat de grupo",
+    ["Guild Chat"] = "Chat de gremio",
+    
+    -- Party System
+    ["Party"] = "Grupo",
+    ["Leader"] = "Líder",
+    ["Member"] = "Membro",
+    ["Invite to Party"] = "Convidar ao grupo",
+    ["Join Party"] = "Unirse ao grupo",
+    ["Leave Party"] = "Deixar o grupo",
+    
+    -- Directions
+    ["North"] = "Norte",
+    ["South"] = "Sur",
+    ["East"] = "Leste",
+    ["West"] = "Oeste",
+    ["Northeast"] = "Nordeste",
+    ["Northwest"] = "Noroeste",
+    ["Southeast"] = "Sueste",
+    ["Southwest"] = "Suroeste",
+    
+    -- Time
+    ["Day"] = "Día",
+    ["Night"] = "Noite",
+    ["Hour"] = "Hora",
+    ["Minute"] = "Minuto",
+    ["Second"] = "Segundo",
   }
 }
 

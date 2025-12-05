@@ -8,6 +8,7 @@ locale = {
   thousandsSeperator = '.',
 
   translation = {
+    -- Base UI
     ["Accept"] = "Acceptar",
     ["Account name"] = "Nom del compte",
     ["Account Status"] = "Estat del compte",
@@ -94,6 +95,151 @@ locale = {
     ["You are dead."] = "Estàs mort.",
     ["Language"] = "Idioma",
     ["Email"] = "Correu electrònic",
+    
+    -- Combat Skills
+    ["Fist Fighting"] = "Lluita amb els punys",
+    ["Club Fighting"] = "Lluita amb maces",
+    ["Sword Fighting"] = "Lluita amb espases",
+    ["Axe Fighting"] = "Lluita amb destrals",
+    ["Distance Fighting"] = "Lluita a distància",
+    ["Shielding"] = "Ús de l'escut",
+    ["Fishing"] = "Pesca",
+    ["Critical Hit Chance"] = "Probabilitat de cop crític",
+    ["Critical Hit Damage"] = "Dany de cop crític",
+    ["Life Leech Chance"] = "Probabilitat de robatori de vida",
+    ["Life Leech Amount"] = "Quantitat de robatori de vida",
+    ["Mana Leech Chance"] = "Probabilitat de robatori de mana",
+    ["Mana Leech Amount"] = "Quantitat de robatori de mana",
+    ["Magic Level"] = "Nivell de màgia",
+    
+    -- Game UI Extended
+    ["Health"] = "Salut",
+    ["Health Info"] = "Info de salut",
+    ["Mana Info"] = "Info de mana",
+    ["Experience Info"] = "Info d'experiència",
+    ["Regeneration Time"] = "Temps de regeneració",
+    ["Offline Training"] = "Entrenament fora de línia",
+    ["Total Experience"] = "Experiència total",
+    ["Store Inbox"] = "Safata de la botiga",
+    ["Max Level"] = "Nivell màxim",
+    ["Min Level"] = "Nivell mínim",
+    
+    -- Hotkey Presets
+    ["Preset Name"] = "Nom del preset",
+    ["Add Hotkey Preset"] = "Afegir preset de tecles ràpides",
+    ["Copy Hotkey Preset"] = "Copiar preset de tecles ràpides",
+    ["Rename Hotkey Preset"] = "Renombrar preset de tecles ràpides",
+    ["Delete Hotkey Preset"] = "Eliminar preset de tecles ràpides",
+    ["Hotkeys"] = "Tecles ràpides",
+    ["Current hotkeys preset"] = "Preset actual de tecles ràpides",
+    ["Add new preset"] = "Afegir nou preset",
+    
+    -- Cyclopedia / Bestiary
+    ["Cyclopedia"] = "Ciclopèdia",
+    ["Bestiary"] = "Bestiari",
+    ["Bosstiary"] = "Bostiari",
+    ["Bestiary Tracker"] = "Rastrejador del bestiari",
+    ["Creatures"] = "Criatures",
+    ["Charm Points"] = "Punts d'encant",
+    ["Charms"] = "Encants",
+    ["Unlock Charm"] = "Desbloquejar encant",
+    ["Points"] = "Punts",
+    ["Kills"] = "Morts",
+    
+    -- Rarity Levels
+    ["Common"] = "Comú",
+    ["Uncommon"] = "Poc comú",
+    ["Rare"] = "Rar",
+    ["Semi Rare"] = "Semi rar",
+    ["Very Rare"] = "Molt rar",
+    ["Rarity"] = "Raresa",
+    
+    -- House System
+    ["House"] = "Casa",
+    ["Houses"] = "Cases",
+    ["Rent"] = "Lloguer",
+    ["Bid"] = "Oferta",
+    ["Owner"] = "Propietari",
+    ["House Info"] = "Info de la casa",
+    ["Invite"] = "Convidar",
+    ["Sub-Owner"] = "Subpropietari",
+    ["Guest"] = "Convidat",
+    ["Door"] = "Porta",
+    ["Beds"] = "Llits",
+    ["Size"] = "Mida",
+    
+    -- Status Effects
+    ["Poisoned"] = "Enverinat",
+    ["Burning"] = "Cremant",
+    ["Electrified"] = "Electrificat",
+    ["Drunk"] = "Borratxo",
+    ["Slowed"] = "Alentit",
+    ["Haste"] = "Rapidesa",
+    ["Drowning"] = "Ofegant-se",
+    ["Freezing"] = "Congelant-se",
+    ["Cursed"] = "Maleït",
+    ["Magic Shield"] = "Escut màgic",
+    ["Bleeding"] = "Sagnat",
+    ["Hungry"] = "Afamat",
+    
+    -- Store and Rewards
+    ["Store"] = "Botiga",
+    ["Reward"] = "Recompensa",
+    ["Rewards"] = "Recompenses",
+    ["Daily Reward"] = "Recompensa diària",
+    ["Claim"] = "Reclamar",
+    ["Collect"] = "Recollir",
+    ["Bonus"] = "Bonificació",
+    ["Offer"] = "Oferta",
+    ["Discount"] = "Descompte",
+    ["Purchase"] = "Compra",
+    ["Transfer"] = "Transferència",
+    ["History"] = "Historial",
+    
+    -- Updater
+    ["Updater"] = "Actualitzador",
+    ["Downloading update..."] = "Descarregant actualització...",
+    ["Checking for updates..."] = "Comprovant actualitzacions...",
+    ["Update available"] = "Actualització disponible",
+    ["No updates available"] = "No hi ha actualitzacions disponibles",
+    ["Download complete"] = "Descàrrega completa",
+    ["Update failed"] = "L'actualització ha fallat",
+    ["Restart required"] = "Cal reiniciar",
+    
+    -- Chat Modes
+    ["Chat"] = "Xat",
+    ["Whisper"] = "Xiuxiuejar",
+    ["Yell"] = "Cridar",
+    ["Say"] = "Dir",
+    ["NPC"] = "NPC",
+    ["Private"] = "Privat",
+    ["Party Chat"] = "Xat de grup",
+    ["Guild Chat"] = "Xat de germandat",
+    
+    -- Party System
+    ["Party"] = "Grup",
+    ["Leader"] = "Líder",
+    ["Member"] = "Membre",
+    ["Invite to Party"] = "Convidar al grup",
+    ["Join Party"] = "Unir-se al grup",
+    ["Leave Party"] = "Deixar el grup",
+    
+    -- Directions
+    ["North"] = "Nord",
+    ["South"] = "Sud",
+    ["East"] = "Est",
+    ["West"] = "Oest",
+    ["Northeast"] = "Nord-est",
+    ["Northwest"] = "Nord-oest",
+    ["Southeast"] = "Sud-est",
+    ["Southwest"] = "Sud-oest",
+    
+    -- Time
+    ["Day"] = "Dia",
+    ["Night"] = "Nit",
+    ["Hour"] = "Hora",
+    ["Minute"] = "Minut",
+    ["Second"] = "Segon",
   }
 }
 

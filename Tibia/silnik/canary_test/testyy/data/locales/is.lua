@@ -8,6 +8,7 @@ locale = {
   thousandsSeperator = '.',
 
   translation = {
+    -- Base UI
     ["Accept"] = "Samþykkja",
     ["Account name"] = "Reikningsnafn",
     ["Account Status"] = "Staða reiknings",
@@ -15,21 +16,21 @@ locale = {
     ["Add"] = "Bæta við",
     ["Add new server"] = "Bæta við nýjum þjóni",
     ["Add new VIP"] = "Bæta við nýjum VIP",
-    ["Add to VIP list"] = "Bæta á VIP lista",
+    ["Add to VIP list"] = "Bæta við VIP lista",
     ["All"] = "Allt",
     ["Amount"] = "Magn",
     ["Attack"] = "Árás",
     ["Audio"] = "Hljóð",
     ["Author"] = "Höfundur",
-    ["Balance"] = "Staða",
+    ["Balance"] = "Jafnvægi",
     ["Battle"] = "Bardagi",
-    ["Browse"] = "Vafra",
+    ["Browse"] = "Fletta",
     ["Buy"] = "Kaupa",
     ["Buy Now"] = "Kaupa núna",
     ["Cancel"] = "Hætta við",
-    ["Capacity"] = "Rými",
+    ["Capacity"] = "Geta",
     ["Center"] = "Miðja",
-    ["Change language"] = "Skipta um tungumál",
+    ["Change language"] = "Breyta tungumáli",
     ["Channels"] = "Rásir",
     ["Character List"] = "Persónulisti",
     ["Close"] = "Loka",
@@ -37,7 +38,7 @@ locale = {
     ["Copy"] = "Afrita",
     ["Default"] = "Sjálfgefið",
     ["Description"] = "Lýsing",
-    ["Details"] = "Nánar",
+    ["Details"] = "Upplýsingar",
     ["Enter Game"] = "Fara í leik",
     ["Error"] = "Villa",
     ["Exit"] = "Hætta",
@@ -54,7 +55,7 @@ locale = {
     ["Load"] = "Hlaða",
     ["Login"] = "Innskráning",
     ["Logout"] = "Útskráning",
-    ["Look"] = "Skoða",
+    ["Look"] = "Líta",
     ["Mana"] = "Mana",
     ["Market"] = "Markaður",
     ["Name"] = "Nafn",
@@ -64,10 +65,10 @@ locale = {
     ["Options"] = "Valkostir",
     ["Password"] = "Lykilorð",
     ["Please wait"] = "Vinsamlegast bíðið",
-    ["Port"] = "Höfn",
+    ["Port"] = "Tengi",
     ["Premium"] = "Premium",
     ["Price"] = "Verð",
-    ["Refresh"] = "Endurhlaða",
+    ["Refresh"] = "Endurnýja",
     ["Remove"] = "Fjarlægja",
     ["Save"] = "Vista",
     ["Search"] = "Leita",
@@ -93,7 +94,97 @@ locale = {
     ["You are dead"] = "Þú ert dauður",
     ["You are dead."] = "Þú ert dauður.",
     ["Language"] = "Tungumál",
-    ["Email"] = "Tölvupóstur",
+    ["Email"] = "Netfang",
+    
+    -- Combat Skills
+    ["Fist Fighting"] = "Hnefaleikar",
+    ["Club Fighting"] = "Kylfuleikar",
+    ["Sword Fighting"] = "Sverðsbarátta",
+    ["Axe Fighting"] = "Öxarbarátta",
+    ["Distance Fighting"] = "Fjarlægðarbarátta",
+    ["Shielding"] = "Skjaldarvörn",
+    ["Fishing"] = "Veiði",
+    ["Critical Hit Chance"] = "Krítísk höggslíkur",
+    ["Critical Hit Damage"] = "Krítískur skaði",
+    ["Magic Level"] = "Töfrastig",
+    
+    -- Game UI Extended
+    ["Health"] = "Heilsa",
+    ["Health Info"] = "Heilsuupplýsingar",
+    ["Mana Info"] = "Manaupplýsingar",
+    ["Experience Info"] = "Reynsluupplýsingar",
+    ["Total Experience"] = "Heildarreynsla",
+    ["Max Level"] = "Hámarksstig",
+    ["Min Level"] = "Lágmarksstig",
+    
+    -- Hotkey Presets
+    ["Hotkeys"] = "Flýtilyklar",
+    ["Add new preset"] = "Bæta við nýju sniði",
+    
+    -- Cyclopedia / Bestiary
+    ["Cyclopedia"] = "Hringrás",
+    ["Bestiary"] = "Skrímslarit",
+    ["Creatures"] = "Verur",
+    ["Charms"] = "Töfrar",
+    ["Points"] = "Punktar",
+    ["Kills"] = "Dráp",
+    
+    -- Rarity Levels
+    ["Common"] = "Algengt",
+    ["Uncommon"] = "Óalgengt",
+    ["Rare"] = "Sjaldgæft",
+    ["Very Rare"] = "Mjög sjaldgæft",
+    
+    -- House System
+    ["House"] = "Hús",
+    ["Houses"] = "Hús",
+    ["Rent"] = "Leiga",
+    ["Owner"] = "Eigandi",
+    ["Door"] = "Hurð",
+    ["Beds"] = "Rúm",
+    ["Size"] = "Stærð",
+    
+    -- Status Effects
+    ["Poisoned"] = "Eitruð",
+    ["Burning"] = "Brennandi",
+    ["Drunk"] = "Drukkinn",
+    ["Slowed"] = "Hægur",
+    ["Cursed"] = "Bölvaður",
+    ["Hungry"] = "Svangur",
+    
+    -- Store and Rewards
+    ["Store"] = "Verslun",
+    ["Reward"] = "Verðlaun",
+    ["Rewards"] = "Verðlaun",
+    ["Daily Reward"] = "Dagleg verðlaun",
+    ["Bonus"] = "Bónus",
+    ["Discount"] = "Afsláttur",
+    ["History"] = "Saga",
+    
+    -- Chat Modes
+    ["Chat"] = "Spjall",
+    ["Whisper"] = "Hvísla",
+    ["Yell"] = "Hrópa",
+    ["Say"] = "Segja",
+    ["Private"] = "Einkaræða",
+    
+    -- Party System
+    ["Party"] = "Hópur",
+    ["Leader"] = "Leiðtogi",
+    ["Member"] = "Meðlimur",
+    
+    -- Directions
+    ["North"] = "Norður",
+    ["South"] = "Suður",
+    ["East"] = "Austur",
+    ["West"] = "Vestur",
+    
+    -- Time
+    ["Day"] = "Dagur",
+    ["Night"] = "Nótt",
+    ["Hour"] = "Klukkustund",
+    ["Minute"] = "Mínúta",
+    ["Second"] = "Sekúnda",
   }
 }
 

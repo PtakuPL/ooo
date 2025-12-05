@@ -8,22 +8,23 @@ locale = {
   thousandsSeperator = '.',
 
   translation = {
+    -- Base UI
     ["Accept"] = "Прифати",
     ["Account name"] = "Име на сметка",
     ["Account Status"] = "Статус на сметка",
     ["Action"] = "Акција",
-    ["Add"] = "Додај",
-    ["Add new server"] = "Додај нов сервер",
-    ["Add new VIP"] = "Додај нов VIP",
-    ["Add to VIP list"] = "Додај во VIP листа",
+    ["Add"] = "Додади",
+    ["Add new server"] = "Додади нов сервер",
+    ["Add new VIP"] = "Додади нов VIP",
+    ["Add to VIP list"] = "Додади на VIP листа",
     ["All"] = "Сите",
     ["Amount"] = "Количина",
     ["Attack"] = "Напад",
     ["Audio"] = "Аудио",
     ["Author"] = "Автор",
-    ["Balance"] = "Баланс",
+    ["Balance"] = "Салдо",
     ["Battle"] = "Битка",
-    ["Browse"] = "Прегледај",
+    ["Browse"] = "Пребарај",
     ["Buy"] = "Купи",
     ["Buy Now"] = "Купи сега",
     ["Cancel"] = "Откажи",
@@ -42,7 +43,7 @@ locale = {
     ["Error"] = "Грешка",
     ["Exit"] = "Излез",
     ["Experience"] = "Искуство",
-    ["Find"] = "Пронајди",
+    ["Find"] = "Најди",
     ["Follow"] = "Следи",
     ["Game"] = "Игра",
     ["Graphics"] = "Графика",
@@ -63,14 +64,14 @@ locale = {
     ["Open"] = "Отвори",
     ["Options"] = "Опции",
     ["Password"] = "Лозинка",
-    ["Please wait"] = "Ве молиме почекајте",
+    ["Please wait"] = "Ве молам почекајте",
     ["Port"] = "Порта",
     ["Premium"] = "Премиум",
     ["Price"] = "Цена",
     ["Refresh"] = "Освежи",
     ["Remove"] = "Отстрани",
     ["Save"] = "Зачувај",
-    ["Search"] = "Пребарај",
+    ["Search"] = "Барај",
     ["Select"] = "Избери",
     ["Select your language"] = "Изберете јазик",
     ["Sell"] = "Продај",
@@ -80,20 +81,108 @@ locale = {
     ["Skills"] = "Вештини",
     ["Soul"] = "Душа",
     ["Speed"] = "Брзина",
-    ["Statistics"] = "Статистики",
-    ["Trade"] = "Тргување",
+    ["Statistics"] = "Статистика",
+    ["Trade"] = "Трговија",
     ["Type"] = "Тип",
     ["Use"] = "Користи",
     ["Version"] = "Верзија",
     ["VIP List"] = "VIP листа",
     ["Warning"] = "Предупредување",
-    ["Website"] = "Веб страна",
+    ["Website"] = "Веб страница",
     ["Weight"] = "Тежина",
     ["Yes"] = "Да",
-    ["You are dead"] = "Ти си мртов",
-    ["You are dead."] = "Ти си мртов.",
+    ["You are dead"] = "Мртов си",
+    ["You are dead."] = "Мртов си.",
     ["Language"] = "Јазик",
     ["Email"] = "Е-пошта",
+    
+    -- Combat Skills
+    ["Fist Fighting"] = "Борба со тупаници",
+    ["Club Fighting"] = "Борба со стап",
+    ["Sword Fighting"] = "Борба со меч",
+    ["Axe Fighting"] = "Борба со секира",
+    ["Distance Fighting"] = "Борба од далечина",
+    ["Shielding"] = "Штитење",
+    ["Fishing"] = "Риболов",
+    ["Magic Level"] = "Магиско ниво",
+    
+    -- Game UI Extended
+    ["Health"] = "Здравје",
+    ["Health Info"] = "Информации за здравје",
+    ["Mana Info"] = "Информации за мана",
+    ["Experience Info"] = "Информации за искуство",
+    ["Total Experience"] = "Вкупно искуство",
+    ["Max Level"] = "Максимално ниво",
+    ["Min Level"] = "Минимално ниво",
+    
+    -- Hotkey Presets
+    ["Hotkeys"] = "Кратенки",
+    ["Add new preset"] = "Додади нов шаблон",
+    
+    -- Cyclopedia / Bestiary
+    ["Cyclopedia"] = "Циклопедија",
+    ["Bestiary"] = "Бестијариј",
+    ["Creatures"] = "Суштества",
+    ["Charms"] = "Чари",
+    ["Points"] = "Поени",
+    ["Kills"] = "Убиства",
+    
+    -- Rarity Levels
+    ["Common"] = "Обично",
+    ["Uncommon"] = "Необично",
+    ["Rare"] = "Ретко",
+    ["Very Rare"] = "Многу ретко",
+    
+    -- House System
+    ["House"] = "Куќа",
+    ["Houses"] = "Куќи",
+    ["Rent"] = "Кирија",
+    ["Owner"] = "Сопственик",
+    ["Door"] = "Врата",
+    ["Beds"] = "Кревети",
+    ["Size"] = "Големина",
+    
+    -- Status Effects
+    ["Poisoned"] = "Отруен",
+    ["Burning"] = "Гори",
+    ["Drunk"] = "Пијан",
+    ["Slowed"] = "Забавен",
+    ["Cursed"] = "Проклет",
+    ["Hungry"] = "Гладен",
+    
+    -- Store and Rewards
+    ["Store"] = "Продавница",
+    ["Reward"] = "Награда",
+    ["Rewards"] = "Награди",
+    ["Daily Reward"] = "Дневна награда",
+    ["Bonus"] = "Бонус",
+    ["Discount"] = "Попуст",
+    ["History"] = "Историја",
+    
+    -- Chat Modes
+    ["Chat"] = "Разговор",
+    ["Whisper"] = "Шепот",
+    ["Yell"] = "Викај",
+    ["Say"] = "Кажи",
+    ["Private"] = "Приватно",
+    
+    -- Party System
+    ["Party"] = "Група",
+    ["Leader"] = "Водач",
+    ["Member"] = "Член",
+    
+    -- Directions
+    ["North"] = "Север",
+    ["South"] = "Југ",
+    ["East"] = "Исток",
+    ["West"] = "Запад",
+    
+    -- Time
+    ["Day"] = "Ден",
+    ["Night"] = "Ноќ",
+    ["Hour"] = "Час",
+    ["Minute"] = "Минута",
+    ["Second"] = "Секунда",
   }
 }
 

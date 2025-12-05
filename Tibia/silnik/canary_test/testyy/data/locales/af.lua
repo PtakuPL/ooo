@@ -8,6 +8,7 @@ locale = {
   thousandsSeperator = ' ',
 
   translation = {
+    -- Base UI
     ["Accept"] = "Aanvaar",
     ["Account name"] = "Rekeningnaam",
     ["Account Status"] = "Rekeningstatus",
@@ -20,7 +21,7 @@ locale = {
     ["Amount"] = "Bedrag",
     ["Attack"] = "Aanval",
     ["Audio"] = "Oudio",
-    ["Author"] = "Outeur",
+    ["Author"] = "Skrywer",
     ["Balance"] = "Balans",
     ["Battle"] = "Geveg",
     ["Browse"] = "Blaai",
@@ -28,7 +29,7 @@ locale = {
     ["Buy Now"] = "Koop nou",
     ["Cancel"] = "Kanselleer",
     ["Capacity"] = "Kapasiteit",
-    ["Center"] = "Sentreer",
+    ["Center"] = "Middel",
     ["Change language"] = "Verander taal",
     ["Channels"] = "Kanale",
     ["Character List"] = "Karakterlys",
@@ -38,7 +39,7 @@ locale = {
     ["Default"] = "Verstek",
     ["Description"] = "Beskrywing",
     ["Details"] = "Besonderhede",
-    ["Enter Game"] = "Betree spel",
+    ["Enter Game"] = "Gaan spel in",
     ["Error"] = "Fout",
     ["Exit"] = "Verlaat",
     ["Experience"] = "Ervaring",
@@ -94,6 +95,94 @@ locale = {
     ["You are dead."] = "Jy is dood.",
     ["Language"] = "Taal",
     ["Email"] = "E-pos",
+    
+    -- Combat Skills
+    ["Fist Fighting"] = "Vuis geveg",
+    ["Club Fighting"] = "Knuppel geveg",
+    ["Sword Fighting"] = "Swaard geveg",
+    ["Axe Fighting"] = "Byl geveg",
+    ["Distance Fighting"] = "Afstand geveg",
+    ["Shielding"] = "Skildbeskerming",
+    ["Fishing"] = "Visvang",
+    ["Magic Level"] = "Toorkuns vlak",
+    
+    -- Game UI Extended
+    ["Health"] = "Gesondheid",
+    ["Health Info"] = "Gesondheid inligting",
+    ["Mana Info"] = "Mana inligting",
+    ["Experience Info"] = "Ervaring inligting",
+    ["Total Experience"] = "Totale ervaring",
+    ["Max Level"] = "Maks vlak",
+    ["Min Level"] = "Min vlak",
+    
+    -- Hotkey Presets
+    ["Hotkeys"] = "Sneltoetse",
+    ["Add new preset"] = "Voeg nuwe voorinstelling by",
+    
+    -- Cyclopedia / Bestiary
+    ["Cyclopedia"] = "Siklopedie",
+    ["Bestiary"] = "Bestiarium",
+    ["Creatures"] = "Wesens",
+    ["Charms"] = "Bekoring",
+    ["Points"] = "Punte",
+    ["Kills"] = "Doodmaak",
+    
+    -- Rarity Levels
+    ["Common"] = "Algemeen",
+    ["Uncommon"] = "Ongewoon",
+    ["Rare"] = "Skaars",
+    ["Very Rare"] = "Baie skaars",
+    
+    -- House System
+    ["House"] = "Huis",
+    ["Houses"] = "Huise",
+    ["Rent"] = "Huur",
+    ["Owner"] = "Eienaar",
+    ["Door"] = "Deur",
+    ["Beds"] = "Beddens",
+    ["Size"] = "Grootte",
+    
+    -- Status Effects
+    ["Poisoned"] = "Vergiftig",
+    ["Burning"] = "Brand",
+    ["Drunk"] = "Dronk",
+    ["Slowed"] = "Vertraag",
+    ["Cursed"] = "Vervloek",
+    ["Hungry"] = "Honger",
+    
+    -- Store and Rewards
+    ["Store"] = "Winkel",
+    ["Reward"] = "Beloning",
+    ["Rewards"] = "Belonings",
+    ["Daily Reward"] = "Daaglikse beloning",
+    ["Bonus"] = "Bonus",
+    ["Discount"] = "Afslag",
+    ["History"] = "Geskiedenis",
+    
+    -- Chat Modes
+    ["Chat"] = "Klets",
+    ["Whisper"] = "Fluister",
+    ["Yell"] = "Skreeu",
+    ["Say"] = "Sê",
+    ["Private"] = "Privaat",
+    
+    -- Party System
+    ["Party"] = "Groep",
+    ["Leader"] = "Leier",
+    ["Member"] = "Lid",
+    
+    -- Directions
+    ["North"] = "Noord",
+    ["South"] = "Suid",
+    ["East"] = "Oos",
+    ["West"] = "Wes",
+    
+    -- Time
+    ["Day"] = "Dag",
+    ["Night"] = "Nag",
+    ["Hour"] = "Uur",
+    ["Minute"] = "Minuut",
+    ["Second"] = "Sekonde",
   }
 }
 

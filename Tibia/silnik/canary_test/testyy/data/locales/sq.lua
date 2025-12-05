@@ -183,6 +183,166 @@ locale = {
     ["Hour"] = "Orë",
     ["Minute"] = "Minutë",
     ["Second"] = "Sekondë",
+    ["Days"] = "Ditë",
+    ["Hours"] = "Orë",
+    ["Minutes"] = "Minuta",
+    ["Seconds"] = "Sekonda",
+    
+    -- Extended directions
+    ["Northeast"] = "Verilindje",
+    ["Northwest"] = "Veriperëndim",
+    ["Southeast"] = "Juglindje",
+    ["Southwest"] = "Jugperëndim",
+    
+    -- Rule violations
+    ["Offensive Name"] = "Emër ofendues",
+    ["Invalid Name Format"] = "Format i pavlefshëm i emrit",
+    ["Spamming"] = "Spam",
+    ["Bug Abuse"] = "Abuzim me defekte",
+    ["Illegal Advertising"] = "Reklamim i paligjshëm",
+    
+    -- Connection messages
+    ["Connection error"] = "Gabim lidhje",
+    ["Connection refused"] = "Lidhja u refuzua",
+    ["Connection timed out"] = "Koha e lidhjes mbaroi",
+    ["Unable to connect"] = "Nuk mund të lidhet",
+    ["Lost connection"] = "Lidhja humbi",
+    
+    -- Display settings
+    ["Show creature names"] = "Trego emrat e krijesave",
+    ["Show player names"] = "Trego emrat e lojtarëve",
+    ["Show health bar"] = "Trego shiritin e shëndetit",
+    ["Show mana bar"] = "Trego shiritin e manës",
+    
+    -- Combat stats
+    ["Critical Hit Chance"] = "Mundësia e goditjes kritike",
+    ["Critical Hit Damage"] = "Dëmi i goditjes kritike",
+    ["Life Leech"] = "Vjedhje jete",
+    ["Mana Leech"] = "Vjedhje mana",
+    ["Attack Speed"] = "Shpejtësia e sulmit",
+    ["Defense"] = "Mbrojtja",
+    
+    -- Market extended
+    ["Total Price"] = "Çmimi total",
+    ["Piece Price"] = "Çmimi për copë",
+    ["Seller"] = "Shitësi",
+    ["Buyer"] = "Blerësi",
+    ["Offer"] = "Ofertë",
+    ["Offers"] = "Ofertat",
+    ["Create Offer"] = "Krijo ofertë",
+    ["Cancel Offer"] = "Anulo ofertën",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Token vërtetimi",
+    ["Two-Factor Authentication"] = "Vërtetim me dy faktorë",
+    ["Enter token"] = "Fut tokenin",
+    
+    -- Inventory slots
+    ["Helmet"] = "Helmetë",
+    ["Amulet"] = "Amulet",
+    ["Backpack"] = "Çantë shpine",
+    ["Armor"] = "Parzmore",
+    ["Right Hand"] = "Dora e djathtë",
+    ["Left Hand"] = "Dora e majtë",
+    ["Legs"] = "Këmbët",
+    ["Boots"] = "Çizme",
+    ["Ring"] = "Unazë",
+    ["Ammo"] = "Municioni",
+    
+    -- Elements
+    ["Fire"] = "Zjarr",
+    ["Ice"] = "Akull",
+    ["Earth"] = "Tokë",
+    ["Energy"] = "Energji",
+    ["Holy"] = "I shenjtë",
+    ["Death"] = "Vdekje",
+    ["Physical"] = "Fizik",
+    
+    -- Vocations
+    ["Paladin"] = "Paladin",
+    ["Sorcerer"] = "Magjistar",
+    ["Druid"] = "Druid",
+    
+    -- House extended
+    ["House Transfer"] = "Transfer shtëpie",
+    ["House Auction"] = "Ankand shtëpie",
+    ["Guest List"] = "Lista e mysafirëve",
+    ["Sub-Owner"] = "Nën-pronar",
+    
+    -- Screenshots
+    ["Screenshot"] = "Foto ekrani",
+    ["Take Screenshot"] = "Bëj foto ekrani",
+    ["Screenshot saved"] = "Foto e ruajtur",
+    
+    -- Audio settings
+    ["Master Volume"] = "Volumi kryesor",
+    ["Music Volume"] = "Volumi i muzikës",
+    ["Sound Volume"] = "Volumi i tingullit",
+    ["Mute"] = "Hesht",
+    
+    -- Additional UI
+    ["Apply"] = "Apliko",
+    ["Reset"] = "Rivendos",
+    ["Confirm"] = "Konfirmo",
+    ["Continue"] = "Vazhdo",
+    ["Back"] = "Mbrapa",
+    ["Next"] = "Tjetri",
+    ["Previous"] = "Paraardhësi",
+    ["Finish"] = "Mbaroj",
+    ["Skip"] = "Kapërce",
+    ["Retry"] = "Provo përsëri",
+    ["Select All"] = "Zgjidh të gjitha",
+    
+    -- Cyclopedia extended
+    ["Achievements"] = "Arritjet",
+    ["Titles"] = "Titujt",
+    ["Spells"] = "Magjitë",
+    ["Items"] = "Artikujt",
+    ["Monsters"] = "Përbindëshat",
+    ["Bosses"] = "Shefat",
+    ["NPCs"] = "NPC-të",
+    
+    -- Loot system
+    ["Loot"] = "Plaçkë",
+    ["Quick Loot"] = "Plaçkë e shpejtë",
+    ["Loot Container"] = "Enë plaçke",
+    ["Show Loot"] = "Trego plaçkën",
+    
+    -- Events
+    ["Event"] = "Ngjarje",
+    ["Events"] = "Ngjarjet",
+    ["Active Events"] = "Ngjarje aktive",
+    
+    -- Prey system
+    ["Prey"] = "Gjah",
+    ["Prey Slot"] = "Slot gjahu",
+    ["Reroll"] = "Rihidh",
+    
+    -- Map features
+    ["Map"] = "Hartë",
+    ["World Map"] = "Harta e botës",
+    ["Minimap"] = "Minihartë",
+    ["Show Markers"] = "Trego shënuesit",
+    
+    -- Chat channels
+    ["Trade Channel"] = "Kanali tregtar",
+    ["Help Channel"] = "Kanali i ndihmës",
+    ["World Chat"] = "Bisedë botërore",
+    ["Guild Chat"] = "Bisedë gilde",
+    ["Party Chat"] = "Bisedë grupi",
+    
+    -- Guild
+    ["Guild"] = "Gildë",
+    ["Guild Name"] = "Emri i gildës",
+    ["Guild Members"] = "Anëtarët e gildës",
+    ["Invite to Guild"] = "Fto në gildë",
+    ["Leave Guild"] = "Largohu nga gilda",
+    
+    -- Format strings
+    ["Next level in %s"] = "Niveli tjetër në %s",
+    ["Current level: %d"] = "Niveli aktual: %d",
+    ["%s has logged in"] = "%s u identifikua",
+    ["%s has logged out"] = "%s doli",
   }
 }
 

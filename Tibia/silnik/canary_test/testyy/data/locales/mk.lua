@@ -183,6 +183,166 @@ locale = {
     ["Hour"] = "Час",
     ["Minute"] = "Минута",
     ["Second"] = "Секунда",
+    ["Days"] = "Денови",
+    ["Hours"] = "Часови",
+    ["Minutes"] = "Минути",
+    ["Seconds"] = "Секунди",
+    
+    -- Extended directions
+    ["Northeast"] = "Североисток",
+    ["Northwest"] = "Северозапад",
+    ["Southeast"] = "Југоисток",
+    ["Southwest"] = "Југозапад",
+    
+    -- Rule violations
+    ["Offensive Name"] = "Навредливо име",
+    ["Invalid Name Format"] = "Неважечки формат на име",
+    ["Spamming"] = "Спам",
+    ["Bug Abuse"] = "Злоупотреба на грешки",
+    ["Illegal Advertising"] = "Нелегално рекламирање",
+    
+    -- Connection messages
+    ["Connection error"] = "Грешка при поврзување",
+    ["Connection refused"] = "Поврзувањето е одбиено",
+    ["Connection timed out"] = "Времето за поврзување истече",
+    ["Unable to connect"] = "Не може да се поврзе",
+    ["Lost connection"] = "Изгубена врска",
+    
+    -- Display settings
+    ["Show creature names"] = "Прикажи имиња на суштества",
+    ["Show player names"] = "Прикажи имиња на играчи",
+    ["Show health bar"] = "Прикажи лента за здравје",
+    ["Show mana bar"] = "Прикажи лента за мана",
+    
+    -- Combat stats
+    ["Critical Hit Chance"] = "Шанса за критичен удар",
+    ["Critical Hit Damage"] = "Штета од критичен удар",
+    ["Life Leech"] = "Крадење живот",
+    ["Mana Leech"] = "Крадење мана",
+    ["Attack Speed"] = "Брзина на напад",
+    ["Defense"] = "Одбрана",
+    
+    -- Market extended
+    ["Total Price"] = "Вкупна цена",
+    ["Piece Price"] = "Цена по парче",
+    ["Seller"] = "Продавач",
+    ["Buyer"] = "Купувач",
+    ["Offer"] = "Понуда",
+    ["Offers"] = "Понуди",
+    ["Create Offer"] = "Создади понуда",
+    ["Cancel Offer"] = "Откажи понуда",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Токен за автентикација",
+    ["Two-Factor Authentication"] = "Двофакторска автентикација",
+    ["Enter token"] = "Внесете токен",
+    
+    -- Inventory slots
+    ["Helmet"] = "Шлем",
+    ["Amulet"] = "Амулет",
+    ["Backpack"] = "Ранец",
+    ["Armor"] = "Оклоп",
+    ["Right Hand"] = "Десна рака",
+    ["Left Hand"] = "Лева рака",
+    ["Legs"] = "Нозе",
+    ["Boots"] = "Чизми",
+    ["Ring"] = "Прстен",
+    ["Ammo"] = "Муниција",
+    
+    -- Elements
+    ["Fire"] = "Оган",
+    ["Ice"] = "Мраз",
+    ["Earth"] = "Земја",
+    ["Energy"] = "Енергија",
+    ["Holy"] = "Свето",
+    ["Death"] = "Смрт",
+    ["Physical"] = "Физичко",
+    
+    -- Vocations
+    ["Paladin"] = "Паладин",
+    ["Sorcerer"] = "Волшебник",
+    ["Druid"] = "Друид",
+    
+    -- House extended
+    ["House Transfer"] = "Пренос на куќа",
+    ["House Auction"] = "Аукција на куќа",
+    ["Guest List"] = "Листа на гости",
+    ["Sub-Owner"] = "Под-сопственик",
+    
+    -- Screenshots
+    ["Screenshot"] = "Слика од екран",
+    ["Take Screenshot"] = "Направи слика од екран",
+    ["Screenshot saved"] = "Сликата е зачувана",
+    
+    -- Audio settings
+    ["Master Volume"] = "Главна јачина",
+    ["Music Volume"] = "Јачина на музика",
+    ["Sound Volume"] = "Јачина на звук",
+    ["Mute"] = "Исклучи звук",
+    
+    -- Additional UI
+    ["Apply"] = "Примени",
+    ["Reset"] = "Ресетирај",
+    ["Confirm"] = "Потврди",
+    ["Continue"] = "Продолжи",
+    ["Back"] = "Назад",
+    ["Next"] = "Следно",
+    ["Previous"] = "Претходно",
+    ["Finish"] = "Заврши",
+    ["Skip"] = "Прескокни",
+    ["Retry"] = "Обиди се повторно",
+    ["Select All"] = "Избери сите",
+    
+    -- Cyclopedia extended
+    ["Achievements"] = "Достигнувања",
+    ["Titles"] = "Титули",
+    ["Spells"] = "Магии",
+    ["Items"] = "Предмети",
+    ["Monsters"] = "Чудовишта",
+    ["Bosses"] = "Шефови",
+    ["NPCs"] = "НПЦ",
+    
+    -- Loot system
+    ["Loot"] = "Плен",
+    ["Quick Loot"] = "Брз плен",
+    ["Loot Container"] = "Контејнер за плен",
+    ["Show Loot"] = "Прикажи плен",
+    
+    -- Events
+    ["Event"] = "Настан",
+    ["Events"] = "Настани",
+    ["Active Events"] = "Активни настани",
+    
+    -- Prey system
+    ["Prey"] = "Плен",
+    ["Prey Slot"] = "Слот за плен",
+    ["Reroll"] = "Рефрол",
+    
+    -- Map features
+    ["Map"] = "Карта",
+    ["World Map"] = "Светска карта",
+    ["Minimap"] = "Мини карта",
+    ["Show Markers"] = "Прикажи маркери",
+    
+    -- Chat channels
+    ["Trade Channel"] = "Трговски канал",
+    ["Help Channel"] = "Канал за помош",
+    ["World Chat"] = "Светски разговор",
+    ["Guild Chat"] = "Гилден разговор",
+    ["Party Chat"] = "Групен разговор",
+    
+    -- Guild
+    ["Guild"] = "Гилда",
+    ["Guild Name"] = "Име на гилда",
+    ["Guild Members"] = "Членови на гилда",
+    ["Invite to Guild"] = "Покани во гилда",
+    ["Leave Guild"] = "Напушти гилда",
+    
+    -- Format strings
+    ["Next level in %s"] = "Следно ниво за %s",
+    ["Current level: %d"] = "Тековно ниво: %d",
+    ["%s has logged in"] = "%s се најави",
+    ["%s has logged out"] = "%s се одјави",
   }
 }
 

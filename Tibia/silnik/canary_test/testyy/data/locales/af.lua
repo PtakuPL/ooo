@@ -183,6 +183,166 @@ locale = {
     ["Hour"] = "Uur",
     ["Minute"] = "Minuut",
     ["Second"] = "Sekonde",
+    ["Days"] = "Dae",
+    ["Hours"] = "Ure",
+    ["Minutes"] = "Minute",
+    ["Seconds"] = "Sekondes",
+    
+    -- Extended directions
+    ["Northeast"] = "Noordoos",
+    ["Northwest"] = "Noordwes",
+    ["Southeast"] = "Suidoos",
+    ["Southwest"] = "Suidwes",
+    
+    -- Rule violations
+    ["Offensive Name"] = "Aanstootlike naam",
+    ["Invalid Name Format"] = "Ongeldige naamformaat",
+    ["Spamming"] = "Spam",
+    ["Bug Abuse"] = "Foutmisbruik",
+    ["Illegal Advertising"] = "Onwettige advertensie",
+    
+    -- Connection messages
+    ["Connection error"] = "Verbindingsfout",
+    ["Connection refused"] = "Verbinding geweier",
+    ["Connection timed out"] = "Verbinding het uitgetel",
+    ["Unable to connect"] = "Kan nie verbind nie",
+    ["Lost connection"] = "Verbinding verloor",
+    
+    -- Display settings
+    ["Show creature names"] = "Wys wese name",
+    ["Show player names"] = "Wys speler name",
+    ["Show health bar"] = "Wys gesondheidsstaaf",
+    ["Show mana bar"] = "Wys manastaaf",
+    
+    -- Combat stats
+    ["Critical Hit Chance"] = "Kritiese trefkans",
+    ["Critical Hit Damage"] = "Kritiese trefskade",
+    ["Life Leech"] = "Lewensaftrekking",
+    ["Mana Leech"] = "Mana-aftrekking",
+    ["Attack Speed"] = "Aanvalspoed",
+    ["Defense"] = "Verdediging",
+    
+    -- Market extended
+    ["Total Price"] = "Totale prys",
+    ["Piece Price"] = "Stukprys",
+    ["Seller"] = "Verkoper",
+    ["Buyer"] = "Koper",
+    ["Offer"] = "Aanbod",
+    ["Offers"] = "Aanbiedinge",
+    ["Create Offer"] = "Skep aanbod",
+    ["Cancel Offer"] = "Kanselleer aanbod",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Verifikasie-token",
+    ["Two-Factor Authentication"] = "Twee-faktor verifikasie",
+    ["Enter token"] = "Voer token in",
+    
+    -- Inventory slots
+    ["Helmet"] = "Helm",
+    ["Amulet"] = "Amulet",
+    ["Backpack"] = "Rugsak",
+    ["Armor"] = "Pantser",
+    ["Right Hand"] = "Regterhand",
+    ["Left Hand"] = "Linkerhand",
+    ["Legs"] = "Bene",
+    ["Boots"] = "Stewels",
+    ["Ring"] = "Ring",
+    ["Ammo"] = "Ammunisie",
+    
+    -- Elements
+    ["Fire"] = "Vuur",
+    ["Ice"] = "Ys",
+    ["Earth"] = "Aarde",
+    ["Energy"] = "Energie",
+    ["Holy"] = "Heilig",
+    ["Death"] = "Dood",
+    ["Physical"] = "Fisies",
+    
+    -- Vocations
+    ["Paladin"] = "Paladyn",
+    ["Sorcerer"] = "Towenaar",
+    ["Druid"] = "Druïde",
+    
+    -- House extended
+    ["House Transfer"] = "Huisoordrag",
+    ["House Auction"] = "Huisveiling",
+    ["Guest List"] = "Gaslys",
+    ["Sub-Owner"] = "Mede-eienaar",
+    
+    -- Screenshots
+    ["Screenshot"] = "Skermkiekie",
+    ["Take Screenshot"] = "Neem skermkiekie",
+    ["Screenshot saved"] = "Skermkiekie gestoor",
+    
+    -- Audio settings
+    ["Master Volume"] = "Hoofvolume",
+    ["Music Volume"] = "Musiekvolume",
+    ["Sound Volume"] = "Klankvolume",
+    ["Mute"] = "Demp",
+    
+    -- Additional UI
+    ["Apply"] = "Pas toe",
+    ["Reset"] = "Herstel",
+    ["Confirm"] = "Bevestig",
+    ["Continue"] = "Gaan voort",
+    ["Back"] = "Terug",
+    ["Next"] = "Volgende",
+    ["Previous"] = "Vorige",
+    ["Finish"] = "Voltooi",
+    ["Skip"] = "Slaan oor",
+    ["Retry"] = "Probeer weer",
+    ["Select All"] = "Kies alles",
+    
+    -- Cyclopedia extended
+    ["Achievements"] = "Prestasies",
+    ["Titles"] = "Titels",
+    ["Spells"] = "Spreuke",
+    ["Items"] = "Items",
+    ["Monsters"] = "Monsters",
+    ["Bosses"] = "Baase",
+    ["NPCs"] = "NPCs",
+    
+    -- Loot system
+    ["Loot"] = "Buit",
+    ["Quick Loot"] = "Vinnige buit",
+    ["Loot Container"] = "Buithouer",
+    ["Show Loot"] = "Wys buit",
+    
+    -- Events
+    ["Event"] = "Geleentheid",
+    ["Events"] = "Geleenthede",
+    ["Active Events"] = "Aktiewe geleenthede",
+    
+    -- Prey system
+    ["Prey"] = "Prooi",
+    ["Prey Slot"] = "Prooigleuf",
+    ["Reroll"] = "Herrol",
+    
+    -- Map features
+    ["Map"] = "Kaart",
+    ["World Map"] = "Wêreldkaart",
+    ["Minimap"] = "Minikaart",
+    ["Show Markers"] = "Wys merkers",
+    
+    -- Chat channels
+    ["Trade Channel"] = "Handelkanaal",
+    ["Help Channel"] = "Hulpkanaal",
+    ["World Chat"] = "Wêreldklets",
+    ["Guild Chat"] = "Gildeklets",
+    ["Party Chat"] = "Groepklets",
+    
+    -- Guild
+    ["Guild"] = "Gilde",
+    ["Guild Name"] = "Gildenaam",
+    ["Guild Members"] = "Gildelede",
+    ["Invite to Guild"] = "Nooi na gilde",
+    ["Leave Guild"] = "Verlaat gilde",
+    
+    -- Format strings
+    ["Next level in %s"] = "Volgende vlak in %s",
+    ["Current level: %d"] = "Huidige vlak: %d",
+    ["%s has logged in"] = "%s het ingeteken",
+    ["%s has logged out"] = "%s het uitgeteken",
   }
 }
 

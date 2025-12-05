@@ -120,14 +120,9 @@ ASAN (`/fsanitize=address`) combined with complex template code in `src/framewor
 1. Disabled ASAN in Windows debug presets in CMakePresets.json
 2. Added `/O1` optimization workaround in `src/CMakeLists.txt`
 
-```json
-// CMakePresets.json
-"windows-debug": {
-  "cacheVariables": {
-    "ASAN_ENABLED": "OFF"  // Changed from ON
-  }
-}
-```
+The following presets were updated with `"ASAN_ENABLED": "OFF"`:
+- `windows-debug`
+- `windows-debug-msbuild`
 
 **Note:** This is NOT a memory issue - GitHub Actions Windows runners have 7GB RAM which is sufficient.
 

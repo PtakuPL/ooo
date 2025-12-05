@@ -116,6 +116,12 @@ if (MSVC)
   target_link_options(${PROJECT_NAME} PRIVATE /LTCG:OFF)
   # Prevent Windows.h from defining min/max macros that conflict with std::min/std::max
   target_compile_definitions(${PROJECT_NAME} PRIVATE NOMINMAX)
+  # Workaround for MSVC Internal Compiler Error (ICE) on complex template code
+  # Reduce optimization level for files that trigger C1001 errors
+  target_compile_options(${PROJECT_NAME} PRIVATE
+    $<$<CONFIG:Release>:/O1>  # Use /O1 (minimize size) instead of /O2 (maximize speed) for Release
+    $<$<CONFIG:RelWithDebInfo>:/O1>
+  )
 endif()
 
 if(THREADS_HAVE_PTHREAD_ARG)

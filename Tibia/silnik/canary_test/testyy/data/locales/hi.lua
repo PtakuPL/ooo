@@ -376,6 +376,63 @@ locale = {
     ["False Report"] = "झूठी रिपोर्ट",
     ["Destructive Behaviour"] = "विनाशकारी व्यवहार",
     ["Excessive Unjustified Killing"] = "अनुचित अत्यधिक हत्या",
+    
+    -- Extended UI
+    ["Apply"] = "लागू करें",
+    ["Back"] = "वापस",
+    ["Clear"] = "साफ़ करें",
+    ["Confirm"] = "पुष्टि करें",
+    ["Continue"] = "जारी रखें",
+    ["Create"] = "बनाएं",
+    ["Delete"] = "हटाएं",
+    ["Done"] = "हो गया",
+    ["Enable"] = "सक्षम करें",
+    ["Disable"] = "अक्षम करें",
+    ["Filter"] = "फ़िल्टर",
+    ["Help"] = "मदद",
+    ["Hide"] = "छुपाएं",
+    ["Info"] = "जानकारी",
+    ["Move"] = "हटाएं",
+    ["Next"] = "अगला",
+    ["Previous"] = "पिछला",
+    ["Reset"] = "रीसेट",
+    ["Retry"] = "पुनः प्रयास करें",
+    ["Show"] = "दिखाएं",
+    ["Skip"] = "छोड़ें",
+    ["Sort"] = "क्रमबद्ध करें",
+    ["Start"] = "शुरू करें",
+    ["Stop"] = "रोकें",
+    ["Update"] = "अपडेट करें",
+    
+    -- Status Effects Extended
+    ["Manashield"] = "मना शील्ड",
+    ["Within Protection Zone"] = "सुरक्षा क्षेत्र में",
+    ["Logout Block"] = "लॉगआउट ब्लॉक",
+    ["PZ Block"] = "PZ ब्लॉक",
+    
+    -- Messages
+    ["Welcome"] = "स्वागत है",
+    ["Goodbye"] = "अलविदा",
+    ["Thank you"] = "धन्यवाद",
+    ["Please"] = "कृपया",
+    ["Sorry"] = "क्षमा करें",
+    ["Congratulations"] = "बधाई हो",
+    ["Success"] = "सफलता",
+    ["Failed"] = "विफल",
+    ["Loading..."] = "लोड हो रहा है...",
+    ["Connecting..."] = "कनेक्ट हो रहा है...",
+    ["Connection lost"] = "कनेक्शन खो गया",
+    
+    -- Equipment Slots
+    ["Helmet"] = "हेलमेट",
+    ["Armor"] = "कवच",
+    ["Legs"] = "पैर",
+    ["Boots"] = "जूते",
+    ["Ring"] = "अंगूठी",
+    ["Amulet"] = "ताबीज",
+    ["Weapon"] = "हथियार",
+    ["Shield"] = "ढाल",
+    ["Backpack"] = "बैकपैक",
   }
 }
 

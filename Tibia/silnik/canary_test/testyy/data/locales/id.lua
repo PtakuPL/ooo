@@ -376,6 +376,63 @@ locale = {
     ["False Report"] = "Laporan Palsu",
     ["Destructive Behaviour"] = "Perilaku Destruktif",
     ["Excessive Unjustified Killing"] = "Pembunuhan Berlebihan",
+    
+    -- Extended UI
+    ["Apply"] = "Terapkan",
+    ["Back"] = "Kembali",
+    ["Clear"] = "Hapus",
+    ["Confirm"] = "Konfirmasi",
+    ["Continue"] = "Lanjutkan",
+    ["Create"] = "Buat",
+    ["Delete"] = "Hapus",
+    ["Done"] = "Selesai",
+    ["Enable"] = "Aktifkan",
+    ["Disable"] = "Nonaktifkan",
+    ["Filter"] = "Filter",
+    ["Help"] = "Bantuan",
+    ["Hide"] = "Sembunyikan",
+    ["Info"] = "Info",
+    ["Move"] = "Pindahkan",
+    ["Next"] = "Berikutnya",
+    ["Previous"] = "Sebelumnya",
+    ["Reset"] = "Atur Ulang",
+    ["Retry"] = "Coba Lagi",
+    ["Show"] = "Tampilkan",
+    ["Skip"] = "Lewati",
+    ["Sort"] = "Urutkan",
+    ["Start"] = "Mulai",
+    ["Stop"] = "Berhenti",
+    ["Update"] = "Perbarui",
+    
+    -- Status Effects Extended
+    ["Manashield"] = "Perisai Mana",
+    ["Within Protection Zone"] = "Dalam Zona Perlindungan",
+    ["Logout Block"] = "Blokir Logout",
+    ["PZ Block"] = "Blokir PZ",
+    
+    -- Messages
+    ["Welcome"] = "Selamat datang",
+    ["Goodbye"] = "Selamat tinggal",
+    ["Thank you"] = "Terima kasih",
+    ["Please"] = "Silakan",
+    ["Sorry"] = "Maaf",
+    ["Congratulations"] = "Selamat",
+    ["Success"] = "Berhasil",
+    ["Failed"] = "Gagal",
+    ["Loading..."] = "Memuat...",
+    ["Connecting..."] = "Menghubungkan...",
+    ["Connection lost"] = "Koneksi terputus",
+    
+    -- Equipment Slots
+    ["Helmet"] = "Helm",
+    ["Armor"] = "Armor",
+    ["Legs"] = "Celana",
+    ["Boots"] = "Sepatu",
+    ["Ring"] = "Cincin",
+    ["Amulet"] = "Amulet",
+    ["Weapon"] = "Senjata",
+    ["Shield"] = "Perisai",
+    ["Backpack"] = "Ransel",
   }
 }
 

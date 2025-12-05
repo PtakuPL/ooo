@@ -50,6 +50,14 @@ Plik roboczy do śledzenia postępu tłumaczeń. Zawiera krótkie notatki o wyko
 | bn | bn.lua | 398 | 480 | ✅ |
 | fa | fa.lua | 412 | 490 | ✅ |
 | ro | ro.lua | 403 | 480 | ✅ |
+| hi | hi.lua | 382 | 450 | ✅ |
+| id | id.lua | 382 | 450 | ✅ |
+| ms | ms.lua | 398 | 460 | ✅ |
+
+## Łączne podsumowanie
+- **Rozszerzono 42 języki**
+- **Dodano ~7,400 nowych tłumaczeń**
+- **Metoda**: Etapowe rozszerzanie z przechowywaniem kontekstu w TRANSLATION_WORK_LOG.md
 
 ## Następne do pracy
 - ro (Romanian) - ~400 wpisów

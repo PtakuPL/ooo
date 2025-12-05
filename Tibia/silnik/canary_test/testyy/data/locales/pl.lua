@@ -700,7 +700,132 @@ local add = {
   ["Join %s\\"] = "Dołącz do %s\\",
   ["Revoke %s\\"] = "Odwołaj %s\\",
   ["Unable to load dat file, please place a valid dat in \\"] = "Nie można załadować pliku dat, umieść prawidłowy plik dat w \\",
-  ["Unable to load spr file, please place a valid spr in \\"] = "Nie można załadować pliku spr, umieść prawidłowy plik spr w \\"
+  ["Unable to load spr file, please place a valid spr in \\"] = "Nie można załadować pliku spr, umieść prawidłowy plik spr w \\",
+  
+  -- House system
+  ["Accept House Transfer"] = "Akceptuj transfer domu",
+  ["Accept Transfer"] = "Akceptuj transfer",
+  ["Cancel House Transfer"] = "Anuluj transfer domu",
+  ["Cancel Transfer"] = "Anuluj transfer",
+  ["Configure House Transfer"] = "Konfiguruj transfer domu",
+  ["All items you have left in the house will be automatically\\nsent to your inbox."] = "Wszystkie przedmioty pozostawione w domu zostaną automatycznie\\nwysłane do skrzynki odbiorczej.",
+  
+  -- Auction
+  ["Auction"] = "Aukcja",
+  ["Auction End"] = "Koniec aukcji",
+  ["Auction Information"] = "Informacje o aukcji",
+  ["Bid"] = "Licytuj",
+  ["Average Market Price"] = "Średnia cena rynkowa",
+  ["Buy From"] = "Kup od",
+  ["Buy History"] = "Historia zakupów",
+  
+  -- Item details
+  ["Armor Value"] = "Wartość pancerza",
+  ["Armor Value:"] = "Wartość pancerza:",
+  ["Attack Value"] = "Wartość ataku",
+  ["Attack Value:"] = "Wartość ataku:",
+  ["Defence Value"] = "Wartość obrony",
+  ["Defence Value:"] = "Wartość obrony:",
+  ["Basic Item Details"] = "Podstawowe szczegóły przedmiotu",
+  
+  -- Combat
+  ["Amplification"] = "Wzmocnienie",
+  ["Bane"] = "Zguba",
+  ["Burst of Nature"] = "Wybuch natury",
+  ["Club"] = "Maczuga",
+  ["Axe"] = "Topór",
+  ["Converted Damage:"] = "Przekonwertowane obrażenia:",
+  ["Critical Hit:"] = "Trafienie krytyczne:",
+  ["Crippling"] = "Okaleczenie",
+  ["Damage Reduction:"] = "Redukcja obrażeń:",
+  ["Damage Reflection"] = "Odbicie obrażeń",
+  ["Damage/Healing"] = "Obrażenia/Leczenie",
+  ["Dodge"] = "Unik",
+  
+  -- Elements
+  ["Death"] = "Śmierć",
+  ["Drown"] = "Tonięcie",
+  ["Earth"] = "Ziemia",
+  ["Energy"] = "Energia",
+  ["Fire"] = "Ogień",
+  ["Holy"] = "Święty",
+  ["Ice"] = "Lód",
+  ["Physical"] = "Fizyczne",
+  
+  -- Equipment
+  ["Boots"] = "Buty",
+  ["Helmet"] = "Hełm",
+  ["Shield"] = "Tarcza",
+  ["Legs"] = "Nogawice",
+  ["Ring"] = "Pierścień",
+  ["Necklace"] = "Naszyjnik",
+  
+  -- Cyclopedia
+  ["Account Badges"] = "Odznaki konta",
+  ["Account Premium"] = "Konto premium",
+  ["Achievements Points: "] = "Punkty osiągnięć: ",
+  ["Archfoe"] = "Arcywróg",
+  ["Bestiary Tracker"] = "Śledzenie bestiariusza",
+  ["Blessings:"] = "Błogosławieństwa:",
+  ["Boss"] = "Boss",
+  ["Boss Points"] = "Punkty bossów",
+  ["Boosted"] = "Wzmocniony",
+  ["Boosted Boss: The Source Of Co..."] = "Wzmocniony Boss: Źródło...",
+  ["Categories"] = "Kategorie",
+  ["Category:"] = "Kategoria:",
+  ["Cause of Death"] = "Przyczyna śmierci",
+  ["Chance"] = "Szansa",
+  ["Charm Selection:"] = "Wybór uroku:",
+  ["Character"] = "Postać",
+  ["Character Name:"] = "Nazwa postaci:",
+  ["Concoctions:"] = "Mikstury:",
+  ["Creature"] = "Stworzenie",
+  ["Creature Name"] = "Nazwa stworzenia",
+  
+  -- Settings/Options
+  ["Active"] = "Aktywny",
+  ["Apply"] = "Zastosuj",
+  ["Async texture loading"] = "Asynchroniczne ładowanie tekstur",
+  ["Auto-Switch Hotkey Preset"] = "Automatyczna zmiana presetów skrótów",
+  ["Available Buttons"] = "Dostępne przyciski",
+  ["Back"] = "Wstecz",
+  ["Bar Style:"] = "Styl paska:",
+  ["BattlEye:"] = "BattlEye:",
+  ["Can be enabled only in version 8.7x or higher"] = "Można włączyć tylko w wersji 8.7x lub wyższej",
+  ["Change updater URL"] = "Zmień URL aktualizatora",
+  ["Check this box to see how mmuch time or how many charges the \\nitems in your open containers have left"] = "Zaznacz, aby zobaczyć ile czasu lub ładunków pozostało\\nprzedmiotom w otwartych pojemnikach",
+  ["Check this box to see how much time or how many charges are left \\non your equipped items"] = "Zaznacz, aby zobaczyć ile czasu lub ładunków pozostało\\nna założonych przedmiotach",
+  ["Check this box to see how much time or how many charges are left\\n on items that have not been used yet"] = "Zaznacz, aby zobaczyć ile czasu lub ładunków pozostało\\nna nieużywanych przedmiotach",
+  ["Checking for updates"] = "Sprawdzanie aktualizacji",
+  ["Choose skill to show in skill circle."] = "Wybierz umiejętność do wyświetlenia w kółku.",
+  ["Clear Cache"] = "Wyczyść pamięć podręczną",
+  ["Clear Skipped Loot List"] = "Wyczyść listę pominiętych łupów",
+  ["Clear imbuement:"] = "Wyczyść nasycenie:",
+  ["Click \\\"Apply\\\" to assign the hotkey.\\nClick \\\"Clear\\\" to remove the hotkey."] = "Kliknij \\\"Zastosuj\\\" aby przypisać skrót.\\nKliknij \\\"Wyczyść\\\" aby usunąć skrót.",
+  ["Display"] = "Wyświetlanie",
+  ["Displayed Buttons"] = "Wyświetlane przyciski",
+  ["Draw Effect On Top"] = "Rysuj efekt na wierzchu",
+  ["Draw effect after drawing the entire floor."] = "Rysuj efekt po narysowaniu całej podłogi.",
+  
+  -- Loot
+  ["Add to Skipped Loot List"] = "Dodaj do listy pominiętych łupów",
+  
+  -- Updater
+  ["Create New Account"] = "Utwórz nowe konto",
+  ["Data and Time"] = "Data i czas",
+  
+  -- Editor
+  ["Edit Hotkey"] = "Edytuj skrót",
+  ["Edit VIP"] = "Edytuj VIP",
+  ["Empty"] = "Pusty",
+  
+  -- Screenshots
+  ["Enable Auto Screenshots"] = "Włącz automatyczne zrzuty ekranu",
+  ["Enable/ Disable draggable chat"] = "Włącz/Wyłącz przeciąganie czatu",
+  ["Enter New Character Name"] = "Wprowadź nową nazwę postaci",
+  
+  -- Events
+  ["* Event starts/ends at server save of this day."] = "* Wydarzenie rozpoczyna się/kończy przy zapisie serwera tego dnia."
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

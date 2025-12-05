@@ -249,3 +249,6 @@ end
 | 2025-12-05 | Russian (ru) translations expanded: 356 → 924 entries |
 | 2025-12-05 | Spanish (es) translations expanded: 494 → 946 entries |
 | 2025-12-05 | French (fr) translations expanded: 509 → 957 entries |
+| 2025-12-05 | Ukrainian (uk) translations expanded: 400 → 920+ entries |
+| 2025-12-05 | Italian (it) translations expanded: 568 → 850+ entries |
+| 2025-12-05 | German (de) translations expanded: 717 → 900+ entries |

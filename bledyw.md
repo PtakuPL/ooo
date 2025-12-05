@@ -155,7 +155,7 @@ Makefile:271: *** Unsupported target architecture.  Stop.
 
 **Przyczyna:** LuaJIT nie wspiera architektury wasm32-emscripten. Należy użyć `lua` zamiast `luajit` dla tej platformy.
 
-**Rozwiązanie (zaimplementowane w PR):** W `vcpkg.json` dodano warunek platformy dla `luajit` (tylko windows | linux | osx) i dodano `lua` jako zależność dla wasm32-emscripten.
+**Rozwiązanie (zaimplementowane w PR):** W `vcpkg.json` dodano warunek platformy dla `luajit` (tylko windows | linux | osx) i dodano `lua` jako zależność dla platformy emscripten. **NAPRAWIONE:** Zmieniono nieprawidłowy identyfikator platformy `wasm32-emscripten` na poprawny `emscripten`.
 
 ---
 

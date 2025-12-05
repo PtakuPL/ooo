@@ -97,6 +97,9 @@ jobs:
                 -DCMAKE_BUILD_TYPE=Debug `
                 -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" `
                 -DSPEED_UP_BUILD_UNITY=OFF `
+                -DOTC_ENABLE_TTF=OFF `
+                -DOTC_ENABLE_HARFBUZZ=OFF `
+                -DOTC_ENABLE_FRIBIDI=OFF `
                 -S . -B build
 
       - name: Run PR sonar-scanner

@@ -27,7 +27,7 @@
     { "name": "opengl", "platform": "windows" },
     { "name": "angle",  "platform": "windows" },
     { "name": "luajit", "platform": "windows | linux | osx" },
-    { "name": "lua",    "platform": "wasm32" },
+    { "name": "lua",    "platform": "wasm" },
     { "name": "pkgconf", "host": true, "platform": "windows" }
   ],
   "builtin-baseline": "4c4abc2e8727221ede31021349386dac674309b0"

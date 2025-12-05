@@ -6,7 +6,7 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
     paths-ignore:
-      - "src/**"
+      - "Tibia/silnik/canary_test/testyy/src/**"
 
 jobs:
   job:

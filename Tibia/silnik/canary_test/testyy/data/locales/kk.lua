@@ -397,6 +397,322 @@ locale = {
     ["Unsuitable Name"] = "Жарамсыз ат",
     ["Name Inciting Rule Violation"] = "Ереже бұзуға итермелейтін ат",
     ["Offensive Statement"] = "Қорлайтын мәлімдеме",
+    
+    -- Additional Rule Violations
+    ["Spamming"] = "Спам жіберу",
+    ["Illegal Advertising"] = "Заңсыз жарнама",
+    ["Off-Topic Public Statement"] = "Тақырыптан тыс жария мәлімдеме",
+    ["Non-English Public Statement"] = "Ағылшын тілінен басқа жария мәлімдеме",
+    ["Inciting Rule Violation"] = "Ереже бұзуға итермелеу",
+    ["Bug Abuse"] = "Қате пайдалану",
+    ["Game Weakness Abuse"] = "Ойын әлсіздігін пайдалану",
+    ["Using Unofficial Software to Play"] = "Бейресми бағдарламаны пайдалану",
+    ["Hacking"] = "Хакерлік",
+    ["Multi-Clienting"] = "Көп клиент",
+    ["Account Trading or Sharing"] = "Аккаунт сату немесе бөлісу",
+    ["Threatening Gamemaster"] = "Ойын шеберіне қорқыту",
+    ["Pretending to Have Influence on Rule Enforcement"] = "Ереже орындауға әсер етудің кейпін кию",
+    
+    -- Status Effects
+    ["You are bleeding"] = "Сіз қан кетіп жатырсыз",
+    ["You are burning"] = "Сіз жанып жатырсыз",
+    ["You are cursed"] = "Сіз қарғысқа ұшырадыңыз",
+    ["You are dazzled"] = "Сіз шатастырылдыңыз",
+    ["You are dead"] = "Сіз өлдіңіз",
+    ["You are drowning"] = "Сіз батып жатырсыз",
+    ["You are drunk"] = "Сіз мас боп қалдыңыз",
+    ["You are electrified"] = "Сіз ток соққысына ұшырадыңыз",
+    ["You are freezing"] = "Сіз қатып жатырсыз",
+    ["You are hasted"] = "Сіз жылдамдатылдыңыз",
+    ["You are hungry"] = "Сіз аштықсыз",
+    ["You are paralysed"] = "Сіз парализдендіңіз",
+    ["You are poisoned"] = "Сіз улан",
+    ["You are protected by a magic shield"] = "Сізді сиқырлы қалқан қорғайды",
+    ["You are strengthened"] = "Сіз күшейтілдіңіз",
+    ["You are within a protection zone"] = "Сіз қорғау аймағындасыз",
+    ["You may not logout during a fight"] = "Ұрыс кезінде шыға алмайсыз",
+    ["You may not logout or enter a protection zone"] = "Шыға алмайсыз немесе қорғау аймағына кіре алмайсыз",
+    
+    -- Combat Skills
+    ["Axe Fighting"] = "Балта ұрысы",
+    ["Club Fighting"] = "Таяқ ұрысы",
+    ["Distance Fighting"] = "Қашықтықтан ұрыс",
+    ["Fist Fighting"] = "Жұдырықпен ұрыс",
+    ["Magic Level"] = "Сиқыр деңгейі",
+    ["Shielding"] = "Қалқанмен қорғау",
+    ["Sword Fighting"] = "Қылыш ұрысы",
+    ["Fishing"] = "Балық аулау",
+    
+    -- Vocations
+    ["Knight"] = "Рыцарь",
+    ["Paladin"] = "Паладин",
+    ["Sorcerer"] = "Сиқыршы",
+    ["Druid"] = "Друид",
+    ["None"] = "Жоқ",
+    ["No Vocation"] = "Кәсіп жоқ",
+    ["Elite Knight"] = "Элита рыцарь",
+    ["Royal Paladin"] = "Патшалық паладин",
+    ["Master Sorcerer"] = "Сиқыршы шебері",
+    ["Elder Druid"] = "Үлкен друид",
+    
+    -- Elements
+    ["Fire"] = "От",
+    ["Ice"] = "Мұз",
+    ["Earth"] = "Жер",
+    ["Energy"] = "Энергия",
+    ["Holy"] = "Қасиетті",
+    ["Death"] = "Өлім",
+    ["Physical"] = "Физикалық",
+    ["Healing"] = "Емдеу",
+    
+    -- Inventory Slots
+    ["Head"] = "Бас",
+    ["Necklace"] = "Мойынсалғыш",
+    ["Backpack"] = "Рюкзак",
+    ["Armor"] = "Сауыт",
+    ["Right Hand"] = "Оң қол",
+    ["Left Hand"] = "Сол қол",
+    ["Legs"] = "Аяқтар",
+    ["Feet"] = "Табандар",
+    ["Ring"] = "Сақина",
+    ["Ammo"] = "Оқ-дәрілер",
+    
+    -- Hotkey Presets
+    ["Add hotkey preset"] = "Жылдам пернелер жиынтығын қосу",
+    ["Copy hotkey preset"] = "Жылдам пернелер жиынтығын көшіру",
+    ["Rename hotkey preset"] = "Жылдам пернелер жиынтығын қайта атау",
+    ["Enter a name for the new preset:"] = "Жаңа жиынтық үшін ат енгізіңіз:",
+    ["Enter a name for the preset:"] = "Жиынтық үшін ат енгізіңіз:",
+    ["Do you really want to delete the hotkey preset %s?"] = "%s жылдам пернелер жиынтығын шынымен жойғыңыз келе ме?",
+    ["Current hotkey to change: %s"] = "Өзгертілетін ағымдағы жылдам перне: %s",
+    ["Current hotkey to change: none"] = "Өзгертілетін ағымдағы жылдам перне: жоқ",
+    ["Add new group"] = "Жаңа топ қосу",
+    ["Edit group %s"] = "%s тобын өңдеу",
+    ["Remove group %s"] = "%s тобын жою",
+    ["Hide groups"] = "Топтарды жасыру",
+    ["Show groups"] = "Топтарды көрсету",
+    
+    -- Cyclopedia and Bestiary
+    ["Cyclopedia"] = "Циклопедия",
+    ["Bestiary Tracker"] = "Бестиарий бақылаушысы",
+    ["Bosstiary Tracker"] = "Боссиарий бақылаушысы",
+    ["Imbuement Tracker"] = "Имбуемент бақылаушысы",
+    ["Prey Tracker"] = "Аң аулау бақылаушысы",
+    ["Prey Dialog"] = "Аң аулау диалогы",
+    ["Select monster"] = "Құбыжықты таңдаңыз",
+    ["Select monster to proceed."] = "Жалғастыру үшін құбыжықты таңдаңыз.",
+    
+    -- Charms
+    ["Confirm Charm Removal"] = "Сүйкімділікті жоюды растау",
+    ["Confirm Selected Charm"] = "Таңдалған сүйкімділікті растау",
+    ["Confirm Unlocking of Charm"] = "Сүйкімділікті ашуды растау",
+    
+    -- Rarity Levels
+    ["Common"] = "Жалпы",
+    ["Uncommon"] = "Сирек емес",
+    ["Rare"] = "Сирек",
+    ["Semi-Rare"] = "Жартылай сирек",
+    ["Very Rare"] = "Өте сирек",
+    
+    -- House System
+    ["Confirm House Action"] = "Үй әрекетін растау",
+    ["Do you really want to keep your house "] = "Үйіңізді сақтағыңыз келе ме ",
+    ["Do you really want to move out of the house "] = "Үйден шынымен шыққыңыз келе ме ",
+    ["You have sucessfully accepted the transfer."] = "Трансферті сәтті қабылдадыңыз.",
+    ["You have sucessfully iniated your move out."] = "Көшіп кетуді сәтті бастадыңыз.",
+    ["You have sucessfully initiated the transfer of your house."] = "Үй трансферін сәтті бастадыңыз.",
+    
+    -- Imbuing
+    ["Confirm Imbuing Attempt"] = "Имбуинг әрекетін растау",
+    ["Confirm Clearing"] = "Тазалауды растау",
+    ["Confirmation of Purchase"] = "Сатып алуды растау",
+    
+    -- UI Elements Extended
+    ["Chat Off"] = "Чат өшірулі",
+    ["Chat On"] = "Чат қосулы",
+    ["Toggle WASD chat mode"] = "WASD чат режимін ауыстыру",
+    ["Toggle chase mode"] = "Қуу режимін ауыстыру",
+    ["Local Chat"] = "Жергілікті чат",
+    ["Debug Info"] = "Түзету ақпараты",
+    ["Top"] = "Жоғарғы",
+    ["Bottom"] = "Төменгі",
+    ["Parallel"] = "Параллель",
+    ["Compact"] = "Ықшам",
+    ["Large"] = "Үлкен",
+    ["Medium"] = "Орташа",
+    ["Small"] = "Кіші",
+    
+    -- Store and Rewards
+    ["Store"] = "Дүкен",
+    ["Rewards"] = "Сыйлықтар",
+    ["Daily Rewards"] = "Күнделікті сыйлықтар",
+    ["Collect Reward"] = "Сыйлықты жинау",
+    ["You have collected your reward!"] = "Сыйлығыңызды жинадыңыз!",
+    ["Buy Offer"] = "Сатып алу ұсынысы",
+    ["Sell Offer"] = "Сату ұсынысы",
+    ["My Offers"] = "Менің ұсыныстарым",
+    ["Create Offer"] = "Ұсыныс жасау",
+    
+    -- Loot Management
+    ["Loot"] = "Олжа",
+    ["Auto Loot"] = "Автоолжа",
+    ["Quick Loot"] = "Жылдам олжа",
+    ["Loot Channel"] = "Олжа арнасы",
+    ["Show Loot"] = "Олжаны көрсету",
+    ["Hide Loot"] = "Олжаны жасыру",
+    
+    -- Chat Modes
+    ["Default Channel"] = "Әдепкі арна",
+    ["Game Chat"] = "Ойын чаты",
+    ["NPC Channel"] = "NPC арнасы",
+    ["Private Messages"] = "Жеке хабарламалар",
+    ["Server Log"] = "Сервер журналы",
+    
+    -- Party System
+    ["Party"] = "Топ",
+    ["Invite to Party"] = "Топқа шақыру",
+    ["Join Party"] = "Топқа қосылу",
+    ["Leave Party"] = "Топтан шығу",
+    ["Pass Leadership"] = "Көшбасшылықты беру",
+    ["Enable Shared Experience"] = "Ортақ тәжірибені қосу",
+    ["Disable Shared Experience"] = "Ортақ тәжірибені өшіру",
+    
+    -- Reporting
+    ["Report"] = "Есеп беру",
+    ["Report Bug"] = "Қате туралы хабарлау",
+    ["Report Player"] = "Ойыншы туралы хабарлау",
+    ["Statement Report"] = "Мәлімдеме есебі",
+    ["You must enter a comment."] = "Түсініктеме енгізуіңіз керек.",
+    ["You must select a reason."] = "Себеп таңдауыңыз керек.",
+    ["You must select an action."] = "Әрекет таңдауыңыз керек.",
+    
+    -- Tasks and Quests
+    ["Tasks"] = "Тапсырмалар",
+    ["Quests"] = "Квесттер",
+    ["Quest Log"] = "Квест журналы",
+    ["Active Tasks"] = "Белсенді тапсырмалар",
+    ["Completed Tasks"] = "Аяқталған тапсырмалар",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Аутентификация токені",
+    ["Two-Factor Authentification"] = "Екі факторлы аутентификация",
+    ["Enable HTTP login"] = "HTTP кіруді қосу",
+    ["Login automatically"] = "Автоматты түрде кіру",
+    ["Remember Email"] = "Электрондық поштаны есте сақтау",
+    ["Remember password"] = "Құпиясөзді есте сақтау",
+    
+    -- Connection Messages
+    ["Connection Lost"] = "Байланыс үзілді",
+    ["Connection to the server lost."] = "Сервермен байланыс үзілді.",
+    ["Trying to reconnect in %s seconds."] = "%s секундтан кейін қайта қосылу.",
+    ["Reconnect"] = "Қайта қосылу",
+    ["Could not connect to server."] = "Серверге қосылу мүмкін болмады.",
+    ["Connection timed out."] = "Байланыс уақыты аяқталды.",
+    
+    -- Combat Stats
+    ["Critical Hit Chance"] = "Сыни соққы мүмкіндігі",
+    ["Critical Hit Damage"] = "Сыни соққы зиян",
+    ["Life Leech Amount"] = "Өмір сіңіру мөлшері",
+    ["Life Leech Chance"] = "Өмір сіңіру мүмкіндігі",
+    ["Mana Leech Amount"] = "Мана сіңіру мөлшері",
+    ["Mana Leech Chance"] = "Мана сіңіру мүмкіндігі",
+    
+    -- Market Extended
+    ["Market Error"] = "Базар қатесі",
+    ["Offer Type"] = "Ұсыныс түрі",
+    ["Piece Price"] = "Бір данасының бағасы",
+    ["Total Price"] = "Жалпы баға",
+    ["This offer is 25%% above the average market price"] = "Бұл ұсыныс нарықтық орташа бағадан 25%% жоғары",
+    ["This offer is 25%% below the average market price"] = "Бұл ұсыныс нарықтық орташа бағадан 25%% төмен",
+    
+    -- PvP Settings
+    ["Open PvP"] = "Ашық PvP",
+    ["Optional PvP"] = "Қосымша PvP",
+    ["Hardcore PvP"] = "Хардкор PvP",
+    ["Retro Open PvP"] = "Ретро ашық PvP",
+    ["Skull Time"] = "Бас сүйек уақыты",
+    
+    -- Sorting Options
+    ["Sort by name"] = "Аты бойынша сұрыптау",
+    ["Sort by status"] = "Күй бойынша сұрыптау",
+    ["Sort by type"] = "Түрі бойынша сұрыптау",
+    
+    -- Display Settings
+    ["Show creature health bars"] = "Тіршілік иелерінің денсаулық жолақтарын көрсету",
+    ["Show creature mana bars"] = "Тіршілік иелерінің мана жолақтарын көрсету",
+    ["Show creature names"] = "Тіршілік иелерінің аттарын көрсету",
+    ["Show player names"] = "Ойыншылардың аттарын көрсету",
+    ["Show monster names"] = "Құбыжықтардың аттарын көрсету",
+    ["Show NPC names"] = "NPC аттарын көрсету",
+    ["Show Text"] = "Мәтінді көрсету",
+    ["Show timestamps in console"] = "Консольде уақыт белгілерін көрсету",
+    
+    -- Audio Settings
+    ["Music Volume"] = "Музыка дыбысы",
+    ["Sound Volume"] = "Дыбыс деңгейі",
+    ["Enable Audio"] = "Дыбысты қосу",
+    ["Disable Audio"] = "Дыбысты өшіру",
+    
+    -- Screenshots
+    ["Screenshot"] = "Скриншот",
+    ["Take Screenshot"] = "Скриншот жасау",
+    ["Screenshot saved"] = "Скриншот сақталды",
+    
+    -- Events
+    ["Events"] = "Оқиғалар",
+    ["Event Schedule"] = "Оқиға кестесі",
+    ["Active Events"] = "Белсенді оқиғалар",
+    
+    -- Prey System
+    ["Prey"] = "Аң",
+    ["Prey Bonus"] = "Аң бонусы",
+    ["Select Prey"] = "Аң таңдау",
+    ["Reroll Prey"] = "Аңды қайта айналдыру",
+    
+    -- Map Features
+    ["Mini Map"] = "Шағын карта",
+    ["World Map"] = "Әлем картасы",
+    ["Mark Position"] = "Позицияны белгілеу",
+    ["Clear Marks"] = "Белгілерді тазалау",
+    
+    -- Guild System
+    ["Guild"] = "Гильдия",
+    ["Guild Chat"] = "Гильдия чаты",
+    ["Guild Members"] = "Гильдия мүшелері",
+    ["Invite to Guild"] = "Гильдияға шақыру",
+    ["Leave Guild"] = "Гильдиядан шығу",
+    
+    -- Format Strings Extended
+    ["You have %s percent to go"] = "Сізге %s пайыз қалды",
+    ["You have %s percent"] = "Сізде %s пайыз бар",
+    ["%d gold"] = "%d алтын",
+    ["%d platinum"] = "%d платина",
+    ["%d crystal"] = "%d кристал",
+    
+    -- Additional UI
+    ["Client version"] = "Клиент нұсқасы",
+    ["Server"] = "Сервер",
+    ["Port"] = "Порт",
+    ["Language"] = "Тіл",
+    ["Email"] = "Электрондық пошта",
+    ["Password"] = "Құпиясөз",
+    ["Account name"] = "Аккаунт аты",
+    
+    -- Graphics Options
+    ["Antialiasing"] = "Антиалиасинг",
+    ["Vsync"] = "Vsync",
+    ["FPS Limit"] = "FPS шегі",
+    ["Fullscreen"] = "Толық экран",
+    ["Windowed"] = "Терезелі",
+    ["Resolution"] = "Ажыратымдылық",
+    
+    -- Additional Messages
+    ["Your client needs updating, try redownloading it."] = "Клиентіңізді жаңарту қажет, қайта жүктеп көріңіз.",
+    ["Your connection has been lost."] = "Байланысыңыз үзілді.",
+    ["Your request has been closed"] = "Сұрауыңыз жабылды",
+    ["There is no way."] = "Жол жоқ.",
+    ["You can enter new text."] = "Жаңа мәтін енгізе аласыз.",
+    ["Unable to logout."] = "Шығу мүмкін емес."
   }
 }
 

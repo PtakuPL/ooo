@@ -305,6 +305,142 @@ locale = {
     ["Reason"] = "Razlog",
     ["Comment"] = "Komentar",
     ["Submit"] = "Pošalji",
+    
+    -- Extended Time
+    ["Days"] = "Dani",
+    ["Hours"] = "Sati",
+    ["Minutes"] = "Minute",
+    ["Seconds"] = "Sekunde",
+    
+    -- Connection messages
+    ["Connection error"] = "Greška veze",
+    ["Connection refused"] = "Veza odbijena",
+    ["Connection timed out"] = "Veza istekla",
+    ["Unable to connect"] = "Nije moguće spojiti se",
+    ["Lost connection"] = "Izgubljena veza",
+    
+    -- Display settings
+    ["Show creature names"] = "Prikaži imena stvorenja",
+    ["Show player names"] = "Prikaži imena igrača",
+    ["Show health bar"] = "Prikaži traku zdravlja",
+    ["Show mana bar"] = "Prikaži traku mane",
+    
+    -- Combat stats
+    ["Critical Hit Chance"] = "Šansa za kritični udarac",
+    ["Critical Hit Damage"] = "Šteta kritičnog udarca",
+    ["Life Leech"] = "Krađa života",
+    ["Mana Leech"] = "Krađa mane",
+    
+    -- Market extended
+    ["Total Price"] = "Ukupna cijena",
+    ["Piece Price"] = "Cijena po komadu",
+    ["Seller"] = "Prodavač",
+    ["Buyer"] = "Kupac",
+    ["Create Offer"] = "Kreiraj ponudu",
+    ["Cancel Offer"] = "Otkaži ponudu",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Token za autentifikaciju",
+    ["Two-Factor Authentication"] = "Dvofaktorska autentifikacija",
+    
+    -- Inventory slots
+    ["Helmet"] = "Kaciga",
+    ["Amulet"] = "Amulet",
+    ["Backpack"] = "Ruksak",
+    ["Armor"] = "Oklop",
+    ["Right Hand"] = "Desna ruka",
+    ["Left Hand"] = "Lijeva ruka",
+    ["Legs"] = "Noge",
+    ["Boots"] = "Čizme",
+    ["Ring"] = "Prsten",
+    ["Ammo"] = "Streljivo",
+    
+    -- Elements
+    ["Fire"] = "Vatra",
+    ["Ice"] = "Led",
+    ["Earth"] = "Zemlja",
+    ["Energy"] = "Energija",
+    ["Holy"] = "Sveto",
+    ["Death"] = "Smrt",
+    ["Physical"] = "Fizičko",
+    
+    -- House extended
+    ["House Transfer"] = "Prijenos kuće",
+    ["House Auction"] = "Aukcija kuće",
+    ["Guest List"] = "Popis gostiju",
+    
+    -- Screenshots
+    ["Screenshot"] = "Snimka zaslona",
+    ["Take Screenshot"] = "Napravi snimku",
+    ["Screenshot saved"] = "Snimka spremljena",
+    
+    -- Audio settings
+    ["Master Volume"] = "Glavna glasnoća",
+    ["Music Volume"] = "Glasnoća glazbe",
+    ["Sound Volume"] = "Glasnoća zvuka",
+    ["Mute"] = "Utišaj",
+    
+    -- Additional UI
+    ["Apply"] = "Primijeni",
+    ["Reset"] = "Resetiraj",
+    ["Confirm"] = "Potvrdi",
+    ["Continue"] = "Nastavi",
+    ["Back"] = "Natrag",
+    ["Next"] = "Dalje",
+    ["Previous"] = "Prethodno",
+    ["Finish"] = "Završi",
+    ["Skip"] = "Preskoči",
+    ["Retry"] = "Pokušaj ponovo",
+    ["Select All"] = "Odaberi sve",
+    
+    -- Cyclopedia extended
+    ["Achievements"] = "Postignuća",
+    ["Titles"] = "Titule",
+    ["Spells"] = "Čarolije",
+    ["Items"] = "Predmeti",
+    ["Monsters"] = "Čudovišta",
+    ["Bosses"] = "Bossovi",
+    
+    -- Loot system
+    ["Quick Loot"] = "Brzo pljačkanje",
+    ["Loot Container"] = "Spremnik za plijen",
+    ["Show Loot"] = "Prikaži plijen",
+    
+    -- Events
+    ["Event"] = "Događaj",
+    ["Events"] = "Događaji",
+    ["Active Events"] = "Aktivni događaji",
+    
+    -- Prey system
+    ["Prey"] = "Plijen",
+    ["Prey Slot"] = "Utor za plijen",
+    ["Reroll"] = "Ponovno bacanje",
+    
+    -- Map features
+    ["Map"] = "Karta",
+    ["World Map"] = "Karta svijeta",
+    ["Minimap"] = "Minikarta",
+    ["Show Markers"] = "Prikaži oznake",
+    
+    -- Chat channels
+    ["Trade Channel"] = "Trgovački kanal",
+    ["Help Channel"] = "Kanal za pomoć",
+    ["World Chat"] = "Svjetski chat",
+    ["Guild Chat"] = "Gildijski chat",
+    ["Party Chat"] = "Grupni chat",
+    
+    -- Guild
+    ["Guild"] = "Gilda",
+    ["Guild Name"] = "Ime gilde",
+    ["Guild Members"] = "Članovi gilde",
+    ["Invite to Guild"] = "Pozovi u gildu",
+    ["Leave Guild"] = "Napusti gildu",
+    
+    -- Format strings
+    ["Next level in %s"] = "Sljedeća razina za %s",
+    ["Current level: %d"] = "Trenutna razina: %d",
+    ["%s has logged in"] = "%s se prijavio",
+    ["%s has logged out"] = "%s se odjavio",
   }
 }
 

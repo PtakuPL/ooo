@@ -305,6 +305,142 @@ locale = {
     ["Reason"] = "Dôvod",
     ["Comment"] = "Komentár",
     ["Submit"] = "Odoslať",
+    
+    -- Extended Time
+    ["Days"] = "Dni",
+    ["Hours"] = "Hodiny",
+    ["Minutes"] = "Minúty",
+    ["Seconds"] = "Sekundy",
+    
+    -- Connection messages
+    ["Connection error"] = "Chyba pripojenia",
+    ["Connection refused"] = "Pripojenie odmietnuté",
+    ["Connection timed out"] = "Časový limit pripojenia",
+    ["Unable to connect"] = "Nedá sa pripojiť",
+    ["Lost connection"] = "Stratené pripojenie",
+    
+    -- Display settings
+    ["Show creature names"] = "Zobraziť mená tvorov",
+    ["Show player names"] = "Zobraziť mená hráčov",
+    ["Show health bar"] = "Zobraziť panel zdravia",
+    ["Show mana bar"] = "Zobraziť panel many",
+    
+    -- Combat stats
+    ["Critical Hit Chance"] = "Šanca na kritický zásah",
+    ["Critical Hit Damage"] = "Poškodenie kritického zásahu",
+    ["Life Leech"] = "Krádež života",
+    ["Mana Leech"] = "Krádež many",
+    
+    -- Market extended
+    ["Total Price"] = "Celková cena",
+    ["Piece Price"] = "Cena za kus",
+    ["Seller"] = "Predávajúci",
+    ["Buyer"] = "Kupujúci",
+    ["Create Offer"] = "Vytvoriť ponuku",
+    ["Cancel Offer"] = "Zrušiť ponuku",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Autentifikačný token",
+    ["Two-Factor Authentication"] = "Dvojfaktorová autentifikácia",
+    
+    -- Inventory slots
+    ["Helmet"] = "Prilba",
+    ["Amulet"] = "Amulet",
+    ["Backpack"] = "Batoh",
+    ["Armor"] = "Brnenie",
+    ["Right Hand"] = "Pravá ruka",
+    ["Left Hand"] = "Ľavá ruka",
+    ["Legs"] = "Nohy",
+    ["Boots"] = "Topánky",
+    ["Ring"] = "Prsteň",
+    ["Ammo"] = "Munícia",
+    
+    -- Elements
+    ["Fire"] = "Oheň",
+    ["Ice"] = "Ľad",
+    ["Earth"] = "Zem",
+    ["Energy"] = "Energia",
+    ["Holy"] = "Sväté",
+    ["Death"] = "Smrť",
+    ["Physical"] = "Fyzické",
+    
+    -- House extended
+    ["House Transfer"] = "Prevod domu",
+    ["House Auction"] = "Aukcia domu",
+    ["Guest List"] = "Zoznam hostí",
+    
+    -- Screenshots
+    ["Screenshot"] = "Snímka obrazovky",
+    ["Take Screenshot"] = "Vytvoriť snímku",
+    ["Screenshot saved"] = "Snímka uložená",
+    
+    -- Audio settings
+    ["Master Volume"] = "Hlavná hlasitosť",
+    ["Music Volume"] = "Hlasitosť hudby",
+    ["Sound Volume"] = "Hlasitosť zvuku",
+    ["Mute"] = "Stlmiť",
+    
+    -- Additional UI
+    ["Apply"] = "Použiť",
+    ["Reset"] = "Resetovať",
+    ["Confirm"] = "Potvrdiť",
+    ["Continue"] = "Pokračovať",
+    ["Back"] = "Späť",
+    ["Next"] = "Ďalej",
+    ["Previous"] = "Predchádzajúce",
+    ["Finish"] = "Dokončiť",
+    ["Skip"] = "Preskočiť",
+    ["Retry"] = "Skúsiť znova",
+    ["Select All"] = "Vybrať všetko",
+    
+    -- Cyclopedia extended
+    ["Achievements"] = "Úspechy",
+    ["Titles"] = "Tituly",
+    ["Spells"] = "Kúzla",
+    ["Items"] = "Predmety",
+    ["Monsters"] = "Príšery",
+    ["Bosses"] = "Bossovia",
+    
+    -- Loot system
+    ["Quick Loot"] = "Rýchla korisť",
+    ["Loot Container"] = "Kontajner koristi",
+    ["Show Loot"] = "Zobraziť korisť",
+    
+    -- Events
+    ["Event"] = "Udalosť",
+    ["Events"] = "Udalosti",
+    ["Active Events"] = "Aktívne udalosti",
+    
+    -- Prey system
+    ["Prey"] = "Korisť",
+    ["Prey Slot"] = "Slot koristi",
+    ["Reroll"] = "Prehodiť",
+    
+    -- Map features
+    ["Map"] = "Mapa",
+    ["World Map"] = "Mapa sveta",
+    ["Minimap"] = "Minimapa",
+    ["Show Markers"] = "Zobraziť značky",
+    
+    -- Chat channels
+    ["Trade Channel"] = "Obchodný kanál",
+    ["Help Channel"] = "Kanál pomoci",
+    ["World Chat"] = "Svetový chat",
+    ["Guild Chat"] = "Gildový chat",
+    ["Party Chat"] = "Skupinový chat",
+    
+    -- Guild
+    ["Guild"] = "Gilda",
+    ["Guild Name"] = "Názov gildy",
+    ["Guild Members"] = "Členovia gildy",
+    ["Invite to Guild"] = "Pozvať do gildy",
+    ["Leave Guild"] = "Opustiť gildu",
+    
+    -- Format strings
+    ["Next level in %s"] = "Ďalšia úroveň za %s",
+    ["Current level: %d"] = "Aktuálna úroveň: %d",
+    ["%s has logged in"] = "%s sa prihlásil",
+    ["%s has logged out"] = "%s sa odhlásil",
   }
 }
 

@@ -305,6 +305,142 @@ locale = {
     ["Reason"] = "Причина",
     ["Comment"] = "Коментар",
     ["Submit"] = "Изпрати",
+    
+    -- Extended Time
+    ["Days"] = "Дни",
+    ["Hours"] = "Часове",
+    ["Minutes"] = "Минути",
+    ["Seconds"] = "Секунди",
+    
+    -- Connection messages
+    ["Connection error"] = "Грешка при свързване",
+    ["Connection refused"] = "Връзката е отказана",
+    ["Connection timed out"] = "Времето за връзка изтече",
+    ["Unable to connect"] = "Неуспешно свързване",
+    ["Lost connection"] = "Загубена връзка",
+    
+    -- Display settings
+    ["Show creature names"] = "Покажи имена на същества",
+    ["Show player names"] = "Покажи имена на играчи",
+    ["Show health bar"] = "Покажи лента за здраве",
+    ["Show mana bar"] = "Покажи лента за мана",
+    
+    -- Combat stats
+    ["Critical Hit Chance"] = "Шанс за критичен удар",
+    ["Critical Hit Damage"] = "Щета от критичен удар",
+    ["Life Leech"] = "Кражба на живот",
+    ["Mana Leech"] = "Кражба на мана",
+    
+    -- Market extended
+    ["Total Price"] = "Обща цена",
+    ["Piece Price"] = "Цена за брой",
+    ["Seller"] = "Продавач",
+    ["Buyer"] = "Купувач",
+    ["Create Offer"] = "Създай оферта",
+    ["Cancel Offer"] = "Отмени оферта",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Токен за удостоверяване",
+    ["Two-Factor Authentication"] = "Двуфакторно удостоверяване",
+    
+    -- Inventory slots
+    ["Helmet"] = "Шлем",
+    ["Amulet"] = "Амулет",
+    ["Backpack"] = "Раница",
+    ["Armor"] = "Броня",
+    ["Right Hand"] = "Дясна ръка",
+    ["Left Hand"] = "Лява ръка",
+    ["Legs"] = "Крака",
+    ["Boots"] = "Ботуши",
+    ["Ring"] = "Пръстен",
+    ["Ammo"] = "Муниции",
+    
+    -- Elements
+    ["Fire"] = "Огън",
+    ["Ice"] = "Лед",
+    ["Earth"] = "Земя",
+    ["Energy"] = "Енергия",
+    ["Holy"] = "Свято",
+    ["Death"] = "Смърт",
+    ["Physical"] = "Физическо",
+    
+    -- House extended
+    ["House Transfer"] = "Трансфер на къща",
+    ["House Auction"] = "Търг за къща",
+    ["Guest List"] = "Списък с гости",
+    
+    -- Screenshots
+    ["Screenshot"] = "Снимка на екрана",
+    ["Take Screenshot"] = "Направи снимка",
+    ["Screenshot saved"] = "Снимката е запазена",
+    
+    -- Audio settings
+    ["Master Volume"] = "Основна сила на звука",
+    ["Music Volume"] = "Сила на музиката",
+    ["Sound Volume"] = "Сила на звука",
+    ["Mute"] = "Заглуши",
+    
+    -- Additional UI
+    ["Apply"] = "Приложи",
+    ["Reset"] = "Нулиране",
+    ["Confirm"] = "Потвърди",
+    ["Continue"] = "Продължи",
+    ["Back"] = "Назад",
+    ["Next"] = "Напред",
+    ["Previous"] = "Предишен",
+    ["Finish"] = "Завърши",
+    ["Skip"] = "Пропусни",
+    ["Retry"] = "Опитай пак",
+    ["Select All"] = "Избери всички",
+    
+    -- Cyclopedia extended
+    ["Achievements"] = "Постижения",
+    ["Titles"] = "Титли",
+    ["Spells"] = "Магии",
+    ["Items"] = "Предмети",
+    ["Monsters"] = "Чудовища",
+    ["Bosses"] = "Босове",
+    
+    -- Loot system
+    ["Quick Loot"] = "Бърз лут",
+    ["Loot Container"] = "Контейнер за лут",
+    ["Show Loot"] = "Покажи лут",
+    
+    -- Events
+    ["Event"] = "Събитие",
+    ["Events"] = "Събития",
+    ["Active Events"] = "Активни събития",
+    
+    -- Prey system
+    ["Prey"] = "Плячка",
+    ["Prey Slot"] = "Слот за плячка",
+    ["Reroll"] = "Преобърни",
+    
+    -- Map features
+    ["Map"] = "Карта",
+    ["World Map"] = "Световна карта",
+    ["Minimap"] = "Миникарта",
+    ["Show Markers"] = "Покажи маркери",
+    
+    -- Chat channels
+    ["Trade Channel"] = "Търговски канал",
+    ["Help Channel"] = "Канал за помощ",
+    ["World Chat"] = "Световен чат",
+    ["Guild Chat"] = "Гилдиен чат",
+    ["Party Chat"] = "Групов чат",
+    
+    -- Guild
+    ["Guild"] = "Гилдия",
+    ["Guild Name"] = "Име на гилдия",
+    ["Guild Members"] = "Членове на гилдия",
+    ["Invite to Guild"] = "Покани в гилдия",
+    ["Leave Guild"] = "Напусни гилдия",
+    
+    -- Format strings
+    ["Next level in %s"] = "Следващо ниво след %s",
+    ["Current level: %d"] = "Текущо ниво: %d",
+    ["%s has logged in"] = "%s влезе",
+    ["%s has logged out"] = "%s излезе",
   }
 }
 

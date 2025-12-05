@@ -507,3 +507,112 @@ locale = {
 }
 
 modules.client_locales.installLocale(locale)
+
+-- Additional translations merged at runtime
+local add = {
+  -- Death dialogs
+  ["Alas! Brave adventurer, you have met a sad fate.\nBut do not despair, for the gods will bring you back\ninto this world in exchange for a small sacrifice\n\nSimply click on Ok to resume your journeys!"] = "Ack! Modiga äventyrare, du har mött ett sorgligt öde.\nMen misströsta inte, för gudarna kommer att föra dig tillbaka\ntill denna värld i utbyte mot ett litet offer\n\nKlicka bara på OK för att återuppta dina resor!",
+  ["Journey Onwards"] = "Fortsätt resan",
+
+  -- Hotkey management
+  ["Add hotkey preset"] = "Lägg till snabbkommandoförinställning",
+  ["Add new group"] = "Lägg till ny grupp",
+  ["Copy hotkey preset"] = "Kopiera förinställning",
+  ["Rename hotkey preset"] = "Byt namn på förinställning",
+  ["Edit group %s"] = "Redigera grupp %s",
+  ["Remove group %s"] = "Ta bort grupp %s",
+  ["Hide groups"] = "Dölj grupper",
+  ["Show groups"] = "Visa grupper",
+  
+  -- Cyclopedia extended
+  ["Imbuement Tracker"] = "Imbuement-spårare",
+  ["Prey Tracker"] = "Bytespårare",
+  ["Prey Dialog"] = "Bytesdialog",
+  ["Select monster"] = "Välj monster",
+  ["Account Badges"] = "Kontomärken",
+  ["Boss Points"] = "Bosspoäng",
+  ["Creature Name"] = "Varelsenamn",
+  
+  -- House system
+  ["Accept House Transfer"] = "Acceptera husöverföring",
+  ["Cancel House Transfer"] = "Avbryt husöverföring",
+  ["Move Out"] = "Flytta ut",
+  ["New Owner:"] = "Ny ägare:",
+  ["No house selected"] = "Inget hus valt",
+  ["Place Your Bid"] = "Lägg ditt bud",
+  
+  -- Combat stats
+  ["Life Leech"] = "Livsstöld",
+  ["Mana Leech"] = "Manastöld",
+  ["Magic"] = "Magi",
+  ["Physical"] = "Fysisk",
+  ["Club"] = "Klubba",
+  ["Axe"] = "Yxa",
+  ["Sword"] = "Svärd",
+  ["Dodge"] = "Undvika",
+  
+  -- Elements
+  ["Death"] = "Död",
+  ["Earth"] = "Jord",
+  ["Energy"] = "Energi",
+  ["Fire"] = "Eld",
+  ["Holy"] = "Helig",
+  ["Ice"] = "Is",
+  
+  -- Days
+  ["Monday"] = "Måndag",
+  ["Tuesday"] = "Tisdag",
+  ["Wednesday"] = "Onsdag",
+  ["Thursday"] = "Torsdag",
+  ["Saturday"] = "Lördag",
+  ["Sunday"] = "Söndag",
+  
+  -- UI elements
+  ["Navigation"] = "Navigation",
+  ["Next"] = "Nästa",
+  ["Previous"] = "Föregående",
+  ["None"] = "Ingen",
+  ["Points"] = "Poäng",
+  ["Progress"] = "Framsteg",
+  ["Quest Tracker"] = "Uppdragsspårare",
+  ["Rank"] = "Rang",
+  ["Reset"] = "Återställ",
+  ["Show All"] = "Visa alla",
+  ["Status"] = "Status",
+  ["Stop"] = "Stopp",
+  ["Submit"] = "Skicka",
+  ["Track"] = "Spåra",
+  ["Updater"] = "Uppdaterare",
+  ["Wiki"] = "Wiki",
+  ["World"] = "Värld",
+  
+  -- Prey system
+  ["Prey Creatures"] = "Bytesvarelser",
+  ["Preys"] = "Byten",
+  
+  -- Tasks
+  ["Do you really want to abort this task?"] = "Vill du verkligen avbryta denna uppgift?",
+  ["Summary"] = "Sammanfattning",
+  
+  -- Account
+  ["Manage Account"] = "Hantera konto",
+  ["Free"] = "Gratis",
+  
+  -- Items
+  ["Wrap"] = "Slå in",
+  ["Unwrap"] = "Packa upp",
+  
+  -- Misc
+  ["Chat Off"] = "Chatt av",
+  ["Chat On"] = "Chatt på",
+  ["Local Chat"] = "Lokal chatt",
+  ["Top"] = "Topp",
+  ["Bottom"] = "Botten",
+  ["Compact"] = "Kompakt",
+  ["Large"] = "Stor",
+  ["ok"] = "ok",
+  ["remove"] = "ta bort",
+}
+for k,v in pairs(add) do
+  locale.translation[k] = locale.translation[k] or v
+end

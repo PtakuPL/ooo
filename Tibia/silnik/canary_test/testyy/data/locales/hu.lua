@@ -401,3 +401,112 @@ locale = {
 }
 
 modules.client_locales.installLocale(locale)
+
+-- Additional translations merged at runtime
+local add = {
+  -- Death dialogs
+  ["Alas! Brave adventurer, you have met a sad fate.\nBut do not despair, for the gods will bring you back\ninto this world in exchange for a small sacrifice\n\nSimply click on Ok to resume your journeys!"] = "Jaj! Bátor kalandor, szomorú sorsra jutottál.\nDe ne ess kétségbe, az istenek visszahoznak\nebbe a világba egy kis áldozatért cserébe\n\nEgyszerűen kattints az OK-ra az utazás folytatásához!",
+  ["Journey Onwards"] = "Utazás folytatása",
+
+  -- Hotkey management
+  ["Add hotkey preset"] = "Gyorsbillentyű-beállítás hozzáadása",
+  ["Add new group"] = "Új csoport hozzáadása",
+  ["Copy hotkey preset"] = "Beállítás másolása",
+  ["Rename hotkey preset"] = "Beállítás átnevezése",
+  ["Edit group %s"] = "%s csoport szerkesztése",
+  ["Remove group %s"] = "%s csoport eltávolítása",
+  ["Hide groups"] = "Csoportok elrejtése",
+  ["Show groups"] = "Csoportok megjelenítése",
+  
+  -- Cyclopedia extended
+  ["Imbuement Tracker"] = "Imbuement nyomkövető",
+  ["Prey Tracker"] = "Zsákmány nyomkövető",
+  ["Prey Dialog"] = "Zsákmány párbeszéd",
+  ["Select monster"] = "Szörny kiválasztása",
+  ["Account Badges"] = "Fiók jelvények",
+  ["Boss Points"] = "Főnök pontok",
+  ["Creature Name"] = "Lény neve",
+  
+  -- House system
+  ["Accept House Transfer"] = "Ház átadás elfogadása",
+  ["Cancel House Transfer"] = "Ház átadás megszakítása",
+  ["Move Out"] = "Kiköltözés",
+  ["New Owner:"] = "Új tulajdonos:",
+  ["No house selected"] = "Nincs ház kiválasztva",
+  ["Place Your Bid"] = "Tégy ajánlatot",
+  
+  -- Combat stats
+  ["Life Leech"] = "Élet elszívás",
+  ["Mana Leech"] = "Mana elszívás",
+  ["Magic"] = "Mágia",
+  ["Physical"] = "Fizikai",
+  ["Club"] = "Buzogány",
+  ["Axe"] = "Fejsze",
+  ["Sword"] = "Kard",
+  ["Dodge"] = "Kitérés",
+  
+  -- Elements
+  ["Death"] = "Halál",
+  ["Earth"] = "Föld",
+  ["Energy"] = "Energia",
+  ["Fire"] = "Tűz",
+  ["Holy"] = "Szent",
+  ["Ice"] = "Jég",
+  
+  -- Days
+  ["Monday"] = "Hétfő",
+  ["Tuesday"] = "Kedd",
+  ["Wednesday"] = "Szerda",
+  ["Thursday"] = "Csütörtök",
+  ["Saturday"] = "Szombat",
+  ["Sunday"] = "Vasárnap",
+  
+  -- UI elements
+  ["Navigation"] = "Navigáció",
+  ["Next"] = "Következő",
+  ["Previous"] = "Előző",
+  ["None"] = "Nincs",
+  ["Points"] = "Pontok",
+  ["Progress"] = "Haladás",
+  ["Quest Tracker"] = "Küldetés nyomkövető",
+  ["Rank"] = "Rang",
+  ["Reset"] = "Visszaállítás",
+  ["Show All"] = "Összes megjelenítése",
+  ["Status"] = "Állapot",
+  ["Stop"] = "Leállítás",
+  ["Submit"] = "Küldés",
+  ["Track"] = "Nyomon követés",
+  ["Updater"] = "Frissítő",
+  ["Wiki"] = "Wiki",
+  ["World"] = "Világ",
+  
+  -- Prey system
+  ["Prey Creatures"] = "Zsákmány lények",
+  ["Preys"] = "Zsákmányok",
+  
+  -- Tasks
+  ["Do you really want to abort this task?"] = "Biztosan meg akarod szakítani ezt a feladatot?",
+  ["Summary"] = "Összegzés",
+  
+  -- Account
+  ["Manage Account"] = "Fiók kezelése",
+  ["Free"] = "Ingyenes",
+  
+  -- Items
+  ["Wrap"] = "Becsomagol",
+  ["Unwrap"] = "Kicsomagol",
+  
+  -- Misc
+  ["Chat Off"] = "Chat ki",
+  ["Chat On"] = "Chat be",
+  ["Local Chat"] = "Helyi chat",
+  ["Top"] = "Felső",
+  ["Bottom"] = "Alsó",
+  ["Compact"] = "Kompakt",
+  ["Large"] = "Nagy",
+  ["ok"] = "ok",
+  ["remove"] = "eltávolítás",
+}
+for k,v in pairs(add) do
+  locale.translation[k] = locale.translation[k] or v
+end

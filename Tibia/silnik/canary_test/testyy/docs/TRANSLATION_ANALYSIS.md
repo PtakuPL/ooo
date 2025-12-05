@@ -258,3 +258,6 @@ end
 | 2025-12-05 | Japanese (ja) translations expanded: 566 → 750+ entries |
 | 2025-12-05 | Korean (ko) translations expanded: 566 → 750+ entries |
 | 2025-12-05 | Arabic (ar) translations expanded: 566 → 750+ entries |
+| 2025-12-05 | Czech (cs) translations expanded: 566 → 670+ entries |
+| 2025-12-05 | Swedish (sv) translations expanded: 506 → 610+ entries |
+| 2025-12-05 | Hungarian (hu) translations expanded: 400 → 510+ entries |

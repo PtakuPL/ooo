@@ -567,3 +567,114 @@ locale = {
 }
 
 modules.client_locales.installLocale(locale)
+
+-- Additional translations merged at runtime
+local add = {
+  -- Death dialogs
+  ["Alas! Brave adventurer, you have met a sad fate.\nBut do not despair, for the gods will bring you back\ninto this world in exchange for a small sacrifice\n\nSimply click on Ok to resume your journeys!"] = "Běda! Statečný dobrodruhu, potkal tě smutný osud.\nAle nezoufej, bohové tě vrátí\ndo tohoto světa výměnou za malou oběť\n\nStačí kliknout na OK a pokračovat v cestách!",
+  ["Journey Onwards"] = "Pokračovat v cestě",
+
+  -- Hotkey management extended
+  ["Add hotkey preset"] = "Přidat přednastavení klávesových zkratek",
+  ["Add new group"] = "Přidat novou skupinu",
+  ["Copy hotkey preset"] = "Kopírovat přednastavení",
+  ["Rename hotkey preset"] = "Přejmenovat přednastavení",
+  ["Enter a name for the new preset:"] = "Zadejte název pro nové přednastavení:",
+  ["Do you really want to delete the hotkey preset %s?"] = "Opravdu chcete smazat přednastavení %s?",
+  ["Edit group %s"] = "Upravit skupinu %s",
+  ["Remove group %s"] = "Odstranit skupinu %s",
+  ["Hide groups"] = "Skrýt skupiny",
+  ["Show groups"] = "Zobrazit skupiny",
+  
+  -- Cyclopedia extended
+  ["Imbuement Tracker"] = "Sledování imbuementů",
+  ["Prey Tracker"] = "Sledování kořisti",
+  ["Prey Dialog"] = "Dialog kořisti",
+  ["Select monster"] = "Vybrat příšeru",
+  ["Account Badges"] = "Odznaky účtu",
+  ["Boss Points"] = "Body bossů",
+  ["Creature Name"] = "Jméno tvora",
+  
+  -- House system
+  ["Accept House Transfer"] = "Přijmout převod domu",
+  ["Cancel House Transfer"] = "Zrušit převod domu",
+  ["Move Out"] = "Odstěhovat se",
+  ["New Owner:"] = "Nový vlastník:",
+  ["No house selected"] = "Není vybrán dům",
+  ["Place Your Bid"] = "Zadejte nabídku",
+  
+  -- Combat stats
+  ["Life Leech"] = "Životní vysátí",
+  ["Mana Leech"] = "Manové vysátí",
+  ["Magic"] = "Magie",
+  ["Physical"] = "Fyzické",
+  ["Club"] = "Kyj",
+  ["Axe"] = "Sekera",
+  ["Sword"] = "Meč",
+  ["Dodge"] = "Úhyb",
+  
+  -- Elements
+  ["Death"] = "Smrt",
+  ["Earth"] = "Země",
+  ["Energy"] = "Energie",
+  ["Fire"] = "Oheň",
+  ["Holy"] = "Svaté",
+  ["Ice"] = "Led",
+  
+  -- Days
+  ["Monday"] = "Pondělí",
+  ["Tuesday"] = "Úterý",
+  ["Wednesday"] = "Středa",
+  ["Thursday"] = "Čtvrtek",
+  ["Saturday"] = "Sobota",
+  ["Sunday"] = "Neděle",
+  
+  -- UI elements
+  ["Navigation"] = "Navigace",
+  ["Next"] = "Další",
+  ["Previous"] = "Předchozí",
+  ["None"] = "Žádný",
+  ["Points"] = "Body",
+  ["Progress"] = "Pokrok",
+  ["Quest Tracker"] = "Sledování úkolů",
+  ["Rank"] = "Hodnocení",
+  ["Reset"] = "Resetovat",
+  ["Show All"] = "Zobrazit vše",
+  ["Status"] = "Stav",
+  ["Stop"] = "Zastavit",
+  ["Submit"] = "Odeslat",
+  ["Track"] = "Sledovat",
+  ["Updater"] = "Aktualizátor",
+  ["Wiki"] = "Wiki",
+  ["World"] = "Svět",
+  
+  -- Prey system
+  ["Prey Creatures"] = "Tvorové kořisti",
+  ["Preys"] = "Kořisti",
+  
+  -- Tasks
+  ["Do you really want to abort this task?"] = "Opravdu chcete zrušit tento úkol?",
+  ["Summary"] = "Shrnutí",
+  
+  -- Account
+  ["Manage Account"] = "Správa účtu",
+  ["Free"] = "Zdarma",
+  
+  -- Items
+  ["Wrap"] = "Zabalit",
+  ["Unwrap"] = "Rozbalit",
+  
+  -- Misc
+  ["Chat Off"] = "Chat vypnutý",
+  ["Chat On"] = "Chat zapnutý",
+  ["Local Chat"] = "Místní chat",
+  ["Top"] = "Nahoře",
+  ["Bottom"] = "Dole",
+  ["Compact"] = "Kompaktní",
+  ["Large"] = "Velký",
+  ["ok"] = "ok",
+  ["remove"] = "odstranit",
+}
+for k,v in pairs(add) do
+  locale.translation[k] = locale.translation[k] or v
+end

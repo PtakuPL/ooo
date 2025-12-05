@@ -419,7 +419,12 @@ if(UNIX AND NOT ANDROID AND NOT WASM)
   find_package(X11 REQUIRED)
 endif()
 if(WIN32)
-  find_package(DbgHelp REQUIRED)
+  # DbgHelp is only reliably available with MSVC; make it optional for MinGW/other compilers
+  if(MSVC)
+    find_package(DbgHelp REQUIRED)
+  else()
+    find_package(DbgHelp QUIET)
+  endif()
 endif(WIN32)
 if(NOT OPENSSL_FOUND)
   find_package(GMP REQUIRED)
@@ -912,7 +917,7 @@ elseif(WASM)
   set(CMAKE_EXECUTABLE_SUFFIX ".html")
   set(VCPKG_TARGET_TRIPLET "wasm32-emscripten" CACHE STRING "")
 
-else() # Linux
+else() # Linux/Unix or Windows with non-MSVC compilers
   target_include_directories(${PROJECT_NAME}
           PRIVATE
           $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/>
@@ -953,7 +958,6 @@ else() # Linux
           protobuf::libprotobuf protobuf
           ${ABSL_LOG_TARGET}
           Threads::Threads
-          X11::X11
           asio::asio
           OpenAL::OpenAL
           LibLZMA::LibLZMA
@@ -967,6 +971,28 @@ else() # Linux
           Vorbis::vorbisfile
           Vorbis::vorbis
   )
+  
+  # X11 is only available and needed on Unix/Linux systems (not Windows/macOS)
+  if(UNIX AND NOT APPLE)
+    target_link_libraries(${PROJECT_NAME} PRIVATE X11::X11)
+  endif()
+  
+  # Windows-specific libraries when building with MinGW/GCC instead of MSVC
+  if(WIN32)
+    # winmm is required for multimedia functions (timers, etc.)
+    target_link_libraries(${PROJECT_NAME} PRIVATE winmm)
+    # DbgHelp for debugging support (optional with MinGW)
+    if(DBGHELP_FOUND)
+      target_link_libraries(${PROJECT_NAME} PRIVATE ${DBGHELP_LIBRARY})
+    endif()
+    # Set Windows version defines for full C++20 support
+    target_compile_definitions(${PROJECT_NAME}
+            PRIVATE
+            NTDDI_VERSION=0x0A000000
+            _WIN32_WINNT=0x0A00
+            WINVER=0x0A00
+    )
+  endif()
 
   if(CMAKE_BUILD_TYPE STREQUAL "Debug")
     target_compile_options(${PROJECT_NAME}

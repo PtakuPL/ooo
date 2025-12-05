@@ -241,6 +241,138 @@ locale = {
     ["Hour"] = "Stunda",
     ["Minute"] = "Minūte",
     ["Second"] = "Sekunde",
+    ["Days"] = "Dienas",
+    ["Hours"] = "Stundas",
+    ["Minutes"] = "Minūtes",
+    ["Seconds"] = "Sekundes",
+    
+    -- Connection messages
+    ["Connection error"] = "Savienojuma kļūda",
+    ["Connection refused"] = "Savienojums noraidīts",
+    ["Connection timed out"] = "Savienojuma laiks beidzies",
+    ["Unable to connect"] = "Nevar savienoties",
+    ["Lost connection"] = "Savienojums zaudēts",
+    
+    -- Display settings
+    ["Show creature names"] = "Rādīt radījumu vārdus",
+    ["Show player names"] = "Rādīt spēlētāju vārdus",
+    ["Show health bar"] = "Rādīt veselības joslu",
+    ["Show mana bar"] = "Rādīt manas joslu",
+    
+    -- Combat stats
+    ["Critical Hit Chance"] = "Kritiskā sitiena iespēja",
+    ["Critical Hit Damage"] = "Kritiskā sitiena bojājums",
+    ["Life Leech"] = "Dzīvības zādzība",
+    ["Mana Leech"] = "Manas zādzība",
+    
+    -- Market extended
+    ["Total Price"] = "Kopējā cena",
+    ["Piece Price"] = "Vienības cena",
+    ["Seller"] = "Pārdevējs",
+    ["Buyer"] = "Pircējs",
+    ["Create Offer"] = "Izveidot piedāvājumu",
+    ["Cancel Offer"] = "Atcelt piedāvājumu",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Autentifikācijas marķieris",
+    ["Two-Factor Authentication"] = "Divfaktoru autentifikācija",
+    
+    -- Inventory slots
+    ["Helmet"] = "Ķivere",
+    ["Amulet"] = "Amulets",
+    ["Backpack"] = "Mugursoma",
+    ["Armor"] = "Bruņas",
+    ["Right Hand"] = "Labā roka",
+    ["Left Hand"] = "Kreisā roka",
+    ["Legs"] = "Kājas",
+    ["Boots"] = "Zābaki",
+    ["Ring"] = "Gredzens",
+    ["Ammo"] = "Munīcija",
+    
+    -- Elements
+    ["Fire"] = "Uguns",
+    ["Ice"] = "Ledus",
+    ["Earth"] = "Zeme",
+    ["Energy"] = "Enerģija",
+    ["Holy"] = "Svēts",
+    ["Death"] = "Nāve",
+    ["Physical"] = "Fizisks",
+    
+    -- House extended
+    ["House Transfer"] = "Mājas pārvešana",
+    ["House Auction"] = "Mājas izsole",
+    ["Guest List"] = "Viesu saraksts",
+    
+    -- Screenshots
+    ["Screenshot"] = "Ekrānšāviņš",
+    ["Take Screenshot"] = "Uzņemt ekrānšāviņu",
+    ["Screenshot saved"] = "Ekrānšāviņš saglabāts",
+    
+    -- Audio settings
+    ["Master Volume"] = "Galvenais skaļums",
+    ["Music Volume"] = "Mūzikas skaļums",
+    ["Sound Volume"] = "Skaņas skaļums",
+    ["Mute"] = "Izslēgt skaņu",
+    
+    -- Additional UI
+    ["Apply"] = "Lietot",
+    ["Reset"] = "Atiestatīt",
+    ["Confirm"] = "Apstiprināt",
+    ["Continue"] = "Turpināt",
+    ["Back"] = "Atpakaļ",
+    ["Next"] = "Nākamais",
+    ["Previous"] = "Iepriekšējais",
+    ["Finish"] = "Pabeigt",
+    ["Skip"] = "Izlaist",
+    ["Retry"] = "Mēģināt vēlreiz",
+    ["Select All"] = "Atlasīt visu",
+    
+    -- Cyclopedia extended
+    ["Achievements"] = "Sasniegumi",
+    ["Titles"] = "Tituli",
+    ["Spells"] = "Burvji",
+    ["Items"] = "Priekšmeti",
+    ["Monsters"] = "Monstri",
+    ["Bosses"] = "Bosi",
+    
+    -- Loot system
+    ["Quick Loot"] = "Ātrā laupījums",
+    ["Loot Container"] = "Laupījuma konteiners",
+    ["Show Loot"] = "Rādīt laupījumu",
+    
+    -- Events
+    ["Event"] = "Notikums",
+    ["Events"] = "Notikumi",
+    ["Active Events"] = "Aktīvie notikumi",
+    
+    -- Prey system
+    ["Prey"] = "Medījums",
+    ["Prey Slot"] = "Medījuma slots",
+    ["Reroll"] = "Pārmest",
+    
+    -- Map features
+    ["Map"] = "Karte",
+    ["World Map"] = "Pasaules karte",
+    ["Minimap"] = "Minikarte",
+    ["Show Markers"] = "Rādīt marķierus",
+    
+    -- Chat channels
+    ["Trade Channel"] = "Tirdzniecības kanāls",
+    ["Help Channel"] = "Palīdzības kanāls",
+    ["World Chat"] = "Pasaules čats",
+    
+    -- Guild
+    ["Guild"] = "Ģilde",
+    ["Guild Name"] = "Ģildes nosaukums",
+    ["Guild Members"] = "Ģildes biedri",
+    ["Invite to Guild"] = "Uzaicināt ģildē",
+    ["Leave Guild"] = "Pamest ģildi",
+    
+    -- Format strings
+    ["Next level in %s"] = "Nākamais līmenis pēc %s",
+    ["Current level: %d"] = "Pašreizējais līmenis: %d",
+    ["%s has logged in"] = "%s pieteicās",
+    ["%s has logged out"] = "%s atteicās",
   }
 }
 

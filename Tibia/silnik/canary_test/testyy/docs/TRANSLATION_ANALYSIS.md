@@ -252,3 +252,6 @@ end
 | 2025-12-05 | Ukrainian (uk) translations expanded: 400 → 920+ entries |
 | 2025-12-05 | Italian (it) translations expanded: 568 → 850+ entries |
 | 2025-12-05 | German (de) translations expanded: 717 → 900+ entries |
+| 2025-12-05 | Turkish (tr) translations expanded: 566 → 850+ entries |
+| 2025-12-05 | Dutch (nl) translations expanded: 566 → 850+ entries |
+| 2025-12-05 | Chinese (zh) translations expanded: 566 → 850+ entries |

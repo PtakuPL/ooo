@@ -135,22 +135,30 @@ endif()
 
 ---
 
-### 3. Docker Build - Dockerfile Path
+### 3. Docker Build - Missing Python3
 
 **Problem:**  
-Docker build cannot find Dockerfile at expected path.
-
-**Root Cause:**  
-Workflow file references incorrect Dockerfile location.
-
-**Solution:**  
-Update `build-docker.yml` to use correct path:
-```yaml
-context: ./Tibia/silnik/canary_test/testyy
-file: ./Tibia/silnik/canary_test/testyy/Dockerfile
+```
+CMake Error: Could not find python3. Please install it via your package manager:
+    sudo apt-get install python3
 ```
 
-**Status:** 🔧 Needs Fix
+**Root Cause:**  
+vcpkg-tool-meson requires python3 which was not installed in the Docker image.
+
+**Solution:**  
+Added `python3` and `python3-pip` to the Dockerfile's apt-get install:
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git cmake curl zip unzip tar automake ca-certificates build-essential \
+    libglew-dev libx11-dev autoconf libtool pkg-config tzdata libssl3 \
+    python3 python3-pip \
+    && dpkg-reconfigure --frontend noninteractive tzdata \
+    && apt-get clean && apt-get autoclean
+```
+
+**Status:** ✅ Fixed in PR #XX
 
 ---
 
@@ -187,22 +195,21 @@ Missing `SONAR_TOKEN` secret or incorrect project configuration.
 
 ---
 
-### 6. Windows CMake - vcpkg Triplet
+### 6. Windows CMake - Path Issues
 
 **Problem:**  
-vcpkg cannot install dependencies with specified triplet.
+Workflow file references incorrect paths (`src/**` instead of `Tibia/silnik/canary_test/testyy/src/**`).
 
 **Root Cause:**  
-Incorrect vcpkg triplet specification or missing custom triplet.
+Original workflow was designed for a different repository structure.
 
 **Solution:**  
-Update workflow to use correct triplet:
-```yaml
-- name: Install vcpkg dependencies
-  run: vcpkg install --triplet x64-windows-static
-```
+Updated `build-windows-cmake.yml`:
+1. Fixed path filters for pull_request/push triggers
+2. Added `working-directory` to job defaults
+3. Updated artifact paths
 
-**Status:** 🔧 Needs Fix
+**Status:** ✅ Fixed in PR #XX
 
 ---
 

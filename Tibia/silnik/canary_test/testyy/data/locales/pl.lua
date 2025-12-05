@@ -518,14 +518,189 @@ locale = {
 
 modules.client_locales.installLocale(locale)
 
--- Merge the following into data/locales/pl.lua -> locale.translation table
+-- Additional translations merged at runtime
 local add = {
+  -- UI and Interface
   ["Journey Onwards"] = "Ruszaj w podróż",
   ["Email:"] = "E‑mail:",
   ["Acc Name:"] = "Nazwa konta:",
   ["Remember Email:"] = "Zapamiętaj e‑mail:",
-  -- Ensure consistency with existing key:
-  ["Remember password:"] = "Zapamiętaj hasło:"
+  ["Remember password:"] = "Zapamiętaj hasło:",
+  
+  -- New features
+  ["Add hotkey preset"] = "Dodaj zestaw skrótów",
+  ["Add new group"] = "Dodaj nową grupę",
+  ["Copy hotkey preset"] = "Kopiuj zestaw skrótów",
+  ["Rename hotkey preset"] = "Zmień nazwę zestawu skrótów",
+  ["Enter a name for the new preset:"] = "Wprowadź nazwę nowego zestawu:",
+  ["Enter a name for the preset:"] = "Wprowadź nazwę zestawu:",
+  ["Do you really want to delete the hotkey preset %s?"] = "Czy na pewno chcesz usunąć zestaw skrótów %s?",
+  ["Current hotkey to change: %s"] = "Aktualny skrót do zmiany: %s",
+  ["Current hotkey to change: none"] = "Aktualny skrót do zmiany: brak",
+  ["Edit Primary Key for \\"] = "Edytuj główny klawisz dla \\",
+  ["Edit Secondary Key for \\"] = "Edytuj dodatkowy klawisz dla \\",
+  ["Edit group %s"] = "Edytuj grupę %s",
+  ["Remove group %s"] = "Usuń grupę %s",
+  ["Hide groups"] = "Ukryj grupy",
+  ["Show groups"] = "Pokaż grupy",
+  ["Maximum of User-Created Groups Reached"] = "Osiągnięto maksymalną liczbę grup użytkownika",
+  
+  -- Cyclopedia and Bestiary
+  ["Cyclopedia"] = "Cyklopedia",
+  ["Bestiary Tracker"] = "Śledzenie Bestiariusza",
+  ["Bosstiary Tracker"] = "Śledzenie Bossiariusza",
+  ["Imbuement Tracker"] = "Śledzenie Nasycenia",
+  ["Prey Tracker"] = "Śledzenie Łowów",
+  ["Prey Dialog"] = "Okno Łowów",
+  ["Select monster"] = "Wybierz potwora",
+  ["Select monster to proceed."] = "Wybierz potwora, aby kontynuować.",
+  
+  -- Charms
+  ["Confirm Charm Removal"] = "Potwierdź usunięcie uroku",
+  ["Confirm Selected Charm"] = "Potwierdź wybrany urok",
+  ["Confirm Unlocking of Charm"] = "Potwierdź odblokowanie uroku",
+  ["Do you want to remove the Charm %s from this creature? This will cost you %s gold pieces."] = "Czy chcesz usunąć urok %s z tego stworzenia? Będzie to kosztować %s sztuk złota.",
+  ["Do you want to use the Charm %s for this creature?"] = "Czy chcesz użyć uroku %s dla tego stworzenia?",
+  
+  -- Rarity
+  ["Common"] = "Pospolity",
+  ["Uncommon"] = "Niepospolity",
+  ["Rare"] = "Rzadki",
+  ["Semi-Rare"] = "Półrzadki",
+  ["Very Rare"] = "Bardzo rzadki",
+  
+  -- House system
+  ["Confirm House Action"] = "Potwierdź akcję związaną z domem",
+  ["Do you really want to keep your house "] = "Czy na pewno chcesz zatrzymać swój dom ",
+  ["Do you really want to move out of the house "] = "Czy na pewno chcesz wyprowadzić się z domu ",
+  ["You have sucessfully accepted the transfer."] = "Pomyślnie zaakceptowałeś transfer.",
+  ["You have sucessfully iniated your move out."] = "Pomyślnie rozpocząłeś wyprowadzkę.",
+  ["You have sucessfully initiated the transfer of your house."] = "Pomyślnie rozpocząłeś transfer domu.",
+  
+  -- Imbuing
+  ["Confirm Imbuing Attempt"] = "Potwierdź próbę nasycenia",
+  ["Confirm Clearing"] = "Potwierdź czyszczenie",
+  ["Confirmation of Purchase"] = "Potwierdzenie zakupu",
+  
+  -- UI elements
+  ["Chat Off"] = "Czat wyłączony",
+  ["Chat On"] = "Czat włączony",
+  ["Toggle WASD chat mode"] = "Przełącz tryb czatu WASD",
+  ["Toggle chase mode"] = "Przełącz tryb pogoni",
+  ["Local Chat"] = "Czat lokalny",
+  ["Close Read-Only Tab"] = "Zamknij kartę tylko do odczytu",
+  ["Close read-only"] = "Zamknij tylko do odczytu",
+  ["Open read-only"] = "Otwórz tylko do odczytu",
+  ["Debug Info"] = "Informacje debugowania",
+  ["Top"] = "Góra",
+  ["Bottom"] = "Dół",
+  ["Parallel"] = "Równolegle",
+  ["Compact"] = "Kompaktowy",
+  ["Large"] = "Duży",
+  
+  -- Graphics and effects
+  ["Animated Message Scale: %sx"] = "Skala animowanych wiadomości: %sx",
+  ["Opacity"] = "Przezroczystość",
+  ["Opacity: %s"] = "Przezroczystość: %s",
+  ["Opacity Effect: %s%%"] = "Efekt przezroczystości: %s%%",
+  ["Distance"] = "Odległość",
+  ["Distance: %s"] = "Odległość: %s",
+  
+  -- VIP and status
+  ["Hide"] = "Ukryj",
+  ["Show"] = "Pokaż",
+  ["Show "] = "Pokaż ",
+  ["Hide Customisable Status Bars"] = "Ukryj konfigurowalne paski stanu",
+  ["Show health"] = "Pokaż zdrowie",
+  ["Show inventory"] = "Pokaż ekwipunek",
+  ["Show miniMap"] = "Pokaż minimapę",
+  
+  -- Battle and attack
+  ["Attack next creature in battle list"] = "Atakuj następne stworzenie na liście walki",
+  ["Attack previous creature in battle list"] = "Atakuj poprzednie stworzenie na liście walki",
+  ["Loot corpse"] = "Zbierz łup ze zwłok",
+  
+  -- Store and rewards
+  ["Store shop"] = "Sklep",
+  ["Rewards"] = "Nagrody",
+  ["Open Boss Slots dialog"] = "Otwórz okno slotów bossów",
+  ["Open Bosstiary dialog"] = "Otwórz okno Bossiariusza",
+  ["Open QuestLog Tracker"] = "Otwórz śledzenie dziennika misji",
+  ["Open rewardWall"] = "Otwórz ścianę nagród",
+  ["Highscores"] = "Najlepsze wyniki",
+  
+  -- Updater
+  ["Downloading:\n%s"] = "Pobieranie:\n%s",
+  ["Downloading (%i retry):\n%s"] = "Pobieranie (próba %i):\n%s",
+  ["Updater Error"] = "Błąd aktualizatora",
+  ["Updating %i files"] = "Aktualizowanie %i plików",
+  ["Updating client (may take few seconds)"] = "Aktualizowanie klienta (może potrwać kilka sekund)",
+  ["Timeout"] = "Przekroczono limit czasu",
+  
+  -- Login errors
+  ["Connecting to login server...\nServer: [%s]"] = "Łączenie z serwerem logowania...\nSerwer: [%s]",
+  ["ERROR , try adding \n- ip/login.php \n- Enable HTTP login"] = "BŁĄD, spróbuj dodać \n- ip/login.php \n- Włącz logowanie HTTP",
+  
+  -- Loot system
+  ["Invalid Loot Container"] = "Nieprawidłowy pojemnik na łupy",
+  ["Manage Loot Containers"] = "Zarządzaj pojemnikami na łupy",
+  
+  -- Tasks
+  ["Tasks"] = "Zadania",
+  ["Do you really want to abort this task?"] = "Czy na pewno chcesz przerwać to zadanie?",
+  ["Summary"] = "Podsumowanie",
+  
+  -- Account
+  ["Manage Account"] = "Zarządzaj kontem",
+  ["Manage control buttons"] = "Zarządzaj przyciskami sterowania",
+  ["Gratis Premium Account"] = "Darmowe konto premium",
+  ["Free"] = "Darmowe",
+  
+  -- Time and experience
+  ["You have %s hours and %s minutes left"] = "Pozostało Ci %s godzin i %s minut",
+  ["If you are premium player, you will gain 50%% more experience"] = "Jeśli jesteś graczem premium, zyskasz 50%% więcej doświadczenia",
+  ["Now you will gain 50%% more experience"] = "Teraz zyskasz 50%% więcej doświadczenia",
+  ["infinite bonus"] = "nieskończony bonus",
+  
+  -- Coins
+  ["Transferable Tibia Coins: "] = "Przekazywalne Tibia Coins: ",
+  ["Transferable Task points: "] = "Przekazywalne punkty zadań: ",
+  
+  -- Items
+  ["Wrap"] = "Zawiń",
+  ["Unwrap"] = "Rozwiń",
+  
+  -- Status effects
+  ["(Frozen)"] = "(Zamrożony)",
+  [" (Suspended)"] = " (Zawieszony)",
+  ["You are Agony"] = "Jesteś w agonii",
+  ["You are Bleeding"] = "Krwawisz",
+  ["You are Feared"] = "Jesteś przerażony",
+  ["You are GoshnarTaint"] = "Jesteś skażony przez Goshnar'a",
+  ["You are GreaterHex"] = "Jesteś pod większym urokiem",
+  ["You are IntenseHex"] = "Jesteś pod intensywnym urokiem",
+  ["You are LesserHex"] = "Jesteś pod mniejszym urokiem",
+  ["You are NewManaShield"] = "Jesteś chroniony nową tarczą many",
+  ["You are Rooted"] = "Jesteś zakorzeniony",
+  ["You are inspecting"] = "Badasz",
+  
+  -- Misc
+  ["You read the following"] = "Przeczytałeś następującą treść",
+  ["ok"] = "ok",
+  ["remove"] = "usuń",
+  ["%s of experience per hour"] = "%s doświadczenia na godzinę",
+  ["%s: "] = "%s: ",
+  [", written by \n%s\n"] = ", napisane przez \n%s\n",
+  [", written on \n%s.\n"] = ", napisane dnia \n%s.\n",
+  ["You have %s percent to go "] = "Brakuje Ci %s procent ",
+  ["You don"] = "Nie",
+  ["You don\\"] = "Nie\\",
+  ["You gain only 50%% experience and you don"] = "Zyskujesz tylko 50%% doświadczenia i nie",
+  ["You gain only 50%% experience and you don\\"] = "Zyskujesz tylko 50%% doświadczenia i nie\\",
+  ["Join %s\\"] = "Dołącz do %s\\",
+  ["Revoke %s\\"] = "Odwołaj %s\\",
+  ["Unable to load dat file, please place a valid dat in \\"] = "Nie można załadować pliku dat, umieść prawidłowy plik dat w \\",
+  ["Unable to load spr file, please place a valid spr in \\"] = "Nie można załadować pliku spr, umieść prawidłowy plik spr w \\"
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

@@ -184,7 +184,7 @@ INSERT INTO `languages` (`code`, `name`, `native_name`, `is_rtl`, `is_active`) V
 ('tr', 'Turkish', 'Türkçe', 0, 1),
 -- Caucasus
 ('ka', 'Georgian', 'ქართული', 0, 1),
-('hy', 'Armenian', 'Հայերdelays', 0, 1),
+('hy', 'Armenian', 'Հdelays', 0, 1),
 ('az', 'Azerbaijani', 'Azərbaycan', 0, 1),
 -- Central Asian
 ('kk', 'Kazakh', 'Қазақ', 0, 1),

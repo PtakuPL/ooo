@@ -7,6 +7,10 @@ on:
   push:
     branches: [ master ]
 
+permissions:
+  contents: read
+  pull-requests: read
+
 env:
   CMAKE_BUILD_PARALLEL_LEVEL: 4
   MAKEFLAGS: '-j 4'

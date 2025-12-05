@@ -101,7 +101,7 @@ else()
 endif()
 ```
 
-**Status:** ✅ Fixed in PR #XX
+**Status:** ✅ Fixed in PR #29
 
 ---
 
@@ -131,7 +131,7 @@ endif()
 
 **Note:** This is NOT a memory issue - GitHub Actions Windows runners have 7GB RAM which is sufficient.
 
-**Status:** ✅ Fixed in PR #XX
+**Status:** ✅ Fixed in PR #29
 
 ---
 
@@ -158,7 +158,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && apt-get clean && apt-get autoclean
 ```
 
-**Status:** ✅ Fixed in PR #XX
+**Status:** ✅ Fixed in PR #29
 
 ---
 
@@ -186,7 +186,7 @@ Android cross-compilation requires the host protoc compiler but tries to find An
       ...
 ```
 
-**Status:** ✅ Fixed in PR #XX
+**Status:** ✅ Fixed in PR #29
 
 ---
 
@@ -220,7 +220,7 @@ Updated `build-windows-cmake.yml`:
 2. Added `working-directory` to job defaults
 3. Updated artifact paths
 
-**Status:** ✅ Fixed in PR #XX
+**Status:** ✅ Fixed in PR #29
 
 ---
 

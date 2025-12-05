@@ -6,11 +6,11 @@ on:
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
       - "Tibia/silnik/canary_test/testyy/src/**"
-      - ".github/workflows/build-emscripten.yml"
+      - ".github/workflows/build-browser.yml"
   push:
     paths:
       - "Tibia/silnik/canary_test/testyy/src/**"
-      - ".github/workflows/build-emscripten.yml"
+      - ".github/workflows/build-browser.yml"
     branches:
       - master
 
@@ -52,13 +52,14 @@ jobs:
         with:
           version: "3.1.73"
 
-      - name: Get vcpkg commit ID
+      - name: Get vcpkg commit ID and compute hash
         id: vcpkg-step
         run: |
           vcpkgCommitId=$(grep '.builtin-baseline' vcpkg.json | awk -F: '{print $2}' | tr -d '," ')
           echo "vcpkgGitCommitId=$vcpkgCommitId" >> $GITHUB_OUTPUT
+          echo "hash=$(sha256sum vcpkg.json | cut -d' ' -f1)" >> $GITHUB_OUTPUT
 
-      - name: Cache full vcpkg artifacts
+      - name: Cache vcpkg artifacts
         uses: actions/cache@v4
         with:
           path: |
@@ -66,9 +67,18 @@ jobs:
             ${{ github.workspace }}/vcpkg/installed
             ${{ github.workspace }}/vcpkg/buildtrees
             ${{ github.workspace }}/vcpkg/downloads
-          key: vcpkg-${{ matrix.buildtype }}-${{ steps.hash.outputs.hash }}
+          key: vcpkg-${{ matrix.buildtype }}-${{ steps.vcpkg-step.outputs.hash }}
           restore-keys: |
             vcpkg-${{ matrix.buildtype }}-
+
+      - name: Cache build directory
+        uses: actions/cache@v4
+        with:
+          path: |
+            Tibia/silnik/canary_test/testyy/build-${{ matrix.buildtype }}
+          key: build-${{ matrix.buildtype }}-${{ hashFiles('Tibia/silnik/canary_test/testyy/src/**') }}
+          restore-keys: |
+            build-${{ matrix.buildtype }}-
 
       - name: Setup vcpkg
         uses: lukka/run-vcpkg@v11
@@ -77,10 +87,6 @@ jobs:
 
       - name: Install CMake and Ninja
         uses: lukka/get-cmake@v3.31.6
-
-      - name: Compute vcpkg hash
-        id: hash
-        run: echo "hash=$(sha256sum vcpkg.json | cut -d' ' -f1)" >> $GITHUB_OUTPUT
 
       - name: Configure CMake
         run: |
@@ -105,5 +111,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: otclient-${{ matrix.buildtype }}-${{ github.sha }}
-          path: ${{ github.workspace }}/build-${{ matrix.buildtype }}/bin/
+          path: ${{ github.workspace }}/Tibia/silnik/canary_test/testyy/build-${{ matrix.buildtype }}/bin/
           retention-days: 30

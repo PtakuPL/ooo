@@ -232,6 +232,132 @@ locale = {
     ["minutes"] = "minuto",
     ["hours"] = "oras",
     ["days"] = "araw",
+    ["Day"] = "Araw",
+    ["Night"] = "Gabi",
+    ["Hour"] = "Oras",
+    ["Minute"] = "Minuto",
+    ["Second"] = "Segundo",
+    
+    -- Connection messages
+    ["Connection error"] = "Error sa koneksyon",
+    ["Connection refused"] = "Tinanggihan ang koneksyon",
+    ["Connection timed out"] = "Nag-time out ang koneksyon",
+    ["Unable to connect"] = "Hindi makakonekta",
+    ["Lost connection"] = "Nawala ang koneksyon",
+    
+    -- Display settings
+    ["Show creature names"] = "Ipakita ang pangalan ng nilalang",
+    ["Show player names"] = "Ipakita ang pangalan ng manlalaro",
+    ["Show health bar"] = "Ipakita ang health bar",
+    ["Show mana bar"] = "Ipakita ang mana bar",
+    
+    -- Combat stats
+    ["Critical Hit Chance"] = "Pagkakataong mag-critical hit",
+    ["Critical Hit Damage"] = "Pinsala ng critical hit",
+    ["Life Leech"] = "Pagnanakaw ng buhay",
+    ["Mana Leech"] = "Pagnanakaw ng mana",
+    
+    -- Market extended
+    ["Total Price"] = "Kabuuang presyo",
+    ["Piece Price"] = "Presyo bawat piraso",
+    ["Seller"] = "Nagbebenta",
+    ["Buyer"] = "Bumibili",
+    ["Create Offer"] = "Gumawa ng alok",
+    ["Cancel Offer"] = "Kanselahin ang alok",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Token ng authenticator",
+    ["Two-Factor Authentication"] = "Two-factor authentication",
+    
+    -- Inventory slots
+    ["Helmet"] = "Helmet",
+    ["Amulet"] = "Amulet",
+    ["Backpack"] = "Backpack",
+    ["Armor"] = "Armadura",
+    ["Right Hand"] = "Kanang kamay",
+    ["Left Hand"] = "Kaliwang kamay",
+    ["Legs"] = "Mga binti",
+    ["Boots"] = "Mga bota",
+    ["Ring"] = "Singsing",
+    ["Ammo"] = "Bala",
+    
+    -- Elements
+    ["Fire"] = "Apoy",
+    ["Ice"] = "Yelo",
+    ["Earth"] = "Lupa",
+    ["Energy"] = "Enerhiya",
+    ["Holy"] = "Banal",
+    ["Death"] = "Kamatayan",
+    ["Physical"] = "Pisikal",
+    
+    -- House extended
+    ["House Transfer"] = "Paglipat ng bahay",
+    ["House Auction"] = "Subasta ng bahay",
+    ["Guest List"] = "Listahan ng bisita",
+    
+    -- Screenshots
+    ["Screenshot"] = "Screenshot",
+    ["Take Screenshot"] = "Kumuha ng screenshot",
+    ["Screenshot saved"] = "Na-save ang screenshot",
+    
+    -- Audio settings
+    ["Master Volume"] = "Master volume",
+    ["Music Volume"] = "Volume ng musika",
+    ["Sound Volume"] = "Volume ng tunog",
+    ["Mute"] = "I-mute",
+    
+    -- Additional UI
+    ["Apply"] = "Ilapat",
+    ["Reset"] = "I-reset",
+    ["Confirm"] = "Kumpirmahin",
+    ["Continue"] = "Magpatuloy",
+    ["Back"] = "Bumalik",
+    ["Next"] = "Susunod",
+    ["Previous"] = "Nakaraang",
+    ["Finish"] = "Tapusin",
+    ["Skip"] = "Laktawan",
+    ["Retry"] = "Subukan muli",
+    ["Select All"] = "Piliin lahat",
+    
+    -- Cyclopedia extended
+    ["Achievements"] = "Mga nakamit",
+    ["Titles"] = "Mga titulo",
+    ["Spells"] = "Mga spell",
+    ["Items"] = "Mga item",
+    ["Monsters"] = "Mga monster",
+    ["Bosses"] = "Mga boss",
+    
+    -- Loot system
+    ["Show Loot"] = "Ipakita ang loot",
+    
+    -- Events
+    ["Event"] = "Kaganapan",
+    ["Events"] = "Mga kaganapan",
+    ["Active Events"] = "Aktibong kaganapan",
+    
+    -- Map features
+    ["Map"] = "Mapa",
+    ["World Map"] = "Mapa ng mundo",
+    ["Minimap"] = "Minimapa",
+    ["Show Markers"] = "Ipakita ang mga marker",
+    
+    -- Chat channels
+    ["Trade Channel"] = "Channel ng kalakalan",
+    ["Help Channel"] = "Channel ng tulong",
+    ["World Chat"] = "World chat",
+    
+    -- Guild
+    ["Guild"] = "Guild",
+    ["Guild Name"] = "Pangalan ng guild",
+    ["Guild Members"] = "Mga miyembro ng guild",
+    ["Invite to Guild"] = "Imbitahin sa guild",
+    ["Leave Guild"] = "Umalis sa guild",
+    
+    -- Format strings
+    ["Next level in %s"] = "Susunod na level sa %s",
+    ["Current level: %d"] = "Kasalukuyang level: %d",
+    ["%s has logged in"] = "Nag-log in si %s",
+    ["%s has logged out"] = "Nag-log out si %s",
   }
 }
 

@@ -69,6 +69,11 @@ jobs:
         with:
           cmakeVersion: '~3.27.0'
 
+      - name: Install protobuf compiler
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y protobuf-compiler libprotobuf-dev
+
       - name: Generate compilation database (Android arm64-v8a)
         env:
           ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
@@ -85,6 +90,7 @@ jobs:
                 -DOTC_ENABLE_TTF=OFF \
                 -DOTC_ENABLE_HARFBUZZ=OFF \
                 -DOTC_ENABLE_FRIBIDI=OFF \
+                -DProtobuf_PROTOC_EXECUTABLE=$(which protoc) \
                 -S . -B build-android
 
       - name: Run PR sonar-scanner

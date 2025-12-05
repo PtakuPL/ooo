@@ -162,20 +162,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ---
 
-### 4. Android Build - CMake Toolchain
+### 4. Android Build - CMake Toolchain / Protobuf
 
 **Problem:**  
-CMake cannot find Android NDK toolchain.
+CMake cannot find Protobuf libraries during Android cross-compilation.
 
 **Root Cause:**  
-Missing or incorrectly configured Android NDK path in workflow.
+Android cross-compilation requires the host protoc compiler but tries to find Android-specific libraries.
 
 **Solution:**  
-1. Ensure `ANDROID_NDK_HOME` is set correctly
-2. Update CMake toolchain file path
-3. Configure proper API level
+1. Install protobuf compiler on the host system
+2. Pass the host protoc path to CMake:
+```yaml
+- name: Install protobuf compiler
+  run: |
+    sudo apt-get update
+    sudo apt-get install -y protobuf-compiler libprotobuf-dev
 
-**Status:** 🔧 Needs Fix
+- name: Configure CMake
+  run: |
+    cmake ... \
+      -DProtobuf_PROTOC_EXECUTABLE=$(which protoc) \
+      ...
+```
+
+**Status:** ✅ Fixed in PR #XX
 
 ---
 

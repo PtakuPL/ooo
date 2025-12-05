@@ -114,19 +114,19 @@ fatal error C1001: Internal compiler error.
 ```
 
 **Root Cause:**  
-MSVC compiler crashes on complex template code in `src/framework/stdext/cast.h` when using `/O2` optimization level.
+ASAN (`/fsanitize=address`) combined with complex template code in `src/framework/stdext/cast.h` triggers MSVC compiler crash. ASAN is not fully supported by MSVC and causes ICE on complex templates.
 
 **Solution:**  
-Added workaround in `src/CMakeLists.txt` to use `/O1` optimization for MSVC:
+1. Disabled ASAN in Windows debug presets in CMakePresets.json
+2. Added `/O1` optimization workaround in `src/CMakeLists.txt`
 
-```cmake
-if(MSVC)
-    # Workaround for MSVC C1001 Internal Compiler Error on cast.h templates
-    target_compile_options(${PROJECT_NAME} PRIVATE
-      $<$<CONFIG:Release>:/O1>
-      $<$<CONFIG:RelWithDebInfo>:/O1>
-    )
-endif()
+```json
+// CMakePresets.json
+"windows-debug": {
+  "cacheVariables": {
+    "ASAN_ENABLED": "OFF"  // Changed from ON
+  }
+}
 ```
 
 **Note:** This is NOT a memory issue - GitHub Actions Windows runners have 7GB RAM which is sufficient.
@@ -190,19 +190,22 @@ Android cross-compilation requires the host protoc compiler but tries to find An
 
 ---
 
-### 5. SonarCloud Linux - Token Issues
+### 5. SonarCloud Linux - Automatic Analysis Conflict
 
 **Problem:**  
-SonarCloud analysis fails on Linux.
+SonarCloud analysis fails with "You are running CI analysis while Automatic Analysis is enabled".
 
 **Root Cause:**  
-Missing `SONAR_TOKEN` secret or incorrect project configuration.
+SonarCloud has both automatic analysis AND manual CI scanner running simultaneously, which conflicts.
 
 **Solution:**  
-1. Verify `SONAR_TOKEN` is set in repository secrets
-2. Check `sonar-project.properties` configuration
+**Requires manual action by repository owner:**
+1. Log into SonarCloud (https://sonarcloud.io)
+2. Go to Project Settings → Administration → Analysis Method
+3. Toggle OFF "Automatic Analysis"
+4. Save and re-run the workflow
 
-**Status:** 🔧 Needs Investigation
+**Status:** 🔧 Needs Manual Configuration by Owner
 
 ---
 

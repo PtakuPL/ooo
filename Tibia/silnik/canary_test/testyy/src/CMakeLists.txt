@@ -682,7 +682,11 @@ endif()
 
 
 target_sources(${PROJECT_NAME} PRIVATE ${SOURCE_FILES})
-target_link_options(${PROJECT_NAME} PUBLIC -flto=auto)
+
+# LTO (Link-Time Optimization) - Only for GCC/Clang, MSVC uses /LTCG which is handled separately
+if(NOT MSVC)
+  target_link_options(${PROJECT_NAME} PUBLIC -flto=auto)
+endif()
 
 # *****************************************************************************
 # Includes and librarys
@@ -749,9 +753,6 @@ if(MSVC)
           ${OPENGL_LIBRARIES}
           ${DirectX_LIBRARY}
           ${DirectX_LIBRARIES}
-          ${OGG_LIBRARY}
-          ${VORBISFILE_LIBRARY}
-          ${VORBIS_LIBRARY}
           ${GMP_LIBRARY}
           ${OPENSSL_LIBRARIES}
           ${DBGHELP_LIBRARY}
@@ -766,7 +767,10 @@ if(MSVC)
           LibLZMA::LibLZMA
           winmm.lib
           pugixml::pugixml
-          fmt::fmt-header-only
+          ${FMT_TARGET}
+          Ogg::ogg
+          Vorbis::vorbis
+          Vorbis::vorbisfile
   )
 elseif(ANDROID)
   target_include_directories(${PROJECT_NAME}
@@ -793,8 +797,8 @@ elseif(ANDROID)
           ${NLOHMANN_JSON_LIBRARY}
           ${EGL_LIBRARY}
           ${OGG_LIBRARY}
-          ${VORBISFILE_LIBRARY}
           ${VORBIS_LIBRARY}
+          ${VORBISFILE_LIBRARY}
           ${GMP_LIBRARY}
           ${OpenAL_LIBRARY}
           ${OPENSSL_LIBRARIES}
@@ -845,8 +849,8 @@ elseif(WASM)
           ${DirectX_LIBRARY}
           ${DirectX_LIBRARIES}
           ${OGG_LIBRARY}
-          ${VORBISFILE_LIBRARY}
           ${VORBIS_LIBRARY}
+          ${VORBISFILE_LIBRARY}
           ${GMP_LIBRARY}
           ${STDUUID}
           ${FOUNDATION}
@@ -930,8 +934,8 @@ else() # Linux
           ${DirectX_LIBRARY}
           ${DirectX_LIBRARIES}
           ${OGG_LIBRARY}
-          ${VORBISFILE_LIBRARY}
           ${VORBIS_LIBRARY}
+          ${VORBISFILE_LIBRARY}
           ${GMP_LIBRARY}
           ${STDUUID}
           ${FOUNDATION}

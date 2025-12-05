@@ -19,6 +19,23 @@ endif()
 set(VCPKG_FEATURE_FLAGS "versions")
 set(VCPKG_BUILD_TYPE "release")
 
+# For static triplet (x64-windows-static), use static runtime library (/MT)
+# This ensures consistency between vcpkg libraries and project code
+# Must be set BEFORE project() for it to take effect on MSVC
+# Check for static triplet by name pattern (works before project() call)
+set(_vcpkg_triplet_to_check "${VCPKG_TARGET_TRIPLET}")
+if(NOT _vcpkg_triplet_to_check AND DEFINED ENV{VCPKG_DEFAULT_TRIPLET})
+    set(_vcpkg_triplet_to_check "$ENV{VCPKG_DEFAULT_TRIPLET}")
+endif()
+
+if(_vcpkg_triplet_to_check MATCHES ".*-static$")
+    # Set policy CMP0091 to NEW to enable CMAKE_MSVC_RUNTIME_LIBRARY
+    cmake_policy(SET CMP0091 NEW)
+    set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>" CACHE STRING "MSVC runtime library")
+endif()
+
+unset(_vcpkg_triplet_to_check)
+
 if (VCPKG_TARGET_ANDROID)
     include("cmake/vcpkg_android.cmake")
 	set(Android_INCLUDES ${Android_INCLUDES} ${CMAKE_SOURCE_DIR}/android/app/libs/include)

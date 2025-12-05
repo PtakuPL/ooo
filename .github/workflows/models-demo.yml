@@ -1,23 +1,23 @@
-nazwa: Użyj modeli GitHub
+name: Use GitHub Models
 
-włącz: [naciśnij]
+on: [push]
 
-uprawnienia:
-  modele: czytaj
+permissions:
+  models: read
 
-prace:
-  model wywołania:
-    działa na: ubuntu-latest
-    kroki:
-      - nazwa: Model sztucznej inteligencji wywoławczej
-        środowisko:
-          GITHUB_TOKEN: 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
-        biegnij: |
-          curl "https://models.github.ai/inference/chat/completions" \
-             -H "Typ zawartości: aplikacja/json" \
-             -H "Autoryzacja: Nośnik $GITHUB_TOKEN" \
-             -D '{
-              „wiadomości”: [
+jobs:
+  call-model:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call AI model
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -f --show-error "https://models.github.ai/inference/chat/completions" \
+             -H "Content-Type: application/json" \
+             -H "Authorization: Bearer $GITHUB_TOKEN" \
+             -d '{
+              "messages": [
                   {
                      "role": "user",
                      "content": "Explain the concept of recursion."

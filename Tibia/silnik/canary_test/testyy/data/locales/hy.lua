@@ -1,0 +1,364 @@
+locale = {
+  name = "hy",
+  charset = "utf-8",
+  languageName = "Հայերdelays",
+
+  formatNumbers = true,
+  decimalSeperator = ',',
+  thousandsSeperator = ' ',
+
+  translation = {
+    ["Accept"] = " Delays",
+    ["Account name"] = "Հdelays անdelays",
+    ["Account Status"] = "Հdelayscounting",
+    ["Action"] = "Գdelays",
+    ["Add"] = " Delays",
+    ["Add new server"] = " Delays delays սdelays",
+    ["Add new VIP"] = "Avelavors nay VIP",
+    ["Add to VIP list"] = "Avelavors VIP tsrankin",
+    ["All"] = "Bolory",
+    ["Amount"] = "K'anaky",
+    ["Attack"] = "Gra",
+    ["Audio"] = "Dzayn",
+    ["Author"] = "Heghіnak",
+    ["Balance"] = "Balansy",
+    ["Battle"] = "Chamchar",
+    ["Browse"] = "Ditak",
+    ["Buy"] = "Grnel",
+    ["Buy Now"] = "Grnel hima",
+    ["Cancel"] = "Chegark",
+    ["Capacity"] = "Untakutyun",
+    ["Center"] = "Kentr",
+    ["Change language"] = "Poxel lezun",
+    ["Channels"] = "Aluner",
+    ["Character List"] = "Kerparnery tsrank",
+    ["Close"] = "Pakel",
+    ["Console"] = "Konsol",
+    ["Copy"] = "Patchen",
+    ["Default"] = "Lichnik",
+    ["Description"] = "Nparkun",
+    ["Details"] = "Manramasnery",
+    ["Enter Game"] = "Mnul khagh",
+    ["Error"] = "Skhal",
+    ["Exit"] = "Elq",
+    ["Experience"] = "Pahardzutyun",
+    ["Find"] = "Gtnel",
+    ["Follow"] = "Heteevel",
+    ["Game"] = "Khagh",
+    ["Graphics"] = "Grafika",
+    ["Head"] = "Glukh",
+    ["Ignore"] = "Antessel",
+    ["Inventory"] = "Inventar",
+    ["Knight"] = "Aspazer",
+    ["Level"] = "Makardak",
+    ["Load"] = "Bernel",
+    ["Login"] = "Mnuly",
+    ["Logout"] = "Elqy",
+    ["Look"] = "Nayal",
+    ["Mana"] = "Mana",
+    ["Market"] = "Shuka",
+    ["Name"] = "Anun",
+    ["No"] = "Voch",
+    ["Ok"] = "Lav",
+    ["Open"] = "Batsvel",
+    ["Options"] = "Yntrankner",
+    ["Password"] = "Gaxtnabary",
+    ["Please wait"] = "Khndrumem spaseq",
+    ["Port"] = "Port",
+    ["Premium"] = "Premium",
+    ["Price"] = "Gin",
+    ["Refresh"] = "Taragel",
+    ["Remove"] = "Hanel",
+    ["Save"] = "Pahel",
+    ["Search"] = "Pntrel",
+    ["Select"] = "Yntrel",
+    ["Select your language"] = "Yntrec dzery lezun",
+    ["Sell"] = "Vacharq",
+    ["Send"] = "Urgarkel",
+    ["Server"] = "Server",
+    ["Server List"] = "Servernerit tsrank",
+    ["Skills"] = "Hmatutyunner",
+    ["Soul"] = "Hoghy",
+    ["Speed"] = "Araghutyun",
+    ["Statistics"] = "Vidjakan",
+    ["Trade"] = "Arevtur",
+    ["Type"] = "Tesakn",
+    ["Use"] = "Ogtagortsel",
+    ["Version"] = "Tarberak",
+    ["VIP List"] = "VIP tsrank",
+    ["Warning"] = "Zardararyun",
+    ["Website"] = "Kayq",
+    ["Weight"] = "K'ash",
+    ["Yes"] = "Ayo",
+    ["You are dead"] = "Duq mahacats eq",
+    ["You are dead."] = "Duq mahacats eq.",
+    ["Language"] = "Lezun",
+    ["Email"] = "El. pastat",
+    
+    -- Combat Skills
+    ["Fist Fighting"] = "Բdelays  payk",
+    ["Club Fighting"] = "Mak payk",
+    ["Sword Fighting"] = "Sur payk",
+    ["Axe Fighting"] = "Kacin payk",
+    ["Distance Fighting"] = "Herakavo payk",
+    ["Shielding"] = "Pashpanutyun",
+    ["Fishing"] = "Dzknors",
+    ["Magic Level"] = "Kaxardakan makardak",
+    
+    -- Game Interface
+    ["Health"] = "Aroxjutyun",
+    ["Health Info Window"] = "Aroxjutyan teghekutyan patuhan",
+    ["You are burning"] = "Duq ayrvum eq",
+    ["You are cursed"] = "Duq anecvats eq",
+    ["You are dazzled"] = "Duq kushatsvats eq",
+    ["You are drowning"] = "Duq kheghdum eq",
+    ["You are drunk"] = "Duq harben eq",
+    ["You are electrified"] = "Duq elekrizacvats eq",
+    ["You are freezing"] = "Duq sarrchum eq",
+    ["You are hasted"] = "Duq aragacvats eq",
+    ["You are hexed"] = "Duq kaxardvats eq",
+    ["You are hungry"] = "Duq kagh eq",
+    ["You are paralyzed"] = "Duq katvaets eq",
+    ["You are poisoned"] = "Duq tuxavorvats eq",
+    ["You are protected by a magic shield"] = "Duq pashpanvats eq kaxardakan vahan",
+    ["You are strengthened"] = "Duq zoracvats eq",
+    ["You are within a protection zone"] = "Duq pashpanutyun gonum eq",
+    ["You may not logout during a fight"] = "Chek karox elq payki jamanak",
+    ["You must enter a valid server address and port"] = "Petq e mutqel chambar server hascen ev port",
+    
+    -- Hotkey Management
+    ["Hotkeys"] = "Tak stexner",
+    ["Add Preset"] = "Avelacnel nakhnakan",
+    ["Copy Preset"] = "Patchen nakhnakan",
+    ["Rename Preset"] = "Veraanvanel nakhnakan",
+    ["Delete Preset"] = "Jnjel nakhnakan",
+    ["New preset name:"] = "Nor nakhnakan anun:",
+    ["Assign Object to Hotkey"] = "Havaqel ararka tak stexin",
+    ["Set Object"] = "Teghavrel ararka",
+    ["Clear Object"] = "Makel ararka",
+    ["Use on yourself"] = "Ogtagortsel qez vra",
+    ["Use on target"] = "Ogtagortsel npataki vra",
+    ["With crosshair"] = "Khachy nshan",
+    
+    -- Cyclopedia/Bestiary
+    ["Cyclopedia"] = "Cyclopedia",
+    ["Bestiary"] = "Bestiary",
+    ["Bosstiary"] = "Bosstiary",
+    ["Charm Points"] = "Hrashq miarner",
+    ["Monsters Killed"] = "Spanvats hrashkner",
+    ["Boss Points"] = "Boss miarner",
+    
+    -- Rarity Levels
+    ["Common"] = "Hasar",
+    ["Uncommon"] = "Vochy hasar",
+    ["Rare"] = "Harvadk",
+    ["Semi-Rare"] = "Kes harvadk",
+    ["Very Rare"] = "Shatt harvadk",
+    
+    -- House System
+    ["House"] = "Tun",
+    ["Invite"] = "Hraver",
+    ["Exclude"] = "Batsarjel",
+    ["Transfer"] = "Poxancel",
+    ["Guest List"] = "Hyureri cank",
+    ["Sub-Owner List"] = "Yenterk. teratsneri cank",
+    
+    -- Imbuing
+    ["Imbuing"] = "Imbuing",
+    ["Imbuements"] = "Imbuements",
+    ["Apply"] = "Kirel",
+    ["Slots"] = "Bujner",
+    
+    -- Store/Rewards
+    ["Store"] = "Khanun",
+    ["Rewards"] = "Mrcanner",
+    ["Daily Reward"] = "Ameanor mrcan",
+    ["Claim"] = "Havakel",
+    
+    -- Updater
+    ["Updater"] = "Taragol",
+    ["Checking for updates..."] = "Stugvum en taragolner...",
+    ["Downloading update..."] = "Nerkberel taragol...",
+    ["Update complete"] = "Taragoly lriv e",
+    ["No updates available"] = "Chka taragolner",
+    
+    -- Loot Management
+    ["Loot"] = "Havakvats",
+    ["Auto Loot"] = "Ink. havakvats",
+    ["Quick Loot"] = "Arag havakvats",
+    ["Loot Container"] = "Havakvats arku",
+    
+    -- Chat Modes
+    ["Say"] = "Asel",
+    ["Whisper"] = "Shpshel",
+    ["Yell"] = "Goroshel",
+    ["NPC"] = "NPC",
+    ["Private Message"] = "Anhat haghord",
+    
+    -- Party System
+    ["Party"] = "Khumb",
+    ["Create Party"] = "Steghcel khumb",
+    ["Join Party"] = "Mianal khumb",
+    ["Leave Party"] = "Thakel khumb",
+    ["Pass Leadership"] = "Poxancel gharavar",
+    
+    -- Reporting
+    ["Report"] = "Hashvetv",
+    ["Report Bug"] = "Hashvetv skhal",
+    ["Report Player"] = "Hashvetv khaghats",
+    ["Rule Violation"] = "Kanon khotum",
+    
+    -- Tasks
+    ["Tasks"] = "Araqelut",
+    ["Daily Tasks"] = "Ameanor araqelut",
+    ["Weekly Tasks"] = "Shabatakan araqelut",
+    ["Complete"] = "Lriv",
+    ["In Progress"] = "Ynthats",
+    
+    -- Directions
+    ["North"] = "Hyus",
+    ["South"] = "Harav",
+    ["East"] = "Arevelq",
+    ["West"] = "Arevmutq",
+    ["Northwest"] = "Hyus-arevmutq",
+    ["Northeast"] = "Hyus-arevelq",
+    ["Southwest"] = "Harav-arevmutq",
+    ["Southeast"] = "Harav-arevelq",
+    
+    -- Time
+    ["Today"] = "Aysor",
+    ["Yesterday"] = "Yerek",
+    ["seconds"] = "varkyan",
+    ["minutes"] = "rope",
+    ["hours"] = "jam",
+    ["days"] = "or",
+    ["Day"] = "Ор",
+    ["Night"] = "Գdelays",
+    ["Hour"] = "Jam",
+    ["Minute"] = "Rope",
+    ["Second"] = "Varkyan",
+    
+    -- Connection messages
+    ["Connection error"] = "Kapakcutyun sxal",
+    ["Connection refused"] = "Kapakcutyuny merjvec",
+    ["Connection timed out"] = "Kapakcutyuny jamaketc",
+    ["Unable to connect"] = "Hnaravor che kapakcvel",
+    ["Lost connection"] = "Kapakcutyuny korcvec",
+    
+    -- Display settings
+    ["Show creature names"] = "Cuyc tal araracneri anuner",
+    ["Show player names"] = "Cuyc tal xaxacoxneri anuner",
+    ["Show health bar"] = "Cuyc tal aroghjutyan shertiv",
+    ["Show mana bar"] = "Cuyc tal manayi shertiv",
+    
+    -- Combat stats
+    ["Critical Hit Chance"] = "Kritik harvacy shanc",
+    ["Critical Hit Damage"] = "Kritik harvaci vtang",
+    ["Life Leech"] = "Kyankqi goghutyun",
+    ["Mana Leech"] = "Manayi goghutyun",
+    
+    -- Market extended
+    ["Total Price"] = "Yndhanur gin",
+    ["Piece Price"] = "Myusy giny",
+    ["Seller"] = "Vajarox",
+    ["Buyer"] = "Gnox",
+    ["Create Offer"] = "Steghcel arajark",
+    ["Cancel Offer"] = "Chegyal arajark",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Nyshany",
+    ["Two-Factor Authentication"] = "Erkgorcony",
+    
+    -- Inventory slots
+    ["Helmet"] = "Satavor",
+    ["Amulet"] = "Hmayil",
+    ["Backpack"] = "Ushaparak",
+    ["Armor"] = "Zirah",
+    ["Right Hand"] = "Aj dzerq",
+    ["Left Hand"] = "Dzax dzerq",
+    ["Legs"] = "Otqer",
+    ["Boots"] = "Koshikner",
+    ["Ring"] = "Matani",
+    ["Ammo"] = "Zinanyut",
+    
+    -- Elements
+    ["Fire"] = "Krak",
+    ["Ice"] = "Sarruyc",
+    ["Earth"] = "Hoghy",
+    ["Energy"] = "Energia",
+    ["Holy"] = "Surb",
+    ["Death"] = "Mahvanic",
+    ["Physical"] = "Fizikakan",
+    
+    -- House extended
+    ["House Transfer"] = "Tany pokhancum",
+    ["House Auction"] = "Tany achurrd",
+    ["Guest List"] = "Hyureri cucy",
+    
+    -- Screenshots
+    ["Screenshot"] = "Ekrani nkar",
+    ["Take Screenshot"] = "Arl ekrani nkar",
+    ["Screenshot saved"] = "Nkary pahvec",
+    
+    -- Audio settings
+    ["Master Volume"] = "Glxavor dzayn",
+    ["Music Volume"] = "Erazhshtutyan dzayn",
+    ["Sound Volume"] = "Dzayny",
+    ["Mute"] = "Lrelu",
+    
+    -- Additional UI
+    ["Apply"] = "Kirarkel",
+    ["Reset"] = "Zeroacrel",
+    ["Confirm"] = "Hastatyel",
+    ["Continue"] = "Sharuynakel",
+    ["Back"] = "Het",
+    ["Next"] = "Hajord",
+    ["Previous"] = "Naxord",
+    ["Finish"] = "Avartel",
+    ["Skip"] = "Bac toghel",
+    ["Retry"] = "Krknel pordzel",
+    ["Select All"] = "Yntrel bolory",
+    
+    -- Cyclopedia extended
+    ["Achievements"] = "Dzernbarumner",
+    ["Titles"] = "Kochumer",
+    ["Spells"] = "Hrashqner",
+    ["Items"] = "Irera",
+    ["Monsters"] = "Hrashqner",
+    ["Bosses"] = "Boxer",
+    
+    -- Loot system
+    ["Show Loot"] = "Cuyc tal avary",
+    
+    -- Events
+    ["Event"] = "Iradardzorutyun",
+    ["Events"] = "Iradardzorutyunner",
+    ["Active Events"] = "Gorcox iradardzorutyunner",
+    
+    -- Map features
+    ["Map"] = "Kartez",
+    ["World Map"] = "Ashxarhi kartez",
+    ["Minimap"] = "Mini kartez",
+    ["Show Markers"] = "Cuyc tal nshanner",
+    
+    -- Chat channels
+    ["Trade Channel"] = "Arrevtri alik",
+    ["Help Channel"] = "Ognutyan alik",
+    ["World Chat"] = "Ashxarhi zruyc",
+    
+    -- Guild
+    ["Guild"] = "Gildiya",
+    ["Guild Name"] = "Gildiayi anuny",
+    ["Guild Members"] = "Gildiayi andammer",
+    ["Invite to Guild"] = "Hravireru gildiya",
+    ["Leave Guild"] = "Heyel gildiayu",
+    
+    -- Format strings
+    ["Next level in %s"] = "Hajord makardak %s-um",
+    ["Current level: %d"] = "Yntacik makardak: %d",
+    ["%s has logged in"] = "%s mtav",
+    ["%s has logged out"] = "%s durs ekav",
+  }
+}
+
+modules.client_locales.installLocale(locale)

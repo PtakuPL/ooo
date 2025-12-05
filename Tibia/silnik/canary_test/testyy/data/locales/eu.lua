@@ -1,0 +1,364 @@
+locale = {
+  name = "eu",
+  charset = "utf-8",
+  languageName = "Euskara",
+
+  formatNumbers = true,
+  decimalSeperator = ',',
+  thousandsSeperator = '.',
+
+  translation = {
+    ["Accept"] = "Onartu",
+    ["Account name"] = "Kontuaren izena",
+    ["Account Status"] = "Kontuaren egoera",
+    ["Action"] = "Ekintza",
+    ["Add"] = "Gehitu",
+    ["Add new server"] = "Gehitu zerbitzari berria",
+    ["Add new VIP"] = "Gehitu VIP berria",
+    ["Add to VIP list"] = "Gehitu VIP zerrendara",
+    ["All"] = "Guztiak",
+    ["Amount"] = "Kopurua",
+    ["Attack"] = "Erasoa",
+    ["Audio"] = "Audioa",
+    ["Author"] = "Egilea",
+    ["Balance"] = "Saldoa",
+    ["Battle"] = "Bataila",
+    ["Browse"] = "Arakatu",
+    ["Buy"] = "Erosi",
+    ["Buy Now"] = "Erosi orain",
+    ["Cancel"] = "Utzi",
+    ["Capacity"] = "Edukiera",
+    ["Center"] = "Zentroa",
+    ["Change language"] = "Aldatu hizkuntza",
+    ["Channels"] = "Kanalak",
+    ["Character List"] = "Pertsonaien zerrenda",
+    ["Close"] = "Itxi",
+    ["Console"] = "Kontsola",
+    ["Copy"] = "Kopiatu",
+    ["Default"] = "Lehenetsia",
+    ["Description"] = "Deskribapena",
+    ["Details"] = "Xehetasunak",
+    ["Enter Game"] = "Sartu jokoan",
+    ["Error"] = "Errorea",
+    ["Exit"] = "Irten",
+    ["Experience"] = "Esperientzia",
+    ["Find"] = "Bilatu",
+    ["Follow"] = "Jarraitu",
+    ["Game"] = "Jokoa",
+    ["Graphics"] = "Grafikoak",
+    ["Head"] = "Burua",
+    ["Ignore"] = "Ez ikusi",
+    ["Inventory"] = "Inbentarioa",
+    ["Knight"] = "Zalduna",
+    ["Level"] = "Maila",
+    ["Load"] = "Kargatu",
+    ["Login"] = "Hasi saioa",
+    ["Logout"] = "Amaitu saioa",
+    ["Look"] = "Begiratu",
+    ["Mana"] = "Mana",
+    ["Market"] = "Merkatua",
+    ["Name"] = "Izena",
+    ["No"] = "Ez",
+    ["Ok"] = "Ados",
+    ["Open"] = "Ireki",
+    ["Options"] = "Aukerak",
+    ["Password"] = "Pasahitza",
+    ["Please wait"] = "Itxaron mesedez",
+    ["Port"] = "Portua",
+    ["Premium"] = "Premium",
+    ["Price"] = "Prezioa",
+    ["Refresh"] = "Freskatu",
+    ["Remove"] = "Kendu",
+    ["Save"] = "Gorde",
+    ["Search"] = "Bilatu",
+    ["Select"] = "Hautatu",
+    ["Select your language"] = "Hautatu zure hizkuntza",
+    ["Sell"] = "Saldu",
+    ["Send"] = "Bidali",
+    ["Server"] = "Zerbitzaria",
+    ["Server List"] = "Zerbitzari zerrenda",
+    ["Skills"] = "Trebetasunak",
+    ["Soul"] = "Arima",
+    ["Speed"] = "Abiadura",
+    ["Statistics"] = "Estatistikak",
+    ["Trade"] = "Merkataritza",
+    ["Type"] = "Mota",
+    ["Use"] = "Erabili",
+    ["Version"] = "Bertsioa",
+    ["VIP List"] = "VIP zerrenda",
+    ["Warning"] = "Oharra",
+    ["Website"] = "Webgunea",
+    ["Weight"] = "Pisua",
+    ["Yes"] = "Bai",
+    ["You are dead"] = "Hilda zaude",
+    ["You are dead."] = "Hilda zaude.",
+    ["Language"] = "Hizkuntza",
+    ["Email"] = "Posta elektronikoa",
+    
+    -- Combat Skills
+    ["Fist Fighting"] = "Ukabilkako borroka",
+    ["Club Fighting"] = "Makila borroka",
+    ["Sword Fighting"] = "Ezpata borroka",
+    ["Axe Fighting"] = "Aizkora borroka",
+    ["Distance Fighting"] = "Urruneko borroka",
+    ["Shielding"] = "Ezkutua",
+    ["Fishing"] = "Arrantza",
+    ["Magic Level"] = "Magia maila",
+    
+    -- Game Interface
+    ["Health"] = "Osasuna",
+    ["Health Info Window"] = "Osasun informazio leihoa",
+    ["You are burning"] = "Erretzen ari zara",
+    ["You are cursed"] = "Madarikatua zaude",
+    ["You are dazzled"] = "Itsututa zaude",
+    ["You are drowning"] = "Itotzear zaude",
+    ["You are drunk"] = "Mozkortu zara",
+    ["You are electrified"] = "Elektrizatu zara",
+    ["You are freezing"] = "Izozten ari zara",
+    ["You are hasted"] = "Bizkortuta zaude",
+    ["You are hexed"] = "Sorgindua zaude",
+    ["You are hungry"] = "Gosez zaude",
+    ["You are paralyzed"] = "Paralizatuta zaude",
+    ["You are poisoned"] = "Pozoituta zaude",
+    ["You are protected by a magic shield"] = "Ezkutu magikoak babesten zaitu",
+    ["You are strengthened"] = "Indartu zara",
+    ["You are within a protection zone"] = "Babestutako gune batean zaude",
+    ["You may not logout during a fight"] = "Ezin zara irten borroka batean",
+    ["You must enter a valid server address and port"] = "Zerbitzari helbide eta portu baliozkoa sartu behar duzu",
+    
+    -- Hotkey Management
+    ["Hotkeys"] = "Lasterbide-teklak",
+    ["Add Preset"] = "Gehitu aurre-ezarpena",
+    ["Copy Preset"] = "Kopiatu aurre-ezarpena",
+    ["Rename Preset"] = "Aldatu izena aurre-ezarpenari",
+    ["Delete Preset"] = "Ezabatu aurre-ezarpena",
+    ["New preset name:"] = "Aurre-ezarpen izen berria:",
+    ["Assign Object to Hotkey"] = "Esleitu objektua lasterbideari",
+    ["Set Object"] = "Ezarri objektua",
+    ["Clear Object"] = "Garbitu objektua",
+    ["Use on yourself"] = "Erabili zure buruan",
+    ["Use on target"] = "Erabili helburuan",
+    ["With crosshair"] = "Gurutze-mirekin",
+    
+    -- Cyclopedia/Bestiary
+    ["Cyclopedia"] = "Cyclopedia",
+    ["Bestiary"] = "Bestiary",
+    ["Bosstiary"] = "Bosstiary",
+    ["Charm Points"] = "Xarma puntuak",
+    ["Monsters Killed"] = "Hildako munstroak",
+    ["Boss Points"] = "Boss puntuak",
+    
+    -- Rarity Levels
+    ["Common"] = "Arrunta",
+    ["Uncommon"] = "Ohikoa ez dena",
+    ["Rare"] = "Arraroa",
+    ["Semi-Rare"] = "Erdi-arraroa",
+    ["Very Rare"] = "Oso arraroa",
+    
+    -- House System
+    ["House"] = "Etxea",
+    ["Invite"] = "Gonbidatu",
+    ["Exclude"] = "Baztertu",
+    ["Transfer"] = "Transferitu",
+    ["Guest List"] = "Gonbidatuen zerrenda",
+    ["Sub-Owner List"] = "Azpi-jabeen zerrenda",
+    
+    -- Imbuing
+    ["Imbuing"] = "Imbuing",
+    ["Imbuements"] = "Imbuements",
+    ["Apply"] = "Aplikatu",
+    ["Slots"] = "Zirrikituak",
+    
+    -- Store/Rewards
+    ["Store"] = "Denda",
+    ["Rewards"] = "Sariak",
+    ["Daily Reward"] = "Eguneko saria",
+    ["Claim"] = "Eskatu",
+    
+    -- Updater
+    ["Updater"] = "Eguneratzailea",
+    ["Checking for updates..."] = "Eguneraketak bilatzen...",
+    ["Downloading update..."] = "Eguneraketa deskargatzen...",
+    ["Update complete"] = "Eguneraketa osatua",
+    ["No updates available"] = "Ez dago eguneraketarik",
+    
+    -- Loot Management
+    ["Loot"] = "Loot",
+    ["Auto Loot"] = "Auto Loot",
+    ["Quick Loot"] = "Loot azkarra",
+    ["Loot Container"] = "Loot edukiontzia",
+    
+    -- Chat Modes
+    ["Say"] = "Esan",
+    ["Whisper"] = "Xuxurlatu",
+    ["Yell"] = "Oihukatu",
+    ["NPC"] = "NPC",
+    ["Private Message"] = "Mezu pribatua",
+    
+    -- Party System
+    ["Party"] = "Taldea",
+    ["Create Party"] = "Sortu taldea",
+    ["Join Party"] = "Sartu taldean",
+    ["Leave Party"] = "Irten taldetik",
+    ["Pass Leadership"] = "Eman lideritza",
+    
+    -- Reporting
+    ["Report"] = "Salaketa",
+    ["Report Bug"] = "Salatu akatsa",
+    ["Report Player"] = "Salatu jokalaria",
+    ["Rule Violation"] = "Arau urratzea",
+    
+    -- Tasks
+    ["Tasks"] = "Eginkizunak",
+    ["Daily Tasks"] = "Eguneko eginkizunak",
+    ["Weekly Tasks"] = "Asteko eginkizunak",
+    ["Complete"] = "Osatua",
+    ["In Progress"] = "Abian",
+    
+    -- Directions
+    ["North"] = "Iparraldea",
+    ["South"] = "Hegoaldea",
+    ["East"] = "Ekialdea",
+    ["West"] = "Mendebaldea",
+    ["Northwest"] = "Ipar-mendebaldea",
+    ["Northeast"] = "Ipar-ekialdea",
+    ["Southwest"] = "Hego-mendebaldea",
+    ["Southeast"] = "Hego-ekialdea",
+    
+    -- Time
+    ["Today"] = "Gaur",
+    ["Yesterday"] = "Atzo",
+    ["seconds"] = "segundu",
+    ["minutes"] = "minutu",
+    ["hours"] = "ordu",
+    ["days"] = "egun",
+    ["Day"] = "Eguna",
+    ["Night"] = "Gaua",
+    ["Hour"] = "Ordua",
+    ["Minute"] = "Minutua",
+    ["Second"] = "Segundoa",
+    
+    -- Connection messages
+    ["Connection error"] = "Konexio errorea",
+    ["Connection refused"] = "Konexioa ukatu da",
+    ["Connection timed out"] = "Konexio denbora agortu da",
+    ["Unable to connect"] = "Ezin da konektatu",
+    ["Lost connection"] = "Konexioa galdu da",
+    
+    -- Display settings
+    ["Show creature names"] = "Erakutsi izakien izenak",
+    ["Show player names"] = "Erakutsi jokalari izenak",
+    ["Show health bar"] = "Erakutsi osasun barra",
+    ["Show mana bar"] = "Erakutsi mana barra",
+    
+    -- Combat stats
+    ["Critical Hit Chance"] = "Kolpe kritiko aukera",
+    ["Critical Hit Damage"] = "Kolpe kritiko kaltea",
+    ["Life Leech"] = "Bizitza lapurreta",
+    ["Mana Leech"] = "Mana lapurreta",
+    
+    -- Market extended
+    ["Total Price"] = "Prezio osoa",
+    ["Piece Price"] = "Pieza prezioa",
+    ["Seller"] = "Saltzailea",
+    ["Buyer"] = "Eroslea",
+    ["Create Offer"] = "Eskaintza sortu",
+    ["Cancel Offer"] = "Eskaintza ezeztatu",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Autentifikazio tokena",
+    ["Two-Factor Authentication"] = "Bi faktoreko autentifikazioa",
+    
+    -- Inventory slots
+    ["Helmet"] = "Kaskoa",
+    ["Amulet"] = "Amuletu",
+    ["Backpack"] = "Motxila",
+    ["Armor"] = "Armadura",
+    ["Right Hand"] = "Eskuin eskua",
+    ["Left Hand"] = "Ezker eskua",
+    ["Legs"] = "Hankak",
+    ["Boots"] = "Botak",
+    ["Ring"] = "Eraztuna",
+    ["Ammo"] = "Munizio",
+    
+    -- Elements
+    ["Fire"] = "Sua",
+    ["Ice"] = "Izotza",
+    ["Earth"] = "Lurra",
+    ["Energy"] = "Energia",
+    ["Holy"] = "Santua",
+    ["Death"] = "Heriotza",
+    ["Physical"] = "Fisikoa",
+    
+    -- House extended
+    ["House Transfer"] = "Etxe transferentzia",
+    ["House Auction"] = "Etxe enkantea",
+    ["Guest List"] = "Gonbidatu zerrenda",
+    
+    -- Screenshots
+    ["Screenshot"] = "Pantaila-argazkia",
+    ["Take Screenshot"] = "Pantaila-argazkia atera",
+    ["Screenshot saved"] = "Pantaila-argazkia gorde da",
+    
+    -- Audio settings
+    ["Master Volume"] = "Bolumen nagusia",
+    ["Music Volume"] = "Musika bolumena",
+    ["Sound Volume"] = "Soinu bolumena",
+    ["Mute"] = "Isilarazi",
+    
+    -- Additional UI
+    ["Apply"] = "Aplikatu",
+    ["Reset"] = "Berrezarri",
+    ["Confirm"] = "Berretsi",
+    ["Continue"] = "Jarraitu",
+    ["Back"] = "Atzera",
+    ["Next"] = "Hurrengoa",
+    ["Previous"] = "Aurrekoa",
+    ["Finish"] = "Amaitu",
+    ["Skip"] = "Saltatu",
+    ["Retry"] = "Berriro saiatu",
+    ["Select All"] = "Hautatu denak",
+    
+    -- Cyclopedia extended
+    ["Achievements"] = "Lorpenak",
+    ["Titles"] = "Tituluak",
+    ["Spells"] = "Sorginkeriak",
+    ["Items"] = "Objektuak",
+    ["Monsters"] = "Munstroak",
+    ["Bosses"] = "Nagusiak",
+    
+    -- Loot system
+    ["Show Loot"] = "Erakutsi harrapakina",
+    
+    -- Events
+    ["Event"] = "Gertaera",
+    ["Events"] = "Gertaerak",
+    ["Active Events"] = "Gertaera aktiboak",
+    
+    -- Map features
+    ["Map"] = "Mapa",
+    ["World Map"] = "Mundu mapa",
+    ["Minimap"] = "Minimapa",
+    ["Show Markers"] = "Erakutsi markadoreak",
+    
+    -- Chat channels
+    ["Trade Channel"] = "Merkataritza kanala",
+    ["Help Channel"] = "Laguntza kanala",
+    ["World Chat"] = "Mundu txata",
+    
+    -- Guild
+    ["Guild"] = "Gilda",
+    ["Guild Name"] = "Gilda izena",
+    ["Guild Members"] = "Gilda kideak",
+    ["Invite to Guild"] = "Gildara gonbidatu",
+    ["Leave Guild"] = "Gilda utzi",
+    
+    -- Format strings
+    ["Next level in %s"] = "Hurrengo maila %s-n",
+    ["Current level: %d"] = "Uneko maila: %d",
+    ["%s has logged in"] = "%s sartu da",
+    ["%s has logged out"] = "%s irten da",
+  }
+}
+
+modules.client_locales.installLocale(locale)

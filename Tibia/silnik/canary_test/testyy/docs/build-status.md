@@ -1,6 +1,64 @@
-# Build status overview
+# Build Status Overview
 
-- Builds succeed on Ubuntu 24.04 after installing the dependencies listed in [docs/linux-build-deps.md](./linux-build-deps.md).
-- No compiled installer or binaries are stored in the repository; generate them locally with `cmake --build build -j2` after configuring.
-- The produced client binary (`./otclient`) is written to the repository root when the build finishes.
-- Source file changes related to text rendering (such as `src/framework/graphics/bitmapfont.cpp`) remain present in the repository history; ensure you pull the branch to see them locally.
+**Last Updated:** 2025-12-05
+
+## Build Status Summary
+
+| Platform | Status | Notes |
+|----------|--------|-------|
+| Windows | ✅ Ready | Requires MSVC 2022, vcpkg x64-windows-static |
+| Ubuntu 24.04 | ✅ Ready | Requires GCC 14, system deps |
+| Emscripten (WASM) | ✅ Fixed | Lua module path fix applied |
+| Android | ✅ Ready | NDK r23c, Gradle 8.11 |
+
+## Recent Fixes
+
+### Emscripten/WASM Build Fix (2025-12-05)
+- **File:** `src/CMakeLists.txt` (lines 483-496)
+- **Issue:** Custom `FindLua.cmake` incompatible with WASM
+- **Solution:** Use CMake's standard FindLua module for WASM builds
+
+## Build Instructions
+
+### Linux (Ubuntu 24.04)
+```bash
+# Install dependencies
+sudo apt-get install -y gcc-14 g++-14 cmake ninja-build libglew-dev libx11-dev
+
+# Configure and build
+cmake -G Ninja -S . -B build \
+  -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake \
+  -DVCPKG_TARGET_TRIPLET=x64-linux
+cmake --build build --target otclient
+```
+
+See [linux-build-deps.md](./linux-build-deps.md) for full dependency list.
+
+### Windows
+```powershell
+cmake -S . -B build -G "Visual Studio 17 2022" -A x64 `
+  -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT\scripts\buildsystems\vcpkg.cmake" `
+  -DVCPKG_TARGET_TRIPLET=x64-windows-static
+cmake --build build --config Release --parallel
+```
+
+### Emscripten (WASM)
+```bash
+source $EMSDK/emsdk_env.sh
+cmake -G Ninja -S . -B build-wasm \
+  -DVCPKG_CHAINLOAD_TOOLCHAIN_FILE=$EMSDK/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake \
+  -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake \
+  -DVCPKG_TARGET_TRIPLET=wasm32-emscripten
+cmake --build build-wasm --target otclient
+```
+
+## Output
+- No compiled binaries stored in repository
+- Build produces `./otclient` (or `otclient.exe` on Windows)
+- WASM build produces `otclient.html`, `otclient.js`, `otclient.wasm`
+
+## Related Documentation
+- [BUILD_GUIDE.md](BUILD_GUIDE.md) - Comprehensive build guide
+- [DEPENDENCIES.md](DEPENDENCIES.md) - Full dependency documentation
+- [linux-build-deps.md](linux-build-deps.md) - Linux dependencies
+- [../CI_STATUS.md](../CI_STATUS.md) - CI/CD workflow status

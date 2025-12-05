@@ -397,6 +397,322 @@ locale = {
     ["Unsuitable Name"] = "Jina lisilo la kufaa",
     ["Name Inciting Rule Violation"] = "Jina linachochea ukiukaji wa sheria",
     ["Offensive Statement"] = "Kauli ya kukera",
+    
+    -- Additional Rule Violations
+    ["Spamming"] = "Kutuma barua taka",
+    ["Illegal Advertising"] = "Matangazo haramu",
+    ["Off-Topic Public Statement"] = "Kauli ya umma nje ya mada",
+    ["Non-English Public Statement"] = "Kauli ya umma isiyo ya Kiingereza",
+    ["Inciting Rule Violation"] = "Kuchochea ukiukaji wa sheria",
+    ["Bug Abuse"] = "Kutumia hitilafu vibaya",
+    ["Game Weakness Abuse"] = "Kutumia udhaifu wa mchezo vibaya",
+    ["Using Unofficial Software to Play"] = "Kutumia programu isiyo rasmi kucheza",
+    ["Hacking"] = "Kudukuliwa",
+    ["Multi-Clienting"] = "Wateja wengi",
+    ["Account Trading or Sharing"] = "Biashara au kushiriki akaunti",
+    ["Threatening Gamemaster"] = "Kutishia bwana wa mchezo",
+    ["Pretending to Have Influence on Rule Enforcement"] = "Kujifanya kuwa na ushawishi katika utekelezaji wa sheria",
+    
+    -- Status Effects
+    ["You are bleeding"] = "Unavuja damu",
+    ["You are burning"] = "Unawaka moto",
+    ["You are cursed"] = "Umelaaniwa",
+    ["You are dazzled"] = "Umepofushwa",
+    ["You are dead"] = "Umekufa",
+    ["You are drowning"] = "Unazama",
+    ["You are drunk"] = "Umelewa",
+    ["You are electrified"] = "Umepigwa umeme",
+    ["You are freezing"] = "Unaganda",
+    ["You are hasted"] = "Umeharakishwa",
+    ["You are hungry"] = "Una njaa",
+    ["You are paralysed"] = "Umepooza",
+    ["You are poisoned"] = "Umesumwa",
+    ["You are protected by a magic shield"] = "Unalindwa na ngao ya uchawi",
+    ["You are strengthened"] = "Umeimarishwa",
+    ["You are within a protection zone"] = "Uko ndani ya eneo la ulinzi",
+    ["You may not logout during a fight"] = "Huwezi kutoka wakati wa mapigano",
+    ["You may not logout or enter a protection zone"] = "Huwezi kutoka au kuingia eneo la ulinzi",
+    
+    -- Combat Skills
+    ["Axe Fighting"] = "Kupigana na shoka",
+    ["Club Fighting"] = "Kupigana na rungu",
+    ["Distance Fighting"] = "Kupigana kwa mbali",
+    ["Fist Fighting"] = "Kupigana kwa ngumi",
+    ["Magic Level"] = "Kiwango cha uchawi",
+    ["Shielding"] = "Kulinda kwa ngao",
+    ["Sword Fighting"] = "Kupigana kwa upanga",
+    ["Fishing"] = "Kuvua samaki",
+    
+    -- Vocations
+    ["Knight"] = "Shujaa",
+    ["Paladin"] = "Paladini",
+    ["Sorcerer"] = "Mchawi",
+    ["Druid"] = "Druidi",
+    ["None"] = "Hakuna",
+    ["No Vocation"] = "Bila kazi",
+    ["Elite Knight"] = "Shujaa wa wasomi",
+    ["Royal Paladin"] = "Paladini wa kifalme",
+    ["Master Sorcerer"] = "Bwana Mchawi",
+    ["Elder Druid"] = "Druidi Mkubwa",
+    
+    -- Elements
+    ["Fire"] = "Moto",
+    ["Ice"] = "Barafu",
+    ["Earth"] = "Ardhi",
+    ["Energy"] = "Nishati",
+    ["Holy"] = "Takatifu",
+    ["Death"] = "Kifo",
+    ["Physical"] = "Kimwili",
+    ["Healing"] = "Uponyaji",
+    
+    -- Inventory Slots
+    ["Head"] = "Kichwa",
+    ["Necklace"] = "Mkufu",
+    ["Backpack"] = "Begi la mgongoni",
+    ["Armor"] = "Silaha",
+    ["Right Hand"] = "Mkono wa kulia",
+    ["Left Hand"] = "Mkono wa kushoto",
+    ["Legs"] = "Miguu",
+    ["Feet"] = "Nyayo",
+    ["Ring"] = "Pete",
+    ["Ammo"] = "Risasi",
+    
+    -- Hotkey Presets
+    ["Add hotkey preset"] = "Ongeza mpangilio wa kitufe cha haraka",
+    ["Copy hotkey preset"] = "Nakili mpangilio wa kitufe cha haraka",
+    ["Rename hotkey preset"] = "Badilisha jina la mpangilio wa kitufe cha haraka",
+    ["Enter a name for the new preset:"] = "Ingiza jina la mpangilio mpya:",
+    ["Enter a name for the preset:"] = "Ingiza jina la mpangilio:",
+    ["Do you really want to delete the hotkey preset %s?"] = "Je, unataka kweli kufuta mpangilio wa kitufe cha haraka %s?",
+    ["Current hotkey to change: %s"] = "Kitufe cha haraka cha sasa kubadilishwa: %s",
+    ["Current hotkey to change: none"] = "Kitufe cha haraka cha sasa kubadilishwa: hakuna",
+    ["Add new group"] = "Ongeza kikundi kipya",
+    ["Edit group %s"] = "Hariri kikundi %s",
+    ["Remove group %s"] = "Ondoa kikundi %s",
+    ["Hide groups"] = "Ficha vikundi",
+    ["Show groups"] = "Onyesha vikundi",
+    
+    -- Cyclopedia and Bestiary
+    ["Cyclopedia"] = "Cyclopedia",
+    ["Bestiary Tracker"] = "Kifuatiliaji cha Bestiary",
+    ["Bosstiary Tracker"] = "Kifuatiliaji cha Bosstiary",
+    ["Imbuement Tracker"] = "Kifuatiliaji cha Imbuement",
+    ["Prey Tracker"] = "Kifuatiliaji cha Prey",
+    ["Prey Dialog"] = "Mazungumzo ya Prey",
+    ["Select monster"] = "Chagua mnyama mkubwa",
+    ["Select monster to proceed."] = "Chagua mnyama mkubwa kuendelea.",
+    
+    -- Charms
+    ["Confirm Charm Removal"] = "Thibitisha uondoaji wa hirizi",
+    ["Confirm Selected Charm"] = "Thibitisha hirizi iliyochaguliwa",
+    ["Confirm Unlocking of Charm"] = "Thibitisha kufungua hirizi",
+    
+    -- Rarity Levels
+    ["Common"] = "Kawaida",
+    ["Uncommon"] = "Isiyo ya kawaida",
+    ["Rare"] = "Nadra",
+    ["Semi-Rare"] = "Nusu nadra",
+    ["Very Rare"] = "Nadra sana",
+    
+    -- House System
+    ["Confirm House Action"] = "Thibitisha kitendo cha nyumba",
+    ["Do you really want to keep your house "] = "Je, unataka kweli kuweka nyumba yako ",
+    ["Do you really want to move out of the house "] = "Je, unataka kweli kuhamia nje ya nyumba ",
+    ["You have sucessfully accepted the transfer."] = "Umekubali uhamisho kwa mafanikio.",
+    ["You have sucessfully iniated your move out."] = "Umeanzisha kuondoka kwako kwa mafanikio.",
+    ["You have sucessfully initiated the transfer of your house."] = "Umeanzisha uhamisho wa nyumba yako kwa mafanikio.",
+    
+    -- Imbuing
+    ["Confirm Imbuing Attempt"] = "Thibitisha jaribio la imbuement",
+    ["Confirm Clearing"] = "Thibitisha kusafisha",
+    ["Confirmation of Purchase"] = "Uthibitisho wa ununuzi",
+    
+    -- UI Elements Extended
+    ["Chat Off"] = "Mazungumzo yamezimwa",
+    ["Chat On"] = "Mazungumzo yamewashwa",
+    ["Toggle WASD chat mode"] = "Badilisha hali ya mazungumzo ya WASD",
+    ["Toggle chase mode"] = "Badilisha hali ya kukimbiza",
+    ["Local Chat"] = "Mazungumzo ya ndani",
+    ["Debug Info"] = "Maelezo ya kurekebisha",
+    ["Top"] = "Juu",
+    ["Bottom"] = "Chini",
+    ["Parallel"] = "Sambamba",
+    ["Compact"] = "Mfupi",
+    ["Large"] = "Kubwa",
+    ["Medium"] = "Wastani",
+    ["Small"] = "Ndogo",
+    
+    -- Store and Rewards
+    ["Store"] = "Duka",
+    ["Rewards"] = "Tuzo",
+    ["Daily Rewards"] = "Tuzo za kila siku",
+    ["Collect Reward"] = "Kusanya tuzo",
+    ["You have collected your reward!"] = "Umekusanya tuzo yako!",
+    ["Buy Offer"] = "Nunua ofa",
+    ["Sell Offer"] = "Uza ofa",
+    ["My Offers"] = "Ofa zangu",
+    ["Create Offer"] = "Unda ofa",
+    
+    -- Loot Management
+    ["Loot"] = "Nyara",
+    ["Auto Loot"] = "Nyara za moja kwa moja",
+    ["Quick Loot"] = "Nyara za haraka",
+    ["Loot Channel"] = "Kituo cha nyara",
+    ["Show Loot"] = "Onyesha nyara",
+    ["Hide Loot"] = "Ficha nyara",
+    
+    -- Chat Modes
+    ["Default Channel"] = "Kituo chaguo-msingi",
+    ["Game Chat"] = "Mazungumzo ya mchezo",
+    ["NPC Channel"] = "Kituo cha NPC",
+    ["Private Messages"] = "Ujumbe wa faragha",
+    ["Server Log"] = "Kumbukumbu ya seva",
+    
+    -- Party System
+    ["Party"] = "Chama",
+    ["Invite to Party"] = "Alika kwa chama",
+    ["Join Party"] = "Jiunge na chama",
+    ["Leave Party"] = "Ondoka chama",
+    ["Pass Leadership"] = "Pasha uongozi",
+    ["Enable Shared Experience"] = "Wezesha uzoefu wa pamoja",
+    ["Disable Shared Experience"] = "Lemaza uzoefu wa pamoja",
+    
+    -- Reporting
+    ["Report"] = "Ripoti",
+    ["Report Bug"] = "Ripoti hitilafu",
+    ["Report Player"] = "Ripoti mchezaji",
+    ["Statement Report"] = "Ripoti ya kauli",
+    ["You must enter a comment."] = "Lazima uingize maoni.",
+    ["You must select a reason."] = "Lazima uchague sababu.",
+    ["You must select an action."] = "Lazima uchague kitendo.",
+    
+    -- Tasks and Quests
+    ["Tasks"] = "Kazi",
+    ["Quests"] = "Maswali",
+    ["Quest Log"] = "Kumbukumbu ya maswali",
+    ["Active Tasks"] = "Kazi zinazoendelea",
+    ["Completed Tasks"] = "Kazi zilizokamilika",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Tokeni ya uthibitishaji",
+    ["Two-Factor Authentification"] = "Uthibitishaji wa hatua mbili",
+    ["Enable HTTP login"] = "Wezesha kuingia kwa HTTP",
+    ["Login automatically"] = "Ingia kiotomatiki",
+    ["Remember Email"] = "Kumbuka barua pepe",
+    ["Remember password"] = "Kumbuka nenosiri",
+    
+    -- Connection Messages
+    ["Connection Lost"] = "Muunganisho umepotea",
+    ["Connection to the server lost."] = "Muunganisho na seva umepotea.",
+    ["Trying to reconnect in %s seconds."] = "Kujaribu kuunganisha tena kwa sekunde %s.",
+    ["Reconnect"] = "Unganisha tena",
+    ["Could not connect to server."] = "Haikuweza kuunganisha na seva.",
+    ["Connection timed out."] = "Muda wa muunganisho umeisha.",
+    
+    -- Combat Stats
+    ["Critical Hit Chance"] = "Nafasi ya pigo muhimu",
+    ["Critical Hit Damage"] = "Uharibifu wa pigo muhimu",
+    ["Life Leech Amount"] = "Kiasi cha kunyonya uhai",
+    ["Life Leech Chance"] = "Nafasi ya kunyonya uhai",
+    ["Mana Leech Amount"] = "Kiasi cha kunyonya mana",
+    ["Mana Leech Chance"] = "Nafasi ya kunyonya mana",
+    
+    -- Market Extended
+    ["Market Error"] = "Hitilafu ya soko",
+    ["Offer Type"] = "Aina ya ofa",
+    ["Piece Price"] = "Bei ya kipande",
+    ["Total Price"] = "Bei jumla",
+    ["This offer is 25%% above the average market price"] = "Ofa hii ni 25%% juu ya bei ya wastani ya soko",
+    ["This offer is 25%% below the average market price"] = "Ofa hii ni 25%% chini ya bei ya wastani ya soko",
+    
+    -- PvP Settings
+    ["Open PvP"] = "PvP wazi",
+    ["Optional PvP"] = "PvP ya hiari",
+    ["Hardcore PvP"] = "PvP kali",
+    ["Retro Open PvP"] = "PvP wazi ya zamani",
+    ["Skull Time"] = "Muda wa fuvu",
+    
+    -- Sorting Options
+    ["Sort by name"] = "Panga kwa jina",
+    ["Sort by status"] = "Panga kwa hali",
+    ["Sort by type"] = "Panga kwa aina",
+    
+    -- Display Settings
+    ["Show creature health bars"] = "Onyesha vipimo vya afya vya viumbe",
+    ["Show creature mana bars"] = "Onyesha vipimo vya mana vya viumbe",
+    ["Show creature names"] = "Onyesha majina ya viumbe",
+    ["Show player names"] = "Onyesha majina ya wachezaji",
+    ["Show monster names"] = "Onyesha majina ya wanyama wakubwa",
+    ["Show NPC names"] = "Onyesha majina ya NPC",
+    ["Show Text"] = "Onyesha maandishi",
+    ["Show timestamps in console"] = "Onyesha muhuri wa wakati kwenye konsoli",
+    
+    -- Audio Settings
+    ["Music Volume"] = "Sauti ya muziki",
+    ["Sound Volume"] = "Kiwango cha sauti",
+    ["Enable Audio"] = "Wezesha sauti",
+    ["Disable Audio"] = "Lemaza sauti",
+    
+    -- Screenshots
+    ["Screenshot"] = "Picha ya skrini",
+    ["Take Screenshot"] = "Piga picha ya skrini",
+    ["Screenshot saved"] = "Picha ya skrini imehifadhiwa",
+    
+    -- Events
+    ["Events"] = "Matukio",
+    ["Event Schedule"] = "Ratiba ya matukio",
+    ["Active Events"] = "Matukio yanayoendelea",
+    
+    -- Prey System
+    ["Prey"] = "Mawindo",
+    ["Prey Bonus"] = "Bonasi ya mawindo",
+    ["Select Prey"] = "Chagua mawindo",
+    ["Reroll Prey"] = "Pindua tena mawindo",
+    
+    -- Map Features
+    ["Mini Map"] = "Ramani ndogo",
+    ["World Map"] = "Ramani ya ulimwengu",
+    ["Mark Position"] = "Weka alama ya nafasi",
+    ["Clear Marks"] = "Futa alama",
+    
+    -- Guild System
+    ["Guild"] = "Chama",
+    ["Guild Chat"] = "Mazungumzo ya chama",
+    ["Guild Members"] = "Wanachama wa chama",
+    ["Invite to Guild"] = "Alika kwa chama",
+    ["Leave Guild"] = "Ondoka chama",
+    
+    -- Format Strings Extended
+    ["You have %s percent to go"] = "Una asilimia %s kwenda",
+    ["You have %s percent"] = "Una asilimia %s",
+    ["%d gold"] = "Dhahabu %d",
+    ["%d platinum"] = "Platina %d",
+    ["%d crystal"] = "Kioo %d",
+    
+    -- Additional UI
+    ["Client version"] = "Toleo la mteja",
+    ["Server"] = "Seva",
+    ["Port"] = "Bandari",
+    ["Language"] = "Lugha",
+    ["Email"] = "Barua pepe",
+    ["Password"] = "Nenosiri",
+    ["Account name"] = "Jina la akaunti",
+    
+    -- Graphics Options
+    ["Antialiasing"] = "Kupunguza makali",
+    ["Vsync"] = "Vsync",
+    ["FPS Limit"] = "Kikomo cha FPS",
+    ["Fullscreen"] = "Skrini kamili",
+    ["Windowed"] = "Dirisha",
+    ["Resolution"] = "Azimio",
+    
+    -- Additional Messages
+    ["Your client needs updating, try redownloading it."] = "Mteja wako anahitaji kusasishwa, jaribu kupakua tena.",
+    ["Your connection has been lost."] = "Muunganisho wako umepotea.",
+    ["Your request has been closed"] = "Ombi lako limefungwa",
+    ["There is no way."] = "Hakuna njia.",
+    ["You can enter new text."] = "Unaweza kuingiza maandishi mapya.",
+    ["Unable to logout."] = "Haikuweza kutoka."
   }
 }
 

@@ -35,6 +35,10 @@ Plik roboczy do śledzenia postępu tłumaczeń. Zawiera krótkie notatki o wyko
 | th | th.lua | 390 | 500 | ✅ |
 | lt | lt.lua | 320 | 540 | ✅ |
 | sr | sr.lua | 320 | 540 | ✅ |
+| af | af.lua | 349 | 440 | ✅ |
+| is | is.lua | 349 | 440 | ✅ |
+| mk | mk.lua | 349 | 440 | ✅ |
+| sq | sq.lua | 349 | 440 | ✅ |
 
 ## Następne do pracy
 - ro (Romanian) - ~400 wpisów

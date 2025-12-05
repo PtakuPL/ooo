@@ -395,3 +395,90 @@ locale = {
 }
 
 modules.client_locales.installLocale(locale)
+
+-- Additional translations merged at runtime
+local add = {
+  -- Death dialogs
+  ["Alas! Brave adventurer, you have met a sad fate.\nBut do not despair, for the gods will bring you back\ninto this world in exchange for a small sacrifice\n\nSimply click on Ok to resume your journeys!"] = "Akk! Modige eventyrer, du har møtt en trist skjebne.\nMen fortvil ikke, for gudene vil bringe deg tilbake\ntil denne verden i bytte mot et lite offer\n\nKlikk på OK for å fortsette reisene dine!",
+  ["Journey Onwards"] = "Fortsett reisen",
+
+  -- Hotkey management
+  ["Add hotkey preset"] = "Legg til hurtigtastinnstilling",
+  ["Add new group"] = "Legg til ny gruppe",
+  ["Edit group %s"] = "Rediger gruppe %s",
+  ["Remove group %s"] = "Fjern gruppe %s",
+  ["Hide groups"] = "Skjul grupper",
+  ["Show groups"] = "Vis grupper",
+  
+  -- Cyclopedia extended
+  ["Imbuement Tracker"] = "Imbue-sporing",
+  ["Prey Tracker"] = "Byttesporing",
+  ["Select monster"] = "Velg monster",
+  ["Account Badges"] = "Kontomerker",
+  ["Boss Points"] = "Bosspoeng",
+  ["Creature Name"] = "Skapningens navn",
+  
+  -- House system
+  ["Accept House Transfer"] = "Godta husoverføring",
+  ["Move Out"] = "Flytt ut",
+  ["No house selected"] = "Ingen hus valgt",
+  
+  -- Combat stats
+  ["Life Leech"] = "Livssug",
+  ["Mana Leech"] = "Manasug",
+  ["Magic"] = "Magi",
+  ["Physical"] = "Fysisk",
+  
+  -- Elements
+  ["Death"] = "Død",
+  ["Earth"] = "Jord",
+  ["Energy"] = "Energi",
+  ["Fire"] = "Ild",
+  ["Holy"] = "Hellig",
+  ["Ice"] = "Is",
+  
+  -- Days
+  ["Monday"] = "Mandag",
+  ["Tuesday"] = "Tirsdag",
+  ["Wednesday"] = "Onsdag",
+  ["Thursday"] = "Torsdag",
+  ["Saturday"] = "Lørdag",
+  ["Sunday"] = "Søndag",
+  
+  -- UI elements
+  ["Navigation"] = "Navigasjon",
+  ["Next"] = "Neste",
+  ["Previous"] = "Forrige",
+  ["None"] = "Ingen",
+  ["Points"] = "Poeng",
+  ["Progress"] = "Fremgang",
+  ["Quest Tracker"] = "Oppgavesporing",
+  ["Rank"] = "Rang",
+  ["Reset"] = "Tilbakestill",
+  ["Show All"] = "Vis alle",
+  ["Status"] = "Status",
+  ["Stop"] = "Stopp",
+  ["Submit"] = "Send inn",
+  ["Track"] = "Spor",
+  ["Updater"] = "Oppdaterer",
+  ["Wiki"] = "Wiki",
+  ["World"] = "Verden",
+  
+  -- Account
+  ["Manage Account"] = "Administrer konto",
+  ["Free"] = "Gratis",
+  
+  -- Items
+  ["Wrap"] = "Pakk inn",
+  ["Unwrap"] = "Pakk ut",
+  
+  -- Misc
+  ["Chat Off"] = "Chat av",
+  ["Chat On"] = "Chat på",
+  ["Local Chat"] = "Lokal chat",
+  ["ok"] = "ok",
+  ["remove"] = "fjern",
+}
+for k,v in pairs(add) do
+  locale.translation[k] = locale.translation[k] or v
+end

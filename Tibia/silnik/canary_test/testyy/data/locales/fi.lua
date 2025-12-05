@@ -395,3 +395,90 @@ locale = {
 }
 
 modules.client_locales.installLocale(locale)
+
+-- Additional translations merged at runtime
+local add = {
+  -- Death dialogs
+  ["Alas! Brave adventurer, you have met a sad fate.\nBut do not despair, for the gods will bring you back\ninto this world in exchange for a small sacrifice\n\nSimply click on Ok to resume your journeys!"] = "Voi! Rohkea seikkailija, olet kohdannut surullisen kohtalon.\nÄlä kuitenkaan epätoivoon, sillä jumalat tuovat sinut takaisin\ntähän maailmaan pientä uhria vastaan\n\nNapsauta OK jatkaaksesi matkojasi!",
+  ["Journey Onwards"] = "Jatka matkaa",
+
+  -- Hotkey management
+  ["Add hotkey preset"] = "Lisää pikanäppäinasetus",
+  ["Add new group"] = "Lisää uusi ryhmä",
+  ["Edit group %s"] = "Muokkaa ryhmää %s",
+  ["Remove group %s"] = "Poista ryhmä %s",
+  ["Hide groups"] = "Piilota ryhmät",
+  ["Show groups"] = "Näytä ryhmät",
+  
+  -- Cyclopedia extended
+  ["Imbuement Tracker"] = "Imbue-seuranta",
+  ["Prey Tracker"] = "Saalisseuranta",
+  ["Select monster"] = "Valitse hirviö",
+  ["Account Badges"] = "Tilisymbolit",
+  ["Boss Points"] = "Pomopisteet",
+  ["Creature Name"] = "Olennon nimi",
+  
+  -- House system
+  ["Accept House Transfer"] = "Hyväksy talonsiirto",
+  ["Move Out"] = "Muuta pois",
+  ["No house selected"] = "Ei valittua taloa",
+  
+  -- Combat stats
+  ["Life Leech"] = "Elämänvaraus",
+  ["Mana Leech"] = "Manavaraus",
+  ["Magic"] = "Taikuus",
+  ["Physical"] = "Fyysinen",
+  
+  -- Elements
+  ["Death"] = "Kuolema",
+  ["Earth"] = "Maa",
+  ["Energy"] = "Energia",
+  ["Fire"] = "Tuli",
+  ["Holy"] = "Pyhä",
+  ["Ice"] = "Jää",
+  
+  -- Days
+  ["Monday"] = "Maanantai",
+  ["Tuesday"] = "Tiistai",
+  ["Wednesday"] = "Keskiviikko",
+  ["Thursday"] = "Torstai",
+  ["Saturday"] = "Lauantai",
+  ["Sunday"] = "Sunnuntai",
+  
+  -- UI elements
+  ["Navigation"] = "Navigointi",
+  ["Next"] = "Seuraava",
+  ["Previous"] = "Edellinen",
+  ["None"] = "Ei mitään",
+  ["Points"] = "Pisteet",
+  ["Progress"] = "Edistys",
+  ["Quest Tracker"] = "Tehtäväseuranta",
+  ["Rank"] = "Sijoitus",
+  ["Reset"] = "Palauta",
+  ["Show All"] = "Näytä kaikki",
+  ["Status"] = "Tila",
+  ["Stop"] = "Pysäytä",
+  ["Submit"] = "Lähetä",
+  ["Track"] = "Seuraa",
+  ["Updater"] = "Päivitys",
+  ["Wiki"] = "Wiki",
+  ["World"] = "Maailma",
+  
+  -- Account
+  ["Manage Account"] = "Hallinnoi tiliä",
+  ["Free"] = "Ilmainen",
+  
+  -- Items
+  ["Wrap"] = "Pakkaa",
+  ["Unwrap"] = "Pura",
+  
+  -- Misc
+  ["Chat Off"] = "Chat pois",
+  ["Chat On"] = "Chat päällä",
+  ["Local Chat"] = "Paikallinen chat",
+  ["ok"] = "ok",
+  ["remove"] = "poista",
+}
+for k,v in pairs(add) do
+  locale.translation[k] = locale.translation[k] or v
+end

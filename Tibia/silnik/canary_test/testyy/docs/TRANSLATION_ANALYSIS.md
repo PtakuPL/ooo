@@ -261,3 +261,6 @@ end
 | 2025-12-05 | Czech (cs) translations expanded: 566 → 670+ entries |
 | 2025-12-05 | Swedish (sv) translations expanded: 506 → 610+ entries |
 | 2025-12-05 | Hungarian (hu) translations expanded: 400 → 510+ entries |
+| 2025-12-05 | Danish (da) translations expanded: 566 → 670+ entries |
+| 2025-12-05 | Finnish (fi) translations expanded: 394 → 500+ entries |
+| 2025-12-05 | Norwegian (no) translations expanded: 394 → 500+ entries |

@@ -567,3 +567,107 @@ locale = {
 }
 
 modules.client_locales.installLocale(locale)
+
+-- Additional translations merged at runtime
+local add = {
+  -- Death dialogs
+  ["Alas! Brave adventurer, you have met a sad fate.\nBut do not despair, for the gods will bring you back\ninto this world in exchange for a small sacrifice\n\nSimply click on Ok to resume your journeys!"] = "Ak! Modige eventyrer, du har mødt en trist skæbne.\nMen fortvivl ikke, guderne vil bringe dig tilbage\ntil denne verden i bytte for et lille offer\n\nKlik bare på OK for at genoptage dine rejser!",
+  ["Journey Onwards"] = "Fortsæt rejsen",
+
+  -- Hotkey management
+  ["Add hotkey preset"] = "Tilføj genvejsforudindstilling",
+  ["Add new group"] = "Tilføj ny gruppe",
+  ["Copy hotkey preset"] = "Kopier forudindstilling",
+  ["Edit group %s"] = "Rediger gruppe %s",
+  ["Remove group %s"] = "Fjern gruppe %s",
+  ["Hide groups"] = "Skjul grupper",
+  ["Show groups"] = "Vis grupper",
+  
+  -- Cyclopedia extended
+  ["Imbuement Tracker"] = "Imbuement-sporer",
+  ["Prey Tracker"] = "Bytsporer",
+  ["Prey Dialog"] = "Bytdialog",
+  ["Select monster"] = "Vælg monster",
+  ["Account Badges"] = "Kontobadges",
+  ["Boss Points"] = "Bosspoint",
+  ["Creature Name"] = "Væsens navn",
+  
+  -- House system
+  ["Accept House Transfer"] = "Accepter husoverførsel",
+  ["Cancel House Transfer"] = "Annuller husoverførsel",
+  ["Move Out"] = "Flyt ud",
+  ["New Owner:"] = "Ny ejer:",
+  ["No house selected"] = "Intet hus valgt",
+  ["Place Your Bid"] = "Afgiv dit bud",
+  
+  -- Combat stats
+  ["Life Leech"] = "Livsstjæling",
+  ["Mana Leech"] = "Manastjæling",
+  ["Magic"] = "Magi",
+  ["Physical"] = "Fysisk",
+  ["Dodge"] = "Undvig",
+  
+  -- Elements
+  ["Death"] = "Død",
+  ["Earth"] = "Jord",
+  ["Energy"] = "Energi",
+  ["Fire"] = "Ild",
+  ["Holy"] = "Hellig",
+  ["Ice"] = "Is",
+  
+  -- Days
+  ["Monday"] = "Mandag",
+  ["Tuesday"] = "Tirsdag",
+  ["Wednesday"] = "Onsdag",
+  ["Thursday"] = "Torsdag",
+  ["Saturday"] = "Lørdag",
+  ["Sunday"] = "Søndag",
+  
+  -- UI elements
+  ["Navigation"] = "Navigation",
+  ["Next"] = "Næste",
+  ["Previous"] = "Forrige",
+  ["None"] = "Ingen",
+  ["Points"] = "Point",
+  ["Progress"] = "Fremskridt",
+  ["Quest Tracker"] = "Opgavesporer",
+  ["Rank"] = "Rang",
+  ["Reset"] = "Nulstil",
+  ["Show All"] = "Vis alle",
+  ["Status"] = "Status",
+  ["Stop"] = "Stop",
+  ["Submit"] = "Indsend",
+  ["Track"] = "Spor",
+  ["Updater"] = "Opdaterer",
+  ["Wiki"] = "Wiki",
+  ["World"] = "Verden",
+  
+  -- Prey system
+  ["Prey Creatures"] = "Bytvæsener",
+  ["Preys"] = "Byt",
+  
+  -- Tasks
+  ["Summary"] = "Resumé",
+  
+  -- Account
+  ["Manage Account"] = "Administrer konto",
+  ["Free"] = "Gratis",
+  
+  -- Items
+  ["Wrap"] = "Pak ind",
+  ["Unwrap"] = "Pak ud",
+  
+  -- Misc
+  ["Chat Off"] = "Chat fra",
+  ["Chat On"] = "Chat til",
+  ["Local Chat"] = "Lokal chat",
+  ["Top"] = "Top",
+  ["Bottom"] = "Bund",
+  ["Compact"] = "Kompakt",
+  ["Large"] = "Stor",
+  ["ok"] = "ok",
+  ["remove"] = "fjern",
+}
+for k,v in pairs(add) do
+  locale.translation[k] = locale.translation[k] or v
+end

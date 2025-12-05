@@ -232,6 +232,171 @@ locale = {
     ["minutes"] = "წუთი",
     ["hours"] = "საათი",
     ["days"] = "დღე",
+    
+    -- Extended Time
+    ["Second"] = "წამი",
+    ["Seconds"] = "წამი",
+    ["Minute"] = "წუთი",
+    ["Minutes"] = "წუთი",
+    ["Hour"] = "საათი",
+    ["Hours"] = "საათი",
+    ["Day"] = "დღე",
+    ["Days"] = "დღე",
+    
+    -- Connection Messages
+    ["Connection error"] = "კავშირის შეცდომა",
+    ["Unable to connect"] = "ვერ დაუკავშირდა",
+    ["Connection lost"] = "კავშირი დაიკარგა",
+    ["Reconnecting..."] = "ხელახლა დაკავშირება...",
+    ["Connecting..."] = "დაკავშირება...",
+    
+    -- Display Settings
+    ["Show creature health bars"] = "მონსტრების ჯანმრთელობის ზოლების ჩვენება",
+    ["Show creature names"] = "მონსტრების სახელების ჩვენება",
+    ["Show player health bars"] = "მოთამაშეების ჯანმრთელობის ზოლების ჩვენება",
+    ["Show player names"] = "მოთამაშეების სახელების ჩვენება",
+    
+    -- Combat Stats
+    ["Critical Hit Chance"] = "კრიტიკული დარტყმის შანსი",
+    ["Critical Hit Damage"] = "კრიტიკული დარტყმის ზიანი",
+    ["Life Leech Chance"] = "სიცოცხლის მოპარვის შანსი",
+    ["Life Leech Amount"] = "სიცოცხლის მოპარვის რაოდენობა",
+    ["Mana Leech Chance"] = "მანის მოპარვის შანსი",
+    ["Mana Leech Amount"] = "მანის მოპარვის რაოდენობა",
+    
+    -- Market Extended
+    ["Market Error"] = "ბაზრის შეცდომა",
+    ["Buy Offer"] = "ყიდვის შეთავაზება",
+    ["Sell Offer"] = "გაყიდვის შეთავაზება",
+    ["My Offers"] = "ჩემი შეთავაზებები",
+    ["Offer History"] = "შეთავაზებების ისტორია",
+    
+    -- Authentication
+    ["Authenticator Token"] = "ავთენტიფიკატორის ტოკენი",
+    ["Two-Factor Authentication"] = "ორფაქტორიანი ავთენტიფიკაცია",
+    ["Enter Token"] = "შეიყვანეთ ტოკენი",
+    
+    -- Inventory Slots
+    ["Head Slot"] = "თავის სლოტი",
+    ["Armor Slot"] = "ჯავშნის სლოტი",
+    ["Legs Slot"] = "ფეხების სლოტი",
+    ["Boots Slot"] = "ფეხსაცმლის სლოტი",
+    ["Ring Slot"] = "ბეჭდის სლოტი",
+    ["Amulet Slot"] = "ამულეტის სლოტი",
+    ["Weapon Slot"] = "იარაღის სლოტი",
+    ["Shield Slot"] = "ფარის სლოტი",
+    ["Backpack Slot"] = "ზურგჩანთის სლოტი",
+    
+    -- Elements
+    ["Fire"] = "ცეცხლი",
+    ["Ice"] = "ყინული",
+    ["Earth"] = "მიწა",
+    ["Energy"] = "ენერგია",
+    ["Holy"] = "წმინდა",
+    ["Death"] = "სიკვდილი",
+    ["Physical"] = "ფიზიკური",
+    
+    -- Vocations
+    ["Druid"] = "დრუიდი",
+    ["Sorcerer"] = "მაგი",
+    ["Paladin"] = "პალადინი",
+    ["No Vocation"] = "პროფესიის გარეშე",
+    
+    -- House Extended
+    ["House Auction"] = "სახლის აუქციონი",
+    ["Current Bid"] = "მიმდინარე ფასი",
+    ["Highest Bidder"] = "უმაღლესი ფასის შემომთავაზებელი",
+    ["Place Bid"] = "ფასის შეთავაზება",
+    ["Rent"] = "ქირა",
+    ["Owner"] = "მფლობელი",
+    
+    -- Screenshots
+    ["Screenshot"] = "ეკრანის ანაბეჭდი",
+    ["Screenshot saved"] = "ეკრანის ანაბეჭდი შენახულია",
+    ["Take Screenshot"] = "ეკრანის ანაბეჭდის გადაღება",
+    
+    -- Audio Extended
+    ["Sound"] = "ხმა",
+    ["Music"] = "მუსიკა",
+    ["Sound Volume"] = "ხმის სიძლიერე",
+    ["Music Volume"] = "მუსიკის სიძლიერე",
+    ["Mute"] = "გათიშვა",
+    
+    -- Additional UI
+    ["Show"] = "ჩვენება",
+    ["Hide"] = "დამალვა",
+    ["Enable"] = "ჩართვა",
+    ["Disable"] = "გამორთვა",
+    ["Reset"] = "გადატვირთვა",
+    ["Confirm"] = "დადასტურება",
+    ["Continue"] = "გაგრძელება",
+    ["Back"] = "უკან",
+    ["Next"] = "შემდეგი",
+    ["Previous"] = "წინა",
+    ["Filter"] = "ფილტრი",
+    ["Sort"] = "დალაგება",
+    
+    -- Cyclopedia Extended
+    ["Items"] = "ნივთები",
+    ["Creatures"] = "არსებები",
+    ["Achievements"] = "მიღწევები",
+    ["Maps"] = "რუკები",
+    ["Quests"] = "დავალებები",
+    
+    -- Loot Extended
+    ["Gold"] = "ოქრო",
+    ["Platinum"] = "პლატინა",
+    ["Crystal"] = "კრისტალი",
+    ["Coins"] = "მონეტები",
+    
+    -- Events
+    ["Event"] = "ღონისძიება",
+    ["Events"] = "ღონისძიებები",
+    ["Event Schedule"] = "ღონისძიებების განრიგი",
+    ["Active Events"] = "აქტიური ღონისძიებები",
+    
+    -- Prey System
+    ["Prey"] = "ნადირობა",
+    ["Prey Slot"] = "ნადირობის სლოტი",
+    ["Select Prey"] = "ნადირობის არჩევა",
+    ["Prey Bonus"] = "ნადირობის ბონუსი",
+    
+    -- Quick Actions
+    ["Quick Actions"] = "სწრაფი მოქმედებები",
+    ["Action Bar"] = "მოქმედების ზოლი",
+    ["Shortcut"] = "მალსახმობი",
+    
+    -- Map Features
+    ["Minimap"] = "მინი რუკა",
+    ["World Map"] = "მსოფლიო რუკა",
+    ["Mark"] = "მონიშვნა",
+    ["Waypoint"] = "წერტილი",
+    
+    -- Chat Extended
+    ["Chat"] = "ჩატი",
+    ["Chat Log"] = "ჩატის ისტორია",
+    ["Server Log"] = "სერვერის ისტორია",
+    ["Clear Chat"] = "ჩატის გასუფთავება",
+    
+    -- Guild System
+    ["Guild"] = "გილდია",
+    ["Create Guild"] = "გილდიის შექმნა",
+    ["Join Guild"] = "გილდიაში გაწევრიანება",
+    ["Leave Guild"] = "გილდიიდან გასვლა",
+    ["Guild Members"] = "გილდიის წევრები",
+    
+    -- Format Strings
+    ["You have %d gold"] = "თქვენ გაქვთ %d ოქრო",
+    ["Level %d"] = "დონე %d",
+    ["%d seconds remaining"] = "%d წამი დარჩენილია",
+    ["%d minutes remaining"] = "%d წუთი დარჩენილია",
+    
+    -- Rule Violations
+    ["Offensive Name"] = "შეურაცხმყოფელი სახელი",
+    ["Invalid Name Format"] = "არასწორი სახელის ფორმატი",
+    ["Unsuitable Name"] = "შეუსაბამო სახელი",
+    ["Name Inciting Rule Violation"] = "სახელი აღძრავს წესების დარღვევას",
+    ["Offensive Statement"] = "შეურაცხმყოფელი განცხადება",
   }
 }
 

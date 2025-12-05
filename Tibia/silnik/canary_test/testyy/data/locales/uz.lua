@@ -232,6 +232,171 @@ locale = {
     ["minutes"] = "daqiqa",
     ["hours"] = "soat",
     ["days"] = "kun",
+    
+    -- Extended Time
+    ["Second"] = "Soniya",
+    ["Seconds"] = "Soniyalar",
+    ["Minute"] = "Daqiqa",
+    ["Minutes"] = "Daqiqalar",
+    ["Hour"] = "Soat",
+    ["Hours"] = "Soatlar",
+    ["Day"] = "Kun",
+    ["Days"] = "Kunlar",
+    
+    -- Connection Messages
+    ["Connection error"] = "Ulanish xatosi",
+    ["Unable to connect"] = "Ulana olmadi",
+    ["Connection lost"] = "Ulanish uzildi",
+    ["Reconnecting..."] = "Qayta ulanmoqda...",
+    ["Connecting..."] = "Ulanmoqda...",
+    
+    -- Display Settings
+    ["Show creature health bars"] = "Jonzodlarning sog'liq panelini ko'rsatish",
+    ["Show creature names"] = "Jonzodlarning nomini ko'rsatish",
+    ["Show player health bars"] = "O'yinchilarning sog'liq panelini ko'rsatish",
+    ["Show player names"] = "O'yinchilarning nomini ko'rsatish",
+    
+    -- Combat Stats
+    ["Critical Hit Chance"] = "Tanqidiy zarba imkoniyati",
+    ["Critical Hit Damage"] = "Tanqidiy zarba zarar",
+    ["Life Leech Chance"] = "Hayot so'rish imkoniyati",
+    ["Life Leech Amount"] = "Hayot so'rish miqdori",
+    ["Mana Leech Chance"] = "Mana so'rish imkoniyati",
+    ["Mana Leech Amount"] = "Mana so'rish miqdori",
+    
+    -- Market Extended
+    ["Market Error"] = "Bozor xatosi",
+    ["Buy Offer"] = "Sotib olish taklifi",
+    ["Sell Offer"] = "Sotish taklifi",
+    ["My Offers"] = "Mening takliflarim",
+    ["Offer History"] = "Takliflar tarixi",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Autentifikator tokeni",
+    ["Two-Factor Authentication"] = "Ikki faktorli autentifikatsiya",
+    ["Enter Token"] = "Tokenni kiriting",
+    
+    -- Inventory Slots
+    ["Head Slot"] = "Bosh joyi",
+    ["Armor Slot"] = "Zirh joyi",
+    ["Legs Slot"] = "Oyoq joyi",
+    ["Boots Slot"] = "Etik joyi",
+    ["Ring Slot"] = "Uzuk joyi",
+    ["Amulet Slot"] = "Tumar joyi",
+    ["Weapon Slot"] = "Qurol joyi",
+    ["Shield Slot"] = "Qalqon joyi",
+    ["Backpack Slot"] = "Ryukzak joyi",
+    
+    -- Elements
+    ["Fire"] = "Olov",
+    ["Ice"] = "Muz",
+    ["Earth"] = "Yer",
+    ["Energy"] = "Energiya",
+    ["Holy"] = "Muqaddas",
+    ["Death"] = "O'lim",
+    ["Physical"] = "Jismoniy",
+    
+    -- Vocations
+    ["Druid"] = "Druid",
+    ["Sorcerer"] = "Sehrgar",
+    ["Paladin"] = "Paladin",
+    ["No Vocation"] = "Kasb yo'q",
+    
+    -- House Extended
+    ["House Auction"] = "Uy auktsioni",
+    ["Current Bid"] = "Joriy taklif",
+    ["Highest Bidder"] = "Eng yuqori taklif beruvchi",
+    ["Place Bid"] = "Taklif qo'yish",
+    ["Rent"] = "Ijara",
+    ["Owner"] = "Egasi",
+    
+    -- Screenshots
+    ["Screenshot"] = "Skrinshot",
+    ["Screenshot saved"] = "Skrinshot saqlandi",
+    ["Take Screenshot"] = "Skrinshot olish",
+    
+    -- Audio Extended
+    ["Sound"] = "Tovush",
+    ["Music"] = "Musiqa",
+    ["Sound Volume"] = "Tovush darajasi",
+    ["Music Volume"] = "Musiqa darajasi",
+    ["Mute"] = "Tovushni o'chirish",
+    
+    -- Additional UI
+    ["Show"] = "Ko'rsatish",
+    ["Hide"] = "Yashirish",
+    ["Enable"] = "Yoqish",
+    ["Disable"] = "O'chirish",
+    ["Reset"] = "Qayta tiklash",
+    ["Confirm"] = "Tasdiqlash",
+    ["Continue"] = "Davom etish",
+    ["Back"] = "Orqaga",
+    ["Next"] = "Keyingi",
+    ["Previous"] = "Oldingi",
+    ["Filter"] = "Filtr",
+    ["Sort"] = "Saralash",
+    
+    -- Cyclopedia Extended
+    ["Items"] = "Buyumlar",
+    ["Creatures"] = "Jonzodlar",
+    ["Achievements"] = "Yutuqlar",
+    ["Maps"] = "Xaritalar",
+    ["Quests"] = "Topshiriqlar",
+    
+    -- Loot Extended
+    ["Gold"] = "Oltin",
+    ["Platinum"] = "Platina",
+    ["Crystal"] = "Kristall",
+    ["Coins"] = "Tangalar",
+    
+    -- Events
+    ["Event"] = "Tadbir",
+    ["Events"] = "Tadbirlar",
+    ["Event Schedule"] = "Tadbirlar jadvali",
+    ["Active Events"] = "Faol tadbirlar",
+    
+    -- Prey System
+    ["Prey"] = "O'lja",
+    ["Prey Slot"] = "O'lja joyi",
+    ["Select Prey"] = "O'ljani tanlash",
+    ["Prey Bonus"] = "O'lja bonusi",
+    
+    -- Quick Actions
+    ["Quick Actions"] = "Tez harakatlar",
+    ["Action Bar"] = "Harakat paneli",
+    ["Shortcut"] = "Yorliq",
+    
+    -- Map Features
+    ["Minimap"] = "Kichik xarita",
+    ["World Map"] = "Dunyo xaritasi",
+    ["Mark"] = "Belgi",
+    ["Waypoint"] = "Nuqta",
+    
+    -- Chat Extended
+    ["Chat"] = "Chat",
+    ["Chat Log"] = "Chat tarixi",
+    ["Server Log"] = "Server tarixi",
+    ["Clear Chat"] = "Chatni tozalash",
+    
+    -- Guild System
+    ["Guild"] = "Gildiya",
+    ["Create Guild"] = "Gildiya yaratish",
+    ["Join Guild"] = "Gildiyaga qo'shilish",
+    ["Leave Guild"] = "Gildiyadan chiqish",
+    ["Guild Members"] = "Gildiya a'zolari",
+    
+    -- Format Strings
+    ["You have %d gold"] = "Sizda %d oltin bor",
+    ["Level %d"] = "Daraja %d",
+    ["%d seconds remaining"] = "%d soniya qoldi",
+    ["%d minutes remaining"] = "%d daqiqa qoldi",
+    
+    -- Rule Violations
+    ["Offensive Name"] = "Haqoratli nom",
+    ["Invalid Name Format"] = "Noto'g'ri nom formati",
+    ["Unsuitable Name"] = "Nomuvofiq nom",
+    ["Name Inciting Rule Violation"] = "Qoida buzishga undaydigan nom",
+    ["Offensive Statement"] = "Haqoratli bayonot",
   }
 }
 

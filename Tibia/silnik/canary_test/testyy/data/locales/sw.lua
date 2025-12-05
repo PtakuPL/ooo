@@ -232,6 +232,171 @@ locale = {
     ["minutes"] = "dakika",
     ["hours"] = "masaa",
     ["days"] = "siku",
+    
+    -- Extended Time
+    ["Second"] = "Sekunde",
+    ["Seconds"] = "Sekunde",
+    ["Minute"] = "Dakika",
+    ["Minutes"] = "Dakika",
+    ["Hour"] = "Saa",
+    ["Hours"] = "Masaa",
+    ["Day"] = "Siku",
+    ["Days"] = "Siku",
+    
+    -- Connection Messages
+    ["Connection error"] = "Hitilafu ya muunganisho",
+    ["Unable to connect"] = "Haiwezi kuunganisha",
+    ["Connection lost"] = "Muunganisho umepotea",
+    ["Reconnecting..."] = "Inaunganisha tena...",
+    ["Connecting..."] = "Inaunganisha...",
+    
+    -- Display Settings
+    ["Show creature health bars"] = "Onyesha mabaa ya afya ya viumbe",
+    ["Show creature names"] = "Onyesha majina ya viumbe",
+    ["Show player health bars"] = "Onyesha mabaa ya afya ya wachezaji",
+    ["Show player names"] = "Onyesha majina ya wachezaji",
+    
+    -- Combat Stats
+    ["Critical Hit Chance"] = "Nafasi ya kupiga muhimu",
+    ["Critical Hit Damage"] = "Uharibifu wa kupiga muhimu",
+    ["Life Leech Chance"] = "Nafasi ya kunyonya uhai",
+    ["Life Leech Amount"] = "Kiasi cha kunyonya uhai",
+    ["Mana Leech Chance"] = "Nafasi ya kunyonya mana",
+    ["Mana Leech Amount"] = "Kiasi cha kunyonya mana",
+    
+    -- Market Extended
+    ["Market Error"] = "Hitilafu ya soko",
+    ["Buy Offer"] = "Toleo la ununuzi",
+    ["Sell Offer"] = "Toleo la kuuza",
+    ["My Offers"] = "Matoleo yangu",
+    ["Offer History"] = "Historia ya matoleo",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Tokeni ya uthibitishaji",
+    ["Two-Factor Authentication"] = "Uthibitishaji wa sababu mbili",
+    ["Enter Token"] = "Ingiza tokeni",
+    
+    -- Inventory Slots
+    ["Head Slot"] = "Nafasi ya kichwa",
+    ["Armor Slot"] = "Nafasi ya silaha",
+    ["Legs Slot"] = "Nafasi ya miguu",
+    ["Boots Slot"] = "Nafasi ya viatu",
+    ["Ring Slot"] = "Nafasi ya pete",
+    ["Amulet Slot"] = "Nafasi ya hirizi",
+    ["Weapon Slot"] = "Nafasi ya silaha",
+    ["Shield Slot"] = "Nafasi ya ngao",
+    ["Backpack Slot"] = "Nafasi ya begi",
+    
+    -- Elements
+    ["Fire"] = "Moto",
+    ["Ice"] = "Barafu",
+    ["Earth"] = "Ardhi",
+    ["Energy"] = "Nishati",
+    ["Holy"] = "Takatifu",
+    ["Death"] = "Kifo",
+    ["Physical"] = "Kimwili",
+    
+    -- Vocations
+    ["Druid"] = "Druid",
+    ["Sorcerer"] = "Mchawi",
+    ["Paladin"] = "Paladin",
+    ["No Vocation"] = "Hakuna kazi",
+    
+    -- House Extended
+    ["House Auction"] = "Mnada wa nyumba",
+    ["Current Bid"] = "Bei ya sasa",
+    ["Highest Bidder"] = "Mtoaji bei ya juu",
+    ["Place Bid"] = "Weka bei",
+    ["Rent"] = "Kodi",
+    ["Owner"] = "Mmiliki",
+    
+    -- Screenshots
+    ["Screenshot"] = "Picha ya skrini",
+    ["Screenshot saved"] = "Picha ya skrini imehifadhiwa",
+    ["Take Screenshot"] = "Piga picha ya skrini",
+    
+    -- Audio Extended
+    ["Sound"] = "Sauti",
+    ["Music"] = "Muziki",
+    ["Sound Volume"] = "Kiwango cha sauti",
+    ["Music Volume"] = "Kiwango cha muziki",
+    ["Mute"] = "Nyamazisha",
+    
+    -- Additional UI
+    ["Show"] = "Onyesha",
+    ["Hide"] = "Ficha",
+    ["Enable"] = "Wezesha",
+    ["Disable"] = "Lemaza",
+    ["Reset"] = "Weka upya",
+    ["Confirm"] = "Thibitisha",
+    ["Continue"] = "Endelea",
+    ["Back"] = "Rudi",
+    ["Next"] = "Ifuatayo",
+    ["Previous"] = "Iliyopita",
+    ["Filter"] = "Chuja",
+    ["Sort"] = "Panga",
+    
+    -- Cyclopedia Extended
+    ["Items"] = "Vitu",
+    ["Creatures"] = "Viumbe",
+    ["Achievements"] = "Mafanikio",
+    ["Maps"] = "Ramani",
+    ["Quests"] = "Misheni",
+    
+    -- Loot Extended
+    ["Gold"] = "Dhahabu",
+    ["Platinum"] = "Platinamu",
+    ["Crystal"] = "Fuwele",
+    ["Coins"] = "Sarafu",
+    
+    -- Events
+    ["Event"] = "Tukio",
+    ["Events"] = "Matukio",
+    ["Event Schedule"] = "Ratiba ya matukio",
+    ["Active Events"] = "Matukio yanayoendelea",
+    
+    -- Prey System
+    ["Prey"] = "Mawindo",
+    ["Prey Slot"] = "Nafasi ya mawindo",
+    ["Select Prey"] = "Chagua mawindo",
+    ["Prey Bonus"] = "Bonasi ya mawindo",
+    
+    -- Quick Actions
+    ["Quick Actions"] = "Vitendo vya haraka",
+    ["Action Bar"] = "Mwambaa wa vitendo",
+    ["Shortcut"] = "Njia fupi",
+    
+    -- Map Features
+    ["Minimap"] = "Ramani ndogo",
+    ["World Map"] = "Ramani ya ulimwengu",
+    ["Mark"] = "Alama",
+    ["Waypoint"] = "Sehemu",
+    
+    -- Chat Extended
+    ["Chat"] = "Gumzo",
+    ["Chat Log"] = "Rekodi ya gumzo",
+    ["Server Log"] = "Rekodi ya seva",
+    ["Clear Chat"] = "Futa gumzo",
+    
+    -- Guild System
+    ["Guild"] = "Chama",
+    ["Create Guild"] = "Unda chama",
+    ["Join Guild"] = "Jiunge na chama",
+    ["Leave Guild"] = "Ondoka chama",
+    ["Guild Members"] = "Wanachama wa chama",
+    
+    -- Format Strings
+    ["You have %d gold"] = "Una dhahabu %d",
+    ["Level %d"] = "Kiwango %d",
+    ["%d seconds remaining"] = "Sekunde %d zimebaki",
+    ["%d minutes remaining"] = "Dakika %d zimebaki",
+    
+    -- Rule Violations
+    ["Offensive Name"] = "Jina la kukera",
+    ["Invalid Name Format"] = "Muundo wa jina batili",
+    ["Unsuitable Name"] = "Jina lisilo la kufaa",
+    ["Name Inciting Rule Violation"] = "Jina linachochea ukiukaji wa sheria",
+    ["Offensive Statement"] = "Kauli ya kukera",
   }
 }
 

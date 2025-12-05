@@ -232,6 +232,171 @@ locale = {
     ["minutes"] = "минут",
     ["hours"] = "сағат",
     ["days"] = "күн",
+    
+    -- Extended Time
+    ["Second"] = "Секунд",
+    ["Seconds"] = "Секундтар",
+    ["Minute"] = "Минут",
+    ["Minutes"] = "Минуттар",
+    ["Hour"] = "Сағат",
+    ["Hours"] = "Сағаттар",
+    ["Day"] = "Күн",
+    ["Days"] = "Күндер",
+    
+    -- Connection Messages
+    ["Connection error"] = "Қосылу қатесі",
+    ["Unable to connect"] = "Қосылу мүмкін емес",
+    ["Connection lost"] = "Байланыс үзілді",
+    ["Reconnecting..."] = "Қайта қосылуда...",
+    ["Connecting..."] = "Қосылуда...",
+    
+    -- Display Settings
+    ["Show creature health bars"] = "Жануарлардың денсаулық жолағын көрсету",
+    ["Show creature names"] = "Жануарлардың атын көрсету",
+    ["Show player health bars"] = "Ойыншылардың денсаулық жолағын көрсету",
+    ["Show player names"] = "Ойыншылардың атын көрсету",
+    
+    -- Combat Stats
+    ["Critical Hit Chance"] = "Сыни соққы мүмкіндігі",
+    ["Critical Hit Damage"] = "Сыни соққы зақымы",
+    ["Life Leech Chance"] = "Өмір сорғыш мүмкіндігі",
+    ["Life Leech Amount"] = "Өмір сорғыш мөлшері",
+    ["Mana Leech Chance"] = "Мана сорғыш мүмкіндігі",
+    ["Mana Leech Amount"] = "Мана сорғыш мөлшері",
+    
+    -- Market Extended
+    ["Market Error"] = "Базар қатесі",
+    ["Buy Offer"] = "Сатып алу ұсынысы",
+    ["Sell Offer"] = "Сату ұсынысы",
+    ["My Offers"] = "Менің ұсыныстарым",
+    ["Offer History"] = "Ұсыныстар тарихы",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Аутентификатор токені",
+    ["Two-Factor Authentication"] = "Екі факторлы аутентификация",
+    ["Enter Token"] = "Токенді енгізіңіз",
+    
+    -- Inventory Slots
+    ["Head Slot"] = "Бас ұяшығы",
+    ["Armor Slot"] = "Сауыт ұяшығы",
+    ["Legs Slot"] = "Аяқ ұяшығы",
+    ["Boots Slot"] = "Етік ұяшығы",
+    ["Ring Slot"] = "Сақина ұяшығы",
+    ["Amulet Slot"] = "Амулет ұяшығы",
+    ["Weapon Slot"] = "Қару ұяшығы",
+    ["Shield Slot"] = "Қалқан ұяшығы",
+    ["Backpack Slot"] = "Арқа сөмке ұяшығы",
+    
+    -- Elements
+    ["Fire"] = "От",
+    ["Ice"] = "Мұз",
+    ["Earth"] = "Жер",
+    ["Energy"] = "Энергия",
+    ["Holy"] = "Қасиетті",
+    ["Death"] = "Өлім",
+    ["Physical"] = "Физикалық",
+    
+    -- Vocations
+    ["Druid"] = "Друид",
+    ["Sorcerer"] = "Сиқыршы",
+    ["Paladin"] = "Паладин",
+    ["No Vocation"] = "Мамандық жоқ",
+    
+    -- House Extended
+    ["House Auction"] = "Үй аукционы",
+    ["Current Bid"] = "Ағымдағы баға",
+    ["Highest Bidder"] = "Ең жоғары ұсынушы",
+    ["Place Bid"] = "Баға ұсыну",
+    ["Rent"] = "Жалдау",
+    ["Owner"] = "Иесі",
+    
+    -- Screenshots
+    ["Screenshot"] = "Скриншот",
+    ["Screenshot saved"] = "Скриншот сақталды",
+    ["Take Screenshot"] = "Скриншот түсіру",
+    
+    -- Audio Extended
+    ["Sound"] = "Дыбыс",
+    ["Music"] = "Музыка",
+    ["Sound Volume"] = "Дыбыс деңгейі",
+    ["Music Volume"] = "Музыка деңгейі",
+    ["Mute"] = "Дыбысты өшіру",
+    
+    -- Additional UI
+    ["Show"] = "Көрсету",
+    ["Hide"] = "Жасыру",
+    ["Enable"] = "Қосу",
+    ["Disable"] = "Өшіру",
+    ["Reset"] = "Қалпына келтіру",
+    ["Confirm"] = "Растау",
+    ["Continue"] = "Жалғастыру",
+    ["Back"] = "Артқа",
+    ["Next"] = "Келесі",
+    ["Previous"] = "Алдыңғы",
+    ["Filter"] = "Сүзгі",
+    ["Sort"] = "Сұрыптау",
+    
+    -- Cyclopedia Extended
+    ["Items"] = "Заттар",
+    ["Creatures"] = "Жануарлар",
+    ["Achievements"] = "Жетістіктер",
+    ["Maps"] = "Карталар",
+    ["Quests"] = "Квесттер",
+    
+    -- Loot Extended
+    ["Gold"] = "Алтын",
+    ["Platinum"] = "Платина",
+    ["Crystal"] = "Кристалл",
+    ["Coins"] = "Тиындар",
+    
+    -- Events
+    ["Event"] = "Оқиға",
+    ["Events"] = "Оқиғалар",
+    ["Event Schedule"] = "Оқиғалар кестесі",
+    ["Active Events"] = "Белсенді оқиғалар",
+    
+    -- Prey System
+    ["Prey"] = "Жемтік",
+    ["Prey Slot"] = "Жемтік ұяшығы",
+    ["Select Prey"] = "Жемтік таңдау",
+    ["Prey Bonus"] = "Жемтік бонусы",
+    
+    -- Quick Actions
+    ["Quick Actions"] = "Жылдам әрекеттер",
+    ["Action Bar"] = "Әрекет жолағы",
+    ["Shortcut"] = "Таңбаша",
+    
+    -- Map Features
+    ["Minimap"] = "Шағын карта",
+    ["World Map"] = "Әлем картасы",
+    ["Mark"] = "Белгі",
+    ["Waypoint"] = "Нүкте",
+    
+    -- Chat Extended
+    ["Chat"] = "Чат",
+    ["Chat Log"] = "Чат тарихы",
+    ["Server Log"] = "Сервер тарихы",
+    ["Clear Chat"] = "Чатты тазалау",
+    
+    -- Guild System
+    ["Guild"] = "Гильдия",
+    ["Create Guild"] = "Гильдия құру",
+    ["Join Guild"] = "Гильдияға қосылу",
+    ["Leave Guild"] = "Гильдиядан шығу",
+    ["Guild Members"] = "Гильдия мүшелері",
+    
+    -- Format Strings
+    ["You have %d gold"] = "Сізде %d алтын бар",
+    ["Level %d"] = "Деңгей %d",
+    ["%d seconds remaining"] = "%d секунд қалды",
+    ["%d minutes remaining"] = "%d минут қалды",
+    
+    -- Rule Violations
+    ["Offensive Name"] = "Қорлайтын ат",
+    ["Invalid Name Format"] = "Жарамсыз ат форматы",
+    ["Unsuitable Name"] = "Жарамсыз ат",
+    ["Name Inciting Rule Violation"] = "Ереже бұзуға итермелейтін ат",
+    ["Offensive Statement"] = "Қорлайтын мәлімдеме",
   }
 }
 

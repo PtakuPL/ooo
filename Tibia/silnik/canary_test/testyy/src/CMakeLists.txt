@@ -485,13 +485,8 @@ else()
     find_package(GLEW REQUIRED)
     find_package(LuaJIT REQUIRED)
   else()
-    # For WASM builds, find Lua via CMake's standard FindLua module (not our custom one)
-    # Remove project's cmake/ from module path temporarily to use CMake's standard FindLua
-    set(_SAVED_CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH})
-    list(REMOVE_ITEM CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
+    # For WASM builds, use our updated FindLua.cmake which now supports Lua 5.4 for WASM
     find_package(Lua REQUIRED)
-    set(CMAKE_MODULE_PATH ${_SAVED_CMAKE_MODULE_PATH})
-    unset(_SAVED_CMAKE_MODULE_PATH)
     # Use LUA_LIBRARIES if available, otherwise fall back to LUA_LIBRARY
     if(LUA_LIBRARIES)
       set(LUA_LIBRARY ${LUA_LIBRARIES})

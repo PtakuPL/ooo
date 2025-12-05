@@ -232,6 +232,132 @@ locale = {
     ["minutes"] = "dəqiqə",
     ["hours"] = "saat",
     ["days"] = "gün",
+    ["Day"] = "Gün",
+    ["Night"] = "Gecə",
+    ["Hour"] = "Saat",
+    ["Minute"] = "Dəqiqə",
+    ["Second"] = "Saniyə",
+    
+    -- Connection messages
+    ["Connection error"] = "Bağlantı xətası",
+    ["Connection refused"] = "Bağlantı rədd edildi",
+    ["Connection timed out"] = "Bağlantı vaxtı bitdi",
+    ["Unable to connect"] = "Bağlanmaq mümkün deyil",
+    ["Lost connection"] = "Bağlantı itdi",
+    
+    -- Display settings
+    ["Show creature names"] = "Canlı adlarını göstər",
+    ["Show player names"] = "Oyunçu adlarını göstər",
+    ["Show health bar"] = "Sağlamlıq zolağını göstər",
+    ["Show mana bar"] = "Mana zolağını göstər",
+    
+    -- Combat stats
+    ["Critical Hit Chance"] = "Kritik zərbə şansı",
+    ["Critical Hit Damage"] = "Kritik zərbə zərəri",
+    ["Life Leech"] = "Həyat oğurluğu",
+    ["Mana Leech"] = "Mana oğurluğu",
+    
+    -- Market extended
+    ["Total Price"] = "Ümumi qiymət",
+    ["Piece Price"] = "Ədəd qiyməti",
+    ["Seller"] = "Satıcı",
+    ["Buyer"] = "Alıcı",
+    ["Create Offer"] = "Təklif yarat",
+    ["Cancel Offer"] = "Təklifi ləğv et",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Autentifikasiya tokeni",
+    ["Two-Factor Authentication"] = "İki faktorlu autentifikasiya",
+    
+    -- Inventory slots
+    ["Helmet"] = "Dəbilqə",
+    ["Amulet"] = "Amulet",
+    ["Backpack"] = "Çanta",
+    ["Armor"] = "Zireh",
+    ["Right Hand"] = "Sağ əl",
+    ["Left Hand"] = "Sol əl",
+    ["Legs"] = "Ayaqlar",
+    ["Boots"] = "Çəkmələr",
+    ["Ring"] = "Üzük",
+    ["Ammo"] = "Güllə",
+    
+    -- Elements
+    ["Fire"] = "Od",
+    ["Ice"] = "Buz",
+    ["Earth"] = "Torpaq",
+    ["Energy"] = "Enerji",
+    ["Holy"] = "Müqəddəs",
+    ["Death"] = "Ölüm",
+    ["Physical"] = "Fiziki",
+    
+    -- House extended
+    ["House Transfer"] = "Ev transferi",
+    ["House Auction"] = "Ev hərracı",
+    ["Guest List"] = "Qonaq siyahısı",
+    
+    -- Screenshots
+    ["Screenshot"] = "Ekran şəkli",
+    ["Take Screenshot"] = "Ekran şəkli çək",
+    ["Screenshot saved"] = "Ekran şəkli saxlandı",
+    
+    -- Audio settings
+    ["Master Volume"] = "Əsas səs",
+    ["Music Volume"] = "Musiqi səsi",
+    ["Sound Volume"] = "Səs həcmi",
+    ["Mute"] = "Səssiz",
+    
+    -- Additional UI
+    ["Apply"] = "Tətbiq et",
+    ["Reset"] = "Sıfırla",
+    ["Confirm"] = "Təsdiq et",
+    ["Continue"] = "Davam et",
+    ["Back"] = "Geri",
+    ["Next"] = "Növbəti",
+    ["Previous"] = "Əvvəlki",
+    ["Finish"] = "Bitir",
+    ["Skip"] = "Atla",
+    ["Retry"] = "Yenidən cəhd et",
+    ["Select All"] = "Hamısını seç",
+    
+    -- Cyclopedia extended
+    ["Achievements"] = "Nailiyyətlər",
+    ["Titles"] = "Başlıqlar",
+    ["Spells"] = "Sehrlər",
+    ["Items"] = "Əşyalar",
+    ["Monsters"] = "Canavarlar",
+    ["Bosses"] = "Bosslar",
+    
+    -- Loot system
+    ["Show Loot"] = "Qəniməti göstər",
+    
+    -- Events
+    ["Event"] = "Hadisə",
+    ["Events"] = "Hadisələr",
+    ["Active Events"] = "Aktiv hadisələr",
+    
+    -- Map features
+    ["Map"] = "Xəritə",
+    ["World Map"] = "Dünya xəritəsi",
+    ["Minimap"] = "Minixəritə",
+    ["Show Markers"] = "İşarələri göstər",
+    
+    -- Chat channels
+    ["Trade Channel"] = "Ticarət kanalı",
+    ["Help Channel"] = "Yardım kanalı",
+    ["World Chat"] = "Dünya söhbəti",
+    
+    -- Guild
+    ["Guild"] = "Gildiya",
+    ["Guild Name"] = "Gildiya adı",
+    ["Guild Members"] = "Gildiya üzvləri",
+    ["Invite to Guild"] = "Gildiyaya dəvət et",
+    ["Leave Guild"] = "Gildiyanı tərk et",
+    
+    -- Format strings
+    ["Next level in %s"] = "%s sonra növbəti səviyyə",
+    ["Current level: %d"] = "Cari səviyyə: %d",
+    ["%s has logged in"] = "%s daxil oldu",
+    ["%s has logged out"] = "%s çıxdı",
   }
 }
 

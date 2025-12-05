@@ -232,6 +232,132 @@ locale = {
     ["minutes"] = "minutu",
     ["hours"] = "ordu",
     ["days"] = "egun",
+    ["Day"] = "Eguna",
+    ["Night"] = "Gaua",
+    ["Hour"] = "Ordua",
+    ["Minute"] = "Minutua",
+    ["Second"] = "Segundoa",
+    
+    -- Connection messages
+    ["Connection error"] = "Konexio errorea",
+    ["Connection refused"] = "Konexioa ukatu da",
+    ["Connection timed out"] = "Konexio denbora agortu da",
+    ["Unable to connect"] = "Ezin da konektatu",
+    ["Lost connection"] = "Konexioa galdu da",
+    
+    -- Display settings
+    ["Show creature names"] = "Erakutsi izakien izenak",
+    ["Show player names"] = "Erakutsi jokalari izenak",
+    ["Show health bar"] = "Erakutsi osasun barra",
+    ["Show mana bar"] = "Erakutsi mana barra",
+    
+    -- Combat stats
+    ["Critical Hit Chance"] = "Kolpe kritiko aukera",
+    ["Critical Hit Damage"] = "Kolpe kritiko kaltea",
+    ["Life Leech"] = "Bizitza lapurreta",
+    ["Mana Leech"] = "Mana lapurreta",
+    
+    -- Market extended
+    ["Total Price"] = "Prezio osoa",
+    ["Piece Price"] = "Pieza prezioa",
+    ["Seller"] = "Saltzailea",
+    ["Buyer"] = "Eroslea",
+    ["Create Offer"] = "Eskaintza sortu",
+    ["Cancel Offer"] = "Eskaintza ezeztatu",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Autentifikazio tokena",
+    ["Two-Factor Authentication"] = "Bi faktoreko autentifikazioa",
+    
+    -- Inventory slots
+    ["Helmet"] = "Kaskoa",
+    ["Amulet"] = "Amuletu",
+    ["Backpack"] = "Motxila",
+    ["Armor"] = "Armadura",
+    ["Right Hand"] = "Eskuin eskua",
+    ["Left Hand"] = "Ezker eskua",
+    ["Legs"] = "Hankak",
+    ["Boots"] = "Botak",
+    ["Ring"] = "Eraztuna",
+    ["Ammo"] = "Munizio",
+    
+    -- Elements
+    ["Fire"] = "Sua",
+    ["Ice"] = "Izotza",
+    ["Earth"] = "Lurra",
+    ["Energy"] = "Energia",
+    ["Holy"] = "Santua",
+    ["Death"] = "Heriotza",
+    ["Physical"] = "Fisikoa",
+    
+    -- House extended
+    ["House Transfer"] = "Etxe transferentzia",
+    ["House Auction"] = "Etxe enkantea",
+    ["Guest List"] = "Gonbidatu zerrenda",
+    
+    -- Screenshots
+    ["Screenshot"] = "Pantaila-argazkia",
+    ["Take Screenshot"] = "Pantaila-argazkia atera",
+    ["Screenshot saved"] = "Pantaila-argazkia gorde da",
+    
+    -- Audio settings
+    ["Master Volume"] = "Bolumen nagusia",
+    ["Music Volume"] = "Musika bolumena",
+    ["Sound Volume"] = "Soinu bolumena",
+    ["Mute"] = "Isilarazi",
+    
+    -- Additional UI
+    ["Apply"] = "Aplikatu",
+    ["Reset"] = "Berrezarri",
+    ["Confirm"] = "Berretsi",
+    ["Continue"] = "Jarraitu",
+    ["Back"] = "Atzera",
+    ["Next"] = "Hurrengoa",
+    ["Previous"] = "Aurrekoa",
+    ["Finish"] = "Amaitu",
+    ["Skip"] = "Saltatu",
+    ["Retry"] = "Berriro saiatu",
+    ["Select All"] = "Hautatu denak",
+    
+    -- Cyclopedia extended
+    ["Achievements"] = "Lorpenak",
+    ["Titles"] = "Tituluak",
+    ["Spells"] = "Sorginkeriak",
+    ["Items"] = "Objektuak",
+    ["Monsters"] = "Munstroak",
+    ["Bosses"] = "Nagusiak",
+    
+    -- Loot system
+    ["Show Loot"] = "Erakutsi harrapakina",
+    
+    -- Events
+    ["Event"] = "Gertaera",
+    ["Events"] = "Gertaerak",
+    ["Active Events"] = "Gertaera aktiboak",
+    
+    -- Map features
+    ["Map"] = "Mapa",
+    ["World Map"] = "Mundu mapa",
+    ["Minimap"] = "Minimapa",
+    ["Show Markers"] = "Erakutsi markadoreak",
+    
+    -- Chat channels
+    ["Trade Channel"] = "Merkataritza kanala",
+    ["Help Channel"] = "Laguntza kanala",
+    ["World Chat"] = "Mundu txata",
+    
+    -- Guild
+    ["Guild"] = "Gilda",
+    ["Guild Name"] = "Gilda izena",
+    ["Guild Members"] = "Gilda kideak",
+    ["Invite to Guild"] = "Gildara gonbidatu",
+    ["Leave Guild"] = "Gilda utzi",
+    
+    -- Format strings
+    ["Next level in %s"] = "Hurrengo maila %s-n",
+    ["Current level: %d"] = "Uneko maila: %d",
+    ["%s has logged in"] = "%s sartu da",
+    ["%s has logged out"] = "%s irten da",
   }
 }
 

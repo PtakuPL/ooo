@@ -240,6 +240,138 @@ locale = {
     ["Hour"] = "Hora",
     ["Minute"] = "Minut",
     ["Second"] = "Segon",
+    ["Days"] = "Dies",
+    ["Hours"] = "Hores",
+    ["Minutes"] = "Minuts",
+    ["Seconds"] = "Segons",
+    
+    -- Connection messages
+    ["Connection error"] = "Error de connexió",
+    ["Connection refused"] = "Connexió refusada",
+    ["Connection timed out"] = "Temps de connexió esgotat",
+    ["Unable to connect"] = "No es pot connectar",
+    ["Lost connection"] = "Connexió perduda",
+    
+    -- Display settings
+    ["Show creature names"] = "Mostra noms de criatures",
+    ["Show player names"] = "Mostra noms de jugadors",
+    ["Show health bar"] = "Mostra barra de salut",
+    ["Show mana bar"] = "Mostra barra de mana",
+    
+    -- Combat stats
+    ["Critical Hit Chance"] = "Probabilitat de cop crític",
+    ["Critical Hit Damage"] = "Dany de cop crític",
+    ["Life Leech"] = "Robatori de vida",
+    ["Mana Leech"] = "Robatori de mana",
+    
+    -- Market extended
+    ["Total Price"] = "Preu total",
+    ["Piece Price"] = "Preu per peça",
+    ["Seller"] = "Venedor",
+    ["Buyer"] = "Comprador",
+    ["Create Offer"] = "Crear oferta",
+    ["Cancel Offer"] = "Cancel·lar oferta",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Token d'autenticació",
+    ["Two-Factor Authentication"] = "Autenticació de dos factors",
+    
+    -- Inventory slots
+    ["Helmet"] = "Casc",
+    ["Amulet"] = "Amulet",
+    ["Backpack"] = "Motxilla",
+    ["Armor"] = "Armadura",
+    ["Right Hand"] = "Mà dreta",
+    ["Left Hand"] = "Mà esquerra",
+    ["Legs"] = "Cames",
+    ["Boots"] = "Botes",
+    ["Ring"] = "Anell",
+    ["Ammo"] = "Munició",
+    
+    -- Elements
+    ["Fire"] = "Foc",
+    ["Ice"] = "Gel",
+    ["Earth"] = "Terra",
+    ["Energy"] = "Energia",
+    ["Holy"] = "Sagrat",
+    ["Death"] = "Mort",
+    ["Physical"] = "Físic",
+    
+    -- House extended
+    ["House Transfer"] = "Transferència de casa",
+    ["House Auction"] = "Subhasta de casa",
+    ["Guest List"] = "Llista de convidats",
+    
+    -- Screenshots
+    ["Screenshot"] = "Captura de pantalla",
+    ["Take Screenshot"] = "Fer captura",
+    ["Screenshot saved"] = "Captura desada",
+    
+    -- Audio settings
+    ["Master Volume"] = "Volum principal",
+    ["Music Volume"] = "Volum de música",
+    ["Sound Volume"] = "Volum de so",
+    ["Mute"] = "Silenciar",
+    
+    -- Additional UI
+    ["Apply"] = "Aplicar",
+    ["Reset"] = "Restablir",
+    ["Confirm"] = "Confirmar",
+    ["Continue"] = "Continuar",
+    ["Back"] = "Enrere",
+    ["Next"] = "Següent",
+    ["Previous"] = "Anterior",
+    ["Finish"] = "Acabar",
+    ["Skip"] = "Saltar",
+    ["Retry"] = "Reintentar",
+    ["Select All"] = "Seleccionar tot",
+    
+    -- Cyclopedia extended
+    ["Achievements"] = "Assoliments",
+    ["Titles"] = "Títols",
+    ["Spells"] = "Encanteris",
+    ["Items"] = "Objectes",
+    ["Monsters"] = "Monstres",
+    ["Bosses"] = "Caps",
+    
+    -- Loot system
+    ["Quick Loot"] = "Saqueig ràpid",
+    ["Loot Container"] = "Contenidor de botí",
+    ["Show Loot"] = "Mostrar botí",
+    
+    -- Events
+    ["Event"] = "Esdeveniment",
+    ["Events"] = "Esdeveniments",
+    ["Active Events"] = "Esdeveniments actius",
+    
+    -- Prey system
+    ["Prey"] = "Presa",
+    ["Prey Slot"] = "Ranura de presa",
+    ["Reroll"] = "Tornar a tirar",
+    
+    -- Map features
+    ["Map"] = "Mapa",
+    ["World Map"] = "Mapa del món",
+    ["Minimap"] = "Minimapa",
+    ["Show Markers"] = "Mostrar marcadors",
+    
+    -- Chat channels
+    ["Trade Channel"] = "Canal de comerç",
+    ["Help Channel"] = "Canal d'ajuda",
+    ["World Chat"] = "Xat mundial",
+    
+    -- Guild
+    ["Guild"] = "Gremi",
+    ["Guild Name"] = "Nom del gremi",
+    ["Guild Members"] = "Membres del gremi",
+    ["Invite to Guild"] = "Convidar al gremi",
+    ["Leave Guild"] = "Abandonar gremi",
+    
+    -- Format strings
+    ["Next level in %s"] = "Proper nivell en %s",
+    ["Current level: %d"] = "Nivell actual: %d",
+    ["%s has logged in"] = "%s ha entrat",
+    ["%s has logged out"] = "%s ha sortit",
   }
 }
 

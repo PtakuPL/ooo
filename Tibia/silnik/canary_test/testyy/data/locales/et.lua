@@ -240,6 +240,138 @@ locale = {
     ["Hour"] = "Tund",
     ["Minute"] = "Minut",
     ["Second"] = "Sekund",
+    ["Days"] = "Päevad",
+    ["Hours"] = "Tunnid",
+    ["Minutes"] = "Minutid",
+    ["Seconds"] = "Sekundid",
+    
+    -- Connection messages
+    ["Connection error"] = "Ühenduse viga",
+    ["Connection refused"] = "Ühendus keeldutud",
+    ["Connection timed out"] = "Ühenduse aeg läbi",
+    ["Unable to connect"] = "Ei saa ühendust",
+    ["Lost connection"] = "Ühendus katkes",
+    
+    -- Display settings
+    ["Show creature names"] = "Näita olendite nimesid",
+    ["Show player names"] = "Näita mängijate nimesid",
+    ["Show health bar"] = "Näita terviseriba",
+    ["Show mana bar"] = "Näita manariba",
+    
+    -- Combat stats
+    ["Critical Hit Chance"] = "Kriitilise löögi tõenäosus",
+    ["Critical Hit Damage"] = "Kriitilise löögi kahju",
+    ["Life Leech"] = "Elu vargus",
+    ["Mana Leech"] = "Mana vargus",
+    
+    -- Market extended
+    ["Total Price"] = "Koguhind",
+    ["Piece Price"] = "Tükihind",
+    ["Seller"] = "Müüja",
+    ["Buyer"] = "Ostja",
+    ["Create Offer"] = "Loo pakkumine",
+    ["Cancel Offer"] = "Tühista pakkumine",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Autentimismärk",
+    ["Two-Factor Authentication"] = "Kaheastmeline autentimine",
+    
+    -- Inventory slots
+    ["Helmet"] = "Kiiver",
+    ["Amulet"] = "Amulett",
+    ["Backpack"] = "Seljakott",
+    ["Armor"] = "Soomus",
+    ["Right Hand"] = "Parem käsi",
+    ["Left Hand"] = "Vasak käsi",
+    ["Legs"] = "Jalad",
+    ["Boots"] = "Saapad",
+    ["Ring"] = "Sõrmus",
+    ["Ammo"] = "Laskemoon",
+    
+    -- Elements
+    ["Fire"] = "Tuli",
+    ["Ice"] = "Jää",
+    ["Earth"] = "Maa",
+    ["Energy"] = "Energia",
+    ["Holy"] = "Püha",
+    ["Death"] = "Surm",
+    ["Physical"] = "Füüsiline",
+    
+    -- House extended
+    ["House Transfer"] = "Maja ülekanne",
+    ["House Auction"] = "Maja oksjon",
+    ["Guest List"] = "Külaliste nimekiri",
+    
+    -- Screenshots
+    ["Screenshot"] = "Ekraanipilt",
+    ["Take Screenshot"] = "Tee ekraanipilt",
+    ["Screenshot saved"] = "Ekraanipilt salvestatud",
+    
+    -- Audio settings
+    ["Master Volume"] = "Põhihelitugevus",
+    ["Music Volume"] = "Muusika helitugevus",
+    ["Sound Volume"] = "Heli helitugevus",
+    ["Mute"] = "Vaigista",
+    
+    -- Additional UI
+    ["Apply"] = "Rakenda",
+    ["Reset"] = "Lähtesta",
+    ["Confirm"] = "Kinnita",
+    ["Continue"] = "Jätka",
+    ["Back"] = "Tagasi",
+    ["Next"] = "Järgmine",
+    ["Previous"] = "Eelmine",
+    ["Finish"] = "Lõpeta",
+    ["Skip"] = "Jäta vahele",
+    ["Retry"] = "Proovi uuesti",
+    ["Select All"] = "Vali kõik",
+    
+    -- Cyclopedia extended
+    ["Achievements"] = "Saavutused",
+    ["Titles"] = "Tiitlid",
+    ["Spells"] = "Loitsud",
+    ["Items"] = "Esemed",
+    ["Monsters"] = "Koletised",
+    ["Bosses"] = "Bossid",
+    
+    -- Loot system
+    ["Quick Loot"] = "Kiire saak",
+    ["Loot Container"] = "Saagi konteiner",
+    ["Show Loot"] = "Näita saaki",
+    
+    -- Events
+    ["Event"] = "Sündmus",
+    ["Events"] = "Sündmused",
+    ["Active Events"] = "Aktiivsed sündmused",
+    
+    -- Prey system
+    ["Prey"] = "Saak",
+    ["Prey Slot"] = "Saagi pesa",
+    ["Reroll"] = "Veereta uuesti",
+    
+    -- Map features
+    ["Map"] = "Kaart",
+    ["World Map"] = "Maailmakaart",
+    ["Minimap"] = "Minikaart",
+    ["Show Markers"] = "Näita markereid",
+    
+    -- Chat channels
+    ["Trade Channel"] = "Kaubanduskanal",
+    ["Help Channel"] = "Abikanal",
+    ["World Chat"] = "Maailma vestlus",
+    
+    -- Guild
+    ["Guild"] = "Gild",
+    ["Guild Name"] = "Gildi nimi",
+    ["Guild Members"] = "Gildi liikmed",
+    ["Invite to Guild"] = "Kutsu gildi",
+    ["Leave Guild"] = "Lahku gildist",
+    
+    -- Format strings
+    ["Next level in %s"] = "Järgmine tase %s pärast",
+    ["Current level: %d"] = "Praegune tase: %d",
+    ["%s has logged in"] = "%s logis sisse",
+    ["%s has logged out"] = "%s logis välja",
   }
 }
 

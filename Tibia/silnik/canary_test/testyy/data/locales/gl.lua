@@ -240,6 +240,138 @@ locale = {
     ["Hour"] = "Hora",
     ["Minute"] = "Minuto",
     ["Second"] = "Segundo",
+    ["Days"] = "Días",
+    ["Hours"] = "Horas",
+    ["Minutes"] = "Minutos",
+    ["Seconds"] = "Segundos",
+    
+    -- Connection messages
+    ["Connection error"] = "Erro de conexión",
+    ["Connection refused"] = "Conexión rexeitada",
+    ["Connection timed out"] = "Tempo de conexión esgotado",
+    ["Unable to connect"] = "Non se pode conectar",
+    ["Lost connection"] = "Conexión perdida",
+    
+    -- Display settings
+    ["Show creature names"] = "Amosar nomes de criaturas",
+    ["Show player names"] = "Amosar nomes de xogadores",
+    ["Show health bar"] = "Amosar barra de saúde",
+    ["Show mana bar"] = "Amosar barra de maná",
+    
+    -- Combat stats
+    ["Critical Hit Chance"] = "Probabilidade de golpe crítico",
+    ["Critical Hit Damage"] = "Dano de golpe crítico",
+    ["Life Leech"] = "Roubo de vida",
+    ["Mana Leech"] = "Roubo de maná",
+    
+    -- Market extended
+    ["Total Price"] = "Prezo total",
+    ["Piece Price"] = "Prezo por peza",
+    ["Seller"] = "Vendedor",
+    ["Buyer"] = "Comprador",
+    ["Create Offer"] = "Crear oferta",
+    ["Cancel Offer"] = "Cancelar oferta",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Token de autenticación",
+    ["Two-Factor Authentication"] = "Autenticación de dous factores",
+    
+    -- Inventory slots
+    ["Helmet"] = "Casco",
+    ["Amulet"] = "Amuleto",
+    ["Backpack"] = "Mochila",
+    ["Armor"] = "Armadura",
+    ["Right Hand"] = "Man dereita",
+    ["Left Hand"] = "Man esquerda",
+    ["Legs"] = "Pernas",
+    ["Boots"] = "Botas",
+    ["Ring"] = "Anel",
+    ["Ammo"] = "Munición",
+    
+    -- Elements
+    ["Fire"] = "Lume",
+    ["Ice"] = "Xeo",
+    ["Earth"] = "Terra",
+    ["Energy"] = "Enerxía",
+    ["Holy"] = "Sagrado",
+    ["Death"] = "Morte",
+    ["Physical"] = "Físico",
+    
+    -- House extended
+    ["House Transfer"] = "Transferencia de casa",
+    ["House Auction"] = "Poxa de casa",
+    ["Guest List"] = "Lista de convidados",
+    
+    -- Screenshots
+    ["Screenshot"] = "Captura de pantalla",
+    ["Take Screenshot"] = "Facer captura",
+    ["Screenshot saved"] = "Captura gardada",
+    
+    -- Audio settings
+    ["Master Volume"] = "Volume principal",
+    ["Music Volume"] = "Volume de música",
+    ["Sound Volume"] = "Volume de son",
+    ["Mute"] = "Silenciar",
+    
+    -- Additional UI
+    ["Apply"] = "Aplicar",
+    ["Reset"] = "Restablecer",
+    ["Confirm"] = "Confirmar",
+    ["Continue"] = "Continuar",
+    ["Back"] = "Atrás",
+    ["Next"] = "Seguinte",
+    ["Previous"] = "Anterior",
+    ["Finish"] = "Rematar",
+    ["Skip"] = "Saltar",
+    ["Retry"] = "Reintentar",
+    ["Select All"] = "Seleccionar todo",
+    
+    -- Cyclopedia extended
+    ["Achievements"] = "Logros",
+    ["Titles"] = "Títulos",
+    ["Spells"] = "Feitizos",
+    ["Items"] = "Obxectos",
+    ["Monsters"] = "Monstros",
+    ["Bosses"] = "Xefes",
+    
+    -- Loot system
+    ["Quick Loot"] = "Saqueo rápido",
+    ["Loot Container"] = "Contedor de botín",
+    ["Show Loot"] = "Amosar botín",
+    
+    -- Events
+    ["Event"] = "Evento",
+    ["Events"] = "Eventos",
+    ["Active Events"] = "Eventos activos",
+    
+    -- Prey system
+    ["Prey"] = "Presa",
+    ["Prey Slot"] = "Rañura de presa",
+    ["Reroll"] = "Volver tirar",
+    
+    -- Map features
+    ["Map"] = "Mapa",
+    ["World Map"] = "Mapa do mundo",
+    ["Minimap"] = "Minimapa",
+    ["Show Markers"] = "Amosar marcadores",
+    
+    -- Chat channels
+    ["Trade Channel"] = "Canle de comercio",
+    ["Help Channel"] = "Canle de axuda",
+    ["World Chat"] = "Chat mundial",
+    
+    -- Guild
+    ["Guild"] = "Gremio",
+    ["Guild Name"] = "Nome do gremio",
+    ["Guild Members"] = "Membros do gremio",
+    ["Invite to Guild"] = "Convidar ao gremio",
+    ["Leave Guild"] = "Abandonar gremio",
+    
+    -- Format strings
+    ["Next level in %s"] = "Seguinte nivel en %s",
+    ["Current level: %d"] = "Nivel actual: %d",
+    ["%s has logged in"] = "%s entrou",
+    ["%s has logged out"] = "%s saíu",
   }
 }
 

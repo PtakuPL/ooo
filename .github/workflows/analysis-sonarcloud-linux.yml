@@ -140,6 +140,9 @@ jobs:
                 -DCMAKE_TOOLCHAIN_FILE="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" \
                 -DOPTIONS_ENABLE_CCACHE=ON \
                 -DSPEED_UP_BUILD_UNITY=OFF \
+                -DOTC_ENABLE_TTF=OFF \
+                -DOTC_ENABLE_HARFBUZZ=OFF \
+                -DOTC_ENABLE_FRIBIDI=OFF \
                 -S . -B build
 
       - name: Run PR sonar-scanner

@@ -376,6 +376,228 @@ locale = {
     ["False Report"] = "Báo cáo sai",
     ["Destructive Behaviour"] = "Hành vi phá hoại",
     ["Excessive Unjustified Killing"] = "Giết người quá mức không chính đáng",
+    
+    -- Extended UI
+    ["Apply"] = "Áp dụng",
+    ["Back"] = "Quay lại",
+    ["Clear"] = "Xóa",
+    ["Confirm"] = "Xác nhận",
+    ["Continue"] = "Tiếp tục",
+    ["Done"] = "Hoàn tất",
+    ["Enable"] = "Bật",
+    ["Disable"] = "Tắt",
+    ["Help"] = "Trợ giúp",
+    ["Hide"] = "Ẩn",
+    ["Info"] = "Thông tin",
+    ["Move"] = "Di chuyển",
+    ["Next"] = "Tiếp theo",
+    ["Previous"] = "Trước đó",
+    ["Reset"] = "Đặt lại",
+    ["Retry"] = "Thử lại",
+    ["Show"] = "Hiện",
+    ["Skip"] = "Bỏ qua",
+    ["Sort"] = "Sắp xếp",
+    ["Start"] = "Bắt đầu",
+    ["Stop"] = "Dừng",
+    ["Upload"] = "Tải lên",
+    
+    -- Game Interface Extended
+    ["Cap"] = "Sức mang",
+    ["Hit Points"] = "Điểm máu",
+    ["Mana Points"] = "Điểm mana",
+    ["Prey"] = "Con mồi",
+    ["Spells"] = "Phép thuật",
+    ["Inbox"] = "Hộp thư",
+    ["Stash"] = "Kho chứa",
+    
+    -- Settings Extended
+    ["Hotkeys"] = "Phím tắt",
+    ["Controls"] = "Điều khiển",
+    ["Performance"] = "Hiệu suất",
+    ["Security"] = "Bảo mật",
+    
+    -- Hotkey Management Extended
+    ["Hotkey Presets"] = "Cấu hình phím tắt",
+    ["Are you sure you want to delete preset '%s'?"] = "Bạn có chắc muốn xóa cấu hình '%s'?",
+    ["Preset name:"] = "Tên cấu hình:",
+    ["New name:"] = "Tên mới:",
+    ["Preset Actions"] = "Hành động cấu hình",
+    
+    -- Cyclopedia Extended
+    ["Bestiary Tracker"] = "Theo dõi thú thần",
+    ["Bosstiary Tracker"] = "Theo dõi boss thần",
+    ["Difficulty"] = "Độ khó",
+    ["Occurrence"] = "Xuất hiện",
+    ["Assigned Charm"] = "Bùa được gán",
+    ["Unassigned Charms"] = "Bùa chưa gán",
+    
+    -- House System Extended
+    ["Guildhall"] = "Hội quán guild",
+    ["Invite"] = "Mời",
+    ["Kick"] = "Đuổi",
+    ["Door"] = "Cửa",
+    ["Window"] = "Cửa sổ",
+    
+    -- Imbuing Extended
+    ["Imbuing"] = "Tẩm",
+    ["Protection"] = "Bảo vệ",
+    
+    -- Status Effects Extended
+    ["Hasted"] = "Được tăng tốc",
+    ["Invisible"] = "Tàng hình",
+    ["Manashield"] = "Lá chắn mana",
+    ["Within Protection Zone"] = "Trong vùng an toàn",
+    ["Logout Block"] = "Chặn đăng xuất",
+    ["PZ Block"] = "Chặn PZ",
+    ["PvP Blessing"] = "Phước lành PvP",
+    
+    -- Store Extended
+    ["Tibia Coins"] = "Tibia Coins",
+    ["Transferable Coins"] = "Coin có thể chuyển",
+    ["Claim"] = "Nhận",
+    ["Collect"] = "Thu thập",
+    
+    -- Updater Extended
+    ["Updater"] = "Trình cập nhật",
+    ["Checking for updates..."] = "Đang kiểm tra cập nhật...",
+    ["Installing update..."] = "Đang cài đặt cập nhật...",
+    ["Update complete"] = "Cập nhật hoàn tất",
+    ["No updates available"] = "Không có cập nhật",
+    ["Update failed"] = "Cập nhật thất bại",
+    ["Restart required"] = "Yêu cầu khởi động lại",
+    
+    -- Chat Modes Extended
+    ["Channel Message"] = "Tin nhắn kênh",
+    
+    -- Party System Extended
+    ["Join Party"] = "Tham gia nhóm",
+    ["Enable Shared Experience"] = "Bật chia sẻ kinh nghiệm",
+    ["Disable Shared Experience"] = "Tắt chia sẻ kinh nghiệm",
+    
+    -- Reporting Extended
+    ["Name Report"] = "Báo cáo tên",
+    
+    -- Tasks Extended
+    ["Active Tasks"] = "Nhiệm vụ đang thực hiện",
+    ["Progress"] = "Tiến trình",
+    ["Complete"] = "Hoàn thành",
+    
+    -- Messages
+    ["Welcome"] = "Chào mừng",
+    ["Goodbye"] = "Tạm biệt",
+    ["Thank you"] = "Cảm ơn",
+    ["Please"] = "Xin vui lòng",
+    ["Sorry"] = "Xin lỗi",
+    ["Congratulations"] = "Chúc mừng",
+    ["Success"] = "Thành công",
+    ["Failed"] = "Thất bại",
+    ["Loading..."] = "Đang tải...",
+    ["Connecting..."] = "Đang kết nối...",
+    ["Connection lost"] = "Mất kết nối",
+    ["Reconnecting..."] = "Đang kết nối lại...",
+    
+    -- Directions Extended
+    ["Left"] = "Trái",
+    ["Right"] = "Phải",
+    
+    -- Numbers
+    ["First"] = "Thứ nhất",
+    ["Second"] = "Thứ hai",
+    ["Third"] = "Thứ ba",
+    ["Last"] = "Cuối cùng",
+    
+    -- Equipment Slots
+    ["Helmet"] = "Mũ",
+    ["Armor"] = "Giáp",
+    ["Legs"] = "Quần",
+    ["Boots"] = "Giày",
+    ["Ring"] = "Nhẫn",
+    ["Amulet"] = "Vòng cổ",
+    ["Weapon"] = "Vũ khí",
+    ["Shield"] = "Khiên",
+    ["Backpack"] = "Ba lô",
+    
+    -- Rule Violations Extended
+    ["Game Weakness Abuse"] = "Lợi dụng điểm yếu game",
+    ["Hacking"] = "Hack",
+    ["Multi-Clienting"] = "Đa client",
+    ["Account Sharing"] = "Chia sẻ tài khoản",
+    ["Threatening Gamemaster"] = "Đe dọa Gamemaster",
+    ["Spoiling Auction"] = "Phá hoại đấu giá",
+    
+    -- Extended Game Features
+    ["Prey Slot"] = "Khe con mồi",
+    ["Reroll"] = "Đổi lại",
+    ["Bonus"] = "Thưởng",
+    
+    -- Guild System
+    ["Guild"] = "Guild",
+    ["Guild Name"] = "Tên Guild",
+    ["Guild Members"] = "Thành viên Guild",
+    ["Invite to Guild"] = "Mời vào Guild",
+    ["Leave Guild"] = "Rời Guild",
+    ["Guild Leader"] = "Trưởng Guild",
+    ["Vice Leader"] = "Phó Guild",
+    
+    -- Market Extended
+    ["Buy Offers"] = "Đề nghị mua",
+    ["Sell Offers"] = "Đề nghị bán",
+    ["Total Price"] = "Tổng giá",
+    ["Piece Price"] = "Giá mỗi cái",
+    ["Seller"] = "Người bán",
+    ["Buyer"] = "Người mua",
+    ["Create Offer"] = "Tạo đề nghị",
+    ["Cancel Offer"] = "Hủy đề nghị",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Mã xác thực",
+    ["Two-Factor Authentication"] = "Xác thực hai yếu tố",
+    
+    -- Elements
+    ["Fire"] = "Lửa",
+    ["Ice"] = "Băng",
+    ["Earth"] = "Đất",
+    ["Energy"] = "Năng lượng",
+    ["Holy"] = "Thánh",
+    ["Death"] = "Chết",
+    ["Physical"] = "Vật lý",
+    
+    -- Screenshots
+    ["Screenshot"] = "Ảnh chụp màn hình",
+    ["Take Screenshot"] = "Chụp màn hình",
+    ["Screenshot saved"] = "Đã lưu ảnh chụp",
+    
+    -- Audio Settings
+    ["Master Volume"] = "Âm lượng chính",
+    ["Music Volume"] = "Âm lượng nhạc",
+    ["Sound Volume"] = "Âm lượng âm thanh",
+    ["Mute"] = "Tắt tiếng",
+    
+    -- Cyclopedia More
+    ["Achievements"] = "Thành tựu",
+    ["Titles"] = "Danh hiệu",
+    ["Items"] = "Vật phẩm",
+    ["Monsters"] = "Quái vật",
+    
+    -- Events
+    ["Event"] = "Sự kiện",
+    ["Events"] = "Sự kiện",
+    ["Active Events"] = "Sự kiện đang diễn ra",
+    
+    -- Map Features
+    ["Map"] = "Bản đồ",
+    ["World Map"] = "Bản đồ thế giới",
+    ["Minimap"] = "Bản đồ nhỏ",
+    ["Show Markers"] = "Hiện đánh dấu",
+    
+    -- Chat Channels Extended
+    ["Guild Chat"] = "Chat Guild",
+    
+    -- Format Strings
+    ["Next level in %s"] = "Cấp tiếp theo trong %s",
+    ["Current level: %d"] = "Cấp hiện tại: %d",
+    ["%s has logged in"] = "%s đã đăng nhập",
+    ["%s has logged out"] = "%s đã đăng xuất",
   }
 }
 

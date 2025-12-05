@@ -314,6 +314,261 @@ locale = {
     ["Non-English Public Statement"] = "Javna izjava ni v angleščini",
     ["Inciting Rule Violation"] = "Spodbujanje kršitev pravil",
     ["Bug Abuse"] = "Zloraba napake",
+    
+    -- Extended UI
+    ["Apply"] = "Uporabi",
+    ["Back"] = "Nazaj",
+    ["Clear"] = "Počisti",
+    ["Confirm"] = "Potrdi",
+    ["Continue"] = "Nadaljuj",
+    ["Create"] = "Ustvari",
+    ["Delete"] = "Izbriši",
+    ["Done"] = "Končano",
+    ["Edit"] = "Uredi",
+    ["Enable"] = "Omogoči",
+    ["Disable"] = "Onemogoči",
+    ["Filter"] = "Filter",
+    ["Help"] = "Pomoč",
+    ["Hide"] = "Skrij",
+    ["Info"] = "Informacije",
+    ["Move"] = "Premakni",
+    ["Next"] = "Naprej",
+    ["Previous"] = "Prejšnji",
+    ["Reset"] = "Ponastavi",
+    ["Retry"] = "Poskusi znova",
+    ["Show"] = "Prikaži",
+    ["Skip"] = "Preskoči",
+    ["Sort"] = "Razvrsti",
+    ["Start"] = "Začni",
+    ["Stop"] = "Ustavi",
+    ["Submit"] = "Pošlji",
+    ["Update"] = "Posodobi",
+    ["Upload"] = "Naloži",
+    ["Download"] = "Prenesi",
+    
+    -- Character Classes
+    ["Paladin"] = "Paladin",
+    ["Sorcerer"] = "Čarovnik",
+    ["Druid"] = "Druid",
+    ["No Vocation"] = "Brez poklica",
+    
+    -- Combat Skills Extended
+    ["Critical Hit Chance"] = "Verjetnost kritičnega udarca",
+    ["Critical Hit Damage"] = "Škoda kritičnega udarca",
+    ["Life Leech Chance"] = "Verjetnost kraje življenja",
+    ["Life Leech Amount"] = "Količina kraje življenja",
+    ["Mana Leech Chance"] = "Verjetnost kraje mane",
+    ["Mana Leech Amount"] = "Količina kraje mane",
+    
+    -- Game Interface Extended
+    ["Health Points"] = "Točke zdravja",
+    ["Mana Points"] = "Točke mane",
+    ["Hit Points"] = "Točke zadetkov",
+    ["Cap"] = "Kapaciteta",
+    ["Stamina"] = "Vzdržljivost",
+    ["Quests"] = "Naloge",
+    ["Spells"] = "Čarovnije",
+    ["Store"] = "Trgovina",
+    ["Inbox"] = "Prejeto",
+    ["Depot"] = "Skladišče",
+    ["Stash"] = "Shramba",
+    
+    -- Settings Extended
+    ["General"] = "Splošno",
+    ["Interface"] = "Vmesnik",
+    ["Controls"] = "Kontrole",
+    ["Chat"] = "Klepet",
+    ["Performance"] = "Zmogljivost",
+    ["Security"] = "Varnost",
+    
+    -- Hotkey Management Extended
+    ["Add New Preset"] = "Dodaj novo prednastavitev",
+    ["Preset name:"] = "Ime prednastavitve:",
+    ["New name:"] = "Novo ime:",
+    ["Preset Actions"] = "Dejanja prednastavitve",
+    
+    -- Status Effects Extended
+    ["Invisible"] = "Neviden",
+    ["Frozen"] = "Zamrznjen",
+    ["Manashield"] = "Ščit mane",
+    ["Within Protection Zone"] = "V zaščiteni coni",
+    ["Logout Block"] = "Blokada odjave",
+    ["PZ Block"] = "PZ blokada",
+    ["PvP Blessing"] = "PvP blagoslov",
+    
+    -- Store and Rewards Extended
+    ["Coins"] = "Kovanci",
+    ["Tibia Coins"] = "Tibia kovanci",
+    ["Transferable Coins"] = "Prenosljivi kovanci",
+    ["Purchase"] = "Nakup",
+    ["Rewards"] = "Nagrade",
+    ["Collect"] = "Zberi",
+    
+    -- Updater Extended
+    ["Checking for updates..."] = "Preverjanje posodobitev...",
+    ["Update complete"] = "Posodobitev končana",
+    ["No updates available"] = "Ni posodobitev",
+    ["Restart required"] = "Potreben ponovni zagon",
+    
+    -- Loot Management
+    ["Loot"] = "Plen",
+    ["Quick Loot"] = "Hitri plen",
+    ["Auto Loot"] = "Samodejni plen",
+    ["Gold"] = "Zlato",
+    ["Platinum"] = "Platina",
+    ["Crystal"] = "Kristal",
+    
+    -- Chat Modes
+    ["Private Message"] = "Zasebno sporočilo",
+    ["Channel Message"] = "Sporočilo kanala",
+    
+    -- Party System Extended
+    ["Join Party"] = "Pridruži se skupini",
+    ["Enable Shared Experience"] = "Omogoči deljenje izkušenj",
+    ["Disable Shared Experience"] = "Onemogoči deljenje izkušenj",
+    
+    -- Reporting Extended
+    ["Report Player"] = "Prijavi igralca",
+    ["Bug Report"] = "Prijava napake",
+    ["Name Report"] = "Prijava imena",
+    
+    -- Tasks Extended
+    ["Tasks"] = "Naloge",
+    ["Task"] = "Naloga",
+    ["Active Tasks"] = "Aktivne naloge",
+    ["Completed Tasks"] = "Končane naloge",
+    ["Progress"] = "Napredek",
+    
+    -- Messages
+    ["Welcome"] = "Dobrodošli",
+    ["Goodbye"] = "Nasvidenje",
+    ["Thank you"] = "Hvala",
+    ["Please"] = "Prosim",
+    ["Sorry"] = "Oprostite",
+    ["Congratulations"] = "Čestitke",
+    ["Success"] = "Uspeh",
+    ["Failed"] = "Neuspešno",
+    ["Loading..."] = "Nalaganje...",
+    ["Connecting..."] = "Povezovanje...",
+    ["Connection lost"] = "Povezava izgubljena",
+    ["Reconnecting..."] = "Ponovno povezovanje...",
+    
+    -- Directions Extended
+    ["Up"] = "Gor",
+    ["Down"] = "Dol",
+    ["Left"] = "Levo",
+    ["Right"] = "Desno",
+    
+    -- Time Extended
+    ["Week"] = "Teden",
+    ["Weeks"] = "Tedni",
+    ["Month"] = "Mesec",
+    ["Months"] = "Meseci",
+    ["Year"] = "Leto",
+    ["Years"] = "Leta",
+    
+    -- Equipment Slots
+    ["Helmet"] = "Čelada",
+    ["Armor"] = "Oklep",
+    ["Legs"] = "Hlače",
+    ["Boots"] = "Škornji",
+    ["Ring"] = "Prstan",
+    ["Amulet"] = "Amulet",
+    ["Weapon"] = "Orožje",
+    ["Shield"] = "Ščit",
+    ["Backpack"] = "Nahrbtnik",
+    
+    -- Rule Violations Extended
+    ["Game Weakness Abuse"] = "Zloraba slabosti igre",
+    ["Macro Use"] = "Uporaba makrov",
+    ["Using Unofficial Software"] = "Uporaba neuradne programske opreme",
+    ["Hacking"] = "Vdiranje",
+    ["Multi-Clienting"] = "Več odjemalcev",
+    ["Account Trading"] = "Trgovanje z računi",
+    ["Account Sharing"] = "Deljenje računa",
+    ["Threatening Gamemaster"] = "Grožnja moderatorju",
+    ["Pretending Official Position"] = "Pretvarjanje uradnega položaja",
+    ["Excessive Unjustified Player Killing"] = "Prekomerno neupravičeno ubijanje igralcev",
+    ["Destructive Behaviour"] = "Destruktivno vedenje",
+    ["Spoiling Auction"] = "Sabotiranje dražbe",
+    
+    -- Extended Game Features
+    ["Prey"] = "Plen",
+    ["Prey Slot"] = "Reža za plen",
+    ["Reroll"] = "Ponovno metanje",
+    ["Bonus"] = "Bonus",
+    
+    -- Guild System
+    ["Guild"] = "Ceh",
+    ["Guild Name"] = "Ime ceha",
+    ["Guild Members"] = "Člani ceha",
+    ["Invite to Guild"] = "Povabi v ceh",
+    ["Leave Guild"] = "Zapusti ceh",
+    ["Guild Leader"] = "Vodja ceha",
+    ["Vice Leader"] = "Namestnik vodje",
+    
+    -- Market Extended
+    ["Buy Offers"] = "Ponudbe za nakup",
+    ["Sell Offers"] = "Ponudbe za prodajo",
+    ["Total Price"] = "Skupna cena",
+    ["Piece Price"] = "Cena za kos",
+    ["Seller"] = "Prodajalec",
+    ["Buyer"] = "Kupec",
+    ["Create Offer"] = "Ustvari ponudbo",
+    ["Cancel Offer"] = "Prekliči ponudbo",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Žeton za avtentikacijo",
+    ["Two-Factor Authentication"] = "Dvostopenjska avtentikacija",
+    
+    -- Elements
+    ["Fire"] = "Ogenj",
+    ["Ice"] = "Led",
+    ["Earth"] = "Zemlja",
+    ["Energy"] = "Energija",
+    ["Holy"] = "Sveto",
+    ["Death"] = "Smrt",
+    ["Physical"] = "Fizično",
+    
+    -- Screenshots
+    ["Screenshot"] = "Posnetek zaslona",
+    ["Take Screenshot"] = "Naredi posnetek",
+    ["Screenshot saved"] = "Posnetek shranjen",
+    
+    -- Audio Settings
+    ["Master Volume"] = "Glavna glasnost",
+    ["Music Volume"] = "Glasnost glasbe",
+    ["Sound Volume"] = "Glasnost zvokov",
+    ["Mute"] = "Utišaj",
+    
+    -- Cyclopedia Extended
+    ["Achievements"] = "Dosežki",
+    ["Titles"] = "Nazivi",
+    ["Items"] = "Predmeti",
+    ["Monsters"] = "Pošasti",
+    ["Bosses"] = "Šefi",
+    
+    -- Events
+    ["Event"] = "Dogodek",
+    ["Events"] = "Dogodki",
+    ["Active Events"] = "Aktivni dogodki",
+    
+    -- Map Features
+    ["Map"] = "Zemljevid",
+    ["World Map"] = "Svetovni zemljevid",
+    ["Show Markers"] = "Prikaži oznake",
+    
+    -- Chat Channels
+    ["Trade Channel"] = "Trgovski kanal",
+    ["Help Channel"] = "Kanal za pomoč",
+    ["World Chat"] = "Svetovni klepet",
+    ["Party Chat"] = "Skupinski klepet",
+    
+    -- Format Strings
+    ["Next level in %s"] = "Naslednja raven čez %s",
+    ["Current level: %d"] = "Trenutna raven: %d",
+    ["%s has logged in"] = "%s se je prijavil",
+    ["%s has logged out"] = "%s se je odjavil",
   }
 }
 

@@ -391,6 +391,121 @@ locale = {
     ["Excessive Unjustified Player Killing"] = "ฆ่าผู้เล่นมากเกินไปโดยไม่มีเหตุผล",
     ["Destructive Behaviour"] = "พฤติกรรมทำลายล้าง",
     ["Spoiling Auction"] = "ทำลายการประมูล",
+    
+    -- Extended Game Features
+    ["Prey Slot"] = "ช่องเหยื่อ",
+    ["Reroll"] = "สุ่มใหม่",
+    ["Bonus"] = "โบนัส",
+    
+    -- Guild System
+    ["Guild"] = "กิลด์",
+    ["Guild Name"] = "ชื่อกิลด์",
+    ["Guild Members"] = "สมาชิกกิลด์",
+    ["Invite to Guild"] = "เชิญเข้ากิลด์",
+    ["Leave Guild"] = "ออกจากกิลด์",
+    ["Guild Leader"] = "ผู้นำกิลด์",
+    ["Vice Leader"] = "รองผู้นำ",
+    
+    -- Market Extended
+    ["Buy Offers"] = "ข้อเสนอซื้อ",
+    ["Sell Offers"] = "ข้อเสนอขาย",
+    ["Total Price"] = "ราคารวม",
+    ["Piece Price"] = "ราคาต่อชิ้น",
+    ["Seller"] = "ผู้ขาย",
+    ["Buyer"] = "ผู้ซื้อ",
+    ["Create Offer"] = "สร้างข้อเสนอ",
+    ["Cancel Offer"] = "ยกเลิกข้อเสนอ",
+    
+    -- Authentication
+    ["Authenticator Token"] = "โทเค็นยืนยัน",
+    ["Two-Factor Authentication"] = "การยืนยันสองขั้นตอน",
+    
+    -- Elements
+    ["Fire"] = "ไฟ",
+    ["Ice"] = "น้ำแข็ง",
+    ["Earth"] = "ดิน",
+    ["Energy"] = "พลังงาน",
+    ["Holy"] = "ศักดิ์สิทธิ์",
+    ["Death"] = "ความตาย",
+    ["Physical"] = "กายภาพ",
+    
+    -- Screenshots
+    ["Screenshot"] = "ภาพหน้าจอ",
+    ["Take Screenshot"] = "ถ่ายภาพหน้าจอ",
+    ["Screenshot saved"] = "บันทึกภาพหน้าจอแล้ว",
+    
+    -- Audio Settings
+    ["Master Volume"] = "ระดับเสียงหลัก",
+    ["Music Volume"] = "ระดับเสียงเพลง",
+    ["Sound Volume"] = "ระดับเสียงเอฟเฟกต์",
+    ["Mute"] = "ปิดเสียง",
+    
+    -- Cyclopedia Extended
+    ["Achievements"] = "ความสำเร็จ",
+    ["Titles"] = "ยศ",
+    ["Items"] = "ไอเทม",
+    ["Monsters"] = "มอนสเตอร์",
+    ["Bosses"] = "บอส",
+    
+    -- Events
+    ["Event"] = "กิจกรรม",
+    ["Events"] = "กิจกรรม",
+    ["Active Events"] = "กิจกรรมที่กำลังดำเนินอยู่",
+    
+    -- Map Features
+    ["Map"] = "แผนที่",
+    ["World Map"] = "แผนที่โลก",
+    ["Minimap"] = "แผนที่ย่อ",
+    ["Show Markers"] = "แสดงเครื่องหมาย",
+    
+    -- Chat Channels Extended
+    ["Trade Channel"] = "ช่องค้าขาย",
+    ["Help Channel"] = "ช่องช่วยเหลือ",
+    ["World Chat"] = "แชทโลก",
+    ["Guild Chat"] = "แชทกิลด์",
+    ["Party Chat"] = "แชทปาร์ตี้",
+    
+    -- Format Strings
+    ["Next level in %s"] = "ระดับถัดไปใน %s",
+    ["Current level: %d"] = "ระดับปัจจุบัน: %d",
+    ["%s has logged in"] = "%s เข้าสู่ระบบแล้ว",
+    ["%s has logged out"] = "%s ออกจากระบบแล้ว",
+    
+    -- Connection Messages
+    ["Connection error"] = "ข้อผิดพลาดการเชื่อมต่อ",
+    ["Connection refused"] = "การเชื่อมต่อถูกปฏิเสธ",
+    ["Connection timed out"] = "การเชื่อมต่อหมดเวลา",
+    ["Unable to connect"] = "ไม่สามารถเชื่อมต่อได้",
+    ["Lost connection"] = "การเชื่อมต่อขาด",
+    
+    -- Display Settings
+    ["Show creature names"] = "แสดงชื่อสิ่งมีชีวิต",
+    ["Show player names"] = "แสดงชื่อผู้เล่น",
+    ["Show health bar"] = "แสดงแถบพลังชีวิต",
+    ["Show mana bar"] = "แสดงแถบมานา",
+    
+    -- Combat Stats Extended
+    ["Life Leech"] = "ดูดชีวิต",
+    ["Mana Leech"] = "ดูดมานา",
+    
+    -- House Extended
+    ["House Transfer"] = "โอนบ้าน",
+    ["House Auction"] = "ประมูลบ้าน",
+    ["Guest List"] = "รายชื่อแขก",
+    
+    -- Additional UI
+    ["Select All"] = "เลือกทั้งหมด",
+    ["Finish"] = "เสร็จสิ้น",
+    
+    -- Loot System Extended
+    ["Loot Container"] = "กล่องเก็บของ",
+    ["Show Loot"] = "แสดงของที่ดรอป",
+    
+    -- Numbers
+    ["First"] = "แรก",
+    ["Second"] = "ที่สอง",
+    ["Third"] = "ที่สาม",
+    ["Last"] = "สุดท้าย",
   }
 }
 

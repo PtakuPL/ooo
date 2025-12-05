@@ -1,4 +1,4 @@
-# I18N Progress — Co zrobiono (stan na 2025-11-30)
+# I18N Progress — Co zrobiono (stan na 2025-12-05)
 
 Ten plik dokumentuje aktualny status prac przy wdrażaniu pełnego wsparcia Unicode ("wszystkie litery świata") i TTF w kliencie oraz związane poprawki CI.
 
@@ -172,14 +172,57 @@ vcpkg install --manifest    # testuj manifest lokalnie
 
 Jeśli chcesz, mogę uzupełnić ten plik szczegółowymi instrukcjami jak uruchomić lokalne testy lub dodać przykładowe polecenia dla debugowania CI.
 
+---
+
+## 🎉 AKTUALIZACJA 2025-12-05: OSIĄGNIĘTO CEL 50+ JĘZYKÓW!
+
+### Nowe osiągnięcia
+
+#### ✅ 53 Języki z pełnymi tłumaczeniami
+Wszystkie 53 lokalizacje mają teraz 150-500+ ciągów tekstowych:
+- **Western European (12):** en, de, es, fr, it, pt, nl, sv, da, no, fi, is
+- **Eastern European (11):** pl, cs, hu, ro, bg, sk, hr, sr, sl, sq, mk
+- **Baltic (3):** lt, lv, et
+- **Slavic (2):** ru, uk
+- **Asian (10):** zh, ja, ko, vi, th, hi, id, ms, fil, bn
+- **Middle Eastern RTL (4):** ar, he, fa, tr
+- **Caucasus (3):** ka, hy, az
+- **Central Asian (2):** kk, uz
+- **African (2):** af, sw
+- **Other (4):** eu, ca, gl, el
+
+#### ✅ Fix Emscripten/WASM Build
+- **Plik:** `src/CMakeLists.txt` (linie 483-496)
+- **Problem:** Własny `FindLua.cmake` niekompatybilny z WASM
+- **Rozwiązanie:** Użycie standardowego FindLua z CMake dla buildów WASM
+
+#### ✅ Kompletna dokumentacja
+- `docs/BUILD_GUIDE.md` - Instrukcje kompilacji (Windows/Linux/WASM/Android)
+- `docs/DEPENDENCIES.md` - Pełna dokumentacja zależności
+- `docs/ARCHITECTURE.md` - Architektura projektu
+- `docs/TEXT_RENDERING.md` - Pipeline renderowania tekstu
+- `docs/MODULES.md` - Dokumentacja 60+ modułów Lua
+- `docs/SOURCE_CODE.md` - Dokumentacja kodu C++
+- `docs/I18N_SUMMARY.md` - Podsumowanie internacjonalizacji
+- `CI_STATUS.md` - Status workflow CI/CD
+
+### Pliki I18N C++
+
+Kompletny system tekstu z wsparciem Unicode:
+- `src/framework/text/TTFFont.h/.cpp` - Rendering TTF z atlasami
+- `src/framework/text/TextShaper.h/.cpp` - Shaping HarfBuzz
+- `src/framework/text/LocaleShaping.h/.cpp` - Wsparcie BCP-47 i RTL
+- `src/framework/text/Utf8.h` - Pomocniki UTF-8
+
 ## Pliki zmienione w tej serii zmian
 
-- `testyy/src/CMakeLists.txt`  — dodanie `target_compile_options(... /utf-8)` dla MSVC
+- `testyy/src/CMakeLists.txt`  — dodanie `target_compile_options(... /utf-8)` dla MSVC, fix WASM Lua
 - `testyy/src/framework/ui/uitextedit.cpp` — TTF fast path, selection & caret handling, update logic
 - `testyy/vcpkg.json` — usunięcie `libobfuscate` z dependencies (zastąpione stubem header)
 - `testyy/.github/workflows/build-ubuntu.yml` — dodano vcpkg preflight & fallback
 - `testyy/.github/workflows/analysis-sonarcloud.yml` — dodano vcpkg preflight & fallback
 - `testyy/plan.md` — aktualizacja planu prac i szczegółów
+- `modules/client_locales/*.lua` — **53 plików lokalizacji z kompletnymi tłumaczeniami**
 
 ## Notatki techniczne
 

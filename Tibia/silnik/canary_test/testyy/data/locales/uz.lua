@@ -397,6 +397,322 @@ locale = {
     ["Unsuitable Name"] = "Nomuvofiq nom",
     ["Name Inciting Rule Violation"] = "Qoida buzishga undaydigan nom",
     ["Offensive Statement"] = "Haqoratli bayonot",
+    
+    -- Additional Rule Violations
+    ["Spamming"] = "Spam yuborish",
+    ["Illegal Advertising"] = "Noqonuniy reklama",
+    ["Off-Topic Public Statement"] = "Mavzudan tashqari ommaviy bayonot",
+    ["Non-English Public Statement"] = "Ingliz tilida bo'lmagan ommaviy bayonot",
+    ["Inciting Rule Violation"] = "Qoida buzishga undash",
+    ["Bug Abuse"] = "Xatolikdan foydalanish",
+    ["Game Weakness Abuse"] = "O'yin zaifligidan foydalanish",
+    ["Using Unofficial Software to Play"] = "Norasmiy dasturiy ta'minotdan foydalanish",
+    ["Hacking"] = "Xakerlik",
+    ["Multi-Clienting"] = "Ko'p mijozlik",
+    ["Account Trading or Sharing"] = "Hisob sotish yoki almashish",
+    ["Threatening Gamemaster"] = "O'yin ustasiga tahdid",
+    ["Pretending to Have Influence on Rule Enforcement"] = "Qoidalarni bajarishga ta'sir ko'rsatishga da'vo qilish",
+    
+    -- Status Effects
+    ["You are bleeding"] = "Siz qon ketyapsiz",
+    ["You are burning"] = "Siz yonyapsiz",
+    ["You are cursed"] = "Siz la'natlangansiz",
+    ["You are dazzled"] = "Siz ko'r bo'lib qoldingiz",
+    ["You are dead"] = "Siz vafot etdingiz",
+    ["You are drowning"] = "Siz cho'kyapsiz",
+    ["You are drunk"] = "Siz mastmiz",
+    ["You are electrified"] = "Siz elektr toki urdi",
+    ["You are freezing"] = "Siz muzlayapsiz",
+    ["You are hasted"] = "Siz tezlashtirilgansiz",
+    ["You are hungry"] = "Siz ochsiz",
+    ["You are paralysed"] = "Siz falajsiz",
+    ["You are poisoned"] = "Siz zaharlangansiz",
+    ["You are protected by a magic shield"] = "Sizni sehrli qalqon himoya qilmoqda",
+    ["You are strengthened"] = "Siz kuchaytirilgansiz",
+    ["You are within a protection zone"] = "Siz himoya zonasida ekansiz",
+    ["You may not logout during a fight"] = "Jang vaqtida chiqishingiz mumkin emas",
+    ["You may not logout or enter a protection zone"] = "Chiqishingiz yoki himoya zonasiga kirishingiz mumkin emas",
+    
+    -- Combat Skills
+    ["Axe Fighting"] = "Bolta bilan jang",
+    ["Club Fighting"] = "Tayoq bilan jang",
+    ["Distance Fighting"] = "Masofaviy jang",
+    ["Fist Fighting"] = "Mushut bilan jang",
+    ["Magic Level"] = "Sehr darajasi",
+    ["Shielding"] = "Qalqon bilan himoya",
+    ["Sword Fighting"] = "Qilich bilan jang",
+    ["Fishing"] = "Baliq ovlash",
+    
+    -- Vocations
+    ["Knight"] = "Ritsar",
+    ["Paladin"] = "Paladin",
+    ["Sorcerer"] = "Sehrgar",
+    ["Druid"] = "Druid",
+    ["None"] = "Yo'q",
+    ["No Vocation"] = "Kasb yo'q",
+    ["Elite Knight"] = "Elit ritsar",
+    ["Royal Paladin"] = "Qirollik paladin",
+    ["Master Sorcerer"] = "Sehrgar ustasi",
+    ["Elder Druid"] = "Katta druid",
+    
+    -- Elements
+    ["Fire"] = "Olov",
+    ["Ice"] = "Muz",
+    ["Earth"] = "Yer",
+    ["Energy"] = "Energiya",
+    ["Holy"] = "Muqaddas",
+    ["Death"] = "O'lim",
+    ["Physical"] = "Jismoniy",
+    ["Healing"] = "Davolash",
+    
+    -- Inventory Slots
+    ["Head"] = "Bosh",
+    ["Necklace"] = "Bo'yinbog'",
+    ["Backpack"] = "Ryukzak",
+    ["Armor"] = "Sovut",
+    ["Right Hand"] = "O'ng qo'l",
+    ["Left Hand"] = "Chap qo'l",
+    ["Legs"] = "Oyoqlar",
+    ["Feet"] = "Tovonlar",
+    ["Ring"] = "Uzuk",
+    ["Ammo"] = "O'q-dorilar",
+    
+    -- Hotkey Presets
+    ["Add hotkey preset"] = "Tezkor tugmalar to'plamini qo'shish",
+    ["Copy hotkey preset"] = "Tezkor tugmalar to'plamini nusxalash",
+    ["Rename hotkey preset"] = "Tezkor tugmalar to'plamini qayta nomlash",
+    ["Enter a name for the new preset:"] = "Yangi to'plam uchun nom kiriting:",
+    ["Enter a name for the preset:"] = "To'plam uchun nom kiriting:",
+    ["Do you really want to delete the hotkey preset %s?"] = "Haqiqatan ham %s tezkor tugmalar to'plamini o'chirmoqchimisiz?",
+    ["Current hotkey to change: %s"] = "O'zgartirilayotgan joriy tezkor tugma: %s",
+    ["Current hotkey to change: none"] = "O'zgartirilayotgan joriy tezkor tugma: yo'q",
+    ["Add new group"] = "Yangi guruh qo'shish",
+    ["Edit group %s"] = "%s guruhini tahrirlash",
+    ["Remove group %s"] = "%s guruhini olib tashlash",
+    ["Hide groups"] = "Guruhlarni yashirish",
+    ["Show groups"] = "Guruhlarni ko'rsatish",
+    
+    -- Cyclopedia and Bestiary
+    ["Cyclopedia"] = "Siklopediya",
+    ["Bestiary Tracker"] = "Bestiariy kuzatuvchisi",
+    ["Bosstiary Tracker"] = "Bossiariy kuzatuvchisi",
+    ["Imbuement Tracker"] = "Imbuement kuzatuvchisi",
+    ["Prey Tracker"] = "O'lja kuzatuvchisi",
+    ["Prey Dialog"] = "O'lja dialogi",
+    ["Select monster"] = "Maxluqni tanlang",
+    ["Select monster to proceed."] = "Davom etish uchun maxluqni tanlang.",
+    
+    -- Charms
+    ["Confirm Charm Removal"] = "Jozibani olib tashlashni tasdiqlash",
+    ["Confirm Selected Charm"] = "Tanlangan jozibani tasdiqlash",
+    ["Confirm Unlocking of Charm"] = "Jozibani ochishni tasdiqlash",
+    
+    -- Rarity Levels
+    ["Common"] = "Oddiy",
+    ["Uncommon"] = "Kam uchraydigan",
+    ["Rare"] = "Noyob",
+    ["Semi-Rare"] = "Yarim noyob",
+    ["Very Rare"] = "Juda noyob",
+    
+    -- House System
+    ["Confirm House Action"] = "Uy harakatini tasdiqlash",
+    ["Do you really want to keep your house "] = "Haqiqatan ham uyingizni saqlamoqchimisiz ",
+    ["Do you really want to move out of the house "] = "Haqiqatan ham uydan ko'chmoqchimisiz ",
+    ["You have sucessfully accepted the transfer."] = "Siz transferni muvaffaqiyatli qabul qildingiz.",
+    ["You have sucessfully iniated your move out."] = "Siz ko'chib ketishni muvaffaqiyatli boshladingiz.",
+    ["You have sucessfully initiated the transfer of your house."] = "Siz uyingiz transferini muvaffaqiyatli boshladingiz.",
+    
+    -- Imbuing
+    ["Confirm Imbuing Attempt"] = "Imbuement urinishini tasdiqlash",
+    ["Confirm Clearing"] = "Tozalashni tasdiqlash",
+    ["Confirmation of Purchase"] = "Xaridni tasdiqlash",
+    
+    -- UI Elements Extended
+    ["Chat Off"] = "Chat o'chirilgan",
+    ["Chat On"] = "Chat yoqilgan",
+    ["Toggle WASD chat mode"] = "WASD chat rejimini almashtirish",
+    ["Toggle chase mode"] = "Ta'qib rejimini almashtirish",
+    ["Local Chat"] = "Mahalliy chat",
+    ["Debug Info"] = "Tuzatish ma'lumotlari",
+    ["Top"] = "Yuqori",
+    ["Bottom"] = "Pastki",
+    ["Parallel"] = "Parallel",
+    ["Compact"] = "Ixcham",
+    ["Large"] = "Katta",
+    ["Medium"] = "O'rta",
+    ["Small"] = "Kichik",
+    
+    -- Store and Rewards
+    ["Store"] = "Do'kon",
+    ["Rewards"] = "Mukofotlar",
+    ["Daily Rewards"] = "Kunlik mukofotlar",
+    ["Collect Reward"] = "Mukofotni yig'ish",
+    ["You have collected your reward!"] = "Siz mukofotingizni yig'dingiz!",
+    ["Buy Offer"] = "Sotib olish taklifi",
+    ["Sell Offer"] = "Sotish taklifi",
+    ["My Offers"] = "Mening takliflarim",
+    ["Create Offer"] = "Taklif yaratish",
+    
+    -- Loot Management
+    ["Loot"] = "O'lja",
+    ["Auto Loot"] = "Avtomatik o'lja",
+    ["Quick Loot"] = "Tez o'lja",
+    ["Loot Channel"] = "O'lja kanali",
+    ["Show Loot"] = "O'ljani ko'rsatish",
+    ["Hide Loot"] = "O'ljani yashirish",
+    
+    -- Chat Modes
+    ["Default Channel"] = "Standart kanal",
+    ["Game Chat"] = "O'yin chati",
+    ["NPC Channel"] = "NPC kanali",
+    ["Private Messages"] = "Shaxsiy xabarlar",
+    ["Server Log"] = "Server jurnali",
+    
+    -- Party System
+    ["Party"] = "Guruh",
+    ["Invite to Party"] = "Guruhga taklif qilish",
+    ["Join Party"] = "Guruhga qo'shilish",
+    ["Leave Party"] = "Guruhdan chiqish",
+    ["Pass Leadership"] = "Rahbarlikni o'tkazish",
+    ["Enable Shared Experience"] = "Umumiy tajribani yoqish",
+    ["Disable Shared Experience"] = "Umumiy tajribani o'chirish",
+    
+    -- Reporting
+    ["Report"] = "Hisobot",
+    ["Report Bug"] = "Xatoni xabar qilish",
+    ["Report Player"] = "O'yinchini xabar qilish",
+    ["Statement Report"] = "Bayonot hisoboti",
+    ["You must enter a comment."] = "Siz izoh kiritishingiz kerak.",
+    ["You must select a reason."] = "Siz sababni tanlashingiz kerak.",
+    ["You must select an action."] = "Siz harakatni tanlashingiz kerak.",
+    
+    -- Tasks and Quests
+    ["Tasks"] = "Vazifalar",
+    ["Quests"] = "Kvestlar",
+    ["Quest Log"] = "Kvest jurnali",
+    ["Active Tasks"] = "Faol vazifalar",
+    ["Completed Tasks"] = "Tugatilgan vazifalar",
+    
+    -- Authentication
+    ["Authenticator Token"] = "Autentifikator tokeni",
+    ["Two-Factor Authentification"] = "Ikki faktorli autentifikatsiya",
+    ["Enable HTTP login"] = "HTTP kirishni yoqish",
+    ["Login automatically"] = "Avtomatik kirish",
+    ["Remember Email"] = "Emailni eslab qolish",
+    ["Remember password"] = "Parolni eslab qolish",
+    
+    -- Connection Messages
+    ["Connection Lost"] = "Ulanish uzildi",
+    ["Connection to the server lost."] = "Server bilan ulanish uzildi.",
+    ["Trying to reconnect in %s seconds."] = "%s soniyada qayta ulanishga urinish.",
+    ["Reconnect"] = "Qayta ulanish",
+    ["Could not connect to server."] = "Serverga ulanib bo'lmadi.",
+    ["Connection timed out."] = "Ulanish vaqti tugadi.",
+    
+    -- Combat Stats
+    ["Critical Hit Chance"] = "Kritik zarba ehtimoli",
+    ["Critical Hit Damage"] = "Kritik zarba zарари",
+    ["Life Leech Amount"] = "Hayotni so'rish miqdori",
+    ["Life Leech Chance"] = "Hayotni so'rish ehtimoli",
+    ["Mana Leech Amount"] = "Mana so'rish miqdori",
+    ["Mana Leech Chance"] = "Mana so'rish ehtimoli",
+    
+    -- Market Extended
+    ["Market Error"] = "Bozor xatosi",
+    ["Offer Type"] = "Taklif turi",
+    ["Piece Price"] = "Dona narxi",
+    ["Total Price"] = "Jami narx",
+    ["This offer is 25%% above the average market price"] = "Bu taklif bozor o'rtacha narxidan 25%% yuqori",
+    ["This offer is 25%% below the average market price"] = "Bu taklif bozor o'rtacha narxidan 25%% past",
+    
+    -- PvP Settings
+    ["Open PvP"] = "Ochiq PvP",
+    ["Optional PvP"] = "Ixtiyoriy PvP",
+    ["Hardcore PvP"] = "Qattiq PvP",
+    ["Retro Open PvP"] = "Retro ochiq PvP",
+    ["Skull Time"] = "Bosh suyagi vaqti",
+    
+    -- Sorting Options
+    ["Sort by name"] = "Nom bo'yicha saralash",
+    ["Sort by status"] = "Holat bo'yicha saralash",
+    ["Sort by type"] = "Tur bo'yicha saralash",
+    
+    -- Display Settings
+    ["Show creature health bars"] = "Maxluqlar salomatligi chizig'ini ko'rsatish",
+    ["Show creature mana bars"] = "Maxluqlar mana chizig'ini ko'rsatish",
+    ["Show creature names"] = "Maxluqlar nomlarini ko'rsatish",
+    ["Show player names"] = "O'yinchilar nomlarini ko'rsatish",
+    ["Show monster names"] = "Maxluqlar nomlarini ko'rsatish",
+    ["Show NPC names"] = "NPC nomlarini ko'rsatish",
+    ["Show Text"] = "Matnni ko'rsatish",
+    ["Show timestamps in console"] = "Konsolda vaqt belgilarini ko'rsatish",
+    
+    -- Audio Settings
+    ["Music Volume"] = "Musiqa ovozi",
+    ["Sound Volume"] = "Ovoz balandligi",
+    ["Enable Audio"] = "Audioni yoqish",
+    ["Disable Audio"] = "Audioni o'chirish",
+    
+    -- Screenshots
+    ["Screenshot"] = "Skrinshot",
+    ["Take Screenshot"] = "Skrinshot olish",
+    ["Screenshot saved"] = "Skrinshot saqlandi",
+    
+    -- Events
+    ["Events"] = "Tadbirlar",
+    ["Event Schedule"] = "Tadbirlar jadvali",
+    ["Active Events"] = "Faol tadbirlar",
+    
+    -- Prey System
+    ["Prey"] = "O'lja",
+    ["Prey Bonus"] = "O'lja bonusi",
+    ["Select Prey"] = "O'ljani tanlash",
+    ["Reroll Prey"] = "O'ljani qayta aylantirish",
+    
+    -- Map Features
+    ["Mini Map"] = "Mini xarita",
+    ["World Map"] = "Jahon xaritasi",
+    ["Mark Position"] = "Pozitsiyani belgilash",
+    ["Clear Marks"] = "Belgilarni tozalash",
+    
+    -- Guild System
+    ["Guild"] = "Gildiya",
+    ["Guild Chat"] = "Gildiya chati",
+    ["Guild Members"] = "Gildiya a'zolari",
+    ["Invite to Guild"] = "Gildiyaga taklif qilish",
+    ["Leave Guild"] = "Gildiyadan chiqish",
+    
+    -- Format Strings Extended
+    ["You have %s percent to go"] = "Sizga %s foiz qoldi",
+    ["You have %s percent"] = "Sizda %s foiz bor",
+    ["%d gold"] = "%d oltin",
+    ["%d platinum"] = "%d platina",
+    ["%d crystal"] = "%d kristal",
+    
+    -- Additional UI
+    ["Client version"] = "Mijoz versiyasi",
+    ["Server"] = "Server",
+    ["Port"] = "Port",
+    ["Language"] = "Til",
+    ["Email"] = "Email",
+    ["Password"] = "Parol",
+    ["Account name"] = "Hisob nomi",
+    
+    -- Graphics Options
+    ["Antialiasing"] = "Antialiasing",
+    ["Vsync"] = "Vsync",
+    ["FPS Limit"] = "FPS chegarasi",
+    ["Fullscreen"] = "To'liq ekran",
+    ["Windowed"] = "Oynali",
+    ["Resolution"] = "Ruxsat",
+    
+    -- Additional Messages
+    ["Your client needs updating, try redownloading it."] = "Sizning mijozingiz yangilanishi kerak, qayta yuklab ko'ring.",
+    ["Your connection has been lost."] = "Sizning ulanishingiz uzildi.",
+    ["Your request has been closed"] = "Sizning so'rovingiz yopildi",
+    ["There is no way."] = "Yo'l yo'q.",
+    ["You can enter new text."] = "Siz yangi matn kiritishingiz mumkin.",
+    ["Unable to logout."] = "Chiqib bo'lmadi."
   }
 }
 

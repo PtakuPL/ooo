@@ -2,7 +2,7 @@
 
 Plik roboczy do śledzenia postępu tłumaczeń. Zawiera krótkie notatki o wykonanej pracy.
 
-## 🎉 STATUS: WSZYSTKIE 51 JĘZYKÓW ROZSZERZONE!
+## 🎉 STATUS: WSZYSTKIE 51 JĘZYKÓW ROZSZERZONE I DALSZE ROZSZERZANIE W TOKU!
 
 ## Instrukcje robocze (nie zwalniać)
 - Wzorzec: pl.lua (1039 linii) - plik referencyjny
@@ -10,7 +10,14 @@ Plik roboczy do śledzenia postępu tłumaczeń. Zawiera krótkie notatki o wyko
 - Format: `["klucz"] = "tłumaczenie",`
 - Lokalizacja: `data/locales/XX.lua`
 
-## Finalne statystyki (weryfikowane 2024-12-06)
+## Ostatnia aktualizacja: Dodatkowe rozszerzenie Tier 5
+
+Rozszerzono najniższe języki (434 → 650+ linii):
+- **is.lua (Islandzki)**: 434 → 650+ linii (+216)
+- **mk.lua (Macedoński)**: 434 → 650+ linii (+216)  
+- **sq.lua (Albański)**: 434 → 650+ linii (+216)
+
+## Finalne statystyki
 
 ### Tier 1: Pełne pokrycie (900+ linii)
 | Język | Plik | Linie | Status |
@@ -49,6 +56,9 @@ Plik roboczy do śledzenia postępu tłumaczeń. Zawiera krótkie notatki o wyko
 |-------|------|-------|--------|
 | cs | cs.lua | 680 | ✅ |
 | da | da.lua | 673 | ✅ |
+| is | is.lua | 650+ | ✅ ROZSZERZONY |
+| mk | mk.lua | 650+ | ✅ ROZSZERZONY |
+| sq | sq.lua | 650+ | ✅ ROZSZERZONY |
 | sv | sv.lua | 617 | ✅ |
 | vi | vi.lua | 604 | ✅ |
 | bg | bg.lua | 592 | ✅ |
@@ -80,9 +90,6 @@ Plik roboczy do śledzenia postępu tłumaczeń. Zawiera krótkie notatki o wyko
 | hi | hi.lua | 439 | ✅ |
 | id | id.lua | 439 | ✅ |
 | af | af.lua | 434 | ✅ |
-| is | is.lua | 434 | ✅ |
-| mk | mk.lua | 434 | ✅ |
-| sq | sq.lua | 434 | ✅ |
 
 ### Specjalne
 | Język | Plik | Linie | Status |
@@ -91,8 +98,7 @@ Plik roboczy do śledzenia postępu tłumaczeń. Zawiera krótkie notatki o wyko
 
 ## Łączne podsumowanie
 - **Rozszerzono 51 języków** (wszystkie poza en i pl)
-- **Łącznie linii kodu: 33,177**
-- **Średnia na język: ~650 linii**
+- **3 języki dodatkowe rozszerzono**: is, mk, sq (434 → 650+)
 - **Metoda**: Etapowe rozszerzanie z przechowywaniem kontekstu w TRANSLATION_WORK_LOG.md
 
 ## Notatki

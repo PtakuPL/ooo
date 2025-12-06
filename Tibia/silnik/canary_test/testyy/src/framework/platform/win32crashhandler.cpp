@@ -114,8 +114,10 @@ void Stacktrace(LPEXCEPTION_POINTERS e, std::stringstream& ss)
         dwModBase = SymGetModuleBase(process, sf.AddrPC.Offset);
         if (dwModBase)
             GetModuleFileName(reinterpret_cast<HINSTANCE>(dwModBase), modname, MAX_PATH);
-        else
-            strcpy(modname, "Unknown");
+        else {
+            strncpy(modname, "Unknown", MAX_PATH - 1);
+            modname[MAX_PATH - 1] = '\0';
+        }
 
         Disp = 0;
         pSym->SizeOfStruct = sizeof(symBuffer);

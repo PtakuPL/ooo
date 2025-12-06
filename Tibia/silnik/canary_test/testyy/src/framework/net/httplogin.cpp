@@ -146,7 +146,8 @@ void LoginHttp::httpLogin(const std::string& host, const std::string& path,
         [this, host, path, port, email, password, request_id, httpLogin] {
         emscripten_fetch_attr_t attr;
         emscripten_fetch_attr_init(&attr);
-        strcpy(attr.requestMethod, "POST");
+        strncpy(attr.requestMethod, "POST", sizeof(attr.requestMethod) - 1);
+        attr.requestMethod[sizeof(attr.requestMethod) - 1] = '\0';
         static const char* const headers[] = {
             "Content-Type", "application/json; charset=utf-8",
             0,

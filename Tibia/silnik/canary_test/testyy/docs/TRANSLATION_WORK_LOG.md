@@ -53,29 +53,26 @@ Plik roboczy do śledzenia postępu tłumaczeń. Zawiera krótkie notatki o wyko
 | hi | hi.lua | 382 | 450 | ✅ |
 | id | id.lua | 382 | 450 | ✅ |
 | ms | ms.lua | 398 | 460 | ✅ |
+| bg | bg.lua | 447 | 590 | ✅ |
+| hr | hr.lua | 447 | 590 | ✅ |
+| sk | sk.lua | 447 | 590 | ✅ |
 
 ## Łączne podsumowanie
-- **Rozszerzono 42 języki**
-- **Dodano ~7,400 nowych tłumaczeń**
+- **Rozszerzono 45 języków**
+- **Dodano ~7,830 nowych tłumaczeń**
 - **Metoda**: Etapowe rozszerzanie z przechowywaniem kontekstu w TRANSLATION_WORK_LOG.md
 
 ## Następne do pracy
-- ro (Romanian) - ~400 wpisów
-- bg (Bulgarian) - ~400 wpisów
-- hr (Croatian) - ~400 wpisów
-- sk (Slovak) - ~400 wpisów
-- sl (Slovenian) - ~400 wpisów
-- el (Greek) - ~400 wpisów
-- he (Hebrew) - ~400 wpisów
-- th (Thai) - ~400 wpisów
-- vi (Vietnamese) - ~400 wpisów
-- id (Indonesian) - ~400 wpisów
-- ms (Malay) - ~400 wpisów
-- hi (Hindi) - ~400 wpisów
+- el (Greek) - ~570 wpisów
+- he (Hebrew) - ~570 wpisów
+- ka (Georgian) - ~785 wpisów (ma dużo, może wymagać mniejszego rozszerzenia)
+- kk (Kazakh) - ~719 wpisów
+- sw (Swahili) - ~719 wpisów
+- uz (Uzbek) - ~719 wpisów
 
 ## Aktualnie w pracy
-- Języki: Kontynuuję z kolejnymi
-- Etap: Rozszerzanie id (Indonesian), ms (Malay), hi (Hindi)
+- Języki: Kontynuuję z el, he
+- Etap: Rozszerzanie Greek (el) i Hebrew (he)
 
 ## Notatki
 - Wszystkie języki używają tego samego zestawu kluczy z pl.lua

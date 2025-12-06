@@ -706,6 +706,70 @@ locale = {
     ["You may not logout or enter a protection zone"] = "אינך יכול להתנתק או להיכנס לאזור מוגן",
     ["Your request has been closed"] = "הבקשה שלך נסגרה",
     ["Waiting List"] = "רשימת המתנה",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "בוסטיאר",
+    ["Boss Tracker"] = "עוקב בוסים",
+    ["Boss Kills"] = "הריגות בוסים",
+    ["Archfoe"] = "אויב ראשי",
+    ["Bane"] = "קללה",
+    ["Nemesis"] = "נמסיס",
+    ["Boss Points"] = "נקודות בוס",
+    ["Unlock Slot"] = "פתח משבצת",
+    ["Equipped"] = "מצויד",
+    
+    -- Market System
+    ["Market"] = "שוק",
+    ["Browse Offers"] = "עיין בהצעות",
+    ["My Offers"] = "ההצעות שלי",
+    ["My History"] = "ההיסטוריה שלי",
+    ["Buy Offer"] = "הצעת קנייה",
+    ["Sell Offer"] = "הצעת מכירה",
+    ["Create Offer"] = "צור הצעה",
+    ["Cancel Offer"] = "בטל הצעה",
+    ["Amount"] = "כמות",
+    ["Total Price"] = "מחיר כולל",
+    ["Piece Price"] = "מחיר ליחידה",
+    ["Statistics"] = "סטטיסטיקות",
+    ["Transactions"] = "עסקאות",
+    ["Average Prices"] = "מחירים ממוצעים",
+    ["Highest Prices"] = "המחירים הגבוהים ביותר",
+    ["Lowest Prices"] = "המחירים הנמוכים ביותר",
+    
+    -- Forge System
+    ["Forge"] = "נפחייה",
+    ["Dust Converter"] = "ממיר אבק",
+    ["Fusion"] = "מיזוג",
+    ["Transfer"] = "העברה",
+    ["Tier"] = "רמה",
+    ["Success Chance"] = "סיכויי הצלחה",
+    ["Dust"] = "אבק",
+    ["Slivers"] = "שבבים",
+    ["Cores"] = "ליבות",
+    ["Exalted Cores"] = "ליבות מרוממות",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "גלגל הגורל",
+    ["Revelation Points"] = "נקודות התגלות",
+    ["Promotion Points"] = "נקודות קידום",
+    ["Gift of Life"] = "מתנת החיים",
+    ["Divine Empowerment"] = "העצמה אלוהית",
+    ["Blessing of the Grove"] = "ברכת החורשה",
+    ["Combat Mastery"] = "שליטה בקרב",
+    ["Healing Link"] = "קשר ריפוי",
+    
+    -- Prey System
+    ["Prey"] = "טרף",
+    ["Prey Bonus"] = "בונוס טרף",
+    ["Prey Slot"] = "משבצת טרף",
+    ["Select Creature"] = "בחר יצור",
+    ["Bonus Type"] = "סוג בונוס",
+    ["Damage Boost"] = "הגברת נזק",
+    ["Defense Boost"] = "הגברת הגנה",
+    ["XP Bonus"] = "בונוס XP",
+    ["Loot Bonus"] = "בונוס שלל",
+    ["Prey Cards"] = "קלפי טרף",
+    ["Prey Wildcards"] = "קלפי ג׳וקר טרף",
   }
 }
 

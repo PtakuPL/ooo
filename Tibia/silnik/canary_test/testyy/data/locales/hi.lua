@@ -717,6 +717,70 @@ locale = {
     ["Select object"] = "वस्तु चुनें",
     ["Clear object"] = "वस्तु साफ़ करें",
     ["Send automatically"] = "स्वचालित रूप से भेजें",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "बॉसटियरी",
+    ["Boss Tracker"] = "बॉस ट्रैकर",
+    ["Boss Kills"] = "बॉस किल्स",
+    ["Archfoe"] = "मुख्य शत्रु",
+    ["Bane"] = "अभिशाप",
+    ["Nemesis"] = "नेमेसिस",
+    ["Boss Points"] = "बॉस पॉइंट्स",
+    ["Unlock Slot"] = "स्लॉट अनलॉक करें",
+    ["Equipped"] = "सुसज्जित",
+    
+    -- Market System
+    ["Market"] = "बाज़ार",
+    ["Browse Offers"] = "ऑफ़र ब्राउज़ करें",
+    ["My Offers"] = "मेरे ऑफ़र",
+    ["My History"] = "मेरा इतिहास",
+    ["Buy Offer"] = "खरीद ऑफ़र",
+    ["Sell Offer"] = "बिक्री ऑफ़र",
+    ["Create Offer"] = "ऑफ़र बनाएं",
+    ["Cancel Offer"] = "ऑफ़र रद्द करें",
+    ["Amount"] = "राशि",
+    ["Total Price"] = "कुल कीमत",
+    ["Piece Price"] = "प्रति इकाई कीमत",
+    ["Statistics"] = "आंकड़े",
+    ["Transactions"] = "लेनदेन",
+    ["Average Prices"] = "औसत कीमतें",
+    ["Highest Prices"] = "उच्चतम कीमतें",
+    ["Lowest Prices"] = "न्यूनतम कीमतें",
+    
+    -- Forge System
+    ["Forge"] = "लोहारखाना",
+    ["Dust Converter"] = "धूल कन्वर्टर",
+    ["Fusion"] = "संलयन",
+    ["Transfer"] = "स्थानांतरण",
+    ["Tier"] = "स्तर",
+    ["Success Chance"] = "सफलता की संभावना",
+    ["Dust"] = "धूल",
+    ["Slivers"] = "टुकड़े",
+    ["Cores"] = "कोर",
+    ["Exalted Cores"] = "उन्नत कोर",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "भाग्य का पहिया",
+    ["Revelation Points"] = "प्रकटीकरण पॉइंट्स",
+    ["Promotion Points"] = "प्रमोशन पॉइंट्स",
+    ["Gift of Life"] = "जीवन का उपहार",
+    ["Divine Empowerment"] = "दिव्य सशक्तिकरण",
+    ["Blessing of the Grove"] = "वाटिका का आशीर्वाद",
+    ["Combat Mastery"] = "युद्ध निपुणता",
+    ["Healing Link"] = "उपचार लिंक",
+    
+    -- Prey System
+    ["Prey"] = "शिकार",
+    ["Prey Bonus"] = "शिकार बोनस",
+    ["Prey Slot"] = "शिकार स्लॉट",
+    ["Select Creature"] = "प्राणी चुनें",
+    ["Bonus Type"] = "बोनस प्रकार",
+    ["Damage Boost"] = "क्षति वृद्धि",
+    ["Defense Boost"] = "रक्षा वृद्धि",
+    ["XP Bonus"] = "XP बोनस",
+    ["Loot Bonus"] = "लूट बोनस",
+    ["Prey Cards"] = "शिकार कार्ड",
+    ["Prey Wildcards"] = "शिकार वाइल्डकार्ड",
   }
 }
 

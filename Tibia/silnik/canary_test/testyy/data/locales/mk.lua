@@ -712,6 +712,70 @@ locale = {
     ["Select object"] = "Избери објект",
     ["Clear object"] = "Исчисти објект",
     ["Send automatically"] = "Испрати автоматски",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Бостијариј",
+    ["Boss Tracker"] = "Следење на Босови",
+    ["Boss Kills"] = "Убивања на Босови",
+    ["Archfoe"] = "Главен Непријател",
+    ["Bane"] = "Проклетство",
+    ["Nemesis"] = "Немезис",
+    ["Boss Points"] = "Поени од Босови",
+    ["Unlock Slot"] = "Отклучи Слот",
+    ["Equipped"] = "Опремено",
+    
+    -- Market System
+    ["Market"] = "Пазар",
+    ["Browse Offers"] = "Прегледај Понуди",
+    ["My Offers"] = "Мои Понуди",
+    ["My History"] = "Моја Историја",
+    ["Buy Offer"] = "Понуда за Купување",
+    ["Sell Offer"] = "Понуда за Продажба",
+    ["Create Offer"] = "Создај Понуда",
+    ["Cancel Offer"] = "Откажи Понуда",
+    ["Amount"] = "Количина",
+    ["Total Price"] = "Вкупна Цена",
+    ["Piece Price"] = "Цена по Парче",
+    ["Statistics"] = "Статистика",
+    ["Transactions"] = "Трансакции",
+    ["Average Prices"] = "Просечни Цени",
+    ["Highest Prices"] = "Највисоки Цени",
+    ["Lowest Prices"] = "Најниски Цени",
+    
+    -- Forge System
+    ["Forge"] = "Ковачница",
+    ["Dust Converter"] = "Претворувач на Прашина",
+    ["Fusion"] = "Фузија",
+    ["Transfer"] = "Трансфер",
+    ["Tier"] = "Ниво",
+    ["Success Chance"] = "Шанса за Успех",
+    ["Dust"] = "Прашина",
+    ["Slivers"] = "Парчиња",
+    ["Cores"] = "Јадра",
+    ["Exalted Cores"] = "Издигнати Јадра",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Тркало на Судбина",
+    ["Revelation Points"] = "Поени за Откровение",
+    ["Promotion Points"] = "Поени за Промоција",
+    ["Gift of Life"] = "Подарок на Живот",
+    ["Divine Empowerment"] = "Божествено Зајакнување",
+    ["Blessing of the Grove"] = "Благослов на Шума",
+    ["Combat Mastery"] = "Борбена Мајсторија",
+    ["Healing Link"] = "Врска за Лекување",
+    
+    -- Prey System
+    ["Prey"] = "Плен",
+    ["Prey Bonus"] = "Бонус за Плен",
+    ["Prey Slot"] = "Слот за Плен",
+    ["Select Creature"] = "Избери Суштество",
+    ["Bonus Type"] = "Тип на Бонус",
+    ["Damage Boost"] = "Зголемување на Штета",
+    ["Defense Boost"] = "Зголемување на Одбрана",
+    ["XP Bonus"] = "XP Бонус",
+    ["Loot Bonus"] = "Бонус за Плен",
+    ["Prey Cards"] = "Карти за Плен",
+    ["Prey Wildcards"] = "Џокери за Плен",
   }
 }
 

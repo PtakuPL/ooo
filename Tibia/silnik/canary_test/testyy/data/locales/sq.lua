@@ -712,6 +712,70 @@ locale = {
     ["Select object"] = "Zgjidh objektin",
     ["Clear object"] = "Pastro objektin",
     ["Send automatically"] = "Dërgo automatikisht",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Bosstiary",
+    ["Boss Tracker"] = "Gjurmues i Bosit",
+    ["Boss Kills"] = "Vrasjet e Bosit",
+    ["Archfoe"] = "Armiku Kryesor",
+    ["Bane"] = "Mallkim",
+    ["Nemesis"] = "Nemesis",
+    ["Boss Points"] = "Pikët e Bosit",
+    ["Unlock Slot"] = "Zhblloko Vendin",
+    ["Equipped"] = "I Pajisur",
+    
+    -- Market System
+    ["Market"] = "Tregu",
+    ["Browse Offers"] = "Shfleto Ofertat",
+    ["My Offers"] = "Ofertat e Mia",
+    ["My History"] = "Historia Ime",
+    ["Buy Offer"] = "Ofertë Blerjeje",
+    ["Sell Offer"] = "Ofertë Shitjeje",
+    ["Create Offer"] = "Krijo Ofertë",
+    ["Cancel Offer"] = "Anulo Ofertën",
+    ["Amount"] = "Sasia",
+    ["Total Price"] = "Çmimi Total",
+    ["Piece Price"] = "Çmimi për Copë",
+    ["Statistics"] = "Statistikat",
+    ["Transactions"] = "Transaksionet",
+    ["Average Prices"] = "Çmimet Mesatare",
+    ["Highest Prices"] = "Çmimet Më të Larta",
+    ["Lowest Prices"] = "Çmimet Më të Ulëta",
+    
+    -- Forge System
+    ["Forge"] = "Farkë",
+    ["Dust Converter"] = "Konvertuesi i Pluhurit",
+    ["Fusion"] = "Bashkim",
+    ["Transfer"] = "Transfer",
+    ["Tier"] = "Niveli",
+    ["Success Chance"] = "Mundësia e Suksesit",
+    ["Dust"] = "Pluhur",
+    ["Slivers"] = "Copëza",
+    ["Cores"] = "Bërthama",
+    ["Exalted Cores"] = "Bërthama të Lartësuara",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Rrota e Fatit",
+    ["Revelation Points"] = "Pikët e Zbulesës",
+    ["Promotion Points"] = "Pikët e Promovimit",
+    ["Gift of Life"] = "Dhurata e Jetës",
+    ["Divine Empowerment"] = "Fuqizimi Hyjnor",
+    ["Blessing of the Grove"] = "Bekimi i Pyllit",
+    ["Combat Mastery"] = "Zotësia në Luftë",
+    ["Healing Link"] = "Lidhja e Shërimit",
+    
+    -- Prey System
+    ["Prey"] = "Pre",
+    ["Prey Bonus"] = "Bonusi i Presë",
+    ["Prey Slot"] = "Vendi i Presë",
+    ["Select Creature"] = "Zgjidh Krijesën",
+    ["Bonus Type"] = "Lloji i Bonusit",
+    ["Damage Boost"] = "Rritja e Dëmit",
+    ["Defense Boost"] = "Rritja e Mbrojtjes",
+    ["XP Bonus"] = "Bonus XP",
+    ["Loot Bonus"] = "Bonusi i Plaçkës",
+    ["Prey Cards"] = "Kartat e Presë",
+    ["Prey Wildcards"] = "Xhokerët e Presë",
   }
 }
 

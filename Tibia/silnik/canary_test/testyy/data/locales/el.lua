@@ -706,6 +706,70 @@ locale = {
     ["You may not logout or enter a protection zone"] = "Δεν μπορείς να αποσυνδεθείς ή να μπεις σε προστατευμένη ζώνη",
     ["Your request has been closed"] = "Το αίτημά σου έχει κλείσει",
     ["Waiting List"] = "Λίστα αναμονής",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Bosstiary",
+    ["Boss Tracker"] = "Παρακολούθηση Boss",
+    ["Boss Kills"] = "Θανάτωση Boss",
+    ["Archfoe"] = "Αρχεχθρός",
+    ["Bane"] = "Κατάρα",
+    ["Nemesis"] = "Νέμεσις",
+    ["Boss Points"] = "Πόντοι Boss",
+    ["Unlock Slot"] = "Ξεκλείδωμα Θέσης",
+    ["Equipped"] = "Εξοπλισμένο",
+    
+    -- Market System
+    ["Market"] = "Αγορά",
+    ["Browse Offers"] = "Αναζήτηση Προσφορών",
+    ["My Offers"] = "Οι Προσφορές Μου",
+    ["My History"] = "Το Ιστορικό Μου",
+    ["Buy Offer"] = "Προσφορά Αγοράς",
+    ["Sell Offer"] = "Προσφορά Πώλησης",
+    ["Create Offer"] = "Δημιουργία Προσφοράς",
+    ["Cancel Offer"] = "Ακύρωση Προσφοράς",
+    ["Amount"] = "Ποσότητα",
+    ["Total Price"] = "Συνολική Τιμή",
+    ["Piece Price"] = "Τιμή ανά Τεμάχιο",
+    ["Statistics"] = "Στατιστικά",
+    ["Transactions"] = "Συναλλαγές",
+    ["Average Prices"] = "Μέσες Τιμές",
+    ["Highest Prices"] = "Υψηλότερες Τιμές",
+    ["Lowest Prices"] = "Χαμηλότερες Τιμές",
+    
+    -- Forge System
+    ["Forge"] = "Σιδηρουργείο",
+    ["Dust Converter"] = "Μετατροπέας Σκόνης",
+    ["Fusion"] = "Σύντηξη",
+    ["Transfer"] = "Μεταφορά",
+    ["Tier"] = "Επίπεδο",
+    ["Success Chance"] = "Πιθανότητα Επιτυχίας",
+    ["Dust"] = "Σκόνη",
+    ["Slivers"] = "Θραύσματα",
+    ["Cores"] = "Πυρήνες",
+    ["Exalted Cores"] = "Εξυψωμένοι Πυρήνες",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Τροχός της Μοίρας",
+    ["Revelation Points"] = "Πόντοι Αποκάλυψης",
+    ["Promotion Points"] = "Πόντοι Προαγωγής",
+    ["Gift of Life"] = "Δώρο Ζωής",
+    ["Divine Empowerment"] = "Θεϊκή Ενδυνάμωση",
+    ["Blessing of the Grove"] = "Ευλογία του Άλσους",
+    ["Combat Mastery"] = "Μαχητική Κυριαρχία",
+    ["Healing Link"] = "Δεσμός Θεραπείας",
+    
+    -- Prey System
+    ["Prey"] = "Θήραμα",
+    ["Prey Bonus"] = "Μπόνους Θηράματος",
+    ["Prey Slot"] = "Θέση Θηράματος",
+    ["Select Creature"] = "Επιλογή Πλάσματος",
+    ["Bonus Type"] = "Τύπος Μπόνους",
+    ["Damage Boost"] = "Αύξηση Ζημιάς",
+    ["Defense Boost"] = "Αύξηση Άμυνας",
+    ["XP Bonus"] = "Μπόνους XP",
+    ["Loot Bonus"] = "Μπόνους Λείας",
+    ["Prey Cards"] = "Κάρτες Θηράματος",
+    ["Prey Wildcards"] = "Μπαλαντέρ Θηράματος",
   }
 }
 

@@ -715,6 +715,70 @@ locale = {
     ["Use on yourself"] = "Gebruik op jouself",
     ["With crosshair"] = "Met kruishare",
     ["Send automatically"] = "Stuur outomaties",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Bosstiary",
+    ["Boss Tracker"] = "Baas Opspoorter",
+    ["Boss Kills"] = "Baas Moorde",
+    ["Archfoe"] = "Aartsvyand",
+    ["Bane"] = "Vloek",
+    ["Nemesis"] = "Nemesis",
+    ["Boss Points"] = "Baas Punte",
+    ["Unlock Slot"] = "Ontsluit Gleuf",
+    ["Equipped"] = "Toegerus",
+    
+    -- Market System
+    ["Market"] = "Mark",
+    ["Browse Offers"] = "Blaai deur Aanbiedinge",
+    ["My Offers"] = "My Aanbiedinge",
+    ["My History"] = "My Geskiedenis",
+    ["Buy Offer"] = "Koop Aanbod",
+    ["Sell Offer"] = "Verkoop Aanbod",
+    ["Create Offer"] = "Skep Aanbod",
+    ["Cancel Offer"] = "Kanselleer Aanbod",
+    ["Amount"] = "Hoeveelheid",
+    ["Total Price"] = "Totale Prys",
+    ["Piece Price"] = "Stukprys",
+    ["Statistics"] = "Statistieke",
+    ["Transactions"] = "Transaksies",
+    ["Average Prices"] = "Gemiddelde Pryse",
+    ["Highest Prices"] = "Hoogste Pryse",
+    ["Lowest Prices"] = "Laagste Pryse",
+    
+    -- Forge System
+    ["Forge"] = "Smidswinkel",
+    ["Dust Converter"] = "Stof Omskakelaar",
+    ["Fusion"] = "Samesmelting",
+    ["Transfer"] = "Oordrag",
+    ["Tier"] = "Vlak",
+    ["Success Chance"] = "Sukses Kans",
+    ["Dust"] = "Stof",
+    ["Slivers"] = "Splinters",
+    ["Cores"] = "Kerne",
+    ["Exalted Cores"] = "Verhoogde Kerne",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Wiel van Noodlot",
+    ["Revelation Points"] = "Openbaring Punte",
+    ["Promotion Points"] = "Bevordering Punte",
+    ["Gift of Life"] = "Geskenk van Lewe",
+    ["Divine Empowerment"] = "Goddelike Bemagtiging",
+    ["Blessing of the Grove"] = "Seën van die Bos",
+    ["Combat Mastery"] = "Gevegsbemeestering",
+    ["Healing Link"] = "Genesende Skakel",
+    
+    -- Prey System
+    ["Prey"] = "Prooi",
+    ["Prey Bonus"] = "Prooi Bonus",
+    ["Prey Slot"] = "Prooi Gleuf",
+    ["Select Creature"] = "Kies Wese",
+    ["Bonus Type"] = "Bonus Tipe",
+    ["Damage Boost"] = "Skade Verhoging",
+    ["Defense Boost"] = "Verdediging Verhoging",
+    ["XP Bonus"] = "XP Bonus",
+    ["Loot Bonus"] = "Buit Bonus",
+    ["Prey Cards"] = "Prooi Kaarte",
+    ["Prey Wildcards"] = "Prooi Jokers",
   }
 }
 

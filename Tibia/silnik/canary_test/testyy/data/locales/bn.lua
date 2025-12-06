@@ -681,6 +681,14 @@ locale = {
     ["players online"] = "খেলোয়াড় অনলাইন",
     ["Remember Email"] = "ইমেইল মনে রাখুন",
     ["Login automatically"] = "স্বয়ংক্রিয় লগইন",
+    
+    -- Additional UI
+    ["Store"] = "দোকান",
+    ["Prey"] = "শিকার",
+    ["Daily Reward"] = "দৈনিক পুরস্কার",
+    ["Collect Reward"] = "পুরস্কার সংগ্রহ করুন",
+    ["Claim"] = "দাবি করুন",
+    ["Bonus"] = "বোনাস",
   }
 }
 

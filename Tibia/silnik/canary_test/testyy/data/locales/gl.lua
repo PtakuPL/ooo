@@ -662,6 +662,32 @@ locale = {
     ["players online"] = "xogadores en liña",
     ["Remember Email"] = "Lembrar correo",
     ["Login automatically"] = "Iniciar sesión automaticamente",
+    
+    -- Additional UI
+    ["Store"] = "Tenda",
+    ["Prey"] = "Presa",
+    ["Analytics"] = "Analíticas",
+    ["Daily Reward"] = "Recompensa Diaria",
+    ["Collect Reward"] = "Recoller Recompensa",
+    ["Claim"] = "Reclamar",
+    ["Streak"] = "Racha",
+    ["Bonus"] = "Bonificación",
+    
+    -- Prey System
+    ["Prey Creature"] = "Criatura Presa",
+    ["Prey Bonus"] = "Bonificación Presa",
+    ["Reroll"] = "Volver a Tirar",
+    ["Lock Prey"] = "Bloquear Presa",
+    ["Damage Bonus"] = "Bonificación de Dano",
+    ["Defense Bonus"] = "Bonificación de Defensa",
+    
+    -- Forge System
+    ["Forge"] = "Forxa",
+    ["Dust"] = "Po",
+    ["Fusion"] = "Fusión",
+    ["Transfer"] = "Transferencia",
+    ["Tier"] = "Nivel",
+    ["Success Rate"] = "Taxa de Éxito",
   }
 }
 

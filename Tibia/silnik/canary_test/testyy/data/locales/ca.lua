@@ -662,6 +662,32 @@ locale = {
     ["players online"] = "jugadors en línia",
     ["Remember Email"] = "Recordar correu",
     ["Login automatically"] = "Iniciar sessió automàticament",
+    
+    -- Additional UI
+    ["Store"] = "Botiga",
+    ["Prey"] = "Presa",
+    ["Analytics"] = "Analítiques",
+    ["Daily Reward"] = "Recompensa Diària",
+    ["Collect Reward"] = "Recollir Recompensa",
+    ["Claim"] = "Reclamar",
+    ["Streak"] = "Ratxa",
+    ["Bonus"] = "Bonificació",
+    
+    -- Prey System
+    ["Prey Creature"] = "Criatura Presa",
+    ["Prey Bonus"] = "Bonificació Presa",
+    ["Reroll"] = "Tornar a Tirar",
+    ["Lock Prey"] = "Bloquejar Presa",
+    ["Damage Bonus"] = "Bonificació de Dany",
+    ["Defense Bonus"] = "Bonificació de Defensa",
+    
+    -- Forge System
+    ["Forge"] = "Forja",
+    ["Dust"] = "Pols",
+    ["Fusion"] = "Fusió",
+    ["Transfer"] = "Transferència",
+    ["Tier"] = "Nivell",
+    ["Success Rate"] = "Taxa d'Èxit",
   }
 }
 

@@ -686,6 +686,14 @@ locale = {
     ["players online"] = "jucători online",
     ["Remember Email"] = "Amintește email",
     ["Login automatically"] = "Autentificare automată",
+    
+    -- Additional UI
+    ["Store"] = "Magazin",
+    ["Prey"] = "Pradă",
+    ["Daily Reward"] = "Recompensă Zilnică",
+    ["Collect Reward"] = "Colectează Recompensa",
+    ["Claim"] = "Revendică",
+    ["Bonus"] = "Bonus",
   }
 }
 

@@ -693,6 +693,11 @@ locale = {
     ["Enable HTTP login"] = "Virkja HTTP innskráningu",
     ["Login automatically"] = "Skrá inn sjálfkrafa",
     ["Be aware that your email address will be stored"] = "Athugaðu að tölvupóstfangið þitt verður vistað",
+    
+    -- Additional UI
+    ["Store"] = "Verslun",
+    ["Prey"] = "Bráð",
+    ["Daily Reward"] = "Dagleg Verðlaun",
   }
 }
 

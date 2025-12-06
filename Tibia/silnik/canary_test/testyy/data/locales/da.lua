@@ -667,6 +667,32 @@ local add = {
   ["Large"] = "Stor",
   ["ok"] = "ok",
   ["remove"] = "fjern",
+  
+  -- Additional UI
+  ["Store"] = "Butik",
+  ["Prey"] = "Bytte",
+  ["Analytics"] = "Analyse",
+  ["Daily Reward"] = "Daglig Belønning",
+  ["Collect Reward"] = "Indsaml Belønning",
+  ["Claim"] = "Kræv",
+  ["Streak"] = "Serie",
+  ["Bonus"] = "Bonus",
+  
+  -- Prey System
+  ["Prey Creature"] = "Byttevæsen",
+  ["Prey Bonus"] = "Bytte Bonus",
+  ["Reroll"] = "Rul igen",
+  ["Lock Prey"] = "Lås Bytte",
+  ["Damage Bonus"] = "Skade Bonus",
+  ["Defense Bonus"] = "Forsvar Bonus",
+  
+  -- Forge System
+  ["Forge"] = "Smedje",
+  ["Dust"] = "Støv",
+  ["Fusion"] = "Fusion",
+  ["Transfer"] = "Overførsel",
+  ["Tier"] = "Niveau",
+  ["Success Rate"] = "Succesrate",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

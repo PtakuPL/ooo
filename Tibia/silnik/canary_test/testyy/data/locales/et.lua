@@ -662,6 +662,32 @@ locale = {
     ["players online"] = "mängijat võrgus",
     ["Remember Email"] = "Jäta e-post meelde",
     ["Login automatically"] = "Logi automaatselt sisse",
+    
+    -- Additional UI
+    ["Store"] = "Pood",
+    ["Prey"] = "Saak",
+    ["Analytics"] = "Analüütika",
+    ["Daily Reward"] = "Päevane Auhind",
+    ["Collect Reward"] = "Kogu Auhind",
+    ["Claim"] = "Nõua",
+    ["Streak"] = "Seeria",
+    ["Bonus"] = "Boonus",
+    
+    -- Prey System
+    ["Prey Creature"] = "Saagi Olend",
+    ["Prey Bonus"] = "Saagi Boonus",
+    ["Reroll"] = "Veereta Uuesti",
+    ["Lock Prey"] = "Lukusta Saak",
+    ["Damage Bonus"] = "Kahju Boonus",
+    ["Defense Bonus"] = "Kaitse Boonus",
+    
+    -- Forge System
+    ["Forge"] = "Sepikoda",
+    ["Dust"] = "Tolm",
+    ["Fusion"] = "Sulandumine",
+    ["Transfer"] = "Ülekanne",
+    ["Tier"] = "Tase",
+    ["Success Rate"] = "Edu Määr",
   }
 }
 

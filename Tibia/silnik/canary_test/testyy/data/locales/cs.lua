@@ -674,6 +674,22 @@ local add = {
   ["Large"] = "Velký",
   ["ok"] = "ok",
   ["remove"] = "odstranit",
+  
+  -- Additional UI
+  ["Store"] = "Obchod",
+  ["Prey"] = "Kořist",
+  ["Analytics"] = "Analytika",
+  ["Daily Reward"] = "Denní Odměna",
+  ["Collect Reward"] = "Vyzvednout Odměnu",
+  ["Claim"] = "Nárokovat",
+  ["Streak"] = "Série",
+  ["Bonus"] = "Bonus",
+  
+  -- Prey System
+  ["Prey Creature"] = "Kořistní Bytost",
+  ["Prey Bonus"] = "Bonus Kořisti",
+  ["Reroll"] = "Přehodit",
+  ["Lock Prey"] = "Zamknout Kořist",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

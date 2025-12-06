@@ -663,6 +663,32 @@ locale = {
     ["players online"] = "spēlētāji tiešsaistē",
     ["Remember Email"] = "Atcerēties e-pastu",
     ["Login automatically"] = "Pieteikties automātiski",
+    
+    -- Additional UI
+    ["Store"] = "Veikals",
+    ["Prey"] = "Medījums",
+    ["Analytics"] = "Analītika",
+    ["Daily Reward"] = "Ikdienas Balva",
+    ["Collect Reward"] = "Savākt Balvu",
+    ["Claim"] = "Pieprasīt",
+    ["Streak"] = "Sērija",
+    ["Bonus"] = "Bonuss",
+    
+    -- Prey System
+    ["Prey Creature"] = "Medījuma Radījums",
+    ["Prey Bonus"] = "Medījuma Bonuss",
+    ["Reroll"] = "Pārmest",
+    ["Lock Prey"] = "Bloķēt Medījumu",
+    ["Damage Bonus"] = "Bojājumu Bonuss",
+    ["Defense Bonus"] = "Aizsardzības Bonuss",
+    
+    -- Forge System
+    ["Forge"] = "Kalve",
+    ["Dust"] = "Putekļi",
+    ["Fusion"] = "Saplūšana",
+    ["Transfer"] = "Pārsūtīšana",
+    ["Tier"] = "Līmenis",
+    ["Success Rate"] = "Veiksmes Likme",
   }
 }
 

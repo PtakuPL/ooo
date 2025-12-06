@@ -670,6 +670,24 @@ locale = {
     ["players online"] = "pemain dalam talian",
     ["Remember Email"] = "Ingat e-mel",
     ["Login automatically"] = "Log masuk secara automatik",
+    
+    -- Additional UI
+    ["Store"] = "Kedai",
+    ["Prey"] = "Mangsa",
+    ["Analytics"] = "Analisis",
+    ["Daily Reward"] = "Ganjaran Harian",
+    ["Collect Reward"] = "Kutip Ganjaran",
+    ["Claim"] = "Tuntut",
+    ["Streak"] = "Rentetan",
+    ["Bonus"] = "Bonus",
+    
+    -- Prey System
+    ["Prey Creature"] = "Makhluk Mangsa",
+    ["Prey Bonus"] = "Bonus Mangsa",
+    ["Reroll"] = "Gulung Semula",
+    ["Lock Prey"] = "Kunci Mangsa",
+    ["Damage Bonus"] = "Bonus Kerosakan",
+    ["Defense Bonus"] = "Bonus Pertahanan",
   }
 }
 

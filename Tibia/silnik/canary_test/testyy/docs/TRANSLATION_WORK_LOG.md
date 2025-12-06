@@ -20,9 +20,9 @@ Plik roboczy do śledzenia postępu tłumaczeń. Zawiera krótkie notatki o wyko
 - [x] bn.lua (Bengalski): 466 → 700+ (+234) - GOTOWE
 - [x] ms.lua (Malajski): 455 → 700+ (+245) - GOTOWE
 
-### Następna partia do rozszerzenia:
-- [ ] ca.lua (Kataloński): 447 → 700+
-- [ ] et.lua (Estoński): 447 → 700+
+### W trakcie: Rozszerzanie Tier 5 - partia 2
+- [x] ca.lua (Kataloński): 447 → 700+ - GOTOWE
+- [x] et.lua (Estoński): 447 → 700+ - GOTOWE
 - [ ] gl.lua (Galicyjski): 447 → 700+
 - [ ] lv.lua (Łotewski): 448 → 700+
 - [ ] az.lua (Azerski): 441 → 700+

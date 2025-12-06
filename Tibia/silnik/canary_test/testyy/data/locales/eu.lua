@@ -758,6 +758,52 @@ locale = {
     ["Loot Bonus"] = "Harrapaketa Bonusa",
     ["Prey Cards"] = "Harrapakina Txartelak",
     ["Prey Wildcards"] = "Harrapakina Komodinak",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Hornidura Biltegi",
+    ["Stash All Items"] = "Gorde Gauza Guztiak",
+    ["Stash Container"] = "Biltegi Edukiontzia",
+    ["Retrieve Item"] = "Berreskuratu Gauza",
+    ["Item Stash"] = "Gauzen Biltegi",
+    ["Supply Analysis"] = "Hornidura Analisia",
+    ["Supply Usage"] = "Hornidura Erabilera",
+    ["Hunt Analysis"] = "Ehiza Analisia",
+    ["Damage Analysis"] = "Kalte Analisia",
+    ["Healing Analysis"] = "Sendatze Analisia",
+    ["Waste Counter"] = "Hondakin Kontadorea",
+    ["Profit Counter"] = "Irabazi Kontadorea",
+    ["Session Time"] = "Saio Denbora",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Arima Puntuak",
+    ["Soul Regeneration"] = "Arima Birsortzea",
+    ["Soul Leech"] = "Arima Xurgatzea",
+    ["Regeneration"] = "Birsortzea",
+    ["Regeneration Rate"] = "Birsortze Tasa",
+    ["Mana Regeneration"] = "Mana Birsortzea",
+    ["Health Regeneration"] = "Osasun Birsortzea",
+    
+    -- Character Information Extended
+    ["Character Name"] = "Pertsonaiaren Izena",
+    ["Character Level"] = "Pertsonaiaren Maila",
+    ["Character Vocation"] = "Pertsonaiaren Lanbidea",
+    ["Skill Points"] = "Trebetasun Puntuak",
+    ["Skill Progress"] = "Trebetasun Aurrerakuntza",
+    ["Base Speed"] = "Oinarrizko Abiadura",
+    ["Current Speed"] = "Uneko Abiadura",
+    ["Equipment"] = "Ekipamendua",
+    ["Inventory"] = "Inbentarioa",
+    ["Store Inbox"] = "Denda Sarrera-ontzia",
+    ["Purse"] = "Poltsa",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "Talde Esperientzia",
+    ["Party Shared Experience"] = "Partekatutako Talde Esperientzia",
+    ["Party Leader"] = "Talde Burua",
+    ["Party Member"] = "Talde Kidea",
+    ["Party Invitation"] = "Talde Gonbidapena",
+    ["Accept Party Invitation"] = "Onartu Talde Gonbidapena",
+    ["Decline Party Invitation"] = "Ukatu Talde Gonbidapena",
   }
 }
 

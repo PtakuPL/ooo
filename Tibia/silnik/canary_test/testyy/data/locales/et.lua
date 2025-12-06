@@ -758,6 +758,52 @@ locale = {
     ["Loot Bonus"] = "Saagi Boonus",
     ["Prey Cards"] = "Saagi Kaardid",
     ["Prey Wildcards"] = "Saagi Jokkerid",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Varude Ladu",
+    ["Stash All Items"] = "Salvesta Kõik Esemed",
+    ["Stash Container"] = "Lao Konteiner",
+    ["Retrieve Item"] = "Võta Ese",
+    ["Item Stash"] = "Esemete Ladu",
+    ["Supply Analysis"] = "Varude Analüüs",
+    ["Supply Usage"] = "Varude Kasutus",
+    ["Hunt Analysis"] = "Jahi Analüüs",
+    ["Damage Analysis"] = "Kahju Analüüs",
+    ["Healing Analysis"] = "Ravimise Analüüs",
+    ["Waste Counter"] = "Raiskamise Loendur",
+    ["Profit Counter"] = "Kasumi Loendur",
+    ["Session Time"] = "Sessiooni Aeg",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Hingepunktid",
+    ["Soul Regeneration"] = "Hinge Taastumine",
+    ["Soul Leech"] = "Hinge Imemine",
+    ["Regeneration"] = "Taastumine",
+    ["Regeneration Rate"] = "Taastumiskiirus",
+    ["Mana Regeneration"] = "Mana Taastumine",
+    ["Health Regeneration"] = "Tervise Taastumine",
+    
+    -- Character Information Extended
+    ["Character Name"] = "Tegelase Nimi",
+    ["Character Level"] = "Tegelase Tase",
+    ["Character Vocation"] = "Tegelase Amet",
+    ["Skill Points"] = "Oskuse Punktid",
+    ["Skill Progress"] = "Oskuse Edenemine",
+    ["Base Speed"] = "Baaskiirus",
+    ["Current Speed"] = "Praegune Kiirus",
+    ["Equipment"] = "Varustus",
+    ["Inventory"] = "Inventar",
+    ["Store Inbox"] = "Poe Postkast",
+    ["Purse"] = "Rahakott",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "Grupi Kogemus",
+    ["Party Shared Experience"] = "Jagatud Grupi Kogemus",
+    ["Party Leader"] = "Grupi Juht",
+    ["Party Member"] = "Grupi Liige",
+    ["Party Invitation"] = "Grupi Kutse",
+    ["Accept Party Invitation"] = "Võta Vastu Grupi Kutse",
+    ["Decline Party Invitation"] = "Keeldu Grupi Kutsest",
   }
 }
 

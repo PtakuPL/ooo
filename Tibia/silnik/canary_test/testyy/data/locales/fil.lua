@@ -758,6 +758,52 @@ locale = {
     ["Loot Bonus"] = "Bonus ng Loot",
     ["Prey Cards"] = "Mga Card ng Biktima",
     ["Prey Wildcards"] = "Mga Wildcard ng Biktima",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Imbakan ng Suplay",
+    ["Stash All Items"] = "Itabi ang Lahat ng Item",
+    ["Stash Container"] = "Lalagyan ng Imbakan",
+    ["Retrieve Item"] = "Kunin ang Item",
+    ["Item Stash"] = "Imbakan ng Item",
+    ["Supply Analysis"] = "Pagsusuri ng Suplay",
+    ["Supply Usage"] = "Paggamit ng Suplay",
+    ["Hunt Analysis"] = "Pagsusuri ng Pangangaso",
+    ["Damage Analysis"] = "Pagsusuri ng Pinsala",
+    ["Healing Analysis"] = "Pagsusuri ng Pagpapagaling",
+    ["Waste Counter"] = "Tagabilang ng Basura",
+    ["Profit Counter"] = "Tagabilang ng Kita",
+    ["Session Time"] = "Oras ng Sesyon",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Puntos ng Kaluluwa",
+    ["Soul Regeneration"] = "Pagbawi ng Kaluluwa",
+    ["Soul Leech"] = "Pagsipsip ng Kaluluwa",
+    ["Regeneration"] = "Pagbawi",
+    ["Regeneration Rate"] = "Bilis ng Pagbawi",
+    ["Mana Regeneration"] = "Pagbawi ng Mana",
+    ["Health Regeneration"] = "Pagbawi ng Kalusugan",
+    
+    -- Character Information Extended
+    ["Character Name"] = "Pangalan ng Karakter",
+    ["Character Level"] = "Antas ng Karakter",
+    ["Character Vocation"] = "Bokasyon ng Karakter",
+    ["Skill Points"] = "Puntos ng Kakayahan",
+    ["Skill Progress"] = "Progreso ng Kakayahan",
+    ["Base Speed"] = "Batayang Bilis",
+    ["Current Speed"] = "Kasalukuyang Bilis",
+    ["Equipment"] = "Kagamitan",
+    ["Inventory"] = "Imbentaryo",
+    ["Store Inbox"] = "Inbox ng Tindahan",
+    ["Purse"] = "Pitaka",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "Karanasan ng Grupo",
+    ["Party Shared Experience"] = "Ibinahaging Karanasan ng Grupo",
+    ["Party Leader"] = "Pinuno ng Grupo",
+    ["Party Member"] = "Miyembro ng Grupo",
+    ["Party Invitation"] = "Imbitasyon sa Grupo",
+    ["Accept Party Invitation"] = "Tanggapin ang Imbitasyon sa Grupo",
+    ["Decline Party Invitation"] = "Tanggihan ang Imbitasyon sa Grupo",
   }
 }
 

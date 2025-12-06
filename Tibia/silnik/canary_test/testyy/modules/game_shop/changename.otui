@@ -1,13 +1,13 @@
 MainWindow
   size: 400 125
-  !text: 'Enter New Character Name'
+  !text: tr('Enter New Character Name')
   @onEnter: modules.game_shop.confirmChangeName()
 
   Button
     id: buttonCancel
     anchors.bottom: parent.bottom
     anchors.right: parent.right
-    !text: 'Cancel'
+    !text: tr('Cancel')
     width: 64
     @onClick: modules.game_shop.cancelChangeName()
 
@@ -16,7 +16,7 @@ MainWindow
     anchors.bottom: parent.bottom
     anchors.right: prev.left
     margin-right: 13
-    !text: 'Ok'
+    !text: tr('Ok')
     width: 64
     @onClick: modules.game_shop.confirmChangeName()
 
@@ -31,7 +31,7 @@ MainWindow
     anchors.left: parent.left
     anchors.right: parent.right
     text-align: top
-    !text: 'Please enter the new name for your character:'
+    !text: tr('Please enter the new name for your character:')
 
   TextEdit
     id: targetName

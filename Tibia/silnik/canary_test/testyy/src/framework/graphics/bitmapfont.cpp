@@ -162,7 +162,7 @@ void BitmapFont::drawText(const std::string_view text, const Rect& screenCoords,
         bx = static_cast<float>(screenCoords.left()) + (screenCoords.width() - w) * 0.5f;
     }
 
-    m_ttf->drawText(text32, bx, by, sp);
+    m_ttf->drawText(text32, bx, by, sp, color);
     return;
 }
 

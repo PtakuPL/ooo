@@ -72,7 +72,7 @@ UIWidget
     height: 32
   
     Label
-      !text: 'Crosshair:'
+      !text: tr('Crosshair:')
       anchors.left: parent.left
       margin-left: 18
       color: #c0c0c0ff
@@ -94,7 +94,7 @@ UIWidget
     height: 86
 
     Label
-      !text: 'Colourise Loot Value: '
+      !text: tr('Colourise Loot Value: ')
       anchors.left: parent.left
       anchors.top: parent.top
       margin-left: 10

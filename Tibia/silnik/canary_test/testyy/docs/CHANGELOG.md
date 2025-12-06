@@ -1,6 +1,13 @@
 # Changelog
 
-## 06-12-2025 - Issue #30: Full i18n Implementation
+## 06-12-2025 - Issue #30: Full i18n Implementation (Part 2)
+### Additional UI Internationalization
+- **Shop module**: Added `tr()` wrapper to `gift.otui`, `changename.otui`, `game_shop.otui` (9 texts)
+- **Graphics options**: Added `tr()` wrapper to `graphics.otui`, `effects.otui` (5 texts)
+- **Interface options**: Added `tr()` wrapper to `interface.otui` (2 texts)
+- **New Polish translations**: Added 14 new translation keys for shop and graphics UI
+
+## 06-12-2025 - Issue #30: Full i18n Implementation (Part 1)
 ### Font System Improvements
 - **TTFFont fallback loading**: Activated fallback font loading in `TTFFont::load()` - now properly loads CJK, Arabic and other fallback fonts
 - **Glyph fallback mechanism**: Modified `cacheGlyph()` to automatically try fallback fonts when main font lacks a glyph

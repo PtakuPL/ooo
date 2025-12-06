@@ -1039,7 +1039,24 @@ local add = {
   ["Set circle opacity."] = "Ustaw przezroczystość kółka.",
   ["Set distance from center."] = "Ustaw odległość od środka.",
   ["This option makes textures load asynchronously and uses less RAM."] = "Ta opcja sprawia, że tekstury ładują się asynchronicznie i używa mniej RAM.",
-  ["Try to optimize when the frame rate is below 60. VISUAL PROBLEMS MAY OCCUR"] = "Próbuj optymalizować gdy liczba klatek poniżej 60. MOGĄ WYSTĄPIĆ PROBLEMY WIZUALNE"
+  ["Try to optimize when the frame rate is below 60. VISUAL PROBLEMS MAY OCCUR"] = "Próbuj optymalizować gdy liczba klatek poniżej 60. MOGĄ WYSTĄPIĆ PROBLEMY WIZUALNE",
+  
+  -- Shop window
+  ["Enter player name"] = "Wprowadź nazwę gracza",
+  ["Confirm"] = "Potwierdź",
+  ["Enter New Character Name"] = "Wprowadź nową nazwę postaci",
+  ["Please enter the new name for your character:"] = "Proszę wprowadzić nową nazwę dla swojej postaci:",
+  ["Store"] = "Sklep",
+  ["History"] = "Historia",
+  
+  -- Graphics options
+  ["Antialiasing Mode:"] = "Tryb antyaliasingu:",
+  ["Full Screen Mode"] = "Tryb pełnoekranowy",
+  ["Don't stretch/shrink Game Window"] = "Nie rozciągaj/kurz okna gry",
+  ["Floor View Mode:"] = "Tryb widoku piętra:",
+  ["Draw Floating Effects"] = "Rysuj unoszące się efekty",
+  ["Crosshair:"] = "Celownik:",
+  ["Colourise Loot Value: "] = "Koloruj wartość łupu: "
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

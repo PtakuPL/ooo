@@ -3,7 +3,7 @@ UIWidget
   visible: false
 
   Label
-    !text: 'Antialiasing Mode:'
+    !text: tr('Antialiasing Mode:')
     anchors.left: parent.left
     margin-left: 18
     color: #c0c0c0ff
@@ -26,7 +26,7 @@ UIWidget
   
     OptionCheckBoxMarked
       id: fullscreen
-      !text: 'Full Screen Mode'
+      !text: tr('Full Screen Mode')
       !tooltip: 'Ctrl+Shift+F'
 
   SmallReversedQtPanel
@@ -110,4 +110,4 @@ UIWidget
   
     OptionCheckBox
       id: dontStretchShrink
-      !text: 'Don\'t stretch/shrink Game Window'
+      !text: tr('Don\'t stretch/shrink Game Window')

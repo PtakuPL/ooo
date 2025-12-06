@@ -26,5 +26,5 @@
 // Using submit_task() method as per current bshoshany-thread-pool API
 #include "../util/BS_thread_pool.hpp"
 
-// Updated to use non-templated BS::thread_pool from current bshoshany-thread-pool version
-extern BS::thread_pool g_asyncDispatcher;
+// Updated to use explicit template alias from current bshoshany-thread-pool version
+extern BS::thread_pool<> g_asyncDispatcher;

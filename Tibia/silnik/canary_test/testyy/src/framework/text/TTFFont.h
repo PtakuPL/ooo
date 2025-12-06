@@ -15,6 +15,7 @@
 #include <framework/graphics/declarations.h>  // ImagePtr, TexturePtr
 #include <framework/graphics/image.h>
 #include <framework/graphics/texture.h>
+#include <framework/util/color.h>
 #include <framework/util/rect.h>
 
 // Minimal glyph metadata stored in an atlas
@@ -49,7 +50,8 @@ public:
   // Draw shaped text at baseline position (x,y)
   void drawText(const std::u32string& text32,
                 float x, float y,
-                const ShapeParams& params);
+                const ShapeParams& params,
+                const Color& color);
 
   // Measure width of a string (uses HarfBuzz shaping)
   float measureTextWidth(const std::u32string& text32,

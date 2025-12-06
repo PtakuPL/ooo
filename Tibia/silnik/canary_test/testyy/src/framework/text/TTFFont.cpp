@@ -161,7 +161,8 @@ const AtlasGlyph* TTFFont::rasterizeGlyph(FT_Face face, uint32_t glyphIndex, uin
 
 void TTFFont::drawText(const std::u32string& text32,
              float x, float y,
-             const ShapeParams& params) {
+             const ShapeParams& params,
+             const Color& color) {
   if (!m_hbFont || text32.empty()) return;
 
   std::vector<GlyphQuad> quads;
@@ -198,7 +199,7 @@ void TTFFont::drawText(const std::u32string& text32,
 
   for (const auto& batch : batches) {
     if (batch.coords && batch.coords->getVertexCount() > 0)
-      g_drawPool.addTexturedCoordsBuffer(batch.texture, batch.coords, Color::white);
+      g_drawPool.addTexturedCoordsBuffer(batch.texture, batch.coords, color);
   }
 }
 

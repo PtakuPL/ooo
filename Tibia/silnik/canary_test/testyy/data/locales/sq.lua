@@ -776,6 +776,30 @@ locale = {
     ["Loot Bonus"] = "Bonusi i Plaçkës",
     ["Prey Cards"] = "Kartat e Presë",
     ["Prey Wildcards"] = "Xhokerët e Presë",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Depo Furnizimesh",
+    ["Stash All Items"] = "Ruaj të gjitha artikujt",
+    ["Stash Container"] = "Kontejner Depozitimi",
+    ["Retrieve Item"] = "Merr artikull",
+    ["Item Stash"] = "Depo Artikujsh",
+    ["Supply Analysis"] = "Analiza e Furnizimeve",
+    ["Supply Usage"] = "Përdorimi i Furnizimeve",
+    ["Hunt Analysis"] = "Analiza e Gjuetisë",
+    ["Damage Analysis"] = "Analiza e Dëmit",
+    ["Healing Analysis"] = "Analiza e Shërimit",
+    ["Waste Counter"] = "Numëruesi i Humbjes",
+    ["Profit Counter"] = "Numëruesi i Fitimit",
+    ["Session Time"] = "Koha e Seancës",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Pikat e Shpirtit",
+    ["Soul Regeneration"] = "Rigjenerimi i Shpirtit",
+    ["Soul Leech"] = "Thithja e Shpirtit",
+    ["Regeneration"] = "Rigjenerimi",
+    ["Regeneration Rate"] = "Shpejtësia e Rigjenerimit",
+    ["Mana Regeneration"] = "Rigjenerimi i Manës",
+    ["Health Regeneration"] = "Rigjenerimi i Shëndetit",
   }
 }
 

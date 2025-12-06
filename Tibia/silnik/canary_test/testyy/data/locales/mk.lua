@@ -776,6 +776,30 @@ locale = {
     ["Loot Bonus"] = "Бонус за Плен",
     ["Prey Cards"] = "Карти за Плен",
     ["Prey Wildcards"] = "Џокери за Плен",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Складиште за Залихи",
+    ["Stash All Items"] = "Зачувај ги сите предмети",
+    ["Stash Container"] = "Контејнер за Складирање",
+    ["Retrieve Item"] = "Земи предмет",
+    ["Item Stash"] = "Складиште за Предмети",
+    ["Supply Analysis"] = "Анализа на Залихи",
+    ["Supply Usage"] = "Употреба на Залихи",
+    ["Hunt Analysis"] = "Анализа на Лов",
+    ["Damage Analysis"] = "Анализа на Штета",
+    ["Healing Analysis"] = "Анализа на Лекување",
+    ["Waste Counter"] = "Бројач на Отпад",
+    ["Profit Counter"] = "Бројач на Профит",
+    ["Session Time"] = "Време на Сесија",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Поени за Душа",
+    ["Soul Regeneration"] = "Обновување на Душа",
+    ["Soul Leech"] = "Цицање на Душа",
+    ["Regeneration"] = "Обновување",
+    ["Regeneration Rate"] = "Брзина на Обновување",
+    ["Mana Regeneration"] = "Обновување на Мана",
+    ["Health Regeneration"] = "Обновување на Здравје",
   }
 }
 

@@ -777,6 +777,30 @@ local add = {
   [", written by \n%s\n"] = ", написано \n%s\n",
   [", written on \n%s.\n"] = ", написано \n%s.\n",
   ["You have %s percent to go "] = "Вам залишилось %s відсотків ",
+  
+  -- Supply Management System
+  ["Supply Stash"] = "Сховище запасів",
+  ["Stash All Items"] = "Зберегти всі предмети",
+  ["Stash Container"] = "Контейнер сховища",
+  ["Retrieve Item"] = "Отримати предмет",
+  ["Item Stash"] = "Сховище предметів",
+  ["Supply Analysis"] = "Аналіз запасів",
+  ["Supply Usage"] = "Використання запасів",
+  ["Hunt Analysis"] = "Аналіз полювання",
+  ["Damage Analysis"] = "Аналіз пошкоджень",
+  ["Healing Analysis"] = "Аналіз зцілення",
+  ["Waste Counter"] = "Лічильник відходів",
+  ["Profit Counter"] = "Лічильник прибутку",
+  ["Session Time"] = "Час сесії",
+  
+  -- Soul and Regeneration
+  ["Soul Points"] = "Очки душі",
+  ["Soul Regeneration"] = "Відновлення душі",
+  ["Soul Leech"] = "Поглинання душі",
+  ["Regeneration"] = "Відновлення",
+  ["Regeneration Rate"] = "Швидкість відновлення",
+  ["Mana Regeneration"] = "Відновлення мани",
+  ["Health Regeneration"] = "Відновлення здоров'я",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

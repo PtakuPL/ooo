@@ -752,6 +752,60 @@ locale = {
     -- Quick Loot
     ["Quick Loot"] = "Jarahan Cepat",
     ["Loot All"] = "Jarah Semua",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Simpanan Perbekalan",
+    ["Stash All Items"] = "Simpan Semua Barang",
+    ["Stash Container"] = "Wadah Simpanan",
+    ["Retrieve Item"] = "Ambil Barang",
+    ["Item Stash"] = "Simpanan Barang",
+    ["Supply Analysis"] = "Analisis Perbekalan",
+    ["Supply Usage"] = "Penggunaan Perbekalan",
+    ["Hunt Analysis"] = "Analisis Perburuan",
+    ["Damage Analysis"] = "Analisis Kerusakan",
+    ["Healing Analysis"] = "Analisis Penyembuhan",
+    ["Waste Counter"] = "Penghitung Limbah",
+    ["Profit Counter"] = "Penghitung Keuntungan",
+    ["Session Time"] = "Waktu Sesi",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Poin Jiwa",
+    ["Soul Regeneration"] = "Regenerasi Jiwa",
+    ["Soul Leech"] = "Penyerapan Jiwa",
+    ["Regeneration"] = "Regenerasi",
+    ["Regeneration Rate"] = "Tingkat Regenerasi",
+    ["Mana Regeneration"] = "Regenerasi Mana",
+    ["Health Regeneration"] = "Regenerasi Kesehatan",
+    
+    -- Character Information Extended
+    ["Character Name"] = "Nama Karakter",
+    ["Character Level"] = "Level Karakter",
+    ["Character Vocation"] = "Profesi Karakter",
+    ["Skill Points"] = "Poin Keterampilan",
+    ["Skill Progress"] = "Kemajuan Keterampilan",
+    ["Base Speed"] = "Kecepatan Dasar",
+    ["Current Speed"] = "Kecepatan Saat Ini",
+    ["Equipment"] = "Perlengkapan",
+    ["Inventory"] = "Inventaris",
+    ["Store Inbox"] = "Kotak Masuk Toko",
+    ["Purse"] = "Dompet",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "Pengalaman Tim",
+    ["Party Shared Experience"] = "Pengalaman Bersama Tim",
+    ["Party Leader"] = "Pemimpin Tim",
+    ["Party Member"] = "Anggota Tim",
+    ["Party Invitation"] = "Undangan Tim",
+    ["Accept Party Invitation"] = "Terima Undangan Tim",
+    ["Decline Party Invitation"] = "Tolak Undangan Tim",
+    
+    -- Imbuement Extended
+    ["Imbuement Slots"] = "Slot Penyerapan",
+    ["Imbuement Duration"] = "Durasi Penyerapan",
+    ["Imbuement Level"] = "Level Penyerapan",
+    ["Basic Imbuement"] = "Penyerapan Dasar",
+    ["Intricate Imbuement"] = "Penyerapan Rumit",
+    ["Powerful Imbuement"] = "Penyerapan Kuat",
   }
 }
 

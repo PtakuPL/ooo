@@ -757,6 +757,52 @@ locale = {
     ["Loot Bonus"] = "লুট বোনাস",
     ["Prey Cards"] = "শিকার কার্ড",
     ["Prey Wildcards"] = "শিকার ওয়াইল্ডকার্ড",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "সরবরাহ সঞ্চয়",
+    ["Stash All Items"] = "সব আইটেম সংরক্ষণ",
+    ["Stash Container"] = "সংরক্ষণ পাত্র",
+    ["Retrieve Item"] = "আইটেম পুনরুদ্ধার",
+    ["Item Stash"] = "আইটেম সঞ্চয়",
+    ["Supply Analysis"] = "সরবরাহ বিশ্লেষণ",
+    ["Supply Usage"] = "সরবরাহ ব্যবহার",
+    ["Hunt Analysis"] = "শিকার বিশ্লেষণ",
+    ["Damage Analysis"] = "ক্ষতি বিশ্লেষণ",
+    ["Healing Analysis"] = "নিরাময় বিশ্লেষণ",
+    ["Waste Counter"] = "অপচয় কাউন্টার",
+    ["Profit Counter"] = "লাভ কাউন্টার",
+    ["Session Time"] = "সেশন সময়",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "আত্মা পয়েন্ট",
+    ["Soul Regeneration"] = "আত্মা পুনরুদ্ধার",
+    ["Soul Leech"] = "আত্মা শোষণ",
+    ["Regeneration"] = "পুনরুদ্ধার",
+    ["Regeneration Rate"] = "পুনরুদ্ধার হার",
+    ["Mana Regeneration"] = "মানা পুনরুদ্ধার",
+    ["Health Regeneration"] = "স্বাস্থ্য পুনরুদ্ধার",
+    
+    -- Character Information Extended
+    ["Character Name"] = "চরিত্রের নাম",
+    ["Character Level"] = "চরিত্রের স্তর",
+    ["Character Vocation"] = "চরিত্রের পেশা",
+    ["Skill Points"] = "দক্ষতা পয়েন্ট",
+    ["Skill Progress"] = "দক্ষতা অগ্রগতি",
+    ["Base Speed"] = "ভিত্তি গতি",
+    ["Current Speed"] = "বর্তমান গতি",
+    ["Equipment"] = "সরঞ্জাম",
+    ["Inventory"] = "ইনভেন্টরি",
+    ["Store Inbox"] = "স্টোর ইনবক্স",
+    ["Purse"] = "পার্স",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "দল অভিজ্ঞতা",
+    ["Party Shared Experience"] = "দল ভাগাভাগি অভিজ্ঞতা",
+    ["Party Leader"] = "দল নেতা",
+    ["Party Member"] = "দল সদস্য",
+    ["Party Invitation"] = "দল আমন্ত্রণ",
+    ["Accept Party Invitation"] = "দল আমন্ত্রণ গ্রহণ",
+    ["Decline Party Invitation"] = "দল আমন্ত্রণ প্রত্যাখ্যান",
   }
 }
 

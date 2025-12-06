@@ -757,6 +757,52 @@ locale = {
     ["Loot Bonus"] = "Laupījuma Bonuss",
     ["Prey Cards"] = "Upura Kartes",
     ["Prey Wildcards"] = "Upura Universālās Kartes",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Krājumu Noliktava",
+    ["Stash All Items"] = "Nolikt Visas Preces",
+    ["Stash Container"] = "Noliktavas Konteiners",
+    ["Retrieve Item"] = "Izņemt Preci",
+    ["Item Stash"] = "Preču Noliktava",
+    ["Supply Analysis"] = "Krājumu Analīze",
+    ["Supply Usage"] = "Krājumu Izmantošana",
+    ["Hunt Analysis"] = "Medību Analīze",
+    ["Damage Analysis"] = "Bojājumu Analīze",
+    ["Healing Analysis"] = "Dziedināšanas Analīze",
+    ["Waste Counter"] = "Atkritumu Skaitītājs",
+    ["Profit Counter"] = "Peļņas Skaitītājs",
+    ["Session Time"] = "Sesijas Laiks",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Dvēseles Punkti",
+    ["Soul Regeneration"] = "Dvēseles Atjaunošana",
+    ["Soul Leech"] = "Dvēseles Sūcējs",
+    ["Regeneration"] = "Atjaunošana",
+    ["Regeneration Rate"] = "Atjaunošanas Ātrums",
+    ["Mana Regeneration"] = "Manas Atjaunošana",
+    ["Health Regeneration"] = "Veselības Atjaunošana",
+    
+    -- Character Information Extended
+    ["Character Name"] = "Varoņa Vārds",
+    ["Character Level"] = "Varoņa Līmenis",
+    ["Character Vocation"] = "Varoņa Profesija",
+    ["Skill Points"] = "Prasmju Punkti",
+    ["Skill Progress"] = "Prasmju Progress",
+    ["Base Speed"] = "Pamata Ātrums",
+    ["Current Speed"] = "Pašreizējais Ātrums",
+    ["Equipment"] = "Ekipējums",
+    ["Inventory"] = "Inventārs",
+    ["Store Inbox"] = "Veikala Iesūtne",
+    ["Purse"] = "Maciņš",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "Grupas Pieredze",
+    ["Party Shared Experience"] = "Dalīta Grupas Pieredze",
+    ["Party Leader"] = "Grupas Vadītājs",
+    ["Party Member"] = "Grupas Dalībnieks",
+    ["Party Invitation"] = "Grupas Ielūgums",
+    ["Accept Party Invitation"] = "Pieņemt Grupas Ielūgumu",
+    ["Decline Party Invitation"] = "Noraidīt Grupas Ielūgumu",
   }
 }
 

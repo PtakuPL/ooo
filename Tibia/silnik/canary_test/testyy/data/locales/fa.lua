@@ -695,6 +695,70 @@ locale = {
     ["players online"] = "بازیکن آنلاین",
     ["Remember Email"] = "به یاد سپردن ایمیل",
     ["Login automatically"] = "ورود خودکار",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "بوستیاری",
+    ["Boss Tracker"] = "ردیاب رئیس",
+    ["Boss Kills"] = "کشتن رئیس‌ها",
+    ["Archfoe"] = "دشمن اصلی",
+    ["Bane"] = "نفرین",
+    ["Nemesis"] = "نمسیس",
+    ["Boss Points"] = "امتیازات رئیس",
+    ["Unlock Slot"] = "باز کردن جایگاه",
+    ["Equipped"] = "تجهیز شده",
+    
+    -- Market System
+    ["Market"] = "بازار",
+    ["Browse Offers"] = "مرور پیشنهادات",
+    ["My Offers"] = "پیشنهادات من",
+    ["My History"] = "تاریخچه من",
+    ["Buy Offer"] = "پیشنهاد خرید",
+    ["Sell Offer"] = "پیشنهاد فروش",
+    ["Create Offer"] = "ایجاد پیشنهاد",
+    ["Cancel Offer"] = "لغو پیشنهاد",
+    ["Amount"] = "مقدار",
+    ["Total Price"] = "قیمت کل",
+    ["Piece Price"] = "قیمت واحد",
+    ["Statistics"] = "آمار",
+    ["Transactions"] = "تراکنش‌ها",
+    ["Average Prices"] = "قیمت‌های میانگین",
+    ["Highest Prices"] = "بالاترین قیمت‌ها",
+    ["Lowest Prices"] = "پایین‌ترین قیمت‌ها",
+    
+    -- Forge System
+    ["Forge"] = "آهنگری",
+    ["Dust Converter"] = "تبدیل‌کننده گرد و غبار",
+    ["Fusion"] = "ادغام",
+    ["Transfer"] = "انتقال",
+    ["Tier"] = "سطح",
+    ["Success Chance"] = "شانس موفقیت",
+    ["Dust"] = "گرد و غبار",
+    ["Slivers"] = "تراشه‌ها",
+    ["Cores"] = "هسته‌ها",
+    ["Exalted Cores"] = "هسته‌های برتر",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "چرخ سرنوشت",
+    ["Revelation Points"] = "امتیازات وحی",
+    ["Promotion Points"] = "امتیازات ترفیع",
+    ["Gift of Life"] = "هدیه زندگی",
+    ["Divine Empowerment"] = "توانمندسازی الهی",
+    ["Blessing of the Grove"] = "برکت بیشه",
+    ["Combat Mastery"] = "تسلط جنگی",
+    ["Healing Link"] = "پیوند شفابخش",
+    
+    -- Prey System
+    ["Prey"] = "طعمه",
+    ["Prey Bonus"] = "پاداش طعمه",
+    ["Prey Slot"] = "جایگاه طعمه",
+    ["Select Creature"] = "انتخاب موجود",
+    ["Bonus Type"] = "نوع پاداش",
+    ["Damage Boost"] = "افزایش آسیب",
+    ["Defense Boost"] = "افزایش دفاع",
+    ["XP Bonus"] = "پاداش XP",
+    ["Loot Bonus"] = "پاداش غارت",
+    ["Prey Cards"] = "کارت‌های طعمه",
+    ["Prey Wildcards"] = "کارت‌های جوکر طعمه",
   }
 }
 

@@ -695,6 +695,69 @@ local add = {
   ["Bosstiary"] = "Kniha Bossů",
   ["Boss Tracker"] = "Sledovač Bossů",
   ["Quick Loot"] = "Rychlé Rabování",
+  
+  -- Bosstiary System
+  ["Bosstiary"] = "Bosstiary",
+  ["Boss Kills"] = "Zabití Bossů",
+  ["Archfoe"] = "Hlavní Nepřítel",
+  ["Bane"] = "Zkáza",
+  ["Nemesis"] = "Nemesis",
+  ["Boss Points"] = "Body Bossů",
+  ["Unlock Slot"] = "Odemknout Slot",
+  ["Equipped"] = "Vybaveno",
+  
+  -- Market System
+  ["Market"] = "Trh",
+  ["Browse Offers"] = "Procházet Nabídky",
+  ["My Offers"] = "Moje Nabídky",
+  ["My History"] = "Moje Historie",
+  ["Buy Offer"] = "Nabídka Nákupu",
+  ["Sell Offer"] = "Nabídka Prodeje",
+  ["Create Offer"] = "Vytvořit Nabídku",
+  ["Cancel Offer"] = "Zrušit Nabídku",
+  ["Amount"] = "Množství",
+  ["Total Price"] = "Celková Cena",
+  ["Piece Price"] = "Cena za Kus",
+  ["Statistics"] = "Statistiky",
+  ["Transactions"] = "Transakce",
+  ["Average Prices"] = "Průměrné Ceny",
+  ["Highest Prices"] = "Nejvyšší Ceny",
+  ["Lowest Prices"] = "Nejnižší Ceny",
+  
+  -- Forge System
+  ["Forge"] = "Kovárna",
+  ["Dust Converter"] = "Převodník Prachu",
+  ["Fusion"] = "Fúze",
+  ["Transfer"] = "Přenos",
+  ["Tier"] = "Úroveň",
+  ["Success Chance"] = "Šance na Úspěch",
+  ["Dust"] = "Prach",
+  ["Slivers"] = "Úlomky",
+  ["Cores"] = "Jádra",
+  ["Exalted Cores"] = "Povznesená Jádra",
+  
+  -- Wheel of Destiny
+  ["Wheel of Destiny"] = "Kolo Osudu",
+  ["Revelation Points"] = "Body Zjevení",
+  ["Promotion Points"] = "Body Povýšení",
+  ["Gift of Life"] = "Dar Života",
+  ["Divine Empowerment"] = "Božské Posílení",
+  ["Blessing of the Grove"] = "Požehnání Háje",
+  ["Combat Mastery"] = "Mistrovství v Boji",
+  ["Healing Link"] = "Léčebné Pouto",
+  
+  -- Prey System
+  ["Prey"] = "Kořist",
+  ["Prey Bonus"] = "Bonus Kořisti",
+  ["Prey Slot"] = "Slot Kořisti",
+  ["Select Creature"] = "Vybrat Tvora",
+  ["Bonus Type"] = "Typ Bonusu",
+  ["Damage Boost"] = "Zvýšení Poškození",
+  ["Defense Boost"] = "Zvýšení Obrany",
+  ["XP Bonus"] = "XP Bonus",
+  ["Loot Bonus"] = "Bonus Kořisti",
+  ["Prey Cards"] = "Karty Kořisti",
+  ["Prey Wildcards"] = "Žolíky Kořisti",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

@@ -695,6 +695,63 @@ locale = {
     ["Archfoe"] = "Musuh Utama",
     ["Bane"] = "Kutukan",
     ["Nemesis"] = "Nemesis",
+    
+    -- Market System
+    ["Market"] = "Pasar",
+    ["Browse Offers"] = "Jelajahi Penawaran",
+    ["My Offers"] = "Penawaran Saya",
+    ["My History"] = "Riwayat Saya",
+    ["Buy Offer"] = "Penawaran Beli",
+    ["Sell Offer"] = "Penawaran Jual",
+    ["Create Offer"] = "Buat Penawaran",
+    ["Cancel Offer"] = "Batalkan Penawaran",
+    ["Amount"] = "Jumlah",
+    ["Total Price"] = "Harga Total",
+    ["Piece Price"] = "Harga Per Buah",
+    ["Statistics"] = "Statistik",
+    ["Transactions"] = "Transaksi",
+    ["Average Prices"] = "Harga Rata-rata",
+    ["Highest Prices"] = "Harga Tertinggi",
+    ["Lowest Prices"] = "Harga Terendah",
+    
+    -- Forge System
+    ["Forge"] = "Pandai Besi",
+    ["Dust Converter"] = "Pengubah Debu",
+    ["Fusion"] = "Fusi",
+    ["Transfer"] = "Transfer",
+    ["Tier"] = "Tingkat",
+    ["Success Chance"] = "Peluang Sukses",
+    ["Dust"] = "Debu",
+    ["Slivers"] = "Serpihan",
+    ["Cores"] = "Inti",
+    ["Exalted Cores"] = "Inti Mulia",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Roda Takdir",
+    ["Revelation Points"] = "Poin Wahyu",
+    ["Promotion Points"] = "Poin Promosi",
+    ["Gift of Life"] = "Anugerah Kehidupan",
+    ["Divine Empowerment"] = "Pemberdayaan Ilahi",
+    ["Blessing of the Grove"] = "Berkat Hutan",
+    ["Combat Mastery"] = "Penguasaan Pertempuran",
+    ["Healing Link"] = "Tautan Penyembuhan",
+    
+    -- Prey System
+    ["Prey"] = "Mangsa",
+    ["Prey Bonus"] = "Bonus Mangsa",
+    ["Prey Slot"] = "Slot Mangsa",
+    ["Select Creature"] = "Pilih Makhluk",
+    ["Bonus Type"] = "Jenis Bonus",
+    ["Damage Boost"] = "Peningkatan Kerusakan",
+    ["Defense Boost"] = "Peningkatan Pertahanan",
+    ["XP Bonus"] = "Bonus XP",
+    ["Loot Bonus"] = "Bonus Jarahan",
+    ["Prey Cards"] = "Kartu Mangsa",
+    ["Prey Wildcards"] = "Kartu Liar Mangsa",
+    
+    -- Quick Loot
+    ["Quick Loot"] = "Jarahan Cepat",
+    ["Loot All"] = "Jarah Semua",
   }
 }
 

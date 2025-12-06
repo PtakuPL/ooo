@@ -696,6 +696,70 @@ locale = {
     ["Critical Hit Damage"] = "Sát thương chí mạng",
     ["Life Leech"] = "Hút máu",
     ["Mana Leech"] = "Hút mana",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Bosstiary",
+    ["Boss Tracker"] = "Theo dõi Boss",
+    ["Boss Kills"] = "Số Boss đã giết",
+    ["Archfoe"] = "Kẻ thù chính",
+    ["Bane"] = "Tai họa",
+    ["Nemesis"] = "Nemesis",
+    ["Boss Points"] = "Điểm Boss",
+    ["Unlock Slot"] = "Mở khóa ô",
+    ["Equipped"] = "Đã trang bị",
+    
+    -- Market System
+    ["Market"] = "Chợ",
+    ["Browse Offers"] = "Duyệt ưu đãi",
+    ["My Offers"] = "Ưu đãi của tôi",
+    ["My History"] = "Lịch sử của tôi",
+    ["Buy Offer"] = "Ưu đãi mua",
+    ["Sell Offer"] = "Ưu đãi bán",
+    ["Create Offer"] = "Tạo ưu đãi",
+    ["Cancel Offer"] = "Hủy ưu đãi",
+    ["Amount"] = "Số lượng",
+    ["Total Price"] = "Tổng giá",
+    ["Piece Price"] = "Giá mỗi cái",
+    ["Statistics"] = "Thống kê",
+    ["Transactions"] = "Giao dịch",
+    ["Average Prices"] = "Giá trung bình",
+    ["Highest Prices"] = "Giá cao nhất",
+    ["Lowest Prices"] = "Giá thấp nhất",
+    
+    -- Forge System
+    ["Forge"] = "Lò rèn",
+    ["Dust Converter"] = "Bộ chuyển đổi bụi",
+    ["Fusion"] = "Hợp nhất",
+    ["Transfer"] = "Chuyển giao",
+    ["Tier"] = "Cấp",
+    ["Success Chance"] = "Cơ hội thành công",
+    ["Dust"] = "Bụi",
+    ["Slivers"] = "Mảnh vụn",
+    ["Cores"] = "Lõi",
+    ["Exalted Cores"] = "Lõi nâng cao",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Bánh xe số phận",
+    ["Revelation Points"] = "Điểm mặc khải",
+    ["Promotion Points"] = "Điểm thăng cấp",
+    ["Gift of Life"] = "Món quà cuộc sống",
+    ["Divine Empowerment"] = "Tăng cường thần thánh",
+    ["Blessing of the Grove"] = "Phước lành của rừng",
+    ["Combat Mastery"] = "Làm chủ chiến đấu",
+    ["Healing Link"] = "Liên kết chữa lành",
+    
+    -- Prey System
+    ["Prey"] = "Con mồi",
+    ["Prey Bonus"] = "Thưởng con mồi",
+    ["Prey Slot"] = "Ô con mồi",
+    ["Select Creature"] = "Chọn sinh vật",
+    ["Bonus Type"] = "Loại thưởng",
+    ["Damage Boost"] = "Tăng sát thương",
+    ["Defense Boost"] = "Tăng phòng thủ",
+    ["XP Bonus"] = "Thưởng XP",
+    ["Loot Bonus"] = "Thưởng chiến lợi phẩm",
+    ["Prey Cards"] = "Thẻ con mồi",
+    ["Prey Wildcards"] = "Thẻ đại diện con mồi",
   }
 }
 

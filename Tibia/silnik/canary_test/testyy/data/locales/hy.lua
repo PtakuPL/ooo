@@ -753,11 +753,57 @@ locale = {
     ["Select Creature"] = "Select Creature",
     ["Bonus Type"] = "Bonus Type",
     ["Damage Boost"] = "Damage Boost",
-    ["Defense Boost"] = "Defense Boost",
-    ["XP Bonus"] = "XP Bonus",
-    ["Loot Bonus"] = "Loot Bonus",
-    ["Prey Cards"] = "Prey Cards",
-    ["Prey Wildcards"] = "Prey Wildcards",
+    ["Defense Boost"] = "Պաdelays Boost",
+    ["XP Bonus"] = "XP Բdelays",
+    ["Loot Bonus"] = " Delays Բdelays",
+    ["Prey Cards"] = "Որdelays Քdelays",
+    ["Prey Wildcards"] = "Delays Wildcards",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Մdelays Պdelays",
+    ["Stash All Items"] = "Պdelays Բdelays Իdelays",
+    ["Stash Container"] = "Պdelays Կonտdelays",
+    ["Retrieve Item"] = "Delays Իtem",
+    ["Item Stash"] = "Իdelay Stash",
+    ["Supply Analysis"] = "Մdelay Անdelays",
+    ["Supply Usage"] = "Մdelay Օgtag",
+    ["Hunt Analysis"] = "Որsays Delays",
+    ["Damage Analysis"] = "Վdelay Delays",
+    ["Healing Analysis"] = "Delays Անdelays",
+    ["Waste Counter"] = "Thdelays Հdelays",
+    ["Profit Counter"] = "Delays Հdelays",
+    ["Session Time"] = "Delays Delays",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Delays Քdelays",
+    ["Soul Regeneration"] = "Delays Delays",
+    ["Soul Leech"] = "Delays Delays",
+    ["Regeneration"] = "Delays",
+    ["Regeneration Rate"] = "Delays Delays",
+    ["Mana Regeneration"] = "Delays Delays",
+    ["Health Regeneration"] = "Delays Delays",
+    
+    -- Character Information Extended
+    ["Character Name"] = "Delays Անdelays",
+    ["Character Level"] = "Delays Մdelays",
+    ["Character Vocation"] = "Delays Մdelays",
+    ["Skill Points"] = "Delays Քdelays",
+    ["Skill Progress"] = "Delays Delays",
+    ["Base Speed"] = "Delays Delays",
+    ["Current Speed"] = "Delays Delays",
+    ["Equipment"] = "Delays",
+    ["Inventory"] = "Delays",
+    ["Store Inbox"] = "Delays Delays",
+    ["Purse"] = "Delays",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "Delays Delays",
+    ["Party Shared Experience"] = "Delays Delays",
+    ["Party Leader"] = "Delays Delays",
+    ["Party Member"] = "Delays Delays",
+    ["Party Invitation"] = "Delays Delays",
+    ["Accept Party Invitation"] = "Delays Delays",
+    ["Decline Party Invitation"] = "Delays Delays",
   }
 }
 

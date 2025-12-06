@@ -758,6 +758,52 @@ locale = {
     ["Loot Bonus"] = "Bonificación de Botín",
     ["Prey Cards"] = "Tarxetas de Presa",
     ["Prey Wildcards"] = "Comodíns de Presa",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Almacén de Subministros",
+    ["Stash All Items"] = "Gardar Todos os Obxectos",
+    ["Stash Container"] = "Contenedor do Almacén",
+    ["Retrieve Item"] = "Recuperar Obxecto",
+    ["Item Stash"] = "Almacén de Obxectos",
+    ["Supply Analysis"] = "Análise de Subministros",
+    ["Supply Usage"] = "Uso de Subministros",
+    ["Hunt Analysis"] = "Análise de Caza",
+    ["Damage Analysis"] = "Análise de Dano",
+    ["Healing Analysis"] = "Análise de Curación",
+    ["Waste Counter"] = "Contador de Residuos",
+    ["Profit Counter"] = "Contador de Beneficios",
+    ["Session Time"] = "Tempo de Sesión",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Puntos de Alma",
+    ["Soul Regeneration"] = "Rexeneración de Alma",
+    ["Soul Leech"] = "Drenaxe de Alma",
+    ["Regeneration"] = "Rexeneración",
+    ["Regeneration Rate"] = "Taxa de Rexeneración",
+    ["Mana Regeneration"] = "Rexeneración de Maná",
+    ["Health Regeneration"] = "Rexeneración de Saúde",
+    
+    -- Character Information Extended
+    ["Character Name"] = "Nome do Personaxe",
+    ["Character Level"] = "Nivel do Personaxe",
+    ["Character Vocation"] = "Vocación do Personaxe",
+    ["Skill Points"] = "Puntos de Habilidade",
+    ["Skill Progress"] = "Progreso de Habilidade",
+    ["Base Speed"] = "Velocidade Base",
+    ["Current Speed"] = "Velocidade Actual",
+    ["Equipment"] = "Equipamento",
+    ["Inventory"] = "Inventario",
+    ["Store Inbox"] = "Bandexa de Entrada da Tenda",
+    ["Purse"] = "Bolsa",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "Experiencia do Grupo",
+    ["Party Shared Experience"] = "Experiencia Compartida do Grupo",
+    ["Party Leader"] = "Líder do Grupo",
+    ["Party Member"] = "Membro do Grupo",
+    ["Party Invitation"] = "Invitación ao Grupo",
+    ["Accept Party Invitation"] = "Aceptar Invitación ao Grupo",
+    ["Decline Party Invitation"] = "Rexeitar Invitación ao Grupo",
   }
 }
 

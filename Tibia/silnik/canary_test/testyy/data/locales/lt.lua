@@ -758,6 +758,52 @@ locale = {
     ["players online"] = "žaidėjai prisijungę",
     ["Remember Email"] = "Prisiminti el. paštą",
     ["Login automatically"] = "Prisijungti automatiškai",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Atsargų Saugykla",
+    ["Stash All Items"] = "Išsaugoti Visus Daiktus",
+    ["Stash Container"] = "Saugyklos Konteineris",
+    ["Retrieve Item"] = "Paimti Daiktą",
+    ["Item Stash"] = "Daiktų Saugykla",
+    ["Supply Analysis"] = "Atsargų Analizė",
+    ["Supply Usage"] = "Atsargų Naudojimas",
+    ["Hunt Analysis"] = "Medžioklės Analizė",
+    ["Damage Analysis"] = "Žalos Analizė",
+    ["Healing Analysis"] = "Gydymo Analizė",
+    ["Waste Counter"] = "Atliekų Skaitiklis",
+    ["Profit Counter"] = "Pelno Skaitiklis",
+    ["Session Time"] = "Sesijos Laikas",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Sielos Taškai",
+    ["Soul Regeneration"] = "Sielos Atsistatymas",
+    ["Soul Leech"] = "Sielos Čiulpimas",
+    ["Regeneration"] = "Atsistatymas",
+    ["Regeneration Rate"] = "Atsistatymo Greitis",
+    ["Mana Regeneration"] = "Manos Atsistatymas",
+    ["Health Regeneration"] = "Sveikatos Atsistatymas",
+    
+    -- Character Information Extended
+    ["Character Name"] = "Personažo Vardas",
+    ["Character Level"] = "Personažo Lygis",
+    ["Character Vocation"] = "Personažo Profesija",
+    ["Skill Points"] = "Įgūdžių Taškai",
+    ["Skill Progress"] = "Įgūdžių Pažanga",
+    ["Base Speed"] = "Bazinis Greitis",
+    ["Current Speed"] = "Dabartinis Greitis",
+    ["Equipment"] = "Įranga",
+    ["Inventory"] = "Inventorius",
+    ["Store Inbox"] = "Parduotuvės Dėžutė",
+    ["Purse"] = "Piniginė",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "Grupės Patirtis",
+    ["Party Shared Experience"] = "Dalijama Grupės Patirtis",
+    ["Party Leader"] = "Grupės Vadovas",
+    ["Party Member"] = "Grupės Narys",
+    ["Party Invitation"] = "Kvietimas į Grupę",
+    ["Accept Party Invitation"] = "Priimti Kvietimą į Grupę",
+    ["Decline Party Invitation"] = "Atmesti Kvietimą į Grupę",
   }
 }
 

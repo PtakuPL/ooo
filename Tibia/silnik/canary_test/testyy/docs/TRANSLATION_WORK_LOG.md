@@ -1,15 +1,14 @@
 # Translation Work Log
 
-## 🎉 FINAL STATUS: WSZYSTKIE 51 JĘZYKÓW ROZSZERZONE Z NOWYMI SYSTEMAMI!
+## 🎉 FINAL STATUS: WSZYSTKIE 51 JĘZYKÓW MAJĄ TERAZ 800+ LINII!
 
 **Statystyki końcowe (zweryfikowane 2025-12-06):**
 - Łącznie plików: 53 (51 rozszerzonych + en fallback + pl reference)
-- Łącznie linii kodu: **42,392**
-- Wszystkie języki mają **758-1137 linii** (minimum 758)
+- Łącznie linii kodu: **43,626**
+- Wszystkie języki mają **800-1137 linii** (minimum 800)
 
 **Tier 1 (1000+):** ru (1137), fr (1119), es (1065), pl (1039)
-**Tier 2 (800-900):** de (899), it (887), pt (883), nl (850), tr (850), zh (850), ka (822), kk (820), sw (820), uz (820), ar (811), ja (811), ko (811), hu (798), th (798), bg (800), hr (800), sk (800), sl (796)
-**Tier 3 (758-800):** Wszystkie pozostałe 32 języki
+**Tier 2 (800-900+):** Wszystkie pozostałe 51 języków (bg, hr, sk, af, hi, hu, th, sl, mk, sq, uk, i inne)
 
 ## Nowe systemy dodane we wszystkich językach (sesja 2025-12-06):
 1. **Bosstiary System** - Boss Tracker, Boss Kills, Archfoe, Bane, Nemesis, Boss Points
@@ -17,6 +16,10 @@
 3. **Forge System** - Dust Converter, Fusion, Transfer, Tier, Success Chance, Dust, Slivers, Cores
 4. **Wheel of Destiny** - Revelation Points, Promotion Points, Gift of Life, Divine Empowerment
 5. **Prey System** - Prey Bonus, Prey Slot, Select Creature, Damage/Defense Boost, XP/Loot Bonus
+6. **Supply Management System** - Supply Stash, Stash Container, Retrieve Item, Supply Analysis
+7. **Soul and Regeneration** - Soul Points, Soul Regeneration, Health/Mana Regeneration
+8. **Character Information Extended** - Character Name/Level/Vocation, Skill Points/Progress
+9. **Party and Group Extended** - Party Experience, Party Leader, Party Invitation
 
 ## Finalne statystyki (po rozszerzeniu)
 

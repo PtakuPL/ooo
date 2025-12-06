@@ -758,6 +758,52 @@ local add = {
   ["Loot Bonus"] = "Bonus Kořisti",
   ["Prey Cards"] = "Karty Kořisti",
   ["Prey Wildcards"] = "Žolíky Kořisti",
+  
+  -- Supply Management System
+  ["Supply Stash"] = "Sklad Zásob",
+  ["Stash All Items"] = "Uložit Všechny Předměty",
+  ["Stash Container"] = "Kontejner Skladu",
+  ["Retrieve Item"] = "Vybrat Předmět",
+  ["Item Stash"] = "Sklad Předmětů",
+  ["Supply Analysis"] = "Analýza Zásob",
+  ["Supply Usage"] = "Využití Zásob",
+  ["Hunt Analysis"] = "Analýza Lovu",
+  ["Damage Analysis"] = "Analýza Poškození",
+  ["Healing Analysis"] = "Analýza Léčení",
+  ["Waste Counter"] = "Počítadlo Odpadu",
+  ["Profit Counter"] = "Počítadlo Zisku",
+  ["Session Time"] = "Čas Sezení",
+  
+  -- Soul and Regeneration
+  ["Soul Points"] = "Body Duše",
+  ["Soul Regeneration"] = "Regenerace Duše",
+  ["Soul Leech"] = "Vysávání Duše",
+  ["Regeneration"] = "Regenerace",
+  ["Regeneration Rate"] = "Rychlost Regenerace",
+  ["Mana Regeneration"] = "Regenerace Many",
+  ["Health Regeneration"] = "Regenerace Zdraví",
+  
+  -- Character Information Extended
+  ["Character Name"] = "Jméno Postavy",
+  ["Character Level"] = "Úroveň Postavy",
+  ["Character Vocation"] = "Povolání Postavy",
+  ["Skill Points"] = "Body Dovedností",
+  ["Skill Progress"] = "Pokrok Dovedností",
+  ["Base Speed"] = "Základní Rychlost",
+  ["Current Speed"] = "Aktuální Rychlost",
+  ["Equipment"] = "Vybavení",
+  ["Inventory"] = "Inventář",
+  ["Store Inbox"] = "Doručená Pošta Obchodu",
+  ["Purse"] = "Peněženka",
+  
+  -- Party and Group Extended
+  ["Party Experience"] = "Zkušenosti Skupiny",
+  ["Party Shared Experience"] = "Sdílené Zkušenosti Skupiny",
+  ["Party Leader"] = "Vedoucí Skupiny",
+  ["Party Member"] = "Člen Skupiny",
+  ["Party Invitation"] = "Pozvánka do Skupiny",
+  ["Accept Party Invitation"] = "Přijmout Pozvánku do Skupiny",
+  ["Decline Party Invitation"] = "Odmítnout Pozvánku do Skupiny",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

@@ -758,6 +758,52 @@ locale = {
     ["Loot Bonus"] = "Bonus de Botí",
     ["Prey Cards"] = "Cartes de Presa",
     ["Prey Wildcards"] = "Comodins de Presa",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Magatzem de Subministraments",
+    ["Stash All Items"] = "Emmagatzemar Tots els Objectes",
+    ["Stash Container"] = "Contenidor de Magatzem",
+    ["Retrieve Item"] = "Recuperar Objecte",
+    ["Item Stash"] = "Magatzem d'Objectes",
+    ["Supply Analysis"] = "Anàlisi de Subministraments",
+    ["Supply Usage"] = "Ús de Subministraments",
+    ["Hunt Analysis"] = "Anàlisi de Caça",
+    ["Damage Analysis"] = "Anàlisi de Dany",
+    ["Healing Analysis"] = "Anàlisi de Curació",
+    ["Waste Counter"] = "Comptador de Residus",
+    ["Profit Counter"] = "Comptador de Beneficis",
+    ["Session Time"] = "Temps de Sessió",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Punts d'Ànima",
+    ["Soul Regeneration"] = "Regeneració d'Ànima",
+    ["Soul Leech"] = "Drenatge d'Ànima",
+    ["Regeneration"] = "Regeneració",
+    ["Regeneration Rate"] = "Taxa de Regeneració",
+    ["Mana Regeneration"] = "Regeneració de Mana",
+    ["Health Regeneration"] = "Regeneració de Salut",
+    
+    -- Character Information Extended
+    ["Character Name"] = "Nom del Personatge",
+    ["Character Level"] = "Nivell del Personatge",
+    ["Character Vocation"] = "Vocació del Personatge",
+    ["Skill Points"] = "Punts d'Habilitat",
+    ["Skill Progress"] = "Progrés d'Habilitat",
+    ["Base Speed"] = "Velocitat Base",
+    ["Current Speed"] = "Velocitat Actual",
+    ["Equipment"] = "Equipament",
+    ["Inventory"] = "Inventari",
+    ["Store Inbox"] = "Safata d'Entrada de la Botiga",
+    ["Purse"] = "Bossa",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "Experiència de Grup",
+    ["Party Shared Experience"] = "Experiència Compartida de Grup",
+    ["Party Leader"] = "Líder del Grup",
+    ["Party Member"] = "Membre del Grup",
+    ["Party Invitation"] = "Invitació al Grup",
+    ["Accept Party Invitation"] = "Acceptar Invitació al Grup",
+    ["Decline Party Invitation"] = "Rebutjar Invitació al Grup",
   }
 }
 

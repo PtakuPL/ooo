@@ -758,6 +758,52 @@ locale = {
     ["Loot Bonus"] = "Talan Bonusu",
     ["Prey Cards"] = "Ov Kartları",
     ["Prey Wildcards"] = "Ov Joker Kartları",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Təchizat Anbarı",
+    ["Stash All Items"] = "Bütün Əşyaları Saxla",
+    ["Stash Container"] = "Anbar Konteyneri",
+    ["Retrieve Item"] = "Əşyanı Al",
+    ["Item Stash"] = "Əşya Anbarı",
+    ["Supply Analysis"] = "Təchizat Analizi",
+    ["Supply Usage"] = "Təchizat İstifadəsi",
+    ["Hunt Analysis"] = "Ov Analizi",
+    ["Damage Analysis"] = "Zərər Analizi",
+    ["Healing Analysis"] = "Şəfa Analizi",
+    ["Waste Counter"] = "İtki Sayğacı",
+    ["Profit Counter"] = "Mənfəət Sayğacı",
+    ["Session Time"] = "Sessiya Vaxtı",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Ruh Nöqtələri",
+    ["Soul Regeneration"] = "Ruh Bərpası",
+    ["Soul Leech"] = "Ruh Sümürən",
+    ["Regeneration"] = "Bərpa",
+    ["Regeneration Rate"] = "Bərpa Sürəti",
+    ["Mana Regeneration"] = "Mana Bərpası",
+    ["Health Regeneration"] = "Sağlamlıq Bərpası",
+    
+    -- Character Information Extended
+    ["Character Name"] = "Xarakter Adı",
+    ["Character Level"] = "Xarakter Səviyyəsi",
+    ["Character Vocation"] = "Xarakter Peşəsi",
+    ["Skill Points"] = "Bacarıq Nöqtələri",
+    ["Skill Progress"] = "Bacarıq İnkişafı",
+    ["Base Speed"] = "Əsas Sürət",
+    ["Current Speed"] = "Cari Sürət",
+    ["Equipment"] = "Avadanlıq",
+    ["Inventory"] = "İnventar",
+    ["Store Inbox"] = "Mağaza Gələn Qutusu",
+    ["Purse"] = "Pul Kisəsi",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "Qrup Təcrübəsi",
+    ["Party Shared Experience"] = "Paylaşılan Qrup Təcrübəsi",
+    ["Party Leader"] = "Qrup Lideri",
+    ["Party Member"] = "Qrup Üzvü",
+    ["Party Invitation"] = "Qrup Dəvəti",
+    ["Accept Party Invitation"] = "Qrup Dəvətini Qəbul Et",
+    ["Decline Party Invitation"] = "Qrup Dəvətini Rədd Et",
   }
 }
 

@@ -1033,7 +1033,17 @@ local add = {
   ["Set circle opacity."] = "Ustaw przezroczystość kółka.",
   ["Set distance from center."] = "Ustaw odległość od środka.",
   ["This option makes textures load asynchronously and uses less RAM."] = "Ta opcja sprawia, że tekstury ładują się asynchronicznie i używa mniej RAM.",
-  ["Try to optimize when the frame rate is below 60. VISUAL PROBLEMS MAY OCCUR"] = "Próbuj optymalizować gdy liczba klatek poniżej 60. MOGĄ WYSTĄPIĆ PROBLEMY WIZUALNE"
+  ["Try to optimize when the frame rate is below 60. VISUAL PROBLEMS MAY OCCUR"] = "Próbuj optymalizować gdy liczba klatek poniżej 60. MOGĄ WYSTĄPIĆ PROBLEMY WIZUALNE",
+  
+  -- Missing keys from tr() calls (added 2025-12-06)
+  [" (Frozen)"] = " (Zamrożony)",
+  ["Do you really want to keep your house '%s'?\nYou will no longer transfer the house to %s on %s."] = "Czy na pewno chcesz zatrzymać swój dom '%s'?\nNie będziesz już przenosić domu do %s w dniu %s.",
+  ["Do you really want to move out of the house '%s'?\nClick on 'Yes' to move out on %s."] = "Czy na pewno chcesz wyprowadzić się z domu '%s'?\nKliknij 'Tak' aby wyprowadzić się %s.",
+  ["You don't have enough coins"] = "Nie masz wystarczającej ilości monet",
+  ["You don't may receive experience and loot from monsters"] = "Nie możesz otrzymywać doświadczenia i łupów z potworów",
+  ["You gain only 50%% experience and you don't may gain loot from monsters"] = "Zdobywasz tylko 50%% doświadczenia i nie możesz zdobywać łupów z potworów",
+  ["Unable to load dat file, please place a valid dat in "] = "Nie można załadować pliku dat, proszę umieścić prawidłowy plik dat w ",
+  ["Unable to load spr file, please place a valid spr in "] = "Nie można załadować pliku spr, proszę umieścić prawidłowy plik spr w "
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

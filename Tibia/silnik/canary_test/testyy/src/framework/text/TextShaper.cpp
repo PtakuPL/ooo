@@ -2,10 +2,31 @@
 #include <stdexcept>
 
 static hb_script_t toHbScript(const std::string& s) {
+  // Latin-based scripts
+  if (s == "Latn") return HB_SCRIPT_LATIN;
+  
+  // European scripts
   if (s == "Cyrl") return HB_SCRIPT_CYRILLIC;
   if (s == "Grek") return HB_SCRIPT_GREEK;
+  if (s == "Armn") return HB_SCRIPT_ARMENIAN;
+  if (s == "Geor") return HB_SCRIPT_GEORGIAN;
+  
+  // Middle Eastern scripts (RTL)
   if (s == "Arab") return HB_SCRIPT_ARABIC;
+  if (s == "Hebr") return HB_SCRIPT_HEBREW;
+  
+  // South Asian scripts
+  if (s == "Deva") return HB_SCRIPT_DEVANAGARI;
+  if (s == "Beng") return HB_SCRIPT_BENGALI;
+  if (s == "Thai") return HB_SCRIPT_THAI;
+  
+  // East Asian scripts
   if (s == "Hani") return HB_SCRIPT_HAN;
+  if (s == "Hira") return HB_SCRIPT_HIRAGANA;
+  if (s == "Kana") return HB_SCRIPT_KATAKANA;
+  if (s == "Hang") return HB_SCRIPT_HANGUL;
+  
+  // Default fallback
   return HB_SCRIPT_LATIN;
 }
 

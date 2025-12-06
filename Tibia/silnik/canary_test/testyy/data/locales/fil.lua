@@ -656,6 +656,32 @@ locale = {
     ["players online"] = "mga manlalarong online",
     ["Remember Email"] = "Tandaan ang email",
     ["Login automatically"] = "Awtomatikong mag-login",
+    
+    -- Additional UI
+    ["Store"] = "Tindahan",
+    ["Prey"] = "Biktima",
+    ["Analytics"] = "Analytics",
+    ["Daily Reward"] = "Araw-araw na Gantimpala",
+    ["Collect Reward"] = "Kolektahin ang Gantimpala",
+    ["Claim"] = "Kunin",
+    ["Streak"] = "Sunod-sunod",
+    ["Bonus"] = "Bonus",
+    
+    -- Prey System
+    ["Prey Creature"] = "Nilalang na Biktima",
+    ["Prey Bonus"] = "Bonus sa Biktima",
+    ["Reroll"] = "I-reroll",
+    ["Lock Prey"] = "I-lock ang Biktima",
+    ["Damage Bonus"] = "Bonus sa Pinsala",
+    ["Defense Bonus"] = "Bonus sa Depensa",
+    
+    -- Forge System
+    ["Forge"] = "Panday",
+    ["Dust"] = "Alikabok",
+    ["Fusion"] = "Pagsasama",
+    ["Transfer"] = "Paglipat",
+    ["Tier"] = "Antas",
+    ["Success Rate"] = "Rate ng Tagumpay",
   }
 }
 

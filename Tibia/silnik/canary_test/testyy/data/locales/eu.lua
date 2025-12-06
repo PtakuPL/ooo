@@ -656,6 +656,32 @@ locale = {
     ["players online"] = "jokalari linean",
     ["Remember Email"] = "Gogoratu e-posta",
     ["Login automatically"] = "Saioa hasi automatikoki",
+    
+    -- Additional UI
+    ["Store"] = "Denda",
+    ["Prey"] = "Harrapakina",
+    ["Analytics"] = "Analitika",
+    ["Daily Reward"] = "Eguneko Saria",
+    ["Collect Reward"] = "Bildu Saria",
+    ["Claim"] = "Eskatu",
+    ["Streak"] = "Segida",
+    ["Bonus"] = "Hobaria",
+    
+    -- Prey System
+    ["Prey Creature"] = "Harrapakina Izakia",
+    ["Prey Bonus"] = "Harrapakina Hobaria",
+    ["Reroll"] = "Birbiratu",
+    ["Lock Prey"] = "Blokeatu Harrapakina",
+    ["Damage Bonus"] = "Kalte Hobaria",
+    ["Defense Bonus"] = "Defentsa Hobaria",
+    
+    -- Forge System
+    ["Forge"] = "Lantegi",
+    ["Dust"] = "Hautsa",
+    ["Fusion"] = "Fusioa",
+    ["Transfer"] = "Transferentzia",
+    ["Tier"] = "Maila",
+    ["Success Rate"] = "Arrakasta Tasa",
   }
 }
 

@@ -656,6 +656,32 @@ locale = {
     ["players online"] = "onlayn oyunçu",
     ["Remember Email"] = "E-poçtu yadda saxla",
     ["Login automatically"] = "Avtomatik giriş",
+    
+    -- Additional UI
+    ["Store"] = "Mağaza",
+    ["Prey"] = "Ov",
+    ["Analytics"] = "Analitika",
+    ["Daily Reward"] = "Gündəlik Mükafat",
+    ["Collect Reward"] = "Mükafatı Topla",
+    ["Claim"] = "Tələb et",
+    ["Streak"] = "Seriya",
+    ["Bonus"] = "Bonus",
+    
+    -- Prey System
+    ["Prey Creature"] = "Ov Məxluqu",
+    ["Prey Bonus"] = "Ov Bonusu",
+    ["Reroll"] = "Yenidən At",
+    ["Lock Prey"] = "Ovu Kilidlə",
+    ["Damage Bonus"] = "Zərər Bonusu",
+    ["Defense Bonus"] = "Müdafiə Bonusu",
+    
+    -- Forge System
+    ["Forge"] = "Döymə",
+    ["Dust"] = "Toz",
+    ["Fusion"] = "Birləşmə",
+    ["Transfer"] = "Köçürmə",
+    ["Tier"] = "Səviyyə",
+    ["Success Rate"] = "Uğur Nisbəti",
   }
 }
 

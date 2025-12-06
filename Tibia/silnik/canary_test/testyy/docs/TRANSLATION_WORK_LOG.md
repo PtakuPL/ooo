@@ -1,15 +1,30 @@
 # Translation Work Log
 
-## 🎉 FINAL STATUS: WSZYSTKIE 51 JĘZYKÓW ROZSZERZONE!
+## Aktualny status (zweryfikowany)
 
-**Statystyki końcowe:**
-- Łącznie plików: 53 (51 rozszerzonych + en fallback + pl reference)
-- Łącznie linii kodu: ~40,500+
-- Wszystkie języki mają 700+ linii
+**Łączna liczba linii:** ~42,000+
+**Pliki:** 53 (51 języków + en fallback + pl reference)
+
+### Do rozszerzenia (poniżej 700 linii):
+- id.lua: 660 → 700+
+- az.lua: 662 → 700+
+- eu.lua: 662 → 700+
+- fil.lua: 662 → 700+
+- hy.lua: 662 → 700+
+- ca.lua: 668 → 700+
+- et.lua: 668 → 700+
+- gl.lua: 668 → 700+
+- lv.lua: 669 → 700+
+- da.lua: 673 → 700+
+- ms.lua: 676 → 700+
+- cs.lua: 680 → 700+
+- bn.lua: 687 → 700+
+- ro.lua: 692 → 700+
+- is.lua: 699 → 700+
 
 **Tier 1 (1000+):** ru, fr, es, pl
 **Tier 2 (800-900):** de, it, pt, nl, tr, zh, ka, bg, hr, sk, sl  
-**Tier 3 (700-800):** 38 pozostałych języków
+**Tier 3 (700-800):** uk, sr, lt, uz, sw, kk, ko, ja, ar, th, hu, hi, af, sq, mk, he, el, no, fi, sv, vi, fa
 
 ## Rozszerzenia w tym PR (~23,000+ nowych wpisów):
 - 8 języków Tier 4→2/3: hu, th, lt, sr, sl, bg, hr, sk

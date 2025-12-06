@@ -654,6 +654,39 @@ locale = {
     ["players online"] = "pemain online",
     ["Remember Email"] = "Ingat email",
     ["Login automatically"] = "Login otomatis",
+    
+    -- Additional UI Elements
+    ["Store"] = "Toko",
+    ["Prey"] = "Mangsa",
+    ["Analytics"] = "Analitik",
+    ["Reward Wall"] = "Dinding Hadiah",
+    ["Daily Reward"] = "Hadiah Harian",
+    ["Collect Reward"] = "Kumpulkan Hadiah",
+    ["Claim"] = "Klaim",
+    ["Streak"] = "Streak",
+    ["Bonus"] = "Bonus",
+    
+    -- Prey System
+    ["Prey Creature"] = "Makhluk Mangsa",
+    ["Prey Bonus"] = "Bonus Mangsa",
+    ["Prey Duration"] = "Durasi Mangsa",
+    ["Reroll"] = "Ulangi",
+    ["Lock Prey"] = "Kunci Mangsa",
+    ["Select Prey"] = "Pilih Mangsa",
+    ["Damage Bonus"] = "Bonus Kerusakan",
+    ["Defense Bonus"] = "Bonus Pertahanan",
+    ["Experience Bonus"] = "Bonus Pengalaman",
+    ["Loot Bonus"] = "Bonus Jarahan",
+    
+    -- Forge System
+    ["Forge"] = "Tempa",
+    ["Dust"] = "Debu",
+    ["Slivers"] = "Serpihan",
+    ["Exalted Core"] = "Inti Agung",
+    ["Fusion"] = "Fusi",
+    ["Transfer"] = "Transfer",
+    ["Tier"] = "Tingkat",
+    ["Success Rate"] = "Tingkat Sukses",
   }
 }
 

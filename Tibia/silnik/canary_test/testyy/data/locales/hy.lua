@@ -656,6 +656,32 @@ locale = {
     ["players online"] = "khaghatsoghner online",
     ["Remember Email"] = "Hishir email",
     ["Login automatically"] = "Mtir inknashan",
+    
+    -- Additional UI
+    ["Store"] = "Khanut",
+    ["Prey"] = "Vors",
+    ["Analytics"] = "Velutsabanutyan",
+    ["Daily Reward"] = "Orakan Mrcanakit",
+    ["Collect Reward"] = "Havaqir Mrcanakit",
+    ["Claim"] = "Pahanjir",
+    ["Streak"] = "Sharq",
+    ["Bonus"] = "Bonus",
+    
+    -- Prey System
+    ["Prey Creature"] = "Vors Ararats",
+    ["Prey Bonus"] = "Vors Bonus",
+    ["Reroll"] = "Norits Gortsarkel",
+    ["Lock Prey"] = "Koghpel Vorsy",
+    ["Damage Bonus"] = "Vnas Bonus",
+    ["Defense Bonus"] = "Pashtpanutyun Bonus",
+    
+    -- Forge System
+    ["Forge"] = "Darbnatun",
+    ["Dust"] = "P'oshi",
+    ["Fusion"] = "Miavorums",
+    ["Transfer"] = "P'okhancum",
+    ["Tier"] = "Makardak",
+    ["Success Rate"] = "Hajoghutyun Gorts",
   }
 }
 

@@ -778,7 +778,44 @@ locale = {
     ["Open"] = "გახსნა",
     ["Open in new window"] = "ახალ ფანჯარაში გახსნა",
     ["Move up"] = "ზემოთ გადატანა",
-    ["Browse Field"] = "ველის დათვალიერება"
+    ["Browse Field"] = "ველის დათვალიერება",
+    
+    -- Status Effects
+    ["You are bleeding"] = "სისხლი გდის",
+    ["You are burning"] = "იწვი",
+    ["You are cursed"] = "დაწყევლილი ხარ",
+    ["You are dazzled"] = "თვალი გაგიკვირდა",
+    ["You are dead"] = "მკვდარი ხარ",
+    ["You are dead."] = "მკვდარი ხარ.",
+    ["You are drowning"] = "იხრჩობი",
+    ["You are drunk"] = "მთვრალი ხარ",
+    ["You are electrified"] = "ელექტროშოკი მოგდი",
+    ["You are freezing"] = "იყინები",
+    ["You are hasted"] = "აჩქარებული ხარ",
+    ["You are hungry"] = "მშიერი ხარ",
+    ["You are paralysed"] = "დამბლავებული ხარ",
+    ["You are poisoned"] = "მოწამლული ხარ",
+    ["You are protected by a magic shield"] = "მაგიური ფარით ხარ დაცული",
+    ["You are strengthened"] = "გაძლიერებული ხარ",
+    ["You are within a protection zone"] = "დაცვის ზონაში ხარ",
+    
+    -- Combat
+    ["Damage"] = "ზიანი",
+    ["Healing"] = "მკურნალობა",
+    ["Critical Hit"] = "კრიტიკული დარტყმა",
+    ["Critical Hits"] = "კრიტიკული დარტყმები",
+    ["Life Leech"] = "სიცოცხლის შთანთქმა",
+    ["Mana Leech"] = "მანას შთანთქმა",
+    
+    -- Tasks
+    ["Tasks"] = "დავალებები",
+    ["Task"] = "დავალება",
+    ["Daily Tasks"] = "ყოველდღიური დავალებები",
+    ["Weekly Tasks"] = "ყოველკვირეული დავალებები",
+    ["Reward"] = "ჯილდო",
+    ["Rewards"] = "ჯილდოები",
+    ["Claim Reward"] = "ჯილდოს აღება",
+    ["Progress"] = "პროგრესი"
   }
 }
 

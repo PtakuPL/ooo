@@ -713,8 +713,187 @@ locale = {
     
     -- Prey system
     ["Prey Creatures"] = "Beute-Kreaturen",
-    ["Preys"] = "Beuten"
+    ["Preys"] = "Beuten",
   }
 }
 
 modules.client_locales.installLocale(locale)
+
+-- Additional translations merged at runtime
+local add = {
+  -- New UI elements
+  ["Journey Onwards"] = "Weiterreisen",
+  
+  -- Hotkey management extended
+  ["Add hotkey preset"] = "Hotkey-Voreinstellung hinzufügen",
+  ["Add new group"] = "Neue Gruppe hinzufügen",
+  ["Copy hotkey preset"] = "Hotkey-Voreinstellung kopieren",
+  ["Rename hotkey preset"] = "Hotkey-Voreinstellung umbenennen",
+  ["Enter a name for the new preset:"] = "Name für die neue Voreinstellung eingeben:",
+  ["Enter a name for the preset:"] = "Name für die Voreinstellung eingeben:",
+  ["Do you really want to delete the hotkey preset %s?"] = "Möchtest du die Hotkey-Voreinstellung %s wirklich löschen?",
+  ["Current hotkey to change: %s"] = "Aktueller Hotkey zum Ändern: %s",
+  ["Current hotkey to change: none"] = "Aktueller Hotkey zum Ändern: keiner",
+  ["Edit Primary Key for \\"] = "Primärtaste für \\ bearbeiten",
+  ["Edit Secondary Key for \\"] = "Sekundärtaste für \\ bearbeiten",
+  ["Edit group %s"] = "Gruppe %s bearbeiten",
+  ["Remove group %s"] = "Gruppe %s entfernen",
+  ["Hide groups"] = "Gruppen ausblenden",
+  ["Show groups"] = "Gruppen anzeigen",
+  ["Maximum of User-Created Groups Reached"] = "Maximale Anzahl benutzerdefinierter Gruppen erreicht",
+  
+  -- Cyclopedia and Bestiary extended
+  ["Imbuement Tracker"] = "Imbuement-Tracker",
+  ["Prey Tracker"] = "Beute-Tracker",
+  ["Prey Dialog"] = "Beute-Dialog",
+  ["Select monster"] = "Monster auswählen",
+  ["Select monster to proceed."] = "Monster auswählen, um fortzufahren.",
+  ["Creature Name"] = "Kreaturname",
+  
+  -- Charms
+  ["Confirm Charm Removal"] = "Zauberentfernung bestätigen",
+  ["Confirm Selected Charm"] = "Ausgewählten Zauber bestätigen",
+  ["Confirm Unlocking of Charm"] = "Zauberfreischaltung bestätigen",
+  ["Do you want to remove the Charm %s from this creature? This will cost you %s gold pieces."] = "Möchtest du den Zauber %s von dieser Kreatur entfernen? Das kostet %s Goldstücke.",
+  ["Do you want to use the Charm %s for this creature?"] = "Möchtest du den Zauber %s für diese Kreatur verwenden?",
+  
+  -- House system extended
+  ["Confirm House Action"] = "Hausaktion bestätigen",
+  ["Do you really want to keep your house "] = "Möchtest du dein Haus wirklich behalten ",
+  ["Do you really want to move out of the house "] = "Möchtest du wirklich aus dem Haus ausziehen ",
+  ["You have sucessfully accepted the transfer."] = "Du hast die Übertragung erfolgreich angenommen.",
+  ["You have sucessfully iniated your move out."] = "Du hast deinen Auszug erfolgreich eingeleitet.",
+  ["You have sucessfully initiated the transfer of your house."] = "Du hast die Übertragung deines Hauses erfolgreich eingeleitet.",
+  
+  -- Imbuing extended
+  ["Confirm Imbuing Attempt"] = "Imbuement-Versuch bestätigen",
+  ["Confirm Clearing"] = "Löschen bestätigen",
+  ["Confirmation of Purchase"] = "Kaufbestätigung",
+  
+  -- UI elements extended
+  ["Chat Off"] = "Chat aus",
+  ["Chat On"] = "Chat an",
+  ["Toggle WASD chat mode"] = "WASD-Chat-Modus umschalten",
+  ["Toggle chase mode"] = "Verfolgungsmodus umschalten",
+  ["Local Chat"] = "Lokaler Chat",
+  ["Close Read-Only Tab"] = "Nur-Lese-Tab schließen",
+  ["Close read-only"] = "Nur-Lese schließen",
+  ["Open read-only"] = "Nur-Lese öffnen",
+  ["Debug Info"] = "Debug-Info",
+  ["Top"] = "Oben",
+  ["Bottom"] = "Unten",
+  ["Parallel"] = "Parallel",
+  ["Compact"] = "Kompakt",
+  ["Large"] = "Groß",
+  
+  -- Graphics and effects
+  ["Animated Message Scale: %sx"] = "Animierte Nachrichtenskalierung: %sx",
+  ["Opacity"] = "Deckkraft",
+  ["Opacity: %s"] = "Deckkraft: %s",
+  ["Opacity Effect: %s%%"] = "Deckkrafteffekt: %s%%",
+  ["Distance"] = "Entfernung",
+  ["Distance: %s"] = "Entfernung: %s",
+  
+  -- VIP and status extended
+  ["Hide Customisable Status Bars"] = "Anpassbare Statusleisten ausblenden",
+  ["Show health"] = "Gesundheit anzeigen",
+  ["Show inventory"] = "Inventar anzeigen",
+  ["Show miniMap"] = "Minimap anzeigen",
+  
+  -- Battle and attack
+  ["Attack next creature in battle list"] = "Nächste Kreatur in der Kampfliste angreifen",
+  ["Attack previous creature in battle list"] = "Vorherige Kreatur in der Kampfliste angreifen",
+  ["Loot corpse"] = "Leiche plündern",
+  
+  -- Store and rewards extended
+  ["Store shop"] = "Shop",
+  ["Rewards"] = "Belohnungen",
+  ["Open Boss Slots dialog"] = "Boss-Slots-Dialog öffnen",
+  ["Open Bosstiary dialog"] = "Bosstiary-Dialog öffnen",
+  ["Open QuestLog Tracker"] = "Quest-Log-Tracker öffnen",
+  ["Open rewardWall"] = "Belohnungswand öffnen",
+  ["Highscores"] = "Bestenliste",
+  
+  -- Updater extended
+  ["Downloading:\n%s"] = "Herunterladen:\n%s",
+  ["Downloading (%i retry):\n%s"] = "Herunterladen (Versuch %i):\n%s",
+  ["Updater Error"] = "Updater-Fehler",
+  ["Updating %i files"] = "%i Dateien aktualisieren",
+  ["Updating client (may take few seconds)"] = "Client wird aktualisiert (kann einige Sekunden dauern)",
+  ["Timeout"] = "Zeitüberschreitung",
+  
+  -- Login errors
+  ["Connecting to login server...\nServer: [%s]"] = "Verbindung zum Login-Server...\nServer: [%s]",
+  ["ERROR , try adding \n- ip/login.php \n- Enable HTTP login"] = "FEHLER, versuche \n- ip/login.php hinzuzufügen \n- HTTP-Login aktivieren",
+  
+  -- Loot system extended
+  ["Invalid Loot Container"] = "Ungültiger Beute-Container",
+  ["Manage Loot Containers"] = "Beute-Container verwalten",
+  
+  -- Tasks extended
+  ["Do you really want to abort this task?"] = "Möchtest du diese Aufgabe wirklich abbrechen?",
+  ["Summary"] = "Zusammenfassung",
+  
+  -- Account extended
+  ["Manage Account"] = "Konto verwalten",
+  ["Manage control buttons"] = "Steuerungstasten verwalten",
+  ["Gratis Premium Account"] = "Kostenloses Premium-Konto",
+  ["Free"] = "Kostenlos",
+  
+  -- Time and experience
+  ["You have %s hours and %s minutes left"] = "Du hast noch %s Stunden und %s Minuten",
+  ["If you are premium player, you will gain 50%% more experience"] = "Als Premium-Spieler erhältst du 50%% mehr Erfahrung",
+  ["Now you will gain 50%% more experience"] = "Jetzt erhältst du 50%% mehr Erfahrung",
+  ["infinite bonus"] = "unendlicher Bonus",
+  
+  -- Coins
+  ["Transferable Tibia Coins: "] = "Übertragbare Tibia Coins: ",
+  ["Transferable Task points: "] = "Übertragbare Aufgabenpunkte: ",
+  
+  -- Items
+  ["Wrap"] = "Einwickeln",
+  ["Unwrap"] = "Auswickeln",
+  
+  -- Status effects extended
+  ["(Frozen)"] = "(Eingefroren)",
+  [" (Suspended)"] = " (Ausgesetzt)",
+  ["You are Agony"] = "Du leidest unter Qual",
+  ["You are Bleeding"] = "Du blutest",
+  ["You are Feared"] = "Du hast Angst",
+  ["You are Rooted"] = "Du bist verwurzelt",
+  ["You are inspecting"] = "Du untersuchst",
+  
+  -- Misc
+  ["You read the following"] = "Du liest das Folgende",
+  ["ok"] = "ok",
+  ["remove"] = "entfernen",
+  ["%s of experience per hour"] = "%s Erfahrung pro Stunde",
+  ["%s: "] = "%s: ",
+  [", written by \n%s\n"] = ", geschrieben von \n%s\n",
+  [", written on \n%s.\n"] = ", geschrieben am \n%s.\n",
+  ["You have %s percent to go "] = "Dir fehlen %s Prozent ",
+  
+  -- UI extended
+  ["Show All"] = "Alle anzeigen",
+  ["Show Own Rank"] = "Eigenen Rang anzeigen",
+  ["Show action bar"] = "Aktionsleiste anzeigen",
+  ["Show event messages"] = "Ereignismeldungen anzeigen",
+  ["Show info messages"] = "Info-Meldungen anzeigen",
+  ["Show levels"] = "Level anzeigen",
+  ["Show private messages"] = "Private Nachrichten anzeigen",
+  ["Show status messages"] = "Statusmeldungen anzeigen",
+  ["Show timestamps"] = "Zeitstempel anzeigen",
+  ["Password:"] = "Passwort:",
+  ["Pick reward"] = "Belohnung wählen",
+  ["Player Name"] = "Spielername",
+  ["Points"] = "Punkte",
+  ["Quest Tracker"] = "Quest-Tracker",
+  ["Random Hint"] = "Zufälliger Hinweis",
+  ["Recipient:"] = "Empfänger:",
+  ["Sort by ascending"] = "Aufsteigend sortieren",
+  ["Sort by descending"] = "Absteigend sortieren",
+  ["Sort by remaining kills"] = "Nach verbleibenden Tötungen sortieren",
+}
+for k,v in pairs(add) do
+  locale.translation[k] = locale.translation[k] or v
+end

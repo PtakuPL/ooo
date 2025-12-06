@@ -86,8 +86,9 @@ jobs:
             .\bootstrap-vcpkg.bat
           }
 
-      - name: Ensure 7zip
-        run: choco install -y 7zip
+      - name: Ensure 7zip and pkg-config
+        run: |
+          choco install -y 7zip pkgconfiglite
 
       - name: Download Android build bundle
         shell: powershell

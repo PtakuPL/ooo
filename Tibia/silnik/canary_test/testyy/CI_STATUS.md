@@ -8,39 +8,55 @@
 
 | Workflow | File | Platform | Status | Notes |
 |----------|------|----------|--------|-------|
-| **Windows** | `build-windows.yml` | Windows | ⏳ Pending Approval | First-time contributor workflow approval required |
-| **Ubuntu** | `build-ubuntu.yml` | Ubuntu 24.04 | ⏳ Pending Approval | First-time contributor workflow approval required |
-| **Browser (WASM)** | `build-browser.yml` | Emscripten | ⏳ Pending Approval | First-time contributor workflow approval required |
-| **Android** | `build-android.yml` | Android NDK | ⏳ Pending Approval | First-time contributor workflow approval required |
-
-### Notes on Workflow Status
-All workflow runs show `action_required` status because they are triggered from a pull request by a first-time contributor (Copilot). Repository owner must approve workflow runs to proceed with actual builds.
+| **Windows** | `build-windows.yml` | Windows | ⚙️ In Progress | MSVC ICE workaround added |
+| **Ubuntu** | `build-ubuntu.yml` | Ubuntu 24.04 | ⏳ Pending | |
+| **Browser (WASM)** | `build-browser.yml` | Emscripten | ⚙️ In Progress | Lua 5.4 support fixed |
+| **Android** | `build-android.yml` | Android NDK | ❌ Needs Investigation | CMake configuration issues |
 
 ---
 
 ## Fixes Implemented in This PR
 
-### ✅ Emscripten/WASM Build Fix
-**File:** `src/CMakeLists.txt` (lines 483-496)
+### ✅ Emscripten/WASM Build Fix (NEW)
+**Files Changed:**
+- `cmake/FindLua.cmake` - Updated to support Lua 5.4 for WASM builds
+- `src/CMakeLists.txt` - Simplified WASM Lua detection
 
-**Problem:** Custom `FindLua.cmake` in project's `cmake/` directory was incompatible with WASM builds.
+**Problem:** Custom `FindLua.cmake` only looked for Lua 5.1 libraries, but vcpkg's WASM Lua package provides Lua 5.4 (lua54).
 
-**Solution:** For WASM builds, temporarily remove project's cmake directory from module path to use CMake's standard `FindLua` module:
+**Solution:** Updated `FindLua.cmake` to detect WASM/Emscripten builds and search for Lua 5.4 library names:
 ```cmake
-# For WASM builds, find Lua via CMake's standard FindLua module
-set(_SAVED_CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH})
-list(REMOVE_ITEM CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
-find_package(Lua REQUIRED)
-set(CMAKE_MODULE_PATH ${_SAVED_CMAKE_MODULE_PATH})
+if(EMSCRIPTEN OR WASM)
+    FIND_PATH(LUA_INCLUDE_DIR NAMES lua.h PATH_SUFFIXES lua54 lua5.4 lua)
+    # Static library file names (.a files) and library names
+    SET(_LUA_STATIC_LIBS liblua54.a liblua5.4.a liblua.a)
+    SET(_LUA_SHARED_LIBS lua54 lua5.4 lua)
+else()
+    # Standard Lua 5.1 paths for non-WASM builds
+    ...
+endif()
 ```
 
-### ✅ vcpkg Configuration
-**File:** `vcpkg.json`
+### ✅ MSVC Internal Compiler Error (ICE) Workaround (NEW)
+**File Changed:** `src/CMakeLists.txt`
 
-All dependencies properly configured with correct platform constraints:
-- `luajit` - Windows, Linux, macOS only
-- `lua` - WASM only
-- `glew`, `opengl`, `angle` - Desktop platforms only
+**Problem:** MSVC triggers C1001 internal compiler error on complex template code in `cast.h` around line 157 when using `/O2` optimization.
+
+**Solution:** Added optimization level reduction for Release/RelWithDebInfo builds. The workaround is applied globally because `cast.h` is a header-only template library included via `stdext.h` across all source files:
+```cmake
+if (MSVC)
+  # Workaround for MSVC Internal Compiler Error (ICE) on complex template code
+  target_compile_options(${PROJECT_NAME} PRIVATE
+    $<$<CONFIG:Release>:/O1>  # Use /O1 instead of /O2
+    $<$<CONFIG:RelWithDebInfo>:/O1>
+  )
+endif()
+```
+
+### ✅ UTF-8 Support (Previous Fix)
+**File:** `src/CMakeLists.txt`
+
+MSVC UTF-8 flag (`/utf-8`) already added for proper Unicode handling.
 
 ---
 

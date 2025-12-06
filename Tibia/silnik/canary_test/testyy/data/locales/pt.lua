@@ -506,3 +506,378 @@ locale = {
 }
 
 modules.client_locales.installLocale(locale)
+
+-- Additional translations merged at runtime (added 2025-12-05)
+local add = {
+  -- UI and Interface
+  ["Journey Onwards"] = "Continue a Jornada",
+  ["Email:"] = "E-mail:",
+  ["Acc Name:"] = "Nome da Conta:",
+  ["Remember Email:"] = "Lembrar E-mail:",
+  ["Remember password:"] = "Lembrar senha:",
+  ["Email"] = "E-mail",
+  ["Remember Email"] = "Lembrar E-mail",
+  ["Language"] = "Idioma",
+  ["Client version"] = "Versão do cliente",
+  
+  -- Death dialog
+  ["Alas! Brave adventurer, you have met a sad fate.\nBut do not despair, for the gods will bring you back\ninto this world in exchange for a small sacrifice\n\nSimply click on Ok to resume your journeys!"] = "Infelizmente! Bravo aventureiro, você encontrou um triste destino.\nMas não se desespere, pois os deuses o trarão de volta\na este mundo em troca de um pequeno sacrifício\n\nSimplemente clique em Ok para continuar suas jornadas!",
+  ["Are you sure you want to logout?"] = "Tem certeza que deseja sair?",
+  
+  -- New features - Hotkeys
+  ["Add hotkey preset"] = "Adicionar preset de atalhos",
+  ["Add new group"] = "Adicionar novo grupo",
+  ["Copy hotkey preset"] = "Copiar preset de atalhos",
+  ["Rename hotkey preset"] = "Renomear preset de atalhos",
+  ["Enter a name for the new preset:"] = "Digite um nome para o novo preset:",
+  ["Enter a name for the preset:"] = "Digite um nome para o preset:",
+  ["Do you really want to delete the hotkey preset %s?"] = "Tem certeza que deseja excluir o preset de atalhos %s?",
+  ["Current hotkey to change: %s"] = "Atalho atual para alterar: %s",
+  ["Current hotkey to change: none"] = "Atalho atual para alterar: nenhum",
+  ["Edit Primary Key for \\"] = "Editar Tecla Primária para \\",
+  ["Edit Secondary Key for \\"] = "Editar Tecla Secundária para \\",
+  ["Edit group %s"] = "Editar grupo %s",
+  ["Remove group %s"] = "Remover grupo %s",
+  ["Hide groups"] = "Ocultar grupos",
+  ["Show groups"] = "Mostrar grupos",
+  ["Maximum of User-Created Groups Reached"] = "Máximo de Grupos Criados pelo Usuário Atingido",
+  ["Current hotkeys:"] = "Atalhos atuais:",
+  
+  -- Cyclopedia and Bestiary
+  ["Cyclopedia"] = "Cyclopedia",
+  ["Bestiary Tracker"] = "Rastreador do Bestiário",
+  ["Bosstiary Tracker"] = "Rastreador do Bossiário",
+  ["Imbuement Tracker"] = "Rastreador de Imbuements",
+  ["Prey Tracker"] = "Rastreador de Presas",
+  ["Prey Dialog"] = "Diálogo de Presas",
+  ["Select monster"] = "Selecionar monstro",
+  ["Select monster to proceed."] = "Selecione um monstro para continuar.",
+  
+  -- Charms
+  ["Confirm Charm Removal"] = "Confirmar Remoção do Encanto",
+  ["Confirm Selected Charm"] = "Confirmar Encanto Selecionado",
+  ["Confirm Unlocking of Charm"] = "Confirmar Desbloqueio do Encanto",
+  ["Do you want to remove the Charm %s from this creature? This will cost you %s gold pieces."] = "Deseja remover o Encanto %s desta criatura? Isso custará %s moedas de ouro.",
+  ["Do you want to use the Charm %s for this creature?"] = "Deseja usar o Encanto %s para esta criatura?",
+  
+  -- Rarity
+  ["Common"] = "Comum",
+  ["Uncommon"] = "Incomum",
+  ["Rare"] = "Raro",
+  ["Semi-Rare"] = "Semi-Raro",
+  ["Very Rare"] = "Muito Raro",
+  
+  -- House system
+  ["Confirm House Action"] = "Confirmar Ação da Casa",
+  ["Do you really want to keep your house "] = "Tem certeza que deseja manter sua casa ",
+  ["Do you really want to move out of the house "] = "Tem certeza que deseja se mudar da casa ",
+  ["You have sucessfully accepted the transfer."] = "Você aceitou a transferência com sucesso.",
+  ["You have sucessfully iniated your move out."] = "Você iniciou sua mudança com sucesso.",
+  ["You have sucessfully initiated the transfer of your house."] = "Você iniciou a transferência da sua casa com sucesso.",
+  ["Accept House Transfer"] = "Aceitar Transferência de Casa",
+  ["Accept Transfer"] = "Aceitar Transferência",
+  ["Cancel House Transfer"] = "Cancelar Transferência de Casa",
+  ["Cancel Transfer"] = "Cancelar Transferência",
+  ["Configure House Transfer"] = "Configurar Transferência de Casa",
+  ["Move Date:"] = "Data de Mudança:",
+  ["Move Information"] = "Informações de Mudança",
+  ["Move Out"] = "Mudar-se",
+  ["New Owner:"] = "Novo Proprietário:",
+  ["Pending Transfer"] = "Transferência Pendente",
+  ["Reject House Transfer"] = "Rejeitar Transferência de Casa",
+  ["Reject Transfer"] = "Rejeitar Transferência",
+  ["Rent:"] = "Aluguel:",
+  ["Select Move Date"] = "Selecionar Data de Mudança",
+  ["Transfer"] = "Transferir",
+  ["Transfer Coins"] = "Transferir Moedas",
+  ["Transfer Date:"] = "Data de Transferência:",
+  ["Transfer Information"] = "Informações de Transferência",
+  ["Transfer Price:"] = "Preço de Transferência:",
+  
+  -- Imbuing
+  ["Confirm Imbuing Attempt"] = "Confirmar Tentativa de Imbuement",
+  ["Confirm Clearing"] = "Confirmar Limpeza",
+  ["Confirmation of Purchase"] = "Confirmação de Compra",
+  
+  -- UI elements
+  ["Chat Off"] = "Chat Desligado",
+  ["Chat On"] = "Chat Ligado",
+  ["Toggle WASD chat mode"] = "Alternar modo de chat WASD",
+  ["Toggle chase mode"] = "Alternar modo de perseguição",
+  ["Local Chat"] = "Chat Local",
+  ["Close Read-Only Tab"] = "Fechar Aba Somente Leitura",
+  ["Close read-only"] = "Fechar somente leitura",
+  ["Open read-only"] = "Abrir somente leitura",
+  ["Debug Info"] = "Info de Debug",
+  ["Top"] = "Topo",
+  ["Bottom"] = "Base",
+  ["Parallel"] = "Paralelo",
+  ["Compact"] = "Compacto",
+  ["Large"] = "Grande",
+  
+  -- Graphics and effects
+  ["Animated Message Scale: %sx"] = "Escala de Mensagem Animada: %sx",
+  ["Opacity"] = "Opacidade",
+  ["Opacity: %s"] = "Opacidade: %s",
+  ["Opacity Effect: %s%%"] = "Efeito de Opacidade: %s%%",
+  ["Distance"] = "Distância",
+  ["Distance: %s"] = "Distância: %s",
+  
+  -- VIP and status
+  ["Hide"] = "Ocultar",
+  ["Show"] = "Mostrar",
+  ["Show "] = "Mostrar ",
+  ["Hide Customisable Status Bars"] = "Ocultar Barras de Status Personalizáveis",
+  ["Show health"] = "Mostrar vida",
+  ["Show inventory"] = "Mostrar inventário",
+  ["Show miniMap"] = "Mostrar minimapa",
+  
+  -- Battle and attack
+  ["Attack next creature in battle list"] = "Atacar próxima criatura na lista de batalha",
+  ["Attack previous creature in battle list"] = "Atacar criatura anterior na lista de batalha",
+  ["Loot corpse"] = "Saquear corpo",
+  
+  -- Store and rewards
+  ["Store shop"] = "Loja",
+  ["Rewards"] = "Recompensas",
+  ["Open Boss Slots dialog"] = "Abrir diálogo de Slots de Boss",
+  ["Open Bosstiary dialog"] = "Abrir diálogo do Bossiário",
+  ["Open QuestLog Tracker"] = "Abrir Rastreador de Missões",
+  ["Open rewardWall"] = "Abrir Mural de Recompensas",
+  ["Highscores"] = "Recordes",
+  
+  -- Updater
+  ["Downloading:\n%s"] = "Baixando:\n%s",
+  ["Downloading (%i retry):\n%s"] = "Baixando (tentativa %i):\n%s",
+  ["Updater Error"] = "Erro do Atualizador",
+  ["Updating %i files"] = "Atualizando %i arquivos",
+  ["Updating client (may take few seconds)"] = "Atualizando cliente (pode levar alguns segundos)",
+  ["Timeout"] = "Tempo esgotado",
+  
+  -- Login errors
+  ["ERROR , try adding \n- ip/login.php \n- Enable HTTP login"] = "ERRO, tente adicionar \n- ip/login.php \n- Ativar login HTTP",
+  
+  -- Loot system
+  ["Invalid Loot Container"] = "Container de Loot Inválido",
+  ["Manage Loot Containers"] = "Gerenciar Containers de Loot",
+  ["Loot"] = "Saque",
+  ["Loot Value Source"] = "Fonte de Valor do Saque",
+  ["Manage Containers"] = "Gerenciar Containers",
+  ["NPC Buy Value"] = "Valor de Compra NPC",
+  ["Quick Loot Filter:"] = "Filtro de Saque Rápido:",
+  ["Stash Withdraw"] = "Retirar do Stash",
+  ["Supply Stash"] = "Stash de Suprimentos",
+  ["Unassigned Loot"] = "Saque Não Atribuído",
+  
+  -- Tasks
+  ["Tasks"] = "Tarefas",
+  ["Do you really want to abort this task?"] = "Tem certeza que deseja abortar esta tarefa?",
+  ["Summary"] = "Resumo",
+  
+  -- Account
+  ["Manage Account"] = "Gerenciar Conta",
+  ["Manage control buttons"] = "Gerenciar botões de controle",
+  ["Gratis Premium Account"] = "Conta Premium Gratuita",
+  ["Free"] = "Grátis",
+  
+  -- Time and experience
+  ["If you are premium player, you will gain 50%% more experience"] = "Se você é jogador premium, ganhará 50%% mais experiência",
+  ["infinite bonus"] = "bônus infinito",
+  
+  -- Coins
+  ["Transferable Tibia Coins: "] = "Tibia Coins Transferíveis: ",
+  ["Transferable Task points: "] = "Pontos de Tarefa Transferíveis: ",
+  ["Transferable Tibia Coins:"] = "Tibia Coins Transferíveis:",
+  
+  -- Items
+  ["Wrap"] = "Embrulhar",
+  ["Unwrap"] = "Desembrulhar",
+  
+  -- Status effects
+  ["(Frozen)"] = "(Congelado)",
+  [" (Suspended)"] = " (Suspenso)",
+  ["You are Agony"] = "Você está em Agonia",
+  ["You are Bleeding"] = "Você está Sangrando",
+  ["You are Feared"] = "Você está com Medo",
+  ["You are Rooted"] = "Você está Enraizado",
+  ["You are inspecting"] = "Você está inspecionando",
+  
+  -- Misc
+  ["You read the following"] = "Você lê o seguinte",
+  ["ok"] = "ok",
+  ["remove"] = "remover",
+  ["%s of experience per hour"] = "%s de experiência por hora",
+  ["%s: "] = "%s: ",
+  [", written by \n%s\n"] = ", escrito por \n%s\n",
+  [", written on \n%s.\n"] = ", escrito em \n%s.\n",
+  ["You have %s percent to go "] = "Faltam %s por cento ",
+  
+  -- Combat stats
+  ["Life Leech"] = "Roubo de Vida",
+  ["Life Leech:"] = "Roubo de Vida:",
+  ["Lifedrain"] = "Dreno de Vida",
+  ["Mana Leech"] = "Roubo de Mana",
+  ["Mana Leech:"] = "Roubo de Mana:",
+  ["Mana Leech Amount"] = "Quantidade de Roubo de Mana",
+  ["Mana Leech Chance"] = "Chance de Roubo de Mana",
+  ["Mana circle"] = "Círculo de mana",
+  ["Magic"] = "Magia",
+  ["Mastery"] = "Maestria",
+  ["Mitigation"] = "Mitigação",
+  ["Mitigation:"] = "Mitigação:",
+  
+  -- Days of week
+  ["Monday"] = "Segunda-feira",
+  ["Tuesday"] = "Terça-feira",
+  ["Wednesday"] = "Quarta-feira",
+  ["Thursday"] = "Quinta-feira",
+  ["Saturday"] = "Sábado",
+  ["Sunday"] = "Domingo",
+  
+  -- Elements
+  ["Death"] = "Morte",
+  ["Drown"] = "Afogamento",
+  ["Earth"] = "Terra",
+  ["Energy"] = "Energia",
+  ["Fire"] = "Fogo",
+  ["Holy"] = "Sagrado",
+  ["Ice"] = "Gelo",
+  ["Physical"] = "Físico",
+  
+  -- Equipment
+  ["Boots"] = "Botas",
+  ["Helmet"] = "Capacete",
+  ["Shield"] = "Escudo",
+  ["Legs"] = "Pernas",
+  ["Ring"] = "Anel",
+  ["Necklace"] = "Colar",
+  
+  -- Cyclopedia extended
+  ["Account Badges"] = "Distintivos da Conta",
+  ["Account Premium"] = "Conta Premium",
+  ["Achievements Points: "] = "Pontos de Conquistas: ",
+  ["Archfoe"] = "Arqui-inimigo",
+  ["Blessings:"] = "Bênçãos:",
+  ["Boss"] = "Boss",
+  ["Boss Points"] = "Pontos de Boss",
+  ["Boosted"] = "Aumentado",
+  ["Categories"] = "Categorias",
+  ["Category:"] = "Categoria:",
+  ["Cause of Death"] = "Causa da Morte",
+  ["Chance"] = "Chance",
+  ["Charm Selection:"] = "Seleção de Encanto:",
+  ["Character Name:"] = "Nome do Personagem:",
+  ["Creature"] = "Criatura",
+  ["Creature Name"] = "Nome da Criatura",
+  
+  -- Settings/Options
+  ["Active"] = "Ativo",
+  ["Apply"] = "Aplicar",
+  ["Async texture loading"] = "Carregamento assíncrono de texturas",
+  ["Auto-Switch Hotkey Preset"] = "Trocar Preset de Atalhos Automaticamente",
+  ["Available Buttons"] = "Botões Disponíveis",
+  ["Back"] = "Voltar",
+  ["Bar Style:"] = "Estilo da Barra:",
+  ["BattlEye:"] = "BattlEye:",
+  ["Clear Cache"] = "Limpar Cache",
+  ["Display"] = "Exibição",
+  ["Displayed Buttons"] = "Botões Exibidos",
+  ["Draw Effect On Top"] = "Desenhar Efeito no Topo",
+  
+  -- Prey system
+  ["Prey Creatures"] = "Criaturas de Presa",
+  ["Preys"] = "Presas",
+  
+  -- UI elements extended
+  ["Navigation"] = "Navegação",
+  ["Next"] = "Próximo",
+  ["Next Page"] = "Próxima Página",
+  ["Prev Page"] = "Página Anterior",
+  ["Previous"] = "Anterior",
+  ["No Group"] = "Sem Grupo",
+  ["No Kills"] = "Sem Kills",
+  ["None"] = "Nenhum",
+  ["Notify on login"] = "Notificar no login",
+  ["Obtain"] = "Obter",
+  ["Open Screenshots Folder"] = "Abrir Pasta de Screenshots",
+  ["Optimize FPS"] = "Otimizar FPS",
+  ["Page 1 / 1"] = "Página 1 / 1",
+  ["Points"] = "Pontos",
+  ["Progress"] = "Progresso",
+  ["Quest Tracker"] = "Rastreador de Missões",
+  ["Random Hint"] = "Dica Aleatória",
+  ["Rank"] = "Rank",
+  ["Reset"] = "Resetar",
+  ["Select Creature"] = "Selecionar Criatura",
+  ["Select Spell"] = "Selecionar Feitiço",
+  ["Stop"] = "Parar",
+  ["Store"] = "Loja",
+  ["Submit"] = "Enviar",
+  ["Success Rate:"] = "Taxa de Sucesso:",
+  ["Surface View"] = "Visão de Superfície",
+  ["Sword"] = "Espada",
+  ["Total Kills"] = "Total de Kills",
+  ["Total: "] = "Total: ",
+  ["Track"] = "Rastrear",
+  ["Track Kills"] = "Rastrear Kills",
+  ["Unlock"] = "Desbloquear",
+  ["Upcoming"] = "Próximos",
+  ["Updater"] = "Atualizador",
+  ["V-Sync"] = "V-Sync",
+  ["Vocation:"] = "Vocação:",
+  ["Wiki"] = "Wiki",
+  
+  -- Combat
+  ["Amplification"] = "Amplificação",
+  ["Bane"] = "Perdição",
+  ["Club"] = "Porrete",
+  ["Axe"] = "Machado",
+  ["Critical Hit:"] = "Acerto Crítico:",
+  ["Damage Reduction:"] = "Redução de Dano:",
+  ["Damage Reflection"] = "Reflexão de Dano",
+  ["Dodge"] = "Esquiva",
+  
+  -- Auction
+  ["Auction"] = "Leilão",
+  ["Auction Information"] = "Informações do Leilão",
+  ["Bid"] = "Licitar",
+  ["Average Market Price"] = "Preço Médio de Mercado",
+  ["Buy From"] = "Comprar de",
+  ["Buy History"] = "Histórico de Compras",
+  
+  -- Item details
+  ["Armor Value"] = "Valor de Armadura",
+  ["Armor Value:"] = "Valor de Armadura:",
+  ["Attack Value"] = "Valor de Ataque",
+  ["Attack Value:"] = "Valor de Ataque:",
+  ["Defence Value"] = "Valor de Defesa",
+  ["Defence Value:"] = "Valor de Defesa:",
+  ["Basic Item Details"] = "Detalhes Básicos do Item",
+  
+  -- Screenshots
+  ["Enable Auto Screenshots"] = "Ativar Screenshots Automáticos",
+  
+  -- Graphics settings
+  ["Limit Visible Dimension"] = "Limitar Dimensão Visível",
+  ["Map View"] = "Visão do Mapa",
+  ["Market Average Value"] = "Valor Médio de Mercado",
+  ["New Action"] = "Nova Ação",
+  ["Only Capture Game Window"] = "Capturar Apenas Janela do Jogo",
+  
+  -- Action bar
+  ["Action:"] = "Ação:",
+  ["Amount:"] = "Quantidade:",
+  
+  -- Balance
+  ["Balance:"] = "Saldo:",
+  ["Your Capacity:"] = "Sua Capacidade:",
+  ["Your Money:"] = "Seu Dinheiro:",
+  
+  -- Settings
+  ["players online"] = "jogadores online",
+  ["Be aware that your email address will be stored on your configuration file \"config.otml\" if you activate this option."] = "Esteja ciente de que seu endereço de e-mail será armazenado no arquivo de configuração \"config.otml\" se você ativar esta opção.",
+  ["Login automatically"] = "Entrar automaticamente",
+}
+for k,v in pairs(add) do
+  locale.translation[k] = locale.translation[k] or v
+end

@@ -567,3 +567,245 @@ locale = {
 }
 
 modules.client_locales.installLocale(locale)
+
+-- Additional translations merged at runtime
+local add = {
+  -- Death dialogs
+  ["Alas! Brave adventurer, you have met a sad fate.\nBut do not despair, for the gods will bring you back\ninto this world in exchange for a small sacrifice\n\nSimply click on Ok to resume your journeys!"] = "아아! 용감한 모험가여, 슬픈 운명을 맞이했습니다.\n하지만 절망하지 마세요. 신들이 작은 희생의 대가로\n이 세계로 당신을 되돌려 보낼 것입니다\n\n여정을 계속하려면 확인을 클릭하세요!",
+  ["Journey Onwards"] = "여정 계속하기",
+
+  -- Hotkey management extended
+  ["Add hotkey preset"] = "단축키 프리셋 추가",
+  ["Add new group"] = "새 그룹 추가",
+  ["Copy hotkey preset"] = "단축키 프리셋 복사",
+  ["Rename hotkey preset"] = "단축키 프리셋 이름 변경",
+  ["Enter a name for the new preset:"] = "새 프리셋 이름 입력:",
+  ["Enter a name for the preset:"] = "프리셋 이름 입력:",
+  ["Do you really want to delete the hotkey preset %s?"] = "단축키 프리셋 %s을(를) 정말 삭제하시겠습니까?",
+  ["Edit group %s"] = "그룹 %s 편집",
+  ["Remove group %s"] = "그룹 %s 제거",
+  ["Hide groups"] = "그룹 숨기기",
+  ["Show groups"] = "그룹 표시",
+  
+  -- Cyclopedia extended
+  ["Imbuement Tracker"] = "인뷰먼트 추적기",
+  ["Prey Tracker"] = "프레이 추적기",
+  ["Prey Dialog"] = "프레이 대화상자",
+  ["Select monster"] = "몬스터 선택",
+  ["Select monster to proceed."] = "진행하려면 몬스터를 선택하세요.",
+  ["Account Badges"] = "계정 배지",
+  ["Account Premium"] = "프리미엄 계정",
+  ["Boss Points"] = "보스 포인트",
+  ["Creature Name"] = "생물 이름",
+  ["Major Charms"] = "주요 매력",
+  ["Minor Charms"] = "부가 매력",
+  
+  -- Charms
+  ["Confirm Charm Removal"] = "매력 제거 확인",
+  ["Confirm Selected Charm"] = "선택한 매력 확인",
+  ["Confirm Unlocking of Charm"] = "매력 잠금 해제 확인",
+  
+  -- House system extended
+  ["Accept House Transfer"] = "집 이전 수락",
+  ["Accept Transfer"] = "이전 수락",
+  ["Cancel House Transfer"] = "집 이전 취소",
+  ["Cancel Transfer"] = "이전 취소",
+  ["Configure House Transfer"] = "집 이전 구성",
+  ["Confirm House Action"] = "집 작업 확인",
+  ["Move Out"] = "이사 가기",
+  ["New Owner:"] = "새 소유자:",
+  ["Pending Transfer"] = "대기 중인 이전",
+  ["No house selected"] = "선택된 집 없음",
+  ["Max. Beds:"] = "최대 침대:",
+  ["Place Your Bid"] = "입찰하기",
+  
+  -- Combat stats
+  ["Life Leech"] = "생명력 흡수",
+  ["Mana Leech"] = "마나 흡수",
+  ["Magic"] = "마법",
+  ["Mastery"] = "숙련",
+  ["Mitigation"] = "경감",
+  ["Physical"] = "물리",
+  ["Club"] = "곤봉",
+  ["Axe"] = "도끼",
+  ["Sword"] = "검",
+  ["Dodge"] = "회피",
+  
+  -- Elements
+  ["Death"] = "죽음",
+  ["Drown"] = "익사",
+  ["Earth"] = "대지",
+  ["Energy"] = "에너지",
+  ["Fire"] = "불",
+  ["Holy"] = "신성",
+  ["Ice"] = "얼음",
+  
+  -- Days of week
+  ["Monday"] = "월요일",
+  ["Tuesday"] = "화요일",
+  ["Wednesday"] = "수요일",
+  ["Thursday"] = "목요일",
+  ["Saturday"] = "토요일",
+  ["Sunday"] = "일요일",
+  
+  -- Auction
+  ["Auction"] = "경매",
+  ["Auction Information"] = "경매 정보",
+  ["Bid"] = "입찰",
+  ["Average Market Price"] = "평균 시장 가격",
+  
+  -- Item details
+  ["Armor Value"] = "방어력 값",
+  ["Attack Value"] = "공격력 값",
+  ["Defence Value"] = "방어 값",
+  
+  -- Equipment
+  ["Boots"] = "부츠",
+  ["Helmet"] = "헬멧",
+  ["Shield"] = "방패",
+  ["Legs"] = "다리",
+  ["Ring"] = "반지",
+  ["Necklace"] = "목걸이",
+  
+  -- Settings
+  ["Active"] = "활성",
+  ["Apply"] = "적용",
+  ["Back"] = "뒤로",
+  ["Clear Cache"] = "캐시 지우기",
+  ["Display"] = "표시",
+  ["Edit Hotkey"] = "단축키 편집",
+  ["Edit VIP"] = "VIP 편집",
+  ["Empty"] = "비어있음",
+  ["Enable Auto Screenshots"] = "자동 스크린샷 활성화",
+  ["Optimize FPS"] = "FPS 최적화",
+  
+  -- Loot system
+  ["Loot"] = "전리품",
+  ["Manage Containers"] = "컨테이너 관리",
+  ["Supply Stash"] = "보급품 보관함",
+  ["Invalid Loot Container"] = "잘못된 전리품 컨테이너",
+  
+  -- UI elements
+  ["Navigation"] = "탐색",
+  ["Next"] = "다음",
+  ["Next Page"] = "다음 페이지",
+  ["Prev Page"] = "이전 페이지",
+  ["Previous"] = "이전",
+  ["No Group"] = "그룹 없음",
+  ["No Kills"] = "처치 없음",
+  ["None"] = "없음",
+  ["Password:"] = "비밀번호:",
+  ["Points"] = "포인트",
+  ["Progress"] = "진행",
+  ["Quest Tracker"] = "퀘스트 추적기",
+  ["Rank"] = "순위",
+  ["Reset"] = "초기화",
+  ["Show All"] = "모두 표시",
+  ["Skill:"] = "스킬:",
+  ["Status"] = "상태",
+  ["Stop"] = "중지",
+  ["Submit"] = "제출",
+  ["Track"] = "추적",
+  ["Upcoming"] = "예정",
+  ["Updater"] = "업데이터",
+  ["Wiki"] = "위키",
+  ["World"] = "월드",
+  
+  -- Prey system
+  ["Prey Creatures"] = "프레이 생물",
+  ["Preys"] = "프레이",
+  
+  -- Tasks extended
+  ["Do you really want to abort this task?"] = "이 과제를 정말 중단하시겠습니까?",
+  ["Summary"] = "요약",
+  
+  -- Account
+  ["Manage Account"] = "계정 관리",
+  ["Free"] = "무료",
+  
+  -- Items
+  ["Wrap"] = "포장",
+  ["Unwrap"] = "포장 풀기",
+  
+  -- UI elements extended
+  ["Chat Off"] = "채팅 끄기",
+  ["Chat On"] = "채팅 켜기",
+  ["Local Chat"] = "로컬 채팅",
+  ["Debug Info"] = "디버그 정보",
+  ["Top"] = "상단",
+  ["Bottom"] = "하단",
+  ["Compact"] = "컴팩트",
+  ["Large"] = "큼",
+  
+  -- Misc
+  ["You read the following"] = "다음을 읽었습니다",
+  ["ok"] = "확인",
+  ["remove"] = "제거",
+  
+  -- Bosstiary System
+  ["Bosstiary"] = "보스티어리",
+  ["Boss Tracker"] = "보스 추적기",
+  ["Boss Kills"] = "보스 처치",
+  ["Archfoe"] = "대적",
+  ["Bane"] = "저주",
+  ["Nemesis"] = "네메시스",
+  ["Boss Points"] = "보스 포인트",
+  ["Unlock Slot"] = "슬롯 잠금 해제",
+  ["Equipped"] = "장착됨",
+  
+  -- Market System
+  ["Market"] = "시장",
+  ["Browse Offers"] = "제안 검색",
+  ["My Offers"] = "내 제안",
+  ["My History"] = "내 기록",
+  ["Buy Offer"] = "구매 제안",
+  ["Sell Offer"] = "판매 제안",
+  ["Create Offer"] = "제안 생성",
+  ["Cancel Offer"] = "제안 취소",
+  ["Amount"] = "수량",
+  ["Total Price"] = "총 가격",
+  ["Piece Price"] = "개당 가격",
+  ["Statistics"] = "통계",
+  ["Transactions"] = "거래",
+  ["Average Prices"] = "평균 가격",
+  ["Highest Prices"] = "최고 가격",
+  ["Lowest Prices"] = "최저 가격",
+  
+  -- Forge System
+  ["Forge"] = "대장간",
+  ["Dust Converter"] = "먼지 변환기",
+  ["Fusion"] = "융합",
+  ["Transfer"] = "전송",
+  ["Tier"] = "등급",
+  ["Success Chance"] = "성공 확률",
+  ["Dust"] = "먼지",
+  ["Slivers"] = "조각",
+  ["Cores"] = "코어",
+  ["Exalted Cores"] = "고급 코어",
+  
+  -- Wheel of Destiny
+  ["Wheel of Destiny"] = "운명의 바퀴",
+  ["Revelation Points"] = "계시 포인트",
+  ["Promotion Points"] = "승급 포인트",
+  ["Gift of Life"] = "생명의 선물",
+  ["Divine Empowerment"] = "신성한 강화",
+  ["Blessing of the Grove"] = "숲의 축복",
+  ["Combat Mastery"] = "전투 숙련",
+  ["Healing Link"] = "치유 연결",
+  
+  -- Prey System
+  ["Prey"] = "사냥감",
+  ["Prey Bonus"] = "사냥감 보너스",
+  ["Prey Slot"] = "사냥감 슬롯",
+  ["Select Creature"] = "크리처 선택",
+  ["Bonus Type"] = "보너스 유형",
+  ["Damage Boost"] = "피해 증가",
+  ["Defense Boost"] = "방어 증가",
+  ["XP Bonus"] = "경험치 보너스",
+  ["Loot Bonus"] = "전리품 보너스",
+  ["Prey Cards"] = "사냥감 카드",
+  ["Prey Wildcards"] = "사냥감 와일드카드",
+}
+for k,v in pairs(add) do
+  locale.translation[k] = locale.translation[k] or v
+end

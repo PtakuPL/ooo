@@ -116,6 +116,15 @@ if (MSVC)
   target_link_options(${PROJECT_NAME} PRIVATE /LTCG:OFF)
   # Prevent Windows.h from defining min/max macros that conflict with std::min/std::max
   target_compile_definitions(${PROJECT_NAME} PRIVATE NOMINMAX)
+  # Workaround for MSVC Internal Compiler Error (ICE) C1001 on complex template code
+  # The ICE occurs in cast.h which is included via stdext.h across all source files.
+  # Since it's a header-only template library, we can't target specific source files.
+  # Using /O1 globally is necessary as the ICE triggers during template instantiation
+  # across multiple TUs. /O1 still provides optimizations (for size) while being safer.
+  target_compile_options(${PROJECT_NAME} PRIVATE
+    $<$<CONFIG:Release>:/O1>  # Use /O1 (minimize size) instead of /O2 (maximize speed) for Release
+    $<$<CONFIG:RelWithDebInfo>:/O1>
+  )
 endif()
 
 if(THREADS_HAVE_PTHREAD_ARG)
@@ -485,13 +494,8 @@ else()
     find_package(GLEW REQUIRED)
     find_package(LuaJIT REQUIRED)
   else()
-    # For WASM builds, find Lua via CMake's standard FindLua module (not our custom one)
-    # Remove project's cmake/ from module path temporarily to use CMake's standard FindLua
-    set(_SAVED_CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH})
-    list(REMOVE_ITEM CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
+    # For WASM builds, use our updated FindLua.cmake which now supports Lua 5.4 for WASM
     find_package(Lua REQUIRED)
-    set(CMAKE_MODULE_PATH ${_SAVED_CMAKE_MODULE_PATH})
-    unset(_SAVED_CMAKE_MODULE_PATH)
     # Use LUA_LIBRARIES if available, otherwise fall back to LUA_LIBRARY
     if(LUA_LIBRARIES)
       set(LUA_LIBRARY ${LUA_LIBRARIES})

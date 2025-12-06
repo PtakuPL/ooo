@@ -712,7 +712,108 @@ locale = {
     ["Your request has been closed"] = "Ombi lako limefungwa",
     ["There is no way."] = "Hakuna njia.",
     ["You can enter new text."] = "Unaweza kuingiza maandishi mapya.",
-    ["Unable to logout."] = "Haikuweza kutoka."
+    ["Unable to logout."] = "Haikuweza kutoka.",
+    
+    -- Status Effects
+    ["You are bleeding"] = "Unachuja damu",
+    ["You are burning"] = "Unaungua",
+    ["You are cursed"] = "Umelaaniwa",
+    ["You are dazzled"] = "Umepofushwa",
+    ["You are dead"] = "Umekufa",
+    ["You are dead."] = "Umekufa.",
+    ["You are drowning"] = "Unazama",
+    ["You are drunk"] = "Umelewa",
+    ["You are electrified"] = "Umepigwa na umeme",
+    ["You are freezing"] = "Unaganda",
+    ["You are hasted"] = "Umeharakishwa",
+    ["You are hungry"] = "Una njaa",
+    ["You are paralysed"] = "Umepooza",
+    ["You are poisoned"] = "Umepewa sumu",
+    ["You are protected by a magic shield"] = "Umelindwa na ngao ya uchawi",
+    ["You are strengthened"] = "Umeimarishwa",
+    ["You are within a protection zone"] = "Uko ndani ya eneo la ulinzi",
+    
+    -- Combat
+    ["Damage"] = "Uharibifu",
+    ["Healing"] = "Uponyaji",
+    ["Critical Hit"] = "Pigo muhimu",
+    ["Critical Hits"] = "Mapigo muhimu",
+    ["Life Leech"] = "Kunyonya uhai",
+    ["Mana Leech"] = "Kunyonya mana",
+    
+    -- Tasks
+    ["Tasks"] = "Kazi",
+    ["Task"] = "Kazi",
+    ["Daily Tasks"] = "Kazi za kila siku",
+    ["Weekly Tasks"] = "Kazi za kila wiki",
+    ["Reward"] = "Tuzo",
+    ["Rewards"] = "Tuzo",
+    ["Claim Reward"] = "Dai tuzo",
+    ["Progress"] = "Maendeleo",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Bosstiary",
+    ["Boss Tracker"] = "Kifuatiliaji cha Bosi",
+    ["Boss Kills"] = "Mauaji ya Bosi",
+    ["Archfoe"] = "Adui Mkuu",
+    ["Bane"] = "Laana",
+    ["Nemesis"] = "Nemesis",
+    ["Boss Points"] = "Pointi za Bosi",
+    ["Unlock Slot"] = "Fungua Nafasi",
+    ["Equipped"] = "Imevaliwa",
+    
+    -- Market System
+    ["Market"] = "Soko",
+    ["Browse Offers"] = "Vinjari Matoleo",
+    ["My Offers"] = "Matoleo Yangu",
+    ["My History"] = "Historia Yangu",
+    ["Buy Offer"] = "Toleo la Ununuzi",
+    ["Sell Offer"] = "Toleo la Mauzo",
+    ["Create Offer"] = "Tengeneza Toleo",
+    ["Cancel Offer"] = "Futa Toleo",
+    ["Amount"] = "Kiasi",
+    ["Total Price"] = "Bei Jumla",
+    ["Piece Price"] = "Bei ya Kipande",
+    ["Statistics"] = "Takwimu",
+    ["Transactions"] = "Miamala",
+    ["Average Prices"] = "Bei za Wastani",
+    ["Highest Prices"] = "Bei za Juu Zaidi",
+    ["Lowest Prices"] = "Bei za Chini Zaidi",
+    
+    -- Forge System
+    ["Forge"] = "Uhunzi",
+    ["Dust Converter"] = "Kibadilishaji cha Vumbi",
+    ["Fusion"] = "Muungano",
+    ["Transfer"] = "Uhamishaji",
+    ["Tier"] = "Kiwango",
+    ["Success Chance"] = "Nafasi ya Mafanikio",
+    ["Dust"] = "Vumbi",
+    ["Slivers"] = "Vipande",
+    ["Cores"] = "Kiini",
+    ["Exalted Cores"] = "Kiini Kilichoinuliwa",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Gurudumu la Hatma",
+    ["Revelation Points"] = "Pointi za Ufunuo",
+    ["Promotion Points"] = "Pointi za Kukuza",
+    ["Gift of Life"] = "Zawadi ya Uhai",
+    ["Divine Empowerment"] = "Uwezeshaji wa Kimungu",
+    ["Blessing of the Grove"] = "Baraka ya Msitu",
+    ["Combat Mastery"] = "Ustadi wa Mapambano",
+    ["Healing Link"] = "Kiungo cha Uponyaji",
+    
+    -- Prey System
+    ["Prey"] = "Mawindo",
+    ["Prey Bonus"] = "Bonasi ya Mawindo",
+    ["Prey Slot"] = "Nafasi ya Mawindo",
+    ["Select Creature"] = "Chagua Kiumbe",
+    ["Bonus Type"] = "Aina ya Bonasi",
+    ["Damage Boost"] = "Kuongeza Uharibifu",
+    ["Defense Boost"] = "Kuongeza Ulinzi",
+    ["XP Bonus"] = "Bonasi ya XP",
+    ["Loot Bonus"] = "Bonasi ya Ngawira",
+    ["Prey Cards"] = "Kadi za Mawindo",
+    ["Prey Wildcards"] = "Kadi za Joker za Mawindo"
   }
 }
 

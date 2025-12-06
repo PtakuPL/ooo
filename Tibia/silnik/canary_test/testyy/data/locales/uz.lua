@@ -749,7 +749,71 @@ locale = {
     ["Reward"] = "Mukofot",
     ["Rewards"] = "Mukofotlar",
     ["Claim Reward"] = "Mukofotni olish",
-    ["Progress"] = "Taraqqiyot"
+    ["Progress"] = "Taraqqiyot",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Bosstiary",
+    ["Boss Tracker"] = "Boss kuzatuvchisi",
+    ["Boss Kills"] = "Boss o'ldirishlari",
+    ["Archfoe"] = "Bosh dushman",
+    ["Bane"] = "La'nat",
+    ["Nemesis"] = "Nemesis",
+    ["Boss Points"] = "Boss ballari",
+    ["Unlock Slot"] = "Slotni ochish",
+    ["Equipped"] = "Jihozlangan",
+    
+    -- Market System
+    ["Market"] = "Bozor",
+    ["Browse Offers"] = "Takliflarni ko'rish",
+    ["My Offers"] = "Mening takliflarim",
+    ["My History"] = "Mening tarixim",
+    ["Buy Offer"] = "Sotib olish taklifi",
+    ["Sell Offer"] = "Sotish taklifi",
+    ["Create Offer"] = "Taklif yaratish",
+    ["Cancel Offer"] = "Taklifni bekor qilish",
+    ["Amount"] = "Miqdor",
+    ["Total Price"] = "Umumiy narx",
+    ["Piece Price"] = "Birlik narxi",
+    ["Statistics"] = "Statistika",
+    ["Transactions"] = "Tranzaksiyalar",
+    ["Average Prices"] = "O'rtacha narxlar",
+    ["Highest Prices"] = "Eng yuqori narxlar",
+    ["Lowest Prices"] = "Eng past narxlar",
+    
+    -- Forge System
+    ["Forge"] = "Temirchilik",
+    ["Dust Converter"] = "Chang o'zgartiruvchi",
+    ["Fusion"] = "Birlashtirish",
+    ["Transfer"] = "O'tkazish",
+    ["Tier"] = "Daraja",
+    ["Success Chance"] = "Muvaffaqiyat ehtimoli",
+    ["Dust"] = "Chang",
+    ["Slivers"] = "Bo'laklar",
+    ["Cores"] = "Yadro",
+    ["Exalted Cores"] = "Yuksaltirilgan yadro",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Taqdir g'ildiragi",
+    ["Revelation Points"] = "Kashfiyot ballari",
+    ["Promotion Points"] = "Ko'tarilish ballari",
+    ["Gift of Life"] = "Hayot sovg'asi",
+    ["Divine Empowerment"] = "Ilohiy kuchayish",
+    ["Blessing of the Grove"] = "O'rmon barakasi",
+    ["Combat Mastery"] = "Jang mahorati",
+    ["Healing Link"] = "Davolash aloqasi",
+    
+    -- Prey System
+    ["Prey"] = "O'lja",
+    ["Prey Bonus"] = "O'lja bonusi",
+    ["Prey Slot"] = "O'lja sloti",
+    ["Select Creature"] = "Jonzotni tanlash",
+    ["Bonus Type"] = "Bonus turi",
+    ["Damage Boost"] = "Zarar oshirish",
+    ["Defense Boost"] = "Himoya oshirish",
+    ["XP Bonus"] = "XP bonusi",
+    ["Loot Bonus"] = "O'lja bonusi",
+    ["Prey Cards"] = "O'lja kartalari",
+    ["Prey Wildcards"] = "O'lja joker kartalari"
   }
 }
 

@@ -749,7 +749,71 @@ locale = {
     ["Reward"] = "Tuzo",
     ["Rewards"] = "Tuzo",
     ["Claim Reward"] = "Dai tuzo",
-    ["Progress"] = "Maendeleo"
+    ["Progress"] = "Maendeleo",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Bosstiary",
+    ["Boss Tracker"] = "Kifuatiliaji cha Bosi",
+    ["Boss Kills"] = "Mauaji ya Bosi",
+    ["Archfoe"] = "Adui Mkuu",
+    ["Bane"] = "Laana",
+    ["Nemesis"] = "Nemesis",
+    ["Boss Points"] = "Pointi za Bosi",
+    ["Unlock Slot"] = "Fungua Nafasi",
+    ["Equipped"] = "Imevaliwa",
+    
+    -- Market System
+    ["Market"] = "Soko",
+    ["Browse Offers"] = "Vinjari Matoleo",
+    ["My Offers"] = "Matoleo Yangu",
+    ["My History"] = "Historia Yangu",
+    ["Buy Offer"] = "Toleo la Ununuzi",
+    ["Sell Offer"] = "Toleo la Mauzo",
+    ["Create Offer"] = "Tengeneza Toleo",
+    ["Cancel Offer"] = "Futa Toleo",
+    ["Amount"] = "Kiasi",
+    ["Total Price"] = "Bei Jumla",
+    ["Piece Price"] = "Bei ya Kipande",
+    ["Statistics"] = "Takwimu",
+    ["Transactions"] = "Miamala",
+    ["Average Prices"] = "Bei za Wastani",
+    ["Highest Prices"] = "Bei za Juu Zaidi",
+    ["Lowest Prices"] = "Bei za Chini Zaidi",
+    
+    -- Forge System
+    ["Forge"] = "Uhunzi",
+    ["Dust Converter"] = "Kibadilishaji cha Vumbi",
+    ["Fusion"] = "Muungano",
+    ["Transfer"] = "Uhamishaji",
+    ["Tier"] = "Kiwango",
+    ["Success Chance"] = "Nafasi ya Mafanikio",
+    ["Dust"] = "Vumbi",
+    ["Slivers"] = "Vipande",
+    ["Cores"] = "Kiini",
+    ["Exalted Cores"] = "Kiini Kilichoinuliwa",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Gurudumu la Hatma",
+    ["Revelation Points"] = "Pointi za Ufunuo",
+    ["Promotion Points"] = "Pointi za Kukuza",
+    ["Gift of Life"] = "Zawadi ya Uhai",
+    ["Divine Empowerment"] = "Uwezeshaji wa Kimungu",
+    ["Blessing of the Grove"] = "Baraka ya Msitu",
+    ["Combat Mastery"] = "Ustadi wa Mapambano",
+    ["Healing Link"] = "Kiungo cha Uponyaji",
+    
+    -- Prey System
+    ["Prey"] = "Mawindo",
+    ["Prey Bonus"] = "Bonasi ya Mawindo",
+    ["Prey Slot"] = "Nafasi ya Mawindo",
+    ["Select Creature"] = "Chagua Kiumbe",
+    ["Bonus Type"] = "Aina ya Bonasi",
+    ["Damage Boost"] = "Kuongeza Uharibifu",
+    ["Defense Boost"] = "Kuongeza Ulinzi",
+    ["XP Bonus"] = "Bonasi ya XP",
+    ["Loot Bonus"] = "Bonasi ya Ngawira",
+    ["Prey Cards"] = "Kadi za Mawindo",
+    ["Prey Wildcards"] = "Kadi za Joker za Mawindo"
   }
 }
 

@@ -16,7 +16,7 @@ function BlessingController:onGameStart()
         onUpdateBlessDialog = onUpdateBlessDialog
     })
     BlessingController.ui:hide()
-    BlessingController.ui.minipanel1:setText("Record of Blessings") -- Temp fix html/css system
+    BlessingController.ui.minipanel1:setText(tr("Record of Blessings")) -- Temp fix html/css system
 end
 
 function BlessingController:onGameEnd()
@@ -43,7 +43,7 @@ function setHistory()
     ui.promotionStatus2:hide()
     ui.promotionStatus:hide()
     ui.blessingHistory:show()
-    ui.historyButton:setText("Back")
+    ui.historyButton:setText(tr("Back"))
 end
 
 function setBlessing()
@@ -52,7 +52,7 @@ function setBlessing()
     ui.promotionStatus2:show()
     ui.promotionStatus:show()
     ui.blessingHistory:hide()
-    ui.historyButton:setText("History")
+    ui.historyButton:setText(tr("History"))
 end
 
 function toggle()
@@ -124,8 +124,8 @@ function onUpdateBlessDialog(data)
     BlessingController.ui.blessingHistory:getChildByIndex(1):destroyChildren()
     local row2 = g_ui.createWidget("historyData", BlessingController.ui.blessingHistory:getChildByIndex(1))
     row2:setBackgroundColor("#363636")
-    row2.rank:setText("date")
-    row2.name:setText("Event")
+    row2.rank:setText(tr("Date"))
+    row2.name:setText(tr("Event"))
     row2.rank:setColor("#c0c0c0")
     row2.name:setColor("#c0c0c0")
     row2:setBorderColor("#00000077")

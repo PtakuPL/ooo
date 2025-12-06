@@ -587,7 +587,7 @@ local function updateBalance(balance)
     end
     information.balance = balance
 
-    balanceLabel:setText('Balance: ' .. balance .. ' gold')
+    balanceLabel:setText(tr('Balance:') .. ' ' .. balance .. ' ' .. tr('gold'))
     balanceLabel:resizeToText()
 end
 
@@ -598,7 +598,7 @@ local function updateFee(price, amount)
     elseif fee > 1000 then
         fee = 1000
     end
-    feeLabel:setText('Fee: ' .. fee)
+    feeLabel:setText(tr('Fee:') .. ' ' .. fee)
     feeLabel:resizeToText()
 end
 
@@ -1164,12 +1164,12 @@ function Market.clearSelectedItem()
     if Market.isItemSelected() then
         Market.resetCreateOffer(true)
         offerTypeList:clearOptions()
-        offerTypeList:setText('Please Select')
+        offerTypeList:setText(tr('Please Select'))
         offerTypeList:setEnabled(false)
 
         clearOffers()
         radioItemSet:selectWidget(nil)
-        nameLabel:setText('No item selected.')
+        nameLabel:setText(tr('No item selected.'))
         selectedItem:setItem(nil)
         selectedItem.item = nil
         selectedItem.ref:setChecked(false)

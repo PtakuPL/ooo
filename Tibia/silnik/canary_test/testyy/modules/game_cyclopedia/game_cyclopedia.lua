@@ -154,7 +154,7 @@ function controllerCyclopedia:onGameStart()
 
         trackerButtonBosstiary:setOn(false)
         trackerMiniWindowBosstiary = g_ui.createWidget('BestiaryTracker', modules.game_interface.getRightPanel())
-        trackerMiniWindowBosstiary:setText("Bosstiary Tracker")
+        trackerMiniWindowBosstiary:setText(tr("Bosstiary Tracker"))
 
         trackerMiniWindowBosstiary.menuButton.onClick = function(widget, mousePos, mouseButton)
             local menu = g_ui.createWidget('bestiaryTrackerMenu')

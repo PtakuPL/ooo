@@ -548,7 +548,7 @@ end
 
 local function setupCreatureList(widget, UI_BASE)
     if (widget.data.unlocked and not widget.data.asignedStatus) or isModernUI then
-        UI_BASE.UnlockButton:setText("Select")
+        UI_BASE.UnlockButton:setText(tr("Select"))
 
         local color = "#484848"
         for index, raceId in ipairs(Cyclopedia.Charms.Monsters) do

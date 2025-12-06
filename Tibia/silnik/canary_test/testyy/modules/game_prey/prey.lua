@@ -298,7 +298,7 @@ function setTimeUntilFreeReroll(slot, timeUntilFreeReroll) -- minutes
         if timeUntilFreeReroll > 0 then
             price:setText(comma_value(rerollPrice))
         else
-            price:setText('Free')
+            price:setText(tr('Free'))
         end
     end
 end
@@ -316,7 +316,7 @@ function onPreyLocked(slot, unlockState, timeUntilFreeReroll, wildcards)
     if not prey then
         return
     end
-    prey.title:setText('Locked')
+    prey.title:setText(tr('Locked'))
     prey.inactive:hide()
     prey.active:hide()
     prey.locked:show()
@@ -328,11 +328,11 @@ function onPreyInactive(slot, timeUntilFreeReroll, wildcards)
     if tracker then
         tracker.creature:hide()
         tracker.noCreature:show()
-        tracker.creatureName:setText('Inactive')
+        tracker.creatureName:setText(tr('Inactive'))
         tracker.time:setPercent(0)
         tracker.preyType:setImageSource('/images/game/prey/prey_no_bonus')
         for i, element in pairs({tracker.creatureName, tracker.creature, tracker.preyType, tracker.time}) do
-            element:setTooltip('Inactive Prey. \n\nClick in this window to open the prey dialog.')
+            element:setTooltip(tr('Inactive Prey. \n\nClick in this window to open the prey dialog.'))
             element.onClick = function()
                 show()
             end
@@ -508,11 +508,11 @@ function onPreySelection(slot, names, outfits, timeUntilFreeReroll, wildcards)
     if tracker then
         tracker.creature:hide()
         tracker.noCreature:show()
-        tracker.creatureName:setText('Inactive')
+        tracker.creatureName:setText(tr('Inactive'))
         tracker.time:setPercent(0)
         tracker.preyType:setImageSource('/images/game/prey/prey_no_bonus')
         for i, element in pairs({tracker.creatureName, tracker.creature, tracker.preyType, tracker.time}) do
-            element:setTooltip('Inactive Prey. \n\nClick in this window to open the prey dialog.')
+            element:setTooltip(tr('Inactive Prey. \n\nClick in this window to open the prey dialog.'))
             element.onClick = function()
                 show()
             end
@@ -557,11 +557,11 @@ function onPreySelectionChangeMonster(slot, names, outfits, bonusType, bonusValu
     if tracker then
         tracker.creature:hide()
         tracker.noCreature:show()
-        tracker.creatureName:setText('Inactive')
+        tracker.creatureName:setText(tr('Inactive'))
         tracker.time:setPercent(0)
         tracker.preyType:setImageSource('/images/game/prey/prey_no_bonus')
         for i, element in pairs({tracker.creatureName, tracker.creature, tracker.preyType, tracker.time}) do
-            element:setTooltip('Inactive Prey. \n\nClick in this window to open the prey dialog.')
+            element:setTooltip(tr('Inactive Prey. \n\nClick in this window to open the prey dialog.'))
             element.onClick = function()
                 show()
             end

@@ -689,6 +689,11 @@ locale = {
     ["Collect Reward"] = "পুরস্কার সংগ্রহ করুন",
     ["Claim"] = "দাবি করুন",
     ["Bonus"] = "বোনাস",
+    
+    -- Bosstiary
+    ["Bosstiary"] = "বস বই",
+    ["Boss Tracker"] = "বস ট্র্যাকার",
+    ["Quick Loot"] = "দ্রুত লুট",
   }
 }
 

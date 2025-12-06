@@ -688,6 +688,11 @@ locale = {
     ["Lock Prey"] = "Kunci Mangsa",
     ["Damage Bonus"] = "Bonus Kerosakan",
     ["Defense Bonus"] = "Bonus Pertahanan",
+    
+    -- Bosstiary
+    ["Bosstiary"] = "Buku Bos",
+    ["Boss Tracker"] = "Penjejak Bos",
+    ["Quick Loot"] = "Rampasan Cepat",
   }
 }
 

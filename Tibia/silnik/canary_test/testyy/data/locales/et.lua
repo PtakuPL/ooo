@@ -688,6 +688,11 @@ locale = {
     ["Transfer"] = "Ülekanne",
     ["Tier"] = "Tase",
     ["Success Rate"] = "Edu Määr",
+    
+    -- Bosstiary
+    ["Bosstiary"] = "Bosside Raamat",
+    ["Boss Tracker"] = "Bossi Jälgija",
+    ["Quick Loot"] = "Kiire Röövimine",
   }
 }
 

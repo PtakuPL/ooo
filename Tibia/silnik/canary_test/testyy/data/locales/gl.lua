@@ -688,6 +688,11 @@ locale = {
     ["Transfer"] = "Transferencia",
     ["Tier"] = "Nivel",
     ["Success Rate"] = "Taxa de Éxito",
+    
+    -- Bosstiary
+    ["Bosstiary"] = "Libro de Xefes",
+    ["Boss Tracker"] = "Rastrexador de Xefe",
+    ["Quick Loot"] = "Saqueo Rápido",
   }
 }
 

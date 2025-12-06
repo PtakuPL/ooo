@@ -693,6 +693,11 @@ local add = {
   ["Transfer"] = "Overførsel",
   ["Tier"] = "Niveau",
   ["Success Rate"] = "Succesrate",
+  
+  -- Bosstiary
+  ["Bosstiary"] = "Boss Bog",
+  ["Boss Tracker"] = "Boss Sporer",
+  ["Quick Loot"] = "Hurtig Plyndring",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

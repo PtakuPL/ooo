@@ -690,6 +690,11 @@ local add = {
   ["Prey Bonus"] = "Bonus Kořisti",
   ["Reroll"] = "Přehodit",
   ["Lock Prey"] = "Zamknout Kořist",
+  
+  -- Bosstiary
+  ["Bosstiary"] = "Kniha Bossů",
+  ["Boss Tracker"] = "Sledovač Bossů",
+  ["Quick Loot"] = "Rychlé Rabování",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

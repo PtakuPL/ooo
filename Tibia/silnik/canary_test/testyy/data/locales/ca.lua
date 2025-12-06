@@ -688,6 +688,11 @@ locale = {
     ["Transfer"] = "Transferència",
     ["Tier"] = "Nivell",
     ["Success Rate"] = "Taxa d'Èxit",
+    
+    -- Bosstiary
+    ["Bosstiary"] = "Llibre de Bossos",
+    ["Boss Tracker"] = "Rastrejador de Boss",
+    ["Quick Loot"] = "Saqueig Ràpid",
   }
 }
 

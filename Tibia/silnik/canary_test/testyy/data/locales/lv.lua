@@ -689,6 +689,11 @@ locale = {
     ["Transfer"] = "Pārsūtīšana",
     ["Tier"] = "Līmenis",
     ["Success Rate"] = "Veiksmes Likme",
+    
+    -- Bosstiary
+    ["Bosstiary"] = "Bosu Grāmata",
+    ["Boss Tracker"] = "Bosu Izsekotājs",
+    ["Quick Loot"] = "Ātrā Laupīšana",
   }
 }
 

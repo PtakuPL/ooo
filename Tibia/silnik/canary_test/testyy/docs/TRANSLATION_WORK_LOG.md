@@ -27,8 +27,14 @@ Ostatnia zmiana: af.lua rozszerzony do 700+
 ### Dodatkowe rozszerzenie Tier 4 → Tier 3:
 - [x] hu.lua (Węgierski): 512 → 730+ - GOTOWE
 - [x] th.lua (Tajski): 512 → 730+ - GOTOWE
-- [ ] lt.lua (Litewski): 545 → 750+
-- [ ] sr.lua (Serbski): 545 → 750+
+- [x] lt.lua (Litewski): 545 → 760+ - GOTOWE
+- [x] sr.lua (Serbski): 545 → 760+ - GOTOWE
+
+### Następne do rozszerzenia (Tier 4):
+- [ ] sl.lua (Słoweński): 575 → 780+
+- [ ] bg.lua (Bułgarski): 592 → 800+
+- [ ] hr.lua (Chorwacki): 592 → 800+
+- [ ] sk.lua (Słowacki): 592 → 800+
 
 ## Finalne statystyki
 

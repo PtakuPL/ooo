@@ -33,8 +33,10 @@ Ostatnia zmiana: af.lua rozszerzony do 700+
 ### Następne do rozszerzenia (Tier 4):
 - [x] sl.lua (Słoweński): 575 → 790+ - GOTOWE
 - [x] bg.lua (Bułgarski): 592 → 810+ - GOTOWE
-- [ ] hr.lua (Chorwacki): 592 → 800+
-- [ ] sk.lua (Słowacki): 592 → 800+
+- [x] hr.lua (Chorwacki): 592 → 810+ - GOTOWE
+- [x] sk.lua (Słowacki): 592 → 810+ - GOTOWE
+
+### 🎉 WSZYSTKIE TIER 4 JĘZYKI ROZSZERZONE DO TIER 2/3!
 
 ## Finalne statystyki
 

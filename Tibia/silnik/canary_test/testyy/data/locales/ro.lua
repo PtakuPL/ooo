@@ -694,6 +694,70 @@ locale = {
     ["Collect Reward"] = "Colectează Recompensa",
     ["Claim"] = "Revendică",
     ["Bonus"] = "Bonus",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Bosstiary",
+    ["Boss Tracker"] = "Urmăritor de Șefi",
+    ["Boss Kills"] = "Ucideri de Șefi",
+    ["Archfoe"] = "Dușman Principal",
+    ["Bane"] = "Blestem",
+    ["Nemesis"] = "Nemesis",
+    ["Boss Points"] = "Puncte de Șef",
+    ["Unlock Slot"] = "Deblocați Slot",
+    ["Equipped"] = "Echipat",
+    
+    -- Market System
+    ["Market"] = "Piață",
+    ["Browse Offers"] = "Răsfoiți Ofertele",
+    ["My Offers"] = "Ofertele Mele",
+    ["My History"] = "Istoricul Meu",
+    ["Buy Offer"] = "Ofertă de Cumpărare",
+    ["Sell Offer"] = "Ofertă de Vânzare",
+    ["Create Offer"] = "Creați Ofertă",
+    ["Cancel Offer"] = "Anulați Oferta",
+    ["Amount"] = "Cantitate",
+    ["Total Price"] = "Preț Total",
+    ["Piece Price"] = "Preț per Bucată",
+    ["Statistics"] = "Statistici",
+    ["Transactions"] = "Tranzacții",
+    ["Average Prices"] = "Prețuri Medii",
+    ["Highest Prices"] = "Prețuri Maxime",
+    ["Lowest Prices"] = "Prețuri Minime",
+    
+    -- Forge System
+    ["Forge"] = "Forjă",
+    ["Dust Converter"] = "Convertor de Praf",
+    ["Fusion"] = "Fuziune",
+    ["Transfer"] = "Transfer",
+    ["Tier"] = "Nivel",
+    ["Success Chance"] = "Șansă de Succes",
+    ["Dust"] = "Praf",
+    ["Slivers"] = "Așchii",
+    ["Cores"] = "Nuclee",
+    ["Exalted Cores"] = "Nuclee Exaltate",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Roata Destinului",
+    ["Revelation Points"] = "Puncte de Revelație",
+    ["Promotion Points"] = "Puncte de Promovare",
+    ["Gift of Life"] = "Darul Vieții",
+    ["Divine Empowerment"] = "Împuternicire Divină",
+    ["Blessing of the Grove"] = "Binecuvântarea Crângului",
+    ["Combat Mastery"] = "Măiestrie în Luptă",
+    ["Healing Link"] = "Legătură de Vindecare",
+    
+    -- Prey System
+    ["Prey"] = "Pradă",
+    ["Prey Bonus"] = "Bonus de Pradă",
+    ["Prey Slot"] = "Slot de Pradă",
+    ["Select Creature"] = "Selectați Creatura",
+    ["Bonus Type"] = "Tip de Bonus",
+    ["Damage Boost"] = "Creștere Daună",
+    ["Defense Boost"] = "Creștere Apărare",
+    ["XP Bonus"] = "Bonus XP",
+    ["Loot Bonus"] = "Bonus Pradă",
+    ["Prey Cards"] = "Cărți de Pradă",
+    ["Prey Wildcards"] = "Jokeri de Pradă",
   }
 }
 

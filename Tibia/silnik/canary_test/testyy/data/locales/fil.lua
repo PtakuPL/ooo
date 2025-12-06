@@ -694,6 +694,70 @@ locale = {
     -- Quick Loot
     ["Quick Loot"] = "Mabilis na Loot",
     ["Loot All"] = "Kunin Lahat",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Bosstiary",
+    ["Boss Tracker"] = "Tagasubaybay ng Boss",
+    ["Boss Kills"] = "Mga Pinatay na Boss",
+    ["Archfoe"] = "Pangunahing Kaaway",
+    ["Bane"] = "Sumpa",
+    ["Nemesis"] = "Nemesis",
+    ["Boss Points"] = "Puntos ng Boss",
+    ["Unlock Slot"] = "I-unlock ang Slot",
+    ["Equipped"] = "Nakabihis",
+    
+    -- Market System
+    ["Market"] = "Merkado",
+    ["Browse Offers"] = "Tingnan ang mga Alok",
+    ["My Offers"] = "Aking mga Alok",
+    ["My History"] = "Aking Kasaysayan",
+    ["Buy Offer"] = "Alok ng Pagbili",
+    ["Sell Offer"] = "Alok ng Pagbenta",
+    ["Create Offer"] = "Gumawa ng Alok",
+    ["Cancel Offer"] = "Kanselahin ang Alok",
+    ["Amount"] = "Halaga",
+    ["Total Price"] = "Kabuuang Presyo",
+    ["Piece Price"] = "Presyo bawat Piraso",
+    ["Statistics"] = "Estadistika",
+    ["Transactions"] = "Mga Transaksyon",
+    ["Average Prices"] = "Karaniwang Presyo",
+    ["Highest Prices"] = "Pinakamataas na Presyo",
+    ["Lowest Prices"] = "Pinakamababang Presyo",
+    
+    -- Forge System
+    ["Forge"] = "Panday",
+    ["Dust Converter"] = "Tagapagpalit ng Alikabok",
+    ["Fusion"] = "Pagsasama",
+    ["Transfer"] = "Paglipat",
+    ["Tier"] = "Antas",
+    ["Success Chance"] = "Tsansa ng Tagumpay",
+    ["Dust"] = "Alikabok",
+    ["Slivers"] = "Mga Piraso",
+    ["Cores"] = "Mga Core",
+    ["Exalted Cores"] = "Mga Marangal na Core",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Gulong ng Kapalaran",
+    ["Revelation Points"] = "Puntos ng Pahayag",
+    ["Promotion Points"] = "Puntos ng Promosyon",
+    ["Gift of Life"] = "Regalo ng Buhay",
+    ["Divine Empowerment"] = "Banal na Pagpapalakas",
+    ["Blessing of the Grove"] = "Pagpapala ng Kagubatan",
+    ["Combat Mastery"] = "Kahusayan sa Labanan",
+    ["Healing Link"] = "Koneksyon ng Pagpapagaling",
+    
+    -- Prey System
+    ["Prey"] = "Biktima",
+    ["Prey Bonus"] = "Bonus ng Biktima",
+    ["Prey Slot"] = "Slot ng Biktima",
+    ["Select Creature"] = "Piliin ang Nilalang",
+    ["Bonus Type"] = "Uri ng Bonus",
+    ["Damage Boost"] = "Pagtaas ng Pinsala",
+    ["Defense Boost"] = "Pagtaas ng Depensa",
+    ["XP Bonus"] = "Bonus ng XP",
+    ["Loot Bonus"] = "Bonus ng Loot",
+    ["Prey Cards"] = "Mga Card ng Biktima",
+    ["Prey Wildcards"] = "Mga Wildcard ng Biktima",
   }
 }
 

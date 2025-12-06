@@ -694,6 +694,70 @@ locale = {
     ["Boss Tracker"] = "Penjejak Bos",
     ["Quick Loot"] = "Rampasan Cepat",
     ["Loot All"] = "Rampas Semua",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Bosstiary",
+    ["Boss Tracker"] = "Penjejak Bos",
+    ["Boss Kills"] = "Pembunuhan Bos",
+    ["Archfoe"] = "Musuh Utama",
+    ["Bane"] = "Kutukan",
+    ["Nemesis"] = "Nemesis",
+    ["Boss Points"] = "Mata Bos",
+    ["Unlock Slot"] = "Buka Kunci Slot",
+    ["Equipped"] = "Dilengkapi",
+    
+    -- Market System
+    ["Market"] = "Pasaran",
+    ["Browse Offers"] = "Semak Tawaran",
+    ["My Offers"] = "Tawaran Saya",
+    ["My History"] = "Sejarah Saya",
+    ["Buy Offer"] = "Tawaran Beli",
+    ["Sell Offer"] = "Tawaran Jual",
+    ["Create Offer"] = "Cipta Tawaran",
+    ["Cancel Offer"] = "Batalkan Tawaran",
+    ["Amount"] = "Jumlah",
+    ["Total Price"] = "Jumlah Harga",
+    ["Piece Price"] = "Harga Per Unit",
+    ["Statistics"] = "Statistik",
+    ["Transactions"] = "Transaksi",
+    ["Average Prices"] = "Harga Purata",
+    ["Highest Prices"] = "Harga Tertinggi",
+    ["Lowest Prices"] = "Harga Terendah",
+    
+    -- Forge System
+    ["Forge"] = "Tempa",
+    ["Dust Converter"] = "Penukar Habuk",
+    ["Fusion"] = "Gabungan",
+    ["Transfer"] = "Pemindahan",
+    ["Tier"] = "Tahap",
+    ["Success Chance"] = "Peluang Kejayaan",
+    ["Dust"] = "Habuk",
+    ["Slivers"] = "Kepingan",
+    ["Cores"] = "Teras",
+    ["Exalted Cores"] = "Teras Tinggi",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Roda Takdir",
+    ["Revelation Points"] = "Mata Wahyu",
+    ["Promotion Points"] = "Mata Promosi",
+    ["Gift of Life"] = "Hadiah Kehidupan",
+    ["Divine Empowerment"] = "Pemberdayaan Ilahi",
+    ["Blessing of the Grove"] = "Berkat Hutan",
+    ["Combat Mastery"] = "Penguasaan Pertempuran",
+    ["Healing Link"] = "Pautan Penyembuhan",
+    
+    -- Prey System
+    ["Prey"] = "Mangsa",
+    ["Prey Bonus"] = "Bonus Mangsa",
+    ["Prey Slot"] = "Slot Mangsa",
+    ["Select Creature"] = "Pilih Makhluk",
+    ["Bonus Type"] = "Jenis Bonus",
+    ["Damage Boost"] = "Peningkatan Kerosakan",
+    ["Defense Boost"] = "Peningkatan Pertahanan",
+    ["XP Bonus"] = "Bonus XP",
+    ["Loot Bonus"] = "Bonus Rampasan",
+    ["Prey Cards"] = "Kad Mangsa",
+    ["Prey Wildcards"] = "Kad Liar Mangsa",
   }
 }
 

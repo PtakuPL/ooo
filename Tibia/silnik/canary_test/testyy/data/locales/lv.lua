@@ -694,6 +694,69 @@ locale = {
     ["Bosstiary"] = "Bosu Grāmata",
     ["Boss Tracker"] = "Bosu Izsekotājs",
     ["Quick Loot"] = "Ātrā Laupīšana",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Bosstiary",
+    ["Boss Kills"] = "Bosu Nogalināšanas",
+    ["Archfoe"] = "Galvenais Ienaidnieks",
+    ["Bane"] = "Lāsts",
+    ["Nemesis"] = "Nemesis",
+    ["Boss Points"] = "Bosu Punkti",
+    ["Unlock Slot"] = "Atbloķēt Vietu",
+    ["Equipped"] = "Aprīkots",
+    
+    -- Market System
+    ["Market"] = "Tirgus",
+    ["Browse Offers"] = "Pārlūkot Piedāvājumus",
+    ["My Offers"] = "Mani Piedāvājumi",
+    ["My History"] = "Mana Vēsture",
+    ["Buy Offer"] = "Pirkuma Piedāvājums",
+    ["Sell Offer"] = "Pārdošanas Piedāvājums",
+    ["Create Offer"] = "Izveidot Piedāvājumu",
+    ["Cancel Offer"] = "Atcelt Piedāvājumu",
+    ["Amount"] = "Daudzums",
+    ["Total Price"] = "Kopējā Cena",
+    ["Piece Price"] = "Vienības Cena",
+    ["Statistics"] = "Statistika",
+    ["Transactions"] = "Darījumi",
+    ["Average Prices"] = "Vidējās Cenas",
+    ["Highest Prices"] = "Augstākās Cenas",
+    ["Lowest Prices"] = "Zemākās Cenas",
+    
+    -- Forge System
+    ["Forge"] = "Kalve",
+    ["Dust Converter"] = "Putekļu Pārveidotājs",
+    ["Fusion"] = "Saplūšana",
+    ["Transfer"] = "Pārsūtīšana",
+    ["Tier"] = "Līmenis",
+    ["Success Chance"] = "Veiksmes Iespēja",
+    ["Dust"] = "Putekļi",
+    ["Slivers"] = "Šķēles",
+    ["Cores"] = "Kodoli",
+    ["Exalted Cores"] = "Paaugstināti Kodoli",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Likteņa Rats",
+    ["Revelation Points"] = "Atklāsmes Punkti",
+    ["Promotion Points"] = "Paaugstināšanas Punkti",
+    ["Gift of Life"] = "Dzīvības Dāvana",
+    ["Divine Empowerment"] = "Dievišķā Stiprināšana",
+    ["Blessing of the Grove"] = "Birzs Svētība",
+    ["Combat Mastery"] = "Cīņas Meistarība",
+    ["Healing Link"] = "Dziedināšanas Saite",
+    
+    -- Prey System
+    ["Prey"] = "Upuris",
+    ["Prey Bonus"] = "Upura Bonuss",
+    ["Prey Slot"] = "Upura Vieta",
+    ["Select Creature"] = "Izvēlēties Radījumu",
+    ["Bonus Type"] = "Bonusa Tips",
+    ["Damage Boost"] = "Bojājumu Palielināšana",
+    ["Defense Boost"] = "Aizsardzības Palielināšana",
+    ["XP Bonus"] = "XP Bonuss",
+    ["Loot Bonus"] = "Laupījuma Bonuss",
+    ["Prey Cards"] = "Upura Kartes",
+    ["Prey Wildcards"] = "Upura Universālās Kartes",
   }
 }
 

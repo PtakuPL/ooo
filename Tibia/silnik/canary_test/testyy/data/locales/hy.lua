@@ -694,6 +694,70 @@ locale = {
     -- Quick Loot
     ["Quick Loot"] = "Arag Talan",
     ["Loot All"] = "Amboghj Talan",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Բdelays",
+    ["Boss Tracker"] = "Բdelays Հdelays",
+    ["Boss Kills"] = "Բоссdelays",
+    ["Archfoe"] = "Archfoe",
+    ["Bane"] = "Bane",
+    ["Nemesis"] = "Nemesis",
+    ["Boss Points"] = "Boss Points",
+    ["Unlock Slot"] = "Unlock Slot",
+    ["Equipped"] = "Equipped",
+    
+    -- Market System
+    ["Market"] = "Shuka",
+    ["Browse Offers"] = "Browse Offers",
+    ["My Offers"] = "My Offers",
+    ["My History"] = "My History",
+    ["Buy Offer"] = "Buy Offer",
+    ["Sell Offer"] = "Sell Offer",
+    ["Create Offer"] = "Create Offer",
+    ["Cancel Offer"] = "Cancel Offer",
+    ["Amount"] = "Qanak",
+    ["Total Price"] = "Yndhanur Gin",
+    ["Piece Price"] = "Miak Gin",
+    ["Statistics"] = "Statistics",
+    ["Transactions"] = "Transactions",
+    ["Average Prices"] = "Average Prices",
+    ["Highest Prices"] = "Highest Prices",
+    ["Lowest Prices"] = "Lowest Prices",
+    
+    -- Forge System
+    ["Forge"] = "Forge",
+    ["Dust Converter"] = "Dust Converter",
+    ["Fusion"] = "Fusion",
+    ["Transfer"] = "Transfer",
+    ["Tier"] = "Tier",
+    ["Success Chance"] = "Success Chance",
+    ["Dust"] = "Dust",
+    ["Slivers"] = "Slivers",
+    ["Cores"] = "Cores",
+    ["Exalted Cores"] = "Exalted Cores",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Wheel of Destiny",
+    ["Revelation Points"] = "Revelation Points",
+    ["Promotion Points"] = "Promotion Points",
+    ["Gift of Life"] = "Gift of Life",
+    ["Divine Empowerment"] = "Divine Empowerment",
+    ["Blessing of the Grove"] = "Blessing of the Grove",
+    ["Combat Mastery"] = "Combat Mastery",
+    ["Healing Link"] = "Healing Link",
+    
+    -- Prey System
+    ["Prey"] = "Prey",
+    ["Prey Bonus"] = "Prey Bonus",
+    ["Prey Slot"] = "Prey Slot",
+    ["Select Creature"] = "Select Creature",
+    ["Bonus Type"] = "Bonus Type",
+    ["Damage Boost"] = "Damage Boost",
+    ["Defense Boost"] = "Defense Boost",
+    ["XP Bonus"] = "XP Bonus",
+    ["Loot Bonus"] = "Loot Bonus",
+    ["Prey Cards"] = "Prey Cards",
+    ["Prey Wildcards"] = "Prey Wildcards",
   }
 }
 

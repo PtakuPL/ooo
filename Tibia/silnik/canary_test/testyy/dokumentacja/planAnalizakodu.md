@@ -421,7 +421,7 @@ modules/client_entergame/
 - **Brak** oczywistych niebezpiecznych wzorców
 
 ### Warstwa 5 - Runtime Simulation
-- **73%** języków ma pełne wsparcie czcionkowe
+- **80%** języków ma pełne wsparcie czcionkowe (24/30)
 - **3 języki RTL** zidentyfikowane (ar, he, fa)
 - **6 języków** wymaga dodatkowych czcionek
 

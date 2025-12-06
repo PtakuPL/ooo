@@ -693,6 +693,7 @@ locale = {
     ["Bosstiary"] = "Llibre de Bossos",
     ["Boss Tracker"] = "Rastrejador de Boss",
     ["Quick Loot"] = "Saqueig Ràpid",
+    ["Loot All"] = "Saquejar Tot",
   }
 }
 

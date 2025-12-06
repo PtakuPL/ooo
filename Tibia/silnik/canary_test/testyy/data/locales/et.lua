@@ -693,6 +693,7 @@ locale = {
     ["Bosstiary"] = "Bosside Raamat",
     ["Boss Tracker"] = "Bossi Jälgija",
     ["Quick Loot"] = "Kiire Röövimine",
+    ["Loot All"] = "Röövi Kõik",
   }
 }
 

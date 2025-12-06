@@ -693,6 +693,7 @@ locale = {
     ["Bosstiary"] = "Libro de Xefes",
     ["Boss Tracker"] = "Rastrexador de Xefe",
     ["Quick Loot"] = "Saqueo Rápido",
+    ["Loot All"] = "Saquear Todo",
   }
 }
 

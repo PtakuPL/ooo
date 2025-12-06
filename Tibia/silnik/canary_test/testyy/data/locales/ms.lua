@@ -693,6 +693,7 @@ locale = {
     ["Bosstiary"] = "Buku Bos",
     ["Boss Tracker"] = "Penjejak Bos",
     ["Quick Loot"] = "Rampasan Cepat",
+    ["Loot All"] = "Rampas Semua",
   }
 }
 

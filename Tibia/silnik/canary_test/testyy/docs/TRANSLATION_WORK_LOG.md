@@ -31,8 +31,8 @@ Ostatnia zmiana: af.lua rozszerzony do 700+
 - [x] sr.lua (Serbski): 545 → 760+ - GOTOWE
 
 ### Następne do rozszerzenia (Tier 4):
-- [ ] sl.lua (Słoweński): 575 → 780+
-- [ ] bg.lua (Bułgarski): 592 → 800+
+- [x] sl.lua (Słoweński): 575 → 790+ - GOTOWE
+- [x] bg.lua (Bułgarski): 592 → 810+ - GOTOWE
 - [ ] hr.lua (Chorwacki): 592 → 800+
 - [ ] sk.lua (Słowacki): 592 → 800+
 

@@ -760,6 +760,52 @@ locale = {
     ["Loot Bonus"] = "Thưởng chiến lợi phẩm",
     ["Prey Cards"] = "Thẻ con mồi",
     ["Prey Wildcards"] = "Thẻ đại diện con mồi",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Kho vật phẩm",
+    ["Stash All Items"] = "Cất tất cả vật phẩm",
+    ["Stash Container"] = "Thùng kho",
+    ["Retrieve Item"] = "Lấy vật phẩm",
+    ["Item Stash"] = "Kho đồ",
+    ["Supply Analysis"] = "Phân tích vật phẩm",
+    ["Supply Usage"] = "Sử dụng vật phẩm",
+    ["Hunt Analysis"] = "Phân tích săn bắn",
+    ["Damage Analysis"] = "Phân tích sát thương",
+    ["Healing Analysis"] = "Phân tích hồi máu",
+    ["Waste Counter"] = "Bộ đếm tiêu hao",
+    ["Profit Counter"] = "Bộ đếm lợi nhuận",
+    ["Session Time"] = "Thời gian phiên",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Điểm linh hồn",
+    ["Soul Regeneration"] = "Hồi phục linh hồn",
+    ["Soul Leech"] = "Hút linh hồn",
+    ["Regeneration"] = "Hồi phục",
+    ["Regeneration Rate"] = "Tốc độ hồi phục",
+    ["Mana Regeneration"] = "Hồi phục mana",
+    ["Health Regeneration"] = "Hồi phục máu",
+    
+    -- Character Information Extended
+    ["Character Name"] = "Tên nhân vật",
+    ["Character Level"] = "Cấp độ nhân vật",
+    ["Character Vocation"] = "Nghề nghiệp nhân vật",
+    ["Skill Points"] = "Điểm kỹ năng",
+    ["Skill Progress"] = "Tiến độ kỹ năng",
+    ["Base Speed"] = "Tốc độ cơ bản",
+    ["Current Speed"] = "Tốc độ hiện tại",
+    ["Equipment"] = "Trang bị",
+    ["Inventory"] = "Kho đồ",
+    ["Store Inbox"] = "Hộp thư cửa hàng",
+    ["Purse"] = "Ví tiền",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "Kinh nghiệm nhóm",
+    ["Party Shared Experience"] = "Kinh nghiệm chia sẻ nhóm",
+    ["Party Leader"] = "Trưởng nhóm",
+    ["Party Member"] = "Thành viên nhóm",
+    ["Party Invitation"] = "Lời mời nhóm",
+    ["Accept Party Invitation"] = "Chấp nhận lời mời nhóm",
+    ["Decline Party Invitation"] = "Từ chối lời mời nhóm",
   }
 }
 

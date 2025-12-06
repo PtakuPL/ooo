@@ -759,6 +759,52 @@ locale = {
     ["Loot Bonus"] = "پاداش غارت",
     ["Prey Cards"] = "کارت‌های طعمه",
     ["Prey Wildcards"] = "کارت‌های جوکر طعمه",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "انبار تدارکات",
+    ["Stash All Items"] = "ذخیره همه اقلام",
+    ["Stash Container"] = "محفظه انبار",
+    ["Retrieve Item"] = "برداشت قلم",
+    ["Item Stash"] = "انبار اقلام",
+    ["Supply Analysis"] = "تحلیل تدارکات",
+    ["Supply Usage"] = "استفاده تدارکات",
+    ["Hunt Analysis"] = "تحلیل شکار",
+    ["Damage Analysis"] = "تحلیل آسیب",
+    ["Healing Analysis"] = "تحلیل شفا",
+    ["Waste Counter"] = "شمارنده هدررفت",
+    ["Profit Counter"] = "شمارنده سود",
+    ["Session Time"] = "زمان جلسه",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "امتیازات روح",
+    ["Soul Regeneration"] = "بازسازی روح",
+    ["Soul Leech"] = "مکش روح",
+    ["Regeneration"] = "بازسازی",
+    ["Regeneration Rate"] = "نرخ بازسازی",
+    ["Mana Regeneration"] = "بازسازی مانا",
+    ["Health Regeneration"] = "بازسازی سلامت",
+    
+    -- Character Information Extended
+    ["Character Name"] = "نام شخصیت",
+    ["Character Level"] = "سطح شخصیت",
+    ["Character Vocation"] = "حرفه شخصیت",
+    ["Skill Points"] = "امتیازات مهارت",
+    ["Skill Progress"] = "پیشرفت مهارت",
+    ["Base Speed"] = "سرعت پایه",
+    ["Current Speed"] = "سرعت فعلی",
+    ["Equipment"] = "تجهیزات",
+    ["Inventory"] = "موجودی",
+    ["Store Inbox"] = "صندوق ورودی فروشگاه",
+    ["Purse"] = "کیف پول",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "تجربه گروه",
+    ["Party Shared Experience"] = "تجربه مشترک گروه",
+    ["Party Leader"] = "رهبر گروه",
+    ["Party Member"] = "عضو گروه",
+    ["Party Invitation"] = "دعوت گروه",
+    ["Accept Party Invitation"] = "قبول دعوت گروه",
+    ["Decline Party Invitation"] = "رد دعوت گروه",
   }
 }
 

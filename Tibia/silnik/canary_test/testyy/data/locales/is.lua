@@ -698,6 +698,69 @@ locale = {
     ["Store"] = "Verslun",
     ["Prey"] = "Bráð",
     ["Daily Reward"] = "Dagleg Verðlaun",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Bosstiary",
+    ["Boss Tracker"] = "Yfirmaður Rekjari",
+    ["Boss Kills"] = "Dráp Yfirmanna",
+    ["Archfoe"] = "Aðalóvinur",
+    ["Bane"] = "Bölvun",
+    ["Nemesis"] = "Nemesis",
+    ["Boss Points"] = "Yfirmannapunktar",
+    ["Unlock Slot"] = "Opna Rauf",
+    ["Equipped"] = "Útbúið",
+    
+    -- Market System
+    ["Market"] = "Markaður",
+    ["Browse Offers"] = "Skoða Tilboð",
+    ["My Offers"] = "Mín Tilboð",
+    ["My History"] = "Mín Saga",
+    ["Buy Offer"] = "Kauptilboð",
+    ["Sell Offer"] = "Sölutilboð",
+    ["Create Offer"] = "Búa til Tilboð",
+    ["Cancel Offer"] = "Hætta við Tilboð",
+    ["Amount"] = "Magn",
+    ["Total Price"] = "Heildarverð",
+    ["Piece Price"] = "Einingaverð",
+    ["Statistics"] = "Tölfræði",
+    ["Transactions"] = "Viðskipti",
+    ["Average Prices"] = "Meðalverð",
+    ["Highest Prices"] = "Hæsta Verð",
+    ["Lowest Prices"] = "Lægsta Verð",
+    
+    -- Forge System
+    ["Forge"] = "Smiðja",
+    ["Dust Converter"] = "Dustbreytir",
+    ["Fusion"] = "Samruni",
+    ["Transfer"] = "Flutningur",
+    ["Tier"] = "Stig",
+    ["Success Chance"] = "Líkur á Árangri",
+    ["Dust"] = "Dust",
+    ["Slivers"] = "Slípur",
+    ["Cores"] = "Kjarnar",
+    ["Exalted Cores"] = "Upphafnir Kjarnar",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Örlögshjól",
+    ["Revelation Points"] = "Opinberunarpunktar",
+    ["Promotion Points"] = "Framgangspunktar",
+    ["Gift of Life"] = "Lífsgjöf",
+    ["Divine Empowerment"] = "Guðleg Styrkjun",
+    ["Blessing of the Grove"] = "Blessun Lundarins",
+    ["Combat Mastery"] = "Bardagameistari",
+    ["Healing Link"] = "Lækningatengsl",
+    
+    -- Prey System
+    ["Prey Bonus"] = "Bráðarbónus",
+    ["Prey Slot"] = "Bráðarrauf",
+    ["Select Creature"] = "Velja Veru",
+    ["Bonus Type"] = "Gerð Bónuss",
+    ["Damage Boost"] = "Skaðaauki",
+    ["Defense Boost"] = "Varnartauki",
+    ["XP Bonus"] = "XP Bónus",
+    ["Loot Bonus"] = "Bráðarbónus",
+    ["Prey Cards"] = "Bráðarkort",
+    ["Prey Wildcards"] = "Bráðar Villukort",
   }
 }
 

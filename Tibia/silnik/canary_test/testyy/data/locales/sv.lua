@@ -699,6 +699,70 @@ local add = {
   ["Auto Loot"] = "Autoplundring",
   ["Loot Container"] = "Plundringsbehållare",
   ["Fallback Container"] = "Reservbehållare",
+  
+  -- Bosstiary System
+  ["Bosstiary"] = "Bosstiary",
+  ["Boss Tracker"] = "Bossspårare",
+  ["Boss Kills"] = "Bossbesegringar",
+  ["Archfoe"] = "Ärkefiende",
+  ["Bane"] = "Förbannelse",
+  ["Nemesis"] = "Nemesis",
+  ["Boss Points"] = "Bosspoäng",
+  ["Unlock Slot"] = "Lås upp Plats",
+  ["Equipped"] = "Utrustad",
+  
+  -- Market System
+  ["Market"] = "Marknad",
+  ["Browse Offers"] = "Bläddra bland Erbjudanden",
+  ["My Offers"] = "Mina Erbjudanden",
+  ["My History"] = "Min Historik",
+  ["Buy Offer"] = "Köperbjudande",
+  ["Sell Offer"] = "Säljerbjudande",
+  ["Create Offer"] = "Skapa Erbjudande",
+  ["Cancel Offer"] = "Avbryt Erbjudande",
+  ["Amount"] = "Mängd",
+  ["Total Price"] = "Totalpris",
+  ["Piece Price"] = "Styckpris",
+  ["Statistics"] = "Statistik",
+  ["Transactions"] = "Transaktioner",
+  ["Average Prices"] = "Genomsnittspriser",
+  ["Highest Prices"] = "Högsta Priser",
+  ["Lowest Prices"] = "Lägsta Priser",
+  
+  -- Forge System
+  ["Forge"] = "Smedja",
+  ["Dust Converter"] = "Dammomvandlare",
+  ["Fusion"] = "Fusion",
+  ["Transfer"] = "Överföring",
+  ["Tier"] = "Nivå",
+  ["Success Chance"] = "Lyckochans",
+  ["Dust"] = "Damm",
+  ["Slivers"] = "Skärvor",
+  ["Cores"] = "Kärnor",
+  ["Exalted Cores"] = "Upphöjda Kärnor",
+  
+  -- Wheel of Destiny
+  ["Wheel of Destiny"] = "Ödets Hjul",
+  ["Revelation Points"] = "Uppenbarelsepoäng",
+  ["Promotion Points"] = "Befordringspoäng",
+  ["Gift of Life"] = "Livets Gåva",
+  ["Divine Empowerment"] = "Gudomlig Styrka",
+  ["Blessing of the Grove"] = "Lundens Välsignelse",
+  ["Combat Mastery"] = "Stridsmästerskap",
+  ["Healing Link"] = "Helande Länk",
+  
+  -- Prey System
+  ["Prey"] = "Byte",
+  ["Prey Bonus"] = "Bytebonus",
+  ["Prey Slot"] = "Byteplats",
+  ["Select Creature"] = "Välj Varelse",
+  ["Bonus Type"] = "Bonustyp",
+  ["Damage Boost"] = "Skadeökning",
+  ["Defense Boost"] = "Försvarsökning",
+  ["XP Bonus"] = "XP Bonus",
+  ["Loot Bonus"] = "Plundringsbonus",
+  ["Prey Cards"] = "Byteskort",
+  ["Prey Wildcards"] = "Bytesjokrar",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

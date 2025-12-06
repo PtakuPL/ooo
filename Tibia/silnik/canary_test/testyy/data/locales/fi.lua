@@ -699,6 +699,70 @@ local add = {
   ["players online"] = "pelaajaa paikalla",
   ["Remember Email"] = "Muista sähköposti",
   ["Login automatically"] = "Kirjaudu automaattisesti",
+  
+  -- Bosstiary System
+  ["Bosstiary"] = "Bosstiary",
+  ["Boss Tracker"] = "Pomon Seuranta",
+  ["Boss Kills"] = "Pomon Tapot",
+  ["Archfoe"] = "Päävihollinen",
+  ["Bane"] = "Kirous",
+  ["Nemesis"] = "Nemesis",
+  ["Boss Points"] = "Pomopisteet",
+  ["Unlock Slot"] = "Avaa Paikka",
+  ["Equipped"] = "Varustettu",
+  
+  -- Market System
+  ["Market"] = "Markkinat",
+  ["Browse Offers"] = "Selaa Tarjouksia",
+  ["My Offers"] = "Omat Tarjoukset",
+  ["My History"] = "Oma Historia",
+  ["Buy Offer"] = "Ostotarjous",
+  ["Sell Offer"] = "Myyntitarjous",
+  ["Create Offer"] = "Luo Tarjous",
+  ["Cancel Offer"] = "Peruuta Tarjous",
+  ["Amount"] = "Määrä",
+  ["Total Price"] = "Kokonaishinta",
+  ["Piece Price"] = "Kappalehinta",
+  ["Statistics"] = "Tilastot",
+  ["Transactions"] = "Tapahtumat",
+  ["Average Prices"] = "Keskihinnat",
+  ["Highest Prices"] = "Korkeimmat Hinnat",
+  ["Lowest Prices"] = "Alhaisimmat Hinnat",
+  
+  -- Forge System
+  ["Forge"] = "Takomo",
+  ["Dust Converter"] = "Pölymuunnin",
+  ["Fusion"] = "Fuusio",
+  ["Transfer"] = "Siirto",
+  ["Tier"] = "Taso",
+  ["Success Chance"] = "Onnistumismahdollisuus",
+  ["Dust"] = "Pöly",
+  ["Slivers"] = "Sirpaleet",
+  ["Cores"] = "Ytimet",
+  ["Exalted Cores"] = "Korotetut Ytimet",
+  
+  -- Wheel of Destiny
+  ["Wheel of Destiny"] = "Kohtalon Pyörä",
+  ["Revelation Points"] = "Ilmestyspisteet",
+  ["Promotion Points"] = "Ylennyspisteet",
+  ["Gift of Life"] = "Elämän Lahja",
+  ["Divine Empowerment"] = "Jumalallinen Voimistaminen",
+  ["Blessing of the Grove"] = "Lehdon Siunaus",
+  ["Combat Mastery"] = "Taistelumestarius",
+  ["Healing Link"] = "Parantava Linkki",
+  
+  -- Prey System
+  ["Prey"] = "Saalis",
+  ["Prey Bonus"] = "Saalisbonus",
+  ["Prey Slot"] = "Saalispaikka",
+  ["Select Creature"] = "Valitse Olento",
+  ["Bonus Type"] = "Bonustyyppi",
+  ["Damage Boost"] = "Vahingon Lisäys",
+  ["Defense Boost"] = "Puolustuksen Lisäys",
+  ["XP Bonus"] = "XP Bonus",
+  ["Loot Bonus"] = "Saalisbonus",
+  ["Prey Cards"] = "Saaliskortit",
+  ["Prey Wildcards"] = "Saalisjokeri",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

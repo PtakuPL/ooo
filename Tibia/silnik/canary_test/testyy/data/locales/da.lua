@@ -698,6 +698,69 @@ local add = {
   ["Bosstiary"] = "Boss Bog",
   ["Boss Tracker"] = "Boss Sporer",
   ["Quick Loot"] = "Hurtig Plyndring",
+  
+  -- Bosstiary System
+  ["Bosstiary"] = "Bosstiary",
+  ["Boss Kills"] = "Boss Drab",
+  ["Archfoe"] = "Ærkefjende",
+  ["Bane"] = "Forbandelse",
+  ["Nemesis"] = "Nemesis",
+  ["Boss Points"] = "Boss Point",
+  ["Unlock Slot"] = "Lås Plads Op",
+  ["Equipped"] = "Udstyret",
+  
+  -- Market System
+  ["Market"] = "Marked",
+  ["Browse Offers"] = "Gennemse Tilbud",
+  ["My Offers"] = "Mine Tilbud",
+  ["My History"] = "Min Historie",
+  ["Buy Offer"] = "Købstilbud",
+  ["Sell Offer"] = "Salgstilbud",
+  ["Create Offer"] = "Opret Tilbud",
+  ["Cancel Offer"] = "Annuller Tilbud",
+  ["Amount"] = "Mængde",
+  ["Total Price"] = "Samlet Pris",
+  ["Piece Price"] = "Stykpris",
+  ["Statistics"] = "Statistik",
+  ["Transactions"] = "Transaktioner",
+  ["Average Prices"] = "Gennemsnitspriser",
+  ["Highest Prices"] = "Højeste Priser",
+  ["Lowest Prices"] = "Laveste Priser",
+  
+  -- Forge System
+  ["Forge"] = "Smedje",
+  ["Dust Converter"] = "Støvkonverter",
+  ["Fusion"] = "Fusion",
+  ["Transfer"] = "Overførsel",
+  ["Tier"] = "Niveau",
+  ["Success Chance"] = "Succeschance",
+  ["Dust"] = "Støv",
+  ["Slivers"] = "Splinter",
+  ["Cores"] = "Kerner",
+  ["Exalted Cores"] = "Ophøjede Kerner",
+  
+  -- Wheel of Destiny
+  ["Wheel of Destiny"] = "Skæbnens Hjul",
+  ["Revelation Points"] = "Åbenbaringspoint",
+  ["Promotion Points"] = "Forfremmelsepoint",
+  ["Gift of Life"] = "Livets Gave",
+  ["Divine Empowerment"] = "Guddommelig Styrkelse",
+  ["Blessing of the Grove"] = "Lundens Velsignelse",
+  ["Combat Mastery"] = "Kampmesterskab",
+  ["Healing Link"] = "Helbredelseslink",
+  
+  -- Prey System
+  ["Prey"] = "Bytte",
+  ["Prey Bonus"] = "Byttebonus",
+  ["Prey Slot"] = "Bytteplads",
+  ["Select Creature"] = "Vælg Væsen",
+  ["Bonus Type"] = "Bonustype",
+  ["Damage Boost"] = "Skadeforøgelse",
+  ["Defense Boost"] = "Forsvarsforøgelse",
+  ["XP Bonus"] = "XP Bonus",
+  ["Loot Bonus"] = "Byttebonus",
+  ["Prey Cards"] = "Byttekort",
+  ["Prey Wildcards"] = "Bytte Jokere",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

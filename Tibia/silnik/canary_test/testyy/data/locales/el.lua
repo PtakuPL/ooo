@@ -770,6 +770,52 @@ locale = {
     ["Loot Bonus"] = "Μπόνους Λείας",
     ["Prey Cards"] = "Κάρτες Θηράματος",
     ["Prey Wildcards"] = "Μπαλαντέρ Θηράματος",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Αποθήκη Εφοδίων",
+    ["Stash All Items"] = "Αποθήκευση Όλων των Αντικειμένων",
+    ["Stash Container"] = "Κοντέινερ Αποθήκευσης",
+    ["Retrieve Item"] = "Ανάκτηση Αντικειμένου",
+    ["Item Stash"] = "Αποθήκη Αντικειμένων",
+    ["Supply Analysis"] = "Ανάλυση Εφοδίων",
+    ["Supply Usage"] = "Χρήση Εφοδίων",
+    ["Hunt Analysis"] = "Ανάλυση Κυνηγίου",
+    ["Damage Analysis"] = "Ανάλυση Ζημίας",
+    ["Healing Analysis"] = "Ανάλυση Θεραπείας",
+    ["Waste Counter"] = "Μετρητής Σπατάλης",
+    ["Profit Counter"] = "Μετρητής Κέρδους",
+    ["Session Time"] = "Χρόνος Συνεδρίας",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Πόντοι Ψυχής",
+    ["Soul Regeneration"] = "Αναγέννηση Ψυχής",
+    ["Soul Leech"] = "Απορρόφηση Ψυχής",
+    ["Regeneration"] = "Αναγέννηση",
+    ["Regeneration Rate"] = "Ρυθμός Αναγέννησης",
+    ["Mana Regeneration"] = "Αναγέννηση Μάνα",
+    ["Health Regeneration"] = "Αναγέννηση Υγείας",
+    
+    -- Character Information Extended
+    ["Character Name"] = "Όνομα Χαρακτήρα",
+    ["Character Level"] = "Επίπεδο Χαρακτήρα",
+    ["Character Vocation"] = "Επάγγελμα Χαρακτήρα",
+    ["Skill Points"] = "Πόντοι Ικανότητας",
+    ["Skill Progress"] = "Πρόοδος Ικανότητας",
+    ["Base Speed"] = "Βασική Ταχύτητα",
+    ["Current Speed"] = "Τρέχουσα Ταχύτητα",
+    ["Equipment"] = "Εξοπλισμός",
+    ["Inventory"] = "Αποθήκη",
+    ["Store Inbox"] = "Εισερχόμενα Καταστήματος",
+    ["Purse"] = "Πορτοφόλι",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "Εμπειρία Ομάδας",
+    ["Party Shared Experience"] = "Κοινή Εμπειρία Ομάδας",
+    ["Party Leader"] = "Αρχηγός Ομάδας",
+    ["Party Member"] = "Μέλος Ομάδας",
+    ["Party Invitation"] = "Πρόσκληση σε Ομάδα",
+    ["Accept Party Invitation"] = "Αποδοχή Πρόσκλησης",
+    ["Decline Party Invitation"] = "Απόρριψη Πρόσκλησης",
   }
 }
 

@@ -763,6 +763,52 @@ local add = {
   ["Loot Bonus"] = "Plyndringsbonus",
   ["Prey Cards"] = "Byttekort",
   ["Prey Wildcards"] = "Byttejokere",
+  
+  -- Supply Management System
+  ["Supply Stash"] = "Forsyningslager",
+  ["Stash All Items"] = "Lagre alle gjenstander",
+  ["Stash Container"] = "Lagerbeholder",
+  ["Retrieve Item"] = "Hent gjenstand",
+  ["Item Stash"] = "Gjenstandslager",
+  ["Supply Analysis"] = "Forsyningsanalyse",
+  ["Supply Usage"] = "Forsyningsbruk",
+  ["Hunt Analysis"] = "Jaktanalyse",
+  ["Damage Analysis"] = "Skadeanalyse",
+  ["Healing Analysis"] = "Helbredelsesanalyse",
+  ["Waste Counter"] = "Avfallsteller",
+  ["Profit Counter"] = "Profittteller",
+  ["Session Time"] = "Økttid",
+  
+  -- Soul and Regeneration
+  ["Soul Points"] = "Sjelspoeng",
+  ["Soul Regeneration"] = "Sjelsgjenoppretting",
+  ["Soul Leech"] = "Sjelsuging",
+  ["Regeneration"] = "Gjenoppretting",
+  ["Regeneration Rate"] = "Gjenopprettingsrate",
+  ["Mana Regeneration"] = "Mana Gjenoppretting",
+  ["Health Regeneration"] = "Helsegjenoppretting",
+  
+  -- Character Information Extended
+  ["Character Name"] = "Karakternavn",
+  ["Character Level"] = "Karakternivå",
+  ["Character Vocation"] = "Karakteryrke",
+  ["Skill Points"] = "Ferdighetspoeng",
+  ["Skill Progress"] = "Ferdighetsframgang",
+  ["Base Speed"] = "Grunnhastighet",
+  ["Current Speed"] = "Nåværende hastighet",
+  ["Equipment"] = "Utstyr",
+  ["Inventory"] = "Inventar",
+  ["Store Inbox"] = "Butikkinnboks",
+  ["Purse"] = "Pengeboks",
+  
+  -- Party and Group Extended
+  ["Party Experience"] = "Gruppeerfaring",
+  ["Party Shared Experience"] = "Delt gruppeerfaring",
+  ["Party Leader"] = "Gruppeleder",
+  ["Party Member"] = "Gruppemedlem",
+  ["Party Invitation"] = "Gruppeinvitasjon",
+  ["Accept Party Invitation"] = "Godta gruppeinvitasjon",
+  ["Decline Party Invitation"] = "Avslå gruppeinvitasjon",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

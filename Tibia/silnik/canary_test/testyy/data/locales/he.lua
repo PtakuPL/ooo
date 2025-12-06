@@ -770,6 +770,52 @@ locale = {
     ["Loot Bonus"] = "בונוס שלל",
     ["Prey Cards"] = "קלפי טרף",
     ["Prey Wildcards"] = "קלפי ג׳וקר טרף",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "מחסן אספקה",
+    ["Stash All Items"] = "אחסן את כל הפריטים",
+    ["Stash Container"] = "מכולת אחסון",
+    ["Retrieve Item"] = "אחזר פריט",
+    ["Item Stash"] = "מחסן פריטים",
+    ["Supply Analysis"] = "ניתוח אספקה",
+    ["Supply Usage"] = "שימוש באספקה",
+    ["Hunt Analysis"] = "ניתוח ציד",
+    ["Damage Analysis"] = "ניתוח נזק",
+    ["Healing Analysis"] = "ניתוח ריפוי",
+    ["Waste Counter"] = "מונה בזבוז",
+    ["Profit Counter"] = "מונה רווח",
+    ["Session Time"] = "זמן הפעלה",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "נקודות נשמה",
+    ["Soul Regeneration"] = "התחדשות נשמה",
+    ["Soul Leech"] = "שאיבת נשמה",
+    ["Regeneration"] = "התחדשות",
+    ["Regeneration Rate"] = "קצב התחדשות",
+    ["Mana Regeneration"] = "התחדשות מאנה",
+    ["Health Regeneration"] = "התחדשות בריאות",
+    
+    -- Character Information Extended
+    ["Character Name"] = "שם דמות",
+    ["Character Level"] = "רמת דמות",
+    ["Character Vocation"] = "מקצוע דמות",
+    ["Skill Points"] = "נקודות מיומנות",
+    ["Skill Progress"] = "התקדמות מיומנות",
+    ["Base Speed"] = "מהירות בסיס",
+    ["Current Speed"] = "מהירות נוכחית",
+    ["Equipment"] = "ציוד",
+    ["Inventory"] = "מלאי",
+    ["Store Inbox"] = "תיבת דואר חנות",
+    ["Purse"] = "ארנק",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "ניסיון קבוצה",
+    ["Party Shared Experience"] = "ניסיון קבוצה משותף",
+    ["Party Leader"] = "מנהיג קבוצה",
+    ["Party Member"] = "חבר קבוצה",
+    ["Party Invitation"] = "הזמנה לקבוצה",
+    ["Accept Party Invitation"] = "קבל הזמנה לקבוצה",
+    ["Decline Party Invitation"] = "דחה הזמנה לקבוצה",
   }
 }
 

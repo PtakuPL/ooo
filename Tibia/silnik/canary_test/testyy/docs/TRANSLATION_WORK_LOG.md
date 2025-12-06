@@ -1,30 +1,26 @@
 # Translation Work Log
 
-## 🎉 FINAL STATUS: WSZYSTKIE 51 JĘZYKÓW ROZSZERZONE DO 700+ LINII!
+## 🎉 FINAL STATUS: WSZYSTKIE 51 JĘZYKÓW ROZSZERZONE Z NOWYMI SYSTEMAMI!
 
-**Statystyki końcowe (zweryfikowane):**
+**Statystyki końcowe (zweryfikowane 2025-12-06):**
 - Łącznie plików: 53 (51 rozszerzonych + en fallback + pl reference)
-- Łącznie linii kodu: ~43,000+
-- Wszystkie języki mają 700+ linii
+- Łącznie linii kodu: **42,392**
+- Wszystkie języki mają **758-1137 linii** (minimum 758)
 
-**Tier 1 (1000+):** ru, fr, es, pl
-**Tier 2 (800-900):** de, it, pt, nl, tr, zh, ka, bg, hr, sk, sl  
-**Tier 3 (700-800):** Wszystkie pozostałe 38 języków
+**Tier 1 (1000+):** ru (1137), fr (1119), es (1065), pl (1039)
+**Tier 2 (800-900):** de (899), it (887), pt (883), nl (850), tr (850), zh (850), ka (822), kk (820), sw (820), uz (820), ar (811), ja (811), ko (811), hu (798), th (798), bg (800), hr (800), sk (800), sl (796)
+**Tier 3 (758-800):** Wszystkie pozostałe 32 języki
 
-## Notatki
-- Wszystkie języki używają tego samego zestawu kluczy z pl.lua
-- Tłumaczenia są automatyczne, wymagają weryfikacji native speakerów
-- Spelling errors w kluczach (sucessfully, iniated) są celowe - dopasowane do kodu źródłowego
-- en.lua zawiera tylko nagłówek - jest fallback do oryginalnego angielskiego tekstu w kodzie
+## Nowe systemy dodane we wszystkich językach (sesja 2025-12-06):
+1. **Bosstiary System** - Boss Tracker, Boss Kills, Archfoe, Bane, Nemesis, Boss Points
+2. **Market System** - Browse Offers, Buy/Sell Offers, Create/Cancel Offer, Statistics, Transactions
+3. **Forge System** - Dust Converter, Fusion, Transfer, Tier, Success Chance, Dust, Slivers, Cores
+4. **Wheel of Destiny** - Revelation Points, Promotion Points, Gift of Life, Divine Empowerment
+5. **Prey System** - Prey Bonus, Prey Slot, Select Creature, Damage/Defense Boost, XP/Loot Bonus
 
-## Rozszerzenia w tym PR (~23,000+ nowych wpisów):
-- 8 języków Tier 4→2/3: hu, th, lt, sr, sl, bg, hr, sk
-- 20+ języków Tier 5→3: wszystkie do 700+
-- Kontynuacja Tier 3: af, mk, sq, hi do 750+
+## Finalne statystyki (po rozszerzeniu)
 
-## Finalne statystyki
-
-### Tier 1: Pełne pokrycie (900+ linii)
+### Tier 1: Pełne pokrycie (1000+ linii)
 | Język | Plik | Linie | Status |
 |-------|------|-------|--------|
 | ru | ru.lua | 1137 | ✅ Najwyższe |
@@ -42,59 +38,51 @@
 | tr | tr.lua | 850 | ✅ |
 | zh | zh.lua | 850 | ✅ |
 | ka | ka.lua | 822 | ✅ |
+| kk | kk.lua | 820 | ✅ +65 |
+| sw | sw.lua | 820 | ✅ +65 |
+| uz | uz.lua | 820 | ✅ +65 |
+| ar | ar.lua | 811 | ✅ +65 |
+| ja | ja.lua | 811 | ✅ +65 |
+| ko | ko.lua | 811 | ✅ +65 |
+| bg | bg.lua | 800 | ✅ |
+| hr | hr.lua | 800 | ✅ |
+| sk | sk.lua | 800 | ✅ |
 
-### Tier 3: Dobre pokrycie (700-800 linii)
+### Tier 3: Dobre pokrycie (758-800 linii)
 | Język | Plik | Linie | Status |
 |-------|------|-------|--------|
+| hu | hu.lua | 798 | ✅ +65 |
+| th | th.lua | 798 | ✅ +65 |
+| sl | sl.lua | 796 | ✅ |
+| af | af.lua | 786 | ✅ +65 |
+| hi | hi.lua | 788 | ✅ +65 |
+| mk | mk.lua | 783 | ✅ +65 |
+| sq | sq.lua | 783 | ✅ +65 |
+| el | el.lua | 777 | ✅ +65 |
+| he | he.lua | 777 | ✅ +65 |
 | uk | uk.lua | 783 | ✅ |
-| kk | kk.lua | 756 | ✅ |
-| sw | sw.lua | 756 | ✅ |
-| uz | uz.lua | 756 | ✅ |
-| ar | ar.lua | 747 | ✅ |
-| ja | ja.lua | 747 | ✅ |
-| ko | ko.lua | 747 | ✅ |
-| el | el.lua | 712 | ✅ |
-| he | he.lua | 712 | ✅ |
-
-### Tier 4: Średnie pokrycie (500-700 linii)
-| Język | Plik | Linie | Status |
-|-------|------|-------|--------|
-| cs | cs.lua | 680 | ✅ |
-| da | da.lua | 673 | ✅ |
-| is | is.lua | 650+ | ✅ ROZSZERZONY |
-| mk | mk.lua | 650+ | ✅ ROZSZERZONY |
-| sq | sq.lua | 650+ | ✅ ROZSZERZONY |
-| sv | sv.lua | 617 | ✅ |
-| vi | vi.lua | 604 | ✅ |
-| bg | bg.lua | 592 | ✅ |
-| hr | hr.lua | 592 | ✅ |
-| sk | sk.lua | 592 | ✅ |
-| sl | sl.lua | 575 | ✅ |
-| lt | lt.lua | 545 | ✅ |
-| sr | sr.lua | 545 | ✅ |
-| hu | hu.lua | 512 | ✅ |
-| th | th.lua | 512 | ✅ |
-
-### Tier 5: Podstawowe pokrycie (400-500 linii)
-| Język | Plik | Linie | Status |
-|-------|------|-------|--------|
-| fi | fi.lua | 484 | ✅ |
-| no | no.lua | 484 | ✅ |
-| fa | fa.lua | 480 | ✅ |
-| ro | ro.lua | 471 | ✅ |
-| bn | bn.lua | 466 | ✅ |
-| ms | ms.lua | 455 | ✅ |
-| ca | ca.lua | 447 | ✅ |
-| et | et.lua | 447 | ✅ |
-| gl | gl.lua | 447 | ✅ |
-| lv | lv.lua | 448 | ✅ |
-| az | az.lua | 441 | ✅ |
-| eu | eu.lua | 441 | ✅ |
-| fil | fil.lua | 441 | ✅ |
-| hy | hy.lua | 441 | ✅ |
-| hi | hi.lua | 439 | ✅ |
-| id | id.lua | 439 | ✅ |
-| af | af.lua | 434 | ✅ |
+| fi | fi.lua | 769 | ✅ +65 |
+| no | no.lua | 769 | ✅ +65 |
+| da | da.lua | 767 | ✅ +65 |
+| is | is.lua | 767 | ✅ +65 |
+| sv | sv.lua | 767 | ✅ +65 |
+| vi | vi.lua | 766 | ✅ +65 |
+| fa | fa.lua | 765 | ✅ +65 |
+| az | az.lua | 764 | ✅ +65 |
+| bn | bn.lua | 763 | ✅ +65 |
+| ca | ca.lua | 764 | ✅ +65 |
+| cs | cs.lua | 764 | ✅ +65 |
+| et | et.lua | 764 | ✅ +65 |
+| eu | eu.lua | 764 | ✅ +65 |
+| fil | fil.lua | 764 | ✅ +65 |
+| gl | gl.lua | 764 | ✅ +65 |
+| hy | hy.lua | 764 | ✅ +65 |
+| lt | lt.lua | 764 | ✅ |
+| lv | lv.lua | 763 | ✅ +65 |
+| ms | ms.lua | 764 | ✅ +65 |
+| ro | ro.lua | 764 | ✅ +65 |
+| sr | sr.lua | 764 | ✅ |
+| id | id.lua | 758 | ✅ +57 |
 
 ### Specjalne
 | Język | Plik | Linie | Status |
@@ -103,8 +91,9 @@
 
 ## Łączne podsumowanie
 - **Rozszerzono 51 języków** (wszystkie poza en i pl)
-- **3 języki dodatkowe rozszerzono**: is, mk, sq (434 → 650+)
+- **34 języków rozszerzono o 5 nowych systemów** w sesji 2025-12-06 (+65 linii każdy)
 - **Metoda**: Etapowe rozszerzanie z przechowywaniem kontekstu w TRANSLATION_WORK_LOG.md
+- **Łączna liczba linii kodu**: 42,392
 
 ## Notatki
 - Wszystkie języki używają tego samego zestawu kluczy z pl.lua

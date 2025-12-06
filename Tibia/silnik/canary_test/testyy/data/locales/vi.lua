@@ -598,6 +598,104 @@ locale = {
     ["Current level: %d"] = "Cấp hiện tại: %d",
     ["%s has logged in"] = "%s đã đăng nhập",
     ["%s has logged out"] = "%s đã đăng xuất",
+    
+    -- Additional UI Elements
+    ["Store"] = "Cửa hàng",
+    ["Prey"] = "Con mồi",
+    ["Analytics"] = "Phân tích",
+    ["Reward Wall"] = "Tường thưởng",
+    ["Daily Reward"] = "Thưởng hàng ngày",
+    ["Collect Reward"] = "Nhận thưởng",
+    ["Claim"] = "Yêu cầu",
+    ["Streak"] = "Chuỗi",
+    ["Bonus"] = "Thưởng thêm",
+    
+    -- Prey System
+    ["Prey Creature"] = "Con mồi",
+    ["Prey Bonus"] = "Thưởng con mồi",
+    ["Prey Duration"] = "Thời hạn con mồi",
+    ["Reroll"] = "Đổi lại",
+    ["Lock Prey"] = "Khóa con mồi",
+    ["Select Prey"] = "Chọn con mồi",
+    ["Damage Bonus"] = "Thưởng sát thương",
+    ["Defense Bonus"] = "Thưởng phòng thủ",
+    ["Experience Bonus"] = "Thưởng kinh nghiệm",
+    ["Loot Bonus"] = "Thưởng chiến lợi phẩm",
+    
+    -- Forge System
+    ["Forge"] = "Rèn",
+    ["Dust"] = "Bụi",
+    ["Slivers"] = "Mảnh vụn",
+    ["Exalted Core"] = "Lõi cao quý",
+    ["Fusion"] = "Hợp nhất",
+    ["Transfer"] = "Chuyển",
+    ["Tier"] = "Cấp",
+    ["Success Rate"] = "Tỷ lệ thành công",
+    ["Convergence Fusion"] = "Hợp nhất hội tụ",
+    ["Convergence Transfer"] = "Chuyển hội tụ",
+    
+    -- Bosstiary
+    ["Bosstiary"] = "Sách Boss",
+    ["Boss Tracker"] = "Theo dõi Boss",
+    ["Boss Slots"] = "Ô Boss",
+    ["Archfoe"] = "Kẻ thù lớn",
+    ["Bane"] = "Tai họa",
+    ["Nemesis"] = "Kẻ báo thù",
+    
+    -- Cyclopedia Map
+    ["Explored"] = "Đã khám phá",
+    ["Unexplored"] = "Chưa khám phá",
+    ["Discovery"] = "Khám phá",
+    ["Area"] = "Khu vực",
+    ["Discovered Areas"] = "Khu vực đã khám phá",
+    
+    -- Hireling System
+    ["Hireling"] = "Người hầu",
+    ["Hirelings"] = "Người hầu",
+    ["Lamp"] = "Đèn",
+    ["Skills"] = "Kỹ năng",
+    ["Cooking"] = "Nấu ăn",
+    ["Trading"] = "Buôn bán",
+    ["Steward"] = "Quản gia",
+    ["Banker"] = "Ngân hàng viên",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Bánh xe số phận",
+    ["Revelation Points"] = "Điểm tiết lộ",
+    ["Promotion Points"] = "Điểm thăng cấp",
+    ["Unlock Slot"] = "Mở khóa ô",
+    ["Conviction"] = "Niềm tin",
+    ["Mercy"] = "Lòng thương",
+    ["Resilience"] = "Sức chịu đựng",
+    ["Wisdom"] = "Trí tuệ",
+    ["Combat Mastery"] = "Tinh thông chiến đấu",
+    ["Gift of Life"] = "Món quà sự sống",
+    
+    -- Augments
+    ["Augment"] = "Tăng cường",
+    ["Augments"] = "Tăng cường",
+    ["Powerful"] = "Mạnh mẽ",
+    ["Intricate"] = "Phức tạp",
+    ["Basic"] = "Cơ bản",
+    
+    -- Quick Loot
+    ["Quick Loot"] = "Nhặt nhanh",
+    ["Loot All"] = "Nhặt tất cả",
+    ["Loot Gold"] = "Nhặt vàng",
+    ["Auto Loot"] = "Tự động nhặt",
+    ["Loot Container"] = "Hộp chiến lợi phẩm",
+    ["Fallback Container"] = "Hộp dự phòng",
+    
+    -- Character Status Extended
+    ["Soul Points"] = "Điểm linh hồn",
+    ["Stamina"] = "Sức chịu đựng",
+    ["Training Points"] = "Điểm huấn luyện",
+    ["Offline Training"] = "Huấn luyện offline",
+    ["Special Skills"] = "Kỹ năng đặc biệt",
+    ["Critical Hit Chance"] = "Tỷ lệ chí mạng",
+    ["Critical Hit Damage"] = "Sát thương chí mạng",
+    ["Life Leech"] = "Hút máu",
+    ["Mana Leech"] = "Hút mana",
   }
 }
 

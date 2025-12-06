@@ -612,6 +612,93 @@ local add = {
   ["Large"] = "Stor",
   ["ok"] = "ok",
   ["remove"] = "ta bort",
+  
+  -- Additional UI Elements
+  ["Store"] = "Butik",
+  ["Prey"] = "Byte",
+  ["Analytics"] = "Analys",
+  ["Reward Wall"] = "Belöningsvägg",
+  ["Daily Reward"] = "Daglig belöning",
+  ["Collect Reward"] = "Hämta belöning",
+  ["Claim"] = "Hämta",
+  ["Streak"] = "Serie",
+  ["Bonus"] = "Bonus",
+  
+  -- Prey System
+  ["Prey Creature"] = "Bytesvarelse",
+  ["Prey Bonus"] = "Bytesbonus",
+  ["Prey Duration"] = "Bytestid",
+  ["Reroll"] = "Slå om",
+  ["Lock Prey"] = "Lås byte",
+  ["Select Prey"] = "Välj byte",
+  ["Damage Bonus"] = "Skadebonus",
+  ["Defense Bonus"] = "Försvarsbonus",
+  ["Experience Bonus"] = "Erfarenhetsbonus",
+  ["Loot Bonus"] = "Bytebonus",
+  
+  -- Forge System
+  ["Forge"] = "Smedja",
+  ["Dust"] = "Damm",
+  ["Slivers"] = "Skärvor",
+  ["Exalted Core"] = "Upphöjd kärna",
+  ["Fusion"] = "Fusion",
+  ["Transfer"] = "Överföring",
+  ["Tier"] = "Nivå",
+  ["Success Rate"] = "Framgångsgrad",
+  ["Convergence Fusion"] = "Konvergensfusion",
+  ["Convergence Transfer"] = "Konvergensöverföring",
+  
+  -- Bosstiary
+  ["Bosstiary"] = "Bossbok",
+  ["Boss Tracker"] = "Bossspårare",
+  ["Boss Slots"] = "Bossplatser",
+  ["Archfoe"] = "Ärkefiende",
+  ["Bane"] = "Plåga",
+  ["Nemesis"] = "Nemesis",
+  
+  -- Cyclopedia Map
+  ["Explored"] = "Utforskat",
+  ["Unexplored"] = "Outforskat",
+  ["Discovery"] = "Upptäckt",
+  ["Area"] = "Område",
+  ["Discovered Areas"] = "Upptäckta områden",
+  
+  -- Hireling System
+  ["Hireling"] = "Anställd",
+  ["Hirelings"] = "Anställda",
+  ["Lamp"] = "Lampa",
+  ["Skills"] = "Färdigheter",
+  ["Cooking"] = "Matlagning",
+  ["Trading"] = "Handel",
+  ["Steward"] = "Förvaltare",
+  ["Banker"] = "Bankir",
+  
+  -- Wheel of Destiny
+  ["Wheel of Destiny"] = "Ödeshjulet",
+  ["Revelation Points"] = "Uppenbarelsepoäng",
+  ["Promotion Points"] = "Befordringspoäng",
+  ["Unlock Slot"] = "Lås upp plats",
+  ["Conviction"] = "Övertygelse",
+  ["Mercy"] = "Barmhärtighet",
+  ["Resilience"] = "Motståndskraft",
+  ["Wisdom"] = "Visdom",
+  ["Combat Mastery"] = "Stridsmästerskap",
+  ["Gift of Life"] = "Livets gåva",
+  
+  -- Augments
+  ["Augment"] = "Förstärkning",
+  ["Augments"] = "Förstärkningar",
+  ["Powerful"] = "Kraftfull",
+  ["Intricate"] = "Intrikat",
+  ["Basic"] = "Grundläggande",
+  
+  -- Quick Loot
+  ["Quick Loot"] = "Snabbplundring",
+  ["Loot All"] = "Plundra allt",
+  ["Loot Gold"] = "Plundra guld",
+  ["Auto Loot"] = "Autoplundring",
+  ["Loot Container"] = "Plundringsbehållare",
+  ["Fallback Container"] = "Reservbehållare",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

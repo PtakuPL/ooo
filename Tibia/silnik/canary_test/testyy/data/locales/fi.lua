@@ -763,6 +763,52 @@ local add = {
   ["Loot Bonus"] = "Saalisbonus",
   ["Prey Cards"] = "Saaliskortit",
   ["Prey Wildcards"] = "Saalisjokeri",
+  
+  -- Supply Management System
+  ["Supply Stash"] = "Tarvikkeiden Varasto",
+  ["Stash All Items"] = "Tallenna kaikki esineet",
+  ["Stash Container"] = "Varastosäiliö",
+  ["Retrieve Item"] = "Hae esine",
+  ["Item Stash"] = "Esinevarasto",
+  ["Supply Analysis"] = "Tarvikeanalyysi",
+  ["Supply Usage"] = "Tarvikkeiden käyttö",
+  ["Hunt Analysis"] = "Metsästysanalyysi",
+  ["Damage Analysis"] = "Vahinkoanalyysi",
+  ["Healing Analysis"] = "Parantamisanalyysi",
+  ["Waste Counter"] = "Hukkalaskuri",
+  ["Profit Counter"] = "Voittolaskuri",
+  ["Session Time"] = "Istuntoaika",
+  
+  -- Soul and Regeneration
+  ["Soul Points"] = "Sielupisteet",
+  ["Soul Regeneration"] = "Sielun uusiutuminen",
+  ["Soul Leech"] = "Sielun imeminen",
+  ["Regeneration"] = "Uusiutuminen",
+  ["Regeneration Rate"] = "Uusiutumisnopeus",
+  ["Mana Regeneration"] = "Manan uusiutuminen",
+  ["Health Regeneration"] = "Terveyden uusiutuminen",
+  
+  -- Character Information Extended
+  ["Character Name"] = "Hahmon nimi",
+  ["Character Level"] = "Hahmon taso",
+  ["Character Vocation"] = "Hahmon ammatti",
+  ["Skill Points"] = "Taitopisteet",
+  ["Skill Progress"] = "Taidon edistyminen",
+  ["Base Speed"] = "Perusnopeus",
+  ["Current Speed"] = "Nykyinen nopeus",
+  ["Equipment"] = "Varusteet",
+  ["Inventory"] = "Inventaario",
+  ["Store Inbox"] = "Kaupan saapuneet",
+  ["Purse"] = "Kukkaro",
+  
+  -- Party and Group Extended
+  ["Party Experience"] = "Ryhmän kokemus",
+  ["Party Shared Experience"] = "Jaettu ryhmän kokemus",
+  ["Party Leader"] = "Ryhmän johtaja",
+  ["Party Member"] = "Ryhmän jäsen",
+  ["Party Invitation"] = "Ryhmäkutsu",
+  ["Accept Party Invitation"] = "Hyväksy ryhmäkutsu",
+  ["Decline Party Invitation"] = "Hylkää ryhmäkutsu",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

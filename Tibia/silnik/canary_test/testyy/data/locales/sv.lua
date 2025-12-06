@@ -763,6 +763,52 @@ local add = {
   ["Loot Bonus"] = "Plundringsbonus",
   ["Prey Cards"] = "Byteskort",
   ["Prey Wildcards"] = "Bytesjokrar",
+  
+  -- Supply Management System
+  ["Supply Stash"] = "Förråd",
+  ["Stash All Items"] = "Lagra alla föremål",
+  ["Stash Container"] = "Lagringsbehållare",
+  ["Retrieve Item"] = "Hämta föremål",
+  ["Item Stash"] = "Föremålsförråd",
+  ["Supply Analysis"] = "Förrådsanalys",
+  ["Supply Usage"] = "Förrådsanvändning",
+  ["Hunt Analysis"] = "Jaktanalys",
+  ["Damage Analysis"] = "Skadeanalys",
+  ["Healing Analysis"] = "Läkningsanalys",
+  ["Waste Counter"] = "Avfallsräknare",
+  ["Profit Counter"] = "Vinst-räknare",
+  ["Session Time"] = "Sessionstid",
+  
+  -- Soul and Regeneration
+  ["Soul Points"] = "Själspoäng",
+  ["Soul Regeneration"] = "Själsåterhämtning",
+  ["Soul Leech"] = "Själssugning",
+  ["Regeneration"] = "Återhämtning",
+  ["Regeneration Rate"] = "Återhämtningshastighet",
+  ["Mana Regeneration"] = "Manaåterhämtning",
+  ["Health Regeneration"] = "Hälsoåterhämtning",
+  
+  -- Character Information Extended
+  ["Character Name"] = "Karaktärsnamn",
+  ["Character Level"] = "Karaktärsnivå",
+  ["Character Vocation"] = "Karaktärsyrke",
+  ["Skill Points"] = "Färdighetspoäng",
+  ["Skill Progress"] = "Färdighetsframsteg",
+  ["Base Speed"] = "Bashastighet",
+  ["Current Speed"] = "Nuvarande hastighet",
+  ["Equipment"] = "Utrustning",
+  ["Inventory"] = "Inventarium",
+  ["Store Inbox"] = "Butiksinkorg",
+  ["Purse"] = "Plånbok",
+  
+  -- Party and Group Extended
+  ["Party Experience"] = "Grupperfarenhet",
+  ["Party Shared Experience"] = "Delad grupperfarenhet",
+  ["Party Leader"] = "Gruppledare",
+  ["Party Member"] = "Gruppmedlem",
+  ["Party Invitation"] = "Gruppinbjudan",
+  ["Accept Party Invitation"] = "Acceptera gruppinbjudan",
+  ["Decline Party Invitation"] = "Avböj gruppinbjudan",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

@@ -761,6 +761,52 @@ locale = {
     ["Loot Bonus"] = "Bráðarbónus",
     ["Prey Cards"] = "Bráðarkort",
     ["Prey Wildcards"] = "Bráðar Villukort",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Birgðageymsla",
+    ["Stash All Items"] = "Geyma alla hluti",
+    ["Stash Container"] = "Geymsluílát",
+    ["Retrieve Item"] = "Sækja hlut",
+    ["Item Stash"] = "Hlutageymsla",
+    ["Supply Analysis"] = "Birgðagreining",
+    ["Supply Usage"] = "Birgðanotkun",
+    ["Hunt Analysis"] = "Veiðigreining",
+    ["Damage Analysis"] = "Skaðagreining",
+    ["Healing Analysis"] = "Lækkningargreining",
+    ["Waste Counter"] = "Úrgangsteljari",
+    ["Profit Counter"] = "Hagnaðarteljari",
+    ["Session Time"] = "Lotutími",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Sálarstig",
+    ["Soul Regeneration"] = "Sálarendurnýjun",
+    ["Soul Leech"] = "Sálarsogun",
+    ["Regeneration"] = "Endurnýjun",
+    ["Regeneration Rate"] = "Endurnýjunarhraði",
+    ["Mana Regeneration"] = "Mana endurnýjun",
+    ["Health Regeneration"] = "Heilsuendurnýjun",
+    
+    -- Character Information Extended
+    ["Character Name"] = "Persónunafn",
+    ["Character Level"] = "Persónustig",
+    ["Character Vocation"] = "Persónustarfsgrein",
+    ["Skill Points"] = "Færnistig",
+    ["Skill Progress"] = "Færniframvinda",
+    ["Base Speed"] = "Grunnhraði",
+    ["Current Speed"] = "Núverandi hraði",
+    ["Equipment"] = "Búnaður",
+    ["Inventory"] = "Birgðir",
+    ["Store Inbox"] = "Innhólf verslunar",
+    ["Purse"] = "Buddur",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "Hópreynsa",
+    ["Party Shared Experience"] = "Samnýtt hópreynsa",
+    ["Party Leader"] = "Hópstjóri",
+    ["Party Member"] = "Hópmeðlimur",
+    ["Party Invitation"] = "Hópboð",
+    ["Accept Party Invitation"] = "Samþykkja hópboð",
+    ["Decline Party Invitation"] = "Hafna hópboði",
   }
 }
 

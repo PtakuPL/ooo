@@ -24,6 +24,12 @@ Ostatnia zmiana: af.lua rozszerzony do 700+
 
 ### 🎉 WSZYSTKIE 51 JĘZYKÓW ROZSZERZONE DO 700+ LINII!
 
+### Dodatkowe rozszerzenie Tier 4 → Tier 3:
+- [x] hu.lua (Węgierski): 512 → 730+ - GOTOWE
+- [x] th.lua (Tajski): 512 → 730+ - GOTOWE
+- [ ] lt.lua (Litewski): 545 → 750+
+- [ ] sr.lua (Serbski): 545 → 750+
+
 ## Finalne statystyki
 
 ### Tier 1: Pełne pokrycie (900+ linii)

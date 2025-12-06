@@ -758,6 +758,52 @@ locale = {
     ["Loot Bonus"] = "Bonus Rampasan",
     ["Prey Cards"] = "Kad Mangsa",
     ["Prey Wildcards"] = "Kad Liar Mangsa",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Simpanan Bekalan",
+    ["Stash All Items"] = "Simpan Semua Item",
+    ["Stash Container"] = "Bekas Simpanan",
+    ["Retrieve Item"] = "Ambil Item",
+    ["Item Stash"] = "Simpanan Item",
+    ["Supply Analysis"] = "Analisis Bekalan",
+    ["Supply Usage"] = "Penggunaan Bekalan",
+    ["Hunt Analysis"] = "Analisis Pemburuan",
+    ["Damage Analysis"] = "Analisis Kerosakan",
+    ["Healing Analysis"] = "Analisis Penyembuhan",
+    ["Waste Counter"] = "Kaunter Sisa",
+    ["Profit Counter"] = "Kaunter Keuntungan",
+    ["Session Time"] = "Masa Sesi",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Mata Jiwa",
+    ["Soul Regeneration"] = "Penjanaan Jiwa",
+    ["Soul Leech"] = "Penghisap Jiwa",
+    ["Regeneration"] = "Penjanaan",
+    ["Regeneration Rate"] = "Kadar Penjanaan",
+    ["Mana Regeneration"] = "Penjanaan Mana",
+    ["Health Regeneration"] = "Penjanaan Kesihatan",
+    
+    -- Character Information Extended
+    ["Character Name"] = "Nama Watak",
+    ["Character Level"] = "Tahap Watak",
+    ["Character Vocation"] = "Pekerjaan Watak",
+    ["Skill Points"] = "Mata Kemahiran",
+    ["Skill Progress"] = "Kemajuan Kemahiran",
+    ["Base Speed"] = "Kelajuan Asas",
+    ["Current Speed"] = "Kelajuan Semasa",
+    ["Equipment"] = "Peralatan",
+    ["Inventory"] = "Inventori",
+    ["Store Inbox"] = "Peti Masuk Kedai",
+    ["Purse"] = "Dompet",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "Pengalaman Kumpulan",
+    ["Party Shared Experience"] = "Pengalaman Dikongsi Kumpulan",
+    ["Party Leader"] = "Ketua Kumpulan",
+    ["Party Member"] = "Ahli Kumpulan",
+    ["Party Invitation"] = "Jemputan Kumpulan",
+    ["Accept Party Invitation"] = "Terima Jemputan Kumpulan",
+    ["Decline Party Invitation"] = "Tolak Jemputan Kumpulan",
   }
 }
 

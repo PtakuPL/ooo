@@ -758,6 +758,52 @@ locale = {
     ["Loot Bonus"] = "Bonus Pradă",
     ["Prey Cards"] = "Cărți de Pradă",
     ["Prey Wildcards"] = "Jokeri de Pradă",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Depozit Provizii",
+    ["Stash All Items"] = "Salvează Toate Obiectele",
+    ["Stash Container"] = "Container Depozit",
+    ["Retrieve Item"] = "Recuperează Obiect",
+    ["Item Stash"] = "Depozit Obiecte",
+    ["Supply Analysis"] = "Analiza Proviziilor",
+    ["Supply Usage"] = "Utilizare Provizii",
+    ["Hunt Analysis"] = "Analiza Vânătorii",
+    ["Damage Analysis"] = "Analiza Daunelor",
+    ["Healing Analysis"] = "Analiza Vindecării",
+    ["Waste Counter"] = "Contor Risipă",
+    ["Profit Counter"] = "Contor Profit",
+    ["Session Time"] = "Timp Sesiune",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Puncte Suflet",
+    ["Soul Regeneration"] = "Regenerare Suflet",
+    ["Soul Leech"] = "Absorbție Suflet",
+    ["Regeneration"] = "Regenerare",
+    ["Regeneration Rate"] = "Rata de Regenerare",
+    ["Mana Regeneration"] = "Regenerare Mană",
+    ["Health Regeneration"] = "Regenerare Sănătate",
+    
+    -- Character Information Extended
+    ["Character Name"] = "Nume Personaj",
+    ["Character Level"] = "Nivel Personaj",
+    ["Character Vocation"] = "Vocație Personaj",
+    ["Skill Points"] = "Puncte Abilitate",
+    ["Skill Progress"] = "Progres Abilitate",
+    ["Base Speed"] = "Viteză de Bază",
+    ["Current Speed"] = "Viteză Curentă",
+    ["Equipment"] = "Echipament",
+    ["Inventory"] = "Inventar",
+    ["Store Inbox"] = "Căsuța Magazinului",
+    ["Purse"] = "Portofel",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "Experiență Grup",
+    ["Party Shared Experience"] = "Experiență Partajată Grup",
+    ["Party Leader"] = "Lider Grup",
+    ["Party Member"] = "Membru Grup",
+    ["Party Invitation"] = "Invitație la Grup",
+    ["Accept Party Invitation"] = "Acceptă Invitația la Grup",
+    ["Decline Party Invitation"] = "Refuză Invitația la Grup",
   }
 }
 

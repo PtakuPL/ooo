@@ -758,6 +758,52 @@ locale = {
     ["players online"] = "играча на мрежи",
     ["Remember Email"] = "Запамти имејл",
     ["Login automatically"] = "Аутоматска пријава",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Складиште залиха",
+    ["Stash All Items"] = "Сачувај све ставке",
+    ["Stash Container"] = "Контејнер складишта",
+    ["Retrieve Item"] = "Преузми ставку",
+    ["Item Stash"] = "Складиште ставки",
+    ["Supply Analysis"] = "Анализа залиха",
+    ["Supply Usage"] = "Коришћење залиха",
+    ["Hunt Analysis"] = "Анализа лова",
+    ["Damage Analysis"] = "Анализа штете",
+    ["Healing Analysis"] = "Анализа лечења",
+    ["Waste Counter"] = "Бројач отпада",
+    ["Profit Counter"] = "Бројач профита",
+    ["Session Time"] = "Време сесије",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Поени душе",
+    ["Soul Regeneration"] = "Регенерација душе",
+    ["Soul Leech"] = "Испијање душе",
+    ["Regeneration"] = "Регенерација",
+    ["Regeneration Rate"] = "Брзина регенерације",
+    ["Mana Regeneration"] = "Регенерација мане",
+    ["Health Regeneration"] = "Регенерација здравља",
+    
+    -- Character Information Extended
+    ["Character Name"] = "Име лика",
+    ["Character Level"] = "Ниво лика",
+    ["Character Vocation"] = "Занимање лика",
+    ["Skill Points"] = "Поени вештине",
+    ["Skill Progress"] = "Напредак вештине",
+    ["Base Speed"] = "Основна брзина",
+    ["Current Speed"] = "Тренутна брзина",
+    ["Equipment"] = "Опрема",
+    ["Inventory"] = "Инвентар",
+    ["Store Inbox"] = "Пријемни сандуче продавнице",
+    ["Purse"] = "Новчаник",
+    
+    -- Party and Group Extended
+    ["Party Experience"] = "Искуство групе",
+    ["Party Shared Experience"] = "Дељено искуство групе",
+    ["Party Leader"] = "Вођа групе",
+    ["Party Member"] = "Члан групе",
+    ["Party Invitation"] = "Позив у групу",
+    ["Accept Party Invitation"] = "Прихвати позив у групу",
+    ["Decline Party Invitation"] = "Одбиј позив у групу",
   }
 }
 

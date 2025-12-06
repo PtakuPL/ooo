@@ -16,9 +16,17 @@ Plik roboczy do śledzenia postępu tłumaczeń. Zawiera krótkie notatki o wyko
 - [x] fi.lua (Fiński): 484 → 700+ (+216) - GOTOWE
 - [x] no.lua (Norweski): 484 → 700+ (+216) - GOTOWE
 - [x] fa.lua (Perski): 480 → 700+ (+220) - GOTOWE
-- [ ] ro.lua (Rumuński): 471 → 700+
-- [ ] bn.lua (Bengalski): 466 → 700+
-- [ ] ms.lua (Malajski): 455 → 700+
+- [x] ro.lua (Rumuński): 471 → 700+ (+229) - GOTOWE
+- [x] bn.lua (Bengalski): 466 → 700+ (+234) - GOTOWE
+- [x] ms.lua (Malajski): 455 → 700+ (+245) - GOTOWE
+
+### Następna partia do rozszerzenia:
+- [ ] ca.lua (Kataloński): 447 → 700+
+- [ ] et.lua (Estoński): 447 → 700+
+- [ ] gl.lua (Galicyjski): 447 → 700+
+- [ ] lv.lua (Łotewski): 448 → 700+
+- [ ] az.lua (Azerski): 441 → 700+
+- [ ] eu.lua (Baskijski): 441 → 700+
 
 ### Poprzednio rozszerzone (434 → 650+ linii):
 - is.lua (Islandzki), mk.lua (Macedoński), sq.lua (Albański)

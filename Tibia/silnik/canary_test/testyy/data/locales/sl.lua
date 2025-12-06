@@ -790,6 +790,12 @@ locale = {
     ["players online"] = "igralcev povezanih",
     ["Remember Email"] = "Zapomni si e-pošto",
     ["Login automatically"] = "Samodejna prijava",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Skladišče zalog",
+    ["Stash All Items"] = "Shrani vse predmete",
+    ["Stash Container"] = "Zabojnik skladišča",
+    ["Retrieve Item"] = "Vzemi predmet",
   }
 }
 

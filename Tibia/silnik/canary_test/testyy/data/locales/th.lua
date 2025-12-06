@@ -791,6 +791,12 @@ locale = {
     ["Loot Bonus"] = "โบนัสของตก",
     ["Prey Cards"] = "การ์ดเหยื่อ",
     ["Prey Wildcards"] = "ไวล์ดการ์ดเหยื่อ",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "คลังเสบียง",
+    ["Stash All Items"] = "เก็บไอเทมทั้งหมด",
+    ["Stash Container"] = "ภาชนะเก็บของ",
+    ["Retrieve Item"] = "เอาไอเทมออก",
   }
 }
 

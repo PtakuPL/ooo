@@ -781,6 +781,15 @@ locale = {
     ["Loot Bonus"] = "लूट बोनस",
     ["Prey Cards"] = "शिकार कार्ड",
     ["Prey Wildcards"] = "शिकार वाइल्डकार्ड",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "आपूर्ति भंडार",
+    ["Stash All Items"] = "सभी वस्तुएं जमा करें",
+    ["Stash Container"] = "भंडारण कंटेनर",
+    ["Retrieve Item"] = "वस्तु लें",
+    ["Item Stash"] = "वस्तु भंडार",
+    ["Supply Analysis"] = "आपूर्ति विश्लेषण",
+    ["Supply Usage"] = "आपूर्ति उपयोग",
   }
 }
 

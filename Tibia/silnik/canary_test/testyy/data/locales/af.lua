@@ -779,6 +779,15 @@ locale = {
     ["Loot Bonus"] = "Buit Bonus",
     ["Prey Cards"] = "Prooi Kaarte",
     ["Prey Wildcards"] = "Prooi Jokers",
+    
+    -- Supply Management System
+    ["Supply Stash"] = "Voorraad Bergplek",
+    ["Stash All Items"] = "Berg alle items",
+    ["Stash Container"] = "Berghouer",
+    ["Retrieve Item"] = "Haal item",
+    ["Item Stash"] = "Item Bergplek",
+    ["Supply Analysis"] = "Voorraad Analise",
+    ["Supply Usage"] = "Voorraad Gebruik",
   }
 }
 

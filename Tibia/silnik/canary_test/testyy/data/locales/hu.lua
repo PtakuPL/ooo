@@ -791,6 +791,12 @@ local add = {
   ["Loot Bonus"] = "Zsákmány Bónusz",
   ["Prey Cards"] = "Zsákmány Kártyák",
   ["Prey Wildcards"] = "Zsákmány Jokerek",
+  
+  -- Supply Management System
+  ["Supply Stash"] = "Készlet Raktár",
+  ["Stash All Items"] = "Minden tárgy tárolása",
+  ["Stash Container"] = "Tároló konténer",
+  ["Retrieve Item"] = "Tárgy kivétele",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

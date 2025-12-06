@@ -694,6 +694,70 @@ locale = {
     -- Quick Loot
     ["Quick Loot"] = "Sürətli Talan",
     ["Loot All"] = "Hamısını Talan Et",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Bosstiary",
+    ["Boss Tracker"] = "Boss İzləyicisi",
+    ["Boss Kills"] = "Boss Öldürmələri",
+    ["Archfoe"] = "Arxdüşmən",
+    ["Bane"] = "Bela",
+    ["Nemesis"] = "Nemesis",
+    ["Boss Points"] = "Boss Xalları",
+    ["Unlock Slot"] = "Yuvayı Aç",
+    ["Equipped"] = "Geyilmiş",
+    
+    -- Market System
+    ["Market"] = "Bazar",
+    ["Browse Offers"] = "Təkliflərə Bax",
+    ["My Offers"] = "Mənim Təkliflərim",
+    ["My History"] = "Mənim Tarixim",
+    ["Buy Offer"] = "Alış Təklifi",
+    ["Sell Offer"] = "Satış Təklifi",
+    ["Create Offer"] = "Təklif Yarat",
+    ["Cancel Offer"] = "Təklifi Ləğv Et",
+    ["Amount"] = "Miqdar",
+    ["Total Price"] = "Ümumi Qiymət",
+    ["Piece Price"] = "Vahid Qiyməti",
+    ["Statistics"] = "Statistika",
+    ["Transactions"] = "Əməliyyatlar",
+    ["Average Prices"] = "Orta Qiymətlər",
+    ["Highest Prices"] = "Ən Yüksək Qiymətlər",
+    ["Lowest Prices"] = "Ən Aşağı Qiymətlər",
+    
+    -- Forge System
+    ["Forge"] = "Döymə",
+    ["Dust Converter"] = "Toz Çevirici",
+    ["Fusion"] = "Birləşmə",
+    ["Transfer"] = "Köçürmə",
+    ["Tier"] = "Səviyyə",
+    ["Success Chance"] = "Uğur Şansı",
+    ["Dust"] = "Toz",
+    ["Slivers"] = "Parçalar",
+    ["Cores"] = "Nüvələr",
+    ["Exalted Cores"] = "Yüksəldilmiş Nüvələr",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Taleyin Çarxı",
+    ["Revelation Points"] = "Kəşf Xalları",
+    ["Promotion Points"] = "Yüksəliş Xalları",
+    ["Gift of Life"] = "Həyat Hədiyyəsi",
+    ["Divine Empowerment"] = "İlahi Güclənmə",
+    ["Blessing of the Grove"] = "Meşə Xeyir-duası",
+    ["Combat Mastery"] = "Döyüş Ustadlığı",
+    ["Healing Link"] = "Şəfa Bağlantısı",
+    
+    -- Prey System
+    ["Prey"] = "Ov",
+    ["Prey Bonus"] = "Ov Bonusu",
+    ["Prey Slot"] = "Ov Yuvası",
+    ["Select Creature"] = "Canlı Seç",
+    ["Bonus Type"] = "Bonus Növü",
+    ["Damage Boost"] = "Zərər Artımı",
+    ["Defense Boost"] = "Müdafiə Artımı",
+    ["XP Bonus"] = "XP Bonusu",
+    ["Loot Bonus"] = "Talan Bonusu",
+    ["Prey Cards"] = "Ov Kartları",
+    ["Prey Wildcards"] = "Ov Joker Kartları",
   }
 }
 

@@ -694,6 +694,69 @@ locale = {
     ["Bosstiary"] = "বস বই",
     ["Boss Tracker"] = "বস ট্র্যাকার",
     ["Quick Loot"] = "দ্রুত লুট",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "বসটিয়ারি",
+    ["Boss Kills"] = "বস হত্যা",
+    ["Archfoe"] = "প্রধান শত্রু",
+    ["Bane"] = "অভিশাপ",
+    ["Nemesis"] = "নেমেসিস",
+    ["Boss Points"] = "বস পয়েন্ট",
+    ["Unlock Slot"] = "স্লট আনলক করুন",
+    ["Equipped"] = "সজ্জিত",
+    
+    -- Market System
+    ["Market"] = "বাজার",
+    ["Browse Offers"] = "অফার ব্রাউজ করুন",
+    ["My Offers"] = "আমার অফার",
+    ["My History"] = "আমার ইতিহাস",
+    ["Buy Offer"] = "ক্রয় অফার",
+    ["Sell Offer"] = "বিক্রয় অফার",
+    ["Create Offer"] = "অফার তৈরি করুন",
+    ["Cancel Offer"] = "অফার বাতিল করুন",
+    ["Amount"] = "পরিমাণ",
+    ["Total Price"] = "মোট মূল্য",
+    ["Piece Price"] = "প্রতি পিস মূল্য",
+    ["Statistics"] = "পরিসংখ্যান",
+    ["Transactions"] = "লেনদেন",
+    ["Average Prices"] = "গড় মূল্য",
+    ["Highest Prices"] = "সর্বোচ্চ মূল্য",
+    ["Lowest Prices"] = "সর্বনিম্ন মূল্য",
+    
+    -- Forge System
+    ["Forge"] = "ফোর্জ",
+    ["Dust Converter"] = "ধুলো রূপান্তরকারী",
+    ["Fusion"] = "ফিউশন",
+    ["Transfer"] = "স্থানান্তর",
+    ["Tier"] = "স্তর",
+    ["Success Chance"] = "সাফল্যের সম্ভাবনা",
+    ["Dust"] = "ধুলো",
+    ["Slivers"] = "টুকরো",
+    ["Cores"] = "কোর",
+    ["Exalted Cores"] = "উন্নত কোর",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "ভাগ্যের চাকা",
+    ["Revelation Points"] = "প্রকাশ পয়েন্ট",
+    ["Promotion Points"] = "প্রমোশন পয়েন্ট",
+    ["Gift of Life"] = "জীবনের উপহার",
+    ["Divine Empowerment"] = "ঐশ্বরিক ক্ষমতায়ন",
+    ["Blessing of the Grove"] = "বনের আশীর্বাদ",
+    ["Combat Mastery"] = "যুদ্ধ দক্ষতা",
+    ["Healing Link"] = "নিরাময় সংযোগ",
+    
+    -- Prey System
+    ["Prey"] = "শিকার",
+    ["Prey Bonus"] = "শিকার বোনাস",
+    ["Prey Slot"] = "শিকার স্লট",
+    ["Select Creature"] = "প্রাণী নির্বাচন করুন",
+    ["Bonus Type"] = "বোনাস প্রকার",
+    ["Damage Boost"] = "ক্ষতি বৃদ্ধি",
+    ["Defense Boost"] = "প্রতিরক্ষা বৃদ্ধি",
+    ["XP Bonus"] = "XP বোনাস",
+    ["Loot Bonus"] = "লুট বোনাস",
+    ["Prey Cards"] = "শিকার কার্ড",
+    ["Prey Wildcards"] = "শিকার ওয়াইল্ডকার্ড",
   }
 }
 

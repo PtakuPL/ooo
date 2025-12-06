@@ -694,6 +694,70 @@ locale = {
     ["Boss Tracker"] = "Bossi Jälgija",
     ["Quick Loot"] = "Kiire Röövimine",
     ["Loot All"] = "Röövi Kõik",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Bosstiary",
+    ["Boss Tracker"] = "Bossi Jälitaja",
+    ["Boss Kills"] = "Bossi Tapmised",
+    ["Archfoe"] = "Peavaenlane",
+    ["Bane"] = "Nuhtlus",
+    ["Nemesis"] = "Nemesis",
+    ["Boss Points"] = "Bossi Punktid",
+    ["Unlock Slot"] = "Ava Pesa",
+    ["Equipped"] = "Varustatud",
+    
+    -- Market System
+    ["Market"] = "Turg",
+    ["Browse Offers"] = "Sirvi Pakkumisi",
+    ["My Offers"] = "Minu Pakkumised",
+    ["My History"] = "Minu Ajalugu",
+    ["Buy Offer"] = "Ostupakkumine",
+    ["Sell Offer"] = "Müügipakkumine",
+    ["Create Offer"] = "Loo Pakkumine",
+    ["Cancel Offer"] = "Tühista Pakkumine",
+    ["Amount"] = "Kogus",
+    ["Total Price"] = "Koguhind",
+    ["Piece Price"] = "Ühiku Hind",
+    ["Statistics"] = "Statistika",
+    ["Transactions"] = "Tehingud",
+    ["Average Prices"] = "Keskmised Hinnad",
+    ["Highest Prices"] = "Kõrgeimad Hinnad",
+    ["Lowest Prices"] = "Madalaimad Hinnad",
+    
+    -- Forge System
+    ["Forge"] = "Sepikoda",
+    ["Dust Converter"] = "Tolmu Muundur",
+    ["Fusion"] = "Sulandumine",
+    ["Transfer"] = "Ülekanne",
+    ["Tier"] = "Tase",
+    ["Success Chance"] = "Õnnestumise Võimalus",
+    ["Dust"] = "Tolm",
+    ["Slivers"] = "Killud",
+    ["Cores"] = "Tuumad",
+    ["Exalted Cores"] = "Ülendatud Tuumad",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Saatuse Ratas",
+    ["Revelation Points"] = "Ilmutuse Punktid",
+    ["Promotion Points"] = "Edutamise Punktid",
+    ["Gift of Life"] = "Elu Kingitus",
+    ["Divine Empowerment"] = "Jumalik Võimustamine",
+    ["Blessing of the Grove"] = "Salmu Õnnistus",
+    ["Combat Mastery"] = "Võitlusmeisterlikkus",
+    ["Healing Link"] = "Tervenduse Side",
+    
+    -- Prey System
+    ["Prey"] = "Saak",
+    ["Prey Bonus"] = "Saagi Boonus",
+    ["Prey Slot"] = "Saagi Pesa",
+    ["Select Creature"] = "Vali Olend",
+    ["Bonus Type"] = "Boonuse Tüüp",
+    ["Damage Boost"] = "Kahju Suurendus",
+    ["Defense Boost"] = "Kaitse Suurendus",
+    ["XP Bonus"] = "XP Boonus",
+    ["Loot Bonus"] = "Saagi Boonus",
+    ["Prey Cards"] = "Saagi Kaardid",
+    ["Prey Wildcards"] = "Saagi Jokkerid",
   }
 }
 

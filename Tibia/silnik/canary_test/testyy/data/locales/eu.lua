@@ -694,6 +694,70 @@ locale = {
     -- Quick Loot
     ["Quick Loot"] = "Arin Harrapaketa",
     ["Loot All"] = "Dena Harrapatu",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Bosstiary",
+    ["Boss Tracker"] = "Nagusi Jarraitzailea",
+    ["Boss Kills"] = "Nagusi Hilketak",
+    ["Archfoe"] = "Arerioa",
+    ["Bane"] = "Zigor",
+    ["Nemesis"] = "Nemesis",
+    ["Boss Points"] = "Nagusi Puntuak",
+    ["Unlock Slot"] = "Desblokeatu Zirrikitua",
+    ["Equipped"] = "Jantzita",
+    
+    -- Market System
+    ["Market"] = "Merkatua",
+    ["Browse Offers"] = "Eskaintzak Arakatu",
+    ["My Offers"] = "Nire Eskaintzak",
+    ["My History"] = "Nire Historia",
+    ["Buy Offer"] = "Erosketa Eskaintza",
+    ["Sell Offer"] = "Salmenta Eskaintza",
+    ["Create Offer"] = "Eskaintza Sortu",
+    ["Cancel Offer"] = "Eskaintza Bertan Behera Utzi",
+    ["Amount"] = "Kopurua",
+    ["Total Price"] = "Guztizko Prezioa",
+    ["Piece Price"] = "Unitateko Prezioa",
+    ["Statistics"] = "Estatistikak",
+    ["Transactions"] = "Transakzioak",
+    ["Average Prices"] = "Batez Besteko Prezioak",
+    ["Highest Prices"] = "Prezio Altuenak",
+    ["Lowest Prices"] = "Prezio Baxuenak",
+    
+    -- Forge System
+    ["Forge"] = "Surtegi",
+    ["Dust Converter"] = "Hauts Bihurtzailea",
+    ["Fusion"] = "Fusioa",
+    ["Transfer"] = "Transferentzia",
+    ["Tier"] = "Maila",
+    ["Success Chance"] = "Arrakasta Aukera",
+    ["Dust"] = "Hautsa",
+    ["Slivers"] = "Zatiak",
+    ["Cores"] = "Nukleoak",
+    ["Exalted Cores"] = "Nukleo Goratuak",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Patuko Gurpila",
+    ["Revelation Points"] = "Errebelazio Puntuak",
+    ["Promotion Points"] = "Promozio Puntuak",
+    ["Gift of Life"] = "Bizitzaren Oparia",
+    ["Divine Empowerment"] = "Ahalduntze Jainkotiarra",
+    ["Blessing of the Grove"] = "Oihanaren Bedeinkazioa",
+    ["Combat Mastery"] = "Borroka Maisutasuna",
+    ["Healing Link"] = "Sendaketa Lotura",
+    
+    -- Prey System
+    ["Prey"] = "Harrapakina",
+    ["Prey Bonus"] = "Harrapakina Bonusa",
+    ["Prey Slot"] = "Harrapakina Zirrikitua",
+    ["Select Creature"] = "Izakia Aukeratu",
+    ["Bonus Type"] = "Bonus Mota",
+    ["Damage Boost"] = "Kalte Handitzea",
+    ["Defense Boost"] = "Defentsa Handitzea",
+    ["XP Bonus"] = "XP Bonusa",
+    ["Loot Bonus"] = "Harrapaketa Bonusa",
+    ["Prey Cards"] = "Harrapakina Txartelak",
+    ["Prey Wildcards"] = "Harrapakina Komodinak",
   }
 }
 

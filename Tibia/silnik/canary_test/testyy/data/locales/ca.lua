@@ -694,6 +694,70 @@ locale = {
     ["Boss Tracker"] = "Rastrejador de Boss",
     ["Quick Loot"] = "Saqueig Ràpid",
     ["Loot All"] = "Saquejar Tot",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Bosstiari",
+    ["Boss Tracker"] = "Rastrejador de Caps",
+    ["Boss Kills"] = "Morts de Caps",
+    ["Archfoe"] = "Arxenemic",
+    ["Bane"] = "Maledicció",
+    ["Nemesis"] = "Nèmesi",
+    ["Boss Points"] = "Punts de Cap",
+    ["Unlock Slot"] = "Desbloquejar Ranura",
+    ["Equipped"] = "Equipat",
+    
+    -- Market System
+    ["Market"] = "Mercat",
+    ["Browse Offers"] = "Navegar Ofertes",
+    ["My Offers"] = "Les Meves Ofertes",
+    ["My History"] = "El Meu Historial",
+    ["Buy Offer"] = "Oferta de Compra",
+    ["Sell Offer"] = "Oferta de Venda",
+    ["Create Offer"] = "Crear Oferta",
+    ["Cancel Offer"] = "Cancel·lar Oferta",
+    ["Amount"] = "Quantitat",
+    ["Total Price"] = "Preu Total",
+    ["Piece Price"] = "Preu per Unitat",
+    ["Statistics"] = "Estadístiques",
+    ["Transactions"] = "Transaccions",
+    ["Average Prices"] = "Preus Mitjans",
+    ["Highest Prices"] = "Preus Més Alts",
+    ["Lowest Prices"] = "Preus Més Baixos",
+    
+    -- Forge System
+    ["Forge"] = "Forja",
+    ["Dust Converter"] = "Convertidor de Pols",
+    ["Fusion"] = "Fusió",
+    ["Transfer"] = "Transferència",
+    ["Tier"] = "Nivell",
+    ["Success Chance"] = "Probabilitat d'Èxit",
+    ["Dust"] = "Pols",
+    ["Slivers"] = "Fragments",
+    ["Cores"] = "Nuclis",
+    ["Exalted Cores"] = "Nuclis Exaltats",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Roda del Destí",
+    ["Revelation Points"] = "Punts de Revelació",
+    ["Promotion Points"] = "Punts de Promoció",
+    ["Gift of Life"] = "Regal de Vida",
+    ["Divine Empowerment"] = "Empoderament Diví",
+    ["Blessing of the Grove"] = "Benedicció del Bosc",
+    ["Combat Mastery"] = "Mestratge de Combat",
+    ["Healing Link"] = "Enllaç de Curació",
+    
+    -- Prey System
+    ["Prey"] = "Presa",
+    ["Prey Bonus"] = "Bonus de Presa",
+    ["Prey Slot"] = "Ranura de Presa",
+    ["Select Creature"] = "Seleccionar Criatura",
+    ["Bonus Type"] = "Tipus de Bonus",
+    ["Damage Boost"] = "Augment de Dany",
+    ["Defense Boost"] = "Augment de Defensa",
+    ["XP Bonus"] = "Bonus d'XP",
+    ["Loot Bonus"] = "Bonus de Botí",
+    ["Prey Cards"] = "Cartes de Presa",
+    ["Prey Wildcards"] = "Comodins de Presa",
   }
 }
 

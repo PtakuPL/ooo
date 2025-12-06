@@ -10,12 +10,19 @@ Plik roboczy do śledzenia postępu tłumaczeń. Zawiera krótkie notatki o wyko
 - Format: `["klucz"] = "tłumaczenie",`
 - Lokalizacja: `data/locales/XX.lua`
 
-## Ostatnia aktualizacja: Dodatkowe rozszerzenie Tier 5
+## Aktualna sesja robocza
 
-Rozszerzono najniższe języki (434 → 650+ linii):
-- **is.lua (Islandzki)**: 434 → 650+ linii (+216)
-- **mk.lua (Macedoński)**: 434 → 650+ linii (+216)  
-- **sq.lua (Albański)**: 434 → 650+ linii (+216)
+### W trakcie: Rozszerzanie Tier 5 (484→700+ linii)
+- [x] fi.lua (Fiński): 484 → 700+ (+216) - GOTOWE
+- [x] no.lua (Norweski): 484 → 700+ (+216) - GOTOWE
+- [x] fa.lua (Perski): 480 → 700+ (+220) - GOTOWE
+- [ ] ro.lua (Rumuński): 471 → 700+
+- [ ] bn.lua (Bengalski): 466 → 700+
+- [ ] ms.lua (Malajski): 455 → 700+
+
+### Poprzednio rozszerzone (434 → 650+ linii):
+- is.lua (Islandzki), mk.lua (Macedoński), sq.lua (Albański)
+- hi.lua (Hindi), id.lua (Indonezyjski)
 
 ## Finalne statystyki
 

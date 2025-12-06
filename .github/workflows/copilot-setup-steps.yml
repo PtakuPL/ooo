@@ -10,7 +10,6 @@ on:
       - .github/workflows/copilot-setup-steps.yml
 
 jobs:
-  # nazwa MUSI być dokładnie taka:
   copilot-setup-steps:
     runs-on: ubuntu-latest
     permissions:
@@ -20,8 +19,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
-      - name: Install tools for multi-language analysis
+      - name: Install base tools for Copilot agent
         run: |
           sudo apt-get update
-          # fonttools (TTF analiza) + hb-shape (HarfBuzz CLI)
-          sudo apt-get install -y fonttools libharfbuzz-bin
+          sudo apt-get install -y \
+            ripgrep fd-find jq tree sqlite3
+
+      - name: Install C++ analysis tools (clang-tidy, cppcheck)
+        run: |
+          sudo apt-get install -y \
+            clang-tidy \
+            cppcheck
+
+      - name: Install fonts & HarfBuzz tools (for multilingual analysis)
+        run: |
+          sudo apt-get install -y \
+            fonttools \
+            libharfbuzz-bin

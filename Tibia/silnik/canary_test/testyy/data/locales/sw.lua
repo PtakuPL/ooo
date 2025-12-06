@@ -712,7 +712,44 @@ locale = {
     ["Your request has been closed"] = "Ombi lako limefungwa",
     ["There is no way."] = "Hakuna njia.",
     ["You can enter new text."] = "Unaweza kuingiza maandishi mapya.",
-    ["Unable to logout."] = "Haikuweza kutoka."
+    ["Unable to logout."] = "Haikuweza kutoka.",
+    
+    -- Status Effects
+    ["You are bleeding"] = "Unachuja damu",
+    ["You are burning"] = "Unaungua",
+    ["You are cursed"] = "Umelaaniwa",
+    ["You are dazzled"] = "Umepofushwa",
+    ["You are dead"] = "Umekufa",
+    ["You are dead."] = "Umekufa.",
+    ["You are drowning"] = "Unazama",
+    ["You are drunk"] = "Umelewa",
+    ["You are electrified"] = "Umepigwa na umeme",
+    ["You are freezing"] = "Unaganda",
+    ["You are hasted"] = "Umeharakishwa",
+    ["You are hungry"] = "Una njaa",
+    ["You are paralysed"] = "Umepooza",
+    ["You are poisoned"] = "Umepewa sumu",
+    ["You are protected by a magic shield"] = "Umelindwa na ngao ya uchawi",
+    ["You are strengthened"] = "Umeimarishwa",
+    ["You are within a protection zone"] = "Uko ndani ya eneo la ulinzi",
+    
+    -- Combat
+    ["Damage"] = "Uharibifu",
+    ["Healing"] = "Uponyaji",
+    ["Critical Hit"] = "Pigo muhimu",
+    ["Critical Hits"] = "Mapigo muhimu",
+    ["Life Leech"] = "Kunyonya uhai",
+    ["Mana Leech"] = "Kunyonya mana",
+    
+    -- Tasks
+    ["Tasks"] = "Kazi",
+    ["Task"] = "Kazi",
+    ["Daily Tasks"] = "Kazi za kila siku",
+    ["Weekly Tasks"] = "Kazi za kila wiki",
+    ["Reward"] = "Tuzo",
+    ["Rewards"] = "Tuzo",
+    ["Claim Reward"] = "Dai tuzo",
+    ["Progress"] = "Maendeleo"
   }
 }
 

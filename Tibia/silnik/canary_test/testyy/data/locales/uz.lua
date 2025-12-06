@@ -712,7 +712,44 @@ locale = {
     ["Your request has been closed"] = "Sizning so'rovingiz yopildi",
     ["There is no way."] = "Yo'l yo'q.",
     ["You can enter new text."] = "Siz yangi matn kiritishingiz mumkin.",
-    ["Unable to logout."] = "Chiqib bo'lmadi."
+    ["Unable to logout."] = "Chiqib bo'lmadi.",
+    
+    -- Status Effects
+    ["You are bleeding"] = "Siz qon ketayapsiz",
+    ["You are burning"] = "Siz yonayapsiz",
+    ["You are cursed"] = "Siz la'natlangansiz",
+    ["You are dazzled"] = "Siz ko'zingiz qamashdi",
+    ["You are dead"] = "Siz o'lgansiz",
+    ["You are dead."] = "Siz o'lgansiz.",
+    ["You are drowning"] = "Siz cho'kayapsiz",
+    ["You are drunk"] = "Siz mastmansiz",
+    ["You are electrified"] = "Siz tok urdi",
+    ["You are freezing"] = "Siz muzlayapsiz",
+    ["You are hasted"] = "Siz tezlashdingiz",
+    ["You are hungry"] = "Siz ochsiz",
+    ["You are paralysed"] = "Siz falaj bo'ldingiz",
+    ["You are poisoned"] = "Siz zaharlangansiz",
+    ["You are protected by a magic shield"] = "Siz sehrli qalqon bilan himoyalangansiz",
+    ["You are strengthened"] = "Siz kuchaydingiz",
+    ["You are within a protection zone"] = "Siz himoya zonasidamisiz",
+    
+    -- Combat
+    ["Damage"] = "Zarar",
+    ["Healing"] = "Davolash",
+    ["Critical Hit"] = "Tanqidiy zarba",
+    ["Critical Hits"] = "Tanqidiy zarbalar",
+    ["Life Leech"] = "Hayotni so'rish",
+    ["Mana Leech"] = "Manani so'rish",
+    
+    -- Tasks
+    ["Tasks"] = "Vazifalar",
+    ["Task"] = "Vazifa",
+    ["Daily Tasks"] = "Kundalik vazifalar",
+    ["Weekly Tasks"] = "Haftalik vazifalar",
+    ["Reward"] = "Mukofot",
+    ["Rewards"] = "Mukofotlar",
+    ["Claim Reward"] = "Mukofotni olish",
+    ["Progress"] = "Taraqqiyot"
   }
 }
 

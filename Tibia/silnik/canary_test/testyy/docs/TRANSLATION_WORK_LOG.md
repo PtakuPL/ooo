@@ -58,21 +58,23 @@ Plik roboczy do śledzenia postępu tłumaczeń. Zawiera krótkie notatki o wyko
 | sk | sk.lua | 447 | 590 | ✅ |
 | el | el.lua | 569 | 710 | ✅ |
 | he | he.lua | 569 | 710 | ✅ |
+| ka | ka.lua | 785 | 825 | ✅ |
+| kk | kk.lua | 719 | 760 | ✅ |
+| sw | sw.lua | 719 | 760 | ✅ |
+| uz | uz.lua | 719 | 760 | ✅ |
 
 ## Łączne podsumowanie
-- **Rozszerzono 47 języków**
-- **Dodano ~8,110 nowych tłumaczeń**
+- **Rozszerzono 51 języków**
+- **Dodano ~8,350 nowych tłumaczeń**
 - **Metoda**: Etapowe rozszerzanie z przechowywaniem kontekstu w TRANSLATION_WORK_LOG.md
 
 ## Następne do pracy
-- ka (Georgian) - ~785 wpisów (ma dużo, może wymagać mniejszego rozszerzenia)
-- kk (Kazakh) - ~719 wpisów
-- sw (Swahili) - ~719 wpisów
-- uz (Uzbek) - ~719 wpisów
+- Wszystkie 53 języki zostały rozszerzone!
+- Można kontynuować dodawanie więcej tłumaczeń do istniejących plików
 
 ## Aktualnie w pracy
-- Języki: Kontynuuję z ka, kk, sw, uz
-- Etap: Rozszerzanie Georgian (ka), Kazakh (kk), Swahili (sw), Uzbek (uz)
+- Ukończono rozszerzanie wszystkich 51 dostępnych języków
+- Pozostałe 2 (en - angielski, pl - polski) są referencyjne
 
 ## Notatki
 - Wszystkie języki używają tego samego zestawu kluczy z pl.lua

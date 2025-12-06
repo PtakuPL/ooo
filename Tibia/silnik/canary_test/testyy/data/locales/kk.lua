@@ -712,7 +712,44 @@ locale = {
     ["Your request has been closed"] = "Сұрауыңыз жабылды",
     ["There is no way."] = "Жол жоқ.",
     ["You can enter new text."] = "Жаңа мәтін енгізе аласыз.",
-    ["Unable to logout."] = "Шығу мүмкін емес."
+    ["Unable to logout."] = "Шығу мүмкін емес.",
+    
+    -- Status Effects
+    ["You are bleeding"] = "Сіз қан кетіп жатырсыз",
+    ["You are burning"] = "Сіз жанып жатырсыз",
+    ["You are cursed"] = "Сіз қарғысқа ұшырадыңыз",
+    ["You are dazzled"] = "Сіздің көзіңіз қамасты",
+    ["You are dead"] = "Сіз өлдіңіз",
+    ["You are dead."] = "Сіз өлдіңіз.",
+    ["You are drowning"] = "Сіз батып жатырсыз",
+    ["You are drunk"] = "Сіз мас боласыз",
+    ["You are electrified"] = "Сіз ток соқты",
+    ["You are freezing"] = "Сіз қатып жатырсыз",
+    ["You are hasted"] = "Сіз жылдамдадыңыз",
+    ["You are hungry"] = "Сіз ашсыз",
+    ["You are paralysed"] = "Сіз салданып қалдыңыз",
+    ["You are poisoned"] = "Сіз улансыз",
+    ["You are protected by a magic shield"] = "Сіз сиқырлы қалқанмен қорғалғансыз",
+    ["You are strengthened"] = "Сіз күшейтілдіңіз",
+    ["You are within a protection zone"] = "Сіз қорғау аймағындасыз",
+    
+    -- Combat
+    ["Damage"] = "Зақым",
+    ["Healing"] = "Емдеу",
+    ["Critical Hit"] = "Сыни соққы",
+    ["Critical Hits"] = "Сыни соққылар",
+    ["Life Leech"] = "Өмірді сору",
+    ["Mana Leech"] = "Мананы сору",
+    
+    -- Tasks
+    ["Tasks"] = "Тапсырмалар",
+    ["Task"] = "Тапсырма",
+    ["Daily Tasks"] = "Күнделікті тапсырмалар",
+    ["Weekly Tasks"] = "Апталық тапсырмалар",
+    ["Reward"] = "Сыйлық",
+    ["Rewards"] = "Сыйлықтар",
+    ["Claim Reward"] = "Сыйлықты алу",
+    ["Progress"] = "Ілгерілеу"
   }
 }
 

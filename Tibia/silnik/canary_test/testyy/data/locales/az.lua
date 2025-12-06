@@ -682,6 +682,18 @@ locale = {
     ["Transfer"] = "Köçürmə",
     ["Tier"] = "Səviyyə",
     ["Success Rate"] = "Uğur Nisbəti",
+    
+    -- Bosstiary
+    ["Bosstiary"] = "Boss Kitabı",
+    ["Boss Tracker"] = "Boss İzləyici",
+    ["Boss Slots"] = "Boss Yuvalar",
+    ["Archfoe"] = "Baş Düşmən",
+    ["Bane"] = "Bəla",
+    ["Nemesis"] = "Nemesis",
+    
+    -- Quick Loot
+    ["Quick Loot"] = "Sürətli Talan",
+    ["Loot All"] = "Hamısını Talan Et",
   }
 }
 

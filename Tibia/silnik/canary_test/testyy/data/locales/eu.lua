@@ -682,6 +682,18 @@ locale = {
     ["Transfer"] = "Transferentzia",
     ["Tier"] = "Maila",
     ["Success Rate"] = "Arrakasta Tasa",
+    
+    -- Bosstiary
+    ["Bosstiary"] = "Boss Liburua",
+    ["Boss Tracker"] = "Boss Jarraitzaile",
+    ["Boss Slots"] = "Boss Artezkiak",
+    ["Archfoe"] = "Etsai Nagusia",
+    ["Bane"] = "Izurri",
+    ["Nemesis"] = "Nemesis",
+    
+    -- Quick Loot
+    ["Quick Loot"] = "Arin Harrapaketa",
+    ["Loot All"] = "Dena Harrapatu",
   }
 }
 

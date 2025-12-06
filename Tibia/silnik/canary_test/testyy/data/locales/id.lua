@@ -687,6 +687,14 @@ locale = {
     ["Transfer"] = "Transfer",
     ["Tier"] = "Tingkat",
     ["Success Rate"] = "Tingkat Sukses",
+    
+    -- Bosstiary
+    ["Bosstiary"] = "Buku Bos",
+    ["Boss Tracker"] = "Pelacak Bos",
+    ["Boss Slots"] = "Slot Bos",
+    ["Archfoe"] = "Musuh Utama",
+    ["Bane"] = "Kutukan",
+    ["Nemesis"] = "Nemesis",
   }
 }
 

@@ -682,6 +682,18 @@ locale = {
     ["Transfer"] = "P'okhancum",
     ["Tier"] = "Makardak",
     ["Success Rate"] = "Hajoghutyun Gorts",
+    
+    -- Bosstiary
+    ["Bosstiary"] = "Boss Girk'",
+    ["Boss Tracker"] = "Boss Hetevog",
+    ["Boss Slots"] = "Boss Vayrers",
+    ["Archfoe"] = "Glkhavor Tshnamni",
+    ["Bane"] = "Anets'k'",
+    ["Nemesis"] = "Nemezida",
+    
+    -- Quick Loot
+    ["Quick Loot"] = "Arag Talan",
+    ["Loot All"] = "Amboghj Talan",
   }
 }
 

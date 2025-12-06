@@ -682,6 +682,18 @@ locale = {
     ["Transfer"] = "Paglipat",
     ["Tier"] = "Antas",
     ["Success Rate"] = "Rate ng Tagumpay",
+    
+    -- Bosstiary
+    ["Bosstiary"] = "Aklat ng Boss",
+    ["Boss Tracker"] = "Tagasubaybay ng Boss",
+    ["Boss Slots"] = "Mga Slot ng Boss",
+    ["Archfoe"] = "Pangunahing Kaaway",
+    ["Bane"] = "Sumpa",
+    ["Nemesis"] = "Nemesis",
+    
+    -- Quick Loot
+    ["Quick Loot"] = "Mabilis na Loot",
+    ["Loot All"] = "Kunin Lahat",
   }
 }
 

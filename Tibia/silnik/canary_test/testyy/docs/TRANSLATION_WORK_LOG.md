@@ -12,25 +12,18 @@ Plik roboczy do śledzenia postępu tłumaczeń. Zawiera krótkie notatki o wyko
 
 ## Aktualna sesja robocza
 
-### W trakcie: Rozszerzanie Tier 5 (484→700+ linii)
-- [x] fi.lua (Fiński): 484 → 700+ (+216) - GOTOWE
-- [x] no.lua (Norweski): 484 → 700+ (+216) - GOTOWE
-- [x] fa.lua (Perski): 480 → 700+ (+220) - GOTOWE
-- [x] ro.lua (Rumuński): 471 → 700+ (+229) - GOTOWE
-- [x] bn.lua (Bengalski): 466 → 700+ (+234) - GOTOWE
-- [x] ms.lua (Malajski): 455 → 700+ (+245) - GOTOWE
+### Sesja: Kontynuacja rozszerzania Tier 5
+Ostatnia zmiana: az.lua rozszerzony do 700+
 
-### W trakcie: Rozszerzanie Tier 5 - partia 2
-- [x] ca.lua (Kataloński): 447 → 700+ - GOTOWE
-- [x] et.lua (Estoński): 447 → 700+ - GOTOWE
-- [x] gl.lua (Galicyjski): 447 → 700+ - GOTOWE
-- [x] lv.lua (Łotewski): 448 → 700+ - GOTOWE
-- [ ] az.lua (Azerski): 441 → 700+
-- [ ] eu.lua (Baskijski): 441 → 700+
+### Do rozszerzenia (pozostałe z Tier 5):
+- [x] az.lua (Azerski): 441 → 700+ - GOTOWE (poprzednia sesja)
+- [x] eu.lua (Baskijski): 441 → 700+ - GOTOWE
+- [ ] fil.lua (Filipiński): 441 → 700+
+- [ ] hy.lua (Armeński): 441 → 700+
+- [ ] af.lua (Afrikaans): 434 → 700+
 
-### Poprzednio rozszerzone (434 → 650+ linii):
-- is.lua (Islandzki), mk.lua (Macedoński), sq.lua (Albański)
-- hi.lua (Hindi), id.lua (Indonezyjski)
+### Zakończone w tej sesji:
+(będę aktualizować)
 
 ## Finalne statystyki
 

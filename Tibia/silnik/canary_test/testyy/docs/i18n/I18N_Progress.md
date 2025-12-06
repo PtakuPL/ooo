@@ -235,3 +235,76 @@ Kompletny system tekstu z wsparciem Unicode:
 ---
 
 Jeżeli chcesz, mogę uzupełnić tu także krótkie polecenia jak uruchomić lokalne testy i budowę — napisz, czy chcesz, żebym dodał przykładowe commendy do pliku.
+
+---
+
+## 🆕 AKTUALIZACJA 2025-12-06 — Font Fallback & FriBidi Integration
+
+### Nowe funkcjonalności zaimplementowane
+
+#### 1. Font Fallback w TTFFont (KOMPLETNE ✅)
+- **`TTFFont::load()`** — aktywowano ładowanie fontów fallback z listy przekazanej w `fallbackTtfs`
+- **`TTFFont::cacheGlyph()`** — teraz automatycznie próbuje fontów fallback gdy główny font nie ma glifu
+- **`TTFFont::rasterizeGlyph()`** — nowa metoda do rasteryzacji glifów z dowolnego fontu
+- **Unikalne klucze cache** — zapobiegają kolizjom między głównym fontem a fallbackami
+
+#### 2. FriBidi Integration w TextShaper (KOMPLETNE ✅)
+- **`applyBidiReordering()`** — nowa funkcja do prawidłowego wyświetlania tekstu RTL/BiDi
+- **Rozszerzone mapowanie skryptów** — dodano: Hebrew, Korean (Hangul), Thai, Devanagari, Bengali
+- **Pole `codepoint` w ShapedGlyph** — zachowuje oryginalny codepoint Unicode dla wyszukiwania fallback
+
+#### 3. UI Fixes (KOMPLETNE ✅)
+- **`NotoSans-12.otfont`** — poprawione ścieżki fallback: `/fonts/ttf/NotoSansSC-Regular.ttf`, `/fonts/ttf/NotoNaskhArabic-Regular.ttf`
+- **`imbuing.otui`** — dodano `tr()` do tooltip przycisku protection
+- **`boss_slots.otui`** — dodano `tr()` do tooltip ikony info + naprawiono literówkę "defat" → "defeat"
+- **`charms.otui`** — dodano `tr()` do tooltip przycisku info
+- **`pl.lua`** — dodano 3 nowe klucze tłumaczeń dla tooltipów
+
+#### 4. Code Quality (KOMPLETNE ✅)
+- **`eventdispatcher.h`** — naprawiono błędne wcięcie enum (usunięto podwójny średnik)
+- **Unit testy** — utworzono `tests/` z 11 testami dla TextShaper
+- **Google Test** — dodano `gtest` do vcpkg.json
+- **BUILD_TESTING** — nowa opcja CMake do włączania testów
+
+### Pliki zmienione (2025-12-06)
+```
+testyy/CMakeLists.txt                              — dodano BUILD_TESTING option
+testyy/vcpkg.json                                  — dodano gtest
+testyy/data/fonts/NotoSans-12.otfont               — poprawione fallback paths
+testyy/data/locales/pl.lua                         — nowe tłumaczenia tooltipów
+testyy/modules/game_imbuing/imbuing.otui           — tr() dla tooltip
+testyy/modules/game_cyclopedia/tab/boss_slots/boss_slots.otui — tr() + fix typo
+testyy/modules/game_cyclopedia/tab/charms/charms.otui — tr() dla tooltip
+testyy/src/framework/core/eventdispatcher.h        — fix enum indentation
+testyy/src/framework/text/TTFFont.h                — nowa sygnatura cacheGlyph, rasterizeGlyph
+testyy/src/framework/text/TTFFont.cpp              — font fallback implementation
+testyy/src/framework/text/TextShaper.h             — pole codepoint w ShapedGlyph
+testyy/src/framework/text/TextShaper.cpp           — FriBidi BiDi reordering
+testyy/tests/CMakeLists.txt                        — (nowy) konfiguracja testów
+testyy/tests/README.md                             — (nowy) dokumentacja testów
+testyy/tests/text/CMakeLists.txt                   — (nowy) testy modułu text
+testyy/tests/text/test_textshaper.cpp              — (nowy) 11 unit testów
+```
+
+### Commit
+- **Hash:** `872d48f6`
+- **Branch:** `PtakuPL/issue30`
+- **Message:** `feat(i18n): Implement font fallback, FriBidi integration, and unit tests`
+
+---
+
+## Uruchamianie testów
+
+```bash
+# Budowa z testami
+cd testyy
+mkdir build && cd build
+cmake -DBUILD_TESTING=ON ..
+cmake --build .
+
+# Uruchomienie testów
+ctest --output-on-failure
+
+# Lub bezpośrednio
+./text_tests
+```

@@ -9,6 +9,13 @@
 
 #pragma once
 
+#include <cstdint>
+#include <limits>
+#include <map>
+#include <memory>
+
+#include <parallel_hashmap/phmap.h>
+
 #include "database/database.hpp"
 #include "declarations.hpp"
 

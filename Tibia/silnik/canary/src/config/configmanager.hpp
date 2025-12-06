@@ -9,7 +9,15 @@
 
 #pragma once
 
+#include <source_location>
+#include <string>
+#include <unordered_map>
+#include <variant>
+#include <vector>
+
 #include "config_enums.hpp"
+
+struct lua_State;
 
 using ConfigValue = std::variant<std::string, int32_t, bool, float>;
 using OTCFeatures = std::vector<uint8_t>;

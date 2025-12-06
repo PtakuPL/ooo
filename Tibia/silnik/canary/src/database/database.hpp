@@ -9,7 +9,14 @@
 
 #pragma once
 
+#include <map>
+#include <memory>
+#include <mutex>
+#include <string>
+#include <string_view>
+
 #include "declarations.hpp"
+#include "lib/logging/log_with_spd_log.hpp"
 
 #ifndef USE_PRECOMPILED_HEADERS
 	#include <mysql/mysql.h>

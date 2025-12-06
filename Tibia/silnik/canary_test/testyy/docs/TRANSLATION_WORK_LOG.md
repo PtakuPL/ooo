@@ -23,8 +23,8 @@ Plik roboczy do śledzenia postępu tłumaczeń. Zawiera krótkie notatki o wyko
 ### W trakcie: Rozszerzanie Tier 5 - partia 2
 - [x] ca.lua (Kataloński): 447 → 700+ - GOTOWE
 - [x] et.lua (Estoński): 447 → 700+ - GOTOWE
-- [ ] gl.lua (Galicyjski): 447 → 700+
-- [ ] lv.lua (Łotewski): 448 → 700+
+- [x] gl.lua (Galicyjski): 447 → 700+ - GOTOWE
+- [x] lv.lua (Łotewski): 448 → 700+ - GOTOWE
 - [ ] az.lua (Azerski): 441 → 700+
 - [ ] eu.lua (Baskijski): 441 → 700+
 

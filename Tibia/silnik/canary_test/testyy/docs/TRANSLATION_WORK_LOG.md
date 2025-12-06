@@ -2,7 +2,7 @@
 
 Plik roboczy do śledzenia postępu tłumaczeń. Zawiera krótkie notatki o wykonanej pracy.
 
-## 🎉 STATUS: WSZYSTKIE 51 JĘZYKÓW ROZSZERZONE I DALSZE ROZSZERZANIE W TOKU!
+## 🎉 STATUS: WSZYSTKIE 51 JĘZYKÓW ROZSZERZONE - TIER 4 CAŁKOWICIE UKOŃCZONY!
 
 ## Instrukcje robocze (nie zwalniać)
 - Wzorzec: pl.lua (1039 linii) - plik referencyjny
@@ -12,31 +12,17 @@ Plik roboczy do śledzenia postępu tłumaczeń. Zawiera krótkie notatki o wyko
 
 ## Aktualna sesja robocza
 
-### Sesja: WSZYSTKIE TIER 5 UKOŃCZONE!
-Ostatnia zmiana: af.lua rozszerzony do 700+
-
-### Status rozszerzenia Tier 5 - WSZYSTKIE GOTOWE:
-- [x] az.lua (Azerski): 441 → 700+ - GOTOWE
-- [x] eu.lua (Baskijski): 441 → 700+ - GOTOWE
-- [x] fil.lua (Filipiński): 441 → 700+ - GOTOWE
-- [x] hy.lua (Armeński): 441 → 700+ - GOTOWE
-- [x] af.lua (Afrikaans): 434 → 700+ - GOTOWE
-
-### 🎉 WSZYSTKIE 51 JĘZYKÓW ROZSZERZONE DO 700+ LINII!
-
-### Dodatkowe rozszerzenie Tier 4 → Tier 3:
-- [x] hu.lua (Węgierski): 512 → 730+ - GOTOWE
-- [x] th.lua (Tajski): 512 → 730+ - GOTOWE
-- [x] lt.lua (Litewski): 545 → 760+ - GOTOWE
-- [x] sr.lua (Serbski): 545 → 760+ - GOTOWE
-
-### Następne do rozszerzenia (Tier 4):
-- [x] sl.lua (Słoweński): 575 → 790+ - GOTOWE
-- [x] bg.lua (Bułgarski): 592 → 810+ - GOTOWE
-- [x] hr.lua (Chorwacki): 592 → 810+ - GOTOWE
-- [x] sk.lua (Słowacki): 592 → 810+ - GOTOWE
-
 ### 🎉 WSZYSTKIE TIER 4 JĘZYKI ROZSZERZONE DO TIER 2/3!
+
+Rozszerzone w tej sesji:
+- hu.lua (Węgierski): 512 → 733 linii
+- th.lua (Tajski): 512 → 733 linii
+- lt.lua (Litewski): 545 → 764 linii
+- sr.lua (Serbski): 545 → 764 linii
+- sl.lua (Słoweński): 575 → 796 linii
+- bg.lua (Bułgarski): 592 → 800 linii
+- hr.lua (Chorwacki): 592 → 800 linii
+- sk.lua (Słowacki): 592 → 800 linii
 
 ## Finalne statystyki
 

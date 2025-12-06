@@ -788,6 +788,13 @@ locale = {
     ["Item Stash"] = "Item Bergplek",
     ["Supply Analysis"] = "Voorraad Analise",
     ["Supply Usage"] = "Voorraad Gebruik",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "Siel Punte",
+    ["Soul Regeneration"] = "Siel Herstel",
+    ["Regeneration"] = "Herstel",
+    ["Mana Regeneration"] = "Mana Herstel",
+    ["Health Regeneration"] = "Gesondheid Herstel",
   }
 }
 

@@ -790,6 +790,13 @@ locale = {
     ["Item Stash"] = "वस्तु भंडार",
     ["Supply Analysis"] = "आपूर्ति विश्लेषण",
     ["Supply Usage"] = "आपूर्ति उपयोग",
+    
+    -- Soul and Regeneration
+    ["Soul Points"] = "आत्मा अंक",
+    ["Soul Regeneration"] = "आत्मा पुनर्जनन",
+    ["Regeneration"] = "पुनर्जनन",
+    ["Mana Regeneration"] = "मना पुनर्जनन",
+    ["Health Regeneration"] = "स्वास्थ्य पुनर्जनन",
   }
 }
 

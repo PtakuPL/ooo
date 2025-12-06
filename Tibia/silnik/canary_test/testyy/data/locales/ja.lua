@@ -741,6 +741,70 @@ local add = {
   ["You read the following"] = "以下を読みました",
   ["ok"] = "OK",
   ["remove"] = "削除",
+  
+  -- Bosstiary System
+  ["Bosstiary"] = "ボスティアリー",
+  ["Boss Tracker"] = "ボス追跡",
+  ["Boss Kills"] = "ボス討伐",
+  ["Archfoe"] = "大敵",
+  ["Bane"] = "呪い",
+  ["Nemesis"] = "ネメシス",
+  ["Boss Points"] = "ボスポイント",
+  ["Unlock Slot"] = "スロット解除",
+  ["Equipped"] = "装備中",
+  
+  -- Market System
+  ["Market"] = "マーケット",
+  ["Browse Offers"] = "オファーを見る",
+  ["My Offers"] = "マイオファー",
+  ["My History"] = "履歴",
+  ["Buy Offer"] = "購入オファー",
+  ["Sell Offer"] = "売却オファー",
+  ["Create Offer"] = "オファー作成",
+  ["Cancel Offer"] = "オファーキャンセル",
+  ["Amount"] = "数量",
+  ["Total Price"] = "合計価格",
+  ["Piece Price"] = "単価",
+  ["Statistics"] = "統計",
+  ["Transactions"] = "取引",
+  ["Average Prices"] = "平均価格",
+  ["Highest Prices"] = "最高価格",
+  ["Lowest Prices"] = "最低価格",
+  
+  -- Forge System
+  ["Forge"] = "鍛冶",
+  ["Dust Converter"] = "ダストコンバーター",
+  ["Fusion"] = "融合",
+  ["Transfer"] = "転送",
+  ["Tier"] = "ティア",
+  ["Success Chance"] = "成功率",
+  ["Dust"] = "ダスト",
+  ["Slivers"] = "かけら",
+  ["Cores"] = "コア",
+  ["Exalted Cores"] = "上級コア",
+  
+  -- Wheel of Destiny
+  ["Wheel of Destiny"] = "運命の輪",
+  ["Revelation Points"] = "啓示ポイント",
+  ["Promotion Points"] = "昇進ポイント",
+  ["Gift of Life"] = "命の贈り物",
+  ["Divine Empowerment"] = "神聖な強化",
+  ["Blessing of the Grove"] = "森の祝福",
+  ["Combat Mastery"] = "戦闘マスタリー",
+  ["Healing Link"] = "回復リンク",
+  
+  -- Prey System
+  ["Prey"] = "獲物",
+  ["Prey Bonus"] = "獲物ボーナス",
+  ["Prey Slot"] = "獲物スロット",
+  ["Select Creature"] = "クリーチャー選択",
+  ["Bonus Type"] = "ボーナスタイプ",
+  ["Damage Boost"] = "ダメージ増加",
+  ["Defense Boost"] = "防御増加",
+  ["XP Bonus"] = "XPボーナス",
+  ["Loot Bonus"] = "ドロップボーナス",
+  ["Prey Cards"] = "獲物カード",
+  ["Prey Wildcards"] = "獲物ワイルドカード",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

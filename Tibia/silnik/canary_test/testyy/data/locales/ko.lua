@@ -741,6 +741,70 @@ local add = {
   ["You read the following"] = "다음을 읽었습니다",
   ["ok"] = "확인",
   ["remove"] = "제거",
+  
+  -- Bosstiary System
+  ["Bosstiary"] = "보스티어리",
+  ["Boss Tracker"] = "보스 추적기",
+  ["Boss Kills"] = "보스 처치",
+  ["Archfoe"] = "대적",
+  ["Bane"] = "저주",
+  ["Nemesis"] = "네메시스",
+  ["Boss Points"] = "보스 포인트",
+  ["Unlock Slot"] = "슬롯 잠금 해제",
+  ["Equipped"] = "장착됨",
+  
+  -- Market System
+  ["Market"] = "시장",
+  ["Browse Offers"] = "제안 검색",
+  ["My Offers"] = "내 제안",
+  ["My History"] = "내 기록",
+  ["Buy Offer"] = "구매 제안",
+  ["Sell Offer"] = "판매 제안",
+  ["Create Offer"] = "제안 생성",
+  ["Cancel Offer"] = "제안 취소",
+  ["Amount"] = "수량",
+  ["Total Price"] = "총 가격",
+  ["Piece Price"] = "개당 가격",
+  ["Statistics"] = "통계",
+  ["Transactions"] = "거래",
+  ["Average Prices"] = "평균 가격",
+  ["Highest Prices"] = "최고 가격",
+  ["Lowest Prices"] = "최저 가격",
+  
+  -- Forge System
+  ["Forge"] = "대장간",
+  ["Dust Converter"] = "먼지 변환기",
+  ["Fusion"] = "융합",
+  ["Transfer"] = "전송",
+  ["Tier"] = "등급",
+  ["Success Chance"] = "성공 확률",
+  ["Dust"] = "먼지",
+  ["Slivers"] = "조각",
+  ["Cores"] = "코어",
+  ["Exalted Cores"] = "고급 코어",
+  
+  -- Wheel of Destiny
+  ["Wheel of Destiny"] = "운명의 바퀴",
+  ["Revelation Points"] = "계시 포인트",
+  ["Promotion Points"] = "승급 포인트",
+  ["Gift of Life"] = "생명의 선물",
+  ["Divine Empowerment"] = "신성한 강화",
+  ["Blessing of the Grove"] = "숲의 축복",
+  ["Combat Mastery"] = "전투 숙련",
+  ["Healing Link"] = "치유 연결",
+  
+  -- Prey System
+  ["Prey"] = "사냥감",
+  ["Prey Bonus"] = "사냥감 보너스",
+  ["Prey Slot"] = "사냥감 슬롯",
+  ["Select Creature"] = "크리처 선택",
+  ["Bonus Type"] = "보너스 유형",
+  ["Damage Boost"] = "피해 증가",
+  ["Defense Boost"] = "방어 증가",
+  ["XP Bonus"] = "경험치 보너스",
+  ["Loot Bonus"] = "전리품 보너스",
+  ["Prey Cards"] = "사냥감 카드",
+  ["Prey Wildcards"] = "사냥감 와일드카드",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

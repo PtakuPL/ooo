@@ -727,6 +727,70 @@ locale = {
     ["players online"] = "ผู้เล่นออนไลน์",
     ["Remember Email"] = "จดจำอีเมล",
     ["Login automatically"] = "ล็อกอินอัตโนมัติ",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "บอสเทียรี่",
+    ["Boss Tracker"] = "ติดตามบอส",
+    ["Boss Kills"] = "การฆ่าบอส",
+    ["Archfoe"] = "ศัตรูหลัก",
+    ["Bane"] = "คำสาป",
+    ["Nemesis"] = "เนเมซิส",
+    ["Boss Points"] = "คะแนนบอส",
+    ["Unlock Slot"] = "ปลดล็อคช่อง",
+    ["Equipped"] = "สวมใส่แล้ว",
+    
+    -- Market System
+    ["Market"] = "ตลาด",
+    ["Browse Offers"] = "ดูข้อเสนอ",
+    ["My Offers"] = "ข้อเสนอของฉัน",
+    ["My History"] = "ประวัติของฉัน",
+    ["Buy Offer"] = "ข้อเสนอซื้อ",
+    ["Sell Offer"] = "ข้อเสนอขาย",
+    ["Create Offer"] = "สร้างข้อเสนอ",
+    ["Cancel Offer"] = "ยกเลิกข้อเสนอ",
+    ["Amount"] = "จำนวน",
+    ["Total Price"] = "ราคารวม",
+    ["Piece Price"] = "ราคาต่อชิ้น",
+    ["Statistics"] = "สถิติ",
+    ["Transactions"] = "การทำธุรกรรม",
+    ["Average Prices"] = "ราคาเฉลี่ย",
+    ["Highest Prices"] = "ราคาสูงสุด",
+    ["Lowest Prices"] = "ราคาต่ำสุด",
+    
+    -- Forge System
+    ["Forge"] = "ช่างตีเหล็ก",
+    ["Dust Converter"] = "ตัวแปลงฝุ่น",
+    ["Fusion"] = "การหลอมรวม",
+    ["Transfer"] = "การถ่ายโอน",
+    ["Tier"] = "ระดับ",
+    ["Success Chance"] = "โอกาสสำเร็จ",
+    ["Dust"] = "ฝุ่น",
+    ["Slivers"] = "เศษ",
+    ["Cores"] = "แกน",
+    ["Exalted Cores"] = "แกนยกระดับ",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "วงล้อแห่งโชคชะตา",
+    ["Revelation Points"] = "คะแนนการเปิดเผย",
+    ["Promotion Points"] = "คะแนนเลื่อนขั้น",
+    ["Gift of Life"] = "ของขวัญแห่งชีวิต",
+    ["Divine Empowerment"] = "การเสริมพลังศักดิ์สิทธิ์",
+    ["Blessing of the Grove"] = "พรแห่งป่า",
+    ["Combat Mastery"] = "ความเชี่ยวชาญในการต่อสู้",
+    ["Healing Link"] = "การเชื่อมโยงการรักษา",
+    
+    -- Prey System
+    ["Prey"] = "เหยื่อ",
+    ["Prey Bonus"] = "โบนัสเหยื่อ",
+    ["Prey Slot"] = "ช่องเหยื่อ",
+    ["Select Creature"] = "เลือกสิ่งมีชีวิต",
+    ["Bonus Type"] = "ประเภทโบนัส",
+    ["Damage Boost"] = "เพิ่มความเสียหาย",
+    ["Defense Boost"] = "เพิ่มการป้องกัน",
+    ["XP Bonus"] = "โบนัส XP",
+    ["Loot Bonus"] = "โบนัสของตก",
+    ["Prey Cards"] = "การ์ดเหยื่อ",
+    ["Prey Wildcards"] = "ไวล์ดการ์ดเหยื่อ",
   }
 }
 

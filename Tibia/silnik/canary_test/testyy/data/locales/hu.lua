@@ -727,6 +727,70 @@ local add = {
   ["players online"] = "játékos online",
   ["Remember Email"] = "Email megjegyzése",
   ["Login automatically"] = "Automatikus bejelentkezés",
+  
+  -- Bosstiary System
+  ["Bosstiary"] = "Bosstiary",
+  ["Boss Tracker"] = "Főnök Követő",
+  ["Boss Kills"] = "Főnök Ölések",
+  ["Archfoe"] = "Fő Ellenség",
+  ["Bane"] = "Átok",
+  ["Nemesis"] = "Nemezis",
+  ["Boss Points"] = "Főnök Pontok",
+  ["Unlock Slot"] = "Hely Feloldása",
+  ["Equipped"] = "Felszerelve",
+  
+  -- Market System
+  ["Market"] = "Piac",
+  ["Browse Offers"] = "Ajánlatok Böngészése",
+  ["My Offers"] = "Saját Ajánlataim",
+  ["My History"] = "Előzményeim",
+  ["Buy Offer"] = "Vételi Ajánlat",
+  ["Sell Offer"] = "Eladási Ajánlat",
+  ["Create Offer"] = "Ajánlat Létrehozása",
+  ["Cancel Offer"] = "Ajánlat Visszavonása",
+  ["Amount"] = "Mennyiség",
+  ["Total Price"] = "Teljes Ár",
+  ["Piece Price"] = "Darabár",
+  ["Statistics"] = "Statisztikák",
+  ["Transactions"] = "Tranzakciók",
+  ["Average Prices"] = "Átlagárak",
+  ["Highest Prices"] = "Legmagasabb Árak",
+  ["Lowest Prices"] = "Legalacsonyabb Árak",
+  
+  -- Forge System
+  ["Forge"] = "Kovács",
+  ["Dust Converter"] = "Por Átalakító",
+  ["Fusion"] = "Fúzió",
+  ["Transfer"] = "Átvitel",
+  ["Tier"] = "Szint",
+  ["Success Chance"] = "Sikeresség Esélye",
+  ["Dust"] = "Por",
+  ["Slivers"] = "Szilánkok",
+  ["Cores"] = "Magok",
+  ["Exalted Cores"] = "Felmagasztalt Magok",
+  
+  -- Wheel of Destiny
+  ["Wheel of Destiny"] = "Sors Kereke",
+  ["Revelation Points"] = "Kinyilatkoztatás Pontok",
+  ["Promotion Points"] = "Előléptetési Pontok",
+  ["Gift of Life"] = "Élet Ajándéka",
+  ["Divine Empowerment"] = "Isteni Megerősítés",
+  ["Blessing of the Grove"] = "Liget Áldása",
+  ["Combat Mastery"] = "Harci Mesterség",
+  ["Healing Link"] = "Gyógyító Kapcsolat",
+  
+  -- Prey System
+  ["Prey"] = "Zsákmány",
+  ["Prey Bonus"] = "Zsákmány Bónusz",
+  ["Prey Slot"] = "Zsákmány Hely",
+  ["Select Creature"] = "Lény Kiválasztása",
+  ["Bonus Type"] = "Bónusz Típus",
+  ["Damage Boost"] = "Sebzés Növelés",
+  ["Defense Boost"] = "Védelem Növelés",
+  ["XP Bonus"] = "XP Bónusz",
+  ["Loot Bonus"] = "Zsákmány Bónusz",
+  ["Prey Cards"] = "Zsákmány Kártyák",
+  ["Prey Wildcards"] = "Zsákmány Jokerek",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

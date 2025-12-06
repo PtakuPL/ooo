@@ -741,6 +741,70 @@ local add = {
   ["You read the following"] = "قرأت ما يلي",
   ["ok"] = "موافق",
   ["remove"] = "إزالة",
+  
+  -- Bosstiary System
+  ["Bosstiary"] = "بوستياري",
+  ["Boss Tracker"] = "تتبع الزعماء",
+  ["Boss Kills"] = "قتل الزعماء",
+  ["Archfoe"] = "العدو الرئيسي",
+  ["Bane"] = "لعنة",
+  ["Nemesis"] = "نيميسيس",
+  ["Boss Points"] = "نقاط الزعماء",
+  ["Unlock Slot"] = "فتح الفتحة",
+  ["Equipped"] = "مجهز",
+  
+  -- Market System
+  ["Market"] = "السوق",
+  ["Browse Offers"] = "تصفح العروض",
+  ["My Offers"] = "عروضي",
+  ["My History"] = "سجلي",
+  ["Buy Offer"] = "عرض شراء",
+  ["Sell Offer"] = "عرض بيع",
+  ["Create Offer"] = "إنشاء عرض",
+  ["Cancel Offer"] = "إلغاء العرض",
+  ["Amount"] = "الكمية",
+  ["Total Price"] = "السعر الإجمالي",
+  ["Piece Price"] = "سعر القطعة",
+  ["Statistics"] = "الإحصائيات",
+  ["Transactions"] = "المعاملات",
+  ["Average Prices"] = "الأسعار المتوسطة",
+  ["Highest Prices"] = "أعلى الأسعار",
+  ["Lowest Prices"] = "أدنى الأسعار",
+  
+  -- Forge System
+  ["Forge"] = "الحدادة",
+  ["Dust Converter"] = "محول الغبار",
+  ["Fusion"] = "الدمج",
+  ["Transfer"] = "النقل",
+  ["Tier"] = "المستوى",
+  ["Success Chance"] = "فرصة النجاح",
+  ["Dust"] = "الغبار",
+  ["Slivers"] = "الشظايا",
+  ["Cores"] = "النوى",
+  ["Exalted Cores"] = "النوى المرتفعة",
+  
+  -- Wheel of Destiny
+  ["Wheel of Destiny"] = "عجلة القدر",
+  ["Revelation Points"] = "نقاط الكشف",
+  ["Promotion Points"] = "نقاط الترقية",
+  ["Gift of Life"] = "هدية الحياة",
+  ["Divine Empowerment"] = "التمكين الإلهي",
+  ["Blessing of the Grove"] = "بركة البستان",
+  ["Combat Mastery"] = "إتقان القتال",
+  ["Healing Link"] = "رابط الشفاء",
+  
+  -- Prey System
+  ["Prey"] = "الفريسة",
+  ["Prey Bonus"] = "مكافأة الفريسة",
+  ["Prey Slot"] = "فتحة الفريسة",
+  ["Select Creature"] = "اختر المخلوق",
+  ["Bonus Type"] = "نوع المكافأة",
+  ["Damage Boost"] = "زيادة الضرر",
+  ["Defense Boost"] = "زيادة الدفاع",
+  ["XP Bonus"] = "مكافأة الخبرة",
+  ["Loot Bonus"] = "مكافأة الغنائم",
+  ["Prey Cards"] = "بطاقات الفريسة",
+  ["Prey Wildcards"] = "بطاقات الجوكر للفريسة",
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

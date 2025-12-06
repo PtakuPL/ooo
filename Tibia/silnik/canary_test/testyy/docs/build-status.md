@@ -1,12 +1,12 @@
 # Build Status Overview
 
-**Last Updated:** 2025-12-05
+**Last Updated:** 2025-12-06
 
 ## Build Status Summary
 
 | Platform | Status | Notes |
 |----------|--------|-------|
-| Windows | ✅ Ready | Requires MSVC 2022, vcpkg x64-windows-static |
+| Windows | ⚠ Needs baseline update | vcpkg commit/baseline brak wersji `abseil@20250814.1`, `angle@chromium_7258#2`, `asio@1.32.0`; zaktualizuj baseline lub obniż wersje portów |
 | Ubuntu 24.04 | ✅ Ready | Requires GCC 14, system deps |
 | Emscripten (WASM) | ✅ Fixed | Lua module path fix applied |
 | Android | ✅ Ready | NDK r23c, Gradle 8.11 |
@@ -17,6 +17,10 @@
 - **File:** `src/CMakeLists.txt` (lines 483-496)
 - **Issue:** Custom `FindLua.cmake` incompatible with WASM
 - **Solution:** Use CMake's standard FindLua module for WASM builds
+
+### Windows vcpkg baseline note (2025-12-06)
+- **Issue:** `run-vcpkg` na commit-cie `5b121431` nie znajduje wersji portów `abseil@20250814.1`, `angle@chromium_7258#2`, `asio@1.32.0`.
+- **Action:** Podnieść `builtin-baseline`/`vcpkgGitCommitId` do wersji zawierającej te porty lub zredukować wersje portów do dostępnych.
 
 ## Build Instructions
 

@@ -1,16 +1,22 @@
 # Błędy kompilacji CI/CD - Kompletny raport
 
-## Aktualny status workflow na master (2025-12-04)
+## Aktualny status workflow na master (2025-12-06)
 
 | Workflow | Status | Plik | Uwagi |
 |----------|--------|------|-------|
 | build-linux | ✅ SUCCESS | build-linux.yml | Run #300 |
 | Build - Ubuntu | ✅ SUCCESS | build-ubuntu.yml | Run #44 |
 | Build - Windows - Solution | ✅ SUCCESS | build-windows-solution.yml | Run #32 |
-| build-windows (vcpkg) | ❌ FAILURE | build-windows.yml | Run #298 - 441 errors |
-| Build - Emscripten | ❌ FAILURE | build-browser.yml | LuaJIT not supported |
-| Build - Android | ❌ FAILURE | build-android.yml | sdkmanager not found |
-| Analysis - SonarCloud | ❌ FAILURE | analysis-sonarcloud.yml | Missing SONAR_TOKEN |
+| build-windows (vcpkg) | ❌ FAILURE | build-windows.yml | Run #298 – RuntimeLibrary/Vorbis fix wprowadzony, potrzebny rerun + aktualny błąd vcpkg (brak wersji abseil/angle/asio) |
+| Build - Emscripten | ⚠️ Naprawione, czeka na rerun | build-browser.yml | LuaJIT → lua dla emscripten w PR |
+| Build - Android | ⚠️ Naprawione, czeka na rerun | build-android.yml | sdkmanager pełna ścieżka w PR |
+| Analysis - SonarCloud | ❌ FAILURE | analysis-sonarcloud.yml | Brak sekretu SONAR_TOKEN/SONARCLOUDTOKEN na repo |
+
+### Nowe ustalenia (2025-12-06)
+- **vcpkg manifest (Windows)**: logi z `errory-actions.md` pokazują brak wpisów w bazie wersji dla `abseil@20250814.1`, `angle@chromium_7258#2`, `asio@1.32.0` przy commitcie `5b121431`. Rozwiązanie: zaktualizować `builtin-baseline`/commit vcpkg do wersji zawierającej te porty lub obniżyć wersje portów do dostępnych.
+- **g_asyncDispatcher – konflikt deklaracji**: w `asyncdispatcher.cpp` tworzony jest `BS::thread_pool` bez parametrów szablonu, a w `asyncdispatcher.h` z parametrem `<0>`, co wywołuje błąd „conflicting declaration”. Ujednolicić typ (np. alias `using AsyncPool = BS::thread_pool<>;`) i trzymać jedną definicję.
+- **Sys deps (Linux devcontainer)**: doinstalowane `libharfbuzz-dev`, `libfribidi-dev`, `libfreetype-dev` + zależności GLib/graphite, więc lokalne buildy TTF/i18n powinny przechodzić bez braków pkg-config.
+- **Submodule ostrzeżenie SonarCloud**: wciąż brak zdalnego repo dla `oryginall/canary-serwer` – dodać prawidłowy wpis w `.gitmodules` lub usunąć submodule z workflow.
 
 ---
 
@@ -197,6 +203,11 @@ warning: Could not find remote repository for submodule 'Tibia/silnik/canary_tes
 ```
 
 **Przyczyna:** Brakujący wpis w `.gitmodules` lub nieprawidłowy URL repozytorium.
+
+### 5. Bieżące blokery (2025-12-06)
+- **vcpkg port versions (Windows):** manifest wskazuje na wersje `abseil@20250814.1`, `angle@chromium_7258#2`, `asio@1.32.0`, których nie ma w bazie commit-u `5b121431`. **Fix:** zaktualizować `builtin-baseline`/`vcpkgGitCommitId` do release zawierającego te wersje albo obniżyć wersje portów do dostępnych.
+- **g_asyncDispatcher double-definition:** nagłówek `asyncdispatcher.h` deklaruje `BS::thread_pool<0>`, a `asyncdispatcher.cpp` definiuje `BS::thread_pool` bez parametru → błąd „conflicting declaration”. **Fix:** zdefiniować alias typu i używać go spójnie w deklaracji/definicji (jedna definicja w .cpp).
+- **Submodule ostrzeżenie SonarCloud:** nadal brak zdalnego repo dla `oryginall/canary-serwer`. **Fix:** uzupełnić `.gitmodules` albo usunąć wpis/checkout w workflow.
 
 ---
 

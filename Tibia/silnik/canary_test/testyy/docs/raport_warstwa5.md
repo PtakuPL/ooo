@@ -4,7 +4,7 @@
 - Celem było uruchomienie offline shapingu dla ~30 języków z użyciem HarfBuzz/FriBidi i fontów z warstwy 2.
 
 ## Status
-- **Nie wykonano symulacji** — brak kompletu fontów w głównym drzewie `canary/` (fonty tylko w katalogu testowym) oraz brak warstwy renderującej tekst (HarfBuzz/FriBidi) w tym repo.
+- **Nie wykonano symulacji** — brak kompletu fontów w głównym drzewie `canary/` (TTF wyłącznie w `canary_test/testyy/data/fonts/ttf/`) oraz brak warstwy renderującej tekst (HarfBuzz/FriBidi) w tym repo.
 
 ## Wymagane, aby uruchomić symulację
 1) Dostarczyć zestaw fontów używanych w produkcyjnym buildzie (TTF/OTF + aktualne `.otfont`) w `canary/data/fonts/...`.

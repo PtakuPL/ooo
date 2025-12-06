@@ -5,7 +5,7 @@
 
 ## Wynik
 - W drzewie `canary/` brak plików instalatora/launchera (`launcher_config.json`, `.xaml`, `.resx`).
-- Znalezione wyłącznie zasoby testowe klienta w `canary_test/testyy/modules/client_entergame/` (`*.otui`, `*.lua`), brak ich odpowiedników w głównym drzewie.
+- W `canary_test/testyy` znaleziono jedynie zasoby Android (ikony `ic_launcher*.xml/.webp`) i UI klienta (`modules/client_entergame/*.otui`, `*.lua`); brak desktopowego instalatora/launchera.
 
 ## Wniosek
 - Brak materiałów do audytu instalatora/launchera w tej gałęzi. Nie można wskazać brakujących tłumaczeń ani hard-coded tekstów dla instalatora/launchera.

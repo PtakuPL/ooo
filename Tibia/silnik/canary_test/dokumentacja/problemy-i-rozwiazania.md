@@ -50,7 +50,7 @@ Zbiór najważniejszych problemów napotkanych podczas rozwoju projektu oraz spo
 
 - dalszy wzrost danych (mapy, assety klienta) – konieczność ciągłej kontroli wielkości repo,
 - utrzymanie spójności między wersjami serwera a klienta,
-- ewentualne zmiany w API/systemie budowania na platformach CI.
+- ewentualne zmiany w API/systemie budowania na platformach CI.n
 
 Te punkty można rozwijać w miarę pojawiania się kolejnych doświadczeń.
 
@@ -105,3 +105,24 @@ Te punkty można rozwijać w miarę pojawiania się kolejnych doświadczeń.
 - Próbowano wszystkich mirrorów: repo.msys2.org, futureware.at, yandex.ru, tsinghua, ustc, bit.edu.cn, selfnet.de, sjtug
 
 **Status:** Oczekujemy na naprawę upstream lub rozważamy workaround.
+
+## 8. vcpkg manifest – brak wersji portów (Windows, 2025-12-06)
+
+**Problem:** Przy commitcie vcpkg `5b121431` manifest wskazuje na porty/wersje, których nie ma w bazie (`abseil@20250814.1`, `angle@chromium_7258#2`, `asio@1.32.0`). `run-vcpkg` kończy się błędem „no version database entry”.
+
+**Rozwiązanie:**
+- zaktualizować `builtin-baseline` w `vcpkg.json` lub `vcpkgGitCommitId` w workflow do wersji zawierającej te porty; **lub**
+- obniżyć wersje portów do dostępnych (np. `abseil@20230125.0`, `angle@chromium_5414`, `asio@1.24.0`).
+
+**Uwagi:** Po zmianie baseline/wersji wykonać `vcpkg format-manifest` i ponowić build Windows.
+
+## 9. Konflikt typu `g_asyncDispatcher` (Linux/Windows, 2025-12-06)
+
+**Problem:** `asyncdispatcher.h` deklaruje `extern BS::thread_pool g_asyncDispatcher;` (domyślnie `BS::thread_pool<0>`), a `asyncdispatcher.cpp` definiuje obiekt bez parametru szablonu, co powoduje błąd „conflicting declaration”.
+
+**Rozwiązanie:**
+- wprowadzić alias typu (np. `using AsyncPool = BS::thread_pool<>;`),
+- użyć aliasu w deklaracji i w definicji (jedna definicja w `.cpp`),
+- upewnić się, że nagłówki nie tworzą inline-definicji globalnego obiektu.
+
+**Efekt oczekiwany:** Kompilacja `asyncdispatcher.cpp` przechodzi na Linux/Windows; SonarCloud nie zgłasza konfliktu definicji.

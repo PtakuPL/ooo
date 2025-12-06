@@ -4,6 +4,18 @@ Ten plik służy do śledzenia postępów w naprawie błędów CI/CD między ses
 
 ---
 
+## Sesja 3 (2025-12-06) - Uzupełnienie dokumentacji
+
+### Co zrobiono w tej sesji
+- Doinstalowano systemowe zależności tekstowe w devcontainerze (`libharfbuzz-dev`, `libfribidi-dev`, `libfreetype-dev` + GLib/graphite), dzięki czemu lokalne buildy TTF/i18n mają komplet pkg-config.
+- Zaktualizowano `bledyw.md` o bieżące blokery: brak wpisów wersji portów vcpkg (abseil/angle/asio) dla commit-u `5b121431`, konflikt typu `g_asyncDispatcher` (deklaracja vs definicja), brak submodule `oryginall/canary-serwer` w SonarCloud.
+- Uporządkowano status workflow: Windows (vcpkg) wymaga rerun + poprawy baseline vcpkg; Emscripten/Android naprawione w PR, oczekują potwierdzenia.
+
+### Do weryfikacji / next steps
+- Ustalić nowy `builtin-baseline` lub zaktualizować `vcpkgGitCommitId`, żeby porty `abseil`, `angle`, `asio` były dostępne w Windows build.
+- Ujednolicić typ `g_asyncDispatcher` (nagłówek/definicja) i ponownie uruchomić build Linux/Windows.
+- Dodać prawidłowy wpis submodule lub usunąć go z workflow SonarCloud.
+
 ## Sesja 2 (2025-12-04) - Kontynuacja
 
 ### Weryfikacja i status napraw
@@ -13,33 +25,17 @@ Ten plik służy do śledzenia postępów w naprawie błędów CI/CD między ses
 #### Sprawdzone naprawy w tej sesji:
 
 ##### Android Build - ✅ JUŻ NAPRAWIONE (w PR)
-- Plik: `.github/workflows/build-android.yml`
-- Problem: `sdkmanager` nie w PATH na Windows runner
-- Rozwiązanie: Dodano pełną ścieżkę `$env:ANDROID_HOME\cmdline-tools\latest\bin\sdkmanager.bat` z fallbackiem
 
 ##### Emscripten Build - ✅ JUŻ NAPRAWIONE (w PR)
-- Plik: `Tibia/silnik/canary_test/testyy/vcpkg.json`
-- Problem: LuaJIT nie wspiera wasm32-emscripten
-- Rozwiązanie: Dodano platform condition dla `luajit` (windows | linux | osx) i dodano `lua` dla wasm32-emscripten
 
 ##### SonarCloud - ✅ NAPRAWIONE
-- Plik: `.github/workflows/analysis-sonarcloud.yml`
-- Problem: Workflow używał `secrets.SONAR_TOKEN`, ale w repozytorium secret nazywa się `SONARCLOUDTOKEN`
-- Rozwiązanie: Zmieniono `${{ secrets.SONAR_TOKEN }}` na `${{ secrets.SONARCLOUDTOKEN }}`
 
----
 
 ## Sesja 1 (2025-12-04)
 
 ### Windows Build (vcpkg) - Naprawy
-
-**Status:** ✅ Zmiany wykonane, oczekuje na weryfikację CI
-
 **Commity:**
 - `570edff` - Główne naprawy Windows build
-- `ba269a0` - Uproszczenie logiki detekcji static triplet
-
-#### Wykonane naprawy:
 
 ##### 1. RuntimeLibrary Mismatch (LNK2038) - ✅ NAPRAWIONE
 **Problem:** vcpkg biblioteki skompilowane z `/MT` (static), projekt z `/MD` (dynamic)

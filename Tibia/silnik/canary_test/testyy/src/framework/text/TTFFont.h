@@ -64,7 +64,11 @@ public:
 
 private:
   // Ensure glyph is present in atlas, rasterizing and packing when needed
-  const AtlasGlyph* cacheGlyph(uint32_t glyphIndex);
+  // glyphIndex: glyph index in main font, codepoint: Unicode codepoint for fallback lookup
+  const AtlasGlyph* cacheGlyph(uint32_t glyphIndex, char32_t codepoint = 0);
+
+  // Rasterize glyph from a specific face into atlas
+  const AtlasGlyph* rasterizeGlyph(FT_Face face, uint32_t glyphIndex, uint32_t cacheKey);
 
   // Create a new empty atlas and return its index
   int ensureAtlas();

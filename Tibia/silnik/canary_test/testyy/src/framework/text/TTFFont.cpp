@@ -20,7 +20,7 @@ TTFFont::~TTFFont() {
 }
 
 bool TTFFont::load(const std::string& mainTtf,
-                   const std::vector<std::string>& /*fallbackTtfs*/,
+                   const std::vector<std::string>& fallbackTtfs,
                    int pixelSize) {
   if (FT_Init_FreeType(&m_ftLib)) return false;
   if (FT_New_Face(m_ftLib, mainTtf.c_str(), 0, &m_face)) return false;
@@ -31,6 +31,21 @@ bool TTFFont::load(const std::string& mainTtf,
   hb_face_t* hbFace = hb_ft_face_create(m_face, nullptr);
   m_hbFont = hb_ft_font_create(m_face, nullptr);
   hb_face_destroy(hbFace);
+
+  // Load fallback fonts for CJK, Arabic, and other scripts
+  for (const auto& fallbackPath : fallbackTtfs) {
+    FT_Face fallbackFace = nullptr;
+    if (FT_New_Face(m_ftLib, fallbackPath.c_str(), 0, &fallbackFace) == 0) {
+      FT_Set_Pixel_Sizes(fallbackFace, 0, pixelSize);
+      hb_font_t* fallbackHbFont = hb_ft_font_create(fallbackFace, nullptr);
+      if (fallbackHbFont) {
+        m_fallbackFaces.push_back(fallbackFace);
+        m_fallbackHbFonts.push_back(fallbackHbFont);
+      } else {
+        FT_Done_Face(fallbackFace);
+      }
+    }
+  }
 
   ensureAtlas();
   return true;
@@ -51,15 +66,47 @@ int TTFFont::ensureAtlas() {
   return static_cast<int>(m_atlases.size() - 1);
 }
 
-const AtlasGlyph* TTFFont::cacheGlyph(uint32_t glyphIndex) {
+const AtlasGlyph* TTFFont::cacheGlyph(uint32_t glyphIndex, char32_t codepoint) {
+  // First check cache by glyph index (main font)
   auto it = m_glyphs.find(glyphIndex);
   if (it != m_glyphs.end()) return &it->second;
 
-  // Render glyph using FreeType
-  if (FT_Load_Glyph(m_face, glyphIndex, FT_LOAD_DEFAULT)) return nullptr;
-  if (FT_Render_Glyph(m_face->glyph, FT_RENDER_MODE_NORMAL)) return nullptr;
+  // Try to render from main font
+  if (FT_Load_Glyph(m_face, glyphIndex, FT_LOAD_DEFAULT) == 0 &&
+      FT_Render_Glyph(m_face->glyph, FT_RENDER_MODE_NORMAL) == 0) {
+    // Check if glyph was found (not the .notdef glyph with index 0, or has actual bitmap)
+    FT_GlyphSlot g = m_face->glyph;
+    if (glyphIndex != 0 || g->bitmap.width > 0) {
+      return rasterizeGlyph(m_face, glyphIndex, glyphIndex);
+    }
+  }
 
-  FT_GlyphSlot g = m_face->glyph;
+  // Main font failed - try fallback fonts using codepoint
+  if (codepoint != 0) {
+    for (size_t fbIdx = 0; fbIdx < m_fallbackFaces.size(); ++fbIdx) {
+      FT_Face fallbackFace = m_fallbackFaces[fbIdx];
+      // Get glyph index for this codepoint in fallback font
+      FT_UInt fbGlyphIndex = FT_Get_Char_Index(fallbackFace, codepoint);
+      if (fbGlyphIndex == 0) continue; // .notdef glyph - font doesn't have this char
+
+      if (FT_Load_Glyph(fallbackFace, fbGlyphIndex, FT_LOAD_DEFAULT) == 0 &&
+          FT_Render_Glyph(fallbackFace->glyph, FT_RENDER_MODE_NORMAL) == 0) {
+        // Use unique cache key: high bits for fallback index, low bits for glyph
+        const uint32_t cacheKey = static_cast<uint32_t>((fbIdx + 1) << 24) | (fbGlyphIndex & 0xFFFFFF);
+        return rasterizeGlyph(fallbackFace, fbGlyphIndex, cacheKey);
+      }
+    }
+  }
+
+  return nullptr;
+}
+
+const AtlasGlyph* TTFFont::rasterizeGlyph(FT_Face face, uint32_t glyphIndex, uint32_t cacheKey) {
+  // Check if already in cache
+  auto it = m_glyphs.find(cacheKey);
+  if (it != m_glyphs.end()) return &it->second;
+
+  FT_GlyphSlot g = face->glyph;
   const int w = g->bitmap.width;
   const int h = g->bitmap.rows;
 
@@ -71,8 +118,8 @@ const AtlasGlyph* TTFFont::cacheGlyph(uint32_t glyphIndex) {
     ag.bearingX = g->bitmap_left;
     ag.bearingY = g->bitmap_top;
     ag.advance  = static_cast<int>(g->advance.x);
-    m_glyphs[glyphIndex] = ag;
-    return &m_glyphs[glyphIndex];
+    m_glyphs[cacheKey] = ag;
+    return &m_glyphs[cacheKey];
   }
 
   // Pack into current atlas; make a new one if needed
@@ -103,13 +150,13 @@ const AtlasGlyph* TTFFont::cacheGlyph(uint32_t glyphIndex) {
   ag.bearingX = g->bitmap_left;
   ag.bearingY = g->bitmap_top;
   ag.advance  = static_cast<int>(g->advance.x);
-  m_glyphs[glyphIndex] = ag;
+  m_glyphs[cacheKey] = ag;
 
   // Advance pen
   A->penX += w + 2;
   if (h > A->rowH) A->rowH = h;
 
-  return &m_glyphs[glyphIndex];
+  return &m_glyphs[cacheKey];
 }
 
 void TTFFont::drawText(const std::u32string& text32,
@@ -193,7 +240,7 @@ Rect TTFFont::buildQuads(const std::u32string& text32,
   float maxY = static_cast<float>(m_pixelSize);
 
   for (const auto& sg : shaped) {
-    const AtlasGlyph* ag = cacheGlyph(sg.glyphIndex);
+    const AtlasGlyph* ag = cacheGlyph(sg.glyphIndex, sg.codepoint);
     if (ag && ag->w > 0 && ag->h > 0) {
       const float dx = penX + ag->bearingX + sg.x;
       const float dy = penY - ag->bearingY - sg.y;

@@ -11,6 +11,7 @@
 // Minimalny zestaw danych wyjściowych po shapingu
 struct ShapedGlyph {
   unsigned int glyphIndex; // indeks glifu w FT/HB
+  char32_t codepoint;      // oryginalny codepoint Unicode (dla fallback)
   float x;                 // pozycja x (piksele)
   float y;                 // pozycja y (piksele, baseline = 0)
   float advanceX;          // przesunięcie po glifie (x)

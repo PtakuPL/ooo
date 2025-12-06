@@ -49,7 +49,7 @@ UIWidget
       margin-right: 10
       margin-bottom: 10
       image-source:/images/icons/show_gui_help_grey
-      !tooltip: ('Whenever you defat a creature, it drops a set of loot with a\ncertain chance. The equipment loot bonus shows your chance to\nget a second set of loot, but limited to equipment.')
+      !tooltip: tr('Whenever you defeat a creature, it drops a set of loot with a\ncertain chance. The equipment loot bonus shows your chance to\nget a second set of loot, but limited to equipment.')
     Label
       id: InfoLabel
       anchors.right: InfoIcon.left

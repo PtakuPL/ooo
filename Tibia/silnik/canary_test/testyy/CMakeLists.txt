@@ -179,3 +179,10 @@ endif()
 add_subdirectory(src/protobuf)
 # Src
 add_subdirectory(src)
+
+# Tests (optional, enable with -DBUILD_TESTING=ON)
+option(BUILD_TESTING "Build unit tests" OFF)
+if(BUILD_TESTING)
+    enable_testing()
+    add_subdirectory(tests)
+endif()

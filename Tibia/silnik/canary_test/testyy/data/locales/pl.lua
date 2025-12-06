@@ -7,6 +7,12 @@ locale = {
   thousandsSeperator = ' ',
 
   translation = {
+    -- Imbuing tooltips
+    ["Bribe the fates! Click here to raise your chance to 100%. For guaranteed success use gold."] = "Przekup los! Kliknij tutaj, aby zwiększyć szansę do 100%. Dla gwarantowanego sukcesu użyj złota.",
+    -- Boss slots tooltips
+    ["Whenever you defeat a creature, it drops a set of loot with a\\ncertain chance. The equipment loot bonus shows your chance to\\nget a second set of loot, but limited to equipment."] = "Za każdym razem, gdy pokonasz stworzenie, upuszcza ono zestaw łupów z\\nokreślonym prawdopodobieństwem. Bonus do łupów z ekwipunku pokazuje twoją szansę\\nna zdobycie drugiego zestawu łupów, ale ograniczonego do ekwipunku.",
+    -- Charms tooltips
+    ["You can assign 4 more Charms to creatures.\\nBuy a \"Charm Expansion\" to assign your unlocked Charms to\\ncreatures nearly unlimitedly and to get a 25% discount whenever\\nyou are removing a Charm."] = "Możesz przypisać 4 więcej Uroków do stworzeń.\\nKup \"Rozszerzenie Uroków\", aby przypisywać swoje odblokowane Uroki do\\nstworzeń prawie bez ograniczeń i otrzymać 25% zniżki przy\\nusuwaniu Uroku.",
     ["%d of experience per hour"] = "%d doświadczenia na godzinę",
     ["%s has finished the request"] = "%s zakończył żądanie",
     ["%s has logged in."] = "%s zalogował się.",

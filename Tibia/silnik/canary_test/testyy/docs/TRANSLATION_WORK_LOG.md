@@ -56,23 +56,23 @@ Plik roboczy do śledzenia postępu tłumaczeń. Zawiera krótkie notatki o wyko
 | bg | bg.lua | 447 | 590 | ✅ |
 | hr | hr.lua | 447 | 590 | ✅ |
 | sk | sk.lua | 447 | 590 | ✅ |
+| el | el.lua | 569 | 710 | ✅ |
+| he | he.lua | 569 | 710 | ✅ |
 
 ## Łączne podsumowanie
-- **Rozszerzono 45 języków**
-- **Dodano ~7,830 nowych tłumaczeń**
+- **Rozszerzono 47 języków**
+- **Dodano ~8,110 nowych tłumaczeń**
 - **Metoda**: Etapowe rozszerzanie z przechowywaniem kontekstu w TRANSLATION_WORK_LOG.md
 
 ## Następne do pracy
-- el (Greek) - ~570 wpisów
-- he (Hebrew) - ~570 wpisów
 - ka (Georgian) - ~785 wpisów (ma dużo, może wymagać mniejszego rozszerzenia)
 - kk (Kazakh) - ~719 wpisów
 - sw (Swahili) - ~719 wpisów
 - uz (Uzbek) - ~719 wpisów
 
 ## Aktualnie w pracy
-- Języki: Kontynuuję z el, he
-- Etap: Rozszerzanie Greek (el) i Hebrew (he)
+- Języki: Kontynuuję z ka, kk, sw, uz
+- Etap: Rozszerzanie Georgian (ka), Kazakh (kk), Swahili (sw), Uzbek (uz)
 
 ## Notatki
 - Wszystkie języki używają tego samego zestawu kluczy z pl.lua

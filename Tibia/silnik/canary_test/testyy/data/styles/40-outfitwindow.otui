@@ -92,7 +92,7 @@ PresetButton < Panel
       anchors.right: parent.right
       anchors.left: prev.right
       margin-left: 5
-      text: Save
+      !text: tr('Save')
 
 SelectionButton < Panel
   image-source:  /images/ui/button-grey-qt
@@ -131,7 +131,7 @@ SelectionButton < Panel
 
 OutfitWindow < MainWindow
   size: 735 575
-  text: Customise Character
+  !text: tr('Customise Character')
   color: #929292
   @onEnter: modules.game_outfit.accept()
   @onEscape: modules.game_outfit.destroy()
@@ -141,7 +141,7 @@ OutfitWindow < MainWindow
     anchors.top: parent.top
     anchors.left: parent.left
     size: 469 220
-    text: Preview
+    !text: tr('Preview')
 
     Panel
       id: options
@@ -163,7 +163,7 @@ OutfitWindow < MainWindow
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           anchors.right: parent.right
-          text: Show Floor
+          !text: tr('Show Floor')
 
       FlatPanel
         id: showOutfit
@@ -175,7 +175,7 @@ OutfitWindow < MainWindow
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           anchors.right: parent.right
-          text: Show Outfit
+          !text: tr('Show Outfit')
           checked: true
 
       FlatPanel
@@ -188,7 +188,7 @@ OutfitWindow < MainWindow
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           anchors.right: parent.right
-          text: Show Mount
+          !text: tr('Show Mount')
 
       FlatPanel
         id: showFamiliar
@@ -206,7 +206,7 @@ OutfitWindow < MainWindow
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           anchors.right: parent.right
-          text: Show Familiar
+          !text: tr('Show Familiar')
           @onSetup: |
             if not g_game.getFeature(GamePlayerFamiliars) then
               self:hide()

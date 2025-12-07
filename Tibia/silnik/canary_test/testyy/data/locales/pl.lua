@@ -699,6 +699,11 @@ local add = {
   ["Updating %i files"] = "Aktualizowanie %i plików",
   ["Updating client (may take few seconds)"] = "Aktualizowanie klienta (może potrwać kilka sekund)",
   ["Timeout"] = "Przekroczono limit czasu",
+  ["Can't download file: %s.\nError: %s"] = "Nie można pobrać pliku: %s.\nBłąd: %s",
+  ["Invalid checksum of: %s.\nShould be %s, is: %s"] = "Nieprawidłowa suma kontrolna pliku %s.\nPowinno być %s, jest: %s",
+  ["Invalid data from updater api (not table)"] = "Nieprawidłowe dane z API aktualizatora (brak tabeli)",
+  ["Invalid data from updater api: %s"] = "Nieprawidłowe dane z API aktualizatora: %s",
+  ["%s kbps"] = "%s kb/s",
   
   -- Login errors
   ["Connecting to login server...\nServer: [%s]"] = "Łączenie z serwerem logowania...\nSerwer: [%s]",
@@ -1198,6 +1203,14 @@ local add = {
   ["Send automatically"] = "Wyślij automatycznie",
   ["Assign Spell"] = "Przypisz zaklęcie",
   
+  -- Actionbar dodatki
+  ["name"] = "nazwa",
+  ["words"] = "słowa",
+  ["Parameter"] = "Parametr",
+  ["Equip/unequip"] = "Załóż/zdejmij",
+  ["Use"] = "Użyj",
+  ["Text:"] = "Tekst:",
+  
   -- Quickloot
   ["Skipped Loot"] = "Pominięte łupy",
   ["Accepted Loot"] = "Zaakceptowane łupy",
@@ -1213,7 +1226,37 @@ local add = {
   ["Enter a name for the new preset:"] = "Wprowadź nazwę nowego presetu:",
   
   -- Rule violation
-  ["Rule Violation"] = "Naruszenie regulaminu"
+  ["Rule Violation"] = "Naruszenie regulaminu",
+  
+  -- Create account form
+  ["Character Sex:"] = "Płeć postaci:",
+  ["Recommended World:"] = "Zalecany świat:",
+  ["Password Requirements"] = "Wymagania hasła",
+  ["No invalid Character"] = "Brak niedozwolonych znaków",
+  ["At least one lower case letter (a-z)"] = "Przynajmniej jedna mała litera (a-z)",
+  ["At least one upper case letter (A-Z)"] = "Przynajmniej jedna wielka litera (A-Z)",
+  ["At least one number(0-9)"] = "Przynajmniej jedna cyfra (0-9)",
+  ["Pvp Type:"] = "Typ PvP:",
+  ["Information"] = "Informacje",
+  ["Player Online:"] = "Graczy online:",
+  ["PvP Type:"] = "Typ PvP:",
+  ["World Locations:"] = "Lokalizacje świata:",
+  ["Creation Date"] = "Data utworzenia",
+  ["BattleEye Status:"] = "Status BattleEye:",
+  ["Premium Only:"] = "Tylko premium:",
+  ["Transfer Type:"] = "Typ transferu:",
+  
+  -- Tasks
+  ["Abort"] = "Przerwij",
+  
+  -- Outfit window
+  ["Save"] = "Zapisz",
+  ["Customise Character"] = "Dostosuj postać",
+  ["Preview"] = "Podgląd",
+  ["Show Floor"] = "Pokaż podłogę",
+  ["Show Outfit"] = "Pokaż strój",
+  ["Show Mount"] = "Pokaż wierzchowca",
+  ["Show Familiar"] = "Pokaż towarzysza"
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

@@ -45,7 +45,7 @@ MainWindow
     id: equipCheckbox
     anchors.left: prev.left
     anchors.top: prev.bottom
-    text: Equip/unequip
+    !text: tr('Equip/unequip')
     text-auto-resize: true
     margin-top: 5
     enabled: false
@@ -54,7 +54,7 @@ MainWindow
     id: useCheckbox
     anchors.left: prev.left
     anchors.top: prev.bottom
-    text: Use
+    !text: tr('Use')
     text-auto-resize: true
     margin-top: 5
     enabled: false
@@ -79,12 +79,12 @@ MainWindow
     id: applyButton
     anchors.left: parent.left
     anchors.bottom: parent.bottom
-    text: Apply
+    !text: tr('Apply')
     @onClick: modules.game_actionbar.objectAssignAccept()
 
   Button
     id: cancelButton
     anchors.right: parent.right
     anchors.bottom: parent.bottom
-    text: Cancel
+    !text: tr('Cancel')
     @onClick: modules.game_actionbar.closeObjectAssignWindow()

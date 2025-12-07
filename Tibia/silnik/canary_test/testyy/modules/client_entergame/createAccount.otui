@@ -223,7 +223,7 @@ MainWindow
           type: horizontalBox
           spacing:26
         Label
-          text: Character Sex:
+          !text: tr('Character Sex:')
         RadioBox
           id: Male
           text-horizontal-auto-resize: true
@@ -256,7 +256,7 @@ MainWindow
           type: horizontalBox
           spacing: 35
         Label
-          text: Recommended World:
+          !text: tr('Recommended World:')
         Label
           id: worldLabel
           margin-left:-25
@@ -408,7 +408,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          text: Password Requirements
+          !text: tr('Password Requirements')
           text-offset: 5 5
       Panel
         height: 14
@@ -449,7 +449,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          text: No invalid Character
+          !text: tr('No invalid Character')
           text-offset: 10 2
 
       Panel
@@ -470,7 +470,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          text: At least one lower case letter (a-z)
+          !text: tr('At least one lower case letter (a-z)')
           text-offset: 10 2
       Panel
         height: 14
@@ -490,7 +490,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          text: At least one upper case letter (A-Z)
+          !text: tr('At least one upper case letter (A-Z)')
           text-offset: 10 2
       Panel
         height: 14
@@ -510,7 +510,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          text: At least one number(0-9)
+          !text: tr('At least one number(0-9)')
           text-offset: 10 2
   Panel
     id: mainPanelSelectAGameWorldToPlayOn
@@ -564,7 +564,7 @@ MainWindow
         QtComboBox
           id: comboBoxWorld
         Label
-          text: Pvp Type:
+          !text: tr('Pvp Type:')
         QtComboBox
           id: comboBoxPvp
 
@@ -595,7 +595,7 @@ MainWindow
         anchors.bottom: parent.bottom
         margin-left: 5
         margin-top: 5
-        text: Information
+        !text: tr('Information')
         layout: verticalBox
 
         Panel
@@ -605,7 +605,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            text: Player Online:
+            !text: tr('Player Online:')
 
           Label
             id: PlayersOnline
@@ -620,7 +620,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            text: PvP Type:
+            !text: tr('PvP Type:')
 
           Label
             id: PvPType
@@ -635,7 +635,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            text: World Locations:
+            !text: tr('World Locations:')
 
           Label
             id: Region
@@ -650,7 +650,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            text: Creation Date
+            !text: tr('Creation Date')
 
           Label
             id: CreationDate
@@ -665,7 +665,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            text: BattleEye Status:
+            !text: tr('BattleEye Status:')
 
           Label
             id: BattlEyeActivationTimestamp
@@ -680,7 +680,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            text: Premium Only:
+            !text: tr('Premium Only:')
 
           Label
             id: PremiumOnly
@@ -695,7 +695,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            text: Transfer Type:
+            !text: tr('Transfer Type:')
 
           Label
             id: TransferType

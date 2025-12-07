@@ -175,7 +175,7 @@ MainWindow
     id: abortButton
     anchors.bottom: parent.bottom
     anchors.right: toggleButton.left
-    text: Abort
+    !text: tr('Abort')
     width: 55
     margin-right: 5
     @onClick: modules.game_tasks.abort()

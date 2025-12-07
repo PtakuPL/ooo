@@ -5,7 +5,7 @@ MainWindow
   @onEnter: modules.game_actionbar.textAssignAccept()
   Label
     id: textLabel
-    text: Text:
+    !text: tr('Text:')
     text-auto-resize: true
     height: 20
     anchors.top: parent.top
@@ -39,13 +39,13 @@ MainWindow
     margin-top: 10
   Button
     id: applyButton
-    text: Apply
+    !text: tr('Apply')
     anchors.bottom: parent.bottom
     anchors.left: parent.left
     @onClick: modules.game_actionbar.textAssignAccept()
   Button
     id: cancelButton
-    text: Cancel
+    !text: tr('Cancel')
     anchors.bottom: parent.bottom
     anchors.right: parent.right
     @onClick: modules.game_actionbar.closeTextAssignWindow()

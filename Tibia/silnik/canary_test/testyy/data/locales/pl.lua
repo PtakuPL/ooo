@@ -1476,7 +1476,32 @@ local add = {
   ["Item Summary"] = "Podsumowanie przedmiotów",
   ["Appearances"] = "Wyglądy",
   ["Store Summary"] = "Podsumowanie sklepu",
-  ["Character Titles"] = "Tytuły postaci"
+  ["Character Titles"] = "Tytuły postaci",
+  
+  -- Character stats names
+  ["Flat Damage and healing"] = "Płaskie obrażenia i leczenie",
+  ["Attack Value"] = "Wartość ataku",
+  ["From Base Attack"] = "Z bazowego ataku",
+  ["From Equipment"] = "Z ekwipunku",
+  ["From Combat Tactics"] = "Z taktyki walki",
+  ["Life Leech"] = "Wysysanie życia",
+  ["From Base"] = "Z bazy",
+  ["From Wheel"] = "Z koła",
+  ["Mana Leech"] = "Wysysanie many",
+  ["Onslaught"] = "Natarcie",
+  ["From Amplification"] = "Z wzmocnienia",
+  ["Critical Hit"] = "Trafienie krytyczne",
+  ["Chance"] = "Szansa",
+  ["Extra Damage"] = "Dodatkowe obrażenia",
+  ["Perfect Shot Damage Bonus"] = "Bonus obrażeń perfekcyjnego strzału",
+  ["Defense Value"] = "Wartość obrony",
+  ["From Shielding"] = "Z obrony tarczą",
+  ["Mitigation"] = "Redukcja obrażeń",
+  ["Magic Shield Capacity"] = "Pojemność magicznej tarczy",
+  ["Dodge"] = "Unik",
+  ["From Event Bonus"] = "Z bonusu eventowego",
+  ["Fatal"] = "Śmiertelny",
+  ["Momentum"] = "Impet"
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

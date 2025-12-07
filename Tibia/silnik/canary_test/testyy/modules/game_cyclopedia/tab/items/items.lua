@@ -400,11 +400,11 @@ function Cyclopedia.selectItemCategory(id)
 
     if Cyclopedia.hasClassificationFilter(id) then
         UI.ItemFilter:clearOptions()
-        UI.ItemFilter:addOption("All", 0, true)
-        UI.ItemFilter:addOption("None", -1, true)
+        UI.ItemFilter:addOption(tr("All"), 0, true)
+        UI.ItemFilter:addOption(tr("None"), -1, true)
 
         for class = 1, 4 do
-            UI.ItemFilter:addOption("Class " .. class, class, true)
+            UI.ItemFilter:addOption(tr("Class") .. " " .. class, class, true)
         end
 
         UI.ItemFilter:enable()

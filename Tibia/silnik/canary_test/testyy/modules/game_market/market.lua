@@ -174,11 +174,11 @@ end
 
 local function refreshTypeList()
     offerTypeList:clearOptions()
-    offerTypeList:addOption('Buy')
+    offerTypeList:addOption(tr('Buy'))
 
     if Market.isItemSelected() then
         if Market.getDepotCount(selectedItem.item.marketData.tradeAs) > 0 then
-            offerTypeList:addOption('Sell')
+            offerTypeList:addOption(tr('Sell'))
         end
     end
 end

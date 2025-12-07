@@ -99,7 +99,7 @@ function init()
 
     hotkeyActionCombo = hotkeysWindow:getChildById('hotkeyActionCombo')
 
-    hotkeyActionCombo:addOption('None', 0)
+    hotkeyActionCombo:addOption(tr('None'), 0)
     for _, action in pairs(HotkeyActions) do
         hotkeyActionCombo:addOption(action.text, action.id)
     end

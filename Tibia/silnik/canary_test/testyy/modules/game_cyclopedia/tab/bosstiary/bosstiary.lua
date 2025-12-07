@@ -7,18 +7,18 @@ function showBosstiary()
         "Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30")
     -- UI.FilterBase.BaneIcon:setTooltipAlign(AlignTopLeft)
     UI.FilterBase.ArchfoeIcon:setTooltip(
-        "Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60")
+        tr("Archfoe") .. "\n\n" .. tr("For unlocking a level, you will receive the following boss points:") .. "\n" .. tr("Prowess") .. ": 10\n" .. tr("Expertise") .. ": 30\n" .. tr("Mastery") .. ": 60")
     -- UI.FilterBase.ArchfoeIcon:setTooltipAlign(AlignTopLeft)
     UI.FilterBase.NemesisIcon:setTooltip(
-        "Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60")
+        tr("Nemesis") .. "\n\n" .. tr("For unlocking a level, you will receive the following boss points:") .. "\n" .. tr("Prowess") .. ": 10\n" .. tr("Expertise") .. ": 30\n" .. tr("Mastery") .. ": 60")
     -- UI.FilterBase.NemesisIcon:setTooltipAlign(AlignTopLeft)
-    UI.StarBase.Info1:setTooltip("Once you have reached the Prowess level, you can assign the boss\nto a boss slot.")
+    UI.StarBase.Info1:setTooltip(tr("Once you have reached the Prowess level, you can assign the boss\nto a boss slot."))
     -- UI.StarBase.Info1:setTooltipAlign(AlignTopLeft)
     UI.StarBase.Info2:setTooltip(
-        "Once you have reached the Expertise Level, you can display the\nboss on a Podium of Vigour.")
+        tr("Once you have reached the Expertise Level, you can display the\nboss on a Podium of Vigour."))
     -- UI.StarBase.Info2:setTooltipAlign(AlignTopLeft)
     UI.StarBase.Info3:setTooltip(
-        "Once you have reached the Mastery Level, youl will receive an\nadditional 25% loot bonus when the boss is assigned to a boss slot.")
+        tr("Once you have reached the Mastery Level, you will receive an\nadditional 25% loot bonus when the boss is assigned to a boss slot."))
     -- UI.StarBase.Info3:setTooltipAlign(AlignTopLeft)
     controllerCyclopedia.ui.CharmsBase:setVisible(false)
     controllerCyclopedia.ui.GoldBase:setVisible(false)

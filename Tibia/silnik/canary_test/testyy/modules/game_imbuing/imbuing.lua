@@ -74,8 +74,7 @@ function init()
                             end
                         end
                         emptyImbue.requiredItems:getChildByIndex(i).item:setItemId(source['item']:getId())
-                        emptyImbue.requiredItems:getChildByIndex(i).item:setTooltip('The imbuement requires ' ..
-                                                                                        source['description'] .. '.')
+                        emptyImbue.requiredItems:getChildByIndex(i).item:setTooltip(tr('The imbuement requires %s.', source['description']))
                     end
                     for i = 3, widget.currentIndex + 1, -1 do
                         emptyImbue.requiredItems:getChildByIndex(i).count:setText('')

@@ -1554,7 +1554,20 @@ local add = {
   ["Transcendence"] = "Transcendencja",
   ["Damage Reflection"] = "Odbicie obrażeń",
   ["From Bonus"] = "Z bonusu",
-  ["Blessings"] = "Błogosławieństwa"
+  ["Blessings"] = "Błogosławieństwa",
+  
+  -- Status
+  ["Offline"] = "Offline",
+  
+  -- Prey bonuses
+  ["Damage bonus"] = "Bonus obrażeń",
+  ["Damage reduction bonus"] = "Bonus redukcji obrażeń",
+  ["XP bonus"] = "Bonus doświadczenia",
+  ["Loot bonus"] = "Bonus łupów",
+  ["Unknown bonus"] = "Nieznany bonus",
+  
+  -- Filters
+  ["All"] = "Wszystko"
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

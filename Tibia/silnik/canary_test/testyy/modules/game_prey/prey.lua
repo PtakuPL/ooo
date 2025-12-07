@@ -27,17 +27,17 @@ local preyDescription = {}
 
 function bonusDescription(bonusType, bonusValue, bonusGrade)
     if bonusType == PREY_BONUS_DAMAGE_BOOST then
-        return 'Damage bonus (' .. bonusGrade .. '/10)'
+        return tr('Damage bonus') .. ' (' .. bonusGrade .. '/10)'
     elseif bonusType == PREY_BONUS_DAMAGE_REDUCTION then
-        return 'Damage reduction bonus (' .. bonusGrade .. '/10)'
+        return tr('Damage reduction bonus') .. ' (' .. bonusGrade .. '/10)'
     elseif bonusType == PREY_BONUS_XP_BONUS then
-        return 'XP bonus (' .. bonusGrade .. '/10)'
+        return tr('XP bonus') .. ' (' .. bonusGrade .. '/10)'
     elseif bonusType == PREY_BONUS_IMPROVED_LOOT then
-        return 'Loot bonus (' .. bonusGrade .. '/10)'
+        return tr('Loot bonus') .. ' (' .. bonusGrade .. '/10)'
     else
-        return 'Unknown bonus'
+        return tr('Unknown bonus')
     end
-    return 'Unknown bonus'
+    return tr('Unknown bonus')
 end
 
 function timeleftTranslation(timeleft, forPreyTimeleft) -- in seconds

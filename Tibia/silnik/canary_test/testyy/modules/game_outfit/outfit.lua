@@ -340,7 +340,7 @@ function create(player, outfitList, creatureMount, mountList, familiarList, wing
     floor:hide()
 
     for _, appKey in ipairs(AppearanceData) do
-        updateAppearanceText(appKey, "None")
+        updateAppearanceText(appKey, tr("None"))
     end
 
     previewCreature = window.preview.panel.creature
@@ -1481,7 +1481,7 @@ end
 
 function updateAppearanceTexts(outfit)
     for _, appKey in ipairs(AppearanceData) do
-        updateAppearanceText(appKey, "None")
+        updateAppearanceText(appKey, tr("None"))
     end
 
     for key, value in pairs(outfit) do

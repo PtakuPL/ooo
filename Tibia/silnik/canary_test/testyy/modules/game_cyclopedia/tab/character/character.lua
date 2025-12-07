@@ -1215,7 +1215,7 @@ end
 function Cyclopedia.loadCharacterBadges(showAccountInformation, playerOnline, playerPremium, loyaltyTitle, badgesVector)
     UI.CharacterStats.ListBadge:destroyChildren()
 
-    local playerOnlineStatus = "Offline"
+    local playerOnlineStatus = tr("Offline")
     local playerOnlineStatusColor = "#ff0000"
     if playerOnline == 1 then
         playerOnlineStatus = tr("Online")

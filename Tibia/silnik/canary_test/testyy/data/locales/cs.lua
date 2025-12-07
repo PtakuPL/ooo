@@ -567,3 +567,244 @@ locale = {
 }
 
 modules.client_locales.installLocale(locale)
+
+-- Additional translations merged at runtime
+local add = {
+  -- Death dialogs
+  ["Alas! Brave adventurer, you have met a sad fate.\nBut do not despair, for the gods will bring you back\ninto this world in exchange for a small sacrifice\n\nSimply click on Ok to resume your journeys!"] = "Běda! Statečný dobrodruhu, potkal tě smutný osud.\nAle nezoufej, bohové tě vrátí\ndo tohoto světa výměnou za malou oběť\n\nStačí kliknout na OK a pokračovat v cestách!",
+  ["Journey Onwards"] = "Pokračovat v cestě",
+
+  -- Hotkey management extended
+  ["Add hotkey preset"] = "Přidat přednastavení klávesových zkratek",
+  ["Add new group"] = "Přidat novou skupinu",
+  ["Copy hotkey preset"] = "Kopírovat přednastavení",
+  ["Rename hotkey preset"] = "Přejmenovat přednastavení",
+  ["Enter a name for the new preset:"] = "Zadejte název pro nové přednastavení:",
+  ["Do you really want to delete the hotkey preset %s?"] = "Opravdu chcete smazat přednastavení %s?",
+  ["Edit group %s"] = "Upravit skupinu %s",
+  ["Remove group %s"] = "Odstranit skupinu %s",
+  ["Hide groups"] = "Skrýt skupiny",
+  ["Show groups"] = "Zobrazit skupiny",
+  
+  -- Cyclopedia extended
+  ["Imbuement Tracker"] = "Sledování imbuementů",
+  ["Prey Tracker"] = "Sledování kořisti",
+  ["Prey Dialog"] = "Dialog kořisti",
+  ["Select monster"] = "Vybrat příšeru",
+  ["Account Badges"] = "Odznaky účtu",
+  ["Boss Points"] = "Body bossů",
+  ["Creature Name"] = "Jméno tvora",
+  
+  -- House system
+  ["Accept House Transfer"] = "Přijmout převod domu",
+  ["Cancel House Transfer"] = "Zrušit převod domu",
+  ["Move Out"] = "Odstěhovat se",
+  ["New Owner:"] = "Nový vlastník:",
+  ["No house selected"] = "Není vybrán dům",
+  ["Place Your Bid"] = "Zadejte nabídku",
+  
+  -- Combat stats
+  ["Life Leech"] = "Životní vysátí",
+  ["Mana Leech"] = "Manové vysátí",
+  ["Magic"] = "Magie",
+  ["Physical"] = "Fyzické",
+  ["Club"] = "Kyj",
+  ["Axe"] = "Sekera",
+  ["Sword"] = "Meč",
+  ["Dodge"] = "Úhyb",
+  
+  -- Elements
+  ["Death"] = "Smrt",
+  ["Earth"] = "Země",
+  ["Energy"] = "Energie",
+  ["Fire"] = "Oheň",
+  ["Holy"] = "Svaté",
+  ["Ice"] = "Led",
+  
+  -- Days
+  ["Monday"] = "Pondělí",
+  ["Tuesday"] = "Úterý",
+  ["Wednesday"] = "Středa",
+  ["Thursday"] = "Čtvrtek",
+  ["Saturday"] = "Sobota",
+  ["Sunday"] = "Neděle",
+  
+  -- UI elements
+  ["Navigation"] = "Navigace",
+  ["Next"] = "Další",
+  ["Previous"] = "Předchozí",
+  ["None"] = "Žádný",
+  ["Points"] = "Body",
+  ["Progress"] = "Pokrok",
+  ["Quest Tracker"] = "Sledování úkolů",
+  ["Rank"] = "Hodnocení",
+  ["Reset"] = "Resetovat",
+  ["Show All"] = "Zobrazit vše",
+  ["Status"] = "Stav",
+  ["Stop"] = "Zastavit",
+  ["Submit"] = "Odeslat",
+  ["Track"] = "Sledovat",
+  ["Updater"] = "Aktualizátor",
+  ["Wiki"] = "Wiki",
+  ["World"] = "Svět",
+  
+  -- Prey system
+  ["Prey Creatures"] = "Tvorové kořisti",
+  ["Preys"] = "Kořisti",
+  
+  -- Tasks
+  ["Do you really want to abort this task?"] = "Opravdu chcete zrušit tento úkol?",
+  ["Summary"] = "Shrnutí",
+  
+  -- Account
+  ["Manage Account"] = "Správa účtu",
+  ["Free"] = "Zdarma",
+  
+  -- Items
+  ["Wrap"] = "Zabalit",
+  ["Unwrap"] = "Rozbalit",
+  
+  -- Misc
+  ["Chat Off"] = "Chat vypnutý",
+  ["Chat On"] = "Chat zapnutý",
+  ["Local Chat"] = "Místní chat",
+  ["Top"] = "Nahoře",
+  ["Bottom"] = "Dole",
+  ["Compact"] = "Kompaktní",
+  ["Large"] = "Velký",
+  ["ok"] = "ok",
+  ["remove"] = "odstranit",
+  
+  -- Additional UI
+  ["Store"] = "Obchod",
+  ["Prey"] = "Kořist",
+  ["Analytics"] = "Analytika",
+  ["Daily Reward"] = "Denní Odměna",
+  ["Collect Reward"] = "Vyzvednout Odměnu",
+  ["Claim"] = "Nárokovat",
+  ["Streak"] = "Série",
+  ["Bonus"] = "Bonus",
+  
+  -- Prey System
+  ["Prey Creature"] = "Kořistní Bytost",
+  ["Prey Bonus"] = "Bonus Kořisti",
+  ["Reroll"] = "Přehodit",
+  ["Lock Prey"] = "Zamknout Kořist",
+  
+  -- Bosstiary
+  ["Bosstiary"] = "Kniha Bossů",
+  ["Boss Tracker"] = "Sledovač Bossů",
+  ["Quick Loot"] = "Rychlé Rabování",
+  
+  -- Bosstiary System
+  ["Bosstiary"] = "Bosstiary",
+  ["Boss Kills"] = "Zabití Bossů",
+  ["Archfoe"] = "Hlavní Nepřítel",
+  ["Bane"] = "Zkáza",
+  ["Nemesis"] = "Nemesis",
+  ["Boss Points"] = "Body Bossů",
+  ["Unlock Slot"] = "Odemknout Slot",
+  ["Equipped"] = "Vybaveno",
+  
+  -- Market System
+  ["Market"] = "Trh",
+  ["Browse Offers"] = "Procházet Nabídky",
+  ["My Offers"] = "Moje Nabídky",
+  ["My History"] = "Moje Historie",
+  ["Buy Offer"] = "Nabídka Nákupu",
+  ["Sell Offer"] = "Nabídka Prodeje",
+  ["Create Offer"] = "Vytvořit Nabídku",
+  ["Cancel Offer"] = "Zrušit Nabídku",
+  ["Amount"] = "Množství",
+  ["Total Price"] = "Celková Cena",
+  ["Piece Price"] = "Cena za Kus",
+  ["Statistics"] = "Statistiky",
+  ["Transactions"] = "Transakce",
+  ["Average Prices"] = "Průměrné Ceny",
+  ["Highest Prices"] = "Nejvyšší Ceny",
+  ["Lowest Prices"] = "Nejnižší Ceny",
+  
+  -- Forge System
+  ["Forge"] = "Kovárna",
+  ["Dust Converter"] = "Převodník Prachu",
+  ["Fusion"] = "Fúze",
+  ["Transfer"] = "Přenos",
+  ["Tier"] = "Úroveň",
+  ["Success Chance"] = "Šance na Úspěch",
+  ["Dust"] = "Prach",
+  ["Slivers"] = "Úlomky",
+  ["Cores"] = "Jádra",
+  ["Exalted Cores"] = "Povznesená Jádra",
+  
+  -- Wheel of Destiny
+  ["Wheel of Destiny"] = "Kolo Osudu",
+  ["Revelation Points"] = "Body Zjevení",
+  ["Promotion Points"] = "Body Povýšení",
+  ["Gift of Life"] = "Dar Života",
+  ["Divine Empowerment"] = "Božské Posílení",
+  ["Blessing of the Grove"] = "Požehnání Háje",
+  ["Combat Mastery"] = "Mistrovství v Boji",
+  ["Healing Link"] = "Léčebné Pouto",
+  
+  -- Prey System
+  ["Prey"] = "Kořist",
+  ["Prey Bonus"] = "Bonus Kořisti",
+  ["Prey Slot"] = "Slot Kořisti",
+  ["Select Creature"] = "Vybrat Tvora",
+  ["Bonus Type"] = "Typ Bonusu",
+  ["Damage Boost"] = "Zvýšení Poškození",
+  ["Defense Boost"] = "Zvýšení Obrany",
+  ["XP Bonus"] = "XP Bonus",
+  ["Loot Bonus"] = "Bonus Kořisti",
+  ["Prey Cards"] = "Karty Kořisti",
+  ["Prey Wildcards"] = "Žolíky Kořisti",
+  
+  -- Supply Management System
+  ["Supply Stash"] = "Sklad Zásob",
+  ["Stash All Items"] = "Uložit Všechny Předměty",
+  ["Stash Container"] = "Kontejner Skladu",
+  ["Retrieve Item"] = "Vybrat Předmět",
+  ["Item Stash"] = "Sklad Předmětů",
+  ["Supply Analysis"] = "Analýza Zásob",
+  ["Supply Usage"] = "Využití Zásob",
+  ["Hunt Analysis"] = "Analýza Lovu",
+  ["Damage Analysis"] = "Analýza Poškození",
+  ["Healing Analysis"] = "Analýza Léčení",
+  ["Waste Counter"] = "Počítadlo Odpadu",
+  ["Profit Counter"] = "Počítadlo Zisku",
+  ["Session Time"] = "Čas Sezení",
+  
+  -- Soul and Regeneration
+  ["Soul Points"] = "Body Duše",
+  ["Soul Regeneration"] = "Regenerace Duše",
+  ["Soul Leech"] = "Vysávání Duše",
+  ["Regeneration"] = "Regenerace",
+  ["Regeneration Rate"] = "Rychlost Regenerace",
+  ["Mana Regeneration"] = "Regenerace Many",
+  ["Health Regeneration"] = "Regenerace Zdraví",
+  
+  -- Character Information Extended
+  ["Character Name"] = "Jméno Postavy",
+  ["Character Level"] = "Úroveň Postavy",
+  ["Character Vocation"] = "Povolání Postavy",
+  ["Skill Points"] = "Body Dovedností",
+  ["Skill Progress"] = "Pokrok Dovedností",
+  ["Base Speed"] = "Základní Rychlost",
+  ["Current Speed"] = "Aktuální Rychlost",
+  ["Equipment"] = "Vybavení",
+  ["Inventory"] = "Inventář",
+  ["Store Inbox"] = "Doručená Pošta Obchodu",
+  ["Purse"] = "Peněženka",
+  
+  -- Party and Group Extended
+  ["Party Experience"] = "Zkušenosti Skupiny",
+  ["Party Shared Experience"] = "Sdílené Zkušenosti Skupiny",
+  ["Party Leader"] = "Vedoucí Skupiny",
+  ["Party Member"] = "Člen Skupiny",
+  ["Party Invitation"] = "Pozvánka do Skupiny",
+  ["Accept Party Invitation"] = "Přijmout Pozvánku do Skupiny",
+  ["Decline Party Invitation"] = "Odmítnout Pozvánku do Skupiny",
+}
+for k,v in pairs(add) do
+  locale.translation[k] = locale.translation[k] or v
+end

@@ -567,3 +567,247 @@ locale = {
 }
 
 modules.client_locales.installLocale(locale)
+
+-- Additional translations merged at runtime
+local add = {
+  -- Death dialogs
+  ["Alas! Brave adventurer, you have met a sad fate.\nBut do not despair, for the gods will bring you back\ninto this world in exchange for a small sacrifice\n\nSimply click on Ok to resume your journeys!"] = "Ak! Modige eventyrer, du har mødt en trist skæbne.\nMen fortvivl ikke, guderne vil bringe dig tilbage\ntil denne verden i bytte for et lille offer\n\nKlik bare på OK for at genoptage dine rejser!",
+  ["Journey Onwards"] = "Fortsæt rejsen",
+
+  -- Hotkey management
+  ["Add hotkey preset"] = "Tilføj genvejsforudindstilling",
+  ["Add new group"] = "Tilføj ny gruppe",
+  ["Copy hotkey preset"] = "Kopier forudindstilling",
+  ["Edit group %s"] = "Rediger gruppe %s",
+  ["Remove group %s"] = "Fjern gruppe %s",
+  ["Hide groups"] = "Skjul grupper",
+  ["Show groups"] = "Vis grupper",
+  
+  -- Cyclopedia extended
+  ["Imbuement Tracker"] = "Imbuement-sporer",
+  ["Prey Tracker"] = "Bytsporer",
+  ["Prey Dialog"] = "Bytdialog",
+  ["Select monster"] = "Vælg monster",
+  ["Account Badges"] = "Kontobadges",
+  ["Boss Points"] = "Bosspoint",
+  ["Creature Name"] = "Væsens navn",
+  
+  -- House system
+  ["Accept House Transfer"] = "Accepter husoverførsel",
+  ["Cancel House Transfer"] = "Annuller husoverførsel",
+  ["Move Out"] = "Flyt ud",
+  ["New Owner:"] = "Ny ejer:",
+  ["No house selected"] = "Intet hus valgt",
+  ["Place Your Bid"] = "Afgiv dit bud",
+  
+  -- Combat stats
+  ["Life Leech"] = "Livsstjæling",
+  ["Mana Leech"] = "Manastjæling",
+  ["Magic"] = "Magi",
+  ["Physical"] = "Fysisk",
+  ["Dodge"] = "Undvig",
+  
+  -- Elements
+  ["Death"] = "Død",
+  ["Earth"] = "Jord",
+  ["Energy"] = "Energi",
+  ["Fire"] = "Ild",
+  ["Holy"] = "Hellig",
+  ["Ice"] = "Is",
+  
+  -- Days
+  ["Monday"] = "Mandag",
+  ["Tuesday"] = "Tirsdag",
+  ["Wednesday"] = "Onsdag",
+  ["Thursday"] = "Torsdag",
+  ["Saturday"] = "Lørdag",
+  ["Sunday"] = "Søndag",
+  
+  -- UI elements
+  ["Navigation"] = "Navigation",
+  ["Next"] = "Næste",
+  ["Previous"] = "Forrige",
+  ["None"] = "Ingen",
+  ["Points"] = "Point",
+  ["Progress"] = "Fremskridt",
+  ["Quest Tracker"] = "Opgavesporer",
+  ["Rank"] = "Rang",
+  ["Reset"] = "Nulstil",
+  ["Show All"] = "Vis alle",
+  ["Status"] = "Status",
+  ["Stop"] = "Stop",
+  ["Submit"] = "Indsend",
+  ["Track"] = "Spor",
+  ["Updater"] = "Opdaterer",
+  ["Wiki"] = "Wiki",
+  ["World"] = "Verden",
+  
+  -- Prey system
+  ["Prey Creatures"] = "Bytvæsener",
+  ["Preys"] = "Byt",
+  
+  -- Tasks
+  ["Summary"] = "Resumé",
+  
+  -- Account
+  ["Manage Account"] = "Administrer konto",
+  ["Free"] = "Gratis",
+  
+  -- Items
+  ["Wrap"] = "Pak ind",
+  ["Unwrap"] = "Pak ud",
+  
+  -- Misc
+  ["Chat Off"] = "Chat fra",
+  ["Chat On"] = "Chat til",
+  ["Local Chat"] = "Lokal chat",
+  ["Top"] = "Top",
+  ["Bottom"] = "Bund",
+  ["Compact"] = "Kompakt",
+  ["Large"] = "Stor",
+  ["ok"] = "ok",
+  ["remove"] = "fjern",
+  
+  -- Additional UI
+  ["Store"] = "Butik",
+  ["Prey"] = "Bytte",
+  ["Analytics"] = "Analyse",
+  ["Daily Reward"] = "Daglig Belønning",
+  ["Collect Reward"] = "Indsaml Belønning",
+  ["Claim"] = "Kræv",
+  ["Streak"] = "Serie",
+  ["Bonus"] = "Bonus",
+  
+  -- Prey System
+  ["Prey Creature"] = "Byttevæsen",
+  ["Prey Bonus"] = "Bytte Bonus",
+  ["Reroll"] = "Rul igen",
+  ["Lock Prey"] = "Lås Bytte",
+  ["Damage Bonus"] = "Skade Bonus",
+  ["Defense Bonus"] = "Forsvar Bonus",
+  
+  -- Forge System
+  ["Forge"] = "Smedje",
+  ["Dust"] = "Støv",
+  ["Fusion"] = "Fusion",
+  ["Transfer"] = "Overførsel",
+  ["Tier"] = "Niveau",
+  ["Success Rate"] = "Succesrate",
+  
+  -- Bosstiary
+  ["Bosstiary"] = "Boss Bog",
+  ["Boss Tracker"] = "Boss Sporer",
+  ["Quick Loot"] = "Hurtig Plyndring",
+  
+  -- Bosstiary System
+  ["Bosstiary"] = "Bosstiary",
+  ["Boss Kills"] = "Boss Drab",
+  ["Archfoe"] = "Ærkefjende",
+  ["Bane"] = "Forbandelse",
+  ["Nemesis"] = "Nemesis",
+  ["Boss Points"] = "Boss Point",
+  ["Unlock Slot"] = "Lås Plads Op",
+  ["Equipped"] = "Udstyret",
+  
+  -- Market System
+  ["Market"] = "Marked",
+  ["Browse Offers"] = "Gennemse Tilbud",
+  ["My Offers"] = "Mine Tilbud",
+  ["My History"] = "Min Historie",
+  ["Buy Offer"] = "Købstilbud",
+  ["Sell Offer"] = "Salgstilbud",
+  ["Create Offer"] = "Opret Tilbud",
+  ["Cancel Offer"] = "Annuller Tilbud",
+  ["Amount"] = "Mængde",
+  ["Total Price"] = "Samlet Pris",
+  ["Piece Price"] = "Stykpris",
+  ["Statistics"] = "Statistik",
+  ["Transactions"] = "Transaktioner",
+  ["Average Prices"] = "Gennemsnitspriser",
+  ["Highest Prices"] = "Højeste Priser",
+  ["Lowest Prices"] = "Laveste Priser",
+  
+  -- Forge System
+  ["Forge"] = "Smedje",
+  ["Dust Converter"] = "Støvkonverter",
+  ["Fusion"] = "Fusion",
+  ["Transfer"] = "Overførsel",
+  ["Tier"] = "Niveau",
+  ["Success Chance"] = "Succeschance",
+  ["Dust"] = "Støv",
+  ["Slivers"] = "Splinter",
+  ["Cores"] = "Kerner",
+  ["Exalted Cores"] = "Ophøjede Kerner",
+  
+  -- Wheel of Destiny
+  ["Wheel of Destiny"] = "Skæbnens Hjul",
+  ["Revelation Points"] = "Åbenbaringspoint",
+  ["Promotion Points"] = "Forfremmelsepoint",
+  ["Gift of Life"] = "Livets Gave",
+  ["Divine Empowerment"] = "Guddommelig Styrkelse",
+  ["Blessing of the Grove"] = "Lundens Velsignelse",
+  ["Combat Mastery"] = "Kampmesterskab",
+  ["Healing Link"] = "Helbredelseslink",
+  
+  -- Prey System
+  ["Prey"] = "Bytte",
+  ["Prey Bonus"] = "Byttebonus",
+  ["Prey Slot"] = "Bytteplads",
+  ["Select Creature"] = "Vælg Væsen",
+  ["Bonus Type"] = "Bonustype",
+  ["Damage Boost"] = "Skadeforøgelse",
+  ["Defense Boost"] = "Forsvarsforøgelse",
+  ["XP Bonus"] = "XP Bonus",
+  ["Loot Bonus"] = "Byttebonus",
+  ["Prey Cards"] = "Byttekort",
+  ["Prey Wildcards"] = "Bytte Jokere",
+  
+  -- Supply Management System
+  ["Supply Stash"] = "Forsyningslager",
+  ["Stash All Items"] = "Gem alle genstande",
+  ["Stash Container"] = "Lagerbeholder",
+  ["Retrieve Item"] = "Hent genstand",
+  ["Item Stash"] = "Genstandslager",
+  ["Supply Analysis"] = "Forsyningsanalyse",
+  ["Supply Usage"] = "Forsyningsbrug",
+  ["Hunt Analysis"] = "Jagtanalyse",
+  ["Damage Analysis"] = "Skadeanalyse",
+  ["Healing Analysis"] = "Helbredelsesanalyse",
+  ["Waste Counter"] = "Spildtæller",
+  ["Profit Counter"] = "Profittæller",
+  ["Session Time"] = "Sessionstid",
+  
+  -- Soul and Regeneration
+  ["Soul Points"] = "Sjælspoint",
+  ["Soul Regeneration"] = "Sjælsgenopretning",
+  ["Soul Leech"] = "Sjælsudsugning",
+  ["Regeneration"] = "Genopretning",
+  ["Regeneration Rate"] = "Genopretningsrate",
+  ["Mana Regeneration"] = "Mana Genopretning",
+  ["Health Regeneration"] = "Sundhedsgenopretning",
+  
+  -- Character Information Extended
+  ["Character Name"] = "Karakternavn",
+  ["Character Level"] = "Karakterniveau",
+  ["Character Vocation"] = "Karaktererhverv",
+  ["Skill Points"] = "Færdighedspoint",
+  ["Skill Progress"] = "Færdighedsfremskridt",
+  ["Base Speed"] = "Grundhastighed",
+  ["Current Speed"] = "Nuværende hastighed",
+  ["Equipment"] = "Udstyr",
+  ["Inventory"] = "Inventar",
+  ["Store Inbox"] = "Butiks indbakke",
+  ["Purse"] = "Pengepung",
+  
+  -- Party and Group Extended
+  ["Party Experience"] = "Gruppeerfaring",
+  ["Party Shared Experience"] = "Delt gruppeerfaring",
+  ["Party Leader"] = "Gruppeleder",
+  ["Party Member"] = "Gruppemedlem",
+  ["Party Invitation"] = "Gruppeinvitation",
+  ["Accept Party Invitation"] = "Accepter gruppeinvitation",
+  ["Decline Party Invitation"] = "Afvis gruppeinvitation",
+}
+for k,v in pairs(add) do
+  locale.translation[k] = locale.translation[k] or v
+end

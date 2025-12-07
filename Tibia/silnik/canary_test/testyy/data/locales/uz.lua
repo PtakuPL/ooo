@@ -712,7 +712,108 @@ locale = {
     ["Your request has been closed"] = "Sizning so'rovingiz yopildi",
     ["There is no way."] = "Yo'l yo'q.",
     ["You can enter new text."] = "Siz yangi matn kiritishingiz mumkin.",
-    ["Unable to logout."] = "Chiqib bo'lmadi."
+    ["Unable to logout."] = "Chiqib bo'lmadi.",
+    
+    -- Status Effects
+    ["You are bleeding"] = "Siz qon ketayapsiz",
+    ["You are burning"] = "Siz yonayapsiz",
+    ["You are cursed"] = "Siz la'natlangansiz",
+    ["You are dazzled"] = "Siz ko'zingiz qamashdi",
+    ["You are dead"] = "Siz o'lgansiz",
+    ["You are dead."] = "Siz o'lgansiz.",
+    ["You are drowning"] = "Siz cho'kayapsiz",
+    ["You are drunk"] = "Siz mastmansiz",
+    ["You are electrified"] = "Siz tok urdi",
+    ["You are freezing"] = "Siz muzlayapsiz",
+    ["You are hasted"] = "Siz tezlashdingiz",
+    ["You are hungry"] = "Siz ochsiz",
+    ["You are paralysed"] = "Siz falaj bo'ldingiz",
+    ["You are poisoned"] = "Siz zaharlangansiz",
+    ["You are protected by a magic shield"] = "Siz sehrli qalqon bilan himoyalangansiz",
+    ["You are strengthened"] = "Siz kuchaydingiz",
+    ["You are within a protection zone"] = "Siz himoya zonasidamisiz",
+    
+    -- Combat
+    ["Damage"] = "Zarar",
+    ["Healing"] = "Davolash",
+    ["Critical Hit"] = "Tanqidiy zarba",
+    ["Critical Hits"] = "Tanqidiy zarbalar",
+    ["Life Leech"] = "Hayotni so'rish",
+    ["Mana Leech"] = "Manani so'rish",
+    
+    -- Tasks
+    ["Tasks"] = "Vazifalar",
+    ["Task"] = "Vazifa",
+    ["Daily Tasks"] = "Kundalik vazifalar",
+    ["Weekly Tasks"] = "Haftalik vazifalar",
+    ["Reward"] = "Mukofot",
+    ["Rewards"] = "Mukofotlar",
+    ["Claim Reward"] = "Mukofotni olish",
+    ["Progress"] = "Taraqqiyot",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Bosstiary",
+    ["Boss Tracker"] = "Boss kuzatuvchisi",
+    ["Boss Kills"] = "Boss o'ldirishlari",
+    ["Archfoe"] = "Bosh dushman",
+    ["Bane"] = "La'nat",
+    ["Nemesis"] = "Nemesis",
+    ["Boss Points"] = "Boss ballari",
+    ["Unlock Slot"] = "Slotni ochish",
+    ["Equipped"] = "Jihozlangan",
+    
+    -- Market System
+    ["Market"] = "Bozor",
+    ["Browse Offers"] = "Takliflarni ko'rish",
+    ["My Offers"] = "Mening takliflarim",
+    ["My History"] = "Mening tarixim",
+    ["Buy Offer"] = "Sotib olish taklifi",
+    ["Sell Offer"] = "Sotish taklifi",
+    ["Create Offer"] = "Taklif yaratish",
+    ["Cancel Offer"] = "Taklifni bekor qilish",
+    ["Amount"] = "Miqdor",
+    ["Total Price"] = "Umumiy narx",
+    ["Piece Price"] = "Birlik narxi",
+    ["Statistics"] = "Statistika",
+    ["Transactions"] = "Tranzaksiyalar",
+    ["Average Prices"] = "O'rtacha narxlar",
+    ["Highest Prices"] = "Eng yuqori narxlar",
+    ["Lowest Prices"] = "Eng past narxlar",
+    
+    -- Forge System
+    ["Forge"] = "Temirchilik",
+    ["Dust Converter"] = "Chang o'zgartiruvchi",
+    ["Fusion"] = "Birlashtirish",
+    ["Transfer"] = "O'tkazish",
+    ["Tier"] = "Daraja",
+    ["Success Chance"] = "Muvaffaqiyat ehtimoli",
+    ["Dust"] = "Chang",
+    ["Slivers"] = "Bo'laklar",
+    ["Cores"] = "Yadro",
+    ["Exalted Cores"] = "Yuksaltirilgan yadro",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Taqdir g'ildiragi",
+    ["Revelation Points"] = "Kashfiyot ballari",
+    ["Promotion Points"] = "Ko'tarilish ballari",
+    ["Gift of Life"] = "Hayot sovg'asi",
+    ["Divine Empowerment"] = "Ilohiy kuchayish",
+    ["Blessing of the Grove"] = "O'rmon barakasi",
+    ["Combat Mastery"] = "Jang mahorati",
+    ["Healing Link"] = "Davolash aloqasi",
+    
+    -- Prey System
+    ["Prey"] = "O'lja",
+    ["Prey Bonus"] = "O'lja bonusi",
+    ["Prey Slot"] = "O'lja sloti",
+    ["Select Creature"] = "Jonzotni tanlash",
+    ["Bonus Type"] = "Bonus turi",
+    ["Damage Boost"] = "Zarar oshirish",
+    ["Defense Boost"] = "Himoya oshirish",
+    ["XP Bonus"] = "XP bonusi",
+    ["Loot Bonus"] = "O'lja bonusi",
+    ["Prey Cards"] = "O'lja kartalari",
+    ["Prey Wildcards"] = "O'lja joker kartalari"
   }
 }
 

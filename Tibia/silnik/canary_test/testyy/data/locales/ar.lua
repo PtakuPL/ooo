@@ -567,3 +567,245 @@ locale = {
 }
 
 modules.client_locales.installLocale(locale)
+
+-- Additional translations merged at runtime
+local add = {
+  -- Death dialogs
+  ["Alas! Brave adventurer, you have met a sad fate.\nBut do not despair, for the gods will bring you back\ninto this world in exchange for a small sacrifice\n\nSimply click on Ok to resume your journeys!"] = "للأسف! أيها المغامر الشجاع، لقد واجهت مصيرًا حزينًا.\nلكن لا تيأس، الآلهة ستعيدك\nإلى هذا العالم مقابل تضحية صغيرة\n\nما عليك سوى النقر على موافق لمتابعة رحلاتك!",
+  ["Journey Onwards"] = "متابعة الرحلة",
+
+  -- Hotkey management extended
+  ["Add hotkey preset"] = "إضافة إعداد مسبق لمفتاح الاختصار",
+  ["Add new group"] = "إضافة مجموعة جديدة",
+  ["Copy hotkey preset"] = "نسخ إعداد مفتاح الاختصار",
+  ["Rename hotkey preset"] = "إعادة تسمية إعداد مفتاح الاختصار",
+  ["Enter a name for the new preset:"] = "أدخل اسمًا للإعداد الجديد:",
+  ["Enter a name for the preset:"] = "أدخل اسمًا للإعداد:",
+  ["Do you really want to delete the hotkey preset %s?"] = "هل تريد حقًا حذف إعداد مفتاح الاختصار %s؟",
+  ["Edit group %s"] = "تحرير المجموعة %s",
+  ["Remove group %s"] = "إزالة المجموعة %s",
+  ["Hide groups"] = "إخفاء المجموعات",
+  ["Show groups"] = "إظهار المجموعات",
+  
+  -- Cyclopedia extended
+  ["Imbuement Tracker"] = "متتبع التشريب",
+  ["Prey Tracker"] = "متتبع الفريسة",
+  ["Prey Dialog"] = "نافذة الفريسة",
+  ["Select monster"] = "اختيار وحش",
+  ["Select monster to proceed."] = "اختر وحشًا للمتابعة.",
+  ["Account Badges"] = "شارات الحساب",
+  ["Account Premium"] = "حساب مميز",
+  ["Boss Points"] = "نقاط الزعيم",
+  ["Creature Name"] = "اسم المخلوق",
+  ["Major Charms"] = "السحر الرئيسي",
+  ["Minor Charms"] = "السحر الثانوي",
+  
+  -- Charms
+  ["Confirm Charm Removal"] = "تأكيد إزالة السحر",
+  ["Confirm Selected Charm"] = "تأكيد السحر المحدد",
+  ["Confirm Unlocking of Charm"] = "تأكيد فتح السحر",
+  
+  -- House system extended
+  ["Accept House Transfer"] = "قبول نقل المنزل",
+  ["Accept Transfer"] = "قبول النقل",
+  ["Cancel House Transfer"] = "إلغاء نقل المنزل",
+  ["Cancel Transfer"] = "إلغاء النقل",
+  ["Configure House Transfer"] = "تكوين نقل المنزل",
+  ["Confirm House Action"] = "تأكيد إجراء المنزل",
+  ["Move Out"] = "الانتقال",
+  ["New Owner:"] = "المالك الجديد:",
+  ["Pending Transfer"] = "نقل معلق",
+  ["No house selected"] = "لم يتم اختيار منزل",
+  ["Max. Beds:"] = "الحد الأقصى للأسرة:",
+  ["Place Your Bid"] = "ضع عرضك",
+  
+  -- Combat stats
+  ["Life Leech"] = "امتصاص الحياة",
+  ["Mana Leech"] = "امتصاص المانا",
+  ["Magic"] = "سحر",
+  ["Mastery"] = "إتقان",
+  ["Mitigation"] = "تخفيف",
+  ["Physical"] = "فيزيائي",
+  ["Club"] = "هراوة",
+  ["Axe"] = "فأس",
+  ["Sword"] = "سيف",
+  ["Dodge"] = "مراوغة",
+  
+  -- Elements
+  ["Death"] = "موت",
+  ["Drown"] = "غرق",
+  ["Earth"] = "أرض",
+  ["Energy"] = "طاقة",
+  ["Fire"] = "نار",
+  ["Holy"] = "مقدس",
+  ["Ice"] = "جليد",
+  
+  -- Days of week
+  ["Monday"] = "الاثنين",
+  ["Tuesday"] = "الثلاثاء",
+  ["Wednesday"] = "الأربعاء",
+  ["Thursday"] = "الخميس",
+  ["Saturday"] = "السبت",
+  ["Sunday"] = "الأحد",
+  
+  -- Auction
+  ["Auction"] = "مزاد",
+  ["Auction Information"] = "معلومات المزاد",
+  ["Bid"] = "عرض",
+  ["Average Market Price"] = "متوسط سعر السوق",
+  
+  -- Item details
+  ["Armor Value"] = "قيمة الدرع",
+  ["Attack Value"] = "قيمة الهجوم",
+  ["Defence Value"] = "قيمة الدفاع",
+  
+  -- Equipment
+  ["Boots"] = "أحذية",
+  ["Helmet"] = "خوذة",
+  ["Shield"] = "درع",
+  ["Legs"] = "سروال",
+  ["Ring"] = "خاتم",
+  ["Necklace"] = "قلادة",
+  
+  -- Settings
+  ["Active"] = "نشط",
+  ["Apply"] = "تطبيق",
+  ["Back"] = "رجوع",
+  ["Clear Cache"] = "مسح ذاكرة التخزين المؤقت",
+  ["Display"] = "عرض",
+  ["Edit Hotkey"] = "تحرير مفتاح الاختصار",
+  ["Edit VIP"] = "تحرير VIP",
+  ["Empty"] = "فارغ",
+  ["Enable Auto Screenshots"] = "تفعيل لقطات الشاشة التلقائية",
+  ["Optimize FPS"] = "تحسين FPS",
+  
+  -- Loot system
+  ["Loot"] = "غنيمة",
+  ["Manage Containers"] = "إدارة الحاويات",
+  ["Supply Stash"] = "مخزن الإمدادات",
+  ["Invalid Loot Container"] = "حاوية غنيمة غير صالحة",
+  
+  -- UI elements
+  ["Navigation"] = "التنقل",
+  ["Next"] = "التالي",
+  ["Next Page"] = "الصفحة التالية",
+  ["Prev Page"] = "الصفحة السابقة",
+  ["Previous"] = "السابق",
+  ["No Group"] = "لا مجموعة",
+  ["No Kills"] = "لا قتل",
+  ["None"] = "لا شيء",
+  ["Password:"] = "كلمة المرور:",
+  ["Points"] = "نقاط",
+  ["Progress"] = "التقدم",
+  ["Quest Tracker"] = "متتبع المهام",
+  ["Rank"] = "الرتبة",
+  ["Reset"] = "إعادة تعيين",
+  ["Show All"] = "عرض الكل",
+  ["Skill:"] = "مهارة:",
+  ["Status"] = "الحالة",
+  ["Stop"] = "إيقاف",
+  ["Submit"] = "إرسال",
+  ["Track"] = "تتبع",
+  ["Upcoming"] = "قادم",
+  ["Updater"] = "المحدث",
+  ["Wiki"] = "ويكي",
+  ["World"] = "العالم",
+  
+  -- Prey system
+  ["Prey Creatures"] = "مخلوقات الفريسة",
+  ["Preys"] = "الفرائس",
+  
+  -- Tasks extended
+  ["Do you really want to abort this task?"] = "هل تريد حقًا إلغاء هذه المهمة؟",
+  ["Summary"] = "ملخص",
+  
+  -- Account
+  ["Manage Account"] = "إدارة الحساب",
+  ["Free"] = "مجاني",
+  
+  -- Items
+  ["Wrap"] = "لف",
+  ["Unwrap"] = "فك اللف",
+  
+  -- UI elements extended
+  ["Chat Off"] = "الدردشة متوقفة",
+  ["Chat On"] = "الدردشة مفعلة",
+  ["Local Chat"] = "الدردشة المحلية",
+  ["Debug Info"] = "معلومات التصحيح",
+  ["Top"] = "أعلى",
+  ["Bottom"] = "أسفل",
+  ["Compact"] = "مدمج",
+  ["Large"] = "كبير",
+  
+  -- Misc
+  ["You read the following"] = "قرأت ما يلي",
+  ["ok"] = "موافق",
+  ["remove"] = "إزالة",
+  
+  -- Bosstiary System
+  ["Bosstiary"] = "بوستياري",
+  ["Boss Tracker"] = "تتبع الزعماء",
+  ["Boss Kills"] = "قتل الزعماء",
+  ["Archfoe"] = "العدو الرئيسي",
+  ["Bane"] = "لعنة",
+  ["Nemesis"] = "نيميسيس",
+  ["Boss Points"] = "نقاط الزعماء",
+  ["Unlock Slot"] = "فتح الفتحة",
+  ["Equipped"] = "مجهز",
+  
+  -- Market System
+  ["Market"] = "السوق",
+  ["Browse Offers"] = "تصفح العروض",
+  ["My Offers"] = "عروضي",
+  ["My History"] = "سجلي",
+  ["Buy Offer"] = "عرض شراء",
+  ["Sell Offer"] = "عرض بيع",
+  ["Create Offer"] = "إنشاء عرض",
+  ["Cancel Offer"] = "إلغاء العرض",
+  ["Amount"] = "الكمية",
+  ["Total Price"] = "السعر الإجمالي",
+  ["Piece Price"] = "سعر القطعة",
+  ["Statistics"] = "الإحصائيات",
+  ["Transactions"] = "المعاملات",
+  ["Average Prices"] = "الأسعار المتوسطة",
+  ["Highest Prices"] = "أعلى الأسعار",
+  ["Lowest Prices"] = "أدنى الأسعار",
+  
+  -- Forge System
+  ["Forge"] = "الحدادة",
+  ["Dust Converter"] = "محول الغبار",
+  ["Fusion"] = "الدمج",
+  ["Transfer"] = "النقل",
+  ["Tier"] = "المستوى",
+  ["Success Chance"] = "فرصة النجاح",
+  ["Dust"] = "الغبار",
+  ["Slivers"] = "الشظايا",
+  ["Cores"] = "النوى",
+  ["Exalted Cores"] = "النوى المرتفعة",
+  
+  -- Wheel of Destiny
+  ["Wheel of Destiny"] = "عجلة القدر",
+  ["Revelation Points"] = "نقاط الكشف",
+  ["Promotion Points"] = "نقاط الترقية",
+  ["Gift of Life"] = "هدية الحياة",
+  ["Divine Empowerment"] = "التمكين الإلهي",
+  ["Blessing of the Grove"] = "بركة البستان",
+  ["Combat Mastery"] = "إتقان القتال",
+  ["Healing Link"] = "رابط الشفاء",
+  
+  -- Prey System
+  ["Prey"] = "الفريسة",
+  ["Prey Bonus"] = "مكافأة الفريسة",
+  ["Prey Slot"] = "فتحة الفريسة",
+  ["Select Creature"] = "اختر المخلوق",
+  ["Bonus Type"] = "نوع المكافأة",
+  ["Damage Boost"] = "زيادة الضرر",
+  ["Defense Boost"] = "زيادة الدفاع",
+  ["XP Bonus"] = "مكافأة الخبرة",
+  ["Loot Bonus"] = "مكافأة الغنائم",
+  ["Prey Cards"] = "بطاقات الفريسة",
+  ["Prey Wildcards"] = "بطاقات الجوكر للفريسة",
+}
+for k,v in pairs(add) do
+  locale.translation[k] = locale.translation[k] or v
+end

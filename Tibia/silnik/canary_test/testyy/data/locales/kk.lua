@@ -712,7 +712,108 @@ locale = {
     ["Your request has been closed"] = "Сұрауыңыз жабылды",
     ["There is no way."] = "Жол жоқ.",
     ["You can enter new text."] = "Жаңа мәтін енгізе аласыз.",
-    ["Unable to logout."] = "Шығу мүмкін емес."
+    ["Unable to logout."] = "Шығу мүмкін емес.",
+    
+    -- Status Effects
+    ["You are bleeding"] = "Сіз қан кетіп жатырсыз",
+    ["You are burning"] = "Сіз жанып жатырсыз",
+    ["You are cursed"] = "Сіз қарғысқа ұшырадыңыз",
+    ["You are dazzled"] = "Сіздің көзіңіз қамасты",
+    ["You are dead"] = "Сіз өлдіңіз",
+    ["You are dead."] = "Сіз өлдіңіз.",
+    ["You are drowning"] = "Сіз батып жатырсыз",
+    ["You are drunk"] = "Сіз мас боласыз",
+    ["You are electrified"] = "Сіз ток соқты",
+    ["You are freezing"] = "Сіз қатып жатырсыз",
+    ["You are hasted"] = "Сіз жылдамдадыңыз",
+    ["You are hungry"] = "Сіз ашсыз",
+    ["You are paralysed"] = "Сіз салданып қалдыңыз",
+    ["You are poisoned"] = "Сіз улансыз",
+    ["You are protected by a magic shield"] = "Сіз сиқырлы қалқанмен қорғалғансыз",
+    ["You are strengthened"] = "Сіз күшейтілдіңіз",
+    ["You are within a protection zone"] = "Сіз қорғау аймағындасыз",
+    
+    -- Combat
+    ["Damage"] = "Зақым",
+    ["Healing"] = "Емдеу",
+    ["Critical Hit"] = "Сыни соққы",
+    ["Critical Hits"] = "Сыни соққылар",
+    ["Life Leech"] = "Өмірді сору",
+    ["Mana Leech"] = "Мананы сору",
+    
+    -- Tasks
+    ["Tasks"] = "Тапсырмалар",
+    ["Task"] = "Тапсырма",
+    ["Daily Tasks"] = "Күнделікті тапсырмалар",
+    ["Weekly Tasks"] = "Апталық тапсырмалар",
+    ["Reward"] = "Сыйлық",
+    ["Rewards"] = "Сыйлықтар",
+    ["Claim Reward"] = "Сыйлықты алу",
+    ["Progress"] = "Ілгерілеу",
+    
+    -- Bosstiary System
+    ["Bosstiary"] = "Бостиари",
+    ["Boss Tracker"] = "Бос бақылаушы",
+    ["Boss Kills"] = "Бос өлімдері",
+    ["Archfoe"] = "Басты жау",
+    ["Bane"] = "Қарғыс",
+    ["Nemesis"] = "Немезис",
+    ["Boss Points"] = "Бос ұпайлары",
+    ["Unlock Slot"] = "Ұяшықты ашу",
+    ["Equipped"] = "Жабдықталған",
+    
+    -- Market System
+    ["Market"] = "Базар",
+    ["Browse Offers"] = "Ұсыныстарды қарау",
+    ["My Offers"] = "Менің ұсыныстарым",
+    ["My History"] = "Менің тарихым",
+    ["Buy Offer"] = "Сатып алу ұсынысы",
+    ["Sell Offer"] = "Сату ұсынысы",
+    ["Create Offer"] = "Ұсыныс жасау",
+    ["Cancel Offer"] = "Ұсынысты болдырмау",
+    ["Amount"] = "Мөлшері",
+    ["Total Price"] = "Жалпы баға",
+    ["Piece Price"] = "Бірлік бағасы",
+    ["Statistics"] = "Статистика",
+    ["Transactions"] = "Транзакциялар",
+    ["Average Prices"] = "Орташа бағалар",
+    ["Highest Prices"] = "Ең жоғары бағалар",
+    ["Lowest Prices"] = "Ең төменгі бағалар",
+    
+    -- Forge System
+    ["Forge"] = "Ұста",
+    ["Dust Converter"] = "Шаң түрлендіргіші",
+    ["Fusion"] = "Біріктіру",
+    ["Transfer"] = "Аудару",
+    ["Tier"] = "Деңгей",
+    ["Success Chance"] = "Сәттілік мүмкіндігі",
+    ["Dust"] = "Шаң",
+    ["Slivers"] = "Сынықтар",
+    ["Cores"] = "Ядролар",
+    ["Exalted Cores"] = "Жоғарылатылған ядролар",
+    
+    -- Wheel of Destiny
+    ["Wheel of Destiny"] = "Тағдыр дөңгелегі",
+    ["Revelation Points"] = "Ашылу ұпайлары",
+    ["Promotion Points"] = "Жоғарылату ұпайлары",
+    ["Gift of Life"] = "Өмір сыйлығы",
+    ["Divine Empowerment"] = "Құдіретті күшейту",
+    ["Blessing of the Grove"] = "Тоғайдың батасы",
+    ["Combat Mastery"] = "Жауынгерлік шеберлік",
+    ["Healing Link"] = "Емделу байланысы",
+    
+    -- Prey System
+    ["Prey"] = "Жемтік",
+    ["Prey Bonus"] = "Жемтік бонусы",
+    ["Prey Slot"] = "Жемтік ұяшығы",
+    ["Select Creature"] = "Тіршілік иесін таңдау",
+    ["Bonus Type"] = "Бонус түрі",
+    ["Damage Boost"] = "Зақым көтеру",
+    ["Defense Boost"] = "Қорғаныс көтеру",
+    ["XP Bonus"] = "XP бонусы",
+    ["Loot Bonus"] = "Жемтік бонусы",
+    ["Prey Cards"] = "Жемтік карталары",
+    ["Prey Wildcards"] = "Жемтік джокерлері"
   }
 }
 

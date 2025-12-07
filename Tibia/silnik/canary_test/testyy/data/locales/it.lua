@@ -569,3 +569,319 @@ locale = {
 }
 
 modules.client_locales.installLocale(locale)
+
+-- Additional translations merged at runtime
+local add = {
+  -- Death dialogs
+  ["Alas! Brave adventurer, you have met a sad fate.\nBut do not despair, for the gods will bring you back\ninto this world in exchange for a small sacrifice\n\nSimply click on Ok to resume your journeys!"] = "Ahimè! Coraggioso avventuriero, hai incontrato un triste destino.\nMa non disperare, gli dei ti riporteranno\nin questo mondo in cambio di un piccolo sacrificio\n\nSemplicemente clicca su Ok per riprendere i tuoi viaggi!",
+  ["Journey Onwards"] = "Continua il viaggio",
+
+  -- Hotkey management
+  ["Add hotkey preset"] = "Aggiungi preset tasti rapidi",
+  ["Add new group"] = "Aggiungi nuovo gruppo",
+  ["Copy hotkey preset"] = "Copia preset tasti rapidi",
+  ["Rename hotkey preset"] = "Rinomina preset tasti rapidi",
+  ["Enter a name for the new preset:"] = "Inserisci un nome per il nuovo preset:",
+  ["Enter a name for the preset:"] = "Inserisci un nome per il preset:",
+  ["Do you really want to delete the hotkey preset %s?"] = "Vuoi davvero eliminare il preset tasti rapidi %s?",
+  ["Current hotkey to change: %s"] = "Tasto rapido attuale da cambiare: %s",
+  ["Current hotkey to change: none"] = "Tasto rapido attuale da cambiare: nessuno",
+  ["Edit Primary Key for \\"] = "Modifica tasto primario per \\",
+  ["Edit Secondary Key for \\"] = "Modifica tasto secondario per \\",
+  ["Edit group %s"] = "Modifica gruppo %s",
+  ["Remove group %s"] = "Rimuovi gruppo %s",
+  ["Hide groups"] = "Nascondi gruppi",
+  ["Show groups"] = "Mostra gruppi",
+  ["Maximum of User-Created Groups Reached"] = "Raggiunto il numero massimo di gruppi utente",
+  
+  -- Cyclopedia and Bestiary extended
+  ["Imbuement Tracker"] = "Tracker imbuizioni",
+  ["Prey Tracker"] = "Tracker prede",
+  ["Prey Dialog"] = "Finestra prede",
+  ["Select monster"] = "Seleziona mostro",
+  ["Select monster to proceed."] = "Seleziona un mostro per procedere.",
+  ["Account Badges"] = "Badge account",
+  ["Account Premium"] = "Account Premium",
+  ["Achievements Points: "] = "Punti risultati: ",
+  ["Archfoe"] = "Arcinemico",
+  ["Blessings:"] = "Benedizioni:",
+  ["Boss Points"] = "Punti boss",
+  ["Creature Name"] = "Nome creatura",
+  ["Major Charms"] = "Fascini maggiori",
+  ["Minor Charms"] = "Fascini minori",
+  
+  -- Charms
+  ["Confirm Charm Removal"] = "Conferma rimozione fascino",
+  ["Confirm Selected Charm"] = "Conferma fascino selezionato",
+  ["Confirm Unlocking of Charm"] = "Conferma sblocco fascino",
+  ["Do you want to remove the Charm %s from this creature? This will cost you %s gold pieces."] = "Vuoi rimuovere il Fascino %s da questa creatura? Costerà %s monete d'oro.",
+  ["Do you want to use the Charm %s for this creature?"] = "Vuoi usare il Fascino %s per questa creatura?",
+  
+  -- House system extended
+  ["Accept House Transfer"] = "Accetta trasferimento casa",
+  ["Accept Transfer"] = "Accetta trasferimento",
+  ["Cancel House Transfer"] = "Annulla trasferimento casa",
+  ["Cancel Transfer"] = "Annulla trasferimento",
+  ["Configure House Transfer"] = "Configura trasferimento casa",
+  ["Confirm House Action"] = "Conferma azione casa",
+  ["Do you really want to keep your house "] = "Vuoi davvero mantenere la tua casa ",
+  ["Do you really want to move out of the house "] = "Vuoi davvero trasferirti dalla casa ",
+  ["You have sucessfully accepted the transfer."] = "Hai accettato con successo il trasferimento.",
+  ["You have sucessfully iniated your move out."] = "Hai avviato con successo il trasloco.",
+  ["You have sucessfully initiated the transfer of your house."] = "Hai avviato con successo il trasferimento della tua casa.",
+  ["Move Date:"] = "Data trasloco:",
+  ["Move Information"] = "Informazioni trasloco",
+  ["Move Out"] = "Trasloca",
+  ["New Owner:"] = "Nuovo proprietario:",
+  ["Pending Transfer"] = "Trasferimento in sospeso",
+  ["Reject House Transfer"] = "Rifiuta trasferimento casa",
+  ["Reject Transfer"] = "Rifiuta trasferimento",
+  ["Rent:"] = "Affitto:",
+  ["Select Move Date"] = "Seleziona data trasloco",
+  ["Transfer"] = "Trasferimento",
+  ["Transfer Date:"] = "Data trasferimento:",
+  ["Transfer Information"] = "Informazioni trasferimento",
+  ["Transfer Price:"] = "Prezzo trasferimento:",
+  ["No house selected"] = "Nessuna casa selezionata",
+  ["Max. Beds:"] = "Max. letti:",
+  ["Place Your Bid"] = "Fai la tua offerta",
+  ["Set bid limit:"] = "Imposta limite offerta:",
+  ["Your Limit:"] = "Il tuo limite:",
+  
+  -- Imbuing extended
+  ["Confirm Imbuing Attempt"] = "Conferma tentativo imbuizione",
+  ["Confirm Clearing"] = "Conferma cancellazione",
+  ["Confirmation of Purchase"] = "Conferma acquisto",
+  
+  -- Combat stats
+  ["Life Leech"] = "Furto vita",
+  ["Life Leech:"] = "Furto vita:",
+  ["Lifedrain"] = "Drenaggio vita",
+  ["Mana Leech"] = "Furto mana",
+  ["Mana Leech:"] = "Furto mana:",
+  ["Mana Leech Amount"] = "Quantità furto mana",
+  ["Mana Leech Chance"] = "Possibilità furto mana",
+  ["Mana circle"] = "Cerchio mana",
+  ["Magic"] = "Magia",
+  ["Mastery"] = "Maestria",
+  ["Mitigation"] = "Mitigazione",
+  ["Mitigation:"] = "Mitigazione:",
+  ["Momentum"] = "Slancio",
+  ["Nemesis"] = "Nemesi",
+  ["Onslaught"] = "Assalto",
+  ["Physical"] = "Fisico",
+  ["Prowess"] = "Prodezza",
+  ["Transcendence"] = "Trascendenza",
+  ["Ultimate Strike"] = "Colpo definitivo",
+  ["Amplification"] = "Amplificazione",
+  ["Bane"] = "Rovina",
+  ["Burst of Nature"] = "Esplosione di natura",
+  ["Club"] = "Mazza",
+  ["Axe"] = "Ascia",
+  ["Sword"] = "Spada",
+  ["Converted Damage:"] = "Danno convertito:",
+  ["Critical Hit:"] = "Colpo critico:",
+  ["Crippling"] = "Mutilazione",
+  ["Damage Reduction:"] = "Riduzione danno:",
+  ["Damage Reflection"] = "Riflesso danno",
+  ["Damage/Healing"] = "Danno/Cura",
+  ["Dodge"] = "Schivata",
+  
+  -- Elements
+  ["Death"] = "Morte",
+  ["Drown"] = "Annegamento",
+  ["Earth"] = "Terra",
+  ["Energy"] = "Energia",
+  ["Fire"] = "Fuoco",
+  ["Holy"] = "Sacro",
+  ["Ice"] = "Ghiaccio",
+  
+  -- Days of week
+  ["Monday"] = "Lunedì",
+  ["Tuesday"] = "Martedì",
+  ["Wednesday"] = "Mercoledì",
+  ["Thursday"] = "Giovedì",
+  ["Saturday"] = "Sabato",
+  ["Sunday"] = "Domenica",
+  
+  -- Auction
+  ["Auction"] = "Asta",
+  ["Auction Information"] = "Informazioni asta",
+  ["Bid"] = "Offerta",
+  ["Average Market Price"] = "Prezzo medio di mercato",
+  ["Buy From"] = "Compra da",
+  ["Buy History"] = "Cronologia acquisti",
+  
+  -- Item details
+  ["Armor Value"] = "Valore armatura",
+  ["Armor Value:"] = "Valore armatura:",
+  ["Attack Value"] = "Valore attacco",
+  ["Attack Value:"] = "Valore attacco:",
+  ["Defence Value"] = "Valore difesa",
+  ["Defence Value:"] = "Valore difesa:",
+  ["Basic Item Details"] = "Dettagli oggetto base",
+  
+  -- Equipment extended
+  ["Necklace"] = "Collana",
+  
+  -- Settings
+  ["Active"] = "Attivo",
+  ["Auto-Switch Hotkey Preset"] = "Cambio automatico preset tasti rapidi",
+  ["Available Buttons"] = "Pulsanti disponibili",
+  ["Bar Style:"] = "Stile barra:",
+  ["Clear Cache"] = "Cancella cache",
+  ["Display"] = "Visualizza",
+  ["Displayed Buttons"] = "Pulsanti visualizzati",
+  ["Edit Hotkey"] = "Modifica tasto rapido",
+  ["Edit VIP"] = "Modifica VIP",
+  ["Empty"] = "Vuoto",
+  ["Enable Auto Screenshots"] = "Abilita screenshot automatici",
+  ["Open Screenshots Folder"] = "Apri cartella screenshot",
+  ["Optimize FPS"] = "Ottimizza FPS",
+  
+  -- Loot system
+  ["Loot Value Source"] = "Fonte valore bottino",
+  ["Manage Containers"] = "Gestisci contenitori",
+  ["Quick Loot Filter:"] = "Filtro bottino rapido:",
+  ["Stash Withdraw"] = "Prelievo scorta",
+  ["Supply Stash"] = "Scorta rifornimenti",
+  ["Unassigned Loot"] = "Bottino non assegnato",
+  ["Invalid Loot Container"] = "Contenitore bottino non valido",
+  ["Manage Loot Containers"] = "Gestisci contenitori bottino",
+  
+  -- UI elements
+  ["Navigation"] = "Navigazione",
+  ["Next Page"] = "Pagina successiva",
+  ["Prev Page"] = "Pagina precedente",
+  ["Previous"] = "Precedente",
+  ["No Group"] = "Nessun gruppo",
+  ["No Kills"] = "Nessuna uccisione",
+  ["Notify on login"] = "Notifica all'accesso",
+  ["Obtain"] = "Ottieni",
+  ["Password:"] = "Password:",
+  ["Pick reward"] = "Scegli ricompensa",
+  ["Player Name"] = "Nome giocatore",
+  ["Points"] = "Punti",
+  ["Progress"] = "Progresso",
+  ["Quest Tracker"] = "Tracker missioni",
+  ["Random Hint"] = "Suggerimento casuale",
+  ["Rank"] = "Grado",
+  ["Recipient:"] = "Destinatario:",
+  ["Reset"] = "Ripristina",
+  ["Show All"] = "Mostra tutto",
+  ["Show Own Rank"] = "Mostra il tuo grado",
+  ["Show action bar"] = "Mostra barra azioni",
+  ["Show event messages"] = "Mostra messaggi eventi",
+  ["Show info messages"] = "Mostra messaggi info",
+  ["Show levels"] = "Mostra livelli",
+  ["Show private messages"] = "Mostra messaggi privati",
+  ["Show status messages"] = "Mostra messaggi stato",
+  ["Show timestamps"] = "Mostra timestamp",
+  ["Skill circle"] = "Cerchio abilità",
+  ["Skill:"] = "Abilità:",
+  ["Status"] = "Stato",
+  ["Stop"] = "Ferma",
+  ["Success Rate:"] = "Tasso di successo:",
+  ["Total Kills"] = "Uccisioni totali",
+  ["Track"] = "Traccia",
+  ["Track Kills"] = "Traccia uccisioni",
+  ["Unlock"] = "Sblocca",
+  ["Upcoming"] = "In arrivo",
+  ["Updater"] = "Aggiornatore",
+  ["Vocation:"] = "Vocazione:",
+  ["Wiki"] = "Wiki",
+  ["World"] = "Mondo",
+  ["World Location:"] = "Posizione mondo:",
+  ["World Type:"] = "Tipo mondo:",
+  ["XP Gain Rate"] = "Tasso guadagno XP",
+  ["bag"] = "borsa",
+  ["sort by ascending"] = "ordina crescente",
+  ["sort by descending"] = "ordina decrescente",
+  ["sort by name"] = "ordina per nome",
+  ["sort by remaining kills"] = "ordina per uccisioni rimanenti",
+  
+  -- Prey system
+  ["Prey Creatures"] = "Creature preda",
+  ["Preys"] = "Prede",
+  
+  -- Tasks extended
+  ["Task completed"] = "Compito completato",
+  ["No active tasks"] = "Nessun compito attivo",
+  ["Do you really want to abort this task?"] = "Vuoi davvero interrompere questo compito?",
+  ["Summary"] = "Riepilogo",
+  
+  -- Account
+  ["Manage Account"] = "Gestisci account",
+  ["Manage control buttons"] = "Gestisci pulsanti controllo",
+  ["Gratis Premium Account"] = "Account Premium gratuito",
+  ["Free"] = "Gratuito",
+  
+  -- Time and experience
+  ["You have %s hours and %s minutes left"] = "Ti restano %s ore e %s minuti",
+  ["If you are premium player, you will gain 50%% more experience"] = "Se sei un giocatore premium, guadagnerai il 50%% in più di esperienza",
+  ["Now you will gain 50%% more experience"] = "Ora guadagnerai il 50%% in più di esperienza",
+  ["infinite bonus"] = "bonus infinito",
+  
+  -- Items
+  ["Wrap"] = "Avvolgi",
+  ["Unwrap"] = "Svolgi",
+  
+  -- UI elements extended
+  ["Chat Off"] = "Chat disattivata",
+  ["Chat On"] = "Chat attivata",
+  ["Toggle WASD chat mode"] = "Attiva/Disattiva modalità chat WASD",
+  ["Toggle chase mode"] = "Attiva/Disattiva modalità inseguimento",
+  ["Local Chat"] = "Chat locale",
+  ["Close Read-Only Tab"] = "Chiudi scheda sola lettura",
+  ["Debug Info"] = "Info debug",
+  ["Top"] = "Alto",
+  ["Bottom"] = "Basso",
+  ["Parallel"] = "Parallelo",
+  ["Compact"] = "Compatto",
+  ["Large"] = "Grande",
+  
+  -- Graphics and effects
+  ["Animated Message Scale: %sx"] = "Scala messaggi animati: %sx",
+  ["Opacity"] = "Opacità",
+  ["Opacity: %s"] = "Opacità: %s",
+  ["Distance"] = "Distanza",
+  ["Distance: %s"] = "Distanza: %s",
+  
+  -- VIP and status extended
+  ["Hide Customisable Status Bars"] = "Nascondi barre stato personalizzabili",
+  ["Show health"] = "Mostra salute",
+  ["Show inventory"] = "Mostra inventario",
+  ["Show miniMap"] = "Mostra minimappa",
+  
+  -- Battle and attack
+  ["Attack next creature in battle list"] = "Attacca prossima creatura nella lista battaglia",
+  ["Attack previous creature in battle list"] = "Attacca creatura precedente nella lista battaglia",
+  ["Loot corpse"] = "Saccheggia cadavere",
+  
+  -- Store and rewards
+  ["Store shop"] = "Negozio",
+  ["Rewards"] = "Ricompense",
+  ["Open Boss Slots dialog"] = "Apri finestra slot boss",
+  ["Open Bosstiary dialog"] = "Apri finestra Bosstiario",
+  ["Open QuestLog Tracker"] = "Apri tracker registro missioni",
+  ["Open rewardWall"] = "Apri muro ricompense",
+  ["Highscores"] = "Punteggi migliori",
+  
+  -- Updater extended
+  ["Downloading:\n%s"] = "Scaricamento:\n%s",
+  ["Updater Error"] = "Errore aggiornatore",
+  ["Updating %i files"] = "Aggiornamento %i file",
+  ["Updating client (may take few seconds)"] = "Aggiornamento client (potrebbe richiedere alcuni secondi)",
+  ["Timeout"] = "Timeout",
+  
+  -- Login errors
+  ["Connecting to login server...\nServer: [%s]"] = "Connessione al server di login...\nServer: [%s]",
+  
+  -- Misc
+  ["You read the following"] = "Leggi quanto segue",
+  ["ok"] = "ok",
+  ["remove"] = "rimuovi",
+}
+for k,v in pairs(add) do
+  locale.translation[k] = locale.translation[k] or v
+end

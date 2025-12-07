@@ -567,3 +567,245 @@ locale = {
 }
 
 modules.client_locales.installLocale(locale)
+
+-- Additional translations merged at runtime
+local add = {
+  -- Death dialogs
+  ["Alas! Brave adventurer, you have met a sad fate.\nBut do not despair, for the gods will bring you back\ninto this world in exchange for a small sacrifice\n\nSimply click on Ok to resume your journeys!"] = "ああ！勇敢な冒険者よ、悲しい運命に遭遇しました。\nしかし絶望しないでください。神々は小さな犠牲と引き換えに\nあなたをこの世界に連れ戻してくれます\n\n旅を再開するには「OK」をクリックしてください！",
+  ["Journey Onwards"] = "旅を続ける",
+
+  -- Hotkey management extended
+  ["Add hotkey preset"] = "ホットキープリセットを追加",
+  ["Add new group"] = "新しいグループを追加",
+  ["Copy hotkey preset"] = "ホットキープリセットをコピー",
+  ["Rename hotkey preset"] = "ホットキープリセット名を変更",
+  ["Enter a name for the new preset:"] = "新しいプリセットの名前を入力：",
+  ["Enter a name for the preset:"] = "プリセットの名前を入力：",
+  ["Do you really want to delete the hotkey preset %s?"] = "ホットキープリセット %s を本当に削除しますか？",
+  ["Edit group %s"] = "グループ %s を編集",
+  ["Remove group %s"] = "グループ %s を削除",
+  ["Hide groups"] = "グループを非表示",
+  ["Show groups"] = "グループを表示",
+  
+  -- Cyclopedia extended
+  ["Imbuement Tracker"] = "インビューメントトラッカー",
+  ["Prey Tracker"] = "プレイトラッカー",
+  ["Prey Dialog"] = "プレイダイアログ",
+  ["Select monster"] = "モンスターを選択",
+  ["Select monster to proceed."] = "続行するにはモンスターを選択してください。",
+  ["Account Badges"] = "アカウントバッジ",
+  ["Account Premium"] = "プレミアムアカウント",
+  ["Boss Points"] = "ボスポイント",
+  ["Creature Name"] = "クリーチャー名",
+  ["Major Charms"] = "メジャーチャーム",
+  ["Minor Charms"] = "マイナーチャーム",
+  
+  -- Charms
+  ["Confirm Charm Removal"] = "チャーム削除を確認",
+  ["Confirm Selected Charm"] = "選択したチャームを確認",
+  ["Confirm Unlocking of Charm"] = "チャームのアンロックを確認",
+  
+  -- House system extended
+  ["Accept House Transfer"] = "家の譲渡を承諾",
+  ["Accept Transfer"] = "譲渡を承諾",
+  ["Cancel House Transfer"] = "家の譲渡をキャンセル",
+  ["Cancel Transfer"] = "譲渡をキャンセル",
+  ["Configure House Transfer"] = "家の譲渡を設定",
+  ["Confirm House Action"] = "家のアクションを確認",
+  ["Move Out"] = "退去",
+  ["New Owner:"] = "新しい所有者：",
+  ["Pending Transfer"] = "保留中の譲渡",
+  ["No house selected"] = "家が選択されていません",
+  ["Max. Beds:"] = "最大ベッド数：",
+  ["Place Your Bid"] = "入札する",
+  
+  -- Combat stats
+  ["Life Leech"] = "ライフリーチ",
+  ["Mana Leech"] = "マナリーチ",
+  ["Magic"] = "魔法",
+  ["Mastery"] = "マスタリー",
+  ["Mitigation"] = "軽減",
+  ["Physical"] = "物理",
+  ["Club"] = "棍棒",
+  ["Axe"] = "斧",
+  ["Sword"] = "剣",
+  ["Dodge"] = "回避",
+  
+  -- Elements
+  ["Death"] = "死",
+  ["Drown"] = "溺れ",
+  ["Earth"] = "地",
+  ["Energy"] = "エネルギー",
+  ["Fire"] = "火",
+  ["Holy"] = "聖",
+  ["Ice"] = "氷",
+  
+  -- Days of week
+  ["Monday"] = "月曜日",
+  ["Tuesday"] = "火曜日",
+  ["Wednesday"] = "水曜日",
+  ["Thursday"] = "木曜日",
+  ["Saturday"] = "土曜日",
+  ["Sunday"] = "日曜日",
+  
+  -- Auction
+  ["Auction"] = "オークション",
+  ["Auction Information"] = "オークション情報",
+  ["Bid"] = "入札",
+  ["Average Market Price"] = "平均市場価格",
+  
+  -- Item details
+  ["Armor Value"] = "防御値",
+  ["Attack Value"] = "攻撃値",
+  ["Defence Value"] = "防御値",
+  
+  -- Equipment
+  ["Boots"] = "ブーツ",
+  ["Helmet"] = "ヘルメット",
+  ["Shield"] = "盾",
+  ["Legs"] = "脚",
+  ["Ring"] = "指輪",
+  ["Necklace"] = "ネックレス",
+  
+  -- Settings
+  ["Active"] = "アクティブ",
+  ["Apply"] = "適用",
+  ["Back"] = "戻る",
+  ["Clear Cache"] = "キャッシュをクリア",
+  ["Display"] = "表示",
+  ["Edit Hotkey"] = "ホットキーを編集",
+  ["Edit VIP"] = "VIPを編集",
+  ["Empty"] = "空",
+  ["Enable Auto Screenshots"] = "自動スクリーンショットを有効化",
+  ["Optimize FPS"] = "FPSを最適化",
+  
+  -- Loot system
+  ["Loot"] = "戦利品",
+  ["Manage Containers"] = "コンテナを管理",
+  ["Supply Stash"] = "補給スタッシュ",
+  ["Invalid Loot Container"] = "無効な戦利品コンテナ",
+  
+  -- UI elements
+  ["Navigation"] = "ナビゲーション",
+  ["Next"] = "次へ",
+  ["Next Page"] = "次のページ",
+  ["Prev Page"] = "前のページ",
+  ["Previous"] = "前へ",
+  ["No Group"] = "グループなし",
+  ["No Kills"] = "キルなし",
+  ["None"] = "なし",
+  ["Password:"] = "パスワード：",
+  ["Points"] = "ポイント",
+  ["Progress"] = "進捗",
+  ["Quest Tracker"] = "クエストトラッカー",
+  ["Rank"] = "ランク",
+  ["Reset"] = "リセット",
+  ["Show All"] = "すべて表示",
+  ["Skill:"] = "スキル：",
+  ["Status"] = "ステータス",
+  ["Stop"] = "停止",
+  ["Submit"] = "送信",
+  ["Track"] = "追跡",
+  ["Upcoming"] = "今後",
+  ["Updater"] = "アップデーター",
+  ["Wiki"] = "ウィキ",
+  ["World"] = "ワールド",
+  
+  -- Prey system
+  ["Prey Creatures"] = "プレイクリーチャー",
+  ["Preys"] = "プレイ",
+  
+  -- Tasks extended
+  ["Do you really want to abort this task?"] = "このタスクを本当に中止しますか？",
+  ["Summary"] = "概要",
+  
+  -- Account
+  ["Manage Account"] = "アカウントを管理",
+  ["Free"] = "無料",
+  
+  -- Items
+  ["Wrap"] = "包む",
+  ["Unwrap"] = "開ける",
+  
+  -- UI elements extended
+  ["Chat Off"] = "チャットオフ",
+  ["Chat On"] = "チャットオン",
+  ["Local Chat"] = "ローカルチャット",
+  ["Debug Info"] = "デバッグ情報",
+  ["Top"] = "上",
+  ["Bottom"] = "下",
+  ["Compact"] = "コンパクト",
+  ["Large"] = "大きい",
+  
+  -- Misc
+  ["You read the following"] = "以下を読みました",
+  ["ok"] = "OK",
+  ["remove"] = "削除",
+  
+  -- Bosstiary System
+  ["Bosstiary"] = "ボスティアリー",
+  ["Boss Tracker"] = "ボス追跡",
+  ["Boss Kills"] = "ボス討伐",
+  ["Archfoe"] = "大敵",
+  ["Bane"] = "呪い",
+  ["Nemesis"] = "ネメシス",
+  ["Boss Points"] = "ボスポイント",
+  ["Unlock Slot"] = "スロット解除",
+  ["Equipped"] = "装備中",
+  
+  -- Market System
+  ["Market"] = "マーケット",
+  ["Browse Offers"] = "オファーを見る",
+  ["My Offers"] = "マイオファー",
+  ["My History"] = "履歴",
+  ["Buy Offer"] = "購入オファー",
+  ["Sell Offer"] = "売却オファー",
+  ["Create Offer"] = "オファー作成",
+  ["Cancel Offer"] = "オファーキャンセル",
+  ["Amount"] = "数量",
+  ["Total Price"] = "合計価格",
+  ["Piece Price"] = "単価",
+  ["Statistics"] = "統計",
+  ["Transactions"] = "取引",
+  ["Average Prices"] = "平均価格",
+  ["Highest Prices"] = "最高価格",
+  ["Lowest Prices"] = "最低価格",
+  
+  -- Forge System
+  ["Forge"] = "鍛冶",
+  ["Dust Converter"] = "ダストコンバーター",
+  ["Fusion"] = "融合",
+  ["Transfer"] = "転送",
+  ["Tier"] = "ティア",
+  ["Success Chance"] = "成功率",
+  ["Dust"] = "ダスト",
+  ["Slivers"] = "かけら",
+  ["Cores"] = "コア",
+  ["Exalted Cores"] = "上級コア",
+  
+  -- Wheel of Destiny
+  ["Wheel of Destiny"] = "運命の輪",
+  ["Revelation Points"] = "啓示ポイント",
+  ["Promotion Points"] = "昇進ポイント",
+  ["Gift of Life"] = "命の贈り物",
+  ["Divine Empowerment"] = "神聖な強化",
+  ["Blessing of the Grove"] = "森の祝福",
+  ["Combat Mastery"] = "戦闘マスタリー",
+  ["Healing Link"] = "回復リンク",
+  
+  -- Prey System
+  ["Prey"] = "獲物",
+  ["Prey Bonus"] = "獲物ボーナス",
+  ["Prey Slot"] = "獲物スロット",
+  ["Select Creature"] = "クリーチャー選択",
+  ["Bonus Type"] = "ボーナスタイプ",
+  ["Damage Boost"] = "ダメージ増加",
+  ["Defense Boost"] = "防御増加",
+  ["XP Bonus"] = "XPボーナス",
+  ["Loot Bonus"] = "ドロップボーナス",
+  ["Prey Cards"] = "獲物カード",
+  ["Prey Wildcards"] = "獲物ワイルドカード",
+}
+for k,v in pairs(add) do
+  locale.translation[k] = locale.translation[k] or v
+end

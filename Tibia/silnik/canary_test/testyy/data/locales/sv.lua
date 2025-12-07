@@ -507,3 +507,309 @@ locale = {
 }
 
 modules.client_locales.installLocale(locale)
+
+-- Additional translations merged at runtime
+local add = {
+  -- Death dialogs
+  ["Alas! Brave adventurer, you have met a sad fate.\nBut do not despair, for the gods will bring you back\ninto this world in exchange for a small sacrifice\n\nSimply click on Ok to resume your journeys!"] = "Ack! Modiga äventyrare, du har mött ett sorgligt öde.\nMen misströsta inte, för gudarna kommer att föra dig tillbaka\ntill denna värld i utbyte mot ett litet offer\n\nKlicka bara på OK för att återuppta dina resor!",
+  ["Journey Onwards"] = "Fortsätt resan",
+
+  -- Hotkey management
+  ["Add hotkey preset"] = "Lägg till snabbkommandoförinställning",
+  ["Add new group"] = "Lägg till ny grupp",
+  ["Copy hotkey preset"] = "Kopiera förinställning",
+  ["Rename hotkey preset"] = "Byt namn på förinställning",
+  ["Edit group %s"] = "Redigera grupp %s",
+  ["Remove group %s"] = "Ta bort grupp %s",
+  ["Hide groups"] = "Dölj grupper",
+  ["Show groups"] = "Visa grupper",
+  
+  -- Cyclopedia extended
+  ["Imbuement Tracker"] = "Imbuement-spårare",
+  ["Prey Tracker"] = "Bytespårare",
+  ["Prey Dialog"] = "Bytesdialog",
+  ["Select monster"] = "Välj monster",
+  ["Account Badges"] = "Kontomärken",
+  ["Boss Points"] = "Bosspoäng",
+  ["Creature Name"] = "Varelsenamn",
+  
+  -- House system
+  ["Accept House Transfer"] = "Acceptera husöverföring",
+  ["Cancel House Transfer"] = "Avbryt husöverföring",
+  ["Move Out"] = "Flytta ut",
+  ["New Owner:"] = "Ny ägare:",
+  ["No house selected"] = "Inget hus valt",
+  ["Place Your Bid"] = "Lägg ditt bud",
+  
+  -- Combat stats
+  ["Life Leech"] = "Livsstöld",
+  ["Mana Leech"] = "Manastöld",
+  ["Magic"] = "Magi",
+  ["Physical"] = "Fysisk",
+  ["Club"] = "Klubba",
+  ["Axe"] = "Yxa",
+  ["Sword"] = "Svärd",
+  ["Dodge"] = "Undvika",
+  
+  -- Elements
+  ["Death"] = "Död",
+  ["Earth"] = "Jord",
+  ["Energy"] = "Energi",
+  ["Fire"] = "Eld",
+  ["Holy"] = "Helig",
+  ["Ice"] = "Is",
+  
+  -- Days
+  ["Monday"] = "Måndag",
+  ["Tuesday"] = "Tisdag",
+  ["Wednesday"] = "Onsdag",
+  ["Thursday"] = "Torsdag",
+  ["Saturday"] = "Lördag",
+  ["Sunday"] = "Söndag",
+  
+  -- UI elements
+  ["Navigation"] = "Navigation",
+  ["Next"] = "Nästa",
+  ["Previous"] = "Föregående",
+  ["None"] = "Ingen",
+  ["Points"] = "Poäng",
+  ["Progress"] = "Framsteg",
+  ["Quest Tracker"] = "Uppdragsspårare",
+  ["Rank"] = "Rang",
+  ["Reset"] = "Återställ",
+  ["Show All"] = "Visa alla",
+  ["Status"] = "Status",
+  ["Stop"] = "Stopp",
+  ["Submit"] = "Skicka",
+  ["Track"] = "Spåra",
+  ["Updater"] = "Uppdaterare",
+  ["Wiki"] = "Wiki",
+  ["World"] = "Värld",
+  
+  -- Prey system
+  ["Prey Creatures"] = "Bytesvarelser",
+  ["Preys"] = "Byten",
+  
+  -- Tasks
+  ["Do you really want to abort this task?"] = "Vill du verkligen avbryta denna uppgift?",
+  ["Summary"] = "Sammanfattning",
+  
+  -- Account
+  ["Manage Account"] = "Hantera konto",
+  ["Free"] = "Gratis",
+  
+  -- Items
+  ["Wrap"] = "Slå in",
+  ["Unwrap"] = "Packa upp",
+  
+  -- Misc
+  ["Chat Off"] = "Chatt av",
+  ["Chat On"] = "Chatt på",
+  ["Local Chat"] = "Lokal chatt",
+  ["Top"] = "Topp",
+  ["Bottom"] = "Botten",
+  ["Compact"] = "Kompakt",
+  ["Large"] = "Stor",
+  ["ok"] = "ok",
+  ["remove"] = "ta bort",
+  
+  -- Additional UI Elements
+  ["Store"] = "Butik",
+  ["Prey"] = "Byte",
+  ["Analytics"] = "Analys",
+  ["Reward Wall"] = "Belöningsvägg",
+  ["Daily Reward"] = "Daglig belöning",
+  ["Collect Reward"] = "Hämta belöning",
+  ["Claim"] = "Hämta",
+  ["Streak"] = "Serie",
+  ["Bonus"] = "Bonus",
+  
+  -- Prey System
+  ["Prey Creature"] = "Bytesvarelse",
+  ["Prey Bonus"] = "Bytesbonus",
+  ["Prey Duration"] = "Bytestid",
+  ["Reroll"] = "Slå om",
+  ["Lock Prey"] = "Lås byte",
+  ["Select Prey"] = "Välj byte",
+  ["Damage Bonus"] = "Skadebonus",
+  ["Defense Bonus"] = "Försvarsbonus",
+  ["Experience Bonus"] = "Erfarenhetsbonus",
+  ["Loot Bonus"] = "Bytebonus",
+  
+  -- Forge System
+  ["Forge"] = "Smedja",
+  ["Dust"] = "Damm",
+  ["Slivers"] = "Skärvor",
+  ["Exalted Core"] = "Upphöjd kärna",
+  ["Fusion"] = "Fusion",
+  ["Transfer"] = "Överföring",
+  ["Tier"] = "Nivå",
+  ["Success Rate"] = "Framgångsgrad",
+  ["Convergence Fusion"] = "Konvergensfusion",
+  ["Convergence Transfer"] = "Konvergensöverföring",
+  
+  -- Bosstiary
+  ["Bosstiary"] = "Bossbok",
+  ["Boss Tracker"] = "Bossspårare",
+  ["Boss Slots"] = "Bossplatser",
+  ["Archfoe"] = "Ärkefiende",
+  ["Bane"] = "Plåga",
+  ["Nemesis"] = "Nemesis",
+  
+  -- Cyclopedia Map
+  ["Explored"] = "Utforskat",
+  ["Unexplored"] = "Outforskat",
+  ["Discovery"] = "Upptäckt",
+  ["Area"] = "Område",
+  ["Discovered Areas"] = "Upptäckta områden",
+  
+  -- Hireling System
+  ["Hireling"] = "Anställd",
+  ["Hirelings"] = "Anställda",
+  ["Lamp"] = "Lampa",
+  ["Skills"] = "Färdigheter",
+  ["Cooking"] = "Matlagning",
+  ["Trading"] = "Handel",
+  ["Steward"] = "Förvaltare",
+  ["Banker"] = "Bankir",
+  
+  -- Wheel of Destiny
+  ["Wheel of Destiny"] = "Ödeshjulet",
+  ["Revelation Points"] = "Uppenbarelsepoäng",
+  ["Promotion Points"] = "Befordringspoäng",
+  ["Unlock Slot"] = "Lås upp plats",
+  ["Conviction"] = "Övertygelse",
+  ["Mercy"] = "Barmhärtighet",
+  ["Resilience"] = "Motståndskraft",
+  ["Wisdom"] = "Visdom",
+  ["Combat Mastery"] = "Stridsmästerskap",
+  ["Gift of Life"] = "Livets gåva",
+  
+  -- Augments
+  ["Augment"] = "Förstärkning",
+  ["Augments"] = "Förstärkningar",
+  ["Powerful"] = "Kraftfull",
+  ["Intricate"] = "Intrikat",
+  ["Basic"] = "Grundläggande",
+  
+  -- Quick Loot
+  ["Quick Loot"] = "Snabbplundring",
+  ["Loot All"] = "Plundra allt",
+  ["Loot Gold"] = "Plundra guld",
+  ["Auto Loot"] = "Autoplundring",
+  ["Loot Container"] = "Plundringsbehållare",
+  ["Fallback Container"] = "Reservbehållare",
+  
+  -- Bosstiary System
+  ["Bosstiary"] = "Bosstiary",
+  ["Boss Tracker"] = "Bossspårare",
+  ["Boss Kills"] = "Bossbesegringar",
+  ["Archfoe"] = "Ärkefiende",
+  ["Bane"] = "Förbannelse",
+  ["Nemesis"] = "Nemesis",
+  ["Boss Points"] = "Bosspoäng",
+  ["Unlock Slot"] = "Lås upp Plats",
+  ["Equipped"] = "Utrustad",
+  
+  -- Market System
+  ["Market"] = "Marknad",
+  ["Browse Offers"] = "Bläddra bland Erbjudanden",
+  ["My Offers"] = "Mina Erbjudanden",
+  ["My History"] = "Min Historik",
+  ["Buy Offer"] = "Köperbjudande",
+  ["Sell Offer"] = "Säljerbjudande",
+  ["Create Offer"] = "Skapa Erbjudande",
+  ["Cancel Offer"] = "Avbryt Erbjudande",
+  ["Amount"] = "Mängd",
+  ["Total Price"] = "Totalpris",
+  ["Piece Price"] = "Styckpris",
+  ["Statistics"] = "Statistik",
+  ["Transactions"] = "Transaktioner",
+  ["Average Prices"] = "Genomsnittspriser",
+  ["Highest Prices"] = "Högsta Priser",
+  ["Lowest Prices"] = "Lägsta Priser",
+  
+  -- Forge System
+  ["Forge"] = "Smedja",
+  ["Dust Converter"] = "Dammomvandlare",
+  ["Fusion"] = "Fusion",
+  ["Transfer"] = "Överföring",
+  ["Tier"] = "Nivå",
+  ["Success Chance"] = "Lyckochans",
+  ["Dust"] = "Damm",
+  ["Slivers"] = "Skärvor",
+  ["Cores"] = "Kärnor",
+  ["Exalted Cores"] = "Upphöjda Kärnor",
+  
+  -- Wheel of Destiny
+  ["Wheel of Destiny"] = "Ödets Hjul",
+  ["Revelation Points"] = "Uppenbarelsepoäng",
+  ["Promotion Points"] = "Befordringspoäng",
+  ["Gift of Life"] = "Livets Gåva",
+  ["Divine Empowerment"] = "Gudomlig Styrka",
+  ["Blessing of the Grove"] = "Lundens Välsignelse",
+  ["Combat Mastery"] = "Stridsmästerskap",
+  ["Healing Link"] = "Helande Länk",
+  
+  -- Prey System
+  ["Prey"] = "Byte",
+  ["Prey Bonus"] = "Bytebonus",
+  ["Prey Slot"] = "Byteplats",
+  ["Select Creature"] = "Välj Varelse",
+  ["Bonus Type"] = "Bonustyp",
+  ["Damage Boost"] = "Skadeökning",
+  ["Defense Boost"] = "Försvarsökning",
+  ["XP Bonus"] = "XP Bonus",
+  ["Loot Bonus"] = "Plundringsbonus",
+  ["Prey Cards"] = "Byteskort",
+  ["Prey Wildcards"] = "Bytesjokrar",
+  
+  -- Supply Management System
+  ["Supply Stash"] = "Förråd",
+  ["Stash All Items"] = "Lagra alla föremål",
+  ["Stash Container"] = "Lagringsbehållare",
+  ["Retrieve Item"] = "Hämta föremål",
+  ["Item Stash"] = "Föremålsförråd",
+  ["Supply Analysis"] = "Förrådsanalys",
+  ["Supply Usage"] = "Förrådsanvändning",
+  ["Hunt Analysis"] = "Jaktanalys",
+  ["Damage Analysis"] = "Skadeanalys",
+  ["Healing Analysis"] = "Läkningsanalys",
+  ["Waste Counter"] = "Avfallsräknare",
+  ["Profit Counter"] = "Vinst-räknare",
+  ["Session Time"] = "Sessionstid",
+  
+  -- Soul and Regeneration
+  ["Soul Points"] = "Själspoäng",
+  ["Soul Regeneration"] = "Själsåterhämtning",
+  ["Soul Leech"] = "Själssugning",
+  ["Regeneration"] = "Återhämtning",
+  ["Regeneration Rate"] = "Återhämtningshastighet",
+  ["Mana Regeneration"] = "Manaåterhämtning",
+  ["Health Regeneration"] = "Hälsoåterhämtning",
+  
+  -- Character Information Extended
+  ["Character Name"] = "Karaktärsnamn",
+  ["Character Level"] = "Karaktärsnivå",
+  ["Character Vocation"] = "Karaktärsyrke",
+  ["Skill Points"] = "Färdighetspoäng",
+  ["Skill Progress"] = "Färdighetsframsteg",
+  ["Base Speed"] = "Bashastighet",
+  ["Current Speed"] = "Nuvarande hastighet",
+  ["Equipment"] = "Utrustning",
+  ["Inventory"] = "Inventarium",
+  ["Store Inbox"] = "Butiksinkorg",
+  ["Purse"] = "Plånbok",
+  
+  -- Party and Group Extended
+  ["Party Experience"] = "Grupperfarenhet",
+  ["Party Shared Experience"] = "Delad grupperfarenhet",
+  ["Party Leader"] = "Gruppledare",
+  ["Party Member"] = "Gruppmedlem",
+  ["Party Invitation"] = "Gruppinbjudan",
+  ["Accept Party Invitation"] = "Acceptera gruppinbjudan",
+  ["Decline Party Invitation"] = "Avböj gruppinbjudan",
+}
+for k,v in pairs(add) do
+  locale.translation[k] = locale.translation[k] or v
+end

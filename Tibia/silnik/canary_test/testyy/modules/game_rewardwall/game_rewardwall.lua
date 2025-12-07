@@ -362,6 +362,13 @@ local function onOpenRewardWall(bonusShrines, nextRewardTime, dayStreakDay, wasD
         g_game.getLocalPlayer():getResourceBalance(ResourceTypes.DAILYREWARD_STREAK))
 end
 
+-- Populates the reward history UI list with a header row and one row per history entry.
+-- Clears existing list items, creates a localized header, then adds each entry with formatted date,
+-- streak value, and event description while alternating row background colors.
+-- @param rewardHistory Array of history entries where each entry is an array:
+--   index 1 = UNIX timestamp (number),
+--   index 3 = event description (string),
+--   index 4 = streak/balance value (string or number).
 local function onRewardHistory(rewardHistory)
     local transferHistory = rewardWallController.ui.historyPanel.historyList.List
     transferHistory:destroyChildren()

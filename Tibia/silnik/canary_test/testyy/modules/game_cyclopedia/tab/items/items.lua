@@ -387,6 +387,10 @@ local function isHandWeapon(id)
     end
 end
 
+-- Selects an item category and updates the item list, filters, and UI controls accordingly.
+-- Updates search and hand/filter buttons, clears current item entries, populates items for the given category,
+-- and enables or disables classification and handedness filter controls based on the category capabilities.
+-- @param id number The item category id to select (1000 represents the combined weapons category).
 function Cyclopedia.selectItemCategory(id)
     if not isHandWeapon(id) then
         setCheckedWithoutRecursion(false, false)

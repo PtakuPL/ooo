@@ -22,6 +22,15 @@
 
 #include "asyncdispatcher.h"
 
+/**
+ * @brief Determine the number of worker threads for the asynchronous dispatcher.
+ *
+ * Computes the number of worker threads as the number of hardware threads minus one
+ * (reserving one thread for the main/graphics thread) and clamps the result to the
+ * inclusive range 2–12.
+ *
+ * @return uint8_t The chosen number of worker threads (between 2 and 12).
+ */
 uint8_t getThreadCount() {
     /*
     * -1 = Graphic (Main Thread)

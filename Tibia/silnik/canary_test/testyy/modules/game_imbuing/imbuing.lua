@@ -14,6 +14,9 @@ local protection = false
 local clearConfirmWindow
 local imbueConfirmWindow
 
+-- Initializes the imbuing interface: creates and hides the window, registers game event handlers, loads player balances, and sets up UI callbacks for group/imbuement selection and protection toggling.
+-- 
+-- This function prepares the imbuing UI and its behavior, including populating controls, wiring option-change handlers to update required items, costs, and success rate, and connecting the protection button. It also binds game events used by the imbuing system and initializes local state (balance and window references).
 function init()
     connect(g_game, {
         onGameEnd = hide,
@@ -148,6 +151,10 @@ function terminate()
     imbuingWindow:destroy()
 end
 
+-- Resets the imbuing slot UI to its default disabled state.
+-- Hides the empty and clear imbuement panels, sets each slot's label to "Slot N",
+-- disables the slot buttons, updates their tooltip to indicate the slot is unavailable,
+-- and clears any click handlers.
 function resetSlots()
     emptyImbue:setVisible(false)
     clearImbue:setVisible(false)
@@ -160,6 +167,12 @@ function resetSlots()
     end
 end
 
+-- Selects a slot in the imbuing UI and prepares either the clear-imbeument or apply-imbeument confirmation flow.
+-- When `activeSlot` is provided, populates and shows the clear-imbuement panel for that imbuement; otherwise shows the empty-imbeu panel and prepares the imbuing confirmation.
+-- Side effects: updates slot widget text, shows/hides imbuing panels and confirmation dialogs, and can trigger g_game.applyImbuement or g_game.clearImbuement when the user confirms.
+-- @param widget The slot UI widget that was selected.
+-- @param slotId The zero-based index of the selected slot.
+-- @param activeSlot If present, an array describing the current imbuement on the slot: [imbueDefinition, remainingSeconds, clearCost]; pass nil when the slot is empty.
 function selectSlot(widget, slotId, activeSlot)
     if activeSlot then
         emptyImbue:setVisible(false)

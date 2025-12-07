@@ -447,6 +447,8 @@ function showOffers(id)
     end
 end
 
+-- Update the offer details panel to reflect the selected offer and request its full description from the server.
+-- This shows the details panel, sets the displayed name, updates price indicators and buy button states (including optional alternate price/count), and updates the visual preview (image, item, outfit, or mount) based on the offer. It also sends a request to the server to fetch the offer description via the game shop extended opcode.
 function updateDescription(self)
     local offersPanel = gameShopWindow:getChildById("offers")
     local offerDetails = offersPanel:getChildById("offerDetails")

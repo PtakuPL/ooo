@@ -546,6 +546,12 @@ local function updateUIColors(widget, UI_BASE)
     end
 end
 
+-- Populate the creature list for a charm and configure related UI controls when the charm can be assigned.
+-- Creates a list entry for each race in `Cyclopedia.Charms.Monsters` (alternating row colors), sets the unlock button text to "Select",
+-- disables the unlock button, and enables search and creature-related labels.
+-- This runs only if the charm is unlocked and not already assigned, or if the modern UI is active.
+-- @param widget UI widget representing the charm item. Expected to have `data.unlocked` and `data.asignedStatus` boolean fields.
+-- @param UI_BASE Table of UI element handles used by the function. Expected keys: `UnlockButton`, `CreatureList`, `SearchEdit`, optional `SearchLabel`, and `CreaturesLabel`.
 local function setupCreatureList(widget, UI_BASE)
     if (widget.data.unlocked and not widget.data.asignedStatus) or isModernUI then
         UI_BASE.UnlockButton:setText(tr("Select"))
@@ -601,6 +607,11 @@ local function setupModernVersionUpgrade(widget, UI_BASE)
     end
 end
 
+-- Selects a charm item and updates the Cyclopedia UI to reflect that selection.
+-- Updates description text, item image/clip, price visibility, assigned creature sprite, affordability indicators, creature list, and unlock/upgrade controls.
+-- Also deselects other charm widgets in the same parent and ensures the provided widget is checked.
+-- @param widget The charm item widget to select; expected to include `.data` and associated UI fields used by the Cyclopedia.
+-- @param isChecked Boolean indicating whether the widget was already checked; if `false`, the function forces the widget to become checked.
 function Cyclopedia.selectCharm(widget, isChecked)
     local UI_BASE = getUIBase()
     UI_BASE.CreatureList:destroyChildren()

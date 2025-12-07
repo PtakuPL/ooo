@@ -21,7 +21,12 @@
 #include <codecvt>
 #include <locale>
 
-// Helper to convert UTF-8 to UTF-32
+/**
+ * @brief Converts a UTF-8 encoded string to a UTF-32 string.
+ *
+ * @param utf8 UTF-8 encoded input.
+ * @return std::u32string The input re-encoded as UTF-32.
+ */
 static std::u32string utf8to32(const std::string& utf8) {
     std::wstring_convert<std::codecvt_utf8<char32_t>, char32_t> conv;
     return conv.from_bytes(utf8);
@@ -33,6 +38,13 @@ protected:
     FT_Face ftFace = nullptr;
     hb_font_t* hbFont = nullptr;
 
+    /**
+     * @brief Initialize FreeType, load a system font, and create a HarfBuzz font for tests.
+     *
+     * Attempts to initialize the FreeType library, search a set of common system font paths
+     * to load a face, set the face pixel size to 16, and create an hb_font_t from the FreeType face.
+     * If no face is found the test is skipped. Initialization failures assert and mark the test as failed.
+     */
     void SetUp() override {
         // Initialize FreeType
         ASSERT_EQ(FT_Init_FreeType(&ftLib), 0) << "Failed to init FreeType";
@@ -63,6 +75,11 @@ protected:
         ASSERT_NE(hbFont, nullptr) << "Failed to create HarfBuzz font";
     }
 
+    /**
+     * @brief Releases HarfBuzz and FreeType resources allocated by the test fixture.
+     *
+     * Destroys the HarfBuzz font and finalizes the FreeType face and library if they were created.
+     */
     void TearDown() override {
         if (hbFont) hb_font_destroy(hbFont);
         if (ftFace) FT_Done_Face(ftFace);

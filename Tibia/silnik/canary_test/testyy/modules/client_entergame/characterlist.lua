@@ -427,6 +427,9 @@ function CharacterList.destroy()
     end
 end
 
+-- Show the character selection window and update the auto-reconnect control to reflect current settings.
+-- Updates the auto-reconnect button's on/off state and sets its localized label to "On"/"Off";
+-- the label uses a newline or a space depending on whether the appearance preview feature is enabled.
 function CharacterList.show()
     if loadBox or errorBox or not charactersWindow then
         return

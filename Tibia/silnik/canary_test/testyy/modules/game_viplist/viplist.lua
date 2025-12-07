@@ -178,6 +178,10 @@ function createAddWindow()
     end
 end
 
+-- Open and display an Edit VIP dialog for the provided VIP widget and apply the user's changes.
+-- The dialog lets the user edit the VIP's description, icon, notify-on-login flag, and group memberships.
+-- Saving applies the changes via g_game.editVip when the GameAdditionalVipInfo feature is available; otherwise it updates the local `vipInfo` table. Canceling or saving closes and destroys the edit window and its temporary UI state.
+-- @param widget The VIP list widget (label) representing the player to edit; its id and text provide the VIP identifier and name.
 function createEditWindow(widget)
     if editVipWindow then
         return
@@ -758,6 +762,9 @@ function createAddGroupWindow()
     end
 end
 
+-- Opens the "add group" dialog prefilled for editing an existing VIP group and wires its confirm actions to save the changes.
+-- @param groupName The current name of the group to edit; used to prefill the dialog's name field.
+-- @param groupId The identifier of the group to be edited; passed to the editGroup handler when confirming.
 function createEditGroupWindow(groupName, groupId)
     if not addGroupWindow then
         addGroupWindow = g_ui.displayUI('addgroup')

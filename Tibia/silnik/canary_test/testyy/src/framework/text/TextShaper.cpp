@@ -2,6 +2,12 @@
 #include <stdexcept>
 #include <algorithm>
 
+/**
+ * @brief Maps a four-character script tag to the corresponding HarfBuzz script enum.
+ *
+ * @param s Script tag (e.g., "Latn", "Cyrl", "Grek").
+ * @return hb_script_t Corresponding `HB_SCRIPT_*` value; returns `HB_SCRIPT_LATIN` when the tag is not recognized.
+ */
 static hb_script_t toHbScript(const std::string& s) {
   if (s == "Cyrl") return HB_SCRIPT_CYRILLIC;
   if (s == "Grek") return HB_SCRIPT_GREEK;
@@ -16,6 +22,15 @@ static hb_script_t toHbScript(const std::string& s) {
   return HB_SCRIPT_LATIN;
 }
 
+/**
+ * @brief Convert a TextDirection value to the corresponding HarfBuzz direction.
+ *
+ * Maps TextDirection::RTL to HB_DIRECTION_RTL and TextDirection::LTR to HB_DIRECTION_LTR.
+ * For other values (e.g., AUTO) returns HB_DIRECTION_LTR so script-based detection may occur later.
+ *
+ * @param d The input text direction.
+ * @return hb_direction_t The HarfBuzz direction constant corresponding to `d`.
+ */
 static hb_direction_t toHbDir(TextDirection d) {
   switch (d) {
     case TextDirection::RTL: return HB_DIRECTION_RTL;
@@ -24,7 +39,21 @@ static hb_direction_t toHbDir(TextDirection d) {
   }
 }
 
-// Apply FriBidi algorithm for proper visual ordering of bidirectional text
+/**
+ * @brief Reorders a sequence of Unicode codepoints from logical to visual order using FriBidi.
+ *
+ * Reorders input codepoints for visual display according to the Unicode Bidirectional Algorithm
+ * with the given paragraph base direction. Also returns the resolved per-codepoint embedding
+ * levels via the outLevels parameter.
+ *
+ * @param logical Unicode codepoints in logical (storage) order.
+ * @param baseDir Paragraph base direction used to resolve embedding levels.
+ * @param outLevels Output vector that will be resized and filled with the resolved embedding
+ *                  level for each codepoint (one entry per input codepoint).
+ * @return std::vector<uint32_t> Codepoints in visual order. Returns an empty vector if `logical`
+ *                              is empty. If the computed maximum embedding level is 0 (no
+ *                              reordering required), the original `logical` sequence is returned.
+ */
 static std::vector<uint32_t> applyBidiReordering(const std::vector<uint32_t>& logical,
                                                   TextDirection baseDir,
                                                   std::vector<int8_t>& outLevels) {
@@ -69,6 +98,20 @@ static std::vector<uint32_t> applyBidiReordering(const std::vector<uint32_t>& lo
   return std::vector<uint32_t>(visual.begin(), visual.end());
 }
 
+/**
+ * @brief Shapes a UTF-32 string into positioned glyphs using HarfBuzz and applies FriBidi reordering for bidirectional text.
+ *
+ * Applies bidirectional reordering to the input logical codepoints, shapes the resulting visual sequence with the
+ * provided HarfBuzz font, and returns glyph indices with per-glyph positions and advances.
+ *
+ * @param text32 Input text as a UTF-32 string of Unicode codepoints.
+ * @param hbFont HarfBuzz font to use for shaping; if `nullptr` an empty vector is returned.
+ * @param params Shaping parameters (direction, script, language) that influence buffer settings and shaping.
+ * @return std::vector<ShapedGlyph> A vector of shaped glyphs. Each element contains the glyph index produced by
+ * HarfBuzz, a `codepoint` derived from the glyph's cluster (mapped back into the visual-ordered input for fallback lookup,
+ * or 0 if out of range), and x/y positions and advance values in device units (floats). Returns an empty vector if
+ * `hbFont` is null or `text32` is empty.
+ */
 std::vector<ShapedGlyph> TextShaper::shape(const std::u32string& text32,
                                            hb_font_t* hbFont,
                                            const ShapeParams& params) {

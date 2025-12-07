@@ -37,6 +37,73 @@ struct GlyphQuad {
   Rect src;
 };
 
+/**
+ * Load the primary TrueType font and optional fallback fonts at the specified pixel height.
+ * @param mainTtf Path to the primary TTF file.
+ * @param fallbackTtfs Paths to fallback TTF files used when the primary font lacks a glyph.
+ * @param pixelSize Desired font height in pixels.
+ * @returns `true` if all requested fonts were successfully loaded and initialized, `false` otherwise.
+ */
+
+/**
+ * Shape and render UTF-32 text at the given baseline position using the current atlas and shaping parameters.
+ * @param text32 UTF-32 encoded string to render.
+ * @param x X coordinate of the text baseline start in destination space.
+ * @param y Y coordinate of the text baseline in destination space.
+ * @param params Shaping and layout parameters (e.g., direction, script, language, features).
+ * @param color Color to use when rendering the text.
+ */
+
+/**
+ * Compute the horizontal advance (width) of the shaped text using the current font and shaping parameters.
+ * @param text32 UTF-32 encoded string to measure.
+ * @param params Shaping and layout parameters affecting glyph selection and positioning.
+ * @returns The measured width in pixels.
+ */
+
+/**
+ * Retrieve the HarfBuzz font handle used for shaping.
+ * @returns Pointer to the underlying `hb_font_t` instance.
+ */
+
+/**
+ * Return the number of texture atlases currently managed by the font.
+ * @returns The count of atlases.
+ */
+
+/**
+ * Get the GPU texture associated with the atlas at the given index.
+ * @param index Index of the atlas.
+ * @returns A TexturePtr referencing the atlas texture; may be null if the index is out of range.
+ */
+
+/**
+ * Shape the provided text and build a list of glyph quads describing destination rectangles and source atlas regions.
+ * @param text32 UTF-32 encoded string to shape and convert to quads.
+ * @param params Shaping and layout parameters used during shaping.
+ * @param outQuads Vector to be populated with resulting GlyphQuad entries.
+ * @returns A Rect describing the bounding box of the resulting laid-out text relative to the baseline.
+ */
+
+/**
+ * Ensure the specified glyph is present in an atlas, rasterizing and packing it if necessary.
+ * @param glyphIndex Glyph index in the main FreeType face to cache.
+ * @param codepoint Optional Unicode codepoint used for fallback lookup when the main face lacks the glyph.
+ * @returns Pointer to the cached AtlasGlyph metadata for the requested glyph, or `nullptr` on failure.
+ */
+
+/**
+ * Rasterize a glyph from the provided FreeType face into an atlas and create its AtlasGlyph entry.
+ * @param face FreeType face to rasterize the glyph from.
+ * @param glyphIndex Glyph index within the provided face.
+ * @param cacheKey Unique key used for caching/mapping this rasterized glyph.
+ * @returns Pointer to the created AtlasGlyph metadata, or `nullptr` if rasterization or packing failed.
+ */
+
+/**
+ * Create a new empty texture atlas and return its index within the managed atlas list.
+ * @returns Index of the newly created atlas, or a negative value on failure.
+ */
 class TTFFont {
 public:
   TTFFont();

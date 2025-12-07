@@ -399,6 +399,11 @@ function Cyclopedia.BestiarySearchText(text)
     end
 end
 
+-- Creates and populates a Bestiary list entry widget for a creature and wires its click behavior.
+-- @param data Table containing creature list item information:
+--   - id (number): race identifier used to fetch race data and set the widget id.
+--   - AnimusMasteryBonus (number): percent bonus; if > 0 an Animus Mastery indicator and tooltip are shown.
+--   - currentLevel (number): creature discovery level (0 = unknown); controls visibility/state of finalized, kills, and shader/name masking.
 function Cyclopedia.CreateBestiaryCreaturesItem(data)
     local raceData = g_things.getRaceData(data.id)
 

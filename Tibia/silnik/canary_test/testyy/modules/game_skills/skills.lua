@@ -258,6 +258,8 @@ function update()
     end
 end
 
+-- Initializes the skills window for an online session and refreshes its data.
+-- If the client supports appearance display, replaces the regeneration time label text with "Food".
 function online()
     skillsWindow:setupOnStart() -- load character window configuration
     refresh()

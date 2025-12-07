@@ -265,6 +265,9 @@ function offline()
     fpsMin = -1
 end
 
+-- Update displayed FPS values and related UI tooltips.
+-- Updates the main FPS label and an optional secondary panel with the provided `fps` value. When the game is online, it tracks a short-lived min/mid/max FPS range and sets a localized tooltip on the main FPS label showing "Min", "Mid", and "Max" values; when offline the tooltip is removed. The main label is only updated if visible; the secondary FPS panel is updated only if present, visible, and the game is online.
+-- @param fps number The current frames-per-second value to display.
 function updateFps(fps)
     if fpsLabel:isVisible() then -- for the time being retained for the extended view
         local text = 'FPS ' .. fps

@@ -647,7 +647,7 @@ function Cyclopedia.loadCharacterCombatStats(data, mitigation, additionalSkillsA
             widget.item:setVirtual(true)
             local minutes = concoctionsArray[i][2] / 60
             local itemName = widget.item:getItem():getMarketData().name
-            widget.item:setTooltip(string.format("%s: %.0f minutes", itemName, minutes))
+            widget.item:setTooltip(string.format(tr("%s: %.0f minutes"), itemName, minutes))
             widget.amount:setVisible(false)
         end
     end
@@ -1370,13 +1370,13 @@ local  function getWeaponSkillName(skillType)
             for i = 1, 5 do
                 if data.perfectShotDamage[i] and data.perfectShotDamage[i] > 0 then
                     table.insert(stats, {
-                        name = "Perfect Shot Damage Bonus", 
+                        name = tr("Perfect Shot Damage Bonus"), 
                         parent = "right", 
                         value = "", 
                         icon = false
                     })
                     table.insert(stats, {
-                        name = "     +" .. data.perfectShotDamage[i] .. " from range " .. i, 
+                        name = "     +" .. data.perfectShotDamage[i] .. tr(" from range ") .. i, 
                         parent = "right", 
                         value = "", 
                         align = "center", 

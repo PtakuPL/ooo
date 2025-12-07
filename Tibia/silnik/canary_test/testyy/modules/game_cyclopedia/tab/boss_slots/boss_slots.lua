@@ -241,25 +241,25 @@ function Cyclopedia.setActiveSlot(widget, slot, slotData, data, bossId)
     widget.LockLabel:setVisible(false)
     widget.SelectBoss:setVisible(false)
     widget.ActivedBoss:setVisible(true)
-    widget:setText(string.format("Slot %d: %s", slot, raceData.name))
+    widget:setText(string.format(tr("Slot %d: %s"), slot, raceData.name))
     widget.ActivedBoss.TypeIcon:setImageSource(ICONS[slotData.bossRace])
 
     Cyclopedia.setBosstiarySlotsBossProgress(widget.ActivedBoss.Progress, slotData.killBonus,
         CONFIG[slotData.bossRace].MASTERY)
 
     local tooltip = slotData.bossRace == CATEGORY.ARCHFOE and
-                        "Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60" or
-                        "Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60"
+                        tr("Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60") or
+                        tr("Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60")
 
     if slotData.bossRace ~= CATEGORY.ARCHFOE then
         tooltip =
-            "Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30"
+            tr("Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30")
     end
 
     widget.ActivedBoss.TypeIcon:setTooltip(tooltip)
     widget.ActivedBoss.Progress.ProgressBorder1:setTooltip()
 
-    local fullText = slotData.killBonus >= CONFIG[slotData.bossRace].MASTERY and "(fully unlocked)" or ""
+    local fullText = slotData.killBonus >= CONFIG[slotData.bossRace].MASTERY and tr("(fully unlocked)") or ""
 
     local progress = widget.ActivedBoss.Progress
     progress.ProgressBorder1:setTooltip(string.format(" %d / %d %s", slotData.killBonus,

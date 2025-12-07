@@ -1501,7 +1501,35 @@ local add = {
   ["Dodge"] = "Unik",
   ["From Event Bonus"] = "Z bonusu eventowego",
   ["Fatal"] = "Śmiertelny",
-  ["Momentum"] = "Impet"
+  ["Momentum"] = "Impet",
+  
+  -- Reward wall messages
+  ["Warning"] = "Ostrzeżenie",
+  ["Sorry, you have already taken your daily reward or you are unable to collect it"] = "Przepraszamy, już odebrałeś swoją dzienną nagrodę lub nie możesz jej odebrać",
+  ["Confirmation of using Instant Reward Access"] = "Potwierdzenie użycia natychmiastowego dostępu do nagrody",
+  ["Remember! You can always collect your daily reward for free by visiting a reward shrine!\n\nYou Currently own 3x Instant Reward Access. Do you really want to use one to claim your daily reward now?"] = "Pamiętaj! Zawsze możesz odebrać swoją dzienną nagrodę za darmo, odwiedzając ołtarz nagród!\n\nObecnie posiadasz 3x Natychmiastowy Dostęp do Nagrody. Czy naprawdę chcesz użyć jednego, aby odebrać swoją dzienną nagrodę teraz?",
+  ["Warning: No Sufficient Instant Reward Access"] = "Ostrzeżenie: Brak wystarczającego natychmiastowego dostępu do nagrody",
+  ["Remember! you can always collect your daily reward for free by visiting a reward shrine!\nyou do not have an Instant Reward Access.\nVisit the store to buy more!"] = "Pamiętaj! Zawsze możesz odebrać swoją dzienną nagrodę za darmo, odwiedzając ołtarz nagród!\nNie posiadasz Natychmiastowego Dostępu do Nagrody.\nOdwiedź sklep, aby kupić więcej!",
+  
+  -- Time format and units
+  ["%s: %.0f minutes"] = "%s: %.0f minut",
+  
+  -- NPC trade and items
+  ["%s gp, %s\nResidence: %s"] = "%s gp, %s\nMiejsce zamieszkania: %s",
+  ["Various Locations"] = "Różne lokalizacje",
+  
+  -- Boss slots
+  ["Slot %d: %s"] = "Slot %d: %s",
+  ["Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60"] = "Arcywróg\n\nZa odblokowanie poziomu otrzymasz następujące punkty bossów:\nBiegłość: 10\nEkspertyza: 30\nMistrzostwo: 60",
+  ["Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60"] = "Nemezis\n\nZa odblokowanie poziomu otrzymasz następujące punkty bossów:\nBiegłość: 10\nEkspertyza: 30\nMistrzostwo: 60",
+  ["Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30"] = "Plaga\n\nZa odblokowanie poziomu otrzymasz następujące punkty bossów:\nBiegłość: 5\nEkspertyza: 15\nMistrzostwo: 30",
+  ["(fully unlocked)"] = "(w pełni odblokowane)",
+  
+  -- Character stats - Perfect Shot
+  [" from range "] = " z zasięgu ",
+  
+  -- Main panel
+  ["Control Buttons"] = "Przyciski sterowania"
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

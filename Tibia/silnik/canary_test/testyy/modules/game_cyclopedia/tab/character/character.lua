@@ -66,7 +66,7 @@ function showCharacter()
     if g_game.isOnline() then
         local player = g_game.getLocalPlayer()
         UI.CharacterBase:setText(player:getName())
-        UI.CharacterBase.InfoLabel:setText(string.format("Level: %d\n%s", player:getLevel(), player:getVocationNameByClientId()))
+        UI.CharacterBase.InfoLabel:setText(string.format(tr("Level:") .. " %d\n%s", player:getLevel(), player:getVocationNameByClientId()))
         UI.CharacterBase.Outfit:setOutfit(player:getOutfit())
 
         UI.InfoBase.outfitPanel.Sprite:setOutfit(player:getOutfit())

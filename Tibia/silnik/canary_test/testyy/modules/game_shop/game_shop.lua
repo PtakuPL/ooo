@@ -188,7 +188,7 @@ function updateHistory()
         widget:getChildById("description"):setText(history[i].name)
     end
 
-    historyPanel:getChildById("pageLabel"):setText("Page " .. currentPage .. "/" .. totalPages)
+    historyPanel:getChildById("pageLabel"):setText(tr("Page") .. " " .. currentPage .. "/" .. totalPages)
 end
 
 function onGameShopUpdateHistory(historyList)
@@ -490,10 +490,10 @@ function updateDescription(self)
     buyButton:setEnabled(self.data.price <= globalPoints)
 
     if self.additionalPriceValue and self.additionalCountValue then
-        buyButton:setText("Buy " .. self.data.count)
+        buyButton:setText(tr("Buy") .. " " .. self.data.count)
 
         additionalPriceWidget:setEnabled(self.additionalPriceValue <= globalPoints)
-        additionalBuyButton:setText("Buy " .. self.additionalCountValue)
+        additionalBuyButton:setText(tr("Buy") .. " " .. self.additionalCountValue)
         additionalBuyButton:show()
         additionalBuyButton:setEnabled(self.additionalPriceValue <= globalPoints)
         additionalBuyButton.price = self.additionalPriceValue
@@ -572,22 +572,22 @@ end
 
 function onOfferBuy(self)
     if not selectedOffer then
-        displayInfoBox("Error", "Something went wrong, make sure to select category and offer.")
+        displayInfoBox(tr("Error"), tr("Something went wrong, make sure to select category and offer."))
         return
     end
 
     hide()
 
-    local title = "Purchase Confirmation"
+    local title = tr("Purchase Confirmation")
     local msg
     if self.count and self.count > 1 then
         msg =
-            "Do you want to buy " ..
-            self.count .. "x " .. selectedOffer.data.name .. " for " .. comma_value(self.price) .. " points?"
+            tr("Do you want to buy") .. " " ..
+            self.count .. "x " .. selectedOffer.data.name .. " " .. tr("for") .. " " .. comma_value(self.price) .. " " .. tr("points?")  
     else
         msg =
-            "Do you want to buy " ..
-            selectedOffer.data.name .. " for " .. comma_value(selectedOffer.data.price) .. " points?"
+            tr("Do you want to buy") .. " " ..
+            selectedOffer.data.name .. " " .. tr("for") .. " " .. comma_value(selectedOffer.data.price) .. " " .. tr("points?")
     end
 
     if selectedOffer.data.name == "Name Change" then
@@ -596,8 +596,8 @@ function onOfferBuy(self)
             title,
             msg,
             {
-                {text = "Yes", callback = changeName},
-                {text = "No", callback = buyCanceled},
+                {text = tr("Yes"), callback = changeName},
+                {text = tr("No"), callback = buyCanceled},
                 anchor = AnchorHorizontalCenter
             },
             changeName,
@@ -609,8 +609,8 @@ function onOfferBuy(self)
             title,
             msg,
             {
-                {text = "Yes", callback = buyConfirmed},
-                {text = "No", callback = buyCanceled},
+                {text = tr("Yes"), callback = buyConfirmed},
+                {text = tr("No"), callback = buyCanceled},
                 anchor = AnchorHorizontalCenter
             },
             buyConfirmed,
@@ -748,11 +748,11 @@ function displayInfoBoxWithCallback(title, message, callback)
 end
 
 function changeCoinsAmount(value)
-    transferWindow:getChildById("coinsAmountLabel"):setText("Amount to gift: " .. comma_value(value))
+    transferWindow:getChildById("coinsAmountLabel"):setText(tr("Amount to gift:") .. " " .. comma_value(value))
 end
 
 function changeTaskPointsAmount(value)
-    transferWindow:getChildById("taskPointsAmountLabel"):setText("Amount to gift: " .. comma_value(value))
+    transferWindow:getChildById("taskPointsAmountLabel"):setText(tr("Amount to gift:") .. " " .. comma_value(value))
 end
 
 function confirmGiftCoins()

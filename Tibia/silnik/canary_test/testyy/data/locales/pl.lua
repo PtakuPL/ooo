@@ -1335,7 +1335,38 @@ local add = {
   ["Reward:"] = "Nagroda:",
   
   -- Reward Wall
-  ["Unknown bonus."] = "Nieznany bonus."
+  ["Unknown bonus."] = "Nieznany bonus.",
+  ["Free capacity:"] = "Wolna pojemność:",
+  ["You have selected"] = "Wybrałeś",
+  ["of %d reward items"] = "z %d przedmiotów nagrody",
+  ["You have already collected this daily reward.\nThe daily rewards follow a specific cycle where each day you claim it, you get another reward. The cycle repeats after 7 claimed rewards. You will be able to claim this daily reward again as soon as you have reached this postion in the next cycle."] = "Już odebrałeś tę codzienną nagrodę.\nCodzienne nagrody podążają za określonym cyklem, gdzie każdego dnia gdy ją odbierasz, otrzymujesz kolejną nagrodę. Cykl powtarza się po 7 odebranych nagrodach. Będziesz mógł odebrać tę nagrodę ponownie, gdy osiągniesz tę pozycję w następnym cyklu.",
+  ["The daily reward can be claimed now.\nIf you claim this reward now, it will cost you one Instant Reward Access.\nGet your daily reward for free by visiting a reward shrine.\nYou did not claim your daily reward in time.\nToo bad, you do not have enough Daily Reward Jokers."] = "Codzienną nagrodę można teraz odebrać.\nJeśli odbierzesz ją teraz, zużyjesz jeden Natychmiastowy Dostęp do Nagrody.\nOdbierz nagrodę za darmo odwiedzając ołtarz nagród.\nNie odebrałeś nagrody w terminie.\nSzkoda, nie masz wystarczającej liczby Jokerów Codziennych Nagród.",
+  ["This daily reward is still locked.\nFirst collect the previous daily rewards of this cycle."] = "Ta codzienna nagroda jest nadal zablokowana.\nNajpierw odbierz poprzednie codzienne nagrody z tego cyklu.",
+  
+  -- Classification & Bestiary
+  ["Classification:"] = "Klasyfikacja:",
+  ["Total:"] = "Razem:",
+  ["Known:"] = "Znane:",
+  ["The Animus Mastery for this creature is unlocked.\nIt yields %s%% bonus experience points, plus an additional 0.1%% for every 10 Animus Masteries unlocked, up to a maximum of 4%%.\nYou currently benefit from %s%% bonus experience points due to having unlocked %s Animus Masteries."] = "Mistrzostwo Animusa dla tego stworzenia jest odblokowane.\nDaje %s%% bonusowych punktów doświadczenia, plus dodatkowe 0.1%% za każde 10 odblokowanych Mistrzostw Animusa, maksymalnie do 4%%.\nAktualnie korzystasz z %s%% bonusowych punktów doświadczenia dzięki odblokowaniu %s Mistrzostw Animusa.",
+  
+  -- Character
+  ["Level:"] = "Poziom:",
+  
+  -- Shop
+  ["Page"] = "Strona",
+  ["Buy"] = "Kup",
+  ["Amount to gift:"] = "Ilość do podarowania:",
+  
+  -- House auctions
+  ["When the auction ends at %s the winning bid plus the rent for the first month (%s) will be debited to your bank account."] = "Gdy aukcja zakończy się o %s, zwycięska oferta plus czynsz za pierwszy miesiąc (%s) zostanie pobrana z Twojego konta bankowego.",
+  ["When the auction ends, the winning bid plus the rent for the first month (%s) will be debited to your bank account."] = "Gdy aukcja się zakończy, zwycięska oferta plus czynsz za pierwszy miesiąc (%s) zostanie pobrana z Twojego konta bankowego.",
+  
+  -- Skills/Imbuements
+  ["You have a +11.4% chance to trigger Onslaught, granting you 60% increased damage for all attacks."] = "Masz +11.4% szansę na wywołanie Natarcia, dając ci 60% zwiększonych obrażeń dla wszystkich ataków.",
+  ["You have a +1% chance to cause +1% extra damage."] = "Masz +1% szansę na zadanie +1% dodatkowych obrażeń.",
+  ["Critical Hits deal more damage than normal attacks. They have a chance to be triggered during combat, inflicting additional damage beyond the standard amount."] = "Trafienia krytyczne zadają więcej obrażeń niż normalne ataki. Mają szansę na aktywację podczas walki, zadając dodatkowe obrażenia ponad standardową ilość.",
+  ["You get +1% of the damage dealt as mana"] = "Otrzymujesz +1% zadanych obrażeń jako manę",
+  ["You get +1% of the damage dealt as hit points"] = "Otrzymujesz +1% zadanych obrażeń jako punkty życia"
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

@@ -723,12 +723,12 @@ end
 
 function onImbuementsChange(localPlayer, lifeLeech, manaLeech, critChance, critDamage, onslaught)
     local lifeLeechTooltips =
-        "You have a +11.4% chance to trigger Onslaught, granting you 60% increased damage for all attacks."
-    local manaLeechTooltips = "You have a +1% chance to cause +1% extra damage."
+        tr("You have a +11.4% chance to trigger Onslaught, granting you 60% increased damage for all attacks.")
+    local manaLeechTooltips = tr("You have a +1% chance to cause +1% extra damage.")
     local critChanceTooltips =
-        "Critical Hits deal more damage than normal attacks. They have a chance to be \ntriggered during combat, inflicting additional damage beyond the standard amount."
-    local critDamageTooltips = "You get +1% of the damage dealt as mana"
-    local onslaughtTooltips = "You get +1% of the damage dealt as hit points"
+        tr("Critical Hits deal more damage than normal attacks. They have a chance to be triggered during combat, inflicting additional damage beyond the standard amount.")
+    local critDamageTooltips = tr("You get +1% of the damage dealt as mana")
+    local onslaughtTooltips = tr("You get +1% of the damage dealt as hit points")
     skillsWindow:recursiveGetChildById("criticalHit"):setVisible(true)
     setSkillValueWithTooltips('lifeLeech', lifeLeech, lifeLeechTooltips, true)
     setSkillValueWithTooltips('manaLeech', manaLeech, manaLeechTooltips, true)

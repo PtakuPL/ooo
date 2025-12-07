@@ -493,7 +493,7 @@ function Cyclopedia.loadItemDetail(itemId, descriptions)
 
     if classification > 0 then
         local widget = g_ui.createWidget("UIWidget", UI.InfoBase.DetailsBase.List)
-        widget:setText("Classification: " .. classification)
+        widget:setText(tr("Classification:") .. " " .. classification)
         widget:setColor("#C0C0C0")
     end
 end

@@ -943,11 +943,10 @@ function Cyclopedia.bidHouse(widget)
 
     if house.hasBid then
         bidArea.information:setText(string.format(
-            "When the auction ends at %s the\nwinning bid plus the rent for the first month ( %s) will\nbe debited to your bank account.",
+            tr("When the auction ends at %s the winning bid plus the rent for the first month (%s) will be debited to your bank account."),
             time, (house.rent)))
     else
-        bidArea.information:setText("When the auction ends, the winning bid plus the rent for\nthe first month( " ..
-                                        (house.rent) .. ") will de debited yo your bank account.")
+        bidArea.information:setText(string.format(tr("When the auction ends, the winning bid plus the rent for the first month (%s) will be debited to your bank account."), house.rent))
     end
 
     function UI.bidArea.cancel.onClick()

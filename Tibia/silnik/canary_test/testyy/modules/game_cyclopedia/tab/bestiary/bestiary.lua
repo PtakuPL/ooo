@@ -264,7 +264,7 @@ function Cyclopedia.loadBestiarySelectedCreature(data)
     UI.ListBase.CreatureInfo.LocationField.Textlist.Text:setText(data.location)
 
     if data.AnimusMasteryPoints and data.AnimusMasteryPoints > 1 then
-        UI.ListBase.CreatureInfo.AnimusMastery:setTooltip("The Animus Mastery for this creature is unlocked.\nIt yields "..(data.AnimusMasteryBonus / 10).."% bonus experience points, plus an additional 0.1% for every 10 Animus Masteries unlocked, up to a maximum of 4%.\nYou currently benefit from "..(data.AnimusMasteryBonus / 10).."% bonus experience points due to having unlocked ".. data.AnimusMasteryPoints .." Animus Masteries.")
+        UI.ListBase.CreatureInfo.AnimusMastery:setTooltip(string.format(tr("The Animus Mastery for this creature is unlocked.\nIt yields %s%% bonus experience points, plus an additional 0.1%% for every 10 Animus Masteries unlocked, up to a maximum of 4%%.\nYou currently benefit from %s%% bonus experience points due to having unlocked %s Animus Masteries."), (data.AnimusMasteryBonus / 10), (data.AnimusMasteryBonus / 10), data.AnimusMasteryPoints))
         UI.ListBase.CreatureInfo.AnimusMastery:setVisible(true)
     else
         UI.ListBase.CreatureInfo.AnimusMastery:removeTooltip()
@@ -293,8 +293,8 @@ function Cyclopedia.CreateBestiaryCategoryItem(Data)
     widget.ClassIcon:setImageSource("/game_cyclopedia/images/bestiary/creatures/" .. Data.name:lower():gsub(" ", "_"))
     widget.Category = Data.name
     widget:setColor("#C0C0C0")
-    widget.TotalValue:setText(string.format("Total: %d", Data.amount))
-    widget.KnownValue:setText(string.format("Known: %d", Data.know))
+    widget.TotalValue:setText(tr("Total:") .. " " .. Data.amount)
+    widget.KnownValue:setText(tr("Known:") .. " " .. Data.know)
 
     function widget.ClassBase:onClick()
         UI.BackPageButton:setEnabled(true)
@@ -427,7 +427,7 @@ function Cyclopedia.CreateBestiaryCreaturesItem(data)
     widget.Sprite:getCreature():setStaticWalking(1000)
 
     if data.AnimusMasteryBonus > 0 then
-        widget.AnimusMastery:setTooltip("The Animus Mastery for this creature is unlocked.\nIt yields ".. data.AnimusMasteryBonus.. "% bonus experience points, plus an additional 0.1% for every 10 Animus Masteries unlocked, up to a maximum of 4%.\nYou currently benefit from ".. data.AnimusMasteryBonus.. "% bonus experience points due to having unlocked ".. animusMasteryPoints.." Animus Masteries.")
+        widget.AnimusMastery:setTooltip(string.format(tr("The Animus Mastery for this creature is unlocked.\nIt yields %s%% bonus experience points, plus an additional 0.1%% for every 10 Animus Masteries unlocked, up to a maximum of 4%%.\nYou currently benefit from %s%% bonus experience points due to having unlocked %s Animus Masteries."), data.AnimusMasteryBonus, data.AnimusMasteryBonus, animusMasteryPoints))
         widget.AnimusMastery:setVisible(true)
     else
         widget.AnimusMastery:removeTooltip()

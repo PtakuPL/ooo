@@ -1293,7 +1293,7 @@ function Cyclopedia.selectHouse(widget)
     resetSelectedInfo()
 
     if widget.data.hasBid then
-        UI.LateralBase.AuctionLabel:setText("Auction")
+        UI.LateralBase.AuctionLabel:setText(tr("Auction"))
 
         local formattedDate = os.date("%b %d, %H:%M", widget.data.bidEnd)
         local date = string.format("%s %s", formattedDate, "CET")
@@ -1315,7 +1315,7 @@ function Cyclopedia.selectHouse(widget)
         local formattedDate = os.date("%b %d, %H:%M", widget.data.paidUntil)
         local date = string.format("%s %s", formattedDate, "CET")
 
-        UI.LateralBase.AuctionLabel:setText("Rental Details")
+        UI.LateralBase.AuctionLabel:setText(tr("Rental Details"))
         UI.LateralBase.AuctionText:setColoredText("{            Tenant: , #909090}" .. widget.data.owner ..
                                                       "\n{         Paid Until: , #909090}" .. date)
 
@@ -1333,15 +1333,15 @@ function Cyclopedia.selectHouse(widget)
             UI.LateralBase.transferValue:setText(comma_value(widget.data.transferValue))
         end
     else
-        UI.LateralBase.AuctionLabel:setText("Auction")
-        UI.LateralBase.AuctionText:setText("There is no bid so far.\nBe the first to bid on this house.")
+        UI.LateralBase.AuctionLabel:setText(tr("Auction"))
+        UI.LateralBase.AuctionText:setText(tr("There is no bid so far.\nBe the first to bid on this house."))
     end
 
     if widget.data.rented then
         if widget.data.isYourOwner then
             local button = g_ui.createWidget("Button", UI.LateralBase)
             button:setId("transferButton")
-            button:setText("Transfer")
+            button:setText(tr("Transfer"))
             button:setColor("#C0C0C0")
             -- button:setFont("verdana-bold-8px-antialiased")
             button:setWidth(64)
@@ -1353,7 +1353,7 @@ function Cyclopedia.selectHouse(widget)
             button.onClick = Cyclopedia.transferHouse
             button = g_ui.createWidget("Button", UI.LateralBase)
             button:setId("moveOutButton")
-            button:setText("Move Out")
+            button:setText(tr("Move Out"))
             button:setColor("#C0C0C0")
             -- button:setFont("verdana-bold-8px-antialiased")
             button:setWidth(64)
@@ -1412,7 +1412,7 @@ function Cyclopedia.selectHouse(widget)
     else
         local button = g_ui.createWidget("Button", UI.LateralBase)
         button:setId("bidButton")
-        button:setText("Bid")
+        button:setText(tr("Bid"))
         button:setColor("#C0C0C0")
         -- button:setFont("verdana-bold-8px-antialiased")
         button:setWidth(64)

@@ -510,7 +510,7 @@ function updateDescription(self)
         buyButton.price = nil
         buyButton.count = nil
 
-        buyButton:setText("Buy")
+        buyButton:setText(tr("Buy"))
         additionalPriceWidget:hide()
     end
 

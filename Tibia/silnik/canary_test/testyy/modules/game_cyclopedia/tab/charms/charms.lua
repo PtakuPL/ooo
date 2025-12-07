@@ -654,7 +654,7 @@ function Cyclopedia.selectCharm(widget, isChecked)
     setupCreatureList(widget, UI_BASE)
 
     if widget.data.asignedStatus then
-        UI_BASE.UnlockButton:setText("Remove")
+        UI_BASE.UnlockButton:setText(tr("Remove"))
         local creatureWidget = g_ui.createWidget("CharmCreatureName", UI_BASE.CreatureList)
         creatureWidget:setText(formatCreatureName(g_things.getRaceData(widget.data.raceId).name))
         creatureWidget:setEnabled(false)
@@ -668,7 +668,7 @@ function Cyclopedia.selectCharm(widget, isChecked)
     end
 
     if not widget.data.unlocked then
-        UI_BASE.UnlockButton:setText("Unlock")
+        UI_BASE.UnlockButton:setText(tr("Unlock"))
         UI_BASE.SearchEdit:setEnabled(false)
         if UI_BASE.SearchLabel then
             UI_BASE.SearchLabel:setEnabled(false)

@@ -370,9 +370,9 @@ local function onRewardHistory(rewardHistory)
     headerRow:setBackgroundColor("#363636")
     headerRow:setBorderColor("#00000077")
     headerRow:setBorderWidth(1)
-    headerRow.date:setText("Date")
-    headerRow.Balance:setText("Streak")
-    headerRow.Description:setText("Event")
+    headerRow.date:setText(tr("Date"))
+    headerRow.Balance:setText(tr("Streak"))
+    headerRow.Description:setText(tr("Event"))
 
     for i, data in ipairs(rewardHistory) do
         local row = g_ui.createWidget("historyData2", transferHistory)

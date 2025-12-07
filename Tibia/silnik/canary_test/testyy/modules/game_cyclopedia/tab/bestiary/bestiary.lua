@@ -437,7 +437,7 @@ function Cyclopedia.CreateBestiaryCreaturesItem(data)
         if data.currentLevel < 1 then
             widget.KillsLabel:setText("?")
             widget.Sprite:getCreature():setShader("Outfit - cyclopedia-black")
-            widget.Name:setText("Unknown")
+            widget.Name:setText(tr("Unknown"))
             widget.AnimusMastery:setVisible(false)
         else
             widget.KillsLabel:setText(string.format("%d / 3", data.currentLevel - 1))

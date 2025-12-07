@@ -1274,9 +1274,9 @@ function Cyclopedia.onParseCyclopediaStoreSummary(xpBoostTime, dailyRewardXpBoos
     UI.StoreSummary.ListBase.List.dailyReward.InstantRewardAccessValue:setText(instantRewards)
 
     if hasCharmExpansion then
-        UI.StoreSummary.ListBase.List.CharmPanel.CharmExpansionValue:setText("Yes")
+        UI.StoreSummary.ListBase.List.CharmPanel.CharmExpansionValue:setText(tr("Yes"))
     else
-        UI.StoreSummary.ListBase.List.CharmPanel.CharmExpansionValue:setText("No")
+        UI.StoreSummary.ListBase.List.CharmPanel.CharmExpansionValue:setText(tr("No"))
     end
 
     UI.StoreSummary.ListBase.List.hirelings.PurchasedHirelingsValue:setText(hirelingsObtained)

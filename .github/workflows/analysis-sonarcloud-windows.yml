@@ -24,6 +24,8 @@ jobs:
   sonarcloud-windows:
     name: SonarCloud (Windows)
     runs-on: windows-2022
+    env:
+      SONAR_TOKEN: ${{ secrets.SONARCLOUDTOKEN }}
     defaults:
       run:
         working-directory: Tibia/silnik/canary_test/testyy
@@ -103,11 +105,11 @@ jobs:
                 -S . -B build
 
       - name: Run PR sonar-scanner
-        if: ${{ (github.event_name == 'pull_request' || github.event_name == 'pull_request_target') && secrets.SONARCLOUDTOKEN != '' }}
+        if: ${{ (github.event_name == 'pull_request' || github.event_name == 'pull_request_target') && env.SONAR_TOKEN != '' }}
         uses: SonarSource/sonarqube-scan-action@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONARCLOUDTOKEN }}
+          SONAR_TOKEN: ${{ env.SONAR_TOKEN }}
         with:
           projectBaseDir: Tibia/silnik/canary_test/testyy
           args: >
@@ -120,11 +122,11 @@ jobs:
             -Dsonar.pullrequest.base=${{ github.event.pull_request.base.ref }}
 
       - name: Run sonar-scanner
-        if: ${{ github.event_name == 'push' && secrets.SONARCLOUDTOKEN != '' }}
+        if: ${{ github.event_name == 'push' && env.SONAR_TOKEN != '' }}
         uses: SonarSource/sonarqube-scan-action@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONARCLOUDTOKEN }}
+          SONAR_TOKEN: ${{ env.SONAR_TOKEN }}
         with:
           projectBaseDir: Tibia/silnik/canary_test/testyy
           args: >

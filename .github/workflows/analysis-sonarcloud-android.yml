@@ -20,6 +20,8 @@ jobs:
   sonarcloud-android:
     name: SonarCloud (Android)
     runs-on: ubuntu-22.04
+    env:
+      SONAR_TOKEN: ${{ secrets.SONARCLOUDTOKEN }}
     defaults:
       run:
         working-directory: Tibia/silnik/canary_test/testyy
@@ -96,11 +98,11 @@ jobs:
                 -S . -B build-android
 
       - name: Run PR sonar-scanner
-        if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && secrets.SONARCLOUDTOKEN != '' }}
+        if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && env.SONAR_TOKEN != '' }}
         uses: SonarSource/sonarqube-scan-action@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONARCLOUDTOKEN }}
+          SONAR_TOKEN: ${{ env.SONAR_TOKEN }}
         with:
           projectBaseDir: Tibia/silnik/canary_test/testyy
           args: >
@@ -113,11 +115,11 @@ jobs:
             -Dsonar.pullrequest.base=${{ github.event.pull_request.base.ref }}
 
       - name: Run sonar-scanner
-        if: ${{ github.event_name == 'push' && secrets.SONARCLOUDTOKEN != '' }}
+        if: ${{ github.event_name == 'push' && env.SONAR_TOKEN != '' }}
         uses: SonarSource/sonarqube-scan-action@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONARCLOUDTOKEN }}
+          SONAR_TOKEN: ${{ env.SONAR_TOKEN }}
         with:
           projectBaseDir: Tibia/silnik/canary_test/testyy
           args: >

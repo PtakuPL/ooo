@@ -587,7 +587,7 @@ MainWindow
         pixels-scroll: true
       MiniPanel
         id: worldInfo
-        text: World Name
+        !text: tr('World Name')
         background-color: #404040
         anchors.top: panelSelectworldAndPvp.bottom
         anchors.left: textListAllWorlds.right

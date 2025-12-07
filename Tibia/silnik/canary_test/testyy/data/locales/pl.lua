@@ -1376,7 +1376,32 @@ local add = {
   ["Preset Name"] = "Nazwa predefiniowana",
   
   -- Store
-  ["Recently Added"] = "Ostatnio dodane"
+  ["Recently Added"] = "Ostatnio dodane",
+  
+  -- Create Account
+  ["World Name"] = "Nazwa świata",
+  
+  -- Action Bar menu
+  ["Assign Spell"] = "Przypisz zaklęcie",
+  ["Assign Object"] = "Przypisz obiekt",
+  ["Assign Text"] = "Przypisz tekst",
+  ["Edit Hotkey"] = "Edytuj skrót",
+  ["Clear Slot"] = "Wyczyść slot",
+  
+  -- Bestiary menu
+  ["Stop Tracking"] = "Przestań śledzić",
+  ["Add to Loot List"] = "Dodaj do listy łupów",
+  ["Remove from Loot List"] = "Usuń z listy łupów",
+  
+  -- Skills ComboBox
+  ["Magic Level"] = "Poziom magii",
+  ["Fist Fighting"] = "Walka wręcz",
+  ["Club Fighting"] = "Walka maczugą",
+  ["Sword Fighting"] = "Walka mieczem",
+  ["Axe Fighting"] = "Walka toporem",
+  ["Distance Fighting"] = "Walka dystansowa",
+  ["Shielding"] = "Obrona tarczą",
+  ["Fishing"] = "Wędkarstwo"
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

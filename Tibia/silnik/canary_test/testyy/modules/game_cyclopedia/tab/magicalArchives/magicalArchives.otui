@@ -28,7 +28,7 @@ UIWidget
 
   MiniPanel
     id: spellAndRune
-    text: Spell / Rune Information
+    !text: tr('Spell / Rune Information')
     anchors.top: InformationBase.top
     anchors.left: InformationBase.right
     anchors.right: parent.right
@@ -38,7 +38,7 @@ UIWidget
 
     Label
       anchors.centerIn: parent
-      text: select a spell to view detailed information. 
+      !text: tr('select a spell to view detailed information.') 
     Label
       id: deleteme
       anchors.centerIn: parent

@@ -1113,7 +1113,107 @@ local add = {
   ["Floor View Mode:"] = "Tryb widoku piętra:",
   ["Draw Floating Effects"] = "Rysuj unoszące się efekty",
   ["Crosshair:"] = "Celownik:",
-  ["Colourise Loot Value: "] = "Koloruj wartość łupu: "
+  ["Colourise Loot Value: "] = "Koloruj wartość łupu: ",
+  
+  -- Cyclopedia character tab
+  ["XP Boosts"] = "Boosty XP",
+  ["Remaining Store XP Boost Time:"] = "Pozostały czas Store XP Boost:",
+  ["Remaining Daily Reward XP Boost Time:"] = "Pozostały czas Daily Reward XP Boost:",
+  ["Blessings"] = "Błogosławieństwa",
+  ["Available Blessings:"] = "Dostępne błogosławieństwa:",
+  ["Prey"] = "Polowanie",
+  ["Permanent Prey Slots:"] = "Stałe sloty polowań:",
+  ["Prey Wildcards:"] = "Jokery polowań:",
+  ["Daily Reward"] = "Codzienna nagroda",
+  ["Instant Reward Access:"] = "Natychmiastowy dostęp do nagrody:",
+  ["Charm"] = "Urok",
+  ["Charm Expansion:"] = "Rozszerzenie uroków:",
+  ["Hirelings"] = "Najemnicy",
+  ["Purchased Hirelings:"] = "Zakupieni najemnicy:",
+  ["Hireling Jobs:"] = "Prace najemników:",
+  ["Hireling Outfits:"] = "Stroje najemników:",
+  ["Purchased House Items"] = "Zakupione przedmioty do domu",
+  
+  -- Cyclopedia filters
+  ["All"] = "Wszystko",
+  ["Locked"] = "Zablokowane",
+  ["Accomplished"] = "Osiągnięte",
+  ["Inventory"] = "Ekwipunek",
+  ["Depot"] = "Depot",
+  ["Supply Stash"] = "Schowek na zapasy",
+  ["Inbox"] = "Skrzynka odbiorcza",
+  ["Store Inbox"] = "Skrzynka ze sklepu",
+  ["show as list"] = "pokaż jako listę",
+  ["show as grid"] = "pokaż jako siatkę",
+  ["Outfits"] = "Stroje",
+  ["Mounts"] = "Wierzchowce",
+  ["Familiars"] = "Towarzysze",
+  
+  -- Charms
+  ["UnLock"] = "Odblokuj",
+  ["Clear Charm"] = "Wyczyść urok",
+  ["Select Creature"] = "Wybierz stworzenie",
+  ["Reset all charms"] = "Resetuj wszystkie uroki",
+  ["Addon 1"] = "Dodatek 1",
+  
+  -- Magical archives
+  ["Spell / Rune Information"] = "Informacje o zaklęciu / runie",
+  ["select a spell to view detailed information."] = "wybierz zaklęcie, aby zobaczyć szczegółowe informacje.",
+  
+  -- Shop history
+  ["Get"] = "Zdobądź",
+  ["Date"] = "Data",
+  ["Balance"] = "Saldo",
+  ["Description"] = "Opis",
+  ["Prev Page"] = "Poprzednia strona",
+  ["Next Page"] = "Następna strona",
+  
+  -- Gift coins
+  ["Gift Tibia Coins"] = "Podaruj Tibia Coins",
+  ["Please select the amount of Tibia Coins you like to gift and enter the name of the character that should receive the Tibia Coins."] = "Proszę wybrać ilość Tibia Coins do podarowania i wprowadzić nazwę postaci, która ma je otrzymać.",
+  ["Recipient:"] = "Odbiorca:",
+  ["Transferable Tibia Coins:"] = "Przekazywalne Tibia Coins:",
+  ["Amount to gift: 0"] = "Ilość do podarowania: 0",
+  ["Transferable Task Points:"] = "Przekazywalne punkty zadań:",
+  
+  -- Prey window
+  ["Automatic Bonus Rer..."] = "Automatyczny bonus...",
+  ["Lock Prey"] = "Zablokuj polowanie",
+  ["Go to the Store to get more Prey Wildcards!"] = "Przejdź do sklepu, aby zdobyć więcej jokerów polowań!",
+  ["Preys"] = "Polowania",
+  ["Prey Creatures"] = "Stworzenia do polowania",
+  
+  -- Tasks window
+  ["Filter"] = "Filtruj",
+  ["Finish"] = "Zakończ",
+  ["Start"] = "Rozpocznij",
+  
+  -- Actionbar assign dialogs
+  ["Assign Object"] = "Przypisz obiekt",
+  ["Use on yourself"] = "Użyj na sobie",
+  ["Use on target"] = "Użyj na celu",
+  ["Use with crosshair"] = "Użyj z celownikiem",
+  ["Select Object"] = "Wybierz obiekt",
+  ["Assign Text"] = "Przypisz tekst",
+  ["Send automatically"] = "Wyślij automatycznie",
+  ["Assign Spell"] = "Przypisz zaklęcie",
+  
+  -- Quickloot
+  ["Skipped Loot"] = "Pominięte łupy",
+  ["Accepted Loot"] = "Zaakceptowane łupy",
+  
+  -- Reward wall
+  ["Pick reward"] = "Wybierz nagrodę",
+  ["you have selected 0 of 2 reward items."] = "wybrałeś 0 z 2 nagród.",
+  ["Free capacity: 737.60 oz"] = "Wolna pojemność: 737.60 oz",
+  ["Total weight: 0.00 oz"] = "Całkowita waga: 0.00 oz",
+  
+  -- Hotkey preset
+  ["Add hotkey preset"] = "Dodaj preset skrótów",
+  ["Enter a name for the new preset:"] = "Wprowadź nazwę nowego presetu:",
+  
+  -- Rule violation
+  ["Rule Violation"] = "Naruszenie regulaminu"
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

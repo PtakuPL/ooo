@@ -95,7 +95,7 @@ MainWindow
     anchors.right: parent.right
     margin-left: 5
     height: 50
-    text: Filter
+    !text: tr('Filter')
 
     TextEdit
       id: search
@@ -149,7 +149,7 @@ MainWindow
     id: toggleButton
     anchors.bottom: parent.bottom
     anchors.right: parent.right
-    text: Close
+    !text: tr('Close')
     width: 65
     @onClick: modules.game_tasks.toggleWindow()
 
@@ -157,7 +157,7 @@ MainWindow
     id: finishButton
     anchors.bottom: parent.bottom
     anchors.right: toggleButton.left
-    text: Finish
+    !text: tr('Finish')
     width: 55
     margin-right: 5
     @onClick: modules.game_tasks.finish()
@@ -166,7 +166,7 @@ MainWindow
     id: startButton
     anchors.bottom: parent.bottom
     anchors.right: toggleButton.left
-    text: Start
+    !text: tr('Start')
     width: 55
     margin-right: 5
     @onClick: modules.game_tasks.start()

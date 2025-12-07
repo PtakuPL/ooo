@@ -1,5 +1,5 @@
 MainWindow
-  text: Assign Text
+  !text: tr('Assign Text')
   size: 250 165
   @onEscape: modules.game_actionbar.closeTextAssignWindow()
   @onEnter: modules.game_actionbar.textAssignAccept()
@@ -27,7 +27,7 @@ MainWindow
       margin-top: 2
       margin-left: 2
       id: sendAutomaticallyCheckBox
-      text: Send automatically
+      !text: tr('Send automatically')
       anchors.fill: parent
       text-auto-resize: true
       @onSetup: self:setChecked(true)

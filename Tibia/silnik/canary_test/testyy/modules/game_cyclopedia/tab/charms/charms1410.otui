@@ -60,7 +60,7 @@ UIWidget
         anchors.top: parent.top
         anchors.left: parent.left
         anchors.right: parent.right
-        text: UnLock
+        !text: tr('UnLock')
         @onClick: modules.game_cyclopedia.Cyclopedia.actionCharmButton(self)
       UIWidget
         id: PriceBaseCharm
@@ -89,9 +89,9 @@ UIWidget
         anchors.top: prev.bottom
         anchors.left: parent.left
         anchors.right: parent.right
-        text: Addon 1
+        !text: tr('Addon 1')
         margin-top:3
-        text: Clear Charm
+        !text: tr('Clear Charm')
 
 
       UIWidget
@@ -169,7 +169,7 @@ UIWidget
       QtButton 
         id: CreaturesLabel
         height: 20
-        text: Select Creature
+        !text: tr('Select Creature')
         anchors.top: parent.top
         anchors.left: parent.left
         anchors.right: parent.right
@@ -197,7 +197,7 @@ UIWidget
     margin-left: 5
 
     QtButton
-      text: Reset all charms
+      !text: tr('Reset all charms')
       anchors.left: parent.left
       anchors.right: parent.right
       anchors.verticalCenter: parent.verticalCenter

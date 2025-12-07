@@ -12,7 +12,7 @@ MainWindow
     anchors.right: parent.right
     anchors.top: parent.top
     margin-top: 10
-    text: you have selected 0 of 2 reward items.
+    !text: tr('you have selected 0 of 2 reward items.')
 
   TextList
     id: rewardList
@@ -39,14 +39,14 @@ MainWindow
     anchors.left: parent.left
     anchors.top: rewardList.bottom
     margin-top: 10
-    text: Free capacity: 737.60 oz
+    !text: tr('Free capacity: 737.60 oz')
 
   Label
     id: weight
     anchors.right: parent.right
     anchors.top: rewardList.bottom
     margin-top: 10
-    text: Total weight: 0.00 oz
+    !text: tr('Total weight: 0.00 oz')
 
   HorizontalSeparator
     id: separator

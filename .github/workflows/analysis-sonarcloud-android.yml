@@ -73,6 +73,7 @@ jobs:
         env:
           ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
         run: |
+          rm -rf build-android
           mkdir -p build-android
           cmake -G "Ninja" \
                 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \

@@ -577,7 +577,7 @@ function rewardWallController:onhoverBonus(event)
     local bonus = bonuses[index]
 
     if not bonus then
-        rewardWallController.ui.infoPanel:setText("Unknown bonus.")
+        rewardWallController.ui.infoPanel:setText(tr("Unknown bonus."))
         return
     end
 

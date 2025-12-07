@@ -1310,7 +1310,32 @@ local add = {
   -- Tooltips
   ["Enable/Disable movement animation"] = "Włącz/Wyłącz animację ruchu",
   ["Prey Wildcards"] = "Jokery polowań",
-  ["Gold Coins"] = "Złote monety"
+  ["Gold Coins"] = "Złote monety",
+  
+  -- Cyclopedia Items
+  ["Loot when Quick Looting"] = "Zbieraj przy szybkim zbieraniu",
+  ["Skip when Quick Looting"] = "Pomiń przy szybkim zbieraniu",
+  
+  -- Boss Slots
+  ["Unlocks at 1500 Boss Points"] = "Odblokuje się przy 1500 punktów bossów",
+  
+  -- House
+  ["Your Limit:"] = "Twój limit:",
+  ["There is not bid so far."] = "Nie ma jeszcze oferty.",
+  ["Cancel Transfer"] = "Anuluj transfer",
+  ["Reject Transfer"] = "Odrzuć transfer",
+  ["Accept Transfer"] = "Akceptuj transfer",
+  
+  -- Charms
+  ["Fully Unlocked"] = "W pełni odblokowane",
+  
+  -- Tasks
+  ["Task Points:"] = "Punkty zadań:",
+  ["Kills:"] = "Zabójstwa:",
+  ["Reward:"] = "Nagroda:",
+  
+  -- Reward Wall
+  ["Unknown bonus."] = "Nieznany bonus."
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

@@ -602,7 +602,7 @@ local function setupModernVersionUpgrade(widget, UI_BASE)
         end
         UI_BASE.UnlockButton:getParent().data = widget.data
     else
-        UI_BASE.UnlockButton:setText("Fully Unlocked")
+        UI_BASE.UnlockButton:setText(tr("Fully Unlocked"))
         UI.InformationBase.verticalPanelUnLockClearChram.PriceBaseCharm.Value:setText(comma_value(0))
     end
 end

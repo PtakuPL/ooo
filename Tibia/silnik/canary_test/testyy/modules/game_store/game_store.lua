@@ -485,6 +485,13 @@ function onParseStoreGetPurchaseStatus(purchaseStatus)
     end
 end
 
+-- Populate the product panel and related UI state from server-provided storeProducts.
+-- Populates the product list UI, fills the filter combo box, caches disable reasons, schedules focus/redirect to a specific offer if requested, and enables category buttons.
+-- @param storeProducts Table with store data. Expected fields:
+--   - offers: array of product tables (each may contain `subOffers`, `name`, `type`, etc.).
+--   - menuFilter: array of filter option labels (optional).
+--   - disableReasons: table mapping disable reason ids to descriptions.
+--   - redirectId: numeric offer id to focus after populating (optional).
 function onParseStoreCreateProducts(storeProducts)
     local comboBox = controllerShop.ui.panelItem.comboBoxContainer.showAll
     comboBox:clearOptions()
@@ -603,6 +610,15 @@ function onParseStoreCreateHome(offer)
     fixServerNoSend0xF2()
 end
 
+-- Populate the transfer history UI with the provided page of history records and show the transfer history panel.
+-- @param currentPage The zero-based index of the current history page.
+-- @param pageCount The total number of pages available.
+-- @param historyData An array of history records; each record is an array where:
+--   [1] = Unix timestamp,
+--   [3] = numeric balance (negative for debits),
+--   [4] = coin type identifier (use GameStore.CoinType to interpret),
+--   [5] = description text.
+--   (Other indices may be present but are ignored by this function.)
 function onParseStoreGetHistory(currentPage, pageCount, historyData)
     local transferHistory = controllerShop.ui.transferHistory.historyPanel
     transferHistory:destroyChildren()
@@ -865,7 +881,10 @@ end
 
 -- /*=============================================
 -- =            focusedChild                     =
--- =============================================*/
+-- Updates the product details panel for the given focused store item and wires up offer actions.
+-- Populates name, description, image, and the list of offers; updates button states and icons based on current balances and offer availability.
+-- Handles buy actions by showing confirmation dialogs, opening special flows for configurable/name-change products, and initiating purchases which display a processing dialog or error messages as appropriate.
+-- @param focusedChild The UI widget for the focused product row; expected to contain a `product` table with fields used by the store UI.
 
 function chooseOffert(self, focusedChild)
     if not focusedChild then
@@ -1126,4 +1145,3 @@ function search()
     end
     g_game.sendRequestStoreSearch(controllerShop.ui.SearchEdit:getText(), 0, 1)
 end
-

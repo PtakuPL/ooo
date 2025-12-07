@@ -78,6 +78,10 @@ function prepareWithdraw(itemId, itemAmount)
     cancelButton.onClick = cancelFunc
 end
 
+-- Renders the current stash items into the UI, creating interactive item boxes and showing the stash window if hidden.
+-- Populates itemsPanel with a radio group of item widgets based on the global `stashItems`, applying the text from `searchEdit` as a case-insensitive filter.
+-- For each matching entry creates an item widget with the stored count, sets a tooltip (localized "Loading..." while the name is unavailable), and binds a left-click to call `prepareWithdraw(itemId, amount)`.
+-- Also shows and locks `stashWindow` if it was hidden.
 function renderItems()
     if not g_game.isOnline() then
         return

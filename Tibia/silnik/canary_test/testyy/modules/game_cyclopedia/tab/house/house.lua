@@ -1082,6 +1082,8 @@ function Cyclopedia.houseFilter(widget)
     end
 end
 
+-- Refreshes the house auction UI to reflect the current Cyclopedia.House.Data.
+-- Populates the AuctionList with entries for each visible house, updates map/view controls and icons, and selects a default or previously selected house; when no house data exists, shows the no-house state and clears related UI elements.
 function Cyclopedia.reloadHouseList()
     if not table.empty(Cyclopedia.House.Data) then
         UI.LateralBase.MapViewbase.noHouse:setVisible(false)
@@ -1249,6 +1251,10 @@ function Cyclopedia.selectTown(widget, text, type)
     end
 end
 
+-- Selects a house entry and updates the right-hand panel to reflect that house's details, status, and available actions.
+-- 
+-- Updates icons (ownership, transfer, shop, description), auction or rental details, action buttons (Bid, Transfer, Move Out, Cancel/Accept/Reject Transfer) and the map image area to match the selected house. Marks the provided widget as selected and stores it as the last selected house.
+-- @param widget The house list widget representing the house to select; if nil the function does nothing.
 function Cyclopedia.selectHouse(widget)
     if not widget then
         return

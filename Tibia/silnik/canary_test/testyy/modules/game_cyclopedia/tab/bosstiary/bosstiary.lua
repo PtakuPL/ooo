@@ -1,4 +1,6 @@
 local UI = nil
+-- Opens and initializes the Bosstiary UI.
+-- Initializes and shows the bosstiary interface, requests bosstiary data from the game, sets tooltips for Bane/Archfoe/Nemesis and star info panels, and hides unrelated Cyclopedia UI elements (Charms, Gold, Bestiary tracker, and CharmsBase1410 when client version >= 1410).
 function showBosstiary()
     UI = g_ui.loadUI("bosstiary", contentContainer)
     UI:show()

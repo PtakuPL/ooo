@@ -372,6 +372,8 @@ function Cyclopedia.loadCharacterItems(data)
     Cyclopedia.characterItemsFilter(UI.CharacterItems.filters.inventory, true)
 end
 
+-- Initializes the achievements UI the first time it is accessed.
+-- Adds sort options to the achievements sort control, applies the default "accomplished" filter, and marks achievements as loaded to avoid repeating initialization.
 function Cyclopedia.loadCharacterAchievements()
     if not Cyclopedia.Character.Achievements.Loaded then
         UI.CharacterAchievements.sort:addOption(tr("Alphabetically"), 1, true)
@@ -1253,6 +1255,17 @@ function getImageClip(elementIndex)
     return imageClip
 end
 
+-- Populate the store summary UI with provided store-related data.
+-- @param xpBoostTime Seconds remaining for the store XP boost; displayed as HH:MM in the UI.
+-- @param dailyRewardXpBoostTime Seconds remaining for the daily reward XP boost; displayed as HH:MM in the UI.
+-- @param blessings Array of blessing entries, each as {name, count}; appended to the blessings list.
+-- @param preySlotsUnlocked Number of permanent prey slots to display.
+-- @param preyWildcards Number of prey wildcards to display.
+-- @param instantRewards Number representing instant reward access to display.
+-- @param hasCharmExpansion Boolean indicating whether the charm expansion is owned; shown as "Yes"/"No".
+-- @param hirelingsObtained Number of purchased hirelings to display.
+-- @param hirelingSkills (unused) Table of hireling skills.
+-- @param houseItems Array of house item entries, each as {itemId, name, price}; used to build the purchased house items list and adjust its visible height.
 function Cyclopedia.onParseCyclopediaStoreSummary(xpBoostTime, dailyRewardXpBoostTime, blessings, preySlotsUnlocked,
     preyWildcards, instantRewards, hasCharmExpansion, hirelingsObtained, hirelingSkills, houseItems)
 

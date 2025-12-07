@@ -283,6 +283,9 @@ function onPreyRerollPrice(price)
     end
 end
 
+-- Updates the UI for a slot's time-until-free-reroll, adjusting progress, time text, and displayed price.
+-- @param slot The prey slot index (0-based) to update.
+-- @param timeUntilFreeReroll Time until a free reroll in minutes; when 0 the price label is set to "Free".
 function setTimeUntilFreeReroll(slot, timeUntilFreeReroll) -- minutes
     local prey = preyWindow['slot' .. (slot + 1)]
     if not prey then
@@ -303,6 +306,11 @@ function setTimeUntilFreeReroll(slot, timeUntilFreeReroll) -- minutes
     end
 end
 
+-- Marks a prey slot as locked in both the tracker and main prey window UI.
+-- @param slot Zero-based index of the prey slot to lock.
+-- @param unlockState (unused) Unlock state information (ignored by this UI update).
+-- @param timeUntilFreeReroll (unused) Time until a free reroll (ignored by this UI update).
+-- @param wildcards (unused) Wildcard data associated with the slot (ignored by this UI update).
 function onPreyLocked(slot, unlockState, timeUntilFreeReroll, wildcards)
     -- tracker
     slot = 'slot' .. (slot + 1)
@@ -322,6 +330,11 @@ function onPreyLocked(slot, unlockState, timeUntilFreeReroll, wildcards)
     prey.locked:show()
 end
 
+-- Marks a prey slot as inactive in both the tracker and main prey window, updating visuals and interaction.
+-- @param slot The zero-based prey slot index to update.
+-- @param timeUntilFreeReroll Number of seconds remaining until a free reroll becomes available; used to update reroll timers and display.
+-- @param wildcards Table or value representing available wildcards for the slot (present for compatibility; not required by this function).
+-- Side effects: sets tooltips and click handlers on tracker elements to open the prey dialog, disables the reroll button in the main window, and assigns the reroll button to request a reroll action via g_game.preyAction when clicked.
 function onPreyInactive(slot, timeUntilFreeReroll, wildcards)
     -- tracker
     local tracker = preyTracker.contentsPanel['slot' .. (slot + 1)]
@@ -502,6 +515,13 @@ function onPreyActive(slot, currentHolderName, currentHolderOutfit, bonusType, b
     end
 end
 
+-- Update UI to show monster selection for a prey slot and configure selection and reroll actions.
+-- Updates the tracker and main prey window for the given slot, sets the time-until-free-reroll display, populates the list of candidate monsters, and wires the reroll and choose buttons to send the appropriate prey actions or show an error when no monster is chosen.
+-- @param slot The prey slot index (0-based).
+-- @param names Array of monster names to present for selection.
+-- @param outfits Array of outfit descriptors corresponding to `names`.
+-- @param timeUntilFreeReroll Seconds remaining until the next free reroll for this slot.
+-- @param wildcards Wildcard count/metadata for the slot (unused by the visible UI but provided by the caller).
 function onPreySelection(slot, names, outfits, timeUntilFreeReroll, wildcards)
     -- tracker
     local tracker = preyTracker.contentsPanel['slot' .. (slot + 1)]
@@ -550,6 +570,17 @@ function onPreySelection(slot, names, outfits, timeUntilFreeReroll, wildcards)
     end
 end
 
+-- Update the tracker and main prey UI to reflect a changed monster selection for the given slot.
+-- Sets the slot to an inactive selection state, updates the time-until-free-reroll display, populates the selectable creature list,
+-- and wires interactions to send the appropriate prey actions or open the prey dialog.
+-- @param slot number The 0-based prey slot index.
+-- @param names table List (array) of candidate monster names for selection.
+-- @param outfits table List (array) of corresponding outfit descriptors for each candidate in `names`.
+-- @param bonusType number Bonus type for the current selection (provided for context; not directly displayed here).
+-- @param bonusValue number Bonus value for the current selection (provided for context).
+-- @param bonusGrade number Bonus grade for the current selection (provided for context).
+-- @param timeUntilFreeReroll number Seconds until the next free reroll for this slot; used to update the free-reroll UI.
+-- @param wildcards number Number of wildcards available for this slot (contextual; not directly displayed here).
 function onPreySelectionChangeMonster(slot, names, outfits, bonusType, bonusValue, bonusGrade, timeUntilFreeReroll,
                                       wildcards)
     -- tracker

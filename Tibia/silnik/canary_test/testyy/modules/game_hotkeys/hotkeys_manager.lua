@@ -62,7 +62,7 @@ local nextSourceId = 1
 lastHotkeyTime = g_clock.millis()
 local hotkeysWindowButton = nil
 
--- public functions
+-- Initializes the hotkeys manager: creates and configures the hotkeys UI, registers the global toggle keybind and keyboard navigation, binds UI callbacks and game start/end handlers, and loads persisted hotkey data.
 function init()
 
     Keybind.new("Windows", "Show/hide Hotkeys", "Ctrl+K", "")

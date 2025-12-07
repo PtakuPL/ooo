@@ -85,6 +85,13 @@ local function attachOrDetachEffect(Id, attach)
     end
 end
 
+-- Populate and display the selection list UI for attached items (includes a "None" entry) and bind the selection handler.
+-- This builds each list item from `data`, focuses the entry matching `tempValue`, shows the list controls, and sets `window.selectionList.onChildFocusChange` to `onSelectCallback`.
+-- @param data Array of item entries where each entry's first element is the item id (e.g., { {id, ...}, ... }). May be nil or empty.
+-- @param tempValue Numeric id that should be focused initially (use 0 to focus "None").
+-- @param tempField Identifier for the temp field this list represents. This function does not read or modify that field.
+-- @param onSelectCallback Function invoked when the focused child changes; assigned to `window.selectionList.onChildFocusChange`.
+-- (No return value.)
 local function showSelectionList(data, tempValue, tempField, onSelectCallback)
     window.presetsList:hide()
     window.presetsScroll:hide()
@@ -584,6 +591,13 @@ function configureAddons(addons)
     window.configure.addon2.check.onCheckChange = onAddonChange
 end
 
+-- Creates a new preset from the current temporary outfit and adds it to the saved presets.
+-- The function clones `tempOutfit`, creates a UI preset entry, stores the preset in `settings.presets`
+-- with default auxiliary fields (aura, effects, wings, shader, mounted, familiar), focuses the new
+-- preset in the presets list, scrolls it into view, and resets last-selection trackers.
+-- This function mutates `settings.presets`, the presets UI (`window.presetsList`), and the
+-- module-level last selection variables (`lastSelectAura`, `lastSelectWings`, `lastSelectEffects`,
+-- `lastSelectShader`, `lastSelectTitle`).
 function newPreset()
     if not settings.presets then
         settings.presets = {}
@@ -897,6 +911,9 @@ function showOutfits()
     window.listSearch:show()
 end
 
+-- Populate the selection list with available mounts and configure the mount-selection UI.
+-- 
+-- Builds list items (including a "None" entry) from ServerData.mounts, sets each item's id, display name, and preview outfit state, and marks any item matching `tempOutfit.mount` as focused. Updates the mount configuration checkbox enabled/checked state based on the focused item and the player's current mount status, assigns `onMountSelect` as the selection-change handler, and makes the selection list, its scroll, and the search box visible.
 function showMounts()
     window.presetsList:hide()
     window.presetsScroll:hide()
@@ -964,6 +981,8 @@ function showMounts()
     window.listSearch:show()
 end
 
+-- Populates the familiar selection view from ServerData.familiars and prepares the UI for user selection.
+-- Clears preset-related widgets, adds a "None" entry and one entry per available familiar, focuses the currently selected familiar if present, assigns the selection change handler to onFamiliarSelect, and ensures the selection list, its scroll, and the search box are visible.
 function showFamiliars()
     window.presetsList:hide()
     window.presetsScroll:hide()
@@ -1011,6 +1030,11 @@ function showFamiliars()
     window.listSearch:show()
 end
 
+-- Populate and display the shader selection view in the appearance UI.
+-- 
+-- Builds the selection list with a default "Outfit - Default" entry followed by entries from ServerData.shaders,
+-- sets each entry's preview using the current tempOutfit type/addons and the shader id, focuses the previously
+-- selected shader if present, assigns the selection list handler to `onShaderSelect`, and shows the list, scroll and search controls.
 function showShaders()
     window.presetsList:hide()
     window.presetsScroll:hide()
@@ -1070,6 +1094,9 @@ function showShaders()
     window.listSearch:show()
 end
 
+-- Populate the health bar selection view and bind the selection handler.
+-- 
+-- Clears preset UI, builds a "None" entry plus entries for each available health bar, configures each entry's preview visuals, focuses the currently selected health bar if any, and sets the list's child-focus change handler to apply selections.
 function showHealthBars()
     window.presetsList:hide()
     window.presetsScroll:hide()
@@ -1127,6 +1154,8 @@ function showHealthBars()
     window.listSearch:show()
 end
 
+-- Populate the title selection view, display available titles (including "None"), and configure the selection list and preview.
+-- Sets the focused entry to the title currently in tempOutfit.tile if present, wires the list's focus-change handler to onTitleSelect, and makes the selection UI visible.
 function showTitle()
     window.presetsList:hide()
     window.presetsScroll:hide()

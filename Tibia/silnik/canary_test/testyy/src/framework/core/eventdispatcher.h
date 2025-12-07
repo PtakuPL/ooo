@@ -73,7 +73,60 @@ private:
     friend class EventDispatcher;
 };
 
-// @bindsingleton g_dispatcher
+/**
+ * Initialize the event dispatcher and prepare internal thread/task structures.
+ */
+ 
+/**
+ * Shut down the dispatcher and stop processing new or pending events.
+ */
+ 
+/**
+ * Poll and process pending immediate, deferred, and scheduled events.
+ */
+ 
+/**
+ * Schedule an immediate event to be executed as soon as the dispatcher processes events.
+ * @param callback Function to be executed for the event.
+ * @returns EventPtr Handle to the scheduled event.
+ */
+ 
+/**
+ * Schedule a deferred event that will be executed during the dispatcher's deferred-event processing phase.
+ * @param callback Function to be executed for the deferred event.
+ */
+ 
+/**
+ * Schedule a one-shot event to be executed after the specified delay.
+ * @param callback Function to be executed when the scheduled time is reached.
+ * @param delay Delay in milliseconds before the event is executed.
+ * @returns ScheduledEventPtr Handle to the scheduled event.
+ */
+ 
+/**
+ * Schedule a repeating event to be executed with the specified interval between executions.
+ * @param callback Function to be executed each cycle.
+ * @param delay Interval in milliseconds between event executions.
+ * @returns ScheduledEventPtr Handle to the repeating scheduled event.
+ */
+ 
+/**
+ * Access the current thread's dispatcher context.
+ * @returns const DispatcherContext& Reference to the thread-local dispatcher context.
+ */
+ 
+/**
+ * Return the thread-local task structure for the current thread.
+ * @returns const std::unique_ptr<EventDispatcher::ThreadTask>& Reference to the current thread's ThreadTask.
+ */
+ 
+/**
+ * Execute `inserter` while holding the current thread's ThreadTask lock and return its result if any.
+ * @tparam Result The return type produced by `inserter` (defaults to void).
+ * @tparam Inserter Callable type that accepts a `const std::unique_ptr<ThreadTask>&`.
+ * @param inserter Callable invoked with the current thread task under lock.
+ * @returns Result The value returned by `inserter` when `Result` is not void.
+ */
 class EventDispatcher
 {
 public:
@@ -95,6 +148,12 @@ public:
 private:
     thread_local static DispatcherContext dispacherContext;
 
+    /**
+     * Per-thread state for pending task processing used by the event dispatcher.
+     *
+     * Represents the lifecycle stage of thread-local task aggregation so the dispatcher
+     * can coordinate adding and merging of events between threads.
+     */
     enum class ThreadTaskEventState
     {
         ADDING,

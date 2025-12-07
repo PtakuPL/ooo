@@ -137,6 +137,19 @@ void BitmapFont::drawText(const std::string_view text, const Point& startPos, co
     drawText(text, screenCoords, color, Fw::AlignTopLeft);
 }
 
+/**
+ * @brief Renders the given text inside the specified screen rectangle using the font's current backend.
+ *
+ * Renders text into the engine's draw pool clipped to and aligned within screenCoords. If the font is a TTF font
+ * this function performs shaping and measures the text, computes the baseline according to the requested alignment,
+ * and delegates rendering to the TTF renderer (using the provided color). For bitmap fonts it computes per-glyph
+ * positions and emits textured quads using the font texture.
+ *
+ * @param text The UTF-8 text to render.
+ * @param screenCoords Destination rectangle on screen where the text should be placed and aligned.
+ * @param color Color to use for rendering the text.
+ * @param align Alignment flags that control horizontal and vertical alignment inside screenCoords.
+ */
 void BitmapFont::drawText(const std::string_view text, const Rect& screenCoords, const Color& color, const Fw::AlignmentFlag align)
 {if (m_isTTF && m_ttf) {
     const auto text32 = otc::text::utf8ToU32(text);
@@ -628,6 +641,11 @@ void BitmapFont::updateColors(std::vector<std::pair<int, Color>>* colors, const 
     }
 }
 
+/**
+ * @brief Retrieves the texture atlas region used by this font, if any.
+ *
+ * @return const AtlasRegion* Pointer to the atlas region associated with the font's texture, or `nullptr` if the font has no texture or the texture has no atlas region.
+ */
 const AtlasRegion* BitmapFont::getAtlasRegion() const {
     return m_texture ? m_texture->getAtlasRegion() : nullptr;
 }

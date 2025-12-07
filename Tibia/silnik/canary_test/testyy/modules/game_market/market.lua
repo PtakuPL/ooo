@@ -172,6 +172,8 @@ local function clearFee()
     fee = 20
 end
 
+-- Refreshes the offer type selector options for creating an offer.
+-- Always adds the "Buy" option and adds the "Sell" option only when an item is selected and the player's depot contains at least one of that item's tradeAs id.
 local function refreshTypeList()
     offerTypeList:clearOptions()
     offerTypeList:addOption(tr('Buy'))
@@ -576,6 +578,10 @@ local function updateSelectedItem(widget)
     end
 end
 
+-- Updates the stored market balance and refreshes the balance label in the UI.
+-- Ensures the provided value is a valid number and clamps it to zero if negative.
+-- @param balance The new balance value (numeric or string convertible to a number). If it cannot be converted, the function does nothing.
+-- Side effects: sets `information.balance`, updates `balanceLabel` text to "Balance: <value> gold", and resizes `balanceLabel`.
 local function updateBalance(balance)
     local balance = tonumber(balance)
     if not balance then
@@ -591,6 +597,10 @@ local function updateBalance(balance)
     balanceLabel:resizeToText()
 end
 
+-- Update the current market fee based on a per-piece price and quantity, clamp it between 20 and 1000, and refresh the fee label.
+-- @param price The per-piece price used to calculate the fee.
+-- @param amount The quantity used to calculate the fee.
+-- Side effects: sets the module-level `fee` value and updates `feeLabel` text and size.
 local function updateFee(price, amount)
     fee = math.ceil(price / 100 * amount)
     if fee < 20 then
@@ -1160,6 +1170,8 @@ function Market.displayMessage(message)
     infoBox:lock()
 end
 
+-- Clears the currently selected market item and resets all UI state and data associated with item selection and offer creation.
+-- This deselects the item, clears offer lists and statistics tables, resets the create-offer controls (including fee), and disables offer-related UI elements.
 function Market.clearSelectedItem()
     if Market.isItemSelected() then
         Market.resetCreateOffer(true)
@@ -1255,6 +1267,9 @@ function Market.resetCreateOffer(resetFee)
     end
 end
 
+-- Rebuilds the items panel with currentItems and optionally pre-selects a specific tradeAs item.
+-- This clears the current selection, recreates the radio group and item boxes, shows depot counts as item captions and tooltips, and refreshes the panel layout.
+-- @param selectItem Optional market item `tradeAs` id to pre-select; pass `0` or omit to not pre-select.
 function Market.refreshItemsWidget(selectItem)
     local selectItem = selectItem or 0
     itemsPanel = browsePanel:recursiveGetChildById('itemsPanel')

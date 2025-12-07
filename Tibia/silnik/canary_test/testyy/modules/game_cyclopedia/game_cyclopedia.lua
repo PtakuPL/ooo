@@ -38,6 +38,8 @@ controllerCyclopedia:setUI('game_cyclopedia')
 function controllerCyclopedia:onInit()
 end
 
+-- Initializes the Cyclopedia UI and related trackers when the game starts.
+-- Sets up main-panel toggle buttons, locates and stores UI widget references, builds the window type map with their render functions, imports Cyclopedia styles, registers game event handlers for bestiary/charms/items/character/boss slots, creates and configures the Bestiary and Bosstiary tracker mini-windows and their menus, initializes tracker state and filters, prepares boss-slot data, and binds global keybindings to toggle the trackers. Also updates the charms icon for client versions 1410 and above.
 function controllerCyclopedia:onGameStart()
     if g_game.getClientVersion() >= 1310 then
         CyclopediaButton = modules.game_mainpanel.addToggleButton('CyclopediaButton', tr('Cyclopedia'),

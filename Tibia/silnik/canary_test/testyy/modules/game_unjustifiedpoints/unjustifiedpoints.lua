@@ -122,6 +122,11 @@ function refresh()
     onOpenPvpSituationsChange(g_game.getOpenPvpSituations())
 end
 
+-- Update skull-related UI widgets for the local player.
+-- Updates the current skull icon and tooltip (shows remaining skull time for red/black skulls, otherwise indicates no skull)
+-- and sets the day, week, and month skull widgets to the next skull icon.
+-- @param localPlayer The player instance whose skull state is reported; ignored if not the local player.
+-- @param skull The skull identifier (enum or id) representing the player's current skull state.
 function onSkullChange(localPlayer, skull)
     if not localPlayer:isLocalPlayer() then
         return
@@ -154,6 +159,15 @@ local function getColorByKills(kills)
     return 'green'
 end
 
+-- Update the unjustified points UI: skull time label and the 24h/7d/30d progress bars.
+-- @param unjustifiedPoints Table with current unjustified points data:
+--   - skullTime (number): remaining skull time in days; zero means no skull.
+--   - killsDay (number): current progress value for the last 24 hours.
+--   - killsDayRemaining (number): kills remaining until next skull for the 24-hour window.
+--   - killsWeek (number): current progress value for the last 7 days.
+--   - killsWeekRemaining (number): kills remaining until next skull for the 7-day window.
+--   - killsMonth (number): current progress value for the last 30 days.
+--   - killsMonthRemaining (number): kills remaining until next skull for the 30-day window.
 function onUnjustifiedPointsChange(unjustifiedPoints)
     if unjustifiedPoints.skullTime == 0 then
         skullTimeLabel:setText(tr('No skull'))

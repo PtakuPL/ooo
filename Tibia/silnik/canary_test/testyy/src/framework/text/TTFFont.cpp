@@ -11,6 +11,11 @@
 #include <framework/util/size.h>
 
 TTFFont::TTFFont() {}
+/**
+ * @brief Releases all native font resources owned by this TTFFont.
+ *
+ * @details Destroys the HarfBuzz font handles (primary and fallbacks), frees the FreeType face objects (primary and fallbacks), and shuts down the FreeType library handle owned by this instance.
+ */
 TTFFont::~TTFFont() {
   if (m_hbFont) hb_font_destroy(m_hbFont);
   for (auto* f : m_fallbackHbFonts) if (f) hb_font_destroy(f);
@@ -19,6 +24,18 @@ TTFFont::~TTFFont() {
   if (m_ftLib) FT_Done_FreeType(m_ftLib);
 }
 
+/**
+ * @brief Loads the primary TrueType font and optional fallback fonts, initializes shaping and atlases.
+ *
+ * Initializes the FreeType library, creates the main FT_Face and corresponding HarfBuzz font, sets the pixel size,
+ * attempts to load and register each fallback font (creating both FT_Face and HarfBuzz font when available), and
+ * ensures an initial glyph atlas is allocated.
+ *
+ * @param mainTtf Path to the primary TrueType font file to load.
+ * @param fallbackTtfs Vector of file paths for fallback TrueType fonts to register for missing glyphs.
+ * @param pixelSize Pixel height to set for all loaded font faces.
+ * @return true if the FreeType library, main font, HarfBuzz font(s), and an initial atlas were successfully created; false if initialization or loading the main face failed.
+ */
 bool TTFFont::load(const std::string& mainTtf,
                    const std::vector<std::string>& fallbackTtfs,
                    int pixelSize) {
@@ -51,6 +68,15 @@ bool TTFFont::load(const std::string& mainTtf,
   return true;
 }
 
+/**
+ * @brief Create and append a new texture atlas for glyph rasterization.
+ *
+ * Initializes a 2048×2048 atlas with pen/row metrics reset, allocates a blank RGBA image,
+ * creates a GPU texture for that image (smoothing enabled, no mipmaps or compression),
+ * stores the atlas in the internal list, and returns its index.
+ *
+ * @return int Index of the newly created atlas within the internal atlas list.
+ */
 int TTFFont::ensureAtlas() {
   Atlas a;
   a.width = 2048; a.height = 2048;
@@ -66,6 +92,22 @@ int TTFFont::ensureAtlas() {
   return static_cast<int>(m_atlases.size() - 1);
 }
 
+/**
+ * @brief Retrieve or create a cached AtlasGlyph for a glyph from the main font or fallbacks.
+ *
+ * Checks the in-memory glyph cache for the provided glyph index. If not cached, attempts to
+ * load and render the glyph from the primary FreeType face and rasterizes it into an atlas.
+ * If the primary face cannot produce a glyph and a Unicode `codepoint` is provided, searches
+ * each fallback face for the codepoint, renders the first matching glyph found, and rasterizes
+ * it using a composite cache key that encodes the fallback index and glyph index.
+ *
+ * Glyph index 0 (the `.notdef` glyph) is treated as missing unless the rendered bitmap has
+ * non-zero dimensions.
+ *
+ * @param glyphIndex Glyph index to lookup or rasterize from the main face.
+ * @param codepoint Unicode codepoint used to search fallback faces when the main face cannot render the glyph (0 to skip fallback search).
+ * @return const AtlasGlyph* Pointer to the cached or newly rasterized AtlasGlyph on success, `nullptr` if no glyph could be rendered.
+ */
 const AtlasGlyph* TTFFont::cacheGlyph(uint32_t glyphIndex, char32_t codepoint) {
   // First check cache by glyph index (main font)
   auto it = m_glyphs.find(glyphIndex);
@@ -101,6 +143,20 @@ const AtlasGlyph* TTFFont::cacheGlyph(uint32_t glyphIndex, char32_t codepoint) {
   return nullptr;
 }
 
+/**
+ * @brief Rasterizes a FreeType glyph into the font atlas and caches the result.
+ *
+ * Rasterizes the glyph bitmap from the provided FreeType face and places it into
+ * an atlas texture (creating a new atlas if necessary), uploads the updated
+ * atlas sub-region to the GPU, and records glyph metrics in the glyph cache
+ * under the provided cache key.
+ *
+ * @param face FreeType face that contains the loaded glyph (face->glyph must be set).
+ * @param glyphIndex Index of the glyph within the given FreeType face.
+ * @param cacheKey Unique cache key used to store and lookup the resulting AtlasGlyph.
+ *                 This key must uniquely identify the face/glyph combination.
+ * @return const AtlasGlyph* Pointer to the cached AtlasGlyph corresponding to `cacheKey`.
+ */
 const AtlasGlyph* TTFFont::rasterizeGlyph(FT_Face face, uint32_t glyphIndex, uint32_t cacheKey) {
   // Check if already in cache
   auto it = m_glyphs.find(cacheKey);
@@ -159,6 +215,19 @@ const AtlasGlyph* TTFFont::rasterizeGlyph(FT_Face face, uint32_t glyphIndex, uin
   return &m_glyphs[cacheKey];
 }
 
+/**
+ * @brief Renders shaped Unicode text to the screen using cached glyph atlases.
+ *
+ * Shapes the provided UTF-32 text into glyph quads, groups quads into batches by atlas
+ * texture, and submits textured quad batches to the global draw pool using the given color.
+ * If no HarfBuzz font is loaded or the text is empty, the call is a no-op.
+ *
+ * @param text32 UTF-32 encoded text to render.
+ * @param x Horizontal baseline position in pixels.
+ * @param y Vertical baseline position in pixels.
+ * @param params Shaping parameters (e.g., direction, script, language, tracking) used for layout.
+ * @param color Color applied to the rendered glyphs.
+ */
 void TTFFont::drawText(const std::u32string& text32,
              float x, float y,
              const ShapeParams& params,
@@ -218,6 +287,23 @@ TexturePtr TTFFont::getAtlasTexture(const size_t index) const
   return m_atlases[index].texture;
 }
 
+/**
+ * @brief Shape UTF-32 text into drawable glyph quads and compute its bounding rectangle.
+ *
+ * Shapes the provided UTF-32 string using the font and shaping parameters, fills
+ * outQuads with GlyphQuad entries for each glyph that has atlas geometry, and
+ * computes the pixel-aligned bounding Rect that encloses the drawn glyphs.
+ *
+ * @param text32 UTF-32 encoded text to shape and layout.
+ * @param params Shaping and layout parameters (e.g., direction, script, features).
+ * @param outQuads Vector that will be cleared and then populated with glyph quads
+ *                 (texture, destination rect, source rect) for rendering.
+ * @return Rect Pixel-aligned bounding box of the resulting laid-out text. Returns
+ *         an empty Rect if shaping cannot be performed (for example, no font or
+ *         empty input). If no drawable glyphs are produced, the returned rect
+ *         spans the advance width with a height equal to the font pixel size;
+ *         width and height are clamped to at least 1. 
+ */
 Rect TTFFont::buildQuads(const std::u32string& text32,
              const ShapeParams& params,
              std::vector<GlyphQuad>& outQuads)

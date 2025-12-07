@@ -384,6 +384,11 @@ function onCloseTracker()
     buttonQuestLogTrackerButton:setOn(false)
 end
 
+-- Opens and initializes the quest tracker mini-window if needed, then toggles its visibility.
+-- The created mini-window is wired with:
+--  - a menu button that shows a popup with "Remove All quests" (clears the current player's tracked quests and sends the updated tracker to the server), "Remove completed quests" (placeholder), and two disabled automatic-tracking checkboxes;
+--  - a cyclopedia button that opens the main quest log UI.
+-- The function also arranges the toolbar buttons, enforces a minimum content height, calls the mini-window setup routine, and then toggles the mini-window open/closed.
 local function showQuestTracker()
     if trackerMiniWindow then
         toggleTracker()

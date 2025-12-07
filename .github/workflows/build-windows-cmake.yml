@@ -89,6 +89,8 @@ jobs:
       - name: Run CMake
         uses: lukka/run-cmake@main
         with:
+          cmakeListsTxtPath: ${{ github.workspace }}/Tibia/silnik/canary_test/testyy/CMakeLists.txt
+          buildDirectory: ${{ github.workspace }}/Tibia/silnik/canary_test/testyy/build/${{ matrix.buildtype }}
           configurePresetAdditionalArgs: "['-DTOGGLE_BIN_FOLDER=ON']"
           configurePreset: ${{ matrix.buildtype }}
           buildPreset: ${{ matrix.buildtype }}

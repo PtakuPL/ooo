@@ -152,6 +152,9 @@ namespace stdext
     };
 
     // cast a type to another type, any error throws a cast_exception
+#ifdef _MSC_VER
+#pragma optimize("", off) // workaround MSVC ICE in Release builds
+#endif
     template<typename R, typename T>
     R safe_cast(const T& t)
     {
@@ -175,4 +178,7 @@ namespace stdext
             return def;
         }
     }
+#ifdef _MSC_VER
+#pragma optimize("", on)
+#endif
 }

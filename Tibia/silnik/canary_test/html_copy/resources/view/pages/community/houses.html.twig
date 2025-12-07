@@ -1,0 +1,230 @@
+<div id="houses" class="Box">
+	<div class="Corner-tl" style="background-image:url({{IMAGE_PATH}}/global/content/corner-tl.gif);"></div>
+	<div class="Corner-tr" style="background-image:url({{IMAGE_PATH}}/global/content/corner-tr.gif);"></div>
+	<div class="Border_1" style="background-image:url({{IMAGE_PATH}}/global/content/border-1.gif);"></div>
+	<div class="BorderTitleText" style="background-image:url({{IMAGE_PATH}}/global/content/title-background-green.gif);"></div><img id="ContentBoxHeadline" class="Title" src="{{IMAGE_PATH}}/global/strings/headline-houses.gif" alt="Contentbox headline" data-i18n-attr="alt" data-i18n="image.alt.contentbox_headline|Contentbox headline">
+	<div class="Border_2">
+		<div class="Border_3">
+			<div class="BoxContent" style="background-image:url({{IMAGE_PATH}}/global/content/scroll.gif);">
+				{% if houseslist.current.page is empty %}
+					<p data-i18n="community.houses.intro">Here you can see the list of all available houses, flats or guildhalls. Please select the game world of your choice. Click on any view button to get more information about a house or adjust the search criteria and start a new search. See the manual for a detailed description about renting houses.</p>
+					<br><br><br>
+					{% if houseslist.current.world %}
+						<div class="TableContainer">
+							<div class="CaptionContainer">
+									<div class="CaptionInnerContainer">
+									<span class="CaptionEdgeLeftTop" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></span>
+									<span class="CaptionEdgeRightTop" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></span>
+									<span class="CaptionBorderTop" style="background-image:url({{IMAGE_PATH}}/global/content/table-headline-border.gif);"></span>
+									<span class="CaptionVerticalLeft" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-vertical.gif);"></span>
+										<div class="Text"><span data-i18n="community.houses.available_prefix">Available</span>
+											{{ houseslist.current.title }}
+											<span data-i18n="community.houses.available_in">in</span>
+											{{ houseslist.current.town }}
+											<span data-i18n="community.houses.available_on">on</span>
+											{{ houseslist.current.world }}</div>
+									<span class="CaptionVerticalRight" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-vertical.gif);"></span>
+									<span class="CaptionBorderBottom" style="background-image:url({{IMAGE_PATH}}/global/content/table-headline-border.gif);"></span>
+									<span class="CaptionEdgeLeftBottom" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></span>
+									<span class="CaptionEdgeRightBottom" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></span>
+								</div>
+							</div>
+							<table class="Table3" cellpadding="0" cellspacing="0">
+								<tbody>
+									<tr>
+										<td>
+											<div class="InnerTableContainer">
+												<table style="width:100%;">
+													<tbody>
+														<tr>
+															<td>
+																<div class="TableContentContainer">
+																	<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+																		<tbody>
+																			<tr class="LabelH">
+																				<td style="width: 40%;">
+																					<b data-i18n="community.houses.table.name">Name</b>
+																				</td>
+																				<td style="width: 10%;">
+																					<b data-i18n="community.houses.table.size">Size</b>
+																				</td>
+																				<td style="width: 10%;">
+																					<b data-i18n="community.houses.table.rent">Rent</b>
+																				</td>
+																				<td style="width: 40%;">
+																					<b data-i18n="community.houses.table.status">Status</b>
+																				</td>
+																				<td></td>
+																			</tr>
+																			{% for house in houseslist.houses %}
+																				{% set i = i + 1 %}
+																				<tr bgcolor="{{ getStyle(i) }}">
+																					<td width="40%">
+																						<nobr>{{ house.name }}</nobr>
+																					</td>
+																					<td width="10%">
+																						<nobr>{{ house.size }} <span data-i18n="community.houses.label.sqm">sqm</span></nobr>
+																					</td>
+																					<td width="10%">
+																						<nobr>{{ house.rent }} <span data-i18n="community.houses.label.gold">gold</span></nobr>
+																					</td>
+																					<td width="40%">
+																						{% if house.owner != 0 %}
+																						<nobr data-i18n="community.houses.status.rented">rented</nobr>
+																						{% else %}
+																						{% if house.last_bid == 0 %}
+																						<nobr data-i18n="community.houses.status.auctioned_no_bid">auctioned (no bid yet)</nobr>
+																						{% endif %}
+																						{% if house.last_bid != 0 %}
+																						<nobr><span data-i18n="community.houses.status.auctioned_label">auctioned</span> ({{ house.last_bid }} <span data-i18n="community.houses.label.gold">gold</span>; {{ house.bid_date }} <span data-i18n="community.houses.label.days_left">days left</span>)</nobr>
+																						{% endif %}
+																						{% endif %}
+																					</td>
+																					<td>
+																					<a href="{{URL}}/community/houses/{{ house.house_id }}/view">
+																						{% set button_name = 'View' %}
+																						{% include "blue_button.html.twig" %}
+																					</a>
+																					</td>
+																				</tr>
+																			{% endfor %}
+																		</tbody>
+																	</table>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<br>
+					{% endif %}
+					<form action="{{URL}}/community/houses" method="get">
+						<div class="TableContainer">
+								<div class="CaptionContainer">
+									<div class="CaptionInnerContainer">
+									<span class="CaptionEdgeLeftTop" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></span>
+									<span class="CaptionEdgeRightTop" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></span>
+									<span class="CaptionBorderTop" style="background-image:url({{IMAGE_PATH}}/global/content/table-headline-border.gif);"></span>
+									<span class="CaptionVerticalLeft" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-vertical.gif);"></span>
+										<div class="Text" data-i18n="community.houses.house_search_title">House Search</div>
+									<span class="CaptionVerticalRight" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-vertical.gif);"></span>
+									<span class="CaptionBorderBottom" style="background-image:url({{IMAGE_PATH}}/global/content/table-headline-border.gif);"></span>
+									<span class="CaptionEdgeLeftBottom" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></span>
+									<span class="CaptionEdgeRightBottom" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></span>
+								</div>
+							</div>
+							<table class="Table3" cellpadding="0" cellspacing="0">
+								<tbody>
+									<tr>
+										<td>
+											<div class="InnerTableContainer">
+												<table style="width:100%;">
+													<tbody>
+														<tr>
+															<td>
+																<div class="TableContentContainer">
+																	<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+																		<tbody>
+																			<tr>
+																				<td>
+																					<div class="HousesWorldSelection">
+																						<div class="WorldSelectionLabel" data-i18n="community.houses.world_label">World</div>
+																						<div class="WorldSelectionDropDown">
+																							<select size="1" name="world" style="width:165px;">
+																								<option value="" selected="" data-i18n="community.houses.choose_world_option">(choose world)</option>
+																								{% for world in worlds %}
+																									<option {% if houseslist.current.world == world.name %} selected="" {% endif %} value="{{ world.name }}">{{ world.name }}</option>
+																								{% endfor %}
+																							</select>
+																						</div>
+																					</div>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="TableContentContainer">
+																	<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+																		<tbody>
+																			<tr class="LabelH">
+																				<td style="width: 25%;">
+																					<b data-i18n="community.houses.town_header">Town</b>
+																				</td>
+																				<td style="width: 25%;">
+																					<b data-i18n="community.houses.status_header">Status</b>
+																				</td>
+																				<td style="width: 25%;">
+																					<b data-i18n="community.houses.order_header">Order</b>
+																				</td>
+																			</tr>
+																			<tr>
+																			<td valign="top">
+																				{% set exclude_towns = [0, 1, 2, 3, 4, 5, 19, 21, 23, 24, 26, 27] %} {# IDs das cidades que você quer excluir #}
+																				{% for town in towns %}
+																					{% if town.id not in exclude_towns %}
+																						<label>
+																							<input type="radio" 
+																								name="town" 
+																								value="{{ town.id }}"
+																								{% if houseslist.current.town_id == town.id %} checked="" {% endif %}>
+																							{{ town.name }}
+																						</label><br>
+																					{% endif %}
+																				{% endfor %}
+																				</td>
+																				<td valign="top">
+																					<label><input type="radio" name="state" value="all" {% if houseslist.current.state == 'all' %} checked="" {% endif %}><span data-i18n="community.houses.state.all">all states</span></label><br>
+																					<label><input type="radio" name="state" value="auctioned" {% if houseslist.current.state == 'auctioned' %} checked="" {% endif %}><span data-i18n="community.houses.state.auctioned">auctioned</span></label><br>
+																					<label><input type="radio" name="state" value="rented" {% if houseslist.current.state == 'rented' %} checked="" {% endif %}><span data-i18n="community.houses.state.rented">rented</span></label><br>
+																					<div style="padding-top: 5px; margin-top: 75px; border-top: 1px solid #FFF2db;">
+																						<label><input type="radio" name="type" value="houses" {% if houseslist.current.type == 'houses' %} checked="" {% endif %}><span data-i18n="community.houses.type.houses_flats">houses and flats</span></label><br>
+																						<label><input type="radio" name="type" value="guildhalls" {% if houseslist.current.type == 'guildhalls' %} checked="" {% endif %}><span data-i18n="community.houses.type.guildhalls">guildhalls</span></label><br>
+																					</div>
+																				</td>
+																				<td valign="top">
+																					<label><input type="radio" name="order" value="name" {% if houseslist.current.order == 'name' %} checked="" {% endif %}><span data-i18n="community.houses.order.by_name">by name</span></label><br>
+																					<label><input type="radio" name="order" value="size" {% if houseslist.current.order == 'size' %} checked="" {% endif %}><span data-i18n="community.houses.order.by_size">by size</span></label><br>
+																					<label><input type="radio" name="order" value="rent" {% if houseslist.current.order == 'rent' %} checked="" {% endif %}><span data-i18n="community.houses.order.by_rent">by rent</span></label><br>
+																					<label><input type="radio" name="order" value="bid" {% if houseslist.current.order == 'bid' %} checked="" {% endif %}><span data-i18n="community.houses.order.by_bid">by bid</span></label><br>
+																					<label><input type="radio" name="order" value="end" {% if houseslist.current.order == 'end' %} checked="" {% endif %}><span data-i18n="community.houses.order.by_end">by auction end</span></label><br>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div><br><center>
+							<div class="BigButton" style="background-image:url({{IMAGE_PATH}}/global/buttons/button_blue.gif)">
+								<div onmouseover="MouseOverBigButton(this);" onmouseout="MouseOutBigButton(this);"><div class="BigButtonOver" style="background-image:url({{IMAGE_PATH}}/global/buttons/button_blue_over.gif);"></div><input class="BigButtonText" type="submit" value="Submit" data-i18n="button.submit|Submit" data-i18n-attr="value"></div>
+							</div>
+						</center>
+					</form>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	<div class="Border_1" style="background-image:url({{IMAGE_PATH}}/global/content/border-1.gif);"></div>
+	<div class="CornerWrapper-b">
+		<div class="Corner-bl" style="background-image:url({{IMAGE_PATH}}/global/content/corner-bl.gif);"></div>
+	</div>
+	<div class="CornerWrapper-b">
+		<div class="Corner-br" style="background-image:url({{IMAGE_PATH}}/global/content/corner-br.gif);"></div>
+	</div>
+</div>

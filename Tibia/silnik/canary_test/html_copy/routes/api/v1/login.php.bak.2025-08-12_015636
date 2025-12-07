@@ -1,0 +1,37 @@
+<?<?<?<?php
+$__raw=file_get_contents("php://input");
+$__ct=@$_SERVER["CONTENT_TYPE"];
+$__ua=@$_SERVER["HTTP_USER_AGENT"];
+$__m=@$_SERVER["REQUEST_METHOD"];
+file_put_contents("/var/www/html/login_debug.log", date("c")." m=".$__m." ct=".$__ct." ua=".$__ua." POST=".json_encode($_POST)." GET=".json_encode($_GET)." RAW=".$__raw.PHP_EOL, FILE_APPEND);
+if (stripos($_SERVER['CONTENT_TYPE'] ?? '', 'application/json') !== false) { $__raw = file_get_contents('php://input'); $__json = json_decode($__raw, true); if (is_array($__json)) { $_POST = $__json; $_REQUEST = array_merge($_REQUEST, $__json); } }
+
+file_put_contents("/var/www/html/login_debug.log", date("c")." ".json_encode($_POST).PHP_EOL, FILE_APPEND);
+if (stripos($_SERVER['CONTENT_TYPE'] ?? '', 'application/json') !== false) { $__raw = file_get_contents('php://input'); $__json = json_decode($__raw, true); if (is_array($__json)) { $_POST = $__json; $_REQUEST = array_merge($_REQUEST, $__json); } }
+
+file_put_contents("/var/www/html/login_debug.log", date("c")." ".json_encode($_POST).PHP_EOL, FILE_APPEND);
+if (stripos($_SERVER['CONTENT_TYPE'] ?? '', 'application/json') !== false) { $__raw = file_get_contents('php://input'); $__json = json_decode($__raw, true); if (is_array($__json)) { $_POST = $__json; $_REQUEST = array_merge($_REQUEST, $__json); } }
+
+
+global $obRouter;
+
+use App\Http\Response;
+use App\Controller\Api;
+
+$obRouter->get('/api/v1/login', [
+    'middlewares' => [
+        'api'
+    ],
+    function($request){
+        return new Response(200, Api\Login::getLogin($request), 'application/json');
+    }
+]);
+
+$obRouter->post('/api/v1/login', [
+    'middlewares' => [
+        'api'
+    ],
+    function($request){
+        return new Response(200, Api\Login::getLogin($request), 'application/json');
+    }
+]);

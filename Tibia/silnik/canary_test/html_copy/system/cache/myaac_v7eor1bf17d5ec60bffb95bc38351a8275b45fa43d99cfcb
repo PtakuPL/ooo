@@ -1,0 +1,1 @@
+a:2:{i:0;a:4:{s:4:"name";s:19:"create-account-hint";s:4:"type";i:25;s:4:"file";s:36:"plugins/account-create-hint/hint.php";s:8:"priority";i:1000;}i:1;a:4:{s:4:"name";s:21:"mail-confirmed-reward";s:4:"type";i:85;s:4:"file";s:41:"plugins/email-confirmed-reward/reward.php";s:8:"priority";i:1000;}}

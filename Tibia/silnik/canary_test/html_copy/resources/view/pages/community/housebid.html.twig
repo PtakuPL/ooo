@@ -1,0 +1,167 @@
+<div id="houses" class="Box">
+	<div class="Corner-tl" style="background-image:url({{IMAGE_PATH}}/global/content/corner-tl.gif);"></div>
+	<div class="Corner-tr" style="background-image:url({{IMAGE_PATH}}/global/content/corner-tr.gif);"></div>
+	<div class="Border_1" style="background-image:url({{IMAGE_PATH}}/global/content/border-1.gif);"></div>
+    <div class="BorderTitleText" style="background-image:url({{IMAGE_PATH}}/global/content/title-background-green.gif);"></div><img id="ContentBoxHeadline" class="Title" src="{{IMAGE_PATH}}/global/strings/headline-houses.gif" alt="Contentbox headline" data-i18n-attr="alt" data-i18n="image.alt.contentbox_headline|Contentbox headline">
+	<div class="Border_2">
+		<div class="Border_3">
+			<div class="BoxContent" style="background-image:url({{IMAGE_PATH}}/global/content/scroll.gif);">
+                {% if status is not empty %}
+                <div class="TableContainer">
+                    <div class="CaptionContainer">
+                        <div class="CaptionInnerContainer">
+                            <span class="CaptionEdgeLeftTop" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></span>
+                            <span class="CaptionEdgeRightTop" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></span>
+                            <span class="CaptionBorderTop" style="background-image:url({{IMAGE_PATH}}/global/content/table-headline-border.gif);"></span>
+                            <span class="CaptionVerticalLeft" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-vertical.gif);"></span>
+                            <div class="Text" data-i18n="community.housebid.bid_status_title">Bid Status</div>
+                            <span class="CaptionVerticalRight" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-vertical.gif);"></span>
+                            <span class="CaptionBorderBottom" style="background-image:url({{IMAGE_PATH}}/global/content/table-headline-border.gif);"></span>
+                            <span class="CaptionEdgeLeftBottom" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></span>
+                            <span class="CaptionEdgeRightBottom" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></span>
+                        </div>
+                    </div>
+                    <table class="Table3" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="InnerTableContainer" style="max-width: unset;">
+                                        <table style="width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="TableContentContainer">
+                                                            <table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>{{ status }}</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                {% endif %}
+                {% if house.last_bid == 0 %}
+                <span data-i18n="community.housebid.house_intro_prefix">The house</span> <b>{{ house.name }}</b> <span data-i18n="community.housebid.house_intro_suffix">is currently being auctioned.</span> <span data-i18n="community.housebid.no_bid_yet">There is no bid so far.</span>
+                {% endif %}
+                {% if house.last_bid != 0 %}
+                <span data-i18n="community.housebid.house_intro_prefix">The house</span> <b>{{ house.name }}</b> <span data-i18n="community.housebid.house_intro_suffix">is currently being auctioned.</span>
+                <span data-i18n="community.housebid.auction_end_prefix">The auction will end at</span> <b>{{ house.days_to_end }}</b> <span data-i18n="community.housebid.server_save_note">(time of daily server save).</span>
+                <span data-i18n="community.housesview.highest_bid_prefix">The highest bid so far is</span> <b>{{ house.last_bid }} <span data-i18n="community.houses.label.gold">gold</span></b> <span data-i18n="community.housesview.highest_bid_suffix">and has been submitted by</span> <b>{{ house.owner_name }}</b>.
+                {% endif %}
+                <br><br>
+                <form action="{{URL}}/community/houses/{{ house.house_id }}/bid" method="post" style="padding:0px;margin:0px;">
+                <div class="TableContainer">
+                    <div class="CaptionContainer">
+                        <div class="CaptionInnerContainer">
+                            <span class="CaptionEdgeLeftTop" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></span>
+                            <span class="CaptionEdgeRightTop" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></span>
+                            <span class="CaptionBorderTop" style="background-image:url({{IMAGE_PATH}}/global/content/table-headline-border.gif);"></span>
+                            <span class="CaptionVerticalLeft" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-vertical.gif);"></span>
+                            <div class="Text" data-i18n="community.housebid.form_title">Enter Your Bid</div>
+                            <span class="CaptionVerticalRight" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-vertical.gif);"></span>
+                            <span class="CaptionBorderBottom" style="background-image:url({{IMAGE_PATH}}/global/content/table-headline-border.gif);"></span>
+                            <span class="CaptionEdgeLeftBottom" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></span>
+                            <span class="CaptionEdgeRightBottom" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></span>
+                        </div>
+                    </div>
+                    <table class="Table3" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="InnerTableContainer" style="max-width: unset;">
+                                        <table style="width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="TableContentContainer">
+                                                            <table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="LabelH" style="width: 25%;">
+                                                                            <b data-i18n="community.housebid.limit_label">Your Limit:</b>
+                                                                        </td>
+                                                                        <td>
+                                                                            {% if players is not empty %}
+                                                                            <input type="number" name="bid_limit" min="{{ house.last_bid }}" placeholder="{{ house.last_bid }}">
+                                                                            {% endif %}
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="LabelH" style="width: 25%;">
+                                                                            <b data-i18n="community.housebid.character_label">Your Character:</b>
+                                                                        </td>
+                                                                        <td>
+                                                                            {% if players is not empty %}
+                                                                            <select name="bid_player">
+                                                                                {% for player in players %}
+                                                                                <option value="{{ player.id }}">{{ player.name }}</option>
+                                                                                {% endfor %}
+                                                                            </select>
+                                                                            {% endif %}
+                                                                            {% if players is empty %}
+                                                                            <span data-i18n="community.housebid.no_active_characters">No active characters for house auction.</span>
+                                                                            {% endif %}
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+				<br>
+                <span data-i18n="community.housebid.bid_increment_info">Bids increase in steps of 1 gold. You will automatically outbid the current bid by 1 gold until your specified limit is reached.</span>
+                <br><br>
+                {% if house.last_bid != 0 %}
+                <span data-i18n="community.housebid.payment_prefix_with_time">When the auction ends at</span> <b>{{ house.bid_end }}</b> <span data-i18n="community.housebid.server_save_note">(time of daily server save).</span> <span data-i18n="community.housebid.payment_core_prefix">The</span> <b><span data-i18n="community.housebid.payment_amount_prefix">winning bid plus the rent of</span> {{ house.rent }} <span data-i18n="community.houses.label.gold">gold</span></b> <span data-i18n="community.housebid.payment_suffix">for the first month will be debited to your bank account on</span> <b>{{ house.world.name }}</b>.
+                {% endif %}
+                {% if house.last_bid == 0 %}
+                <span data-i18n="community.housebid.payment_prefix_no_time">When the auction ends,</span> <span data-i18n="community.housebid.payment_core_prefix">the</span> <b><span data-i18n="community.housebid.payment_amount_prefix">winning bid plus the rent of</span> {{ house.rent }} <span data-i18n="community.houses.label.gold">gold</span></b> <span data-i18n="community.housebid.payment_suffix">for the first month will be debited to your bank account on</span> <b>{{ house.world.name }}</b>.
+                {% endif %}
+                <br><br>
+                <div class="SubmitButtonRow" style="display: flex; justify-content: center;">
+                    {% if players is not empty %}
+                    <div class="LeftButton" style="width: 25%;">
+                        <div class="BigButton" style="background-image:url({{IMAGE_PATH}}/global/buttons/button_blue.gif)">
+                                <div onmouseover="MouseOverBigButton(this);" onmouseout="MouseOutBigButton(this);"><div class="BigButtonOver" style="background-image:url({{IMAGE_PATH}}/global/buttons/button_blue_over.gif);"></div><input class="BigButtonText" type="submit" value="Submit" data-i18n="button.submit|Submit" data-i18n-attr="value"></div>
+                        </div>
+                    </div>
+                    {% endif %}
+					<div class="LeftButton" style="width: 25%;">
+						<a href="{{URL}}/community/houses/{{ house.house_id }}/view" style="padding:0px;margin:0px;">
+                        <div class="BigButton" style="background-image:url({{IMAGE_PATH}}/global/buttons/button_blue.gif)">
+                            <div onmouseover="MouseOverBigButton(this);" onmouseout="MouseOutBigButton(this);"><div class="BigButtonOver" style="background-image:url({{IMAGE_PATH}}/global/buttons/button_blue_over.gif);"></div><input class="BigButtonText" type="button" value="Back" data-i18n="button.back|Back" data-i18n-attr="value"></div>
+							</div>
+						</a>
+					</div>
+				</div>
+                </form>
+			</div>
+		</div>
+	</div>
+	<div class="Border_1" style="background-image:url({{IMAGE_PATH}}/global/content/border-1.gif);"></div>
+	<div class="CornerWrapper-b">
+		<div class="Corner-bl" style="background-image:url({{IMAGE_PATH}}/global/content/corner-bl.gif);"></div>
+	</div>
+	<div class="CornerWrapper-b">
+		<div class="Corner-br" style="background-image:url({{IMAGE_PATH}}/global/content/corner-br.gif);"></div>
+	</div>
+</div>

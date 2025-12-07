@@ -1,0 +1,241 @@
+<?php
+// --- robust root auto-detect for MyAAC (works from /api/v1/*) ---
+$CANDIDATES = array_filter([
+  realpath(__DIR__ . '/../../'),
+  realpath(__DIR__ . '/../../../'),
+  '/var/www/html',
+  dirname(__DIR__, 2),
+  dirname(__DIR__, 3),
+]);
+
+$ROOT = null;
+foreach ($CANDIDATES as $p) {
+  if ($p && is_file($p . '/common.php')) { $ROOT = $p; break; }
+}
+if (!$ROOT) {
+  http_response_code(500);
+  die('common.php not found; tried: ' . implode(', ', $CANDIDATES));
+}
+chdir($ROOT);
+
+global $config, $db;
+require_once $ROOT . '/common.php';
+require_once $ROOT . '/config.php';
+if (is_file($ROOT . '/config.local.php')) require_once $ROOT . '/config.local.php';
+if (!defined('SYSTEM')) define('SYSTEM', $ROOT . '/system/');
+require_once SYSTEM . 'functions.php';
+require_once SYSTEM . 'init.php';
+require_once SYSTEM . 'status.php';
+// --- end wrapper ---
+
+// -------- helpers --------
+function sendError($msg)
+{
+  $ret = ['errorCode' => 3, 'errorMessage' => $msg];
+  die(json_encode($ret, JSON_UNESCAPED_SLASHES));
+}
+
+function parseEvent($table1, $date, $table2)
+{
+  if ($table1) {
+    if ($date) {
+      $date = ($table2) ? $table1->getAttribute('startdate') : $table1->getAttribute('enddate');
+      return date_create("{$date}")->format('U');
+    } else {
+      foreach ($table1 as $attr) {
+        if ($attr) return $attr->getAttribute($table2);
+      }
+    }
+  }
+  return null;
+}
+
+function jsonCompendium()
+{
+  $filePath = config('server_path') . 'compendium.json';
+  if (file_exists($filePath)) {
+    $fileContents = file_get_contents($filePath);
+    $jsonData = json_decode($fileContents, true);
+    if ($jsonData !== null) {
+      return [
+        'categorycounts' => $jsonData['categorycounts'] ?? [],
+        'gamenews'       => $jsonData['gamenews'] ?? [],
+        'idOfNewestReadEntry' => 0,
+        'isreturner'          => false,
+        'lastupdatetimestamp' => 0,
+        'maxeditdate'         => 0,
+        'showrewardnews'      => true,
+      ];
+    }
+    return ['error' => 'Failed to decode JSON'];
+  }
+  return ['error' => 'File not found'];
+}
+
+function createChar($config, $player)
+{
+  return [
+    'worldid'                          => 0,
+    'name'                             => $player['name'],
+    'ismale'                           => intval($player['sex']) === 1,
+    'istutorial'                       => (bool)$player['istutorial'],
+    'level'                            => intval($player['level']),
+    // return vocation as INT for OTClient. If you prefer names, change to $config['vocations'][$player['vocation']]
+    'vocation'                         => intval($player['vocation']),
+    'outfitid'                         => intval($player['looktype']),
+    'headcolor'                        => intval($player['lookhead']),
+    'torsocolor'                       => intval($player['lookbody']),
+    'legscolor'                        => intval($player['looklegs']),
+    'detailcolor'                      => intval($player['lookfeet']),
+    'addonsflags'                      => intval($player['lookaddons']),
+    'ishidden'                         => (bool)$player['hidden'],
+    'ismaincharacter'                  => (bool)$player['ismain'],
+    'dailyrewardstate'                 => intval($player['isreward']),
+    'remainingdailytournamentplaytime' => 0
+  ];
+}
+
+function checkPremium($db, $query, $account)
+{
+  $lastDay = (int)$query['lastday'];
+  $timeNow = time();
+  if ($lastDay < $timeNow) { $premDays = 0; $lastDay = 0; }
+  else if ($lastDay == 0) { $premDays = 0; }
+  else {
+    $daysLeft = (int)(($lastDay - $timeNow) / 86400);
+    $timeLeft = (int)(($lastDay - $timeNow) % 86400);
+    if ($daysLeft > 0) { $premDays = $daysLeft; }
+    else if ($timeLeft > 0) { $premDays = 1; }
+    else { $premDays = 0; $lastDay = 0; }
+  }
+  $db->query("UPDATE `accounts` SET `premdays` = {$premDays}, `lastday` = {$lastDay} WHERE `id` = {$account->getId()}");
+  return $lastDay;
+}
+
+// -------- main --------
+$request = file_get_contents('php://input');
+$result  = json_decode($request);
+$action  = $result->type ?? '';
+
+switch ($action) {
+  case 'news':
+    die(json_encode(jsonCompendium(), JSON_UNESCAPED_SLASHES));
+
+  case 'cacheinfo':
+    $playersonline = $db->query("SELECT count(*) FROM `players_online`")->fetchAll();
+    die(json_encode([
+      'playersonline'        => (intval($playersonline[0][0])),
+      'twitchstreams'        => 0,
+      'twitchviewer'         => 0,
+      'gamingyoutubestreams' => 0,
+      'gamingyoutubeviewer'  => 0
+    ], JSON_UNESCAPED_SLASHES));
+
+  case 'eventschedule':
+    $eventlist = [];
+    $file_path = config('server_path') . 'data/XML/events.xml';
+    if (!file_exists($file_path)) {
+      die(json_encode([]));
+    }
+    $xml = new DOMDocument;
+    $xml->load($file_path);
+    $tableevent = $xml->getElementsByTagName('event');
+
+    foreach ($tableevent as $event) {
+      if ($event) {
+        $eventlist[] = [
+          'colorlight'      => parseEvent($event->getElementsByTagName('colors'), false, 'colorlight'),
+          'colordark'       => parseEvent($event->getElementsByTagName('colors'), false, 'colordark'),
+          'description'     => parseEvent($event->getElementsByTagName('description'), false, 'description'),
+          'displaypriority' => intval(parseEvent($event->getElementsByTagName('details'), false, 'displaypriority')),
+          'enddate'         => intval(parseEvent($event, true, false)),
+          'isseasonal'      => (bool)intval(parseEvent($event->getElementsByTagName('details'), false, 'isseasonal')),
+          'name'            => $event->getAttribute('name'),
+          'startdate'       => intval(parseEvent($event, true, true)),
+          'specialevent'    => intval(parseEvent($event->getElementsByTagName('details'), false, 'specialevent'))
+        ];
+      }
+    }
+    die(json_encode(['eventlist' => $eventlist, 'lastupdatetimestamp' => time()], JSON_UNESCAPED_SLASHES));
+
+  case 'boostedcreature':
+    $creatureBoost = $db->query("SELECT * FROM " . $db->tableName('boosted_creature'))->fetchAll();
+    $bossBoost     = $db->query("SELECT * FROM " . $db->tableName('boosted_boss'))->fetchAll();
+    die(json_encode([
+      'boostedcreature' => true,
+      'creatureraceid'  => intval($creatureBoost[0]['raceid']),
+      'bossraceid'      => intval($bossBoost[0]['raceid'])
+    ], JSON_UNESCAPED_SLASHES));
+
+  case 'login':
+    $ip   = configLua('ip');
+    $port = configLua('gameProtocolPort');
+
+    $world = [
+      'id'                         => 0,
+      'name'                       => configLua('serverName'),
+      'externaladdress'            => $ip,
+      'externaladdressprotected'   => $ip,
+      'externaladdressunprotected' => $ip,
+      'externalport'               => $port,
+      'externalportprotected'      => $port,
+      'externalportunprotected'    => $port,
+      'previewstate'               => 0,
+      'location'                   => 'EUR',
+      'anticheatprotection'        => false,
+      'pvptype'                    => array_search(configLua('worldType'), ['pvp', 'no-pvp', 'pvp-enforced']),
+      'istournamentworld'          => false,
+      'restrictedstore'            => false,
+      'currenttournamentphase'     => 2
+    ];
+
+    $account = new OTS_Account();
+    $account->findByEmail($result->email ?? '');
+    $config_salt_enabled = fieldExist('salt', 'accounts');
+    $enteredPassword = (string)($result->password ?? '');
+    $current_password = encrypt(($config_salt_enabled ? $account->getCustomField('salt') : '') . $enteredPassword);
+
+    if (!$account->isLoaded() || $account->getPassword() != $current_password) {
+      sendError('Email or password is not correct.');
+    }
+
+    if ($config['account_verified_only'] && $config['mail_enabled'] && $config['account_mail_verify'] && $account->getCustomField('email_verified') != '1') {
+      sendError('You need to verify your account, enter in our site and resend verify e-mail!');
+    }
+
+    $columns    = 'name, level, sex, vocation, looktype, lookhead, lookbody, looklegs, lookfeet, lookaddons, lastlogin, isreward, istutorial, ismain, hidden';
+    $playersQ   = $db->query("SELECT {$columns} FROM players WHERE account_id = {$account->getId()} AND deletion = 0");
+    $characters = [];
+    if ($playersQ && $playersQ->rowCount() > 0) {
+      foreach ($playersQ->fetchAll() as $player) {
+        $characters[] = createChar($config, $player);
+      }
+    }
+
+    $query = $db->query("SELECT `premdays`, `lastday` FROM `accounts` WHERE `id` = {$account->getId()}");
+    if (!$query || $query->rowCount() <= 0) {
+      sendError('Error while fetching your account data. Please contact admin.');
+    }
+    $premU = checkPremium($db, $query->fetch(), $account);
+
+    $session = [
+      'sessionkey' => ($account ? ($account->getName() . "\n" . $result->password) : null),
+      'lastlogintime'                 => $account->getLastLogin() ?: 0,
+      'ispremium'                     => $account->isPremium(),
+      'premiumuntil'                  => $premU,
+      'status'                        => 'active',
+      'returnernotification'          => false,
+      'showrewardnews'                => true,
+      'isreturner'                    => true,
+      'fpstracking'                   => false,
+      'optiontracking'                => false,
+      'tournamentticketpurchasestate' => 0,
+      'emailcoderequest'              => false
+    ];
+
+    $playdata = ['worlds' => [$world], 'characters' => $characters];
+    die(json_encode(['session' => $session, 'playdata' => $playdata], JSON_UNESCAPED_SLASHES));
+
+  default:
+    sendError("Unrecognized event {$action}.");
+}

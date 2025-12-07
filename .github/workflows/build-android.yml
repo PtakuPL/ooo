@@ -167,7 +167,7 @@ jobs:
           VCPKG_ROOT: C:\vcpkg
         run: |
           chmod +x ./gradlew 2>/dev/null || true
-          ./gradlew assembleRelease --no-daemon --stacktrace --build-cache
+          ./gradlew assembleRelease --no-daemon --stacktrace --build-cache --warning-mode all
 
       - name: Find APK
         id: find-apk

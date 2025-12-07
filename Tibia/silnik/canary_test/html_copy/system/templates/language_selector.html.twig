@@ -1,0 +1,20 @@
+{% if config.language_allow_change|default(true) %}
+<div class="language-selector">
+	<form method="get" action="" style="display: inline;">
+		<select name="lang" onchange="this.form.submit()" class="form-select form-select-sm" style="width: auto; display: inline-block;">
+			{% set current_lang = constant('CURRENT_LOCALE') %}
+			{% set languages = get_available_languages() %}
+			{% for code, lang in languages %}
+				<option value="{{ code }}" {% if code == current_lang %}selected{% endif %}>
+					{{ lang.name }}
+				</option>
+			{% endfor %}
+		</select>
+		{% for key, value in app.request.query.all() %}
+			{% if key != 'lang' %}
+				<input type="hidden" name="{{ key }}" value="{{ value }}">
+			{% endif %}
+		{% endfor %}
+	</form>
+</div>
+{% endif %}

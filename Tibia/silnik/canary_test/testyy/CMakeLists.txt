@@ -175,8 +175,19 @@ if(OTC_ENABLE_FRIBIDI)
   target_compile_definitions(otc_textstack INTERFACE OTC_ENABLE_FRIBIDI)
 endif()
 # ===== end text stack =====
-# Protobuf
-add_subdirectory(src/protobuf)
+
+# Protobuf (optional, can be disabled for build analysis or cross-compilation)
+option(OTC_ENABLE_PROTOBUF "Enable Protobuf support" ON)
+if(OTC_ENABLE_PROTOBUF)
+  add_subdirectory(src/protobuf)
+else()
+  # Create a stub target when protobuf is disabled to satisfy link dependencies
+  add_library(protobuf INTERFACE)
+  # Create a fake protobuf::libprotobuf target as well
+  if(NOT TARGET protobuf::libprotobuf)
+    add_library(protobuf::libprotobuf ALIAS protobuf)
+  endif()
+endif()
 # Src
 add_subdirectory(src)
 

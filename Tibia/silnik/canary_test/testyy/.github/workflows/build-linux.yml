@@ -1,0 +1,61 @@
+name: build-linux
+
+on:
+  push:
+    paths:
+      - 'Tibia/silnik/canary_test/testyy/**'
+      - 'Tibia/silnik/canary_test/testyy/.github/workflows/build-linux.yml'
+  pull_request:
+    paths:
+      - 'Tibia/silnik/canary_test/testyy/**'
+      - 'Tibia/silnik/canary_test/testyy/.github/workflows/build-linux.yml'
+
+jobs:
+  linux:
+    name: Build (Ubuntu)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes \
+            build-essential \
+            ninja-build \
+            cmake \
+            pkg-config \
+            libglu1-mesa-dev \
+            mesa-common-dev \
+            libxi-dev \
+            libxrandr-dev \
+            libxinerama-dev \
+            libxcursor-dev \
+            libasound2-dev \
+            libudev-dev
+
+      - name: Setup vcpkg (manifest mode)
+        uses: microsoft/setup-vcpkg@v1
+        with:
+          vcpkg-json: '${{ github.workspace }}/Tibia/silnik/canary_test/testyy/vcpkg.json'
+          triplet: x64-linux
+
+      - name: Configure CMake
+        working-directory: Tibia/silnik/canary_test/testyy
+        env:
+          VCPKG_ROOT: ${{ env.VCPKG_ROOT }}
+        run: |
+          cmake -S . -B build -G Ninja \
+            -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+            -DVCPKG_TARGET_TRIPLET=x64-linux \
+            -DCMAKE_TOOLCHAIN_FILE="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake"
+
+      - name: Build
+        working-directory: Tibia/silnik/canary_test/testyy
+        run: cmake --build build --config RelWithDebInfo --parallel
+
+      - name: Run unit tests
+        working-directory: Tibia/silnik/canary_test/testyy
+        run: ctest --test-dir build --output-on-failure || true

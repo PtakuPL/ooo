@@ -1,0 +1,70 @@
+# Label configuration for PR Labeler
+# Documentation: https://github.com/actions/labeler
+
+# Source code changes
+source:
+  - changed-files:
+      - any-glob-to-any-file: 'Tibia/silnik/canary_test/testyy/src/**/*'
+
+# Lua modules
+modules:
+  - changed-files:
+      - any-glob-to-any-file: 'Tibia/silnik/canary_test/testyy/modules/**/*'
+
+# Data files
+data:
+  - changed-files:
+      - any-glob-to-any-file: 'Tibia/silnik/canary_test/testyy/data/**/*'
+
+# Localization / i18n
+i18n:
+  - changed-files:
+      - any-glob-to-any-file: 'Tibia/silnik/canary_test/testyy/data/locales/**/*'
+
+# Documentation
+documentation:
+  - changed-files:
+      - any-glob-to-any-file: '**/*.md'
+      - any-glob-to-any-file: 'Tibia/silnik/canary_test/testyy/docs/**/*'
+
+# Build system / CMake
+build:
+  - changed-files:
+      - any-glob-to-any-file: '**/CMakeLists.txt'
+      - any-glob-to-any-file: '**/*.cmake'
+      - any-glob-to-any-file: '**/vcpkg.json'
+      - any-glob-to-any-file: '**/CMakePresets.json'
+
+# GitHub Actions / CI
+ci:
+  - changed-files:
+      - any-glob-to-any-file: '.github/**/*'
+      - any-glob-to-any-file: 'Tibia/silnik/canary_test/testyy/.github/**/*'
+
+# Android
+android:
+  - changed-files:
+      - any-glob-to-any-file: 'Tibia/silnik/canary_test/testyy/android/**/*'
+      - any-glob-to-any-file: '**/*android*'
+
+# Tests
+tests:
+  - changed-files:
+      - any-glob-to-any-file: 'Tibia/silnik/canary_test/testyy/tests/**/*'
+
+# UI / OTUI
+ui:
+  - changed-files:
+      - any-glob-to-any-file: '**/*.otui'
+
+# Graphics / Shaders
+graphics:
+  - changed-files:
+      - any-glob-to-any-file: 'Tibia/silnik/canary_test/testyy/src/framework/graphics/**/*'
+      - any-glob-to-any-file: 'Tibia/silnik/canary_test/testyy/data/shaders/**/*'
+
+# Network / Protocol
+network:
+  - changed-files:
+      - any-glob-to-any-file: 'Tibia/silnik/canary_test/testyy/src/client/net/**/*'
+      - any-glob-to-any-file: 'Tibia/silnik/canary_test/testyy/src/protobuf/**/*'

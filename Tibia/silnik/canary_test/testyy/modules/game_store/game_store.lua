@@ -851,7 +851,7 @@ function getCoinsWebsite()
     if GameStore.website.WEBSITE_GETCOINS ~= "" then
         g_platform.openUrl(GameStore.website.WEBSITE_GETCOINS)
     else
-        sendMessageBox("Error", "No data for store URL.")
+        sendMessageBox(tr("Error"), tr("No data for store URL."))
     end
 end
 -- /*=============================================
@@ -1002,7 +1002,7 @@ function chooseOffert(self, focusedChild)
                         destroyWindow(processingWindow)
                     end
                     controllerShop.ui:hide()
-                    processingWindow = displayGeneralBox('Processing purchase.', 'Your purchase is being processed',
+                    processingWindow = displayGeneralBox(tr('Processing purchase.'), tr('Your purchase is being processed'),
                     {
                       { text = tr('ok'),  callback = closeWindow },
                       anchor = 50

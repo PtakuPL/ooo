@@ -695,13 +695,13 @@ end
 
 function onFlatDamageHealingChange(localPlayer, flatBonus)
     local tooltips =
-        "This flat bonus is the main source of your character's power, added \nto most of the damage and healing values you cause."
+        tr("This flat bonus is the main source of your character's power, added to most of the damage and healing values you cause.")
     setSkillValueWithTooltips('damageHealing', flatBonus, tooltips, false)
 end
 
 function onAttackInfoChange(localPlayer, attackValue, attackElement)
     local tooltips =
-        "This is your character's basic attack power whenever you enter a \nfight with a weapon or your fists. It does not apply to any spells \nyou cast. The attack value is calculated from the weapon's attack\n value, the corresponding weapon skill, combat tactics, the bonus \nreceived from the Revelation Perks and the player's level. The \nvalue represents the average damage you would inflict on a\ncreature which had no kind of defence or protection."
+        tr("This is your character's basic attack power whenever you enter a fight with a weapon or your fists. It does not apply to any spells you cast. The attack value is calculated from the weapon's attack value, the corresponding weapon skill, combat tactics, the bonus received from the Revelation Perks and the player's level. The value represents the average damage you would inflict on a creature which had no kind of defence or protection.")
     setSkillValueWithTooltips('attackValue', attackValue, tooltips, false)
     local skill = skillsWindow:recursiveGetChildById("attackValue")
     if skill then

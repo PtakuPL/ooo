@@ -98,7 +98,7 @@ function renderItems()
                 if itemName then
                     itemBox:setTooltip(itemName)
                 else
-                    itemBox:setTooltip("Loading...")
+                    itemBox:setTooltip(tr("Loading..."))
                 end
                 g_mouse.bindPress(itemBox, function()
                     prepareWithdraw(itemId, amount)

@@ -1289,7 +1289,7 @@ function Market.refreshItemsWidget(selectItem)
         if amount > 0 then
             itemWidget:setText(amount)
             itemWidget:setTextOffset(topoint('0 10'))
-            itemBox:setTooltip('You have ' .. amount .. ' in your depot.')
+            itemBox:setTooltip(tr('You have %d in your depot.', amount))
         end
 
         radioItemSet:addWidget(itemBox)

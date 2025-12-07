@@ -129,10 +129,10 @@ function onSkullChange(localPlayer, skull)
 
     if skull == SkullRed or skull == SkullBlack then
         currentSkullWidget:setIcon(getSkullImagePath(skull))
-        currentSkullWidget:setTooltip('Remaining skull time')
+        currentSkullWidget:setTooltip(tr('Remaining skull time'))
     else
         currentSkullWidget:setIcon('')
-        currentSkullWidget:setTooltip('You have no skull')
+        currentSkullWidget:setTooltip(tr('You have no skull'))
     end
 
     daySkullWidget:setIcon(getSkullImagePath(getNextSkullId(skull)))
@@ -156,11 +156,11 @@ end
 
 function onUnjustifiedPointsChange(unjustifiedPoints)
     if unjustifiedPoints.skullTime == 0 then
-        skullTimeLabel:setText('No skull')
-        skullTimeLabel:setTooltip('You have no skull')
+        skullTimeLabel:setText(tr('No skull'))
+        skullTimeLabel:setTooltip(tr('You have no skull'))
     else
-        skullTimeLabel:setText(unjustifiedPoints.skullTime .. ' days')
-        skullTimeLabel:setTooltip('Remaining skull time')
+        skullTimeLabel:setText(unjustifiedPoints.skullTime .. ' ' .. tr('days'))
+        skullTimeLabel:setTooltip(tr('Remaining skull time'))
     end
 
     dayProgressBar:setValue(unjustifiedPoints.killsDay, 0, 100)

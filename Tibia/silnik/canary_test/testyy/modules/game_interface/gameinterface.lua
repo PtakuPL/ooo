@@ -824,7 +824,7 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
     if modules.game_bot and useThing and useThing:isItem() then
         menu:addSeparator()
         local useThingId = useThing:getId()
-        menu:addOption("ID: " .. useThingId, function() g_window.setClipboardText(useThingId) end)
+        menu:addOption(tr("ID:") .. " " .. useThingId, function() g_window.setClipboardText(useThingId) end)
     end
 
     if g_game.getFeature(GameThingQuickLoot) and modules.game_quickloot and lookThing and not lookThing:isCreature() and lookThing:isPickupable() then
@@ -838,10 +838,10 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
         end
 
         local lootExists = quickLoot.lootExists(lookThing:getId())
-        local optionText = lootExists and "Remove from" or "Add to"
+        local optionText = lootExists and tr("Remove from loot list") or tr("Add to loot list")
         local actionFunction = lootExists and quickLoot.removeLootList or quickLoot.addLootList
 
-        menu.addOption(menu, tr(optionText .. " loot list"), function()
+        menu.addOption(menu, optionText, function()
             actionFunction(lookThing:getId())
         end)
     end

@@ -845,6 +845,16 @@ local add = {
   ["If you are premium player, you will gain 50%% more experience"] = "Jeśli jesteś graczem premium, zyskasz 50%% więcej doświadczenia",
   ["Now you will gain 50%% more experience"] = "Teraz zyskasz 50%% więcej doświadczenia",
   ["infinite bonus"] = "nieskończony bonus",
+  ["Your current XP gain rate amounts to %d%%."] = "Twój aktualny współczynnik zdobywania PD wynosi %d%%.",
+  ["\nYour XP gain rate is calculated as follows:\n- Base XP gain rate %d%%"] = "\nTwój współczynnik PD jest obliczany następująco:\n- Podstawowy współczynnik PD %d%%",
+  ["\n- Voucher: %d%%"] = "\n- Voucher: %d%%",
+  ["\n- XP Boost: %d%% (%s h remaining)"] = "\n- Wzmocnienie PD: %d%% (pozostało %s h)",
+  ["\n- Stamina multiplier: x%.1f (%s h remaining)"] = "\n- Mnożnik wytrzymałości: x%.1f (pozostało %s h)",
+  
+  -- Loot list
+  ["ID:"] = "ID:",
+  ["Add to loot list"] = "Dodaj do listy łupów",
+  ["Remove from loot list"] = "Usuń z listy łupów",
   
   -- Coins
   ["Transferable Tibia Coins: "] = "Przekazywalne Tibia Coins: ",

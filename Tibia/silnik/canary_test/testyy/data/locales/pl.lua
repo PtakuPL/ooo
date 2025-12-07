@@ -1366,7 +1366,17 @@ local add = {
   ["You have a +1% chance to cause +1% extra damage."] = "Masz +1% szansę na zadanie +1% dodatkowych obrażeń.",
   ["Critical Hits deal more damage than normal attacks. They have a chance to be triggered during combat, inflicting additional damage beyond the standard amount."] = "Trafienia krytyczne zadają więcej obrażeń niż normalne ataki. Mają szansę na aktywację podczas walki, zadając dodatkowe obrażenia ponad standardową ilość.",
   ["You get +1% of the damage dealt as mana"] = "Otrzymujesz +1% zadanych obrażeń jako manę",
-  ["You get +1% of the damage dealt as hit points"] = "Otrzymujesz +1% zadanych obrażeń jako punkty życia"
+  ["You get +1% of the damage dealt as hit points"] = "Otrzymujesz +1% zadanych obrażeń jako punkty życia",
+  
+  -- Placeholders
+  ["Type to search"] = "Wpisz aby szukać",
+  ["Type to set"] = "Wpisz aby ustawić",
+  ["Search by name"] = "Szukaj po nazwie",
+  ["Name of new owner"] = "Imię nowego właściciela",
+  ["Preset Name"] = "Nazwa predefiniowana",
+  
+  -- Store
+  ["Recently Added"] = "Ostatnio dodane"
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

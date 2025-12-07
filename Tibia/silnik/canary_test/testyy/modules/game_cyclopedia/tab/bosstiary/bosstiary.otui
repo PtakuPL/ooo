@@ -229,7 +229,7 @@ UIWidget
     padding-right: 15
     margin-bottom: 5
     size: 150 20
-    placeholder: Type to search
+    !placeholder: tr('Type to search')
     placeholder-color: #6E706F
     @onTextChange: modules.game_cyclopedia.Cyclopedia.BosstiarySearchText(self:getText())
   UIWidget

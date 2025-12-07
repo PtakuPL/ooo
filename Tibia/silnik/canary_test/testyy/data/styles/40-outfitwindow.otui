@@ -83,7 +83,7 @@ PresetButton < Panel
       anchors.bottom: parent.bottom
       anchors.left: parent.left
       width: 150
-      placeholder: Preset Name
+      !placeholder: tr('Preset Name')
       max-length: 24
     
     Button
@@ -784,7 +784,7 @@ OutfitWindow < MainWindow
       id: search
       anchors.left: prev.right
       anchors.right: parent.right
-      placeholder: Search by name
+      !placeholder: tr('Search by name')
       placeholder-color: #c0c0c0c0
 
   ScrollablePanel

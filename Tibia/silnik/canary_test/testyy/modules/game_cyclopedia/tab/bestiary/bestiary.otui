@@ -20,7 +20,7 @@ UIWidget
     anchors.right: SearchButton.left
     anchors.bottom: SearchButton.bottom
     margin-bottom: 1
-    placeholder: Type to search
+    !placeholder: tr('Type to search')
     placeholder-color: #6E706F
     font: verdana-11px-monochrome
     color: #C0C0C0

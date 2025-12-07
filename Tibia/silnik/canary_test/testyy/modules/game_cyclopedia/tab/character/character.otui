@@ -1381,7 +1381,7 @@ UIWidget
         padding-top: 2
         padding-right: 15
         padding-bottom: 0
-        placeholder: Type to search
+        !placeholder: tr('Type to search')
         placeholder-color: #6E706F
         @onTextChange: modules.game_cyclopedia.Cyclopedia.characterItemsSearch(self:getText())
     UIWidget

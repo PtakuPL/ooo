@@ -449,7 +449,7 @@ CardLabel < FlatPanel
     anchors.right: parent.right
     anchors.verticalCenter: parent.verticalCenter
     image-source: /images/game/prey/prey_wildcard
-    tooltip: Prey Wildcards
+    !tooltip: tr('Prey Wildcards')
 
   UIWidget
     id: text
@@ -469,7 +469,7 @@ GoldLabel < FlatPanel
     anchors.right: parent.right
     anchors.verticalCenter: parent.verticalCenter
     image-source: /images/game/prey/prey_gold
-    tooltip: Gold Coins
+    !tooltip: tr('Gold Coins')
 
   UIWidget
     id: text

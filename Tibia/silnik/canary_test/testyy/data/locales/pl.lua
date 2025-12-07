@@ -1256,7 +1256,61 @@ local add = {
   ["Show Floor"] = "Pokaż podłogę",
   ["Show Outfit"] = "Pokaż strój",
   ["Show Mount"] = "Pokaż wierzchowca",
-  ["Show Familiar"] = "Pokaż towarzysza"
+  ["Show Familiar"] = "Pokaż towarzysza",
+  ["Show Wings"] = "Pokaż skrzydła",
+  ["Show Aura"] = "Pokaż aurę",
+  ["Show Shader"] = "Pokaż shader",
+  ["Show Bars"] = "Pokaż paski",
+  ["Show Title"] = "Pokaż tytuł",
+  ["Show Effects"] = "Pokaż efekty",
+  ["Configure"] = "Konfiguruj",
+  ["Addon 1"] = "Dodatek 1",
+  ["Addon 2"] = "Dodatek 2",
+  ["Mount"] = "Wierzchowiec",
+  ["Change Appearance"] = "Zmień wygląd",
+  ["Preset:"] = "Preset:",
+  ["Outfit:"] = "Strój:",
+  ["Mount:"] = "Wierzchowiec:",
+  ["Familiar:"] = "Towarzysz:",
+  ["Wings:"] = "Skrzydła:",
+  ["Aura:"] = "Aura:",
+  ["Shader:"] = "Shader:",
+  ["Health Bar:"] = "Pasek zdrowia:",
+  ["Effects:"] = "Efekty:",
+  ["Title:"] = "Tytuł:",
+  ["Head"] = "Głowa",
+  ["Primary"] = "Podstawowy",
+  ["Secondary"] = "Dodatkowy",
+  ["Detail"] = "Detal",
+  ["Manage Presets"] = "Zarządzaj presetami",
+  ["New"] = "Nowy",
+  ["Rename"] = "Zmień nazwę",
+  ["Delete"] = "Usuń",
+  
+  -- VIP edit
+  ["Name"] = "Nazwa",
+  ["Enter a short description:"] = "Wprowadź krótki opis:",
+  
+  -- Quest log
+  ["Add Tracked Quest"] = "Dodaj śledzone zadanie",
+  
+  -- Misc options
+  ["Client user features profile"] = "Profil funkcji użytkownika klienta",
+  ["Mode: \"Chat On\""] = "Tryb: \"Chat włączony\"",
+  
+  -- VIP groups
+  ["Add VIP group (User-Created groups left: %s)"] = "Dodaj grupę VIP (Pozostało grup użytkownika: %s)",
+  
+  -- Store transfer
+  ["Amount to gift:"] = "Ilość do podarowania:",
+  
+  -- Outfit presets
+  ["Only mine"] = "Tylko moje",
+  
+  -- Tooltips
+  ["Enable/Disable movement animation"] = "Włącz/Wyłącz animację ruchu",
+  ["Prey Wildcards"] = "Jokery polowań",
+  ["Gold Coins"] = "Złote monety"
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

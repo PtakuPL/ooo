@@ -18,7 +18,7 @@ UIWidget
     height: 55
     margin-top: 10
     Label
-      text: Client user features profile
+      !text: tr('Client user features profile')
       anchors.left: parent.left
       anchors.right: parent.right
       anchors.top: parent.top

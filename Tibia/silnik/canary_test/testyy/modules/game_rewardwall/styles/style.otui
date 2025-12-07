@@ -159,7 +159,7 @@ GoldLabel2 < UIWidget
     anchors.right: parent.right
     anchors.verticalCenter: parent.verticalCenter
     image-source: /images/game/prey/prey_gold
-    tooltip: Gold Coins
+    !tooltip: tr('Gold Coins')
     phantom: true
   UIWidget
     id: text

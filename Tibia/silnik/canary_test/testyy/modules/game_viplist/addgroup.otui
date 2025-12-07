@@ -1,6 +1,6 @@
 MainWindow
   size: 360 121
-  text: Add VIP group (User-Created groups left: %s)
+  !text: tr('Add VIP group (User-Created groups left: %s)')
   text-offset: 0 1
   @onEnter: modules.game_viplist.addGroup()
   @onEscape: |

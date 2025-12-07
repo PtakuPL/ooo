@@ -1529,7 +1529,32 @@ local add = {
   [" from range "] = " z zasięgu ",
   
   -- Main panel
-  ["Control Buttons"] = "Przyciski sterowania"
+  ["Control Buttons"] = "Przyciski sterowania",
+  
+  -- Account status
+  ["Online"] = "Online",
+  ["Free"] = "Darmowe",
+  ["Premium"] = "Premium",
+  ["None"] = "Brak",
+  
+  -- Achievement categories (character.otui)
+  ["Sort"] = "Sortuj",
+  ["Regular"] = "Zwykłe",
+  ["Secret"] = "Sekretne",
+  
+  -- Defence stats
+  ["Defence Value"] = "Wartość obrony",
+  ["Armor Value"] = "Wartość pancerza",
+  ["Flat"] = "Stałe",
+  ["Percent"] = "Procent",
+  ["Reflect Physical"] = "Odbicie fizyczne",
+  ["Resistances"] = "Odporności",
+  
+  -- Misc stats
+  ["Transcendence"] = "Transcendencja",
+  ["Damage Reflection"] = "Odbicie obrażeń",
+  ["From Bonus"] = "Z bonusu",
+  ["Blessings"] = "Błogosławieństwa"
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

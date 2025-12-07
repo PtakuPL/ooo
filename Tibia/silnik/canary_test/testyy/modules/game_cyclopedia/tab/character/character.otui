@@ -1139,7 +1139,7 @@ UIWidget
       margin-top: -5
       @onOptionChange: modules.game_cyclopedia.Cyclopedia.achievementSort(self:getCurrentOption().data)
     Label
-      !text: ('Sort')
+      !text: tr('Sort')
       anchors.top: sort.top
       anchors.right: sort.left
       margin-right: 5
@@ -1164,7 +1164,7 @@ UIWidget
         !text: ('0/329')
         anchors.centerIn: parent
     Label
-      !text: ('Regular')
+      !text: tr('Regular')
       anchors.top: regular.top
       anchors.right: regular.left
       margin-right: 5
@@ -1189,7 +1189,7 @@ UIWidget
         !text: ('0/0')
         anchors.centerIn: parent
     Label
-      !text: ('Secret')
+      !text: tr('Secret')
       anchors.top: secret.top
       anchors.right: secret.left
       margin-right: 5

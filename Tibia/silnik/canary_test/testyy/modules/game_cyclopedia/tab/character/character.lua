@@ -1218,19 +1218,19 @@ function Cyclopedia.loadCharacterBadges(showAccountInformation, playerOnline, pl
     local playerOnlineStatus = "Offline"
     local playerOnlineStatusColor = "#ff0000"
     if playerOnline == 1 then
-        playerOnlineStatus = "Online"
+        playerOnlineStatus = tr("Online")
         playerOnlineStatusColor = "#00ff00"
     end
 
-    local accountStatus = "Free"
+    local accountStatus = tr("Free")
     local accountStatusColor = "#ff0000"
     if playerPremium == 1 then
-        accountStatus = "Premium"
+        accountStatus = tr("Premium")
         accountStatusColor = "#00ff00"
     end
 
     if not loyaltyTitle or loyaltyTitle == "" then
-        loyaltyTitle = "None"
+        loyaltyTitle = tr("None")
     end
 
     Cyclopedia.setCharacterSkillValue("accountStatus", accountStatus, accountStatusColor)
@@ -1445,12 +1445,12 @@ local  function getWeaponSkillName(skillType)
         UI.DeffenceStats.leftPanel:destroyChildren()
     
         local stats = {
-            {name = "Defence Value", value = data.defense or 0, icon = false, percent = false},
+            {name = tr("Defence Value"), value = data.defense or 0, icon = false, percent = false},
             {name = tr("From Equipment"), value = data.defenseEquipment or 0, align = "center", icon = false},
             {name = tr("From Wheel"), value = data.defenseWheel or 0, align = "center", icon = false},
             {name = getWeaponSkillName(data.defenseSkillType), value = data.shieldingSkill or 0, align = "center", icon = false},
             
-            {name = "Armor Value", value = data.armor or 0, icon = false, percent = false},
+            {name = tr("Armor Value"), value = data.armor or 0, icon = false, percent = false},
             
             {name = tr("Mitigation"), value = data.mitigation or 0, icon = false, percent = true},
             {name = tr("From Shielding"), value = data.mitigationShield or 0, align = "center", percent = true, icon = false},
@@ -1465,12 +1465,12 @@ local  function getWeaponSkillName(skillType)
             {name = tr("From Wheel"), value = data.dodgeWheel or 0, align = "center", percent = true, icon = false},
             
             {name = tr("Magic Shield Capacity"), value = data.magicShieldCapacity or 0, icon = false, percent = false},
-            {name = "Flat", value = data.magicShieldCapacityFlat or 0, align = "center", icon = false},
-            {name = "Percent", value = data.magicShieldCapacityPercent or 0, align = "center", percent = true, icon = false},
+            {name = tr("Flat"), value = data.magicShieldCapacityFlat or 0, align = "center", icon = false},
+            {name = tr("Percent"), value = data.magicShieldCapacityPercent or 0, align = "center", percent = true, icon = false},
             
-            {name = "Reflect Physical", value = data.reflectPhysical or 0, icon = false, percent = false},
+            {name = tr("Reflect Physical"), value = data.reflectPhysical or 0, icon = false, percent = false},
             
-            {name = "Resistances", parent = "right", value = "", icon = false}
+            {name = tr("Resistances"), parent = "right", value = "", icon = false}
         }
         
         local resistanceMap = {}
@@ -1572,16 +1572,16 @@ local  function getWeaponSkillName(skillType)
             {name = tr("From Amplification"), value = data.momentumBonus or 0, align = "center", percent = true, icon = false},
             {name = tr("From Wheel"), value = data.momentumWheel or 0, align = "center", percent = true, icon = false},
             
-            {name = "Transcendence", value = data.dodgeTotal or 0, icon = false, percent = true},
+            {name = tr("Transcendence"), value = data.dodgeTotal or 0, icon = false, percent = true},
             {name = tr("From Base"), value = data.dodgeBase or 0, align = "center", percent = true, icon = false},
             {name = tr("From Amplification"), value = data.dodgeBonus or 0, align = "center", percent = true, icon = false},
             {name = tr("From Event Bonus"), value = data.dodgeWheel or 0, align = "center", percent = true, icon = false},
             
-            {name = "Damage Reflection", value = data.damageReflectionTotal or 0, icon = false, percent = true},
+            {name = tr("Damage Reflection"), value = data.damageReflectionTotal or 0, icon = false, percent = true},
             {name = tr("From Base"), value = data.damageReflectionBase or 0, align = "center", percent = true, icon = false},
-            {name = "From Bonus", value = data.damageReflectionBonus or 0, align = "center", percent = true, icon = false},
+            {name = tr("From Bonus"), value = data.damageReflectionBonus or 0, align = "center", percent = true, icon = false},
             
-            {name = "Blessings", value = (data.haveBlesses or 0) .. "/" .. (data.totalBlesses or 0), icon = false, percent = false},
+            {name = tr("Blessings"), value = (data.haveBlesses or 0) .. "/" .. (data.totalBlesses or 0), icon = false, percent = false},
 
         }
         

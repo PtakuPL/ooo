@@ -95,6 +95,8 @@ jobs:
                 -DOTC_ENABLE_NLOHMANN_JSON=OFF \
                 -DOTC_ENABLE_PUGIXML=OFF \
                 -DOTC_ENABLE_FMT=OFF \
+                -DOTC_ENABLE_HTTPLIB=OFF \
+                -DOTC_ENABLE_GMP=OFF \
                 -DOTC_ENABLE_TTF=OFF \
                 -DOTC_ENABLE_HARFBUZZ=OFF \
                 -DOTC_ENABLE_FRIBIDI=OFF \

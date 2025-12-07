@@ -2087,7 +2087,7 @@ function online()
     serverTab = addTab(tr('Server Log'), false)
 
     if g_game.getClientVersion() >= 820 then
-        local tab = addTab('NPCs', false)
+        local tab = addTab(tr('NPCs'), false)
         tab.npcChat = true
     end
     if g_game.getClientVersion() < 862 then

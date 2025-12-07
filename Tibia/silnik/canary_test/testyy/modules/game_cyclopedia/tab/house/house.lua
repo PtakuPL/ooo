@@ -1098,8 +1098,8 @@ function Cyclopedia.reloadHouseList()
                 widget.data = data
                 widget:setId(data.id)
                 widget:setText(data.name)
-                widget.size:setColoredText("{Size:     , #909090}" .. data.sqm .. " sqm")
-                widget.beds:setColoredText("{Max. Beds: ,#909090} " .. data.beds)
+                widget.size:setColoredText("{" .. tr("Size:") .. "     , #909090}" .. data.sqm .. " sqm")
+                widget.beds:setColoredText("{" .. tr("Max. Beds:") .. " ,#909090} " .. data.beds)
                 widget.rent:setColoredText(data.rent)
 
                 if data.description ~= "" then
@@ -1117,13 +1117,13 @@ function Cyclopedia.reloadHouseList()
                             return string.format("%02dh %02dmin", hour, minutes)
                         end
 
-                        widget.status:setColoredText("{Status:  , #909090}{auctioned, #00F000} (Bid: " ..
-                                                         data.hightestBid .. " Ends in: " .. format(data.bidEnd) .. ")")
+                        widget.status:setColoredText("{" .. tr("Status:") .. "  , #909090}{" .. tr("auctioned") .. ", #00F000} (" .. tr("Bid:") .. " " ..
+                                                         data.hightestBid .. " " .. tr("Ends in:") .. " " .. format(data.bidEnd) .. ")")
                     else
-                        widget.status:setColoredText("{Status:  , #909090}{auctioned, #00F000} (no bid yet)")
+                        widget.status:setColoredText("{" .. tr("Status:") .. "  , #909090}{" .. tr("auctioned") .. ", #00F000} (" .. tr("no bid yet") .. ")")
                     end
                 elseif data.state == 2 then
-                    widget.status:setColoredText("{Status:  , #909090}rented by " .. data.owner)
+                    widget.status:setColoredText("{" .. tr("Status:") .. "  , #909090}" .. tr("rented by") .. " " .. data.owner)
                 end
 
                 widget.onClick = Cyclopedia.selectHouse
@@ -1303,9 +1303,9 @@ function Cyclopedia.selectHouse(widget)
         local formattedDate = os.date("%b %d, %H:%M", widget.data.bidEnd)
         local date = string.format("%s %s", formattedDate, "CET")
 
-        UI.LateralBase.AuctionText:setColoredText("{Hightest Bidder: , #909090}" .. widget.data.bidName ..
-                                                      "\n{      End Time: , #909090}" .. date ..
-                                                      "\n{   Highest Bid: , #909090}")
+        UI.LateralBase.AuctionText:setColoredText("{" .. tr("Hightest Bidder:") .. " , #909090}" .. widget.data.bidName ..
+                                                      "\n{      " .. tr("End Time:") .. " , #909090}" .. date ..
+                                                      "\n{   " .. tr("Highest Bid:") .. " , #909090}")
         UI.LateralBase.highestBid:setVisible(true)
         UI.LateralBase.highestBidGold:setVisible(true)
         UI.LateralBase.highestBid:setText(comma_value(widget.data.hightestBid))
@@ -1321,8 +1321,8 @@ function Cyclopedia.selectHouse(widget)
         local date = string.format("%s %s", formattedDate, "CET")
 
         UI.LateralBase.AuctionLabel:setText(tr("Rental Details"))
-        UI.LateralBase.AuctionText:setColoredText("{            Tenant: , #909090}" .. widget.data.owner ..
-                                                      "\n{         Paid Until: , #909090}" .. date)
+        UI.LateralBase.AuctionText:setColoredText("{            " .. tr("Tenant:") .. " , #909090}" .. widget.data.owner ..
+                                                      "\n{         " .. tr("Paid Until:") .. " , #909090}" .. date)
 
         if widget.data.inTransfer then
             formattedDate = os.date("%b %d, %H:%M", widget.data.transferTime)
@@ -1330,8 +1330,8 @@ function Cyclopedia.selectHouse(widget)
 
             UI.LateralBase.subAuctionLabel:setVisible(true)
             UI.LateralBase.subAuctionText:setVisible(true)
-            UI.LateralBase.subAuctionText:setColoredText("{      New Owner:  , #909090}" .. widget.data.transferName ..
-                                                             "\n{                Date:  , #909090}" .. date)
+            UI.LateralBase.subAuctionText:setColoredText("{      " .. tr("New Owner:") .. "  , #909090}" .. widget.data.transferName ..
+                                                             "\n{                " .. tr("Date:") .. "  , #909090}" .. date)
             UI.LateralBase.transferLabel:setVisible(true)
             UI.LateralBase.transferValue:setVisible(true)
             UI.LateralBase.transferGold:setVisible(true)

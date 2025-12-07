@@ -75,14 +75,14 @@ SouthWest = Directions.SouthWest
 NorthWest = Directions.NorthWest
 
 DirectionString = {
-    [North] = "North",
-    [East] = "East",
-    [South] = "South",
-    [West] = "West",
-    [NorthEast] = "North East",
-    [SouthEast] = "South East",
-    [SouthWest] = "South West",
-    [NorthWest] = "North West"
+    [North] = tr("North"),
+    [East] = tr("East"),
+    [South] = tr("South"),
+    [West] = tr("West"),
+    [NorthEast] = tr("North East"),
+    [SouthEast] = tr("South East"),
+    [SouthWest] = tr("South West"),
+    [NorthWest] = tr("North West")
 }
 
 FightOffensive = 1

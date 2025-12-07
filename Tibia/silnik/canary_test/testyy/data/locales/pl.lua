@@ -1401,7 +1401,39 @@ local add = {
   ["Axe Fighting"] = "Walka toporem",
   ["Distance Fighting"] = "Walka dystansowa",
   ["Shielding"] = "Obrona tarczą",
-  ["Fishing"] = "Wędkarstwo"
+  ["Fishing"] = "Wędkarstwo",
+  
+  -- Skills bar
+  ["Level"] = "Poziom",
+  ["Axe Fighting Skill"] = "Umiejętność walki toporem",
+  ["Club Fighting Skill"] = "Umiejętność walki maczugą",
+  ["Distance Fighting Skill"] = "Umiejętność walki dystansowej",
+  ["Fist Fighting Skill"] = "Umiejętność walki wręcz",
+  ["Shielding Skill"] = "Umiejętność obrony tarczą",
+  ["Sword Fighting Skill"] = "Umiejętność walki mieczem",
+  ["Fishing Skill"] = "Umiejętność wędkarstwa",
+  
+  -- Vocations
+  ["No Vocation"] = "Brak profesji",
+  ["Knight"] = "Rycerz",
+  ["Paladin"] = "Paladyn",
+  ["Sorcerer"] = "Czarodziej",
+  ["Druid"] = "Druid",
+  ["Elite Knight"] = "Elitarny Rycerz",
+  ["Royal Paladin"] = "Królewski Paladyn",
+  ["Master Sorcerer"] = "Mistrz Czarodziejstwa",
+  ["Elder Druid"] = "Starszy Druid",
+  ["Unknown Vocation"] = "Nieznana profesja",
+  
+  -- Directions
+  ["North"] = "Północ",
+  ["East"] = "Wschód",
+  ["South"] = "Południe",
+  ["West"] = "Zachód",
+  ["North East"] = "Północny wschód",
+  ["South East"] = "Południowy wschód",
+  ["South West"] = "Południowy zachód",
+  ["North West"] = "Północny zachód"
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

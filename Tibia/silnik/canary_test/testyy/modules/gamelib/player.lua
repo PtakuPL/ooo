@@ -112,15 +112,15 @@ InventorySlotFirst = 1
 InventorySlotLast = 10
 
 vocationNamesByClientId = {
-    [0] = "No Vocation",
-    [1] = "Knight",
-    [2] = "Paladin",
-    [3] = "Sorcerer",
-    [4] = "Druid",
-    [11]= "Elite Knight",
-    [12] = "Royal Paladin",
-    [13] = "Master Sorcerer",
-    [14] = "Elder Druid"
+    [0] = tr("No Vocation"),
+    [1] = tr("Knight"),
+    [2] = tr("Paladin"),
+    [3] = tr("Sorcerer"),
+    [4] = tr("Druid"),
+    [11]= tr("Elite Knight"),
+    [12] = tr("Royal Paladin"),
+    [13] = tr("Master Sorcerer"),
+    [14] = tr("Elder Druid")
 }
 
 function Player:isPartyLeader()
@@ -229,5 +229,5 @@ function Player:hasState(state, states)
 end
 
 function Player:getVocationNameByClientId()
-    return vocationNamesByClientId[self:getVocation()] or "Unknown Vocation"
+    return vocationNamesByClientId[self:getVocation()] or tr("Unknown Vocation")
 end

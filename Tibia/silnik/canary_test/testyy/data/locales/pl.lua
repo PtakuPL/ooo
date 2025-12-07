@@ -1449,7 +1449,34 @@ local add = {
   -- Reward Wall explanations
   ["This explains the reward streak system. You need to claim your daily reward between regular server saves to maintain your streak. At a streak of 2+, your character gets resting area bonuses. Free accounts can reach a maximum bonus at streak level 3, while premium players can reach higher levels. Characters on the same account share the streak."] = "To wyjaśnia system serii nagród. Musisz odebrać codzienną nagrodę między regularnymi zapisami serwera, aby utrzymać serię. Przy serii 2+, Twoja postać otrzymuje bonusy w strefach odpoczynku. Darmowe konta mogą osiągnąć maksymalny bonus przy poziomie serii 3, podczas gdy gracze premium mogą osiągnąć wyższe poziomy. Postacie na tym samym koncie dzielą serię.",
   ["This is an urgent notification to claim your daily reward within one minute (before the next server save) to raise your reward streak by 1. It mentions that 3 Daily Reward Jokers will be used to prevent resetting your streak. It also encourages raising your streak to benefit from bonuses in resting areas."] = "To pilne powiadomienie o odebraniu codziennej nagrody w ciągu minuty (przed następnym zapisem serwera), aby zwiększyć serię nagród o 1. Wspomina, że 3 Jokery Codziennych Nagród zostaną użyte, aby zapobiec resetowaniu serii. Zachęca również do zwiększania serii, aby korzystać z bonusów w strefach odpoczynku.",
-  ["This explains how Daily Reward Jokers work. They help you maintain your streak on days when you can't claim your daily reward. Each character receives one Daily Reward Joker on the first day of each month. The message recommends collecting rewards daily to stay safe."] = "To wyjaśnia jak działają Jokery Codziennych Nagród. Pomagają utrzymać serię w dni, gdy nie możesz odebrać codziennej nagrody. Każda postać otrzymuje jednego Jokera Codziennych Nagród pierwszego dnia każdego miesiąca. Wiadomość zaleca codzienne zbieranie nagród, aby być bezpiecznym."
+  ["This explains how Daily Reward Jokers work. They help you maintain your streak on days when you can't claim your daily reward. Each character receives one Daily Reward Joker on the first day of each month. The message recommends collecting rewards daily to stay safe."] = "To wyjaśnia jak działają Jokery Codziennych Nagród. Pomagają utrzymać serię w dni, gdy nie możesz odebrać codziennej nagrody. Każda postać otrzymuje jednego Jokera Codziennych Nagród pierwszego dnia każdego miesiąca. Wiadomość zaleca codzienne zbieranie nagród, aby być bezpiecznym.",
+  
+  -- House sorting/filtering
+  ["All States"] = "Wszystkie stany",
+  ["Auctioned"] = "Na aukcji",
+  ["Rented"] = "Wynajęte",
+  ["Own Houses"] = "Własne domy",
+  ["Sort by name"] = "Sortuj po nazwie",
+  ["Sort by size"] = "Sortuj po wielkości",
+  ["Sort by rent"] = "Sortuj po czynszu",
+  ["Sort by bid"] = "Sortuj po ofercie",
+  ["Sort by auction end"] = "Sortuj po końcu aukcji",
+  
+  -- Character menu categories
+  ["General Stats"] = "Statystyki ogólne",
+  ["Character Stats"] = "Statystyki postaci",
+  ["Combat Stats"] = "Statystyki walki",
+  ["Offence Stats"] = "Statystyki ofensywne",
+  ["Deffence Stats"] = "Statystyki defensywne",
+  ["Misc. Stats"] = "Różne statystyki",
+  ["Battle Results"] = "Wyniki walki",
+  ["Recent Deaths"] = "Ostatnie śmierci",
+  ["Recent PvP Kills"] = "Ostatnie zabójstwa PvP",
+  ["Achievements"] = "Osiągnięcia",
+  ["Item Summary"] = "Podsumowanie przedmiotów",
+  ["Appearances"] = "Wyglądy",
+  ["Store Summary"] = "Podsumowanie sklepu",
+  ["Character Titles"] = "Tytuły postaci"
 }
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v

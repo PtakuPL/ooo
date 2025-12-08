@@ -96,7 +96,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "gratitude") then
 		npcHandler:setTopic(playerId, 3)
-		npcHandler:say("Oh, so you want a reward, hm? Well... let's see. What did you do for us - helping Mortis with his {repairs} and defended him?", npc, creature)
+		npcHandler:sayLocalized("npc.sandomo.oh_so_you_1", npc, creature)
 	elseif MsgContains(message, "repairs") then
 		if npcHandler:getTopic(playerId) == 3 then
 			if player:getInquisitionGold() > 0 then
@@ -108,7 +108,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				}, npc, creature)
 			else
 				npcHandler:setTopic(playerId, nil)
-				npcHandler:say("Come back after you have done at least one of the tasks I talked you about.", npc, creature)
+				npcHandler:sayLocalized("npc.sandomo.come_back_after_2", npc, creature)
 			end
 		end
 	elseif npcHandler:getTopic(playerId) == 4 then
@@ -137,38 +137,38 @@ local function creatureSayCallback(npc, creature, type, message)
 		if v > 0 then
 			npcHandler:say("You have " .. v .. " inquisition gold registered in my book.", npc, creature)
 		else
-			npcHandler:say("I do not see inquisition gold registered in my book from you.", npc, creature)
+			npcHandler:sayLocalized("npc.sandomo.i_do_not_3", npc, creature)
 		end
 	elseif MsgContains(message, "trade") then
 		local v = player:getStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Gold_Record)
 		if v >= 100 then
 			npcHandler:setTopic(playerId, 6)
-			npcHandler:say("Ah yes, you currently have " .. v .. " of righteously earned inquisition gold in my book. 100 inquisition gold equals one cluster. How many clusters do you want in exchange?", npc, creature)
+			npcHandler:sayLocalized("npc.sandomo.ah_yes_you_4" .. v .. " of righteously earned inquisition gold in my book. 100 inquisition gold equals one cluster. How many clusters do you want in exchange?", npc, creature)
 		else
 			npcHandler:setTopic(playerId, nil)
-			npcHandler:say("You do not seem to have enough inquisition gold yet to trade for clusters, as it's registered in my book.", npc, creature)
+			npcHandler:sayLocalized("npc.sandomo.you_do_not_5", npc, creature)
 		end
 	elseif npcHandler:getTopic(playerId) == 6 then
 		local v = tonumber(message)
 		if (v == nil) or (v < 1) or (math.floor(v) ~= v) then
-			return npcHandler:say("You should tell me a real number.", npc, creature)
+			return npcHandler:sayLocalized("npc.sandomo.you_should_tell_6", npc, creature)
 		end
 
 		local max = math.floor(player:getStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Gold_Record) / 100)
 		if v > max then
-			return npcHandler:say("You do not have enough inquisition gold for that, so far you can ask for up to " .. max .. " clusters.", npc, creature)
+			return npcHandler:sayLocalized("npc.sandomo.you_do_not_7" .. max .. " clusters.", npc, creature)
 		end
 
 		player:addItem(20062, v)
 		npcHandler:setTopic(playerId, nil)
 		player:setStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Gold_Record, player:getStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Gold_Record) - (v * 100))
-		npcHandler:say("There you are. Now I register " .. player:getStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Gold_Record) .. " inquisition gold of yours in my book.", npc, creature)
+		npcHandler:sayLocalized("npc.sandomo.there_you_are_8" .. player:getStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Gold_Record) .. " inquisition gold of yours in my book.", npc, creature)
 	end
 
 	if MsgContains(message, "bucket") or MsgContains(message, "supplies") then
-		npcHandler:say("Head to brother Maun if you are in need of basic supplies. He will help you - for a small fee.", npc, creature)
+		npcHandler:sayLocalized("npc.sandomo.head_to_brother_9", npc, creature)
 	elseif MsgContains(message, "maun") then
-		npcHandler:say("Brother Maun is a valuable member of the Inquisition. He will help you out with supplies. Provided you can actually compensate of course.", npc, creature)
+		npcHandler:sayLocalized("npc.sandomo.brother_maun_is_10", npc, creature)
 	end
 	return true
 end

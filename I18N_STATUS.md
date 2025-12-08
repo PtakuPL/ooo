@@ -6,57 +6,57 @@
 
 ## 📊 Aktualny postęp
 
-![NPC Migration](https://img.shields.io/badge/NPC-31.6%25-orange?style=for-the-badge&logo=lua)
-![Keys](https://img.shields.io/badge/Keys-42849-blue?style=for-the-badge&logo=json)
+![NPC Migration](https://img.shields.io/badge/NPC-32.5%25-orange?style=for-the-badge&logo=lua)
+![Keys](https://img.shields.io/badge/Keys-42912-blue?style=for-the-badge&logo=json)
 ![Speed](https://img.shields.io/badge/Speed-4.7_NPC%2Fmin-purple?style=for-the-badge&logo=speedtest)
 ![Errors](https://img.shields.io/badge/Errors-0-green?style=for-the-badge)
 
 ## 📈 Progress Bar
 
 ```
-[████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 31.6%
- 325 / 1027 NPC
+[█████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░] 32.5%
+ 334 / 1027 NPC
 ```
 
 ## 📋 Szczegóły
 
 | 📌 Metryka | 📊 Wartość |
 |------------|------------|
-| **NPC Zmigrowanych** | `325` / `1027` |
-| **Postęp** | **31.6%** |
-| **Klucze i18n** | `42849` |
+| **NPC Zmigrowanych** | `334` / `1027` |
+| **Postęp** | **32.5%** |
+| **Klucze i18n** | `42912` |
 | **Języki** | 5 (🇬🇧 en, 🇵🇱 pl, 🇩🇪 de, 🇪🇸 es, 🇧🇷 pt) |
 | **Prędkość** | ~`4.7` NPC/min |
-| **Czas pracy** | 61min |
+| **Czas pracy** | 63min |
 | **Start** | 11:42 |
-| **ETA** | ~149 min |
+| **ETA** | ~147 min |
 | **Błędy** | 0 |
 
 ## 📁 Ostatnio zmodyfikowane NPC
 
 | Plik |
 |------|
-| `rock_steady.lua` |
-| `rock_in_a_hard_place.lua` |
-| `robson.lua` |
-| `riddler.lua` |
-| `richard.lua` |
-| `rehon.lua` |
-| `reed.lua` |
-| `razan.lua` |
+| `santa_claus.lua` |
+| `sandra.lua` |
+| `sandomo.lua` |
+| `sam.lua` |
+| `ruprecht.lua` |
+| `rottin_wood.lua` |
+| `roswitha.lua` |
+| `rose.lua` |
 
 ## 🔧 Status Workera
 
 ```
-[2025-12-08 12:43:58] [INFO] 🔬 FAZA 3: ANALIZA
+[2025-12-08 12:45:49] [INFO] 🔬 FAZA 3: ANALIZA
 ```
 
 ## 🔄 Ostatnia aktualizacja
 
 | 🕐 Czas | 📅 Data |
 |---------|---------|
-| **UTC:** | 2025-12-08 11:44:01 UTC |
-| **Local:** | 12:44:01 |
+| **UTC:** | 2025-12-08 11:46:01 UTC |
+| **Local:** | 12:46:01 |
 
 ---
 

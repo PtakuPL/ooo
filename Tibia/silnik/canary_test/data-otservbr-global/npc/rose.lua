@@ -59,17 +59,17 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "Hydra Tongue") then
-		npcHandler:say("Do you want to buy a Hydra Tongue for 100 gold?", npc, creature)
+		npcHandler:sayLocalized("npc.rose.do_you_want_1", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:getMoney() + player:getBankBalance() >= 100 then
 				player:removeMoneyBank(100)
-				npcHandler:say("Here you are. A Hydra Tongue!", npc, creature)
+				npcHandler:sayLocalized("npc.rose.here_you_are_2", npc, creature)
 				player:addItem(7250, 1)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				npcHandler:sayLocalized("npc.rose.you_dont_have_3", npc, creature)
 			end
 		end
 	elseif MsgContains(message, "no") then

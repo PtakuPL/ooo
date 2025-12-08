@@ -96,11 +96,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		local table = itemsTable[message]
 		if table then
 			if table.itemId ~= 6496 then
-				npcHandler:say("So you want to exchange " .. message .. ", for " .. table.count .. " christmas tokens?", npc, creature)
+				npcHandler:sayLocalized("npc.ruprecht.so_you_want_1" .. message .. ", for " .. table.count .. " christmas tokens?", npc, creature)
 				storeTable[playerId] = message
 				npcHandler:setTopic(playerId, 1)
 			else
-				npcHandler:say("So you want to exchange " .. message .. " to " .. table.count .. " christmas token(s)?", npc, creature)
+				npcHandler:sayLocalized("npc.ruprecht.so_you_want_2" .. message .. " to " .. table.count .. " christmas token(s)?", npc, creature)
 				storeTable[playerId] = 6526
 				npcHandler:setTopic(playerId, 1)
 			end
@@ -109,27 +109,27 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			if tonumber(storeTable[playerId]) == 6526 then
 				if player:removeItem(6496, 1) then
-					npcHandler:say("Thank you, here is your 1 christmas token.", npc, creature)
+					npcHandler:sayLocalized("npc.ruprecht.thank_you_here_3", npc, creature)
 					player:addItem(6526, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("You don't have a present bag.", npc, creature)
+					npcHandler:sayLocalized("npc.ruprecht.you_dont_have_4", npc, creature)
 					npcHandler:setTopic(playerId, 0)
 				end
 				return false
 			end
 			if player:removeItem(6526, itemsTable[storeTable[playerId]].count) then
-				npcHandler:say("Thank you, here is your " .. storeTable[playerId] .. ".", npc, creature)
+				npcHandler:sayLocalized("npc.ruprecht.thank_you_here_5" .. storeTable[playerId] .. ".", npc, creature)
 				player:addItem(itemsTable[storeTable[playerId]].itemId, 1)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough of tokens.", npc, creature)
+				npcHandler:sayLocalized("npc.ruprecht.you_dont_have_6", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif npcHandler:getTopic(playerId) > 0 then
 		if MsgContains(message, "no") then
-			npcHandler:say("Come back when you are ready to trade some tokens!", npc, creature)
+			npcHandler:sayLocalized("npc.ruprecht.come_back_when_7", npc, creature)
 		end
 	end
 	if MsgContains(message, "santa claus") then

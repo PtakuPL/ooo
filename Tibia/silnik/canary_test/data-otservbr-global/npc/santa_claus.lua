@@ -103,7 +103,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "present") then
 		local player = Player(creature)
 		if player:getStorageValue(840293) == 1 then
-			npcHandler:say("You can't get other present.", npc, creature)
+			npcHandler:sayLocalized("npc.santa_claus.you_cant_get_1", npc, creature)
 			return false
 		end
 
@@ -120,7 +120,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 
 		player:setStorageValue(840293, 1)
-		npcHandler:say("Merry Christmas!", npc, creature)
+		npcHandler:sayLocalized("npc.santa_claus.merry_christmas_2", npc, creature)
 	end
 
 	return true

@@ -1,84 +1,178 @@
-# 🌍 I18N Worker Status
+# 🌍 I18N Internationalization System - Live Dashboard
 
-> 🤖 **Autonomiczny worker działa w tle** - migruje NPC do systemu i18n
+> **Aktualizacja:** 2025-12-08 19:41:57 UTC  
+> **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
 
-## 🛡️ Status Systemu
-
-| Komponent | Status |
-|-----------|--------|
-| **Worker** | 🔴 Stopped (PID: 1818402) |
-| **Guardian** | 🟢 Active (sprawdza co 1 min) |
-| **Cykl** | #23 |
-| **Restarty** | 1 |
-
-## 📊 Aktualny postęp
-
-![NPC Migration](https://img.shields.io/badge/NPC-43.6%25-orange?style=for-the-badge&logo=lua)
-![Keys](https://img.shields.io/badge/Keys-43641-blue?style=for-the-badge&logo=json)
-![Speed](https://img.shields.io/badge/Speed-1.2_NPC%2Fmin-purple?style=for-the-badge&logo=speedtest)
-![Worker](https://img.shields.io/badge/Worker-red-red?style=for-the-badge)
-
-## 📈 Progress Bar
+## 🤖 AI Agent Integration
 
 ```
-[█████████████████░░░░░░░░░░░░░░░░░░░░░░░] 43.6%
- 448 / 1027 NPC (594 wykluczonych)
+┌─────────────────────────────────────────────────────────────────┐
+│  Status zoptymalizowany dla AI agentów (Codex/Copilot/Claude)  │
+│  JSON data: i18n/status/worker_state.json                      │
+│  Categories: i18n/status/categories/*.json                     │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
-## 📋 Szczegóły
+---
 
-| 📌 Metryka | 📊 Wartość |
-|------------|------------|
-| **NPC Zmigrowanych** | `448` / `1027` |
-| **Wykluczonych** | `594` (brak stringów) |
-| **Postęp** | **43.6%** |
-| **Klucze i18n** | `43641` |
-| **Języki** | 5 (🇬🇧 en, 🇵🇱 pl, 🇩🇪 de, 🇪🇸 es, 🇧🇷 pt) |
-| **Prędkość** | ~`1.2` NPC/min |
-| **Czas pracy** | 352min |
-| **Start** | 11:42 |
-| **ETA** | ~482 min |
-| **Błędy** | 0 |
-| **Cykl** | #23 |
+## 📊 Globalny Postęp
 
-## 📁 Ostatnio zmodyfikowane NPC
+| Metryka | Wartość | Trend |
+|---------|---------|-------|
+| 📁 Plików przetworzonych | **927** | ↑ |
+| ⏭️ Plików wykluczonych | **3017** | - |
+| 🔑 Kluczy i18n | **41733** | ↑ |
+| 🌍 Języków | **53** | ✓ |
+| ⚠️ Konfliktów | **58** | ✓ |
+| 🔄 Cykl | **#8** | - |
 
-| Plik |
-|------|
-| `warbert.lua` |
-| `taegen.lua` |
-| `stutch.lua` |
-| `jean_claude.lua` |
-| `harsky.lua` |
-| `fenbala.lua` |
-| `edron_guardsman.lua` |
-| `demonguard.lua` |
+---
 
-## 🔧 Status Workera
+## 📂 Kategorie Pracy
 
-```
-[2025-12-08 17:35:20] [INFO] 📊 RAPORT CYKLU #24
-```
+<details>
+<summary><h3>🧙 1. NPC Dialogs - COMPLETED ✅</h3></summary>
 
-## 🛡️ Zabezpieczenia
-
-- ✅ **Guardian** - restartuje workera jeśli padnie (cron co 1 min)
-- ✅ **Checkpointing** - zapisuje stan po każdym cyklu
-- ✅ **Graceful shutdown** - poprawne zamykanie
-- ✅ **Error handling** - kontynuuje mimo błędów
-- ✅ **Excluded list** - pomija problematyczne pliki
-
-## 🔄 Ostatnia aktualizacja
-
-| 🕐 Czas | 📅 Data |
+| Metryka | Wartość |
 |---------|---------|
-| **UTC:** | 2025-12-08 16:40:03 UTC |
-| **Local:** | 17:40:03 |
+| 🔑 Kluczy | 4048 |
+| 📊 Status | ✅ Zakończone |
+| 📂 Plików | ~877 |
+
+**Źródła:** `data-otservbr-global/npc/`, `data-canary/npc/`
+
+**Wzorce ekstrakcji:**
+```lua
+npcHandler:say("text")
+selfSay("text")
+```
+
+</details>
 
 ---
 
-⏱️ *Status aktualizowany automatycznie co 2 minuty*
+<details open>
+<summary><h3>📜 2. Lua Scripts - IN PROGRESS 🔄</h3></summary>
 
-🔗 **Link:** [github.com/PtakuPL/ooo](https://github.com/PtakuPL/ooo)
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | **713** |
+| 📊 Status | 🔄 W trakcie |
+| 🎯 Aktualnie | `data-otservbr-global/scripts/` |
+| 🔄 Cykl | #8 |
+
+### 📁 Podkatalogi - Postęp
+
+| Katalog | Przetworzonych | Status |
+|---------|----------------|--------|
+| `quests/` | 286 | 🔄 W trakcie |
+| `actions/` | 58 | 🔄 W trakcie |
+| `movements/` | 13 | 🔄 W trakcie |
+| `creaturescripts/` | 8 | 🔄 W trakcie |
+| `talkactions/` | 33 | 🔄 W trakcie |
+| `globalevents/` | 1 | 🔄 W trakcie |
+| `spells/` | 0 | ⏳ Oczekuje |
+
+### 📄 Ostatnio przetworzone pliki
+
+| Plik | Czas | Status |
+|------|------|--------|
+| `index.php` | 22:15:08 | ✅ |
+| `openid.php` | 22:15:08 | ✅ |
+| `signon.php` | 22:15:08 | ✅ |
+| `translation_manager.php` | 21:33:39 | ✅ |
+| `index.php` | 06:26:18 | ✅ |
+
+### 💻 Przykład kodu (ostatni plik)
+
+```lua
+
+```
+
+**Wzorce ekstrakcji:**
+```lua
+player:sendTextMessage(type, "text")
+creature:say("text")
+```
+
+</details>
+
+---
+
+<details>
+<summary><h3>🎒 3. Items - COMPLETED ✅</h3></summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | 36972 |
+| 📊 Status | ✅ Zakończone |
+
+</details>
+
+---
+
+<details>
+<summary><h3>👹 4. Monsters - PENDING ⏳</h3></summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | 0 |
+| 📊 Status | ⏳ Oczekuje |
+| 📅 Start | Po zakończeniu Scripts |
+
+</details>
+
+---
+
+<details>
+<summary><h3>⚙️ 5. Server C++ - PENDING ⏳</h3></summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | 0 |
+| 📊 Status | ⏳ Oczekuje |
+| ⚠️ Wymaga | Rekompilacja serwera |
+
+</details>
+
+---
+
+<details>
+<summary><h3>🔮 6. Spells - PENDING ⏳</h3></summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | 0 |
+| 📊 Status | ⏳ Oczekuje |
+
+</details>
+
+---
+
+## 🔧 Worker & Guardian Status
+
+| System | Status | Info |
+|--------|--------|------|
+| **Worker v4.0** | 🟢 RUNNING | PID: 2612485, Cykl #8 |
+| **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
+
+---
+
+## 🗺️ Roadmap
+
+```
+[✅] Phase 1: Items           ████████████████████ 100%
+[✅] Phase 2: NPC             ████████████████████ 100%
+[🔄] Phase 3: Scripts         ████████░░░░░░░░░░░░ 14%
+[⏳] Phase 4: Monsters        ░░░░░░░░░░░░░░░░░░░░   0%
+[⏳] Phase 5: Spells          ░░░░░░░░░░░░░░░░░░░░   0%
+[⏳] Phase 6: Server (C++)    ░░░░░░░░░░░░░░░░░░░░   0%
+```
+
+---
+
+*🤖 Machine-readable: `i18n/status/worker_state.json`*  
+*📅 Auto-updated by Worker v4.0 every cycle*  
+*🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)*

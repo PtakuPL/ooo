@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-08 21:11:26 UTC  
+> **Aktualizacja:** 2025-12-08 21:15:31 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **931** | ↑ |
-| ⏭️ Plików wykluczonych | **4632** | - |
+| 📁 Plików przetworzonych | **939** | ↑ |
+| ⏭️ Plików wykluczonych | **4902** | - |
 | 🔑 Kluczy i18n | **42050** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#10** | - |
+| 🔄 Cykl | **#2** | - |
 
 ---
 
@@ -78,9 +78,9 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #10` |
+| **Plik** | `Cykl #2` |
 | **Szczegóły** | NPC:4049 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-08 21:11:25 |
+| **Ostatnia aktualizacja** | 2025-12-08 21:15:30 |
 
 ### 📈 Statystyki sesji
 
@@ -124,7 +124,7 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #10 |
+| 🔄 Cykl | #2 |
 
 ### 📁 Podkatalogi - Postęp
 
@@ -149,11 +149,11 @@ selfSay("text")
 
 | Plik | Czas | Status |
 |------|------|--------|
-| `index.php` | 06:26:18 | ✅ |
-| `canary.lua` | 19:57:22 | ✅ |
-| `Outfit.php` | 04:22:14 | ✅ |
-| `Items.php` | 04:22:14 | ✅ |
-| `index.html` | 04:22:15 | ✅ |
+| `game_questlog.html` | 00:47:08 | ✅ |
+| `#displayUIPickReward.html` | 00:47:08 | ✅ |
+| `game_rewardwall.html` | 00:47:08 | ✅ |
+| `status.php` | 00:47:08 | ✅ |
+| `updater.php` | 00:47:08 | ✅ |
 
 ### 💻 Przykład kodu (ostatni plik)
 
@@ -225,7 +225,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 25423, Cykl #10 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 136196, Cykl #2 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

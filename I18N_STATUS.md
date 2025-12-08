@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-08 19:55:42 UTC  
+> **Aktualizacja:** 2025-12-08 19:58:00 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,9 +21,9 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **927** | ↑ |
-| ⏭️ Plików wykluczonych | **3017** | - |
-| 🔑 Kluczy i18n | **41733** | ↑ |
+| 📁 Plików przetworzonych | **928** | ↑ |
+| ⏭️ Plików wykluczonych | **3776** | - |
+| 🔑 Kluczy i18n | **41734** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **58** | ✓ |
 | 🔄 Cykl | **#14** | - |
@@ -37,7 +37,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 4048 |
+| 🔑 Kluczy | 4049 |
 | 📊 Status | ✅ Zakończone |
 | 📂 Plików | ~877 |
 
@@ -79,16 +79,16 @@ selfSay("text")
 
 | Plik | Czas | Status |
 |------|------|--------|
-| `index.php` | 22:15:08 | ✅ |
 | `openid.php` | 22:15:08 | ✅ |
 | `signon.php` | 22:15:08 | ✅ |
 | `translation_manager.php` | 21:33:39 | ✅ |
 | `index.php` | 06:26:18 | ✅ |
+| `canary.lua` | 19:57:22 | ✅ |
 
 ### 💻 Przykład kodu (ostatni plik)
 
 ```lua
-
+	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.",
 ```
 
 **Wzorce ekstrakcji:**

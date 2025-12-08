@@ -6,7 +6,7 @@ function bigfootShooting.onUse(player, item, fromPosition, target, toPosition, i
 		local tile = Tile(pos)
 		if tile:getItemById(15710) then
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Shooting, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Shooting) + 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Hit!")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.shooting_hit")
 			tile:getItemById(15710):remove()
 			pos:sendMagicEffect(CONST_ME_FIREATTACK)
 			for i = 2, 4 do
@@ -17,7 +17,7 @@ function bigfootShooting.onUse(player, item, fromPosition, target, toPosition, i
 			end
 		elseif tile:getItemById(15711) then
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Shooting, 0)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You've hit the wrong target and have to start all over!")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.shooting_wrong_target")
 			tile:getItemById(15711):remove()
 			pos:sendMagicEffect(CONST_ME_FIREATTACK)
 			for i = 2, 4 do
@@ -25,7 +25,7 @@ function bigfootShooting.onUse(player, item, fromPosition, target, toPosition, i
 			end
 		end
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have hit enough targets. Report back!")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.shooting_complete")
 	end
 	return true
 end

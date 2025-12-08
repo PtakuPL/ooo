@@ -22,6 +22,10 @@
 
 #include "asyncdispatcher.h"
 
+#include <algorithm>
+#include <cstdint>
+#include <thread>
+
 /**
  * @brief Determine the number of worker threads for the asynchronous dispatcher.
  *

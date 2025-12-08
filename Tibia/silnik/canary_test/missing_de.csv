@@ -1,0 +1,394 @@
+key,base_translation,target_translation
+"Enable this option to save screenshots of the most important
+moments of your Tibia career! Whenever one of the events you
+have selected takes place, a screenshot will be taken
+automatically.
+
+The following events can be selected to trigger an auto screenshot:
+
+- Level Up: Your character has reached the next level
+- Skill Up: You advanced in one of your skills (e.g. Magic Level
+or Sword Fighting","Włącz tę opcję, aby zapisywać zrzuty ekranu z najważniejszych chwil twojej kariery w Tibii! Za każdym razem, gdy nastąpi wybrane zdarzenie, zrzut zostanie wykonany automatycznie.
+
+Automatyczne zrzuty mogą uruchamiać następujące zdarzenia:
+
+- Awans poziomu: twoja postać osiągnęła kolejny poziom
+- Awans umiejętności: podniosłeś jedną z umiejętności (np. poziom magii lub walki bronią)",
+Event Schedule,Harmonogram wydarzeń,
+Experience circle,Okrąg doświadczenia,
+Expertise,Ekspertyza,
+Extra Damage,Dodatkowe obrażenia,
+Familiar:,Towarzysz:,
+Familiars,Towarzysze,
+Fatal,Śmiertelny,
+Few Kills,Mało zabójstw,
+Field must be completed.,Pole musi zostać wypełnione.,
+Filter,Filtruj,
+Filter Marks,Filtruj markery,
+Finish,Zakończ,
+Fist,Pięść,
+Floor Fading: %s ms,Wygaszanie pięter: %s ms,
+Floor View Mode:,Tryb widoku piętra:,
+Focus,Skupienie,
+Food,Jedzenie,
+Force Effect Optimization,Wymuś optymalizację efektów,
+Forgot password and/or email,Zapomniałeś hasła i/lub e-maila,
+Free capacity: 737.60 oz,Wolna pojemność: 737.60 oz,
+Friday,Piątek,
+Full Screen Mode,Tryb pełnoekranowy,
+Game World,Świat gry,
+Game World:,Świat gry:,
+General Stats,Statystyki ogólne,
+Get,Zdobądź,
+Get Tibia Coins,Zdobądź Tibia Coins,
+Gift,Prezent,
+Gift Tibia Coins,Podaruj Tibia Coins,
+Go to the Store to get more Prey Wildcards!,"Przejdź do sklepu, aby zdobyć więcej jokerów polowań!",
+Gold Coins,Złote monety,
+Grade 1: ,Stopień 1: ,
+Grade 2: ,Stopień 2: ,
+Grade 3: ,Stopień 3: ,
+Grade 4: ,Stopień 4: ,
+Great Beams,Wielkie promienie,
+Guildhalls,Siedziby gildii,
+Health Bar:,Pasek zdrowia:,
+Health circle,Krąg zdrowia,
+Hide Chat,Ukryj czat,
+Highlight mouse target,Podświetl cel pod kursorem,
+Highscores Filter,Filtr rankingu,
+Hireling Jobs:,Prace najemników:,
+Hireling Outfits:,Stroje najemników:,
+Hirelings,Najemnicy,
+History,Historia,
+Hotkey Action,Akcja skrótu,
+Hotkey delay: 30ms,Opóźnienie skrótu: 30 ms,
+Hotkeys Manager,Menedżer skrótów,
+House Information,Informacje o domu,
+Houses and Flats,Domy i mieszkania,
+If login fails using HTTPS (encrypted,Jeśli logowanie przy użyciu HTTPS (szyfrowanego) się nie powiedzie,
+"If you check this option, the client takes a screenshot every
+second and caches the last 5 of them. Whenever a screenshot is
+taken either automatically for a selected event or manually using a
+hotkey, also the screenshots of the previous 5 seconds will be
+saved.
+If you experience frame stuttering, you should consider disabling
+this option..","Jeśli zaznaczysz tę opcję, klient będzie wykonywał zrzut ekranu co sekundę i przechowa pięć ostatnich. Kiedy zrzut zostanie wykonany automatycznie dla wybranego zdarzenia lub ręcznie skrótem klawiszowym, zapisane zostaną również zrzuty z poprzednich pięciu sekund.
+Jeśli zauważysz przycięcia animacji, rozważ wyłączenie tej opcji.",
+"If you check this option, the screenshots will only be taken from
+the game window instead of the complete client interface. This
+might improve your game performance, particularly if you have
+ticked the Screenshot Backlog option.","Jeżeli zaznaczysz tę opcję, zrzuty będą wykonywane tylko z okna gry, a nie z całego interfejsu klienta. Może to poprawić wydajność gry, zwłaszcza gdy masz włączony bufor zrzutów.",
+"If you have named your hotkey presets the same like your
+characters and have checked this option, the preset with the same
+name as the corresponding character will be activated upon login
+automatically.","Jeśli nazwałeś presety skrótów tak samo jak swoje postacie i zaznaczysz tę opcję, preset o tej samej nazwie co postać zostanie automatycznie aktywowany po zalogowaniu.",
+"If you select Frames or Corners, your loot will be marked with 
+different colours in loot messages, containers and the Bestiary.
+
+The colour depends on the loot value, which can be determined in
+ the Items Cyclopedia, either using the NPC buy value, the average
+ Market price or your own preferred value.","Jeżeli wybierzesz ramki lub narożniki, twój łup zostanie oznaczony różnymi kolorami w wiadomościach, pojemnikach i w bestiariuszu.
+
+Kolor zależy od wartości łupu, którą możesz określić w Encyklopedii Przedmiotów na podstawie ceny NPC, średniej ceny rynkowej albo własnej wartości.",
+"If you want to keep this house. click on ""Cancel Transfer"".","Jeśli chcesz zatrzymać ten dom, kliknij ""Anuluj transfer"".",
+Imbue Empty Slot,Wzmocnij pusty slot,
+Imbue Item,Wzmocnij przedmiot,
+Imbuements,Imbuementy,
+Inactive,Nieaktywny,
+Inbox,Skrzynka odbiorcza,
+Info,Informacje,
+Information,Informacje,
+Instant Reward Access:,Natychmiastowy dostęp do nagrody:,
+Item Information,Informacje o przedmiocie,
+Items,Przedmioty,
+Items can have up to three imbuements slots. This slot is not available for this item.,Przedmioty mogą mieć maksymalnie trzy sloty nasycenia. Ten slot nie jest dostępny dla tego przedmiotu.,
+Joystick in RightPanel,Joystick w prawym panelu,
+Keep Blacklog of the Screenshots of the Last 5 Seconds,Przechowuj bufor zrzutów ekranu z ostatnich 5 sekund,
+Known:,Znane:,
+Last Update: 9999999 Second Ago,Ostatnia aktualizacja: 9999999 sekund temu,
+Level separator,Separator poziomu,
+"Level: 1
+Knight","Poziom: 1
+Rycerz",
+Limit Visible Dimension,Ogranicz widoczny wymiar,
+Limits your fps based on monitor refresh rate,Ogranicza FPS na podstawie częstotliwości odświeżania monitora,
+Location(s,Lokalizacja(e,
+Lock Prey,Zablokuj polowanie,
+Locked,Zablokowane,
+Loyalty Title,Tytuł lojalności,
+"Make sure to have enough gold in your bank account to
+pay the costs for this house transfer and the next rent.
+Remember to edit the door rights as only the guest list
+will be reset after the transfer!","Upewnij się, że masz wystarczająco złota na koncie bankowym, aby zapłacić za transfer domu i następną opłatę czynszową.
+Pamiętaj, aby zmienić prawa do drzwi, ponieważ po transferze zresetowana zostanie tylko lista gości!",
+Manage Presets,Zarządzaj presetami,
+Map View,Widok mapy,
+Market Average Value,Średnia wartość rynkowa,
+Max. Beds: 1,Maks. łóżek: 1,
+Member of the following groups:,Członek następujących grup:,
+"Minor Charm echoes
+Earned by unlocking or upgrading major charm and promotion your character","Mniejsze echa uroków
+Zdobywane po odblokowaniu lub ulepszeniu głównego uroku oraz awansie postaci",
+"Mode: ""Chat On""","Tryb: ""Chat włączony""",
+Mount:,Wierzchowiec:,
+Mounts,Wierzchowce,
+Move stacks directly,Przenieś stosy bezpośrednio,
+NPC Buy Value,Wartość kupna NPC,
+Name of new owner,Imię nowego właściciela,
+New,Nowy,
+New Action,Nowa akcja,
+No invalid Character,Brak niedozwolonych znaków,
+Note that the new owner has to accept the transfer.,"Pamiętaj, że nowy właściciel musi zaakceptować transfer.",
+Only Capture Game Window,Tylko przechwytuj okno gry,
+Only mine,Tylko moje,
+Open containers maximized,Otwieraj pojemniki zmaksymalizowane,
+Outfit:,Strój:,
+Outfits,Stroje,
+Page,Strona,
+Page 1 / 1,Strona 1 / 1,
+Page 1 / 4,Strona 1 / 4,
+Paid until:,Opłacone do:,
+Parameter,Parametr,
+Password Requirements,Wymagania hasła,
+Permanent Prey Slots:,Stałe sloty polowań:,
+Player Online:,Graczy online:,
+Please enter a group name:,Wprowadź nazwę grupy:,
+Please enter the new name for your character:,Proszę wprowadzić nową nazwę dla swojej postaci:,
+"Please remeber to take your personal belongings out of
+the house before you move out. Items remaining in the
+house become the property of the new owner after the transfer.
+The only exception are items which have been purchased
+in the Store. They will be sent yo your inbox.","Pamiętaj, aby zabrać swoje rzeczy z domu przed wyprowadzką. Przedmioty pozostawione w domu po transferze staną się własnością nowego właściciela.
+Wyjątkiem są przedmioty zakupione w Sklepie — zostaną wysłane do twojej skrzynki.",
+Please select an item from the list to see its details here.,Wybierz przedmiot z listy aby zobaczyć jego szczegóły.,
+Please select the amount of Tibia Coins you like to gift and enter the name of the character that should receive the Tibia Coins.,"Proszę wybrać ilość Tibia Coins do podarowania i wprowadzić nazwę postaci, która ma je otrzymać.",
+"Please select the amount of Tibia
+Coins you like to gift and enter the
+name of the character that should
+receive the Tibia Coins.","Wybierz liczbę Tibia Coins do podarowania i wpisz nazwę postaci, która ma je otrzymać.",
+Prefer Own Loot Value,Preferuj własną wartość łupów,
+Premium Only:,Tylko premium:,
+Preset Name,Nazwa predefiniowana,
+Preset:,Preset:,
+Preview,Podgląd,
+Prey,Polowanie,
+Prey Wildcards,Jokery polowań,
+Prey Wildcards:,Jokery polowań:,
+Primary Key,Klawisz główny,
+Proxies,Proxy,
+Purchased Hirelings:,Zakupieni najemnicy:,
+Purchased House Items,Zakupione przedmioty do domu,
+PvP Type:,Typ PvP:,
+Pvp Type:,Typ PvP:,
+Recently Added,Ostatnio dodane,
+Recommended World:,Zalecany świat:,
+"Reject the transfer if you do not want the house
+transferred to you.","Odrzuć transfer, jeśli nie chcesz otrzymać tego domu.",
+Remaining Daily Reward XP Boost Time:,Pozostały czas Daily Reward XP Boost:,
+Remaining Store XP Boost Time:,Pozostały czas Store XP Boost:,
+Rename,Zmień nazwę,
+Repeat Password:,Powtórz hasło:,
+Requires the following astral sources:,Wymaga następujących źródeł astralnych:,
+Reset all charms,Resetuj wszystkie uroki,
+Resulting Value,Wynikowa wartość,
+Search by name,Szukaj po nazwie,
+Secondary Key,Klawisz dodatkowy,
+Select Creature,Wybierz stworzenie,
+Select Object,Wybierz obiekt,
+Select Slot:,Wybierz slot:,
+Select Spell,Wybierz zaklęcie,
+Select a date in the future!,Wybierz datę w przyszłości!,
+Select all events that sould trigger auto Screenshots:,"Wybierz wszystkie wydarzenia, które mają wyzwalać automatyczne zrzuty:",
+"Select containers for your loot!
+
+Refine your Quick Looting by setting objects on your skipped loot or accepted loot list!","Wybierz pojemniki na łupy!
+
+Udoskonal szybkie zbieranie, ustawiając przedmioty na liście pomijanych lub akceptowanych łupów!",
+Sell History,Historia sprzedaży,
+Sell To,Sprzedaj do,
+September 2023,Wrzesień 2023,
+Set circle opacity.,Ustaw przezroczystość kółka.,
+Set distance from center.,Ustaw odległość od środka.,
+Set talk type,Ustaw typ rozmowy,
+Setup up an auction to sell you currents characters.,Skonfiguruj aukcję aby sprzedać obecne postacie.,
+Shader:,Shader:,
+Short by completion percentage,Sortuj według procentu ukończenia,
+Show Aura,Pokaż aurę,
+Show Bars,Pokaż paski,
+Show Effects,Pokaż efekty,
+Show Expiry In Containers,Pokaż wygaśnięcie w pojemnikach,
+Show Expiry In Inventory,Pokaż wygaśnięcie w ekwipunku,
+Show Expiry On Unused Items,Pokaż wygaśnięcie na nieużywanych,
+Show Familiar,Pokaż towarzysza,
+Show Floor,Pokaż podłogę,
+Show Mount,Pokaż wierzchowca,
+Show Outfit,Pokaż strój,
+Show Shader,Pokaż shader,
+Show Title,Pokaż tytuł,
+Show Wings,Pokaż skrzydła,
+Show experience yellow circle.,Pokaż żółte kółko doświadczenia.,
+Show health red circle.,Pokaż czerwone kółko zdrowia.,
+Show imbuements that last between 1h and 3h,Pokaż nasycenia trwające 1-3h,
+Show imbuements that last less than 1h,Pokaż nasycenia trwające mniej niż 1h,
+Show imbuements that last more than 3h,Pokaż nasycenia trwające więcej niż 3h,
+Show items with no active imbuement,Pokaż przedmioty bez aktywnego nasycenia,
+Show loot messages on screen,Pokaż wiadomości o łupach na ekranie,
+Show mana blue circle.,Pokaż niebieskie kółko many.,
+Show others status messages in console,Pokaż wiadomości statusu innych w konsoli,
+Show skill purple circle.,Pokaż fioletowe kółko umiejętności.,
+Show spell group cooldowns,Pokaż czasy odnowienia grup zaklęć,
+Size:,Rozmiar:,
+Size: 17sqm,Rozmiar: 17m²,
+Skipped Loot,Pominięte łupy,
+Slot 1,Slot 1,
+Slot 1: Locked,Slot 1: Zablokowany,
+Slot 2,Slot 2,
+Slot 2: Locked,Slot 2: Zablokowany,
+Slot 3,Slot 3,
+Spell / Rune Information,Informacje o zaklęciu / runie,
+Start,Rozpocznij,
+"Status: Loading, please wait...","Status: Ładowanie, proszę czekać...",
+Status: auctioned (no bid yet,Status: na aukcji (brak ofert),
+Store Inbox,Skrzynka ze sklepu,
+Surface View,Widok powierzchni,
+Text:,Tekst:,
+The limit is based on your maximum range.,Limit oparty jest na maksymalnym zasięgu.,
+"There are two chat modes for each hotkey preset: Chat On and Chat
+ Off.You can find a small button that tells you which chat mode is
+ currently active on the right side of the entry line of the chat console.Press this button to switch between the two chat modes.
+Of course, you can also set a hotkey to toggle between Chat On and Off.
+- Chat On
+In this mode, you will be able to write text in the entry line of the chat console.
+However, if you have assigned an action to a letter key, the action will be triggered.
+- Chat On*
+This is the temporary Chat On mode.
+In the default hotkey preset, the Return key switches between Chat Off and this mode.
+If the chat mode is off and you press this hotkey, it temporarily activates the chat mode so that you can write one message in the console.
+As soon as you press Return to send the message, your chat mode will be set to Chat Off again so that you can continue walking with WASD, for example.
+- Chat Off
+In this mode, you will not be able to write any text in the entry line of the console, but you can use your predefined hotkeys to walk or cast spells, for example.
+You can assign functions to all keys of your keyboard, e.g. walk with WASD.","Każdy preset skrótów ma dwa tryby czatu: Chat On i Chat Off. Po prawej stronie pola wpisywania wiadomości znajdziesz niewielki przycisk informujący, który tryb jest aktywny. Naciśnij go, aby przełączać się między trybami. Możesz też przypisać własny skrót.
+- Chat On
+W tym trybie możesz pisać wiadomości w konsoli czatu. Jeżeli jednak przypisałeś do liter akcje, zostaną one uruchomione.
+- Chat On*
+To tymczasowy tryb czatu. W domyślnym presecie klawisz Enter przełącza między Chat Off a tym trybem. Jeśli tryb czatu jest wyłączony i naciśniesz ten skrót, czat zostanie chwilowo włączony, abyś mógł napisać jedną wiadomość. Po wysłaniu wiadomości tryb znów przełączy się na Chat Off, dzięki czemu możesz dalej chodzić np. WASD.
+- Chat Off
+W tym trybie nie możesz pisać, ale za to korzystasz ze wszystkich przypisanych skrótów do chodzenia czy czarów. Możesz przypisać funkcje do wszystkich klawiszy, np. do ruchu WASD.",
+"There are two chat modes for each hotkey preset: Chat On and Chat
+ Off.You can find a small button that tells you which chat mode is
+ currently active on the right side of the entry line of the chat console.Press this button to switch between the two chat modes.
+Of course, you can also set a hotkey to toggle between Chat On and Off.
+- Chat On
+In this mode, you will be able to write text in the entry line of the chat console.
+However, if you have assigned an action to a letter key, the action will be triggered.
+- Chat On*
+This is the temporary Chat On mode.
+In the default hotkey preset, the Return key switches between Chat Off and this mode.
+If the chat mode is off and you press this hotkey, it temporarily activates the chat mode so that you can write one message in the console.
+As soon as you press Return to send the message, your chat mode will be set to Chat Off again so that you can continue walking with WASD, for example.
+- Chat Off
+In this mode, you will not be able to write any text in the entry line of the console, but you can use your predefined hotkeys to walk or cast spells, for example.
+You can assign functions to all keys of your keyboard, e.g. walk with WASD.","Każdy preset skrótów ma dwa tryby czatu: Chat On i Chat Off. Po prawej stronie pola wpisywania wiadomości znajdziesz niewielki przycisk informujący, który tryb jest aktywny. Naciśnij go, aby przełączać się między trybami. Możesz też przypisać własny skrót.
+- Chat On
+W tym trybie możesz pisać wiadomości w konsoli czatu. Jeżeli jednak przypisałeś do liter akcje, zostaną one uruchomione.
+- Chat On*
+To tymczasowy tryb czatu. W domyślnym presecie klawisz Enter przełącza między Chat Off a tym trybem. Jeśli tryb czatu jest wyłączony i naciśniesz ten skrót, czat zostanie chwilowo włączony, abyś mógł napisać jedną wiadomość. Po wysłaniu wiadomości tryb znów przełączy się na Chat Off, dzięki czemu możesz dalej chodzić np. WASD.
+- Chat Off
+W tym trybie nie możesz pisać, ale za to korzystasz ze wszystkich przypisanych skrótów do chodzenia czy czarów. Możesz przypisać funkcje do wszystkich klawiszy, np. do ruchu WASD.",
+"There is no bid so far.
+Be the first to bid on this house.","Nie ma jeszcze żadnych ofert.
+Bądź pierwszy, który złoży ofertę na ten dom.",
+This action must be bound to a single key.,Ta akcja musi być przypisana do pojedynczego klawisza.,
+This hotkey is already in use.,Ten skrót jest już używany.,
+This option makes textures load asynchronously and uses less RAM.,"Ta opcja sprawia, że tekstury ładują się asynchronicznie i używa mniej RAM.",
+"Tick this check box to loot into your main container if you cannot 
+loot into the container for the particular loot category and 
+unassigned loot. Note that ""Auto-Sort 
+Purchases"" and ""Auto-Sort Stash into Containers"" are not afflected by this option.","Zaznacz to pole, aby wrzucać łupy do głównego pojemnika, gdy nie możesz ich przenieść do przypisanego kontenera dla tej kategorii ani łupów bez kategorii. Opcje ""Automatyczne sortowanie zakupów"" oraz ""Automatyczne sortowanie zapasów do pojemników"" nie są przez to zmieniane.",
+Time remaining:,Pozostały czas:,
+Title:,Tytuł:,
+Total weight: 0.00 oz,Całkowita waga: 0.00 oz,
+Total:,Razem:,
+Track drops of this item,Śledź wypadanie tego przedmiotu,
+Transfer Type:,Typ transferu:,
+Transferable Task Points:,Przekazywalne punkty zadań:,
+Try to optimize when the frame rate is below 60. VISUAL PROBLEMS MAY OCCUR,Próbuj optymalizować gdy liczba klatek poniżej 60. MOGĄ WYSTĄPIĆ PROBLEMY WIZUALNE,
+Type to search,Wpisz aby szukać,
+Type to search for a hotkey:,Wpisz aby wyszukać skrót:,
+Type to set,Wpisz aby ustawić,
+UnLock,Odblokuj,
+"Unlocks if you reach the
+Prowess level for any boss",Odblokowuje się po osiągnięciu poziomu Prowess dla dowolnego bossa,
+Use main container as fallback,Użyj głównego pojemnika jako zapasowego,
+Use with crosshair,Użyj z celownikiem,
+Walk delay after floor change: 200ms,Opóźnienie chodu po zmianie piętra: 200ms,
+Walk delay after teleport: 200ms,Opóźnienie chodu po teleportacji: 200ms,
+Walk delay after turn: %dms,Opóźnienie ruchu po skręcie: %d ms,
+Walk delay after turn: 50ms,Opóźnienie chodu po obrocie: 50ms,
+"Whenever you defeat a creature, it drops a set of loot with a
+certain chance. The equipment loot bonus shows your chance to
+get a second set of loot, but limited to equipment.","Za każdym razem, gdy pokonasz stworzenie, ma ono szansę upuścić zestaw łupów. Premia do łupów z wyposażenia pokazuje szansę na drugi zestaw łupów, ograniczony jednak do przedmiotów ekwipunku.",
+Will avoid drawing effects on certain occasions.,Uniknie rysowania efektów w pewnych sytuacjach.,
+Wings:,Skrzydła:,
+World Locations:,Lokalizacje świata:,
+World Name,Nazwa świata,
+XP Boosts,Boosty XP,
+"You can assign 4 more Charms to creatures.\nBuy a ""Charm Expansion"" to assign your unlocked Charms to\ncreatures nearly unlimitedly and to get a 25% discount whenever\nyou are removing a Charm.","Możesz przypisać 4 więcej Uroków do stworzeń.\nKup ""Rozszerzenie Uroków"", aby przypisywać swoje odblokowane Uroki do\nstworzeń prawie bez ograniczeń i otrzymać 25% zniżki przy\nusuwaniu Uroku.",
+You will move out at the daily server save of the selected day.,Wyprowadzisz się przy codziennym zapisie serwera wybranego dnia.,
+Your needs have changed? Click here to clear the imbuement from your item for a fee.,"Zmieniłeś zdanie? Kliknij tutaj, aby usunąć imbuement z przedmiotu za opłatą.",
+converted Damage,przekonwertowane obrażenia,
+converted Element,przekonwertowany żywioł,
+female,kobieta,
+loooooong text,baaaaardzo długi tekst,
+male,mężczyzna,
+manadrain,drenaż many,
+name,nazwa,
+"
+is this in the protobuf ?
+ in http post ? 
+or modify gamelib/spells.lua?","
+czy to jest w protobuf?
+w żądaniu HTTP?
+czy trzeba modyfikować gamelib/spells.lua?",
+players online,graczy online,
+select a spell to view detailed information.,"wybierz zaklęcie, aby zobaczyć szczegółowe informacje.",
+show as grid,pokaż jako siatkę,
+show as list,pokaż jako listę,
+words,słowa,
+you have selected 0 of 2 reward items.,wybrałeś 0 z 2 nagród.,
+You have %s hours and %s minutes left,Pozostało Ci %s godzin i %s minut,
+"If you are premium player, you will gain 50%% more experience","Jeśli jesteś graczem premium, zyskasz 50%% więcej doświadczenia",
+Now you will gain 50%% more experience,Teraz zyskasz 50%% więcej doświadczenia,
+infinite bonus,nieskończony bonus,
+Transferable Tibia Coins: ,Przekazywalne Tibia Coins: ,
+Transferable Task points: ,Przekazywalne punkty zadań: ,
+Wrap,Zawiń,
+Unwrap,Rozwiń,
+(Frozen),(Zamrożony),
+ (Suspended), (Zawieszony),
+You are Agony,Jesteś w agonii,
+You are Bleeding,Krwawisz,
+You are Feared,Jesteś przerażony,
+You are GoshnarTaint,Jesteś skażony przez Goshnar'a,
+You are GreaterHex,Jesteś pod większym urokiem,
+You are IntenseHex,Jesteś pod intensywnym urokiem,
+You are LesserHex,Jesteś pod mniejszym urokiem,
+You are NewManaShield,Jesteś chroniony nową tarczą many,
+You are Rooted,Jesteś zakorzeniony,
+You are inspecting,Badasz,
+You read the following,Przeczytałeś następującą treść,
+ok,ok,
+remove,usuń,
+%s of experience per hour,%s doświadczenia na godzinę,
+%s: ,%s: ,
+", written by 
+%s
+",", napisane przez 
+%s
+",
+", written on 
+%s.
+",", napisane dnia 
+%s.
+",
+You have %s percent to go ,Brakuje Ci %s procent ,

@@ -16,7 +16,7 @@ function taskEndurance.onStepIn(creature, item, position, fromPosition)
 			local chancegasp = math.random(10)
 			if chancegasp == 4 then
 				fromPosition:sendMagicEffect(CONST_ME_STUN)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "<gasp>")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.gasp")
 			end
 			player:teleportTo(fromPosition)
 		elseif chance == 2 then
@@ -36,7 +36,7 @@ function taskEndurance.onStepIn(creature, item, position, fromPosition)
 		else
 			local backPos = Position(32760, 31811, 10)
 			player:teleportTo(backPos)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Luckily you do not have to take the endurance at this time.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.no_endurance_test")
 			backPos:sendMagicEffect(CONST_ME_TELEPORT)
 		end
 	end

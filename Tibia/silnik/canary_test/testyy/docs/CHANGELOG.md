@@ -22,6 +22,10 @@
 - **Fixed font config**: Corrected fallback paths in `NotoSans-12.otfont` (NotoSansSC-Regular.ttf, NotoNaskhArabic-Regular.ttf)
 - **tr() wrapper fixes**: Added `tr()` to hard-coded tooltips in `imbuing.otui`, `boss_slots.otui`, `charms.otui`
 - **Polish translations**: Added new translation keys for imbuing, boss slots, and charms tooltips
+- **Bitmap font coverage**: Added missing aliases `verdana-10px-antialiased` and `verdana-bold-8px-antialiased` so Cyclopedia widgets no longer reference absent resources
+- **Updater dialog localization**: All user-facing updater strings (checksum/timeout/errors) now go through `tr()` with matching entries in `modules/client_locales/neededtranslations.lua`
+- **Text stack README**: Added `src/framework/text/README.md` documenting the shaping pipeline and how to register new TTF fonts + fallback chains
+- **Polish installer strings**: `data/locales/pl.lua` zawiera teraz tłumaczenia komunikatów aktualizatora, dzięki czemu instalka jest w pełni po polsku
 
 ### Code Quality
 - **Fixed compiler warning**: Removed extra semicolon in `eventdispatcher.h`

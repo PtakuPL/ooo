@@ -196,6 +196,7 @@ class PlayerFunctions {
 	static int luaPlayerShowTextDialog(lua_State* L);
 
 	static int luaPlayerSendTextMessage(lua_State* L);
+	static int luaPlayerSendLocalizedTextMessage(lua_State* L);
 	static int luaPlayerSendChannelMessage(lua_State* L);
 	static int luaPlayerSendPrivateMessage(lua_State* L);
 

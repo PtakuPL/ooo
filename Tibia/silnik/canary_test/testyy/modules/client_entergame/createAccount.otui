@@ -54,7 +54,7 @@ PanelCreateYourAccount < Panel
 MainWindow
   id: mainWindow
   size: 513 390
-  text: "Start Your Journey"
+  !text: tr('Start Your Journey')
   @onEscape: destroyCreateAccount()
 
   Panel
@@ -100,7 +100,7 @@ MainWindow
     MiniPanel
       id: createYourAccount
       size: 712 123
-      text: "Create Your Account"
+      !text: tr('Create Your Account')
       anchors.top: parent.top
       anchors.left: parent.left
       anchors.right: parent.right
@@ -152,7 +152,7 @@ MainWindow
           spacing: 2
         QtCheckBox
           id: checkboxPrivacy
-          text: "I agree to the Tibia Service Agreement,\n Tibia Rules and Tibia Privacy Policy. "
+          !text: tr('I agree to the Tibia Service Agreement,\n Tibia Rules and Tibia Privacy Policy.')
           width: 273
           margin-left: 50
 
@@ -168,7 +168,7 @@ MainWindow
     MiniPanel
       id: createYourCharacter
       height: 95
-      text: "Create Your Character"
+      !text: tr('Create Your Character')
       margin-top: 5
       anchors.top: prev.bottom
       anchors.left: parent.left
@@ -207,7 +207,7 @@ MainWindow
             image-source: /images/ui/createaccount/icon-no
 
         Button
-          text: "Suggest Name"
+          !text: tr('Suggest Name')
           font: cipsoftFont
           @onClick: onClickSuggestName()
       Panel
@@ -270,7 +270,7 @@ MainWindow
           $disabled:
             image-source: /images/ui/createaccount/icon-no
         Button
-          text: "Change World"
+          !text: tr('Change World')
           font: cipsoftFont
           margin-left: -30
           @onClick: toggleMainPanels(true)
@@ -281,7 +281,7 @@ MainWindow
       anchors.left: parent.left
       anchors.right: parent.right
     Button
-      text: "Already Registered"
+      !text: tr('Already Registered')
       size: 115 22
       margin-top: 15
       margin-left: 5
@@ -291,7 +291,7 @@ MainWindow
       @onClick: toggleCreateAccount(true)
     UIButton
       id: buttonStartPlaying
-      text: "Start Playing"
+      !text: tr('Start Playing')
       size: 120 33
       margin-top: 10
       margin-right: 5
@@ -317,7 +317,7 @@ MainWindow
       anchors.left: parent.left
       anchors.right: parent.right
     Label
-      text: "This site is protected by ReCAPTCHA and  the google Privacy Policy and Terms of Services apply."
+      !text: tr('This site is protected by ReCAPTCHA and  the google Privacy Policy and Terms of Services apply.')
       margin-top: 5
       font: cipsoftFont
       anchors.top: prev.bottom
@@ -428,7 +428,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          text: 10 - 29 Characters
+          !text: tr('10 - 29 Characters')
           text-offset: 10 2
 
       Panel
@@ -540,7 +540,7 @@ MainWindow
     MiniPanel
       id: panelSelectAGameWorldToPlayOn
       size: 712 215
-      text: "Select a Game World to Play On"
+      !text: tr('Select a Game World to Play On')
       anchors.top: parent.top
       anchors.left: parent.left
       anchors.right: parent.right
@@ -710,7 +710,7 @@ MainWindow
       anchors.right: parent.right
 
     Button
-      text: "back"
+      !text: tr('Back')
       size: 115 22
       margin-top: 10
       margin-left: 5
@@ -720,7 +720,7 @@ MainWindow
       @onClick: toggleMainPanels(false)
 
     Button
-      text: "Ok"
+      !text: tr('Ok')
       size: 115 22
       margin-top: 10
       margin-left: 5
@@ -730,7 +730,7 @@ MainWindow
       @onClick: onClickOkChangeWorld()
 
     Button
-      text: "Reset"
+      !text: tr('Reset')
       size: 115 22
       margin-top: 10
       margin-right: 5

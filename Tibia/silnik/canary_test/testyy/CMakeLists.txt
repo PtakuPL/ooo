@@ -138,6 +138,18 @@ if(OTC_ENABLE_TTF)
   target_compile_definitions(otc_textstack INTERFACE OTC_ENABLE_TTF)
 endif()
 
+# Prefer pkg-config from vcpkg host tools when available
+if(NOT PKG_CONFIG_EXECUTABLE)
+  find_program(PKG_CONFIG_EXECUTABLE
+    NAMES pkgconf pkg-config
+    PATHS
+      "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg_installed/${VCPKG_HOST_TRIPLET}/tools/pkgconf"
+      "$ENV{VCPKG_ROOT}/installed/${VCPKG_HOST_TRIPLET}/tools/pkgconf"
+      "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg_installed/${VCPKG_TARGET_TRIPLET}/tools/pkgconf"
+    NO_DEFAULT_PATH)
+endif()
+find_package(PkgConfig QUIET)
+
 # HarfBuzz (via vcpkg CONFIG, with pkg-config fallback)
 if(OTC_ENABLE_HARFBUZZ)
   # Try HarfBuzz from CONFIG (vcpkg)
@@ -148,15 +160,19 @@ if(OTC_ENABLE_HARFBUZZ)
     target_link_libraries(otc_textstack INTERFACE harfbuzz::harfbuzz)
   elseif(TARGET harfbuzz)
     target_link_libraries(otc_textstack INTERFACE harfbuzz)
-  else()
+  elseif(PkgConfig_FOUND)
     # Fallback: pkg-config + system includes/libs
-    find_package(PkgConfig REQUIRED)
     pkg_check_modules(HARFBUZZ REQUIRED harfbuzz)
     target_include_directories(otc_textstack INTERFACE ${HARFBUZZ_INCLUDE_DIRS})
     target_link_libraries(otc_textstack INTERFACE ${HARFBUZZ_LINK_LIBRARIES})
+  else()
+    message(WARNING "OTC_ENABLE_HARFBUZZ=ON but harfbuzz was not found and pkg-config is unavailable; disabling HarfBuzz")
+    set(OTC_ENABLE_HARFBUZZ OFF)
   endif()
 
-  target_compile_definitions(otc_textstack INTERFACE OTC_ENABLE_HARFBUZZ)
+  if(OTC_ENABLE_HARFBUZZ)
+    target_compile_definitions(otc_textstack INTERFACE OTC_ENABLE_HARFBUZZ)
+  endif()
 endif()
 
 # FriBidi (prefer CONFIG from vcpkg, otherwise fall back to pkg-config)
@@ -166,13 +182,18 @@ if(OTC_ENABLE_FRIBIDI)
     target_link_libraries(otc_textstack INTERFACE fribidi::fribidi)
   elseif(TARGET fribidi)
     target_link_libraries(otc_textstack INTERFACE fribidi)
-  else()
-    find_package(PkgConfig REQUIRED)
+  elseif(PkgConfig_FOUND)
     pkg_check_modules(FRIBIDI REQUIRED fribidi)
     target_include_directories(otc_textstack INTERFACE ${FRIBIDI_INCLUDE_DIRS})
     target_link_libraries(otc_textstack INTERFACE ${FRIBIDI_LINK_LIBRARIES})
+  else()
+    message(WARNING "OTC_ENABLE_FRIBIDI=ON but fribidi was not found and pkg-config is unavailable; disabling FriBidi")
+    set(OTC_ENABLE_FRIBIDI OFF)
   endif()
-  target_compile_definitions(otc_textstack INTERFACE OTC_ENABLE_FRIBIDI)
+
+  if(OTC_ENABLE_FRIBIDI)
+    target_compile_definitions(otc_textstack INTERFACE OTC_ENABLE_FRIBIDI)
+  endif()
 endif()
 # ===== end text stack =====
 

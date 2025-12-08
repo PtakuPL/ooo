@@ -3,7 +3,7 @@ UIWidget
   visible: false
   QtButton
     id: reset
-    text: "Reset"
+    !text: tr('Reset')
     anchors.right: parent.right
     anchors.bottom: parent.bottom
     @onClick: reset()

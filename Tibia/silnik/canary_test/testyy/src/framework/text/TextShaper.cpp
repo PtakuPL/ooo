@@ -1,6 +1,49 @@
 #include "TextShaper.h"
 #include <stdexcept>
 #include <algorithm>
+#include <mutex>
+#include <unordered_map>
+#include <type_traits>
+
+namespace {
+constexpr size_t kShapeCacheMaxEntries = 256;
+constexpr size_t kShapeCacheMaxLength = 256;
+
+struct ShapeCacheKey {
+  hb_font_t* font {};
+  std::u32string text;
+  TextDirection direction { TextDirection::AUTO };
+  std::string script;
+  std::string language;
+
+  bool operator==(const ShapeCacheKey &) const = default;
+};
+
+struct ShapeCacheKeyHasher {
+  size_t operator()(const ShapeCacheKey &key) const {
+    size_t seed = std::hash<hb_font_t*>{}(key.font);
+    const auto combine = [&seed](size_t value) {
+      seed ^= value + 0x9e3779b9 + (seed << 6) + (seed >> 2);
+    };
+    combine(std::hash<std::u32string>{}(key.text));
+    combine(std::hash<std::underlying_type_t<TextDirection>>{}(static_cast<std::underlying_type_t<TextDirection>>(key.direction)));
+    combine(std::hash<std::string>{}(key.script));
+    combine(std::hash<std::string>{}(key.language));
+    return seed;
+  }
+};
+
+struct ShapeCacheEntry {
+  std::vector<ShapedGlyph> glyphs;
+  size_t tick = 0;
+};
+
+std::unordered_map<ShapeCacheKey, ShapeCacheEntry, ShapeCacheKeyHasher> g_shapeCache;
+size_t g_shapeCacheTick = 0;
+std::mutex g_shapeCacheMutex;
+} // namespace
+#include <mutex>
+#include <unordered_map>
 
 /**
  * @brief Maps a four-character script tag to the corresponding HarfBuzz script enum.
@@ -118,6 +161,22 @@ std::vector<ShapedGlyph> TextShaper::shape(const std::u32string& text32,
   std::vector<ShapedGlyph> out;
   if (!hbFont || text32.empty()) return out;
 
+  const bool allowCache = text32.size() <= kShapeCacheMaxLength;
+  ShapeCacheKey cacheKey;
+  if (allowCache) {
+    cacheKey.font = hbFont;
+    cacheKey.text = text32;
+    cacheKey.direction = params.direction;
+    cacheKey.script = params.script;
+    cacheKey.language = params.language;
+
+    std::lock_guard cacheLock(g_shapeCacheMutex);
+    if (const auto it = g_shapeCache.find(cacheKey); it != g_shapeCache.end()) {
+      it->second.tick = ++g_shapeCacheTick;
+      return it->second.glyphs;
+    }
+  }
+
   // Convert to codepoints
   std::vector<uint32_t> codepoints(text32.begin(), text32.end());
   
@@ -160,5 +219,18 @@ std::vector<ShapedGlyph> TextShaper::shape(const std::u32string& text32,
   }
 
   hb_buffer_destroy(buf);
+
+  if (allowCache && !out.empty()) {
+    std::lock_guard cacheLock(g_shapeCacheMutex);
+    const size_t tick = ++g_shapeCacheTick;
+    g_shapeCache.insert_or_assign(cacheKey, ShapeCacheEntry { out, tick });
+    if (g_shapeCache.size() > kShapeCacheMaxEntries) {
+      auto victim = std::min_element(g_shapeCache.begin(), g_shapeCache.end(),
+        [](const auto &lhs, const auto &rhs) { return lhs.second.tick < rhs.second.tick; });
+      if (victim != g_shapeCache.end()) {
+        g_shapeCache.erase(victim);
+      }
+    }
+  }
   return out;
 }

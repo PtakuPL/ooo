@@ -31,29 +31,24 @@ CMake używa standardowego FindLua dla WASM.
 
 ## Priorytety naprawcze (CI)
 
-### 1. Naprawić konflikt typów w asyncdispatcher (KRYTYCZNE)
+### 1. Naprawić konflikt typów w asyncdispatcher (KRYTYCZNE) ✅ 2025-12-06
 - **Błąd:** `error: conflicting declaration 'thread_pool<...auto...> g_asyncDispatcher'` w `asyncdispatcher.cpp:41`.
 - **Przyczyna:** Nagłówek deklaruje `extern BS::thread_pool g_asyncDispatcher;`, implementacja definiuje `BS::thread_pool g_asyncDispatcher{ ... };` z domyślnymi parametrami.
-- **Działania:**
-  1. W `src/framework/core/asyncdispatcher.h` zmień deklarację na `extern BS::thread_pool<> g_asyncDispatcher;` lub jawnie wypisz parametry szablonu.
-  2. Upewnij się, że definicja w `.cpp` ma identyczny typ (`BS::thread_pool<> g_asyncDispatcher{ getThreadCount() };`).
+- **Działania:** [WYKONANE] Nagłówek i implementacja używają `BS::thread_pool<>`.
 - **Weryfikacja:** lokalny build `cmake --build . --target otclient` bez błędu; logi SonarCloud czyste.
 
-### 2. Zaktualizować vcpkg baseline / wersje portów (KRYTYCZNE)
+### 2. Zaktualizować vcpkg baseline / wersje portów (KRYTYCZNE) ✅ 2025-12-06
 - **Błąd:** Brak wpisów dla `abseil@20250814.1`, `angle@chromium_7258#2`, `asio@1.32.0` w bazie wersji (`builtin-baseline = b322346f...`).
-- **Działania (opcje):**
-  - **O1:** Zaktualizować `builtin-baseline` w `vcpkg.json` do aktualnego commitu (np. `2025-11-xx`) i pozwolić vcpkg dobrać wersje.
-  - **O2:** Utrzymać stary baseline, ale dodać overlay ports w `vcpkg/ports/` + skonfigurować workflow (usunąć `browser/overlay-ports/**` z `vcpkgJsonIgnores`).
-  - **O3:** Zrezygnować z pinów wersji dla tych trzech bibliotek.
-- **Weryfikacja:** `vcpkg install --manifest` przechodzi na Windows i Linux.
+- **Działania:** [WYKONANE] `vcpkg.json` wskazuje baseline `5b1214315250939257ef5d62ecdcbca18cf4fb1c`, który zawiera wymagane wersje portów.
+- **Weryfikacja:** `vcpkg install --manifest --x-manifest-root=Tibia/silnik/canary_test/testyy` przechodzi na Windows i Linux.
 
-### 3. Uprzątnąć ostrzeżenia kompilatora (ŚREDNIE)
-- **eventdispatcher.h:104:** usuń podwójny średnik `};;`.
-- **platformwindow.h:84:** oznacz `color` jako `[[maybe_unused]]` lub usuń nazwę parametru.
-- **Cel:** Czysty build bez warningów, by łatwiej zauważać nowe regresje.
+### 3. Uprzątnąć ostrzeżenia kompilatora (ŚREDNIE) ⏳ częściowo done
+- **eventdispatcher.h:104:** [OK] sformatowano `enum class ThreadTaskEventState` bez zbędnych separatorów.
+- **platformwindow.h:84:** [OK] domyślna implementacja jawnie ignoruje parametr (`static_cast<void>(color);`).
+- **Cel:** utrzymać czysty build bez warningów; pozostałe ostrzeżenia analizować na bieżąco.
 
-### 4. Naprawić `build-linux.yml` (NISKIE, ale mylące)
-- Plik zawiera konfigurację Windows. Zmień nazwę lub podmień na prawdziwy workflow Ubuntu (z pakietami `libglew-dev`, `libx11-dev`, itd.).
+### 4. Naprawić `build-linux.yml` (NISKIE, ale mylące) ✅ 2025-12-06
+- Dodano nowy workflow `testyy/.github/workflows/build-linux.yml` uruchamiający build na Ubuntu (Ninja + manifest vcpkg + basic tests).
 
 ---
 
@@ -68,9 +63,8 @@ CMake używa standardowego FindLua dla WASM.
 - Zamiast re-uploadować cały atlas, aktualizować tylko region nowego glifu.
 - Wymaga wsparcia po stronie `Texture` (np. `updateSubRegion`).
 
-### C. Cache shapingu (ŚREDNI)
-- `CachedText` powinien przechowywać `std::vector<ShapedGlyph>`.
-- Unikamy wielokrotnego wywoływania HarfBuzz dla tego samego tekstu.
+### C. Cache shapingu (ŚREDNI) ✅ 2025-12-06
+- `TextShaper::shape` posiada teraz prosty cache LRU (256 wpisów / 256 znaków max), więc wielokrotne renderowanie tych samych tekstów w różnych widżetach nie wykonuje ponownie HarfBuzz/FriBidi.
 
 ---
 
@@ -86,8 +80,8 @@ CMake używa standardowego FindLua dla WASM.
 ### 3. Smoke test UI w CI (ŚREDNI)
 - Headless test rysujący przykładowy tekst i porównujący obraz (lub sprawdzający brak crasha).
 
-### 4. Dokumentacja modułu tekstowego (NISKI)
-- `src/framework/text/README.md` z opisem pipeline'u i instrukcjami dodawania fontów/fallbacków.
+### 4. Dokumentacja modułu tekstowego (NISKI) ✅ 2025-12-06
+- Plik `src/framework/text/README.md` opisuje pipeline (LocaleShaping → TextShaper → TTFFont → CachedText) i zawiera instrukcje dodawania nowych fontów oraz fallbacków.
 
 ---
 

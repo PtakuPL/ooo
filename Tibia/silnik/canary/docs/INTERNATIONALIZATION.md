@@ -175,6 +175,8 @@ Store player language preference:
 ALTER TABLE players ADD COLUMN locale VARCHAR(5) DEFAULT 'en';
 ```
 
+Set the server-wide default via `serverDefaultLocale` in `config.lua`.
+
 ### Files to Modify
 
 | File | Changes Needed |
@@ -262,6 +264,8 @@ Create translation files for each supported language:
     "level_up": "You advanced to level {level}!"
 }
 ```
+
+Use `python Tibia/silnik/canary/tools/export_items_translations.py --locale en --locale pl` to bootstrap the 36k+ item name entries (the script keeps files in `i18n/<locale>/items.json` in sync with `data/items/items.xml`).
 
 ### Step 3: Integrate with NPCs
 

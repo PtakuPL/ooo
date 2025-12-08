@@ -16,6 +16,7 @@
     "parallel-hashmap",
     "protobuf",
     "pugixml",
+    "nlohmann-json",
     "spdlog",
     "zlib",
     "bshoshany-thread-pool",

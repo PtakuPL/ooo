@@ -60,7 +60,7 @@ if not warzoneConfig then
 		return warzoneConfig.findByName(name, i)
 	end
 
-	warzoneConfig.resetRoom = function(roomwarzone, msg, releaseRoom)
+	warzoneConfig.resetRoom = function(roomwarzone, messageKey, releaseRoom)
 		if releaseRoom then
 			roomwarzone.locked = false
 		end
@@ -69,7 +69,9 @@ if not warzoneConfig then
 		for i = 1, #spectators do
 			if spectators[i]:isPlayer() then
 				spectators[i]:teleportTo(roomwarzone.exit)
-				spectators[i]:sendTextMessage(MESSAGE_EVENT_ADVANCE, msg)
+				if messageKey then
+					spectators[i]:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, messageKey)
+				end
 			else
 				spectators[i]:remove()
 			end

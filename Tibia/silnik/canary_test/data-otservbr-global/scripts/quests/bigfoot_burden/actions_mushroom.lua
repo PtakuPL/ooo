@@ -8,7 +8,7 @@ end
 local bigfootMushroom = Action()
 function bigfootMushroom.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if item:hasAttribute(ITEM_ATTRIBUTE_ACTIONID) then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have to wait to extract spores from this mushroom.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.mushroom_wait")
 		return true
 	end
 

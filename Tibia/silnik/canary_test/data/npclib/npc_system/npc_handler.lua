@@ -63,7 +63,14 @@ if NpcHandler == nil then
 	TAG_PVPBLESSCOST = "|PVPBLESSCOST|"
 	TAG_TRAVELCOST = "|TRAVELCOST|"
 
-	NpcHandler = {
+local function normalizeLocalizedArgs(args)
+	if args == nil or type(args) == "table" then
+		return args
+	end
+	return { args }
+end
+
+NpcHandler = {
 		keywordHandler = nil,
 		talkStart = nil,
 		talkDelay = 300, -- Delay from each messages
@@ -96,6 +103,8 @@ if NpcHandler == nil then
 			[MESSAGE_WALKAWAY_MALE] = "",
 			[MESSAGE_WALKAWAY_FEMALE] = "",
 		},
+		},
+		localizedMessages = nil,
 	}
 
 	-- Creates a new NpcHandler with an empty callbackFunction stack.
@@ -110,6 +119,7 @@ if NpcHandler == nil then
 		obj.talkStart = {}
 		obj.keywordHandler = keywordHandler
 		obj.messages = {}
+		obj.localizedMessages = {}
 
 		setmetatable(obj.messages, self.messages)
 		self.messages.__index = self.messages
@@ -117,6 +127,53 @@ if NpcHandler == nil then
 		setmetatable(obj, self)
 		self.__index = self
 		return obj
+	end
+
+	function NpcHandler:setLocalizedMessage(id, key, options)
+		if not id or not key or key == "" then
+			return false
+		end
+
+		options = options or {}
+		if not self.localizedMessages then
+			self.localizedMessages = {}
+		end
+
+		self.localizedMessages[id] = {
+			key = key,
+			args = options.args,
+			messageClass = options.messageClass,
+		}
+		return true
+	end
+
+	function NpcHandler:clearLocalizedMessage(id)
+		if not self.localizedMessages then
+			return
+		end
+		self.localizedMessages[id] = nil
+	end
+
+	function NpcHandler:getLocalizedMessage(id)
+		if not self.localizedMessages then
+			return nil
+		end
+		return self.localizedMessages[id]
+	end
+
+	function NpcHandler:tryLocalizedMessage(id, player)
+		local entry = self:getLocalizedMessage(id)
+		if not entry or not player or not entry.key or entry.key == "" then
+			return false
+		end
+
+		local args = entry.args
+		if type(args) == "function" then
+			args = args(player)
+		end
+
+		player:sendLocalizedTextMessage(entry.messageClass or MESSAGE_NPC_FROM, entry.key, normalizeLocalizedArgs(args))
+		return true
 	end
 
 	function NpcHandler:getTalkRange()
@@ -338,6 +395,9 @@ if NpcHandler == nil then
 	function NpcHandler:setMessage(id, newMessage, delay)
 		if self.messages ~= nil then
 			self.messages[id] = newMessage
+			if self.localizedMessages ~= nil and newMessage ~= nil and newMessage ~= "" then
+				self.localizedMessages[id] = nil
+			end
 			if delay ~= nil and delay > 1 then
 				self.talkDelay = delay
 			end
@@ -387,8 +447,12 @@ if NpcHandler == nil then
 				local playerName = player:getName() or -1
 				local parseInfo = { [TAG_PLAYERNAME] = playerName }
 				self:resetNpc(player)
-				msg = self:parseMessage(msg, parseInfo)
-				self:say(msg, npc, player)
+				if not self:tryLocalizedMessage(MESSAGE_FAREWELL, player) then
+					msg = self:parseMessage(msg, parseInfo)
+					if msg ~= "" then
+						self:say(msg, npc, player)
+					end
+				end
 				self:removeInteraction(npc, player)
 			end
 		end
@@ -406,8 +470,12 @@ if NpcHandler == nil then
 				local msg = self:getMessage(MESSAGE_GREET)
 				local playerName = player:getName() or -1
 				local parseInfo = { [TAG_PLAYERNAME] = playerName }
-				msg = self:parseMessage(msg, parseInfo)
-				self:say(msg, npc, player)
+				if not self:tryLocalizedMessage(MESSAGE_GREET, player) then
+					msg = self:parseMessage(msg, parseInfo)
+					if msg ~= "" then
+						self:say(msg, npc, player)
+					end
+				end
 			end
 		end
 		self:setInteraction(npc, player)
@@ -475,13 +543,19 @@ if NpcHandler == nil then
 		local callback = self:getCallback(CALLBACK_ON_TRADE_REQUEST)
 		if callback == nil or callback(npc, player, message) then
 			if self:processModuleCallback(CALLBACK_ON_TRADE_REQUEST, npc, player) then
-				local parseInfo = { [TAG_PLAYERNAME] = Player(player):getName() }
+				player = Player(player)
+				if not player then
+					return false
+				end
+				local parseInfo = { [TAG_PLAYERNAME] = player:getName() }
 				local msg = self:parseMessage(self:getMessage(MESSAGE_SENDTRADE), parseInfo)
 
 				-- If is npc shop, send shop window and parse default message (if not have callback on the npc)
 				if npc:isMerchant() then
 					npc:openShopWindow(player)
-					self:say(msg, npc, player)
+					if not self:tryLocalizedMessage(MESSAGE_SENDTRADE, player) and msg ~= "" then
+						self:say(msg, npc, player)
+					end
 				end
 				return true
 			end
@@ -554,13 +628,29 @@ if NpcHandler == nil then
 				local message_male = self:parseMessage(msg_male, parseInfo)
 				local msg_female = self:getMessage(MESSAGE_WALKAWAY_FEMALE)
 				local message_female = self:parseMessage(msg_female, parseInfo)
+				local localizedHandled = false
+				if player then
+					if playerSex == PLAYERSEX_FEMALE then
+						localizedHandled = self:tryLocalizedMessage(MESSAGE_WALKAWAY_FEMALE, player)
+					else
+						localizedHandled = self:tryLocalizedMessage(MESSAGE_WALKAWAY_MALE, player)
+					end
+					if not localizedHandled then
+						localizedHandled = self:tryLocalizedMessage(MESSAGE_WALKAWAY, player)
+					end
+				end
+
 				if message_female ~= message_male then
 					if playerSex == PLAYERSEX_FEMALE then
-						npc:sayWithDelay(npc:getId(), message_female, TALKTYPE_SAY, self.talkDelay, self.eventDelayedSay)
+						if localizedHandled ~= true then
+							npc:sayWithDelay(npc:getId(), message_female, TALKTYPE_SAY, self.talkDelay, self.eventDelayedSay)
+						end
 					else
-						npc:sayWithDelay(npc:getId(), message_male, TALKTYPE_SAY, self.talkDelay, self.eventDelayedSay)
+						if localizedHandled ~= true then
+							npc:sayWithDelay(npc:getId(), message_male, TALKTYPE_SAY, self.talkDelay, self.eventDelayedSay)
+						end
 					end
-				elseif message ~= "" then
+				elseif message ~= "" and localizedHandled ~= true then
 					npc:sayWithDelay(npc:getId(), message, TALKTYPE_SAY, self.talkDelay, self.eventDelayedSay)
 				end
 				self:resetNpc(player)

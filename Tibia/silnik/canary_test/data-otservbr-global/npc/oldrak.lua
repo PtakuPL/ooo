@@ -23,6 +23,9 @@ npcConfig.flags = {
 	floorchange = false,
 }
 
+-- Load NPC helper library
+dofile(CORE_DIRECTORY .. "/libs/npc/i18n.lua")
+
 -- On buy npc shop message
 npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBackpacks, totalCost)
 	npc:sellItem(player, itemId, amount, subType, 0, ignore, inBackpacks)
@@ -101,64 +104,64 @@ local function creatureSayCallback(npc, creature, type, message)
 	-- Demon oak quest
 	if MsgContains(message, "mission") or MsgContains(message, "demon oak") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Done) < 1 then
-			npcHandler:say("How do you know? Did you go into the infested area?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.mission_ask")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Progress) == 2 and player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Done) < 1 then
-			npcHandler:say("You better don't return here until you've defeated the Demon Oak.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.mission_wait")
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Done) == 1 then
-			npcHandler:say({
-				"You chopped down the demon oak?!? Unbelievable!! Let's hope it doesn't come back. As long as evil is still existent in the soil of the plains, it won't be over. Still, the demons suffered a setback, that's for sure. ...",
-				"For your brave action, I tell you a secret which has been kept for many many years. There is an old house south of the location where you found the demon oak. There should be a grave with the name 'Yesim Adeit' somewhere close by. ...",
-				"It belongs to a Daramian nobleman named 'Teme Saiyid'. I knew him well and he told me -almost augured- that someone will come who is worthy to obtain his treasure. I'm sure this 'someone' is you. Good luck in finding it!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {
+				"npc.oldrak.mission_done_1",
+				"npc.oldrak.mission_done_2",
+				"npc.oldrak.mission_done_3",
+			})
 			player:setStorageValue(Storage.Quest.U8_2.TheDemonOak.Done, 2)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
 		player:setStorageValue(Storage.Quest.U8_2.TheDemonOak.Progress, 1)
 		if player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Progress) == 1 then
-			npcHandler:say("A demon oak?!? <mumbles some blessings> May the gods be on our side. You'll need a {hallowed axe} to harm that tree. Bring me a simple {axe} and I'll prepare it for you.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.mission_yes")
 			player:setStorageValue(Storage.Quest.U8_2.TheDemonOak.Progress, 2)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("I don't believe a word of it! How rude to lie to a monk!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.mission_lie")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "axe") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Progress) == 2 then
-			npcHandler:say("Ahh, you've got an axe. Very good. I can make a hallowed axe out of it. It will cost you... er... a donation of 1,000 gold. Alright?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.axe_ask")
 			npcHandler:setTopic(playerId, 2)
 		else
-			npcHandler:say("You have to first talk about {demon oak} or the {mission} before we continue.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.axe_first")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 then
 		if player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Progress) == 2 then
 			if player:getMoney() + player:getBankBalance() >= 1000 then
 				if player:removeItem(3274, 1) and player:removeMoneyBank(1000) then
-					npcHandler:say("Let's see....<mumbles a prayer>....here we go. The blessing on this axe will be absorbed by all the demonic energy around here. I presume it will not last very long, so better hurry. Actually, I can refresh the blessing as often as you like.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.axe_done")
 					player:addItem(919, 1)
 					npc:getPosition():sendMagicEffect(CONST_ME_YELLOWENERGY)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("There is no axe with you.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.axe_missing")
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:say("There is not enough of money with you.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.money_missing")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say("What a pity! Let me know when you managed to get in there. Maybe I can help you when we know what we are dealing with.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.mission_no")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 2 then
-		npcHandler:say("No then.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.axe_no")
 		npcHandler:setTopic(playerId, 0)
 	end
 
 	-- The paradox tower quest
 	if MsgContains(message, "hugo") then
-		npcHandler:say("Ah, the curse of the Plains of Havoc, the hidden beast, the unbeatable foe. I've been living here for years and I'm sure this is only a myth.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.hugo")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "myth") then
 		if player:getStorageValue(Storage.Quest.U7_24.TheParadoxTower.TheFearedHugo) < 1 then
@@ -167,26 +170,26 @@ local function creatureSayCallback(npc, creature, type, message)
 			-- Questlog: The Feared Hugo (Zoltan)
 			player:setStorageValue(Storage.Quest.U7_24.TheParadoxTower.TheFearedHugo, 1)
 		end
-		npcHandler:say("There are many tales about the fearsome Hugo. It's said it's an abnormality, accidentally created by Yenny the Gentle. It's half demon, half something else and people say it's still alive after all these years.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.myth")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "yenny the gentle") then
-		npcHandler:say("Yenny, known as the Gentle, was one of the most powerful wielders of magic in ancient times. She was known throughout the world for her mercy and kindness.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.yenny")
 		npcHandler:setTopic(playerId, 0)
 	end
 
 	if MsgContains(message, "holy") or MsgContains(message, "tible") then
 		if player:getStorageValue(Storage.Quest.U7_9.ThePitsOfInferno.ChestTible) == 1 then
-			npcHandler:say("Would you like to buy a The Holy Tible for 1000 gold?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.tible_ask")
 			npcHandler:setTopic(playerId, 3)
 		else
-			npcHandler:say("You need to complete the quest for the book first before you can buy The Holy Tible.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.tible_quest_first")
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 3 then
 		if player:removeMoney(1000) then
 			player:addItem(2836, 1)
-			npcHandler:say("Here is your The Holy Tible.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.tible_done")
 		else
-			npcHandler:say("You do not have enough money.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.not_enough_money")
 		end
 		npcHandler:setTopic(playerId, 0)
 	end
@@ -194,9 +197,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome |PLAYERNAME|! Only rarely I can welcome {visitors} these days.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Take care, it's dangerous out there.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good Bye, |PLAYERNAME|")
+npcHandler:setMessage(MESSAGE_GREET, NPC_LIB.i18n.get("npc.oldrak.greet", "{playername}"))
+npcHandler:setMessage(MESSAGE_WALKAWAY, NPC_LIB.i18n.get("npc.oldrak.walkaway"))
+npcHandler:setMessage(MESSAGE_FAREWELL, NPC_LIB.i18n.get("npc.oldrak.farewell", "{playername}"))
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

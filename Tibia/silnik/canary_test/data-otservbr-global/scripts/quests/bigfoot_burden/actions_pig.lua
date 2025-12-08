@@ -10,12 +10,12 @@ function bigfootPig.onUse(player, item, fromPosition, target, toPosition, isHotk
 	end
 
 	if mushroomCount == 3 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The little pig is stuffed and you better return it home.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.pig_stuffed")
 		return true
 	end
 
 	player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MushroomCount, mushroomCount + 1)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The little pig happily eats the truffles.")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.pig_eating")
 	target:transform(15701)
 	toPosition:sendMagicEffect(CONST_ME_GROUNDSHAKER)
 	return true

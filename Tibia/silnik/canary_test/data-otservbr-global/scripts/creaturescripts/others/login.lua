@@ -12,7 +12,7 @@ function playerLogin.onLogin(player)
 		town = table.contains(freeTowns, town:getName()) and town or Town(defaultTown)
 		player:teleportTo(town:getTemplePosition())
 		player:setTown(town)
-		player:sendTextMessage(MESSAGE_FAILURE, "Your premium time has expired!")
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "player.login.premium_expired")
 
 		if sex == 1 then
 			player:setOutfit({ lookType = 128, lookHead = 114, lookBody = 120, lookLegs = 132, lookFeet = 115, lookAddons = 0 })
@@ -22,8 +22,8 @@ function playerLogin.onLogin(player)
 
 		if home and not player:isPremium() then
 			setHouseOwner(home, 0)
-			player:sendTextMessage(MESSAGE_GAME_HIGHLIGHT, "You have lost your house because you are no longer a premium account.")
-			player:sendTextMessage(MESSAGE_GAME_HIGHLIGHT, "Your items from the house have been sent to your inbox.")
+			player:sendLocalizedTextMessage(MESSAGE_GAME_HIGHLIGHT, "player.login.house_lost")
+			player:sendLocalizedTextMessage(MESSAGE_GAME_HIGHLIGHT, "player.login.house_items_inbox")
 		end
 	end
 

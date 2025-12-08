@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS `server_config` (
     CONSTRAINT `server_config_pk` PRIMARY KEY (`config`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `server_config` (`config`, `value`) VALUES ('db_version', '52'), ('motd_hash', ''), ('motd_num', '0'), ('players_record', '0');
+INSERT INTO `server_config` (`config`, `value`) VALUES ('db_version', '53'), ('motd_hash', ''), ('motd_num', '0'), ('players_record', '0');
 
 -- Table structure `accounts`
 CREATE TABLE IF NOT EXISTS `accounts` (
@@ -74,6 +74,7 @@ CREATE TABLE IF NOT EXISTS `players` (
     `conditions` mediumblob NOT NULL,
     `cap` int(11) NOT NULL DEFAULT '0',
     `sex` int(11) NOT NULL DEFAULT '0',
+    `locale` varchar(5) NOT NULL DEFAULT 'en',
     `pronoun` int(11) NOT NULL DEFAULT '0',
     `lastlogin` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
     `lastip` int(10) UNSIGNED NOT NULL DEFAULT '0',
@@ -152,6 +153,7 @@ CREATE TABLE IF NOT EXISTS `players` (
     `animus_mastery` mediumblob DEFAULT NULL,
     INDEX `account_id` (`account_id`),
     INDEX `vocation` (`vocation`),
+    INDEX `idx_players_locale` (`locale`),
     CONSTRAINT `players_pk` PRIMARY KEY (`id`),
     CONSTRAINT `players_unique` UNIQUE (`name`),
     CONSTRAINT `players_account_fk`

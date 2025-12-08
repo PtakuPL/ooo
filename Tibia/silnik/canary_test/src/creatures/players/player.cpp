@@ -9,6 +9,10 @@
 
 #include "creatures/players/player.hpp"
 
+#include <algorithm>
+#include <cctype>
+#include <fmt/format.h>
+
 #include "account/account.hpp"
 #include "config/configmanager.hpp"
 #include "core.hpp"
@@ -50,6 +54,8 @@
 #include "items/items_classification.hpp"
 #include "items/weapons/weapons.hpp"
 #include "lib/metrics/metrics.hpp"
+#include "utils/i18n/translator.hpp"
+#include "utils/tools.hpp"
 #include "lua/callbacks/event_callback.hpp"
 #include "lua/callbacks/events_callbacks.hpp"
 #include "lua/creature/actions.hpp"
@@ -74,7 +80,9 @@ Player::Player(std::shared_ptr<ProtocolGame> p) :
 	m_playerCyclopedia(*this),
 	m_playerTitle(*this),
 	m_animusMastery(*this),
-	m_playerAttachedEffects(*this) { }
+	m_playerAttachedEffects(*this) {
+	setLocale(g_configManager().getString(DEFAULT_LOCALE));
+}
 
 Player::~Player() {
 	for (const auto &item : inventory) {
@@ -243,6 +251,33 @@ std::string Player::getDescription(int32_t lookDistance) {
 		}
 	}
 	return s.str();
+}
+
+void Player::setLocale(const std::string &value) {
+	std::string desired = value;
+	if (desired.empty()) {
+		desired = g_configManager().getString(DEFAULT_LOCALE);
+	}
+
+	desired = asLowerCaseString(desired);
+	desired.erase(
+		std::remove_if(desired.begin(), desired.end(), [](unsigned char ch) {
+			return !(std::isalpha(ch) || std::isdigit(ch) || ch == '-' || ch == '_');
+		}),
+		desired.end()
+	);
+
+	if (desired.empty()) {
+		desired = "en";
+	} else if (desired.size() > 5) {
+		desired.resize(5);
+	}
+
+	locale = desired;
+}
+
+const std::string &Player::getLocale() const {
+	return locale;
 }
 
 std::shared_ptr<Item> Player::getInventoryItem(Slots_t slot) const {
@@ -2305,6 +2340,34 @@ void Player::sendTextMessage(const TextMessage &message) const {
 	if (client) {
 		client->sendTextMessage(message);
 	}
+}
+
+void Player::sendLocalizedTextMessage(MessageClasses mclass, const std::string &key, std::vector<std::string> args) const {
+	const std::string fallback = g_configManager().getString(DEFAULT_LOCALE);
+	const std::string &activeLocale = locale.empty() ? fallback : locale;
+	sendTextMessage(mclass, i18n::g_translator().format(key, activeLocale, std::move(args)));
+}
+
+void Player::sendLocalizedMessageDialog(const std::string &key, std::vector<std::string> args) const {
+	const std::string fallback = g_configManager().getString(DEFAULT_LOCALE);
+	const std::string &activeLocale = locale.empty() ? fallback : locale;
+	sendMessageDialog(i18n::g_translator().format(key, activeLocale, std::move(args)));
+}
+
+std::string Player::getLocalizedItemName(const ItemType &itemType) const {
+	const std::string fallbackName = itemType.name;
+	if (itemType.id == 0) {
+		return fallbackName;
+	}
+
+	const std::string fallbackLocale = g_configManager().getString(DEFAULT_LOCALE);
+	const std::string &activeLocale = locale.empty() ? fallbackLocale : locale;
+	const auto key = fmt::format("items.{}.name", itemType.id);
+	const auto localized = i18n::g_translator().get(key, activeLocale);
+	if (localized.empty() || localized == key) {
+		return fallbackName;
+	}
+	return localized;
 }
 
 void Player::sendReLoginWindow(uint8_t unfairFightReduction) const {
@@ -5893,7 +5956,7 @@ void Player::onCleanseCondition(ConditionType_t type) const {
 
 	auto it = conditionMessages.find(type);
 	if (it != conditionMessages.end()) {
-		sendTextMessage(MESSAGE_PARTY, fmt::format("You are no longer {}. (cleanse charm)", it->second));
+		sendLocalizedTextMessage(MESSAGE_PARTY, "player.status.cleanse", { it->second });
 	}
 }
 
@@ -5903,19 +5966,19 @@ void Player::onAddCombatCondition(ConditionType_t type) {
 	}
 	switch (type) {
 		case CONDITION_POISON:
-			sendTextMessage(MESSAGE_FAILURE, "You are poisoned.");
+			sendLocalizedTextMessage(MESSAGE_FAILURE, "player.condition.poisoned");
 			break;
 
 		case CONDITION_DROWN:
-			sendTextMessage(MESSAGE_FAILURE, "You are drowning.");
+			sendLocalizedTextMessage(MESSAGE_FAILURE, "player.condition.drowning");
 			break;
 
 		case CONDITION_PARALYZE:
-			sendTextMessage(MESSAGE_FAILURE, "You are paralyzed.");
+			sendLocalizedTextMessage(MESSAGE_FAILURE, "player.condition.paralyzed");
 			break;
 
 		case CONDITION_DRUNK:
-			sendTextMessage(MESSAGE_FAILURE, "You are drunk.");
+			sendLocalizedTextMessage(MESSAGE_FAILURE, "player.condition.drunk");
 			break;
 
 		case CONDITION_LESSERHEX:
@@ -5924,30 +5987,30 @@ void Player::onAddCombatCondition(ConditionType_t type) {
 
 		case CONDITION_GREATERHEX:
 
-			sendTextMessage(MESSAGE_FAILURE, "You are hexed.");
+			sendLocalizedTextMessage(MESSAGE_FAILURE, "player.condition.hexed");
 			break;
 		case CONDITION_ROOTED:
-			sendTextMessage(MESSAGE_FAILURE, "You are rooted.");
+			sendLocalizedTextMessage(MESSAGE_FAILURE, "player.condition.rooted");
 			break;
 
 		case CONDITION_FEARED:
-			sendTextMessage(MESSAGE_FAILURE, "You are feared.");
+			sendLocalizedTextMessage(MESSAGE_FAILURE, "player.condition.feared");
 			break;
 
 		case CONDITION_CURSED:
-			sendTextMessage(MESSAGE_FAILURE, "You are cursed.");
+			sendLocalizedTextMessage(MESSAGE_FAILURE, "player.condition.cursed");
 			break;
 
 		case CONDITION_FREEZING:
-			sendTextMessage(MESSAGE_FAILURE, "You are freezing.");
+			sendLocalizedTextMessage(MESSAGE_FAILURE, "player.condition.freezing");
 			break;
 
 		case CONDITION_DAZZLED:
-			sendTextMessage(MESSAGE_FAILURE, "You are dazzled.");
+			sendLocalizedTextMessage(MESSAGE_FAILURE, "player.condition.dazzled");
 			break;
 
 		case CONDITION_BLEEDING:
-			sendTextMessage(MESSAGE_FAILURE, "You are bleeding.");
+			sendLocalizedTextMessage(MESSAGE_FAILURE, "player.condition.bleeding");
 			break;
 
 		default:
@@ -8509,7 +8572,7 @@ ReturnValue Player::addItemFromStash(uint16_t itemId, uint32_t itemCount) {
 	uint32_t retrievableCount = std::min(maxRetrievableByWeight, itemCount);
 
 	if (retrievableCount == 0) {
-		sendMessageDialog("Not enough capacity. You could not retrieve any items.");
+		sendLocalizedMessageDialog("player.stash.dialog.capacity_none");
 		return RETURNVALUE_NOTENOUGHROOM;
 	}
 
@@ -8575,7 +8638,7 @@ ReturnValue Player::addItemFromStash(uint16_t itemId, uint32_t itemCount) {
 	}
 
 	if (!canAddItems) {
-		sendMessageDialog("Not enough space. You could not retrieve any items.");
+		sendLocalizedMessageDialog("player.stash.dialog.space_none");
 		return RETURNVALUE_NOTENOUGHROOM;
 	}
 
@@ -8688,8 +8751,12 @@ ReturnValue Player::addItemFromStash(uint16_t itemId, uint32_t itemCount) {
 		}
 	}
 
-	std::string itemName = itemType.name + (addedItemCount > 1 ? "s" : "");
-	sendTextMessage(MESSAGE_STATUS, fmt::format("Retrieved {}x {}.", addedItemCount, itemName));
+	std::string itemName = getLocalizedItemName(itemType);
+	if (addedItemCount > 1) {
+		itemName += 's';
+	}
+
+	sendLocalizedTextMessage(MESSAGE_STATUS, "player.stash.retrieved", { std::to_string(addedItemCount), itemName });
 
 	if (!isDepotSearchOpenOnItem(itemId)) {
 		sendOpenStash();
@@ -8704,9 +8771,9 @@ ReturnValue Player::addItemFromStash(uint16_t itemId, uint32_t itemCount) {
 	bool limitedBySlots = (addedItemCount < retrievableCount) && !limitedByCapacity;
 
 	if (limitedByCapacity) {
-		sendMessageDialog("Not enough capacity. You could not retrieve all items.");
+		sendLocalizedMessageDialog("player.stash.dialog.capacity_partial");
 	} else if (limitedBySlots) {
-		sendMessageDialog("Not enough space. You could not retrieve all items.");
+		sendLocalizedMessageDialog("player.stash.dialog.space_partial");
 	}
 
 	return addedItemCount > 0 ? RETURNVALUE_NOERROR : RETURNVALUE_NOTENOUGHROOM;

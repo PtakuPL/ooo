@@ -13,12 +13,12 @@ function bigfootRepair.onUse(player, item, fromPosition, target, toPosition, isH
 	end
 
 	if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.GolemCount) >= 4 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have returned enough golems for now. Give the gnomes some time for their repairs. Report back now.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.golems_enough")
 		return true
 	end
 
 	player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.GolemCount, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.GolemCount) + 1)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The golem has been returned to the gnomish workshop.")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.golem_returned")
 	target:remove()
 	player:getPosition():sendMagicEffect(CONST_ME_ENERGYHIT)
 

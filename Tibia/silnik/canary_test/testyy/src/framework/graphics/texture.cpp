@@ -120,7 +120,7 @@ void Texture::uploadSubPixels(const Rect& dest, const ImagePtr& image, const int
         return;
     }
 
-    if (!m_id)
+    if (!g_graphics.ok() || !m_id)
         return;
 
     bind();
@@ -137,11 +137,15 @@ void Texture::uploadSubPixels(const Rect& dest, const ImagePtr& image, const int
     glTexSubImage2D(GL_TEXTURE_2D, level, dest.left(), dest.top(), imageSize.width(), imageSize.height(), format, GL_UNSIGNED_BYTE, image->getPixelData());
 }
 
-void Texture::bind() { if (m_id) glBindTexture(GL_TEXTURE_2D, m_id); }
+void Texture::bind()
+{
+    if (g_graphics.ok() && m_id)
+        glBindTexture(GL_TEXTURE_2D, m_id);
+}
 
 void Texture::buildHardwareMipmaps()
 {
-    if (getProp(hasMipMaps))
+    if (!g_graphics.ok() || getProp(hasMipMaps))
         return;
 
 #ifndef OPENGL_ES
@@ -163,7 +167,7 @@ void Texture::setSmooth(const bool smooth)
 
     setProp(Prop::smooth, smooth);
 
-    if (!m_id) return;
+    if (!g_graphics.ok() || !m_id) return;
 
     if (!canCacheInAtlas()) {
         bind();
@@ -186,7 +190,7 @@ void Texture::setRepeat(const bool repeat)
 
     setProp(Prop::repeat, repeat);
 
-    if (!m_id) return;
+    if (!g_graphics.ok() || !m_id) return;
 
     bind();
     setupWrap();
@@ -203,7 +207,12 @@ void Texture::setUpsideDown(const bool upsideDown)
 
 void Texture::createTexture()
 {
-    if (g_graphics.ok() && m_id != 0)
+    if (!g_graphics.ok()) {
+        m_id = 0;
+        return;
+    }
+
+    if (m_id != 0)
         glDeleteTextures(1, &m_id);
 
     glGenTextures(1, &m_id);
@@ -217,13 +226,13 @@ bool Texture::setupSize(const Size& size)
     if (m_size == size)
         return true;
 
-    // checks texture max size
-    if (std::max<int>(size.width(), size.height()) > g_graphics.getMaxTextureSize()) {
+    const int32_t maxTextureSize = g_graphics.getMaxTextureSize();
+    if (maxTextureSize > 0 && std::max<int>(size.width(), size.height()) > maxTextureSize) {
         g_logger.error(
             "loading texture with size {}x{} failed, "
             "the maximum size allowed by the graphics card is {}x{}, "
             "to prevent crashes the texture will be displayed as a blank texture",
-            size.width(), size.height(), g_graphics.getMaxTextureSize(), g_graphics.getMaxTextureSize()
+            size.width(), size.height(), maxTextureSize, maxTextureSize
         );
         return false;
     }
@@ -237,6 +246,9 @@ bool Texture::setupSize(const Size& size)
 
 void Texture::setupWrap() const
 {
+    if (!g_graphics.ok() || !m_id)
+        return;
+
     const GLint texParam = getProp(repeat) ? GL_REPEAT : GL_CLAMP_TO_EDGE;
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, texParam);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, texParam);
@@ -244,7 +256,7 @@ void Texture::setupWrap() const
 
 void Texture::setupFilters() const
 {
-    if (!m_id) return;
+    if (!g_graphics.ok() || !m_id) return;
 
     GLenum minFilter;
     GLenum magFilter;
@@ -280,6 +292,9 @@ void Texture::setupPixels(const int level, const Size& size, const uint8_t* pixe
 #endif
 ) const
 {
+    if (!g_graphics.ok())
+        return;
+
     GLenum format = 0;
     GLenum internalFormat = GL_R8;
     switch (channels) {

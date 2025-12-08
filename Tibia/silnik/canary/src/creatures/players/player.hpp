@@ -194,6 +194,8 @@ public:
 		return name;
 	}
 	std::string getDescription(int32_t lookDistance) override;
+	void setLocale(const std::string &value);
+	[[nodiscard]] const std::string &getLocale() const;
 
 	CreatureType_t getType() const override {
 		return CREATURETYPE_PLAYER;
@@ -907,6 +909,9 @@ public:
 	void sendSkills() const;
 	void sendTextMessage(MessageClasses mclass, const std::string &message) const;
 	void sendTextMessage(const TextMessage &message) const;
+	void sendLocalizedTextMessage(MessageClasses mclass, const std::string &key, std::vector<std::string> args = {}) const;
+	void sendLocalizedMessageDialog(const std::string &key, std::vector<std::string> args = {}) const;
+	[[nodiscard]] std::string getLocalizedItemName(const ItemType &itemType) const;
 	void sendReLoginWindow(uint8_t unfairFightReduction) const;
 	void sendTextWindow(const std::shared_ptr<Item> &item, uint16_t maxlen, bool canWrite) const;
 	void sendToChannel(const std::shared_ptr<Creature> &creature, SpeakClasses type, const std::string &text, uint16_t channelId) const;
@@ -1464,6 +1469,7 @@ private:
 	std::string name;
 	std::string guildNick;
 	std::string loyaltyTitle;
+	std::string locale = "en";
 
 	Skill skills[SKILL_LAST + 1];
 	LightInfo itemsLight;

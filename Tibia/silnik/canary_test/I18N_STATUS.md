@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-08 19:21:54 UTC  
+> **Aktualizacja:** 2025-12-08 19:25:56 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -25,8 +25,8 @@
 | ⏭️ Plików wykluczonych | **3017** | - |
 | 🔑 Kluczy i18n | **41733** | ↑ |
 | 🌍 Języków | **53** | ✓ |
-| ⚠️ Konfliktów | **58** | ✓ |
-| 🔄 Cykl | **#7** | - |
+| ⚠️ Konfliktów | **0** | ✓ |
+| 🔄 Cykl | **#1** | - |
 
 ---
 
@@ -39,10 +39,15 @@
 |---------|---------|
 | 🔑 Kluczy | 4048 |
 | 📊 Status | ✅ Zakończone |
+| 📂 Plików | ~877 |
 
 **Źródła:** `data-otservbr-global/npc/`, `data-canary/npc/`
 
-**📖 Szczegóły:** `i18n/status/categories/npc_details.json`
+**Wzorce ekstrakcji:**
+```lua
+npcHandler:say("text")
+selfSay("text")
+```
 
 </details>
 
@@ -53,22 +58,44 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 713 |
+| 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
+| 🔄 Cykl | #1 |
 
-**Podkatalogi:**
-| Katalog | Status |
-|---------|--------|
-| `quests/` | 🔄 W trakcie |
-| `actions/` | 🔄 W trakcie |
-| `movements/` | ⏳ Oczekuje |
-| `creaturescripts/` | ⏳ Oczekuje |
-| `talkactions/` | ⏳ Oczekuje |
-| `globalevents/` | ⏳ Oczekuje |
-| `spells/` | ⏳ Oczekuje |
+### 📁 Podkatalogi - Postęp
 
-**📖 Szczegóły:** `i18n/status/categories/scripts_details.json`
+| Katalog | Przetworzonych | Status |
+|---------|----------------|--------|
+| `quests/` | 286 | 🔄 W trakcie |
+| `actions/` | 58 | 🔄 W trakcie |
+| `movements/` | 13 | 🔄 W trakcie |
+| `creaturescripts/` | 8 | 🔄 W trakcie |
+| `talkactions/` | 33 | 🔄 W trakcie |
+| `globalevents/` | 1 | 🔄 W trakcie |
+| `spells/` | 0 | ⏳ Oczekuje |
+
+### 📄 Ostatnio przetworzone pliki
+
+| Plik | Czas | Status |
+|------|------|--------|
+| `index.php` | 22:15:08 | ✅ |
+| `openid.php` | 22:15:08 | ✅ |
+| `signon.php` | 22:15:08 | ✅ |
+| `translation_manager.php` | 21:33:39 | ✅ |
+| `index.php` | 06:26:18 | ✅ |
+
+### 💻 Przykład kodu (ostatni plik)
+
+```lua
+
+```
+
+**Wzorce ekstrakcji:**
+```lua
+player:sendTextMessage(type, "text")
+creature:say("text")
+```
 
 </details>
 
@@ -82,8 +109,6 @@
 | 🔑 Kluczy | 36972 |
 | 📊 Status | ✅ Zakończone |
 
-**📖 Szczegóły:** `i18n/status/categories/items_details.json`
-
 </details>
 
 ---
@@ -95,9 +120,7 @@
 |---------|---------|
 | 🔑 Kluczy | 0 |
 | 📊 Status | ⏳ Oczekuje |
-| 📅 Planowany start | Po Scripts |
-
-**📖 Szczegóły:** `i18n/status/categories/monsters_details.json`
+| 📅 Start | Po zakończeniu Scripts |
 
 </details>
 
@@ -110,9 +133,7 @@
 |---------|---------|
 | 🔑 Kluczy | 0 |
 | 📊 Status | ⏳ Oczekuje |
-| ⚠️ Wymaga | Rekompilacja |
-
-**📖 Szczegóły:** `i18n/status/categories/server_details.json`
+| ⚠️ Wymaga | Rekompilacja serwera |
 
 </details>
 
@@ -126,18 +147,16 @@
 | 🔑 Kluczy | 0 |
 | 📊 Status | ⏳ Oczekuje |
 
-**📖 Szczegóły:** `i18n/status/categories/spells_details.json`
-
 </details>
 
 ---
 
-## 🔧 Worker & Guardian
+## 🔧 Worker & Guardian Status
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | Cykl #7, 10 plików/cykl |
-| **Guardian v2.0** | 🟢 ACTIVE | Crontab co 1 min, push co 2 min |
+| **Worker v4.0** | 🟢 RUNNING | PID: 2612485, Cykl #1 |
+| **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---
 
@@ -146,7 +165,7 @@
 ```
 [✅] Phase 1: Items           ████████████████████ 100%
 [✅] Phase 2: NPC             ████████████████████ 100%
-[🔄] Phase 3: Scripts         ████░░░░░░░░░░░░░░░░  20%
+[🔄] Phase 3: Scripts         ████████░░░░░░░░░░░░ 14%
 [⏳] Phase 4: Monsters        ░░░░░░░░░░░░░░░░░░░░   0%
 [⏳] Phase 5: Spells          ░░░░░░░░░░░░░░░░░░░░   0%
 [⏳] Phase 6: Server (C++)    ░░░░░░░░░░░░░░░░░░░░   0%
@@ -154,16 +173,6 @@
 
 ---
 
-## 📖 Dokumentacja
-
-| Dokument | Opis |
-|----------|------|
-| `docs/AI_AGENT_INTEGRATION.md` | Przewodnik dla AI agentów |
-| `docs/I18N_DEVELOPMENT_ROADMAP.md` | Pełny plan rozwoju |
-| `i18n_future_scripts/` | Szkice przyszłych skryptów |
-
----
-
 *🤖 Machine-readable: `i18n/status/worker_state.json`*  
-*📅 Auto-updated by Worker v4.0*  
+*📅 Auto-updated by Worker v4.0 every cycle*  
 *🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)*

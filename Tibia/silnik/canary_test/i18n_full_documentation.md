@@ -6673,3 +6673,135 @@ Duplikaty, błędy składni, brakujące tłumaczenia
 Klucze i18n: 44827
 
 ---
+
+## [2025-12-08 22:53:57] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 22:53:59] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44827
+
+---
+
+## [2025-12-08 22:55:53] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 22:55:54] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44827
+
+---
+
+## [2025-12-08 22:58:03] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 22:58:05] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44827
+
+---
+
+## [2025-12-08 23:00:00] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 23:00:02] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44827
+
+---
+
+## [2025-12-08 23:01:57] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 23:01:59] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44827
+
+---
+
+## [2025-12-08 23:04:15] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 23:04:17] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44827
+
+---

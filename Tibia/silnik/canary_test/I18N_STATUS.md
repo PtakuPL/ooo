@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-09 00:00:24 UTC  
+> **Aktualizacja:** 2025-12-09 00:02:18 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -76,11 +76,11 @@
 
 | Parametr | Wartość |
 |----------|----------|
-| **Status** | 🔄 in_progress |
-| **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #30` |
-| **Szczegóły** | NPC:4108 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-08 23:59:40 |
+| **Status** | 💤 waiting |
+| **Operacja** | Oczekiwanie na nowe pliki |
+| **Plik** | `-` |
+| **Szczegóły** | Sprawdzam co 60s |
+| **Ostatnia aktualizacja** | 2025-12-09 00:01:07 |
 
 ### 📈 Statystyki sesji
 

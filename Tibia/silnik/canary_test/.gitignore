@@ -410,3 +410,6 @@ database_backup
 # CLION
 cmake-build-*
 *:Zone.Identifier
+.env.github_models
+.env*
+.env*

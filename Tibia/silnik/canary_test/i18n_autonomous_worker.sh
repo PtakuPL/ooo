@@ -632,12 +632,13 @@ get_category() {
 }
 
 #===============================================================================
-# MIGRACJA LUA - ZGODNA Z NASZYMI ZASADAMI
+# MIGRACJA LUA - TYLKO EKSTRAKCJA KLUCZY (zgodnie z roadmapą)
 #===============================================================================
-# Prawidłowy wzorzec migracji NPC:
-# 1. npcHandler:sayLocalized("klucz", npc, creature) - dla istniejących callback
-# 2. Klucz: "npc.nazwa_npc.say_N" lub "npc.nazwa_npc.greet" itp.
-# 3. JSON: dodaj klucz do i18n/en/npc.json
+# Roadmap mówi że:
+# 1. NIE modyfikujemy plików Lua automatycznie
+# 2. Tylko ekstrakcja kluczy do JSON
+# 3. Python pipeline robi sync: python tools/i18n_pipeline.py --locales pl es pt de
+# 4. Migracja NPC wymaga helper lib/npc/i18n.lua (do stworzenia)
 #===============================================================================
 
 migrate_lua_file() {
@@ -650,9 +651,9 @@ migrate_lua_file() {
     
     log_info "🔷 [LUA] $relative_path"
     
-    # Sprawdź czy już zmigrowany
-    if grep -qE "sayLocalized|npcI18n\.|getTranslation" "$file" 2>/dev/null; then
-        log_info "   ⏭️ Już zmigrowany"
+    # Sprawdź czy już zmigrowany (helper NPC lub sendLocalizedTextMessage)
+    if grep -qE "sendLocalizedTextMessage|NPC_LIB\.i18n\.|npcI18n\." "$file" 2>/dev/null; then
+        log_info "   ⏭️ Już zmigrowany (używa prawidłowego API)"
         mark_processed "$file"
         return 1
     fi
@@ -698,34 +699,28 @@ migrate_lua_file() {
         return 1
     fi
     
-    # Backup
-    cp "$file" "${file}.bak"
-    
-    local temp_file=$(mktemp)
-    local transformed=0
+    # === TYLKO EKSTRAKCJA - NIE MODYFIKUJEMY PLIKÓW ===
+    local extracted=0
     local key_counter=1
     local json_file="$I18N_DIR/en/${category}.json"
     
     # Upewnij się że plik JSON istnieje
     [ ! -f "$json_file" ] && echo "{}" > "$json_file"
     
+    # Ekstrakcja wszystkich stringów bez modyfikacji pliku
     while IFS= read -r line || [ -n "$line" ]; do
-        local new_line="$line"
         
-        #=== MIGRACJA NPC: npcHandler:say ===
+        #=== EKSTRAKCJA NPC: npcHandler:say ===
         if [ "$is_npc_file" = true ]; then
             
-            # WZORZEC 1: npcHandler:say("tekst", npc, creature)
-            if echo "$line" | grep -qE 'npcHandler:say\s*\(\s*"[^"]{5,}"[^)]*,\s*npc'; then
-                local text=$(echo "$line" | sed -n 's/.*npcHandler:say\s*(\s*"\([^"]*\)"[^)]*,.*/\1/p')
+            # WZORZEC 1: npcHandler:say("tekst", ...)
+            if echo "$line" | grep -qE 'npcHandler:say\s*\(\s*"[^"]{5,}"'; then
+                local text=$(echo "$line" | sed -n 's/.*npcHandler:say\s*(\s*"\([^"]*\)".*/\1/p')
                 if [ -n "$text" ] && [ ${#text} -ge 5 ]; then
                     local key="npc.${safe_name}.say_${key_counter}"
                     key_counter=$((key_counter + 1))
                     
-                    # Zamiana: npcHandler:say("tekst", npc, creature) → npcHandler:sayLocalized("klucz", npc, creature)
-                    new_line=$(echo "$line" | sed "s|npcHandler:say(\s*\"[^\"]*\",|npcHandler:sayLocalized(\"${key}\",|")
-                    
-                    # Dodaj klucz do JSON
+                    # TYLKO dodaj klucz do JSON - NIE modyfikuj pliku Lua
                     python3 -c "
 import json, os
 f='$json_file'
@@ -734,20 +729,17 @@ d['$key']='''$text'''
 json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
 " 2>/dev/null
                     
-                    transformed=$((transformed + 1))
-                    log_info "      🔑 $key = '$text'"
+                    extracted=$((extracted + 1))
+                    log_info "      📝 $key = '${text:0:50}...'"
                 fi
             fi
             
-            # WZORZEC 2: npcHandler:say({ "tekst" }, npc, creature) - z tablicą
-            if echo "$line" | grep -qE 'npcHandler:say\s*\(\s*\{\s*"[^"]{5,}"[^}]*\}\s*,\s*npc'; then
-                local text=$(echo "$line" | sed -n 's/.*npcHandler:say\s*(\s*{\s*"\([^"]*\)"[^}]*}.*/\1/p')
+            # WZORZEC 2: npcHandler:say({ "tekst" }, ...) - z tablicą
+            if echo "$line" | grep -qE 'npcHandler:say\s*\(\s*\{\s*"[^"]{5,}"'; then
+                local text=$(echo "$line" | sed -n 's/.*npcHandler:say\s*(\s*{\s*"\([^"]*\)".*/\1/p')
                 if [ -n "$text" ] && [ ${#text} -ge 5 ]; then
                     local key="npc.${safe_name}.say_${key_counter}"
                     key_counter=$((key_counter + 1))
-                    
-                    # Zamiana: npcHandler:say({ "tekst" }, npc, creature) → npcHandler:sayLocalized("klucz", npc, creature)
-                    new_line=$(echo "$line" | sed "s|npcHandler:say(\s*{\s*\"[^\"]*\"[^}]*},|npcHandler:sayLocalized(\"${key}\",|")
                     
                     python3 -c "
 import json, os
@@ -757,41 +749,18 @@ d['$key']='''$text'''
 json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
 " 2>/dev/null
                     
-                    transformed=$((transformed + 1))
-                    log_info "      🔑 $key = '$text'"
+                    extracted=$((extracted + 1))
+                    log_info "      📝 $key = '${text:0:50}...'"
                 fi
             fi
             
-            # WZORZEC 3: npcHandler:say('tekst', npc, creature)  (single quotes)
-            if echo "$line" | grep -qE "npcHandler:say\s*\(\s*'[^']{5,}'"; then
-                local text=$(echo "$line" | sed -n "s/.*npcHandler:say\s*(\s*'\([^']*\)'.*/\1/p")
-                if [ -n "$text" ] && [ ${#text} -ge 5 ]; then
-                    local key="npc.${safe_name}.say_${key_counter}"
-                    key_counter=$((key_counter + 1))
-                    
-                    new_line=$(echo "$line" | sed "s|npcHandler:say(\s*'[^']*'|npcHandler:sayLocalized(\"${key}\", npc, creature|")
-                    
-                    python3 -c "
-import json, os
-f='$json_file'
-d=json.load(open(f)) if os.path.exists(f) and os.path.getsize(f) > 2 else {}
-d['$key']=\"\"\"$text\"\"\"
-json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
-" 2>/dev/null
-                    
-                    transformed=$((transformed + 1))
-                    log_info "      🔑 $key = '$text'"
-                fi
-            fi
-            
-            # WZORZEC 4: StdModule.say { text = "..." } - ekstrakcja bez modyfikacji
+            # WZORZEC 3: StdModule.say { text = "..." }
             if echo "$line" | grep -qE 'StdModule\.say.*text\s*=\s*"[^"]{5,}"'; then
                 local text=$(echo "$line" | sed -n 's/.*text\s*=\s*"\([^"]*\)".*/\1/p')
                 if [ -n "$text" ] && [ ${#text} -ge 5 ]; then
                     local key="npc.${safe_name}.stdmod_${key_counter}"
                     key_counter=$((key_counter + 1))
                     
-                    # Dla StdModule.say tylko ekstrakcja - wymaga ręcznej migracji do npcHandler:sayLocalized
                     python3 -c "
 import json, os
 f='$json_file'
@@ -800,24 +769,20 @@ d['$key']='''$text'''
 json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
 " 2>/dev/null
                     
-                    transformed=$((transformed + 1))
+                    extracted=$((extracted + 1))
                     log_info "      📝 StdModule: $key = '${text:0:50}...'"
-                    # NIE modyfikujemy StdModule.say - wymaga ręcznej konwersji
                 fi
             fi
         fi
         
-        #=== MIGRACJA scripts/actions: player:sendTextMessage ===
+        #=== EKSTRAKCJA scripts: player:sendTextMessage ===
         if [ "$is_npc_file" = false ]; then
             if echo "$line" | grep -qE 'player:sendTextMessage\s*\([^,]+,\s*"[^"]{10,}"'; then
-                local msg_type=$(echo "$line" | sed -n 's/.*player:sendTextMessage\s*(\s*\([^,]*\),.*/\1/p')
                 local text=$(echo "$line" | sed -n 's/.*player:sendTextMessage\s*([^,]*,\s*"\([^"]*\)".*/\1/p')
                 if [ -n "$text" ] && [ ${#text} -ge 10 ]; then
                     local key="${category}.${safe_name}.msg_${key_counter}"
                     key_counter=$((key_counter + 1))
                     
-                    # Dla scripts używamy innego wzorca - tylko wyciągamy klucz, nie zmieniamy pliku
-                    # (skrypty wymagają ręcznej weryfikacji)
                     python3 -c "
 import json, os
 f='$json_file'
@@ -826,36 +791,25 @@ d['$key']='$text'
 json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
 " 2>/dev/null
                     
-                    transformed=$((transformed + 1))
-                    log_info "      📝 Wyciągnięto: $key = '$text'"
-                    # NIE zmieniamy linii - tylko wyciągamy klucze dla scripts
+                    extracted=$((extracted + 1))
+                    log_info "      📝 Script: $key = '${text:0:50}...'"
                 fi
             fi
         fi
         
-        echo "$new_line" >> "$temp_file"
     done < "$file"
     
-    if [ "$transformed" -gt 0 ]; then
-        # Dla NPC - zastosuj zmiany
-        if [ "$is_npc_file" = true ]; then
-            mv "$temp_file" "$file"
-            rm -f "${file}.bak"
-            log_success "   ✅ Zmigrowano $transformed stringów w pliku NPC"
-        else
-            # Dla innych - nie zmieniaj pliku, tylko wyciągnij klucze
-            rm -f "$temp_file" "${file}.bak"
-            log_success "   📝 Wyciągnięto $transformed kluczy (bez modyfikacji pliku)"
-        fi
+    if [ "$extracted" -gt 0 ]; then
+        # NIE modyfikujemy plików - tylko ekstrakcja kluczy do JSON
+        log_success "   📝 Wyciągnięto $extracted kluczy do JSON (plik Lua bez zmian)"
         
         mark_processed "$file"
-        document "MIGRACJA LUA" "$relative_path" "Przetworzono $transformed stringów" "Kategoria: $category, NPC: $is_npc_file"
+        document "EKSTRAKCJA LUA" "$relative_path" "Wyciągnięto $extracted kluczy" "Kategoria: $category, NPC: $is_npc_file"
         
         TOTAL_FILES_PROCESSED=$((TOTAL_FILES_PROCESSED + 1))
-        TOTAL_STRINGS_FOUND=$((TOTAL_STRINGS_FOUND + transformed))
+        TOTAL_STRINGS_FOUND=$((TOTAL_STRINGS_FOUND + extracted))
         return 0
     else
-        rm -f "$temp_file" "${file}.bak"
         mark_excluded "$file"
         return 1
     fi
@@ -879,9 +833,9 @@ migrate_multiline_npc() {
     
     log_info "🔷 [NPC-MULTI] $relative_path"
     
-    # Sprawdź czy już zmigrowany
-    if grep -qE "sayLocalized" "$file" 2>/dev/null; then
-        log_info "   ⏭️ Już zmigrowany"
+    # Sprawdź czy już przetworzony (używa prawidłowego API)
+    if grep -qE "sendLocalizedTextMessage|NPC_LIB\.i18n\." "$file" 2>/dev/null; then
+        log_info "   ⏭️ Już przetworzony"
         mark_processed "$file"
         return 1
     fi
@@ -1484,27 +1438,36 @@ process_files() {
 }
 
 #===============================================================================
-# SYNCHRONIZACJA TŁUMACZEŃ
+# SYNCHRONIZACJA TŁUMACZEŃ - używając Python pipeline (zgodnie z roadmapą)
 #===============================================================================
 sync_translations() {
     log_info "═══════════════════════════════════════════════════════════════"
-    log_info "🌍 SYNCHRONIZACJA TŁUMACZEŃ (53 języki)"
+    log_info "🌍 SYNCHRONIZACJA TŁUMACZEŃ - Python pipeline"
     log_info "═══════════════════════════════════════════════════════════════"
     
-    # Kopiuj klucze EN do wszystkich języków
-    for json_file in "$I18N_DIR/en"/*.json; do
-        [ ! -f "$json_file" ] && continue
-        local filename=$(basename "$json_file")
-        
-        for lang in "${LANGUAGES[@]}"; do
-            [ "$lang" = "en" ] && continue
-            local target="$I18N_DIR/$lang/$filename"
+    # Uruchom oficjalny Python pipeline jeśli istnieje
+    if [ -f "$WORK_DIR/tools/i18n_pipeline.py" ]; then
+        log_info "   🐍 Uruchamiam: python tools/i18n_pipeline.py --locales pl es pt de"
+        cd "$WORK_DIR"
+        python3 tools/i18n_pipeline.py --locales pl es pt de 2>&1 | head -20
+        log_info "   ✅ Pipeline zakończony"
+    else
+        log_info "   ⚠️ Brak tools/i18n_pipeline.py - kopiowanie kluczy EN"
+        # Fallback: Kopiuj klucze EN do wszystkich języków
+        for json_file in "$I18N_DIR/en"/*.json; do
+            [ ! -f "$json_file" ] && continue
+            local filename=$(basename "$json_file")
             
-            if [ ! -f "$target" ] || [ "$(cat "$target" 2>/dev/null)" = "{}" ]; then
-                cp "$json_file" "$target"
-            fi
+            for lang in "${LANGUAGES[@]}"; do
+                [ "$lang" = "en" ] && continue
+                local target="$I18N_DIR/$lang/$filename"
+                
+                if [ ! -f "$target" ] || [ "$(cat "$target" 2>/dev/null)" = "{}" ]; then
+                    cp "$json_file" "$target"
+                fi
+            done
         done
-    done
+    fi
     
     log_info "   ✅ Zsynchronizowano ${#LANGUAGES[@]} języków"
 }

@@ -34,13 +34,51 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	sendLocalized(
+		Player(player),
+		"npc.a_fluffy_squirrel.trade_sold",
+		"Sold %ix %s for %i gold.",
+		MESSAGE_TRADE,
+		{ amount, name, totalCost }
+	)
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end
 
 local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
+local npcI18n = NPC_LIB and NPC_LIB.i18n
+
+if npcI18n and npcHandler.setLocalizedMessage then
+	npcI18n.setLocalizedGreet(npcHandler, "npc.a_fluffy_squirrel.greet")
+	npcI18n.setLocalizedFarewell(npcHandler, "npc.a_fluffy_squirrel.farewell")
+	npcI18n.setLocalizedWalkaway(npcHandler, "npc.a_fluffy_squirrel.walkaway")
+	npcI18n.setLocalizedTradeMessage(npcHandler, "npc.a_fluffy_squirrel.trade_offer")
+else
+	npcHandler:setMessage(MESSAGE_GREET, "Chhchh?")
+	npcHandler:setMessage(MESSAGE_FAREWELL, "Chh...")
+	npcHandler:setMessage(MESSAGE_WALKAWAY, "Chh...")
+	npcHandler:setMessage(MESSAGE_SENDTRADE, "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>")
+end
+
+local function sendLocalized(player, key, fallback, messageClass, args)
+	if not player then
+		return false
+	end
+
+	if npcI18n then
+		return npcI18n.sayLocalized(player, key, args, messageClass or MESSAGE_NPC_FROM)
+	end
+
+	if fallback and fallback ~= "" then
+		if args and #args > 0 then
+			player:sendTextMessage(messageClass or MESSAGE_NPC_FROM, string.format(fallback, table.unpack(args)))
+		else
+			player:sendTextMessage(messageClass or MESSAGE_NPC_FROM, fallback)
+		end
+	end
+	return true
+end
 
 npcType.onThink = function(npc, interval)
 	npcHandler:onThink(npc, interval)
@@ -66,12 +104,9 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-keywordHandler:addKeyword({ "acorn" }, StdModule.say, { npcHandler = npcHandler, text = "Chh? Chhh?? <though you don't understand squirrelish, that one seems really excited>" })
-
-npcHandler:setMessage(MESSAGE_GREET, "Chhchh?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Chh...")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Chh...")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>")
+keywordHandler:addKeyword({ "acorn" }, function(npc, creature)
+	return sendLocalized(Player(creature), "npc.a_fluffy_squirrel.acorn", "Chh? Chhh?? <though you don't understand squirrelish, that one seems really excited>")
+end)
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

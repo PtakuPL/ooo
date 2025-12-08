@@ -9,6 +9,9 @@
 
 #include "canary_server.hpp"
 
+#include <filesystem>
+#include <vector>
+
 #include "core.hpp"
 #include "config/configmanager.hpp"
 #include "creatures/npcs/npcs.hpp"
@@ -33,6 +36,7 @@
 #include "server/network/protocol/protocolstatus.hpp"
 #include "server/network/webhook/webhook.hpp"
 #include "creatures/players/vocations/vocation.hpp"
+#include "utils/i18n/translator.hpp"
 
 CanaryServer::CanaryServer(
 	Logger &logger,
@@ -61,6 +65,20 @@ int CanaryServer::run() {
 			try {
 				loadConfigLua();
 				validateDatapack();
+				const auto datapackDirectory = g_configManager().getString(DATA_DIRECTORY);
+				std::vector<std::filesystem::path> localeRoots = {
+					std::filesystem::path(datapackDirectory) / "i18n",
+					std::filesystem::path("data") / "i18n",
+					std::filesystem::path("data-canary") / "i18n",
+					std::filesystem::path("i18n")
+				};
+				g_translator().setSearchPaths(std::move(localeRoots));
+				const auto defaultLocale = g_configManager().getString(DEFAULT_LOCALE);
+				g_translator().setFallbackLocale("en");
+				g_translator().loadLocale("en");
+				if (!defaultLocale.empty() && defaultLocale != "en") {
+					g_translator().loadLocale(defaultLocale);
+				}
 
 				logger.info("Server protocol: {}.{:02d}{}", CLIENT_VERSION_UPPER, CLIENT_VERSION_LOWER, g_configManager().getBoolean(OLD_PROTOCOL) ? " and 10x allowed!" : "");
 

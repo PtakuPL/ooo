@@ -1,0 +1,5 @@
+{
+    "cmake.sourceDirectory": "/workspaces/ooo/Tibia/silnik/canary/src/creatures",
+    "chatgpt.openOnStartup": true,
+    "chatgpt.runCodexInWindowsSubsystemForLinux": true
+}

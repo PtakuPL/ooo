@@ -25,6 +25,7 @@ npcConfig.flags = {
 
 local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
+local npcI18n = NPC_LIB and NPC_LIB.i18n
 
 npcType.onThink = function(npc, interval)
 	npcHandler:onThink(npc, interval)
@@ -48,6 +49,16 @@ end
 
 npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
+end
+
+if npcI18n and npcHandler.setLocalizedMessage then
+	npcI18n.setLocalizedGreet(npcHandler, "npc.a_grumpy_cyclops.greet")
+	npcI18n.setLocalizedFarewell(npcHandler, "npc.a_grumpy_cyclops.farewell")
+	npcI18n.setLocalizedWalkaway(npcHandler, "npc.a_grumpy_cyclops.walkaway")
+else
+	npcHandler:setMessage(MESSAGE_GREET, "Grmph. Speak quickly, |PLAYERNAME|.")
+	npcHandler:setMessage(MESSAGE_FAREWELL, "Finally, some peace.")
+	npcHandler:setMessage(MESSAGE_WALKAWAY, "Hrmph. Lil' ones never listen.")
 end
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

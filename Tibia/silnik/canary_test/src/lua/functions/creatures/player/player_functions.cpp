@@ -213,6 +213,7 @@ void PlayerFunctions::init(lua_State* L) {
 	Lua::registerMethod(L, "Player", "showTextDialog", PlayerFunctions::luaPlayerShowTextDialog);
 
 	Lua::registerMethod(L, "Player", "sendTextMessage", PlayerFunctions::luaPlayerSendTextMessage);
+	Lua::registerMethod(L, "Player", "sendLocalizedTextMessage", PlayerFunctions::luaPlayerSendLocalizedTextMessage);
 	Lua::registerMethod(L, "Player", "sendChannelMessage", PlayerFunctions::luaPlayerSendChannelMessage);
 	Lua::registerMethod(L, "Player", "sendPrivateMessage", PlayerFunctions::luaPlayerSendPrivateMessage);
 	Lua::registerMethod(L, "Player", "channelSay", PlayerFunctions::luaPlayerChannelSay);
@@ -2623,6 +2624,41 @@ int PlayerFunctions::luaPlayerSendTextMessage(lua_State* L) {
 	player->sendTextMessage(message);
 	Lua::pushBoolean(L, true);
 
+	return 1;
+}
+
+int PlayerFunctions::luaPlayerSendLocalizedTextMessage(lua_State* L) {
+	// player:sendLocalizedTextMessage(type, key[, argsTable] | type, key, arg1, arg2, ...)
+
+	const auto &player = Lua::getUserdataShared<Player>(L, 1, "Player");
+	if (!player) {
+		lua_pushnil(L);
+		return 1;
+	}
+
+	const MessageClasses messageClass = Lua::getNumber<MessageClasses>(L, 2);
+	const std::string &key = Lua::getString(L, 3);
+	std::vector<std::string> args;
+
+	const int parameters = lua_gettop(L);
+	if (parameters >= 4) {
+		if (lua_istable(L, 4)) {
+			const auto length = lua_rawlen(L, 4);
+			args.reserve(length);
+			for (size_t idx = 1; idx <= length; ++idx) {
+				lua_rawgeti(L, 4, idx);
+				args.emplace_back(Lua::getString(L, -1));
+				lua_pop(L, 1);
+			}
+		} else {
+			for (int idx = 4; idx <= parameters; ++idx) {
+				args.emplace_back(Lua::getString(L, idx));
+			}
+		}
+	}
+
+	player->sendLocalizedTextMessage(messageClass, key, std::move(args));
+	Lua::pushBoolean(L, true);
 	return 1;
 }
 

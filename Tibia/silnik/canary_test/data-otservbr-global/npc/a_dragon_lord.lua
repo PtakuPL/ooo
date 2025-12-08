@@ -20,8 +20,20 @@ npcConfig.flags = {
 
 local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
+local npcI18n = NPC_LIB and NPC_LIB.i18n
 if not UNDERCOVER_CONTACTED then
 	UNDERCOVER_CONTACTED = {}
+end
+
+local greetFallback = "Pssst! Keep it down! <gives you an elaborate report on monster activity>"
+
+if npcI18n and npcHandler.setLocalizedMessage then
+	npcI18n.setLocalizedGreet(npcHandler, "npc.a_dragon_lord.greet", {
+		fallback = greetFallback,
+		args = nil,
+	})
+else
+	npcHandler:setMessage(MESSAGE_GREET, greetFallback)
 end
 
 npcType.onThink = function(npc, interval)
@@ -53,7 +65,6 @@ local function greetCallback(npc, creature)
 	local SPIKE_STORAGE = player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Undercover_Main)
 
 	if table.contains({ -1, 3 }, SPIKE_STORAGE) then
-		npcHandler:setMessage(MESSAGE_GREET, "Pssst! Keep it down! <gives you an elaborate report on monster activity>")
 		return true
 	end
 
@@ -62,14 +73,12 @@ local function greetCallback(npc, creature)
 	end
 
 	if table.contains(UNDERCOVER_CONTACTED[player:getGuid()], npc:getId()) then
-		npcHandler:setMessage(MESSAGE_GREET, "Pssst! Keep it down! <gives you an elaborate report on monster activity>")
 		return true
 	end
 
 	player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Undercover_Main, SPIKE_STORAGE + 1)
 	table.insert(UNDERCOVER_CONTACTED[player:getGuid()], npc:getId())
 	npcHandler:removeInteraction(npc, creature)
-	npcHandler:setMessage(MESSAGE_GREET, "Pssst! Keep it down! <gives you an elaborate report on monster activity>")
 	return true
 end
 

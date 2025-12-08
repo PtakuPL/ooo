@@ -36,6 +36,7 @@
 #include "io/iologindata.hpp"
 #include "io/iomarket.hpp"
 #include "io/ioprey.hpp"
+#include "utils/i18n/translator.hpp"
 #include "items/bed.hpp"
 #include "items/containers/inbox/inbox.hpp"
 #include "items/containers/rewards/reward.hpp"
@@ -2994,80 +2995,94 @@ void Game::playerQuickLootCorpse(const std::shared_ptr<Player> &player, const st
 		}
 	}
 
-	std::stringstream ss;
+	std::string summaryKey;
+	std::vector<std::string> summaryArgs;
+	const auto goldArg = std::to_string(totalLootedGold);
+	const auto setSummary = [&](const std::string &key, bool includeGoldArg = false) {
+		summaryKey = key;
+		summaryArgs.clear();
+		if (includeGoldArg) {
+			summaryArgs.emplace_back(goldArg);
+		}
+	};
+
 	if (totalLootedGold != 0 || missedAnyGold || totalLootedItems != 0 || missedAnyItem) {
-		bool lootedAllGold = totalLootedGold != 0 && !missedAnyGold;
-		bool lootedAllItems = totalLootedItems != 0 && !missedAnyItem;
+		const bool lootedAllGold = totalLootedGold != 0 && !missedAnyGold;
+		const bool lootedAllItems = totalLootedItems != 0 && !missedAnyItem;
 		if (lootedAllGold) {
 			if (totalLootedItems != 0 || missedAnyItem) {
-				ss << "You looted the complete " << totalLootedGold << " gold";
-
 				if (lootedAllItems) {
-					ss << " and all dropped items";
+					setSummary("game.loot.summary.gold_all_items_all", true);
 				} else if (totalLootedItems != 0) {
-					ss << ", but you only looted some of the items";
-				} else if (missedAnyItem) {
-					ss << " but none of the dropped items";
+					setSummary("game.loot.summary.gold_all_items_some", true);
+				} else {
+					setSummary("game.loot.summary.gold_all_items_none", true);
 				}
 			} else {
-				ss << "You looted " << totalLootedGold << " gold";
+				setSummary("game.loot.summary.gold_only", true);
 			}
 		} else if (lootedAllItems) {
 			if (totalLootedItems == 1) {
-				ss << "You looted 1 item";
-			} else if (totalLootedGold != 0 || missedAnyGold) {
-				ss << "You looted all of the dropped items";
+				if (totalLootedGold != 0) {
+					setSummary("game.loot.summary.single_item_partial_gold", true);
+				} else if (missedAnyGold) {
+					setSummary("game.loot.summary.single_item_no_gold");
+				} else {
+					setSummary("game.loot.summary.single_item_only");
+				}
 			} else {
-				ss << "You looted all items";
-			}
-
-			if (totalLootedGold != 0) {
-				ss << ", but you only looted " << totalLootedGold << " of the dropped gold";
-			} else if (missedAnyGold) {
-				ss << " but none of the dropped gold";
+				if (totalLootedGold != 0) {
+					setSummary("game.loot.summary.all_items_partial_gold", true);
+				} else if (missedAnyGold) {
+					setSummary("game.loot.summary.all_items_no_gold");
+				} else {
+					setSummary("game.loot.summary.all_items_only");
+				}
 			}
 		} else if (totalLootedGold != 0) {
-			ss << "You only looted " << totalLootedGold << " of the dropped gold";
 			if (totalLootedItems != 0) {
-				ss << " and some of the dropped items";
+				setSummary("game.loot.summary.partial_gold_some_items", true);
 			} else if (missedAnyItem) {
-				ss << " but none of the dropped items";
+				setSummary("game.loot.summary.partial_gold_no_items", true);
+			} else {
+				setSummary("game.loot.summary.partial_gold_only", true);
 			}
 		} else if (totalLootedItems != 0) {
-			ss << "You looted some of the dropped items";
 			if (missedAnyGold) {
-				ss << " but none of the dropped gold";
+				setSummary("game.loot.summary.some_items_no_gold");
+			} else {
+				setSummary("game.loot.summary.some_items_only");
 			}
 		} else if (missedAnyGold) {
-			ss << "You looted none of the dropped gold";
 			if (missedAnyItem) {
-				ss << " and none of the items";
+				setSummary("game.loot.summary.no_gold_no_items");
+			} else {
+				setSummary("game.loot.summary.no_gold");
 			}
 		} else if (missedAnyItem) {
-			ss << "You looted none of the dropped items";
+			setSummary("game.loot.summary.no_items");
 		}
-	} else {
-		ss << "No loot";
 	}
-	ss << ".";
-	player->sendTextMessage(MESSAGE_STATUS, ss.str());
 
+	if (summaryKey.empty()) {
+		setSummary("game.loot.none");
+	}
+
+	player->sendLocalizedTextMessage(MESSAGE_STATUS, summaryKey, std::move(summaryArgs));
+
+	std::string notifyKey;
+	std::vector<std::string> notifyArgs;
 	if (shouldNotifyCapacity) {
-		ss.str(std::string());
-		ss << "Attention! The loot you are trying to pick up is too heavy for you to carry.";
+		notifyKey = "game.loot.too_heavy";
 	} else if (shouldNotifyNotEnoughRoom != OBJECTCATEGORY_NONE) {
-		ss.str(std::string());
-		ss << "Attention! The container assigned to category " << getObjectCategoryName(shouldNotifyNotEnoughRoom) << " is full.";
+		notifyKey = "game.loot.container_full";
+		notifyArgs.emplace_back(getObjectCategoryName(shouldNotifyNotEnoughRoom));
 	} else {
 		return;
 	}
 
-	if (player->lastQuickLootNotification + 15000 < OTSYS_TIME()) {
-		player->sendTextMessage(MESSAGE_GAME_HIGHLIGHT, ss.str());
-	} else {
-		player->sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
-	}
-
+	const auto messageClass = (player->lastQuickLootNotification + 15000 < OTSYS_TIME()) ? MESSAGE_GAME_HIGHLIGHT : MESSAGE_EVENT_ADVANCE;
+	player->sendLocalizedTextMessage(messageClass, notifyKey, std::move(notifyArgs));
 	player->lastQuickLootNotification = OTSYS_TIME();
 }
 
@@ -4866,9 +4881,7 @@ void Game::playerStashWithdraw(uint32_t playerId, uint16_t itemId, uint32_t coun
 
 	auto maxWithdrawLimit = static_cast<uint32_t>(g_configManager().getNumber(STASH_MANAGE_AMOUNT));
 	if (count > maxWithdrawLimit) {
-		std::stringstream limitMessage;
-		limitMessage << "You can only withdraw up to " << maxWithdrawLimit << " items at a time from the stash.";
-		player->sendTextMessage(MESSAGE_EVENT_ADVANCE, limitMessage.str());
+		player->sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "game.stash.withdraw_limit", { std::to_string(maxWithdrawLimit) });
 		count = maxWithdrawLimit;
 	}
 
@@ -4936,14 +4949,12 @@ void Game::playerRequestTrade(uint32_t playerId, const Position &pos, uint8_t st
 
 	std::shared_ptr<Player> tradePartner = getPlayerByID(tradePlayerId);
 	if (!tradePartner || tradePartner == player) {
-		player->sendTextMessage(MESSAGE_FAILURE, "Sorry, not possible.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "game.trade.not_possible");
 		return;
 	}
 
 	if (!Position::areInRange<2, 2, 0>(tradePartner->getPosition(), player->getPosition())) {
-		std::ostringstream ss;
-		ss << tradePartner->getName() << " tells you to move closer.";
-		player->sendTextMessage(MESSAGE_TRADE, ss.str());
+		player->sendLocalizedTextMessage(MESSAGE_TRADE, "game.trade.move_closer", { tradePartner->getName() });
 		return;
 	}
 
@@ -5008,18 +5019,18 @@ void Game::playerRequestTrade(uint32_t playerId, const Position &pos, uint8_t st
 		for (const auto &it : tradeItems) {
 			const auto &item = it.first;
 			if (tradeItem == item) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item is already being traded.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "game.trade.item_busy");
 				return;
 			}
 
 			if (tradeItemContainer->isHoldingItem(item)) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item is already being traded.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "game.trade.item_busy");
 				return;
 			}
 
 			const std::shared_ptr<Container> &container = item->getContainer();
 			if (container && container->isHoldingItem(tradeItem)) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item is already being traded.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "game.trade.item_busy");
 				return;
 			}
 		}
@@ -5027,32 +5038,32 @@ void Game::playerRequestTrade(uint32_t playerId, const Position &pos, uint8_t st
 		for (const auto &it : tradeItems) {
 			const auto &item = it.first;
 			if (tradeItem == item) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item is already being traded.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "game.trade.item_busy");
 				return;
 			}
 
 			const std::shared_ptr<Container> &container = item->getContainer();
 			if (container && container->isHoldingItem(tradeItem)) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item is already being traded.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "game.trade.item_busy");
 				return;
 			}
 		}
 	}
 
 	if (tradeItemContainer && tradeItemContainer->getItemHoldingCount() + 1 > 100) {
-		player->sendTextMessage(MESSAGE_TRADE, "You can not trade more than 100 items.");
+		player->sendLocalizedTextMessage(MESSAGE_TRADE, "game.trade.item_limit", { "100" });
 		return;
 	}
 
 	if (tradeItem->isStoreItem()) {
-		player->sendTextMessage(MESSAGE_TRADE, "This item cannot be trade.");
+		player->sendLocalizedTextMessage(MESSAGE_TRADE, "game.trade.item_untradeable");
 		return;
 	}
 
 	if (tradeItemContainer) {
 		for (const std::shared_ptr<Item> &containerItem : tradeItemContainer->getItems(true)) {
 			if (containerItem->isStoreItem()) {
-				player->sendTextMessage(MESSAGE_TRADE, "This item cannot be trade.");
+				player->sendLocalizedTextMessage(MESSAGE_TRADE, "game.trade.item_untradeable");
 				return;
 			}
 		}
@@ -5090,9 +5101,7 @@ bool Game::internalStartTrade(const std::shared_ptr<Player> &player, const std::
 	player->sendTradeItemRequest(player->getName(), tradeItem, true);
 
 	if (tradePartner->tradeState == TRADE_NONE) {
-		std::ostringstream ss;
-		ss << player->getName() << " wants to trade with you.";
-		tradePartner->sendTextMessage(MESSAGE_TRANSACTION, ss.str());
+		tradePartner->sendLocalizedTextMessage(MESSAGE_TRANSACTION, "game.trade.request", { player->getName() });
 		tradePartner->tradeState = TRADE_ACKNOWLEDGE;
 		tradePartner->tradePartner = player;
 	} else {
@@ -5324,7 +5333,7 @@ void Game::internalCloseTrade(const std::shared_ptr<Player> &player) {
 	player->setTradeState(TRADE_NONE);
 	player->tradePartner = nullptr;
 
-	player->sendTextMessage(MESSAGE_FAILURE, "Trade cancelled.");
+	player->sendLocalizedTextMessage(MESSAGE_FAILURE, "game.trade.cancelled");
 	player->sendTradeClose();
 
 	if (tradePartner) {
@@ -5341,7 +5350,7 @@ void Game::internalCloseTrade(const std::shared_ptr<Player> &player) {
 		tradePartner->setTradeState(TRADE_NONE);
 		tradePartner->tradePartner = nullptr;
 
-		tradePartner->sendTextMessage(MESSAGE_FAILURE, "Trade cancelled.");
+		tradePartner->sendLocalizedTextMessage(MESSAGE_FAILURE, "game.trade.cancelled");
 		tradePartner->sendTradeClose();
 	}
 }
@@ -5642,36 +5651,30 @@ void Game::playerQuickLoot(uint32_t playerId, const Position &pos, uint16_t item
 		ObjectCategory_t category = getObjectCategory(item);
 		ReturnValue ret = internalCollectManagedItems(player, item, category);
 
-		std::stringstream ss;
+		const auto notifyClass = (player->lastQuickLootNotification + 15000 < OTSYS_TIME()) ? MESSAGE_GAME_HIGHLIGHT : MESSAGE_EVENT_ADVANCE;
 		if (ret == RETURNVALUE_NOTENOUGHCAPACITY) {
-			ss << "Attention! The loot you are trying to pick up is too heavy for you to carry.";
+			player->sendLocalizedTextMessage(notifyClass, "game.loot.too_heavy");
+			player->lastQuickLootNotification = OTSYS_TIME();
 		} else if (ret == RETURNVALUE_CONTAINERNOTENOUGHROOM) {
-			ss << "Attention! The container for " << getObjectCategoryName(category) << " is full.";
+			player->sendLocalizedTextMessage(notifyClass, "game.loot.container_full", { getObjectCategoryName(category) });
+			player->lastQuickLootNotification = OTSYS_TIME();
 		} else {
 			if (ret == RETURNVALUE_NOERROR) {
 				player->sendLootStats(item, item->getItemCount());
-				ss << "You looted ";
+				if (worth != 0) {
+					player->sendLocalizedTextMessage(MESSAGE_LOOT, "game.loot.pickup.gold", { std::to_string(worth) });
+				} else {
+					player->sendLocalizedTextMessage(MESSAGE_LOOT, "game.loot.pickup.item");
+				}
 			} else {
-				ss << "You could not loot ";
+				if (worth != 0) {
+					player->sendLocalizedTextMessage(MESSAGE_LOOT, "game.loot.pickup_failed.gold", { std::to_string(worth) });
+				} else {
+					player->sendLocalizedTextMessage(MESSAGE_LOOT, "game.loot.pickup_failed.item");
+				}
 			}
-
-			if (worth != 0) {
-				ss << worth << " gold.";
-			} else {
-				ss << "1 item.";
-			}
-
-			player->sendTextMessage(MESSAGE_LOOT, ss.str());
 			return;
 		}
-
-		if (player->lastQuickLootNotification + 15000 < OTSYS_TIME()) {
-			player->sendTextMessage(MESSAGE_GAME_HIGHLIGHT, ss.str());
-		} else {
-			player->sendTextMessage(MESSAGE_EVENT_ADVANCE, ss.str());
-		}
-
-		player->lastQuickLootNotification = OTSYS_TIME();
 	} else {
 		if (corpse->isRewardCorpse()) {
 			auto rewardId = corpse->getAttribute<time_t>(ItemAttribute_t::DATE);
@@ -5726,9 +5729,7 @@ void Game::playerLootAllCorpses(const std::shared_ptr<Player> &player, const Pos
 
 		if (corpses > 0) {
 			if (corpses > 1) {
-				std::stringstream string;
-				string << "You looted " << corpses << " corpses.";
-				player->sendTextMessage(MESSAGE_LOOT, string.str());
+				player->sendLocalizedTextMessage(MESSAGE_LOOT, "game.loot.corpses_many", { std::to_string(corpses) });
 			}
 
 			return;
@@ -5758,12 +5759,12 @@ void Game::playerSetManagedContainer(uint32_t playerId, ObjectCategory_t categor
 	}
 
 	if (container->getID() == ITEM_GOLD_POUCH && !isLootContainer) {
-		player->sendTextMessage(MESSAGE_FAILURE, "You can only set the gold pouch as a loot container.");
+		player->sendLocalizedTextMessage(MESSAGE_FAILURE, "game.loot.gold_pouch_only");
 		return;
 	}
 
 	if (container->getHoldingPlayer() != player) {
-		player->sendCancelMessage("You must be holding the container to set it as a loot container.");
+		player->sendCancelMessage(i18n::g_translator().get("game.loot.container_not_held", player->getLocale()));
 		return;
 	}
 

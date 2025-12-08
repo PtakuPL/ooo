@@ -9,12 +9,12 @@ function bigfootMatch.onUse(player, item, fromPosition, target, toPosition, isHo
 	end
 
 	if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MatchmakerIdNeeded) ~= target.itemid then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This is not the crystal you're looking for!")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.wrong_crystal")
 		return true
 	end
 
 	player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MatchmakerStatus, 1)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Congratulations! The crystals seem to have fallen in love and your mission is done!")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.matchmaker_complete")
 	toPosition:sendMagicEffect(CONST_ME_HEARTS)
 	item:remove()
 	return true

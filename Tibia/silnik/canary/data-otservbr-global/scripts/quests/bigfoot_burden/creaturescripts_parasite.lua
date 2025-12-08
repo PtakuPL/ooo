@@ -62,7 +62,7 @@ function parasiteWarzone.onDeath(creature)
 		config.wall = 16169
 		addEvent(recreateCrystals, 1 * 60 * 1000, config)
 		addEvent(warzoneConfig.spawnBoss, 1 * 60 * 1000, config.boss, config.bossResp)
-		addEvent(warzoneConfig.resetRoom, 30 * 60 * 1000, config, "You were teleported out by the gnomish emergency device.", true)
+		addEvent(warzoneConfig.resetRoom, 30 * 60 * 1000, config, "quests.bigfoot_burden.teleported_out", true)
 	end
 	return true
 end

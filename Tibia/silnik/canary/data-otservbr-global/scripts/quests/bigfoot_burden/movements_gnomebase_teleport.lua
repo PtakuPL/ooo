@@ -46,21 +46,21 @@ function gnomebaseTeleport.onStepIn(creature, item, position, fromPosition)
 					if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) < 1 then
 						fromPosition:sendMagicEffect(CONST_ME_POFF)
 						player:teleportTo(fromPosition)
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have no idea on how to use this device. Xelvar in Kazordoon might tell you more about it.")
+						player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.device_unknown")
 						return false
 					end
 
 					if player:getPosition() ~= Position(32988, 31862, 9) and player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) < teleports[c].storageValue then
 						position:sendMagicEffect(CONST_ME_TELEPORT)
 						player:teleportTo(fromPosition)
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your rank among the Gnomes is too low.")
+						player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.rank_too_low")
 						return false
 					end
 
 					if player:getPosition() == Position(32988, 31862, 9) and player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) < teleports[c].storageValue then
 						position:sendMagicEffect(CONST_ME_TELEPORT)
 						player:teleportTo(fromPosition)
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your rank among the Gnomes is too low.")
+						player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.rank_too_low")
 						return false
 					end
 
@@ -71,7 +71,7 @@ function gnomebaseTeleport.onStepIn(creature, item, position, fromPosition)
 					else
 						fromPosition:sendMagicEffect(CONST_ME_POFF)
 						player:teleportTo(fromPosition)
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need a teleport crystal in order to use this device.")
+						player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.need_teleport_crystal")
 					end
 				end
 			end
@@ -79,21 +79,21 @@ function gnomebaseTeleport.onStepIn(creature, item, position, fromPosition)
 			if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) < 1 then
 				fromPosition:sendMagicEffect(CONST_ME_POFF)
 				player:teleportTo(fromPosition)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have no idea on how to use this device. Xelvar in Kazordoon might tell you more about it.")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.device_unknown")
 				return false
 			end
 
 			if teleports[c].storageValue < 100 and player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) < teleports[c].storageValue then
 				position:sendMagicEffect(CONST_ME_TELEPORT)
 				player:teleportTo(fromPosition)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your rank among the Gnomes is too low.")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.rank_too_low")
 				return false
 			end
 
 			if teleports[c].storageValue >= 100 and player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) < teleports[c].storageValue then
 				position:sendMagicEffect(CONST_ME_TELEPORT)
 				player:teleportTo(fromPosition)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your rank among the Gnomes is too low.")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.rank_too_low")
 				return false
 			end
 
@@ -104,7 +104,7 @@ function gnomebaseTeleport.onStepIn(creature, item, position, fromPosition)
 			else
 				fromPosition:sendMagicEffect(CONST_ME_POFF)
 				player:teleportTo(fromPosition)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need a teleport crystal in order to use this device.")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.need_teleport_crystal")
 			end
 		end
 	end

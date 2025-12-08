@@ -6,7 +6,7 @@ function bigfootExtractor.onUse(player, item, fromPosition, target, toPosition, 
 	end
 
 	if target.itemid == 16197 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This body is not ready yet.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.body_not_ready")
 		return true
 	end
 
@@ -15,7 +15,7 @@ function bigfootExtractor.onUse(player, item, fromPosition, target, toPosition, 
 	end
 
 	player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.ExtractedCount, math.max(0, extractedCount) + 1)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You gathered a spark.")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.spark_gathered")
 	target:transform(16195)
 	toPosition:sendMagicEffect(CONST_ME_ENERGYHIT)
 	return true

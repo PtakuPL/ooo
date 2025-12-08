@@ -128,7 +128,7 @@ function mirrorImageCreation.onUse(player, item, fromPosition, target, toPositio
 		item:transform(33783)
 	else
 		local timeLeft = cooldown - timePassed
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need to wait " .. timeLeft .. " second(s) to use this item again.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.cooldown_wait", timeLeft)
 	end
 
 	return true
@@ -327,11 +327,11 @@ function hazardousPhantomDeath.onDeath(creature, corpse, killer, mostDamageKille
 				-- Increases death count
 				soulWarQuest:set("hazardous-phantom-death", deathCount + 1)
 				-- Send the count for the player
-				killerPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You killed " .. (deathCount + 1) .. " of " .. SoulWarQuest.hardozousPanthomDeathCount .. " Hazardous Panthom.")
+				killerPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.phantom_killed", deathCount + 1, SoulWarQuest.hardozousPanthomDeathCount)
 			end
 
 			if deathCount + 1 == SoulWarQuest.hardozousPanthomDeathCount then
-				killerPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can now access the boss room.")
+				killerPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.boss_room_access")
 			end
 		end
 	end
@@ -368,7 +368,7 @@ function weepingSoulCorpse.onStepIn(creature, item, position, fromPosition)
 
 	item:remove()
 	player:addCondition(condition)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are soaked by tears of the weeping soul!")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.tears_soaked")
 	return true
 end
 
@@ -433,20 +433,20 @@ function goshnarSpiteSoulFire.onStepIn(creature, item, position, fromPosition)
 
 	if lastSteppedTime + SoulWarQuest.cooldownToStepOnSearingFire > currentTime then
 		local remainingTime = lastSteppedTime + SoulWarQuest.cooldownToStepOnSearingFire - currentTime
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "His soul won't need to recover again! You need wait " .. remainingTime .. " seconds.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.soul_recover_wait", remainingTime)
 		return true
 	end
 
 	addEvent(function(playerId)
 		local eventPlayer = Player(playerId)
 		if eventPlayer then
-			eventPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your soul has recovered!")
+			eventPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.soul_recovered")
 		end
 	end, SoulWarQuest.cooldownToStepOnSearingFire * 1000, player:getId())
 
 	soulWarQuest:set("goshnar-spite-fire", currentTime)
 	searingFire:remove()
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The soul fire was stomped out in time! Your soul will now have to recover before you can do this again.")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.soul_fire_recover")
 
 	return true
 end
@@ -511,20 +511,20 @@ function rottenWastelandShrines.onUse(player, item, fromPosition, target, toPosi
 	local soulWarQuest = player:soulWarQuestKV()
 	local shrineUsed = soulWarQuest:get("rotten-wasterland-activated-shrine-id") or 0
 	if shrineUsed == item:getId() then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have already activated this shrine.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.shrine_already_activated")
 		return true
 	end
 
 	local activatedShrinesCount = soulWarQuest:get("rotten-wasterland-activated-shrine-count") or 0
 	if activatedShrinesCount >= 4 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have already activated all the shrines.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.all_shrines_activated")
 		return true
 	end
 
 	soulWarQuest:set("rotten-wasterland-activated-shrine-id", item:getId())
 
 	soulWarQuest:set("rotten-wasterland-activated-shrine-count", activatedShrinesCount + 1)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have activated this shrine.")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.shrine_activated")
 	return true
 end
 
@@ -540,7 +540,7 @@ function goshnarsHatredAccess.onUse(player, item, fromPosition, target, toPositi
 	local soulWarQuest = player:soulWarQuestKV()
 	local activatedShrineCount = soulWarQuest:get("rotten-wasterland-activated-shrine-count") or 0
 	if activatedShrineCount < 4 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You still need to activate all the shrines.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.activate_all_shrines")
 		return true
 	end
 
@@ -717,26 +717,26 @@ function pulsatingEnergy.onStepIn(creature, item, position, fromPosition)
 	local secondFloorAccess = kv:get("second-floor-access") or false
 	local thirdFloorAccess = kv:get("third-floor-access") or false
 	if thirdFloorAccess then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You've already gained access to fight with the Goshnar's Cruelty.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.already_has_access")
 		return true
 	end
 
 	if energyCount >= 40 and not firstFloorAccess then
 		kv:set("access-counter", 0)
 		kv:set("first-floor-access", true)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You've gained access to the first floor. Continue collecting Pulsating Energies to gain further access.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.floor_first_continue")
 	end
 
 	if energyCount >= 55 and not secondFloorAccess then
 		kv:set("access-counter", 0)
 		kv:set("second-floor-access", true)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You've gained access to the second floor. Continue collecting Pulsating Energies to gain further access.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.floor_second_continue")
 	end
 
 	if energyCount >= 70 and not thirdFloorAccess then
 		kv:set("access-counter", 0)
 		kv:set("third-floor-access", true)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You've gained access to the third floor. You can now fight with the Goshnar's Cruelty.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.floor_third_fight")
 	end
 
 	item:remove()
@@ -761,7 +761,7 @@ function pulsatingEnergyTeleportAccess.onStepIn(creature, item, position, fromPo
 			local energyCount = kv:get("access-counter") or 0
 			local energiesNeeded = posData.count - energyCount
 			if not hasAccess then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't have access to this floor yet. You have collected " .. energyCount .. "/" .. posData.count .. ", and need " .. energiesNeeded .. " more pulsating energies to gain access.")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.no_floor_access", energyCount, posData.count, energiesNeeded)
 				player:teleportTo(fromPosition, true)
 				fromPosition:sendMagicEffect(CONST_ME_TELEPORT)
 			else
@@ -849,7 +849,7 @@ function greedyMaw.onUse(player, item, fromPosition, target, toPosition, isHotke
 		local currentTime = os.time()
 		if cooldown + SoulWarQuest.useGreedMawCooldown > currentTime then
 			local timeLeft = cooldown + SoulWarQuest.useGreedMawCooldown - currentTime
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need to wait " .. timeLeft .. " more seconds before using the greedy maw again.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.greedy_maw_cooldown", timeLeft)
 			return true
 		end
 
@@ -858,7 +858,7 @@ function greedyMaw.onUse(player, item, fromPosition, target, toPosition, isHotke
 		SoulWarQuest.kvSoulWar:set("greedy-maw-action", currentTime + timeToIncreaseDefense)
 		target:getPosition():sendMagicEffect(CONST_ME_DRAWBLOOD)
 		item:remove()
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Use the item again within " .. timeToIncreaseDefense .. " seconds, or the monster's defense will increase by 2 every " .. timeToIncreaseDefense .. " seconds.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.use_item_defense", timeToIncreaseDefense)
 		local goshnarsCruelty = Creature("Goshnar's Cruelty")
 		if goshnarsCruelty then
 			local mtype = goshnarsCruelty:getType()
@@ -925,7 +925,7 @@ function madnessReduce.onStepIn(creature, item, position, fromPosition)
 	item:remove()
 	if player and player:getGoshnarSymbolTormentCounter() > 0 then
 		player:resetGoshnarSymbolTormentCounter()
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The ooze calms your dread but leaves you vulnerable to phantasmal attacks!")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.ooze_calm_vulnerable")
 		return true
 	end
 
@@ -954,7 +954,7 @@ function cleansedSanity.onUse(player, item, fromPosition, target, toPosition, is
 	local currentTime = os.time()
 	if cooldown + SoulWarQuest.useGreedMawCooldown > currentTime then
 		local timeLeft = cooldown + SoulWarQuest.useGreedMawCooldown - currentTime
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need to wait " .. timeLeft .. " more seconds before using the cleansed again.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.cleansed_cooldown", timeLeft)
 		return true
 	end
 
@@ -964,7 +964,7 @@ function cleansedSanity.onUse(player, item, fromPosition, target, toPosition, is
 		SoulWarQuest.kvSoulWar:set("cleansed-sanity-action", currentTime + timeToIncreaseDefense)
 		target:getPosition():sendMagicEffect(CONST_ME_DRAWBLOOD)
 		item:remove()
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Use the item again within " .. timeToIncreaseDefense .. " seconds, or the monster's defense will increase every " .. timeToIncreaseDefense .. " seconds.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.use_item_defense_increase", timeToIncreaseDefense)
 		local boss = Creature("Goshnar's Megalomania")
 		if boss then
 			local mtype = boss:getType()
@@ -1033,7 +1033,7 @@ function megalomaniaDeath.onDeath(creature, corpse, killer, mostDamageKiller, la
 		-- Checks if the boss has already been defeated
 		if not soulWarQuest:get("goshnar's-megalomania-killed") then
 			soulWarQuest:set("goshnar's-megalomania-killed", true)
-			killerPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have defeated Goshnar's Megalomania. Report the 'task' to Flickering Soul and earn your outfit.")
+			killerPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.megalomania_report")
 		end
 	end
 	return true

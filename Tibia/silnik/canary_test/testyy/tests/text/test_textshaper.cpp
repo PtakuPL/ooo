@@ -20,6 +20,7 @@
 #include <vector>
 #include <codecvt>
 #include <locale>
+#include <cmath>
 
 /**
  * @brief Converts a UTF-8 encoded string to a UTF-32 string.
@@ -270,4 +271,84 @@ TEST_F(TextShaperTest, SpacesOnly) {
     auto result = TextShaper::shape(text, hbFont, params);
 
     EXPECT_EQ(result.size(), 3);
+}
+
+// RTL script ordering (Arabic)
+TEST_F(TextShaperTest, ArabicRtlVisualOrder) {
+    if (!hbFont) GTEST_SKIP();
+
+    ShapeParams params;
+    params.language = "ar";
+    params.script = "Arab";
+    params.direction = TextDirection::RTL;
+
+    const std::u32string logical = utf8to32("مرحبا"); // 5 Arabic letters, no lam-alif ligature
+    auto result = TextShaper::shape(logical, hbFont, params);
+
+    ASSERT_EQ(result.size(), logical.size());
+
+    // Visual order should reverse the logical storage order for pure RTL runs
+    EXPECT_EQ(result.front().codepoint, logical.back());
+    EXPECT_EQ(result.back().codepoint, logical.front());
+
+    // RTL shaping typically emits negative advances
+    EXPECT_LT(result.front().advanceX, 0.0f);
+}
+
+// Mixed LTR/RTL text should keep ASCII digits order and reverse the Arabic segment.
+TEST_F(TextShaperTest, MixedBidiSegments) {
+    if (!hbFont) GTEST_SKIP();
+
+    ShapeParams params;
+    params.language = "ar";
+    params.script = "Arab";
+    params.direction = TextDirection::AUTO;
+
+    const std::string mixed = "123 مرحبا 789";
+    auto result = TextShaper::shape(utf8to32(mixed), hbFont, params);
+    ASSERT_FALSE(result.empty());
+
+    std::vector<char32_t> digits;
+    std::vector<char32_t> arabic;
+    for (const auto& glyph : result) {
+        if (glyph.codepoint >= U'0' && glyph.codepoint <= U'9')
+            digits.push_back(glyph.codepoint);
+        if (glyph.codepoint >= 0x0600 && glyph.codepoint <= 0x06FF)
+            arabic.push_back(glyph.codepoint);
+    }
+
+    ASSERT_EQ(digits.size(), 6); // "123" + "789"
+    EXPECT_EQ(digits[0], U'1');
+    EXPECT_EQ(digits[1], U'2');
+    EXPECT_EQ(digits[2], U'3');
+    EXPECT_EQ(digits[3], U'7');
+    EXPECT_EQ(digits[4], U'8');
+    EXPECT_EQ(digits[5], U'9');
+
+    const std::u32string arabicLogical = utf8to32("مرحبا");
+    std::vector<char32_t> arabicExpected(arabicLogical.rbegin(), arabicLogical.rend());
+    EXPECT_EQ(arabic, arabicExpected);
+}
+
+// Combining marks should keep zero-advance accent glyphs
+TEST_F(TextShaperTest, CombiningMarksProduceZeroAdvance) {
+    if (!hbFont) GTEST_SKIP();
+
+    ShapeParams params;
+    params.language = "en";
+    params.script = "Latn";
+    params.direction = TextDirection::LTR;
+
+    const std::string word = "Cafe\u0301"; // "e" + combining acute accent
+    auto result = TextShaper::shape(utf8to32(word), hbFont, params);
+    ASSERT_FALSE(result.empty());
+
+    bool hasZeroAdvance = false;
+    for (const auto& glyph : result) {
+        if (std::abs(glyph.advanceX) < 0.001f) {
+            hasZeroAdvance = true;
+            break;
+        }
+    }
+    EXPECT_TRUE(hasZeroAdvance);
 }

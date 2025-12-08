@@ -1,6 +1,14 @@
 # OTClient CI/CD Status Report
 
-**Last Updated:** 2025-12-05
+**Last Updated:** 2025-12-07
+
+## Plan działania (CI + I18N)
+1. SonarCloud: wyłączyć Automatic Analysis w projekcie SC lub włączyć warunek `if` w workflow, aby nie uruchamiać analizy CI gdy AA jest aktywne; następnie ponowić `Analysis - SonarCloud (Windows/Android)`.
+2. Windows (MSVC): uzupełnić `asyncdispatcher` o brakujące include’y standardowe i potwierdzić, że cpp jest budowany; przejrzeć logi pod kątem braków typu `g_asyncDispatcher` i poprawić deklarację/definicję.
+3. Vcpkg baseline: podnieść `builtin-baseline`/`vcpkgGitCommitId` do wersji zawierającej `abseil@20250814.1`, `angle@chromium_7258#2`, `asio@1.32.0` albo zredukować wersje portów; po zmianie wykonać `build-windows.yml` i `build-windows-solution.yml`.
+4. I18N san-check: potwierdzić, że wszystkie 53 locale przechodzą buildy (Windows/Ubuntu/WASM/Android) z ustawionym UTF-8 (MSVC flag), TTF/HarfBuzz/FriBidi włączone tam, gdzie potrzebne.
+5. Retest: po powyższych zmianach uruchomić komplet workflow (Windows, Ubuntu, Browser, Android, SonarCloud) i zaktualizować statusy w tym pliku.
+6. Checklist: korzystaj z `docs/ci-cd/I18N_BUILD_CHECKLIST.md` przy każdym rerunie, aby upewnić się, że wymagania I18N/UTF-8 są spełnione.
 
 ---
 

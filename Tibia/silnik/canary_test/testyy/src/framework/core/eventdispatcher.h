@@ -159,7 +159,7 @@ private:
         ADDING,
         ADDED,
         MERGING,
-        MERGED,
+        MERGED
     };
 
     // Thread Events

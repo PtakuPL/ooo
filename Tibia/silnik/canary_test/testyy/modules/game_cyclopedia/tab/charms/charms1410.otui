@@ -4,7 +4,7 @@ UIWidget
   visible: false
   MiniPanel
     id: InformationBase
-    text: carnage
+    !text: tr('carnage')
     anchors.top: parent.top
     anchors.left: parent.left
     size: 551 122
@@ -14,7 +14,7 @@ UIWidget
 
     Label
       id: TextBase
-      text: "killin a monster has 10% chance to deal physical damage equal to 15& of its maximum health to all monsters in a small rabius"
+      !text: tr('killin a monster has 10% chance to deal physical damage equal to 15& of its maximum health to all monsters in a small rabius')
       width: 165
       text-wrap: true
       margin-top: 25

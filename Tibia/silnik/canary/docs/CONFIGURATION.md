@@ -191,6 +191,7 @@ housePremiumNeeded = true
 ### Overview
 
 Canary server sends messages in a base language. The OTClient handles translation based on the user's selected locale.
+Set the server fallback using `serverDefaultLocale` in `config.lua`; this value seeds new players and is used whenever a client did not send a locale preference.
 
 ### Server-Side Messages
 

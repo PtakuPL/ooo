@@ -38,7 +38,7 @@ function taskXRay.onStepIn(creature, item, position, fromPosition)
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			if a >= 16 then
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine, 10)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have been succesfully g-rayed. Now let Doctor Gnomedix inspect your ears!")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.grayed_success")
 			end
 		end
 	end

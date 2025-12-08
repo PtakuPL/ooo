@@ -61,7 +61,7 @@ MainWindow
     anchors.top: prev.bottom
     size: 45 20
     margin-top: 5
-    text: Close
+    !text: tr('Close')
     font: cipsoftFont
     @onClick: modules.game_rewardwall.destroyPickReward(true)
 
@@ -72,7 +72,7 @@ MainWindow
     size: 60 20
     margin-top: 5
     margin-right: 10
-    text: Ok
+    !text: tr('Ok')
     color: #FFFFFF
     font: cipsoftFont
     enabled: false

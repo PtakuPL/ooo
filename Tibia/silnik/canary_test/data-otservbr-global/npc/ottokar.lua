@@ -23,6 +23,9 @@ npcConfig.flags = {
 	floorchange = false,
 }
 
+-- Load NPC helper library
+dofile(CORE_DIRECTORY .. "/libs/npc/i18n.lua")
+
 local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
 
@@ -60,19 +63,19 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "belongings of deceasead") or MsgContains(message, "medicine") then
 		if player:getItemCount(12517) > 0 then
-			npcHandler:say("Did you bring me the medicine pouch?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ottokar.medicine_ask")
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:say("I need a {medicine pouch}, to give you the {belongings of deceased}. Come back when you have them.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ottokar.medicine_needed")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
 		if player:removeItem(12517, 1) then
 			player:addItem(12413, 1)
 			player:addAchievementProgress("Doctor! Doctor!", 100)
-			npcHandler:say("Here you are", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ottokar.medicine_done")
 		else
-			npcHandler:say("You do not have the required items.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ottokar.no_items")
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

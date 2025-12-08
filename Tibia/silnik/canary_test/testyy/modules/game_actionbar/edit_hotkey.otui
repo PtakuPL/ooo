@@ -25,7 +25,7 @@ MainWindow
 
   Label
     id: errorLabel
-    text: "This hotkey is already in use and will be overwritten."
+    !text: tr('This hotkey is already in use and will be overwritten.')
     color: red
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.top: prev.bottom

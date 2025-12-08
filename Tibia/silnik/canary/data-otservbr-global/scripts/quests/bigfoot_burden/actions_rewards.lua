@@ -47,9 +47,9 @@ function bigfootRewards.onUse(player, item, fromPosition, target, toPosition, is
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.WarzoneStatus) == 4 then
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.WarzoneStatus, 5)
 			player:addItem(3020, 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found some golden fruits.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.golden_fruits_found")
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The chest is empty.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.chest_empty")
 		end
 	elseif item.uid > 3147 and item.uid < 3151 then
 		local reward = rewards[item.uid]
@@ -58,13 +58,13 @@ function bigfootRewards.onUse(player, item, fromPosition, target, toPosition, is
 		end
 
 		if player:getStorageValue(reward.storage) ~= 1 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, reward.bossName .. " defends his belongings and will not let you open his chest.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.chest_guarded", reward.bossName)
 			return true
 		end
 
 		local backpack = player:getSlotItem(CONST_SLOT_BACKPACK)
 		if backpack and backpack:getEmptySlots(false) < 5 or player:getFreeCapacity() < 100 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Please make sure that you have at least 5 free inventory slots and that you can carry on additional 100 oz.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.chest_requirements")
 			return true
 		end
 

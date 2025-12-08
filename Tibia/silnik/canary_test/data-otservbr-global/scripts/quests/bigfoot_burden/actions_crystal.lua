@@ -18,12 +18,12 @@ function bigfootCrystal.onUse(player, item, fromPosition, target, toPosition, is
 
 	if target.itemid == 15796 or target.itemid == 15712 then
 		player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.RepairedCrystalCount, repairedCount + 1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have repaired a damaged crystal!")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.crystal_repaired")
 		addEvent(returnCrystal, math.random(50, 140) * 1000, toPosition, target.itemid)
 		target:transform(15800)
 		toPosition:sendMagicEffect(CONST_ME_ENERGYAREA)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This is no damaged crystal!")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.crystal_not_damaged")
 	end
 	return true
 end

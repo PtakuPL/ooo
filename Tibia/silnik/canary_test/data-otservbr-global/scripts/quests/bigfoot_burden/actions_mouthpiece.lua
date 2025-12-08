@@ -4,7 +4,7 @@ function bigfootPiece.onUse(player, item, fromPosition, target, toPosition, isHo
 		player:addItem(20057, 1)
 		player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Mouthpiece, os.time() + configManager.getNumber(configKeys.BOSS_DEFAULT_TIME_TO_FIGHT_AGAIN))
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "It is empty.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.mouthpiece_empty")
 	end
 	return true
 end

@@ -1177,7 +1177,7 @@ function Player:addNextTaint()
 	for _, taintName in ipairs(soulWarTaints) do
 		if not soulWarQuest:get(taintName) then
 			soulWarQuest:set(taintName, true)
-			self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have gained the " .. taintName .. ".")
+			self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.taint_gained", taintName)
 			self:setTaintIcon()
 			break
 		end
@@ -1221,11 +1221,11 @@ function Player:resetTaints(skipCheckTime)
 		end
 		self:resetTaintConditions()
 		soulWarQuest:remove("firstTaintTime")
-		local resetMessage = "Your Goshnar's taints have been reset."
-		if not skipCheckTime then
-			resetMessage = resetMessage .. " You didn't finish the quest in 14 days."
+		if skipCheckTime then
+			self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.taints_reset")
+		else
+			self:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.taints_reset_timeout")
 		end
-		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, resetMessage)
 
 		for bossName, _ in pairs(SoulWarQuest.miniBosses) do
 			soulWarQuest:remove(bossName)
@@ -1378,15 +1378,15 @@ function Monster:onThinkGoshnarTormentCounter(interval, maxLimit, intervalBetwee
 		end
 
 		if tormentCounter == 5 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The dread starts to torment you! Don't let dread level reach critical value!")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.dread_start")
 		elseif tormentCounter == 15 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The dread's torment becomes unbearable!")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.dread_unbearable")
 		elseif tormentCounter == 24 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The Dread's torment begins to tear you apart!")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.dread_tear_apart")
 		elseif tormentCounter == 30 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The dread's torment is killing you!")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.dread_killing")
 		elseif tormentCounter == 36 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The dread's torment is now lethal!")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.dread_lethal")
 		end
 
 		::continue::

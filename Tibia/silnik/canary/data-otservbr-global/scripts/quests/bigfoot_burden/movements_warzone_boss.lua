@@ -29,24 +29,23 @@ function warzoneBoss.onStepIn(creature, item, pos, fromPosition)
 	end
 
 	if not creature:canFightBoss(warzone.boss) then
-		creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have already cleared this warzone in the last 20 hours.")
+		local hoursLeft = math.ceil(creature:getBossCooldown(warzone.boss) / 3600)
+		creature:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.warzone_cleared", hoursLeft)
 		creature:teleportTo(fromPosition)
 		return false
 	end
 
 	if warzone.locked then
-		creature:sendTextMessage(
+		creature:sendLocalizedTextMessage(
 			MESSAGE_EVENT_ADVANCE,
-			"Please, wait until the room is cleared. \z
-		This happens 30 minutes after the last team entered."
+			"quests.bigfoot_burden.room_wait"
 		)
 		creature:teleportTo(fromPosition)
 		return true
 	end
 
 	creature:teleportTo(warzone.teleportTo)
-	creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have half an hour to heroically defeat the \z
-	" .. warzone.boss .. ". Otherwise you'll be teleported out by the gnomish emergency device.")
+	creature:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.boss_challenge", warzone.boss)
 	return true
 end
 

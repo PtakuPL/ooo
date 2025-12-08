@@ -7,6 +7,9 @@ dataPackDirectory = "data-otservbr-global"
 -- Don't change this unless you know what you're doing
 coreDirectory = "data"
 
+-- Default locale the server will use when no per-player preference is stored
+serverDefaultLocale = "en"
+
 -- Set log level
 -- It can be trace, debug, info, warning, error, critical, off (default: info).
 -- NOTE: It will only be valid after the server starts up and only display logs with level higher or equal the one set.

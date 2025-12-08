@@ -23,11 +23,14 @@ npcConfig.flags = {
 	floorchange = false,
 }
 
+-- Load NPC helper library
+dofile(CORE_DIRECTORY .. "/libs/npc/i18n.lua")
+
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I'm selling magic equipment. Come and have a look." },
-	{ text = "If you need runes, this is the market stall for you!" },
+	{ text = NPC_LIB.i18n.get("npc.nipuna.voice_selling") },
+	{ text = NPC_LIB.i18n.get("npc.nipuna.voice_runes") },
 }
 
 local itemsTable = {

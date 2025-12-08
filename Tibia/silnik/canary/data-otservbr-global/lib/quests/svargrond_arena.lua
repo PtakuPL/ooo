@@ -268,7 +268,7 @@ function SvargrondArena.kickPlayer(cid, hideMessage)
 		SvargrondArena.kickPosition:sendMagicEffect(CONST_ME_TELEPORT)
 		player:setStorageValue(Storage.Quest.U8_0.BarbarianArena.PitDoor, 0)
 		if not hideMessage then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your time ran out!")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.svargrond_arena.time_out")
 		end
 	end
 end

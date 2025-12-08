@@ -1,0 +1,255 @@
+name: I18N Validation and Tests
+
+on:
+  push:
+    paths:
+      - 'i18n/**'
+      - 'data-otservbr-global/npc/**'
+      - 'data-otservbr-global/scripts/**'
+  pull_request:
+    paths:
+      - 'i18n/**'
+  schedule:
+    # Codziennie o 3:00 UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+env:
+  I18N_DIR: i18n
+
+jobs:
+  # ═══════════════════════════════════════════════════════════════════════════════
+  # WALIDACJA JSON
+  # ═══════════════════════════════════════════════════════════════════════════════
+  validate-json:
+    name: Validate JSON Files
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install jsonlint
+        run: npm install -g jsonlint
+
+      - name: Validate all JSON files
+        run: |
+          echo "Validating JSON files..."
+          errors=0
+          
+          for file in $(find $I18N_DIR -name "*.json"); do
+            if ! jsonlint -q "$file" 2>/dev/null; then
+              echo "❌ Invalid JSON: $file"
+              ((errors++))
+            fi
+          done
+          
+          if [ $errors -gt 0 ]; then
+            echo "Found $errors invalid JSON files"
+            exit 1
+          fi
+          
+          echo "✅ All JSON files are valid"
+
+  # ═══════════════════════════════════════════════════════════════════════════════
+  # WALIDACJA TŁUMACZEŃ
+  # ═══════════════════════════════════════════════════════════════════════════════
+  validate-translations:
+    name: Validate Translations
+    runs-on: ubuntu-latest
+    needs: validate-json
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      - name: Check for missing variables
+        run: |
+          echo "Checking variable consistency..."
+          errors=0
+          
+          # Dla każdego języka
+          for lang_dir in $I18N_DIR/*/; do
+            lang=$(basename "$lang_dir")
+            [ "$lang" = "en" ] && continue
+            
+            # Dla każdego pliku
+            for en_file in $I18N_DIR/en/*.json; do
+              filename=$(basename "$en_file")
+              trans_file="$lang_dir/$filename"
+              
+              [ ! -f "$trans_file" ] && continue
+              
+              # Sprawdź każdy klucz
+              while IFS= read -r key; do
+                en_value=$(jq -r --arg k "$key" '.[$k]' "$en_file")
+                trans_value=$(jq -r --arg k "$key" '.[$k] // empty' "$trans_file")
+                
+                [ -z "$trans_value" ] && continue
+                
+                # Wyekstrahuj zmienne %s, %d, {name} etc.
+                en_vars=$(echo "$en_value" | grep -oE '%[sd]|\{[^}]+\}' | sort | tr '\n' ',')
+                trans_vars=$(echo "$trans_value" | grep -oE '%[sd]|\{[^}]+\}' | sort | tr '\n' ',')
+                
+                if [ "$en_vars" != "$trans_vars" ]; then
+                  echo "❌ Variable mismatch: $lang/$filename key=$key"
+                  echo "   EN: $en_vars"
+                  echo "   $lang: $trans_vars"
+                  ((errors++))
+                fi
+              done < <(jq -r 'keys[]' "$en_file")
+            done
+          done
+          
+          if [ $errors -gt 0 ]; then
+            echo "Found $errors variable mismatches"
+            exit 1
+          fi
+          
+          echo "✅ All translations have consistent variables"
+
+      - name: Check for empty translations
+        run: |
+          echo "Checking for empty translations..."
+          
+          for file in $(find $I18N_DIR -name "*.json" ! -path "$I18N_DIR/en/*"); do
+            empty=$(jq '[.[] | select(. == "" or . == null)] | length' "$file")
+            if [ "$empty" -gt 0 ]; then
+              echo "⚠️ $file has $empty empty translations"
+            fi
+          done
+
+  # ═══════════════════════════════════════════════════════════════════════════════
+  # TESTY SKŁADNI LUA
+  # ═══════════════════════════════════════════════════════════════════════════════
+  lua-syntax:
+    name: Lua Syntax Check
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Lua
+        run: sudo apt-get install -y lua5.4
+
+      - name: Check Lua syntax
+        run: |
+          echo "Checking Lua syntax..."
+          errors=0
+          
+          for file in $(find data-otservbr-global data-canary data -name "*.lua" 2>/dev/null); do
+            if ! luac5.4 -p "$file" 2>/dev/null; then
+              echo "❌ Syntax error: $file"
+              ((errors++))
+            fi
+          done
+          
+          if [ $errors -gt 0 ]; then
+            echo "Found $errors Lua syntax errors"
+            exit 1
+          fi
+          
+          echo "✅ All Lua files have valid syntax"
+
+  # ═══════════════════════════════════════════════════════════════════════════════
+  # STATYSTYKI I RAPORT
+  # ═══════════════════════════════════════════════════════════════════════════════
+  generate-stats:
+    name: Generate Statistics
+    runs-on: ubuntu-latest
+    needs: [validate-json, validate-translations]
+    if: github.event_name == 'push' || github.event_name == 'schedule'
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      - name: Generate statistics
+        run: |
+          echo "# 📊 I18N Statistics" > i18n_stats.md
+          echo "" >> i18n_stats.md
+          echo "Generated: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> i18n_stats.md
+          echo "" >> i18n_stats.md
+          echo "| Language | Keys | Coverage |" >> i18n_stats.md
+          echo "|----------|------|----------|" >> i18n_stats.md
+          
+          # Policz klucze EN jako baseline
+          en_total=0
+          for f in $I18N_DIR/en/*.json; do
+            count=$(jq 'length' "$f" 2>/dev/null || echo 0)
+            ((en_total += count))
+          done
+          
+          echo "| en (baseline) | $en_total | 100% |" >> i18n_stats.md
+          
+          # Dla każdego innego języka
+          for lang_dir in $I18N_DIR/*/; do
+            lang=$(basename "$lang_dir")
+            [ "$lang" = "en" ] && continue
+            
+            lang_total=0
+            for f in "$lang_dir"/*.json; do
+              [ -f "$f" ] || continue
+              # Policz nie-puste wartości
+              count=$(jq '[.[] | select(. != "" and . != null and (startswith("[NEEDS") | not))] | length' "$f" 2>/dev/null || echo 0)
+              ((lang_total += count))
+            done
+            
+            if [ $en_total -gt 0 ]; then
+              coverage=$((lang_total * 100 / en_total))
+            else
+              coverage=0
+            fi
+            
+            echo "| $lang | $lang_total | ${coverage}% |" >> i18n_stats.md
+          done
+          
+          cat i18n_stats.md
+
+      - name: Upload statistics
+        uses: actions/upload-artifact@v4
+        with:
+          name: i18n-statistics
+          path: i18n_stats.md
+
+  # ═══════════════════════════════════════════════════════════════════════════════
+  # POWIADOMIENIA
+  # ═══════════════════════════════════════════════════════════════════════════════
+  notify:
+    name: Send Notifications
+    runs-on: ubuntu-latest
+    needs: [validate-json, validate-translations, lua-syntax]
+    if: failure()
+    
+    steps:
+      - name: Send Discord notification
+        if: env.DISCORD_WEBHOOK != ''
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          curl -H "Content-Type: application/json" \
+            -d '{
+              "embeds": [{
+                "title": "❌ I18N Validation Failed",
+                "description": "Check the GitHub Actions for details",
+                "color": 15158332,
+                "fields": [
+                  {"name": "Repository", "value": "${{ github.repository }}", "inline": true},
+                  {"name": "Branch", "value": "${{ github.ref_name }}", "inline": true}
+                ],
+                "url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+              }]
+            }' \
+            "$DISCORD_WEBHOOK"

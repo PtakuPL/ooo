@@ -1,0 +1,76 @@
+{
+    "api": {
+        "provider": "libretranslate",
+        "endpoint": "https://libretranslate.com/translate",
+        "api_key": "",
+        "fallback_provider": "mymemory"
+    },
+    "rate_limiting": {
+        "requests_per_second": 10,
+        "requests_per_day": 10000,
+        "batch_size": 50,
+        "delay_between_batches_ms": 1000
+    },
+    "languages": {
+        "source": "en",
+        "priority": ["pl", "de", "es", "pt", "fr"],
+        "all": [
+            "pl", "de", "es", "pt", "fr", "it", "nl", "ru", "uk", "cs",
+            "sk", "hu", "ro", "bg", "hr", "sl", "sr", "bs", "mk", "sq",
+            "el", "tr", "ar", "he", "fa", "hi", "bn", "ta", "te", "ml",
+            "th", "vi", "id", "ms", "tl", "zh", "zh_TW", "ja", "ko",
+            "sv", "no", "da", "fi", "et", "lv", "lt", "ka", "hy", "az",
+            "kk", "uz", "sw"
+        ]
+    },
+    "cache": {
+        "enabled": true,
+        "file": ".i18n_translation_cache.json",
+        "max_entries": 100000,
+        "ttl_days": 30
+    },
+    "validation": {
+        "preserve_variables": true,
+        "variable_patterns": [
+            "%s", "%d", "%f", "%i",
+            "{0}", "{1}", "{2}", "{name}", "{player}",
+            "{{.*?}}"
+        ],
+        "max_length_ratio": 2.0,
+        "min_length_ratio": 0.3
+    },
+    "categories": {
+        "npc": {
+            "priority": "high",
+            "review_required": false
+        },
+        "items": {
+            "priority": "high",
+            "review_required": false
+        },
+        "scripts": {
+            "priority": "medium",
+            "review_required": true
+        },
+        "server": {
+            "priority": "low",
+            "review_required": true
+        },
+        "admin": {
+            "priority": "low",
+            "review_required": true,
+            "skip_languages": ["ar", "he", "fa"]
+        }
+    },
+    "glossary": {
+        "enabled": true,
+        "file": "i18n/glossary.json",
+        "enforce": true
+    },
+    "notifications": {
+        "discord_webhook": "",
+        "notify_on_completion": true,
+        "notify_on_error": true,
+        "daily_report": true
+    }
+}

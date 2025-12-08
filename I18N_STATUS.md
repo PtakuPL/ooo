@@ -27,7 +27,7 @@
 | **Klucze i18n** | `43622` |
 | **Języki** | 5 (🇬🇧 en, 🇵🇱 pl, 🇩🇪 de, 🇪🇸 es, 🇧🇷 pt) |
 | **Prędkość** | ~`1.2` NPC/min |
-| **Czas pracy** | 323min |
+| **Czas pracy** | 325min |
 | **Start** | 11:42 |
 | **ETA** | ~498 min |
 | **Błędy** | 0 |
@@ -48,15 +48,15 @@
 ## 🔧 Status Workera
 
 ```
-[2025-12-08 17:05:41] [INFO] 🔬 FAZA 3: ANALIZA
+[2025-12-08 17:07:42] [INFO] 🔬 FAZA 3: ANALIZA
 ```
 
 ## 🔄 Ostatnia aktualizacja
 
 | 🕐 Czas | 📅 Data |
 |---------|---------|
-| **UTC:** | 2025-12-08 16:06:02 UTC |
-| **Local:** | 17:06:02 |
+| **UTC:** | 2025-12-08 16:08:04 UTC |
+| **Local:** | 17:08:04 |
 
 ---
 

@@ -69,19 +69,19 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "advancement") or MsgContains(message, "demonic") or MsgContains(message, "essence") then
 		if player:getStorageValue(Storage.Quest.U7_9.NightmareOutfits.Outfits) == 1 then
-			npcHandler:say("So you want to advance to a {Initiate} rank? Did you bring 500 demonic essences with you?", npc, creature)
+			npcHandler:sayLocalized("npc.the_dream_master.so_you_want_1", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U7_9.NightmareOutfits.Outfits) == 2 then
-			npcHandler:say("So you want to advance to a {Dreamer} rank? Did you bring 1000 demonic essences with you?", npc, creature)
+			npcHandler:sayLocalized("npc.the_dream_master.so_you_want_2", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		elseif player:getStorageValue(Storage.Quest.U7_9.NightmareOutfits.Outfits) == 3 then
-			npcHandler:say("So you want to advance to a {Lord Protector} rank? Did you bring 1500 demonic essences with you?", npc, creature)
+			npcHandler:sayLocalized("npc.the_dream_master.so_you_want_3", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Please know that your decision is irrevocable. You will abandon the opportunity to join any order whose doctrine is incontrast to our own ...", npc, creature)
-			npcHandler:say("Do you still want to join our order?", npc, creature)
+			npcHandler:sayLocalized("npc.the_dream_master.please_know_that_4", npc, creature)
+			npcHandler:sayLocalized("npc.the_dream_master.do_you_still_5", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			npcHandler:say({
@@ -97,9 +97,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addItem(769, 1)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 				player:setStorageValue(Storage.Quest.U7_9.NightmareOutfits.Outfits, 2)
-				npcHandler:say("You advanced to {Initiate} rank! You are now able to use teleports of second floor of Knightwatch Tower.", npc, creature)
+				npcHandler:sayLocalized("npc.the_dream_master.you_advanced_to_6", npc, creature)
 			else
-				npcHandler:say("Come back when you gather all essences.", npc, creature)
+				npcHandler:sayLocalized("npc.the_dream_master.come_back_when_7", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
@@ -109,9 +109,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addItem(770, 1)
 				player:addItem(6390, 1)
 				player:addAchievement("Nightmare Walker")
-				npcHandler:say("You advanced to {Dreamer} rank!", npc, creature)
+				npcHandler:sayLocalized("npc.the_dream_master.you_advanced_to_8", npc, creature)
 			else
-				npcHandler:say("Come back when you gather all essences.", npc, creature)
+				npcHandler:sayLocalized("npc.the_dream_master.come_back_when_9", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
@@ -121,9 +121,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U7_9.NightmareOutfits.Door, 1)
 				player:setStorageValue(Storage.Quest.U7_9.NightmareOutfits.KnightwatchTowerDoor, 1)
 				player:addAchievement("Lord Protector")
-				npcHandler:say("You advanced to {Lord Protector} rank! You are now able to use teleports of fourth floor of Knightwatch Tower and to create addon scrolls.", npc, creature)
+				npcHandler:sayLocalized("npc.the_dream_master.you_advanced_to_10", npc, creature)
 			else
-				npcHandler:say("Come back when you gather all essences.", npc, creature)
+				npcHandler:sayLocalized("npc.the_dream_master.come_back_when_11", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		end

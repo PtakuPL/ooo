@@ -6,57 +6,57 @@
 
 ## 📊 Aktualny postęp
 
-![NPC Migration](https://img.shields.io/badge/NPC-36.3%25-orange?style=for-the-badge&logo=lua)
-![Keys](https://img.shields.io/badge/Keys-43185-blue?style=for-the-badge&logo=json)
+![NPC Migration](https://img.shields.io/badge/NPC-37.2%25-orange?style=for-the-badge&logo=lua)
+![Keys](https://img.shields.io/badge/Keys-43223-blue?style=for-the-badge&logo=json)
 ![Speed](https://img.shields.io/badge/Speed-4.7_NPC%2Fmin-purple?style=for-the-badge&logo=speedtest)
 ![Errors](https://img.shields.io/badge/Errors-0-green?style=for-the-badge)
 
 ## 📈 Progress Bar
 
 ```
-[██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░] 36.3%
- 373 / 1027 NPC
+[██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░] 37.2%
+ 382 / 1027 NPC
 ```
 
 ## 📋 Szczegóły
 
 | 📌 Metryka | 📊 Wartość |
 |------------|------------|
-| **NPC Zmigrowanych** | `373` / `1027` |
-| **Postęp** | **36.3%** |
-| **Klucze i18n** | `43185` |
+| **NPC Zmigrowanych** | `382` / `1027` |
+| **Postęp** | **37.2%** |
+| **Klucze i18n** | `43223` |
 | **Języki** | 5 (🇬🇧 en, 🇵🇱 pl, 🇩🇪 de, 🇪🇸 es, 🇧🇷 pt) |
 | **Prędkość** | ~`4.7` NPC/min |
-| **Czas pracy** | 71min |
+| **Czas pracy** | 73min |
 | **Start** | 11:42 |
-| **ETA** | ~139 min |
+| **ETA** | ~137 min |
 | **Błędy** | 0 |
 
 ## 📁 Ostatnio zmodyfikowane NPC
 
 | Plik |
 |------|
-| `terrence.lua` |
-| `tereban_functions.lua` |
-| `telas.lua` |
-| `tehlim.lua` |
-| `tarun.lua` |
-| `tarak_sunken.lua` |
-| `tarak_inner.lua` |
-| `tandros.lua` |
+| `theodore_loveless.lua` |
+| `the_lootmonger.lua` |
+| `the_librarian.lua` |
+| `the_dream_master.lua` |
+| `the_bone_master.lua` |
+| `the_blind_prophet.lua` |
+| `the_beggar_king.lua` |
+| `thanita.lua` |
 
 ## 🔧 Status Workera
 
 ```
-[2025-12-08 12:53:58] [INFO] 🔬 FAZA 3: ANALIZA
+[2025-12-08 12:55:49] [INFO] 🔬 FAZA 3: ANALIZA
 ```
 
 ## 🔄 Ostatnia aktualizacja
 
 | 🕐 Czas | 📅 Data |
 |---------|---------|
-| **UTC:** | 2025-12-08 11:54:02 UTC |
-| **Local:** | 12:54:02 |
+| **UTC:** | 2025-12-08 11:56:01 UTC |
+| **Local:** | 12:56:01 |
 
 ---
 

@@ -60,10 +60,10 @@ local function creatureSayCallback(npc, player, type, message)
 	end
 	local categoryTable = LootShopConfigTable[message:lower()]
 	if MsgContains(message, "shop options") then
-		npcHandler:say("I sell a selection of " .. GetFormattedShopCategoryNames(LootShopConfigTable), npc, player)
+		npcHandler:sayLocalized("npc.the_lootmonger.i_sell_a_1" .. GetFormattedShopCategoryNames(LootShopConfigTable), npc, player)
 	elseif categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), LootShopConfigTable)
-		npcHandler:say("Of course, just browse through my wares. You can also look at " .. remainingCategories .. ".", npc, player)
+		npcHandler:sayLocalized("npc.the_lootmonger.of_course_just_2" .. remainingCategories .. ".", npc, player)
 		npc:openShopWindowTable(player, categoryTable)
 	end
 end

@@ -62,15 +62,15 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "money") or MsgContains(message, "gold") then
-		npcHandler:say("There you have", npc, creature)
+		npcHandler:sayLocalized("npc.testserver_assistant.there_you_have_1", npc, creature)
 		player:addItem(3043, npcConfig.amountMoney)
 	end
 
 	if MsgContains(message, "exp") or MsgContains(message, "experience") then
 		if player:getLevel() > npcConfig.maxLevel then
-			npcHandler:say("You can not take it anymore", npc, creature)
+			npcHandler:sayLocalized("npc.testserver_assistant.you_can_not_2", npc, creature)
 		else
-			npcHandler:say("Here you are |PLAYERNAME|.", npc, creature)
+			npcHandler:sayLocalized("npc.testserver_assistant.here_you_are_3", npc, creature)
 			local level = player:getLevel() + npcConfig.amountLevel - 1
 			local experience = ((50 * level * level * level) - (150 * level * level) + (400 * level)) / 3
 			player:addExperience(experience - player:getExperience(), true, true)
@@ -94,7 +94,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		for i, v in ipairs(missingBless) do
 			player:addBlessing(v.id, 1)
 		end
-		npcHandler:say("You have been blessed by all gods, |PLAYERNAME|.", npc, creature)
+		npcHandler:sayLocalized("npc.testserver_assistant.you_have_been_4", npc, creature)
 		player:sendTextMessage(MESSAGE_STATUS, "You received the remaining " .. missingBlessAmt .. " blesses.")
 		player:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 	end
@@ -105,7 +105,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			local experience = ((50 * level * level * level) - (150 * level * level) + (400 * level)) / 3
 			player:removeExperience(player:getExperience() - experience)
 		else
-			npcHandler:say("You can not take it anymore", npc, creature)
+			npcHandler:sayLocalized("npc.testserver_assistant.you_can_not_5", npc, creature)
 		end
 	end
 

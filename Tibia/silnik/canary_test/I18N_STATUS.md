@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-08 22:35:20 UTC  
+> **Aktualizacja:** 2025-12-08 22:41:28 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,9 +21,9 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **940** | ↑ |
-| ⏭️ Plików wykluczonych | **4868** | - |
-| 🔑 Kluczy i18n | **42080** | ↑ |
+| 📁 Plików przetworzonych | **946** | ↑ |
+| ⏭️ Plików wykluczonych | **4895** | - |
+| 🔑 Kluczy i18n | **42109** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
 | 🔄 Cykl | **#1** | - |
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 4073/5000 (81%) | 5000 |
+| 🧙 NPC Dialogs | 🔄 | 4108/5000 (82%) | 5000 |
 | 📜 Lua Scripts | 🔄 | 713/1000 (71%) | 1000 |
 | 🎒 Items Database | 🔄 | 36972/40000 (92%) | 40000 |
 | 👹 Monsters | 🔄 | 100/500 (20%) | 500 |
@@ -77,16 +77,16 @@
 | Parametr | Wartość |
 |----------|----------|
 | **Status** | 🔄 in_progress |
-| **Operacja** | Przetwarzanie lua |
-| **Plik** | `the_first_dragon.lua` |
-| **Szczegóły** | Katalog: data-otservbr-global/npc |
-| **Ostatnia aktualizacja** | 2025-12-08 22:35:20 |
+| **Operacja** | 🎮 Canary Server - scripts |
+| **Plik** | `Cykl #1` |
+| **Szczegóły** | NPC:4108 Scripts:713 Items:36972 |
+| **Ostatnia aktualizacja** | 2025-12-08 22:41:02 |
 
 ### 📈 Statystyki sesji
 
 | Metryka | Wartość |
 |---------|----------|
-| Plików przetworzonych | 2 |
+| Plików przetworzonych | 7 |
 | Kluczy wyciągniętych | 0 |
 | Błędów | 0 |
 | Napraw zastosowanych | 0 |
@@ -100,7 +100,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 4079 |
+| 🔑 Kluczy | 4108 |
 | 📊 Status | ✅ Zakończone |
 | 📂 Plików | ~877 |
 
@@ -149,16 +149,16 @@ selfSay("text")
 
 | Plik | Czas | Status |
 |------|------|--------|
-| `game_rewardwall.html` | 00:47:08 | ✅ |
-| `status.php` | 00:47:08 | ✅ |
-| `updater.php` | 00:47:08 | ✅ |
-| `alyxo.lua` | 22:08:38 | ✅ |
-| `shimun.lua` | 22:35:19 | ✅ |
+| `tefrit.lua` | 22:35:22 | ✅ |
+| `saideh.lua` | 22:35:28 | ✅ |
+| `tigo.lua` | 22:35:31 | ✅ |
+| `kallimae.lua` | 22:35:38 | ✅ |
+| `yonan.lua` | 22:35:43 | ✅ |
 
 ### 💻 Przykład kodu (ostatni plik)
 
 ```lua
-
+	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.",
 ```
 
 **Wzorce ekstrakcji:**
@@ -225,7 +225,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 780857, Cykl #1 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 824722, Cykl #1 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

@@ -1,0 +1,110 @@
+{
+  "schema_version": "2.0",
+  "description": "Machine-readable status for AI agents (Codex, Copilot, Claude)",
+  "last_updated": "2025-12-08T19:00:00Z",
+  
+  "worker": {
+    "version": "4.0",
+    "name": "i18n_autonomous_worker.sh",
+    "pid": null,
+    "status": "running",
+    "mode": "migration",
+    "cycle": 1,
+    "files_per_cycle": 10,
+    "started_at": null,
+    "uptime_seconds": 0
+  },
+  
+  "guardian": {
+    "version": "2.0",
+    "name": "i18n_guardian.sh",
+    "crontab": "* * * * *",
+    "auto_push_interval": 120,
+    "last_check": null,
+    "restarts_count": 0
+  },
+  
+  "global_progress": {
+    "total_files_processed": 0,
+    "total_files_excluded": 0,
+    "total_keys": 0,
+    "total_languages": 53,
+    "total_conflicts": 0
+  },
+  
+  "categories": {
+    "npc": {
+      "status": "completed",
+      "enabled": true,
+      "priority": 1,
+      "description": "NPC dialog translations",
+      "details_file": "categories/npc_details.json"
+    },
+    "scripts": {
+      "status": "in_progress",
+      "enabled": true,
+      "priority": 2,
+      "description": "Lua scripts (quests, actions, movements)",
+      "details_file": "categories/scripts_details.json"
+    },
+    "items": {
+      "status": "completed",
+      "enabled": true,
+      "priority": 3,
+      "description": "Item names and descriptions",
+      "details_file": "categories/items_details.json"
+    },
+    "monsters": {
+      "status": "pending",
+      "enabled": true,
+      "priority": 4,
+      "description": "Monster names and loot",
+      "details_file": "categories/monsters_details.json"
+    },
+    "spells": {
+      "status": "pending",
+      "enabled": true,
+      "priority": 5,
+      "description": "Spell names and descriptions",
+      "details_file": "categories/spells_details.json"
+    },
+    "server": {
+      "status": "pending",
+      "enabled": true,
+      "priority": 6,
+      "description": "C++ server messages",
+      "details_file": "categories/server_details.json"
+    },
+    "ui": {
+      "status": "pending",
+      "enabled": true,
+      "priority": 7,
+      "description": "User interface strings",
+      "details_file": "categories/ui_details.json"
+    },
+    "website": {
+      "status": "pending",
+      "enabled": true,
+      "priority": 8,
+      "description": "Website/AAC translations",
+      "details_file": "categories/website_details.json"
+    }
+  },
+  
+  "ai_instructions": {
+    "for_codex": "Use this JSON to understand current i18n state. Check 'categories' for work areas. Read details_file for each category.",
+    "for_copilot": "Monitor 'worker.status' and 'global_progress'. Help with translations in i18n/{lang}/*.json files.",
+    "validation_commands": [
+      "lua -e 'dofile(\"path/to/file.lua\")'",
+      "jq '.' i18n/en/npc.json",
+      "python3 -c \"import json; json.load(open('file.json'))\""
+    ],
+    "help_areas": [
+      "Review translations for accuracy",
+      "Check Lua syntax in modified files",
+      "Suggest missing translations",
+      "Validate JSON structure",
+      "Find untranslated strings in C++ source"
+    ]
+  }
+}

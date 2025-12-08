@@ -1,0 +1,57 @@
+{
+  "category": "items",
+  "display_name": "🎒 Items",
+  "status": "completed",
+  "last_updated": "2025-12-08T10:00:00Z",
+  
+  "summary": {
+    "total_items": 36972,
+    "items_translated": 36972,
+    "total_keys": 36972,
+    "completion_percent": 100
+  },
+  
+  "work_log": [
+    {
+      "timestamp": "2025-12-07T20:00:00Z",
+      "action": "started",
+      "details": "Import items.xml do i18n"
+    },
+    {
+      "timestamp": "2025-12-08T10:00:00Z",
+      "action": "completed",
+      "details": "Wszystkie itemy zaimportowane"
+    }
+  ],
+  
+  "directories": {
+    "source": [
+      "data/items/items.xml"
+    ],
+    "output": "i18n/{lang}/items.json"
+  },
+  
+  "string_patterns": {
+    "extracted": [
+      "<item id=\"X\" name=\"text\"",
+      "<attribute key=\"description\" value=\"text\"/>"
+    ],
+    "key_format": "items.{item_id}.name"
+  },
+  
+  "languages_progress": {
+    "en": { "keys": 36972, "translated": 36972, "percent": 100 },
+    "pl": { "keys": 36972, "translated": 36972, "percent": 100 },
+    "es": { "keys": 36972, "translated": 36972, "percent": 100 },
+    "de": { "keys": 36972, "translated": 36972, "percent": 100 },
+    "pt": { "keys": 36972, "translated": 36972, "percent": 100 }
+  },
+  
+  "issues": [],
+  
+  "ai_notes": {
+    "review_needed": false,
+    "suggested_actions": [],
+    "quality_score": 100
+  }
+}

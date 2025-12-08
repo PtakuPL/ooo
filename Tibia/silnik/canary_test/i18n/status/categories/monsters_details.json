@@ -1,0 +1,64 @@
+{
+  "category": "monsters",
+  "display_name": "👹 Monsters",
+  "status": "pending",
+  "last_updated": "2025-12-08T19:00:00Z",
+  
+  "summary": {
+    "total_monsters": 1500,
+    "monsters_processed": 0,
+    "total_keys": 0,
+    "completion_percent": 0,
+    "estimated_start": "2025-12-11T00:00:00Z"
+  },
+  
+  "work_log": [],
+  
+  "directories": {
+    "source": [
+      "data-otservbr-global/monster/",
+      "data-canary/monster/"
+    ],
+    "output": "i18n/{lang}/monsters.json"
+  },
+  
+  "file_patterns": [
+    "*.xml"
+  ],
+  
+  "string_patterns": {
+    "to_extract": [
+      "<monster name=\"text\"",
+      "<voice sentence=\"text\"/>"
+    ],
+    "key_format": "monsters.{monster_name}.name"
+  },
+  
+  "planned_subdirectories": {
+    "aquatics": { "count": 80 },
+    "bosses": { "count": 150 },
+    "constructs": { "count": 60 },
+    "demons": { "count": 120 },
+    "dragons": { "count": 50 },
+    "elementals": { "count": 90 },
+    "fey": { "count": 40 },
+    "giants": { "count": 70 },
+    "humanoids": { "count": 200 },
+    "magicals": { "count": 80 },
+    "mammals": { "count": 150 },
+    "plants": { "count": 60 },
+    "reptiles": { "count": 100 },
+    "slimes": { "count": 30 },
+    "undead": { "count": 220 }
+  },
+  
+  "ai_notes": {
+    "review_needed": false,
+    "suggested_actions": [
+      "Queue after scripts completion",
+      "Plan XML parsing strategy"
+    ],
+    "priority": 4,
+    "complexity": "low"
+  }
+}

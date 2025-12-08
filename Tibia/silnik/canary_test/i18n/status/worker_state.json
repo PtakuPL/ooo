@@ -1,17 +1,17 @@
 {
   "schema_version": "2.0",
-  "last_updated": "2025-12-09T00:26:43+01:00",
+  "last_updated": "2025-12-09T00:37:53+01:00",
   "worker": {
     "version": "4.0",
     "status": "running",
     "mode": "analysis",
-    "cycle": 11,
+    "cycle": 15,
     "files_per_cycle": 10,
     "pid": 1439815
   },
   "global_progress": {
-    "total_files_processed": 487,
-    "total_files_excluded": 4895,
+    "total_files_processed": 1371,
+    "total_files_excluded": 4911,
     "total_keys": 42109,
     "total_languages": 53,
     "total_conflicts": 58
@@ -26,28 +26,28 @@
   },
   "recent_files": [
   {
-    "file": "game_questlog.html",
-    "time": "00:26:43",
+    "file": "bertram.lua",
+    "time": "00:37:53",
     "status": "success"
   },
   {
-    "file": "#displayUIPickReward.html",
-    "time": "00:26:43",
+    "file": "canary.lua",
+    "time": "00:37:53",
     "status": "success"
   },
   {
-    "file": "game_rewardwall.html",
-    "time": "00:26:43",
+    "file": "canary.lua",
+    "time": "00:37:53",
     "status": "success"
   },
   {
-    "file": "status.php",
-    "time": "00:26:43",
+    "file": "i18n.lua",
+    "time": "00:37:53",
     "status": "success"
   },
   {
-    "file": "updater.php",
-    "time": "00:26:43",
+    "file": "i18n.lua",
+    "time": "00:37:53",
     "status": "success"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-12-08T13:27:42.162520",
+  "last_updated": "2025-12-08T13:29:29.389741",
   "snapshots": [
     {
       "timestamp": "2025-12-08T11:42:22.837211",
@@ -7395,6 +7395,138 @@
     },
     {
       "timestamp": "2025-12-08T13:27:41.912542",
+      "total_keys": 43622,
+      "total_translations": 203486,
+      "npc_migrated": 429,
+      "npc_total": 1027,
+      "languages": {
+        "en": {
+          "total_keys": 43622,
+          "translated_keys": 43622,
+          "untranslated_keys": 0,
+          "files_count": 6,
+          "progress": 100.0
+        },
+        "es": {
+          "total_keys": 39966,
+          "translated_keys": 39966,
+          "untranslated_keys": 0,
+          "files_count": 5,
+          "progress": 100.0
+        },
+        "pl": {
+          "total_keys": 39966,
+          "translated_keys": 39966,
+          "untranslated_keys": 0,
+          "files_count": 5,
+          "progress": 100.0
+        },
+        "de": {
+          "total_keys": 39966,
+          "translated_keys": 39966,
+          "untranslated_keys": 0,
+          "files_count": 5,
+          "progress": 100.0
+        },
+        "pt": {
+          "total_keys": 39966,
+          "translated_keys": 39966,
+          "untranslated_keys": 0,
+          "files_count": 5,
+          "progress": 100.0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-12-08T13:28:17.733118",
+      "total_keys": 43622,
+      "total_translations": 203486,
+      "npc_migrated": 429,
+      "npc_total": 1027,
+      "languages": {
+        "en": {
+          "total_keys": 43622,
+          "translated_keys": 43622,
+          "untranslated_keys": 0,
+          "files_count": 6,
+          "progress": 100.0
+        },
+        "es": {
+          "total_keys": 39966,
+          "translated_keys": 39966,
+          "untranslated_keys": 0,
+          "files_count": 5,
+          "progress": 100.0
+        },
+        "pl": {
+          "total_keys": 39966,
+          "translated_keys": 39966,
+          "untranslated_keys": 0,
+          "files_count": 5,
+          "progress": 100.0
+        },
+        "de": {
+          "total_keys": 39966,
+          "translated_keys": 39966,
+          "untranslated_keys": 0,
+          "files_count": 5,
+          "progress": 100.0
+        },
+        "pt": {
+          "total_keys": 39966,
+          "translated_keys": 39966,
+          "untranslated_keys": 0,
+          "files_count": 5,
+          "progress": 100.0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-12-08T13:28:53.093537",
+      "total_keys": 43622,
+      "total_translations": 203486,
+      "npc_migrated": 429,
+      "npc_total": 1027,
+      "languages": {
+        "en": {
+          "total_keys": 43622,
+          "translated_keys": 43622,
+          "untranslated_keys": 0,
+          "files_count": 6,
+          "progress": 100.0
+        },
+        "es": {
+          "total_keys": 39966,
+          "translated_keys": 39966,
+          "untranslated_keys": 0,
+          "files_count": 5,
+          "progress": 100.0
+        },
+        "pl": {
+          "total_keys": 39966,
+          "translated_keys": 39966,
+          "untranslated_keys": 0,
+          "files_count": 5,
+          "progress": 100.0
+        },
+        "de": {
+          "total_keys": 39966,
+          "translated_keys": 39966,
+          "untranslated_keys": 0,
+          "files_count": 5,
+          "progress": 100.0
+        },
+        "pt": {
+          "total_keys": 39966,
+          "translated_keys": 39966,
+          "untranslated_keys": 0,
+          "files_count": 5,
+          "progress": 100.0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-12-08T13:29:29.146922",
       "total_keys": 43622,
       "total_translations": 203486,
       "npc_migrated": 429,

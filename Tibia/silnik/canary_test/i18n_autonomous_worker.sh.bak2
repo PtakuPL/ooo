@@ -815,6 +815,264 @@ EOF
     
     log_info "📊 Status: $processed przetw. | $total_keys kluczy | ${#LANGUAGES[@]} języków"
 }
+    
+    local total_keys=$((npc_keys + scripts_keys + items_keys + monsters_keys + server_keys + spells_keys))
+    
+    # Określ aktualną kategorię pracy
+    local current_category="scripts"
+    local category_status_npc="completed"
+    local category_status_scripts="in_progress"
+    local category_status_items="completed"
+    local category_status_monsters="pending"
+    local category_status_server="pending"
+    
+    # Tworzenie rozbudowanego I18N_STATUS.md
+    cat > "$WORK_DIR/I18N_STATUS.md" << 'STATUSEOF'
+# 🌍 I18N Internationalization System - Live Dashboard
+
+STATUSEOF
+
+    cat >> "$WORK_DIR/I18N_STATUS.md" << EOF
+> **Aktualizacja:** $(date '+%Y-%m-%d %H:%M:%S') UTC  
+> **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** ${#LANGUAGES[@]}
+
+---
+
+## 🤖 AI Agent Integration
+
+\`\`\`
+┌─────────────────────────────────────────────────────────────────┐
+│  Status zoptymalizowany dla AI agentów (Codex/Copilot/Claude)  │
+│  JSON data: i18n/status/worker_state.json                      │
+│  Categories: i18n/status/categories/*.json                     │
+└─────────────────────────────────────────────────────────────────┘
+\`\`\`
+
+---
+
+## 📊 Globalny Postęp
+
+| Metryka | Wartość | Trend |
+|---------|---------|-------|
+| 📁 Plików przetworzonych | **$processed** | ↑ |
+| ⏭️ Plików wykluczonych | **$excluded** | - |
+| 🔑 Kluczy i18n | **$total_keys** | ↑ |
+| 🌍 Języków | **${#LANGUAGES[@]}** | ✓ |
+| ⚠️ Konfliktów | **$TOTAL_CONFLICTS** | ✓ |
+| 🔄 Cykl | **#$CYCLE_COUNT** | - |
+
+---
+
+## 📂 Kategorie Pracy
+
+<details>
+<summary><h3>🧙 1. NPC Dialogs - COMPLETED ✅</h3></summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | $npc_keys |
+| 📊 Status | ✅ Zakończone |
+
+**Źródła:** \`data-otservbr-global/npc/\`, \`data-canary/npc/\`
+
+**📖 Szczegóły:** \`i18n/status/categories/npc_details.json\`
+
+</details>
+
+---
+
+<details open>
+<summary><h3>📜 2. Lua Scripts - IN PROGRESS 🔄</h3></summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | $scripts_keys |
+| 📊 Status | 🔄 W trakcie |
+| 🎯 Aktualnie | \`data-otservbr-global/scripts/\` |
+
+**Podkatalogi:**
+| Katalog | Status |
+|---------|--------|
+| \`quests/\` | 🔄 W trakcie |
+| \`actions/\` | 🔄 W trakcie |
+| \`movements/\` | ⏳ Oczekuje |
+| \`creaturescripts/\` | ⏳ Oczekuje |
+| \`talkactions/\` | ⏳ Oczekuje |
+| \`globalevents/\` | ⏳ Oczekuje |
+| \`spells/\` | ⏳ Oczekuje |
+
+**📖 Szczegóły:** \`i18n/status/categories/scripts_details.json\`
+
+</details>
+
+---
+
+<details>
+<summary><h3>🎒 3. Items - COMPLETED ✅</h3></summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | $items_keys |
+| 📊 Status | ✅ Zakończone |
+
+**📖 Szczegóły:** \`i18n/status/categories/items_details.json\`
+
+</details>
+
+---
+
+<details>
+<summary><h3>👹 4. Monsters - PENDING ⏳</h3></summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | $monsters_keys |
+| 📊 Status | ⏳ Oczekuje |
+| 📅 Planowany start | Po Scripts |
+
+**📖 Szczegóły:** \`i18n/status/categories/monsters_details.json\`
+
+</details>
+
+---
+
+<details>
+<summary><h3>⚙️ 5. Server C++ - PENDING ⏳</h3></summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | $server_keys |
+| 📊 Status | ⏳ Oczekuje |
+| ⚠️ Wymaga | Rekompilacja |
+
+**📖 Szczegóły:** \`i18n/status/categories/server_details.json\`
+
+</details>
+
+---
+
+<details>
+<summary><h3>🔮 6. Spells - PENDING ⏳</h3></summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | $spells_keys |
+| 📊 Status | ⏳ Oczekuje |
+
+**📖 Szczegóły:** \`i18n/status/categories/spells_details.json\`
+
+</details>
+
+---
+
+## 🔧 Worker & Guardian
+
+| System | Status | Info |
+|--------|--------|------|
+| **Worker v4.0** | 🟢 RUNNING | Cykl #$CYCLE_COUNT, $FILES_PER_CYCLE plików/cykl |
+| **Guardian v2.0** | 🟢 ACTIVE | Crontab co 1 min, push co 2 min |
+
+---
+
+## 🗺️ Roadmap
+
+\`\`\`
+[✅] Phase 1: Items           ████████████████████ 100%
+[✅] Phase 2: NPC             ████████████████████ 100%
+[🔄] Phase 3: Scripts         ████░░░░░░░░░░░░░░░░  20%
+[⏳] Phase 4: Monsters        ░░░░░░░░░░░░░░░░░░░░   0%
+[⏳] Phase 5: Spells          ░░░░░░░░░░░░░░░░░░░░   0%
+[⏳] Phase 6: Server (C++)    ░░░░░░░░░░░░░░░░░░░░   0%
+\`\`\`
+
+---
+
+## 📖 Dokumentacja
+
+| Dokument | Opis |
+|----------|------|
+| \`docs/AI_AGENT_INTEGRATION.md\` | Przewodnik dla AI agentów |
+| \`docs/I18N_DEVELOPMENT_ROADMAP.md\` | Pełny plan rozwoju |
+| \`i18n_future_scripts/\` | Szkice przyszłych skryptów |
+
+---
+
+*🤖 Machine-readable: \`i18n/status/worker_state.json\`*  
+*📅 Auto-updated by Worker v4.0*  
+*🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)*
+EOF
+    
+    # Aktualizuj też pliki JSON dla AI
+    update_json_status "$processed" "$excluded" "$total_keys" "$npc_keys" "$scripts_keys" "$items_keys"
+    
+    log_info "📊 Status: $processed przetw. | $total_keys kluczy | ${#LANGUAGES[@]} języków"
+}
+
+#===============================================================================
+# JSON STATUS UPDATE - Dla AI agentów
+#===============================================================================
+update_json_status() {
+    local processed=$1
+    local excluded=$2
+    local total_keys=$3
+    local npc_keys=$4
+    local scripts_keys=$5
+    local items_keys=$6
+    local quests_count=${7:-0}
+    local actions_count=${8:-0}
+    
+    mkdir -p "$I18N_DIR/status/categories"
+    
+    # Pobierz ostatnie 5 plików
+    local recent_files_json="[]"
+    if [ -f "$PROCESSED_FILE" ]; then
+        recent_files_json=$(tail -5 "$PROCESSED_FILE" 2>/dev/null | while read f; do
+            local fname=$(basename "$f" 2>/dev/null)
+            local ftime=$(date '+%H:%M:%S')
+            echo "{\"file\": \"$fname\", \"time\": \"$ftime\", \"status\": \"success\"}"
+        done | jq -s '.' 2>/dev/null || echo "[]")
+    fi
+    
+    # Główny status JSON
+    cat > "$I18N_DIR/status/worker_state.json" << EOF
+{
+  "schema_version": "2.0",
+  "last_updated": "$(date -Iseconds)",
+  "worker": {
+    "version": "4.0",
+    "status": "running",
+    "mode": "$MODE",
+    "cycle": $CYCLE_COUNT,
+    "files_per_cycle": $FILES_PER_CYCLE,
+    "pid": $$
+  },
+  "global_progress": {
+    "total_files_processed": $processed,
+    "total_files_excluded": $excluded,
+    "total_keys": $total_keys,
+    "total_languages": ${#LANGUAGES[@]},
+    "total_conflicts": $TOTAL_CONFLICTS
+  },
+  "categories": {
+    "npc": {"status": "completed", "keys": $npc_keys},
+    "scripts": {"status": "in_progress", "keys": $scripts_keys},
+    "items": {"status": "completed", "keys": $items_keys},
+    "monsters": {"status": "pending", "keys": 0},
+    "server": {"status": "pending", "keys": 0},
+    "spells": {"status": "pending", "keys": 0}
+  },
+  "recent_files": $recent_files_json
+}
+EOF
+
+    # Szczegóły kategorii scripts (aktywna)
+    cat > "$I18N_DIR/status/categories/scripts_details.json" << EOF
+{
+  "category": "scripts",
+  "status": "in_progress",
+  "last_updated": "$(date -Iseconds)",
+  "summary": {
+    "total_keys": $scripts_keys,
     "files_processed": $processed
   },
   "current_work": {

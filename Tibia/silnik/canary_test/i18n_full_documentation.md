@@ -5122,3 +5122,289 @@ Typ: php
 Typ: php
 
 ---
+
+## [2025-12-08 19:16:22] ANALIZA WEB
+
+### Plik: `html_copy/system/pages/bans.php`
+
+**Akcja:** Znaleziono 2 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:16:22] ANALIZA WEB
+
+### Plik: `html_copy/system/pages/monsters.php`
+
+**Akcja:** Znaleziono 1 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:16:24] ANALIZA WEB
+
+### Plik: `html_copy/system/pages/records.php`
+
+**Akcja:** Znaleziono 2 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:16:24] ANALIZA WEB
+
+### Plik: `html_copy/system/pages/highscores.php`
+
+**Akcja:** Znaleziono 1 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:16:25] ANALIZA WEB
+
+### Plik: `html_copy/system/pages/team.php`
+
+**Akcja:** Znaleziono 1 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:16:26] ANALIZA WEB
+
+### Plik: `html_copy/system/pages/news.php`
+
+**Akcja:** Znaleziono 1 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:16:26] ANALIZA WEB
+
+### Plik: `html_copy/system/pages/gallery.php`
+
+**Akcja:** Znaleziono 2 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:16:26] ANALIZA WEB
+
+### Plik: `html_copy/system/pages/characters.php`
+
+**Akcja:** Znaleziono 2 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:16:28] ANALIZA WEB
+
+### Plik: `html_copy/system/migrations/27-downloads.html`
+
+**Akcja:** Znaleziono 3 stringów
+
+**Szczegóły:**
+Typ: html
+
+---
+
+## [2025-12-08 19:16:28] ANALIZA WEB
+
+### Plik: `html_copy/system/migrations/27-commands.html`
+
+**Akcja:** Znaleziono 3 stringów
+
+**Szczegóły:**
+Typ: html
+
+---
+
+## [2025-12-08 19:16:59] ANALIZA WEB
+
+### Plik: `html_copy/vendor/composer/platform_check.php`
+
+**Akcja:** Znaleziono 1 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:17:00] ANALIZA WEB
+
+### Plik: `html_copy/install/steps/3-requirements.php`
+
+**Akcja:** Znaleziono 3 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:17:00] ANALIZA WEB
+
+### Plik: `html_copy/install/steps/1-welcome.php`
+
+**Akcja:** Znaleziono 1 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:17:00] ANALIZA WEB
+
+### Plik: `html_copy/install/includes/twig_error.html`
+
+**Akcja:** Znaleziono 1 stringów
+
+**Szczegóły:**
+Typ: html
+
+---
+
+## [2025-12-08 19:17:00] ANALIZA WEB
+
+### Plik: `html_copy/install/template/template.php`
+
+**Akcja:** Znaleziono 3 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:17:00] ANALIZA WEB
+
+### Plik: `html_copy/node_modules/lazy-ass/index.html`
+
+**Akcja:** Znaleziono 1 stringów
+
+**Szczegóły:**
+Typ: html
+
+---
+
+## [2025-12-08 19:17:01] ANALIZA WEB
+
+### Plik: `html_copy/phpmyadmin/examples/openid.php`
+
+**Akcja:** Znaleziono 2 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:17:01] ANALIZA WEB
+
+### Plik: `html_copy/phpmyadmin/examples/signon.php`
+
+**Akcja:** Znaleziono 2 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:17:02] ANALIZA WEB
+
+### Plik: `html_copy/tools/translation_manager.php`
+
+**Akcja:** Znaleziono 24 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:17:02] ANALIZA WEB
+
+### Plik: `html_copy/index.php`
+
+**Akcja:** Znaleziono 1 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:17:27] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 19:17:30] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44449
+
+---
+
+## [2025-12-08 19:19:45] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 19:19:47] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44449
+
+---
+
+## [2025-12-08 19:22:02] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 19:22:03] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44449
+
+---

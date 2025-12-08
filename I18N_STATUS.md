@@ -8,9 +8,9 @@
 
 | Komponent | Status |
 |-----------|--------|
-| **Worker** | 🟢 Running (PID: 1818402) |
+| **Worker** | 🔴 Stopped (PID: 1818402) |
 | **Guardian** | 🟢 Active (sprawdza co 1 min) |
-| **Cykl** | #21 |
+| **Cykl** | #23 |
 | **Restarty** | 1 |
 
 ## 📊 Aktualny postęp
@@ -18,7 +18,7 @@
 ![NPC Migration](https://img.shields.io/badge/NPC-43.6%25-orange?style=for-the-badge&logo=lua)
 ![Keys](https://img.shields.io/badge/Keys-43641-blue?style=for-the-badge&logo=json)
 ![Speed](https://img.shields.io/badge/Speed-1.2_NPC%2Fmin-purple?style=for-the-badge&logo=speedtest)
-![Worker](https://img.shields.io/badge/Worker-green-green?style=for-the-badge)
+![Worker](https://img.shields.io/badge/Worker-red-red?style=for-the-badge)
 
 ## 📈 Progress Bar
 
@@ -37,11 +37,11 @@
 | **Klucze i18n** | `43641` |
 | **Języki** | 5 (🇬🇧 en, 🇵🇱 pl, 🇩🇪 de, 🇪🇸 es, 🇧🇷 pt) |
 | **Prędkość** | ~`1.2` NPC/min |
-| **Czas pracy** | 351min |
+| **Czas pracy** | 352min |
 | **Start** | 11:42 |
 | **ETA** | ~482 min |
 | **Błędy** | 0 |
-| **Cykl** | #21 |
+| **Cykl** | #23 |
 
 ## 📁 Ostatnio zmodyfikowane NPC
 
@@ -59,7 +59,7 @@
 ## 🔧 Status Workera
 
 ```
-[2025-12-08 17:34:00] [INFO] 📦 FAZA 1: MIGRACJA NPC
+[2025-12-08 17:35:20] [INFO] 📊 RAPORT CYKLU #24
 ```
 
 ## 🛡️ Zabezpieczenia
@@ -74,8 +74,8 @@
 
 | 🕐 Czas | 📅 Data |
 |---------|---------|
-| **UTC:** | 2025-12-08 16:34:03 UTC |
-| **Local:** | 17:34:03 |
+| **UTC:** | 2025-12-08 16:36:03 UTC |
+| **Local:** | 17:36:03 |
 
 ---
 

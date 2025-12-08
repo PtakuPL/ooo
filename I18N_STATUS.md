@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-08 20:19:50 UTC  
+> **Aktualizacja:** 2025-12-08 20:23:52 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -23,10 +23,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **931** | ↑ |
 | ⏭️ Plików wykluczonych | **4632** | - |
-| 🔑 Kluczy i18n | **41734** | ↑ |
+| 🔑 Kluczy i18n | **42050** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#35** | - |
+| 🔄 Cykl | **#41** | - |
 
 ---
 
@@ -61,7 +61,7 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #35 |
+| 🔄 Cykl | #41 |
 
 ### 📁 Podkatalogi - Postęp
 
@@ -118,7 +118,7 @@ creature:say("text")
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 0 |
+| 🔑 Kluczy | 100 |
 | 📊 Status | ⏳ Oczekuje |
 | 📅 Start | Po zakończeniu Scripts |
 
@@ -131,7 +131,7 @@ creature:say("text")
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 0 |
+| 🔑 Kluczy | 116 |
 | 📊 Status | ⏳ Oczekuje |
 | ⚠️ Wymaga | Rekompilacja serwera |
 
@@ -144,7 +144,7 @@ creature:say("text")
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 0 |
+| 🔑 Kluczy | 100 |
 | 📊 Status | ⏳ Oczekuje |
 
 </details>
@@ -155,7 +155,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 2710197, Cykl #35 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 2710197, Cykl #41 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

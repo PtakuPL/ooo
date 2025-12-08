@@ -90,7 +90,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "spectulus") then
 		if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 1 then
-			npcHandler:say("Gesundheit! Are you alright? Did you... want to tell me something by that?", npc, creature)
+			npcHandler:sayLocalized("npc.jack.gesundheit_are_you_1", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 3 then
 			if npcHandler:getTopic(playerId) == 3 then
@@ -103,13 +103,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "furniture") then
 		if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 3 then
-			npcHandler:say("What have you done? What are all these pieces of furniture doing here? Those are ugly at best and - hey! Stop! Leave the wallpaper alone! Alright, alright! Just tell me, why are you doing this? Who's behind all this?", npc, creature)
+			npcHandler:sayLocalized("npc.jack.what_have_you_2", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "no") then
 		if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 10 then
 			if npcHandler:getTopic(playerId) == 0 then
-				npcHandler:say("WHAT?? No way, I ask you again - you DID tell me the TRUTH here... right?", npc, creature)
+				npcHandler:sayLocalized("npc.jack.what_no_way_3", npc, creature)
 				npcHandler:setTopic(playerId, 5)
 			elseif npcHandler:getTopic(playerId) == 5 then
 				npcHandler:say({
@@ -140,10 +140,10 @@ local function creatureSayCallback(npc, creature, type, message)
 
 		if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 10 then
 			if npcHandler:getTopic(playerId) == 0 then
-				npcHandler:say("So that's it? Really?", npc, creature)
+				npcHandler:sayLocalized("npc.jack.so_thats_it_4", npc, creature)
 				npcHandler:setTopic(playerId, 6)
 			elseif npcHandler:getTopic(playerId) == 6 then
-				npcHandler:say("Yeah, yeah... so what are you still doing here? I guess I... will have to seek out this Spectulus now, see what he has to say. There is nothing left for me in this place.", npc, creature)
+				npcHandler:sayLocalized("npc.jack.yeah_yeah_so_5", npc, creature)
 				player:addAchievement("You Don't Know Jack")
 				player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine, 11)
 				player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.LastMissionState, 2)
@@ -162,7 +162,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 8 then
-			npcHandler:say("I... was... sculpting sulky sculptures. For all my life. Until you came in here and DESTROYED MY MASTERPIECE. Go away. I don't like you.", npc, creature)
+			npcHandler:sayLocalized("npc.jack.i_was_sculpting_6", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

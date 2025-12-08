@@ -87,23 +87,23 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "mystery") then
-		npcHandler:say("The minotaurs I faced in the cave are much stronger than the normal ones. What I were able to see before I had to flee: all of them seem to belong to a cult worshipping their god. Could you do me a {favour}?", npc, creature)
+		npcHandler:sayLocalized("npc.jamesfrancis.the_minotaurs_i_1", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "favour") and npcHandler:getTopic(playerId) == 2 then
-		npcHandler:say("I'd like to work in this cave researching the minotaurs. But right now there are too many of hem and what is more, they are too powerful for me. Could you enter the cave and kill at least 50 of these creatures?", npc, creature)
+		npcHandler:sayLocalized("npc.jamesfrancis.id_like_to_2", npc, creature)
 		npcHandler:setTopic(playerId, 3)
 	elseif MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.JamesfrancisTask) >= 50 then
-			npcHandler:say("Great job! You have killed at least 50 of these monsters. I give this key to you to open the door to the inner area. Go there and find out what's going on.", npc, creature)
+			npcHandler:sayLocalized("npc.jamesfrancis.great_job_you_3", npc, creature)
 			player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.Mission, 3)
 			player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.BossAccessDoor, 1)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("Come back when you have killed enough minotaurs.", npc, creature)
+			npcHandler:sayLocalized("npc.jamesfrancis.come_back_when_4", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 3 then
-		npcHandler:say("Very nice. Return to me if you've finished your job.", npc, creature)
+		npcHandler:sayLocalized("npc.jamesfrancis.very_nice_return_5", npc, creature)
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.Mission, 2)
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.JamesfrancisTask, 0)
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.AccessDoor, 1)

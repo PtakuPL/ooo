@@ -59,16 +59,16 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "trouble") and player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.TimGuard) < 1 and player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission01) ~= -1 then
-		npcHandler:say("Ah, well. Just this morning my new toothbrush fell into the toilet.", npc, creature)
+		npcHandler:sayLocalized("npc.tim_the_guard.ah_well_just_1", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "authorities") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("What do you mean? Of course they will immediately send someone with extra long and thin arms to retrieve it! ", npc, creature)
+			npcHandler:sayLocalized("npc.tim_the_guard.what_do_you_2", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "avoided") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Your humour might let end you up beaten in some dark alley, you know? No, I don't think someone could have prevented that accident! ", npc, creature)
+			npcHandler:sayLocalized("npc.tim_the_guard.your_humour_might_3", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "gods would allow") then

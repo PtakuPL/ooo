@@ -91,11 +91,11 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(TheNewFrontier.Mission02.Beaver1) == 1 and player:getStorageValue(TheNewFrontier.Mission02.Beaver2) == 1 and player:getStorageValue(TheNewFrontier.Mission02.Beaver3) == 1 then
-			npcHandler:say("Yes, I can hear them even from here. It has to be a legion of beavers! I'll send the men to get the wood as soon as their gnawing frenzy has settled! You can report to Ongulf that men and wood will be on their way!", npc, creature)
+			npcHandler:sayLocalized("npc.melfar.yes_i_can_1", npc, creature)
 			player:setStorageValue(TheNewFrontier.Questline, 6)
 			player:setStorageValue(TheNewFrontier.Mission02[1], 3) --Questlog, The New Frontier Quest "Mission 02: From Kazordoon With Love"
 		else
-			npcHandler:say("If you place the beaver bait on trees on some strategic locations, we could let the beavers do the work and later on, I'll send men to get the fallen trees.", npc, creature)
+			npcHandler:sayLocalized("npc.melfar.if_you_place_2", npc, creature)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
@@ -114,19 +114,19 @@ local function creatureSayCallback(npc, creature, type, message)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if player:removeMoneyBank(100) then
 				player:addItem(9843, 1)
-				npcHandler:say("Here you go.", npc, creature)
+				npcHandler:sayLocalized("npc.melfar.here_you_go_3", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You dont have enough of gold coins.", npc, creature)
+				npcHandler:sayLocalized("npc.melfar.you_dont_have_4", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif MsgContains(message, "buy flask") or MsgContains(message, "flask") then
 		if player:getStorageValue(TheNewFrontier.Questline) == 5 then
-			npcHandler:say("You want to buy a Flask with Beaver Bait for 100 gold coins?", npc, creature)
+			npcHandler:sayLocalized("npc.melfar.you_want_to_5", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		else
-			npcHandler:say("Im out of stock.", npc, creature)
+			npcHandler:sayLocalized("npc.melfar.im_out_of_6", npc, creature)
 		end
 	end
 	return true

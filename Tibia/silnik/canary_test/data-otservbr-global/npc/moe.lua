@@ -68,44 +68,44 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "help") then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourth.Moe) == 1 then
-			npcHandler:say("I guess I could do this, yes. But I have to impose a condition. If you bring me ten sphinx feathers I will steal this ring for you.", npc, creature)
+			npcHandler:sayLocalized("npc.moe.i_guess_i_1", npc, creature)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourth.Moe, 2)
 		end
 	elseif MsgContains(message, "feathers") then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourth.Moe) == 2 then
 			if player:getItemById(31437, 10) then
-				npcHandler:say("Thank you! They look so pretty, I'm very pleased. Agreed, now I will steal the ring from the Ambassador of Rathleton. Just be patient, I have to wait for a good moment.", npc, creature)
+				npcHandler:sayLocalized("npc.moe.thank_you_they_2", npc, creature)
 				player:removeItem(31437, 10)
 				player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourth.Moe, 3)
 				player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourth.MoeTimer, os.time() + 60 * 60)
 			else
-				npcHandler:say("If you bring me ten sphinx feathers, I will steal this ring for you.", npc, creature)
+				npcHandler:sayLocalized("npc.moe.if_you_bring_3", npc, creature)
 			end
 		else
-			npcHandler:say("You already delivered the feathers. Be patient while I steal the ring.", npc, creature)
+			npcHandler:sayLocalized("npc.moe.you_already_delivered_4", npc, creature)
 		end
 	elseif MsgContains(message, "ring") then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourth.Moe) == 3 then
 			local timeLeft = player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourth.MoeTimer) - os.time()
 			if timeLeft <= 0 then
-				npcHandler:say("You're arriving at the right time. I have the ring you asked for. It was not too difficult. I just had to wait until the Ambassador left his residence and then I climbed in through the window. Here it is.", npc, creature)
+				npcHandler:sayLocalized("npc.moe.youre_arriving_at_5", npc, creature)
 				player:addItem(31306, 1)
 				player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourth.Moe, 4)
 			else
-				npcHandler:say("I will steal it, promised. I'm just waiting for a good moment.", npc, creature)
+				npcHandler:sayLocalized("npc.moe.i_will_steal_6", npc, creature)
 			end
 		elseif player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourth.Moe) == 1 then
-			npcHandler:say("I guess I could do this, yes. But I have to impose a condition. If you bring me ten sphinx feathers I will steal this ring for you.", npc, creature)
+			npcHandler:sayLocalized("npc.moe.i_guess_i_7", npc, creature)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourth.Moe, 2)
 		else
-			npcHandler:say("You don't need this ring anymore.", npc, creature)
+			npcHandler:sayLocalized("npc.moe.you_dont_need_8", npc, creature)
 		end
 	elseif MsgContains(message, "lyre") then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Lyre) == 1 then
-			npcHandler:say("I'm upset to accuse myself, the lyre is hidden in a tomb west of Kilmaresh.", npc, creature)
+			npcHandler:sayLocalized("npc.moe.im_upset_to_9", npc, creature)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Lyre, 2)
 		else
-			npcHandler:say("You already know about the lyre's location.", npc, creature)
+			npcHandler:sayLocalized("npc.moe.you_already_know_10", npc, creature)
 		end
 	end
 

@@ -59,16 +59,16 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "trouble") and npcHandler:getTopic(playerId) ~= 3 and player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.MilesGuard) < 1 and player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission01) ~= -1 then
-		npcHandler:say("I'm fine. There's no trouble at all.", npc, creature)
+		npcHandler:sayLocalized("npc.miles_the_guard.im_fine_theres_1", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "foresight of the authorities") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say("Well, of course. We live in safety and peace.", npc, creature)
+		npcHandler:sayLocalized("npc.miles_the_guard.well_of_course_2", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "also for the gods") and npcHandler:getTopic(playerId) == 2 then
-		npcHandler:say("I think the gods are looking after us and their hands shield us from evil.", npc, creature)
+		npcHandler:sayLocalized("npc.miles_the_guard.i_think_the_3", npc, creature)
 		npcHandler:setTopic(playerId, 3)
 	elseif MsgContains(message, "trouble will arise in the near future") and npcHandler:getTopic(playerId) == 3 then
-		npcHandler:say("I think the gods and the government do their best to keep away harm from the citizens.", npc, creature)
+		npcHandler:sayLocalized("npc.miles_the_guard.i_think_the_4", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 		if player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.MilesGuard) < 1 then
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.MilesGuard, 1)

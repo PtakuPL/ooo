@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-09 00:24:30 UTC  
+> **Aktualizacja:** 2025-12-09 00:26:43 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **946** | ↑ |
+| 📁 Plików przetworzonych | **487** | ↑ |
 | ⏭️ Plików wykluczonych | **4895** | - |
 | 🔑 Kluczy i18n | **42109** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **58** | ✓ |
-| 🔄 Cykl | **#10** | - |
+| 🔄 Cykl | **#11** | - |
 
 ---
 
@@ -78,9 +78,9 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #10` |
+| **Plik** | `Cykl #11` |
 | **Szczegóły** | NPC:4108 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-09 00:23:59 |
+| **Ostatnia aktualizacja** | 2025-12-09 00:26:06 |
 
 ### 📈 Statystyki sesji
 
@@ -124,7 +124,7 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #10 |
+| 🔄 Cykl | #11 |
 
 ### 📁 Podkatalogi - Postęp
 
@@ -149,16 +149,16 @@ selfSay("text")
 
 | Plik | Czas | Status |
 |------|------|--------|
-| `tefrit.lua` | 22:35:22 | ✅ |
-| `saideh.lua` | 22:35:28 | ✅ |
-| `tigo.lua` | 22:35:31 | ✅ |
-| `kallimae.lua` | 22:35:38 | ✅ |
-| `yonan.lua` | 22:35:43 | ✅ |
+| `game_questlog.html` | 00:47:08 | ✅ |
+| `#displayUIPickReward.html` | 00:47:08 | ✅ |
+| `game_rewardwall.html` | 00:47:08 | ✅ |
+| `status.php` | 00:47:08 | ✅ |
+| `updater.php` | 00:47:08 | ✅ |
 
 ### 💻 Przykład kodu (ostatni plik)
 
 ```lua
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.",
+
 ```
 
 **Wzorce ekstrakcji:**
@@ -225,7 +225,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 1439815, Cykl #10 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 1439815, Cykl #11 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

@@ -131,6 +131,140 @@ EOF
 }
 
 #===============================================================================
+# ZARZĄDZANIE PLANEM PRACY (CHECKLIST)
+#===============================================================================
+WORK_PLAN="$I18N_DIR/work_plan.json"
+
+# Pobierz aktualną fazę
+get_current_phase() {
+    jq -r '.current_phase // 1' "$WORK_PLAN" 2>/dev/null || echo "1"
+}
+
+# Pobierz aktualną kategorię
+get_current_category() {
+    jq -r '.current_category // "npc"' "$WORK_PLAN" 2>/dev/null || echo "npc"
+}
+
+# Pobierz nazwę fazy
+get_phase_name() {
+    local phase_id="$1"
+    jq -r ".phases[] | select(.id == $phase_id) | .display" "$WORK_PLAN" 2>/dev/null || echo "Unknown"
+}
+
+# Sprawdź czy kategoria jest zakończona
+is_category_completed() {
+    local category="$1"
+    local phase=$(get_current_phase)
+    local status=$(jq -r ".phases[] | select(.id == $phase) | .categories[] | select(.id == \"$category\") | .status" "$WORK_PLAN" 2>/dev/null)
+    [ "$status" == "completed" ]
+}
+
+# Aktualizuj postęp kategorii
+update_category_progress() {
+    local category="$1"
+    local keys="$2"
+    local files="$3"
+    local phase=$(get_current_phase)
+    
+    # Aktualizuj JSON
+    local tmp=$(mktemp)
+    jq --arg cat "$category" --argjson keys "$keys" --argjson files "$files" --argjson phase "$phase" '
+        .phases |= map(
+            if .id == $phase then
+                .categories |= map(
+                    if .id == $cat then
+                        .keys_extracted = $keys |
+                        .files_processed = $files |
+                        (if $keys >= .target_keys then .status = "completed" else .status = "in_progress" end)
+                    else . end
+                )
+            else . end
+        )
+    ' "$WORK_PLAN" > "$tmp" 2>/dev/null && mv "$tmp" "$WORK_PLAN"
+}
+
+# Przejdź do następnej kategorii
+advance_to_next_category() {
+    local phase=$(get_current_phase)
+    local current=$(get_current_category)
+    
+    # Znajdź następną niezakończoną kategorię w tej fazie
+    local next=$(jq -r ".phases[] | select(.id == $phase) | .categories[] | select(.status != \"completed\") | .id" "$WORK_PLAN" 2>/dev/null | head -1)
+    
+    if [ -n "$next" ] && [ "$next" != "null" ]; then
+        # Jest jeszcze kategoria do zrobienia
+        jq --arg cat "$next" '.current_category = $cat' "$WORK_PLAN" > /tmp/wp.json && mv /tmp/wp.json "$WORK_PLAN"
+        log_info "➡️ Przechodzę do kategorii: $next"
+        return 0
+    else
+        # Wszystkie kategorie w fazie zakończone - przejdź do następnej fazy
+        local next_phase=$((phase + 1))
+        local max_phases=$(jq -r '.total_phases' "$WORK_PLAN" 2>/dev/null || echo "4")
+        
+        if [ "$next_phase" -le "$max_phases" ]; then
+            # Znajdź pierwszą kategorię w nowej fazie
+            local first_cat=$(jq -r ".phases[] | select(.id == $next_phase) | .categories[0].id" "$WORK_PLAN" 2>/dev/null)
+            jq --argjson phase "$next_phase" --arg cat "$first_cat" '
+                .current_phase = $phase | 
+                .current_category = $cat |
+                .phases |= map(if .id == ($phase - 1) then .status = "completed" else . end) |
+                .phases |= map(if .id == $phase then .status = "in_progress" else . end) |
+                .completed_phases = ($phase - 1)
+            ' "$WORK_PLAN" > /tmp/wp.json && mv /tmp/wp.json "$WORK_PLAN"
+            log_success "🎉 FAZA $phase ZAKOŃCZONA! Przechodzę do fazy $next_phase"
+            return 0
+        else
+            # Wszystkie fazy zakończone
+            log_success "🏆 WSZYSTKIE FAZY ZAKOŃCZONE!"
+            return 1
+        fi
+    fi
+}
+
+# Pobierz katalogi dla aktualnej kategorii
+get_current_directories() {
+    local phase=$(get_current_phase)
+    local category=$(get_current_category)
+    jq -r ".phases[] | select(.id == $phase) | .categories[] | select(.id == \"$category\") | .directories[]" "$WORK_PLAN" 2>/dev/null
+}
+
+# Generuj checklist do statusu
+generate_checklist() {
+    local output=""
+    local phases=$(jq -r '.phases | length' "$WORK_PLAN" 2>/dev/null || echo "4")
+    
+    for ((p=1; p<=phases; p++)); do
+        local phase_name=$(jq -r ".phases[] | select(.id == $p) | .display" "$WORK_PLAN" 2>/dev/null)
+        local phase_status=$(jq -r ".phases[] | select(.id == $p) | .status" "$WORK_PLAN" 2>/dev/null)
+        local phase_icon="⏳"
+        [ "$phase_status" == "completed" ] && phase_icon="✅"
+        [ "$phase_status" == "in_progress" ] && phase_icon="🔄"
+        
+        output+="### $phase_icon Faza $p: $phase_name\n\n"
+        
+        # Kategorie w fazie
+        local categories=$(jq -r ".phases[] | select(.id == $p) | .categories[] | \"\(.icon) \(.name)|\(.status)|\(.keys_extracted)|\(.target_keys)\"" "$WORK_PLAN" 2>/dev/null)
+        
+        if [ -n "$categories" ]; then
+            output+="| Kategoria | Status | Postęp | Cel |\n"
+            output+="|-----------|--------|--------|-----|\n"
+            
+            while IFS='|' read -r name status keys target; do
+                local status_icon="⏳"
+                [ "$status" == "completed" ] && status_icon="✅"
+                [ "$status" == "in_progress" ] && status_icon="🔄"
+                local pct=0
+                [ "$target" -gt 0 ] 2>/dev/null && pct=$((keys * 100 / target))
+                output+="| $name | $status_icon | $keys/$target ($pct%) | $target |\n"
+            done <<< "$categories"
+        fi
+        output+="\n"
+    done
+    
+    echo -e "$output"
+}
+
+#===============================================================================
 # INICJALIZACJA
 #===============================================================================
 init_all() {
@@ -140,7 +274,7 @@ init_all() {
     # Utwórz katalogi dla wszystkich 53 języków
     for lang in "${LANGUAGES[@]}"; do
         mkdir -p "$I18N_DIR/$lang"
-        for cat in npc scripts actions quests events server ui messages errors items spells; do
+        for cat in npc scripts actions quests events server ui messages errors items spells monsters; do
             [ ! -f "$I18N_DIR/$lang/${cat}.json" ] && echo "{}" > "$I18N_DIR/$lang/${cat}.json"
         done
     done
@@ -148,6 +282,9 @@ init_all() {
     [ ! -f "$EXCLUDED_FILE" ] && touch "$EXCLUDED_FILE"
     [ ! -f "$PROCESSED_FILE" ] && touch "$PROCESSED_FILE"
     [ ! -f "$CONFLICTS_FILE" ] && touch "$CONFLICTS_FILE"
+    
+    # Zainicjuj plan pracy jeśli nie istnieje
+    [ ! -f "$WORK_PLAN" ] && log_warn "⚠️ Brak planu pracy - utwórz i18n/work_plan.json"
     
     init_documentation
     
@@ -781,7 +918,16 @@ update_status() {
 
 ---
 
-## 📂 Kategorie Pracy
+## ✅ CHECKLIST - Plan Pracy
+
+> **Aktualna faza:** $(get_phase_name $(get_current_phase))  
+> **Aktualna kategoria:** $(get_current_category)
+
+$(generate_checklist)
+
+---
+
+## 📂 Szczegóły Kategorii
 
 <details>
 <summary><h3>🧙 1. NPC Dialogs - COMPLETED ✅</h3></summary>
@@ -1042,62 +1188,102 @@ main() {
     while true; do
         CYCLE_COUNT=$((CYCLE_COUNT + 1))
         
+        # Pobierz aktualną fazę i kategorię z planu pracy
+        local current_phase=$(get_current_phase)
+        local current_category=$(get_current_category)
+        local phase_name=$(get_phase_name "$current_phase")
+        
         echo ""
         log_info "═══════════════════════════════════════════════════════════════"
-        log_info "🔄 CYKL #$CYCLE_COUNT | Tryb: $MODE"
+        log_info "🔄 CYKL #$CYCLE_COUNT | Faza: $phase_name | Kategoria: $current_category"
         log_info "═══════════════════════════════════════════════════════════════"
+        
+        # Aktualizuj postęp w planie pracy na podstawie rzeczywistych danych
+        local npc_keys=$(jq 'length' "$I18N_DIR/en/npc.json" 2>/dev/null || echo "0")
+        local scripts_keys=$(jq 'length' "$I18N_DIR/en/scripts.json" 2>/dev/null || echo "0")
+        local items_keys=$(jq 'length' "$I18N_DIR/en/items.json" 2>/dev/null || echo "0")
+        local monsters_keys=$(jq 'length' "$I18N_DIR/en/monsters.json" 2>/dev/null || echo "0")
+        local spells_keys=$(jq 'length' "$I18N_DIR/en/spells.json" 2>/dev/null || echo "0")
+        local server_keys=$(jq 'length' "$I18N_DIR/en/server.json" 2>/dev/null || echo "0")
+        
+        # Aktualizuj plan pracy
+        update_category_progress "npc" "$npc_keys" "877"
+        update_category_progress "scripts" "$scripts_keys" "300"
+        update_category_progress "items" "$items_keys" "1"
+        update_category_progress "monsters" "$monsters_keys" "100"
+        update_category_progress "spells" "$spells_keys" "100"
+        update_category_progress "server_cpp" "$server_keys" "50"
         
         update_status
         
-        # Sprawdź czy są pliki do przetworzenia
-        local pending=0
-        for dir in "${SCAN_DIRS[@]}"; do
-            [ -d "$WORK_DIR/$dir" ] && pending=$((pending + $(find "$WORK_DIR/$dir" -maxdepth 3 -type f \( -name "*.lua" -o -name "*.cpp" -o -name "*.php" \) 2>/dev/null | wc -l)))
-        done
-        
-        local processed_count=$(wc -l < "$PROCESSED_FILE" 2>/dev/null | tr -d '[:space:]')
-        processed_count=${processed_count:-0}
-        local excluded_count=$(wc -l < "$EXCLUDED_FILE" 2>/dev/null | tr -d '[:space:]')
-        excluded_count=${excluded_count:-0}
-        local remaining=$((pending - processed_count - excluded_count))
-        
-        # Sprawdź czy są kategorie pending (monsters, server, spells)
-        local pending_categories=0
-        local monsters_keys=$(grep -c '"' "$WORK_DIR/i18n/en/monsters.json" 2>/dev/null | tr -d '[:space:]')
-        monsters_keys=${monsters_keys:-0}
-        local server_keys=$(grep -c '"' "$WORK_DIR/i18n/en/server.json" 2>/dev/null | tr -d '[:space:]')
-        server_keys=${server_keys:-0}
-        local spells_keys=$(grep -c '"' "$WORK_DIR/i18n/en/spells.json" 2>/dev/null | tr -d '[:space:]')
-        spells_keys=${spells_keys:-0}
-        
-        # Jeśli kategorie mają 0 kluczy, są pending
-        [[ "$monsters_keys" =~ ^[0-9]+$ ]] && [ "$monsters_keys" -lt 10 ] && pending_categories=$((pending_categories + 1))
-        [[ "$server_keys" =~ ^[0-9]+$ ]] && [ "$server_keys" -lt 10 ] && pending_categories=$((pending_categories + 1))
-        [[ "$spells_keys" =~ ^[0-9]+$ ]] && [ "$spells_keys" -lt 10 ] && pending_categories=$((pending_categories + 1))
-        
-        log_info "📊 Pozostało: $remaining plików, $pending_categories kategorii pending (M:$monsters_keys S:$server_keys SP:$spells_keys)"
-        
-        if [ "$remaining" -gt 0 ] || [ "$pending_categories" -gt 0 ]; then
-            MODE="migration"
-            process_files
+        # Sprawdź czy aktualna kategoria jest zakończona
+        if is_category_completed "$current_category"; then
+            log_success "✅ Kategoria $current_category ZAKOŃCZONA!"
             
-            # Jeśli są pending kategorie, przetwórz je
-            if [ "$pending_categories" -gt 0 ]; then
-                log_info "🔄 Przetwarzam pending kategorie..."
+            # Przejdź do następnej kategorii lub fazy
+            if ! advance_to_next_category; then
+                # Wszystkie fazy zakończone - tryb tłumaczeń
+                MODE="translations"
+                log_success "🏆 EKSTRAKCJA ZAKOŃCZONA! Przechodzę do tłumaczeń..."
+                
+                # Rozpocznij tłumaczenia
+                sync_translations
+                
+                log_info "💤 Tłumaczenia zsynchronizowane. Sprawdzam za 300 sekund..."
+                sleep 300
+                continue
+            fi
+            
+            # Pobierz nową kategorię
+            current_category=$(get_current_category)
+            current_phase=$(get_current_phase)
+        fi
+        
+        # Określ tryb na podstawie fazy
+        case "$current_phase" in
+            1|2|3) MODE="extraction" ;;
+            4) MODE="translations" ;;
+            *) MODE="analysis" ;;
+        esac
+        
+        log_info "📊 Faza $current_phase | Kategoria: $current_category | Tryb: $MODE"
+        
+        # Przetwarzaj pliki dla aktualnej kategorii
+        if [ "$MODE" == "extraction" ]; then
+            # Pobierz katalogi dla aktualnej kategorii
+            local dirs=$(get_current_directories)
+            
+            if [ -n "$dirs" ]; then
+                log_info "📂 Przetwarzam katalogi dla $current_category:"
+                for dir in $dirs; do
+                    log_info "   → $dir"
+                done
+                
+                process_files
+                
+                # Przetwórz pending kategorie jeśli potrzeba
                 process_pending_categories
             fi
             
             sync_translations
-        else
-            # Wszystko przetworzone - tryb analizy
-            MODE="analysis"
-            log_success "🎉 Wszystkie pliki i kategorie przetworzone! Tryb analizy..."
+        elif [ "$MODE" == "translations" ]; then
+            # Tryb tłumaczeń - synchronizuj wszystkie języki
+            log_info "🌍 Synchronizuję tłumaczenia dla ${#LANGUAGES[@]} języków..."
+            sync_translations
             
+            analyze_conflicts
+            validate_structure
+            
+            log_info "💤 Tłumaczenia zakończone. Sprawdzam za 300 sekund..."
+            sleep 300
+            continue
+        else
+            # Tryb analizy
             analyze_conflicts
             validate_structure
             sync_translations
             
-            log_info "💤 Pełna analiza zakończona. Sprawdzam ponownie za 120 sekund..."
+            log_info "💤 Analiza zakończona. Sprawdzam za 120 sekund..."
             sleep 120
             continue
         fi

@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-08 20:45:56 UTC  
+> **Aktualizacja:** 2025-12-08 20:49:26 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,11 +26,53 @@
 | 🔑 Kluczy i18n | **42050** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#20** | - |
+| 🔄 Cykl | **#2** | - |
 
 ---
 
-## 📂 Kategorie Pracy
+## ✅ CHECKLIST - Plan Pracy
+
+> **Aktualna faza:** 🎮 Canary Server  
+> **Aktualna kategoria:** scripts
+
+### 🔄 Faza 1: 🎮 Canary Server
+
+| Kategoria | Status | Postęp | Cel |
+|-----------|--------|--------|-----|
+| 🧙 NPC Dialogs | 🔄 | 4049/5000 (80%) | 5000 |
+| 📜 Lua Scripts | 🔄 | 713/1000 (71%) | 1000 |
+| 🎒 Items Database | 🔄 | 36972/40000 (92%) | 40000 |
+| 👹 Monsters | 🔄 | 100/500 (20%) | 500 |
+| ✨ Spells & Magic | 🔄 | 100/200 (50%) | 200 |
+| ⚙️ Server C++ | 🔄 | 116/300 (38%) | 300 |
+
+### ⏳ Faza 2: 🌐 Website (AAC)
+
+| Kategoria | Status | Postęp | Cel |
+|-----------|--------|--------|-----|
+| 🐘 PHP Backend | ⏳ | 0/500 (0%) | 500 |
+| 📄 HTML Views | ⏳ | 0/300 (0%) | 300 |
+| 📦 JavaScript | ⏳ | 0/100 (0%) | 100 |
+
+### ⏳ Faza 3: 📱 Instalka/Klient
+
+| Kategoria | Status | Postęp | Cel |
+|-----------|--------|--------|-----|
+| 🖥️ Client UI | ⏳ | 0/200 (0%) | 200 |
+| 💿 Installer | ⏳ | 0/50 (0%) | 50 |
+
+### ⏳ Faza 4: 🌍 Tłumaczenia
+
+| Kategoria | Status | Postęp | Cel |
+|-----------|--------|--------|-----|
+| 🇵🇱 Polski | ⏳ | null/null (0%) | null |
+| 🇩🇪 Niemiecki | ⏳ | null/null (0%) | null |
+| 🇪🇸 Hiszpański | ⏳ | null/null (0%) | null |
+| 🌐 Pozostałe (50) | ⏳ | null/null (0%) | null |
+
+---
+
+## 📂 Szczegóły Kategorii
 
 <details>
 <summary><h3>🧙 1. NPC Dialogs - COMPLETED ✅</h3></summary>
@@ -61,7 +103,7 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #20 |
+| 🔄 Cykl | #2 |
 
 ### 📁 Podkatalogi - Postęp
 
@@ -162,7 +204,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 3771730, Cykl #20 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 4012102, Cykl #2 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

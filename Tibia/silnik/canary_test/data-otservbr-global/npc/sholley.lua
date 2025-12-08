@@ -72,7 +72,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission15, 1)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("Already clicked the body on the house Roswitha ?", npc, creature)
+			npcHandler:sayLocalized("npc.sholley.already_clicked_the_1", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

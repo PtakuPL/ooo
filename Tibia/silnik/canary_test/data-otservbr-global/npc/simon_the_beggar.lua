@@ -84,30 +84,30 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "outfit") then
 		if player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit) == 6 then
 			if player:hasOutfit(player:getSex() == PLAYERSEX_FEMALE and 157 or 153) then
-				npcHandler:say("Haha, that beard is - well, not fake, but there's a trick behind it. I noticed people tend to be more generous towards a poor gramps. Want to know my trick?", npc, creature)
+				npcHandler:sayLocalized("npc.simon_the_beggar.haha_that_beard_1", npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			end
 		end
 	elseif MsgContains(message, "100 ape fur") then
-		npcHandler:say("Have you brought me the 100 pieces of ape fur and 20000 gold pieces?", npc, creature)
+		npcHandler:sayLocalized("npc.simon_the_beggar.have_you_brought_2", npc, creature)
 		npcHandler:setTopic(playerId, 3)
 	elseif MsgContains(message, "beard") then
 		if player:getSex() == PLAYERSEX_MALE then
 			if player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit) == 8 then
-				npcHandler:say("Hmm, I'm not done yet with your potion. But here, let me sprinkle a few drops of my own potion on your face... there you go. Now you just have to wait.", npc, creature)
+				npcHandler:sayLocalized("npc.simon_the_beggar.hmm_im_not_3", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit, 9)
 				player:setStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfitTimerAddon, os.time())
 			elseif player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit) == 9 then
 				local beggarOutfitTimer = player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfitTimerAddon)
 				if os.time() - beggarOutfitTimer >= 432000 then -- 5 dias em segundos
-					npcHandler:say("Aha! I can see it! Now that you've waited patiently without shaving, your beard is perfect! All thanks to my, err, potion. Yes. Goodbye!", npc, creature)
+					npcHandler:sayLocalized("npc.simon_the_beggar.aha_i_can_4", npc, creature)
 					player:setStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit, 10)
 					player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 					player:setStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarFirstAddonDoor, 1)
 					player:addOutfitAddon(153, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Hmm, it seems you need to wait a bit longer for the potion to take full effect. Please be patient.", npc, creature)
+					npcHandler:sayLocalized("npc.simon_the_beggar.hmm_it_seems_5", npc, creature)
 				end
 			end
 		end
@@ -115,20 +115,20 @@ local function creatureSayCallback(npc, creature, type, message)
 		if player:getSex() == PLAYERSEX_MALE and player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit) == 9 then
 			local beggarOutfitTimer = player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfitTimerAddon)
 			if os.time() - beggarOutfitTimer >= 432000 then
-				npcHandler:say("Aha! I can see it! Now that you've waited patiently without shaving, your beard is perfect! All thanks to my, err, potion. Yes. Goodbye!", npc, creature)
+				npcHandler:sayLocalized("npc.simon_the_beggar.aha_i_can_6", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit, 10)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 				player:setStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarFirstAddonDoor, 1)
 				player:addOutfitAddon(153, 1)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("Hmm, it seems you need to wait a bit longer for the potion to take full effect. Please be patient.", npc, creature)
+				npcHandler:sayLocalized("npc.simon_the_beggar.hmm_it_seems_7", npc, creature)
 			end
 		end
 	elseif MsgContains(message, "gypsy dress") then
 		if player:getSex() == PLAYERSEX_FEMALE then
 			if player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit) == 8 then
-				npcHandler:say("Oh, I'm sorry... I almost forgot! Okay, okay... here is your promised dress. I'm sure it will look so much better on you than on me- I mean, my, err, sister.", npc, creature)
+				npcHandler:sayLocalized("npc.simon_the_beggar.oh_im_sorry_8", npc, creature)
 				player:addOutfitAddon(157, 1)
 			end
 		end
@@ -151,7 +151,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 2)
 			end
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Great! Come back to me once you have the 100 pieces of ape fur and I'll do my part of the deal.", npc, creature)
+			npcHandler:sayLocalized("npc.simon_the_beggar.great_come_back_9", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit, 7)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
@@ -159,19 +159,19 @@ local function creatureSayCallback(npc, creature, type, message)
 				if player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarFirstAddonDoor) == -1 then
 					if player:getItemCount(5883) >= 100 and player:getMoney() + player:getBankBalance() >= 20000 then
 						if player:removeItem(5883, 100) and player:removeMoneyBank(20000) then
-							npcHandler:say("Ahh! Very good. I will start mixing the potion immediately. Come back later. Bye bye.", npc, creature)
+							npcHandler:sayLocalized("npc.simon_the_beggar.ahh_very_good_10", npc, creature)
 							player:setStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit, 8)
 							if player:getSex() == PLAYERSEX_MALE then
 								player:setStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfitTimerAddon, os.time())
 							end
 						else
-							npcHandler:say("You do not have all the required items.", npc, creature)
+							npcHandler:sayLocalized("npc.simon_the_beggar.you_do_not_11", npc, creature)
 						end
 					else
-						npcHandler:say("You do not have all the required items.", npc, creature)
+						npcHandler:sayLocalized("npc.simon_the_beggar.you_do_not_12", npc, creature)
 					end
 				else
-					npcHandler:say("It seems you already have this addon, don't you try to mock me son!", npc, creature)
+					npcHandler:sayLocalized("npc.simon_the_beggar.it_seems_you_13", npc, creature)
 				end
 			end
 			npcHandler:setTopic(playerId, 0)
@@ -180,11 +180,11 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	-- Second addon logic
 	if MsgContains(message, "addon") and player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit) == 10 then
-		npcHandler:say("No, no. Our deal is finished, no complaining now, I don't have time all day. And no, you can't have my staff.", npc, creature)
+		npcHandler:sayLocalized("npc.simon_the_beggar.no_no_our_14", npc, creature)
 		npcHandler:setTopic(playerId, 4)
 	elseif MsgContains(message, "staff") then
 		if npcHandler:getTopic(playerId) == 4 then
-			npcHandler:say("I said, no! Or well - I have a suggestion to make. Will you listen?", npc, creature)
+			npcHandler:sayLocalized("npc.simon_the_beggar.i_said_no_15", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "yes") then
@@ -196,7 +196,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		elseif npcHandler:getTopic(playerId) == 6 then
-			npcHandler:say("Good! Come back to me once you have retrieved my staff. Good luck.", npc, creature)
+			npcHandler:sayLocalized("npc.simon_the_beggar.good_come_back_16", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit, 11)
 			player:setStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarFirstAddonDoor, 1)
 			npcHandler:setTopic(playerId, 0)
@@ -204,26 +204,26 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "staff") and player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit) == 11 then
-		npcHandler:say("Did you bring my favourite staff??", npc, creature)
+		npcHandler:sayLocalized("npc.simon_the_beggar.did_you_bring_17", npc, creature)
 		npcHandler:setTopic(playerId, 7)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 7 then
 			if player:isPremium() then
 				if player:getItemCount(6107) >= 1 then
 					if player:removeItem(6107, 1) then
-						npcHandler:say("Yes!! That's it! I'm so glad! Here, you can have my other one. Thanks!", npc, creature)
+						npcHandler:sayLocalized("npc.simon_the_beggar.yes_thats_it_18", npc, creature)
 						player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 						player:setStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarSecondAddon, 2)
 						player:addOutfitAddon(153, 2)
 						player:addOutfitAddon(157, 2)
 					else
-						npcHandler:say("You do not have the staff.", npc, creature)
+						npcHandler:sayLocalized("npc.simon_the_beggar.you_do_not_19", npc, creature)
 					end
 				else
-					npcHandler:say("You do not have the staff.", npc, creature)
+					npcHandler:sayLocalized("npc.simon_the_beggar.you_do_not_20", npc, creature)
 				end
 			else
-				npcHandler:say("Sorry, but you need to have a premium account!", npc, creature)
+				npcHandler:sayLocalized("npc.simon_the_beggar.sorry_but_you_21", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		end
@@ -231,16 +231,16 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "cookie") then
 		if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 31 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.CookieDelivery.SimonTheBeggar) ~= 1 then
-			npcHandler:say("Have you brought a cookie for the poor?", npc, creature)
+			npcHandler:sayLocalized("npc.simon_the_beggar.have_you_brought_22", npc, creature)
 			npcHandler:setTopic(playerId, 8)
 		end
 	elseif MsgContains(message, "help") then
-		npcHandler:say("I need gold. Can you spare 100 gold pieces for me?", npc, creature)
+		npcHandler:sayLocalized("npc.simon_the_beggar.i_need_gold_23", npc, creature)
 		npcHandler:setTopic(playerId, 9)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 8 then
 			if not player:removeItem(130, 1) then
-				npcHandler:say("You have no cookie that I'd like.", npc, creature)
+				npcHandler:sayLocalized("npc.simon_the_beggar.you_have_no_24", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -259,15 +259,15 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:resetNpc(creature)
 		elseif npcHandler:getTopic(playerId) == 9 then
 			if not player:removeMoneyBank(100) then
-				npcHandler:say("You haven't got enough money for me.", npc, creature)
+				npcHandler:sayLocalized("npc.simon_the_beggar.you_havent_got_25", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
-			npcHandler:say("Thank you very much. Can you spare 500 more gold pieces for me? I will give you a nice hint.", npc, creature)
+			npcHandler:sayLocalized("npc.simon_the_beggar.thank_you_very_26", npc, creature)
 			npcHandler:setTopic(playerId, 10)
 		elseif npcHandler:getTopic(playerId) == 10 then
 			if not player:removeMoneyBank(500) then
-				npcHandler:say("Sorry, that's not enough.", npc, creature)
+				npcHandler:sayLocalized("npc.simon_the_beggar.sorry_thats_not_27", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -278,7 +278,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 11)
 		elseif npcHandler:getTopic(playerId) == 11 then
 			if not player:removeMoneyBank(200) then
-				npcHandler:say("Pah! I said 200 gold. You don't have that much.", npc, creature)
+				npcHandler:sayLocalized("npc.simon_the_beggar.pah_i_said_28", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -286,7 +286,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if key then
 				key:setActionId(3940)
 			end
-			npcHandler:say("Now you own the hot key.", npc, creature)
+			npcHandler:sayLocalized("npc.simon_the_beggar.now_you_own_29", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

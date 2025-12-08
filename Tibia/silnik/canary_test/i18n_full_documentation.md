@@ -6849,3 +6849,47 @@ Duplikaty, błędy składni, brakujące tłumaczenia
 Klucze i18n: 44827
 
 ---
+
+## [2025-12-08 23:10:26] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 23:10:28] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44827
+
+---
+
+## [2025-12-08 23:12:36] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 23:12:38] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44827
+
+---

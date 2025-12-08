@@ -8,7 +8,7 @@ function gnomeOrdnance.onStepIn(creature, position, fromPosition, toPosition)
 
 	if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Ordnance) == 1 then
 		player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Ordnance, 2)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You started an escort, get everyone to safety!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_gnome_ordnance.msg_1")
 	end
 	return true
 end

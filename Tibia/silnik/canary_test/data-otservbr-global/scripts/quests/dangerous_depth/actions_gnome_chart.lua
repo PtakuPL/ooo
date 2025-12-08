@@ -18,7 +18,7 @@ function dangerousDepthChart.onUse(player, item, isHotkey)
 			if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.OldGate) < 1 then
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.OldGate, 1)
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.ChartingCount, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.ChartingCount) + 1)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You charted the location and dimensions of a strange structure, an ancient gate.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gnome_chart.msg_1")
 				player:getPosition():sendMagicEffect(CONST_ME_HITAREA)
 			end
 		end
@@ -26,7 +26,7 @@ function dangerousDepthChart.onUse(player, item, isHotkey)
 			if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LostRuin) < 1 then
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LostRuin, 1)
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.ChartingCount, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.ChartingCount) + 1)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You charted the location and dimensions of a strange structure, a small ruin.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gnome_chart.msg_2")
 				player:getPosition():sendMagicEffect(CONST_ME_HITAREA)
 			end
 		end
@@ -34,7 +34,7 @@ function dangerousDepthChart.onUse(player, item, isHotkey)
 			if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.TheGaze) < 1 then
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.TheGaze, 1)
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.ChartingCount, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.ChartingCount) + 1)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You charted the location and dimensions of a strange structure, resembling a stone face.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gnome_chart.msg_3")
 				player:getPosition():sendMagicEffect(CONST_ME_HITAREA)
 			end
 		end
@@ -42,7 +42,7 @@ function dangerousDepthChart.onUse(player, item, isHotkey)
 			if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Outpost) < 1 then
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Outpost, 1)
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.ChartingCount, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.ChartingCount) + 1)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You charted the location and dimensions of a strange structure, an outpost.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gnome_chart.msg_4")
 				player:getPosition():sendMagicEffect(CONST_ME_HITAREA)
 			end
 		end
@@ -50,7 +50,7 @@ function dangerousDepthChart.onUse(player, item, isHotkey)
 			if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Bastion) < 1 then
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Bastion, 1)
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.ChartingCount, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.ChartingCount) + 1)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You charted the location and dimensions of a strange structure, a bastion.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gnome_chart.msg_5")
 				player:getPosition():sendMagicEffect(CONST_ME_HITAREA)
 			end
 		end
@@ -58,7 +58,7 @@ function dangerousDepthChart.onUse(player, item, isHotkey)
 			if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.BrokenTower) < 1 then
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.BrokenTower, 1)
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.ChartingCount, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.ChartingCount) + 1)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You charted the location and dimensions of a strange structure, a broken tower.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gnome_chart.msg_6")
 				player:getPosition():sendMagicEffect(CONST_ME_HITAREA)
 			end
 		end

@@ -27,7 +27,7 @@ function teleportEvent.onUse(player, item, fromPosition, target, toPosition, isH
 
 	local access = player:kv():scoped("rotten-blood-quest"):get("access") or 0
 	if access < 5 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You should pay respect to the Bloodshade guarding this realm before entering.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_entrances.msg_1")
 		player:teleportTo(fromPosition, true)
 		return false
 	end
@@ -62,7 +62,7 @@ function bakragoreEntrance.onUse(player, item, fromPosition, target, toPosition,
 	end
 
 	if player:getLevel() < 250 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need at least level 250 to enter.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_entrances.msg_2")
 		player:teleportTo(fromPosition, true)
 		return false
 	end
@@ -76,7 +76,7 @@ function bakragoreEntrance.onUse(player, item, fromPosition, target, toPosition,
 	end
 
 	if text ~= "" then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You still need to defeat: " .. text)
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_entrances.msg_3" .. text)
 		player:teleportTo(fromPosition, true)
 		return false
 	end

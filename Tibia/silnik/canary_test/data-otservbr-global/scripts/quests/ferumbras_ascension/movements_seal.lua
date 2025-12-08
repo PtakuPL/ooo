@@ -70,7 +70,7 @@ function seal.onStepIn(creature, item, position, fromPosition)
 		local minutes = math.floor((remainingTime % 3600) / 60)
 		player:teleportTo(setting.backPosition)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need to wait for time to pass for this boss again.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_seal.msg_1")
 		return true
 	end
 
@@ -89,7 +89,7 @@ function seal.onStepIn(creature, item, position, fromPosition)
 			local pos = position
 			pos.y = pos.y + 2
 			player:teleportTo(pos)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You not proven your worth. There is no escape for you here.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_seal.msg_2")
 			item:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			return true
 		end
@@ -108,12 +108,12 @@ function seal.onStepIn(creature, item, position, fromPosition)
 			local pos = position
 			pos.y = pos.y + 2
 			player:teleportTo(pos)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You not proven your worth. There is no escape for you here.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_seal.msg_3")
 			item:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			return true
 		end
 	elseif item.actionid == 24846 then -- Ferumbras Mortal Shell
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The portal leads you to the final challenge.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_seal.msg_4")
 	end
 
 	player:teleportTo(setting.toPosition)

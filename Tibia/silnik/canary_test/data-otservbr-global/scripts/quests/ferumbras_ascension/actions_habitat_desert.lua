@@ -384,7 +384,7 @@ function ferumbrasAscendantHabitatDesert.onUse(player, item, fromPosition, targe
 		end
 		player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Habitats.Desert, 1)
 		player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Habitats.AllHabitats, player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Habitats.AllHabitats) + 1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The room transforms into a completely different landscape.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_habitat_desert.msg_1")
 		if player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Habitats.AllHabitats) >= 7 then
 			addEvent(function()
 				resetFerumbrasAscendantHabitats(player)

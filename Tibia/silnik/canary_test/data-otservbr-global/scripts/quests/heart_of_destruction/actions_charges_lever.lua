@@ -256,7 +256,7 @@ function heartDestructionCharges.onUse(player, item, fromPosition, itemEx, toPos
 					Game.createMonster("Overcharge", { x = 32162, y = 31356, z = 15 }, false, true)
 					Game.createMonster("Overcharge", { x = 32158, y = 31352, z = 15 }, false, true)
 				else
-					player:sendTextMessage(19, "Someone is in the area.")
+					player:sendLocalizedMessage(19, "scripts.actions_charges_lever.msg_1")
 				end
 			else
 				return true

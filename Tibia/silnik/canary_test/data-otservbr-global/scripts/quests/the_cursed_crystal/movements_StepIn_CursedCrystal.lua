@@ -38,8 +38,8 @@ function StepInCursedCrystal.onStepIn(creature, item, position, fromPosition)
 			if player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Questline) == 0 then
 				player:setStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Questline, 1)
 			end
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This small room could once have been a shrine of some kind. You discover an old inscription between two ornate stone walls.")
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The text is partly crumbled: 'Take ... vial of emb... fl... and mix ... a medusa's bl.... Then .. the dust of ... crystal, so ... will get the Medusa's Ointm... powerful ... able to unpetrify ...")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_StepIn_CursedCrystal.msg_1")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_StepIn_CursedCrystal.msg_2")
 			return true
 		else
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)

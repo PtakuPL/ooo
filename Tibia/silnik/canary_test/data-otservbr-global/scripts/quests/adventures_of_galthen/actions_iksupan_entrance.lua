@@ -9,7 +9,7 @@ function entrance.onUse(creature, item, position, fromPosition)
 		return false
 	end
 	if player:getLevel() < 150 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need at least level 150 to enter.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_iksupan_entrance.msg_1")
 		player:teleportTo(fromPosition, true)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		return false

@@ -158,7 +158,7 @@ function heartDestructionCracklers.onUse(player, item, fromPosition, itemEx, toP
 				end
 
 				if #storePlayers < 4 then
-					player:sendTextMessage(19, "You need at least 4 players to this mission.")
+					player:sendLocalizedMessage(19, "scripts.actions_cracklers_lever.msg_1")
 					return true
 				end
 
@@ -191,7 +191,7 @@ function heartDestructionCracklers.onUse(player, item, fromPosition, itemEx, toP
 					vortexPositions = 0
 					createVortex()
 				else
-					player:sendTextMessage(19, "Someone is in the area.")
+					player:sendLocalizedMessage(19, "scripts.actions_cracklers_lever.msg_2")
 				end
 			else
 				return true

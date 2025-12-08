@@ -16,7 +16,7 @@ function ferumbrasAscendantStatue.onUse(player, item, fromPosition, target, toPo
 		founts:transform(fount.revert)
 		founts:setActionId(53805)
 	end
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You douse the sacred statue's flame. The room darkens.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_statue.msg_1")
 	player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Statue, 1)
 	item:transform(22163)
 	return true

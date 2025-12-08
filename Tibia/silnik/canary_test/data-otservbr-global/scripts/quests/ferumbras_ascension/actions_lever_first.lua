@@ -19,7 +19,7 @@ function ferumbrasAscendantLeverFirst.onUse(player, item, fromPosition, target, 
 		end
 		if player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Elements.Done) < 1 then
 			player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Elements.Done, 2)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Something clicked.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_lever_first.msg_1")
 		end
 		item:transform(9111)
 	elseif item.itemid == 9111 then

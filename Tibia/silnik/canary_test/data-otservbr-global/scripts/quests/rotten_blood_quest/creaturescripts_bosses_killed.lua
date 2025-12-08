@@ -37,7 +37,7 @@ function bakragoreOnDeath.onDeath(creature)
 			if not player:hasOutfit("1663") or not player:hasOutfit("1662") then
 				player:addOutfitAddon("1663", 1)
 				player:addOutfitAddon("1662", 1)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Congratulations! You have won a Decaying Defender Outfit.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.creaturescripts_bosses_killed.msg_1")
 			end
 		end
 		kv:set("taints", 0)

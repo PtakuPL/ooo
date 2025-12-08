@@ -24,7 +24,7 @@ function energyEntrance.onStepIn(creature, item, position, fromPosition, toPosit
 		if (hasWarzoneAccess() and status >= 10) or (not hasWarzoneAccess() and status >= 15) then
 			player:teleportTo(Position(34023, 32037, 14))
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can not use this portal yet.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_energy_entrance.msg_1")
 			player:teleportTo(Position(fromPosition.x, fromPosition.y + 1, fromPosition.z))
 		end
 	elseif player:getPosition() == Position(34021, 32037, 14) then
@@ -34,7 +34,7 @@ function energyEntrance.onStepIn(creature, item, position, fromPosition, toPosit
 		if (hasWarzoneAccess() and status >= 10) or (not hasWarzoneAccess() and status >= 15) then
 			player:teleportTo(Position(33921, 32401, 14))
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can not use this portal yet.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_energy_entrance.msg_2")
 			player:teleportTo(Position(fromPosition.x - 1, fromPosition.y, fromPosition.z))
 		end
 	elseif player:getPosition() == Position(33921, 32402, 14) then
@@ -44,7 +44,7 @@ function energyEntrance.onStepIn(creature, item, position, fromPosition, toPosit
 		if (hasWarzoneAccess() and status >= 10) or (not hasWarzoneAccess() and status >= 15) then
 			player:teleportTo(Position(33982, 32236, 14))
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can not use this portal yet.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_energy_entrance.msg_3")
 			player:teleportTo(Position(fromPosition.x, fromPosition.y - 1, fromPosition.z))
 		end
 	elseif player:getPosition() == Position(33982, 32234, 14) then

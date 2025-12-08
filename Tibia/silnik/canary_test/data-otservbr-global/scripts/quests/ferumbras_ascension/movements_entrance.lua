@@ -19,7 +19,7 @@ function entrance.onStepIn(creature, item, position, fromPosition)
 	if player:getLevel() < 150 then
 		player:teleportTo(fromPosition)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need to be at least level 150 to enter.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_entrance.msg_1")
 		return true
 	end
 
@@ -46,7 +46,7 @@ function entrance.onStepIn(creature, item, position, fromPosition)
 		if player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Access) < 1 then
 			player:teleportTo(Position(33275, 32390, 8))
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This portal is not yet strong enough to breach the destination dimension.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_entrance.msg_2")
 			return true
 		end
 		player:teleportTo(Position(33319, 32317, 13))

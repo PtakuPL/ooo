@@ -4,9 +4,9 @@ function childrenMission3.onUse(player, item, fromPosition, target, toPosition, 
 	if player:getStorageValue(Storage.Quest.U8_54.ChildrenOfTheRevolution.Questline) == 9 then
 		player:setStorageValue(Storage.Quest.U8_54.ChildrenOfTheRevolution.Questline, 10)
 		player:addItem(10183, 1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a flask of poison.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_mission3_chest.msg_1")
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The chest is empty.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_mission3_chest.msg_2")
 	end
 
 	return true

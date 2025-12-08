@@ -73,11 +73,11 @@ function teleportHeart.onStepIn(creature, item, position, fromPosition)
 				player:teleportTo(bossVortex.position)
 			else
 				player:teleportTo(fromPosition)
-				player:sendTextMessage(19, "It's too early for you to endure this challenge again.")
+				player:sendLocalizedMessage(19, "scripts.movements_teleport_heart.msg_1")
 			end
 		else
 			player:teleportTo(fromPosition)
-			player:sendTextMessage(19, "You don't have access to this portal.")
+			player:sendLocalizedMessage(19, "scripts.movements_teleport_heart.msg_2")
 		end
 	elseif uBosses then
 		if player:getStorageValue(uBosses.storage1) >= 1 and player:getStorageValue(uBosses.storage2) >= 1 and player:getStorageValue(uBosses.storage3) >= 1 then
@@ -85,11 +85,11 @@ function teleportHeart.onStepIn(creature, item, position, fromPosition)
 				player:teleportTo(uBosses.position)
 			else
 				player:teleportTo(fromPosition)
-				player:sendTextMessage(19, "It's too early for you to endure this challenge again.")
+				player:sendLocalizedMessage(19, "scripts.movements_teleport_heart.msg_3")
 			end
 		else
 			player:teleportTo(fromPosition)
-			player:sendTextMessage(19, "You don't have access to this portal.")
+			player:sendLocalizedMessage(19, "scripts.movements_teleport_heart.msg_4")
 		end
 	elseif item.actionid == 14351 then
 		if player:getStorageValue(14330) >= 1 and player:getStorageValue(14332) >= 1 then
@@ -97,11 +97,11 @@ function teleportHeart.onStepIn(creature, item, position, fromPosition)
 				player:teleportTo(Position(32272, 31384, 14))
 			else
 				player:teleportTo(fromPosition)
-				player:sendTextMessage(19, "It's too early for you to endure this challenge again.")
+				player:sendLocalizedMessage(19, "scripts.movements_teleport_heart.msg_5")
 			end
 		else
 			player:teleportTo(fromPosition)
-			player:sendTextMessage(19, "You don't have access to this portal.")
+			player:sendLocalizedMessage(19, "scripts.movements_teleport_heart.msg_6")
 		end
 	elseif item.actionid == 14353 then -- Remove storages from mini bosses
 		player:teleportTo(Position(32214, 31376, 14))

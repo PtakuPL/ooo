@@ -111,7 +111,7 @@ function ascendantBossesKill.onDeath(creature)
 			local nextAvailableTime = os.time() + cooldownTime
 			player:setStorageValue(bossConfig.storage, nextAvailableTime)
 			local cooldownMessage = formatCooldownMessage(bossConfig.cooldown)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have defeated " .. bossName .. ". You can challenge this boss again in " .. cooldownMessage .. ".")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.creaturescripts_bosses_kill.msg_1" .. bossName .. ". You can challenge this boss again in " .. cooldownMessage .. ".")
 		end
 	end)
 

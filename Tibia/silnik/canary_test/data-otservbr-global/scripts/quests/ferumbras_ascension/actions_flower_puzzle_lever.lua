@@ -31,18 +31,18 @@ function ferumbrasAscendantFlowerPuzzle.onUse(player, item, fromPosition, target
 		for a = 1, #flowerPositions do
 			local flower = flowerPositions[a]
 			if not Tile(flower.position):getItemById(flower.itemid) then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The order of the flowers in the garden are wrong.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_flower_puzzle_lever.msg_1")
 				return true
 			end
 		end
 		if player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.FlowerPuzzleTimer) >= 1 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The portal still activated.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_flower_puzzle_lever.msg_2")
 		else
 			player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.FlowerPuzzleTimer, 1)
 			addEvent(function()
 				player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.FlowerPuzzleTimer, 0)
 			end, 30 * 1000)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "A portal forms as two beams of a strange construction dividing this room move towards each other.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_flower_puzzle_lever.msg_3")
 			for x = 33475, 33479 do
 				local pos = Position(x, 32698, 14)
 				pos:sendMagicEffect(CONST_ME_POFF)

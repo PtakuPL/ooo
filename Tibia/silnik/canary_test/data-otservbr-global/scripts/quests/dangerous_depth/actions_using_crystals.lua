@@ -450,7 +450,7 @@ function dangerousDepthCrystals.onUse(player, item, fromPosition, target, toPosi
 				end
 			end
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The crystal geode can't carry any more crystals.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_using_crystals.msg_1")
 		end
 	end
 
@@ -485,7 +485,7 @@ function dangerousDepthCrystals.onUse(player, item, fromPosition, target, toPosi
 				end
 			end
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The crystal geode can't carry any more crystals.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_using_crystals.msg_2")
 		end
 	end
 
@@ -520,7 +520,7 @@ function dangerousDepthCrystals.onUse(player, item, fromPosition, target, toPosi
 				end
 			end
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The crystal geode can't carry any more crystals.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_using_crystals.msg_3")
 		end
 	end
 

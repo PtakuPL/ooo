@@ -7,7 +7,7 @@ function hunterAll.onUse(player, item, fromPosition, target, toPosition, isHotke
 		portpos:sendMagicEffect(CONST_ME_TELEPORT)
 		toPosition:sendMagicEffect(CONST_ME_SOUND_YELLOW)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have not learned all the verses of the hymn")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action_all_hymn_piano_teleport.msg_1")
 		toPosition:sendMagicEffect(CONST_ME_POFF)
 	end
 	return true

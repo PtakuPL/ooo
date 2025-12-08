@@ -10,7 +10,7 @@ function entranceYselda.onUse(creature, item, position, fromPosition)
 		return false
 	end
 	if not player:canFightBoss("Megasylvan Yselda") then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This root seems to thicken and wreathe the moment you try to grab it.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_yselda_shortcut.msg_1")
 		player:teleportTo(fromPosition, true)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		return false

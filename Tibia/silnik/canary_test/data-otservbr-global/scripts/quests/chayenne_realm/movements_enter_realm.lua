@@ -11,16 +11,16 @@ function enterRealm.onStepIn(creature, item, position, fromPosition)
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			player:teleportTo(Position(32829, 31451, 8))
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You're entering the realm of dreams.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_enter_realm.msg_1")
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You do not have level 40+ or missing the Chayenne's magical key.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_enter_realm.msg_2")
 			player:teleportTo(fromPosition, true)
 		end
 	elseif item.actionid == 55024 then
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		player:teleportTo(Position(33117, 32604, 6))
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Goodbye, dream traveller...")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_enter_realm.msg_3")
 	end
 	return true
 end

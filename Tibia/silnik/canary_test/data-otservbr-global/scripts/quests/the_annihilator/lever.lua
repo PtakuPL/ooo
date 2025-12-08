@@ -29,18 +29,18 @@ function lever.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		for i = 1, #setting.playersPositions do
 			local creature = Tile(setting.playersPositions[i].fromPos):getTopCreature()
 			if not creature then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Four players are required to start the quest.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.lever.msg_1")
 				return true
 			end
 			if creature and creature:getLevel() < setting.requiredLevel then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "All the players need to be level " .. setting.requiredLevel .. " or higher.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.lever.msg_2" .. setting.requiredLevel .. " or higher.")
 				return true
 			end
 		end
 
 		-- Checks if there are still players inside the room, if so, return true
 		if roomIsOccupied(setting.centerDemonRoomPosition, true, 4, 4) then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "A team is already inside the quest room.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.lever.msg_3")
 			return true
 		end
 
@@ -68,7 +68,7 @@ function lever.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		end
 		-- Not be able to push the lever back if someone is still inside the monsters room
 		if roomIsOccupied(setting.centerDemonRoomPosition, true, 4, 4) then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "A team is already inside the quest room.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.lever.msg_4")
 			return true
 		end
 		-- Removes all monsters so that the next team can enter

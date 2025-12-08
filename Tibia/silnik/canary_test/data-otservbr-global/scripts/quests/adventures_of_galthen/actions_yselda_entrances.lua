@@ -10,7 +10,7 @@ function forestOfLife.onStepIn(creature, item, position, fromPosition)
 		return false
 	end
 	if player:getLevel() < 250 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need at least level 250 to enter.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_yselda_entrances.msg_1")
 		player:teleportTo(fromPosition, true)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		return false

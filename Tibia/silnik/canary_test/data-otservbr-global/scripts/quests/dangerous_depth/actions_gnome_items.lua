@@ -4,18 +4,18 @@ function dangerousDepthItems.onUse(player, item)
 	if item.uid == 57235 then
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.GnomeChartPaper) == 1 then
 			player:addItem(27308, 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a gnome charts.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gnome_items.msg_1")
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.GnomeChartPaper, 2)
 		elseif player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.GnomeChartPaper) == 2 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can not use this item again.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gnome_items.msg_2")
 		end
 	elseif item.uid == 57236 then
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.GnomeChartChest) == 1 then
 			player:addItem(27307, 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a gnome trignometre.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gnome_items.msg_3")
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.GnomeChartChest, 2)
 		elseif player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.GnomeChartChest) == 2 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "It is empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gnome_items.msg_4")
 		end
 	end
 

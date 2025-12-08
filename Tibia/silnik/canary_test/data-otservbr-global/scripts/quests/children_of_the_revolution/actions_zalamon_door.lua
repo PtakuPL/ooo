@@ -9,7 +9,7 @@ function childrenZalamon.onUse(player, item, fromPosition, target, toPosition, i
 			item:transform(item.itemid + 1)
 		end
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The door seems to be sealed against unwanted intruders.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_zalamon_door.msg_1")
 	end
 	return true
 end

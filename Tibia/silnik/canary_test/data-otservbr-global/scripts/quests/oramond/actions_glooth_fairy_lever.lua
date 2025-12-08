@@ -59,7 +59,7 @@ local gloothFairyLever = Action()
 
 function gloothFairyLever.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if Game.getStorageValue(GlobalStorage.GloothFairyTimer) >= os.time() then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need to wait 15 minutes to use again.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_glooth_fairy_lever.msg_1")
 		return true
 	end
 

@@ -9,7 +9,7 @@ function starHerb.onUse(player, item, fromPosition, target, toPosition, isHotkey
 	if target.itemid == config.antlers then
 		target:transform(config.antler_talisman)
 		item:remove(1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You entwine the antler with fresh star herb.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_star_herb.msg_1")
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
 	end
 	return true

@@ -21,7 +21,7 @@ function sacrificeSkulls.onStepIn(creature, item, position, fromPosition)
 	end
 
 	if player:getStorageValue(FirstParadoxAcess) < 1 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "One of the toxic salt seas in Krailos carries fresh and clean water again. The ogres' water supply is ensured for now")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movement_sacrifice_skulls.msg_1")
 		player:setStorageValue(FirstParadoxAcess, 1)
 	end
 

@@ -16,7 +16,7 @@ function dangerousDepthTrignometre.onUse(player, item, isHotkey)
 			if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationA) < 1 then
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationA, 1)
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationCount, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationCount) + 1)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You probed the location successfully.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gnome_trignometre.msg_1")
 				player:getPosition():sendMagicEffect(CONST_ME_HITAREA)
 			end
 		end
@@ -24,7 +24,7 @@ function dangerousDepthTrignometre.onUse(player, item, isHotkey)
 			if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationB) < 1 then
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationB, 1)
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationCount, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationCount) + 1)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You probed the location successfully.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gnome_trignometre.msg_2")
 				player:getPosition():sendMagicEffect(CONST_ME_HITAREA)
 			end
 		end
@@ -32,7 +32,7 @@ function dangerousDepthTrignometre.onUse(player, item, isHotkey)
 			if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationC) < 1 then
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationC, 1)
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationCount, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationCount) + 1)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You probed the location successfully.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gnome_trignometre.msg_3")
 				player:getPosition():sendMagicEffect(CONST_ME_HITAREA)
 			end
 		end
@@ -40,7 +40,7 @@ function dangerousDepthTrignometre.onUse(player, item, isHotkey)
 			if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationD) < 1 then
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationD, 1)
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationCount, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationCount) + 1)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You probed the location successfully.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gnome_trignometre.msg_4")
 				player:getPosition():sendMagicEffect(CONST_ME_HITAREA)
 			end
 		end
@@ -48,7 +48,7 @@ function dangerousDepthTrignometre.onUse(player, item, isHotkey)
 			if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationE) < 1 then
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationE, 1)
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationCount, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationCount) + 1)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You probed the location successfully.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gnome_trignometre.msg_5")
 				player:getPosition():sendMagicEffect(CONST_ME_HITAREA)
 			end
 		end

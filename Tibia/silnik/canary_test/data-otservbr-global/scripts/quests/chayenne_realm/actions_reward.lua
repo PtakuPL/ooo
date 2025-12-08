@@ -11,9 +11,9 @@ function chayenneReward.onUse(player, item, fromPosition, itemEx, toPosition)
 		backpack:addItem(2995, 1)
 		backpack:addItem(6570, 1)
 		player:setStorageValue(Storage.ChayenneReward, 1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a beach backpack.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_reward.msg_1")
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You already got your reward.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_reward.msg_2")
 	end
 	return true
 end

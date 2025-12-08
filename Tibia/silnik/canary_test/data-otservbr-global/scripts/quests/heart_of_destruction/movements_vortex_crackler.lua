@@ -80,7 +80,7 @@ function vortexCrackler.onStepIn(creature, item, position, fromPosition)
 				cracklerTransform = true
 			end
 		end
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your presence begins to polarize the area!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_vortex_crackler.msg_1")
 		player:getPosition():sendMagicEffect(48)
 	end
 	return true

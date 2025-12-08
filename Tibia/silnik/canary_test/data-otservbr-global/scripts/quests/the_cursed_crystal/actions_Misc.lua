@@ -50,7 +50,7 @@ function cursedMiscItem.onUse(player, item, fromPosition, target, toPosition, is
 				if vortex then
 					vortex:setActionId(35001)
 					player:getPosition():sendMagicEffect(CONST_ME_SOUND_WHITE)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "As you use the small bell, an unearthly sound rings out sweetly. At the same moment, the lake's waters begin to whirl.")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_Misc.msg_1")
 
 					addEvent(function()
 						local vortexItem = Tile(playerPos):getItemById(7804)
@@ -60,7 +60,7 @@ function cursedMiscItem.onUse(player, item, fromPosition, target, toPosition, is
 					end, 10000)
 				end
 			else
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "A vortex already exists in this area.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_Misc.msg_2")
 			end
 		end
 	end
@@ -79,7 +79,7 @@ local theCursedMiscAction = Action()
 function theCursedMiscAction.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if item.actionid == 40001 and item:getPosition() == TCC_SKELETON_PAPER_POS then
 		if player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe) < 1 and player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.SheetOfPaper) < 1 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a sheet of paper.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_Misc.msg_3")
 			local paperCursedCrystal = player:addItem(2820, 1)
 			paperCursedCrystal:setAttribute(
 				ITEM_ATTRIBUTE_TEXT,
@@ -87,22 +87,22 @@ function theCursedMiscAction.onUse(player, item, fromPosition, target, toPositio
 			)
 			player:setStorageValue(Storage.Quest.U10_70.TheCursedCrystal.SheetOfPaper, 1)
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The pile of bones is empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_Misc.msg_4")
 		end
 	elseif item.actionid == 40001 and item:getPosition() == TCC_SKELETON_BELL_POS then
 		if player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe) < 1 and player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.SmallCrystalBell) < 1 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a small crystal bell.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_Misc.msg_5")
 			player:addItem(21554, 1)
 			player:setStorageValue(Storage.Quest.U10_70.TheCursedCrystal.SmallCrystalBell, 1)
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The pile of bones is empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_Misc.msg_6")
 		end
 	elseif item.actionid == 40002 and item.itemid == 21572 then
 		if player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe) < 1 and player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.SheetOfPaper) > 0 and player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.SmallCrystalBell) > 0 then
 			if player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Time) < os.time() then
 				player:addItem(21504, 1)
 				item:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You take some blood out of the hollow crystal. Hopefully it is actually a medusa's blood.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_Misc.msg_7")
 				player:setStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe, 1)
 			end
 		end

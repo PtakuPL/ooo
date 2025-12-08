@@ -17,7 +17,7 @@ function theCursedMedusa.onUse(player, item, fromPosition, target, toPosition, i
 			end
 			player:setStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe, 3)
 			item:remove(1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You unpetrify a banshee's scream near the evil crystal, your ears protected by wax. Thus the baleful artefact is destroyed.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_MedusaOil.msg_1")
 			local stone = Tile(TCC_PILLARPETRIFIED):getItemById(10797)
 			doSendMagicEffect(stone:getPosition(), CONST_ME_POFF)
 			stone:transform(10870)
@@ -37,7 +37,7 @@ function theCursedMedusa.onUse(player, item, fromPosition, target, toPosition, i
 				return
 			end
 			player:setStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe, 2)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You use the molten wax to plug your ears.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_MedusaOil.msg_2")
 			doSendMagicEffect(player:getPosition(), CONST_ME_YELLOWSMOKE)
 			item:remove(1)
 		end
@@ -47,12 +47,12 @@ function theCursedMedusa.onUse(player, item, fromPosition, target, toPosition, i
 	for index, value in pairs(ItemsCursed) do
 		if item.itemid == index and target.itemid == value.usedID then
 			if value.finalID == 21505 then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You mixed the first ingredients to create a special ointment. But it isn't complete yet.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_MedusaOil.msg_3")
 			elseif value.finalID == 21506 then
 				if player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Questline) < 2 then
 					player:setStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Questline, 2)
 				end
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You mixed the proper ingredients to create a special ointment. With this salve you may unpetrify a petrified object.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_MedusaOil.msg_4")
 			end
 
 			item:remove(1)
@@ -62,7 +62,7 @@ function theCursedMedusa.onUse(player, item, fromPosition, target, toPosition, i
 		end
 	end
 
-	player:sendTextMessage(MESSAGE_FAILURE, "Sorry, not possible.")
+	player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.actions_MedusaOil.msg_5")
 end
 
 theCursedMedusa:id(9106, 11466, 21504, 21505, 21507)

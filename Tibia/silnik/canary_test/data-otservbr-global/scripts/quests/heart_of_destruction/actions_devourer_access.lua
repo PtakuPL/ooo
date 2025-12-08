@@ -2,10 +2,10 @@ local heartDestructionDevourer = Action()
 function heartDestructionDevourer.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if not player:canFightBoss("World Devourer") then
 		player:setBossCooldown("World Devourer", 0)
-		player:sendTextMessage(19, "You access to World Devourer was released!")
+		player:sendLocalizedMessage(19, "scripts.actions_devourer_access.msg_1")
 		item:transform(23687)
 	else
-		player:sendTextMessage(19, "You access to World Devourer is already released!")
+		player:sendLocalizedMessage(19, "scripts.actions_devourer_access.msg_2")
 	end
 
 	return true

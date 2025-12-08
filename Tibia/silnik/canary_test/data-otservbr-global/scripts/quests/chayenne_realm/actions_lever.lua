@@ -3,12 +3,12 @@ local chayenneLever = Action()
 function chayenneLever.onUse(player, item, fromPosition, itemEx, toPosition)
 	if item.itemid == 2772 then
 		if Game.getStorageValue(Storage.ChayenneKeyTime) > os.time() then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need to wait few minutes to use again.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_lever.msg_1")
 			return true
 		end
 
 		if player:getItemCount(14682) < 1 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You do not have the Chayenne's magical key.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_lever.msg_2")
 			return true
 		end
 

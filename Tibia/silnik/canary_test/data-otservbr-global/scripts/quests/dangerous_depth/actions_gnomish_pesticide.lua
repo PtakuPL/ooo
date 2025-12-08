@@ -31,7 +31,7 @@ function dangerousDepthPesticide.onUse(player, item, fromPosition, target, toPos
 			end
 		end
 	elseif table.contains({ 27495, 27496, 27497 }, target:getId()) then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Only half-decayed diremaw corpses can be neutralised with these pesticides.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gnomish_pesticide.msg_1")
 		return true
 	end
 

@@ -11,9 +11,9 @@ function heartDestructionReward.onUse(player, item, fromPosition, target, toPosi
 			container:addItem(22721, 5)
 			player:setStorageValue(14337, 1)
 			player:addAchievement("Ender of the End")
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found an energetic backpack.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_reward.msg_1")
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The chest is empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_reward.msg_2")
 		end
 	end
 

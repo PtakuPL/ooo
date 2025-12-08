@@ -2,11 +2,11 @@ local lyre = Action()
 
 function lyre.onUse(player, item, frompos, item2, topos)
 	if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Lyre) == 2 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found Lyre.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_lyre.msg_1")
 		player:addItem(31447, 1)
 		player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Lyre, 3)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The bag can not be opened.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_lyre.msg_2")
 	end
 
 	return true

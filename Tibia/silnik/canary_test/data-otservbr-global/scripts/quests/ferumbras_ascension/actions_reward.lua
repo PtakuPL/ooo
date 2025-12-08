@@ -15,7 +15,7 @@ function ferumbrasAscendantReward.onUse(player, item, fromPosition, target, toPo
 		return false
 	end
 	if player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Reward) >= 1 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The treasure chest is empty.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_reward.msg_1")
 		return true
 	end
 	player:addAchievement("Hat Hunter")

@@ -18,13 +18,13 @@ function ferumbrasAscendantLeverThird.onUse(player, item, fromPosition, target, 
 			return true
 		end
 		if player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Elements.Four) == 4 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "A booming sound almost deafens you. From somewhere deep within you hear a whisper: 'Blood...'")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_lever_third.msg_1")
 		end
 		if player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Elements.Four) == 5 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "A booming sound almost deafens you. From somewhere deep within you hear a whisper: 'Grass...'")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_lever_third.msg_2")
 		end
 		if player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Elements.Four) == 6 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "A booming sound almost deafens you. From somewhere deep within you hear a whisper: 'Ice...'")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_lever_third.msg_3")
 		end
 		if player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Elements.Done) >= 3 then
 			player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Elements.Done, 4)

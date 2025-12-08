@@ -3,11 +3,11 @@ local augerfun = Action()
 function augerfun.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Narsai) == 2 then
 		if table.contains({ 31377 }, target.itemid) then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are gathering some catus milk.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_augerfun.msg_1")
 			player:addItem(31335, 1)
 		end
 	else
-		player:sendTextMessage(MESSAGE_FAILURE, "Sorry, not possible.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.actions_augerfun.msg_2")
 	end
 
 	return true

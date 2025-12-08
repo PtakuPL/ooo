@@ -10,21 +10,21 @@ function zamuloshTeleport.onStepIn(creature, item, position, fromPosition)
 		if player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.ZamuloshTeleports) >= 9 then
 			player:teleportTo(Position(33618, 32620, 10))
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "What was wrong is not necessarily right now. Nevertheless you nade it further.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_zamulosh_teleport.msg_1")
 			return true
 		else
 			local pos = player:getPosition()
 			pos.x = pos.x - 2
 			player:teleportTo(pos)
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't have access to this teleport yet.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_zamulosh_teleport.msg_2")
 			return true
 		end
 	elseif item.actionid == 34314 then
 		if player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.ZamuloshTeleports) >= 4 and player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Habitats.AllHabitats) >= 7 then
 			player:teleportTo(Position(33618, 32620, 10))
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "What was wrong is not necessarily right now. Nevertheless you nade it further.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_zamulosh_teleport.msg_3")
 			player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.ZamuloshTeleports, 9)
 			return true
 		else
@@ -32,7 +32,7 @@ function zamuloshTeleport.onStepIn(creature, item, position, fromPosition)
 			pos.x = pos.x - 2
 			player:teleportTo(pos)
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't have access to this teleport yet.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_zamulosh_teleport.msg_4")
 			return true
 		end
 	end

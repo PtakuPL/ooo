@@ -4410,3 +4410,75 @@ Typ: php
 Typ: php
 
 ---
+
+## [2025-12-08 18:36:19] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 18:37:18] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 18:38:13] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 18:39:13] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 18:40:13] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 18:41:13] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---

@@ -127,13 +127,13 @@ function ParseTerebanSay(npc, creature, message, npcHandler)
 				player:setStorageValue(ThreatenedDreams.Mission01[1], 13)
 				player:setStorageValue(ThreatenedDreams.Mission01.FeathersCount, 0) -- Start Mission 'Tattered Swan Feathers'
 			else
-				npcHandler:say("You are not on that mission.", npc, creature)
+				npcHandler:sayLocalized("npc.tereban_functions.you_are_not_1", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif MsgContains(message, "mission") then
 			if player:getStorageValue(Storage.Quest.U8_6.AFathersBurden.Status) == 1 then
 				if player:getStorageValue(Storage.Quest.U8_6.AFathersBurden.Progress) ~= 8 then
-					npcHandler:say("Well, I need the parts of a sorcerer's robe, a paladin's bow, a knight's shield, and a druid's rod. If you cannot find one of them, ask me about it and I might provide you with some minor hints.", npc, creature)
+					npcHandler:sayLocalized("npc.tereban_functions.well_i_need_2", npc, creature)
 					return true
 				end
 
@@ -145,7 +145,7 @@ function ParseTerebanSay(npc, creature, message, npcHandler)
 					"Take this sachet over there, I wrapped the coins into this old cape I had still lying around here from a barter with a stranger, it is of no use for me anyway. Farewell and thank you once again.",
 				}, npc, creature)
 			elseif player:getStorageValue(Storage.Quest.U8_6.AFathersBurden.Status) == 2 then
-				npcHandler:say("Thank you for your help!", npc, creature)
+				npcHandler:sayLocalized("npc.tereban_functions.thank_you_for_3", npc, creature)
 				return true
 			else
 				npcHandler:say({
@@ -172,7 +172,7 @@ function ParseTerebanSay(npc, creature, message, npcHandler)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
-			npcHandler:say("I am relieved someone as capable as you will handle the task. Well, I need the parts of a sorcerer's robe, a paladin's bow, a knight's shield, and a druid's wand.", npc, creature)
+			npcHandler:sayLocalized("npc.tereban_functions.i_am_relieved_4", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_6.AFathersBurden.QuestLog, 1)
 			player:setStorageValue(Storage.Quest.U8_6.AFathersBurden.Progress, 0)
 			player:setStorageValue(Storage.Quest.U8_6.AFathersBurden.Status, 1)
@@ -180,7 +180,7 @@ function ParseTerebanSay(npc, creature, message, npcHandler)
 				player:setStorageValue(storages[i], 1)
 			end
 		elseif MsgContains(message, "no") then
-			npcHandler:say("Oh my. I really hope you will change your mind.", npc, creature)
+			npcHandler:sayLocalized("npc.tereban_functions.oh_my_i_5", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 2 then

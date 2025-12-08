@@ -63,14 +63,14 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "first dragon") then
-		npcHandler:say("The First Dragon? The first of all of us? The Son of Garsharak? I'm surprised you heard about him. It is such a long time that he wandered Tibia. Yet, there are some {rumours}.", npc, creature)
+		npcHandler:sayLocalized("npc.tamoril.the_first_dragon_1", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "rumours") and npcHandler:getTopic(playerId) == 1 then
 		npcHandler:setTopic(playerId, 2)
-		npcHandler:say("It is told that the First Dragon had four {descendants}, who became the ancestors of the four kinds of dragons we know in Tibia. They perhaps still have knowledge about the First Dragon's whereabouts - if one could find them.", npc, creature)
+		npcHandler:sayLocalized("npc.tamoril.it_is_told_2", npc, creature)
 	elseif MsgContains(message, "descendants") and npcHandler:getTopic(playerId) == 2 then
 		npcHandler:setTopic(playerId, 3)
-		npcHandler:say("The names of these four are Tazhadur, Kalyassa, Gelidrazah and Zorvorax. Not only were they the ancestors of all dragons after but also the primal representation of the {draconic incitements}. About whom do you want to learn more?", npc, creature)
+		npcHandler:sayLocalized("npc.tamoril.the_names_of_3", npc, creature)
 	elseif MsgContains(message, "draconic incitements") and npcHandler:getTopic(playerId) == 3 then
 		npcHandler:setTopic(playerId, 4)
 		npcHandler:say({
@@ -80,7 +80,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 	elseif MsgContains(message, "find") then
 		npcHandler:setTopic(playerId, 5)
-		npcHandler:say("What do you want to do, if you know about these mighty dragons' abodes? Go there and look for a fight?", npc, creature)
+		npcHandler:sayLocalized("npc.tamoril.what_do_you_4", npc, creature)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 5 then
 		npcHandler:setTopic(playerId, 6)
 		npcHandler:say({

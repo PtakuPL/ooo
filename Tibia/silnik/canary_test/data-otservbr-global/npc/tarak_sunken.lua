@@ -59,7 +59,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "passage") then
-		npcHandler:say("Do you want to go back to {Yalahar}?", npc, creature)
+		npcHandler:sayLocalized("npc.tarak_sunken.do_you_want_1", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then

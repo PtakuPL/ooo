@@ -6,57 +6,57 @@
 
 ## 📊 Aktualny postęp
 
-![NPC Migration](https://img.shields.io/badge/NPC-35.2%25-orange?style=for-the-badge&logo=lua)
-![Keys](https://img.shields.io/badge/Keys-43144-blue?style=for-the-badge&logo=json)
+![NPC Migration](https://img.shields.io/badge/NPC-36.3%25-orange?style=for-the-badge&logo=lua)
+![Keys](https://img.shields.io/badge/Keys-43185-blue?style=for-the-badge&logo=json)
 ![Speed](https://img.shields.io/badge/Speed-4.7_NPC%2Fmin-purple?style=for-the-badge&logo=speedtest)
 ![Errors](https://img.shields.io/badge/Errors-0-green?style=for-the-badge)
 
 ## 📈 Progress Bar
 
 ```
-[██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░] 35.2%
- 361 / 1027 NPC
+[██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░] 36.3%
+ 373 / 1027 NPC
 ```
 
 ## 📋 Szczegóły
 
 | 📌 Metryka | 📊 Wartość |
 |------------|------------|
-| **NPC Zmigrowanych** | `361` / `1027` |
-| **Postęp** | **35.2%** |
-| **Klucze i18n** | `43144` |
+| **NPC Zmigrowanych** | `373` / `1027` |
+| **Postęp** | **36.3%** |
+| **Klucze i18n** | `43185` |
 | **Języki** | 5 (🇬🇧 en, 🇵🇱 pl, 🇩🇪 de, 🇪🇸 es, 🇧🇷 pt) |
 | **Prędkość** | ~`4.7` NPC/min |
-| **Czas pracy** | 69min |
+| **Czas pracy** | 71min |
 | **Start** | 11:42 |
-| **ETA** | ~141 min |
+| **ETA** | ~139 min |
 | **Błędy** | 0 |
 
 ## 📁 Ostatnio zmodyfikowane NPC
 
 | Plik |
 |------|
-| `svenson.lua` |
-| `sven.lua` |
-| `sundara.lua` |
-| `stricken_soul.lua` |
-| `storkus.lua` |
-| `spectulus.lua` |
-| `snake_eye.lua` |
-| `skjaar.lua` |
+| `terrence.lua` |
+| `tereban_functions.lua` |
+| `telas.lua` |
+| `tehlim.lua` |
+| `tarun.lua` |
+| `tarak_sunken.lua` |
+| `tarak_inner.lua` |
+| `tandros.lua` |
 
 ## 🔧 Status Workera
 
 ```
-2025-12-08 12:51:57] [INFO] 📦 FAZA 1: MIGRACJA NPC
+[2025-12-08 12:53:58] [INFO] 🔬 FAZA 3: ANALIZA
 ```
 
 ## 🔄 Ostatnia aktualizacja
 
 | 🕐 Czas | 📅 Data |
 |---------|---------|
-| **UTC:** | 2025-12-08 11:52:01 UTC |
-| **Local:** | 12:52:01 |
+| **UTC:** | 2025-12-08 11:54:02 UTC |
+| **Local:** | 12:54:02 |
 
 ---
 

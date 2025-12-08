@@ -31,11 +31,19 @@ fi
 # Co 2 minuty - push do GitHub (parzysta minuta)
 MINUTE=$(date +%M)
 if [ $((MINUTE % 2)) -eq 0 ]; then
-    cd "$WORK_DIR"
+    GIT_ROOT="/home/ptaku/serweryt"
+    
+    # Kopiuj status do roota repo (GitHub pokazuje z roota!)
+    cp "$WORK_DIR/I18N_STATUS.md" "$GIT_ROOT/I18N_STATUS.md" 2>/dev/null
+    
+    cd "$GIT_ROOT"
     
     # Sprawdź czy są zmiany
     if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
-        git add I18N_STATUS.md i18n/status/ 2>/dev/null
+        # Dodaj z roota i z podkatalogu
+        git add I18N_STATUS.md 2>/dev/null
+        git add Tibia/silnik/canary_test/i18n/status/ 2>/dev/null
+        git add Tibia/silnik/canary_test/I18N_STATUS.md 2>/dev/null
         git commit -m "🤖 Auto-sync i18n [$(date '+%H:%M')]" --quiet 2>/dev/null
         
         # Push z pełnym logowaniem błędów

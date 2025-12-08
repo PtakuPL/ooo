@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-08 20:57:48 UTC  
+> **Aktualizacja:** 2025-12-08 21:01:40 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **42050** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#14** | - |
+| 🔄 Cykl | **#4** | - |
 
 ---
 
@@ -72,6 +72,27 @@
 
 ---
 
+## 🔴 LIVE: Aktualna Aktywność
+
+| Parametr | Wartość |
+|----------|----------|
+| **Status** | 💤 waiting |
+| **Operacja** |  |
+| **Plik** | `` |
+| **Szczegóły** |  |
+| **Ostatnia aktualizacja** |  |
+
+### 📈 Statystyki sesji
+
+| Metryka | Wartość |
+|---------|----------|
+| Plików przetworzonych | 0 |
+| Kluczy wyciągniętych | 0 |
+| Błędów | 0 |
+| Napraw zastosowanych | 0 |
+
+---
+
 ## 📂 Szczegóły Kategorii
 
 <details>
@@ -103,7 +124,7 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #14 |
+| 🔄 Cykl | #4 |
 
 ### 📁 Podkatalogi - Postęp
 
@@ -204,7 +225,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 4012102, Cykl #14 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 4162636, Cykl #4 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

@@ -4746,3 +4746,379 @@ Typ: php
 Typ: php
 
 ---
+
+## [2025-12-08 19:04:15] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:05:15] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:06:15] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:07:14] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:07:52] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:08:14] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:08:31] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:09:13] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:10:12] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:11:12] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:12:13] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:13:12] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:14:15] ANALIZA WEB
+
+### Plik: `html_copy/routes/api.php`
+
+**Akcja:** Znaleziono 0
+0 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:13] ANALIZA WEB
+
+### Plik: `html_copy/admin/pages/accounts.php`
+
+**Akcja:** Znaleziono 1 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:13] ANALIZA WEB
+
+### Plik: `html_copy/admin/pages/clmd.php`
+
+**Akcja:** Znaleziono 1 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:13] ANALIZA WEB
+
+### Plik: `html_copy/admin/pages/mailer.php`
+
+**Akcja:** Znaleziono 2 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:13] ANALIZA WEB
+
+### Plik: `html_copy/admin/pages/reports.php`
+
+**Akcja:** Znaleziono 2 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:13] ANALIZA WEB
+
+### Plik: `html_copy/admin/pages/pages.php`
+
+**Akcja:** Znaleziono 1 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:13] ANALIZA WEB
+
+### Plik: `html_copy/admin/pages/dashboard.php`
+
+**Akcja:** Znaleziono 1 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:13] ANALIZA WEB
+
+### Plik: `html_copy/admin/pages/news.php`
+
+**Akcja:** Znaleziono 1 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:13] ANALIZA WEB
+
+### Plik: `html_copy/admin/pages/menus.php`
+
+**Akcja:** Znaleziono 5 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:14] ANALIZA WEB
+
+### Plik: `html_copy/admin/pages/changelog.php`
+
+**Akcja:** Znaleziono 1 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:14] ANALIZA WEB
+
+### Plik: `html_copy/admin/pages/players.php`
+
+**Akcja:** Znaleziono 7 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:46] ANALIZA WEB
+
+### Plik: `html_copy/admin/pages/logs.php`
+
+**Akcja:** Znaleziono 2 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:46] ANALIZA WEB
+
+### Plik: `html_copy/admin/pages/tools.php`
+
+**Akcja:** Znaleziono 3 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:46] ANALIZA WEB
+
+### Plik: `html_copy/index.nginx-debian.html`
+
+**Akcja:** Znaleziono 3 stringów
+
+**Szczegóły:**
+Typ: html
+
+---
+
+## [2025-12-08 19:15:46] ANALIZA WEB
+
+### Plik: `html_copy/system/exception.php`
+
+**Akcja:** Znaleziono 3 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:47] ANALIZA WEB
+
+### Plik: `html_copy/system/src/Settings.php`
+
+**Akcja:** Znaleziono 11 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:47] ANALIZA WEB
+
+### Plik: `html_copy/system/src/Spells.php`
+
+**Akcja:** Znaleziono 5 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:47] ANALIZA WEB
+
+### Plik: `html_copy/system/src/Monsters.php`
+
+**Akcja:** Znaleziono 2 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:47] ANALIZA WEB
+
+### Plik: `html_copy/system/libs/rfc6238.php`
+
+**Akcja:** Znaleziono 14 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:47] ANALIZA WEB
+
+### Plik: `html_copy/system/pages/exp-stages.php`
+
+**Akcja:** Znaleziono 2 stringów
+
+**Szczegóły:**
+Typ: php
+
+---
+
+## [2025-12-08 19:15:47] ANALIZA WEB
+
+### Plik: `html_copy/system/pages/polls.php`
+
+**Akcja:** Znaleziono 35 stringów
+
+**Szczegóły:**
+Typ: php
+
+---

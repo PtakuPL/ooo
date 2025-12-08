@@ -70,18 +70,18 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "jack") then
 		if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 5 then
 			if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.Mother) < 1 then
-				npcHandler:say("What about him? He's downstairs as he always has been. He never went away from home any further than into the forest nearby. He rarely ever took a walk to Edron, did he?", npc, creature)
+				npcHandler:sayLocalized("npc.mother_of_jack.what_about_him_1", npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			end
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Thought so. Of course he wouldn't do anything wrong. And he went where? Edron. Hm. I can see nothing wrong with that. But... he wasn't there often, was he?", npc, creature)
+			npcHandler:sayLocalized("npc.mother_of_jack.thought_so_of_2", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("What...? But he wasn't up to something, was he?", npc, creature)
+			npcHandler:sayLocalized("npc.mother_of_jack.what_but_he_3", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			npcHandler:say({

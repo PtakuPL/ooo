@@ -66,10 +66,10 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.Main.Questline) < 1 then
 		if MsgContains(message, "good") then
-			npcHandler:say("I'm just a mere messenger and I'm here to find brave adventurers that might {help} my friends in this time of need.", npc, creature)
+			npcHandler:sayLocalized("npc.myzzi.im_just_a_1", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif MsgContains(message, "help") and npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Lady Alivar of the Summer Court and Lord Cadion of the Winter Court are in need of brave adventurers to avert a great {threat} for the whole world.", npc, creature)
+			npcHandler:sayLocalized("npc.myzzi.lady_alivar_of_2", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif MsgContains(message, "threat") and npcHandler:getTopic(playerId) == 3 then
 			npcHandler:say({
@@ -81,7 +81,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:say({ "There are {entrances} to the hidden Courts of Summer and Winter in secluded places. You can find the portal to the Winter Court high in the mountains of Tyrsung and the portal to the Summer Court in the meadows of Feyrist. ...", "With my magic you will be able to enter the Courts. Find Undal or Vanys and talk to them." }, npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		elseif MsgContains(message, "entrances") and npcHandler:getTopic(playerId) == 5 then
-			npcHandler:say("So, are you willing to help in this time of need?", npc, creature)
+			npcHandler:sayLocalized("npc.myzzi.so_are_you_3", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		elseif npcHandler:getTopic(playerId) == 6 then
 			if MsgContains(message, "yes") then

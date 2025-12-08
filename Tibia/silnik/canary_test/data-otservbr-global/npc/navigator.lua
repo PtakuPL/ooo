@@ -52,12 +52,12 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "flou") then
 		if getPlayerStorageValue(creature, Storage.Navigator) < 1 then
-			npcHandler:say("Lhnjei gouthn naumpi! I know why you are here. I can {explain} everything.", npc, creature)
+			npcHandler:sayLocalized("npc.navigator.lhnjei_gouthn_naumpi_1", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "explain") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("By entering this place, you have earned the right to learn what this is all about. This is a long story. Are you sure you want to hear this, {yes}?", npc, creature)
+			npcHandler:sayLocalized("npc.navigator.by_entering_this_2", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "helmet") then
@@ -91,7 +91,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				"We dived under the bow and saw that it was stuck right on the tip of a sharp rock. The world below us was treacherous, we could see large underwater mountains and a labyrinthine system of caves and holes. ...",
 				"Some of my men panicked and hijacked the dinghies to reach the island, others tried to swim. I remained on the ship. It was not my FAULT. It was not. ...",
 			}, npc, creature)
-			npcHandler:say("Do you have enough, can I stop?", npc, creature)
+			npcHandler:sayLocalized("npc.navigator.do_you_have_3", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			npcHandler:say({
@@ -117,7 +117,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		elseif npcHandler:getTopic(playerId) == 8 then
-			npcHandler:say("Then take this one. And remember: DO NOT TELL ANYONE ABOUT ME OR ANYTHING YOU HAVE HEARD HERE TODAY.", npc, creature)
+			npcHandler:sayLocalized("npc.navigator.then_take_this_4", npc, creature)
 			player:addOutfitAddon(464, 2)
 			player:addOutfitAddon(463, 2)
 			setPlayerStorageValue(creature, Storage.Navigator, 4)

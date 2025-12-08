@@ -6,7 +6,7 @@ function tortoise.onUse(player, item, frompos, item2, topos)
 		player:addItem(31445, 1)
 		player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Presente, 2)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The tortoise nest empty.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_tortoise.msg_1")
 	end
 
 	return true

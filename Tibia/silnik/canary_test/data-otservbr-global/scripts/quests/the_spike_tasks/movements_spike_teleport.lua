@@ -35,7 +35,7 @@ function spikeTeleport.onStepIn(creature, item, position, fromPosition)
 	if targetPortal.premium then
 		if not player:isPremium() then
 			local toPosition = Position(32624, 31855, 11)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Only premium accounts can use this teleporter.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_spike_teleport.msg_1")
 			player:teleportTo(toPosition)
 			position:sendMagicEffect(CONST_ME_TELEPORT)
 			toPosition:sendMagicEffect(CONST_ME_TELEPORT)

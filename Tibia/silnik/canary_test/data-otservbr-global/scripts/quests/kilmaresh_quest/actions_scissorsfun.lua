@@ -277,7 +277,7 @@ function scissorsfun.onUse(player, item, fromPosition, target, toPosition, isHot
 				player:addItem(key.addItemId, 1)
 			end
 		else
-			player:sendTextMessage(MESSAGE_FAILURE, "Sorry, not possible.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.actions_scissorsfun.msg_1")
 		end
 	end
 	return true

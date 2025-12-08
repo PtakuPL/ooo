@@ -25,7 +25,7 @@ function actions_dipthrah_signs_doors.onUse(player, item, fromPosition, target, 
 	local currentStorageKey = questSteps[aid]
 
 	if not currentStorageKey then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Invalid action ID.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_dipthrah_signs_doors.msg_1")
 		return false
 	end
 
@@ -34,7 +34,7 @@ function actions_dipthrah_signs_doors.onUse(player, item, fromPosition, target, 
 	end
 
 	if player:getStorageValue(currentStorageKey) == 1 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have already completed this step.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_dipthrah_signs_doors.msg_2")
 		return true
 	end
 

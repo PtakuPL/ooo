@@ -90,7 +90,7 @@ function ice.onStepIn(creature, item, position, fromPosition)
 	end
 
 	if fromPosition.y == 31439 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "A bit of warmth returns to your body as you leave the icy cavern.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_ice.msg_1")
 		return true
 	end
 	return true

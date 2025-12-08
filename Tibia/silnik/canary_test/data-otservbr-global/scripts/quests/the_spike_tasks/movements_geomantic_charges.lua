@@ -35,7 +35,7 @@ function geomanticCharges.onStepIn(creature, item, position, fromPosition)
 	if tasksLoaded["CHARGE"] then
 		player:getPosition():sendMagicEffect(12)
 		player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Main, 2)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have charged your body with geomantic energy and can report about it.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_geomantic_charges.msg_1")
 	end
 	return true
 end

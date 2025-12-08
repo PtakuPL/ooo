@@ -21,7 +21,7 @@ function fastWay.onStepIn(creature, item, position, fromPosition)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		player:teleportTo(teleport.position)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You use the secret codes you've read on Maxxen's chest.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_fast_way.msg_1")
 	else
 		local pos = position
 		pos.y = pos.y + 2

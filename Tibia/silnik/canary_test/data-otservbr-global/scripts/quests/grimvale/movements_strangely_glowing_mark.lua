@@ -15,7 +15,7 @@ function strangelyGlowingMark.onStepIn(creature, item, position, fromPosition)
 			return true
 		end
 		player:addHealth(200, true, true)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The mythic fires beneath your feet heal you.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_strangely_glowing_mark.msg_1")
 		player:setStorageValue(199990, os.time() + 60)
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
 	elseif item.itemid == 22077 then
@@ -25,7 +25,7 @@ function strangelyGlowingMark.onStepIn(creature, item, position, fromPosition)
 		player:addCondition(condition)
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 		player:setStorageValue(199991, os.time() + 60)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The mythic fires beneath your feet gave you speed.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_strangely_glowing_mark.msg_2")
 	end
 	return true
 end

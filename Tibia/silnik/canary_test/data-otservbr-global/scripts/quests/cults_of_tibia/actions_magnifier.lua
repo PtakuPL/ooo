@@ -16,12 +16,12 @@ function cultsOfTibiaMagnifier.onUse(player, item, fromPosition, target, toPosit
 	end
 
 	if table.contains({ 2622, 2601, 2596, 2612, 2618 }, target:getId()) then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Nothing special. This picture looks genuine.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_magnifier.msg_1")
 		target:getPosition():sendMagicEffect(CONST_ME_POFF)
 	elseif target:getPosition() == sqm and target:getId() == 2613 and player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) == 8 then
 		target:getPosition():sendMagicEffect(CONST_ME_POFF)
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission, 9)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This is it. It looks like it was painted by a child!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_magnifier.msg_2")
 	end
 
 	return true

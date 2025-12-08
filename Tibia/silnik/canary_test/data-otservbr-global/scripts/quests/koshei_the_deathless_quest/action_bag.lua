@@ -21,9 +21,9 @@ function kosheiBag.onUse(player, item, fromPosition, target, toPosition, isHotke
 			end
 		end
 		player:setStorageValue(483293)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You found a bag.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action_bag.msg_1")
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The bookcase is empty.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action_bag.msg_2")
 	end
 	return true
 end

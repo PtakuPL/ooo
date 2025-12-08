@@ -2,7 +2,7 @@ local cagekey = Action()
 
 function cagekey.onUse(player, item, frompos, item2, topos)
 	if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourteen.Remains) == 2 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a wooden cage key.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_cagekey.msg_1")
 		player:addItem(31379, 1) -- Wooden Cage Key
 		player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourteen.Remains, 3)
 	else

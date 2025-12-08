@@ -8,7 +8,7 @@ function arenaEnter.onStepIn(creature, item, position, fromPosition)
 
 	local pitId = player:getStorageValue(Storage.Quest.U8_0.BarbarianArena.PitDoor)
 	if pitId < 1 or pitId > 10 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You cannot enter without Halvar's permission.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_arena_enter.msg_1")
 		player:teleportTo(fromPosition, true)
 		return true
 	end

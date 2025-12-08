@@ -21,7 +21,7 @@ function outlawQuest.onUse(player, item, fromPosition, target, toPosition, isHot
 			local rewardId, rewardCount = reward[1], reward[2]
 			bag:addItem(rewardId, rewardCount)
 		end
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a bag.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_the_outlaw_camp_quest.msg_1")
 		player:questKV("outlaw"):set("completed", true)
 		player:setStorageValue(Storage.Quest.U6_4.OutlawCampQuest, 1)
 	end

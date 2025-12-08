@@ -7,7 +7,7 @@ function checkOasis.onStepIn(creature, item, position, fromPosition)
 	end
 
 	if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Life.Mission) == 2 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a lovely oasis with green fauna and juicy fruit. You didn't expect that.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_check_oasis.msg_1")
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Life.Mission, 3)
 	end
 	return true

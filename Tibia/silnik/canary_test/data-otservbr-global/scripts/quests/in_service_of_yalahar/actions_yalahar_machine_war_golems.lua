@@ -35,7 +35,7 @@ function inServiceYalaharWarGolem.onUse(player, item, fromPosition, target, toPo
 	end
 
 	if player:getItemCount(8775) < 4 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't have enough gear wheels to activate the machine.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_yalahar_machine_war_golems.msg_1")
 		return true
 	end
 
@@ -46,7 +46,7 @@ function inServiceYalaharWarGolem.onUse(player, item, fromPosition, target, toPo
 		player:say("*CLICK*", TALKTYPE_MONSTER_YELL, false, player, machineGroup.machines[i])
 	end
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You insert all 4 gear wheels, them adjusting the teleporter to transport you to the deeper floor")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_yalahar_machine_war_golems.msg_2")
 	return true
 end
 

@@ -15,7 +15,7 @@ function cultsOfTibiaTouch.onUse(player, item, fromPosition, target, toPosition,
 			if wallItem then
 				Position(32396, 31806, 8):sendMagicEffect(CONST_ME_POFF)
 				wallItem:remove()
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You hear a loud grinding sound not very far from you. something very heavy seems to have moved.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_torch.msg_1")
 				Game.setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Humans.WallDecaying, os.time() + 306)
 				addEvent(Game.createItem, 300000, 1295, 1, Position(32396, 31806, 8))
 			end

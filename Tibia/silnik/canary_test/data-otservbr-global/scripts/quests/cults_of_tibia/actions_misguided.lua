@@ -59,7 +59,7 @@ function cultsOfTibiaMisguided.onUse(player, item, position, target, targetPosit
 			newCreature:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		end
 
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You paralyse the bully and the amulet reveals the true face of the creature behind the possession of this misguided creature.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_misguided.msg_1")
 		local it = player:addItem(25296, 1)
 		if map == "illusion" then
 			changeMap("reality")

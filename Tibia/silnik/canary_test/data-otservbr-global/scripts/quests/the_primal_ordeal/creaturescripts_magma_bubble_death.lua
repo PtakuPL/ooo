@@ -14,7 +14,7 @@ function magmaBubbleDeath.onDeath(creature, corpse, killer, mostDamage, unjustif
 		local player = Player(key)
 		if player then
 			if not hasOutfit(player) then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Congratulations you received the Fire-Fighter Outfit.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.creaturescripts_magma_bubble_death.msg_1")
 				player:addOutfit(1569, 0)
 				player:addOutfit(1568, 0)
 			end

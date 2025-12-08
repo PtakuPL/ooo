@@ -11,7 +11,7 @@ function theThievesVine.onUse(player, item, fromPosition, target, toPosition, is
 		return true
 	end
 	if player:isPzLocked() then
-		player:sendTextMessage(MESSAGE_FAILURE, "You can not enter a protection zone after attacking another player.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.actions_climbing_vine.msg_1")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return true
 	end

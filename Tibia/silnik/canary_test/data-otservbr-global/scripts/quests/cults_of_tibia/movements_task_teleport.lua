@@ -34,7 +34,7 @@ function taskTeleport.onStepIn(creature, item, position, fromPosition)
 			local storage = (player:getStorageValue(value.storage) < 0 and 0 or player:getStorageValue(value.storage))
 			local attribute = teleport:getCustomAttribute("task") or ""
 			if attribute:find(player:getName()) or storage >= value.max then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The power of these souls is now within you. You cannot absorb any more souls.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_task_teleport.msg_1")
 				return false
 			end
 			attribute = string.format("%s, %s", attribute, player:getName())

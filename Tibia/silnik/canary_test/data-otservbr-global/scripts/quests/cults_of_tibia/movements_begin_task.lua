@@ -33,7 +33,7 @@ function beginTask.onEquip(player, item, slot, isCheck)
 		end
 		if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Misguided.Mission) == 2 then
 			player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Misguided.Mission, 3)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The amulet burns your skin. It hungers for energy right now, gather a large amount of energy as fast as possible to charge it.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_begin_task.msg_1")
 		end
 	end
 	addEvent(fallFloor, 10000, player:getId(), item:getId())

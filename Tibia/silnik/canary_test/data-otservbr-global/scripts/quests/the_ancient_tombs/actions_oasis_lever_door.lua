@@ -15,7 +15,7 @@ end
 local theAncientOasisLever = Action()
 function theAncientOasisLever.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if item.itemid == 1662 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You first must find the Carrot under one of the three hats to get the access!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_oasis_lever_door.msg_1")
 		return true
 	end
 
@@ -29,7 +29,7 @@ function theAncientOasisLever.onUse(player, item, fromPosition, target, toPositi
 		doorPosition:sendMagicEffect(CONST_ME_MAGIC_GREEN)
 		Game.createItem(3595, 1, hatPosition)
 
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You found the carrot! The door is open!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_oasis_lever_door.msg_2")
 		item:transform(2773)
 		addEvent(revertCarrotAndLever, 4 * 1000, toPosition, hatPosition)
 
@@ -40,7 +40,7 @@ function theAncientOasisLever.onUse(player, item, fromPosition, target, toPositi
 		return true
 	end
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You guessed wrong! Take this! Carrot changed now the Hat!")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_oasis_lever_door.msg_3")
 	doAreaCombatHealth(player, COMBAT_PHYSICALDAMAGE, player:getPosition(), 0, -200, -200, CONST_ME_POFF)
 	return true
 end

@@ -8,9 +8,9 @@ function heroRathletonReward.onUse(player, item, fromPosition, target, toPositio
 		player:addItem(836)
 		player:addAchievement("The Professors Nut")
 		player:setStorageValue(24850, 1) -- storage da recompensa
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You opened the Maxxen's chest.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_reward.msg_1")
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The chest is empty.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_reward.msg_2")
 	end
 	return true
 end

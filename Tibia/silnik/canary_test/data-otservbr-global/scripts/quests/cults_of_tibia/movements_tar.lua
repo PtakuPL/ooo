@@ -132,10 +132,10 @@ function tar.onStepOut(creature, item, position, fromPosition)
 			player:getPosition():sendMagicEffect(CONST_ME_POFF)
 			if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Barkless.Tar) < 3 then
 				player:teleportTo(Position(32737, 31451, 8), true)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are not ready yet.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_tar.msg_1")
 				return false
 			end
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You traverse the tar unharmed.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_tar.msg_2")
 		end
 	end
 	if item:getActionId() == 5530 then
@@ -143,10 +143,10 @@ function tar.onStepOut(creature, item, position, fromPosition)
 			player:getPosition():sendMagicEffect(CONST_ME_POFF)
 			if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Barkless.Sulphur) < 3 then
 				player:teleportTo(Position(32718, 31444, 8), true)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are not ready yet.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_tar.msg_3")
 				return false
 			end
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You traverse the sulphur unharmed.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_tar.msg_4")
 		end
 	end
 	return true

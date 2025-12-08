@@ -34,8 +34,8 @@ function cultsOfTibiaCounter.onUse(player, item, fromPosition, target, toPositio
 			for i, position in pairs(config) do
 				position:sendMagicEffect(CONST_ME_POFF)
 			end
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "A sandstorm has destroyed almost all pillars. The effect of the counteragent worked different than expected.")
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The sandstorm has not only destroyed the oasis, but also revealed some paving tiles and a lever.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_counter_agent.msg_1")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_counter_agent.msg_2")
 		end
 	end
 	return true

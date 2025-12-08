@@ -1,0 +1,439 @@
+#!/bin/bash
+#===============================================================================
+# I18N AUTONOMOUS WORKER v3.0 - Pełna migracja wszystkich plików Lua
+#===============================================================================
+# Przetwarza: NPC, Scripts, Actions, Events, Quests, Movements, TalkActions, etc.
+#===============================================================================
+
+set -e
+
+WORK_DIR="/home/ptaku/serweryt/Tibia/silnik/canary_test"
+LOG_FILE="$WORK_DIR/i18n_worker.log"
+CHANGES_LOG="$WORK_DIR/i18n_changes_documentation.md"
+I18N_DIR="$WORK_DIR/i18n"
+EXCLUDED_FILE="$WORK_DIR/i18n_excluded_files.txt"
+PROCESSED_FILE="$WORK_DIR/i18n_processed_files.txt"
+
+# Katalogi do przeszukania
+SCAN_DIRS=(
+    "data-otservbr-global/npc"
+    "data-otservbr-global/scripts"
+    "data-otservbr-global/scripts/actions"
+    "data-otservbr-global/scripts/talkactions"
+    "data-otservbr-global/scripts/movements"
+    "data-otservbr-global/scripts/creaturescripts"
+    "data-otservbr-global/scripts/quests"
+    "data-otservbr-global/scripts/spells"
+    "data/scripts"
+    "data/npclib"
+    "data/libs"
+)
+
+TOTAL_FILES_MIGRATED=0
+TOTAL_STRINGS_PROCESSED=0
+CYCLE_COUNT=0
+FILES_PER_CYCLE=5
+
+log() {
+    local level="$1"
+    local msg="$2"
+    local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+    echo -e "[$timestamp] [$level] $msg" | tee -a "$LOG_FILE"
+}
+
+log_info() { log "INFO" "$1"; }
+log_success() { log "SUCCESS" "$1"; }
+log_warn() { log "WARN" "$1"; }
+
+document_change() {
+    local file="$1"
+    local action="$2"
+    local details="$3"
+    local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+    
+    echo "" >> "$CHANGES_LOG"
+    echo "## [$timestamp] $action" >> "$CHANGES_LOG"
+    echo "**Plik:** \`$file\`" >> "$CHANGES_LOG"
+    echo "$details" >> "$CHANGES_LOG"
+    echo "---" >> "$CHANGES_LOG"
+}
+
+init_files() {
+    [ ! -f "$CHANGES_LOG" ] && echo "# I18N Changes Documentation" > "$CHANGES_LOG"
+    [ ! -f "$EXCLUDED_FILE" ] && touch "$EXCLUDED_FILE"
+    [ ! -f "$PROCESSED_FILE" ] && touch "$PROCESSED_FILE"
+    
+    # Utwórz katalogi i18n jeśli nie istnieją
+    for lang in en pl de es pt; do
+        mkdir -p "$I18N_DIR/$lang"
+        for category in npc scripts actions quests events talkactions movements spells; do
+            [ ! -f "$I18N_DIR/$lang/$category.json" ] && echo "{}" > "$I18N_DIR/$lang/$category.json"
+        done
+    done
+}
+
+is_excluded() {
+    local file="$1"
+    grep -qF "$file" "$EXCLUDED_FILE" 2>/dev/null
+}
+
+is_processed() {
+    local file="$1"
+    grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null
+}
+
+mark_processed() {
+    local file="$1"
+    echo "$file" >> "$PROCESSED_FILE"
+}
+
+mark_excluded() {
+    local file="$1"
+    echo "$file" >> "$EXCLUDED_FILE"
+}
+
+# Określ kategorię pliku na podstawie ścieżki
+get_category() {
+    local file="$1"
+    if [[ "$file" == *"/npc/"* ]]; then
+        echo "npc"
+    elif [[ "$file" == *"/actions/"* ]]; then
+        echo "actions"
+    elif [[ "$file" == *"/quests/"* ]]; then
+        echo "quests"
+    elif [[ "$file" == *"/talkactions/"* ]]; then
+        echo "talkactions"
+    elif [[ "$file" == *"/movements/"* ]]; then
+        echo "movements"
+    elif [[ "$file" == *"/creaturescripts/"* ]]; then
+        echo "events"
+    elif [[ "$file" == *"/spells/"* ]]; then
+        echo "spells"
+    else
+        echo "scripts"
+    fi
+}
+
+# Główna funkcja migracji pliku Lua
+migrate_lua_file() {
+    local lua_file="$1"
+    local file_name=$(basename "$lua_file" .lua)
+    local category=$(get_category "$lua_file")
+    local relative_path="${lua_file#$WORK_DIR/}"
+    
+    log_info "📄 Przetwarzam: $relative_path"
+    
+    # Sprawdź czy już zmigrowany
+    if grep -q "Localized\|getTranslation\|i18n\." "$lua_file" 2>/dev/null; then
+        log_info "   ⏭️ Już zmigrowany"
+        mark_processed "$lua_file"
+        return 1
+    fi
+    
+    # Wzorce do wyszukania - różne typy stringów do migracji
+    local has_strings=false
+    
+    # Sprawdź różne wzorce stringów
+    if grep -qE 'player:sendTextMessage\s*\([^,]+,\s*"[^"]{10,}"' "$lua_file" 2>/dev/null; then
+        has_strings=true
+    elif grep -qE 'npcHandler:say\s*\(\s*"[^"]{10,}"' "$lua_file" 2>/dev/null; then
+        has_strings=true
+    elif grep -qE 'creature:say\s*\(\s*"[^"]{10,}"' "$lua_file" 2>/dev/null; then
+        has_strings=true
+    elif grep -qE 'sendChannelMessage\s*\([^,]+,\s*"[^"]{10,}"' "$lua_file" 2>/dev/null; then
+        has_strings=true
+    elif grep -qE 'doPlayerSendTextMessage\s*\([^,]+,\s*[^,]+,\s*"[^"]{10,}"' "$lua_file" 2>/dev/null; then
+        has_strings=true
+    fi
+    
+    if [ "$has_strings" = false ]; then
+        log_info "   ⏭️ Brak stringów do migracji"
+        mark_excluded "$lua_file"
+        return 1
+    fi
+    
+    # Backup
+    local backup_file="${lua_file}.bak.$(date +%Y%m%d_%H%M%S)"
+    cp "$lua_file" "$backup_file"
+    
+    local temp_file=$(mktemp)
+    local transformed=0
+    local key_counter=1
+    local json_file="$I18N_DIR/en/${category}.json"
+    
+    while IFS= read -r line || [ -n "$line" ]; do
+        local new_line="$line"
+        local modified=false
+        
+        # Wzorzec 1: player:sendTextMessage(TYPE, "text")
+        if echo "$line" | grep -qE 'player:sendTextMessage\s*\([^,]+,\s*"[^"]{10,}"'; then
+            local original_text=$(echo "$line" | sed -n 's/.*player:sendTextMessage\s*([^,]*,\s*"\([^"]*\)".*/\1/p')
+            if [ -n "$original_text" ] && [ ${#original_text} -gt 10 ]; then
+                local key_base=$(echo "$original_text" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z ]//g' | awk '{print $1"_"$2"_"$3}' | sed 's/_*$//' | head -c 20)
+                local full_key="${category}.${file_name}.${key_base}_${key_counter}"
+                key_counter=$((key_counter + 1))
+                
+                new_line=$(echo "$line" | sed "s|player:sendTextMessage(\([^,]*\),\s*\"[^\"]*\"|player:sendLocalizedMessage(\1, \"${full_key}\"|")
+                modified=true
+                
+                # Dodaj do JSON
+                python3 -c "
+import json
+try:
+    with open('$json_file', 'r') as f: data = json.load(f)
+except: data = {}
+data['$full_key'] = '''$original_text'''
+with open('$json_file', 'w') as f: json.dump(data, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+                
+                log_info "      🔑 $full_key"
+            fi
+        fi
+        
+        # Wzorzec 2: npcHandler:say("text", ...)
+        if echo "$line" | grep -qE 'npcHandler:say\s*\(\s*"[^"]{10,}"' && [ "$modified" = false ]; then
+            local original_text=$(echo "$line" | sed -n 's/.*npcHandler:say\s*(\s*"\([^"]*\)".*/\1/p')
+            if [ -n "$original_text" ] && [ ${#original_text} -gt 10 ]; then
+                local key_base=$(echo "$original_text" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z ]//g' | awk '{print $1"_"$2"_"$3}' | sed 's/_*$//' | head -c 20)
+                local full_key="${category}.${file_name}.${key_base}_${key_counter}"
+                key_counter=$((key_counter + 1))
+                
+                new_line=$(echo "$line" | sed "s|npcHandler:say(\s*\"[^\"]*\"|npcHandler:sayLocalized(\"${full_key}\"|")
+                modified=true
+                
+                python3 -c "
+import json
+try:
+    with open('$json_file', 'r') as f: data = json.load(f)
+except: data = {}
+data['$full_key'] = '''$original_text'''
+with open('$json_file', 'w') as f: json.dump(data, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+                
+                log_info "      🔑 $full_key"
+            fi
+        fi
+        
+        # Wzorzec 3: creature:say("text", ...)
+        if echo "$line" | grep -qE 'creature:say\s*\(\s*"[^"]{10,}"' && [ "$modified" = false ]; then
+            local original_text=$(echo "$line" | sed -n 's/.*creature:say\s*(\s*"\([^"]*\)".*/\1/p')
+            if [ -n "$original_text" ] && [ ${#original_text} -gt 10 ]; then
+                local key_base=$(echo "$original_text" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z ]//g' | awk '{print $1"_"$2"_"$3}' | sed 's/_*$//' | head -c 20)
+                local full_key="${category}.${file_name}.${key_base}_${key_counter}"
+                key_counter=$((key_counter + 1))
+                
+                new_line=$(echo "$line" | sed "s|creature:say(\s*\"[^\"]*\"|creature:sayLocalized(\"${full_key}\"|")
+                modified=true
+                
+                python3 -c "
+import json
+try:
+    with open('$json_file', 'r') as f: data = json.load(f)
+except: data = {}
+data['$full_key'] = '''$original_text'''
+with open('$json_file', 'w') as f: json.dump(data, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+                
+                log_info "      🔑 $full_key"
+            fi
+        fi
+        
+        if [ "$modified" = true ]; then
+            transformed=$((transformed + 1))
+        fi
+        
+        echo "$new_line" >> "$temp_file"
+    done < "$lua_file"
+    
+    if [ "$transformed" -gt 0 ]; then
+        mv "$temp_file" "$lua_file"
+        mark_processed "$lua_file"
+        
+        log_success "   ✅ ZMIGROWANO $transformed stringów!"
+        document_change "$relative_path" "Migracja: $category/$file_name" "Stringów: $transformed"
+        
+        TOTAL_FILES_MIGRATED=$((TOTAL_FILES_MIGRATED + 1))
+        TOTAL_STRINGS_PROCESSED=$((TOTAL_STRINGS_PROCESSED + transformed))
+        
+        # Usuń backup jeśli sukces
+        rm -f "$backup_file"
+        return 0
+    else
+        rm -f "$temp_file" "$backup_file"
+        mark_excluded "$lua_file"
+        return 1
+    fi
+}
+
+# Znajdź wszystkie pliki do przetworzenia
+find_pending_files() {
+    local count=0
+    local max="$1"
+    
+    for dir in "${SCAN_DIRS[@]}"; do
+        local full_dir="$WORK_DIR/$dir"
+        if [ -d "$full_dir" ]; then
+            while IFS= read -r -d '' lua_file; do
+                if ! is_excluded "$lua_file" && ! is_processed "$lua_file"; then
+                    echo "$lua_file"
+                    count=$((count + 1))
+                    if [ "$count" -ge "$max" ]; then
+                        return
+                    fi
+                fi
+            done < <(find "$full_dir" -maxdepth 2 -name "*.lua" -type f -print0 2>/dev/null)
+        fi
+    done
+}
+
+# Zlicz statystyki
+count_stats() {
+    local total=0
+    local migrated=0
+    local excluded=0
+    
+    for dir in "${SCAN_DIRS[@]}"; do
+        local full_dir="$WORK_DIR/$dir"
+        if [ -d "$full_dir" ]; then
+            local dir_total=$(find "$full_dir" -maxdepth 2 -name "*.lua" -type f 2>/dev/null | wc -l)
+            total=$((total + dir_total))
+        fi
+    done
+    
+    [ -f "$PROCESSED_FILE" ] && migrated=$(wc -l < "$PROCESSED_FILE")
+    [ -f "$EXCLUDED_FILE" ] && excluded=$(wc -l < "$EXCLUDED_FILE")
+    
+    local pending=$((total - migrated - excluded))
+    [ "$pending" -lt 0 ] && pending=0
+    
+    echo "$migrated|$excluded|$pending|$total"
+}
+
+phase_migration() {
+    log_info "═══════════════════════════════════════════════════════════════"
+    log_info "📦 FAZA MIGRACJI - Przetwarzanie plików Lua"
+    log_info "═══════════════════════════════════════════════════════════════"
+    
+    local migrated_count=0
+    
+    while IFS= read -r lua_file; do
+        if [ -n "$lua_file" ] && [ -f "$lua_file" ]; then
+            if migrate_lua_file "$lua_file"; then
+                migrated_count=$((migrated_count + 1))
+            fi
+        fi
+    done < <(find_pending_files "$FILES_PER_CYCLE")
+    
+    log_info "📊 Zmigrowano w tym cyklu: $migrated_count plików"
+}
+
+phase_sync() {
+    log_info "═══════════════════════════════════════════════════════════════"
+    log_info "🔄 FAZA SYNC - Synchronizacja tłumaczeń"
+    log_info "═══════════════════════════════════════════════════════════════"
+    
+    # Kopiuj klucze EN do innych języków
+    for category in npc scripts actions quests events talkactions movements spells; do
+        local en_file="$I18N_DIR/en/${category}.json"
+        if [ -f "$en_file" ]; then
+            for lang in pl de es pt; do
+                local lang_file="$I18N_DIR/$lang/${category}.json"
+                if [ ! -f "$lang_file" ] || [ "$(cat "$lang_file")" = "{}" ]; then
+                    cp "$en_file" "$lang_file"
+                fi
+            done
+        fi
+    done
+    
+    log_info "   ✅ Synchronizacja zakończona"
+}
+
+update_status() {
+    local stats=$(count_stats)
+    IFS='|' read -r migrated excluded pending total <<< "$stats"
+    
+    local percent=0
+    [ "$total" -gt 0 ] && percent=$((100 * (migrated + excluded) / total))
+    
+    # Aktualizuj plik statusu
+    cat > "$WORK_DIR/I18N_STATUS.md" << EOF
+# 🌍 I18N Migration Status
+
+**Ostatnia aktualizacja:** $(date '+%Y-%m-%d %H:%M:%S')
+
+## 📊 Postęp
+
+| Metryka | Wartość |
+|---------|---------|
+| ✅ Zmigrowane | $migrated plików |
+| ⏭️ Wykluczone | $excluded plików |
+| ⏳ Oczekujące | $pending plików |
+| 📁 Łącznie | $total plików |
+| 📈 Postęp | **${percent}%** |
+
+## 🔄 Worker Status
+
+- **Cykl:** #$CYCLE_COUNT
+- **Pliki/cykl:** $FILES_PER_CYCLE
+- **Stringów:** $TOTAL_STRINGS_PROCESSED
+
+## 📂 Kategorie
+
+$(for cat in npc scripts actions quests events talkactions movements spells; do
+    local cat_file="$I18N_DIR/en/${cat}.json"
+    if [ -f "$cat_file" ]; then
+        local keys=$(python3 -c "import json; print(len(json.load(open('$cat_file'))))" 2>/dev/null || echo "0")
+        echo "- **$cat**: $keys kluczy"
+    fi
+done)
+
+---
+*Worker v3.0 - Pełna migracja Lua*
+EOF
+    
+    log_info "📊 Status: $migrated migr. | $excluded wyklucz. | $pending oczek. | ${percent}%"
+}
+
+main() {
+    cd "$WORK_DIR"
+    
+    echo ""
+    echo "╔══════════════════════════════════════════════════════════════════╗"
+    echo "║     I18N AUTONOMOUS WORKER v3.0 - Full Lua Migration            ║"
+    echo "╚══════════════════════════════════════════════════════════════════╝"
+    echo ""
+    
+    init_files
+    log_info "🚀 Worker v3.0 uruchomiony"
+    log_info "📁 Katalog: $WORK_DIR"
+    log_info "📂 Skanowane katalogi: ${#SCAN_DIRS[@]}"
+    
+    while true; do
+        CYCLE_COUNT=$((CYCLE_COUNT + 1))
+        
+        echo ""
+        log_info "═══════════════════════════════════════════════════════════════"
+        log_info "🔄 CYKL #$CYCLE_COUNT"
+        log_info "═══════════════════════════════════════════════════════════════"
+        
+        update_status
+        phase_migration
+        phase_sync
+        
+        # Sprawdź czy są jeszcze pliki do przetworzenia
+        local remaining=$(find_pending_files 1 | wc -l)
+        if [ "$remaining" -eq 0 ]; then
+            log_success "🎉 WSZYSTKIE PLIKI PRZETWORZONE!"
+            update_status
+            log_info "💤 Sprawdzam ponownie za 60 sekund..."
+            sleep 60
+        else
+            log_info "💤 Przerwa 15 sekund..."
+            sleep 15
+        fi
+    done
+}
+
+trap 'log_info "⛔ Worker zatrzymany"; update_status; exit 0' SIGINT SIGTERM
+
+main "$@"

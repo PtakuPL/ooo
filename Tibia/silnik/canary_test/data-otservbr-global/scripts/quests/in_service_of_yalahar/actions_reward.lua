@@ -5,27 +5,27 @@ function inServiceYalaharReward.onUse(player, item, fromPosition, target, toPosi
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 54)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission10, 5) -- StorageValue for Questlog "Mission 10: The Final Battle"
 			player:addItem(8862, 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a yalahari armor.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_reward.msg_1")
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The chest is empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_reward.msg_2")
 		end
 	elseif item.uid == 3089 then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 53 then
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 54)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission10, 5) -- StorageValue for Questlog "Mission 10: The Final Battle"
 			player:addItem(8864, 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a yalahari mask.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_reward.msg_3")
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The chest is empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_reward.msg_4")
 		end
 	elseif item.uid == 3090 then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 53 then
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 54)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission10, 5) -- StorageValue for Questlog "Mission 10: The Final Battle"
 			player:addItem(8863, 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a yalahari leg piece.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_reward.msg_5")
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The chest is empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_reward.msg_6")
 		end
 	end
 

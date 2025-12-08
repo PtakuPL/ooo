@@ -26,7 +26,7 @@ function inServiceYalaharMechanism.onUse(player, item, fromPosition, target, toP
 			player:teleportTo(mechanisms[item.uid].pos)
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The gate mechanism won't move. You probably have to find a way around until you figure out how to operate the gate.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_mechanism.msg_1")
 		end
 	elseif mechanisms2[item.uid] then
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)

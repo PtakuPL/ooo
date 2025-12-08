@@ -16,7 +16,7 @@ local config = {
 local wrathEmperorMiss11Payback = Action()
 function wrathEmperorMiss11Payback.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if Game.getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission11) == 1 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The arena is already in use.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_mission11_payback_time_lever.msg_1")
 		return true
 	end
 

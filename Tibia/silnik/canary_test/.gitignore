@@ -413,3 +413,4 @@ cmake-build-*
 .env.github_models
 .env*
 .env*
+.env.local

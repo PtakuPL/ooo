@@ -1,0 +1,20 @@
+{
+  "category": "events",
+  "last_updated": "2025-12-08 21:28:34",
+  "status": "not_started",
+  "progress": {
+    "percentage": 0,
+    "total_keys": 0,
+    "translated_pl": 0,
+    "files_processed": 0,
+    "files_remaining": 0
+  },
+  "languages": {
+    "total": 53,
+    "with_translations": 0
+  },
+  "details": {
+    "source_file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/i18n/en/events.json",
+    "primary_translation": "/home/ptaku/serweryt/Tibia/silnik/canary_test/i18n/pl/events.json"
+  }
+}

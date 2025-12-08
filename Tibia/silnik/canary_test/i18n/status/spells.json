@@ -1,0 +1,20 @@
+{
+  "category": "spells",
+  "last_updated": "2025-12-08 21:28:24",
+  "status": "completed",
+  "progress": {
+    "percentage": 100,
+    "total_keys": 100,
+    "translated_pl": 100,
+    "files_processed": 0,
+    "files_remaining": 0
+  },
+  "languages": {
+    "total": 53,
+    "with_translations": 53
+  },
+  "details": {
+    "source_file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/i18n/en/spells.json",
+    "primary_translation": "/home/ptaku/serweryt/Tibia/silnik/canary_test/i18n/pl/spells.json"
+  }
+}

@@ -56,11 +56,17 @@ SCAN_DIRS=(
     "src/map"
     "src/server"
     "src/utils"
-    # Web
+    # Web (html_copy)
     "html_copy"
     "html_copy/app"
     "html_copy/routes"
     "html_copy/resources"
+    "html_copy/resources/views"
+    # Instalka/Klient (testyy)
+    "testyy"
+    "testyy/browser"
+    "testyy/modules"
+    "testyy/android"
 )
 
 # Rozszerzenia plików do przetworzenia
@@ -228,6 +234,42 @@ is_category_completed() {
     local phase=$(get_current_phase)
     local status=$(jq -r ".phases[] | select(.id == $phase) | .categories[] | select(.id == \"$category\") | .status" "$WORK_PLAN" 2>/dev/null)
     [ "$status" == "completed" ]
+}
+
+# Sprawdź czy są nowe pliki do przetworzenia (nie w processed ani excluded)
+count_new_files() {
+    local count=0
+    for dir in "${SCAN_DIRS[@]}"; do
+        local full_dir="$WORK_DIR/$dir"
+        [ ! -d "$full_dir" ] && continue
+        
+        while IFS= read -r -d '' file; do
+            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
+            grep -qF "$file" "$EXCLUDED_FILE" 2>/dev/null && continue
+            count=$((count + 1))
+        done < <(find "$full_dir" -maxdepth 3 -type f \( -name "*.lua" -o -name "*.cpp" -o -name "*.php" -o -name "*.html" \) -print0 2>/dev/null)
+    done
+    echo "$count"
+}
+
+# Znajdź kategorię dla nowego pliku
+detect_file_category() {
+    local file="$1"
+    if [[ "$file" == *"html_copy"* ]]; then
+        echo "web_php"
+    elif [[ "$file" == *"testyy"* ]]; then
+        echo "client_ui"
+    elif [[ "$file" == *"/npc/"* ]]; then
+        echo "npc"
+    elif [[ "$file" == *"/scripts/"* ]]; then
+        echo "scripts"
+    elif [[ "$file" == *"/monster/"* ]]; then
+        echo "monsters"
+    elif [[ "$file" == *"/src/"* ]]; then
+        echo "server_cpp"
+    else
+        echo "misc"
+    fi
 }
 
 # Aktualizuj postęp kategorii
@@ -398,6 +440,114 @@ generate_checklist() {
     done
     
     echo -e "$output"
+}
+
+#===============================================================================
+# AKTUALIZACJA STATUSU KATEGORII
+#===============================================================================
+# Tworzy/aktualizuje plik JSON dla każdej kategorii z dokładnymi statystykami
+update_category_status() {
+    local category="$1"
+    local status_file="$I18N_DIR/status/${category}.json"
+    local timestamp=$(date "+%Y-%m-%d %H:%M:%S")
+    
+    mkdir -p "$I18N_DIR/status"
+    
+    # Policz klucze dla tej kategorii (z angielskiego jako źródła)
+    local total_keys=0
+    if [ -f "$I18N_DIR/en/${category}.json" ]; then
+        total_keys=$(python3 -c "import json; print(len(json.load(open('$I18N_DIR/en/${category}.json'))))" 2>/dev/null || echo "0")
+    fi
+    
+    # Policz przetłumaczone klucze (polski jako główny)
+    local translated_pl=0
+    if [ -f "$I18N_DIR/pl/${category}.json" ]; then
+        translated_pl=$(python3 -c "import json; d=json.load(open('$I18N_DIR/pl/${category}.json')); print(sum(1 for v in d.values() if v and v.strip()))" 2>/dev/null || echo "0")
+    fi
+    [ -z "$translated_pl" ] && translated_pl=0
+    
+    # Policz pliki przetworzonych w tej kategorii
+    local files_processed=0
+    case "$category" in
+        npc) files_processed=$(grep -c "/npc/" "$PROCESSED_FILE" 2>/dev/null | tr -d '\n' || echo "0") ;;
+        scripts) files_processed=$(grep -cE "/scripts/|/events/|/actions/" "$PROCESSED_FILE" 2>/dev/null | tr -d '\n' || echo "0") ;;
+        items) files_processed=$(grep -c "/items/" "$PROCESSED_FILE" 2>/dev/null | tr -d '\n' || echo "0") ;;
+        monsters) files_processed=$(grep -c "/monster/" "$PROCESSED_FILE" 2>/dev/null | tr -d '\n' || echo "0") ;;
+        spells) files_processed=$(grep -c "/spells/" "$PROCESSED_FILE" 2>/dev/null | tr -d '\n' || echo "0") ;;
+        server) files_processed=$(grep -c "/src/" "$PROCESSED_FILE" 2>/dev/null | tr -d '\n' || echo "0") ;;
+        ui) files_processed=$(grep -cE "html_copy|testyy" "$PROCESSED_FILE" 2>/dev/null | tr -d '\n' || echo "0") ;;
+        *) files_processed=$(grep -c "/$category/" "$PROCESSED_FILE" 2>/dev/null | tr -d '\n' || echo "0") ;;
+    esac
+    [ -z "$files_processed" ] && files_processed=0
+    
+    # Policz pozostałe pliki do przetworzenia
+    local files_remaining=0
+    case "$category" in
+        npc) files_remaining=$(find data-otservbr-global/npc data-canary/npc -name "*.lua" 2>/dev/null | wc -l | tr -d ' ') ;;
+        scripts) files_remaining=$(find data-otservbr-global/scripts data/scripts -name "*.lua" 2>/dev/null | wc -l | tr -d ' ') ;;
+        items) files_remaining=$(find data/items -name "*.xml" 2>/dev/null | wc -l | tr -d ' ') ;;
+        monsters) files_remaining=$(find data-otservbr-global/monster data-canary/monster -name "*.xml" 2>/dev/null | wc -l | tr -d ' ') ;;
+        ui) files_remaining=$(find html_copy testyy -name "*.php" -o -name "*.html" 2>/dev/null | wc -l | tr -d ' ') ;;
+        *) files_remaining=0 ;;
+    esac
+    [ -z "$files_remaining" ] && files_remaining=0
+    files_remaining=$((files_remaining - files_processed))
+    [ "$files_remaining" -lt 0 ] && files_remaining=0
+    
+    # Oblicz procent ukończenia
+    local pct=0
+    [ "$total_keys" -gt 0 ] && pct=$((translated_pl * 100 / total_keys))
+    
+    # Określ status
+    local status="not_started"
+    [ "$files_processed" -gt 0 ] && status="in_progress"
+    [ "$pct" -ge 95 ] && status="completed"
+    
+    # Policz języki z tłumaczeniami
+    local langs_with_translations=0
+    for lang in "${LANGUAGES[@]}"; do
+        if [ -f "$I18N_DIR/$lang/${category}.json" ]; then
+            local lang_keys=$(python3 -c "import json; d=json.load(open('$I18N_DIR/$lang/${category}.json')); print(sum(1 for v in d.values() if v and v.strip()))" 2>/dev/null || echo "0")
+            [ "$lang_keys" -gt 0 ] && langs_with_translations=$((langs_with_translations + 1))
+        fi
+    done
+    
+    # Zapisz status do JSON
+    cat > "$status_file" << EOF
+{
+  "category": "$category",
+  "last_updated": "$timestamp",
+  "status": "$status",
+  "progress": {
+    "percentage": $pct,
+    "total_keys": $total_keys,
+    "translated_pl": $translated_pl,
+    "files_processed": $files_processed,
+    "files_remaining": $files_remaining
+  },
+  "languages": {
+    "total": ${#LANGUAGES[@]},
+    "with_translations": $langs_with_translations
+  },
+  "details": {
+    "source_file": "$I18N_DIR/en/${category}.json",
+    "primary_translation": "$I18N_DIR/pl/${category}.json"
+  }
+}
+EOF
+    
+    log_info "📊 Status kategorii '$category': $pct% ($translated_pl/$total_keys kluczy)"
+}
+
+# Aktualizuj status wszystkich kategorii
+update_all_categories_status() {
+    local categories=("npc" "scripts" "items" "monsters" "spells" "server" "ui" "quests" "events" "actions")
+    
+    for cat in "${categories[@]}"; do
+        update_category_status "$cat"
+    done
+    
+    log_info "📊 Zaktualizowano status ${#categories[@]} kategorii"
 }
 
 #===============================================================================
@@ -1513,10 +1663,27 @@ main() {
         # Aktualizuj status aktywności
         update_activity "cycle" "Cykl #$CYCLE_COUNT" "$phase_name - $current_category" "in_progress" "NPC:$npc_keys Scripts:$scripts_keys Items:$items_keys"
         
+        # Aktualizuj statusy wszystkich kategorii (pliki JSON)
+        update_all_categories_status
+        
         update_status
         
-        # Sprawdź czy aktualna kategoria jest zakończona
-        if is_category_completed "$current_category"; then
+        # KLUCZOWE: Sprawdź czy są NOWE pliki do przetworzenia
+        local new_files_count=$(count_new_files)
+        log_info "📊 Nowych plików do przetworzenia: $new_files_count"
+        
+        if [ "$new_files_count" -gt 0 ]; then
+            # Są nowe pliki! Przetwarzaj je
+            MODE="extraction"
+            log_info "🔍 Znaleziono $new_files_count nowych plików - przetwarzam..."
+            
+            update_activity "scan" "Skanowanie" "Nowe pliki" "in_progress" "$new_files_count do przetworzenia"
+            
+            process_files
+            process_pending_categories
+            sync_translations
+            
+        elif is_category_completed "$current_category"; then
             log_success "✅ Kategoria $current_category ZAKOŃCZONA!"
             
             # Przejdź do następnej kategorii lub fazy
@@ -1525,10 +1692,10 @@ main() {
                 MODE="translations"
                 log_success "🏆 EKSTRAKCJA ZAKOŃCZONA! Przechodzę do tłumaczeń..."
                 
-                # Rozpocznij tłumaczenia
                 sync_translations
                 
                 log_info "💤 Tłumaczenia zsynchronizowane. Sprawdzam za 300 sekund..."
+                update_activity "idle" "-" "Oczekiwanie" "completed" "Wszystko przetworzone"
                 sleep 300
                 continue
             fi
@@ -1536,6 +1703,18 @@ main() {
             # Pobierz nową kategorię
             current_category=$(get_current_category)
             current_phase=$(get_current_phase)
+            log_info "➡️ Przechodzę do: $current_category (faza $current_phase)"
+        else
+            # Brak nowych plików, kategoria nie zakończona - czekaj
+            MODE="analysis"
+            log_info "💤 Brak nowych plików. Analiza za 60 sekund..."
+            update_activity "idle" "-" "Oczekiwanie na nowe pliki" "waiting" "Sprawdzam co 60s"
+            
+            analyze_conflicts
+            validate_structure
+            
+            sleep 60
+            continue
         fi
         
         # Określ tryb na podstawie fazy

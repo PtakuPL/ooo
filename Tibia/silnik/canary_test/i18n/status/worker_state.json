@@ -1,20 +1,20 @@
 {
   "schema_version": "2.0",
-  "last_updated": "2025-12-08T21:26:27+01:00",
+  "last_updated": "2025-12-08T21:28:40+01:00",
   "worker": {
     "version": "4.0",
     "status": "running",
-    "mode": "analysis",
-    "cycle": 8,
+    "mode": "migration",
+    "cycle": 1,
     "files_per_cycle": 10,
-    "pid": 136196
+    "pid": 270401
   },
   "global_progress": {
     "total_files_processed": 939,
     "total_files_excluded": 4902,
     "total_keys": 42050,
     "total_languages": 53,
-    "total_conflicts": 58
+    "total_conflicts": 0
   },
   "categories": {
     "npc": {"status": "completed", "keys": 4049},
@@ -27,27 +27,27 @@
   "recent_files": [
   {
     "file": "game_questlog.html",
-    "time": "21:26:27",
+    "time": "21:28:40",
     "status": "success"
   },
   {
     "file": "#displayUIPickReward.html",
-    "time": "21:26:27",
+    "time": "21:28:40",
     "status": "success"
   },
   {
     "file": "game_rewardwall.html",
-    "time": "21:26:27",
+    "time": "21:28:40",
     "status": "success"
   },
   {
     "file": "status.php",
-    "time": "21:26:27",
+    "time": "21:28:40",
     "status": "success"
   },
   {
     "file": "updater.php",
-    "time": "21:26:27",
+    "time": "21:28:40",
     "status": "success"
   }
 ]

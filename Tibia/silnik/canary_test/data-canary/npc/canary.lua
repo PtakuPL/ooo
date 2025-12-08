@@ -167,7 +167,7 @@ local function creatureSayCallback(npc, player, type, msg)
 		end
 	elseif MsgContains(msg, "discord group") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("This the our discord group link: {https://discordapp.com/invite/3NxYnyV}", npc, player)
+			npcHandler:sayLocalized("npc.canary.say_1", npc, player)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

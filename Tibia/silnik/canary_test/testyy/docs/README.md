@@ -12,6 +12,7 @@ docs/
 ├── ARCHITECTURE.md           # Architektura kodu (klient)
 ├── BUILD_GUIDE.md            # Instrukcje kompilacji
 ├── CHANGELOG.md              # Historia zmian (główna)
+├── AGENT_HANDOFF.md          # Szablon przekazywania prac między agentami (Issue #30)
 ├── DEPENDENCIES.md           # Zależności projektu
 ├── MODULES.md                # Opis modułów klienta
 ├── SOURCE_CODE.md            # Przegląd kodu źródłowego

@@ -7,6 +7,9 @@
 - **Interface options**: Added `tr()` wrapper to `interface.otui` (2 texts)
 - **New Polish translations**: Added 14 new translation keys for shop and graphics UI
 
+### Knowledge Sharing
+- **AGENT_HANDOFF.md**: Added cross-agent handoff template + git workflow checklist so Issue #30 work logs merge cleanly into `main`
+
 ## 06-12-2025 - Issue #30: Full i18n Implementation (Part 1)
 ### Font System Improvements
 - **TTFFont fallback loading**: Activated fallback font loading in `TTFFont::load()` - now properly loads CJK, Arabic and other fallback fonts

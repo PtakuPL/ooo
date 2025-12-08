@@ -8,7 +8,7 @@
 
 ![NPC Migration](https://img.shields.io/badge/NPC-41.8%25-orange?style=for-the-badge&logo=lua)
 ![Keys](https://img.shields.io/badge/Keys-43622-blue?style=for-the-badge&logo=json)
-![Speed](https://img.shields.io/badge/Speed-3.4_NPC%2Fmin-purple?style=for-the-badge&logo=speedtest)
+![Speed](https://img.shields.io/badge/Speed-1.2_NPC%2Fmin-purple?style=for-the-badge&logo=speedtest)
 ![Errors](https://img.shields.io/badge/Errors-0-green?style=for-the-badge)
 
 ## 📈 Progress Bar
@@ -26,10 +26,10 @@
 | **Postęp** | **41.8%** |
 | **Klucze i18n** | `43622` |
 | **Języki** | 5 (🇬🇧 en, 🇵🇱 pl, 🇩🇪 de, 🇪🇸 es, 🇧🇷 pt) |
-| **Prędkość** | ~`3.4` NPC/min |
-| **Czas pracy** | 115min |
+| **Prędkość** | ~`1.2` NPC/min |
+| **Czas pracy** | 315min |
 | **Start** | 11:42 |
-| **ETA** | ~175 min |
+| **ETA** | ~498 min |
 | **Błędy** | 0 |
 
 ## 📁 Ostatnio zmodyfikowane NPC
@@ -48,15 +48,15 @@
 ## 🔧 Status Workera
 
 ```
-[2025-12-08 13:37:49] [INFO] 🔬 FAZA 3: ANALIZA
+[2025-12-08 16:57:38] [INFO] 🔬 FAZA 3: ANALIZA
 ```
 
 ## 🔄 Ostatnia aktualizacja
 
 | 🕐 Czas | 📅 Data |
 |---------|---------|
-| **UTC:** | 2025-12-08 12:38:01 UTC |
-| **Local:** | 13:38:01 |
+| **UTC:** | 2025-12-08 15:58:02 UTC |
+| **Local:** | 16:58:02 |
 
 ---
 

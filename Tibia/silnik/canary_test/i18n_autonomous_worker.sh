@@ -716,14 +716,18 @@ update_status() {
         done)
     fi
     
-    # Zlicz pliki per podkatalog scripts
+    # Zlicz pliki per podkatalog scripts (z processed_files)
     local quests_count=$(grep -c "scripts/quests" "$PROCESSED_FILE" 2>/dev/null | tr -d '[:space:]') || quests_count=0
     local actions_count=$(grep -c "scripts/actions" "$PROCESSED_FILE" 2>/dev/null | tr -d '[:space:]') || actions_count=0
     local movements_count=$(grep -c "scripts/movements" "$PROCESSED_FILE" 2>/dev/null | tr -d '[:space:]') || movements_count=0
     local creature_count=$(grep -c "scripts/creaturescripts" "$PROCESSED_FILE" 2>/dev/null | tr -d '[:space:]') || creature_count=0
     local talk_count=$(grep -c "scripts/talkactions" "$PROCESSED_FILE" 2>/dev/null | tr -d '[:space:]') || talk_count=0
     local global_count=$(grep -c "scripts/globalevents" "$PROCESSED_FILE" 2>/dev/null | tr -d '[:space:]') || global_count=0
-    local spells_f_count=$(grep -c "scripts/spells" "$PROCESSED_FILE" 2>/dev/null | tr -d '[:space:]') || spells_f_count=0
+    
+    # Klucze z JSON (prawdziwy postęp)
+    local spells_keys_count=$(jq 'length' "$I18N_DIR/en/spells.json" 2>/dev/null || echo "0")
+    local monsters_keys_count=$(jq 'length' "$I18N_DIR/en/monsters.json" 2>/dev/null || echo "0")
+    local server_keys_count=$(jq 'length' "$I18N_DIR/en/server.json" 2>/dev/null || echo "0")
     
     [[ ! "$quests_count" =~ ^[0-9]+$ ]] && quests_count=0
     [[ ! "$actions_count" =~ ^[0-9]+$ ]] && actions_count=0
@@ -731,7 +735,9 @@ update_status() {
     [[ ! "$creature_count" =~ ^[0-9]+$ ]] && creature_count=0
     [[ ! "$talk_count" =~ ^[0-9]+$ ]] && talk_count=0
     [[ ! "$global_count" =~ ^[0-9]+$ ]] && global_count=0
-    [[ ! "$spells_f_count" =~ ^[0-9]+$ ]] && spells_f_count=0
+    [[ ! "$spells_keys_count" =~ ^[0-9]+$ ]] && spells_keys_count=0
+    [[ ! "$monsters_keys_count" =~ ^[0-9]+$ ]] && monsters_keys_count=0
+    [[ ! "$server_keys_count" =~ ^[0-9]+$ ]] && server_keys_count=0
     
     # Pobierz przykład ostatniej zmiany
     local last_file=$(tail -1 "$PROCESSED_FILE" 2>/dev/null)
@@ -818,7 +824,14 @@ selfSay("text")
 | \`creaturescripts/\` | $creature_count | $([ $creature_count -gt 0 ] && echo "🔄 W trakcie" || echo "⏳ Oczekuje") |
 | \`talkactions/\` | $talk_count | $([ $talk_count -gt 0 ] && echo "🔄 W trakcie" || echo "⏳ Oczekuje") |
 | \`globalevents/\` | $global_count | $([ $global_count -gt 0 ] && echo "🔄 W trakcie" || echo "⏳ Oczekuje") |
-| \`spells/\` | $spells_f_count | $([ $spells_f_count -gt 0 ] && echo "🔄 W trakcie" || echo "⏳ Oczekuje") |
+
+### 🔮 Kategorie specjalne (z JSON)
+
+| Kategoria | Kluczy | Status |
+|-----------|--------|--------|
+| 👹 \`monsters\` | $monsters_keys_count | $([ $monsters_keys_count -gt 10 ] && echo "✅ OK" || echo "⏳ Oczekuje") |
+| ✨ \`spells\` | $spells_keys_count | $([ $spells_keys_count -gt 10 ] && echo "✅ OK" || echo "⏳ Oczekuje") |
+| ⚙️ \`server\` | $server_keys_count | $([ $server_keys_count -gt 10 ] && echo "✅ OK" || echo "⏳ Oczekuje") |
 
 ### 📄 Ostatnio przetworzone pliki
 

@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-08 22:07:53 UTC  
+> **Aktualizacja:** 2025-12-08 22:10:47 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,11 +21,11 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **939** | ↑ |
+| 📁 Plików przetworzonych | **940** | ↑ |
 | ⏭️ Plików wykluczonych | **4901** | - |
-| 🔑 Kluczy i18n | **42050** | ↑ |
+| 🔑 Kluczy i18n | **42074** | ↑ |
 | 🌍 Języków | **53** | ✓ |
-| ⚠️ Konfliktów | **58** | ✓ |
+| ⚠️ Konfliktów | **0** | ✓ |
 | 🔄 Cykl | **#2** | - |
 
 ---
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 4049/5000 (80%) | 5000 |
+| 🧙 NPC Dialogs | 🔄 | 4073/5000 (81%) | 5000 |
 | 📜 Lua Scripts | 🔄 | 713/1000 (71%) | 1000 |
 | 🎒 Items Database | 🔄 | 36972/40000 (92%) | 40000 |
 | 👹 Monsters | 🔄 | 100/500 (20%) | 500 |
@@ -78,15 +78,15 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #1` |
-| **Szczegóły** | NPC:4049 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-08 22:07:08 |
+| **Plik** | `Cykl #2` |
+| **Szczegóły** | NPC:4073 Scripts:713 Items:36972 |
+| **Ostatnia aktualizacja** | 2025-12-08 22:10:11 |
 
 ### 📈 Statystyki sesji
 
 | Metryka | Wartość |
 |---------|----------|
-| Plików przetworzonych | 0 |
+| Plików przetworzonych | 1 |
 | Kluczy wyciągniętych | 0 |
 | Błędów | 0 |
 | Napraw zastosowanych | 0 |
@@ -100,7 +100,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 4049 |
+| 🔑 Kluczy | 4073 |
 | 📊 Status | ✅ Zakończone |
 | 📂 Plików | ~877 |
 
@@ -149,11 +149,11 @@ selfSay("text")
 
 | Plik | Czas | Status |
 |------|------|--------|
-| `game_questlog.html` | 00:47:08 | ✅ |
 | `#displayUIPickReward.html` | 00:47:08 | ✅ |
 | `game_rewardwall.html` | 00:47:08 | ✅ |
 | `status.php` | 00:47:08 | ✅ |
 | `updater.php` | 00:47:08 | ✅ |
+| `alyxo.lua` | 22:08:38 | ✅ |
 
 ### 💻 Przykład kodu (ostatni plik)
 
@@ -225,7 +225,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 490878, Cykl #2 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 591365, Cykl #2 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

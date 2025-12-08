@@ -78,24 +78,24 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Tefrit) == 1 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Tefrit) == 1 then
-			npcHandler:sayLocalized("npc.tefrit.say_1", npc, creature) -- It needs to be revised, it's not the same as the global
+			npcHandler:say({ "Could you help me do a ritual?" }, npc, creature) -- It needs to be revised, it's not the same as the global
 			npcHandler:setTopic(playerId, 1)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Tefrit) == 1 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Tefrit) == 1 then
 			player:addItem(31716, 1)
-			npcHandler:sayLocalized("npc.tefrit.say_2", npc, creature) -- It needs to be revised, it's not the same as the global
+			npcHandler:say({ "Here is the list with the missing ingredients to complete the ritual." }, npc, creature) -- It needs to be revised, it's not the same as the global
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Tefrit, 2)
 			npcHandler:setTopic(playerId, 2)
 			npcHandler:setTopic(playerId, 2)
 		else
-			npcHandler:sayLocalized("npc.tefrit.say_3", npc, creature)
+			npcHandler:say({ "Sorry." }, npc, creature)
 		end
 	end
 	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Tefrit) == 2 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Tefrit) == 2 then
-			npcHandler:sayLocalized("npc.tefrit.say_4", npc, creature) -- It needs to be revised, it's not the same as the global
+			npcHandler:say({ "Did you bring all the materials I informed you about?" }, npc, creature) -- It needs to be revised, it's not the same as the global
 			npcHandler:setTopic(playerId, 3)
 			npcHandler:setTopic(playerId, 3)
 		end
@@ -105,12 +105,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:removeItem(31329, 20)
 			player:removeItem(31339, 25)
 			player:removeItem(31330, 15)
-			npcHandler:sayLocalized("npc.tefrit.say_5", npc, creature) -- It needs to be revised, it's not the same as the global
+			npcHandler:say({ "Thank you this stage of the ritual is complete." }, npc, creature) -- It needs to be revised, it's not the same as the global
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Tefrit, 3)
 			npcHandler:setTopic(playerId, 4)
 			npcHandler:setTopic(playerId, 4)
 		else
-			npcHandler:sayLocalized("npc.tefrit.say_6", npc, creature) -- It needs to be revised, it's not the same as the global
+			npcHandler:say({ "Sorry." }, npc, creature) -- It needs to be revised, it's not the same as the global
 		end
 	end
 	return true

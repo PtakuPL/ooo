@@ -78,13 +78,13 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Sixth.Favor) == 11 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Sixth.Favor) == 11 then
-			npcHandler:sayLocalized("npc.kallimae.say_1", npc, creature) -- It needs to be revised, it's not the same as the global
+			npcHandler:say({ "Some residents are in need of ingredients to finish a ritual. You can help?" }, npc, creature) -- It needs to be revised, it's not the same as the global
 			npcHandler:setTopic(playerId, 1)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Sixth.Favor) == 11 then
-			npcHandler:sayLocalized("npc.kallimae.say_2", npc, creature) -- It needs to be revised, it's not the same as the global
+			npcHandler:say({ "Search for the NPCs Yonan, Narsai, Shimun and Tefrit." }, npc, creature) -- It needs to be revised, it's not the same as the global
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Set.Ritual, 1)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Set.Yonan, 1)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Set.Narsai, 1)
@@ -94,12 +94,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 2)
 			npcHandler:setTopic(playerId, 2)
 		else
-			npcHandler:sayLocalized("npc.kallimae.say_3", npc, creature) -- It needs to be revised, it's not the same as the global
+			npcHandler:say({ "Sorry." }, npc, creature) -- It needs to be revised, it's not the same as the global
 		end
 	end
 	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Yonan) == 3 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Narsai) == 3 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Shimun) == 3 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Tefrit) == 3 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Yonan) == 3 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Narsai) == 3 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Shimun) == 3 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Tefrit) == 3 then
-			npcHandler:sayLocalized("npc.kallimae.say_4", npc, creature) -- It needs to be revised, it's not the same as the global
+			npcHandler:say({ "Did you help some residents with ingredients?" }, npc, creature) -- It needs to be revised, it's not the same as the global
 			npcHandler:setTopic(playerId, 3)
 			npcHandler:setTopic(playerId, 3)
 		end
@@ -112,30 +112,30 @@ local function creatureSayCallback(npc, creature, type, message)
 		and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Tefrit) == 3
 	then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Yonan) == 3 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Narsai) == 3 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Shimun) == 3 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Tefrit) == 3 then
-			npcHandler:sayLocalized("npc.kallimae.say_5", npc, creature) -- It needs to be revised, it's not the same as the global
+			npcHandler:say({ "Thanks. I need you to go to 4 places indicated by Goddess Bastesh." }, npc, creature) -- It needs to be revised, it's not the same as the global
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Nine.Owl, 1)
 			npcHandler:setTopic(playerId, 4)
 			npcHandler:setTopic(playerId, 4)
 		else
-			npcHandler:sayLocalized("npc.kallimae.say_6", npc, creature) -- It needs to be revised, it's not the same as the global
+			npcHandler:say({ "Sorry." }, npc, creature) -- It needs to be revised, it's not the same as the global
 		end
 	end
 	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eleven.Basin) == 1 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eleven.Basin) == 1 then
-			npcHandler:sayLocalized("npc.kallimae.say_7", npc, creature) -- It needs to be revised, it's not the same as the global
+			npcHandler:say({ "Did you check all the points and bring the Symbol of Sun and Sea?" }, npc, creature) -- It needs to be revised, it's not the same as the global
 			npcHandler:setTopic(playerId, 5)
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 5 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eleven.Basin) == 1 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eleven.Basin) == 1 and player:getItemById(31431, 1) then
 			player:addItem(31572, 1)
-			npcHandler:sayLocalized("npc.kallimae.say_8", npc, creature) -- It needs to be revised, it's not the same as the global
+			npcHandler:say({ "Thanks. Here is your reward." }, npc, creature) -- It needs to be revised, it's not the same as the global
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Boss, 1)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eleven.Basin, 2)
 			npcHandler:setTopic(playerId, 6)
 			npcHandler:setTopic(playerId, 6)
 		else
-			npcHandler:sayLocalized("npc.kallimae.say_9", npc, creature) -- It needs to be revised, it's not the same as the global
+			npcHandler:say({ "Sorry." }, npc, creature) -- It needs to be revised, it's not the same as the global
 		end
 	end
 	return true

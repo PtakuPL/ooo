@@ -57,14 +57,14 @@ local function creatureSayCallback(npc, creature, type, message)
 	local playerId = player:getId()
 	if message == "cookie" then
 		if player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission02) == 1 and player:getItemCount(8199) > 0 and player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Armenius) < 0 then
-			npcHandler:say("What kind of strange offer is this? You're actually offering me a cookie?", npc, creature)
+			npcHandler:sayLocalized("npc.armenius.what_kind_of_1", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:say("It'd be better for you to leave now.", npc, creature)
+			npcHandler:sayLocalized("npc.armenius.itd_be_better_2", npc, creature)
 		end
 	elseif message == "yes" then
 		if npcHandler:getTopic(playerId) == 1 and player:removeItem(8199, 1) then -- garlic cookie
-			npcHandler:say("Errrkss - coughcough - what the - heck did you put in there? Get out of my sight!", npc, creature)
+			npcHandler:sayLocalized("npc.armenius.errrkss_coughcough_what_3", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Armenius, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
@@ -76,7 +76,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission03, 2)
 		else
-			npcHandler:say("Oh, the nerve. Sod off.", npc, creature)
+			npcHandler:sayLocalized("npc.armenius.oh_the_nerve_4", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	end

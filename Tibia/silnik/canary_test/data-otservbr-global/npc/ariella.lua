@@ -66,21 +66,21 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "cookie") then
 		if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 31 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.CookieDelivery.Ariella) ~= 1 then
-			npcHandler:say("So you brought a cookie to a pirate?", npc, creature)
+			npcHandler:sayLocalized("npc.ariella.so_you_brought_1", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "addon") and player:getStorageValue(Storage.Quest.U7_8.PirateOutfits.PirateBaseOutfit) == 1 then
-		npcHandler:say("You mean my hat? Well, I might have another one just like that, but I won't simply give it away, even if you earned our trust. You'd have to fulfil a task first.", npc, creature)
+		npcHandler:sayLocalized("npc.ariella.you_mean_my_2", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif npcHandler:getTopic(playerId) == 2 and MsgContains(message, "task") then
-		npcHandler:say("Your task is to bring me the shirt of the Lethal Lissy, the sabre of Ron the Ripper, the hat of Brutus Bloodbeard and the eye patch of Deadeye Devious. Did you succeed?", npc, creature)
+		npcHandler:sayLocalized("npc.ariella.your_task_is_3", npc, creature)
 		npcHandler:setTopic(playerId, 5)
 	elseif MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 1 then
-			npcHandler:say("You know, we have plenty of rum here but we lack some basic food. Especially food that easily becomes mouldy is a problem. Bring me 100 breads and you will help me a lot.", npc, creature)
+			npcHandler:sayLocalized("npc.ariella.you_know_we_4", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 2)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 2 then
-			npcHandler:say("Are you here to bring me the 100 pieces of bread that I requested?", npc, creature)
+			npcHandler:sayLocalized("npc.ariella.are_you_here_5", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 3 then
 			npcHandler:say({
@@ -89,13 +89,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 4)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 5 then
-			npcHandler:say("Did you get a sample of the whisper beer from Carlin?", npc, creature)
+			npcHandler:sayLocalized("npc.ariella.did_you_get_6", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if not player:removeItem(130, 1) then
-				npcHandler:say("You have no cookie that I'd like.", npc, creature)
+				npcHandler:sayLocalized("npc.ariella.you_have_no_7", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -106,42 +106,42 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 
 			npc:getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)
-			npcHandler:say("How sweet of you ... Uhh ... OH NO ... Bozo did it again. Tell this prankster I'll pay him back.", npc, creature)
+			npcHandler:sayLocalized("npc.ariella.how_sweet_of_8", npc, creature)
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 2 then
 				if player:removeItem(3600, 100) then
-					npcHandler:say("What a joy. At least for a few days adequate supply is ensured.", npc, creature)
+					npcHandler:sayLocalized("npc.ariella.what_a_joy_9", npc, creature)
 					player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 3)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Come back when you got all neccessary items.", npc, creature)
+					npcHandler:sayLocalized("npc.ariella.come_back_when_10", npc, creature)
 					npcHandler:setTopic(playerId, 0)
 				end
 			end
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 5 then
 				if player:removeItem(6106, 1) then
-					npcHandler:say("Thank you very much. I will test this beauty in privacy.", npc, creature)
+					npcHandler:sayLocalized("npc.ariella.thank_you_very_11", npc, creature)
 					player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 6)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Come back when you got the neccessary item.", npc, creature)
+					npcHandler:sayLocalized("npc.ariella.come_back_when_12", npc, creature)
 					npcHandler:setTopic(playerId, 0)
 				end
 			end
 		elseif npcHandler:getTopic(playerId) == 5 and player:getStorageValue(Storage.Quest.U7_8.PirateOutfits.PirateHatAddon) == -1 then
 			if player:getItemCount(6101) > 0 and player:getItemCount(6102) > 0 and player:getItemCount(6100) > 0 and player:getItemCount(6099) > 0 then
 				if player:removeItem(6101, 1) and player:removeItem(6102, 1) and player:removeItem(6100, 1) and player:removeItem(6099, 1) then
-					npcHandler:say("INCREDIBLE! You have found all four of them! |PLAYERNAME|, you have my respect. You more than deserve this hat. There you go.", npc, creature)
+					npcHandler:sayLocalized("npc.ariella.incredible_you_have_13", npc, creature)
 					player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 					player:addOutfitAddon(155, 2)
 					player:addOutfitAddon(151, 2)
 					player:setStorageValue(Storage.Quest.U7_8.PirateOutfits.PirateHatAddon, 1)
 				end
 			else
-				npcHandler:say("You do not have all the required items.", npc, creature)
+				npcHandler:sayLocalized("npc.ariella.you_do_not_14", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
@@ -150,7 +150,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:say("I see.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Alright then. Come back when you got all neccessary items.", npc, creature)
+			npcHandler:sayLocalized("npc.ariella.alright_then_come_15", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

@@ -69,14 +69,14 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "present") then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Third.Recovering) == 2 then
 			if player:getItemById(31263, true) then
-				npcHandler:say("This is a very beautiful ring. Thank you for this generous present!", npc, creature)
+				npcHandler:sayLocalized("npc.ambassador_of_rathleton.this_is_a_1", npc, creature)
 				player:removeItem(31263, 1)
 				player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Third.Recovering, 3)
 			else
-				npcHandler:say("Didn't you bring my gift?", npc, creature)
+				npcHandler:sayLocalized("npc.ambassador_of_rathleton.didnt_you_bring_2", npc, creature)
 			end
 		else
-			npcHandler:say("I don't need a present right now. Thank you.", npc, creature)
+			npcHandler:sayLocalized("npc.ambassador_of_rathleton.i_dont_need_3", npc, creature)
 		end
 	end
 

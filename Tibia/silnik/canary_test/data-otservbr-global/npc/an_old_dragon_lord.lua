@@ -37,7 +37,7 @@ end
 
 npcType.onSay = function(npc, creature, type, message)
 	if not (MsgContains(message, "hi") or MsgContains(message, "hello")) then
-		npcHandler:say("LEAVE THE DRAGONS' CEMETERY AT ONCE!", npc, creature)
+		npcHandler:sayLocalized("npc.an_old_dragon_lord.leave_the_dragons_1", npc, creature)
 	end
 	npcHandler:onSay(npc, creature, type, message)
 end
@@ -59,18 +59,18 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Dragonfetish) == 1 then
-		npcHandler:say("LEAVE THE DRAGONS' CEMETERY AT ONCE!", npc, creature)
+		npcHandler:sayLocalized("npc.an_old_dragon_lord.leave_the_dragons_2", npc, creature)
 		return false
 	end
 
 	if not player:removeItem(3723, 1) then
-		npcHandler:say("AHHHH THE PAIN OF AGESSS! I NEED MUSSSSHRROOOMSSS TO EASSSE MY PAIN! BRRRING ME MUSHRRROOOMSSS!", npc, creature)
+		npcHandler:sayLocalized("npc.an_old_dragon_lord.ahhhh_the_pain_3", npc, creature)
 		return false
 	end
 
 	player:setStorageValue(Storage.Dragonfetish, 1)
 	player:addItem(3206, 1)
-	npcHandler:say("AHHH MUSHRRROOOMSSS! NOW MY PAIN WILL BE EASSSED FOR A WHILE! TAKE THISS AND LEAVE THE DRAGONSSS' CEMETERY AT ONCE!", npc, creature)
+	npcHandler:sayLocalized("npc.an_old_dragon_lord.ahhh_mushrrrooomsss_now_4", npc, creature)
 	return false
 end
 

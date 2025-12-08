@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I18N Coverage Dashboard - Canary OTS</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #eee;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #333;
+            margin-bottom: 30px;
+        }
+        h1 { font-size: 2.5em; margin-bottom: 10px; color: #00d4ff; }
+        .subtitle { color: #888; }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .stat-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .stat-number { font-size: 2.5em; font-weight: bold; color: #00d4ff; }
+        .stat-label { color: #888; margin-top: 5px; }
+        
+        .charts-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        @media (max-width: 900px) {
+            .charts-row { grid-template-columns: 1fr; }
+        }
+        
+        .chart-container {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .chart-title { margin-bottom: 20px; font-size: 1.2em; }
+        
+        .locale-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .locale-table th, .locale-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .locale-table th { background: rgba(0,212,255,0.1); color: #00d4ff; }
+        .locale-table tr:hover { background: rgba(255,255,255,0.05); }
+        
+        .progress-bar {
+            height: 20px;
+            background: #333;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.3s;
+        }
+        .progress-fill.high { background: linear-gradient(90deg, #00d4ff, #00ff88); }
+        .progress-fill.medium { background: linear-gradient(90deg, #ffaa00, #ff6600); }
+        .progress-fill.low { background: linear-gradient(90deg, #ff4444, #ff0000); }
+        
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+        }
+        .badge-success { background: rgba(0,255,136,0.2); color: #00ff88; }
+        .badge-warning { background: rgba(255,170,0,0.2); color: #ffaa00; }
+        .badge-danger { background: rgba(255,68,68,0.2); color: #ff4444; }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #666;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 I18N Coverage Dashboard</h1>
+            <p class="subtitle">Canary OTS Translation Progress • Generated: 2025-12-08 11:50:51</p>
+        </header>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Languages</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">40,398</div>
+                <div class="stat-label">Total Keys</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Categories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">200,262</div>
+                <div class="stat-label">Total Translations</div>
+            </div>
+        </div>
+        
+        <div class="charts-row">
+            <div class="chart-container">
+                <h3 class="chart-title">📊 Coverage by Language</h3>
+                <canvas id="coverageChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3 class="chart-title">📁 Coverage by Category</h3>
+                <canvas id="categoryChart"></canvas>
+            </div>
+        </div>
+        
+        <h2 style="margin-bottom: 20px;">📋 Detailed Language Stats</h2>
+        <table class="locale-table">
+            <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>Coverage</th>
+                    <th>Translated</th>
+                    <th>Missing</th>
+                    <th>Identical to EN</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td><strong>English</strong> (en)</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill high" style="width: 100.0%"></div>
+                        </div>
+                        <small>100.0%</small>
+                    </td>
+                    <td>40,398</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><span class="badge badge-success">Complete</span></td>
+                </tr>
+
+                <tr>
+                    <td><strong>Spanish</strong> (es)</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill high" style="width: 98.9%"></div>
+                        </div>
+                        <small>98.9%</small>
+                    </td>
+                    <td>39,966</td>
+                    <td>432</td>
+                    <td>27,435</td>
+                    <td><span class="badge badge-success">In Progress</span></td>
+                </tr>
+
+                <tr>
+                    <td><strong>Polish</strong> (pl)</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill high" style="width: 98.9%"></div>
+                        </div>
+                        <small>98.9%</small>
+                    </td>
+                    <td>39,966</td>
+                    <td>432</td>
+                    <td>27,435</td>
+                    <td><span class="badge badge-success">In Progress</span></td>
+                </tr>
+
+                <tr>
+                    <td><strong>German</strong> (de)</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill high" style="width: 98.9%"></div>
+                        </div>
+                        <small>98.9%</small>
+                    </td>
+                    <td>39,966</td>
+                    <td>432</td>
+                    <td>27,435</td>
+                    <td><span class="badge badge-success">In Progress</span></td>
+                </tr>
+
+                <tr>
+                    <td><strong>Portuguese</strong> (pt)</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill high" style="width: 98.9%"></div>
+                        </div>
+                        <small>98.9%</small>
+                    </td>
+                    <td>39,966</td>
+                    <td>432</td>
+                    <td>27,435</td>
+                    <td><span class="badge badge-success">In Progress</span></td>
+                </tr>
+
+                <tr>
+                    <td><strong>reports</strong> (reports)</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill low" style="width: 0.0%"></div>
+                        </div>
+                        <small>0.0%</small>
+                    </td>
+                    <td>0</td>
+                    <td>40,398</td>
+                    <td>0</td>
+                    <td><span class="badge badge-danger">Not Started</span></td>
+                </tr>
+
+            </tbody>
+        </table>
+        
+        <footer>
+            <p>Generated by i18n_coverage_dashboard.py</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Coverage Chart
+        const coverageCtx = document.getElementById('coverageChart').getContext('2d');
+        new Chart(coverageCtx, {
+            type: 'bar',
+            data: {
+                labels: ["English", "Spanish", "Polish", "German", "Portuguese", "reports"],
+                datasets: [{
+                    label: 'Coverage %',
+                    data: [100.0, 98.9, 98.9, 98.9, 98.9, 0.0],
+                    backgroundColor: 'rgba(0, 212, 255, 0.6)',
+                    borderColor: 'rgba(0, 212, 255, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        ticks: { color: '#888' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    },
+                    x: {
+                        ticks: { color: '#888' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    }
+                },
+                plugins: {
+                    legend: { labels: { color: '#eee' } }
+                }
+            }
+        });
+        
+        // Category Chart (using English as reference)
+        const categoryCtx = document.getElementById('categoryChart').getContext('2d');
+        const enStats = {"items": {"total": 36972, "translated": 36972, "missing": 0}, "system": {"total": 2435, "translated": 2435, "missing": 0}, "player": {"total": 151, "translated": 151, "missing": 0}, "npc": {"total": 804, "translated": 804, "missing": 0}, "game": {"total": 36, "translated": 36, "missing": 0}};
+        new Chart(categoryCtx, {
+            type: 'doughnut',
+            data: {
+                labels: Object.keys(enStats),
+                datasets: [{
+                    data: Object.values(enStats).map(c => c.total),
+                    backgroundColor: [
+                        '#00d4ff', '#00ff88', '#ffaa00', '#ff6600',
+                        '#ff4444', '#aa44ff', '#44aaff', '#88ff44'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'right',
+                        labels: { color: '#eee' }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

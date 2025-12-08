@@ -63,33 +63,33 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 	if MsgContains(message, "bill") then
 		if npcHandler:getTopic(playerId) == 6 then
-			npcHandler:say("A bill? Oh boy so you are delivering another bill to poor me?", npc, creature)
+			npcHandler:sayLocalized("npc.a_strange_fellow.a_bill_oh_1", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		end
 	elseif MsgContains(message, "yes") then
 		if player:removeItem(3216, 1) and npcHandler:getTopic(playerId) == 7 then
-			npcHandler:say("Ok, ok, I'll take it. I guess I have no other choice anyways. And now leave me alone in my misery please.", npc, creature)
+			npcHandler:sayLocalized("npc.a_strange_fellow.ok_ok_ill_2", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission03, 2)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "hat") then
 		if npcHandler:getTopic(playerId) < 1 then
-			npcHandler:say("Uh? What do you want?!", npc, creature)
+			npcHandler:sayLocalized("npc.a_strange_fellow.uh_what_do_3", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("What? My hat?? Theres... nothing special about it!", npc, creature)
+			npcHandler:sayLocalized("npc.a_strange_fellow.what_my_hat_4", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Stop bugging me about that hat, do you listen?", npc, creature)
+			npcHandler:sayLocalized("npc.a_strange_fellow.stop_bugging_me_5", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		elseif npcHandler:getTopic(playerId) == 4 then
-			npcHandler:say("Hey! Don't touch that hat! Leave it alone!!! Don't do this!!!!", npc, creature)
+			npcHandler:sayLocalized("npc.a_strange_fellow.hey_dont_touch_6", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		elseif npcHandler:getTopic(playerId) == 5 then
 			for i = 1, 5 do
 				Game.createMonster("Rabbit", npc:getPosition())
 			end
-			npcHandler:say("Noooooo! Argh, ok, ok, I guess I can't deny it anymore, I am David Brassacres, the magnificent, so what do you want?", npc, creature)
+			npcHandler:sayLocalized("npc.a_strange_fellow.noooooo_argh_ok_7", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		end
 	end

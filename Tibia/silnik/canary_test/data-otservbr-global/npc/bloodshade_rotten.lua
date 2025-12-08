@@ -51,7 +51,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	local access = player:kv():scoped("rotten-blood-quest"):get("access") or 0
 	if access == 5 then
-		npcHandler:say("You already have started this quest.", npc, creature)
+		npcHandler:sayLocalized("npc.bloodshade_rotten.you_already_have_1", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 		return true
 	end

@@ -623,11 +623,11 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "join") then
 		if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) ~= -1 then
-			npcHandler:say("Wow, your stupidity would be pride and joy for every fool. You've already applied as a member. Let's rather talk about your current mission.", npc, creature)
+			npcHandler:sayLocalized("npc.bozo.wow_your_stupidity_1", npc, creature)
 			return true
 		end
 
-		npcHandler:say("Do you wish to become a jester and join the fools guild?", npc, creature)
+		npcHandler:sayLocalized("npc.bozo.do_you_wish_2", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "mission") then
 		local targetValue = config[player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline)]
@@ -664,7 +664,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 4)
 			value[playerId] = targetValue
 		else
-			npcHandler:say("I'm sure it suits you well.", npc, creature)
+			npcHandler:sayLocalized("npc.bozo.im_sure_it_3", npc, creature)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
@@ -714,7 +714,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 			if targetValue.cookiesDelivery then
 				if player:getCookiesDelivered() ~= 10 then
-					npcHandler:say("No, you aren't! Why do only fools apply for the fools guild?", npc, creature)
+					npcHandler:sayLocalized("npc.bozo.no_you_arent_4", npc, creature)
 					npcHandler:setTopic(playerId, 0)
 					return true
 				end
@@ -722,7 +722,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 			if targetValue.pie then
 				if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.PieBoxTimer) > 0 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.PieBoxTimer) < os.time() then
-					npcHandler:say("Eeeek! What have you done?? These pies are crawling with bugs! Those must be the infamous parcel bugs! Get some new pies at once you wannabe fool, and this time without any bugs!", npc, creature)
+					npcHandler:sayLocalized("npc.bozo.eeeek_what_have_5", npc, creature)
 					npcHandler:setTopic(playerId, 0)
 					return true
 				end
@@ -759,7 +759,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			local targetValue = value[playerId]
 			if not player:removeItem(targetValue.removeItemId, 1) then
-				npcHandler:say("No, you don't! Why do only fools apply for the fools guild?", npc, creature)
+				npcHandler:sayLocalized("npc.bozo.no_you_dont_6", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -779,7 +779,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) ~= 0 then
 		if table.contains({ 1, 2 }, npcHandler:getTopic(playerId)) then
-			npcHandler:say("Too bad, I'm convinced you have it in you.", npc, creature)
+			npcHandler:sayLocalized("npc.bozo.too_bad_im_7", npc, creature)
 		elseif table.contains({ 3, 4 }, npcHandler:getTopic(playerId)) then
 			if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 11 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.EmperorBeardShave) == 1 then
 				player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline, 12)
@@ -789,13 +789,13 @@ local function creatureSayCallback(npc, creature, type, message)
 					"Still, as a small recognition of your accomplishments I'm willing to tell you how to get your own jester outfit. If you are interested in more fun and adventures, ask me for more missions.",
 				}, npc, creature)
 			elseif player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 30 then
-				npcHandler:say("You won't be successful in the fool's world with such an attitude.", npc, creature)
+				npcHandler:sayLocalized("npc.bozo.you_wont_be_8", npc, creature)
 			elseif player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 35 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.LostDisguise) ~= 1 then
 				player:addItem(144, 1)
 				player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.LostDisguise, 1)
-				npcHandler:say("You wasted the disguise?? Why do only fools apply for the fools guild? Here... try again, but be wittier this time.", npc, creature)
+				npcHandler:sayLocalized("npc.bozo.you_wasted_the_9", npc, creature)
 			else
-				npcHandler:say("Oh boy, why do only fools apply for the fools guild?", npc, creature)
+				npcHandler:sayLocalized("npc.bozo.oh_boy_why_10", npc, creature)
 			end
 		end
 		npcHandler:setTopic(playerId, 0)

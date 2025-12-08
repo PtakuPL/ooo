@@ -65,17 +65,17 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		elseif MsgContains(message, "cookie") then
 			if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 31 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.CookieDelivery.AvarTar) ~= 1 then
-				npcHandler:say("Do you really think you could bribe a hero like me with a meagre cookie?", npc, creature)
+				npcHandler:sayLocalized("npc.avar_tar.do_you_really_1", npc, creature)
 				npcHandler:setTopic(playerId, 3)
 			end
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("So you want to have the demon outfit, hah! Let's have a look first if you really deserve it. Tell me: {base}, {shield} or {helmet}?", npc, creature)
+			npcHandler:sayLocalized("npc.avar_tar.so_you_want_2", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if not player:removeItem(130, 1) then
-				npcHandler:say("You have no cookie that I'd like.", npc, creature)
+				npcHandler:sayLocalized("npc.avar_tar.you_have_no_3", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -86,7 +86,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 
 			npc:getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)
-			npcHandler:say("Well, you won't! Though it looks tasty ...What the ... WHAT DO YOU THINK YOU ARE? THIS IS THE ULTIMATE INSULT! GET LOST!", npc, creature)
+			npcHandler:sayLocalized("npc.avar_tar.well_you_wont_4", npc, creature)
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		end
@@ -102,9 +102,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addOutfit(542)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 				player:setStorageValue(Storage.Quest.U7_24.TheAnnihilator.Reward, 2)
-				npcHandler:say("Receive the base outfit, |PLAYERNAME|.", npc, creature)
+				npcHandler:sayLocalized("npc.avar_tar.receive_the_base_5", npc, creature)
 			else
-				npcHandler:say("You need to complete annihilator quest first, |PLAYERNAME|.", npc, creature)
+				npcHandler:sayLocalized("npc.avar_tar.you_need_to_6", npc, creature)
 				npcHandler:setTopic(playerId, 2)
 			end
 		elseif MsgContains(message, "shield") then
@@ -113,9 +113,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addOutfitAddon(542, 1)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 				player:setStorageValue(Storage.Quest.U6_4.DemonHelmet.Rewards.DemonHelmet, 2)
-				npcHandler:say("Receive the shield, |PLAYERNAME|.", npc, creature)
+				npcHandler:sayLocalized("npc.avar_tar.receive_the_shield_7", npc, creature)
 			else
-				npcHandler:say("The shield will only be granted to those adventurers who have finished the demon helmet quest, |PLAYERNAME|.", npc, creature)
+				npcHandler:sayLocalized("npc.avar_tar.the_shield_will_8", npc, creature)
 				npcHandler:setTopic(playerId, 2)
 			end
 		elseif MsgContains(message, "helmet") then
@@ -124,9 +124,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addOutfitAddon(542, 2)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 				player:setStorageValue(Storage.Quest.U8_2.TheDemonOak.Done, 4)
-				npcHandler:say("Receive the helmet, |PLAYERNAME|.", npc, creature)
+				npcHandler:sayLocalized("npc.avar_tar.receive_the_helmet_9", npc, creature)
 			else
-				npcHandler:say("The helmet is for those who have hunted down all 6666 demons and finished the demon oak as well, |PLAYERNAME|.", npc, creature)
+				npcHandler:sayLocalized("npc.avar_tar.the_helmet_is_10", npc, creature)
 				npcHandler:setTopic(playerId, 2)
 			end
 		end

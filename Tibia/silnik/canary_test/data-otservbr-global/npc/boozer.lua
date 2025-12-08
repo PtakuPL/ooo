@@ -65,17 +65,17 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addItem(5710, 1)
 			player:addItem(3035, 10)
 			player:addExperience(100, true)
-			npcHandler:say("Yessss! Now I only need to build my own small brewery, figure out the secret recipe, duplicate the dwarvish brew and BANG I'll be back in business! Here take this as a reward.", npc, creature)
+			npcHandler:sayLocalized("npc.boozer.yessss_now_i_1", npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U8_1.TibiaTales.UltimateBoozeQuest) < 1 then
 			npcHandler:setTopic(playerId, 1)
-			npcHandler:say("Shush!! I don't want everybody to know what I am up to. Listen, things are not going too well, I need a new attraction. Do you want to help me?", npc, creature)
+			npcHandler:sayLocalized("npc.boozer.shush_i_dont_2", npc, creature)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			player:setStorageValue(Storage.Quest.U8_1.TibiaTales.DefaultStart, 1)
 			player:setStorageValue(Storage.Quest.U8_1.TibiaTales.UltimateBoozeQuest, 1)
 			player:addItem(138, 1)
-			npcHandler:say("Good! Listen closely. Take this bottle and go to Kazordoon. I need a sample of their very special brown ale. You may find a cask in their brewery. Come back as soon as you got it.", npc, creature)
+			npcHandler:sayLocalized("npc.boozer.good_listen_closely_3", npc, creature)
 		end
 	end
 	return true

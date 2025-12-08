@@ -98,7 +98,7 @@ local function greetCallback(npc, creature, message)
 	--Checks if the player has completed the quest
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission03) ~= 3 then
 		if not MsgContains(message, "djanni'hah") then
-			npcHandler:say("Shove off, little one! Humans are not welcome here, |PLAYERNAME|!", npc, creature)
+			npcHandler:sayLocalized("npc.alesar.shove_off_little_1", npc, creature)
 			endConversationWithDelay(npcHandler, npc, creature)
 			return false
 		end
@@ -113,7 +113,7 @@ local function greetCallback(npc, creature, message)
 		end
 	end
 
-	npcHandler:say("What do you want from me, |PLAYERNAME|?", npc, creature)
+	npcHandler:sayLocalized("npc.alesar.what_do_you_2", npc, creature)
 	npcHandler:setInteraction(npc, creature)
 
 	return true
@@ -139,10 +139,10 @@ local function creatureSayCallback(npc, creature, type, message)
 				}, npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			elseif isInArray({ 1, 2 }, missionProgress) then
-				npcHandler:say("Did you find the tear of Daraman?", npc, creature)
+				npcHandler:sayLocalized("npc.alesar.did_you_find_3", npc, creature)
 				npcHandler:setTopic(playerId, 2)
 			else
-				npcHandler:say("Don't forget to talk to Malor concerning your next mission.", npc, creature)
+				npcHandler:sayLocalized("npc.alesar.dont_forget_to_4", npc, creature)
 			end
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
@@ -166,7 +166,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "yes") then
 			if player:getItemCount(3233) == 0 or missionProgress ~= 2 then
-				npcHandler:say("As I expected. You haven't got the stone. Shall I explain your mission again?", npc, creature)
+				npcHandler:sayLocalized("npc.alesar.as_i_expected_5", npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			else
 				npcHandler:say({
@@ -181,7 +181,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif MsgContains(message, "no") then
-			npcHandler:say("As I expected. You haven't got the stone. Shall I explain your mission again?", npc, creature)
+			npcHandler:sayLocalized("npc.alesar.as_i_expected_6", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	end
@@ -194,7 +194,7 @@ local function onTradeRequest(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission03) ~= 3 then
-		npcHandler:say("I'm sorry, but you don't have Malor's permission to trade with me.", npc, creature)
+		npcHandler:sayLocalized("npc.alesar.im_sorry_but_7", npc, creature)
 		return false
 	end
 

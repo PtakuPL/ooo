@@ -6,57 +6,57 @@
 
 ## 📊 Aktualny postęp
 
-![NPC Migration](https://img.shields.io/badge/NPC-41.6%25-orange?style=for-the-badge&logo=lua)
-![Keys](https://img.shields.io/badge/Keys-43612-blue?style=for-the-badge&logo=json)
-![Speed](https://img.shields.io/badge/Speed-4.7_NPC%2Fmin-purple?style=for-the-badge&logo=speedtest)
+![NPC Migration](https://img.shields.io/badge/NPC-41.8%25-orange?style=for-the-badge&logo=lua)
+![Keys](https://img.shields.io/badge/Keys-43622-blue?style=for-the-badge&logo=json)
+![Speed](https://img.shields.io/badge/Speed-4.6_NPC%2Fmin-purple?style=for-the-badge&logo=speedtest)
 ![Errors](https://img.shields.io/badge/Errors-0-green?style=for-the-badge)
 
 ## 📈 Progress Bar
 
 ```
-[████████████████░░░░░░░░░░░░░░░░░░░░░░░░] 41.6%
- 427 / 1027 NPC
+[████████████████░░░░░░░░░░░░░░░░░░░░░░░░] 41.8%
+ 429 / 1027 NPC
 ```
 
 ## 📋 Szczegóły
 
 | 📌 Metryka | 📊 Wartość |
 |------------|------------|
-| **NPC Zmigrowanych** | `427` / `1027` |
-| **Postęp** | **41.6%** |
-| **Klucze i18n** | `43612` |
+| **NPC Zmigrowanych** | `429` / `1027` |
+| **Postęp** | **41.8%** |
+| **Klucze i18n** | `43622` |
 | **Języki** | 5 (🇬🇧 en, 🇵🇱 pl, 🇩🇪 de, 🇪🇸 es, 🇧🇷 pt) |
-| **Prędkość** | ~`4.7` NPC/min |
-| **Czas pracy** | 83min |
+| **Prędkość** | ~`4.6` NPC/min |
+| **Czas pracy** | 85min |
 | **Start** | 11:42 |
-| **ETA** | ~127 min |
+| **ETA** | ~130 min |
 | **Błędy** | 0 |
 
 ## 📁 Ostatnio zmodyfikowane NPC
 
 | Plik |
 |------|
+| `zurak.lua` |
+| `zurak_arena.lua` |
 | `zumtah.lua` |
 | `ztiss.lua` |
 | `zora.lua` |
 | `zoltan.lua` |
 | `zizzle.lua` |
 | `zirella.lua` |
-| `zebron.lua` |
-| `zarifan.lua` |
 
 ## 🔧 Status Workera
 
 ```
-[2025-12-08 13:05:42] [INFO] 🔬 FAZA 3: ANALIZA
+2025-12-08 13:07:55] [INFO] 📦 FAZA 1: MIGRACJA NPC
 ```
 
 ## 🔄 Ostatnia aktualizacja
 
 | 🕐 Czas | 📅 Data |
 |---------|---------|
-| **UTC:** | 2025-12-08 12:06:02 UTC |
-| **Local:** | 13:06:02 |
+| **UTC:** | 2025-12-08 12:08:02 UTC |
+| **Local:** | 13:08:02 |
 
 ---
 

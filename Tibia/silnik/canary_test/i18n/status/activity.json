@@ -1,15 +1,85 @@
 {
-  "last_updated": "2025-12-08 22:46:02",
+  "last_updated": "2025-12-08 22:52:00",
   "current_operation": {
     "type": "cycle",
     "phase": 1,
     "category": "scripts",
-    "file": "Cykl #1",
+    "file": "Cykl #4",
     "action": "🎮 Canary Server - scripts",
     "status": "in_progress",
     "details": "NPC:4108 Scripts:713 Items:36972"
   },
   "recent_operations": [
+    {
+      "time": "2025-12-08 22:52:00",
+      "type": "cycle",
+      "file": "Cykl #4",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-08 22:51:02",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
+    {
+      "time": "2025-12-08 22:50:54",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
+    {
+      "time": "2025-12-08 22:50:04",
+      "type": "cycle",
+      "file": "Cykl #2",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-08 22:49:58",
+      "type": "cycle",
+      "file": "Cykl #3",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-08 22:48:55",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
+    {
+      "time": "2025-12-08 22:48:53",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
+    {
+      "time": "2025-12-08 22:48:00",
+      "type": "cycle",
+      "file": "Cykl #1",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-08 22:47:57",
+      "type": "cycle",
+      "file": "Cykl #2",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-08 22:46:52",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
     {
       "time": "2025-12-08 22:46:02",
       "type": "cycle",
@@ -79,76 +149,6 @@
       "file": "Skanowanie",
       "action": "Nowe pliki",
       "status": "in_progress"
-    },
-    {
-      "time": "2025-12-08 22:35:58",
-      "type": "process",
-      "file": "the_first_dragon.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-08 22:35:43",
-      "type": "process",
-      "file": "a_restless_soul.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-08 22:35:43",
-      "type": "process",
-      "file": "yonan.lua",
-      "action": "Lua migration",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-08 22:35:40",
-      "type": "process",
-      "file": "yonan.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-08 22:35:39",
-      "type": "process",
-      "file": "corym_worker_02.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-08 22:35:39",
-      "type": "process",
-      "file": "strange_pipe3.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-08 22:35:39",
-      "type": "process",
-      "file": "corym_footman.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-08 22:35:38",
-      "type": "process",
-      "file": "gnomercy.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-08 22:35:38",
-      "type": "process",
-      "file": "ser_tybald.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-08 22:35:38",
-      "type": "process",
-      "file": "kallimae.lua",
-      "action": "Lua migration",
-      "status": "completed"
     }
   ],
   "errors": [],

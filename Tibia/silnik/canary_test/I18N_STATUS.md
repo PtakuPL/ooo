@@ -1,27 +1,27 @@
 # 🌍 I18N Worker v4.0 Status
 
-**Aktualizacja:** 2025-12-08 18:20:01
+**Aktualizacja:** 2025-12-08 18:21:27
 
 ## 📊 Postęp
 
 | Metryka | Wartość |
 |---------|---------|
-| ✅ Przetworzonych | 709 |
-| ⏭️ Wykluczonych | 1162 |
-| 🔑 Kluczy i18n | 44045 |
+| ✅ Przetworzonych | 730 |
+| ⏭️ Wykluczonych | 1212 |
+| 🔑 Kluczy i18n | 44076 |
 | 🌍 Języków | 53 |
 | ⚠️ Konfliktów | 0 |
 
 ## 🔄 Status Workera
 
-- **Cykl:** #9
+- **Cykl:** #11
 - **Tryb:** migration
 - **Plików/cykl:** 10
 
 ## 📂 Kategorie kluczy
 
 - **npc**: 4048 kluczy
-- **scripts**: 403 kluczy
+- **scripts**: 434 kluczy
 - **server**: 0 kluczy
 - **ui**: 0 kluczy
 - **items**: 36972 kluczy

@@ -1,20 +1,20 @@
 # 🌍 I18N Migration Status
 
-**Ostatnia aktualizacja:** 2025-12-08 17:59:52
+**Ostatnia aktualizacja:** 2025-12-08 18:00:41
 
 ## 📊 Postęp
 
 | Metryka | Wartość |
 |---------|---------|
-| ✅ Zmigrowane | 18 plików |
-| ⏭️ Wykluczone | 22 plików |
-| ⏳ Oczekujące | 2787 plików |
+| ✅ Zmigrowane | 28 plików |
+| ⏭️ Wykluczone | 27 plików |
+| ⏳ Oczekujące | 2772 plików |
 | 📁 Łącznie | 2827 plików |
 | 📈 Postęp | **1%** |
 
 ## 🔄 Worker Status
 
-- **Cykl:** #9
+- **Cykl:** #11
 - **Pliki/cykl:** 5
 - **Stringów:** 0
 

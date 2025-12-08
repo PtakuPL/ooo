@@ -1,153 +1,153 @@
 {
-  "last_updated": "2025-12-09 00:24:59",
+  "last_updated": "2025-12-09 00:29:47",
   "current_operation": {
-    "type": "idle",
+    "type": "cycle",
     "phase": 1,
     "category": "scripts",
-    "file": "-",
-    "action": "Oczekiwanie na nowe pliki",
-    "status": "waiting",
-    "details": "Sprawdzam co 60s"
+    "file": "Cykl #12",
+    "action": "🎮 Canary Server - scripts",
+    "status": "in_progress",
+    "details": "NPC:4108 Scripts:713 Items:36972"
   },
   "recent_operations": [
     {
-      "time": "2025-12-09 00:24:59",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
-    },
-    {
-      "time": "2025-12-09 00:23:59",
+      "time": "2025-12-09 00:29:47",
       "type": "cycle",
-      "file": "Cykl #10",
+      "file": "Cykl #12",
       "action": "🎮 Canary Server - scripts",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 00:22:53",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
+      "time": "2025-12-09 00:29:26",
+      "type": "cycle_end",
+      "file": "Cykl 11",
+      "action": "Zakończono przetwarzanie",
+      "status": "completed"
     },
     {
-      "time": "2025-12-09 00:22:00",
-      "type": "cycle",
-      "file": "Cykl #9",
-      "action": "🎮 Canary Server - scripts",
+      "time": "2025-12-09 00:28:42",
+      "type": "cycle_end",
+      "file": "Cykl 11",
+      "action": "Zakończono przetwarzanie",
+      "status": "completed"
+    },
+    {
+      "time": "2025-12-09 00:28:25",
+      "type": "process",
+      "file": "load.lua",
+      "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 00:20:54",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
-    },
-    {
-      "time": "2025-12-09 00:20:00",
-      "type": "cycle",
-      "file": "Cykl #8",
-      "action": "🎮 Canary Server - scripts",
+      "time": "2025-12-09 00:28:25",
+      "type": "process",
+      "file": "i18n.lua",
+      "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 00:18:55",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
-    },
-    {
-      "time": "2025-12-09 00:18:02",
-      "type": "cycle",
-      "file": "Cykl #7",
-      "action": "🎮 Canary Server - scripts",
+      "time": "2025-12-09 00:28:16",
+      "type": "process",
+      "file": "canary.lua",
+      "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 00:16:56",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
-    },
-    {
-      "time": "2025-12-09 00:16:01",
-      "type": "cycle",
-      "file": "Cykl #6",
-      "action": "🎮 Canary Server - scripts",
+      "time": "2025-12-09 00:28:16",
+      "type": "process",
+      "file": "bertram.lua",
+      "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 00:14:55",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
-    },
-    {
-      "time": "2025-12-09 00:13:49",
-      "type": "cycle",
-      "file": "Cykl #5",
-      "action": "🎮 Canary Server - scripts",
+      "time": "2025-12-09 00:28:16",
+      "type": "process",
+      "file": "moe.lua",
+      "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 00:12:40",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
-    },
-    {
-      "time": "2025-12-09 00:11:22",
-      "type": "cycle",
-      "file": "Cykl #4",
-      "action": "🎮 Canary Server - scripts",
+      "time": "2025-12-09 00:28:16",
+      "type": "process",
+      "file": "the_oracle.lua",
+      "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 00:10:10",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
-    },
-    {
-      "time": "2025-12-09 00:08:46",
-      "type": "cycle",
-      "file": "Cykl #3",
-      "action": "🎮 Canary Server - scripts",
+      "time": "2025-12-09 00:28:16",
+      "type": "process",
+      "file": "ortheus.lua",
+      "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 00:07:39",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
-    },
-    {
-      "time": "2025-12-09 00:06:27",
-      "type": "cycle",
-      "file": "Cykl #2",
-      "action": "🎮 Canary Server - scripts",
+      "time": "2025-12-09 00:28:16",
+      "type": "process",
+      "file": "guide_edna.lua",
+      "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 00:05:20",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
+      "time": "2025-12-09 00:28:15",
+      "type": "process",
+      "file": "nilsor.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
     },
     {
-      "time": "2025-12-09 00:03:15",
-      "type": "cycle",
-      "file": "Cykl #1",
-      "action": "🎮 Canary Server - scripts",
+      "time": "2025-12-09 00:28:15",
+      "type": "process",
+      "file": "gerimor.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 00:28:15",
+      "type": "process",
+      "file": "tarun.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 00:28:15",
+      "type": "process",
+      "file": "gewen.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 00:28:15",
+      "type": "process",
+      "file": "vulturenose.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 00:28:15",
+      "type": "process",
+      "file": "olrik.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 00:28:15",
+      "type": "process",
+      "file": "vascalir.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 00:28:15",
+      "type": "process",
+      "file": "ulala.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 00:28:14",
+      "type": "process",
+      "file": "mr_morris.lua",
+      "action": "Przetwarzanie lua",
       "status": "in_progress"
     }
   ],

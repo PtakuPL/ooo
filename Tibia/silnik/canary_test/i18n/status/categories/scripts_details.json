@@ -1,14 +1,14 @@
 {
   "category": "scripts",
   "status": "in_progress",
-  "last_updated": "2025-12-09T00:24:30+01:00",
+  "last_updated": "2025-12-09T00:26:43+01:00",
   "summary": {
     "total_keys": 713,
-    "files_processed": 946
+    "files_processed": 487
   },
   "current_work": {
     "directory": "data-otservbr-global/scripts/",
-    "cycle": 10
+    "cycle": 11
   },
   "subdirectories": {
     "quests": {"processed": 286},
@@ -16,28 +16,28 @@
   },
   "recent_files": [
   {
-    "file": "tefrit.lua",
-    "time": "00:24:30",
+    "file": "game_questlog.html",
+    "time": "00:26:43",
     "status": "success"
   },
   {
-    "file": "saideh.lua",
-    "time": "00:24:30",
+    "file": "#displayUIPickReward.html",
+    "time": "00:26:43",
     "status": "success"
   },
   {
-    "file": "tigo.lua",
-    "time": "00:24:30",
+    "file": "game_rewardwall.html",
+    "time": "00:26:43",
     "status": "success"
   },
   {
-    "file": "kallimae.lua",
-    "time": "00:24:30",
+    "file": "status.php",
+    "time": "00:26:43",
     "status": "success"
   },
   {
-    "file": "yonan.lua",
-    "time": "00:24:30",
+    "file": "updater.php",
+    "time": "00:26:43",
     "status": "success"
   }
 ]

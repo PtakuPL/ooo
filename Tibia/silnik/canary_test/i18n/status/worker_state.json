@@ -1,16 +1,16 @@
 {
   "schema_version": "2.0",
-  "last_updated": "2025-12-09T00:24:30+01:00",
+  "last_updated": "2025-12-09T00:26:43+01:00",
   "worker": {
     "version": "4.0",
     "status": "running",
     "mode": "analysis",
-    "cycle": 10,
+    "cycle": 11,
     "files_per_cycle": 10,
     "pid": 1439815
   },
   "global_progress": {
-    "total_files_processed": 946,
+    "total_files_processed": 487,
     "total_files_excluded": 4895,
     "total_keys": 42109,
     "total_languages": 53,
@@ -26,28 +26,28 @@
   },
   "recent_files": [
   {
-    "file": "tefrit.lua",
-    "time": "00:24:30",
+    "file": "game_questlog.html",
+    "time": "00:26:43",
     "status": "success"
   },
   {
-    "file": "saideh.lua",
-    "time": "00:24:30",
+    "file": "#displayUIPickReward.html",
+    "time": "00:26:43",
     "status": "success"
   },
   {
-    "file": "tigo.lua",
-    "time": "00:24:30",
+    "file": "game_rewardwall.html",
+    "time": "00:26:43",
     "status": "success"
   },
   {
-    "file": "kallimae.lua",
-    "time": "00:24:30",
+    "file": "status.php",
+    "time": "00:26:43",
     "status": "success"
   },
   {
-    "file": "yonan.lua",
-    "time": "00:24:30",
+    "file": "updater.php",
+    "time": "00:26:43",
     "status": "success"
   }
 ]

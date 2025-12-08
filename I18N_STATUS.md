@@ -4,18 +4,27 @@
 
 ---
 
+## 🛡️ Status Systemu
+
+| Komponent | Status |
+|-----------|--------|
+| **Worker** | 🟢 Running (PID: 1719299) |
+| **Guardian** | 🟢 Active (sprawdza co 1 min) |
+| **Cykl** | #1 |
+| **Restarty** | 0 |
+
 ## 📊 Aktualny postęp
 
 ![NPC Migration](https://img.shields.io/badge/NPC-43.6%25-orange?style=for-the-badge&logo=lua)
 ![Keys](https://img.shields.io/badge/Keys-43641-blue?style=for-the-badge&logo=json)
 ![Speed](https://img.shields.io/badge/Speed-1.2_NPC%2Fmin-purple?style=for-the-badge&logo=speedtest)
-![Errors](https://img.shields.io/badge/Errors-0-green?style=for-the-badge)
+![Worker](https://img.shields.io/badge/Worker-green-green?style=for-the-badge)
 
 ## 📈 Progress Bar
 
 ```
 [█████████████████░░░░░░░░░░░░░░░░░░░░░░░] 43.6%
- 448 / 1027 NPC
+ 448 / 1027 NPC (594 wykluczonych)
 ```
 
 ## 📋 Szczegóły
@@ -23,14 +32,16 @@
 | 📌 Metryka | 📊 Wartość |
 |------------|------------|
 | **NPC Zmigrowanych** | `448` / `1027` |
+| **Wykluczonych** | `594` (brak stringów) |
 | **Postęp** | **43.6%** |
 | **Klucze i18n** | `43641` |
 | **Języki** | 5 (🇬🇧 en, 🇵🇱 pl, 🇩🇪 de, 🇪🇸 es, 🇧🇷 pt) |
 | **Prędkość** | ~`1.2` NPC/min |
-| **Czas pracy** | 333min |
+| **Czas pracy** | 335min |
 | **Start** | 11:42 |
 | **ETA** | ~482 min |
 | **Błędy** | 0 |
+| **Cykl** | #1 |
 
 ## 📁 Ostatnio zmodyfikowane NPC
 
@@ -48,15 +59,23 @@
 ## 🔧 Status Workera
 
 ```
-[2025-12-08 17:16:00] [INFO] 📦 FAZA 1: MIGRACJA NPC
+[2025-12-08 17:17:45] [INFO] 📊 RAPORT CYKLU #1
 ```
+
+## 🛡️ Zabezpieczenia
+
+- ✅ **Guardian** - restartuje workera jeśli padnie (cron co 1 min)
+- ✅ **Checkpointing** - zapisuje stan po każdym cyklu
+- ✅ **Graceful shutdown** - poprawne zamykanie
+- ✅ **Error handling** - kontynuuje mimo błędów
+- ✅ **Excluded list** - pomija problematyczne pliki
 
 ## 🔄 Ostatnia aktualizacja
 
 | 🕐 Czas | 📅 Data |
 |---------|---------|
-| **UTC:** | 2025-12-08 16:16:02 UTC |
-| **Local:** | 17:16:02 |
+| **UTC:** | 2025-12-08 16:17:59 UTC |
+| **Local:** | 17:17:59 |
 
 ---
 

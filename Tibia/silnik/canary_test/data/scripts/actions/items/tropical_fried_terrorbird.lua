@@ -9,12 +9,12 @@ local tropicalFriedTerrorbird = Action()
 
 function tropicalFriedTerrorbird.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:hasExhaustion("special-foods-cooldown") then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need to wait before using it again.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.tropical_fried_terrorbird.msg_1")
 		return true
 	end
 
 	player:addCondition(magicLevelCondition)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You feel smarter.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.tropical_fried_terrorbird.msg_2")
 	player:say("Chomp.", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)

@@ -5,7 +5,7 @@ function gravediggerKey1.onUse(player, item, fromPosition, target, toPosition, i
 	end
 
 	if player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission31) == 1 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "<swoosh> <oomph> <cough, cough>")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_key1.msg_1")
 		item:remove(1)
 		Tile(Position(33071, 32442, 11)):getItemById(8708):transform(8709)
 	end

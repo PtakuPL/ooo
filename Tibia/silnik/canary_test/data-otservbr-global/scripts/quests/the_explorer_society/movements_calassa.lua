@@ -11,11 +11,11 @@ function calassa.onStepIn(creature, item, position, fromPosition)
 		player:teleportTo(Position(31914, 32713, 12))
 		player:getPosition():sendMagicEffect(CONST_ME_WATERSPLASH)
 		player:getPosition():sendMagicEffect(CONST_ME_LOSEENERGY)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You enter the realm of Calassa.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_calassa.msg_1")
 	else
 		player:teleportTo(fromPosition)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You must wear an underwater exploration helmet in order to dive.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_calassa.msg_2")
 	end
 	return true
 end

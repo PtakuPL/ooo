@@ -13,7 +13,7 @@ function roshamuulCarpet.onStepIn(creature, item, position, fromPosition)
 
 	local destination = town:getTemplePosition()
 	player:teleportTo(destination)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The flying carpet brought you back to Thais.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.roshamuul_carpet.msg_1")
 	position:sendMagicEffect(CONST_ME_POFF)
 	destination:sendMagicEffect(CONST_ME_POFF)
 	return true

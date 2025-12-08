@@ -38,7 +38,7 @@ function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if targetId == 9582 then
 		local owner = target:getAttribute(ITEM_ATTRIBUTE_CORPSEOWNER)
 		if owner ~= 0 and owner ~= player.uid then
-			player:sendTextMessage(MESSAGE_FAILURE, "You are not the owner.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.fishing.msg_1")
 			return true
 		end
 
@@ -86,7 +86,7 @@ function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			if math.random(100) >= 97 then
 				player:addItem(21402, 1)
 				player:setStorageValue(Storage.Quest.U10_55.Dawnport.TheDormKey, 3)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "With a giant splash, you heave an enormous fish out of the water.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.fishing.msg_2")
 				return true
 			end
 		elseif math.random(100) <= math.min(math.max(10 + (player:getEffectiveSkillLevel(SKILL_FISHING) - 10) * 0.597, 10), 50) then

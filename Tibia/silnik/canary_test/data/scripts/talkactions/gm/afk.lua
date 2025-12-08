@@ -38,13 +38,13 @@ function afk.onSay(player, words, param)
 		if player:isInGhostMode() then
 			player:setGhostMode(false)
 		end
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are now AFK!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.afk.msg_1")
 		playerPosition:sendMagicEffect(CONST_ME_REDSMOKE)
 		showAfkMessage(playerPosition)
 	elseif param == "off" then
 		if isAfk.afk then
 			table.remove(playersAFKs, isAfk.index)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are no longer AFK!")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.afk.msg_2")
 			playerPosition:sendMagicEffect(CONST_ME_REDSMOKE)
 		end
 	end
@@ -74,7 +74,7 @@ function callback.playerOnWalk(player, creature, creaturePos, toPos)
 	local isAfk = checkIsAFK(player:getId())
 	if isAfk.afk then
 		table.remove(playersAFKs, isAfk.index)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are no longer AFK!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.afk.msg_3")
 	end
 	return true
 end

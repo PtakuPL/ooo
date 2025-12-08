@@ -28,7 +28,7 @@ function minotaurBoss.onStepIn(creature, item, position, fromPosition)
 	if roomIsOccupied(setting.arenaPosition, true, 6, 6) or player:getStorageValue(TheNewFrontier.Questline) ~= 17 then
 		player:teleportTo(fromPosition)
 		fromPosition:sendMagicEffect(CONST_ME_TELEPORT)
-		return player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't have access to this area.")
+		return player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movement_minotaur_boss.msg_1")
 	end
 
 	addEvent(completeTest, 2 * 60 * 1000, player.uid)

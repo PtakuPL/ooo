@@ -34,19 +34,19 @@ function actions_strangeBucket.onUse(player, item, fromPosition, target, toPosit
 				if r >= 5 then
 					filled = true
 					item:transform(lessBucket)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "There is not enough ectoplasm left to fill it in the bucket.")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_strangeBucket.msg_1")
 				end
 			elseif item.itemid == lessBucket then
 				if r >= 5 then
 					filled = true
 					item:transform(mediumBucket)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "There is not enough ectoplasm left to fill it in the bucket.")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_strangeBucket.msg_2")
 				end
 			elseif item.itemid == mediumBucket then
 				if r >= 5 then
 					filled = true
 					item:transform(fullBucket)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The ectoplasm all over this egg was already seeping inside the cocoon itself. You manage to fill soem of it into the bucket.")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_strangeBucket.msg_3")
 				end
 			end
 			if filled then
@@ -66,7 +66,7 @@ function actions_strangeBucket.onUse(player, item, fromPosition, target, toPosit
 					item:transform(emptyBucket)
 					doAddCondition(player, slimeCondition)
 					player:getPosition():sendMagicEffect(CONST_ME_POFF)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You pour all of the ectoplasm over yourself. Without the bucket you cannot stabilise it, you need to hurry until it dissolves!")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_strangeBucket.msg_4")
 				end
 			end
 		end

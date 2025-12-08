@@ -10,10 +10,10 @@ function dormitoryTeleport.onStepIn(creature, item, position, fromPosition)
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission56, 1)
 		player:teleportTo(Position(33015, 32440, 10))
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You should hurry, try not to dwell here any longer than a few minutes.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_dormitory_teleport.msg_1")
 	else
 		player:teleportTo(Position(33018, 32437, 10))
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The teleport is accessible only once.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_dormitory_teleport.msg_2")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 	end
 	return true

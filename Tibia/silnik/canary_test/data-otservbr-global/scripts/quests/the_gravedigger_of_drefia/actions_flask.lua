@@ -7,7 +7,7 @@ function gravediggerFlask.onUse(player, item, fromPosition, target, toPosition, 
 
 	if player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission11) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission12) < 1 then
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission12, 1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Done! Report back to Omrabas.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_flask.msg_1")
 		player:addItem(19086, 1)
 		item:remove()
 		target:remove()

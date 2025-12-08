@@ -4,7 +4,7 @@ function mcCheck.onSay(player, words, param)
 	-- create log
 	logCommand(player, words, param)
 
-	player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Multiclient Check List:")
+	player:sendLocalizedMessage(MESSAGE_ADMINISTRATOR, "scripts.mc_check.msg_1")
 	local ipList = {}
 	local players = Game.getPlayers()
 	for i = 1, #players do

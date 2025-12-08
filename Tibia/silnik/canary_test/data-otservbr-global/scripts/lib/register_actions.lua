@@ -326,7 +326,7 @@ function onUseRope(player, item, fromPosition, target, toPosition, isHotkey)
 		player:teleportTo(toPosition:moveUpstairs(), true)
 		if target.itemid == 7762 then
 			if player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.TutorialHintsStorage) < 22 then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have successfully used your rope to climb out of the hole. Congratulations! Now continue to the east.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_1")
 			end
 		end
 	elseif table.contains(holeId, target.itemid) then
@@ -361,13 +361,13 @@ function onUseShovel(player, item, fromPosition, target, toPosition, isHotkey)
 				if rand <= 10 then
 					player:addItem(21379, 1)
 					player:setStorageValue(Storage.Quest.U10_55.Dawnport.TheLostAmulet, 2)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found an ancient amulet. Strange engravings cover it. Maybe Morris can make them out.")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_2")
 				elseif rand <= 80 then
 					player:addItem(21395, 1)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dig up sand and sea shells.")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_3")
 				elseif rand > 95 then
 					player:addItem(3492, math.random(1, 10))
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dig up some worms. But you are confident that you'll find the amulet here, somewhere.")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_4")
 				end
 				toPosition:sendMagicEffect(CONST_ME_POFF)
 			else
@@ -386,13 +386,13 @@ function onUseShovel(player, item, fromPosition, target, toPosition, isHotkey)
 		local data = specificPositions[i]
 		if toPosition == data.pos and player:getStorageValue(data.storage) < 1 then
 			if player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission14) == 1 then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You found a small dragon tear. You pocket it quickly.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_5")
 				player:getPosition():sendMagicEffect(CONST_ME_POFF)
 				player:addItem(19084, 1)
 				player:setStorageValue(data.storage, 1)
 				return true
 			else
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You find nothing of interest.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_6")
 				return true
 			end
 		end
@@ -427,7 +427,7 @@ function onUseShovel(player, item, fromPosition, target, toPosition, isHotkey)
 		player:addItem(11341, 1)
 		player:say("You dig out a handful of earth from this sacred place.", TALKTYPE_MONSTER_SAY)
 	elseif target.itemid == 7749 and player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.TutorialHintsStorage) < 20 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug a hole! Walk onto it as long as it is open to jump down into the forest cave.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_7")
 		player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.TutorialHintsStorage, 19)
 		Position(32070, 32266, 7):sendMagicEffect(CONST_ME_TUTORIALARROW)
 		Position(32070, 32266, 7):sendMagicEffect(CONST_ME_TUTORIALSQUARE)
@@ -435,12 +435,12 @@ function onUseShovel(player, item, fromPosition, target, toPosition, isHotkey)
 		addEvent(revertItem, 30 * 1000, toPosition, 594, 7749)
 	elseif target.actionid == 4654 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission49) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission50) < 1 then
 		-- Gravedigger Quest
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You found a piece of the scroll. You pocket it quickly.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_8")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		player:addItem(18933, 1)
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission50, 1)
 	elseif target.actionid == 4668 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission71) == 1 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "A torn scroll piece emerges. Probably gnawed off by rats.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_9")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		player:addItem(18933, 1)
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission71, 2)
@@ -481,7 +481,7 @@ function onUseShovel(player, item, fromPosition, target, toPosition, isHotkey)
 			local randItem = config[i]
 			if chance >= randItem.from and chance <= randItem.to then
 				player:addItem(randItem.itemId, 1)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a " .. ItemType(randItem.itemId):getName() .. ".")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_10" .. ItemType(randItem.itemId):getName() .. ".")
 				player:setStorageValue(Storage.SwampDiggingTimeout, os.time() + 604800)
 				toPosition:sendMagicEffect(CONST_ME_GREEN_RINGS)
 				break
@@ -536,10 +536,10 @@ function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 				for j = 1, #foundItems do
 					player:addItem(foundItems[j].id, foundItems[j].quantity)
 				end
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This table is made of several old doors. One of them has a noticeable ornate lock. Perhaps you could lever it out with a tool.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_11")
 				player:setStorageValue(storage, 1)
 			else
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You already removed the old lock.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_12")
 			end
 
 			return true
@@ -766,7 +766,7 @@ function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 				rubbleItem:remove(1)
 			end
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can't remove this pile since it's currently holding up the tunnel.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_13")
 		end
 	elseif target.actionid == 50127 then
 		-- Pythius The Rotten (Firewalker Boots)
@@ -824,11 +824,11 @@ function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 	elseif target.itemid == 20135 then
 		local chance = math.random(100)
 		if chance > 50 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Crushing the stone produces some fine gravel.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_14")
 			target:transform(20133)
 		else
 			Game.createMonster("Frazzlemaw", toPosition)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Crushing the stone yields nothing but slightly finer, yet still unusable rubber.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_15")
 			target:transform(20134)
 		end
 		target:decay()
@@ -1051,10 +1051,10 @@ function onUseKitchenKnife(player, item, fromPosition, target, toPosition, isHot
 				for j = 1, #foundItems do
 					player:addItem(foundItems[j].id, foundItems[j].quantity)
 				end
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This table is made of several old doors. One of them has a noticeable ornate lock. Perhaps you could lever it out with a tool.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_16")
 				player:setStorageValue(storage, 1)
 			else
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You already removed the old lock.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_17")
 			end
 
 			return true
@@ -1162,7 +1162,7 @@ function onGrindItem(player, item, fromPosition, target, toPosition)
 				local parent = item:getParent()
 				if not parent:isTile() and (parent:addItem(value.item_id, 1) or topParent:addItem(value.item_id, 1)) then
 					item:remove(1)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You grind a " .. ItemType(index):getName() .. " into fine, " .. ItemType(value.item_id):getName() .. ".")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_18" .. ItemType(index):getName() .. " into fine, " .. ItemType(value.item_id):getName() .. ".")
 					doSendMagicEffect(target:getPosition(), value.effect)
 					return true
 				else
@@ -1171,7 +1171,7 @@ function onGrindItem(player, item, fromPosition, target, toPosition)
 			else
 				Game.createItem(value.item_id, 1, item:getPosition())
 			end
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You grind a " .. ItemType(index):getName() .. " into fine, " .. ItemType(value.item_id):getName() .. ".")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_19" .. ItemType(index):getName() .. " into fine, " .. ItemType(value.item_id):getName() .. ".")
 			item:remove(1)
 			doSendMagicEffect(target:getPosition(), value.effect)
 			return

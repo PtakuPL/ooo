@@ -37,7 +37,7 @@ function citizen.onStepIn(creature, item, position, fromPosition)
 	end
 
 	if town:getId() == TOWNS_LIST.SVARGROND and player:getStorageValue(Storage.Quest.U8_0.BarbarianTest.Questline) < 8 then
-		player:sendTextMessage(MESSAGE_GAME_HIGHLIGHT, "You first need to absolve the Barbarian Test Quest to become citizen!")
+		player:sendLocalizedMessage(MESSAGE_GAME_HIGHLIGHT, "scripts.citizen.msg_1")
 		player:teleportTo(town:getTemplePosition())
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		return true
@@ -46,7 +46,7 @@ function citizen.onStepIn(creature, item, position, fromPosition)
 	player:setTown(town)
 	player:teleportTo(town:getTemplePosition())
 	player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are now a citizen of " .. town:getName() .. ".")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.citizen.msg_2" .. town:getName() .. ".")
 	return true
 end
 

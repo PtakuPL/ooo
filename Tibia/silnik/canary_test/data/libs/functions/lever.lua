@@ -203,7 +203,7 @@ function Lever.canUseLever(self, player, bossName, timeToFightAgain)
 	for _, v in pairs(info) do
 		local newPlayer = v.creature
 		if newPlayer and not newPlayer:canFightBoss(bossName) then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You or a member in your team have to wait " .. timeToFightAgain .. " hours to face " .. bossName .. " again!")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "misc.lever.msg_1" .. timeToFightAgain .. " hours to face " .. bossName .. " again!")
 			newPlayer:getPosition():sendMagicEffect(CONST_ME_POFF)
 			return false
 		end

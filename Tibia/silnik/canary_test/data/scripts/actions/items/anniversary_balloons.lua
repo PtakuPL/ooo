@@ -89,7 +89,7 @@ function anniversaryBalloons.onUse(player, item, fromPosition, target, toPositio
 	local tile = Tile(fromPosition)
 
 	if not tile:getHouse() then
-		player:sendTextMessage(MESSAGE_FAILURE, "You may use this only inside a house.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.anniversary_balloons.msg_1")
 		return true
 	end
 

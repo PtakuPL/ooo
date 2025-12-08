@@ -338,7 +338,7 @@ function Hireling:returnToLamp(player_id)
 	local player = Player(player_id)
 	if self:getOwnerId() ~= player_id then
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
-		return player:sendTextMessage(MESSAGE_FAILURE, "You are not the master of this hireling.")
+		return player:sendLocalizedMessage(MESSAGE_FAILURE, "misc.hireling.msg_1")
 	end
 
 	self.active = 0

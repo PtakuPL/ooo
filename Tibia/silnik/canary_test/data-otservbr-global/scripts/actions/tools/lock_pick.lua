@@ -9,11 +9,11 @@ function lockPick.onUse(player, item, fromPosition, target, toPosition, isHotkey
 		if player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission02) == 1 then
 			player:addItem(227, 1)
 			player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission02, 2)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your lock pick open this chest!")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.lock_pick.msg_1")
 		end
 	else
 		item:remove(1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your lock pick broke.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.lock_pick.msg_2")
 	end
 	return true
 end

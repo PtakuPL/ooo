@@ -79,13 +79,13 @@ function demonOak.onUse(player, item, fromPosition, target, toPosition, isHotkey
 
 	local isDefeated = totalProgress == (#config.demonOakIds * (config.waves + 1))
 	if (config.killAllBeforeCut or isDefeated) and hasMonsters then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need to kill all monsters first.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_demon_oak.msg_1")
 		return true
 	end
 
 	if isDefeated then
 		player:teleportTo(DEMON_OAK_KICK_POSITION)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Tell Oldrak about your great victory against the demon oak.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_demon_oak.msg_2")
 		player:setStorageValue(Storage.Quest.U8_2.TheDemonOak.Done, 1)
 		player:setStorageValue(Storage.Quest.U8_2.TheDemonOak.Progress, 3)
 		return true

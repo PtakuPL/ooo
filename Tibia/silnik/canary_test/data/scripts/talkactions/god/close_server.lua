@@ -19,10 +19,10 @@ function closeServer.onSay(player, words, param)
 		end
 	elseif param == "maintainance" then
 		Game.setGameState(GAME_STATE_MAINTAIN)
-		player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Server is set to maintenance mode.")
+		player:sendLocalizedMessage(MESSAGE_ADMINISTRATOR, "scripts.close_server.msg_1")
 	else
 		Game.setGameState(GAME_STATE_CLOSED)
-		player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Server is now closed.")
+		player:sendLocalizedMessage(MESSAGE_ADMINISTRATOR, "scripts.close_server.msg_2")
 		Webhook.sendMessage(":yellow_square: Server was closed by: **" .. player:getName() .. "**", announcementChannels["serverAnnouncements"])
 	end
 	return true

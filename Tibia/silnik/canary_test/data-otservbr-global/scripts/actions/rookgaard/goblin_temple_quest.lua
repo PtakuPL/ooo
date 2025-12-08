@@ -22,7 +22,7 @@ function goblintemple1Quest.onUse(player, item, fromPosition, target, toPosition
 			local rewardId, rewardCount = reward[1], reward[2]
 			bag:addItem(rewardId, rewardCount)
 		end
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a bag.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.goblin_temple_quest.msg_1")
 		player:questKV("goblintemple"):set("completed", true)
 	end
 
@@ -56,7 +56,7 @@ function goblintemple2Quest.onUse(player, item, fromPosition, target, toPosition
 			local rewardId, rewardCount = reward[1], reward[2]
 			bag:addItem(rewardId, rewardCount)
 		end
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a bag.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.goblin_temple_quest.msg_2")
 		player:questKV("goblintemple2"):set("completed", true)
 	end
 

@@ -12,7 +12,7 @@ function sacrificeTeleport.onStepIn(creature, item, position, fromPosition)
 	else
 		player:teleportTo(fromPosition, true)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Offer the lives of the yet unborn to the lizard god if you want to enter the sanctuary.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_legion_helmet.msg_1")
 	end
 	return true
 end

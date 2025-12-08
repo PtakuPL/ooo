@@ -47,7 +47,7 @@ function challenger.onStepIn(creature, item, position, fromPosition)
 		if item.uid == 24882 then
 			if player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.BabyDragon) < 1 then
 				player:teleportTo(teleport.backPos)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You not have permission to use this teleport!")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_challenger.msg_1")
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				return true
 			end
@@ -58,7 +58,7 @@ function challenger.onStepIn(creature, item, position, fromPosition)
 		return true
 	else
 		player:teleportTo(teleport.backPos)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have to wait to challenge this enemy again!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_challenger.msg_2")
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		return true
 	end

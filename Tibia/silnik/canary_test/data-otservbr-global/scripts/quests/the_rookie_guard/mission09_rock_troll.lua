@@ -71,10 +71,10 @@ function tunnelHole.onStepIn(creature, item, position, fromPosition)
 	end
 	local missionState = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission09)
 	if missionState == -1 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have no business down there.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission09_rock_troll.msg_1")
 		player:teleportTo(fromPosition, true)
 	elseif missionState >= 7 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The cave has collapsed. It's not safe to go down there anymore.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission09_rock_troll.msg_2")
 		player:teleportTo(fromPosition, true)
 	end
 	return true
@@ -115,7 +115,7 @@ function trunkChest.onUse(player, item, frompos, itemEx, topos)
 		local hasOpenedChest = testFlag(chestsState, chest.id)
 		if not hasOpenedChest then
 			local reward = Game.createItem(chest.itemId, 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found " .. reward:getArticle() .. " " .. reward:getName() .. ".")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission09_rock_troll.msg_3" .. reward:getArticle() .. " " .. reward:getName() .. ".")
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.TrollChests, chestsState + chest.id)
 			player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
 		else
@@ -156,9 +156,9 @@ function onUsePickAtTunnelPillar(player, item, fromPosition, itemEx, toPosition)
 		if not hasDamagedPillar then
 			local newMissionState = missionState + 1
 			if table.find({ 3, 4, 5, 6 }, newMissionState) then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "That should weaken the beam enough to make it collapse soon.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission09_rock_troll.msg_4")
 			elseif newMissionState == 7 then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This was the last beam. Now, get out of here before the cave collapses!")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission09_rock_troll.msg_5")
 				player:addExperience(100, true)
 			end
 			player:say("<crack>", TALKTYPE_MONSTER_SAY, false, player, toPosition)
@@ -166,7 +166,7 @@ function onUsePickAtTunnelPillar(player, item, fromPosition, itemEx, toPosition)
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission09, newMissionState)
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.TunnelPillars, pillarsState + pillarId)
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You've already weakened this beam. Better leave it alone now so it won't collapse before you are out of here.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission09_rock_troll.msg_6")
 		end
 	end
 	return true

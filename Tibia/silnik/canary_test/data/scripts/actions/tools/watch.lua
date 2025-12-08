@@ -1,7 +1,7 @@
 local watch = Action()
 
 function watch.onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The time is " .. getFormattedWorldTime() .. ".")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.watch.msg_1" .. getFormattedWorldTime() .. ".")
 	return true
 end
 

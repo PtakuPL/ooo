@@ -30,7 +30,7 @@ function spikeTasksShovel.onUse(player, item, fromPosition, target, toPosition, 
 				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Mound_Main, sum)
 				if sum == 1 then
 					item:remove()
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Report the task to Gnomilly.")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_spirit_shovel.msg_1")
 				end
 			end
 			break

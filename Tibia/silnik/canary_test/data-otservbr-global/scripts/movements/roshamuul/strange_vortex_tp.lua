@@ -9,7 +9,7 @@ function nightmareVortex.onStepIn(creature, item, position, fromPosition)
 	end
 
 	player:teleportTo(nightmarePosition)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have been trapped in a nightmare.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.strange_vortex_tp.msg_1")
 
 	return true
 end

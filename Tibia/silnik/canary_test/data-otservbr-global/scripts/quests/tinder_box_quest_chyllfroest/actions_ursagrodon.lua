@@ -29,24 +29,24 @@ function ursagrodon.onUse(player, item, fromPosition, target, toPosition, isHotk
 
 	if target.itemid == config.item1 or target.itemid == config.item2 or target.itemid == config.item3 then
 		if player:getStorageValue(config.storageKey) > 0 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You already have the obedience of ursagrodon.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_ursagrodon.msg_1")
 			return true
 		end
 
 		if rand <= config.percentage then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The ice cracked and the frozen creature with it - be more careful next time!")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_ursagrodon.msg_2")
 			item:remove(1)
 			target:transform(config.item4)
 			addEvent(revertIce, 600 * 1000, toPosition)
 		else
 			if target.itemid == config.item1 then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You managed to melt about half of the ice blook. Quickly now, it's ice cold here and the ice block could freeze over again.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_ursagrodon.msg_3")
 				target:transform(config.item2)
 			elseif target.itemid == config.item2 then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You managed to melt almost the whole block, only the feet of the creature are still stuck in the ice. Finish the job!")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_ursagrodon.msg_4")
 				target:transform(config.item3)
 			elseif target.itemid == config.item3 then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The freed ursagrodon look at you with glowing, obedient eyes.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_ursagrodon.msg_5")
 				target:transform(config.item4)
 				item:remove(1)
 				player:addMount(38)

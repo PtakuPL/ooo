@@ -103,20 +103,20 @@ function fluid.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	end
 	if target.itemid == 26076 then
 		if item.type == 0 then
-			player:sendTextMessage(MESSAGE_FAILURE, "It is empty.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.fluids.msg_1")
 		elseif item.type == 1 then
 			toPosition:sendMagicEffect(CONST_ME_WATERSPLASH)
 			target:transform(target.itemid + 1)
 			item:transform(item.itemid, 0)
 		else
-			player:sendTextMessage(MESSAGE_FAILURE, "You need water.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.fluids.msg_2")
 		end
 		return true
 	end
 
 	if target.itemid == 1 then
 		if item.type == 0 then
-			player:sendTextMessage(MESSAGE_FAILURE, "It is empty.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.fluids.msg_3")
 		elseif target.uid == player.uid then
 			if table.contains({ 2, 3, 13, 16 }, item.type) then
 				player:addCondition(drunk)
@@ -152,7 +152,7 @@ function fluid.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		if fluidSource ~= 0 then
 			item:transform(item.itemid, fluidSource)
 		elseif item.type == 0 then
-			player:sendTextMessage(MESSAGE_FAILURE, "It is empty.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.fluids.msg_4")
 		else
 			if item.type == 5 and target.actionid == 2023 then
 				toPosition.y = toPosition.y + 1

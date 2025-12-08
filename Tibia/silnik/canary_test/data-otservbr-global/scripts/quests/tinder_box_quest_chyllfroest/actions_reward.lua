@@ -14,7 +14,7 @@ function tinderReward.onUse(player, item, fromPosition, target, toPosition, isHo
 
 	player:addItem(20357, 1)
 	player:setStorageValue(Storage.Quest.U10_37.TinderBoxQuestChyllfroest.Reward, currentTime + 72000)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a tinder box.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_reward.msg_1")
 
 	return true
 end

@@ -11,7 +11,7 @@ function actions_doorInvisible.onUse(player, item, fromPosition, target, toPosit
 		if player:getItemCount(lanternId) >= 1 then
 			player:setStorageValue(Storage, 1)
 			player:setStorageValue(Count, player:getStorageValue(Count) + 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The door opens.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_doorInvisible.msg_1")
 		end
 	else
 		if iPos.x < player:getPosition().x then

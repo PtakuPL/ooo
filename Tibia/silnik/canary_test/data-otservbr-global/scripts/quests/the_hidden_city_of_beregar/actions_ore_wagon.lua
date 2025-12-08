@@ -100,7 +100,7 @@ function wagons.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			if travel[i] == travel[1] then
 				local targetPosition = checkpoint[player:getStorageValue(story)]
 				if not targetPosition then
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't have permission to use this yet.")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_ore_wagon.msg_1")
 					return true
 				end
 				player:teleportTo(targetPosition, true)
@@ -173,7 +173,7 @@ function wagons.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		end
 		if player:getStorageValue(Storage.Quest.U8_4.TheHiddenCityOfBeregar.OreWagon) < 1 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't know how to use this yet.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_ore_wagon.msg_2")
 			return true
 		end
 	end

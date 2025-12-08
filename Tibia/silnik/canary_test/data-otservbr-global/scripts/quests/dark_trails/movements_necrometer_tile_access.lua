@@ -7,11 +7,11 @@ function necrometerTileAccess.onStepIn(creature, item, position, fromPosition)
 	end
 
 	if player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission04) == 1 and player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission05) < 1 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "A strange ritual has taken place here. Report about it to the Gloot Brothers.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_necrometer_tile_access.msg_1")
 		player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission05, 1) -- Start mission 5
 	elseif player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission10) >= 1 and player:getItemCount(21124) > 0 then
 		player:teleportTo({ x = 33419, y = 32106, z = 10 })
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The necrometer reveals a hidden passage!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_necrometer_tile_access.msg_2")
 	end
 
 	return true

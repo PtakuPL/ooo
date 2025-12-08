@@ -6,7 +6,7 @@ function hiddenNote.onUse(player, item, fromPosition, target, toPosition, isHotk
 	if player:getStorageValue(TheNewFrontier.Mission07.HiddenNote) < 1 then
 		local note = player:addItem(8747, 1)
 		note:setAttribute(ITEM_ATTRIBUTE_TEXT, "Go to the secret door to the north")
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a piece of paper.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action_hidden_note.msg_1")
 		player:setStorageValue(TheNewFrontier.Mission07.HiddenNote, 1)
 		return true
 	end

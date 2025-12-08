@@ -19,7 +19,7 @@ local adventurersTreasure = Action()
 function adventurersTreasure.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:getStorageValue(Storage.Quest.U10_80.TheGreatDragonHunt.DragonCounter) >= 50 then
 		local treasure = items[math.random(#items)]
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "It is impossible to take along all of the treasures here. But you pick out " .. treasure.description)
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_treasure.msg_1" .. treasure.description)
 		for _, item in ipairs(treasure.items) do
 			player:addItem(item.id, item.count)
 		end
@@ -37,7 +37,7 @@ function adventurersTreasure.onUse(player, item, fromPosition, target, toPositio
 			player:addAchievement("Hoard of the Dragon")
 		end
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You try to pick a treasure, but you hear further dragons approaching. You should kill some more before picking out something.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_treasure.msg_2")
 	end
 
 	return true

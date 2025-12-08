@@ -6,7 +6,7 @@ function gravediggerTears.onUse(player, item, fromPosition, target, toPosition, 
 
 	if player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission14) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission15) < 1 then
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission15, 1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The dragon tears glow and disappear. The old powers are appeased.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_tears.msg_1")
 		item:remove(3)
 	end
 	return true

@@ -7,10 +7,10 @@ function talkaction.onSay(player, words, param)
 	end
 	if param == "on" then
 		player:kv():set("npc-shop-hidden-sell-item", true)
-		player:sendTextMessage(MESSAGE_LOOK, "You activated hidden sell shop items.")
+		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.hidden_npc_sell_shop_items.msg_1")
 	elseif param == "off" then
 		player:kv():set("npc-shop-hidden-sell-item", false)
-		player:sendTextMessage(MESSAGE_LOOK, "You deactivated hidden sell shop items")
+		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.hidden_npc_sell_shop_items.msg_2")
 	end
 	return true
 end

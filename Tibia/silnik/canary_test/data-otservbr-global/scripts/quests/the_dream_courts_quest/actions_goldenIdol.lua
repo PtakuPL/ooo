@@ -48,12 +48,12 @@ function actions_goldenIdol.onUse(player, item, fromPosition, target, toPosition
 					if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.HauntedHouse.Tomb) == 1 and player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.HauntedHouse.Cellar) == 1 and player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.HauntedHouse.Temple) == 1 then
 						player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.HauntedHouse.Questline, 2)
 					end
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have placed all the idols on the altars and unlocked the temple!")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_goldenIdol.msg_1")
 				end
 
 				addEvent(removeIdol, resetTime, altar.position)
 			else
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "There is already an idol here. Try another altar.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_goldenIdol.msg_2")
 			end
 		end
 	end

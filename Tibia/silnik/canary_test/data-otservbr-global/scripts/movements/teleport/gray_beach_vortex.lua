@@ -18,7 +18,7 @@ function grayBeachVortex.onStepIn(creature, item, position, fromPosition)
 
 	player:teleportTo(targetPosition)
 	targetPosition:sendMagicEffect(CONST_ME_WATERSPLASH)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dive into the vortex to swim below the rocks to the other side of the cave.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.gray_beach_vortex.msg_1")
 	return true
 end
 

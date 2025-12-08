@@ -19,7 +19,7 @@ function vipGod.onSay(player, words, param)
 
 	local targetName = params[2]:trim()
 	if not action or not targetName then
-		player:sendTextMessage(MESSAGE_LOOK, "Command invalid.\nUsage:\n/vip <action>, <name>, [, <value>]\n\nAvailable actions:\ncheck, adddays, removedays, remove")
+		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.manage_vip.msg_1")
 		return true
 	end
 
@@ -53,7 +53,7 @@ function vipGod.onSay(player, words, param)
 	elseif action == "removedays" then
 		local amount = tonumber(params[3])
 		if not amount then
-			player:sendTextMessage(MESSAGE_LOOK, "<value> has to be a numeric value.")
+			player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.manage_vip.msg_2")
 			return true
 		end
 		if amount > targetVipDays then
@@ -71,7 +71,7 @@ function vipGod.onSay(player, words, param)
 		target:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 		player:sendTextMessage(MESSAGE_STATUS, string.format("You removed all VIP days from %s.", targetName))
 	else
-		player:sendTextMessage(MESSAGE_LOOK, "Action is required.\nUsage:\n/vip <action>, <name>, [, <value>]\n\nAvailable actions:\ncheck, adddays, removedays, remove")
+		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.manage_vip.msg_3")
 		return true
 	end
 	return true

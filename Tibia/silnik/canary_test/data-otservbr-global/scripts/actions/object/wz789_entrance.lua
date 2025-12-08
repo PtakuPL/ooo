@@ -13,7 +13,7 @@ function moveEvent.onStepIn(creature, item, position, fromPosition)
 	end
 
 	if player:getLevel() < 250 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need level 250 to enter.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.wz789_entrance.msg_1")
 		player:teleportTo(fromPosition)
 		return true
 	end

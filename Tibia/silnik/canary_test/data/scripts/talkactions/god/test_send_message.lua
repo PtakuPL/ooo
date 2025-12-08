@@ -5,7 +5,7 @@ function sendMessage.onSay(player, words, param)
 	logCommand(player, words, param)
 
 	if param == "" or param == nil then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Message type is missing, please enter a message type.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.test_send_message.msg_1")
 		return
 	end
 
@@ -16,7 +16,7 @@ function sendMessage.onSay(player, words, param)
 		textCollor = tonumber(split[2])
 	end
 
-	player:sendTextMessage(messageType, "Testing message type.", player:getPosition(), 500, textCollor)
+	player:sendLocalizedMessage(messageType, "scripts.test_send_message.msg_2", player:getPosition(), 500, textCollor)
 	return true
 end
 

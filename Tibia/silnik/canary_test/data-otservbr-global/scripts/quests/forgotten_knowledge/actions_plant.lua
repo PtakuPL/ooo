@@ -419,7 +419,7 @@ function forgottenKnowledgePlant.onUse(player, item, fromPosition, target, toPos
 		end
 		target:transform(23816)
 		target:getPosition():sendMagicEffect(CONST_ME_SMALLPLANTS)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You planted some seeds into the soil.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_plant.msg_1")
 		addEvent(revertItem, 10 * 60 * 1000, target:getPosition(), 26484, 26482)
 		item:remove(1)
 		return true
@@ -427,7 +427,7 @@ function forgottenKnowledgePlant.onUse(player, item, fromPosition, target, toPos
 		if target.itemid == 23816 then
 			target:transform(23815)
 			target:getPosition():sendMagicEffect(CONST_ME_SMALLPLANTS)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The birch grows as you pour the sparkling water from the phial over it.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_plant.msg_2")
 			addEvent(revertItem, 10 * 60 * 1000, target:getPosition(), 26483, 26482)
 			if player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.PlantCounter) < 0 then
 				player:setStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.PlantCounter, 0)
@@ -435,11 +435,11 @@ function forgottenKnowledgePlant.onUse(player, item, fromPosition, target, toPos
 			player:setStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.PlantCounter, player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.PlantCounter) + 1)
 		elseif target.itemid == 6180 and target:getPosition() == Position(32737, 32116, 10) then
 			if Game.getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.ActiveTree) >= 1 then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You cannot use the phial while the trees still have life and colour.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_plant.msg_3")
 				return true
 			end
 			if player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.PlantCounter) < 5 or player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.BirdCounter) < 3 then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Seems that you don't make grow enough trees or not free the parrots.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_plant.msg_4")
 				return true
 			end
 			iterateArea(function(position)
@@ -489,7 +489,7 @@ function forgottenKnowledgePlant.onUse(player, item, fromPosition, target, toPos
 				teleport:setActionId(27830)
 				teleport:getPosition():sendMagicEffect(CONST_ME_THUNDER)
 			end
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Suddenly the area brightens and everything around you starts to bloom and thrive with life and colour.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_plant.msg_5")
 		else
 			return false
 		end

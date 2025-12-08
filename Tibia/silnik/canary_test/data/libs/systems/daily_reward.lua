@@ -28,7 +28,7 @@ function RegenStamina(id, delay)
 		end
 		if actualStamina < 2520 then
 			player:setStamina(actualStamina + 1)
-			player:sendTextMessage(MESSAGE_FAILURE, "One minute of stamina has been refilled.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "misc.daily_reward.msg_1")
 		end
 	end
 	stopEvent(staminaEvent)
@@ -51,7 +51,7 @@ function RegenSoul(id, delay)
 	if player:getTile():hasFlag(TILESTATE_PROTECTIONZONE) then
 		if player:getSoul() < maxsoul then
 			player:addSoul(1)
-			player:sendTextMessage(MESSAGE_FAILURE, "One soul point has been restored.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "misc.daily_reward.msg_2")
 		end
 	end
 	stopEvent(soulEvent)

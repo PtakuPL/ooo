@@ -61,32 +61,32 @@ local function exerciseTrainingEvent(playerId, tilePosition, weaponId, dummyId)
 
 	local targetItem = Tile(tilePosition):getItemById(dummyId)
 	if not targetItem then
-		player:sendTextMessage(MESSAGE_FAILURE, "Someone has moved the dummy, the training has stopped.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.exercise_training_weapons.msg_1")
 		leaveExerciseTraining(playerId, targetItem)
 		return false
 	end
 
 	if player:isTraining() == 0 then
-		player:sendTextMessage(MESSAGE_FAILURE, "You have stopped training.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.exercise_training_weapons.msg_2")
 		return leaveExerciseTraining(playerId, targetItem)
 	end
 
 	local playerPosition = player:getPosition()
 	if not playerPosition:isProtectionZoneTile() then
-		player:sendTextMessage(MESSAGE_FAILURE, "You are no longer in a protection zone, the training has stopped.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.exercise_training_weapons.msg_3")
 		leaveExerciseTraining(playerId)
 		return false
 	end
 
 	if player:getItemCount(weaponId) <= 0 then
-		player:sendTextMessage(MESSAGE_FAILURE, "You need the training weapon in the backpack, the training has stopped.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.exercise_training_weapons.msg_4")
 		leaveExerciseTraining(playerId, targetItem)
 		return false
 	end
 
 	local weapon = player:getItemById(weaponId, true)
 	if not weapon:isItem() or not weapon:hasAttribute(ITEM_ATTRIBUTE_CHARGES) then
-		player:sendTextMessage(MESSAGE_FAILURE, "The selected item is not a training weapon, the training has stopped.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.exercise_training_weapons.msg_5")
 		leaveExerciseTraining(playerId, targetItem)
 		return false
 	end
@@ -94,7 +94,7 @@ local function exerciseTrainingEvent(playerId, tilePosition, weaponId, dummyId)
 	local weaponCharges = weapon:getAttribute(ITEM_ATTRIBUTE_CHARGES)
 	if not weaponCharges or weaponCharges <= 0 then
 		weapon:remove(1) -- ??
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your training weapon has disappeared.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.exercise_training_weapons.msg_6")
 		leaveExerciseTraining(playerId, targetItem)
 		return false
 	end
@@ -120,7 +120,7 @@ local function exerciseTrainingEvent(playerId, tilePosition, weaponId, dummyId)
 
 	if weapon:getAttribute(ITEM_ATTRIBUTE_CHARGES) <= 0 then
 		weapon:remove(1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your training weapon has disappeared.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.exercise_training_weapons.msg_7")
 		leaveExerciseTraining(playerId, targetItem)
 		return false
 	end
@@ -147,18 +147,18 @@ function exerciseTraining.onUse(player, item, fromPosition, target, toPosition, 
 	local targetItem = Item(target.uid)
 	if targetItem and isDummy(targetId) then
 		if _G.OnExerciseTraining[playerId] then
-			player:sendTextMessage(MESSAGE_FAILURE, "You are already training!")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.exercise_training_weapons.msg_8")
 			return true
 		end
 
 		local playerPos = player:getPosition()
 		if not exerciseWeaponsTable[item.itemid].allowFarUse and (playerPos:getDistance(target:getPosition()) > 1) then
-			player:sendTextMessage(MESSAGE_FAILURE, "Get closer to the dummy.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.exercise_training_weapons.msg_9")
 			return true
 		end
 
 		if not playerPos:isProtectionZoneTile() then
-			player:sendTextMessage(MESSAGE_FAILURE, "You need to be in a protection zone.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.exercise_training_weapons.msg_10")
 			return true
 		end
 
@@ -168,7 +168,7 @@ function exerciseTraining.onUse(player, item, fromPosition, target, toPosition, 
 
 		if targetHouse and isDummy(targetId) then
 			if playerHouse ~= targetHouse then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You must be inside the house to use this dummy.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.exercise_training_weapons.msg_11")
 				return true
 			end
 
@@ -179,14 +179,14 @@ function exerciseTraining.onUse(player, item, fromPosition, target, toPosition, 
 				end
 
 				if playersOnDummy >= configManager.getNumber(configKeys.MAX_ALLOWED_ON_A_DUMMY) then
-					player:sendTextMessage(MESSAGE_FAILURE, "That exercise dummy is busy.")
+					player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.exercise_training_weapons.msg_12")
 					return true
 				end
 			end
 		end
 
 		if player:hasExhaustion("training-exhaustion") then
-			player:sendTextMessage(MESSAGE_FAILURE, "This exercise dummy can only be used after a " .. exhaustionTime .. " seconds cooldown.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.exercise_training_weapons.msg_13" .. exhaustionTime .. " seconds cooldown.")
 			return true
 		end
 
@@ -197,7 +197,7 @@ function exerciseTraining.onUse(player, item, fromPosition, target, toPosition, 
 			targetItem:actor(true)
 			player:setTraining(true)
 			player:setExhaustion("training-exhaustion", exhaustionTime)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have started training on an exercise dummy.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.exercise_training_weapons.msg_14")
 		end
 		return true
 	end

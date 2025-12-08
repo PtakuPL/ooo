@@ -20,7 +20,7 @@ function actions_acidFishingRod.onUse(player, item, fromPosition, target, toPosi
 			player:setStorageValue(count, player:getStorageValue(count) + 1)
 			player:setStorageValue(storage, 1)
 			tPos:sendMagicEffect(CONST_ME_GREEN_RINGS)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dare not touch there remains. A word has been carved into these bones over and over: 'K'muuh'.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_acidFishingRod.msg_1")
 		end
 	end
 

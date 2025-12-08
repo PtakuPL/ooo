@@ -88,17 +88,17 @@ function spikeTasksGhost.onUse(player, item, fromPosition, target, toPosition, i
 		if stat == 2 then
 			item:remove()
 			GHOST_DETECTOR_MAP[player:getGuid()] = nil
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Report the task to Gnomilly.")
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You found a malignant presence, the glowing detector signals that it does not need any further data.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_ghost_detector.msg_1")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_ghost_detector.msg_2")
 		else
 			local levelZ = 8 + (stat + 1) % 3
 			local random = Position(math.random(32171, 32352), math.random(32512, 32671), levelZ)
 			GHOST_DETECTOR_MAP[player:getGuid()] = random
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You found a malignant presence, the glowing detector signals another presence nearby.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_ghost_detector.msg_3")
 		end
 		player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Track_Main, stat + 1)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The detector points " .. getSearchString(player:getPosition(), current) .. ".")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_ghost_detector.msg_4" .. getSearchString(player:getPosition(), current) .. ".")
 	end
 	return true
 end

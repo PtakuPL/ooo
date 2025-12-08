@@ -9,7 +9,7 @@ function portalReward.onStepIn(creature, item, position, fromPosition)
 	local soulWarQuest = player:soulWarQuestKV()
 	-- Checks if the boss has already been defeated
 	if not soulWarQuest:get("goshnar's-megalomania-killed") then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Only warriors who defeated Goshnar's Megalomania can access this area.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.moveevent-teleport_entrance_reward.msg_1")
 		player:teleportTo(fromPosition, true)
 		return false
 	end

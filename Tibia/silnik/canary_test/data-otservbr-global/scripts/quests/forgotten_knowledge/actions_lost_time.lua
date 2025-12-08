@@ -6,7 +6,7 @@ function forgottenKnowledgeLostTime.onUse(player, item, fromPosition, target, to
 	target:getPosition():sendMagicEffect(CONST_ME_POFF)
 	target:remove()
 	item:remove()
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The time waster hungrily consumes the time and vanishes.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_lost_time.msg_1")
 	return true
 end
 

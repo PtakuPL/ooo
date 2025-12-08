@@ -152,7 +152,7 @@ local function tileStep(player, trial)
 			Position(trial.effectPosition):sendMagicEffect(tutorialEffects[i])
 		end
 		player:sendTutorial(trial.tutorialId)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "As this is the first time you try out a vocation, the Guild has kitted you out. " .. trial.message)
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.dawnport_vocation_trial.msg_1" .. trial.message)
 		addFirstItems(player)
 		-- Second step
 	elseif player:getStorageValue(trial.storage) == -1 and vocationId ~= VOCATION.ID.NONE then

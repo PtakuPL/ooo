@@ -28,7 +28,7 @@ function closingDoor.onStepIn(creature, item, position, fromPosition)
 			if player:getStorageValue(item.actionid) ~= -1 then
 				return true
 			else
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The door seems to be sealed against unwanted intruders.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.closing_door.msg_1")
 				player:teleportTo(fromPosition, true)
 				return false
 			end
@@ -40,7 +40,7 @@ function closingDoor.onStepIn(creature, item, position, fromPosition)
 			if item.actionid > 0 and player:getLevel() >= item.actionid - 1000 then
 				return true
 			else
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Only the worthy may pass.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.closing_door.msg_2")
 				player:teleportTo(fromPosition, true)
 				return false
 			end

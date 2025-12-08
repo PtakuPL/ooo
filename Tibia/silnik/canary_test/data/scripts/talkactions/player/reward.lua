@@ -33,13 +33,13 @@ local function sendExerciseRewardModal(player)
 						item:setAttribute(ITEM_ATTRIBUTE_STORE, systemTime())
 						item:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, string.format("You won this exercise weapon as a reward to be a %s player. Use it in a dummy!\nHave a nice game..", configManager.getString(configKeys.SERVER_NAME)))
 					else
-						player:sendTextMessage(MESSAGE_LOOK, "You need to have capacity and empty slots to receive.")
+						player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.reward.msg_1")
 						return
 					end
 					player:sendTextMessage(MESSAGE_LOOK, string.format("Congratulations, you received a %s with %i charges in your store inbox.", iType:getName(), it.charges))
 					player:setStorageValue(config.storage, 1)
 				else
-					player:sendTextMessage(MESSAGE_LOOK, "You need to have capacity and empty slots to receive.")
+					player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.reward.msg_2")
 				end
 			end)
 		end
@@ -57,7 +57,7 @@ function exerciseRewardModal.onSay(player, words, param)
 		return true
 	end
 	if player:getStorageValue(config.storage) > 0 then
-		player:sendTextMessage(MESSAGE_LOOK, "You already received your exercise weapon reward!")
+		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.reward.msg_3")
 		return true
 	end
 	sendExerciseRewardModal(player)

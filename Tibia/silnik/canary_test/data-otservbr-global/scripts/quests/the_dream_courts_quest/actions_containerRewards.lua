@@ -122,7 +122,7 @@ function actions_containerRewards.onUse(player, item, fromPosition, target, toPo
 		if iPos == k.cPosition and item:getUniqueId() == k.uniqueid then
 			if player:getStorageValue(k.storage) < k.value then
 				if k.defaultItem then
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a " .. ItemType(k.reward):getName() .. ".")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_containerRewards.msg_1" .. ItemType(k.reward):getName() .. ".")
 					player:addItem(k.reward, 1)
 				else
 					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, k.text)
@@ -137,7 +137,7 @@ function actions_containerRewards.onUse(player, item, fromPosition, target, toPo
 				player:setStorageValue(k.storage, k.value)
 			else
 				if k.defaultItem then
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "It is empty.")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_containerRewards.msg_2")
 				end
 			end
 		end

@@ -12,7 +12,7 @@ function actions_oldLock.onUse(player, item, fromPosition, target, toPosition, i
 
 	if tPos == doorPosition then
 		if player:getStorageValue(keysCount) == 6 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You insert the old lock into the door. It fits perfectly.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_oldLock.msg_1")
 			player:addAchievement("Keeper of the 7 Keys")
 			player:setStorageValue(keysCount, 7)
 			player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.TheSevenKeys.Questline, 2)

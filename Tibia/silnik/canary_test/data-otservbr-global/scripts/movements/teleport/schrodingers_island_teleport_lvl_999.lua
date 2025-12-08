@@ -7,13 +7,13 @@ function schrodingersIslandTeleportLvl999.onStepIn(creature, item, position, fro
 	end
 
 	if player:getLevel() < 999 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need level 999 to enter here.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.schrodingers_island_teleport_lvl_999.msg_1")
 		creature:teleportTo(fromPosition)
 		fromPosition:sendMagicEffect(CONST_ME_TELEPORT)
 		return true
 	end
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Congratulations!")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.schrodingers_island_teleport_lvl_999.msg_2")
 
 	local accessPosition = Position(32832, 32435, 7)
 	player:teleportTo(accessPosition)

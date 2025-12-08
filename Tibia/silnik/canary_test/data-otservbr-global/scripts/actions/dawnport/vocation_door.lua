@@ -31,9 +31,9 @@ function vocationDoor.onUse(player, item, target, position, fromPosition)
 		removeMainlandSmugglingItems(player)
 		player:teleportTo(door.destination)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Open the chest and take your gear, young " .. player:getVocation():getName():lower() .. "!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.vocation_door.msg_1" .. player:getVocation():getName():lower() .. "!")
 	elseif player:getStorageValue(Storage.Dawnport.DoorVocation) ~= door.vocation then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The door seems to be sealed against unwanted intruders.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.vocation_door.msg_2")
 	end
 	return true
 end

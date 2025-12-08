@@ -16,7 +16,7 @@ function save.onSay(player, words, param)
 	else
 		saveServer()
 		SaveHirelings()
-		player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Server has been saved.")
+		player:sendLocalizedMessage(MESSAGE_ADMINISTRATOR, "scripts.save.msg_1")
 	end
 	return true
 end

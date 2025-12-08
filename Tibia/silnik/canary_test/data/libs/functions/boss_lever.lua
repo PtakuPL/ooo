@@ -163,13 +163,13 @@ function BossLever:onUse(player)
 	end
 
 	if self.disabled then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The boss is temporarily disabled.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "misc.boss_lever.msg_1")
 		return true
 	end
 
 	local zone = self:getZone()
 	if zone:countPlayers(IgnoredByMonsters) > 0 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "There's already someone fighting with " .. monsterName .. ".")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "misc.boss_lever.msg_2" .. monsterName .. ".")
 		return true
 	end
 
@@ -202,7 +202,7 @@ function BossLever:onUse(player)
 						local message = "You have to wait " .. timeMessage
 
 						if currentPlayer ~= player then
-							player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "A member in your team has to wait " .. timeMessage)
+							player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "misc.boss_lever.msg_3" .. timeMessage)
 						end
 
 						currentPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)

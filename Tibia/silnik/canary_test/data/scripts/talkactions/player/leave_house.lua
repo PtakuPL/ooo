@@ -17,7 +17,7 @@ function leaveHouse.onSay(player, words, param)
 	end
 
 	if house:hasNewOwnership() then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You cannot leave this house. Ownership is already scheduled to be transferred upon the next server restart.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.leave_house.msg_1")
 		playerPosition:sendMagicEffect(CONST_ME_POFF)
 		return true
 	end
@@ -37,7 +37,7 @@ function leaveHouse.onSay(player, words, param)
 	end
 
 	house:setNewOwnerGuid(0)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have successfully left your house.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.leave_house.msg_2")
 	playerPosition:sendMagicEffect(CONST_ME_POFF)
 	return true
 end

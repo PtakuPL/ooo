@@ -19,7 +19,7 @@ function jailExit.onStepIn(creature, item, position, fromPosition)
 	player:teleportTo(fromPosition)
 	position:sendMagicEffect(CONST_ME_TELEPORT)
 	fromPosition:sendMagicEffect(CONST_ME_TELEPORT)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't have access to this area.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movement_jail_exit.msg_1")
 	return false
 end
 

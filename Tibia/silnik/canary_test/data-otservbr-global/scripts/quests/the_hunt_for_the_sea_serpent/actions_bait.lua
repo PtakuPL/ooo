@@ -44,13 +44,13 @@ function telescope.onUse(player, item, fromPosition, target, toPosition, isHotke
 			randAppear = math.random(9) -- always nothing
 		end
 		if player:getStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Bait) < 1 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You should set a new bait first.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_bait.msg_1")
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Direction) > 0 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Oops! You lost it.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_bait.msg_2")
 			player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.SuccessSwitch, 0)
 			player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Direction, 0)
 		elseif randAppear <= 4 then -- 40% nothing
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You see water as far as the eye can reach. No sea serpent in sight.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_bait.msg_3")
 		else
 			if randAppear >= 5 and randAppear <= 8 then -- 40% nothing
 				randPhase = math.random(#words.phase)
@@ -63,13 +63,13 @@ function telescope.onUse(player, item, fromPosition, target, toPosition, isHotke
 					player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Bait, 0)
 				end
 			elseif randAppear == 9 then -- 10% nothing
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "It's getting away! You should tell the captain to gain speed!")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_bait.msg_4")
 				player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Direction, 4)
 				if randBait == 2 then
 					player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Bait, 0)
 				end
 			elseif randAppear == 10 then -- 10% success
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "There are multiple shadows under the surface. This has to be the right location.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_bait.msg_5")
 				Position(31933, 31037, 7):sendMagicEffect(CONST_ME_WATERCREATURE)
 				player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.QuestLine, 2)
 				player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Access, 1)

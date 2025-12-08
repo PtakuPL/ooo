@@ -103,11 +103,11 @@ if Modules == nil then
 			local promotion = player:getVocation():getPromotion()
 			local hasPromotion = player:kv():get("promoted")
 			if not promotion or hasPromotion then
-				npcHandler:say("You are already promoted!", npc, player)
+				npcHandler:sayLocalized("misc.modules.say_1", npc, player)
 			elseif player:getLevel() < parameters.level then
 				npcHandler:say(string.format("I am sorry, but I can only promote you once you have reached level %d.", parameters.level), npc, player)
 			elseif not player:removeMoneyBank(parameters.cost) then
-				npcHandler:say("You do not have enough money!", npc, player)
+				npcHandler:sayLocalized("misc.modules.say_2", npc, player)
 			else
 				npcHandler:say(parameters.text, npc, player)
 				player:setVocation(promotion)
@@ -115,7 +115,7 @@ if Modules == nil then
 				player:kv():set("promoted", true)
 			end
 		else
-			npcHandler:say("You need a premium account in order to get promoted.", npc, player)
+			npcHandler:sayLocalized("misc.modules.say_3", npc, player)
 		end
 		npcHandler:resetNpc(player)
 		return true
@@ -133,9 +133,9 @@ if Modules == nil then
 
 		if player:isPremium() or not parameters.premium then
 			if player:hasLearnedSpell(parameters.spellName) then
-				npcHandler:say("You already know this spell.", npc, player)
+				npcHandler:sayLocalized("misc.modules.say_4", npc, player)
 			elseif not player:canLearnSpell(parameters.spellName) then
-				npcHandler:say("You cannot learn this spell.", npc, player)
+				npcHandler:sayLocalized("misc.modules.say_5", npc, player)
 			elseif not player:removeMoneyBank(parameters.price) then
 				npcHandler:say(string.format("You do not have enough money, this spell costs %s gold.", parameters.price), npc, player)
 			else
@@ -165,9 +165,9 @@ if Modules == nil then
 			[TAG_PVPBLESSCOST] = Blessings.getPvpBlessingCost(player:getLevel(), false),
 		}
 		if player:hasBlessing(parameters.bless) then
-			npcHandler:say("You already possess this blessing.", npc, player)
+			npcHandler:sayLocalized("misc.modules.say_6", npc, player)
 		elseif parameters.bless == 3 and player:getStorageValue(Storage.KawillBlessing) ~= 1 then
-			npcHandler:say("You need the blessing of the great geomancer first.", npc, player)
+			npcHandler:sayLocalized("misc.modules.say_7", npc, player)
 		elseif parameters.bless == 1 and #player:getBlessings() == 0 and not player:getItemById(3057, true) then
 			npcHandler:say(
 				"You don't have any of the other blessings nor an amulet of loss, \z
@@ -177,7 +177,7 @@ if Modules == nil then
 				player
 			)
 		elseif not player:removeMoneyBank(type(parameters.cost) == "string" and tonumber(npcHandler:parseMessage(parameters.cost, parseInfo)) or parameters.cost) then
-			npcHandler:say("Oh. You do not have enough money.", npc, player)
+			npcHandler:sayLocalized("misc.modules.say_8", npc, player)
 		else
 			npcHandler:say(parameters.text or "You have been blessed by one of the seven gods!", npc, player)
 			if parameters.bless == 3 then
@@ -217,17 +217,17 @@ if Modules == nil then
 		local playerPosition = player:getPosition()
 
 		if parameters.premium and not player:isPremium() then
-			npcHandler:say("I'm sorry, but you need a premium account in order to travel onboard our ships.", npc, player)
+			npcHandler:sayLocalized("misc.modules.say_9", npc, player)
 		elseif parameters.level and player:getLevel() < parameters.level then
-			npcHandler:say("You must reach level " .. parameters.level .. " before I can let you go there.", npc, player)
+			npcHandler:sayLocalized("misc.modules.say_10" .. parameters.level .. " before I can let you go there.", npc, player)
 		elseif player:isPzLocked() then
-			npcHandler:say("First get rid of those blood stains! You are not going to ruin my vehicle!", npc, player)
+			npcHandler:sayLocalized("misc.modules.say_11", npc, player)
 		elseif not player:removeMoneyBank(cost) then
-			npcHandler:say("You don't have enough money.", npc, player)
+			npcHandler:sayLocalized("misc.modules.say_12", npc, player)
 		else
 			local hasExhaustion = player:kv():get("npc-exhaustion") or 0
 			if hasExhaustion > os.time() then
-				npcHandler:say("Sorry, but you need to wait three seconds before travel again.", player)
+				npcHandler:sayLocalized("misc.modules.say_13", player)
 				playerPosition:sendMagicEffect(CONST_ME_POFF)
 			else
 				npcHandler:removeInteraction(npc, player)
@@ -539,11 +539,11 @@ if Modules == nil then
 
 		if player:isPremium() or not premium then
 			if not player:removeMoneyBank(cost) then
-				npcHandler:say("You do not have enough money!", npc, player)
+				npcHandler:sayLocalized("misc.modules.say_14", npc, player)
 			elseif player:isPzLocked(player) then
-				npcHandler:say("Get out of there with this blood.", npc, player)
+				npcHandler:sayLocalized("misc.modules.say_15", npc, player)
 			else
-				npcHandler:say("It was a pleasure doing business with you.", npc, player)
+				npcHandler:sayLocalized("misc.modules.say_16", npc, player)
 				npcHandler:removeInteraction(npc, player)
 
 				local position = player:getPosition()
@@ -553,7 +553,7 @@ if Modules == nil then
 				destination:sendMagicEffect(CONST_ME_TELEPORT)
 			end
 		else
-			npcHandler:say("I can only allow premium players to travel there.", npc, player)
+			npcHandler:sayLocalized("misc.modules.say_17", npc, player)
 		end
 
 		npcHandler:resetNpc(player)

@@ -25,7 +25,7 @@ function rentedMounts.onThink(interval)
 		end
 
 		player:setStorageValue(Storage.Quest.U9_1.HorseStationWorldChange.Timer, -1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your contract with your horse expired and it returned back to the horse station.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.check_mount.msg_1")
 	end
 	return true
 end

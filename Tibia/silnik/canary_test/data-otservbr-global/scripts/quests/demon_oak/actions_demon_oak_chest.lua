@@ -9,7 +9,7 @@ local demonOakChest = Action()
 function demonOakChest.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if chests[item.uid] then
 		if player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Done) ~= 2 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "It's empty.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_demon_oak_chest.msg_1")
 			return true
 		end
 
@@ -17,7 +17,7 @@ function demonOakChest.onUse(player, item, fromPosition, target, toPosition, isH
 		local itemType = ItemType(chest.itemid)
 		if itemType then
 			local article = itemType:getArticle()
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found " .. (#article > 0 and article .. " " or "") .. itemType:getName() .. ".")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_demon_oak_chest.msg_2" .. (#article > 0 and article .. " " or "") .. itemType:getName() .. ".")
 		end
 
 		player:addItem(chest.itemid, chest.count)

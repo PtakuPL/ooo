@@ -3,7 +3,7 @@ local storeCoin = Action()
 function storeCoin.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	local count = item:getCount()
 	player:addTransferableCoins(count)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have added " .. count .. " tibia coins to your balance. Your total is now " .. player:getTransferableCoins() .. ".")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.store_coins.msg_1" .. count .. " tibia coins to your balance. Your total is now " .. player:getTransferableCoins() .. ".")
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
 	item:remove()
 

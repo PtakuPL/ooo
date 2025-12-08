@@ -9,12 +9,12 @@ local veggieCasserole = Action()
 
 function veggieCasserole.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:hasExhaustion("special-foods-cooldown") then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need to wait before using it again.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.veggie_casserole.msg_1")
 		return true
 	end
 
 	player:addCondition(meleeCondition)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You feel stronger.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.veggie_casserole.msg_2")
 	player:say("Yum.", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)

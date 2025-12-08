@@ -81,7 +81,7 @@ function rafzaneElevator.onUse(player, item, fromPosition, target, toPosition, i
 
 	local creature = tile:getTopCreature()
 	if not creature or creature.uid ~= player.uid then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Step inside the elevator to use it.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.rafzane_elevator.msg_1")
 		return true
 	end
 

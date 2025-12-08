@@ -15,10 +15,10 @@ function gravediggerPyramids2.onUse(player, item, fromPosition, target, toPositi
 
 	if player:getStorageValue(cStorages[1]) == 1 and player:getStorageValue(cStorages[2]) < 1 then
 		player:setStorageValue(cStorages[2], 1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "<screeeech> <squeak> <squeaaaaal>")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_pyramids2.msg_1")
 		player:getPosition():sendMagicEffect(CONST_ME_ENERGYHIT)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Mission already completed here!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_pyramids2.msg_2")
 	end
 	return true
 end

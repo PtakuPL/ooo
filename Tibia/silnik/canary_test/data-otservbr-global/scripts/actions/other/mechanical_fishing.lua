@@ -16,7 +16,7 @@ function mechanicalFishing.onUse(player, item, fromPosition, target, toPosition,
 	if targetId == 9582 then
 		local owner = target:getAttribute(ITEM_ATTRIBUTE_CORPSEOWNER)
 		if owner ~= 0 and owner ~= player.uid then
-			player:sendTextMessage(MESSAGE_FAILURE, "You are not the owner.")
+			player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.mechanical_fishing.msg_1")
 			return true
 		end
 

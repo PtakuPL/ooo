@@ -11,7 +11,7 @@ function movements_prohibit_entry.onStepIn(creature, item, position, fromPositio
 	if currentDate.month < 4 or currentDate.month > 5 or (currentDate.month == 5 and currentDate.day > 1) then
 		player:teleportTo(Position(32063, 31091, 7))
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You cannot pass here outside the period from April 1st to May 1st.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_prohibit_entry.msg_1")
 		return true
 	end
 

@@ -4,16 +4,16 @@ function timeMachine.onUse(player, item, fromPosition, target, toPosition, isHot
 	if player:getPosition() == Position(32870, 32723, 15) then
 		player:teleportTo(Position(32870, 32724, 14))
 		player:getPosition():sendMagicEffect(CONST_ME_ENERGYHIT)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The mechanism takes you back in time.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_time_machine.msg_1")
 		return true
 	elseif player:getPosition() == Position(32870, 32723, 14) then
 		if player:canFightBoss("The Time Guardian") then
 			player:teleportTo(Position(32870, 32724, 15))
 			player:getPosition():sendMagicEffect(CONST_ME_ENERGYHIT)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The mechanism takes you back in time.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_time_machine.msg_2")
 			return true
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have to wait a while before travel in time!")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_time_machine.msg_3")
 			return true
 		end
 	end
@@ -21,12 +21,12 @@ function timeMachine.onUse(player, item, fromPosition, target, toPosition, isHot
 	if player:getPosition() == Position(33453, 31029, 8) then
 		player:teleportTo(Position(32430, 32167, 8))
 		player:getPosition():sendMagicEffect(CONST_ME_ENERGYHIT)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The mechanism takes you back in time.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_time_machine.msg_4")
 		return true
 	elseif player:getPosition() == Position(32430, 32166, 8) then
 		player:teleportTo(Position(33453, 31030, 8))
 		player:getPosition():sendMagicEffect(CONST_ME_ENERGYHIT)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The mechanism takes you back in time.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_time_machine.msg_5")
 		return true
 	end
 

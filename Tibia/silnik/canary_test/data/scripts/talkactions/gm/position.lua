@@ -6,19 +6,19 @@ function position.onSay(player, words, param)
 
 	if param == "" then
 		local pos = player:getPosition()
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your current position is: " .. pos.x .. ", " .. pos.y .. ", " .. pos.z .. ".")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.position.msg_1" .. pos.x .. ", " .. pos.y .. ", " .. pos.z .. ".")
 		return
 	end
 
 	local teleportPosition = param:toPosition()
 	if not teleportPosition then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Invalid position format. Use one of the following formats: \n/pos {x = ..., y = ..., z = ...}\n/pos Position(..., ..., ...)\n/pos x, y, z.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.position.msg_2")
 		return
 	end
 
 	local tile = Tile(teleportPosition)
 	if not tile then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Invalid tile or position. Send a valid position.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.position.msg_3")
 		return
 	end
 

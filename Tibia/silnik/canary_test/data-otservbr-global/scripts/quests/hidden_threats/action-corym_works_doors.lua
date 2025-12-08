@@ -5,15 +5,15 @@ function perfectlyForgedKey.onUse(player, item, fromPosition, target, toPosition
 	if target.actionid == 10123 or target.actionid == 10124 or target.actionid == 10125 then
 		if target.actionid == 10123 and player:getStorageValue(HiddenThreats.CorymWorksDoor01) < 0 then
 			player:setStorageValue(HiddenThreats.CorymWorksDoor01, 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The forged key unlocks the door.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action-corym_works_doors.msg_1")
 			return true
 		elseif target.actionid == 10124 and player:getStorageValue(HiddenThreats.CorymWorksDoor02) < 0 then
 			player:setStorageValue(HiddenThreats.CorymWorksDoor02, 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The forged key unlocks the door.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action-corym_works_doors.msg_2")
 			return true
 		elseif target.actionid == 10125 and player:getStorageValue(HiddenThreats.CorymWorksDoor03) < 0 then
 			player:setStorageValue(HiddenThreats.CorymWorksDoor03, 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The forged key unlocks the door.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action-corym_works_doors.msg_3")
 			return true
 		end
 	end

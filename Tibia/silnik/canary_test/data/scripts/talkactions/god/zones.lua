@@ -4,7 +4,7 @@ function zones.onSay(player, words, param)
 	local params = string.split(param, ",")
 	local cmd = params[1]
 	if not cmd then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Command not found.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.zones.msg_1")
 		return true
 	end
 
@@ -27,12 +27,12 @@ function zones.onSay(player, words, param)
 	local function zoneFromParam()
 		local zoneName = params[2]:trim()
 		if not zoneName then
-			player:sendTextMessage(MESSAGE_HEALED, "Zone not found.")
+			player:sendLocalizedMessage(MESSAGE_HEALED, "scripts.zones.msg_2")
 			return true
 		end
 		local zone = Zone.getByName(zoneName)
 		if not zone then
-			player:sendTextMessage(MESSAGE_HEALED, "Zone not found.")
+			player:sendLocalizedMessage(MESSAGE_HEALED, "scripts.zones.msg_3")
 			return true
 		end
 		return zone
@@ -42,15 +42,15 @@ function zones.onSay(player, words, param)
 		["goto"] = function(zone)
 			local pos = zone:randomPosition()
 			if not pos then
-				player:sendTextMessage(MESSAGE_HEALED, "No position found.")
+				player:sendLocalizedMessage(MESSAGE_HEALED, "scripts.zones.msg_4")
 				return true
 			end
 			player:teleportTo(pos)
-			player:sendTextMessage(MESSAGE_HEALED, "You have been teleported to " .. zone:getName() .. ".")
+			player:sendLocalizedMessage(MESSAGE_HEALED, "scripts.zones.msg_5" .. zone:getName() .. ".")
 		end,
 		removeMonsters = function(zone)
 			zone:removeMonsters()
-			player:sendTextMessage(MESSAGE_HEALED, "Monsters removed from " .. zone:getName() .. ".")
+			player:sendLocalizedMessage(MESSAGE_HEALED, "scripts.zones.msg_6" .. zone:getName() .. ".")
 		end,
 		countMonsters = function(zone)
 			local monsters = zone:getMonsters()
@@ -58,7 +58,7 @@ function zones.onSay(player, words, param)
 		end,
 		removeNpcs = function(zone)
 			zone:removeNpcs()
-			player:sendTextMessage(MESSAGE_HEALED, "NPCs removed from " .. zone:getName() .. ".")
+			player:sendLocalizedMessage(MESSAGE_HEALED, "scripts.zones.msg_7" .. zone:getName() .. ".")
 		end,
 		countNpcs = function(zone)
 			local npcs = zone:getNpcs()
@@ -66,7 +66,7 @@ function zones.onSay(player, words, param)
 		end,
 		kickPlayers = function(zone)
 			zone:removePlayers()
-			player:sendTextMessage(MESSAGE_HEALED, "Players kicked from " .. zone:getName() .. ".")
+			player:sendLocalizedMessage(MESSAGE_HEALED, "scripts.zones.msg_8" .. zone:getName() .. ".")
 		end,
 		listPlayers = function(zone)
 			local players = zone:getPlayers()
@@ -88,7 +88,7 @@ function zones.onSay(player, words, param)
 
 	local command = commands[cmd]
 	if not command then
-		player:sendTextMessage(MESSAGE_HEALED, "Command not found.")
+		player:sendLocalizedMessage(MESSAGE_HEALED, "scripts.zones.msg_9")
 		return true
 	end
 	local zone = zoneFromParam()

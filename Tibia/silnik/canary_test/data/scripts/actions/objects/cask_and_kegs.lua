@@ -29,7 +29,7 @@ local function processTransformation(player, item, charges, transformation)
 	local transformedCount = 0
 
 	if charges <= 0 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The item has no charges remaining.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.cask_and_kegs.msg_1")
 		return false
 	end
 
@@ -61,9 +61,9 @@ local function processTransformation(player, item, charges, transformation)
 			item:remove(1)
 		end
 
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Charges remaining: " .. newCharges)
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.cask_and_kegs.msg_2" .. newCharges)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need flasks to carry all that.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.cask_and_kegs.msg_3")
 	end
 
 	return true

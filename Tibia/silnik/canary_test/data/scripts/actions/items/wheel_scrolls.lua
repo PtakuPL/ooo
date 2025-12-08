@@ -10,17 +10,17 @@ local scroll = Action()
 
 function scroll.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:getLevel() < 51 then
-		player:sendTextMessage(MESSAGE_LOOK, "Only a hero of level 51 or above can decipher this scroll.")
+		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.wheel_scrolls.msg_1")
 		return true
 	end
 
 	local scrollData = promotionScrolls[item:getId()]
 	if not player:wheelUnlockScroll(scrollData.name) then
-		player:sendTextMessage(MESSAGE_LOOK, "You have already deciphered this scroll.")
+		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.wheel_scrolls.msg_2")
 		return true
 	end
 
-	player:sendTextMessage(MESSAGE_LOOK, "You have gained " .. scrollData.points .. " promotion points for the Wheel of Destiny by deciphering the " .. scrollData.itemName .. ".")
+	player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.wheel_scrolls.msg_3" .. scrollData.points .. " promotion points for the Wheel of Destiny by deciphering the " .. scrollData.itemName .. ".")
 	item:remove(1)
 	return true
 end

@@ -2,7 +2,7 @@ local potOfBlackjack = Action()
 
 function potOfBlackjack.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:hasExhaustion("special-foods-cooldown") then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need to wait before using it again.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.pot_of_blackjack.msg_1")
 		return true
 	end
 
@@ -23,7 +23,7 @@ function potOfBlackjack.onUse(player, item, fromPosition, target, toPosition, is
 	end
 
 	player:addHealth(5000)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You take a gulp from the large bowl.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.pot_of_blackjack.msg_2")
 	player:say("Gulp.", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)

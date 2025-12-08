@@ -9,17 +9,17 @@ function rewardSoulWar.onUse(creature, item, fromPosition, target, toPosition, i
 
 	local soulWarQuest = player:soulWarQuestKV()
 	if soulWarQuest:get("final-reward") then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have already received your reward.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action-reward_soul_war.msg_1")
 		return true
 	end
 
 	if not soulWarQuest:get("goshnar's-megalomania-killed") then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need to defeat Goshnar's Megalomania to receive your reward.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action-reward_soul_war.msg_2")
 		return true
 	end
 
 	player:addItem(rewardItem.id, 1)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a " .. rewardItem.name .. ".")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action-reward_soul_war.msg_3" .. rewardItem.name .. ".")
 	soulWarQuest:set("final-reward", true)
 	return true
 end

@@ -26,9 +26,9 @@ function spikeTasksThermometer.onUse(player, item, fromPosition, target, toPosit
 		item:remove()
 		player:getPosition():sendMagicEffect(16)
 		player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Lava_Main, 1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Whew! That was that hot, it melted the thermometer! At least you've found the hot spot!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_thermometer.msg_1")
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This is not the hot spot!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_thermometer.msg_2")
 	end
 	return true
 end

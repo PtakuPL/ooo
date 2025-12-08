@@ -22,7 +22,7 @@ function createMonster.onSay(player, words, param)
 	spawn:setPositions(config)
 	spawn:executeSpawn()
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have spawned " .. parameter[1] .. ".")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.create_spawn.msg_1" .. parameter[1] .. ".")
 	return true
 end
 

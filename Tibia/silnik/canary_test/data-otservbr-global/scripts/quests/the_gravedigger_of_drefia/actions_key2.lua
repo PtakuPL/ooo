@@ -6,12 +6,12 @@ function gravediggerKey2.onUse(player, item, fromPosition, target, toPosition, i
 
 	if player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission52) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission53) < 1 then
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission53, 1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "An invisible hand pulls you inside.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_key2.msg_1")
 		player:teleportTo(Position({ x = 33011, y = 32392, z = 10 }))
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 	elseif player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission53) == 1 then --and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission55) < 1 then
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission55, 1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Get out of my room!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_key2.msg_2")
 		player:teleportTo(Position({ x = 33008, y = 32392, z = 10 }))
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 	end

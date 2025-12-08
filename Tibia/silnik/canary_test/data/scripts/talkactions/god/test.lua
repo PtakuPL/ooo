@@ -25,11 +25,11 @@ function testLog.onSay(player, words, param)
 	elseif logLevel == "debug" then
 		logger.debug("[testLog] - {}", message)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Invalid log level. Use 'info', 'warn', 'error' or 'debug'.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.test.msg_1")
 		return false
 	end
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Logged message [" .. message .. "] at '" .. logLevel .. "' level.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.test.msg_2" .. message .. "] at '" .. logLevel .. "' level.")
 	return true
 end
 

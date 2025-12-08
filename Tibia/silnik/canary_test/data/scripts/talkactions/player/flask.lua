@@ -7,11 +7,11 @@ function flask.onSay(player, words, param)
 	end
 	if param == "on" then
 		player:kv():set("talkaction.potions.flask", true)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You will not receive flasks!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.flask.msg_1")
 		player:getPosition():sendMagicEffect(CONST_ME_REDSMOKE)
 	elseif param == "off" then
 		player:kv():remove("talkaction.potions.flask")
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You will receive flasks.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.flask.msg_2")
 		player:getPosition():sendMagicEffect(CONST_ME_REDSMOKE)
 	end
 	return true

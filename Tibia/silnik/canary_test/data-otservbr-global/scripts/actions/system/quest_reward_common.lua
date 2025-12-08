@@ -128,7 +128,7 @@ local function playerAddContainerItem(params, item, rewardIndex)
 		player:addAchievement(achievement)
 	end
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a " .. getItemName(params.itemBagName) .. ".")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_reward_common.msg_1" .. getItemName(params.itemBagName) .. ".")
 	if params.useKV then
 		player:questKV(params.questName):set("completed", true)
 		if params.timer then

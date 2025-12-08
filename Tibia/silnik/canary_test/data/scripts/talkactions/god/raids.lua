@@ -23,7 +23,7 @@ function startRaid.onSay(player, words, param)
 	if returnValue ~= RETURNVALUE_NOERROR then
 		player:sendTextMessage(MESSAGE_ADMINISTRATOR, Game.getReturnMessage(returnValue))
 	else
-		player:sendTextMessage(MESSAGE_ADMINISTRATOR, "Raid started.")
+		player:sendLocalizedMessage(MESSAGE_ADMINISTRATOR, "scripts.raids.msg_1")
 	end
 	return true
 end
@@ -59,7 +59,7 @@ function simulator.onSay(player, words, param)
 	local triggerCount = 0
 	local rolls = 0
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Simulating raid with initialChance=" .. initialChance .. ", targetChancePerDay=" .. targetChancePerDay .. ", maxChancePerCheck=" .. maxChancePerCheck .. "...")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.raids.msg_2" .. initialChance .. ", targetChancePerDay=" .. targetChancePerDay .. ", maxChancePerCheck=" .. maxChancePerCheck .. "...")
 
 	local checksPerDay = ParseDuration("23h") / ParseDuration(Raid.checkInterval)
 	while triggerCount < 10 do
@@ -70,7 +70,7 @@ function simulator.onSay(player, words, param)
 		end
 	end
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Raid triggered " .. triggerCount .. " times in " .. rolls .. " rolls (" .. rolls / checksPerDay .. " days or once every " .. (rolls / checksPerDay) / triggerCount .. " days)")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.raids.msg_3" .. triggerCount .. " times in " .. rolls .. " rolls (" .. rolls / checksPerDay .. " days or once every " .. (rolls / checksPerDay) / triggerCount .. " days)")
 	return true
 end
 

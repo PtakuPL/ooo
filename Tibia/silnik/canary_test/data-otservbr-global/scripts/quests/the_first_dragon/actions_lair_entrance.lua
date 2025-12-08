@@ -2,7 +2,7 @@ local lairEntrance = Action()
 
 function lairEntrance.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:getStorageValue(Storage.Quest.U11_02.TheFirstDragon.AccessCave) <= 3 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are not worthy to enter in The First Dragon's Lair yet.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_lair_entrance.msg_1")
 		return true
 	end
 

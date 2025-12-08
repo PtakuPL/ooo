@@ -2,7 +2,7 @@ local custodian_door = Action()
 
 function custodian_door.onUse(player, item, isHotkey)
 	if player:getStorageValue(Storage.Quest.U12_20.GraveDanger.GaffirKilled) < 1 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The power of Gaffir won't let you pass this door!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_custodian_door.msg_1")
 		return true
 	end
 

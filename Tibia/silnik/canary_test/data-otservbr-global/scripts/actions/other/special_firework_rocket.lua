@@ -136,7 +136,7 @@ function fireworksRocket.onUse(player, item, fromPosition, target, toPosition, i
 		return false
 	end
 	if item:getParent():isContainer() then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can't use this item in a container.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.special_firework_rocket.msg_1")
 		return false
 	end
 	local event = addEvent(function()

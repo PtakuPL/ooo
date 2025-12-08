@@ -38,13 +38,13 @@ local function resetActionId(player, itemid, position, actionid, message, reward
 				else
 					Game.createMonster("Mummy", check:getPosition())
 					check:getPosition():sendMagicEffect(CONST_ME_POFF)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The curse of disturbing this fragile, ancient peace is your price to pay!")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_sacrophagusUse.msg_1")
 				end
 
 				check:setActionId(0)
 				addEvent(setActionId, 1000 * 30, itemid, position, actionid)
 			else
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The opening of the last sarcophagus still haunts you. Wait some time for your spirits to return.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_sacrophagusUse.msg_2")
 			end
 		end
 	end

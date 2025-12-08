@@ -13,7 +13,7 @@ function spikeTasksFork.onUse(player, item, fromPosition, target, toPosition, is
 
 	if sum == 7 then
 		item:remove()
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Report the task to Gnomilly.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_tuning_fork.msg_1")
 	end
 
 	target:transform(19213)

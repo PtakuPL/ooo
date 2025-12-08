@@ -81,7 +81,7 @@ lionsRockSacrificesTest:register()
 local lionsGetLionsMane = Action()
 
 function lionsGetLionsMane.onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You picked a beautiful lion's mane flower.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_lions_rock.msg_1")
 	player:addItem(21389, 1)
 	player:setStorageValue(Storage.Quest.U10_70.LionsRock.Questline, math.max(player:getStorageValue(Storage.Quest.U10_70.LionsRock.Questline), 1))
 	player:setStorageValue(Storage.Quest.U8_1.TibiaTales.DefaultStart, 1)
@@ -99,7 +99,7 @@ lionsGetLionsMane:register()
 local lionsGetHolyWater = Action()
 
 function lionsGetHolyWater.onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You took some holy water from the sacred well.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_lions_rock.msg_2")
 	player:addItem(21466, 1)
 	player:setStorageValue(Storage.Quest.U10_70.LionsRock.Questline, math.max(player:getStorageValue(Storage.Quest.U10_70.LionsRock.Questline), 1))
 	player:setStorageValue(Storage.Quest.U8_1.TibiaTales.DefaultStart, 1)
@@ -126,7 +126,7 @@ function lionsRockFountain.onUse(player, item, fromPosition, target, toPosition,
 			reward = math.random(1, #rewards)
 		end
 		local iType = ItemType(rewards[reward])
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Something sparkles in the fountain's water. You draw out " .. iType:getArticle() .. " " .. iType:getName() .. ".")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_lions_rock.msg_3" .. iType:getArticle() .. " " .. iType:getName() .. ".")
 		player:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 		player:addAchievement("Lion's Den Explorer")
 		item:transform(lionsRockSanctuaryRockId)
@@ -134,7 +134,7 @@ function lionsRockFountain.onUse(player, item, fromPosition, target, toPosition,
 		player:setStorageValue(Storage.Quest.U10_70.LionsRock.Time, os.time() + 24 * 60 * 60)
 		player:setStorageValue(Storage.Quest.U10_70.LionsRock.Questline, 11)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "At the moment there is neither a treasure nor anything else in the fountain. Perhaps you might return later.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_lions_rock.msg_4")
 	end
 	return true
 end

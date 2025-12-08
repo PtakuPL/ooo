@@ -4,7 +4,7 @@ function vip.onSay(player, words, param)
 	if player:isVip() then
 		player:sendVipStatus()
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You do not have VIP on your account.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.vip.msg_1")
 	end
 	return true
 end

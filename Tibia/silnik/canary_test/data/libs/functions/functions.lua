@@ -820,7 +820,7 @@ function kickPlayersAfterTime(players, fromPos, toPos, exit)
 		local player = Player(pid)
 		if player and player:getPosition():isInRange(fromPos, toPos) then
 			player:teleportTo(exit)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You were kicked by exceding time inside the boss room.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "misc.functions.msg_1")
 		end
 	end
 end

@@ -88,7 +88,7 @@ function gems.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if item.itemid == 3032 and target.uid == 40032 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Sixth.Favor) >= 1 and not testFlag(player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Sixth.FourMasks), 4) then
 		player:addItem(31371, 1) -- Ivory mask
 		item:remove(1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You hear a *click*. You can now lift the floor tile and discover a secret compartment. A mask made of ivory lies in it.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.gems.msg_1")
 		player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Sixth.Favor, player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Sixth.Favor) + 1)
 		player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Sixth.FourMasks, setFlag(player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Sixth.FourMasks), 4))
 		player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Sixth.IvoryMask, 1)
@@ -147,7 +147,7 @@ function gems.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			if stone then
 				stone:transform(lionsRockSanctuaryFountainId)
 				lionsRockSanctuaryPos:sendMagicEffect(CONST_ME_THUNDER)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Something happens at the center of the room ...")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.gems.msg_2")
 				player:setStorageValue(storage, 10)
 				return true
 			end

@@ -50,7 +50,7 @@ function othersHolyWater.onUse(player, item, fromPosition, target, toPosition, i
 	if target.itemid == config.antler_talisman then
 		target:transform(config.sacred_antler_talisman)
 		item:remove(1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You besprinkle the antler talisman with holy water. It glitters faintly.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_holy_water.msg_1")
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
 		return true
 

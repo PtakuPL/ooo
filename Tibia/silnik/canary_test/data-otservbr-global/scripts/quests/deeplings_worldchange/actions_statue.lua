@@ -3,7 +3,7 @@ function statuegod.onUse(player, item, fromPosition, target, toPosition, isHotke
 	if player:getStorageValue(Storage.DeeplingsWorldChange.Crystal) == 6 then
 		if table.contains({ 13827 }, target.itemid) then
 			player:removeItem(14018, 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You carefully insert the blood red gem but it would take a hundred hearts to replace the original.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_statue.msg_1")
 			player:setStorageValue(Storage.DeeplingsWorldChange.Crystal, 6)
 		end
 	end

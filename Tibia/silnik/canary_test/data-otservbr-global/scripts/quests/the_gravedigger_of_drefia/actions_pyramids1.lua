@@ -14,7 +14,7 @@ function gravediggerPyramids1.onUse(player, item, fromPosition, target, toPositi
 
 	if player:getStorageValue(cStorages[1]) == 1 and player:getStorageValue(cStorages[2]) < 1 then
 		player:setStorageValue(cStorages[2], 1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "<sizzle> <fizz>")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_pyramids1.msg_1")
 		player:getPosition():sendMagicEffect(CONST_ME_ENERGYHIT)
 	end
 	return true

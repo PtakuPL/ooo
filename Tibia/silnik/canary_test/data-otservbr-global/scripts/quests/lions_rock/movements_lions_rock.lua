@@ -37,12 +37,12 @@ function lionsRockEntrance.onStepIn(creature, item, position, fromPosition)
 	if player:getStorageValue(Storage.Quest.U10_70.LionsRock.Questline) >= 4 then
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		player:teleportTo({ x = 33122, y = 32308, z = 8 })
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have passed the Lion's Tests and are now worthy to enter the inner sanctum!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_lions_rock.msg_1")
 		player:getPosition():sendMagicEffect(CONST_ME_THUNDER)
 	else
 		player:getPosition():sendMagicEffect(CONST_ME_ENERGYHIT)
 		player:teleportTo(fromPosition, true)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have to pass the Lion's Tests to enter the inner sanctum!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_lions_rock.msg_2")
 	end
 	return true
 end
@@ -83,7 +83,7 @@ function lionsRockTranslationScroll.onStepIn(creature, item, position, fromPosit
 		local amphora = Tile(amphoraPos):getItemById(amphoraID)
 		if amphora then
 			amphora:transform(amphoraBrokenID)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "As you pass incautiously, the ancient amphora crumbles to shards and dust. Amidst the debris you discover an old scroll.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_lions_rock.msg_3")
 			player:setStorageValue(Storage.Quest.U10_70.LionsRock.Questline, 5)
 			player:addItem(21467, 1)
 			amphoraPos:sendMagicEffect(CONST_ME_GROUNDSHAKER)
@@ -134,7 +134,7 @@ function lionsRockMessage.onStepIn(creature, item, position, fromPosition)
 		return
 	end
 	if player:getStorageValue(Storage.Quest.U10_70.LionsRock.InnerSanctum.Message) < 1 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You enter a temple area which is gorgeously decorated and mysteriously unaffected by the course of time.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_lions_rock.msg_4")
 		player:setStorageValue(Storage.Quest.U10_70.LionsRock.InnerSanctum.Message, 1)
 	end
 	return true

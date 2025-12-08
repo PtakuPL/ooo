@@ -12,10 +12,10 @@ function spikeTasksNests.onUse(player, item, fromPosition, target, toPosition, i
 
 	local sum = player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Main) + 1
 	player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Main, sum)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have destroyed a monster nest.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_nests.msg_1")
 
 	if sum == 5 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Report the task to Gnombold.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_nests.msg_2")
 	end
 
 	if math.random(100) > 60 then

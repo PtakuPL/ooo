@@ -175,7 +175,7 @@ function treasureChest.onUse(player, item, frompos, itemEx, topos)
 			for i = #reward.itemIds, 1, -1 do
 				container:addItem(reward.itemIds[i], 1)
 			end
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found " .. container:getArticle() .. " " .. container:getName() .. ".")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_1" .. container:getArticle() .. " " .. container:getName() .. ".")
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.AcademyChest, 1)
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.AcademyChestTimer, os.time() + 24 * 60 * 60)
 			player:addItemEx(container, true, CONST_SLOT_WHEREEVER)
@@ -206,7 +206,7 @@ local rollingPin = Action()
 function rollingPin.onUse(player, item, frompos, itemEx, topos)
 	local missionState = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission12)
 	if missionState >= 2 and missionState <= 13 and itemEx.itemid == 12790 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You knock the unsuspicious orc unconscious. Use him to disguise yourself as orc!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_2")
 		if missionState == 2 then
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission12, 3)
 			player:addExperience(50, true)
@@ -214,7 +214,7 @@ function rollingPin.onUse(player, item, frompos, itemEx, topos)
 		itemEx:transform(12791, 1)
 		addEvent(orcRecovery, 60000, itemEx:getPosition())
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have no reason to do such an insidious thing.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_3")
 	end
 	return true
 end
@@ -229,7 +229,7 @@ local unconsciousOrc = Action()
 function unconsciousOrc.onUse(player, item, frompos, itemEx, topos)
 	local missionState = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission12)
 	if missionState >= 3 and missionState <= 13 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You look almost like an orc. It won't fool all orcs, but the stupid guardsman in front of the fortress should fall for it.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_4")
 		if missionState == 3 then
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission12, 4)
 		end
@@ -274,7 +274,7 @@ local fleshyBone = Action()
 function fleshyBone.onUse(player, item, frompos, itemEx, topos)
 	local missionState = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission12)
 	if missionState >= 5 and itemEx.itemid == 12792 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This should be enough distraction for you to sneak into the fortress! Hurry up!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_5")
 		if missionState == 5 then
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission12, 6)
 			player:addExperience(50, true)
@@ -307,7 +307,7 @@ local poisonFlask = Action()
 function poisonFlask.onUse(player, item, frompos, itemEx, topos)
 	local missionState = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission12)
 	if missionState == 7 and itemEx.actionid == 40012 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You poisoned Kraknaknork's soup. This should weaken him immensely. Time to find his room.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_6")
 		player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission12, 8)
 		player:removeItem(12784, 1)
 		player:addExperience(50, true)
@@ -326,7 +326,7 @@ function taranturaTrap.onUse(player, item, frompos, itemEx, topos)
 	local missionState = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission12)
 	target = Tile(topos):getTopCreature()
 	if missionState >= 8 and target:getName() == "Furious Orc Berserker" then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The berserker can't catch you anymore - but only for 20 seconds. You need to lure him away from the teleporter!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_7")
 		if missionState == 8 then
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission12, 9)
 		end
@@ -359,7 +359,7 @@ function bossLairTeleport.onStepIn(creature, item, position, fromPosition)
 		local spectators = Game.getSpectators(position, false, false, 2, 2, 2, 2)
 		for i = 1, #spectators do
 			if not spectators[i]:isPlayer() and spectators[i]:getName() == "Furious Orc Berserker" then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "As long as the orc berserker is near that teleporter, you can't enter.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_8")
 				player:teleportTo(fromPosition, true)
 				position:sendMagicEffect(CONST_ME_TELEPORT)
 				fromPosition:sendMagicEffect(CONST_ME_TELEPORT)
@@ -367,7 +367,7 @@ function bossLairTeleport.onStepIn(creature, item, position, fromPosition)
 			end
 		end
 		if missionState == 9 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You're entering Kraknaknork's lair.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_9")
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission12, 10)
 		end
 		local toPosition = Position(31980, 32173, 10)
@@ -480,7 +480,7 @@ function missionLevers.onUse(player, item, position, itemEx, toPosition)
 			if lever.message then
 				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, lever.message)
 			else
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "An energy barrier somewhere temporarily disappeared.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_10")
 			end
 			if missionState == 10 and lever.newState then
 				player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission12, lever.newState)
@@ -513,7 +513,7 @@ local function finishBossFight(playerUid, bossUid)
 		local roomExitPosition = Position(31980, 32173, 10)
 		player:teleportTo(roomExitPosition, false)
 		roomExitPosition:sendMagicEffect(CONST_ME_TELEPORT)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "With his last energy, Kraknaknork pushes you out of his throne room. Hurry back and defeat him before he regains his power.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_11")
 		local health, maxHealth = player:getHealth(), player:getBaseMaxHealth()
 		-- Heal the player if needed
 		if health < maxHealth then
@@ -546,7 +546,7 @@ function enterBossRoomTeleport.onStepIn(creature, item, position, fromPosition)
 		local spectators = Game.getSpectators(Position(boss.roomCenter), false, true, 8, 8, 5, 5)
 		-- Check if there is a player inside the room
 		if #spectators > 0 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "A player is already inside the boss room.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_12")
 			player:teleportTo(fromPosition, false)
 			return true
 		end
@@ -561,7 +561,7 @@ function enterBossRoomTeleport.onStepIn(creature, item, position, fromPosition)
 		bossCreature:registerEvent("KraknaknorkDeath")
 		boss.uid = bossCreature.uid
 		-- Teleport the player to the room
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You're entering Kraknaknork's throne room. You have 5 minutes to kill him!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_13")
 		player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission12, 12)
 		local roomPosition = Position(31944, 32174, 10)
 		player:teleportTo(roomPosition, false)
@@ -592,7 +592,7 @@ function exitBossRoomTeleport.onStepIn(creature, item, position, fromPosition)
 	player:teleportTo(roomExitPosition, false)
 	position:sendMagicEffect(CONST_ME_TELEPORT)
 	roomExitPosition:sendMagicEffect(CONST_ME_TELEPORT)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You backed out of the fight. You may try again at any time.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_14")
 	-- Despawn the boss
 	local boss = Creature(boss.uid)
 	if boss then
@@ -621,7 +621,7 @@ function enterTreasureRoomTeleport.onStepIn(creature, item, position, fromPositi
 		if #spectators > 0 then
 			for i = 1, #spectators do
 				if not spectators[i]:isPlayer() and spectators[i]:getName() == "Kraknaknork" then
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You may not use this teleporter yet.")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_15")
 					player:teleportTo(fromPosition, false)
 					position:sendMagicEffect(CONST_ME_TELEPORT)
 					fromPosition:sendMagicEffect(CONST_ME_TELEPORT)
@@ -681,9 +681,9 @@ function bossChests.onUse(player, item, frompos, itemEx, topos)
 		if not hasUsedChest then
 			local reward = Game.createItem(chest.item.id, chest.item.amount)
 			if reward:getCount() == 1 then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found " .. reward:getArticle() .. " " .. reward:getName() .. ".")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_16" .. reward:getArticle() .. " " .. reward:getName() .. ".")
 			elseif reward:getCount() > 1 then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found " .. reward:getCount() .. " " .. reward:getPluralName() .. ".")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_17" .. reward:getCount() .. " " .. reward:getPluralName() .. ".")
 			end
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.KraknaknorkChests, chestsState + chest.id)
 			player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
@@ -714,7 +714,7 @@ function exitTreasureRoomTeleport.onStepIn(creature, item, position, fromPositio
 			player:addHealth((maxHealth - health), COMBAT_HEALING)
 		end
 		-- Teleport the player to the orcland exit
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "With Kraknaknork's final source of energy, you escape the fortress. Time to return to Vascalir.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_18")
 		player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission12, 14)
 		local exitPosition = Position(32016, 32150, 7)
 		player:teleportTo(exitPosition, false)
@@ -773,9 +773,9 @@ function orcFortressChests.onUse(player, item, frompos, itemEx, topos)
 	if not hasOpenedChest then
 		local reward = Game.createItem(chest.item.id, chest.item.amount)
 		if reward:getCount() == 1 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found " .. reward:getArticle() .. " " .. reward:getName() .. ".")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_19" .. reward:getArticle() .. " " .. reward:getName() .. ".")
 		elseif reward:getCount() > 1 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found " .. reward:getCount() .. " " .. reward:getPluralName() .. ".")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission12_into_fortress.msg_20" .. reward:getCount() .. " " .. reward:getPluralName() .. ".")
 		end
 		player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.OrcFortressChests, chestsState + chest.id)
 		player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)

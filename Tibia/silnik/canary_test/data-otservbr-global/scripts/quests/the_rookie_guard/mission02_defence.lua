@@ -97,10 +97,10 @@ function stonePile.onUse(player, item, frompos, item2, topos)
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.StonePileTimer, os.time() + 2 * 60)
 			player:addItemEx(Game.createItem(12724, 1), true, CONST_SLOT_WHEREEVER)
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have to wait a few minutes before you can pick up a new stone.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission02_defence.msg_1")
 		end
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't need any stones anymore. Rookgaard's defences have been fortified.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission02_defence.msg_2")
 	end
 	return true
 end
@@ -126,16 +126,16 @@ function heavyStone.onUse(player, item, frompos, item2, topos)
 		local hasUsedCatapult = testFlag(catapultsState, catapults[item2.actionid])
 		if not hasUsedCatapult then
 			if missionState == 2 then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You load the heavy stone on the catapult. Now, get another stone and find the remaining catapult.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission02_defence.msg_3")
 			elseif missionState == 3 then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You loaded the last stone on the catapults. Time to return to Vascalir.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission02_defence.msg_4")
 			end
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission02, missionState + 1)
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Catapults, catapultsState + catapults[item2.actionid])
 			player:addExperience(5, true)
 			player:removeItem(12724, 1)
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have already loaded a stone on this catapult. Look around on other roofs to find the remaining catapults.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission02_defence.msg_5")
 		end
 	end
 	return true

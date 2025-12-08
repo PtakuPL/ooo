@@ -25,7 +25,7 @@ function gnomprona.onStepIn(creature, item, position, fromPosition)
 					else
 						player:getPosition():sendMagicEffect(CONST_ME_POFF)
 						player:teleportTo(fromPosition)
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't have access to this teleport yet.")
+						player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.gnomprona.msg_1")
 					end
 				else
 					player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)

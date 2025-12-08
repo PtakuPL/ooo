@@ -30,7 +30,7 @@ function entrance.onStepIn(creature, item, position, fromPosition)
 		end
 
 		if player:getItemCount(919) == 0 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Go talk with Odralk and get the Hallowed Axe to kill The Demon Oak.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_entrance.msg_1")
 		end
 
 		player:removeItem(9388, 1)

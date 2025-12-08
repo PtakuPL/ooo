@@ -84,11 +84,11 @@ function hammer.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			end
 
 			player:setStorageValue(Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.RottinStart, player:getStorageValue(Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.RottinStart) + 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You fixed this broken wall.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.hammer.msg_1")
 			return true
 		end
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You already fixed many broken walls today.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.hammer.msg_2")
 		return true
 	end
 	return false

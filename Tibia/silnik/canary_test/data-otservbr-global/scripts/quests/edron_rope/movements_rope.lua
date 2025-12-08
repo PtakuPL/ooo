@@ -10,7 +10,7 @@ function rope.onStepIn(creature, item, position, fromPosition)
 		return true
 	end
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "In this cave there is a rope. It once belonged to a wanderer who was stuck. Only take it if you're stuck as well.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_rope.msg_1")
 	player:setStorageValue(Storage.EdronRopeQuest, os.time() + 30)
 	return true
 end

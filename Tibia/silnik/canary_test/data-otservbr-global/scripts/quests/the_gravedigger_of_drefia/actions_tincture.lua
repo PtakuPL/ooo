@@ -6,7 +6,7 @@ function gravediggerTincture.onUse(player, item, fromPosition, target, toPositio
 
 	if player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission23) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission24) < 1 then
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission24, 1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You crash the vial and spill the blood tincture. This altar is anointed.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_tincture.msg_1")
 		item:remove()
 	end
 	return true

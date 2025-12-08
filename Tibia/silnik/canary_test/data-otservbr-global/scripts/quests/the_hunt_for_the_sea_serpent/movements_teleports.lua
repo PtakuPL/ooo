@@ -23,17 +23,17 @@ function teleports.onStepIn(creature, item, position, fromPosition)
 						else
 							player:teleportTo(fromPosition)
 							player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-							player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have to wear a helmet of the deep.")
+							player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_teleports.msg_1")
 						end
 					else
 						player:teleportTo(fromPosition)
 						player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have to wear a helmet of the deep.")
+						player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_teleports.msg_2")
 					end
 				else
 					player:teleportTo(fromPosition)
 					player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are not yet at the right spot.")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_teleports.msg_3")
 				end
 			else
 				player:teleportTo(config[b].destination)

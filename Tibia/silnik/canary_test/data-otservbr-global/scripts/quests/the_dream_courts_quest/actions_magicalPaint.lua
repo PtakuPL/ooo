@@ -21,7 +21,7 @@ function actions_magicalPaint.onUse(player, item, fromPosition, target, toPositi
 	elseif item.itemid == magicalPaint and target.actionid == 23109 then
 		if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.TheSevenKeys.Painting) < 1 then
 			item:remove(1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Carefully you paint over the picture. As you are doing so the flat paiting deepens. It looks now like a room you can enter.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_magicalPaint.msg_1")
 			player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.TheSevenKeys.Painting, 1)
 			player:setStorageValue(Count, player:getStorageValue(Count) + 1)
 		end
@@ -35,7 +35,7 @@ function actions_magicalPaint.onUse(player, item, fromPosition, target, toPositi
 
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		elseif player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.TheSevenKeys.Painting) == 1 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This isn't a normal paiting anymore. By using magical paint you transformed it into a portal and can easily pass it.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_magicalPaint.msg_2")
 			player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.TheSevenKeys.Painting, 2)
 		end
 	end

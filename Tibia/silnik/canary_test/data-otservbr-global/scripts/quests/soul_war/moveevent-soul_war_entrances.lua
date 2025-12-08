@@ -16,7 +16,7 @@ function soul_war_entrances.onStepIn(creature, item, position, fromPosition)
 	end
 
 	if player:getLevel() < 250 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need level 250 to enter here.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.moveevent-soul_war_entrances.msg_1")
 		player:teleportTo(fromPosition, true)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		return
@@ -25,7 +25,7 @@ function soul_war_entrances.onStepIn(creature, item, position, fromPosition)
 	-- Check if player has access to teleport from Flickering Soul npc: "hi/task/yes"
 	local soulWarQuest = player:soulWarQuestKV()
 	if not soulWarQuest:get("teleport-access") then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your soul does not yet resonate with the frequency required to enter here.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.moveevent-soul_war_entrances.msg_2")
 		player:teleportTo(fromPosition, true)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		return
@@ -59,7 +59,7 @@ function soul_war_megalomania_entrance.onStepIn(creature, item, position, fromPo
 
 	local soulWarQuest = player:soulWarQuestKV()
 	if player:getLevel() < 250 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are not allowed to enter here.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.moveevent-soul_war_entrances.msg_3")
 		player:teleportTo(fromPosition, true)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		return false
@@ -76,7 +76,7 @@ function soul_war_megalomania_entrance.onStepIn(creature, item, position, fromPo
 	end
 
 	if soulWarCount < 5 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You still need to defeat:" .. text)
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.moveevent-soul_war_entrances.msg_4" .. text)
 		player:teleportTo(fromPosition, true)
 		return false
 	end
@@ -128,7 +128,7 @@ function goshnarSpiteEntrance.onStepIn(creature, item, position, fromPosition)
 	local soulWarQuest = player:soulWarQuestKV()
 	local killCount = soulWarQuest:get("hazardous-phantom-death") or 0
 	if killCount < 20 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have killed " .. killCount .. " and need to kill 20 Hazardous Phantoms")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.moveevent-soul_war_entrances.msg_5" .. killCount .. " and need to kill 20 Hazardous Phantoms")
 		player:teleportTo(fromPosition, true)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		return false

@@ -13,9 +13,9 @@ function middleSpikeKill.onDeath(creature, _corpse, _lastHitKiller, mostDamageKi
 		if not table.contains({ -1, 7 }, player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Main)) then
 			local sum = player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Main) + 1
 			player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Main, sum)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have slayed " .. sum .. " out of 7 Crystalcrushers.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.creaturescripts_middle_spike_kill.msg_1" .. sum .. " out of 7 Crystalcrushers.")
 			if sum == 7 then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Report the task to Gnombold.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.creaturescripts_middle_spike_kill.msg_2")
 			end
 		end
 	end)

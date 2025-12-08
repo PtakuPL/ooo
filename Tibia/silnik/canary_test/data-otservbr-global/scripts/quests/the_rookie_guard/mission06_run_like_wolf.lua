@@ -69,7 +69,7 @@ function warWolfDenHole.onStepIn(creature, item, position, fromPosition)
 	end
 	local missionState = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06)
 	if missionState == -1 or missionState >= 4 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have no business down there.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission06_run_like_wolf.msg_1")
 		player:teleportTo(fromPosition, true)
 	end
 	return true
@@ -137,7 +137,7 @@ warWolfDenTiles:register()
 local function teleportBack(uid)
 	local player = Player(uid)
 	if player and player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) == 5 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Oh no... you were too slow and the wolves caught up with you. You may try again.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission06_run_like_wolf.msg_2")
 		player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06, 4)
 		player:teleportTo({ x = 32109, y = 32131, z = 11 })
 	end
@@ -152,7 +152,7 @@ function warWolfDenBoostTiles.onStepIn(creature, item, position, fromPosition)
 	end
 	local missionState = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06)
 	if missionState == 4 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "RUUUUUUUUUUUUUUUUUN!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission06_run_like_wolf.msg_3")
 		player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06, 5)
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		local conditionHaste = Condition(CONDITION_HASTE)
@@ -181,7 +181,7 @@ function poacherCorpse.onUse(player, item, frompos, itemEx, topos)
 		local corpseState = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.PoacherCorpse)
 		if corpseState == -1 then
 			local reward = Game.createItem(12672, 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found " .. reward:getArticle() .. " " .. reward:getName() .. ".")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission06_run_like_wolf.msg_4" .. reward:getArticle() .. " " .. reward:getName() .. ".")
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.PoacherCorpse, 1)
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06, 3)
 			player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
@@ -202,7 +202,7 @@ local skinningKnife = Action()
 function skinningKnife.onUse(player, item, frompos, itemEx, topos)
 	local missionState = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06)
 	if missionState == 3 and itemEx.uid == 40045 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You got the war wolf leather - but you hear a scary howl behind you. Time to get out of here - FAST!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission06_run_like_wolf.msg_5")
 		player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06, 4)
 		player:addExperience(50, true)
 		player:removeItem(12672, 1)
@@ -227,7 +227,7 @@ function warWolfDenChest.onUse(player, item, frompos, itemEx, topos)
 	local chestState = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.WarWolfDenChest)
 	if chestState == -1 then
 		local reward = Game.createItem(7876, 1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found " .. reward:getArticle() .. " " .. reward:getName() .. ".")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission06_run_like_wolf.msg_6" .. reward:getArticle() .. " " .. reward:getName() .. ".")
 		player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.WarWolfDenChest, 1)
 		player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
 	else

@@ -224,7 +224,7 @@ Blessings.doAdventurerBlessing = function(player)
 
 	player:addMissingBless(true, true)
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have adventurer's blessings for being level lower than " .. Blessings.Config.AdventurerBlessingLevel .. "!")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "misc.blessing.msg_1" .. Blessings.Config.AdventurerBlessingLevel .. "!")
 	player:getPosition():sendMagicEffect(CONST_ME_HOLYDAMAGE)
 	return true
 end

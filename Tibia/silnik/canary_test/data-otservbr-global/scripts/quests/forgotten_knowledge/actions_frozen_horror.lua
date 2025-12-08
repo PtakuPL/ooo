@@ -22,14 +22,14 @@ function leverMeltingFrozenHorror.onUse(player, item, fromPosition, target, toPo
 	end
 	if item.itemid == 8911 then
 		if Game.getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.HorrorKilled) >= 1 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need to wait a while, recently someone challenge Frozen Horror.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_frozen_horror.msg_1")
 			return true
 		end
 		local specs, spec = Game.getSpectators(config.centerRoom, false, false, 15, 15, 15, 15)
 		for i = 1, #specs do
 			spec = specs[i]
 			if spec:isPlayer() then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Someone is fighting with Frozen Horror.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_frozen_horror.msg_2")
 				return true
 			end
 		end

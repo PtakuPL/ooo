@@ -74,7 +74,7 @@ function libraryVaultSteps.onStepIn(creature, item, position, fromPosition)
 		local coughTolerance = (health / maxHealth) * 100
 		if health <= (maxHealth / 3) or math.random(100) <= (100 - coughTolerance) then
 			player:teleportTo({ x = 32089, y = 32152, z = 9 })
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You're coughing so badly that you had to return upstairs. Take a few deep breaths and try again.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission07_attack.msg_1")
 			player:addHealth((maxHealth - health), COMBAT_HEALING)
 		end
 	end
@@ -94,7 +94,7 @@ function fireFields.onStepIn(creature, item, position, fromPosition)
 		return true
 	end
 	if item.itemid == 12743 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This fire is much too hot to walk through it. Use the destroy field rune on the fire to weaken the flames!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission07_attack.msg_2")
 		player:teleportTo(fromPosition, true)
 	end
 	return true
@@ -120,7 +120,7 @@ local destroyFieldRune = Action()
 function destroyFieldRune.onUse(player, item, frompos, item2, topos)
 	local missionState = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission07)
 	if missionState == 1 and item2.itemid == 12743 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Fire in this stadium can be crossed without taking damage. Open the chest and get out of here!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission07_attack.msg_3")
 		item2:getPosition():sendMagicEffect(CONST_ME_POFF)
 		item2:transform(12744, 1)
 		addEvent(restoreFirefield, 25000, item2:getPosition())
@@ -145,7 +145,7 @@ function treasureChest.onUse(player, item, frompos, item2, topos)
 		local libraryChestState = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.LibraryChest)
 		if libraryChestState == -1 then
 			local reward = Game.createItem(12675, 1)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found " .. reward:getArticle() .. " " .. reward:getName() .. ".")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission07_attack.msg_4" .. reward:getArticle() .. " " .. reward:getName() .. ".")
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.LibraryChest, 1)
 			player:addItemEx(reward, true, CONST_SLOT_WHEREEVER)
 		else

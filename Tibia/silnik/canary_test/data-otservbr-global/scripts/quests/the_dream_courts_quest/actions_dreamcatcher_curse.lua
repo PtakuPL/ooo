@@ -37,7 +37,7 @@ function actions_dreamcatcher_curse.onUse(player, item, fromPosition, target, to
 	end
 
 	if item.itemid == 29274 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can rip off a dream catcher!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_dreamcatcher_curse.msg_1")
 		item:transform(29275)
 		local newItem = Game.createItem(maskId, 1, Position(item:getPosition().x, item:getPosition().y + 1, item:getPosition().z))
 		if newItem then
@@ -54,7 +54,7 @@ function actions_dreamcatcher_curse.onUse(player, item, fromPosition, target, to
 					target:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have a feeling of dread.")
 					player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.NightmareCurse, 1)
 					player:registerEvent(Storage.Quest.U12_00.TheDreamCourts.NightmareCurse)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You take the dreamcurse on yourself!")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_dreamcatcher_curse.msg_2")
 					item:remove(1)
 					local j = resetArea()
 					if j then

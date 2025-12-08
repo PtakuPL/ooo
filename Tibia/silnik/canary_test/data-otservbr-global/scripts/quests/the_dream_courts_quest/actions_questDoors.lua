@@ -105,14 +105,14 @@ function actions_questDoors.onUse(player, item, fromPosition, target, toPosition
 					item:transform(item.itemid + 1)
 					addEvent(closeDoor, 2000, iPos, item.itemid)
 				else
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The door seems to be sealed against unwanted intruders.")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_questDoors.msg_1")
 				end
 			elseif p.help == "Medusa" then
 				if player:getStorageValue(p.storage) < 1 then
 					player:setStorageValue(p.storage, 1)
 					local count = player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.TheSevenKeys.Count)
 					player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.TheSevenKeys.Count, (count < 0 and 1 or count + 1))
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "As Medusa's Ointment takes effect, the door is unpetrified. You can use it now.")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_questDoors.msg_2")
 				end
 				local newPos = (iPos.y < player:getPosition().y) and Position(iPos.x, iPos.y - 3, iPos.z) or Position(iPos.x, iPos.y + 3, iPos.z)
 				player:teleportTo(newPos)
@@ -125,7 +125,7 @@ function actions_questDoors.onUse(player, item, fromPosition, target, toPosition
 					player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 					addEvent(closeDoor, 2000, iPos, item.itemid)
 				else
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The lock in this door is missing. Perhaps you can find a matching lock somewhere?")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_questDoors.msg_3")
 					return true
 				end
 			elseif p.help == "Open/Close" then
@@ -138,7 +138,7 @@ function actions_questDoors.onUse(player, item, fromPosition, target, toPosition
 					item:transform(item.itemid + 1)
 					addEvent(closeDoor, 2000, iPos, item.itemid)
 				else
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The door seems to be sealed against unwanted intruders.")
+					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_questDoors.msg_4")
 				end
 			end
 		end

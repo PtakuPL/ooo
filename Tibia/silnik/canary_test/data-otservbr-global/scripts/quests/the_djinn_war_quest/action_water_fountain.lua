@@ -7,7 +7,7 @@ function action_water_fountain.onUse(player, item, fromPosition, target, toPosit
 
 	Game.createItem(3233, 1, fromPosition)
 	player:setStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission02, 2)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a tear of daraman.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action_water_fountain.msg_1")
 	return true
 end
 

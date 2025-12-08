@@ -2,12 +2,12 @@ local blueberryCupcake = Action()
 
 function blueberryCupcake.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:hasExhaustion("blueberry-cupcake-cooldown") then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need to wait before using it again.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.blueberry_cupcake.msg_1")
 		return true
 	end
 
 	player:addMana(player:getMaxMana())
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your mana has been refilled.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.blueberry_cupcake.msg_2")
 	player:say("Mmmm.", TALKTYPE_MONSTER_SAY)
 	player:setExhaustion("blueberry-cupcake-cooldown", 10 * 60)
 	item:remove(1)

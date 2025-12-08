@@ -29,7 +29,7 @@ function goldenOutfitDisplay.onUse(player, item, fromPosition, target, toPositio
 		item:transform(newItemID)
 		item:getPosition():sendMagicEffect(CONST_ME_EARLY_THUNDER)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need Full Golden Outfit to use it.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.golden_outfit_display.msg_1")
 		item:getPosition():sendMagicEffect(CONST_ME_POFF)
 	end
 	return true

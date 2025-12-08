@@ -44,7 +44,7 @@ function info.onSay(player, words, param)
 	end
 
 	if #players > 0 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Other players on same IP: " .. table.concat(players, ", ") .. ".")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.info.msg_1" .. table.concat(players, ", ") .. ".")
 	end
 	return true
 end

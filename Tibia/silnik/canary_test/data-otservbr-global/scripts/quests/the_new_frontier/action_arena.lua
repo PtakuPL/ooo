@@ -59,12 +59,12 @@ function theNewFrontierArena.onUse(player, item, fromPosition, target, toPositio
 		end
 
 		if creature:getStorageValue(TheNewFrontier.Questline) >= 26 then
-			return player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You already finished this battle.")
+			return player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action_arena.msg_1")
 		end
 	end
 
 	if Game.getStorageValue(TheNewFrontier.Mission09[1]) == 1 then
-		return player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The arena is already in use.")
+		return player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action_arena.msg_2")
 	end
 
 	Game.setStorageValue(TheNewFrontier.Mission09[1], 1)

@@ -21,7 +21,7 @@ function lastTeleport.onStepIn(creature, item, position, fromPosition)
 
 	if not isDateWithinEvent() then
 		player:teleportTo(fromPosition, true)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This teleport is only available between January 14 and February 12.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_last_teleport.msg_1")
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		return true
 	end
@@ -32,7 +32,7 @@ function lastTeleport.onStepIn(creature, item, position, fromPosition)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 	else
 		player:teleportTo(fromPosition, true)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have to wait to challenge The First Dragon again!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_last_teleport.msg_2")
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 	end
 

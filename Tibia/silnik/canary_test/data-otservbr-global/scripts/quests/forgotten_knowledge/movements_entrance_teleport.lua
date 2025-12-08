@@ -105,14 +105,14 @@ function entranceTeleport.onStepIn(creature, item, position, fromPosition)
 	else
 		if item.itemid == 10840 then
 			player:teleportTo(fromPosition)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't have the permission to use this portal.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_entrance_teleport.msg_1")
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			return true
 		end
 		local pos = position
 		pos.y = pos.y + 2
 		player:teleportTo(pos)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't have the permission to use this portal.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_entrance_teleport.msg_2")
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		pos.y = pos.y - 2
 		pos:sendMagicEffect(CONST_ME_TELEPORT)

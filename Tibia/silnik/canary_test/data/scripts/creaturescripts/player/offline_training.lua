@@ -12,7 +12,7 @@ function offlineTraining.onLogin(player)
 	player:setOfflineTrainingSkill(SKILL_NONE)
 
 	if offlineTime < 600 then
-		player:sendTextMessage(MESSAGE_OFFLINE_TRAINING, "You must be logged out for more than 10 minutes to start offline training.")
+		player:sendLocalizedMessage(MESSAGE_OFFLINE_TRAINING, "scripts.offline_training.msg_1")
 		return true
 	end
 

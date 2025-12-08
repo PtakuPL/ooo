@@ -6,10 +6,10 @@ function ferumbrasAscendantManaKeg.onUse(player, item, fromPosition, target, toP
 		item:transform(22770)
 		item:decay()
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Magical sparks whirl around the keg as you open the spigot and you fill ten empty vials with mana fluid.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.ferumbras_mana_keg.msg_1")
 		return true
 	elseif item.itemid == 22770 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are tired of the last use of the mana keg, rest your arms for a moment.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.ferumbras_mana_keg.msg_2")
 	end
 	return true
 end

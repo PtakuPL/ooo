@@ -20,7 +20,7 @@ function elevator.onStepIn(creature, item, position, fromPosition)
 		player:teleportTo(teleport)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't know how to use this yet.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.moviments_elevator.msg_1")
 	end
 	return true
 end

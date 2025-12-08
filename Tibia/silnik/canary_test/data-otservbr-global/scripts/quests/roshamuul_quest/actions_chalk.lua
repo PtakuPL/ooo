@@ -25,7 +25,7 @@ function lowerRoshamuulChalk.onUse(player, item, fromPosition, target, toPositio
 		end
 	end
 	item:transform(20136)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You fill some of the fine chalk into a bucket.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_chalk.msg_1")
 	return true
 end
 

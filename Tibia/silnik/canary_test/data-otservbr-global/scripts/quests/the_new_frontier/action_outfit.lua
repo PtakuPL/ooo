@@ -8,9 +8,9 @@ function theNewFrontierOutfit.onUse(player, item)
 		player:addOutfit(336, 0)
 		player:setStorageValue(TheNewFrontier.Mission09.RewardDoor, 1)
 		player:setStorageValue(TheNewFrontier.Questline, 27)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have gained your new outfit and may leave the reward room now!")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action_outfit.msg_1")
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You already taken the outfit, ask about mission for Chrak.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.action_outfit.msg_2")
 	end
 	return true
 end

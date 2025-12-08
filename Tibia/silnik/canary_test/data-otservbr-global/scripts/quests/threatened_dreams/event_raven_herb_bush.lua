@@ -45,7 +45,7 @@ function ravenHerb.onUse(player, item, fromPosition, target, toPosition, isHotke
 	end
 
 	if player:getStorageValue(config.storage) > os.time() then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The raven herb cannot be collected right now.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.event_raven_herb_bush.msg_1")
 		return true
 	end
 

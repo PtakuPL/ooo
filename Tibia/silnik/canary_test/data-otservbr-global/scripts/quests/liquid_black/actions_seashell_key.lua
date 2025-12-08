@@ -9,7 +9,7 @@ function seashellKey.onUse(player, item, fromPosition, target, toPosition, isHot
 
 	local bookChance = math.random(0, 100)
 	if bookChance < 85 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You turn the key in the small lock at the side of the shelf and... the key breaks. Other than that absolutely nothing happens.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_seashell_key.msg_1")
 		item:remove(1)
 		return true
 	end
@@ -22,7 +22,7 @@ function seashellKey.onUse(player, item, fromPosition, target, toPosition, isHot
 	else
 		player:addItem(14175)
 	end
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "A hidden stash appears the very moment you turn the key. Unfortunately the key breaks as you attempt to remove it from the lock.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_seashell_key.msg_2")
 	item:remove(1)
 	return true
 end

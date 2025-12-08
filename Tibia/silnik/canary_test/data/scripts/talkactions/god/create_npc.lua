@@ -28,27 +28,27 @@ function createNpc.onSay(player, words, param)
 			local filePath = string.format("%s/world/%s", DATA_DIRECTORY, mapNpcsPath)
 			local npcsFile = io.open(filePath, "r")
 			if not npcsFile then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "There was an error when trying to add permanent NPC. NPC File not found.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.create_npc.msg_1")
 				return true
 			end
 			local fileContent = npcsFile:read("*all")
 			npcsFile:close()
 			local endTag = "</npcs>"
 			if not fileContent:find(endTag, 1, true) then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "There was an error when trying to add permanent NPC. The NPC file format is incorrect. Missing end tag " .. endTag .. ".")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.create_npc.msg_2" .. endTag .. ".")
 				return true
 			end
 			local textToAdd = string.format('\t<npc centerx="%i" centery="%i" centerz="%i" radius="1">\n\t\t<npc name="%s" x="0" y="0" z="%i" spawntime="60" />\n\t</npc>', position.x, position.y, position.z, name, position.z)
 			local newFileContent = fileContent:gsub(endTag, textToAdd .. "\n" .. endTag)
 			npcsFile = io.open(filePath, "w")
 			if not npcsFile then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "There was an error when trying to write to the NPC file.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.create_npc.msg_3")
 				return true
 			end
 			npcsFile:write(newFileContent)
 			npcsFile:close()
 
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Permanent NPC added successfully.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.create_npc.msg_4")
 		end
 	else
 		player:sendCancelMessage("There is not enough room.")

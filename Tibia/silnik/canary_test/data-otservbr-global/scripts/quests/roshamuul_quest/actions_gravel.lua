@@ -17,7 +17,7 @@ function lowerRoshamuulGravel.onUse(player, item, fromPosition, target, toPositi
 		data[player:getId()] = 0
 	end
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You gather some fine gravel.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_gravel.msg_1")
 	item:transform(20134)
 	item:decay()
 	return true

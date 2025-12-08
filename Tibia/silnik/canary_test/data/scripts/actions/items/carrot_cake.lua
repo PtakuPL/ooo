@@ -9,12 +9,12 @@ local carrotCake = Action()
 
 function carrotCake.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:hasExhaustion("special-foods-cooldown") then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need to wait before using it again.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.carrot_cake.msg_1")
 		return true
 	end
 
 	player:addCondition(distanceCondition)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You feel more focused.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.carrot_cake.msg_2")
 	player:say("Mmmm.", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)

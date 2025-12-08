@@ -7,7 +7,7 @@ function rookVillage.onStepIn(creature, item, position, fromPosition)
 	end
 
 	player:teleportTo(Position(player:getPosition().x, player:getPosition().y - 3, player:getPosition().z + 1))
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't have any business there anymore.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.rook_village.msg_1")
 
 	return true
 end

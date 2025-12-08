@@ -41,7 +41,7 @@ function finalReward.onUse(player, item, fromPosition, target, toPosition, isHot
 	end
 
 	if player:getStorageValue(Storage.Quest.U11_02.TheFirstDragon.Feathers) ~= 2 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are not eligible to claim these rewards yet.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_rewards.msg_1")
 		return true
 	end
 
@@ -61,14 +61,14 @@ function finalReward.onUse(player, item, fromPosition, target, toPosition, isHot
 			end
 			bp:moveTo(player)
 		end
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You found a backpack.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_rewards.msg_2")
 		player:setStorageValue(Storage.Quest.U11_02.TheFirstDragon.RewardBackpack, os.time() + 60 * 60 * 24 * 365)
 	elseif item.uid == 14023 and player:getStorageValue(Storage.Quest.U11_02.TheFirstDragon.RewardFeather) < os.time() then
 		player:addItem(setting.name, setting.count, true)
 		player:setStorageValue(Storage.Quest.U11_02.TheFirstDragon.RewardFeather, os.time() + 24 * 3600)
 		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You found " .. setting.count .. " " .. setting.name .. ".")
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The chest is empty.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_rewards.msg_3")
 	end
 
 	return true

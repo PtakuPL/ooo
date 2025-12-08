@@ -23,7 +23,7 @@ function decorationKits.onUse(player, item, fromPosition, itemEx, toPosition)
 		return false
 	end
 	if not fromPosition:getTile():getHouse() then
-		player:sendTextMessage(MESSAGE_FAILURE, "You may construct this only inside a house.")
+		player:sendLocalizedMessage(MESSAGE_FAILURE, "scripts.kits.msg_1")
 	else
 		item:remove(1)
 		fromPosition:getTile():addItem(kit)

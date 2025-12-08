@@ -1378,15 +1378,15 @@ function Monster:onThinkGoshnarTormentCounter(interval, maxLimit, intervalBetwee
 		end
 
 		if tormentCounter == 5 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The dread starts to torment you! Don't let dread level reach critical value!")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.msg_1")
 		elseif tormentCounter == 15 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The dread's torment becomes unbearable!")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.msg_2")
 		elseif tormentCounter == 24 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The Dread's torment begins to tear you apart!")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.msg_3")
 		elseif tormentCounter == 30 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The dread's torment is killing you!")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.msg_4")
 		elseif tormentCounter == 36 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The dread's torment is now lethal!")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war.msg_5")
 		end
 
 		::continue::

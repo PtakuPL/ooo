@@ -46,12 +46,12 @@ function mission9TheDeepestCatacombTeleport.onStepIn(creature, item, position, f
 			player:teleportTo(fromPosition)
 			position:sendMagicEffect(CONST_ME_TELEPORT)
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need to break all 4 large amphoras to use this teleporter.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_mission9_the_deepest_catacomb_teleport.msg_1")
 			return true
 		end
 	else
 		player:teleportTo(fromPosition, true)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't have access to this area.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_mission9_the_deepest_catacomb_teleport.msg_2")
 	end
 end
 

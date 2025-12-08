@@ -2,12 +2,12 @@ local rotwormStew = Action()
 
 function rotwormStew.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:hasExhaustion("special-foods-cooldown") then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need to wait before using it again.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.rotworm_stew.msg_1")
 		return true
 	end
 
 	player:addHealth(player:getMaxHealth())
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your health has been refilled.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.rotworm_stew.msg_2")
 	player:say("Gulp.", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)

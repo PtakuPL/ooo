@@ -41,7 +41,7 @@ function buyHouse.onSay(player, words, param)
 	end
 
 	if house:hasItemOnTile() then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You cannot buy this house, as there are items inside it. Please, contact an administrator.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.buy_house.msg_1")
 		return true
 	end
 
@@ -56,7 +56,7 @@ function buyHouse.onSay(player, words, param)
 	})
 
 	house:setHouseOwner(player:getGuid())
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have successfully bought this house, be sure to have the money for the rent in the bank.")
+	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.buy_house.msg_2")
 	return true
 end
 

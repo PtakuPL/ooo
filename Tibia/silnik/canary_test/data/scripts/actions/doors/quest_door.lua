@@ -19,7 +19,7 @@ function questDoor.onUse(player, item, fromPosition, target, toPosition, isHotke
 				player:teleportTo(toPosition, true)
 				return true
 			else
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The door seems to be sealed against unwanted intruders.")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.quest_door.msg_1")
 				return true
 			end
 		end

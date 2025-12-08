@@ -16,19 +16,19 @@ function feature.onSay(player, words, param)
 	end
 	if not table.contains(validValues, param) then
 		local validValuesStr = table.concat(validValues, "/")
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Invalid param specified. Usage: !feature [" .. validValuesStr .. "]")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.auto_loot.msg_1" .. validValuesStr .. "]")
 		return true
 	end
 
 	if param == "all" then
 		player:setFeature(Features.AutoLoot, 2)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "AutoLoot is now enabled for all kills (including bosses).")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.auto_loot.msg_2")
 	elseif param == "on" then
 		player:setFeature(Features.AutoLoot, 1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "AutoLoot is now enabled for all regular kills (no bosses).")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.auto_loot.msg_3")
 	elseif param == "off" then
 		player:setFeature(Features.AutoLoot, 0)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "AutoLoot is now disabled.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.auto_loot.msg_4")
 	end
 	return true
 end

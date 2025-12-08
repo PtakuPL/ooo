@@ -84,12 +84,12 @@ function vocationReward.onUse(player, item, fromPosition, itemEx, toPosition)
 	end
 	-- Check if enough weight capacity
 	if player:getFreeCapacity() < rewardsWeight then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a " .. getItemName(reward.container) .. ". Weighing " .. (rewardsWeight / 100) .. " oz it is too heavy.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_vocation_reward.msg_1" .. getItemName(reward.container) .. ". Weighing " .. (rewardsWeight / 100) .. " oz it is too heavy.")
 		return true
 	end
 	-- Check if enough free slots
 	if player:getFreeBackpackSlots() < 1 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a " .. getItemName(reward.container) .. ". There is no room.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_vocation_reward.msg_2" .. getItemName(reward.container) .. ". There is no room.")
 		return true
 	end
 	-- Create reward container
@@ -112,7 +112,7 @@ function vocationReward.onUse(player, item, fromPosition, itemEx, toPosition)
 	end
 	-- Ensure reward was added properly to player
 	if player:addItemEx(container, false, CONST_SLOT_WHEREEVER) == RETURNVALUE_NOERROR then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a " .. container:getName() .. ".")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_vocation_reward.msg_3" .. container:getName() .. ".")
 		player:setStorageValue(Storage.Quest.U10_55.Dawnport.VocationReward, 1)
 	end
 	return true

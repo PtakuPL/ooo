@@ -78,13 +78,13 @@ function movements_acessTeleports.onStepIn(creature, item, position, fromPositio
 	if item:getPosition() == nightmareTeleport then
 		if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.DreamScar.BossCount) >= 5 then
 			if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.DreamScar.NightmareTimer) > os.time() then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have to wait to challenge The Nightmare Beast again!")
+				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_acessTeleports.msg_1")
 				player:teleportTo(fromPosition)
 			else
 				player:teleportTo(Position(32211, 32075, 15))
 			end
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can not use this teleport yet.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_acessTeleports.msg_2")
 			player:teleportTo(fromPosition)
 		end
 	end
@@ -108,7 +108,7 @@ function movements_acessTeleports.onStepIn(creature, item, position, fromPositio
 			for i = 1, #dreamScar do
 				if os.date("%A") == dreamScar[i].day then
 					if player:getStorageValue(dreamScar[i].storageTimer) > os.time() then
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have to wait to challenge " .. dreamScar[i].bossName .. " again!")
+						player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_acessTeleports.msg_3" .. dreamScar[i].bossName .. " again!")
 						player:teleportTo(fromPosition)
 					else
 						player:teleportTo(Position(32208, 32026, 13))

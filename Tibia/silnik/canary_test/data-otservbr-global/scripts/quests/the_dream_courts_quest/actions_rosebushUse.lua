@@ -13,7 +13,7 @@ function actions_rosebushUse.onUse(player, item, fromPosition, target, toPositio
 
 	if tPos == earthPosition then
 		if player:getStorageValue(Rosebush) <= 1 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You plant the rosebush into the fresh soil. The green portal glows brighter. Perhaps you may pass it now.")
+			player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_rosebushUse.msg_1")
 			player:setStorageValue(Rosebush, 2)
 			if player:getStorageValue(keysCount) < 0 then
 				player:setStorageValue(keysCount, 0)

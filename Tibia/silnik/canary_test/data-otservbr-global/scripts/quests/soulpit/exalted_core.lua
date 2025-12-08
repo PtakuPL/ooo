@@ -34,14 +34,14 @@ function exaltedCore.onUse(player, item, fromPosition, target, toPosition, isHot
 	local monsterName = SoulPit.getSoulCoreMonster(itemName)
 
 	if not monsterName then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can only use Exalted Core with a Soul Core.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.exalted_core.msg_1")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return false
 	end
 
 	local monsterType = MonsterType(monsterName)
 	if not monsterType then
-		player:sendTextMessage(MESSAGE_GAME_HIGHLIGHT, "Invalid monster type. Please contact an administrator.")
+		player:sendLocalizedMessage(MESSAGE_GAME_HIGHLIGHT, "scripts.exalted_core.msg_2")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return false
 	end
@@ -58,7 +58,7 @@ function exaltedCore.onUse(player, item, fromPosition, target, toPosition, isHot
 	end
 
 	if #previousDifficultyMonsters == 0 then
-		player:sendTextMessage(MESSAGE_GAME_HIGHLIGHT, "No monsters available for the previous difficulty level.")
+		player:sendLocalizedMessage(MESSAGE_GAME_HIGHLIGHT, "scripts.exalted_core.msg_3")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return false
 	end
@@ -68,14 +68,14 @@ function exaltedCore.onUse(player, item, fromPosition, target, toPosition, isHot
 	if not newSoulCoreItem then -- Retry a second time.
 		newSoulCoreItem = getSoulCoreItemForMonster(newMonsterType:getName())
 		if not newSoulCoreItem then
-			player:sendTextMessage(MESSAGE_GAME_HIGHLIGHT, "Failed to generate a Soul Core.")
+			player:sendLocalizedMessage(MESSAGE_GAME_HIGHLIGHT, "scripts.exalted_core.msg_4")
 			player:getPosition():sendMagicEffect(CONST_ME_POFF)
 			return false
 		end
 	end
 
 	if player:getFreeCapacity() < ItemType(newSoulCoreItem):getWeight() then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You do not have enough capacity.")
+		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.exalted_core.msg_5")
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		return false
 	end

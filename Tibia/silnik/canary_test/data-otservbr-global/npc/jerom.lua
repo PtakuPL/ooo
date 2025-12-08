@@ -73,13 +73,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TrollSabotageQuest.Questline) == 2 and player:removeItem(7754, 1) then
-			npcHandler:say("Thank you sooo much <sniffs>. Well, you know I lost everything, but recently I found this strange rope here. I don't need it, here take it!", npc, creature)
+			npcHandler:sayLocalized("npc.jerom.thank_you_sooo_1", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_2.TrollSabotageQuest.Questline, 3)
 			player:addItem(646, 1)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Great! Finally, some light at the end of the tunnel! Come back and ask me for the quest when you solved this mystery!", npc, creature)
+			npcHandler:sayLocalized("npc.jerom.great_finally_some_2", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_2.TrollSabotageQuest.Questline, 1)
 		end
 	end

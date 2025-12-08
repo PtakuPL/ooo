@@ -205,127 +205,127 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 and player:removeItem(8758, 1) then
-			npcHandler:say("What's that? Bug milk? Hm, perhaps I can find some customers for that! ", npc, creature)
+			npcHandler:sayLocalized("npc.karith.whats_that_bug_1", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.AbDendriel, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) + 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 and player:removeItem(8760, 1) then
-			npcHandler:say("Sand wasp honey? Hm, interesting at least!", npc, creature)
+			npcHandler:sayLocalized("npc.karith.sand_wasp_honey_2", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Darashia, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) + 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 and player:removeItem(8759, 1) then
-			npcHandler:say("Some special spice might be of value indeed.", npc, creature)
+			npcHandler:sayLocalized("npc.karith.some_special_spice_3", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Venore, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) + 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 and player:removeItem(8761, 1) then
-			npcHandler:say("I can hardly imagine that someone is interested in embalming fluid, but I'll give it a try.", npc, creature)
+			npcHandler:sayLocalized("npc.karith.i_can_hardly_4", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Ankrahmun, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) + 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 and player:removeItem(3044, 1) then
-			npcHandler:say("Of course! Ivory! Its value is quite obvious.", npc, creature)
+			npcHandler:sayLocalized("npc.karith.of_course_ivory_5", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.PortHope, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) + 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 6 and player:removeItem(8762, 1) then
-			npcHandler:say("This royal satin is indeed of acceptable quality.", npc, creature)
+			npcHandler:sayLocalized("npc.karith.this_royal_satin_6", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Thais, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) + 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 7 and player:removeItem(5552, 1, 13) then
-			npcHandler:say("I doubt that the esteemed Yalahari will indulge into something profane as rum. But who knows, I'll give it a try.", npc, creature)
+			npcHandler:sayLocalized("npc.karith.i_doubt_that_7", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.LibertyBay, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) + 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 8 and player:removeItem(8763, 1) then
-			npcHandler:say("I doubt that these flowers will stay fresh and healthy forever. But if they do, they could be indeed valuable.", npc, creature)
+			npcHandler:sayLocalized("npc.karith.i_doubt_that_8", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Carlin, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) + 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 11 then
 			if player:removeMoneyBank(160) then
-				npcHandler:say("Set the sails!", npc, creature)
+				npcHandler:sayLocalized("npc.karith.set_the_sails_9", npc, creature)
 				doTeleportThing(creature, Position(32734, 31668, 6))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				npcHandler:sayLocalized("npc.karith.you_dont_have_10", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 12 then
 			if player:removeMoneyBank(210) then
-				npcHandler:say("Set the sails!", npc, creature)
+				npcHandler:sayLocalized("npc.karith.set_the_sails_11", npc, creature)
 				doTeleportThing(creature, Position(33289, 32480, 6))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				npcHandler:sayLocalized("npc.karith.you_dont_have_12", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 13 then
 			if player:removeMoneyBank(185) then
-				npcHandler:say("Set the sails!", npc, creature)
+				npcHandler:sayLocalized("npc.karith.set_the_sails_13", npc, creature)
 				doTeleportThing(creature, Position(32954, 32022, 6))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				npcHandler:sayLocalized("npc.karith.you_dont_have_14", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 14 then
 			if player:removeMoneyBank(230) then
-				npcHandler:say("Set the sails!", npc, creature)
+				npcHandler:sayLocalized("npc.karith.set_the_sails_15", npc, creature)
 				doTeleportThing(creature, Position(33092, 32883, 6))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				npcHandler:sayLocalized("npc.karith.you_dont_have_16", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 15 then
 			if player:removeMoneyBank(260) then
-				npcHandler:say("Set the sails!", npc, creature)
+				npcHandler:sayLocalized("npc.karith.set_the_sails_17", npc, creature)
 				doTeleportThing(creature, Position(32527, 32784, 6))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				npcHandler:sayLocalized("npc.karith.you_dont_have_18", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 16 then
 			if player:removeMoneyBank(200) then
-				npcHandler:say("Set the sails!", npc, creature)
+				npcHandler:sayLocalized("npc.karith.set_the_sails_19", npc, creature)
 				doTeleportThing(creature, Position(32310, 32210, 6))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				npcHandler:sayLocalized("npc.karith.you_dont_have_20", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 17 then
 			if player:removeMoneyBank(275) then
-				npcHandler:say("Set the sails!", npc, creature)
+				npcHandler:sayLocalized("npc.karith.set_the_sails_21", npc, creature)
 				doTeleportThing(creature, Position(32285, 32892, 6))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				npcHandler:sayLocalized("npc.karith.you_dont_have_22", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 18 then
 			if player:removeMoneyBank(185) then
-				npcHandler:say("Set the sails!", npc, creature)
+				npcHandler:sayLocalized("npc.karith.set_the_sails_23", npc, creature)
 				doTeleportThing(creature, Position(32387, 31820, 6))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				npcHandler:sayLocalized("npc.karith.you_dont_have_24", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		else
-			npcHandler:say("Don't waste my time.", npc, creature)
+			npcHandler:sayLocalized("npc.karith.dont_waste_my_25", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then

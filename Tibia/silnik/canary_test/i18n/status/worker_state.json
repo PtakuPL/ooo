@@ -1,13 +1,13 @@
 {
   "schema_version": "2.0",
-  "last_updated": "2025-12-08T20:41:51+01:00",
+  "last_updated": "2025-12-08T21:05:12+01:00",
   "worker": {
     "version": "4.0",
     "status": "running",
-    "mode": "migration",
-    "cycle": 15,
+    "mode": "extraction",
+    "cycle": 3,
     "files_per_cycle": 10,
-    "pid": 3771730
+    "pid": 25423
   },
   "global_progress": {
     "total_files_processed": 931,
@@ -27,27 +27,27 @@
   "recent_files": [
   {
     "file": "index.php",
-    "time": "20:41:51",
+    "time": "21:05:12",
     "status": "success"
   },
   {
     "file": "canary.lua",
-    "time": "20:41:51",
+    "time": "21:05:12",
     "status": "success"
   },
   {
     "file": "Outfit.php",
-    "time": "20:41:51",
+    "time": "21:05:12",
     "status": "success"
   },
   {
     "file": "Items.php",
-    "time": "20:41:51",
+    "time": "21:05:12",
     "status": "success"
   },
   {
     "file": "index.html",
-    "time": "20:41:51",
+    "time": "21:05:12",
     "status": "success"
   }
 ]

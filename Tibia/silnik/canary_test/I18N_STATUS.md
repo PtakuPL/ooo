@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-08 19:58:00 UTC  
+> **Aktualizacja:** 2025-12-08 19:59:42 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **928** | ↑ |
-| ⏭️ Plików wykluczonych | **3776** | - |
+| 📁 Plików przetworzonych | **931** | ↑ |
+| ⏭️ Plików wykluczonych | **4632** | - |
 | 🔑 Kluczy i18n | **41734** | ↑ |
 | 🌍 Języków | **53** | ✓ |
-| ⚠️ Konfliktów | **58** | ✓ |
-| 🔄 Cykl | **#14** | - |
+| ⚠️ Konfliktów | **0** | ✓ |
+| 🔄 Cykl | **#2** | - |
 
 ---
 
@@ -61,7 +61,7 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #14 |
+| 🔄 Cykl | #2 |
 
 ### 📁 Podkatalogi - Postęp
 
@@ -79,16 +79,16 @@ selfSay("text")
 
 | Plik | Czas | Status |
 |------|------|--------|
-| `openid.php` | 22:15:08 | ✅ |
-| `signon.php` | 22:15:08 | ✅ |
-| `translation_manager.php` | 21:33:39 | ✅ |
 | `index.php` | 06:26:18 | ✅ |
 | `canary.lua` | 19:57:22 | ✅ |
+| `Outfit.php` | 04:22:14 | ✅ |
+| `Items.php` | 04:22:14 | ✅ |
+| `index.html` | 04:22:15 | ✅ |
 
 ### 💻 Przykład kodu (ostatni plik)
 
 ```lua
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.",
+
 ```
 
 **Wzorce ekstrakcji:**
@@ -155,7 +155,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 2612485, Cykl #14 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 2710292, Cykl #2 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

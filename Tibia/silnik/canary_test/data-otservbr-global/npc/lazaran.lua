@@ -62,7 +62,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if npcHandler:getTopic(playerId) == 0 and player:getStorageValue(TheNewFrontier.Questline) == 8 then
-			npcHandler:say("Me people wanting {peace}. No war with others. No war with {little men}. We few. We weak. Need {help}. We not wanting make {war}. No hurt.", npc, creature)
+			npcHandler:sayLocalized("npc.lazaran.me_people_wanting_1", npc, creature)
 			npcHandler:setTopic(playerId, 10)
 		elseif npcHandler:getTopic(playerId) == 12 then
 			if player:getStorageValue(TheNewFrontier.Mission03) == 3 and player:getStorageValue(UnnaturalSelection.Questline) < 0 then
@@ -73,7 +73,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 1)
 			end
 		elseif player:getStorageValue(UnnaturalSelection.Questline) == 1 then
-			npcHandler:say("Oh! You found holy skull? In bone pile you found?! Thank Pandor you brought! Me can have it back?", npc, creature)
+			npcHandler:sayLocalized("npc.lazaran.oh_you_found_2", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(UnnaturalSelection.Questline) == 2 then
 			npcHandler:say({
@@ -83,10 +83,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(UnnaturalSelection.Questline) == 3 then
-			npcHandler:say("You say you was to where sun is hot and burning? And where trees grow as high as mountain? And where Fasuon cries white tears? Me can't wait to see!! Can have holy skull back?", npc, creature)
+			npcHandler:sayLocalized("npc.lazaran.you_say_you_3", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		elseif player:getStorageValue(UnnaturalSelection.Questline) == 4 then
-			npcHandler:say("We been weak for too long! We prepare for great hunt. But still need many doings! You can help us?", npc, creature)
+			npcHandler:sayLocalized("npc.lazaran.we_been_weak_4", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		elseif player:getStorageValue(UnnaturalSelection.Questline) == 13 then
 			npcHandler:say({
@@ -98,76 +98,76 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(UnnaturalSelection.Mission06, 2) -- Questlog, Unnatural Selection Quest "Mission 6: Firewater Burn"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(UnnaturalSelection.Questline) == 14 then
-			npcHandler:say("You bring us big pot of strange water from little men?", npc, creature)
+			npcHandler:sayLocalized("npc.lazaran.you_bring_us_5", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		end
 	elseif MsgContains(message, "peace") then
 		if npcHandler:getTopic(playerId) == 10 and player:getStorageValue(TheNewFrontier.Questline) == 8 then
-			npcHandler:say("Me people wanting peace. No war with others. No war with little men.", npc, creature)
+			npcHandler:sayLocalized("npc.lazaran.me_people_wanting_6", npc, creature)
 			player:setStorageValue(TheNewFrontier.Questline, 9)
 			player:setStorageValue(TheNewFrontier.Mission03, 2) -- Questlog, The New Frontier Quest "Mission 03: Strangers in the Night"
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "help") then
-		npcHandler:say("You mean you want help us?", npc, creature)
+		npcHandler:sayLocalized("npc.lazaran.you_mean_you_7", npc, creature)
 		npcHandler:setTopic(playerId, 11)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("You hero of our tribe if bring back holy skull!", npc, creature)
+			npcHandler:sayLocalized("npc.lazaran.you_hero_of_8", npc, creature)
 			player:setStorageValue(UnnaturalSelection.Questline, 1)
 			player:setStorageValue(UnnaturalSelection.Mission01, 1) -- Questlog, Unnatural Selection Quest "Mission 1: Skulled"
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if player:removeItem(10159, 1) then
-				npcHandler:say("Me thank you much! All wisdom safe again now.", npc, creature)
+				npcHandler:sayLocalized("npc.lazaran.me_thank_you_9", npc, creature)
 				player:setStorageValue(UnnaturalSelection.Questline, 2)
 				player:setStorageValue(UnnaturalSelection.Mission01, 3) -- Questlog, Unnatural Selection Quest "Mission 1: Skulled"
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You do not have it!", npc, creature)
+				npcHandler:sayLocalized("npc.lazaran.you_do_not_10", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Here take holy skull. You bring where you think is good. See as much as possible! See where other people live!", npc, creature)
+			npcHandler:sayLocalized("npc.lazaran.here_take_holy_11", npc, creature)
 			player:addItem(10159, 1)
 			player:setStorageValue(UnnaturalSelection.Questline, 3)
 			player:setStorageValue(UnnaturalSelection.Mission02, 1) -- Questlog, Unnatural Selection Quest "Mission 2: All Around the World"
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:getStorageValue(UnnaturalSelection.Mission02) == 12 and player:getItemCount(10159) >= 1 then
-				npcHandler:say("We make big ritual soon and learn much about world outside. Me thank you many times for teaching us world. Very wise and adventurous you are!", npc, creature)
+				npcHandler:sayLocalized("npc.lazaran.we_make_big_12", npc, creature)
 				player:removeItem(10159, 1)
 				player:setStorageValue(UnnaturalSelection.Questline, 4)
 				player:setStorageValue(UnnaturalSelection.Mission02, 13) -- Questlog, Unnatural Selection Quest "Mission 2: All Around the World"
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("The skull have not seen all yet!", npc, creature)
+				npcHandler:sayLocalized("npc.lazaran.the_skull_have_13", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 5 then
-			npcHandler:say("We need to calm and make happy gods. Best go to Ulala. She is priest of us and can tell what needs doing.", npc, creature)
+			npcHandler:sayLocalized("npc.lazaran.we_need_to_14", npc, creature)
 			player:setStorageValue(UnnaturalSelection.Questline, 5)
 			player:setStorageValue(UnnaturalSelection.Mission03, 1) -- Questlog, Unnatural Selection Quest "Mission 3: Dance Dance Evolution"
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 6 then
 			if player:removeItem(3465, 1, 3) then
-				npcHandler:say("We make big ritual soon and learn much about world outside. Me thank you many times for teaching us world. Very wise and adventurous you are!", npc, creature)
+				npcHandler:sayLocalized("npc.lazaran.we_make_big_15", npc, creature)
 				player:addItem(10198, 1)
 				player:setStorageValue(UnnaturalSelection.Questline, 15)
 				player:setStorageValue(UnnaturalSelection.Mission06, 3) -- Questlog, Unnatural Selection Quest "Mission 6: Firewater Burn"
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You do not have the brown strange water!", npc, creature)
+				npcHandler:sayLocalized("npc.lazaran.you_do_not_16", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 11 then
-			npcHandler:say("Me have many small task, but also big {mission}. You say what want.", npc, creature)
+			npcHandler:sayLocalized("npc.lazaran.me_have_many_17", npc, creature)
 			npcHandler:setTopic(playerId, 12)
 		end
 	elseif MsgContains(message, "war") then
-		npcHandler:say("Many mighty monster rule land. We fight. We lose. We flee to mountain to hide.", npc, creature)
+		npcHandler:sayLocalized("npc.lazaran.many_mighty_monster_18", npc, creature)
 	elseif MsgContains(message, "little men") then
-		npcHandler:say("We come and see little men. They like us, only very little. They having good weapon and armor, like the greens.", npc, creature)
+		npcHandler:sayLocalized("npc.lazaran.we_come_and_19", npc, creature)
 	end
 
 	return true

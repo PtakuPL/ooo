@@ -56,14 +56,14 @@ local function creatureSayCallback(npc, creature, type, message)
 	local playerId = player:getId()
 	if message == "cookie" then
 		if player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission02) == 1 and player:getItemCount(8199) > 0 and player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Lisander) < 0 then
-			npcHandler:say("A cookie? Sure, is it for free?", npc, creature)
+			npcHandler:sayLocalized("npc.lisander.a_cookie_sure_1", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:say("Whatever you have there, I think I don't want it.", npc, creature)
+			npcHandler:sayLocalized("npc.lisander.whatever_you_have_2", npc, creature)
 		end
 	elseif message == "yes" then
 		if npcHandler:getTopic(playerId) == 1 and player:removeItem(8199, 1) then -- garlic cookie
-			npcHandler:say("Errrkss - coughcough - what the - heck did you put in there? Get out of my sight!", npc, creature)
+			npcHandler:sayLocalized("npc.lisander.errrkss_coughcough_what_3", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Lisander, 1)
 			npcHandler:setTopic(playerId, 0)
 		end

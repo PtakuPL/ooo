@@ -60,7 +60,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheAstralPortals) == 56 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 56 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheIslandofDragons) == 57 then --will need review in the future
-			npcHandler:say("Ah, you've just come in time. An experienced explorer is just what we need here! Would you like to go on a mission for us?", npc, creature)
+			npcHandler:sayLocalized("npc.lurik.ah_youve_just_1", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheIslandofDragons) == 58 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 58 then
 			if player:removeItem(7314, 1) then
@@ -72,7 +72,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheIslandofDragons, 59)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 59)
 			else
-				npcHandler:say("You're not done yet...", npc, creature)
+				npcHandler:sayLocalized("npc.lurik.youre_not_done_2", npc, creature)
 			end
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheIslandofDragons) == 59 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 59 then
 			npcHandler:say({
@@ -103,10 +103,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 33 then
-			npcHandler:say("Have you retrieved the memory crystal?", npc, creature)
+			npcHandler:sayLocalized("npc.lurik.have_you_retrieved_3", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 34 and player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.MemoryCrystal) > os.time() then
-			npcHandler:say("Give me some more time!", npc, creature)
+			npcHandler:sayLocalized("npc.lurik.give_me_some_4", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 34 and player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.MemoryCrystal) < os.time() then
 			npcHandler:say({
@@ -133,13 +133,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 57)
 			-- ISLAND OF DRAGONS
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Excellent. Just report about your mission when you got the memory crystal.", npc, creature)
+			npcHandler:sayLocalized("npc.lurik.excellent_just_report_5", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 33)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission08, 2) -- Questlog The Ice Islands Quest, The Contact
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:removeItem(7281, 1) then
-				npcHandler:say("Ah, great. Please give me some time to evaluate the information. Then talk to me again about your mission. ", npc, creature)
+				npcHandler:sayLocalized("npc.lurik.ah_great_please_6", npc, creature)
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 34)
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission08, 4) -- Questlog The Ice Islands Quest, The Contact
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.MemoryCrystal, os.time() + 5 * 60)

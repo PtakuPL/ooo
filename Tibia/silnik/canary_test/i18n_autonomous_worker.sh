@@ -76,6 +76,8 @@ MODE="migration"  # migration, translation, analysis, validation
 #===============================================================================
 # LOGGING
 #===============================================================================
+ACTIVITY_FILE="$I18N_DIR/status/activity.json"
+
 log() {
     local level="$1"
     local msg="$2"
@@ -87,6 +89,75 @@ log_info() { log "INFO" "$1"; }
 log_success() { log "SUCCESS" "$1"; }
 log_warn() { log "WARN" "$1"; }
 log_error() { log "ERROR" "$1"; }
+
+# Aktualizuj status aktywności (do wyświetlenia na GitHub)
+update_activity() {
+    local op_type="$1"
+    local file="$2"
+    local action="$3"
+    local status="$4"
+    local details="$5"
+    
+    local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+    local phase=$(get_current_phase 2>/dev/null || echo "1")
+    local category=$(get_current_category 2>/dev/null || echo "unknown")
+    
+    # Aktualizuj activity.json
+    [ -f "$ACTIVITY_FILE" ] && {
+        local tmp=$(mktemp)
+        jq --arg ts "$timestamp" --arg type "$op_type" --arg file "$file" \
+           --arg action "$action" --arg status "$status" --arg details "$details" \
+           --argjson phase "$phase" --arg cat "$category" '
+            .last_updated = $ts |
+            .current_operation = {
+                type: $type,
+                phase: $phase,
+                category: $cat,
+                file: $file,
+                action: $action,
+                status: $status,
+                details: $details
+            } |
+            .recent_operations = ([{
+                time: $ts,
+                type: $type,
+                file: $file,
+                action: $action,
+                status: $status
+            }] + .recent_operations[:19])
+        ' "$ACTIVITY_FILE" > "$tmp" 2>/dev/null && mv "$tmp" "$ACTIVITY_FILE"
+    }
+}
+
+# Zapisz błąd
+log_activity_error() {
+    local file="$1"
+    local error="$2"
+    
+    [ -f "$ACTIVITY_FILE" ] && {
+        local tmp=$(mktemp)
+        local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+        jq --arg ts "$timestamp" --arg file "$file" --arg err "$error" '
+            .errors = ([{time: $ts, file: $file, error: $err}] + .errors[:9]) |
+            .stats.errors_this_session += 1
+        ' "$ACTIVITY_FILE" > "$tmp" 2>/dev/null && mv "$tmp" "$ACTIVITY_FILE"
+    }
+    
+    log_error "❌ $file: $error"
+}
+
+# Zapisz naprawę błędu
+log_activity_fix() {
+    local file="$1"
+    local fix="$2"
+    
+    [ -f "$ACTIVITY_FILE" ] && {
+        local tmp=$(mktemp)
+        jq '.stats.fixes_applied += 1' "$ACTIVITY_FILE" > "$tmp" 2>/dev/null && mv "$tmp" "$ACTIVITY_FILE"
+    }
+    
+    log_success "🔧 Naprawiono: $file - $fix"
+}
 
 #===============================================================================
 # DOKUMENTACJA
@@ -226,6 +297,71 @@ get_current_directories() {
     local phase=$(get_current_phase)
     local category=$(get_current_category)
     jq -r ".phases[] | select(.id == $phase) | .categories[] | select(.id == \"$category\") | .directories[]" "$WORK_PLAN" 2>/dev/null
+}
+
+# Generuj sekcję aktywności w czasie rzeczywistym
+generate_activity_section() {
+    local output=""
+    
+    if [ -f "$ACTIVITY_FILE" ]; then
+        local current_op=$(jq -r '.current_operation.action // "Oczekiwanie"' "$ACTIVITY_FILE" 2>/dev/null)
+        local current_file=$(jq -r '.current_operation.file // "-"' "$ACTIVITY_FILE" 2>/dev/null)
+        local current_status=$(jq -r '.current_operation.status // "idle"' "$ACTIVITY_FILE" 2>/dev/null)
+        local current_details=$(jq -r '.current_operation.details // ""' "$ACTIVITY_FILE" 2>/dev/null)
+        local last_update=$(jq -r '.last_updated // "-"' "$ACTIVITY_FILE" 2>/dev/null)
+        
+        local status_emoji="⏳"
+        case "$current_status" in
+            "in_progress") status_emoji="🔄" ;;
+            "completed") status_emoji="✅" ;;
+            "error") status_emoji="❌" ;;
+            "waiting"|"idle") status_emoji="💤" ;;
+        esac
+        
+        output+="| Parametr | Wartość |\n"
+        output+="|----------|----------|\n"
+        output+="| **Status** | $status_emoji $current_status |\n"
+        output+="| **Operacja** | $current_op |\n"
+        output+="| **Plik** | \`$current_file\` |\n"
+        output+="| **Szczegóły** | $current_details |\n"
+        output+="| **Ostatnia aktualizacja** | $last_update |\n\n"
+        
+        # Statystyki sesji
+        local files_session=$(jq -r '.stats.files_this_session // 0' "$ACTIVITY_FILE" 2>/dev/null)
+        local keys_session=$(jq -r '.stats.keys_this_session // 0' "$ACTIVITY_FILE" 2>/dev/null)
+        local errors_session=$(jq -r '.stats.errors_this_session // 0' "$ACTIVITY_FILE" 2>/dev/null)
+        local fixes_session=$(jq -r '.stats.fixes_applied // 0' "$ACTIVITY_FILE" 2>/dev/null)
+        
+        output+="### 📈 Statystyki sesji\n\n"
+        output+="| Metryka | Wartość |\n"
+        output+="|---------|----------|\n"
+        output+="| Plików przetworzonych | $files_session |\n"
+        output+="| Kluczy wyciągniętych | $keys_session |\n"
+        output+="| Błędów | $errors_session |\n"
+        output+="| Napraw zastosowanych | $fixes_session |\n\n"
+        
+        # Ostatnie operacje
+        local recent=$(jq -r '.recent_operations[:5][] | "| \(.time) | \(.type) | \`\(.file)\` | \(.status) |"' "$ACTIVITY_FILE" 2>/dev/null)
+        if [ -n "$recent" ]; then
+            output+="### 📋 Ostatnie operacje\n\n"
+            output+="| Czas | Typ | Plik | Status |\n"
+            output+="|------|-----|------|--------|\n"
+            output+="$recent\n\n"
+        fi
+        
+        # Błędy (jeśli są)
+        local errors=$(jq -r '.errors[:3][] | "| \(.time) | \`\(.file)\` | \(.error) |"' "$ACTIVITY_FILE" 2>/dev/null)
+        if [ -n "$errors" ]; then
+            output+="### ⚠️ Ostatnie błędy\n\n"
+            output+="| Czas | Plik | Błąd |\n"
+            output+="|------|------|------|\n"
+            output+="$errors\n"
+        fi
+    else
+        output+="*Brak danych o aktywności*\n"
+    fi
+    
+    echo -e "$output"
 }
 
 # Generuj checklist do statusu
@@ -656,6 +792,130 @@ validate_structure() {
 }
 
 #===============================================================================
+# BEZPIECZNE PRZETWARZANIE HTML/PHP (z walidacją)
+#===============================================================================
+# TRYB: tylko ekstrakcja kluczy, NIE modyfikuj plików źródłowych!
+safe_extract_php_strings() {
+    local file="$1"
+    local category="web_php"
+    local extracted=0
+    
+    update_activity "extract" "$file" "Analiza PHP" "in_progress" "Szukam stringów..."
+    
+    # Sprawdź czy plik jest poprawny PHP
+    if ! php -l "$file" &>/dev/null; then
+        log_activity_error "$file" "Błąd składni PHP - pomijam"
+        return 1
+    fi
+    
+    # Wyciągnij stringi BEZ modyfikacji pliku
+    # Szukaj: echo "...", print "...", __("..."), trans("...")
+    local strings=$(grep -oP '(?<=echo\s")[^"]{3,50}(?=")|(?<=print\s")[^"]{3,50}(?=")|(?<=__\(")[^"]{3,50}(?=")|(?<=trans\(")[^"]{3,50}(?=")' "$file" 2>/dev/null | sort -u)
+    
+    # Szukaj także: 'message' => '...'
+    local msg_strings=$(grep -oP "(?<='message'\s*=>\s*')[^']{3,100}(?=')" "$file" 2>/dev/null | sort -u)
+    
+    # Dodaj klucze do JSON (bez modyfikacji PHP!)
+    for str in $strings $msg_strings; do
+        [ -z "$str" ] && continue
+        [ ${#str} -lt 4 ] && continue
+        
+        # Generuj bezpieczny klucz
+        local key=$(echo "$str" | tr ' ' '_' | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9_]//g' | head -c 40)
+        [ -z "$key" ] && continue
+        
+        # Dodaj do JSON
+        add_key_to_json "ui" "$key" "$str"
+        extracted=$((extracted + 1))
+        
+        log_info "   📝 Wyciągnięto: '$key' = '$str'"
+    done
+    
+    update_activity "extract" "$file" "Ekstrakcja PHP" "completed" "Wyciągnięto $extracted kluczy"
+    
+    return 0
+}
+
+safe_extract_html_strings() {
+    local file="$1"
+    local extracted=0
+    
+    update_activity "extract" "$file" "Analiza HTML" "in_progress" "Szukam tekstów..."
+    
+    # Sprawdź czy plik istnieje i nie jest pusty
+    [ ! -s "$file" ] && return 1
+    
+    # Wyciągnij teksty z HTML (bez modyfikacji!)
+    # Szukaj: <title>...</title>, <h1>...</h1>, <p>...</p>, <button>...</button>, <label>...</label>
+    local texts=$(grep -oP '(?<=<title>)[^<]{3,50}(?=</title>)|(?<=<h[1-6]>)[^<]{3,50}(?=</h[1-6]>)|(?<=<button[^>]*>)[^<]{3,30}(?=</button>)|(?<=<label[^>]*>)[^<]{3,50}(?=</label>)' "$file" 2>/dev/null | sort -u)
+    
+    # Szukaj także: placeholder="...", title="...", alt="..."
+    local attr_texts=$(grep -oP '(?<=placeholder=")[^"]{3,50}(?=")|(?<=title=")[^"]{3,50}(?=")|(?<=alt=")[^"]{3,50}(?=")' "$file" 2>/dev/null | sort -u)
+    
+    for str in $texts $attr_texts; do
+        [ -z "$str" ] && continue
+        [ ${#str} -lt 4 ] && continue
+        
+        # Pomiń jeśli to kod/zmienna
+        [[ "$str" == *"{"* ]] && continue
+        [[ "$str" == *"$"* ]] && continue
+        [[ "$str" == *"<"* ]] && continue
+        
+        local key=$(echo "$str" | tr ' ' '_' | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9_]//g' | head -c 40)
+        [ -z "$key" ] && continue
+        
+        add_key_to_json "ui" "$key" "$str"
+        extracted=$((extracted + 1))
+        
+        log_info "   📄 HTML: '$key' = '$str'"
+    done
+    
+    update_activity "extract" "$file" "Ekstrakcja HTML" "completed" "Wyciągnięto $extracted tekstów"
+    
+    return 0
+}
+
+# Waliduj JSON po każdej modyfikacji
+validate_json_file() {
+    local file="$1"
+    
+    if ! jq empty "$file" 2>/dev/null; then
+        log_activity_error "$file" "Nieprawidłowy JSON!"
+        
+        # Próba naprawy - przywróć backup
+        if [ -f "${file}.bak" ]; then
+            cp "${file}.bak" "$file"
+            log_activity_fix "$file" "Przywrócono z backup"
+            return 0
+        else
+            # Utwórz pusty JSON
+            echo '{}' > "$file"
+            log_activity_fix "$file" "Utworzono pusty JSON"
+            return 0
+        fi
+    fi
+    
+    return 0
+}
+
+# Bezpieczne dodawanie klucza z backupem
+safe_add_key_to_json() {
+    local category="$1"
+    local key="$2"
+    local value="$3"
+    local json_file="$I18N_DIR/en/${category}.json"
+    
+    # Backup przed modyfikacją
+    [ -f "$json_file" ] && cp "$json_file" "${json_file}.bak"
+    
+    # Dodaj klucz
+    add_key_to_json "$category" "$key" "$value"
+    
+    # Waliduj wynik
+    validate_json_file "$json_file"
+}
+
+#===============================================================================
 # PRZETWARZANIE PENDING KATEGORII (monsters, server, spells)
 #===============================================================================
 process_pending_categories() {
@@ -667,6 +927,7 @@ process_pending_categories() {
     local monsters_count=$(grep -c '"' "$WORK_DIR/i18n/en/monsters.json" 2>/dev/null || echo "0")
     if [ "$monsters_count" -lt 10 ]; then
         log_info "👹 Przetwarzam MONSTERS..."
+        update_activity "extract" "monsters" "Ekstrakcja" "in_progress" "Przetwarzam pliki..."
         local monster_files=$(find "$WORK_DIR/data-otservbr-global/monster" "$WORK_DIR/data-canary/monster" -name "*.lua" 2>/dev/null | head -50)
         local count=0
         for file in $monster_files; do
@@ -774,16 +1035,44 @@ process_files() {
             is_processed "$file" && continue
             
             local file_type=$(get_file_type "$file")
+            local basename=$(basename "$file")
+            
+            # Aktualizuj aktywność - pokazuj co robię
+            update_activity "process" "$basename" "Przetwarzanie $file_type" "in_progress" "Katalog: $dir"
+            log_info "🔍 Przetwarzam: $basename ($file_type)"
             
             case "$file_type" in
                 lua)
-                    migrate_lua_file "$file" && processed=$((processed + 1))
+                    if migrate_lua_file "$file"; then
+                        processed=$((processed + 1))
+                        update_activity "process" "$basename" "Lua migration" "completed" "OK"
+                        
+                        # Aktualizuj statystyki
+                        [ -f "$ACTIVITY_FILE" ] && {
+                            local tmp=$(mktemp)
+                            jq '.stats.files_this_session += 1' "$ACTIVITY_FILE" > "$tmp" 2>/dev/null && mv "$tmp" "$ACTIVITY_FILE"
+                        }
+                    fi
                     ;;
                 cpp)
-                    migrate_cpp_file "$file" && processed=$((processed + 1))
+                    if migrate_cpp_file "$file"; then
+                        processed=$((processed + 1))
+                        update_activity "process" "$basename" "C++ extraction" "completed" "OK"
+                    fi
                     ;;
-                php|html)
-                    migrate_web_file "$file" && processed=$((processed + 1))
+                php)
+                    # Bezpieczna ekstrakcja PHP (bez modyfikacji!)
+                    if safe_extract_php_strings "$file"; then
+                        processed=$((processed + 1))
+                        mark_processed "$file"
+                    fi
+                    ;;
+                html)
+                    # Bezpieczna ekstrakcja HTML (bez modyfikacji!)
+                    if safe_extract_html_strings "$file"; then
+                        processed=$((processed + 1))
+                        mark_processed "$file"
+                    fi
                     ;;
                 *)
                     mark_excluded "$file"
@@ -794,6 +1083,7 @@ process_files() {
     done
     
     log_info "📊 Przetworzono w tym cyklu: $processed plików"
+    update_activity "cycle_end" "Cykl $CYCLE_COUNT" "Zakończono przetwarzanie" "completed" "$processed plików"
 }
 
 #===============================================================================
@@ -924,6 +1214,12 @@ update_status() {
 > **Aktualna kategoria:** $(get_current_category)
 
 $(generate_checklist)
+
+---
+
+## 🔴 LIVE: Aktualna Aktywność
+
+$(generate_activity_section)
 
 ---
 
@@ -1213,6 +1509,9 @@ main() {
         update_category_progress "monsters" "$monsters_keys" "100"
         update_category_progress "spells" "$spells_keys" "100"
         update_category_progress "server_cpp" "$server_keys" "50"
+        
+        # Aktualizuj status aktywności
+        update_activity "cycle" "Cykl #$CYCLE_COUNT" "$phase_name - $current_category" "in_progress" "NPC:$npc_keys Scripts:$scripts_keys Items:$items_keys"
         
         update_status
         

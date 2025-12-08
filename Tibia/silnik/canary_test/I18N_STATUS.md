@@ -1,30 +1,33 @@
-# 🌍 I18N Worker Status
+# 🌍 I18N Migration Status
 
-## 📊 Aktualny postęp
+**Ostatnia aktualizacja:** 2025-12-08 17:57:56
 
-![NPC Migration](https://img.shields.io/badge/NPC_Migration-21.9%25-red?style=for-the-badge)
-![Keys](https://img.shields.io/badge/Keys-41712-blue?style=for-the-badge)
-![Errors](https://img.shields.io/badge/Errors-0-green?style=for-the-badge)
+## 📊 Postęp
 
 | Metryka | Wartość |
 |---------|---------|
-| **NPC Zmigrowanych** | 225 / 1027 |
-| **Postęp** | 21.9% |
-| **Klucze i18n** | 41712 |
-| **Języki** | 5 (en, pl, de, es, pt) |
+| ✅ Zmigrowane | 2 plików |
+| ⏭️ Wykluczone | 3 plików |
+| ⏳ Oczekujące | 2822 plików |
+| 📁 Łącznie | 2827 plików |
+| 📈 Postęp | **0%** |
 
-## 📈 Progress Bar
+## 🔄 Worker Status
 
-```
-[████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 21.9%
-```
+- **Cykl:** #2
+- **Pliki/cykl:** 5
+- **Stringów:** 0
 
-## 🔄 Ostatnia aktualizacja
+## 📂 Kategorie
 
-**Data:** 2025-12-08 11:20 UTC
+- **npc**: 4048 kluczy
+- **scripts**: 0 kluczy
+- **actions**: 0 kluczy
+- **quests**: 0 kluczy
+- **events**: 0 kluczy
+- **talkactions**: 0 kluczy
+- **movements**: 0 kluczy
+- **spells**: 0 kluczy
 
 ---
-
-*Status aktualizowany automatycznie co 5 minut*
-
-📱 **Sprawdź na telefonie:** [I18N_STATUS.md](https://github.com/PtakuPL/ooo/blob/master/I18N_STATUS.md)
+*Worker v3.0 - Pełna migracja Lua*

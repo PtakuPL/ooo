@@ -57,7 +57,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		local player = Player(creature)
 		if player:getStorageValue(Storage.Quest.U8_4.TheHiddenCityOfBeregar.RoyalRescue) == 6 and player:removeItem(9172, 1) then
 			player:setStorageValue(Storage.Quest.U8_4.TheHiddenCityOfBeregar.RoyalRescue, 7)
-			npcHandler:say("By the Gods! You have the key to the cell! Thank you sooo much, mate. And now leave. I'll wait here until the air is clean and then I'm out of here.", npc, creature)
+			npcHandler:sayLocalized("npc.rehon.by_the_gods_1", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

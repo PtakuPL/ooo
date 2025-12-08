@@ -60,15 +60,15 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "eleonore") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.APoemForTheMermaid) < 1 then
-			npcHandler:say("Eleonore ... Yes, I remember her... vaguely. She is a pretty girl ... but still only a girl and now I am in love with a beautiful and passionate woman. A true {mermaid} even.", npc, creature)
+			npcHandler:sayLocalized("npc.raymond_striker.eleonore_yes_i_1", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.APoemForTheMermaid) < 1 then
-			npcHandler:say("Don't ask about silly missions. All I can think about is this lovely {mermaid}.", npc, creature)
+			npcHandler:sayLocalized("npc.raymond_striker.dont_ask_about_2", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.APoemForTheMermaid) == 3 and player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) < 1 then
-			npcHandler:say("Ask around in the settlement where you can help out. If you have proven your worth I might have some missions for you.", npc, creature)
+			npcHandler:sayLocalized("npc.raymond_striker.ask_around_in_3", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 1)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 13 and player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission1) < 1 then
 			npcHandler:say({
@@ -78,7 +78,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission1, 1)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission1) == 2 then
-			npcHandler:say("I think that means 'mission accomplished'. Hehe. I guess that will put an end to their efforts to buy any alchemical substance from Edron.", npc, creature)
+			npcHandler:sayLocalized("npc.raymond_striker.i_think_that_4", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 15)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission1, 3)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission1) == 3 and player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission2) < 1 then
@@ -94,7 +94,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.AccessToNargor, 1)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission2, 1)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission2) == 2 and player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 16 then
-			npcHandler:say("You did it! Excellent!", npc, creature)
+			npcHandler:sayLocalized("npc.raymond_striker.you_did_it_5", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 18)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission2, 3)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission2) == 3 and player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission3) < 1 then
@@ -117,7 +117,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission3, 3)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission4, 1)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission4) == 2 then
-			npcHandler:say("My pillow?? They know me all too well... <sigh> I've owned it since my childhood. However. Here, take it and convincehim that I am dead.", npc, creature)
+			npcHandler:sayLocalized("npc.raymond_striker.my_pillow_they_6", npc, creature)
 			player:addItem(6105, 1)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission4, 3)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission4) == 4 then
@@ -133,17 +133,17 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "mermaid") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.APoemForTheMermaid) < 1 then
 			if npcHandler:getTopic(playerId) == 1 then
-				npcHandler:say("The mermaid is the most beautiful creature I have ever met. She is so wonderful. It was some kind of magic as we first met. A look in her eyes and I suddenly knew there would be never again another woman in my life but her.", npc, creature)
+				npcHandler:sayLocalized("npc.raymond_striker.the_mermaid_is_7", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.APoemForTheMermaid, 1)
 			end
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.APoemForTheMermaid) == 1 and player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) < 1 then
-			npcHandler:say("I am deeply ashamed that I lacked the willpower to resist her spell. Thank you for your help in that matter. Now my head is once more free to think about our {mission}.", npc, creature)
+			npcHandler:sayLocalized("npc.raymond_striker.i_am_deeply_8", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "pirate outfit") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.AccessToLagunaIsland) == 1 and player:getStorageValue(Storage.Quest.U7_8.PirateOutfits.PirateBaseOutfit) < 1 and player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission4) == 5 then
-			npcHandler:say("Ah, right! The pirate outfit! Here you go, now you are truly one of us.", npc, creature)
+			npcHandler:sayLocalized("npc.raymond_striker.ah_right_the_9", npc, creature)
 			player:addOutfit(151)
 			player:addOutfit(155)
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
@@ -178,13 +178,13 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:addExperience(10000, true)
 					player:addMoney(5000)
 				elseif player:getStorageValue(REPEATSTORAGE_BASE + #tasks.GrizzlyAdams + 1) > 3 then
-					npcHandler:say("Ahh, thank you, my friend! What would we do without you? Here, take this reward for your efforts. If you want to continue to help us killing pirates, just ask me about that {task}.", npc, creature)
+					npcHandler:sayLocalized("npc.raymond_striker.ahh_thank_you_10", npc, creature)
 					player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.PirateTask, 3)
 					player:addExperience(10000, true)
 					player:addMoney(5000)
 				end
 			else
-				npcHandler:say("Go kill more pirates.", npc, creature)
+				npcHandler:sayLocalized("npc.raymond_striker.go_kill_more_11", npc, creature)
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.PirateTask) == 2 then
 			npcHandler:say({
@@ -193,12 +193,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.PirateTask) == 3 then
-			npcHandler:say("Do you, by chance, would like to kill pirates again for us?", npc, creature)
+			npcHandler:sayLocalized("npc.raymond_striker.do_you_by_12", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Perfect. I know it sounds like a lot, but really, take your time. You won't do it for nothing, I promise.", npc, creature)
+			npcHandler:sayLocalized("npc.raymond_striker.perfect_i_know_13", npc, creature)
 			player:setStorageValue(JOIN_STOR, 1)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.PirateCount, 0)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.PirateMarauderCount, 0)

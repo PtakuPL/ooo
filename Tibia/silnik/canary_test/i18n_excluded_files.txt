@@ -237,7 +237,6 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/rafzan.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/loui.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/kaya.lua
-/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/alyxo.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/llathriel.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/heavenly_messenger.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/edvard.lua

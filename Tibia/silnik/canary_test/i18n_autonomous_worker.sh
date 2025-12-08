@@ -613,45 +613,72 @@ get_category() {
 }
 
 #===============================================================================
-# MIGRACJA LUA
+# MIGRACJA LUA - ZGODNA Z NASZYMI ZASADAMI
 #===============================================================================
+# Prawidłowy wzorzec migracji NPC:
+# 1. npcHandler:sayLocalized("klucz", npc, creature) - dla istniejących callback
+# 2. Klucz: "npc.nazwa_npc.say_N" lub "npc.nazwa_npc.greet" itp.
+# 3. JSON: dodaj klucz do i18n/en/npc.json
+#===============================================================================
+
 migrate_lua_file() {
     local file="$1"
     local file_name=$(basename "$file" .lua)
+    # Zamień spacje i myślniki na podkreślenia w nazwie pliku (dla klucza)
+    local safe_name=$(echo "$file_name" | tr ' ' '_' | tr '-' '_' | tr '[:upper:]' '[:lower:]')
     local category=$(get_category "$file")
     local relative_path="${file#$WORK_DIR/}"
     
     log_info "🔷 [LUA] $relative_path"
     
-    if grep -qE "Localized|i18n\.|getTranslation" "$file" 2>/dev/null; then
+    # Sprawdź czy już zmigrowany
+    if grep -qE "sayLocalized|npcI18n\.|getTranslation" "$file" 2>/dev/null; then
         log_info "   ⏭️ Już zmigrowany"
         mark_processed "$file"
         return 1
     fi
     
-    local patterns=(
+    # Wzorce do szukania w plikach NPC
+    local patterns_npc=(
+        'npcHandler:say\s*\(\s*"[^"]{5,}"'
+        'npcHandler:say\s*\(\s*\{\s*"[^"]{5,}"'
+        'npcHandler:say\s*\(\s*'"'"'[^'"'"']{5,}'"'"
+    )
+    
+    # Wzorce dla innych plików Lua (scripts, actions, etc.)
+    local patterns_other=(
         'player:sendTextMessage\s*\([^,]+,\s*"[^"]{10,}"'
-        'npcHandler:say\s*\(\s*"[^"]{10,}"'
-        'creature:say\s*\(\s*"[^"]{10,}"'
-        'doPlayerSendTextMessage'
-        'player:showTextDialog'
+        'creature:say\s*\(\s*"[^"]{5,}"'
     )
     
     local has_strings=false
-    for pattern in "${patterns[@]}"; do
-        if grep -qE "$pattern" "$file" 2>/dev/null; then
-            has_strings=true
-            break
-        fi
-    done
+    local is_npc_file=false
+    
+    # Sprawdź czy to plik NPC
+    if [[ "$file" == *"/npc/"* ]]; then
+        is_npc_file=true
+        for pattern in "${patterns_npc[@]}"; do
+            if grep -qE "$pattern" "$file" 2>/dev/null; then
+                has_strings=true
+                break
+            fi
+        done
+    else
+        for pattern in "${patterns_other[@]}"; do
+            if grep -qE "$pattern" "$file" 2>/dev/null; then
+                has_strings=true
+                break
+            fi
+        done
+    fi
     
     if [ "$has_strings" = false ]; then
-        log_info "   ⏭️ Brak stringów"
+        log_info "   ⏭️ Brak stringów do migracji"
         mark_excluded "$file"
         return 1
     fi
     
-    # Backup i migracja
+    # Backup
     cp "$file" "${file}.bak"
     
     local temp_file=$(mktemp)
@@ -659,36 +686,108 @@ migrate_lua_file() {
     local key_counter=1
     local json_file="$I18N_DIR/en/${category}.json"
     
+    # Upewnij się że plik JSON istnieje
+    [ ! -f "$json_file" ] && echo "{}" > "$json_file"
+    
     while IFS= read -r line || [ -n "$line" ]; do
         local new_line="$line"
         
-        # player:sendTextMessage
-        if echo "$line" | grep -qE 'player:sendTextMessage\s*\([^,]+,\s*"[^"]{10,}"'; then
-            local text=$(echo "$line" | sed -n 's/.*player:sendTextMessage\s*([^,]*,\s*"\([^"]*\)".*/\1/p')
-            if [ -n "$text" ] && [ ${#text} -gt 10 ]; then
-                local key="${category}.${file_name}.msg_${key_counter}"
-                key_counter=$((key_counter + 1))
-                new_line=$(echo "$line" | sed "s|player:sendTextMessage(\([^,]*\),\s*\"[^\"]*\"|player:sendLocalizedMessage(\1, \"${key}\"|")
-                
-                python3 -c "import json; d=json.load(open('$json_file')) if __import__('os').path.exists('$json_file') else {}; d['$key']='$text'; json.dump(d,open('$json_file','w'),indent=2,ensure_ascii=False)" 2>/dev/null
-                
-                transformed=$((transformed + 1))
-                log_info "      🔑 $key"
+        #=== MIGRACJA NPC: npcHandler:say ===
+        if [ "$is_npc_file" = true ]; then
+            
+            # WZORZEC 1: npcHandler:say("tekst", npc, creature)
+            if echo "$line" | grep -qE 'npcHandler:say\s*\(\s*"[^"]{5,}"[^)]*,\s*npc'; then
+                local text=$(echo "$line" | sed -n 's/.*npcHandler:say\s*(\s*"\([^"]*\)"[^)]*,.*/\1/p')
+                if [ -n "$text" ] && [ ${#text} -ge 5 ]; then
+                    local key="npc.${safe_name}.say_${key_counter}"
+                    key_counter=$((key_counter + 1))
+                    
+                    # Zamiana: npcHandler:say("tekst", npc, creature) → npcHandler:sayLocalized("klucz", npc, creature)
+                    new_line=$(echo "$line" | sed "s|npcHandler:say(\s*\"[^\"]*\",|npcHandler:sayLocalized(\"${key}\",|")
+                    
+                    # Dodaj klucz do JSON
+                    python3 -c "
+import json, os
+f='$json_file'
+d=json.load(open(f)) if os.path.exists(f) and os.path.getsize(f) > 2 else {}
+d['$key']='''$text'''
+json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
+" 2>/dev/null
+                    
+                    transformed=$((transformed + 1))
+                    log_info "      🔑 $key = '$text'"
+                fi
+            fi
+            
+            # WZORZEC 2: npcHandler:say({ "tekst" }, npc, creature) - z tablicą
+            if echo "$line" | grep -qE 'npcHandler:say\s*\(\s*\{\s*"[^"]{5,}"[^}]*\}\s*,\s*npc'; then
+                local text=$(echo "$line" | sed -n 's/.*npcHandler:say\s*(\s*{\s*"\([^"]*\)"[^}]*}.*/\1/p')
+                if [ -n "$text" ] && [ ${#text} -ge 5 ]; then
+                    local key="npc.${safe_name}.say_${key_counter}"
+                    key_counter=$((key_counter + 1))
+                    
+                    # Zamiana: npcHandler:say({ "tekst" }, npc, creature) → npcHandler:sayLocalized("klucz", npc, creature)
+                    new_line=$(echo "$line" | sed "s|npcHandler:say(\s*{\s*\"[^\"]*\"[^}]*},|npcHandler:sayLocalized(\"${key}\",|")
+                    
+                    python3 -c "
+import json, os
+f='$json_file'
+d=json.load(open(f)) if os.path.exists(f) and os.path.getsize(f) > 2 else {}
+d['$key']='''$text'''
+json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
+" 2>/dev/null
+                    
+                    transformed=$((transformed + 1))
+                    log_info "      🔑 $key = '$text'"
+                fi
+            fi
+            
+            # WZORZEC 3: npcHandler:say('tekst', npc, creature)  (single quotes)
+            if echo "$line" | grep -qE "npcHandler:say\s*\(\s*'[^']{5,}'"; then
+                local text=$(echo "$line" | sed -n "s/.*npcHandler:say\s*(\s*'\([^']*\)'.*/\1/p")
+                if [ -n "$text" ] && [ ${#text} -ge 5 ]; then
+                    local key="npc.${safe_name}.say_${key_counter}"
+                    key_counter=$((key_counter + 1))
+                    
+                    new_line=$(echo "$line" | sed "s|npcHandler:say(\s*'[^']*'|npcHandler:sayLocalized(\"${key}\", npc, creature|")
+                    
+                    python3 -c "
+import json, os
+f='$json_file'
+d=json.load(open(f)) if os.path.exists(f) and os.path.getsize(f) > 2 else {}
+d['$key']=\"\"\"$text\"\"\"
+json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
+" 2>/dev/null
+                    
+                    transformed=$((transformed + 1))
+                    log_info "      🔑 $key = '$text'"
+                fi
             fi
         fi
         
-        # npcHandler:say
-        if echo "$line" | grep -qE 'npcHandler:say\s*\(\s*"[^"]{10,}"'; then
-            local text=$(echo "$line" | sed -n 's/.*npcHandler:say\s*(\s*"\([^"]*\)".*/\1/p')
-            if [ -n "$text" ] && [ ${#text} -gt 10 ]; then
-                local key="${category}.${file_name}.say_${key_counter}"
-                key_counter=$((key_counter + 1))
-                new_line=$(echo "$line" | sed "s|npcHandler:say(\s*\"[^\"]*\"|npcHandler:sayLocalized(\"${key}\"|")
-                
-                python3 -c "import json; d=json.load(open('$json_file')) if __import__('os').path.exists('$json_file') else {}; d['$key']='$text'; json.dump(d,open('$json_file','w'),indent=2,ensure_ascii=False)" 2>/dev/null
-                
-                transformed=$((transformed + 1))
-                log_info "      🔑 $key"
+        #=== MIGRACJA scripts/actions: player:sendTextMessage ===
+        if [ "$is_npc_file" = false ]; then
+            if echo "$line" | grep -qE 'player:sendTextMessage\s*\([^,]+,\s*"[^"]{10,}"'; then
+                local msg_type=$(echo "$line" | sed -n 's/.*player:sendTextMessage\s*(\s*\([^,]*\),.*/\1/p')
+                local text=$(echo "$line" | sed -n 's/.*player:sendTextMessage\s*([^,]*,\s*"\([^"]*\)".*/\1/p')
+                if [ -n "$text" ] && [ ${#text} -ge 10 ]; then
+                    local key="${category}.${safe_name}.msg_${key_counter}"
+                    key_counter=$((key_counter + 1))
+                    
+                    # Dla scripts używamy innego wzorca - tylko wyciągamy klucz, nie zmieniamy pliku
+                    # (skrypty wymagają ręcznej weryfikacji)
+                    python3 -c "
+import json, os
+f='$json_file'
+d=json.load(open(f)) if os.path.exists(f) and os.path.getsize(f) > 2 else {}
+d['$key']='$text'
+json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
+" 2>/dev/null
+                    
+                    transformed=$((transformed + 1))
+                    log_info "      📝 Wyciągnięto: $key = '$text'"
+                    # NIE zmieniamy linii - tylko wyciągamy klucze dla scripts
+                fi
             fi
         fi
         
@@ -696,12 +795,19 @@ migrate_lua_file() {
     done < "$file"
     
     if [ "$transformed" -gt 0 ]; then
-        mv "$temp_file" "$file"
-        rm -f "${file}.bak"
-        mark_processed "$file"
+        # Dla NPC - zastosuj zmiany
+        if [ "$is_npc_file" = true ]; then
+            mv "$temp_file" "$file"
+            rm -f "${file}.bak"
+            log_success "   ✅ Zmigrowano $transformed stringów w pliku NPC"
+        else
+            # Dla innych - nie zmieniaj pliku, tylko wyciągnij klucze
+            rm -f "$temp_file" "${file}.bak"
+            log_success "   📝 Wyciągnięto $transformed kluczy (bez modyfikacji pliku)"
+        fi
         
-        log_success "   ✅ $transformed stringów zmigrowanych"
-        document "MIGRACJA LUA" "$relative_path" "Zmigrowano $transformed stringów" "Kategoria: $category"
+        mark_processed "$file"
+        document "MIGRACJA LUA" "$relative_path" "Przetworzono $transformed stringów" "Kategoria: $category, NPC: $is_npc_file"
         
         TOTAL_FILES_PROCESSED=$((TOTAL_FILES_PROCESSED + 1))
         TOTAL_STRINGS_FOUND=$((TOTAL_STRINGS_FOUND + transformed))

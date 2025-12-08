@@ -749,4 +749,33 @@ NpcHandler = {
 			end
 		end
 	end
+
+	-- I18N: Say localized message using key from i18n system
+	-- Usage: npcHandler:sayLocalized("npc.name.key", npc, player, args)
+	function NpcHandler:sayLocalized(key, npc, player, args, delay, textType)
+		if not player or not key then
+			return
+		end
+		
+		local playerId = player:getId()
+		
+		-- Cancel previous delayed say if exists
+		if self:getEventDelayedSay(playerId) then
+			self:cancelNPCTalk(self:getEventDelayedSay(playerId))
+		end
+		
+		stopEvent(self.eventSay[playerId])
+		
+		-- Send localized message to player
+		local msgType = textType or MESSAGE_NPC_FROM
+		
+		-- Schedule the localized message event
+		self.eventSay[playerId] = addEvent(function(npcId, targetId, msgKey, msgArgs, msgTypeVal)
+			local targetPlayer = Player(targetId)
+			local npcEntity = Npc(npcId)
+			if targetPlayer and npcEntity then
+				targetPlayer:sendLocalizedTextMessage(msgTypeVal, msgKey, msgArgs)
+			end
+		end, self.talkDelayTimeForOutgoingMessages * 1000, npc:getId(), player:getId(), key, args, msgType)
+	end
 end

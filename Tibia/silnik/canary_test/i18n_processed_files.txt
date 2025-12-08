@@ -937,3 +937,4 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/modules/game_rewardwall/game_rewardwall.html
 /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/tools/api/status.php
 /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/tools/api/updater.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/alyxo.lua

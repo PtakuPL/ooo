@@ -76,131 +76,131 @@ local function creatureSayCallback(npc, creature, type, message)
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Boss) == 1 then
 			npcHandler:setTopic(playerId, 1)
 		end
-		npcHandler:say({ "Could you kill 3 bosses for me?" }, npc, creature) -- needs review, this is not the speech of the global
+		npcHandler:sayLocalized("npc.alyxo.say_1", npc, creature) -- needs review, this is not the speech of the global
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Boss) == 1 then
-			npcHandler:say({ "Come back as soon as you kill all 3 bosses." }, npc, creature) -- needs review, this is not the speech of the global
+			npcHandler:sayLocalized("npc.alyxo.say_2", npc, creature) -- needs review, this is not the speech of the global
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Boss, 2)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Bragrumol, 1)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Mozradek, 1)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Xogixath, 1)
 			npcHandler:setTopic(playerId, 2)
 		else
-			npcHandler:say({ "Sorry, you do not have access." }, npc, creature)
+			npcHandler:sayLocalized("npc.alyxo.say_3", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end
 	-- Mission 3 Steal The Ambassador Ring
 	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Boss) == 2 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Boss) == 2 then
-			npcHandler:say({ "Did you manage to face all 3 bosses?" }, npc, creature) -- needs review, this is not the speech of the global
+			npcHandler:sayLocalized("npc.alyxo.say_4", npc, creature) -- needs review, this is not the speech of the global
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 3 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Boss) == 2 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Bragrumol) == 2 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Mozradek) == 2 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Xogixath) == 2 then
-			npcHandler:say({ "I am very satisfied." }, npc, creature) -- needs review, this is not the speech of the global
+			npcHandler:sayLocalized("npc.alyxo.say_5", npc, creature) -- needs review, this is not the speech of the global
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Boss, 3)
 			npcHandler:setTopic(playerId, 4)
 		else
-			npcHandler:say({ "Sorry." }, npc, creature)
+			npcHandler:sayLocalized("npc.alyxo.say_6", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end
 	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Boss) == 3 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Boss) == 3 then
-			npcHandler:say({ "Could you help me with some more work?" }, npc, creature) -- needs review, this is not the speech of the global
+			npcHandler:sayLocalized("npc.alyxo.say_7", npc, creature) -- needs review, this is not the speech of the global
 			npcHandler:setTopic(playerId, 5)
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 5 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Boss) == 3 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Boss) == 3 then
-			npcHandler:say({ "Kill 300 members of the Fafnar cult, help me find Ivory Lyre and help me find an animal to stone." }, npc, creature) -- needs review, this is not the speech of the global
+			npcHandler:sayLocalized("npc.alyxo.say_8", npc, creature) -- needs review, this is not the speech of the global
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Twelve.Boss, 4)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Fafnar, 1)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Lyre, 1)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Presente, 1)
 			npcHandler:setTopic(playerId, 6)
 		else
-			npcHandler:say({ "Sorry." }, npc, creature)
+			npcHandler:sayLocalized("npc.alyxo.say_9", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end
 	if MsgContains(message, "report") and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Fafnar) == 300 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Fafnar) == 300 then
-			npcHandler:say({ "Have you finished killing the 300 members of Fafnar's cult?" }, npc, creature) -- needs review, this is not the speech of the global
+			npcHandler:sayLocalized("npc.alyxo.say_10", npc, creature) -- needs review, this is not the speech of the global
 			npcHandler:setTopic(playerId, 7)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 7 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Fafnar) == 300 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Fafnar) == 300 then
-			npcHandler:say({ "Thanks. You killed the 300 members of the Fafnar cult." }, npc, creature) -- needs review, this is not the speech of the global
+			npcHandler:sayLocalized("npc.alyxo.say_11", npc, creature) -- needs review, this is not the speech of the global
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Fafnar, 301)
 			npcHandler:setTopic(playerId, 8)
 		else
-			npcHandler:say({ "Sorry." }, npc, creature)
+			npcHandler:sayLocalized("npc.alyxo.say_12", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end
 	if MsgContains(message, "report") and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Lyre) == 3 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Lyre) == 3 then
-			npcHandler:say({ "Did you manage to find Lyre?" }, npc, creature) -- needs review, this is not the speech of the global
+			npcHandler:sayLocalized("npc.alyxo.say_13", npc, creature) -- needs review, this is not the speech of the global
 			npcHandler:setTopic(playerId, 9)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 9 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Lyre) == 3 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Lyre) == 3 and player:getItemById(31447, 1) then
 			player:removeItem(31447, 1)
-			npcHandler:say({ "Thanks. I was looking for Lyre for a long time." }, npc, creature) -- needs review, this is not the speech of the global
+			npcHandler:sayLocalized("npc.alyxo.say_14", npc, creature) -- needs review, this is not the speech of the global
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Lyre, 4)
 		else
-			npcHandler:say({ "Sorry." }, npc, creature)
+			npcHandler:sayLocalized("npc.alyxo.say_15", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end
 	if MsgContains(message, "report") and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Presente) == 2 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Presente) == 2 then
-			npcHandler:say({ "Did you manage to find Small Tortoise?" }, npc, creature) -- needs review, this is not the speech of the global
+			npcHandler:sayLocalized("npc.alyxo.say_16", npc, creature) -- needs review, this is not the speech of the global
 			npcHandler:setTopic(playerId, 11)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 11 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Presente) == 2 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Presente) == 2 and player:getItemById(31445, 1) then
 			player:removeItem(31445, 1)
-			npcHandler:say({ "Thanks. I was looking for Small Tortoise." }, npc, creature) -- needs review, this is not the speech of the global
+			npcHandler:sayLocalized("npc.alyxo.say_17", npc, creature) -- needs review, this is not the speech of the global
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Presente, 3)
 			npcHandler:setTopic(playerId, 12)
 		else
-			npcHandler:say({ "Sorry." }, npc, creature)
+			npcHandler:sayLocalized("npc.alyxo.say_18", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end
 	if MsgContains(message, "small tortoise") then
 		if player:getItemById(31445, 1) then
-			npcHandler:say({ "Do you want me to stone a small tortoise?" }, npc, creature) -- needs review, this is not the speech of the global
+			npcHandler:sayLocalized("npc.alyxo.say_19", npc, creature) -- needs review, this is not the speech of the global
 			npcHandler:setTopic(playerId, 15)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 15 then
 		if player:getItemById(31445, 1) then
 			player:removeItem(31445, 1)
 			player:addItem(31446, 1)
-			npcHandler:say({ "Here's your Small Petrified Tortoise." }, npc, creature) -- needs review, this is not the speech of the global
+			npcHandler:sayLocalized("npc.alyxo.say_20", npc, creature) -- needs review, this is not the speech of the global
 			npcHandler:setTopic(playerId, 16)
 		else
-			npcHandler:say({ "Sorry." }, npc, creature)
+			npcHandler:sayLocalized("npc.alyxo.say_21", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end
 	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Fafnar) == 301 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Fafnar) == 301 then
-			npcHandler:say({ "Did you finish the 3 jobs I gave you?" }, npc, creature) -- needs review, this is not the speech of the global
+			npcHandler:sayLocalized("npc.alyxo.say_22", npc, creature) -- needs review, this is not the speech of the global
 			npcHandler:setTopic(playerId, 13)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 13 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Fafnar) == 301 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Thirteen.Fafnar) == 301 then
 			player:addAchievement("Sculptor Apprentice", 'Congratulations! You earned the achievement "Sculptor Apprentice".')
 			player:addItem(31574, 1)
-			npcHandler:say({ "Congratulations, you have completed the 3 jobs I gave you." }, npc, creature) -- needs review, this is not the speech of the global
+			npcHandler:sayLocalized("npc.alyxo.say_23", npc, creature) -- needs review, this is not the speech of the global
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourteen.Remains, 1)
 			npcHandler:setTopic(playerId, 14)
 		else
-			npcHandler:say({ "Sorry." }, npc, creature)
+			npcHandler:sayLocalized("npc.alyxo.say_24", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

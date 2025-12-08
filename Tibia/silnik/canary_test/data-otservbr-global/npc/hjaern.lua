@@ -71,7 +71,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 4 then
-			npcHandler:say("The spirits are at peace now. The threat of the chakoyas is averted for now. I thank you for your help. Perhaps you should ask Silfind if you can help her in some matters. ", npc, creature)
+			npcHandler:sayLocalized("npc.hjaern.the_spirits_are_1", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 5)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission02, 5) -- Questlog The Ice Islands Quest, Nibelor 1: Breaking the Ice
 			npcHandler:setTopic(playerId, 0)
@@ -123,23 +123,23 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("I have now no mission for you.", npc, creature)
+			npcHandler:sayLocalized("npc.hjaern.i_have_now_2", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "shard") then
 		if player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 40 then
-			npcHandler:say("Do you bring frostheart shards for our spell?", npc, creature)
+			npcHandler:sayLocalized("npc.hjaern.do_you_bring_3", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 42 then
-			npcHandler:say("Do you bring frostheart shards for our spell? ", npc, creature)
+			npcHandler:sayLocalized("npc.hjaern.do_you_bring_4", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 44 then
-			npcHandler:say("Do you want to sell all your shards for 2000 gold coins per each? ", npc, creature)
+			npcHandler:sayLocalized("npc.hjaern.do_you_want_5", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "reward") then
 		if player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 41 then
-			npcHandler:say("Take this. It might suit your Nordic outfit fine. ", npc, creature)
+			npcHandler:sayLocalized("npc.hjaern.take_this_it_6", npc, creature)
 			player:addOutfitAddon(252, 1)
 			player:addOutfitAddon(251, 1)
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
@@ -150,7 +150,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addOutfitAddon(252, 2)
 			player:addOutfitAddon(251, 2)
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-			npcHandler:say("Take this. It might suit your Nordic outfit fine. From now on we only can give you 2000 gold pieces for each shard. ", npc, creature)
+			npcHandler:sayLocalized("npc.hjaern.take_this_it_7", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 44)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.NorsemanOutfit, 3) -- Questlog Norseman Outfit Quest
 			npcHandler:setTopic(playerId, 4)
@@ -167,12 +167,12 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "cookie") then
 		if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 31 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.CookieDelivery.Hjaern) ~= 1 then
-			npcHandler:say("You want to sacrifice a cookie to the spirits?", npc, creature)
+			npcHandler:sayLocalized("npc.hjaern.you_want_to_8", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("This is good news. As I explained, travel to Helheim, seek the reason for the unrest there and then report to me about your mission. ", npc, creature)
+			npcHandler:sayLocalized("npc.hjaern.this_is_good_9", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 30)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission07, 2) -- Questlog The Ice Islands Quest, The Secret of Helheim
 			npcHandler:setTopic(playerId, 0)
@@ -187,13 +187,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:removeItem(7290, 5) then
-				npcHandler:say("Excellent, you collected 5 of them. If you have collected 5 or more, talk to me about your {reward}. ", npc, creature)
+				npcHandler:sayLocalized("npc.hjaern.excellent_you_collected_10", npc, creature)
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 41)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:removeItem(7290, 10) then
-				npcHandler:say("Excellent, you collected 10 of them. If you have collected 15 or more, talk to me about your {reward}. ", npc, creature)
+				npcHandler:sayLocalized("npc.hjaern.excellent_you_collected_11", npc, creature)
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 43)
 				npcHandler:setTopic(playerId, 0)
 			end
@@ -202,12 +202,12 @@ local function creatureSayCallback(npc, creature, type, message)
 				local count = player:getItemCount(7290)
 				player:addMoney(count * 2000)
 				player:removeItem(7290, count)
-				npcHandler:say("Here your are. " .. count * 2000 .. " gold coins for " .. count .. " shards.", npc, creature)
+				npcHandler:sayLocalized("npc.hjaern.here_your_are_12" .. count * 2000 .. " gold coins for " .. count .. " shards.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 6 then
 			if not player:removeItem(130, 1) then
-				npcHandler:say("You have no cookie that I'd like.", npc, creature)
+				npcHandler:sayLocalized("npc.hjaern.you_have_no_13", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -218,7 +218,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 
 			npc:getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)
-			npcHandler:say("In the name of the spirits I accept this offer ... UHNGH ... The spirits are not amused!", npc, creature)
+			npcHandler:sayLocalized("npc.hjaern.in_the_name_14", npc, creature)
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		end

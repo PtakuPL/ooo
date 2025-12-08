@@ -2,26 +2,26 @@
 
 ## 📊 Aktualny postęp
 
-![NPC Migration](https://img.shields.io/badge/NPC_Migration-21.0%25-red?style=for-the-badge)
-![Keys](https://img.shields.io/badge/Keys-41643-blue?style=for-the-badge)
+![NPC Migration](https://img.shields.io/badge/NPC_Migration-21.9%25-red?style=for-the-badge)
+![Keys](https://img.shields.io/badge/Keys-41712-blue?style=for-the-badge)
 ![Errors](https://img.shields.io/badge/Errors-0-green?style=for-the-badge)
 
 | Metryka | Wartość |
 |---------|---------|
-| **NPC Zmigrowanych** | 216 / 1027 |
-| **Postęp** | 21.0% |
-| **Klucze i18n** | 41643 |
+| **NPC Zmigrowanych** | 225 / 1027 |
+| **Postęp** | 21.9% |
+| **Klucze i18n** | 41712 |
 | **Języki** | 5 (en, pl, de, es, pt) |
 
 ## 📈 Progress Bar
 
 ```
-[████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 21.0%
+[████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 21.9%
 ```
 
 ## 🔄 Ostatnia aktualizacja
 
-**Data:** 2025-12-08 11:18 UTC
+**Data:** 2025-12-08 11:20 UTC
 
 ---
 

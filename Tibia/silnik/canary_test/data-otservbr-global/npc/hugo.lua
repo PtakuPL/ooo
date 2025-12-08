@@ -116,21 +116,21 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "uniforms") then
 		if player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission06) == 1 then
-			npcHandler:say("A new uniform for the post officers? I am sorry but my dog ate the last dress pattern we used. You need to supply us with a new dress pattern.", npc, creature)
+			npcHandler:sayLocalized("npc.hugo.a_new_uniform_1", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "dress pattern") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("It was ... wonderous beyond wildest imaginations! I have no clue where Kevin Postner got it from. Better ask him.", npc, creature)
+			npcHandler:sayLocalized("npc.hugo.it_was_wonderous_2", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission06, 2)
 		elseif player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission06) == 11 then
-			npcHandler:say("By the gods of fashion! Didn't it do that I fed the last dress pattern to my poor dog? Will this mocking of all which is taste and fashion never stop?? Ok, ok, you will get those ugly, stinking uniforms and now get lost, fashion terrorist.", npc, creature)
+			npcHandler:sayLocalized("npc.hugo.by_the_gods_3", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission06, 12)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "outfit") then
 		if not player:isPremium() then
-			npcHandler:say("Sorry, but my time is currently reserved for premium matters.", npc, creature)
+			npcHandler:sayLocalized("npc.hugo.sorry_but_my_4", npc, creature)
 			return true
 		end
 
@@ -142,16 +142,16 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit) > 0 and player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit) < 5 then
-			npcHandler:say("I am so excited! This poor man's look will be an outfit like the world has never seen before.", npc, creature)
+			npcHandler:sayLocalized("npc.hugo.i_am_so_5", npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit) == 5 then
 			if player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfitTimer) > os.time() then
-				npcHandler:say("Sorry, but I am not done with the outfit yet. Venore wasn't built in a day.", npc, creature)
+				npcHandler:sayLocalized("npc.hugo.sorry_but_i_6", npc, creature)
 			elseif player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfitTimer) > 0 and player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfitTimer) < os.time() then
-				npcHandler:say("Eureka! Alas, the poor man's outfit is finished, but... to be honest... it turned out much less appealing than I expected. However, you can have it if you want, okay?", npc, creature)
+				npcHandler:sayLocalized("npc.hugo.eureka_alas_the_7", npc, creature)
 				npcHandler:setTopic(playerId, 5)
 			end
 		elseif player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit) == 6 then
-			npcHandler:say("I guess my vision wasn't that grand after all. I hope there are still people who enjoy it.", npc, creature)
+			npcHandler:sayLocalized("npc.hugo.i_guess_my_8", npc, creature)
 		end
 	elseif config[message:lower()] then
 		local targetMessage = config[message:lower()]
@@ -176,7 +176,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.OutfitQuest.DefaultStart, 1)
 			end
 			player:setStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit, 1)
-			npcHandler:say("Terrific! What are you waiting for?! Start right away gathering 20 pieces of brown cloth and come back once you have them!", npc, creature)
+			npcHandler:sayLocalized("npc.hugo.terrific_what_are_9", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			local targetMessage = topic[playerId]
@@ -196,21 +196,21 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addOutfit(157)
 			player:setStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit, 6)
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-			npcHandler:say("Here you go. Maybe you enjoy if after all.", npc, creature)
+			npcHandler:sayLocalized("npc.hugo.here_you_go_10", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Argh! I guess this awesome idea has to remain unimplemented. What a pity.", npc, creature)
+			npcHandler:sayLocalized("npc.hugo.argh_i_guess_11", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Do you want me to repeat the task requirements?", npc, creature)
+			npcHandler:sayLocalized("npc.hugo.do_you_want_12", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 4 then
-			npcHandler:say("Hurry! I am at my creative peak right now!", npc, creature)
+			npcHandler:sayLocalized("npc.hugo.hurry_i_am_13", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
-			npcHandler:say("Well, if you should change your mind, just ask me for the beggar outfit.", npc, creature)
+			npcHandler:sayLocalized("npc.hugo.well_if_you_14", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

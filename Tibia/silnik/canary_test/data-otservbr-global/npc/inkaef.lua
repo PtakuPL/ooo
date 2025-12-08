@@ -67,18 +67,18 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "first rod") or MsgContains(message, "first wand") then
 		if player:isMage() then
 			if player:getStorageValue(Storage.FirstMageWeapon) == -1 then
-				npcHandler:say("So you ask me for a {" .. ItemType(itemId):getName() .. "} to begin your adventure?", npc, creature)
+				npcHandler:sayLocalized("npc.inkaef.so_you_ask_1" .. ItemType(itemId):getName() .. "} to begin your adventure?", npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			else
-				npcHandler:say("What? I have already gave you one {" .. ItemType(itemId):getName() .. "}!", npc, creature)
+				npcHandler:sayLocalized("npc.inkaef.what_i_have_2" .. ItemType(itemId):getName() .. "}!", npc, creature)
 			end
 		else
-			npcHandler:say("Sorry, you aren't a druid either a sorcerer.", npc, creature)
+			npcHandler:sayLocalized("npc.inkaef.sorry_you_arent_3", npc, creature)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			player:addItem(itemId, 1)
-			npcHandler:say("Here you are young adept, take care yourself.", npc, creature)
+			npcHandler:sayLocalized("npc.inkaef.here_you_are_4", npc, creature)
 			player:setStorageValue(Storage.FirstMageWeapon, 1)
 		end
 		npcHandler:setTopic(playerId, 0)

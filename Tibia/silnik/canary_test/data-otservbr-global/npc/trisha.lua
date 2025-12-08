@@ -117,15 +117,15 @@ local function creatureSayCallback(npc, creature, type, message)
 	local player, storage = Player(creature), Storage.Quest.U7_8.WarriorOutfits.WarriorShoulderAddon
 	if npcHandler:getTopic(playerId) == 0 then
 		if table.contains({ "outfit", "addon" }, message) then
-			npcHandler:say("Are you talking about my spiky shoulder pad? You can't buy one of these. They have to be {earned}.", npc, creature)
+			npcHandler:sayLocalized("npc.trisha.are_you_talking_1", npc, creature)
 		elseif MsgContains(message, "earn") then
 			if player:getStorageValue(storage) < 1 then
-				npcHandler:say("I'm not sure if you are enough of a hero to earn them. You could try, though. What do you think?", npc, creature)
+				npcHandler:sayLocalized("npc.trisha.im_not_sure_2", npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			elseif player:getStorageValue(storage) >= 1 and player:getStorageValue(storage) < 5 then
-				npcHandler:say("Before I can nominate you for an award, please complete your task.", npc, creature)
+				npcHandler:sayLocalized("npc.trisha.before_i_can_3", npc, creature)
 			elseif player:getStorageValue(storage) == 5 then
-				npcHandler:say("You did it! I have seldom seen a man as courageous as you. I really have to say that you deserve to wear a spike. Go ask Cornelia to adorn your armour.", npc, creature)
+				npcHandler:sayLocalized("npc.trisha.you_did_it_4", npc, creature)
 			end
 		elseif config[message:lower()] then
 			local targetMessage = config[message:lower()]
@@ -151,7 +151,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature, 100)
 			npcHandler:setTopic(playerId, 2)
 		elseif MsgContains(message, "no") then
-			npcHandler:say("I thought so. Train hard and maybe some day you will be ready to face this mission.", npc, creature)
+			npcHandler:sayLocalized("npc.trisha.i_thought_so_5", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
@@ -159,24 +159,24 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(storage, 1)
 			-- This for default start of outfit and addon quests
 			player:setStorageValue(Storage.OutfitQuest.DefaultStart, 1)
-			npcHandler:say("Excellent! Don't forget: Your first task is to bring me 100 hardened bones. Good luck!", npc, creature)
+			npcHandler:sayLocalized("npc.trisha.excellent_dont_forget_6", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
-			npcHandler:say("Would you like me to repeat the task requirements then?", npc, creature)
+			npcHandler:sayLocalized("npc.trisha.would_you_like_7", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 3 then
 		if MsgContains(message, "yes") then
 			local targetMessage = topic[playerId]
 			if not player:removeItem(targetMessage.itemId, targetMessage.count or 1) then
-				npcHandler:say("Why do men always lie?", npc, creature)
+				npcHandler:sayLocalized("npc.trisha.why_do_men_8", npc, creature)
 				return true
 			end
 
 			player:setStorageValue(storage, player:getStorageValue(storage) + 1)
 			npcHandler:say(targetMessage.message.success, npc, creature)
 		elseif MsgContains(message, "no") then
-			npcHandler:say("Don't give up just yet.", npc, creature)
+			npcHandler:sayLocalized("npc.trisha.dont_give_up_9", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

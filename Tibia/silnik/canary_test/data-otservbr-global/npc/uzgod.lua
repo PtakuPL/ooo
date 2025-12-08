@@ -58,62 +58,62 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "piece of draconian steel") and player:getStorageValue(Storage.Quest.U7_8.ObsidianKnife) < 1 then
-		npcHandler:say("You bringing me draconian steel and obsidian lance in exchange for obsidian knife?", npc, creature)
+		npcHandler:sayLocalized("npc.uzgod.you_bringing_me_1", npc, creature)
 		npcHandler:setTopic(playerId, 15)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 15 then
 		if player:getItemCount(5889) >= 1 and player:getItemCount(3313) >= 1 then
 			if player:removeItem(5889, 1) and player:removeItem(3313, 1) then
-				npcHandler:say("Here you have it.", npc, creature)
+				npcHandler:sayLocalized("npc.uzgod.here_you_have_2", npc, creature)
 				player:addItem(5908, 1)
 				player:setStorageValue(Storage.Quest.U7_8.ObsidianKnife, 1)
 				npcHandler:setTopic(playerId, 0)
 			end
 		else
-			npcHandler:say("You don't have these items.", npc, creature)
+			npcHandler:sayLocalized("npc.uzgod.you_dont_have_3", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end
 
 	if MsgContains(message, "pickaxe") then
 		if player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.JoiningTheExplorers) == 1 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 1 then
-			npcHandler:say("True dwarven pickaxes having to be maded by true weaponsmith! You wanting to get pickaxe for explorer society?", npc, creature)
+			npcHandler:sayLocalized("npc.uzgod.true_dwarven_pickaxes_4", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "crimson sword") then
 		if player:getStorageValue(Storage.Quest.U8_1.TheTravellingTrader.Mission05) == 1 then
-			npcHandler:say("Me don't sell crimson sword.", npc, creature)
+			npcHandler:sayLocalized("npc.uzgod.me_dont_sell_5", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "forge") then
 		if npcHandler:getTopic(playerId) == 5 then
-			npcHandler:say("You telling me to forge one?! Especially for you? You making fun of me?", npc, creature)
+			npcHandler:sayLocalized("npc.uzgod.you_telling_me_6", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		end
 	elseif MsgContains(message, "brooch") then
 		if player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.JoiningTheExplorers) == 3 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 3 then
-			npcHandler:say("You got me brooch?", npc, creature)
+			npcHandler:sayLocalized("npc.uzgod.you_got_me_7", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Me order book quite full is. But telling you what: You getting me something me lost and Uzgod seeing that your pickaxe comes first. Jawoll! You interested?", npc, creature)
+			npcHandler:sayLocalized("npc.uzgod.me_order_book_8", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Good good. You listening: Me was stolen valuable heirloom. Brooch from my family. Good thing is criminal was caught. Bad thing is, criminal now in dwarven prison of dwacatra is and must have taken brooch with him ...", npc, creature)
-			npcHandler:say("To get into dwacatra you having to get several keys. Each key opening way to other key until you get key to dwarven prison ...", npc, creature)
-			npcHandler:say("Last key should be in the generals quarter near armory. Only General might have key to enter there too. But me not knowing how to enter Generals private room at barracks. You looking on your own ...", npc, creature)
-			npcHandler:say("When got key, then you going down to dwarven prison and getting me that brooch. Tell me that you got brooch when having it.", npc, creature)
+			npcHandler:sayLocalized("npc.uzgod.good_good_you_9", npc, creature)
+			npcHandler:sayLocalized("npc.uzgod.to_get_into_10", npc, creature)
+			npcHandler:sayLocalized("npc.uzgod.last_key_should_11", npc, creature)
+			npcHandler:sayLocalized("npc.uzgod.when_got_key_12", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.JoiningTheExplorers, 2)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.DwacatraDoor, 1)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 2)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:removeItem(4834, 1) then -----
-				npcHandler:say("Thanking you for brooch. Me guessing you now want your pickaxe?", npc, creature)
+				npcHandler:sayLocalized("npc.uzgod.thanking_you_for_13", npc, creature)
 				npcHandler:setTopic(playerId, 4)
 			end
 		elseif npcHandler:getTopic(playerId) == 4 then
-			npcHandler:say("Here you have it.", npc, creature)
+			npcHandler:sayLocalized("npc.uzgod.here_you_have_14", npc, creature)
 			player:addItem(4845, 1) -----
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.JoiningTheExplorers, 4)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 4)
@@ -121,7 +121,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		elseif npcHandler:getTopic(playerId) == 9 then
 			if player:getMoney() + player:getBankBalance() >= 250 and player:getItemCount(5880) >= 3 then
 				if player:removeMoneyBank(250) and player:removeItem(5880, 3) then
-					npcHandler:say("Ah, that's how me like me customers. Ok, me do this... <pling pling> ... another fine swing of the hammer here and there... <ploing>... here you have it!", npc, creature)
+					npcHandler:sayLocalized("npc.uzgod.ah_thats_how_15", npc, creature)
 					player:addItem(7385, 1)
 					player:setStorageValue(Storage.Quest.U8_1.TheTravellingTrader.Mission05, 2)
 					npcHandler:setTopic(playerId, 0)
@@ -130,13 +130,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 6 then
-			npcHandler:say("Well. Thinking about it, me a smith, so why not. 1000 gold for your personal crimson sword. Ok?", npc, creature)
+			npcHandler:sayLocalized("npc.uzgod.well_thinking_about_16", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		elseif npcHandler:getTopic(playerId) == 7 then
-			npcHandler:say("Too expensive?! You think me work is cheap? Well, if you want cheap, I can make cheap. Hrmpf. I make cheap sword for 300 gold. Ok?", npc, creature)
+			npcHandler:sayLocalized("npc.uzgod.too_expensive_you_17", npc, creature)
 			npcHandler:setTopic(playerId, 8)
 		elseif npcHandler:getTopic(playerId) == 8 then
-			npcHandler:say("Cheap but good quality? Impossible. Unless... you bring material. Three iron ores, 250 gold. Okay?", npc, creature)
+			npcHandler:sayLocalized("npc.uzgod.cheap_but_good_18", npc, creature)
 			npcHandler:setTopic(playerId, 9)
 		end
 	end

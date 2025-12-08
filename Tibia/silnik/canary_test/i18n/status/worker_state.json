@@ -1,17 +1,17 @@
 {
   "schema_version": "2.0",
-  "last_updated": "2025-12-08T19:08:18+01:00",
+  "last_updated": "2025-12-08T19:15:33+01:00",
   "worker": {
     "version": "4.0",
     "status": "running",
     "mode": "migration",
-    "cycle": 1,
+    "cycle": 2,
     "files_per_cycle": 10,
-    "pid": 2524120
+    "pid": 2561438
   },
   "global_progress": {
-    "total_files_processed": 877,
-    "total_files_excluded": 2781,
+    "total_files_processed": 887,
+    "total_files_excluded": 2800,
     "total_keys": 41733,
     "total_languages": 53,
     "total_conflicts": 0

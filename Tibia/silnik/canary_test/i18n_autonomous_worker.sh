@@ -347,10 +347,14 @@ migrate_web_file() {
     local count=0
     
     if [ "$file_type" = "php" ]; then
-        count=$(grep -cE "echo\s+['\"][^'\"]{10,}['\"]|print\s+['\"][^'\"]{10,}['\"]" "$file" 2>/dev/null || echo "0")
+        count=$(grep -cE "echo\s+['\"][^'\"]{10,}['\"]|print\s+['\"][^'\"]{10,}['\"]" "$file" 2>/dev/null | tr -d '\n' || echo "0")
     elif [ "$file_type" = "html" ]; then
-        count=$(grep -cE ">[^<]{10,}<" "$file" 2>/dev/null || echo "0")
+        count=$(grep -cE ">[^<]{10,}<" "$file" 2>/dev/null | tr -d '\n' || echo "0")
     fi
+    
+    # Upewnij się że count jest liczbą
+    count=$(echo "$count" | tr -d '[:space:]')
+    [[ ! "$count" =~ ^[0-9]+$ ]] && count=0
     
     if [ "$count" -eq 0 ]; then
         log_info "   ⏭️ Brak stringów"

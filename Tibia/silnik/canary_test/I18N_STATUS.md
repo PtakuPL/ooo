@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-08 20:30:00 UTC  
+> **Aktualizacja:** 2025-12-08 20:31:31 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **42050** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#50** | - |
+| 🔄 Cykl | **#1** | - |
 
 ---
 
@@ -61,7 +61,7 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #50 |
+| 🔄 Cykl | #1 |
 
 ### 📁 Podkatalogi - Postęp
 
@@ -73,7 +73,14 @@ selfSay("text")
 | `creaturescripts/` | 8 | 🔄 W trakcie |
 | `talkactions/` | 33 | 🔄 W trakcie |
 | `globalevents/` | 1 | 🔄 W trakcie |
-| `spells/` | 0 | ⏳ Oczekuje |
+
+### 🔮 Kategorie specjalne (z JSON)
+
+| Kategoria | Kluczy | Status |
+|-----------|--------|--------|
+| 👹 `monsters` | 100 | ✅ OK |
+| ✨ `spells` | 100 | ✅ OK |
+| ⚙️ `server` | 116 | ✅ OK |
 
 ### 📄 Ostatnio przetworzone pliki
 
@@ -155,7 +162,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 2710197, Cykl #50 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 3771730, Cykl #1 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

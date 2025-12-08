@@ -7487,3 +7487,14 @@ Duplikaty, błędy składni, brakujące tłumaczenia
 Klucze i18n: 44827
 
 ---
+
+## [2025-12-09 00:41:07] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---

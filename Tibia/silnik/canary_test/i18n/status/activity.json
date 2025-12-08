@@ -1,15 +1,29 @@
 {
-  "last_updated": "2025-12-09 00:39:45",
+  "last_updated": "2025-12-09 00:42:06",
   "current_operation": {
     "type": "cycle",
     "phase": 1,
     "category": "scripts",
-    "file": "Cykl #16",
+    "file": "Cykl #1",
     "action": "🎮 Canary Server - scripts",
     "status": "in_progress",
     "details": "NPC:4108 Scripts:713 Items:36972"
   },
   "recent_operations": [
+    {
+      "time": "2025-12-09 00:42:06",
+      "type": "cycle",
+      "file": "Cykl #1",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 00:41:02",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
     {
       "time": "2025-12-09 00:39:45",
       "type": "cycle",
@@ -133,20 +147,6 @@
       "time": "2025-12-09 00:28:16",
       "type": "process",
       "file": "ortheus.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 00:28:16",
-      "type": "process",
-      "file": "guide_edna.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 00:28:15",
-      "type": "process",
-      "file": "nilsor.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     }

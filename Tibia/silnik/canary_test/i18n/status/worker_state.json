@@ -1,20 +1,20 @@
 {
   "schema_version": "2.0",
-  "last_updated": "2025-12-08T21:05:12+01:00",
+  "last_updated": "2025-12-08T21:26:27+01:00",
   "worker": {
     "version": "4.0",
     "status": "running",
-    "mode": "extraction",
-    "cycle": 3,
+    "mode": "analysis",
+    "cycle": 8,
     "files_per_cycle": 10,
-    "pid": 25423
+    "pid": 136196
   },
   "global_progress": {
-    "total_files_processed": 931,
-    "total_files_excluded": 4632,
+    "total_files_processed": 939,
+    "total_files_excluded": 4902,
     "total_keys": 42050,
     "total_languages": 53,
-    "total_conflicts": 0
+    "total_conflicts": 58
   },
   "categories": {
     "npc": {"status": "completed", "keys": 4049},
@@ -26,28 +26,28 @@
   },
   "recent_files": [
   {
-    "file": "index.php",
-    "time": "21:05:12",
+    "file": "game_questlog.html",
+    "time": "21:26:27",
     "status": "success"
   },
   {
-    "file": "canary.lua",
-    "time": "21:05:12",
+    "file": "#displayUIPickReward.html",
+    "time": "21:26:27",
     "status": "success"
   },
   {
-    "file": "Outfit.php",
-    "time": "21:05:12",
+    "file": "game_rewardwall.html",
+    "time": "21:26:27",
     "status": "success"
   },
   {
-    "file": "Items.php",
-    "time": "21:05:12",
+    "file": "status.php",
+    "time": "21:26:27",
     "status": "success"
   },
   {
-    "file": "index.html",
-    "time": "21:05:12",
+    "file": "updater.php",
+    "time": "21:26:27",
     "status": "success"
   }
 ]

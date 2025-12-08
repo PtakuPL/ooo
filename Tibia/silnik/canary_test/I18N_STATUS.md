@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-08 22:03:05 UTC  
+> **Aktualizacja:** 2025-12-08 22:05:56 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -22,11 +22,11 @@
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **939** | ↑ |
-| ⏭️ Plików wykluczonych | **4901** | - |
+| ⏭️ Plików wykluczonych | **4902** | - |
 | 🔑 Kluczy i18n | **42050** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#1** | - |
+| 🔄 Cykl | **#2** | - |
 
 ---
 
@@ -78,9 +78,9 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #1` |
+| **Plik** | `Cykl #2` |
 | **Szczegóły** | NPC:4049 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-08 22:02:21 |
+| **Ostatnia aktualizacja** | 2025-12-08 22:05:33 |
 
 ### 📈 Statystyki sesji
 
@@ -124,7 +124,7 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #1 |
+| 🔄 Cykl | #2 |
 
 ### 📁 Podkatalogi - Postęp
 
@@ -225,7 +225,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 491907, Cykl #1 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 490878, Cykl #2 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

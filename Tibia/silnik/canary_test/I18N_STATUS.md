@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-08 20:07:50 UTC  
+> **Aktualizacja:** 2025-12-08 20:09:40 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **41734** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#15** | - |
+| 🔄 Cykl | **#18** | - |
 
 ---
 
@@ -61,7 +61,7 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #15 |
+| 🔄 Cykl | #18 |
 
 ### 📁 Podkatalogi - Postęp
 
@@ -155,7 +155,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 2710292, Cykl #15 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 2710292, Cykl #18 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

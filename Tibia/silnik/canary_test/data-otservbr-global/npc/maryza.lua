@@ -64,7 +64,7 @@ local function greetCallback(npc, creature, message)
 		return false
 	end
 
-	npcHandler:say("Welcome to the Jolly Axeman, |PLAYERNAME|. Have a good time and eat some food!", npc, creature)
+	npcHandler:sayLocalized("npc.maryza.welcome_to_the_1", npc, creature)
 	npcHandler:setInteraction(npc, creature)
 
 	return true
@@ -80,23 +80,23 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "cookbook") then
 		if player:getStorageValue(Storage.MaryzaCookbook) ~= 1 then
-			npcHandler:say("The cookbook of the famous dwarven kitchen. You're lucky. I have a few copies on sale. Do you like one for 150 gold?", npc, creature)
+			npcHandler:sayLocalized("npc.maryza.the_cookbook_of_2", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:say("I'm sorry but I sell only one copy to each customer. Otherwise they would have been sold out a long time ago.", npc, creature)
+			npcHandler:sayLocalized("npc.maryza.im_sorry_but_3", npc, creature)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
 			if not player:removeMoneyBank(150) then
-				npcHandler:say("No gold, no sale, that's it.", npc, creature)
+				npcHandler:sayLocalized("npc.maryza.no_gold_no_4", npc, creature)
 				return true
 			end
 
-			npcHandler:say("Here you are. Happy cooking!", npc, creature)
+			npcHandler:sayLocalized("npc.maryza.here_you_are_5", npc, creature)
 			player:setStorageValue(Storage.MaryzaCookbook, 1)
 			player:addItem(3234, 1)
 		elseif MsgContains(message, "no") then
-			npcHandler:say("I have but a few copies, anyway.", npc, creature)
+			npcHandler:sayLocalized("npc.maryza.i_have_but_6", npc, creature)
 		end
 	end
 	return true

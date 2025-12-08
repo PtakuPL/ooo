@@ -105,7 +105,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
-		npcHandler:say("Then not.", npc, creature)
+		npcHandler:sayLocalized("npc.aurita.then_not_1", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

@@ -52,7 +52,7 @@ end
 
 local function greetCallback(npc, creature)
 	local playerId = creature:getId()
-	npcHandler:say("Move on!", npc, creature)
+	npcHandler:sayLocalized("npc.edron_guardsman.move_on_1", npc, creature)
 	npcHandler:removeInteraction(npc, creature)
 	npcHandler:resetNpc(creature)
 	return false

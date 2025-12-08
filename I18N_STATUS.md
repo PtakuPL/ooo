@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-08 23:53:05 UTC  
+> **Aktualizacja:** 2025-12-08 23:55:24 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **42109** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **58** | ✓ |
-| 🔄 Cykl | **#27** | - |
+| 🔄 Cykl | **#28** | - |
 
 ---
 
@@ -78,9 +78,9 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #27` |
+| **Plik** | `Cykl #28` |
 | **Szczegóły** | NPC:4108 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-08 23:52:28 |
+| **Ostatnia aktualizacja** | 2025-12-08 23:54:51 |
 
 ### 📈 Statystyki sesji
 
@@ -124,7 +124,7 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #27 |
+| 🔄 Cykl | #28 |
 
 ### 📁 Podkatalogi - Postęp
 
@@ -225,7 +225,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 977608, Cykl #27 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 977608, Cykl #28 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

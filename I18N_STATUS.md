@@ -10,7 +10,7 @@
 |-----------|--------|
 | **Worker** | 🟢 Running (PID: 1719299) |
 | **Guardian** | 🟢 Active (sprawdza co 1 min) |
-| **Cykl** | #8 |
+| **Cykl** | #11 |
 | **Restarty** | 0 |
 
 ## 📊 Aktualny postęp
@@ -37,11 +37,11 @@
 | **Klucze i18n** | `43641` |
 | **Języki** | 5 (🇬🇧 en, 🇵🇱 pl, 🇩🇪 de, 🇪🇸 es, 🇧🇷 pt) |
 | **Prędkość** | ~`1.2` NPC/min |
-| **Czas pracy** | 339min |
+| **Czas pracy** | 341min |
 | **Start** | 11:42 |
 | **ETA** | ~482 min |
 | **Błędy** | 0 |
-| **Cykl** | #8 |
+| **Cykl** | #11 |
 
 ## 📁 Ostatnio zmodyfikowane NPC
 
@@ -59,7 +59,7 @@
 ## 🔧 Status Workera
 
 ```
-[2025-12-08 17:21:57] [INFO] 📊 RAPORT CYKLU #8
+[2025-12-08 17:23:42] [INFO] 📊 RAPORT CYKLU #11
 ```
 
 ## 🛡️ Zabezpieczenia
@@ -74,8 +74,8 @@
 
 | 🕐 Czas | 📅 Data |
 |---------|---------|
-| **UTC:** | 2025-12-08 16:22:03 UTC |
-| **Local:** | 17:22:03 |
+| **UTC:** | 2025-12-08 16:24:04 UTC |
+| **Local:** | 17:24:04 |
 
 ---
 

@@ -662,6 +662,7 @@ migrate_lua_file() {
         'npcHandler:say\s*\(\s*"[^"]{5,}"'
         'npcHandler:say\s*\(\s*\{\s*"[^"]{5,}"'
         'npcHandler:say\s*\(\s*'"'"'[^'"'"']{5,}'"'"
+        'StdModule\.say.*text\s*=\s*"[^"]{5,}"'
     )
     
     # Wzorce dla innych plików Lua (scripts, actions, etc.)
@@ -782,6 +783,28 @@ json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
                     log_info "      🔑 $key = '$text'"
                 fi
             fi
+            
+            # WZORZEC 4: StdModule.say { text = "..." } - ekstrakcja bez modyfikacji
+            if echo "$line" | grep -qE 'StdModule\.say.*text\s*=\s*"[^"]{5,}"'; then
+                local text=$(echo "$line" | sed -n 's/.*text\s*=\s*"\([^"]*\)".*/\1/p')
+                if [ -n "$text" ] && [ ${#text} -ge 5 ]; then
+                    local key="npc.${safe_name}.stdmod_${key_counter}"
+                    key_counter=$((key_counter + 1))
+                    
+                    # Dla StdModule.say tylko ekstrakcja - wymaga ręcznej migracji do npcHandler:sayLocalized
+                    python3 -c "
+import json, os
+f='$json_file'
+d=json.load(open(f)) if os.path.exists(f) and os.path.getsize(f) > 2 else {}
+d['$key']='''$text'''
+json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
+" 2>/dev/null
+                    
+                    transformed=$((transformed + 1))
+                    log_info "      📝 StdModule: $key = '${text:0:50}...'"
+                    # NIE modyfikujemy StdModule.say - wymaga ręcznej konwersji
+                fi
+            fi
         fi
         
         #=== MIGRACJA scripts/actions: player:sendTextMessage ===
@@ -863,8 +886,8 @@ migrate_multiline_npc() {
         return 1
     fi
     
-    # Sprawdź czy ma wieloliniowe tablice
-    if ! grep -qE 'npcHandler:say\s*\(\s*\{$' "$file" 2>/dev/null; then
+    # Sprawdź czy ma wieloliniowe tablice LUB StdModule.say
+    if ! grep -qE 'npcHandler:say\s*\(\s*\{$|StdModule\.say' "$file" 2>/dev/null; then
         return 1
     fi
     
@@ -873,17 +896,17 @@ migrate_multiline_npc() {
     
     # Wyciągnij wszystkie stringi z wieloliniowych tablic (tylko ekstrakcja, bez modyfikacji)
     local extracted=0
-    local key_counter=1
     
-    # Użyj Python do parsowania wieloliniowych tablic
-    python3 << EOF
+    # Użyj Python do parsowania wieloliniowych tablic - zmienne przekazane jako argumenty
+    extracted=$(python3 - "$file" "$json_file" "$safe_name" << 'PYEOF'
 import re
 import json
 import os
+import sys
 
-file_path = "$file"
-json_path = "$json_file"
-safe_name = "$safe_name"
+file_path = sys.argv[1]
+json_path = sys.argv[2]
+safe_name = sys.argv[3]
 
 # Wczytaj plik
 with open(file_path, 'r', encoding='utf-8') as f:
@@ -912,37 +935,15 @@ for match in matches:
             if key not in translations:
                 translations[key] = s
                 extracted += 1
-                print(f"      🔑 {key} = '{s[:50]}...'")
             key_counter += 1
 
 # Zapisz JSON
 with open(json_path, 'w', encoding='utf-8') as f:
     json.dump(translations, f, indent=2, ensure_ascii=False)
 
-print(f"EXTRACTED:{extracted}")
-EOF
-    
-    local result=$(python3 << 'PYEOF'
-import re
-import json
-import os
-
-file_path = "$file"
-json_path = "$json_file"
-safe_name = "$safe_name"
-
-with open(file_path, 'r', encoding='utf-8') as f:
-    content = f.read()
-
-pattern = r'npcHandler:say\s*\(\s*\{([^}]+)\}'
-matches = re.findall(pattern, content, re.DOTALL)
-extracted = 0
-for match in matches:
-    strings = re.findall(r'"([^"]+)"', match)
-    extracted += len([s for s in strings if len(s) >= 5])
 print(extracted)
 PYEOF
-2>/dev/null)
+2>/dev/null || echo "0")
     
     if [ "$extracted" -gt 0 ] 2>/dev/null; then
         log_success "   📝 Wyciągnięto $extracted kluczy z wieloliniowych tablic"

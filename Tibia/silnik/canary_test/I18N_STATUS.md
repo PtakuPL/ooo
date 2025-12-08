@@ -1,33 +1,31 @@
-# 🌍 I18N Migration Status
+# 🌍 I18N Worker v4.0 Status
 
-**Ostatnia aktualizacja:** 2025-12-08 18:00:41
+**Aktualizacja:** 2025-12-08 18:03:47
 
 ## 📊 Postęp
 
 | Metryka | Wartość |
 |---------|---------|
-| ✅ Zmigrowane | 28 plików |
-| ⏭️ Wykluczone | 27 plików |
-| ⏳ Oczekujące | 2772 plików |
-| 📁 Łącznie | 2827 plików |
-| 📈 Postęp | **1%** |
+| ✅ Przetworzonych | 459 |
+| ⏭️ Wykluczonych | 597 |
+| 🔑 Kluczy i18n | 43665 |
+| 🌍 Języków | 53 |
+| ⚠️ Konfliktów | 0 |
 
-## 🔄 Worker Status
+## 🔄 Status Workera
 
-- **Cykl:** #11
-- **Pliki/cykl:** 5
-- **Stringów:** 0
+- **Cykl:** #2
+- **Tryb:** migration
+- **Plików/cykl:** 10
 
-## 📂 Kategorie
+## 📂 Kategorie kluczy
 
 - **npc**: 4048 kluczy
-- **scripts**: 0 kluczy
-- **actions**: 0 kluczy
-- **quests**: 0 kluczy
-- **events**: 0 kluczy
-- **talkactions**: 0 kluczy
-- **movements**: 0 kluczy
+- **scripts**: 23 kluczy
+- **server**: 0 kluczy
+- **ui**: 0 kluczy
+- **items**: 36972 kluczy
 - **spells**: 0 kluczy
 
 ---
-*Worker v3.0 - Pełna migracja Lua*
+*Worker v4.0 - Full i18n (53 languages)*

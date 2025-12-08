@@ -59,21 +59,21 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "transport") then
-		npcHandler:say("We can bring you to Venore with one of our coaches for 125 gold. Are you interested?", npc, creature)
+		npcHandler:sayLocalized("npc.palomino.we_can_bring_1", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif table.contains({ "rent", "horses" }, message) then
-		npcHandler:say("Do you want to rent a horse for one day at a price of 500 gold?", npc, creature)
+		npcHandler:sayLocalized("npc.palomino.do_you_want_2", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") then
 		local player = Player(creature)
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:isPzLocked() then
-				npcHandler:say("First get rid of those blood stains!", npc, creature)
+				npcHandler:sayLocalized("npc.palomino.first_get_rid_3", npc, creature)
 				return true
 			end
 
 			if not player:removeMoneyBank(125) then
-				npcHandler:say("You don't have enough money.", npc, creature)
+				npcHandler:sayLocalized("npc.palomino.you_dont_have_4", npc, creature)
 				return true
 			end
 
@@ -81,15 +81,15 @@ local function creatureSayCallback(npc, creature, type, message)
 			local destination = Position(32850, 32124, 7)
 			player:teleportTo(destination)
 			destination:sendMagicEffect(CONST_ME_TELEPORT)
-			npcHandler:say("Have a nice trip!", npc, creature)
+			npcHandler:sayLocalized("npc.palomino.have_a_nice_5", npc, creature)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if player:getStorageValue(Storage.Quest.U9_1.HorseStationWorldChange.Timer) >= os.time() then
-				npcHandler:say("You already have a horse.", npc, creature)
+				npcHandler:sayLocalized("npc.palomino.you_already_have_6", npc, creature)
 				return true
 			end
 
 			if not player:removeMoneyBank(500) then
-				npcHandler:say("You do not have enough money to rent a horse!", npc, creature)
+				npcHandler:sayLocalized("npc.palomino.you_do_not_7", npc, creature)
 				return true
 			end
 
@@ -97,7 +97,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addMount(mountId[math.random(#mountId)])
 			player:setStorageValue(Storage.Quest.U9_1.HorseStationWorldChange.Timer, os.time() + 86400)
 			player:addAchievement("Natural Born Cowboy")
-			npcHandler:say("I'll give you one of our experienced ones. Take care! Look out for low hanging branches.", npc, creature)
+			npcHandler:sayLocalized("npc.palomino.ill_give_you_8", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) > 0 then

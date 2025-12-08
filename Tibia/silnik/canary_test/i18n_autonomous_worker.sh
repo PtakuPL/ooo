@@ -29,14 +29,24 @@ LANGUAGES=(
 
 # Wszystkie katalogi do skanowania
 SCAN_DIRS=(
+    # NPC
     "data-otservbr-global/npc"
+    "data-canary/npc"
+    "data/npclib"
+    # Scripts
     "data-otservbr-global/scripts"
     "data-otservbr-global/lib"
     "data/scripts"
-    "data/npclib"
     "data/libs"
     "data/events"
     "data/modules"
+    # Monsters
+    "data-otservbr-global/monster"
+    "data-canary/monster"
+    # Spells
+    "data-otservbr-global/scripts/spells"
+    "data/scripts/spells"
+    # Server C++
     "src"
     "src/creatures"
     "src/game"
@@ -46,6 +56,7 @@ SCAN_DIRS=(
     "src/map"
     "src/server"
     "src/utils"
+    # Web
     "html_copy"
     "html_copy/app"
     "html_copy/routes"
@@ -508,6 +519,104 @@ validate_structure() {
 }
 
 #===============================================================================
+# PRZETWARZANIE PENDING KATEGORII (monsters, server, spells)
+#===============================================================================
+process_pending_categories() {
+    log_info "═══════════════════════════════════════════════════════════════"
+    log_info "🔄 PRZETWARZANIE PENDING KATEGORII"
+    log_info "═══════════════════════════════════════════════════════════════"
+    
+    # Monsters
+    local monsters_count=$(grep -c '"' "$WORK_DIR/i18n/en/monsters.json" 2>/dev/null || echo "0")
+    if [ "$monsters_count" -lt 10 ]; then
+        log_info "👹 Przetwarzam MONSTERS..."
+        local monster_files=$(find "$WORK_DIR/data-otservbr-global/monster" "$WORK_DIR/data-canary/monster" -name "*.lua" 2>/dev/null | head -50)
+        local count=0
+        for file in $monster_files; do
+            [ -f "$file" ] || continue
+            local basename=$(basename "$file")
+            
+            # Wyciągnij stringi z monstera
+            local strings=$(grep -oP '(?<=")[^"]+(?=")' "$file" 2>/dev/null | grep -E '^[A-Z]' | head -5)
+            for str in $strings; do
+                [ ${#str} -gt 3 ] && [ ${#str} -lt 100 ] && {
+                    local key=$(echo "$str" | tr ' ' '_' | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9_]//g')
+                    [ -n "$key" ] && add_key_to_json "monsters" "$key" "$str"
+                    count=$((count + 1))
+                }
+            done
+        done
+        log_success "   ✅ Monsters: dodano $count kluczy"
+    fi
+    
+    # Server (C++ strings)
+    local server_count=$(grep -c '"' "$WORK_DIR/i18n/en/server.json" 2>/dev/null || echo "0")
+    if [ "$server_count" -lt 10 ]; then
+        log_info "🖥️ Przetwarzam SERVER (C++)..."
+        local cpp_files=$(find "$WORK_DIR/src" -name "*.cpp" -o -name "*.hpp" 2>/dev/null | head -30)
+        local count=0
+        for file in $cpp_files; do
+            [ -f "$file" ] || continue
+            
+            # Wyciągnij stringi z C++
+            local strings=$(grep -oP '(?<=")[^"]{5,80}(?=")' "$file" 2>/dev/null | grep -E '^[A-Z]' | head -3)
+            for str in $strings; do
+                local key=$(echo "$str" | tr ' ' '_' | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9_]//g' | head -c 50)
+                [ -n "$key" ] && [ ${#key} -gt 3 ] && add_key_to_json "server" "$key" "$str"
+                count=$((count + 1))
+            done
+        done
+        log_success "   ✅ Server: dodano $count kluczy"
+    fi
+    
+    # Spells
+    local spells_count=$(grep -c '"' "$WORK_DIR/i18n/en/spells.json" 2>/dev/null || echo "0")
+    if [ "$spells_count" -lt 10 ]; then
+        log_info "✨ Przetwarzam SPELLS..."
+        local spell_files=$(find "$WORK_DIR/data-otservbr-global/scripts/spells" "$WORK_DIR/data/scripts/spells" -name "*.lua" 2>/dev/null | head -50)
+        local count=0
+        for file in $spell_files; do
+            [ -f "$file" ] || continue
+            local basename=$(basename "$file" .lua)
+            
+            # Nazwa spella jako klucz
+            local key=$(echo "$basename" | tr ' ' '_' | tr '[:upper:]' '[:lower:]')
+            local name=$(echo "$basename" | tr '_' ' ' | sed 's/\b\(.\)/\u\1/g')
+            [ -n "$key" ] && add_key_to_json "spells" "spell_$key" "$name"
+            count=$((count + 1))
+            
+            # Wyciągnij opisy
+            local desc=$(grep -oP '(?<=description = ")[^"]+' "$file" 2>/dev/null | head -1)
+            [ -n "$desc" ] && add_key_to_json "spells" "spell_${key}_desc" "$desc"
+        done
+        log_success "   ✅ Spells: dodano $count kluczy"
+    fi
+}
+
+# Helper: dodaj klucz do JSON
+add_key_to_json() {
+    local category="$1"
+    local key="$2"
+    local value="$3"
+    local json_file="$WORK_DIR/i18n/en/${category}.json"
+    
+    # Upewnij się że plik istnieje
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    # Dodaj klucz jeśli nie istnieje (prosty sposób)
+    if ! grep -q "\"$key\"" "$json_file" 2>/dev/null; then
+        # Użyj jq jeśli dostępne, inaczej sed
+        if command -v jq &>/dev/null; then
+            local tmp=$(mktemp)
+            jq --arg k "$key" --arg v "$value" '. + {($k): $v}' "$json_file" > "$tmp" 2>/dev/null && mv "$tmp" "$json_file"
+        else
+            # Prosty sed - dodaj przed ostatnim }
+            sed -i "s/}$/,\"$key\":\"$value\"}/" "$json_file" 2>/dev/null
+        fi
+    fi
+}
+
+#===============================================================================
 # GŁÓWNA PĘTLA PRZETWARZANIA
 #===============================================================================
 process_files() {
@@ -933,18 +1042,43 @@ main() {
             [ -d "$WORK_DIR/$dir" ] && pending=$((pending + $(find "$WORK_DIR/$dir" -maxdepth 3 -type f \( -name "*.lua" -o -name "*.cpp" -o -name "*.php" \) 2>/dev/null | wc -l)))
         done
         
-        local processed_count=$(wc -l < "$PROCESSED_FILE" 2>/dev/null || echo "0")
-        local excluded_count=$(wc -l < "$EXCLUDED_FILE" 2>/dev/null || echo "0")
+        local processed_count=$(wc -l < "$PROCESSED_FILE" 2>/dev/null | tr -d '[:space:]')
+        processed_count=${processed_count:-0}
+        local excluded_count=$(wc -l < "$EXCLUDED_FILE" 2>/dev/null | tr -d '[:space:]')
+        excluded_count=${excluded_count:-0}
         local remaining=$((pending - processed_count - excluded_count))
         
-        if [ "$remaining" -gt 0 ]; then
+        # Sprawdź czy są kategorie pending (monsters, server, spells)
+        local pending_categories=0
+        local monsters_keys=$(grep -c '"' "$WORK_DIR/i18n/en/monsters.json" 2>/dev/null | tr -d '[:space:]')
+        monsters_keys=${monsters_keys:-0}
+        local server_keys=$(grep -c '"' "$WORK_DIR/i18n/en/server.json" 2>/dev/null | tr -d '[:space:]')
+        server_keys=${server_keys:-0}
+        local spells_keys=$(grep -c '"' "$WORK_DIR/i18n/en/spells.json" 2>/dev/null | tr -d '[:space:]')
+        spells_keys=${spells_keys:-0}
+        
+        # Jeśli kategorie mają 0 kluczy, są pending
+        [[ "$monsters_keys" =~ ^[0-9]+$ ]] && [ "$monsters_keys" -lt 10 ] && pending_categories=$((pending_categories + 1))
+        [[ "$server_keys" =~ ^[0-9]+$ ]] && [ "$server_keys" -lt 10 ] && pending_categories=$((pending_categories + 1))
+        [[ "$spells_keys" =~ ^[0-9]+$ ]] && [ "$spells_keys" -lt 10 ] && pending_categories=$((pending_categories + 1))
+        
+        log_info "📊 Pozostało: $remaining plików, $pending_categories kategorii pending (M:$monsters_keys S:$server_keys SP:$spells_keys)"
+        
+        if [ "$remaining" -gt 0 ] || [ "$pending_categories" -gt 0 ]; then
             MODE="migration"
             process_files
+            
+            # Jeśli są pending kategorie, przetwórz je
+            if [ "$pending_categories" -gt 0 ]; then
+                log_info "🔄 Przetwarzam pending kategorie..."
+                process_pending_categories
+            fi
+            
             sync_translations
         else
             # Wszystko przetworzone - tryb analizy
             MODE="analysis"
-            log_success "🎉 Wszystkie pliki przetworzone! Tryb analizy..."
+            log_success "🎉 Wszystkie pliki i kategorie przetworzone! Tryb analizy..."
             
             analyze_conflicts
             validate_structure

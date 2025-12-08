@@ -158,7 +158,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	-- Quest started
 	if MsgContains(message, "questions") and player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) == 13 then
-		npcHandler:say("Ready to {start}?", npc, creature)
+		npcHandler:sayLocalized("npc.denominator.ready_to_start_1", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "start") and npcHandler:getTopic(playerId) == 2 then
 		local questionId = math.random(#quiz1)
@@ -173,12 +173,12 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			local answer = quiz1[player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.QuestionId)].r
 			if playerLastResp[playerId] ~= (tonumber(answer(player))) then
-				npcHandler:say("Wrong. SHUT DOWN.", npc, creature)
+				npcHandler:sayLocalized("npc.denominator.wrong_shut_down_2", npc, creature)
 				npcHandler:resetNpc(creature)
 				npcHandler:removeInteraction(npc, creature)
 				return false
 			else
-				npcHandler:say("Correct. {Next} question?", npc, creature)
+				npcHandler:sayLocalized("npc.denominator.correct_next_question_3", npc, creature)
 				npcHandler:setTopic(playerId, 5)
 			end
 		elseif MsgContains(message, "no") then
@@ -201,10 +201,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 		local answer = quiz2[player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.QuestionId)].r
 		if response == answer(player) then
-			npcHandler:say("Correct. {Next} question?", npc, creature)
+			npcHandler:sayLocalized("npc.denominator.correct_next_question_4", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		else
-			npcHandler:say("Wrong. SHUT DOWN.", npc, creature)
+			npcHandler:sayLocalized("npc.denominator.wrong_shut_down_5", npc, creature)
 			npcHandler:resetNpc(creature)
 			npcHandler:removeInteraction(npc, creature)
 			return false
@@ -223,16 +223,16 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 		local answer = quiz3[player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.QuestionId)].r
 		if response == answer(player) then
-			npcHandler:say("Correct. {Last} question?", npc, creature)
+			npcHandler:sayLocalized("npc.denominator.correct_last_question_6", npc, creature)
 			npcHandler:setTopic(playerId, 9)
 		else
-			npcHandler:say("Wrong. SHUT DOWN.", npc, creature)
+			npcHandler:sayLocalized("npc.denominator.wrong_shut_down_7", npc, creature)
 			npcHandler:resetNpc(creature)
 			npcHandler:removeInteraction(npc, creature)
 			return false
 		end
 	elseif npcHandler:getTopic(playerId) == 9 and MsgContains(message, "last") then
-		npcHandler:say("Tell me the correct number?", npc, creature)
+		npcHandler:sayLocalized("npc.denominator.tell_me_the_8", npc, creature)
 		npcHandler:setTopic(playerId, 10)
 	elseif npcHandler:getTopic(playerId) == 10 then
 		npcHandler:say(string.format("Your answer is %s, do you want to continue?", message), npc, creature)
@@ -242,12 +242,12 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			local correct = string.format("%d%d%d", player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Stone1), player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Stone2), player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Stone3))
 			if tonumber(playerLastResp[playerId]) ~= (tonumber(correct)) then
-				npcHandler:say("Wrong. SHUT DOWN.", npc, creature)
+				npcHandler:sayLocalized("npc.denominator.wrong_shut_down_9", npc, creature)
 				npcHandler:resetNpc(creature)
 				npcHandler:removeInteraction(npc, creature)
 				return false
 			else
-				npcHandler:say("Correct. The lower door is now open. The druid of Crunor lies.", npc, creature)
+				npcHandler:sayLocalized("npc.denominator.correct_the_lower_10", npc, creature)
 				player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission, player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) + 1)
 				player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.AccessDoorDenominator)
 			end

@@ -57,7 +57,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if sleightInfo[message] ~= nil then
 		if getPlayerStorageValue(creature, sleightInfo[message].storageID) ~= -1 then
-			npcHandler:say("You already have this sleigh!", npc, creature)
+			npcHandler:sayLocalized("npc.frosty.you_already_have_1", npc, creature)
 			npcHandler:resetNpc(player)
 		else
 			local itemsTable = sleightInfo[message].items
@@ -85,7 +85,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			return true
 		end
 	elseif message:lower() == "percht" then
-		npcHandler:say("Nasty creatures especially their queen that sits frozzen on her throne beneath this island.", npc, creature)
+		npcHandler:sayLocalized("npc.frosty.nasty_creatures_especiall_2", npc, creature)
 	elseif MsgContains(message, "yes") then
 		if talkState[playerId] >= Storage.Percht1 and talkState[playerId] <= Storage.Percht3 then
 			local items_number = 0
@@ -106,9 +106,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				end
 				doPlayerAddMount(creature, sleightInfo[rtnt[playerId]].mount)
 				setPlayerStorageValue(creature, sleightInfo[rtnt[playerId]].storageID, 1)
-				npcHandler:say("Here you are.", npc, creature)
+				npcHandler:sayLocalized("npc.frosty.here_you_are_3", npc, creature)
 			else
-				npcHandler:say("You do not have needed items!", npc, creature)
+				npcHandler:sayLocalized("npc.frosty.you_do_not_4", npc, creature)
 			end
 			rtnt[playerId] = nil
 			talkState[playerId] = 0
@@ -116,13 +116,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			return true
 		end
 	elseif MsgContains(message, "mount") or MsgContains(message, "mounts") or MsgContains(message, "sleigh") or MsgContains(message, "sleighs") then
-		npcHandler:say("I can give you one of the following sleighs: {" .. table.concat(monsterName, "}, {") .. "}.", npc, creature)
+		npcHandler:sayLocalized("npc.frosty.i_can_give_5" .. table.concat(monsterName, "}, {") .. "}.", npc, creature)
 		rtnt[playerId] = nil
 		talkState[playerId] = 0
 		npcHandler:resetNpc(player)
 		return true
 	elseif MsgContains(message, "help") then
-		npcHandler:say("Just tell me which {sleigh} you want to know more about.", npc, creature)
+		npcHandler:sayLocalized("npc.frosty.just_tell_me_6", npc, creature)
 		rtnt[playerId] = nil
 		talkState[playerId] = 0
 		npcHandler:resetNpc(player)
@@ -130,7 +130,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	else
 		if talkState[playerId] ~= nil then
 			if talkState[playerId] > 0 then
-				npcHandler:say("Come back when you get these items.", npc, creature)
+				npcHandler:sayLocalized("npc.frosty.come_back_when_7", npc, creature)
 				rtnt[playerId] = nil
 				talkState[playerId] = 0
 				npcHandler:resetNpc(player)

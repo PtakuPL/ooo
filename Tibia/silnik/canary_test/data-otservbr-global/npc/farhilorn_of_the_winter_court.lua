@@ -60,20 +60,20 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "fight") then
 		if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.DreamScar.Permission) < 1 and player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.Main.TheWinterCourt) == 1 then
-			npcHandler:say("We allow able champions of all races to fight for our cause against the challenges of the {arena}. So are you interested? I'm not interested in fancy'wordplay, so a simple {yes} or {no} will suffice!", npc, creature)
+			npcHandler:sayLocalized("npc.farhilorn_of_the_winter_court.we_allow_able_1", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("You are now able to enter the teleport.", npc, creature)
+			npcHandler:sayLocalized("npc.farhilorn_of_the_winter_court.you_are_now_2", npc, creature)
 			player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.DreamScar.Permission, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
-		npcHandler:say("As you wish.", npc, creature)
+		npcHandler:sayLocalized("npc.farhilorn_of_the_winter_court.as_you_wish_3", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "arena") then
-		npcHandler:say("This place has always been a site where the champions of summer and winter have clashed in battle. Over the centuries this spectacle has drawn many creatures here to watch, participate and indulge in less savory activities.", npc, creature)
+		npcHandler:sayLocalized("npc.farhilorn_of_the_winter_court.this_place_has_4", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 

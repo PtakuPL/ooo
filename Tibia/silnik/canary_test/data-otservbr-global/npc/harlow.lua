@@ -55,7 +55,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	local player = Player(creature)
 	local playerId = player:getId()
 	if message then
-		npcHandler:say("What the heck, stop bothering me with your questions.", npc, creature)
+		npcHandler:sayLocalized("npc.harlow.what_the_heck_1", npc, creature)
 	end
 end
 --Travel

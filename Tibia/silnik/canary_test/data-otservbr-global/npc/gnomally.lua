@@ -126,27 +126,27 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "relations") then
 		local player = Player(creature)
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) >= 25 then
-			npcHandler:say("Our relations improve with every mission you undertake on our behalf. Another way to improve your relations with us gnomes is to trade in minor crystal tokens. ...", npc, creature)
-			npcHandler:say("Your renown amongst us gnomes is currently {" .. math.max(0, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank)) .. "}. Do you want to improve your standing by sacrificing tokens? One token will raise your renown by 5 points. ", npc, creature)
+			npcHandler:sayLocalized("npc.gnomally.our_relations_improve_1", npc, creature)
+			npcHandler:sayLocalized("npc.gnomally.your_renown_amongst_2" .. math.max(0, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank)) .. "}. Do you want to improve your standing by sacrificing tokens? One token will raise your renown by 5 points. ", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		else
-			npcHandler:say("You are not even a recruit of the Bigfoots. Sorry I can't help you.", npc, creature)
+			npcHandler:sayLocalized("npc.gnomally.you_are_not_3", npc, creature)
 		end
 	elseif npcHandler:getTopic(playerId) == 3 then
 		local amount = getMoneyCount(message)
 		if amount > 0 then
-			npcHandler:say("Do you really want to trade " .. amount .. " minor tokens for " .. amount * 5 .. " renown?", npc, creature)
+			npcHandler:sayLocalized("npc.gnomally.do_you_really_4" .. amount .. " minor tokens for " .. amount * 5 .. " renown?", npc, creature)
 			renown[playerId] = amount
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "items") then
-		npcHandler:say("Do you need to buy any mission items?", npc, creature)
+		npcHandler:sayLocalized("npc.gnomally.do_you_need_5", npc, creature)
 		npcHandler:setTopic(playerId, 5)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			local player, targetTable = Player(creature), config[topic[playerId]]
 			if player:getItemCount(targetTable.token.id) < targetTable.token.count then
-				npcHandler:say("Sorry, you don't have enough " .. targetTable.token.type .. " tokens with you.", npc, creature)
+				npcHandler:sayLocalized("npc.gnomally.sorry_you_dont_6" .. targetTable.token.type .. " tokens with you.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -157,37 +157,37 @@ local function creatureSayCallback(npc, creature, type, message)
 
 			if player:addItemEx(item) ~= RETURNVALUE_NOERROR then
 				if player:getFreeCapacity() < weight then
-					npcHandler:say("First make sure you have enough capacity to hold it.", npc, creature)
+					npcHandler:sayLocalized("npc.gnomally.first_make_sure_7", npc, creature)
 				else
-					npcHandler:say("First make sure you have enough space in your inventory.", npc, creature)
+					npcHandler:sayLocalized("npc.gnomally.first_make_sure_8", npc, creature)
 				end
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
 
 			player:removeItem(targetTable.token.id, targetTable.token.count)
-			npcHandler:say("Here have one of our " .. item:getPluralName() .. ".", npc, creature)
+			npcHandler:sayLocalized("npc.gnomally.here_have_one_9" .. item:getPluralName() .. ".", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("How many tokens do you want to trade?", npc, creature)
+			npcHandler:sayLocalized("npc.gnomally.how_many_tokens_10", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			local player = Player(creature)
 			if player:removeItem(16128, renown[playerId]) then
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank, math.max(0, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank)) + renown[playerId] * 5)
 				player:checkGnomeRank()
-				npcHandler:say("As you wish! Your new renown is {" .. player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) .. "}.", npc, creature)
+				npcHandler:sayLocalized("npc.gnomally.as_you_wish_11" .. player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) .. "}.", npc, creature)
 			else
-				npcHandler:say("You don't have these many tokens.", npc, creature)
+				npcHandler:sayLocalized("npc.gnomally.you_dont_have_12", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
 			npc:openShopWindow(creature)
-			npcHandler:say("Let us see if I have what you need.", npc, creature)
+			npcHandler:sayLocalized("npc.gnomally.let_us_see_13", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") and table.contains({ 1, 3, 4, 5 }, npcHandler:getTopic(playerId)) then
-		npcHandler:say("As you like.", npc, creature)
+		npcHandler:sayLocalized("npc.gnomally.as_you_like_14", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

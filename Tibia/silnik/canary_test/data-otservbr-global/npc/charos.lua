@@ -70,7 +70,7 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U9_80.AdventurersGuild.CharosTrav) > 6 then
-		npcHandler:say("Sorry, you have traveled a lot.", npc, creature)
+		npcHandler:sayLocalized("npc.charos.sorry_you_have_1", npc, creature)
 		npcHandler:resetNpc(creature)
 		return false
 	else
@@ -94,7 +94,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if npcHandler:getTopic(playerId) == 0 then
 		if MsgContains(message, "yes") then
-			npcHandler:say("Fine. You have " .. -player:getStorageValue(Storage.Quest.U9_80.AdventurersGuild.CharosTrav) + 7 .. " \z
+			npcHandler:sayLocalized("npc.charos.fine_you_have_2" .. -player:getStorageValue(Storage.Quest.U9_80.AdventurersGuild.CharosTrav) + 7 .. " \z
 			attunements left. What is the new city of your choice? Thais, Carlin, Ab'Dendriel, Kazordoon, Venore, \z
 			Ankrahmun, Edron, Darashia, Liberty Bay or Port Hope?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
@@ -104,9 +104,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		if cityTable then
 			player:setStorageValue(Storage.Quest.U9_80.AdventurersGuild.CharosTrav, player:getStorageValue(Storage.Quest.U9_80.AdventurersGuild.CharosTrav) + 1)
 			player:setStorageValue(Storage.Quest.U9_80.AdventurersGuild.Stone, cityTable)
-			npcHandler:say("Goodbye traveler!", npc, creature)
+			npcHandler:sayLocalized("npc.charos.goodbye_traveler_3", npc, creature)
 		else
-			npcHandler:say("Sorry, I don't know about this place.", npc, creature)
+			npcHandler:sayLocalized("npc.charos.sorry_i_dont_4", npc, creature)
 		end
 	end
 	return true

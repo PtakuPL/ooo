@@ -71,28 +71,28 @@ local function creatureSayCallback(npc, creature, type, message)
 	local maximum = hazard:getPlayerMaxLevel(player)
 
 	if MsgContains(message, "hazard") then
-		npcHandler:say("I can change your hazard level to spice up your hunt in the gardens. Your current level is set to " .. current .. ". And your maximum unlocked level is {" .. maximum .. "}. What level would you like to hunt in?", npc, creature)
+		npcHandler:sayLocalized("npc.gnomadness.i_can_change_1" .. current .. ". And your maximum unlocked level is {" .. maximum .. "}. What level would you like to hunt in?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	else
 		if npcHandler:getTopic(playerId) == 1 then
 			local desiredLevel = getMoneyCount(message)
 			if desiredLevel <= 0 then
-				npcHandler:say("I'm sorry, I don't understand. What hazard level would you like to set?", npc, creature)
+				npcHandler:sayLocalized("npc.gnomadness.im_sorry_i_2", npc, creature)
 				npcHandler:setTopic(playerId, 2)
 				return true
 			end
 			if hazard:setPlayerCurrentLevel(player, desiredLevel) then
-				npcHandler:say("Your hazard level has been set to " .. desiredLevel .. ". Good luck!", npc, creature)
+				npcHandler:sayLocalized("npc.gnomadness.your_hazard_level_3" .. desiredLevel .. ". Good luck!", npc, creature)
 				if desiredLevel >= 6 and not player:kv():scoped("primal-ordeal"):get("received-prize") then
 					player:addMount(202)
 					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Congratulations you received the Noxious Ripptor mount.")
 					player:addAchievement("Ripp-Ripp Hooray!")
 					player:addItem(PRIMAL_BAG, 1)
 					player:kv():scoped("primal-ordeal"):set("received-prize", true)
-					npcHandler:say("You've achieved the necessary hazard level. As a reward, you've received the Noxious Ripptor mount and a primal bag.", npc, creature)
+					npcHandler:sayLocalized("npc.gnomadness.youve_achieved_the_4", npc, creature)
 				end
 			else
-				npcHandler:say("You can't set your hazard level higher than your maximum unlocked level.", npc, creature)
+				npcHandler:sayLocalized("npc.gnomadness.you_cant_set_5", npc, creature)
 			end
 		end
 	end

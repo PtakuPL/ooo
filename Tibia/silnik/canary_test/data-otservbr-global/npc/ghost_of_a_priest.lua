@@ -88,7 +88,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.GhostOfAPriest01, 1)
 				player:removeMoneyBank(5000)
 				player:addItem(11368, 1)
-				npcHandler:say("So be it! Here is my part of the sceptre. Combine it with the other parts on the altar of the Great Snake in the depths of this temple.", npc, creature)
+				npcHandler:sayLocalized("npc.ghost_of_a_priest.so_be_it_1", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 3 then
@@ -96,7 +96,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.GhostOfAPriest02, 1)
 				player:removeMoneyBank(5000)
 				player:addItem(11369, 1)
-				npcHandler:say("So be it! Here is my part of the sceptre. Combine it with the other parts on the altar of the Great Snake in the depths of this temple.", npc, creature)
+				npcHandler:sayLocalized("npc.ghost_of_a_priest.so_be_it_2", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 4 then
@@ -104,12 +104,12 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.GhostOfAPriest03, 1)
 				player:removeMoneyBank(5000)
 				player:addItem(11370, 1)
-				npcHandler:say("So be it! Here is my part of the sceptre. Combine it with the other parts on the altar of the Great Snake in the depths of this temple.", npc, creature)
+				npcHandler:sayLocalized("npc.ghost_of_a_priest.so_be_it_3", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) then
-		npcHandler:say("No deal then.", npc, creature)
+		npcHandler:sayLocalized("npc.ghost_of_a_priest.no_deal_then_4", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

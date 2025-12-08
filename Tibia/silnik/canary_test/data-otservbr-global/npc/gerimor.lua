@@ -355,7 +355,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "missions") then
 		if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.FinalBoss.Mission) > 2 then
-			npcHandler:say("You have already fulfilled your job to my full satisfaction. The cults are investigated and the final boss is eliminated. I have nothing more for you to do. Fare you well!", npc, creature)
+			npcHandler:sayLocalized("npc.gerimor.you_have_already_1", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif
 			player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.Mission) == 6
@@ -398,7 +398,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:sendTextMessage(MESSAGE_EXPERIENCE, "You gained " .. rewardExperience[playerId] .. " experience points.")
 				npcHandler:setTopic(playerId, 0)
 			elseif player:getStorageValue(storage[playerId]) > 0 and player:getStorageValue(storage[playerId]) > value[playerId] then
-				npcHandler:say("You already done this mission.", npc, creature)
+				npcHandler:sayLocalized("npc.gerimor.you_already_done_2", npc, creature)
 				npcHandler:setTopic(playerId, 2)
 			else
 				npcHandler:say(missionsTable.text, npc, creature)
@@ -408,14 +408,14 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 3 then
 			if player:getStorageValue(storage[playerId]) < 1 then
-				npcHandler:say("Very nice! Come back if you have found what's going on in this cult.", npc, creature)
+				npcHandler:sayLocalized("npc.gerimor.very_nice_come_3", npc, creature)
 				player:setStorageValue(storage[playerId], 1)
 				if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Questline) < 1 then
 					player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Questline, 1)
 				end
 				npcHandler:setTopic(playerId, 2)
 			elseif player:getStorageValue(storage[playerId]) > 0 then
-				npcHandler:say("You have not finished your work yet. Come back when you're done.", npc, creature)
+				npcHandler:sayLocalized("npc.gerimor.you_have_not_4", npc, creature)
 				npcHandler:setTopic(playerId, 2)
 			end
 		elseif npcHandler:getTopic(playerId) == 4 then
@@ -439,11 +439,11 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You gained a mystery box.")
 			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You gained a " .. item .. ".")
 			player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.FinalBoss.Mission, 3)
-			npcHandler:say("Here's your reward. Thank you and farewell!", npc, creature)
+			npcHandler:sayLocalized("npc.gerimor.heres_your_reward_5", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
-		npcHandler:say("What a pitty! You can come back, when ever you want, if you have changed your opinion.", npc, creature)
+		npcHandler:sayLocalized("npc.gerimor.what_a_pitty_6", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

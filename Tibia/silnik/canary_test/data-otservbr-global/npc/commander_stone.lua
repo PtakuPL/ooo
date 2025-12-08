@@ -71,12 +71,12 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "keeper") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) < 30 then
 			if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionCrystalKeeper) < 1 and player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.CrystalKeeperTimout) < os.time() then
-				npcHandler:say("You will have to repair some damaged crystals. Go into the Crystal grounds and repair them, using this harmonic crystal. Repair five of them and return to me. ", npc, creature)
+				npcHandler:sayLocalized("npc.commander_stone.you_will_have_1", npc, creature)
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionCrystalKeeper, 1)
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.RepairedCrystalCount, 0)
 				player:addItem(15703, 1) --- taking missions
 			elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.CrystalKeeperTimout) > os.time() then -- trying to take mission while in cooldown
-				npcHandler:say("Sorry, you will have to wait before you can undertake this mission again.", npc, creature)
+				npcHandler:sayLocalized("npc.commander_stone.sorry_you_will_2", npc, creature)
 			elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionCrystalKeeper) > 0 then -- reporting mission
 				if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.RepairedCrystalCount) >= 5 then -- can report missions
 					player:removeItem(15703, 1)
@@ -88,19 +88,19 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.RepairedCrystalCount, -1)
 					player:addAchievement("Crystal Keeper")
 					player:checkGnomeRank()
-					npcHandler:say("You did well. That will help us a lot. Take your {token} and this gnomish supply package as a reward. ", npc, creature)
+					npcHandler:sayLocalized("npc.commander_stone.you_did_well_3", npc, creature)
 					npcHandler:setTopic(playerId, 0)
 				else -- haven't finished
 					if npcHandler:getTopic(playerId) >= 1 then
-						npcHandler:say("You are not done yet.", npc, creature) -- is reporting
+						npcHandler:sayLocalized("npc.commander_stone.you_are_not_4", npc, creature) -- is reporting
 					else
-						npcHandler:say("You already have accepted this mission. Don't forget to {report} to me when you are done.", npc, creature) -- se nao tiver reportando
+						npcHandler:sayLocalized("npc.commander_stone.you_already_have_5", npc, creature) -- se nao tiver reportando
 					end
 					npcHandler:setTopic(playerId, 0)
 				end
 			end
 		else
-			npcHandler:say("Sorry, you do have not have the required rank to undertake this mission.", npc, creature)
+			npcHandler:sayLocalized("npc.commander_stone.sorry_you_do_6", npc, creature)
 		end
 		-- Crystal Keeper
 
@@ -113,7 +113,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.ExtractedCount, 0)
 				player:addItem(15696, 1) --- taking missions
 			elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.RaidersOfTheLostSparkTimeout) > os.time() then -- trying to take mission while in cooldown
-				npcHandler:say("Sorry, you will have to wait before you can undertake this mission again.", npc, creature)
+				npcHandler:sayLocalized("npc.commander_stone.sorry_you_will_7", npc, creature)
 			elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionRaidersOfTheLostSpark) > 0 then -- reporting mission
 				if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.ExtractedCount) >= 7 then -- can report missions
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) + 5)
@@ -125,19 +125,19 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.RaidersOfTheLostSparkTimeout, os.time() + configManager.getNumber(configKeys.BOSS_DEFAULT_TIME_TO_FIGHT_AGAIN))
 					player:addAchievement("Call Me Sparky")
 					player:checkGnomeRank()
-					npcHandler:say("You did well. That will help us a lot. Take your {token} and this gnomish supply package as a reward. ", npc, creature)
+					npcHandler:sayLocalized("npc.commander_stone.you_did_well_8", npc, creature)
 					npcHandler:setTopic(playerId, 0)
 				else -- haven't finished
 					if npcHandler:getTopic(playerId) >= 1 then
-						npcHandler:say("You did not draw enough energy from Crystal Crushers or you have not asked for this task.", npc, creature) -- is reporting
+						npcHandler:sayLocalized("npc.commander_stone.you_did_not_9", npc, creature) -- is reporting
 					else
-						npcHandler:say("You already have accepted this mission. Don't forget to {report} to me when you are done.", npc, creature) -- se nao tiver reportando
+						npcHandler:sayLocalized("npc.commander_stone.you_already_have_10", npc, creature) -- se nao tiver reportando
 					end
 					npcHandler:setTopic(playerId, 0)
 				end
 			end
 		else
-			npcHandler:say("Sorry, you do have not have the required rank to undertake this mission.", npc, creature)
+			npcHandler:sayLocalized("npc.commander_stone.sorry_you_do_11", npc, creature)
 		end
 		-- Raiders of the Lost Spark
 
@@ -145,11 +145,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "extermination") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) >= 30 then
 			if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionExterminators) < 1 and player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.ExterminatorsTimeout) < os.time() then
-				npcHandler:say("The wigglers have become a pest that threaten our resources and supplies. Kill 10 wigglers in the caves like the mushroon gardens or the truffles ground. {Report} back to me when you are done. ", npc, creature)
+				npcHandler:sayLocalized("npc.commander_stone.the_wigglers_have_12", npc, creature)
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionExterminators, 1)
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.ExterminatedCount, 0) --- taking missions
 			elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.ExterminatorsTimeout) > os.time() then -- trying to take mission while in cooldown
-				npcHandler:say("Sorry, you will have to wait before you can undertake this mission again.", npc, creature)
+				npcHandler:sayLocalized("npc.commander_stone.sorry_you_will_13", npc, creature)
 			elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionExterminators) > 0 then -- reporting mission
 				if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.ExterminatedCount) >= 10 then -- can report missions
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) + 5)
@@ -160,19 +160,19 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.ExterminatorsTimeout, os.time() + configManager.getNumber(configKeys.BOSS_DEFAULT_TIME_TO_FIGHT_AGAIN))
 					player:addAchievement("One Foot Vs. Many")
 					player:checkGnomeRank()
-					npcHandler:say("You did well. That will help us a lot. Take your {token} and this gnomish supply package as a reward. ", npc, creature)
+					npcHandler:sayLocalized("npc.commander_stone.you_did_well_14", npc, creature)
 					npcHandler:setTopic(playerId, 0)
 				else -- haven't finished
 					if npcHandler:getTopic(playerId) >= 1 then
-						npcHandler:say("You are not done yet.", npc, creature) -- is reporting
+						npcHandler:sayLocalized("npc.commander_stone.you_are_not_15", npc, creature) -- is reporting
 					else
-						npcHandler:say("You already have accepted this mission. Don't forget to {report} to me when you are done.", npc, creature) -- se nao tiver reportando
+						npcHandler:sayLocalized("npc.commander_stone.you_already_have_16", npc, creature) -- se nao tiver reportando
 					end
 					npcHandler:setTopic(playerId, 0)
 				end
 			end
 		else
-			npcHandler:say("Sorry, you do have not have the required rank to undertake this mission.", npc, creature)
+			npcHandler:sayLocalized("npc.commander_stone.sorry_you_do_17", npc, creature)
 		end
 		-- Exterminators
 
@@ -190,7 +190,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MushroomCount, 0)
 				player:addItem(15828, 1) --- taking missions
 			elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MushroomDiggerTimeout) > os.time() then -- trying to take mission while in cooldown
-				npcHandler:say("Sorry, you will have to wait before you can undertake this mission again.", npc, creature)
+				npcHandler:sayLocalized("npc.commander_stone.sorry_you_will_18", npc, creature)
 			elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionMushroomDigger) > 0 then -- reporting mission
 				if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MushroomCount) >= 3 then -- can report missions
 					player:removeItem(15828, 1)
@@ -202,27 +202,27 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MushroomDiggerTimeout, os.time() + configManager.getNumber(configKeys.BOSS_DEFAULT_TIME_TO_FIGHT_AGAIN))
 					player:addAchievement("The Picky Pig")
 					player:checkGnomeRank()
-					npcHandler:say("You did well. That will help us a lot. Take your {token} and this gnomish supply package as a reward. ", npc, creature)
+					npcHandler:sayLocalized("npc.commander_stone.you_did_well_19", npc, creature)
 					npcHandler:setTopic(playerId, 0)
 				else -- haven't finished
 					if npcHandler:getTopic(playerId) >= 1 then
-						npcHandler:say("You are not done yet.", npc, creature) -- is reporting
+						npcHandler:sayLocalized("npc.commander_stone.you_are_not_20", npc, creature) -- is reporting
 					else
-						npcHandler:say("You already have accepted this mission. Don't forget to {report} to me when you are done.", npc, creature) -- se nao tiver reportando
+						npcHandler:sayLocalized("npc.commander_stone.you_already_have_21", npc, creature) -- se nao tiver reportando
 					end
 					npcHandler:setTopic(playerId, 0)
 				end
 			end
 		else
-			npcHandler:say("Sorry, you do have not have the required rank to undertake this mission.", npc, creature)
+			npcHandler:sayLocalized("npc.commander_stone.sorry_you_do_22", npc, creature)
 		end
 		-- Mushroom Digger
 	elseif MsgContains(message, "report") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) < 30 then
-			npcHandler:say("Which mission do you want to report: crystal {keeper}, {spark} hunting?", npc, creature)
+			npcHandler:sayLocalized("npc.commander_stone.which_mission_do_23", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) >= 30 then
-			npcHandler:say("Which mission do you want to report: crystal {keeper}, {spark} hunting, monster {extermination} or mushroom {digging}?", npc, creature)
+			npcHandler:sayLocalized("npc.commander_stone.which_mission_do_24", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	end

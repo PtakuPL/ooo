@@ -59,7 +59,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "cough syrup") then
-		npcHandler:say("The only person who might have some cough syrup is this druid Ustan. You find him in the tavern. Hmmm the tavern ... <hicks>", npc, creature)
+		npcHandler:sayLocalized("npc.brewster.the_only_person_1", npc, creature)
 	end
 
 	return true

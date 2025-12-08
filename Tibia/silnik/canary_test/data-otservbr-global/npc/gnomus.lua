@@ -64,7 +64,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "measurements") then
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Measurements) == 2 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.TimeTaskMeasurements) > 0 then
-			npcHandler:say("I don't need your help for now. Come back later.", npc, creature)
+			npcHandler:sayLocalized("npc.gnomus.i_dont_need_1", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Measurements) == 2 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.TimeTaskMeasurements) <= 0 then
@@ -83,7 +83,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Measurements) == 1) and (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationCount) < 5) then
-			npcHandler:say("Come back when you have finished your job.", npc, creature)
+			npcHandler:sayLocalized("npc.gnomus.come_back_when_2", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Measurements) == 1 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationCount) == 5 then
 			npcHandler:say({
@@ -118,7 +118,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "ordnance") then
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Ordnance) == 3 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.TimeTaskOrdnance) > 0 then
-			npcHandler:say("I don't need your help for now. Come back later.", npc, creature)
+			npcHandler:sayLocalized("npc.gnomus.i_dont_need_3", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Ordnance) == 3 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.TimeTaskOrdnance) <= 0 then
@@ -141,7 +141,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 22)
 		elseif (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Ordnance) == 1) or (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Ordnance) == 2 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.GnomesCount) < 5) then
-			npcHandler:say("Come back when you have finished your job.", npc, creature)
+			npcHandler:sayLocalized("npc.gnomus.come_back_when_4", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Ordnance) == 2 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.GnomesCount) >= 5 then
 			if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.CrawlersCount) >= 3 then
@@ -154,7 +154,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points) + 2)
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Ordnance, 3)
 			else
-				npcHandler:say("The other are already telling stories about you. Please return to me later if you want to help out some more!", npc, creature)
+				npcHandler:sayLocalized("npc.gnomus.the_other_are_5", npc, creature)
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.TimeTaskOrdnance, os.time() + time)
 				player:addItem(27654, 1)
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points) + 1)
@@ -178,7 +178,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "charting") then
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Charting) == 2 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.TimeTaskCharting) > 0 then
-			npcHandler:say("I don't need your help for now. Come back later.", npc, creature)
+			npcHandler:sayLocalized("npc.gnomus.i_dont_need_6", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Charting) == 2 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.TimeTaskCharting) <= 0 then
@@ -199,11 +199,11 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 33)
 		elseif (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Charting) == 1) and (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.ChartingCount) < 3) then
-			npcHandler:say("Come back when you have finished your job.", npc, creature)
+			npcHandler:sayLocalized("npc.gnomus.come_back_when_7", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Charting) == 1 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.ChartingCount) >= 3 then
-			npcHandler:say("Thank you very much! With those structures mapped out we will be able to complete the puzzle in no time!", npc, creature)
+			npcHandler:sayLocalized("npc.gnomus.thank_you_very_8", npc, creature)
 			if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.ChartingCount) == 6 then
 				player:addItem(27654, 2)
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points) + 2)
@@ -239,7 +239,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	local plural = ""
 
 	if MsgContains(message, "suspicious devices") or MsgContains(message, "suspicious device") then
-		npcHandler:say("If you bring me any suspicious devices on creatures you slay down here, I'll make it worth your while by telling the others of your generosity. How many do you want to offer? ", npc, creature)
+		npcHandler:sayLocalized("npc.gnomus.if_you_bring_9", npc, creature)
 		npcHandler:setTopic(playerId, 55)
 	elseif npcHandler:getTopic(playerId) == 55 then
 		amount[playerId] = tonumber(message)
@@ -247,10 +247,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			if amount[playerId] > 1 then
 				plural = plural .. "s"
 			end
-			npcHandler:say("You want to offer " .. amount[playerId] .. " suspicious device" .. plural .. ". Which leader shall have it, (Gnomus) of the {gnomes}, (Klom Stonecutter) of the {dwarves} or the {scouts} (Lardoc Bashsmite)?", npc, creature)
+			npcHandler:sayLocalized("npc.gnomus.you_want_to_10" .. amount[playerId] .. " suspicious device" .. plural .. ". Which leader shall have it, (Gnomus) of the {gnomes}, (Klom Stonecutter) of the {dwarves} or the {scouts} (Lardoc Bashsmite)?", npc, creature)
 			npcHandler:setTopic(playerId, 56)
 		else
-			npcHandler:say("Don't waste my time.", npc, creature)
+			npcHandler:sayLocalized("npc.gnomus.dont_waste_my_11", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "gnomes") and npcHandler:getTopic(playerId) == 56 then
@@ -263,7 +263,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:removeItem(27653, amount[playerId])
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points) + amount[playerId])
 		else
-			npcHandler:say("You don't have enough suspicious devices.", npc, creature)
+			npcHandler:sayLocalized("npc.gnomus.you_dont_have_12", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "dwarves") and npcHandler:getTopic(playerId) == 56 then
@@ -276,7 +276,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:removeItem(27653, amount[playerId])
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points) + amount[playerId])
 		else
-			npcHandler:say("You don't have enough suspicious devices.", npc, creature)
+			npcHandler:sayLocalized("npc.gnomus.you_dont_have_13", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "scouts") and npcHandler:getTopic(playerId) == 56 then
@@ -289,20 +289,20 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:removeItem(27653, amount[playerId])
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points) + amount[playerId])
 		else
-			npcHandler:say("You don't have enough suspicious devices.", npc, creature)
+			npcHandler:sayLocalized("npc.gnomus.you_dont_have_14", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	end
 
 	if MsgContains(message, "status") then
-		npcHandler:say("So you want to know what we all think about your deeds? What leader's opinion are you interested in, the {gnomes} (Gnomus), the {dwarves} (Klom Stonecutter) or the {scouts} (Lardoc Bashsmite)?", npc, creature)
+		npcHandler:sayLocalized("npc.gnomus.so_you_want_15", npc, creature)
 		npcHandler:setTopic(playerId, 5)
 	elseif MsgContains(message, "gnomes") and npcHandler:getTopic(playerId) == 5 then
-		npcHandler:say("The gnomes are still in need of your help, member of Bigfoot's Brigade. Prove your worth by answering their calls! (" .. math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points), 0) .. "/10)", npc, creature)
+		npcHandler:sayLocalized("npc.gnomus.the_gnomes_are_16" .. math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points), 0) .. "/10)", npc, creature)
 	elseif MsgContains(message, "dwarves") and npcHandler:getTopic(playerId) == 5 then
-		npcHandler:say("The dwarves are still in need of your help, member of Bigfoot's Brigade. Prove your worth by answering their calls! (" .. math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points), 0) .. "/10)", npc, creature)
+		npcHandler:sayLocalized("npc.gnomus.the_dwarves_are_17" .. math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points), 0) .. "/10)", npc, creature)
 	elseif MsgContains(message, "scouts") and npcHandler:getTopic(playerId) == 5 then
-		npcHandler:say("The scouts are still in need of your help, member of Bigfoot's Brigade. Prove your worth by answering their calls! (" .. math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points), 0) .. "/10)", npc, creature)
+		npcHandler:sayLocalized("npc.gnomus.the_scouts_are_18" .. math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points), 0) .. "/10)", npc, creature)
 	end
 
 	return true

@@ -101,10 +101,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif npcHandler:getTopic(playerId) == 1 and message:lower() ~= "straight" then
-		npcHandler:say("Harharhar, landlubber, no no!! The correct command would be STRAIGHT. Remember that! Next, what you gonna say when you see something to left?", npc, creature)
+		npcHandler:sayLocalized("npc.captain_haba_open_sea.harharhar_landlubber_no_1", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif npcHandler:getTopic(playerId) == 1 and message:lower() ~= "larboard" then
-		npcHandler:say("Harharhar, landlubber, ya got it all wrong!! The correct command would be LARBOARD side. Don't forget that, 'kay? Last one, what you gonna say to me when ya see somethin' to the right?", npc, creature)
+		npcHandler:sayLocalized("npc.captain_haba_open_sea.harharhar_landlubber_ya_2", npc, creature)
 		npcHandler:setTopic(playerId, 3)
 	elseif npcHandler:getTopic(playerId) == 1 and message:lower() ~= "starboard" then
 		npcHandler:say({
@@ -143,7 +143,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Direction, 0)
 		end
 	elseif MsgContains(message:lower(), "speed") then
-		npcHandler:say("IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!", npc, creature)
+		npcHandler:sayLocalized("npc.captain_haba_open_sea.is_that_all_3", npc, creature)
 		if player:getStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Direction) == 4 then
 			player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.SuccessSwitch, 1)
 			player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Direction, 0)
@@ -153,9 +153,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif table.contains({ "god", "svargrond", "back", "hunt", "passage", "trip" }, message:lower()) then
 		if table.contains({ "god", "svargrond", "back", "hunt" }, message:lower()) then
-			npcHandler:say("Already got enough, huh? I kind o' expected that, landlubber! Let's head for Svargrond! Ready?", npc, creature)
+			npcHandler:sayLocalized("npc.captain_haba_open_sea.already_got_enough_4", npc, creature)
 		else
-			npcHandler:say("Y' already wanna give up?? I should've known. I bring ya back to Svargrond, 'kay?", npc, creature)
+			npcHandler:sayLocalized("npc.captain_haba_open_sea.y_already_wanna_5", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 4)
 	elseif message:lower() == "yes" and npcHandler:getTopic(playerId) == 4 then

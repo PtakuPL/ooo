@@ -67,13 +67,13 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "addon") or MsgContains(message, "outfit") or MsgContains(message, "hat") then
 		local addonProgress = player:getStorageValue(Storage.Quest.U7_8.CitizenOutfits.AddonHat)
 		if addonProgress < 1 then
-			npcHandler:say("Pretty, isn't it? My friend Amber taught me how to make it, but I could help you with one if you like. What do you say?", npc, creature)
+			npcHandler:sayLocalized("npc.hanna.pretty_isnt_it_1", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif addonProgress == 1 then
-			npcHandler:say("Oh, you're back already? Did you bring a legion helmet, 100 chicken feathers and 50 honeycombs?", npc, creature)
+			npcHandler:sayLocalized("npc.hanna.oh_youre_back_2", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif addonProgress == 2 then
-			npcHandler:say("Pretty hat, isn't it?", npc, creature)
+			npcHandler:sayLocalized("npc.hanna.pretty_hat_isnt_3", npc, creature)
 		end
 		return true
 	end
@@ -82,21 +82,21 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			player:setStorageValue(Storage.Quest.U7_8.CitizenOutfits.AddonHat, 1)
 			player:setStorageValue(Storage.Quest.U7_8.CitizenOutfits.MissionHat, 1)
-			npcHandler:say("Okay, here we go, listen closely! I need a few things... a basic hat of course, maybe a legion helmet would do. Then about 100 chicken feathers... and 50 honeycombs as glue. That's it, come back to me once you gathered it!", npc, creature)
+			npcHandler:sayLocalized("npc.hanna.okay_here_we_4", npc, creature)
 		else
-			npcHandler:say("Aw, I guess you don't like feather hats. No big deal.", npc, creature)
+			npcHandler:sayLocalized("npc.hanna.aw_i_guess_5", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "yes") then
 			if player:getItemCount(3374) < 1 then
-				npcHandler:say("Sorry, but I can't see a legion helmet.", npc, creature)
+				npcHandler:sayLocalized("npc.hanna.sorry_but_i_6", npc, creature)
 			elseif player:getItemCount(5890) < 100 then
-				npcHandler:say("Sorry, but you don't enough chicken feathers.", npc, creature)
+				npcHandler:sayLocalized("npc.hanna.sorry_but_you_7", npc, creature)
 			elseif player:getItemCount(5902) < 50 then
-				npcHandler:say("Sorry, but you don't have enough honeycombs.", npc, creature)
+				npcHandler:sayLocalized("npc.hanna.sorry_but_you_8", npc, creature)
 			else
-				npcHandler:say("Great job! That must have taken a lot of work. Okay, you put it like this... then glue like this... here!", npc, creature)
+				npcHandler:sayLocalized("npc.hanna.great_job_that_9", npc, creature)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 				player:removeItem(3374, 1)
 				player:removeItem(5902, 50)
@@ -107,7 +107,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U7_8.CitizenOutfits.AddonHat, 2)
 			end
 		else
-			npcHandler:say("Maybe another time.", npc, creature)
+			npcHandler:sayLocalized("npc.hanna.maybe_another_time_10", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

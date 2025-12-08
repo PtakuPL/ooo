@@ -68,9 +68,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:removeItem(139, 1) then
 				player:setStorageValue(Storage.Quest.U8_1.ToOutfoxAFoxQuest.Questline, 2)
 				player:addItem(875, 1)
-				npcHandler:say("As I was just saying to the others, 'this brave fellow will bring me my mining helmet back' and here you are with it!! Here take my spare helmet, I don't need it anymore!", npc, creature)
+				npcHandler:sayLocalized("npc.budrik.as_i_was_1", npc, creature)
 			else
-				npcHandler:say("We presume the hideout of The Horned Fox is somewhere in the south-west near the coast, good luck finding my mining helmet!", npc, creature)
+				npcHandler:sayLocalized("npc.budrik.we_presume_the_2", npc, creature)
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_1.ToOutfoxAFoxQuest.Questline) == 2 and player:getLevel() <= 40 and player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BudrikMinos) < 0 then
 			npcHandler:say({
@@ -87,25 +87,25 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BudrikMinos, 1)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BossKillCount.FoxCount, 0)
 			else
-				npcHandler:say("Come back when you have slain {5000 minotaurs!}", npc, creature)
+				npcHandler:sayLocalized("npc.budrik.come_back_when_3", npc, creature)
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BudrikMinos) == 2 and player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BossKillCount.FoxCount) == 1 then
-			npcHandler:say("It was very decent of you to help me, and I am thankful, really I am, but now I have to get back to my duties as a foreman.", npc, creature)
+			npcHandler:sayLocalized("npc.budrik.it_was_very_4", npc, creature)
 		elseif player:getLevel() > 40 and player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BudrikMinos) < 0 then
-			npcHandler:say("Well, I could need help with that damn Horned Fox and his gang, but I guess since you are rather experienced, killing minotaurs would bore you to death. I'll wait for someone else. But thanks!", npc, creature)
+			npcHandler:sayLocalized("npc.budrik.well_i_could_5", npc, creature)
 		else
-			npcHandler:say("Hum... what, {task}?", npc, creature)
+			npcHandler:sayLocalized("npc.budrik.hum_what_task_6", npc, creature)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("I knew you have the guts for that task! We presume the hideout of The Horned Fox somewhere in the south-west near the coast. Good luck!", npc, creature)
+			npcHandler:sayLocalized("npc.budrik.i_knew_you_7", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 			if player:getStorageValue(Storage.Quest.U8_1.TibiaTales.DefaultStart) <= 0 then
 				player:setStorageValue(Storage.Quest.U8_1.TibiaTales.DefaultStart, 1)
 			end
 			player:setStorageValue(Storage.Quest.U8_1.ToOutfoxAFoxQuest.Questline, 1)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Hussah! Let's bring war to those hoof-legged, dirt-necked, bull-headed minotaurs!! Come back to me when you are done with your {mission}.", npc, creature)
+			npcHandler:sayLocalized("npc.budrik.hussah_lets_bring_8", npc, creature)
 			player:setStorageValue(JOIN_STOR, 1)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BudrikMinos, 0)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.MinotaurCount, 0)

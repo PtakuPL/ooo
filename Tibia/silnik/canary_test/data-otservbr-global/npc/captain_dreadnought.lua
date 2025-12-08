@@ -227,7 +227,7 @@ local function donationHandler(npc, creature, message, keywords, parameters, nod
 	local playerId = player:getId()
 
 	if (parameters.confirm ~= true) and (parameters.decline ~= true) then
-		npcHandler:say("So you want to donate " .. (player:getMoney() - npcConfig.moneyToNeedDonation) .. " gold coins? \z
+		npcHandler:sayLocalized("npc.captain_dreadnought.so_you_want_1" .. (player:getMoney() - npcConfig.moneyToNeedDonation) .. " gold coins? \z
 			The little kiddies are going to appreciate it.", npc, creature)
 	elseif parameters.confirm == true then
 		if player:getMoney() > npcConfig.moneyToNeedDonation then
@@ -240,7 +240,7 @@ local function donationHandler(npc, creature, message, keywords, parameters, nod
 			)
 			npcHandler:resetNpc(creature)
 		else
-			npcHandler:say("Well, har har. Very funny. Come on, pick up the gold you just dropped.", npc, creature)
+			npcHandler:sayLocalized("npc.captain_dreadnought.well_har_har_2", npc, creature)
 		end
 	elseif parameters.decline == true then
 		if player:getMoney() > npcConfig.moneyToNeedDonation then
@@ -261,9 +261,9 @@ local function townTravelHandler(npc, creature, message, keywords, parameters, n
 		local town = towns[parameters.townId]
 		if town.canBeSailed == false then
 			if player:isPremium() then
-				npcHandler:say("What? Whatever that is, it's not a port I sail to. " .. townNames.premium .. "?", npc, creature)
+				npcHandler:sayLocalized("npc.captain_dreadnought.what_whatever_that_3" .. townNames.premium .. "?", npc, creature)
 			else
-				npcHandler:say("What? Whatever that is, it's not a port I sail to. " .. townNames.free .. "?", npc, creature)
+				npcHandler:sayLocalized("npc.captain_dreadnought.what_whatever_that_4" .. townNames.free .. "?", npc, creature)
 			end
 		elseif town.isPremium == true and not player:isPremium() then
 			npcHandler:say(
@@ -301,9 +301,9 @@ local function townTravelHandler(npc, creature, message, keywords, parameters, n
 		npcHandler:removeInteraction(npc, creature)
 	elseif parameters.decline == true then
 		if player:isPremium() then
-			npcHandler:say("Changed your mind? Which city do you want to head to, " .. townNames.premium .. "?", npc, creature)
+			npcHandler:sayLocalized("npc.captain_dreadnought.changed_your_mind_5" .. townNames.premium .. "?", npc, creature)
 		else
-			npcHandler:say("Changed your mind? Which city do you want to head to, " .. townNames.free .. "?", npc, creature)
+			npcHandler:sayLocalized("npc.captain_dreadnought.changed_your_mind_6" .. townNames.free .. "?", npc, creature)
 		end
 		npcHandler.keywordHandler:moveUp(creature, 1)
 	elseif (parameters.sailableTowns == true) and parameters.text then
@@ -453,9 +453,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			creature
 		)
 	elseif currentNode == readyNode then
-		npcHandler:say("Errr... was that a foreign language? Could you just answer with a clear {yes} or {no}?", npc, creature)
+		npcHandler:sayLocalized("npc.captain_dreadnought.errr_was_that_7", npc, creature)
 	elseif currentNode == notReadyNode then
-		npcHandler:say("Aw, come on! Talk to me in human words! {Yes}, {no}, or mention a city's name, that kind of stuff.", npc, creature)
+		npcHandler:sayLocalized("npc.captain_dreadnought.aw_come_on_8", npc, creature)
 	end
 	return true
 end

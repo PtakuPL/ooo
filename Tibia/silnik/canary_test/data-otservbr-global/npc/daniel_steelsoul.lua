@@ -66,56 +66,56 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_1.TibiaTales.AgainstTheSpiderCult) < 1 then
 			npcHandler:setTopic(playerId, 1)
-			npcHandler:say("Very good, we need heroes like you to go on a suici.....er....to earn respect of the authorities here AND in addition get a great reward for it. Are you interested in the job?", npc, creature)
+			npcHandler:sayLocalized("npc.daniel_steelsoul.very_good_we_1", npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U8_1.TibiaTales.AgainstTheSpiderCult) == 5 then
 			player:setStorageValue(Storage.Quest.U8_1.TibiaTales.AgainstTheSpiderCult, 6)
 			npcHandler:setTopic(playerId, 0)
 			player:addItem(814, 1)
-			npcHandler:say("What? YOU DID IT?!?! That's...that's...er....<drops a piece of paper. You see the headline 'death certificate'> like I expected!! Here is your reward.", npc, creature)
+			npcHandler:sayLocalized("npc.daniel_steelsoul.what_you_did_2", npc, creature)
 		end
 	elseif MsgContains(message, "task") then
 		if player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.TrollTask) == 0 then
 			if player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.TrollCount) >= 100 then
-				npcHandler:say("Very nice, |PLAYERNAME|. That will push the trolls' forces back a little. Here is your reward!", npc, creature)
+				npcHandler:sayLocalized("npc.daniel_steelsoul.very_nice_playername_3", npc, creature)
 				player:addExperience(200, true)
 				player:addMoney(200)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.TrollTask, 1)
 				return true
 			else
-				npcHandler:say("Your current task is to kill 100 trolls. You have already killed " .. player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.TrollCount) .. " of them. Keep going!", npc, creature)
+				npcHandler:sayLocalized("npc.daniel_steelsoul.your_current_task_4" .. player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.TrollCount) .. " of them. Keep going!", npc, creature)
 				return true
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.GoblinTask) == 0 then
 			if player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.GoblinCount) >= 150 then
-				npcHandler:say("Congratulations, you've fought well against the goblin plague. Thank you! Here is your reward!", npc, creature)
+				npcHandler:sayLocalized("npc.daniel_steelsoul.congratulations_youve_fou_5", npc, creature)
 				player:addExperience(300, true)
 				player:addMoney(250)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.GoblinTask, 1)
 				return true
 			else
-				npcHandler:say("Your current task is to kill 150 goblins. You have already killed " .. player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.GoblinCount) .. " of them. Keep going!", npc, creature)
+				npcHandler:sayLocalized("npc.daniel_steelsoul.your_current_task_6" .. player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.GoblinCount) .. " of them. Keep going!", npc, creature)
 				return true
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.RotwormTask) == 0 then
 			if player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.RotwormCount) >= 300 then
-				npcHandler:say("Well done! Thanks to you the city is a bit safer. Here's your reward!", npc, creature)
+				npcHandler:sayLocalized("npc.daniel_steelsoul.well_done_thanks_7", npc, creature)
 				player:addExperience(1000, true)
 				player:addMoney(400)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.RotwormTask, 1)
 				return true
 			else
-				npcHandler:say("Your current task is to kill 300 rotworms. You have already killed " .. player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.RotwormCount) .. " of them. Keep going!", npc, creature)
+				npcHandler:sayLocalized("npc.daniel_steelsoul.your_current_task_8" .. player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.RotwormCount) .. " of them. Keep going!", npc, creature)
 				return true
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.CyclopsTask) == 0 then
 			if player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.CyclopsCount) >= 500 then
-				npcHandler:say("Very good job, |PLAYERNAME|. You've been a great help. Here's your reward!", npc, creature)
+				npcHandler:sayLocalized("npc.daniel_steelsoul.very_good_job_9", npc, creature)
 				player:addExperience(3000, true)
 				player:addMoney(800)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.CyclopsTask, 1)
 				return true
 			else
-				npcHandler:say("Your current task is to kill 500 cyclops. You have already killed " .. player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.CyclopsCount) .. " of them. Keep going!", npc, creature)
+				npcHandler:sayLocalized("npc.daniel_steelsoul.your_current_task_10" .. player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.CyclopsCount) .. " of them. Keep going!", npc, creature)
 				return true
 			end
 		end
@@ -127,7 +127,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				}, npc, creature)
 				npcHandler:setTopic(playerId, 2)
 			elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.TrollTask) == 1 and player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.GoblinTask) == 1 then
-				npcHandler:say("Currently there is no new task I could entrust you with. However, you can repeat killing {goblins} or {trolls}. Which would you prefer?", npc, creature)
+				npcHandler:sayLocalized("npc.daniel_steelsoul.currently_there_is_11", npc, creature)
 				npcHandler:setTopic(playerId, 4)
 			elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.TrollTask) == 1 then
 				npcHandler:say({
@@ -149,13 +149,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 		if player:getLevel() >= 20 and player:getLevel() < 40 then
 			if player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.RotwormTask) < 0 or player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.RotwormTask) == 1 then
-				npcHandler:say("Maybe you have noticed the numerous rotworms that burrowed under Edron. They're quite a pest. You look strong enough to be able to vanquish a few for us. Do you think you can kill 300 rotworms?", npc, creature)
+				npcHandler:sayLocalized("npc.daniel_steelsoul.maybe_you_have_12", npc, creature)
 				npcHandler:setTopic(playerId, 5)
 				return true
 			end
 		end
 	elseif MsgContains(message, "trolls") and npcHandler:getTopic(playerId) == 4 then
-		npcHandler:say("I'm pleased with your eagerness. To reach your goal, you have to kill the brown trolls and troll champions. Good luck!", npc, creature)
+		npcHandler:sayLocalized("npc.daniel_steelsoul.im_pleased_with_13", npc, creature)
 		player:setStorageValue(JOIN_STOR, 1)
 		player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.TrollCount, 0)
 		player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.TrollCount, 0)
@@ -163,7 +163,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.TrollTask, 0)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "goblins") and npcHandler:getTopic(playerId) == 4 then
-		npcHandler:say("Fine then! You can kill normal goblins as well as scavengers and assassins on the lower levels, but beware, they are a bit harder. Have a good hunt!", npc, creature)
+		npcHandler:sayLocalized("npc.daniel_steelsoul.fine_then_you_14", npc, creature)
 		player:setStorageValue(JOIN_STOR, 1)
 		player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.GoblinCount, 0)
 		player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.GoblinCount, 0)
@@ -180,7 +180,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				"The mission is simple: go to the orcs and destroy all spider eggs that are hatched by the giant spider they have managed to catch. The orcs are located in the south of the western part of the island.",
 			}, npc, creature)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("I'm pleased with your eagerness. To help you find the trolls' den, I mark both the entrance to the passage and their lair on your map. To reach your goal, you have to kill the normal brown trolls, but troll champions count too. Good luck!", npc, creature)
+			npcHandler:sayLocalized("npc.daniel_steelsoul.im_pleased_with_15", npc, creature)
 			player:setStorageValue(JOIN_STOR, 1)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.TrollCount, 0)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.TrollCount, 0)
@@ -188,7 +188,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.TrollTask, 0)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Fine then! I'll show you the Goblin den on your map, here. Use the same passage you did when hunting for trolls. You can kill normal goblins as well as scavengers and assassins on the lower levels, but beware, they are a bit harder.", npc, creature)
+			npcHandler:sayLocalized("npc.daniel_steelsoul.fine_then_ill_16", npc, creature)
 			player:setStorageValue(JOIN_STOR, 1)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.GoblinCount, 0)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.GoblinCount, 0)
@@ -223,19 +223,19 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Another option if you want to do a task for Edron would be to killing 150 goblins. Would that suit your taste better?", npc, creature)
+			npcHandler:sayLocalized("npc.daniel_steelsoul.another_option_if_17", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Another option if you want to do a task for Edron would be to repeat killing 100 trolls. Would that suit your taste better?", npc, creature)
+			npcHandler:sayLocalized("npc.daniel_steelsoul.another_option_if_18", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 5 and player:getLevel() >= 30 then
 			if player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.CyclopsTask) < 0 then
-				npcHandler:say("Another option if you want to do a task for Edron would be to killing 500 cyclops. Would that suit your taste better?", npc, creature)
+				npcHandler:sayLocalized("npc.daniel_steelsoul.another_option_if_19", npc, creature)
 				npcHandler:setTopic(playerId, 6)
 			end
 		elseif npcHandler:getTopic(playerId) == 6 and player:getLevel() < 40 then
 			if player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.RotwormTask) < 0 or player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.RotwormTask) == 1 then
-				npcHandler:say("Another option if you want to do a task for Edron would be to killing 300 rotworms. Would that suit your taste better?", npc, creature)
+				npcHandler:sayLocalized("npc.daniel_steelsoul.another_option_if_20", npc, creature)
 				npcHandler:setTopic(playerId, 5)
 			end
 		end

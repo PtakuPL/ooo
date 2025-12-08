@@ -61,11 +61,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "yes") then
 		local player = Player(creature)
 		if not player:removeMoneyBank(50) then
-			npcHandler:say("The exhibition is not for free. You have to pay 50 Gold to get in. Next please!", npc, creature)
+			npcHandler:sayLocalized("npc.cillia.the_exhibition_is_1", npc, creature)
 			return true
 		end
 
-		npcHandler:say("And here we go!", npc, creature)
+		npcHandler:sayLocalized("npc.cillia.and_here_we_2", npc, creature)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		local exhibitionPosition = Position(32390, 32195, 8)
 		player:teleportTo(exhibitionPosition)

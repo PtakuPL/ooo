@@ -60,28 +60,28 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "present") then
 		if player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission05) == 2 then
-			npcHandler:say("You have a present for me?? Realy?", npc, creature)
+			npcHandler:sayLocalized("npc.dermot.you_have_a_1", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "key") then
-		npcHandler:say("Do you want to buy the dungeon key for 2000 gold?", npc, creature)
+		npcHandler:sayLocalized("npc.dermot.do_you_want_2", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:removeItem(3218, 1) then
-				npcHandler:say("Thank you very much!", npc, creature)
+				npcHandler:sayLocalized("npc.dermot.thank_you_very_3", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission05, 3)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if player:removeMoneyBank(2000) then
-				npcHandler:say("Here it is.", npc, creature)
+				npcHandler:sayLocalized("npc.dermot.here_it_is_4", npc, creature)
 				local key = player:addItem(2968, 1)
 				if key then
 					key:setActionId(3940)
 				end
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				npcHandler:sayLocalized("npc.dermot.you_dont_have_5", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		end

@@ -56,7 +56,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "abandoned sewers") then
 		if player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission05) == 1 then
-			npcHandler:say("I'm glad to see you back alive and healthy. Did you find anything interesting that you want to {report}?", npc, creature)
+			npcHandler:sayLocalized("npc.elliott.im_glad_to_1", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		elseif player:getStorageValue(Storage.Quest.U10_50.OramondQuest.TheAncientSewers.Mission) < 22 then
 			npcHandler:say({
@@ -78,15 +78,15 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U10_50.OramondQuest.TheAncientSewers.Mission) < 1 then
-			npcHandler:say("The sewers need repair. You in?", npc, creature)
+			npcHandler:sayLocalized("npc.elliott.the_sewers_need_2", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U10_50.OramondQuest.TheAncientSewers.Mission) < 22 then
-			npcHandler:say("Elliott's keeps calling it that. It's just another job! You fixed some broken pipes and stuff? Let me check, {ok}?", npc, creature)
+			npcHandler:sayLocalized("npc.elliott.elliotts_keeps_calling_3", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Good. Broken pipe and generator pieces, there's smoke evading. That's how you recognise them. See how you can fix them using your hands. Need about, oh, twenty of them at least repaired. Report to me or Jacob", npc, creature)
+			npcHandler:sayLocalized("npc.elliott.good_broken_pipe_4", npc, creature)
 			player:setStorageValue(Storage.Quest.U10_50.OramondQuest.TheAncientSewers.Mission, 1)
 			if player:getStorageValue(Storage.Quest.U10_50.OramondQuest.TheAncientSewers.Door) < 1 then
 				player:setStorageValue(Storage.Quest.U10_50.OramondQuest.TheAncientSewers.Door, 1)
@@ -98,7 +98,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "ok") then
 		if npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Good. Thanks, man. That's one vote you got for helping us with this. If you want to redo this task just say {abandoned sewers} to repeat it.", npc, creature)
+			npcHandler:sayLocalized("npc.elliott.good_thanks_man_5", npc, creature)
 			player:setStorageValue(Storage.Quest.U10_50.OramondQuest.TheAncientSewers.Mission, 22)
 			local currentVotingPoints = player:getStorageValue(Storage.Quest.U10_50.OramondQuest.VotingPoints)
 			if currentVotingPoints == -1 then
@@ -118,7 +118,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission06, 1) -- Start mission 6
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You already reported this mission, go to the next.", npc, creature)
+				npcHandler:sayLocalized("npc.elliott.you_already_reported_6", npc, creature)
 			end
 		end
 	end

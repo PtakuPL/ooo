@@ -67,17 +67,17 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine, 13)
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Shooting, 0)
 		elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 13 then
-			npcHandler:say("Shoot at the villain targets that will pop up. DON'T shoot innocent civilians since this will reset your score and you have to start all over. {Report} to me afterwards.", npc, creature)
+			npcHandler:sayLocalized("npc.gnomaticus.shoot_at_the_1", npc, creature)
 		end
 	elseif MsgContains(message, "report") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 14 then
-			npcHandler:say("You are showing some promise! Now continue with the recruitment and talk to Gnomewart to the south for your endurance test!", npc, creature)
+			npcHandler:sayLocalized("npc.gnomaticus.you_are_showing_2", npc, creature)
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Shooting, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Shooting) + 1)
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine, 15)
 		elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 13 then
-			npcHandler:say("Sorry you are not done yet.", npc, creature)
+			npcHandler:sayLocalized("npc.gnomaticus.sorry_you_are_3", npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) <= 12 then
-			npcHandler:say("You have nothing to report at all.", npc, creature)
+			npcHandler:sayLocalized("npc.gnomaticus.you_have_nothing_4", npc, creature)
 		end
 	end
 	return true

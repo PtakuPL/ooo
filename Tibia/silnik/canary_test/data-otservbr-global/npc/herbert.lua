@@ -60,19 +60,19 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "letter") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission06) == 1 then
-			npcHandler:say("You would like Chantalle's letter? only if you are willing to pay a price. {gold} maybe?", npc, creature)
+			npcHandler:sayLocalized("npc.herbert.you_would_like_1", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "gold") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Are you willing to pay 1000 gold for this letter?", npc, creature)
+			npcHandler:sayLocalized("npc.herbert.are_you_willing_2", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
 			if player:removeMoneyBank(1000) then
 				player:addItem(7940, 1)
-				npcHandler:say("Here you go kind sir.", npc, creature)
+				npcHandler:sayLocalized("npc.herbert.here_you_go_3", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		end

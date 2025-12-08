@@ -70,10 +70,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "sail") and player:getStorageValue(Storage.Quest.U12_60.APiratesTail.TentuglyKilled) == 1 then
-		npcHandler:say("There are two different routes. The dangerous one will be available once a day and it is likely that a seemonster will attack the ship once again. And a {safe} route that we can take directly there.", npc, creature)
+		npcHandler:sayLocalized("npc.captain_jack_rat.there_are_two_1", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "safe") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say("Do you want to take the safe route?", npc, creature)
+		npcHandler:sayLocalized("npc.captain_jack_rat.do_you_want_2", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then

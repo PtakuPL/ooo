@@ -66,21 +66,21 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "ticket") then
 		if player:getStorageValue(Storage.WagonTicket) >= os.time() then
-			npcHandler:say("Your weekly ticket is still valid. Would be a waste of money to purchase a second one", npc, creature)
+			npcHandler:sayLocalized("npc.gewen.your_weekly_ticket_1", npc, creature)
 			return true
 		end
 
-		npcHandler:say("Do you want to purchase a weekly ticket for the ore wagons? With it you can travel freely and swiftly through Kazordoon for one week. 250 gold only. Deal?", npc, creature)
+		npcHandler:sayLocalized("npc.gewen.do_you_want_2", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
 			if not player:removeMoneyBank(250) then
-				npcHandler:say("You don't have enough money.", npc, creature)
+				npcHandler:sayLocalized("npc.gewen.you_dont_have_3", npc, creature)
 				return true
 			end
 
 			player:setStorageValue(Storage.WagonTicket, os.time() + 7 * 24 * 60 * 60)
-			npcHandler:say("Here is your stamp. It can't be transferred to another person and will last one week from now. You'll get notified upon using an ore wagon when it isn't valid anymore.", npc, creature)
+			npcHandler:sayLocalized("npc.gewen.here_is_your_4", npc, creature)
 		elseif MsgContains(message, "no") then
 			npcHandler:say("No then.", npc, creature)
 		end

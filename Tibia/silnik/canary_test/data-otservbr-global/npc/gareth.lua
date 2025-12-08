@@ -80,7 +80,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) < 2 then
 		if MsgContains(message, "patrons") then
-			npcHandler:say("If you like to, you can pay some gold to become a patron of the arts for this wonderful museum. The price is 10,000 gold. Your personal gain will be priceless. Do you want to {pay}?", npc, creature)
+			npcHandler:sayLocalized("npc.gareth.if_you_like_1", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif MsgContains(message, "pay") and npcHandler:getTopic(playerId) == 2 then
 			if (player:getMoney() + player:getBankBalance()) >= value then
@@ -94,12 +94,12 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.AccessDoorInvestigation, 1)
 				npcHandler:setTopic(playerId, 3)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				npcHandler:sayLocalized("npc.gareth.you_dont_have_2", npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			end
 		end
 	elseif MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) == 3 then
-		npcHandler:say("They want us to buy the picture back. Unfortunately this artefact is so important that I don't see an alternative. Please got to Iwar in Kazordoon and pay the money.", npc, creature)
+		npcHandler:sayLocalized("npc.gareth.they_want_us_3", npc, creature)
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission, 4)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) == 5 then
@@ -111,7 +111,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission, 6)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) == 9 then
-		npcHandler:say("So the rumours are true. How could this happen? I'll keep the picture at its place until we've got a replacement. Please fo to {Angelo} and ask him if he has a new artefact for our museum.", npc, creature)
+		npcHandler:sayLocalized("npc.gareth.so_the_rumours_4", npc, creature)
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission, 10)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) == 11 then
@@ -123,7 +123,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.AccessDoorGareth, 1)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) == 8 then
-		npcHandler:say("You didn't investigate the pictures yet. Do your job and then come back.", npc, creature)
+		npcHandler:sayLocalized("npc.gareth.you_didnt_investigate_5", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 
@@ -137,7 +137,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.Questline, 7)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.Questline) == 1 then
-			npcHandler:say("It is planned to extend the MOTA. But this will take time, because our workers have faced a little {problem}.", npc, creature)
+			npcHandler:sayLocalized("npc.gareth.it_is_planned_6", npc, creature)
 			npcHandler:setTopic(playerId, 11)
 		end
 	elseif MsgContains(message, "problem") and npcHandler:getTopic(playerId) == 11 then
@@ -150,7 +150,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 12 then
 		if npcHandler:getTopic(playerId) == 12 then
-			npcHandler:say("You are a true patron of the arts! I have opened the construction site for you. Start your work right now!", npc, creature)
+			npcHandler:sayLocalized("npc.gareth.you_are_a_7", npc, creature)
 			player:setStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.Questline, 2)
 			npcHandler:setTopic(playerId, 0)
 		end

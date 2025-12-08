@@ -53,11 +53,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	local playerId = player:getId()
 
 	if MsgContains(message, "job") then
-		return npcHandler:say("I'm the officer responsible for this area. I give out missions, accept mission reports and oversee our defences.", npc, creature)
+		return npcHandler:sayLocalized("npc.gnombold.im_the_officer_1", npc, creature)
 	end
 
 	if MsgContains(message, "gnome") then
-		return npcHandler:say("Gnomes have lived autonomous for so long that it still feels odd to work with strangers for many of us.", npc, creature)
+		return npcHandler:sayLocalized("npc.gnombold.gnomes_have_lived_2", npc, creature)
 	end
 
 	if MsgContains(message, "area") then
@@ -74,69 +74,69 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getLevel() > levels[2] then
-			npcHandler:say("Sorry, but no! Your expertise could be put to better use elsewhere. Here awaits you no challenge. You are desperately needed in the deeper levels of the Spike. Report there immediately. ", npc, creature)
+			npcHandler:sayLocalized("npc.gnombold.sorry_but_no_3", npc, creature)
 		else
-			npcHandler:say(" I can offer you several missions: to gather geomantic {charges}, to {fertilise} the mushroom caves, to destroy monster {nests} and to {kill} some crystal crushers.", npc, creature)
+			npcHandler:sayLocalized("npc.gnombold.i_can_offer_4", npc, creature)
 		end
 		return
 	end
 
 	if MsgContains(message, "report") then
 		talkState[playerId] = "report"
-		return npcHandler:say("What mission do you want to report about: gathering the geomantic {charges}, the {fertilisation} of the mushroom caves, about destroying monster {nests} and the {killing} of crystal crushers?", npc, creature)
+		return npcHandler:sayLocalized("npc.gnombold.what_mission_do_5", npc, creature)
 	end
 
 	if talkState[playerId] == "report" then
 		if MsgContains(message, "charges") then
 			if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Main) == -1 then
-				npcHandler:say("You have not started that mission.", npc, creature)
+				npcHandler:sayLocalized("npc.gnombold.you_have_not_6", npc, creature)
 			elseif player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Main) == 3 then
-				npcHandler:say("You have done well. Here, take your reward.", npc, creature)
+				npcHandler:sayLocalized("npc.gnombold.you_have_done_7", npc, creature)
 				player:addFamePoint()
 				player:addExperience(2000, true)
 				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Main, -1)
 				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Daily, os.time() + 72000)
 			else
-				npcHandler:say("Gnowful! Charge this magnet at three monoliths in the cave system. With three charges, the magnet will disintegrate and charge you with its gathered energies. Step on the magnetic extractor here to deliver the charge to us, then report to me.", npc, creature)
+				npcHandler:sayLocalized("npc.gnombold.gnowful_charge_this_8", npc, creature)
 			end
 		elseif MsgContains(message, "fertilisation") then
 			if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Mushroom_Main) == -1 then
-				npcHandler:say("You have not started that mission.", npc, creature)
+				npcHandler:sayLocalized("npc.gnombold.you_have_not_9", npc, creature)
 			elseif player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Mushroom_Main) == 4 then
-				npcHandler:say("You have done well. Here, take your reward.", npc, creature)
+				npcHandler:sayLocalized("npc.gnombold.you_have_done_10", npc, creature)
 				player:addFamePoint()
 				player:addExperience(2000, true)
 				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Mushroom_Main, -1)
 				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Mushroom_Daily, os.time() + 72000)
 			else
-				npcHandler:say("Gnowful! Use the fertiliser on four gardener mushroom in the caves.", npc, creature)
+				npcHandler:sayLocalized("npc.gnombold.gnowful_use_the_11", npc, creature)
 			end
 		elseif MsgContains(message, "nests") then
 			if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Main) == -1 then
-				npcHandler:say("You have not started that mission.", npc, creature)
+				npcHandler:sayLocalized("npc.gnombold.you_have_not_12", npc, creature)
 			elseif player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Main) == 5 then
-				npcHandler:say("You have done well. Here, take your reward.", npc, creature)
+				npcHandler:sayLocalized("npc.gnombold.you_have_done_13", npc, creature)
 				player:addFamePoint()
 				player:addExperience(2000, true)
 				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Main, -1)
 				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Daily, os.time() + 72000)
 			else
-				npcHandler:say("Gnowful! Step into the transformer and destroy eight monster nests.", npc, creature)
+				npcHandler:sayLocalized("npc.gnombold.gnowful_step_into_14", npc, creature)
 			end
 		elseif MsgContains(message, "killing") then
 			if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Main) == -1 then
-				npcHandler:say("You have not started that mission.", npc, creature)
+				npcHandler:sayLocalized("npc.gnombold.you_have_not_15", npc, creature)
 			elseif player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Main) == 7 then
-				npcHandler:say("You have done well. Here, take your reward.", npc, creature)
+				npcHandler:sayLocalized("npc.gnombold.you_have_done_16", npc, creature)
 				player:addFamePoint()
 				player:addExperience(2000, true)
 				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Main, -1)
 				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Daily, os.time() + 72000)
 			else
-				npcHandler:say("Gnowful! Just go out to the caves and kill at least seven crystalcrushers.", npc, creature)
+				npcHandler:sayLocalized("npc.gnombold.gnowful_just_go_17", npc, creature)
 			end
 		else
-			npcHandler:say("That's not a valid mission name.", npc, creature)
+			npcHandler:sayLocalized("npc.gnombold.thats_not_a_18", npc, creature)
 		end
 		talkState[playerId] = nil
 		return
@@ -144,18 +144,18 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "charges") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Daily) >= os.time() then
-			return npcHandler:say("Sorry, you have to wait " .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
+			return npcHandler:sayLocalized("npc.gnombold.sorry_you_have_19" .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
 		end
 
 		if (player:getLevel() < levels[1]) or (player:getLevel() > levels[2]) then
-			return npcHandler:say("Sorry, you are not on the required range of levels [" .. levels[1] .. "-" .. levels[2] .. "].", npc, creature)
+			return npcHandler:sayLocalized("npc.gnombold.sorry_you_are_20" .. levels[1] .. "-" .. levels[2] .. "].", npc, creature)
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Main) == -1 then
 			npcHandler:say({ "Our mission for you is to use a magnet on three different monoliths in the cave system here. After the magnet evaporates on the last charge, enter the magnetic extractor here to deliver your charge.", "If you are interested, I can give you some more {information} about it. Are you willing to accept this mission?" }, npc, creature)
 			talkState[playerId] = "charges"
 		else
-			npcHandler:say("You have already started that mission.", npc, creature)
+			npcHandler:sayLocalized("npc.gnombold.you_have_already_21", npc, creature)
 		end
 	end
 
@@ -180,18 +180,18 @@ local function creatureSayCallback(npc, creature, type, message)
 	///////////////]]
 	if MsgContains(message, "fertilise") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Mushroom_Daily) >= os.time() then
-			return npcHandler:say("Sorry, you have to wait " .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Mushroom_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
+			return npcHandler:sayLocalized("npc.gnombold.sorry_you_have_22" .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Mushroom_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
 		end
 
 		if (player:getLevel() < levels[1]) or (player:getLevel() > levels[2]) then
-			return npcHandler:say("Sorry, you are not on the required range of levels [" .. levels[1] .. "-" .. levels[2] .. "].", npc, creature)
+			return npcHandler:sayLocalized("npc.gnombold.sorry_you_are_23" .. levels[1] .. "-" .. levels[2] .. "].", npc, creature)
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Mushroom_Main) == -1 then
-			npcHandler:say("Your mission would be to seek out gardener mushrooms in the caves and use some fertiliser on them. If you are interested, I can give you some more information about it. Are you willing to accept this mission?", npc, creature)
+			npcHandler:sayLocalized("npc.gnombold.your_mission_would_24", npc, creature)
 			talkState[playerId] = "fertilise"
 		else
-			npcHandler:say("You have already started that mission.", npc, creature)
+			npcHandler:sayLocalized("npc.gnombold.you_have_already_25", npc, creature)
 		end
 	end
 
@@ -199,7 +199,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			player:addItem(19214)
 			player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Mushroom_Main, 0)
-			npcHandler:say("Gnometastic! And here is your fertiliser - use it on four gardener mushroom in the caves. If you lose the fertiliser you'll have to bring your own. Gnomux sells all the equipment that is required for our missions.", npc, creature)
+			npcHandler:sayLocalized("npc.gnombold.gnometastic_and_here_26", npc, creature)
 			talkState[playerId] = nil
 		elseif MsgContains(message, "no") then
 			npcHandler:say("Ok then.", npc, creature)
@@ -212,25 +212,25 @@ local function creatureSayCallback(npc, creature, type, message)
 	////////////////////]]
 	if MsgContains(message, "nests") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Daily) >= os.time() then
-			return npcHandler:say("Sorry, you have to wait " .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
+			return npcHandler:sayLocalized("npc.gnombold.sorry_you_have_27" .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
 		end
 
 		if (player:getLevel() < levels[1]) or (player:getLevel() > levels[2]) then
-			return npcHandler:say("Sorry, you are not on the required range of levels [" .. levels[1] .. "-" .. levels[2] .. "].", npc, creature)
+			return npcHandler:sayLocalized("npc.gnombold.sorry_you_are_28" .. levels[1] .. "-" .. levels[2] .. "].", npc, creature)
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Main) == -1 then
-			npcHandler:say("Our mission for you is to step into the gnomish transformer and then destroy eight monster nests in the caves. If you are interested, I can give you some more information about it. Are you willing to accept this mission?", npc, creature)
+			npcHandler:sayLocalized("npc.gnombold.our_mission_for_29", npc, creature)
 			talkState[playerId] = "nests"
 		else
-			npcHandler:say("You have already started that mission.", npc, creature)
+			npcHandler:sayLocalized("npc.gnombold.you_have_already_30", npc, creature)
 		end
 	end
 
 	if talkState[playerId] == "nests" then
 		if MsgContains(message, "yes") then
 			player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Main, 0)
-			npcHandler:say("Gnometastic! Don't forget to step into the transformer before you go out and destroy five monster nests. If your transformation runs out, return to the transformer to get another illusion.", npc, creature)
+			npcHandler:sayLocalized("npc.gnombold.gnometastic_dont_forget_31", npc, creature)
 			talkState[playerId] = nil
 		elseif MsgContains(message, "no") then
 			npcHandler:say("Ok then.", npc, creature)
@@ -243,25 +243,25 @@ local function creatureSayCallback(npc, creature, type, message)
 	///////////]]
 	if MsgContains(message, "kill") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Daily) >= os.time() then
-			return npcHandler:say("Sorry, you have to wait " .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
+			return npcHandler:sayLocalized("npc.gnombold.sorry_you_have_32" .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
 		end
 
 		if (player:getLevel() < levels[1]) or (player:getLevel() > levels[2]) then
-			return npcHandler:say("Sorry, you are not on the required range of levels [" .. levels[1] .. "-" .. levels[2] .. "].", npc, creature)
+			return npcHandler:sayLocalized("npc.gnombold.sorry_you_are_33" .. levels[1] .. "-" .. levels[2] .. "].", npc, creature)
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Main) == -1 then
-			npcHandler:say("This mission will require you to kill some crystal crushers for us. If you are interested, I can give you some more information about it. Are you willing to accept this mission?", npc, creature)
+			npcHandler:sayLocalized("npc.gnombold.this_mission_will_34", npc, creature)
 			talkState[playerId] = "kill"
 		else
-			npcHandler:say("You have already started that mission.", npc, creature)
+			npcHandler:sayLocalized("npc.gnombold.you_have_already_35", npc, creature)
 		end
 	end
 
 	if talkState[playerId] == "kill" then
 		if MsgContains(message, "yes") then
 			player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Main, 0)
-			npcHandler:say("Gnometastic! You should have no trouble to find enough crystal crushers. Killing seven of them should be enough.", npc, creature)
+			npcHandler:sayLocalized("npc.gnombold.gnometastic_you_should_36", npc, creature)
 			talkState[playerId] = nil
 		elseif MsgContains(message, "no") then
 			npcHandler:say("Ok then.", npc, creature)

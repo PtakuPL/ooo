@@ -128,7 +128,7 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getPosition() ~= config.playerPosition then
-		npcHandler:say("If you want to play with me please come near me.", npc, creature)
+		npcHandler:sayLocalized("npc.cassino.if_you_want_1", npc, creature)
 		npcHandler:removeInteraction(npc, creature)
 		return false
 	end
@@ -150,7 +150,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	if table.contains({ "low", "high", "h", "l", "1", "2", "3", "4", "5", "6", "odd", "impar", "par", "even" }, message) then
 		local bet = getBetValue()
 		if not bet then
-			npcHandler:say("Your bet is lower than the min {" .. config.bet.min .. "}gps or higher than the max {" .. config.bet.max .. "}gps bet.", npc, creature)
+			npcHandler:sayLocalized("npc.cassino.your_bet_is_2" .. config.bet.min .. "}gps or higher than the max {" .. config.bet.max .. "}gps bet.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 			return true
 		end

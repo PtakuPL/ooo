@@ -1,13 +1,13 @@
 {
   "category": "npc",
-  "last_updated": "2025-12-08 22:34:34",
+  "last_updated": "2025-12-08 22:43:03",
   "status": "in_progress",
   "progress": {
     "percentage": 9,
-    "total_keys": 4073,
+    "total_keys": 4108,
     "translated_pl": 372,
-    "files_processed": 453,
-    "files_remaining": 574
+    "files_processed": 459,
+    "files_remaining": 568
   },
   "languages": {
     "total": 53,

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Guardian v2.1 - automatyczny restart workera i18n + push do GitHub
+# Guardian v2.2 - automatyczny restart workera i18n + push do GitHub
 # Uruchamiany przez cron co minutę
 
 WORK_DIR="/home/ptaku/serweryt/Tibia/silnik/canary_test"
@@ -8,51 +8,63 @@ LOG_FILE="$WORK_DIR/work_i18n_live.log"
 PID_FILE="$WORK_DIR/.worker.pid"
 GUARDIAN_LOG="$WORK_DIR/guardian.log"
 
-# Ustawienia Git dla cron
 export HOME="/home/ptaku"
 export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
 
 cd "$WORK_DIR" || exit 1
 
-# Logowanie Guardian
 log_guardian() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" >> "$GUARDIAN_LOG"
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] [GUARDIAN] $1" >> "$LOG_FILE"
 }
 
-# Sprawdź czy worker działa
-if ! pgrep -f "$WORKER_SCRIPT" > /dev/null 2>&1; then
+# Sprawdź czy worker działa przez PID file
+worker_running() {
+    if [ -f "$PID_FILE" ]; then
+        local pid=$(cat "$PID_FILE" 2>/dev/null)
+        if [ -n "$pid" ] && ps -p "$pid" > /dev/null 2>&1; then
+            return 0
+        fi
+    fi
+    return 1
+}
+
+# Restart workera jeśli nie działa
+if ! worker_running; then
     log_guardian "⚠️ Worker nie działa - restartuję..."
+    # Zabij ewentualne zombie procesy
+    pkill -9 -f "i18n_autonomous_worker.sh" 2>/dev/null
+    sleep 1
+    rm -f "$PID_FILE"
     nohup bash "$WORK_DIR/$WORKER_SCRIPT" >> "$LOG_FILE" 2>&1 &
-    echo $! > "$PID_FILE"
-    log_guardian "✅ Worker uruchomiony PID: $!"
+    sleep 2
+    if [ -f "$PID_FILE" ]; then
+        log_guardian "✅ Worker uruchomiony PID: $(cat $PID_FILE)"
+    else
+        log_guardian "❌ Worker nie wystartował prawidłowo"
+    fi
 fi
 
-# Co 2 minuty - push do GitHub (parzysta minuta)
+# Co 2 minuty - push do GitHub
 MINUTE=$(date +%M)
 if [ $((MINUTE % 2)) -eq 0 ]; then
     GIT_ROOT="/home/ptaku/serweryt"
+    cd "$GIT_ROOT" || exit 1
     
-    # Kopiuj status do roota repo (GitHub pokazuje z roota!)
-    cp "$WORK_DIR/I18N_STATUS.md" "$GIT_ROOT/I18N_STATUS.md" 2>/dev/null
+    # Aktualizuj I18N_STATUS.md
+    if [ -f "$WORK_DIR/I18N_STATUS.md" ]; then
+        cp "$WORK_DIR/I18N_STATUS.md" "$GIT_ROOT/I18N_STATUS.md" 2>/dev/null
+    fi
     
-    cd "$GIT_ROOT"
-    
-    # Sprawdź czy są zmiany
+    # Git operations
     if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
-        # Dodaj z roota i z podkatalogu
-        git add I18N_STATUS.md 2>/dev/null
-        git add Tibia/silnik/canary_test/i18n/status/ 2>/dev/null
-        git add Tibia/silnik/canary_test/I18N_STATUS.md 2>/dev/null
-        git commit -m "🤖 Auto-sync i18n [$(date '+%H:%M')]" --quiet 2>/dev/null
-        
-        # Push z pełnym logowaniem błędów
-        if git push origin master 2>&1 | tee -a "$GUARDIAN_LOG"; then
-            log_guardian "✅ Git push OK"
+        git add -A 2>/dev/null
+        git commit -m "📊 I18N Status update $(date +%H:%M)" 2>/dev/null
+        if git push origin master 2>/dev/null; then
+            log_guardian "📤 Push do GitHub OK"
         else
-            log_guardian "❌ Git push FAILED"
+            log_guardian "❌ Push nieudany"
         fi
-    else
-        log_guardian "ℹ️ Brak zmian do push"
     fi
 fi
+
+exit 0

@@ -938,3 +938,9 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/tools/api/status.php
 /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/tools/api/updater.php
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/alyxo.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/shimun.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/tefrit.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/saideh.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/tigo.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/kallimae.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/yonan.lua

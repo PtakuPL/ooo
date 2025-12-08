@@ -6277,3 +6277,289 @@ Duplikaty, błędy składni, brakujące tłumaczenia
 Klucze i18n: 44792
 
 ---
+
+## [2025-12-08 22:16:45] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 22:16:49] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44792
+
+---
+
+## [2025-12-08 22:19:17] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 22:19:20] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44792
+
+---
+
+## [2025-12-08 22:21:51] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 22:21:53] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44792
+
+---
+
+## [2025-12-08 22:24:24] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 22:24:27] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44792
+
+---
+
+## [2025-12-08 22:27:01] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 22:27:03] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44792
+
+---
+
+## [2025-12-08 22:30:26] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 22:30:29] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44792
+
+---
+
+## [2025-12-08 22:32:48] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 22:32:51] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44792
+
+---
+
+## [2025-12-08 22:35:19] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/shimun.lua`
+
+**Akcja:** Przetworzono 6 stringów
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-08 22:35:22] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/tefrit.lua`
+
+**Akcja:** Przetworzono 6 stringów
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-08 22:35:28] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/saideh.lua`
+
+**Akcja:** Przetworzono 3 stringów
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-08 22:35:31] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/tigo.lua`
+
+**Akcja:** Przetworzono 2 stringów
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-08 22:35:38] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/kallimae.lua`
+
+**Akcja:** Przetworzono 9 stringów
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-08 22:35:43] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/yonan.lua`
+
+**Akcja:** Przetworzono 9 stringów
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-08 22:41:58] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 22:42:00] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44827
+
+---
+
+## [2025-12-08 22:44:08] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 22:44:10] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44827
+
+---
+
+## [2025-12-08 22:44:12] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 58 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-08 22:44:14] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 44827
+
+---

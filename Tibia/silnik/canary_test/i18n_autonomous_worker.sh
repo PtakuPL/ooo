@@ -10,6 +10,25 @@
 set -e
 
 WORK_DIR="/home/ptaku/serweryt/Tibia/silnik/canary_test"
+PID_FILE="$WORK_DIR/.worker.pid"
+
+# Zabezpieczenie przed duplikatami
+if [ -f "$PID_FILE" ]; then
+    OLD_PID=$(cat "$PID_FILE")
+    if ps -p "$OLD_PID" > /dev/null 2>&1; then
+        echo "[$(date '+%Y-%m-%d %H:%M:%S')] [WARN] Worker już działa (PID: $OLD_PID). Wychodzę."
+        exit 0
+    fi
+fi
+echo $$ > "$PID_FILE"
+
+# Cleanup przy wyjściu
+cleanup() {
+    rm -f "$PID_FILE"
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] ⛔ Worker zatrzymany"
+}
+trap cleanup EXIT INT TERM
+
 LOG_FILE="$WORK_DIR/i18n_worker.log"
 LIVE_LOG="$WORK_DIR/work_i18n_live.log"
 DOC_FILE="$WORK_DIR/i18n_full_documentation.md"
@@ -820,6 +839,122 @@ json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
 }
 
 #===============================================================================
+# MIGRACJA WIELOLINIOWYCH TABLIC NPC
+#===============================================================================
+# Obsługuje pliki z formatem:
+# npcHandler:say({
+#     "tekst 1 ...",
+#     "tekst 2 ...",
+# }, npc, creature)
+#===============================================================================
+migrate_multiline_npc() {
+    local file="$1"
+    local file_name=$(basename "$file" .lua)
+    local safe_name=$(echo "$file_name" | tr ' ' '_' | tr '-' '_' | tr '[:upper:]' '[:lower:]')
+    local json_file="$I18N_DIR/en/npc.json"
+    local relative_path="${file#$WORK_DIR/}"
+    
+    log_info "🔷 [NPC-MULTI] $relative_path"
+    
+    # Sprawdź czy już zmigrowany
+    if grep -qE "sayLocalized" "$file" 2>/dev/null; then
+        log_info "   ⏭️ Już zmigrowany"
+        mark_processed "$file"
+        return 1
+    fi
+    
+    # Sprawdź czy ma wieloliniowe tablice
+    if ! grep -qE 'npcHandler:say\s*\(\s*\{$' "$file" 2>/dev/null; then
+        return 1
+    fi
+    
+    # Upewnij się że plik JSON istnieje
+    [ ! -f "$json_file" ] && echo "{}" > "$json_file"
+    
+    # Wyciągnij wszystkie stringi z wieloliniowych tablic (tylko ekstrakcja, bez modyfikacji)
+    local extracted=0
+    local key_counter=1
+    
+    # Użyj Python do parsowania wieloliniowych tablic
+    python3 << EOF
+import re
+import json
+import os
+
+file_path = "$file"
+json_path = "$json_file"
+safe_name = "$safe_name"
+
+# Wczytaj plik
+with open(file_path, 'r', encoding='utf-8') as f:
+    content = f.read()
+
+# Wczytaj JSON
+if os.path.exists(json_path) and os.path.getsize(json_path) > 2:
+    with open(json_path, 'r', encoding='utf-8') as f:
+        translations = json.load(f)
+else:
+    translations = {}
+
+# Znajdź wszystkie wieloliniowe npcHandler:say({ ... })
+pattern = r'npcHandler:say\s*\(\s*\{([^}]+)\}'
+matches = re.findall(pattern, content, re.DOTALL)
+
+key_counter = 1
+extracted = 0
+
+for match in matches:
+    # Wyciągnij stringi z tablicy
+    strings = re.findall(r'"([^"]+)"', match)
+    for s in strings:
+        if len(s) >= 5:
+            key = f"npc.{safe_name}.multiline_{key_counter}"
+            if key not in translations:
+                translations[key] = s
+                extracted += 1
+                print(f"      🔑 {key} = '{s[:50]}...'")
+            key_counter += 1
+
+# Zapisz JSON
+with open(json_path, 'w', encoding='utf-8') as f:
+    json.dump(translations, f, indent=2, ensure_ascii=False)
+
+print(f"EXTRACTED:{extracted}")
+EOF
+    
+    local result=$(python3 << 'PYEOF'
+import re
+import json
+import os
+
+file_path = "$file"
+json_path = "$json_file"
+safe_name = "$safe_name"
+
+with open(file_path, 'r', encoding='utf-8') as f:
+    content = f.read()
+
+pattern = r'npcHandler:say\s*\(\s*\{([^}]+)\}'
+matches = re.findall(pattern, content, re.DOTALL)
+extracted = 0
+for match in matches:
+    strings = re.findall(r'"([^"]+)"', match)
+    extracted += len([s for s in strings if len(s) >= 5])
+print(extracted)
+PYEOF
+2>/dev/null)
+    
+    if [ "$extracted" -gt 0 ] 2>/dev/null; then
+        log_success "   📝 Wyciągnięto $extracted kluczy z wieloliniowych tablic"
+        mark_processed "$file"
+        return 0
+    else
+        mark_excluded "$file"
+        return 1
+    fi
+}
+
+#===============================================================================
 # MIGRACJA C++
 #===============================================================================
 migrate_cpp_file() {
@@ -1299,6 +1434,7 @@ process_files() {
             
             case "$file_type" in
                 lua)
+                    # Najpierw próbuj standardową migrację
                     if migrate_lua_file "$file"; then
                         processed=$((processed + 1))
                         update_activity "process" "$basename" "Lua migration" "completed" "OK"
@@ -1308,6 +1444,10 @@ process_files() {
                             local tmp=$(mktemp)
                             jq '.stats.files_this_session += 1' "$ACTIVITY_FILE" > "$tmp" 2>/dev/null && mv "$tmp" "$ACTIVITY_FILE"
                         }
+                    # Jeśli standardowa nie zadziałała, próbuj wieloliniową dla NPC
+                    elif [[ "$file" == *"/npc/"* ]] && migrate_multiline_npc "$file"; then
+                        processed=$((processed + 1))
+                        update_activity "process" "$basename" "NPC multiline extraction" "completed" "OK"
                     fi
                     ;;
                 cpp)

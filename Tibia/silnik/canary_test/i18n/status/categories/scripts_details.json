@@ -1,13 +1,44 @@
 {
   "category": "scripts",
   "status": "in_progress",
-  "last_updated": "2025-12-08T19:21:54+01:00",
+  "last_updated": "2025-12-08T19:25:56+01:00",
   "summary": {
     "total_keys": 713,
     "files_processed": 927
   },
   "current_work": {
     "directory": "data-otservbr-global/scripts/",
-    "cycle": 7
+    "cycle": 1
+  },
+  "subdirectories": {
+    "quests": {"processed": 286},
+    "actions": {"processed": 58}
+  },
+  "recent_files": [
+  {
+    "file": "index.php",
+    "time": "19:25:56",
+    "status": "success"
+  },
+  {
+    "file": "openid.php",
+    "time": "19:25:56",
+    "status": "success"
+  },
+  {
+    "file": "signon.php",
+    "time": "19:25:56",
+    "status": "success"
+  },
+  {
+    "file": "translation_manager.php",
+    "time": "19:25:56",
+    "status": "success"
+  },
+  {
+    "file": "index.php",
+    "time": "19:25:56",
+    "status": "success"
   }
+]
 }

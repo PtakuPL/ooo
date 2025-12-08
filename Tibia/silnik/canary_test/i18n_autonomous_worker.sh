@@ -815,6 +815,73 @@ EOF
     
     log_info "📊 Status: $processed przetw. | $total_keys kluczy | ${#LANGUAGES[@]} języków"
 }
+    
+
+#===============================================================================
+# JSON STATUS UPDATE - Dla AI agentów
+#===============================================================================
+update_json_status() {
+    local processed=$1
+    local excluded=$2
+    local total_keys=$3
+    local npc_keys=$4
+    local scripts_keys=$5
+    local items_keys=$6
+    local quests_count=${7:-0}
+    local actions_count=${8:-0}
+    
+    mkdir -p "$I18N_DIR/status/categories"
+    
+    # Pobierz ostatnie 5 plików
+    local recent_files_json="[]"
+    if [ -f "$PROCESSED_FILE" ]; then
+        recent_files_json=$(tail -5 "$PROCESSED_FILE" 2>/dev/null | while read f; do
+            local fname=$(basename "$f" 2>/dev/null)
+            local ftime=$(date '+%H:%M:%S')
+            echo "{\"file\": \"$fname\", \"time\": \"$ftime\", \"status\": \"success\"}"
+        done | jq -s '.' 2>/dev/null || echo "[]")
+    fi
+    
+    # Główny status JSON
+    cat > "$I18N_DIR/status/worker_state.json" << EOF
+{
+  "schema_version": "2.0",
+  "last_updated": "$(date -Iseconds)",
+  "worker": {
+    "version": "4.0",
+    "status": "running",
+    "mode": "$MODE",
+    "cycle": $CYCLE_COUNT,
+    "files_per_cycle": $FILES_PER_CYCLE,
+    "pid": $$
+  },
+  "global_progress": {
+    "total_files_processed": $processed,
+    "total_files_excluded": $excluded,
+    "total_keys": $total_keys,
+    "total_languages": ${#LANGUAGES[@]},
+    "total_conflicts": $TOTAL_CONFLICTS
+  },
+  "categories": {
+    "npc": {"status": "completed", "keys": $npc_keys},
+    "scripts": {"status": "in_progress", "keys": $scripts_keys},
+    "items": {"status": "completed", "keys": $items_keys},
+    "monsters": {"status": "pending", "keys": 0},
+    "server": {"status": "pending", "keys": 0},
+    "spells": {"status": "pending", "keys": 0}
+  },
+  "recent_files": $recent_files_json
+}
+EOF
+
+    # Szczegóły kategorii scripts (aktywna)
+    cat > "$I18N_DIR/status/categories/scripts_details.json" << EOF
+{
+  "category": "scripts",
+  "status": "in_progress",
+  "last_updated": "$(date -Iseconds)",
+  "summary": {
+    "total_keys": $scripts_keys,
     "files_processed": $processed
   },
   "current_work": {

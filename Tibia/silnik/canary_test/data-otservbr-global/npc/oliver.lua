@@ -60,13 +60,13 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "report") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 8 or player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 12 then
-			npcHandler:say("Nobody knows the trouble I've seen .. <tells a quite detailed report>. ", npc, creature)
+			npcHandler:sayLocalized("npc.oliver.nobody_knows_the_1", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) + 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission02, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission02) + 1) -- StorageValue for Questlog "Mission 02: Watching the Watchmen"
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "pass") then
-		npcHandler:say("You can {pass} either to the {Factory Quarter} or {Sunken Quarter}. Which one will it be?", npc, creature)
+		npcHandler:sayLocalized("npc.oliver.you_can_pass_2", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "factory") then
 		if npcHandler:getTopic(playerId) == 1 then

@@ -111,7 +111,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif player:getStorageValue(TheNewFrontier.Questline) == 2 then
-			npcHandler:say("Excellent. Although we have no idea what awaits us in this foreign land, it is always good to know something more about our surroundings.", npc, creature)
+			npcHandler:sayLocalized("npc.ongulf.excellent_although_we_1", npc, creature)
 			player:setStorageValue(TheNewFrontier.Questline, 3)
 			player:setStorageValue(TheNewFrontier.Mission01, 3) -- Questlog, The New Frontier Quest "Mission 01: New Land"
 			npcHandler:setTopic(playerId, 0)
@@ -124,7 +124,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(TheNewFrontier.Mission02[1], 1) -- Questlog, The New Frontier Quest "Mission 02: From Kazordoon With Love"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(TheNewFrontier.Questline) == 6 then
-			npcHandler:say("That's good news for sure. It will give our operation a new impulse. However, only if there is not some unexpected trouble ahead. Well, we'll talk about that when we discuss your next {mission}.", npc, creature)
+			npcHandler:sayLocalized("npc.ongulf.thats_good_news_2", npc, creature)
 			player:setStorageValue(TheNewFrontier.Questline, 7)
 			player:setStorageValue(TheNewFrontier.Mission02[1], 4) -- Questlog, The New Frontier Quest "Mission 02: From Kazordoon With Love"
 			npcHandler:setTopic(playerId, 0)
@@ -156,7 +156,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(TheNewFrontier.Mission04, 1) -- Questlog, The New Frontier Quest "Mission 04: The Mine Is Mine"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(TheNewFrontier.Questline) == 12 then
-			npcHandler:say("Shortly after you killed that creature, the others crumbled to dust and stone. I hope this incident does not foreshadow similar problems in our mines. However, for now I have other things to take care of and you have other {missions} to accomplish. ", npc, creature)
+			npcHandler:sayLocalized("npc.ongulf.shortly_after_you_3", npc, creature)
 			player:setStorageValue(TheNewFrontier.Questline, 13)
 			player:setStorageValue(TheNewFrontier.Mission04, 2) -- Questlog, The New Frontier Quest 'Mission 04: The Mine Is Mine'
 			npcHandler:setTopic(playerId, 0)
@@ -202,7 +202,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				and player:getStorageValue(TheNewFrontier.Mission05.Telas) == 3
 				and player:getStorageValue(TheNewFrontier.Mission05.Humgolf) == 3
 			then
-				npcHandler:say("You did an excellent job! With all this help Farmine will grow and prosper. While we put all available resources into building this base, I have another urgent {mission} for you.", npc, creature)
+				npcHandler:sayLocalized("npc.ongulf.you_did_an_4", npc, creature)
 				player:setStorageValue(TheNewFrontier.Questline, 15)
 				player:setStorageValue(TheNewFrontier.Mission05[1], 2) -- Questlog, The New Frontier Quest "Mission 05: Getting Things Busy"
 				npcHandler:setTopic(playerId, 0)

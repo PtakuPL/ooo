@@ -59,21 +59,21 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "trouble") and player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.WalterGuard) < 1 and player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission01) ~= -1 then
-		npcHandler:say("I think there is a pickpocket in town.", npc, creature)
+		npcHandler:sayLocalized("npc.walter_the_guard.i_think_there_1", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "authorities") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Well, sooner or later we will get hold of that delinquent. That's for sure.", npc, creature)
+			npcHandler:sayLocalized("npc.walter_the_guard.well_sooner_or_2", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "avoided") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("You can't tell by a person's appearance who is a pickpocket and who isn't. You simply can't close the city gates for everyone.", npc, creature)
+			npcHandler:sayLocalized("npc.walter_the_guard.you_cant_tell_3", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "gods would allow") then
 		if npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("If the gods had created the world a paradise, no one had to steal at all.", npc, creature)
+			npcHandler:sayLocalized("npc.walter_the_guard.if_the_gods_4", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 			if player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.WalterGuard) < 1 then
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.WalterGuard, 1)

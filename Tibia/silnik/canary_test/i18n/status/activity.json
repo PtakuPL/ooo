@@ -1,15 +1,57 @@
 {
-  "last_updated": "2025-12-08 22:15:12",
+  "last_updated": "2025-12-08 22:22:54",
   "current_operation": {
     "type": "cycle",
     "phase": 1,
     "category": "scripts",
-    "file": "Cykl #4",
+    "file": "Cykl #7",
     "action": "🎮 Canary Server - scripts",
     "status": "in_progress",
     "details": "NPC:4073 Scripts:713 Items:36972"
   },
   "recent_operations": [
+    {
+      "time": "2025-12-08 22:22:54",
+      "type": "cycle",
+      "file": "Cykl #7",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-08 22:21:41",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
+    {
+      "time": "2025-12-08 22:20:21",
+      "type": "cycle",
+      "file": "Cykl #6",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-08 22:19:06",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
+    {
+      "time": "2025-12-08 22:17:49",
+      "type": "cycle",
+      "file": "Cykl #5",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-08 22:16:36",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
     {
       "time": "2025-12-08 22:15:12",
       "type": "cycle",
@@ -106,48 +148,6 @@
       "type": "cycle",
       "file": "Cykl #2",
       "action": "🎮 Canary Server - scripts",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-08 22:05:14",
-      "type": "cycle",
-      "file": "Cykl #2",
-      "action": "🎮 Canary Server - scripts",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-08 22:05:10",
-      "type": "cycle_end",
-      "file": "Cykl 1",
-      "action": "Zakończono przetwarzanie",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-08 22:04:52",
-      "type": "cycle_end",
-      "file": "Cykl 1",
-      "action": "Zakończono przetwarzanie",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-08 22:04:26",
-      "type": "cycle_end",
-      "file": "Cykl 1",
-      "action": "Zakończono przetwarzanie",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-08 22:04:07",
-      "type": "cycle_end",
-      "file": "Cykl 1",
-      "action": "Zakończono przetwarzanie",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-08 22:03:55",
-      "type": "scan",
-      "file": "Skanowanie",
-      "action": "Nowe pliki",
       "status": "in_progress"
     }
   ],

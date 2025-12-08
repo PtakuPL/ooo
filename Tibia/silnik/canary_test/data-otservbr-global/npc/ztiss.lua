@@ -63,7 +63,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "offer") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("You are ztill a captive and your life is forfeit. Zere might be a way for you to ezcape if you agree to {work} for my mazter.", npc, creature)
+			npcHandler:sayLocalized("npc.ztiss.you_are_ztill_1", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "work") then

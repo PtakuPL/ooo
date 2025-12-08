@@ -75,7 +75,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_54.ChildrenOfTheRevolution.Questline) == 2 then
-			npcHandler:say("What newzz do you bring? Did you find any cluezz about zzeir whereaboutzz? ", npc, creature)
+			npcHandler:sayLocalized("npc.zalamon.what_newzz_do_1", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U8_54.ChildrenOfTheRevolution.Questline) == 3 then
 			npcHandler:say({
@@ -170,7 +170,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 14)
 		elseif player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline) == 1 then
-			npcHandler:say("Ah you have returned. I azzume you already found zzome itemzz to build a proper dizzguizze? ", npc, creature)
+			npcHandler:sayLocalized("npc.zalamon.ah_you_have_2", npc, creature)
 			npcHandler:setTopic(playerId, 16)
 		elseif player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline) == 6 then
 			npcHandler:say({
@@ -182,7 +182,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 19)
 		elseif player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline) == 8 then
-			npcHandler:say("Zzo... you finished him. Show me hizz head, will you? ", npc, creature)
+			npcHandler:sayLocalized("npc.zalamon.zzo_you_finished_3", npc, creature)
 			npcHandler:setTopic(playerId, 20)
 		elseif player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline) == 9 then
 			npcHandler:say({
@@ -201,7 +201,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission04, 1) --Questlog, Wrath of the Emperor "Mission 04: Sacrament of the Snake"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline) == 11 then
-			npcHandler:say("You - azzembled zze zzeptre? Hand it out, give it to me, will you? ", npc, creature)
+			npcHandler:sayLocalized("npc.zalamon.you_azzembled_zze_4", npc, creature)
 			npcHandler:setTopic(playerId, 21)
 		elseif player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline) == 12 then
 			npcHandler:say({
@@ -221,7 +221,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		-- WRATH OF THE EMPEROR QUEST
 	elseif MsgContains(message, "crate") then
 		if npcHandler:getTopic(playerId) == 17 then
-			npcHandler:say("Ah I zzee. You are ready for your mizzion and waiting for me to create and mark zze crate? ", npc, creature)
+			npcHandler:sayLocalized("npc.zalamon.ah_i_zzee_5", npc, creature)
 			npcHandler:setTopic(playerId, 18)
 		end
 		-- WRATH OF THE EMPEROR QUEST
@@ -238,7 +238,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		-- CHILDREN OF REVOLUTION QUEST
 	elseif MsgContains(message, "poison") or MsgContains(message, "poizzon") then
 		if player:getStorageValue(Storage.Quest.U8_54.ChildrenOfTheRevolution.Questline) == 9 then
-			npcHandler:say("Zze emperor of zze dragonzz hazz tranzzformed himzzelf into an undead creature to lazzt for all eternity, to cheat deazz. Hizz corruption flowzz to zzozze he bound, and from zzem to zzozze zzey bound, and from zzem into zze land.", npc, creature)
+			npcHandler:sayLocalized("npc.zalamon.zze_emperor_of_6", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 		-- CHILDREN OF REVOLUTION QUEST
@@ -255,12 +255,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Be warned. Zze mountain pazzezz have been dezzerted for zzeveral weekzz now. No one made it acrozz and I fear you won't meet a zzingle friendly zzoul up zzere.", npc, creature)
+			npcHandler:sayLocalized("npc.zalamon.be_warned_zze_7", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_54.ChildrenOfTheRevolution.Questline, 1)
 			player:setStorageValue(Storage.Quest.U8_54.ChildrenOfTheRevolution.Mission00, 1) --Questlog, Children of the Revolution "Prove Your Worzz!"
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Exzztraordinary. We are mozzt fortunate to have zzezze documentzz in our handzz now. Zzizz would zzertainly help me to build an effective rezzizztanzze. Will you give zzem to me? ", npc, creature)
+			npcHandler:sayLocalized("npc.zalamon.exzztraordinary_we_are_8", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:removeItem(637, 1) then
@@ -273,7 +273,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 5 then
-			npcHandler:say("I've marked itzz location on your map. Go and find out what happened zzere. In zze pazzt it wazz known azz zze Temple of Equilibrium. ", npc, creature)
+			npcHandler:sayLocalized("npc.zalamon.ive_marked_itzz_9", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_54.ChildrenOfTheRevolution.Questline, 4)
 			player:setStorageValue(Storage.Quest.U8_54.ChildrenOfTheRevolution.Mission01, 1) --Questlog, Children of the Revolution "Mission 1: Corruption"
 			player:addMapMark(Position(33177, 31193, 7), 5, "Temple of Equilibrium")
@@ -400,7 +400,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 20 then
 			if player:removeItem(11367, 1) then
-				npcHandler:say("Zzizz izz not hizz head but clearly belonged to zze keeper. I - I am imprezzed. You can go now. Leave me alone for a zzecond. ", npc, creature)
+				npcHandler:sayLocalized("npc.zalamon.zzizz_izz_not_10", npc, creature)
 				player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline, 9)
 				player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission03, 3) --Questlog, Wrath of the Emperor "Mission 03: The Keeper"
 				npcHandler:setTopic(playerId, 0)
@@ -409,7 +409,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:removeItem(11371, 1) then
 				player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline, 12)
 				player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission04, 3) --Questlog, Wrath of the Emperor "Mission 04: Sacrament of the Snake"
-				npcHandler:say("Finally. At lazzt. Zze zzeptre izz - ourzz. Ourzz of courzze. A weapon we should uzze wizzely for our cauzze. I need a zzecond or two. Do you leave me already? ", npc, creature)
+				npcHandler:sayLocalized("npc.zalamon.finally_at_lazzt_11", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 			-- WRATH OF THE EMPEROR QUEST

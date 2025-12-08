@@ -55,7 +55,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline) == 25 then
-			npcHandler:say("You made it! Az zoon az you are prepared, I will brief you for your nexzt mizzion. ", npc, creature)
+			npcHandler:sayLocalized("npc.zizzle.you_made_it_1", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission08, 2) --Questlog, Wrath of the Emperor "Mission 08: Uninvited Guests"
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission09, 0) --door access
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.TeleportAccess.Zizzle, 3) --teleport access

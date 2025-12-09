@@ -68,23 +68,19 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		end
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Diremaw) == 2 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.TimeTaskDiremaws) <= 0 then
-			npcHandler:say({
-				"The gnomes say that these creatures seem to thrive on mushroom sponges. But not only that, apparently they also lay eggs in their own cadavers to breed even faster. ...",
-				"Yes, disgusting. I guess it provides everything their offspring needs... well, we probably shouldn't go into that much further. Instead we should focus on preventing that from happening. ... ",
-				"If I understood that correctly, the gnomes 'grew' a device to completely neutralise diremaw corpses. Acting as a very effective counter measure. ... ",
-				"A lot of corpses are lying around wherever these creatures are being hunted. Now all we need are, you guessed it, volunteers to clean up as many of those remains as possible ... ",
-				"Are you willing to help? ",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_18")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_19")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_20")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_21")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_22")
 			npcHandler:setTopic(playerId, 2)
 		end
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Diremaw) < 1 then
-			npcHandler:say({
-				"The gnomes say that these creatures seem to thrive on mushroom sponges. But not only that, apparently they also lay eggs in their own cadavers to breed even faster. ...",
-				"Yes, disgusting. I guess it provides everything their offspring needs... well, we probably shouldn't go into that much further. Instead we should focus on preventing that from happening. ... ",
-				"If I understood that correctly, the gnomes 'grew' a device to completely neutralise diremaw corpses. Acting as a very effective counter measure. ... ",
-				"A lot of corpses are lying around wherever these creatures are being hunted. Now all we need are, you guessed it, volunteers to clean up as many of those remains as possible ... ",
-				"Are you willing to help? ",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_13")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_14")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_15")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_16")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_17")
 			npcHandler:setTopic(playerId, 2)
 		elseif (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Diremaw) == 1) and (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.DiremawsCount) < 20) then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.say_2")
@@ -114,25 +110,21 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		end
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Growth) == 2 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.TimeTaskGrowth) <= 0 then
-			npcHandler:say({
-				"I can't explain that stuff, even the gnomes don't know what grows in those caves. All we know is that this stuff brought about all the diremaws we are now facing. ...",
-				"This vermin is somehow attracted to this sponge, my guess is they use it as a nourishment, too. We need to get rid of the stuff regularly to reduce their numbers to a manageable level. ...",
-				"We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-				"We built an iron fence around it and added a mechanism to quickly get barrel if need be. Then an... accident happened to our guard down there and ...",
-				"Well, to make a long story short, the barrels are unguarded right now and the diremaws are now too numerous and we are in desperate need of volunteers. ... ",
-				"We need someone to take those barrels to the source of the ever growing sponge and burn it down. All of it. There should be at least five locations. Are you up for that? ",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_12")
 			npcHandler:setTopic(playerId, 22)
 		end
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Growth) < 1 then
-			npcHandler:say({
-				"I can't explain that stuff, even the gnomes don't know what grows in those caves. All we know is that this stuff brought about all the diremaws we are now facing. ...",
-				"This vermin is somehow attracted to this sponge, my guess is they use it as a nourishment, too. We need to get rid of the stuff regularly to reduce their numbers to a manageable level. ...",
-				"We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-				"We built an iron fence around it and added a mechanism to quickly get barrel if need be. Then an... accident happened to our guard down there and ...",
-				"Well, to make a long story short, the barrels are unguarded right now and the diremaws are now too numerous and we are in desperate need of volunteers. ... ",
-				"We need someone to take those barrels to the source of the ever growing sponge and burn it down. All of it. There should be at least five locations. Are you up for that? ",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.multi_6")
 			npcHandler:setTopic(playerId, 22)
 		end
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Growth) == 1 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.BarrelCount) >= 3 then

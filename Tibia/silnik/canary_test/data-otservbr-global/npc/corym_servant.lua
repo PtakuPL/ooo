@@ -87,10 +87,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "decreasing resources") then
-		npcHandler:say({
-			"You have to know, that our work is very hard and the conditions we have are terrible. The wanted amount is abolutely unrealistic. Beyond that the food we get is never enough. ...",
-			"Our workers should give their best while starving. This is not possible. That's the point to {defy} the authority.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_servant.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_servant.multi_6")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "defy") then
 		if npcHandler:getTopic(playerId) == 1 then
@@ -99,18 +97,14 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(HiddenThreats.ServantDoor, 1)
 				player:setStorageValue(HiddenThreats.CorymRescueMission, 0)
 			end
-			npcHandler:say({
-				"I see you are interested to change our sitation. The first thing I like you to do is to liberate the jailed coryms. There are three areas with locked doors. You have to find a way to get access. ...",
-				"For this reason I will give you access to the second floor. It was closed because it wasn't possible to continue working at these enourmous high temperatures. Furthermore we were instantly attacked by stonerefiners. So take care of you!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_servant.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_servant.multi_4")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif (MsgContains(message, "yes")) and player:getStorageValue(HiddenThreats.QuestLine) == 4 then
 		if player:removeItem(27301, 20) then
-			npcHandler:say({
-				"Thank you very much! Our smiths are now able to craft heat-resistent weapons and armor. A little reward for you is this. ...",
-				"There is one last thing I would like to say to you, there are rumours that this dungeon can only be entered alive. This could mean that there's an unknown dungeon keeper guarding this place, so take care of you!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_servant.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_servant.multi_2")
 			player:addItem(3040, 2)
 			player:setStorageValue(HiddenThreats.QuestLine, 5)
 			player:setStorageValue(HiddenThreats.CorymRescueMission, 9)

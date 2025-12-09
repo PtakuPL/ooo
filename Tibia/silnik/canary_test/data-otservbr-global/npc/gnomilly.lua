@@ -61,14 +61,12 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "area") then
-		return npcHandler:say({
-			"On these levels we found evidence of some monumental battle that has taken place here centuries ago. We also found some grave sites, but oddly enough no clues of any form of settlement. ...",
-			"Some evidence we have found suggests that at least one of the battles here was fought for many, many years. People came here, lived here, fought here and died here. ...",
-			"The battles continued until someone or something literally ploughed through the battlefields, turning everything upside down. All this killing and death soaked the area with negative energy. ...",
-			"Necromantic forces are running wild all over the place and we are hard-pressed to drive all these undead, spirits and ghosts, away from the Spike. ...",
-			"Unless we can secure that area somehow, the Spike operation is threatened to become crippled by the constant attacks of the undead. ...",
-			"The whole growing downwards could come to a halt, leaving us exposed to even more attacks, counter attacks, and giving the enemy time to prepare their defences. There's a lot to do for aspiring adventurers.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.multi_6")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.multi_8")
 	end
 
 	if MsgContains(message, "mission") then
@@ -154,7 +152,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Pacifier_Main) == -1 then
-			npcHandler:say({ "We need you to recharge our ghost pacifiers. They are placed at several strategic points in the caves around us and should be easy to find. Your mission would be to charge seven of them.", "If you are interested, I can give you some more {information} about it. Are you willing to accept this mission?" }, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.multi_2")
 			talkState[playerId] = "pacifiers"
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_20")

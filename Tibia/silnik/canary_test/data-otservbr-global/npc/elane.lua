@@ -90,15 +90,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"Alright, I will give you a chance. Pay close attention to what I'm going to tell you now. ...",
-				"Recently, one of our members moved to Liberty Bay out of nowhere, talking about some strange cult. That is not the problem, but he took my favourite crossbow with him. ...",
-				"Please find my crossbow. It has my name engraved on it and is very special to me. ...",
-				"Secondly, we need a lot of leather for new quivers. 100 pieces of lizard leather and 100 pieces of red dragon leather should suffice. ...",
-				"Third, since we are giving out tiaras, we are always in need of enchanted chicken wings. Please bring me 5, that would help us tremendously. ...",
-				"Lastly, for our arrow heads we need a lot of steel. Best would be one piece of royal steel, one piece of draconian steel and one piece of hell steel. ...",
-				"Did you understand everything I told you and are willing to handle this task?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elane.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elane.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elane.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elane.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elane.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elane.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elane.multi_7")
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elane.say_7")

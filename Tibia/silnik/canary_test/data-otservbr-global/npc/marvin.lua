@@ -56,10 +56,8 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "funding") then
 		if player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission07) == 1 and player:getStorageValue(Storage.Quest.U10_50.OramondQuest.VotingPoints) >= 1 then
-			npcHandler:say({
-				"So far you earned x votes. Each single vote can be spent on a different topic or you're also able to cast all your votes on one voting. ...",
-				"Well in the topic b you have the possibility to vote for the funding of the {archives}, import of bug {milk} or street {repairs}.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marvin.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marvin.multi_2")
 			npcHandler:setTopic(playerId, 1)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marvin.say_1")

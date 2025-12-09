@@ -65,11 +65,9 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "fine vase") then
 		if player:getStorageValue(Storage.Quest.U8_1.TheTravellingTrader.Mission04) == 1 then
-			npcHandler:say({
-				"Rashid sent you, I suppose. Before I sell you that vase, one word of advice. ...",
-				"Make room in your backpack so that I can place the vase carefully inside it. If it falls to the floor, it will most likely shatter or break if you try to pick it up again. ...",
-				"This vase it not meant to be touched by human hands, so just keep your hands off it. Are you ready to buy that vase for 1000 gold?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.briasol.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.briasol.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.briasol.multi_3")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then

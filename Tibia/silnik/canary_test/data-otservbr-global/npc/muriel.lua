@@ -65,17 +65,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 
 		if player:getStorageValue(Storage.Quest.U8_1.TibiaTales.IntoTheBonePit) == -1 then
-			npcHandler:say({
-				"Indeed, there is something you can do for me. You must know I am researching for a new spell against the undead. ...",
-				"To achieve that I need a desecrated bone. There is a cursed bone pit somewhere in the dungeons north of Thais where the dead never rest. ...",
-				"Find that pit, dig for a well-preserved human skeleton and conserve a sample in a special container which you receive from me. Are you going to help me?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.multi_9")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_1.TibiaTales.IntoTheBonePit) == 1 then
-			npcHandler:say({
-				"The rotworms dug deep into the soil north of Thais. Rumours say that you can access a place of endless moaning from there. ...",
-				"No one knows how old that common grave is but the people who died there are cursed and never come to rest. A bone from that pit would be perfect for my studies.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.multi_6")
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.TibiaTales.IntoTheBonePit) == 2 then
 			player:setStorageValue(Storage.Quest.U8_1.TibiaTales.IntoTheBonePit, 3)
@@ -84,10 +80,8 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.say_2")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say({
-					"I am so glad you are still alive. Benjamin found the container with the bone sample inside. Fortunately, I inscribe everything with my name, so he knew it was mine. ...",
-					"I thought you have been haunted and killed by the undead. I'm glad that this is not the case. Thank you for your help.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.multi_3")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.multi_4")
 				npcHandler:setTopic(playerId, 0)
 			end
 		else
@@ -131,10 +125,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"Great! Here is the container for the bone. Once, I used it to collect ectoplasma of ghosts, but it will work here as well. ...",
-				"If you lose it, you can buy a new one from the explorer's society in North Port or Port Hope. Ask me about the mission when you come back.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.multi_2")
 			player:addItem(4852, 1)
 			player:setStorageValue(Storage.Quest.U8_1.TibiaTales.IntoTheBonePit, 1)
 			npcHandler:setTopic(playerId, 0)

@@ -60,12 +60,10 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "join") then
 		if player:getStorageValue(Storage.Quest.U7_9.NightmareOutfits.Outfits) < 1 and player:getStorageValue(Storage.Quest.U7_9.BrotherhoodOutfits.Outfits) < 1 then
-			npcHandler:say({
-				"The Brotherhood of Bones has suffered greatly in the past, but we did survive as we always will ...",
-				"You have proven resourceful by beating the silly riddles the Nightmare Knights set up to test their candidates ...",
-				"It's an amusing thought that after passing their test you might choose to join the ranks of their sworn enemies ...",
-				"For the irony of this I ask you, |PLAYERNAME|: Do you want to join the Brotherhood of Bones?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_bone_master.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_bone_master.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_bone_master.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_bone_master.multi_9")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "advancement") or MsgContains(message, "demonic") or MsgContains(message, "essence") then
@@ -81,17 +79,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"But know that your decision will be irrevocable. You will abandon the opportunity to join any order whose doctrine is incontrast to our own ...",
-				"Do you still want to join the Brotherhood?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_bone_master.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_bone_master.multi_5")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"Welcome to the Brotherhood! From now on you will walk the path of Bones. A life full of promises and power has just beenoffered to you ...",
-				"Take it, if you are up to that challenge ... or perish in agony if you deserve this fate ...",
-				"You can always ask me about your current rank and about the privileges the ranks grant to those who hold them.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_bone_master.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_bone_master.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_bone_master.multi_3")
 			player:setStorageValue(Storage.Quest.U7_9.BrotherhoodOutfits.Outfits, 1)
 			player:addAchievement("Bone Brother")
 			npcHandler:setTopic(playerId, 0)

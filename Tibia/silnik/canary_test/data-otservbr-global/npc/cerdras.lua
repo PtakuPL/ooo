@@ -62,21 +62,17 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "elements") then
-		npcHandler:say({
-			"How can I explain my connection to the elements so that you can understand it? Hmmm, it is like a faint melody, a song, that is always there. ...",
-			"I hear that melody shifting in time with the shifts in the elements. With so many years of listening, I have learned to interpret these shifts and so come to a deeper understanding of the elements. ...",
-			"It was a natural step for me to become responsible for researching elemental lore. I try to learn as much as I can and share it with my fellow druids. ...",
-			"Unfortunately, much of my understanding is instinctive, and our language just doesn't contain the right words for me to express the things I feel adequately.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cerdras.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cerdras.multi_8")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cerdras.multi_9")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cerdras.multi_10")
 	elseif MsgContains(message, "song") then
-		npcHandler:say({
-			"It is hard to explain. Of course, it's not a real song as you would understand it. I don't hear it with my ears, but rather, I feel it deep inside of me. ...",
-			"Calling it a song or melody is the best I can do to describe it to those who don't share this kind of perception. ...",
-			"It also helps me to express and understand something for which our language has no appropriate expression. ...",
-			"You know, we are so dependent on words that we can't think about concepts when we don't have words for them. ...",
-			"I sometimes think words have become just as much of a hindrance as a help. ...",
-			"Perhaps we would fare better if only we forgot words and dealt purely in feelings. Then perhaps all of us could hear the wonderful melody of nature.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cerdras.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cerdras.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cerdras.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cerdras.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cerdras.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cerdras.multi_6")
 	end
 	return true
 end

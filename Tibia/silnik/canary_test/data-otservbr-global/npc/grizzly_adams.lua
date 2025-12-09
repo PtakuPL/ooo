@@ -529,10 +529,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 		end
 		if messageAltExtra == true then
-			npcHandler:say({
-				"Such brave deed deserves a special reward! Take this holy icon. It neutralises great evil and gives you access to areas which are protected by those forces. But remember ...",
-				"This is a one-time opportunity! You won't get the holy icon twice.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_37")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_38")
 			return true
 		end
 		if finished > 0 then
@@ -540,10 +538,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			if finished == 1 then
 				if messageAlt == false then
 					if messageAltPoints == true then
-						npcHandler:say({
-							"Ah, okay. This time you'll just get an experience reward, no points for our society as you already gained enough points for your level range. Ask me for a {boss} and the choice is yours. ...",
-							"Level up and new tasks and thus points will be available.",
-						}, npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_35")
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_36")
 					elseif messageAltExtraPoints == true then
 						npcHandler:say("You're lucky today. This time you'll get an experience reward and " .. extraValue .. " extra points for our societ.", npc, creature)
 					else
@@ -564,51 +560,37 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 		if player:getLevel() < 50 then
 			if player:getStorageValue(POINTSSTORAGE) >= 40 then
-				npcHandler:say({
-					"You may not advance in your rank anymore until you've levelled up. But you can accept tasks without getting Paw & Fur points, just for an experience reward and the possibility to fight a boss from the range lower than level 50. ...",
-					"You can try {crocodiles}, {badgers}, {tarantulas}, {carniphilas}, {stone golems}, {mammoths}, {gnarlhounds}, ...",
-					"as well as {terramites}, {apes}, {thornback tortoises} and {gargoyles}.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_32")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_33")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_34")
 			else
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.say_7")
 			end
 		elseif player:getLevel() >= 50 and player:getLevel() < 80 then
 			if player:getStorageValue(POINTSSTORAGE) >= 70 then
-				npcHandler:say({
-					"You may not advance in your rank anymore until you've levelled up. But you can accept tasks without getting Paw & Fur points, just for an experience reward and the possibility to fight a boss from the range lower than level 80. ...",
-					"You can try {ice golems}, {quara scouts}, {mutated rats}, {ancient scarabs}, {wyverns}, {lancer beetles}, {wailing widows}, ...",
-					"as well as {killer caimans}, {bonebeasts}, {crystal spiders} and {mutated tigers}.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_29")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_30")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_31")
 			else
-				npcHandler:say({
-					"Alright, what would you like to hunt? {Ice golems}, {quara scouts}, {mutated rats}, {ancient scarabs}, {wyverns}, {lancer beetles}, ...",
-					"or {wailing widows}, {killer caimans}, {bonebeasts}, {crystal spiders} or {mutated tigers}.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_27")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_28")
 			end
 		elseif player:getLevel() >= 80 and player:getLevel() < 130 then
 			if player:getStorageValue(POINTSSTORAGE) >= 100 then
-				npcHandler:say({
-					"You may not advance in your rank anymore until you've levelled up. But you can accept tasks without getting Paw & Fur points, just for an experience reward and the possibility to fight a boss from the range lower than level 130. ...",
-					"You can try {underwater quara}, {giant spiders}, {werewolves}, {nightmares}, {hellspawns}, {high class lizards}, {stampors}, ...",
-					"as well as {brimstone bugs} and {mutated bats}.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_24")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_25")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_26")
 			else
-				npcHandler:say({
-					"Alright, what would you like to hunt? {Underwater quara}, {giant spiders}, {werewolves}, {nightmares}, {hellspawns}, ...",
-					"as well as {high class lizards}, {stampors}, {brimstone bugs}, {mutated bats}.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_22")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_23")
 			end
 		elseif player:getLevel() >= 130 and player:getStorageValue(POINTSSTORAGE) < 100 then
-			npcHandler:say({
-				"Alright, what would you like to hunt? You can try {hydras}, {serpent spawns}, {medusae}, {behemoths}, {sea serpents}, ...",
-				"as well as {hellhounds}, {ghastly dragons}, {undead dragons}, {draken} and {destroyers}.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_20")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_21")
 		else
-			npcHandler:say({
-				"Alright, what would you like to hunt? Be aware you won't gain any paw and fur points as you already achieved the highest rank, but you'll get an experience reward and can face bosses. ...",
-				"You can try {hydras}, {serpent spawns}, {medusae}, {behemoths}, {sea serpents}, ...",
-				"as well as {hellhounds}, {ghastly dragons}, {undead dragons}, {draken} and {destroyers} or maybe {demons}.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_17")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_18")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_19")
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif message ~= "" and player:canStartTask(message) then
@@ -740,28 +722,20 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif table.contains({ "promotion", "promotions" }, message:lower()) then
 		if player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.PawAndFurRank) < 0 and player:getStorageValue(POINTSSTORAGE) >= 10 and player:getLevel() >= 6 then -- to Huntsman Rank
-			npcHandler:say({
-				"You gained 10 points! Let me promote you to the first rank: 'Huntsman'. Congratulations! ...",
-				"If you find any trophies - either monster heads or other parts of monsters that you don't need - feel free to ask me for a trade.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_15")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_16")
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.PawAndFurRank, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.PawAndFurRank) == 0 and player:getStorageValue(POINTSSTORAGE) >= 20 and player:getLevel() >= 6 then -- to Ranger Rank
-			npcHandler:say({
-				"You gained 20 points. It's time for a promotion. You advance to the rank of a 'Ranger'. Congratulations! ...",
-				"Oh, I made a deal with Lorek. He ships Rangers from our society - and higher ranks of course - to Banuta, Chor or near the mountain pass to Darama. Just ask him for a passage.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_13")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_14")
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.PawAndFurRank, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.PawAndFurRank) == 2 and player:getStorageValue(POINTSSTORAGE) >= 40 and player:getLevel() >= 50 then -- to Big Game Hunter Rank
-			npcHandler:say({
-				"Good show! You gained 40 points for the 'Paw and Fur - Hunting Elite'. You have earned the right to join the ranks of those known as 'Big game hunter'. Congratulations! ...",
-				"From now on I'll buy more trophies from you!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_12")
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.PawAndFurRank, 4)
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.PawAndFurRank) == 4 and player:getStorageValue(POINTSSTORAGE) >= 70 and player:getLevel() >= 80 then -- to Trophy Hunter Rank
-			npcHandler:say({
-				"Spiffing! You gained 70 hunting points! From now on you can call yourself a 'Trophy hunter'. As a reward I have this special backpack for you and in addition, you can sell some more rare trophies to me. ...",
-				"Ask me for {special} tasks from time to time.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_10")
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.PawAndFurRank, 6)
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.PawAndFurRank) == 6 and player:getStorageValue(POINTSSTORAGE) >= 100 and player:getLevel() >= 130 then -- to Elite Hunter Rank
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.say_13")
@@ -778,22 +752,16 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.say_15")
 				npcHandler:setTopic(playerId, 4)
 			elseif player:getLevel() >= 50 and player:getLevel() < 80 then
-				npcHandler:say({
-					"You can choose between the {Snapper}, {Hide}, {Deathbine}, the {Bloodtusk}, {Shardhead}, {Fleshcrawler}, {Ribstride}, {Bloodweb} and {Esmeralda}",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_8")
 				npcHandler:setTopic(playerId, 5)
 			elseif player:getLevel() >= 80 and player:getLevel() < 130 then
-				npcHandler:say({
-					"You can choose between the {Snapper}, {Hide}, {Deathbine}, the {Bloodtusk}, {Shardhead}, {Fleshcrawler}, {Ribstride}, {Bloodweb}, {Esmeralda}, ...",
-					"{Thul}, {Flameborn}, {Sulphur Scuttler}, the {Old Widow}, {Hemming}, {Tormentor}, {Fazzrah}, {Tromphonyte} and {Bruise Payne}.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_6")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_7")
 				npcHandler:setTopic(playerId, 6)
 			else
-				npcHandler:say({
-					"You can choose between the {Snapper}, {Hide}, {Deathbine}, the {Bloodtusk}, {Shardhead}, {Fleshcrawler}, {Ribstride}, {Bloodweb}, {Esmeralda}, ...",
-					"{Thul}, {Flameborn}, {Sulphur Scuttler}, the {Old Widow}, {Hemming}, {Tormentor}, {Fazzrah}, {Tromphonyte}, {Bruise Payne}, ...",
-					"the {Many}, the {Noxious Spawn}, {Stonecracker}, {Gorgo}, {Kerberos}, {Ethershreck}, {Zanakeph}, {Paiz the Pauperizer}, {Bretzecutioner} and {Leviathan}.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_3")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_4")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_5")
 				npcHandler:setTopic(playerId, 7)
 			end
 		else
@@ -915,10 +883,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif table.contains({ "special", "special task" }, message:lower()) then
 		if player:getPawAndFurPoints() >= 70 and player:getLevel() >= 80 then
 			if player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MissionTiquandasRevenge) < 1 then
-				npcHandler:say({
-					"Have you heard about {Tiquanda's Revenge}? It is said that the jungle itself is alive and takes revenge for all the bad things people have done to it. ...",
-					"I myself believe that there is some truth in this clap-trap. Something 'real' which must have a hideout somewhere. Go find it and take revenge yourself! Ask me about the {special} task when you're done.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.grizzly_adams.multi_2")
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BossKillCount.TiquandasCount, 0)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MissionTiquandasRevenge, 1)
 			elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MissionTiquandasRevenge) <= 2 and player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BossKillCount.TiquandasCount) == 0 then

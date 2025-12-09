@@ -59,18 +59,16 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say({
-			"Fine, zo let'z prozeed. You uzed forged documentz to enter our zity, killed zeveral guardz who enjoyed a quite excluzive and expenzive training, deztroyed rare magical devizez in ze pozzezzion of ze emperor. ...",
-			"Ze good newz iz, your zree cheztz of platinum should be nearly enough to pay ze finez. Lucky you, ziz could have left you broke. ...",
-			"Zere are alzo zertain noble familiez complaining about ze murder of zeveral of zeir beloved onez. ...",
-			"I zink I can make a deal wiz ze noblez by zelling zem your property in ze zity. Your prezenze would ruin ze houze prizez zere anyway. ...",
-			"Of courze zat will not zuffize to compenzate zeir grief, zo I guezz you'll have to part wiz zat elite armor, too. Zadly, prizez for armor are on an all time low right now. ...",
-			"But luckily you ztill have zat mana cazket. Well, you had it. Now we have to zell it. ...",
-			"But not all iz lozt my blank-zkinned vizitor. According to my calculationz, zere iz ztill a bit left. ...",
-			"I zink we can zave you zome gold and zome treazurez, and you can keep one pieze of your elite armor at leazt. ...",
-			"You will find your rewardz in one of ze old zupply zellarz. Beware of ze ratz zough. ...",
-			"Ze rednezz of your faze and ze zound you make wiz your teez iz obviouzly a zign of gratitude of your zpeziez! I am flattered, but pleaze leave now az I have to attend to zome important buzinezz.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.izsh.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.izsh.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.izsh.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.izsh.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.izsh.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.izsh.multi_6")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.izsh.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.izsh.multi_8")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.izsh.multi_9")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.izsh.multi_10")
 		player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline, 34)
 		player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission12, 0) --Questlog, Wrath of the Emperor "Mission 12: Just Rewards"
 		npcHandler:setTopic(playerId, 0)

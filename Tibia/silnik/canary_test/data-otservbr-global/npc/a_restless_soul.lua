@@ -69,11 +69,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "story") then
 		local player = Player(creature)
 		if player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 37 then
-			npcHandler:say({
-				"I was captured and tortured to death by the cultists here. They worship a being that they call Ghazbaran ...",
-				"In his name they have claimed the mines and started to melt the ice to free an army of vile demons that have been frozen here for ages ...",
-				"Their plan is to create a new demon army for their master to conquer the world. Hjaern and the other shamans must learn about it! Hurry before its too late.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_restless_soul.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_restless_soul.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_restless_soul.multi_3")
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 38)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission10, 2) -- Questlog The Ice Islands Quest, Formorgar Mines 2: Ghostwhisperer
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission11, 1) -- Questlog The Ice Islands Quest, Formorgar Mines 3: The Secret

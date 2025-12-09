@@ -62,10 +62,8 @@ local function greetCallback(npc, creature, message)
 	end
 
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Start) == 1 then
-		npcHandler:say({
-			"Hahahaha! ...",
-			"|PLAYERNAME|, that almost sounded like the word of greeting. Humans - cute they are!",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.multi_16")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.multi_17")
 		endConversationWithDelay(npcHandler, npc, creature)
 		return false
 	end
@@ -89,16 +87,14 @@ local function creatureSayCallback(npc, creature, type, message)
 		if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission01) ~= 2 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.say_3")
 		elseif missionProgress < 1 then
-			npcHandler:say({
-				"I have heard some good things about you from Bo'ques. But I don't know. ...",
-				"Well, all right. I do have a job for you. ...",
-				"In order to stay informed about our enemy's doings, we have managed to plant a spy in Mal'ouquah. ...",
-				"He has kept the Efreet and Malor under surveillance for quite some time. ...",
-				"But unfortunately, I have lost contact with him months ago. ...",
-				"I do not fear for his safety because his cover is foolproof, but I cannot contact him either. This is where you come in. ...",
-				"I need you to infiltrate Mal'ouqhah, contact our man there and get his latest spyreport. The password is {PIEDPIPER}. Remember it well! ...",
-				"I do not have to add that this is a dangerous mission, do I? If you are discovered expect to be attacked! So goodluck, human!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.multi_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.multi_12")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.multi_13")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.multi_14")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.multi_15")
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission02, 1)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.DoorToEfreetTerritory, 1)
 		elseif missionProgress == 1 then
@@ -110,23 +106,17 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
 			if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.RataMari) ~= 2 or not player:removeItem(3232, 1) then
-				npcHandler:say({
-					"Don't waste any more time. We need the spyreport of our man in Mal'ouquah as soon as possible! ...",
-					"Also don't forget the password to contact our man: PIEDPIPER!",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.multi_6")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.multi_7")
 			else
-				npcHandler:say({
-					"You really have made it? You have the report? How come you did not get slaughtered? I must say I'm impressed. Your race will never cease to surprise me. ...",
-					"Well, let's see. ...",
-					"I think I need to talk to Gabel about this. I am sure he will know what to do. Perhaps you should have a word with him, too.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.multi_3")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.multi_4")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.multi_5")
 				player:setStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission02, 2)
 			end
 		elseif MsgContains(message, "no") then
-			npcHandler:say({
-				"Don't waste any more time. We need the spyreport of our man in Mal'ouquah as soon as possible! ...",
-				"Also don't forget the password to contact our man: PIEDPIPER!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.fa_hradin.multi_2")
 		end
 	end
 	return true

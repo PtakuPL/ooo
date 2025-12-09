@@ -55,11 +55,9 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "quara") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 41 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.QuaraInky) < 1 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.QuaraSplasher) < 1 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.QuaraSharptooth) < 1 then
-			npcHandler:say({
-				"The quara in this area are a strange race that seeks for inner perfection rather than physical one. ...",
-				"Considering that they are quara, they are rather peaceful as long no one enters their territory. ...",
-				"However, recently the quara got mad because their area is flooded with toxic sewage from the city. If you could inform someone about it, they might stop the sewage and the quara could return to their own business.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maritima.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maritima.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maritima.multi_3")
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 42)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission07, 3) -- StorageValue for Questlog "Mission 07: A Fishy Mission"
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.QuaraState, 1)

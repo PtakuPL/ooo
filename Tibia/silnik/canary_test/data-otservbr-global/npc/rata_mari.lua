@@ -64,13 +64,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "spy report") then
 		local reportProgress = player:getStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.RataMari)
 		if reportProgress < 1 then
-			npcHandler:say({
-				"You have come for the report? Great! I have been working hard on it during the last months. And nobody came to pick it up. I thought everybody had forgotten about me! ...",
-				"Do you have any idea how difficult it is to hold a pen when you have claws instead of hands? ...",
-				"But - you know - now I have worked so hard on this report I somehow don't want to part with it. At least not without some decent payment. ...",
-				"All right - listen - I know Fa'hradin would not approve of this, but I can't help it. I need some cheese! I need it now! ...",
-				"And I will not give the report to you until you get me some! Meep!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rata_mari.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rata_mari.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rata_mari.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rata_mari.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rata_mari.multi_5")
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.RataMari, 1)
 		elseif reportProgress == 1 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rata_mari.say_1")

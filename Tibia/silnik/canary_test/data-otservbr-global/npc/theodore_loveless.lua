@@ -70,10 +70,8 @@ local function creatureSayCallback(npc, creature, type, message)
 
 		player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Cigar, 1)
 		npc:getPosition():sendMagicEffect(CONST_ME_EXPLOSIONHIT)
-		npcHandler:say({
-			"Ah what a fine blend. I really ...",
-			"OUCH! What have you done you fool? How dare you???",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.theodore_loveless.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.theodore_loveless.multi_2")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 1 then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.theodore_loveless.say_2")

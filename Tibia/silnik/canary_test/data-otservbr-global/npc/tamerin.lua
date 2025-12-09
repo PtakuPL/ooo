@@ -74,10 +74,8 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 29 then
-			npcHandler:say({
-				"Why should I do something for another human being? I have been on my own for all those years. Hmm, but actually there is something I could need some assistance with. ... ",
-				"If you help me to solve my problems, I will help you with your mission. Do you accept?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamerin.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamerin.multi_2")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 32 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamerin.say_1")

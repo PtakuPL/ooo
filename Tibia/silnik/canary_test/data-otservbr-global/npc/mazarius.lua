@@ -66,28 +66,24 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.say_2")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "long") then
-		npcHandler:say({
-			"He obviously had taken an interest to the topic of ascension, and I came into possession of some of his early writings. ...You have to know I'm a scholar of some renown. In the course of my latest studies about ascension, I stumbled upon disturbing facts about the person of the all too well known Ferumbras, the fiendish. ...",
-			"This, combined with investigation and divination, bit by bit led to the conclusion that all that Ferumbras has done in the past may be part of a cunning plan. ...",
-			"Considering his writings and the books he based them upon, it became clear that Ferumbras is planning his ascension to godlike status. ...",
-			"All of his attacks and defeats only served one purpose: to become an integral part of the people's knowledge, fears and beliefs. ...",
-			"He actually used this as an energy source, and combined it with some sources of power which might not all be of our own world. ...",
-			"He uses this energy to increasingly empower himself and will eventually be prepared to take the final step to transform himself into a godlike being. ...",
-			"With the knowledge what to look for, I acquired expensive but powerful artefacts to scry the world for the expected power signature - and indeed I made contact. ...",
-			"To my horror I had to recognise that Ferumbras had already made significant progress, and his final bid for ascension is imminent! ...",
-			"His power levels are already too high for there to be any hope of stopping him with conventional means. ...",
-			"But not all is lost yet. During my studies about godhood, I learned that the dark Zathroth himself had created a weapon so powerful that it could actually slay a god. ...",
-			"Yet even he deemed this so-called '{godbreaker}' too dangerous, and split it into seven parts. These were at some point entrusted to his powerful minions, known as the Ruthless Seven. ...",
-			"Ancient, forbidden texts hinted at a hellish place where the seven built deadly dungeons, and placed some of their most fearsome and terrible minions as guards, before they sealed the place off. ...",
-			"I'm confident that I can prepare a matching ritual that will breach their protection and allow someone to enter their realm; but I'm in no way suited to handle the horrors to be encountered there. ...",
-			"Therefore I have to ask you, if you are willing to retrieve the parts of the godbreaker, and face the threat of the ascending Ferumbras?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_28")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_29")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_30")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_31")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_32")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_33")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_34")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_35")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_36")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_37")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_38")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_39")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_40")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_41")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "short") then
-		npcHandler:say({
-			"My studies indicate that without all doubt Ferumbras the fiendish is in the process of accumulating nearly godlike powers. We have to stop him.",
-			"Therefore I need you to enter a hellish dimension and acquire the parts of a weapon, the {godbreaker}, powerful enough to stop him once and for all. Are you willing to help me in this dire mission?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_26")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_27")
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 and player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Access) < 1 then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.say_3")
@@ -108,42 +104,34 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "godbreaker") then
-		npcHandler:say({
-			"For a long time, I thought the godbreaker to be some apocryphal myth. But apparently others had learned about the godbreaker in the aeons past and lusted for its power. ...",
-			"They had gathered hint after hint - until, ultimately, they were squashed by the Seven or their minions; which only made the leads that hinted at them all the more probable. ...",
-			"What Zathroth hoped to accomplish with the creation of such a weapon can only be subject to speculation. Assumedly he already had slain Tibiasula, so the godbreaker might have been even more powerful, more absolute. ...",
-			"However, it has to be assumed that in the end the sheer power of his creation scared Zathroth, who had to fear the weapon could one day be used against him. So he disassembled it. ...",
-			"He kept the parts hidden and guarded, and if the resources can be trusted and my interpretation is right, moved them again and again, never satisfied with a hiding place. In the end he entrusted the parts to the {Ruthless Seven}. ...",
-			"Knowing that they would never, ever allow one of their own to come in possession of all parts. Since then, the parts have been hidden in a {demi-plane} shared by the Seven.",
-			"Well, I need 30 {demonic essences} to exchange for a passage so you can access.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_19")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_20")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_21")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_22")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_23")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_24")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_25")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "Ruthless Seven") or MsgContains(message, "ruthless seven") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.say_7")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "demi-plane") then
-		npcHandler:say({
-			"It is a place, so to say, not completely of this world. It is separate of, yet strongly connected to, our own world. I would imagine it is quite limited in size and its laws of physics and magic should be roughly the same as ours. ...",
-			"Being home to a host of demons for a while, I expect it to be a hostile and dangerous environment.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_17")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_18")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "ascension") then
-		npcHandler:say({
-			"Ascension is a fascinating topic that dates back to efforts and philosophies of some of the most ancient, and mostly extinct, races which fought in the godwars. ...",
-			"Probably born out of desperation, they extensively researched ways to acquire godhood themselves. ...",
-			"Some of them at least even met with moderate success. But the process is complicated at best, and may vary from race to race or even from one individual to another. ...",
-			"The theories differ vastly and waxed and waned in popularity over the centuries if not aeons. Even today and in human society there are a number of obscure ascension cults. ...",
-			"Some of them claim that humans are most suitable for ascension because they already own a bit of divinity through Banor's godly spark.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_12")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_13")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_14")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_15")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_16")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "ferumbras") then
-		npcHandler:say({
-			"Although already powerful in his own right, it is obvious that his ultimate goal seems to be the ascension to godly powers. ...",
-			"His whole existence seems to be centred on becoming a name that strikes fear into the heart of men and to become a persistent figure in the minds of humanity. ...",
-			"This gives him a hold in reality and a kind of mould to fill with his power and conscience. It's also obvious that this kind of belief of the people alone won't be enough to empower him sufficiently. ...",
-			"Therefore he has to tap into other, probably even more sinister power sources. I can't tell what these sources are, but my scrying revealed that he has reached massive amounts of power. He has probably been infusing himself since years. ...",
-			"By now he is apparently reaching the end circle of his ascension and could make his final move any day.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_8")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_9")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_10")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_11")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "bozarn") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.say_8")
@@ -158,25 +146,19 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.say_11")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "kazordoon") then
-		npcHandler:say({
-			"The dwarves are leftovers from a time long gone by. They have outlived their usefulness to the gods and seem to have come to terms with that. ...",
-			"They are as unchanging as rock and no greatness awaits them any more. They missed their chance, if they ever had any.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_6")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "ab'dendriel") then
-		npcHandler:say({
-			"The elves are like lost children. Their potential might be great, but they lack focus and dedication to truly improve. If their myths are true, some of the more early elves might have accomplished ascension. ...",
-			"Yet even if hints strongly suggest those stories are true, the sheer inaction of those assumedly ascended beings is disturbing. Perhaps what those legendary elves achieved was something completely different.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_4")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "edron") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.say_12")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "demons") then
-		npcHandler:say({
-			"With all their powers and vast magic knowledge they are still more pawns than anything else. Given their resources, ascension might seem within reach. ...",
-			"The absence of any ascendant demon might prove that they are no true beings at all and literally damned to be stuck in their accursed forms.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.multi_2")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "venore") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mazarius.say_13")

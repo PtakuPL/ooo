@@ -180,12 +180,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "digging") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) >= 30 then
 			if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionMushroomDigger) < 1 and player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MushroomDiggerTimeout) < os.time() then
-				npcHandler:say({
-					"Take this little piggy here. It will one day become a great mushroom hunter for sure. For now it is depended on you and other pigs. ...",
-					"Well, other pigs like it is one, I mean. I was of course not comparing you with a pig! Go to the truffles area and follow the truffle pigs there. If they dig up some truffles, let the little pig eat the mushrooms. ...",
-					"You'll have to feed it three times. Then return it to me. ...",
-					"Keep in mind that the pig has to be returned to his mother after a while. If you don't do this, the gnomes will call it back via teleport crystals.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.multi_2")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.multi_3")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.multi_4")
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionMushroomDigger, 1)
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MushroomCount, 0)
 				player:addItem(15828, 1) --- taking missions

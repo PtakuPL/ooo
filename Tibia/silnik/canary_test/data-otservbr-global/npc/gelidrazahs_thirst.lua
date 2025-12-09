@@ -55,10 +55,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 0 then
-		npcHandler:say({
-			"There are three questions. First: What is the name of the princess who fell in love with a Thaian nobleman during the regency of pharaoh Uthemath? Second: Who is the author of the book ,The Language of the Wolves'? ...",
-			"Third: Which ancient Tibian race reportedly travelled the sky in cloud ships? Can you answer these questions?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gelidrazahs_thirst.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gelidrazahs_thirst.multi_2")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gelidrazahs_thirst.say_1")

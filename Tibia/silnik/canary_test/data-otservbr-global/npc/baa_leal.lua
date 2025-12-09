@@ -66,10 +66,8 @@ local function greetCallback(npc, creature, message)
 	end
 
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Start) == 1 then
-		npcHandler:say({
-			"Hahahaha! ...",
-			"|PLAYERNAME|, that almost sounded like the word of greeting. Humans - cute they are!",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.baa_leal.multi_13")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.baa_leal.multi_14")
 		endConversationWithDelay(npcHandler, npc, creature)
 		return false
 	end
@@ -96,11 +94,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	local missionProgress = player:getStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission01)
 	if MsgContains(message, "mission") then
 		if missionProgress < 1 then
-			npcHandler:say({
-				"Each mission and operation is a crucial step towards our victory! ...",
-				"Now that we speak of it ...",
-				"Since you are no djinn, there is something you could help us with. Are you interested, human?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.baa_leal.multi_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.baa_leal.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.baa_leal.multi_12")
 			npcHandler:setTopic(playerId, 1)
 		elseif table.contains({ 1, 2 }, missionProgress) then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.baa_leal.say_4")
@@ -110,14 +106,12 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
-			npcHandler:say({
-				"Well ... All right. You may only be a human, but you do seem to have the right spirit. ...",
-				"Listen! Since our base of operations is set in this isolated spot we depend on supplies from outside. These supplies are crucial for us to win the war. ...",
-				"Unfortunately, it has happened that some of our supplies have disappeared on their way to this fortress. At first we thought it was the Marid, but intelligence reports suggest a different explanation. ...",
-				"We now believe that a human was behind the theft! ...",
-				"His identity is still unknown but we have been told that the thief fled to the human settlement called Carlin. I want you to find him and report back to me. Nobody messes with the Efreet and lives to tell the tale! ...",
-				"Now go! Travel to the northern city Carlin! Keep your eyes open and look around for something that might give you a clue!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.baa_leal.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.baa_leal.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.baa_leal.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.baa_leal.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.baa_leal.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.baa_leal.multi_9")
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Start, 1)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission01, 1)
 		elseif MsgContains(message, "no") then
@@ -137,11 +131,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			if missionProgress ~= 2 then
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.baa_leal.say_9")
 			else
-				npcHandler:say({
-					"You found the thief! Excellent work, soldier! You are doing well - for a human, that is. Here - take this as a reward. ...",
-					"Since you have proven to be a capable soldier, we have another mission for you. ...",
-					"If you are interested go to Alesar and ask him about it.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.baa_leal.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.baa_leal.multi_2")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.baa_leal.multi_3")
 				player:addMoney(600)
 				player:setStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission01, 3)
 			end

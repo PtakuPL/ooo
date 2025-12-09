@@ -63,20 +63,16 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if (MsgContains(message, "scroll") or MsgContains(message, "mission")) and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission35) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission36) < 1 then
-		npcHandler:say({
-			"So someone sent you after a scroll, eh? A stroll for a scroll! <chuckles> Sounds like an old-fashioned necromancer thing. ...",
-			"Well, this piece here is a rather fascinating thing - see those strange blood stains? - ...",
-			"My predecessors have had it for quite a while without finding out more - I was hoping to investigate, but there's always so much to do! ...",
-			"Ah, so you want it, too? Well, do me a favour: fetch two samples and assist in my experiment, in exchange for the scroll piece. Yes?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.multi_12")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.multi_13")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.multi_14")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.multi_15")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission35) == 1 then
-		npcHandler:say({
-			"Sanguine! I need two different blood samples - The first one from the necromancer's pure blood chamber. ... ",
-			"I was barred from the premises. For my research! Shameful! I'm a martyr to the cause - oh, the second sample you said? ...",
-			"The second sample you must retrieve from the sacrificial chamber in the ancient vampire crypts, first floor, far west. ...",
-			"Take these two sterilised vials, one for each blood basin. Oh, I wish I could go myself! Come back when you have filled both vials.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.multi_8")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.multi_9")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.multi_10")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.multi_11")
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission36, 1)
 		player:addItem(19100, 2)
 		npcHandler:setTopic(playerId, 0)
@@ -85,11 +81,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission37) == 1 then
 		if player:getItemCount(19102) >= 1 and player:getItemCount(19101) >= 1 then
-			npcHandler:say({
-				"Now, let me see... yes... yes... very good. Let me add THIS ..... swill it... there. Sanguine! ...",
-				"We're not finished yet. Take this tainted blood vial ...",
-				"Dab some drops from it on to the four blood pagodas in the inner circle here. Then pull the lightning lever over there.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.multi_7")
 			player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission38, 1)
 			player:removeItem(19101, 1)
 			player:removeItem(19102, 1)
@@ -103,12 +97,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.say_3")
 		npcHandler:setTopic(playerId, 3)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 3 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission40) == 1 then
-		npcHandler:say({
-			"Sanguine! Did you see those sparks! We definitely had some energy transfer! Well done! Now, for your reward. ...",
-			"Err... I would awfully like to know more about the scroll ...",
-			"Would you settle for a heartfelt handshake instead - oh, you wouldn't? Well, er, okay ...",
-			"Give me a minute or two to retrieve it. Ask me for the {scroll} or the {mission}",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.multi_4")
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission41, 1)
 		npcHandler:setTopic(playerId, 0)
 	elseif (MsgContains(message, "scroll") or MsgContains(message, "mission")) and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission41) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission42) < 1 then

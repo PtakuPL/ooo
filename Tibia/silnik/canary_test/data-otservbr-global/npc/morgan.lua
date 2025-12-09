@@ -68,11 +68,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 6 then
-			npcHandler:say({
-				"Hm, if you are that eager to work I have an idea how you could help me out. A distant relative of mine, the old sage Eremo lives on the isle Cormaya, near Edron. ...",
-				"He has not heard from me since ages. He might assume that I am dead. Since I don't want him to get into trouble for receiving a letter from a pirate I ask you to deliver it personally. ...",
-				"Of course it's a long journey but you asked for it. You will have to prove us your worth. Are you up to that?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.morgan.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.morgan.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.morgan.multi_3")
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 8 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.morgan.say_2")

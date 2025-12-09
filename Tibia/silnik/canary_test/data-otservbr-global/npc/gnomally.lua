@@ -104,20 +104,14 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "equipment") then
-		npcHandler:say({
-			"You can buy different equipment for minor or for major tokens. So, which is the equipment you are interested in, the one for {minor} or {major} tokens? ...",
-			"By the way, if you want to have a look on the prismatic and gill items first, just head over to the depot and check the market.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.multi_6")
 	elseif MsgContains(message, "major") then
-		npcHandler:say({
-			"For ten major tokens, I can offer you a {gill gugel}, a {gill coat}, {gill legs}, a {spellbook} of vigilance, a {prismatic helmet}, a {prismatic armor}, {prismatic legs}, {prismatic boots} or a {prismatic shield} ...",
-			"For twenty major tokens, I can offer you a {basic soil guardian outfit}, a {basic crystal warlord outfit}, an {iron loadstone} or a {glow wine}.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.multi_4")
 	elseif MsgContains(message, "minor") then
-		npcHandler:say({
-			"For two minor tokens, you can buy one gnomish {supply} package! For eight tokens, you can buy a {muck} remover! For ten tokens, you can buy a {mission} crystal. For fifteen tokens, you can buy a crystal {lamp} or a mushroom {backpack}. ...",
-			"For seventy tokens, I can offer you a voucher for an {addition to the soil guardian outfit}, or a voucher for an {addition to the crystal warlord armor outfit}.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.multi_2")
 	elseif config[message] then
 		local itemType = ItemType(config[message].itemid)
 		npcHandler:say(string.format("Do you want to trade %s %s for %d %s tokens?", (itemType:getArticle() ~= "" and itemType:getArticle() or ""), itemType:getName(), config[message].token.count, config[message].token.type), npc, creature)

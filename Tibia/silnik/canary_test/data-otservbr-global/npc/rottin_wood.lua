@@ -68,13 +68,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		-- Checks if Mission 03 is completed and the cooldown has expired
 		elseif getPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Mission03) == 2 then
 			if getPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Time) <= os.time() then
-				npcHandler:say({
-					"Of course, of course, there is indeed something you can help us with. Remember that we also have some tasks for you. So, are you ready for another quest to help the men of the forest?",
-					"There is a problem with one of our deer stands. Right. Well, there are two problems, our deer stands - and some of the walls of the buildings in the camp are broken. ...",
-					"You know, the guys built all of that themselves. Sure, at first it didn't quite work out as we planned and in the end we had to tear down half the forest - but - it was worth it. ...",
-					"Still, most of the camp is kind of... broken now. And someone with a good hammer and a steady hand needs to fix that. Or I am afraid we will have to freeze... during the cold evenings... well you know, hard times. ...",
-					"So what do you say, in for this one?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_21")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_22")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_23")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_24")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_25")
 				npcHandler:setTopic(playerId, 4)
 			else
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.say_4")
@@ -92,11 +90,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		-- Checks if Mission 05 is completed and the cooldown has expired
 		elseif getPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Mission03) == 4 then
 			if getPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Time) <= os.time() then
-				npcHandler:say({
-					"Oh |PLAYERNAME| my good friend, good to see you! Today you will help us with a very important task. Very important indeed. ...",
-					"You know, a large group of merchants is travelling from Thais to Venore and they are crossing the forest to shorten their way - can you believe it? ...",
-					"They will enter the forest near our camp which is where you come in - uhm I mean you do want to help us with this, right?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_18")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_19")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_20")
 				npcHandler:setTopic(playerId, 6)
 			else
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.say_7")
@@ -143,12 +139,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.say_10")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"Fine, now hurry into the woods and find some rabbits. Find them and kill them that is. Use a sharp, thin knife to get the rabbit foot and be careful not to destroy it - no one would buy it in a bad condition after all. ...",
-				"Once you gathered some rabbit feet, put one of our - handcrafted by the guys - ribbons on each of them. That will make two lucky charms per rabbit. ...",
-				"We will need at least seven. And seven is a lucky number, don't you think? Heh. ...",
-				"If you need some more ribbons just come back to me and ask.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_14")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_15")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_16")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_17")
 			setPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Mission03, 1)
 			setPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Questline, 1) -- quest log
 			doPlayerAddItem(creature, 12171, 7)
@@ -169,10 +163,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			setPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Questline, 3) -- quest log
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
-			npcHandler:say({
-				"Mmmmh, I have to say - good workmanship. No doubt. Yes, the person who made that tool you used to fix all this was a pure professional. Something I can't say about your work, though. ...",
-				"The walls look as if they will come off in a matter of hours. Oh well, you can always come back and repair this mess, ask me for a task if you want to. Yeah, yeah and here's your reward for today.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_12")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_13")
 			setPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Mission03, 4)
 			setPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Questline, 6) -- quest log
 			setPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Time, os.time() + (20 * 3600)) -- 20 hours
@@ -180,23 +172,19 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 			------------------------ FINISH MISSION 02 ------------------------
 		elseif npcHandler:getTopic(playerId) == 6 then
-			npcHandler:say({
-				"Right, now before the merchants enter the woods, you will install several traps - nothing too dangerous, just nets and ropes. ...",
-				"When they enter said area which is located close to our hidden camp, they will be trapped and you can... lighten their heavy burden of valuable goods. ...",
-				"There is but a tiny little catch - we cannot help you laying these traps. You know, some of the guys became sick recently, we talk about several broken legs here, one almost lost his arm ...",
-				"So... it's entirely up to you, will you do this or not?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_11")
 			npcHandler:setTopic(playerId, 7)
 		elseif npcHandler:getTopic(playerId) == 7 then
-			npcHandler:say({
-				"Alright very good. Now the only thing you need to do is taking these traps and moving out to the area I have marked on your map where you need to place them. ...",
-				"Once you did that go to the large high seat near the camp and watch for the travelling merchants. ...",
-				"Once all of them are trapped in the nets, you can go down and gather anything of value you can find. But only take what we... you really need - around 100 gold should be enough for any man to take. ...",
-				"We have manners after all, haven't we. ...",
-				"My men will take their share of course and... help you relieve the merchants of any valuables. ...",
-				"You're done if you get at least... let's say 5 of these fools. Return to me and you will be rewarded. ...",
-				"Off you go and - good hunt, heh.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.multi_7")
 			doPlayerAddItem(creature, 12186, 5)
 			setPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Mission03, 5)
 			setPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Questline, 5) -- quest log

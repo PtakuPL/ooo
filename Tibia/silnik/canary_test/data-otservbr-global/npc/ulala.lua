@@ -59,21 +59,17 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline) == 5 then
-			npcHandler:say({
-				"The great hunt! About to begin, but gods are not in favour of us yet. We need all help we get. We please Krunus with special nature dance. ...",
-				"You seen Krunus altar south in camp, on mountain top? This is where dance is. If you do right steps Krunus will give you sign. If wrong, he not pleased. ...",
-				"Do Krunus dance for us! Step and dance and turn around! You will know when you do good. Make {Krunus} happy and support our great hunt!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.multi_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.multi_11")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline) == 6 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.say_1")
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline) == 7 then
-			npcHandler:say({
-				"You born dancer! Krunus is pleased and support the great hunt. But he easy to please! Pandor much harder. We weak, so he sad about us. ...",
-				"Maybe we can please with sacrifice of body parts of our enemies. But you need help us get it! We much too weak. ...",
-				"If you bring us 5 teeth of green men, 5 skin of horned ones and 5 skin of snakemen that already be good. Please help tribe make Pandor happy!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.multi_8")
 			player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline, 8)
 			player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Mission04, 1) --Questlog, Unnatural Selection Quest "Mission 4: Bits and Pieces"
 			npcHandler:setTopic(playerId, 0)
@@ -81,11 +77,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.say_2")
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline) == 9 then
-			npcHandler:say({
-				"We need make sure Fasuon is on our side. There is laaaaaaaarge crystal on top of mountain. Don't know where come from, was there before us. Problem is - way is infested with creatures! ...",
-				"Creatures from the other side of mountain. Bony! Scary! We too weak to go through there, can just run and hope to survive.. but you do better! ...",
-				"Please find great crystal of Fasuon and pray there for his support!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.multi_5")
 			player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline, 10)
 			player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Mission05, 1) --Questlog, Unnatural Selection Quest "Mission 5: Ray of Light"
 			npcHandler:setTopic(playerId, 0)
@@ -98,10 +92,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Mission05, 3) --Questlog, Unnatural Selection Quest "Mission 5: Ray of Light"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline) == 12 then
-			npcHandler:say({
-				"Uzroth very easy to anger. You been great help so far but me think that need to pray to Uzroth meself. Only me understand what he wants at time and he is veeeeeery moody. Cannot risk to make angry! ...",
-				"So me will do when you gone. But me thank you very much. Go speak Lazaran and tell the gods are pleased now.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.multi_2")
 			player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline, 13)
 			player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Mission06, 1) --Questlog, Unnatural Selection Quest "Mission 6: Firewater Burn"
 			npcHandler:setTopic(playerId, 0)

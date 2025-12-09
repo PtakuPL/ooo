@@ -86,10 +86,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "shapers") then
-		npcHandler:say({
-			"The {Shapers} were an advanced civilisation, well versed in art, construction, language and exploration of our world in their time. ...",
-			"The foundations of this {temple} are testament to their genius and advanced understanding of complex problems. They were master craftsmen and excelled in magic.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.multi_2")
 	end
 
 	if MsgContains(message, "temple") then

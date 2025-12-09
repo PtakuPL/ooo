@@ -94,11 +94,9 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	local randomMessagesResult
 	if MsgContains(message, "instructions") then
-		npcHandler:say({
-			"A'right, first of all you need a bait which isn't for free, though. I sell them for 50 gold each. Use the bait on the crane over there when you see something in the telescope. ...",
-			"Then go up to the lookout and check the telescope for a sight of the sea serpent. ...",
-			"If you see it in front of ya, get down at once. And what d'ya gonna say to me?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_haba_open_sea.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_haba_open_sea.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_haba_open_sea.multi_5")
 		npcHandler:setTopic(playerId, 1)
 	elseif npcHandler:getTopic(playerId) == 1 and message:lower() ~= "straight" then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_haba_open_sea.say_1")
@@ -107,10 +105,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_haba_open_sea.say_2")
 		npcHandler:setTopic(playerId, 3)
 	elseif npcHandler:getTopic(playerId) == 1 and message:lower() ~= "starboard" then
-		npcHandler:say({
-			"Ya gotta learn a lot! The correct command would be STARBOARD side. ...",
-			"After you told me about the direction, put a bait on the crane again and go up to the lookout! That would be all sailor, let's go hunt down the sea serpent!!",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_haba_open_sea.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_haba_open_sea.multi_2")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message:lower(), "straight") then
 		randomMessagesResult = randomMessages.straight[math.random(#randomMessages.straight)]

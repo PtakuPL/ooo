@@ -64,10 +64,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "cap") or MsgContains(message, "mage") then
 		if (getPlayerItemCount(creature, 12599) >= 1 and getPlayerStorageValue(creature, Storage.Quest.U9_1.ElementalistOutfits.Outfit) == 2) and getPlayerStorageValue(creature, Storage.Quest.U9_1.ElementalistOutfits.Addon1) < 1 then
-			npcHandler:say({
-				"Yo-Yo-Your*chhhrk*. Cap. Is. Slimed. I. Can. Clean. It. *chhhhrrrkchrk* ...",
-				"Here. You. Are. chhhrrrrkchrk",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.broken_servant_sentry.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.broken_servant_sentry.multi_6")
 			doPlayerRemoveItem(creature, 12599, 1)
 			setPlayerStorageValue(creature, Storage.Quest.U9_1.ElementalistOutfits.Addon1, 1)
 			doPlayerAddOutfit(creature, 432, 1)
@@ -79,10 +77,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "staff") or MsgContains(message, "spike") then
 		if (getPlayerItemCount(creature, 12803) >= 1 and getPlayerStorageValue(creature, Storage.Quest.U9_1.ElementalistOutfits.Outfit) == 2) and getPlayerStorageValue(creature, Storage.Quest.U9_1.ElementalistOutfits.Addon2) < 1 then
-			npcHandler:say({
-				"Yo-Yo-Your*chhhrk*. Cap. Is. Slimed. I. Can. Clean. It. *chhhhrrrkchrk* ...",
-				"Here. You. Are. *chhhrrrrkchrk*",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.broken_servant_sentry.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.broken_servant_sentry.multi_4")
 			doPlayerRemoveItem(creature, 12803, 1)
 			setPlayerStorageValue(creature, Storage.Quest.U9_1.ElementalistOutfits.Addon2, 1)
 			doPlayerAddOutfit(creature, 432, 2)
@@ -105,10 +101,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.broken_servant_sentry.say_7")
 			npcHandler:setTopic(playerId, 4)
 		elseif (npcHandler:getTopic(playerId) == 4) and getPlayerItemCount(creature, 12601) >= 20 then
-			npcHandler:say({
-				"Please. Wait. I. Can. Not. Han-Han-Han*chhhhhrrrchrk*Handle. *chhhhrchrk* This. Is. Enough. Material. *chrrrchhrk* ...",
-				"I. Have-ve-ve-veee*chrrrck*. Also. Cleaned. Your. Clothes. Master. It. Is. No-No-No*chhrrrrk*Now. Free. Of. Sample. Stains.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.broken_servant_sentry.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.broken_servant_sentry.multi_2")
 			doPlayerRemoveItem(creature, 12601, 20)
 			setPlayerStorageValue(creature, Storage.Quest.U9_1.ElementalistOutfits.Outfit, 2)
 			doPlayerAddOutfit(creature, 432, 0)

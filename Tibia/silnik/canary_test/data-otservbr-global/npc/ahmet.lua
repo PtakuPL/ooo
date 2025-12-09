@@ -107,20 +107,16 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "documents") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission04) == 2 then
 			player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission04, 3)
-			npcHandler:say({
-				"You need some forged documents? But I will only forge something for a friend. ...",
-				"The nomads at the northern oasis killed someone dear to me. Go and kill at least one of them, then we talk about your document.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.multi_8")
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.RewardOasis) == 1 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.say_1")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "mission") or MsgContains(message, "quest") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.StealFromThieves) < 1 then
-			npcHandler:say({
-				"What are you talking about?? I was robbed!!!! Someone catch those filthy thieves!!!!! GUARDS! ...",
-				"<nothing happens>....<SIGH> Like usual, they hide at the slightest sign of trouble! YOU! Want to earn some quick money?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.multi_6")
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.StealFromThieves) == 1 or player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.StealFromThieves) == 2 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.say_2")
@@ -140,10 +136,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"Of course you do! Go hunt down the thieves and bring back the stuff they have stolen from me. ...",
-				" I saw them running out of town and then to the north. Maybe they hide at the oasis.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.multi_4")
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.StealFromThieves, 1)
 		elseif npcHandler:getTopic(playerId) == 3 then
@@ -161,10 +155,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:getStorageValue(ThreatenedDreams.Mission01[1]) == 1 and player:getStorageValue(ThreatenedDreams.Mission01.PoacherChest) == 1 then
 				if player:getItemCount(25235) >= 1 and player:getMoney() >= 5000 then
 					player:removeMoney(5000)
-					npcHandler:say({
-						"Well then. Here, take the book, I added the story. Oh, just a piece of advice: Not to inflame prejudice but poachers are of rather simple disposition. I doubt they are ardent readers. ...",
-						"So if you want to make sure they read this anytime soon, perhaps don't hide the book in a shelf or chest. Make sure to place it somewhere where they will find it easily, like very obviously on a table or something.",
-					}, npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.multi_1")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.multi_2")
 					player:setStorageValue(ThreatenedDreams.Mission01[1], 2)
 					npcHandler:setTopic(playerId, 0)
 				else

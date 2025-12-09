@@ -68,28 +68,22 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		end
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Measurements) == 2 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.TimeTaskMeasurements) <= 0 then
-			npcHandler:say({
-				"The heat down here is not the only problem we have but one of our greatest concerns. Not only is it almost unbearable for us, it also seems to be rising. ...",
-				"We need to find out if this is true and what that means for this place - and for us gnomes. You can help us do this by grabbing one of our trignometres and collecting as much as data from the heat in this area as possible. ...",
-				"We'd need at least 5 measurements. Are you willing to do this?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_34")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_35")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_36")
 			npcHandler:setTopic(playerId, 2)
 		end
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Measurements) < 1 then
-			npcHandler:say({
-				"The heat down here is not the only problem we have but one of our greatest concerns. Not only is it almost unbearable for us, it also seems to be rising. ...",
-				"We need to find out if this is true and what that means for this place - and for us gnomes. You can help us do this by grabbing one of our trignometres and collecting as much as data from the heat in this area as possible. ...",
-				"We'd need at least 5 measurements. Are you willing to do this?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_31")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_32")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_33")
 			npcHandler:setTopic(playerId, 2)
 		elseif (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Measurements) == 1) and (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationCount) < 5) then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_2")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Measurements) == 1 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.LocationCount) == 5 then
-			npcHandler:say({
-				"Excellent, you returned with more data! Let me see... hmm. ...",
-				"Well, we need more data on this but first I will have to show this to our grand horticulturist. Thank you for getting this for us!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_29")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_30")
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.TimeTaskMeasurements, os.time() + time)
 			player:addItem(27654, 1)
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points) + 1)
@@ -97,11 +91,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 2 and MsgContains(message, "yes") then
-		npcHandler:say({
-			"How fortunate! There are some trignometres lying around next to that device behind me. Take one and hold it next to high temperature heat sources. ...",
-			"If you gathered enough data, you will actually smell it from the device. ...",
-			"Return to me with the results afterwards. Best of luck, we count on you!",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_26")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_27")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_28")
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Questline) < 1 then
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Questline, 1)
 		end
@@ -122,33 +114,27 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		end
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Ordnance) == 3 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.TimeTaskOrdnance) <= 0 then
-			npcHandler:say({
-				"I am constantly waiting for ordnance to arrive. A lot of gnomes intend to travel out here to help us but the main access path to our base is not safe anymore. ...",
-				"Tragically we lost several gnomes after an outbreak of what I can only describe as a force from below. We were completely surprised by their onslaught and retreated to this outpost. ...",
-				"All our reinforcements arrive at the crystal teleporter to the east of the cave system. We need someone to navigate the new arrivals through the hazards of the dangerous caves. ...",
-				"Hideous creatures and hot lava makes travelling extremely dangerous. And on top of that there is also the constant danger from falling rocks in the area. ...",
-				"Are you willing to help?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_21")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_22")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_23")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_24")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_25")
 			npcHandler:setTopic(playerId, 22)
 		end
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Ordnance) < 1 then
-			npcHandler:say({
-				"I am constantly waiting for ordnance to arrive. A lot of gnomes intend to travel out here to help us but the main access path to our base is not safe anymore. ...",
-				"Tragically we lost several gnomes after an outbreak of what I can only describe as a force from below. We were completely surprised by their onslaught and retreated to this outpost. ...",
-				"All our reinforcements arrive at the crystal teleporter to the east of the cave system. We need someone to navigate the new arrivals through the hazards of the dangerous caves. ...",
-				"Hideous creatures and hot lava makes travelling extremely dangerous. And on top of that there is also the constant danger from falling rocks in the area. ...",
-				"Are you willing to help?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_16")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_17")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_18")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_19")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_20")
 			npcHandler:setTopic(playerId, 22)
 		elseif (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Ordnance) == 1) or (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Ordnance) == 2 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.GnomesCount) < 5) then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_4")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Ordnance) == 2 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.GnomesCount) >= 5 then
 			if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.CrawlersCount) >= 3 then
-				npcHandler:say({
-					"AMAZING! Not only did you salve all our friends - you also rescued the animals! Here is your reward and bonus! ...",
-					"The other are already telling stories about you. Please return to me later if you want to help out some more!",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_14")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_15")
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.TimeTaskOrdnance, os.time() + time)
 				player:addItem(27654, 2)
 				player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points) + 2)
@@ -163,10 +149,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 22 and MsgContains(message, "yes") then
-		npcHandler:say({
-			"Excellent, just follow the path to east until you reach a dead end, there is a hole that leads to a small cave underneath which will bring you right to the old trail. ...",
-			"Help whoever you can and return them to the save cave exit - oh, and while you're at it... some of them will have pack animals. If you can rescue those as well, I'll hand you a bonus. Good luck!",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_12")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_13")
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Questline) < 1 then
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Questline, 1)
 		end
@@ -182,21 +166,17 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		end
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Charting) == 2 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.TimeTaskCharting) <= 0 then
-			npcHandler:say({
-				"While exploring these caves to find places to collect spores and grow mushrooms, we found several strange structures. I am convinced that this system was once home to intelligent beings. ...",
-				"However, the creatures from below are now disturbing our research as well as some particularly pesky dwarves who just would not leave us alone. ...",
-				"As we have our hands full with a lot of things right now, we could need someone to chart the unknown parts of this underground labyrinth ...",
-				"I am especially interested in the scattered dark structures around these parts. Would you do that?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_11")
 			npcHandler:setTopic(playerId, 33)
 		end
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Charting) < 1 then
-			npcHandler:say({
-				"While exploring these caves to find places to collect spores and grow mushrooms, we found several strange structures. I am convinced that this system was once home to intelligent beings. ...",
-				"However, the creatures from below are now disturbing our research as well as some particularly pesky dwarves who just would not leave us alone. ...",
-				"As we have our hands full with a lot of things right now, we could need someone to chart the unknown parts of this underground labyrinth ...",
-				"I am especially interested in the scattered dark structures around these parts. Would you do that?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_7")
 			npcHandler:setTopic(playerId, 33)
 		elseif (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Charting) == 1) and (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.ChartingCount) < 3) then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_7")
@@ -216,11 +196,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 33 and MsgContains(message, "yes") then
-		npcHandler:say({
-			"Very good. We prepared a lot of maps as the complete mapping of this system will probably take a lot of research. ...",
-			"Take one from the stack here next to me and map as many structures as possible. However, we need at least three locations to make any sense of this ancient layout at all. ...",
-			"If you manage to map one of each structure around these parts - I assume there must be at least two times as many around here - I will hand you a bonus!",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.multi_3")
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Questline) < 1 then
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Questline, 1)
 		end

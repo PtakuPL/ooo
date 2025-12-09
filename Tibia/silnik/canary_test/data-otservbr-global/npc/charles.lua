@@ -79,10 +79,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "shortcut") and player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.SmallIslands.Questline) >= 1 then
-		npcHandler:say({
-			"This passage is shorter and costs less gold - but on the other hand it is also a bit riskier. On this route there are frequent tempests and the severe winds may blow a passenger over board. ...",
-			"Few ship captains would sail this route. But if you want to take the risk, I can bring you to Thais, Edron, Liberty Bay or Yalahar for less gold than usual. Interested?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.charles.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.charles.multi_2")
 		npcHandler:setTopic(playerId, 5)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 5 then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.charles.say_1")

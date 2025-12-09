@@ -68,19 +68,15 @@ local function greetCallback(npc, creature, message)
 	end
 
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Start) == 1 then
-		npcHandler:say({
-			"Hahahaha! ...",
-			"|PLAYERNAME|, that almost sounded like the word of greeting. Humans - cute they are!",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bo_ques.multi_12")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bo_ques.multi_13")
 		endConversationWithDelay(npcHandler, npc, creature)
 		return false
 	end
 
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.Faction.Greeting) == -1 then
-		npcHandler:say({
-			"Hahahaha! ...",
-			"|PLAYERNAME|, that almost sounded like the word of greeting. Humans - cute they are!",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bo_ques.multi_10")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bo_ques.multi_11")
 		endConversationWithDelay(npcHandler, npc, creature)
 		return false
 	end
@@ -108,20 +104,16 @@ local function creatureSayCallback(npc, creature, type, message)
 	local missionProgress = player:getStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission01)
 	if MsgContains(message, "recipe") or MsgContains(message, "mission") then
 		if missionProgress < 1 then
-			npcHandler:say({
-				"My collection of recipes is almost complete. There are only but a few that are missing. ...",
-				"Hmmm... now that we talk about it. There is something you could help me with. Are you interested?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bo_ques.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bo_ques.multi_9")
 			npcHandler:setTopic(playerId, 1)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bo_ques.say_3")
 		end
 	elseif MsgContains(message, "cookbook") then
 		if missionProgress == -1 then
-			npcHandler:say({
-				"I'm preparing the food for all djinns in Ashta'daramai. ...",
-				"Therefore, I'm what is commonly called a cook, although I do not like that word too much. It is vulgar. I prefer to call myself 'chef'.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bo_ques.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bo_ques.multi_7")
 		elseif missionProgress == 1 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bo_ques.say_4")
 			npcHandler:setTopic(playerId, 2)
@@ -130,10 +122,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
-			npcHandler:say({
-				"Fine! Even though I know so many recipes, I'm looking for the description of some dwarven meals. ...",
-				"So, if you could bring me a cookbook of the dwarven kitchen, I'll reward you well.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bo_ques.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bo_ques.multi_5")
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Start, 1)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission01, 1)
 		elseif MsgContains(message, "no") then
@@ -147,11 +137,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				return true
 			end
 
-			npcHandler:say({
-				"The book! You have it! Let me see! <browses the book> ...",
-				"Dragon Egg Omelette, Dwarven beer sauce... it's all there. This is great! Here is your well-deserved reward. ...",
-				"Incidentally, I have talked to Fa'hradin about you during dinner. I think he might have some work for you. Why don't you talk to him about it?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bo_ques.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bo_ques.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bo_ques.multi_3")
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission01, 2)
 			player:addItem(3029, 3)
 		elseif MsgContains(message, "no") then

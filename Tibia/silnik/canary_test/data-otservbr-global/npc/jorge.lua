@@ -107,13 +107,11 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	-- Implementing the "souvenir" message interaction
 	if MsgContains(message, "souvenir") then
-		npcHandler:say({
-			"In this category I can offer you a Norseman doll, an abacus, a key of numerous locks, a friendship amulet, a mexcalibur sword, an orc shredder, a frozen heart, a phoenix statue, a dragon eye and a noble sword. Or: ...",
-			"A hand puppet, a music box, an encyclopedia, a Durin doll, a medusa skull, a newspaper, a bag of spices or an Exhiti imortus. ...",
-			"A mathmaster shield, a draken doll, an emblem, a crimson doll, an old radio, a bookworm doll, a golden falcon and an assassin doll. ...",
-			"A dragon goblet, a pigeon trophy, a loremaster doll and a jade amulet. ...",
-			"All listed souvenirs are at 20 silver raid tokens each. Which one of them do you want?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jorge.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jorge.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jorge.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jorge.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jorge.multi_5")
 		npcHandler:setTopic(playerId, 1)
 		return true
 	end

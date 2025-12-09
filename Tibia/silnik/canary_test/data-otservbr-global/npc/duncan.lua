@@ -99,11 +99,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"Listen, the task is not that hard. Simply prove that you are with us and not with the pirates from Nargor by bringingme some of their belongings. ...",
-				"Bring me 100 of their eye patches, 100 of their peg legs and 100 of their hooks, in that order. ...",
-				"Have you understood everything I told you and are willing to handle this task?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.multi_7")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			player:setStorageValue(storage, 1)
@@ -147,12 +145,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 		elseif npcHandler:getTopic(playerId) == 7 then
 			if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TortoiseEggNargorDoor) < 0 then
-				npcHandler:say({
-					"I am glad to hear this. Please listen. The pirates on Nargor are breeding tortoises. They think eating tortoises makes a hard man even harder. ...",
-					"However I am quite fond of tortoises and can't stand the thought of them being eaten. So I convinced Captain Striker that I can train them to help us. As a substitute for rafts and such ...",
-					"All I need is one tortoise egg from Nargor. This is the opportunity to save a tortoise from a gruesome fate! ...",
-					"I will ask Sebastian to bring you there. Travel to Nargor, find their tortoise eggs and bring me at least one of them.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.multi_2")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.multi_3")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.multi_4")
 				player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TortoiseEggNargorDoor, 1)
 				npcHandler:setTopic(playerId, 0)
 			end

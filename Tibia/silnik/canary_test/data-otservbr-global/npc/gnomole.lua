@@ -58,17 +58,15 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "tactical") then
-		npcHandler:say({
-			"Since you are seasoned adventurers I'll skip the basics and jump right to the important part! This cave system is overrun by the minions of ... ah well, the greatest shame of gnomekind. ...",
-			"That traitorous gnome, known as Gnomevil, who was my pupil before his changeover to the dark side of gnomedom, has abandoned all gnomish ethics and joined forces with our enemies. ...",
-			"It's hard to tell what led to his downfall. In the end he seems to have forgotten the principle that with small stature comes great responsibility. ...",
-			"He became tainted and corrupted by evil, obviously enough to grow in size, which is always an indicator for evil of course. ...",
-			"Now he commands his armies in the name of those below and hides in his lair protected by layers of thick crystal that only he can form and change due to his corrupted powers! ...",
-			"There is one thing though that could cause his downfall! His corruption has spread to his minions and in his lair there are some infected weepers that are full of parasites. ...",
-			"These parasites will spread a fluid that will weaken the integrity of the crystals in front of Gnomevils lair when they die. The entrance is marked with crystal columns, so you can't miss it. ...",
-			"You have to kill enough of the parasites DIRECTLY in front of the crystals. Eventually the columns will collapse and allow you entrance to Gnomevils lair. ...",
-			"Take care though, due to Gnomevils power the crystals will grow back quite fast. Better manage the parasites in quick succession or everything will be for naught. ..., Enter his lair and bring an end to his despicable reign!",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomole.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomole.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomole.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomole.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomole.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomole.multi_6")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomole.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomole.multi_8")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomole.multi_9")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

@@ -155,11 +155,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		elseif npcHandler:getTopic(playerId) == 6 then
-			npcHandler:say({
-				"Good! Me make shiny weapon. If you help me, I make one for you too. Like axe I wear. I need stuff. Listen. ...",
-				"Me need 100 iron ore. Then need crude iron. Then after that 50 behemoth fangs. And 50 lizard leather. You understand?",
-				"Help me yes or no?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ajax.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ajax.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ajax.multi_3")
 			npcHandler:setTopic(playerId, 7)
 		elseif npcHandler:getTopic(playerId) == 7 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ajax.say_16")

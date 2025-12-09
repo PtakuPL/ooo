@@ -79,53 +79,39 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "passage") or MsgContains(message, "sail") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) < 5 then
-			npcHandler:say({
-				"I see no reason to establish ship routes to other cities. There is nothing that would be worth the effort. ...",
-				"But since you won't stop bugging me, let's make a deal: If you can prove that at least five of your so-called 'cities' are not worthless, I might reconsider my position. ...",
-				"Bring me something SPECIAL! The local bar tenders usually know what's interesting about their city.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_17")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_18")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_19")
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) >= 5 then
-			npcHandler:say({
-				"For the sake of profit, we established ship routes to {Ab'Dendriel}, {Darashia}, {Venore}, {Ankrahmun}, {Port Hope}, {Thais}, {Liberty Bay} and {Carlin}.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_16")
 			npcHandler:setTopic(playerId, 0)
 		else
 			return false
 		end
 	elseif MsgContains(message, "Ab'Dendriel") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.AbDendriel) ~= 1 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) < 5 then
-			npcHandler:say({
-				"I've never been there. I doubt the elves there came up with something noteworthy. Or did you find something interesting there?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_15")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.AbDendriel) == 1 or player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) >= 5 then
-			npcHandler:say({
-				"Do you want a passage to Ab'Dendriel for 160 gold?", ---missing line
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_14")
 			npcHandler:setTopic(playerId, 11)
 		else
 			return false
 		end
 	elseif MsgContains(message, "Darashia") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Darashia) ~= 1 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) < 5 then
-			npcHandler:say({
-				"From all what I have heard, it is an unremarkable pile of huts in the desert. Or did you find something interesting there?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_13")
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Darashia) == 1 or player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) >= 5 then
-			npcHandler:say({
-				"Of course it is merely superstition that the darashian sand wasp honey brings back youth and vitality, but as long people pay a decent price, I couldn't care less. Do you want a passage to Darashia for 210 gold?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_12")
 			npcHandler:setTopic(playerId, 12)
 		else
 			return false
 		end
 	elseif MsgContains(message, "Venore") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Venore) ~= 1 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) < 5 then
-			npcHandler:say({
-				"Another port full of smelly humans, fittingly located in a swamp. Or did you find something interesting there?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_11")
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Venore) == 1 or player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) >= 5 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_1")
@@ -135,70 +121,50 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "Ankrahmun") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Ankrahmun) ~= 1 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) < 5 then
-			npcHandler:say({
-				"A city full of mad death worshippers, no thanks. Or did you find something interesting there?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_10")
 			npcHandler:setTopic(playerId, 4)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Ankrahmun) == 1 or player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) >= 5 then
-			npcHandler:say({
-				"The Yalahari seem to be obsessed with conserving their dead, so I guess the embalming fluid will be a great success in Yalahar. Do you want a passage to Ankrahmun for 230 gold?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_9")
 			npcHandler:setTopic(playerId, 14)
 		else
 			return false
 		end
 	elseif MsgContains(message, "Port Hope") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.PortHope) ~= 1 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) < 5 then
-			npcHandler:say({
-				"Another pointless human settlement. Or did you find something interesting there?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_8")
 			npcHandler:setTopic(playerId, 5)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.PortHope) == 1 or player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) >= 5 then
-			npcHandler:say({
-				"Ivory is highly prized by the artisans of the Yalahari. Do you want a passage to Port Hope for 260 gold?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_7")
 			npcHandler:setTopic(playerId, 15)
 		else
 			return false
 		end
 	elseif MsgContains(message, "Thais") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Thais) ~= 1 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) < 5 then
-			npcHandler:say({
-				"Thais must be a hell hole if only half of the stories we hear about it are true. Or did you find something interesting there?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_6")
 			npcHandler:setTopic(playerId, 6)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Thais) == 1 or player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) >= 5 then
-			npcHandler:say({
-				"Astonishing enough the royal satin seems to suit the exquisite taste of the Yalahari. Do you want a passage to Thais for 200 gold?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_5")
 			npcHandler:setTopic(playerId, 16)
 		else
 			return false
 		end
 	elseif MsgContains(message, "Liberty Bay") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.LibertyBay) ~= 1 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) < 5 then
-			npcHandler:say({
-				"Which sane captain would sail his ship to a pirate town? Or did you find something interesting there?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_4")
 			npcHandler:setTopic(playerId, 7)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.LibertyBay) == 1 or player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) >= 5 then
-			npcHandler:say({
-				"Do you want a passage to Liberty Bay for 275 gold?", ---missing line
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_3")
 			npcHandler:setTopic(playerId, 17)
 		else
 			return false
 		end
 	elseif MsgContains(message, "Carlin") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Carlin) ~= 1 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) < 5 then
-			npcHandler:say({
-				"An unremarkable town compared to the wonders of Yalahar. Or did you find something interesting there?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_2")
 			npcHandler:setTopic(playerId, 8)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Carlin) == 1 or player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) >= 5 then
-			npcHandler:say({
-				"The evergreen flower pots are an amusing item that might find some customers here. Do you want a passage to Carlin for 185 gold?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.multi_1")
 			npcHandler:setTopic(playerId, 18)
 		else
 			return false

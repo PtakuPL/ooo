@@ -58,11 +58,9 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	message = message:lower()
 	if MsgContains(message, "quest") then
-		npcHandler:say({
-			"First you must fight the two pairs of evil twins that lurk in the realm beyond here. ...",
-			"Only when you are victorious over all four of them, your path to the source of vileness, the path to Bakragore will be opened. ...",
-			"And even this victory will only be the beginning.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bloodshade_rotten.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bloodshade_rotten.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bloodshade_rotten.multi_3")
 		player:kv():scoped("rotten-blood-quest"):set("access", 5)
 	end
 

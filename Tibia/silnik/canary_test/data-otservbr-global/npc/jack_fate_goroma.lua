@@ -77,11 +77,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"Thank you. Luckily the damage my ship has taken looks more severe than it is, so I will only need a few wooden boards. ...",
-				"I saw some lousy trolls running away with some parts of the ship. It might be a good idea to follow them and check if they have some more wood. ...",
-				"We will need 30 pieces of wood, no more, no less. Did you understand everything?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack_fate_goroma.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack_fate_goroma.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack_fate_goroma.multi_3")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack_fate_goroma.say_4")

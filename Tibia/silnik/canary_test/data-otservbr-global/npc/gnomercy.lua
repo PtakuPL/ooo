@@ -58,17 +58,15 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "tactical") then
-		npcHandler:say({
-			"With your help and efforts we finally cornered what we think is one of 'those below'! For all you have done and endured you are granted the privilege to be one of the first to fight the true enemy. ...",
-			"For all we know your successes have brought some unrest to our enemies and they sent one of their observers to punish their slaves and force them to more fierce attacks. ...",
-			"This is our chance to deal the enemy the first blow in this conflict. With reinforcements from Gnomehome we are attacking the troops of the enemy and binding a great deal of their forces in battle. ...",
-			"Now it is up to you to fight your way to the heart of the enemy's defences and kill the observer. ...",
-			"Our first tries were met with no success though. The observer has brought with him one of his creatures or lieutenants, the lost call the thing Versperoth. I am not sure if it is a name or a race. ...",
-			"However Versperoth itself is protected by hoards of minions. Sometimes this thing will withdraw into the ground and let all hell loose in form of its' slaves. ...",
-			"You'd better be finished with them before Versperoth re-emerges. ...",
-			"Only when you manage to kill Versperoth, will you be able to enter the portal behind him and face the true evil of the observer. ...",
-			"Use the GREEN command crystal in the cave to begin the charging of the teleport! Good luck.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomercy.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomercy.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomercy.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomercy.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomercy.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomercy.multi_6")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomercy.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomercy.multi_8")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomercy.multi_9")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

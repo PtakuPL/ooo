@@ -121,28 +121,22 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 		if player:getLevel() < 20 then
 			if player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.TrollTask) < 0 then
-				npcHandler:say({
-					"The trolls living west of our city have become quite a nuisance lately. Not that they are really dangerous to us, but still, we must show them that there's a line they shouldn't cross. ...",
-					"I want you to kill 100 of them. If you succeed, I'll provide you some pretty coins and experience. Are you willing to take on this task?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.multi_12")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.multi_13")
 				npcHandler:setTopic(playerId, 2)
 			elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.TrollTask) == 1 and player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.GoblinTask) == 1 then
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.say_8")
 				npcHandler:setTopic(playerId, 4)
 			elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.TrollTask) == 1 then
-				npcHandler:say({
-					"It's not only the trolls invading from the west coast. <sighs> Goblins also have a lair there where they constantly prepare for their next attack. ...",
-					"If you could kill 150 goblins for us, that'd be a good start. Would you be willing to help us in this matter?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.multi_10")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.multi_11")
 				npcHandler:setTopic(playerId, 3)
 			end
 		end
 		if player:getLevel() >= 30 and player:getLevel() < 60 then
 			if player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.CyclopsTask) < 0 or player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.CyclopsTask) == 1 then
-				npcHandler:say({
-					"We've successfully driven the minotaurs off this island, but the underground city of the cyclopes - Cyclopolis - is still standing. ...",
-					"We're always looking for adventurers who'd help us decimate the number of cyclopes. Will you assist the city of Edron by killing 500 of them?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.multi_8")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.multi_9")
 				npcHandler:setTopic(playerId, 6)
 				return true
 			end
@@ -175,10 +169,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		if npcHandler:getTopic(playerId) == 1 then
 			player:setStorageValue(Storage.Quest.U8_1.TibiaTales.DefaultStart, 1)
 			player:setStorageValue(Storage.Quest.U8_1.TibiaTales.AgainstTheSpiderCult, 1)
-			npcHandler:say({
-				"Very well, maybe you know that the orcs here in Edron learnt to raise giant spiders. It is going to become a serious threat. ...",
-				"The mission is simple: go to the orcs and destroy all spider eggs that are hatched by the giant spider they have managed to catch. The orcs are located in the south of the western part of the island.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.multi_7")
 		elseif npcHandler:getTopic(playerId) == 2 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.say_12")
 			player:setStorageValue(JOIN_STOR, 1)
@@ -197,10 +189,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.GoblinTask, 0)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
-			npcHandler:say({
-				"Great! You can find rotworms south of the city, for example. Take a rope and shovel and look for loose stone piles to dig open. ...",
-				"You can kill normal rotworms as well as their larger brothers, the carrion worms, to fulfil your task. Be careful and good luck!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.multi_5")
 			player:setStorageValue(JOIN_STOR, 1)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.RotwormCount, 0)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.RotwormCount, 0)
@@ -208,11 +198,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.RotwormTask, 0)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 6 then
-			npcHandler:say({
-				"I'm impressed with your dedication and courage. I can't show you the exact location of cyclopolis on the map though. It is somewhere north of Edron city. ...",
-				"Exit the city and go through a mountain passage leading to the west, then keep on heading north. The entrance is marked by large, obelisk-like stones arranged in a circle. ...",
-				"You can kill normal cyclopes as well as drones and smiths to reach your goal. Good hunting!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.multi_3")
 			player:setStorageValue(JOIN_STOR, 1)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.CyclopsCount, 0)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.CyclopsCount, 0)

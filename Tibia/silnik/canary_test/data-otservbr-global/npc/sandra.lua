@@ -91,13 +91,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"The Edron academy has introduced a bonus system. Each time you deposit 100 vials without claiming the money for it, you will receive a lottery ticket. ...",
-				"Some of these lottery tickets will grant you a special potion belt accessory, if you bring the ticket to me. ...",
-				"If you join the bonus system now, I will ask you each time you are bringing back 100 or more vials to me whether you claim your deposit or rather want a lottery ticket. ...",
-				"Of course, you can leave or join the bonus system at any time by just asking me for the 'bonus'. ...",
-				"Would you like to join the bonus system now?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandra.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandra.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandra.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandra.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandra.multi_5")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandra.say_6")

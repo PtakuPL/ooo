@@ -87,16 +87,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 and MsgContains(message, "yes") then
-		npcHandler:say({
-			"Alright. The problem is that I want to know at least one of them on my side. You never know. I don't mind if it's the evil Efreet or the Marid. ...",
-			"Your mission will be to visit one kind of the djinns and bring them a peace-offering. Are you interested in that mission?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.kazzan.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.kazzan.multi_4")
 		npcHandler:setTopic(playerId, 2)
 	elseif npcHandler:getTopic(playerId) == 2 and MsgContains(message, "yes") then
-		npcHandler:say({
-			"Very good. I hope you are able to convince one of the fractions to stand on our side. If you haven't done yet, you should first go and look for old Melchior in Ankrahmun. ...",
-			"He knows many things about the djinn race and he may have some hints for you.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.kazzan.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.kazzan.multi_2")
 		if player:getStorageValue(Storage.Quest.U8_1.TibiaTales.DefaultStart) <= 0 then
 			player:setStorageValue(Storage.Quest.U8_1.TibiaTales.DefaultStart, 1)
 		end

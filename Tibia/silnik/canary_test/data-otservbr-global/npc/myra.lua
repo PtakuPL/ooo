@@ -79,16 +79,14 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
-			npcHandler:say({
-				"Okay, great! You see, I need a few magical ingredients which I've run out of. First of all, please bring me 70 bat wings. ...",
-				"Then, I urgently need a lot of red cloth. I think 20 pieces should suffice. ...",
-				"Oh, and also, I could use a whole load of ape fur. Please bring me 40 pieces. ...",
-				"After that, um, let me think... I'd like to have some holy orchids. Or no, many holy orchids, to be safe. Like 35. ...",
-				"Then, 10 spools of spider silk yarn, 60 lizard scales and 40 red dragon scales. ...",
-				"I know I'm forgetting something.. wait... ah yes, 15 ounces of magic sulphur and 30 ounces of vampire dust. ...",
-				"That's it already! Easy task, isn't it? I'm sure you could get all of that within a short time. ...",
-				"Did you understand everything I told you and are willing to handle this task?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myra.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myra.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myra.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myra.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myra.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myra.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myra.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myra.multi_8")
 			npcHandler:setTopic(playerId, 2)
 		elseif MsgContains(message, "no") then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myra.say_7")

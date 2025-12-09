@@ -56,29 +56,21 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "mission") or MsgContains(message, "sceptre") then
 		if player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline) == 10 then
 			if player:getPosition().z == 12 and player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.GhostOfAPriest01) < 1 and npcHandler:getTopic(playerId) ~= 1 then
-				npcHandler:say({
-					"Although we are willing to hand this item to you, there is something you have to understand: There is no such thing as 'the' sceptre. ...",
-					"Those sceptres are created for special purposes each time anew. Therefore you will have to create one on your own. It will be your {mission} to find us three keepers and to get the three parts of the holy sceptre. ...",
-					"Then go to the holy altar and create a new one.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghost_of_a_priest.multi_7")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghost_of_a_priest.multi_8")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghost_of_a_priest.multi_9")
 				npcHandler:setTopic(playerId, 1)
 			elseif npcHandler:getTopic(playerId) == 1 then
-				npcHandler:say({
-					"Even though we are spirits, we can't create anything out of thin air. You will have to donate some precious metal which we can drain for energy and substance. ...",
-					"The equivalent of 5000 gold will do. Are you willing to make such a donation?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghost_of_a_priest.multi_5")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghost_of_a_priest.multi_6")
 				npcHandler:setTopic(playerId, 2)
 			elseif player:getPosition().z == 13 and player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.GhostOfAPriest02) < 1 then
-				npcHandler:say({
-					"Even though we are spirits, we can't create anything out of thin air. You will have to donate some precious metal which we can drain for energy and substance. ...",
-					"The equivalent of 5000 gold will do. Are you willing to make such a donation?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghost_of_a_priest.multi_3")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghost_of_a_priest.multi_4")
 				npcHandler:setTopic(playerId, 3)
 			elseif player:getPosition().z == 14 and player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.GhostOfAPriest03) < 1 then
-				npcHandler:say({
-					"Even though we are spirits, we can't create anything out of thin air. You will have to donate some precious metal which we can drain for energy and substance. ...",
-					"The equivalent of 5000 gold will do. Are you willing to make such a donation?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghost_of_a_priest.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghost_of_a_priest.multi_2")
 				npcHandler:setTopic(playerId, 4)
 			end
 		end

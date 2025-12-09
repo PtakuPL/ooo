@@ -73,29 +73,23 @@ local function creatureSayCallback(npc, creature, type, message)
 	-- Check if the message contains "arito"
 	if MsgContains(message, "arito") then
 		if AritosTask == 1 then
-			npcHandler:say({
-				"I don't know how something like this ever could be possible. He met a girl from {Ankrahmun} and she must have twisted his head. Arito started to tell stories about the Pharaoh and about {Ankrahmun}. ...",
-				"In the wink of an eye he left us and was never seen again. I think he feared revenge for leaving us - which partially is not without reason. Why are you asking me about him? Did he send you to me?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muhad.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muhad.multi_9")
 			npcHandler:setTopic(playerId, 1)
 		end
 		-- Check if the message contains "yes"
 	elseif MsgContains(message, "yes") then
 		local topic = npcHandler:getTopic(playerId)
 		if topic == 1 then
-			npcHandler:say({
-				"Ahh, I know that some of my people fear that Arito tells the old secrets of our race and want to see him dead but I don't bear him a grudge. I will have to have a serious word with my people. ...",
-				"Tell him that he can consider himself as acquitted. He is not the reason for our attacks towards {Ankrahmun}.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muhad.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muhad.multi_7")
 			npcHandler:setTopic(playerId, 2)
 		elseif topic == 2 then
-			npcHandler:say({
-				"I appreciate your will to help the sons of the desert. Recently a bunch of thieves have stolen something very valuable from us. It is a secret the true sons kept for aeons and I am not allowed to tell you about it. ...",
-				"All we know about the thieves is that they have their hideout somewhere in {Ankrahmun}. We managed to catch one of them and he told us that there is a pillar in {Ankrahmun} with a hidden mechanism. ...",
-				"If you press the eye of the hawk symbol a secret passage will appear that leads to their hideout. Once inside you have to look for a small casket. ...",
-				"Try to sneak in undetectedly and bring back our treasure as soon as you obtain it. May Daraman hold his protective hand over you on your mission. I wish you good luck. ...",
-				"One last thing before you leave. Take the path behind me and you will get out of our hideout unharmed.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muhad.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muhad.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muhad.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muhad.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muhad.multi_5")
 			player:setStorageValue(Storage.Quest.U8_1.TibiaTales.AritosTask, 2)
 			player:setStorageValue(Storage.Quest.U8_1.TibiaTales.AritosTaskDoor, 1)
 			npcHandler:setTopic(playerId, 0)

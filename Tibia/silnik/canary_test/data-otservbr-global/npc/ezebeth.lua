@@ -103,10 +103,8 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U10_50.GloothEngineerOutfits.Addon1, 1)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say({
-					"We provide addons to people dedicated to our city. So the first addon is granted to someone who has voted for each of the available shortcuts and each dungeon at least once. ...",
-					"The second addon is granted to someone who has voted for each bossfight at least once.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ezebeth.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ezebeth.multi_2")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end

@@ -86,27 +86,21 @@ local function creatureSayCallback(npc, creature, type, message)
 		local tombsStorage = player:getStorageValue(Storage.Quest.U8_7.SpiritHunters.TombUse)
 		if qStorage == -1 then
 			if npcHandler:getTopic(playerId) == 17 then
-				npcHandler:say({
-					"Alright. Let's go. At first we need to find out more about ghosts in general. ...",
-					"I still need more information and values to properly calibrate the magical orientation of orange and turquoise sparkle attractors which we will need to actually contain ghost-emissions. ...",
-					"So are you in?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_82")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_83")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_84")
 				npcHandler:setTopic(playerId, 18)
 			else
-				npcHandler:say({
-					"I fine-tuned another set of devices. You are the lucky candidate to first lay eyes on some revolutionary new concepts. ...",
-					"Are you ready to help science once again?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_80")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_81")
 				npcHandler:setTopic(playerId, 12)
 			end
 		elseif qStorage == 1 and tombsStorage >= 2 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_1")
 			npcHandler:setTopic(playerId, 19)
 		elseif qStorage == 2 then
-			npcHandler:say({
-				"Alright, now that we have enough results, the analysing can start. While I do this, I will need you to test the magically enhanced cage Sinclair developed to contain spirits effectively. ...",
-				"Take the spirit cage from him and use it on the essence of a common ghost. Its essence will then be sucked into the cage and we can study him right here in the safety of the academy walls.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_78")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_79")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "mission") then
@@ -145,10 +139,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addExperience(500, true)
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline, 6)
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Mission2, 3)
-			npcHandler:say({
-				"Did you find a rare crystal? Show me... Amazing, absolutely amazing. This crystal alone is worth a small fortune. Ahem, of course I'm glad you brought it to me for further research instead of bringing it to a merchant. ...",
-				"Please return here if you want to continue helping me with another mission.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_76")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_77")
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) == 6 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_10")
@@ -180,16 +172,14 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_19")
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 9 then
-			npcHandler:say({
-				"Oh you are back already. Hm... I doubt it worked, did it? It DID? Oh well... good job. Really! Now... the thing is - the actual {Jack} wrote. No, no wait. Calm down first. ...",
-				"You remember me explaining the fold in time, causing a tiny disturbance in infinity? Well, as I already told you, {Jack} was indeed not transported to the future... but to the past. ...",
-				"I received some kind of letter this morning that has been stored for me by the Academy for about 70 years now. ...",
-				"It said it should be opened at a specific day 20 years ago to prevent this whole incident but I wasn't even at the Academy by that time. Someone just found the letter earlier today and brought it to my attention. ...",
-				"So our {Jack} here was in fact... a completely different person. Now, now... don't get upset, there was no chance for me to warn you earlier! ...",
-				"And it wasn't all that bad, was it? Heh... I mean... everyone needs a change in life now and then! And he can still come here if he likes to! ...",
-				"Or wait - erm... better not tell him where exactly I live, I have some kind of presentiment concerning that whole affair... yes, we should just leave everything as it is now, indeed we should. ...",
-				"Anyway you did a great job and I thank you for... putting your hands into my fire Player... once again.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_68")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_69")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_70")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_71")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_72")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_73")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_74")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_75")
 			player:addExperience(6000, true)
 			player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine, 10)
 			npcHandler:setTopic(playerId, 0)
@@ -199,10 +189,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addExperience(100, true)
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline, 1)
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Mission1, 1)
-			npcHandler:say({
-				"That's the spirit! As time is of the essence, we should start right now. ...",
-				"A beggar here in Edron brags about how smart he is and that he knows about a man who lost his sanity because of an experiment, but he won't tell anyone any details. Maybe he knows more.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_66")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_67")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_20")
@@ -215,10 +203,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Mission1, 4)
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Mission2, 1)
 			player:addMapMark(Position(33103, 31811, 7), MAPMARK_CROSS, "Lost Mines")
-			npcHandler:say({
-				"Alright, now listen. West of Edron, near the ocean, you'll find the Lost Mines. Go down there to recover one of its rare crystals. But beware, people say the mine workers who died there years ago in an horrible accident are still digging. ...",
-				"I will mark the location of the mines on your map. Be careful when entering these muddy depths and don't forget that you will need a pick to gather the crystals.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_64")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_65")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_22")
@@ -240,14 +226,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addExperience(1000, true)
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Mission3, 4)
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline, 10)
-			npcHandler:say({
-				"Ah yes, slowly, carefully, careful ...",
-				"...and how shiny it is, almost there ...",
-				"...now wh- no, NO, NOOO! It just ...",
-				"...slipped. And cracked. Don't look at me like that ...",
-				"...I need some time to get over this. What? Oh, yes you can take the remains if you like. Just get it out of my sight.",
-				"A debacle, catastrophe, disaster - I need time to fully understand what chance just slipped through our hands here... hm? Oh yes, yes through my hands, my hands of course. Now would you please leave me alone?!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_58")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_59")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_60")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_61")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_62")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_63")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 12 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_24")
@@ -256,17 +240,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_25")
 			npcHandler:setTopic(playerId, 14)
 		elseif npcHandler:getTopic(playerId) == 14 then
-			npcHandler:say({
-				"Alright. Let's see - yes. ...",
-				"Three: You can explain at least three of the following terms, infestations, collective apparitions, ectoplasmic segregations, ecto-magical field phenomena, neuro-speculative sub-conscious awareness of spirits, ghosts and/or ghasts.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_56")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_57")
 			npcHandler:setTopic(playerId, 15)
 		elseif npcHandler:getTopic(playerId) == 16 then
-			npcHandler:say({
-				"I recently teamed up with a fellow scientist and friend Sinclair, who is also more of an explorer than me, to combine our discoveries in the field of complex phenomena not that easily to describe just by today's state of magic. ...",
-				"Of course I am talking about ghosts. I know, I know. Hard to believe in those times of highly advanced magic we live in. Yet there are some things, we fail to explain. ...",
-				"And that is exactly where we come in! Oh, and you of course. We will not only explain them - we will ''remove'' them. Just tell me whenever you are ready to help us with our research.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_53")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_54")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_55")
 			npcHandler:setTopic(playerId, 17)
 		elseif npcHandler:getTopic(playerId) == 18 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_26")
@@ -280,33 +260,27 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_7.SpiritHunters.Mission01, 2)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 27 then
-			npcHandler:say({
-				"Very well, hmmm, but this one might get a bit - unpleasant. What? No no, not for you. Probably only for the person I want you to help me with. You know, I once had an {intern}. His name was {Jack}. ...",
-				"He was as eager as you to help me - quite a nice person, really. At the time he was still around I was working on a device to transport its user to any specified point in time - be it back or to the future if you know what I mean. ...",
-				"He was helping me quite a lot, no matter which task I applied to him. And one day we finally did it, our tempus machina was up and running. He was certainly all man of action when he actually stepped into the machine for our first run. ...",
-				"The device was designed for one person with enough room for some provisions and one or two books for reading if one would land in some drab solitude. You never know, you know? So we fired it up and yes, it actually worked! ...",
-				"He completely disappeared right before my eyes! Eureka! Well ahem, there was but one tiny little problem. ...",
-				"As all magical calibration was done from my lab I never thought about adding some sort of control to its interior. In other words {Jack} has travelled in time, without any means to come back. ...",
-				"Sleepless days of intensive research, however, brought me to the conclusion that he was not actually travelling to the future, but to another {dimension}, {parallel} to ours. There is still a chance to rescue him - and you can help me. What do you say?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_46")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_47")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_48")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_49")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_50")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_51")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_52")
 			npcHandler:setTopic(playerId, 28)
 		elseif npcHandler:getTopic(playerId) == 28 then
-			npcHandler:say({
-				"You know, in some way you remind me of {Jack}. Well, I am glad you are up to this task - we just have to get him back. I owe that to him and I owe it to science. Alright, now let me explain that whole {dimensional} problem. ...",
-				"The bad news is, using the device at that state was not a good idea. We effectively caused a magical distortion in the fabric of time, space and thus folded infinity - just a little. ...",
-				"The good news is that {Jack} is still on our world, and not even inconveniently far away. ...",
-				"Unfortunately in the current state of time, he was never interested in attending Edron Academy, he never looked for a job to finance his studies and of course has never been one of my interns. ...",
-				"Since he was in the magic sphere during the launch, the time fold only affected his own {dimensional} anchoring. ...",
-				"The number of parallel {dimensions} is endless and the fold made him slip into one completely different course of time where he never was the person I once knew. ...",
-				"Now you know it all. Still want to help?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_39")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_40")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_41")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_42")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_43")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_44")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_45")
 			npcHandler:setTopic(playerId, 29)
 		elseif npcHandler:getTopic(playerId) == 29 then
-			npcHandler:say({
-				"Thank you. So here we are - now how to get {Jack} back to our {dimension}? Well, the answer to that is easy. It is simply not possible. All my tests concerning the reversal of the process failed. ...",
-				"But {Jack} is not yet lost to us - if we can get him back to his former self! You have to tell him about his former life, convince him, change his environment. But at first you will need to talk to him and find out who exactly we are dealing with now. ...",
-				"I will mark his current location on your map, just ask him about me and see what happens - good luck.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_36")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_37")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_38")
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline, 11)
 			player:setStorageValue(Storage.Quest.U8_1.TibiaTales.DefaultStart, 1)
 			player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine, 1)
@@ -315,38 +289,30 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_28")
 			npcHandler:setTopic(playerId, 31)
 		elseif npcHandler:getTopic(playerId) == 31 then
-			npcHandler:say({
-				"A trigger is needed to make him recall what happened. First thing should be to change his environment to be more... familiar. As soon as he will have the things he used to have around him, his memories will come back. ...",
-				"I know that he used to have a very comfy red cushioned chair and an old globe which sat near the middle of the room. He also used a smaller telescope and he had that extremely large amphora in a corner. And... there was one other thing. ...",
-				"A rocking horse. He just loved it! Find these items, buy them if you need to and place them where {Jack} lives. Ask him about the furniture and don't forget to tell me about his reaction!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_33")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_34")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_35")
 			player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine, 3)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 32 then
-			npcHandler:say({
-				"Alright listen. As long as his social environment accepts him as the person he is now, he will never come free from the shackles that bind him to this alternate self. ...",
-				"Oh, he has a sister you say? And his mother is living with them? ...",
-				"Hm... that's strange, I don't even recall his family. Never knew he had a mother and a sister. Tell them the truth about him - maybe they will understand and even help him getting this over with. ...",
-				"But be careful, the {dimensional} shift could mean that they will not even know what you're talking about since they are more closely linked to him than anyone else.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_29")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_30")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_31")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_32")
 			player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine, 5)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 33 then
-			npcHandler:say({
-				"Success!! Now it will be far easier to convince him of his true self! Excellent work. Now the only thing left to do is to separate him from whatever still binds him to that place. Did he develop any habits perhaps? ...",
-				"A hobby or something! Yes, ask him about his hobbies! Convince him somehow that anything he is doing there does not match his true self - he didn't have any hobbies except a healthy interest in science - you MUST convince him, no matter what! ...",
-				"Or everything we achieved would be in vain. We can still save Jack! Now go and do what you must do.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_26")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_27")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_28")
 			player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine, 7)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "jack") then
 		if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 10 then
-			npcHandler:say({
-				"Well you know Jack - after all you talked to him in person. He will get over it. As for the real Jack, my former intern... I am glad that nothing serious happened to him. ...",
-				"According to his letter, he did just fine so many years ago. He somehow managed to make a name of himself when he cast some magic we enhanced through our research - of course no one back then had ever seen such spells. ...",
-				"Oh and he sends his regards to... how did he put it - 'whoever is currently helping me getting out of whatever mess I am currently in'. I... don't really know how this was meant but I guess this is directed at... you!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_23")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_24")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_25")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "collective apparitions") then
@@ -377,33 +343,27 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "machine") and player:getStorageValue(Storage.Quest.U9_4.LiquidBlackQuest.Visitor) == 3 then
-		npcHandler:say({
-			"Ah, the machine you found at that island. Well, I built this thing to venture far beneath the very soil we walk on. I suspected something there. Something deep down below. Something evil. Even more so than the dreaded bugs which are crawling my study. ...",
-			"Drilling hole after hole only to get stuck in another hard, unbreakable sediment again and again, I was about to quit this pointless enterprise. ...",
-			"However, the very last day I lingered on that island, I finally fell into a large hollow right under the beach. My drill was shattered and the machine was not mobile anymore. ...",
-			"I am well aware that this may sound laughable now - at this part all of my colleagues burst into laughter anyway - but suddenly there were stairs. Incredibly large stairs that led to the underworld. A world deep under the sea - can you believe this?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_19")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_20")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_21")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_22")
 		npcHandler:setTopic(playerId, 21)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 21 and player:getStorageValue(Storage.Quest.U9_4.LiquidBlackQuest.Visitor) == 3 then
 		if player:getStorageValue(Storage.Quest.U9_4.LiquidBlackQuest.Visitor) == 3 then
-			npcHandler:say({
-				"You do? Well, the end of this story was that I had to leave the place. ...",
-				"I couldnt explore what lies below the stairs as there was an unpredictable stream. Diving into these waters would have been an uncontrollable risk, even with the means to survive without any air. ...",
-				"So I used the portable teleporting device I installed into my machine in case of an emergency and went home. I could only take the most important research documents with me and had to leave most of my equipment in the cave. ...",
-				"Of course I also left my final notes with the coordinates there. And for the life of me I cannot remember where I dug that stupid hole. ...",
-				"When I arrived at home I immediately started looking for a way to manoeuvre in these chaotic conditions once I rediscovered the lost entrance. I never remembered it, but it seems you found it as you indeed have my original notes. ...",
-				"Oh and just in case you want to complete what I have started - feel free to do so. Up to it?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_13")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_14")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_15")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_16")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_17")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_18")
 			npcHandler:setTopic(playerId, 22)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 22 and player:getStorageValue(Storage.Quest.U9_4.LiquidBlackQuest.Visitor) == 3 then
 		if player:getStorageValue(Storage.Quest.U9_4.LiquidBlackQuest.Visitor) == 3 then
-			npcHandler:say({
-				"Well, if you really want to delve into this - I could use some help. So you have found my {machine} on that island? And you found the notes with the coordinates? Then you can find the entrance! ...",
-				"Just look for a large staircase with sprawling steps. There is an unpassable stream there that will prevent you from venturing further on. But fear not, you can indeed travel down there - with these small {enhancements} I created. ...",
-				"At first, take this gold for the passage by ship and return to the Gray Island from where I started my expedition many years ago. From there you should find a way to reach the Gray Beach of Quirefang as no ordinary ship can land there. ...",
-				"I will put this under your footgear. Here you go. And this in your nose. There. And there will be no further problems for you down there. Except- ah, well youll find out yourself soon enough, wont you?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_12")
 			npcHandler:setTopic(playerId, 23)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 23 and player:getStorageValue(Storage.Quest.U9_4.LiquidBlackQuest.Visitor) == 3 then
@@ -418,11 +378,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "rumours") then
-		npcHandler:say({
-			"There are rumours of aggressive fishmen in northern Tiquanda. We have to find out if this is even remotely connected to the Njey. ...",
-			"What's puzzling me is that they were sighted above ground and then retreated into a temple ruin. If we find that ruin, we could find out if there's a relation. ...",
-			"Are you willing to help me?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_6")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_8")
 		npcHandler:setTopic(playerId, 25)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 25 then
@@ -435,18 +393,14 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "njey") then
-		npcHandler:say({
-			"Mh? Ah, yes yes. 'Njey' is the native-language term for a very old race of undersea creatures which ...",
-			"...hm, wait - only a select few of my colleagues even bothered studying their culture. They are a mere fantasy to the common man - is there anything of importance you want to tell me?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_5")
 		npcHandler:setTopic(playerId, 26)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 26 then
-			npcHandler:say({
-				"Well, if you really want to delve into this - I could use some help. So you have found my machine on that island? And you found the notes with the coordinates? Then you can find the entrance! ...",
-				"Just look for a large staircase with sprawling steps. There is an unpassable stream there that will prevent you from venturing further on. But fear not, you can indeed travel down there - with these small enhancements I created. ...",
-				"I will put this under your footgear. Here you go. And this in your nose. There. And there will be no further problems for you down there. Except- ah, well you'll find out yourself soon enough, won't you?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.multi_3")
 			npcHandler:setTopic(playerId, 34)
 		elseif npcHandler:getTopic(playerId) == 34 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_39")

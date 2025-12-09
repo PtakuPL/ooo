@@ -62,10 +62,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	-- Check if the message contains "mission"
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_1.TowerDefenceQuest.Questline) < 1 then
-			npcHandler:say({
-				"Normally we don't assign missions to civilians - and particularly to MALE civilians - but in this case I think we can make an exception. ...",
-				"I need a courier to deliver a parcel to the watchtower in Femor Hills. You think you can handle that??",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bunny_bonecrusher.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bunny_bonecrusher.multi_2")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_1.TowerDefenceQuest.Questline) == 4 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bunny_bonecrusher.say_1")

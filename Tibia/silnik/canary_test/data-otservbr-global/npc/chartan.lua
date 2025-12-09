@@ -66,35 +66,29 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "zalamon") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"I zee. Zalamon zent word of ze arrival of a zoftzkin quite zome time ago. Zat muzt be you zen. ... ",
-				"Well, I exzpected zomeone more - imprezzive. However, we will zee how far you can get. You've got newz from ze zouz? ... ",
-				"Hm, I underztand. ... ",
-				"Oh you did. ... ",
-				"I zee. Interezting. ... ",
-				"You being here meanz we have eztablished connectionz to ze zouz. Finally. And you are going to help uz. Well, zere iz zertainly a lot for you to do. Zo better get ztarted. ",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chartan.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chartan.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chartan.multi_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chartan.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chartan.multi_12")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chartan.multi_13")
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline, 3)
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission01, 3) --Questlog, Wrath of the Emperor "Mission 01: Catering the Lions Den"
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"Alright. Well, az you might not be aware of it yet - we are on top of an old temple complex. It haz been abandoned and it haz crumbled over time. ...",
-				"Ze teleporter over zere uzed to work juzt fine to get uz back to ze zouz. But it haz ztopped operating for quite zome time. ... ",
-				"My men believe it iz a dizturbanze cauzed by ze corruption zat zpreadz everywhere. Zey are too zcared to go down zere. And zat'z where you come in. ... ",
-				"Zere were meanz to activate teleporterz zomewhere in ze complex. But zinze you cannot reach all ze roomz, I guezz you will have to improvize. ... ",
-				"Here iz ze key to ze entranze to ze complex. Figure zomezing out, reztore ze teleporter zo we can get back to ze plainz in ze zouz. ",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chartan.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chartan.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chartan.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chartan.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chartan.multi_7")
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline, 4)
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission02, 1) --Questlog, Wrath of the Emperor "Mission 02: First Contact"
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say({
-				"You did it! Zere waz zome kind of zparkle and I zink it iz working again - oh pleaze feel free to try it, I uhm, I will wait here and be ready juzt in caze zomezing uhm happenz to you. ... ",
-				"And if you head to Zalamon, be zure to inform him about our zituation. Food rationz are running low and we are ztill not well equipped. We need to eztablish a working zupply line. ",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chartan.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chartan.multi_2")
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.TeleportAccess.Rebel, 1)
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline, 6)
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission02, 3) --Questlog, Wrath of the Emperor "Mission 02: First Contact"

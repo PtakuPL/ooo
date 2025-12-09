@@ -73,28 +73,22 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamoril.say_3")
 	elseif MsgContains(message, "draconic incitements") and npcHandler:getTopic(playerId) == 3 then
 		npcHandler:setTopic(playerId, 4)
-		npcHandler:say({
-			"Each kind of dragon has its own incitement, an important aspect that impels them and occupies their mind. For the common dragons this is the lust for power, for the dragon lords the greed for treasures. ...",
-			"The frost dragons' incitement is the thirst for knowledge und for the undead dragons it's the desire for life, as they regret their ancestor's mistake. ...",
-			"These incitements are also a kind of trial that has to be undergone if one wants to {find} the First Dragon's four descendants.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamoril.multi_8")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamoril.multi_9")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamoril.multi_10")
 	elseif MsgContains(message, "find") then
 		npcHandler:setTopic(playerId, 5)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamoril.say_4")
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 5 then
 		npcHandler:setTopic(playerId, 6)
-		npcHandler:say({
-			" Fine! I'll tell you where to find our ancestors. You now may ask yourself why I should want you to go there and fight them. It's quite simple: I am a straight descendant of Kalyassa herself. She was not really a caring mother. ...",
-			"No, she called herself an empress and behaved exactly like that. She was domineering, farouche and conceited and this finally culminated in a serious quarrel between us. ...",
-			"I sought support by my aunt and my uncles but they were not a bit better than my mother was! So, feel free to go to their lairs and challenge them. I doubt you will succeed but then again that's not my problem. ...",
-			"So, you want to know about their secret lairs?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamoril.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamoril.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamoril.multi_6")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamoril.multi_7")
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 6 then
-		npcHandler:say({
-			"So listen: The lairs are secluded and you can only reach them by using a magical gem teleporter. You will find a teleporter carved out of a giant emerald in the dragon lairs deep beneath the Darama desert, which will lead you to Tazhadur's lair. ...",
-			"A ruby teleporter located in the western Dragonblaze Peaks allows you to enter the lair of Kalyassa. A teleporter carved out of sapphire is on the island Okolnir and leads you to Gelidrazah's lair. ...",
-			"And finally an amethyst teleporter in undead-infested caverns underneath Edron allows you to enter the lair of Zorvorax.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamoril.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamoril.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamoril.multi_3")
 		npcHandler:setTopic(playerId, 0)
 		if player:getStorageValue(Storage.Quest.U11_02.TheFirstDragon.Questline) < 1 then
 			player:setStorageValue(Storage.Quest.U11_02.TheFirstDragon.Questline, 1)

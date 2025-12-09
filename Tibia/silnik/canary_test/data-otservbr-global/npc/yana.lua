@@ -194,7 +194,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif npcHandler:getTopic(playerId) == 1 then
 		local imbueType = products[message:lower()]
 		if imbueType then
-			npcHandler:say({ "You have chosen " .. message .. ". {Basic}, {intricate} or {powerful}?" }, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.multi_2")
 			answerType[playerId] = message
 			npcHandler:setTopic(playerId, 2)
 		end

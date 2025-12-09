@@ -149,13 +149,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"You're a true buddy. I promise I will t-try to avoid killing you even if someone asks me to. <hicks> ...",
-				"Listen, I have this old formula from my grandma. <hicks> It says... 30 {bonelord eyes}... 10 {red dragon scales}. ...",
-				"Then 30 {lizard scales}... 20 {fish fins} - ew, this sounds disgusting, I wonder if this is really a potion or rather a cleaning agent. ...",
-				"Add 20 ounces of {vampire dust}, 10 ounces of {demon dust} and mix well with one flask of {warrior's sweat}. <hicks> ...",
-				"Okayyy, this is a lot... we'll take this step by step. <hicks> Will you help me gathering 30 {bonelord eyes}?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.multi_5")
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:getStorageValue(Storage.OutfitQuest.DefaultStart) ~= 1 then

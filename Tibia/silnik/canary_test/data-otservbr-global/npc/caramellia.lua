@@ -77,22 +77,16 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "winfred") then
-		npcHandler:say({
-			"He was my one and only true love. He was a mere commoner and so my {father} forbid me to see him ...",
-			"We met anyway, we had plans to flee to {Port Hope} and to start a new life there ...",
-			"A {druid}, in service of my father, had spied on us. So they brought me here and locked me into this {tower}. The druid cast a spell on the plants at the entrance which kept everyone from entering the tower ...",
-			"I could see Winfred from the window but he could not come to me. One day he disappeared. I knew immediately that something horrible had happened to him.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.caramellia.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.caramellia.multi_6")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.caramellia.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.caramellia.multi_8")
 	elseif MsgContains(message, "father") then
-		npcHandler:say({
-			"He wasn't a bad man. He was only misguided by false friends who told him what society expected of him ...",
-			"By trying to uphold a respectable image in society, he ruined not only my life but also his own.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.caramellia.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.caramellia.multi_4")
 	elseif MsgContains(message, "tower") then
-		npcHandler:say({
-			"Once, this tower has been my prison but after the death of Winfred it has become my refuge from the rest of the world. ...",
-			"I welcome the loneliness here because it mirrors the state of my heart.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.caramellia.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.caramellia.multi_2")
 	end
 	return true
 end

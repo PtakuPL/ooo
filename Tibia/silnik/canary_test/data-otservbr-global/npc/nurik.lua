@@ -75,10 +75,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"That's just incredible! I've dreamed about acquiring the dwarven bridge since I was a child! Now my dream will finally become true. ...",
-				"And you are sure you want to sell it? I mean really, really sure?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nurik.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nurik.multi_4")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nurik.say_3")
@@ -91,10 +89,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:removeItem(7866, 1) then
 				player:addItem(7871, 1)
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission04, 7)
-				npcHandler:say({
-					"Excellent! Here is the painting you requested. It's quite precious to my father, but imagine his joy when I tell him about my clever deal! ...",
-					"Now leave me alone please. I have to prepare for my departure. Now my family will not call me a squandering fool anymore!",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nurik.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nurik.multi_2")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end

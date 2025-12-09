@@ -66,11 +66,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 	if MsgContains(message, "mission") or MsgContains(message, "quest") then
 		if player:getStorageValue(Storage.Quest.U8_2.TrollSabotageQuest.Questline) < 1 then
-			npcHandler:say({
-				"I'm not sure but I suppose that an evil troll lives in the mountains here! I saw him rummaging in the ruins of my house. ...",
-				"I took a closer look and found my family casket ripped open. It contained a precious necklace. If I had it back, I could sell it and start over! ...",
-				"Could you look for this mean beast, find out why he did and either get me some money ormy necklace to rebuild my business?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jerom.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jerom.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jerom.multi_3")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TrollSabotageQuest.Questline) == 2 and player:removeItem(7754, 1) then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jerom.say_1")

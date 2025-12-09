@@ -69,19 +69,15 @@ local function creatureSayCallback(npc, creature, type, message)
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission45, 1)
 		npcHandler:setTopic(playerId, 2)
 	elseif (MsgContains(message, "artefact") or MsgContains(message, "yes")) and npcHandler:getTopic(playerId) == 2 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission60) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission61) < 1 then
-		npcHandler:say({
-			"The scroll piece there? The symbols look promising, but it is incomplete. ...",
-			"It is of little use to us. But it seems to be of interest to you ...",
-			"In exchange for the scroll piece, you must assist me with something. {Agreed}?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elyen_ravenlock.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elyen_ravenlock.multi_8")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elyen_ravenlock.multi_9")
 		npcHandler:setTopic(playerId, 3)
 	elseif (MsgContains(message, "agreed") or MsgContains(message, "yes")) and npcHandler:getTopic(playerId) == 3 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission60) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission61) < 1 then
-		npcHandler:say({
-			"I would have to sing to the Dark Shrines, but I cannot. ...",
-			"I... cannot bear Urgith's breed. Everywhere, I hear them - scrabbling, squeaking ...",
-			"Take this bone flute and play it in front of the five Dark Shrines so that they answer with song in return. You will find them in the Gardens of Night. ...",
-			"If you have done that, you may have the scroll piece. Now go.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elyen_ravenlock.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elyen_ravenlock.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elyen_ravenlock.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elyen_ravenlock.multi_6")
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission61, 1)
 		player:addItem(18932, 1)
 		npcHandler:setTopic(playerId, 0)
@@ -89,10 +85,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elyen_ravenlock.say_3")
 		npcHandler:setTopic(playerId, 4)
 	elseif (MsgContains(message, "yes")) and npcHandler:getTopic(playerId) == 4 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission66) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission67) < 1 then
-		npcHandler:say({
-			"You have indeed. The shrines have sung back to you. Well done, brother. Not many men take such an interest in our art. ...",
-			"I will take the flute back. Our bargain stands. You may take the scroll.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elyen_ravenlock.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elyen_ravenlock.multi_2")
 		player:removeItem(18932, 1)
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission67, 1)
 		npcHandler:setTopic(playerId, 0)

@@ -62,29 +62,23 @@ local function greetCallback(npc, creature, message)
 	end
 
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Start) == 1 then
-		npcHandler:say({
-			"Hahahaha! ...",
-			"|PLAYERNAME|, that almost sounded like the word of greeting. Humans - cute they are!",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.umar.multi_14")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.umar.multi_15")
 		endConversationWithDelay(npcHandler, npc, creature)
 		return false
 	end
 
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.Faction.Greeting) == -1 then
-		npcHandler:say({
-			"Hahahaha! ...",
-			"|PLAYERNAME|, that almost sounded like the word of greeting. Humans - cute they are!",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.umar.multi_12")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.umar.multi_13")
 		endConversationWithDelay(npcHandler, npc, creature)
 		return false
 	end
 
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.Faction.MaridDoor) ~= 1 then
-		npcHandler:say({
-			"Whoa? You know the word! Amazing, |PLAYERNAME|! ...",
-			"I should go and tell Fa'hradin. ...",
-			"Well. Why are you here anyway, |PLAYERNAME|?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.umar.multi_9")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.umar.multi_10")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.umar.multi_11")
 	else
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.umar.say_2")
 	end
@@ -104,25 +98,19 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	-- To Appease the Mighty Quest
 	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U8_1.TibiaTales.ToAppeaseTheMightyQuest) == 1 then
-		npcHandler:say({
-			"I should go and tell Fa'hradin. ...",
-			"I am impressed you know our address of welcome! I honour that. So tell me who sent you on a mission to our fortress?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.umar.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.umar.multi_8")
 		npcHandler:setTopic(playerId, 9)
 	elseif MsgContains(message, "kazzan") and npcHandler:getTopic(playerId) == 9 then
-		npcHandler:say({
-			"How dare you lie to me?!? The caliph should choose his envoys more carefully. We will not accept his peace-offering ...",
-			"...but we are always looking for support in our fight against the evil Efreets. Tell me if you would like to join our fight.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.umar.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.umar.multi_6")
 		player:setStorageValue(Storage.Quest.U8_1.TibiaTales.ToAppeaseTheMightyQuest, player:getStorageValue(Storage.Quest.U8_1.TibiaTales.ToAppeaseTheMightyQuest) + 1)
 	end
 
 	if MsgContains(message, "passage") then
 		if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.Faction.MaridDoor) ~= 1 then
-			npcHandler:say({
-				"If you want to enter our fortress you have to become one of us and fight the Efreet. ...",
-				"So, are you willing to do so?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.umar.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.umar.multi_4")
 			npcHandler:setTopic(playerId, 1)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.umar.say_3")
@@ -142,10 +130,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "yes") then
-			npcHandler:say({
-				"Oh. Ok. Welcome then. You may pass. ...",
-				"And don't forget to kill some Efreets, now and then.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.umar.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.umar.multi_2")
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.Faction.MaridDoor, 1)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.Faction.Greeting, 0)
 		elseif MsgContains(message, "no") then

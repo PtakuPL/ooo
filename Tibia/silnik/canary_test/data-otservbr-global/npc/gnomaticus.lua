@@ -60,10 +60,8 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "shooting") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 11 then
-			npcHandler:say({
-				"To the left you see our shooting range. Grab a cannon and shoot at the targets. You need five hits to succeed. ...",
-				"Shoot at the villain targets that will pop up. DON'T shoot innocent civilians since this will reset your score and you have to start all over. Report to me afterwards.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomaticus.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomaticus.multi_2")
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine, 13)
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Shooting, 0)
 		elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 13 then

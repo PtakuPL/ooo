@@ -83,56 +83,42 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "alverus") then
-		npcHandler:say({
-			"It happened while he carried out an experiment concerning the creation of the elemental {shrines}. I still get goose bumps just by thinking of it. ...",
-			"You need to know about the process of creating an elemental shrine to understand it completely, but I don't want to go into detail now. ...",
-			"Anyway, his spell had a different outcome than he had planned. He accidentally created an Ice Overlord, pure living elemental ice, who froze him in a blink of an eye.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_28")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_29")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_30")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "shrine") then
-		npcHandler:say({
-			"The creation of the elemental shrines is a really complex matter. They are actually nodes, locations where the matching elemental sphere is very close. ...",
-			"The shrine itself is like a portal between our world and the elemental {sphere} and enables us to use the elemental energy emerging from it.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_26")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_27")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "sphere") and player:getLevel() >= 80 then
-		npcHandler:say({
-			"There are four spheres we know of: ice, fire, earth and energy. ....<mumbles> Hmmm, should I ask or not?....The heck with it! Now that you know about the spheres ...",
-			"I found a way to visit them. It's VERY dangerous and there is a decent chance that you won't come back BUT if you succeed you'll write history!!! Ask me about that {mission} if you're interested.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_24")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_25")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "mission") or MsgContains(message, "quest") then
 		local value = player:getStorageValue(Storage.Quest.U8_2.ElementalSpheres.QuestLine)
 		if value < 1 then
 			if player:getLevel() >= 80 then
 				if player:isSorcerer() then
-					npcHandler:say({
-						"Okay, listen closely: First of all, you need to gather 20 enchanted rubies in order to go to the fire sphere. Deep under the academy, one floor below the elemental shrines, there is a machine. Put the gems in there and activate it. ...",
-						"Once you got there, find a way to gather elemental fire in any form. You will face fire elementals, that's for sure, but I don't know how the fire is stored. ...",
-						"Anyway, there should be a way to use that elemental fire and strengthen one of the elementals. If my calculations are right, you will create a Fire Overlord who hopefully will consist of some sort of 'concentrated' fire or something similar. ...",
-						"THAT'S what we need!! Are you in on it?",
-					}, npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_20")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_21")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_22")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_23")
 				elseif player:isDruid() then
-					npcHandler:say({
-						"Okay, listen closely: First of all, you need to gather 20 enchanted emeralds in order to go to the earth sphere. Deep under the academy, one floor below the elemental shrines, there is a machine. Put the gems in there and activate it. ...",
-						"Once you got there, find a way to gather elemental earth in any form. You will face earth elementals, that's for sure, but I don't know how the earth is stored. ...",
-						"Anyway, there should be a way to use that elemental earth and strengthen one of the elementals. If my calculations are right, you will create an Earth Overlord who hopefully will consist of some sort of 'concentrated' earth or something similar. ...",
-						"THAT'S what we need!! Are you in on it?",
-					}, npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_16")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_17")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_18")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_19")
 				elseif player:isPaladin() then
-					npcHandler:say({
-						"Okay, listen closely: First of all, you need to gather 20 enchanted sapphires in order to go to the ice sphere. Deep under the academy, one floor below the elemental shrines, there is a machine. Put the gems in there and activate it. ...",
-						"Once you got there, find a way to gather elemental ice in any form. You will face ice elementals, that's for sure, but I don't know how the ice is stored. ...",
-						"Anyway, there should be a way to use that elemental ice and strengthen one of the elementals. If my calculations are right, you will create an Ice Overlord who hopefully will consist of some sort of 'concentrated' ice or something similar. ...",
-						"THAT'S what we need!! Are you in on it?",
-					}, npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_12")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_13")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_14")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_15")
 				elseif player:isKnight() then
-					npcHandler:say({
-						"Okay, listen closely: First of all, you need to gather 20 enchanted amethysts in order to go to the energy sphere. Deep under the academy, one floor below the elemental shrines, there is a machine. Put the gems in there and activate it. ...",
-						"Once you got there, find a way to gather elemental energy in any form. You will face energy elementals, that's for sure, but I don't know how the energy is stored. ...",
-						"Anyway, there should be a way to use that energy and strengthen one of the elementals. If my calculations are right, you will create an Energy Overlord who hopefully will consist of some sort of 'concentrated' energy. ...",
-						"THAT'S what we need!! Are you in on it?",
-					}, npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_8")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_9")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_10")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_11")
 				end
 			else
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.say_1")
@@ -143,17 +129,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		elseif value == 1 then
 			if player:getItemCount(player:isSorcerer() and 946 or player:isDruid() and 947 or player:isPaladin() and 942 or player:isKnight() and 948) > 0 then
 				player:setStorageValue(Storage.Quest.U8_2.ElementalSpheres.QuestLine, 2)
-				npcHandler:say({
-					"Impressive!! Let me take a look.......Ahh, "
-						.. (
-							player:isSorcerer() and "an ETERNAL FLAME! Now you need to find a knight, a druid, and a paladin who also completed this first task. ..."
-							or player:isDruid() and "MOTHER SOIL! Now you need to find a knight, a paladin, and a sorcerer who also completed this first task. ..."
-							or player:isPaladin() and "a FLAWLESS ICE CRYSTAL! Now you need to find a knight, a druid, and a sorcerer who also completed this first task. ..."
-							or player:isKnight() and "PURE ENERGY! Now you need to find a druid, a paladin, and a sorcerer who also completed this first task. ..."
-						),
-					"Go down in the cellar again. I prepared a room under the academy where it should be safe. Your task is to charge the machines with the elemental substances and summon the LORD OF THE ELEMENTS. ...",
-					"When you use an obsidian knife on it's corpse you hopefully get some of the precious neutral matter. It's the only way to revive my dear friend Alverus!!",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_2")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_3")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_4")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_5")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_6")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_7")
 			else
 				npcHandler:say("You need some kind of pure elemental soil from the " .. (player:isSorcerer() and "Fire" or player:isDruid() and "Earth" or player:isPaladin() and "Ice" or player:isKnight() and "Energy") .. " Overlord. Come back when you've got it.", npc, creature)
 			end

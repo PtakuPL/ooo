@@ -83,10 +83,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ariella.say_5")
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 3 then
-			npcHandler:say({
-				"The sailors always tell tales about the famous beer of Carlin. You must know, alcohol is forbidden in that city. ...",
-				"The beer is served in a secret whisper bar anyway. Bring me a sample of the whisper beer, NOT the usual beer but whisper beer. I hope you are listening.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ariella.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ariella.multi_2")
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 4)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 5 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ariella.say_6")

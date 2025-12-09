@@ -77,10 +77,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "bluff") and player:getStorageValue(TheNewFrontier.Mission05.AngusKeyword) == 1 and player:getStorageValue(TheNewFrontier.Questline) == 14 and player:getStorageValue(TheNewFrontier.Mission05.Angus) == 1 then
 		if npcHandler:getTopic(playerId) == 1 or npcHandler:getTopic(playerId) == 2 then
 			if player:getStorageValue(TheNewFrontier.Mission05.Angus) == 1 then
-				npcHandler:say({
-					"Those stories are just amazing! Men with faces on their stomach instead of heads you say? And hens that lay golden eggs? Whereas, most amazing is this fountain of youth you've mentioned! ...",
-					"I'll immediately send some of our most dedicated explorers to check those things out!",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_30")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_31")
 				player:setStorageValue(TheNewFrontier.Mission05.Angus, 3)
 			end
 		end
@@ -152,12 +150,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			-- Spectral stone
 			-- Astral portals
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheSpectralStone) == 55 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 55 then
-			npcHandler:say({
-				"Both carvings are now charged and harmonised. In theory you should be able to travel in zero time from one base to the other ...",
-				"However, you will need to have an orichalcum pearl in your possession to use it as power source. It will be destroyed during the process. I will give you 6 of such pearls and you can buy new ones in our bases ...",
-				"In addition, you need to be a premium explorer to use the astral travel. ...",
-				"And remember: it's a small teleport for you, but a big teleport for all Tibians! Here is a small present for your efforts!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_26")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_27")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_28")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_29")
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheAstralPortals, 56)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 56)
 			player:addItem(5021, 6) -- Orichalcum pearl
@@ -252,11 +248,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		-- Bonelords
 	elseif MsgContains(message, "bonelord secrets") then
 		if player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheLizardUrn) == 29 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 29 then
-			npcHandler:say({
-				"We want to learn more about the ancient race of bonelords. We believe the black pyramid north east of Darashia was originally built by them ...",
-				"We ask you to explore the ruins of the black pyramid and look for any signs that prove our theory. You might probably find some document with the numeric bonelord language ...",
-				"That would be sufficient proof. Would you like to accept this mission?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_23")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_24")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_25")
 			npcHandler:setTopic(playerId, 17)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheBonelordSecret) == 31 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 30 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.say_33")
@@ -276,10 +270,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		-- Elven Poetry
 	elseif MsgContains(message, "elven poetry") then
 		if player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheOrcPowder) == 35 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 35 then
-			npcHandler:say({
-				"Some high ranking members would like to study elven poetry. They want the rare book 'Songs of the Forest' ...",
-				"For sure someone in Ab'Dendriel will own a copy. So you would just have to ask around there. Are you willing to accept this mission?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_21")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_22")
 			npcHandler:setTopic(player:getId(), 21)
 		end
 	elseif MsgContains(message, "elven book") then
@@ -292,11 +284,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		-- Memory Stone
 	elseif MsgContains(message, "memory stone") then
 		if player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheElvenPoetry) == 38 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 38 then
-			npcHandler:say({
-				"We acquired some knowledge about special magic stones. Some lost civilisations used it to store knowledge and lore, just like we use books ...",
-				"The wisdom in such stones must be immense, but so are the dangers faced by every person who tries to obtain one...",
-				"As far as we know the ruins found in the north-west of Edron were once inhabited by beings who used such stones. Do you have the heart to go there and to get us such a stone?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_18")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_19")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_20")
 			npcHandler:setTopic(playerId, 23)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheMemoryStone) == 40 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 39 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.say_37")
@@ -306,12 +296,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		-- Rune Writings
 	elseif MsgContains(message, "rune writings") then
 		if player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheMemoryStone) == 41 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 41 then
-			npcHandler:say({
-				"We would like to study some ancient runes that were used by the lizard race. We suspect some relation of the lizards to the founders of Ankrahmun ...",
-				"Somewhere under the ape infested city of Banuta, one can find dungeons that were once inhabited by lizards...",
-				"Look there for an atypical structure that would rather fit to Ankrahmun and its Ankrahmun Tombs. Copy the runes you will find on this structure...",
-				"Are you up to that challenge?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_14")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_15")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_16")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_17")
 			npcHandler:setTopic(playerId, 25)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheRuneWritings) == 43 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 43 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.say_38")
@@ -321,11 +309,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		-- Answer Yes
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"Fine, though it takes more then a mere lip service to join our ranks. To prove your dedication to the cause you will have to acquire an item for us ...",
-				"The mission should be simple to fulfil. For our excavations we have ordered a sturdy pickaxe in Kazordoon. You would have to seek out this trader Uzgod and get the pickaxe for us ...",
-				"Simple enough? Are you interested in this task?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_12")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_13")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.say_39")
@@ -507,11 +493,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			-- Rune Writings
 			-- Ectoplasm
 		elseif npcHandler:getTopic(playerId) == 27 then
-			npcHandler:say({
-				"Fine. The society is looking for new means to travel. Some of our most brilliant minds have some theories about astral travel that they want to research further ...",
-				"Therefore we need you to collect some ectoplasm from the corpse of a ghost. We will supply you with a collector that you can use on the body of a slain ghost ...",
-				"Do you think you are ready for that mission?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_10")
 			npcHandler:setTopic(playerId, 28)
 		elseif npcHandler:getTopic(playerId) == 28 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.say_64")
@@ -530,10 +514,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			-- Ectoplasm
 			-- Spectral Dress
 		elseif npcHandler:getTopic(playerId) == 30 then
-			npcHandler:say({
-				"That is quite courageous. We know, it's much we are asking for. The queen of the banshees lives in the so called Ghostlands, south west of Carlin. It is rumoured that her lair is located in the deepest dungeons beneath that cursed place ...",
-				"Any violence will probably be futile, you will have to negotiate with her. Try to get a spectral dress from her. Good luck.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_7")
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheSpectralDress, 48)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 48)
@@ -604,21 +586,17 @@ local function creatureSayCallback(npc, creature, type, message)
 		-- Answer No
 		-- Skull Of Ratha / Giant Smithhammer
 	elseif MsgContains(message, "skull of ratha") and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.SkullOfRatha.Bag1) == 1 then
-		npcHandler:say({
-			"Ratha was a great explorer and even greater ladies' man. Sadly he never returned from a visit to the amazons. Probably he is dead ...",
-			"The society offers a substantial reward for the retrieval of Ratha or his remains. Do you have any news about Ratha?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_5")
 		npcHandler:setTopic(playerId, 33)
 	elseif MsgContains(message, "giant smith hammer") and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.GiantSmithHammer.Hammer) == 1 then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.say_78")
 		npcHandler:setTopic(playerId, 34)
 		-- Explorer Brooch
 	elseif MsgContains(message, "brooch") and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.ExplorerBrooch) == 1 then
-		npcHandler:say({
-			"Our members travel to far away places and cross dangerous areas, many fall prey to enemies or the land ...",
-			"Sometimes the personal explorer brooches can be recovered. That way we learn about the fate of our members ...",
-			"We offer a reward for each brooch returned to us. Have you found an explorer brooch?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.angus.multi_3")
 		npcHandler:setTopic(playerId, 36)
 	else
 		-- The New Frontier

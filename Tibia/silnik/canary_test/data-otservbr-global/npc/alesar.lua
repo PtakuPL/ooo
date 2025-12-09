@@ -104,10 +104,8 @@ local function greetCallback(npc, creature, message)
 		end
 
 		if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Start) == 1 then
-			npcHandler:say({
-				"Hahahaha! ...",
-				"|PLAYERNAME|, that almost sounded like the word of greeting. Humans - cute they are!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_18")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_19")
 			endConversationWithDelay(npcHandler, npc, creature)
 			return false
 		end
@@ -131,12 +129,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission01) == 3 then
 			if missionProgress < 1 then
-				npcHandler:say({
-					"So Baa'leal thinks you are up to do a mission for us? ...",
-					"I think he is getting old, entrusting human scum such as you are with an important mission like that. ...",
-					"Personally, I don't understand why you haven't been slaughtered right at the gates. ...",
-					"Anyway. Are you prepared to embark on a dangerous mission for us?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_14")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_15")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_16")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_17")
 				npcHandler:setTopic(playerId, 1)
 			elseif isInArray({ 1, 2 }, missionProgress) then
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.say_3")
@@ -147,16 +143,14 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
-			npcHandler:say({
-				"All right then, human. Have you ever heard of the {'Tears of Daraman'}? ...",
-				"They are precious gemstones made of some unknown blue mineral and possess enormous magical power. ...",
-				"If you want to learn more about these gemstones don't forget to visit our library. ...",
-				"Anyway, one of them is enough to create thousands of our mighty djinn blades. ...",
-				"Unfortunately my last gemstone broke and therefore I'm not able to create new blades anymore. ...",
-				"To my knowledge there is only one place where you can find these gemstones - I know for a fact that the Marid have at least one of them. ...",
-				"Well... to cut a long story short, your mission is to sneak into Ashta'daramai and to steal it. ...",
-				"Needless to say, the Marid won't be too eager to part with it. Try not to get killed until you have delivered the stone to me.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_12")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_13")
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission02, 1)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.DoorToMaridTerritory, 1)
 		elseif MsgContains(message, "no") then
@@ -169,13 +163,11 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.say_6")
 				npcHandler:setTopic(playerId, 1)
 			else
-				npcHandler:say({
-					"So you have made it? You have really managed to steal a Tear of Daraman? ...",
-					"Amazing how you humans are just impossible to get rid of. Incidentally, you have this character trait in common with many insects and with other vermin. ...",
-					"Nevermind. I hate to say it, but it you have done us a favour, human. That gemstone will serve us well. ...",
-					"Baa'leal, wants you to talk to Malor concerning some new mission. ...",
-					"Looks like you have managed to extended your life expectancy - for just a bit longer.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_2")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_3")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_4")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alesar.multi_5")
 				player:removeItem(3233, 1)
 				player:setStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission02, 3)
 				npcHandler:setTopic(playerId, 0)

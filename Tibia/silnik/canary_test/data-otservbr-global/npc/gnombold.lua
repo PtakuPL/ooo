@@ -61,15 +61,13 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "area") then
-		return npcHandler:say({
-			"The levels around us are... well, they are strange. We are still not entirely sure how they were created. It seems obvious that they are artificial, but they seem not to be burrowed or the like. ... ",
-			"We found strange stone formations that were not found on other layers around the Spike, but there is no clue at all if they are as natural as they look. It seems someone used some geomantic force to move the earth. ...",
-			"For what reason this has been done we can't tell as we found no clues of colonisation. ...",
-			"There are theories that the caves are some kind of burrow of some extinct creature or even creatures that are still around us, but exist as some form of invisible energy; but those theories are far-fetched and not supported by any discoveries. ...",
-			"Be that as it may, whatever those caves were meant for, these days they are crawling with creatures of different kinds and all are hostile towards us. The competition for food is great down here, and everything is seen as prey by the cave dwellers. ...",
-			"Some would like to feast on the crystal of the Spike, others would prefer a diet of gnomes. What they have in common is that they are a threat. If we can't keep them under control their constant attacks and raids on the Spike will wear us down. ...",
-			"That's where adventurers fit in to save the day. ",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.multi_6")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.multi_8")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.multi_9")
 	end
 
 	if MsgContains(message, "mission") then
@@ -152,7 +150,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Main) == -1 then
-			npcHandler:say({ "Our mission for you is to use a magnet on three different monoliths in the cave system here. After the magnet evaporates on the last charge, enter the magnetic extractor here to deliver your charge.", "If you are interested, I can give you some more {information} about it. Are you willing to accept this mission?" }, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.multi_2")
 			talkState[playerId] = "charges"
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_20")

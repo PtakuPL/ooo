@@ -84,11 +84,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mother_of_jack.say_3")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say({
-				"Oh my... he did what? Why was he there? Edron Academy? ...",
-				"I see... this cannot be. Spectrofuss? Who? Jack! When? How? But why did he do that? Jack!! JACK!! When I find him he owes me an EXPLANATION. Thanks for telling me what he is actually doing in his FREE TIME. ...",
-				"JAAAAACK!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mother_of_jack.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mother_of_jack.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mother_of_jack.multi_3")
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.Mother, 1)
 		end

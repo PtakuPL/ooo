@@ -60,11 +60,9 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "endurance") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 15 then
-			npcHandler:say({
-				"Ah, the test is a piece of mushroomcake! Just take the teleporter over there in the south and follow the hallway. ...",
-				"You'll need to run quite a bit. It is important that you don't give up! Just keep running and running and running and ... I guess you got the idea. ...",
-				"At the end of the hallway you'll find a teleporter. Step on it and you are done! I'm sure you'll do a true gnomerun! Afterwards talk to me.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomewart.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomewart.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomewart.multi_3")
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine, 17)
 		elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 17 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomewart.say_1")

@@ -72,12 +72,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "short") and npcHandler:getTopic(playerId) == 3 then
-		npcHandler:say({
-			"You will have to re-empower several wardstones all over the world, to weaken the beast of nightmares. ...",
-			"The next step would be to enter a place known as dream scar and participate in battles, to gain access to the lower areas. ...",
-			"There the nightmare beast can be challenged and defeated.",
-			"So do you want to learn the story behind of this or rather talk about the {task} at hand?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vanys.multi_8")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vanys.multi_9")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vanys.multi_10")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vanys.multi_11")
 		npcHandler:setTopic(playerId, 4)
 	elseif npcHandler:getTopic(playerId) == 4 or npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "task") then
@@ -88,21 +86,17 @@ local function creatureSayCallback(npc, creature, type, message)
 				end
 				npcHandler:setTopic(playerId, 0)
 			elseif player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.WardStones.Count) >= 8 and player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.Main.TheSummerCourt) == 1 and player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.WardStones.Questline) == 1 then
-				npcHandler:say({
-					"You empowered all eight ward stones. Well done! You may now enter the Dream Labyrinth via the portal here in the Court. Beneath it you will find the Nightmare Beast's lair. But the labyrinth is protected by seven so called Dream Doors. ...",
-					"You have to find the Seven {Keys} to unlock the Seven Dream Doors down there. Only then you will be able to enter the Nightmare Beast's lair.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vanys.multi_6")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vanys.multi_7")
 				player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.WardStones.Questline, 2)
 				player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.TheSevenKeys.Questline, 1)
 				npcHandler:setTopic(playerId, 5)
 			elseif player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.WardStones.Questline) < 1 and player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.Main.TheSummerCourt) < 1 and player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.Main.TheWinterCourt) < 1 then
-				npcHandler:say({
-					"You have to empower eight ward stones. Once charged with arcane energy, they will strengthen the Nightmare Beast's prison and at the same time weaken this terrible creature. We know about the specific location of six of those stones. ...",
-					"You can find them in the mountains of the island Okolnir, in a water elemental cave beneath Folda, in the depths of Calassa, in the forests of Feyrist and on the islands Meriana and Cormaya. ...",
-					"The location of the other two ward stones is a bit more obscure, however. We are not completely sure where they are. You should make inquiries at an abandoned house in the Plains of Havoc. You may find it east of an outlaw camp. ...",
-					"The other stone seems to be somewhere in Tiquanda. Search for a small stone building south-west of Banuta. Take this talisman to empower the ward stones. It will work with the six stones at the known locations. ...",
-					"However, the empowering of the two hidden stones could be a bit more complicated. But you have to find out on yourself what to do with those stones.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vanys.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vanys.multi_2")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vanys.multi_3")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vanys.multi_4")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vanys.multi_5")
 				if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.Main.Questline) < 1 then
 					player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.Main.Questline, 1)
 				end

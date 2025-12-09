@@ -58,17 +58,13 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	message = message:lower()
 	if MsgContains(message, "quest") then
-		npcHandler:say({
-			"To enter the realm of the sanguine master and destroy its spawn, a sufficient sacrifice is imperative. ...",
-			"Find and slay the keeper of blooded tears and bring the nectar of his eyes before the blood god. Present your gift on the sacrificial altar. ...",
-			"After - and under no circumstances before - you have completed this procedure, you can enter the sacred fluid. You can, of course also take a slightly faster... {detour}.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bloodshade_sacrifice.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bloodshade_sacrifice.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bloodshade_sacrifice.multi_5")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "detour") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say({
-			"Hm. I see. Well, I will be frank. Every blood sacrifice has its price. Blood money will please the blood god... just as well. ...",
-			"The sum would be five million gold pieces and I... my master will be pleased. Are you prepared for a sacrifice such as this?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bloodshade_sacrifice.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bloodshade_sacrifice.multi_2")
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bloodshade_sacrifice.say_2")

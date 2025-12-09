@@ -90,10 +90,8 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.say_3")
 			end
 		elseif questProgress == 2 then
-			npcHandler:say({
-				"Whisper moss strong is, but me need liquid that humans have to make it work ...",
-				"Our raiders brought it from human settlement, it's called cough syrup. Go ask healer there for it.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_41")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_42")
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 3)
 		elseif questProgress == 3 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.say_4")
@@ -105,13 +103,11 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.say_6")
 			npcHandler:setTopic(playerId, 7)
 		elseif questProgress == 6 then
-			npcHandler:say({
-				"Ah yes that scroll. Sadly me not could read it yet. But the holy banana me insight gave! In dreams Hairycles saw where to find solution. ...",
-				"Me saw a stone with lizard signs and other signs at once. If you read signs and tell Hairycles, me will know how to read signs. ...",
-				"You go east to big desert. In desert there city. East of city under sand hidden tomb is. You will have to dig until you find it, so take shovel. ...",
-				"Go down in tomb until come to big level and then go down another. There you find a stone with signs between two huge red stones. ...",
-				"Read it and return to me. Are you up to that challenge?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_36")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_37")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_38")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_39")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_40")
 			npcHandler:setTopic(playerId, 8)
 		elseif questProgress == 7 then
 			if player:getStorageValue(Storage.Quest.U7_6.TheApeCity.ParchmentDecyphering) == 1 then
@@ -121,30 +117,24 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.say_8")
 			end
 		elseif questProgress == 8 then
-			npcHandler:say({
-				"So much there is to do for Hairycles to prepare charm that will protect all ape people. ...",
-				"You can help more. To create charm of life me need mighty token of life! Best is egg of a regenerating beast as a hydra is. ...",
-				"Bring me egg of hydra please. You may find it in lair of Hydra at little lake south east of our lovely city Banuta! You think you can do?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_33")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_34")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_35")
 			npcHandler:setTopic(playerId, 10)
 		elseif questProgress == 9 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.say_9")
 			npcHandler:setTopic(playerId, 11)
 		elseif questProgress == 10 then
-			npcHandler:say({
-				"Last ingredient for charm of life is thing to lure magic. Only thing me know like that is mushroom called witches' cap. Me was told it be found in isle called Fibula, where humans live. ...",
-				"Hidden under Fibula is a secret dungeon. There you will find witches' cap. Are you willing to go there for good ape people?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_31")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_32")
 			npcHandler:setTopic(playerId, 12)
 		elseif questProgress == 11 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.say_10")
 			npcHandler:setTopic(playerId, 13)
 		elseif questProgress == 12 then
-			npcHandler:say({
-				"Mighty life charm is protecting us now! But my people are still in danger. Danger from within. ...",
-				"Some of my people try to mimic lizards to become strong. Like lizards did before, this cult drinks strange fluid that lizards left when fled. ...",
-				"Under the city still the underground temple of lizards is. There you find casks with red fluid. Take crowbar and destroy three of them to stop this madness. Are you willing to do that?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_28")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_29")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_30")
 			npcHandler:setTopic(playerId, 14)
 		elseif questProgress == 13 then
 			if player:getStorageValue(Storage.Quest.U7_6.TheApeCity.Casks) == 3 then
@@ -154,15 +144,13 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.say_12")
 			end
 		elseif questProgress == 14 then
-			npcHandler:say({
-				"Now that the false cult was stopped, we need to strengthen the spirit of my people. We need a symbol of our faith that ape people can see and touch. ...",
-				"Since you have proven a friend of the ape people I will grant you permission to enter the forbidden land. ...",
-				"To enter the forbidden land in the north-east of the jungle, look for a cave in the mountains east of it. There you will find the blind prophet. ...",
-				"Tell him Hairycles you sent and he will grant you entrance. ...",
-				"Forbidden land is home of Bong. Holy giant ape big as mountain. Don't annoy him in any way but look for a hair of holy ape. ...",
-				"You might find at places he has been, should be easy to see them since Bong is big. ...",
-				"Return a hair of the holy ape to me. Will you do this for Hairycles?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_21")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_22")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_23")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_24")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_25")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_26")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_27")
 			npcHandler:setTopic(playerId, 15)
 		elseif questProgress == 15 then
 			if player:getStorageValue(Storage.Quest.U7_6.TheApeCity.HolyApeHair) == 1 then
@@ -172,20 +160,16 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.say_14")
 			end
 		elseif questProgress == 16 then
-			npcHandler:say({
-				"You have proven yourself a friend, me will grant you permission to enter the deepest catacombs under Banuta which we have sealed in the past. ...",
-				"Me still can sense the evil presence there. We did not dare to go deeper and fight creatures of evil there. ...",
-				"You may go there, fight the evil and find the monument of the serpent god and destroy it with hammer me give to you. ...",
-				"Only then my people will be safe. Please tell Hairycles, will you go there?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_17")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_18")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_19")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_20")
 			npcHandler:setTopic(playerId, 17)
 		elseif questProgress == 17 then
 			if player:getStorageValue(Storage.Quest.U7_6.TheApeCity.SnakeDestroyer) == 1 then
-				npcHandler:say({
-					"Finally my people are safe! You have done incredible good for ape people and one day even me brethren will recognise that. ...",
-					"I wish I could speak for all when me call you true friend but my people need time to get accustomed to change. ...",
-					"Let us hope one day whole Banuta will greet you as a friend. Perhaps you want to check me offers for special friends... or shamanic powers.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_14")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_15")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_16")
 				player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 18)
 				player:addAchievement("Friend of the Apes")
 			else
@@ -196,13 +180,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "background") then
 		if questProgress == 1 and player:getStorageValue(Storage.Quest.U7_6.WhisperMoss) ~= 1 then
-			npcHandler:say({
-				"So listen, little ape was struck by plague. Hairycles not does know what plague it is. That is strange. Hairycles should know. But Hairycles learnt lots and lots ...",
-				"Me sure to make cure so strong to drive away all plague. But to create great cure me need powerful components ...",
-				"Me need whisper moss. Whisper moss growing south of human settlement is. Problem is, evil little dworcs harvest all whisper moss immediately ...",
-				"Me know they hoard some in their underground lair. My people raided dworcs often before humans came. So we know the moss is hidden in east of upper level of dworc lair ...",
-				"You go there and take good moss from evil dworcs. Talk with me about mission when having moss.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_12")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_13")
 		end
 	elseif MsgContains(message, "cookie") then
 		if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 31 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.CookieDelivery.Hairycles) ~= 1 then
@@ -247,13 +229,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "yes") then
-			npcHandler:say({
-				"So listen, little ape was struck by plague. Hairycles not does know what plague it is. That is strange. Hairycles should know. But Hairycles learnt lots and lots ...",
-				"Me sure to make cure so strong to drive away all plague. But to create great cure me need powerful components ...",
-				"Me need whisper moss. Whisper moss growing south of human settlement is. Problem is, evil little dworcs harvest all whisper moss immediately ...",
-				"Me know they hoard some in their underground lair. My people raided dworcs often before humans came. So we know the moss is hidden in east of upper level of dworc lair ...",
-				"You go there and take good moss from evil dworcs. Talk with me about mission when having moss.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_8")
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Started, 1)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 1)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.DworcDoor, 1)
@@ -293,11 +273,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 5 then
 		if MsgContains(message, "yes") then
-			npcHandler:say({
-				"So listen, please. Plague was not ordinary plague. That's why Hairycles could not heal at first. It is new curse of evil lizard people ...",
-				"I think curse on little one was only a try. We have to be prepared for big strike ...",
-				"Me need papers of lizard magician! For sure you find it in his hut in their dwelling. It's south east of jungle. Go look there please! Are you willing to go?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.multi_3")
 			npcHandler:setTopic(playerId, 6)
 		elseif MsgContains(message, "no") then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hairycles.say_32")

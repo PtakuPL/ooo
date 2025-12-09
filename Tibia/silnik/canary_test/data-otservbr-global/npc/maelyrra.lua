@@ -107,12 +107,10 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say({
-				"Some of our siblings are tainted by the destructive energies that threaten Feyrist. They are darker now, more aggressive, twisted ... I'm sure you already met them. ...",
-				"They are living in tunnels and caves but at night they surface, even attacking their own siblings. They kidnapped some fairies, holding them prisoner in their mouldy dens. ...",
-				"And as if this wasn't enough they stole an ancient and precious artefact, the moon mirror. Please seek out the tainted fae, retrieve the artefact and free the captured fairies. ...",
-				"You may discover the entrance to the tainted caves somewhere in the deep forest. The tainted fae like to hide their treasures in hollow logs or trumps, so have a closer look at them.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maelyrra.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maelyrra.multi_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maelyrra.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maelyrra.multi_12")
 			player:setStorageValue(ThreatenedDreams.Mission02[1], 3)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
@@ -128,27 +126,21 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 5 then
-			npcHandler:say({
-				"You have to find three vessels that are able to hold three different types of light: starlight, sunlight and moon rays. You have already found the moon mirror but we also need the starlight vial and the sun catcher. ...",
-				"Ask the mermaid Aurita for the starlight vial and the faun Taegen for the sun catcher.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maelyrra.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maelyrra.multi_8")
 			player:setStorageValue(ThreatenedDreams.Mission02[1], 5)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 6 then
-			npcHandler:say({
-				"Very good, mortal being! Now you have to catch the respective light and store it in the corresponding vessel. You can gather moon rays by night but this will only work on one special sacred glade on Feyrist. ...",
-				"You can find this glade in the deep forest, east of our village. The starlight must also be gathered by night. There is a rock plateau high in the mountains at the border to Roshamuul where you can catch the starlight in the vial. ...",
-				"You will recognise the place by the elemental energy shrine there. You have to gather the sunlight by day, of course. There is a beach in the north of Feyrist, shaped like a snake's head. There you may gather Suon's light with the sun catcher.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maelyrra.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maelyrra.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maelyrra.multi_6")
 			player:setStorageValue(ThreatenedDreams.Mission02[1], 6)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 7 then
 			if player:getItemCount(25734) >= 1 and player:getItemCount(25732) >= 1 and player:getItemCount(25730) >= 1 then
-				npcHandler:say({
-					"That's wonderful! Now you will be able to repair the magical barrier. You have to strengthen the arcane sources that power this mystic shield. There are three different arcane sources: the moon sculptures, the dream bird trees and the sun mosaics. ...",
-					"There are five of each of them and you have to find them all to repair the barrier. Spread the gathered moon rays on the moon sculptures. Pour out the starlight over the dream bird trees and let the sunlight shine on the mosaics. ...",
-					"If you charge all fifteen arcane sources with the respective light, Feyrist's protection will be ensured again.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maelyrra.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maelyrra.multi_2")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maelyrra.multi_3")
 				player:setStorageValue(ThreatenedDreams.Mission02[1], 7)
 				npcHandler:setTopic(playerId, 0)
 			else

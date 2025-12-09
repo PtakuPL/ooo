@@ -66,12 +66,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:say("Lost. Hidden. The keys are shadow names. Find them, they will talk to me and reveal what is hidden. Will you go on that quest?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission44) == 1 then
-		npcHandler:say({
-			"Then into the vampire crypts, deep down, you must go. ...",
-			"There... three graves where the shadows swirl, unseen. The first one: name the colour of the silent gong. Then ...",
-			"The second: the name that is silent now in the halls of Darkstone ...",
-			"The third: the lost beauty of Dunesea. It must be remembered, the shadows command it. Go now.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oblivion.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oblivion.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oblivion.multi_6")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oblivion.multi_7")
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission45, 1)
 		npcHandler:setTopic(playerId, 0)
 	elseif (MsgContains(message, "scroll") or MsgContains(message, "mission")) and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission48) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission49) < 1 then
@@ -87,11 +85,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:say("The floating gardens. Too beautiful to lie asleep in the memory of men. Yes. The name that is no more in Darkstone?", npc, creature)
 		npcHandler:setTopic(playerId, 5)
 	elseif (MsgContains(message, "Takesha Antishu")) and npcHandler:getTopic(playerId) == 5 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission48) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission49) < 1 then
-		npcHandler:say({
-			"Ah, the Lady of Darkstone. You have done well to remember her name. ...",
-			"Now, the shadows say the thing you seek lies next to Akab, the Quarrelsome. ...",
-			"No coal is burned in his honour. Find his resting place and dig near it. Now go.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oblivion.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oblivion.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oblivion.multi_3")
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission49, 1)
 		npcHandler:setTopic(playerId, 0)
 	end

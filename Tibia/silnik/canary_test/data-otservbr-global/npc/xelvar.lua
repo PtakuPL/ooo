@@ -59,14 +59,12 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "adventures") or MsgContains(message, "join") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) < 1 then
-			npcHandler:say({
-				"I am glad to hear that. In the spirit of our own foreign legion we suggested the gnomes might hire heroes like you to build some kind of troop. They gave me that strange crystal to allow people passage to their realm. ...",
-				"I hereby grant you permission to use the basic gnomish teleporters. I also give you four gnomish teleport crystals. One will be used up each time you use the teleporter. ...",
-				"You can stock up your supply by buying more from me. Just ask me for a {trade}. Gnomette in the teleport chamber of the gnome outpost will sell them too. ...",
-				"The teleporter here will transport you to one of the bigger gnomish outposts. ...",
-				"There you will meet Gnomerik, the recruitment officer of the Gnomes. If you are lost, Gnomette in the teleport chamber might be able to help you with directions. ...",
-				"Good luck to you and don't embarrass your race down there! Keep in mind that you are a representative of the big people.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xelvar.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xelvar.multi_12")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xelvar.multi_13")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xelvar.multi_14")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xelvar.multi_15")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xelvar.multi_16")
 
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine, 1)
 			player:addItem(16167, 4)
@@ -88,30 +86,24 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "gnomes") then
 		if npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say({
-				"The gnomes preferred to keep our alliance and their whole {existence} a secret. They are a bit distrustful of others. ...",
-				"They are quite self-sufficient and the fact that they are actually accepting some help is more than alarming. The gnomes are in real trouble and I am kind of an ambassador to find some people willing to {help}.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xelvar.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xelvar.multi_10")
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "help") then
 		if npcHandler:getTopic(playerId) == 4 then
-			npcHandler:say({
-				"The gnomes are locked in a war with an enemy that thins out their resources but foremost their manpower. We have suggested that people like you could be just the specialists they are looking for. ...",
-				"If you are interested to {join} the gnomish cause I can arrange a meeting with their recruiter.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xelvar.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xelvar.multi_8")
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "join") then
 		if npcHandler:getTopic(playerId) == 5 then
-			npcHandler:say({
-				"I am glad to hear that. In the spirit of our own foreign legion we suggested the gnomes might hire heroes like you to build some kind of troop. They gave me that strange crystal to allow people passage to their realm. ...",
-				"I hereby grant you permission to use the basic gnomish teleporters. I also give you four gnomish teleport crystals. One will be used up each time you use the teleporter. ...",
-				"You can stock up your supply by buying more from me. Just ask me for a {trade}. Gnomette in the teleport chamber of the gnome outpost will sell them too. ...",
-				"The teleporter here will transport you to one of the bigger gnomish outposts. ...",
-				"There you will meet Gnomerik, the recruitment officer of the Gnomes. If you are lost, Gnomette in the teleport chamber might be able to help you with directions. ...",
-				"Good luck to you and don't embarrass your race down there! Keep in mind that you are a representative of the big people.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xelvar.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xelvar.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xelvar.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xelvar.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xelvar.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xelvar.multi_6")
 
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine, 1)
 			player:addItem(16167, 4)

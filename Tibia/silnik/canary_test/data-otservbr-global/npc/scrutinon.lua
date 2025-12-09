@@ -54,18 +54,14 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "quirefang") then
-		npcHandler:say({
-			"This island is cleft. Go there only prepared or you will meet your end. The surface of this forgotten rock is a barren wasteland full of hostile creatures. ...",
-			"Its visage is covered with holes and tunnels in which its leggy inhabitants are hiding. Its bowels filled with the strangest creatures, waiting to feast on whatever dares to disturb their hive. ...",
-			"And you will find no shelter in Quirefang's black depths, where the creatures of the deep are fulfilling a dark prophecy. ...",
-			"It is impossible to reach it by ship or boat. However, there was one before you. A {visitor} who found a way to enter the island.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.scrutinon.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.scrutinon.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.scrutinon.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.scrutinon.multi_6")
 		npcHandler:setTopic(playerId, 1)
 	elseif npcHandler:getTopic(playerId) == 1 and MsgContains(message, "visitor") then
-		npcHandler:say({
-			"He travelled on the very ground to reach the hostile shores of Quirefang. He used something that turned the soil and carved a way to the island. ...",
-			"You will need to follow his trail if you want to reach it.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.scrutinon.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.scrutinon.multi_2")
 		if player:getStorageValue(Storage.Quest.U9_4.LiquidBlackQuest.Questline) < 1 then
 			player:setStorageValue(Storage.Quest.U9_4.LiquidBlackQuest.Questline, 1)
 			player:setStorageValue(Storage.Quest.U9_4.LiquidBlackQuest.Visitor, 1)

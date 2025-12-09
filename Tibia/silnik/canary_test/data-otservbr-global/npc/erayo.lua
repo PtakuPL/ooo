@@ -84,12 +84,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"Thought so. Could use some help anyway. Listen, I need stuff. Someone gave me a strange assignment - sneak into Thais castle at night and shroud it with cloth without anyone noticing it. ...",
-				"I wonder why anyone would want to shroud a castle, but as long as long as the guy pays, no problem, I'll do the sneaking part. Need a lot of cloth though. ...",
-				"Gonna make it colourful. Bring me 50 pieces of {blue cloth}, 50 pieces of {green cloth}, 50 pieces of {red cloth}, 50 pieces of {brown cloth}, 50 pieces of {yellow cloth} and 50 pieces of {white cloth}. ...",
-				"Besides, gonna need 10 {spools of yarn}. Understood?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.erayo.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.erayo.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.erayo.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.erayo.multi_4")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if player:getStorageValue(Storage.OutfitQuest.DefaultStart) ~= 1 then

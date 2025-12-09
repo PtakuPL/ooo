@@ -60,11 +60,9 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "angelina") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand) == 1 then
-			npcHandler:say({
-				"Angelina had been imprisoned? My, these are horrible news, but I am so glad to hear that she is safe now. ...",
-				"I will happily carry out her wish and reward you, but I fear I need some important ingredients for my blessing spell first. ...",
-				"Will you gather them for me?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_10")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "wand") or MsgContains(message, "rod") then
@@ -102,15 +100,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"Thank you, I promise that your efforts won't be in vain! Listen closely now: First, I need a sample of five druid rods and five sorcerer wands. ...",
-				"I need a snakebite rod, a moonlight rod, a necrotic rod, a terra rod and a hailstorm rod. Then, I need a wand of vortex, a wand of dragonbreath ...",
-				"... a wand of decay, a wand of cosmic energy and a wand of inferno. Please bring them all at once so that their energy will be balanced. ...",
-				"Secondly, I need 10 ounces of magic sulphur. It can absorb the elemental energy of all the wands and rods and bind it to something else. ...",
-				"Next, I will need a soul stone. These can be used as a vessel for energy, evil as well as good. They are rarely used nowaday though. ...",
-				"Lastly, I need a lot of holy energy. I can extract it from ankhs, but only a small amount each time. I will need about 20 ankhs. ...",
-				"Did you understand everything I told you and will help me with my blessing?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_7")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_7")

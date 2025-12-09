@@ -668,23 +668,19 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"So you want to make a total fool of yourself? Fine with me, but note that becoming a real fool means more than being just an ordinary fool ...",
-				"You will have to master a whole series of challenging, lengthy and, above all, totally foolish quests ...",
-				"Are you sure you want to waste a part of your limited lifetime on a quest that makes a fool of yourself and which might award you with the prestigious title of a grand fool in a far away future?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bozo.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bozo.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bozo.multi_10")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline, 1)
 			player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questlog, 1)
 			player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Mission1, 1)
-			npcHandler:say({
-				"What a foolish decision! You are indeed a worthy candidate! But let's talk about business ...",
-				"Being a jester is not just about telling jokes. A good jester heavily relies on requisites ...",
-				"Getting some requisites will be your first job. First of all we need a good supply of water squirt flowers ...",
-				"I'm making them on my own in my spare time but I need the right material. South of Thais, next to the Whiteflower Temple, you will find the ideal flowers ...",
-				"Take a kitchen knife, cut the thickest and healthiest flower and bring it here. Then talk to me about your mission.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bozo.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bozo.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bozo.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bozo.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bozo.multi_7")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			local targetValue = value[playerId]
@@ -784,10 +780,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 11 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.EmperorBeardShave) == 1 then
 				player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline, 12)
 				player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Mission5, 3)
-				npcHandler:say({
-					"You shaved the emperor, but lost the beard? What kind of fool are you? Well, at least he will have a nice surprise when he wakes up ...",
-					"Still, as a small recognition of your accomplishments I'm willing to tell you how to get your own jester outfit. If you are interested in more fun and adventures, ask me for more missions.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bozo.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bozo.multi_2")
 			elseif player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 30 then
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bozo.say_8")
 			elseif player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 35 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.LostDisguise) ~= 1 then

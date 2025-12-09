@@ -81,38 +81,30 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "assistance") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"Wretched creatures of ice have stolen my egg that was close to hatching. ...",
-				" Since I'm to huge to enter those lower Tunnels I have to ask you to take care of my {egg}. Will you do this?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_dragon_mother.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_dragon_mother.multi_7")
 			npcHandler:setTopic(playerId, 3)
 		end
 	end
 
 	if MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say({
-				"So return to the upper tunnels where cultists and ice golems dwell. Somewhere in these tunnels you will find a small prison haunted by a ghost. South of this prison cell there is a tunnel that will lead you eastwards. ...",
-				"Follow the tunnel until you reach a small cave. Step down and down until you see a blue energy field. It will lead you to my egg. It is sealed so that not everyone may enter the room. But you have the permission now.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_dragon_mother.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_dragon_mother.multi_5")
 			player:setStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.BabyDragon, 1)
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say({
-				"Grrr.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_dragon_mother.multi_3")
 			npcHandler:setTopic(playerId, 1)
 		end
 	end
 
 	if MsgContains(message, "egg") then
 		if npcHandler:getTopic(playerId) == 4 then
-			npcHandler:say({
-				"As I told you, fiendish ice creatures dragged my egg into the lower caves. ...",
-				" Without enough heat the egg will die soon. Venture there and save my hatchling and the knowledge you seeek shall be yours!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_dragon_mother.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_dragon_mother.multi_2")
 			player:setStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.BabyDragon, 1)
 		end
 	end

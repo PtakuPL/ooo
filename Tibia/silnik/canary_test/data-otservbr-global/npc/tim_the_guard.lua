@@ -73,10 +73,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "gods would allow") then
 		if npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say({
-				"It's not a drama!! I think there is just no god who's responsible for toothbrush safety, that's all ...",
-				"And even IF through some miracle the stupid toothbrush had jumped out of the toilet into my hand, I honestly doubt I would ever use it again.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tim_the_guard.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tim_the_guard.multi_2")
 			npcHandler:setTopic(playerId, 0)
 			if player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.TimGuard) < 1 then
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.TimGuard, 1)

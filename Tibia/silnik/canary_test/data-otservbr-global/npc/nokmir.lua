@@ -68,10 +68,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "ring") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"He said he still had it after work. On that evening, {Grombur}, {Rerun} and me opened a cask of beer in one of the mine tunnels. We had a fun evening there. ...",
-				"On the next day, the guards brought me to emperor {Rehal}, and Rerun was there, too. He said I had stolen his ring. I'd never steal, you have to believe me.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nokmir.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nokmir.multi_2")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "grombur") then

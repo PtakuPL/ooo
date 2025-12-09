@@ -68,28 +68,22 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "mission") then
-		npcHandler:say({
-			"First, you will help us rebuilding this wretched {bridge} we cannot cross. We need mortar and there are several types of monsters who try to keep us away from it. ...",
-			"Then there is this enormous wall in the distance. Once we crossed the bridge, we will have to breach this monument. As I see it, you are working for the Inquisition now, I will hear no objection. You may even earn our gratitude.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_23")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_24")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "bridge") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"Our brother Mortis is constantly working on keeping the bridge intact. We tried some simple wood planks first but it didn't work out that... well. ...",
-				"What we need is enough {mortar} to actually build a durable traverse. And we will need even more mortar to maintain it as it constantly gets attacked by vile critters.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_21")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_22")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "mortar") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"We scouted some caves beneath the island which hold plenty of chalk to mix some good mortar. The entrances are not very far from here in fact. ...",
-				"However, the entrances are somewhat... twisted. The entrance we had mapped to a certain cave one day, would lead to a completely different cave on the next. ...",
-				"And even when emerging from one of the caves you never know where you are since its exits are just as deceptive. ...",
-				"Once you gathered some chalk, you should also find gravel on the island. If you have a pick and a bucket, you should be able to collect enough fine gravel to mix some mortar. ...",
-				"Do not forget to bring some buckets, if you are in short supply, brother Maun will hand some out to you - for a fee of course.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_16")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_17")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_18")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_19")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_20")
 			npcHandler:setTopic(playerId, nil)
 		end
 	end
@@ -101,11 +95,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		if npcHandler:getTopic(playerId) == 3 then
 			if player:getInquisitionGold() > 0 then
 				npcHandler:setTopic(playerId, 4)
-				npcHandler:say({
-					"Alright, so you mixed and delivered " .. math.max(0, player:getStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Mortar_Thrown)) .. " mortar and ...",
-					"You killed " .. math.max(0, player:getStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Killed_Frazzlemaws)) .. " frazzlemaws and ...",
-					"You also hunted " .. math.max(0, player:getStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Killed_Silencers)) .. " silencers. That would equal " .. player:getInquisitionGold() .. " of inquisition gold - BUT we are currently short of this valuable metal so... do you want me to add this amount to my {books} for now or {trade} it for something else.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_9")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_10")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_11")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_12")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_13")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_14")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_15")
 			else
 				npcHandler:setTopic(playerId, nil)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.say_2")
@@ -115,17 +111,17 @@ local function creatureSayCallback(npc, creature, type, message)
 		local v = math.max(0, player:getStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Gold_Record))
 		if MsgContains(message, "book") or MsgContains(message, "books") then
 			npcHandler:setTopic(playerId, 5)
-			npcHandler:say({
-				"Of course, let's see. Hm, your recent endeavours would earn you " .. player:getInquisitionGold() .. " of righteous inquisition gold. You have earned " .. v .. " of gold in total. ...",
-				"Do you want me to add this amount to my books? This will reset your current records, too, however - so?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_8")
 		end
 	elseif npcHandler:getTopic(playerId) == 5 then
 		if MsgContains(message, "yes") then
-			npcHandler:say({
-				"Good. Registered as... " .. player:getName() .. "... with... about " .. player:getInquisitionGold() .. " of righteously earned inquisition gold added. There. Thanks for your help! ..",
-				"Good. Ask me any time in case you want to know your current {record}. If you have time, Remember you can also {trade} your earnings into some of these... probably far more valuable, ahem... cluster... things, yes.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.multi_4")
 			player:setStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Gold_Record, player:getInquisitionGold())
 			player:setStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Mortar_Thrown, 0)
 			player:setStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Killed_Frazzlemaws, 0)

@@ -64,10 +64,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheIslandofDragons) == 58 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 58 then
 			if player:removeItem(7314, 1) then
-				npcHandler:say({
-					"A frozen dragon lord? This is just the information we needed! And you even brought a scale from it! Take these 5000 gold pieces as a reward. ...",
-					"As you did such a great job, I might have another mission for you later.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_19")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_20")
 				player:addItem(3035, 50)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheIslandofDragons, 59)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 59)
@@ -75,32 +73,26 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.say_2")
 			end
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheIslandofDragons) == 59 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 59 then
-			npcHandler:say({
-				"Ah, yes, the mission. Let me tell you about something called ice music. ...",
-				"There is a cave on Hrodmir, north of the southernmost barbarian camp Krimhorn. ...",
-				"In this cave, there are a waterfall and a lot of stalagmites. ...",
-				"When the wind blows into this cave and hits the stalagmites, it is supposed to create a sound similar to a soft song. ...",
-				"Please take this resonance crystal and use it on the stalagmites in the cave to record the sound of the wind.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_14")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_15")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_16")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_17")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_18")
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheIceMusic, 60)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 60)
 			player:addItem(7242, 1)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheIceMusic) == 61 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 61 and player:removeItem(7315, 1) then
-			npcHandler:say({
-				"Ah! You did it! I can't wait to hear the sound... but I will do that in a silent moment. ...",
-				"You helped as much in our research here. As a reward, you may use our astral portal in the upper room from now on. ...",
-				"For just one orichalcum pearl, you can travel between Liberty Bay and Svargrond. Thank you again!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_12")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_13")
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheIceMusic, 62)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 62)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.IceMusicDoor, 1)
 		elseif player:getStorageValue(Storage.TheIceIslands.Questline) == 32 then
-			npcHandler:say({
-				"You are the one who became an honorary barbarian! The one who made friends with the grim local musher and helped the shamans of Nibelor! The one they call old bearhugg ... erm ... I mean indeed I might have a mission for someone like you ...",
-				"We are trying to find out what is happening in the raider camps. Through our connection to the shamans we could get a covered contact in their majorcamp far to the south. We equipped our contact with a memory crystal so he could report all he knew ...",
-				"We need you to recover this crystal. Travel to the southern camp of the raiders and find our contact man there. Get the memory crystal and bring ithere. The society and the shamans will then decide our next steps. Do you think you can do this?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_10")
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 33 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.say_3")
@@ -109,11 +101,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.say_4")
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 34 and player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.MemoryCrystal) < os.time() then
-			npcHandler:say({
-				"The information was quite useful. What worries me most are not the raiders but those that have driven them from the old mines...",
-				"We need to investigate the mines. Most entrances collapsed due to the lack of maintenance but there should be some possibilities to get in ...",
-				"In case you find a door, Ill tell you the old trick of the Carlin mining company to open it <whisper> <whisper>. Find some hint or someone who is willing to talk about what is going on there.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_7")
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 35)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission09, 1) -- Questlog The Ice Islands Quest, Formorgar Mines 1: The Mission
@@ -122,12 +112,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "yes") then
 		-- ISLAND OF DRAGONS
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"Now we're talking! Maybe you've already heard of the island Okolnir south of Hrodmir. ...",
-				"Okolnir is the home of a new and fierce dragon race, the so-called frost dragons. However, we have no idea where they originate from. ...",
-				"Rumours say that dragon lords, that roamed on this isle, were somehow turned into frost dragons when the great frost covered Okolnir. ...",
-				"Travel to Okolnir and try to find a proof for the existence of dragon lords there in the old times. I think old Buddel might be able to bring you there.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lurik.multi_4")
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheIslandofDragons, 57)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 57)

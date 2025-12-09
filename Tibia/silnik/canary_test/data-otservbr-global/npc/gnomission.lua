@@ -59,22 +59,18 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "warzones") then
-		npcHandler:say({
-			"There are three warzones. In each warzone you will find fearsome foes. At the end you'll find their mean master. The masters is well protected though. ...",
-			"Make sure to talk to our gnomish agent in there for specifics of its' protection. ...",
-			"Oh, and to be able to enter the second warzone you have to best the first. To enter the third you have to best the second. ...",
-			"And you can enter each one only once every twenty hours. Your normal teleport crystals won't work on these teleporters. You will have to get {mission} crystals from Gnomally.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomission.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomission.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomission.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomission.multi_6")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "job") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomission.say_1")
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "heroes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"You can trade special spoils of war to get a permission to use the war teleporters to the area of the corresponding boss without need of mission crystals. ...",
-				"Which one would you like to trade: the deathstrike's {snippet}, gnomevil's {hat} or the abyssador {lash}?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomission.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomission.multi_2")
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "snippet") then

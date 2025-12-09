@@ -84,11 +84,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"Excellent. Now we need to concentrate on testing that thing. The spirit cage has been calibrated based on some tests we made - as well as your recent findings over at the graveyard. ...",
-				"Using the device on the remains of a ghost right after its defeat should capture it inside this trap. We could then transfer it into our spirit chamber which is in fact a magical barrier. ..",
-				"At first, however, we need you to find a specimen and bring it here for us to test the capacity of the device. Are you ready for this?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_13")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_14")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_15")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_5")
@@ -97,13 +95,11 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:getStorageValue(Storage.Quest.U8_7.SpiritHunters.CharmUse) == 1 then
-				npcHandler:say({
-					"Fascinating, let me see. ...",
-					"Amazing! I will transfer this to our spirit chamber right about - now! ...",
-					"Alright, the device is holding it. The magical barrier should be able to contain nearly 20 times the current load. That's a complete success! Spectulus, are you seeing this? We did it! ...",
-					"Well, you did! You really helped us pulling this off. Thank you Lord Stalks! ...",
-					"I doubt we will have much time to hunt for new specimens ourselves in the near future. If you like, you can continue helping us by finding and capturing more and different ghosts. Just talk to me to receive a new task.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_8")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_9")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_10")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_11")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_12")
 				player:setStorageValue(Storage.Quest.U8_7.SpiritHunters.Mission01, 4)
 				player:addExperience(500, true)
 				npcHandler:setTopic(playerId, 0)
@@ -112,13 +108,11 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 4 then
-			npcHandler:say({
-				"Magnificent! Alright, we will at least need 5 caught ghosts. We will pay some more if you can catch 5 nightstalkers. Of course you will earn some more if you bring us 5 souleaters. ...",
-				"I heard they dwell somewhere in that new continent - Zao? Well anyway, if you feel you've got enough, just return with what you've got and we will see. Good luck! ...",
-				"Keep in mind that the specimens are only of any worth to us if the exact amount of 5 per specimen is reached. ...",
-				"Furhtermore, to successfully bind Nightstalkers to the cage, you will need to have caught at least 5 Ghosts. To bind Souleaters, you will need at least 5 Ghosts and 5 Nightstalkers. ...",
-				"The higher the amount of spirit energy in the cage, the higher its effective capacity. Oh and always come back and tell me if you lose your spirit cage.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_7")
 			player:setStorageValue(Storage.Quest.U8_7.SpiritHunters.Mission01, 5)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
@@ -140,10 +134,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "research") then
 		local qStorage = player:getStorageValue(Storage.Quest.U8_7.SpiritHunters.Mission01)
 		if qStorage == 4 then
-			npcHandler:say({
-				"We are still in need of more research concerning environmental as well as psychic ecto-magical influences. Besides more common ghosts we also need some of the harder to come by nightstalkers and - if you're really hardboiled - souleaters. ...",
-				"We will of course pay for every ghost you catch. You will receive more if you hunt for some of the tougher fellows - but don't overdue it. What do you say?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_2")
 			npcHandler:setTopic(playerId, 4)
 		elseif qStorage == 5 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_10")

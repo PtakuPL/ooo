@@ -62,19 +62,15 @@ local function greetCallback(npc, creature, message)
 	end
 
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Start) == 1 then
-		npcHandler:say({
-			"Hahahaha! ...",
-			"|PLAYERNAME|, that almost sounded like the word of greeting. Humans - cute they are!",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.multi_16")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.multi_17")
 		endConversationWithDelay(npcHandler, npc, creature)
 		return false
 	end
 
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.Faction.Greeting) == -1 then
-		npcHandler:say({
-			"Hahahaha! ...",
-			"|PLAYERNAME|, that almost sounded like the word of greeting. Humans - cute they are!",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.multi_14")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.multi_15")
 		endConversationWithDelay(npcHandler, npc, creature)
 		return false
 	end
@@ -100,33 +96,25 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	-- To Appease the Mighty Quest
 	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U8_1.TibiaTales.ToAppeaseTheMightyQuest) == 2 then
-		npcHandler:say({
-			"You have the smell of the Marid on you. Tell me who sent you?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.multi_13")
 		npcHandler:setTopic(playerId, 9)
 	elseif MsgContains(message, "kazzan") and npcHandler:getTopic(playerId) == 9 then
-		npcHandler:say({
-			"And he is sending a worm like you to us!?! The mighty Efreet!! Tell him that we won't be part in his 'great' plans and now LEAVE!! ...",
-			"...or do you want to join us and fight those stinking Marid who claim themselves to be noble and righteous?!? Just let me know.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.multi_11")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.multi_12")
 		player:setStorageValue(Storage.Quest.U8_1.TibiaTales.ToAppeaseTheMightyQuest, player:getStorageValue(Storage.Quest.U8_1.TibiaTales.ToAppeaseTheMightyQuest) + 1)
 	end
 
 	if MsgContains(message, "passage") then
 		if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.Faction.EfreetDoor) ~= 1 then
-			npcHandler:say({
-				"Only the mighty Efreet, the true djinn of Tibia, may enter Mal'ouquah! ...",
-				"All Marid and little worms like yourself should leave now or something bad may happen. Am I right?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.multi_10")
 			npcHandler:setTopic(playerId, 1)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.say_4")
 		end
 	elseif MsgContains(message, "here") then
-		npcHandler:say({
-			"Only the mighty Efreet, the true djinn of Tibia, may enter Mal'ouquah! ...",
-			"All Marid and little worms like yourself should leave now or something bad may happen. Am I right?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.multi_8")
 		npcHandler:setTopic(playerId, 1)
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
@@ -137,11 +125,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.say_6")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say({
-					"Of cour... Huh!? No!? I can't believe it! ...",
-					"You... you got some nerves... Hmm. ...",
-					"Maybe we have some use for someone like you. Would you be interested in working for us. Helping to fight the Marid?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.multi_4")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.multi_5")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.multi_6")
 				npcHandler:setTopic(playerId, 2)
 			end
 		end
@@ -155,11 +141,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif npcHandler:getTopic(playerId) == 3 then
 		if MsgContains(message, "yes") then
-			npcHandler:say({
-				"Well then - welcome to Mal'ouquah. ...",
-				"Go now to general Baa'leal and don't forget to greet him correctly! ...",
-				"And don't touch anything!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ubaid.multi_3")
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.Faction.EfreetDoor, 1)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.Faction.Greeting, 0)
 		elseif MsgContains(message, "no") then

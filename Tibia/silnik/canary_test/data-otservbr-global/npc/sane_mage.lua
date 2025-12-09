@@ -69,19 +69,15 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "job") then
-		npcHandler:say({
-			"Well I conduct experiments. Viscosity, consistency and overall elegance of {SLIME}. Fungus, I am currently working on a formula for the perfect {slime fungus}.",
-			"Not... right now, though. I am currently... on {vacation}. {Vacation}, yes. All my experiments went wrong. WRONG. Everything. I tried everything but still.",
-			"It's always the same, the {fungus} grows, I am EXCITED and... well... WHAAAAAM! It just EXPLODES! It spreads, covers everything.",
-			"At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
-			"However, sometimes people come and just... DESTROY them! Destroy my work!! Why? Do those people help me removing the slime instead? NO! Not at all.",
-			"All they do is ruining my experiments, my perfect testing conditions. It makes me just FURIOUS! And boy do I get FURIOUS, I tell you.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sane_mage.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sane_mage.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sane_mage.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sane_mage.multi_6")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sane_mage.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sane_mage.multi_8")
 	elseif table.contains({ "slime", "fungus" }, message) then
-		npcHandler:say({
-			"My experiments, my work - not at the moment, however. I'm on vacation. Trying to get away from it... it's all not right. Why... why am I doing this anyway.",
-			"NO! I should not talk like that, I just... I shouldn't. That's not even ME. I... I used to be MAD. A MAD SCIENTIST! THE BEST! THE... the... WORST! A SUPERLATIVE! Ah, nevermind.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sane_mage.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sane_mage.multi_2")
 	end
 	return true
 end

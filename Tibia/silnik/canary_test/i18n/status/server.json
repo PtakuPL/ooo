@@ -1,12 +1,12 @@
 {
   "category": "server",
-  "last_updated": "2025-12-09 03:08:08",
+  "last_updated": "2025-12-09 03:13:32",
   "status": "completed",
   "progress": {
     "percentage": 100,
     "total_keys": 116,
     "translated_pl": 116,
-    "files_processed": 0,
+    "files_processed": 8,
     "files_remaining": 0
   },
   "languages": {

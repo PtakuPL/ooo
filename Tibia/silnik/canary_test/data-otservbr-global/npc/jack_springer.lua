@@ -121,10 +121,8 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "late") then
 		if player:getStorageValue(Storage.Quest.U12_20.GraveDanger.Questline) < 1 then
-			npcHandler:say({
-				"While you travel and fight the threat where it arises, we will put all our resources into researching the ultimate plans of the legion. Perhaps I can tell you more when you {report} back. ...",
-				"Don't forget that you'll need very potent holy water for your task. If you need some, just ask me for a {trade}.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack_springer.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack_springer.multi_12")
 			for _, stor in pairs(storages) do
 				player:setStorageValue(stor, 0)
 			end
@@ -132,10 +130,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U12_20.GraveDanger.Questline, 1)
 			npcHandler:setTopic(playerId, 2)
 		else
-			npcHandler:say({
-				"While you travel and fight the threat where it arises, we will put all our resources into researching the ultimate plans of the legion. Perhaps I can tell you more when you {report} back. ...",
-				"Don't forget that you'll need very potent holy water for your task. If you need some, just ask me for a {trade}.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack_springer.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack_springer.multi_10")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "report") and npcHandler:getTopic(playerId) == 2 then
@@ -178,20 +174,16 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 		end
 	elseif MsgContains(message, "ultimate") and npcHandler:getTopic(playerId) == 3 then
-		npcHandler:say({
-			"It became obvious that their goal is to raise an ancient and fallen king, to lead their lich-knights and raise even more of them. ...",
-			" With each lich-knight being able to raise and control lesser undead, this would lead to a chain-reaction. If they succeed, we might face an undead {threat} not seen since the corpse wars.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack_springer.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack_springer.multi_8")
 		npcHandler:setTopic(playerId, 4)
 	elseif MsgContains(message, "threat") and npcHandler:getTopic(playerId) == 4 then
-		npcHandler:say({
-			"You have to travel to the isle of the kings. There, hidden beneath the isle of the kings is the shamefully hidden grave of king Zelos. It is him, they are trying to raise. ...",
-			"With some luck you will arrive before the ritual's completion. But be warned. At least four risen lich-knights will be present, to raise 'their king'. ...",
-			"Hopefully the ritual will bind some of their powers but they will still be formidable foes. You will have to act quick because with each moment you take to defeat the knights ...",
-			"The ritual will progress and the king will become stronger up to a point where you might be unable to defeat him. Due to the efforts and sacrifices of the death cultists, the king will be active at some capacity and you will have to confront him. ...",
-			"Remember, the further the ritual progresses when you face him, he will become considerably more powerful. So time is of the essence. ...",
-			"All I can do right now is to wish you good luck and may the gods bless you.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack_springer.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack_springer.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack_springer.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack_springer.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack_springer.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack_springer.multi_6")
 		player:setStorageValue(Storage.Quest.U12_20.GraveDanger.Stage, 1)
 		player:setStorageValue(Storage.Quest.U12_20.GraveDanger.Questline, 2)
 	end

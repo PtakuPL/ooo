@@ -78,10 +78,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 then
 		npcHandler:setTopic(playerId, 0)
-		npcHandler:say({
-			"So hereby receive the blessings of the gods, provided by me as the voice of the inquisition! ...",
-			"Go now and search the ancient temple in the north-west part of the drefian ruins. Slay the evil that lurks there and cleanse the foul place from its taint!",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.torkada.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.torkada.multi_2")
 		player:kv():scoped("rotten-blood-quest"):set("access", 1)
 		player:setStorageValue(Storage.Quest.U13_20.RottenBlood.AccessDoor, 1)
 		player:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)

@@ -60,20 +60,16 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "supplies") then
 		if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission01) == 1 then
-			npcHandler:say({
-				"What!? I bet, Baa'leal sent you! ...",
-				"I won't tell you anything! Shove off!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.partos.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.partos.multi_5")
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission01, 2)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.partos.say_1")
 		end
 	elseif MsgContains(message, "ankrahmun") then
-		npcHandler:say({
-			"Yes, I've lived in Ankrahmun for quite some time. Ahh, good old times! ...",
-			"Unfortunately I had to relocate. <sigh> ...",
-			"Business reasons - you know.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.partos.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.partos.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.partos.multi_3")
 	end
 	return true
 end

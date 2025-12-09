@@ -59,10 +59,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.barnabas_dee.say_1")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ThePowderOfTheStars.Mission) < 1 then
-			npcHandler:say({
-				"I am afraid my supplies of peppermoon bell powder have gone flat again. Please provide me with the pollen of this flower. ...",
-				"It only blooms underground in a cavern to the northwest. I will need 15 units of pollen. Bring them to me and we shall conduct a seance.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.barnabas_dee.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.barnabas_dee.multi_8")
 			player:setStorageValue(Storage.Quest.U10_50.OramondQuest.ThePowderOfTheStars.Mission, 1)
 			if player:getStorageValue(Storage.Quest.U10_50.OramondQuest.QuestLine) < 1 then
 				player:setStorageValue(Storage.Quest.U10_50.OramondQuest.QuestLine, 1)
@@ -101,14 +99,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.barnabas_dee.say_6")
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say({
-				"So let us begin. Please concentrate with me. Concentrate! ...",
-				"Concentrate! ...",
-				"Concentrate! ...",
-				"Concentrate! ...",
-				"Concentrate! ...",
-				"Do you feel something?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.barnabas_dee.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.barnabas_dee.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.barnabas_dee.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.barnabas_dee.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.barnabas_dee.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.barnabas_dee.multi_6")
 			npcHandler:setTopic(playerId, 4)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.barnabas_dee.say_7")

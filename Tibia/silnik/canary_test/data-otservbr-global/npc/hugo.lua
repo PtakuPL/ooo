@@ -135,11 +135,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 
 		if player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit) < 1 then
-			npcHandler:say({
-				"I think I'm having an innovative vision! I feel that people are getting tired of attempting to look wealthy and of displaying their treasures. ...",
-				"A really new and innovative look would be - the 'poor man's look'! I can already see it in front of me... yes... a little ragged... but not too shabby! ...",
-				"I need material right now! Argh - the vision starts to fade... please hurry, can you bring me some stuff?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hugo.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hugo.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hugo.multi_6")
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit) > 0 and player:getStorageValue(Storage.Quest.U7_8.BeggarOutfits.BeggarOutfit) < 5 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hugo.say_5")
@@ -165,11 +163,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		topic[playerId] = targetMessage
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"Good! Listen, I need the following material - first, 20 pieces of brown cloth, like the worn and ragged ghoul clothing. ...",
-				"Secondly, 50 pieces of minotaur leather. Third, I need bat wings, maybe 10. And 30 heaven blossoms, the flowers elves cultivate. ...",
-				"Have you noted down everything and will help me gather the material?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hugo.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hugo.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hugo.multi_3")
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:getStorageValue(Storage.OutfitQuest.DefaultStart) ~= 1 then

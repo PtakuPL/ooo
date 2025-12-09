@@ -76,10 +76,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "lamp") then
 		if efreet == 1 or marid == 1 then
 			if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.RecievedLamp) ~= 1 then
-				npcHandler:say({
-					"I can sense your evil intentions to imprison a djinn! You are longing for the lamp, which I still possess. ...",
-					"Who do you want to trap in this cursed lamp?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_orc_king.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_orc_king.multi_2")
 				npcHandler:setTopic(playerId, 1)
 			else
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_orc_king.say_2")

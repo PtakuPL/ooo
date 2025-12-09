@@ -109,10 +109,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:removeItem(3244, 1) then
-				npcHandler:say({
-					"Thank you very much! This brings back good old memories! Please, as a reward, travel to Kazordoon and ask my old friend Kroox to provide you a special dwarven armor. ...",
-					"I will mail him about you immediately. Just tell him, his old buddy Sam is sending you.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.multi_2")
 				player:setStorageValue(Storage.Quest.U7_5.SamsOldBackpack.SamsOldBackpackNpc, 1)
 				player:addAchievement("Backpack Tourist")
 			else

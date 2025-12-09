@@ -72,9 +72,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "pay back") then
-		npcHandler:say({
-			"The repression has taken too long. With our new weapons the respective people will get their just punishment.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_slave.multi_1")
 		if player:getStorageValue(HiddenThreats.CorymRescued02) < 0 then
 			player:setStorageValue(HiddenThreats.CorymRescueMission, player:getStorageValue(HiddenThreats.CorymRescueMission) + 1)
 			player:setStorageValue(HiddenThreats.CorymRescued02, 1)

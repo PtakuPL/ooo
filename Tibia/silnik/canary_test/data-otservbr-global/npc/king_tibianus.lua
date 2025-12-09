@@ -74,7 +74,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		-- Vamos tratar todas condições para YES aqui
 		if npcHandler:getTopic(playerId) == 1 then
 			-- Para o primeiro Yes, o npc deve explicar como obter o outfit
-			npcHandler:say({ "Excellent! Now, let me explain. If you donate 1.000.000.000 gold pieces, you will be entitled to wear a unique outfit. ...", "You will be entitled to wear the {armor} for 500.000.000 gold pieces, {helmet} for an additional 250.000.000 and the {boots} for another 250.000.000 gold pieces. ...", "What will it be?" }, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.king_tibianus.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.king_tibianus.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.king_tibianus.multi_3")
 			npcHandler:setTopic(playerId, 2)
 			-- O NPC só vai oferecer os addons se o player já tiver escolhido.
 		elseif npcHandler:getTopic(playerId) == 2 then

@@ -129,12 +129,15 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "information") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_2")
 	elseif MsgContains(message, "talk") then
-		npcHandler:say({ "Why, certainly! I'm always up for some small talk. ...", "The weather continues just fine here, don't you think? Just the day for a little walk around the town! ...", "Actually, I haven't been around much yet, but I'm looking forward to exploring the city once I've finished trading {token}s." }, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.multi_5")
 	elseif MsgContains(message, "silver") then
 		npc:openShopWindow(creature)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_3")
 	elseif MsgContains(message, "enchant") then
-		npcHandler:say({ "The following items can be enchanted: {pendulet}, {sleep shawl}, {blister ring}, {theurgic amulet}, {ring of souls}. ...", "For sufficient silver tokens you can also enchant: {spiritthorn ring}, {alicorn ring}, {arcanomancer sigil}, {arboreal ring}, {turtle amulet}. Make you choice!" }, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.multi_2")
 		npcHandler:setTopic(playerId, 1)
 	elseif table.contains({ "pendulet", "sleep shawl", "blister ring", "theurgic amulet", "ring of souls", "turtle amulet" }, message:lower()) and npcHandler:getTopic(playerId) == 1 then
 		npcHandler:say("Should I enchant the item " .. message .. " for 2 " .. ItemType(npc:getCurrency()):getPluralName():lower() .. "?", npc, creature)

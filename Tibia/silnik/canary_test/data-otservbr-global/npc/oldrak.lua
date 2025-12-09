@@ -106,11 +106,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Progress) == 2 and player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Done) < 1 then
 			npcHandler:say("You better don't return here until you've defeated the Demon Oak.", npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Done) == 1 then
-			npcHandler:say({
-				"You chopped down the demon oak?!? Unbelievable!! Let's hope it doesn't come back. As long as evil is still existent in the soil of the plains, it won't be over. Still, the demons suffered a setback, that's for sure. ...",
-				"For your brave action, I tell you a secret which has been kept for many many years. There is an old house south of the location where you found the demon oak. There should be a grave with the name 'Yesim Adeit' somewhere close by. ...",
-				"It belongs to a Daramian nobleman named 'Teme Saiyid'. I knew him well and he told me -almost augured- that someone will come who is worthy to obtain his treasure. I'm sure this 'someone' is you. Good luck in finding it!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.multi_3")
 			player:setStorageValue(Storage.Quest.U8_2.TheDemonOak.Done, 2)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then

@@ -74,10 +74,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "tunnel") then
 		if player:getStorageValue(Storage.Quest.U8_4.TheHiddenCityOfBeregar.RoyalRescue) == 1 then
-			npcHandler:say({
-				"There should be a book in our library about tunnelling. I don't have that much time to talk to you about that. ...",
-				"If you want to have some information, you'll just have to find that book. If you need some equipment, go ask Harog. You'll find the library in the north eastern wing of Beregar city.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xorlosh.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.xorlosh.multi_2")
 		end
 	elseif MsgContains(message, "book") then
 		if player:getStorageValue(Storage.Quest.U8_4.TheHiddenCityOfBeregar.RoyalRescue) == 1 then

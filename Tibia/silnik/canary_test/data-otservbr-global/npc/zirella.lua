@@ -131,23 +131,19 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaNpcGreetStorage, 5)
 			storeTalkCid[playerId] = 6
 		elseif storeTalkCid[playerId] == 6 then
-			npcHandler:say({
-				"Thank you darling! My cart is right beside me. It's a little complicated: I need some firewood, but it's very difficult for my slightly advanced age. ...",
-				"Please go into the the forest southeast of here. You will find fine old rotten brown trees. Please RIGHT-CLICK in the lower right corner of that tree and choose 'USE'. That way, a branch should appear on the map. ...",
-				"Don't put it in your inventory like before, but instead DRAG it over the map by LEFT-CLICKING the loose branch, HOLDING the LEFT MOUSE BUTTON and moving it over the map. ...",
-				"When you are close to my cart, USE the branch WITH the cart: RIGHT-CLICK the branch on the floor and select 'USE WITH', Then LEFT-CLICK on the cart. Don't worry, you will see what I mean on the way. Thanks and {bye} for now!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zirella.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zirella.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zirella.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zirella.multi_7")
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaQuestLog, 6)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaNpcGreetStorage, 6)
 			Position(32064, 32273, 7):sendMagicEffect(CONST_ME_TUTORIALARROW)
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		elseif storeTalkCid[playerId] == 7 then
-			npcHandler:say({
-				"Well, you know that old women like me like to talk a lot. If you see three dots at the end of a sentence, I have still something to say and you should not interrupt, like now ...",
-				"Patience is a virtue, young adventurer! So, the quest was to go into the forest south of here and to find a dead tree. Wait, let me continue! ...",
-				"'Use' a tree to break a dry branch from it. Afterwards, drag and drop the branch back to my cart and select 'Use with', then left-click on my cart. Thanks again for offering your help!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zirella.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zirella.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zirella.multi_3")
 			storeTalkCid[playerId] = nil
 		elseif storeTalkCid[playerId] == 8 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zirella.say_7")

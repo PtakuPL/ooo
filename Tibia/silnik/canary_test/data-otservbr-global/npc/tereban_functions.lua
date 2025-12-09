@@ -115,15 +115,13 @@ function ParseTerebanSay(npc, creature, message, npcHandler)
 	if npcHandler:getTopic(playerId) == 0 then
 		if MsgContains(message, "cloak") then
 			if player:getStorageValue(ThreatenedDreams.Mission01[1]) == 12 then
-				npcHandler:say({
-					"I met this troll when he was hanging around near the town. He carried something I would consider rather uncharacteristic for a troll: a stunningly beautiful cloak entirely made of white feathers. I was curious and asked him if he would sell it. ...",
-					"He seemed to be more interested in some of my coins and a piece of meat than in this unusual garment. Therefore, we made a trade: He got some meat and coins and I got the cloak. ...",
-					"I had a clue that it was a magical item but nobody in Edron knew something about it. As I have a very lettered friend in Darashia I took a magical carpet flight to visit him and ask him about the cloak. ...",
-					"But then something very annoying happened: During the flight the wind blew so strongly that it tattered the cloak. Feather after feather was blown off the carpet but I didn't realise it. ...",
-					"When I reached Darashia there was no cloak just a handful of feathers. *sighs* I'm not sure whether it makes sense to search for these feathers. There was a small wind gust when we were still above Edron. ...",
-					"But the actual storm began when we were in the air above the Darama. The feathers are now scattered all over the desert I guess. Rather futile to look out for them but if you really want to try: ...",
-					"The magic carpet made a beeline from Edron to Darashia. You should search along this line on the ground. Good luck!",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tereban_functions.multi_10")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tereban_functions.multi_11")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tereban_functions.multi_12")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tereban_functions.multi_13")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tereban_functions.multi_14")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tereban_functions.multi_15")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tereban_functions.multi_16")
 				player:setStorageValue(ThreatenedDreams.Mission01[1], 13)
 				player:setStorageValue(ThreatenedDreams.Mission01.FeathersCount, 0) -- Start Mission 'Tattered Swan Feathers'
 			else
@@ -140,23 +138,19 @@ function ParseTerebanSay(npc, creature, message, npcHandler)
 				player:setStorageValue(Storage.Quest.U8_6.AFathersBurden.Status, 2)
 				player:addItem(oldCape, 1)
 				player:addExperience(8000, true)
-				npcHandler:say({
-					"I'm so glad I finally have all the parts for the presents. Your reward is my eternal gratitude. Well, that and some gold of course. ...",
-					"Take this sachet over there, I wrapped the coins into this old cape I had still lying around here from a barter with a stranger, it is of no use for me anyway. Farewell and thank you once again.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tereban_functions.multi_8")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tereban_functions.multi_9")
 			elseif player:getStorageValue(Storage.Quest.U8_6.AFathersBurden.Status) == 2 then
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tereban_functions.say_3")
 				return true
 			else
-				npcHandler:say({
-					"I have four sons which are very dear to me. Though they were born on the same day and even in the same hour, they took quite different paths in life. ...",
-					"Each of them chose a different vocation, one will become a knight, one a sorcerer, one a druid, and the other a paladin. In a few weeks they will reach adulthood and I am holding a birthday party for them. ...",
-					"It should become a day to remember and so I want to give them something special as a present. I searched the land for the finest craftsmen so they could create suitable presents for my sons. ...",
-					"But something of fine craftsmanship will just not cut it. So I asked them what they would need to create something special. They all came up with lists of rare and expensive items necessary for the task ahead. ...",
-					"I spent a small fortune to buy most of the materials but in the end the key components are that rare that they cannot be simply bought somewhere. ...",
-					"As far as I understood it, the places where you can get these items are quite dangerous and so it would take some adventurer to get them. ...",
-					"That would be your mission if you are interested. Uhm, so are you interested?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tereban_functions.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tereban_functions.multi_2")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tereban_functions.multi_3")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tereban_functions.multi_4")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tereban_functions.multi_5")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tereban_functions.multi_6")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tereban_functions.multi_7")
 				npcHandler:setTopic(playerId, 1)
 			end
 		elseif TerebanConfig[message:lower()] then

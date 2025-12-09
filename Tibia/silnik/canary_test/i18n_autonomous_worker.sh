@@ -869,13 +869,16 @@ json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
 }
 
 #===============================================================================
-# MIGRACJA WIELOLINIOWYCH TABLIC NPC
+# MIGRACJA WIELOLINIOWYCH TABLIC NPC (PEŁNA)
 #===============================================================================
 # Obsługuje pliki z formatem:
 # npcHandler:say({
 #     "tekst 1 ...",
 #     "tekst 2 ...",
 # }, npc, creature)
+# Zamienia na:
+# NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.name.multi_1")
+# NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.name.multi_2")
 #===============================================================================
 migrate_multiline_npc() {
     local file="$1"
@@ -886,78 +889,20 @@ migrate_multiline_npc() {
     
     log_info "🔷 [NPC-MULTI] $relative_path"
     
-    # Sprawdź czy już przetworzony (używa prawidłowego API)
-    if grep -qE "sendLocalizedTextMessage|NPC_LIB\.i18n\." "$file" 2>/dev/null; then
-        log_info "   ⏭️ Już przetworzony"
-        mark_processed "$file"
+    # Sprawdź czy ma wieloliniowe tablice
+    if ! grep -qE 'npcHandler:say\s*\(\s*\{$' "$file" 2>/dev/null; then
         return 1
     fi
     
-    # Sprawdź czy ma wieloliniowe tablice LUB StdModule.say
-    if ! grep -qE 'npcHandler:say\s*\(\s*\{$|StdModule\.say' "$file" 2>/dev/null; then
-        return 1
-    fi
+    # Użyj dedykowanego skryptu Python do pełnej migracji
+    local result=$(python3 "$WORK_DIR/tools/migrate_multiline_say.py" --file "$file" --i18n-dir "$I18N_DIR" 2>&1)
+    local migrated=$(echo "$result" | grep -oP "strings_migrated': \K[0-9]+" || echo "0")
     
-    # Upewnij się że plik JSON istnieje
-    [ ! -f "$json_file" ] && echo "{}" > "$json_file"
-    
-    # Wyciągnij wszystkie stringi z wieloliniowych tablic (tylko ekstrakcja, bez modyfikacji)
-    local extracted=0
-    
-    # Użyj Python do parsowania wieloliniowych tablic - zmienne przekazane jako argumenty
-    extracted=$(python3 - "$file" "$json_file" "$safe_name" << 'PYEOF'
-import re
-import json
-import os
-import sys
-
-file_path = sys.argv[1]
-json_path = sys.argv[2]
-safe_name = sys.argv[3]
-
-# Wczytaj plik
-with open(file_path, 'r', encoding='utf-8') as f:
-    content = f.read()
-
-# Wczytaj JSON
-if os.path.exists(json_path) and os.path.getsize(json_path) > 2:
-    with open(json_path, 'r', encoding='utf-8') as f:
-        translations = json.load(f)
-else:
-    translations = {}
-
-# Znajdź wszystkie wieloliniowe npcHandler:say({ ... })
-pattern = r'npcHandler:say\s*\(\s*\{([^}]+)\}'
-matches = re.findall(pattern, content, re.DOTALL)
-
-key_counter = 1
-extracted = 0
-
-for match in matches:
-    # Wyciągnij stringi z tablicy
-    strings = re.findall(r'"([^"]+)"', match)
-    for s in strings:
-        if len(s) >= 5:
-            key = f"npc.{safe_name}.multiline_{key_counter}"
-            if key not in translations:
-                translations[key] = s
-                extracted += 1
-            key_counter += 1
-
-# Zapisz JSON
-with open(json_path, 'w', encoding='utf-8') as f:
-    json.dump(translations, f, indent=2, ensure_ascii=False)
-
-print(extracted)
-PYEOF
-2>/dev/null || echo "0")
-    
-    if [ "$extracted" -gt 0 ] 2>/dev/null; then
-        log_success "   📝 Wyciągnięto $extracted kluczy z wieloliniowych tablic"
+    if [ "$migrated" -gt 0 ] 2>/dev/null; then
+        log_success "   ✅ Zmigrowano $migrated wieloliniowych stringów"
         mark_processed "$file"
         return 0
     else
-        mark_excluded "$file"
         return 1
     fi
 }

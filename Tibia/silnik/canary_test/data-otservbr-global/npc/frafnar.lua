@@ -72,10 +72,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.frafnar.say_3")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"Great! That's my breakthrough. Now she can't refuse to go out with me. I grant you access to the western part of the mine.",
-				"So did you tell her that the cake came from me?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.frafnar.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.frafnar.multi_2")
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 3 then

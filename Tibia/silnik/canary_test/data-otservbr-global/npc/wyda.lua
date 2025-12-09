@@ -67,20 +67,16 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "mission") or MsgContains(message, "quest") then
-		npcHandler:say({
-			"A quest? Well, if you're so keen on doing me a favour... Why don't you try to find a {blood herb}?",
-			"To be honest, I'm drowning in blood herbs by now.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyda.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyda.multi_4")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "bloodherb") or MsgContains(message, "blood herb") then
 		if player:getStorageValue(Storage.BloodHerbQuest) == 1 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyda.say_2")
 			npcHandler:setTopic(playerId, 2)
 		else
-			npcHandler:say({
-				"The blood herb is very rare. This plant would be very useful for me, but I don't know any accessible places to find it.",
-				"To be honest, I'm drowning in blood herbs by now. But if it helps you, well yes.. I guess I could use another blood herb...",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyda.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyda.multi_2")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") then

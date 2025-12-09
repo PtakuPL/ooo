@@ -73,23 +73,19 @@ local function creatureSayCallback(npc, creature, type, message)
 	-- Check if the message contains "nomads"
 	if MsgContains(message, "nomads") then
 		if AritosTask <= 0 and player:getItemCount(7533) > 0 then
-			npcHandler:say({
-				"What?? My name on a deathlist which you retrieved from a nomad?? Show me!! ...",
-				"Oh my god! They found me! You must help me! Please !!!! Are you willing to do that?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arito.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arito.multi_7")
 			npcHandler:setTopic(playerId, 1)
 		end
 		-- Check if the message contains "yes"
 	elseif MsgContains(message, "yes") then
 		local topic = npcHandler:getTopic(playerId)
 		if topic == 1 then
-			npcHandler:say({
-				"Thank you thousand times! Well, I think I start telling you what I think they are after...",
-				"You have to know, I was one of them before I opened that shop here. Sure they fear about their hideout being revealed by me. Please go to the north, there is a small cave in the mountains with a rock in the middle. ...",
-				"If you stand in front of it, place a scimitar - which is the weapon of the nomads - left of you and make a sacrifice to the earth by pouring some water on the floor to your right. ...",
-				"The entrance to their hideout will be revealed in front of you. I don't know who is in charge there right now but please tell him that I won't spoil their secret...",
-				"... well, I just told you but anyway .... I won't tell it to anybody else. Now hurry up before they get here!!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arito.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arito.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arito.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arito.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arito.multi_5")
 			if player:getStorageValue(Storage.Quest.U8_1.TibiaTales.DefaultStart) <= 0 then
 				player:setStorageValue(Storage.Quest.U8_1.TibiaTales.DefaultStart, 1)
 			end

@@ -68,10 +68,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"Fine. But the first thing you have to know is that we are not the city's problem. We are just trying to survive. We usually seek shelter in the sewers.",
-				"There we are comparatively warm and safe. At least we were. But recently something has changed. There is {something} in the sewers. And it is hunting us.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_beggar_king.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_beggar_king.multi_2")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "something") then

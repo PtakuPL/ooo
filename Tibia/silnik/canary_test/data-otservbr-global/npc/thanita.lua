@@ -62,12 +62,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	-- Check if the message contains "mission"
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_1.TowerDefenceQuest.Questline) == 1 and player:removeItem(140, 1) then
-			npcHandler:say({
-				"Oh great! Supplies from Carlin! Let me see ...<she digs into the parcel>...ahh, nothing meaningful at all, like always. Well, before I give you the password for the delivery, you have to help me! ...",
-				"I have massive problems with the goblin tribe that lives here. You look strong enough to face their leader but you need to be smart to lure him out. ...",
-				"I heard they don't like fire very much, maybe that's worth a try. Their beds are mostly made of straw which is known as easily inflammable. ...",
-				"The entrance to their cave is at the pond south east of here.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.thanita.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.thanita.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.thanita.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.thanita.multi_4")
 			player:setStorageValue(Storage.Quest.U8_1.TowerDefenceQuest.Questline, 2)
 			player:setStorageValue(Storage.Quest.U8_1.TowerDefenceQuest.Door, 2)
 			npcHandler:setTopic(playerId, 0)

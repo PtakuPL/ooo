@@ -78,11 +78,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zumtah.say_6")
 				npcHandler:setTopic(playerId, 13)
 			elseif npcHandler:getTopic(playerId) == 13 then
-				npcHandler:say({
-					"Oh, excuse me of course, you... wanted to go. Like all... the others. I am sorry, so sorry. You... you can leave. Yes. You can go. You are free. I shall stay here and help every poor soul which ever gets thrown in here from this day onward. ...",
-					"Yes, I will redeem myself. Maybe in another 278 years. ...",
-					"If you want to go, just ask for an {exit} and I will transform you into a creature small enough to fit through that hole over there.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zumtah.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zumtah.multi_2")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zumtah.multi_3")
 				npcHandler:setTopic(playerId, 14)
 			elseif npcHandler:getTopic(playerId) == 14 then
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zumtah.say_7")

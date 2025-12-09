@@ -78,10 +78,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove, 2)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove) == 4 then
-			npcHandler:say({
-				"This lovely, exotic Djinn is a true poet. And he is asking me for a date? Excellent. Now I can finaly dump this human pirate. He was growing to be boring more and more with each day ...",
-				"As a little reward for your efforts I allow you to ride my sea turtles. Just look around at the shores and you will find them.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marina.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marina.multi_5")
 			player:addAchievement("Matchmaker")
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove, 5)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.AccessToLagunaIsland, 1)
@@ -92,11 +90,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marina.say_6")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"<giggles> It's funny how easy it is to get humans to say what you want. Now, proving it will be even more fun! ...",
-				"You want me to touch something gooey, so you have to touch something gooey for me too. <giggles> ...",
-				"I love honey and I haven't eaten it in a while, so bring me 50 honeycombs and worship my beauty a little more, then we will see.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marina.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marina.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marina.multi_3")
 			if player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.DefaultStart) ~= 1 then
 				player:setStorageValue(Storage.Quest.U7_8.FriendsAndTraders.DefaultStart, 1)
 			end

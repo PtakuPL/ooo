@@ -367,22 +367,18 @@ local function creatureSayCallback(npc, creature, type, message)
 			and player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Humans.Mission) == 3
 			and player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.FinalBoss.Mission) < 2
 		then
-			npcHandler:say({
-				"Your actions have weakened the worldly anchors of the enemy and unveiled the source they use to strengthen their cults. ...",
-				"Our circle has used this opportunity to breach their protective shroud and aim a teleporter to this source. I would like to ask you to use it, to travel to this source and destroy it. ...",
-				"But be warned, you will need a group twice as great compared to those with which you defeated the cults. Go now, with my blessings.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gerimor.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gerimor.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gerimor.multi_6")
 			npcHandler:setTopic(playerId, 0)
 			if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.FinalBoss.Mission) < 1 then
 				player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.FinalBoss.Mission, 1)
 				player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.FinalBoss.AccessDoor, 1)
 			end
 		elseif player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.FinalBoss.Mission) == 2 then
-			npcHandler:say({
-				"You have done our world a great favour and reason enough to be proud of yourself. ...",
-				"Although we could not rout out each and every cult and they will soon find another source to fuel their evil, we have dealt the enemy a vital blow that will take time and resources to recouperate from. ...",
-				"You have undoubtedly bought your world some valuable time and weakened the enemy. Take my thanks in behalf of the world and keep up your heroic work. For your reward you must have two free slots. Are you ready to receive it?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gerimor.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gerimor.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gerimor.multi_3")
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then

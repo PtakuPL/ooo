@@ -105,10 +105,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe) < 0 and npcHandler:getTopic(playerId) < 1 then
-		npcHandler:say({
-			"As for myself I haven't been down there. But I heard some disturbing rumours. In these caves are wonderful crystal formations. Some more poetically inclined fellows call them the crystal gardens. ...",
-			"At first glance it seems to be a beautiful - and precious - surrounding. But in truth, deep down in these caverns exists an old evil. Want to hear more?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.multi_9")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.multi_10")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") and player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe) > 0 and player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe) < 3 then
 		npcHandler:say("Hmm. No, I don't think so. I still feel this strange prickling in my toes.", npc, creature)
@@ -120,10 +118,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:say("Protect your ears? Hmm ... Wasn't there some fabulous seafarer who used wax or something to plug his ears? There was a story about horrible bird-women or something ...? No, sounds like hogwash, doesn't it.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say({
-			"The evil I mentioned is a strange crystal, imbued with some kind of unholy energy. It is very hard to destroy, no weapon is able to shatter the thing. Maybe a jarring, very loud sound could destroy it. ...",
-			"I heard of creatures, that are able to utter ear-splitting sounds. Don't remember the name, though. Would you go down there and try to destroy the crystal?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.multi_8")
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 then
 		player:setStorageValue(Storage.Quest.U8_1.TibiaTales.DefaultStart, 1)
@@ -134,22 +130,16 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:say("Great! Good luck and be careful down there!", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "crystals") then
-		npcHandler:say({
-			"In my humble opinion a pirate should win a fortune by boarding ships not by crawling through caves and tunnels. But who am I to bring into question the captain's decision. All I know is that they sell the crystals at a high price. ...",
-			"A certain amount of the crystals is ground to crystal dust with a special kind of mill. Don't ask me why. Some kind of magical component perhaps that they sell to mages and sorcerers.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.multi_6")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "cursed") and player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe) < 0 and npcHandler:getTopic(playerId) < 1 then
-		npcHandler:say({
-			"As for myself I haven't been down there. But I heard some disturbing rumours. In these caves are wonderful crystal formations. Some more poetically inclined fellows call them the crystal gardens. ...",
-			"At first glance it seems to be a beautiful - and precious - surrounding. But in truth, deep down in these caverns exists an old evil. Want to hear more?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.multi_4")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "sounds") then
-		npcHandler:say({
-			"These caves are incredibly beautiful, {crystals} in vibrant colours grow there like exotic flowers. There are more than a few captains who send down their men in order to quarry the precious crystals. ...",
-			"But there are few volunteers. Often the crystal gatherers disappear and are never seen again. Other poor fellows then meet their former shipmates in the form of ghosts or skeletons. It's a {cursed} area, something evil is down there!",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.multi_2")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "job") then
 		npcHandler:say("I'm a pirate. Normally I'm sailing the seas, boarding other ships and gathering treasures. But at the moment my captain graciously assigned me to watch this {cursed} entrance.", npc, creature)

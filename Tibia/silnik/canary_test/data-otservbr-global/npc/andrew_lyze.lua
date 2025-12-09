@@ -119,11 +119,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "monument") and player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.UnsafeRelease.Questline) < 1 then
-		npcHandler:say({
-			"Well, a while ago powerful magic devices were used all around Tibia. These are chargeable compasses. There was but one problem: they offered the possibility to make people rich in a quite easy way. ...",
-			"Therefore, these instruments were very coveted. People tried to get their hands on them at all costs. And so it happened what everybody feared - bloody battles forged ahead. ...",
-			"To put an end to these cruel escalations, eventually all of the devices were collected and destroyed. The remains were buried {deep} in the earth.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.multi_10")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.multi_11")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.multi_12")
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "deep") and npcHandler:getTopic(playerId) == 2 then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.say_1")
@@ -136,11 +134,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "materials") then
 		if npcHandler:getTopic(playerId) == 4 then
-			npcHandler:say({
-				"Only in the cave down there you will find the materials you need to repair the {compass}. Now you know why the entrance is sealed. There's the seal, but I have a deal for you: ...",
-				"I can repair the compass for you if you deliver what I need. Besides the broken compass you have to bring me the following materials: 50 blue glas plates, 15 green glas plates and 5 violet glas plates. ...",
-				"They all can be found in this closed cave in front of you. I should have destroyed this seal key but things have changed. The entrance is opened now, go down and do what has to be done.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.multi_9")
 			player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.UnsafeRelease.Questline, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.UnsafeRelease.Questline) == 1 then
@@ -166,10 +162,8 @@ local function creatureSayCallback(npc, creature, type, message)
 					end
 				end
 
-				npcHandler:say({
-					"Alright, I put the glasses into the right pattern and can repair the compass. ...",
-					"There we are! The next step is the charging of the compass. For this you have to dig three different crystals down there: 5 blue, 3 green and one violet crystal. Are you ready to do that?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.multi_5")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.multi_6")
 				player:addItem(chargeableCompass, 1)
 				player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.UnsafeRelease.Questline, 2)
 				npcHandler:setTopic(playerId, 12)
@@ -178,10 +172,8 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 12 and player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.UnsafeRelease.GotAxe) < 1 then
-			npcHandler:say({
-				"Nice! To do so, take this golden axe and mine the prominent crystals in the cave. Besides, I need a poison gland of quite rare spiders, they are called lucifuga araneae. ...",
-				"These are quite shy, but I have a {bait} for you to lure them. But take care not to face too many of them at once. And hurry, the effect won't last forever!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.multi_4")
 			player:addItem(goldenAxe, 1)
 			player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.UnsafeRelease.GotAxe, 1)
 			npcHandler:setTopic(playerId, 0)
@@ -215,10 +207,8 @@ local function creatureSayCallback(npc, creature, type, message)
 					end
 				end
 
-				npcHandler:say({
-					"I put these crystals onto the top of compass. As you can see, the compass is now pulsating in a warm, violet colour. ...",
-					"Now this compass is ready for usage. It can transfer the bound energy to other inanimate objects to open certain gates or chests.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.multi_2")
 				player:addItem(chargedCompass, 1)
 				player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.UnsafeRelease.Questline, 3)
 				npcHandler:setTopic(playerId, 0)

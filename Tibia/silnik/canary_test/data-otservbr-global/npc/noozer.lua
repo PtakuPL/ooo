@@ -59,13 +59,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "pass") then
-		npcHandler:say({
-			"Yes, yes. Or wait - why do you want to.. ah what does it matter. So you want to get through these {caves}, fine. But be warned! ...",
-			"...wait a second, I lost it. What was I going to say again? Ah yes - DANGEROUS! These. Caves. Are. Dangerous. No way you get out alive. Ever. Again. ...",
-			"Also you should not disturb those... people down there. Yeah. They... hm, wait, they - who are they again? Hey! Who are you? Are you talking to me?! Ah, ah... oh yes, I remember. ...",
-			"Wait - I am the guardian here, yes! The keeper of... something... or another, yes, I... guard this place. With my life. Don't I? Of course! ...",
-			"Is, er... this the moment where I should try to... stop you? Yes? No? Ah, you know what - you go down there, those guys are angry as dung anyway. Try your luck, return to me when you're done. If you still can. Or not.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.noozer.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.noozer.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.noozer.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.noozer.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.noozer.multi_5")
 		if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Misguided.Mission) < 2 then
 			player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Misguided.Mission, 2)
 			player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Misguided.AccessDoor, 1)

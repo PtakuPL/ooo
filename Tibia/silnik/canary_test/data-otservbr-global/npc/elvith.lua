@@ -74,10 +74,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "songs of the forest") then
-		npcHandler:say({
-			"The last issue I had was bought by Randor Swiftfinger. He was banished through the hellgate and probably took the book with him ...",
-			"I would not recommend seeking him or the book there, but of course it is possible.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elvith.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elvith.multi_2")
 	elseif MsgContains(message, "love poem") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elvith.say_17")
 		npcHandler:setTopic(playerId, 1)

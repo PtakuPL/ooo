@@ -66,10 +66,8 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(ThreatenedDreams.Mission01[1]) == 5 then
-			npcHandler:say({
-				"I'm heartbroken, traveler. Some months ago, I was taking care of my three newborn whelps. They just opened their eyes and started exploring the wilderness as a hunter came by. ...",
-				"He shot me and took my three puppies with him. I have no idea where he brought them or whether they are still alive. This uncertainty harrows me and thus I'm unable to find peace. Will you help me?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghostly_wolf.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghostly_wolf.multi_4")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(ThreatenedDreams.Mission01[1]) == 9 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghostly_wolf.say_1")
@@ -84,10 +82,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"I didn't dare hope for it! The man told something about selling my babies to the orcs so they could train them as war wolves. ...",
-				"I guess he mentioned Ulderek's Rock. Please search for them and - be they alive or not - return and tell me what happened to them.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghostly_wolf.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghostly_wolf.multi_2")
 			player:setStorageValue(ThreatenedDreams.Mission01[1], 6)
 			npcHandler:setTopic(playerId, 0)
 		end

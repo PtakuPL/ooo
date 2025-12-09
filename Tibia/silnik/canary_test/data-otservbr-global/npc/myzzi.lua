@@ -72,10 +72,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myzzi.say_2")
 			npcHandler:setTopic(playerId, 3)
 		elseif MsgContains(message, "threat") and npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say({
-				"I know only little and I forget so much. So many things going around my mind! ...",
-				"However, I can grant you access to the {Courts} of Summer and Winter if you promise to help! There you can meet with Undal or Vanys, the servants of Lord Cadion and Lady Alivar. They will be able to tell you more about the issue.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myzzi.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myzzi.multi_2")
 			npcHandler:setTopic(playerId, 4)
 		elseif MsgContains(message, "courts") and npcHandler:getTopic(playerId) == 4 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myzzi.say_3")

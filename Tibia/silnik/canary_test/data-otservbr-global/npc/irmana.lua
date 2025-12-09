@@ -60,11 +60,9 @@ local function creatureSayCallbackFemale(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.say_3")
 		npcHandler:setTopic(playerId, 21)
 	elseif npcHandler:getTopic(playerId) == 21 and MsgContains(message, "yes") then
-		npcHandler:say({
-			"The accessory requires a small fee of 150000 gold pieces. Of course, we do not want to put you at any risk to be attacked while carrying this huge amount of money. ...",
-			"This is why we have established our brand-new instalment sale. You can choose to either pay the price at once, or if you want to be safe, by instalments of 10000 gold pieces. ...",
-			"I also have to inform you that once you started paying for one of the accessories, you have to finish the payment first before you can start paying for the other one, of course. Are you interested in purchasing this accessory?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.multi_13")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.multi_14")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.multi_15")
 		npcHandler:setTopic(playerId, 22)
 	elseif npcHandler:getTopic(playerId) == 22 and MsgContains(message, "yes") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.say_4")
@@ -95,11 +93,9 @@ local function creatureSayCallbackFemale(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.say_11")
 		npcHandler:setTopic(playerId, 27)
 	elseif npcHandler:getTopic(playerId) == 27 and MsgContains(message, "yes") then
-		npcHandler:say({
-			"This accessory requires a small fee of 150000 gold pieces. Of course, we do not want to put you at any risk to be attacked while carrying this huge amount of money. ...",
-			"This is why we have established our brand-new instalment sale. You can choose to either pay the price at once, or if you want to be safe, by instalments of 10000 gold pieces. ...",
-			"I also have to inform you that once you started paying for one of the accessories, you have to finish the payment first before you can start paying for the other one, of course. Are you interested in purchasing this accessory?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.multi_10")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.multi_11")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.multi_12")
 		npcHandler:setTopic(playerId, 28)
 	elseif npcHandler:getTopic(playerId) == 28 and MsgContains(message, "yes") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.say_12")
@@ -140,11 +136,9 @@ local function creatureSayCallbackMale(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.say_19")
 		npcHandler:setTopic(playerId, 11)
 	elseif npcHandler:getTopic(playerId) == 11 and MsgContains(message, "yes") then
-		npcHandler:say({
-			"This accessory requires a small fee of 150000 gold pieces. Of course, we do not want to put you at any risk to be attacked while carrying this huge amount of money. ...",
-			"This is why we have established our brand-new instalment sale. You can choose to either pay the price at once, or if you want to be safe, by instalments of 10000 gold pieces. ...",
-			"I also have to inform you that once you started paying for one of the accessories, you have to finish the payment first before you can start paying for the other one, of course. Are you interested in purchasing this accessory?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.multi_8")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.multi_9")
 		npcHandler:setTopic(playerId, 12)
 	elseif npcHandler:getTopic(playerId) == 12 and MsgContains(message, "yes") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.say_20")
@@ -172,11 +166,9 @@ local function creatureSayCallbackMale(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.say_26")
 		npcHandler:setTopic(playerId, 16)
 	elseif npcHandler:getTopic(playerId) == 16 and MsgContains(message, "yes") then
-		npcHandler:say({
-			"This accessory requires a small fee of 150000 gold pieces. Of course, we do not want to put you at any risk to be attacked while carrying this huge amount of money. ...",
-			"This is why we have established our brand-new instalment sale. You can choose to either pay the price at once, or if you want to be safe, by instalments of 10000 gold pieces. ...",
-			"I also have to inform you that once you started paying for one of the accessories, you have to finish the payment first before you can start paying for the other one, of course. Are you interested in purchasing this accessory?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.multi_6")
 		npcHandler:setTopic(playerId, 17)
 	elseif npcHandler:getTopic(playerId) == 17 and MsgContains(message, "yes") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.say_27")
@@ -208,11 +200,9 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "fur") then
 		if player:getStorageValue(ThreatenedDreams.Mission01[1]) == 7 and player:getStorageValue(ThreatenedDreams.Mission01.PoacherNotes) == 1 then
-			npcHandler:say({
-				"A wolf whelp fur? Well, some months ago a hunter came here - a rather scruffy, smelly guy. I would have thrown him out instantly, but he had to offer some fine pelts. One of them was the fur of a very young wolf. ...",
-				"I was not delighted that he obviously killed such a young animal. When I confronted him, he said he wanted to raise it as a companion but it unfortunately died. A sad story. In the end, I bought some of his pelts, among them the whelp fur. ...",
-				"You can have it if this is important for you. I would sell it for 1000 gold. Are you interested?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.multi_3")
 			npcHandler:setTopic(playerId, 8)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.irmana.say_31")

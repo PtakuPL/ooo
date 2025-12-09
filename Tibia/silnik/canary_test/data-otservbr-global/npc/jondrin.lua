@@ -55,10 +55,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	local playerId = player:getId()
 
 	if MsgContains(message, "necrometer") and player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission09) == 1 and player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission10) < 1 and player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission09) == 1 and player:getStorageValue(Storage.Quest.U10_50.DarkTrails.OramondTaskProbing) == 1 then
-		npcHandler:say({
-			"A necrometer? Have you any idea how rare and expensive a necrometer is? There is no way I could justify giving a necrometer to an inexperienced adventurer. Hm, although ... if you weren't inexperienced that would be a different matter. ...",
-			"Did you do any measuring task for Doubleday lately?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jondrin.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jondrin.multi_2")
 		npcHandler:setTopic(playerId, 1)
 	elseif player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission10) >= 1 then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jondrin.say_1")

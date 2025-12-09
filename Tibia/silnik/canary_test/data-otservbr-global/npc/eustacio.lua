@@ -78,9 +78,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eustacio.say_3")
 	elseif MsgContains(message, "shortcut") then
 		if player:getStorageValue(Storage.Quest.U12_60.APiratesTail.RascacoonShortcut) == 1 then
-			npcHandler:say({
-				"You are trustworthy enough to take my boat. My agent made sure it takes me to their island. Do you want to take it?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eustacio.multi_1")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then

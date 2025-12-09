@@ -187,10 +187,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:sendTutorial(19)
 			storeTalkCid[playerId] = 7
 		elseif storeTalkCid[playerId] == 7 then
-			npcHandler:say({
-				"Here, take this fish which I've caught myself. Find it in your inventory, then 'Use' it to eat it. This will slowly refill your health. ...",
-				"By the way: If your hitpoints are below 150, you will regenerate back to 150 hitpoints after few seconds as long as you are not hungry, outside a protection zone and do not have a battle sign. {Easy}, yes?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.santiago.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.santiago.multi_2")
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoQuestLog, 9)
 			player:addItem(3578, 1)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage, 11)

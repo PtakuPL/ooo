@@ -79,16 +79,14 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"Since you have already proved to be a valuable member of our society, I will happily entrust you with this mission, but there are a few things which you need to know, so listen carefully. ...",
-				"Calassa is an underwater settlement, so you are in severe danger of drowning unless you are well-prepared. ...",
-				"We have developed a new device called 'Helmet of the Deep' which will enable you to breathe even in the depths of the ocean. ...",
-				"I will instruct Captain Max to bring you to Calassa and to lend one of these helmets to you. These helmets are very valuable, so there is a deposit of 5000 gold pieces on it. ...",
-				"While in Calassa, do not take the helmet off under any circumstances. If you have any questions, don't hesitate to ask Captain Max. ...",
-				"Your mission there, apart from observing the Quara, is to retrieve a special logbook from one of the shipwrecks buried there. ...",
-				"One of our last expeditions there failed horribly and the ship sank, but we still do not know the exact reason. ...",
-				"If you could retrieve the logbook, we'd finally know what happened. Have you understood your task and are willing to take this risk?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.berenice.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.berenice.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.berenice.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.berenice.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.berenice.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.berenice.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.berenice.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.berenice.multi_8")
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.berenice.say_6")

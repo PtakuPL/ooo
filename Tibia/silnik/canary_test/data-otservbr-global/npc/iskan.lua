@@ -82,10 +82,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_0.BarbarianTest.Questline) >= 8 then -- if Barbarian Test absolved
 			if player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 1 then
-				npcHandler:say({
-					"Well, one of the boys has run away. I think he got the scent of some beast. He's young and inexperienced so I can't blame the cub ...",
-					"I would like you to see after him. He should be somewhere north west of the town. He is probably marking his territory so you should be able to find his trace. Are you willing to do that?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iskan.multi_3")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iskan.multi_4")
 				npcHandler:setTopic(playerId, 1)
 			elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 2 then
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iskan.say_3")
@@ -109,10 +107,8 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iskan.say_7")
 			end
 		elseif npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"That's surprising. Take a piece of meat. If you find the boy, feed it to him. That will give him enough strength and incentive to return to his pack ...",
-				"Talk to him by calling his name 'Sniffler' and tell him you got meat for him. After he has eaten the meat, return here to talk to me about your mission.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iskan.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iskan.multi_2")
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 1)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission01, 1) -- Questlog The Ice Islands Quest, Befriending the Musher
 			npcHandler:setTopic(playerId, 0)

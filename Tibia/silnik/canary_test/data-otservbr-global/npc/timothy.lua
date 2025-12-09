@@ -60,12 +60,10 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "research notes") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.TheWayToYalahar) == 1 then
-			npcHandler:say({
-				"Oh, you are the contact person of the academy? Here are the notes that contain everything I have found out so far. ...",
-				"This city is absolutely fascinating, I tell you! If there hadn't been all this trouble and chaos in the past, this city would certainly be the greatest centre of knowledge in the world. ...",
-				"Oh, by the way, speaking about all the trouble here reminds me of Palimuth, a friend of mine. He is a native who was quite helpful in gathering all these information. ...",
-				"I'd like to pay him back for his kindness by sending him some experienced helper that assists him in his effort to restore some order in this city. Maybe you are interested in this job?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.timothy.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.timothy.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.timothy.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.timothy.multi_4")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then

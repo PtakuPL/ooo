@@ -68,10 +68,8 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "ring") then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourth.Moe) == 5 then
-			npcHandler:say({
-				"To extract memories from the ring, you have to enter a trance-like state with the help of a hallucinogen. Like this you can see all memories that are stored in the ring. Ask Faloriel for a respective potion. ...",
-				"Drink it while wearing the ring in the Temple of Bastesh and say: 'Sa Katesa Tarsani na'. If the legends are true you will be able to take memories with you in the form of memory shards.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_librarian.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_librarian.multi_2")
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fifth.Memories, 1)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fifth.MemoriesShards, 0)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourth.Moe, 6)

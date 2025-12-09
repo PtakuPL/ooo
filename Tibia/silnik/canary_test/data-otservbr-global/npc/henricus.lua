@@ -90,10 +90,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_6")
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 1 then
-			npcHandler:say({
-				"Let's see if you are worthy. Take an inquisitor's field guide from the box in the back room. ...",
-				"Follow the instructions in the guide to talk to the Thaian guards that protect the walls and gates of the city and test their loyalty. Then report to me about your {mission}.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_44")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_45")
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 2)
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission01, 1) -- The Inquisition Questlog- "Mission 1: Interrogation"
 			npcHandler:setTopic(playerId, 0)
@@ -101,12 +99,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_7")
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 3 then
-			npcHandler:say({
-				"Listen, we have information about a heretic coven that hides in a mountain called the Big Old One. The witches reach this cursed place on flying brooms and think they are safe there. ...",
-				"I've arranged a flying carpet that will bring you to their hideout. Travel to Femor Hills and tell the carpet pilot the codeword 'eclipse' ...",
-				"He'll bring you to your destination. At their meeting place, you'll find a cauldron in which they cook some forbidden brew ...",
-				"Use this vial of holy water to destroy the brew. Also steal their grimoire and bring it to me.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_40")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_41")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_42")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_43")
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 4)
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission02, 1) -- The Inquisition Questlog- "Mission 2: Eclipse"
 			player:addItem(133, 1)
@@ -115,22 +111,18 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_8")
 			npcHandler:setTopic(playerId, 9)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 6 then
-			npcHandler:say({
-				"I think it's time to truly test your abilities. One of our allies has requested assistance. I think you are just the right person to help him ...",
-				"Storkus is an old and grumpy dwarf who works as a vampire hunter since many, many decades. He's quite successful but even hehas his limits. ...",
-				"So occasionally, we send him help. In return he trains and tests our recruits. It's an advantageous agreement for both sides ...",
-				"You'll find him in his cave at the mountain outside of Kazordoon. He'll tell you about your next mission.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_36")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_37")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_38")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_39")
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission03, 1) -- The Inquisition Questlog- "Mission 3: Vampire Hunt"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) > 6 and player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) < 11 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_9")
 			npcHandler:setTopic(playerId, 4)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 11 then
-			npcHandler:say({
-				"We've got a report about an abandoned and haunted house in Liberty Bay. I want you to examine this house. It's the only ruin in Liberty Bay so you should have no trouble finding it. ...",
-				"There's an evil being somewhere. I assume that it will be easier to find the right spot at night. Use this vial of holy water on that spot to drive out the evil being.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_34")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_35")
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 12)
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission04, 1) -- The Inquisition Questlog- "Mission 4: The Haunted Ruin"
 			player:addItem(133, 1)
@@ -139,19 +131,15 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_10")
 			npcHandler:setTopic(playerId, 5)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 14 then
-			npcHandler:say({
-				"You've handled heretics, witches, vampires and ghosts. Now be prepared to face the most evil creatures we are fighting - demons. Your new task is extremely simple, though far from easy. ...",
-				"Go and slay demonic creatures wherever you find them. Bring me 20 of their essences as a proof of your accomplishments.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_32")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_33")
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 15)
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission05, 1) -- The Inquisition Questlog- "Mission 5: Essential Gathering"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 15 then
 			if player:removeItem(6499, 20) then
-				npcHandler:say({
-					"You're indeed a dedicated protector of the true believers. Don't stop now. Kill as many of these creatures as you can. ...",
-					"I also have a reward for your great efforts. Talk to me about your {demon hunter outfit} anytime from now on. Afterwards, let's talk about the next mission that's awaiting you.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_30")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_31")
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 16)
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission05, 2) -- The Inquisition Questlog- "Mission 5: Essential Gathering"
 			else
@@ -159,19 +147,15 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 17 then
-			npcHandler:say({
-				"We've got information about something very dangerous going on on the isle of Edron. The demons are preparing something there ...",
-				"Something that is a threat to all of us. Our investigators were able to acquire vital information before some of them were slain by a demon named Ungreez. ...",
-				"It'll be your task to take revenge and to kill that demon. You'll find him in the depths of Edron. Good luck.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_27")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_28")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_29")
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 18)
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission06, 1) -- The Inquisition Questlog- "Mission 6: The Demon Ungreez"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 19 then
-			npcHandler:say({
-				"So the beast is finally dead! Thank the gods. At least some things work out in our favour ...",
-				"Our other operatives were not that lucky, though. But you will learn more about that in your next {mission}.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_25")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_26")
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 20)
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission06, 3) -- The Inquisition Questlog- "Mission 6: The Demon Ungreez"
 			npcHandler:setTopic(playerId, 0)
@@ -198,10 +182,8 @@ local function creatureSayCallback(npc, creature, type, message)
 				and player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.MilesGuard) == 1
 				and player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.TimGuard) == 1
 			then
-				npcHandler:say({
-					"Indeed, this is exactly what my other sources told me. Of course I knew the outcome of this investigation in advance. This was just a test. ...",
-					"Well, now that you've proven yourself as useful, you can ask me for another mission. Let's see if you can handle some field duty, too.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_23")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_24")
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 3)
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission01, 7) -- The Inquisition Questlog- "Mission 1: Interrogation"
 			else
@@ -228,10 +210,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 6 then
 			if player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 22 then
-				npcHandler:say({
-					"Incredible! You're a true defender of faith! I grant you the title of a High Inquisitor for your noble deeds. From now on you can obtain the blessing of the inquisition which makes the pilgrimage of ashes obsolete ...",
-					"The blessing of the inquisition will bestow upon you all available blessings for the price of 110000 gold. Also, don't forget to ask me about your {outfit} to receive the final addon as demon hunter.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_21")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_22")
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 23)
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission07, 3) -- The Inquisition Questlog- "Mission 7: The Shadow Nexus"
 				player:addAchievement("High Inquisitor")
@@ -300,55 +280,41 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "dark") then
-		npcHandler:say({
-			"The dark powers are always present. If a human shows only the slightest weakness, they try to corrupt him and to lure him into their service. ...",
-			"We must be constantly aware of evil that comes in many disguises.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_19")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_20")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "king") then
-		npcHandler:say({
-			"The Thaian kings are crowned by a representative of the churches. This means they reign in the name of the gods of good and are part of the godly plan for humanity. ...",
-			"As nominal head of the church of Banor, the kings aren't only worldly but also spiritual authorities. ...",
-			"The kings fund the inquisition and sometimes provide manpower in matters of utmost importance. The inquisition, in return, protects the realm from heretics and individuals that aim to undermine the holy reign of the kings.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_16")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_17")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_18")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "banor") then
-		npcHandler:say({
-			"In the past, the order of Banor was the only order of knighthood in existence. In the course of time, the order concentrated more and more on spiritual matters rather than on worldly ones. ...",
-			"Nowadays, the order of Banor sanctions new orders and offers spiritual guidance to the fighters of good.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_14")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_15")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "fardos") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_32")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "uman") then
-		npcHandler:say({
-			"The church of Uman oversees the education of the masses as well as the doings of the sorcerer and druid guilds. It decides which lines of research are in accordance with the will of Uman and which are not. ...",
-			"Concerned, the inquisition watches the attempts of these guilds to become more and more independent and to make own decisions. ...",
-			"Unfortunately, the sorcerer guild has become dangerously influential and so the hands of our priests are tied due to political matters ...",
-			"The druids lately claim that they are serving Crunor's will and not Uman's. Such heresy could only become possible with the independence of Carlin from the Thaian kingdom. ...",
-			"The spiritual centre of the druids switched to Carlin where they have much influence and cannot be supervised by the inquisition.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_9")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_10")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_11")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_12")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_13")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "fafnar") then
-		npcHandler:say({
-			"Fafnar is mostly worshipped by the peasants and farmers in rural areas. ...",
-			"The inquisition has a close eye on these activities. Simply people tend to mix local superstitions with the teachings of the gods. This again may lead to heretical subcults.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_8")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "edron") then
-		npcHandler:say({
-			"Edron illustrates perfectly why the inquisition is needed and why we need more funds and manpower. ...",
-			"Our agents were on their way to investigate certain occurrences there when some faithless knights fled to some unholy ruins. ...",
-			"We were unable to wipe them out and the local order of knighthood was of little help. ...",
-			"It's almost sure that something dangerous is going on there, so we have to continue our efforts.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_6")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "ankrahmun") then
-		npcHandler:say({
-			"Even though they claim differently, this city is in the firm grip of Zathroth and his evil minions. Their whole twisted religion is a mockery of the teachings of our gods ...",
-			"As soon as we have gathered the strength, we should crush this city once and for all.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.multi_2")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

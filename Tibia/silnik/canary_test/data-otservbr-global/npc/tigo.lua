@@ -78,14 +78,12 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tigo.say_2")
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "trial") and npcHandler:getTopic(playerId) == 2 then
-		npcHandler:say({
-			"The trial consists of three steps. The trial of tar, where you will suffer unbearable heat and embrace the stigma of misfortune. ...",
-			"The trial of sulphur, where you will bathe in burning sulphur and embrace the stigma of vanity. Then, there is the trial of purification. The truest of us will be purified to face judgement from the {Penitent}.",
-			"To purge your soul, your body will have to be near absolute zero, the point where life becomes impossible. ...",
-			"Something about you is different.  I know that you will find a way to return even if you should die during the purification. And if you do... Leiden will become aware of you and retreat. ...",
-			"If he does, follow him into his own chambers. Barkless are neither allowed to go near the throne room, aside from being judged, nor can we actually enter it.",
-			"He should be easy to defeat with his back to the wall, find him - and delvier us from whatever became of the Penitent.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tigo.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tigo.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tigo.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tigo.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tigo.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tigo.multi_6")
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Barkless.TrialAccessDoor, 1)
 		npcHandler:setTopic(playerId, 0)
 	end

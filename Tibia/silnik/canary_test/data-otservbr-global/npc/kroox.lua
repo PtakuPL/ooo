@@ -59,10 +59,8 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "sam sent me") or MsgContains(message, "sam send me") then
 		if player:getStorageValue(Storage.Quest.U7_5.SamsOldBackpack.SamsOldBackpackNpc) == 1 then
-			npcHandler:say({
-				"Oh, so its you, he wrote me about? Sadly I have no dwarven armor in stock. But I give you the permission to retrive one from the mines. ...",
-				"The problem is, some giant spiders made the tunnels where the storage is their new home. Good luck.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.kroox.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.kroox.multi_2")
 			player:setStorageValue(Storage.Quest.U7_5.SamsOldBackpack.SamsOldBackpackNpc, 2)
 			player:setStorageValue(Storage.Quest.U7_5.SamsOldBackpack.SamsOldBackpackDoor, 1)
 		end

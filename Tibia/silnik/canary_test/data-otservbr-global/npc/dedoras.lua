@@ -97,16 +97,12 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "search") then
-		npcHandler:say({
-			"I gathered some lore on my own, but I desperately need more information that you might provide me. ...",
-			"My leads are the {museum} in thais, something strange in the darashian {desert}, rumors about {fishmen}, an ancient {order}, the mysterious {asuri}, or a lost {isle}?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_18")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_19")
 	elseif MsgContains(message, "museum") then
 		if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.Questline) == 7 then
-			npcHandler:say({
-				"This is ...",
-				"An astonishing find to say the least! I'm certain it will help the efforts of accessing the library a lot!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_16")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_17")
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.LibraryPermission, currentStorage + 1)
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.MoTA.Questline, 8)
 		elseif player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.Questline) < 1 then
@@ -128,10 +124,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.LibraryPermission, currentStorage + 1)
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.LiquidDeath.Questline, 8)
 		elseif player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.LiquidDeath.Questline) < 1 then
-			npcHandler:say({
-				"Sightings of strange fishmen in Tiquanda are stirring up the region. You should be careful when investigating this. ...",
-				"As far as I know a scholar in Edron already dealt with fish-like creatures before.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_14")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_15")
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.LiquidDeath.Questline, 1)
 		end
 	elseif MsgContains(message, "order") then
@@ -140,10 +134,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.LibraryPermission, currentStorage + 1)
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.FalconBastion.Questline, 3)
 		elseif player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.FalconBastion.Questline) < 1 then
-			npcHandler:say({
-				"Our world has seen many noble knights and orders throughout the centuries. Most of them vanished a long time ago but only few under such mysterious circumstances as the Order of the Falcon. ...",
-				"This noble alliance of honourable knights once resided in Edron to serve the king. Legend has it they vanished practically over night. Rumor has it their disappearance is connected to a forbidden book.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_12")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_13")
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.FalconBastion.Questline, 1)
 		end
 	elseif MsgContains(message, "asuri") then
@@ -152,10 +144,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.LibraryPermission, currentStorage + 1)
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.Asuras.Questline, 7)
 		elseif player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.Asuras.Questline) < 1 then
-			npcHandler:say({
-				"There's a beautiful but very dangerous palace in the Tiquandan jungle. The young women who live there are actually demons and they are luring unsuspecting mortals in there. ...",
-				"A lucky survivor told me about a portal at the very top of the palace that may lead to another asuri hideout.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_11")
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.Asuras.Questline, 1)
 		end
 	elseif MsgContains(message, "isle") then
@@ -169,22 +159,18 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "progress") then
 		if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.LibraryPermission) < 6 then
-			npcHandler:say({
-				"About what of your mission s do you want to report? The {museum}, the darashian {desert}, the rumors about strange {fishmen}, the ancient {order}, the mysterious {asuri}, or the lost {isle}? ...",
-				"Or shall me {check} how much information we acquired?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_9")
 		end
 	elseif MsgContains(message, "check") then
 		if isQuestDone(player:getId()) and player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.LibraryPermission) == 6 then
-			npcHandler:say({
-				"Marvellous! With this information combined we have all that's needed! ...",
-				"So let me see. ...",
-				"Hmm, interesting. And we shouldn't forget about the chant! Yes, excellent! ...",
-				"So listen: To enter the veiled library, travel to the white raven monastery on the Isle of Kings and enter its main altar room. ...",
-				"There, use an ordinary scythe on the right of the two monuments, while concentrating on this glyph here and chant the words: Chamek Athra Thull Zathroth ...",
-				"Oh, and one other thing. For your efforts I want to reward you with one of my old outfits, back from my adventuring days. May it suit you well! ...",
-				"Hurry now my friend. Time is of essence!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.multi_7")
 			player:addOutfit(1069, 0)
 			player:addOutfit(1070, 0)
 			player:addAchievement("Battle Mage")

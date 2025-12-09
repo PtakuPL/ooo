@@ -63,11 +63,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "balance") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"To be honest, I don't care too much about that spiritual balance thing. Better talk to {Benevola} about such things. ...",
-				"As a matter of fact though, if too many animals are killed, things might rapidly change for the worse. ...",
-				"So it's only practical thinking to keep the balance in mind as long as I can afford it.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.huntsman.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.huntsman.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.huntsman.multi_3")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "benevola") then

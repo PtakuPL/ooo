@@ -112,10 +112,8 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.say_3")
 				npcHandler:setTopic(playerId, 5)
 			elseif npcHandler:getTopic(playerId) == 5 then
-				npcHandler:say({
-					"So... so this wasn't EVEN REAL? You brought all this ugly furniture here, you destroyed my sculpture... and on top of that you actually CONVINCED mother and my sister!? How can I possibly explain all that? ...",
-					"I... I... Well, at least you told me the truth. I don't know if I can accept this as an excuse but it's a start. Now let me return to my work, I need to fix this statue and then the rest of this... mess.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_8")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_9")
 				player:addAchievement("Truth Be Told")
 				player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine, 11)
 				player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.LastMissionState, 1)
@@ -124,16 +122,12 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"Oh hm, I've got a handkerchief here somewhere - ah, oh no it's already used, I'm sorry. So, you say that's a real person? Spectulus? I mean - what kind of weirdo thinks of a name like that anyway. ...",
-				"And he does what? Hm. Here in Edron? I see. And I was - what? No way. Where? What! Why? And you say you are telling the truth?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_7")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"I see. Well for starters, I think you're crazy. If I would have 'travelled' in some kind of - device? - that thing should be around here somewhere, or not? ...",
-				"What? 'Dimensional fold?' Well, thanks for the information and please close the door behind you when you leave my house. Now.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_5")
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine, 2)
 		end
@@ -153,11 +147,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "hobbies") or MsgContains(message, "hobby") then
 		if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 7 then
 			if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.Statue) < 0 then
-				npcHandler:say({
-					"Ah, also a keen lover of arts I assume? You might have already caught a glimpse of that humble masterpiece over there in the corner - I sculpt sulky sculptures! ...",
-					"Sculpting sculptures was my passion since childhood... ...and it was there at my first sandcastle when... ...and it formed... ...and it developed into... ...years of enduring sculpting... ...carved of something like... ...sulky... ...",
-					"And that's what I like to do to this very day - hey, hey will you wake up? Were you even listening to me?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_2")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_3")
 				player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.Statue, 1)
 				npcHandler:setTopic(playerId, 0)
 			end

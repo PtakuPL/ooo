@@ -60,19 +60,15 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "experiment") then
 		if player:getStorageValue(Storage.Quest.U10_50.OramondQuest.Probing.Mission) == -1 then
-			npcHandler:say({
-				"Yes, well I am working on something very time-consuming at the moment. You see, a lot of us don't have time to go out much, to converse even just to meet and talk about recent discoveries. ...",
-				"So I thought about a device to help communication in this wonderful city. I already had a helper, he was easily... 'stressed' and quit. Didn't have time to find a new one. ...",
-				"So, if you'd like to help - there is a lot to do for me to bring my plans to fruition - and if you help me, you will earn my {votes} for the {magistrate} in turn! Are you in?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.multi_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.multi_12")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"Good! Quite good! You know, there are actually several things I want you to address. ...",
-				"First, there is the problem with {communication}, second I need someone to {probe} part of the sewers and last - {combinatorics}!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.multi_9")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.say_1")
@@ -106,17 +102,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "probe") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"Because of my {experiments} with the {glooth}, some things in the new sewers of Rathleton aren't exactly 'in order' anymore - if you follow me. A sort of mushroom has formed down there and some... 'things' now nest in the lower drainage areas. ...",
-				"Could you please just go down there and check if this is caused by... my... version of the {glooth}? You know, just some experiments I did to alter the basic elemental structure of the {glooth}, nothing personal. ...",
-				"If you'd just take this very tiny probing device I designed to analyse the {coloured glooth} and, you know, go down there and place it - oh, and I'll also give you this really tiny {detector}, modified to find a spot where to place the {probe} - so?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.multi_7")
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U10_50.OramondQuest.Probing.Mission) == 2 then
-			npcHandler:say({
-				"Very good, these readings do tell me a lot - the coloured glooth may be instable but it has some... 'interesting' effects on its surroundings. Oh - no worries, you will be perfectly safe. I will also take back my detector now, thanks. ..",
-				"Feel free to help me deploy more probes whenever you like.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.multi_4")
 			player:setStorageValue(Storage.Quest.U10_50.OramondQuest.Probing.Mission, 3)
 			player:setStorageValue(Storage.Quest.U10_50.DarkTrails.OramondTaskProbing, 1)
 			npcHandler:setTopic(playerId, 0)
@@ -141,10 +133,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "mono detector") then
 		if player:getStorageValue(Storage.Quest.U10_50.OramondQuest.Probing.MonoDetector) <= os.time() then
-			npcHandler:say({
-				"To actually 'find' a suitable location to deploy the probing device for my measurements, you should use my mono detector. The device detects singular chemical structures of any material or fabric I feed it with and signals it! ...",
-				"If you have lost your detector or your probing device, I can hand out another - it will take some time, however. Do you need a new one?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.multi_2")
 			npcHandler:setTopic(playerId, 9)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.say_9")

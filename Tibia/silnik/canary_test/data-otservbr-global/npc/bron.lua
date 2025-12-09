@@ -73,10 +73,8 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if table.contains({ "recruitment", "violence", "outfit", "addon" }, message) then
 		if player:getStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon) < 1 then
-			npcHandler:say({
-				"Convincing Ajax that it is not always necessary to use brute force... this would be such an achievement. Definitely a hard task though. ...",
-				"Listen, I simply have to ask, maybe a stranger can influence him better than I can. Would you help me with my brother?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.multi_16")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.multi_17")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "brother is right. fist not always good.") then
@@ -86,10 +84,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "person") then
 		if npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say({
-				"This... person... makes me want to... say something bad... must... control myself. <sweats> I really don't know what to do anymore. ...",
-				"I wonder if Ajax has an idea. Could you ask him about Gelagos?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.multi_14")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.multi_15")
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "fighting spirit") then
@@ -117,14 +113,12 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"Really! That is such an incredibly nice offer! I already have a plan. You have to teach him that sometimes words are stronger than fists. ...",
-				"Maybe you can provoke him with something to get angry, like saying... 'MINE!' or something. But beware, I'm sure that he will try to hit you. ...",
-				"Don't do this if you feel weak or ill. He will probably want to make you leave by using violence, but just stay strong and refuse to give up. ...",
-				"If he should ask what else is necessary to make you leave, tell him to 'say please'. Afterwards, do leave and return to him one hour later. ...",
-				"This way he might learn that violence doesn't always help, but that a friendly word might just do the trick. ...",
-				"Have you understood everything I told you and are really willing to take this risk?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.multi_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.multi_12")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.multi_13")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.say_7")
@@ -135,19 +129,15 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon, 4)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon) == 6 and npcHandler:getTopic(playerId) == 0 then
-			npcHandler:say({
-				"I'm impressed... I am sure this was Ajax' idea. I would love to give him a present, but if I leave my hut to gather ingredients, hewill surely notice. ...",
-				"Would you maybe help me again, one last time, my friend? I assure you that your efforts will not be in vain.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.multi_7")
 			npcHandler:setTopic(playerId, 6)
 		elseif npcHandler:getTopic(playerId) == 6 then
-			npcHandler:say({
-				"Great! You see, I really would love to sew a nice shirt for him. I just need a few things for that, so please listen closely: ...",
-				"He loves green and red, so I will need about 50 pieces of red cloth - like the material heroes make their capes of - and 50 pieces of the green cloth Djinns like. ...",
-				"Secondly, I need about 10 rolls of spider silk yarn. I think mermaids can yarn silk of large spiders to create a smooth thread. ...",
-				"The only remaining thing needed would be a bottle of warrior's sweat to spray it over the shirt... he just loves this smell. ...",
-				"Have you understood everything I told you and are willing to handle this task?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.multi_5")
 			npcHandler:setTopic(playerId, 7)
 		elseif npcHandler:getTopic(playerId) == 7 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bron.say_9")

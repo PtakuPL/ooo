@@ -135,19 +135,15 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:getSex() == PLAYERSEX_MALE then
-				npcHandler:say({
-					"I can mix a secret potion which will increase your facial hair growth enormously. I call it 'Instabeard'. However, it requires certain ingredients. ...",
-					"For the small fee of 20000 gold pieces I will help you mix this potion. Just bring me 100 pieces of ape fur, which are necessary to create this potion. ...",
-					"Do we have a deal?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.simon_the_beggar.multi_13")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.simon_the_beggar.multi_14")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.simon_the_beggar.multi_15")
 				npcHandler:setTopic(playerId, 2)
 			else
-				npcHandler:say({
-					"I can mix a secret potion which increases facial hair growth enormously. I call it 'Instabeard'. However, I fear it works only for men. ...",
-					"Even if it worked on girls, I'd rather not be responsible for you ruining your pretty face. I have an idea though. If you help me brew one of these potions, I will sell something nice to you. ...",
-					"I still have a pretty gypsy dress and a pearl necklace somewhere, which you could wear instead of this ragged skirt. For the small fee of 20000 gold pieces, it'd be yours. ...",
-					"You only have to bring me 100 pieces of ape fur, so I can brew the potion. Do we have a deal?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.simon_the_beggar.multi_9")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.simon_the_beggar.multi_10")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.simon_the_beggar.multi_11")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.simon_the_beggar.multi_12")
 				npcHandler:setTopic(playerId, 2)
 			end
 		elseif npcHandler:getTopic(playerId) == 2 then
@@ -189,11 +185,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 5 then
-			npcHandler:say({
-				"When I was wandering around in Tibia, I lost my favourite staff somewhere in the northern ruins in Edron. ...",
-				"Uh, don't ask me what I was doing there... sort of a pilgrimage. Well anyway, if you could bring that staff back to me, I promise I'll give you my current one. ...",
-				"What do you say?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.simon_the_beggar.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.simon_the_beggar.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.simon_the_beggar.multi_8")
 			npcHandler:setTopic(playerId, 6)
 		elseif npcHandler:getTopic(playerId) == 6 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.simon_the_beggar.say_16")
@@ -250,11 +244,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addAchievement("Allow Cookies?")
 			end
 			npc:getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)
-			npcHandler:say({
-				"Well, it's the least you can do for those who live in dire poverty.",
-				"A single cookie is a bit less than I'd expected, but better than ... WHA ... WHAT??",
-				"MY BEARD! MY PRECIOUS BEARD! IT WILL TAKE AGES TO CLEAR IT OF THIS CONFETTI!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.simon_the_beggar.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.simon_the_beggar.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.simon_the_beggar.multi_5")
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		elseif npcHandler:getTopic(playerId) == 9 then
@@ -271,10 +263,8 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
-			npcHandler:say({
-				"That's great! I have stolen something from Dermot.",
-				"You can buy it for 200 gold. Do you want to buy it?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.simon_the_beggar.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.simon_the_beggar.multi_2")
 			npcHandler:setTopic(playerId, 11)
 		elseif npcHandler:getTopic(playerId) == 11 then
 			if not player:removeMoneyBank(200) then

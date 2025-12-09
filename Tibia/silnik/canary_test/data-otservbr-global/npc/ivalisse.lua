@@ -65,47 +65,39 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.say_2")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "imbuing") or MsgContains(message, "imbuements") then
-		npcHandler:say({
-			"The astral Shapers had many ways to shape and refine weapons and equipment. They built shrines dedicated to this world's energies, focussing it and utilising it like a tool to enhance objects. ...",
-			"They called this process imbuing and perfected it throughout time. Remains of these shrines are scattered all over Tibia. ...",
-			"If you truly want to master this art, you will need to visit the various ancient sites related to the original Shaper imbuements. There is one for each element and we know of at least one other besides these. ...",
-			"The discovery of the foundations of this very temple we are standing in, was the key to access their legacy. It is now the center of all our efforts in getting closer to the astral predecessors. ...",
-			"They found ways to connect various sites with a system of gates, all concentrating energy to allow travel to far away places. The more we learn, the more we can restore of these ancient gateways. ...",
-			"We see the gates as an invitation, use them to your advantage and follow the ways of the Shapers. Access to one of these ancient shrines is the only way to learn additional imbuements. ...",
-			"But beware, as far as we know, some of them have been claimed by other ancient beings and there is now way for us to prepare you what lies beyond any of those gates.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_14")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_15")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_16")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_17")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_18")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_19")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_20")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "father") and npcHandler:getTopic(playerId) == 1 then
 		if player:getStorageValue(Storage.Quest.U8_54.TheNewFrontier.Questline) == 29 then
-			npcHandler:say({
-				"Papa- my father has recently started an adventure on his own. His name is Silus; he is a member of the Edron academy. ...",
-				"Ever since he joined what he called a 'special research division', he went on and on about Zao and how venturing there would help him get ahead. ...",
-				"You must know he lives for science, especially concerning faraway lands and cultures. He talked about the importance of practical field studies but, frankly, he isn't particularly cut out for that. ...",
-				"I know he has to focus to get his research done right now, and I simply cannot leave my duties in the temple. You seem like a person who travels a lot; would you be willing to help me?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_12")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_13")
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.Ivalisse) == 1 or player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.Chalice) == 1 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.say_3")
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.DragonkingKilled) >= 1 and player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.Ivalisse) < 1 then
-			npcHandler:say({
-				"What? You're telling me you found father? How is he? What did papa say? A chalice? As a disguise? The whole time? ...",
-				"Well, I am not as much surprised as I am happy to hear that he's alright. You know, after the incident with the duck and the umbrella—it doesn't get to me that easily anymore. ...",
-				"Thank you very much for doing all this for me; I will be forever grateful. I have nothing to repay you with, but you are already blessed to have been able to lay eyes on the sacred Shaper ruins.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_9")
 			player:setStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.Ivalisse, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"Thank you! He told me the other researchers in his team discovered a bridge leading to a cave with a dragon sculpture somewhere in a muggy, grassy area. ...",
-				"The cave is said to lead to a temple complex underground which is ued as a gathering place for a race called 'draken'. He left right away and tried to enter Zao on his own. ...",
-				"I was even more worried when he explained the route he chose. he wanted to head straight through a giant steppe and through a massive mountainous ridge to reach the grassy plains of lower Zao. ...",
-				"If you're interested: I know that the Shapers where active in all corners of Tibia. If you happen to find Shaper ruins there, you may even be able to gather some of their lost knowledge. ...",
-				"I may have been a bit stubborn and angry the day he left, I even refused to say farewell. And now I worry if he is safe. ...",
-				"I can not do much to help you but I can open a portal to get you quite close to his last known location in Zao. What do you say, will you help me find my father?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.multi_6")
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.say_4")

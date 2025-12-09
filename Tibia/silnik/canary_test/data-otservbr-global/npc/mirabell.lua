@@ -96,10 +96,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addItem(119, 1)
 			player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.PieBuying, player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.PieBuying) - 1)
 			player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.PieBoxTimer, os.time() + 1200) -- 20 minutes to deliver
-			npcHandler:say({
-				"Here they are. Wait! Two things you should know: Firstly, they won't last long in the sun so you better get them to their destination as quickly as possible ...",
-				"Secondly, since my pies are that delicious it is forbidden to leave the town with them. We can't afford to attract more tourists to Edron.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mirabell.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mirabell.multi_2")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then

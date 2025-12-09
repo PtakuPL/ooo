@@ -65,21 +65,19 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline) == 27 then
 		if (message == "SOLOSARASATIQUARIUM") and player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.InterdimensionalPotion) == 1 then
-			npcHandler:say({
-				"Dragon dreams are golden. ...",
-				"A broad darkness surrounds you as if a heavy curtain is closing before your eyes. After what seems like minutes of floating through emptiness, you get the feeling as if a hole opens in the dark before you. ...",
-				"The hole grows larger, you cannot close your eyes. An unimaginable black. Deeper and darker than any nothingness you could possibly imagine drags you into it. ...",
-				"You feel as if you cannot breathe anymore. The very second you let loose of your consciousness, you sense all heaviness around you lifted. ...",
-				"You dive into an ocean of emerald light. Feeling like born anew the colour around you is almost overwhelming. Countless objects of all shapes and sizes are dashing past you. Racing against each other, millions are clashing in the distance. ..",
-				"The loudness of the gargantuan spectacle around you bursts your hearing, yet you absorb all the sounds around you. ...",
-				"As several large obstacles move aside directly in front of you, an intense bright centre leaps into your view. Though you cannot perceive how fast you are, your pace seems too slow. ...",
-				"Ever decelerating, you ultimately approach a middle in this chaos of tones of green. ...",
-				"As you come closer to it, yellowish shades of orange embrace you, softer shapes emerge and you almost forget the mayhem before. In warm comfort you see what lies in the heart of it all. ...",
-				"A majestic dragon in his sleep is surrounded by what seems the warmth and energy of a thousand suns. The tranquillity of its sight makes you smile gently. ...",
-				"You feel a perfect mixture of joy, compassion and sudden peacefulness. Bright xanthous impressions of topaz, orange and white welcome you at the final halt of your journey. ...",
-				"Dragon dreams are golden. ...",
-				"You find yourself inside the dragon's dream. You can {look} around or {go} into a specific direction. You can also {take} or {use} an object. Enter {help} to display this information at any time.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_21")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_22")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_23")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_24")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_25")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_26")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_27")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_28")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_29")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_30")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_31")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_32")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_33")
 			npcHandler:setTopic(playerId, 1)
 		elseif message:lower() == "help" and npcHandler:getTopic(playerId) > 0 and npcHandler:getTopic(playerId) < 34 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_1")
@@ -126,19 +124,15 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_15")
 			npcHandler:setTopic(playerId, 15)
 		elseif message:lower() == "take mirror" and npcHandler:getTopic(playerId) == 15 then
-			npcHandler:say({
-				"As your eyes adjust to the sudden reduction of brightness, you see the giant wings of the gate before you move to the side. You can also make out something shiny on the ground.",
-				"You pick the mirror from the ground.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_19")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_20")
 			npcHandler:setTopic(playerId, 16)
 		elseif message:lower() == "north" and npcHandler:getTopic(playerId) == 16 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_16")
 			npcHandler:setTopic(playerId, 17)
 		elseif message:lower() == "use model" and npcHandler:getTopic(playerId) == 17 then
-			npcHandler:say({
-				"You lunge out and throw the model far into the water. As nothing happens, you turn your back to the ocean. ...",
-				"The very moment you walk down the dune to head back south, rays of light burst over your head in a shock wave that makes you tumble down the rest of the hill. ...",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_17")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_18")
 			npcHandler:setTopic(playerId, 18)
 		elseif message:lower() == "south" and npcHandler:getTopic(playerId) == 18 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_17")
@@ -183,15 +177,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_30")
 			npcHandler:setTopic(playerId, 32)
 		elseif message:lower() == "use mirror" and npcHandler:getTopic(playerId) == 32 then
-			npcHandler:say({
-				"With your eyes covered and avoiding direct sight of the rays, you put the mirror into the stand. ...",
-				"Instinctively you run to a larger emerald bluff near the raise to find cover. Mere seconds after you claimed the sturdy shelter, a deep dark humming starts to swirl through the air. ...",
-				"Seconds pass as the hum gets louder. The noise is maddening, drowning all other sounds around you. As you cover your ears in pain, the humming explodes into a deafening growl. ...",
-				"You raise your head above the edge of the emerald to catch a glimpse of what's happening. ...",
-				"The hand seems to have grown into a fist. In the distance you can now see a blurry scheme of a creature too large for your eyes to get a sharper view of its head. ...",
-				"Blending the rays, the mirror directs pure white light directly towards the part where you assume the face of the creature. ...",
-				"The growl transforms into a scream, everything around you seems to compress. As you press yourself tightly against the bluff, everything falls silent and in a split second, the dark being dissolves into bursts of blackness. You wake.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_12")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_13")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_14")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_15")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_16")
 			player:addAchievement("Wayfarer")
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline, 28)
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission09, 2) --Questlog, Wrath of the Emperor "Mission 09: The Sleeping Dragon"
@@ -201,21 +193,17 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "wayfarer") then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_31")
 		elseif MsgContains(message, "mission") then
-			npcHandler:say({
-				"Aaaah... free at last. Hmmm. ...",
-				"I assume you need to get through the gate to reach the evildoer. I can help you if you trust me, wayfarer. I will share a part of my mind with you which should enable you to step through the gate. ...",
-				"This procedure may be exhausting. Are you prepared to receive my key?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_9")
 			npcHandler:setTopic(playerId, 41)
 		elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 41 then
-			npcHandler:say({
-				"SAETHELON TORILUN GARNUM. ...",
-				"SLEEP. ...",
-				"GAIN. ...",
-				"RISE. ...",
-				"The transfer was successful. ...",
-				"You are now prepared to enter the realm of the evildoer. I am grateful for your help, wayfarer. Should you seek my council, use this charm I cede to you. For my spirit will guide you wherever you are. May you enjoy a sheltered future, you shall prevail.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.multi_6")
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline, 29)
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission10, 1) --Questlog, Wrath of the Emperor "Mission 10: A Message of Freedom"
 			player:addItem(10343, 1)

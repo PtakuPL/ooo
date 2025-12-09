@@ -78,13 +78,11 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.TheWayToYalahar) < 1 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) >= 5 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.JoiningTheExplorers) >= 5 then
-			npcHandler:say({
-				"There is indeed something that needs our attention. In the far north, a new city named Yalahar was discovered. It seems to be incredibly huge. ...",
-				"According to travelers, it's a city of glory and wonders. We need to learn as much as we can about this city and its inhabitants. ...",
-				"Gladly the explorer's society already sent a representative there. Still, we need someone to bring us the information he was able to gather until now. ...",
-				"Please look for the explorer's society's captain Maximilian in Liberty Bay. Ask him for a passage to Yalahar. There visit Timothy of the explorer's society and get his research notes. ...",
-				"It might be a good idea to explore the city a bit on your own before you deliver the notes here, but please make sure you don't lose them.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.multi_8")
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.TheWayToYalahar, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
@@ -103,11 +101,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:getStorageValue(TheNewFrontier.Mission05.Wyrdin) == 2 and player:removeItem(10025, 1) then
-				npcHandler:say({
-					"By Uman! That's one of the rare almanacs of Origus! I had no idea that you are a scholar yourself! And a generous one on top of it! ...",
-					"This book must be worth some thousand crystal coins on the free market. Look at the signature here, it's Origus' very own! ...",
-					"Of course we should talk again about your request. What do you say makes Farmine important?",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.multi_2")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.multi_3")
 				player:setStorageValue(TheNewFrontier.Mission05.Wyrdin, 1)
 				npcHandler:setTopic(playerId, 2)
 			end

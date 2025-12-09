@@ -59,17 +59,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jacob.say_1")
 			npcHandler:setTopic(playerId, 7)
 		elseif player:getStorageValue(Storage.Quest.U10_50.OramondQuest.TheAncientSewers.Mission) < 22 then
-			npcHandler:say({
-				"You want to enter the abandoned sewers? That's rather dangerous and not a good idea, man. That part of the sewers was not sealed off for nothing, you know? ...",
-				"But hey, it's your life, bro. So here's the deal. I'll let you into the abandoned sewers if you help me with our {mission}.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jacob.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jacob.multi_7")
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U10_50.OramondQuest.TheAncientSewers.Mission) == 22 then
-			npcHandler:say({
-				"Wow, you already did it, that's fast. I'm used to a more laid-back attitude from most people. It's a shame to risk losing you to some collapsing tunnels, but a deal is a deal. ...",
-				"I hereby grant you the permission to enter the abandoned part of the sewers. Take care, man! ...",
-				"If you find something interesting, come back to talk about the {abandoned sewers}.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jacob.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jacob.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jacob.multi_5")
 			if player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission04) < 1 then
 				player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission04, 1)
 			end
@@ -114,10 +110,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "report") then
 		if player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission05) == 1 then
 			if npcHandler:getTopic(playerId) == 7 then
-				npcHandler:say({
-					"A sacrificial site? Damn, sounds like some freakish cult or something. Just great. And this ancient structure you talked about that's not part of the sewers? You'd better see the local historian about that, man. ...",
-					"He can make more sense of what you found there. His name is Barazbaz. He should be in the magistrate building.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jacob.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jacob.multi_2")
 				player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission06, 1) -- Start mission 6
 				npcHandler:setTopic(playerId, 0)
 			else

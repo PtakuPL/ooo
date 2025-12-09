@@ -72,12 +72,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zarifan.say_3")
 		npcHandler:setTopic(playerId, 3)
 	elseif npcHandler:getTopic(playerId) == 3 and MsgContains(message, "forever") then
-		npcHandler:say({
-			"Yes... YES... friendship... lives... FOREVER. ...",
-			"What you seek.... is buried. Beneath the sand. No graves. ...",
-			"Between a triangle of big stones you must dig... in the eastern caves. ...",
-			"And say hello... to... my old friend... Omrabas.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zarifan.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zarifan.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zarifan.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zarifan.multi_4")
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission71, 1)
 	else
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zarifan.say_4")

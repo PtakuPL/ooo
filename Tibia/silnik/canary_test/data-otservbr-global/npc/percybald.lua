@@ -60,10 +60,8 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "disguise") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.TheatreScript) < 0 then
-			npcHandler:say({
-				"Hmpf. Why should I waste my time to help some amateur? I'm afraid I can only offer my assistance to actors that are as great as I am. ...",
-				"Though, your futile attempt to prove your worthiness could be amusing. Grab a copy of a script from the prop room at the theatre cellar. Then talk to me again about your test!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.multi_5")
 			player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.TheatreScript, 0)
 		end
 	elseif MsgContains(message, "test") then
@@ -152,11 +150,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 14)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 14 then
-			npcHandler:say({
-				"Great! To clarify, donating 30,000 silver tokens and 25,000 gold tokens will entitle you to a unique outfit. ...",
-				"For 15,000 silver tokens and 12,500 gold tokens, you will receive the {armor}. For an additional 7,500 silver tokens and 6,250 gold tokens each, you can also receive the {shield} and {crown}. ...",
-				"What will you choose?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.multi_3")
 			npcHandler:setTopic(playerId, 15)
 		elseif npcHandler:getTopic(playerId) == 15 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_22")

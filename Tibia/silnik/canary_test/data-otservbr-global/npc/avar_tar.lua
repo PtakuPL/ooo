@@ -55,13 +55,11 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if npcHandler:getTopic(playerId) == 0 then
 		if MsgContains(message, "outfit") then
-			npcHandler:say({
-				"I'm tired of all these young unskilled wannabe heroes. Every Tibian can show his skills or actions by wearing a special outfit. To prove oneself worthy of the demon outfit, this is how it goes: ...",
-				"The base outfit will be granted for completing the annihilator quest, which isn't much of a challenge nowadays, in my opinion. Anyway ...",
-				"The shield however will only be granted to those adventurers who have finished the demon helmet quest. ...",
-				"Well, the helmet is for those who really are tenacious and have hunted down all 6666 demons and finished the demon oak as well. ...",
-				"Are you interested?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.avar_tar.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.avar_tar.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.avar_tar.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.avar_tar.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.avar_tar.multi_5")
 			npcHandler:setTopic(playerId, 1)
 		elseif MsgContains(message, "cookie") then
 			if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 31 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.CookieDelivery.AvarTar) ~= 1 then

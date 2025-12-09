@@ -59,21 +59,17 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "distress") or MsgContains(message, "mission") then
-		npcHandler:say({
-			"My pride is great but not greater than reason. I am not too proud to ask for help as this is a dark hour. ... ",
-			"This glade has been desecrated. We kept it secret for centuries, yet evil has found a way to sully and destroy what was our most sacred. ...",
-			"There is only one way to reinvigorate its spirits, a guardian must venture down there and bring life back into the forest. ... ",
-			"Stolen {seeds} need to be wrested from the {intruders} and planted where the soil still hungers. ... ",
-			"The purest {water} from the purest well needs to be brought there and poured and {birds} that give life need to be brought back to the inner sanctum of the glade. ...",
-			"Will you be our guardian?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_weakened_forest_fury.multi_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_weakened_forest_fury.multi_6")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_weakened_forest_fury.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_weakened_forest_fury.multi_8")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_weakened_forest_fury.multi_9")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_weakened_forest_fury.multi_10")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"Indeed, you will. Take one of these cages, which have been crafted generations ago to rob a creature of its freedom for that it may earn it again truthfully. Return the birds back to their home in the glade. ...",
-				"You will find {phials} for water near this sacred well which will take you safely to the glade. No seeds are left, they are in the hands of the intruders now. Have faith in yourself, guardian.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_weakened_forest_fury.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_weakened_forest_fury.multi_4")
 			player:setStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.BirdCage, 1)
 			player:addItem(23812, 1)
 			npcHandler:setTopic(playerId, 0)
@@ -104,10 +100,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "cages") and player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.BirdCage) == 1 then
-		npcHandler:say({
-			"Crafted generations ago to rob a creature of its freedom for that it may earn it again truthfully. You will need them if you plan on returning the birds to their rightful home in the glade. ... ",
-			"Are you in need of another one? ",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_weakened_forest_fury.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_weakened_forest_fury.multi_2")
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then

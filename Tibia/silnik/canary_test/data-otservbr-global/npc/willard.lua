@@ -66,11 +66,9 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "package for rashid") then
 		if player:getStorageValue(Storage.Quest.U8_1.TheTravellingTrader.Mission02) >= 1 and player:getStorageValue(Storage.Quest.U8_1.TheTravellingTrader.Mission02) < 3 then
-			npcHandler:say({
-				"Oooh, damn, I completely forgot about that. I was supposed to pick it up from the Outlaw Camp. ...",
-				"I can't leave my shop here right now, please go and talk to Snake Eye about that package... I promise he won't make any trouble. ...",
-				"Don't tell Rashid! I really don't want him to know that I forgot his order. Okay?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.willard.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.willard.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.willard.multi_3")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then

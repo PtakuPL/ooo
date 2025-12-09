@@ -71,17 +71,13 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 20 then
-			npcHandler:say({
-				"I am in dire need of help. A plague has befallen my dogs. I even called a druid of Carlin for help but all he could do was to recommend some strong medicine ...",
-				"The thing is the ingredients of the medicine are extremely rare and some only exist in far away and distant lands. If you could help me collecting the ingredients, I would be eternally grateful ...",
-				"Are you willing to help me?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nilsor.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nilsor.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nilsor.multi_10")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 28 then
-			npcHandler:say({
-				"Thank you. Now I have all necessary ingredients. As a reward I grant you the use of our dog sled, which is located to the east of here. ...",
-				"The dogs can be a bit moody, but if you always carry some ham with you there shouldnt be any problems. Oh, and Hjaern might have a mission for you. So maybe you go and talk to him.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nilsor.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nilsor.multi_7")
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 29)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission07, 1) -- Questlog The Ice Islands Quest, The Secret of Helheim
 			npcHandler:setTopic(playerId, 0)
@@ -102,10 +98,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "water") then
 		if player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 22 then
-			npcHandler:say({
-				"You will need a specially prepared waterskin to collect the water. You can buy one from me ...",
-				"Use it on a geyser that is NOT active. The water of active geysers is far too hot. You can find inactive geysers on Okolnir. Do you have some geyser water with you?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nilsor.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nilsor.multi_5")
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "sulphur") then
@@ -135,11 +129,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"A thousand thanks in advance. I need no less than 7 ingredients for the cure. You can ask me about each specifically ...",
-				"I need a part of the sun adorer cactus, a vial of geyser water, sulphur of a lava hole, a frostbite herb, a blossom of a purple kiss, a hydra tongue and spores of a giant glimmercap mushroom ...",
-				"Turn them in individually by talking about them to me. As soon as I obtained them all, talk to me about the medicine. First time bring a Part of the Sun Adorer {Cactus}.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nilsor.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nilsor.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nilsor.multi_3")
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 21)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission06, 1) -- Questlog The Ice Islands Quest, Nibelor 5: Cure the Dogs
 			npcHandler:setTopic(playerId, 0)

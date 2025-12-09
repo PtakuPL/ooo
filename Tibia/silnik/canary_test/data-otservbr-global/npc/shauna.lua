@@ -66,21 +66,17 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "water pipe") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say({
-				"Oh, there's a waterpipe in one of my cells? ...",
-				"I guess my last {prisoner} forgot it there.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shauna.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shauna.multi_7")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "prisoner") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"My last prisoner? Hmm. ...",
-				"I think he was some guy from Darama. Can't remember his name. ...",
-				"He was here just for one night, because he got drunk and annoyed our citizens. ...",
-				"Obviously he wasn't pleased with this place, because he headed for Thais the next day. ...",
-				"Something tells me that he won't stay out of trouble for too long.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shauna.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shauna.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shauna.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shauna.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shauna.multi_5")
 			Player(creature):setStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission01, 3)
 			npcHandler:setTopic(playerId, 0)
 		end

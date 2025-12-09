@@ -179,11 +179,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:resetNpc(creature)
 			end
 		elseif storeTalkCid[playerId] == 7 then
-			npcHandler:say({
-				"Well, that's how trading with NPCs like me works. I think you are ready now to cross the bridge to Rookgaard, just follow the path to the northwest. Good luck, |PLAYERNAME|! ...",
-				"And by the way: if you thought all of this was boring and you'd rather skip the tutorial with your next character, just say 'skip tutorial' to Santiago. ...",
-				"Then you'll miss out on those nice items and experience though. Hehehe! It's your choice. Well, take care for now!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.carlos.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.carlos.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.carlos.multi_9")
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosQuestLog, 7)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage, 8)
 			npcHandler:removeInteraction(npc, creature)
@@ -191,11 +189,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "outfit") then
 		if storeTalkCid[playerId] == 1 then
-			npcHandler:say({
-				"Well, that's how trading with NPCs like me works. I think you are ready now to cross the bridge to Rookgaard, just follow the path to the northwest. Good luck, |PLAYERNAME|! ...",
-				"And by the way: if you thought all of this was boring and you'd rather skip the tutorial with your next character, just say 'skip tutorial' to Santiago. ...",
-				"Then you'll miss out on those nice items and experience though. Hehehe! It's your choice. Well, take care for now!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.carlos.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.carlos.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.carlos.multi_6")
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosQuestLog, 7)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage, 8)
 			addEvent(function()
@@ -204,11 +200,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "ready") then
 		if storeTalkCid[playerId] == 7 then
-			npcHandler:say({
-				"Well, that's how trading with NPCs like me works. I think you are ready now to cross the bridge to Rookgaard, just follow the path to the northwest. Good luck, |PLAYERNAME|! ...",
-				"And by the way: if you thought all of this was boring and you'd rather skip the tutorial with your next character, just say 'skip tutorial' to Santiago. ...",
-				"Then you'll miss out on those nice items and experience though. Hehehe! It's your choice. Well, take care for now!",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.carlos.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.carlos.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.carlos.multi_3")
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosQuestLog, 7)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage, 8)
 			addEvent(function()

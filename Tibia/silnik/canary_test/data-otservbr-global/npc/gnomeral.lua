@@ -75,11 +75,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "matchmaker") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) >= 120 then
 			if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionMatchmaker) < 1 and player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MatchmakerTimeout) < os.time() then
-				npcHandler:say({
-					"You will have to find a lonely crystal a perfect match. I don't understand the specifics but the gnomes told me that even crystals need a mate to produce offspring. ...",
-					"Be that as it may, in this package you'll find a crystal. Take it out of the package and go to the crystal caves to find it a mate. Just look out for huge red crystals and try your luck. ...",
-					"They should look like one of those seen in your soul melody test. You will find them in the crystal grounds. {Report} back to me when you are done.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomeral.multi_9")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomeral.multi_10")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomeral.multi_11")
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionMatchmaker, 1)
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MatchmakerStatus, 0)
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MatchmakerIdNeeded, math.random(15809, 15815))
@@ -118,11 +116,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) >= 120 then
 			if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionTinkersBell) < 1 and player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.TinkerBellTimeout) < os.time() then
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomeral.say_8")
-				npcHandler:say({
-					"I'm no expert on how those golems work, but it seems that when the crystals of the golems get out of harmony, they do as they please and even sometimes become violent. The violent ones are lost. ...",
-					"Don't bother with them, though you may decide to kill some to get rid of them. The others can be repaired, but to recall them to the workshops, the golems have to be put into a specific resonance. ...",
-					"Use the bell I gave you on the golems, so the gnomes can recall them to their workshops. Getting four of them should be enough for now. Report back when you are ready.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomeral.multi_6")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomeral.multi_7")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomeral.multi_8")
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionTinkersBell, 1)
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.GolemCount, 0)
 				player:addItem(15832, 1) --- taking missions
@@ -159,11 +155,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "spore") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) >= 480 then
 			if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionSporeGathering) < 1 and player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.SporeGatheringTimeout) < os.time() then
-				npcHandler:say({
-					"We gnomes want you to gather a special collection of spores. All you have to do is use a puffball mushroom and use the spore gathering kit I gave you to gather the spores. ...",
-					"There is a catch though. You need to collect different spores in a specific sequence to fill your gathering kit. If you mix the spores in the wrong way, you ruin your collection and have to start over. ...",
-					"You have to gather them in this sequence: red, green, blue and yellow. You can see on your kit what is required next.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomeral.multi_3")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomeral.multi_4")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomeral.multi_5")
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionSporeGathering, 1)
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.SporeCount, 0)
 				player:addItem(15817, 1)
@@ -201,10 +195,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "grindstone") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) >= 480 then
 			if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionGrindstoneHunt) < 1 and player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.GrindstoneTimeout) < os.time() then
-				npcHandler:say({
-					"We gnomes need some special grindstones to cut and polish specific crystals. The thing is, they can only be found in a quite dangerous lava cave full of vile monsters. You'll reach it via the hot spot teleporter. ...",
-					"It will be your task to get one such grindstone and bring it back to me.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomeral.multi_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomeral.multi_2")
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionGrindstoneHunt, 1)
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.GrindstoneStatus, 0)
 				npcHandler:setTopic(playerId, 0) --- taking missions

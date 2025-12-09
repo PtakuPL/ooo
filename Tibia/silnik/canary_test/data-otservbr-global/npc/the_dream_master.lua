@@ -60,11 +60,9 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "join") then
 		if player:getStorageValue(Storage.Quest.U7_9.BrotherhoodOutfits.Outfits) < 1 and player:getStorageValue(Storage.Quest.U7_9.NightmareOutfits.Outfits) < 1 then
-			npcHandler:say({
-				"The Nightmare Knights are almost extinct now, and as far as I know I am the only teacher that is left. But you might beright and its time to accept new disciples ...",
-				"After all you have passed the Dream Challenge to reach this place, which used to be the process of initiation in the past...",
-				"So I ask you: do you wish to become a member of the ancient order of the Nightmare Knights, |PLAYERNAME|?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_dream_master.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_dream_master.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_dream_master.multi_5")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "advancement") or MsgContains(message, "demonic") or MsgContains(message, "essence") then
@@ -84,10 +82,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_dream_master.say_5")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say({
-				"So I welcome you as the latest member of the order of the Nightmare Knights. You entered this place as a stranger, butyou will leave this place as a friend ...",
-				"You can always ask me about your current rank and about the privileges the ranks grant to those who hold them.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_dream_master.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_dream_master.multi_2")
 			player:addItem(768, 1)
 			player:setStorageValue(Storage.Quest.U7_9.NightmareOutfits.Outfits, 1)
 			player:addAchievement("Nightmare Knight")

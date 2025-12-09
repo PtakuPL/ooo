@@ -70,11 +70,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	-- Check if the player has accepted the mission
 	elseif npcHandler:getTopic(playerId) == 1 and MsgContains(message, "yes") then
-		npcHandler:say({
-			"Recently we found out that they are in the possession of a scrying crystal ball. They can hear all our discussions about tactics and upcoming attacks. ...",
-			"No wonder that they always have been so well prepared. Now you come into play, destroy the scrying crystal ball in Elvenbane. It should be on the top floor. ...",
-			"We don't really know how to destroy it but we suppose it may work if you reflect the invisible power of the ball. The beam should be adjusted to Ab'Dendriel. Take this mirror and give it a try. Good luck.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eroth.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eroth.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eroth.multi_3")
 		player:addItem(3463, 1)
 		player:setStorageValue(Storage.Quest.U8_1.ToBlindTheEnemy.Questline, 1)
 		npcHandler:setTopic(playerId, 0)

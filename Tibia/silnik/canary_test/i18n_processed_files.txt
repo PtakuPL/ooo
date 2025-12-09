@@ -1,3 +1,23 @@
 # Pliki przetworzone przez i18n worker
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/chondur.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/herbert.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/malor.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/romir.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/grombur.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/captain_haba.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/ceiron.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/guide_thelandil.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/queen_eloise.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/curos.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/izsh.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/angelina.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/hjaern.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/baa_leal.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/gorn.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/navigator.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/barbara.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/rata_mari.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/fenbala.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/gnomargery.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/fa_hradin.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/a_dragon_mother.lua

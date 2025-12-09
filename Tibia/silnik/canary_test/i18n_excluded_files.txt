@@ -4909,3 +4909,4 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/olrik.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/nilsor.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/lib/npc/load.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/a_dragon_lord.lua

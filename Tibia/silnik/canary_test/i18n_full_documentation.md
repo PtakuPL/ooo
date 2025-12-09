@@ -7696,3 +7696,223 @@ Kategoria: npc, NPC: true
 Kategoria: npc, NPC: true
 
 ---
+
+## [2025-12-09 01:07:23] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/malor.lua`
+
+**Akcja:** Wyciągnięto 10 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:07:25] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/romir.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:07:27] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/grombur.lua`
+
+**Akcja:** Wyciągnięto 5 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:07:33] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/captain_haba.lua`
+
+**Akcja:** Wyciągnięto 35 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:07:36] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/ceiron.lua`
+
+**Akcja:** Wyciągnięto 17 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:07:38] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/guide_thelandil.lua`
+
+**Akcja:** Wyciągnięto 9 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:07:48] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/queen_eloise.lua`
+
+**Akcja:** Wyciągnięto 66 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:07:49] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/curos.lua`
+
+**Akcja:** Wyciągnięto 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:07:50] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/izsh.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:07:51] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/angelina.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:08:10] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/hjaern.lua`
+
+**Akcja:** Wyciągnięto 15 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:08:14] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/baa_leal.lua`
+
+**Akcja:** Wyciągnięto 10 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:08:20] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/gorn.lua`
+
+**Akcja:** Wyciągnięto 24 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:08:23] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/navigator.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:08:24] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/barbara.lua`
+
+**Akcja:** Wyciągnięto 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:08:27] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/rata_mari.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:08:29] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/fenbala.lua`
+
+**Akcja:** Wyciągnięto 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:08:37] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/gnomargery.lua`
+
+**Akcja:** Wyciągnięto 43 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:08:40] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/fa_hradin.lua`
+
+**Akcja:** Wyciągnięto 5 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:08:41] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/a_dragon_mother.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---

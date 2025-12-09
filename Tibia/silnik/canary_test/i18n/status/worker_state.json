@@ -1,23 +1,23 @@
 {
   "schema_version": "2.0",
-  "last_updated": "2025-12-09T01:03:23+01:00",
+  "last_updated": "2025-12-09T01:09:29+01:00",
   "worker": {
     "version": "4.0",
     "status": "running",
-    "mode": "analysis",
-    "cycle": 7,
+    "mode": "extraction",
+    "cycle": 2,
     "files_per_cycle": 10,
-    "pid": 1761064
+    "pid": 1876475
   },
   "global_progress": {
-    "total_files_processed": 1,
-    "total_files_excluded": 4911,
-    "total_keys": 42109,
+    "total_files_processed": 23,
+    "total_files_excluded": 4912,
+    "total_keys": 42410,
     "total_languages": 53,
-    "total_conflicts": 58
+    "total_conflicts": 0
   },
   "categories": {
-    "npc": {"status": "completed", "keys": 4108},
+    "npc": {"status": "completed", "keys": 4409},
     "scripts": {"status": "in_progress", "keys": 713},
     "items": {"status": "completed", "keys": 36972},
     "monsters": {"status": "pending", "keys": 0},
@@ -26,8 +26,28 @@
   },
   "recent_files": [
   {
-    "file": "# Pliki przetworzone przez i18n worker",
-    "time": "01:03:23",
+    "file": "rata_mari.lua",
+    "time": "01:09:29",
+    "status": "success"
+  },
+  {
+    "file": "fenbala.lua",
+    "time": "01:09:29",
+    "status": "success"
+  },
+  {
+    "file": "gnomargery.lua",
+    "time": "01:09:29",
+    "status": "success"
+  },
+  {
+    "file": "fa_hradin.lua",
+    "time": "01:09:29",
+    "status": "success"
+  },
+  {
+    "file": "a_dragon_mother.lua",
+    "time": "01:09:29",
     "status": "success"
   }
 ]

@@ -1,14 +1,14 @@
 {
   "category": "scripts",
   "status": "in_progress",
-  "last_updated": "2025-12-09T01:03:23+01:00",
+  "last_updated": "2025-12-09T01:09:29+01:00",
   "summary": {
     "total_keys": 713,
-    "files_processed": 1
+    "files_processed": 23
   },
   "current_work": {
     "directory": "data-otservbr-global/scripts/",
-    "cycle": 7
+    "cycle": 2
   },
   "subdirectories": {
     "quests": {"processed": 0},
@@ -16,8 +16,28 @@
   },
   "recent_files": [
   {
-    "file": "# Pliki przetworzone przez i18n worker",
-    "time": "01:03:23",
+    "file": "rata_mari.lua",
+    "time": "01:09:29",
+    "status": "success"
+  },
+  {
+    "file": "fenbala.lua",
+    "time": "01:09:29",
+    "status": "success"
+  },
+  {
+    "file": "gnomargery.lua",
+    "time": "01:09:29",
+    "status": "success"
+  },
+  {
+    "file": "fa_hradin.lua",
+    "time": "01:09:29",
+    "status": "success"
+  },
+  {
+    "file": "a_dragon_mother.lua",
+    "time": "01:09:29",
     "status": "success"
   }
 ]

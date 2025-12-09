@@ -42,20 +42,156 @@
 
 ---
 
-## 🎯 AKTUALNY STATUS (2025-12-09 01:52 UTC)
+## 🎯 AKTUALNY STATUS (2025-12-09 02:00 UTC)
 
-### 🔧 FIX ANDROID - Naprawiona nazwa flagi CMake!
+### 🔴 ANDROID NADAL FAILUJE - PEŁNE LOGI + ANALIZA
 
 | Workflow | Status | Uwagi |
 |----------|--------|-------|
-| **SonarCloud Linux** | 🟢 `in_progress` | |
-| **SonarCloud Windows** | 🟢 `in_progress` | |
-| **SonarCloud Web** | 🟢 `in_progress` | |
-| **SonarCloud Android** | 🔴→🟢 | **NAPRAWIONE** - zła nazwa flagi! |
+| **SonarCloud Linux** | 🟢 `in_progress/queued` | |
+| **SonarCloud Windows** | 🟢 `in_progress/queued` | |
+| **SonarCloud Web** | 🟢 `in_progress/queued` | |
+| **SonarCloud Android** | 🔴 `failure` | OpenAL not found |
 
 ---
 
-### 🔴 BŁĄD ANDROID - ZNALEZIONA PRZYCZYNA:
+### 📋 PEŁNE LOGI BŁĘDU ANDROID (Run ID: 20049005829, 01:44 UTC):
+
+**Flagi CMake użyte w tym runie:**
+```
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_BUILD_TYPE=Debug
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_ANDROID_ARCH_ABI=arm64-v8a
+-DCMAKE_ANDROID_NDK=$ANDROID_NDK_HOME
+-DCMAKE_ANDROID_STL_TYPE=c++_shared
+-DSPEED_UP_BUILD_UNITY=OFF
+-DOTC_ENABLE_PHYSFS=OFF
+-DOTC_ENABLE_LZMA=OFF
+-DOTC_ENABLE_NLOHMANN_JSON=OFF
+-DOTC_ENABLE_PUGIXML=OFF
+-DOTC_ENABLE_FMT=OFF
+-DOTC_ENABLE_HTTPLIB=OFF
+-DOTC_ENABLE_GMP=OFF
+-DOTC_ENABLE_TTF=OFF
+-DOTC_ENABLE_HARFBUZZ=OFF
+-DOTC_ENABLE_FRIBIDI=OFF
+-DOTC_ENABLE_PROTOBUF=OFF
+-DProtobuf_PROTOC_EXECUTABLE=$(which protoc)
+```
+
+**⚠️ UWAGA:** Brak flagi `-DTOGGLE_FRAMEWORK_SOUND=OFF` lub `-DOTC_ENABLE_SOUND=OFF`!
+
+**Środowisko:**
+- Android NDK: r23c
+- Clang: 12.0.9
+- API Level: 21
+- ABI: arm64-v8a
+- Java: Temurin 17.0.17
+
+**Output CMake (kluczowe linie):**
+```
+-- Android: Targeting API '21' with architecture 'arm64', ABI 'arm64-v8a'
+-- Android: Selected unified Clang toolchain
+-- The C compiler identification is Clang 12.0.9
+-- The CXX compiler identification is Clang 12.0.9
+-- Found ZLIB: .../libz.so (version "1.2.11")
+-- Detected PHMAP Version - 1.3.11
+```
+
+**❌ BŁĄD:**
+```
+CMake Error at FindPackageHandleStandardArgs.cmake:230 (message):
+  Could NOT find OpenAL (missing: OPENAL_LIBRARY OPENAL_INCLUDE_DIR)
+Call Stack:
+  cmake/FindOpenAL.cmake:16 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  src/CMakeLists.txt:516 (find_package)
+
+-- Configuring incomplete, errors occurred!
+##[error]Process completed with exit code 1.
+```
+
+---
+
+### 🔍 ANALIZA PROBLEMU (Agent 2):
+
+**Problem 1: Nazwa flagi**
+- Workflow używa `-DOTC_ENABLE_SOUND=OFF` (lub w ogóle nie ma tej flagi)
+- CMakeLists.txt używa `TOGGLE_FRAMEWORK_SOUND` (linia 13)
+- Te nazwy NIE PASUJĄ!
+
+**Problem 2: Miejsce wywołania find_package(OpenAL)**
+```cmake
+# src/CMakeLists.txt:
+# Linia 13:
+option(TOGGLE_FRAMEWORK_SOUND "Use SOUND " ON)  # Domyślnie ON!
+
+# Linia 441-446:
+if(TOGGLE_FRAMEWORK_SOUND)
+  if(NOT WASM)
+    find_package(OpenAL CONFIG QUIET)
+    if(NOT TARGET OpenAL::OpenAL)
+      find_package(OpenAL REQUIRED)  # ← Tu się wywala!
+    endif()
+  endif()
+endif()
+```
+
+**Problem 3: Rozbieżność między workflow a CMakeLists.txt**
+Workflow ma flagi `OTC_ENABLE_*` ale CMakeLists.txt używa `TOGGLE_*`:
+- `OTC_ENABLE_TTF` vs `TOGGLE_TTF` (?)
+- `OTC_ENABLE_SOUND` vs `TOGGLE_FRAMEWORK_SOUND`
+
+---
+
+### 💡 PROPOZYCJE NAPRAWY (dla Agent 1):
+
+**Opcja A: Zmienić flagę w workflow (NAJPROSTSZA)**
+```yaml
+# W analysis-sonarcloud-android.yml dodać:
+-DTOGGLE_FRAMEWORK_SOUND=OFF \
+```
+**Status:** Już zrobiłem w commit `bcc8b2a4`, czekamy na nowy run.
+
+**Opcja B: Dodać aliasy w CMakeLists.txt**
+```cmake
+# Na początku src/CMakeLists.txt dodać:
+if(DEFINED OTC_ENABLE_SOUND)
+  set(TOGGLE_FRAMEWORK_SOUND ${OTC_ENABLE_SOUND})
+endif()
+```
+To by unifikowało nazewnictwo flag.
+
+**Opcja C: Zainstalować OpenAL w workflow**
+```yaml
+- name: Install OpenAL
+  run: |
+    sudo apt-get update
+    sudo apt-get install -y libopenal-dev
+```
+ALE: To może nie działać dla cross-compilacji Android!
+
+**Opcja D: Zbudować OpenAL ze źródeł dla Android**
+- Skomplikowane, wymaga dodatkowej konfiguracji NDK
+- Nie polecam dla SonarCloud workflow
+
+---
+
+### ✅ WYKONANE PRZEZ AGENT 2:
+
+| Commit | Zmiana |
+|--------|--------|
+| `bcc8b2a4` | Zmieniono `-DOTC_ENABLE_SOUND=OFF` na `-DTOGGLE_FRAMEWORK_SOUND=OFF` |
+
+**Czekamy na wynik nowego runu!**
+
+Jeśli nadal nie zadziała - Agent 1, proszę sprawdź:
+1. Czy są inne miejsca w CMakeLists.txt które wymagają OpenAL?
+2. Czy flaga `TOGGLE_FRAMEWORK_SOUND` rzeczywiście wyłącza wszystkie zależności od OpenAL?
+
+---
+
+### 🔧 FIX ANDROID - Naprawiona nazwa flagi CMake!
 
 **Problem:**
 ```

@@ -82,48 +82,48 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif message:lower() == "help" and npcHandler:getTopic(playerId) > 0 and npcHandler:getTopic(playerId) < 34 then
-			npcHandler:say("You find yourself inside the dragon's dream. You can {look} around or {go} into a specific direction. You can also {take} or {use} an object. Enter {help} to display this information at any time.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_1")
 		elseif message:lower() == "west" and npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Advancing to the west, you recognise an increase of onyx on the ground.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_2")
 			npcHandler:setTopic(playerId, 2)
 		elseif message:lower() == "take attachment" and npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("You carefully lift the onyx attachment from its socket. It is lighter than you expected.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_3")
 			npcHandler:setTopic(playerId, 3)
 		elseif message:lower() == "east" and npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("You return to the plateau in the east.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_4")
 			npcHandler:setTopic(playerId, 4)
 		elseif message:lower() == "south" and npcHandler:getTopic(playerId) == 4 then
-			npcHandler:say("You wander to the south, passing large obelisks of emerald to your left and sprawling trees of topaz to your right. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_5")
 			npcHandler:setTopic(playerId, 5)
 		elseif message:lower() == "take stand" and npcHandler:getTopic(playerId) == 5 then
-			npcHandler:say("As you rip the solid stand out of its socket and take it with you, the large gate opens with a deafening rumble. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_6")
 			npcHandler:setTopic(playerId, 6)
 		elseif message:lower() == "east" and npcHandler:getTopic(playerId) == 6 then
-			npcHandler:say("You gasp at the size of the large open gate as you walk through to head further to the east.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_7")
 			npcHandler:setTopic(playerId, 7)
 		elseif message:lower() == "take model" and npcHandler:getTopic(playerId) == 7 then
-			npcHandler:say("You reach for a small solitary arrangement of combined small houses and put it in your pocket.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_8")
 			npcHandler:setTopic(playerId, 8)
 		elseif message:lower() == "take emeralds" and npcHandler:getTopic(playerId) == 8 then
-			npcHandler:say("You take an emerald from the pile. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_9")
 			npcHandler:setTopic(playerId, 9)
 		elseif message:lower() == "west" and npcHandler:getTopic(playerId) == 9 then
-			npcHandler:say("You return through the semi-translucent gate to the west. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_10")
 			npcHandler:setTopic(playerId, 10)
 		elseif message:lower() == "north" and npcHandler:getTopic(playerId) == 10 then
-			npcHandler:say("You head back north to the plateau. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_11")
 			npcHandler:setTopic(playerId, 11)
 		elseif message:lower() == "east" and npcHandler:getTopic(playerId) == 11 then
-			npcHandler:say("You travel east across several large emerald bluffs and edges. All sorts of gems are scattered alongside your path. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_12")
 			npcHandler:setTopic(playerId, 12)
 		elseif message:lower() == "take rubies" and npcHandler:getTopic(playerId) == 12 then
-			npcHandler:say("You take a rather large ruby out of a pile before you. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_13")
 			npcHandler:setTopic(playerId, 13)
 		elseif message:lower() == "north" and npcHandler:getTopic(playerId) == 13 then
-			npcHandler:say("You head north passing countless stones in the crimson sea of stones beneath your feet.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_14")
 			npcHandler:setTopic(playerId, 14)
 		elseif message:lower() == "use attachment" and npcHandler:getTopic(playerId) == 14 then
-			npcHandler:say("Avoiding the bright light, you carefully put the attachment on top of the strange socket. ...", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_15")
 			npcHandler:setTopic(playerId, 15)
 		elseif message:lower() == "take mirror" and npcHandler:getTopic(playerId) == 15 then
 			npcHandler:say({
@@ -132,7 +132,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 16)
 		elseif message:lower() == "north" and npcHandler:getTopic(playerId) == 16 then
-			npcHandler:say("Your path to the north is open. You pass the gigantic gate wings to your left and right as you advance. After about an hour of travel you hear a slight rustling in the distance. You head further into that direction. ...", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_16")
 			npcHandler:setTopic(playerId, 17)
 		elseif message:lower() == "use model" and npcHandler:getTopic(playerId) == 17 then
 			npcHandler:say({
@@ -141,46 +141,46 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 18)
 		elseif message:lower() == "south" and npcHandler:getTopic(playerId) == 18 then
-			npcHandler:say("You travel all the way back down the dune and through the gate to the south. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_17")
 			npcHandler:setTopic(playerId, 19)
 		elseif message:lower() == "south" and npcHandler:getTopic(playerId) == 19 then
-			npcHandler:say("You return to the crimson sea of rubies in the south. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_18")
 			npcHandler:setTopic(playerId, 20)
 		elseif message:lower() == "west" and npcHandler:getTopic(playerId) == 20 then
-			npcHandler:say("You travel back to the plateau in the west. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_19")
 			npcHandler:setTopic(playerId, 21)
 		elseif message:lower() == "west" and npcHandler:getTopic(playerId) == 21 then
-			npcHandler:say("Advancing to the west, you recognise an increase of onyx on the ground. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_20")
 			npcHandler:setTopic(playerId, 22)
 		elseif message:lower() == "north" and npcHandler:getTopic(playerId) == 22 then
-			npcHandler:say("You continue travelling the barren sea of gemstones to the north. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_21")
 			npcHandler:setTopic(playerId, 23)
 		elseif message:lower() == "west" and npcHandler:getTopic(playerId) == 23 then
-			npcHandler:say("You leave the massive open gate behind you and go to the west. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_22")
 			npcHandler:setTopic(playerId, 24)
 		elseif message:lower() == "take sapphire" and npcHandler:getTopic(playerId) == 24 then
-			npcHandler:say("You carefully remove the sapphire from Bastesh's grasp.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_23")
 			npcHandler:setTopic(playerId, 25)
 		elseif message:lower() == "east" and npcHandler:getTopic(playerId) == 25 then
-			npcHandler:say("You head back to the east and to the plateau.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_24")
 			npcHandler:setTopic(playerId, 26)
 		elseif message:lower() == "south" and npcHandler:getTopic(playerId) == 26 then
-			npcHandler:say("You head back south to the site with the onyx lookout.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_25")
 			npcHandler:setTopic(playerId, 27)
 		elseif message:lower() == "east" and npcHandler:getTopic(playerId) == 27 then
-			npcHandler:say("You return to the plateau in the east.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_26")
 			npcHandler:setTopic(playerId, 28)
 		elseif message:lower() == "use stand" and npcHandler:getTopic(playerId) == 28 then
-			npcHandler:say("You put the stand into a small recess you find near the middle of the plateau.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_27")
 			npcHandler:setTopic(playerId, 29)
 		elseif message:lower() == "use ruby" and npcHandler:getTopic(playerId) == 29 then
-			npcHandler:say("As the ruby slips into the notch, the strong red of the stone intensifies a thousandfold. You fear to hurt your eyes and turn away immediately. The ray seems to be directed to the centre of the plateau with astounding precision.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_28")
 			npcHandler:setTopic(playerId, 30)
 		elseif message:lower() == "use sapphire" and npcHandler:getTopic(playerId) == 30 then
-			npcHandler:say("As the sapphire slips into the notch, the deep blue of the stone intensifies a thousandfold. You fear to hurt your eyes and turn away immediately. The ray seems to be directed to the centre of the plateau with astounding precision.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_29")
 			npcHandler:setTopic(playerId, 31)
 		elseif message:lower() == "use emerald" and npcHandler:getTopic(playerId) == 31 then
-			npcHandler:say("As the emerald slips into the notch, the vibrant green of the stone intensifies a thousandfold. You fear to hurt your eyes and turn away immediately. The ray seems to be directed to the centre of the plateau with astounding precision.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_30")
 			npcHandler:setTopic(playerId, 32)
 		elseif message:lower() == "use mirror" and npcHandler:getTopic(playerId) == 32 then
 			npcHandler:say({
@@ -199,7 +199,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline) == 28 then
 		if MsgContains(message, "wayfarer") then
-			npcHandler:say("I call you the wayfarer. You travelled through my dreams. You ultimately freed my mind. My mind accepted you and so will I.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sleeping_dragon.say_31")
 		elseif MsgContains(message, "mission") then
 			npcHandler:say({
 				"Aaaah... free at last. Hmmm. ...",

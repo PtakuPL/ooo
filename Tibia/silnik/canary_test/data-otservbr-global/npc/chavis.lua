@@ -73,16 +73,16 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Mission) == 1 then
 			if player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Count) < 5 then
-				npcHandler:say("I am sorry, you didn't harvest enough roots. You need to harvest a bundle of at least five roots - and please try doing it yourself.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chavis.say_1")
 				npcHandler:setTopic(playerId, 0)
 			elseif player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Count) >= 5 then
-				npcHandler:say("Yes? You brought some juicy roots? How nice of you - that's one additional voice in the {magistrate} of {Rathleton} for you! ...", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chavis.say_2")
 				npcHandler:setTopic(playerId, 1)
 			end
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 and player:removeItem(21291, 5) then
-			npcHandler:say("Spend it wisely, though, put in a word for the poor, will ye? Sure you will.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chavis.say_3")
 			player:setStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Count, player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Count) - 5)
 			player:setStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Mission, -1)
 			if player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Door) < 1 then
@@ -96,14 +96,14 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("You don't have enough items.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chavis.say_4")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "root") then
-		npcHandler:say("They are nutritious, cost nothing and are good for the body hair. If you can bring us bundles of five juicy roots each - we will make it worth your while for the {magistrate}.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chavis.say_5")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "magistrate") then
-		npcHandler:say("They act so important but it is us common people who keep things going. There is a lot you can do in this city to earn a right to vote in the magistrate, though. So keep an eye out for everyone who needs help.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chavis.say_6")
 	elseif MsgContains(message, "rathleton") then
 		npcHandler:say({
 			"Don't be fooled, we have here masters and servants like everywhere else. The whole system is a scam to subdue the masses, to fool them about what is really happening. ...",

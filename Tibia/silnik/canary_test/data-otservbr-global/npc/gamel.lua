@@ -62,7 +62,7 @@ local function greetCallback(npc, creature)
 
 	if player:getStorageValue(Storage.Quest.U8_1.SecretService.AVINMission01) == 1 and player:getItemCount(402) > 0 then
 		player:setStorageValue(Storage.Quest.U8_1.SecretService.AVINMission01, 2)
-		npcHandler:say("I don't like the way you look. Help me boys!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gamel.say_1")
 		for i = 1, 2 do
 			Game.createMonster("Bandit", npc:getPosition())
 		end
@@ -83,16 +83,16 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "letter") then
 		if player:getStorageValue(Storage.Quest.U8_1.SecretService.AVINMission01) == 2 then
-			npcHandler:say("You have a letter for me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gamel.say_2")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:removeItem(402, 1) then
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.AVINMission01, 3)
-				npcHandler:say("Oh well. I guess I am still on the hook. Tell your 'uncle' I will proceed as he suggested.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gamel.say_3")
 			else
-				npcHandler:say("You don't have any letter!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gamel.say_4")
 			end
 			npcHandler:setTopic(playerId, 0)
 		end

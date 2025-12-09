@@ -4929,3 +4929,4 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/flickering_soul.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/a_behemoth.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/a_grumpy_cyclops.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/nipuna.lua

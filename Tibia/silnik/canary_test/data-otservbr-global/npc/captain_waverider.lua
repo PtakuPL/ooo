@@ -56,37 +56,37 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "peg leg") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.AccessToMeriana) == 1 then
-			npcHandler:say("Ohhhh. So... <lowers his voice> you know who sent you so I sail you to you know where. <wink> <wink> It will cost 50 gold to cover my expenses. Is it that what you wish?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_waverider.say_1")
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:say("Sorry, my old ears can't hear you.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_waverider.say_2")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "passage") then
-		npcHandler:say("<sigh> I knew someone else would claim all the treasure someday. But at least it will be you and not some greedy and selfish person. For a small fee of 200 gold pieces I will sail you to your rendezvous with fate. Do we have a deal?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_waverider.say_3")
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "no") then
-		npcHandler:say("I have to admit this leaves me a bit puzzled.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_waverider.say_4")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:removeMoneyBank(50) then
-				npcHandler:say("And there we go!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_waverider.say_5")
 				player:teleportTo(Position(32346, 32625, 7))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_waverider.say_6")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if player:removeMoneyBank(200) then
-				npcHandler:say("And there we go!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_waverider.say_7")
 				player:teleportTo(Position(32131, 32913, 7))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_waverider.say_8")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end

@@ -60,20 +60,20 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "fight") then
 		if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.DreamScar.Permission) < 1 and player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.Main.TheSummerCourt) == 1 then
-			npcHandler:say("We allow able champions of all races to fight for our cause against the challenges of the {arena}. So are you interested? I'm not interested in fancy'wordplay, so a simple {yes} or {no} will suffice!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shirtalis_of_the_summer_court.say_1")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("You are now able to enter the teleport.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shirtalis_of_the_summer_court.say_2")
 			player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.DreamScar.Permission, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
-		npcHandler:say("As you wish.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shirtalis_of_the_summer_court.say_3")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "arena") then
-		npcHandler:say("This place has always been a site where the champions of summer and winter have clashed in battle. Over the centuries this spectacle has drawn many creatures here to watch, participate and indulge in less savory activities.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shirtalis_of_the_summer_court.say_4")
 		npcHandler:setTopic(playerId, 0)
 	end
 

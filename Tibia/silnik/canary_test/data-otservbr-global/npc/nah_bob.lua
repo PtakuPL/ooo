@@ -58,7 +58,7 @@ local function greetCallback(npc, creature, message)
 	--Checks if the player has completed the quest
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission03) ~= 3 then
 		if not MsgContains(message, "djanni'hah") then
-			npcHandler:say("Whoa! A human! This is no place for you, |PLAYERNAME|. Go and play somewhere else.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nah_bob.say_1")
 			endConversationWithDelay(npcHandler, npc, creature)
 			return false
 		end
@@ -73,7 +73,7 @@ local function greetCallback(npc, creature, message)
 		end
 	end
 
-	npcHandler:say("<Sighs> Another {customer}! I've only just sat down! What is it, |PLAYERNAME|?", npc, creature)
+	NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nah_bob.say_2")
 	npcHandler:setInteraction(npc, creature)
 
 	return true
@@ -89,13 +89,13 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "cookie") then
 		if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 31 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.CookieDelivery.Djinn) ~= 1 then
-			npcHandler:say("You brought cookies! How nice of you! Can I have one?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nah_bob.say_3")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if not player:removeItem(130, 1) then
-				npcHandler:say("You have no cookie that I'd like.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nah_bob.say_4")
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -106,13 +106,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 
 			npc:getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)
-			npcHandler:say("You see, good deeds like this will ... YOU ... YOU SPAWN OF EVIL! I WILL MAKE SURE THE MASTER LEARNS ABOUT THIS!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nah_bob.say_5")
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("I see.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nah_bob.say_6")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end
@@ -124,7 +124,7 @@ local function onTradeRequest(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission03) ~= 3 then
-		npcHandler:say("I'm sorry, human. But you need Gabel's permission to trade with me.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nah_bob.say_7")
 		return false
 	end
 

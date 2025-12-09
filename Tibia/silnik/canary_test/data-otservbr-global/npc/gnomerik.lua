@@ -67,16 +67,16 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.NeedsBeer) == 1 then
 		if MsgContains(message, "recruit") or MsgContains(message, "test") or MsgContains(message, "result") then
-			npcHandler:say({ "I suggest you relax a bit with a fresh mushroom beer and we can talk after that. ...", "Gnominus... He is the one you need right now, find him." }, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_1")
 		end
 		return
 	end
 
 	if MsgContains(message, "recruit") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 5 then
-			npcHandler:say("Yes... Yes... <sigh>. We already talked about that. I can't remember if you have already tried the {test}, so lets get going.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_2")
 		elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 3 then
-			npcHandler:say("We are hiring people to fight in our so called Bigfoot company against the foes of gnomekind. Are you interested in joining?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_3")
 			npcHandler:setTopic(playerId, 1)
 		end
 
@@ -115,7 +115,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				}, npc, creature)
 				npcHandler:setTopic(playerId, 10)
 			elseif npcHandler:getTopic(playerId) == 11 then
-				npcHandler:say("What do you think describes gnomish society best? {A}) Ingenuity {B}) Bravery {C}) Humility {D}) All of the above.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_4")
 				npcHandler:setTopic(playerId, 12)
 			elseif npcHandler:getTopic(playerId) == 13 then
 				npcHandler:say({
@@ -136,7 +136,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				}, npc, creature)
 				npcHandler:setTopic(playerId, 18)
 			elseif npcHandler:getTopic(playerId) == 19 then
-				npcHandler:say("What is the front part of a spear? Is it {A}) the pointed one. {B}) The blunt one. {C}) Whatever causes the most damage {D}) A spear is no weapon but a fruit that grows on surface trees.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_5")
 				npcHandler:setTopic(playerId, 20)
 			elseif npcHandler:getTopic(playerId) == 21 then
 				npcHandler:say({
@@ -145,19 +145,19 @@ local function creatureSayCallback(npc, creature, type, message)
 				}, npc, creature)
 				npcHandler:setTopic(playerId, 22)
 			elseif npcHandler:getTopic(playerId) == 23 then
-				npcHandler:say("What comes first? {A}) safety {B}) I {C}) duty {D}) George", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_6")
 				npcHandler:setTopic(playerId, 24)
 			elseif npcHandler:getTopic(playerId) == 25 then
-				npcHandler:say("In case of emergency {A}) break glass {B}) break a leg {C}) have a break {D}) call a gnome?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_7")
 				npcHandler:setTopic(playerId, 26)
 			elseif npcHandler:getTopic(playerId) == 27 then
-				npcHandler:say("The greatest disaster I can imagine is ... {A}) to fail the gnomes {B}) a ruined mushroom pie {C}) accidentally hammering my finger {D}) having some work to do", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_8")
 				npcHandler:setTopic(playerId, 28)
 			elseif npcHandler:getTopic(playerId) == 29 then
-				npcHandler:say("What would your favourite pet be? {A}) A Krazzelzak of course. {B}) An Uxmoff to be honest. {C}) Montpiffs were always my favourite. {D}) A Humdrella and nothing else!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_9")
 				npcHandler:setTopic(playerId, 30)
 			elseif npcHandler:getTopic(playerId) == 31 then
-				npcHandler:say("Why do you want to become a bigfoot? {A}) To become rich and famous. {B}) To become famous and rich. {C}) To become rich or famous. {D}) To serve the gnomish community in their struggle?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_10")
 				npcHandler:setTopic(playerId, 32)
 			end
 		end
@@ -166,31 +166,31 @@ local function creatureSayCallback(npc, creature, type, message)
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 5 then
 			if (npcHandler:getTopic(playerId) % 2) == 0 then
 				if npcHandler:getTopic(playerId) == 2 then
-					npcHandler:say("Indeed an excellent and smart decision for an ungnomish lifeform. But let us continue with the {test}.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_11")
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) + 7)
 					npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 				elseif npcHandler:getTopic(playerId) == 18 then
-					npcHandler:say("A well thought out answer I have to admit. But let us continue with the {test}.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_12")
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) + 7)
 					npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 				elseif npcHandler:getTopic(playerId) == 20 then
-					npcHandler:say("Ah, we have a true warrior here I guess. But let us continue with the {test}.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_13")
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) + 7)
 					npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 				elseif npcHandler:getTopic(playerId) == 28 then
-					npcHandler:say("Fear not. We don't expect too much of you anyway. But let us continue with the {test}.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_14")
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) + 7)
 					npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 				elseif npcHandler:getTopic(playerId) == 30 then
-					npcHandler:say("Ha! A Krazzelzak would for sure fit someone like you! But let us continue with the {test}.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_15")
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) + 7)
 					npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 				else
 					if npcHandler:getTopic(playerId) < 33 then
-						npcHandler:say("Wrong answer!", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_16")
 						npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 						if npcHandler:getTopic(playerId) >= 33 then
-							npcHandler:say("Stop it! The test is over, you can ask me for your {results}.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_17")
 						end
 					end
 				end
@@ -200,16 +200,16 @@ local function creatureSayCallback(npc, creature, type, message)
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 5 then
 			if (npcHandler:getTopic(playerId) % 2) == 0 then
 				if npcHandler:getTopic(playerId) == 6 then
-					npcHandler:say("Although chances are the gnome will end up rescuing you instead, it is the attempt that counts. But let us continue with the {test}.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_18")
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) + 7)
 					npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 				elseif npcHandler:getTopic(playerId) == 14 then
-					npcHandler:say("I knew this question was too easy. But let us continue with the {test}.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_19")
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) + 7)
 					npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 				else
 					if npcHandler:getTopic(playerId) < 33 then
-						npcHandler:say("Wrong answer!", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_20")
 						npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 						if npcHandler:getTopic(playerId) >= 33 then
 							npcHandler:say("Stop it! The test is over, you can ask me for your {results}.")
@@ -222,23 +222,23 @@ local function creatureSayCallback(npc, creature, type, message)
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 5 then
 			if (npcHandler:getTopic(playerId) % 2) == 0 then
 				if npcHandler:getTopic(playerId) == 4 then
-					npcHandler:say("That's the spirit! Initiative is always a good thing. Well most of the time. But let us continue with the {test}.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_21")
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) + 7)
 					npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 				elseif npcHandler:getTopic(playerId) == 22 then
-					npcHandler:say("You have no idea how many answer this question wrong. But let us continue with the {test}.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_22")
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) + 7)
 					npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 				elseif npcHandler:getTopic(playerId) == 24 then
-					npcHandler:say("That's the spirit! But let us continue with the {test}.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_23")
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) + 7)
 					npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 				else
 					if npcHandler:getTopic(playerId) < 33 then
-						npcHandler:say("Wrong answer!", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_24")
 						npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 						if npcHandler:getTopic(playerId) >= 33 then
-							npcHandler:say("Stop it! The test is over, you can ask me for your {results}.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_25")
 						end
 					end
 				end
@@ -248,35 +248,35 @@ local function creatureSayCallback(npc, creature, type, message)
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 5 then
 			if (npcHandler:getTopic(playerId) % 2) == 0 then
 				if npcHandler:getTopic(playerId) == 8 then
-					npcHandler:say("Of COURSE you wouldn't! NO ONE would! But let us continue with the {test}.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_26")
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) + 7)
 					npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 				elseif npcHandler:getTopic(playerId) == 10 then
-					npcHandler:say("I can only hope that is your honest opinion. But let us continue with the test.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_27")
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) + 7)
 					npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 				elseif npcHandler:getTopic(playerId) == 12 then
-					npcHandler:say("Oh, you silver tongued devil almost made me blush. But of course you're right. But let us continue with the {test}.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_28")
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) + 7)
 					npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 				elseif npcHandler:getTopic(playerId) == 16 then
-					npcHandler:say("How true. How true. *sigh* But fear not! We gnomes are here to help! But let us continue with the {test}.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_29")
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) + 7)
 					npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 				elseif npcHandler:getTopic(playerId) == 26 then
-					npcHandler:say("That's just what I'd do - if I weren't a gnome already, that is. But let us continue with the {test}.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_30")
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) + 7)
 					npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 				elseif npcHandler:getTopic(playerId) == 32 then
-					npcHandler:say("Excellent! Well this concludes the test. Now let us see your {results}.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_31")
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) + 7)
 					npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 				else
 					if npcHandler:getTopic(playerId) < 33 then
-						npcHandler:say("Wrong answer!", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_32")
 						npcHandler:setTopic(playerId, npcHandler:getTopic(playerId) + 1)
 						if npcHandler:getTopic(playerId) >= 33 then
-							npcHandler:say("Stop it! The test is over, you can ask me for your {results}.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_33")
 						end
 					end
 				end
@@ -298,7 +298,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Excellent! Now let us begin with the gnomish aptitude test. Just tell me when you feel ready for the {test}!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_34")
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine, 5)
 			npcHandler:setTopic(playerId, 0)
 		end

@@ -45682,6 +45682,40 @@ npc.guide_jonathan.stdmod_7,"You can buy weapons, armor, tools, gems, magical eq
 npc.guide_jonathan.stdmod_8,I'm your guide to the beautiful town Edron. I can mark important locations on your map and give you some information about the town and the world status.,,missing
 npc.guide_jonathan.stdmod_9,The town of Edron with its shops and facilities is built inside strong castle walls. Another remarkable building is the magic academy.,,missing
 npc.guide_jonathan.stdmod_10,I'm Jonathan. Pleased to meet you.,,missing
+npc.ztiss.say_1,You are ztill a captive and your life is forfeit. Zere might be a way for you to ezcape if you agree to {work} for my mazter.,,missing
+npc.a_starving_dog.say_1,<munch>,,missing
+npc.chavis.say_1,"I am sorry, you didn't harvest enough roots. You need to harvest a bundle of at least five roots - and please try doing it yourself.",,missing
+npc.chavis.say_2,Yes? You brought some juicy roots? How nice of you - that's one additional voice in the {magistrate} of {Rathleton} for you! ...,,missing
+npc.chavis.say_3,"Spend it wisely, though, put in a word for the poor, will ye? Sure you will.",,missing
+npc.chavis.say_4,You don't have enough items.,,missing
+npc.chavis.say_5,"They are nutritious, cost nothing and are good for the body hair. If you can bring us bundles of five juicy roots each - we will make it worth your while for the {magistrate}.",,missing
+npc.chavis.say_6,"They act so important but it is us common people who keep things going. There is a lot you can do in this city to earn a right to vote in the magistrate, though. So keep an eye out for everyone who needs help.",,missing
+npc.shiantis.say_1,Do you want to buy a football for 111 gold?,,missing
+npc.shiantis.say_2,Here it is.,,missing
+npc.shiantis.say_3,You don't have enough money.,,missing
+npc.orockle.say_1,You can help in the fight against the hive. There are several missions available to destabilise the hive. Just ask for them if you want to learn more. After completing many missions you might be worthy to get a reward.,,missing
+npc.orockle.say_2,"You could try to blind the hive, you might disrupt its digestion, you could gather acid or you can disable the swarm pores. ...",,missing
+npc.orockle.say_3,So be it. Now you are a member of the inquisition. You might ask me for a mission to raise in my esteem.,,missing
+npc.shirith.say_1,Do you want to buy a key for 50 gold?,,missing
+npc.shirith.say_2,Here it is.,,missing
+npc.shirith.say_3,You don't have enough money.,,missing
+npc.benjamin.say_1,"Oh they don't change that much since in the old days as... <tells a boring and confusing story about a cake, a parcel, himself and two squirrels, at least he tells you his measurements in the end> ",,missing
+npc.captain_waverider.say_1,Ohhhh. So... <lowers his voice> you know who sent you so I sail you to you know where. <wink> <wink> It will cost 50 gold to cover my expenses. Is it that what you wish?,,missing
+npc.captain_waverider.say_2,"Sorry, my old ears can't hear you.",,missing
+npc.captain_waverider.say_3,<sigh> I knew someone else would claim all the treasure someday. But at least it will be you and not some greedy and selfish person. For a small fee of 200 gold pieces I will sail you to your rendezvous with fate. Do we have a deal?,,missing
+npc.captain_waverider.say_4,I have to admit this leaves me a bit puzzled.,,missing
+npc.captain_waverider.say_5,And there we go!,,missing
+npc.captain_waverider.say_6,You don't have enough money.,,missing
+npc.captain_waverider.say_7,And there we go!,,missing
+npc.captain_waverider.say_8,You don't have enough money.,,missing
+npc.shirtalis_of_the_summer_court.say_1,"We allow able champions of all races to fight for our cause against the challenges of the {arena}. So are you interested? I'm not interested in fancy'wordplay, so a simple {yes} or {no} will suffice!",,missing
+npc.shirtalis_of_the_summer_court.say_2,You are now able to enter the teleport.,,missing
+npc.shirtalis_of_the_summer_court.say_3,As you wish.,,missing
+npc.shirtalis_of_the_summer_court.say_4,"This place has always been a site where the champions of summer and winter have clashed in battle. Over the centuries this spectacle has drawn many creatures here to watch, participate and indulge in less savory activities.",,missing
+npc.swolt.say_1,Aaargh! Cael and his strange thoughts! He bugged me so long about the lizard culture that I eventually agreed to prepare that rice for you if you need it. I need one ripe rice plant to prepare ten rice balls. OK?,,missing
+npc.swolt.say_2,You don't have a ripe rice plant. Thank fire and earth I was spared.,,missing
+npc.swolt.stdmod_3,"Well, you see me standing behind a bar. Selling drinks. Food. And stuff. Now try figuring out what I could be making a living of down here.",,missing
+npc.swolt.stdmod_4,"I can offer you bread, cheese, ham, or meat. And as drinks we serve beer and water. If you'd like to see what we have to offer, just ask me for a trade.",,missing
 player.status.cleanse,You are no longer {0}. (cleanse charm),Nie jesteś już {0}. (urok oczyszczenia),translated
 player.condition.poisoned,You are poisoned.,Jesteś zatruty.,translated
 player.condition.drowning,You are drowning.,Toniesz.,translated

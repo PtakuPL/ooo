@@ -75,7 +75,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Thank you, I appreciate it. Don't forget to mention the package to Snake.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.willard.say_1")
 			player:setStorageValue(Storage.Quest.U8_1.TheTravellingTrader.Mission02, player:getStorageValue(Storage.Quest.U8_1.TheTravellingTrader.Mission02) + 1)
 			npcHandler:setTopic(playerId, 0)
 		end

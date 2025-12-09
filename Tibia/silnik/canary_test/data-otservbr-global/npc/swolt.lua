@@ -60,7 +60,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "rice") and player:getStorageValue(tomes) > 3 then
-		npcHandler:say("Aaargh! Cael and his strange thoughts! He bugged me so long about the lizard culture that I eventually agreed to prepare that rice for you if you need it. I need one ripe rice plant to prepare ten rice balls. OK?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.swolt.say_1")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
 		if player:getItemCount(10328) > 0 then
@@ -68,7 +68,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addItem(10329, player:getItemCount(10328) * 10)
 			player:removeItem(10328, player:getItemCount(10328))
 		else
-			npcHandler:say("You don't have a ripe rice plant. Thank fire and earth I was spared.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.swolt.say_2")
 		end
 	end
 	return true

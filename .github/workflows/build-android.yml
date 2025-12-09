@@ -11,9 +11,9 @@ on:
   # push:
   #   paths:
   #     - 'Tibia/silnik/canary_test/testyy/src/**'
-      - 'Tibia/silnik/canary_test/testyy/android/**'
-    branches:
-      - master
+  #     - 'Tibia/silnik/canary_test/testyy/android/**'
+  #   branches:
+  #     - master
 
 env:
   CMAKE_BUILD_PARALLEL_LEVEL: 4

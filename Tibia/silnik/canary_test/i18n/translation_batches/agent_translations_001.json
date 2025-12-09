@@ -1,0 +1,67 @@
+{
+  "category": "npc",
+  "translated_by": "GitHub Copilot Agent",
+  "timestamp": "2025-12-09T03:50:00",
+  "translations": {
+    "npc.ahmet.the_slayer_of_1": {
+      "pl": "Pogromca moich wrogów jest moim przyjacielem! Za jedyne 1000 złota przygotuję dokumenty, których potrzebujesz. Czy jesteś zainteresowany?",
+      "es": "¡El asesino de mis enemigos es mi amigo! Por solo 1000 de oro crearé los documentos que necesitas. ¿Te interesa?",
+      "de": "Der Bezwinger meiner Feinde ist mein Freund! Für nur 1000 Gold erstelle ich die Dokumente, die du brauchst. Interessiert?",
+      "pt": "O matador dos meus inimigos é meu amigo! Por apenas 1000 de ouro criarei os documentos que você precisa. Está interessado?"
+    },
+    "npc.ahmet.i_see_you_3": {
+      "pl": "Rozumiem: Chcesz, żebym dodał dodatkową historię do tej księgi. Legendę o tym, jak zabicie białego jelenia przynosi pecha. Mogę to zrobić, tak. Kosztuje to",
+      "es": "Ya veo: Quieres que añada una historia adicional a este libro. Una leyenda sobre cómo matar a un ciervo blanco trae mala suerte. Podría hacerlo, sí. Cuesta",
+      "de": "Ich verstehe: Du möchtest, dass ich eine zusätzliche Geschichte zu diesem Buch hinzufüge. Eine Legende darüber, wie es Unglück bringt, einen weißen Hirsch zu töten. Das könnte ich machen, ja. Es kostet",
+      "pt": "Entendo: Você quer que eu adicione uma história adicional a este livro. Uma lenda sobre como matar um cervo branco traz má sorte. Eu poderia fazer isso, sim. Custa"
+    },
+    "npc.ahmet.and_here_they_4": {
+      "pl": "A oto one! Teraz zapomnij, skąd je dostałeś.",
+      "es": "¡Y aquí están! Ahora olvida dónde los conseguiste.",
+      "de": "Und hier sind sie! Vergiss jetzt, woher du sie hast.",
+      "pt": "E aqui estão! Agora esqueça de onde você os conseguiu."
+    },
+    "npc.ahmet.great_if_you_6": {
+      "pl": "WSPANIALE! Jeśli kiedykolwiek będziesz potrzebować pracy jako mój osobisty ochroniarz, daj mi znać. Oto nagroda, którą ci obiecałem.",
+      "es": "¡GENIAL! Si alguna vez necesitas trabajo como mi guardaespaldas personal, házmelo saber. Aquí está la recompensa que te prometí.",
+      "de": "GROSSARTIG! Wenn du jemals einen Job als mein persönlicher Sicherheitswächter brauchst, lass es mich wissen. Hier ist die Belohnung, die ich dir versprochen habe.",
+      "pt": "ÓTIMO! Se você precisar de um trabalho como meu guarda-costas pessoal, me avise. Aqui está a recompensa que eu te prometi."
+    },
+    "npc.ahmet.come_back_when_7": {
+      "pl": "Wróć, gdy znajdziesz moje rzeczy.",
+      "es": "Vuelve cuando encuentres mis cosas.",
+      "de": "Komm zurück, wenn du meine Sachen gefunden hast.",
+      "pt": "Volte quando encontrar minhas coisas."
+    },
+    "npc.ahmet.you_need_gps_8": {
+      "pl": "Potrzebujesz 5000 złota i księgę z pradawnymi legendami.",
+      "es": "Necesitas 5000 de oro y un libro con leyendas antiguas.",
+      "de": "Du brauchst 5000 Gold und ein Buch mit alten Legenden.",
+      "pt": "Você precisa de 5000 de ouro e um livro com lendas antigas."
+    },
+    "npc.ajax.yours_what_is_1": {
+      "pl": "TWOJE? CO JEST TWOJE! NIC NIE JEST TWOJE! JEST MOJE! IDŹ STĄD, TAK?!",
+      "es": "¿TUYO? ¡QUÉ ES TUYO! ¡NADA ES TUYO! ¡ES MÍO! ¡VETE, SÍ?!",
+      "de": "DEINS? WAS IST DEINS! NICHTS IST DEINS! IST MEINS! GEH WEG, JA?!",
+      "pt": "SEU? O QUE É SEU! NADA É SEU! É MEU! VÁ EMBORA, SIM?!"
+    },
+    "npc.ajax.you_stupid_stubborn_2": {
+      "pl": "TY GŁUPI! UPARTY! ZABIJĘ CIĘ! ODEJDZIESZ TERAZ?!",
+      "es": "¡TÚ ESTÚPIDO! ¡TERCO! ¡TE MATO! ¿¡TE VAS AHORA?!",
+      "de": "DU DUMMKOPF! STURKÖPFIG! ICH TÖTE DICH! GEHST DU JETZT?!",
+      "pt": "VOCÊ IDIOTA! TEIMOSO! VOU TE MATAR! VAI SAIR AGORA?!"
+    },
+    "npc.ajax.arrrrrrrrrr_you_me_3": {
+      "pl": "ARRRRRRRRRR! TY MNIE WKURZASZ! JAK MAM CIĘ ZMUSIĆ DO ODEJŚCIA??",
+      "es": "¡ARRRRRRRRRR! ¡TÚ ME VUELVES LOCO! ¿¡CÓMO TE HAGO IR?!",
+      "de": "ARRRRRRRRRR! DU MACHST MICH WAHNSINNIG! WIE BRINGE ICH DICH DAZU ZU GEHEN??",
+      "pt": "ARRRRRRRRRR! VOCÊ ME DEIXA LOUCO! COMO EU FAÇO VOCÊ IR??"
+    },
+    "npc.ajax.please_what_you_5": {
+      "pl": "Proszę? Co masz na myśli proszę? Jak ja mówię proszę, ty mówisz pa? Proszę?",
+      "es": "¿Por favor? ¿Qué quieres decir con por favor? ¿Como yo digo por favor tú dices adiós? ¿Por favor?",
+      "de": "Bitte? Was meinst du mit bitte? Wenn ich bitte sage, sagst du tschüss? Bitte?",
+      "pt": "Por favor? O que você quer dizer com por favor? Tipo eu digo por favor você diz tchau? Por favor?"
+    }
+  }
+}

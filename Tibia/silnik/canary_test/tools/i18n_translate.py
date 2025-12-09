@@ -1,0 +1,202 @@
+#!/usr/bin/env python3
+"""
+I18N Translation Tool - przygotowuje klucze do tłumaczenia przez agenta AI.
+
+Użycie:
+    python3 tools/i18n_translate.py --category npc --target pl --batch 50
+    python3 tools/i18n_translate.py --category npc --target pl,es,de --batch 100
+    python3 tools/i18n_translate.py --apply translations_batch.json
+
+Workflow:
+1. Skrypt generuje plik z kluczami do tłumaczenia
+2. Agent AI tłumaczy i zwraca JSON
+3. Skrypt aplikuje tłumaczenia do plików i18n
+"""
+
+import json
+import os
+import sys
+import argparse
+from pathlib import Path
+from datetime import datetime
+
+I18N_DIR = Path("i18n")
+BATCH_DIR = Path("i18n/translation_batches")
+
+def get_untranslated_keys(category: str, target_lang: str, limit: int = 50) -> list:
+    """Znajdź klucze które nie mają tłumaczenia w danym języku."""
+    
+    en_file = I18N_DIR / "en" / f"{category}.json"
+    target_file = I18N_DIR / target_lang / f"{category}.json"
+    
+    if not en_file.exists():
+        print(f"❌ Brak pliku: {en_file}")
+        return []
+    
+    with open(en_file, 'r', encoding='utf-8') as f:
+        en_data = json.load(f)
+    
+    # Wczytaj istniejące tłumaczenia
+    target_data = {}
+    if target_file.exists():
+        with open(target_file, 'r', encoding='utf-8') as f:
+            target_data = json.load(f)
+    
+    # Znajdź nieprzetłumaczone
+    untranslated = []
+    for key, en_text in en_data.items():
+        # Pomiń jeśli już przetłumaczone (i różne od EN)
+        if key in target_data:
+            target_text = target_data[key]
+            if target_text and target_text.strip() and target_text != en_text:
+                continue
+        
+        # Pomiń bardzo krótkie teksty (prawdopodobnie kody/komendy)
+        if len(en_text) < 5:
+            continue
+            
+        untranslated.append({
+            "key": key,
+            "en": en_text
+        })
+        
+        if len(untranslated) >= limit:
+            break
+    
+    return untranslated
+
+
+def generate_batch(category: str, targets: list, batch_size: int) -> dict:
+    """Generuj batch do tłumaczenia."""
+    
+    BATCH_DIR.mkdir(parents=True, exist_ok=True)
+    
+    batch = {
+        "generated": datetime.now().isoformat(),
+        "category": category,
+        "target_languages": targets,
+        "batch_size": batch_size,
+        "keys": [],
+        "instructions": f"""
+=== INSTRUKCJE DLA AGENTA AI ===
+
+Przetłumacz poniższe klucze z angielskiego na: {', '.join(targets)}
+
+ZASADY:
+1. Zachowaj zmienne w klamrach: {{name}}, {{count}}, {{item}}
+2. Zachowaj formatowanie: |PLAYERNAME|, {{trade}}, itp.
+3. Dla gier RPG użyj klimatycznego języka fantasy
+4. Nie tłumacz nazw własnych (Thais, Carlin, Tibia)
+5. Komendy gry (trade, buy, sell) zostaw po angielsku
+
+FORMAT ODPOWIEDZI (JSON):
+{{
+    "translations": {{
+        "klucz1": {{"pl": "tłumaczenie PL", "es": "tłumaczenie ES", ...}},
+        "klucz2": {{"pl": "...", "es": "...", ...}}
+    }}
+}}
+"""
+    }
+    
+    # Zbierz klucze dla pierwszego języka docelowego
+    keys = get_untranslated_keys(category, targets[0], batch_size)
+    batch["keys"] = keys
+    batch["total_keys"] = len(keys)
+    
+    # Zapisz batch
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    batch_file = BATCH_DIR / f"batch_{category}_{timestamp}.json"
+    
+    with open(batch_file, 'w', encoding='utf-8') as f:
+        json.dump(batch, f, indent=2, ensure_ascii=False)
+    
+    print(f"✅ Batch wygenerowany: {batch_file}")
+    print(f"📊 Kluczy do tłumaczenia: {len(keys)}")
+    
+    return batch
+
+
+def apply_translations(translations_file: str) -> int:
+    """Aplikuj tłumaczenia z pliku JSON."""
+    
+    with open(translations_file, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    
+    translations = data.get("translations", {})
+    category = data.get("category", "unknown")
+    
+    applied = 0
+    
+    for key, lang_translations in translations.items():
+        for lang, text in lang_translations.items():
+            if not text or not text.strip():
+                continue
+            
+            # Znajdź kategorię z klucza jeśli nie podana
+            if category == "unknown":
+                parts = key.split(".")
+                if len(parts) > 0:
+                    category = parts[0]
+            
+            lang_file = I18N_DIR / lang / f"{category}.json"
+            
+            # Wczytaj istniejące
+            lang_data = {}
+            if lang_file.exists():
+                with open(lang_file, 'r', encoding='utf-8') as f:
+                    lang_data = json.load(f)
+            
+            # Dodaj tłumaczenie
+            lang_data[key] = text
+            
+            # Zapisz
+            lang_file.parent.mkdir(parents=True, exist_ok=True)
+            with open(lang_file, 'w', encoding='utf-8') as f:
+                json.dump(lang_data, f, indent=2, ensure_ascii=False)
+            
+            applied += 1
+    
+    print(f"✅ Zastosowano {applied} tłumaczeń")
+    return applied
+
+
+def show_sample(category: str, count: int = 10):
+    """Pokaż przykładowe klucze do tłumaczenia."""
+    
+    keys = get_untranslated_keys(category, "pl", count)
+    
+    print(f"\n📝 Przykładowe klucze z kategorii '{category}' do tłumaczenia:\n")
+    print("-" * 60)
+    
+    for item in keys:
+        print(f"🔑 {item['key']}")
+        print(f"   EN: {item['en'][:100]}{'...' if len(item['en']) > 100 else ''}")
+        print()
+    
+    print("-" * 60)
+    print(f"Łącznie nieprzetłumaczonych: {len(get_untranslated_keys(category, 'pl', 10000))}")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="I18N Translation Tool")
+    parser.add_argument("--category", default="npc", help="Kategoria do tłumaczenia")
+    parser.add_argument("--target", default="pl", help="Języki docelowe (oddzielone przecinkiem)")
+    parser.add_argument("--batch", type=int, default=50, help="Rozmiar batcha")
+    parser.add_argument("--apply", help="Plik JSON z tłumaczeniami do zastosowania")
+    parser.add_argument("--sample", action="store_true", help="Pokaż przykładowe klucze")
+    parser.add_argument("--count", type=int, default=10, help="Ile przykładów pokazać")
+    
+    args = parser.parse_args()
+    
+    if args.apply:
+        apply_translations(args.apply)
+    elif args.sample:
+        show_sample(args.category, args.count)
+    else:
+        targets = [t.strip() for t in args.target.split(",")]
+        generate_batch(args.category, targets, args.batch)
+
+
+if __name__ == "__main__":
+    main()

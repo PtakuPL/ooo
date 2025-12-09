@@ -231,6 +231,8 @@ EOF
 #===============================================================================
 LAST_PUSH_TIME=0
 PUSH_INTERVAL=120  # Push co 2 minuty
+COMMANDS_FILE="$WORK_DIR/.github/worker_commands.txt"
+COMMANDS_LOG="$WORK_DIR/.github/commands_log.txt"
 
 auto_push_to_github() {
     local current_time=$(date +%s)
@@ -246,6 +248,12 @@ auto_push_to_github() {
     
     # Usuń stary lock file jeśli istnieje
     rm -f .git/index.lock 2>/dev/null
+    
+    # Pobierz najnowsze komendy z GitHub
+    git pull origin master -q 2>/dev/null || true
+    
+    # Sprawdź czy są komendy do wykonania
+    check_github_commands
     
     # Sprawdź czy są zmiany
     local changes=$(git status --porcelain 2>/dev/null | wc -l)
@@ -268,6 +276,88 @@ auto_push_to_github() {
     fi
     
     cd "$WORK_DIR"
+}
+
+#===============================================================================
+# KOMUNIKACJA PRZEZ GITHUB - Terminal do wysyłania komend
+#===============================================================================
+check_github_commands() {
+    [ ! -f "$COMMANDS_FILE" ] && return 0
+    
+    local cmd_content=$(cat "$COMMANDS_FILE" 2>/dev/null)
+    [ -z "$cmd_content" ] && return 0
+    
+    log_info "📩 Odebrano komendy z GitHub..."
+    
+    # Parsuj komendy linia po linii
+    while IFS= read -r line; do
+        [[ "$line" =~ ^#.*$ ]] && continue  # Ignoruj komentarze
+        [[ -z "$line" ]] && continue         # Ignoruj puste linie
+        
+        local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+        local cmd=$(echo "$line" | cut -d: -f1 | xargs)
+        local arg=$(echo "$line" | cut -d: -f2- | xargs)
+        
+        case "$cmd" in
+            "PAUSE"|"pause"|"stop")
+                log_warn "⏸️ Komenda PAUSE - worker zatrzymany"
+                echo "[$timestamp] PAUSE - wykonano" >> "$COMMANDS_LOG"
+                echo "" > "$COMMANDS_FILE"
+                sleep 3600  # Czekaj godzinę
+                ;;
+            "RESUME"|"resume"|"start")
+                log_info "▶️ Komenda RESUME - wznawiam"
+                echo "[$timestamp] RESUME - wykonano" >> "$COMMANDS_LOG"
+                ;;
+            "STATUS"|"status")
+                log_info "📊 Komenda STATUS - generuję raport"
+                update_all_categories_status
+                update_status
+                echo "[$timestamp] STATUS - wygenerowano" >> "$COMMANDS_LOG"
+                ;;
+            "TRANSLATE"|"translate")
+                log_info "🌍 Komenda TRANSLATE: $arg"
+                if [ -n "$arg" ]; then
+                    local batch_size=$(echo "$arg" | cut -d' ' -f1)
+                    [ -z "$batch_size" ] && batch_size=20
+                    python3 tools/i18n_translate.py --batch "$batch_size" --category npc 2>&1 | tee -a "$LOG_FILE"
+                    echo "[$timestamp] TRANSLATE $batch_size - wykonano" >> "$COMMANDS_LOG"
+                fi
+                ;;
+            "PHASE"|"phase")
+                log_info "🔄 Komenda PHASE: przejdź do fazy $arg"
+                if [[ "$arg" =~ ^[0-9]+$ ]]; then
+                    jq --argjson p "$arg" '.current_phase = $p' "$WORK_PLAN" > /tmp/wp.json && mv /tmp/wp.json "$WORK_PLAN"
+                    echo "[$timestamp] PHASE $arg - wykonano" >> "$COMMANDS_LOG"
+                fi
+                ;;
+            "CATEGORY"|"category")
+                log_info "📂 Komenda CATEGORY: przejdź do $arg"
+                if [ -n "$arg" ]; then
+                    jq --arg cat "$arg" '.current_category = $cat' "$WORK_PLAN" > /tmp/wp.json && mv /tmp/wp.json "$WORK_PLAN"
+                    echo "[$timestamp] CATEGORY $arg - wykonano" >> "$COMMANDS_LOG"
+                fi
+                ;;
+            "PUSH"|"push")
+                log_info "📤 Komenda PUSH - wymuszam push"
+                LAST_PUSH_TIME=0
+                echo "[$timestamp] PUSH - wykonano" >> "$COMMANDS_LOG"
+                ;;
+            "RESTART"|"restart")
+                log_warn "🔄 Komenda RESTART - restartuję worker"
+                echo "[$timestamp] RESTART - wykonano" >> "$COMMANDS_LOG"
+                echo "" > "$COMMANDS_FILE"
+                exec "$0"
+                ;;
+            *)
+                log_warn "❓ Nieznana komenda: $cmd"
+                echo "[$timestamp] UNKNOWN: $cmd - zignorowano" >> "$COMMANDS_LOG"
+                ;;
+        esac
+    done < "$COMMANDS_FILE"
+    
+    # Wyczyść plik komend po wykonaniu
+    echo "# Worker Commands - Oczekuję na komendy..." > "$COMMANDS_FILE"
 }
 
 #===============================================================================
@@ -342,16 +432,27 @@ update_category_progress() {
     local files="$3"
     local phase=$(get_current_phase)
     
+    # Dynamiczne cele - jeśli przekroczono target, zwiększ go o 10%
+    local current_target=$(jq -r ".phases[] | select(.id == $phase) | .categories[] | select(.id == \"$category\") | .target_keys // 0" "$WORK_PLAN" 2>/dev/null || echo "0")
+    local new_target=$current_target
+    
+    # Jeśli keys > target, ustaw nowy target = keys + 10%
+    if [ "$keys" -gt "$current_target" ] 2>/dev/null; then
+        new_target=$((keys + keys / 10))
+        log_info "📈 Dynamiczny cel '$category': $current_target → $new_target"
+    fi
+    
     # Aktualizuj JSON
     local tmp=$(mktemp)
-    jq --arg cat "$category" --argjson keys "$keys" --argjson files "$files" --argjson phase "$phase" '
+    jq --arg cat "$category" --argjson keys "$keys" --argjson files "$files" --argjson phase "$phase" --argjson target "$new_target" '
         .phases |= map(
             if .id == $phase then
                 .categories |= map(
                     if .id == $cat then
                         .keys_extracted = $keys |
                         .files_processed = $files |
-                        (if $keys >= .target_keys then .status = "completed" else .status = "in_progress" end)
+                        .target_keys = $target |
+                        (if $keys >= ($target * 0.95) then .status = "completed" else .status = "in_progress" end)
                     else . end
                 )
             else . end

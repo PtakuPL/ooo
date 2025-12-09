@@ -1,0 +1,95 @@
+{
+  "generated": "2025-12-09T04:26:56.562766",
+  "category": "npc",
+  "target_languages": [
+    "pl",
+    "es",
+    "de",
+    "pt"
+  ],
+  "batch_size": 20,
+  "keys": [
+    {
+      "key": "npc.a_dragon_mother.greet_grrr",
+      "en": "Grrr."
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.farewell",
+      "en": "Chh..."
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.greet",
+      "en": "Chhchh?"
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.walkaway",
+      "en": "Chh..."
+    },
+    {
+      "key": "npc.nah_bob.laugh_1",
+      "en": "Hahahaha!"
+    },
+    {
+      "key": "npc.ahmet.did_you_find_2",
+      "en": "Did you find my stuff?"
+    },
+    {
+      "key": "npc.ahmet.you_dont_have_5",
+      "en": "You don't have enough money."
+    },
+    {
+      "key": "npc.ahmet.you_are_not_9",
+      "en": "You are not in this mission."
+    },
+    {
+      "key": "npc.ajax.i_give_you_4",
+      "en": "I GIVE YOU NO!"
+    },
+    {
+      "key": "npc.ajax.annoying_kid_bro_6",
+      "en": "Annoying kid. Bro hates him, but talking no help. Bro needs {fighting spirit}!"
+    },
+    {
+      "key": "npc.ajax.if_you_want_7",
+      "en": "If you want to help bro, bring him fighting spirit. Magic fighting spirit. Ask Djinn."
+    },
+    {
+      "key": "npc.ajax.bron_gave_me_8",
+      "en": "Bron gave me present. Ugly, but nice from him. Me want to give present too. You help me?"
+    },
+    {
+      "key": "npc.ajax.you_bring_iron_9",
+      "en": "You bring 100 iron ore?"
+    },
+    {
+      "key": "npc.ajax.you_bring_crude_10",
+      "en": "You bring crude iron?"
+    },
+    {
+      "key": "npc.ajax.you_bring_behemoth_11",
+      "en": "You bring 50 behemoth fangs?"
+    },
+    {
+      "key": "npc.ajax.you_bring_lizard_12",
+      "en": "You bring 50 lizard leather?"
+    },
+    {
+      "key": "npc.ajax.axe_is_done_13",
+      "en": "Axe is done! For you. Take. Wear like me."
+    },
+    {
+      "key": "npc.ajax.axe_is_not_14",
+      "en": "Axe is not done yet!"
+    },
+    {
+      "key": "npc.ajax.oh_easy_okay_15",
+      "en": "Oh. Easy. Okay. Please is good. Now don't say anything. Head aches. "
+    },
+    {
+      "key": "npc.ajax.good_you_get_16",
+      "en": "Good. You get 100 iron ore first. Come back."
+    }
+  ],
+  "instructions": "\n=== INSTRUKCJE DLA AGENTA AI ===\n\nPrzetłumacz poniższe klucze z angielskiego na: pl, es, de, pt\n\nZASADY:\n1. Zachowaj zmienne w klamrach: {name}, {count}, {item}\n2. Zachowaj formatowanie: |PLAYERNAME|, {trade}, itp.\n3. Dla gier RPG użyj klimatycznego języka fantasy\n4. Nie tłumacz nazw własnych (Thais, Carlin, Tibia)\n5. Komendy gry (trade, buy, sell) zostaw po angielsku\n\nFORMAT ODPOWIEDZI (JSON):\n{\n    \"translations\": {\n        \"klucz1\": {\"pl\": \"tłumaczenie PL\", \"es\": \"tłumaczenie ES\", ...},\n        \"klucz2\": {\"pl\": \"...\", \"es\": \"...\", ...}\n    }\n}\n",
+  "total_keys": 20
+}

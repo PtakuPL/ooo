@@ -1,0 +1,26 @@
+# 🎮 I18N Worker Commands Terminal
+# Wpisz komendę i zrób commit/push - worker wykona ją automatycznie
+# ═══════════════════════════════════════════════════════════════════
+
+# Dostępne komendy:
+# ─────────────────
+# PAUSE          - Zatrzymaj worker (czeka 1h)
+# RESUME         - Wznów pracę
+# STATUS         - Wymuś aktualizację statusu
+# PUSH           - Wymuś push do GitHub
+# RESTART        - Restartuj worker
+# PHASE: N       - Przejdź do fazy N (1-4)
+# CATEGORY: xxx  - Przejdź do kategorii (npc/scripts/items/monsters/spells)
+# TRANSLATE: N   - Wygeneruj batch N kluczy do tłumaczenia
+
+# ═══════════════════════════════════════════════════════════════════
+# Przykłady użycia:
+# ═══════════════════════════════════════════════════════════════════
+# TRANSLATE: 50
+# PHASE: 2
+# CATEGORY: monsters
+# PAUSE
+# ═══════════════════════════════════════════════════════════════════
+
+# 👇 Wpisz komendę poniżej (usuń "#" i wpisz komendę):
+

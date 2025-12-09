@@ -78,11 +78,11 @@
   "npc.a_dragon_mother.yes_1": "Regresa a los túneles superiores donde habitan cultistas y gólems de hielo. En algún lugar de estos túneles encontrarás una pequeña prisión embrujada por un fantasma. Al sur de esta celda hay un túnel que te llevará al este.",
   "npc.a_dragon_mother.yes_2": "Sigue el túnel hasta llegar a una pequeña cueva. Baja y baja hasta ver un campo de energía azul. Te llevará a mi huevo. Está sellado para que no todos puedan entrar. Pero ahora tienes permiso.",
   "npc.a_fluffy_squirrel.acorn": "¿Chh? ¿Chhh?? <aunque no entiendes ardillés, esta parece realmente emocionada>",
-  "npc.a_fluffy_squirrel.farewell": "Chh...",
-  "npc.a_fluffy_squirrel.greet": "Chhchh?",
+  "npc.a_fluffy_squirrel.farewell": "Chii...",
+  "npc.a_fluffy_squirrel.greet": "¿Chiichi?",
   "npc.a_fluffy_squirrel.trade_offer": "Chchch. ¡Chh! <no estás seguro, pero parece que esta ardilla quiere cambiar tus valiosas bellotas por piedras inútiles que encontró y consideró incomibles>",
   "npc.a_fluffy_squirrel.trade_sold": "Vendiste {0}x {1} por {2} de oro.",
-  "npc.a_fluffy_squirrel.walkaway": "Chh...",
+  "npc.a_fluffy_squirrel.walkaway": "Chii...",
   "npc.a_grumpy_cyclops.farewell": "Por fin algo de paz.",
   "npc.a_grumpy_cyclops.greet": "Grmph. Habla rápido, {0}.",
   "npc.a_grumpy_cyclops.walkaway": "Hrmph. Los pequeños nunca escuchan.",
@@ -215,7 +215,6 @@
   "npc.nokmir.rerun_info": "Es un minero en el ala sur. Quizás perdió el anillo allí... pero aunque encuentre el anillo, nadie me creerá. Alguien debería hablar con Grombur. Es el mejor amigo de Rerun.",
   "npc.nokmir.rehal_info": "Es un buen emperador pero dudo que sea lo suficientemente sabio para ver la verdad detrás de esa falsa acusación contra mí. Si solo alguien descubriera la verdad sobre todo este lío.",
   "npc.nokmir.mission_complete": "¡¿QUÉ?! No puedo creerlo. Me salvaste la vida... bueno, al menos una semana porque ese habría sido el tiempo que habría tenido que pasar en la cárcel. Si quieres, ahora puedes pasar la puerta y echar un vistazo a las minas del norte. ¡Diviértete!",
-
   "npc.narsai.greet_default": "¿En qué puedo ayudarte?",
   "npc.narsai.mission_ask": "¿Podrías ayudarme a hacer un ritual?",
   "npc.narsai.ingredient_list": "Aquí está la lista de ingredientes que faltan para completar el ritual. ",
@@ -223,13 +222,11 @@
   "npc.narsai.materials_ask": "¿Trajiste todos los materiales que te mencioné?",
   "npc.narsai.ritual_complete": "Gracias, esta etapa del ritual está completa.",
   "npc.narsai.farewell": "Bueno, adiós entonces.",
-
   "npc.nelly.voice_welcome": "¡Bienvenido a la oficina de correos!",
   "npc.nelly.voice_selling": "¡También vendo runas, pociones y equipo mágico!",
   "npc.nelly.greet": "Hola {0}, ¿Qué puedo hacer por ti? Trabajo en la oficina de correos, pero también comercio con importantes {pociones}, {runas} y otro equipo mágico.",
   "npc.nelly.farewell": "Adiós, {0}.",
   "npc.nelly.walkaway": "Ah, la impetuosidad de la juventud.",
-
   "npc.nielson.voice_passages": "Pasajes a Senja, Folda y Vega.",
   "npc.nielson.greet": "Ahoi, joven {0} y bienvenido a Nordic Tibia Ferries. Si necesitas un {pasaje}, avísame.",
   "npc.nielson.farewell": "Adiós. Eres bienvenido.",
@@ -237,7 +234,6 @@
   "npc.nielson.not_miss": "No deberías perderte la experiencia.",
   "npc.nielson.passage_info": "¿A dónde quieres ir hoy? Servimos las rutas a {Folda}, {Senja} y {Vega} y de vuelta a Tibia.",
   "npc.nielson.job": "Somos barqueros. Transportamos mercancías y pasajeros a las Islas de Hielo.",
-
   "npc.ninev.greet": "¡Bienvenido, joven {0}! Si estás gravemente herido o envenenado, puedo {curarte} gratis o ¿quieres la {piedra de aventurero}?",
   "npc.ninev.farewell": "¡Que los dioses te bendigan, {0}!",
   "npc.ninev.walkaway": "Recuerda: Si estás gravemente herido o envenenado, puedo curarte gratis.",
@@ -281,10 +277,8 @@
   "npc.ninev.bless_phoenix_no": "La chispa del fénix es dada por los sacerdotes enanos de tierra y fuego en Kazordoon.",
   "npc.ninev.bless_solitude_has": "Puedo sentir que ya hablaste con el ermitaño Eremo en la isla de Cormaya y recibiste esta bendición.",
   "npc.ninev.bless_solitude_no": "Habla con el ermitaño Eremo en la isla de Cormaya sobre esta bendición.",
-
   "npc.nipuna.voice_selling": "Vendo equipo mágico. Ven y echa un vistazo.",
   "npc.nipuna.voice_runes": "¡Si necesitas runas, este es el puesto para ti!",
-
   "npc.obi.voice_quality": "¡Solo acero y madera de calidad usados en mis armas!",
   "npc.obi.voice_buy": "¡Compra tus armas aquí!",
   "npc.obi.voice_selling": "¡Vendiendo y comprando todo tipo de armas, ven y echa un vistazo!",
@@ -293,12 +287,10 @@
   "npc.obi.farewell": "Adiós, espero que hayas quedado satisfecho con nuestro servicio.",
   "npc.obi.walkaway": "Um sí, buen día.",
   "npc.obi.trade": "Por supuesto, solo navega por mis mercancías.",
-
   "npc.oblivion.voice_hm": "Hm.",
   "npc.oblivion.voice_listen": "Sí. Escucho, amo.",
   "npc.oblivion.voice_understand": "Entiendo.",
   "npc.oblivion.voice_wait": "Aún no, hermanos míos. Esperen.",
-
   "npc.ocelus.greet": "Saludos, querido visitante {0}.",
   "npc.ocelus.farewell": "Adiós.",
   "npc.ocelus.walkaway": "Oh bueno.",
@@ -311,7 +303,6 @@
   "npc.ocelus.poem_enchant": "Excelente. Aquí, con este pequeño hechizo te permito recitar el poema como un verdadero poeta elfo. Ahora ve y pídele una cita de nuevo.",
   "npc.ocelus.poem_missing": "No lo tienes...",
   "npc.ocelus.poem_ask": "¿Conseguiste un poema de amor de Ab'Dendriel?",
-
   "npc.oldrak.greet": "¡Bienvenido {0}! Rara vez puedo dar la bienvenida a {visitantes} estos días.",
   "npc.oldrak.farewell": "Adiós, {0}",
   "npc.oldrak.walkaway": "Cuídate, es peligroso ahí fuera.",
@@ -336,7 +327,6 @@
   "npc.oldrak.tible_quest_first": "Necesitas completar la misión del libro primero antes de poder comprar La Santa Biblia.",
   "npc.oldrak.tible_done": "Aquí está tu Santa Biblia.",
   "npc.oldrak.not_enough_money": "No tienes suficiente dinero.",
-
   "npc.one_eyed_joe.voice_1": "¿Tú también escuchaste eso?",
   "npc.one_eyed_joe.greet_done": "¡Bien hecho! Pero debes saber: El cristal maldito parece regenerarse con el tiempo. Podría ser necesario volver y repetir lo que hayas hecho allí abajo.",
   "npc.one_eyed_joe.greet": "Hola. Lo siento, apenas te noté. Estoy un poco nervioso. Los escalofriantes {sonidos} de allí abajo, ya sabes",
@@ -356,7 +346,6 @@
   "npc.one_eyed_joe.name": "Soy Joe el Tuerto. De Josephina, ¿entendiste? ¡Y considero este parche como una característica personal de belleza!",
   "npc.one_eyed_joe.bye": "Adiós aventurero. Fue agradable hablar contigo.",
   "npc.one_eyed_joe.progress": "Ah, el valiente aventurero que buscó destruir el cristal maligno allí abajo. ¿Has tenido éxito?",
-
   "npc.oswald.greet": "Oh, hola {0}. ¿Qué pasa?",
   "npc.oswald.farewell": "¡Por fin!",
   "npc.oswald.walkaway": "Adiós, y no vuelvas muy pronto.",
@@ -365,12 +354,6 @@
   "npc.oswald.invitation_done": "¡Excelente! ¡Aquí está tu invitación!",
   "npc.oswald.not_enough_money": "No tienes suficiente dinero.",
   "npc.oswald.gold_doubt": "No es que sea sobornable, pero dudo que poseas 1000 monedas de oro. ¿O sí?",
-
-  "npc.ottokar.medicine_ask": "¿Me trajiste la bolsa de medicinas?",
-  "npc.ottokar.medicine_needed": "Necesito una {bolsa de medicinas} para darte las {pertenencias del difunto}. Vuelve cuando las tengas.",
-  "npc.ottokar.medicine_done": "Aquí tienes",
-  "npc.ottokar.no_items": "No tienes los objetos requeridos.",
-
   "npc.ottokar.medicine_ask": "¿Me trajiste la bolsa de medicina?",
   "npc.ottokar.medicine_needed": "Necesito una {bolsa de medicina}, para darte las {pertenencias del difunto}. Vuelve cuando las tengas.",
   "npc.ottokar.medicine_done": "Aquí tienes",
@@ -387,5 +370,30 @@
   "npc.oblivion.floating_correct": "Los jardines flotantes. Demasiado hermosos para yacer dormidos en la memoria de los hombres. Sí. ¿El nombre que ya no existe en Darkstone?",
   "npc.oblivion.mission_complete_1": "Ah, la Señora de Darkstone. Hiciste bien en recordar su nombre. ...",
   "npc.oblivion.mission_complete_2": "Ahora, las sombras dicen que lo que buscas yace junto a Akab, el Pendenciero. ...",
-  "npc.oblivion.mission_complete_3": "No se quema carbón en su honor. Encuentra su lugar de descanso y cava cerca de él. Ve ahora."
+  "npc.oblivion.mission_complete_3": "No se quema carbón en su honor. Encuentra su lugar de descanso y cava cerca de él. Ve ahora.",
+  "npc.ahmet.the_slayer_of_1": "¡El asesino de mis enemigos es mi amigo! Por solo 1000 de oro crearé los documentos que necesitas. ¿Te interesa?",
+  "npc.ahmet.i_see_you_3": "Ya veo: Quieres que añada una historia adicional a este libro. Una leyenda sobre cómo matar a un ciervo blanco trae mala suerte. Podría hacerlo, sí. Cuesta",
+  "npc.ahmet.and_here_they_4": "¡Y aquí están! Ahora olvida dónde los conseguiste.",
+  "npc.ahmet.great_if_you_6": "¡GENIAL! Si alguna vez necesitas trabajo como mi guardaespaldas personal, házmelo saber. Aquí está la recompensa que te prometí.",
+  "npc.ahmet.come_back_when_7": "Vuelve cuando encuentres mis cosas.",
+  "npc.ahmet.you_need_gps_8": "Necesitas 5000 de oro y un libro con leyendas antiguas.",
+  "npc.ajax.yours_what_is_1": "¿TUYO? ¡QUÉ ES TUYO! ¡NADA ES TUYO! ¡ES MÍO! ¡VETE, SÍ?!",
+  "npc.ajax.you_stupid_stubborn_2": "¡TÚ ESTÚPIDO! ¡TERCO! ¡TE MATO! ¿¡TE VAS AHORA?!",
+  "npc.ajax.arrrrrrrrrr_you_me_3": "¡ARRRRRRRRRR! ¡TÚ ME VUELVES LOCO! ¿¡CÓMO TE HAGO IR?!",
+  "npc.ajax.please_what_you_5": "¿Por favor? ¿Qué quieres decir con por favor? ¿Como yo digo por favor tú dices adiós? ¿Por favor?",
+  "npc.ahmet.did_you_find_2": "¿Encontraste mis cosas?",
+  "npc.ahmet.you_dont_have_5": "No tienes suficiente dinero.",
+  "npc.ahmet.you_are_not_9": "No estás en esta misión.",
+  "npc.ajax.i_give_you_4": "¡NO TE DOY!",
+  "npc.ajax.annoying_kid_bro_6": "Niño molesto. Hermano lo odia, pero hablar no ayuda. ¡Hermano necesita {fighting spirit}!",
+  "npc.ajax.if_you_want_7": "Si quieres ayudar a hermano, tráele espíritu de lucha. Espíritu de lucha mágico. Pregunta a Djinn.",
+  "npc.ajax.bron_gave_me_8": "Bron me dio regalo. Feo, pero amable de su parte. Yo quiero dar regalo también. ¿Me ayudas?",
+  "npc.ajax.you_bring_iron_9": "¿Traes 100 minerales de hierro?",
+  "npc.ajax.you_bring_crude_10": "¿Traes hierro crudo?",
+  "npc.ajax.you_bring_behemoth_11": "¿Traes 50 colmillos de behemoth?",
+  "npc.ajax.you_bring_lizard_12": "¿Traes 50 cueros de lagarto?",
+  "npc.ajax.axe_is_done_13": "¡Hacha está lista! Para ti. Toma. Úsala como yo.",
+  "npc.ajax.axe_is_not_14": "¡El hacha aún no está lista!",
+  "npc.ajax.oh_easy_okay_15": "Oh. Fácil. Okay. Por favor es bueno. Ahora no digas nada. Cabeza duele.",
+  "npc.ajax.good_you_get_16": "Bien. Primero consigue 100 minerales de hierro. Vuelve."
 }

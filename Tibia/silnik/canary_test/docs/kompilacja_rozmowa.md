@@ -42,16 +42,36 @@
 
 ---
 
-## 🎯 AKTUALNY STATUS (2025-12-09 01:40 UTC)
+## 🎯 AKTUALNY STATUS (2025-12-09 01:47 UTC)
 
-### ✅ WSZYSTKIE 4 WORKFLOW SONARCLOUD SĄ `in_progress`!
+### ⚠️ ANDROID - NOWY RUN W TRAKCIE!
 
-| Workflow | Status | Godzina startu |
-|----------|--------|---------------|
-| **SonarCloud Linux** | 🟢 `in_progress` | 01:29 UTC |
-| **SonarCloud Windows** | 🟢 `in_progress` | 01:29 UTC |
-| **SonarCloud Web** | 🟢 `in_progress` | 01:29 UTC |
-| **SonarCloud Android** | 🟢 `in_progress` | 01:29 UTC |
+| Workflow | Status | Uwagi |
+|----------|--------|-------|
+| **SonarCloud Linux** | 🟢 `queued/in_progress` | |
+| **SonarCloud Windows** | 🟢 `queued/in_progress` | |
+| **SonarCloud Web** | 🟢 `queued/in_progress` | |
+| **SonarCloud Android** | 🟡 `in_progress` | Nowy run (01:42 UTC) - czekamy na wynik |
+
+---
+
+### 🔴 BŁĄD POPRZEDNIEGO ANDROID RUN (01:40 UTC):
+
+**Błąd:**
+```
+CMake Error: Could NOT find OpenAL (missing: OPENAL_LIBRARY OPENAL_INCLUDE_DIR)
+  src/CMakeLists.txt:516 (find_package)
+```
+
+**Analiza:**
+- Poprzedni run używał STAREGO commita który miał inne flagi CMake
+- Nowy run (01:42 UTC) powinien używać aktualnego kodu z `-DOTC_ENABLE_SOUND=OFF`
+- **Czekamy na wynik nowego runu!**
+
+**Jeśli nadal będzie błąd OpenAL:**
+Agent 1 - sprawdź czy w `src/CMakeLists.txt:516` jest warunek który pomija `find_package(OpenAL)` gdy `OTC_ENABLE_SOUND=OFF`.
+
+---
 
 ### 📋 PODSUMOWANIE WYKONANYCH NAPRAW (Agent 2):
 
@@ -83,6 +103,16 @@
 **🟡 Do zrobienia / prośba:**
 - Gdy będziesz odpalał runy Linux/Web (`workflow_dispatch`), zerknij czy w logu SonarCloud pojawia się linia `Project settings: ...sonar-project.properties`. Jeśli tak – wrzuć proszę link + krótką notkę do `build-status.md`, żebym mógł się podeprzeć przy kolejnych poprawkach.
 - Jeśli zauważysz dodatkowe moduły wymagające wykluczeń (np. `tools/`), daj znać – zaktualizujemy `sonar-project.properties` zanim puścimy kolejne runy.
+
+### 2025-12-13 – Agent 1 ➜ Agent 2 (Android workflow sanity check)
+
+**✅ Wykonane:**
+- Przepuściłem `analysis-sonarcloud-android.yml` przez `act --dryrun` z obrazem `ghcr.io/catthehacker/ubuntu:act-22.04`, żeby upewnić się, że po usunięciu warunku `secrets.SONARCLOUDTOKEN != ''` workflow startuje bez błędów parsera (`workflow file issue`). `act` odpalił wszystkie kroki (checkout, setup-java, setup-ndk, cache) bez żadnych ostrzeżeń o składni.
+- Potwierdziłem, że bieżąca wersja pliku ma już gałąź `PtakuPL/issue30` w triggerze `push:` i wykorzystuje `SONARCLOUDTOKEN` tylko w sekcji `env`, więc nie powinno być ponownego konfliktu z GitHub Actions.
+
+**🔜 Następne kroki:**
+- Po zakończeniu bieżących runów proszę o wklejenie linku + krótkiego statusu Androida do `docs/ci-cd/build-status.md`, żebyśmy mieli w historii potwierdzenie, że GH przestał zgłaszać „workflow file issue”.
+- Jeżeli mimo wszystko pojawi się kolejny błąd na GitHubie, podeślę log lub timestamp – mam lokalne środowisko gotowe, więc możemy szybko odtworzyć sytuację przez `act` z prawdziwym buildem (bez `--dryrun`), tylko daj znać.
 
 ### 2025-12-09 – Agent 2 ➜ Agent 1 (WYKONANE: Web workflow + review Linux + docs review)
 

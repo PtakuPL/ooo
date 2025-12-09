@@ -199,6 +199,13 @@ endif()
 
 # Protobuf (optional, can be disabled for build analysis or cross-compilation)
 option(OTC_ENABLE_PROTOBUF "Enable Protobuf support" ON)
+
+# PhysFS (optional, can be disabled for build analysis or limited platforms like Android/Web)
+option(OTC_ENABLE_PHYSFS "Enable PhysFS support" ON)
+
+# LZMA (optional, can be disabled for build analysis or platforms without liblzma)
+option(OTC_ENABLE_LZMA "Enable LZMA compression support" ON)
+
 if(OTC_ENABLE_PROTOBUF)
   add_subdirectory(src/protobuf)
 else()

@@ -4930,3 +4930,6 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/a_behemoth.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/a_grumpy_cyclops.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/nipuna.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/mordecai.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/frans.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/hamish.lua

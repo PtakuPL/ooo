@@ -1,14 +1,14 @@
 {
   "category": "scripts",
   "status": "in_progress",
-  "last_updated": "2025-12-09T02:57:52+01:00",
+  "last_updated": "2025-12-09T03:01:13+01:00",
   "summary": {
     "total_keys": 713,
-    "files_processed": 413
+    "files_processed": 433
   },
   "current_work": {
     "directory": "data-otservbr-global/scripts/",
-    "cycle": 1
+    "cycle": 2
   },
   "subdirectories": {
     "quests": {"processed": 0},
@@ -16,28 +16,28 @@
   },
   "recent_files": [
   {
-    "file": "andrew_lyze.lua",
-    "time": "02:57:52",
+    "file": "emperor_kruzak.lua",
+    "time": "03:01:13",
     "status": "success"
   },
   {
-    "file": "spectulus.lua",
-    "time": "02:57:52",
+    "file": "gnomerik.lua",
+    "time": "03:01:13",
     "status": "success"
   },
   {
-    "file": "cobra.lua",
-    "time": "02:57:52",
+    "file": "willard.lua",
+    "time": "03:01:13",
     "status": "success"
   },
   {
-    "file": "rehon.lua",
-    "time": "02:57:52",
+    "file": "nah_bob.lua",
+    "time": "03:01:13",
     "status": "success"
   },
   {
-    "file": "guide_jonathan.lua",
-    "time": "02:57:52",
+    "file": "stutch.lua",
+    "time": "03:01:13",
     "status": "success"
   }
 ]

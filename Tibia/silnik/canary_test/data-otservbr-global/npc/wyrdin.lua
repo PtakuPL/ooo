@@ -90,14 +90,14 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "research") or MsgContains(message, "notes") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.TheWayToYalahar) == 2 then
-			npcHandler:say("Do you have the papers I asked you for with you?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_1")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:removeItem(9171, 1) then
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.TheWayToYalahar, 3)
-				npcHandler:say("Oh marvellous, please excuse me. I need to read this text immediately. Here, take this small reward of 500 gold pieces for your efforts.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_2")
 				player:addMoney(500)
 				npcHandler:setTopic(playerId, 0)
 			end
@@ -116,10 +116,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "farmine") then
 		if player:getStorageValue(TheNewFrontier.Questline) == 14 then
 			if player:getStorageValue(TheNewFrontier.Mission05.Wyrdin) == 1 then
-				npcHandler:say("I've heard some odd rumours about this new dwarven outpost. But tell me, what has the Edron academy to do with Farmine?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_3")
 				npcHandler:setTopic(playerId, 2)
 			else
-				npcHandler:say("I'm not sure if I'm in the mood to talk about that matter again. Or do you have anything that might change my mind?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_4")
 				npcHandler:setTopic(playerId, 3)
 			end
 		end
@@ -127,23 +127,23 @@ local function creatureSayCallback(npc, creature, type, message)
 		if npcHandler:getTopic(playerId) == 2 then
 			local chance = math.random(1, 3)
 			if chance == 1 then
-				npcHandler:say("Hm, you are right, we are at the forefront of knowledge and innovation. Our dwarven friends could learn much from one of our representatives.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_5")
 			elseif chance == 2 then
-				npcHandler:say("<sighs> Okay, sending some trader there won't hurt. I hope it will be worth the effort, though.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_6")
 			else
-				npcHandler:say({ "Well, it can't be wrong to be there when new discoveries are made. Also, all those soldiers of fortune that might travel there could turn out to be a good source of income for a magic shop. ...", "I think we'll send a representative. At least, for some time." }, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_7")
 			end
 			player:setStorageValue(TheNewFrontier.Mission05.Wyrdin, 3)
 		end
 	elseif MsgContains(message, "bluff") and player:getStorageValue(TheNewFrontier.Mission05.WyrdinKeyword) == 2 and player:getStorageValue(TheNewFrontier.Mission05.Wyrdin) == 1 then
-		npcHandler:say("What do you mean the druids of Carlin could provide the service as well? They are incompetent imposters! I will not allow them to ruin our reputation! I'll send some trader with supplies right away!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_8")
 		player:setStorageValue(TheNewFrontier.Mission05.Wyrdin, 3)
 	elseif MsgContains(message, "flatter") and player:getStorageValue(TheNewFrontier.Mission05.WyrdinKeyword) == 3 and player:getStorageValue(TheNewFrontier.Mission05.Wyrdin) == 1 then
-		npcHandler:say("Hm, you are right, we are at the forefront of knowledge and innovation. Our dwarven friends could learn much from one of our representatives.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_9")
 		player:setStorageValue(TheNewFrontier.Mission05.Wyrdin, 3)
 	else
 		if player:getStorageValue(TheNewFrontier.Questline) == 14 and player:getStorageValue(TheNewFrontier.Mission05.Wyrdin) == 1 then
-			npcHandler:say("Wrong Word.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_10")
 			player:setStorageValue(TheNewFrontier.Mission05.Wyrdin, 2)
 		end
 	end

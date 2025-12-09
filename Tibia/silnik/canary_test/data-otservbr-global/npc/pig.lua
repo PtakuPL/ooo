@@ -57,11 +57,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "kiss") then
-		npcHandler:say("Do you want to try to release me with a kiss?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.pig.say_1")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Mhm Uhhh. Not bad, not bad at all! But you can still improve your skill a LOT.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.pig.say_2")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

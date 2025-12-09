@@ -311,7 +311,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature, 100)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "tasks") then
-		npcHandler:say("Prey hunting tasks should reduce the number of certain monsters. And if you fulfil them successfully I will show my appreciation and give you some {rewards} in exchange of hunting task points.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_1")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "have") then
 		npcHandler:say("Right now you have " .. player:getTaskHuntingPoints() .. " HTP.", npc, creature)
@@ -325,11 +325,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		-- Rewards topic
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if not config.enable then
-			npcHandler:say("Sorry, i have no offer to make for you today.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_3")
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "outfit") then
 			if config == nil or config.outifts == nil or #config.outifts == 0 then
-				npcHandler:say("I have no outfit offer to make.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_4")
 				npcHandler:setTopic(playerId, 0)
 			else
 				npcHandler:say("I offer you the " .. getOffersString(config.outifts, false) .. " outfit" .. (#config.outifts >= 1 and "s." or "."), npc, creature)
@@ -337,7 +337,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 		elseif MsgContains(message, "mount") then
 			if config == nil or config.mounts == nil or #config.mounts == 0 then
-				npcHandler:say("I have no mount offer to make.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_5")
 				npcHandler:setTopic(playerId, 0)
 			else
 				npcHandler:say("I offer you the " .. getOffersString(config.mounts, false) .. " mount" .. (#config.mounts >= 1 and "s." or "."), npc, creature)
@@ -345,7 +345,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 		elseif MsgContains(message, "trophies") then
 			if config == nil or config.trophies == nil or #config.trophies == 0 then
-				npcHandler:say("I have no trophie offer to make.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_6")
 				npcHandler:setTopic(playerId, 0)
 			else
 				npcHandler:say("I offer you the " .. getOffersString(config.trophies, true) .. ".", npc, creature)
@@ -353,7 +353,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 		elseif MsgContains(message, "furniture") then
 			if config == nil or config.furniture == nil or #config.furniture == 0 then
-				npcHandler:say("I have no furniture offer to make.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_7")
 				npcHandler:setTopic(playerId, 0)
 			else
 				npcHandler:say("I offer you the " .. getOffersString(config.furniture, true) .. ".", npc, creature)
@@ -379,12 +379,12 @@ local function creatureSayCallback(npc, creature, type, message)
 				if offerTable ~= nil then
 					if player:getTaskHuntingPoints() >= offerTable.value then
 						if processItemInboxPurchase(player, offerTable.name, offerTable.itemId) and player:removeTaskHuntingPoints(offerTable.value) then
-							npcHandler:say("Here you have it.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_8")
 						else
-							npcHandler:say("Sorry, but you don't have enough slots on your inbox or capacity.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_9")
 						end
 					else
-						npcHandler:say("Sorry, but you don't have enough hunting task points.", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_10")
 					end
 				else
 					return true
@@ -397,12 +397,12 @@ local function creatureSayCallback(npc, creature, type, message)
 				if offerTable ~= nil then
 					if player:getTaskHuntingPoints() >= offerTable.value then
 						if processItemInboxPurchase(player, offerTable.name, offerTable.itemId) and player:removeTaskHuntingPoints(offerTable.value) then
-							npcHandler:say("Here you have it.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_11")
 						else
-							npcHandler:say("Sorry, but you don't have enough slots on your inbox or capacity.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_12")
 						end
 					else
-						npcHandler:say("Sorry, but you don't have enough hunting task points.", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_13")
 					end
 				else
 					return true
@@ -416,40 +416,40 @@ local function creatureSayCallback(npc, creature, type, message)
 					if MsgContains(message, "base") then
 						local points = offerTable.base
 						if player:hasOutfit(offerTable.male) or player:hasOutfit(offerTable.female) then
-							npcHandler:say("You already have this outfit.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_14")
 						elseif player:removeTaskHuntingPoints(points) then
 							-- Add task hunting points history here.
 							player:addOutfit(offerTable.male)
 							player:addOutfit(offerTable.female)
-							npcHandler:say("Here you have it.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_15")
 						end
 					elseif MsgContains(message, "first") then
 						local points = offerTable.firstAddon
 						if not (player:hasOutfit(offerTable.male)) or not (player:hasOutfit(offerTable.female)) then
-							npcHandler:say("First you need to buy the base addon to unlock this addon.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_16")
 						elseif player:hasOutfit(offerTable.male, 1) or player:hasOutfit(offerTable.female, 1) then
-							npcHandler:say("You already have this addon.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_17")
 						elseif player:removeTaskHuntingPoints(points) then
 							-- Add task hunting points history here.
 							player:addOutfitAddon(offerTable.male, 1)
 							player:addOutfitAddon(offerTable.female, 1)
-							npcHandler:say("Here you have it.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_18")
 						else
-							npcHandler:say("Sorry, but you don't have enough hunting task points.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_19")
 						end
 					elseif MsgContains(message, "second") then
 						local points = offerTable.secondAddon
 						if not (player:hasOutfit(offerTable.male)) or not (player:hasOutfit(offerTable.female)) then
-							npcHandler:say("First you need to buy the base addon to unlock this addon.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_20")
 						elseif player:hasOutfit(offerTable.male, 2) or player:hasOutfit(offerTable.female, 2) then
-							npcHandler:say("You already have this addon.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_21")
 						elseif player:removeTaskHuntingPoints(points) then
 							-- Add task hunting points history here.
 							player:addOutfitAddon(offerTable.male, 2)
 							player:addOutfitAddon(offerTable.female, 2)
-							npcHandler:say("Here you have it.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_22")
 						else
-							npcHandler:say("Sorry, but you don't have enough hunting task points.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_23")
 						end
 					else
 						return true
@@ -465,11 +465,11 @@ local function creatureSayCallback(npc, creature, type, message)
 				if offerTable ~= nil then
 					local points = offerTable.value
 					if player:hasMount(offerTable.mountId) then
-						npcHandler:say("You already have this mount.", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_24")
 					elseif player:removeTaskHuntingPoints(points) then
 						-- Add task hunting points history here.
 						player:addMount(offerTable.mountId)
-						npcHandler:say("Here you have it.", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_25")
 					end
 				else
 					return true

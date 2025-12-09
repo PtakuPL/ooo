@@ -157,7 +157,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Yonan) == 1 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Yonan) == 1 then
-			npcHandler:say({ "Could you help me do a ritual?" }, npc, creature) -- It needs to be revised, it's not the same as the global
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yonan.say_1") -- It needs to be revised, it's not the same as the global
 			npcHandler:setTopic(playerId, 1)
 			npcHandler:setTopic(playerId, 1)
 		end
@@ -165,17 +165,17 @@ local function creatureSayCallback(npc, creature, type, message)
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Yonan) == 1 then
 			player:addItem(31717, 1) -- Yonans List
 			player:addItem(31613, 1) -- Pick Enchanted
-			npcHandler:say({ "Here is the list with the missing ingredients to complete the ritual." }, npc, creature) -- It needs to be revised, it's not the same as the global
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yonan.say_2") -- It needs to be revised, it's not the same as the global
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Yonan, 2)
 			npcHandler:setTopic(playerId, 2)
 			npcHandler:setTopic(playerId, 2)
 		else
-			npcHandler:say({ "Sorry." }, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yonan.say_3")
 		end
 	end
 	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Yonan) == 2 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Yonan) == 2 then
-			npcHandler:say({ "Did you bring all the materials I informed you about? " }, npc, creature) -- It needs to be revised, it's not the same as the global
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yonan.say_4") -- It needs to be revised, it's not the same as the global
 			npcHandler:setTopic(playerId, 3)
 			npcHandler:setTopic(playerId, 3)
 		end
@@ -184,17 +184,17 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:removeItem(9651, 3)
 			player:removeItem(31325, 12)
 			player:removeItem(31333, 10)
-			npcHandler:say({ "Thank you this stage of the ritual is complete." }, npc, creature) -- It needs to be revised, it's not the same as the global
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yonan.say_5") -- It needs to be revised, it's not the same as the global
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Yonan, 3)
 			npcHandler:setTopic(playerId, 4)
 			npcHandler:setTopic(playerId, 4)
 		else
-			npcHandler:say({ "Sorry." }, npc, creature) -- It needs to be revised, it's not the same as the global
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yonan.say_6") -- It needs to be revised, it's not the same as the global
 		end
 	end
 
 	if MsgContains(message, "regalia of suon") then
-		npcHandler:say({ "You have all parts of the famous Regalia of Suon! Only a few of them were ever forged, back in the times of the old empire. You are holding a very rare and precious treasure, my friend. ... As you have all four pieces, I could combine them into the full insignia. Shall I do this for you?" }, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yonan.say_7")
 		npcHandler:setTopic(playerId, 5)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 5 then
 		if player:getItemById(31572, 1) and player:getItemById(31573, 1) and player:getItemById(31574, 1) and player:getItemById(31575, 1) then
@@ -203,10 +203,10 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:removeItem(31573, 1) -- sun medal
 				player:removeItem(31574, 1) -- sunray emblem
 				player:removeItem(31575, 1) -- golden bijou
-				npcHandler:say({ "Well then, let me have a look." }, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yonan.say_8")
 			end
 		else
-			npcHandler:say({ "Sorry, you dont have the necessary items." }, npc, creature) -- It needs to be revised, it's not the same as the global
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yonan.say_9") -- It needs to be revised, it's not the same as the global
 		end
 	end
 

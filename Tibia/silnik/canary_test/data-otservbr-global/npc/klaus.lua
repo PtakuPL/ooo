@@ -59,21 +59,21 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission4) == 1 then
-			npcHandler:say("Hmm, you look like a seasoned seadog. Kill Captain Ray Striker, bring me his lucky pillow as a proof and you are our hero!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klaus.say_1")
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission4, 2)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission4) == 3 then
-			npcHandler:say("Do you have Striker's pillow?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klaus.say_2")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission4) == 3 then
 			if npcHandler:getTopic(playerId) == 1 then
 				if player:removeItem(6105, 1) then
-					npcHandler:say("You DID it!!! Incredible! Boys, lets have a PAAAAAARTY!!!!", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klaus.say_3")
 					player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission4, 4)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Come back when you have his lucky pillow.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klaus.say_4")
 					npcHandler:setTopic(playerId, 0)
 				end
 			end

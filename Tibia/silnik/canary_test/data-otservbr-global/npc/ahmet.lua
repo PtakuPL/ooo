@@ -112,7 +112,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				"The nomads at the northern oasis killed someone dear to me. Go and kill at least one of them, then we talk about your document.",
 			}, npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.RewardOasis) == 1 then
-			npcHandler:say("The slayer of my enemies is my friend! For a mere 1000 gold I will create the documents you need. Are you interested?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.say_1")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "mission") or MsgContains(message, "quest") then
@@ -123,20 +123,20 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.StealFromThieves) == 1 or player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.StealFromThieves) == 2 then
-			npcHandler:say("Did you find my stuff?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.say_2")
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "book") then
-		npcHandler:say("I see: You want me to add an additional story to this book. A legend about how it brings ill luck to kill a white deer. I could do that, yes. It costs 5000 gold, however. Are you still interested?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.say_3")
 		npcHandler:setTopic(playerId, 5)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:removeMoneyBank(1000) then
 				player:addItem(7866, 1)
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission04, 5)
-				npcHandler:say("And here they are! Now forget where you got them from.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.say_4")
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.say_5")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
@@ -148,13 +148,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.StealFromThieves, 1)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:removeItem(235, 1) then
-				npcHandler:say("GREAT! If you ever need a job as my personal security guard, let me know. Here is the reward I promised you.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.say_6")
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.StealFromThieves, 3)
 				player:addItem(3031, 100)
 				player:addItem(3725, 100)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("Come back when you find my stuff.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.say_7")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 5 then
@@ -168,10 +168,10 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:setStorageValue(ThreatenedDreams.Mission01[1], 2)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("You need 5000 gps and book with ancient legends.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.say_8")
 				end
 			else
-				npcHandler:say("You are not in this mission.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ahmet.say_9")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end

@@ -69,22 +69,22 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "wand") or MsgContains(message, "rod") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand) == 2 then
-			npcHandler:say("Did you bring a sample of each wand and each rod with you?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_1")
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "sulphur") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand) == 3 then
-			npcHandler:say("Did you obtain 10 ounces of magic sulphur?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_2")
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "soul stone") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand) == 4 then
-			npcHandler:say("Were you actually able to retrieve the Necromancer's soul stone?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_3")
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "ankh") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand) == 5 then
-			npcHandler:say("Am I sensing enough holy energy from ankhs here?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_4")
 			npcHandler:setTopic(playerId, 6)
 		end
 	elseif MsgContains(message, "ritual") then
@@ -94,10 +94,10 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addOutfitAddon(138, 1) --female mage addon
 				player:addOutfitAddon(141, 1) --female summoner addon
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-				npcHandler:say("I'm glad to tell you that I have finished the ritual, player. Here is your new wand. I hope you carry it proudly for everyone to see..", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_5")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("Please let me focus for a while, |PLAYERNAME|.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_6")
 			end
 		end
 	elseif MsgContains(message, "yes") then
@@ -113,12 +113,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Alright then. Come back to with a sample of all five wands and five rods, please.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_7")
 			player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand, 2)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:getItemCount(3065) > 0 and player:getItemCount(3066) > 0 and player:getItemCount(3067) > 0 and player:getItemCount(3069) > 0 and player:getItemCount(3070) > 0 and player:getItemCount(3071) > 0 and player:getItemCount(3072) > 0 and player:getItemCount(3073) > 0 and player:getItemCount(3074) > 0 and player:getItemCount(3075) > 0 then
-				npcHandler:say("Thank you, that must have been a lot to carry. Now, please bring me 10 ounces of magic sulphur.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_8")
 				player:removeItem(3065, 1)
 				player:removeItem(3066, 1)
 				player:removeItem(3067, 1)
@@ -134,19 +134,19 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:removeItem(5904, 10) then
-				npcHandler:say("Very good. I will immediately start to prepare the ritual and extract the elemental energy from the wands and rods. Please bring me the Necromancer's soul stone now.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_9")
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand, 4)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 5 then
 			if player:removeItem(5809, 1) then
-				npcHandler:say("You have found a rarity there, |PLAYERNAME|. This will become the tip of your blessed wand. Please bring me 20 ankhs now to complete the ritual.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_10")
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand, 5)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 6 then
 			if player:removeItem(3077, 20) then
-				npcHandler:say("The ingredients for the ritual are complete! I will start to prepare your blessed wand, but I have to medidate first. Please come back later to hear how the ritual went.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_11")
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand, 6)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWandTimer, os.time() + 10800)
 				npcHandler:setTopic(playerId, 0)
@@ -166,12 +166,12 @@ local function tryEngage(npc, creature, message, keywords, parameters, node)
 	else
 		local candidate = getPlayerGUIDByName(message)
 		if candidate == 0 then -- check if there is actually a player called like this
-			npcHandler:say("A player with this name does not exist.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_12")
 		elseif candidate == player:getGuid() then -- if it's himself, cannot marry
-			npcHandler:say("You REALLY want to marry yourself? c'mon, be serious.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_13")
 		else
 			if player:getItemCount(ITEM_WEDDING_RING) == 0 or player:getItemCount(9586) == 0 then -- check for items (wedding ring and outfit box)
-				npcHandler:say("As I said, you need a wedding ring and the wedding outfit box in order to marry.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_14")
 			else
 				local candidateStatus = getPlayerMarriageStatus(candidate)
 				local candidateSpouse = getPlayerSpouse(candidate)
@@ -182,7 +182,7 @@ local function tryEngage(npc, creature, message, keywords, parameters, node)
 				elseif candidateStatus == PROPOSED_STATUS then -- if he/she already made a proposal to some1
 					if candidateSpouse == player:getGuid() then -- if this someone is you.
 						-- if this some1 is not you
-						npcHandler:say("Since both of you are willing to marry, I accept to celebrate your marriage, go prepare yourself, and tell me when you are ready for the {celebration}", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_15")
 						player:removeItem(ITEM_WEDDING_RING, 1)
 						player:removeItem(9586, 1) -- wedding outfit box
 						player:addOutfit(329) --Wife
@@ -234,7 +234,7 @@ local function confirmWedding(npc, creature, message, keywords, parameters, node
 		itemAttribute:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, player:getName() .. " & " .. getPlayerNameById(candidate) .. " forever - married on " .. os.date("%B %d, %Y."))
 		itemAttribute:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, player:getName() .. " & " .. getPlayerNameById(candidate) .. " forever - married on " .. os.date("%B %d, %Y."))
 	else
-		npcHandler:say("Your partner didn't accept your proposal, yet", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_16")
 	end
 	return true
 end
@@ -258,7 +258,7 @@ local function confirmRemoveEngage(npc, creature, message, keywords, parameters,
 		end
 		node:addChildKeyword({ "yes" }, removeEngage, { moveup = 3, text = "Ok, your marriage proposal to {" .. getPlayerNameById(playerSpouse) .. "} has been removed. Take your wedding ring back." })
 	else
-		npcHandler:say("You don't have any pending proposal to be removed.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_18")
 		keywordHandler:moveUp(player, 2)
 	end
 	return true
@@ -284,7 +284,7 @@ local function confirmDivorce(npc, creature, message, keywords, parameters, node
 		end
 		node:addChildKeyword({ "yes" }, divorce, { moveup = 3, text = "Ok, you are now divorced of {" .. getPlayerNameById(playerSpouse) .. "}. Think better next time after marrying someone." })
 	else
-		npcHandler:say("You aren't married to get a divorce.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_20")
 		keywordHandler:moveUp(player, 2)
 	end
 	return true

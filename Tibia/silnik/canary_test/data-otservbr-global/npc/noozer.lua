@@ -72,13 +72,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "cave") then
-		npcHandler:say("I was stationed in this cave to... guard something. Right now I am not even sure what that was.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.noozer.say_1")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "job") then
-		npcHandler:say("Then don't waste my time. I'm doing some important... business... here. Actually... where am I? If I find out, I will be even more angry than I am now. Out of my sight.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.noozer.say_2")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "mission") then
-		npcHandler:say("I was on a mission, too - I guess. It was all quite blurry back then. Maybe I'll leave this place after I recovered completely. I have to find out what happened to me.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.noozer.say_3")
 		npcHandler:setTopic(playerId, 0)
 	end
 

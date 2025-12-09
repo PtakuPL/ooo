@@ -42,34 +42,50 @@
 
 ---
 
-## 🎯 AKTUALNY STATUS (2025-12-09 01:47 UTC)
+## 🎯 AKTUALNY STATUS (2025-12-09 01:52 UTC)
 
-### ⚠️ ANDROID - NOWY RUN W TRAKCIE!
+### 🔧 FIX ANDROID - Naprawiona nazwa flagi CMake!
 
 | Workflow | Status | Uwagi |
 |----------|--------|-------|
-| **SonarCloud Linux** | 🟢 `queued/in_progress` | |
-| **SonarCloud Windows** | 🟢 `queued/in_progress` | |
-| **SonarCloud Web** | 🟢 `queued/in_progress` | |
-| **SonarCloud Android** | 🟡 `in_progress` | Nowy run (01:42 UTC) - czekamy na wynik |
+| **SonarCloud Linux** | 🟢 `in_progress` | |
+| **SonarCloud Windows** | 🟢 `in_progress` | |
+| **SonarCloud Web** | 🟢 `in_progress` | |
+| **SonarCloud Android** | 🔴→🟢 | **NAPRAWIONE** - zła nazwa flagi! |
 
 ---
 
-### 🔴 BŁĄD POPRZEDNIEGO ANDROID RUN (01:40 UTC):
+### 🔴 BŁĄD ANDROID - ZNALEZIONA PRZYCZYNA:
 
-**Błąd:**
+**Problem:**
 ```
 CMake Error: Could NOT find OpenAL (missing: OPENAL_LIBRARY OPENAL_INCLUDE_DIR)
-  src/CMakeLists.txt:516 (find_package)
 ```
 
-**Analiza:**
-- Poprzedni run używał STAREGO commita który miał inne flagi CMake
-- Nowy run (01:42 UTC) powinien używać aktualnego kodu z `-DOTC_ENABLE_SOUND=OFF`
-- **Czekamy na wynik nowego runu!**
+**Przyczyna:**
+Workflow używał `-DOTC_ENABLE_SOUND=OFF` ale w `src/CMakeLists.txt` flaga nazywa się **`TOGGLE_FRAMEWORK_SOUND`**!
 
-**Jeśli nadal będzie błąd OpenAL:**
-Agent 1 - sprawdź czy w `src/CMakeLists.txt:516` jest warunek który pomija `find_package(OpenAL)` gdy `OTC_ENABLE_SOUND=OFF`.
+```cmake
+# src/CMakeLists.txt linia 13:
+option(TOGGLE_FRAMEWORK_SOUND "Use SOUND " ON)
+
+# linia 441:
+if(TOGGLE_FRAMEWORK_SOUND)
+  find_package(OpenAL REQUIRED)  # ← To było wywoływane bo flaga miała złą nazwę!
+endif()
+```
+
+**FIX (Agent 2):**
+Zmieniono w `analysis-sonarcloud-android.yml`:
+```yaml
+# PRZED (błędne):
+-DOTC_ENABLE_SOUND=OFF
+
+# PO (poprawne):
+-DTOGGLE_FRAMEWORK_SOUND=OFF
+```
+
+**Commit:** pushuję teraz!
 
 ---
 

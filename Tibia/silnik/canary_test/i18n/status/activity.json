@@ -1,15 +1,22 @@
 {
-  "last_updated": "2025-12-09 02:38:01",
+  "last_updated": "2025-12-09 02:38:22",
   "current_operation": {
-    "type": "cycle_end",
+    "type": "cycle",
     "phase": 1,
     "category": "scripts",
-    "file": "Cykl 9",
-    "action": "Zakończono przetwarzanie",
-    "status": "completed",
-    "details": "10 plików"
+    "file": "Cykl #10",
+    "action": "🎮 Canary Server - scripts",
+    "status": "in_progress",
+    "details": "NPC:7683 Scripts:713 Items:36972"
   },
   "recent_operations": [
+    {
+      "time": "2025-12-09 02:38:22",
+      "type": "cycle",
+      "file": "Cykl #10",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
     {
       "time": "2025-12-09 02:38:01",
       "type": "cycle_end",
@@ -142,13 +149,6 @@
       "file": "guide_davina.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 02:37:20",
-      "type": "process",
-      "file": "dancing_fairy.lua",
-      "action": "Lua migration",
-      "status": "completed"
     }
   ],
   "errors": [],

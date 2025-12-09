@@ -1,14 +1,14 @@
 {
   "category": "scripts",
   "status": "in_progress",
-  "last_updated": "2025-12-09T02:34:51+01:00",
+  "last_updated": "2025-12-09T02:39:07+01:00",
   "summary": {
     "total_keys": 713,
-    "files_processed": 207
+    "files_processed": 227
   },
   "current_work": {
     "directory": "data-otservbr-global/scripts/",
-    "cycle": 9
+    "cycle": 10
   },
   "subdirectories": {
     "quests": {"processed": 0},
@@ -16,28 +16,28 @@
   },
   "recent_files": [
   {
-    "file": "guide_luke.lua",
-    "time": "02:34:51",
+    "file": "serafin.lua",
+    "time": "02:39:07",
     "status": "success"
   },
   {
-    "file": "perod.lua",
-    "time": "02:34:51",
+    "file": "kulag_the_guard.lua",
+    "time": "02:39:07",
     "status": "success"
   },
   {
-    "file": "ezebeth.lua",
-    "time": "02:34:51",
+    "file": "jerom.lua",
+    "time": "02:39:07",
     "status": "success"
   },
   {
-    "file": "miles_the_guard.lua",
-    "time": "02:34:51",
+    "file": "tom.lua",
+    "time": "02:39:07",
     "status": "success"
   },
   {
-    "file": "karith.lua",
-    "time": "02:34:51",
+    "file": "melfar.lua",
+    "time": "02:39:07",
     "status": "success"
   }
 ]

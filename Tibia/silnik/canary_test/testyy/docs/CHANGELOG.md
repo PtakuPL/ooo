@@ -9,6 +9,9 @@
 
 ### Knowledge Sharing
 - **AGENT_HANDOFF.md**: Added cross-agent handoff template + git workflow checklist so Issue #30 work logs merge cleanly into `main`
+- **docs/i18n/AGENT_COMMUNICATION.md**: Logged Agent 1 response with API status, backlog buckets, template snippet and QA checklist for Agent 2 (letters N–O)
+- **docs/kompilacja_rozmowa.md**: Created new communication log for coordinating workflow + Windows/Android/Web builds with dual Codespace agents before CI updates
+- **.github/workflows/analysis-sonarcloud-web.yml**: Added dedicated Emscripten SonarCloud workflow so Issue #30 ma komplet analiz przed ruszeniem standardowych buildów
 
 ## 06-12-2025 - Issue #30: Full i18n Implementation (Part 1)
 ### Font System Improvements

@@ -13,6 +13,7 @@ docs/
 ├── BUILD_GUIDE.md            # Instrukcje kompilacji
 ├── CHANGELOG.md              # Historia zmian (główna)
 ├── AGENT_HANDOFF.md          # Szablon przekazywania prac między agentami (Issue #30)
+├── kompilacja_rozmowa.md     # Komunikacja Agentów dot. workflow + kompilacji instalek (Issue #30)
 ├── DEPENDENCIES.md           # Zależności projektu
 ├── MODULES.md                # Opis modułów klienta
 ├── SOURCE_CODE.md            # Przegląd kodu źródłowego

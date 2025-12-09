@@ -1,0 +1,119 @@
+name: Analysis - SonarCloud (Web/Emscripten)
+
+on:
+  workflow_dispatch:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+  push:
+    branches: [ master ]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+env:
+  CMAKE_BUILD_PARALLEL_LEVEL: 4
+  MAKEFLAGS: '-j 4'
+  EMSDK_VERSION: '3.1.51'
+
+jobs:
+  sonarcloud-web:
+    name: SonarCloud (Web/Emscripten)
+    runs-on: ubuntu-22.04
+    defaults:
+      run:
+        working-directory: Tibia/silnik/canary_test/testyy
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Remove nested git directories (upstream mirrors)
+        run: |
+          rm -rf oryginall/canary-serwer/.git || true
+          rm -rf oryginall/otclient/.git || true
+
+      - name: Detect CPU core count
+        id: cpu-count
+        run: echo "count=$(nproc)" >> "$GITHUB_OUTPUT"
+
+      - name: Cache Emscripten SDK
+        uses: actions/cache@v4
+        with:
+          path: ~/emsdk
+          key: emsdk-${{ env.EMSDK_VERSION }}-${{ runner.os }}
+          restore-keys: |
+            emsdk-${{ env.EMSDK_VERSION }}-
+
+      - name: Setup Emscripten SDK
+        uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: ${{ env.EMSDK_VERSION }}
+          actions-cache-folder: 'emsdk-cache'
+
+      - name: Cache SonarCloud analysis data
+        uses: actions/cache@v4
+        with:
+          path: ~/.cfamily
+          key: sonar-cfamily-Web-${{ hashFiles('Tibia/silnik/canary_test/testyy/CMakeLists.txt') }}
+          restore-keys: |
+            sonar-cfamily-Web-
+
+      - name: Cache SonarCloud packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.sonar/cache
+          key: sonar-packages-Web
+          restore-keys: |
+            sonar-packages-Web-
+
+      - name: Setup CMake + Ninja
+        uses: lukka/get-cmake@latest
+        with:
+          cmakeVersion: '~3.27.0'
+
+      - name: Generate compilation database (Emscripten)
+        run: |
+          mkdir -p build-web
+          emcmake cmake -G "Ninja" \
+                -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+                -DCMAKE_BUILD_TYPE=Debug \
+                -DSPEED_UP_BUILD_UNITY=OFF \
+                -DOTC_ENABLE_TTF=OFF \
+                -DOTC_ENABLE_HARFBUZZ=OFF \
+                -DOTC_ENABLE_FRIBIDI=OFF \
+                -DOTC_ENABLE_PROTOBUF=OFF \
+                -S . -B build-web
+
+      - name: Run PR sonar-scanner
+        if: ${{ github.event_name == 'pull_request' || github.event_name == 'pull_request_target' }}
+        uses: SonarSource/sonarqube-scan-action@v6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONARCLOUDTOKEN }}
+        with:
+          projectBaseDir: Tibia/silnik/canary_test/testyy
+          args: >
+            -Dsonar.cfamily.threads=${{ steps.cpu-count.outputs.count }}
+            -Dsonar.cfamily.cache.enabled=true
+            "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
+            -Dsonar.cfamily.compile-commands=build-web/compile_commands.json
+            -Dsonar.pullrequest.key=${{ github.event.pull_request.number }}
+            -Dsonar.pullrequest.branch=${{ github.event.pull_request.head.ref }}
+            -Dsonar.pullrequest.base=${{ github.event.pull_request.base.ref }}
+
+      - name: Run sonar-scanner
+        if: ${{ github.event_name == 'push' }}
+        uses: SonarSource/sonarqube-scan-action@v6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONARCLOUDTOKEN }}
+        with:
+          projectBaseDir: Tibia/silnik/canary_test/testyy
+          args: >
+            -Dsonar.cfamily.threads=${{ steps.cpu-count.outputs.count }}
+            -Dsonar.cfamily.cache.enabled=true
+            "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
+            -Dsonar.cfamily.compile-commands=build-web/compile_commands.json

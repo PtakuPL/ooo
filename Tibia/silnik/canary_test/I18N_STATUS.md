@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-09 01:00:59 UTC  
+> **Aktualizacja:** 2025-12-09 01:03:23 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **1371** | ↑ |
+| 📁 Plików przetworzonych | **1** | ↑ |
 | ⏭️ Plików wykluczonych | **4911** | - |
 | 🔑 Kluczy i18n | **42109** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **58** | ✓ |
-| 🔄 Cykl | **#6** | - |
+| 🔄 Cykl | **#7** | - |
 
 ---
 
@@ -78,9 +78,9 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #6` |
+| **Plik** | `Cykl #7` |
 | **Szczegóły** | NPC:4108 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-09 01:00:19 |
+| **Ostatnia aktualizacja** | 2025-12-09 01:02:46 |
 
 ### 📈 Statystyki sesji
 
@@ -124,18 +124,18 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #6 |
+| 🔄 Cykl | #7 |
 
 ### 📁 Podkatalogi - Postęp
 
 | Katalog | Przetworzonych | Status |
 |---------|----------------|--------|
-| `quests/` | 286 | 🔄 W trakcie |
-| `actions/` | 58 | 🔄 W trakcie |
-| `movements/` | 13 | 🔄 W trakcie |
-| `creaturescripts/` | 8 | 🔄 W trakcie |
-| `talkactions/` | 33 | 🔄 W trakcie |
-| `globalevents/` | 1 | 🔄 W trakcie |
+| `quests/` | 0 | ⏳ Oczekuje |
+| `actions/` | 0 | ⏳ Oczekuje |
+| `movements/` | 0 | ⏳ Oczekuje |
+| `creaturescripts/` | 0 | ⏳ Oczekuje |
+| `talkactions/` | 0 | ⏳ Oczekuje |
+| `globalevents/` | 0 | ⏳ Oczekuje |
 
 ### 🔮 Kategorie specjalne (z JSON)
 
@@ -149,11 +149,7 @@ selfSay("text")
 
 | Plik | Czas | Status |
 |------|------|--------|
-| `bertram.lua` | 01:00:16 | ✅ |
-| `canary.lua` | 19:57:22 | ✅ |
-| `canary.lua` | 19:57:22 | ✅ |
-| `i18n.lua` | 10:45:53 | ✅ |
-| `i18n.lua` | 10:45:53 | ✅ |
+| `# Pliki przetworzone przez i18n worker` | 01:00:00 | ✅ |
 
 ### 💻 Przykład kodu (ostatni plik)
 
@@ -225,7 +221,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 1761064, Cykl #6 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 1761064, Cykl #7 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

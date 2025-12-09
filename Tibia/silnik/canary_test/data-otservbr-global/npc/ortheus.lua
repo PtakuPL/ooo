@@ -56,31 +56,31 @@ local function creatureSayCallback(npc, creature, type, message)
 	local playerId = player:getId()
 	if message == "cookie" then
 		if player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission02) == 1 and player:getItemCount(8199) > 0 and player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Ortheus) < 0 then
-			npcHandler:say("A cookie? Well... I have to admit I haven't had one for ages. Can I have it?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ortheus.say_1")
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:say("It'd be better for you to leave now.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ortheus.say_2")
 		end
 	elseif message == "yes" then
 		if npcHandler:getTopic(playerId) == 1 and player:removeItem(8199, 1) then -- garlic cookie
-			npcHandler:say("Well thanks, it looks tasty, I'll just take a bi - COUGH! Are you trying to poison me?? Get out of here before I forget myself!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ortheus.say_3")
 			player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Ortheus, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if player:removeItem(2880, 17) then -- mug of tea
-				npcHandler:say("Wow. These polite young adventurers nowadays. Thank you.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ortheus.say_4")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("Hmmm, you don't have tea with you.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ortheus.say_5")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif message == "tea" then
-		npcHandler:say("Have you actually brought me a mug of tea??", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ortheus.say_6")
 		npcHandler:setTopic(playerId, 2)
 	elseif message == "no" then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("What a pity.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ortheus.say_7")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

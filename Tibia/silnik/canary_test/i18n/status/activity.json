@@ -1,160 +1,160 @@
 {
-  "last_updated": "2025-12-09 03:07:24",
+  "last_updated": "2025-12-09 03:11:52",
   "current_operation": {
     "type": "cycle_end",
     "phase": 1,
     "category": "scripts",
-    "file": "Cykl 3",
+    "file": "Cykl 4",
     "action": "Zakończono przetwarzanie",
     "status": "completed",
     "details": "10 plików"
   },
   "recent_operations": [
     {
-      "time": "2025-12-09 03:07:24",
+      "time": "2025-12-09 03:11:52",
       "type": "cycle_end",
-      "file": "Cykl 3",
+      "file": "Cykl 4",
       "action": "Zakończono przetwarzanie",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:07:24",
-      "type": "process",
-      "file": "tarun.lua",
-      "action": "Lua migration",
+      "time": "2025-12-09 03:11:52",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/pages.php",
+      "action": "Ekstrakcja PHP",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:07:22",
-      "type": "process",
-      "file": "tarun.lua",
-      "action": "Przetwarzanie lua",
+      "time": "2025-12-09 03:11:52",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/pages.php",
+      "action": "Analiza PHP",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:07:22",
+      "time": "2025-12-09 03:11:51",
       "type": "process",
-      "file": "gewen.lua",
-      "action": "Lua migration",
+      "file": "pages.php",
+      "action": "Przetwarzanie php",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 03:11:51",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/reports.php",
+      "action": "Ekstrakcja PHP",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:07:19",
-      "type": "process",
-      "file": "gewen.lua",
-      "action": "Przetwarzanie lua",
+      "time": "2025-12-09 03:11:51",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/reports.php",
+      "action": "Analiza PHP",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:07:19",
+      "time": "2025-12-09 03:11:51",
       "type": "process",
-      "file": "vulturenose.lua",
-      "action": "Lua migration",
+      "file": "reports.php",
+      "action": "Przetwarzanie php",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 03:11:51",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/mailer.php",
+      "action": "Ekstrakcja PHP",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:07:13",
-      "type": "process",
-      "file": "vulturenose.lua",
-      "action": "Przetwarzanie lua",
+      "time": "2025-12-09 03:11:51",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/mailer.php",
+      "action": "Analiza PHP",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:07:11",
+      "time": "2025-12-09 03:11:51",
       "type": "process",
-      "file": "vascalir.lua",
-      "action": "Lua migration",
+      "file": "mailer.php",
+      "action": "Przetwarzanie php",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 03:11:51",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/clmd.php",
+      "action": "Ekstrakcja PHP",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:06:59",
-      "type": "process",
-      "file": "vascalir.lua",
-      "action": "Przetwarzanie lua",
+      "time": "2025-12-09 03:11:51",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/clmd.php",
+      "action": "Analiza PHP",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:06:59",
+      "time": "2025-12-09 03:11:50",
       "type": "process",
-      "file": "ulala.lua",
-      "action": "Lua migration",
+      "file": "clmd.php",
+      "action": "Przetwarzanie php",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 03:11:50",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/accounts.php",
+      "action": "Ekstrakcja PHP",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:06:57",
-      "type": "process",
-      "file": "ulala.lua",
-      "action": "Przetwarzanie lua",
+      "time": "2025-12-09 03:11:50",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/accounts.php",
+      "action": "Analiza PHP",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:06:56",
+      "time": "2025-12-09 03:11:50",
       "type": "process",
-      "file": "mr_morris.lua",
-      "action": "Lua migration",
+      "file": "accounts.php",
+      "action": "Przetwarzanie php",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 03:11:50",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/whereami.php",
+      "action": "Ekstrakcja PHP",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:06:51",
-      "type": "process",
-      "file": "mr_morris.lua",
-      "action": "Przetwarzanie lua",
+      "time": "2025-12-09 03:11:49",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/whereami.php",
+      "action": "Analiza PHP",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:06:51",
+      "time": "2025-12-09 03:11:49",
       "type": "process",
-      "file": "halvar.lua",
-      "action": "Lua migration",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-09 03:06:48",
-      "type": "process",
-      "file": "halvar.lua",
-      "action": "Przetwarzanie lua",
+      "file": "whereami.php",
+      "action": "Przetwarzanie php",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:06:48",
+      "time": "2025-12-09 03:11:49",
       "type": "process",
-      "file": "king_tibianus.lua",
-      "action": "Lua migration",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-09 03:06:39",
-      "type": "process",
-      "file": "king_tibianus.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 03:06:39",
-      "type": "process",
-      "file": "humgolf.lua",
-      "action": "Lua migration",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-09 03:06:38",
-      "type": "process",
-      "file": "humgolf.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 03:06:37",
-      "type": "process",
-      "file": "elane.lua",
-      "action": "Lua migration",
+      "file": "protocolgame.cpp",
+      "action": "C++ extraction",
       "status": "completed"
     }
   ],
   "errors": [],
   "warnings": [],
   "stats": {
-    "files_this_session": 657,
+    "files_this_session": 663,
     "keys_this_session": 0,
     "errors_this_session": 0,
     "fixes_applied": 0

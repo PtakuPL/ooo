@@ -14824,3 +14824,146 @@ Kategoria: npc
 Kategoria: npc
 
 ---
+
+## [2025-12-09 03:09:22] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gerimor.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 03:09:25] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/guide_edna.lua`
+
+**Akcja:** Zmigrowano 11 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 03:09:32] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/ortheus.lua`
+
+**Akcja:** Zmigrowano 24 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 03:09:36] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/the_oracle.lua`
+
+**Akcja:** Zmigrowano 7 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 03:09:40] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/moe.lua`
+
+**Akcja:** Zmigrowano 10 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 03:10:05] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/scripts/quests/the_first_dragon/actions_rewards.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: scripts
+
+---
+
+## [2025-12-09 03:11:11] ANALIZA C++
+
+### Plik: `src/game/game.cpp`
+
+**Akcja:** Znaleziono 62 stringów do migracji
+
+**Szczegóły:**
+Wymaga ręcznej weryfikacji
+
+---
+
+## [2025-12-09 03:11:11] ANALIZA C++
+
+### Plik: `src/io/ioprey.cpp`
+
+**Akcja:** Znaleziono 5 stringów do migracji
+
+**Szczegóły:**
+Wymaga ręcznej weryfikacji
+
+---
+
+## [2025-12-09 03:11:12] ANALIZA C++
+
+### Plik: `src/creatures/npcs/npc.cpp`
+
+**Akcja:** Znaleziono 3 stringów do migracji
+
+**Szczegóły:**
+Wymaga ręcznej weryfikacji
+
+---
+
+## [2025-12-09 03:11:48] ANALIZA C++
+
+### Plik: `src/creatures/combat/spells.cpp`
+
+**Akcja:** Znaleziono 3 stringów do migracji
+
+**Szczegóły:**
+Wymaga ręcznej weryfikacji
+
+---
+
+## [2025-12-09 03:11:48] ANALIZA C++
+
+### Plik: `src/creatures/players/grouping/party.cpp`
+
+**Akcja:** Znaleziono 14 stringów do migracji
+
+**Szczegóły:**
+Wymaga ręcznej weryfikacji
+
+---
+
+## [2025-12-09 03:11:49] ANALIZA C++
+
+### Plik: `src/lua/functions/map/house_functions.cpp`
+
+**Akcja:** Znaleziono 3 stringów do migracji
+
+**Szczegóły:**
+Wymaga ręcznej weryfikacji
+
+---
+
+## [2025-12-09 03:11:49] ANALIZA C++
+
+### Plik: `src/server/network/protocol/protocolgame.cpp`
+
+**Akcja:** Znaleziono 8 stringów do migracji
+
+**Szczegóły:**
+Wymaga ręcznej weryfikacji
+
+---

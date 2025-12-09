@@ -46204,6 +46204,147 @@ npc.gewen.stdmod_9,"I can fly you to {Darashia}, {Svargrond}, {Edron}, {Issavi},
 npc.tarun.say_1,I hope you will find my brother.,,missing
 npc.tarun.say_2,I thank you! This is more than I could hope!,,missing
 npc.tarun.say_3,As you wish.,,missing
+npc.ztiss.multi_1,Excellent! Now you may leave ziz area zrough ze teleporter to ze norz. It will bring you to a hidden boat. Ziz boat will take you to ze tournament izle. ...,,missing
+npc.ztiss.multi_2,Zere you'll learn anyzing you need to know about ze great tournament.,,missing
+npc.ztiss.multi_3,"You are zmart for a zoftzkin, but before you begin to feel too zmart, you should know zat we will zeal our deal wiz you drinking a ztrong poizon zat will inevitably kill you if you want to trick me and not attend ze tournament. ...",,missing
+npc.ztiss.multi_4,Zo are you ready to drink ziz poizon here?,,missing
+npc.ztiss.multi_5,Zere iz a great tournament of ztrengz each decade. It determinez ze granted privilegez for zertain individualz of power for ze comming decade. ...,,missing
+npc.ztiss.multi_6,"My mazter wantz to zurprize hiz opponentz by an unexpected move. He will uze warriorz from ze outzide, zomeone zat no one can azzezz. ...",,missing
+npc.ztiss.multi_7,One of ziz warriorz could be you. Or you could ztay here and rot in ze dungeon. Are you interezted in ziz deal?,,missing
+npc.ztiss.multi_8,Ziz iz not for you to azk. I work for zomeone of immenze power. He haz an {offer} for you.,,missing
+npc.gerimor.say_1,You have already fulfilled your job to my full satisfaction. The cults are investigated and the final boss is eliminated. I have nothing more for you to do. Fare you well!,,missing
+npc.gerimor.say_2,You already done this mission.,,missing
+npc.gerimor.say_3,Very nice! Come back if you have found what's going on in this cult.,,missing
+npc.gerimor.say_4,You have not finished your work yet. Come back when you're done.,,missing
+npc.gerimor.say_5,Here's your reward. Thank you and farewell!,,missing
+npc.gerimor.say_6,"What a pitty! You can come back, when ever you want, if you have changed your opinion.",,missing
+npc.guide_edna.say_1,"Would you like me to mark locations like - for example - the depot, bank and shops on your map?",,missing
+npc.guide_edna.say_2,Here you go.,,missing
+npc.guide_edna.say_3,"Well, nothing wrong about exploring the town on your own. Let me know if you need something!",,missing
+npc.guide_edna.stdmod_4,"Currently, I can tell you all about the town, its temple, the bank, shops, spell trainers and the depot, as well as about the world status.",,missing
+npc.guide_edna.stdmod_5,"The temple is just south west of here. Actually, it's a temple raft and the priestess is somewhat... meow... you'll see what I mean.",,missing
+npc.guide_edna.stdmod_6,"Our bank clerk Znozel is somewhat... special. You can find him north of this harbour and then to the right, past the tavern.",,missing
+npc.guide_edna.stdmod_7,"You can buy weapons, armor, tools, gems, magical equipment, furniture, spells and food here.",,missing
+npc.guide_edna.stdmod_8,"The depot is a place where you can safely store your belongings. You are also protected against attacks there. I escort newcomers there, but it's just north of here.",,missing
+npc.guide_edna.stdmod_9,"I'm the only feline guide in Tibia. I might not have fingers anymore, but with my paw I can still mark important locations on your map and give you some information about the town and the world status.",,missing
+npc.guide_edna.stdmod_10,"Yalahar is a very old city of gigantic size, consisting of a city centre and eight quarters. The beings that are closest to be called rulers of the city are the Yalahari.",,missing
+npc.guide_edna.stdmod_11,I'm Jonathan. Pleased to meet you.,,missing
+npc.ortheus.say_1,A cookie? Well... I have to admit I haven't had one for ages. Can I have it?,,missing
+npc.ortheus.say_2,It'd be better for you to leave now.,,missing
+npc.ortheus.say_3,"Well thanks, it looks tasty, I'll just take a bi - COUGH! Are you trying to poison me?? Get out of here before I forget myself!",,missing
+npc.ortheus.say_4,Wow. These polite young adventurers nowadays. Thank you.,,missing
+npc.ortheus.say_5,"Hmmm, you don't have tea with you.",,missing
+npc.ortheus.say_6,Have you actually brought me a mug of tea??,,missing
+npc.ortheus.say_7,What a pity.,,missing
+npc.ortheus.stdmod_8,I can't imagine a better place to live.,,missing
+npc.ortheus.stdmod_9,"Though the city has seen better days, the quality of life is still much better than in most other cities.",,missing
+npc.ortheus.stdmod_10,"Hm, good question. Maybe old, wise man?",,missing
+npc.ortheus.stdmod_11,I'm used to being called old man. Simple as that.,,missing
+npc.ortheus.stdmod_12,I don't know what you're talking about.,,missing
+npc.ortheus.stdmod_13,"Yes, it's a bit messy down there. Sorry.",,missing
+npc.ortheus.stdmod_14,Doesn't ring a bell.,,missing
+npc.ortheus.stdmod_15,He rarely comes here.,,missing
+npc.ortheus.stdmod_16,A man of the seas.,,missing
+npc.ortheus.stdmod_17,"He used to visit me for a chat, but ever since that new tavern opened I haven't seen him much anymore.",,missing
+npc.ortheus.stdmod_18,He sometimes delivers fruit and vegetables to this quarter.,,missing
+npc.ortheus.stdmod_19,"Though the city has seen better days, the quality of life is still much better than in most other cities.",,missing
+npc.ortheus.stdmod_20,I can't imagine a better place to live,,missing
+npc.ortheus.stdmod_21,Whatever that's supposed to mean.,,missing
+npc.ortheus.stdmod_22,"I don't have anything that I could give you as a reward. Guess you aren't so selfless after all, huh?",,missing
+npc.ortheus.stdmod_23,"They try to protect the city and do a decent job. Well - no, a poor job, I mean a poor job.",,missing
+npc.ortheus.stdmod_24,You can bring me a mug of tea if you want to.,,missing
+npc.the_oracle.say_1,CHILD! COME BACK WHEN YOU HAVE GROWN UP!,,missing
+npc.the_oracle.say_2,YOU ALREADY HAVE A VOCATION!,,missing
+npc.the_oracle.say_3,"IN WHICH TOWN DO YOU WANT TO LIVE: {CARLIN}, {THAIS}, OR {VENORE}?",,missing
+npc.the_oracle.say_4,"IN WHICH TOWN DO YOU WANT TO LIVE: {CARLIN}, {THAIS}, OR {VENORE}?",,missing
+npc.the_oracle.say_5,"{KNIGHT}, {PALADIN}, {SORCERER}, OR {DRUID}?",,missing
+npc.the_oracle.say_6,SO BE IT!,,missing
+npc.the_oracle.say_7,"THEN WHAT? {KNIGHT}, {PALADIN}, {SORCERER}, OR {DRUID}?",,missing
+npc.moe.say_1,"I guess I could do this, yes. But I have to impose a condition. If you bring me ten sphinx feathers I will steal this ring for you.",,missing
+npc.moe.say_2,"Thank you! They look so pretty, I'm very pleased. Agreed, now I will steal the ring from the Ambassador of Rathleton. Just be patient, I have to wait for a good moment.",,missing
+npc.moe.say_3,"If you bring me ten sphinx feathers, I will steal this ring for you.",,missing
+npc.moe.say_4,You already delivered the feathers. Be patient while I steal the ring.,,missing
+npc.moe.say_5,You're arriving at the right time. I have the ring you asked for. It was not too difficult. I just had to wait until the Ambassador left his residence and then I climbed in through the window. Here it is.,,missing
+npc.moe.say_6,"I will steal it, promised. I'm just waiting for a good moment.",,missing
+npc.moe.say_7,"I guess I could do this, yes. But I have to impose a condition. If you bring me ten sphinx feathers I will steal this ring for you.",,missing
+npc.moe.say_8,You don't need this ring anymore.,,missing
+npc.moe.say_9,"I'm upset to accuse myself, the lyre is hidden in a tomb west of Kilmaresh.",,missing
+npc.moe.say_10,You already know about the lyre's location.,,missing
+npc.canary.multiline_1,"The goal is for Canary to be an 'engine', that is, it will be \z
+					a server with a 'clean' datapack, with as few things as possible, \z
+					thus facilitating development and testing.",,missing
+npc.chondur.multi_1,"I guess I cannot stop you then. Since you told me about my apprentice, it is my turn to help you. I will perform a ritual for you, but I need a few ingredients. ...",,missing
+npc.chondur.multi_2,"Bring me one fresh dead chicken, one fresh dead rat and one fresh dead black sheep, in that order.",,missing
+npc.chondur.multi_3,Ohhhhh Mmmmmmmmmmmm Ammmmmgggggggaaaaaaa ...,,missing
+npc.chondur.multi_4,Aaaaaaaaaahhmmmm Mmmaaaaaaaaaa Kaaaaaamaaaa ...,,missing
+npc.chondur.multi_5,Brrt! I think it worked! It's a male stampor. I linked this spirit to yours. You can probably already summon him to you ...,,missing
+npc.chondur.multi_6,"So, since we are done here... I need to prepare another ritual, so please let me work, child.",,missing
+npc.chondur.multi_7,Good! Come back once you have collected 5 tribal masks and 5 banana staves.,,missing
+npc.chondur.multi_8,I shall grant you a sign of your progress as shaman if you can fulfil my task.,,missing
+npc.chondur.multi_9,The dworcs of Tiquanda like to wear certain tribal masks which I would like to take a look at. Please bring me 5 of these masks. ...,,missing
+npc.chondur.multi_10,"Secondly, the high ape magicians of Banuta use banana staves. I would love to learn more about these staves, so please bring me 5 of them also. ...",,missing
+npc.chondur.multi_11,"If you manage to fulfil this task, I will grant you your own mask. Have you understood everything and are ready for this test?",,missing
+npc.chondur.multi_12,Deep in the Tiquandian jungle a monster lurks which is seldom seen. It is the revenge of the jungle against humankind. ...,,missing
+npc.chondur.multi_13,"This monster, if slain, carries a rare root called Mandrake. If you find it, bring it to me. Also, gather 5 of the voodoo dolls used by the mysterious dworc voodoomasters. ...",,missing
+npc.chondur.multi_14,"If you manage to fulfil this task, I will grant you your own staff. Have you understood everything and are ready for this test?",,missing
+npc.lothar.multi_1,"The stampor in the back? She's my friend, but she came to me out of her own free will. I must admit I've never managed to tame any other stampor. ...",,missing
+npc.lothar.multi_2,"I heard that there's some sort of voodoo magic which would allow you to summon a stampor, but I'm not a voodoo expert, so I wouldn't know.",,missing
+npc.lothar.multi_3,It is said that ferocious creatures once thrived on lush islands in the far northern sea. They died aeons ago when times of great cold came and formed the icy wastes of Svargrond as we know them today. ...,,missing
+npc.lothar.multi_4,"Travellers from the north have told stories of these creatures, watching them from within the ice in the deepest caves, still vigilant as if frozen in time. 'Ursagrodon' they called them. ...",,missing
+npc.lothar.multi_5,"With tinder and some kind of fireproof vessel, you could create a device to melt the ice surrounding their remains and see for yourself what this is all about.",,missing
+npc.lothar.multi_6,"Did you know that you can also create those by yourself? Trade a gold ingot with the sweaty cyclops in Ab'Dendriel for a cup of molten gold. If you use that on a fir tree, you have a small chance to get a golden fir cone. ...",,missing
+npc.lothar.multi_7,"Those are needed to impress the white deers that roam around Ab'Dendriel sometimes, but I'd wait until you are able to enrage one to make sure it has the necessary strength to carry you.",,missing
+npc.lothar.multi_8,"That's an interesting one, nothing like I have ever seen myself. What you describe is a device of which I heard that it grants literally 'complete' control over some sort of... artificial thing? ...",,missing
+npc.lothar.multi_9,"Well, if you ever happen to come about a stroke of luck and find such a thing - use it on an appropriate mount, it will probably be mechanical, driven by... something.",,missing
+npc.malor.multi_1,You've met Fahim the Wise? That's good. I'm pretty sure it was easy to give him a nice beating. ...,,missing
+npc.malor.multi_2,"If you should feel like killing blue djinns in our service again, just talk to me about that task.",,missing
+npc.malor.multi_3,"Well well, human. Not bad. I'm not surprised, since you have done acceptably well in the past. So I suppose I can ask you for another thing. ...",,missing
+npc.malor.multi_4,"Seek out Fahim the Wise. A name which is utter mockery, since he's one of the stupidest Marid I've ever seen. He hides somewhere in Yalahar, probably afraid to come anywhere near Mal'ouquah. ...",,missing
+npc.malor.multi_5,I suggest you teach that joke of a djinn a lesson he won't forget.,,missing
+npc.malor.multi_6,"Well well, human. So you really have made it - you have smuggled the modified lamp into Gabel's bedroom! ...",,missing
+npc.malor.multi_7,"I never thought I would say this to a human, but I must confess I am impressed. ...",,missing
+npc.malor.multi_8,Perhaps I have underestimated you and your kind after all. ...,,missing
+npc.malor.multi_9,I guess I will take this as a lesson to keep in mind when I meet you on the battlefield. ...,,missing
+npc.malor.multi_10,"But that's in the future. For now, I will confine myself to give you the permission to trade with my people whenever you want to. ...",,missing
+npc.malor.multi_11,"Farewell, human!",,missing
+npc.malor.multi_12,"Well, listen. We are trying to acquire the ultimate weapon to defeat Gabel: Fa'hradin's lamp! ...",,missing
+npc.malor.multi_13,"At the moment it is still in the possession of that good old friend of mine, the Orc King, who kindly released me from it. ...",,missing
+npc.malor.multi_14,"However, for some reason he is not as friendly as he used to be. You better watch out, human, because I don't think you will get the lamp without a fight. ...",,missing
+npc.malor.multi_15,Once you have found the lamp you must enter Ashta'daramai again. Sneak into Gabel's personal chambers and exchange his sleeping lamp with Fa'hradin's lamp! ...,,missing
+npc.malor.multi_16,"If you succeed, the war could be over one night later!",,missing
+npc.malor.multi_17,So you would like to fight for us. Hmm. ...,,missing
+npc.malor.multi_18,"You show true courage, human, but I will not accept your offer at this point of time.",,missing
+npc.malor.multi_19,"I guess this is the first time I entrust a human with a mission. And such an important mission, too. But well, we live in hard times, and I am a bit short of adequate staff. ...",,missing
+npc.malor.multi_20,"Besides, Baa'leal told me you have distinguished yourself well in previous missions, so I think you might be the right person for the job. ...",,missing
+npc.malor.multi_21,"But think carefully, human, for this mission will bring you close to certain death. Are you prepared to embark on this mission?",,missing
+npc.malor.multi_22,Hahahaha! ...,,missing
+npc.malor.multi_23,"|PLAYERNAME|, that almost sounded like the word of greeting. Humans - cute they are!",,missing
+npc.ceiron.multi_1,I hope that I am not asking too much of you with this task. I heard of a flower which is currently unique in Tibia and can survive at only one place. ...,,missing
+npc.ceiron.multi_2,"This place is somewhere in the bleak mountains of Nargor. I would love to have a sample of its blossom, but the problem is that it seldom actually blooms. ...",,missing
+npc.ceiron.multi_3,"I cannot afford to travel there each day just to check whether the time has already come, besides I have no idea where to start looking. ...",,missing
+npc.ceiron.multi_4,I would be deeply grateful if you could support me in this matter and collect a sample of the blooming Griffinclaw for me. ...,,missing
+npc.ceiron.multi_5,Have you understood everything I told you and will fullfil this task for me?,,missing
+npc.ceiron.multi_6,"I have one final task for you, |PLAYERNAME|. Many months ago, I was trying to free the war wolves which are imprisoned inside the orc fortress.",,missing
+npc.ceiron.multi_7,"Unfortunately, my intrusion was discovered and I had to run for my life. During my escape, I lost my favourite wolf tooth chain.",,missing
+npc.ceiron.multi_8,"It should still be somewhere in the fortress, if the orcs did not try to eat it. I really wish you could retrieve it for me.",,missing
+npc.ceiron.multi_9,It has the letter 'C' carved into one of the teeth. Please look for it.,,missing
+npc.ceiron.multi_10,Have you understood everything I told you and will fulfil this task for me?,,missing
+npc.ceiron.multi_11,"I'm glad that you are still with me, |PLAYERNAME|. Especially because my next task might require even more patience from your side than the ones before. ...",,missing
+npc.ceiron.multi_12,Demons... these unholy creatures should have never been able to walk the earth. They are a brood fueled only by hatred and malice. ...,,missing
+npc.ceiron.multi_13,"Even if slain, their evil spirit is not fully killed. It needs a blessed stake to release their last bit of fiendishness and turn them into dust. ...",,missing
+npc.ceiron.multi_14,"It does not work all the time, but if you succeed, their vicious spirit is finally defeated. ...",,missing
+npc.ceiron.multi_15,"I want proof that you are on the right side, against Zathroth. Bring me 100 ounces of demon dust and I shall be convinced. ...",,missing
+npc.ceiron.multi_16,You will probably need to ask a priest for help to obtain a blessed stake. ...,,missing
+npc.ceiron.multi_17,Have you understood everything I told you and will fulfil this task for me?,,missing
+npc.ceiron.multi_18,"Listen, my next task for you is not exactly easy either. ...",,missing
+npc.ceiron.multi_19,In the mountains between Ankrahmun and Tiquanda are two hydra lairs. The nothern one has many waterfalls whereas the southern one has just tiny water trickles. ...,,missing
+npc.ceiron.multi_20,"However, these trickles are said to contain water as pure and clean as nowhere else in Tibia. ...",,missing
+npc.ceiron.multi_21,"If you could reach one of these trickles and retrieve a water sample for me, it would be a great help. ...",,missing
+npc.ceiron.multi_22,"It is important that you take the water directly from the trickle, not from the pond - else it will not be as pure anymore. ...",,missing
+npc.ceiron.multi_23,Have you understood everything I told you and will fulfil this task for me?,,missing
+npc.queen_eloise.multi_1,"Excellent! Now, let me explain. If you donate 1.000.000.000 gold pieces, you will be entitled to wear a unique outfit. ...",,missing
+npc.queen_eloise.multi_2,"You will be entitled to wear the {armor} for 500.000.000 gold pieces, {helmet} for an additional 250.000.000 and the {boots} for another 250.000.000 gold pieces. ...",,missing
+npc.queen_eloise.multi_3,What will it be?,,missing
 player.status.cleanse,You are no longer {0}. (cleanse charm),Ya no estás {0}. (amuleto de limpieza),translated
 player.condition.poisoned,You are poisoned.,Estás envenenado.,translated
 player.condition.drowning,You are drowning.,Te estás ahogando.,translated
@@ -46466,8 +46607,8 @@ scripts.actions_mission3_chest.msg_1,You have found a flask of poison.,,missing
 scripts.actions_mission3_chest.msg_2,The chest is empty.,,missing
 scripts.actions_zalamon_door.msg_1,The door seems to be sealed against unwanted intruders.,,missing
 scripts.actions_ungreez_door.msg_1,The door seems to be sealed against unwanted intruders.,,missing
-scripts.actions_rewards.msg_1,You are not eligible to claim these rewards yet.,,missing
-scripts.actions_rewards.msg_2,You found a backpack.,,missing
+scripts.actions_rewards.msg_1,You found ,,missing
+scripts.actions_rewards.msg_2,You found ,,missing
 scripts.movements_blood_entrance.msg_1,You need at least level 250 to enter.,,missing
 scripts.movements_blood_entrance.msg_2,You offerings to this sanguine master of this realm have been insufficient. You can not pass.,,missing
 scripts.actions_entrances.msg_1,You need at least level 250 to enter.,,missing
@@ -47654,9 +47795,9 @@ data.otservbr.global.npc.cassino.L252.526,Good bye.,Good bye.,identical
 data.otservbr.global.npc.cedrik.L148.217,"Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.","Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",identical
 data.otservbr.global.npc.cedrik.L149.218,"Remember: If you are heavily wounded or poisoned, I can heal you for free.","Remember: If you are heavily wounded or poisoned, I can heal you for free.",identical
 data.otservbr.global.npc.cedrik.L150.219,"May the gods bless you, |PLAYERNAME|!","May the gods bless you, |PLAYERNAME|!",identical
-data.otservbr.global.npc.ceiron.L200.33,"Always nice to meet a fellow druid, |PLAYERNAME|.","Always nice to meet a fellow druid, |PLAYERNAME|.",identical
-data.otservbr.global.npc.ceiron.L201.34,"May Crunor bless and guide you, |PLAYERNAME|.","May Crunor bless and guide you, |PLAYERNAME|.",identical
-data.otservbr.global.npc.ceiron.L202.35,"May Crunor bless and guide you, |PLAYERNAME|.","May Crunor bless and guide you, |PLAYERNAME|.",identical
+data.otservbr.global.npc.ceiron.L192.33,"Always nice to meet a fellow druid, |PLAYERNAME|.","Always nice to meet a fellow druid, |PLAYERNAME|.",identical
+data.otservbr.global.npc.ceiron.L193.34,"May Crunor bless and guide you, |PLAYERNAME|.","May Crunor bless and guide you, |PLAYERNAME|.",identical
+data.otservbr.global.npc.ceiron.L194.35,"May Crunor bless and guide you, |PLAYERNAME|.","May Crunor bless and guide you, |PLAYERNAME|.",identical
 data.otservbr.global.npc.cerdras.L85.574,Greetings my friend!,Greetings my friend!,identical
 data.otservbr.global.npc.cerdras.L86.575,"May Crunor bless and guide you, |PLAYERNAME|.","May Crunor bless and guide you, |PLAYERNAME|.",identical
 data.otservbr.global.npc.charles.L142.186,Ahoy. Where can I sail you today?,Ahoy. Where can I sail you today?,identical
@@ -47677,8 +47818,8 @@ data.otservbr.global.npc.chester.kahs.L306.777,Take care out there!,Take care ou
 data.otservbr.global.npc.chief.grarkharok.L158.1113,Me Chief Grarkharok! No do {nothing}!,Me Chief Grarkharok! No do {nothing}!,identical
 data.otservbr.global.npc.chief.grarkharok.L159.1114,Grarkharok be {chief}!,Grarkharok be {chief}!,identical
 data.otservbr.global.npc.chief.grarkharok.L160.1115,Grarkharok be {chief}!,Grarkharok be {chief}!,identical
-data.otservbr.global.npc.chondur.L319.5,"Be greeted, child.","Be greeted, child.",identical
-data.otservbr.global.npc.chondur.L320.6,Good bye.,Good bye.,identical
+data.otservbr.global.npc.chondur.L309.5,"Be greeted, child.","Be greeted, child.",identical
+data.otservbr.global.npc.chondur.L310.6,Good bye.,Good bye.,identical
 data.otservbr.global.npc.chrak.L93.514,"Greetingz, competitor.","Greetingz, competitor.",identical
 data.otservbr.global.npc.chrystal.L77.729,At your service |PLAYERNAME| and welcome to the post office.,At your service |PLAYERNAME| and welcome to the post office.,identical
 data.otservbr.global.npc.chrystal.L78.730,Who is next?,Who is next?,identical
@@ -48258,8 +48399,8 @@ data.otservbr.global.npc.lorbas.L93.1364,"Be greeted, dear traveller.","Be greet
 data.otservbr.global.npc.lorietta.L148.362,"Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.","Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",identical
 data.otservbr.global.npc.lorietta.L149.363,"Remember: If you are heavily wounded or poisoned, I can heal you for free.","Remember: If you are heavily wounded or poisoned, I can heal you for free.",identical
 data.otservbr.global.npc.lorietta.L150.364,"May the gods bless you, |PLAYERNAME|!","May the gods bless you, |PLAYERNAME|!",identical
-data.otservbr.global.npc.lothar.L129.10,"Welcome to my humble hut, |PLAYERNAME|. What brings you {here}?","Welcome to my humble hut, |PLAYERNAME|. What brings you {here}?",identical
-data.otservbr.global.npc.lothar.L130.11,Take care of yourself.,Take care of yourself.,identical
+data.otservbr.global.npc.lothar.L121.10,"Welcome to my humble hut, |PLAYERNAME|. What brings you {here}?","Welcome to my humble hut, |PLAYERNAME|. What brings you {here}?",identical
+data.otservbr.global.npc.lothar.L122.11,Take care of yourself.,Take care of yourself.,identical
 data.otservbr.global.npc.loui.L105.666,STAY AWAY FROM THAT HOLE!,STAY AWAY FROM THAT HOLE!,identical
 data.otservbr.global.npc.loui.L106.667,May the gods protect you! And stay away from that hole!,May the gods protect you! And stay away from that hole!,identical
 data.otservbr.global.npc.loui.L107.668,BEWARE! Beware of that {hole}!,BEWARE! Beware of that {hole}!,identical
@@ -48286,8 +48427,8 @@ data.otservbr.global.npc.maelyrra.L176.718,Nature's blessings! Welcome to the la
 data.otservbr.global.npc.maelyrra.L177.719,May your path always be even.,May your path always be even.,identical
 data.otservbr.global.npc.maelyrra.L178.720,May your path always be even.,May your path always be even.,identical
 data.otservbr.global.npc.maeryn.L178.1149,"Greetings, visitor. I wonder what may lead you to this {dangerous} place.","Greetings, visitor. I wonder what may lead you to this {dangerous} place.",identical
-data.otservbr.global.npc.malor.L193.12,"Farewell, human. When I have taken my rightful place I shall remember those who served me well. Even if they are only humans.","Farewell, human. When I have taken my rightful place I shall remember those who served me well. Even if they are only humans.",identical
-data.otservbr.global.npc.malor.L194.13,"Farewell, human.","Farewell, human.",identical
+data.otservbr.global.npc.malor.L179.12,"Farewell, human. When I have taken my rightful place I shall remember those who served me well. Even if they are only humans.","Farewell, human. When I have taken my rightful place I shall remember those who served me well. Even if they are only humans.",identical
+data.otservbr.global.npc.malor.L180.13,"Farewell, human.","Farewell, human.",identical
 data.otservbr.global.npc.malunga.L58.1200,"Greetings. I have only little time to {spare}, so the conversation will be short. I teach sorcerer {spells} and buy a few magical {ingredients}.","Greetings. I have only little time to {spare}, so the conversation will be short. I teach sorcerer {spells} and buy a few magical {ingredients}.",identical
 data.otservbr.global.npc.marina.L128.235,"Oh, hello |PLAYERNAME|. A visitor, how nice!","Oh, hello |PLAYERNAME|. A visitor, how nice!",identical
 data.otservbr.global.npc.maris.L91.393,"I hope you have a good reason to step near my {ship}, |PLAYERNAME|.","I hope you have a good reason to step near my {ship}, |PLAYERNAME|.",identical
@@ -48483,7 +48624,7 @@ data.otservbr.global.npc.pythius.the.rotten.L73.926,I {AWAITED} YOU!,I {AWAITED}
 data.otservbr.global.npc.pythius.the.rotten.L74.927,COME BACK ANYTIME AND BRING ME TREASURES.,COME BACK ANYTIME AND BRING ME TREASURES.,identical
 data.otservbr.global.npc.pythius.the.rotten.L75.928,COME BACK ANYTIME AND BRING ME TREASURES.,COME BACK ANYTIME AND BRING ME TREASURES.,identical
 data.otservbr.global.npc.quandons.ghost.L65.142,Hi!,Hi!,identical
-data.otservbr.global.npc.queen.eloise.L249.39,"Farewell, |PLAYERNAME|!","Farewell, |PLAYERNAME|!",identical
+data.otservbr.global.npc.queen.eloise.L247.39,"Farewell, |PLAYERNAME|!","Farewell, |PLAYERNAME|!",identical
 data.otservbr.global.npc.quentin.L179.1130,"Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free or you want the {adventurer stone}?","Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free or you want the {adventurer stone}?",identical
 data.otservbr.global.npc.quentin.L180.1131,"Remember: If you are heavily wounded or poisoned, I can heal you for free.","Remember: If you are heavily wounded or poisoned, I can heal you for free.",identical
 data.otservbr.global.npc.quentin.L181.1132,"May the gods bless you, |PLAYERNAME|!","May the gods bless you, |PLAYERNAME|!",identical
@@ -48920,7 +49061,7 @@ data.otservbr.global.npc.zora.L82.824,"Oh, please come in, |PLAYERNAME|. What ca
 data.otservbr.global.npc.zora.L83.825,"Good bye, |PLAYERNAME|.","Good bye, |PLAYERNAME|.",identical
 data.otservbr.global.npc.zora.L84.826,"Good bye, |PLAYERNAME|.","Good bye, |PLAYERNAME|.",identical
 data.otservbr.global.npc.zora.L85.827,"Of course, just browse through my wares. {Footballs} have to be purchased separately.","Of course, just browse through my wares. {Footballs} have to be purchased separately.",identical
-data.otservbr.global.npc.ztiss.L98.1324,Be greeted my .. {guezt}.,Be greeted my .. {guezt}.,identical
+data.otservbr.global.npc.ztiss.L90.1324,Be greeted my .. {guezt}.,Be greeted my .. {guezt}.,identical
 data.otservbr.global.npc.zumtah.L141.1227,"Another visitor to this constricted, cosy, calm realm, perfect except for an {exit}. Muhaha.","Another visitor to this constricted, cosy, calm realm, perfect except for an {exit}. Muhaha.",identical
 data.otservbr.global.npc.zumtah.L142.1228,Muhahaha.,Muhahaha.,identical
 data.otservbr.global.scripts.actions.other.others.quest.system1.L179.1761,You have found,You have found,identical
@@ -49131,3 +49272,7 @@ src.server.network.protocol.protocolgame.L2879.1804,Your team finder request was
 src.server.network.protocol.protocolgame.L2921.1805,There is a new request to join your team.,There is a new request to join your team.,identical
 src.server.network.protocol.protocolgame.L4707.1806,"There was a problem requesting your message, please contact the administrator","There was a problem requesting your message, please contact the administrator",identical
 search,search,search,identical
+env_exists,ENV_EXISTS=,,missing
+file,FILE=,,missing
+hash_login_php,HASH_LOGIN_PHP=,,missing
+pwd,PWD=,,missing

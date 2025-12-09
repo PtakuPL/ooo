@@ -1,14 +1,14 @@
 {
   "category": "scripts",
   "status": "in_progress",
-  "last_updated": "2025-12-09T03:04:55+01:00",
+  "last_updated": "2025-12-09T03:08:27+01:00",
   "summary": {
     "total_keys": 713,
-    "files_processed": 453
+    "files_processed": 473
   },
   "current_work": {
     "directory": "data-otservbr-global/scripts/",
-    "cycle": 3
+    "cycle": 4
   },
   "subdirectories": {
     "quests": {"processed": 0},
@@ -16,28 +16,28 @@
   },
   "recent_files": [
   {
-    "file": "klaus.lua",
-    "time": "03:04:55",
+    "file": "ulala.lua",
+    "time": "03:08:27",
     "status": "success"
   },
   {
-    "file": "topsy.lua",
-    "time": "03:04:55",
+    "file": "vascalir.lua",
+    "time": "03:08:27",
     "status": "success"
   },
   {
-    "file": "lynda.lua",
-    "time": "03:04:55",
+    "file": "vulturenose.lua",
+    "time": "03:08:27",
     "status": "success"
   },
   {
-    "file": "inkaef.lua",
-    "time": "03:04:55",
+    "file": "gewen.lua",
+    "time": "03:08:27",
     "status": "success"
   },
   {
-    "file": "faloriel.lua",
-    "time": "03:04:55",
+    "file": "tarun.lua",
+    "time": "03:08:27",
     "status": "success"
   }
 ]

@@ -67,11 +67,9 @@ local function handleAddonMessages(npcHandler, npc, creature, message, playerId)
 		end
 		return true
 	elseif MsgContains(message, "task") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say({
-			"Deep in the Tiquandian jungle a monster lurks which is seldom seen. It is the revenge of the jungle against humankind. ...",
-			"This monster, if slain, carries a rare root called Mandrake. If you find it, bring it to me. Also, gather 5 of the voodoo dolls used by the mysterious dworc voodoomasters. ...",
-			"If you manage to fulfil this task, I will grant you your own staff. Have you understood everything and are ready for this test?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_12")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_13")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_14")
 		npcHandler:setTopic(playerId, 2)
 		return true
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 then
@@ -121,18 +119,14 @@ local function handleAddonMessages(npcHandler, npc, creature, message, playerId)
 		npcHandler:setTopic(playerId, 0)
 		return true
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 3 then
-		npcHandler:say({
-			"The dworcs of Tiquanda like to wear certain tribal masks which I would like to take a look at. Please bring me 5 of these masks. ...",
-			"Secondly, the high ape magicians of Banuta use banana staves. I would love to learn more about these staves, so please bring me 5 of them also. ...",
-			"If you manage to fulfil this task, I will grant you your own mask. Have you understood everything and are ready for this test?",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_9")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_10")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_11")
 		npcHandler:setTopic(playerId, 4)
 		return true
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 4 then
-		npcHandler:say({
-			"Good! Come back once you have collected 5 tribal masks and 5 banana staves.",
-			"I shall grant you a sign of your progress as shaman if you can fulfil my task.",
-		}, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_8")
 		player:setStorageValue(Storage.Quest.U7_8.ShamanOutfits.AddonStaffMask, 3)
 		player:setStorageValue(Storage.Quest.U7_8.ShamanOutfits.MissionMask, 1)
 		npcHandler:setTopic(playerId, 0)
@@ -168,12 +162,10 @@ local function handleOtherMessages(npcHandler, npc, creature, message, playerId)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 7 then
 			if player:removeItem(12312, 50) and player:removeItem(12314, 30) and player:removeItem(12313, 100) then
-				npcHandler:say({
-					"Ohhhhh Mmmmmmmmmmmm Ammmmmgggggggaaaaaaa ...",
-					"Aaaaaaaaaahhmmmm Mmmaaaaaaaaaa Kaaaaaamaaaa ...",
-					"Brrt! I think it worked! It's a male stampor. I linked this spirit to yours. You can probably already summon him to you ...",
-					"So, since we are done here... I need to prepare another ritual, so please let me work, child.",
-				}, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_3")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_4")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_5")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_6")
 				player:addMount(11)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 			else
@@ -195,10 +187,8 @@ local function handleOtherMessages(npcHandler, npc, creature, message, playerId)
 			npcHandler:sayLocalized("npc.chondur.say_19", npc, creature)
 			npcHandler:setTopic(playerId, 10)
 		elseif npcHandler:getTopic(playerId) == 10 then
-			npcHandler:say({
-				"I guess I cannot stop you then. Since you told me about my apprentice, it is my turn to help you. I will perform a ritual for you, but I need a few ingredients. ...",
-				"Bring me one fresh dead chicken, one fresh dead rat and one fresh dead black sheep, in that order.",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_2")
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 11 then

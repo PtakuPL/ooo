@@ -78,7 +78,7 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 	local level = player:getLevel()
 	if level < 8 then
-		npcHandler:say("CHILD! COME BACK WHEN YOU HAVE GROWN UP!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_oracle.say_1")
 		npcHandler:resetNpc(creature)
 		return false
 	elseif level > 10 then
@@ -87,7 +87,7 @@ local function greetCallback(npc, creature)
 		npcHandler:resetNpc(creature)
 		return false
 	elseif player:getVocation():getId() > VOCATION.ID.NONE then
-		npcHandler:say("YOU ALREADY HAVE A VOCATION!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_oracle.say_2")
 		npcHandler:resetNpc(creature)
 		return false
 	else
@@ -106,7 +106,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if npcHandler:getTopic(playerId) == 0 then
 		if MsgContains(message, "yes") then
-			npcHandler:say("IN WHICH TOWN DO YOU WANT TO LIVE: {CARLIN}, {THAIS}, OR {VENORE}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_oracle.say_3")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
@@ -117,7 +117,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			{KNIGHT}, {PALADIN}, {SORCERER}, OR {DRUID}?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		else
-			npcHandler:say("IN WHICH TOWN DO YOU WANT TO LIVE: {CARLIN}, {THAIS}, OR {VENORE}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_oracle.say_4")
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
 		local vocationTable = config.vocations[message:lower()]
@@ -126,18 +126,18 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 3)
 			vocation[playerId] = vocationTable.vocationId
 		else
-			npcHandler:say("{KNIGHT}, {PALADIN}, {SORCERER}, OR {DRUID}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_oracle.say_5")
 		end
 	elseif npcHandler:getTopic(playerId) == 3 then
 		if MsgContains(message, "yes") then
-			npcHandler:say("SO BE IT!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_oracle.say_6")
 			player:setVocation(Vocation(vocation[playerId]))
 			player:setTown(Town(town[playerId]))
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			player:teleportTo(Town(town[playerId]):getTemplePosition())
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		else
-			npcHandler:say("THEN WHAT? {KNIGHT}, {PALADIN}, {SORCERER}, OR {DRUID}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_oracle.say_7")
 			npcHandler:setTopic(playerId, 2)
 		end
 	end

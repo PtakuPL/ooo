@@ -79,34 +79,28 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "task") then
 		if player:getStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon) == 2 then
-			npcHandler:say({
-				"Listen, my next task for you is not exactly easy either. ...",
-				"In the mountains between Ankrahmun and Tiquanda are two hydra lairs. The nothern one has many waterfalls whereas the southern one has just tiny water trickles. ...",
-				"However, these trickles are said to contain water as pure and clean as nowhere else in Tibia. ...",
-				"If you could reach one of these trickles and retrieve a water sample for me, it would be a great help. ...",
-				"It is important that you take the water directly from the trickle, not from the pond - else it will not be as pure anymore. ...",
-				"Have you understood everything I told you and will fulfil this task for me?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_18")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_19")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_20")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_21")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_22")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_23")
 			npcHandler:setTopic(playerId, 6)
 		elseif player:getStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon) == 4 then
-			npcHandler:say({
-				"I'm glad that you are still with me, |PLAYERNAME|. Especially because my next task might require even more patience from your side than the ones before. ...",
-				"Demons... these unholy creatures should have never been able to walk the earth. They are a brood fueled only by hatred and malice. ...",
-				"Even if slain, their evil spirit is not fully killed. It needs a blessed stake to release their last bit of fiendishness and turn them into dust. ...",
-				"It does not work all the time, but if you succeed, their vicious spirit is finally defeated. ...",
-				"I want proof that you are on the right side, against Zathroth. Bring me 100 ounces of demon dust and I shall be convinced. ...",
-				"You will probably need to ask a priest for help to obtain a blessed stake. ...",
-				"Have you understood everything I told you and will fulfil this task for me?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_12")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_13")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_14")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_15")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_16")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_17")
 			npcHandler:setTopic(playerId, 8)
 		elseif player:getStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon) == 6 then
-			npcHandler:say({
-				"I have one final task for you, |PLAYERNAME|. Many months ago, I was trying to free the war wolves which are imprisoned inside the orc fortress.",
-				"Unfortunately, my intrusion was discovered and I had to run for my life. During my escape, I lost my favourite wolf tooth chain.",
-				"It should still be somewhere in the fortress, if the orcs did not try to eat it. I really wish you could retrieve it for me.",
-				"It has the letter 'C' carved into one of the teeth. Please look for it.",
-				"Have you understood everything I told you and will fulfil this task for me?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_10")
 			npcHandler:setTopic(playerId, 10)
 		end
 	elseif MsgContains(message, "waterskin") or MsgContains(message, "water skin") then
@@ -131,13 +125,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say({
-				"I hope that I am not asking too much of you with this task. I heard of a flower which is currently unique in Tibia and can survive at only one place. ...",
-				"This place is somewhere in the bleak mountains of Nargor. I would love to have a sample of its blossom, but the problem is that it seldom actually blooms. ...",
-				"I cannot afford to travel there each day just to check whether the time has already come, besides I have no idea where to start looking. ...",
-				"I would be deeply grateful if you could support me in this matter and collect a sample of the blooming Griffinclaw for me. ...",
-				"Have you understood everything I told you and will fullfil this task for me?",
-			}, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.multi_5")
 			npcHandler:setTopic(playerId, 4)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_9")

@@ -206,6 +206,15 @@ option(OTC_ENABLE_PHYSFS "Enable PhysFS support" ON)
 # LZMA (optional, can be disabled for build analysis or platforms without liblzma)
 option(OTC_ENABLE_LZMA "Enable LZMA compression support" ON)
 
+# nlohmann_json (optional, can be disabled for build analysis when lib not available)
+option(OTC_ENABLE_NLOHMANN_JSON "Enable nlohmann/json support" ON)
+
+# pugixml (optional, can be disabled for build analysis when lib not available)
+option(OTC_ENABLE_PUGIXML "Enable pugixml XML parsing" ON)
+
+# fmt (optional, can be disabled for build analysis when lib not available)
+option(OTC_ENABLE_FMT "Enable fmt library for formatting" ON)
+
 if(OTC_ENABLE_PROTOBUF)
   add_subdirectory(src/protobuf)
 else()

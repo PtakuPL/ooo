@@ -2,10 +2,12 @@ name: Analysis - SonarCloud (Web/Emscripten)
 
 on:
   workflow_dispatch:
-  pull_request_target:
+  pull_request:
     types: [opened, synchronize, reopened]
   push:
-    branches: [ master ]
+    branches:
+      - master
+      - 'PtakuPL/issue30'
 
 permissions:
   contents: read
@@ -100,6 +102,7 @@ jobs:
             -Dsonar.cfamily.cache.enabled=true
             "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
             -Dsonar.cfamily.compile-commands=build-web/compile_commands.json
+            -Dproject.settings=Tibia/silnik/canary_test/testyy/sonar-project.properties
             -Dsonar.pullrequest.key=${{ github.event.pull_request.number }}
             -Dsonar.pullrequest.branch=${{ github.event.pull_request.head.ref }}
             -Dsonar.pullrequest.base=${{ github.event.pull_request.base.ref }}
@@ -117,3 +120,4 @@ jobs:
             -Dsonar.cfamily.cache.enabled=true
             "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
             -Dsonar.cfamily.compile-commands=build-web/compile_commands.json
+            -Dproject.settings=Tibia/silnik/canary_test/testyy/sonar-project.properties

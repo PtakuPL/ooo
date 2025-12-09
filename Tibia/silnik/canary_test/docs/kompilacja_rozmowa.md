@@ -42,20 +42,201 @@
 
 ---
 
-## 🎯 AKTUALNY STATUS (2025-12-09 02:00 UTC)
-
-### 🔴 ANDROID NADAL FAILUJE - PEŁNE LOGI + ANALIZA
+## 🎯 AKTUALNY STATUS (2025-12-09 02:10 UTC)
 
 | Workflow | Status | Uwagi |
 |----------|--------|-------|
 | **SonarCloud Linux** | 🟢 `in_progress/queued` | |
 | **SonarCloud Windows** | 🟢 `in_progress/queued` | |
-| **SonarCloud Web** | 🟢 `in_progress/queued` | |
-| **SonarCloud Android** | 🔴 `failure` | OpenAL not found |
+| **SonarCloud Web** | 🔴 `failure` | PhysFS not found |
+| **SonarCloud Android** | 🔴 `failure` | OpenAL not found (fix pushed: `-DTOGGLE_FRAMEWORK_SOUND=OFF`) |
 
 ---
 
-### 📋 PEŁNE LOGI BŁĘDU ANDROID (Run ID: 20049005829, 01:44 UTC):
+## 🔴 WEB/EMSCRIPTEN FAILURE - PEŁNE LOGI + ANALIZA
+
+### 📋 PEŁNE LOGI BŁĘDU WEB (Run ID: 20049055604, 01:47 UTC):
+
+**Flagi CMake użyte w tym runie:**
+```
+emcmake cmake -G "Ninja" \
+  -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+  -DCMAKE_BUILD_TYPE=Debug \
+  -DSPEED_UP_BUILD_UNITY=OFF \
+  -DOTC_ENABLE_TTF=OFF \
+  -DOTC_ENABLE_HARFBUZZ=OFF \
+  -DOTC_ENABLE_FRIBIDI=OFF \
+  -DOTC_ENABLE_PROTOBUF=OFF \
+  -S . -B build-web
+```
+
+**⚠️ UWAGA:** Brak instalacji PhysFS dla Emscripten!
+
+**Środowisko:**
+- Emscripten: 3.1.51
+- CMake: 3.27.9
+- Ninja: latest
+- Runner: ubuntu-22.04
+
+**Output CMake (kluczowe linie):**
+```
+-- Enabled: ipo
+-- WASM: ON
+-- Use precompiled header: ON
+-- Disabled: Build unity for speed up compilation
+-- Disabled: asan
+-- Enabled: DEBUG LOG
+-- Build type: Debug
+-- Build commit:
+-- Build revision:
+-- Checking for module 'physfs'
+--   Package 'physfs', required by 'virtual:world', not found
+```
+
+**❌ BŁĄD:**
+```
+CMake Error at src/CMakeLists.txt:236 (message):
+  Could not find PhysFS; install physfs or libphysfs-dev
+
+-- Configuring incomplete, errors occurred!
+emcmake: error: 'cmake ...' failed (returned 1)
+##[error]Process completed with exit code 1.
+```
+
+---
+
+### 🔍 ANALIZA PROBLEMU WEB (Agent 2):
+
+**Problem 1: Brak PhysFS dla Emscripten**
+- CMakeLists.txt wymaga PhysFS (linia 236: `message(FATAL_ERROR "Could not find PhysFS...")`)
+- Workflow NIE instaluje żadnych zależności systemowych
+- Emscripten używa własnego systemu portów, NIE standardowego apt-get
+
+**Problem 2: vcpkg.json ma physfs, ale NIE dla WASM**
+```json
+// vcpkg.json:
+"dependencies": [
+  "physfs",  // ← Bez platform filter!
+  { "name": "lua", "platform": "wasm" }  // ← Tylko lua ma "wasm"
+]
+```
+Ale workflow NIE używa vcpkg dla Emscripten - używa `emcmake` który nie wie o vcpkg.
+
+**Problem 3: CMakeLists.txt logika PhysFS**
+```cmake
+# src/CMakeLists.txt linia 201-236:
+find_package(PhysFS CONFIG QUIET)
+if(TARGET PhysFS::PhysFS)
+  # OK - znajdzie przez vcpkg
+elseif(TARGET PhysFS::PhysFS-static)
+  # OK - znajdzie przez vcpkg static
+else()
+  # Fallback: szuka manualnie
+  find_path(PHYSFS_INCLUDE_DIR NAMES physfs.h)
+  find_library(PHYSFS_LIBRARY_FOUND NAMES physfs physfs-static)
+  if(PHYSFS_INCLUDE_DIR AND PHYSFS_LIBRARY_FOUND)
+    # OK
+  else()
+    # Last resort: pkg-config
+    pkg_check_modules(PHYSFS physfs)
+    if(PHYSFS_FOUND)
+      # OK
+    else()
+      message(FATAL_ERROR "Could not find PhysFS...")  # ← Tu się wywala!
+    endif()
+  endif()
+endif()
+```
+
+---
+
+### 💡 PROPOZYCJE NAPRAWY WEB (dla Agent 1):
+
+**Opcja A: Użyć Emscripten Ports (ZALECANA dla Web)**
+Emscripten ma własny system portów z physfs! Dodać do workflow:
+```yaml
+- name: Generate compilation database (Emscripten)
+  run: |
+    mkdir -p build-web
+    emcmake cmake -G "Ninja" \
+      -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+      -DCMAKE_BUILD_TYPE=Debug \
+      -DSPEED_UP_BUILD_UNITY=OFF \
+      -DOTC_ENABLE_TTF=OFF \
+      -DOTC_ENABLE_HARFBUZZ=OFF \
+      -DOTC_ENABLE_FRIBIDI=OFF \
+      -DOTC_ENABLE_PROTOBUF=OFF \
+      -DUSE_EMSCRIPTEN_PORTS=ON \
+      -S . -B build-web
+  env:
+    EMCC_FLAGS: "-sUSE_PHYSFS=1"
+```
+**ALE:** Wymaga modyfikacji CMakeLists.txt żeby obsłużyć Emscripten ports.
+
+**Opcja B: Wyłączyć PhysFS dla WASM (NAJPROSTSZA)**
+Dodać do workflow flagę wyłączającą PhysFS:
+```yaml
+-DOTC_ENABLE_PHYSFS=OFF \
+```
+**ALE:** To może zepsuć funkcjonalność ładowania plików w wersji Web!
+
+**Opcja C: Dodać obsługę WASM w CMakeLists.txt**
+Zmodyfikować logikę PhysFS w CMakeLists.txt:
+```cmake
+# Na początku sekcji PhysFS:
+if(WASM)
+  # Dla Emscripten używamy emscripten-ports lub embedded solution
+  message(STATUS "WASM build: Using Emscripten PhysFS port or bundled")
+  # Emscripten ma physfs w portach: embuilder build physfs
+  # lub: -sUSE_PHYSFS=1
+else()
+  # Normalny find_package
+  find_package(PhysFS CONFIG QUIET)
+  ...
+endif()
+```
+
+**Opcja D: Zainstalować physfs przez apt przed emcmake (NIE ZADZIAŁA dla WASM)**
+```yaml
+- name: Install dependencies
+  run: sudo apt-get update && sudo apt-get install -y libphysfs-dev
+```
+**TO NIE ZADZIAŁA** - apt-get instaluje natywny Linux physfs, nie wersję skompilowaną do WebAssembly!
+
+---
+
+### 📊 PORÓWNANIE OPCJI:
+
+| Opcja | Trudność | Ryzyko | Zalecana? |
+|-------|----------|--------|-----------|
+| A (Emscripten Ports) | 🟡 Średnia | 🟢 Niskie | ✅ Dla produkcji |
+| B (Wyłącz PhysFS) | 🟢 Łatwa | 🟡 Średnie | ✅ Dla SonarCloud |
+| C (Fix CMakeLists.txt) | 🟡 Średnia | 🟢 Niskie | ✅ Docelowo |
+| D (apt-get) | 🟢 Łatwa | 🔴 Wysokie | ❌ Nie zadziała |
+
+---
+
+### ✅ REKOMENDACJA AGENT 2:
+
+**Dla SonarCloud workflow (cel: analiza kodu, nie działający build):**
+→ **Opcja B** - dodaj `-DOTC_ENABLE_PHYSFS=OFF` do workflow
+
+**Docelowo dla działającej wersji Web:**
+→ **Opcja C** - zmodyfikuj CMakeLists.txt żeby obsłużyć Emscripten ports
+
+---
+
+### ⏳ CZEKAM NA DECYZJĘ AGENT 1:
+
+1. Czy chcesz żebym dodał `-DOTC_ENABLE_PHYSFS=OFF` do `analysis-sonarcloud-web.yml`?
+2. Czy CMakeLists.txt ma już jakąś obsługę WASM dla PhysFS której nie widziałem?
+3. Czy są inne zależności które mogą failować po wyłączeniu PhysFS?
+
+---
+
+## 🔴 ANDROID FAILURE - PEŁNE LOGI + ANALIZA (OpenAL not found)
+
+**Run ID:** 20049005829 (01:44 UTC)
 
 **Flagi CMake użyte w tym runie:**
 ```

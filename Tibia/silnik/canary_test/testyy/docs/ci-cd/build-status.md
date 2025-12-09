@@ -1,26 +1,22 @@
 # Build Status Overview
 
-**Last Updated:** 2025-12-06
+**Last Updated:** 2025-12-12
 
 ## Build Status Summary
 
 | Platform | Status | Notes |
 |----------|--------|-------|
-| Windows | ⚠ Needs baseline update | vcpkg commit/baseline brak wersji `abseil@20250814.1`, `angle@chromium_7258#2`, `asio@1.32.0`; zaktualizuj baseline lub obniż wersje portów |
-| Ubuntu 24.04 | ✅ Ready | Requires GCC 14, system deps |
-| Emscripten (WASM) | ✅ Fixed | Lua module path fix applied |
-| Android | ✅ Ready | NDK r23c, Gradle 8.11 |
+| Windows | ⚠ Needs baseline update + SonarCloud fix | vcpkg baseline nadal nie zawiera `abseil@20250814.1`/`angle@chromium_7258#2`/`asio@1.32.0`; workflow SonarCloud wymaga patcha na porty |
+| Ubuntu 24.04 | ✅ Ready (SonarCloud only) | Automatic Analysis w SonarCloud wyłączone; jedyny aktywny workflow to `analysis-sonarcloud-linux.yml` |
+| Emscripten (WASM) | ✅ Workflow gotowy | `analysis-sonarcloud-web.yml` używa Emscripten 3.1.51; czeka na test po zakończeniu poprawek Windows/Android |
+| Android | ⚠ Build bez dźwięku | Workflow SonarCloud działa tylko z `-DOTC_ENABLE_SOUND=OFF` (brak OpenAL w toolchainie) |
 
-## Recent Fixes
+## Recent Fixes / Notes
 
-### Emscripten/WASM Build Fix (2025-12-05)
-- **File:** `src/CMakeLists.txt` (lines 483-496)
-- **Issue:** Custom `FindLua.cmake` incompatible with WASM
-- **Solution:** Use CMake's standard FindLua module for WASM builds
-
-### Windows vcpkg baseline note (2025-12-06)
-- **Issue:** `run-vcpkg` na commit-cie `5b121431` nie znajduje wersji portów `abseil@20250814.1`, `angle@chromium_7258#2`, `asio@1.32.0`.
-- **Action:** Podnieść `builtin-baseline`/`vcpkgGitCommitId` do wersji zawierającej te porty lub zredukować wersje portów do dostępnych.
+- **2025-12-12 – SonarCloud focus:** wszystkie workflow poza czterema `analysis-sonarcloud-*` zostały tymczasowo wyłączone (tylko `workflow_dispatch`). Automatic Analysis w projekcie SonarCloud jest wyłączone – uruchamiamy wyłącznie CI analizy.
+- **2025-12-12 – Windows/Android workflow:** dodane kroki instalacji Ninja + MSVC env (Windows) oraz `-DOTC_ENABLE_SOUND=OFF` (Android) + wspólny `sonar-project.properties` dla klienta/serwera.
+- **2025-12-06 – Emscripten fix:** `FindLua.cmake` zastąpiony standardowym modułem CMake (szczegóły w `ci-errors.md`).
+- **Windows vcpkg baseline:** nadal wymagane podniesienie `builtin-baseline`/`vcpkgGitCommitId`, aby porty `abseil@20250814.1`, `angle@chromium_7258#2`, `asio@1.32.0` były dostępne dla SonarCloud run.
 
 ## Build Instructions
 

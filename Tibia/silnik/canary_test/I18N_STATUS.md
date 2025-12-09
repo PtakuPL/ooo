@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-09 06:53:29 UTC  
+> **Aktualizacja:** 2025-12-09 06:54:04 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -25,8 +25,8 @@
 | ⏭️ Plików wykluczonych | **5329** | - |
 | 🔑 Kluczy i18n | **49992** | ↑ |
 | 🌍 Języków | **53** | ✓ |
-| ⚠️ Konfliktów | **50** | ✓ |
-| 🔄 Cykl | **#37** | - |
+| ⚠️ Konfliktów | **0** | ✓ |
+| 🔄 Cykl | **#1** | - |
 
 ---
 
@@ -78,9 +78,9 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #37` |
+| **Plik** | `Cykl #1` |
 | **Szczegóły** | NPC:11991 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-09 06:13:14 |
+| **Ostatnia aktualizacja** | 2025-12-09 06:53:31 |
 
 ### 📈 Statystyki sesji
 
@@ -96,126 +96,156 @@
 ## 📂 Szczegóły Kategorii
 
 <details>
-<summary><h3>🧙 1. NPC Dialogs - COMPLETED ✅</h3></summary>
+<summary><h3>🎮 1. Game - Oczekuje ⏳</h3></summary>
 
 | Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | 11991 |
-| 📊 Status | ✅ Zakończone |
-| 📂 Plików | ~877 |
-
-**Źródła:** `data-otservbr-global/npc/`, `data-canary/npc/`
-
-**Wzorce ekstrakcji:**
-```lua
-npcHandler:say("text")
-selfSay("text")
-```
+|---------|----------|
+| 🔑 Kluczy | **36** |
+| 📊 Postęp | 36% |
+| 📁 Plik | `i18n/en/game.json` |
 
 </details>
 
 ---
 
-<details open>
-<summary><h3>📜 2. Lua Scripts - IN PROGRESS 🔄</h3></summary>
+<details>
+<summary><h3>🎒 2. Items - Zakończone ✅</h3></summary>
 
 | Metryka | Wartość |
-|---------|---------|
+|---------|----------|
+| 🔑 Kluczy | **36972** |
+| 📊 Postęp | 90% |
+| 📁 Plik | `i18n/en/items.json` |
+
+</details>
+
+---
+
+<details>
+<summary><h3>📦 3. Misc - Zakończone ✅</h3></summary>
+
+| Metryka | Wartość |
+|---------|----------|
+| 🔑 Kluczy | **93** |
+| 📊 Postęp | 91% |
+| 📁 Plik | `i18n/en/misc.json` |
+
+</details>
+
+---
+
+<details>
+<summary><h3>👹 4. Monsters - Zakończone ✅</h3></summary>
+
+| Metryka | Wartość |
+|---------|----------|
+| 🔑 Kluczy | **100** |
+| 📊 Postęp | 90% |
+| 📁 Plik | `i18n/en/monsters.json` |
+
+</details>
+
+---
+
+<details>
+<summary><h3>🧙 5. Npc - Zakończone ✅</h3></summary>
+
+| Metryka | Wartość |
+|---------|----------|
+| 🔑 Kluczy | **11991** |
+| 📊 Postęp | 90% |
+| 📁 Plik | `i18n/en/npc.json` |
+
+</details>
+
+---
+
+<details>
+<summary><h3>👤 6. Player - Zakończone ✅</h3></summary>
+
+| Metryka | Wartość |
+|---------|----------|
+| 🔑 Kluczy | **151** |
+| 📊 Postęp | 90% |
+| 📁 Plik | `i18n/en/player.json` |
+
+</details>
+
+---
+
+<details>
+<summary><h3>📜 7. Quests - Oczekuje ⏳</h3></summary>
+
+| Metryka | Wartość |
+|---------|----------|
+| 🔑 Kluczy | **1** |
+| 📊 Postęp | 1% |
+| 📁 Plik | `i18n/en/quests.json` |
+
+</details>
+
+---
+
+<details>
+<summary><h3>📜 8. Scripts - Zakończone ✅</h3></summary>
+
+| Metryka | Wartość |
+|---------|----------|
 | 🔑 Kluczy | **713** |
-| 📊 Status | 🔄 W trakcie |
-| 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #37 |
-
-### 📁 Podkatalogi - Postęp
-
-| Katalog | Przetworzonych | Status |
-|---------|----------------|--------|
-| `quests/` | 23 | 🔄 W trakcie |
-| `actions/` | 0 | ⏳ Oczekuje |
-| `movements/` | 0 | ⏳ Oczekuje |
-| `creaturescripts/` | 3 | 🔄 W trakcie |
-| `talkactions/` | 0 | ⏳ Oczekuje |
-| `globalevents/` | 0 | ⏳ Oczekuje |
-
-### 🔮 Kategorie specjalne (z JSON)
-
-| Kategoria | Kluczy | Status |
-|-----------|--------|--------|
-| 👹 `monsters` | 100 | ✅ OK |
-| ✨ `spells` | 100 | ✅ OK |
-| ⚙️ `server` | 116 | ✅ OK |
-
-### 📄 Ostatnio przetworzone pliki
-
-| Plik | Czas | Status |
-|------|------|--------|
-| `game_questlog.html` | 00:47:08 | ✅ |
-| `#displayUIPickReward.html` | 00:47:08 | ✅ |
-| `game_rewardwall.html` | 00:47:08 | ✅ |
-| `status.php` | 00:47:08 | ✅ |
-| `updater.php` | 00:47:08 | ✅ |
-
-### 💻 Przykład kodu (ostatni plik)
-
-```lua
-
-```
-
-**Wzorce ekstrakcji:**
-```lua
-player:sendTextMessage(type, "text")
-creature:say("text")
-```
+| 📊 Postęp | 90% |
+| 📁 Plik | `i18n/en/scripts.json` |
 
 </details>
 
 ---
 
 <details>
-<summary><h3>🎒 3. Items - COMPLETED ✅</h3></summary>
+<summary><h3>⚙️ 9. Server - Zakończone ✅</h3></summary>
 
 | Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | 36972 |
-| 📊 Status | ✅ Zakończone |
+|---------|----------|
+| 🔑 Kluczy | **116** |
+| 📊 Postęp | 91% |
+| 📁 Plik | `i18n/en/server.json` |
 
 </details>
 
 ---
 
 <details>
-<summary><h3>👹 4. Monsters - PENDING ⏳</h3></summary>
+<summary><h3>✨ 10. Spells - Zakończone ✅</h3></summary>
 
 | Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | 100 |
-| 📊 Status | ⏳ Oczekuje |
-| 📅 Start | Po zakończeniu Scripts |
+|---------|----------|
+| 🔑 Kluczy | **100** |
+| 📊 Postęp | 90% |
+| 📁 Plik | `i18n/en/spells.json` |
 
 </details>
 
 ---
 
 <details>
-<summary><h3>⚙️ 5. Server C++ - PENDING ⏳</h3></summary>
+<summary><h3>🖥️ 11. System - Zakończone ✅</h3></summary>
 
 | Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | 116 |
-| 📊 Status | ⏳ Oczekuje |
-| ⚠️ Wymaga | Rekompilacja serwera |
+|---------|----------|
+| 🔑 Kluczy | **1832** |
+| 📊 Postęp | 90% |
+| 📁 Plik | `i18n/en/system.json` |
 
 </details>
 
 ---
 
 <details>
-<summary><h3>🔮 6. Spells - PENDING ⏳</h3></summary>
+<summary><h3>🎨 12. Ui - Oczekuje ⏳</h3></summary>
 
 | Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | 100 |
-| 📊 Status | ⏳ Oczekuje |
+|---------|----------|
+| 🔑 Kluczy | **86** |
+| 📊 Postęp | 86% |
+| 📁 Plik | `i18n/en/ui.json` |
 
 </details>
 
@@ -225,7 +255,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 4095712, Cykl #37 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 457957, Cykl #1 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

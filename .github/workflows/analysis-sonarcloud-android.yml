@@ -85,6 +85,13 @@ jobs:
                 -DCMAKE_ANDROID_NDK=$ANDROID_NDK_HOME \
                 -DCMAKE_ANDROID_STL_TYPE=c++_shared \
                 -DSPEED_UP_BUILD_UNITY=OFF \
+                -DOTC_ENABLE_PHYSFS=OFF \
+                -DOTC_ENABLE_LZMA=OFF \
+                -DOTC_ENABLE_NLOHMANN_JSON=OFF \
+                -DOTC_ENABLE_PUGIXML=OFF \
+                -DOTC_ENABLE_FMT=OFF \
+                -DOTC_ENABLE_HTTPLIB=OFF \
+                -DOTC_ENABLE_GMP=OFF \
                 -DOTC_ENABLE_TTF=OFF \
                 -DOTC_ENABLE_HARFBUZZ=OFF \
                 -DOTC_ENABLE_FRIBIDI=OFF \

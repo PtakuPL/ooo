@@ -22,6 +22,11 @@ option(BUILD_STATIC_LIBRARY "Build using static libraries" OFF)
 option(TOGGLE_PRE_COMPILED_HEADER "Use precompiled header (speed up compile)" ON)
 option(SPEED_UP_BUILD_UNITY "Compile using build unity for speed up build" ON)
 
+# Allow OTC_ENABLE_* flags (used in CI/workflows) to override the framework toggles.
+if(DEFINED OTC_ENABLE_SOUND)
+  set(TOGGLE_FRAMEWORK_SOUND ${OTC_ENABLE_SOUND})
+endif()
+
 # *****************************************************************************
 # Cmake Features
 # *****************************************************************************

@@ -86,6 +86,7 @@ jobs:
                 -DOTC_ENABLE_TTF=OFF \
                 -DOTC_ENABLE_HARFBUZZ=OFF \
                 -DOTC_ENABLE_FRIBIDI=OFF \
+                -DOTC_ENABLE_PHYSFS=OFF \
                 -DOTC_ENABLE_PROTOBUF=OFF \
                 -S . -B build-web
 

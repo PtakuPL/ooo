@@ -15,6 +15,7 @@
 
 - **2025-12-12 – SonarCloud focus:** wszystkie workflow poza czterema `analysis-sonarcloud-*` zostały tymczasowo wyłączone (tylko `workflow_dispatch`). Automatic Analysis w projekcie SonarCloud jest wyłączone – uruchamiamy wyłącznie CI analizy.
 - **2025-12-12 – Windows/Android workflow:** dodane kroki instalacji Ninja + MSVC env (Windows) oraz `-DOTC_ENABLE_SOUND=OFF` (Android) + wspólny `sonar-project.properties` dla klienta/serwera.
+- **2025-12-13 – Web workflow:** na czas analiz SonarCloud wyłączone PhysFS (`-DOTC_ENABLE_PHYSFS=OFF` w `analysis-sonarcloud-web.yml`); w `src/CMakeLists.txt` dodany alias `OTC_ENABLE_SOUND` → `TOGGLE_FRAMEWORK_SOUND`, żeby flagi z CI były respektowane.
 - **2025-12-06 – Emscripten fix:** `FindLua.cmake` zastąpiony standardowym modułem CMake (szczegóły w `ci-errors.md`).
 - **Windows vcpkg baseline:** nadal wymagane podniesienie `builtin-baseline`/`vcpkgGitCommitId`, aby porty `abseil@20250814.1`, `angle@chromium_7258#2`, `asio@1.32.0` były dostępne dla SonarCloud run.
 

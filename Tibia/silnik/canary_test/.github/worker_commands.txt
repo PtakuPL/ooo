@@ -1,26 +1,28 @@
-# 🎮 I18N Worker Commands Terminal
+# 🎮 I18N Worker Commands Terminal v1.1
 # Wpisz komendę i zrób commit/push - worker wykona ją automatycznie
 # ═══════════════════════════════════════════════════════════════════
 
-# Dostępne komendy:
-# ─────────────────
-# PAUSE          - Zatrzymaj worker (czeka 1h)
-# RESUME         - Wznów pracę
-# STATUS         - Wymuś aktualizację statusu
-# PUSH           - Wymuś push do GitHub
-# RESTART        - Restartuj worker
-# PHASE: N       - Przejdź do fazy N (1-4)
-# CATEGORY: xxx  - Przejdź do kategorii (npc/scripts/items/monsters/spells)
-# TRANSLATE: N   - Wygeneruj batch N kluczy do tłumaczenia
+# 🔧 KONTROLA:
+#   PAUSE, RESUME, RESTART, PUSH
+#
+# 📊 STATUSY:
+#   STATUS, INFO, ERRORS, RECENT: N
+#
+# 🔍 ANALIZA:
+#   ANALYZE: plik.lua    (np. ANALYZE: Sam.lua)
+#   SCAN: katalog        (np. SCAN: data-otservbr-global/npc)
+#   KEYS: kategoria      (np. KEYS: npc)
+#
+# 🎯 NAWIGACJA:
+#   PHASE: N             (1-4)
+#   CATEGORY: nazwa      (npc, scripts, items, monsters, spells, server_cpp)
+#
+# 🌍 TŁUMACZENIA:
+#   TRANSLATE: N         (np. TRANSLATE: 50)
+#
+# 💬 INTERAKCJA:
+#   PROMPT: pytanie      (np. PROMPT: sprawdź Sam.lua czy ma i18n)
 
 # ═══════════════════════════════════════════════════════════════════
-# Przykłady użycia:
-# ═══════════════════════════════════════════════════════════════════
-# TRANSLATE: 50
-# PHASE: 2
-# CATEGORY: monsters
-# PAUSE
-# ═══════════════════════════════════════════════════════════════════
-
-# 👇 Wpisz komendę poniżej (usuń "#" i wpisz komendę):
+# 👇 Wpisz komendę poniżej (jedna komenda, bez "#"):
 

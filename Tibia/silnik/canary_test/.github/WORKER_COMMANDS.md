@@ -1,6 +1,6 @@
 # 📡 I18N Worker - GitHub Command Terminal
 
-> **Wersja:** 1.0 | **Aktualizacja:** 2025-12-09
+> **Wersja:** 1.1 | **Aktualizacja:** 2025-12-09
 
 Możesz wysyłać komendy do workera przez GitHub! Worker sprawdza plik `.github/worker_commands.txt` przy każdym auto-push (co 2 minuty).
 
@@ -17,22 +17,67 @@ Możesz wysyłać komendy do workera przez GitHub! Worker sprawdza plik `.github
 ### 2️⃣ Worker wykona komendę
 - Przy następnym cyklu (max 2 min) worker pobierze zmiany
 - Wykona komendę i zaloguje w `commands_log.txt`
-- Wyczyści `worker_commands.txt`
+- Wyczyść `worker_commands.txt`
+- Wynik zapisze w `.github/` (np. `analysis_report.md`)
 
 ---
 
 ## 📋 Dostępne komendy
 
+### 🔧 Kontrola workera
 | Komenda | Opis | Przykład |
 |---------|------|----------|
 | `PAUSE` | Zatrzymaj worker (czeka 1h) | `PAUSE` |
 | `RESUME` | Wznów pracę | `RESUME` |
-| `STATUS` | Wymuś aktualizację statusu | `STATUS` |
-| `PUSH` | Wymuś natychmiastowy push | `PUSH` |
 | `RESTART` | Restartuj worker | `RESTART` |
+| `PUSH` | Wymuś natychmiastowy push | `PUSH` |
+
+### 📊 Statusy i raporty
+| Komenda | Opis | Przykład |
+|---------|------|----------|
+| `STATUS` | Wymuś aktualizację statusu | `STATUS` |
+| `INFO` | Szczegółowe info o workerze | `INFO` |
+| `ERRORS` | Pokaż ostatnie błędy | `ERRORS` |
+| `RECENT: N` | Ostatnie N plików (domyślnie 5) | `RECENT: 10` |
+
+### 🔍 Analiza i skanowanie
+| Komenda | Opis | Przykład |
+|---------|------|----------|
+| `ANALYZE: plik` | Analizuj konkretny plik | `ANALYZE: Sam.lua` |
+| `SCAN: katalog` | Skanuj katalog | `SCAN: data-otservbr-global/npc` |
+| `KEYS: kategoria` | Pokaż klucze kategorii | `KEYS: npc` |
+
+### 🎯 Nawigacja
+| Komenda | Opis | Przykład |
+|---------|------|----------|
 | `PHASE: N` | Przejdź do fazy N (1-4) | `PHASE: 2` |
 | `CATEGORY: xxx` | Zmień kategorię | `CATEGORY: monsters` |
+
+### 🌍 Tłumaczenia
+| Komenda | Opis | Przykład |
+|---------|------|----------|
 | `TRANSLATE: N` | Wygeneruj batch N kluczy | `TRANSLATE: 50` |
+
+### 💬 Interakcja (AI-like)
+| Komenda | Opis | Przykład |
+|---------|------|----------|
+| `PROMPT: tekst` | Zadaj pytanie workerowi | `PROMPT: sprawdź Sam.lua czy ma i18n` |
+
+---
+
+## 🗂️ Gdzie szukać wyników?
+
+Po wykonaniu komendy, wynik znajdziesz w `.github/`:
+
+| Komenda | Plik wyniku |
+|---------|-------------|
+| `RECENT` | `.github/recent_report.md` |
+| `ANALYZE` | `.github/analysis_report.md` |
+| `PROMPT` | `.github/prompt_response.md` |
+| `INFO` | `.github/worker_info.md` |
+| `KEYS` | `.github/keys_{kategoria}.md` |
+| `ERRORS` | `.github/errors_report.md` |
+| `SCAN` | `.github/scan_report.md` |
 
 ---
 
@@ -40,7 +85,7 @@ Możesz wysyłać komendy do workera przez GitHub! Worker sprawdza plik `.github
 
 ### Faza 1: 🎮 Canary Server
 - `npc` - Dialogi NPC
-- `scripts` - Skrypty Lua
+- `scripts` - Skrypty Lua  
 - `items` - Przedmioty
 - `monsters` - Potwory
 - `spells` - Zaklęcia
@@ -65,9 +110,24 @@ Możesz wysyłać komendy do workera przez GitHub! Worker sprawdza plik `.github
 
 ## 📜 Przykłady użycia
 
-### Zmiana fazy na Website:
+### Sprawdź konkretny plik NPC:
 ```
-PHASE: 2
+ANALYZE: Sam.lua
+```
+
+### Sprawdź czy NPC ma rzeczy do i18n:
+```
+PROMPT: sprawdź Sam.lua czy nie ma rzeczy do internacjonalizacji
+```
+
+### Pokaż ostatnie 10 edytowanych plików:
+```
+RECENT: 10
+```
+
+### Skanuj katalog NPC:
+```
+SCAN: data-otservbr-global/npc
 ```
 
 ### Wygeneruj batch 100 kluczy do tłumaczenia:
@@ -75,14 +135,9 @@ PHASE: 2
 TRANSLATE: 100
 ```
 
-### Przejdź do kategorii monsters:
+### Zmiana fazy na Website:
 ```
-CATEGORY: monsters
-```
-
-### Zatrzymaj worker na chwilę:
-```
-PAUSE
+PHASE: 2
 ```
 
 ---
@@ -91,21 +146,23 @@ PAUSE
 
 Wykonane komendy są zapisywane w `.github/commands_log.txt`:
 ```
-[2025-12-09 04:50:00] STATUS - wykonano
-[2025-12-09 04:52:00] TRANSLATE 50 - wykonano
-[2025-12-09 04:55:00] PHASE 2 - wykonano
+[2025-12-09 05:00:00] STATUS - wykonano
+[2025-12-09 05:02:00] ANALYZE Sam.lua - wykonano
+[2025-12-09 05:05:00] PROMPT - wykonano
 ```
 
 ---
 
 ## ⚠️ Ważne uwagi
 
-1. **Tylko jedna komenda na raz** - Worker przetwarza jedną komendę i czyści plik
+1. **Jedna komenda na raz** - Worker przetwarza jedną komendę i czyści plik
 2. **Komentarze ignorowane** - Linie zaczynające się od `#` są pomijane
 3. **Case-insensitive** - `PAUSE`, `pause`, `Pause` działają tak samo
 4. **Max opóźnienie ~2 min** - Worker sprawdza komendy co 2 minuty
+5. **Wyniki w .github/** - Raporty zapisywane są w katalogu `.github/`
 
 ---
 
 *🔗 Plik komend: `.github/worker_commands.txt`*
 *📋 Log: `.github/commands_log.txt`*
+*📁 Wyniki: `.github/*.md`*

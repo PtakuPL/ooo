@@ -349,6 +349,47 @@ check_github_commands() {
                 echo "" > "$COMMANDS_FILE"
                 exec "$0"
                 ;;
+            "RECENT"|"recent"|"last")
+                log_info "📋 Komenda RECENT - ostatnie pliki"
+                generate_recent_files_report "$arg"
+                echo "[$timestamp] RECENT $arg - wykonano" >> "$COMMANDS_LOG"
+                ;;
+            "ANALYZE"|"analyze"|"check")
+                log_info "🔍 Komenda ANALYZE: $arg"
+                if [ -n "$arg" ]; then
+                    analyze_specific_file "$arg"
+                    echo "[$timestamp] ANALYZE $arg - wykonano" >> "$COMMANDS_LOG"
+                fi
+                ;;
+            "PROMPT"|"prompt"|"ask")
+                log_info "💬 Komenda PROMPT: $arg"
+                if [ -n "$arg" ]; then
+                    process_user_prompt "$arg"
+                    echo "[$timestamp] PROMPT - wykonano" >> "$COMMANDS_LOG"
+                fi
+                ;;
+            "INFO"|"info")
+                log_info "ℹ️ Komenda INFO"
+                generate_worker_info
+                echo "[$timestamp] INFO - wykonano" >> "$COMMANDS_LOG"
+                ;;
+            "KEYS"|"keys")
+                log_info "🔑 Komenda KEYS: $arg"
+                show_category_keys "$arg"
+                echo "[$timestamp] KEYS $arg - wykonano" >> "$COMMANDS_LOG"
+                ;;
+            "ERRORS"|"errors")
+                log_info "⚠️ Komenda ERRORS - pokazuję błędy"
+                show_recent_errors
+                echo "[$timestamp] ERRORS - wykonano" >> "$COMMANDS_LOG"
+                ;;
+            "SCAN"|"scan")
+                log_info "🔍 Komenda SCAN: $arg"
+                if [ -n "$arg" ]; then
+                    scan_directory_for_i18n "$arg"
+                    echo "[$timestamp] SCAN $arg - wykonano" >> "$COMMANDS_LOG"
+                fi
+                ;;
             *)
                 log_warn "❓ Nieznana komenda: $cmd"
                 echo "[$timestamp] UNKNOWN: $cmd - zignorowano" >> "$COMMANDS_LOG"
@@ -358,6 +399,298 @@ check_github_commands() {
     
     # Wyczyść plik komend po wykonaniu
     echo "# Worker Commands - Oczekuję na komendy..." > "$COMMANDS_FILE"
+}
+
+#===============================================================================
+# NOWE FUNKCJE KOMEND
+#===============================================================================
+
+# Generuj raport ostatnich plików
+generate_recent_files_report() {
+    local count="${1:-5}"
+    local report_file="$WORK_DIR/.github/recent_report.md"
+    
+    cat > "$report_file" << EOF
+# 📋 Raport Ostatnich Plików
+> Wygenerowano: $(date '+%Y-%m-%d %H:%M:%S')
+
+## 📝 Ostatnie $count edytowanych plików
+\`\`\`
+$(tail -$count "$PROCESSED_FILE" 2>/dev/null | while read f; do
+    local mtime=$(stat -c '%Y' "$f" 2>/dev/null || echo "0")
+    local mtime_h=$(date -d "@$mtime" '+%H:%M:%S' 2>/dev/null || echo "??:??")
+    echo "[$mtime_h] $(basename "$f")"
+done)
+\`\`\`
+
+## 🔍 Ostatnie $count analizowanych plików
+\`\`\`
+$(grep -l "sendTextMessage\|:say(" data-otservbr-global/npc/*.lua 2>/dev/null | tail -$count | while read f; do
+    echo "$(basename "$f")"
+done)
+\`\`\`
+
+## 📊 Statystyki
+- Przetworzonych: $(wc -l < "$PROCESSED_FILE" 2>/dev/null || echo "0")
+- Wykluczonych: $(wc -l < "$EXCLUDED_FILE" 2>/dev/null || echo "0")
+- Kluczy: $(jq 'length' "$I18N_DIR/en/npc.json" 2>/dev/null || echo "0") NPC
+EOF
+    
+    log_success "📋 Raport zapisano w .github/recent_report.md"
+}
+
+# Analizuj konkretny plik
+analyze_specific_file() {
+    local file_pattern="$1"
+    local report_file="$WORK_DIR/.github/analysis_report.md"
+    
+    # Znajdź plik
+    local found_file=$(find "$WORK_DIR" -name "$file_pattern" -type f 2>/dev/null | head -1)
+    
+    if [ -z "$found_file" ]; then
+        log_warn "❌ Nie znaleziono pliku: $file_pattern"
+        echo "# ❌ Nie znaleziono: $file_pattern" > "$report_file"
+        return 1
+    fi
+    
+    log_info "🔍 Analizuję: $found_file"
+    
+    cat > "$report_file" << EOF
+# 🔍 Analiza pliku: $(basename "$found_file")
+> Wygenerowano: $(date '+%Y-%m-%d %H:%M:%S')
+> Ścieżka: \`$found_file\`
+
+## 📊 Statystyki
+- Rozmiar: $(stat -c '%s' "$found_file" 2>/dev/null || echo "?") bajtów
+- Linii: $(wc -l < "$found_file" 2>/dev/null || echo "?")
+
+## 🔑 Znalezione stringi do i18n
+
+### npcHandler:say() / selfSay()
+\`\`\`lua
+$(grep -nE 'npcHandler:say\(|selfSay\(' "$found_file" 2>/dev/null | head -20)
+\`\`\`
+
+### sendTextMessage()
+\`\`\`lua
+$(grep -nE 'sendTextMessage' "$found_file" 2>/dev/null | head -10)
+\`\`\`
+
+### Inne stringi tekstowe
+\`\`\`lua
+$(grep -nE '"[^"]{15,}"' "$found_file" 2>/dev/null | grep -v "NPC_LIB.i18n" | head -10)
+\`\`\`
+
+## ✅ Już zmigrowane (używa i18n API)
+\`\`\`lua
+$(grep -nE 'NPC_LIB\.i18n\.' "$found_file" 2>/dev/null | head -10)
+\`\`\`
+
+## 📋 Rekomendacje
+$(if grep -qE 'NPC_LIB\.i18n\.' "$found_file" 2>/dev/null; then
+    echo "✅ Plik już częściowo zmigrowany do i18n"
+else
+    echo "⚠️ Plik wymaga migracji do i18n API"
+fi)
+
+$(local unmigrated=$(grep -cE 'npcHandler:say\("[^"]+"\)|selfSay\("[^"]+"\)' "$found_file" 2>/dev/null || echo "0")
+echo "- Niezmigrowanych stringów: $unmigrated")
+EOF
+    
+    log_success "📋 Analiza zapisana w .github/analysis_report.md"
+}
+
+# Przetwórz prompt użytkownika
+process_user_prompt() {
+    local prompt="$1"
+    local report_file="$WORK_DIR/.github/prompt_response.md"
+    
+    cat > "$report_file" << EOF
+# 💬 Odpowiedź na prompt
+> Wygenerowano: $(date '+%Y-%m-%d %H:%M:%S')
+> Prompt: "$prompt"
+
+## 🔍 Analiza zapytania
+
+$(if echo "$prompt" | grep -qiE "Sam\.lua|sam\.npc|Sam\.npc"; then
+    echo "### Szukam pliku Sam..."
+    local sam_file=$(find "$WORK_DIR" -iname "*sam*.lua" -path "*/npc/*" 2>/dev/null | head -1)
+    if [ -n "$sam_file" ]; then
+        echo "Znaleziono: \`$sam_file\`"
+        echo ""
+        echo "#### Stringi do i18n:"
+        echo "\`\`\`lua"
+        grep -nE 'npcHandler:say\(|selfSay\(' "$sam_file" 2>/dev/null | head -15
+        echo "\`\`\`"
+        echo ""
+        echo "#### Status migracji:"
+        if grep -q 'NPC_LIB.i18n' "$sam_file" 2>/dev/null; then
+            echo "✅ Plik już używa i18n API"
+        else
+            echo "⚠️ Plik wymaga migracji"
+        fi
+    else
+        echo "❌ Nie znaleziono pliku Sam"
+    fi
+elif echo "$prompt" | grep -qiE "status|postęp|progress"; then
+    echo "### Status pracy"
+    echo "- Faza: $(get_current_phase)"
+    echo "- Kategoria: $(get_current_category)"
+    echo "- Cykl: #$CYCLE_COUNT"
+elif echo "$prompt" | grep -qiE "błęd|error|problem"; then
+    echo "### Ostatnie błędy"
+    tail -20 "$CONFLICTS_FILE" 2>/dev/null || echo "Brak błędów"
+else
+    echo "Nie rozpoznano zapytania. Dostępne tematy:"
+    echo "- Analiza konkretnego pliku NPC"
+    echo "- Status pracy"
+    echo "- Błędy i konflikty"
+fi)
+
+---
+*Worker v4.1 - GitHub Command Terminal*
+EOF
+
+    log_success "💬 Odpowiedź zapisana w .github/prompt_response.md"
+}
+
+# Informacje o workerze
+generate_worker_info() {
+    local report_file="$WORK_DIR/.github/worker_info.md"
+    
+    cat > "$report_file" << EOF
+# ℹ️ Informacje o Workerze
+> Wygenerowano: $(date '+%Y-%m-%d %H:%M:%S')
+
+## 🤖 Worker Status
+| Parametr | Wartość |
+|----------|---------|
+| Wersja | v4.1 |
+| PID | $$ |
+| Cykl | #$CYCLE_COUNT |
+| Tryb | $MODE |
+| Uptime | $(ps -o etime= -p $$ 2>/dev/null || echo "?") |
+
+## 📊 Statystyki
+| Metryka | Wartość |
+|---------|---------|
+| Plików przetworzonych | $(wc -l < "$PROCESSED_FILE" 2>/dev/null || echo "0") |
+| Plików wykluczonych | $(wc -l < "$EXCLUDED_FILE" 2>/dev/null || echo "0") |
+| Stringów znalezionych | $TOTAL_STRINGS_FOUND |
+| Konfliktów | $TOTAL_CONFLICTS |
+
+## 🗂️ Kategorie JSON
+$(for f in "$I18N_DIR/en"/*.json; do
+    [ -f "$f" ] && echo "- $(basename "$f"): $(jq 'length' "$f" 2>/dev/null || echo "0") kluczy"
+done)
+
+## 📁 Katalogi skanowane
+$(printf '%s\n' "${SCAN_DIRS[@]}" | head -10)
+...
+
+---
+*Worker v4.1*
+EOF
+
+    log_success "ℹ️ Info zapisano w .github/worker_info.md"
+}
+
+# Pokaż klucze kategorii
+show_category_keys() {
+    local category="${1:-npc}"
+    local report_file="$WORK_DIR/.github/keys_$category.md"
+    local json_file="$I18N_DIR/en/$category.json"
+    
+    if [ ! -f "$json_file" ]; then
+        log_warn "❌ Brak pliku: $json_file"
+        return 1
+    fi
+    
+    cat > "$report_file" << EOF
+# 🔑 Klucze kategorii: $category
+> Wygenerowano: $(date '+%Y-%m-%d %H:%M:%S')
+> Plik: \`$json_file\`
+
+## 📊 Statystyki
+- Łącznie kluczy: $(jq 'length' "$json_file" 2>/dev/null || echo "0")
+- Rozmiar pliku: $(stat -c '%s' "$json_file" 2>/dev/null || echo "?") bajtów
+
+## 🔤 Przykładowe klucze (pierwsze 20)
+\`\`\`json
+$(jq 'keys[:20]' "$json_file" 2>/dev/null)
+\`\`\`
+
+## 📝 Przykładowe wartości
+\`\`\`json
+$(jq 'to_entries[:10] | from_entries' "$json_file" 2>/dev/null)
+\`\`\`
+EOF
+
+    log_success "🔑 Klucze zapisano w .github/keys_$category.md"
+}
+
+# Pokaż ostatnie błędy
+show_recent_errors() {
+    local report_file="$WORK_DIR/.github/errors_report.md"
+    
+    cat > "$report_file" << EOF
+# ⚠️ Raport błędów
+> Wygenerowano: $(date '+%Y-%m-%d %H:%M:%S')
+
+## 🔴 Ostatnie konflikty
+\`\`\`
+$(tail -30 "$CONFLICTS_FILE" 2>/dev/null || echo "Brak konfliktów")
+\`\`\`
+
+## ⚠️ Błędy składni Lua
+\`\`\`
+$(grep -r "syntax error\|unexpected" "$LOG_FILE" 2>/dev/null | tail -10 || echo "Brak błędów składni")
+\`\`\`
+
+## 📋 Błędy z logu
+\`\`\`
+$(grep -E "\[ERROR\]|\[WARN\]" "$LOG_FILE" 2>/dev/null | tail -20 || echo "Brak błędów")
+\`\`\`
+EOF
+
+    log_success "⚠️ Błędy zapisano w .github/errors_report.md"
+}
+
+# Skanuj katalog
+scan_directory_for_i18n() {
+    local dir="$1"
+    local report_file="$WORK_DIR/.github/scan_report.md"
+    
+    local full_dir="$WORK_DIR/$dir"
+    [ ! -d "$full_dir" ] && full_dir=$(find "$WORK_DIR" -type d -name "$dir" 2>/dev/null | head -1)
+    
+    if [ ! -d "$full_dir" ]; then
+        log_warn "❌ Nie znaleziono katalogu: $dir"
+        echo "# ❌ Nie znaleziono katalogu: $dir" > "$report_file"
+        return 1
+    fi
+    
+    cat > "$report_file" << EOF
+# 🔍 Skan katalogu: $dir
+> Wygenerowano: $(date '+%Y-%m-%d %H:%M:%S')
+> Ścieżka: \`$full_dir\`
+
+## 📊 Statystyki
+- Plików Lua: $(find "$full_dir" -name "*.lua" 2>/dev/null | wc -l)
+- Plików PHP: $(find "$full_dir" -name "*.php" 2>/dev/null | wc -l)
+- Plików HTML: $(find "$full_dir" -name "*.html" 2>/dev/null | wc -l)
+
+## 🔑 Pliki z potencjalnymi stringami do i18n
+$(find "$full_dir" -name "*.lua" -exec grep -l 'sendTextMessage\|:say(' {} \; 2>/dev/null | head -15 | while read f; do
+    local count=$(grep -cE 'sendTextMessage|:say\(' "$f" 2>/dev/null || echo "0")
+    echo "- \`$(basename "$f")\`: $count stringów"
+done)
+
+## ✅ Pliki już zmigrowane
+$(find "$full_dir" -name "*.lua" -exec grep -l 'NPC_LIB.i18n' {} \; 2>/dev/null | wc -l) plików używa i18n API
+EOF
+
+    log_success "🔍 Skan zapisano w .github/scan_report.md"
 }
 
 #===============================================================================
@@ -1572,6 +1905,66 @@ sync_translations() {
 }
 
 #===============================================================================
+# GENEROWANIE SZCZEGÓŁÓW WSZYSTKICH KATEGORII
+#===============================================================================
+generate_all_categories_details() {
+    local output=""
+    local counter=1
+    
+    # Pobierz wszystkie kategorie JSON z i18n/en/
+    for json_file in "$I18N_DIR/en"/*.json; do
+        [ ! -f "$json_file" ] && continue
+        
+        local cat_name=$(basename "$json_file" .json)
+        local keys_count=$(jq 'length' "$json_file" 2>/dev/null || echo "0")
+        
+        # Pomijaj puste kategorie
+        [ "$keys_count" -eq 0 ] && continue
+        
+        # Określ ikonę i status
+        local icon="📁"
+        local status_icon="⏳"
+        local status_text="Oczekuje"
+        
+        case "$cat_name" in
+            npc)       icon="🧙"; status_icon="✅"; status_text="Zakończone" ;;
+            scripts)   icon="📜"; status_icon="🔄"; status_text="W trakcie" ;;
+            items)     icon="🎒"; status_icon="✅"; status_text="Zakończone" ;;
+            monsters)  icon="👹" ;;
+            spells)    icon="✨" ;;
+            server)    icon="⚙️" ;;
+            system)    icon="🖥️" ;;
+            ui)        icon="🎨" ;;
+            game)      icon="🎮" ;;
+            player)    icon="👤" ;;
+            misc)      icon="📦" ;;
+            quests)    icon="📜" ;;
+            actions)   icon="⚡" ;;
+            events)    icon="📅" ;;
+        esac
+        
+        # Oblicz procent (zakładając cel 110% obecnych kluczy)
+        local target=$((keys_count + keys_count / 10))
+        [ "$target" -lt 100 ] && target=100
+        local pct=$((keys_count * 100 / target))
+        [ "$pct" -ge 90 ] && { status_icon="✅"; status_text="Zakończone"; }
+        
+        output+="<details>\n"
+        output+="<summary><h3>$icon $counter. ${cat_name^} - $status_text $status_icon</h3></summary>\n\n"
+        output+="| Metryka | Wartość |\n"
+        output+="|---------|----------|\n"
+        output+="| 🔑 Kluczy | **$keys_count** |\n"
+        output+="| 📊 Postęp | $pct% |\n"
+        output+="| 📁 Plik | \`i18n/en/$cat_name.json\` |\n\n"
+        output+="</details>\n\n---\n\n"
+        
+        counter=$((counter + 1))
+    done
+    
+    echo -e "$output"
+}
+
+#===============================================================================
 # STATUS UPDATE - Rozbudowany z kategoriami dla AI agentów
 #===============================================================================
 update_status() {
@@ -1684,127 +2077,7 @@ $(generate_activity_section)
 
 ## 📂 Szczegóły Kategorii
 
-<details>
-<summary><h3>🧙 1. NPC Dialogs - COMPLETED ✅</h3></summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | $npc_keys |
-| 📊 Status | ✅ Zakończone |
-| 📂 Plików | ~877 |
-
-**Źródła:** \`data-otservbr-global/npc/\`, \`data-canary/npc/\`
-
-**Wzorce ekstrakcji:**
-\`\`\`lua
-npcHandler:say("text")
-selfSay("text")
-\`\`\`
-
-</details>
-
----
-
-<details open>
-<summary><h3>📜 2. Lua Scripts - IN PROGRESS 🔄</h3></summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | **$scripts_keys** |
-| 📊 Status | 🔄 W trakcie |
-| 🎯 Aktualnie | \`data-otservbr-global/scripts/\` |
-| 🔄 Cykl | #$CYCLE_COUNT |
-
-### 📁 Podkatalogi - Postęp
-
-| Katalog | Przetworzonych | Status |
-|---------|----------------|--------|
-| \`quests/\` | $quests_count | $([ $quests_count -gt 0 ] && echo "🔄 W trakcie" || echo "⏳ Oczekuje") |
-| \`actions/\` | $actions_count | $([ $actions_count -gt 0 ] && echo "🔄 W trakcie" || echo "⏳ Oczekuje") |
-| \`movements/\` | $movements_count | $([ $movements_count -gt 0 ] && echo "🔄 W trakcie" || echo "⏳ Oczekuje") |
-| \`creaturescripts/\` | $creature_count | $([ $creature_count -gt 0 ] && echo "🔄 W trakcie" || echo "⏳ Oczekuje") |
-| \`talkactions/\` | $talk_count | $([ $talk_count -gt 0 ] && echo "🔄 W trakcie" || echo "⏳ Oczekuje") |
-| \`globalevents/\` | $global_count | $([ $global_count -gt 0 ] && echo "🔄 W trakcie" || echo "⏳ Oczekuje") |
-
-### 🔮 Kategorie specjalne (z JSON)
-
-| Kategoria | Kluczy | Status |
-|-----------|--------|--------|
-| 👹 \`monsters\` | $monsters_keys_count | $([ $monsters_keys_count -gt 10 ] && echo "✅ OK" || echo "⏳ Oczekuje") |
-| ✨ \`spells\` | $spells_keys_count | $([ $spells_keys_count -gt 10 ] && echo "✅ OK" || echo "⏳ Oczekuje") |
-| ⚙️ \`server\` | $server_keys_count | $([ $server_keys_count -gt 10 ] && echo "✅ OK" || echo "⏳ Oczekuje") |
-
-### 📄 Ostatnio przetworzone pliki
-
-| Plik | Czas | Status |
-|------|------|--------|
-$recent_files
-
-### 💻 Przykład kodu (ostatni plik)
-
-\`\`\`lua
-$code_example
-\`\`\`
-
-**Wzorce ekstrakcji:**
-\`\`\`lua
-player:sendTextMessage(type, "text")
-creature:say("text")
-\`\`\`
-
-</details>
-
----
-
-<details>
-<summary><h3>🎒 3. Items - COMPLETED ✅</h3></summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | $items_keys |
-| 📊 Status | ✅ Zakończone |
-
-</details>
-
----
-
-<details>
-<summary><h3>👹 4. Monsters - PENDING ⏳</h3></summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | $monsters_keys |
-| 📊 Status | ⏳ Oczekuje |
-| 📅 Start | Po zakończeniu Scripts |
-
-</details>
-
----
-
-<details>
-<summary><h3>⚙️ 5. Server C++ - PENDING ⏳</h3></summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | $server_keys |
-| 📊 Status | ⏳ Oczekuje |
-| ⚠️ Wymaga | Rekompilacja serwera |
-
-</details>
-
----
-
-<details>
-<summary><h3>🔮 6. Spells - PENDING ⏳</h3></summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | $spells_keys |
-| 📊 Status | ⏳ Oczekuje |
-
-</details>
-
----
+$(generate_all_categories_details)
 
 ## 🔧 Worker & Guardian Status
 

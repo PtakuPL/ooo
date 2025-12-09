@@ -20401,3 +20401,25 @@ Duplikaty, błędy składni, brakujące tłumaczenia
 Klucze i18n: 52191
 
 ---
+
+## [2025-12-09 12:51:21] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 50 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-09 12:51:23] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 52191
+
+---

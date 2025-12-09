@@ -520,3 +520,13 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/mailer.php
 /home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/reports.php
 /home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/pages.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/dashboard.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/news.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/menus.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/changelog.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/players.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/logs.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/admin/pages/tools.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/index.nginx-debian.html
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/exception.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/src/Settings.php

@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-09 03:08:26 UTC  
+> **Aktualizacja:** 2025-12-09 03:14:06 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **473** | ↑ |
-| ⏭️ Plików wykluczonych | **4937** | - |
-| 🔑 Kluczy i18n | **46993** | ↑ |
+| 📁 Plików przetworzonych | **522** | ↑ |
+| ⏭️ Plików wykluczonych | **5329** | - |
+| 🔑 Kluczy i18n | **49992** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#4** | - |
+| 🔄 Cykl | **#1** | - |
 
 ---
 
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | ✅ | 8992/5000 (179%) | 5000 |
+| 🧙 NPC Dialogs | 🔄 | 0/5000 (0%) | 5000 |
 | 📜 Lua Scripts | 🔄 | 713/1000 (71%) | 1000 |
 | 🎒 Items Database | 🔄 | 36972/40000 (92%) | 40000 |
 | 👹 Monsters | 🔄 | 100/500 (20%) | 500 |
@@ -78,15 +78,15 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #4` |
-| **Szczegóły** | NPC:8992 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-09 03:07:48 |
+| **Plik** | `Cykl #1` |
+| **Szczegóły** | NPC:0 Scripts:713 Items:36972 |
+| **Ostatnia aktualizacja** | 2025-12-09 03:13:03 |
 
 ### 📈 Statystyki sesji
 
 | Metryka | Wartość |
 |---------|----------|
-| Plików przetworzonych | 657 |
+| Plików przetworzonych | 663 |
 | Kluczy wyciągniętych | 0 |
 | Błędów | 0 |
 | Napraw zastosowanych | 0 |
@@ -100,7 +100,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 8992 |
+| 🔑 Kluczy | 11991 |
 | 📊 Status | ✅ Zakończone |
 | 📂 Plików | ~877 |
 
@@ -124,16 +124,16 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #4 |
+| 🔄 Cykl | #1 |
 
 ### 📁 Podkatalogi - Postęp
 
 | Katalog | Przetworzonych | Status |
 |---------|----------------|--------|
-| `quests/` | 0 | ⏳ Oczekuje |
+| `quests/` | 23 | 🔄 W trakcie |
 | `actions/` | 0 | ⏳ Oczekuje |
 | `movements/` | 0 | ⏳ Oczekuje |
-| `creaturescripts/` | 0 | ⏳ Oczekuje |
+| `creaturescripts/` | 3 | 🔄 W trakcie |
 | `talkactions/` | 0 | ⏳ Oczekuje |
 | `globalevents/` | 0 | ⏳ Oczekuje |
 
@@ -149,16 +149,16 @@ selfSay("text")
 
 | Plik | Czas | Status |
 |------|------|--------|
-| `ulala.lua` | 03:06:59 | ✅ |
-| `vascalir.lua` | 03:07:11 | ✅ |
-| `vulturenose.lua` | 03:07:19 | ✅ |
-| `gewen.lua` | 03:07:22 | ✅ |
-| `tarun.lua` | 03:07:24 | ✅ |
+| `accounts.php` | 06:26:18 | ✅ |
+| `clmd.php` | 06:26:18 | ✅ |
+| `mailer.php` | 06:26:18 | ✅ |
+| `reports.php` | 06:26:18 | ✅ |
+| `pages.php` | 06:26:18 | ✅ |
 
 ### 💻 Przykład kodu (ostatni plik)
 
 ```lua
-			npcHandler:say({
+
 ```
 
 **Wzorce ekstrakcji:**
@@ -225,7 +225,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 3178885, Cykl #4 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 3364177, Cykl #1 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

@@ -122,7 +122,7 @@ NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shop_keeper.say_1")
 }
 ```
 
-### Wzorzec 2: Wiele wypowiedzi (tablica)
+### Wzorzec 2: Wiele wypowiedzi (tablica jednolinijkowa)
 
 ```lua
 -- PRZED:
@@ -139,7 +139,45 @@ NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.npc_name.say_2")
 }
 ```
 
-### Wzorzec 3: StdModule.say (ręczna migracja)
+### Wzorzec 3: Wieloliniowe tablice (NOWE - 2025-12-09)
+
+Worker potrafi teraz migrować skomplikowane wieloliniowe tablice:
+
+```lua
+-- PRZED:
+npcHandler:say({
+    "This is a very long message that spans...",
+    "Multiple lines in the source code...",
+    "For better readability.",
+}, npc, creature)
+
+-- PO:
+NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.npc_name.multi_1")
+NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.npc_name.multi_2")
+NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.npc_name.multi_3")
+
+-- JSON:
+{
+  "npc.npc_name.multi_1": "This is a very long message that spans...",
+  "npc.npc_name.multi_2": "Multiple lines in the source code...",
+  "npc.npc_name.multi_3": "For better readability."
+}
+```
+
+**Narzędzie:** `tools/migrate_multiline_say.py`
+
+```bash
+# Migracja pojedynczego pliku
+python3 tools/migrate_multiline_say.py --file data-otservbr-global/npc/example.lua
+
+# Migracja wszystkich NPC
+python3 tools/migrate_multiline_say.py
+
+# Migracja z limitem
+python3 tools/migrate_multiline_say.py --limit 50
+```
+
+### Wzorzec 4: StdModule.say (ręczna migracja)
 
 ```lua
 -- PRZED:
@@ -183,14 +221,14 @@ cat i18n/status/npc.json | jq .
 
 ---
 
-## 📊 Statystyki (stan na 09.12.2025)
+## 📊 Statystyki (stan na 09.12.2025 03:05)
 
 | Metryka | Wartość |
 |---------|---------|
-| Plików NPC przetworzonych | 186 |
-| Plików pozostałych | 841 |
-| Kluczy w JSON | 7673 |
-| Tłumaczeń PL | 372 (4%) |
+| Plików NPC z prawidłowym API | 595+ |
+| Kluczy w JSON | 11500+ |
+| Wieloliniowych tablic zmigrowanych | 2860 |
+| Tłumaczeń PL | 372 (ok. 3%) |
 | Języków | 53 |
 
 ---
@@ -223,7 +261,14 @@ bash i18n_status_pusher.sh
 
 ## 📝 Historia zmian
 
-### 2025-12-09
+### 2025-12-09 (wieczór)
+- ✅ **NOWE:** Pełna obsługa wieloliniowych tablic `npcHandler:say({...})`
+- ✅ Dodano narzędzie `tools/migrate_multiline_say.py` 
+- ✅ Zmigrowano 2860 stringów z wieloliniowych tablic
+- ✅ 228 plików NPC zaktualizowanych
+- ✅ Dodano auto-push do GitHub co 2 minuty
+
+### 2025-12-09 (rano)
 - ✅ Naprawiono API - zmiana z nieistniejącego `sayLocalized` na `NPC_LIB.i18n.npcSay`
 - ✅ Zmigrowano 186 plików NPC z prawidłowym API
 - ✅ Naprawiono problem z git lock file

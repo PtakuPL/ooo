@@ -4,5 +4,6 @@
   "env_exists": "ENV_EXISTS=",
   "file": "FILE=",
   "hash_login_php": "HASH_LOGIN_PHP=",
-  "pwd": "PWD="
+  "pwd": "PWD=",
+  "messagebrbr": "$message<br/><br/>"
 }

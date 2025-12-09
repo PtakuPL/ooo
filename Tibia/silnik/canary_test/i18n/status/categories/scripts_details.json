@@ -1,43 +1,43 @@
 {
   "category": "scripts",
   "status": "in_progress",
-  "last_updated": "2025-12-09T03:08:27+01:00",
+  "last_updated": "2025-12-09T03:14:06+01:00",
   "summary": {
     "total_keys": 713,
-    "files_processed": 473
+    "files_processed": 522
   },
   "current_work": {
     "directory": "data-otservbr-global/scripts/",
-    "cycle": 4
+    "cycle": 1
   },
   "subdirectories": {
-    "quests": {"processed": 0},
+    "quests": {"processed": 23},
     "actions": {"processed": 0}
   },
   "recent_files": [
   {
-    "file": "ulala.lua",
-    "time": "03:08:27",
+    "file": "accounts.php",
+    "time": "03:14:06",
     "status": "success"
   },
   {
-    "file": "vascalir.lua",
-    "time": "03:08:27",
+    "file": "clmd.php",
+    "time": "03:14:06",
     "status": "success"
   },
   {
-    "file": "vulturenose.lua",
-    "time": "03:08:27",
+    "file": "mailer.php",
+    "time": "03:14:06",
     "status": "success"
   },
   {
-    "file": "gewen.lua",
-    "time": "03:08:27",
+    "file": "reports.php",
+    "time": "03:14:06",
     "status": "success"
   },
   {
-    "file": "tarun.lua",
-    "time": "03:08:27",
+    "file": "pages.php",
+    "time": "03:14:06",
     "status": "success"
   }
 ]

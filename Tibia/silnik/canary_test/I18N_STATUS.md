@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-09 02:39:07 UTC  
+> **Aktualizacja:** 2025-12-09 02:45:58 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **227** | ↑ |
-| ⏭️ Plików wykluczonych | **4928** | - |
-| 🔑 Kluczy i18n | **45684** | ↑ |
+| 📁 Plików przetworzonych | **373** | ↑ |
+| ⏭️ Plików wykluczonych | **4929** | - |
+| 🔑 Kluczy i18n | **45953** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#10** | - |
+| 🔄 Cykl | **#11** | - |
 
 ---
 
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | ✅ | 7683/5000 (153%) | 5000 |
+| 🧙 NPC Dialogs | ✅ | 7868/5000 (157%) | 5000 |
 | 📜 Lua Scripts | 🔄 | 713/1000 (71%) | 1000 |
 | 🎒 Items Database | 🔄 | 36972/40000 (92%) | 40000 |
 | 👹 Monsters | 🔄 | 100/500 (20%) | 500 |
@@ -77,16 +77,16 @@
 | Parametr | Wartość |
 |----------|----------|
 | **Status** | 🔄 in_progress |
-| **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #10` |
-| **Szczegóły** | NPC:7683 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-09 02:38:22 |
+| **Operacja** | Przetwarzanie lua |
+| **Plik** | `rashid.lua` |
+| **Szczegóły** | Katalog: data-otservbr-global/npc |
+| **Ostatnia aktualizacja** | 2025-12-09 02:45:42 |
 
 ### 📈 Statystyki sesji
 
 | Metryka | Wartość |
 |---------|----------|
-| Plików przetworzonych | 531 |
+| Plików przetworzonych | 558 |
 | Kluczy wyciągniętych | 0 |
 | Błędów | 0 |
 | Napraw zastosowanych | 0 |
@@ -100,7 +100,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 7683 |
+| 🔑 Kluczy | 7952 |
 | 📊 Status | ✅ Zakończone |
 | 📂 Plików | ~877 |
 
@@ -124,7 +124,7 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #10 |
+| 🔄 Cykl | #11 |
 
 ### 📁 Podkatalogi - Postęp
 
@@ -149,16 +149,16 @@ selfSay("text")
 
 | Plik | Czas | Status |
 |------|------|--------|
-| `serafin.lua` | 02:37:34 | ✅ |
-| `kulag_the_guard.lua` | 02:37:36 | ✅ |
-| `jerom.lua` | 02:37:42 | ✅ |
-| `tom.lua` | 02:37:57 | ✅ |
-| `melfar.lua` | 02:38:01 | ✅ |
+| `zebron.lua` | 02:45:28 | ✅ |
+| `harlow.lua` | 02:45:30 | ✅ |
+| `captain_haba_open_sea.lua` | 02:45:33 | ✅ |
+| `pukosch.lua` | 02:45:36 | ✅ |
+| `tereban_functions.lua` | 02:45:41 | ✅ |
 
 ### 💻 Przykład kodu (ostatni plik)
 
 ```lua
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.",
+				npcHandler:say({
 ```
 
 **Wzorce ekstrakcji:**
@@ -225,7 +225,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 2621132, Cykl #10 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 2621132, Cykl #11 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

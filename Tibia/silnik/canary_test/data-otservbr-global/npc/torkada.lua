@@ -55,7 +55,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if player:getLevel() < 250 then
-		npcHandler:say("You need at least level 250 to start our mission.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.torkada.say_1")
 		return false
 	end
 
@@ -64,17 +64,17 @@ local function creatureSayCallback(npc, creature, type, message)
 		if player:getStorageValue(Storage.Quest.U13_20.RottenBlood.AccessDoor) ~= 1 then
 			player:setStorageValue(Storage.Quest.U13_20.RottenBlood.AccessDoor, 1)
 		end
-		npcHandler:say("You already have accepted this mission.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.torkada.say_2")
 		npcHandler:setTopic(playerId, 0)
 		return true
 	end
 
 	message = message:lower()
 	if MsgContains(message, "time") then
-		npcHandler:say("This expedition is here on an important {mission} for the inquisition", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.torkada.say_3")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "mission") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say("Are you willing, to bring the fury of the inquisition to that foul place and eradicate all evil you find? Speak, {yes} or {no}?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.torkada.say_4")
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 then
 		npcHandler:setTopic(playerId, 0)
@@ -87,7 +87,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		player:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 1 then
 		npcHandler:setTopic(playerId, 0)
-		npcHandler:say("Ok then not.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.torkada.say_5")
 	end
 
 	return true

@@ -4926,3 +4926,4 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/tandros.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/shiriel.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/ghorza.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/flickering_soul.lua

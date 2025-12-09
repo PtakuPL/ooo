@@ -81,7 +81,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		player:addItem(19100, 2)
 		npcHandler:setTopic(playerId, 0)
 	elseif (MsgContains(message, "scroll") or MsgContains(message, "mission") or MsgContains(message, "blood")) and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission37) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission38) < 1 then
-		npcHandler:say("Hello hello! Did you bring those blood samples?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.say_1")
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission37) == 1 then
 		if player:getItemCount(19102) >= 1 and player:getItemCount(19101) >= 1 then
@@ -96,11 +96,11 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addItem(19133, 1)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("You haven't got any blood.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.say_2")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif (MsgContains(message, "scroll") or MsgContains(message, "mission")) and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission40) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission41) < 1 then
-		npcHandler:say("Hello hello! Did Hello hello! Well now, painted all those blood pagodas properly?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.say_3")
 		npcHandler:setTopic(playerId, 3)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 3 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission40) == 1 then
 		npcHandler:say({
@@ -112,10 +112,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission41, 1)
 		npcHandler:setTopic(playerId, 0)
 	elseif (MsgContains(message, "scroll") or MsgContains(message, "mission")) and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission41) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission42) < 1 then
-		npcHandler:say("Hello hell- oh, you've come for the scroll, haven't you?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.say_4")
 		npcHandler:setTopic(playerId, 4)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 4 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission41) == 1 then
-		npcHandler:say("My heart bleeds to part from it. Here. Extend your hand - I'll just retrieve some blood from in exchange - HOLD STILL.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tomruk_the_ruddy.say_5")
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission42, 1)
 		player:addItem(18933, 1)
 		npcHandler:setTopic(playerId, 0)

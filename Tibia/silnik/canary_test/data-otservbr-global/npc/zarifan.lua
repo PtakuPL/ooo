@@ -63,13 +63,13 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "magic") and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission70) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission71) < 1 then
-		npcHandler:say("...Tell me...the first... magic word.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zarifan.say_1")
 		npcHandler:setTopic(playerId, 1)
 	elseif npcHandler:getTopic(playerId) == 1 and MsgContains(message, "friendship") then
-		npcHandler:say("Yes... YES... friendship... now... second word?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zarifan.say_2")
 		npcHandler:setTopic(playerId, 2)
 	elseif npcHandler:getTopic(playerId) == 2 and MsgContains(message, "lives") then
-		npcHandler:say("Yes... YES... friendship... lives... now third word?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zarifan.say_3")
 		npcHandler:setTopic(playerId, 3)
 	elseif npcHandler:getTopic(playerId) == 3 and MsgContains(message, "forever") then
 		npcHandler:say({
@@ -80,7 +80,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission71, 1)
 	else
-		npcHandler:say("...continue with your mission...", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zarifan.say_4")
 	end
 end
 

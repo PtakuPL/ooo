@@ -72,14 +72,14 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(ThreatenedDreams.Mission01[1]) == 9 then
-			npcHandler:say("I guess I will stick around for a time to watch over the grave. After this final watch I will find peace, I can feel this. Thank you, human being. You redeemed me.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghostly_wolf.say_1")
 			player:setStorageValue(ThreatenedDreams.Mission01[1], 10)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(ThreatenedDreams.Mission01[1]) >= 10 then
-			npcHandler:say("I guess I will stick around for a time to watch over the grave. After this final watch I will find peace, I can feel this. Thank you, human being. You redeemed me.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghostly_wolf.say_2")
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("You are not on that mission.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghostly_wolf.say_3")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") then
@@ -92,7 +92,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
-		npcHandler:say("Then not.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ghostly_wolf.say_4")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

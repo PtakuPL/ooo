@@ -153,17 +153,17 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:say("What? I have already gave you one {" .. ItemType(itemId):getName() .. "}!", npc, creature)
 			end
 		else
-			npcHandler:say("Sorry, you aren't a druid either a sorcerer.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rachel.say_1")
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			player:addItem(itemId, 1)
-			npcHandler:say("Here you are young adept, take care yourself.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rachel.say_2")
 			player:setStorageValue(Storage.FirstMageWeapon, 1)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say("Ok then.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rachel.say_3")
 		npcHandler:setTopic(playerId, 0)
 	elseif categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), itemsTable)

@@ -55,26 +55,26 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "silk") or MsgContains(message, "yarn") or MsgContains(message, "silk yarn") or MsgContains(message, "spool of yarn") then
 		if player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheMermaidMarina) < 1 then
-			npcHandler:say("Um. You mean, you really want me to touch that gooey spider silk just because you need yarn? Well... do you think that I'm pretty?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marina.say_1")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheMermaidMarina) == 2 then
-			npcHandler:say("Okay... a deal is a deal, would you like me to create a {spool of yarn} from {10 pieces of spider silk}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marina.say_2")
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "honey") or MsgContains(message, "honeycomb") or MsgContains(message, "50 honeycombs") then
 		if player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheMermaidMarina) == 1 then
-			npcHandler:say("Did you bring me the 50 honeycombs I requested and do you absolutely admire my beauty?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marina.say_3")
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "raymond striker") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.APoemForTheMermaid) == 1 then
-			npcHandler:say("<giggles> I think he has a crush on me. Well, silly man, it is only for his own good. This way he can get accustomed to TRUE beauty. And I won't give him up anymore now that he is mine.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marina.say_4")
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.APoemForTheMermaid, 2)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "date") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove) == 1 then
-			npcHandler:say("Is that the best you can do? A true Djinn would have done something more poetic.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marina.say_5")
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove, 2)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove) == 4 then
@@ -89,7 +89,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Well, everyone would say that in your position. Do you think that I'm really, absolutely the most stunning being that you have ever seen?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marina.say_6")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			npcHandler:say({
@@ -104,20 +104,20 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:removeItem(5902, 50) then
-				npcHandler:say("Oh goodie! Thank you! Okay... I guess since my fingers are sticky now anyway, I will help you. From now on, if you bring me {10 pieces of spider silk}, I will create one {spool of yarn}.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marina.say_7")
 				npcHandler:setTopic(playerId, 0)
 				player:setStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheMermaidMarina, 2)
 			else
-				npcHandler:say("You don't have enough honey.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marina.say_8")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 5 then
 			if player:removeItem(5879, 10) then
 				player:addItem(5886, 1)
-				npcHandler:say("Ew... gooey... there you go.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marina.say_9")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have the required items.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marina.say_10")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end

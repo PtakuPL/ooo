@@ -62,15 +62,15 @@ local function creatureSayCallback(npc, creature, type, message)
 				if player:getItemCount(fishsID[i]) >= 100 then
 					player:removeItem(fishsID[i], 100)
 					player:addItem(7290, 5)
-					npcHandler:say("Jinuma, suvituka siq chuqua!! Nguraka, nguraka! <happily takes the food from you and gives you five glimmering crystals>", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinatuki.say_2")
 					break
 				elseif player:getItemCount(fishsID[i]) >= 99 then
 					player:removeItem(fishsID[i], 99)
 					player:addItem(7290, 5)
-					npcHandler:say("Jinuma, suvituka siq chuqua!! Nguraka, nguraka! <happily takes the food from you>", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinatuki.say_3")
 					break
 				else
-					npcHandler:say("Kisavuta! <giggles>", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinatuki.say_4")
 				end
 			end
 		end

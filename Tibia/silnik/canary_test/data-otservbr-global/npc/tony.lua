@@ -60,13 +60,13 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "report") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 7 or player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 13 then
-			npcHandler:say("Uhm, report, eh? <slowly gives a clumsy description of recent problems>. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tony.say_1")
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, math.max(1, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) + 1))
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission02, math.max(1, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission02) + 1)) -- StorageValue for Questlog "Mission 02: Watching the Watchmen"
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "pass") then
-		npcHandler:say("You can {pass} either to the {Arena Quarter} or {Foreigner Quarter}. Which one will it be?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tony.say_2")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "arena") then
 		if npcHandler:getTopic(playerId) == 1 then

@@ -7916,3 +7916,5085 @@ Kategoria: npc, NPC: true
 Kategoria: npc, NPC: true
 
 ---
+
+## [2025-12-09 01:11:28] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/a_majestic_warwolf.lua`
+
+**Akcja:** Wyciągnięto 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:11:30] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/snake_eye.lua`
+
+**Akcja:** Wyciągnięto 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:11:34] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/the_dream_master.lua`
+
+**Akcja:** Wyciągnięto 11 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:11:37] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/rock_steady.lua`
+
+**Akcja:** Wyciągnięto 7 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:11:40] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/guide_elena.lua`
+
+**Akcja:** Wyciągnięto 11 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:11:41] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/charos.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:11:43] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/an_old_dragon_lord.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:11:44] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/a_fluffy_squirrel.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:11:47] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/bron.lua`
+
+**Akcja:** Wyciągnięto 13 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:11:50] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/alesar.lua`
+
+**Akcja:** Wyciągnięto 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:12:00] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/gnomewart.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:12:02] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/eustacio.lua`
+
+**Akcja:** Wyciągnięto 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:12:06] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/gnominus.lua`
+
+**Akcja:** Wyciągnięto 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:12:13] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/the_bone_master.lua`
+
+**Akcja:** Wyciągnięto 9 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:12:14] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/gnomespector.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:12:16] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/tony.lua`
+
+**Akcja:** Wyciągnięto 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:12:20] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/zirella.lua`
+
+**Akcja:** Wyciągnięto 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:12:22] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/corym_servant.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:12:29] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/siflind.lua`
+
+**Akcja:** Wyciągnięto 32 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:12:37] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/aruda.lua`
+
+**Akcja:** Wyciągnięto 42 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:14:41] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/paulie.lua`
+
+**Akcja:** Wyciągnięto 47 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:14:52] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/gregor.lua`
+
+**Akcja:** Wyciągnięto 32 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:14:56] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/dalbrect.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:14:58] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/charles.lua`
+
+**Akcja:** Wyciągnięto 13 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:15:01] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/a_weakened_forest_fury.lua`
+
+**Akcja:** Wyciągnięto 11 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:15:02] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/a_dead_bureaucrat4.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:15:05] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/shimun.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:15:07] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/jeronimo.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:15:20] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/hireling.lua`
+
+**Akcja:** Wyciągnięto 20 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:15:23] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/sven.lua`
+
+**Akcja:** Wyciągnięto 7 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:15:34] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/dove.lua`
+
+**Akcja:** Wyciągnięto 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:15:41] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/guard_saros.lua`
+
+**Akcja:** Wyciągnięto 42 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:15:42] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/servant_sentry.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:15:45] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/morgan.lua`
+
+**Akcja:** Wyciągnięto 12 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:15:51] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/percybald.lua`
+
+**Akcja:** Wyciągnięto 36 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:15:54] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/the_blind_prophet.lua`
+
+**Akcja:** Wyciągnięto 16 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:15:57] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/marina.lua`
+
+**Akcja:** Wyciągnięto 11 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:16:03] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/storkus.lua`
+
+**Akcja:** Wyciągnięto 24 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:16:07] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/taegen.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:16:10] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/jack.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:17:51] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/lukosch.lua`
+
+**Akcja:** Wyciągnięto 5 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:17:52] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/alwin.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:01] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/cael.lua`
+
+**Akcja:** Wyciągnięto 37 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:03] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/hal.lua`
+
+**Akcja:** Wyciągnięto 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:05] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/svenson.lua`
+
+**Akcja:** Wyciągnięto 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:08] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/tefrit.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:09] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/demonguard.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:13] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/bertha.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:17] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/frosty.lua`
+
+**Akcja:** Wyciągnięto 11 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:20] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/umar.lua`
+
+**Akcja:** Wyciągnięto 7 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:36] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/denominator.lua`
+
+**Akcja:** Wyciągnięto 12 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:39] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/a_bearded_woman.lua`
+
+**Akcja:** Wyciągnięto 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:40] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/tehlim.lua`
+
+**Akcja:** Wyciągnięto 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:45] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/duncan.lua`
+
+**Akcja:** Wyciągnięto 21 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:48] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/eshaya.lua`
+
+**Akcja:** Wyciągnięto 9 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:49] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/cillia.lua`
+
+**Akcja:** Wyciągnięto 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:50] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/zurak_arena.lua`
+
+**Akcja:** Wyciągnięto 5 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:54] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/bunny_bonecrusher.lua`
+
+**Akcja:** Wyciągnięto 19 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:54] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/edron_guardsman.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:18:56] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/the_beggar_king.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:20:46] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/razan.lua`
+
+**Akcja:** Wyciągnięto 5 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:21:06] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/bozo.lua`
+
+**Akcja:** Wyciągnięto 86 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:21:15] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/captain_dreadnought.lua`
+
+**Akcja:** Wyciągnięto 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:21:18] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/wyda.lua`
+
+**Akcja:** Wyciągnięto 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:21:23] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/lubo.lua`
+
+**Akcja:** Wyciągnięto 23 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:21:24] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/awarness_of_the_emperor.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:21:27] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/sinclair.lua`
+
+**Akcja:** Wyciągnięto 10 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:21:29] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/erayo.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:21:33] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/carlos.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:21:38] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/dedoras.lua`
+
+**Akcja:** Wyciągnięto 20 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:21:51] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/busty_bonecrusher.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:21:54] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/palomino.lua`
+
+**Akcja:** Wyciągnięto 9 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:21:56] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/a_swan.lua`
+
+**Akcja:** Wyciągnięto 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:22:00] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/cledwyn.lua`
+
+**Akcja:** Wyciągnięto 19 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:22:02] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/boozer.lua`
+
+**Akcja:** Wyciągnięto 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:22:04] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/eroth.lua`
+
+**Akcja:** Wyciągnięto 9 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:22:07] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/sebastian.lua`
+
+**Akcja:** Wyciągnięto 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:22:25] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/grizzly_adams.lua`
+
+**Akcja:** Wyciągnięto 37 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:22:27] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/zurak.lua`
+
+**Akcja:** Wyciągnięto 5 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:22:28] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/timothy.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:24:13] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/ghostly_wolf.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:24:18] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/gabel.lua`
+
+**Akcja:** Wyciągnięto 9 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:24:21] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/berenice.lua`
+
+**Akcja:** Wyciągnięto 7 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:24:23] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/christoph.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:24:26] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/elliott.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:24:28] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/maris.lua`
+
+**Akcja:** Wyciągnięto 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:24:31] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/tomruk_the_ruddy.lua`
+
+**Akcja:** Wyciągnięto 5 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:24:32] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/nor.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:24:38] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/gnomeral.lua`
+
+**Akcja:** Wyciągnięto 25 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:24:41] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/avar_tar.lua`
+
+**Akcja:** Wyciągnięto 11 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:24:56] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/battlemart.lua`
+
+**Akcja:** Wyciągnięto 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:25:00] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/trisha.lua`
+
+**Akcja:** Wyciągnięto 9 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:25:01] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/an_idol.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:25:08] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/commander_stone.lua`
+
+**Akcja:** Wyciągnięto 27 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:25:19] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/a_sweaty_cyclops.lua`
+
+**Akcja:** Wyciągnięto 48 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:25:22] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/leeland.lua`
+
+**Akcja:** Wyciągnięto 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:25:24] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/blossom_bonecrusher.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:25:30] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/palimuth.lua`
+
+**Akcja:** Wyciągnięto 15 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:25:33] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/atrad.lua`
+
+**Akcja:** Wyciągnięto 5 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:25:36] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/tamoril.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:27:30] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/ustan.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:27:36] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/shauna.lua`
+
+**Akcja:** Wyciągnięto 35 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:27:37] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/aurita.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:27:39] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/sigurd.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:27:46] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/inigo.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:28:06] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/seymour.lua`
+
+**Akcja:** Wyciągnięto 107 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:28:10] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/vescu.lua`
+
+**Akcja:** Wyciągnięto 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:28:13] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/sundara.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:28:16] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/bo_ques.lua`
+
+**Akcja:** Wyciągnięto 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:28:18] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/armenius.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:28:35] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/irmana.lua`
+
+**Akcja:** Wyciągnięto 42 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:28:36] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/chuckles.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:28:42] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/ajax.lua`
+
+**Akcja:** Wyciągnięto 20 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:28:45] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/guide_behil.lua`
+
+**Akcja:** Wyciągnięto 11 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:28:48] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/chartan.lua`
+
+**Akcja:** Wyciągnięto 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:28:50] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/beatrice.lua`
+
+**Akcja:** Wyciągnięto 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:28:51] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/chrak.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:28:53] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/broken_servant_sentry.lua`
+
+**Akcja:** Wyciągnięto 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:28:57] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/emperor_rehal.lua`
+
+**Akcja:** Wyciągnięto 11 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:29:01] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/yalahari.lua`
+
+**Akcja:** Wyciągnięto 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:30:43] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/gnomally.lua`
+
+**Akcja:** Wyciągnięto 14 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:30:46] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/cassino.lua`
+
+**Akcja:** Wyciągnięto 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:30:49] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/undal.lua`
+
+**Akcja:** Wyciągnięto 14 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:30:51] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/emael.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:30:57] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/brewster.lua`
+
+**Akcja:** Wyciągnięto 31 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:31:02] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/daniel_steelsoul.lua`
+
+**Akcja:** Wyciągnięto 23 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:31:04] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/tim_the_guard.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:31:11] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/the_queen_of_the_banshees.lua`
+
+**Akcja:** Wyciągnięto 26 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:31:18] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/simon_the_beggar.lua`
+
+**Akcja:** Wyciągnięto 29 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:31:23] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/hugo.lua`
+
+**Akcja:** Wyciągnięto 14 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:31:39] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/gnomission.lua`
+
+**Akcja:** Wyciągnięto 19 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:31:42] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/xodet.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:31:43] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/reed.lua`
+
+**Akcja:** Wyciągnięto 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:31:51] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/albinius.lua`
+
+**Akcja:** Wyciągnięto 38 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:31:54] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/rottin_wood.lua`
+
+**Akcja:** Wyciągnięto 13 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:31:56] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/lisander.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:32:00] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/yaman.lua`
+
+**Akcja:** Wyciągnięto 15 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:32:01] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/arnold.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:32:03] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/frafnar.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:32:06] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/testserver_assistant.lua`
+
+**Akcja:** Wyciągnięto 5 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:33:57] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/ariella.lua`
+
+**Akcja:** Wyciągnięto 16 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:33:58] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/alesar_functions.lua`
+
+**Akcja:** Wyciągnięto 5 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:34:00] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/a_beggar.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:34:02] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/sarina.lua`
+
+**Akcja:** Wyciągnięto 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:34:05] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/arito.lua`
+
+**Akcja:** Wyciągnięto 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:34:07] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/captain_jack_rat.lua`
+
+**Akcja:** Wyciągnięto 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:34:09] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/charlotta.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:34:11] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/gnome_trooper.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:34:19] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/lardoc_bashsmite.lua`
+
+**Akcja:** Wyciągnięto 22 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:34:21] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/bambi_bonecrusher.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:34:40] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/vanys.lua`
+
+**Akcja:** Wyciągnięto 14 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:34:42] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/tandros.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:34:45] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/guide_rahlkora.lua`
+
+**Akcja:** Wyciągnięto 11 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:34:55] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/emma.lua`
+
+**Akcja:** Wyciągnięto 35 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:35:01] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/arkulius.lua`
+
+**Akcja:** Wyciągnięto 10 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:35:04] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/tamerin.lua`
+
+**Akcja:** Wyciągnięto 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:35:06] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/bolfona.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:35:12] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/jack_springer.lua`
+
+**Akcja:** Wyciągnięto 22 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:35:16] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/elvith.lua`
+
+**Akcja:** Wyciągnięto 19 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:35:24] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/norma.lua`
+
+**Akcja:** Wyciągnięto 47 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:37:24] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/markwin.lua`
+
+**Akcja:** Wyciągnięto 7 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:37:30] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/rachel.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:37:33] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/jacob.lua`
+
+**Akcja:** Wyciągnięto 7 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:37:40] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/alyxo.lua`
+
+**Akcja:** Wyciągnięto 24 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:37:43] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/karl.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:37:45] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/shiriel.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:37:50] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/ghost_of_a_priest.lua`
+
+**Akcja:** Wyciągnięto 23 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:37:52] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/bruce.lua`
+
+**Akcja:** Wyciągnięto 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:37:53] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/santa_claus.lua`
+
+**Akcja:** Wyciągnięto 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:37:56] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/ivalisse.lua`
+
+**Akcja:** Wyciągnięto 12 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:38:11] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/dermot.lua`
+
+**Akcja:** Wyciągnięto 12 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:38:24] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/omrabas.lua`
+
+**Akcja:** Wyciągnięto 40 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:38:25] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/the_librarian.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:38:29] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/ongulf.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:38:31] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/saideh.lua`
+
+**Akcja:** Wyciągnięto 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:38:36] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/lazaran.lua`
+
+**Akcja:** Wyciągnięto 19 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:38:42] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/raymond_striker.lua`
+
+**Akcja:** Wyciągnięto 13 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:38:46] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/maelyrra.lua`
+
+**Akcja:** Wyciągnięto 18 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:38:53] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/zalamon.lua`
+
+**Akcja:** Wyciągnięto 11 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:38:56] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/asima.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:40:42] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/chrystal.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:40:44] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/lokur.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:40:45] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/gnomad.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:40:50] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/rock_in_a_hard_place.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:40:52] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/guide_tiko.lua`
+
+**Akcja:** Wyciągnięto 11 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:40:54] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/aldo.lua`
+
+**Akcja:** Wyciągnięto 5 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:40:57] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/guide_luke.lua`
+
+**Akcja:** Wyciągnięto 11 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:41:00] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/perod.lua`
+
+**Akcja:** Wyciągnięto 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:41:02] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/ezebeth.lua`
+
+**Akcja:** Wyciągnięto 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:41:04] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/miles_the_guard.lua`
+
+**Akcja:** Wyciągnięto 5 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:41:20] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/karith.lua`
+
+**Akcja:** Wyciągnięto 31 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:41:21] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/sholley.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:41:26] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/oressa.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:41:34] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/chester_kahs.lua`
+
+**Akcja:** Wyciągnięto 34 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:41:37] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/ghorza.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:41:51] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/mortimer.lua`
+
+**Akcja:** Wyciągnięto 61 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:41:59] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/klom_stonecutter.lua`
+
+**Akcja:** Wyciągnięto 25 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:42:01] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/iwar.lua`
+
+**Akcja:** Wyciągnięto 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:42:05] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/maryza.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:42:07] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/tigo.lua`
+
+**Akcja:** Wyciągnięto 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:43:58] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/miraia.lua`
+
+**Akcja:** Wyciągnięto 11 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:44:11] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/eruaran.lua`
+
+**Akcja:** Wyciągnięto 47 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:44:13] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/dancing_fairy.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:44:16] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/guide_davina.lua`
+
+**Akcja:** Wyciągnięto 11 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:44:18] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/zora.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:44:19] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/mr._west.lua`
+
+**Akcja:** Wyciągnięto 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:44:21] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/a_strange_chalice.lua`
+
+**Akcja:** Wyciągnięto 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:44:23] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/serafin.lua`
+
+**Akcja:** Wyciągnięto 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:44:24] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/kulag_the_guard.lua`
+
+**Akcja:** Wyciągnięto 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:44:28] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/jerom.lua`
+
+**Akcja:** Wyciągnięto 26 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:44:48] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/tom.lua`
+
+**Akcja:** Wyciągnięto 41 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:44:51] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/melfar.lua`
+
+**Akcja:** Wyciągnięto 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:44:52] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/jean_claude.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:44:53] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/mother_of_jack.lua`
+
+**Akcja:** Wyciągnięto 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:44:54] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/warbert.lua`
+
+**Akcja:** Wyciągnięto 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:45:10] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/hairycles.lua`
+
+**Akcja:** Wyciągnięto 75 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:45:12] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/torkada.lua`
+
+**Akcja:** Wyciągnięto 5 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:45:15] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/ubaid.lua`
+
+**Akcja:** Wyciągnięto 9 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:45:19] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/padreia.lua`
+
+**Akcja:** Wyciągnięto 17 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:45:23] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/flickering_soul.lua`
+
+**Akcja:** Wyciągnięto 17 kluczy
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:48:37] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/dorian.lua`
+
+**Akcja:** Zmigrowano 15 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:48:40] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/brodrosch.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:48:51] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gnomilly.lua`
+
+**Akcja:** Zmigrowano 36 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:48:53] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/a_dead_bureaucrat3.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:48:56] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/barnabas_dee.lua`
+
+**Akcja:** Zmigrowano 8 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:49:01] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/muriel.lua`
+
+**Akcja:** Zmigrowano 14 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:49:03] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/stricken_soul.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:49:18] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/wentworth.lua`
+
+**Akcja:** Zmigrowano 41 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:49:28] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/rashid_custom.lua`
+
+**Akcja:** Zmigrowano 48 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:49:29] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gate_guardian.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:49:45] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gnommander.lua`
+
+**Akcja:** Zmigrowano 21 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:49:48] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/xelvar.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:49:50] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/mirabell.lua`
+
+**Akcja:** Zmigrowano 10 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:49:52] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/jorge.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:49:54] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/woblin.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:50:03] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/myra.lua`
+
+**Akcja:** Zmigrowano 47 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:50:07] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/sandomo.lua`
+
+**Akcja:** Zmigrowano 10 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:50:09] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/flora.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:50:12] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/briasol.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:50:19] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/santiago.lua`
+
+**Akcja:** Zmigrowano 17 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:52:04] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/altar.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:52:06] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/tarak_sunken.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:52:11] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/eleonore.lua`
+
+**Akcja:** Zmigrowano 10 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:52:22] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/plunderpurse.lua`
+
+**Akcja:** Zmigrowano 40 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:52:31] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/julius.lua`
+
+**Akcja:** Zmigrowano 44 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:52:34] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/a_prisoner.lua`
+
+**Akcja:** Zmigrowano 12 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:52:40] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/sam.lua`
+
+**Akcja:** Zmigrowano 17 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:52:44] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/guide_kunibert.lua`
+
+**Akcja:** Zmigrowano 11 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:52:47] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/alexander.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:52:49] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/lurik.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:53:01] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gnomux.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:53:05] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/zizzle.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:53:06] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/barazbaz.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:53:09] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/noodles.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:53:11] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/myzzi.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:53:16] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/lugri.lua`
+
+**Akcja:** Zmigrowano 21 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:53:18] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/walter_the_guard.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:53:20] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/talphion.lua`
+
+**Akcja:** Zmigrowano 5 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:53:26] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/uncle.lua`
+
+**Akcja:** Zmigrowano 20 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:53:29] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gareth.lua`
+
+**Akcja:** Zmigrowano 7 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:55:17] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/xorlosh.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:55:19] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/canary.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:55:20] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/zarifan.lua`
+
+**Akcja:** Zmigrowano 5 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:55:22] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/thanita.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:55:23] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/oliver.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:55:24] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/grof_the_guard.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:55:26] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/theodore_loveless.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:55:27] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gnomaticus.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:55:30] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/costello.lua`
+
+**Akcja:** Zmigrowano 10 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:55:32] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/pemaret.lua`
+
+**Akcja:** Zmigrowano 11 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:55:46] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/doubleday.lua`
+
+**Akcja:** Zmigrowano 9 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:55:49] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/habdel.lua`
+
+**Akcja:** Zmigrowano 7 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:55:57] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/budrik.lua`
+
+**Akcja:** Zmigrowano 21 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:56:00] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/rabaz.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:56:01] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/sinatuki.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:56:05] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/sandra.lua`
+
+**Akcja:** Zmigrowano 11 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:56:10] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/a_dead_bureaucrat1.lua`
+
+**Akcja:** Zmigrowano 9 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:56:15] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/chief_grarkharok.lua`
+
+**Akcja:** Zmigrowano 30 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:56:17] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gnomelvis.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:58:06] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/malor.lua`
+
+**Akcja:** Zmigrowano 10 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:58:10] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/grombur.lua`
+
+**Akcja:** Zmigrowano 5 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:58:16] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/captain_haba.lua`
+
+**Akcja:** Zmigrowano 35 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:58:20] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/ceiron.lua`
+
+**Akcja:** Zmigrowano 17 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:58:22] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/guide_thelandil.lua`
+
+**Akcja:** Zmigrowano 9 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:58:33] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/queen_eloise.lua`
+
+**Akcja:** Zmigrowano 66 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:58:35] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/curos.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:58:36] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/izsh.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:58:38] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/angelina.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:58:50] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/hjaern.lua`
+
+**Akcja:** Zmigrowano 15 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:58:54] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/baa_leal.lua`
+
+**Akcja:** Zmigrowano 10 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:58:59] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gorn.lua`
+
+**Akcja:** Zmigrowano 24 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:59:01] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/navigator.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:59:03] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/barbara.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:59:06] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/rata_mari.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:59:07] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/fenbala.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:59:18] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gnomargery.lua`
+
+**Akcja:** Zmigrowano 39 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:59:21] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/fa_hradin.lua`
+
+**Akcja:** Zmigrowano 5 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 01:59:23] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/a_dragon_mother.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:01:09] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/a_majestic_warwolf.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:01:11] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/snake_eye.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:01:15] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/the_dream_master.lua`
+
+**Akcja:** Zmigrowano 11 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:01:18] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/rock_steady.lua`
+
+**Akcja:** Zmigrowano 7 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:03:30] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/charos.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:03:32] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/an_old_dragon_lord.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:03:33] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/a_fluffy_squirrel.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:03:37] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/bron.lua`
+
+**Akcja:** Zmigrowano 13 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:03:41] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/alesar.lua`
+
+**Akcja:** Zmigrowano 8 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:03:42] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gnomewart.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:03:44] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/eustacio.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:03:46] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gnominus.lua`
+
+**Akcja:** Zmigrowano 8 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:03:49] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/the_bone_master.lua`
+
+**Akcja:** Zmigrowano 9 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:03:50] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gnomespector.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:04:01] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/tony.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:04:06] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/zirella.lua`
+
+**Akcja:** Zmigrowano 8 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:04:08] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/corym_servant.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:04:19] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/siflind.lua`
+
+**Akcja:** Zmigrowano 32 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:04:30] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/aruda.lua`
+
+**Akcja:** Zmigrowano 42 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:04:40] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/paulie.lua`
+
+**Akcja:** Zmigrowano 39 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:04:48] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gregor.lua`
+
+**Akcja:** Zmigrowano 32 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:04:52] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/dalbrect.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:04:57] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/charles.lua`
+
+**Akcja:** Zmigrowano 13 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:05:00] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/a_weakened_forest_fury.lua`
+
+**Akcja:** Zmigrowano 11 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:08:30] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/a_dead_bureaucrat4.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:08:32] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/shimun.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:08:34] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/jeronimo.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:08:45] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/hireling.lua`
+
+**Akcja:** Zmigrowano 19 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:08:48] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/sven.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:08:50] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/dove.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:08:58] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/guard_saros.lua`
+
+**Akcja:** Zmigrowano 42 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:09:00] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/servant_sentry.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:09:04] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/morgan.lua`
+
+**Akcja:** Zmigrowano 12 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:09:11] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/percybald.lua`
+
+**Akcja:** Zmigrowano 36 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:09:22] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/the_blind_prophet.lua`
+
+**Akcja:** Zmigrowano 16 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:09:26] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/marina.lua`
+
+**Akcja:** Zmigrowano 11 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:09:33] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/storkus.lua`
+
+**Akcja:** Zmigrowano 22 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:09:36] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/taegen.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:09:40] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/jack.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:09:42] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/lukosch.lua`
+
+**Akcja:** Zmigrowano 5 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:09:44] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/alwin.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:09:55] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/cael.lua`
+
+**Akcja:** Zmigrowano 37 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:09:57] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/hal.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:09:59] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/svenson.lua`
+
+**Akcja:** Zmigrowano 8 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:11:56] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/tefrit.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:11:57] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/demonguard.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:12:00] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/bertha.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:12:04] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/frosty.lua`
+
+**Akcja:** Zmigrowano 10 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:12:09] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/umar.lua`
+
+**Akcja:** Zmigrowano 7 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:12:19] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/denominator.lua`
+
+**Akcja:** Zmigrowano 12 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:12:23] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/a_bearded_woman.lua`
+
+**Akcja:** Zmigrowano 8 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:12:26] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/tehlim.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:12:37] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/duncan.lua`
+
+**Akcja:** Zmigrowano 20 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:12:40] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/eshaya.lua`
+
+**Akcja:** Zmigrowano 9 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:12:52] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/cillia.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:12:54] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/zurak_arena.lua`
+
+**Akcja:** Zmigrowano 5 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:12:58] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/bunny_bonecrusher.lua`
+
+**Akcja:** Zmigrowano 19 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:12:58] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/edron_guardsman.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:13:00] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/the_beggar_king.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:13:03] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/razan.lua`
+
+**Akcja:** Zmigrowano 5 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:13:34] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/bozo.lua`
+
+**Akcja:** Zmigrowano 86 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:13:40] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/captain_dreadnought.lua`
+
+**Akcja:** Zmigrowano 7 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:13:43] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/wyda.lua`
+
+**Akcja:** Zmigrowano 8 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:13:48] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/lubo.lua`
+
+**Akcja:** Zmigrowano 23 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:15:55] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/awarness_of_the_emperor.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:15:59] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/sinclair.lua`
+
+**Akcja:** Zmigrowano 10 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:16:02] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/erayo.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:16:07] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/carlos.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:16:17] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/dedoras.lua`
+
+**Akcja:** Zmigrowano 20 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:16:18] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/busty_bonecrusher.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:16:20] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/palomino.lua`
+
+**Akcja:** Zmigrowano 9 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:16:22] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/a_swan.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:16:25] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/cledwyn.lua`
+
+**Akcja:** Zmigrowano 11 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:16:27] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/boozer.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:16:37] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/eroth.lua`
+
+**Akcja:** Zmigrowano 9 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:16:39] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/sebastian.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:16:53] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/grizzly_adams.lua`
+
+**Akcja:** Zmigrowano 27 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:16:55] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/zurak.lua`
+
+**Akcja:** Zmigrowano 5 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:16:56] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/timothy.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:16:59] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/ghostly_wolf.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:17:02] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gabel.lua`
+
+**Akcja:** Zmigrowano 9 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:17:05] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/berenice.lua`
+
+**Akcja:** Zmigrowano 7 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:17:06] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/christoph.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:17:09] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/elliott.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:18:48] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/maris.lua`
+
+**Akcja:** Zmigrowano 8 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:18:50] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/tomruk_the_ruddy.lua`
+
+**Akcja:** Zmigrowano 5 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:18:51] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/nor.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:18:56] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gnomeral.lua`
+
+**Akcja:** Zmigrowano 25 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:19:00] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/avar_tar.lua`
+
+**Akcja:** Zmigrowano 11 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:19:05] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/trisha.lua`
+
+**Akcja:** Zmigrowano 9 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:19:06] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/an_idol.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:19:12] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/commander_stone.lua`
+
+**Akcja:** Zmigrowano 27 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:19:22] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/a_sweaty_cyclops.lua`
+
+**Akcja:** Zmigrowano 48 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:19:24] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/leeland.lua`
+
+**Akcja:** Zmigrowano 8 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:19:34] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/blossom_bonecrusher.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:19:41] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/palimuth.lua`
+
+**Akcja:** Zmigrowano 15 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:19:44] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/atrad.lua`
+
+**Akcja:** Zmigrowano 5 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:19:46] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/tamoril.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:19:48] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/ustan.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:19:54] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/shauna.lua`
+
+**Akcja:** Zmigrowano 35 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:19:56] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/aurita.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:20:07] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/inigo.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:20:26] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/seymour.lua`
+
+**Akcja:** Zmigrowano 103 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:20:30] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/vescu.lua`
+
+**Akcja:** Zmigrowano 8 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:22:29] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/bo_ques.lua`
+
+**Akcja:** Zmigrowano 8 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:22:31] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/armenius.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:22:41] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/irmana.lua`
+
+**Akcja:** Zmigrowano 42 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:22:49] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/ajax.lua`
+
+**Akcja:** Zmigrowano 20 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:22:52] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/guide_behil.lua`
+
+**Akcja:** Zmigrowano 11 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:22:55] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/chartan.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:22:57] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/beatrice.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:22:58] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/chrak.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:23:00] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/broken_servant_sentry.lua`
+
+**Akcja:** Zmigrowano 8 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:23:03] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/emperor_rehal.lua`
+
+**Akcja:** Zmigrowano 11 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:23:20] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/yalahari.lua`
+
+**Akcja:** Zmigrowano 8 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:23:24] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gnomally.lua`
+
+**Akcja:** Zmigrowano 11 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:23:27] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/cassino.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:23:31] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/undal.lua`
+
+**Akcja:** Zmigrowano 14 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:23:33] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/emael.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:23:39] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/brewster.lua`
+
+**Akcja:** Zmigrowano 31 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:23:44] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/daniel_steelsoul.lua`
+
+**Akcja:** Zmigrowano 19 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:23:45] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/tim_the_guard.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:23:51] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/the_queen_of_the_banshees.lua`
+
+**Akcja:** Zmigrowano 26 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:23:58] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/simon_the_beggar.lua`
+
+**Akcja:** Zmigrowano 29 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:25:37] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/hugo.lua`
+
+**Akcja:** Zmigrowano 14 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:25:41] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gnomission.lua`
+
+**Akcja:** Zmigrowano 16 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:25:44] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/xodet.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:25:45] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/reed.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:25:52] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/albinius.lua`
+
+**Akcja:** Zmigrowano 38 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:25:56] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/rottin_wood.lua`
+
+**Akcja:** Zmigrowano 13 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:25:58] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/lisander.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:26:01] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/yaman.lua`
+
+**Akcja:** Zmigrowano 15 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:26:03] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/arnold.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:26:04] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/frafnar.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:26:20] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/testserver_assistant.lua`
+
+**Akcja:** Zmigrowano 5 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:26:24] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/ariella.lua`
+
+**Akcja:** Zmigrowano 16 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:26:25] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/alesar_functions.lua`
+
+**Akcja:** Zmigrowano 5 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:26:27] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/a_beggar.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:26:28] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/sarina.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:26:30] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/arito.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:26:32] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/captain_jack_rat.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:26:33] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/charlotta.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:26:35] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/gnome_trooper.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:26:40] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/lardoc_bashsmite.lua`
+
+**Akcja:** Zmigrowano 18 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:28:30] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/bambi_bonecrusher.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:28:33] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/vanys.lua`
+
+**Akcja:** Zmigrowano 14 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:28:38] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/guide_rahlkora.lua`
+
+**Akcja:** Zmigrowano 11 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:28:46] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/emma.lua`
+
+**Akcja:** Zmigrowano 35 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:28:51] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/arkulius.lua`
+
+**Akcja:** Zmigrowano 9 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:28:54] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/tamerin.lua`
+
+**Akcja:** Zmigrowano 8 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:28:57] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/bolfona.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:29:03] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/jack_springer.lua`
+
+**Akcja:** Zmigrowano 22 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:29:08] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/elvith.lua`
+
+**Akcja:** Zmigrowano 19 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:29:21] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/norma.lua`
+
+**Akcja:** Zmigrowano 47 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:29:37] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/markwin.lua`
+
+**Akcja:** Zmigrowano 7 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:29:40] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/rachel.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:29:43] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/jacob.lua`
+
+**Akcja:** Zmigrowano 7 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:29:48] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/alyxo.lua`
+
+**Akcja:** Zmigrowano 24 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:29:50] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/karl.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:29:58] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/ghost_of_a_priest.lua`
+
+**Akcja:** Zmigrowano 23 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:30:00] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/bruce.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:30:02] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/santa_claus.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:30:07] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/ivalisse.lua`
+
+**Akcja:** Zmigrowano 12 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-09 02:30:11] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/dermot.lua`
+
+**Akcja:** Zmigrowano 12 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---

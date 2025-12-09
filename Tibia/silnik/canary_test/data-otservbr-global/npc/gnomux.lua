@@ -71,15 +71,15 @@ local function creatureSayCallback(npc, creature, type, message)
 	local playerId = player:getId()
 
 	if MsgContains(message, "job") then
-		npcHandler:say("I'm responsible for resupplying foolish adventurers with equipment that they may have lost. If you're one of them, just ask me about a {trade}. ", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomux.say_1")
 	end
 
 	if MsgContains(message, "gnome") then
-		npcHandler:say("What could I say about gnomes that anyone would not know? I mean, we're interesting if not fascinating, after all.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomux.say_2")
 	end
 
 	if MsgContains(message, "spike") then
-		npcHandler:say({ "I came here as a crystal farmer and know the Spike all the way back to when it was a little baby crystal. I admit I feel a little fatherly pride in how big and healthy it has become.", "When most other crystal experts left for new assignments, I decided to stay and help here a bit." }, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomux.say_3")
 	end
 	return true
 end

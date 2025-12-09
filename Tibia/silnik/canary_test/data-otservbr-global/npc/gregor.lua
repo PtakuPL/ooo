@@ -65,60 +65,60 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if player:getStorageValue(Storage.Quest.U7_6.TheApeCity.Questline) <= 15 then
-		npcHandler:say("Sorry but I don't have anything for you at the moment.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_1")
 		return true
 	end
 
 	local addonProgress = player:getStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonHelmet)
 	if MsgContains(message, "task") then
 		if not player:isPremium() then
-			npcHandler:say("Sorry, but our tasks are only for premium warriors.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_2")
 			return true
 		end
 
 		if addonProgress < 1 then
-			npcHandler:say("You mean you would like to prove that you deserve to wear such a helmet?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_3")
 			npcHandler:setTopic(playerId, 1)
 		elseif addonProgress == 1 then
-			npcHandler:say("Your current task is to bring me 100 perfect behemoth fangs, |PLAYERNAME|.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_4")
 		elseif addonProgress == 2 then
-			npcHandler:say("Your current task is to retrieve the helmet of Ramsay the Reckless from Banuta, |PLAYERNAME|.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_5")
 		elseif addonProgress == 3 then
-			npcHandler:say("Your current task is to obtain a flask of warrior's sweat, |PLAYERNAME|.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_6")
 		elseif addonProgress == 4 then
-			npcHandler:say("Your current task is to bring me royal steel, |PLAYERNAME|.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_7")
 		elseif addonProgress == 5 then
-			npcHandler:say("Please talk to Sam and tell him I sent you. I'm sure he will be glad to refine your helmet, |PLAYERNAME|.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_8")
 		else
-			npcHandler:say("You've already completed the task and can consider yourself a mighty warrior, |PLAYERNAME|.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_9")
 		end
 	elseif MsgContains(message, "behemoth fang") then
 		if addonProgress == 1 then
-			npcHandler:say("Have you really managed to fulfil the task and brought me 100 perfect behemoth fangs?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_10")
 			npcHandler:setTopic(playerId, 3)
 		else
-			npcHandler:say("You're not serious asking that, are you? They come from behemoths, of course. Unless there are behemoth rabbits. Duh.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_11")
 		end
 	elseif MsgContains(message, "ramsay the reckless helmet") then
 		if addonProgress == 2 then
-			npcHandler:say("Did you recover the helmet of Ramsay the Reckless?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_12")
 			npcHandler:setTopic(playerId, 4)
 		else
-			npcHandler:say("These pesky apes steal everything they can get their dirty hands on.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_13")
 		end
 	elseif MsgContains(message, "sweat") then
 		if addonProgress == 3 then
-			npcHandler:say("Were you able to get hold of a flask with pure warrior's sweat?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_14")
 			npcHandler:setTopic(playerId, 5)
 		else
-			npcHandler:say("Warrior's sweat can be magically extracted from headgear worn by a true warrior, but only in small amounts. Djinns are said to be good at magical extractions.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_15")
 		end
 	elseif MsgContains(message, "royal steel") then
 		if addonProgress == 4 then
-			npcHandler:say("Ah, have you brought the royal steel?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_16")
 			npcHandler:setTopic(playerId, 6)
 		else
-			npcHandler:say("Royal steel can only be refined by very skilled smiths.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_17")
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
@@ -131,7 +131,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature, 100)
 			npcHandler:setTopic(playerId, 2)
 		elseif MsgContains(message, "no") then
-			npcHandler:say("Bah. Then you will have to wait for the day these helmets are sold in shops, but that will not happen before hell freezes over.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_18")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
@@ -139,67 +139,67 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.OutfitQuest.Ref, math.max(0, player:getStorageValue(Storage.OutfitQuest.Ref)) + 1)
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonHelmet, 1)
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.MissionHelmet, 1)
-			npcHandler:say("Alright then. Come back to me once you have collected 100 perfect behemoth fangs.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_19")
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
-			npcHandler:say("Would you like me to repeat the task requirements then?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_20")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 3 then
 		if MsgContains(message, "yes") then
 			if not player:removeItem(5893, 100) then
-				npcHandler:say("Lying is not exactly honourable, |PLAYERNAME|. Shame on you.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_21")
 				return true
 			end
 
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonHelmet, 2)
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.MissionHelmet, 2)
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.RamsaysHelmetDoor, 1)
-			npcHandler:say("I'm deeply impressed, brave Knight |PLAYERNAME|. I expected nothing less from you. Now, please retrieve Ramsay's helmet.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_22")
 		elseif MsgContains(message, "no") then
-			npcHandler:say("There is no need to rush anyway.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_23")
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 4 then
 		if MsgContains(message, "yes") then
 			if not player:removeItem(5924, 1) then
-				npcHandler:say("Lying is not exactly honourable, |PLAYERNAME|. Shame on you.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_24")
 				return true
 			end
 
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonHelmet, 3)
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.MissionHelmet, 3)
-			npcHandler:say("Good work, brave Knight |PLAYERNAME|! Even though it is damaged, it has a lot of sentimental value. Now, please bring me warrior's sweat.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_25")
 		elseif MsgContains(message, "no") then
-			npcHandler:say("There is no need to rush anyway.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_26")
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 5 then
 		if MsgContains(message, "yes") then
 			if not player:removeItem(5885, 1) then
-				npcHandler:say("Lying is not exactly honourable, |PLAYERNAME|. Shame on you.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_27")
 				return true
 			end
 
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonHelmet, 4)
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.MissionHelmet, 4)
-			npcHandler:say("Now that is a pleasant surprise, brave Knight |PLAYERNAME|! There is only one task left now: Obtain royal steel to have your helmet refined.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_28")
 		elseif MsgContains(message, "no") then
-			npcHandler:say("There is no need to rush anyway.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_29")
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 6 then
 		if MsgContains(message, "yes") then
 			if not player:removeItem(5887, 1) then
-				npcHandler:say("Lying is not exactly honourable, |PLAYERNAME|. Shame on you.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_30")
 				return true
 			end
 
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonHelmet, 5)
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.MissionHelmet, 5)
-			npcHandler:say("You truly deserve to wear an adorned helmet, brave Knight |PLAYERNAME|. Please talk to Sam and tell him I sent you. I'm sure he will be glad to refine your helmet.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_31")
 		elseif MsgContains(message, "no") then
-			npcHandler:say("There is no need to rush anyway.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_32")
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

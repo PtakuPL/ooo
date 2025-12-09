@@ -60,7 +60,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getLevel() < 35 then
-			npcHandler:say("Indeed there is something to be done, but I need someone more experienced. Come back later if you want to.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.say_1")
 			return true
 		end
 
@@ -81,7 +81,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_1.TibiaTales.IntoTheBonePit, 3)
 			if player:removeItem(131, 1) then
 				player:addItem(6299, 1)
-				npcHandler:say("Excellent! Now I can try to put my theoretical thoughts into practice and find a cure for the symptoms of undead. Here, take this for your efforts.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.say_2")
 				npcHandler:setTopic(playerId, 0)
 			else
 				npcHandler:say({
@@ -91,42 +91,42 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 0)
 			end
 		else
-			npcHandler:say("I am very glad you helped me, but I am very busy at the moment.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.say_3")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "addons") then
 		local hasMasks = player:getItemCount(25088) >= 3
 		local hasFeathers = player:getItemCount(25089) >= 50
 		if player:getStorageValue(Storage.Quest.U11_02.TheFirstDragon.Feathers) == 2 and player:getStorageValue(Storage.Quest.U11_02.FestiveOutfits.Addon1) == 1 and hasMasks then
-			npcHandler:say("I see you have the porcelain masks. Are you ready to exchange them for the first addon?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.say_4")
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U11_02.TheFirstDragon.Feathers) == 2 and player:getStorageValue(Storage.Quest.U11_02.FestiveOutfits.Addon2) == 1 and hasFeathers then
-			npcHandler:say("I see you have the colourful feathers. Are you ready to exchange them for the second addon?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.say_5")
 			npcHandler:setTopic(playerId, 4)
 		else
-			npcHandler:say("You need the outfit and 3 porcelain masks or 50 colored feathers to get the festive costume accessories.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.say_6")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "mask") and player:getStorageValue(Storage.Quest.U11_02.FestiveOutfits.Addon1) == 1 then
 		if player:removeItem(25088, 3) then
 			player:addOutfit(929, 1)
 			player:addOutfit(931, 1)
-			npcHandler:say("Very good! You gained the first addon to the festive outfit.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.say_7")
 			player:setStorageValue(Storage.Quest.U11_02.FestiveOutfits.Addon1, 2)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("Oh, sorry but you don't have enough porcelain masks!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.say_8")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "feather") and player:getStorageValue(Storage.Quest.U11_02.FestiveOutfits.Addon2) == 1 then
 		if player:removeItem(25089, 50) then
 			player:addOutfit(929, 2)
 			player:addOutfit(931, 2)
-			npcHandler:say("Very good! You gained the second addon to the festive outfit.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.say_9")
 			player:setStorageValue(Storage.Quest.U11_02.FestiveOutfits.Addon2, 2)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("Oh, sorry but you don't have enough colourful feathers!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.say_10")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") then
@@ -139,17 +139,17 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_1.TibiaTales.IntoTheBonePit, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("I provide two addons. For the first one I need you to bring me three porcelain masks. For the second addon you need fifty colourful ostrich feathers. Do you want one of these addons?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.say_11")
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("What do you have for me: the porcelain masks or the colourful feathers?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.say_12")
 			player:setStorageValue(Storage.Quest.U11_02.FestiveOutfits.Addon1, 1)
 		elseif npcHandler:getTopic(playerId) == 4 then
-			npcHandler:say("I provide two addons. For the first one I need you to bring me three porcelain masks. For the second addon you need fifty colourful ostrich feathers. Do you want one of these addons?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.say_13")
 			player:setStorageValue(Storage.Quest.U11_02.FestiveOutfits.Addon2, 1)
 		end
 	elseif MsgContains(message, "no") then
-		npcHandler:say("Ohh, then I need to find another adventurer who wants to earn a great reward. Bye!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.muriel.say_14")
 		npcHandler:setTopic(playerId, 0)
 	end
 

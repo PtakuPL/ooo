@@ -65,7 +65,7 @@ local function greetCallback(npc, creature, message)
 	local playerId = player:getId()
 
 	if not MsgContains(message, "djanni'hah") then
-		npcHandler:say("Shove off, little one! Humans are not welcome here, |PLAYERNAME|!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.malor.say_1")
 		endConversationWithDelay(npcHandler, npc, creature)
 		return false
 	end
@@ -79,7 +79,7 @@ local function greetCallback(npc, creature, message)
 		return false
 	end
 
-	npcHandler:say("Greetings, human |PLAYERNAME|. My patience with your kind is limited, so speak quickly and choose your words well.", npc, creature)
+	NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.malor.say_2")
 	npcHandler:setInteraction(npc, creature)
 
 	return true
@@ -104,13 +104,13 @@ local function creatureSayCallback(npc, creature, type, message)
 				}, npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			elseif missionProgress == 1 then
-				npcHandler:say("You haven't finished your final mission yet. Shall I explain it again to you?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.malor.say_3")
 				npcHandler:setTopic(playerId, 1)
 			elseif missionProgress == 2 then
-				npcHandler:say("Have you found Fa'hradin's lamp and placed it in Malor's personal chambers?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.malor.say_4")
 				npcHandler:setTopic(playerId, 2)
 			else
-				npcHandler:say("There's no mission left for you, friend of the Efreet. However, I have a {task} for you.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.malor.say_5")
 			end
 		else
 			npcHandler:say({
@@ -129,7 +129,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission03, 1)
 		elseif MsgContains(message, "no") then
-			npcHandler:say("Your choice.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.malor.say_6")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
@@ -149,12 +149,12 @@ local function creatureSayCallback(npc, creature, type, message)
 				releasePlayer(npc, creature)
 			end, 1000)
 		elseif MsgContains(message, "no") then
-			npcHandler:say("Just do it!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.malor.say_7")
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "task") and player:getStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission03) == 3 then
 		if player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BlueDjinnTask) < 0 or player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BlueDjinnTask) == 3 then
-			npcHandler:say("There are still blue djinns everywhere! We can't let a single one of them live. I guess a start would be for you to kill 500 blue djinns and Marid. Will you assist us?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.malor.say_8")
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BlueDjinnTask) == 0 then
 			if player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.BlueDjinnCount) >= 500 then
@@ -166,7 +166,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BossKillCount.FahimCount, 0)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BlueDjinnTask, 1)
 			else
-				npcHandler:say("Come back when you kill 500 blue djinns and Marid.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.malor.say_9")
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BlueDjinnTask) == 2 then
 			npcHandler:say({
@@ -178,7 +178,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addMoney(5000)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 3 then
-		npcHandler:say("Good, then show those pathetic Marid what you're made of.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.malor.say_10")
 		player:setStorageValue(JOIN_STOR, 1)
 		player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.BlueDjinnCount, 0)
 		player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.BlueDjinnCount, 0)

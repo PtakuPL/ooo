@@ -71,7 +71,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 		player:getPosition():sendMagicEffect(CONST_ME_EXPLOSIONAREA)
 		player:addHealth(1 - player:getHealth())
-		npcHandler:say("Take this!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.barbara.say_3")
 		npc:getPosition():sendMagicEffect(CONST_ME_YELLOW_RINGS)
 	end
 	return true

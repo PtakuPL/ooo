@@ -240,7 +240,7 @@ local function donationHandler(npc, creature, message, keywords, parameters, nod
 			)
 			npcHandler:resetNpc(creature)
 		else
-			npcHandler:say("Well, har har. Very funny. Come on, pick up the gold you just dropped.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_1")
 		end
 	elseif parameters.decline == true then
 		if player:getMoney() > npcConfig.moneyToNeedDonation then
@@ -453,9 +453,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			creature
 		)
 	elseif currentNode == readyNode then
-		npcHandler:say("Errr... was that a foreign language? Could you just answer with a clear {yes} or {no}?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_6")
 	elseif currentNode == notReadyNode then
-		npcHandler:say("Aw, come on! Talk to me in human words! {Yes}, {no}, or mention a city's name, that kind of stuff.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_7")
 	end
 	return true
 end

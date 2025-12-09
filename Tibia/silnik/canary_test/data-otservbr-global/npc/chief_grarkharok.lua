@@ -65,62 +65,62 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "cloak") or MsgContains(message, "feather") or MsgContains(message, "swan") or MsgContains(message, "maiden") then
 		if player:getStorageValue(ThreatenedDreams.Mission01[1]) == 12 then
-			npcHandler:say("Hahaha! Grarkharok take cloak from pretty girl. Then ... girl is swan. Grarkharok wants eat but flies away. Grarkharok not understand. Not need cloak, too many feathers. Give cloak to To ... Ta ... Tereban in Edron. Getting shiny coins and meat.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chief_grarkharok.say_1")
 		else
-			npcHandler:say("Grarkharok already say everything! Not want talk! Go away!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chief_grarkharok.say_2")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "kill") or MsgContains(message, "hurt") or MsgContains(message, "pain") then
 		if player:getStorageValue(Storage.Quest.U8_2.TrollSabotageQuest.Questline) == 1 then
 			npcHandler:setTopic(playerId, 1)
 		end
-		npcHandler:say("Hrhrhrhr! Me no fear of human! Me Chief Grarkharok!!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chief_grarkharok.say_3")
 	elseif MsgContains(message, "lady") or MsgContains(message, "queen") or MsgContains(message, "woman") or MsgContains(message, "cave") or MsgContains(message, "house") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("You help?? Human know troll lady for Grarkharok??", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chief_grarkharok.say_4")
 			npcHandler:setTopic(playerId, 2)
 		else
-			npcHandler:say("Found lady for Grarkharok?!? Must be good-looking, hairy lady, yknow! Go find!!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chief_grarkharok.say_5")
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("What name of troll lady??", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chief_grarkharok.say_6")
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 100 then
 			if player:removeItem(5934, 1) then
-				npcHandler:say("Gimme gimme! Yumyumyum! <BUUUURP>.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chief_grarkharok.say_7")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You no have dead frog! Bring dead frog!!! Grarkharok hungry!!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chief_grarkharok.say_8")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 101 then
 			if player:removeItem(3998, 1) then
-				npcHandler:say("Gimme gimme! Yumyumyum! <BUUUURP>.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chief_grarkharok.say_9")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You no have tasty snake! Bring tasty snake!!! Grarkharok hungry!!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chief_grarkharok.say_10")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif npcHandler:getTopic(playerId) == 3 then
-		npcHandler:say("|PLAYERNAME|?!? Sound good! Bring troll lady to Grarkharok!! Here, give troll lady! Take take! Bring lady to Grarkharok for make tribe!! Now GO!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chief_grarkharok.say_11")
 		npcHandler:setTopic(playerId, 0)
 		player:setStorageValue(mission.Questline, 2)
 		player:addItem(7754, 1)
 	elseif MsgContains(message, "frog") then
-		npcHandler:say("Have dead frog for Grarkharok??", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chief_grarkharok.say_12")
 		npcHandler:setTopic(playerId, 100)
 	elseif MsgContains(message, "snake") then
-		npcHandler:say("Have tasty snake for Grarkharok??", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chief_grarkharok.say_13")
 		npcHandler:setTopic(playerId, 101)
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 100 or npcHandler:getTopic(playerId) == 101 then
-			npcHandler:say("Grarkharok angry now!! Want throw rock on human cave down hill again!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chief_grarkharok.say_14")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 101 then
-		npcHandler:say("Huh?? No understand!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chief_grarkharok.say_15")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

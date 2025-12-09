@@ -72,7 +72,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_1.TowerDefenceQuest.Door, 2)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.TowerDefenceQuest.Questline) == 3 then
-			npcHandler:say("Impressive!! I could need someone like you here at the watchtower! Okay, the password you need to tell Bunny is ' password* '. Come back and visit me if you like to!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.thanita.say_1")
 			player:setStorageValue(Storage.Quest.U8_1.TowerDefenceQuest.Questline, 4)
 			npcHandler:setTopic(playerId, 0)
 		end

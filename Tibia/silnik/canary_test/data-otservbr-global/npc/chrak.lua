@@ -81,7 +81,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("I grant you ze permizzion to enter ze arena. Remember, you'will have to enter ze arena az a team of two. If you are not familiar wiz ze rulez, I can explain zem to you once again.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chrak.say_1")
 			player:setStorageValue(TheNewFrontier.Questline, 25)
 			player:setStorageValue(TheNewFrontier.Mission09.ArenaDoor, 1)
 			npcHandler:setTopic(playerId, 0)

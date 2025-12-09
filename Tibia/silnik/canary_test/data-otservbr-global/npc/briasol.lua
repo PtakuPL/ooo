@@ -75,12 +75,12 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:getMoney() + player:getBankBalance() >= 1000 then
-				npcHandler:say("Here it is.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.briasol.say_1")
 				player:setStorageValue(Storage.Quest.U8_1.TheTravellingTrader.Mission04, 2)
 				player:addItem(227, 1)
 				player:removeMoneyBank(1000)
 			else
-				npcHandler:say("You don't have enought money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.briasol.say_2")
 			end
 			npcHandler:setTopic(playerId, 0)
 		end

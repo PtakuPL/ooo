@@ -68,7 +68,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "barbarian") and player:getStorageValue(Storage.Quest.U8_0.BarbarianTest.Questline) < 1 then
-		npcHandler:say("A true barbarian is something special among our people. Everyone who wants to become a barbarian will have to pass the barbarian {test}.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sven.say_1")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "test") then
 		npcHandler:say({
@@ -77,7 +77,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "mead") and player:getStorageValue(Storage.Quest.U8_0.BarbarianTest.Questline) == 1 then
-		npcHandler:say("Do you have some honey with you?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sven.say_2")
 		npcHandler:setTopic(playerId, 4)
 	elseif MsgContains(message, "barbarian mead") and player:getStorageValue(Storage.Quest.U8_0.BarbarianTest.Questline) == 3 then
 		npcHandler:say({
@@ -114,12 +114,12 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "yes") then
 		if player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.HuskyKillStatus) == 1 and player:getStorageValue(Storage.Quest.U8_0.BarbarianTest.Questline) == 8 then
 			if player:removeMoneyBank(player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.HuskyKill) * 1500) then
-				npcHandler:say("Alright, we are even!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sven.say_3")
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.HuskyKillStatus, 0)
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.HuskyKill, 0)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough. Bring me the money and I will forget about it.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sven.say_4")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 2 then
@@ -140,7 +140,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_0.BarbarianTest.Mission01, 1) -- Questlog Barbarian Test Quest Barbarian Test 1: Barbarian Booze
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:removeItem(5902, 1) then
-				npcHandler:say("Good, for this honeycomb I allow you 20 sips from the mead bucket over there. Talk to me again about barbarian mead if you have passed the test.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sven.say_5")
 				npcHandler:setTopic(playerId, 0)
 				player:setStorageValue(Storage.Quest.U8_0.BarbarianTest.Questline, 2)
 				player:setStorageValue(Storage.Quest.U8_0.BarbarianTest.Mission01, 2) -- Questlog Barbarian Test Quest Barbarian Test 1: Barbarian Booze
@@ -152,7 +152,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:say("I don't know if you realise the consequences. You won't be a member of our community anymore. I ask you for the last time: Are you willing to pay " .. player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.HuskyKill) * 1500 .. " gold as a compensation?", npc, creature)
 			npcHandler:setTopic(playerId, 10)
 		elseif npcHandler:getTopic(playerId) == 10 then
-			npcHandler:say("Alright, it's your choice. If you regret your decision and want to be a barbarian again, talk to me about the {barbarian} test.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sven.say_6")
 			player:setStorageValue(Storage.Quest.U8_0.BarbarianTest.Questline, -1)
 			player:setStorageValue(Storage.Quest.U8_0.BarbarianTest.Mission01, -1)
 			player:setStorageValue(Storage.Quest.U8_0.BarbarianTest.Mission02, -1)

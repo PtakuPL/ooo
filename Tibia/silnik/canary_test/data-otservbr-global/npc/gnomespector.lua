@@ -72,7 +72,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "apparatus") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say("Don't be afraid. It won't hurt! Just step in!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomespector.say_1")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

@@ -61,12 +61,12 @@ local function creatureSayCallback(npc, creature, type, message)
 	local player = Player(creature)
 	local playerId = player:getId()
 	if message == "podium" then
-		npcHandler:say("Do you want to appropriately show off your boss trophies and buy an additional podium of vigour for 1000000 Gold?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_1")
 		npcHandler:setTopic(playerId, 1)
 	elseif message == "yes" and npcHandler:getTopic(playerId) == 1 then
 		if player:getStorageValue(30020) == 1 then
 			if player:removeMoney(1000000) then
-				npcHandler:say("Ah, I see you killed a lot of dangerous creatures. Here's your podium of vigour!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_2")
 				local inbox = player:getStoreInbox()
 				local inboxItems = inbox:getItems()
 				if inbox and #inboxItems < inbox:getMaxCapacity() then
@@ -76,17 +76,17 @@ local function creatureSayCallback(npc, creature, type, message)
 						decoKit:setCustomAttribute("unWrapId", 38707)
 					end
 				else
-					npcHandler:say("Please make sure you have free slots in your store inbox.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_3")
 				end
 			else
-				npcHandler:say("You don'\t have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_4")
 			end
 		else
-			npcHandler:say("You have not aquired enough knowledge in hunting big scary creatures.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_5")
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif message == "no" and npcHandler:getTopic(playerId == 1) then
-		npcHandler:say("Blessings on your hunts!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_6")
 		npcHandler:setTopic(playerId, 0)
 	end
 end

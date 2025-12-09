@@ -61,7 +61,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		if player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission01) == 1 then
 			npcHandler:setTopic(playerId, 1)
 		end
-		npcHandler:say("The guys from the magistrate sent you here, didn't they?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_beggar.say_1")
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			npcHandler:say({

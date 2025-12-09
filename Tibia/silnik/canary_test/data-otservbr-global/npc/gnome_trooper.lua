@@ -92,7 +92,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 
 		if not player:removeItem(19219, 1) then
-			npcHandler:say("But you don't have it...", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnome_trooper.say_1")
 			return npcHandler:removeInteraction(npc, creature)
 		end
 

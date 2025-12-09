@@ -66,35 +66,35 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "banana skin") then
 		if player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission06) == 7 then
 			if player:getItemCount(3104) > 0 then
-				npcHandler:say("<sniff><sniff>", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.noodles.say_1")
 				npcHandler:setTopic(playerId, 1)
 			end
 		end
 	elseif MsgContains(message, "dirty fur") then
 		if player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission06) == 8 then
 			if player:getItemCount(3105) > 0 then
-				npcHandler:say("<sniff><sniff>", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.noodles.say_2")
 				npcHandler:setTopic(playerId, 2)
 			end
 		end
 	elseif MsgContains(message, "mouldy cheese") then
 		if player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission06) == 9 then
 			if player:getItemCount(3120) > 0 then
-				npcHandler:say("<sniff><sniff>", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.noodles.say_3")
 				npcHandler:setTopic(playerId, 3)
 			end
 		end
 	elseif MsgContains(message, "like") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Woof!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.noodles.say_4")
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission06, 8)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Woof!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.noodles.say_5")
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission06, 9)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Meeep! Grrrrr! <spits>", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.noodles.say_6")
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission06, 10)
 			npcHandler:setTopic(playerId, 0)
 		end

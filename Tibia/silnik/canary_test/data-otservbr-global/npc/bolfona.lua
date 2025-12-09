@@ -59,29 +59,29 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "chocolate cake") then
 		if player:getStorageValue(Storage.Quest.U8_4.TheHiddenCityOfBeregar.SweetAsChocolateCake) == 1 and player:getItemCount(8019) >= 1 then
-			npcHandler:say("Is that for me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bolfona.say_1")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_4.TheHiddenCityOfBeregar.SweetAsChocolateCake) == 2 then
-			npcHandler:say("So did you tell her that the cake came from me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bolfona.say_2")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:removeItem(8019, 1) then
-				npcHandler:say("Err, thanks. I doubt it's from you. Who sent it?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bolfona.say_3")
 				npcHandler:setTopic(playerId, 2)
 				player:setStorageValue(Storage.Quest.U8_4.TheHiddenCityOfBeregar.SweetAsChocolateCake, 2)
 			else
-				npcHandler:say("Oh, I thought you have one.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bolfona.say_4")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "Frafnar") then
-			npcHandler:say("Oh, Frafnar. That's so nice of him. I gotta invite him for a beer.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bolfona.say_5")
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("Never heard that name. Well, I don't mind, thanks for the cake.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bolfona.say_6")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

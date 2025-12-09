@@ -70,10 +70,10 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Excellent... I hope they will haaaaaaunt my house no longer. What was your... naaaaaame again, tell me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.say_1")
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.HauntedHouse.Questline) < 1 then
-			npcHandler:say("Yeeeees... you need to help meeeeeee. I want those ghosts gone... this is my home and I need it to teach my students. Will you take care of the... ghosts?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.say_2")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, playerName) then
@@ -92,7 +92,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		end
 	else
-		npcHandler:say("Sorry, I didn't understand.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.say_3")
 		npcHandler:setTopic(playerId, 0)
 	end
 

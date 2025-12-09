@@ -53,11 +53,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	local playerId = player:getId()
 
 	if MsgContains(message, "job") then
-		return npcHandler:say("I'm the officer responsible for this area. I give out missions, accept mission reports and oversee our defences.", npc, creature)
+		return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_1")
 	end
 
 	if MsgContains(message, "gnome") then
-		return npcHandler:say("We are the only protectors of the world against the enemies below. With small stature comes great responsibilities, as they say.", npc, creature)
+		return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_2")
 	end
 
 	if MsgContains(message, "area") then
@@ -73,69 +73,69 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getLevel() > levels[2] then
-			npcHandler:say("Sorry, but no! Your expertise could be put to better use elsewhere. Here awaits you no challenge. You are desperately needed in the deeper levels of the Spike. Report there immediately. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_3")
 		else
-			npcHandler:say("I can offer you several missions: to recharge our ghost {pacifiers}, to {release} the spiritual anger, to {track} an evil presence and to {kill} some demon skeletons.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_4")
 		end
 		return
 	end
 
 	if MsgContains(message, "report") then
 		talkState[playerId] = "report"
-		return npcHandler:say("What mission do you want to report about: recharging the ghost {pacifiers}, the {release} of the spiritual anger, about {tracking} an evil presence and the {killing} of demon skeletons?", npc, creature)
+		return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_5")
 	end
 
 	if talkState[playerId] == "report" then
 		if MsgContains(message, "pacifiers") then
 			if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Pacifier_Main) == -1 then
-				npcHandler:say("You have not started that mission.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_6")
 			elseif player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Pacifier_Main) == 7 then
-				npcHandler:say("You have done well. Here, take your reward.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_7")
 				player:addFamePoint()
 				player:addExperience(1000, true)
 				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Pacifier_Main, -1)
 				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Pacifier_Daily, os.time() + 72000)
 			else
-				npcHandler:say("Gnowful! Take the resonance charger and use it on seven of the pacifiers in the cave.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_8")
 			end
 		elseif MsgContains(message, "release") then
 			if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Mound_Main) == -1 then
-				npcHandler:say("You have not started that mission.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_9")
 			elseif player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Mound_Main) == 1 then
-				npcHandler:say("You have done well. Here, take your reward.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_10")
 				player:addFamePoint()
 				player:addExperience(1000, true)
 				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Mound_Main, -1)
 				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Mound_Daily, os.time() + 72000)
 			else
-				npcHandler:say("Gnowful! Take the spirit shovel use it on four graves in the cave system.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_11")
 			end
 		elseif MsgContains(message, "tracking") then
 			if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Track_Main) == -1 then
-				npcHandler:say("You have not started that mission.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_12")
 			elseif player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Track_Main) == 3 then
-				npcHandler:say("You have done well. Here, take your reward.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_13")
 				player:addFamePoint()
 				player:addExperience(1000, true)
 				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Track_Main, -1)
 				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Track_Daily, os.time() + 72000)
 			else
-				npcHandler:say("Gnowful! Take the tracking device in the caves and locate the residual spirit energy.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_14")
 			end
 		elseif MsgContains(message, "killing") then
 			if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Kill_Main) == -1 then
-				npcHandler:say("You have not started that mission.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_15")
 			elseif player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Kill_Main) == 7 then
-				npcHandler:say("You have done well. Here, take your reward.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_16")
 				player:addFamePoint()
 				player:addExperience(1000, true)
 				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Kill_Main, -1)
 				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Kill_Daily, os.time() + 72000)
 			else
-				npcHandler:say("Gnowful! Just go out to the caves and kill at least seven demon skeletons.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_17")
 			end
 		else
-			npcHandler:say("That's not a valid mission name.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_18")
 		end
 		talkState[playerId] = nil
 		return
@@ -157,7 +157,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:say({ "We need you to recharge our ghost pacifiers. They are placed at several strategic points in the caves around us and should be easy to find. Your mission would be to charge seven of them.", "If you are interested, I can give you some more {information} about it. Are you willing to accept this mission?" }, npc, creature)
 			talkState[playerId] = "pacifiers"
 		else
-			npcHandler:say("You have already started that mission.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_20")
 		end
 	end
 
@@ -165,10 +165,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			player:addItem(19204, 1)
 			player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Pacifier_Main, 0)
-			npcHandler:say("Gnometastic! Take this resonance charger and use it on seven of the pacifiers in the cave. If you lose the charger, you'll have to bring your own. Gnomux sells all the equipment that is required for our missions.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_21")
 			talkState[playerId] = nil
 		elseif MsgContains(message, "no") then
-			npcHandler:say("Ok then.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_22")
 			talkState[playerId] = nil
 		end
 	end
@@ -186,10 +186,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Mound_Main) == -1 then
-			npcHandler:say("Your task would be to use a spirit shovel to release some spirit's anger from graves that can be found all around here. If you are interested, I can give you some more information about it. Are you willing to accept this mission?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_24")
 			talkState[playerId] = "release"
 		else
-			npcHandler:say("You have already started that mission.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_25")
 		end
 	end
 
@@ -197,10 +197,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			player:addItem(19203, 1)
 			player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Mound_Main, 0)
-			npcHandler:say("Gnometastic! Take this spirit shovel and use it on four graves in the cave system. If you lose the shovel you'll have to bring your own. Gnomux sells all the equipment that is required for our missions.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_26")
 			talkState[playerId] = nil
 		elseif MsgContains(message, "no") then
-			npcHandler:say("Ok then.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_27")
 			talkState[playerId] = nil
 		end
 	end
@@ -225,7 +225,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			)
 			talkState[playerId] = "track"
 		else
-			npcHandler:say("You have already started that mission.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_29")
 		end
 	end
 
@@ -234,10 +234,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			GHOST_DETECTOR_MAP[player:getGuid()] = Position.getFreeSand()
 			player:addItem(19205, 1)
 			player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Track_Main, 0)
-			npcHandler:say("Gnometastic! Use this tracking device in the caves and locate the residual spirit energy. If you lose the tracking device, you'll have to bring your own. Gnomux sells all the equipment that is required for our missions.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_30")
 			talkState[playerId] = nil
 		elseif MsgContains(message, "no") then
-			npcHandler:say("Ok then.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_31")
 			talkState[playerId] = nil
 		end
 	end
@@ -255,20 +255,20 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Kill_Main) == -1 then
-			npcHandler:say("We need someone to reduce the steadily growing number of demon skeletons in the caves. If you are interested, I can give you some more information about it. Are you willing to accept this mission?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_33")
 			talkState[playerId] = "kill"
 		else
-			npcHandler:say("You have already started that mission.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_34")
 		end
 	end
 
 	if talkState[playerId] == "kill" then
 		if MsgContains(message, "yes") then
 			player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Kill_Main, 0)
-			npcHandler:say("Gnometastic! Just go out and kill them. You should find more of them than you like.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_35")
 			talkState[playerId] = nil
 		elseif MsgContains(message, "no") then
-			npcHandler:say("Ok then.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_36")
 			talkState[playerId] = nil
 		end
 	end

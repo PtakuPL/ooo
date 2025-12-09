@@ -84,7 +84,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		doPlayerRemoveItem(creature, 11450, 1)
 		npcHandler:setTopic(playerId, 0)
 	else
-		npcHandler:say("You need to kill the {The Ravager}, click on statue and then come here say {ritual}, {abandoned sewers}, {notebook} and after this find Roswitha and talk with she.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.barazbaz.say_1")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

@@ -72,10 +72,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if table.contains({ "map", "marks" }, message) then
-		npcHandler:say("Would you like me to mark locations like - for example - the depot, bank and shops on your map?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.guide_thelandil.say_1")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say("Here you go.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.guide_thelandil.say_2")
 		local mark
 		for i = 1, #configMarks do
 			mark = configMarks[i]
@@ -83,7 +83,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) >= 1 then
-		npcHandler:say("Well, nothing wrong about exploring the town on your own. Let me know if you need something!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.guide_thelandil.say_3")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

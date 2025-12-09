@@ -77,7 +77,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "old nasty") then
 		if player:getStorageValue(Storage.Quest.U10_55.Dawnport.TheDormKey) == 3 and player:getItemCount(21402) >= 1 then
-			npcHandler:say("You bring me Old Nasty?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.woblin.say_1")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "yes") then

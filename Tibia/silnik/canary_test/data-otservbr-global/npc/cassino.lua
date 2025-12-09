@@ -128,7 +128,7 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getPosition() ~= config.playerPosition then
-		npcHandler:say("If you want to play with me please come near me.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cassino.say_1")
 		npcHandler:removeInteraction(npc, creature)
 		return false
 	end

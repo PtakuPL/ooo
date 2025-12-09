@@ -19,8 +19,8 @@
             "data/npclib"
           ],
           "target_keys": 5000,
-          "status": "in_progress",
-          "keys_extracted": 4409,
+          "status": "completed",
+          "keys_extracted": 7673,
           "files_processed": 877
         },
         {

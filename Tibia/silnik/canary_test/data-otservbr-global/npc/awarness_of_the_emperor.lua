@@ -94,7 +94,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.TeleportAccess.BossRoom, 1)
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline, 31)
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission11, 1) --Questlog, Wrath of the Emperor "Mission 11: Payback Time"
-			npcHandler:say("So be it!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.awarness_of_the_emperor.say_1")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

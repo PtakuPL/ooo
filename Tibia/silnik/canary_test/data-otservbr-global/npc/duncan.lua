@@ -61,40 +61,40 @@ local function creatureSayCallback(npc, creature, type, message)
 	local storage = Storage.Quest.U7_8.PirateOutfits.PirateSabreAddon
 
 	if table.contains({ "outfit", "addon" }, message) and player:getStorageValue(Storage.Quest.U7_8.PirateOutfits.PirateBaseOutfit) == 1 then
-		npcHandler:say("You're talking about my sabre? Well, even though you earned our trust, you'd have to fulfill a task first before you are granted to wear such a sabre.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_1")
 	elseif MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 9 then
-			npcHandler:say("I need a new quality atlas for our captains. Only one of the best will do it. I heard the explorers society sells the best, but only to members of a certain rank. You will have to get this rank or ask a high ranking member to buy it for you.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_2")
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 10)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 10 then
-			npcHandler:say("Did you get an atlas of the explorers society as I requested?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_3")
 			npcHandler:setTopic(playerId, 6)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission2) > 0 and player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TortoiseEggNargorDoor) < 0 then
-			npcHandler:say("You did some impressive things. I think people here start considering you as one of us. But these are dire times and everyone of us is expected to give his best and even exceed himself. Do you think you can handle that?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_4")
 			npcHandler:setTopic(playerId, 7)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TortoiseEggNargorDoor) == 1 then
-			npcHandler:say("Did you rescue one of those poor soon-to-be baby tortoises from Nargor?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_5")
 			npcHandler:setTopic(playerId, 8)
 		end
 	elseif MsgContains(message, "task") then
 		if player:getStorageValue(storage) < 1 then
-			npcHandler:say("Are you up to the task which I'm going to give you and willing to prove you're worthy of wearing such a sabre?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_6")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "eye patches") then
 		if player:getStorageValue(storage) == 1 then
-			npcHandler:say("Have you gathered 100 eye patches?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_7")
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "peg legs") then
 		if player:getStorageValue(storage) == 2 then
-			npcHandler:say("Have you gathered 100 peg legs?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_8")
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "hooks") then
 		if player:getStorageValue(storage) == 3 then
-			npcHandler:say("Have you gathered 100 hooks?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_9")
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "yes") then
@@ -108,23 +108,23 @@ local function creatureSayCallback(npc, creature, type, message)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			player:setStorageValue(storage, 1)
 			player:setStorageValue(Storage.OutfitQuest.DefaultStart, 1) --this for default start of Outfit and Addon Quests
-			npcHandler:say("Good! Come back to me once you have gathered 100 eye patches.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_10")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:removeItem(6098, 100) then
 				player:setStorageValue(storage, 2)
-				npcHandler:say("Good job. Alright, now bring me 100 peg legs.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_11")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have it...", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_12")
 			end
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:removeItem(6126, 100) then
 				player:setStorageValue(storage, 3)
-				npcHandler:say("Nice. Lastly, bring me 100 pirate hooks. That should be enough to earn your sabre.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_13")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have it...", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_14")
 			end
 		elseif npcHandler:getTopic(playerId) == 5 then
 			if player:removeItem(6097, 100) then
@@ -132,16 +132,16 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:say("I see, I see. Well done. Go to Morgan and tell him this codeword: 'firebird'. He'll know what to do.", creature)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have it...", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_15")
 			end
 		elseif npcHandler:getTopic(playerId) == 6 then
 			if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 10 then
 				if player:removeItem(6108, 1) then
-					npcHandler:say("Indeed, what a fine work... the book I mean. Your work was acceptable all in all.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_16")
 					player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 11)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("You don't have it...", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_17")
 					npcHandler:setTopic(playerId, 0)
 				end
 			end
@@ -159,7 +159,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		elseif npcHandler:getTopic(playerId) == 8 then
 			if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TortoiseEggNargorDoor) == 1 then
 				if player:removeItem(6125, 1) then
-					npcHandler:say("A real tortoise egg ... I guess you are more accustomed to rescue some noblewoman in distress but you did something goodtoday.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_18")
 					player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TortoiseEggNargorDoor, 2)
 					player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 16)
 					if player:getStorageValue(Storage.TheIceIslands.Questline) >= 9 then
@@ -167,14 +167,14 @@ local function creatureSayCallback(npc, creature, type, message)
 					end
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("You don't have it...", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_19")
 					npcHandler:setTopic(playerId, 0)
 				end
 			end
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) >= 1 then
-			npcHandler:say("Then no.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.duncan.say_20")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

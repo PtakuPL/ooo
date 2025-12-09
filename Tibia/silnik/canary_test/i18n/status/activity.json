@@ -1,160 +1,160 @@
 {
-  "last_updated": "2025-12-09 01:10:04",
+  "last_updated": "2025-12-09 02:30:30",
   "current_operation": {
     "type": "cycle",
     "phase": 1,
     "category": "scripts",
-    "file": "Cykl #1",
+    "file": "Cykl #8",
     "action": "🎮 Canary Server - scripts",
     "status": "in_progress",
-    "details": "NPC:4409 Scripts:713 Items:36972"
+    "details": "NPC:7673 Scripts:713 Items:36972"
   },
   "recent_operations": [
     {
-      "time": "2025-12-09 01:10:04",
+      "time": "2025-12-09 02:30:30",
       "type": "cycle",
-      "file": "Cykl #1",
+      "file": "Cykl #8",
       "action": "🎮 Canary Server - scripts",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 01:09:05",
-      "type": "cycle",
-      "file": "Cykl #2",
-      "action": "🎮 Canary Server - scripts",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 01:08:42",
+      "time": "2025-12-09 02:30:11",
       "type": "cycle_end",
-      "file": "Cykl 1",
+      "file": "Cykl 7",
       "action": "Zakończono przetwarzanie",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 01:08:41",
+      "time": "2025-12-09 02:30:11",
       "type": "process",
-      "file": "a_dragon_mother.lua",
+      "file": "dermot.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 01:08:40",
+      "time": "2025-12-09 02:30:07",
       "type": "process",
-      "file": "a_dragon_mother.lua",
+      "file": "dermot.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 01:08:40",
+      "time": "2025-12-09 02:30:07",
       "type": "process",
-      "file": "a_dragon_lord.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 01:08:40",
-      "type": "process",
-      "file": "fa_hradin.lua",
+      "file": "ivalisse.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 01:08:37",
+      "time": "2025-12-09 02:30:02",
       "type": "process",
-      "file": "fa_hradin.lua",
+      "file": "ivalisse.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 01:08:37",
+      "time": "2025-12-09 02:30:02",
       "type": "process",
-      "file": "gnomargery.lua",
+      "file": "santa_claus.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 01:08:29",
+      "time": "2025-12-09 02:30:00",
       "type": "process",
-      "file": "gnomargery.lua",
+      "file": "santa_claus.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 01:08:29",
+      "time": "2025-12-09 02:30:00",
       "type": "process",
-      "file": "fenbala.lua",
+      "file": "bruce.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 01:08:27",
+      "time": "2025-12-09 02:29:58",
       "type": "process",
-      "file": "fenbala.lua",
+      "file": "bruce.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 01:08:27",
+      "time": "2025-12-09 02:29:58",
       "type": "process",
-      "file": "rata_mari.lua",
+      "file": "ghost_of_a_priest.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 01:08:25",
+      "time": "2025-12-09 02:29:52",
       "type": "process",
-      "file": "rata_mari.lua",
+      "file": "ghost_of_a_priest.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 01:08:24",
+      "time": "2025-12-09 02:29:51",
       "type": "process",
-      "file": "barbara.lua",
+      "file": "shiriel.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 02:29:50",
+      "type": "process",
+      "file": "karl.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 01:08:23",
+      "time": "2025-12-09 02:29:48",
       "type": "process",
-      "file": "barbara.lua",
+      "file": "karl.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 01:08:23",
+      "time": "2025-12-09 02:29:48",
       "type": "process",
-      "file": "navigator.lua",
+      "file": "alyxo.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 01:08:20",
+      "time": "2025-12-09 02:29:43",
       "type": "process",
-      "file": "navigator.lua",
+      "file": "alyxo.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 01:08:20",
+      "time": "2025-12-09 02:29:43",
       "type": "process",
-      "file": "gorn.lua",
+      "file": "jacob.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 01:08:14",
+      "time": "2025-12-09 02:29:40",
       "type": "process",
-      "file": "gorn.lua",
+      "file": "jacob.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 02:29:40",
+      "type": "process",
+      "file": "rachel.lua",
+      "action": "Lua migration",
+      "status": "completed"
     }
   ],
   "errors": [],
   "warnings": [],
   "stats": {
-    "files_this_session": 29,
+    "files_this_session": 491,
     "keys_this_session": 0,
     "errors_this_session": 0,
     "fixes_applied": 0

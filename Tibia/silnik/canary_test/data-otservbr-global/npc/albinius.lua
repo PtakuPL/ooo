@@ -93,44 +93,44 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "temple") then
-		npcHandler:say("The temple has been restored to its former glory, yet we strife to live and praise in the {Shaper} ways. Do you still need me to take some old {tomes} from you my child?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_1")
 		npcHandler:setTopic(playerId, 1)
 	end
 	if MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
 		if player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.Tomes) == 1 then
-			npcHandler:say("You already offered enough tomes for us to study and rebuild this temple. Thank you, my child.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_2")
 			npcHandler:setTopic(playerId, 0)
 		else
 			if player:getItemCount(23986) >= 5 then
 				player:removeItem(23986, 5)
-				npcHandler:say("Thank you very much for your contribution, child. Your first step in the ways of the {Shapers} has been taken.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_3")
 				player:setStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.Tomes, 1)
 			else
-				npcHandler:say("You need 5 heavy old tome.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_4")
 			end
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say("I understand. Return to me if you change your mind, my child.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_5")
 		npcHandler:removeInteraction(npc, creature)
 	end
 
 	if MsgContains(message, "tomes") and player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.Tomes) < 1 then
-		npcHandler:say("If you have some old shaper tomes I would {buy} them.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_6")
 		npcHandler:setTopic(playerId, 7)
 	end
 
 	if MsgContains(message, "buy") then
-		npcHandler:say("I'm sorry, I don't buy anything. My main concern right now is the bulding of this temple.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_7")
 		npc:openShopWindow(creature)
 	end
 
 	--- ##Astral Shaper Rune##
 	if MsgContains(message, "astral shaper rune") then
 		if player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.LastLoreKilled) >= 1 then
-			npcHandler:say("Do you wish to merge your rune parts into an astral shaper rune?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_8")
 			npcHandler:setTopic(playerId, 8)
 		else
-			npcHandler:say("I'm sorry but you lack the needed rune parts.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_9")
 		end
 	end
 
@@ -142,7 +142,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 		end
 		if haveParts then
-			npcHandler:say("As you wish.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_10")
 			player:addItem(24960, 1)
 			npcHandler:removeInteraction(npc, creature)
 		end
@@ -155,111 +155,111 @@ local function creatureSayCallback(npc, creature, type, message)
 	-- Ice Portal
 	if MsgContains(message, "ice portal") then
 		if player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.Tomes) == 1 and player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.FormorgarMinesDoor) == 1 then
-			npcHandler:say("You may pass this portal if you have 50 fish as offering. Do you have the fish with you?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_11")
 			npcHandler:setTopic(playerId, 2)
 		else
-			npcHandler:say("Sorry, you first need to bring my Heavy Old Tomes or do the quest before continuing.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_12")
 		end
 	end
 
 	if MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 then
 		if player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.AccessIce) < 1 and player:getItemCount(3578) >= 50 then
 			player:removeItem(3578, 50)
-			npcHandler:say("Thank you for your offering. You may pass the Portal to the Powers of Ice now.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_13")
 			player:setStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.AccessIce, 1)
 		else
-			npcHandler:say("I'm sorry, you don't have enough fish. Return if you can offer fifty of them.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_14")
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 2 then
-		npcHandler:say("In this case I'm sorry, you may not pass this portal.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_15")
 	end
 
 	-- Holy Portal
 	if MsgContains(message, "holy portal") then
 		if player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.Tomes) == 1 then
-			npcHandler:say("You may pass this portal if you have 50 incantation notes as offering. Do you have the incantation notes with you?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_16")
 			npcHandler:setTopic(playerId, 3)
 		else
-			npcHandler:say("Sorry, first you need to bring my Heavy Old Tomes.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_17")
 		end
 	end
 
 	if MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 3 then
 		if player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.AccessGolden) < 1 and player:getItemCount(18929) >= 50 then
 			player:removeItem(18929, 50)
-			npcHandler:say("Thank you for your offering. You may pass the Portal to the Powers of Holy now.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_18")
 			player:setStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.AccessGolden, 1)
 		else
-			npcHandler:say("I'm sorry, you don't have enough incantation notes. Return if you can offer fifty of them.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_19")
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 3 then
-		npcHandler:say("In this case I'm sorry, you may not pass this portal.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_20")
 	end
 
 	-- Energy Portal
 	if MsgContains(message, "energy portal") then
 		if player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.Tomes) == 1 then
-			npcHandler:say("You may pass this portal if you have 50 marsh stalker feathers as offering. Do you have the marsh stalker feathers with you?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_21")
 			npcHandler:setTopic(playerId, 4)
 		else
-			npcHandler:say("Sorry, first you need to bring my Heavy Old Tomes.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_22")
 		end
 	end
 
 	if MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 4 then
 		if player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.AccessViolet) < 1 and player:getItemCount(17462) >= 50 then
 			player:removeItem(17462, 50)
-			npcHandler:say("Thank you for your offering. You may pass the Portal to the Powers of Energy now.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_23")
 			player:setStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.AccessViolet, 1)
 		else
-			npcHandler:say("I'm sorry, you don't have enough marsh stalker feathers. Return if you can offer fifty of them.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_24")
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 4 then
-		npcHandler:say("In this case I'm sorry, you may not pass this portal.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_25")
 	end
 
 	-- Earth Portal
 	if MsgContains(message, "earth portal") then
 		if player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.Tomes) == 1 then
-			npcHandler:say("You may pass this portal if you have 50 acorns as offering. Do you have the acorns with you?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_26")
 			npcHandler:setTopic(playerId, 5)
 		else
-			npcHandler:say("Sorry, first you need to bring my Heavy Old Tomes.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_27")
 		end
 	end
 
 	if MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 5 then
 		if player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.AccessEarth) < 1 and player:getItemCount(10296) >= 50 then
 			player:removeItem(10296, 50)
-			npcHandler:say("Thank you for your offering. You may pass the Portal to the Powers of Earth now.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_28")
 			player:setStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.AccessEarth, 1)
 		else
-			npcHandler:say("I'm sorry, you don't have enough acorns. Return if you can offer fifty of them.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_29")
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 5 then
-		npcHandler:say("In this case I'm sorry, you may not pass this portal.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_30")
 	end
 
 	-- Death Portal
 	if MsgContains(message, "death portal") then
 		if player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.Tomes) == 1 then
-			npcHandler:say("You may pass this portal if you have 50 pelvis bones as offering. Do you have the pelvis bones with you?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_31")
 			npcHandler:setTopic(playerId, 6)
 		else
-			npcHandler:say("Sorry, first you need to bring my Heavy Old Tomes.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_32")
 		end
 	end
 
 	if MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 6 then
 		if player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.AccessDeath) < 1 and player:getItemCount(11481) >= 50 then
 			player:removeItem(11481, 50)
-			npcHandler:say("Thank you for your offering. You may pass the Portal to the Powers of Death now.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_33")
 			player:setStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.AccessDeath, 1)
 		else
-			npcHandler:say("I'm sorry, you don't have enough pelvis bones. Return if you can offer fifty of them.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_34")
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 6 then
-		npcHandler:say("In this case I'm sorry, you may not pass this portal.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.albinius.say_35")
 	end
 	return true
 end

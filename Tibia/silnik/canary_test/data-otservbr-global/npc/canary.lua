@@ -108,7 +108,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "discord group") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("This the our discord group link: {https://discordapp.com/invite/3NxYnyV}", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.canary.say_1")
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

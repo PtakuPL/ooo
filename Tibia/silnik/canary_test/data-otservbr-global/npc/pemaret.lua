@@ -61,22 +61,22 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "marlin") then
 		if player:getStorageValue(Storage.Quest.U7_8.MarlinTrophy) < 1 then
 			if player:getItemCount(901) > 0 then
-				npcHandler:say("WOW! You have a marlin!! I could make a nice decoration for your wall from it. May I have it?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.pemaret.say_1")
 				npcHandler:setTopic(playerId, 1)
 			end
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 and player:getStorageValue(Storage.Quest.U7_8.MarlinTrophy) < 1 then
 		if player:removeItem(901, 1) then
-			npcHandler:say("Yeah! Now let's see... <fumble fumble> There you go, I hope you like it!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.pemaret.say_2")
 			player:addItem(902, 1)
 			player:setStorageValue(Storage.Quest.U7_8.MarlinTrophy, 1)
 		else
-			npcHandler:say("You don't have the fish.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.pemaret.say_3")
 		end
 		npcHandler:setTopic(playerId, 0)
 	end
 	if MsgContains(message, "no") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say("Then no.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.pemaret.say_4")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

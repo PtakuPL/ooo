@@ -56,10 +56,10 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "slime") or MsgContains(message, "mould") or MsgContains(message, "fungus") or MsgContains(message, "sample") then
 		if getPlayerStorageValue(creature, Storage.Quest.U9_1.ElementalistOutfits.Outfit) < 1 then
-			npcHandler:say("If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.broken_servant_sentry.say_1")
 			npcHandler:setTopic(playerId, 1)
 		elseif getPlayerStorageValue(creature, Storage.Quest.U9_1.ElementalistOutfits.Outfit) == 1 then
-			npcHandler:say("If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.broken_servant_sentry.say_2")
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "cap") or MsgContains(message, "mage") then
@@ -74,7 +74,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			doPlayerAddOutfit(creature, 433, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif getPlayerStorageValue(creature, Storage.Quest.U9_1.ElementalistOutfits.Addon1) == 1 then
-			npcHandler:say("You already have this outfit!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.broken_servant_sentry.say_3")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "staff") or MsgContains(message, "spike") then
@@ -89,20 +89,20 @@ local function creatureSayCallback(npc, creature, type, message)
 			doPlayerAddOutfit(creature, 433, 2)
 			npcHandler:setTopic(playerId, 0)
 		elseif getPlayerStorageValue(creature, Storage.Quest.U9_1.ElementalistOutfits.Addon2) == 1 then
-			npcHandler:say("You already have this outfit!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.broken_servant_sentry.say_4")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("I. Greet. You. Ma-Ma-Ma-ster! Did. You. Bring. Mo-Mo-Mo-M*chhhhrrrk*ore. Samples. For. Me. To-To-To. Analyse-lyse-lyse?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.broken_servant_sentry.say_5")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Thank. I. Will. Start. Analysing. No-No-No-No*chhrrrk*Now.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.broken_servant_sentry.say_6")
 			setPlayerStorageValue(creature, Storage.Quest.U9_1.ElementalistOutfits.Outfit, 1)
 			setPlayerStorageValue(creature, Storage.Quest.U9_1.ElementalistOutfits.Questline, 1) --this for default start of Outfit and Addon Quests
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("I. Greet. You. Ma-Ma-Ma-ster! Did. You. Bring. Mo-Mo-Mo-M*chhhhrrrk*ore. Samples. For. Me. To-To-To. Analyse-lyse-lyse?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.broken_servant_sentry.say_7")
 			npcHandler:setTopic(playerId, 4)
 		elseif (npcHandler:getTopic(playerId) == 4) and getPlayerItemCount(creature, 12601) >= 20 then
 			npcHandler:say({
@@ -115,7 +115,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			doPlayerAddOutfit(creature, 433, 0)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("You do not have all the required items.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.broken_servant_sentry.say_8")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

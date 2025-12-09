@@ -63,7 +63,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "cookie") then
 		if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 31 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.CookieDelivery.Wyda) ~= 1 then
-			npcHandler:say("You brought me a cookie?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyda.say_1")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "mission") or MsgContains(message, "quest") then
@@ -74,7 +74,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "bloodherb") or MsgContains(message, "blood herb") then
 		if player:getStorageValue(Storage.BloodHerbQuest) == 1 then
-			npcHandler:say("Arrr... here we go again.... do you have a #$*§# blood herb for me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyda.say_2")
 			npcHandler:setTopic(playerId, 2)
 		else
 			npcHandler:say({
@@ -86,7 +86,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if not player:removeItem(130, 1) then
-				npcHandler:say("You have no cookie that I'd like.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyda.say_3")
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -98,7 +98,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 
 			npc:getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)
-			npcHandler:say("Well, it's a welcome change from all that gingerbread ... AHHH HOW DARE YOU??? FEEL MY WRATH!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyda.say_4")
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		elseif npcHandler:getTopic(playerId) == 2 then
@@ -108,21 +108,21 @@ local function creatureSayCallback(npc, creature, type, message)
 				local TornTeddyRand = math.random(1, 100)
 				if TornTeddyRand <= 70 then
 					player:addItem(3454, 1) -- witchesbroom
-					npcHandler:say("Thank you -SOOO- much! No, I really mean it! Really! Here, let me give you a reward...", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyda.say_5")
 					npcHandler:setTopic(playerId, 0)
 				else
 					player:addItem(12617, 1) -- torn teddy
-					npcHandler:say("Thank you -SOOO- much! No, I really mean it! Really! Ah, you know what, you can have this old thing...", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyda.say_6")
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:say("No, you don't have any...", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyda.say_7")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 1 or npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("I see.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyda.say_8")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

@@ -80,27 +80,27 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "seeds") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Seeds to give life to strong trees, blooming and proud. The {intruders} robbed us from them.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_weakened_forest_fury.say_1")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "intruders") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("The intruders appeared in the blink of an eye. Out of thin air, as if they came from nowhere. They overrun the glade within ours and drove away what was remaining from us within the day.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_weakened_forest_fury.say_2")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "water") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("The purest water flows through this well. For centuries we concealed it, for other beings to not lay their eyes on it.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_weakened_forest_fury.say_3")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "birds") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Take care, guardian.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_weakened_forest_fury.say_4")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "phials") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Phials for the purest water from our sacred well. They are finely crafted and very fragile. We keep a small supply up here around the well. Probably the only thing the intruders did not care for.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_weakened_forest_fury.say_5")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "cages") and player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.BirdCage) == 1 then
@@ -111,7 +111,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("I already handed a cage to you. If you are in need of another one, you will have to return to me later.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_weakened_forest_fury.say_6")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

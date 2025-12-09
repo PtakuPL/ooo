@@ -103,30 +103,30 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if table.contains({ "yes", "quest", "ok" }, message) then
 		if storeTalkCid[playerId] == 0 then
-			npcHandler:say("By the way, 'quest' is a keyword that many NPCs react to, especially those which have tasks for you. So darling, about that {quest}... are you listening?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zirella.say_1")
 			storeTalkCid[playerId] = 1
 		elseif storeTalkCid[playerId] == 1 then
-			npcHandler:say("Thank you so much for your kindness. I'm an old woman and I desperately need firewood for my oven. Could you please help me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zirella.say_2")
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaQuestLog, 1)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaNpcGreetStorage, 1)
 			storeTalkCid[playerId] = 2
 		elseif storeTalkCid[playerId] == 2 then
-			npcHandler:say("You're such a treasure. In the forest south of here, there are {dead trees} without any leaves. The first thing you have to do is search for one, {okay}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zirella.say_3")
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaQuestLog, 2)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaNpcGreetStorage, 2)
 			storeTalkCid[playerId] = 3
 		elseif storeTalkCid[playerId] == 3 then
-			npcHandler:say("Splendid, once you've found one, 'Use' it to break a branch from it. Did you understand that so far?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zirella.say_4")
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaQuestLog, 3)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaNpcGreetStorage, 3)
 			storeTalkCid[playerId] = 4
 		elseif storeTalkCid[playerId] == 4 then
-			npcHandler:say("Good... so after you broke a branch, please push it here and select 'use with'. That will turn your mouse cursor into crosshairs. Then left-click on my cart. {Alright}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zirella.say_5")
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaQuestLog, 4)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaNpcGreetStorage, 4)
 			storeTalkCid[playerId] = 5
 		elseif storeTalkCid[playerId] == 5 then
-			npcHandler:say("To push the branch, drag and drop it on the grass by holding the left mousebutton and moving the cursor to where you want to throw the branch. Just push it near my cart before you 'Use' it, {alright}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zirella.say_6")
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaQuestLog, 5)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaNpcGreetStorage, 5)
 			storeTalkCid[playerId] = 6
@@ -150,7 +150,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			storeTalkCid[playerId] = nil
 		elseif storeTalkCid[playerId] == 8 then
-			npcHandler:say("Oh, you deserve it. You really have earned some experience! Also, you may enter my little house now and take what's in that chest beside my bed. Good {bye} for now!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zirella.say_7")
 			player:addExperience(50, true)
 			Position(32058, 32266, 6):sendMagicEffect(CONST_ME_TUTORIALARROW)
 			player:getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)
@@ -161,7 +161,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "no") then
 		if storeTalkCid[playerId] == 7 then
-			npcHandler:say("Well then, I hope you find nice and dry branches for me! Good {bye}!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zirella.say_8")
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		end

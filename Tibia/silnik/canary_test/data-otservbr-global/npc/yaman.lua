@@ -58,7 +58,7 @@ local function greetCallback(npc, creature, message)
 	--Checks if the player has completed the quest
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission03) ~= 3 then
 		if not MsgContains(message, "djanni'hah") then
-			npcHandler:say("Shove off, little one! Humans are not welcome here, |PLAYERNAME|!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yaman.say_1")
 			endConversationWithDelay(npcHandler, npc, creature)
 			return false
 		end
@@ -73,7 +73,7 @@ local function greetCallback(npc, creature, message)
 		end
 	end
 
-	npcHandler:say("Be greeted, human |PLAYERNAME|. How can a humble djinn be of service?", npc, creature)
+	NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yaman.say_2")
 	npcHandler:setInteraction(npc, creature)
 
 	return true
@@ -88,23 +88,23 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if table.contains({ "enchanted chicken wing", "boots of haste", "Enchanted Chicken Wing", "Boots of Haste" }, message) then
-		npcHandler:say("Do you want to trade Boots of haste for Enchanted Chicken Wing?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yaman.say_3")
 		npcHandler:setTopic(playerId, 1)
 	elseif table.contains({ "warrior sweat", "warrior helmet", "Warrior Sweat", "Warrior Helmet" }, message) then
-		npcHandler:say("Do you want to trade 4 Warrior Helmet for Warrior Sweat?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yaman.say_4")
 		npcHandler:setTopic(playerId, 2)
 	elseif table.contains({ "fighting spirit", "royal helmet", "Fighting Spirit", "Royal Helmet" }, message) then
-		npcHandler:say("Do you want to trade 2 Royal Helmet for Fighting Spirit", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yaman.say_5")
 		npcHandler:setTopic(playerId, 3)
 	elseif table.contains({ "magic sulphur", "fire sword", "Magic Sulphur", "Fire Sword" }, message) then
-		npcHandler:say("Do you want to trade 3 Fire Sword for Magic Sulphur", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yaman.say_6")
 		npcHandler:setTopic(playerId, 4)
 	elseif table.contains({ "job", "items", "Items", "Job" }, message) then
-		npcHandler:say("I trade Enchanted Chicken Wing for Boots of Haste, Warrior Sweat for 4 Warrior Helmets, Fighting Spirit for 2 Royal Helmet Magic Sulphur for 3 Fire Swords", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yaman.say_7")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "cookie") then
 		if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 31 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.CookieDelivery.Djinn) ~= 1 then
-			npcHandler:say("You brought cookies! How nice of you! Can I have one?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yaman.say_8")
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "yes") then
@@ -118,13 +118,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:getItemCount(trade[npcHandler:getTopic(playerId)].NeedItem) >= trade[npcHandler:getTopic(playerId)].Ncount then
 				player:removeItem(trade[npcHandler:getTopic(playerId)].NeedItem, trade[npcHandler:getTopic(playerId)].Ncount)
 				player:addItem(trade[npcHandler:getTopic(playerId)].GiveItem, trade[npcHandler:getTopic(playerId)].Gcount)
-				return npcHandler:say("Here you are.", npc, creature)
+				return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yaman.say_9")
 			else
-				npcHandler:say("Sorry but you don't have the item.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yaman.say_10")
 			end
 		elseif npcHandler:getTopic(playerId) == 5 then
 			if not player:removeItem(130, 1) then
-				npcHandler:say("You have no cookie that I'd like.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yaman.say_11")
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -135,16 +135,16 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 
 			npc:getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)
-			npcHandler:say("You see, good deeds like this will ... YOU ... YOU SPAWN OF EVIL! I WILL MAKE SURE THE MASTER LEARNS ABOUT THIS!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yaman.say_12")
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) >= 1 and npcHandler:getTopic(playerId) <= 4 then
-			npcHandler:say("Ok then.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yaman.say_13")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
-			npcHandler:say("I see.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yaman.say_14")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end
@@ -156,7 +156,7 @@ local function onTradeRequest(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission03) ~= 3 then
-		npcHandler:say("I'm sorry, but you don't have Malor's permission to trade with me.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yaman.say_15")
 		return false
 	end
 	return true

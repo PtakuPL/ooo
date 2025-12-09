@@ -60,22 +60,22 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "errand") or MsgContains(message, "gold") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheErrand) == 1 then
-			npcHandler:say("Oh, so you brought some gold from Eleonore to me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.charlotta.say_1")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:removeMoneyBank(200) then
-				npcHandler:say("Hmm, it seems that Eleonore does trust you. Perhaps she is even right. However. Since we need some help right now I guess we can't be too picky. Return to Eleonore and tell her the secret password: 'peg leg'. She will tell you more about her problem.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.charlotta.say_2")
 				player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheErrand, 2)
 				npcHandler:setTopic(playerId, 2)
 			else
-				npcHandler:say("You don't have enough...", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.charlotta.say_3")
 			end
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) >= 1 then
-			npcHandler:say("Then no.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.charlotta.say_4")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

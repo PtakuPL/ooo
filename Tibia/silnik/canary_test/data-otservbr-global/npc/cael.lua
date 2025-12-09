@@ -85,34 +85,34 @@ local function creatureSayCallback(npc, creature, type, message)
 		--The first 8 missions of The New Frontier Quest completed to be able to trade 6 Tomes of Knowledge with NPC Cael.
 		if player:getStorageValue(TheNewFrontier.Mission08) == 2 then
 			if player:getStorageValue(TheNewFrontier.TomeofKnowledge) < 1 then --tome1
-				npcHandler:say("Oh! That sounds fascinating. Have you found a Tome of Knowledge for me to read?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_1")
 				npcHandler:setTopic(playerId, 1)
 			elseif player:getStorageValue(TheNewFrontier.TomeofKnowledge) >= 1 and player:getStorageValue(TheNewFrontier.TomeofKnowledge) <= 5 then --tome2 - tome6
-				npcHandler:say("Oh! That sounds fascinating. Have you found a new Tome of Knowledge for me to read?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_2")
 				npcHandler:setTopic(playerId, player:getStorageValue(TheNewFrontier.TomeofKnowledge) + 1)
 			elseif player:getStorageValue(TheNewFrontier.TomeofKnowledge) >= 6 and player:getStorageValue(TheNewFrontier.TomeofKnowledge) <= 11 then --tome7 - tome12
 				--The New Frontier Quest completed to trade more Tomes of Knowledge with NPC Cael.
 				if player:getStorageValue(TheNewFrontier.Mission10[1]) == 2 then
-					npcHandler:say("Oh! That sounds fascinating. Have you found a new Tome of Knowledge for me to read?", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_3")
 					npcHandler:setTopic(playerId, player:getStorageValue(TheNewFrontier.TomeofKnowledge) + 1)
 				else
-					npcHandler:say("I'm sorry I'm busy. Speak with Ongulf to get some missions!", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_4")
 				end
 			elseif player:getStorageValue(TheNewFrontier.TomeofKnowledge) >= 12 then -- more then 12 tomes
-				npcHandler:say("Oh! That sounds fascinating. Have you found a Tome of Knowledge for me to read? I have the feeling though that I can only share some of my experience with you now. Is that alright with you?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_5")
 				npcHandler:setTopic(playerId, 13)
 			end
 		else
-			npcHandler:say("I'm sorry I'm busy. Speak with Ongulf to get some missions!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_6")
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) >= 1 and npcHandler:getTopic(playerId) <= 13 then
 		if player:removeItem(10217, 1) then --remove tome
 			if npcHandler:getTopic(playerId) == 1 then --tome1
-				npcHandler:say("Thank you! I look forward to reading this interesting discovery of yours and learn a few things about {Zao}.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_7")
 				player:setStorageValue(TheNewFrontier.TomeofKnowledge, 1)
 				npcHandler:setTopic(playerId, 21)
 			elseif npcHandler:getTopic(playerId) >= 2 and npcHandler:getTopic(playerId) <= 12 then --tome2 - tome12
-				npcHandler:say("Thank you! I look forward to reading this interesting discovery of yours and learn a few things about {Zao}.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_8")
 				player:setStorageValue(TheNewFrontier.TomeofKnowledge, player:getStorageValue(TheNewFrontier.TomeofKnowledge) + 1)
 				if player:getStorageValue(TheNewFrontier.TomeofKnowledge) == 10 then
 					player:setStorageValue(TheNewFrontier.ZaoPalaceDoors, 1)
@@ -124,52 +124,52 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, player:getStorageValue(TheNewFrontier.TomeofKnowledge) + 20)
 			elseif npcHandler:getTopic(playerId) == 13 then -- more then 12 tomes
 				player:addExperience(5000, true)
-				npcHandler:say("Thank you! I look forward to reading this interesting discovery of yours and learn a few things about {Zao}. Let me share some experience with you.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_9")
 				npcHandler:setTopic(playerId, 33)
 			end
 		else
-			npcHandler:say("You dont have one!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_10")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "zao") then
 		if npcHandler:getTopic(playerId) == 21 then --tome1
-			npcHandler:say("I've learnt more about the {lizard} culture. It's really fascinating.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_11")
 			npcHandler:setTopic(playerId, 40)
 		elseif npcHandler:getTopic(playerId) == 22 then --tome2
-			npcHandler:say("I've learnt more about the {minotaur} culture. It's really fascinating.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_12")
 			npcHandler:setTopic(playerId, 41)
 		elseif npcHandler:getTopic(playerId) == 23 then --tome3
-			npcHandler:say("I've learnt more about the {Draken} culture by now. It's really fascinating.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_13")
 			npcHandler:setTopic(playerId, 42)
 		elseif npcHandler:getTopic(playerId) == 24 then --tome4
-			npcHandler:say("I've learnt something interesting about a certain {food} that the lizardmen apparently prepare.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_14")
 			npcHandler:setTopic(playerId, 43)
 		elseif npcHandler:getTopic(playerId) == 25 then --tome5
-			npcHandler:say("I've learnt something interesting about a city called {Zzaion}.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_15")
 			npcHandler:setTopic(playerId, 44)
 		elseif npcHandler:getTopic(playerId) == 26 then --tome6
-			npcHandler:say("I've learnt a few things about the primitive {human} culture on this continent.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_16")
 			npcHandler:setTopic(playerId, 45)
 		elseif npcHandler:getTopic(playerId) == 27 then --tome7
-			npcHandler:say("I've learnt something interesting about the Zao {steppe}.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_17")
 			npcHandler:setTopic(playerId, 46)
 		elseif npcHandler:getTopic(playerId) == 28 then --tome8
-			npcHandler:say("I've learnt a few things about an illness, or how I prefer to call it, {corruption} of this land.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_18")
 			npcHandler:setTopic(playerId, 47)
 		elseif npcHandler:getTopic(playerId) == 29 then --tome9
-			npcHandler:say("I've learnt something interesting about the Draken {origin}.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_19")
 			npcHandler:setTopic(playerId, 48)
 		elseif npcHandler:getTopic(playerId) == 30 then --tome10
-			npcHandler:say("This book actually IS about Zao. Not about the continent, but about the mythical {founder} of the lizard dynasty.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_20")
 			npcHandler:setTopic(playerId, 49)
 		elseif npcHandler:getTopic(playerId) == 31 then --tome11
-			npcHandler:say("I've learnt something interesting about {dragons} and their symbolism.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_21")
 			npcHandler:setTopic(playerId, 50)
 		elseif npcHandler:getTopic(playerId) == 32 then --tome12
-			npcHandler:say("The last tome contained a lot of information about status symbols and insignia - such as {thrones} - and reveals some of the power structures in Zao.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_22")
 			npcHandler:setTopic(playerId, 51)
 		elseif npcHandler:getTopic(playerId) == 33 then --more than tome12
-			npcHandler:say("I've learnt many things from your books. Still, I guess that's just a fragment of what I could still discover about this interesting continent.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_23")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "lizard") then --tome1
@@ -312,41 +312,41 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "lantern") then
 		if player:getStorageValue(TheNewFrontier.TomeofKnowledge) >= 11 then
-			npcHandler:say("Have you brought me a red lantern for a dragon statue?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_24")
 			npcHandler:setTopic(playerId, 65)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 65 then
 		if player:removeItem(10289, 1) then
 			player:addItem(10212, 1)
-			npcHandler:say("Let's put this little lantern here.. there you go. I wrap it up for you, just unwrap it in your house again!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_25")
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("You don't have a red lantern.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_26")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "cloth") then
 		if player:getStorageValue(TheNewFrontier.TomeofKnowledge) >= 12 then
-			npcHandler:say("Have you brought me a piece of red cloth? I can make that throne for you if you want. But remember, I won't do that all the time - so try and don't destroy it, okay?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_27")
 			npcHandler:setTopic(playerId, 66)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 66 then
 		if player:removeItem(5911, 1) then
 			player:addItem(10286, 1)
-			npcHandler:say("Let's put this cloth over the seat.. there you go. I wrap it up for you, just unwrap it in your house again!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_28")
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("You don't have a red cloth.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_29")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "crest") then
 		if player:hasOutfit(player:getSex() == PLAYERSEX_FEMALE and 336 or 335) and player:getItemCount(10199) > 0 then
-			npcHandler:say("Oh, wow! Now THAT is an interesting relic! Can I have that serpent crest?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_30")
 			npcHandler:setTopic(playerId, 60)
 		elseif player:hasOutfit(player:getSex() == PLAYERSEX_FEMALE and 336 or 335) and player:getItemCount(10198) > 0 then
-			npcHandler:say("Oh, wow! Now THAT is an interesting relic! Can I have that tribal crest?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_31")
 			npcHandler:setTopic(playerId, 61)
 		else
-			npcHandler:say("You don't have a Warmaster Outfit or the crest to get the Addons.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_32")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) >= 60 and npcHandler:getTopic(playerId) <= 61 then
@@ -355,10 +355,10 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addOutfitAddon(335, 1)
 				player:addOutfitAddon(336, 1)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-				npcHandler:say("Thank you! Let me reward you with something I stumbled across recently and which might fit your warmaster outfit perfectly.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_33")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have a crest or already have this Outfitaddon.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_34")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 61 then
@@ -366,10 +366,10 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addOutfitAddon(335, 2)
 				player:addOutfitAddon(336, 2)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-				npcHandler:say("Thank you! Let me reward you with something I stumbled across recently and which might fit your warmaster outfit perfectly.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_35")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have a crest or already have this Outfitaddon.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_36")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
@@ -382,7 +382,7 @@ local function onTradeRequest(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(TheNewFrontier.TomeofKnowledge) < 6 then
-		npcHandler:say("Sorry, I don't have items to trade now.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_37")
 		return false
 	end
 

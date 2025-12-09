@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-09 01:09:28 UTC  
+> **Aktualizacja:** 2025-12-09 02:27:40 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **23** | ↑ |
-| ⏭️ Plików wykluczonych | **4912** | - |
-| 🔑 Kluczy i18n | **42410** | ↑ |
+| 📁 Plików przetworzonych | **167** | ↑ |
+| ⏭️ Plików wykluczonych | **4925** | - |
+| 🔑 Kluczy i18n | **45673** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#2** | - |
+| 🔄 Cykl | **#7** | - |
 
 ---
 
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 4409/5000 (88%) | 5000 |
+| 🧙 NPC Dialogs | ✅ | 7672/5000 (153%) | 5000 |
 | 📜 Lua Scripts | 🔄 | 713/1000 (71%) | 1000 |
 | 🎒 Items Database | 🔄 | 36972/40000 (92%) | 40000 |
 | 👹 Monsters | 🔄 | 100/500 (20%) | 500 |
@@ -78,15 +78,15 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #2` |
-| **Szczegóły** | NPC:4409 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-09 01:09:05 |
+| **Plik** | `Cykl #7` |
+| **Szczegóły** | NPC:7672 Scripts:713 Items:36972 |
+| **Ostatnia aktualizacja** | 2025-12-09 02:26:58 |
 
 ### 📈 Statystyki sesji
 
 | Metryka | Wartość |
 |---------|----------|
-| Plików przetworzonych | 29 |
+| Plików przetworzonych | 471 |
 | Kluczy wyciągniętych | 0 |
 | Błędów | 0 |
 | Napraw zastosowanych | 0 |
@@ -100,7 +100,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 4409 |
+| 🔑 Kluczy | 7672 |
 | 📊 Status | ✅ Zakończone |
 | 📂 Plików | ~877 |
 
@@ -124,7 +124,7 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #2 |
+| 🔄 Cykl | #7 |
 
 ### 📁 Podkatalogi - Postęp
 
@@ -149,16 +149,16 @@ selfSay("text")
 
 | Plik | Czas | Status |
 |------|------|--------|
-| `rata_mari.lua` | 01:00:16 | ✅ |
-| `fenbala.lua` | 01:00:16 | ✅ |
-| `gnomargery.lua` | 01:00:16 | ✅ |
-| `fa_hradin.lua` | 01:00:16 | ✅ |
-| `a_dragon_mother.lua` | 01:00:16 | ✅ |
+| `arito.lua` | 02:26:30 | ✅ |
+| `captain_jack_rat.lua` | 02:26:32 | ✅ |
+| `charlotta.lua` | 02:26:33 | ✅ |
+| `gnome_trooper.lua` | 02:26:34 | ✅ |
+| `lardoc_bashsmite.lua` | 02:26:40 | ✅ |
 
 ### 💻 Przykład kodu (ostatni plik)
 
 ```lua
-		npcHandler:say("I'm aware what you are looking for. Usually I would rather dev
+			npcHandler:say({
 ```
 
 **Wzorce ekstrakcji:**
@@ -225,7 +225,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 1876475, Cykl #2 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 2621132, Cykl #7 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

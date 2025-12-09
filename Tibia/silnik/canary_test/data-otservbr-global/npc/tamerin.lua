@@ -80,7 +80,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 32 then
-			npcHandler:say("You have kept your promise. Now, it's time to fulfil my part of the bargain. What kind of animals shall I raise? {Warbeasts} or {cattle}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamerin.say_1")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "animal cure") then
@@ -88,39 +88,39 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 31)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.MorikSummon, 0)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission05, 4) -- StorageValue for Questlog "Mission 05: Food or Fight"
-			npcHandler:say("Thank you very much. As I said, as soon as you have helped me to solve both of my problems, we will talk about your mission. Have you killed {morik}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamerin.say_2")
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("Come back when you have the cure.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamerin.say_3")
 		end
 	elseif MsgContains(message, "cattle") then
 		if npcHandler:getTopic(playerId) == 2 then
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.TamerinStatus, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission05, 6) -- StorageValue for Questlog "Mission 05: Food or Fight"
-			npcHandler:say("So be it!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamerin.say_4")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "warbeast") then
 		if npcHandler:getTopic(playerId) == 2 then
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.TamerinStatus, 2)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission05, 7) -- StorageValue for Questlog "Mission 05: Food or Fight"
-			npcHandler:say("So be it!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamerin.say_5")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "morik") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 31 and player:removeItem(8820, 1) then
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 32)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission05, 5) -- StorageValue for Questlog "Mission 05: Food or Fight"
-			npcHandler:say("So he finally got what he deserved. As I said, as soon as you have helped me to solve both of my problems, we will talk about your {mission}.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamerin.say_6")
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("Come back when you got rid with Morik.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamerin.say_7")
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 30)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission05, 3) -- StorageValue for Questlog "Mission 05: Food or Fight"
-			npcHandler:say("I ask you for two things! For one thing, I need an animal cure and for another thing, I ask you to get rid of the gladiator Morik for me.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tamerin.say_8")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

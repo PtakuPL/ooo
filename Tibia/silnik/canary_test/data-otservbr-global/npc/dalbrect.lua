@@ -60,16 +60,16 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "brooch") then
 		if player:getStorageValue(Storage.Quest.U7_24.TheWhiteRavenMonastery.Passage) == 1 then
-			npcHandler:say("You have recovered my brooch! I shall forever be in your debt, my friend!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dalbrect.say_1")
 			return true
 		end
 
-		npcHandler:say("What? You want me to examine a brooch?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dalbrect.say_2")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:getItemCount(3205) == 0 then
-				npcHandler:say("What are you talking about? I am too poor to be interested in jewelry.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dalbrect.say_3")
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -84,7 +84,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			npcHandler:setTopic(playerId, 0)
 			if not player:removeItem(3205, 1) then
-				npcHandler:say("I should have known better than to ask for an act of kindness in this cruel, selfish, world!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dalbrect.say_4")
 				return true
 			end
 
@@ -99,9 +99,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Then stop being a fool. I am poor and I have to work the whole day through!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dalbrect.say_5")
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("I should have known better than to ask for an act of kindness in this cruel, selfish, world!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dalbrect.say_6")
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

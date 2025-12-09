@@ -56,14 +56,14 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "trip") or MsgContains(message, "passage") then
 		if player:getStorageValue(TheNewFrontier.Questline) >= 24 then
-			npcHandler:say("You want trip to Izzle of Zzao?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zurak_arena.say_1")
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:say("You need permission to travel to.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zurak_arena.say_2")
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("It'zz done your travel to.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zurak_arena.say_3")
 			local destination = Position(33158, 31227, 7)
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			player:teleportTo(destination)
@@ -72,11 +72,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Zzoftzzkinzz zzo full of fear.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zurak_arena.say_4")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "hurry") or MsgContains(message, "job") then
-		npcHandler:say("Me zzimple ferryman. I arrange {trip} to Zzao.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zurak_arena.say_5")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

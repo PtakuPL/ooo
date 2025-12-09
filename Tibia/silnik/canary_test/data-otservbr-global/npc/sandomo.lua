@@ -96,7 +96,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "gratitude") then
 		npcHandler:setTopic(playerId, 3)
-		npcHandler:say("Oh, so you want a reward, hm? Well... let's see. What did you do for us - helping Mortis with his {repairs} and defended him?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.say_1")
 	elseif MsgContains(message, "repairs") then
 		if npcHandler:getTopic(playerId) == 3 then
 			if player:getInquisitionGold() > 0 then
@@ -108,7 +108,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				}, npc, creature)
 			else
 				npcHandler:setTopic(playerId, nil)
-				npcHandler:say("Come back after you have done at least one of the tasks I talked you about.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.say_2")
 			end
 		end
 	elseif npcHandler:getTopic(playerId) == 4 then
@@ -137,7 +137,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		if v > 0 then
 			npcHandler:say("You have " .. v .. " inquisition gold registered in my book.", npc, creature)
 		else
-			npcHandler:say("I do not see inquisition gold registered in my book from you.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.say_4")
 		end
 	elseif MsgContains(message, "trade") then
 		local v = player:getStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Gold_Record)
@@ -146,12 +146,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:say("Ah yes, you currently have " .. v .. " of righteously earned inquisition gold in my book. 100 inquisition gold equals one cluster. How many clusters do you want in exchange?", npc, creature)
 		else
 			npcHandler:setTopic(playerId, nil)
-			npcHandler:say("You do not seem to have enough inquisition gold yet to trade for clusters, as it's registered in my book.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.say_6")
 		end
 	elseif npcHandler:getTopic(playerId) == 6 then
 		local v = tonumber(message)
 		if (v == nil) or (v < 1) or (math.floor(v) ~= v) then
-			return npcHandler:say("You should tell me a real number.", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.say_7")
 		end
 
 		local max = math.floor(player:getStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Gold_Record) / 100)
@@ -166,9 +166,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "bucket") or MsgContains(message, "supplies") then
-		npcHandler:say("Head to brother Maun if you are in need of basic supplies. He will help you - for a small fee.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.say_9")
 	elseif MsgContains(message, "maun") then
-		npcHandler:say("Brother Maun is a valuable member of the Inquisition. He will help you out with supplies. Provided you can actually compensate of course.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.say_10")
 	end
 	return true
 end

@@ -75,7 +75,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Very nice, there you go! Just bring me the printout from the probe after deploying it! You can request a new probing {device} or a new {detector} if you lose it - but it takes some time for me to get a new one ready so be careful with that stuff.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.say_1")
 			player:addItem(21192, 1)
 			player:addItem(21208, 1)
 			player:setStorageValue(Storage.Quest.U10_50.OramondQuest.Probing.Mission, 1)
@@ -85,10 +85,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
-			npcHandler:say("Hey, let's try to be reasonable here, alright? That's a bit too much for what you did, isn't it? It may seem that way but the number of votes I can offer isn't limitless.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.say_2")
 			npcHandler:setTopic(playerId, 6)
 		elseif npcHandler:getTopic(playerId) == 8 then
-			npcHandler:say("Good, you just gained 1 genuine votes in the magistrate!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.say_3")
 			player:setStorageValue(Storage.Quest.U10_50.OramondQuest.Probing.Mission, -1)
 			local currentVotingPoints = player:getStorageValue(Storage.Quest.U10_50.OramondQuest.VotingPoints)
 			if currentVotingPoints == -1 then
@@ -98,7 +98,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 9 then
-			npcHandler:say("Alright, there you go - please, try to be more careful with my equipment next time!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.say_4")
 			player:addItem(21192, 1)
 			player:addItem(21208, 1)
 			player:setStorageValue(Storage.Quest.U10_50.OramondQuest.Probing.MonoDetector, os.time() + 30 * 60)
@@ -123,20 +123,20 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "exchange") then
 		if npcHandler:getTopic(playerId) == 6 then
-			npcHandler:say("Well, let's see, you helped me 1 times before exchanging any votes - how many votes do you want me to give you in exchange?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.say_5")
 			npcHandler:setTopic(playerId, 7)
 		elseif player:getStorageValue(Storage.Quest.U10_50.OramondQuest.Probing.Mission) == 3 then
-			npcHandler:say("Well, let's see, you helped me 1 times before exchanging any votes - how many votes do you want me to give you in {exchange}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.say_6")
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "2") then
 		if npcHandler:getTopic(playerId) == 4 then
-			npcHandler:say("Alright then, that's 2 vote(s) you want - I won't take them back, are you sure?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.say_7")
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "1") then
 		if npcHandler:getTopic(playerId) == 7 then
-			npcHandler:say("Alright then, that's 1 vote(s) you want - I won't take them back, are you sure?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.say_8")
 			npcHandler:setTopic(playerId, 8)
 		end
 	elseif MsgContains(message, "mono detector") then
@@ -147,7 +147,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 9)
 		else
-			npcHandler:say("You must wait until the detector is ready again.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.doubleday.say_9")
 		end
 	end
 

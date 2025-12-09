@@ -79,12 +79,12 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "pumin") then
 		if player:getStorageValue(Storage.Quest.U7_9.ThePitsOfInferno.ThronePumin) == 1 then
-			npcHandler:say("I'm not sure if you know what you are doing but anyway. Your name is?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_dead_bureaucrat4.say_1")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, player:getName()) then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Alright |PLAYERNAME|. Vocation?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_dead_bureaucrat4.say_2")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, Vocation(vocationId):getName()) then
@@ -95,11 +95,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "356") then
 		if npcHandler:getTopic(playerId) == 3 then
 			player:setStorageValue(Storage.Quest.U7_9.ThePitsOfInferno.ThronePumin, 2)
-			npcHandler:say("Sorry, you need Form 145 to get Form 356. Come back when you have it", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_dead_bureaucrat4.say_3")
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U7_9.ThePitsOfInferno.ThronePumin) == 7 then
 			player:setStorageValue(Storage.Quest.U7_9.ThePitsOfInferno.ThronePumin, 8)
-			npcHandler:say("You are better than I thought! Congratulations, here you are: Form 356!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_dead_bureaucrat4.say_4")
 		end
 	end
 	return true

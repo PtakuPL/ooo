@@ -68,87 +68,87 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "test") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission04) == 5 then
-			npcHandler:say("I hope you learnt your role! I'll tell you a line from the script and you'll have to answer with the corresponding line! Ready?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_1")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("How dare you? Are you mad? I hold the princess hostage and you drop your weapons. You're all lost!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_2")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Too late puny knight. You can't stop my master plan anymore!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_3")
 			npcHandler:setTopic(playerId, 4)
 		elseif npcHandler:getTopic(playerId) == 5 then
-			npcHandler:say("What's this? Behind the doctor?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_4")
 			npcHandler:setTopic(playerId, 6)
 		elseif npcHandler:getTopic(playerId) == 7 then
-			npcHandler:say("Haha! You may not fear for your own life, but how about hers!?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_5")
 			npcHandler:setTopic(playerId, 8)
 		elseif npcHandler:getTopic(playerId) == 9 then
-			npcHandler:say("Grrr!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_6")
 			npcHandler:setTopic(playerId, 10)
 		elseif npcHandler:getTopic(playerId) == 11 then
-			npcHandler:say("You're such a monster!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_7")
 			npcHandler:setTopic(playerId, 12)
 		elseif npcHandler:getTopic(playerId) == 13 then
-			npcHandler:say("Ah well, I think you passed the test! Here is your disguise kit! Now get lost, fate awaits me!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_8")
 			player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission04, 6)
 			player:addItem(7865, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "I don't think so, dear doctor!") then
-			npcHandler:say("Ok, ok. You've got this one right! Ready for the next one?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_9")
 			npcHandler:setTopic(playerId, 3)
 		else
-			npcHandler:say("No no no! That is not correct!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_10")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 4 then
 		if MsgContains(message, "Watch out! It's a trap!") then
-			npcHandler:say("Ok, ok. You've got this one right! Ready for the next one?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_11")
 			npcHandler:setTopic(playerId, 5)
 		else
-			npcHandler:say("No no no! That is not correct!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_12")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 6 then
 		if MsgContains(message, "Look! It's Lucky, the wonder dog!") then
-			npcHandler:say("Ok, ok. You've got this one right! Ready for the next one?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_13")
 			npcHandler:setTopic(playerId, 7)
 		else
-			npcHandler:say("No no no! That is not correct!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_14")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 8 then
 		if MsgContains(message, "Oh no! Look! It's Princess Buttercup! He's holding her hostage!") then
-			npcHandler:say("Ok, ok. You've got this one right! Ready for the next one?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_15")
 			npcHandler:setTopic(playerId, 9)
 		else
-			npcHandler:say("No no no! That is not correct!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_16")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 10 then
 		if MsgContains(message, "Ahhhhhh!") then
-			npcHandler:say("Ok, ok. You've got this one right! Ready for the next one?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_17")
 			npcHandler:setTopic(playerId, 11)
 		else
-			npcHandler:say("No no no! That is not correct!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_18")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 12 then
 		if MsgContains(message, "Hahaha! Now drop your weapons or else...") then
-			npcHandler:say("Ok, ok. You've got this one right! Ready for the next one?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_19")
 			npcHandler:setTopic(playerId, 13)
 		else
-			npcHandler:say("No no no! That is not correct!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_20")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end
 
 	-- Additional dialogue options related to outfits
 	if MsgContains(message, "outfit") or MsgContains(message, "addon") or MsgContains(message, "royal") then
-		npcHandler:say("In exchange for a generous donation of gold and silver tokens, I can offer you a special outfit. Would you like to donate?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_21")
 		npcHandler:setTopic(playerId, 14)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 14 then
@@ -159,70 +159,70 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 15)
 		elseif npcHandler:getTopic(playerId) == 15 then
-			npcHandler:say("If you haven't made up your mind, please come back when you are ready.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_22")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 16 then
 			if player:getStorageValue(Storage.OutfitQuest.RoyalCostumeOutfit) < 1 then
 				if player:removeItem(22516, 15000) and player:removeItem(22721, 12500) then
-					npcHandler:say("Take this armor as a token of great gratitude. Let us forever remember this day, my friend!", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_23")
 					player:addOutfit(1457)
 					player:addOutfit(1456)
 					player:getPosition():sendMagicEffect(171)
 					player:setStorageValue(Storage.OutfitQuest.RoyalCostumeOutfit, 1)
 				else
-					npcHandler:say("You do not have enough tokens to donate that amount.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_24")
 				end
 			else
-				npcHandler:say("You already have that addon.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_25")
 			end
 			npcHandler:setTopic(playerId, 15)
 		elseif npcHandler:getTopic(playerId) == 17 then
 			if player:getStorageValue(Storage.OutfitQuest.RoyalCostumeOutfit) == 1 then
 				if player:getStorageValue(Storage.OutfitQuest.RoyalCostumeOutfit) < 2 then
 					if player:removeItem(22516, 7500) and player:removeItem(22721, 6250) then
-						npcHandler:say("Take this shield as a token of great gratitude. Let us forever remember this day, my friend.", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_26")
 						player:addOutfitAddon(1457, 1)
 						player:addOutfitAddon(1456, 1)
 						player:getPosition():sendMagicEffect(171)
 						player:setStorageValue(Storage.OutfitQuest.RoyalCostumeOutfit, 2)
 					else
-						npcHandler:say("You do not have enough tokens to donate that amount.", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_27")
 					end
 				else
-					npcHandler:say("You already have that outfit.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_28")
 				end
 			else
-				npcHandler:say("You need to donate the {armor} outfit first.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_29")
 			end
 			npcHandler:setTopic(playerId, 15)
 		elseif npcHandler:getTopic(playerId) == 18 then
 			if player:getStorageValue(Storage.OutfitQuest.RoyalCostumeOutfit) == 2 then
 				if player:getStorageValue(Storage.OutfitQuest.RoyalCostumeOutfit) < 3 then
 					if player:removeItem(22516, 7500) and player:removeItem(22721, 6250) then
-						npcHandler:say("Take this crown as a token of great gratitude. Let us forever remember this day, my friend.", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_30")
 						player:addOutfitAddon(1457, 2)
 						player:addOutfitAddon(1456, 2)
 						player:getPosition():sendMagicEffect(171)
 						player:setStorageValue(Storage.OutfitQuest.RoyalCostumeOutfit, 3)
 					else
-						npcHandler:say("You do not have enough tokens to donate that amount.", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_31")
 					end
 				else
-					npcHandler:say("You already have that outfit.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_32")
 				end
 			else
-				npcHandler:say("You need to donate the {shield} addon first.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_33")
 			end
 			npcHandler:setTopic(playerId, 15)
 		end
 	elseif MsgContains(message, "armor") and npcHandler:getTopic(playerId) == 15 then
-		npcHandler:say("Would you like to donate 15,000 silver tokens and 12,500 gold tokens for a unique red armor?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_34")
 		npcHandler:setTopic(playerId, 16)
 	elseif MsgContains(message, "shield") and npcHandler:getTopic(playerId) == 15 then
-		npcHandler:say("Would you like to donate 7,500 silver tokens and 6,250 gold tokens for a unique shield?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_35")
 		npcHandler:setTopic(playerId, 17)
 	elseif MsgContains(message, "crown") and npcHandler:getTopic(playerId) == 15 then
-		npcHandler:say("Would you like to donate 7,500 silver tokens and 6,250 gold tokens for a unique crown?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.percybald.say_36")
 		npcHandler:setTopic(playerId, 18)
 	end
 

@@ -62,14 +62,14 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	-- uth'lokr (Bast Skirts)
 	if MsgContains(message, "uth'lokr") and player:getStorageValue(Storage.Quest.U7_8.FriendsandTraders.TheSweatyCyclops) < 1 then
-		npcHandler:say("Firy steel it is. Need green ones' breath to melt. Or red even better. Me can make from shield. Lil' one want to trade?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_1")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Wait. Me work no cheap is. Do favour for me first, yes?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_2")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Me need gift for woman. We dance, so me want to give her bast skirt. But she big is. So I need many to make big one. Bring three okay? Me wait.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_3")
 			if player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.DefaultStart) ~= 1 then
 				player:setStorageValue(Storage.Quest.U7_8.FriendsAndTraders.DefaultStart, 1)
 			end
@@ -77,30 +77,30 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:removeItem(3560, 3) then
-				npcHandler:say("Good good! Woman happy will be. Now me happy too and help you.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_4")
 				player:setStorageValue(Storage.Quest.U7_8.FriendsandTraders.TheSweatyCyclops, 2)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("Lil' one bring three bast skirts.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_5")
 				npcHandler:setTopic(playerId, 3)
 			end
 		end
 	elseif MsgContains(message, "bast skirt") and player:getStorageValue(Storage.Quest.U7_8.FriendsandTraders.TheSweatyCyclops) == 1 then
 		if npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Lil' one bring three bast skirts?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_6")
 			npcHandler:setTopic(playerId, 4)
 		end
 	end
 	-- uth'lokr (Bast Skirts)
 	if MsgContains(message, "uth'lokr") and player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheSweatyCyclops) < 1 then
-		npcHandler:say("Firy steel it is. Need green ones' breath to melt. Or red even better. Me can make from shield. Lil' one want to trade?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_7")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Wait. Me work no cheap is. Do favour for me first, yes?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_8")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Me need gift for woman. We dance, so me want to give her bast skirt. But she big is. So I need many to make big one. Bring three okay? Me wait.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_9")
 			if player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.DefaultStart) ~= 1 then
 				player:setStorageValue(Storage.Quest.U7_8.FriendsAndTraders.DefaultStart, 1)
 			end
@@ -108,28 +108,28 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:removeItem(3560, 3) then
-				npcHandler:say("Good good! Woman happy will be. Now me happy too and help you.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_10")
 				player:setStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheSweatyCyclops, 2)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("Lil' one bring three bast skirts.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_11")
 				npcHandler:setTopic(playerId, 3)
 			end
 		end
 	elseif MsgContains(message, "bast skirt") and player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheSweatyCyclops) == 1 then
 		if npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Lil' one bring three bast skirts?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_12")
 			npcHandler:setTopic(playerId, 4)
 		end
 	end
 
 	-- Uth'kean (Crown Armor - Piece of Royal Steel)
 	if MsgContains(message, "uth'kean") and player:getStorageValue(Storage.Quest.U7_8.FriendsandTraders.TheSweatyCyclops) == 2 then
-		npcHandler:say("Very noble. Shiny. Me like. But breaks so fast. Me can make from shiny armour. Lil' one want to trade?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_13")
 		npcHandler:setTopic(playerId, 5)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 5 then
 		if player:removeItem(3381, 1) then
-			npcHandler:say("Cling clang!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_14")
 			player:addItem(5887, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
@@ -137,11 +137,11 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	-- uth'lokr (Dragon Shield - Piece of Draconian Steel)
 	if MsgContains(message, "uth'lokr") and player:getStorageValue(Storage.Quest.U7_8.FriendsandTraders.TheSweatyCyclops) == 2 then
-		npcHandler:say("Firy steel it is. Need green ones' breath to melt. Or red even better. Me can make from shield. Lil' one want to trade?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_15")
 		npcHandler:setTopic(playerId, 6)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 6 then
 		if player:removeItem(3416, 1) then
-			npcHandler:say("Cling clang!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_16")
 			player:addItem(5889, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
@@ -149,11 +149,11 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	-- za'ralator (Devil Helmet - Piece of Hell Steel)
 	if MsgContains(message, "za'ralator") and player:getStorageValue(Storage.Quest.U7_8.FriendsandTraders.TheSweatyCyclops) == 2 then
-		npcHandler:say("Hellsteel is. Cursed and evil. Dangerous to work with. Me can make from evil helmet. Lil' one want to trade?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_17")
 		npcHandler:setTopic(playerId, 7)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 7 then
 		if player:removeItem(3356, 1) then
-			npcHandler:say("Cling clang!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_18")
 			player:addItem(5888, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
@@ -161,11 +161,11 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	-- uth'prta (Giant Sword - Huge Chunk of Crude Iron)
 	if MsgContains(message, "uth'prta") and player:getStorageValue(Storage.Quest.U7_8.FriendsandTraders.TheSweatyCyclops) == 2 then
-		npcHandler:say("Good iron is. Me friends use it much for fight. Me can make from weapon. Lil' one want to trade?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_19")
 		npcHandler:setTopic(playerId, 8)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 8 then
 		if player:removeItem(3281, 1) then
-			npcHandler:say("Cling clang!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_20")
 			player:addItem(5892, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
@@ -173,7 +173,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	-- soul orb (soul orb - Infernal Bolts)
 	if MsgContains(message, "soul orb") and player:getStorageValue(Storage.Quest.U7_8.FriendsandTraders.TheSweatyCyclops) == 2 then
-		npcHandler:say("Uh. Me can make some nasty lil' bolt from soul orbs. Lil' one want to trade all?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_21")
 		npcHandler:setTopic(playerId, 9)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 9 then
 		if player:getItemCount(5944) > 0 then
@@ -182,11 +182,11 @@ local function creatureSayCallback(npc, creature, type, message)
 				if math.random(100) <= 1 then
 					player:addItem(6528, 6)
 					player:removeItem(5944, 1)
-					npcHandler:say("Cling clang! Me done good work today! Li'l one gets double bolts!", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_22")
 				else
 					player:addItem(6528, 3)
 					player:removeItem(5944, 1)
-					npcHandler:say("Cling clang!", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_sweaty_cyclops.say_23")
 				end
 			end
 			npcHandler:setTopic(playerId, 0)

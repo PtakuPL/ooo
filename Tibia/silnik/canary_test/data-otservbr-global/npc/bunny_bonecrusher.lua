@@ -68,16 +68,16 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_1.TowerDefenceQuest.Questline) == 4 then
-			npcHandler:say("Alright, you delivered the parcel. So what is the password Thanita told you?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bunny_bonecrusher.say_1")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 and MsgContains(message, "yes") then
-		npcHandler:say("I am not sure if I should be glad now or not but anyway ... you will get a password so I will know if you just threw it away or actually delivered it. Here is the parcel. See you ....or not.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bunny_bonecrusher.say_2")
 		player:addItem(140, 1)
 		player:setStorageValue(Storage.Quest.U8_1.TowerDefenceQuest.Questline, 1)
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 2 and MsgContains(message, "password*") then
-		npcHandler:say("That's right. Here is your reward some elementary arrows. You did pretty well on your mission!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.bunny_bonecrusher.say_3")
 		player:addItem(762, 50)
 		player:addItem(774, 50)
 		player:addItem(763, 50)

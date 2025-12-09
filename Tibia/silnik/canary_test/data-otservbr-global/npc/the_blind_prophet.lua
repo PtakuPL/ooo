@@ -79,22 +79,22 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "transport") or MsgContains(message, "passage") then
-		npcHandler:say("You want me to transport you to forbidden land?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_blind_prophet.say_13")
 		npcHandler:setTopic(playerId, 1)
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
 			local questlineValue = player:getStorageValue(Storage.Quest.U7_6.TheApeCity.Questline)
 			if questlineValue >= 15 then
-				npcHandler:say("Take care!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_blind_prophet.say_14")
 				local destination = Position(33025, 32580, 6)
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				player:teleportTo(destination)
 				destination:sendMagicEffect(CONST_ME_TELEPORT)
 			else
-				npcHandler:say("You are not worthy to be transported there yet.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_blind_prophet.say_15")
 			end
 		elseif MsgContains(message, "no") then
-			npcHandler:say("Wise decision maybe.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_blind_prophet.say_16")
 		end
 	end
 	return true

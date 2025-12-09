@@ -60,10 +60,10 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission01) == 2 and player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission02) == 1 and player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Door) == 1 then
-			npcHandler:say("So I guess you are the one that the magistrate is sending to look after us, eh? ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_beggar_king.say_1")
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:say("You need some quests then come and talk with me again.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_beggar_king.say_2")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") then
@@ -76,12 +76,12 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "something") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Yeah. No one has seen it and lived to tell the tale. People are missing and sometimes there are {traces} of blood or someone heard a scream, but that's all. We have no idea if the killer is a man or a beast, but there is something out there", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_beggar_king.say_3")
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "traces") then
 		if npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Some of the more daring of us tried to follow the tracks that were left, but they always lost the trail close to the {abandoned sewers}, in the east of the sewer system.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_beggar_king.say_4")
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "abandoned sewers") then

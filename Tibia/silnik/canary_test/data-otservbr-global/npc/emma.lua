@@ -61,56 +61,56 @@ local function creatureSayCallback(npc, creature, type, message)
 		if npcHandler:getTopic(playerId) == 1 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 1)
 			player:addAchievement("Secret Agent")
-			npcHandler:say("I am still a bit sceptical, but well, welcome to the girls brigade.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_1")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if player:removeItem(648, 1) then
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.CGBMission01, 2)
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 3)
-				npcHandler:say("How unnecessarily complicated, but that's the way those Thaians are. In the end we got what we wanted and they can't do anything about it.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_2")
 			else
-				npcHandler:say("Bring me the spellbook.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_3")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:removeItem(652, 1) then
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.CGBMission02, 2)
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 5)
-				npcHandler:say("I think the druids will be pleased to hear that the immediate threat has been averted.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_4")
 			else
-				npcHandler:say("Bring me the heart as proof.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_5")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.CGBMission03, 3)
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 7)
-			npcHandler:say("Great! This blow strikes them where it hurts most: profit.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_6")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
 			if player:removeItem(399, 1) then
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.CGBMission04, 2)
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 9)
-				npcHandler:say("I hope our craftsmen can do something with this stuff. For me it makes hardly any sense.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_7")
 			else
-				npcHandler:say("You need to bring me those plans!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_8")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 6 then
 			if player:removeItem(400, 1) then
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.CGBMission05, 2)
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 11)
-				npcHandler:say("I will have this correspondence examined by our specialists. I am sure they are quite revealing.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_9")
 			else
-				npcHandler:say("Bring me back some hints or something!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_10")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 7 then
 			if player:removeItem(401, 1) then
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.CGBMission06, 2)
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 13)
-				npcHandler:say("I hope this old book will do those researches any good. Personally I see little use to proof some bloodlines after we cut all ties to Thais.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_11")
 			else
-				npcHandler:say("You need to bring us that book of family trees!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_12")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 8 then
@@ -125,12 +125,12 @@ local function creatureSayCallback(npc, creature, type, message)
 					"Take this token of gratitude. You will know when to use it!",
 				}, npc, creature)
 			else
-				npcHandler:say("Please bring me proof of the mad technomancers defeat!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_13")
 			end
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
-		npcHandler:say("As you wish.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_14")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "join") then
 		if player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) < 1 then
@@ -141,11 +141,11 @@ local function creatureSayCallback(npc, creature, type, message)
 					creature
 				)
 			else
-				npcHandler:say("A man in the girls brigade? Come on this is hilarious, this is outright stupid, this is ... exactly what no one would expect. Mhm, on second thought the element of surprise might offset your male inferiority.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_15")
 			end
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.TBIMission01) > 0 or player:getStorageValue(Storage.Quest.U8_1.SecretService.AVINMission01) > 0 then
-			npcHandler:say("Don't try to fool me. We are perfectly aware to whom you are loyal.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_16")
 		end
 	elseif MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 1 and player:getStorageValue(Storage.Quest.U8_1.SecretService.TBIMission01) < 1 and player:getStorageValue(Storage.Quest.U8_1.SecretService.CGBMission01) < 1 then
@@ -158,7 +158,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.CGBMission01) == 1 then
-			npcHandler:say("Have you been successful?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_17")
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.CGBMission01) == 2 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 3 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 4)
@@ -174,7 +174,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.CGBMission02) == 1 then
-			npcHandler:say("Have you been successful?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_18")
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.CGBMission02) == 2 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 5 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 6)
@@ -187,7 +187,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.CGBMission03) == 2 then
-			npcHandler:say("Have you been successful?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_19")
 			npcHandler:setTopic(playerId, 4)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.CGBMission03) == 3 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 7 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 8)
@@ -198,7 +198,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.CGBMission04) == 1 then
-			npcHandler:say("Have you been successful?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_20")
 			npcHandler:setTopic(playerId, 5)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.CGBMission04) == 2 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 9 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 10)
@@ -210,7 +210,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.CGBMission05) == 1 then
-			npcHandler:say("Have you been successful?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_21")
 			npcHandler:setTopic(playerId, 6)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.CGBMission05) == 2 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 11 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 12)
@@ -222,7 +222,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.CGBMission06) == 1 then
-			npcHandler:say("Have you been successful?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_22")
 			npcHandler:setTopic(playerId, 7)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.CGBMission06) == 2 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 13 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 14)
@@ -233,7 +233,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.CGBMission06) == 2 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Mission07) == 1 then
-			npcHandler:say("Have you been successful?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emma.say_23")
 			npcHandler:setTopic(playerId, 8)
 		end
 	end

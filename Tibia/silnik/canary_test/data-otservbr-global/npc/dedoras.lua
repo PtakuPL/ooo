@@ -110,21 +110,21 @@ local function creatureSayCallback(npc, creature, type, message)
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.LibraryPermission, currentStorage + 1)
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.MoTA.Questline, 8)
 		elseif player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.Questline) < 1 then
-			npcHandler:say("I have heard that it was recently planned to expand the Museum of Tibian Arts. In the course of these activities unexpected difficulties occurred.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.say_1")
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.MoTA.Questline, 1)
 		end
 	elseif MsgContains(message, "desert") then
 		if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.Darashia.Questline) == 8 then
-			npcHandler:say("That's simply a scientific sensation. It will provide me with lots of much needed knowledge!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.say_2")
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.LibraryPermission, currentStorage + 1)
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.Darashia.Questline, 9)
 		elseif player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.Darashia.Questline) < 1 then
-			npcHandler:say("There are rumors of a mysterious statue in the desert next to Darashia. Nobody really knows the meaning of it.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.say_3")
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.Darashia.Questline, 1)
 		end
 	elseif MsgContains(message, "fishmen") then
 		if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.LiquidDeath.Questline) == 7 then
-			npcHandler:say("You brought incredible news. This book proves an invaluable clue!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.say_4")
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.LibraryPermission, currentStorage + 1)
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.LiquidDeath.Questline, 8)
 		elseif player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.LiquidDeath.Questline) < 1 then
@@ -136,7 +136,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "order") then
 		if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.FalconBastion.Questline) == 2 then
-			npcHandler:say("You brought incredible news. This book proves an invaluable clue!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.say_5")
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.LibraryPermission, currentStorage + 1)
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.FalconBastion.Questline, 3)
 		elseif player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.FalconBastion.Questline) < 1 then
@@ -148,7 +148,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "asuri") then
 		if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.Asuras.Questline) == 6 then
-			npcHandler:say("This is incredible! Thank you so much for digging out that hint!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.say_6")
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.LibraryPermission, currentStorage + 1)
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.Asuras.Questline, 7)
 		elseif player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.Asuras.Questline) < 1 then
@@ -160,11 +160,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "isle") then
 		if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.SmallIslands.Questline) == 3 then
-			npcHandler:say("Thank you so much for your efforts to provide this valuable piece of the puzzle!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.say_7")
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.LibraryPermission, currentStorage + 1)
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.SmallIslands.Questline, 4)
 		elseif player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.SmallIslands.Questline) < 1 then
-			npcHandler:say("Talk to Captain Charles in Port Hope. He told me that he once ran ashore on a small island where he discovered a small ruin. The architecture was like nothing he had seen before.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.say_8")
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.SmallIslands.Questline, 1)
 		end
 	elseif MsgContains(message, "progress") then
@@ -191,35 +191,35 @@ local function creatureSayCallback(npc, creature, type, message)
 			startMission(player:getId(), Storage.Quest.U11_80.TheSecretLibrary.LibraryPermission, 7)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("You're still searching for informations.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.say_9")
 		end
 	end
 
 	if MsgContains(message, "addon") and player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.LibraryPermission) == 7 then
-		npcHandler:say("Are you interested in one or two addons to your battle mage outfit?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.say_10")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "book") and npcHandler:getTopic(playerId) == 3 then
 		if player:getStorageValue(Storage.Quest.U11_80.BattleMageOutfits.Addon1) < 1 and player:getItemCount(28792) > 5 then
 			player:removeItem(28792, 5)
 			player:addOutfit(1069, 1)
 			player:addOutfit(1070, 1)
-			npcHandler:say("Very good! You gained the first addon to the battle mage outfit.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.say_11")
 			startMission(player:getId(), Storage.Quest.U11_80.BattleMageOutfits.Addon1, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U11_80.BattleMageOutfits.Addon2) < 1 and player:getItemCount(28793) > 20 then
 			player:removeItem(28793, 20)
 			player:addOutfit(1069, 2)
 			player:addOutfit(1070, 2)
-			npcHandler:say("Very good! You gained the second addon to the battle mage outfit.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.say_12")
 			startMission(player:getId(), Storage.Quest.U11_80.BattleMageOutfits.Addon2, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("I provide two addons. For the first one I need you to bring me five sturdy books. For the second addon you need twenty epaulettes. Do you want one of these addons?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.say_13")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("What do you have for me: the sturdy books or the epaulettes?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.dedoras.say_14")
 			npcHandler:setTopic(playerId, 3)
 		end
 	end

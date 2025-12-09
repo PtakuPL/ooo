@@ -57,7 +57,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(TheNewFrontier.Questline) == 16 then
-			npcHandler:say("You come here to ask us to spare your people? This land has no tolerance for the weak, we have it neither. If you want us to consider you as useful for us, you'll have to prove it in a {test} of strength and courage. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.curos.say_1")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(TheNewFrontier.Questline) == 18 then
 			npcHandler:say({
@@ -81,7 +81,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(AnUneasyAlliance.Questline, 1)
 			player:setStorageValue(AnUneasyAlliance.QuestDoor, 0)
 		elseif player:getStorageValue(AnUneasyAlliance.Questline) == 1 and player:getStorageValue(AnUneasyAlliance.QuestDoor) == 1 then
-			npcHandler:say("With the death of their leader, the rebels return to our camps one by one, deeply humiliated. It might be a wise decision to let a useful tool like you continue to exist.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.curos.say_2")
 			player:setStorageValue(AnUneasyAlliance.Questline, 2)
 		elseif player:getStorageValue(AnUneasyAlliance.Questline) == 2 then
 			npcHandler:say({

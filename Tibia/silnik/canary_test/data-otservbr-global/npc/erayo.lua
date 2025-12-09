@@ -73,7 +73,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "addon") then
 		if player:hasOutfit(player:getSex() == PLAYERSEX_FEMALE and 156 or 152) and player:getStorageValue(Storage.Quest.U7_8.AssassinOutfits.AssassinFirstAddon) < 1 and player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.Shipwrecked) == 2 then
-			npcHandler:say("Vescu gave you an assassin outfit? Haha. Noticed it lacks the head piece? You look a bit silly. Want my old head piece?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.erayo.say_1")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif config[message] and npcHandler:getTopic(playerId) == 0 then
@@ -96,12 +96,12 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.OutfitQuest.DefaultStart, 1)
 			end
 			player:setStorageValue(Storage.Quest.U7_8.AssassinOutfits.AssassinFirstAddon, 1)
-			npcHandler:say("Good. Start with the blue cloth. I'll wait.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.erayo.say_2")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			local targetMessage = config[topic[playerId]]
 			if not player:removeItem(targetMessage.itemId, targetMessage.count) then
-				npcHandler:say("You don't have the required items.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.erayo.say_3")
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -116,7 +116,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) > 0 then
-		npcHandler:say("Maybe another time.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.erayo.say_4")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

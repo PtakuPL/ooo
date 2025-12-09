@@ -60,21 +60,21 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if table.contains({ "addon", "outfit" }, message) then
 		if player:getStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon) < 1 then
-			npcHandler:say("What are you thinking! I would never allow you to slay my beloved friends for the sake of your narcism. Only {Faolan} can grant you a fur like this one.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_1")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "faolan") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("I know where the great wolf mother lives, but I will not tell that to just anyone. You have to earn my respect first. Are you willing to help me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_2")
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon) == 8 then
-			npcHandler:say("Right, I will keep my promise. Faolan roams Tibia freely, but her favourite sleeping cave is on Cormaya. I will now enchant you so you will be able to speak the wolf language.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_3")
 			player:setStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon, 9)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif table.contains({ "griffinclaw", "container" }, message) then
 		if player:getStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon) == 1 then
-			npcHandler:say("Were you able to obtain a sample of the Griffinclaw?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_4")
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "task") then
@@ -111,22 +111,22 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "waterskin") or MsgContains(message, "water skin") then
 		if player:getStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon) == 3 then
-			npcHandler:say("Did you bring me a sample of water from the hydra cave?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_5")
 			npcHandler:setTopic(playerId, 7)
 		end
 	elseif MsgContains(message, "dust") or MsgContains(message, "demon dust") then
 		if player:getStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon) == 5 then
-			npcHandler:say("Were you really able to collect 100 ounces of demon dust?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_6")
 			npcHandler:setTopic(playerId, 9)
 		end
 	elseif MsgContains(message, "chain") or MsgContains(message, "wolf tooth chain") then
 		if player:getStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon) == 7 then
-			npcHandler:say("Have you really found my wolf tooth chain??", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_7")
 			npcHandler:setTopic(playerId, 11)
 		end
 	elseif MsgContains(message, "ceiron's waterskin") then
 		if player:getStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon) == 3 then
-			npcHandler:say("Have you lost my waterskin?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_8")
 			npcHandler:setTopic(playerId, 12)
 		end
 	elseif MsgContains(message, "yes") then
@@ -140,51 +140,51 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		elseif npcHandler:getTopic(playerId) == 4 then
-			npcHandler:say("Alright then. Take this botanist's container and return to me once you were able to retrieve a sample. Don't lose patience!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_9")
 			player:setStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon, 1)
 			player:setStorageValue(Storage.Quest.U7_8.DruidOutfits.DefaultStart, 1) --this for default start of Outfit and Addon Quests
 			player:addItem(4867, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
 			if player:removeItem(5937, 1) then
-				npcHandler:say("Crunor be praised! The Griffinclaw really exists! Now, I will make sure that it will not become extinct. If you are ready to help me again, just ask me for a {task}.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_10")
 				player:setStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon, 2)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 6 then
-			npcHandler:say("Great! Here, take my waterskin and try to fill it with water from this special trickle. Don't lose my waterskin, I will not accept some random dirty waterskin.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_11")
 			player:setStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon, 3)
 			player:addItem(5938, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 7 then
 			if player:removeItem(5939, 1) then
-				npcHandler:say("Good work, |PLAYERNAME|! This water looks indeed extremely clear. I will examine it right away. If you are ready to help me again, just ask me for a {task}.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_12")
 				player:setStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon, 4)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 8 then
-			npcHandler:say("I'm very impressed, |PLAYERNAME|. With this task you have proven that you are on the right side and are powerful as well. If you are ready to help me again, just ask me for a {task}.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_13")
 			player:setStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon, 5)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 9 then
 			if player:removeItem(5906, 100) then
-				npcHandler:say("I'm very impressed, |PLAYERNAME|. With this task you have proven that you are on the right side and are powerful as well. If you are ready to help me again, just ask me for a {task}.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_14")
 				player:setStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon, 6)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 10 then
-			npcHandler:say("Thank you so much. I can't wait to wear it around my neck again, it was a special present from Faolan.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_15")
 			player:setStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon, 7)
 			player:setStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidAmuletDoor, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 11 then
 			if player:removeItem(5940, 1) then
-				npcHandler:say("Crunor be praised! You found my beloved chain! |PLAYERNAME|, you really earned my respect and I consider you as a friend from now on. Remind me to tell you about {Faolan} sometime.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_16")
 				player:setStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon, 8)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 12 then
-			npcHandler:say("I can give you a new one, but I fear that I have to take a small fee for it. Would you like to buy a waterskin for 1000 gold?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ceiron.say_17")
 			npcHandler:setTopic(playerId, 13)
 		elseif npcHandler:getTopic(playerId) == 13 then
 			if player:removeMoneyBank(1000) then

@@ -71,11 +71,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		return false
 	end
 	if MsgContains(message, "name") then
-		npcHandler:say("I am Eustacio. At your service.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eustacio.say_1")
 	elseif MsgContains(message, "time") then
-		npcHandler:say("It's just the time to make a fortune.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eustacio.say_2")
 	elseif MsgContains(message, "busy") or MsgContains(message, "job") then
-		npcHandler:say(" I am an aspiring businessman, who thrives to climb the ladder of success in the Venorean society.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eustacio.say_3")
 	elseif MsgContains(message, "shortcut") then
 		if player:getStorageValue(Storage.Quest.U12_60.APiratesTail.RascacoonShortcut) == 1 then
 			npcHandler:say({

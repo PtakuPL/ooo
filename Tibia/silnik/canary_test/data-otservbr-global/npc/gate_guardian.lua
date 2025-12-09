@@ -55,12 +55,12 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") or MsgContains(message, "pass") then
 		if player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline) == 13 then
-			npcHandler:say("You want entranzzze to zzze zzzity?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gate_guardian.say_1")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Mh, zzzezzze paperzzz zzzeem legit, I have orderzzz to let you pazzz. Zzzo be it.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gate_guardian.say_2")
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline, 22)
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission05, 2) --Questlog, Wrath of the Emperor "Mission 05: New in Town"
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)

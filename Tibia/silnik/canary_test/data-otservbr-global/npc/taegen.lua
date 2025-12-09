@@ -194,7 +194,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 		end
 	elseif MsgContains(message, "no") then
-		npcHandler:say("Then not.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.say_1")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

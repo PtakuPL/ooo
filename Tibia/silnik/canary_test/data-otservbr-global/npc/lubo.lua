@@ -68,48 +68,48 @@ local function creatureSayCallback(npc, creature, type, message)
 	local addonProgress = player:getStorageValue(Storage.Quest.U7_8.CitizenOutfits.AddonBackpack)
 	if MsgContains(message, "addon") or MsgContains(message, "outfit") or (addonProgress == 1 and MsgContains(message, "leather")) or ((addonProgress == 1 or addonProgress == 2) and MsgContains(message, "backpack")) then
 		if addonProgress < 1 then
-			npcHandler:say("Sorry, the backpack I wear is not for sale. It's handmade from rare minotaur leather.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lubo.say_1")
 			npcHandler:setTopic(playerId, 1)
 		elseif addonProgress == 1 then
-			npcHandler:say("Ah, right, almost forgot about the backpack! Have you brought me 100 pieces of minotaur leather as requested?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lubo.say_2")
 			npcHandler:setTopic(playerId, 3)
 		elseif addonProgress == 2 then
 			if player:getStorageValue(Storage.Quest.U7_8.CitizenOutfits.AddonBackpackTimer) < os.time() then
-				npcHandler:say("Just in time! Your backpack is finished. Here you go, I hope you like it.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lubo.say_3")
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 				player:setStorageValue(Storage.Quest.U7_8.CitizenOutfits.MissionBackpack, 0)
 				player:setStorageValue(Storage.Quest.U7_8.CitizenOutfits.AddonBackpack, 3)
 				player:addOutfitAddon(136, 1)
 				player:addOutfitAddon(128, 1)
 			else
-				npcHandler:say("Uh... I didn't expect you to return that early. Sorry, but I'm not finished yet with your backpack. I'm doing the best I can, promised.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lubo.say_4")
 			end
 		elseif addonProgress == 3 then
-			npcHandler:say("Sorry, but I can only make one backpack per person, else I'd have to close my shop and open a leather manufactory.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lubo.say_5")
 		end
 		return true
 	end
 	if npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "backpack") or MsgContains(message, "minotaur") or MsgContains(message, "leather") then
-			npcHandler:say("Well, if you really like this backpack, I could make one for you, but minotaur leather is hard to come by these days. Are you willing to put some work into this?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lubo.say_6")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "yes") then
 			player:setStorageValue(Storage.Quest.U7_8.CitizenOutfits.AddonBackpack, 1)
 			player:setStorageValue(Storage.Quest.U7_8.CitizenOutfits.MissionBackpack, 1)
-			npcHandler:say("Alright then, if you bring me 100 pieces of fine minotaur leather I will see what I can do for you. You probably have to kill really many minotaurs though... so good luck!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lubo.say_7")
 			npcHandler:removeInteraction(npc, creature)
 		else
-			npcHandler:say("Sorry, but I don't run a welfare office, you know... no pain, no gain.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lubo.say_8")
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 3 then
 		if MsgContains(message, "yes") then
 			if player:getItemCount(5878) < 100 then
-				npcHandler:say("Sorry, but that's not enough leather yet to make one of these backpacks. Would you rather like to buy a normal backpack for 10 gold?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lubo.say_9")
 			else
-				npcHandler:say("Great! Alright, I need a while to finish this backpack for you. Come ask me later, okay?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lubo.say_10")
 
 				player:removeItem(5878, 100)
 
@@ -118,27 +118,27 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U7_8.CitizenOutfits.AddonBackpackTimer, os.time() + 2 * 60 * 60)
 			end
 		else
-			npcHandler:say("I know, it's quite some work... don't lose heart, just keep killing minotaurs and you'll eventually get lucky. Would you rather like to buy a normal backpack for 10 gold?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lubo.say_11")
 		end
 		npcHandler:setTopic(playerId, 0)
 	end
 
 	-- The paradox tower quest
 	if MsgContains(message, "crunor's cottage") then
-		npcHandler:say("Ah yes, I remember my grandfather talking about that name. This house used to be an inn a long time ago. My family bought it from some of these flower guys.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lubo.say_12")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "flower guys") then
-		npcHandler:say("Oh, I mean druids of course. They sold the cottage to my family after some of them died in an accident or something like that.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lubo.say_13")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "accident") then
-		npcHandler:say("As far as I can remember the story, a pet escaped its stable behind the inn. It got somehow involved with powerful magic at a ritual and was transformed in some way.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lubo.say_14")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "stable") then
 		if player:getStorageValue(Storage.Quest.U7_24.TheParadoxTower.TheFearedHugo) == 3 then
 			-- Questlog: The Feared Hugo (Completed)
 			player:setStorageValue(Storage.Quest.U7_24.TheParadoxTower.TheFearedHugo, 4)
 		end
-		npcHandler:say("My grandpa told me, in the old days there were some behind this cottage. Nothing big though, just small ones, for chicken or rabbits.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lubo.say_15")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

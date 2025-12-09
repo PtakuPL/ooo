@@ -67,24 +67,24 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if table.contains({ "vial", "ticket", "bonus", "deposit" }, message) then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonBelt) < 1 then
-			npcHandler:say("We have a special offer right now for depositing vials. Are you interested in hearing it?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandra.say_1")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonBelt) >= 1 then
-			npcHandler:say("Would you like to get a lottery ticket instead of the deposit for your vials?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandra.say_2")
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "prize") then
-		npcHandler:say("Are you here to claim a prize?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandra.say_3")
 		npcHandler:setTopic(playerId, 4)
 	elseif string.match(message:lower(), "fafnar") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission1) == 1 then
-			npcHandler:say("Pssht, not that loud. So they have sent you to get... the stuff?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandra.say_4")
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "your continued existence is payment enough") then
 		if npcHandler:getTopic(playerId) == 6 then
 			if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission1) == 1 then
-				npcHandler:say("What?? How dare you?! I am a sorcerer of the most reknown academy on the face of this world. Do you think some lousy pirates could scare me? Get lost! Now! I will have no further dealings with the likes of you!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandra.say_5")
 				player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission1, 2)
 				npcHandler:setTopic(playerId, 0)
 			end
@@ -100,33 +100,33 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Great! I've signed you up for our bonus system. From now on, you will have the chance to win the potion belt addon!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandra.say_6")
 			player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonBelt, 1)
 			player:setStorageValue(Storage.OutfitQuest.DefaultStart, 1) --this for default start of Outfit and Addon Quests
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:removeItem(283, 100) or player:removeItem(284, 100) or player:removeItem(285, 100) then
-				npcHandler:say("Alright, thank you very much! Here is your lottery ticket, good luck. Would you like to deposit more vials that way?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandra.say_7")
 				player:addItem(5957, 1)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("Sorry, but you don't have 100 empty flasks or vials of the SAME kind and thus don't qualify for the lottery. Would you like to deposit the vials you have as usual and receive 5 gold per vial?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandra.say_8")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonBelt) == 1 and player:removeItem(5958, 1) then
-				npcHandler:say("Congratulations! Here, from now on you can wear our lovely potion belt as accessory.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandra.say_9")
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonBelt, 2)
 				player:addOutfitAddon(130, 1) --male mage addon
 				player:addOutfitAddon(133, 1) --male summoner addon
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			else
-				npcHandler:say("Sorry, but you don't have your lottery ticket with you.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandra.say_10")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
 			if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.RaysMission1) == 1 then
-				npcHandler:say("Finally. You have no idea how difficult it is to keep something secret here. And you brought me all the crystal coins I demanded?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandra.say_11")
 				npcHandler:setTopic(playerId, 6)
 			end
 		end

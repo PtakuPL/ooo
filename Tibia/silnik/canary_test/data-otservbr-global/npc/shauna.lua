@@ -61,7 +61,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	-- Mission 1 - The Supply Thief
 	if MsgContains(message, "job") then
 		if Player(creature):getStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission01) == 2 then
-			npcHandler:say("What do you think? I am the sheriff of Carlin.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shauna.say_1")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "water pipe") then

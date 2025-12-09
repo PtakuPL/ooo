@@ -73,10 +73,10 @@ local function creatureSayCallback(npc, creature, type, message)
 				}, npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You need to deliver me like 5 feathers.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_swan.say_1")
 			end
 		else
-			npcHandler:say("You are not on that mission.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_swan.say_2")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") then

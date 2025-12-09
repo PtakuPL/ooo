@@ -53,7 +53,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "VBOX") then
-		npcHandler:say("J-T B^C J^BXT°", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.an_idol.say_1")
 		player:teleportTo(Position(32366, 32531, 8), false)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 	end

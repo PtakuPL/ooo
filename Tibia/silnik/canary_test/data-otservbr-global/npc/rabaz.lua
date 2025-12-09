@@ -157,14 +157,14 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U8_6.AnInterestInBotany.Questline) == 3 then
 			npcHandler:setTopic(playerId, 2)
-			npcHandler:say("Well fantastic work, you gathered both samples! Now I can continue my work on the almanach, thank you very much for your help indeed. Can I take a look at my book please?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rabaz.say_1")
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			player:setStorageValue(Storage.Quest.U8_1.TibiaTales.DefaultStart, 1)
 			player:setStorageValue(Storage.Quest.U8_6.AnInterestInBotany.Questline, 1)
 			player:setStorageValue(Storage.Quest.U8_6.AnInterestInBotany.ChestDoor, 0)
-			npcHandler:say("Yes? Yes! That's the enthusiasm I need! Remember to bring a sharp knife to gather the samples, plants - even mutated deformed plants - are very sensitive you know. Off you go and be careful out there, Zao is no place for the feint hearted mind you.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rabaz.say_2")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if player:removeItem(11699, 1) then
@@ -179,7 +179,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				}, npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("Oh, you don't have my book.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rabaz.say_3")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end

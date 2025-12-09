@@ -54,15 +54,15 @@ local function creatureSayCallback(npc, creature, type, message)
 		-- Checks if the mission has not yet started and the cooldown has expired
 		if getPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Mission03) < 1 then
 			if getPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Time) <= os.time() then
-				npcHandler:say("Oh, you want some work? You can help us, alright. Did you know that the people of the city think those rabbit feet are actually lucky charms?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.say_1")
 				npcHandler:setTopic(playerId, 1)
 			else
-				npcHandler:say("You need to wait some hours to take another mission again or you are still on a mission.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.say_2")
 			end
 
 		-- Checks if the player is already on the rabbit feet collection mission
 		elseif getPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Mission03) == 1 then
-			npcHandler:say("Good to see you back. Now, did you bring us the lucky charms?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.say_3")
 			npcHandler:setTopic(playerId, 3)
 
 		-- Checks if Mission 03 is completed and the cooldown has expired
@@ -77,16 +77,16 @@ local function creatureSayCallback(npc, creature, type, message)
 				}, npc, creature)
 				npcHandler:setTopic(playerId, 4)
 			else
-				npcHandler:say("You need to wait some hours to take another mission again or you are still on a mission.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.say_4")
 			end
 
 		-- Checks if Mission 04 is completed and the cooldown has expired
 		elseif (getPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Mission03) == 3) and getPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.RottinStart) >= 4 then
 			if getPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Time) <= os.time() then
-				npcHandler:say("Ah there you are. So, did you repair all the broken structures?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.say_5")
 				npcHandler:setTopic(playerId, 5)
 			else
-				npcHandler:say("You need to wait some hours to take another mission again or you are still on a mission.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.say_6")
 			end
 
 		-- Checks if Mission 05 is completed and the cooldown has expired
@@ -99,13 +99,13 @@ local function creatureSayCallback(npc, creature, type, message)
 				}, npc, creature)
 				npcHandler:setTopic(playerId, 6)
 			else
-				npcHandler:say("You need to wait some hours to take another mission again or you are still on a mission.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.say_7")
 			end
 
 		-- Checks if Mission 06 is completed and the cooldown has expired
 		elseif (getPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Mission03) == 5) and getPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Corpse) == 4 then
 			if getPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Time) <= os.time() then
-				npcHandler:say("You did it!! And I assume you took only what you needed? Heh. No, I know it. Because my men took the rest. Thanks for helping us, you did a very good job. In fact I have a little 'extra' for you here, thanks again.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.say_8")
 				-- Checks if this is the first time the quest is completed
 				if getPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.FirstTime) == 0 then
 					player:addExperience(1000, true) -- Adds 1000 experience on the first time
@@ -134,13 +134,13 @@ local function creatureSayCallback(npc, creature, type, message)
 					end
 				end
 			else
-				npcHandler:say("You need to wait some hours to take another mission again or you are still on a mission.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.say_9")
 			end
 		end
 		------------------------ FINISH MISSION 03 ------------------------
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Good, because that is exactly what you will help us with - getting more 'lucky charms'. If we won't get our hands on new charms in time, we will surely have to starve... during the autumn. That would be a hard time for all of us. So... you in?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.say_10")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			npcHandler:say({
@@ -154,17 +154,17 @@ local function creatureSayCallback(npc, creature, type, message)
 			doPlayerAddItem(creature, 12171, 7)
 			npcHandler:setTopic(playerId, 0)
 		elseif (npcHandler:getTopic(playerId) == 3) and getPlayerItemCount(creature, 12173) >= 7 then
-			npcHandler:say("Good hunt. That will be enough to help us uhm... get through the winter yes. Now if you want to help us getting even more lucky charms, you can always ask.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.say_11")
 			doPlayerRemoveItem(creature, 12173, 7)
 			setPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Mission03, 2)
 			setPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Questline, 4) -- quest log
 			setPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Time, os.time() + (20 * 3600)) -- 20 hours
 			npcHandler:setTopic(playerId, 0)
 		elseif (npcHandler:getTopic(playerId) == 3) and getPlayerItemCount(creature, 12173) <= 6 then
-			npcHandler:say("You do not have sufficient rabbit's foot.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.say_12")
 			------------------------ FINISH MISSION 01 ------------------------
 		elseif npcHandler:getTopic(playerId) == 4 then
-			npcHandler:say("Good, good. Do you remember the old saying? If it ain't broken, it was not made by us. Now, off you go!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rottin_wood.say_13")
 			setPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Mission03, 3)
 			setPlayerStorageValue(creature, Storage.Quest.U8_7.RottinWoodAndTheMarriedMen.Questline, 3) -- quest log
 			npcHandler:setTopic(playerId, 0)

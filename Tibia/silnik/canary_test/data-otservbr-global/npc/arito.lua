@@ -95,12 +95,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 			player:setStorageValue(Storage.Quest.U8_1.TibiaTales.AritosTask, 1)
 		elseif AritosTask == 2 then
-			npcHandler:say("And what did they say?? Do I have to give up everything here? Come on tell me!!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arito.say_1")
 			npcHandler:setTopic(playerId, 2)
 		end
 		-- Check if the message contains "Acquitted" and topic is 2
 	elseif MsgContains(message, "Acquitted") and npcHandler:getTopic(playerId) == 2 then
-		npcHandler:say("These are great news!! Thank you for your help! I don't have much, but without you I wouldn't have anything so please take this as a reward.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arito.say_2")
 		player:setStorageValue(Storage.Quest.U8_1.TibiaTales.AritosTask, 3)
 		player:addItem(3035, 100)
 	end

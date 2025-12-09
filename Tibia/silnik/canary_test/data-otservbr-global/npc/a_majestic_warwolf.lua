@@ -48,7 +48,7 @@ end
 local function greetCallback(npc, creature)
 	local playerId = creature:getId()
 	if Player(creature):getStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon) < 9 then
-		npcHandler:say("GRRRRRRRRRRRRR", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_majestic_warwolf.say_1")
 		return false
 	end
 	return true
@@ -64,7 +64,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if table.contains({ "addon", "outfit" }, message) then
 		if player:getStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon) == 9 then
-			npcHandler:say("I can see in your eyes that you are a honest and friendly person, |PLAYERNAME|. You were patient enough to learn our language and I will grant you a special gift. Will you accept it?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_majestic_warwolf.say_2")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then

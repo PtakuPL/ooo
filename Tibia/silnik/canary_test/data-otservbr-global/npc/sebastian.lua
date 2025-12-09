@@ -56,14 +56,14 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "nargor") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.AccessToNargor) == 1 then
-			npcHandler:say("Do you want to sail Nargor for 50 gold coins?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sebastian.say_1")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.AccessToNargor) == 1 then
 				if player:removeMoneyBank(50) then
-					npcHandler:say("Set the sails!", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sebastian.say_2")
 					player:teleportTo(Position(32024, 32813, 7))
 					player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 					npcHandler:setTopic(playerId, 0)

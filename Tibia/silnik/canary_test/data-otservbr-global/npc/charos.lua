@@ -70,7 +70,7 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U9_80.AdventurersGuild.CharosTrav) > 6 then
-		npcHandler:say("Sorry, you have traveled a lot.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.charos.say_1")
 		npcHandler:resetNpc(creature)
 		return false
 	else
@@ -104,9 +104,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		if cityTable then
 			player:setStorageValue(Storage.Quest.U9_80.AdventurersGuild.CharosTrav, player:getStorageValue(Storage.Quest.U9_80.AdventurersGuild.CharosTrav) + 1)
 			player:setStorageValue(Storage.Quest.U9_80.AdventurersGuild.Stone, cityTable)
-			npcHandler:say("Goodbye traveler!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.charos.say_2")
 		else
-			npcHandler:say("Sorry, I don't know about this place.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.charos.say_3")
 		end
 	end
 	return true

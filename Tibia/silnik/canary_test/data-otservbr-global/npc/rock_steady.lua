@@ -55,7 +55,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "addon") or MsgContains(message, "help") then
 		if player:getStorageValue(72326) < 1 then
-			npcHandler:say("If you want anything, you should talk to Old Rock Boy over there. I do {collect} stuff, though. So just ask if you're interested in helping me.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rock_steady.say_1")
 			player:setStorageValue(72326, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
@@ -68,10 +68,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(72326) == 2 then
-			npcHandler:say("Have you got anything for me today?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rock_steady.say_2")
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(72326) == 3 then
-			npcHandler:say("Have you got anything for me today?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rock_steady.say_3")
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(72326) == 4 and player:removeItem(14021, 1) then
 			npcHandler:say({
@@ -86,19 +86,19 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Great! Let me see. Amazing! I will take this, thank you!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rock_steady.say_4")
 			player:setStorageValue(72326, 2)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 and player:removeItem(14022, 1) then
-			npcHandler:say("Great! Let me see. Amazing! I will take this, thank you!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rock_steady.say_5")
 			player:setStorageValue(72326, 3)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 and player:removeItem(14023, 1) then
-			npcHandler:say("Great! Let me see. Amazing! I will take this, thank you!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rock_steady.say_6")
 			player:setStorageValue(72326, 4)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("You dont have the required items!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rock_steady.say_7")
 		end
 	end
 	return true

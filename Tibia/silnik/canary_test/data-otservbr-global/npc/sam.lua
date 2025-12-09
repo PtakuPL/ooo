@@ -70,7 +70,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.MissionHelmet, 6)
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonHelmet, 6)
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonHelmetTimer, os.time() + 7200) -- 2 hours
-			npcHandler:say("Oh, Gregor sent you? I see. It will be my pleasure to adorn your helmet. Please give me some time to finish it.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.say_1")
 		elseif addonProgress == 6 then
 			if player:getStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonHelmetTimer) < os.time() then
 				player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.MissionHelmet, 0)
@@ -79,31 +79,31 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addOutfitAddon(131, 2)
 				player:addOutfitAddon(139, 2)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-				npcHandler:say("Just in time, |PLAYERNAME|. Your helmet is finished, I hope you like it.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.say_2")
 			else
-				npcHandler:say("Please have some patience, |PLAYERNAME|. Forging is hard work!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.say_3")
 			end
 		elseif addonProgress == 7 then
-			npcHandler:say("I think it's one of my masterpieces.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.say_4")
 		else
-			npcHandler:say("Sorry, but without the permission of Gregor I cannot help you with this matter.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.say_5")
 		end
 	elseif MsgContains(message, "old backpack") or MsgContains(message, "backpack") then
 		if player:getStorageValue(Storage.Quest.U7_5.SamsOldBackpack.SamsOldBackpackNpc) < 1 then
-			npcHandler:say("What? Are you telling me you found my old adventurer's backpack that I lost years ago??", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.say_6")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "2000 steel shields") then
 		if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) ~= 29 or player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Contract) == 2 then
-			npcHandler:say("My offers are weapons, armors, helmets, legs, and shields. If you'd like to see my offers, ask me for a {trade}.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.say_7")
 			return true
 		end
 
-		npcHandler:say("What? You want to buy 2000 steel shields??", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.say_8")
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "contract") then
 		if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Contract) == 0 then
-			npcHandler:say("Have you signed the contract?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.say_9")
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "yes") then
@@ -116,32 +116,32 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U7_5.SamsOldBackpack.SamsOldBackpackNpc, 1)
 				player:addAchievement("Backpack Tourist")
 			else
-				npcHandler:say("You don't have it...", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.say_10")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("I can't believe it. Finally I will be rich! I could move to Edron and enjoy my retirement! But ... wait a minute! I will not start working without a contract! Are you willing to sign one?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.say_11")
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			player:addItem(129, 1)
-			npcHandler:say("Fine! Here is the contract. Please sign it. Talk to me about it again when you're done.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.say_12")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if not player:removeItem(128, 1) then
-				npcHandler:say("You don't have a signed contract.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.say_13")
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
 
 			player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Contract, 1)
-			npcHandler:say("Excellent! I will start working right away! Now that I am going to be rich, I will take the opportunity to tell some people what I REALLY think about them!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.say_14")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Then no.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.say_15")
 		elseif table.contains({ 2, 3, 4 }, npcHandler:getTopic(playerId)) then
-			npcHandler:say("This deal sounded too good to be true anyway.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sam.say_16")
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

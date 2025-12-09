@@ -135,7 +135,7 @@ local function creatureSayCallback(npc, creature, type, message)
 					}, npc, creature)
 				end
 			else
-				npcHandler:say("I'm sorry this task is highly dangerous and I need experienced people for it.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.say_1")
 				npcHandler:setTopic(playerId, 0)
 				return false
 			end
@@ -160,14 +160,14 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		elseif value == 2 then
 			if player:removeItem(954, 1) and player:getStorageValue(Storage.Quest.U8_2.ElementalSpheres.QuestLine) < 3 then
-				npcHandler:say("AMAZING!! I'm going to start immediately with the research. If it turns out the way I expect it, Alverus will be revived soon!! Here, take this as a reward and try to collect more of this substance. I'll make you a good offer, I promise. ", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.say_2")
 				player:addItem(player:isSorcerer() and 8039 or player:isDruid() and 8041 or player:isPaladin() and 8025 or player:isKnight() and 8055, 1)
 				player:setStorageValue(Storage.Quest.U8_2.ElementalSpheres.QuestLine, 3)
 			end
 		end
 	elseif npcHandler:getTopic(playerId) == 1 and MsgContains(message, "yes") then
 		player:setStorageValue(Storage.Quest.U8_2.ElementalSpheres.QuestLine, 1)
-		npcHandler:say("Good, don't waste time! Come back here when you have the elemental object!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.say_3")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

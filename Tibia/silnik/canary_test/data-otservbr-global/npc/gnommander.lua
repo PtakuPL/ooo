@@ -61,11 +61,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	local playerId = player:getId()
 
 	if MsgContains(message, "commander") then
-		return npcHandler:say("I'm responsible for the security and reward heroes to our cause. If you are looking for missions, talk to Gnomilly, Gnombold and Gnomagery.", npc, creature)
+		return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_1")
 	end
 
 	if MsgContains(message, "reward") then
-		return npcHandler:say("I can sell special outfit parts. If your fame is high enough, you might be {worthy} of such a reward.", npc, creature)
+		return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_2")
 	end
 
 	if MsgContains(message, "spike") then
@@ -74,63 +74,63 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "worthy") then
 		if player:getFamePoints() < 100 then
-			return npcHandler:say("You are not worthy of a special reward yet.", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_3")
 		end
 
 		talkState[playerId] = "worthy"
-		return npcHandler:say("You can acquire the {basic} outfit for 1000 Gold, the {first} addon for 2000 gold and the {second} addon for 3000 gold. Which do you want to buy?", npc, creature)
+		return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_4")
 	end
 
 	if talkState[playerId] == "worthy" then
 		if MsgContains(message, "basic") then
 			if getPlayerLevel(creature) < 25 then
 				talkState[playerId] = nil
-				return npcHandler:say("You do not have enough level yet.", npc, creature)
+				return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_5")
 			end
 
 			if player:hasOutfit(player:getSex() == 0 and 575 or 574) then
 				talkState[playerId] = nil
-				return npcHandler:say("You already have that outfit.", npc, creature)
+				return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_6")
 			end
 
 			talkState[playerId] = "basic"
-			return npcHandler:say("Do you want to buy the basic outfit for 1000 Gold?", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_7")
 		elseif MsgContains(message, "first") then
 			if getPlayerLevel(creature) < 50 then
 				talkState[playerId] = nil
-				return npcHandler:say("You do not have enough level yet.", npc, creature)
+				return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_8")
 			end
 
 			if not player:hasOutfit(player:getSex() == 0 and 575 or 574) then
 				talkState[playerId] = nil
-				return npcHandler:say("You do not have the Cave Explorer outfit.", npc, creature)
+				return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_9")
 			end
 
 			if player:hasOutfit(player:getSex() == 0 and 575 or 574, 1) then
 				talkState[playerId] = nil
-				return npcHandler:say("You already have that addon.", npc, creature)
+				return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_10")
 			end
 
 			talkState[playerId] = "first"
-			return npcHandler:say("Do you want to buy the first addon for 2000 Gold?", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_11")
 		elseif MsgContains(message, "second") then
 			if getPlayerLevel(creature) < 80 then
 				talkState[playerId] = nil
-				return npcHandler:say("You do not have enough level yet.", npc, creature)
+				return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_12")
 			end
 
 			if not player:hasOutfit(player:getSex() == 0 and 575 or 574) then
 				talkState[playerId] = nil
-				return npcHandler:say("You do not have the Cave Explorer outfit.", npc, creature)
+				return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_13")
 			end
 
 			if player:hasOutfit(player:getSex() == 0 and 575 or 574, 2) then
 				talkState[playerId] = nil
-				return npcHandler:say("You already have that addon.", npc, creature)
+				return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_14")
 			end
 
 			talkState[playerId] = "second"
-			return npcHandler:say("Do you want to buy the second addon for 3000 Gold?", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_15")
 		end
 	end
 
@@ -138,35 +138,35 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			if not player:removeMoney(1000) then
 				talkState[playerId] = nil
-				return npcHandler:say("You do not have that money.", npc, creature)
+				return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_16")
 			end
 		end
 		player:removeFamePoints(100)
 		player:addOutfit(player:getSex() == 0 and 575 or 574)
 		talkState[playerId] = nil
-		return npcHandler:say("Here it is.", npc, creature)
+		return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_17")
 	elseif talkState[playerId] == "first" then
 		if MsgContains(message, "yes") then
 			if not player:removeMoney(2000) then
 				talkState[playerId] = nil
-				return npcHandler:say("You do not have that money.", npc, creature)
+				return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_18")
 			end
 		end
 		player:removeFamePoints(100)
 		player:addOutfitAddon(player:getSex() == 0 and 575 or 574, 1)
 		talkState[playerId] = nil
-		return npcHandler:say("Here it is.", npc, creature)
+		return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_19")
 	elseif talkState[playerId] == "second" then
 		if MsgContains(message, "yes") then
 			if not player:removeMoney(3000) then
 				talkState[playerId] = nil
-				return npcHandler:say("You do not have that money.", npc, creature)
+				return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_20")
 			end
 		end
 		player:removeFamePoints(100)
 		player:addOutfitAddon(player:getSex() == 0 and 575 or 574, 2)
 		talkState[playerId] = nil
-		return npcHandler:say("Here it is.", npc, creature)
+		return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnommander.say_21")
 	end
 	return true
 end

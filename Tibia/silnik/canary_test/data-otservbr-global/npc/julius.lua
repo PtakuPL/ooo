@@ -68,28 +68,28 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if table.contains({ "mission", "note", "vampire" }, message:lower()) then
 		if player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.QuestLine) < 0 then
-			npcHandler:say("Our nightly blood-sucking visitors put the inhabitants of Yalahar in constant danger. The worst thing is that anyone in this city could be a vampire. Maybe an outsider like you could help us. Would you try?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_1")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission01) == 1 then
 			if player:getSlotItem(CONST_SLOT_NECKLACE) then
 				if player:getSlotItem(CONST_SLOT_NECKLACE).itemid == 3083 then
-					npcHandler:say("Hmm, I see, I see. That necklace is only a small indication though... I think I need another proof, just to make sure. Say... have you ever baked {garlic bread}?", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_2")
 					player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission01, 2)
 					npcHandler:setTopic(playerId, 2)
 				else
-					npcHandler:say("I fear that will not do. Sorry.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_3")
 				end
 			else
-				npcHandler:say("I fear that will not do. Sorry.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_4")
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission01) == 3 then
-			npcHandler:say("Let me check - yes indeed, there's garlic in it. Now eat one, in front of my eyes. Right now! Say '{aaah}' when you've chewed it all down so that I can see you're not hiding it!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_5")
 			npcHandler:setTopic(playerId, 4)
 		elseif player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission01) == 4 and player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission02) < 0 then
-			npcHandler:say("So, are you ready for your first real task?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_6")
 			npcHandler:setTopic(playerId, 5)
 		elseif player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission02) == 1 then
-			npcHandler:say("Are you back with confirmed names of possible vampires?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_7")
 			npcHandler:setTopic(playerId, 7)
 		elseif player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission02) == 2 and player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission03) < 0 then
 			npcHandler:say({
@@ -98,7 +98,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 9)
 		elseif player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission03) == 2 then
-			npcHandler:say("Oh! You look horrible - I mean, rather weary. What happened? Who is the master vampire?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_8")
 			npcHandler:setTopic(playerId, 11)
 		elseif player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission03) == 3 and player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission04) < 0 then
 			npcHandler:say({
@@ -111,12 +111,12 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif message == "yes" then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Well, there's one problem. How would I know I can trust you? You might be one of them... hm. Can you think of something really unlikely for a vampire? If you know a way to prove it to me, ask me about your {mission}.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_9")
 			player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.QuestLine, 1)
 			player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission01, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Fine then. Talk to me again about your mission once you have the garlic bread. You can get holy water from a member of the inquisition.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_10")
 			player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission01, 3)
 		elseif npcHandler:getTopic(playerId) == 5 and player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission01) == 4 then
 			npcHandler:say({
@@ -127,10 +127,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		elseif npcHandler:getTopic(playerId) == 6 then
-			npcHandler:say("Fine. Good luck! Talk to me again about your mission once you have confirmed the names of five suspects.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_11")
 			player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission02, 1)
 		elseif npcHandler:getTopic(playerId) == 7 then
-			npcHandler:say("Alright, wait a moment. Tell me one name at a time so I can note them down carefully. Who is a suspect?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_12")
 			npcHandler:setTopic(playerId, 8)
 		elseif npcHandler:getTopic(playerId) == 9 then
 			npcHandler:say({
@@ -151,7 +151,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "garlic bread") or message == "no" then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Well, you need to mix flour with holy water and use that dough on garlic to create a special dough. Bake it like normal bread, but I guarantee that no vampire can eat that. Are you following me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_13")
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 8 then
 			if
@@ -161,84 +161,84 @@ local function creatureSayCallback(npc, creature, type, message)
 				and player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Maris) == 2
 				and player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Armenius) == 2
 			then
-				npcHandler:say("I guess Armenius, Lisander, Maris, Ortheus and Serafin are all the names we can get for now. Let me think for a moment what we are going to do, talk to me about your mission again later.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_14")
 				player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission02, 2)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("No, no, I was asking for one of the names.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_15")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif MsgContains(message, "aaah") then
 		if npcHandler:getTopic(playerId) == 4 and player:removeItem(8194, 1) then
-			npcHandler:say("Very well. I think I can trust you now. Sorry that I had to put you through this embarassing procedure, but I'm sure you understand. So, are you ready for your first real task?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_16")
 			player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission01, 4)
 			npcHandler:setTopic(playerId, 5)
 		else
-			npcHandler:say("No, no, you didn't eat it! Vampire Brood! Say '{aaah}' once you have eaten the bread or get out of her instantly!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_17")
 		end
 	elseif table.contains({ "maris", "ortheus", "serafin", "lisander", "armenius" }, message:lower()) and npcHandler:getTopic(playerId) == 8 then
 		if MsgContains(message, "maris") then
 			if player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Maris) == 1 then
-				npcHandler:say("He really doesn't look like the man of the sea he pretends to be, does he? Noted down! Any other name?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_18")
 				player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Maris, 2)
 			elseif player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Maris) == 2 then
-				npcHandler:say("You already reported that name. Any new ones?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_19")
 			else
-				npcHandler:say("Hm. You don't look so sure about that one. You should not report suspects that you did not confirm yourself! Any others?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_20")
 			end
 		elseif MsgContains(message, "ortheus") then
 			if player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Ortheus) == 1 then
-				npcHandler:say("I always thought that there is not really a poor beggar hidden under those ragged clothes. Noted down! Any other name?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_21")
 				player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Ortheus, 2)
 			elseif player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Ortheus) == 2 then
-				npcHandler:say("You already reported that name. Any new ones?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_22")
 			else
-				npcHandler:say("Hm. You don't look so sure about that one. You should not report suspects that you did not confirm yourself! Any others?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_23")
 			end
 		elseif MsgContains(message, "serafin") then
 			if player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Serafin) == 1 then
-				npcHandler:say("Nice angelic name for a vampire. But he didn't escape your attention, well done. Noted down! Any other name?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_24")
 				player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Serafin, 2)
 			elseif player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Serafin) == 2 then
-				npcHandler:say("You already reported that name. Any new ones?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_25")
 			else
-				npcHandler:say("Hm. You don't look so sure about that one. You should not report suspects that you did not confirm yourself! Any others?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_26")
 			end
 		elseif MsgContains(message, "lisander") then
 			if player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Lisander) == 1 then
-				npcHandler:say("Yes, that pale skin and those black eyes speak volumes. Noted down! Any other name?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_27")
 				player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Lisander, 2)
 			elseif player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Lisander) == 2 then
-				npcHandler:say("You already reported that name. Any new ones?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_28")
 			else
-				npcHandler:say("Hm. You don't look so sure about that one. You should not report suspects that you did not confirm yourself! Any others?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_29")
 			end
 		elseif MsgContains(message, "armenius") then
 			if player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Armenius) == 1 then
-				npcHandler:say("Ahh, I always thought something was suspicious about him. Noted down! Any other name?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_30")
 				player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Armenius, 2)
 			elseif player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Armenius) == 2 then
-				npcHandler:say("You already reported that name. Any new ones?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_31")
 			else
-				npcHandler:say("Hm. You don't look so sure about that one. You should not report suspects that you did not confirm yourself! Any others?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_32")
 			end
 		end
 	elseif npcHandler:getTopic(playerId) == 7 then
-		npcHandler:say("Then try harder.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_33")
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 8 then
-		npcHandler:say("Hm. You don't look so sure about that one. You should not report suspects that you did not confirm yourself! Any others?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_34")
 	elseif message:lower() == "alori mort" and npcHandler:getTopic(playerId) == 10 then
-		npcHandler:say("Good. Don't play around with the spell, only use it when standing in front of those vampires. Come back and report to me about your progress later.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_35")
 		player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission03, 1)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "armenius") and npcHandler:getTopic(playerId) == 11 then
-		npcHandler:say("I see... so Armenius is the master, and the spell didn't even cause a scratch on him... Well, that went worse than expected. Let me think for a moment and then ask me about a mission again.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_36")
 		player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission03, 3)
 		npcHandler:setTopic(playerId, 0)
 	else
-		npcHandler:say("Getting cold feet, eh?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.julius.say_37")
 		npcHandler:setTopic(playerId, 0)
 	end
 end

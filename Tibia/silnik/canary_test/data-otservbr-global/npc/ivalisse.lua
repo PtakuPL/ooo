@@ -59,10 +59,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "temple") then
-		npcHandler:say("Well, I hope you like it here. We tried to rebuild in the {Shaper}'s will. I am a bit preoccupied at the moment because of the absence of my {father}. I may not be the best of help currently, sorry.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.say_1")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "mission") then
-		npcHandler:say("Besides my various {duties} in the temple, I also take care of visitors. Well, I would but right now I can't get my mind of how my {father}'s doing. I am sorry.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.say_2")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "imbuing") or MsgContains(message, "imbuements") then
 		npcHandler:say({
@@ -85,7 +85,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.Ivalisse) == 1 or player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.Chalice) == 1 then
-			npcHandler:say("Well, I hope you like it here. We tried to rebuild in the Shaper's will. I am a bit preoccupied at the moment because of the absence of my father. I may not be the best of help currently, sorry.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.say_3")
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.DragonkingKilled) >= 1 and player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.Ivalisse) < 1 then
 			npcHandler:say({
@@ -108,13 +108,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("You would? That's great! Thank you! If you can find my father, tell him I understand and that I really miss him!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.say_4")
 			player:setStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.AccessFire, 1)
 			player:setStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.Chalice, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
-		npcHandler:say("Oh nevermind, I am sorry I asked you for this.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ivalisse.say_5")
 		npcHandler:setTopic(playerId, 0)
 	end
 

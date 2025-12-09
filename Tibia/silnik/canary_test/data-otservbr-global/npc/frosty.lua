@@ -57,7 +57,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if sleightInfo[message] ~= nil then
 		if getPlayerStorageValue(creature, sleightInfo[message].storageID) ~= -1 then
-			npcHandler:say("You already have this sleigh!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.frosty.say_1")
 			npcHandler:resetNpc(player)
 		else
 			local itemsTable = sleightInfo[message].items
@@ -85,7 +85,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			return true
 		end
 	elseif message:lower() == "percht" then
-		npcHandler:say("Nasty creatures especially their queen that sits frozzen on her throne beneath this island.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.frosty.say_3")
 	elseif MsgContains(message, "yes") then
 		if talkState[playerId] >= Storage.Percht1 and talkState[playerId] <= Storage.Percht3 then
 			local items_number = 0
@@ -106,9 +106,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				end
 				doPlayerAddMount(creature, sleightInfo[rtnt[playerId]].mount)
 				setPlayerStorageValue(creature, sleightInfo[rtnt[playerId]].storageID, 1)
-				npcHandler:say("Here you are.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.frosty.say_4")
 			else
-				npcHandler:say("You do not have needed items!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.frosty.say_5")
 			end
 			rtnt[playerId] = nil
 			talkState[playerId] = 0
@@ -122,7 +122,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:resetNpc(player)
 		return true
 	elseif MsgContains(message, "help") then
-		npcHandler:say("Just tell me which {sleigh} you want to know more about.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.frosty.say_6")
 		rtnt[playerId] = nil
 		talkState[playerId] = 0
 		npcHandler:resetNpc(player)
@@ -130,7 +130,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	else
 		if talkState[playerId] ~= nil then
 			if talkState[playerId] > 0 then
-				npcHandler:say("Come back when you get these items.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.frosty.say_7")
 				rtnt[playerId] = nil
 				talkState[playerId] = 0
 				npcHandler:resetNpc(player)

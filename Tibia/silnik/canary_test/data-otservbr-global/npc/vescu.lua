@@ -103,7 +103,7 @@ local function greetCallback(npc, creature)
 		npcHandler:setMessage(MESSAGE_GREET, "Hey t-there, you look like someone who enjoys a good {booze}.")
 		npcHandler:setInteraction(npc, creature)
 	else
-		npcHandler:say("Oh, two t-trolls. Hellooo, wittle twolls. <hicks>", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.say_1")
 		endConversationWithDelay(npcHandler, npc, creature)
 		return false
 	end
@@ -121,13 +121,13 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "sober") then
 		if player:getStorageValue(Storage.Quest.U7_8.AssassinOutfits.AssassinBaseOutfit) < 1 then
-			npcHandler:say("I wish there was like a {potion} which makes you sober in an instant. Dwarven rings wear off so fast. <hicks>", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.say_2")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "potion") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:getStorageValue(Storage.Quest.U7_8.AssassinOutfits.AssassinBaseOutfit) < 1 then
-				npcHandler:say("It's so hard to know the exact time when to stop drinking. <hicks> C-could you help me to brew such a potion?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.say_3")
 				npcHandler:setTopic(playerId, 2)
 			end
 		end
@@ -141,7 +141,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "secret") then
 		if player:getStorageValue(Storage.Quest.U7_8.AssassinOutfits.AssassinBaseOutfit) == 8 then
-			npcHandler:say("Right. <hicks> Since you helped me to b-brew that potion and thus ensured the high quality of my work <hicks>, I'll give you my old assassin costume. It lacks the head part, but it's almost like new. Don't pretend to be me though, 'kay? <hicks>", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.say_4")
 			player:addOutfit(156)
 			player:addOutfit(152)
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
@@ -162,13 +162,13 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.OutfitQuest.DefaultStart, 1)
 			end
 			player:setStorageValue(Storage.Quest.U7_8.AssassinOutfits.AssassinBaseOutfit, 1)
-			npcHandler:say("G-good. Go get them, I'll have a beer in the meantime.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.say_5")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			local targetMessage = config[topic[playerId]]
 			local count = targetMessage.count or 1
 			if not player:removeItem(targetMessage.itemId, count) then
-				npcHandler:say("Next time you lie to me I'll k-kill you. <hicks> Don't think I can't aim well just because I'm d-drunk.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.say_6")
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -179,9 +179,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) ~= 4 then
-			npcHandler:say("Then not <hicks>.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.say_7")
 		elseif npcHandler:getTopic(playerId) == 4 then
-			npcHandler:say("H-hurry up! <hicks> I have to start working soon.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vescu.say_8")
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

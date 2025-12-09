@@ -55,7 +55,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline) == 25 then
-			npcHandler:say("You made it! Az zoon az you are prepared, I will brief you for your nexzt mizzion. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zizzle.say_1")
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission08, 2) --Questlog, Wrath of the Emperor "Mission 08: Uninvited Guests"
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission09, 0) --door access
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.TeleportAccess.Zizzle, 3) --teleport access
@@ -91,7 +91,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addItem(11362, 1)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say({ "Now go to the north of Sleeping Dragon room, {dont need talk} with he!" }, npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zizzle.say_2")
 			end
 		end
 	elseif MsgContains(message, "yes") then

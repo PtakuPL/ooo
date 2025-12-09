@@ -69,7 +69,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if table.contains({ "fuck", "idiot", "asshole", "ass", "fag", "stupid", "tyrant", "shit", "lunatic" }, message) then
-		npcHandler:say("Take this!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.busty_bonecrusher.say_1")
 		local player = Player(creature)
 		player:getPosition():sendMagicEffect(CONST_ME_EXPLOSIONAREA)
 		player:addCondition(condition)

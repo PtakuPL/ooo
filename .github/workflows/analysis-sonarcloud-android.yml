@@ -93,7 +93,7 @@ jobs:
                 -S . -B build-android
 
       - name: Run PR sonar-scanner
-        if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && secrets.SONARCLOUDTOKEN != '' }}
+        if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository }}
         uses: SonarSource/sonarqube-scan-action@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -111,7 +111,7 @@ jobs:
             -Dsonar.pullrequest.base=${{ github.event.pull_request.base.ref }}
 
       - name: Run sonar-scanner
-        if: ${{ github.event_name == 'push' && secrets.SONARCLOUDTOKEN != '' }}
+        if: ${{ github.event_name == 'push' }}
         uses: SonarSource/sonarqube-scan-action@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

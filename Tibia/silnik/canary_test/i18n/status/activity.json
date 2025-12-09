@@ -1,160 +1,160 @@
 {
-  "last_updated": "2025-12-09 03:03:46",
+  "last_updated": "2025-12-09 03:07:24",
   "current_operation": {
     "type": "cycle_end",
     "phase": 1,
     "category": "scripts",
-    "file": "Cykl 2",
+    "file": "Cykl 3",
     "action": "Zakończono przetwarzanie",
     "status": "completed",
     "details": "10 plików"
   },
   "recent_operations": [
     {
-      "time": "2025-12-09 03:03:46",
+      "time": "2025-12-09 03:07:24",
       "type": "cycle_end",
-      "file": "Cykl 2",
+      "file": "Cykl 3",
       "action": "Zakończono przetwarzanie",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:03:46",
+      "time": "2025-12-09 03:07:24",
       "type": "process",
-      "file": "faloriel.lua",
+      "file": "tarun.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:03:44",
+      "time": "2025-12-09 03:07:22",
       "type": "process",
-      "file": "faloriel.lua",
+      "file": "tarun.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:03:44",
+      "time": "2025-12-09 03:07:22",
       "type": "process",
-      "file": "inkaef.lua",
+      "file": "gewen.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:03:42",
+      "time": "2025-12-09 03:07:19",
       "type": "process",
-      "file": "inkaef.lua",
+      "file": "gewen.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:03:42",
+      "time": "2025-12-09 03:07:19",
       "type": "process",
-      "file": "lynda.lua",
+      "file": "vulturenose.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:03:35",
+      "time": "2025-12-09 03:07:13",
       "type": "process",
-      "file": "lynda.lua",
+      "file": "vulturenose.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:03:35",
+      "time": "2025-12-09 03:07:11",
       "type": "process",
-      "file": "topsy.lua",
+      "file": "vascalir.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:03:32",
+      "time": "2025-12-09 03:06:59",
       "type": "process",
-      "file": "topsy.lua",
+      "file": "vascalir.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:03:32",
+      "time": "2025-12-09 03:06:59",
       "type": "process",
-      "file": "klaus.lua",
+      "file": "ulala.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:03:31",
+      "time": "2025-12-09 03:06:57",
       "type": "process",
-      "file": "klaus.lua",
+      "file": "ulala.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:03:31",
+      "time": "2025-12-09 03:06:56",
       "type": "process",
-      "file": "walter_jaeger.lua",
+      "file": "mr_morris.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:03:17",
+      "time": "2025-12-09 03:06:51",
       "type": "process",
-      "file": "walter_jaeger.lua",
+      "file": "mr_morris.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:03:17",
+      "time": "2025-12-09 03:06:51",
       "type": "process",
-      "file": "pig.lua",
+      "file": "halvar.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:03:16",
+      "time": "2025-12-09 03:06:48",
       "type": "process",
-      "file": "pig.lua",
+      "file": "halvar.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:03:16",
+      "time": "2025-12-09 03:06:48",
       "type": "process",
-      "file": "eremo.lua",
+      "file": "king_tibianus.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:03:13",
+      "time": "2025-12-09 03:06:39",
       "type": "process",
-      "file": "eremo.lua",
+      "file": "king_tibianus.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:03:12",
+      "time": "2025-12-09 03:06:39",
       "type": "process",
-      "file": "terrence.lua",
+      "file": "humgolf.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:03:10",
+      "time": "2025-12-09 03:06:38",
       "type": "process",
-      "file": "terrence.lua",
+      "file": "humgolf.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:03:10",
+      "time": "2025-12-09 03:06:37",
       "type": "process",
-      "file": "hamish.lua",
-      "action": "NPC multiline extraction",
+      "file": "elane.lua",
+      "action": "Lua migration",
       "status": "completed"
     }
   ],
   "errors": [],
   "warnings": [],
   "stats": {
-    "files_this_session": 637,
+    "files_this_session": 657,
     "keys_this_session": 0,
     "errors_this_session": 0,
     "fixes_applied": 0

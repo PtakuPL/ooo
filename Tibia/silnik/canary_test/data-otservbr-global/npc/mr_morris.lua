@@ -146,7 +146,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			)
 			npcHandler:setTopic(playerId, 4)
 		elseif player:getStorageValue(Storage.Quest.U10_55.Dawnport.TheDormKey) == 4 then
-			npcHandler:say("Ah, you're here to report about the {key} - any progress?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_1")
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "yes") then
@@ -181,11 +181,11 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.HerbFlower, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
-			npcHandler:say("Good. Just chat with the guys. Someone is bound to remember *something* about that key.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_2")
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.TheDormKey, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
-			npcHandler:say("The key to the dormitory! Finally! You're a real sleuth. Here's your reward.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_3")
 			player:removeItem(21392, 1)
 			player:addItem(3031, 50)
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.TheDormKey, 5)
@@ -233,12 +233,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 6)
 		elseif player:getStorageValue(Storage.Quest.U10_55.Dawnport.MorriskTroll) == 1 then
 			if player:getStorageValue(Storage.Quest.U10_55.Dawnport.MorrisTrollCount) >= 20 then
-				npcHandler:say("Ah, very good job. That should put a crimp in their activities. Here's your reward.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_4")
 				player:setStorageValue(14898, 1)
 				player:setStorageValue(Storage.Quest.U10_55.Dawnport.MorriskTroll, 2)
 				player:addItem(3031, 50)
 			else
-				npcHandler:say("Come back when you have slain {20 mountain trolls!}", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_5")
 			end
 		end
 	elseif MsgContains(message, "goblins") then
@@ -251,12 +251,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 7)
 		elseif player:getStorageValue(Storage.Quest.U10_55.Dawnport.MorrisGoblin) == 1 then
 			if player:getStorageValue(Storage.Quest.U10_55.Dawnport.MorrisGoblinCount) >= 20 then
-				npcHandler:say("Ah, very good job. That should put a crimp in their activities. Here's your reward.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_6")
 				player:setStorageValue(14899, 1)
 				player:setStorageValue(Storage.Quest.U10_55.Dawnport.MorrisGoblin, 2)
 				player:addItem(3031, 50)
 			else
-				npcHandler:say("Come back when you have slain {20 muglex clan footman!}", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_7")
 			end
 		end
 	elseif MsgContains(message, "minotaur") then
@@ -269,15 +269,15 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 8)
 		elseif player:getStorageValue(Storage.Quest.U10_55.Dawnport.MorrisMinos) == 1 then
 			if player:getStorageValue(Storage.Quest.U10_55.Dawnport.MorrisMinosCount) >= 20 then
-				npcHandler:say("Ah, very good job. That should put a crimp in their activities. Here's your reward.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_8")
 				player:setStorageValue(14900, 1)
 				player:setStorageValue(Storage.Quest.U10_55.Dawnport.MorrisMinos, 2)
 				player:addItem(3031, 50)
 			else
-				npcHandler:say("Come back when you have slain {20 minotaur bruisers!}", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_9")
 			end
 		elseif player:getStorageValue(Storage.Quest.U10_55.Dawnport.MorrisMinos) == 2 then
-			npcHandler:say("You already done this task.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_10")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

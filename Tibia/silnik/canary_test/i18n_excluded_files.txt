@@ -4933,3 +4933,5 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/mordecai.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/frans.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/hamish.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/a_beautiful_girl.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/the_lootmonger.lua

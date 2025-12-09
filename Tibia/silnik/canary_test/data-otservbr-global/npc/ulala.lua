@@ -66,7 +66,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline) == 6 then
-			npcHandler:say("Come back if you finished the dance.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.say_1")
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline) == 7 then
 			npcHandler:say({
@@ -78,7 +78,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Mission04, 1) --Questlog, Unnatural Selection Quest "Mission 4: Bits and Pieces"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline) == 8 then
-			npcHandler:say("Please help tribe make Pandor happy! Did you bring us what I asked?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.say_2")
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline) == 9 then
 			npcHandler:say({
@@ -90,10 +90,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Mission05, 1) --Questlog, Unnatural Selection Quest "Mission 5: Ray of Light"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline) == 10 then
-			npcHandler:say("Please find great crystal of Fasuon and pray there for his support!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.say_3")
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline) == 11 then
-			npcHandler:say("You prayed to Fasuon! Me saw ray of lights on mountain top! Beautiful it was. Me thank you for your help. Great hunt almost can't go wrong now!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.say_4")
 			player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline, 12)
 			player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Mission05, 3) --Questlog, Unnatural Selection Quest "Mission 5: Ray of Light"
 			npcHandler:setTopic(playerId, 0)
@@ -108,7 +108,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "krunus") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Krunus is God for plants and birth. He hidden in all that grows.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.say_5")
 			player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline, 6)
 			player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Mission03, 2) --Questlog, Unnatural Selection Quest "Mission 3: Dance Dance Evolution"
 			player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.DanceStatus, 1)
@@ -120,12 +120,12 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:removeItem(10196, 5)
 				player:removeItem(5878, 5)
 				player:removeItem(5876, 5)
-				npcHandler:say("Me thank you! Me will bring sacrifice for Pandor. He surely be pleased with our work. Well your work, but me won't tell him. Teehee.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.say_6")
 				player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline, 9)
 				player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Mission04, 2) --Questlog, Unnatural Selection Quest "Mission 4: Bits and Pieces"
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You do not have these things!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ulala.say_7")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end

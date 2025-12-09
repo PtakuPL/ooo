@@ -1,14 +1,14 @@
 {
   "category": "scripts",
   "status": "in_progress",
-  "last_updated": "2025-12-09T03:01:13+01:00",
+  "last_updated": "2025-12-09T03:04:55+01:00",
   "summary": {
     "total_keys": 713,
-    "files_processed": 433
+    "files_processed": 453
   },
   "current_work": {
     "directory": "data-otservbr-global/scripts/",
-    "cycle": 2
+    "cycle": 3
   },
   "subdirectories": {
     "quests": {"processed": 0},
@@ -16,28 +16,28 @@
   },
   "recent_files": [
   {
-    "file": "emperor_kruzak.lua",
-    "time": "03:01:13",
+    "file": "klaus.lua",
+    "time": "03:04:55",
     "status": "success"
   },
   {
-    "file": "gnomerik.lua",
-    "time": "03:01:13",
+    "file": "topsy.lua",
+    "time": "03:04:55",
     "status": "success"
   },
   {
-    "file": "willard.lua",
-    "time": "03:01:13",
+    "file": "lynda.lua",
+    "time": "03:04:55",
     "status": "success"
   },
   {
-    "file": "nah_bob.lua",
-    "time": "03:01:13",
+    "file": "inkaef.lua",
+    "time": "03:04:55",
     "status": "success"
   },
   {
-    "file": "stutch.lua",
-    "time": "03:01:13",
+    "file": "faloriel.lua",
+    "time": "03:04:55",
     "status": "success"
   }
 ]

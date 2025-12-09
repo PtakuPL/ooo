@@ -46015,6 +46015,195 @@ npc.faloriel.say_1,"So, the Librarian sent you. Well, yes, I have a vial of the 
 npc.faloriel.say_2,I don't have anything to offer you regarding a ring.,,missing
 npc.faloriel.say_3,"Great. Here, take it.",,missing
 npc.faloriel.say_4,You do not have enough money.,,missing
+npc.khanna.say_1,"Sorry, you aren't a druid either a sorcerer.",,missing
+npc.khanna.say_2,"Here you are young adept, take care yourself.",,missing
+npc.khanna.say_3,Ok then.,,missing
+npc.chantalle.say_1,"Oh my! You look so great in your uniform! You archpostmen are not only daring but also handsome. Here take it, that's the key you wanted. Just promise to visit me now and then!",,missing
+npc.chantalle.say_2,"Oh my, such a lovely necklace! Here take it, that's the key you wanted. Now let me admire my precious necklace alone.",,missing
+npc.chantalle.say_3,"I am sorry, I am not interested in your money. Maybe you should try your luck with Herbert, the postman instead.",,missing
+npc.cornelia.stdmod_1,"I run this armoury. If you want to protect your life, you better buy my wares.",,missing
+npc.cornelia.say_2,"Ah, you must be the hero Trisha talked about. I'll prepare the shoulder spikes for you. Please give me some time to finish.",,missing
+npc.cornelia.say_3,I'm not done yet. Please be as patient as you are courageous.,,missing
+npc.cornelia.say_4,"Finished! Since you are a man, I thought you probably wanted two. Men always want that little extra status symbol. <giggles>",,missing
+npc.cornelia.say_5,"I'm selling leather armor, chain armor, and brass armor. Ask me for a {trade} if you like to take a look.",,missing
+npc.yana.say_1,{Tokens} are small objects made of metal or other materials. You can use them to buy superior equipment from token traders like me.,,missing
+npc.yana.say_2,"Disrupt the Heart of Destruction, fell the World Devourer to prove your worth and you will be granted the power to imbue 'Powerful Strike', 'Powerful Void' and --'Powerful Vampirism'.",,missing
+npc.yana.say_3,"If you have any gold tokens with you, let's have a look! These are my offers.",,missing
+npc.yana.say_4,"I have creature products for the imbuements {strike}, {vampirism} and {void}. Make your choice, please!",,missing
+npc.yana.say_5,There it is.,,missing
+npc.yana.say_6,You don't have enough capacity. You must have ,,missing
+npc.yana.say_7,Your decision. Come back if you have changed your mind.,,missing
+npc.telas.say_1,I have heard only little about this mine. I am a bit absorbed in my studies. But what does this mine have to do with me?,,missing
+npc.telas.say_2,"You are starting this discussion again? Why should I listen to you this time, do you have anything to convince me to let you even try?",,missing
+npc.telas.say_3,Well it sounds like a good idea to test my golems in some real environment. I think it is acceptable to send some of them to Farmine.,,missing
+npc.telas.say_4,"Well, of course my worker golems are quite usefull and it might indeed be a good idea to see who they operate on realistic conditions. I will send some to farmine soon.",,missing
+npc.telas.say_5,"Well, if the situation is that desperate I think it is possible to send some of the golems to help the poor dwarfs out of their misery.",,missing
+npc.telas.say_6,Oh how nice of you. I might have misjudged you. So let us return to this matter of worker golems. Do you have any better arguments this time?,,missing
+npc.telas.say_7,Wrong Word.,,missing
+npc.ikassis.say_1,"The wolf's ghost has found peace. Thank you, human being. However, there is someone else who needs help: A sister of mine who's bereft of something very precious. You'll find her in the guise of a swan at a small river south-east of here.",,missing
+npc.ikassis.say_2,You are not on that mission.,,missing
+npc.ikassis.say_3,Then not.,,missing
+npc.bloodshade_rotten.say_1,You already have started this quest.,,missing
+npc.jamesfrancis.say_1,The minotaurs I faced in the cave are much stronger than the normal ones. What I were able to see before I had to flee: all of them seem to belong to a cult worshipping their god. Could you do me a {favour}?,,missing
+npc.jamesfrancis.say_2,"I'd like to work in this cave researching the minotaurs. But right now there are too many of hem and what is more, they are too powerful for me. Could you enter the cave and kill at least 50 of these creatures?",,missing
+npc.jamesfrancis.say_3,Great job! You have killed at least 50 of these monsters. I give this key to you to open the door to the inner area. Go there and find out what's going on.,,missing
+npc.jamesfrancis.say_4,Come back when you have killed enough minotaurs.,,missing
+npc.jamesfrancis.say_5,Very nice. Return to me if you've finished your job.,,missing
+npc.ishina.say_1,"My jewelled belt? Of course I could make one for you, but I have a small request. Would you fulfil a task for me?",,missing
+npc.ishina.say_2,Have you brought me a mermaid's comb?,,missing
+npc.ishina.say_3,Yay! I will wait for you to return with a mermaid's comb then.,,missing
+npc.ishina.say_4,No... that's not it.,,missing
+npc.ishina.say_5,"Yeah! That's it! I can't wait to comb my hair! Oh - but first, I'll fulfil my promise: Here is your jewelled belt! Thanks again!",,missing
+npc.ishina.say_6,Oh... okay.,,missing
+npc.ishina.stdmod_7,I am a jeweller. Maybe you want to have a look at my wonderful {offers}.,,missing
+npc.ishina.stdmod_8,"Well, I sell gems and {goblets}. If you'd like to see my offers, ask me for a {trade}.",,missing
+npc.ishina.stdmod_9,"Ah, our newest import! We have golden goblets, silver goblets and bronze goblets. All of them have space for a hand-written dedication.",,missing
+npc.angelo.say_1,The scientists are still missing? You just found some strange green shining mummies and a big oasis? I give you this analysis tool for the water of the oasis. Maybe that's the key. Could you bring me a sample of this water?,,missing
+npc.angelo.say_2,Very good. Hopefully analysing this sample will get us closer to the solution of this mistery.,,missing
+npc.angelo.say_3,Do you have the sample I asked you for?,,missing
+npc.angelo.say_4,"Thanks a lot. Let me check the result. Well, I think you need the counteragent. Please apply it to the oasis!",,missing
+npc.angelo.say_5,What has happened? You applied the counteragent to the oasis and then it was destroyed by a sandstorm? Keep on investigating the place.,,missing
+npc.angelo.say_6,Just get out of my way! You killed this beautiful creature. I have nothing more to say. Damn druid of Crunor!,,missing
+npc.angelo.say_7,"{Gareth} told you that there are rumours about fake artefacts in the MoTA? And it is your task to check that with a magnifier? I see. I don't need one right now, so you can have one of mine. You find one in the crate over there.",,missing
+npc.angelo.say_8,"So you found out that one artefact in the MoTA is fake? And {Gareth} sent you to me to get a new artefact as a replacement? Sorry, I hardly know you so I don't trust you. I won't help you with that!",,missing
+npc.angelo.say_9,The project is called 'Sandy {Cave} Project' and is funded by the {MoTA}. Its goal is the investigation of this {cave}.,,missing
+npc.angelo.say_10,MoTA is short for the recently founded Museum of Tibian Arts. We work together in close collaboration. New {results} are communicated to the museum instantly.,,missing
+npc.angelo.say_11,"We have no scientific results so far to reach our {goal}, because my workers aren't back yet. Should I be {worried}?",,missing
+npc.angelo.say_12,Then I have to find out why they don't return. But I'm old and my back aches. Would you like to go there and look for my workers?,,missing
+npc.angelo.say_13,Fantastic! Go there and then tell me what you've seen. I've opened the door for you. Take care of yourself!,,missing
+npc.angelo.say_14,"We don't know exactly why this cave has now exposed an entry via the {dark pyramid}. It seems that the cave already existed for a long time, however, without a connection to our world. Maybe some smaller earth movements have changed the situation.",,missing
+npc.angelo.say_15,We don't know yet to wich extent the cave and the dark pyramid belong together. Thisi s what we try to find out. Maybe the history of this place has to be rewritten.,,missing
+npc.elane.say_1,"Oh, my winged tiara? Those are traditionally awarded after having completed a difficult {task} for our guild, only to female aspirants though. Male warriors will receive a hooded cloak.",,missing
+npc.elane.say_2,So you are saying that you would like to prove that you deserve to wear such a hooded cloak?,,missing
+npc.elane.say_3,I'm so excited! Have you really found my crossbow?,,missing
+npc.elane.say_4,Did you bring me 100 pieces of lizard leather and 100 pieces of red dragon leather?,,missing
+npc.elane.say_5,Were you able to get hold of 5 enchanted chicken wings?,,missing
+npc.elane.say_6,"Ah, have you brought one piece of royal steel, draconian steel and hell steel each?",,missing
+npc.elane.say_7,"That's the spirit! I hope you will find my crossbow, |PLAYERNAME|!",,missing
+npc.elane.say_8,"Yeah! I could kiss you right here and there! Besides, you're a handsome one. <giggles> Please bring me 100 pieces of lizard leather and 100 pieces of red dragon leather now!",,missing
+npc.elane.say_9,You don't have it...,,missing
+npc.elane.say_10,"Good work, |PLAYERNAME|! That is enough leather for a lot of sturdy quivers. Now, please bring me 5 enchanted chicken wings.",,missing
+npc.elane.say_11,You don't have it...,,missing
+npc.elane.say_12,"Great! Now we can create a few more Tiaras. If only they weren't that expensive... Well anyway, please obtain one piece of royal steel, draconian steel and hell steel each.",,missing
+npc.elane.say_13,You don't have it...,,missing
+npc.elane.say_14,"Wow, I'm impressed, |PLAYERNAME|. Your really are a valuable member of our paladin guild. I shall grant you your reward now. Wear it proudly!",,missing
+npc.elane.say_15,You don't have it...,,missing
+npc.elane.say_16,Then no.,,missing
+npc.elane.stdmod_17,"We are always looking for sniper gloves. They are supposed to raise accuracy. If you find a pair, bring them here. Maybe I can offer you a nice trade.",,missing
+npc.elane.stdmod_18,I am the leader of the Paladins. I help our members.,,missing
+npc.elane.stdmod_19,I am the leader of the Paladins. I help our members.,,missing
+npc.elane.stdmod_20,Paladins are great warriors and magicians. Besides that we are excellent missile fighters. Many people in Tibia want to join us.,,missing
+npc.elane.stdmod_21,"Of course, we aren't as strong as knights, but no druid or sorcerer will ever defeat a paladin with a sword.",,missing
+npc.elane.stdmod_22,There are many magic spells and runes paladins can use.,,missing
+npc.elane.stdmod_23,Paladins are the best missile fighters in Tibia!,,missing
+npc.elane.stdmod_24,"I am a paladin, not a storyteller.",,missing
+npc.elane.stdmod_25,Every paladin profits from his vocation. It has many advantages to be a paladin.,,missing
+npc.elane.stdmod_26,We will help you to improve your skills. Besides I offer spells for paladins.,,missing
+npc.elane.stdmod_27,Harkath Bloodblade is the royal general.,,missing
+npc.elane.stdmod_28,Some paladins serve in the kings army.,,missing
+npc.elane.stdmod_29,He has some potential.,,missing
+npc.elane.stdmod_30,How spineless do you have to be to become a jester?,,missing
+npc.elane.stdmod_31,The McRonalds are simple farmers.,,missing
+npc.elane.stdmod_32,He must have been skilled before he became the way he is now. Such a pity.,,missing
+npc.elane.stdmod_33,The alcohol he sells shrouds the mind and the eye.,,missing
+npc.elane.stdmod_34,One of the most important members of our guild. She makes all the bows and arrows we need.,,missing
+npc.elane.stdmod_35,He sells a lot of useful equipment.,,missing
+npc.elane.stdmod_36,He and his guildfellows lack the grace of a true warrior.,,missing
+npc.elane.stdmod_37,A fine warrior and a skilled general.,,missing
+npc.elane.stdmod_38,King Tibianus is a wise ruler.,,missing
+npc.elane.stdmod_39,A follower of evil that will get what he deserves one day.,,missing
+npc.elane.stdmod_40,"Mhm, a little too nice for my taste. Still, it's amazing how she endures all those men stalking her, especially this creepy Oswald.",,missing
+npc.elane.stdmod_41,"A skilled healer, that's for sure.",,missing
+npc.elane.stdmod_42,Just another arrogant sorcerer.,,missing
+npc.elane.stdmod_43,If there wouldn't be higher powers to protect him...,,missing
+npc.elane.stdmod_44,A humble monk and a wise man.,,missing
+npc.elane.stdmod_45,Strong man. But a little shy.,,missing
+npc.humgolf.say_1,"Bah, Farmine here, Farmine there. Is there nothing else than Farmine to talk about these days? Hrmpf, whatever. So what do you want?",,missing
+npc.humgolf.say_2,You are here to apologise? Have you got anything that would make me reconsider my decision never to talk to you again about this subject?,,missing
+npc.humgolf.say_3,"Yeah, of course they can't do without my worms. Mining and worms go hand in hand. Well, in the case of the worms it is only an imaginary hand of course. I'll send them some of my finest worms.",,missing
+npc.humgolf.say_4,Hah! Now you talk like a dwarf! That's the spirit! Of course you can have some of my worms. I'll send a bunch to Farmine as soon as possible.,,missing
+npc.humgolf.say_5,"Uh, how cute! Look how he's snapping for my fingers! You really know how to make an old dwarf happy! Well, so let's try again. Why do you think I should send my precious worms to Farmine?",,missing
+npc.humgolf.say_6,Wrong Word.,,missing
+npc.king_tibianus.say_1,"Ah, I vaguely remember that our little allies were eager to build some base. So speak up, what do you want?",,missing
+npc.king_tibianus.say_2,Do you have anything that might change my mind?,,missing
+npc.king_tibianus.say_3,"Indeed, indeed. Without the help of Thais, our allies stand no chance! Well, I'll send some money to support their cause.",,missing
+npc.king_tibianus.say_4,"In exchange for a truly generous donation, I will offer a special outfit. Do you want to make a donation?",,missing
+npc.king_tibianus.say_5,"In that case, return to me once you made up your mind.",,missing
+npc.king_tibianus.say_6,"Take this armor as a token of great gratitude. Let us forever remember this day, my friend!",,missing
+npc.king_tibianus.say_7,Please make sure you have free slots in your store inbox.,,missing
+npc.king_tibianus.say_8,You do not have enough money to donate that amount.,,missing
+npc.king_tibianus.say_9,You alread have that addon.,,missing
+npc.king_tibianus.say_10,"Take this helmet as a token of great gratitude. Let us forever remember this day, my friend. ",,missing
+npc.king_tibianus.say_11,You do not have enough money to donate that amount.,,missing
+npc.king_tibianus.say_12,You alread have that outfit.,,missing
+npc.king_tibianus.say_13,You need to donate {armor} outfit first.,,missing
+npc.king_tibianus.say_14,"Take this boots as a token of great gratitude. Let us forever remember this day, my friend. ",,missing
+npc.king_tibianus.say_15,You do not have enough money to donate that amount.,,missing
+npc.king_tibianus.say_16,You alread have that outfit.,,missing
+npc.king_tibianus.say_17,You need to donate {helmet} addon first.,,missing
+npc.king_tibianus.say_18,"Ah, I vaguely remember that our little allies were eager to build some base. So speak up, what do you want?",,missing
+npc.king_tibianus.say_19,So you wold like to donate 500.000.000 gold pieces which in return will entitle you to wear a unique armor?,,missing
+npc.king_tibianus.say_20,So you would like to donate 250.000.000 gold pieces which in return will entitle you to wear unique helmet?,,missing
+npc.king_tibianus.say_21,So you would like to donate 250.000.000 gold pieces which in return will entitle you to wear a unique boots?,,missing
+npc.king_tibianus.say_22,Wrong Word.,,missing
+npc.halvar.stdmod_1,"What do you want to know? Something about the three different {difficulties}, the {general} rules or the {prices}? Maybe you also want to know what happens when you {die}?",,missing
+npc.halvar.stdmod_2,"There are three difficulties: Greenhorn, Scrapper and Warlord. On each challenge you will be confronted with ten monsters increasing in strength.",,missing
+npc.halvar.stdmod_3,"There are three difficulties: Greenhorn, Scrapper and Warlord. On each challenge you will be confronted with ten monsters increasing in strength.",,missing
+npc.halvar.stdmod_4,"There are three difficulties: Greenhorn, Scrapper and Warlord. On each challenge you will be confronted with ten monsters increasing in strength.",,missing
+npc.halvar.stdmod_5,That is the easiest way in our arena. The {fee} is 1000 gold. We were setting this up for of our children to challenge some easy monsters and train them for the future.,,missing
+npc.halvar.stdmod_6,The most common difficulty for us. The {fee} is 5000 gold. So if you are experienced in fighting middle class monsters this is your challenge!,,missing
+npc.halvar.stdmod_7,Only the strongest among us will take this challenge. The {fee} is 10000 gold. If you pass that I promise you the respect of all citizens here. You will be a hero!,,missing
+npc.halvar.stdmod_8,"The fee is either 1000, 5000 or 10000 gold for one try. Remember that if you {die}, it is YOUR problem and you won't be able to get back to your corpse and your backpack.",,missing
+npc.halvar.stdmod_9,"It would be better not to die! In every pit there is an emergency exit, the portal to the south. If you die in a pit... well... your corpse and backpack are gone, so you enter the arena at your own risk.",,missing
+npc.halvar.stdmod_10,"Basically you pay me a {fee}, and you are sent into an arena with 10 different stages. If you succeed you will be rewarded accordingly.",,missing
+npc.halvar.stdmod_11,My job is to explain about the rules and to get the fee from the competitors.,,missing
+npc.halvar.stdmod_12,Well I would rather call it an {Ultimate Challenge} than a mission.,,missing
+npc.halvar.say_13,"You already paid the fee, go and fight!",,missing
+npc.halvar.say_14,So you agree with the {rules} and want to participate in the {challenge}? The {fee} for one try in {,,missing
+npc.halvar.say_15,You've already completed the arena in all {difficulty levels}.,,missing
+npc.halvar.say_16,As you wish! You can pass the door now and enter the teleporter to the pits.,,missing
+npc.halvar.say_17,You do not have enough money.,,missing
+npc.halvar.say_18,Come back when you are ready then.,,missing
+npc.mr_morris.say_1,"Ah, you're here to report about the {key} - any progress?",,missing
+npc.mr_morris.say_2,Good. Just chat with the guys. Someone is bound to remember *something* about that key.,,missing
+npc.mr_morris.say_3,The key to the dormitory! Finally! You're a real sleuth. Here's your reward.,,missing
+npc.mr_morris.say_4,"Ah, very good job. That should put a crimp in their activities. Here's your reward.",,missing
+npc.mr_morris.say_5,Come back when you have slain {20 mountain trolls!},,missing
+npc.mr_morris.say_6,"Ah, very good job. That should put a crimp in their activities. Here's your reward.",,missing
+npc.mr_morris.say_7,Come back when you have slain {20 muglex clan footman!},,missing
+npc.mr_morris.say_8,"Ah, very good job. That should put a crimp in their activities. Here's your reward.",,missing
+npc.mr_morris.say_9,Come back when you have slain {20 minotaur bruisers!},,missing
+npc.mr_morris.say_10,You already done this task.,,missing
+npc.ulala.say_1,Come back if you finished the dance.,,missing
+npc.ulala.say_2,Please help tribe make Pandor happy! Did you bring us what I asked?,,missing
+npc.ulala.say_3,Please find great crystal of Fasuon and pray there for his support!,,missing
+npc.ulala.say_4,You prayed to Fasuon! Me saw ray of lights on mountain top! Beautiful it was. Me thank you for your help. Great hunt almost can't go wrong now!,,missing
+npc.ulala.say_5,Krunus is God for plants and birth. He hidden in all that grows.,,missing
+npc.ulala.say_6,"Me thank you! Me will bring sacrifice for Pandor. He surely be pleased with our work. Well your work, but me won't tell him. Teehee.",,missing
+npc.ulala.say_7,You do not have these things!,,missing
+npc.vascalir.say_1,"Welcome, adventurer |PLAYERNAME|. Thank you for offering your help - but you are already too experienced to start this quest. Just go on hunting monsters, you'll be better off that way.",,missing
+npc.vascalir.say_2,"|PLAYERNAME|, the only thing left for you to do here is to talk to the oracle above the academy and leave for the Isle of Destiny. Thanks again for your great work and good luck on your journeys!",,missing
+npc.vascalir.say_3,"Greetings, |PLAYERNAME|. Right now I don't need your help. I heard that Lily south-west of here requires assistance though.",,missing
+npc.vascalir.say_4,"Greetings, |PLAYERNAME|. Right now I don't need your help. You should pay a visit to Tom the Tanner. His hut is south-west of the academy!",,missing
+npc.vascalir.say_5,You can find the vault if you go down the stairs in the northern part of the academy. The book should be in a large blue chest somewhere down there - I hope it's not burnt yet.,,missing
+npc.vascalir.say_6,I think it's a good idea to go see Paulie before you leave the village again. Just go downstairs and to the right to find the bank.,,missing
+npc.vascalir.say_7,"|PLAYERNAME|, you need to discover the troll tunnel and find a way to make it collapse. Maybe you're able to use some of the trolls' tools. Make sure they can't enter the village via that tunnel anymore!",,missing
+npc.vascalir.say_8,"|PLAYERNAME|, the air smells like victory. Head into the orc fortress and vanquish Kraknaknork once and for all. Don't forget to take the items from below the academy!",,missing
+npc.vascalir.stdmod_9,"OK, dude!",,missing
+npc.vulturenose.say_1,"Hey, I rarely see a dashing pirate like you! Get in, matey!",,missing
+npc.vulturenose.say_2,YOU WILL NOT PASS! Erm ... I mean you don't look like a true pirate to me. You won't get in.,,missing
+npc.gewen.say_1,Your weekly ticket is still valid. Would be a waste of money to purchase a second one,,missing
+npc.gewen.say_2,Do you want to purchase a weekly ticket for the ore wagons? With it you can travel freely and swiftly through Kazordoon for one week. 250 gold only. Deal?,,missing
+npc.gewen.say_3,You don't have enough money.,,missing
+npc.gewen.say_4,Here is your stamp. It can't be transferred to another person and will last one week from now. You'll get notified upon using an ore wagon when it isn't valid anymore.,,missing
+npc.gewen.say_5,No then.,,missing
+npc.gewen.stdmod_6,Never heard about a place like this.,,missing
+npc.gewen.stdmod_7,Do you seek a ride to ,,missing
+npc.gewen.stdmod_8,You shouldn't miss the experience.,,missing
+npc.gewen.stdmod_9,"I can fly you to {Darashia}, {Svargrond}, {Edron}, {Issavi}, {Zao}, {Femor Hills} or to {Marapur} if you like. Where do you want to go?",,missing
+npc.tarun.say_1,I hope you will find my brother.,,missing
+npc.tarun.say_2,I thank you! This is more than I could hope!,,missing
+npc.tarun.say_3,As you wish.,,missing
 player.status.cleanse,You are no longer {0}. (cleanse charm),Nie jesteś już {0}. (urok oczyszczenia),translated
 player.condition.poisoned,You are poisoned.,Jesteś zatruty.,translated
 player.condition.drowning,You are drowning.,Toniesz.,translated

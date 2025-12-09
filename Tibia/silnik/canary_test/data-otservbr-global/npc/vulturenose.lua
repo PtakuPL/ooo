@@ -60,10 +60,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			local legsItem = player:getSlotItem(CONST_SLOT_LEGS)
 			local feetItem = player:getSlotItem(CONST_SLOT_FEET)
 			if headItem and headItem.itemid == 6096 and armorItem and armorItem.itemid == 6095 and legsItem and legsItem.itemid == 5918 and feetItem and feetItem.itemid == 5461 then
-				npcHandler:say("Hey, I rarely see a dashing pirate like you! Get in, matey!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vulturenose.say_1")
 				player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.YavernDoor, 1)
 			else
-				npcHandler:say("YOU WILL NOT PASS! Erm ... I mean you don't look like a true pirate to me. You won't get in.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.vulturenose.say_2")
 			end
 		end
 	end

@@ -71,7 +71,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif theLostBrotherStorage == 1 then
-			npcHandler:say("I hope you will find my brother.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tarun.say_1")
 			npcHandler:setTopic(playerId, 0)
 		elseif theLostBrotherStorage == 2 then
 			npcHandler:say({
@@ -85,13 +85,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
-			npcHandler:say("I thank you! This is more than I could hope!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tarun.say_2")
 			if theLostBrotherStorage < 1 then
 				player:setStorageValue(Storage.Quest.U9_80.AdventurersGuild.QuestLine, 1)
 			end
 			player:setStorageValue(Storage.Quest.U10_80.TheLostBrotherQuest, 1)
 		elseif MsgContains(message, "no") then
-			npcHandler:say("As you wish.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tarun.say_3")
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

@@ -74,7 +74,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	local arenaId = player:getStorageValue(Storage.Quest.U8_0.BarbarianArena.Arena)
 	if MsgContains(message, "fight") or MsgContains(message, "pit") or MsgContains(message, "challenge") or MsgContains(message, "arena") then
 		if player:getStorageValue(Storage.Quest.U8_0.BarbarianArena.PitDoor) == 1 then
-			npcHandler:say("You already paid the fee, go and fight!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.halvar.say_13")
 			return true
 		end
 
@@ -87,7 +87,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:say("So you agree with the {rules} and want to participate in the {challenge}? The {fee} for one try in {" .. ARENA[arenaId].name .. "} is " .. ARENA[arenaId].price .. " gold pieces. Do you really want to participate and pay the {fee}?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:say("You've already completed the arena in all {difficulty levels}.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.halvar.say_15")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
@@ -99,17 +99,17 @@ local function creatureSayCallback(npc, creature, type, message)
 
 			if player:removeMoneyBank(ARENA[arenaId].price) then
 				player:setStorageValue(Storage.Quest.U8_0.BarbarianArena.PitDoor, 1)
-				npcHandler:say("As you wish! You can pass the door now and enter the teleporter to the pits.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.halvar.say_16")
 
 				local cStorage = ARENA[arenaId].questLog
 				if player:getStorageValue(cStorage) ~= 1 then
 					player:setStorageValue(cStorage, 1)
 				end
 			else
-				npcHandler:say("You do not have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.halvar.say_17")
 			end
 		else
-			npcHandler:say("Come back when you are ready then.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.halvar.say_18")
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

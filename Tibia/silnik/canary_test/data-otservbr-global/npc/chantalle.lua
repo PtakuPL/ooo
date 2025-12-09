@@ -64,13 +64,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			if headItem and headItem.itemid == 3576 and player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Rank) == 5 and player:getSex() ~= PLAYERSEX_FEMALE then
 				player:addItem(7934)
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission06, 2)
-				npcHandler:say("Oh my! You look so great in your uniform! You archpostmen are not only daring but also handsome. Here take it, that's the key you wanted. Just promise to visit me now and then!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chantalle.say_1")
 			elseif player:removeItem(7939, 1) then
 				player:addItem(7934)
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission06, 2)
-				npcHandler:say("Oh my, such a lovely necklace! Here take it, that's the key you wanted. Now let me admire my precious necklace alone.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chantalle.say_2")
 			else
-				npcHandler:say("I am sorry, I am not interested in your money. Maybe you should try your luck with Herbert, the postman instead.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chantalle.say_3")
 			end
 		end
 	end

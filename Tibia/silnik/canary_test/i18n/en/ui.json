@@ -46,5 +46,10 @@
   "tablebrbr": "</table><br><br>",
   "monster": "Monster",
   "with": "with",
-  "name": "name"
+  "name": "name",
+  "this": "This",
+  "news": "news",
+  "doesnt": "doesn't",
+  "exist": "exist",
+  "hiddenbr": "hidden.<br/>"
 }

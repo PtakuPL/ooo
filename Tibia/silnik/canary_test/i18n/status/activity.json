@@ -1,153 +1,153 @@
 {
-  "last_updated": "2025-12-09 03:16:14",
+  "last_updated": "2025-12-09 03:19:03",
   "current_operation": {
     "type": "cycle_end",
     "phase": 1,
     "category": "scripts",
-    "file": "Cykl 1",
+    "file": "Cykl 2",
     "action": "Zakończono przetwarzanie",
     "status": "completed",
     "details": "10 plików"
   },
   "recent_operations": [
     {
-      "time": "2025-12-09 03:16:14",
+      "time": "2025-12-09 03:19:03",
       "type": "cycle_end",
-      "file": "Cykl 1",
+      "file": "Cykl 2",
       "action": "Zakończono przetwarzanie",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:16:14",
+      "time": "2025-12-09 03:19:03",
       "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/team.php",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/phpmyadmin/setup/validate.php",
       "action": "Ekstrakcja PHP",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:16:14",
+      "time": "2025-12-09 03:19:03",
       "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/team.php",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/phpmyadmin/setup/validate.php",
       "action": "Analiza PHP",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:16:14",
+      "time": "2025-12-09 03:19:03",
       "type": "process",
-      "file": "team.php",
+      "file": "validate.php",
       "action": "Przetwarzanie php",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:16:14",
+      "time": "2025-12-09 03:19:02",
       "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/highscores.php",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/phpmyadmin/libraries/config.values.php",
       "action": "Ekstrakcja PHP",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:16:14",
+      "time": "2025-12-09 03:19:02",
       "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/highscores.php",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/phpmyadmin/libraries/config.values.php",
       "action": "Analiza PHP",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:16:14",
+      "time": "2025-12-09 03:19:02",
       "type": "process",
-      "file": "highscores.php",
+      "file": "config.values.php",
       "action": "Przetwarzanie php",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:16:14",
+      "time": "2025-12-09 03:19:02",
       "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/records.php",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/phpmyadmin/libraries/advisory_rules_generic.php",
       "action": "Ekstrakcja PHP",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:16:14",
+      "time": "2025-12-09 03:19:02",
       "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/records.php",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/phpmyadmin/libraries/advisory_rules_generic.php",
       "action": "Analiza PHP",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:16:14",
+      "time": "2025-12-09 03:19:02",
       "type": "process",
-      "file": "records.php",
+      "file": "advisory_rules_generic.php",
       "action": "Przetwarzanie php",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:16:14",
+      "time": "2025-12-09 03:19:02",
       "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/monsters.php",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/phpmyadmin/libraries/advisory_rules_mysql_before80003.php",
       "action": "Ekstrakcja PHP",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:16:13",
+      "time": "2025-12-09 03:19:02",
       "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/monsters.php",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/phpmyadmin/libraries/advisory_rules_mysql_before80003.php",
       "action": "Analiza PHP",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:16:13",
+      "time": "2025-12-09 03:19:02",
       "type": "process",
-      "file": "monsters.php",
+      "file": "advisory_rules_mysql_before80003.php",
       "action": "Przetwarzanie php",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:16:13",
+      "time": "2025-12-09 03:19:02",
       "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/bans.php",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/node_modules/lazy-ass/index.html",
+      "action": "Ekstrakcja HTML",
+      "status": "completed"
+    },
+    {
+      "time": "2025-12-09 03:19:02",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/node_modules/lazy-ass/index.html",
+      "action": "Analiza HTML",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 03:19:02",
+      "type": "process",
+      "file": "index.html",
+      "action": "Przetwarzanie html",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 03:19:02",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/install/template/template.php",
       "action": "Ekstrakcja PHP",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:16:13",
+      "time": "2025-12-09 03:19:02",
       "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/bans.php",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/install/template/template.php",
       "action": "Analiza PHP",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:16:13",
+      "time": "2025-12-09 03:19:02",
       "type": "process",
-      "file": "bans.php",
+      "file": "template.php",
       "action": "Przetwarzanie php",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:16:13",
+      "time": "2025-12-09 03:19:02",
       "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/polls.php",
-      "action": "Ekstrakcja PHP",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-09 03:16:13",
-      "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/polls.php",
-      "action": "Analiza PHP",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 03:16:12",
-      "type": "process",
-      "file": "polls.php",
-      "action": "Przetwarzanie php",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 03:16:12",
-      "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/exp-stages.php",
-      "action": "Ekstrakcja PHP",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/install/includes/twig_error.html",
+      "action": "Ekstrakcja HTML",
       "status": "completed"
     }
   ],

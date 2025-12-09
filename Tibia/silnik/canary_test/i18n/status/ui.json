@@ -1,13 +1,13 @@
 {
   "category": "ui",
-  "last_updated": "2025-12-09 03:13:35",
+  "last_updated": "2025-12-09 03:17:01",
   "status": "in_progress",
   "progress": {
-    "percentage": 33,
-    "total_keys": 6,
+    "percentage": 4,
+    "total_keys": 48,
     "translated_pl": 2,
-    "files_processed": 6,
-    "files_remaining": 5691
+    "files_processed": 26,
+    "files_remaining": 5671
   },
   "languages": {
     "total": 53,

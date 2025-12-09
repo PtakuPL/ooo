@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-09 03:14:06 UTC  
+> **Aktualizacja:** 2025-12-09 03:17:19 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **522** | ↑ |
+| 📁 Plików przetworzonych | **542** | ↑ |
 | ⏭️ Plików wykluczonych | **5329** | - |
 | 🔑 Kluczy i18n | **49992** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#1** | - |
+| 🔄 Cykl | **#2** | - |
 
 ---
 
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 0/5000 (0%) | 5000 |
+| 🧙 NPC Dialogs | ✅ | 11991/5000 (239%) | 5000 |
 | 📜 Lua Scripts | 🔄 | 713/1000 (71%) | 1000 |
 | 🎒 Items Database | 🔄 | 36972/40000 (92%) | 40000 |
 | 👹 Monsters | 🔄 | 100/500 (20%) | 500 |
@@ -78,9 +78,9 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #1` |
-| **Szczegóły** | NPC:0 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-09 03:13:03 |
+| **Plik** | `Cykl #2` |
+| **Szczegóły** | NPC:11991 Scripts:713 Items:36972 |
+| **Ostatnia aktualizacja** | 2025-12-09 03:16:39 |
 
 ### 📈 Statystyki sesji
 
@@ -124,7 +124,7 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #1 |
+| 🔄 Cykl | #2 |
 
 ### 📁 Podkatalogi - Postęp
 
@@ -149,11 +149,11 @@ selfSay("text")
 
 | Plik | Czas | Status |
 |------|------|--------|
-| `accounts.php` | 06:26:18 | ✅ |
-| `clmd.php` | 06:26:18 | ✅ |
-| `mailer.php` | 06:26:18 | ✅ |
-| `reports.php` | 06:26:18 | ✅ |
-| `pages.php` | 06:26:18 | ✅ |
+| `bans.php` | 06:26:18 | ✅ |
+| `monsters.php` | 06:26:18 | ✅ |
+| `records.php` | 06:26:18 | ✅ |
+| `highscores.php` | 06:26:18 | ✅ |
+| `team.php` | 06:26:18 | ✅ |
 
 ### 💻 Przykład kodu (ostatni plik)
 
@@ -225,7 +225,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 3364177, Cykl #1 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 3364177, Cykl #2 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

@@ -1,14 +1,14 @@
 {
   "category": "scripts",
   "status": "in_progress",
-  "last_updated": "2025-12-09T03:14:06+01:00",
+  "last_updated": "2025-12-09T03:17:19+01:00",
   "summary": {
     "total_keys": 713,
-    "files_processed": 522
+    "files_processed": 542
   },
   "current_work": {
     "directory": "data-otservbr-global/scripts/",
-    "cycle": 1
+    "cycle": 2
   },
   "subdirectories": {
     "quests": {"processed": 23},
@@ -16,28 +16,28 @@
   },
   "recent_files": [
   {
-    "file": "accounts.php",
-    "time": "03:14:06",
+    "file": "bans.php",
+    "time": "03:17:19",
     "status": "success"
   },
   {
-    "file": "clmd.php",
-    "time": "03:14:06",
+    "file": "monsters.php",
+    "time": "03:17:19",
     "status": "success"
   },
   {
-    "file": "mailer.php",
-    "time": "03:14:06",
+    "file": "records.php",
+    "time": "03:17:19",
     "status": "success"
   },
   {
-    "file": "reports.php",
-    "time": "03:14:06",
+    "file": "highscores.php",
+    "time": "03:17:19",
     "status": "success"
   },
   {
-    "file": "pages.php",
-    "time": "03:14:06",
+    "file": "team.php",
+    "time": "03:17:19",
     "status": "success"
   }
 ]

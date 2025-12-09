@@ -363,3 +363,11 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/haroun.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/marvin.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/elathriel.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/barry.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/tarak_inner.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/carina.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/zebron.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/harlow.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/captain_haba_open_sea.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/pukosch.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/tereban_functions.lua

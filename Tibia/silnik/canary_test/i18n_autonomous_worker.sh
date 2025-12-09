@@ -227,6 +227,50 @@ EOF
 }
 
 #===============================================================================
+# GIT AUTO-PUSH
+#===============================================================================
+LAST_PUSH_TIME=0
+PUSH_INTERVAL=120  # Push co 2 minuty
+
+auto_push_to_github() {
+    local current_time=$(date +%s)
+    local time_diff=$((current_time - LAST_PUSH_TIME))
+    
+    # Sprawdź czy minął wymagany interwał
+    if [ $time_diff -lt $PUSH_INTERVAL ]; then
+        return 0
+    fi
+    
+    # Idź do głównego repo
+    cd /home/ptaku/serweryt || return 1
+    
+    # Usuń stary lock file jeśli istnieje
+    rm -f .git/index.lock 2>/dev/null
+    
+    # Sprawdź czy są zmiany
+    local changes=$(git status --porcelain 2>/dev/null | wc -l)
+    if [ "$changes" -eq 0 ]; then
+        cd "$WORK_DIR"
+        return 0
+    fi
+    
+    log_info "📤 Auto-push: $changes zmienionych plików..."
+    
+    # Dodaj, commit i push
+    git add -A 2>/dev/null
+    git commit -m "📊 I18N Status update $(date +%H:%M)" -q 2>/dev/null
+    
+    if git push origin master -q 2>/dev/null; then
+        LAST_PUSH_TIME=$current_time
+        log_success "✅ Push zakończony pomyślnie"
+    else
+        log_warn "⚠️ Push nieudany - spróbuję przy następnym cyklu"
+    fi
+    
+    cd "$WORK_DIR"
+}
+
+#===============================================================================
 # ZARZĄDZANIE PLANEM PRACY (CHECKLIST)
 #===============================================================================
 WORK_PLAN="$I18N_DIR/work_plan.json"
@@ -1984,6 +2028,9 @@ main() {
             sleep 120
             continue
         fi
+        
+        # Auto-push do GitHub co 2 minuty
+        auto_push_to_github
         
         log_info "💤 Przerwa 10 sekund..."
         sleep 10

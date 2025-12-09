@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-09 02:45:58 UTC  
+> **Aktualizacja:** 2025-12-09 02:46:38 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **45953** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#11** | - |
+| 🔄 Cykl | **#1** | - |
 
 ---
 
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | ✅ | 7868/5000 (157%) | 5000 |
+| 🧙 NPC Dialogs | ✅ | 7952/5000 (159%) | 5000 |
 | 📜 Lua Scripts | 🔄 | 713/1000 (71%) | 1000 |
 | 🎒 Items Database | 🔄 | 36972/40000 (92%) | 40000 |
 | 👹 Monsters | 🔄 | 100/500 (20%) | 500 |
@@ -77,10 +77,10 @@
 | Parametr | Wartość |
 |----------|----------|
 | **Status** | 🔄 in_progress |
-| **Operacja** | Przetwarzanie lua |
-| **Plik** | `rashid.lua` |
-| **Szczegóły** | Katalog: data-otservbr-global/npc |
-| **Ostatnia aktualizacja** | 2025-12-09 02:45:42 |
+| **Operacja** | 🎮 Canary Server - scripts |
+| **Plik** | `Cykl #1` |
+| **Szczegóły** | NPC:7952 Scripts:713 Items:36972 |
+| **Ostatnia aktualizacja** | 2025-12-09 02:46:00 |
 
 ### 📈 Statystyki sesji
 
@@ -124,7 +124,7 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #11 |
+| 🔄 Cykl | #1 |
 
 ### 📁 Podkatalogi - Postęp
 
@@ -225,7 +225,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 2621132, Cykl #11 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 3085128, Cykl #1 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

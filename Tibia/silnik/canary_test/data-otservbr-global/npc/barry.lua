@@ -61,12 +61,12 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "report") then
 		local player = Player(creature)
 		if table.contains({ 9, 11 }, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline)) then
-			npcHandler:say("Oh my, where to begin with .. <tells about the troubles he and his men have recently encountered>.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.barry.say_1")
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) + 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission02, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission02) + 1) -- StorageValue for Questlog 'Mission 02: Watching the Watchmen'
 		end
 	elseif MsgContains(message, "pass") then
-		npcHandler:say("You can {pass} either to the {Magician Quarter} or {Sunken Quarter}. Which one will it be?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.barry.say_2")
 		npcHandler:setTopic(playerId, 1)
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "magician") then

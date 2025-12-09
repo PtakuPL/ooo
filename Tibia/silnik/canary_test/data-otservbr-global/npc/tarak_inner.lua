@@ -59,7 +59,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "monument tower") or MsgContains(message, "passage") or MsgContains(message, "trip") then
-		npcHandler:say("Do you want to travel to the {monument tower} for a 50 gold fee?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tarak_inner.say_1")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
@@ -77,7 +77,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enought money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tarak_inner.say_2")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end

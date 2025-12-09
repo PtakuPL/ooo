@@ -1,15 +1,36 @@
 {
-  "last_updated": "2025-12-09 11:28:01",
+  "last_updated": "2025-12-09 11:31:00",
   "current_operation": {
-    "type": "cycle",
+    "type": "idle",
     "phase": 1,
     "category": "scripts",
-    "file": "Cykl #132",
-    "action": "🎮 Canary Server - scripts",
-    "status": "in_progress",
-    "details": "NPC:11991 Scripts:713 Items:36972"
+    "file": "-",
+    "action": "Oczekiwanie na nowe pliki",
+    "status": "waiting",
+    "details": "Sprawdzam co 60s"
   },
   "recent_operations": [
+    {
+      "time": "2025-12-09 11:31:00",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
+    {
+      "time": "2025-12-09 11:30:07",
+      "type": "cycle",
+      "file": "Cykl #133",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 11:28:57",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
     {
       "time": "2025-12-09 11:28:01",
       "type": "cycle",
@@ -128,27 +149,6 @@
       "file": "Cykl #124",
       "action": "🎮 Canary Server - scripts",
       "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 11:10:03",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
-    },
-    {
-      "time": "2025-12-09 11:09:09",
-      "type": "cycle",
-      "file": "Cykl #123",
-      "action": "🎮 Canary Server - scripts",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 11:07:59",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
     }
   ],
   "errors": [],

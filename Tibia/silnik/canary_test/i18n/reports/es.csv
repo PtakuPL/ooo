@@ -45073,6 +45073,254 @@ npc.marvin.say_4,"Thanks, you successfully cast your vote. Feel free to continue
 npc.elathriel.say_1,Here it is.,,missing
 npc.elathriel.say_2,Come back when you have enough money.,,missing
 npc.elathriel.say_3,"Believe me, it's better for you that way.",,missing
+npc.barry.say_1,"Oh my, where to begin with .. <tells about the troubles he and his men have recently encountered>.",,missing
+npc.barry.say_2,You can {pass} either to the {Magician Quarter} or {Sunken Quarter}. Which one will it be?,,missing
+npc.tarak_inner.say_1,Do you want to travel to the {monument tower} for a 50 gold fee?,,missing
+npc.tarak_inner.say_2,You don't have enought money.,,missing
+npc.carina.say_1,Would you like to buy my precious necklace for 5000 gold?,,missing
+npc.carina.say_2,Wha ... What??? Are you saying you've seen a mouse here??,,missing
+npc.carina.say_3,Here you go kind sir.,,missing
+npc.carina.say_4,There is no mouse here! Stop talking foolish things about serious issues!,,missing
+npc.carina.say_5,IIIEEEEEK!,,missing
+npc.carina.say_6,Thank goodness!,,missing
+npc.zebron.say_1,"Hmmm, would you like to play for {money} or for a chance to win your own {dice}?",,missing
+npc.zebron.say_2,"I am sorry, but you don't have so much money.",,missing
+npc.zebron.say_3,"Ok, here we go ... ",,missing
+npc.zebron.say_4,"Ok, here we go ... 6! You have won a dice, congratulations. One more game?",,missing
+npc.zebron.say_5,So you care for a civilized game of dice?,,missing
+npc.zebron.say_6,"I thought so. Okay, I will roll a dice. If it shows 6, you will get five times your bet. How much do you want to bet?",,missing
+npc.zebron.say_7,"Hehe, good choice. Okay, the price for this game is 100 gold pieces. I will roll a dice. If I roll a 6, you can have my dice. Agreed?",,missing
+npc.zebron.say_8,"I am sorry, but I accept only bets between 1 and 99 gold. I don't want to ruin you after all. How much do you want to bet?",,missing
+npc.zebron.say_9,"I am sorry, but you don't have so much money.",,missing
+npc.zebron.say_10,"Ok, here we go ... ",,missing
+npc.zebron.say_11,"Ok, here we go ... 6! You have won ",,missing
+npc.zebron.say_12,"Oh come on, don't be a child.",,missing
+npc.harlow.say_1,"What the heck, stop bothering me with your questions.",,missing
+npc.harlow.stdmod_2,So you are saying you're looking for someone to take you to Vengoth?,,missing
+npc.harlow.stdmod_3,Oh well.,,missing
+npc.harlow.stdmod_4,"I could do that, it's not far from here. I don't run a charity organisation, though. Tell you what. Give me 100 gold pieces, and me and my boat are yours for the trip. Okay?",,missing
+npc.harlow.stdmod_5,Oh well.,,missing
+npc.harlow.stdmod_6,Want me to bring you to Vengoth again for 100 gold?,,missing
+npc.harlow.stdmod_7,Oh well.,,missing
+npc.harlow.stdmod_8,"I have a {job}, you know?",,missing
+npc.harlow.stdmod_9,"Well, I'm kind of a delivery man I guess. I take on small {transportation} jobs with my boat.",,missing
+npc.captain_haba_open_sea.say_1,"Harharhar, landlubber, no no!! The correct command would be STRAIGHT. Remember that! Next, what you gonna say when you see something to left?",,missing
+npc.captain_haba_open_sea.say_2,"Harharhar, landlubber, ya got it all wrong!! The correct command would be LARBOARD side. Don't forget that, 'kay? Last one, what you gonna say to me when ya see somethin' to the right?",,missing
+npc.captain_haba_open_sea.say_3,"IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",,missing
+npc.captain_haba_open_sea.say_4,"Already got enough, huh? I kind o' expected that, landlubber! Let's head for Svargrond! Ready?",,missing
+npc.captain_haba_open_sea.say_5,"Y' already wanna give up?? I should've known. I bring ya back to Svargrond, 'kay?",,missing
+npc.captain_haba_open_sea.stdmod_6,I'd go by myself and tear that beast's heart out if I were younger. I hope ya can do that for me. Now go and good luck to ya!,,missing
+npc.captain_haba_open_sea.stdmod_7,"Ya're a coward, aren't ya? Prove that I'm wrong and get your lazy bones up to the lookout!!",,missing
+npc.captain_haba_open_sea.stdmod_8,Just ask me for a trade if you need a bait.,,missing
+npc.captain_haba_open_sea.stdmod_9,I can give ya a challenge to test if ya have the guts to be a real sailor. Go up to the lookout and remain there for 24 hours during a storm! Harharhar!,,missing
+npc.pukosch.say_1,Do you want to purchase a weekly ticket for the ore wagons? With it you can travel freely and swiftly through Kazordoon for one week. 250 gold only. Deal?,,missing
+npc.pukosch.say_2,Your weekly ticket is still valid. Would be a waste of money to purchase a second one,,missing
+npc.pukosch.say_3,Here is your stamp. It can't be transferred to another person and will last one week from now. You'll get notified upon using an ore wagon when it isn't valid anymore.,,missing
+npc.pukosch.say_4,You don't have enough money.,,missing
+npc.pukosch.say_5,No then.,,missing
+npc.tereban_functions.say_1,You are not on that mission.,,missing
+npc.tereban_functions.say_2,"Well, I need the parts of a sorcerer's robe, a paladin's bow, a knight's shield, and a druid's rod. If you cannot find one of them, ask me about it and I might provide you with some minor hints.",,missing
+npc.tereban_functions.say_3,Thank you for your help!,,missing
+npc.tereban_functions.say_4,"I am relieved someone as capable as you will handle the task. Well, I need the parts of a sorcerer's robe, a paladin's bow, a knight's shield, and a druid's wand.",,missing
+npc.tereban_functions.say_5,Oh my. I really hope you will change your mind.,,missing
+npc.rashid.say_1,"Well, you could attempt the mission to become a recognised trader, but it requires a lot of travelling. Are you willing to try?",,missing
+npc.rashid.say_2,Have you managed to obtain a rare deer trophy for my customer?,,missing
+npc.rashid.say_3,"So, my friend, are you willing to proceed to the next mission to become a recognised trader?",,missing
+npc.rashid.say_4,Did you bring me the package?,,missing
+npc.rashid.say_5,"So, my friend, are you willing to proceed to the next mission to become a recognised trader?",,missing
+npc.rashid.say_6,Have you brought the cheese?,,missing
+npc.rashid.say_7,"So, my friend, are you willing to proceed to the next mission to become a recognised trader?",,missing
+npc.rashid.say_8,Have you brought the vase?,,missing
+npc.rashid.say_9,"So, my friend, are you willing to proceed to the next mission to become a recognised trader?",,missing
+npc.rashid.say_10,Have you brought a cheap but good crimson sword?,,missing
+npc.rashid.say_11,"So, my friend, are you willing to proceed to the next mission to become a recognised trader?",,missing
+npc.rashid.say_12,Have you brought me a gold fish??,,missing
+npc.rashid.say_13,"Ah, right. <ahem> I hereby declare you - one of my recognised traders! Feel free to offer me your wares, just ask me for a {trade}!",,missing
+npc.rashid.say_14,Fine. Then get a hold of that deer trophy and bring it to me while I'm in Svargrond. Just ask me about your mission.,,missing
+npc.rashid.say_15,"Well done! I'll take that from you. <snags it> Come see me another day, I'll be busy for a while now. ",,missing
+npc.rashid.say_16,"Fine. Then off you go, just ask Willard about the 'package for Rashid'.",,missing
+npc.rashid.say_17,"Great. Just place it over there - yes, thanks, that's it. Come see me another day, I'll be busy for a while now. ",,missing
+npc.rashid.say_18,"Okay, then please find Miraia in Darashia and ask her about the {'scarab cheese'}.",,missing
+npc.rashid.say_19,"Mmmhh, the lovely odeur of scarab cheese! I really can't understand why most people can't stand it. Thanks, well done! ",,missing
+npc.rashid.say_20,"Okay, then please find {Briasol} in {Ab'Dendriel} and ask for a {'fine vase'}.",,missing
+npc.rashid.say_21,"I'm surprised that you managed to bring this vase without a single crack. That was what I needed to know, thank you. ",,missing
+npc.rashid.say_22,"Okay, I'm curious how you will do with {Uzgod}. Good luck!",,missing
+npc.rashid.say_23,"Ha! You are clever indeed, well done! I'll take this from you. Come see me tomorrow, I think we two might get into business after all.",,missing
+npc.rashid.say_24,Thanks so much! I'll be waiting eagerly for your return then.,,missing
+npc.rashid.say_25,"Thank you!! Ah, this makes my day! I'll take the rest of the day off to get to know this little guy. Come see me tomorrow, if you like.",,missing
+npc.rashid.stdmod_26,"I am a travelling trader. I don't buy everything, though. And not from everyone, for that matter.",,missing
+npc.rashid.stdmod_27,"I am Rashid, son of the desert.",,missing
+npc.rashid.stdmod_28,"Of course, old friend. You can also browse only armor, legs, shields, helmets, boots, weapons, enchanted weapons, jewelry or miscellaneous stuff.",,missing
+npc.rashid.stdmod_29,Elves... I don't really trust them. All this talk about nature and flowers and treehugging... I'm sure there's some wicked scheme behind all this.,,missing
+npc.rashid.stdmod_30,"My beloved hometown! Ah, the sweet scent of the desert sands, the perfect shape of the pyramids... stunningly beautiful.",,missing
+npc.rashid.stdmod_31,"I have to go to Carlin once in a while, since the queen wishes to see my exclusive wares in regular intervals.",,missing
+npc.rashid.stdmod_32,"Cormaya? Not a good place to make business, it's way too far and small.",,missing
+npc.rashid.stdmod_33,"It's not the real thing, but almost as good. The merchants there claim ridiculous prices, which is fine for my own business.",,missing
+npc.rashid.stdmod_34,"Ah yes, Edron! Such a lovely and quiet island! I usually make some nice business there.",,missing
+npc.rashid.stdmod_35,"Too few customers there, it's not worth the trip.",,missing
+npc.rashid.stdmod_36,Um... I don't think so.,,missing
+npc.rashid.stdmod_37,"I don't like being underground much. I also tend to get lost in these labyrinthine dwarven tunnels, so I rather avoid them.",,missing
+npc.rashid.stdmod_38,"When you avoid the slums, it's a really pretty city. Almost as pretty as the governor's daughter.",,missing
+npc.rashid.stdmod_39,Um... I don't think so.,,missing
+npc.rashid.stdmod_40,"I like the settlement itself, but I don't set my foot into the jungle. Have you seen the size of these centipedes??",,missing
+npc.rashid.stdmod_41,Um... I don't think so.,,missing
+npc.rashid.stdmod_42,"I wish it was a little bit warmer there, but with a good mug of barbarian mead in your tummy everything gets a lot cosier.",,missing
+npc.rashid.stdmod_43,"I feel uncomfortable and rather unsafe in Thais, so I don't really travel there.",,missing
+npc.rashid.stdmod_44,Um... I don't think so.,,missing
+npc.rashid.stdmod_45,"Although it's the flourishing trade centre of Tibia, I don't like going there. Too much competition for my taste.",,missing
+npc.rashid.stdmod_46,It's almost time to journey on.,,missing
+npc.rashid.stdmod_47,"Kings, queens, emperors and kaliphs... everyone claims to be different and unique, but actually it's the same thing everywhere.",,missing
+npc.rashid.say_48,"Sorry, but you do not belong to my exclusive customers. I have to make sure that I can trust in the quality of your wares.",,missing
+npc.kroox.say_1,"Hm, well I guess its ok to tell you ... <tells you about Lokurs measurements> ",,missing
+npc.roswitha.say_1,"I'm sorry, but Harsin no longer lives here. He ordered a local named Quandon to transport all his stuff somewhere. I don't know where he moved, but Quandon should be able to help you with this information.",,missing
+npc.jack_fate_goroma.say_1,"I'd love to bring you back to Liberty Bay, but as you can see, my ship is ruined. I also hurt my leg and can barely move. Can you help me?",,missing
+npc.jack_fate_goroma.say_2,Have you brought 30 pieces of wood so that I can repair the ship?,,missing
+npc.jack_fate_goroma.say_3,Do you want to travel back to Liberty Bay?,,missing
+npc.jack_fate_goroma.say_4,Good! Please return once you have gathered 30 pieces of wood.,,missing
+npc.jack_fate_goroma.say_5,"Excellent! Now we can leave this godforsaken place. Thank you for your help. Should you ever want to return to this island, ask me for a passage to Goroma.",,missing
+npc.jack_fate_goroma.say_6,You don't have enough...,,missing
+npc.jack_fate_goroma.say_7,Set the sails!,,missing
+npc.jack_fate_goroma.stdmod_8,My name is Jack Fate from the Royal Tibia Line.,,missing
+npc.jack_fate_goroma.stdmod_9,"I'm the captain of this - well, wreck. Argh.",,missing
+npc.jack_fate_goroma.stdmod_10,"I'm the captain of this - well, wreck. Argh",,missing
+npc.jack_fate_goroma.stdmod_11,This is where we are... the volcano island Goroma. There are many rumours about this place.,,missing
+npc.partos.say_1,I won't talk about that.,,missing
+npc.partos.stdmod_2,You mean that's a JAIL? They told me it's the finest hotel in town! THAT explains the lousy roomservice!,,missing
+npc.partos.stdmod_3,You mean that's a JAIL? They told me it's the finest hotel in town! THAT explains the lousy roomservice!,,missing
+npc.partos.stdmod_4,You mean that's a JAIL? They told me it's the finest hotel in town! THAT explains the lousy roomservice!,,missing
+npc.kazzan.say_1,WAAAAAHHH!!!,,missing
+npc.kazzan.say_2,"Feel welcome in the lands of the children of the enlightened Daraman, |PLAYERNAME|.",,missing
+npc.kazzan.say_3,Do you know the location of the djinn fortresses in the mountains south of here?,,missing
+npc.kazzan.say_4,"Well, I don't blame you for that. I am sure you did your best. Now we can just hope that peace remains. Here, take this small gratification for your effort to help and Daraman may bless you!",,missing
+npc.liane.say_1,I have more urgent problem to attend then that. Those hawks are hunting my carrier pigeons. Bring me 12 arrows and I'll see if I have the time for this nonsense. Do you have 12 arrows with you? ,,missing
+npc.liane.say_2,Great! Now I'll teach them a lesson ... For those measurements ... <tells you her measurements> ,,missing
+npc.liane.say_3,"Oh, you don't have it.",,missing
+npc.corym_ratter.say_1,"Recently the amount of delivered ores is decreasing. Could you find out the reason, why the situation has become worse?",,missing
+npc.corym_ratter.say_2,Nice! I have opened the mine for you. But take care of you! The monsters of depth won't spare you.,,missing
+npc.skjaar.say_1,I will give the key to the crypt only to the closest followers of my master. Would you like me to test you?,,missing
+npc.skjaar.say_2,Before we start I must ask you for a small donation of 1000 gold coins. Are you willing to pay 1000 gold coins for the test?,,missing
+npc.skjaar.say_3,All right then. Here comes the first question. What was the name of Dago's favourite pet?,,missing
+npc.skjaar.say_4,You don't have enough money,,missing
+npc.skjaar.say_5,Perhaps you knew him after all. Tell me - how many fingers did he have when he died?,,missing
+npc.skjaar.say_6,Also true. But can you also tell me the colour of the deamons in which master specialized?,,missing
+npc.skjaar.say_7,It seems you are worthy after all. Do you want the key to the crypt?,,missing
+npc.skjaar.say_8,Here you are,,missing
+npc.nurik.say_1,"Excuse me, but I'm waiting for someone important!",,missing
+npc.nurik.say_2,Wait a minute! Do I get that right? You're the owner of the dwarven bridge and you are willing to sell it to me??,,missing
+npc.nurik.say_3,How splendid! Do you have the necessary documents with you?,,missing
+npc.nurik.say_4,"Oh my, oh my. I'm so excited! So let's seal this deal as fast as possible so I can visit my very own dwarven bridge. Are you ready for the transaction?",,missing
+npc.gnomus.say_1,I don't need your help for now. Come back later.,,missing
+npc.gnomus.say_2,Come back when you have finished your job.,,missing
+npc.gnomus.say_3,I don't need your help for now. Come back later.,,missing
+npc.gnomus.say_4,Come back when you have finished your job.,,missing
+npc.gnomus.say_5,The other are already telling stories about you. Please return to me later if you want to help out some more!,,missing
+npc.gnomus.say_6,I don't need your help for now. Come back later.,,missing
+npc.gnomus.say_7,Come back when you have finished your job.,,missing
+npc.gnomus.say_8,Thank you very much! With those structures mapped out we will be able to complete the puzzle in no time!,,missing
+npc.gnomus.say_9,"If you bring me any suspicious devices on creatures you slay down here, I'll make it worth your while by telling the others of your generosity. How many do you want to offer? ",,missing
+npc.gnomus.say_10,Don't waste my time.,,missing
+npc.gnomus.say_11,Done.,,missing
+npc.gnomus.say_12,You don't have enough suspicious devices.,,missing
+npc.gnomus.say_13,Done.,,missing
+npc.gnomus.say_14,You don't have enough suspicious devices.,,missing
+npc.gnomus.say_15,Done.,,missing
+npc.gnomus.say_16,You don't have enough suspicious devices.,,missing
+npc.gnomus.say_17,"So you want to know what we all think about your deeds? What leader's opinion are you interested in, the {gnomes} (Gnomus), the {dwarves} (Klom Stonecutter) or the {scouts} (Lardoc Bashsmite)?",,missing
+npc.gnomus.stdmod_18,"If you're willing to help us, we could need an escort for arriving {ordnance}, help with {charting} the cave system and someone needs to get some heat {measurements} fast.",,missing
+npc.gnomus.stdmod_19,My name is Gnomus.,,missing
+npc.gnomus.stdmod_20,I'm the main gnomish contact for this base. I coordinate our efforts with those of the dwarves to ensure everything is running smoothly.,,missing
+npc.dukosch.say_1,Do you want to purchase a weekly ticket for the ore wagons? With it you can travel freely and swiftly through Kazordoon for one week. 250 gold only. Deal?,,missing
+npc.dukosch.say_2,Your weekly ticket is still valid. Would be a waste of money to purchase a second one,,missing
+npc.dukosch.say_3,Here is your stamp. It can't be transferred to another person and will last one week from now. You'll get notified upon using an ore wagon when it isn't valid anymore.,,missing
+npc.dukosch.say_4,You don't have enough money.,,missing
+npc.dukosch.say_5,No then.,,missing
+npc.fenech.say_1,"Sorry, you aren't a druid either a sorcerer.",,missing
+npc.fenech.say_2,"Here you are young adept, take care yourself.",,missing
+npc.fenech.say_3,Ok then.,,missing
+npc.zumtah.say_1,"You are searching for the way out? Do you want to go home? Are you homesick, nostalgic, allergic? I am sorry. You will stay. Muhahahaha. Haha. Are you giving up then?",,missing
+npc.zumtah.say_2,"A what? I don't even know what you're talking about, human. If you aren't just giving up - will you kindly change the topic please?",,missing
+npc.zumtah.say_3,"Haha, no! No. Why don't you just stop asking me that and start enjoying your stay here?",,missing
+npc.zumtah.say_4,"Oh, you mean - if I have ever been out of here in those 278 years? Well, I - I can't remember. No, I can't remember. Sorry.",,missing
+npc.zumtah.say_5,"No, I really can't remember. I enjoyed my stay here so much that I forgot how it looks outside of this hole. Outside. The air, the sky, the light. Oh well... well.",,missing
+npc.zumtah.say_6,"Oh yes, yes. I... I never really thought about how you creatures feel in here I guess. I... just watched all these beings die here. ...",,missing
+npc.zumtah.say_7,"Alright, as I said you are free now. There will not be an outside for the next three centuries, but you - go. ...",,missing
+npc.zumtah.say_8,"It's you, why did they throw you in here again? Anyway, I will just transform you once more. I also recovered your crate which will wait for you at the exit. There, feel free to go.",,missing
+npc.zumtah.say_9,I've already told you that you can't get out. What's the problem? Do you even see an exit?,,missing
+npc.zumtah.say_10,You are starting to get on my nerves. Is this the only topic you know?,,missing
+npc.zumtah.say_11,"But there is no escape, I said NO. You've already asked several times and my answer will stay the same. What is this? Are you trying to test me?",,missing
+npc.zumtah.say_12,Muhahaha. Where? I can only see a dark cave with nothing than bones and a djinn in it. You mean that small hole there? Muhahaha.,,missing
+npc.zumtah.say_13,"Pesky, persistent human.",,missing
+npc.zumtah.say_14,"Muhahaha. Then I will give you a test. How many years do you think have I been here? {89}, {164} or {278}?",,missing
+npc.zumtah.say_15,"Correct human, and that is not nearly how high you would need to count to tell all the lost souls I've seen dying here. I AM PERPETUAL. Muahahaha.",,missing
+npc.zumtah.say_16,Wrong answer human! Muahahaha.,,missing
+npc.zumtah.stdmod_17,I wait. I wait for someone like you to come here. I wait for them to grow disconsolate. I wait for them to despair. And I wait for them to die. Muhahaha.,,missing
+npc.zumtah.stdmod_18,"I am Zumtah, Zumtah the impeccable, Zumtah the marvellous, Zumtah the... the... eternal.",,missing
+npc.zumtah.stdmod_19,"The land you are currently dwelling in, human. Don't you have any sense of your surroundings?",,missing
+npc.zumtah.stdmod_20,"I have seen many of them. I have seen many of them die. In here, with me. Perhaps you will be pleased to meet them. Not long and you will join their ranks. Muhaha.",,missing
+npc.zumtah.stdmod_21,"Pesky creatures. Many of them have been brought here, many of them died here. Humans, lizards, beasts, they all die the same. Down here, with me. Muhahaha.",,missing
+npc.zumtah.stdmod_22,What? What do you mean by that?,,missing
+npc.zumtah.stdmod_23,"Hmm, an old one. I don't care much about politics or power, as here, he has none. Here, only I have power. Muhaha.",,missing
+npc.zumtah.stdmod_24,"What are you talking about, such things do not matter down here. Down here alone, isolated and broken. Muhaha.",,missing
+npc.rose.say_1,Do you want to buy a Hydra Tongue for 100 gold?,,missing
+npc.rose.say_2,Here you are. A Hydra Tongue!,,missing
+npc.rose.say_3,You don't have enough money.,,missing
+npc.rose.say_4,Then not.,,missing
+npc.amber.say_1,"Ah, you noticed my new accessory? Sorry, this one is not for sale. It's handmade from rare minotaur leather.",,missing
+npc.amber.say_2,"Ah, right, almost forgot about the backpack! Have you brought me 100 pieces of minotaur leather as requested?",,missing
+npc.amber.say_3,"Just in time! Your backpack is finished. Here you go, I hope you like it.",,missing
+npc.amber.say_4,"Uh... I didn't expect you to return that early. Sorry, but I'm not finished yet with your backpack. I'm doing the best I can, promised.",,missing
+npc.amber.say_5,"Sorry, but I can only make one backpack per person, else I'd have to close my shop and open a leather manufactory.",,missing
+npc.amber.say_6,"Well, if you really like this backpack, I could make one for you, but minotaur leather is hard to come by these days. Are you willing to put some work into this?",,missing
+npc.amber.say_7,"Alright then, if you bring me 100 pieces of fine minotaur leather I will see what I can do for you. You probably have to kill really many minotaurs though... so good luck!",,missing
+npc.amber.say_8,"Sorry, but I don't run a welfare office, you know... no pain, no gain.",,missing
+npc.amber.say_9,"Sorry, but that's not enough leather yet to make one of these backpacks. Would you rather like to buy a normal backpack for 10 gold?",,missing
+npc.amber.say_10,"Great! Alright, I need a while to finish this backpack for you. Come ask me later, okay?",,missing
+npc.amber.say_11,"I know, it's quite some work... don't lose heart, just keep killing minotaurs and you'll eventually get lucky. Would you rather like to buy a normal backpack for 10 gold?",,missing
+npc.gelidrazahs_thirst.say_1,So I ask you: What is the name of the princess who fell in love with a Thaian nobleman during the regency of pharaoh Uthemath?,,missing
+npc.gelidrazahs_thirst.say_2,"That's right. Listen to the second question: Who is the author of the book ,The Language of the Wolves'?",,missing
+npc.gelidrazahs_thirst.say_3,That's right. Listen to the third question: Which ancient Tibian race reportedly travelled the sky in cloud ships?,,missing
+npc.gelidrazahs_thirst.say_4,That is correct. You satisfactorily answered all questions. You may pass and enter Gelidrazah's lair.,,missing
+npc.gelidrazahs_thirst.say_5,I don't know what you are talking about.,,missing
+npc.shoddy_beggar.say_1,"Hmm, if you can spare a coin... we can talk. What do you say?",,missing
+npc.shoddy_beggar.say_2,"Persistent little nuisance, aren't we? Well, I like your spirit so I will tell you a secret. I may not look the part but I was once a {scientist}. The academy seemed to not like my... attitude and never actually invited me.",,missing
+npc.shoddy_beggar.say_3,"Indeed, I was one myself a long time ago. I may seem a little... distracted by now, but I was working on many important projects. I even created a device to... well, it will cost you another gold coin if you want me to tell you the whole story. You're in?",,missing
+npc.shoddy_beggar.say_4,"Well, if that is all you can spare... better keep it.",,missing
+npc.shoddy_beggar.say_5,"Alright, it seems you are serious about this. I will tell you about my device. Every night I looked up to the stars and wondered what worlds we would be able to find if we could just look where we wanted to. So... hey are you still listening?",,missing
+npc.shoddy_beggar.say_6,"Good, good. So eventually I found a way and invented a magic device I called the Lightboat. It was a large construction you could sit in and... well, judging by your looks you don't believe a word. Do you want to hear the story or not?",,missing
+npc.shoddy_beggar.say_7,"Fine. For years I gathered all the necessary items to build the device. I travelled, traded and took advantage of some rare opportunities. With luck and patience I eventually got every component I needed. Can you imagine the excitement I experienced?",,missing
+npc.shoddy_beggar.say_8,"And there I stood before my greatest invention. Door to unknown places, mysterious worlds... yet one of my components was flawed. A small crack in a vital element of my construction quickly led to the failure of the whole project. Still following?",,missing
+npc.shoddy_beggar.say_9,"The device was ultimately destroyed. I barely escaped the chaos with my life. My laboratory was shattered, as were all the components of the cursed device. With nothing left, I started to lead a new, different life. Do you know what that means?",,missing
+npc.shoddy_beggar.say_10,"Pah!! You have NO idea, leave me alone now.",,missing
+npc.shoddy_beggar.say_11,"Right... I'm glad everything was destroyed. I don't even know why I kept the remaining copy of the plans all those years... oh, did I say this aloud?",,missing
+npc.shoddy_beggar.say_12,"Yes, well... I do have one remaining copy of the plans. I will keep them as a... reminder. Such ill-fated devices only cause trouble and despair. Mankind would be better off, without them, right?",,missing
+npc.shoddy_beggar.say_13,"Ah, you think you are wise but you know nothing, nothing about science, nothing about the opportunities it offers... You will never understand scientists like me.",,missing
+npc.shoddy_beggar.say_14,"Well, to be honest, I envy him a little. He can continue his research in his laboratory. He still has working equipment... I sometimes read his publications. He is an able man, but completely on the wrong track... give these plans to him.",,missing
+npc.shoddy_beggar.say_15,"Mean, heartless... go and leave me be.",,missing
+npc.shoddy_beggar.say_16,"Well, whatever then...",,missing
+npc.shoddy_beggar.say_17,Then stop bothering me.,,missing
+npc.shoddy_beggar.say_18,Your decision.,,missing
+npc.shoddy_beggar.say_19,"Yes and I, I... you mean what? Can't imagine? Well, then there is no purpose to continue telling you this story.",,missing
+npc.shoddy_beggar.say_20,*mumbles*,,missing
+npc.shoddy_beggar.say_21,"Thought so. It means starting anew, without any home, money or goal in your life. However, it also opens up opportunities... don't you agree?",,missing
+npc.shoddy_beggar.say_22,"No, no, you are right, I should have tried to rebuild it, I should have been more careful, I should... ah, why did I even tell you this.",,missing
+npc.shoddy_beggar.say_23,"Phew... alright, it was nice talking to you.",,missing
+npc.shoddy_beggar.say_24,"Hm, maybe you are right. You could give these plans to someone who might be able to finish this project. Someone who will not make the mistakes I made. Someone... hm, do you know the astronomer Spectulus?",,missing
+npc.ruprecht.say_1,So you want to exchange ,,missing
+npc.ruprecht.say_2,"Thank you, here is your 1 christmas token.",,missing
+npc.ruprecht.say_3,You don't have a present bag.,,missing
+npc.ruprecht.say_4,"Thank you, here is your ",,missing
+npc.ruprecht.say_5,You don't have enough of tokens.,,missing
+npc.ruprecht.say_6,Come back when you are ready to trade some tokens!,,missing
+npc.alkestios.say_1,Uhmn.. Maybe Ahmet in Ankrahmun can help we to fake this book.,,missing
+npc.alkestios.say_2,The poachers are still chasing me. Please hurry and find a way to help me.,,missing
+npc.alkestios.say_3,You have already started this mission.,,missing
+npc.alkestios.say_4,Then not.,,missing
+npc.alkestios.stdmod_5,"Outside of our secret {realm} my siblings and I can't keep our true shape. If we want to travel other parts of the world, we must take over the bodies of animals. But we are causing them no harm and we just take control if necessary.",,missing
+npc.alkestios.stdmod_6,"We call it Feyrist and it is a secret, hidden place. Just few mortals get permission to enter it. A long time ago, we learned how to hide our realm from the outside world. Only if you gain our trust I will tell you how to reach it.",,missing
+npc.alkestios.stdmod_7,We call ourselves the fae. Some name us nature spirits or peri but we prefer the former term. Most of us are rather reclusive and live peaceful lives in our secret realm. We only leave it in order to {protect} our home. ...,,missing
+npc.alkestios.stdmod_8,We call ourselves the fae. Some name us nature spirits or peri but we prefer the former term. Most of us are rather reclusive and live peaceful lives in our secret realm. We only leave it in order to {protect} our home. ...,,missing
+npc.alkestios.stdmod_9,"I can sense a kind of dark energy lately. It is pervading this world, more and more every day. Yet I don't know where it arises from nor what we could do to dispel it.",,missing
+npc.alkestios.stdmod_10,"It is rather subversive, so most creatures won't sense it ... yet. But its corrosive power has already begun to affect my kind and our hidden realm in unpleasant ways.",,missing
 player.status.cleanse,You are no longer {0}. (cleanse charm),Ya no estás {0}. (amuleto de limpieza),translated
 player.condition.poisoned,You are poisoned.,Estás envenenado.,translated
 player.condition.drowning,You are drowning.,Te estás ahogando.,translated

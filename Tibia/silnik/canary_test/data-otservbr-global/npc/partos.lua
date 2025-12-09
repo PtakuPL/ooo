@@ -66,7 +66,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission01, 2)
 		else
-			npcHandler:say("I won't talk about that.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.partos.say_1")
 		end
 	elseif MsgContains(message, "ankrahmun") then
 		npcHandler:say({

@@ -74,14 +74,14 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "help") then
-		npcHandler:say("Recently the amount of delivered ores is decreasing. Could you find out the reason, why the situation has become worse?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_ratter.say_1")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			player:setStorageValue(Storage.Quest.U8_1.TibiaTales.DefaultStart, 1)
 			player:setStorageValue(HiddenThreats.QuestLine, 1)
 			player:setStorageValue(HiddenThreats.RatterDoor, 1)
-			npcHandler:say("Nice! I have opened the mine for you. But take care of you! The monsters of depth won't spare you.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_ratter.say_2")
 			npcHandler:setTopic(playerId, 2)
 		end
 	end

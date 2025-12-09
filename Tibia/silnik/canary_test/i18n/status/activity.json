@@ -1,160 +1,160 @@
 {
-  "last_updated": "2025-12-09 02:46:00",
+  "last_updated": "2025-12-09 02:49:45",
   "current_operation": {
-    "type": "cycle",
+    "type": "cycle_end",
     "phase": 1,
     "category": "scripts",
-    "file": "Cykl #1",
-    "action": "🎮 Canary Server - scripts",
-    "status": "in_progress",
-    "details": "NPC:7952 Scripts:713 Items:36972"
+    "file": "Cykl 1",
+    "action": "Zakończono przetwarzanie",
+    "status": "completed",
+    "details": "10 plików"
   },
   "recent_operations": [
     {
-      "time": "2025-12-09 02:46:00",
-      "type": "cycle",
-      "file": "Cykl #1",
-      "action": "🎮 Canary Server - scripts",
-      "status": "in_progress"
+      "time": "2025-12-09 02:49:45",
+      "type": "cycle_end",
+      "file": "Cykl 1",
+      "action": "Zakończono przetwarzanie",
+      "status": "completed"
     },
     {
-      "time": "2025-12-09 02:45:42",
+      "time": "2025-12-09 02:49:45",
       "type": "process",
-      "file": "rashid.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 02:45:41",
-      "type": "process",
-      "file": "tereban_functions.lua",
+      "file": "alkestios.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 02:45:36",
+      "time": "2025-12-09 02:49:40",
       "type": "process",
-      "file": "tereban_functions.lua",
+      "file": "alkestios.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 02:45:36",
+      "time": "2025-12-09 02:49:40",
       "type": "process",
-      "file": "pukosch.lua",
+      "file": "ruprecht.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 02:45:34",
+      "time": "2025-12-09 02:49:36",
       "type": "process",
-      "file": "pukosch.lua",
+      "file": "ruprecht.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 02:45:33",
+      "time": "2025-12-09 02:49:36",
       "type": "process",
-      "file": "captain_haba_open_sea.lua",
+      "file": "shoddy_beggar.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 02:45:30",
+      "time": "2025-12-09 02:49:30",
       "type": "process",
-      "file": "captain_haba_open_sea.lua",
+      "file": "shoddy_beggar.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 02:45:30",
+      "time": "2025-12-09 02:49:30",
       "type": "process",
-      "file": "harlow.lua",
+      "file": "a_grumpy_cyclops.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 02:49:30",
+      "type": "process",
+      "file": "gelidrazahs_thirst.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 02:45:28",
+      "time": "2025-12-09 02:49:28",
       "type": "process",
-      "file": "harlow.lua",
+      "file": "gelidrazahs_thirst.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 02:45:28",
+      "time": "2025-12-09 02:49:28",
       "type": "process",
-      "file": "zebron.lua",
+      "file": "amber.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 02:45:24",
+      "time": "2025-12-09 02:49:20",
       "type": "process",
-      "file": "zebron.lua",
+      "file": "amber.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 02:45:24",
+      "time": "2025-12-09 02:49:20",
       "type": "process",
-      "file": "carina.lua",
+      "file": "rose.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 02:45:22",
+      "time": "2025-12-09 02:49:18",
       "type": "process",
-      "file": "carina.lua",
+      "file": "rose.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 02:45:22",
+      "time": "2025-12-09 02:49:18",
       "type": "process",
-      "file": "tarak_inner.lua",
+      "file": "zumtah.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 02:45:20",
+      "time": "2025-12-09 02:49:13",
       "type": "process",
-      "file": "tarak_inner.lua",
+      "file": "zumtah.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 02:45:20",
+      "time": "2025-12-09 02:49:13",
       "type": "process",
-      "file": "barry.lua",
+      "file": "fenech.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 02:45:18",
+      "time": "2025-12-09 02:49:10",
       "type": "process",
-      "file": "barry.lua",
+      "file": "fenech.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 02:45:14",
-      "type": "scan",
-      "file": "Skanowanie",
-      "action": "Nowe pliki",
-      "status": "in_progress"
+      "time": "2025-12-09 02:49:10",
+      "type": "process",
+      "file": "dukosch.lua",
+      "action": "Lua migration",
+      "status": "completed"
     },
     {
-      "time": "2025-12-09 02:43:25",
-      "type": "cycle",
-      "file": "Cykl #11",
-      "action": "🎮 Canary Server - scripts",
+      "time": "2025-12-09 02:49:07",
+      "type": "process",
+      "file": "dukosch.lua",
+      "action": "Przetwarzanie lua",
       "status": "in_progress"
     }
   ],
   "errors": [],
   "warnings": [],
   "stats": {
-    "files_this_session": 558,
+    "files_this_session": 578,
     "keys_this_session": 0,
     "errors_this_session": 0,
     "fixes_applied": 0

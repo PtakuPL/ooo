@@ -55,7 +55,7 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission04) ~= 6 or player:getOutfit().lookType ~= 66 then
-		npcHandler:say("Excuse me, but I'm waiting for someone important!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nurik.say_1")
 		return false
 	end
 
@@ -71,7 +71,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "dwarven bridge") then
-		npcHandler:say("Wait a minute! Do I get that right? You're the owner of the dwarven bridge and you are willing to sell it to me??", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nurik.say_2")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
@@ -81,10 +81,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("How splendid! Do you have the necessary documents with you?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nurik.say_3")
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Oh my, oh my. I'm so excited! So let's seal this deal as fast as possible so I can visit my very own dwarven bridge. Are you ready for the transaction?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.nurik.say_4")
 			npcHandler:setTopic(playerId, 4)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			local player = Player(creature)

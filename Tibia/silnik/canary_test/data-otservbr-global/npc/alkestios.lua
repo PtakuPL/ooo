@@ -61,9 +61,9 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(ThreatenedDreams.Mission01[1]) == 1 and player:getStorageValue(ThreatenedDreams.Mission01.PoacherChest) == 1 then
-			npcHandler:say("Uhmn.. Maybe Ahmet in Ankrahmun can help we to fake this book.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alkestios.say_1")
 		elseif player:getStorageValue(ThreatenedDreams.Mission01[1]) == 2 then
-			npcHandler:say("The poachers are still chasing me. Please hurry and find a way to help me.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alkestios.say_2")
 		elseif player:getStorageValue(ThreatenedDreams.Mission01[1]) == 3 then
 			npcHandler:say({
 				"You succeeded! It seems the poachers have read your little faked story about killing white deer and the ensuing doom. They stopped chasing me. Thank you! ...",
@@ -86,7 +86,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:getStorageValue(ThreatenedDreams.QuestLine) == 1 then
-				npcHandler:say("You have already started this mission.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alkestios.say_3")
 				npcHandler:setTopic(playerId, 0)
 			else
 				npcHandler:say({
@@ -107,7 +107,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
-		npcHandler:say("Then not.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.alkestios.say_4")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

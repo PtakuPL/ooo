@@ -62,12 +62,12 @@ local function greetCallback(npc, creature, message)
 
 	if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 35 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.ScaredKazzan) ~= 1 and player:getOutfit().lookType == 65 then
 		player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.ScaredKazzan, 1)
-		npcHandler:say("WAAAAAHHH!!!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.kazzan.say_1")
 		endConversationWithDelay(npcHandler, npc, creature)
 		return false
 	end
 
-	npcHandler:say("Feel welcome in the lands of the children of the enlightened Daraman, |PLAYERNAME|.", npc, creature)
+	NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.kazzan.say_2")
 	npcHandler:setInteraction(npc, creature)
 
 	return true
@@ -83,7 +83,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U8_1.TibiaTales.ToAppeaseTheMightyQuest) < 1 then
 		if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.Faction.MaridDoor) < 1 and player:getStorageValue(Storage.Quest.U7_4.DjinnWar.Faction.EfreetDoor) < 1 then
-			npcHandler:say("Do you know the location of the djinn fortresses in the mountains south of here?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.kazzan.say_3")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 and MsgContains(message, "yes") then
@@ -103,7 +103,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		player:setStorageValue(Storage.Quest.U8_1.TibiaTales.ToAppeaseTheMightyQuest, 1)
 		-- Entregando
 	elseif player:getStorageValue(Storage.Quest.U8_1.TibiaTales.ToAppeaseTheMightyQuest) == 3 then
-		npcHandler:say("Well, I don't blame you for that. I am sure you did your best. Now we can just hope that peace remains. Here, take this small gratification for your effort to help and Daraman may bless you!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.kazzan.say_4")
 		player:setStorageValue(Storage.Quest.U8_1.TibiaTales.ToAppeaseTheMightyQuest, player:getStorageValue(Storage.Quest.U8_1.TibiaTales.ToAppeaseTheMightyQuest) + 1)
 		player:addItem(3035, 20)
 	end

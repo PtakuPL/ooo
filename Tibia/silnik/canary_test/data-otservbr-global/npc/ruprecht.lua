@@ -109,11 +109,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			if tonumber(storeTable[playerId]) == 6526 then
 				if player:removeItem(6496, 1) then
-					npcHandler:say("Thank you, here is your 1 christmas token.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_2")
 					player:addItem(6526, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("You don't have a present bag.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_3")
 					npcHandler:setTopic(playerId, 0)
 				end
 				return false
@@ -123,13 +123,13 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addItem(itemsTable[storeTable[playerId]].itemId, 1)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough of tokens.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_5")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif npcHandler:getTopic(playerId) > 0 then
 		if MsgContains(message, "no") then
-			npcHandler:say("Come back when you are ready to trade some tokens!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_6")
 		end
 	end
 	if MsgContains(message, "santa claus") then

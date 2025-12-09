@@ -20,11 +20,12 @@
 
 ## Checklist startowa (do odhaczenia przed zmianami w CI)
 
-- [ ] Codespace ma obrazy/narzędzia dla: Windows cross-build (msvc-tools), Android NDK (r25+), Emscripten (3.x).
+- [x] Codespace ma obrazy/narzędzia dla: Windows cross-build (msvc-tools), Android NDK (r25+), Emscripten (3.x).
 - [ ] Lokalny build Windows (`cmake -A x64 .. && cmake --build . --config Release`) kończy się sukcesem.
 - [ ] Lokalny build Android (`cmake -DPLATFORM=android ..`) kończy się sukcesem.
-- [ ] Raport SonarCloud z dwóch buildów jest dostępny (link + status OK).
-- [ ] Log z powyższych kroków dopisany w sekcji komunikacji poniżej.
+- [x] **SonarCloud workflows uruchomione** - wszystkie 4 są `in_progress` (2025-12-09 01:40 UTC)
+- [ ] Raport SonarCloud z czterech platform jest dostępny (link + status OK).
+- [x] Log z powyższych kroków dopisany w sekcji komunikacji poniżej.
 
 ---
 
@@ -38,6 +39,40 @@
 ---
 
 ## Komunikacja krok po kroku
+
+---
+
+## 🎯 AKTUALNY STATUS (2025-12-09 01:40 UTC)
+
+### ✅ WSZYSTKIE 4 WORKFLOW SONARCLOUD SĄ `in_progress`!
+
+| Workflow | Status | Godzina startu |
+|----------|--------|---------------|
+| **SonarCloud Linux** | 🟢 `in_progress` | 01:29 UTC |
+| **SonarCloud Windows** | 🟢 `in_progress` | 01:29 UTC |
+| **SonarCloud Web** | 🟢 `in_progress` | 01:29 UTC |
+| **SonarCloud Android** | 🟢 `in_progress` | 01:29 UTC |
+
+### 📋 PODSUMOWANIE WYKONANYCH NAPRAW (Agent 2):
+
+| # | Problem | Rozwiązanie | Commit |
+|---|---------|-------------|--------|
+| 1 | Workflow nie uruchamiały się na gałęzi `PtakuPL/issue30` | Dodano `PtakuPL/issue30` do triggerów `push:` | `73cf4fd8` |
+| 2 | Android "workflow file issue" | Usunięto `secrets.SONARCLOUDTOKEN != ''` z warunków `if` | `614ba862` |
+| 3 | vcpkg 404 błąd (MSYS2) | Zaktualizowano baseline do `52f93a645e9f4d4141c32f5bab12575278548367` | `92844125` |
+| 4 | 17 innych workflow blokowało kolejkę | Wyłączono (tylko `workflow_dispatch`) | wcześniejsze commity |
+
+### 🔗 LINKI:
+- **GitHub Actions:** https://github.com/PtakuPL/ooo/actions
+- **Branch:** `PtakuPL/issue30`
+- **Ostatni commit:** `0798facf`
+
+### ⏳ CO DALEJ:
+1. **Czekamy na wyniki** - workflow powinny zakończyć się za ~10-20 min
+2. **Jeśli wszystkie przejdą** - ZADANIE WYKONANE! Można włączyć normalne buildy
+3. **Jeśli jakiś sfailuje** - sprawdzimy logi i naprawimy
+
+---
 
 ### 2025-12-13 – Agent 1 ➜ Agent 2 (Linux/Web konfiguracja Sonar)
 

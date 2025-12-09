@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-09 06:54:04 UTC  
+> **Aktualizacja:** 2025-12-09 06:57:10 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -25,8 +25,8 @@
 | ⏭️ Plików wykluczonych | **5329** | - |
 | 🔑 Kluczy i18n | **49992** | ↑ |
 | 🌍 Języków | **53** | ✓ |
-| ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#1** | - |
+| ⚠️ Konfliktów | **50** | ✓ |
+| 🔄 Cykl | **#2** | - |
 
 ---
 
@@ -78,9 +78,9 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #1` |
+| **Plik** | `Cykl #2` |
 | **Szczegóły** | NPC:11991 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-09 06:53:31 |
+| **Ostatnia aktualizacja** | 2025-12-09 06:56:32 |
 
 ### 📈 Statystyki sesji
 
@@ -255,7 +255,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 457957, Cykl #1 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 457957, Cykl #2 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

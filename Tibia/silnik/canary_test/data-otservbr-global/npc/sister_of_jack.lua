@@ -70,13 +70,13 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "jack") then
 		if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 5 then
 			if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.Mother == 1) and (player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.Sister)) < 1 then
-				npcHandler:say("Why are you asking, he didn't get himself into something again did he?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sister_of_jack.say_1")
 				npcHandler:setTopic(playerId, 1)
 			end
 		end
 	elseif MsgContains(message, "spectulus") then
 		if npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Spelltolust?! That sounds awfully nasty! What was he doing there - are you telling me he lived an alternate life and he didn't even tell {mother}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sister_of_jack.say_2")
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "yes") then
@@ -87,7 +87,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("What?! And what did he do there? Who did he visit there?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sister_of_jack.say_3")
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			npcHandler:say({

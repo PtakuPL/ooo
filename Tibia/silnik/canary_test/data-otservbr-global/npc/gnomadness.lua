@@ -77,7 +77,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		if npcHandler:getTopic(playerId) == 1 then
 			local desiredLevel = getMoneyCount(message)
 			if desiredLevel <= 0 then
-				npcHandler:say("I'm sorry, I don't understand. What hazard level would you like to set?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomadness.say_2")
 				npcHandler:setTopic(playerId, 2)
 				return true
 			end
@@ -89,10 +89,10 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:addAchievement("Ripp-Ripp Hooray!")
 					player:addItem(PRIMAL_BAG, 1)
 					player:kv():scoped("primal-ordeal"):set("received-prize", true)
-					npcHandler:say("You've achieved the necessary hazard level. As a reward, you've received the Noxious Ripptor mount and a primal bag.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomadness.say_4")
 				end
 			else
-				npcHandler:say("You can't set your hazard level higher than your maximum unlocked level.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomadness.say_5")
 			end
 		end
 	end

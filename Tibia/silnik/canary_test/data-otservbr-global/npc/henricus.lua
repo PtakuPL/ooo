@@ -63,10 +63,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	local missing, totalBlessPrice = Blessings.getInquisitionPrice(player)
 
 	if MsgContains(message, "inquisitor") then
-		npcHandler:say("The churches of the gods entrusted me with the enormous and responsible task to lead the inquisition. I leave the field work to inquisitors who I recruit from fitting people that cross my way.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_1")
 	elseif MsgContains(message, "join") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) < 1 then
-			npcHandler:say("Do you want to join the inquisition?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_2")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "blessing") or MsgContains(message, "bless") then
@@ -74,7 +74,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:say("Do you want to receive the blessing of the inquisition - which means " .. (missing == 5 and "all five available" or missing) .. " blessings - for " .. totalBlessPrice .. " gold?", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		else
-			npcHandler:say("You cannot get this blessing unless you have completed The Inquisition Quest.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_3")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "flask") or MsgContains(message, "special flask") then
@@ -82,12 +82,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:say("Do you want to buy the special flask of holy water for " .. flaskCost .. " gold?", npc, creature)
 			npcHandler:setTopic(playerId, 8)
 		else
-			npcHandler:say("You do not need this flask right now.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_5")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "mission") or MsgContains(message, "report") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) < 1 then
-			npcHandler:say("Do you want to join the inquisition?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_6")
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 1 then
 			npcHandler:say({
@@ -98,7 +98,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission01, 1) -- The Inquisition Questlog- "Mission 1: Interrogation"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 2 then
-			npcHandler:say("Your current mission is to investigate the reliability of certain guards. Are you done with that mission?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_7")
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 3 then
 			npcHandler:say({
@@ -112,7 +112,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addItem(133, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 5 then
-			npcHandler:say("Your current mission is to destroy this coven. Are you done with that mission?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_8")
 			npcHandler:setTopic(playerId, 9)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 6 then
 			npcHandler:say({
@@ -124,7 +124,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission03, 1) -- The Inquisition Questlog- "Mission 3: Vampire Hunt"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) > 6 and player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) < 11 then
-			npcHandler:say("Your current mission is to help the vampire hunter Storkus. Are you done with that mission? ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_9")
 			npcHandler:setTopic(playerId, 4)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 11 then
 			npcHandler:say({
@@ -136,7 +136,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addItem(133, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 12 or player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 13 then
-			npcHandler:say("Your current mission is to exorcise an evil being from a house in Liberty Bay. Are you done with that mission? ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_10")
 			npcHandler:setTopic(playerId, 5)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 14 then
 			npcHandler:say({
@@ -155,7 +155,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 16)
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission05, 2) -- The Inquisition Questlog- "Mission 5: Essential Gathering"
 			else
-				npcHandler:say("You need 20 of them.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_11")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 17 then
@@ -176,18 +176,18 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission06, 3) -- The Inquisition Questlog- "Mission 6: The Demon Ungreez"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 20 then
-			npcHandler:say("Destroy the shadow nexus using this vial of holy water and kill all demon lords.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_12")
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 21)
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission07, 1) -- The Inquisition Questlog- "Mission 7: The Shadow Nexus"
 			player:addItem(133, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 21 or player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 22 then
-			npcHandler:say("Your current mission is to destroy the shadow nexus in the Demon Forge. Are you done with that mission?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_13")
 			npcHandler:setTopic(playerId, 6)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("So be it. Now you are a member of the inquisition. You might ask me for a {mission} to raise in my esteem.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_14")
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
@@ -205,25 +205,25 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 3)
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission01, 7) -- The Inquisition Questlog- "Mission 1: Interrogation"
 			else
-				npcHandler:say("You haven't done your mission yet.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_15")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 10 then
-				npcHandler:say("Good, you've returned. Your skill in practical matters seems to be useful. If you're ready for a further mission, just ask. ", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_16")
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 11)
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission03, 6) -- The Inquisition Questlog- "Mission 3: Vampire Hunt"
 			else
-				npcHandler:say("You haven't done your mission with {Storkus} yet.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_17")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
 			if player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 13 then
-				npcHandler:say("Well, this was an easy task, but your next mission will be much more challenging. ", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_18")
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 14)
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission04, 3) -- The Inquisition Questlog- "Mission 4: The Haunted Ruin"
 			else
-				npcHandler:say("You haven't done your mission with {Storkus} yet.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_19")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 6 then
@@ -236,46 +236,46 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission07, 3) -- The Inquisition Questlog- "Mission 7: The Shadow Nexus"
 				player:addAchievement("High Inquisitor")
 			else
-				npcHandler:say("Come back when you have destroyed the shadow nexus.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_20")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 7 then
 			if missing == 0 then
-				npcHandler:say("You already have been blessed!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_21")
 			elseif player:removeMoneyBank(totalBlessPrice) then
-				npcHandler:say("You have been blessed by all of five gods!, |PLAYERNAME|.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_22")
 				player:addMissingBless(false)
 				player:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 			else
-				npcHandler:say("Come back when you have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_23")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 8 then
 			if player:removeMoneyBank(flaskCost) then
-				npcHandler:say("Here is your new flask!, |PLAYERNAME|.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_24")
 				player:addItem(133, 1)
 			else
-				npcHandler:say("Come back when you have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_25")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 9 then
 			if player:removeItem(7874, 1) then
-				npcHandler:say("Fine, fine. You have proven that you can work efficiently. Still, only further missions will show if you are truly capable. Ask me for another mission if you're ready.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_26")
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 6)
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission02, 3) -- The Inquisition Questlog- "Mission 2: Eclipse"
 			else
-				npcHandler:say("You need bring me the witches' grimoire.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_27")
 			end
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) > 0 then
-			npcHandler:say("Then no.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_28")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "outfit") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 16 then
-			npcHandler:say("Here is your demon hunter outfit. You deserve it. Unlock more addons by completing more missions.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_29")
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 17)
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission05, 3) -- The Inquisition Questlog- "Mission 5: Essential Gathering"
 			player:addOutfit(288, 0)
@@ -283,13 +283,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) >= 19 and player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) <= 22 then
-			npcHandler:say("Here is your demon hunter outfit. You deserve it. Unlock more addons by completing more missions.!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_30")
 			player:addOutfitAddon(288, 1)
 			player:addOutfitAddon(289, 1)
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 23 then
-			npcHandler:say("Here is the final addon for your demon hunter outfit. Congratulations!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_31")
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline, 24)
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission07, 4) -- The Inquisition Questlog- "Mission 7: The Shadow Nexus"
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.RewardDoor, 1)
@@ -319,7 +319,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "fardos") then
-		npcHandler:say("The priests of Fardos are often mystics who have secluded themselves from worldly matters. Others provide guidance and healing to people in need in the temples.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_32")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "uman") then
 		npcHandler:say({

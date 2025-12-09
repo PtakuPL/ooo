@@ -45321,6 +45321,367 @@ npc.alkestios.stdmod_7,We call ourselves the fae. Some name us nature spirits or
 npc.alkestios.stdmod_8,We call ourselves the fae. Some name us nature spirits or peri but we prefer the former term. Most of us are rather reclusive and live peaceful lives in our secret realm. We only leave it in order to {protect} our home. ...,,missing
 npc.alkestios.stdmod_9,"I can sense a kind of dark energy lately. It is pervading this world, more and more every day. Yet I don't know where it arises from nor what we could do to dispel it.",,missing
 npc.alkestios.stdmod_10,"It is rather subversive, so most creatures won't sense it ... yet. But its corrosive power has already begun to affect my kind and our hidden realm in unpleasant ways.",,missing
+npc.henricus.say_1,The churches of the gods entrusted me with the enormous and responsible task to lead the inquisition. I leave the field work to inquisitors who I recruit from fitting people that cross my way.,,missing
+npc.henricus.say_2,Do you want to join the inquisition?,,missing
+npc.henricus.say_3,You cannot get this blessing unless you have completed The Inquisition Quest.,,missing
+npc.henricus.say_4,Do you want to buy the special flask of holy water for ,,missing
+npc.henricus.say_5,You do not need this flask right now.,,missing
+npc.henricus.say_6,Do you want to join the inquisition?,,missing
+npc.henricus.say_7,Your current mission is to investigate the reliability of certain guards. Are you done with that mission?,,missing
+npc.henricus.say_8,Your current mission is to destroy this coven. Are you done with that mission?,,missing
+npc.henricus.say_9,Your current mission is to help the vampire hunter Storkus. Are you done with that mission? ,,missing
+npc.henricus.say_10,Your current mission is to exorcise an evil being from a house in Liberty Bay. Are you done with that mission? ,,missing
+npc.henricus.say_11,You need 20 of them.,,missing
+npc.henricus.say_12,Destroy the shadow nexus using this vial of holy water and kill all demon lords.,,missing
+npc.henricus.say_13,Your current mission is to destroy the shadow nexus in the Demon Forge. Are you done with that mission?,,missing
+npc.henricus.say_14,So be it. Now you are a member of the inquisition. You might ask me for a {mission} to raise in my esteem.,,missing
+npc.henricus.say_15,You haven't done your mission yet.,,missing
+npc.henricus.say_16,"Good, you've returned. Your skill in practical matters seems to be useful. If you're ready for a further mission, just ask. ",,missing
+npc.henricus.say_17,You haven't done your mission with {Storkus} yet.,,missing
+npc.henricus.say_18,"Well, this was an easy task, but your next mission will be much more challenging. ",,missing
+npc.henricus.say_19,You haven't done your mission with {Storkus} yet.,,missing
+npc.henricus.say_20,Come back when you have destroyed the shadow nexus.,,missing
+npc.henricus.say_21,You already have been blessed!,,missing
+npc.henricus.say_22,"You have been blessed by all of five gods!, |PLAYERNAME|.",,missing
+npc.henricus.say_23,Come back when you have enough money.,,missing
+npc.henricus.say_24,"Here is your new flask!, |PLAYERNAME|.",,missing
+npc.henricus.say_25,Come back when you have enough money.,,missing
+npc.henricus.say_26,"Fine, fine. You have proven that you can work efficiently. Still, only further missions will show if you are truly capable. Ask me for another mission if you're ready.",,missing
+npc.henricus.say_27,You need bring me the witches' grimoire.,,missing
+npc.henricus.say_28,Then no.,,missing
+npc.henricus.say_29,Here is your demon hunter outfit. You deserve it. Unlock more addons by completing more missions.,,missing
+npc.henricus.say_30,Here is your demon hunter outfit. You deserve it. Unlock more addons by completing more missions.!,,missing
+npc.henricus.say_31,Here is the final addon for your demon hunter outfit. Congratulations!,,missing
+npc.henricus.say_32,The priests of Fardos are often mystics who have secluded themselves from worldly matters. Others provide guidance and healing to people in need in the temples.,,missing
+npc.henricus.stdmod_33,It's a shame that only a few paladins still use their abilities to further the cause of the gods of good. Too many paladins have become selfish and greedy.,,missing
+npc.henricus.stdmod_34,"Nowadays, most knights seem to have forgotten the noble cause to which all knights were bound in the past. Only a few have remained pious, serve the gods and follow their teachings.",,missing
+npc.henricus.stdmod_35,Those who wield great power have to resist great temptations. We have the burden to eliminate all those who give in to the temptations.,,missing
+npc.henricus.stdmod_36,"The druids here still follow the old rules. Sadly, the druids of Carlin have left the right path in the last years.",,missing
+npc.henricus.stdmod_37,"The dwarfs are allied with Thais but follow their own obscure religion. Although dwarfs keep mostly to themselves, we have to observe this alliance closely.",,missing
+npc.henricus.stdmod_38,"The dwarfs are allied with Thais but follow their own obscure religion. Although dwarfs keep mostly to themselves, we have to observe this alliance closely.",,missing
+npc.henricus.stdmod_39,Those elves are hardly any more civilised than orcs. They can become a threat to mankind at any time.,,missing
+npc.henricus.stdmod_40,Those elves are hardly any more civilised than orcs. They can become a threat to mankind at any time.,,missing
+npc.henricus.stdmod_41,"Venore is somewhat difficult to handle. The merchants have a close eye on our activities in their city and our authority is limited there. However, we will use all of our influence to prevent a second Carlin.",,missing
+npc.henricus.stdmod_42,"Drefia used to be a city of sin and heresy, just like Carlin nowadays. One day, the gods decided to destroy this town and to erase all evil there.",,missing
+npc.henricus.stdmod_43,"Darashia is a godless town full of mislead fools. One day, it will surely share the fate of its sister town Drefia.",,missing
+npc.henricus.stdmod_44,"Demons exist in many different shapes and levels of power. In general, they are servants of the dark gods and command great powers of destruction.",,missing
+npc.henricus.stdmod_45,"Carlin is a city of sin and heresy. After the reunion of Carlin with the kingdom, the inquisition will have much work to purify the city and its inhabitants.",,missing
+npc.henricus.stdmod_46,We can see his evil influence almost everywhere. Keep your eyes open or the dark one will lead you on the wrong way and destroy you.,,missing
+npc.henricus.stdmod_47,The church of Crunor works closely together with the druid guild. This makes a cooperation sometimes difficult.,,missing
+npc.henricus.stdmod_48,"We owe to the gods of good our creation and continuing existence. If it weren't for them, we would surely fall prey to the minions of the vile and dark gods.",,missing
+npc.henricus.stdmod_49,"The churches of the gods united to fight heresy and dark magic. They are the shield of the true believers, while the inquisition is the sword that fights all enemies of virtuousness.",,missing
+npc.henricus.stdmod_50,The churches of the gods entrusted me with the enormous and responsible task to lead the inquisition. I leave the field work to inquisitors who I recruit from fitting people that cross my way.,,missing
+npc.henricus.stdmod_51,Belive on the gods and they will show you the path.,,missing
+npc.henricus.stdmod_52,By edict of the churches I'm the Lord Inquisitor.,,missing
+npc.henricus.stdmod_53,"I'm Henricus, the Lord Inquisitor.",,missing
+npc.kevin.say_1,You are not a member of our guild yet! We have high standards for our members. To rise in our guild is a difficult but rewarding task. Are you interested in joining?,,missing
+npc.kevin.say_2,So you have finally made it! I did not think that you would have it in you ... However: are you ready for another assignment?,,missing
+npc.kevin.say_3,"Excellent, you got it fixed! This will teach this mailbox a lesson indeed! Are you interested in another assignment?",,missing
+npc.kevin.say_4,You truly got him? Quite impressive. You are a very promising candidate! I think I have another mission for you. Are you interested?,,missing
+npc.kevin.say_5,Do you bring all bones for our officers' safety fund at once?,,missing
+npc.kevin.say_6,"Splendid, I knew we could trust you. I would like to ask for your help in another matter. Are you interested?",,missing
+npc.kevin.say_7,Once more you have impressed me! Are you willing to do another job?,,missing
+npc.kevin.say_8,First you need to complete your current mission.,,missing
+npc.kevin.say_9,Excellent! Another job well done! Would you accept another mission?,,missing
+npc.kevin.say_10,"Fine, fine. I think that should do it. Tell Hugo that we order those uniforms. The completed dress pattern will soon arrive in Venore. Report to me when you have talked to him.",,missing
+npc.kevin.say_11,So Waldo is dead? This is grave news indeed. Did you recover his posthorn?,,missing
+npc.kevin.say_12,"You did it? I hope you did not catch a flu in the cold! Anyway, there's another mission for you. Are you interested?",,missing
+npc.kevin.say_13,You have delivered that letter? You are a true postofficer. All over the land bards shallpraise your name. There are no missions for you left right now.,,missing
+npc.kevin.say_14,There are no missions for you left right now. You already have the title of Archpostman.,,missing
+npc.kevin.say_15,There are no missions for you left right now. But you are worthy indeed. Do you want to advance in our guild?,,missing
+npc.kevin.say_16,So are you ready for another mission?,,missing
+npc.kevin.say_17,So are you ready for another mission?,,missing
+npc.kevin.say_18,So are you ready for another mission?,,missing
+npc.kevin.say_19,Excellent! Another job well done! Would you accept another mission?,,missing
+npc.kevin.say_20,Excellent! Another job well done! Would you accept another mission?,,missing
+npc.kevin.say_21,You have made it! We have enough bones for the fund! You remind me of myself when I was young! Interested in another mission?,,missing
+npc.kevin.say_22,You have made it! We have enough bones for the fund! You remind me of myself when I was young! Interested in another mission?,,missing
+npc.kevin.say_23,You truly got him? Quite impressive. You are a very promising candidate! I think I have another mission for you. Are you interested?,,missing
+npc.kevin.say_24,So are you ready for another mission?,,missing
+npc.kevin.say_25,So are you ready for another mission?,,missing
+npc.kevin.say_26,"Oh yes, where did we get that from ...? Let's see, first ask the great technomancer in Kazordoon for the technical details. Return here afterwards.",,missing
+npc.kevin.say_27,"The mail with Talphion's instructions just arived. I remember we asked Queen Eloise of Carlin for the perfect colours. Go there, ask her about the UNIFORMS and report back here.",,missing
+npc.kevin.say_28,"The queen has sent me the samples we needed. The next part is tricky. We need theuniforms to emanate some odor that dogs hate.The dog with the best 'taste' in that field is Noodles,the dog of King Tibianus. Do you understand so far?",,missing
+npc.kevin.say_29,"Fine, fine. I think that should do it. Tell Hugo that we order those uniforms. The completed dress pattern will soon arrive in Venore. Report to me when you have talked to him.",,missing
+npc.kevin.say_30,You are worthy indeed. Do you want to advance in our guild?,,missing
+npc.kevin.say_31,You are worthy indeed. Do you want to advance in our guild?,,missing
+npc.kevin.say_32,You are worthy indeed. Do you want to advance in our guild?,,missing
+npc.kevin.say_33,You are worthy indeed. Do you want to advance in our guild?,,missing
+npc.kevin.say_34,"Hm, I might consider your proposal, but first you will have to prove your worth by doing some tasks for us. Are you willing to do that?",,missing
+npc.kevin.say_35,Excellent! Your first task will be quite simple. But you should better write my instructions down anyways. You can read and write?,,missing
+npc.kevin.say_36,"So listen, you will check certain tours our members have to take to see if there is some trouble. First travel with Captain Bluebear's ship from Thais to Carlin, understood?",,missing
+npc.kevin.say_37,Excellent! Once you have done that you will travel with Uzon to Edron. You will find him in the Femor Hills. Understood?,,missing
+npc.kevin.say_38,"Fine, fine! Next, travel with Captain Seahorse to the city of Venore. Understood?",,missing
+npc.kevin.say_39,"Good! Finally, find the technomancer Brodrosch and travel with him to the Isle of Cormaya. After this passage report back to me here. Understood?",,missing
+npc.kevin.say_40,"Ok, remember: the Tibian mail service puts trust in you! Don't fail and report back soon. Just tell me about your {mission}.",,missing
+npc.kevin.say_41,I am glad to hear that. One of our mailboxes was reported to be jammed. It is located on the so called 'mountain' on theisle Folda. Get a crowbar and fix the mailbox. Report about your mission when you have done so.,,missing
+npc.kevin.say_42,For your noble deeds I grant you the title Assistant Postofficer. All Postofficers will charge you less money from now on. After every second mission ask me for an ADVANCEMENT. Your next task will be a bit more challenging. Do you feel ready for it?,,missing
+npc.kevin.say_43,I need you to deliver a bill to the stage magician David Brassacres. He's hiding from his creditors somewhere in Venore. It's likely you will have to trick him somehow to reveal his identity. Report back when you delivered this bill.,,missing
+npc.kevin.say_44,"Ok, listen: we have some serious trouble with agressive dogs lately. We have accumulated some bones as a sort of pacifier but we need more. Collect 20 bones like the one in my room to the left and report here.",,missing
+npc.kevin.say_45,You have collected all the 20 bones needed. Excellent! Now let's talk about further missions if you are interested.,,missing
+npc.kevin.say_46,You don't have it...,,missing
+npc.kevin.say_47,I grant you the title of postman. You are now a full member of our guild. Here have your own officers hat and wear it with pride.,,missing
+npc.kevin.say_48,"Since I am convinced I can trust you, this time you must deliver a valuable present to Dermot on Fibula. Do NOT open it!!! You will find the present behind the door here on the lower right side of this room.",,missing
+npc.kevin.say_49,"Ok. We need a new set of uniforms, and only the best will do for us. Please travel to Venore and negotiate with Hugo Chief acontract for new uniforms.",,missing
+npc.kevin.say_50,"Good. Go there and find out what taste he dislikes most: mouldy cheese, a piece of fur or abananaskin. Tell him to SNIFF, then the object. Show him the object and ask 'Do you like that?'.DONT let the guards know what you are doing.",,missing
+npc.kevin.say_51,"Good, so listen. Hugo Chief informed me that he needs the measurements of our postofficers. Go and bring me the measurements of Ben, Lokur, Dove, Liane, Chrystal and Olrik.",,missing
+npc.kevin.say_52,"From now on it shall be known that you are a grand postman. You are now a privilegedmember until the end of days. Most captains around the world have an agreement with our guild to transport our privileged members, like you, for less gold.",,missing
+npc.kevin.say_53,Ok but your next assignment might be dangerous. Our Courier Waldo has been missing for a while. I must assume he is dead. Can you follow me so far?,,missing
+npc.kevin.say_54,Find out about his whereabouts and retrieve him or at least his posthorn. He was looking for a new underground passage that is rumoured to be found underneath the troll-infested Mountain east of Thais.,,missing
+npc.kevin.say_55,Thank you. We will honour this. Your next mission will be a very special one. Good thing you are a special person as well. Are you ready?,,missing
+npc.kevin.say_56,"From now on you are a grand postman for special operations. You are an honoured member of our guild and earned the privilege of your own post horn. Here, take it.",,missing
+npc.kevin.say_57,"So listen well. Behind the lower left door you will find a bag. The letters in the bag are for none other than Santa Claus! Deliver them to his house on the isle of Vega, {use} thebag on his mailbox and report back here.",,missing
+npc.kevin.say_58,"Excellent. Here is a letter for you to deliver. Well, to be honest, no one else volunteered. It's a letter from the mother of Markwin, the king of Mintwallin. Deliver that letter to him, but note that you will not be welcome there.",,missing
+npc.kevin.say_59,I grant you the title of Archpostman. You are a legend in our guild. As privilege of your newly aquired status you are allowed to make use of certain mailboxes in dangerous areas. Just look out for them and you'll see.,,missing
+npc.kevin.say_60,"Your eagerness is a virtue, young one, but first let's talk about advancement",,missing
+npc.farhilorn_of_the_winter_court.say_1,"We allow able champions of all races to fight for our cause against the challenges of the {arena}. So are you interested? I'm not interested in fancy'wordplay, so a simple {yes} or {no} will suffice!",,missing
+npc.farhilorn_of_the_winter_court.say_2,You are now able to enter the teleport.,,missing
+npc.farhilorn_of_the_winter_court.say_3,As you wish.,,missing
+npc.farhilorn_of_the_winter_court.say_4,"This place has always been a site where the champions of summer and winter have clashed in battle. Over the centuries this spectacle has drawn many creatures here to watch, participate and indulge in less savory activities.",,missing
+npc.sister_of_jack.say_1,"Why are you asking, he didn't get himself into something again did he?",,missing
+npc.sister_of_jack.say_2,Spelltolust?! That sounds awfully nasty! What was he doing there - are you telling me he lived an alternate life and he didn't even tell {mother}?,,missing
+npc.sister_of_jack.say_3,What?! And what did he do there? Who did he visit there?,,missing
+npc.iskan.say_1,"So, do you want a passage to Nibelor my friend?",,missing
+npc.iskan.say_2,Do you want to Nibelor?,,missing
+npc.iskan.say_3,"You are a friend of mine and the boys now. I tell you something. If you ever need to go to the isle of Nibelor, just ask me for a {passage}.",,missing
+npc.iskan.say_4,I have now no mission for you.,,missing
+npc.iskan.say_5,Sorry but I only give missions to those who are considered a true Barbarian. ,,missing
+npc.iskan.say_6,"Alright, we are even!",,missing
+npc.iskan.say_7,You don't have enough. Bring me the money and I will forget about it.,,missing
+npc.iskan.say_8,"Sorry, first time you have to do a mission for me.",,missing
+npc.iskan.say_9,"Mhmm, you leave me no other choice than to inform the Jarl.",,missing
+npc.iskan.stdmod_10,I run the dog sled service from this city to {Nibelor}.,,missing
+npc.iskan.stdmod_11,I am Iskan.,,missing
+npc.iskan.stdmod_12,I can bring you to Nibelor with the sled if you want to. Just ask for a {passage}.,,missing
+npc.iskan.stdmod_13,"This city seems to be growing every day. First, there have been only a few huts and now ... look around, houses everywhere.",,missing
+npc.iskan.stdmod_14,"Our people are very proud and honest. I guess that's more than most people can say about themselves and their people, right boys?",,missing
+npc.iskan.stdmod_15,"I heard something about a ship crashing in the shelf ice between Nibelor and Grimlund. If I were you, I wouldn't go to chakoya terrain. It's pretty dangerous.",,missing
+npc.iskan.stdmod_16,Nasty little beasts. Me and the boys had quite some bloody encounters with them on the ice.,,missing
+npc.iskan.stdmod_17,The boys warn me in advance if a monster is around.,,missing
+npc.iskan.stdmod_18,"My boys did not like the guys that were travelling through our city, and I trust in their instincts. Isn't it so, boys?",,missing
+npc.iskan.stdmod_19,The yeti is real and dangerous.,,missing
+npc.iskan.stdmod_20,"I am not sure what to think about this new custom to accept foreigners as one of us after passing that test. But it's the Jarl's decision, not mine.",,missing
+npc.iskan.stdmod_21,The raiders camps are far to the south. There are three of them. Small camp sites of raiding parties might be found almost anywhere though.,,missing
+npc.iskan.stdmod_22,"They are sometimes trying to catch me and the boys. Such fools, they will never get us. Right, boys?",,missing
+npc.iskan.stdmod_23,The boys can tell who's an enemy just by the smell.,,missing
+npc.iskan.stdmod_24,Me and the boys care only about our own territory.,,missing
+npc.iskan.stdmod_25,I guess their healing powers are almost as useful as those of our shamans.,,missing
+npc.iskan.stdmod_26,I guess there are guys like me that have a talent to talk to dogs and there are guys like the shamans that have the talent to talk to spirits.,,missing
+npc.iskan.stdmod_27,"We don't need any kings or queens. Am I right, boys? Yeah, I am.",,missing
+npc.iskan.stdmod_28,"Sven the Younger is our current Jarl. For my standards he's still a puppy, but a smart one at least.",,missing
+npc.iskan.stdmod_29,"Yeah, where could it be. That's the question.",,missing
+npc.iskan.stdmod_30,"Easy, boys! Don't mention that name again. Makes the boys nuts, ye know?",,missing
+npc.iskan.stdmod_31,"In my whole long life, I've not seen any sign of those gods the people of the south are constantly talking about.",,missing
+npc.iskan.stdmod_32,"The icy father. We know him all too well, am I right boys? He has claimed so many old friends in all those years. So many.",,missing
+npc.riddler.say_1,Death awaits those who fail the test of the three seals! Do you really want me to test you?,,missing
+npc.riddler.say_2,HOHO! Right again. All right. The final question of the first seal: Who was the first warrior to follow the path of the Mooh'Tah?,,missing
+npc.riddler.say_3,"Hmmm, so you think cheating will get you through that test? Then your final question of the first seal is: What is the meaning of life?",,missing
+npc.riddler.say_4,HOHO! Lucky you. You have passed the first seal! So ... would you like to continue with the Seal of the Mind?,,missing
+npc.riddler.say_5,"As you wish, foolish one! Here is my first question: It's lighter then a feather but no living creature can hold it for ten minutes?",,missing
+npc.riddler.say_6,"That was an easy one. Let's try the second: If you name it, you break it.",,missing
+npc.riddler.say_7,ARGH! You did it again! Well all right. Do you wish to break the Seal of Madness?,,missing
+npc.riddler.say_8,GOOD! So I will get you at last. Answer this: What is your favourite colour?,,missing
+npc.riddler.say_9,DAMN YOUUUUUUUUUUUUUUUUUUUUUU!,,missing
+npc.riddler.say_10,WRONG!,,missing
+npc.riddler.say_11,"WRONG! Next time get your own answers. To hell with thee, cheater Sischfried!",,missing
+npc.riddler.say_12,WRONG!,,missing
+npc.riddler.stdmod_13,"This tower, of course, silly one. It holds my {master'}s {treasure}.",,missing
+npc.riddler.stdmod_14,His name is none of your business,,missing
+npc.riddler.stdmod_15,I am guarding the treasures of the tower. Only those who pass the {test} of the three sigils may pass.,,missing
+npc.riddler.stdmod_16,I am known as the riddler. That is all you need to know.,,missing
+npc.riddler.stdmod_17,I am the guardian of the paradox tower.,,missing
+npc.riddler.stdmod_18,The key of this tower! You will never find it! A malicious plant spirit is guarding it!.,,missing
+npc.freezhild.say_1,Crate of weapons you say.. for me?,,missing
+npc.freezhild.say_2,"I'm wondering why you are doing this. Well, we accept the gift. Don't think that this makes you a friend though.",,missing
+npc.freezhild.say_3,You don't have any crate of weapons!,,missing
+npc.ambassador_of_rathleton.say_1,This is a very beautiful ring. Thank you for this generous present!,,missing
+npc.ambassador_of_rathleton.say_2,Didn't you bring my gift?,,missing
+npc.ambassador_of_rathleton.say_3,I don't need a present right now. Thank you.,,missing
+npc.the_orc_king.say_1,Arrrrgh! A dirty paleskin! To me my children! Kill them my guards!,,missing
+npc.the_orc_king.say_2,"For eons he was trapped in an enchanted lamp by some ancient race. Now he's free to roam the world again. Although he cheated me I appreciate what he and his brethren will do to this world, now it's the time of the Djinn again!",,missing
+npc.the_orc_king.say_3,You bring me a stinking cookie???,,missing
+npc.the_orc_king.say_4,I was waiting for this day! Take the lamp and let Malor feel my wrath!,,missing
+npc.the_orc_king.say_5,"I don't know your enemy, paleskin! Begone!",,missing
+npc.the_orc_king.say_6,You have no cookie that I'd like.,,missing
+npc.the_orc_king.say_7,"Well, I hope it stinks a lot. I like stinking cookies best ... BY MY THOUSAND SONS! YOU ARE SO DEAD HUMAN! DEAD!",,missing
+npc.the_orc_king.say_8,I see.,,missing
+npc.the_orc_king.stdmod_9,I am Charkahn the Slayer! The immortal father of the {orcs} and master of this {hive}.,,missing
+npc.the_orc_king.stdmod_10,The orcs are the bearers of Blogs rage. This makes us the ultimate fighters and the most powerful of all races.,,missing
+npc.the_orc_king.stdmod_11,The orcs are the bearers of Blogs rage. This makes us the ultimate fighters and the most powerful of all races.,,missing
+npc.the_orc_king.stdmod_12,I can sense the presence and the feelings of my underlings and {minions}. I embrace the rage of the horde.,,missing
+npc.the_orc_king.stdmod_13,The orcish horde of this hive is under my control. I sense their emotions and their needs and provide them with the leadership they need to focus their hate and rage,,missing
+npc.the_orc_king.stdmod_14,"Hate and rage are the true blessings of Blog, since they are powerful weapons. They give the hive strength. I provide them with direction and focus.",,missing
+npc.the_orc_king.stdmod_15,The Raging One blessed us with his burning hate. We are truly his children and therefore {divine}.,,missing
+npc.the_orc_king.stdmod_16,"To conquer, to destroy and to dominate. Orcs are born to rule the {world}.",,missing
+npc.the_orc_king.stdmod_17,"One day I will rule the world, even when turned into a {slime}.",,missing
+npc.the_orc_king.stdmod_18,"Pah! Don't mock me, mortal! This shape is a curse which the evil {djinn} bestowed upon me!",,missing
+npc.the_orc_king.stdmod_19,"This cursed djinn king! I set him free from an enchanted {lamp}, and he {cheated} me!",,missing
+npc.the_orc_king.stdmod_20,Because I freed him he granted me three wishes. He was true to his word in the first two {wishes}.,,missing
+npc.the_orc_king.stdmod_21,"He built this fortress over Uldrek's grave within a single night. Also, he granted me my second wish and gave me immortality. Test it and try to kill me if you want. Har Har!",,missing
+npc.the_orc_king.stdmod_22,I wished to father more healthy and fertile children as any orc has ever done. But the djinn cheated me and made me a slime! Then he laughed at me and left for his abandoned fortress in the {Deathwish} Mountains.,,missing
+npc.the_orc_king.stdmod_23,His ancient fortress on Darama was deserted as the evil Djinn fled this world after his imprisonment. Now the time has come for the evil Djinns to return to their master although this will certainly awaken the {good Djinn} too.,,missing
+npc.the_orc_king.stdmod_24,I will not share anything more about that topic with you {paleskins}.,,missing
+npc.the_orc_king.stdmod_25,"You are as ugly as maggots, although not quite as as tasty.",,missing
+npc.the_orc_king.stdmod_26,"This cursed djinn king! I set him free from an enchanted lamp, and he cheated me!",,missing
+npc.robson.say_1,Do you want to buy a parcel for 15 gold?,,missing
+npc.robson.say_2,Do you want to buy a label for 1 gold?,,missing
+npc.robson.say_3,"Sorry, that's only dust in your purse.",,missing
+npc.robson.say_4,Fine.,,missing
+npc.robson.say_5,"Sorry, that's only dust in your purse.",,missing
+npc.robson.say_6,Fine.,,missing
+npc.robson.say_7,I knew I would be stuck with that stuff.,,missing
+npc.jean_pierre.say_1,"Well, I'm not a simple cook. I travel the whole Tibian continent for the most artfully seasoned {recipes} and constantly develop new ones.",,missing
+npc.jean_pierre.say_2,"You're interested in my recipes? Well. They are not for sale, but if you want to become my {apprentice}, I'll share my knowledge with you.",,missing
+npc.jean_pierre.say_3,"You can now cook any dish you want from this list: {Rotworm Stew, Hydra Tongue Salad, Roasted Dragon Wings, Tropical Fried Terrorbird, Banana Chocolate Shake, Veggie Casserole, Filled Jalapeno Peppers, Blessed Steak, Northern Fishburger, Carrot Cake, Coconut Shrimp Bake, Blackjack, Demonic Candy Balls, Sweet Mangonaise Elixir}.",,missing
+npc.jean_pierre.say_4,"Hmm. You look quite promising. Can't hurt to give it a try, I guess. Would you like to become my apprentice, |PLAYERNAME|?",,missing
+npc.jean_pierre.say_5,"Fine, young human. Ask me for a {recipe} anytime and I'll teach you what I know.",,missing
+npc.jean_pierre.say_6,Make sure that you have all the ingredients with you.,,missing
+npc.jean_pierre.say_7,It seems you have already cooked this dish this year. Please come back next year in August.,,missing
+npc.jean_pierre.say_8,Make sure that you have all the ingredients with you.,,missing
+npc.jean_pierre.say_9,It seems you have already cooked this dish this year. Please come back next year in August.,,missing
+npc.jean_pierre.say_10,Make sure that you have all the ingredients with you.,,missing
+npc.jean_pierre.say_11,It seems you have already cooked this dish this year. Please come back next year in August.,,missing
+npc.jean_pierre.say_12,Make sure that you have all the ingredients with you.,,missing
+npc.jean_pierre.say_13,It seems you have already cooked this dish this year. Please come back next year in August.,,missing
+npc.jean_pierre.say_14,Make sure that you have all the ingredients with you.,,missing
+npc.jean_pierre.say_15,It seems you have already cooked this dish this year. Please come back next year in August.,,missing
+npc.jean_pierre.say_16,Make sure that you have all the ingredients with you.,,missing
+npc.jean_pierre.say_17,It seems you have already cooked this dish this year. Please come back next year in August.,,missing
+npc.jean_pierre.say_18,Make sure that you have all the ingredients with you.,,missing
+npc.jean_pierre.say_19,It seems you have already cooked this dish this year. Please come back next year in August.,,missing
+npc.jean_pierre.say_20,Make sure that you have all the ingredients with you.,,missing
+npc.jean_pierre.say_21,It seems you have already cooked this dish this year. Please come back next year in August.,,missing
+npc.jean_pierre.say_22,Make sure that you have all the ingredients with you.,,missing
+npc.jean_pierre.say_23,It seems you have already cooked this dish this year. Please come back next year in August.,,missing
+npc.jean_pierre.say_24,Make sure that you have all the ingredients with you.,,missing
+npc.jean_pierre.say_25,It seems you have already cooked this dish this year. Please come back next year in August.,,missing
+npc.jean_pierre.say_26,Make sure that you have all the ingredients with you.,,missing
+npc.jean_pierre.say_27,It seems you have already cooked this dish this year. Please come back next year in August.,,missing
+npc.jean_pierre.say_28,Make sure that you have all the ingredients with you.,,missing
+npc.jean_pierre.say_29,It seems you have already cooked this dish this year. Please come back next year in August.,,missing
+npc.jean_pierre.say_30,Make sure that you have all the ingredients with you.,,missing
+npc.jean_pierre.say_31,It seems you have already cooked this dish this year. Please come back next year in August.,,missing
+npc.jean_pierre.say_32,Make sure that you have all the ingredients with you.,,missing
+npc.jean_pierre.say_33,It seems you have already cooked this dish this year. Please come back next year in August.,,missing
+npc.jean_pierre.say_34,Did you gather all necessary ingredients to cook Rotworm Stew with me?,,missing
+npc.jean_pierre.say_35,Did you gather all necessary ingredients to prepare a Hydra Tongue Salad with me?,,missing
+npc.jean_pierre.say_36,Did you gather all necessary ingredients to prepare Roasted Dragon Wings with me?,,missing
+npc.jean_pierre.say_37,Did you gather all necessary ingredients to prepare a Tropical Fried Terrorbird with me?,,missing
+npc.jean_pierre.say_38,Did you gather all necessary ingredients to make a Banana Chocolate Shake with me?,,missing
+npc.jean_pierre.say_39,Did you gather all necessary ingredients to cook a Veggie Casserole with me?,,missing
+npc.jean_pierre.say_40,Did you gather all necessary ingredients to prepare Filled Jalapeño Peppers with me?,,missing
+npc.jean_pierre.say_41,Did you gather all necessary ingredients to prepare a Blessed Steak with me?,,missing
+npc.jean_pierre.say_42,Did you gather all necessary ingredients to make a Northern Fishburger with me?,,missing
+npc.jean_pierre.say_43,Did you gather all necessary ingredients to bake a Carrot Cake with me?,,missing
+npc.jean_pierre.say_44,Did you gather all necessary ingredients to prepare a Coconut Shrimp Bake with me?,,missing
+npc.jean_pierre.say_45,Did you gather all necessary ingredients to cook a Blackjack with me?,,missing
+npc.jean_pierre.say_46,Did you gather all necessary ingredients to make Demonic Candy Balls with me?,,missing
+npc.jean_pierre.say_47,Did you gather all necessary ingredients to mix Sweet Mangonaise Elixir with me?,,missing
+npc.jean_pierre.say_48,"No?, come back when you are ready to cook.",,missing
+npc.hanna.say_1,"Pretty, isn't it? My friend Amber taught me how to make it, but I could help you with one if you like. What do you say?",,missing
+npc.hanna.say_2,"Oh, you're back already? Did you bring a legion helmet, 100 chicken feathers and 50 honeycombs?",,missing
+npc.hanna.say_3,"Pretty hat, isn't it?",,missing
+npc.hanna.say_4,"Okay, here we go, listen closely! I need a few things... a basic hat of course, maybe a legion helmet would do. Then about 100 chicken feathers... and 50 honeycombs as glue. That's it, come back to me once you gathered it!",,missing
+npc.hanna.say_5,"Aw, I guess you don't like feather hats. No big deal.",,missing
+npc.hanna.say_6,"Sorry, but I can't see a legion helmet.",,missing
+npc.hanna.say_7,"Sorry, but you don't enough chicken feathers.",,missing
+npc.hanna.say_8,"Sorry, but you don't have enough honeycombs.",,missing
+npc.hanna.say_9,"Great job! That must have taken a lot of work. Okay, you put it like this... then glue like this... here!",,missing
+npc.hanna.say_10,Maybe another time.,,missing
+npc.hanna.stdmod_11,I am a jeweler. Maybe you want to have a look at my wonderful offers.,,missing
+npc.hanna.stdmod_12,I am Hanna.,,missing
+npc.peter.say_1,A report? What do they think is happening here? <gives an angry and bitter report>. ,,missing
+npc.peter.say_2,Pass the gate? If it must be. Are you headed for the {factory} or the former {trade quarter}?,,missing
+npc.peter.say_3,"Listen, I don't get paid enough to chat with citizens. Move on.",,missing
+npc.peter.say_4,"Be on your guard. Some people are nice, some... aren't.",,missing
+npc.peter.stdmod_5,There it's even more smelly than in the factory quarter. Smells a bit like rotten eggs.,,missing
+npc.peter.stdmod_6,You don't look as if you would last one second there.,,missing
+npc.peter.stdmod_7,One day I will walk into the office of my superior and announce my resignment. Probably not long from now.,,missing
+npc.peter.stdmod_8,Good idea. Go for a walk there. Preferably six feet down.,,missing
+npc.peter.stdmod_9,It's too noisy and smelly.,,missing
+npc.peter.stdmod_10,Go there if you wanna get beaten up.,,missing
+npc.peter.stdmod_11,Sergeant first class of the Yalaharian Guard Force. But I don't care about ranks and titles.,,missing
+npc.peter.stdmod_12,I can't stand those arrogant fools.,,missing
+npc.peter.stdmod_13,Leave me alone with your 'mission' unless you have precise orders from my superiors.,,missing
+npc.peter.stdmod_14,Peter.,,missing
+npc.peter.stdmod_15,That quara brood should be extinguished.,,missing
+npc.peter.stdmod_16,The leader of their pack is the biggest criminal among them all.,,missing
+npc.peter.stdmod_17,Count them yourself.,,missing
+npc.peter.stdmod_18,You're here. So what?,,missing
+npc.gnomadness.say_1,I can change your hazard level to spice up your hunt in the gardens. Your current level is set to ,,missing
+npc.gnomadness.say_2,"I'm sorry, I don't understand. What hazard level would you like to set?",,missing
+npc.gnomadness.say_3,Your hazard level has been set to ,,missing
+npc.gnomadness.say_4,"You've achieved the necessary hazard level. As a reward, you've received the Noxious Ripptor mount and a primal bag.",,missing
+npc.gnomadness.say_5,You can't set your hazard level higher than your maximum unlocked level.,,missing
+npc.yasir.say_1,Me Yasir.,,missing
+npc.yasir.say_2,Tje hari ku ne finjala. {Ariki}?,,missing
+npc.yasir.say_3,Soso yana. <shakes his head>,,missing
+npc.andrew_lyze.say_1,As far as I know it is a place of helish heat with bloodthirsty monsters of all kinds.,,missing
+npc.andrew_lyze.say_2,This sarcophagus seals the entrance to the caves down there. Only here you can get all the {materials} you need for a working compass of this kind. So no entrance here - no further magic compasses in Tibia. In theory.,,missing
+npc.andrew_lyze.say_3,"On first glance, this cave does not look very spectacular, but the things you find in there, are. You have to know that this is the only place where you can find the respective materials to build the compass.",,missing
+npc.andrew_lyze.say_4,May I repair your compass if possible?,,missing
+npc.andrew_lyze.say_5,You don't have the needed itens yet.,,missing
+npc.andrew_lyze.say_6,Here's your broken compass!,,missing
+npc.andrew_lyze.say_7,You don't have enough money.,,missing
+npc.andrew_lyze.say_8,You don't have the needed itens yet.,,missing
+npc.andrew_lyze.say_9,"Done. Worry, the effect won't last forever!",,missing
+npc.andrew_lyze.say_10,You're already with my bait!,,missing
+npc.andrew_lyze.say_11,You cannot do that yet.,,missing
+npc.andrew_lyze.say_12,"It was decided to collect all of the compasses, destroy them and throw them in the fiery depths of Tibia. I still have some of them here. I {sell} them for a low price if you want.",,missing
+npc.andrew_lyze.say_13,Would you like to buy a broken compass for 10.000 gold?,,missing
+npc.andrew_lyze.say_14,Don't waste my time.,,missing
+npc.andrew_lyze.say_15,"Sorry, I didn't understand.",,missing
+npc.spectulus.say_1,"You are back, how did the measurements go? Did you recognise anything of interest?",,missing
+npc.spectulus.say_2,"Alright, you look bright enough to fulfil my requests - at least you do not fall asleep while standing there. Ahem... I heard about a certain inventor who created a {magic device} to actually sail the {sea of light}. Will you help me find him?",,missing
+npc.spectulus.say_3,"You should find the beggar somewhere in Edron. Stay persistent, I'm sure he knows more than he wants to tell us.",,missing
+npc.spectulus.say_4,o have you talked to the beggar? What did he tell you? Where are the plans...? Wh...? He did? He is?  You've already got the plans? Beautiful!! Amazing! Alright it will take some time to recapitulate these plans.,,missing
+npc.spectulus.say_5,So have you talked to the beggar? What did he tell you? Where are the plans...? Wh...? He did? He is? You've already got the plans? Beautiful!! Amazing! Alright it will take some time to recapitulate these plans.,,missing
+npc.spectulus.say_6,"It will take some time to work out the initial problem of the device. Come back when I've found the component needed to finish it. Alright, B connects to D and another two nails marked with S go... hmmm.",,missing
+npc.spectulus.say_7,...connects to N942. Alright!! That's it! I just finished a prototype device! And it looks like I figured out the initial failure. A very special crystal is needed for the device to work. Aren't you as curious as me to know what went wrong?,,missing
+npc.spectulus.say_8,"Did you enter the Lost Mines yet? They are west of Edron, close to the sea. You will also need a pick once you get to the crystal deposit.",,missing
+npc.spectulus.say_9,"Hm, so did you find a rare crystal? Show me... hey! That's not a rare crystal. What... where did you get that anyway? Please return to me with the right crystal.",,missing
+npc.spectulus.say_10,"Well, the only thing left to do would be to offer the crystal at the well of the collector. There must be a pedestal near the well, where you need to put your donation. Ha, do you think you could do that?",,missing
+npc.spectulus.say_11,"Found the well yet? Look on one of the ice isles near Carlin. I'm perfectly sure that the well with the pedestal is located on one of them. And be careful with the carrying device, I only have this one prototype.",,missing
+npc.spectulus.say_12,So have you found the well and entered the lair? I hope you can find the {mirror crystal} in there. It is the only way to finish the {Lightboat}.,,missing
+npc.spectulus.say_13,Put the mirror crystal into the special carrying device I gave you and bring it directly to me.,,missing
+npc.spectulus.say_14,"Do you have the mirror crystal? Unbelievable! Alright I will extract the crystal from the device myself, would you please give me the device with the crystal and step back?",,missing
+npc.spectulus.say_15,"After the debacle with the crystal, I started focussing on other things. There are also some {tasks} that still need to be done. If you can spare the time to continue helping me, it shall not be to your disadvantage. So are you in for another mission?",,missing
+npc.spectulus.say_16,So you found him? Have you talked to {Jack} yet?,,missing
+npc.spectulus.say_17,"You're back from {Jack}! Mh, by the looks of your face I doubt our little redecoration project yielded any success. But I had an even better idea while you were gone - ready to give it another try?",,missing
+npc.spectulus.say_18,"So, did you talk to his family? Were you able to convince them?",,missing
+npc.spectulus.say_19,"Did you find out what hobby {Jack} has? Did you separate him from this activity? Only if he has a free mind, he can truly get back to his former self! Now all you need to do is talk to him again!",,missing
+npc.spectulus.say_20,"The device needs a special crystal. It's called {mirror crystal}. The inventor somehow damaged it - with fatal results. He had to give up, as no second crystal was left to try. I, however, know of another one... but are you up to the task?",,missing
+npc.spectulus.say_21,"One remaining mirror crystal is in the hands of a creature called the collector which collects all kinds of crystals. The only way to get access to its lair is to donate a very rare crystal to a secret well. I need you to get one, will you help me?",,missing
+npc.spectulus.say_22,"Good, because if you wouldn't do it... listen, this well is on one of the isles near Carlin. There you offer the crystal. Once you get access to its lair, find the collector and... convince it to give you the mirror crystal. Understood?",,missing
+npc.spectulus.say_23,"To collect the unbelievably rare, practically unique mirror crystal, you will need to use this special carrying device I developed. If you find the crystal, use it to store it and transport it safely to me. There is no second one.",,missing
+npc.spectulus.say_24,"Of course you are. And here we go. I have to ask some questions first. One: You aint afraid of no ghost, right?",,missing
+npc.spectulus.say_25,Good. Two: You know that ghosts exist and/or have found and/or defeated one or more of them?,,missing
+npc.spectulus.say_26,Good. Take this wand - we call it a spirit meter - and go to the graveyard I have marked on your map and take a few measurements on the graves.,,missing
+npc.spectulus.say_27,"Let me see the spirit meter. Hmmm... those are grave news you bring - uhm, you know what I mean. But this is awesome! Now I know for sure that the calibration is only some short bursts of magically enhanced energy away.",,missing
+npc.spectulus.say_28,Yes? And he didn't remember anything? Not even me? That's not good. Then we will have to do everything ourselves. Are you ready to continue?,,missing
+npc.spectulus.say_29,"Ah well, let's forget about the scientific details - you will do just fine as long as you do exactly what I say. Ready for me to go on with your task?",,missing
+npc.spectulus.say_30,"Yes, maybe it was the right decision. Astronomical research is nothing for the faint-hearted.",,missing
+npc.spectulus.say_31,"Well, the... what? You... mean you're no longer interested? I see, well maybe I overestimated your spirit after all.",,missing
+npc.spectulus.say_32,"Alright, alright. You'll never find out the true secrets of life with such attitude, hm.",,missing
+npc.spectulus.say_33,"Come on, this is our only chance to finish the Lightboat.",,missing
+npc.spectulus.say_34,"Thought so. Well, no reason to be ashamed. I'll have to find help elsewhere now, though.",,missing
+npc.spectulus.say_35,Come back if you made up your mind.,,missing
+npc.spectulus.say_36,Hmpf. *mumbles*,,missing
+npc.spectulus.say_37,Then off you go! Im sorry that I cannot offer you any further help but Im sure you will find support along your way. And - be careful. The sea can appear pitch black down there.,,missing
+npc.spectulus.say_38,"Excellent, excellent. The rumours pointed to the north of Tiquanda, a sunken temple probably half drowned in water. Return to me if you find anything interesting!",,missing
+npc.spectulus.say_39,Then off you go! I'm sorry that I cannot offer you any further help but I'm sure you will find support along your way. And - be careful. The sea can appear pitch black down there.,,missing
+npc.cobra.say_1,Begone! Hissssss! You bear not the mark of the cobra!,,missing
+npc.rehon.say_1,"By the Gods! You have the key to the cell! Thank you sooo much, mate. And now leave. I'll wait here until the air is clean and then I'm out of here.",,missing
+npc.guide_jonathan.say_1,"Would you like me to mark locations like - for example - the depot, bank and shops on your map?",,missing
+npc.guide_jonathan.say_2,Here you go.,,missing
+npc.guide_jonathan.say_3,"Well, nothing wrong about exploring the town on your own. Let me know if you need something!",,missing
+npc.guide_jonathan.stdmod_4,"Currently, I can tell you all about the town, its temple, the bank, shops, spell trainers and the depot, as well as about the world status.",,missing
+npc.guide_jonathan.stdmod_5,The temple is near the shop area in the eastern part of the castle. Just go downstairs.,,missing
+npc.guide_jonathan.stdmod_6,"Our local bank clerk is called Ebenizer. You can find him north of the depot, near the food shop.",,missing
+npc.guide_jonathan.stdmod_7,"You can buy weapons, armor, tools, gems, magical equipment, furniture, spells and food here.",,missing
+npc.guide_jonathan.stdmod_8,I'm your guide to the beautiful town Edron. I can mark important locations on your map and give you some information about the town and the world status.,,missing
+npc.guide_jonathan.stdmod_9,The town of Edron with its shops and facilities is built inside strong castle walls. Another remarkable building is the magic academy.,,missing
+npc.guide_jonathan.stdmod_10,I'm Jonathan. Pleased to meet you.,,missing
 player.status.cleanse,You are no longer {0}. (cleanse charm),Você não está mais {0}. (amuleto de limpeza),translated
 player.condition.poisoned,You are poisoned.,Você está envenenado.,translated
 player.condition.drowning,You are drowning.,Você está se afogando.,translated

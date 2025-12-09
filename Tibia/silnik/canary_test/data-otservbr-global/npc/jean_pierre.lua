@@ -133,12 +133,12 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "cook") then
 		if player:getStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart) < 1 then
-			npcHandler:say("Well, I'm not a simple cook. I travel the whole Tibian continent for the most artfully seasoned {recipes} and constantly develop new ones.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_1")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "recipe") or MsgContains(message, "menu") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("You're interested in my recipes? Well. They are not for sale, but if you want to become my {apprentice}, I'll share my knowledge with you.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_2")
 			npcHandler:setTopic(playerId, 2)
 		end
 		if player:getStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart) >= 1 then
@@ -242,16 +242,16 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 30)
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart) == 2 then
-			npcHandler:say("You can now cook any dish you want from this list: {Rotworm Stew, Hydra Tongue Salad, Roasted Dragon Wings, Tropical Fried Terrorbird, Banana Chocolate Shake, Veggie Casserole, Filled Jalapeno Peppers, Blessed Steak, Northern Fishburger, Carrot Cake, Coconut Shrimp Bake, Blackjack, Demonic Candy Balls, Sweet Mangonaise Elixir}.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_3")
 		end
 	elseif MsgContains(message, "apprentice") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Hmm. You look quite promising. Can't hurt to give it a try, I guess. Would you like to become my apprentice, |PLAYERNAME|?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_4")
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Fine, young human. Ask me for a {recipe} anytime and I'll teach you what I know.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_5")
 			player:setStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart, 1)
 			player:setStorageValue(Storage.Quest.U8_5.HotCuisineQuest.CurrentDish, 1)
 			player:setStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestLog, 1)
@@ -269,11 +269,11 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:addItem(9079, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Make sure that you have all the ingredients with you.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_6")
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:say("It seems you have already cooked this dish this year. Please come back next year in August.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_7")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 7 then
@@ -290,11 +290,11 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:addItem(9080, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Make sure that you have all the ingredients with you.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_8")
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:say("It seems you have already cooked this dish this year. Please come back next year in August.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_9")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 9 then
@@ -312,11 +312,11 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:addItem(9081, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Make sure that you have all the ingredients with you.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_10")
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:say("It seems you have already cooked this dish this year. Please come back next year in August.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_11")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 11 then
@@ -334,11 +334,11 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:addItem(9082, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Make sure that you have all the ingredients with you.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_12")
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:say("It seems you have already cooked this dish this year. Please come back next year in August.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_13")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 13 then
@@ -356,11 +356,11 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:addItem(9083, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Make sure that you have all the ingredients with you.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_14")
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:say("It seems you have already cooked this dish this year. Please come back next year in August.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_15")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 15 then
@@ -378,11 +378,11 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:addItem(9084, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Make sure that you have all the ingredients with you.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_16")
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:say("It seems you have already cooked this dish this year. Please come back next year in August.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_17")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 17 then
@@ -401,11 +401,11 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:addItem(9085, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Make sure that you have all the ingredients with you.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_18")
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:say("It seems you have already cooked this dish this year. Please come back next year in August.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_19")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 19 then
@@ -423,11 +423,11 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:addItem(9086, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Make sure that you have all the ingredients with you.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_20")
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:say("It seems you have already cooked this dish this year. Please come back next year in August.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_21")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 21 then
@@ -445,11 +445,11 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:addItem(9088, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Make sure that you have all the ingredients with you.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_22")
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:say("It seems you have already cooked this dish this year. Please come back next year in August.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_23")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 23 then
@@ -471,11 +471,11 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:addItem(10000, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Make sure that you have all the ingredients with you.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_24")
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:say("It seems you have already cooked this dish this year. Please come back next year in August.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_25")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 25 then
@@ -495,11 +495,11 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:addItem(11584, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Make sure that you have all the ingredients with you.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_26")
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:say("It seems you have already cooked this dish this year. Please come back next year in August.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_27")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 27 then
@@ -519,11 +519,11 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:addItem(11586, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Make sure that you have all the ingredients with you.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_28")
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:say("It seems you have already cooked this dish this year. Please come back next year in August.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_29")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 29 then
@@ -542,11 +542,11 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:addItem(11587, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Make sure that you have all the ingredients with you.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_30")
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:say("It seems you have already cooked this dish this year. Please come back next year in August.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_31")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 31 then
@@ -567,88 +567,88 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:addItem(11588, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("Make sure that you have all the ingredients with you.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_32")
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:say("It seems you have already cooked this dish this year. Please come back next year in August.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_33")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 		--Dishes first time
 	elseif MsgContains(message, "rotworm stew") then
 		if npcHandler:getTopic(playerId) == 4 or player:getStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart) >= 1 then
-			npcHandler:say("Did you gather all necessary ingredients to cook Rotworm Stew with me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_34")
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "hydra tongue salad") then
 		if npcHandler:getTopic(playerId) == 6 or player:getStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart) >= 1 then
-			npcHandler:say("Did you gather all necessary ingredients to prepare a Hydra Tongue Salad with me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_35")
 			npcHandler:setTopic(playerId, 7)
 		end
 	elseif MsgContains(message, "roasted dragon wings") then
 		if npcHandler:getTopic(playerId) == 8 or player:getStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart) >= 1 then
-			npcHandler:say("Did you gather all necessary ingredients to prepare Roasted Dragon Wings with me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_36")
 			npcHandler:setTopic(playerId, 9)
 		end
 	elseif MsgContains(message, "tropical fried terrorbird") then
 		if npcHandler:getTopic(playerId) == 10 or player:getStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart) >= 1 then
-			npcHandler:say("Did you gather all necessary ingredients to prepare a Tropical Fried Terrorbird with me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_37")
 			npcHandler:setTopic(playerId, 11)
 		end
 	elseif MsgContains(message, "banana chocolate shake") then
 		if npcHandler:getTopic(playerId) == 12 or player:getStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart) >= 1 then
-			npcHandler:say("Did you gather all necessary ingredients to make a Banana Chocolate Shake with me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_38")
 			npcHandler:setTopic(playerId, 13)
 		end
 	elseif MsgContains(message, "veggie casserole") then
 		if npcHandler:getTopic(playerId) == 14 or player:getStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart) >= 1 then
-			npcHandler:say("Did you gather all necessary ingredients to cook a Veggie Casserole with me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_39")
 			npcHandler:setTopic(playerId, 15)
 		end
 	elseif MsgContains(message, "filled") or MsgContains(message, "jalapeño") or MsgContains(message, "peppers") then
 		if npcHandler:getTopic(playerId) == 16 or player:getStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart) >= 1 then
-			npcHandler:say("Did you gather all necessary ingredients to prepare Filled Jalapeño Peppers with me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_40")
 			npcHandler:setTopic(playerId, 17)
 		end
 	elseif MsgContains(message, "blessed steak") then
 		if npcHandler:getTopic(playerId) == 18 or player:getStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart) >= 1 then
-			npcHandler:say("Did you gather all necessary ingredients to prepare a Blessed Steak with me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_41")
 			npcHandler:setTopic(playerId, 19)
 		end
 	elseif MsgContains(message, "northern fishburger") then
 		if npcHandler:getTopic(playerId) == 20 or player:getStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart) >= 1 then
-			npcHandler:say("Did you gather all necessary ingredients to make a Northern Fishburger with me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_42")
 			npcHandler:setTopic(playerId, 21)
 		end
 	elseif MsgContains(message, "carrot cake") then
 		if npcHandler:getTopic(playerId) == 22 or player:getStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart) >= 1 then
-			npcHandler:say("Did you gather all necessary ingredients to bake a Carrot Cake with me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_43")
 			npcHandler:setTopic(playerId, 23)
 		end
 	elseif MsgContains(message, "coconut shrimp bake") then
 		if npcHandler:getTopic(playerId) == 24 or player:getStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart) >= 1 then
-			npcHandler:say("Did you gather all necessary ingredients to prepare a Coconut Shrimp Bake with me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_44")
 			npcHandler:setTopic(playerId, 25)
 		end
 	elseif MsgContains(message, "blackjack") then
 		if npcHandler:getTopic(playerId) == 26 or player:getStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart) >= 1 then
-			npcHandler:say("Did you gather all necessary ingredients to cook a Blackjack with me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_45")
 			npcHandler:setTopic(playerId, 27)
 		end
 	elseif MsgContains(message, "demonic candy ball") then
 		if npcHandler:getTopic(playerId) == 28 or player:getStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart) >= 1 then
-			npcHandler:say("Did you gather all necessary ingredients to make Demonic Candy Balls with me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_46")
 			npcHandler:setTopic(playerId, 29)
 		end
 	elseif MsgContains(message, "sweet mangonaise elixir") then
 		if npcHandler:getTopic(playerId) == 30 or player:getStorageValue(Storage.Quest.U8_5.HotCuisineQuest.QuestStart) >= 1 then
-			npcHandler:say("Did you gather all necessary ingredients to mix Sweet Mangonaise Elixir with me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_47")
 			player:setStorageValue(Storage.Quest.U8_5.HotCuisineQuest.CurrentDish, 14)
 			npcHandler:setTopic(playerId, 31)
 		end
 	elseif MsgContains(message, "no") then
-		npcHandler:say("No?, come back when you are ready to cook.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jean_pierre.say_48")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

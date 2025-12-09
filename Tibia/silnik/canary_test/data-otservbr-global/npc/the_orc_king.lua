@@ -82,12 +82,12 @@ local function creatureSayCallback(npc, creature, type, message)
 				}, npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			else
-				npcHandler:say("For eons he was trapped in an enchanted lamp by some ancient race. Now he's free to roam the world again. Although he cheated me I appreciate what he and his brethren will do to this world, now it's the time of the Djinn again!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_orc_king.say_2")
 			end
 		end
 	elseif MsgContains(message, "cookie") then
 		if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 31 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.CookieDelivery.OrcKing) ~= 1 then
-			npcHandler:say("You bring me a stinking cookie???", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_orc_king.say_3")
 			npcHandler:setTopic(playerId, 2)
 		end
 
@@ -102,15 +102,15 @@ local function creatureSayCallback(npc, creature, type, message)
 
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.RecievedLamp, 1)
 			player:addItem(3231, 1)
-			npcHandler:say("I was waiting for this day! Take the lamp and let Malor feel my wrath!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_orc_king.say_4")
 		else
-			npcHandler:say("I don't know your enemy, paleskin! Begone!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_orc_king.say_5")
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "yes") then
 			if not player:removeItem(130, 1) then
-				npcHandler:say("You have no cookie that I'd like.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_orc_king.say_6")
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -121,11 +121,11 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 
 			npc:getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)
-			npcHandler:say("Well, I hope it stinks a lot. I like stinking cookies best ... BY MY THOUSAND SONS! YOU ARE SO DEAD HUMAN! DEAD!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_orc_king.say_7")
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		elseif MsgContains(message, "no") then
-			npcHandler:say("I see.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_orc_king.say_8")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

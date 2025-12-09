@@ -100,7 +100,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 12)
 			end
 		elseif qStorage == 1 and tombsStorage >= 2 then
-			npcHandler:say("You are back, how did the measurements go? Did you recognise anything of interest?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_1")
 			npcHandler:setTopic(playerId, 19)
 		elseif qStorage == 2 then
 			npcHandler:say({
@@ -111,13 +111,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) == -1 then
-			npcHandler:say("Alright, you look bright enough to fulfil my requests - at least you do not fall asleep while standing there. Ahem... I heard about a certain inventor who created a {magic device} to actually sail the {sea of light}. Will you help me find him?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_2")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) == 1 then
-			npcHandler:say("You should find the beggar somewhere in Edron. Stay persistent, I'm sure he knows more than he wants to tell us.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_3")
 		elseif player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) == 2 then
 			if not player:removeItem(9696, 1) then
-				npcHandler:say("o have you talked to the beggar? What did he tell you? Where are the plans...? Wh...? He did? He is?  You've already got the plans? Beautiful!! Amazing! Alright it will take some time to recapitulate these plans.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_4")
 				return true
 			end
 
@@ -125,21 +125,21 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline, 3)
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Mission1, 3)
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.StudyTimer, os.time() + 1800)
-			npcHandler:say("So have you talked to the beggar? What did he tell you? Where are the plans...? Wh...? He did? He is? You've already got the plans? Beautiful!! Amazing! Alright it will take some time to recapitulate these plans.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_5")
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) == 3 then
 			local timeStorage = player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.StudyTimer)
 			if timeStorage > os.time() then
-				npcHandler:say("It will take some time to work out the initial problem of the device. Come back when I've found the component needed to finish it. Alright, B connects to D and another two nails marked with S go... hmmm.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_6")
 			elseif timeStorage > 0 and timeStorage < os.time() then
-				npcHandler:say("...connects to N942. Alright!! That's it! I just finished a prototype device! And it looks like I figured out the initial failure. A very special crystal is needed for the device to work. Aren't you as curious as me to know what went wrong?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_7")
 				npcHandler:setTopic(playerId, 2)
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) == 4 then
-			npcHandler:say("Did you enter the Lost Mines yet? They are west of Edron, close to the sea. You will also need a pick once you get to the crystal deposit.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_8")
 		elseif player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) == 5 then
 			if player:getItemCount(9697) == 0 then
-				npcHandler:say("Hm, so did you find a rare crystal? Show me... hey! That's not a rare crystal. What... where did you get that anyway? Please return to me with the right crystal.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_9")
 				return true
 			end
 			player:addExperience(500, true)
@@ -151,33 +151,33 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) == 6 then
-			npcHandler:say("Well, the only thing left to do would be to offer the crystal at the well of the collector. There must be a pedestal near the well, where you need to put your donation. Ha, do you think you could do that?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_10")
 			npcHandler:setTopic(playerId, 5)
 		elseif player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) == 7 then
-			npcHandler:say("Found the well yet? Look on one of the ice isles near Carlin. I'm perfectly sure that the well with the pedestal is located on one of them. And be careful with the carrying device, I only have this one prototype.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_11")
 		elseif player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) == 8 then
-			npcHandler:say("So have you found the well and entered the lair? I hope you can find the {mirror crystal} in there. It is the only way to finish the {Lightboat}.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_12")
 		elseif player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) == 9 then
 			if player:getItemCount(9699) == 0 then
-				npcHandler:say("Put the mirror crystal into the special carrying device I gave you and bring it directly to me.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_13")
 				return true
 			end
-			npcHandler:say("Do you have the mirror crystal? Unbelievable! Alright I will extract the crystal from the device myself, would you please give me the device with the crystal and step back?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_14")
 			npcHandler:setTopic(playerId, 7)
 		elseif (player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) == 10) and (player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) < 1) then
-			npcHandler:say("After the debacle with the crystal, I started focussing on other things. There are also some {tasks} that still need to be done. If you can spare the time to continue helping me, it shall not be to your disadvantage. So are you in for another mission?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_15")
 			npcHandler:setTopic(playerId, 27)
 		elseif player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 2 then
-			npcHandler:say("So you found him? Have you talked to {Jack} yet?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_16")
 			npcHandler:setTopic(playerId, 30)
 		elseif player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 4 then
-			npcHandler:say("You're back from {Jack}! Mh, by the looks of your face I doubt our little redecoration project yielded any success. But I had an even better idea while you were gone - ready to give it another try?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_17")
 			npcHandler:setTopic(playerId, 32)
 		elseif player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 6 then
-			npcHandler:say("So, did you talk to his family? Were you able to convince them?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_18")
 			npcHandler:setTopic(playerId, 33)
 		elseif player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 8 then
-			npcHandler:say("Did you find out what hobby {Jack} has? Did you separate him from this activity? Only if he has a free mind, he can truly get back to his former self! Now all you need to do is talk to him again!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_19")
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 9 then
 			npcHandler:say({
@@ -205,10 +205,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("The device needs a special crystal. It's called {mirror crystal}. The inventor somehow damaged it - with fatal results. He had to give up, as no second crystal was left to try. I, however, know of another one... but are you up to the task?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_20")
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("One remaining mirror crystal is in the hands of a creature called the collector which collects all kinds of crystals. The only way to get access to its lair is to donate a very rare crystal to a secret well. I need you to get one, will you help me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_21")
 			npcHandler:setTopic(playerId, 4)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline, 4)
@@ -221,13 +221,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
-			npcHandler:say("Good, because if you wouldn't do it... listen, this well is on one of the isles near Carlin. There you offer the crystal. Once you get access to its lair, find the collector and... convince it to give you the mirror crystal. Understood?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_22")
 			npcHandler:setTopic(playerId, 6)
 		elseif npcHandler:getTopic(playerId) == 6 then
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline, 7)
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Mission3, 1)
 			player:addItem(9698, 1)
-			npcHandler:say("To collect the unbelievably rare, practically unique mirror crystal, you will need to use this special carrying device I developed. If you find the crystal, use it to store it and transport it safely to me. There is no second one.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_23")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 7 then
 			if not player:removeItem(9699, 1) then
@@ -250,10 +250,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 12 then
-			npcHandler:say("Of course you are. And here we go. I have to ask some questions first. One: You aint afraid of no ghost, right?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_24")
 			npcHandler:setTopic(playerId, 13)
 		elseif npcHandler:getTopic(playerId) == 13 then
-			npcHandler:say("Good. Two: You know that ghosts exist and/or have found and/or defeated one or more of them?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_25")
 			npcHandler:setTopic(playerId, 14)
 		elseif npcHandler:getTopic(playerId) == 14 then
 			npcHandler:say({
@@ -269,12 +269,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 17)
 		elseif npcHandler:getTopic(playerId) == 18 then
-			npcHandler:say("Good. Take this wand - we call it a spirit meter - and go to the graveyard I have marked on your map and take a few measurements on the graves.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_26")
 			player:setStorageValue(Storage.Quest.U8_7.SpiritHunters.Mission01, 1)
 			player:addItem(4049, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 19 then
-			npcHandler:say("Let me see the spirit meter. Hmmm... those are grave news you bring - uhm, you know what I mean. But this is awesome! Now I know for sure that the calibration is only some short bursts of magically enhanced energy away.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_27")
 			player:addExperience(500, true)
 			player:addItem(3035, 5)
 			player:setStorageValue(Storage.Quest.U8_7.SpiritHunters.Mission01, 2)
@@ -312,7 +312,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 30 then
-			npcHandler:say("Yes? And he didn't remember anything? Not even me? That's not good. Then we will have to do everything ourselves. Are you ready to continue?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_28")
 			npcHandler:setTopic(playerId, 31)
 		elseif npcHandler:getTopic(playerId) == 31 then
 			npcHandler:say({
@@ -353,25 +353,25 @@ local function creatureSayCallback(npc, creature, type, message)
 		local qStorage = player:getStorageValue(Storage.Quest.U8_7.SpiritHunters.Mission01)
 		if qStorage == -1 then
 			if npcHandler:getTopic(playerId) == 15 then
-				npcHandler:say("Ah well, let's forget about the scientific details - you will do just fine as long as you do exactly what I say. Ready for me to go on with your task?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_29")
 				npcHandler:setTopic(playerId, 16)
 			end
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Yes, maybe it was the right decision. Astronomical research is nothing for the faint-hearted.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_30")
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Well, the... what? You... mean you're no longer interested? I see, well maybe I overestimated your spirit after all.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_31")
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Alright, alright. You'll never find out the true secrets of life with such attitude, hm.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_32")
 		elseif npcHandler:getTopic(playerId) == 4 then
-			npcHandler:say("Come on, this is our only chance to finish the Lightboat.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_33")
 		elseif npcHandler:getTopic(playerId) == 5 then
-			npcHandler:say("Thought so. Well, no reason to be ashamed. I'll have to find help elsewhere now, though.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_34")
 		elseif npcHandler:getTopic(playerId) == 6 then
-			npcHandler:say("Come back if you made up your mind.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_35")
 		elseif npcHandler:getTopic(playerId) == 7 then
-			npcHandler:say("Hmpf. *mumbles*", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_36")
 		end
 		npcHandler:setTopic(playerId, 0)
 	end
@@ -408,7 +408,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 23 and player:getStorageValue(Storage.Quest.U9_4.LiquidBlackQuest.Visitor) == 3 then
 		if player:getStorageValue(Storage.Quest.U9_4.LiquidBlackQuest.Visitor) == 3 then
-			npcHandler:say("Then off you go! Im sorry that I cannot offer you any further help but Im sure you will find support along your way. And - be careful. The sea can appear pitch black down there.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_37")
 			player:setStorageValue(Storage.Quest.U9_4.LiquidBlackQuest.Visitor, 4)
 			npcHandler:setTopic(playerId, 24)
 		end
@@ -426,7 +426,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 25)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 25 then
-			npcHandler:say("Excellent, excellent. The rumours pointed to the north of Tiquanda, a sunken temple probably half drowned in water. Return to me if you find anything interesting!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_38")
 			if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.LiquidDeath.Questline) < 1 then
 				player:setStorageValue(Storage.Quest.U11_80.TheSecretLibrary.LiquidDeath.Questline, 1)
 			end
@@ -449,7 +449,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 34)
 		elseif npcHandler:getTopic(playerId) == 34 then
-			npcHandler:say("Then off you go! I'm sorry that I cannot offer you any further help but I'm sure you will find support along your way. And - be careful. The sea can appear pitch black down there.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.spectulus.say_39")
 			if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.LiquidDeath.Questline) < 4 then
 				player:setStorageValue(Storage.Quest.U11_80.TheSecretLibrary.LiquidDeath.Questline, 4)
 			end

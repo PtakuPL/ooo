@@ -74,9 +74,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 	if MsgContains(message, "passage") then
 		if player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) >= 3 then
-			npcHandler:say("So, do you want a passage to Nibelor my friend?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iskan.say_1")
 		else
-			npcHandler:say("Do you want to Nibelor?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iskan.say_2")
 		end
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "mission") then
@@ -88,25 +88,25 @@ local function creatureSayCallback(npc, creature, type, message)
 				}, npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 2 then
-				npcHandler:say("You are a friend of mine and the boys now. I tell you something. If you ever need to go to the isle of Nibelor, just ask me for a {passage}.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iskan.say_3")
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 3)
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission01, 3) -- Questlog The Ice Islands Quest, Befriending the Musher
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("I have now no mission for you.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iskan.say_4")
 				npcHandler:setTopic(playerId, 0)
 			end
 		else
-			npcHandler:say("Sorry but I only give missions to those who are considered a true Barbarian. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iskan.say_5")
 		end
 	elseif MsgContains(message, "yes") then
 		if player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.HuskyKill) >= 1 then
 			if player:removeMoneyBank(500) then
-				npcHandler:say("Alright, we are even!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iskan.say_6")
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.HuskyKillStatus, 0)
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.HuskyKill, 0)
 			else
-				npcHandler:say("You don't have enough. Bring me the money and I will forget about it.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iskan.say_7")
 			end
 		elseif npcHandler:getTopic(playerId) == 1 then
 			npcHandler:say({
@@ -122,13 +122,13 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("Sorry, first time you have to do a mission for me.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iskan.say_8")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif MsgContains(message, "no") then
 		if player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.HuskyKill) >= 1 then
-			npcHandler:say("Mhmm, you leave me no other choice than to inform the Jarl.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iskan.say_9")
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.HuskyKillStatus, 1)
 		end
 	end

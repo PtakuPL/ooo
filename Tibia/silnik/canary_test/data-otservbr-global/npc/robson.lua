@@ -61,37 +61,37 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "parcel") then
-		npcHandler:say("Do you want to buy a parcel for 15 gold?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.robson.say_1")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "label") then
-		npcHandler:say("Do you want to buy a label for 1 gold?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.robson.say_2")
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") then
 		local player = Player(creature)
 		if npcHandler:getTopic(playerId) == 1 then
 			if not player:removeMoneyBank(15) then
-				npcHandler:say("Sorry, that's only dust in your purse.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.robson.say_3")
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
 
 			player:addItem(3503, 1)
-			npcHandler:say("Fine.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.robson.say_4")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if not player:removeMoneyBank(1) then
-				npcHandler:say("Sorry, that's only dust in your purse.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.robson.say_5")
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
 
 			player:addItem(3507, 1)
-			npcHandler:say("Fine.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.robson.say_6")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
 		if table.contains({ 1, 2 }, npcHandler:getTopic(playerId)) then
-			npcHandler:say("I knew I would be stuck with that stuff.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.robson.say_7")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

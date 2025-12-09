@@ -126,13 +126,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "deep") and npcHandler:getTopic(playerId) == 2 then
-		npcHandler:say("As far as I know it is a place of helish heat with bloodthirsty monsters of all kinds.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.say_1")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "sarcophagus") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say("This sarcophagus seals the entrance to the caves down there. Only here you can get all the {materials} you need for a working compass of this kind. So no entrance here - no further magic compasses in Tibia. In theory.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.say_2")
 		npcHandler:setTopic(playerId, 4)
 	elseif MsgContains(message, "down") and npcHandler:getTopic(playerId) == 10 then
-		npcHandler:say("On first glance, this cave does not look very spectacular, but the things you find in there, are. You have to know that this is the only place where you can find the respective materials to build the compass.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.say_3")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "materials") then
 		if npcHandler:getTopic(playerId) == 4 then
@@ -144,7 +144,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.UnsafeRelease.Questline, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.UnsafeRelease.Questline) == 1 then
-			npcHandler:say("May I repair your compass if possible?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.say_4")
 			npcHandler:setTopic(playerId, 11)
 		end
 	elseif MsgContains(message, "yes") then
@@ -174,7 +174,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.UnsafeRelease.Questline, 2)
 				npcHandler:setTopic(playerId, 12)
 			else
-				npcHandler:say("You don't have the needed itens yet.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.say_5")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 12 and player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.UnsafeRelease.GotAxe) < 1 then
@@ -187,12 +187,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 51 then
 			if (player:getMoney() + player:getBankBalance()) >= CompassValue then
-				npcHandler:say("Here's your broken compass!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.say_6")
 				player:removeMoneyBank(CompassValue)
 				player:addItem(brokenCompass, 1)
 				npcHandler:setTopic(playerId, 10)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.say_7")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
@@ -223,38 +223,38 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.UnsafeRelease.Questline, 3)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have the needed itens yet.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.say_8")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif MsgContains(message, "bait") then
 		if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.UnsafeRelease.Questline) == 2 then
 			if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.UnsafeRelease.HasBait) < 1 then
-				npcHandler:say("Done. Worry, the effect won't last forever!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.say_9")
 				player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.UnsafeRelease.HasBait, 1)
 				addEvent(removeBait, 3 * 60 * 1000, player:getId())
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You're already with my bait!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.say_10")
 				npcHandler:setTopic(playerId, 0)
 			end
 		else
-			npcHandler:say("You cannot do that yet.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.say_11")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "compass") then
-		npcHandler:say("It was decided to collect all of the compasses, destroy them and throw them in the fiery depths of Tibia. I still have some of them here. I {sell} them for a low price if you want.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.say_12")
 		npcHandler:setTopic(playerId, 50)
 	elseif MsgContains(message, "sell") then
 		if npcHandler:getTopic(playerId) == 50 then
-			npcHandler:say("Would you like to buy a broken compass for 10.000 gold?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.say_13")
 			npcHandler:setTopic(playerId, 51)
 		end
 	elseif MsgContains(message, "no") then
-		npcHandler:say({ "Don't waste my time." }, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.say_14")
 		npcHandler:setTopic(playerId, 0)
 	else
-		npcHandler:say("Sorry, I didn't understand.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.andrew_lyze.say_15")
 	end
 
 	return true

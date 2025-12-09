@@ -55,7 +55,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	local storage = Storage.Quest.U7_24.TheParadoxTower
 	if MsgContains(message, "test") then
-		npcHandler:say("Death awaits those who fail the test of the three seals! Do you really want me to test you?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_1")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
 		npcHandler:say(
@@ -76,20 +76,20 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 3)
 	elseif MsgContains(message, "demonbunny") and npcHandler:getTopic(playerId) == 3 then
 		if player:getStorageValue(storage.TheFearedHugo) == 4 then
-			npcHandler:say("HOHO! Right again. All right. The final question of the first seal: Who was the first warrior to follow the path of the Mooh'Tah?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_2")
 			npcHandler:setTopic(playerId, 4)
 		else
-			npcHandler:say("Hmmm, so you think cheating will get you through that test? Then your final question of the first seal is: What is the meaning of life?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_3")
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "tha'kull") and npcHandler:getTopic(playerId) == 4 then
-		npcHandler:say("HOHO! Lucky you. You have passed the first seal! So ... would you like to continue with the Seal of the Mind?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_4")
 		npcHandler:setTopic(playerId, 6)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 6 then
-		npcHandler:say("As you wish, foolish one! Here is my first question: It's lighter then a feather but no living creature can hold it for ten minutes?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_5")
 		npcHandler:setTopic(playerId, 7)
 	elseif MsgContains(message, "breath") and npcHandler:getTopic(playerId) == 7 then
-		npcHandler:say("That was an easy one. Let's try the second: If you name it, you break it.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_6")
 		npcHandler:setTopic(playerId, 8)
 	elseif MsgContains(message, "silence") and npcHandler:getTopic(playerId) == 8 then
 		npcHandler:say(
@@ -100,10 +100,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		)
 		npcHandler:setTopic(playerId, 9)
 	elseif MsgContains(message, "old") and npcHandler:getTopic(playerId) == 9 then
-		npcHandler:say("ARGH! You did it again! Well all right. Do you wish to break the Seal of Madness?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_7")
 		npcHandler:setTopic(playerId, 10)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 10 then
-		npcHandler:say("GOOD! So I will get you at last. Answer this: What is your favourite colour?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_8")
 		npcHandler:setTopic(playerId, 11)
 	elseif MsgContains(message, "green") and npcHandler:getTopic(playerId) == 11 then
 		if player:getStorageValue(storage.FavoriteColour) < 1 then
@@ -138,19 +138,19 @@ local function creatureSayCallback(npc, creature, type, message)
 
 				player:teleportTo({ x = 32478, y = 31905, z = 1 })
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-				npcHandler:say("DAMN YOUUUUUUUUUUUUUUUUUUUUUU!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_9")
 			else
-				npcHandler:say("WRONG!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_10")
 				player:teleportTo({ x = 32725, y = 31589, z = 12 })
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			end
 		end
 	elseif npcHandler:getTopic(playerId) == 5 then
-		npcHandler:say("WRONG! Next time get your own answers. To hell with thee, cheater Sischfried!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_11")
 		player:teleportTo({ x = 32725, y = 31589, z = 12 })
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 	else
-		npcHandler:say("WRONG!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_12")
 		player:teleportTo({ x = 32725, y = 31589, z = 12 })
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 	end

@@ -810,11 +810,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "name") then
-		return npcHandler:say("Me Yasir.", npc, creature)
+		return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yasir.say_1")
 	elseif MsgContains(message, "job") then
-		return npcHandler:say("Tje hari ku ne finjala. {Ariki}?", npc, creature)
+		return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yasir.say_2")
 	elseif MsgContains(message, "passage") then
-		return npcHandler:say("Soso yana. <shakes his head>", npc, creature)
+		return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yasir.say_3")
 	elseif MsgContains(message, "ariki") then
 		npc:openShopWindow(creature)
 		creature:addAchievement("Si, Ariki!")

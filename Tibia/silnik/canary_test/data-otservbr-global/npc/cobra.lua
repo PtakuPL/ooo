@@ -60,7 +60,7 @@ local function greetCallback(npc, creature)
 
 		return false
 	else
-		npcHandler:say("Begone! Hissssss! You bear not the mark of the cobra!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cobra.say_1")
 		return false
 	end
 	return true

@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-09 02:46:38 UTC  
+> **Aktualizacja:** 2025-12-09 02:52:48 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,9 +21,9 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **373** | ↑ |
-| ⏭️ Plików wykluczonych | **4929** | - |
-| 🔑 Kluczy i18n | **45953** | ↑ |
+| 📁 Plików przetworzonych | **393** | ↑ |
+| ⏭️ Plików wykluczonych | **4931** | - |
+| 🔑 Kluczy i18n | **46117** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
 | 🔄 Cykl | **#1** | - |
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | ✅ | 7952/5000 (159%) | 5000 |
+| 🧙 NPC Dialogs | ✅ | 8116/5000 (162%) | 5000 |
 | 📜 Lua Scripts | 🔄 | 713/1000 (71%) | 1000 |
 | 🎒 Items Database | 🔄 | 36972/40000 (92%) | 40000 |
 | 👹 Monsters | 🔄 | 100/500 (20%) | 500 |
@@ -79,14 +79,14 @@
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
 | **Plik** | `Cykl #1` |
-| **Szczegóły** | NPC:7952 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-09 02:46:00 |
+| **Szczegóły** | NPC:8116 Scripts:713 Items:36972 |
+| **Ostatnia aktualizacja** | 2025-12-09 02:51:07 |
 
 ### 📈 Statystyki sesji
 
 | Metryka | Wartość |
 |---------|----------|
-| Plików przetworzonych | 558 |
+| Plików przetworzonych | 578 |
 | Kluczy wyciągniętych | 0 |
 | Błędów | 0 |
 | Napraw zastosowanych | 0 |
@@ -100,7 +100,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 7952 |
+| 🔑 Kluczy | 8116 |
 | 📊 Status | ✅ Zakończone |
 | 📂 Plików | ~877 |
 
@@ -149,16 +149,16 @@ selfSay("text")
 
 | Plik | Czas | Status |
 |------|------|--------|
-| `zebron.lua` | 02:45:28 | ✅ |
-| `harlow.lua` | 02:45:30 | ✅ |
-| `captain_haba_open_sea.lua` | 02:45:33 | ✅ |
-| `pukosch.lua` | 02:45:36 | ✅ |
-| `tereban_functions.lua` | 02:45:41 | ✅ |
+| `amber.lua` | 02:49:28 | ✅ |
+| `gelidrazahs_thirst.lua` | 02:49:30 | ✅ |
+| `shoddy_beggar.lua` | 02:49:36 | ✅ |
+| `ruprecht.lua` | 02:49:40 | ✅ |
+| `alkestios.lua` | 02:49:45 | ✅ |
 
 ### 💻 Przykład kodu (ostatni plik)
 
 ```lua
-				npcHandler:say({
+			npcHandler:say({
 ```
 
 **Wzorce ekstrakcji:**
@@ -225,7 +225,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 3085128, Cykl #1 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 3127006, Cykl #1 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

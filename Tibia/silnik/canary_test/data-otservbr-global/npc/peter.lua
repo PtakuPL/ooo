@@ -60,13 +60,13 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "report") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 7 or player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 13 then
-			npcHandler:say("A report? What do they think is happening here? <gives an angry and bitter report>. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.peter.say_1")
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) + 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission02, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission02) + 1) -- StorageValue for Questlog "Mission 02: Watching the Watchmen"
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif table.contains({ "pass", "gate" }, message:lower()) then
-		npcHandler:say("Pass the gate? If it must be. Are you headed for the {factory} or the former {trade quarter}?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.peter.say_2")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "factory") then
 		if npcHandler:getTopic(playerId) == 1 then
@@ -76,7 +76,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		end
 	else
-		npcHandler:say("Listen, I don't get paid enough to chat with citizens. Move on.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.peter.say_3")
 	end
 	return true
 end
@@ -93,7 +93,7 @@ local function onTradeRequest(npc, creature)
 		player:teleportTo(destination)
 		destination:sendMagicEffect(CONST_ME_TELEPORT)
 		npcHandler:setTopic(playerId, 0)
-		npcHandler:say("Be on your guard. Some people are nice, some... aren't.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.peter.say_4")
 	end
 	return true
 end

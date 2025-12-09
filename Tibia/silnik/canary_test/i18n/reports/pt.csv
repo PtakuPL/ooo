@@ -43876,14 +43876,14 @@ npc.klom_stonecutter.say_7,"So you did it. Well, that won't be the last of 'em b
 npc.klom_stonecutter.say_8,"So you did it. And you even made prisoners, the bonus is yours! Well, that won't be the last of 'em but this sure helps our situation down here. Return to me later if you want to help me again!",,missing
 npc.klom_stonecutter.say_9,"Very well, now try to find some of their makeshift homes and tear'em down. There's bound to be some stragglers you can 'persuade' to surrender, eliminate any resistance. Get back here when you're done.",,missing
 npc.klom_stonecutter.say_10,"If you bring me any suspicious devices on creatures you slay down here, I'll make it worth your while by telling the others of your generosity. How many do you want to offer?",,missing
-npc.klom_stonecutter.say_11,You want to offer ,,missing
-npc.klom_stonecutter.say_12,Don't waste my time.,,missing
-npc.klom_stonecutter.say_13,Done.,,missing
-npc.klom_stonecutter.say_14,You don't have enough suspicious devices.,,missing
-npc.klom_stonecutter.say_15,Done.,,missing
-npc.klom_stonecutter.say_16,You don't have enough suspicious devices.,,missing
-npc.klom_stonecutter.say_17,Done.,,missing
-npc.klom_stonecutter.say_18,You don't have enough suspicious devices.,,missing
+npc.klom_stonecutter.say_11,Don't waste my time.,,missing
+npc.klom_stonecutter.say_12,Done.,,missing
+npc.klom_stonecutter.say_13,You don't have enough suspicious devices.,,missing
+npc.klom_stonecutter.say_14,Done.,,missing
+npc.klom_stonecutter.say_15,You don't have enough suspicious devices.,,missing
+npc.klom_stonecutter.say_16,Done.,,missing
+npc.klom_stonecutter.say_17,You don't have enough suspicious devices.,,missing
+npc.klom_stonecutter.say_18,"So you want to know what we all think about your deeds? What leader's opinion are you interested in, the {gnomes} (Gnomus), the {dwarves} (Klom Stonecutter) or the {scouts} (Lardoc Bashsmite)?",,missing
 npc.klom_stonecutter.say_19,"So you want to know what we all think about your deeds? What leader's opinion are you interested in, the {gnomes} (Gnomus), the {dwarves} (Klom Stonecutter) or the {scouts} (Lardoc Bashsmite)?",,missing
 npc.klom_stonecutter.say_20,"The gnomes are still in need of your help, member of Bigfoot's Brigade. Prove your worth by answering their calls! (",,missing
 npc.klom_stonecutter.say_21,"The dwarves are still in need of your help, member of Bigfoot's Brigade. Prove your worth by answering their calls! (",,missing
@@ -43917,20 +43917,20 @@ npc.eruaran.say_3,"From time to time fate smiles upon those who take great risks
 npc.eruaran.say_4,Do you want to create a crude umbral {blade} or crude umbral {slayer}?,,missing
 npc.eruaran.say_5,Do you want to improve a crude umbral {blade} or crude umbral {slayer}?,,missing
 npc.eruaran.say_6,Do you want to transform an umbral {blade} or umbral {slayer}?,,missing
-npc.eruaran.say_7,Do you want to spend ,,missing
-npc.eruaran.say_8,Do you want to spend your crude umbral ,,missing
-npc.eruaran.say_9,Do you want to spend your umbral ,,missing
-npc.eruaran.say_10,Do you want to create a crude umbral {axe} or crude umbral {chopper}?,,missing
-npc.eruaran.say_11,Do you want to improve a crude umbral {axe} or crude umbral {chopper}?,,missing
-npc.eruaran.say_12,Do you want to transform an umbral {axe} or umbral {chopper}?,,missing
-npc.eruaran.say_13,Do you want to spend your dream matter with those 25 clusters of {solace} and give a shot. {Yes} or {no},,missing
-npc.eruaran.say_14,Do you want to spend your crude umbral ,,missing
-npc.eruaran.say_15,Do you want to spend your umbral ,,missing
-npc.eruaran.say_16,Do you want to create a crude umbral {mace} or crude umbral {hammer}?,,missing
-npc.eruaran.say_17,Do you want to improve a crude umbral {mace} or crude umbral {hammer}?,,missing
-npc.eruaran.say_18,Do you want to transform an umbral {mace} or umbral {hammer}?,,missing
-npc.eruaran.say_19,Do you want to spend your dream matter with ,,missing
-npc.eruaran.say_20,Do you want to spend your crude umbral ,,missing
+npc.eruaran.say_7,Do you want to create a crude umbral {axe} or crude umbral {chopper}?,,missing
+npc.eruaran.say_8,Do you want to improve a crude umbral {axe} or crude umbral {chopper}?,,missing
+npc.eruaran.say_9,Do you want to transform an umbral {axe} or umbral {chopper}?,,missing
+npc.eruaran.say_10,Do you want to spend your dream matter with those 25 clusters of {solace} and give a shot. {Yes} or {no},,missing
+npc.eruaran.say_11,Do you want to create a crude umbral {mace} or crude umbral {hammer}?,,missing
+npc.eruaran.say_12,Do you want to improve a crude umbral {mace} or crude umbral {hammer}?,,missing
+npc.eruaran.say_13,Do you want to transform an umbral {mace} or umbral {hammer}?,,missing
+npc.eruaran.say_14,Something weird happened! You should contact a gamemaster.,,missing
+npc.eruaran.say_15,Oh no! The process failed.,,missing
+npc.eruaran.say_16,"Sorry, you don't have the required ingredients.",,missing
+npc.eruaran.say_17,Oh no! The process failed.,,missing
+npc.eruaran.say_18,Something weird happened! You should contact a gamemaster.,,missing
+npc.eruaran.say_19,Oh no! The process failed.,,missing
+npc.eruaran.say_20,Something weird happened! You should contact a gamemaster.,,missing
 npc.eruaran.say_21,Do you want to spend your umbral ,,missing
 npc.eruaran.say_22,Do you want to spend your dream matter with ,,missing
 npc.eruaran.say_23,Do you want to spend your crude umbral bow with ,,missing
@@ -44880,6 +44880,14 @@ npc.lardoc_bashsmite.stdmod_18,Bashsmite. That's all you need to know.,,missing
 npc.arkulius.stdmod_4,"How dare you asking me this?!? I'm Arkulius - Master of Elements, the HEADMASTER of this academy!!",,missing
 npc.rock_in_a_hard_place.stdmod_1,Have you noticed that I'm actually the only rock on this island with a proper job? Those lazy pebbleheads! I'm proud to announce: I'm a trader,,missing
 npc.rock_in_a_hard_place.stdmod_2,"No, you got it all wrong! I said I'm stuck between a rock and a hard place!",,missing
+npc.klom_stonecutter.stdmod_19,"Well, the biggest problem we need to address are the ever charging {subterraneans} around here. And on top of that, there's the threat of the Lost, who quite made themselves at {home} in these parts.",,missing
+npc.klom_stonecutter.stdmod_20,"Maintainin' this whole operation, the dwarven involvement 'course. Don't know about them gnomes but if I ain't gettin' those dwarves in line, there'll be chaos down here. I also oversee the {defences} and {counterattacks}.",,missing
+npc.klom_stonecutter.stdmod_21,Klom Stonecutter's the name. ,,missing
+npc.eruaran.stdmod_21,What addon you are looking? I need for first addon: {dream warden mask} and for second {dream warden claw}.,,missing
+npc.eruaran.stdmod_22,To achieve the first dream addon you need to give me 1 dream warden mask. Do you have them with you?,,missing
+npc.eruaran.stdmod_23,Alright then. Come back when you got all neccessary items.,,missing
+npc.eruaran.stdmod_24,To achieve the second dream addon you need to give me 1 dream warden claw. Do you have them with you?,,missing
+npc.eruaran.stdmod_25,Alright then. Come back when you got all neccessary items.,,missing
 player.status.cleanse,You are no longer {0}. (cleanse charm),Você não está mais {0}. (amuleto de limpeza),translated
 player.condition.poisoned,You are poisoned.,Você está envenenado.,translated
 player.condition.drowning,You are drowning.,Você está se afogando.,translated

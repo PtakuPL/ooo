@@ -57,14 +57,14 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if message == "cookie" then
 		if player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission02) == 1 and player:getItemCount(8199) > 0 and player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Serafin) < 0 then
-			npcHandler:say("Oh, no I don't sell cookies. Or, do you mean you'd like to give me one?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.serafin.say_1")
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:say("It'd be better for you to leave now.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.serafin.say_2")
 		end
 	elseif message == "yes" then
 		if npcHandler:getTopic(playerId) == 1 and player:removeItem(8199, 1) then -- garlic cookie
-			npcHandler:say("COUGH?! What kind of a mean trick is that? Get out of my shop!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.serafin.say_3")
 			player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Serafin, 1)
 			npcHandler:setTopic(playerId, 0)
 		end

@@ -73,7 +73,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "subterraneans") then
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Subterranean) == 2 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.TimeTaskSubterranean) > 0 then
-			npcHandler:say("I don't need your help for now. Come back later.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_1")
 			npcHandler:setTopic(playerId, 1)
 		end
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Subterranean) == 2 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.TimeTaskSubterranean) <= 0 then
@@ -90,10 +90,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Subterranean) == 1) and (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Organisms) < 50) then
-			npcHandler:say("Come back when you have finished your job.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_2")
 			npcHandler:setTopic(playerId, 1)
 		elseif (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Subterranean) == 1) and (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Organisms) >= 50) then
-			npcHandler:say("I'l say I'm blown away but a Klom Stonecutter is not that easily impressed. Still, your got your hands dirt for us and I appreciate that.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_3")
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.TimeTaskSubterranean, os.time() + time)
 			player:addItem(27654, 1)
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points) + 1)
@@ -101,7 +101,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 2 and MsgContains(message, "yes") then
-		npcHandler:say("Alright, good. Those things are strolling about and I ain't gonna have that. If it moves more than two legs, destroy it. If it moves legs and tentacles, destroy it again.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_4")
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Questline) < 1 then
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Questline, 1)
 		end
@@ -112,7 +112,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "home") then
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Home) == 2 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.TimeTaskHome) > 0 then
-			npcHandler:say("I don't need your help for now. Come back later.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_5")
 			npcHandler:setTopic(playerId, 1)
 		end
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Home) == 2 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.TimeTaskHome) <= 0 then
@@ -131,17 +131,17 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 22)
 		elseif (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Home) == 1) and (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.LostExiles) < 20 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Prisoners) < 3) then
-			npcHandler:say("Come back when you have finished your job.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_6")
 			npcHandler:setTopic(playerId, 1)
 		elseif (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Home) == 1) and (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.LostExiles) >= 20 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Prisoners) < 3) then
-			npcHandler:say("So you did it. Well, that won't be the last of 'em but this sure helps our situation down here. Return to me later if you want to help me again!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_7")
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.TimeTaskHome, os.time() + time)
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Home, 2)
 			player:addItem(27654, 1)
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points) + 1)
 			npcHandler:setTopic(playerId, 1)
 		elseif (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Home) == 1) and (player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.LostExiles) >= 20 and player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Prisoners) >= 3) then
-			npcHandler:say("So you did it. And you even made prisoners, the bonus is yours! Well, that won't be the last of 'em but this sure helps our situation down here. Return to me later if you want to help me again!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_8")
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.TimeTaskHome, os.time() + time)
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Home, 2)
 			player:addItem(27654, 2)
@@ -149,7 +149,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 22 and MsgContains(message, "yes") then
-		npcHandler:say("Very well, now try to find some of their makeshift homes and tear'em down. There's bound to be some stragglers you can 'persuade' to surrender, eliminate any resistance. Get back here when you're done.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_9")
 		if player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Questline) < 1 then
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Questline, 1)
 		end
@@ -162,7 +162,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	local plural = ""
 
 	if MsgContains(message, "suspicious devices") or MsgContains(message, "suspicious device") then
-		npcHandler:say("If you bring me any suspicious devices on creatures you slay down here, I'll make it worth your while by telling the others of your generosity. How many do you want to offer?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_10")
 		npcHandler:setTopic(playerId, 55)
 	elseif npcHandler:getTopic(playerId) == 55 then
 		count[playerId] = tonumber(message)
@@ -173,12 +173,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:say("You want to offer " .. count[playerId] .. " suspicious device" .. plural .. ". Which leader shall have it, (Gnomus) of the {gnomes}, (Klom Stonecutter) of the {dwarves} or the {scouts} (Lardoc Bashsmite)?", npc, creature)
 			npcHandler:setTopic(playerId, 56)
 		else
-			npcHandler:say("Don't waste my time.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_11")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "gnomes") and npcHandler:getTopic(playerId) == 56 then
 		if player:getItemCount(27653) >= count[playerId] then
-			npcHandler:say("Done.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_12")
 			if count[playerId] > 1 then
 				plural = plural .. "s"
 			end
@@ -186,12 +186,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:removeItem(27653, count[playerId])
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points) + count[playerId])
 		else
-			npcHandler:say("You don't have enough suspicious devices.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_13")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "dwarves") and npcHandler:getTopic(playerId) == 56 then
 		if player:getItemCount(27653) >= count[playerId] then
-			npcHandler:say("Done.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_14")
 			if count[playerId] > 1 then
 				plural = plural .. "s"
 			end
@@ -199,12 +199,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:removeItem(27653, count[playerId])
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points) + count[playerId])
 		else
-			npcHandler:say("You don't have enough suspicious devices.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_15")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "scouts") and npcHandler:getTopic(playerId) == 56 then
 		if player:getItemCount(27653) >= count[playerId] then
-			npcHandler:say("Done.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_16")
 			if count[playerId] > 1 then
 				plural = plural .. "s"
 			end
@@ -212,13 +212,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:removeItem(27653, count[playerId])
 			player:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points, player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points) + count[playerId])
 		else
-			npcHandler:say("You don't have enough suspicious devices.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_17")
 			npcHandler:setTopic(playerId, 1)
 		end
 	end
 
 	if MsgContains(message, "status") then
-		npcHandler:say("So you want to know what we all think about your deeds? What leader's opinion are you interested in, the {gnomes} (Gnomus), the {dwarves} (Klom Stonecutter) or the {scouts} (Lardoc Bashsmite)?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_18")
 		npcHandler:setTopic(playerId, 5)
 	elseif MsgContains(message, "gnomes") and npcHandler:getTopic(playerId) == 5 then
 		npcHandler:say("The gnomes are still in need of your help, member of Bigfoot's Brigade. Prove your worth by answering their calls! (" .. math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points), 0) .. "/10)", npc, creature)

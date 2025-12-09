@@ -73,13 +73,13 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 24 then
 			if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.MrWestDoor) == 1 then
-				npcHandler:say("Indeed, I can see the benefits of a mutual agreement. I will later read the details and send a letter to your superior. ", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr._west.say_1")
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 25)
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission04, 3) -- StorageValue for Questlog "Mission 04: Good to be Kingpin"
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.MrWestStatus, 1)
 				npcHandler:setTopic(playerId, 0)
 			elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.MrWestDoor) == 2 then
-				npcHandler:say("Yes, for the sake of my life I'll accept those terms. I know when I have lost. Tell your master I will comply with his orders. ", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr._west.say_2")
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 25)
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission04, 4) -- StorageValue for Questlog "Mission 04: Good to be Kingpin"
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.MrWestStatus, 2)

@@ -228,27 +228,27 @@ local function creatureSayCallback(npc, creature, type, message)
 	local playerId = player:getId()
 
 	if MsgContains(message, "create") then
-		npcHandler:say("You can try to create {sword}s, {axe}s, {club}s, {bow}s, {crossbow}s and {spellbook}s.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_1")
 		npcHandler:setTopic(playerId, 1)
 		action[playerId] = ACTION.CREATE
 	elseif MsgContains(message, "improve") then
-		npcHandler:say("The raw object is nothing but a pale of shadow of its potential. As unsafe and unpredictable the imporvement is, it might boot the powers of your item immensely. You can try to improve {sword}s, {axe}s, {club}s, {bow}s, {crossbow}s and {spellbook}s.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_2")
 		npcHandler:setTopic(playerId, 1)
 		action[playerId] = ACTION.IMPROVE
 	elseif MsgContains(message, "transform") then
-		npcHandler:say("From time to time fate smiles upon those who take great risks and have strong dreams! If you have the {ingredients}, we can try to give the ultimate refinement to {sword}s, {axe}s, {club}s, {bow}s, {crossbow}s and {spellbook}s.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_3")
 		npcHandler:setTopic(playerId, 1)
 		action[playerId] = ACTION.TRANSFORM
 	elseif MsgContains(message, "sword") and npcHandler:getTopic(playerId) == 1 then
 		weapon[playerId] = TYPES.SWORD
 		if action[playerId] == ACTION.CREATE then
-			npcHandler:say("Do you want to create a crude umbral {blade} or crude umbral {slayer}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_4")
 			npcHandler:setTopic(playerId, 2)
 		elseif action[playerId] == ACTION.IMPROVE then
-			npcHandler:say("Do you want to improve a crude umbral {blade} or crude umbral {slayer}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_5")
 			npcHandler:setTopic(playerId, 2)
 		elseif action[playerId] == ACTION.TRANSFORM then
-			npcHandler:say("Do you want to transform an umbral {blade} or umbral {slayer}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_6")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "blade") or MsgContains(message, "slayer") and npcHandler:getTopic(playerId) == 2 then
@@ -266,19 +266,19 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "axe") and npcHandler:getTopic(playerId) == 1 then
 		weapon[playerId] = TYPES.AXE
 		if action[playerId] == ACTION.CREATE then
-			npcHandler:say("Do you want to create a crude umbral {axe} or crude umbral {chopper}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_7")
 			npcHandler:setTopic(playerId, 2)
 		elseif action[playerId] == ACTION.IMPROVE then
-			npcHandler:say("Do you want to improve a crude umbral {axe} or crude umbral {chopper}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_8")
 			npcHandler:setTopic(playerId, 2)
 		elseif action[playerId] == ACTION.TRANSFORM then
-			npcHandler:say("Do you want to transform an umbral {axe} or umbral {chopper}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_9")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "axe") or MsgContains(message, "chopper") and npcHandler:getTopic(playerId) == 2 then
 		weapon_sub[playerId] = (MsgContains(message, "axe") and SUB_TYPES.AXE or SUB_TYPES.CHOPPER)
 		if action[playerId] == ACTION.CREATE then
-			npcHandler:say("Do you want to spend your dream matter with those 25 clusters of {solace} and give a shot. {Yes} or {no}", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_10")
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.IMPROVE then
 			npcHandler:say("Do you want to spend your crude umbral " .. (weapon_sub[playerId] == SUB_TYPES.AXE and "axe" or "chopper") .. " with " .. (Config.Improve.Clusters > 1 and "those" or "your") .. " " .. Config.Improve.Clusters .. " clusters of {solace} and give a shot. {Yes} or {no}?", npc, creature)
@@ -290,13 +290,13 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "club") and npcHandler:getTopic(playerId) == 1 then
 		weapon[playerId] = TYPES.CLUB
 		if action[playerId] == ACTION.CREATE then
-			npcHandler:say("Do you want to create a crude umbral {mace} or crude umbral {hammer}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_11")
 			npcHandler:setTopic(playerId, 2)
 		elseif action[playerId] == ACTION.IMPROVE then
-			npcHandler:say("Do you want to improve a crude umbral {mace} or crude umbral {hammer}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_12")
 			npcHandler:setTopic(playerId, 2)
 		elseif action[playerId] == ACTION.TRANSFORM then
-			npcHandler:say("Do you want to transform an umbral {mace} or umbral {hammer}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_13")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif table.contains({ "mace", "hammer" }, message) and npcHandler:getTopic(playerId) == 2 then
@@ -366,14 +366,14 @@ local function creatureSayCallback(npc, creature, type, message)
 						player:removeItem(IDS.CLUSTER_OF_SOLACE, Config.Create.Clusters)
 						npcHandler:say("Your dreams are strong, the creation was successful. Take your " .. ItemType(newItemId):getName() .. ".", npc, creature)
 					else
-						npcHandler:say("Something weird happened! You should contact a gamemaster.", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_14")
 					end
 				else
-					npcHandler:say("Oh no! The process failed.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_15")
 					player:removeItem(IDS.DREAM_MATTER, 1)
 				end
 			else
-				npcHandler:say("Sorry, you don't have the required ingredients.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_16")
 			end
 		elseif action[playerId] == ACTION.IMPROVE then --improve
 			local oldItemId = (
@@ -395,7 +395,7 @@ local function creatureSayCallback(npc, creature, type, message)
 							player:removeItem(IDS.CLUSTER_OF_SOLACE, Config.Improve.Clusters)
 							npcHandler:say("Your dreams are strong, the improvement was successful. Take your " .. ItemType(newItemId):getName() .. ".", npc, creature)
 						else
-							npcHandler:say("Oh no! The process failed.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_17")
 							local rand = math.random(100)
 							player:removeItem((rand <= Config.Improve.BreakChance and oldItemId or IDS.CLUSTER_OF_SOLACE), (rand <= Config.Improve.BreakChance and 1 or Config.Improve.Clusters))
 						end
@@ -403,7 +403,7 @@ local function creatureSayCallback(npc, creature, type, message)
 						npcHandler:say("You do not have " .. ItemType(oldItemId):getArticle() .. " " .. ItemType(oldItemId):getName() .. " with you.", npc, creature)
 					end
 				else
-					npcHandler:say("Something weird happened! You should contact a gamemaster.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_18")
 				end
 			end
 		elseif action[playerId] == ACTION.TRANSFORM then --transform
@@ -426,7 +426,7 @@ local function creatureSayCallback(npc, creature, type, message)
 							player:removeItem(IDS.CLUSTER_OF_SOLACE, Config.Transform.Clusters)
 							npcHandler:say("Your dreams are strong, the transforming was successful. Take your " .. ItemType(newItemId):getName() .. ".", npc, creature)
 						else
-							npcHandler:say("Oh no! The process failed.", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_19")
 							local rand = math.random(100)
 							if Config.Transform.BreakChance <= rand then
 								player:removeItem(oldItemId, 1)
@@ -440,7 +440,7 @@ local function creatureSayCallback(npc, creature, type, message)
 						npcHandler:say("You do not have " .. ItemType(oldItemId):getArticle() .. " " .. ItemType(oldItemId):getName() .. " with you.", npc, creature)
 					end
 				else
-					npcHandler:say("Something weird happened! You should contact a gamemaster.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_20")
 				end
 			end
 		end

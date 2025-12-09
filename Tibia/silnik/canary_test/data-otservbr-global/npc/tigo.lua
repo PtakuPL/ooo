@@ -72,10 +72,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "barkless") and player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Barkless.Mission) == 1 then
-		npcHandler:say({ "You are now one of us. Learn to endure this world's suffering in every facet and take delight in the soothing eternity that waits for the {purest} of us on the other side." }, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tigo.say_1")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "purest") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say({ "Purification is but one of the difficult steps on your way to the other side. The {trial} of tar, sulphur and ice." }, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.tigo.say_2")
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "trial") and npcHandler:getTopic(playerId) == 2 then
 		npcHandler:say({

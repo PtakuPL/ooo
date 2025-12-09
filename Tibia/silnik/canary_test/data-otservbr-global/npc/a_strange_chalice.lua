@@ -58,7 +58,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "chalice") and player:getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.Chalice) == 1 then
-		npcHandler:say("Finally. That's what I... oh wait, you're still talking to me - you will blow my cover! What do you want? Oh wait, did my {daughter} send you? It has been some time now, indeed.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_strange_chalice.say_3")
 		npcHandler:setTopic(playerId, 1)
 	end
 

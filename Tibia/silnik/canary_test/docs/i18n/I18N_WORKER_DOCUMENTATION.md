@@ -1,0 +1,252 @@
+# I18N Autonomous Worker - Dokumentacja Projektu
+
+## 📋 Przegląd
+
+**i18n_autonomous_worker.sh** to autonomiczny skrypt Bash do automatycznej migracji plików Lua serwera Canary do systemu wielojęzycznego (i18n). Worker działa w tle, przetwarzając pliki NPC i skrypty, wyodrębniając teksty do JSON i zastępując je wywołaniami API i18n.
+
+---
+
+## 🏗️ Architektura
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                   i18n_autonomous_worker.sh                  │
+├─────────────────────────────────────────────────────────────┤
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐     │
+│  │ Ekstrakcja  │ -> │  Migracja   │ -> │    JSON     │     │
+│  │  stringów   │    │   kodu Lua  │    │   i18n/en/  │     │
+│  └─────────────┘    └─────────────┘    └─────────────┘     │
+│         │                  │                  │             │
+│         v                  v                  v             │
+│  ┌─────────────────────────────────────────────────┐       │
+│  │              Status & Monitoring                │       │
+│  │          i18n/status/*.json                     │       │
+│  └─────────────────────────────────────────────────┘       │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔧 Poprawne API i18n
+
+### Dla plików NPC
+
+Worker używa biblioteki **`NPC_LIB.i18n`** z pliku `data-otservbr-global/lib/npc/i18n.lua`:
+
+```lua
+-- PRZED (oryginalny kod)
+npcHandler:say("Hello, traveler!", npc, creature)
+
+-- PO MIGRACJI (prawidłowe API)
+NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.npc_name.say_1")
+```
+
+#### Dostępne funkcje NPC_LIB.i18n:
+
+| Funkcja | Opis |
+|---------|------|
+| `NPC_LIB.i18n.npcSay(npcHandler, npc, creature, key, args)` | Pojedyncza wypowiedź NPC |
+| `NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, keys, delay)` | Wiele wypowiedzi z opóźnieniem |
+| `NPC_LIB.i18n.setLocalizedGreet(npcHandler, key)` | Powitanie NPC |
+| `NPC_LIB.i18n.setLocalizedFarewell(npcHandler, key)` | Pożegnanie NPC |
+| `NPC_LIB.i18n.setLocalizedWalkaway(npcHandler, key)` | Gdy gracz odchodzi |
+
+### Dla skryptów Lua
+
+```lua
+-- PRZED
+player:sendTextMessage(MESSAGE_INFO_DESCR, "You found a treasure!")
+
+-- PO MIGRACJI
+player:sendLocalizedTextMessage(MESSAGE_INFO_DESCR, "scripts.treasure_found")
+```
+
+### Dla systemu serwera
+
+```lua
+-- Funkcja t() z data/libs/server_i18n.lua
+local text = t("server.welcome_message", {name = player:getName()}, player)
+```
+
+---
+
+## 📁 Struktura plików
+
+```
+canary_test/
+├── i18n_autonomous_worker.sh      # Główny skrypt workera
+├── i18n_worker.log                # Log działania
+├── .worker.pid                    # PID procesu
+├── i18n_worker_state.json         # Stan workera
+├── i18n_processed_files.txt       # Lista przetworzonych plików
+├── i18n_excluded_files.txt        # Pliki wykluczone z migracji
+│
+├── i18n/
+│   ├── en/                        # Klucze angielskie (źródłowe)
+│   │   ├── npc.json              # Klucze NPC
+│   │   ├── scripts.json          # Klucze skryptów
+│   │   ├── items.json            # Przedmioty
+│   │   ├── monsters.json         # Potwory
+│   │   └── ...
+│   ├── pl/                        # Tłumaczenia polskie
+│   ├── es/, de/, pt/, ...         # Pozostałe języki (53 total)
+│   └── status/
+│       ├── npc.json              # Status kategorii NPC
+│       ├── scripts.json          # Status skryptów
+│       └── activity.json         # Aktywność workera
+│
+└── data-otservbr-global/
+    ├── lib/npc/i18n.lua          # Biblioteka NPC i18n (NIE MODYFIKOWAĆ)
+    └── npc/                       # Pliki NPC do migracji
+        ├── alyxo.lua
+        ├── alesar.lua
+        └── ...
+```
+
+---
+
+## 🔄 Wzorce migracji
+
+### Wzorzec 1: Pojedyncza wypowiedź NPC
+
+```lua
+-- PRZED:
+npcHandler:say("Welcome to my shop!", npc, creature)
+
+-- PO:
+NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shop_keeper.say_1")
+
+-- JSON (i18n/en/npc.json):
+{
+  "npc.shop_keeper.say_1": "Welcome to my shop!"
+}
+```
+
+### Wzorzec 2: Wiele wypowiedzi (tablica)
+
+```lua
+-- PRZED:
+npcHandler:say({"First message.", "Second message."}, npc, creature)
+
+-- PO (każda wypowiedź osobno):
+NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.npc_name.say_1")
+NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.npc_name.say_2")
+
+-- JSON:
+{
+  "npc.npc_name.say_1": "First message.",
+  "npc.npc_name.say_2": "Second message."
+}
+```
+
+### Wzorzec 3: StdModule.say (ręczna migracja)
+
+```lua
+-- PRZED:
+keywordHandler:addKeyword({"help"}, StdModule.say, {
+    npcHandler = npcHandler,
+    text = "I can help you with trading."
+})
+
+-- PO (wymaga ręcznej migracji - worker tylko ekstrahuje):
+-- TODO: Użyj NPC_LIB.i18n.setKeywordLocalized lub ręcznie zmodyfikuj
+```
+
+---
+
+## ⚙️ Konfiguracja workera
+
+### Uruchomienie
+
+```bash
+cd /home/ptaku/serweryt/Tibia/silnik/canary_test
+./i18n_autonomous_worker.sh &
+```
+
+### Zatrzymanie
+
+```bash
+pkill -f i18n_autonomous_worker
+# lub
+kill $(cat .worker.pid)
+```
+
+### Monitorowanie
+
+```bash
+# Logi na żywo
+tail -f i18n_worker.log
+
+# Status
+cat i18n/status/npc.json | jq .
+```
+
+---
+
+## 📊 Statystyki (stan na 09.12.2025)
+
+| Metryka | Wartość |
+|---------|---------|
+| Plików NPC przetworzonych | 186 |
+| Plików pozostałych | 841 |
+| Kluczy w JSON | 7673 |
+| Tłumaczeń PL | 372 (4%) |
+| Języków | 53 |
+
+---
+
+## 🛠️ Rozwiązywanie problemów
+
+### Problem: Git lock file
+
+```bash
+rm -f /home/ptaku/serweryt/.git/index.lock
+```
+
+### Problem: Wiele procesów workera
+
+```bash
+pkill -f i18n_autonomous_worker
+rm -f .worker.pid
+./i18n_autonomous_worker.sh &
+```
+
+### Problem: Worker nie pushuje do GitHub
+
+Sprawdź czy `i18n_status_pusher.sh` działa:
+```bash
+ps aux | grep pusher
+bash i18n_status_pusher.sh
+```
+
+---
+
+## 📝 Historia zmian
+
+### 2025-12-09
+- ✅ Naprawiono API - zmiana z nieistniejącego `sayLocalized` na `NPC_LIB.i18n.npcSay`
+- ✅ Zmigrowano 186 plików NPC z prawidłowym API
+- ✅ Naprawiono problem z git lock file
+- ✅ Push 270 plików do GitHub
+
+### Wcześniej
+- Implementacja autonomicznego workera
+- Integracja z pipeline Python dla synchronizacji języków
+- System statusów i monitoringu
+
+---
+
+## 🔗 Powiązane pliki
+
+- `data-otservbr-global/lib/npc/i18n.lua` - Biblioteka NPC i18n (źródło prawdy dla API)
+- `data/libs/server_i18n.lua` - Funkcja `t()` dla serwera
+- `docs/I18N_DEVELOPMENT_ROADMAP.md` - Roadmapa rozwoju
+- `I18N_STATUS.md` - Aktualny status tłumaczeń
+
+---
+
+## 👤 Autor
+
+Projekt stworzony we współpracy z GitHub Copilot dla serwera Canary Tibia.
+
+**Repozytorium:** https://github.com/PtakuPL/ooo

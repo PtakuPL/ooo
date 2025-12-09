@@ -60,19 +60,19 @@ local function creatureSayCallback(npc, creature, type, message)
 	local valuePicture = 10000
 
 	if MsgContains(message, "has the cat got your tongue?") and player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) == 4 then
-		npcHandler:say("Nice. You like your picture, haa? Give me 10,000 gold and I will deliver it to the museum. Do you {pay}?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iwar.say_1")
 		npcHandler:setTopic(playerId, 2)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "pay") or MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
 			if (player:getMoney() + player:getBankBalance()) >= valuePicture then
-				npcHandler:say("Well done. The picture will be delivered to the museum as last as possible.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iwar.say_2")
 				npcHandler:setTopic(playerId, 0)
 				npcHandler:setTopic(playerId, 0)
 				player:removeMoneyBank(valuePicture)
 				player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission, 5)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.iwar.say_3")
 				npcHandler:setTopic(playerId, 1)
 				npcHandler:setTopic(playerId, 1)
 			end

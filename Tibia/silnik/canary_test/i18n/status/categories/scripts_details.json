@@ -1,14 +1,14 @@
 {
   "category": "scripts",
   "status": "in_progress",
-  "last_updated": "2025-12-09T02:31:09+01:00",
+  "last_updated": "2025-12-09T02:34:51+01:00",
   "summary": {
     "total_keys": 713,
-    "files_processed": 187
+    "files_processed": 207
   },
   "current_work": {
     "directory": "data-otservbr-global/scripts/",
-    "cycle": 8
+    "cycle": 9
   },
   "subdirectories": {
     "quests": {"processed": 0},
@@ -16,28 +16,28 @@
   },
   "recent_files": [
   {
-    "file": "ghost_of_a_priest.lua",
-    "time": "02:31:09",
+    "file": "guide_luke.lua",
+    "time": "02:34:51",
     "status": "success"
   },
   {
-    "file": "bruce.lua",
-    "time": "02:31:09",
+    "file": "perod.lua",
+    "time": "02:34:51",
     "status": "success"
   },
   {
-    "file": "santa_claus.lua",
-    "time": "02:31:09",
+    "file": "ezebeth.lua",
+    "time": "02:34:51",
     "status": "success"
   },
   {
-    "file": "ivalisse.lua",
-    "time": "02:31:09",
+    "file": "miles_the_guard.lua",
+    "time": "02:34:51",
     "status": "success"
   },
   {
-    "file": "dermot.lua",
-    "time": "02:31:09",
+    "file": "karith.lua",
+    "time": "02:34:51",
     "status": "success"
   }
 ]

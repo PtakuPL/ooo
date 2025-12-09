@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-12-09 14:43:31",
+  "last_updated": "2025-12-09 14:45:29",
   "current_operation": {
     "type": "idle",
     "phase": 1,
@@ -10,6 +10,20 @@
     "details": "Sprawdzam co 60s"
   },
   "recent_operations": [
+    {
+      "time": "2025-12-09 14:45:29",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
+    {
+      "time": "2025-12-09 14:44:36",
+      "type": "cycle",
+      "file": "Cykl #71",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
     {
       "time": "2025-12-09 14:43:31",
       "type": "idle",
@@ -133,20 +147,6 @@
       "time": "2025-12-09 14:26:51",
       "type": "cycle",
       "file": "Cykl #62",
-      "action": "🎮 Canary Server - scripts",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 14:25:46",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
-    },
-    {
-      "time": "2025-12-09 14:24:53",
-      "type": "cycle",
-      "file": "Cykl #61",
       "action": "🎮 Canary Server - scripts",
       "status": "in_progress"
     }

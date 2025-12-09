@@ -18,8 +18,8 @@
             "data-canary/npc",
             "data/npclib"
           ],
-          "target_keys": 5000,
-          "status": "completed",
+          "target_keys": 13190,
+          "status": "in_progress",
           "keys_extracted": 11991,
           "files_processed": 877
         },
@@ -104,9 +104,9 @@
             "html_copy/app",
             "html_copy/routes"
           ],
-          "target_keys": 500,
+          "target_keys": 2015,
           "status": "pending",
-          "keys_extracted": 0,
+          "keys_extracted": 1832,
           "files_processed": 0
         },
         {
@@ -118,7 +118,7 @@
           ],
           "target_keys": 300,
           "status": "pending",
-          "keys_extracted": 0,
+          "keys_extracted": 86,
           "files_processed": 0
         },
         {
@@ -130,7 +130,7 @@
           ],
           "target_keys": 100,
           "status": "pending",
-          "keys_extracted": 0,
+          "keys_extracted": 86,
           "files_processed": 0
         }
       ]
@@ -152,7 +152,7 @@
           ],
           "target_keys": 200,
           "status": "pending",
-          "keys_extracted": 0,
+          "keys_extracted": 86,
           "files_processed": 0
         },
         {
@@ -162,9 +162,9 @@
           "directories": [
             "testyy"
           ],
-          "target_keys": 50,
+          "target_keys": 94,
           "status": "pending",
-          "keys_extracted": 0,
+          "keys_extracted": 86,
           "files_processed": 0
         }
       ]

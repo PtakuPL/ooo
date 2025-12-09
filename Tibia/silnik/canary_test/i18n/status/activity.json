@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-12-09 03:21:09",
+  "last_updated": "2025-12-09 03:21:53",
   "current_operation": {
     "type": "cycle_end",
     "phase": 1,
@@ -7,147 +7,147 @@
     "file": "Cykl 3",
     "action": "Zakończono przetwarzanie",
     "status": "completed",
-    "details": "10 plików"
+    "details": "6 plików"
   },
   "recent_operations": [
     {
-      "time": "2025-12-09 03:21:09",
+      "time": "2025-12-09 03:21:53",
       "type": "cycle_end",
       "file": "Cykl 3",
       "action": "Zakończono przetwarzanie",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:21:09",
+      "time": "2025-12-09 03:21:52",
       "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/modules/game_shaders/shaders.html",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/tools/api/updater.php",
+      "action": "Ekstrakcja PHP",
+      "status": "completed"
+    },
+    {
+      "time": "2025-12-09 03:21:52",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/tools/api/updater.php",
+      "action": "Analiza PHP",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 03:21:52",
+      "type": "process",
+      "file": "updater.php",
+      "action": "Przetwarzanie php",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 03:21:52",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/tools/api/status.php",
+      "action": "Ekstrakcja PHP",
+      "status": "completed"
+    },
+    {
+      "time": "2025-12-09 03:21:51",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/tools/api/status.php",
+      "action": "Analiza PHP",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 03:21:51",
+      "type": "process",
+      "file": "status.php",
+      "action": "Przetwarzanie php",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 03:21:51",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/modules/game_rewardwall/game_rewardwall.html",
       "action": "Ekstrakcja HTML",
       "status": "completed"
     },
     {
-      "time": "2025-12-09 03:21:09",
+      "time": "2025-12-09 03:21:51",
       "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/modules/game_shaders/shaders.html",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/modules/game_rewardwall/game_rewardwall.html",
       "action": "Analiza HTML",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-09 03:21:09",
+      "time": "2025-12-09 03:21:51",
       "type": "process",
-      "file": "shaders.html",
+      "file": "game_rewardwall.html",
+      "action": "Przetwarzanie html",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 03:21:51",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/modules/game_rewardwall/#displayUIPickReward.html",
+      "action": "Ekstrakcja HTML",
+      "status": "completed"
+    },
+    {
+      "time": "2025-12-09 03:21:51",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/modules/game_rewardwall/#displayUIPickReward.html",
+      "action": "Analiza HTML",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 03:21:51",
+      "type": "process",
+      "file": "#displayUIPickReward.html",
+      "action": "Przetwarzanie html",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 03:21:51",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/modules/game_questlog/game_questlog.html",
+      "action": "Ekstrakcja HTML",
+      "status": "completed"
+    },
+    {
+      "time": "2025-12-09 03:21:51",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/modules/game_questlog/game_questlog.html",
+      "action": "Analiza HTML",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 03:21:50",
+      "type": "process",
+      "file": "game_questlog.html",
+      "action": "Przetwarzanie html",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 03:21:50",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/modules/game_blessing/blessing.html",
+      "action": "Ekstrakcja HTML",
+      "status": "completed"
+    },
+    {
+      "time": "2025-12-09 03:21:50",
+      "type": "extract",
+      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/modules/game_blessing/blessing.html",
+      "action": "Analiza HTML",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 03:21:50",
+      "type": "process",
+      "file": "blessing.html",
       "action": "Przetwarzanie html",
       "status": "in_progress"
     },
     {
       "time": "2025-12-09 03:21:09",
-      "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/browser/shell.html",
-      "action": "Ekstrakcja HTML",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-09 03:21:09",
-      "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/browser/shell.html",
-      "action": "Analiza HTML",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 03:21:09",
-      "type": "process",
-      "file": "shell.html",
-      "action": "Przetwarzanie html",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 03:21:09",
-      "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/resources/icons/bootstrap-icons-1.8.1/index.html",
-      "action": "Ekstrakcja HTML",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-09 03:21:09",
-      "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/resources/icons/bootstrap-icons-1.8.1/index.html",
-      "action": "Analiza HTML",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 03:21:09",
-      "type": "process",
-      "file": "index.html",
-      "action": "Przetwarzanie html",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 03:21:08",
-      "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/app/Controller/Admin/Items.php",
-      "action": "Ekstrakcja PHP",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-09 03:21:08",
-      "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/app/Controller/Admin/Items.php",
-      "action": "Analiza PHP",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 03:21:08",
-      "type": "process",
-      "file": "Items.php",
-      "action": "Przetwarzanie php",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 03:21:08",
-      "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/app/Controller/Pages/Outfit.php",
-      "action": "Ekstrakcja PHP",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-09 03:21:08",
-      "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/app/Controller/Pages/Outfit.php",
-      "action": "Analiza PHP",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 03:21:08",
-      "type": "process",
-      "file": "Outfit.php",
-      "action": "Przetwarzanie php",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 03:21:07",
-      "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/index.php",
-      "action": "Ekstrakcja PHP",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-09 03:21:07",
-      "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/index.php",
-      "action": "Analiza PHP",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 03:21:07",
-      "type": "process",
-      "file": "index.php",
-      "action": "Przetwarzanie php",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 03:21:07",
-      "type": "extract",
-      "file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/tools/translation_manager.php",
-      "action": "Ekstrakcja PHP",
+      "type": "cycle_end",
+      "file": "Cykl 3",
+      "action": "Zakończono przetwarzanie",
       "status": "completed"
     }
   ],

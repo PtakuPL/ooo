@@ -570,3 +570,9 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/resources/icons/bootstrap-icons-1.8.1/index.html
 /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/browser/shell.html
 /home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/modules/game_shaders/shaders.html
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/modules/game_blessing/blessing.html
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/modules/game_questlog/game_questlog.html
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/modules/game_rewardwall/#displayUIPickReward.html
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/modules/game_rewardwall/game_rewardwall.html
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/tools/api/status.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/tools/api/updater.php

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-12-09 12:37:05",
+  "last_updated": "2025-12-09 12:49:08",
   "current_operation": {
     "type": "idle",
     "phase": 1,
@@ -10,6 +10,90 @@
     "details": "Sprawdzam co 60s"
   },
   "recent_operations": [
+    {
+      "time": "2025-12-09 12:49:08",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
+    {
+      "time": "2025-12-09 12:48:09",
+      "type": "cycle",
+      "file": "Cykl #14",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 12:47:03",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
+    {
+      "time": "2025-12-09 12:46:11",
+      "type": "cycle",
+      "file": "Cykl #13",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 12:45:04",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
+    {
+      "time": "2025-12-09 12:44:11",
+      "type": "cycle",
+      "file": "Cykl #12",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 12:43:05",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
+    {
+      "time": "2025-12-09 12:42:11",
+      "type": "cycle",
+      "file": "Cykl #11",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 12:41:05",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
+    {
+      "time": "2025-12-09 12:40:11",
+      "type": "cycle",
+      "file": "Cykl #10",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-09 12:39:04",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
+    {
+      "time": "2025-12-09 12:38:11",
+      "type": "cycle",
+      "file": "Cykl #9",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
     {
       "time": "2025-12-09 12:37:05",
       "type": "idle",
@@ -63,90 +147,6 @@
       "time": "2025-12-09 12:30:13",
       "type": "cycle",
       "file": "Cykl #5",
-      "action": "🎮 Canary Server - scripts",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 12:29:06",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
-    },
-    {
-      "time": "2025-12-09 12:28:14",
-      "type": "cycle",
-      "file": "Cykl #4",
-      "action": "🎮 Canary Server - scripts",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 12:27:07",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
-    },
-    {
-      "time": "2025-12-09 12:26:14",
-      "type": "cycle",
-      "file": "Cykl #3",
-      "action": "🎮 Canary Server - scripts",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 12:25:08",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
-    },
-    {
-      "time": "2025-12-09 12:24:14",
-      "type": "cycle",
-      "file": "Cykl #2",
-      "action": "🎮 Canary Server - scripts",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 12:23:07",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
-    },
-    {
-      "time": "2025-12-09 12:22:04",
-      "type": "cycle",
-      "file": "Cykl #1",
-      "action": "🎮 Canary Server - scripts",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 12:20:42",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
-    },
-    {
-      "time": "2025-12-09 12:19:48",
-      "type": "cycle",
-      "file": "Cykl #157",
-      "action": "🎮 Canary Server - scripts",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-09 12:18:36",
-      "type": "idle",
-      "file": "-",
-      "action": "Oczekiwanie na nowe pliki",
-      "status": "waiting"
-    },
-    {
-      "time": "2025-12-09 12:17:43",
-      "type": "cycle",
-      "file": "Cykl #156",
       "action": "🎮 Canary Server - scripts",
       "status": "in_progress"
     }

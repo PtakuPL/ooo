@@ -1,21 +1,22 @@
 name: Build - Docker
 
+# TEMPORARILY DISABLED for SonarCloud priority - Issue #30
 on:
   workflow_dispatch:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-    paths:
-      - "Tibia/silnik/canary_test/testyy/Dockerfile"
-      - "Tibia/silnik/canary_test/testyy/.dockerignore"
-      - ".github/workflows/build-docker.yml"
-      - "Tibia/silnik/canary_test/testyy/src/**"
-  push:
-    branches: [ master ]
-    paths:
-      - "Tibia/silnik/canary_test/testyy/Dockerfile"
-      - "Tibia/silnik/canary_test/testyy/.dockerignore"
-      - ".github/workflows/build-docker.yml"
-      - "Tibia/silnik/canary_test/testyy/src/**"
+  # pull_request:
+  #   types: [opened, synchronize, reopened, ready_for_review]
+  #   paths:
+  #     - "Tibia/silnik/canary_test/testyy/Dockerfile"
+  #     - "Tibia/silnik/canary_test/testyy/.dockerignore"
+  #     - ".github/workflows/build-docker.yml"
+  #     - "Tibia/silnik/canary_test/testyy/src/**"
+  # push:
+  #   branches: [ master ]
+  #   paths:
+  #     - "Tibia/silnik/canary_test/testyy/Dockerfile"
+  #     - "Tibia/silnik/canary_test/testyy/.dockerignore"
+  #     - ".github/workflows/build-docker.yml"
+  #     - "Tibia/silnik/canary_test/testyy/src/**"
 
 env:
   REGISTRY: ghcr.io

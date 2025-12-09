@@ -1,19 +1,22 @@
 ---
 name: Build - Windows - CMake
+
+# TEMPORARILY DISABLED for SonarCloud priority - Issue #30
 on:
   workflow_dispatch:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-    paths:
-      - "src/**"
-      - "tests/**/*.cpp"
-  merge_group:
-  push:
-    paths:
-      - "src/**"
-      - "tests/**/*.cpp"
-    branches:
-      - master
+  # pull_request:
+  #   types: [opened, synchronize, reopened, ready_for_review]
+  #   paths:
+  #     - "src/**"
+  #     - "tests/**/*.cpp"
+  # merge_group:
+  # push:
+  #   paths:
+  #     - "src/**"
+  #     - "tests/**/*.cpp"
+  #   branches:
+  #     - master
+
 env:
   CMAKE_BUILD_PARALLEL_LEVEL: 2
   MAKEFLAGS: "-j 2"

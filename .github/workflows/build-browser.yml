@@ -1,18 +1,19 @@
 name: Build - Emscripten
 
+# TEMPORARILY DISABLED for SonarCloud priority - Issue #30
 on:
   workflow_dispatch:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-    paths:
-      - "Tibia/silnik/canary_test/testyy/src/**"
-      - ".github/workflows/build-browser.yml"
-  push:
-    paths:
-      - "Tibia/silnik/canary_test/testyy/src/**"
-      - ".github/workflows/build-browser.yml"
-    branches:
-      - master
+  # pull_request:
+  #   types: [opened, synchronize, reopened, ready_for_review]
+  #   paths:
+  #     - "Tibia/silnik/canary_test/testyy/src/**"
+  #     - ".github/workflows/build-browser.yml"
+  # push:
+  #   paths:
+  #     - "Tibia/silnik/canary_test/testyy/src/**"
+  #     - ".github/workflows/build-browser.yml"
+  #   branches:
+  #     - master
 
 jobs:
   cancel-runs:

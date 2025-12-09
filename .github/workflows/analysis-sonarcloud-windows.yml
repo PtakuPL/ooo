@@ -40,8 +40,14 @@ jobs:
           rm -rf oryginall/canary-serwer/.git || true
           rm -rf oryginall/otclient/.git || true
 
+      - name: Setup Ninja
+        uses: seanmiddleditch/gha-setup-ninja@v4
+
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1.1
+
+      - name: Initialize MSVC environment
+        uses: ilammy/msvc-dev-cmd@v1
 
       - name: Get vcpkg commit ID
         id: vcpkg-step

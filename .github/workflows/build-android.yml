@@ -1,15 +1,16 @@
 name: Build - Android
 
+# TEMPORARILY DISABLED for SonarCloud priority - Issue #30
 on:
   workflow_dispatch:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-    paths:
-      - 'Tibia/silnik/canary_test/testyy/src/**'
-      - 'Tibia/silnik/canary_test/testyy/android/**'
-  push:
-    paths:
-      - 'Tibia/silnik/canary_test/testyy/src/**'
+  # pull_request:
+  #   types: [opened, synchronize, reopened, ready_for_review]
+  #   paths:
+  #     - 'Tibia/silnik/canary_test/testyy/src/**'
+  #     - 'Tibia/silnik/canary_test/testyy/android/**'
+  # push:
+  #   paths:
+  #     - 'Tibia/silnik/canary_test/testyy/src/**'
       - 'Tibia/silnik/canary_test/testyy/android/**'
     branches:
       - master

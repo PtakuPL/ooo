@@ -86,6 +86,7 @@ jobs:
                 -DOTC_ENABLE_TTF=OFF \
                 -DOTC_ENABLE_HARFBUZZ=OFF \
                 -DOTC_ENABLE_FRIBIDI=OFF \
+                -DOTC_ENABLE_SOUND=OFF \
                 -DOTC_ENABLE_PROTOBUF=OFF \
                 -S . -B build-android
 
@@ -102,6 +103,7 @@ jobs:
             -Dsonar.cfamily.cache.enabled=true
             "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
             -Dsonar.cfamily.compile-commands=build-android/compile_commands.json
+            -Dproject.settings=Tibia/silnik/canary_test/testyy/sonar-project.properties
             -Dsonar.pullrequest.key=${{ github.event.pull_request.number }}
             -Dsonar.pullrequest.branch=${{ github.event.pull_request.head.ref }}
             -Dsonar.pullrequest.base=${{ github.event.pull_request.base.ref }}
@@ -119,3 +121,4 @@ jobs:
             -Dsonar.cfamily.cache.enabled=true
             "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
             -Dsonar.cfamily.compile-commands=build-android/compile_commands.json
+            -Dproject.settings=Tibia/silnik/canary_test/testyy/sonar-project.properties

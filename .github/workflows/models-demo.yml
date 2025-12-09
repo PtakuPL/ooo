@@ -1,6 +1,9 @@
 name: Use GitHub Models
 
-on: [push]
+# TEMPORARILY DISABLED for SonarCloud priority - Issue #30
+on:
+  workflow_dispatch:
+  # [push]
 
 permissions:
   models: read

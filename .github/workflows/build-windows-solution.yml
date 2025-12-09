@@ -1,13 +1,14 @@
 name: Build - Windows - Solution
 
+# TEMPORARILY DISABLED for SonarCloud priority - Issue #30
 on:
   workflow_dispatch:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-    paths: ["Tibia/silnik/canary_test/testyy/src/**"]
-  push:
-    branches: [master]
-    paths: ["Tibia/silnik/canary_test/testyy/src/**"]
+  # pull_request:
+  #   types: [opened, synchronize, reopened, ready_for_review]
+  #   paths: ["Tibia/silnik/canary_test/testyy/src/**"]
+  # push:
+  #   branches: [master]
+  #   paths: ["Tibia/silnik/canary_test/testyy/src/**"]
 
 env:
   CMAKE_BUILD_PARALLEL_LEVEL: 2

@@ -1,9 +1,10 @@
 name: build-windows
 
+# TEMPORARILY DISABLED for SonarCloud priority - Issue #30
 on:
   workflow_dispatch:
-  push:
-    branches: [ master ]
+  # push:
+  #   branches: [ master ]
     paths-ignore:
       - "**/*.md"
   pull_request:

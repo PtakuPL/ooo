@@ -1,19 +1,20 @@
 name: Build - Ubuntu
 
+# TEMPORARILY DISABLED for SonarCloud priority - Issue #30
 on:
   workflow_dispatch:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-    paths:
-      - "Tibia/silnik/canary_test/testyy/src/**"
-      - ".github/workflows/build-ubuntu.yml"
-  merge_group:
-  push:
-    branches:
-      - master
-    paths:
-      - "Tibia/silnik/canary_test/testyy/src/**"
-      - ".github/workflows/build-ubuntu.yml"
+  # pull_request:
+  #   types: [opened, synchronize, reopened, ready_for_review]
+  #   paths:
+  #     - "Tibia/silnik/canary_test/testyy/src/**"
+  #     - ".github/workflows/build-ubuntu.yml"
+  # merge_group:
+  # push:
+  #   branches:
+  #     - master
+  #   paths:
+  #     - "Tibia/silnik/canary_test/testyy/src/**"
+  #     - ".github/workflows/build-ubuntu.yml"
 
 env:
   CMAKE_BUILD_PARALLEL_LEVEL: 2

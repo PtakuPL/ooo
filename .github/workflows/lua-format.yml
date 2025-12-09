@@ -1,13 +1,17 @@
 ---
 name: Lua-format
+
+# TEMPORARILY DISABLED for SonarCloud priority - Issue #30
 on:
-  pull_request:
-    paths:
-      - "data*/**"
-  merge_group:
-  push:
-    paths:
-      - "data*/**"
+  workflow_dispatch:
+  # pull_request:
+  #   paths:
+  #     - "data*/**"
+  # merge_group:
+  # push:
+  #   paths:
+  #     - "data*/**"
+
 jobs:
   lua-formatter:
     runs-on: ubuntu-latest

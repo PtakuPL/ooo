@@ -7674,3 +7674,25 @@ Duplikaty, błędy składni, brakujące tłumaczenia
 Klucze i18n: 44827
 
 ---
+
+## [2025-12-09 01:04:26] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/chondur.lua`
+
+**Akcja:** Przetworzono 38 stringów
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---
+
+## [2025-12-09 01:04:29] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/herbert.lua`
+
+**Akcja:** Przetworzono 3 stringów
+
+**Szczegóły:**
+Kategoria: npc, NPC: true
+
+---

@@ -1,43 +1,23 @@
 {
   "category": "scripts",
   "status": "in_progress",
-  "last_updated": "2025-12-09T01:01:00+01:00",
+  "last_updated": "2025-12-09T01:03:23+01:00",
   "summary": {
     "total_keys": 713,
-    "files_processed": 1371
+    "files_processed": 1
   },
   "current_work": {
     "directory": "data-otservbr-global/scripts/",
-    "cycle": 6
+    "cycle": 7
   },
   "subdirectories": {
-    "quests": {"processed": 286},
-    "actions": {"processed": 58}
+    "quests": {"processed": 0},
+    "actions": {"processed": 0}
   },
   "recent_files": [
   {
-    "file": "bertram.lua",
-    "time": "01:01:00",
-    "status": "success"
-  },
-  {
-    "file": "canary.lua",
-    "time": "01:01:00",
-    "status": "success"
-  },
-  {
-    "file": "canary.lua",
-    "time": "01:01:00",
-    "status": "success"
-  },
-  {
-    "file": "i18n.lua",
-    "time": "01:01:00",
-    "status": "success"
-  },
-  {
-    "file": "i18n.lua",
-    "time": "01:01:00",
+    "file": "# Pliki przetworzone przez i18n worker",
+    "time": "01:03:23",
     "status": "success"
   }
 ]

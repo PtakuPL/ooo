@@ -1,16 +1,16 @@
 {
   "schema_version": "2.0",
-  "last_updated": "2025-12-09T01:01:00+01:00",
+  "last_updated": "2025-12-09T01:03:23+01:00",
   "worker": {
     "version": "4.0",
     "status": "running",
     "mode": "analysis",
-    "cycle": 6,
+    "cycle": 7,
     "files_per_cycle": 10,
     "pid": 1761064
   },
   "global_progress": {
-    "total_files_processed": 1371,
+    "total_files_processed": 1,
     "total_files_excluded": 4911,
     "total_keys": 42109,
     "total_languages": 53,
@@ -26,28 +26,8 @@
   },
   "recent_files": [
   {
-    "file": "bertram.lua",
-    "time": "01:01:00",
-    "status": "success"
-  },
-  {
-    "file": "canary.lua",
-    "time": "01:01:00",
-    "status": "success"
-  },
-  {
-    "file": "canary.lua",
-    "time": "01:01:00",
-    "status": "success"
-  },
-  {
-    "file": "i18n.lua",
-    "time": "01:01:00",
-    "status": "success"
-  },
-  {
-    "file": "i18n.lua",
-    "time": "01:01:00",
+    "file": "# Pliki przetworzone przez i18n worker",
+    "time": "01:03:23",
     "status": "success"
   }
 ]

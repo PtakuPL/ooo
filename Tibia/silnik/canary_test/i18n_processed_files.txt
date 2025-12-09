@@ -1,1 +1,3 @@
 # Pliki przetworzone przez i18n worker
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/chondur.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/herbert.lua

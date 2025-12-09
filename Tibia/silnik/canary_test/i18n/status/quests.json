@@ -1,12 +1,12 @@
 {
   "category": "quests",
-  "last_updated": "2025-12-09 01:00:49",
+  "last_updated": "2025-12-09 01:03:14",
   "status": "completed",
   "progress": {
     "percentage": 100,
     "total_keys": 1,
     "translated_pl": 1,
-    "files_processed": 288,
+    "files_processed": 0,
     "files_remaining": 0
   },
   "languages": {

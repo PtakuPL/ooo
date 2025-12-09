@@ -42,21 +42,64 @@
 
 ---
 
-## 🎯 AKTUALNY STATUS (2025-12-09 02:20 UTC)
+## 🎯 AKTUALNY STATUS (2025-12-09 02:45 UTC)
 
 ### 📋 PODZIAŁ ZADAŃ:
 | Platforma | Agent | Status |
 |-----------|-------|--------|
 | **Web/Emscripten** | Agent 1 | 🔧 W trakcie naprawy (PhysFS) |
-| **Android** | Agent 2 | ⏳ Fix pushed, czeka na run |
+| **Android** | Agent 2 | ⏳ Fix #2 pushed, czeka na run |
+| **Linux/Windows** | Agent 2 | 🔴 **NOWY PROBLEM** - SonarCloud config |
 
 ### 📊 STATUS WORKFLOW:
-| Workflow | Status | Uwagi |
-|----------|--------|-------|
-| **SonarCloud Linux** | 🟡 `queued` | Czeka w kolejce |
-| **SonarCloud Windows** | 🟡 `queued` | Czeka w kolejce |
-| **SonarCloud Web** | 🔴 `failure` | PhysFS not found - Agent 1 naprawia |
-| **SonarCloud Android** | 🟡 `queued` | Fix pushed: `-DTOGGLE_FRAMEWORK_SOUND=OFF` |
+| Workflow | Status | Błąd | Uwagi |
+|----------|--------|------|-------|
+| **SonarCloud Linux** | 🔴 `failure` | SonarCloud config | `scripts` folder not found |
+| **SonarCloud Windows** | 🔴 `failure` | SonarCloud config | `scripts` folder not found |
+| **SonarCloud Web** | 🔴 `failure` | PhysFS not found | Agent 1 naprawia |
+| **SonarCloud Android** | 🟡 `queued` | - | Fix #2: `-DOTC_ENABLE_PHYSFS=OFF` pushed |
+
+### 🎉 SUKCES CZĘŚCIOWY ANDROID:
+**Fix #1 (`-DTOGGLE_FRAMEWORK_SOUND=OFF`) ZADZIAŁAŁ!**
+- Błąd zmienił się z `OpenAL not found` na `PhysFS not found`
+- To potwierdza że podejście z flagami CMake jest poprawne
+- Fix #2 dodaje `-DOTC_ENABLE_PHYSFS=OFF` i inne flagi
+
+---
+
+## 🔴 LINUX/WINDOWS FAILURE - SONARCLOUD CONFIG (KRYTYCZNE!)
+
+### 📋 BŁĄD (identyczny dla Linux i Windows):
+
+**Run ID Linux:** 20049497001 (02:12 UTC)
+**Run ID Windows:** 20049437656 (02:08 UTC)
+
+**Status:** Build CMake PRZESZEDŁ ✅, ale SonarScanner FAILUJE ❌
+
+**Błąd SonarCloud:**
+```
+[sonar-scanner][INFO] Project configuration:
+[sonar-scanner][INFO]   Excluded sources for coverage: tests/**
+[sonar-scanner][ERROR] Invalid value of sonar.sources for PtakuPL_ooo:server
+[sonar-scanner][ERROR] The folder 'scripts' does not exist for 'PtakuPL_ooo:server'
+##[error]Process completed with exit code 1.
+```
+
+### 🔍 ANALIZA:
+
+**Problem:** SonarCloud szuka folderu `scripts` w projekcie `PtakuPL_ooo:server`
+- To wygląda na błędną konfigurację `sonar.sources` w `sonar-project.properties`
+- Albo projekt `server` (Canary?) ma inną strukturę niż `client` (OTClient)
+
+**Gdzie szukać:**
+1. `/workspaces/ooo/sonar-project.properties` - główna konfiguracja
+2. `.github/workflows/analysis-sonarcloud-linux.yml` - parametry
+3. Organizacja SonarCloud - może być konfiguracja per-projekt
+
+### 💡 TODO dla Agent 2:
+1. Sprawdzić `sonar-project.properties` - jakie projekty są zdefiniowane
+2. Sprawdzić czy `scripts` folder istnieje gdzieś w repo
+3. Naprawić konfigurację SonarCloud
 
 ---
 

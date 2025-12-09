@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-09 03:01:13 UTC  
+> **Aktualizacja:** 2025-12-09 03:04:55 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **433** | ↑ |
-| ⏭️ Plików wykluczonych | **4932** | - |
-| 🔑 Kluczy i18n | **46629** | ↑ |
+| 📁 Plików przetworzonych | **453** | ↑ |
+| ⏭️ Plików wykluczonych | **4935** | - |
+| 🔑 Kluczy i18n | **46804** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#2** | - |
+| 🔄 Cykl | **#3** | - |
 
 ---
 
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | ✅ | 8628/5000 (172%) | 5000 |
+| 🧙 NPC Dialogs | ✅ | 8803/5000 (176%) | 5000 |
 | 📜 Lua Scripts | 🔄 | 713/1000 (71%) | 1000 |
 | 🎒 Items Database | 🔄 | 36972/40000 (92%) | 40000 |
 | 👹 Monsters | 🔄 | 100/500 (20%) | 500 |
@@ -78,15 +78,15 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #2` |
-| **Szczegóły** | NPC:8628 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-09 03:00:33 |
+| **Plik** | `Cykl #3` |
+| **Szczegóły** | NPC:8803 Scripts:713 Items:36972 |
+| **Ostatnia aktualizacja** | 2025-12-09 03:04:09 |
 
 ### 📈 Statystyki sesji
 
 | Metryka | Wartość |
 |---------|----------|
-| Plików przetworzonych | 618 |
+| Plików przetworzonych | 637 |
 | Kluczy wyciągniętych | 0 |
 | Błędów | 0 |
 | Napraw zastosowanych | 0 |
@@ -100,7 +100,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 8628 |
+| 🔑 Kluczy | 8803 |
 | 📊 Status | ✅ Zakończone |
 | 📂 Plików | ~877 |
 
@@ -124,7 +124,7 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #2 |
+| 🔄 Cykl | #3 |
 
 ### 📁 Podkatalogi - Postęp
 
@@ -149,16 +149,16 @@ selfSay("text")
 
 | Plik | Czas | Status |
 |------|------|--------|
-| `emperor_kruzak.lua` | 02:59:47 | ✅ |
-| `gnomerik.lua` | 02:59:55 | ✅ |
-| `willard.lua` | 02:59:57 | ✅ |
-| `nah_bob.lua` | 03:00:00 | ✅ |
-| `stutch.lua` | 03:00:03 | ✅ |
+| `klaus.lua` | 03:03:32 | ✅ |
+| `topsy.lua` | 03:03:35 | ✅ |
+| `lynda.lua` | 03:03:42 | ✅ |
+| `inkaef.lua` | 03:03:44 | ✅ |
+| `faloriel.lua` | 03:03:46 | ✅ |
 
 ### 💻 Przykład kodu (ostatni plik)
 
 ```lua
-
+	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.",
 ```
 
 **Wzorce ekstrakcji:**
@@ -225,7 +225,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 3178885, Cykl #2 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 3178885, Cykl #3 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

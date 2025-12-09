@@ -1921,45 +1921,140 @@ generate_all_categories_details() {
         # Pomijaj puste kategorie
         [ "$keys_count" -eq 0 ] && continue
         
-        # Określ ikonę i status
+        # Określ ikonę i status dynamicznie
         local icon="📁"
-        local status_icon="⏳"
-        local status_text="Oczekuje"
+        local target=100
         
         case "$cat_name" in
-            npc)       icon="🧙"; status_icon="✅"; status_text="Zakończone" ;;
-            scripts)   icon="📜"; status_icon="🔄"; status_text="W trakcie" ;;
-            items)     icon="🎒"; status_icon="✅"; status_text="Zakończone" ;;
-            monsters)  icon="👹" ;;
-            spells)    icon="✨" ;;
-            server)    icon="⚙️" ;;
-            system)    icon="🖥️" ;;
-            ui)        icon="🎨" ;;
-            game)      icon="🎮" ;;
-            player)    icon="👤" ;;
-            misc)      icon="📦" ;;
-            quests)    icon="📜" ;;
-            actions)   icon="⚡" ;;
-            events)    icon="📅" ;;
+            npc)       icon="🧙"; target=13000 ;;
+            scripts)   icon="📜"; target=1000 ;;
+            items)     icon="🎒"; target=40000 ;;
+            monsters)  icon="👹"; target=500 ;;
+            spells)    icon="✨"; target=200 ;;
+            server)    icon="⚙️"; target=300 ;;
+            system)    icon="🖥️"; target=2000 ;;
+            ui)        icon="🎨"; target=200 ;;
+            game)      icon="🎮"; target=100 ;;
+            player)    icon="👤"; target=200 ;;
+            misc)      icon="📦"; target=100 ;;
+            quests)    icon="📜"; target=50 ;;
+            actions)   icon="⚡"; target=100 ;;
+            events)    icon="📅"; target=50 ;;
         esac
         
-        # Oblicz procent (zakładając cel 110% obecnych kluczy)
-        local target=$((keys_count + keys_count / 10))
-        [ "$target" -lt 100 ] && target=100
+        # Oblicz procent na podstawie celu
         local pct=$((keys_count * 100 / target))
-        [ "$pct" -ge 90 ] && { status_icon="✅"; status_text="Zakończone"; }
+        [ "$pct" -gt 100 ] && pct=100
+        
+        local status_icon="⏳"
+        local status_text="Oczekuje"
+        if [ "$pct" -ge 90 ]; then
+            status_icon="✅"
+            status_text="Zakończone"
+        elif [ "$pct" -gt 0 ]; then
+            status_icon="🔄"
+            status_text="W trakcie"
+        fi
         
         output+="<details>\n"
         output+="<summary><h3>$icon $counter. ${cat_name^} - $status_text $status_icon</h3></summary>\n\n"
         output+="| Metryka | Wartość |\n"
         output+="|---------|----------|\n"
         output+="| 🔑 Kluczy | **$keys_count** |\n"
+        output+="| 🎯 Cel | $target |\n"
         output+="| 📊 Postęp | $pct% |\n"
         output+="| 📁 Plik | \`i18n/en/$cat_name.json\` |\n\n"
         output+="</details>\n\n---\n\n"
         
         counter=$((counter + 1))
     done
+    
+    echo -e "$output"
+}
+
+#===============================================================================
+# GENEROWANIE DYNAMICZNEGO ROADMAP
+#===============================================================================
+generate_dynamic_roadmap() {
+    local output="\`\`\`\n"
+    
+    # Pobierz rzeczywiste dane z JSON
+    local items_keys=$(jq 'length' "$I18N_DIR/en/items.json" 2>/dev/null || echo "0")
+    local npc_keys=$(jq 'length' "$I18N_DIR/en/npc.json" 2>/dev/null || echo "0")
+    local scripts_keys=$(jq 'length' "$I18N_DIR/en/scripts.json" 2>/dev/null || echo "0")
+    local monsters_keys=$(jq 'length' "$I18N_DIR/en/monsters.json" 2>/dev/null || echo "0")
+    local spells_keys=$(jq 'length' "$I18N_DIR/en/spells.json" 2>/dev/null || echo "0")
+    local server_keys=$(jq 'length' "$I18N_DIR/en/server.json" 2>/dev/null || echo "0")
+    local system_keys=$(jq 'length' "$I18N_DIR/en/system.json" 2>/dev/null || echo "0")
+    local ui_keys=$(jq 'length' "$I18N_DIR/en/ui.json" 2>/dev/null || echo "0")
+    
+    # Cele dynamiczne (obecne + 10% lub minimum)
+    local items_target=40000
+    local npc_target=13000
+    local scripts_target=1000
+    local monsters_target=500
+    local spells_target=200
+    local server_target=300
+    local system_target=2000
+    local ui_target=200
+    
+    # Funkcja pomocnicza do rysowania paska
+    draw_bar() {
+        local current=$1
+        local target=$2
+        local width=20
+        local pct=$((current * 100 / target))
+        [ "$pct" -gt 100 ] && pct=100
+        local filled=$((pct * width / 100))
+        local empty=$((width - filled))
+        
+        printf '%s' "$(printf '█%.0s' $(seq 1 $filled 2>/dev/null) 2>/dev/null)"
+        printf '%s' "$(printf '░%.0s' $(seq 1 $empty 2>/dev/null) 2>/dev/null)"
+        printf ' %3d%%' "$pct"
+    }
+    
+    # Status ikony
+    get_status_icon() {
+        local pct=$1
+        if [ "$pct" -ge 90 ]; then echo "✅"
+        elif [ "$pct" -gt 0 ]; then echo "🔄"
+        else echo "⏳"
+        fi
+    }
+    
+    # Items
+    local items_pct=$((items_keys * 100 / items_target))
+    output+="[$(get_status_icon $items_pct)] Items ($items_keys)      $(draw_bar $items_keys $items_target)\n"
+    
+    # NPC
+    local npc_pct=$((npc_keys * 100 / npc_target))
+    output+="[$(get_status_icon $npc_pct)] NPC ($npc_keys)        $(draw_bar $npc_keys $npc_target)\n"
+    
+    # Scripts
+    local scripts_pct=$((scripts_keys * 100 / scripts_target))
+    output+="[$(get_status_icon $scripts_pct)] Scripts ($scripts_keys)    $(draw_bar $scripts_keys $scripts_target)\n"
+    
+    # Monsters
+    local monsters_pct=$((monsters_keys * 100 / monsters_target))
+    output+="[$(get_status_icon $monsters_pct)] Monsters ($monsters_keys)   $(draw_bar $monsters_keys $monsters_target)\n"
+    
+    # Spells
+    local spells_pct=$((spells_keys * 100 / spells_target))
+    output+="[$(get_status_icon $spells_pct)] Spells ($spells_keys)     $(draw_bar $spells_keys $spells_target)\n"
+    
+    # Server
+    local server_pct=$((server_keys * 100 / server_target))
+    output+="[$(get_status_icon $server_pct)] Server ($server_keys)     $(draw_bar $server_keys $server_target)\n"
+    
+    # System
+    local system_pct=$((system_keys * 100 / system_target))
+    output+="[$(get_status_icon $system_pct)] System ($system_keys)    $(draw_bar $system_keys $system_target)\n"
+    
+    # UI
+    local ui_pct=$((ui_keys * 100 / ui_target))
+    output+="[$(get_status_icon $ui_pct)] UI ($ui_keys)          $(draw_bar $ui_keys $ui_target)\n"
+    
+    output+="\`\`\`"
     
     echo -e "$output"
 }
@@ -2083,26 +2178,19 @@ $(generate_all_categories_details)
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: $$, Cykl #$CYCLE_COUNT |
+| **Worker v4.2** | 🟢 RUNNING | PID: $$, Cykl #$CYCLE_COUNT |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---
 
 ## 🗺️ Roadmap
 
-\`\`\`
-[✅] Phase 1: Items           ████████████████████ 100%
-[✅] Phase 2: NPC             ████████████████████ 100%
-[🔄] Phase 3: Scripts         $(printf '█%.0s' $(seq 1 $((scripts_keys / 100 + 1))))$(printf '░%.0s' $(seq 1 $((20 - scripts_keys / 100 - 1)))) $((scripts_keys / 50))%
-[⏳] Phase 4: Monsters        ░░░░░░░░░░░░░░░░░░░░   0%
-[⏳] Phase 5: Spells          ░░░░░░░░░░░░░░░░░░░░   0%
-[⏳] Phase 6: Server (C++)    ░░░░░░░░░░░░░░░░░░░░   0%
-\`\`\`
+$(generate_dynamic_roadmap)
 
 ---
 
 *🤖 Machine-readable: \`i18n/status/worker_state.json\`*  
-*📅 Auto-updated by Worker v4.0 every cycle*  
+*📅 Auto-updated by Worker v4.2 | Last: $(date '+%Y-%m-%d %H:%M:%S')*  
 *🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)*
 EOF
     
@@ -2138,13 +2226,25 @@ update_json_status() {
         done | jq -s '.' 2>/dev/null || echo "[]")
     fi
     
-    # Główny status JSON
+    # Główny status JSON - z dynamicznymi danymi wszystkich kategorii
+    local monsters_keys=$(jq 'length' "$I18N_DIR/en/monsters.json" 2>/dev/null || echo "0")
+    local server_keys=$(jq 'length' "$I18N_DIR/en/server.json" 2>/dev/null || echo "0")
+    local spells_keys=$(jq 'length' "$I18N_DIR/en/spells.json" 2>/dev/null || echo "0")
+    local system_keys=$(jq 'length' "$I18N_DIR/en/system.json" 2>/dev/null || echo "0")
+    local ui_keys=$(jq 'length' "$I18N_DIR/en/ui.json" 2>/dev/null || echo "0")
+    local game_keys=$(jq 'length' "$I18N_DIR/en/game.json" 2>/dev/null || echo "0")
+    local player_keys=$(jq 'length' "$I18N_DIR/en/player.json" 2>/dev/null || echo "0")
+    local misc_keys=$(jq 'length' "$I18N_DIR/en/misc.json" 2>/dev/null || echo "0")
+    
+    # Przelicz total_keys ze wszystkich kategorii
+    total_keys=$((npc_keys + scripts_keys + items_keys + monsters_keys + server_keys + spells_keys + system_keys + ui_keys + game_keys + player_keys + misc_keys))
+    
     cat > "$I18N_DIR/status/worker_state.json" << EOF
 {
-  "schema_version": "2.0",
+  "schema_version": "2.1",
   "last_updated": "$(date -Iseconds)",
   "worker": {
-    "version": "4.0",
+    "version": "4.2",
     "status": "running",
     "mode": "$MODE",
     "cycle": $CYCLE_COUNT,
@@ -2159,16 +2259,43 @@ update_json_status() {
     "total_conflicts": $TOTAL_CONFLICTS
   },
   "categories": {
-    "npc": {"status": "completed", "keys": $npc_keys},
-    "scripts": {"status": "in_progress", "keys": $scripts_keys},
-    "items": {"status": "completed", "keys": $items_keys},
-    "monsters": {"status": "pending", "keys": 0},
-    "server": {"status": "pending", "keys": 0},
-    "spells": {"status": "pending", "keys": 0}
+    "npc": {"status": "completed", "keys": $npc_keys, "target": 13000},
+    "scripts": {"status": "in_progress", "keys": $scripts_keys, "target": 1000},
+    "items": {"status": "completed", "keys": $items_keys, "target": 40000},
+    "monsters": {"status": "in_progress", "keys": $monsters_keys, "target": 500},
+    "server": {"status": "in_progress", "keys": $server_keys, "target": 300},
+    "spells": {"status": "in_progress", "keys": $spells_keys, "target": 200},
+    "system": {"status": "completed", "keys": $system_keys, "target": 2000},
+    "ui": {"status": "in_progress", "keys": $ui_keys, "target": 200},
+    "game": {"status": "in_progress", "keys": $game_keys, "target": 100},
+    "player": {"status": "completed", "keys": $player_keys, "target": 200},
+    "misc": {"status": "completed", "keys": $misc_keys, "target": 100}
   },
   "recent_files": $recent_files_json
 }
 EOF
+
+    # Aktualizuj osobne pliki statusu dla każdej kategorii
+    for json_file in "$I18N_DIR/en"/*.json; do
+        [ ! -f "$json_file" ] && continue
+        local cat_name=$(basename "$json_file" .json)
+        local cat_keys=$(jq 'length' "$json_file" 2>/dev/null || echo "0")
+        [ "$cat_keys" -eq 0 ] && continue
+        
+        local cat_status="pending"
+        [ "$cat_keys" -gt 50 ] && cat_status="in_progress"
+        [ "$cat_keys" -gt 100 ] && cat_status="completed"
+        
+        cat > "$I18N_DIR/status/${cat_name}.json" << CATEOF
+{
+  "category": "$cat_name",
+  "status": "$cat_status",
+  "last_updated": "$(date -Iseconds)",
+  "keys": $cat_keys,
+  "cycle": $CYCLE_COUNT
+}
+CATEOF
+    done
 
     # Szczegóły kategorii scripts (aktywna)
     cat > "$I18N_DIR/status/categories/scripts_details.json" << EOF

@@ -83,13 +83,13 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "tokens") then
 	elseif table.contains({ "dangerous", "beasts" }, message:lower()) then
-		npcHandler:sayLocalized("npc.maeryn.so_you_dont_1", npc, creature)
+		npcHandler:say("So you don't know it yet. This island, Grimvale, is affected by were-sickness. Many {pitiful}, who are stricken with the curse, dwell in the {tunnels} and caverns underneath the village and the nearby hurst.", npc, creature)
 	elseif MsgContains(message, "pitiful") then
-		npcHandler:sayLocalized("npc.maeryn.yes_pitiful_for_2", npc, creature)
+		npcHandler:say("Yes, pitiful. For they are savage beasts now who regularly come up from below to attack the village. But once they were inhabitants of Grimvale, before they {changed}.", npc, creature)
 	elseif MsgContains(message, "changed") then
-		npcHandler:sayLocalized("npc.maeryn.through_a_bite_3", npc, creature)
+		npcHandler:say("Through a bite or even a scratch, you may be infected with the were-sickness. If that happens, there is little {hope} - until the next full moon you'll change into a were-creature, depending on the animal that hurt you.", npc, creature)
 	elseif MsgContains(message, "hope") then
-		npcHandler:sayLocalized("npc.maeryn.there_is_a_4", npc, creature)
+		npcHandler:say("There is a plant, the purple nightshade. It blossoms exclusively in the light of the full moon and only underground, where the full moon's light is falling through fissures in the surface. Only this plant's blossoms are able to defeat the {were-sickness}.", npc, creature)
 	elseif table.contains({ "were-sickness", "curse" }, message:lower()) then
 		npcHandler:say({
 			"It transforms peaceful villagers into savage beasts. We're not sure how this curse found the way into our small village. But one day it began. At first it befell just a few people. ...",
@@ -102,7 +102,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "hunch") then
 		npcHandler:say({ "There are old legends about a subterranean temple that was once built in this area. Supposedly many {artefacts} are still hidden down there. ...", "I don't have the time to tell you the entire tale, but there is a book downstairs in which you may read the whole story." }, npc, creature)
 	elseif MsgContains(message, "artefacts") then
-		npcHandler:sayLocalized("npc.maeryn.yes_the_story_5", npc, creature)
+		npcHandler:say("Yes, the story goes that there are ancient artefacts still hidden in the temple ruins, such as helmets in the form of wolven heads, for example. It is said that moonlight crystals are needed to enchant these artefacts.", npc, creature)
 	elseif MsgContains(message, "moon") then
 		npcHandler:say({
 			"Every month around the 13th, the single Tibian moon will by fully visible to us. That's when the curse hits us hardest. ...",
@@ -112,31 +112,31 @@ local function creatureSayCallback(npc, creature, type, message)
 			"During this time, we try to not leave the house, we shut the windows and hope it will pass. The curse will weaken a bit after that but it returns. Every month.",
 		}, npc, creature)
 	elseif MsgContains(message, "nightshade") then
-		npcHandler:sayLocalized("npc.maeryn.three_of_these_6", npc, creature)
+		npcHandler:say("Three of these blossoms should suffice to heal some afflicted persons. But if you bring more I'd be grateful, of course.", npc, creature)
 	elseif MsgContains(message, "name") then
-		npcHandler:sayLocalized("npc.maeryn.my_name_is_7", npc, creature)
+		npcHandler:say("My name is Maeryn.", npc, creature)
 	elseif MsgContains(message, "maeryn") then
-		npcHandler:sayLocalized("npc.maeryn.yes_thats_me_8", npc, creature)
+		npcHandler:say("Yes, that's me.", npc, creature)
 	elseif MsgContains(message, "time") then
-		npcHandler:sayLocalized("npc.maeryn.its_exactly_9" .. getFormattedWorldTime() .. ".", npc, creature)
+		npcHandler:say("It's exactly " .. getFormattedWorldTime() .. ".", npc, creature)
 	elseif MsgContains(message, "job") then
-		npcHandler:sayLocalized("npc.maeryn.im_the_protector_10", npc, creature)
+		npcHandler:say("I'm the protector of this little village. A bit of a self-proclaimed function, I admit, but someone has to watch over {Grimvale}. It is a {dangerous} place.", npc, creature)
 	elseif MsgContains(message, "grimvale") then
-		npcHandler:sayLocalized("npc.maeryn.the_small_island_11", npc, creature)
+		npcHandler:say("The small island you are standing on. For a long time it was a peaceful and placid place. But lately it has become more {dangerous}.", npc, creature)
 	elseif MsgContains(message, "owin") then
-		npcHandler:sayLocalized("npc.maeryn.hes_an_experienced_12", npc, creature)
+		npcHandler:say("He's an experienced hunter and knows much about the woods, the animals that dwell there, and about the {werewolves}. He's devoted himself to finding out everything there is to know about the {Curse}.", npc, creature)
 	elseif MsgContains(message, "werewolves") then
-		npcHandler:sayLocalized("npc.maeryn.yes_my_friend_13", npc, creature)
+		npcHandler:say("Yes, my friend, werewolves. They dwell here on {Grimvale}, threatening our life. The were-sickness transforms peaceful villagers into savage beasts. We're not sure how this curse found its way into our small village. But undoubtedly it did.", npc, creature)
 	elseif MsgContains(message, "gladys") then
-		npcHandler:sayLocalized("npc.maeryn.shes_an_old_14", npc, creature)
+		npcHandler:say("She's an old druid. She's been living here on {Grimvale} since she was a little girl, just like me. She's very interested in were-creature body parts. If you find any, I'm sure she will love to trade with you.", npc, creature)
 	elseif MsgContains(message, "cornell") then
-		npcHandler:sayLocalized("npc.maeryn.hes_basically_a_15", npc, creature)
+		npcHandler:say("He's basically a ferryman nowadays, but I remember when he was our village's leading fisherman. He offers a ferry service between Grimvale and Edron. You must have met him - he sailed you here.", npc, creature)
 	elseif MsgContains(message, "werewolf helmet") then
-		npcHandler:sayLocalized("npc.maeryn.you_brought_the_16", npc, creature)
+		npcHandler:say("You brought the wolven helmet, as i see. Do you want to change something?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.maeryn.so_which_profession_17", npc, creature)
+			npcHandler:say("So, which profession would you give preference to when enchanting the helmet: {knight}, {sorcerer}, {druid} or {paladin}?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif table.contains({ "knight", "sorcerer", "druid", "paladin" }, message:lower()) and npcHandler:getTopic(playerId) == 2 then
@@ -145,16 +145,16 @@ local function creatureSayCallback(npc, creature, type, message)
 			return false
 		end
 		if message:lower() == "knight" then
-			npcHandler:sayLocalized("npc.maeryn.and_what_would_18", npc, creature)
+			npcHandler:say("And what would be your preferred weapon? {Club}, {axe} or {sword}", npc, creature)
 			knightChoice[playerId] = helmet
 			npcHandler:setTopic(playerId, 3)
 		end
 		if npcHandler:getTopic(playerId) == 2 then
 			--if (Set storage if player can enchant helmet(need Grim Vale quest)) then
 			player:setStorageValue(Storage.Quest.U10_80.GrimvaleQuest.WereHelmetEnchant, vocations[helmet])
-			npcHandler:sayLocalized("npc.maeryn.so_this_is_19", npc, creature)
+			npcHandler:say("So this is your choice. If you want to change it, you will have to come to me again.", npc, creature)
 			--else
-			--npcHandler:sayLocalized("npc.maeryn.message_when_player_20", npc, creature)
+			--npcHandler:say("Message when player do not have quest.", npc, creature)
 			--end
 			npcHandler:setTopic(playerId, 0)
 		end
@@ -165,9 +165,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		else
 			--if (Set storage if player can enchant helmet(need Grim Vale quest)) then
 			player:setStorageValue(Storage.Quest.U10_80.GrimvaleQuest.WereHelmetEnchant, vocations[knightChoice[playerId]][weapontype])
-			npcHandler:sayLocalized("npc.maeryn.so_this_is_21", npc, creature)
+			npcHandler:say("So this is your choice. If you want to change it, you will have to come to me again.", npc, creature)
 			--else
-			--npcHandler:sayLocalized("npc.maeryn.message_when_player_22", npc, creature)
+			--npcHandler:say("Message when player do not have quest.", npc, creature)
 			--end
 			knightChoice[playerId] = nil
 			npcHandler:setTopic(playerId, 0)

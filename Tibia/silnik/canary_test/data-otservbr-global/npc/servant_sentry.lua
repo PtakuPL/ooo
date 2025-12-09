@@ -64,7 +64,7 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U9_1.TheirMastersVoiceWorldChange.SlimeGobblerReceived) < 1 then
-		npcHandler:sayLocalized("npc.servant_sentry.the_slime_has_1", npc, creature)
+		npcHandler:say("The. {Slime}. Has. Entered. Our. {Master}. Has. Left! We. Must. {Help}.", npc, creature)
 	end
 	return true
 end
@@ -78,13 +78,13 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "slime") then
-		npcHandler:sayLocalized("npc.servant_sentry.defeat_slime_we_2", npc, creature)
+		npcHandler:say("Defeat. {Slime}. We. Will. Why. Did. You. Kill. Us? Do. You. Want. To. Rectify. And. Help?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			player:setStorageValue(Storage.Quest.U9_1.TheirMastersVoiceWorldChange.SlimeGobblerReceived, 1)
 			player:addItem(12077, 1)
-			npcHandler:sayLocalized("npc.servant_sentry.then_take_this_3", npc, creature)
+			npcHandler:say("Then. Take. This. Gobbler. Always. Hungry. Eats. Slime. Fungus. Go.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

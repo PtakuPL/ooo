@@ -141,29 +141,29 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "report") and npcHandler:getTopic(playerId) == 2 then
 		if player:getStorageValue(Storage.Quest.U12_20.GraveDanger.Stage) < 1 then
 			if player:getStorageValue(Storage.Quest.U12_20.GraveDanger.Graves.Progress) >= 12 then
-				npcHandler:sayLocalized("npc.jack_springer.by_now_the_1", npc, creature)
+				npcHandler:say("By now the cultists of the Shiron'Fal seem to have abandoned their search. But this is sadly no good news. It seems they gathered enough lich-knights to proceed with their {ultimate} plan.", npc, creature)
 				npcHandler:setTopic(playerId, 3)
 			else
-				npcHandler:sayLocalized("npc.jack_springer.sadly_i_have_2", npc, creature)
+				npcHandler:say("Sadly, I have no news yet. But I can give you information about the {locations} of the graves that we learned about. If you need more holy water just ask me for a {trade}.", npc, creature)
 			end
 		else
 			if player:getStorageValue(Storage.Quest.U12_20.GraveDanger.Bosses.KingZelos.Killed) >= 1 then
 				if player:getStorageValue(Storage.Quest.U12_20.GraveDanger.Questline) >= 3 and player:getStorageValue(Storage.Quest.U12_20.HandOfTheInquisitionOutfits.Addon2) < 1 and player:removeItem(31737, 1) then
-					npcHandler:sayLocalized("npc.jack_springer.here_is_your_3", npc, creature)
+					npcHandler:say("Here is your second addon for your efforts!", npc, creature)
 					player:addOutfit(1243, 2)
 					player:addOutfit(1244, 2)
 					player:setStorageValue(Storage.Quest.U12_20.GraveDanger.Stage, 2)
 					player:setStorageValue(Storage.Quest.U12_20.GraveDanger.Questline, 3)
 					player:setStorageValue(Storage.Quest.U12_20.HandOfTheInquisitionOutfits.Addon2, 1)
 				elseif player:getStorageValue(Storage.Quest.U12_20.GraveDanger.Questline) >= 3 and player:getStorageValue(Storage.Quest.U12_20.HandOfTheInquisitionOutfits.Addon1) < 1 and player:removeItem(31738, 1) then
-					npcHandler:sayLocalized("npc.jack_springer.here_is_your_4", npc, creature)
+					npcHandler:say("Here is your first addon for your efforts!", npc, creature)
 					player:addOutfit(1243, 1)
 					player:addOutfit(1244, 1)
 					player:setStorageValue(Storage.Quest.U12_20.GraveDanger.Stage, 2)
 					player:setStorageValue(Storage.Quest.U12_20.GraveDanger.Questline, 3)
 					player:setStorageValue(Storage.Quest.U12_20.HandOfTheInquisitionOutfits.Addon1, 1)
 				elseif player:getStorageValue(Storage.Quest.U12_20.GraveDanger.Questline) < 3 and player:getStorageValue(Storage.Quest.U12_20.HandOfTheInquisitionOutfits.Outfits) < 1 then
-					npcHandler:sayLocalized("npc.jack_springer.incredible_you_averted_5", npc, creature)
+					npcHandler:say("Incredible! You averted a crisis that would have utterly crippled our defences aganist any other threat that is arising. Let me grant you the honor to be one of the hands of the inquisition alongside with the according outfit as a reward.", npc, creature)
 					player:addOutfit(1243, 0)
 					player:addOutfit(1244, 0)
 					player:addAchievement("Inquisition's Hand")
@@ -171,10 +171,10 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:setStorageValue(Storage.Quest.U12_20.GraveDanger.Questline, 3)
 					player:setStorageValue(Storage.Quest.U12_20.HandOfTheInquisitionOutfits.Outfits, 1)
 				else
-					npcHandler:sayLocalized("npc.jack_springer.indeed_you_averted_6", npc, creature)
+					npcHandler:say("Indeed you averted us a great danger! We will ever be greatful to you hand of the inquisition!", npc, creature)
 				end
 			else
-				npcHandler:sayLocalized("npc.jack_springer.you_need_to_7", npc, creature)
+				npcHandler:say("You need to travel to the isle of the kings and end this threat before they raise king Zelos!", npc, creature)
 			end
 		end
 	elseif MsgContains(message, "ultimate") and npcHandler:getTopic(playerId) == 3 then

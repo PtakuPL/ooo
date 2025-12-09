@@ -65,17 +65,17 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "football") then
-		npcHandler:sayLocalized("npc.gorn.do_you_want_1", npc, creature)
+		npcHandler:say("Do you want to buy a football for 111 gold?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			local player = Player(creature)
 			if player:getMoney() + player:getBankBalance() >= 111 then
-				npcHandler:sayLocalized("npc.gorn.here_it_is_2", npc, creature)
+				npcHandler:say("Here it is.", npc, creature)
 				player:addItem(2990, 1)
 				player:removeMoneyBank(111)
 			else
-				npcHandler:sayLocalized("npc.gorn.you_dont_have_3", npc, creature)
+				npcHandler:say("You don't have enough money.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		end

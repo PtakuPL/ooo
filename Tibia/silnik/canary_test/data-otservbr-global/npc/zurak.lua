@@ -56,14 +56,14 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "trip") or MsgContains(message, "passage") then
 		if player:getStorageValue(TheNewFrontier.Questline) >= 24 then
-			npcHandler:sayLocalized("npc.zurak.you_want_trip_1", npc, creature)
+			npcHandler:say("You want trip to Izzle of Zztrife?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:sayLocalized("npc.zurak.you_need_permission_2", npc, creature)
+			npcHandler:say("You need permission to travel to.", npc, creature)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.zurak.itzz_your_doom_3", npc, creature)
+			npcHandler:say("It'zz your doom you travel to.", npc, creature)
 			local destination = Position(33102, 31056, 7)
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			player:teleportTo(destination)
@@ -72,11 +72,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.zurak.zzoftzzkinzz_zzo_full_4", npc, creature)
+			npcHandler:say("Zzoftzzkinzz zzo full of fear.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "hurry") or MsgContains(message, "job") then
-		npcHandler:sayLocalized("npc.zurak.me_zzimple_ferryman_5", npc, creature)
+		npcHandler:say("Me zzimple ferryman. I arrange {trip} to Izzle of Zztrife.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

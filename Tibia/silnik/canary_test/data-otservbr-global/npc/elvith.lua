@@ -79,19 +79,19 @@ local function creatureSayCallback(npc, creature, type, message)
 			"I would not recommend seeking him or the book there, but of course it is possible.",
 		}, npc, creature)
 	elseif MsgContains(message, "love poem") then
-		npcHandler:sayLocalized("npc.elvith.do_you_want_1", npc, creature)
+		npcHandler:say("Do you want to buy a poem scroll for 200 gold?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			npcHandler:setTopic(playerId, 0)
 			local player = Player(creature)
 			if not player:removeMoneyBank(200) then
-				npcHandler:sayLocalized("npc.elvith.you_dont_have_2", npc, creature)
+				npcHandler:say("You don't have enough money.", npc, creature)
 				return true
 			end
 
 			player:addItem(6119, 1)
-			npcHandler:sayLocalized("npc.elvith.here_it_is_3", npc, creature)
+			npcHandler:say("Here it is.", npc, creature)
 		end
 	end
 	return true

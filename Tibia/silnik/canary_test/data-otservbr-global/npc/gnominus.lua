@@ -61,35 +61,35 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "recruitment") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 3 then
-			npcHandler:sayLocalized("npc.gnominus.your_examination_is_1", npc, creature)
-			npcHandler:sayLocalized("npc.gnominus.afterwards_walk_up_2", npc, creature)
+			npcHandler:say("Your examination is quite easy. Just step through the green crystal apparatus in the south! We will examine you with what we call g-rays. Where g stands for gnome of course ...", npc, creature)
+			npcHandler:say("Afterwards walk up to Gnomedix for your ear examination.", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "tavern") then
-		npcHandler:sayLocalized("npc.gnominus.i_provide_the_3", npc, creature)
+		npcHandler:say("I provide the population with some fresh alcohol-free mushroom {beer}!", npc, creature)
 	elseif MsgContains(message, "beer") then
-		npcHandler:sayLocalized("npc.gnominus.do_you_want_4", npc, creature)
+		npcHandler:say("Do you want some mushroom beer for 10 gold?", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "apparatus") then
-			npcHandler:sayLocalized("npc.gnominus.dont_be_afraid_5", npc, creature)
+			npcHandler:say("Don't be afraid. It won't hurt! Just step in!", npc, creature)
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine, 4)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "yes") then
 			if player:getMoney() + player:getBankBalance() >= 10 then
-				npcHandler:sayLocalized("npc.gnominus.and_here_it_6", npc, creature)
+				npcHandler:say("And here it is! Drink it quick, it gets stale quite fast!", npc, creature)
 				player:removeMoneyBank(10)
 				local beerItem = player:addItem(15794)
 				if beerItem then
 					beerItem:decay()
 				end
 			else
-				npcHandler:sayLocalized("npc.gnominus.you_do_not_7", npc, creature)
+				npcHandler:say("You do not have enough money.", npc, creature)
 			end
 		else
-			npcHandler:sayLocalized("npc.gnominus.come_back_later_8", npc, creature)
+			npcHandler:say("Come back later.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

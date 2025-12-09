@@ -71,11 +71,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "fight") then
-		npcHandler:sayLocalized("npc.flora.do_you_really_1", npc, creature)
+		npcHandler:say("Do you really want to enter the Glooth Fairy's hideout. There is no chickening out and I also have to charge one voting right! {Yes} or {no}?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.flora.here_you_go_2", npc, creature)
+			npcHandler:say("Here you go!", npc, creature)
 			local pos = { x = 33660, y = 31936, z = 9 }
 			doTeleportThing(creature, pos)
 			doSendMagicEffect(pos, CONST_ME_TELEPORT)

@@ -80,14 +80,14 @@ local function creatureSayCallback(npc, creature, type, message)
 	local questProgress = player:getStorageValue(Storage.Quest.U7_6.TheApeCity.Questline)
 	if MsgContains(message, "mission") then
 		if questProgress < 1 then
-			npcHandler:sayLocalized("npc.hairycles.these_are_dire_1", npc, creature)
+			npcHandler:say("These are dire times for our people. Problems plenty are in this times. But me people not grant trust easy. Are you willing to prove you friend of ape people?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif questProgress == 1 then
 			if player:getStorageValue(Storage.Quest.U7_6.WhisperMoss) == 1 then
-				npcHandler:sayLocalized("npc.hairycles.oh_you_brought_2", npc, creature)
+				npcHandler:say("Oh, you brought me whisper moss? Good hairless ape you are! Can me take it?", npc, creature)
 				npcHandler:setTopic(playerId, 3)
 			else
-				npcHandler:sayLocalized("npc.hairycles.please_hurry_bring_3", npc, creature)
+				npcHandler:say("Please hurry. Bring me whisper moss from dworc lair. Make sure it is from dworc lair! Take it yourself only! If you need to hear background of all again, ask Hairycles for {background}.", npc, creature)
 			end
 		elseif questProgress == 2 then
 			npcHandler:say({
@@ -96,13 +96,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 3)
 		elseif questProgress == 3 then
-			npcHandler:sayLocalized("npc.hairycles.you_brought_me_4", npc, creature)
+			npcHandler:say("You brought me that cough syrup from human healer me asked for?", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		elseif questProgress == 4 then
-			npcHandler:sayLocalized("npc.hairycles.little_ape_should_5", npc, creature)
+			npcHandler:say("Little ape should be healthy soon. Me so happy is. Thank you again! But me suspect we in more trouble than we thought. Will you help us again?", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		elseif questProgress == 5 then
-			npcHandler:sayLocalized("npc.hairycles.you_got_scroll_6", npc, creature)
+			npcHandler:say("You got scroll from lizard village in south east?", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		elseif questProgress == 6 then
 			npcHandler:say({
@@ -115,10 +115,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 8)
 		elseif questProgress == 7 then
 			if player:getStorageValue(Storage.Quest.U7_6.TheApeCity.ParchmentDecyphering) == 1 then
-				npcHandler:sayLocalized("npc.hairycles.ah_yes_you_7", npc, creature)
+				npcHandler:say("Ah yes, you read the signs in tomb? Good! May me look into your mind to see what you saw?", npc, creature)
 				npcHandler:setTopic(playerId, 9)
 			else
-				npcHandler:sayLocalized("npc.hairycles.you_still_dont_8", npc, creature)
+				npcHandler:say("You still don't know signs on stone, go and look for it in tomb east in desert.", npc, creature)
 			end
 		elseif questProgress == 8 then
 			npcHandler:say({
@@ -128,7 +128,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 10)
 		elseif questProgress == 9 then
-			npcHandler:sayLocalized("npc.hairycles.you_bring_hairycles_9", npc, creature)
+			npcHandler:say("You bring Hairycles egg of hydra?", npc, creature)
 			npcHandler:setTopic(playerId, 11)
 		elseif questProgress == 10 then
 			npcHandler:say({
@@ -137,7 +137,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 12)
 		elseif questProgress == 11 then
-			npcHandler:sayLocalized("npc.hairycles.you_brought_hairycles_10", npc, creature)
+			npcHandler:say("You brought Hairycles witches' cap from Fibula?", npc, creature)
 			npcHandler:setTopic(playerId, 13)
 		elseif questProgress == 12 then
 			npcHandler:say({
@@ -148,10 +148,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 14)
 		elseif questProgress == 13 then
 			if player:getStorageValue(Storage.Quest.U7_6.TheApeCity.Casks) == 3 then
-				npcHandler:sayLocalized("npc.hairycles.you_do_please_11", npc, creature)
+				npcHandler:say("You do please Hairycles again, friend. Me hope madness will not spread further now. Perhaps you are ready for other mission.", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 14)
 			else
-				npcHandler:sayLocalized("npc.hairycles.please_destroy_three_12", npc, creature)
+				npcHandler:say("Please destroy three casks in the complex beneath Banuta, so my people will come to senses again.", npc, creature)
 			end
 		elseif questProgress == 14 then
 			npcHandler:say({
@@ -166,10 +166,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 15)
 		elseif questProgress == 15 then
 			if player:getStorageValue(Storage.Quest.U7_6.TheApeCity.HolyApeHair) == 1 then
-				npcHandler:sayLocalized("npc.hairycles.you_brought_hair_13", npc, creature)
+				npcHandler:say("You brought hair of holy ape?", npc, creature)
 				npcHandler:setTopic(playerId, 16)
 			else
-				npcHandler:sayLocalized("npc.hairycles.get_a_hair_14", npc, creature)
+				npcHandler:say("Get a hair of holy ape from forbidden land in east. Speak with blind prophet in cave.", npc, creature)
 			end
 		elseif questProgress == 16 then
 			npcHandler:say({
@@ -189,10 +189,10 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 18)
 				player:addAchievement("Friend of the Apes")
 			else
-				npcHandler:sayLocalized("npc.hairycles.me_know_its_15", npc, creature)
+				npcHandler:say("Me know its much me asked for but go into the deepest catacombs under Banuta and destroy the monument of the serpent god.", npc, creature)
 			end
 		else
-			npcHandler:sayLocalized("npc.hairycles.no_more_missions_16", npc, creature)
+			npcHandler:say("No more missions await you right now, friend. Perhaps you want to check me offers for special friends... or shamanic powers.", npc, creature)
 		end
 	elseif MsgContains(message, "background") then
 		if questProgress == 1 and player:getStorageValue(Storage.Quest.U7_6.WhisperMoss) ~= 1 then
@@ -206,19 +206,19 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "cookie") then
 		if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 31 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.CookieDelivery.Hairycles) ~= 1 then
-			npcHandler:sayLocalized("npc.hairycles.oh_you_bring_17", npc, creature)
+			npcHandler:say("Oh you bring cookie for old Hairycles?", npc, creature)
 			npcHandler:setTopic(playerId, 19)
 		end
 	elseif MsgContains(message, "outfit") or MsgContains(message, "shamanic") then
 		if questProgress == 18 then
 			if player:getStorageValue(Storage.Quest.U7_6.TheApeCity.ShamanOutfit) ~= 1 then
-				npcHandler:sayLocalized("npc.hairycles.me_truly_proud_18", npc, creature)
+				npcHandler:say("Me truly proud of you, friend. You learn many about plants, charms and ape people. Me want grant you shamanic power now. You ready?", npc, creature)
 				npcHandler:setTopic(playerId, 18)
 			else
-				npcHandler:sayLocalized("npc.hairycles.you_already_are_19", npc, creature)
+				npcHandler:say("You already are shaman and doctor. Me proud of you.", npc, creature)
 			end
 		else
-			npcHandler:sayLocalized("npc.hairycles.you_not_have_20", npc, creature)
+			npcHandler:say("You not have finished journey for wisdom yet, young human.", npc, creature)
 		end
 	elseif MsgContains(message, "heal") then
 		if questProgress > 11 then
@@ -232,17 +232,17 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:removeCondition(CONDITION_POISON)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 			else
-				npcHandler:sayLocalized("npc.hairycles.you_look_for_21", npc, creature)
+				npcHandler:say("You look for food and rest.", npc, creature)
 			end
 		else
-			npcHandler:sayLocalized("npc.hairycles.you_look_for_22", npc, creature)
+			npcHandler:say("You look for food and rest.", npc, creature)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
-			npcHandler:sayLocalized("npc.hairycles.to_become_friend_23", npc, creature)
+			npcHandler:say("To become friend of ape people a long and difficult way is. We do not trust easy but help is needed. Will you listen to story of Hairycles?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.hairycles_sad_is_24", npc, creature)
+			npcHandler:say("Hairycles sad is now. But perhaps you will change mind one day.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
@@ -258,7 +258,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 1)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.DworcDoor, 1)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.hairycles_thought_better_25", npc, creature)
+			npcHandler:say("Hairycles thought better of you.", npc, creature)
 			addEvent(function()
 				releasePlayer(npc, creature)
 			end, 1000)
@@ -267,28 +267,28 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif npcHandler:getTopic(playerId) == 3 then
 		if MsgContains(message, "yes") then
 			if not player:removeItem(4827, 1) then
-				npcHandler:sayLocalized("npc.hairycles.stupid_you_no_26", npc, creature)
+				npcHandler:say("Stupid, you no have the moss me need. Go get it. It's somewhere in dworc lair. If you lost it, they might restocked it meanwhile. If you need to hear background of all again, ask Hairycles for {background}.", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_6.WhisperMoss, -1)
 				return true
 			end
 
-			npcHandler:sayLocalized("npc.hairycles.ah_yes_thats_27", npc, creature)
+			npcHandler:say("Ah yes! That's it. Thank you for bringing mighty whisper moss to Hairycles. It will help but still much is to be done. Just ask for other mission if you ready.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 2)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.strange_being_you_28", npc, creature)
+			npcHandler:say("Strange being you are! Our people need help!", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 4 then
 		if MsgContains(message, "yes") then
 			if not player:removeItem(4828, 1) then
-				npcHandler:sayLocalized("npc.hairycles.no_no_not_29", npc, creature)
+				npcHandler:say("No no, not right syrup you have. Go get other, get right health syrup.", npc, creature)
 				return true
 			end
 
-			npcHandler:sayLocalized("npc.hairycles.you_so_good_30", npc, creature)
+			npcHandler:say("You so good! Brought syrup to me! Thank you, will prepare cure now. Just ask for {mission} if you want help again.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 4)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.please_hurry_urgent_31", npc, creature)
+			npcHandler:say("Please hurry, urgent it is!", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 5 then
@@ -300,7 +300,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.me_sad_me_32", npc, creature)
+			npcHandler:say("Me sad. Me expected better from you!", npc, creature)
 			addEvent(function()
 				releasePlayer(npc, creature)
 			end, 1000)
@@ -308,11 +308,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif npcHandler:getTopic(playerId) == 6 then
 		if MsgContains(message, "yes") then
-			npcHandler:sayLocalized("npc.hairycles.good_thing_that_33", npc, creature)
+			npcHandler:say("Good thing that is! Report about your mission when have scroll.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 5)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.ChorDoor, 1)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.me_sad_me_34", npc, creature)
+			npcHandler:say("Me sad. Me expected better from you!", npc, creature)
 			addEvent(function()
 				releasePlayer(npc, creature)
 			end, 1000)
@@ -322,25 +322,25 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			if not player:removeItem(4831, 1) then
 				if player:getStorageValue(Storage.Quest.U7_6.OldParchment) == 1 then
-					npcHandler:sayLocalized("npc.hairycles.thats_bad_news_35", npc, creature)
+					npcHandler:say("That's bad news. If you lost it, only way to get other is to kill holy serpents. But you can't go there so you must ask adventurers who can.", npc, creature)
 				else
-					npcHandler:sayLocalized("npc.hairycles.no_that_not_36", npc, creature)
+					npcHandler:say("No! That not scroll me looking for. Silly hairless ape you are. Go to village of lizards and get it there on your own!", npc, creature)
 				end
 				return true
 			end
 
-			npcHandler:sayLocalized("npc.hairycles.you_brought_scroll_37", npc, creature)
+			npcHandler:say("You brought scroll with lizard text? Good! I will see what text tells me! Come back when ready for other mission.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 6)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.thats_bad_news_38", npc, creature)
+			npcHandler:say("That's bad news. If you lost it, only way to get other is to kill holy serpents. But you can't go there so you must ask adventurers who can.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 8 then
 		if MsgContains(message, "yes") then
-			npcHandler:sayLocalized("npc.hairycles.good_thing_that_39", npc, creature)
+			npcHandler:say("Good thing that is! Report about mission when you have read those signs.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 7)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.me_sad_me_40", npc, creature)
+			npcHandler:say("Me sad. Me expected better from you!", npc, creature)
 			addEvent(function()
 				releasePlayer(npc, creature)
 			end, 1000)
@@ -348,19 +348,19 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 9 then
 		if MsgContains(message, "yes") then
-			npcHandler:sayLocalized("npc.hairycles.oh_so_clear_41", npc, creature)
+			npcHandler:say("Oh, so clear is all now! Easy it will be to read the signs now! Soon we will know what to do! Thank you again! Ask for mission if you feel ready.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 8)
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.me_need_to_42", npc, creature)
+			npcHandler:say("Me need to see it in your mind, other there is no way to proceed.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 10 then
 		if MsgContains(message, "yes") then
-			npcHandler:sayLocalized("npc.hairycles.you_brave_hairless_43", npc, creature)
+			npcHandler:say("You brave hairless ape! Get me hydra egg. If you lose egg, you probably have to fight many, many hydras to get another.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 9)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.me_sad_me_44", npc, creature)
+			npcHandler:say("Me sad. Me expected better from you!", npc, creature)
 			addEvent(function()
 				releasePlayer(npc, creature)
 			end, 1000)
@@ -369,23 +369,23 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif npcHandler:getTopic(playerId) == 11 then
 		if MsgContains(message, "yes") then
 			if not player:removeItem(4839, 1) then
-				npcHandler:sayLocalized("npc.hairycles.you_not_have_45", npc, creature)
+				npcHandler:say("You not have egg of hydra. Please get one!", npc, creature)
 				return true
 			end
 
-			npcHandler:sayLocalized("npc.hairycles.ah_the_egg_46", npc, creature)
+			npcHandler:say("Ah, the egg! Mighty warrior you be! Thank you. Hairycles will put it at safe place immediately.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 10)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.please_hurry_hairycles_47", npc, creature)
+			npcHandler:say("Please hurry. Hairycles not knows when evil lizards strike again.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 12 then
 		if MsgContains(message, "yes") then
-			npcHandler:sayLocalized("npc.hairycles.long_journey_it_48", npc, creature)
+			npcHandler:say("Long journey it will take, good luck to you.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 11)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.FibulaDoor, 1)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.me_sad_me_49", npc, creature)
+			npcHandler:say("Me sad. Me expected better from you!", npc, creature)
 			addEvent(function()
 				releasePlayer(npc, creature)
 			end, 1000)
@@ -394,15 +394,15 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif npcHandler:getTopic(playerId) == 13 then
 		if MsgContains(message, "yes") then
 			if not player:removeItem(4829, 1) then
-				npcHandler:sayLocalized("npc.hairycles.not_right_mushroom_50", npc, creature)
+				npcHandler:say("Not right mushroom you have. Find me a witches' cap on Fibula!", npc, creature)
 				return true
 			end
 
-			npcHandler:sayLocalized("npc.hairycles.incredible_you_brought_51", npc, creature)
+			npcHandler:say("Incredible, you brought a witches' cap! Now me can prepare mighty charm of life. Yet still other {missions} will await you, friend.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 12)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.FibulaDoor, -1)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.please_try_to_52", npc, creature)
+			npcHandler:say("Please try to find me a witches' cap on Fibula.", npc, creature)
 			addEvent(function()
 				releasePlayer(npc, creature)
 			end, 1000)
@@ -410,59 +410,59 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 14 then
 		if MsgContains(message, "yes") then
-			npcHandler:sayLocalized("npc.hairycles.hairycles_sure_you_53", npc, creature)
+			npcHandler:say("Hairycles sure you will make it. Good luck, friend.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 13)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.CasksDoor, 1)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.me_sad_please_54", npc, creature)
+			npcHandler:say("Me sad. Please reconsider.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 15 then
 		if MsgContains(message, "yes") then
-			npcHandler:sayLocalized("npc.hairycles.hairycles_proud_of_55", npc, creature)
+			npcHandler:say("Hairycles proud of you. Go and find holy hair. Good luck, friend.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 15)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.me_sad_please_56", npc, creature)
+			npcHandler:say("Me sad. Please reconsider.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 16 then
 		if MsgContains(message, "yes") then
 			if not player:removeItem(4832, 1) then
-				npcHandler:sayLocalized("npc.hairycles.you_no_have_57", npc, creature)
+				npcHandler:say("You no have hair. You lost it? Go and look again.", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_6.TheApeCity.HolyApeHair, -1)
 				return true
 			end
 
-			npcHandler:sayLocalized("npc.hairycles.incredible_you_got_58", npc, creature)
+			npcHandler:say("Incredible! You got a hair of holy Bong! This will raise the spirit of my people. You are truly a friend. But one last mission awaits you.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 16)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.you_no_have_59", npc, creature)
+			npcHandler:say("You no have hair. You lost it? Go and look again.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 17 then
 		if MsgContains(message, "yes") then
-			npcHandler:sayLocalized("npc.hairycles.hairycles_sure_you_60", npc, creature)
+			npcHandler:say("Hairycles sure you will make it. Just use hammer on all that looks like snake or lizard. Tell Hairycles if you succeed with mission.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.Questline, 17)
 			player:addItem(4835, 1)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.me_sad_please_61", npc, creature)
+			npcHandler:say("Me sad. Please reconsider.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 18 then
 		if MsgContains(message, "yes") then
-			npcHandler:sayLocalized("npc.hairycles.friend_of_the_62", npc, creature)
+			npcHandler:say("Friend of the ape people! Take my gift and become me apprentice! Here is shaman clothing for you!", npc, creature)
 			player:addOutfit(154)
 			player:addOutfit(158)
 			player:setStorageValue(Storage.Quest.U7_6.TheApeCity.ShamanOutfit, 1)
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.hairycles.come_back_if_63", npc, creature)
+			npcHandler:say("Come back if change mind.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 19 then
 		if MsgContains(message, "yes") then
 			if not player:removeItem(130, 1) then
-				npcHandler:sayLocalized("npc.hairycles.you_have_no_64", npc, creature)
+				npcHandler:say("You have no cookie that I'd like.", npc, creature)
 				return true
 			end
 
@@ -472,7 +472,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 
 			npc:getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)
-			npcHandler:sayLocalized("npc.hairycles.thank_you_you_65", npc, creature)
+			npcHandler:say("Thank you, you are ... YOU SON OF LIZARD!", npc, creature)
 			addEvent(function()
 				releasePlayer(npc, creature)
 			end, 1000)

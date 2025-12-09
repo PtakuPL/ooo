@@ -71,11 +71,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	local playerId = player:getId()
 
 	if MsgContains(message, "job") then
-		npcHandler:sayLocalized("npc.gnomux.im_responsible_for_1", npc, creature)
+		npcHandler:say("I'm responsible for resupplying foolish adventurers with equipment that they may have lost. If you're one of them, just ask me about a {trade}. ", npc, creature)
 	end
 
 	if MsgContains(message, "gnome") then
-		npcHandler:sayLocalized("npc.gnomux.what_could_i_2", npc, creature)
+		npcHandler:say("What could I say about gnomes that anyone would not know? I mean, we're interesting if not fascinating, after all.", npc, creature)
 	end
 
 	if MsgContains(message, "spike") then

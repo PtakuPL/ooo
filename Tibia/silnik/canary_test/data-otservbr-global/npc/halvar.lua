@@ -74,7 +74,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	local arenaId = player:getStorageValue(Storage.Quest.U8_0.BarbarianArena.Arena)
 	if MsgContains(message, "fight") or MsgContains(message, "pit") or MsgContains(message, "challenge") or MsgContains(message, "arena") then
 		if player:getStorageValue(Storage.Quest.U8_0.BarbarianArena.PitDoor) == 1 then
-			npcHandler:sayLocalized("npc.halvar.you_already_paid_1", npc, creature)
+			npcHandler:say("You already paid the fee, go and fight!", npc, creature)
 			return true
 		end
 
@@ -84,10 +84,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 
 		if ARENA[arenaId] then
-			npcHandler:sayLocalized("npc.halvar.so_you_agree_2" .. ARENA[arenaId].name .. "} is " .. ARENA[arenaId].price .. " gold pieces. Do you really want to participate and pay the {fee}?", npc, creature)
+			npcHandler:say("So you agree with the {rules} and want to participate in the {challenge}? The {fee} for one try in {" .. ARENA[arenaId].name .. "} is " .. ARENA[arenaId].price .. " gold pieces. Do you really want to participate and pay the {fee}?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:sayLocalized("npc.halvar.youve_already_completed_3", npc, creature)
+			npcHandler:say("You've already completed the arena in all {difficulty levels}.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
@@ -99,17 +99,17 @@ local function creatureSayCallback(npc, creature, type, message)
 
 			if player:removeMoneyBank(ARENA[arenaId].price) then
 				player:setStorageValue(Storage.Quest.U8_0.BarbarianArena.PitDoor, 1)
-				npcHandler:sayLocalized("npc.halvar.as_you_wish_4", npc, creature)
+				npcHandler:say("As you wish! You can pass the door now and enter the teleporter to the pits.", npc, creature)
 
 				local cStorage = ARENA[arenaId].questLog
 				if player:getStorageValue(cStorage) ~= 1 then
 					player:setStorageValue(cStorage, 1)
 				end
 			else
-				npcHandler:sayLocalized("npc.halvar.you_do_not_5", npc, creature)
+				npcHandler:say("You do not have enough money.", npc, creature)
 			end
 		else
-			npcHandler:sayLocalized("npc.halvar.come_back_when_6", npc, creature)
+			npcHandler:say("Come back when you are ready then.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

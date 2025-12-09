@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-09 00:58:29 UTC  
+> **Aktualizacja:** 2025-12-09 01:00:59 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **42109** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **58** | ✓ |
-| 🔄 Cykl | **#5** | - |
+| 🔄 Cykl | **#6** | - |
 
 ---
 
@@ -78,9 +78,9 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #5` |
+| **Plik** | `Cykl #6` |
 | **Szczegóły** | NPC:4108 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-09 00:57:54 |
+| **Ostatnia aktualizacja** | 2025-12-09 01:00:19 |
 
 ### 📈 Statystyki sesji
 
@@ -124,7 +124,7 @@ selfSay("text")
 | 🔑 Kluczy | **713** |
 | 📊 Status | 🔄 W trakcie |
 | 🎯 Aktualnie | `data-otservbr-global/scripts/` |
-| 🔄 Cykl | #5 |
+| 🔄 Cykl | #6 |
 
 ### 📁 Podkatalogi - Postęp
 
@@ -149,7 +149,7 @@ selfSay("text")
 
 | Plik | Czas | Status |
 |------|------|--------|
-| `bertram.lua` | 17:41:09 | ✅ |
+| `bertram.lua` | 01:00:16 | ✅ |
 | `canary.lua` | 19:57:22 | ✅ |
 | `canary.lua` | 19:57:22 | ✅ |
 | `i18n.lua` | 10:45:53 | ✅ |
@@ -225,7 +225,7 @@ creature:say("text")
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.0** | 🟢 RUNNING | PID: 1761064, Cykl #5 |
+| **Worker v4.0** | 🟢 RUNNING | PID: 1761064, Cykl #6 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---

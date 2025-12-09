@@ -59,11 +59,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "trouble") and player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.GrofGuard) < 1 and player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Mission01) ~= -1 then
-		npcHandler:sayLocalized("npc.grof_the_guard.i_think_itll_1", npc, creature)
+		npcHandler:say("I think it'll rain soon and I left some laundry out for drying.", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "authorities") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.grof_the_guard.yes_im_pretty_2", npc, creature)
+			npcHandler:say("Yes I'm pretty sure they have failed to send the laundry police to take care of it, you fool.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 			if player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.GrofGuard) < 1 then
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.GrofGuard, 1)

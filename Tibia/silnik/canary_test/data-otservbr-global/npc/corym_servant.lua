@@ -115,7 +115,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(HiddenThreats.QuestLine, 5)
 			player:setStorageValue(HiddenThreats.CorymRescueMission, 9)
 		else
-			npcHandler:sayLocalized("npc.corym_servant.you_dont_have_1", npc, creature)
+			npcHandler:say("You don't have enough, return when could you bring 20 of rare earth to me.", npc, creature)
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		end

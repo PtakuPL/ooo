@@ -73,22 +73,22 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.RataMari, 1)
 		elseif reportProgress == 1 then
-			npcHandler:sayLocalized("npc.rata_mari.ok_have_you_1", npc, creature)
+			npcHandler:say("Ok, have you brought me the cheese, I've asked for?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:sayLocalized("npc.rata_mari.i_already_gave_2", npc, creature)
+			npcHandler:say("I already gave you the report. I'm not going to write another one!", npc, creature)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
 			if not player:removeItem(3607, 1) then
-				npcHandler:sayLocalized("npc.rata_mari.no_cheese_no_3", npc, creature)
+				npcHandler:say("No cheese - no report.", npc, creature)
 				return true
 			end
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.RataMari, 2)
 			player:addItem(3232, 1)
-			npcHandler:sayLocalized("npc.rata_mari.meep_meep_great_4", npc, creature)
+			npcHandler:say("Meep! Meep! Great! Here is the spyreport for you!", npc, creature)
 		else
-			npcHandler:sayLocalized("npc.rata_mari.no_cheese_no_5", npc, creature)
+			npcHandler:say("No cheese - no report.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

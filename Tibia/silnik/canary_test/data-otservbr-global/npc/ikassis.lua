@@ -68,11 +68,11 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(ThreatenedDreams.Mission01[1]) == 10 then
-			npcHandler:sayLocalized("npc.ikassis.the_wolfs_ghost_1", npc, creature)
+			npcHandler:say("The wolf's ghost has found peace. Thank you, human being. However, there is someone else who needs help: A sister of mine who's bereft of something very precious. You'll find her in the guise of a swan at a small river south-east of here.", npc, creature)
 			player:setStorageValue(ThreatenedDreams.Mission01[1], 11)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:sayLocalized("npc.ikassis.you_are_not_2", npc, creature)
+			npcHandler:say("You are not on that mission.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") then

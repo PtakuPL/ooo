@@ -89,7 +89,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission03, 4) -- StorageValue for Questlog "Mission 03: Death to the Deathbringer"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 21 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.AlchemistFormula) == 1 then
-			npcHandler:sayLocalized("npc.yalahari.so_you_have_1", npc, creature)
+			npcHandler:say("So you have killed the plague carriers. Have you also retrieved the research papers? ", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 22 then
 			npcHandler:say({
@@ -195,7 +195,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.QuaraSplasher) == 1
 			and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.QuaraState) == 2
 		then
-			npcHandler:sayLocalized("npc.yalahari.this_will_teach_2", npc, creature)
+			npcHandler:say("This will teach these fishmen who is the ruler of that area. You have earned yourself a special privilege. But we will talk about that when we speak about your next mission. ", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 43)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission07, 5) -- StorageValue for Questlog "Mission 07: A Fishy Mission"
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.BadSide, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.BadSide) >= 0 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.BadSide) + 1 or 0) -- Side Storage
@@ -212,10 +212,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 46 then
 			if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.MatrixState) == 1 then
-				npcHandler:sayLocalized("npc.yalahari.your_failure_is_3", npc, creature)
+				npcHandler:say("Your failure is an outrage! I think we have to talk about the missions you have accomplished so far. ", npc, creature)
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.GoodSide, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.GoodSide) >= 0 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.GoodSide) + 1 or 0) -- Side Storage
 			elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.MatrixState) == 2 then
-				npcHandler:sayLocalized("npc.yalahari.now_we_will_4", npc, creature)
+				npcHandler:say("Now we will have power we truly deserve!...", npc, creature)
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.BadSide, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.BadSide) >= 0 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.BadSide) + 1 or 0) -- Side Storage
 			end
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 47)
@@ -230,7 +230,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission09, 1) -- StorageValue for Questlog "Mission 09: Decision"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 49 or player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 48 then
-			npcHandler:sayLocalized("npc.yalahari.so_do_you_5", npc, creature)
+			npcHandler:say("So do you want to side with me |PLAYERNAME|? ", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 50 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SideDecision) == 2 then
 			npcHandler:say({
@@ -244,7 +244,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission10, 2) -- StorageValue for Questlog "Mission 10: The Final Battle"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 52 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SideDecision) == 2 then
-			npcHandler:sayLocalized("npc.yalahari.great_work_take_6", npc, creature)
+			npcHandler:say("Great work, take this outfit and you are able to open the door to the reward room.", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 53)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.DoorToReward, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission10, 4) -- StorageValue for Questlog "Mission 10: The Final Battle"
@@ -259,14 +259,14 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.BadSide, 1)
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 22)
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission03, 6) -- StorageValue for Questlog "Mission 03: Death to the Deathbringer"
-				npcHandler:sayLocalized("npc.yalahari.impressive_indeed_someone_7", npc, creature)
+				npcHandler:say("Impressive indeed! Someone with your skills will quickly raise in our ranks of helpers. You have great potential, and if you are upfor further missions, just ask for them. ", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 2 then
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 50)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SideDecision, 2)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission09, 2) -- StorageValue for Questlog "Mission 09: Decision"
-			npcHandler:sayLocalized("npc.yalahari.i_knew_that_8", npc, creature)
+			npcHandler:say("I knew that you were smart enough to make the right decision! Your next mission will be a special one! ", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then

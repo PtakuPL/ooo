@@ -23,9 +23,6 @@ npcConfig.flags = {
 	floorchange = false,
 }
 
--- Load NPC helper library
-dofile(CORE_DIRECTORY .. "/libs/npc/i18n.lua")
-
 local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
 
@@ -96,35 +93,35 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "invitation") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission03) == 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oswald.invitation_ask")
+			npcHandler:say("What? So why in the world should I give you an invitation? It's not as if you were someone important, are you?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oswald.invitation_donate")
+			npcHandler:say("Well, rich and generous people are always welcome in the palace.If you donate 1000 gold to a fund I oversee, I'll give you an invitation, ok?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:removeMoneyBank(1000) then
 				player:addItem(7933, 1)
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission03, 2)
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oswald.invitation_done")
+				npcHandler:say("Excellent! Here is your invitation!", npc, creature)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oswald.not_enough_money")
+				npcHandler:say("You don't have enough money.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "gold") then
 		if npcHandler:getTopic(playerId) == 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oswald.gold_doubt")
+			npcHandler:say("Not that I am bribeable but I doubt that you own 1000 gold pieces. Or do you?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	end
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, NPC_LIB.i18n.get("npc.oswald.greet", "{playername}"))
-npcHandler:setMessage(MESSAGE_FAREWELL, NPC_LIB.i18n.get("npc.oswald.farewell"))
-npcHandler:setMessage(MESSAGE_WALKAWAY, NPC_LIB.i18n.get("npc.oswald.walkaway"))
+npcHandler:setMessage(MESSAGE_GREET, "Oh, hello |PLAYERNAME|. What is it?")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Finally!")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye, and don't come back too soon.")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

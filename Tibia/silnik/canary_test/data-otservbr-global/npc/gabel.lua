@@ -56,7 +56,7 @@ local function greetCallback(npc, creature, message)
 	local playerId = player:getId()
 
 	if not MsgContains(message, "djanni'hah") then
-		npcHandler:sayLocalized("npc.gabel.whoa_a_human_1", npc, creature)
+		npcHandler:say("Whoa! A human! This is no place for you, |PLAYERNAME|. Go and play somewhere else.", npc, creature)
 		endConversationWithDelay(npcHandler, npc, creature)
 		return false
 	end
@@ -70,7 +70,7 @@ local function greetCallback(npc, creature, message)
 		return false
 	end
 
-	npcHandler:sayLocalized("npc.gabel.welcome_human_playername_2", npc, creature)
+	npcHandler:say("Welcome, human |PLAYERNAME|, to our humble abode.", npc, creature)
 	npcHandler:setInteraction(npc, creature)
 
 	return true
@@ -101,13 +101,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif missionProgress == 1 then
-			npcHandler:sayLocalized("npc.gabel.you_havent_finished_3", npc, creature)
+			npcHandler:say("You haven't finished your final mission yet. Shall I explain it again to you?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif missionProgress == 2 then
-			npcHandler:sayLocalized("npc.gabel.have_you_found_4", npc, creature)
+			npcHandler:say("Have you found Fa'hradin's lamp and placed it in Malor's personal chambers?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		else
-			npcHandler:sayLocalized("npc.gabel.theres_no_mission_5", npc, creature)
+			npcHandler:say("There's no mission left for you, friend of the Marid. However, I have a task for you.", npc, creature)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
@@ -121,7 +121,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission03, 1)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.gabel.as_you_wish_6", npc, creature)
+			npcHandler:say("As you wish.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 2 then
@@ -135,7 +135,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.DoorToEfreetTerritory, 1)
 			player:addAchievement("Marid Ally")
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.gabel.dont_give_up_7", npc, creature)
+			npcHandler:say("Don't give up! May Daraman watch over you!", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "task") and player:getStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission03) == 3 then
@@ -154,7 +154,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BossKillCount.MerikhCount, 0)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.GreenDjinnTask, 1)
 			else
-				npcHandler:sayLocalized("npc.gabel.come_back_when_8", npc, creature)
+				npcHandler:say("Come back when you kill 500 green djinns or Efreet.", npc, creature)
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.GreenDjinnTask) == 2 then
 			npcHandler:say({
@@ -166,7 +166,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addMoney(5000)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 3 then
-		npcHandler:sayLocalized("npc.gabel.all_right_may_9", npc, creature)
+		npcHandler:say("All right. May Daraman bless your hunt, human.", npc, creature)
 		player:setStorageValue(JOIN_STOR, 1)
 		player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.GreenDjinnCount, 0)
 		player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.GreenDjinnCount, 0)

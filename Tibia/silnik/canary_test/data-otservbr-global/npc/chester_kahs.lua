@@ -74,81 +74,81 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "gamel") or MsgContains(message, "rebel") or MsgContains(message, "gamel rebel") then
-		npcHandler:sayLocalized("npc.chester_kahs.are_you_saying_1", npc, creature)
+		npcHandler:say("Are you saying that Gamel is a member of the rebellion?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.chester_kahs.do_you_know_2", npc, creature)
+			npcHandler:say("Do you know what his plans are about?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:removeItem(3061, 1) then
-				npcHandler:sayLocalized("npc.chester_kahs.thank_you_take_3", npc, creature)
+				npcHandler:say("Thank you! Take this ring. If you ever need a healing, come, bring the scroll, and ask me to {heal}.", npc, creature)
 				player:addItem(3052, 1)
 			else
-				npcHandler:sayLocalized("npc.chester_kahs.sorry_but_you_4", npc, creature)
+				npcHandler:say("Sorry, but you have none.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:removeItem(3052, 1) then
-				npcHandler:sayLocalized("npc.chester_kahs.so_be_healed_5", npc, creature)
+				npcHandler:say("So be healed!", npc, creature)
 				player:addHealth(player:getMaxHealth())
 				npc:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			else
-				npcHandler:sayLocalized("npc.chester_kahs.sorry_you_are_6", npc, creature)
+				npcHandler:say("Sorry, you are not worthy!", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 1)
-			npcHandler:sayLocalized("npc.chester_kahs.then_i_welcome_7", npc, creature)
+			npcHandler:say("Then I welcome you to the TBI. This is a great moment for you, remember it well. Talk to me about your missions whenever you feel ready.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 6 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.TBIMission01, 3)
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 3)
-			npcHandler:sayLocalized("npc.chester_kahs.i_think_they_8", npc, creature)
+			npcHandler:say("I think they understood the warning the way it was meant. If not, you will have to visit Venore soon again. But for now it's settled.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 7 then
 			if player:removeItem(5956, 1) then
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.TBIMission02, 2)
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 5)
-				npcHandler:sayLocalized("npc.chester_kahs.i_can_only_9", npc, creature)
+				npcHandler:say("I can only hope that this information are as valuable as we expected it. A good man died for them.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.chester_kahs.please_bring_me_10", npc, creature)
+				npcHandler:say("Please bring me some proof of his whereabouts.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 8 then
 			if player:removeItem(5952, 1) then
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.TBIMission03, 3)
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 7)
-				npcHandler:sayLocalized("npc.chester_kahs.i_can_only_11", npc, creature)
+				npcHandler:say("I can only hope that this information are as valuable as we expected it. A good man died for them.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.chester_kahs.please_bring_me_12", npc, creature)
+				npcHandler:say("Please bring me some valuable information!", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 9 then
 			if player:removeItem(348, 1) then
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.TBIMission04, 2)
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 9)
-				npcHandler:sayLocalized("npc.chester_kahs.ah_yes_very_13", npc, creature)
+				npcHandler:say("Ah yes, very interesting. Almost as I suspected. It's a good thing that we got those documents in our hands.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.chester_kahs.we_need_those_14", npc, creature)
+				npcHandler:say("We need those intelligence reports, do whatever you need to do agent!", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 10 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.TBIMission05, 3)
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 11)
-			npcHandler:sayLocalized("npc.chester_kahs.now_that_venore_15", npc, creature)
+			npcHandler:say("Now that Venore is of nearly no importance anymore, there is only Carlin left to deal with.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 11 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.TBIMission06, 3)
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 13)
-			npcHandler:sayLocalized("npc.chester_kahs.i_already_heard_16", npc, creature)
+			npcHandler:say("I already heard that our little trick worked quite well. Several officials of Carlin are already on their way to repair the damage done to their diplomatic efforts. It will not only cost them much money but also quite some time.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 12 then
 			if player:removeMoneyBank(1000) then
 				player:addItem(397, 1)
-				npcHandler:sayLocalized("npc.chester_kahs.here_you_are_17", npc, creature)
+				npcHandler:say("Here you are. Better don't loose it again.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.chester_kahs.you_dont_have_18", npc, creature)
+				npcHandler:say("You don't have enough money", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 13 then
@@ -156,15 +156,15 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.Mission07, 2)
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 15)
 				player:addItem(897, 1)
-				npcHandler:sayLocalized("npc.chester_kahs.you_have_done_19", npc, creature)
+				npcHandler:say("You have done superb work agent, I grant you the title of Top Agent! Here's a little gift you might find useful.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.chester_kahs.please_bring_me_20", npc, creature)
+				npcHandler:say("Please bring me proof of the mad technomancers defeat!", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.chester_kahs.then_dont_bother_21", npc, creature)
+			npcHandler:say("Then don't bother me with it. I'm a busy man.", npc, creature)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			npcHandler:say("Traitor!", npc, creature)
 			player:addCondition(fire)
@@ -174,18 +174,18 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		else
-			npcHandler:sayLocalized("npc.chester_kahs.as_you_wish_22", npc, creature)
+			npcHandler:say("As you wish.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "magic") and MsgContains(message, "crystal") and MsgContains(message, "lugri") and MsgContains(message, "deathcurse") then
-			npcHandler:sayLocalized("npc.chester_kahs.thats_terrible_will_23", npc, creature)
+			npcHandler:say("That's terrible! Will you give me the crystal?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		else
-			npcHandler:sayLocalized("npc.chester_kahs.tell_me_precisely_24", npc, creature)
+			npcHandler:say("Tell me precisely what he asked you to do! It's important!", npc, creature)
 		end
 	elseif MsgContains(message, "heal") then
-		npcHandler:sayLocalized("npc.chester_kahs.do_you_need_25", npc, creature)
+		npcHandler:say("Do you need the healing now?", npc, creature)
 		npcHandler:setTopic(playerId, 4)
 	elseif MsgContains(message, "join") then
 		if player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) < 1 then
@@ -210,7 +210,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.TBIMission01) == 2 then
-			npcHandler:sayLocalized("npc.chester_kahs.have_you_fulfilled_26", npc, creature)
+			npcHandler:say("Have you fulfilled your current mission?", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.TBIMission01) == 3 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 3 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 4)
@@ -226,7 +226,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.TBIMission02) == 1 then
-			npcHandler:sayLocalized("npc.chester_kahs.have_you_fulfilled_27", npc, creature)
+			npcHandler:say("Have you fulfilled your current mission?", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.TBIMission02) == 2 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 5 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 6)
@@ -238,7 +238,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.TBIMission03) == 2 then
-			npcHandler:sayLocalized("npc.chester_kahs.have_you_fulfilled_28", npc, creature)
+			npcHandler:say("Have you fulfilled your current mission?", npc, creature)
 			npcHandler:setTopic(playerId, 8)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.TBIMission03) == 3 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 7 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 8)
@@ -251,7 +251,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.TBIMission04) == 1 then
-			npcHandler:sayLocalized("npc.chester_kahs.have_you_fulfilled_29", npc, creature)
+			npcHandler:say("Have you fulfilled your current mission?", npc, creature)
 			npcHandler:setTopic(playerId, 9)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.TBIMission04) == 2 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 9 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 10)
@@ -264,7 +264,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.TBIMission05) == 2 then
-			npcHandler:sayLocalized("npc.chester_kahs.have_you_fulfilled_30", npc, creature)
+			npcHandler:say("Have you fulfilled your current mission?", npc, creature)
 			npcHandler:setTopic(playerId, 10)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.TBIMission05) == 3 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 11 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 12)
@@ -277,7 +277,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.TBIMission06) == 2 then
-			npcHandler:sayLocalized("npc.chester_kahs.have_you_fulfilled_31", npc, creature)
+			npcHandler:say("Have you fulfilled your current mission?", npc, creature)
 			npcHandler:setTopic(playerId, 11)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.TBIMission06) == 3 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 13 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 14)
@@ -289,12 +289,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.TBIMission06) == 3 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Mission07) == 1 then
-			npcHandler:sayLocalized("npc.chester_kahs.have_you_fulfilled_32", npc, creature)
+			npcHandler:say("Have you fulfilled your current mission?", npc, creature)
 			npcHandler:setTopic(playerId, 13)
 		end
 	elseif MsgContains(message, "disguise") then
 		if player:getStorageValue(Storage.Quest.U8_1.SecretService.TBIMission06) == 1 then
-			npcHandler:sayLocalized("npc.chester_kahs.if_you_lost_33", npc, creature)
+			npcHandler:say("If you lost or wasted your disguise kit I can replace it. It will cost you 1000 gold though since you lost royal property. Is that ok for you?", npc, creature)
 			npcHandler:setTopic(playerId, 12)
 		end
 	end

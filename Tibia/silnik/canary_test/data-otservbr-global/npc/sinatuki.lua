@@ -62,15 +62,15 @@ local function creatureSayCallback(npc, creature, type, message)
 				if player:getItemCount(fishsID[i]) >= 100 then
 					player:removeItem(fishsID[i], 100)
 					player:addItem(7290, 5)
-					npcHandler:sayLocalized("npc.sinatuki.jinuma_suvituka_siq_1", npc, creature)
+					npcHandler:say("Jinuma, suvituka siq chuqua!! Nguraka, nguraka! <happily takes the food from you and gives you five glimmering crystals>", npc, creature)
 					break
 				elseif player:getItemCount(fishsID[i]) >= 99 then
 					player:removeItem(fishsID[i], 99)
 					player:addItem(7290, 5)
-					npcHandler:sayLocalized("npc.sinatuki.jinuma_suvituka_siq_2", npc, creature)
+					npcHandler:say("Jinuma, suvituka siq chuqua!! Nguraka, nguraka! <happily takes the food from you>", npc, creature)
 					break
 				else
-					npcHandler:sayLocalized("npc.sinatuki.kisavuta_giggles_3", npc, creature)
+					npcHandler:say("Kisavuta! <giggles>", npc, creature)
 				end
 			end
 		end

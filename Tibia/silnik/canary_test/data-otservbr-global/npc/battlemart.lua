@@ -53,10 +53,10 @@ end
 local function creatureSayCallback(npc, player, type, message)
 	local categoryTable = SupplyShopConfigTable[message:lower()]
 	if MsgContains(message, "shop options") then
-		npcHandler:sayLocalized("npc.battlemart.i_sell_a_1" .. GetFormattedShopCategoryNames(SupplyShopConfigTable), npc, player)
+		npcHandler:say("I sell a selection of " .. GetFormattedShopCategoryNames(SupplyShopConfigTable), npc, player)
 	elseif categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), SupplyShopConfigTable)
-		npcHandler:sayLocalized("npc.battlemart.of_course_just_2" .. remainingCategories .. ".", npc, player)
+		npcHandler:say("Of course, just browse through my wares. You can also look at " .. remainingCategories .. ".", npc, player)
 		npc:openShopWindowTable(player, categoryTable)
 	end
 end

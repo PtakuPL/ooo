@@ -71,27 +71,27 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "PD-D-KS-P-PD") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.a_prisoner.hurray_for_that_1", npc, creature)
+			npcHandler:say("Hurray! For that I will give you my key for - hmm - let's say ... some apples. Interested?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
 			if player:removeItem(3585, 7) then
-				npcHandler:sayLocalized("npc.a_prisoner.mnjam_excellent_apples_2", npc, creature)
+				npcHandler:say("Mnjam - excellent apples. Now - about that key. You are sure want it?", npc, creature)
 				npcHandler:setTopic(playerId, 3)
 			else
-				npcHandler:sayLocalized("npc.a_prisoner.get_some_more_3", npc, creature)
+				npcHandler:say("Get some more apples first!", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:sayLocalized("npc.a_prisoner.really_really_4", npc, creature)
+			npcHandler:say("Really, really?", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		elseif npcHandler:getTopic(playerId) == 4 then
-			npcHandler:sayLocalized("npc.a_prisoner.really_really_really_5", npc, creature)
+			npcHandler:say("Really, really, really, really?", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		elseif npcHandler:getTopic(playerId) == 5 then
 			player:setStorageValue(Storage.Quest.U7_24.MadMageRoom.APrisoner, 1)
-			npcHandler:sayLocalized("npc.a_prisoner.then_take_it_6", npc, creature)
+			npcHandler:say("Then take it and get happy - or die, hehe.", npc, creature)
 			local key = player:addItem(2969, 1)
 			if key then
 				key:setActionId(Storage.Quest.Key.ID3666)
@@ -99,7 +99,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
-		npcHandler:sayLocalized("npc.a_prisoner.then_go_away_7", npc, creature)
+		npcHandler:say("Then go away!", npc, creature)
 	end
 	-- The paradox tower quest
 	if MsgContains(message, "math") then
@@ -112,23 +112,23 @@ local function creatureSayCallback(npc, creature, type, message)
 			)
 			npcHandler:setTopic(playerId, 6)
 		else
-			npcHandler:sayLocalized("npc.a_prisoner.you_already_know_8", npc, creature)
+			npcHandler:say("You already know the secrets of mathemagics! Now go and use them to learn.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 6 then
-		npcHandler:sayLocalized("npc.a_prisoner.but_first_tell_9", npc, creature)
+		npcHandler:say("But first tell me your favourite colour please!", npc, creature)
 		npcHandler:setTopic(playerId, 7)
 	elseif MsgContains(message, "green") and npcHandler:getTopic(playerId) == 7 then
-		npcHandler:sayLocalized("npc.a_prisoner.very_interesting_so_10", npc, creature)
+		npcHandler:say("Very interesting. So are you ready to proceed in your lesson in mathemagics?", npc, creature)
 		npcHandler:setTopic(playerId, 8)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 8 then
 		if player:getStorageValue(Storage.Quest.U7_24.TheParadoxTower.Mathemagics) < 1 then
 			player:setStorageValue(Storage.Quest.U7_24.TheParadoxTower.Mathemagics, 1)
 			player:addAchievement("Mathemagician")
-			npcHandler:sayLocalized("npc.a_prisoner.so_know_that_11", npc, creature)
+			npcHandler:say("So know that everything is based on the simple fact that 1 + 1 = 1!", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:sayLocalized("npc.a_prisoner.i_think_you_12", npc, creature)
+			npcHandler:say(" I think you are not in touch with yourself, come back if you have tuned in on your own feelings.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

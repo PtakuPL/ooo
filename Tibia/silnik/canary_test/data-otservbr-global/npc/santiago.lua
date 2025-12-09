@@ -73,7 +73,7 @@ local function greetCallback(npc, creature)
 		npcHandler:setMessage(MESSAGE_GREET, "Oh, |PLAYERNAME|, it's you again! It's probably impolite to disturb a busy adventurer like you, but I really need help. Please, say {yes}!")
 		storeTalkCid[playerId] = 0
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 2 then
-		npcHandler:sayLocalized("npc.santiago.oh_whats_wrong_1", npc, creature)
+		npcHandler:say("Oh, what's wrong? As I said, simply go to my house south of here and go upstairs. Then come back and we'll continue our chat.", npc, creature)
 		Position(32033, 32277, 6):sendMagicEffect(CONST_ME_TUTORIALARROW)
 		return false
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 3 then
@@ -83,7 +83,7 @@ local function greetCallback(npc, creature)
 		npcHandler:setMessage(MESSAGE_GREET, "Hey, I want to give you a weapon for free! You should not refuse that, in fact you should say '{yes}'!")
 		storeTalkCid[playerId] = 2
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 5 then
-		npcHandler:sayLocalized("npc.santiago.ive_forgotten_to_2", npc, creature)
+		npcHandler:say("I've forgotten to tell you something. Of course I need proof that you killed cockroaches. Please bring me at least 3 of their legs. Good luck!", npc, creature)
 		return false
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 6 then
 		if player:removeItem(7882, 3) then
@@ -94,7 +94,7 @@ local function greetCallback(npc, creature)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage, 7)
 			storeTalkCid[playerId] = 4
 		else
-			npcHandler:sayLocalized("npc.santiago.ive_forgotten_to_3", npc, creature)
+			npcHandler:say("I've forgotten to tell you something. Of course I need proof that you killed cockroaches. Please bring me at least 3 of their legs. Good luck!", npc, creature)
 			return false
 		end
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 7 then
@@ -131,11 +131,11 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if table.contains({ "yes", "right", "ok" }, message) then
 		if storeTalkCid[playerId] == 0 then
-			npcHandler:sayLocalized("npc.santiago.great_please_go_4", npc, creature)
+			npcHandler:say("Great, please go to my house, just a few steps south of here. Upstairs in my room, you'll find a chest. You can keep what you find inside of it! Come back after you got it and greet me to talk to me again. {Yes}?", npc, creature)
 			Position(32033, 32277, 6):sendMagicEffect(CONST_ME_TUTORIALARROW)
 			storeTalkCid[playerId] = 1
 		elseif storeTalkCid[playerId] == 1 then
-			npcHandler:sayLocalized("npc.santiago.alright_do_you_5", npc, creature)
+			npcHandler:say("Alright! Do you see the button called 'Quest Log'? There you can check the status of quests, like this one. {Bye} for now!", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage, 2)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoQuestLog, 2)
 			player:sendTutorial(3)
@@ -145,21 +145,21 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:getItemCount(3562) > 0 then
 				local coatSlot = player:getSlotItem(CONST_SLOT_ARMOR)
 				if coatSlot then
-					npcHandler:sayLocalized("npc.santiago.ah_no_need_6", npc, creature)
+					npcHandler:say("Ah, no need to say anything, I can see it suits you perfectly. Now we're getting to the fun part, let's get you armed! Are you ready for some {action}?", npc, creature)
 					player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage, 4)
 					storeTalkCid[playerId] = 3
 				else
-					npcHandler:sayLocalized("npc.santiago.oh_you_dont_7", npc, creature)
+					npcHandler:say("Oh, you don't wear it properly yet. You need to drag and drop it from your bag to your armor slot. Here, let me show you again. Is it a little {clearer} now?", npc, creature)
 					player:sendTutorial(5)
 					storeTalkCid[playerId] = 2
 				end
 			else
 				player:addItem(3562, 1)
-				npcHandler:sayLocalized("npc.santiago.oh_no_did_8", npc, creature)
+				npcHandler:say("Oh no, did you lose my coat? Well, lucky you, I have a spare one here. Don't lose it again! Now we're getting to the fun part, let's get you armed! Are you ready for some {action}?", npc, creature)
 				storeTalkCid[playerId] = 3
 			end
 		elseif storeTalkCid[playerId] == 3 then
-			npcHandler:sayLocalized("npc.santiago.i_knew_i_9", npc, creature)
+			npcHandler:say("I knew I could count on you. Here, take this good and sturdy weapon in your hand. Then go back to my house and down the ladder. Good luck, and {bye} for now!", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoQuestLog, 4)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage, 5)
 			Position(32036, 32277, 6):sendMagicEffect(CONST_ME_TUTORIALARROW)
@@ -167,18 +167,18 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		elseif storeTalkCid[playerId] == 4 then
-			npcHandler:sayLocalized("npc.santiago.thats_just_great_10", npc, creature)
+			npcHandler:say("That's just great! Now you have more health points, can carry more stuff and walk faster. Talking about health, did you get {hurt} by those cockroaches?", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage, 8)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoQuestLog, 6)
 			storeTalkCid[playerId] = 5
 		elseif storeTalkCid[playerId] == 5 then
-			npcHandler:sayLocalized("npc.santiago.really_you_look_11", npc, creature)
+			npcHandler:say("Really? You look fine to me, must have been just a scratch. Well, there are much more dangerous monsters than cockroaches out there. Take a look at your status bar. You have 155 Health right now. I'll show you something, {yes}?", npc, creature)
 			player:sendTutorial(19)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage, 9)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoQuestLog, 7)
 			storeTalkCid[playerId] = 6
 		elseif storeTalkCid[playerId] == 6 then
-			npcHandler:sayLocalized("npc.santiago.this_is_an_12", npc, creature)
+			npcHandler:say("This is an important lesson from me - an experienced veteran fighter. Take this! Look at your status bar again. As you can see, you've lost health. Now I'll tell you how to heal that, {yes}?", npc, creature)
 			player:getPosition():sendMagicEffect(CONST_ME_MORTAREA)
 			npc:getPosition():sendMagicEffect(CONST_ME_MORTAREA)
 			player:addHealth(-20, COMBAT_PHYSICALDAMAGE)
@@ -196,12 +196,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage, 11)
 			storeTalkCid[playerId] = 8
 		elseif storeTalkCid[playerId] == 8 then
-			npcHandler:sayLocalized("npc.santiago.i_knew_youd_13", npc, creature)
+			npcHandler:say("I knew you'd get it right away. You can loot food from many creatures, such as deer and rabbits. You can find them in the forest nearby. By the way... have you seen {Zirella}?", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage, 12)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoQuestLog, 10)
 			storeTalkCid[playerId] = 9
 		elseif storeTalkCid[playerId] == 9 then
-			npcHandler:sayLocalized("npc.santiago.really_she_was_14", npc, creature)
+			npcHandler:say("Really?? She was looking for someone to help her. Maybe you could go and see her. She lives just to the east and down the mountain. So, thank you again and {bye} for now!", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage, 13)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoQuestLog, 11)
 			player:addMapMark(Position(32045, 32270, 6), MAPMARK_GREENSOUTH, "To Zirella")
@@ -210,7 +210,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "hurt") then
 		if storeTalkCid[playerId] == 6 then
-			npcHandler:sayLocalized("npc.santiago.this_is_an_15", npc, creature)
+			npcHandler:say("This is an important lesson from me - an experienced veteran fighter. Take this! Look at your status bar again. As you can see, you've lost health. Now I'll tell you how to heal that, {yes}?", npc, creature)
 			player:getPosition():sendMagicEffect(CONST_ME_MORTAREA)
 			npc:getPosition():sendMagicEffect(CONST_ME_MORTAREA)
 			player:addHealth(-20, COMBAT_PHYSICALDAMAGE)
@@ -220,7 +220,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "action") then
 		if storeTalkCid[playerId] == 3 then
-			npcHandler:sayLocalized("npc.santiago.i_knew_i_16", npc, creature)
+			npcHandler:say("I knew I could count on you. Here, take this good and sturdy weapon in your hand. Then go back to my house and down the ladder. Good luck, and {bye} for now!", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoQuestLog, 4)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage, 5)
 			Position(32036, 32277, 6):sendMagicEffect(CONST_ME_TUTORIALARROW)
@@ -230,7 +230,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "easy") then
 		if storeTalkCid[playerId] == 8 then
-			npcHandler:sayLocalized("npc.santiago.i_knew_youd_17", npc, creature)
+			npcHandler:say("I knew you'd get it right away. You can loot food from many creatures, such as deer and rabbits. You can find them in the forest nearby. By the way... have you seen {Zirella}?", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage, 11)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoQuestLog, 10)
 			storeTalkCid[playerId] = 9

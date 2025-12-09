@@ -61,17 +61,17 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "marlin") then
 		if player:getStorageValue(Storage.Quest.U7_8.MarlinTrophy) < 1 then
 			if player:getItemCount(901) > 0 then
-				npcHandler:sayLocalized("npc.pemaret.wow_you_have_1", npc, creature)
+				npcHandler:say("WOW! You have a marlin!! I could make a nice decoration for your wall from it. May I have it?", npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			end
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 and player:getStorageValue(Storage.Quest.U7_8.MarlinTrophy) < 1 then
 		if player:removeItem(901, 1) then
-			npcHandler:sayLocalized("npc.pemaret.yeah_now_lets_2", npc, creature)
+			npcHandler:say("Yeah! Now let's see... <fumble fumble> There you go, I hope you like it!", npc, creature)
 			player:addItem(902, 1)
 			player:setStorageValue(Storage.Quest.U7_8.MarlinTrophy, 1)
 		else
-			npcHandler:sayLocalized("npc.pemaret.you_dont_have_3", npc, creature)
+			npcHandler:say("You don't have the fish.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

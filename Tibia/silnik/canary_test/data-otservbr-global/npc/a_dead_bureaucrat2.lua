@@ -27,47 +27,6 @@ npcConfig.voices = {
 
 local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
-local npcI18n = NPC_LIB and NPC_LIB.i18n
-
-local function sayLocalized(npc, creature, key, fallback, args)
-	local player = Player(creature)
-	if player and npcI18n and key then
-		if npcI18n.npcSay(npcHandler, npc, creature, key, args) then
-			return true
-		end
-	end
-
-	if not fallback then
-		return true
-	end
-
-	if type(fallback) == "function" then
-		fallback(player)
-	else
-		npcHandler:say(fallback, npc, creature)
-	end
-	return true
-end
-
-local function localizedGreetArgs(player)
-	if not player then
-		return nil
-	end
-
-	local descriptor = player:getSex() == PLAYERSEX_FEMALE and "beautiful lady" or "handsome gentleman"
-	return { player:getName(), descriptor }
-end
-
-if npcI18n and npcHandler.setLocalizedMessage then
-	npcI18n.setLocalizedGreet(npcHandler, "npc.a_dead_bureaucrat.greet", {
-		args = localizedGreetArgs,
-	})
-	npcI18n.setLocalizedFarewell(npcHandler, "npc.a_dead_bureaucrat.farewell")
-	npcI18n.setLocalizedWalkaway(npcHandler, "npc.a_dead_bureaucrat.walkaway")
-else
-	npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and don't forget me!")
-	npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye and don't forget me!")
-end
 
 npcType.onThink = function(npc, interval)
 	npcHandler:onThink(npc, interval)
@@ -94,17 +53,8 @@ npcType.onCloseChannel = function(npc, creature)
 end
 
 local function greetCallback(npc, creature)
-	if npcI18n and npcHandler.setLocalizedMessage then
-		return true
-	end
-
-	local player = Player(creature)
-	if not player then
-		return false
-	end
-
-	local descriptor = player:getSex() == PLAYERSEX_FEMALE and "beautiful lady" or "handsome gentleman"
-	npcHandler:setMessage(MESSAGE_GREET, "Hello " .. descriptor .. ", welcome to the atrium of Pumin's Domain. We require some information from you before we can let you pass. Where do you want to go?")
+	local playerId = creature:getId()
+	npcHandler:setMessage(MESSAGE_GREET, "Hello " .. (Player(creature):getSex() == PLAYERSEX_FEMALE and "beautiful lady" or "handsome gentleman") .. ", welcome to the atrium of Pumin's Domain. We require some information from you before we can let you pass. Where do you want to go?")
 	return true
 end
 
@@ -120,11 +70,14 @@ local function creatureSayCallback(npc, creature, type, message)
 		local player = Player(creature)
 		if player:getStorageValue(Storage.Quest.U7_9.ThePitsOfInferno.ThronePumin) == 4 then
 			player:setStorageValue(Storage.Quest.U7_9.ThePitsOfInferno.ThronePumin, 5)
-			sayLocalized(npc, creature, "npc.a_dead_bureaucrat.form287_grant", "Sure, you can get it from me. Here you are. Bye")
+			npcHandler:say("Sure, you can get it from me. Here you are. Bye", npc, creature)
 		end
 	end
 	return true
 end
+
+npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye and don't forget me!")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and don't forget me!")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

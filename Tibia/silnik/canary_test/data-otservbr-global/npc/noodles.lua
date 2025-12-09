@@ -66,21 +66,21 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "banana skin") then
 		if player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission06) == 7 then
 			if player:getItemCount(3104) > 0 then
-				npcHandler:sayLocalized("npc.noodles.sniffsniff_1", npc, creature)
+				npcHandler:say("<sniff><sniff>", npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			end
 		end
 	elseif MsgContains(message, "dirty fur") then
 		if player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission06) == 8 then
 			if player:getItemCount(3105) > 0 then
-				npcHandler:sayLocalized("npc.noodles.sniffsniff_2", npc, creature)
+				npcHandler:say("<sniff><sniff>", npc, creature)
 				npcHandler:setTopic(playerId, 2)
 			end
 		end
 	elseif MsgContains(message, "mouldy cheese") then
 		if player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission06) == 9 then
 			if player:getItemCount(3120) > 0 then
-				npcHandler:sayLocalized("npc.noodles.sniffsniff_3", npc, creature)
+				npcHandler:say("<sniff><sniff>", npc, creature)
 				npcHandler:setTopic(playerId, 3)
 			end
 		end
@@ -94,7 +94,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission06, 9)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:sayLocalized("npc.noodles.meeep_grrrrr_spits_4", npc, creature)
+			npcHandler:say("Meeep! Grrrrr! <spits>", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission06, 10)
 			npcHandler:setTopic(playerId, 0)
 		end

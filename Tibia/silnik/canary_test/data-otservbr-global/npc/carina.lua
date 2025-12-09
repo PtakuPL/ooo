@@ -60,23 +60,23 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "precious necklace") then
 		if player:getItemCount(7940) > 0 then
-			npcHandler:sayLocalized("npc.carina.would_you_like_1", npc, creature)
+			npcHandler:say("Would you like to buy my precious necklace for 5000 gold?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "mouse") then
-		npcHandler:sayLocalized("npc.carina.wha_what_are_2", npc, creature)
+		npcHandler:say("Wha ... What??? Are you saying you've seen a mouse here??", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:removeMoneyBank(5000) then
 				player:removeItem(7940, 1)
 				player:addItem(7939, 1)
-				npcHandler:sayLocalized("npc.carina.here_you_go_3", npc, creature)
+				npcHandler:say("Here you go kind sir.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if not player:removeItem(123, 1) then
-				npcHandler:sayLocalized("npc.carina.there_is_no_4", npc, creature)
+				npcHandler:say("There is no mouse here! Stop talking foolish things about serious issues!", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -87,7 +87,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:sayLocalized("npc.carina.thank_goodness_5", npc, creature)
+			npcHandler:say("Thank goodness!", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

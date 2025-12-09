@@ -14,10 +14,10 @@ function ParseAlesarSay(npc, creature, message, npcHandler)
 				}, npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			elseif table.contains({ 1, 2 }, missionProgress) then
-				npcHandler:sayLocalized("npc.alesar_functions.did_you_find_1", npc, creature)
+				npcHandler:say("Did you find the tear of Daraman?", npc, creature)
 				npcHandler:setTopic(playerId, 2)
 			else
-				npcHandler:sayLocalized("npc.alesar_functions.dont_forget_to_2", npc, creature)
+				npcHandler:say("Don't forget to talk to Malor concerning your next mission.", npc, creature)
 			end
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
@@ -41,7 +41,7 @@ function ParseAlesarSay(npc, creature, message, npcHandler)
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "yes") then
 			if player:getItemCount(3233) == 0 or missionProgress ~= 2 then
-				npcHandler:sayLocalized("npc.alesar_functions.as_i_expected_3", npc, creature)
+				npcHandler:say("As I expected. You haven't got the stone. Shall I explain your mission again?", npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			else
 				npcHandler:say({
@@ -56,7 +56,7 @@ function ParseAlesarSay(npc, creature, message, npcHandler)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.alesar_functions.as_i_expected_4", npc, creature)
+			npcHandler:say("As I expected. You haven't got the stone. Shall I explain your mission again?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	end

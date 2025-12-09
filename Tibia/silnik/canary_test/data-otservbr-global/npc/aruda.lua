@@ -81,170 +81,170 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	local Sex = player:getSex()
 	if npcHandler:getTopic(playerId) == 1 then
-		npcHandler:sayLocalized("npc.aruda.i_would_never_1", npc, creature)
+		npcHandler:say("I would never have guessed that.", npc, creature)
 		npcHandler:setTopic(playerId, nil)
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if player:removeMoneyBank(price[playerId]) then
-			npcHandler:sayLocalized("npc.aruda.oh_sorry_i_2", npc, creature)
+			npcHandler:say("Oh, sorry, I was distracted, what did you say?", npc, creature)
 		else
-			npcHandler:sayLocalized("npc.aruda.oh_i_just_3", npc, creature)
+			npcHandler:say("Oh, I just remember I have some work to do, sorry. Bye!", npc, creature)
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		end
 		npcHandler:setTopic(playerId, nil)
 		price[playerId] = nil
 	elseif npcHandler:getTopic(playerId) == 3 and player:removeItem(2906, 1) then
-		npcHandler:sayLocalized("npc.aruda.take_some_time_4", npc, creature)
+		npcHandler:say("Take some time to talk to me!", npc, creature)
 		npcHandler:setTopic(playerId, nil)
 	elseif npcHandler:getTopic(playerId) == 4 and (MsgContains(message, "spouse") or MsgContains(message, "girlfriend")) then
-		npcHandler:sayLocalized("npc.aruda.well_i_have_5", npc, creature)
+		npcHandler:say("Well ... I have met him for a little while .. but this was nothing serious.", npc, creature)
 		npcHandler:setTopic(playerId, 5)
 	elseif npcHandler:getTopic(playerId) == 5 and MsgContains(message, "fruit") then
-		npcHandler:sayLocalized("npc.aruda.i_remember_that_6", npc, creature)
+		npcHandler:say("I remember that grapes were his favourites. He was almost addicted to them.", npc, creature)
 		npcHandler:setTopic(playerId, nil)
 	elseif MsgContains(message, "how") and MsgContains(message, "are") and MsgContains(message, "you") then
-		npcHandler:sayLocalized("npc.aruda.thank_you_very_7", npc, creature)
+		npcHandler:say("Thank you very much. How kind of you to care about me. I am fine, thank you.", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "sell") then
-		npcHandler:sayLocalized("npc.aruda.sorry_i_have_8", npc, creature)
+		npcHandler:say("Sorry, I have nothing to sell.", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "job") or MsgContains(message, "chat") then
-		npcHandler:sayLocalized("npc.aruda.i_do_some_9", npc, creature)
+		npcHandler:say("I do some work now and then. Nothing unusual, though. So I have plenty time to chat. If you are interested in any topic just ask me.", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "name") then
 		if Sex == PLAYERSEX_FEMALE then
-			npcHandler:sayLocalized("npc.aruda.i_am_aruda_10", npc, creature)
+			npcHandler:say("I am Aruda.", npc, creature)
 		else
-			npcHandler:sayLocalized("npc.aruda.i_am_a_11", npc, creature)
+			npcHandler:say("I am a little sad, that you seem to have forgotten me, handsome. I am Aruda.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "aruda") then
 		if Sex == PLAYERSEX_FEMALE then
-			npcHandler:sayLocalized("npc.aruda.yes_thats_me_12", npc, creature)
+			npcHandler:say("Yes, that's me!", npc, creature)
 		else
-			npcHandler:sayLocalized("npc.aruda.oh_i_like_13", npc, creature)
+			npcHandler:say("Oh, I like it, how you say my name.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "time") then
-		npcHandler:sayLocalized("npc.aruda.please_dont_be_14", npc, creature)
+		npcHandler:say("Please don't be so rude to look for the time if you are talking to me.", npc, creature)
 		npcHandler:setTopic(playerId, 3)
 	elseif MsgContains(message, "help") then
-		npcHandler:sayLocalized("npc.aruda.i_am_deeply_15", npc, creature)
+		npcHandler:say("I am deeply sorry, I can't help you.", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "monster") or MsgContains(message, "dungeon") then
-		npcHandler:sayLocalized("npc.aruda.uh_what_a_16", npc, creature)
+		npcHandler:say("UH! What a terrifying topic. Please let us speak about something more pleasant, I am a weak and small woman after all.", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "sewer") then
-		npcHandler:sayLocalized("npc.aruda.what_gives_you_17", npc, creature)
+		npcHandler:say("What gives you the impression, I am the kind of women, you find in sewers?", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "god") then
-		npcHandler:sayLocalized("npc.aruda.you_should_ask_18", npc, creature)
+		npcHandler:say("You should ask about that in one of the temples.", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "king") then
-		npcHandler:sayLocalized("npc.aruda.the_king_that_19", npc, creature)
+		npcHandler:say("The king, that lives in this fascinating castle? I think he does look kind of cute in his luxurious robes, doesn't he?", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 10
 	elseif MsgContains(message, "sam") then
 		if Sex == PLAYERSEX_FEMALE then
-			npcHandler:sayLocalized("npc.aruda.he_is_soooo_20", npc, creature)
+			npcHandler:say("He is soooo strong! What muscles! What a body! Did you ask him for a date?", npc, creature)
 		else
-			npcHandler:sayLocalized("npc.aruda.he_is_soooo_21", npc, creature)
+			npcHandler:say("He is soooo strong! What muscles! What a body! On the other hand, compared to you he looks quite puny.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "benjamin") then
-		npcHandler:sayLocalized("npc.aruda.he_is_a_22", npc, creature)
+		npcHandler:say("He is a little simple minded but always nice and well dressed.", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "gorn") then
-		npcHandler:sayLocalized("npc.aruda.he_should_really_23", npc, creature)
+		npcHandler:say("He should really sell some stylish gowns or something like that. We Tibians never get some clothing of the latest fashion. It's a shame.", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "quentin") then
-		npcHandler:sayLocalized("npc.aruda.i_dont_understand_24", npc, creature)
+		npcHandler:say("I don't understand this lonely monks. I love company too much to become one. Hehehe!", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "bozo") then
-		npcHandler:sayLocalized("npc.aruda.oh_isnt_he_25", npc, creature)
+		npcHandler:say("Oh, isn't he funny? I could listen to him the whole day.", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "oswald") then
-		npcHandler:sayLocalized("npc.aruda.as_far_as_26", npc, creature)
+		npcHandler:say("As far as I know, he is working in the castle.", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "rumour") or MsgContains(message, "rumor") or MsgContains(message, "gossip") then
-		npcHandler:sayLocalized("npc.aruda.i_am_a_27", npc, creature)
+		npcHandler:say("I am a little shy and so don't hear many rumors.", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "kiss") and Sex == PLAYERSEX_MALE then
-		npcHandler:sayLocalized("npc.aruda.oh_you_little_28", npc, creature)
+		npcHandler:say("Oh, you little devil, stop talking like that! <blush>", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 20
 	elseif MsgContains(message, "weapon") then
-		npcHandler:sayLocalized("npc.aruda.i_know_only_29", npc, creature)
+		npcHandler:say("I know only little about weapons. Can you tell me something about them, please?", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "magic") then
-		npcHandler:sayLocalized("npc.aruda.i_believe_that_30", npc, creature)
+		npcHandler:say("I believe that love is stronger than magic, don't you agree?", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "thief") or MsgContains(message, "theft") then
-		npcHandler:sayLocalized("npc.aruda.oh_sorry_i_31", npc, creature)
+		npcHandler:say("Oh, sorry, I have to hurry, bye!", npc, creature)
 		npcHandler:setTopic(playerId, nil)
 		price[playerId] = nil
 		npcHandler:removeInteraction(npc, creature)
 		npcHandler:resetNpc(creature)
 	elseif MsgContains(message, "tibia") then
-		npcHandler:sayLocalized("npc.aruda.i_would_like_32", npc, creature)
+		npcHandler:say("I would like to visit the beach more often, but I guess it's too dangerous.", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "castle") then
-		npcHandler:sayLocalized("npc.aruda.i_love_this_33", npc, creature)
+		npcHandler:say("I love this castle! It's so beautiful.", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "muriel") then
-		npcHandler:sayLocalized("npc.aruda.powerful_sorcerers_fright_34", npc, creature)
+		npcHandler:say("Powerful sorcerers frighten me a little.", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "elane") then
-		npcHandler:sayLocalized("npc.aruda.i_personally_think_35", npc, creature)
+		npcHandler:say("I personally think it's inappropriate for a woman to become a warrior, what do you think about that?", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "marvik") then
-		npcHandler:sayLocalized("npc.aruda.druids_seldom_visit_36", npc, creature)
+		npcHandler:say("Druids seldom visit a town, what do you know about druids?", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "gregor") then
-		npcHandler:sayLocalized("npc.aruda.i_like_brave_37", npc, creature)
+		npcHandler:say("I like brave fighters like him.", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "noodles") then
-		npcHandler:sayLocalized("npc.aruda.oh_he_is_38", npc, creature)
+		npcHandler:say("Oh, he is sooooo cute!", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "dog") or MsgContains(message, "poodle") then
-		npcHandler:sayLocalized("npc.aruda.i_like_dogs_39", npc, creature)
+		npcHandler:say("I like dogs, the little ones at least. Do you like dogs, too?", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 5
 	elseif MsgContains(message, "excalibug") then
-		npcHandler:sayLocalized("npc.aruda.oh_i_am_40", npc, creature)
+		npcHandler:say("Oh, I am just a girl and know nothing about magic swords and such things.", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 		price[playerId] = 10
 	elseif MsgContains(message, "partos") then
-		npcHandler:sayLocalized("npc.aruda.i_dont_know_41", npc, creature)
+		npcHandler:say("I ... don't know someone named like that.", npc, creature)
 		npcHandler:setTopic(playerId, 4)
 		price[playerId] = nil
 	elseif MsgContains(message, "yenny") then
-		npcHandler:sayLocalized("npc.aruda.yenny_i_know_42", npc, creature)
+		npcHandler:say("Yenny? I know no Yenny, nor have I ever used that name! You have mistook me with someone else.", npc, creature)
 		npcHandler:setTopic(playerId, nil)
 		price[playerId] = nil
 		npcHandler:removeInteraction(npc, creature)

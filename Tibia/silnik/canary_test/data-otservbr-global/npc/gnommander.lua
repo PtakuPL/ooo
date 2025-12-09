@@ -61,11 +61,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	local playerId = player:getId()
 
 	if MsgContains(message, "commander") then
-		return npcHandler:sayLocalized("npc.gnommander.im_responsible_for_1", npc, creature)
+		return npcHandler:say("I'm responsible for the security and reward heroes to our cause. If you are looking for missions, talk to Gnomilly, Gnombold and Gnomagery.", npc, creature)
 	end
 
 	if MsgContains(message, "reward") then
-		return npcHandler:sayLocalized("npc.gnommander.i_can_sell_2", npc, creature)
+		return npcHandler:say("I can sell special outfit parts. If your fame is high enough, you might be {worthy} of such a reward.", npc, creature)
 	end
 
 	if MsgContains(message, "spike") then
@@ -74,63 +74,63 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "worthy") then
 		if player:getFamePoints() < 100 then
-			return npcHandler:sayLocalized("npc.gnommander.you_are_not_3", npc, creature)
+			return npcHandler:say("You are not worthy of a special reward yet.", npc, creature)
 		end
 
 		talkState[playerId] = "worthy"
-		return npcHandler:sayLocalized("npc.gnommander.you_can_acquire_4", npc, creature)
+		return npcHandler:say("You can acquire the {basic} outfit for 1000 Gold, the {first} addon for 2000 gold and the {second} addon for 3000 gold. Which do you want to buy?", npc, creature)
 	end
 
 	if talkState[playerId] == "worthy" then
 		if MsgContains(message, "basic") then
 			if getPlayerLevel(creature) < 25 then
 				talkState[playerId] = nil
-				return npcHandler:sayLocalized("npc.gnommander.you_do_not_5", npc, creature)
+				return npcHandler:say("You do not have enough level yet.", npc, creature)
 			end
 
 			if player:hasOutfit(player:getSex() == 0 and 575 or 574) then
 				talkState[playerId] = nil
-				return npcHandler:sayLocalized("npc.gnommander.you_already_have_6", npc, creature)
+				return npcHandler:say("You already have that outfit.", npc, creature)
 			end
 
 			talkState[playerId] = "basic"
-			return npcHandler:sayLocalized("npc.gnommander.do_you_want_7", npc, creature)
+			return npcHandler:say("Do you want to buy the basic outfit for 1000 Gold?", npc, creature)
 		elseif MsgContains(message, "first") then
 			if getPlayerLevel(creature) < 50 then
 				talkState[playerId] = nil
-				return npcHandler:sayLocalized("npc.gnommander.you_do_not_8", npc, creature)
+				return npcHandler:say("You do not have enough level yet.", npc, creature)
 			end
 
 			if not player:hasOutfit(player:getSex() == 0 and 575 or 574) then
 				talkState[playerId] = nil
-				return npcHandler:sayLocalized("npc.gnommander.you_do_not_9", npc, creature)
+				return npcHandler:say("You do not have the Cave Explorer outfit.", npc, creature)
 			end
 
 			if player:hasOutfit(player:getSex() == 0 and 575 or 574, 1) then
 				talkState[playerId] = nil
-				return npcHandler:sayLocalized("npc.gnommander.you_already_have_10", npc, creature)
+				return npcHandler:say("You already have that addon.", npc, creature)
 			end
 
 			talkState[playerId] = "first"
-			return npcHandler:sayLocalized("npc.gnommander.do_you_want_11", npc, creature)
+			return npcHandler:say("Do you want to buy the first addon for 2000 Gold?", npc, creature)
 		elseif MsgContains(message, "second") then
 			if getPlayerLevel(creature) < 80 then
 				talkState[playerId] = nil
-				return npcHandler:sayLocalized("npc.gnommander.you_do_not_12", npc, creature)
+				return npcHandler:say("You do not have enough level yet.", npc, creature)
 			end
 
 			if not player:hasOutfit(player:getSex() == 0 and 575 or 574) then
 				talkState[playerId] = nil
-				return npcHandler:sayLocalized("npc.gnommander.you_do_not_13", npc, creature)
+				return npcHandler:say("You do not have the Cave Explorer outfit.", npc, creature)
 			end
 
 			if player:hasOutfit(player:getSex() == 0 and 575 or 574, 2) then
 				talkState[playerId] = nil
-				return npcHandler:sayLocalized("npc.gnommander.you_already_have_14", npc, creature)
+				return npcHandler:say("You already have that addon.", npc, creature)
 			end
 
 			talkState[playerId] = "second"
-			return npcHandler:sayLocalized("npc.gnommander.do_you_want_15", npc, creature)
+			return npcHandler:say("Do you want to buy the second addon for 3000 Gold?", npc, creature)
 		end
 	end
 
@@ -138,35 +138,35 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			if not player:removeMoney(1000) then
 				talkState[playerId] = nil
-				return npcHandler:sayLocalized("npc.gnommander.you_do_not_16", npc, creature)
+				return npcHandler:say("You do not have that money.", npc, creature)
 			end
 		end
 		player:removeFamePoints(100)
 		player:addOutfit(player:getSex() == 0 and 575 or 574)
 		talkState[playerId] = nil
-		return npcHandler:sayLocalized("npc.gnommander.here_it_is_17", npc, creature)
+		return npcHandler:say("Here it is.", npc, creature)
 	elseif talkState[playerId] == "first" then
 		if MsgContains(message, "yes") then
 			if not player:removeMoney(2000) then
 				talkState[playerId] = nil
-				return npcHandler:sayLocalized("npc.gnommander.you_do_not_18", npc, creature)
+				return npcHandler:say("You do not have that money.", npc, creature)
 			end
 		end
 		player:removeFamePoints(100)
 		player:addOutfitAddon(player:getSex() == 0 and 575 or 574, 1)
 		talkState[playerId] = nil
-		return npcHandler:sayLocalized("npc.gnommander.here_it_is_19", npc, creature)
+		return npcHandler:say("Here it is.", npc, creature)
 	elseif talkState[playerId] == "second" then
 		if MsgContains(message, "yes") then
 			if not player:removeMoney(3000) then
 				talkState[playerId] = nil
-				return npcHandler:sayLocalized("npc.gnommander.you_do_not_20", npc, creature)
+				return npcHandler:say("You do not have that money.", npc, creature)
 			end
 		end
 		player:removeFamePoints(100)
 		player:addOutfitAddon(player:getSex() == 0 and 575 or 574, 2)
 		talkState[playerId] = nil
-		return npcHandler:sayLocalized("npc.gnommander.here_it_is_21", npc, creature)
+		return npcHandler:say("Here it is.", npc, creature)
 	end
 	return true
 end

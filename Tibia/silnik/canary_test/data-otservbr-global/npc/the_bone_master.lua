@@ -70,13 +70,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "advancement") or MsgContains(message, "demonic") or MsgContains(message, "essence") then
 		if player:getStorageValue(Storage.Quest.U7_9.BrotherhoodOutfits.Outfits) == 1 then
-			npcHandler:sayLocalized("npc.the_bone_master.so_you_want_1", npc, creature)
+			npcHandler:say("So you want to advance to a {Hyaena} rank? Did you bring 500 demonic essences with you?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U7_9.BrotherhoodOutfits.Outfits) == 2 then
-			npcHandler:sayLocalized("npc.the_bone_master.so_you_want_2", npc, creature)
+			npcHandler:say("So you want to advance to a {Death Dealer} rank? Did you bring 1000 demonic essences with you?", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		elseif player:getStorageValue(Storage.Quest.U7_9.BrotherhoodOutfits.Outfits) == 3 then
-			npcHandler:sayLocalized("npc.the_bone_master.so_you_want_3", npc, creature)
+			npcHandler:say("So you want to advance to a {Dread Lord} rank? Did you bring 1500 demonic essences with you?", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "yes") then
@@ -101,9 +101,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 				player:setStorageValue(Storage.Quest.U7_9.BrotherhoodOutfits.Outfits, 2)
 				player:addItem(769, 1)
-				npcHandler:sayLocalized("npc.the_bone_master.you_advanced_to_4", npc, creature)
+				npcHandler:say("You advanced to {Hyaena} rank! You are now able to use teleports of second floor of Knightwatch Tower.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.the_bone_master.come_back_when_5", npc, creature)
+				npcHandler:say("Come back when you gather all essences.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
@@ -113,9 +113,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addItem(770, 1)
 				player:addItem(6432, 1)
 				player:addAchievement("Skull and Bones")
-				npcHandler:sayLocalized("npc.the_bone_master.you_advanced_to_6", npc, creature)
+				npcHandler:say("You advanced to {Death Dealer} rank!", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.the_bone_master.come_back_when_7", npc, creature)
+				npcHandler:say("Come back when you gather all essences.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
@@ -125,9 +125,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U7_9.BrotherhoodOutfits.Door, 1)
 				player:setStorageValue(Storage.Quest.U7_9.NightmareOutfits.KnightwatchTowerDoor, 1)
 				player:addAchievement("Dread Lord")
-				npcHandler:sayLocalized("npc.the_bone_master.you_advanced_to_8", npc, creature)
+				npcHandler:say("You advanced to {Dread Lord} rank! You are now able to use teleports of fourth floor of Knightwatch Tower and to create addon scrolls.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.the_bone_master.come_back_when_9", npc, creature)
+				npcHandler:say("Come back when you gather all essences.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		end

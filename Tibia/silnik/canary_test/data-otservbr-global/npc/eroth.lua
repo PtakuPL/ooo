@@ -58,11 +58,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "mission") then
 		-- Check if player is starting the quest
 		if player:getStorageValue(Storage.Quest.U8_1.ToBlindTheEnemy.Questline) < 1 then
-			npcHandler:sayLocalized("npc.eroth.have_you_ever_1", npc, creature)
+			npcHandler:say("Have you ever heard of Elvenbane? It is the castle west of Ab'Dendriel which is inhabited by villains from all over the continent. Any support in this war is welcome. Are you willing to help?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		-- Check if player has completed certain objectives
 		elseif player:getStorageValue(Storage.Quest.U8_1.ToBlindTheEnemy.Questline) == 2 and player:getStorageValue(Storage.Quest.U8_1.ToBlindTheEnemy.DwarvenShield) == 1 and player:getStorageValue(Storage.Quest.U8_1.ToBlindTheEnemy.MorningStar) == 1 and player:getStorageValue(Storage.Quest.U8_1.ToBlindTheEnemy.BP1) == 1 and player:getStorageValue(Storage.Quest.U8_1.ToBlindTheEnemy.BP2) == 1 then
-			npcHandler:sayLocalized("npc.eroth.i_heard_the_2", npc, creature)
+			npcHandler:say("I heard the blow! The reflection must have caused a overcharge of magical energy leading to the contraction and the implosion. Just like I hoped! Please take this as a reward. Thank you very much.", npc, creature)
 			player:addItem(3082, 1)
 			player:addItem(3035, 10)
 			player:setStorageValue(Storage.Quest.U8_1.ToBlindTheEnemy.Questline, 3)

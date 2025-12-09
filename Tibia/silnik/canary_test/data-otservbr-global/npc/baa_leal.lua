@@ -60,7 +60,7 @@ local function greetCallback(npc, creature, message)
 	local playerId = player:getId()
 
 	if not MsgContains(message, "djanni'hah") then
-		npcHandler:sayLocalized("npc.baa_leal.shove_off_little_1", npc, creature)
+		npcHandler:say("Shove off, little one! Humans are not welcome here, |PLAYERNAME|!", npc, creature)
 		endConversationWithDelay(npcHandler, npc, creature)
 		return false
 	end
@@ -75,9 +75,9 @@ local function greetCallback(npc, creature, message)
 	end
 
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission01) < 1 then
-		npcHandler:sayLocalized("npc.baa_leal.you_know_the_2", npc, creature)
+		npcHandler:say("You know the code human! Very well then... What do you want, |PLAYERNAME|?", npc, creature)
 	else
-		npcHandler:sayLocalized("npc.baa_leal.you_are_still_3", npc, creature)
+		npcHandler:say("You are still alive, |PLAYERNAME|? Well, what do you want?", npc, creature)
 	end
 
 	npcHandler:setInteraction(npc, creature)
@@ -103,10 +103,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif table.contains({ 1, 2 }, missionProgress) then
-			npcHandler:sayLocalized("npc.baa_leal.did_you_find_4", npc, creature)
+			npcHandler:say("Did you find the thief of our supplies?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		else
-			npcHandler:sayLocalized("npc.baa_leal.did_you_already_5", npc, creature)
+			npcHandler:say("Did you already talk to Alesar? He has another mission for you!", npc, creature)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
@@ -121,21 +121,21 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Start, 1)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission01, 1)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.baa_leal.after_all_youre_6", npc, creature)
+			npcHandler:say("After all, you're just a human.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "yes") then
-			npcHandler:sayLocalized("npc.baa_leal.finally_what_is_7", npc, creature)
+			npcHandler:say("Finally! What is his name then?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.baa_leal.then_go_to_8", npc, creature)
+			npcHandler:say("Then go to Carlin and search for him! Look for something that might give you a clue!", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 3 then
 		if MsgContains(message, "partos") then
 			if missionProgress ~= 2 then
-				npcHandler:sayLocalized("npc.baa_leal.hmmm_i_dont_9", npc, creature)
+				npcHandler:say("Hmmm... I don't think so. Return to Thais and continue your search!", npc, creature)
 			else
 				npcHandler:say({
 					"You found the thief! Excellent work, soldier! You are doing well - for a human, that is. Here - take this as a reward. ...",
@@ -146,7 +146,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Mission01, 3)
 			end
 		else
-			npcHandler:sayLocalized("npc.baa_leal.hmmm_i_dont_10", npc, creature)
+			npcHandler:say("Hmmm... I don't think so. Return to Thais and continue your search!", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

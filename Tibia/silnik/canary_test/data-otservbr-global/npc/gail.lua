@@ -77,7 +77,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "daughter") and player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.Asuras.Questline) == 3 then
-		npcHandler:sayLocalized("npc.gail.i_always_feared_1", npc, creature)
+		npcHandler:say("I always feared that I lost her. And yet, all those years, I still had a gleam of hope. I'm devastated to learn about her fate - but at least I have certainty now. Thank you for telling me.", npc, creature)
 		player:setStorageValue(Storage.Quest.U11_80.TheSecretLibrary.Asuras.Questline, 4)
 		npcHandler:setTopic(playerId, 1)
 	end

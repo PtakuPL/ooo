@@ -89,23 +89,23 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if table.contains({ "soft boots", "repair", "soft", "boots" }, message) then
-		npcHandler:sayLocalized("npc.aldo.do_you_want_1", npc, creature)
+		npcHandler:say("Do you want to repair your worn soft boots for 10000 gold coins?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
 		npcHandler:setTopic(playerId, 0)
 		if player:getItemCount(6530) == 0 then
-			npcHandler:sayLocalized("npc.aldo.sorry_you_dont_2", npc, creature)
+			npcHandler:say("Sorry, you don't have the item.", npc, creature)
 			return true
 		end
 
 		if not player:removeMoneyBank(10000) then
-			npcHandler:sayLocalized("npc.aldo.sorry_you_dont_3", npc, creature)
+			npcHandler:say("Sorry, you don't have enough gold.", npc, creature)
 			return true
 		end
 
 		player:removeItem(6530, 1)
 		player:addItem(6529, 1)
-		npcHandler:sayLocalized("npc.aldo.here_you_are_4", npc, creature)
+		npcHandler:say("Here you are.", npc, creature)
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 1 then
 		npcHandler:setTopic(playerId, 0)
 		npcHandler:say("Ok then.", npc, creature)

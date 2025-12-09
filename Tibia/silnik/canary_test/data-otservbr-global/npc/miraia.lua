@@ -104,10 +104,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if player:getSex() == PLAYERSEX_FEMALE and MsgContains(message, "outfit") then
-		npcHandler:sayLocalized("npc.miraia.hehe_would_you_1" or "My veil? No, I will definitely not lift it for you! If you are looking for an addon, go talk to Razan.", npc, creature)
+		npcHandler:say("Hehe, would you like to wear a pretty veil like I do? Well... I could help you, but you would have to complete a task first." or "My veil? No, I will definitely not lift it for you! If you are looking for an addon, go talk to Razan.", npc, creature)
 	elseif player:getSex() == PLAYERSEX_FEMALE and MsgContains(message, "task") then
 		if player:getStorageValue(Storage.Quest.U7_8.OrientalOutfits.SecondOrientalAddon) < 1 then
-			npcHandler:sayLocalized("npc.miraia.you_mean_you_2", npc, creature)
+			npcHandler:say("You mean, you would like to prove that you deserve to wear such a veil?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif config[message] and npcHandler:getTopic(playerId) == 0 then
@@ -120,9 +120,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "scarab cheese") then
 		if player:getStorageValue(Storage.Quest.U8_1.TheTravellingTrader.Mission03) == 1 then
-			npcHandler:sayLocalized("npc.miraia.let_me_cover_3", npc, creature)
+			npcHandler:say("Let me cover my nose before I get this for you... Would you REALLY like to buy scarab cheese for 100 gold?", npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U8_1.TheTravellingTrader.Mission03) == 2 then
-			npcHandler:sayLocalized("npc.miraia.oh_the_last_4", npc, creature)
+			npcHandler:say("Oh the last cheese molded? Would you like to buy another one for 100 gold?", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 4)
 	elseif MsgContains(message, "yes") then
@@ -141,12 +141,12 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.OutfitQuest.DefaultStart, 1)
 			end
 			player:setStorageValue(Storage.Quest.U7_8.OrientalOutfits.SecondOrientalAddon, 1)
-			npcHandler:sayLocalized("npc.miraia.excellent_come_back_5", npc, creature)
+			npcHandler:say("Excellent! Come back to me once you have collected 100 pieces of ape fur.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			local targetMessage = config[topic[playerId]]
 			if not player:removeItem(targetMessage.itemId, targetMessage.count) then
-				npcHandler:sayLocalized("npc.miraia.that_is_a_6", npc, creature)
+				npcHandler:say("That is a shameless lie.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -162,14 +162,14 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_1.TheTravellingTrader.Mission03, 2)
 				player:addItem(169, 1)
 				player:removeMoneyBank(100)
-				npcHandler:sayLocalized("npc.miraia.here_it_is_7", npc, creature)
+				npcHandler:say("Here it is.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.miraia.you_dont_have_8", npc, creature)
+				npcHandler:say("You don't have enough money.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) ~= 0 then
-		npcHandler:sayLocalized("npc.miraia.what_a_pity_9", npc, creature)
+		npcHandler:say("What a pity.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

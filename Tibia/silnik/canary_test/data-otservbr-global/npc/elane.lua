@@ -60,32 +60,32 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "addon") or MsgContains(message, "outfit") then
 		if player:getStorageValue(Storage.Quest.U7_8.HunterOutfits.HunterHatAddon) < 1 then
-			npcHandler:sayLocalized("npc.elane.oh_my_winged_1", npc, creature)
+			npcHandler:say("Oh, my winged tiara? Those are traditionally awarded after having completed a difficult {task} for our guild, only to female aspirants though. Male warriors will receive a hooded cloak.", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "task") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.elane.so_you_are_2", npc, creature)
+			npcHandler:say("So you are saying that you would like to prove that you deserve to wear such a hooded cloak?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "crossbow") then
 		if player:getStorageValue(Storage.Quest.U7_8.HunterOutfits.HunterHatAddon) == 1 then
-			npcHandler:sayLocalized("npc.elane.im_so_excited_3", npc, creature)
+			npcHandler:say("I'm so excited! Have you really found my crossbow?", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "leather") then
 		if player:getStorageValue(Storage.Quest.U7_8.HunterOutfits.HunterHatAddon) == 2 then
-			npcHandler:sayLocalized("npc.elane.did_you_bring_4", npc, creature)
+			npcHandler:say("Did you bring me 100 pieces of lizard leather and 100 pieces of red dragon leather?", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "chicken wing") then
 		if player:getStorageValue(Storage.Quest.U7_8.HunterOutfits.HunterHatAddon) == 3 then
-			npcHandler:sayLocalized("npc.elane.were_you_able_5", npc, creature)
+			npcHandler:say("Were you able to get hold of 5 enchanted chicken wings?", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		end
 	elseif MsgContains(message, "steel") then
 		if player:getStorageValue(Storage.Quest.U7_8.HunterOutfits.HunterHatAddon) == 4 then
-			npcHandler:sayLocalized("npc.elane.ah_have_you_6", npc, creature)
+			npcHandler:say("Ah, have you brought one piece of royal steel, draconian steel and hell steel each?", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		end
 	elseif MsgContains(message, "yes") then
@@ -101,39 +101,39 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:sayLocalized("npc.elane.thats_the_spirit_7", npc, creature)
+			npcHandler:say("That's the spirit! I hope you will find my crossbow, |PLAYERNAME|!", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.HunterOutfits.HunterHatAddon, 1)
 			player:setStorageValue(Storage.OutfitQuest.DefaultStart, 1) --this for default start of Outfit and Addon Quests
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:removeItem(5947, 1) then
-				npcHandler:sayLocalized("npc.elane.yeah_i_could_8", npc, creature)
+				npcHandler:say("Yeah! I could kiss you right here and there! Besides, you're a handsome one. <giggles> Please bring me 100 pieces of lizard leather and 100 pieces of red dragon leather now!", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_8.HunterOutfits.HunterHatAddon, 2)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.elane.you_dont_have_9", npc, creature)
+				npcHandler:say("You don't have it...", npc, creature)
 			end
 		elseif npcHandler:getTopic(playerId) == 5 then
 			if player:getItemCount(5876) >= 100 and player:getItemCount(5948) >= 100 then
-				npcHandler:sayLocalized("npc.elane.good_work_playername_10", npc, creature)
+				npcHandler:say("Good work, |PLAYERNAME|! That is enough leather for a lot of sturdy quivers. Now, please bring me 5 enchanted chicken wings.", npc, creature)
 				player:removeItem(5876, 100)
 				player:removeItem(5948, 100)
 				player:setStorageValue(Storage.Quest.U7_8.HunterOutfits.HunterHatAddon, 3)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.elane.you_dont_have_11", npc, creature)
+				npcHandler:say("You don't have it...", npc, creature)
 			end
 		elseif npcHandler:getTopic(playerId) == 6 then
 			if player:removeItem(5891, 5) then
-				npcHandler:sayLocalized("npc.elane.great_now_we_12", npc, creature)
+				npcHandler:say("Great! Now we can create a few more Tiaras. If only they weren't that expensive... Well anyway, please obtain one piece of royal steel, draconian steel and hell steel each.", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_8.HunterOutfits.HunterHatAddon, 4)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.elane.you_dont_have_13", npc, creature)
+				npcHandler:say("You don't have it...", npc, creature)
 			end
 		elseif npcHandler:getTopic(playerId) == 7 then
 			if player:getItemCount(5887) >= 1 and player:getItemCount(5888) >= 1 and player:getItemCount(5889) >= 1 then
-				npcHandler:sayLocalized("npc.elane.wow_im_impressed_14", npc, creature)
+				npcHandler:say("Wow, I'm impressed, |PLAYERNAME|. Your really are a valuable member of our paladin guild. I shall grant you your reward now. Wear it proudly!", npc, creature)
 				player:removeItem(5887, 1)
 				player:removeItem(5888, 1)
 				player:removeItem(5889, 1)
@@ -143,7 +143,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.elane.you_dont_have_15", npc, creature)
+				npcHandler:say("You don't have it...", npc, creature)
 			end
 		end
 	elseif MsgContains(message, "no") then

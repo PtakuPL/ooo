@@ -68,14 +68,14 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Third.Recovering) == 3 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourth.Moe) < 1 then
-			npcHandler:sayLocalized("npc.eshaya.very_good_but_1", npc, creature)
+			npcHandler:say("Very good. But now you need the Ring of Secret Thoughts back in order to extract the Ambassador's memories.", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getItemById(31263, true) and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Third.Recovering) < 2 then
-			npcHandler:sayLocalized("npc.eshaya.you_found_the_2", npc, creature)
+			npcHandler:say("You found the Ring of Secret Thoughts! Well done! Now give it to the Ambassador as a present. He's a peacock and will accept such a precious gift for sure. As soon as he wears it, his memories will be stored in the ring.", npc, creature)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Third.Recovering, 2)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.First.Title) < 1 then
-			npcHandler:sayLocalized("npc.eshaya.im_willing_to_3", npc, creature)
+			npcHandler:say("I'm willing to admit that I need help. And the help of someone who is not from {Issavi} at that. But the task could be dangerous and you would become embroiled in the politics and court intrigues of {Kilmaresh}. Will you help me anyhow?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Second.Investigating) == 5 then
 			npcHandler:say({
@@ -85,11 +85,11 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Second.Investigating, 6)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fifth.Memories) == 4 then
-			npcHandler:sayLocalized("npc.eshaya.this_is_the_4", npc, creature)
+			npcHandler:say("This is the proof we need! Very well done! You have to report this to our {Empress}. She will grant you an audience now.", npc, creature)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fifth.Memories, 5)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:sayLocalized("npc.eshaya.you_havent_completed_5", npc, creature)
+			npcHandler:say("You haven't completed your mission yet. Keep searching!", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") then
@@ -107,23 +107,23 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "theft") then
 		if npcHandler:getTopic(playerId) == 3 then
-			npcHandler:sayLocalized("npc.eshaya.i_dont_know_6", npc, creature)
+			npcHandler:say("I don't know whether you are experienced in such things. If not, you could ask somebody who is. But I'm not sure where in Issavi you should look to hire a thief.", npc, creature)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourth.Moe, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "ring of secret thoughts back") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:sayLocalized("npc.eshaya.i_guess_claiming_7", npc, creature)
+			npcHandler:say("I guess claiming back a present would be a bit suspicious. You'll have to find another way. I resent thinking about theft but sometimes, desperate times call for desperate measures.", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "ring") then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourth.Moe) == 4 then
-			npcHandler:sayLocalized("npc.eshaya.you_got_the_8", npc, creature)
+			npcHandler:say("You got the ring back? Very well done! Now search for the memories that will prove the Ambassador's treason. I don't know much about ancient artefacts but you could ask the librarian in the palace. I'm sure he knows something helpful.", npc, creature)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourth.Moe, 5)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "empress") then
-		npcHandler:sayLocalized("npc.eshaya.good_luck_on_9", npc, creature)
+		npcHandler:say("Good luck on your audience with the Empress. May Kilmaresh prosper.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 

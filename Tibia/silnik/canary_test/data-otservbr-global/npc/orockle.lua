@@ -55,15 +55,15 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	--[[
 	if MsgContains(message, "fight") then
-		npcHandler:sayLocalized("npc.orockle.you_can_help_1", npc, creature)
+		npcHandler:say("You can help in the fight against the hive. There are several missions available to destabilise the hive. Just ask for them if you want to learn more. After completing many missions you might be worthy to get a reward.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "mission") then
-		npcHandler:sayLocalized("npc.orockle.you_could_try_2", npc, creature)
+		npcHandler:say("You could try to blind the hive, you might disrupt its digestion, you could gather acid or you can disable the swarm pores. ...", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:sayLocalized("npc.orockle.so_be_it_3", npc, creature)
+			npcHandler:say("So be it. Now you are a member of the inquisition. You might ask me for a mission to raise in my esteem.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

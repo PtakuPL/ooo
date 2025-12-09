@@ -60,9 +60,9 @@ local function playerSayCallback(npc, player, type, message)
 
 	local playerId = player:getId()
 	if MsgContains(message, "living") then
-		npcHandler:sayLocalized("npc.flickering_soul.it_has_been_1", npc, player)
+		npcHandler:say("It has been a while since I roamed the world of the living in a mortal shell.", npc, player)
 	elseif MsgContains(message, "mortal") then
-		npcHandler:sayLocalized("npc.flickering_soul.i_had_many_2", npc, player)
+		npcHandler:say("I had many names in my live. The one that would be the most recognizable is probably the name Goshnar. Even that was an assumed name that I took when I left my mundane past behind.", npc, player)
 	elseif MsgContains(message, "Goshnar") then
 		npcHandler:say({
 			"I was once known as the necromant king. ...",
@@ -74,9 +74,9 @@ local function playerSayCallback(npc, player, type, message)
 			"Though in hindsight even that wouldn't have been enough. There was a hunger in me that nothing could put to rest.",
 		}, npc, player, 4000)
 	elseif MsgContains(message, "milestone") then
-		npcHandler:sayLocalized("npc.flickering_soul.everything_in_my_3", npc, player)
+		npcHandler:say("Everything in my life was just a tool to further my goals. The brotherhood of bones was just a tool for me. As was everyone or everything. In the path I had chosen nothing mattered but me and my ambitions.", npc, player)
 	elseif MsgContains(message, "everything") then
-		npcHandler:sayLocalized("npc.flickering_soul.necromancy_was_a_4", npc, player)
+		npcHandler:say("Necromancy was a passion at first, another tool while I amassed power and a crutch when my ambitions surpassed that what it could accomplish.", npc, player)
 	elseif MsgContains(message, "accomplish") then
 		npcHandler:say({
 			"I was so convinced about my brilliance, my greatness, my destiny. And this hunger for more, it let me not have peace at any point in my life. I was always driven. There was no time to rest. ...",
@@ -84,9 +84,9 @@ local function playerSayCallback(npc, player, type, message)
 			"Now I see the bitter irony. I could bring back the dead, but I couldn't create second chances. I couldn't restore the truly important things that I had lost.",
 		}, npc, player, 4000)
 	elseif MsgContains(message, "dead") then
-		npcHandler:sayLocalized("npc.flickering_soul.my_demise_did_5", npc, player)
+		npcHandler:say("My demise did not meet me unprepared. As a powerful necromancer I had fettered my soul in the living world and the realms beyond. I had prepared for my return and was confident in my power.", npc, player)
 	elseif MsgContains(message, "confident") then
-		npcHandler:sayLocalized("npc.flickering_soul.my_soul_wandered_6", npc, player)
+		npcHandler:say("My soul wandered the plains of Zarganash, waiting for my wards to power up. Waiting for my soul to be slowly pulled back and manifest in the world of the living once again. What I had not taken into consideration was peace.", npc, player)
 	elseif MsgContains(message, "peace") then
 		npcHandler:say({
 			"Zarganash was not a place without its dangers, but for a soul as powerful as mine, there was little threat at all. For the first time in my existence I had to stop running forward. I had to wait for things to fit into their places. ...",
@@ -105,7 +105,7 @@ local function playerSayCallback(npc, player, type, message)
 			"I, who fancied myself to have been the epitome of knowledge, learned things that were entirely new to me. But this knowledge wasn't about power. It was about me.",
 		}, npc, player, 4000)
 	elseif MsgContains(message, "knowledge") then
-		npcHandler:sayLocalized("npc.flickering_soul.i_recognized_the_7", npc, player)
+		npcHandler:say("I recognized the extent of my folly and failure. I decided not to return to the world of the living.", npc, player)
 	elseif MsgContains(message, "return") then
 		npcHandler:say({
 			"I decided to stay here, even pass on into the great beyond at some point. Yet I still feel the pull of my fetters. I can faintly hear those who think they are my followers, calling to me.",
@@ -118,7 +118,7 @@ local function playerSayCallback(npc, player, type, message)
 			"They are beginning to feed not only on the fetters and incarnations but also on me. As I grow weaker, they grow more powerful over time.",
 		}, npc, player, 4000)
 	elseif MsgContains(message, "powerful") then
-		npcHandler:sayLocalized("npc.flickering_soul.the_only_way_8", npc, player)
+		npcHandler:say("The only way I can get rid of them is to disperse them, to 'kill' them so to say. But they are tainted parts of myself and even going near them might endanger my sanity and stability. So all I can do is to ask you to do this daunting task.", npc, player)
 	elseif MsgContains(message, "task") then
 		local soulWarQuest = player:soulWarQuestKV()
 		-- Checks if the boss has already been defeated
@@ -130,11 +130,11 @@ local function playerSayCallback(npc, player, type, message)
 			npcHandler:setTopic(playerId, 2)
 			player:addOutfit("Revenant")
 		else
-			npcHandler:sayLocalized("npc.flickering_soul.im_aware_i_9", npc, player)
+			npcHandler:say("I'm aware I have no right to ask and I have little to offer as a payment, but I ask you nonetheless. Will you face my fettered vices and destroy them for me?", npc, player)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:sayLocalized("npc.flickering_soul.thank_you_for_10", npc, player)
+		npcHandler:say("Thank you for accepting this burden.", npc, player)
 		soulWarQuest:set("teleport-access", true)
 	elseif MsgContains(message, "burden") then
 		npcHandler:say({
@@ -142,30 +142,30 @@ local function playerSayCallback(npc, player, type, message)
 			"Even worse, you'll likely encounter minions of those who want to claim my soul as their prize for their own depraved reasons. You will have to destroy my shards to set me free.",
 		}, npc, player, 5000)
 	elseif MsgContains(message, "shards") then
-		npcHandler:sayLocalized("npc.flickering_soul.you_havent_killed_11", npc, player)
+		npcHandler:say("You haven't killed Malice yet. You haven't killed Hatred yet. You haven't killed Spite yet. You haven't killed Cruelty yet. You haven't killed Greed yet.", npc, player)
 	elseif MsgContains(message, "hate") then
 		npcHandler:say({
 			"I hated the world for its flaws and the reluctance of people to comply with my will. I was convinced I was destined for greatness and to change everything. Ordinary beings were far beneath me and my consideration. ...",
 			"All this opposition, all the wars were a nuisance on my way to greatness. I would have sacrificed the whole world to reach my goals.",
 		}, npc, player, 4000)
 	elseif MsgContains(message, "fermuba") then
-		npcHandler:sayLocalized("npc.flickering_soul.my_daughter_was_12", npc, player)
+		npcHandler:say("My daughter was as ambitious as me, yet she lacked my intellect and my raw talent. She still was great and talented yet I sadly let her feel my disdain. One of the many errors that my way of hubris made me do.", npc, player)
 	elseif MsgContains(message, "ferumbras") then
 		npcHandler:say({
 			"Even in the lands of the dead, this one caused a stir. The dead were whispering his name. It made me feel jealous and angry at first, but at some point, after much self-reflection, I could recognize my own faults in the stories about him.",
 			"It was almost like looking into a mirror for the first time. However, he lived way later than me, and I never met his soul here, so I can't tell more about him.",
 		}, npc, player, 4000)
 	elseif MsgContains(message, "grandson") then
-		npcHandler:sayLocalized("npc.flickering_soul.im_not_aware_13", npc, player)
+		npcHandler:say(" I'm not aware of the fate of my linage. Neither I'm able to relate to the mortal world in that way. Each of us is an individual, not bound by ties of blood or herritage.", npc, player)
 	elseif MsgContains(message, "pale worm") then
-		npcHandler:sayLocalized("npc.flickering_soul.his_avatar_might_14", npc, player)
+		npcHandler:say("His avatar might be destroyed for now and it'd grip on Zarganash considerably weakened. Yet he burrowed to deep into the essence of this realm to be annihilated this easy.", npc, player)
 	elseif MsgContains(message, "necromant king") then
 		npcHandler:say({
 			"They called me the necromant king, in an act of reverence, but to me it was always more of a slander. To limit my greatness to this insignificant aspect was an insult to my ego. But I let it slip for the greater good. ...",
 			"I felt it was beneath me to correct them and I went along.",
 		}, npc, player, 4000)
 	elseif MsgContains(message, "minions") or MsgContains(message, "followers") then
-		npcHandler:sayLocalized("npc.flickering_soul.i_despised_my_15", npc, player)
+		npcHandler:say("I despised my followers for their petty agendas and for their limited vision of my own goals and personality.", npc, player)
 	elseif MsgContains(message, "shards") then
 		local bossesYetToDefeat = {}
 		for bossName, _ in pairs(SoulWarQuest.miniBosses) do
@@ -184,11 +184,11 @@ local function playerSayCallback(npc, player, type, message)
 	elseif MsgContains(message, "taints") or MsgContains(message, "penalties") then
 		if player:getTaintLevel() ~= nil then
 			player:resetTaints(true)
-			npcHandler:sayLocalized("npc.flickering_soul.i_have_cleansed_16", npc, player)
+			npcHandler:say("I have cleansed you from the taints that you carried with you. You are now free from the burden that you should not have to bear.", npc, player)
 			return
 		end
 
-		npcHandler:sayLocalized("npc.flickering_soul.you_are_not_17", npc, player)
+		npcHandler:say("You are not tainted by the darkness of the world. You are pure and free from the burdens that others carry.", npc, player)
 	end
 	return true
 end

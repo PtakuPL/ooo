@@ -68,15 +68,15 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "spare") then
-		npcHandler:sayLocalized("npc.shoddy_beggar.hmm_if_you_1", npc, creature)
+		npcHandler:say("Hmm, if you can spare a coin... we can talk. What do you say?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "device") then
 		if player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) == 1 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.persistent_little_nuisanc_2", npc, creature)
+			npcHandler:say("Persistent little nuisance, aren't we? Well, I like your spirit so I will tell you a secret. I may not look the part but I was once a {scientist}. The academy seemed to not like my... attitude and never actually invited me.", npc, creature)
 		end
 	elseif MsgContains(message, "scientist") then
 		if player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) == 1 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.indeed_i_was_3", npc, creature)
+			npcHandler:say("Indeed, I was one myself a long time ago. I may seem a little... distracted by now, but I was working on many important projects. I even created a device to... well, it will cost you another gold coin if you want me to tell you the whole story. You're in?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "yes") then
@@ -95,74 +95,74 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if not player:removeMoneyBank(1) then
-				npcHandler:sayLocalized("npc.shoddy_beggar.well_if_that_4", npc, creature)
+				npcHandler:say("Well, if that is all you can spare... better keep it.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
 
-			npcHandler:sayLocalized("npc.shoddy_beggar.alright_it_seems_5", npc, creature)
+			npcHandler:say("Alright, it seems you are serious about this. I will tell you about my device. Every night I looked up to the stars and wondered what worlds we would be able to find if we could just look where we wanted to. So... hey are you still listening?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.good_good_so_6", npc, creature)
+			npcHandler:say("Good, good. So eventually I found a way and invented a magic device I called the Lightboat. It was a large construction you could sit in and... well, judging by your looks you don't believe a word. Do you want to hear the story or not?", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		elseif npcHandler:getTopic(playerId) == 4 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.fine_for_years_7", npc, creature)
+			npcHandler:say("Fine. For years I gathered all the necessary items to build the device. I travelled, traded and took advantage of some rare opportunities. With luck and patience I eventually got every component I needed. Can you imagine the excitement I experienced?", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		elseif npcHandler:getTopic(playerId) == 5 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.and_there_i_8", npc, creature)
+			npcHandler:say("And there I stood before my greatest invention. Door to unknown places, mysterious worlds... yet one of my components was flawed. A small crack in a vital element of my construction quickly led to the failure of the whole project. Still following?", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		elseif npcHandler:getTopic(playerId) == 6 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.the_device_was_9", npc, creature)
+			npcHandler:say("The device was ultimately destroyed. I barely escaped the chaos with my life. My laboratory was shattered, as were all the components of the cursed device. With nothing left, I started to lead a new, different life. Do you know what that means?", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		elseif npcHandler:getTopic(playerId) == 7 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.pah_you_have_10", npc, creature)
+			npcHandler:say("Pah!! You have NO idea, leave me alone now.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 8 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.right_im_glad_11", npc, creature)
+			npcHandler:say("Right... I'm glad everything was destroyed. I don't even know why I kept the remaining copy of the plans all those years... oh, did I say this aloud?", npc, creature)
 			npcHandler:setTopic(playerId, 9)
 		elseif npcHandler:getTopic(playerId) == 9 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.yes_well_i_12", npc, creature)
+			npcHandler:say("Yes, well... I do have one remaining copy of the plans. I will keep them as a... reminder. Such ill-fated devices only cause trouble and despair. Mankind would be better off, without them, right?", npc, creature)
 			npcHandler:setTopic(playerId, 10)
 		elseif npcHandler:getTopic(playerId) == 10 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.ah_you_think_13", npc, creature)
+			npcHandler:say("Ah, you think you are wise but you know nothing, nothing about science, nothing about the opportunities it offers... You will never understand scientists like me.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 11 then
 			player:addItem(9696, 1)
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline, 2)
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Mission1, 2)
-			npcHandler:sayLocalized("npc.shoddy_beggar.well_to_be_14", npc, creature)
+			npcHandler:say("Well, to be honest, I envy him a little. He can continue his research in his laboratory. He still has working equipment... I sometimes read his publications. He is an able man, but completely on the wrong track... give these plans to him.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.mean_heartless_go_15", npc, creature)
+			npcHandler:say("Mean, heartless... go and leave me be.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.well_whatever_then_16", npc, creature)
+			npcHandler:say("Well, whatever then...", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.then_stop_bothering_17", npc, creature)
+			npcHandler:say("Then stop bothering me.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.your_decision_18", npc, creature)
+			npcHandler:say("Your decision.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.yes_and_i_19", npc, creature)
+			npcHandler:say("Yes and I, I... you mean what? Can't imagine? Well, then there is no purpose to continue telling you this story.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 6 then
 			npcHandler:say("*mumbles*", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 7 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.thought_so_it_20", npc, creature)
+			npcHandler:say("Thought so. It means starting anew, without any home, money or goal in your life. However, it also opens up opportunities... don't you agree?", npc, creature)
 			npcHandler:setTopic(playerId, 8)
 		elseif npcHandler:getTopic(playerId) == 8 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.no_no_you_21", npc, creature)
+			npcHandler:say("No, no, you are right, I should have tried to rebuild it, I should have been more careful, I should... ah, why did I even tell you this.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 9 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.phew_alright_it_22", npc, creature)
+			npcHandler:say("Phew... alright, it was nice talking to you.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 10 then
-			npcHandler:sayLocalized("npc.shoddy_beggar.hm_maybe_you_23", npc, creature)
+			npcHandler:say("Hm, maybe you are right. You could give these plans to someone who might be able to finish this project. Someone who will not make the mistakes I made. Someone... hm, do you know the astronomer Spectulus?", npc, creature)
 			npcHandler:setTopic(playerId, 11)
 		end
 	end

@@ -71,19 +71,19 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine, 1)
 			player:addItem(16167, 4)
 
-			--npcHandler:sayLocalized("npc.xelvar.right_now_i_1", npc, creature)
+			--npcHandler:say("Right now I am sort of {recruiting} people.", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:sayLocalized("npc.xelvar.you_already_talked_2", npc, creature)
+			npcHandler:say("You already talked with me.", npc, creature)
 		end
 	elseif MsgContains(message, "recruiting") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.xelvar.ok_so_listen_3", npc, creature)
+			npcHandler:say("Ok, so listen. Your help is needed. That is if you're the hero type. Our ... {partners} need some help in urgent matters.", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "partners") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:sayLocalized("npc.xelvar.i_guess_the_4", npc, creature)
+			npcHandler:say("I guess the time of secrecy is over now. Well, we have an old alliance with another underground dwelling race, the {gnomes}.", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "gnomes") then

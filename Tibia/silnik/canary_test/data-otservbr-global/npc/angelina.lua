@@ -72,7 +72,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "yes") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand) < 1 then
-			npcHandler:sayLocalized("npc.angelina.i_will_tell_1", npc, creature)
+			npcHandler:say("I will tell you a small secret now. My friend Lynda in Thais can create a blessed wand. Greet her from me, maybe she will aid you.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand, 1)
 			player:setStorageValue(Storage.OutfitQuest.DefaultStart, 1)
 		end

@@ -187,7 +187,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:say({ "Disrupt the Heart of Destruction, fell the World Devourer to prove your worth and you will be granted the power to imbue 'Powerful Strike', 'Powerful Void' and --'Powerful Vampirism'." }, npc, creature)
 	elseif MsgContains(message, "tokens") then
 		npc:openShopWindow(creature)
-		npcHandler:sayLocalized("npc.yana.if_you_have_1", npc, creature)
+		npcHandler:say("If you have any gold tokens with you, let's have a look! These are my offers.", npc, creature)
 	elseif MsgContains(message, "trade") then
 		npcHandler:say({ "I have creature products for the imbuements {strike}, {vampirism} and {void}. Make your choice, please!" }, npc, creature)
 		npcHandler:setTopic(playerId, 1)
@@ -221,16 +221,16 @@ local function creatureSayCallback(npc, creature, type, message)
 						player:addItem(products[answerType[playerId]][answerLevel[playerId]].itens[i].id, products[answerType[playerId]][answerLevel[playerId]].itens[i].amount)
 					end
 					player:removeItem(npc:getCurrency(), products[answerType[playerId]][answerLevel[playerId]].value)
-					npcHandler:sayLocalized("npc.yana.there_it_is_2", npc, creature)
+					npcHandler:say("There it is.", npc, creature)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:sayLocalized("npc.yana.im_sorry_but_3" .. ItemType(npc:getCurrency()):getPluralName():lower() .. " ..? yet. Bring me " .. products[answerType[playerId]][answerLevel[playerId]].value .. " of them and we'll make a trade.", npc, creature)
+					npcHandler:say("I'm sorry but it seems you don't have enough " .. ItemType(npc:getCurrency()):getPluralName():lower() .. " ..? yet. Bring me " .. products[answerType[playerId]][answerLevel[playerId]].value .. " of them and we'll make a trade.", npc, creature)
 				end
 			else
-				npcHandler:sayLocalized("npc.yana.you_dont_have_4" .. neededCap .. " oz.", npc, creature)
+				npcHandler:say("You don't have enough capacity. You must have " .. neededCap .. " oz.", npc, creature)
 			end
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.yana.your_decision_come_5", npc, creature)
+			npcHandler:say("Your decision. Come back if you have changed your mind.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

@@ -55,13 +55,13 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline) == 2 then
-			npcHandler:sayLocalized("npc.chartan.mhm_what_are_1", npc, creature)
+			npcHandler:say("Mhm, what are you doing here. Who zent you? ", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline) == 3 then
-			npcHandler:sayLocalized("npc.chartan.zo_are_you_2", npc, creature)
+			npcHandler:say("Zo are you ready to get zomezing done?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline) == 5 then
-			npcHandler:sayLocalized("npc.chartan.zo_did_you_3", npc, creature)
+			npcHandler:say("Zo? Did you find a way to reztore ze teleporter? ", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "zalamon") then

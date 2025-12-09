@@ -74,13 +74,13 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "addon") or MsgContains(message, "outfit") then
 		if getPlayerStorageValue(creature, Storage.Atrad) < 1 then
-			npcHandler:sayLocalized("npc.atrad.you_managed_to_1", npc, creature)
+			npcHandler:say("You managed to deceive Erayo? Impressive. Well, I guess, since you have come that far, I might as well give you a task too, eh?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "nose ring") or MsgContains(message, "ring") then
 		if getPlayerStorageValue(creature, Storage.Atrad) == 1 then
 			if (getPlayerItemCount(creature, 5804) >= 1) and getPlayerItemCount(creature, 5930) >= 1 then
-				npcHandler:sayLocalized("npc.atrad.i_see_you_2", npc, creature)
+				npcHandler:say("I see you brought my stuff. Good. I'll keep my promise: Here's katana in return.", npc, creature)
 				doPlayerRemoveItem(creature, 5804, 1)
 				doPlayerRemoveItem(creature, 5930, 1)
 				doPlayerAddOutfit(creature, getPlayerSex(creature) == 0 and 156 or 152, 2)
@@ -88,16 +88,16 @@ local function creatureSayCallback(npc, creature, type, message)
 				setPlayerStorageValue(creature, Storage.Quest.U7_8.AssassinOutfits.AssassinSecondAddon, 2)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.atrad.you_dont_have_3", npc, creature)
+				npcHandler:say("You don't have it...", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:sayLocalized("npc.atrad.okay_listen_up_4", npc, creature)
+			npcHandler:say("Okay, listen up. I don't have a list of stupid objects, I just want two things. A behemoth claw and a nose ring. Got that?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:sayLocalized("npc.atrad.good_come_back_5", npc, creature)
+			npcHandler:say("Good. Come back then you have BOTH. Should be clear where to get a behemoth claw from. There's a horned fox who wears a nose ring. Good luck.", npc, creature)
 			setPlayerStorageValue(creature, Storage.Atrad, 1)
 			setPlayerStorageValue(creature, Storage.Quest.U7_8.AssassinOutfits.AssassinSecondAddon, 1)
 			npcHandler:setTopic(playerId, 0)

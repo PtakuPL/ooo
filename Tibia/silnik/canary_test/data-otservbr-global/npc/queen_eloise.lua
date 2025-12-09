@@ -54,7 +54,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if (MsgContains(message, "outfit")) or (MsgContains(message, "addon")) then
-		npcHandler:sayLocalized("npc.queen_eloise.in_exchange_for_1", npc, creature)
+		npcHandler:say("In exchange for a truly generous donation, I will offer a special outfit. Do you want to make a donation?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		-- vamos tratar todas condições para YES aqui
@@ -69,7 +69,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			-- O NPC só vai oferecer os addons se o player já tiver escolhido.
 		elseif npcHandler:getTopic(playerId) == 2 then
 			-- caso o player repita o yes, resetamos o tópico para começar de novo?
-			npcHandler:sayLocalized("npc.queen_eloise.in_that_case_2", npc, creature)
+			npcHandler:say("In that case, return to me once you made up your mind.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 			-- Inicio do outfit
 		elseif npcHandler:getTopic(playerId) == 3 then -- ARMOR/OUTFIT
@@ -82,20 +82,20 @@ local function creatureSayCallback(npc, creature, type, message)
 						local decoItemName = ItemType(31510):getName()
 						decoKit:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "You bought this item in the Store.\nUnwrap it in your own house to create a " .. decoItemName .. ".")
 						decoKit:setActionId(36345)
-						npcHandler:sayLocalized("npc.queen_eloise.take_this_armor_3", npc, creature)
+						npcHandler:say("Take this armor as a token of great gratitude. Let us forever remember this day, my friend!", npc, creature)
 						player:removeMoneyBank(500000000)
 						player:addOutfit(1211)
 						player:addOutfit(1210)
 						player:getPosition():sendMagicEffect(171)
 						player:setStorageValue(Storage.Quest.U12_15.GoldenOutfits, 1)
 					else
-						npcHandler:sayLocalized("npc.queen_eloise.please_make_sure_4", npc, creature)
+						npcHandler:say("Please make sure you have free slots in your store inbox.", npc, creature)
 					end
 				else
-					npcHandler:sayLocalized("npc.queen_eloise.you_do_not_5", npc, creature)
+					npcHandler:say("You do not have enough money to donate that amount.", npc, creature)
 				end
 			else
-				npcHandler:sayLocalized("npc.queen_eloise.you_alread_have_6", npc, creature)
+				npcHandler:say("You alread have that addon.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 2)
 			-- Fim do outfit
@@ -104,7 +104,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:getStorageValue(Storage.Quest.U12_15.GoldenOutfits) == 1 then
 				if player:getStorageValue(Storage.Quest.U12_15.GoldenOutfits) < 2 then
 					if player:getMoney() + player:getBankBalance() >= 250000000 then
-						npcHandler:sayLocalized("npc.queen_eloise.take_this_helmet_7", npc, creature)
+						npcHandler:say("Take this helmet as a token of great gratitude. Let us forever remember this day, my friend. ", npc, creature)
 						player:removeMoneyBank(250000000)
 						player:addOutfitAddon(1210, 1)
 						player:addOutfitAddon(1211, 1)
@@ -112,15 +112,15 @@ local function creatureSayCallback(npc, creature, type, message)
 						player:setStorageValue(Storage.Quest.U12_15.GoldenOutfits, 2)
 						npcHandler:setTopic(playerId, 2)
 					else
-						npcHandler:sayLocalized("npc.queen_eloise.you_do_not_8", npc, creature)
+						npcHandler:say("You do not have enough money to donate that amount.", npc, creature)
 						npcHandler:setTopic(playerId, 2)
 					end
 				else
-					npcHandler:sayLocalized("npc.queen_eloise.you_alread_have_9", npc, creature)
+					npcHandler:say("You alread have that outfit.", npc, creature)
 					npcHandler:setTopic(playerId, 2)
 				end
 			else
-				npcHandler:sayLocalized("npc.queen_eloise.you_need_to_10", npc, creature)
+				npcHandler:say("You need to donate {armor} outfit first.", npc, creature)
 				npcHandler:setTopic(playerId, 2)
 			end
 			npcHandler:setTopic(playerId, 2)
@@ -130,7 +130,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:getStorageValue(Storage.Quest.U12_15.GoldenOutfits) == 2 then
 				if player:getStorageValue(Storage.Quest.U12_15.GoldenOutfits) < 3 then
 					if player:getMoney() + player:getBankBalance() >= 250000000 then
-						npcHandler:sayLocalized("npc.queen_eloise.take_this_boots_11", npc, creature)
+						npcHandler:say("Take this boots as a token of great gratitude. Let us forever remember this day, my friend. ", npc, creature)
 						player:removeMoneyBank(250000000)
 						player:addOutfitAddon(1210, 2)
 						player:addOutfitAddon(1211, 2)
@@ -138,15 +138,15 @@ local function creatureSayCallback(npc, creature, type, message)
 						player:setStorageValue(Storage.Quest.U12_15.GoldenOutfits, 3)
 						npcHandler:setTopic(playerId, 2)
 					else
-						npcHandler:sayLocalized("npc.queen_eloise.you_do_not_12", npc, creature)
+						npcHandler:say("You do not have enough money to donate that amount.", npc, creature)
 						npcHandler:setTopic(playerId, 2)
 					end
 				else
-					npcHandler:sayLocalized("npc.queen_eloise.you_alread_have_13", npc, creature)
+					npcHandler:say("You alread have that outfit.", npc, creature)
 					npcHandler:setTopic(playerId, 2)
 				end
 			else
-				npcHandler:sayLocalized("npc.queen_eloise.you_need_to_14", npc, creature)
+				npcHandler:say("You need to donate {helmet} addon first.", npc, creature)
 				npcHandler:setTopic(playerId, 2)
 			end
 			-- Fim da boots
@@ -155,13 +155,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		--inicio das opções armor/helmet/boots
 		-- caso o player não diga YES, dirá alguma das seguintes palavras:
 	elseif (MsgContains(message, "armor")) and npcHandler:getTopic(playerId) == 2 then
-		npcHandler:sayLocalized("npc.queen_eloise.so_you_wold_15", npc, creature)
+		npcHandler:say("So you wold like to donate 500.000.000 gold pieces which in return will entitle you to wear a unique armor?", npc, creature)
 		npcHandler:setTopic(playerId, 3) -- alterando o tópico para que no próximo YES ele faça o outfit
 	elseif (MsgContains(message, "helmet")) and npcHandler:getTopic(playerId) == 2 then
-		npcHandler:sayLocalized("npc.queen_eloise.so_you_would_16", npc, creature)
+		npcHandler:say("So you would like to donate 250.000.000 gold pieces which in return will entitle you to wear unique helmet?", npc, creature)
 		npcHandler:setTopic(playerId, 4) -- alterando o tópico para que no próximo YES ele faça o helmet
 	elseif (MsgContains(message, "boots")) and npcHandler:getTopic(playerId) == 2 then
-		npcHandler:sayLocalized("npc.queen_eloise.so_you_would_17", npc, creature)
+		npcHandler:say("So you would like to donate 250.000.000 gold pieces which in return will entitle you to wear a unique boots?", npc, creature)
 		npcHandler:setTopic(playerId, 5) -- alterando o tópico para que no próximo YES ele faça a boots
 	end
 	-- fim das opções armor/helmet/boots

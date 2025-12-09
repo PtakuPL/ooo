@@ -56,14 +56,14 @@ local function handleAddonMessages(npcHandler, npc, creature, message, playerId)
 	if MsgContains(message, "addon") then
 		if player:hasOutfit(player:getSex() == PLAYERSEX_FEMALE and 158 or 154) then
 			if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell) >= 4 and player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove) >= 5 and player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) >= 10 and player:getStorageValue(Storage.Quest.U7_8.ShamanOutfits.AddonStaffMask) < 1 then
-				npcHandler:sayLocalized("npc.chondur.the_time_has_1", npc, creature)
+				npcHandler:say("The time has come, my child. I sense great spiritual wisdom in you and I shall grant you a sign of your progress, if you can fulfil my task.", npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			elseif player:hasOutfit(158, 2) or player:hasOutfit(154, 2) and not (player:hasOutfit(158, 1) or player:hasOutfit(154, 1)) then
-				npcHandler:sayLocalized("npc.chondur.you_have_successfully_2", npc, creature)
+				npcHandler:say("You have successfully passed the first task. If you can fulfil my second task, I will grant you a mask like the one I wear. Will you listen to the requirements?", npc, creature)
 				npcHandler:setTopic(playerId, 3)
 			end
 		else
-			npcHandler:sayLocalized("npc.chondur.you_must_have_3", npc, creature)
+			npcHandler:say("You must have the Shaman Outfit to proceed with this task.", npc, creature)
 		end
 		return true
 	elseif MsgContains(message, "task") and npcHandler:getTopic(playerId) == 1 then
@@ -75,17 +75,17 @@ local function handleAddonMessages(npcHandler, npc, creature, message, playerId)
 		npcHandler:setTopic(playerId, 2)
 		return true
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 then
-		npcHandler:sayLocalized("npc.chondur.good_come_back_4", npc, creature)
+		npcHandler:say("Good! Come back once you found a mandrake and collected 5 dworcish voodoo dolls.", npc, creature)
 		player:setStorageValue(Storage.Quest.U7_8.ShamanOutfits.AddonStaffMask, 1)
 		player:setStorageValue(Storage.Quest.U7_8.ShamanOutfits.MissionStaff, 1)
 		npcHandler:setTopic(playerId, 0)
 		return true
 	elseif MsgContains(message, "dworc voodoo doll") or MsgContains(message, "mandrake") then
-		npcHandler:sayLocalized("npc.chondur.have_you_gathered_5", npc, creature)
+		npcHandler:say("Have you gathered the mandrake and the 5 voodoo dolls from the dworcs?", npc, creature)
 		npcHandler:setTopic(playerId, 5)
 		return true
 	elseif MsgContains(message, "tribal masks") or MsgContains(message, "banana staff") then
-		npcHandler:sayLocalized("npc.chondur.have_you_gathered_6", npc, creature)
+		npcHandler:say("Have you gathered the 5 tribal masks and the 5 banana staves?", npc, creature)
 		npcHandler:setTopic(playerId, 6)
 		return true
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 5 then
@@ -98,9 +98,9 @@ local function handleAddonMessages(npcHandler, npc, creature, message, playerId)
 			player:setStorageValue(Storage.Quest.U7_8.ShamanOutfits.MissionStaff, 2)
 			player:addAchievement("Way of the Shaman")
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
-			npcHandler:sayLocalized("npc.chondur.i_am_proud_7", npc, creature)
+			npcHandler:say("I am proud of you, my child, excellent work. This staff shall be yours from now on!", npc, creature)
 		else
-			npcHandler:sayLocalized("npc.chondur.you_dont_have_8", npc, creature)
+			npcHandler:say("You don't have the necessary items.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 		return true
@@ -114,9 +114,9 @@ local function handleAddonMessages(npcHandler, npc, creature, message, playerId)
 			player:setStorageValue(Storage.Quest.U7_8.ShamanOutfits.MissionMask, 2)
 			player:addAchievement("Way of the Shaman")
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
-			npcHandler:sayLocalized("npc.chondur.well_done_my_9", npc, creature)
+			npcHandler:say("Well done, my child! I hereby grant you the right to wear a shamanic mask. Do it proudly.", npc, creature)
 		else
-			npcHandler:sayLocalized("npc.chondur.you_dont_have_10", npc, creature)
+			npcHandler:say("You don't have the necessary items.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 		return true
@@ -138,7 +138,7 @@ local function handleAddonMessages(npcHandler, npc, creature, message, playerId)
 		npcHandler:setTopic(playerId, 0)
 		return true
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) > 2 then
-		npcHandler:sayLocalized("npc.chondur.maybe_next_time_11", npc, creature)
+		npcHandler:say("Maybe next time.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 
@@ -150,19 +150,19 @@ local function handleOtherMessages(npcHandler, npc, creature, message, playerId)
 
 	if MsgContains(message, "stampor") or MsgContains(message, "mount") then
 		if not player:hasMount(11) then
-			npcHandler:sayLocalized("npc.chondur.you_did_bring_12", npc, creature)
+			npcHandler:say("You did bring all the items I requested, child. Good. Shall I travel to the spirit realm and try finding a stampor companion for you?", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		else
-			npcHandler:sayLocalized("npc.chondur.you_already_have_13", npc, creature)
+			npcHandler:say("You already have stampor mount.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 11 then
-			npcHandler:sayLocalized("npc.chondur.the_evil_cult_14", npc, creature)
+			npcHandler:say("The evil cult has placed a curse on one of the captains here. I need at least five of their pirate voodoo dolls to lift that curse.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 12)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 12 then
-			npcHandler:sayLocalized("npc.chondur.did_you_bring_15", npc, creature)
+			npcHandler:say("Did you bring five pirate voodoo dolls?", npc, creature)
 			npcHandler:setTopic(playerId, 8)
 		end
 	elseif MsgContains(message, "yes") then
@@ -177,22 +177,22 @@ local function handleOtherMessages(npcHandler, npc, creature, message, playerId)
 				player:addMount(11)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 			else
-				npcHandler:sayLocalized("npc.chondur.sorry_you_dont_16", npc, creature)
+				npcHandler:say("Sorry you don't have the necessary items.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 8 then
 			if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 12 then
 				if player:removeItem(5810, 5) then
-					npcHandler:sayLocalized("npc.chondur.finally_i_can_17", npc, creature)
+					npcHandler:say("Finally I can put an end to that curse. I thank you so much.", npc, creature)
 					player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 13)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:sayLocalized("npc.chondur.you_dont_have_18", npc, creature)
+					npcHandler:say("You don't have it...", npc, creature)
 					npcHandler:setTopic(playerId, 0)
 				end
 			end
 		elseif npcHandler:getTopic(playerId) == 9 then
-			npcHandler:sayLocalized("npc.chondur.this_is_really_19", npc, creature)
+			npcHandler:say("This is really not advisable. Behind this barrier, strong forces are raging violently. Are you sure that you want to go there?", npc, creature)
 			npcHandler:setTopic(playerId, 10)
 		elseif npcHandler:getTopic(playerId) == 10 then
 			npcHandler:say({
@@ -205,10 +205,10 @@ local function handleOtherMessages(npcHandler, npc, creature, message, playerId)
 			if player:getItemCount(4330) > 0 then
 				player:removeItem(4330, 1)
 				player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell, 2)
-				npcHandler:sayLocalized("npc.chondur.very_good_mumble_20", npc, creature)
+				npcHandler:say("Very good! <mumble> 'Your soul shall be protected!' Now, I need a fresh dead rat.", npc, creature)
 				return true
 			else
-				npcHandler:sayLocalized("npc.chondur.you_dont_have_21", npc, creature)
+				npcHandler:say("You don't have the necessary items.", npc, creature)
 				return true
 			end
 			npcHandler:setTopic(playerId, 0)
@@ -216,10 +216,10 @@ local function handleOtherMessages(npcHandler, npc, creature, message, playerId)
 			if player:getItemCount(3994) > 0 then
 				player:removeItem(3994, 1)
 				player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell, 3)
-				npcHandler:sayLocalized("npc.chondur.very_good_chants_22", npc, creature)
+				npcHandler:say("Very good! <chants and dances> 'You shall face black magic without fear!' Now, I need a fresh dead black sheep.", npc, creature)
 				return true
 			else
-				npcHandler:sayLocalized("npc.chondur.you_dont_have_23", npc, creature)
+				npcHandler:say("You don't have the necessary items.", npc, creature)
 				return true
 			end
 			npcHandler:setTopic(playerId, 0)
@@ -227,70 +227,70 @@ local function handleOtherMessages(npcHandler, npc, creature, message, playerId)
 			if player:getItemCount(4095) > 0 then
 				player:removeItem(4095, 1)
 				player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell, 4)
-				npcHandler:sayLocalized("npc.chondur.very_good_stomps_24", npc, creature)
+				npcHandler:say("Very good! <stomps staff on ground> 'EVIL POWERS SHALL NOT KEEP YOU ANYMORE! SO BE IT!'", npc, creature)
 				return true
 			else
-				npcHandler:sayLocalized("npc.chondur.you_dont_have_25", npc, creature)
+				npcHandler:say("You don't have the necessary items.", npc, creature)
 				return true
 			end
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "stake") then
 		if player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheBlessedStake) == 11 then
-			npcHandler:sayLocalized("npc.chondur.ten_prayers_for_26", npc, creature)
+			npcHandler:say("Ten prayers for a blessed stake? Don't tell me they made you travel whole Tibia for it! Listen, child, if you bring me a wooden stake, I'll bless it for you. <chuckles>", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheBlessedStake, 12)
 			player:addAchievement("Blessed!")
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			return true
 		elseif player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheBlessedStake) == 12 then
 			if player:getItemCount(5941) == 0 then
-				npcHandler:sayLocalized("npc.chondur.you_dont_have_27", npc, creature)
+				npcHandler:say("You don't have a wooden stake.", npc, creature)
 				return true
 			elseif player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheBlessedStakeWaitTime) >= os.time() then
-				npcHandler:sayLocalized("npc.chondur.sorry_but_im_28", npc, creature)
+				npcHandler:say("Sorry, but I'm still exhausted from the last ritual. Please come back later.", npc, creature)
 				return true
 			else
 				player:setStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheBlessedStakeWaitTime, os.time() + 7 * 86400)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 				player:removeItem(5941, 1)
 				player:addItem(5942, 1)
-				npcHandler:sayLocalized("npc.chondur.mumblemumble_sha_kesh_29", npc, creature)
+				npcHandler:say("<mumblemumble> Sha Kesh Mar!", npc, creature)
 				return true
 			end
 		end
 	elseif MsgContains(message, "counterspell") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.DragahsSpellbook) == -1 then
-			npcHandler:sayLocalized("npc.chondur.you_should_not_30", npc, creature)
+			npcHandler:say("You should not talk about things you don't know anything about.", npc, creature)
 			return true
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell) == -1 then
-			npcHandler:sayLocalized("npc.chondur.you_mean_you_31", npc, creature)
+			npcHandler:say("You mean, you are interested in a counterspell to cross the energy barrier on Goroma?", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell, 0)
 			npcHandler:setTopic(playerId, 9)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell) == 1 then
-			npcHandler:sayLocalized("npc.chondur.did_you_bring_32", npc, creature)
+			npcHandler:say("Did you bring the fresh dead chicken?", npc, creature)
 			npcHandler:setTopic(playerId, 11)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell) == 2 then
-			npcHandler:sayLocalized("npc.chondur.did_you_bring_33", npc, creature)
+			npcHandler:say("Did you bring the fresh dead rat?", npc, creature)
 			npcHandler:setTopic(playerId, 12)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell) == 3 then
-			npcHandler:sayLocalized("npc.chondur.did_you_bring_34", npc, creature)
+			npcHandler:say("Did you bring the fresh dead black sheep?", npc, creature)
 			npcHandler:setTopic(playerId, 13)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell) == 4 then
-			npcHandler:sayLocalized("npc.chondur.hm_i_dont_35", npc, creature)
+			npcHandler:say("Hm. I don't think you need another one of my counterspells to cross the barrier on Goroma.", npc, creature)
 			return true
 		end
 	elseif MsgContains(message, "spellbook") then
 		if player:getItemCount(6120) > 0 then
-			npcHandler:sayLocalized("npc.chondur.ah_thank_you_36", npc, creature)
+			npcHandler:say("Ah, thank you very much! I'll honour his memory.", npc, creature)
 			player:removeItem(6120, 1)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.DragahsSpellbook, 1)
 			return true
 		else
-			npcHandler:sayLocalized("npc.chondur.you_dont_have_37", npc, creature)
+			npcHandler:say("You don't have the necessary items.", npc, creature)
 			return true
 		end
 	elseif MsgContains(message, "energy field") then
-		npcHandler:sayLocalized("npc.chondur.ah_the_energy_38", npc, creature)
+		npcHandler:say("Ah, the energy barrier set up by the cult is maintained by lousy magic, but it's still effective. Without a proper counterspell, you won't be able to pass it.", npc, creature)
 		return true
 	end
 

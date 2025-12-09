@@ -66,7 +66,7 @@ local function greetCallback(npc, creature)
 				position:sendMagicEffect(CONST_ME_TELEPORT)
 			end
 		end
-		npcHandler:sayLocalized("npc.markwin.no_the_hornless_1", npc, creature)
+		npcHandler:say("No! The hornless have reached my city! BODYGUARDS TO ME!", npc, creature)
 		return false
 	elseif player:getStorageValue(Storage.MarkwinGreeting) == 1 then
 		npcHandler:setMessage(MESSAGE_GREET, "Well ... you defeated my guards! Now everything is over! I guess I will have to answer your questions now.")
@@ -88,24 +88,24 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "letter") then
 		if player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission10) == 1 then
 			if player:getItemCount(3220) > 0 then
-				npcHandler:sayLocalized("npc.markwin.a_letter_from_2", npc, creature)
+				npcHandler:say("A letter from my Moohmy?? Do you have a letter from my Moohmy to me?", npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			end
 		end
 	elseif MsgContains(message, "cookie") then
 		if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 31 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.CookieDelivery.Markwin) ~= 1 then
-			npcHandler:sayLocalized("npc.markwin.you_bring_me_3", npc, creature)
+			npcHandler:say("You bring me ... a cookie???", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.markwin.uhm_well_thank_4", npc, creature)
+			npcHandler:say("Uhm, well thank you, hornless being.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission10, 2)
 			player:removeItem(3220, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if not player:removeItem(130, 1) then
-				npcHandler:sayLocalized("npc.markwin.you_have_no_5", npc, creature)
+				npcHandler:say("You have no cookie that I'd like.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -116,12 +116,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 
 			npc:getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)
-			npcHandler:sayLocalized("npc.markwin.i_understand_this_6", npc, creature)
+			npcHandler:say("I understand this as a peace-offering, human ... UNGH ... THIS IS AN OUTRAGE! THIS MEANS WAR!!!", npc, creature)
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		end
 	elseif MsgContains(message, "bye") then
-		npcHandler:sayLocalized("npc.markwin.hm_good_bye_7", npc, creature)
+		npcHandler:say("Hm ... good bye.", npc, creature)
 		player:addCondition(condition)
 		npcHandler:removeInteraction(npc, creature)
 		npcHandler:resetNpc(creature)

@@ -60,7 +60,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "looking") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) >= 19 or player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) <= 22 then
-			npcHandler:sayLocalized("npc.gnomelvis.im_the_gnomish_1", npc, creature)
+			npcHandler:say("I'm the gnomish {musical} supervisor!", npc, creature)
 		end
 	elseif MsgContains(message, "musical") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 19 then
@@ -77,8 +77,8 @@ local function creatureSayCallback(npc, creature, type, message)
 				end
 			end
 		elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 21 then
-			npcHandler:sayLocalized("npc.gnomelvis.what_you_have_2", npc, creature)
-			npcHandler:sayLocalized("npc.gnomelvis.you_will_have_3", npc, creature)
+			npcHandler:say("What you have to do is to find your soul melody. Use the harmonic crystals to deduce your soul melody. Every soul melody consists of seven sound sequences. ...", npc, creature)
+			npcHandler:say("You will have to figure out your correct soul melody by trial and error.", npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 22 then
 			npcHandler:say({
 				"Congratulations on finding your soul melody. And a pretty one as far as I can tell. Now you are a true recruit of the Bigfoot company! Commander Stone might have some tasks for you to do! ...",
@@ -89,7 +89,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank)
 			player:addAchievement("Becoming a Bigfoot")
 		elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 25 then
-			npcHandler:sayLocalized("npc.gnomelvis.congratulations_on_findin_4", npc, creature)
+			npcHandler:say("Congratulations on finding your soul melody.", npc, creature)
 		end
 	end
 

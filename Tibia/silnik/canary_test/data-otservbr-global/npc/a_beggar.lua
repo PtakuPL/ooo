@@ -25,7 +25,6 @@ npcConfig.flags = {
 
 local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
-local npcI18n = NPC_LIB and NPC_LIB.i18n
 
 npcType.onThink = function(npc, interval)
 	npcHandler:onThink(npc, interval)
@@ -62,36 +61,16 @@ local function creatureSayCallback(npc, creature, type, message)
 		if player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission01) == 1 then
 			npcHandler:setTopic(playerId, 1)
 		end
-		if npcI18n then
-			npcI18n.sayLocalized(player, "npc.a_beggar.want", nil, MESSAGE_NPC_FROM)
-		else
-			player:sendTextMessage(MESSAGE_NPC_FROM, "The guys from the magistrate sent you here, didn't they?")
-		end
+		npcHandler:say("The guys from the magistrate sent you here, didn't they?", npc, creature)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			if npcI18n then
-				npcI18n.npcSayMultiple(
-					npcHandler,
-					npc,
-					creature,
-					{
-						"npc.a_beggar.yes_audience",
-						"npc.a_beggar.yes_help",
-						"npc.a_beggar.yes_subjects",
-						"npc.a_beggar.yes_dedication",
-						"npc.a_beggar.yes_palace",
-					},
-					100
-				)
-			else
-				npcHandler:say({
-					"Thought so. You'll have to talk to the king though. The beggar king that is. The king does not grant an audience to just everyone. You know how those kings are, don't you?",
-					"However, to get an audience with the king, you'll have to help his subjects a bit.",
-					"His subjects that would be us, the poor, you know?",
-					"So why don't you show your dedication to the poor? Go and help Chavis at the poor house. He's collecting food for people like us.",
-					"If you brought enough of the stuff you'll see that the king will grant you entrance in his {palace}.",
-				}, npc, creature)
-			end
+			npcHandler:say({
+				"Thought so. You'll have to talk to the king though. The beggar king that is. The king does not grant an audience to just everyone. You know how those kings are, don't you? ... ",
+				"However, to get an audience with the king, you'll have to help his subjects a bit. ... ",
+				"His subjects that would be us, the poor, you know? ... ",
+				"So why don't you show your dedication to the poor? Go and help Chavis at the poor house. He's collecting food for people like us. ... ",
+				"If you brought enough of the stuff you'll see that the king will grant you entrance in his {palace}.",
+			}, npc, creature, 100)
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission01, 2) -- Mission 1 end
 			player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission02, 1) -- Mission 2 start
@@ -100,20 +79,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
--- Localized greet callback
-local function greetCallback(npc, creature)
-	local player = Player(creature)
-	if player then
-		if npcI18n then
-			npcI18n.sayLocalized(player, "npc.a_beggar.greet", nil, MESSAGE_NPC_FROM)
-		else
-			player:sendTextMessage(MESSAGE_NPC_FROM, "Hi! What is it, what d'ye {want}?")
-		end
-	end
-	return true
-end
+npcHandler:setMessage(MESSAGE_GREET, "Hi! What is it, what d'ye {want}?")
 
-npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

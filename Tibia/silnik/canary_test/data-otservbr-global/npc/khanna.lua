@@ -178,18 +178,18 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "first rod") or MsgContains(message, "first wand") then
 		if player:isMage() then
 			if player:getStorageValue(Storage.FirstMageWeapon) == -1 then
-				npcHandler:sayLocalized("npc.khanna.so_you_ask_1" .. ItemType(itemId):getName() .. "} to begin your adventure?", npc, creature)
+				npcHandler:say("So you ask me for a {" .. ItemType(itemId):getName() .. "} to begin your adventure?", npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			else
-				npcHandler:sayLocalized("npc.khanna.what_i_have_2" .. ItemType(itemId):getName() .. "}!", npc, creature)
+				npcHandler:say("What? I have already gave you one {" .. ItemType(itemId):getName() .. "}!", npc, creature)
 			end
 		else
-			npcHandler:sayLocalized("npc.khanna.sorry_you_arent_3", npc, creature)
+			npcHandler:say("Sorry, you aren't a druid either a sorcerer.", npc, creature)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			player:addItem(itemId, 1)
-			npcHandler:sayLocalized("npc.khanna.here_you_are_4", npc, creature)
+			npcHandler:say("Here you are young adept, take care yourself.", npc, creature)
 			player:setStorageValue(Storage.FirstMageWeapon, 1)
 		end
 		npcHandler:setTopic(playerId, 0)
@@ -198,7 +198,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 0)
 	elseif categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), itemsTable)
-		npcHandler:sayLocalized("npc.khanna.of_course_just_5" .. remainingCategories .. ".", npc, player)
+		npcHandler:say("Of course, just browse through my wares. You can also look at " .. remainingCategories .. ".", npc, player)
 		npc:openShopWindowTable(player, categoryTable)
 	end
 	return true

@@ -60,27 +60,27 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "outfit") or MsgContains(message, "addon") then
 		if player:getStorageValue(Storage.Quest.U7_8.WizardOutfits) < 1 then
-			npcHandler:sayLocalized("npc.lugri.this_skull_shows_1", npc, creature)
+			npcHandler:say("This skull shows that you are a true follower of Zathroth and the glorious gods of darkness. Are you willing to prove your loyalty?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "shield") or MsgContains(message, "medusa shield") then
 		if player:getStorageValue(Storage.Quest.U7_8.WizardOutfits) == 1 then
-			npcHandler:sayLocalized("npc.lugri.is_it_your_2", npc, creature)
+			npcHandler:say("Is it your true wish to sacrifice a medusa shield to Zathroth?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "mail") or MsgContains(message, "dragon scale mail") then
 		if player:getStorageValue(Storage.Quest.U7_8.WizardOutfits) == 2 then
-			npcHandler:sayLocalized("npc.lugri.is_it_your_3", npc, creature)
+			npcHandler:say("Is it your true wish to sacrifice a dragon scale mail to Zathroth?", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "legs") or MsgContains(message, "crown legs") then
 		if player:getStorageValue(Storage.Quest.U7_8.WizardOutfits) == 3 then
-			npcHandler:sayLocalized("npc.lugri.is_it_your_4", npc, creature)
+			npcHandler:say("Is it your true wish to sacrifice crown legs to Zathroth?", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "ring") or MsgContains(message, "ring of the sky") then
 		if player:getStorageValue(Storage.Quest.U7_8.WizardOutfits) == 4 then
-			npcHandler:sayLocalized("npc.lugri.is_it_your_5", npc, creature)
+			npcHandler:say("Is it your true wish to sacrifice a ring of the sky to Zathroth?", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		end
 
@@ -103,7 +103,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.LugriNecromancers, 1)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BossKillCount.NecropharusCount, 0)
 			else
-				npcHandler:sayLocalized("npc.lugri.come_back_when_6", npc, creature)
+				npcHandler:say("Come back when you have slain 4000 necromancers and priestesses!", npc, creature)
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.LugriNecromancers) == 2 then
 			npcHandler:say({
@@ -117,55 +117,55 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addExperience(40000, true)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.LugriNecromancers, 4)
 			else
-				npcHandler:sayLocalized("npc.lugri.come_back_when_7", npc, creature)
+				npcHandler:say("Come back when you have slain 1000 necromancers and priestesses!", npc, creature)
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.LugriNecromancers) == 4 then
-			npcHandler:sayLocalized("npc.lugri.you_cant_live_8", npc, creature)
+			npcHandler:say("You can't live without serving, can you? Although you are quite annoying, you're still somewhat useful. Continue killing Necromancers and Priestesses for me. 1000 are enough this time. What do you say?", npc, creature)
 			npcHandler:setTopic(playerId, 8)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.lugri.it_will_be_9", npc, creature)
+			npcHandler:say("It will be a hard task which requires many sacrifices. Do you still want to proceed?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:sayLocalized("npc.lugri.good_decision_playername_10", npc, creature)
+			npcHandler:say("Good decision, |PLAYERNAME|. Your first sacrifice will be a medusa shield. Bring it to me and do give it happily.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.WizardOutfits, 1)
 			player:setStorageValue(Storage.OutfitQuest.DefaultStart, 1) --this for default start of Outfit and Addon Quests
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:removeItem(3436, 1) then
-				npcHandler:sayLocalized("npc.lugri.good_i_accept_11", npc, creature)
+				npcHandler:say("Good. I accept your sacrifice. The second sacrifice I require from you is a dragon scale mail. Bring it to me and do give it happily.", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_8.WizardOutfits, 2)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.lugri.you_dont_have_12", npc, creature)
+				npcHandler:say("You don't have it...", npc, creature)
 			end
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:removeItem(3386, 1) then
-				npcHandler:sayLocalized("npc.lugri.good_i_accept_13", npc, creature)
+				npcHandler:say("Good. I accept your sacrifice. The third sacrifice I require from you are crown legs. Bring them to me and do give them happily.", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_8.WizardOutfits, 3)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.lugri.you_dont_have_14", npc, creature)
+				npcHandler:say("You don't have it...", npc, creature)
 			end
 		elseif npcHandler:getTopic(playerId) == 5 then
 			if player:removeItem(3382, 1) then
-				npcHandler:sayLocalized("npc.lugri.good_i_accept_15", npc, creature)
+				npcHandler:say("Good. I accept your sacrifice. The last sacrifice I require from you is a ring of the sky. Bring it to me and do give it happily.", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_8.WizardOutfits, 4)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.lugri.you_dont_have_16", npc, creature)
+				npcHandler:say("You don't have it...", npc, creature)
 			end
 		elseif npcHandler:getTopic(playerId) == 6 then
 			if player:removeItem(3006, 1) then
-				npcHandler:sayLocalized("npc.lugri.good_i_accept_17", npc, creature)
+				npcHandler:say("Good. I accept your sacrifice. You have proven that you are a true follower of Zathroth and do not hesitate to sacrifice worldly goods. Thus, I will reward you with this headgear. ", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_8.WizardOutfits, 5)
 				player:addOutfitAddon(145, 2)
 				player:addOutfitAddon(149, 2)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.lugri.you_dont_have_18", npc, creature)
+				npcHandler:say("You don't have it...", npc, creature)
 			end
 		elseif npcHandler:getTopic(playerId) == 7 then
 			npcHandler:say({
@@ -182,7 +182,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.ShadowPupilCount, 0)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.LugriNecromancers, 0)
 		elseif npcHandler:getTopic(playerId) == 8 then
-			npcHandler:sayLocalized("npc.lugri.good_then_go_19", npc, creature)
+			npcHandler:say("Good. Then go.", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.NecromancerCount, 0)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.NecromancerCount, 0)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.PriestessCount, 0)

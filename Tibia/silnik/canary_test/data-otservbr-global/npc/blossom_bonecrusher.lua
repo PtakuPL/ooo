@@ -63,7 +63,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if table.contains({ "fuck", "idiot", "asshole", "ass", "fag", "stupid", "tyrant", "shit", "lunatic" }, message) then
-		npcHandler:sayLocalized("npc.blossom_bonecrusher.take_this_1", npc, creature)
+		npcHandler:say("Take this!", npc, creature)
 		local player = Player(creature)
 		player:getPosition():sendMagicEffect(CONST_ME_EXPLOSIONAREA)
 		player:addCondition(condition)

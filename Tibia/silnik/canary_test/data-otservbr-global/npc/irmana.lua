@@ -51,13 +51,13 @@ local function creatureSayCallbackFemale(npc, creature, type, message)
 	local playerId = player:getId()
 
 	if MsgContains(message, "addon") and player:getStorageValue(Storage.Quest.U7_8.NoblemanOutfits.NoblemanFirstAddon) < 1 then
-		npcHandler:sayLocalized("npc.irmana.currently_we_are_1", npc, creature)
+		npcHandler:say("Currently we are offering accessories for the nobleman - and, of course, noblewoman - outfit. Would you like to hear more about our offer?", npc, creature)
 		npcHandler:setTopic(playerId, 19)
 	elseif npcHandler:getTopic(playerId) == 19 and MsgContains(message, "yes") then
-		npcHandler:sayLocalized("npc.irmana.especially_for_you_2", npc, creature)
+		npcHandler:say("Especially for you, mylady, we are offering a pretty hat and a beautiful dress like the ones I wear. Which one are you interested in?", npc, creature)
 		npcHandler:setTopic(playerId, 20)
 	elseif npcHandler:getTopic(playerId) == 20 and MsgContains(message, "dress") then
-		npcHandler:sayLocalized("npc.irmana.great_since_our_3", npc, creature)
+		npcHandler:say("Great! Since our accessories are hand-tailored designer pieces, of course they are not made for citizens with an empty wallet. Should I inform you about our payment policy?", npc, creature)
 		npcHandler:setTopic(playerId, 21)
 	elseif npcHandler:getTopic(playerId) == 21 and MsgContains(message, "yes") then
 		npcHandler:say({
@@ -67,32 +67,32 @@ local function creatureSayCallbackFemale(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 22)
 	elseif npcHandler:getTopic(playerId) == 22 and MsgContains(message, "yes") then
-		npcHandler:sayLocalized("npc.irmana.im_very_pleased_4", npc, creature)
+		npcHandler:say("I'm very pleased to hear that! Which do you prefer - paying 150000 at once or 10000 for 15 times?", npc, creature)
 		npcHandler:setTopic(playerId, 23)
 	elseif npcHandler:getTopic(playerId) == 23 and MsgContains(message, "150000") then
 		player:setStorageValue(Storage.Quest.U7_8.NoblemanOutfits.NoblemanFirstAddon, 1)
-		npcHandler:sayLocalized("npc.irmana.good_i_have_5", npc, creature)
+		npcHandler:say("Good, I have noted down your order. Once you have the money, please come back to pick up your accessory.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "addon") and player:getStorageValue(Storage.Quest.U7_8.NoblemanOutfits.NoblemanFirstAddon) == 1 then
-		npcHandler:sayLocalized("npc.irmana.ah_are_you_6", npc, creature)
+		npcHandler:say("Ah, are you here to pickup your accessory for 150000 gold pieces?", npc, creature)
 		npcHandler:setTopic(playerId, 24)
 	elseif npcHandler:getTopic(playerId) == 24 and MsgContains(message, "yes") then
 		if player:removeMoney(150000) then
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			player:addOutfitAddon(140, 1)
-			npcHandler:sayLocalized("npc.irmana.congratulations_here_is_7", npc, creature)
+			npcHandler:say("Congratulations! Here is your brand-new accessory, I hope you like it. Please visit us again!", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.NoblemanOutfits.NoblemanFirstAddon, 2)
 		else
-			npcHandler:sayLocalized("npc.irmana.you_do_not_8", npc, creature)
+			npcHandler:say("You do not have enough money.", npc, creature)
 		end
 	elseif MsgContains(message, "addon") and player:getStorageValue(Storage.Quest.U7_8.NoblemanOutfits.NoblemanSecondAddon) < 1 then
-		npcHandler:sayLocalized("npc.irmana.currently_we_are_9", npc, creature)
+		npcHandler:say("Currently we are offering accessories for the nobleman - and, of course, noblewoman - outfit. Would you like to hear more about our offer?", npc, creature)
 		npcHandler:setTopic(playerId, 25)
 	elseif npcHandler:getTopic(playerId) == 25 and MsgContains(message, "yes") then
-		npcHandler:sayLocalized("npc.irmana.especially_for_you_10", npc, creature)
+		npcHandler:say("Especially for you, mylady, we are offering a pretty hat and a beautiful dress like the ones I wear. Which one are you interested in?", npc, creature)
 		npcHandler:setTopic(playerId, 26)
 	elseif npcHandler:getTopic(playerId) == 26 and MsgContains(message, "hat") then
-		npcHandler:sayLocalized("npc.irmana.great_since_our_11", npc, creature)
+		npcHandler:say("Great! Since our accessories are hand-tailored designer pieces, of course they are not made for citizens with an empty wallet. Should I inform you about our payment policy?", npc, creature)
 		npcHandler:setTopic(playerId, 27)
 	elseif npcHandler:getTopic(playerId) == 27 and MsgContains(message, "yes") then
 		npcHandler:say({
@@ -102,24 +102,24 @@ local function creatureSayCallbackFemale(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 28)
 	elseif npcHandler:getTopic(playerId) == 28 and MsgContains(message, "yes") then
-		npcHandler:sayLocalized("npc.irmana.im_very_pleased_12", npc, creature)
+		npcHandler:say("I'm very pleased to hear that! Which do you prefer - paying 150000 at once or 10000 for 15 times?", npc, creature)
 		npcHandler:setTopic(playerId, 29)
 	elseif npcHandler:getTopic(playerId) == 29 and MsgContains(message, "150000") then
 		player:setStorageValue(Storage.Quest.U7_8.NoblemanOutfits.NoblemanSecondAddon, 1)
-		npcHandler:sayLocalized("npc.irmana.good_i_have_13", npc, creature)
+		npcHandler:say("Good, I have noted down your order. Once you have the money, please come back to pick up your accessory.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "addon") and player:getStorageValue(Storage.Quest.U7_8.NoblemanOutfits.NoblemanSecondAddon) == 1 then
-		npcHandler:sayLocalized("npc.irmana.ah_are_you_14", npc, creature)
+		npcHandler:say("Ah, are you here to pickup your accessory for 150000 gold pieces?", npc, creature)
 		npcHandler:setTopic(playerId, 30)
 	elseif npcHandler:getTopic(playerId) == 30 and MsgContains(message, "yes") then
 		if player:removeMoney(150000) then
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			player:addOutfitAddon(140, 2)
 			player:addAchievement(226) -- Achievement Aristocrat
-			npcHandler:sayLocalized("npc.irmana.congratulations_here_is_15", npc, creature)
+			npcHandler:say("Congratulations! Here is your brand-new accessory, I hope you like it. Please visit us again!", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.NoblemanOutfits.NoblemanSecondAddon, 2)
 		else
-			npcHandler:sayLocalized("npc.irmana.you_do_not_16", npc, creature)
+			npcHandler:say("You do not have enough money.", npc, creature)
 		end
 	end
 
@@ -131,13 +131,13 @@ local function creatureSayCallbackMale(npc, creature, type, message)
 	local playerId = player:getId()
 
 	if MsgContains(message, "addon") and player:getStorageValue(Storage.Quest.U7_8.NoblemanOutfits.NoblemanFirstAddon) < 1 then
-		npcHandler:sayLocalized("npc.irmana.currently_we_are_17", npc, creature)
+		npcHandler:say("Currently we are offering accessories for the nobleman - and, of course, noblewoman - outfit. Would you like to hear more about our offer?", npc, creature)
 		npcHandler:setTopic(playerId, 9)
 	elseif npcHandler:getTopic(playerId) == 9 and MsgContains(message, "yes") then
-		npcHandler:sayLocalized("npc.irmana.especially_for_you_18", npc, creature)
+		npcHandler:say("Especially for you, mylord, we are offering a fashionable top hat and a fancy coat like the one Kalvin wears. Which one are you interested in?", npc, creature)
 		npcHandler:setTopic(playerId, 10)
 	elseif npcHandler:getTopic(playerId) == 10 and MsgContains(message, "coat") then
-		npcHandler:sayLocalized("npc.irmana.great_since_our_19", npc, creature)
+		npcHandler:say("Great! Since our accessories are hand-tailored designer pieces, of course they are not made for citizens with an empty wallet. Should I inform you about our payment policy?", npc, creature)
 		npcHandler:setTopic(playerId, 11)
 	elseif npcHandler:getTopic(playerId) == 11 and MsgContains(message, "yes") then
 		npcHandler:say({
@@ -147,29 +147,29 @@ local function creatureSayCallbackMale(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 12)
 	elseif npcHandler:getTopic(playerId) == 12 and MsgContains(message, "yes") then
-		npcHandler:sayLocalized("npc.irmana.im_very_pleased_20", npc, creature)
+		npcHandler:say("I'm very pleased to hear that! Which do you prefer - paying 150000 at once or 10000 for 15 times?", npc, creature)
 		npcHandler:setTopic(playerId, 13)
 	elseif npcHandler:getTopic(playerId) == 13 and MsgContains(message, "150000") then
 		player:setStorageValue(Storage.Quest.U7_8.NoblemanOutfits.NoblemanFirstAddon, 1)
-		npcHandler:sayLocalized("npc.irmana.good_i_have_21", npc, creature)
+		npcHandler:say("Good, I have noted down your order. Once you have the money, please come back to pick up your accessory.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "addon") and player:getStorageValue(Storage.Quest.U7_8.NoblemanOutfits.NoblemanFirstAddon) == 1 then
 		if player:removeMoney(150000) then
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			player:addOutfitAddon(132, 1)
-			npcHandler:sayLocalized("npc.irmana.ah_are_you_22", npc, creature)
+			npcHandler:say("Ah, are you here to pickup your accessory for 150000 gold pieces? Here is your nobleman coat. Enjoy!", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.NoblemanOutfits.NoblemanFirstAddon, 2)
 		else
-			npcHandler:sayLocalized("npc.irmana.you_do_not_23", npc, creature)
+			npcHandler:say("You do not have enough money.", npc, creature)
 		end
 	elseif MsgContains(message, "addon") and player:getStorageValue(Storage.Quest.U7_8.NoblemanOutfits.NoblemanSecondAddon) < 1 then
-		npcHandler:sayLocalized("npc.irmana.currently_we_are_24", npc, creature)
+		npcHandler:say("Currently we are offering accessories for the nobleman - and, of course, noblewoman - outfit. Would you like to hear more about our offer?", npc, creature)
 		npcHandler:setTopic(playerId, 14)
 	elseif npcHandler:getTopic(playerId) == 14 and MsgContains(message, "yes") then
-		npcHandler:sayLocalized("npc.irmana.especially_for_you_25", npc, creature)
+		npcHandler:say("Especially for you, mylord, we are offering a fashionable top hat and a fancy coat like the one Kalvin wears. Which one are you interested in?", npc, creature)
 		npcHandler:setTopic(playerId, 15)
 	elseif npcHandler:getTopic(playerId) == 15 and MsgContains(message, "yes") then
-		npcHandler:sayLocalized("npc.irmana.great_since_our_26", npc, creature)
+		npcHandler:say("Great! Since our accessories are hand-tailored designer pieces, of course they are not made for citizens with an empty wallet. Should I inform you about our payment policy?", npc, creature)
 		npcHandler:setTopic(playerId, 16)
 	elseif npcHandler:getTopic(playerId) == 16 and MsgContains(message, "yes") then
 		npcHandler:say({
@@ -179,21 +179,21 @@ local function creatureSayCallbackMale(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 17)
 	elseif npcHandler:getTopic(playerId) == 17 and MsgContains(message, "yes") then
-		npcHandler:sayLocalized("npc.irmana.im_very_pleased_27", npc, creature)
+		npcHandler:say("I'm very pleased to hear that! Which do you prefer - paying 150000 at once or 10000 for 15 times?", npc, creature)
 		npcHandler:setTopic(playerId, 18)
 	elseif npcHandler:getTopic(playerId) == 18 and MsgContains(message, "150000") then
 		player:setStorageValue(Storage.Quest.U7_8.NoblemanOutfits.NoblemanSecondAddon, 1)
-		npcHandler:sayLocalized("npc.irmana.good_i_have_28", npc, creature)
+		npcHandler:say("Good, I have noted down your order. Once you have the money, please come back to pick up your accessory.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "addon") and player:getStorageValue(Storage.Quest.U7_8.NoblemanOutfits.NoblemanSecondAddon) == 1 then
 		if player:removeMoney(150000) then
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			player:addOutfitAddon(132, 2)
 			player:addAchievement(226) -- Achievement Aristocrat
-			npcHandler:sayLocalized("npc.irmana.ah_are_you_29", npc, creature)
+			npcHandler:say("Ah, are you here to pickup your accessory for 150000 gold pieces? Here is your nobleman hat. Enjoy!", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.NoblemanOutfits.NoblemanSecondAddon, 2)
 		else
-			npcHandler:sayLocalized("npc.irmana.you_do_not_30", npc, creature)
+			npcHandler:say("You do not have enough money.", npc, creature)
 		end
 	end
 
@@ -215,54 +215,54 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 8)
 		else
-			npcHandler:sayLocalized("npc.irmana.you_are_not_31", npc, creature)
+			npcHandler:say("You are not on that mission.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 5 then
 		if player:getItemCount(3566) >= 1 then
 			player:removeItem(3566, 1)
-			npcHandler:sayLocalized("npc.irmana.a_red_robe_32", npc, creature)
+			npcHandler:say("A {Red Robe}! Great. Here, take this red piece of cloth, I don't need it anyway.", npc, creature)
 			player:addItem(5911, 1)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:sayLocalized("npc.irmana.are_you_trying_33", npc, creature)
+			npcHandler:say("Are you trying to mess with me?!", npc, creature)
 		end
 	elseif npcHandler:getTopic(playerId) == 6 then
 		if player:getItemCount(3574) >= 1 then
 			player:removeItem(3574, 1)
-			npcHandler:sayLocalized("npc.irmana.a_mystic_turban_34", npc, creature)
+			npcHandler:say("A {Mystic Turban}! Great. Here, take this blue piece of cloth, I don't need it anyway.", npc, creature)
 			player:addItem(5912, 1)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:sayLocalized("npc.irmana.are_you_trying_35", npc, creature)
+			npcHandler:say("Are you trying to mess with me?!", npc, creature)
 		end
 	elseif npcHandler:getTopic(playerId) == 7 then
 		if player:getItemCount(3563) >= 150 then
 			player:removeItem(3563, 150)
-			npcHandler:sayLocalized("npc.irmana.a_green_tunic_36", npc, creature)
+			npcHandler:say("A 150 {Green Tunic}! Great. Here, take this green piece of cloth, I don't need it anyway.", npc, creature)
 			player:addItem(5910, 1)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:sayLocalized("npc.irmana.are_you_trying_37", npc, creature)
+			npcHandler:say("Are you trying to mess with me?!", npc, creature)
 		end
 	elseif npcHandler:getTopic(playerId) == 8 then
 		if player:getMoney() >= 1000 then
 			player:removeMoney(1000)
 			player:addItem(25238, 1) -- Fur of a Wolf Whelp
-			npcHandler:sayLocalized("npc.irmana.alright_here_is_38", npc, creature)
+			npcHandler:say("Alright. Here is the fur.", npc, creature)
 			player:setStorageValue(ThreatenedDreams.Mission01[1], 8)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:sayLocalized("npc.irmana.are_you_trying_39", npc, creature)
+			npcHandler:say("Are you trying to mess with me?!", npc, creature)
 		end
 	elseif MsgContains(message, "red robe") then
-		npcHandler:sayLocalized("npc.irmana.have_you_found_40", npc, creature)
+		npcHandler:say("Have you found a {Red Robe} for me?", npc, creature)
 		npcHandler:setTopic(playerId, 5)
 	elseif MsgContains(message, "mystic turban") then
-		npcHandler:sayLocalized("npc.irmana.have_you_found_41", npc, creature)
+		npcHandler:say("Have you found a {Mystic Turban} for me?", npc, creature)
 		npcHandler:setTopic(playerId, 6)
 	elseif MsgContains(message, "green tunic") then
-		npcHandler:sayLocalized("npc.irmana.have_you_found_42", npc, creature)
+		npcHandler:say("Have you found {150 Green Tunic} for me?", npc, creature)
 		npcHandler:setTopic(playerId, 7)
 	elseif playerSex == PLAYERSEX_MALE then
 		return creatureSayCallbackMale(npc, creature, type, message)

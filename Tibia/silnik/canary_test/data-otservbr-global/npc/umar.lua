@@ -56,7 +56,7 @@ local function greetCallback(npc, creature, message)
 	local playerId = player:getId()
 
 	if not MsgContains(message, "djanni'hah") then
-		npcHandler:sayLocalized("npc.umar.whoa_a_human_1", npc, creature)
+		npcHandler:say("Whoa! A human! This is no place for you, |PLAYERNAME|. Go and play somewhere else.", npc, creature)
 		endConversationWithDelay(npcHandler, npc, creature)
 		return false
 	end
@@ -86,7 +86,7 @@ local function greetCallback(npc, creature, message)
 			"Well. Why are you here anyway, |PLAYERNAME|?",
 		}, npc, creature)
 	else
-		npcHandler:sayLocalized("npc.umar.playername_hows_it_2", npc, creature)
+		npcHandler:say("|PLAYERNAME|! How's it going these days? What brings you {here}?", npc, creature)
 	end
 
 	npcHandler:setInteraction(npc, creature)
@@ -125,19 +125,19 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:sayLocalized("npc.umar.you_already_have_3", npc, creature)
+			npcHandler:say("You already have the permission to enter Ashta'daramai.", npc, creature)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
 			if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.Faction.EfreetDoor) ~= 1 then
-				npcHandler:sayLocalized("npc.umar.are_you_sure_4", npc, creature)
+				npcHandler:say("Are you sure? You pledge loyalty to king Gabel, who is... you know. And you are willing to never ever set foot on Efreets' territory, unless you want to kill them? Yes?", npc, creature)
 				npcHandler:setTopic(playerId, 2)
 			else
-				npcHandler:sayLocalized("npc.umar.i_dont_believe_5", npc, creature)
+				npcHandler:say("I don't believe you! You better go now.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.umar.this_isnt_your_6", npc, creature)
+			npcHandler:say("This isn't your war anyway, human.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
@@ -149,7 +149,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.Faction.MaridDoor, 1)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.Faction.Greeting, 0)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.umar.this_isnt_your_7", npc, creature)
+			npcHandler:say("This isn't your war anyway, human.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

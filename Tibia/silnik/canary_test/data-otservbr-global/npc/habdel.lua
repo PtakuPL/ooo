@@ -60,12 +60,12 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if player:getSex() == PLAYERSEX_MALE and MsgContains(message, "outfit") and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheOrcPowder) >= 34 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) >= 44 then
 		if player:getStorageValue(Storage.Quest.U7_8.OrientalOutfits.FirstOrientalAddon) < 1 then
-			npcHandler:sayLocalized("npc.habdel.my_scimitar_yes_1", npc, creature)
+			npcHandler:say("My scimitar? Yes, that is a true masterpiece. Of course I could make one for you, but I have a small request. Would you fulfil a task for me?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif player:getSex() == PLAYERSEX_MALE and MsgContains(message, "comb") then
 		if player:getStorageValue(Storage.Quest.U7_8.OrientalOutfits.FirstOrientalAddon) == 1 then
-			npcHandler:sayLocalized("npc.habdel.have_you_brought_2", npc, creature)
+			npcHandler:say("Have you brought a mermaid's comb for Ishina?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "yes") then
@@ -81,22 +81,22 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 			player:setStorageValue(Storage.Quest.U7_8.OrientalOutfits.FirstOrientalAddon, 1)
 			player:setStorageValue(Storage.Quest.U7_8.OrientalOutfits.OrientalDoor, 1)
-			npcHandler:sayLocalized("npc.habdel.brilliant_i_will_3", npc, creature)
+			npcHandler:say("Brilliant! I will wait for you to return with a mermaid's comb then.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if not player:removeItem(5945, 1) then
-				npcHandler:sayLocalized("npc.habdel.no_thats_not_4", npc, creature)
+				npcHandler:say("No... that's not it.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
 			player:setStorageValue(Storage.Quest.U7_8.OrientalOutfits.FirstOrientalAddon, 2)
 			player:addOutfitAddon(146, 1) --male addon
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-			npcHandler:sayLocalized("npc.habdel.yeah_thats_it_5", npc, creature)
+			npcHandler:say("Yeah! That's it! I can't wait to give it to her! Oh - but first, I'll fulfil my promise: Here is your scimitar! Thanks again!", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) ~= 0 then
-		npcHandler:sayLocalized("npc.habdel.ah_well_doesnt_6", npc, creature)
+		npcHandler:say("Ah well. Doesn't matter.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

@@ -23,14 +23,11 @@ npcConfig.flags = {
 	floorchange = false,
 }
 
--- Load NPC helper library
-dofile(CORE_DIRECTORY .. "/libs/npc/i18n.lua")
-
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = NPC_LIB.i18n.get("npc.nelly.voice_welcome") },
-	{ text = NPC_LIB.i18n.get("npc.nelly.voice_selling") },
+	{ text = "Welcome to the post office!" },
+	{ text = "Also selling runes, potions and magical equipment!" },
 }
 
 local itemsTable = {
@@ -159,16 +156,16 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), itemsTable)
-		npcHandler:sayLocalized("npc.nelly.of_course_just_1" .. remainingCategories .. ".", npc, player)
+		npcHandler:say("Of course, just browse through my wares. You can also look at " .. remainingCategories .. ".", npc, player)
 		npc:openShopWindowTable(player, categoryTable)
 	end
 	return true
 end
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_GREET, NPC_LIB.i18n.get("npc.nelly.greet", { "|PLAYERNAME|" }))
-npcHandler:setMessage(MESSAGE_FAREWELL, NPC_LIB.i18n.get("npc.nelly.farewell", { "|PLAYERNAME|" }))
-npcHandler:setMessage(MESSAGE_WALKAWAY, NPC_LIB.i18n.get("npc.nelly.walkaway"))
+npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|, What can I do for you? I'm working for the post office, but I also trade with important {potions}, {runes} and other magical equipment.")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye, |PLAYERNAME|.")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "Ah, the impetuosity of youth.")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my wares. Or do you want to look only at " .. GetFormattedShopCategoryNames(itemsTable) .. ".")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

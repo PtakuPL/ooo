@@ -61,45 +61,45 @@ local function creatureSayCallback(npc, creature, type, message)
 		if npcHandler:getTopic(playerId) == 1 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 1)
 			player:addAchievement("Secret Agent")
-			npcHandler:sayLocalized("npc.uncle.then_welcome_to_1", npc, creature)
+			npcHandler:say("Then welcome to the family.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.AVINMission01, 4)
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 3)
-			npcHandler:sayLocalized("npc.uncle.i_hope_you_2", npc, creature)
+			npcHandler:say("I hope you did not make this little pest too nervous. He isn't serving us too well by hiding under some stone or something like that. However, nicely done for your first job.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:removeItem(403, 1) then
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.AVINMission02, 2)
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 5)
-				npcHandler:sayLocalized("npc.uncle.ah_yes_this_3", npc, creature)
+				npcHandler:say("Ah, yes. This will be a most interesting lecture.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.uncle.please_bring_me_4", npc, creature)
+				npcHandler:say("Please bring me the file AH-X17L89.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.AVINMission03, 4)
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 7)
-			npcHandler:sayLocalized("npc.uncle.does_it_not_5", npc, creature)
+			npcHandler:say("Does it not warm up your heart if you can bring a little joy to the people while doing your job? Well, don't get carried away, most part of your job is not warming up hearts but tearing them out.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.AVINMission04, 3)
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 9)
-			npcHandler:sayLocalized("npc.uncle.good_work_getting_6", npc, creature)
+			npcHandler:say("Good work getting rid of that nuisance.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 6 then
 			if player:removeItem(406, 1) then
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.AVINMission05, 2)
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 11)
-				npcHandler:sayLocalized("npc.uncle.fine_fine_this_7", npc, creature)
+				npcHandler:say("Fine, fine. This will serve us quite well. Ah, don't give me that look... you are not that stupid, are you?", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.uncle.come_back_when_8", npc, creature)
+				npcHandler:say("Come back when you've found the ring.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 7 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.AVINMission06, 3)
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 13)
-			npcHandler:sayLocalized("npc.uncle.even_if_the_9", npc, creature)
+			npcHandler:say("Even if the present has not improved our relations, the weapons will enable the barbarians to put more pressure on Svargrond and Carlin. So in any case we profited from the present.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 8 then
 			if player:removeItem(396, 1) then
@@ -112,12 +112,12 @@ local function creatureSayCallback(npc, creature, type, message)
 					"Take this token of gratitude. I hope you can use well what you will find inside!",
 				}, npc, creature)
 			else
-				npcHandler:sayLocalized("npc.uncle.please_bring_me_10", npc, creature)
+				npcHandler:say("Please bring me proof of the mad technomancers defeat!", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
-		npcHandler:sayLocalized("npc.uncle.as_you_wish_11", npc, creature)
+		npcHandler:say("As you wish.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "join") then
 		if player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) < 1 then
@@ -134,10 +134,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 2)
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.AVINMission01, 1)
 			player:addItem(402, 1)
-			npcHandler:sayLocalized("npc.uncle.lets_start_with_12", npc, creature)
+			npcHandler:say("Let's start with a rather simple job. There is a contact in Thais with that we need to get in touch again. Deliver this note to Gamel in Thais. Get an answer from him. If he is a bit reluctant, be 'persuasive'.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.AVINMission01) == 3 then
-			npcHandler:sayLocalized("npc.uncle.do_you_have_13", npc, creature)
+			npcHandler:say("Do you have news to make old Uncle happy?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.AVINMission01) == 4 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 3 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 4)
@@ -149,7 +149,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.AVINMission02) == 1 then
-			npcHandler:sayLocalized("npc.uncle.do_you_have_14", npc, creature)
+			npcHandler:say("Do you have news to make old Uncle happy?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.AVINMission02) == 2 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 5 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 6)
@@ -161,7 +161,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.AVINMission03) == 3 then
-			npcHandler:sayLocalized("npc.uncle.do_you_have_15", npc, creature)
+			npcHandler:say("Do you have news to make old Uncle happy? Don't tell me you need another barrel of beer, though.", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.AVINMission03) == 4 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 7 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 8)
@@ -176,15 +176,15 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.AVINMission04) == 2 then
-			npcHandler:sayLocalized("npc.uncle.do_you_have_16", npc, creature)
+			npcHandler:say("Do you have news to make old Uncle happy?", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.AVINMission04) == 3 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 9 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 10)
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.AVINMission05, 1)
-			npcHandler:sayLocalized("npc.uncle.i_need_you_17", npc, creature)
+			npcHandler:say("I need you to locate a lost ring on the Isle of the Kings for me, get back to me once you have it.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.AVINMission05) == 1 then
-			npcHandler:sayLocalized("npc.uncle.do_you_have_18", npc, creature)
+			npcHandler:say("Do you have news to make old Uncle happy?", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.AVINMission05) == 2 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 11 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 12)
@@ -198,7 +198,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.AVINMission06) == 2 then
-			npcHandler:sayLocalized("npc.uncle.do_you_have_19", npc, creature)
+			npcHandler:say("Do you have news to make old Uncle happy?", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.AVINMission06) == 3 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Quest) == 13 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.Quest, 14)
@@ -210,7 +210,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_1.SecretService.AVINMission06) == 3 and player:getStorageValue(Storage.Quest.U8_1.SecretService.Mission07) == 1 then
-			npcHandler:sayLocalized("npc.uncle.do_you_have_20", npc, creature)
+			npcHandler:say("Do you have news to make old Uncle happy?", npc, creature)
 			npcHandler:setTopic(playerId, 8)
 		end
 	end

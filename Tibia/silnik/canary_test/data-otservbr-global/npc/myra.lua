@@ -59,22 +59,22 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "outfit") then
-		npcHandler:sayLocalized("npc.myra.this_tiara_is_1", npc, creature)
+		npcHandler:say("This Tiara is an award by the academy of Edron in recognition of my service here.", npc, creature)
 		npcHandler:setTopic(playerId, 100)
 	elseif MsgContains(message, "tiara") and player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak) < 1 then
 		if npcHandler:getTopic(playerId) ~= 100 then
-			npcHandler:sayLocalized("npc.myra.please_ask_about_2", npc, creature)
+			npcHandler:say("Please ask about the 'outfit' first.", npc, creature)
 		else
 			local storageValue = player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak)
 			if storageValue == -1 then
-				npcHandler:sayLocalized("npc.myra.well_maybe_if_3", npc, creature)
+				npcHandler:say("Well... maybe, if you help me a little, I could convince the academy of Edron that you are a valuable help here and deserve an award too. How about it?", npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			elseif storageValue > 0 and storageValue < 10 then
-				npcHandler:sayLocalized("npc.myra.before_i_can_4", npc, creature)
+				npcHandler:say("Before I can nominate you for an award, please complete your task.", npc, creature)
 			elseif storageValue == 10 then
-				npcHandler:sayLocalized("npc.myra.go_to_the_5", npc, creature)
+				npcHandler:say("Go to the academy in Edron and tell Zoltan that I sent you, |PLAYERNAME|.", npc, creature)
 			elseif storageValue == 11 then
-				npcHandler:sayLocalized("npc.myra.i_dont_have_6", npc, creature)
+				npcHandler:say("I don't have any tasks for you right now, |PLAYERNAME|. You were of great help.", npc, creature)
 			end
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
@@ -91,17 +91,17 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.myra.thats_a_pity_7", npc, creature)
+			npcHandler:say("That's a pity.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "yes") then
-			npcHandler:sayLocalized("npc.myra.fine_lets_start_8", npc, creature)
+			npcHandler:say("Fine! Let's start with the 70 bat wings. I really feel uncomfortable out there in the jungle.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak, 1)
 			player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.MissionHatCloak, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.myra.would_you_like_9", npc, creature)
+			npcHandler:say("Would you like me to repeat the task requirements then?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "task") then
@@ -124,192 +124,192 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "bat wing") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak) == 1 then
-			npcHandler:sayLocalized("npc.myra.oh_did_you_10", npc, creature)
+			npcHandler:say("Oh, did you bring the 70 bat wings for me?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "red cloth") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak) == 2 then
-			npcHandler:sayLocalized("npc.myra.have_you_found_11", npc, creature)
+			npcHandler:say("Have you found 20 pieces of red cloth?", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "ape fur") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak) == 3 then
-			npcHandler:sayLocalized("npc.myra.were_you_able_12", npc, creature)
+			npcHandler:say("Were you able to retrieve 40 pieces of ape fur?", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "holy orchid") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak) == 4 then
-			npcHandler:sayLocalized("npc.myra.did_you_convince_13", npc, creature)
+			npcHandler:say("Did you convince the elves to give you 35 holy orchids?", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		end
 	elseif MsgContains(message, "spider silk") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak) == 5 then
-			npcHandler:sayLocalized("npc.myra.oh_did_you_14", npc, creature)
+			npcHandler:say("Oh, did you bring 10 spools of spider silk yarn for me?", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		end
 	elseif MsgContains(message, "lizard scale") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak) == 6 then
-			npcHandler:sayLocalized("npc.myra.have_you_found_15", npc, creature)
+			npcHandler:say("Have you found 60 lizard scales?", npc, creature)
 			npcHandler:setTopic(playerId, 8)
 		end
 	elseif MsgContains(message, "red dragon scale") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak) == 7 then
-			npcHandler:sayLocalized("npc.myra.were_you_able_16", npc, creature)
+			npcHandler:say("Were you able to get all 40 red dragon scales?", npc, creature)
 			npcHandler:setTopic(playerId, 9)
 		end
 	elseif MsgContains(message, "magic sulphur") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak) == 8 then
-			npcHandler:sayLocalized("npc.myra.have_you_collected_17", npc, creature)
+			npcHandler:say("Have you collected 15 ounces of magic sulphur?", npc, creature)
 			npcHandler:setTopic(playerId, 10)
 		end
 	elseif MsgContains(message, "vampire dust") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak) == 9 then
-			npcHandler:sayLocalized("npc.myra.have_you_gathered_18", npc, creature)
+			npcHandler:say("Have you gathered 30 ounces of vampire dust?", npc, creature)
 			npcHandler:setTopic(playerId, 11)
 		end
 	elseif npcHandler:getTopic(playerId) == 3 then
 		if MsgContains(message, "yes") then
 			if player:getItemCount(5894) < 70 then
-				npcHandler:sayLocalized("npc.myra.no_no_thats_19", npc, creature)
+				npcHandler:say("No, no. That's not enough, I fear.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.myra.thank_you_i_20", npc, creature)
+				npcHandler:say("Thank you! I really needed them for my anti-wrinkle lotion. Now, please bring me 20 pieces of red cloth.", npc, creature)
 				player:removeItem(5894, 70)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak, 2)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.MissionHatCloak, 2)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.myra.would_you_like_21", npc, creature)
+			npcHandler:say("Would you like me to repeat the task requirements then?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 4 then
 		if MsgContains(message, "yes") then
 			if player:getItemCount(5911) < 20 then
-				npcHandler:sayLocalized("npc.myra.no_no_thats_22", npc, creature)
+				npcHandler:say("No, no. That's not enough, I fear.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.myra.great_this_should_23", npc, creature)
+				npcHandler:say("Great! This should be enough for my new dress. Don't forget to bring me 40 pieces of ape fur next!", npc, creature)
 				player:removeItem(5911, 20)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak, 3)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.MissionHatCloak, 3)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.myra.would_you_like_24", npc, creature)
+			npcHandler:say("Would you like me to repeat the task requirements then?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 5 then
 		if MsgContains(message, "yes") then
 			if player:getItemCount(5883) < 40 then
-				npcHandler:sayLocalized("npc.myra.no_no_thats_25", npc, creature)
+				npcHandler:say("No, no. That's not enough, I fear.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.myra.nice_job_player_26", npc, creature)
+				npcHandler:say("Nice job, player. You see, I'm testing a new depilation cream. I guess if it works on ape fur it's good quality. Next, please bring me 35 holy orchids.", npc, creature)
 				player:removeItem(5883, 40)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak, 4)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.MissionHatCloak, 4)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.myra.would_you_like_27", npc, creature)
+			npcHandler:say("Would you like me to repeat the task requirements then?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 6 then
 		if MsgContains(message, "yes") then
 			if player:getItemCount(5922) < 35 then
-				npcHandler:sayLocalized("npc.myra.no_no_thats_28", npc, creature)
+				npcHandler:say("No, no. That's not enough, I fear.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.myra.thank_god_the_29", npc, creature)
+				npcHandler:say("Thank god! The scent of holy orchids is simply the only possible solution against the horrible stench from the tavern latrine. Now, please bring me 10 rolls of spider silk yarn.", npc, creature)
 				player:removeItem(5922, 35)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak, 5)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.MissionHatCloak, 5)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.myra.would_you_like_30", npc, creature)
+			npcHandler:say("Would you like me to repeat the task requirements then?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 7 then
 		if MsgContains(message, "yes") then
 			if player:getItemCount(5886) < 10 then
-				npcHandler:sayLocalized("npc.myra.no_no_thats_31", npc, creature)
+				npcHandler:say("No, no. That's not enough, I fear.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.myra.i_appreciate_it_32", npc, creature)
+				npcHandler:say("I appreciate it. My pet doggie manages to bite through all sorts of leashes, which is why he is always gone. I'm sure this strong yarn will keep him. Now, go for the 60 lizard scales!", npc, creature)
 				player:removeItem(5886, 10)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak, 6)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.MissionHatCloak, 6)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.myra.would_you_like_33", npc, creature)
+			npcHandler:say("Would you like me to repeat the task requirements then?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 8 then
 		if MsgContains(message, "yes") then
 			if player:getItemCount(5881) < 60 then
-				npcHandler:sayLocalized("npc.myra.no_no_thats_34", npc, creature)
+				npcHandler:say("No, no. That's not enough, I fear.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.myra.good_job_they_35", npc, creature)
+				npcHandler:say("Good job. They will look almost like sequins on my new dress. Please go for the 40 red dragon scales now.", npc, creature)
 				player:removeItem(5881, 60)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak, 7)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.MissionHatCloak, 7)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.myra.would_you_like_36", npc, creature)
+			npcHandler:say("Would you like me to repeat the task requirements then?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 9 then
 		if MsgContains(message, "yes") then
 			if player:getItemCount(5882) < 40 then
-				npcHandler:sayLocalized("npc.myra.no_no_thats_37", npc, creature)
+				npcHandler:say("No, no. That's not enough, I fear.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.myra.thanks_they_make_38", npc, creature)
+				npcHandler:say("Thanks! They make a pretty decoration, don't you think? Please bring me 15 ounces of magic sulphur now!", npc, creature)
 				player:removeItem(5882, 40)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak, 8)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.MissionHatCloak, 8)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.myra.would_you_like_39", npc, creature)
+			npcHandler:say("Would you like me to repeat the task requirements then?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 10 then
 		if MsgContains(message, "yes") then
 			if player:getItemCount(5904) < 15 then
-				npcHandler:sayLocalized("npc.myra.no_no_thats_40", npc, creature)
+				npcHandler:say("No, no. That's not enough, I fear.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.myra.ah_thats_enough_41", npc, creature)
+				npcHandler:say("Ah, that's enough magic sulphur for my new peeling. You should try it once, your skin gets incredibly smooth. Now, the only thing I need is vampire dust. 30 ounces will suffice.", npc, creature)
 				player:removeItem(5904, 15)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak, 9)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.MissionHatCloak, 9)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.myra.would_you_like_42", npc, creature)
+			npcHandler:say("Would you like me to repeat the task requirements then?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 11 then
 		if MsgContains(message, "yes") then
 			if player:getItemCount(5905) < 30 then
-				npcHandler:sayLocalized("npc.myra.no_no_thats_43", npc, creature)
+				npcHandler:say("No, no. That's not enough, I fear.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.myra.ah_great_now_44", npc, creature)
+				npcHandler:say("Ah, great. Now I can finally finish the potion which the academy of Edron asked me to. I guess, now you want your reward, don't you?", npc, creature)
 				player:removeItem(5905, 30)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak, 10)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.MissionHatCloak, 10)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.myra.would_you_like_45", npc, creature)
+			npcHandler:say("Would you like me to repeat the task requirements then?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "addon") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak) == 10 then
-			npcHandler:sayLocalized("npc.myra.this_tiara_is_46", npc, creature)
+			npcHandler:say("This Tiara is an award by the academy of Edron in recognition of my service here.", npc, creature)
 			npcHandler:setTopic(playerId, 12)
 		end
 	elseif npcHandler:getTopic(playerId) == 12 then
 		if MsgContains(message, "tiara") and player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak) == 10 then
-			npcHandler:sayLocalized("npc.myra.go_to_the_47", npc, creature)
+			npcHandler:say("Go to the academy in Edron and tell Zoltan that I sent you, |PLAYERNAME|.", npc, creature)
 		end
 	end
 

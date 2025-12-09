@@ -68,7 +68,7 @@ function addItemsToShoppingBag(npc, player)
 		local moneyRequired = playerData.moneyRequired
 		local itemList = playerData.itemList
 		if player:getMoney() + player:getBankBalance() < moneyRequired then
-			npcHandler:sayLocalized("npc.imbuement_assistant.sorry_you_dont_1", npc, player)
+			npcHandler:say("Sorry, you don't have enough money", npc, player)
 			npcHandler:setTopic(player:getId(), 0)
 			return false, "You don't have enough money."
 		end
@@ -317,7 +317,7 @@ local imbuementPackagesData = {
 local function purchaseItems(npc, player, message)
 	local packageData = imbuementPackagesData[message]
 	if packageData and npcHandler:getTopic(player:getId()) == 1 then
-		npcHandler:sayLocalized("npc.imbuement_assistant.do_you_want_2" .. packageData.text .. " imbuement for " .. packageData.moneyRequired .. " gold?", npc, player)
+		npcHandler:say("Do you want to buy items for " .. packageData.text .. " imbuement for " .. packageData.moneyRequired .. " gold?", npc, player)
 		npcHandler:setTopic(player:getId(), 2)
 		playerImbuementData[player:getId()] = {
 			moneyRequired = packageData.moneyRequired,
@@ -350,7 +350,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 
 		playerImbuementData[playerId] = nil
-		npcHandler:sayLocalized("npc.imbuement_assistant.you_have_successfully_3", npc, player)
+		npcHandler:say("You have successfully completed your purchase of the items.", npc, player)
 		npcHandler:setTopic(playerId, 1)
 		npcHandler:say(imbuementPackages, npc, creature)
 	end

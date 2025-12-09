@@ -59,7 +59,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "cigar") then
-		npcHandler:sayLocalized("npc.theodore_loveless.oh_my_have_1", npc, creature)
+		npcHandler:say("Oh my. Have you gotten an exquisite cigar for me, my young friend?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
 		local player = Player(creature)
@@ -76,7 +76,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:sayLocalized("npc.theodore_loveless.oh_then_there_2", npc, creature)
+		npcHandler:say("Oh, then there must be a misunderstanding.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 

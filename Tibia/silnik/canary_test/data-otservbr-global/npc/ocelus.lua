@@ -23,9 +23,6 @@ npcConfig.flags = {
 	floorchange = false,
 }
 
--- Load NPC helper library
-dofile(CORE_DIRECTORY .. "/libs/npc/i18n.lua")
-
 local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
 
@@ -63,53 +60,53 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "eleonore") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.APoemForTheMermaid) == 2 and player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove) < 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ocelus.eleonore_response")
+			npcHandler:say("I heard the birds sing about her beauty. But how could a human rival the enchanting beauty of a {mermaid}?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "mermaid") or MsgContains(message, "marina") then
 		if npcHandler:getTopic(playerId) == 1 then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {
-				"npc.ocelus.mermaid_1",
-				"npc.ocelus.mermaid_2",
-			})
+			npcHandler:say({
+				"Oh yes, I noticed that lovely mermaid. From afar of course. I would not dare to step into the eyes of such a lovely creature. ...",
+				"... I guess I am quite shy. Oh my, if I were not blue, I would turn red now. If there would be someone to arrange a {date} with her.",
+			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove) == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ocelus.mermaid_poem")
+			npcHandler:say("Oh my. Its not easy to impress a mermaid I guess. Please get me a {love poem}. I think elves are the greatest poets so their city seems like a good place to look for one.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove, 3)
 		end
 	elseif MsgContains(message, "date") then
 		if npcHandler:getTopic(playerId) == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ocelus.date_ask")
+			npcHandler:say("Will you ask the mermaid Marina if she would date me?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 3 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ocelus.date_thanks")
+			npcHandler:say("Thank you. How ironic, a human granting a djinn a wish.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove, 1)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:removeItem(6119, 1) then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ocelus.poem_enchant")
+				npcHandler:say("Excellent. Here, with this little spell I enable you to recite the poem like a true elven poet. Now go and ask her for a date again.", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove, 4)
 				player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.APoemForTheMermaid, 3)
 				npcHandler:setTopic(playerId, 0)
 			else
 				npcHandler:setTopic(playerId, 0)
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ocelus.poem_missing")
+				npcHandler:say("You don't have it...", npc, creature)
 			end
 		end
 	elseif MsgContains(message, "love poem") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove) == 3 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ocelus.poem_ask")
+			npcHandler:say("Did you get a love poem from Ab'Dendriel?", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		end
 	end
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, NPC_LIB.i18n.get("npc.ocelus.greet", "{playername}"))
-npcHandler:setMessage(MESSAGE_FAREWELL, NPC_LIB.i18n.get("npc.ocelus.farewell"))
-npcHandler:setMessage(MESSAGE_WALKAWAY, NPC_LIB.i18n.get("npc.ocelus.walkaway"))
+npcHandler:setMessage(MESSAGE_GREET, "Greetings, dear visitor |PLAYERNAME|.")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye.")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "Oh well.")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

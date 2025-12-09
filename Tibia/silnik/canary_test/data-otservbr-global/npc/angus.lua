@@ -62,16 +62,16 @@ local function creatureSayCallback(npc, creature, type, message)
 	-- Joining
 	if MsgContains(message, "join") then
 		if player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.JoiningTheExplorers) < 1 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) < 1 then
-			npcHandler:sayLocalized("npc.angus.do_you_want_1", npc, creature)
+			npcHandler:say("Do you want to join the explorer society?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 		-- The New Frontier Start
 	elseif MsgContains(message, "farmine") and player:getStorageValue(TheNewFrontier.Questline) == 14 then
 		if player:getStorageValue(TheNewFrontier.Mission05.Angus) == 1 then
-			npcHandler:sayLocalized("npc.angus.oh_yes_an_2", npc, creature)
+			npcHandler:say("Oh yes, an interesting topic. We had vivid discussions about this discovery. But what is it that you want?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:sayLocalized("npc.angus.you_bring_up_3", npc, creature)
+			npcHandler:say("You bring up this topic again? I don't think our talks make any sense unless you prove that you are a supporter of science. Do you have some proof for your dedication to science?", npc, creature)
 			npcHandler:setTopic(playerId, 35)
 		end
 	elseif MsgContains(message, "bluff") and player:getStorageValue(TheNewFrontier.Mission05.AngusKeyword) == 1 and player:getStorageValue(TheNewFrontier.Questline) == 14 and player:getStorageValue(TheNewFrontier.Mission05.Angus) == 1 then
@@ -87,7 +87,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "impress") and player:getStorageValue(TheNewFrontier.Mission05.AngusKeyword) == 2 and player:getStorageValue(TheNewFrontier.Questline) == 14 and player:getStorageValue(TheNewFrontier.Mission05.Angus) == 1 then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:getStorageValue(TheNewFrontier.Mission05.Angus) == 1 then
-				npcHandler:sayLocalized("npc.angus.a_whole_new_4", npc, creature)
+				npcHandler:say("A whole new land is indeed very tempting. I can hardly imagine all the wonders that await us there. I doubt I could stop our explorers from going there even if I tried to.", npc, creature)
 				player:setStorageValue(TheNewFrontier.Mission05.Angus, 3)
 			end
 		elseif npcHandler:getTopic(playerId) == 2 then
@@ -105,7 +105,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			or player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheButterflyHunt) == 17 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 17
 			or player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.JoiningTheExplorers) == 5 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 5
 		then
-			npcHandler:sayLocalized("npc.angus.the_missions_available_5", npc, creature)
+			npcHandler:say("The missions available for your rank are the {butterfly hunt}, {plant collection} and {ice delivery}.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif
 			player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.ThePlantCollection) > 25 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) > 35 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheOrcPowder) < 35 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) < 35
@@ -113,7 +113,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			or player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheLizardUrn) == 29 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 29
 			or player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheBonelordSecret) == 32 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 32
 		then
-			npcHandler:sayLocalized("npc.angus.the_missions_available_6", npc, creature)
+			npcHandler:say("The missions available for your rank are {lizard urn}, {bonelord secrets} and {orc powder}.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif
 			player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheOrcPowder) > 34 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) > 34 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheRuneWritings) < 44 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) < 44
@@ -121,19 +121,19 @@ local function creatureSayCallback(npc, creature, type, message)
 			or player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheElvenPoetry) == 38 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 38
 			or player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheMemoryStone) == 41 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 41
 		then
-			npcHandler:sayLocalized("npc.angus.the_missions_available_7", npc, creature)
+			npcHandler:say("The missions available for your rank are {elven poetry}, {memory stone} and {rune writings}.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheRuneWritings) == 44 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 44 then
-			npcHandler:sayLocalized("npc.angus.the_explorer_society_8", npc, creature)
+			npcHandler:say("The explorer society needs a great deal of help in the research of astral travel. Are you willing to help?", npc, creature)
 			npcHandler:setTopic(playerId, 27)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheEctoplasm) == 46 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 46 then
-			npcHandler:sayLocalized("npc.angus.do_you_have_9", npc, creature)
+			npcHandler:say("Do you have some collected ectoplasm with you?", npc, creature)
 			npcHandler:setTopic(playerId, 29)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheEctoplasm) == 47 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 47 then
 			npcHandler:say({ "The research on ectoplasm makes good progress. Now we need some spectral article. Our scientists think a spectral dress would be a perfect object for their studies ...", "The bad news is that the only source to got such a dress is the queen of the banshees. Do you dare to seek her out?" }, npc, creature)
 			npcHandler:setTopic(playerId, 30)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheSpectralDress) == 49 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 48 then
-			npcHandler:sayLocalized("npc.angus.have_you_acquired_10", npc, creature)
+			npcHandler:say("Have you acquired the spectral dress we need?", npc, creature)
 			npcHandler:setTopic(playerId, 31)
 			-- Spectral stone
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheSpectralDress) == 50 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 50 then
@@ -142,12 +142,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 51)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.SpectralStone, 1)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheSpectralStone) == 51 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 51 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.SpectralStone) == 2 then
-			npcHandler:sayLocalized("npc.angus.oh_yes_tell_11", npc, creature)
+			npcHandler:say("Oh, yes! Tell our fellow explorer that the papers are in the mail already.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheSpectralStone, 52)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 52)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheSpectralStone) == 52 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 52 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.SpectralStone) == 1 then
-			npcHandler:sayLocalized("npc.angus.the_reports_from_12", npc, creature)
+			npcHandler:say("The reports from Northport have already arrived here and our progress is astonishing. We think it is possible to create an astral bridge between our bases. Are you interested to assist us with this?", npc, creature)
 			npcHandler:setTopic(playerId, 32)
 			-- Spectral stone
 			-- Astral portals
@@ -169,7 +169,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		-- Pickaxe mission
 	elseif MsgContains(message, "pickaxe") then
 		if player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.JoiningTheExplorers) < 5 or player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.JoiningTheExplorers) > 1 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) < 1 or player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) > 1 then
-			npcHandler:sayLocalized("npc.angus.did_you_get_13", npc, creature)
+			npcHandler:say("Did you get the requested pickaxe from Uzgod in Kazordoon?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 		-- Pickaxe mission
@@ -179,17 +179,17 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:say({ "Our finest minds came up with the theory that deep beneath the ice island of Folda ice can be found that is ancient. To prove this theory we would need a sample of the aforesaid ice ...", "Of course the ice melts away quickly so you would need to hurry to bring it here ...", "Would you like to accept this mission?" }, npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheIceDelivery) == 7 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 7 then
-			npcHandler:sayLocalized("npc.angus.did_you_get_14", npc, creature)
+			npcHandler:say("Did you get the ice we are looking for?", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		end
 		-- Ice delivery
 		-- Butterfly hunt
 	elseif MsgContains(message, "butterfly hunt") then
 		if player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheIceDelivery) == 8 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 8 then
-			npcHandler:sayLocalized("npc.angus.the_mission_asks_15", npc, creature)
+			npcHandler:say("The mission asks you to collect some species of butterflies, are you interested?", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheButterflyHunt) == 10 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 10 then
-			npcHandler:sayLocalized("npc.angus.did_you_acquire_16", npc, creature)
+			npcHandler:say("Did you acquire the purple butterfly we are looking for?", npc, creature)
 			npcHandler:setTopic(playerId, 8)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheButterflyHunt) == 11 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 11 then
 			npcHandler:say({ "This preparation kit will allow you to collect a blue butterfly you have killed ...", "Just use it on the fresh corpse of a blue butterfly, return the prepared butterfly to me and give me a report of your butterfly hunt." }, npc, creature)
@@ -198,7 +198,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheButterflyHunt, 12)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 12)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheButterflyHunt) == 13 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 13 then
-			npcHandler:sayLocalized("npc.angus.did_you_acquire_17", npc, creature)
+			npcHandler:say("Did you acquire the blue butterfly we are looking for?", npc, creature)
 			npcHandler:setTopic(playerId, 9)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheButterflyHunt) == 14 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 14 then
 			npcHandler:say({ "This preparation kit will allow you to collect a red butterfly you have killed ...", "Just use it on the fresh corpse of a red butterfly, return the prepared butterfly to me and give me a report of your butterfly hunt." }, npc, creature)
@@ -207,45 +207,45 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheButterflyHunt, 15)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 15)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheButterflyHunt) == 16 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 16 then
-			npcHandler:sayLocalized("npc.angus.did_you_acquire_18", npc, creature)
+			npcHandler:say("Did you acquire the red butterfly we are looking for?", npc, creature)
 			npcHandler:setTopic(playerId, 10)
 		end
 		-- Butterfly Hunt
 		-- Plant Collection
 	elseif MsgContains(message, "plant collection") then
 		if player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheButterflyHunt) == 17 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 17 then
-			npcHandler:sayLocalized("npc.angus.in_this_mission_19", npc, creature)
+			npcHandler:say("In this mission we require you to get us some plant samples from Tiquandan plants. Would you like to fulfil this mission?", npc, creature)
 			npcHandler:setTopic(playerId, 11)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.ThePlantCollection) == 19 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 19 then
-			npcHandler:sayLocalized("npc.angus.did_you_acquire_20", npc, creature)
+			npcHandler:say("Did you acquire the sample of the jungle bells plant we are looking for?", npc, creature)
 			npcHandler:setTopic(playerId, 12)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.ThePlantCollection) == 20 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 20 then
-			npcHandler:sayLocalized("npc.angus.use_this_botanists_21", npc, creature)
+			npcHandler:say("Use this botanist's container on a witches cauldron to collect a sample for us. Bring it here and report about your plant collection.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 			player:addItem(4867, 1)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.ThePlantCollection, 21)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 21)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.ThePlantCollection) == 22 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 22 then
-			npcHandler:sayLocalized("npc.angus.did_you_acquire_22", npc, creature)
+			npcHandler:say("Did you acquire the sample of the witches cauldron we are looking for?", npc, creature)
 			npcHandler:setTopic(playerId, 13)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.ThePlantCollection) == 23 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 23 then
-			npcHandler:sayLocalized("npc.angus.use_this_botanists_23", npc, creature)
+			npcHandler:say("Use this botanist's container on a giant jungle rose to obtain a sample for us. Bring it here and report about your plant collection.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 			player:addItem(4867, 1)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.ThePlantCollection, 24)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 24)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.ThePlantCollection) == 25 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 25 then
-			npcHandler:sayLocalized("npc.angus.did_you_acquire_24", npc, creature)
+			npcHandler:say("Did you acquire the sample of the giant jungle rose we are looking for?", npc, creature)
 			npcHandler:setTopic(playerId, 14)
 		end
 		-- Plant Collection
 		-- Lizard Urn
 	elseif MsgContains(message, "lizard urn") then
 		if player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.ThePlantCollection) == 26 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 26 then
-			npcHandler:sayLocalized("npc.angus.the_explorer_society_25", npc, creature)
+			npcHandler:say("The explorer society would like to acquire an ancient urn which is some sort of relic to the lizard people of Tiquanda. Would you like to accept this mission?", npc, creature)
 			npcHandler:setTopic(playerId, 15)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheLizardUrn) == 28 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 27 then
-			npcHandler:sayLocalized("npc.angus.did_you_manage_26", npc, creature)
+			npcHandler:say("Did you manage to get the ancient urn?", npc, creature)
 			npcHandler:setTopic(playerId, 16)
 		end
 		-- Lizard Urn
@@ -259,7 +259,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 17)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheBonelordSecret) == 31 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 30 then
-			npcHandler:sayLocalized("npc.angus.have_you_found_27", npc, creature)
+			npcHandler:say("Have you found any proof that the pyramid was built by bonelords?", npc, creature)
 			npcHandler:setTopic(playerId, 18)
 		end
 		-- Bonelords
@@ -269,7 +269,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:say({ "It is commonly known that orcs of Uldereks Rock use some sort of powder to increase the fierceness of their war wolves and berserkers ...", "What we do not know are the ingredients of this powder and its effect on humans ...", "So we would like you to get a sample of the aforesaid powder. Do you want to accept this mission?" }, npc, creature)
 			npcHandler:setTopic(playerId, 19)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheOrcPowder) == 34 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 33 then
-			npcHandler:sayLocalized("npc.angus.did_you_acquire_28", npc, creature)
+			npcHandler:say("Did you acquire some of the orcish powder?", npc, creature)
 			npcHandler:setTopic(playerId, 20)
 		end
 		-- Orc Powder
@@ -284,7 +284,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "elven book") then
 		if player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheElvenPoetry) == 37 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 36 then
-			npcHandler:sayLocalized("npc.angus.did_you_acquire_29", npc, creature)
+			npcHandler:say("Did you acquire a copy of 'Songs of the Forest' for us?", npc, creature)
 			npcHandler:setTopic(player:getId(), 22)
 		end
 
@@ -299,7 +299,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 23)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheMemoryStone) == 40 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 39 then
-			npcHandler:sayLocalized("npc.angus.were_you_able_30", npc, creature)
+			npcHandler:say("Were you able to acquire a memory stone for our society?", npc, creature)
 			npcHandler:setTopic(playerId, 24)
 		end
 		-- Memory Stone
@@ -314,7 +314,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 25)
 		elseif player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheRuneWritings) == 43 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) == 43 then
-			npcHandler:sayLocalized("npc.angus.did_you_create_31", npc, creature)
+			npcHandler:say("Did you create a copy of the ancient runes as requested?", npc, creature)
 			npcHandler:setTopic(playerId, 26)
 		end
 		-- Rune Writings
@@ -328,7 +328,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:sayLocalized("npc.angus.we_will_see_32", npc, creature)
+			npcHandler:say("We will see if you can handle this simple task. Get the pickaxe from Uzgod in Kazordoon and bring it to one of our bases. Report there about the pickaxe.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.JoiningTheExplorers, 1)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 1)
@@ -349,13 +349,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:removeItem(4837, 1) then
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheIceDelivery, 8)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 8)
-				npcHandler:sayLocalized("npc.angus.just_in_time_33", npc, creature)
+				npcHandler:say("Just in time. Sadly not much ice is left over but it will do. Thank you again.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 6 then
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheIceDelivery, 6)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 6)
-			npcHandler:sayLocalized("npc.angus.sigh_i_think_34", npc, creature)
+			npcHandler:say("*Sigh* I think the time is right to grant you another chance to get that ice. Hurry up this time.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 			-- Butterfly Hunt
 		elseif npcHandler:getTopic(playerId) == 7 then
@@ -368,21 +368,21 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:removeItem(4864, 1) then
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheButterflyHunt, 11)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 11)
-				npcHandler:sayLocalized("npc.angus.a_little_bit_35", npc, creature)
+				npcHandler:say("A little bit battered but it will do. Thank you! If you think you are ready, ask for another butterfly hunt.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 9 then
 			if player:removeItem(4865, 1) then
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheButterflyHunt, 14)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 14)
-				npcHandler:sayLocalized("npc.angus.a_little_bit_36", npc, creature)
+				npcHandler:say("A little bit battered but it will do. Thank you! If you think you are ready, ask for another butterfly hunt.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 10 then
 			if player:removeItem(4866, 1) then
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheButterflyHunt, 17)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 17)
-				npcHandler:sayLocalized("npc.angus.that_is_an_37", npc, creature)
+				npcHandler:say("That is an extraordinary species you have brought. Thank you! That was the last butterfly we needed.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 			-- Butterfly Hunt
@@ -390,28 +390,28 @@ local function creatureSayCallback(npc, creature, type, message)
 		elseif npcHandler:getTopic(playerId) == 11 then
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.ThePlantCollection, 18)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 18)
-			npcHandler:sayLocalized("npc.angus.fine_here_take_38", npc, creature)
+			npcHandler:say("Fine! Here take this botanist's container. Use it on a jungle bells plant to collect a sample for us. Report about your plant collection when you have been successful.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 			player:addItem(4867, 1)
 		elseif npcHandler:getTopic(playerId) == 12 then
 			if player:removeItem(4868, 1) then
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.ThePlantCollection, 20)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 20)
-				npcHandler:sayLocalized("npc.angus.i_see_it_39", npc, creature)
+				npcHandler:say("I see. It seems you've got some quite useful sample by sheer luck. Thank you! Just tell me when you are ready to continue with the plant collection.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 13 then
 			if player:removeItem(4869, 1) then
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.ThePlantCollection, 23)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 23)
-				npcHandler:sayLocalized("npc.angus.ah_finally_i_40", npc, creature)
+				npcHandler:say("Ah, finally. I started to wonder what took you so long. But thank you! Another fine sample, indeed. Just tell me when you are ready to continue with the plant collection.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 14 then
 			if player:removeItem(4870, 1) then
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.ThePlantCollection, 26)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 26)
-				npcHandler:sayLocalized("npc.angus.what_a_lovely_41", npc, creature)
+				npcHandler:say("What a lovely sample! With that you have finished your plant collection missions.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 			-- Plant Collection
@@ -426,7 +426,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:removeItem(4847, 1) then
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheLizardUrn, 29)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 29)
-				npcHandler:sayLocalized("npc.angus.yes_that_is_42", npc, creature)
+				npcHandler:say("Yes, that is the prized relic we have been looking for so long. You did a great job, thank you.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 			-- Lizard Urn
@@ -441,7 +441,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:removeItem(173, 1) then
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheBonelordSecret, 32)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 32)
-				npcHandler:sayLocalized("npc.angus.you_did_it_43", npc, creature)
+				npcHandler:say("You did it! Excellent! The scientific world will be shaken by this discovery!", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 			-- Bonelords
@@ -456,7 +456,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:removeItem(13974, 1) then
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheOrcPowder, 35)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 35)
-				npcHandler:sayLocalized("npc.angus.you_really_got_44", npc, creature)
+				npcHandler:say("You really got it? Amazing! Thank you for your efforts.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 			-- Orc Powder
@@ -465,13 +465,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheElvenPoetry, 36)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 36)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.ElvenDoor, 1)
-			npcHandler:sayLocalized("npc.angus.excellent_this_mission_45", npc, creature)
+			npcHandler:say("Excellent. This mission is easy but nonetheless vital. Travel to Ab'Dendriel and get the book.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 22 then
 			if player:removeItem(4844, 1) then
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheElvenPoetry, 38)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 38)
-				npcHandler:sayLocalized("npc.angus.let_me_have_46", npc, creature)
+				npcHandler:say("Let me have a look! Yes, that's what we wanted. A copy of 'Songs of the Forest'. I won't ask any questions about those bloodstains.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 			-- Elven Poetry
@@ -480,13 +480,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheMemoryStone, 39)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 39)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.MemoryStoneDoor, 1)
-			npcHandler:sayLocalized("npc.angus.in_the_ruins_47", npc, creature)
+			npcHandler:say("In the ruins of north-western Edron you should be able to find a memory stone. Good luck.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 24 then
 			if player:removeItem(4841, 1) then
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheMemoryStone, 41)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 41)
-				npcHandler:sayLocalized("npc.angus.a_flawless_memory_48", npc, creature)
+				npcHandler:say("A flawless memory stone! Incredible! It will take years even to figure out how it works but what an opportunity for science, thank you!", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 			-- Memory Stone
@@ -494,14 +494,14 @@ local function creatureSayCallback(npc, creature, type, message)
 		elseif npcHandler:getTopic(playerId) == 25 then
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheRuneWritings, 42)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 42)
-			npcHandler:sayLocalized("npc.angus.excellent_here_take_49", npc, creature)
+			npcHandler:say("Excellent! Here, take this tracing paper and use it on the object you will find there to create a copy of the ancient runes.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 			player:addItem(4842, 1)
 		elseif npcHandler:getTopic(playerId) == 26 then
 			if player:removeItem(4843, 1) then
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheRuneWritings, 44)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 44)
-				npcHandler:sayLocalized("npc.angus.its_a_bit_50", npc, creature)
+				npcHandler:say("It's a bit wrinkled but it will do. Thanks again.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 			-- Rune Writings
@@ -514,8 +514,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 28)
 		elseif npcHandler:getTopic(playerId) == 28 then
-			npcHandler:sayLocalized("npc.angus.good_take_this_51", npc, creature)
-			npcHandler:sayLocalized("npc.angus.dont_lose_the_52", npc, creature)
+			npcHandler:say("Good! Take this container and use it on a ghost that was recently slain. Return with the collected ectoplasm and hand me that container ...", npc, creature)
+			npcHandler:say("Don't lose the container. They are expensive!", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheEctoplasm, 45)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 45)
@@ -524,7 +524,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:removeItem(4853, 1) then
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheEctoplasm, 47)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 47)
-				npcHandler:sayLocalized("npc.angus.phew_i_had_53", npc, creature)
+				npcHandler:say("Phew, I had no idea that ectoplasm would smell that ... oh, it's you, well, sorry. Thank you for the ectoplasm.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 			-- Ectoplasm
@@ -541,13 +541,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:removeItem(4836, 1) then
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheSpectralDress, 50)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine, 50)
-				npcHandler:sayLocalized("npc.angus.just_in_time_54", npc, creature)
+				npcHandler:say("Just in time! With this spectral article we can start the final phase of our research.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 			-- Spectral Dress
 			-- Spectral Stone
 		elseif npcHandler:getTopic(playerId) == 32 then
-			npcHandler:sayLocalized("npc.angus.good_just_take_55", "As soon as you have charged the portal tiles that way, report about the spectral portals.", npc, creature)
+			npcHandler:say("Good, just take this spectral essence and use it on the strange carving in this building as well as on the corresponding tile in our base at Northport ...", "As soon as you have charged the portal tiles that way, report about the spectral portals.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheSpectralStone, 53)
 			player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.SpectralStoneDoor, 1)
@@ -557,33 +557,33 @@ local function creatureSayCallback(npc, creature, type, message)
 			-- Skull Of Ratha / Giant Smithhammer
 		elseif npcHandler:getTopic(playerId) == 33 then
 			if player:removeItem(3207, 1) then
-				npcHandler:sayLocalized("npc.angus.poor_ratha_thank_56", npc, creature)
+				npcHandler:say("Poor Ratha. Thank you for returning this skull to the society. We will see to a honourable burial of Ratha.", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.SkullOfRatha.Bag1, 2)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.angus.come_back_when_57", npc, creature)
+				npcHandler:say("Come back when you find any information.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 34 then
 			if player:removeItem(12510, 1) then
-				npcHandler:sayLocalized("npc.angus.marvellous_you_brought_58", npc, creature)
+				npcHandler:say("Marvellous! You brought a giant smith hammer for the explorer society!", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.GiantSmithHammer.Hamer, 2)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.angus.no_you_dont_59", npc, creature)
+				npcHandler:say("No you don't.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 			-- The New Frontier
 		elseif npcHandler:getTopic(playerId) == 35 then
 			if player:getStorageValue(TheNewFrontier.Questline) == 14 and player:getStorageValue(TheNewFrontier.Mission05.Angus) == 2 and player:removeItem(10011, 1) then
-				npcHandler:sayLocalized("npc.angus.what_a_strange_60", npc, creature)
+				npcHandler:say("What a strange map. I wonder if any of our explorers recognises this coastal lines. However, you earned yourself another chance to convince me. Why do you think that Farmine would be interesting for us?", npc, creature)
 				player:setStorageValue(TheNewFrontier.Mission05.Angus, 1)
 				npcHandler:setTopic(playerId, 2)
 			end
 			-- Explorer Brooch
 		elseif npcHandler:getTopic(playerId) == 36 then
 			if player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.ExplorerBrooch) == 1 and player:removeItem(4871, 1) then
-				npcHandler:sayLocalized("npc.angus.its_always_a_61", npc, creature)
+				npcHandler:say("It's always a sad day when we learn about the death of a member. But at least we learnt about his fate. Thank you, here is your reward.", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_6.ExplorerSociety.ExplorerBrooch, 2)
 				npcHandler:setTopic(playerId, 0)
 			end
@@ -592,13 +592,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		-- Answer No
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 5 then
-			npcHandler:sayLocalized("npc.angus.did_it_melt_62", npc, creature)
+			npcHandler:say("Did it melt away?", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		elseif npcHandler:getTopic(playerId) == 33 then
-			npcHandler:sayLocalized("npc.angus.come_back_when_63", npc, creature)
+			npcHandler:say("Come back when you find any information.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 34 then
-			npcHandler:sayLocalized("npc.angus.come_back_when_64", npc, creature)
+			npcHandler:say("Come back when you find one.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 		-- Answer No
@@ -610,7 +610,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 33)
 	elseif MsgContains(message, "giant smith hammer") and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.GiantSmithHammer.Hammer) == 1 then
-		npcHandler:sayLocalized("npc.angus.the_explorer_society_65", npc, creature)
+		npcHandler:say("The explorer society is looking for a genuine giant smith hammer for our collection. It is rumoured the cyclopses of the Plains of Havoc might be using one. Did you by chance obtain such a hammer?", npc, creature)
 		npcHandler:setTopic(playerId, 34)
 		-- Explorer Brooch
 	elseif MsgContains(message, "brooch") and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.ExplorerBrooch) == 1 then

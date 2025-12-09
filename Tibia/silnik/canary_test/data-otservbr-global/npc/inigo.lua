@@ -529,7 +529,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			)
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:sayLocalized("npc.inigo.im_sorry_but_1", npc, creature)
+			npcHandler:say("I'm sorry, but I cannot let you go there, you'll get much better training here than on that ancient isle.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then

@@ -50,13 +50,6 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-local function sayTranslated(npc, creature, key)
-	local player = Player(creature)
-	if player then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, key)
-	end
-end
-
 keywordHandler:addKeyword({ "chosen" }, StdModule.say, { npcHandler = npcHandler, text = "The lizards here are the chosen ones of their kind. We believe them to be the strongest warriors in these lands.So I lead my people here to learn their ways. We are mere assassins but they are using foreign techniques and seem to be far more efficient" })
 keywordHandler:addAliasKeyword({ "lizard" })
 keywordHandler:addKeyword({ "fire dragon dojo" }, StdModule.say, { npcHandler = npcHandler, text = "We of the Grey Shadow clan are studying the ways of the Chosen. Our training is hard, encounters with the lizards often deadly. Every one of us fights on his own. Each one more deadly than the other. Under my lead we wil rise renewed, as the Shadow Nina." })

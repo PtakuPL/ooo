@@ -171,15 +171,15 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:removeCondition(CONDITION_POISON)
 					player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 				end
-				npcHandler:sayLocalized("npc.oressa.you_are_hurt_1", npc, creature)
+				npcHandler:say("You are hurt, my child. I will heal your wounds.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			else
-				return npcHandler:sayLocalized("npc.oressa.you_do_not_2", npc, creature)
+				return npcHandler:say("You do not need any healing right now.", npc, creature)
 			end
 		end
 	elseif MsgContains(message, "help") and npcHandler:getTopic(playerId) == 0 then
 		if player:getCondition(CONDITION_POISON) == nil or health > 40 then
-			return npcHandler:sayLocalized("npc.oressa.you_do_not_3", npc, creature)
+			return npcHandler:say("You do not need any healing right now.", npc, creature)
 		end
 		if health < 40 or player:getCondition(CONDITION_POISON) then
 			if health < 40 then
@@ -190,7 +190,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:removeCondition(CONDITION_POISON)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 			end
-			npcHandler:sayLocalized("npc.oressa.you_are_hurt_4", npc, creature)
+			npcHandler:say("You are hurt, my child. I will heal your wounds.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 		-- Vocation dialog
@@ -212,7 +212,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "distance") and npcHandler:getTopic(playerId) == 2 then
-		npcHandler:sayLocalized("npc.oressa.tell_me_do_5", npc, creature)
+		npcHandler:say("Tell me: Do you prefer to fight with {bow} and {spear}, or do you want to cast {magic}?", npc, creature)
 		npcHandler:setTopic(playerId, 3)
 		-- knight
 	elseif MsgContains(message, "close") and npcHandler:getTopic(playerId) == 2 then
@@ -271,7 +271,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 8)
 		-- Choosing dialog start
 	elseif MsgContains(message, "decided") and npcHandler:getTopic(playerId) == 0 then
-		npcHandler:sayLocalized("npc.oressa.so_tell_me_6", npc, creature)
+		npcHandler:say("So tell me, which {vocation} do you want to choose: {knight}, {sorcerer}, {paladin} or {druid}?", npc, creature)
 		-- Say vocations name
 	elseif MsgContains(message, "sorcerer") and npcHandler:getTopic(playerId) == 0 then
 		local message = {

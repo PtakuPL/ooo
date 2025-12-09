@@ -62,49 +62,49 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "diary") then
 		if player:getStorageValue(Storage.Quest.U7_24.TheWhiteRavenMonastery.Diary) == 1 then
-			npcHandler:sayLocalized("npc.costello.do_you_want_1", npc, creature)
+			npcHandler:say("Do you want me to inspect a diary?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "holy water") then
 		local cStorage = player:getStorageValue(Storage.Quest.U8_1.RestInHallowedGround.Questline)
 		if cStorage == 1 then
-			npcHandler:sayLocalized("npc.costello.who_are_you_2", npc, creature)
+			npcHandler:say("Who are you to demand holy water from the White Raven Monastery? Who sent you??", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif cStorage == 2 then
-			npcHandler:sayLocalized("npc.costello.i_already_filled_3", npc, creature)
+			npcHandler:say("I already filled your vial with holy water.", npc, creature)
 		end
 	elseif MsgContains(message, "amanda") and npcHandler:getTopic(playerId) == 0 then
 		if player:getStorageValue(Storage.Quest.U8_1.RestInHallowedGround.Questline) == 1 then
-			npcHandler:sayLocalized("npc.costello.ahh_amanda_from_4", npc, creature)
+			npcHandler:say("Ahh, Amanda from Edron sent you! I hope she's doing well. So why did she send you here?", npc, creature)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.costello.thank_you_very_5", npc, creature)
+			npcHandler:say("Thank you very much! From now on you may open the warded doors to the catacombs.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_24.TheWhiteRavenMonastery.Diary, 1)
 			player:setStorageValue(Storage.Quest.U7_24.TheWhiteRavenMonastery.Door, 1)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if not player:removeItem(3212, 1) then
-				npcHandler:sayLocalized("npc.costello.uhm_as_you_6", npc, creature)
+				npcHandler:say("Uhm, as you wish.", npc, creature)
 				return true
 			end
 
-			npcHandler:sayLocalized("npc.costello.by_the_gods_7", npc, creature)
+			npcHandler:say("By the gods! This is brother Fugio's handwriting and what I read is horrible indeed! You have done our order a great favour by giving this diary to me! Take this blessed Ankh. May it protect you in even your darkest hours.", npc, creature)
 			player:addItem(3214, 1)
 			player:setStorageValue(Storage.Quest.U7_24.TheWhiteRavenMonastery.Diary, 2)
 		end
 	elseif npcHandler:getTopic(playerId) == 3 then
 		if not MsgContains(message, "amanda") then
-			npcHandler:sayLocalized("npc.costello.i_never_heard_8", npc, creature)
+			npcHandler:say("I never heard that name and you won't get holy water for some stranger.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 			return true
 		end
 
 		player:addItem(133, 1)
 		player:setStorageValue(Storage.Quest.U8_1.RestInHallowedGround.Questline, 2)
-		npcHandler:sayLocalized("npc.costello.ohh_why_didnt_9", npc, creature)
+		npcHandler:say("Ohh, why didn't you tell me before? Sure you get some holy water if it's for Amanda! Here you are.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "no") and table.contains({ 1, 2 }, npcHandler:getTopic(playerId)) then
-		npcHandler:sayLocalized("npc.costello.uhm_as_you_10", npc, creature)
+		npcHandler:say("Uhm, as you wish.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

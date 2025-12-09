@@ -60,19 +60,19 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "dress pattern") then
 		if player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission06) == 3 then
 			if npcHandler:getTopic(playerId) < 1 then
-				npcHandler:sayLocalized("npc.talphion.dress_flatten_who_1", npc, creature)
+				npcHandler:say("DRESS FLATTEN? WHO WANTS ME TO FLATTEN A DRESS?", npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			elseif npcHandler:getTopic(playerId) == 1 then
-				npcHandler:sayLocalized("npc.talphion.a_press_lantern_2", npc, creature)
+				npcHandler:say("A PRESS LANTERN? NEVER HEARD ABOUT IT!", npc, creature)
 				npcHandler:setTopic(playerId, 2)
 			elseif npcHandler:getTopic(playerId) == 2 then
-				npcHandler:sayLocalized("npc.talphion.chess_i_dont_3", npc, creature)
+				npcHandler:say("CHESS? I DONT PLAY CHESS!", npc, creature)
 				npcHandler:setTopic(playerId, 3)
 			elseif npcHandler:getTopic(playerId) == 3 then
-				npcHandler:sayLocalized("npc.talphion.a_pattern_in_4", npc, creature)
+				npcHandler:say("A PATTERN IN THIS MESS?? HEY DON'T INSULT MY MACHINE HALL!", npc, creature)
 				npcHandler:setTopic(playerId, 4)
 			elseif npcHandler:getTopic(playerId) == 4 then
-				npcHandler:sayLocalized("npc.talphion.ah_yes_i_5", npc, creature)
+				npcHandler:say("AH YES! I WORKED ON THE DRESS PATTERN FOR THOSE UNIFORMS. STAINLESS TROUSERES, STEAM DRIVEN BOOTS! ANOTHERMARVEL TO BEHOLD! I'LL SENT A COPY TO KEVIN IMEDIATELY!", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission06, 4)
 				npcHandler:setTopic(playerId, 0)
 			end

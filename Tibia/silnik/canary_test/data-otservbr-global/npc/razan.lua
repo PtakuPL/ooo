@@ -104,10 +104,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if player:getSex() == PLAYERSEX_MALE and MsgContains(message, "outfit") then
-		npcHandler:sayLocalized("npc.razan.my_turban_eh_1", npc, creature)
+		npcHandler:say("My turban? Eh no, you can't have it. Only oriental weapon masters may wear it after having completed a difficult task.", npc, creature)
 	elseif player:getSex() == PLAYERSEX_MALE and MsgContains(message, "task") then
 		if player:getStorageValue(Storage.Quest.U7_8.OrientalOutfits.SecondOrientalAddon) < 1 then
-			npcHandler:sayLocalized("npc.razan.you_mean_you_2", npc, creature)
+			npcHandler:say("You mean, you would like to prove that you deserve to wear such a turban?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif config[message] and npcHandler:getTopic(playerId) == 0 then
@@ -134,12 +134,12 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.OutfitQuest.DefaultStart, 1)
 			end
 			player:setStorageValue(Storage.Quest.U7_8.OrientalOutfits.SecondOrientalAddon, 1)
-			npcHandler:sayLocalized("npc.razan.excellent_come_back_3", npc, creature)
+			npcHandler:say("Excellent! Come back to me once you have collected 100 pieces of ape fur.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			local targetMessage = config[topic[playerId]]
 			if not player:removeItem(targetMessage.itemId, targetMessage.count) then
-				npcHandler:sayLocalized("npc.razan.that_is_a_4", npc, creature)
+				npcHandler:say("That is a shameless lie.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -153,7 +153,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) ~= 0 then
-		npcHandler:sayLocalized("npc.razan.what_a_pity_5", npc, creature)
+		npcHandler:say("What a pity.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 

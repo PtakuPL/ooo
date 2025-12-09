@@ -63,10 +63,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "job") and not player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 54 then
-		npcHandler:sayLocalized("npc.palimuth.im_an_augur_1", npc, creature)
+		npcHandler:say("I'm an Augur of the city of Yalahar. My special duty consists of coordinating the efforts to keep the city and its services running.", npc, creature)
 	elseif MsgContains(message, "job") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 54 then
-			npcHandler:sayLocalized("npc.palimuth.did_you_bring_2", npc, creature)
+			npcHandler:say("Did you bring me the vampiric crest?", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		end
 	elseif MsgContains(message, "mission") then
@@ -90,7 +90,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addMapMark(Position(32796, 31192, 8), 4, "Sewer Problem 4")
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 5 then
-			npcHandler:sayLocalized("npc.palimuth.so_are_you_3", npc, creature)
+			npcHandler:say("So are you done with your work?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 6 then
 			npcHandler:say({
@@ -99,7 +99,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) >= 7 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) <= 14 then
-			npcHandler:sayLocalized("npc.palimuth.did_you_get_4", npc, creature)
+			npcHandler:say("Did you get all the reports my superiors asked for? ", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 15 then
 			npcHandler:say({
@@ -163,13 +163,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission05, 2) -- StorageValue for Questlog "Mission 05: Food or Fight"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 32 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.TamerinStatus) == 1 then
-			npcHandler:sayLocalized("npc.palimuth.these_are_great_5", npc, creature)
+			npcHandler:say("These are great news indeed. The people of Yalahar will be grateful. The Yalahari probably not, so take care of yourself. ", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.GoodSide, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.GoodSide) >= 0 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.GoodSide) + 1 or 0) -- Side Storage
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 33)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission05, 8) -- StorageValue for Questlog "Mission 05: Food or Fight"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 32 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.TamerinStatus) == 2 then
-			npcHandler:sayLocalized("npc.palimuth.rumours_travel_fast_6", npc, creature)
+			npcHandler:say("Rumours travel fast in Yalahar. So the Yalahari will soon have some new toys at their disposal. I strongly doubt this has any positive effect.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 35 then
 			npcHandler:say({
@@ -202,7 +202,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission07, 2) -- StorageValue for Questlog "Mission 07: A Fishy Mission"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 42 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.QuaraState) == 1 then
-			npcHandler:sayLocalized("npc.palimuth.oh_no_so_7", npc, creature)
+			npcHandler:say("Oh no! So that's the reason for the quara attacks! I will do my best to close these sewage pipes. We will have to use other drains. ", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 43)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission07, 5) -- StorageValue for Questlog "Mission 07: A Fishy Mission"
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.GoodSide, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.GoodSide) >= 0 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.GoodSide) + 1 or 0) -- Side Storage
@@ -218,7 +218,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission08, 2) -- StorageValue for Questlog "Mission 08: Dangerous Machinations"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 46 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.MatrixState) == 1 then
-			npcHandler:sayLocalized("npc.palimuth.you_can_be_8", npc, creature)
+			npcHandler:say("You can be proud of your decision, my friend.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 48 then
 			npcHandler:say({
@@ -228,7 +228,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 49)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 49 or player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 48 then
-			npcHandler:sayLocalized("npc.palimuth.so_do_you_9", npc, creature)
+			npcHandler:say("So do you want to side with me? ", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 50 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SideDecision) == 1 then
 			npcHandler:say({
@@ -272,7 +272,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SewerPipe01) == 1 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SewerPipe02) == 1 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SewerPipe03) == 1 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SewerPipe04) == 1 then
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 6)
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission01, 6) -- StorageValue for Questlog "Mission 01: Something Rotten"
-				npcHandler:sayLocalized("npc.palimuth.thank_you_very_10", npc, creature)
+				npcHandler:say("Thank you very much. You have no idea how hard it was to find someone volunteering for that job. If you feel ready for further {missions}, just tell me.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 3 then
@@ -287,10 +287,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 14 then
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission02, 8) -- StorageValue for Questlog "Mission 02: Watching the Watchmen"
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 15)
-				npcHandler:sayLocalized("npc.palimuth.excellent_my_superiors_11", npc, creature)
+				npcHandler:say("Excellent! My superiors will be pleased to get these reports. I will for sure emphasise your efforts in this mission. Please come back soon to see if there are any more {missions} available for you. ", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.palimuth.come_back_when_12", npc, creature)
+				npcHandler:say("Come back when you do.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 5 then
@@ -298,18 +298,18 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission09, 2) -- StorageValue for Questlog "Mission 09: Decision"
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission10, 1) -- StorageValue for Questlog "Mission 10: The Final Battle"
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SideDecision, 1)
-			npcHandler:sayLocalized("npc.palimuth.you_have_no_13", npc, creature)
+			npcHandler:say("You have no idea how much I hoped to hear that, my friend! But I have an urgent mission for you!", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 6 then
 			if player:getItemCount(9041) > 0 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 54 then
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 55)
-				npcHandler:sayLocalized("npc.palimuth.great_here_take_14", npc, creature)
+				npcHandler:say("Great! Here, take this yalaharian addon in a return.", npc, creature)
 				player:addOutfitAddon(325, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SideDecision) == 1 and 1 or 2)
 				player:addOutfitAddon(324, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SideDecision) == 1 and 1 or 2)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.palimuth.come_back_when_15", npc, creature)
+				npcHandler:say("Come back when you do.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		end

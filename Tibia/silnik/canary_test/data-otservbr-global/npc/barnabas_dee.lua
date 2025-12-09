@@ -56,7 +56,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ThePowderOfTheStars.Mission) == 1 then
-			npcHandler:sayLocalized("npc.barnabas_dee.do_you_already_1", npc, creature)
+			npcHandler:say("Do you already have 15 units of blue pollen with you?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ThePowderOfTheStars.Mission) < 1 then
 			npcHandler:say({
@@ -70,19 +70,19 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "seance") and player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ThePowderOfTheStars.Mission) == 1 and player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission16) < 1 then
-		npcHandler:sayLocalized("npc.barnabas_dee.ah_did_you_2", npc, creature)
+		npcHandler:say("Ah! Did you bring me the peppermoon bell pollen I asked for?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:getItemCount(21089) >= 15 then
 				if player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission15) == 1 then
-					npcHandler:sayLocalized("npc.barnabas_dee.ah_well_done_3", npc, creature)
+					npcHandler:say("Ah! Well done! Now we shall proceed with the seance, yes?", npc, creature)
 					player:setStorageValue(Storage.Quest.U10_50.OramondQuest.ThePowderOfTheStars.Mission, -1)
 					player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission15, 2)
 					player:removeItem(21089, 15)
 					npcHandler:setTopic(playerId, 2)
 				else
-					npcHandler:sayLocalized("npc.barnabas_dee.ah_well_done_4", npc, creature)
+					npcHandler:say("Ah! Well done! These 15 doses will suffice for now. Here, take this vote for your effort.", npc, creature)
 					player:setStorageValue(Storage.Quest.U10_50.OramondQuest.ThePowderOfTheStars.Mission, -1)
 					player:removeItem(21089, 15)
 					local currentVotingPoints = player:getStorageValue(Storage.Quest.U10_50.OramondQuest.VotingPoints)
@@ -94,11 +94,11 @@ local function creatureSayCallback(npc, creature, type, message)
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:sayLocalized("npc.barnabas_dee.no_no_no_5", npc, creature)
+				npcHandler:say("No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:sayLocalized("npc.barnabas_dee.splendid_let_me_6", npc, creature)
+			npcHandler:say("Splendid. Let me make the final preparations... There. Are you ready, too?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			npcHandler:say({
@@ -111,10 +111,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		elseif npcHandler:getTopic(playerId) == 4 then
-			npcHandler:sayLocalized("npc.barnabas_dee.yes_take_care_7", npc, creature)
+			npcHandler:say("Yes, take care, the gate is opening! Can you see a bright light?", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		elseif npcHandler:getTopic(playerId) == 5 then
-			npcHandler:sayLocalized("npc.barnabas_dee.ahhhhhhhh_8", npc, creature)
+			npcHandler:say("Ahhhhhhhh! ", npc, creature)
 			player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission15, 3)
 			player:teleportTo(Position(33467, 32048, 8))
 			player:getPosition():sendMagicEffect(CONST_ME_ENERGYHIT)

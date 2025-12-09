@@ -56,14 +56,14 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "manway") then
 		if player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission16) == 1 and player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission17) < 1 then
-			npcHandler:sayLocalized("npc.terrence.im_not_allowed_1", npc, creature)
+			npcHandler:say("I'm not allowed to let just anyone pass. If you have proven your willingness and effort to participate in the fighting, I'm allowed to let you pass.", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:sayLocalized("npc.terrence.ahhhhhhhh_2", npc, creature)
+			npcHandler:say("Ahhhhhhhh! ", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "effort") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:sayLocalized("npc.terrence.you_fought_hard_3", npc, creature)
+		npcHandler:say("You fought hard enough against the minotaurs. Since you've shown so much effort in our war, I'll let you pass through the gate.", npc, creature)
 		player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission17, 1)
 		player:setStorageValue(Storage.Quest.U10_50.DarkTrails.DoorHideout, 1)
 		npcHandler:setTopic(playerId, 0)

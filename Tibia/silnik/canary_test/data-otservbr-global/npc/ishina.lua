@@ -60,12 +60,12 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if player:getSex() == PLAYERSEX_FEMALE and MsgContains(message, "outfit") and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.TheOrcPowder) >= 34 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) >= 44 then
 		if player:getStorageValue(Storage.Quest.U7_8.OrientalOutfits.FirstOrientalAddon) < 1 then
-			npcHandler:sayLocalized("npc.ishina.my_jewelled_belt_1", npc, creature)
+			npcHandler:say("My jewelled belt? Of course I could make one for you, but I have a small request. Would you fulfil a task for me?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif player:getSex() == PLAYERSEX_FEMALE and MsgContains(message, "comb") then
 		if player:getStorageValue(Storage.Quest.U7_8.OrientalOutfits.FirstOrientalAddon) == 1 then
-			npcHandler:sayLocalized("npc.ishina.have_you_brought_2", npc, creature)
+			npcHandler:say("Have you brought me a mermaid's comb?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "yes") then
@@ -81,11 +81,11 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 			player:setStorageValue(Storage.Quest.U7_8.OrientalOutfits.FirstOrientalAddon, 1)
 			player:setStorageValue(Storage.Quest.U7_8.OrientalOutfits.OrientalDoor, 1)
-			npcHandler:sayLocalized("npc.ishina.yay_i_will_3", npc, creature)
+			npcHandler:say("Yay! I will wait for you to return with a mermaid's comb then.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if not player:removeItem(5945, 1) then
-				npcHandler:sayLocalized("npc.ishina.no_thats_not_4", npc, creature)
+				npcHandler:say("No... that's not it.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -93,11 +93,11 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_8.OrientalOutfits.FirstOrientalAddon, 2)
 			player:addOutfitAddon(150, 1) -- female addon
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-			npcHandler:sayLocalized("npc.ishina.yeah_thats_it_5", npc, creature)
+			npcHandler:say("Yeah! That's it! I can't wait to comb my hair! Oh - but first, I'll fulfil my promise: Here is your jewelled belt! Thanks again!", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) ~= 0 then
-		npcHandler:sayLocalized("npc.ishina.oh_okay_6", npc, creature)
+		npcHandler:say("Oh... okay.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 

@@ -58,20 +58,20 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "key") then
-		npcHandler:sayLocalized("npc.shirith.do_you_want_1", npc, creature)
+		npcHandler:say("Do you want to buy a key for 50 gold?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			local player = Player(creature)
 			if player:getMoney() + player:getBankBalance() >= 50 then
-				npcHandler:sayLocalized("npc.shirith.here_it_is_2", npc, creature)
+				npcHandler:say("Here it is.", npc, creature)
 				local key = player:addItem(2969, 1)
 				if key then
 					key:setActionId(3033)
 				end
 				player:removeMoneyBank(50)
 			else
-				npcHandler:sayLocalized("npc.shirith.you_dont_have_3", npc, creature)
+				npcHandler:say("You don't have enough money.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		end

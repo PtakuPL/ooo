@@ -66,7 +66,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				"They insist that most resources belong to the crown. This is quite sad, especially ivory is in high demand. Collect 10 elephant tusks and bring them to me.",
 			}, npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission01) == 1 then
-			npcHandler:sayLocalized("npc.dorian.have_you_finished_1", npc, creature)
+			npcHandler:say("Have you finished your mission?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Questline) == 2 and player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission02) < 1 then
 			player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission02, 1)
@@ -78,7 +78,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				"You might need some of them to get that chest open. The soon to be ex-owner of that vase is Sarina, the proprietor of Carlin's general store.",
 			}, npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission02) == 2 then
-			npcHandler:sayLocalized("npc.dorian.have_you_finished_2", npc, creature)
+			npcHandler:say("Have you finished your mission?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Questline) == 3 and player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission03) < 1 then
 			player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission03, 1)
@@ -88,7 +88,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				"Moreover, It will be a great chance to check the castle for, well, opportunities. I'm sure you understand. However, it's up to that pest Oswald to give out invitations, so he's the man you're looking for.",
 			}, npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission03) == 2 then
-			npcHandler:sayLocalized("npc.dorian.have_you_finished_3", npc, creature)
+			npcHandler:say("Have you finished your mission?", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Questline) == 4 and player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission04) < 1 then
 			player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission04, 1)
@@ -101,7 +101,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				"As soon as you got both things, travel to Venore and find the merchant Nurik. Trade the false documents for the famous painting of Mina Losa and bring it to me.",
 			}, npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission04) == 7 then
-			npcHandler:sayLocalized("npc.dorian.have_you_finished_4", npc, creature)
+			npcHandler:say("Have you finished your mission?", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Questline) == 5 and player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission05) < 1 then
 			player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission05, 1)
@@ -111,7 +111,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				"Find them and get us this goblet as rightful payment. If you have to bash some noses during your mission, even better.",
 			}, npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission05) == 1 then
-			npcHandler:sayLocalized("npc.dorian.have_you_finished_5", npc, creature)
+			npcHandler:say("Have you finished your mission?", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Questline) == 6 and player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission06) < 1 then
 			player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission06, 1)
@@ -121,7 +121,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				"As you might know I sell lock picks, but I fear unless you're extremely lucky, you won't crack this expensive masterpiece of a lock. However, get us that fish, regardless how.",
 			}, npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission06) == 3 then
-			npcHandler:sayLocalized("npc.dorian.have_you_finished_6", npc, creature)
+			npcHandler:say("Have you finished your mission?", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Questline) == 7 and player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission07) < 1 then
 			player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission07, 1)
@@ -130,7 +130,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				"Find some dirt about one of them. It's unimportant what it is. As soon as we have a foothold, we'll convince him to cooperate. Bring me whatever you may find.",
 			}, npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission07) == 1 then
-			npcHandler:sayLocalized("npc.dorian.have_you_finished_7", npc, creature)
+			npcHandler:say("Have you finished your mission?", npc, creature)
 			npcHandler:setTopic(playerId, 8)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Questline) == 8 and player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission08) < 1 then
 			player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission08, 1)
@@ -142,7 +142,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				"On the lowest level, you'll find a wall with two trophies. Place a message of our guild on the wall, right between the trophies. On your way, get rid of as many of our competitors as you can.",
 			}, npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission08) == 2 then
-			npcHandler:sayLocalized("npc.dorian.have_you_finished_8", npc, creature)
+			npcHandler:say("Have you finished your mission?", npc, creature)
 			npcHandler:setTopic(playerId, 9)
 		end
 	elseif MsgContains(message, "yes") then
@@ -157,14 +157,14 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:removeItem(3044, 10) then
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission01, 2)
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Questline, 2)
-				npcHandler:sayLocalized("npc.dorian.what_a_fine_9", npc, creature)
+				npcHandler:say("What a fine material. That will be worth a coin or two. So far, so good. Ask me for another mission if you're ready for it.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:removeItem(227, 1) then
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission02, 3)
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Questline, 3)
-				npcHandler:sayLocalized("npc.dorian.what_an_ugly_10", npc, creature)
+				npcHandler:say("What an ugly vase. But who am I to question the taste of our customers? Anyway, I might have another mission in store for you.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 4 then
@@ -181,21 +181,21 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:removeItem(7871, 1) then
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission04, 8)
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Questline, 5)
-				npcHandler:sayLocalized("npc.dorian.excellent_that_serves_11", npc, creature)
+				npcHandler:say("Excellent, that serves this fool right. I fear in your next mission, you'll have to get your hands dirty. Just ask me to learn more about it.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 6 then
 			if player:removeItem(7369, 1) then
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission05, 2)
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Questline, 6)
-				npcHandler:sayLocalized("npc.dorian.that_goblet_is_12", npc, creature)
+				npcHandler:say("That goblet is hardly worth all this trouble but we had to insist on our payment. However, I assume you are eager for more missions, so just ask.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 7 then
 			if player:removeItem(7936, 1) then
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission06, 4)
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Questline, 7)
-				npcHandler:sayLocalized("npc.dorian.this_little_goldfish_13", npc, creature)
+				npcHandler:say("This little goldfish will bring us a hefty ransom! Just ask me if you're ready for another mission.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 8 then
@@ -220,11 +220,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "thieves") or MsgContains(message, "join") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Questline) < 1 then
-			npcHandler:sayLocalized("npc.dorian.hm_well_we_14", npc, creature)
+			npcHandler:say("Hm. Well, we could use some fresh blood. Ahum. Do you want to join the thieves guild, |PLAYERNAME|?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "lock pick") then
-		npcHandler:sayLocalized("npc.dorian.yes_i_sell_15", npc, creature)
+		npcHandler:say("Yes, I sell lock picks. Ask me for a trade.", npc, creature)
 	end
 	return true
 end

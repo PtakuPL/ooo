@@ -58,7 +58,7 @@ local function greetCallback(npc, creature, message)
 	--Checks if the player has completed the quest
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission03) ~= 3 then
 		if not MsgContains(message, "djanni'hah") then
-			npcHandler:sayLocalized("npc.haroun.whoa_a_human_1", npc, creature)
+			npcHandler:say("Whoa! A human! This is no place for you, |PLAYERNAME|. Go and play somewhere else.", npc, creature)
 			endConversationWithDelay(npcHandler, npc, creature)
 			return false
 		end
@@ -73,7 +73,7 @@ local function greetCallback(npc, creature, message)
 		end
 	end
 
-	npcHandler:sayLocalized("npc.haroun.be_greeted_human_2", npc, creature)
+	npcHandler:say("Be greeted, human |PLAYERNAME|. How can a humble djinn be of service?", npc, creature)
 	npcHandler:setInteraction(npc, creature)
 
 	return true
@@ -88,19 +88,19 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if table.contains({ "enchanted chicken wing", "boots of haste" }, message) then
-		npcHandler:sayLocalized("npc.haroun.do_you_want_3", npc, creature)
+		npcHandler:say("Do you want to trade Boots of haste for Enchanted Chicken Wing?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif table.contains({ "warrior sweat", "warrior helmet" }, message) then
-		npcHandler:sayLocalized("npc.haroun.do_you_want_4", npc, creature)
+		npcHandler:say("Do you want to trade 4 Warrior Helmet for Warrior Sweat?", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif table.contains({ "fighting spirit", "royal helmet" }, message) then
-		npcHandler:sayLocalized("npc.haroun.do_you_want_5", npc, creature)
+		npcHandler:say("Do you want to trade 2 Royal Helmet for Fighting Spirit", npc, creature)
 		npcHandler:setTopic(playerId, 3)
 	elseif table.contains({ "magic sulphur", "fire sword" }, message) then
-		npcHandler:sayLocalized("npc.haroun.do_you_want_6", npc, creature)
+		npcHandler:say("Do you want to trade 3 Fire Sword for Magic Sulphur", npc, creature)
 		npcHandler:setTopic(playerId, 4)
 	elseif table.contains({ "job", "items" }, message) then
-		npcHandler:sayLocalized("npc.haroun.i_trade_enchanted_7", npc, creature)
+		npcHandler:say("I trade Enchanted Chicken Wing for Boots of Haste, Warrior Sweat for 4 Warrior Helmets, Fighting Spirit for 2 Royal Helmet Magic Sulphur for 3 Fire Swords", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) <= 4 and npcHandler:getTopic(playerId) >= 1 then
 		local trade = {
@@ -112,9 +112,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		if player:getItemCount(trade[npcHandler:getTopic(playerId)].NeedItem) >= trade[npcHandler:getTopic(playerId)].Ncount then
 			player:removeItem(trade[npcHandler:getTopic(playerId)].NeedItem, trade[npcHandler:getTopic(playerId)].Ncount)
 			player:addItem(trade[npcHandler:getTopic(playerId)].GiveItem, trade[npcHandler:getTopic(playerId)].Gcount)
-			return npcHandler:sayLocalized("npc.haroun.here_you_are_8", npc, creature)
+			return npcHandler:say("Here you are.", npc, creature)
 		else
-			npcHandler:sayLocalized("npc.haroun.sorry_but_you_9", npc, creature)
+			npcHandler:say("Sorry but you don't have the item.", npc, creature)
 		end
 	elseif MsgContains(message, "no") and (npcHandler:getTopic(playerId) >= 1 and npcHandler:getTopic(playerId) <= 5) then
 		npcHandler:say("Ok then.", npc, creature)
@@ -129,7 +129,7 @@ local function onTradeRequest(npc, creature)
 	local player = Player(creature)
 
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission03) ~= 3 then
-		npcHandler:sayLocalized("npc.haroun.im_sorry_human_10", npc, creature)
+		npcHandler:say("I'm sorry, human. But you need Gabel's permission to trade with me.", npc, creature)
 		return false
 	end
 

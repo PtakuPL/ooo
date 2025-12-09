@@ -51,7 +51,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	local access = player:kv():scoped("rotten-blood-quest"):get("access") or 0
 	if access > 2 then
-		npcHandler:sayLocalized("npc.bloodshade_sacrifice.you_already_have_1", npc, creature)
+		npcHandler:say("You already have access.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 		return true
 	end
@@ -71,20 +71,20 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 then
-		npcHandler:sayLocalized("npc.bloodshade_sacrifice.you_are_willing_2", npc, creature)
+		npcHandler:say("You are willing to pay 5000000 gold pieces, then? There is no turning back after our... transaction is complete. Are you sure?", npc, creature)
 		npcHandler:setTopic(playerId, 3)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 3 then
 		if not player:removeMoneyBank(5000000) then
-			npcHandler:sayLocalized("npc.bloodshade_sacrifice.sorry_you_dont_3", npc, creature)
+			npcHandler:say("Sorry, you don't have enough gold.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 			return true
 		end
-		npcHandler:sayLocalized("npc.bloodshade_sacrifice.the_bargain_has_4", npc, creature)
+		npcHandler:say("The bargain has been made, the business is done.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 		player:kv():scoped("rotten-blood-quest"):set("access", 4)
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 1 then
 		npcHandler:setTopic(playerId, 0)
-		npcHandler:sayLocalized("npc.bloodshade_sacrifice.ok_then_not_5", npc, creature)
+		npcHandler:say("Ok then not.", npc, creature)
 	end
 
 	return true

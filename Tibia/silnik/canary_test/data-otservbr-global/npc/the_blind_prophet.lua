@@ -79,7 +79,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "transport") or MsgContains(message, "passage") then
-		npcHandler:sayLocalized("npc.the_blind_prophet.you_want_me_1", npc, creature)
+		npcHandler:say("You want me to transport you to forbidden land?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
@@ -91,10 +91,10 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:teleportTo(destination)
 				destination:sendMagicEffect(CONST_ME_TELEPORT)
 			else
-				npcHandler:sayLocalized("npc.the_blind_prophet.you_are_not_2", npc, creature)
+				npcHandler:say("You are not worthy to be transported there yet.", npc, creature)
 			end
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.the_blind_prophet.wise_decision_maybe_3", npc, creature)
+			npcHandler:say("Wise decision maybe.", npc, creature)
 		end
 	end
 	return true

@@ -60,7 +60,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "measurements") then
 		if player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission07) >= 1 and player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.MeasurementsChrystal) ~= 1 then
-			npcHandler:sayLocalized("npc.chrystal.if_its_necessary_1", npc, creature)
+			npcHandler:say("If its necessary ... <tells you her measurements>", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission07, player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission07) + 1)
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.MeasurementsChrystal, 1)
 			npcHandler:setTopic(playerId, 0)

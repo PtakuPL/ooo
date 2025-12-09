@@ -194,7 +194,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 		end
 	elseif MsgContains(message, "no") then
-		npcHandler:sayLocalized("npc.taegen.then_not_1", npc, creature)
+		npcHandler:say("Then not.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

@@ -56,7 +56,7 @@ local function greetCallback(npc, creature, message)
 	local playerId = player:getId()
 
 	if not MsgContains(message, "djanni'hah") then
-		npcHandler:sayLocalized("npc.fa_hradin.whoa_a_human_1", npc, creature)
+		npcHandler:say("Whoa! A human! This is no place for you, |PLAYERNAME|. Go and play somewhere else.", npc, creature)
 		endConversationWithDelay(npcHandler, npc, creature)
 		return false
 	end
@@ -70,7 +70,7 @@ local function greetCallback(npc, creature, message)
 		return false
 	end
 
-	npcHandler:sayLocalized("npc.fa_hradin.aaaah_what_have_2", npc, creature)
+	npcHandler:say("Aaaah... what have we here. A human - interesting. And such an ugly specimen, too... All right, human |PLAYERNAME|. How can I help you?", npc, creature)
 	npcHandler:setInteraction(npc, creature)
 
 	return true
@@ -87,7 +87,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	local missionProgress = player:getStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission02)
 	if MsgContains(message, "spy report") or MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission01) ~= 2 then
-			npcHandler:sayLocalized("npc.fa_hradin.looking_for_work_3", npc, creature)
+			npcHandler:say("Looking for work, are you? Well, it's very tempting, you know, but I'm afraid we do not really employ beginners. Perhaps our cook could need a helping hand in the kitchen.", npc, creature)
 		elseif missionProgress < 1 then
 			npcHandler:say({
 				"I have heard some good things about you from Bo'ques. But I don't know. ...",
@@ -102,10 +102,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission02, 1)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.DoorToEfreetTerritory, 1)
 		elseif missionProgress == 1 then
-			npcHandler:sayLocalized("npc.fa_hradin.did_you_already_4", npc, creature)
+			npcHandler:say("Did you already retrieve the spyreport?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:sayLocalized("npc.fa_hradin.did_you_already_5", npc, creature)
+			npcHandler:say("Did you already talk to Gabel about the report? I think he will have further instructions for you.", npc, creature)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then

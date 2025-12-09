@@ -23,13 +23,10 @@ npcConfig.flags = {
 	floorchange = false,
 }
 
--- Load NPC helper library
-dofile(CORE_DIRECTORY .. "/libs/npc/i18n.lua")
-
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = NPC_LIB.i18n.get("npc.nielson.voice_passages") },
+	{ text = "Passages to Senja, Folda and Vega." },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -69,7 +66,7 @@ local function addTravelKeyword(keyword, cost, destination)
 	})
 	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, {
 		npcHandler = npcHandler,
-		text = NPC_LIB.i18n.get("npc.nielson.nice_trip"),
+		text = "Have a nice trip!",
 		premium = false,
 		cost = cost,
 		discount = "postman",
@@ -77,7 +74,7 @@ local function addTravelKeyword(keyword, cost, destination)
 	})
 	travelKeyword:addChildKeyword({ "no" }, StdModule.say, {
 		npcHandler = npcHandler,
-		text = NPC_LIB.i18n.get("npc.nielson.not_miss"),
+		text = "You shouldn't miss the experience.",
 		reset = true,
 	})
 end
@@ -89,19 +86,19 @@ addTravelKeyword("folda", 20, { x = 32046, y = 31578, z = 7 })
 -- Basic
 keywordHandler:addKeyword({ "passage" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = NPC_LIB.i18n.get("npc.nielson.passage_info"),
+	text = "Where do you want to go today? We serve the routes to {Folda}, {Senja} and {Vega} and back to Tibia.",
 })
 keywordHandler:addKeyword({ "job" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = NPC_LIB.i18n.get("npc.nielson.job"),
+	text = "We are ferrymen. We transport goods and passengers to the Ice Islands.",
 })
 keywordHandler:addKeyword({ "captain" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = NPC_LIB.i18n.get("npc.nielson.job"),
+	text = "We are ferrymen. We transport goods and passengers to the Ice Islands.",
 })
 
-npcHandler:setMessage(MESSAGE_GREET, NPC_LIB.i18n.get("npc.nielson.greet", { "|PLAYERNAME|" }))
-npcHandler:setMessage(MESSAGE_FAREWELL, NPC_LIB.i18n.get("npc.nielson.farewell"))
+npcHandler:setMessage(MESSAGE_GREET, "Ahoi, young man |PLAYERNAME| and welcome to the Nordic Tibia Ferries. If you need a {passage}, let me know.")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye. You are welcome.")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

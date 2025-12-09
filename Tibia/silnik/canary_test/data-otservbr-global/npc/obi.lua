@@ -23,16 +23,13 @@ npcConfig.flags = {
 	floorchange = false,
 }
 
--- Load NPC helper library
-dofile(CORE_DIRECTORY .. "/libs/npc/i18n.lua")
-
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = NPC_LIB.i18n.get("npc.obi.voice_quality") },
-	{ text = NPC_LIB.i18n.get("npc.obi.voice_buy") },
-	{ text = NPC_LIB.i18n.get("npc.obi.voice_selling") },
-	{ text = NPC_LIB.i18n.get("npc.obi.voice_monsters") },
+	{ text = "Only quality steel and wood used for my weapons!" },
+	{ text = "Buy your weapons here!" },
+	{ text = "Selling and buying all sorts of weapons, come and have a look!" },
+	{ text = "Give those monsters a good whipping with my weapons!" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -129,10 +126,10 @@ keywordHandler:addKeyword({ "tom" }, StdModule.say, { npcHandler = npcHandler, t
 keywordHandler:addKeyword({ "dallheim" }, StdModule.say, { npcHandler = npcHandler, text = "What a hero, what a hero." })
 keywordHandler:addAliasKeyword({ "zerbrus" })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, NPC_LIB.i18n.get("npc.obi.walkaway"))
-npcHandler:setMessage(MESSAGE_FAREWELL, NPC_LIB.i18n.get("npc.obi.farewell"))
-npcHandler:setMessage(MESSAGE_SENDTRADE, NPC_LIB.i18n.get("npc.obi.trade"))
-npcHandler:setMessage(MESSAGE_GREET, NPC_LIB.i18n.get("npc.obi.greet", { "|PLAYERNAME|" }))
+npcHandler:setMessage(MESSAGE_WALKAWAY, "Um yeah, good day.")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Farewell, I hope you were satisfied with our service.")
+npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my wares.")
+npcHandler:setMessage(MESSAGE_GREET, "Hello, hello, |PLAYERNAME|! Please come in, look, and buy! If you like to see my offers, ask me for a {trade}!")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

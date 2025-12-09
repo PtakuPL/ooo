@@ -69,22 +69,22 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "wand") or MsgContains(message, "rod") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand) == 2 then
-			npcHandler:sayLocalized("npc.lynda.did_you_bring_1", npc, creature)
+			npcHandler:say("Did you bring a sample of each wand and each rod with you?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "sulphur") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand) == 3 then
-			npcHandler:sayLocalized("npc.lynda.did_you_obtain_2", npc, creature)
+			npcHandler:say("Did you obtain 10 ounces of magic sulphur?", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "soul stone") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand) == 4 then
-			npcHandler:sayLocalized("npc.lynda.were_you_actually_3", npc, creature)
+			npcHandler:say("Were you actually able to retrieve the Necromancer's soul stone?", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "ankh") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand) == 5 then
-			npcHandler:sayLocalized("npc.lynda.am_i_sensing_4", npc, creature)
+			npcHandler:say("Am I sensing enough holy energy from ankhs here?", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		end
 	elseif MsgContains(message, "ritual") then
@@ -94,10 +94,10 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addOutfitAddon(138, 1) --female mage addon
 				player:addOutfitAddon(141, 1) --female summoner addon
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-				npcHandler:sayLocalized("npc.lynda.im_glad_to_5", npc, creature)
+				npcHandler:say("I'm glad to tell you that I have finished the ritual, player. Here is your new wand. I hope you carry it proudly for everyone to see..", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.lynda.please_let_me_6", npc, creature)
+				npcHandler:say("Please let me focus for a while, |PLAYERNAME|.", npc, creature)
 			end
 		end
 	elseif MsgContains(message, "yes") then
@@ -113,12 +113,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:sayLocalized("npc.lynda.alright_then_come_7", npc, creature)
+			npcHandler:say("Alright then. Come back to with a sample of all five wands and five rods, please.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand, 2)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:getItemCount(3065) > 0 and player:getItemCount(3066) > 0 and player:getItemCount(3067) > 0 and player:getItemCount(3069) > 0 and player:getItemCount(3070) > 0 and player:getItemCount(3071) > 0 and player:getItemCount(3072) > 0 and player:getItemCount(3073) > 0 and player:getItemCount(3074) > 0 and player:getItemCount(3075) > 0 then
-				npcHandler:sayLocalized("npc.lynda.thank_you_that_8", npc, creature)
+				npcHandler:say("Thank you, that must have been a lot to carry. Now, please bring me 10 ounces of magic sulphur.", npc, creature)
 				player:removeItem(3065, 1)
 				player:removeItem(3066, 1)
 				player:removeItem(3067, 1)
@@ -134,19 +134,19 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:removeItem(5904, 10) then
-				npcHandler:sayLocalized("npc.lynda.very_good_i_9", npc, creature)
+				npcHandler:say("Very good. I will immediately start to prepare the ritual and extract the elemental energy from the wands and rods. Please bring me the Necromancer's soul stone now.", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand, 4)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 5 then
 			if player:removeItem(5809, 1) then
-				npcHandler:sayLocalized("npc.lynda.you_have_found_10", npc, creature)
+				npcHandler:say("You have found a rarity there, |PLAYERNAME|. This will become the tip of your blessed wand. Please bring me 20 ankhs now to complete the ritual.", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand, 5)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 6 then
 			if player:removeItem(3077, 20) then
-				npcHandler:sayLocalized("npc.lynda.the_ingredients_for_11", npc, creature)
+				npcHandler:say("The ingredients for the ritual are complete! I will start to prepare your blessed wand, but I have to medidate first. Please come back later to hear how the ritual went.", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand, 6)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWandTimer, os.time() + 10800)
 				npcHandler:setTopic(playerId, 0)
@@ -160,18 +160,18 @@ local function tryEngage(npc, creature, message, keywords, parameters, node)
 	local playerStatus = getPlayerMarriageStatus(player:getGuid())
 	local playerSpouse = getPlayerSpouse(player:getGuid())
 	if playerStatus == MARRIED_STATUS then -- check if the player is already married
-		npcHandler:sayLocalized("npc.lynda.you_are_already_12" .. player:getName() .. "}.", npc, creature)
+		npcHandler:say("You are already married to {" .. player:getName() .. "}.", npc, creature)
 	elseif playerStatus == PROPOSED_STATUS then --check if the player already made a proposal to some1 else
-		npcHandler:sayLocalized("npc.lynda.you_already_made_13" .. player:getName() .. "}. You can always remove the proposal by saying {remove} proposal.", npc, creature)
+		npcHandler:say("You already made a wedding proposal to {" .. player:getName() .. "}. You can always remove the proposal by saying {remove} proposal.", npc, creature)
 	else
 		local candidate = getPlayerGUIDByName(message)
 		if candidate == 0 then -- check if there is actually a player called like this
-			npcHandler:sayLocalized("npc.lynda.a_player_with_14", npc, creature)
+			npcHandler:say("A player with this name does not exist.", npc, creature)
 		elseif candidate == player:getGuid() then -- if it's himself, cannot marry
-			npcHandler:sayLocalized("npc.lynda.you_really_want_15", npc, creature)
+			npcHandler:say("You REALLY want to marry yourself? c'mon, be serious.", npc, creature)
 		else
 			if player:getItemCount(ITEM_WEDDING_RING) == 0 or player:getItemCount(9586) == 0 then -- check for items (wedding ring and outfit box)
-				npcHandler:sayLocalized("npc.lynda.as_i_said_16", npc, creature)
+				npcHandler:say("As I said, you need a wedding ring and the wedding outfit box in order to marry.", npc, creature)
 			else
 				local candidateStatus = getPlayerMarriageStatus(candidate)
 				local candidateSpouse = getPlayerSpouse(candidate)
@@ -182,7 +182,7 @@ local function tryEngage(npc, creature, message, keywords, parameters, node)
 				elseif candidateStatus == PROPOSED_STATUS then -- if he/she already made a proposal to some1
 					if candidateSpouse == player:getGuid() then -- if this someone is you.
 						-- if this some1 is not you
-						npcHandler:sayLocalized("npc.lynda.since_both_of_17", npc, creature)
+						npcHandler:say("Since both of you are willing to marry, I accept to celebrate your marriage, go prepare yourself, and tell me when you are ready for the {celebration}", npc, creature)
 						player:removeItem(ITEM_WEDDING_RING, 1)
 						player:removeItem(9586, 1) -- wedding outfit box
 						player:addOutfit(329) --Wife
@@ -197,7 +197,7 @@ local function tryEngage(npc, creature, message, keywords, parameters, node)
 						npcHandler:say("{" .. getPlayerNameById(candidate) .. "} already made a wedding proposal to {" .. getPlayerNameById(candidateSpouse) .. "}.", npc, creature)
 					end
 				else -- if the player i want to propose doesn't have other proposal
-					npcHandler:sayLocalized("npc.lynda.ok_now_lets_18" .. getPlayerNameById(candidate) .. "} accepts your proposal. I'll give you back your wedding ring as soon as {" .. getPlayerNameById(candidate) .. "} accepts your proposal or you {remove} it.", npc, creature)
+					npcHandler:say("Ok, now let's wait and see if {" .. getPlayerNameById(candidate) .. "} accepts your proposal. I'll give you back your wedding ring as soon as {" .. getPlayerNameById(candidate) .. "} accepts your proposal or you {remove} it.", npc, creature)
 					player:removeItem(ITEM_WEDDING_RING, 1)
 					player:removeItem(9586, 1)
 					setPlayerMarriageStatus(player:getGuid(), PROPOSED_STATUS)
@@ -234,7 +234,7 @@ local function confirmWedding(npc, creature, message, keywords, parameters, node
 		itemAttribute:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, player:getName() .. " & " .. getPlayerNameById(candidate) .. " forever - married on " .. os.date("%B %d, %Y."))
 		itemAttribute:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, player:getName() .. " & " .. getPlayerNameById(candidate) .. " forever - married on " .. os.date("%B %d, %Y."))
 	else
-		npcHandler:sayLocalized("npc.lynda.your_partner_didnt_19", npc, creature)
+		npcHandler:say("Your partner didn't accept your proposal, yet", npc, creature)
 	end
 	return true
 end
@@ -245,7 +245,7 @@ local function confirmRemoveEngage(npc, creature, message, keywords, parameters,
 	local playerStatus = getPlayerMarriageStatus(player:getGuid())
 	local playerSpouse = getPlayerSpouse(player:getGuid())
 	if playerStatus == PROPOSED_STATUS then
-		npcHandler:sayLocalized("npc.lynda.are_you_sure_20" .. getPlayerNameById(playerSpouse) .. "}?", npc, creature)
+		npcHandler:say("Are you sure you want to remove your wedding proposal with {" .. getPlayerNameById(playerSpouse) .. "}?", npc, creature)
 		node:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 3, text = "Ok, let's keep it then." })
 
 		local function removeEngage(creature, message, keywords, parameters, node)
@@ -258,7 +258,7 @@ local function confirmRemoveEngage(npc, creature, message, keywords, parameters,
 		end
 		node:addChildKeyword({ "yes" }, removeEngage, { moveup = 3, text = "Ok, your marriage proposal to {" .. getPlayerNameById(playerSpouse) .. "} has been removed. Take your wedding ring back." })
 	else
-		npcHandler:sayLocalized("npc.lynda.you_dont_have_21", npc, creature)
+		npcHandler:say("You don't have any pending proposal to be removed.", npc, creature)
 		keywordHandler:moveUp(player, 2)
 	end
 	return true
@@ -269,7 +269,7 @@ local function confirmDivorce(npc, creature, message, keywords, parameters, node
 	local playerStatus = getPlayerMarriageStatus(player:getGuid())
 	local playerSpouse = getPlayerSpouse(player:getGuid())
 	if playerStatus == MARRIED_STATUS then
-		npcHandler:sayLocalized("npc.lynda.are_you_sure_22" .. getPlayerNameById(playerSpouse) .. "}?", npc, creature)
+		npcHandler:say("Are you sure you want to divorce of {" .. getPlayerNameById(playerSpouse) .. "}?", npc, creature)
 		node:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 3, text = "Great! Marriages should be an eternal commitment." })
 
 		local function divorce(creature, message, keywords, parameters, node)
@@ -284,7 +284,7 @@ local function confirmDivorce(npc, creature, message, keywords, parameters, node
 		end
 		node:addChildKeyword({ "yes" }, divorce, { moveup = 3, text = "Ok, you are now divorced of {" .. getPlayerNameById(playerSpouse) .. "}. Think better next time after marrying someone." })
 	else
-		npcHandler:sayLocalized("npc.lynda.you_arent_married_23", npc, creature)
+		npcHandler:say("You aren't married to get a divorce.", npc, creature)
 		keywordHandler:moveUp(player, 2)
 	end
 	return true

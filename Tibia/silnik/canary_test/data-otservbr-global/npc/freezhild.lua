@@ -60,16 +60,16 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "weapons") then
 		if player:getStorageValue(Storage.Quest.U8_1.SecretService.AVINMission06) == 1 then
-			npcHandler:sayLocalized("npc.freezhild.crate_of_weapons_1", npc, creature)
+			npcHandler:say("Crate of weapons you say.. for me?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:removeItem(405, 1) then
 				player:setStorageValue(Storage.Quest.U8_1.SecretService.AVINMission06, 2)
-				npcHandler:sayLocalized("npc.freezhild.im_wondering_why_2", npc, creature)
+				npcHandler:say("I'm wondering why you are doing this. Well, we accept the gift. Don't think that this makes you a friend though.", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.freezhild.you_dont_have_3", npc, creature)
+				npcHandler:say("You don't have any crate of weapons!", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		end

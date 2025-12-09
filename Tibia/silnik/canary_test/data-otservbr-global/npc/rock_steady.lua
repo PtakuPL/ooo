@@ -55,7 +55,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "addon") or MsgContains(message, "help") then
 		if player:getStorageValue(72326) < 1 then
-			npcHandler:sayLocalized("npc.rock_steady.if_you_want_1", npc, creature)
+			npcHandler:say("If you want anything, you should talk to Old Rock Boy over there. I do {collect} stuff, though. So just ask if you're interested in helping me.", npc, creature)
 			player:setStorageValue(72326, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
@@ -68,10 +68,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(72326) == 2 then
-			npcHandler:sayLocalized("npc.rock_steady.have_you_got_2", npc, creature)
+			npcHandler:say("Have you got anything for me today?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(72326) == 3 then
-			npcHandler:sayLocalized("npc.rock_steady.have_you_got_3", npc, creature)
+			npcHandler:say("Have you got anything for me today?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(72326) == 4 and player:removeItem(14021, 1) then
 			npcHandler:say({
@@ -86,19 +86,19 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.rock_steady.great_let_me_4", npc, creature)
+			npcHandler:say("Great! Let me see. Amazing! I will take this, thank you!", npc, creature)
 			player:setStorageValue(72326, 2)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 and player:removeItem(14022, 1) then
-			npcHandler:sayLocalized("npc.rock_steady.great_let_me_5", npc, creature)
+			npcHandler:say("Great! Let me see. Amazing! I will take this, thank you!", npc, creature)
 			player:setStorageValue(72326, 3)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 and player:removeItem(14023, 1) then
-			npcHandler:sayLocalized("npc.rock_steady.great_let_me_6", npc, creature)
+			npcHandler:say("Great! Let me see. Amazing! I will take this, thank you!", npc, creature)
 			player:setStorageValue(72326, 4)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:sayLocalized("npc.rock_steady.you_dont_have_7", npc, creature)
+			npcHandler:say("You dont have the required items!", npc, creature)
 		end
 	end
 	return true

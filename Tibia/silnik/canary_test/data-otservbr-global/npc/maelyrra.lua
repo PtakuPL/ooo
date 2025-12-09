@@ -61,30 +61,30 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(ThreatenedDreams.Mission02[1]) < 1 then
-			npcHandler:sayLocalized("npc.maelyrra.some_annoying_nightmarish_1", npc, creature)
+			npcHandler:say("Some annoying nightmarish creatures rove about in the tunnels underneath this island. They are threatening the members of my court and devastate the flora and fauna. They also threaten the natural balance. Would you go and fight them for me?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(ThreatenedDreams.Mission02[1]) >= 1 and player:getStorageValue(ThreatenedDreams.Mission02[1]) <= 2 then
-			npcHandler:sayLocalized("npc.maelyrra.have_you_defeated_2", npc, creature)
+			npcHandler:say("Have you defeated the nightmare monsters?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(ThreatenedDreams.Mission02[1]) >= 3 and player:getStorageValue(ThreatenedDreams.Mission02[1]) <= 4 then
-			npcHandler:sayLocalized("npc.maelyrra.have_you_found_3", npc, creature)
+			npcHandler:say("Have you found the moon mirror and freed the captured fairies?", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		elseif player:getStorageValue(ThreatenedDreams.Mission02[1]) == 5 and player:getStorageValue(ThreatenedDreams.Mission03[1]) == 4 then
-			npcHandler:sayLocalized("npc.maelyrra.have_you_already_4", npc, creature)
+			npcHandler:say("Have you already found the starlight vial and the sun catcher?", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		elseif player:getStorageValue(ThreatenedDreams.Mission02[1]) == 6 then
-			npcHandler:sayLocalized("npc.maelyrra.could_you_already_5", npc, creature)
+			npcHandler:say("Could you already gather the three lights?", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		elseif player:getStorageValue(ThreatenedDreams.Mission02[1]) == 7 then
-			npcHandler:sayLocalized("npc.maelyrra.have_you_repaired_6", npc, creature)
+			npcHandler:say("Have you repaired the magical barrier? Is Feyrist safe?", npc, creature)
 			npcHandler:setTopic(playerId, 8)
 		else
-			npcHandler:sayLocalized("npc.maelyrra.thank_you_again_7", npc, creature)
+			npcHandler:say("Thank you again, mortal being! The fae will be forever grateful.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.maelyrra.i_knew_you_8", npc, creature)
+			npcHandler:say("I knew you would be willing to help us. Kill two hundred of them as well as the terrible demon Kroazur who's leading them. That should bring some relief for the fae.", npc, creature)
 			player:setStorageValue(ThreatenedDreams.Mission02[1], 1)
 			player:setStorageValue(ThreatenedDreams.Mission02.KroazurAccess, 1)
 			player:setStorageValue(ThreatenedDreams.Mission02.EnfeebledCount, 0)
@@ -96,14 +96,14 @@ local function creatureSayCallback(npc, creature, type, message)
 			local frazzlemawsKills = player:getStorageValue(ThreatenedDreams.Mission02.FrazzlemawsCount)
 			local kroazurKill = player:getStorageValue(ThreatenedDreams.Mission02.KroazurKill)
 			if player:getStorageValue(ThreatenedDreams.Mission02[1]) == 1 and kroazurKill >= 1 and (enfeebledKills + frazzlemawsKills) >= 200 then
-				npcHandler:sayLocalized("npc.maelyrra.thank_you_you_9", npc, creature)
+				npcHandler:say("Thank you! You rendered a great favour to the fae courts and Feyrist alike. Would you help us with another problem?", npc, creature)
 				npcHandler:setTopic(playerId, 3)
 				player:setStorageValue(ThreatenedDreams.Mission02[1], 2)
 			elseif player:getStorageValue(ThreatenedDreams.Mission02[1]) == 2 then
-				npcHandler:sayLocalized("npc.maelyrra.you_rendered_a_10", npc, creature)
+				npcHandler:say("You rendered a great favour to the fae courts and Feyrist alike. Would you help us with another problem?", npc, creature)
 				npcHandler:setTopic(playerId, 3)
 			else
-				npcHandler:sayLocalized("npc.maelyrra.you_have_to_11", npc, creature)
+				npcHandler:say("You have to kill two hundred of nightmare creatures and the terrible demon Kroazur who's leading them. That should bring some relief for the fae.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 3 then
@@ -117,14 +117,14 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:getStorageValue(ThreatenedDreams.Mission02.FairiesCounter) == 5 and player:getStorageValue(ThreatenedDreams.Mission02.DarkMoonMirror) == 1 then
-				npcHandler:sayLocalized("npc.maelyrra.thank_you_mortal_12", npc, creature)
+				npcHandler:say("Thank you, mortal being! Please keep the mirror. I think you may need it soon, because there is another problem. Would you help us again?", npc, creature)
 				npcHandler:setTopic(playerId, 5)
 				player:setStorageValue(ThreatenedDreams.Mission02[1], 4)
 			elseif player:getStorageValue(ThreatenedDreams.Mission02[1]) == 4 then
-				npcHandler:sayLocalized("npc.maelyrra.please_keep_the_13", npc, creature)
+				npcHandler:say("Please keep the mirror. I think you may need it soon, because there is another problem. Would you help us again?", npc, creature)
 				npcHandler:setTopic(playerId, 5)
 			else
-				npcHandler:sayLocalized("npc.maelyrra.please_seek_out_14", npc, creature)
+				npcHandler:say("Please seek out the tainted fae, retrieve the artefact and free the captured fairies.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 5 then
@@ -152,17 +152,17 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(ThreatenedDreams.Mission02[1], 7)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.maelyrra.you_have_to_15", npc, creature)
+				npcHandler:say("You have to catch the respective lights and store it in the corresponding vessel.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 8 then
 			if player:getStorageValue(ThreatenedDreams.Mission02.ChargedMoonMirror) == 0 and player:getStorageValue(ThreatenedDreams.Mission02.ChargedStarlightVial) == 0 and player:getStorageValue(ThreatenedDreams.Mission02.ChargedSunCatcher) == 0 then
-				npcHandler:sayLocalized("npc.maelyrra.thank_you_mortal_16", npc, creature)
+				npcHandler:say("Thank you, mortal being! The fae will be forever grateful. Take this blossom bag as a little thank-you gift. Such blossoms grow on our trees just once in a decade, so they are quite rare.", npc, creature)
 				player:addItem(25780, 1)
 				player:setStorageValue(ThreatenedDreams.Mission02[1], 8)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.maelyrra.if_you_charge_17", npc, creature)
+				npcHandler:say("If you charge all fifteen arcane sources with the respective light, Feyrist's protection will be ensured again.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		end

@@ -194,13 +194,13 @@ end)
 destinyKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, reset = true }, nil, function(player)
 	local destiny = math.random(1, 4)
 	if destiny == 1 then
-		npcHandler:sayLocalized("npc.seymour.hmmm_let_me_1", player.uid)
+		npcHandler:say("Hmmm, let me look at you. You got that intelligent sparkle in your eyes and you'd love to handle great power - that must be a future sorcerer!", player.uid)
 	elseif destiny == 2 then
-		npcHandler:sayLocalized("npc.seymour.hmmm_let_me_2", player.uid)
+		npcHandler:say("Hmmm, let me look at you. You have an aura of great wisdom and may have healing hands as well as a sense for the powers of nature - I think you're a natural born druid!", player.uid)
 	elseif destiny == 3 then
-		npcHandler:sayLocalized("npc.seymour.hmmm_let_me_3", player.uid)
+		npcHandler:say("Hmmm, let me look at you. <missing message, destiny for paladin>!", player.uid)
 	elseif destiny == 4 then
-		npcHandler:sayLocalized("npc.seymour.hmmm_let_me_4", player.uid)
+		npcHandler:say("Hmmm, let me look at you. Strong and sturdy, with a determined look in your eyes - no doubt the knight profession would be suited for you!", player.uid)
 	end
 	player:setStorageValue(Storage.RookgaardDestiny, destiny)
 end)

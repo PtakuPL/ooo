@@ -61,16 +61,16 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "parcel") then
-		npcHandler:sayLocalized("npc.robson.do_you_want_1", npc, creature)
+		npcHandler:say("Do you want to buy a parcel for 15 gold?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "label") then
-		npcHandler:sayLocalized("npc.robson.do_you_want_2", npc, creature)
+		npcHandler:say("Do you want to buy a label for 1 gold?", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") then
 		local player = Player(creature)
 		if npcHandler:getTopic(playerId) == 1 then
 			if not player:removeMoneyBank(15) then
-				npcHandler:sayLocalized("npc.robson.sorry_thats_only_3", npc, creature)
+				npcHandler:say("Sorry, that's only dust in your purse.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -80,7 +80,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if not player:removeMoneyBank(1) then
-				npcHandler:sayLocalized("npc.robson.sorry_thats_only_4", npc, creature)
+				npcHandler:say("Sorry, that's only dust in your purse.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -91,7 +91,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "no") then
 		if table.contains({ 1, 2 }, npcHandler:getTopic(playerId)) then
-			npcHandler:sayLocalized("npc.robson.i_knew_i_5", npc, creature)
+			npcHandler:say("I knew I would be stuck with that stuff.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

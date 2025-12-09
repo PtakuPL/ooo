@@ -62,7 +62,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 7 then
 			if player:getItemCount(3506) > 0 then
 				if player:removeItem(3506, 1) then
-					npcHandler:sayLocalized("npc.eremo.a_letter_from_1", npc, creature)
+					npcHandler:say("A letter from that youngster Morgan? I believed him dead since years. These news are good news indeed. Thank you very much, my friend.", npc, creature)
 					player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 8)
 				end
 			end

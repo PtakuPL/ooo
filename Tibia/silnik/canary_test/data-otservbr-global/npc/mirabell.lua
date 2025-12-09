@@ -66,29 +66,29 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "pies") then
 		if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.PieBuying) == -1 then
-			npcHandler:sayLocalized("npc.mirabell.oh_youve_heard_1", npc, creature)
+			npcHandler:say("Oh you've heard about my excellent pies, didn't you? I am flattered. Unfortunately I'm completely out of flour. I need 2 portions of flour for one pie. Just tell me when you have enough flour for your pies.", npc, creature)
 			return true
 		end
 
-		npcHandler:sayLocalized("npc.mirabell.for_pies_this_2", npc, creature)
+		npcHandler:say("For 12 pies this is 240 gold. Do you want to buy them?", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "flour") then
-		npcHandler:sayLocalized("npc.mirabell.do_you_bring_3", npc, creature)
+		npcHandler:say("Do you bring me the flour needed for your pies?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if not player:removeItem(3603, 24) then
-				npcHandler:sayLocalized("npc.mirabell.i_think_you_4", npc, creature)
+				npcHandler:say("I think you are confusing the dust in your pockets with flour. You certainly do not have enough flour for 12 pies.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
 
 			player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.PieBuying, player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.PieBuying) + 1)
-			npcHandler:sayLocalized("npc.mirabell.excellent_now_i_5", npc, creature)
+			npcHandler:say("Excellent. Now I can start baking the pies. As you helped me, I will make you a good price for them.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if not player:removeMoneyBank(240) then
-				npcHandler:sayLocalized("npc.mirabell.you_dont_have_6", npc, creature)
+				npcHandler:say("You don't have enough money, don't try to fool me.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -104,9 +104,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.mirabell.without_flour_i_7", npc, creature)
+			npcHandler:say("Without flour I can't do anything, sorry.", npc, creature)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:sayLocalized("npc.mirabell.what_are_you_8", npc, creature)
+			npcHandler:say("What are you? Some kind of fool?", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

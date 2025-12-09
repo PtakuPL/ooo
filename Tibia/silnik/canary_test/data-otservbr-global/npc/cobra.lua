@@ -60,7 +60,7 @@ local function greetCallback(npc, creature)
 
 		return false
 	else
-		npcHandler:sayLocalized("npc.cobra.begone_hissssss_you_1", npc, creature)
+		npcHandler:say("Begone! Hissssss! You bear not the mark of the cobra!", npc, creature)
 		return false
 	end
 	return true

@@ -81,7 +81,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "brother is right. fist not always good.") then
 		if player:getStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon) == 3 then
-			npcHandler:sayLocalized("npc.bron.oh_he_really_1", npc, creature)
+			npcHandler:say("Oh! He really said that? I am so proud of you, |PLAYERNAME|. These are really good news. Everything would be great... if only there wasn't this {person} near my house.", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "person") then
@@ -95,24 +95,24 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "fighting spirit") then
 		if player:getStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon) == 5 then
 			if player:removeItem(5884, 1) then
-				npcHandler:sayLocalized("npc.bron.fighting_spirit_what_2", npc, creature)
+				npcHandler:say("Fighting spirit? What am I supposed to do with this fi... - oh! I feel strange... ME MIGHTY! ME WILL CHASE OFF ANNOYING KIDS!GROOOAARR!! RRRRRRRRRRRRAAAAAAAGE!!", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon, 6)
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif MsgContains(message, "red piece of cloth") then
 		if player:getStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon) == 7 then
-			npcHandler:sayLocalized("npc.bron.have_you_really_3", npc, creature)
+			npcHandler:say("Have you really managed to fulfil the task and brought me 50 pieces of red cloth and 50 pieces of green cloth?", npc, creature)
 			npcHandler:setTopic(playerId, 8)
 		end
 	elseif MsgContains(message, "rolls of spider silk") then
 		if player:getStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon) == 8 then
-			npcHandler:sayLocalized("npc.bron.oh_did_you_4", npc, creature)
+			npcHandler:say("Oh, did you bring 10 rolls of spool of yarn for me?", npc, creature)
 			npcHandler:setTopic(playerId, 9)
 		end
 	elseif MsgContains(message, "warriors sweat") then
 		if player:getStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon) == 9 then
-			npcHandler:sayLocalized("npc.bron.were_you_able_5", npc, creature)
+			npcHandler:say("Were you able to get hold of a flask with pure warrior's sweat?", npc, creature)
 			npcHandler:setTopic(playerId, 10)
 		end
 	elseif MsgContains(message, "yes") then
@@ -127,11 +127,11 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:sayLocalized("npc.bron.you_are_indeed_6", npc, creature)
+			npcHandler:say("You are indeed not only well educated, but also very courageous. I wish you good luck, you are my last hope.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
-			npcHandler:sayLocalized("npc.bron.again_i_have_7", npc, creature)
+			npcHandler:say("Again, I have to thank you for your selfless offer to help me. I hope that Ajax can come up with something, now that he has experienced the power of words.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon, 4)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon) == 6 and npcHandler:getTopic(playerId) == 0 then
@@ -150,12 +150,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		elseif npcHandler:getTopic(playerId) == 7 then
-			npcHandler:sayLocalized("npc.bron.thank_you_my_8", npc, creature)
+			npcHandler:say("Thank you, my friend! Come back to me once you have collected 50 pieces of red cloth and 50 pieces of green cloth.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon, 7)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 8 then
 			if player:getItemCount(5910) >= 50 and player:getItemCount(5911) >= 50 then
-				npcHandler:sayLocalized("npc.bron.terrific_i_will_9", npc, creature)
+				npcHandler:say("Terrific! I will start to trim it while you gather 10 rolls of spider silk. I'm sure that Ajax will love it.", npc, creature)
 				player:removeItem(5910, 50)
 				player:removeItem(5911, 50)
 				player:setStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon, 8)
@@ -163,18 +163,18 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 		elseif npcHandler:getTopic(playerId) == 9 then
 			if player:removeItem(5886, 10) then
-				npcHandler:sayLocalized("npc.bron.im_impressed_you_10", npc, creature)
+				npcHandler:say("I'm impressed! You really managed to get spool of yarn for me! I will immediately start to work on this shirt. Please don't forget to bring me warrior's sweat!", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon, 9)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 10 then
 			if player:removeItem(5885, 1) then
-				npcHandler:sayLocalized("npc.bron.good_work_playername_11", npc, creature)
+				npcHandler:say("Good work, |PLAYERNAME|! Now I can finally finish this present for Ajax. Because you were such a great help, I have also a present for you. Will you accept it?", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon, 10)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif player:getStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon) == 10 then
-			npcHandler:sayLocalized("npc.bron.i_have_kept_12", npc, creature)
+			npcHandler:say("I have kept this traditional barbarian wig safe for many years now. It is now yours! I hope you will wear it proudly, friend.", npc, creature)
 			player:addOutfitAddon(147, 2)
 			player:addOutfitAddon(143, 2)
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)

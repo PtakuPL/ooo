@@ -279,7 +279,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), itemsTable)
-		npcHandler:sayLocalized("npc.rock_in_a_hard_place.of_course_just_1" .. remainingCategories .. ".", npc, player)
+		npcHandler:say("Of course, just browse through my wares. You can also look at " .. remainingCategories .. ".", npc, player)
 		npc:openShopWindowTable(player, categoryTable)
 	end
 	return true
@@ -289,7 +289,7 @@ local function onTradeRequest(npc, creature)
 	local player = Player(creature)
 	local playerId = player:getId()
 
-	npcHandler:sayLocalized("npc.rock_in_a_hard_place.you_would_be_2" .. GetFormattedShopCategoryNames(itemsTable) .. ".", npc, creature)
+	npcHandler:say("You would be surprised how many things are washed ashore here. I trade " .. GetFormattedShopCategoryNames(itemsTable) .. ".", npc, creature)
 	return true
 end
 

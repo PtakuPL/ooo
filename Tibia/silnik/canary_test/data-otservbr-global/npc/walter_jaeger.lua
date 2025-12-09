@@ -311,52 +311,52 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature, 100)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "tasks") then
-		npcHandler:sayLocalized("npc.walter_jaeger.prey_hunting_tasks_1", npc, creature)
+		npcHandler:say("Prey hunting tasks should reduce the number of certain monsters. And if you fulfil them successfully I will show my appreciation and give you some {rewards} in exchange of hunting task points.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "have") then
-		npcHandler:sayLocalized("npc.walter_jaeger.right_now_you_2" .. player:getTaskHuntingPoints() .. " HTP.", npc, creature)
+		npcHandler:say("Right now you have " .. player:getTaskHuntingPoints() .. " HTP.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 
 		-- Add task hunting points history here.
 		--elseif MsgContains(message, "spent") then
-		--	npcHandler:sayLocalized("npc.walter_jaeger.you_have_already_3" .. nil .. " HTP.", npc, creature)
+		--	npcHandler:say("You have already spent " .. nil .. " HTP.", npc, creature)
 		--	npcHandler:setTopic(playerId, 0)
 
 		-- Rewards topic
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if not config.enable then
-			npcHandler:sayLocalized("npc.walter_jaeger.sorry_i_have_4", npc, creature)
+			npcHandler:say("Sorry, i have no offer to make for you today.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "outfit") then
 			if config == nil or config.outifts == nil or #config.outifts == 0 then
-				npcHandler:sayLocalized("npc.walter_jaeger.i_have_no_5", npc, creature)
+				npcHandler:say("I have no outfit offer to make.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.walter_jaeger.i_offer_you_6" .. getOffersString(config.outifts, false) .. " outfit" .. (#config.outifts >= 1 and "s." or "."), npc, creature)
+				npcHandler:say("I offer you the " .. getOffersString(config.outifts, false) .. " outfit" .. (#config.outifts >= 1 and "s." or "."), npc, creature)
 				npcHandler:setTopic(playerId, config.topics.outfit)
 			end
 		elseif MsgContains(message, "mount") then
 			if config == nil or config.mounts == nil or #config.mounts == 0 then
-				npcHandler:sayLocalized("npc.walter_jaeger.i_have_no_7", npc, creature)
+				npcHandler:say("I have no mount offer to make.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.walter_jaeger.i_offer_you_8" .. getOffersString(config.mounts, false) .. " mount" .. (#config.mounts >= 1 and "s." or "."), npc, creature)
+				npcHandler:say("I offer you the " .. getOffersString(config.mounts, false) .. " mount" .. (#config.mounts >= 1 and "s." or "."), npc, creature)
 				npcHandler:setTopic(playerId, config.topics.mount)
 			end
 		elseif MsgContains(message, "trophies") then
 			if config == nil or config.trophies == nil or #config.trophies == 0 then
-				npcHandler:sayLocalized("npc.walter_jaeger.i_have_no_9", npc, creature)
+				npcHandler:say("I have no trophie offer to make.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.walter_jaeger.i_offer_you_10" .. getOffersString(config.trophies, true) .. ".", npc, creature)
+				npcHandler:say("I offer you the " .. getOffersString(config.trophies, true) .. ".", npc, creature)
 				npcHandler:setTopic(playerId, config.topics.trophy)
 			end
 		elseif MsgContains(message, "furniture") then
 			if config == nil or config.furniture == nil or #config.furniture == 0 then
-				npcHandler:sayLocalized("npc.walter_jaeger.i_have_no_11", npc, creature)
+				npcHandler:say("I have no furniture offer to make.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.walter_jaeger.i_offer_you_12" .. getOffersString(config.furniture, true) .. ".", npc, creature)
+				npcHandler:say("I offer you the " .. getOffersString(config.furniture, true) .. ".", npc, creature)
 				npcHandler:setTopic(playerId, config.topics.furniture)
 			end
 		end
@@ -379,12 +379,12 @@ local function creatureSayCallback(npc, creature, type, message)
 				if offerTable ~= nil then
 					if player:getTaskHuntingPoints() >= offerTable.value then
 						if processItemInboxPurchase(player, offerTable.name, offerTable.itemId) and player:removeTaskHuntingPoints(offerTable.value) then
-							npcHandler:sayLocalized("npc.walter_jaeger.here_you_have_13", npc, creature)
+							npcHandler:say("Here you have it.", npc, creature)
 						else
-							npcHandler:sayLocalized("npc.walter_jaeger.sorry_but_you_14", npc, creature)
+							npcHandler:say("Sorry, but you don't have enough slots on your inbox or capacity.", npc, creature)
 						end
 					else
-						npcHandler:sayLocalized("npc.walter_jaeger.sorry_but_you_15", npc, creature)
+						npcHandler:say("Sorry, but you don't have enough hunting task points.", npc, creature)
 					end
 				else
 					return true
@@ -397,12 +397,12 @@ local function creatureSayCallback(npc, creature, type, message)
 				if offerTable ~= nil then
 					if player:getTaskHuntingPoints() >= offerTable.value then
 						if processItemInboxPurchase(player, offerTable.name, offerTable.itemId) and player:removeTaskHuntingPoints(offerTable.value) then
-							npcHandler:sayLocalized("npc.walter_jaeger.here_you_have_16", npc, creature)
+							npcHandler:say("Here you have it.", npc, creature)
 						else
-							npcHandler:sayLocalized("npc.walter_jaeger.sorry_but_you_17", npc, creature)
+							npcHandler:say("Sorry, but you don't have enough slots on your inbox or capacity.", npc, creature)
 						end
 					else
-						npcHandler:sayLocalized("npc.walter_jaeger.sorry_but_you_18", npc, creature)
+						npcHandler:say("Sorry, but you don't have enough hunting task points.", npc, creature)
 					end
 				else
 					return true
@@ -416,40 +416,40 @@ local function creatureSayCallback(npc, creature, type, message)
 					if MsgContains(message, "base") then
 						local points = offerTable.base
 						if player:hasOutfit(offerTable.male) or player:hasOutfit(offerTable.female) then
-							npcHandler:sayLocalized("npc.walter_jaeger.you_already_have_19", npc, creature)
+							npcHandler:say("You already have this outfit.", npc, creature)
 						elseif player:removeTaskHuntingPoints(points) then
 							-- Add task hunting points history here.
 							player:addOutfit(offerTable.male)
 							player:addOutfit(offerTable.female)
-							npcHandler:sayLocalized("npc.walter_jaeger.here_you_have_20", npc, creature)
+							npcHandler:say("Here you have it.", npc, creature)
 						end
 					elseif MsgContains(message, "first") then
 						local points = offerTable.firstAddon
 						if not (player:hasOutfit(offerTable.male)) or not (player:hasOutfit(offerTable.female)) then
-							npcHandler:sayLocalized("npc.walter_jaeger.first_you_need_21", npc, creature)
+							npcHandler:say("First you need to buy the base addon to unlock this addon.", npc, creature)
 						elseif player:hasOutfit(offerTable.male, 1) or player:hasOutfit(offerTable.female, 1) then
-							npcHandler:sayLocalized("npc.walter_jaeger.you_already_have_22", npc, creature)
+							npcHandler:say("You already have this addon.", npc, creature)
 						elseif player:removeTaskHuntingPoints(points) then
 							-- Add task hunting points history here.
 							player:addOutfitAddon(offerTable.male, 1)
 							player:addOutfitAddon(offerTable.female, 1)
-							npcHandler:sayLocalized("npc.walter_jaeger.here_you_have_23", npc, creature)
+							npcHandler:say("Here you have it.", npc, creature)
 						else
-							npcHandler:sayLocalized("npc.walter_jaeger.sorry_but_you_24", npc, creature)
+							npcHandler:say("Sorry, but you don't have enough hunting task points.", npc, creature)
 						end
 					elseif MsgContains(message, "second") then
 						local points = offerTable.secondAddon
 						if not (player:hasOutfit(offerTable.male)) or not (player:hasOutfit(offerTable.female)) then
-							npcHandler:sayLocalized("npc.walter_jaeger.first_you_need_25", npc, creature)
+							npcHandler:say("First you need to buy the base addon to unlock this addon.", npc, creature)
 						elseif player:hasOutfit(offerTable.male, 2) or player:hasOutfit(offerTable.female, 2) then
-							npcHandler:sayLocalized("npc.walter_jaeger.you_already_have_26", npc, creature)
+							npcHandler:say("You already have this addon.", npc, creature)
 						elseif player:removeTaskHuntingPoints(points) then
 							-- Add task hunting points history here.
 							player:addOutfitAddon(offerTable.male, 2)
 							player:addOutfitAddon(offerTable.female, 2)
-							npcHandler:sayLocalized("npc.walter_jaeger.here_you_have_27", npc, creature)
+							npcHandler:say("Here you have it.", npc, creature)
 						else
-							npcHandler:sayLocalized("npc.walter_jaeger.sorry_but_you_28", npc, creature)
+							npcHandler:say("Sorry, but you don't have enough hunting task points.", npc, creature)
 						end
 					else
 						return true
@@ -465,11 +465,11 @@ local function creatureSayCallback(npc, creature, type, message)
 				if offerTable ~= nil then
 					local points = offerTable.value
 					if player:hasMount(offerTable.mountId) then
-						npcHandler:sayLocalized("npc.walter_jaeger.you_already_have_29", npc, creature)
+						npcHandler:say("You already have this mount.", npc, creature)
 					elseif player:removeTaskHuntingPoints(points) then
 						-- Add task hunting points history here.
 						player:addMount(offerTable.mountId)
-						npcHandler:sayLocalized("npc.walter_jaeger.here_you_have_30", npc, creature)
+						npcHandler:say("Here you have it.", npc, creature)
 					end
 				else
 					return true

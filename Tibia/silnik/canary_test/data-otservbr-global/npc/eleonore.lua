@@ -68,39 +68,39 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheGovernorDaughter, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheGovernorDaughter) == 2 then
-			npcHandler:sayLocalized("npc.eleonore.oh_my_beloved_1", npc, creature)
+			npcHandler:say("Oh, my beloved ring! Have you found it and want to return it to me?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheGovernorDaughter) == 3 and player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheErrand) < 1 then
-			npcHandler:sayLocalized("npc.eleonore.i_would_need_2", npc, creature)
+			npcHandler:say("I would need some help in another matter. It is only a small errand. Are you interested?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "errand") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheErrand) == 2 then
-			npcHandler:sayLocalized("npc.eleonore.great_thank_you_3", npc, creature)
+			npcHandler:say("Great, thank you! As promised, here are your 5 gold pieces. Is there ... anything left that you might want to discuss with me?", npc, creature)
 			player:addMoney(5)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheErrand, 3)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "peg leg") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheErrand) == 3 then
-			npcHandler:sayLocalized("npc.eleonore.you_have_returned_4", npc, creature)
+			npcHandler:say("You have returned my ring and proven yourself as trustworthy. There is something I have to discuss with you. Are you willing to listen?", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "raymond striker") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.AccessToLagunaIsland) == 1 then
-			npcHandler:sayLocalized("npc.eleonore.blushes_oh_he_5", npc, creature)
+			npcHandler:say("<blushes> Oh, he is so wonderful. A very special man with a special place in my heart.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "mermaid") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.AccessToLagunaIsland) == 1 then
-			npcHandler:sayLocalized("npc.eleonore.i_cant_thank_6", npc, creature)
+			npcHandler:say("I can't thank you enough for freeing my beloved Ray from that evil spell. I am still shocked that a mermaid could steal his love that easily.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:removeItem(6093, 1) then
 				player:addMoney(150)
-				npcHandler:sayLocalized("npc.eleonore.oh_thank_you_7", npc, creature)
+				npcHandler:say("Oh, thank you so much! Take this gold as a reward. ... which reminds me, I would need some help in another matter. It is only a small errand. Are you interested?", npc, creature)
 				player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheGovernorDaughter, 3)
 				npcHandler:setTopic(playerId, 2)
 			else
@@ -113,11 +113,11 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 2)
 			end
 		elseif npcHandler:getTopic(playerId) == 2 then
-			npcHandler:sayLocalized("npc.eleonore.thank_you_it_8", npc, creature)
+			npcHandler:say("Thank you! It is not a difficult matter but a rather urgent one. I need to send some money to a person in town. Would you be willing to run this small errand for me?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			player:addMoney(200)
-			npcHandler:sayLocalized("npc.eleonore.i_was_hoping_9", npc, creature)
+			npcHandler:say("I was hoping that you'd agree. Please deliver these 200 gold pieces to the herbalist Charlotta in the south-western part of the town. If you return from this errand, I will grant you 5 gold pieces as reward for your efforts.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheErrand, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then

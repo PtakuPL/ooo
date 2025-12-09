@@ -67,14 +67,14 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine, 17)
 		elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 17 then
-			npcHandler:sayLocalized("npc.gnomewart.just_take_the_1", npc, creature)
+			npcHandler:say("Just take the teleporter over there to the south and follow the hallway. At the end of the hallway you'll find a teleporter. Step on it and you are done!", npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 18 then
-			npcHandler:sayLocalized("npc.gnomewart.you_have_passed_2", npc, creature)
+			npcHandler:say("You have passed the test and are ready to create your soul melody. Talk to Gnomelvis in the east about it.", npc, creature)
 			player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine, 19)
 		elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) < 15 then
-			npcHandler:sayLocalized("npc.gnomewart.your_endurance_will_3", npc, creature)
+			npcHandler:say("Your endurance will be tested here when the time comes. For the moment please continue with the other phases of your recruitment.", npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) >= 19 then
-			npcHandler:sayLocalized("npc.gnomewart.you_have_passed_4", npc, creature)
+			npcHandler:say("You have passed the test. If you consider what huge feet you have to move it's quite impressive.", npc, creature)
 		end
 	end
 	return true

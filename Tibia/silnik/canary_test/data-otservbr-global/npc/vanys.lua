@@ -64,11 +64,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	local dreamTalisman = 30132
 
 	if MsgContains(message, "talk") then
-		npcHandler:sayLocalized("npc.vanys.so_do_you_1", npc, creature)
+		npcHandler:say("So do you want to learn the {story} behind of this or rather talk about the {task} at hand? ", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "story") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:sayLocalized("npc.vanys.do_you_prefer_2", npc, creature)
+			npcHandler:say("Do you prefer the {long} version or the {short} version?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "short") and npcHandler:getTopic(playerId) == 3 then
@@ -82,7 +82,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif npcHandler:getTopic(playerId) == 4 or npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "task") then
 			if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.WardStones.Questline) >= 3 and player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.Main.TheSummerCourt) == 1 and not (player:hasOutfit(1146) or player:hasOutfit(1147)) then
-				npcHandler:sayLocalized("npc.vanys.the_nightmare_beast_3", npc, creature)
+				npcHandler:say("The Nightmare Beast is slain. You have done well. The Courts of Summer and Winter will be forever grateful. For your efforts I want to reward you with our traditional dream warrior outfit. May it suit you well!", npc, creature)
 				for i = 1146, 1147 do
 					player:addOutfit(i)
 				end
@@ -112,55 +112,55 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addItem(dreamTalisman, 1)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.vanys.i_already_gave_4", npc, creature)
+				npcHandler:say("I already gave your task.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif MsgContains(message, "keys") and npcHandler:getTopic(playerId) == 5 then
-		npcHandler:sayLocalized("npc.vanys.they_are_not_5", npc, creature)
+		npcHandler:say("They are not literally keys but rather puzzles you have to solve or a secret mechanism you have to discover in order to open the Dream Doors. A parchment in the chest here can tell you more about it.", npc, creature)
 	elseif MsgContains(message, "addon") then
 		if player:hasOutfit(1146) or player:hasOutfit(1147) then
-			npcHandler:sayLocalized("npc.vanys.are_you_interested_6", npc, creature)
+			npcHandler:say("Are you interested in one or two addons to your dream warrior outfit?", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		else
-			npcHandler:sayLocalized("npc.vanys.you_dont_even_7", npc, creature)
+			npcHandler:say("You don't even have the outfit.", npc, creature)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 6 then
-			npcHandler:sayLocalized("npc.vanys.i_provide_two_8", npc, creature)
+			npcHandler:say("I provide two addons. For the first one I need you to bring me five pomegranates. For the second addon you need an ice shield. Do you want one of these addons?", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		elseif npcHandler:getTopic(playerId) == 7 then
-			npcHandler:sayLocalized("npc.vanys.what_do_you_9", npc, creature)
+			npcHandler:say("What do you have for me: the {pomegranates} or the {ice shield}?", npc, creature)
 			npcHandler:setTopic(playerId, 8)
 		end
 	elseif npcHandler:getTopic(playerId) == 8 then
 		if MsgContains(message, "pomegranates") then
 			if player:getItemCount(30169) >= 5 then
-				npcHandler:sayLocalized("npc.vanys.very_good_you_10", npc, creature)
+				npcHandler:say("Very good! You gained the second addon to the dream warrior outfit.", npc, creature)
 				player:removeItem(30169, 5)
 				for i = 1146, 1147 do
 					player:addOutfitAddon(i, 2)
 				end
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.vanys.you_do_not_11", npc, creature)
+				npcHandler:say("You do not have enough items.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif MsgContains(message, "ice shield") then
 			if player:getItemCount(30168) >= 1 then
-				npcHandler:sayLocalized("npc.vanys.very_good_you_12", npc, creature)
+				npcHandler:say("Very good! You gained the first addon to the dream warrior outfit.", npc, creature)
 				player:removeItem(30168, 1)
 				for i = 1146, 1147 do
 					player:addOutfitAddon(i, 1)
 				end
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.vanys.you_do_not_13", npc, creature)
+				npcHandler:say("You do not have enough items.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	else
-		npcHandler:sayLocalized("npc.vanys.sorry_i_didnt_14", npc, creature)
+		npcHandler:say("Sorry, I didn't understand.", npc, creature)
 	end
 end
 

@@ -125,9 +125,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "token") or MsgContains(message, "tokens") then
-		npcHandler:sayLocalized("npc.cledwyn.if_you_have_1", npc, creature)
+		npcHandler:say("If you have any {silver} tokens with you, let's have a look! Maybe I can offer you something in exchange.", npc, creature)
 	elseif MsgContains(message, "information") then
-		npcHandler:sayLocalized("npc.cledwyn.with_pleasure_bows_2", npc, creature)
+		npcHandler:say("With pleasure. <bows> I trade {token}s. There are several ways to obtain the {token}s I am interested in - killing certain bosses, for example. In exchange for a certain amount of tokens, I can offer you some first-class items.", npc, creature)
 	elseif MsgContains(message, "talk") then
 		npcHandler:say({ "Why, certainly! I'm always up for some small talk. ...", "The weather continues just fine here, don't you think? Just the day for a little walk around the town! ...", "Actually, I haven't been around much yet, but I'm looking forward to exploring the city once I've finished trading {token}s." }, npc, creature)
 	elseif MsgContains(message, "silver") then
@@ -137,71 +137,71 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:say({ "The following items can be enchanted: {pendulet}, {sleep shawl}, {blister ring}, {theurgic amulet}, {ring of souls}. ...", "For sufficient silver tokens you can also enchant: {spiritthorn ring}, {alicorn ring}, {arcanomancer sigil}, {arboreal ring}, {turtle amulet}. Make you choice!" }, npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif table.contains({ "pendulet", "sleep shawl", "blister ring", "theurgic amulet", "ring of souls", "turtle amulet" }, message:lower()) and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:sayLocalized("npc.cledwyn.should_i_enchant_3" .. message .. " for 2 " .. ItemType(npc:getCurrency()):getPluralName():lower() .. "?", npc, creature)
+		npcHandler:say("Should I enchant the item " .. message .. " for 2 " .. ItemType(npc:getCurrency()):getPluralName():lower() .. "?", npc, creature)
 		charge = message:lower()
 		chargePrice = 2
 		npcHandler:setTopic(playerId, 2)
 	elseif table.contains({ "spiritthorn ring", "alicorn ring", "arcanomancer sigil", "arboreal ring" }, message:lower()) and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:sayLocalized("npc.cledwyn.should_i_enchant_4" .. message .. " for 5 " .. ItemType(npc:getCurrency()):getPluralName():lower() .. "?", npc, creature)
+		npcHandler:say("Should I enchant the item " .. message .. " for 5 " .. ItemType(npc:getCurrency()):getPluralName():lower() .. "?", npc, creature)
 		charge = message:lower()
 		chargePrice = 5
 		npcHandler:setTopic(playerId, 2)
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "yes") then
 			if not chargeItem[charge] then
-				npcHandler:sayLocalized("npc.cledwyn.sorry_you_dont_5" .. charge .. ".", npc, creature)
+				npcHandler:say("Sorry, you don't have an unenchanted " .. charge .. ".", npc, creature)
 			else
 				if (player:getItemCount(npc:getCurrency()) >= chargePrice) and (player:getItemCount(chargeItem[charge].noChargeID) >= 1) then
 					player:removeItem(npc:getCurrency(), chargePrice)
 					player:removeItem(chargeItem[charge].noChargeID, 1)
 					local itemAdd = player:addItem(chargeItem[charge].ChargeID, 1)
-					npcHandler:sayLocalized("npc.cledwyn.ah_excellent_here_6" .. itemAdd:getName():lower() .. ".", npc, creature)
+					npcHandler:say("Ah, excellent. Here is your " .. itemAdd:getName():lower() .. ".", npc, creature)
 				else
-					npcHandler:sayLocalized("npc.cledwyn.sorry_friend_but_7" .. ItemType(npc:getCurrency()):getPluralName():lower() .. " and it's a deal.", npc, creature)
+					npcHandler:say("Sorry, friend, but one good turn deserves another. Bring enough " .. ItemType(npc:getCurrency()):getPluralName():lower() .. " and it's a deal.", npc, creature)
 				end
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.cledwyn.alright_come_back_8", npc, creature)
+			npcHandler:say("Alright, come back if you have changed your mind.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "addon") then
 		if player:hasOutfit(846, 0) or player:hasOutfit(845, 0) then
-			npcHandler:sayLocalized("npc.cledwyn.ah_very_good_9", npc, creature)
+			npcHandler:say("Ah, very good. Now choose your addon: {first} or {second}.", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		else
-			npcHandler:sayLocalized("npc.cledwyn.sorry_friend_but_10", npc, creature)
+			npcHandler:say("Sorry, friend, but one good turn deserves another. You need to obtain the rift warrior outfit first.", npc, creature)
 		end
 	elseif table.contains({ "first", "second" }, message:lower()) and npcHandler:getTopic(playerId) == 3 then
 		if message:lower() == "first" then
 			if not (player:hasOutfit(846, 1)) and not (player:hasOutfit(845, 1)) then
 				if player:removeItem(22516, 100) then
-					npcHandler:sayLocalized("npc.cledwyn.ah_excellent_obtain_11", npc, creature)
+					npcHandler:say("Ah, excellent. Obtain the first addon for your rift warrior outfit.", npc, creature)
 					player:addOutfitAddon(846, 1)
 					player:addOutfitAddon(845, 1)
 					if (player:hasOutfit(846, 1) or player:hasOutfit(845, 1)) and (player:hasOutfit(846, 2) or player:hasOutfit(845, 2)) then
 						player:addAchievement("Rift Warrior")
 					end
 				else
-					npcHandler:sayLocalized("npc.cledwyn.sorry_friend_but_12" .. ItemType(npc:getCurrency()):getPluralName():lower() .. " and it's a deal.", npc, creature)
+					npcHandler:say("Sorry, friend, but one good turn deserves another. Bring enough " .. ItemType(npc:getCurrency()):getPluralName():lower() .. " and it's a deal.", npc, creature)
 				end
 			else
-				npcHandler:sayLocalized("npc.cledwyn.sorry_friend_you_13", npc, creature)
+				npcHandler:say("Sorry, friend, you already have the first Rift Warrior addon.", npc, creature)
 			end
 		elseif message:lower() == "second" then
 			if not (player:hasOutfit(846, 2)) and not (player:hasOutfit(845, 2)) then
 				if player:removeItem(22516, 100) then
-					npcHandler:sayLocalized("npc.cledwyn.ah_excellent_obtain_14", npc, creature)
+					npcHandler:say("Ah, excellent. Obtain the second addon for your rift warrior outfit.", npc, creature)
 					player:addOutfitAddon(846, 2)
 					player:addOutfitAddon(845, 2)
 					if (player:hasOutfit(846, 1) or player:hasOutfit(845, 1)) and (player:hasOutfit(846, 2) or player:hasOutfit(845, 2)) then
 						player:addAchievement("Rift Warrior")
 					end
 				else
-					npcHandler:sayLocalized("npc.cledwyn.sorry_friend_but_15" .. ItemType(npc:getCurrency()):getPluralName():lower() .. " and it's a deal.", npc, creature)
+					npcHandler:say("Sorry, friend, but one good turn deserves another. Bring enough " .. ItemType(npc:getCurrency()):getPluralName():lower() .. " and it's a deal.", npc, creature)
 				end
 			else
-				npcHandler:sayLocalized("npc.cledwyn.sorry_friend_you_16", npc, creature)
+				npcHandler:say("Sorry, friend, you already have the second Rift Warrior addon.", npc, creature)
 			end
 		end
 		npcHandler:setTopic(playerId, 0)

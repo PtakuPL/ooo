@@ -62,7 +62,7 @@ local function greetCallback(npc, creature, message)
 	local playerId = player:getId()
 
 	if not MsgContains(message, "djanni'hah") then
-		npcHandler:sayLocalized("npc.bo_ques.whoa_a_human_1", npc, creature)
+		npcHandler:say("Whoa! A human! This is no place for you, |PLAYERNAME|. Go and play somewhere else.", npc, creature)
 		endConversationWithDelay(npcHandler, npc, creature)
 		return false
 	end
@@ -86,7 +86,7 @@ local function greetCallback(npc, creature, message)
 	end
 
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.Faction.MaridDoor) == 1 then
-		npcHandler:sayLocalized("npc.bo_ques.hey_a_human_2", npc, creature)
+		npcHandler:say("Hey! A human! What are you doing in my kitchen, |PLAYERNAME|?", npc, creature)
 	else
 		endConversationWithDelay(npcHandler, npc, creature)
 		return false
@@ -114,7 +114,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:sayLocalized("npc.bo_ques.i_already_told_3", npc, creature)
+			npcHandler:say("I already told you about the recipes I am missing, now please try to find a cookbook of the dwarven kitchen.", npc, creature)
 		end
 	elseif MsgContains(message, "cookbook") then
 		if missionProgress == -1 then
@@ -123,10 +123,10 @@ local function creatureSayCallback(npc, creature, type, message)
 				"Therefore, I'm what is commonly called a cook, although I do not like that word too much. It is vulgar. I prefer to call myself 'chef'.",
 			}, npc, creature)
 		elseif missionProgress == 1 then
-			npcHandler:sayLocalized("npc.bo_ques.do_you_have_4", npc, creature)
+			npcHandler:say("Do you have the cookbook of the dwarven kitchen with you? Can I have it?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		else
-			npcHandler:sayLocalized("npc.bo_ques.thanks_again_for_5", npc, creature)
+			npcHandler:say("Thanks again, for bringing me that book!", npc, creature)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
@@ -137,13 +137,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Start, 1)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission01, 1)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.bo_ques.well_too_bad_6", npc, creature)
+			npcHandler:say("Well, too bad.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "yes") then
 			if not player:removeItem(3234, 1) then
-				npcHandler:sayLocalized("npc.bo_ques.too_bad_i_7", npc, creature)
+				npcHandler:say("Too bad. I must have this book.", npc, creature)
 				return true
 			end
 
@@ -155,7 +155,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission01, 2)
 			player:addItem(3029, 3)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.bo_ques.too_bad_i_8", npc, creature)
+			npcHandler:say("Too bad. I must have this book.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

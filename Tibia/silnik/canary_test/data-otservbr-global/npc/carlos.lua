@@ -144,37 +144,37 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if table.contains({ "yes", "help", "ok" }, message) then
 		if storeTalkCid[playerId] == 1 then
-			npcHandler:sayLocalized("npc.carlos.very_well_just_1", npc, creature)
+			npcHandler:say("Very well. Just choose an outfit and a colour combination that suits you. You can open this dialogue anytime by right-clicking on yourself and selecting 'Set Outfit'. Just try it and then talk to me again!", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage, 2)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosQuestLog, 2)
 			player:sendTutorial(12)
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		elseif storeTalkCid[playerId] == 2 then
-			npcHandler:sayLocalized("npc.carlos.you_see_im_2", npc, creature)
+			npcHandler:say("You see, I'm quite hungry from standing here all day. Could you get me some {food}?", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage, 3)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosQuestLog, 3)
 			storeTalkCid[playerId] = 3
 		elseif storeTalkCid[playerId] == 3 then
-			npcHandler:sayLocalized("npc.carlos.thank_you_i_3", npc, creature)
+			npcHandler:say("Thank you! I would do it myself, but I don't have a weapon. Just kill a few rabbits or deer, loot food from them and bring me one piece of {meat} or ham, will you?", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage, 4)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosQuestLog, 4)
 			storeTalkCid[playerId] = 4
 		elseif storeTalkCid[playerId] == 4 then
-			npcHandler:sayLocalized("npc.carlos.splendid_ill_be_4", npc, creature)
+			npcHandler:say("Splendid. I'll be awaiting your return eagerly. Don't forget that you can click on the 'Chase Opponent' button to run after those fast creatures. Good {bye} for now!", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage, 5)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosQuestLog, 5)
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		elseif storeTalkCid[playerId] == 5 then
 			if player:getItemCount(3577) > 0 or player:getItemCount(3582) > 0 then
-				npcHandler:sayLocalized("npc.carlos.whats_that_delicious_5", npc, creature)
+				npcHandler:say("What's that delicious smell? That must be a piece of meat! Please hurry, simply ask me for a {trade} and I'll give you two gold pieces for it!", npc, creature)
 				player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosQuestLog, 6)
 				player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage, 6)
 				player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcTradeStorage, 1)
 				storeTalkCid[playerId] = 6
 			else
-				npcHandler:sayLocalized("npc.carlos.hmm_no_i_6", npc, creature)
+				npcHandler:say("Hmm. No, I don't think you have something with you that I'd like to eat. Please come back once you looted a piece of meat or a piece of ham from a rabbit or deer.", npc, creature)
 				npcHandler:removeInteraction(npc, creature)
 				npcHandler:resetNpc(creature)
 			end

@@ -226,22 +226,22 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "cough syrup") then
-		npcHandler:sayLocalized("npc.tom.i_had_some_1", npc, creature)
+		npcHandler:say("I had some cough syrup a while ago. It was stolen in an ape raid. I fear if you want more cough syrup you will have to buy it in the druids guild in carlin.", npc, creature)
 	elseif MsgContains(message, "addon") then
 		if player:getStorageValue(Storage.Quest.U7_8.DruidOutfitsRook.DruidBodyAddonRook) < 1 then
-			npcHandler:sayLocalized("npc.tom.would_you_like_2", npc, creature)
+			npcHandler:say("Would you like to wear bear paws like I do? No problem, just bring me 50 bear paws and 50 wolf paws and I'll fit them on.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.DruidOutfitsRook.DruidBodyAddonRook, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "paws") or MsgContains(message, "bear paws") then
 		if player:getStorageValue(Storage.Quest.U7_8.DruidOutfitsRook.DruidBodyAddonRook) == 1 then
-			npcHandler:sayLocalized("npc.tom.have_you_brought_3", npc, creature)
+			npcHandler:say("Have you brought 50 bear paws and 50 wolf paws?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:getItemCount(5896) >= 50 and player:getItemCount(5897) >= 50 then
-				npcHandler:sayLocalized("npc.tom.excellent_like_promised_4", npc, creature)
+				npcHandler:say("Excellent! Like promised, here are your bear paws. ", npc, creature)
 				player:removeItem(5896, 50)
 				player:removeItem(5897, 50)
 				player:setStorageValue(Storage.Quest.U7_8.DruidOutfitsRook.DruidBodyAddonRook, 2)
@@ -250,7 +250,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addOutfitAddon(144, 1)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.tom.you_dont_have_5", npc, creature)
+				npcHandler:say("You don't have all items.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		end

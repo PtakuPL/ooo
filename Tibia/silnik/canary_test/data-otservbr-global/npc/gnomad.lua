@@ -68,16 +68,16 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "job") then
-		npcHandler:sayLocalized("npc.gnomad.im_the_gnomish_1", npc, creature)
+		npcHandler:say("I'm the gnomish tactical advisor for this area!", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "crystals") then
-		npcHandler:sayLocalized("npc.gnomad.ah_you_are_2", npc, creature)
+		npcHandler:say("Ah you are amazed by our crystals, aren't you? Well, you have only seen a tiny fraction of what they are able to do.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "mushrooms") then
-		npcHandler:sayLocalized("npc.gnomad.in_the_last_3", npc, creature)
+		npcHandler:say("In the last century mushrooms have become more and more important for producing raw materials and tools and less important for sustenance.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "gnomes") then
-		npcHandler:sayLocalized("npc.gnomad.we_gnomes_are_4", npc, creature)
+		npcHandler:say("We gnomes are masters of growing and working crystals and we also mastered the raising of a variety of mushrooms for different purposes.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

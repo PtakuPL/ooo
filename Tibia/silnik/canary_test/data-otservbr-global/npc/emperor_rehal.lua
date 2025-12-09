@@ -65,7 +65,7 @@ local function greetCallback(npc, creature, message)
 		return false
 	end
 
-	npcHandler:sayLocalized("npc.emperor_rehal.may_fire_and_1", npc, creature)
+	npcHandler:say("May Fire and Earth bless you, stranger. What leads you to Beregar, the dwarven city?", npc, creature)
 	npcHandler:setInteraction(npc, creature)
 
 	return true
@@ -77,25 +77,25 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "nokmir") then
 		if player:getStorageValue(Storage.Quest.U8_4.TheHiddenCityOfBeregar.JusticeForAll) == 1 then
-			npcHandler:sayLocalized("npc.emperor_rehal.i_always_liked_2", npc, creature)
+			npcHandler:say("I always liked him and I still can't believe that he really stole that ring.", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_4.TheHiddenCityOfBeregar.JusticeForAll) == 4 and player:removeItem(8777, 1) then
-			npcHandler:sayLocalized("npc.emperor_rehal.interesting_the_fact_3", npc, creature)
-			npcHandler:sayLocalized("npc.emperor_rehal.let_there_be_4", npc, creature)
+			npcHandler:say("Interesting. The fact that you have the ring means that Nokmir can't have stolen it. Combined with the information Grombur gave you, the case appears in a completely different light. ...", npc, creature)
+			npcHandler:say("Let there be justice for all. Nokmir is innocent and acquitted from all charges! And Rerun... I want him in prison for this malicious act!", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.TheHiddenCityOfBeregar.JusticeForAll, 5)
 		end
 	elseif MsgContains(message, "grombur") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:sayLocalized("npc.emperor_rehal.hes_very_ambitious_5", npc, creature)
+			npcHandler:say("He's very ambitious and always volunteers for the long shifts.", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.TheHiddenCityOfBeregar.JusticeForAll, 2)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_4.TheHiddenCityOfBeregar.RoyalRescue) < 1 and player:getStorageValue(Storage.Quest.U8_4.TheHiddenCityOfBeregar.JusticeForAll) > 4 then
-			npcHandler:sayLocalized("npc.emperor_rehal.as_you_have_6", npc, creature)
+			npcHandler:say("As you have proven yourself trustworthy I'm going to assign you a special mission. Are you interested?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U8_4.TheHiddenCityOfBeregar.RoyalRescue) == 7 then
-			npcHandler:sayLocalized("npc.emperor_rehal.my_son_was_7", npc, creature)
+			npcHandler:say("My son was captured by trolls? Doesn't sound like him, but if you say so. Now you want a reward, huh? ...", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "yes") then
@@ -107,14 +107,14 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_4.TheHiddenCityOfBeregar.RoyalRescue, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:sayLocalized("npc.emperor_rehal.look_at_these_8", npc, creature)
+			npcHandler:say("Look at these dwarven legs. They were forged years ago by a dwarf who was rather tall for our kind. I want you to have them. Thank you for rescuing my son |PLAYERNAME|.", npc, creature)
 			player:addItem(3398, 1)
 			player:setStorageValue(Storage.Quest.U8_4.TheHiddenCityOfBeregar.RoyalRescue, 8)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 1 or npcHandler:getTopic(playerId) == 2 then
-			npcHandler:sayLocalized("npc.emperor_rehal.alright_then_come_9", npc, creature)
+			npcHandler:say("Alright then, come back when you are ready.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

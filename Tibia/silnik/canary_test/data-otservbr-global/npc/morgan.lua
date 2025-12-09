@@ -64,7 +64,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addOutfitAddon(151, 1)
 			player:addOutfitAddon(155, 1)
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-			npcHandler:sayLocalized("npc.morgan.ahh_so_duncan_1", npc, creature)
+			npcHandler:say("Ahh. So Duncan sent you, eh? You must have done something really impressive. Okay, take this fine sabre from me, mate.", npc, creature)
 		end
 	elseif MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 6 then
@@ -75,19 +75,19 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 8 then
-			npcHandler:sayLocalized("npc.morgan.thank_you_for_2", npc, creature)
+			npcHandler:say("Thank you for delivering my letter to Eremo. I have no more missions for you.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 9)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "warrior's sword") then
 		if player:hasOutfit(player:getSex() == PLAYERSEX_FEMALE and 142 or 134, 2) then
-			npcHandler:sayLocalized("npc.morgan.you_already_have_3", npc, creature)
+			npcHandler:say("You already have this outfit!", npc, creature)
 			return true
 		end
 
 		if player:getStorageValue(Storage.Quest.U7_8.WarriorOutfits.WarriorSwordAddon) < 1 then
 			player:setStorageValue(Storage.Quest.U7_8.WarriorOutfits.WarriorSwordAddon, 1)
-			npcHandler:sayLocalized("npc.morgan.great_simply_bring_4", npc, creature)
+			npcHandler:say("Great! Simply bring me 100 iron ore and one royal steel and I will happily {forge} it for you.", npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U7_8.WarriorOutfits.WarriorSwordAddon) == 1 and npcHandler:getTopic(playerId) == 1 then
 			if player:getItemCount(5887) > 0 and player:getItemCount(5880) > 99 then
 				player:removeItem(5887, 1)
@@ -98,21 +98,21 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U7_8.WarriorOutfits.WarriorSwordAddon, 2)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 				player:addAchievementProgress("Wild Warrior", 2)
-				npcHandler:sayLocalized("npc.morgan.alright_as_a_5", npc, creature)
+				npcHandler:say("Alright! As a matter of fact, I have one in store. Here you go!", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.morgan.you_do_not_6", npc, creature)
+				npcHandler:say("You do not have all the required items.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "knight's sword") then
 		if player:hasOutfit(player:getSex() == PLAYERSEX_FEMALE and 139 or 131, 1) then
-			npcHandler:sayLocalized("npc.morgan.you_already_have_7", npc, creature)
+			npcHandler:say("You already have this outfit!", npc, creature)
 			return true
 		end
 
 		if player:getStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonSword) < 1 then
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonSword, 1)
-			npcHandler:sayLocalized("npc.morgan.great_simply_bring_8", npc, creature)
+			npcHandler:say("Great! Simply bring me 100 Iron Ore and one Crude Iron and I will happily {forge} it for you.", npc, creature)
 		elseif player:getStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonSword) == 1 and npcHandler:getTopic(playerId) == 1 then
 			if player:getItemCount(5892) > 0 and player:getItemCount(5880) > 99 then
 				player:removeItem(5892, 1)
@@ -121,19 +121,19 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addOutfitAddon(139, 1)
 				player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonSword, 2)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-				npcHandler:sayLocalized("npc.morgan.alright_as_a_9", npc, creature)
+				npcHandler:say("Alright! As a matter of fact, I have one in store. Here you go!", npc, creature)
 			else
-				npcHandler:sayLocalized("npc.morgan.you_do_not_10", npc, creature)
+				npcHandler:say("You do not have all the required items.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "forge") then
-		npcHandler:sayLocalized("npc.morgan.what_would_you_11", npc, creature)
+		npcHandler:say("What would you like me to forge for you? A {knight's sword} or a {warrior's sword}?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
 			if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 6 then
-				npcHandler:sayLocalized("npc.morgan.alright_we_will_12", npc, creature)
+				npcHandler:say("Alright, we will see. Here, take this letter and deliver it safely to old Eremo on Cormaya.", npc, creature)
 				player:addItem(3506, 1)
 				player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 7)
 				npcHandler:setTopic(playerId, 0)

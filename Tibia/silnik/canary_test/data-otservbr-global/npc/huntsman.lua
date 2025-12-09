@@ -59,7 +59,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "huntsman") then
-		npcHandler:sayLocalized("npc.huntsman.i_hunt_game_1", npc, creature)
+		npcHandler:say("I hunt game of all sorts to earn a living. I respect the {balance} of nature though and take only as much as I need.", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "balance") then
 		if npcHandler:getTopic(playerId) == 1 then
@@ -73,21 +73,21 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "benevola") then
 		if npcHandler:getTopic(playerId) == 2 then
 			player:addMapMark(Position(32596, 31746, 7), MAPMARK_FLAG, "Benevola's Hut")
-			npcHandler:sayLocalized("npc.huntsman.she_is_a_2", npc, creature)
+			npcHandler:say("She is a bit overly concerned about that nature and balance stuff but she has a good heart. She is living in the woods between Carlin and Ab'Dendriel. I'll mark her hut on your map.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "white deer") then
-		npcHandler:sayLocalized("npc.huntsman.the_white_deer_3", npc, creature)
+		npcHandler:say("The white deer are somewhat sacred to the elves. Though their fur and antlers are rumoured to earn a decent amount of {gold} on the market, it's probably not worth the trouble.", npc, creature)
 		npcHandler:setTopic(playerId, 3)
 	elseif MsgContains(message, "gold") then
 		if npcHandler:getTopic(playerId) == 3 then
-			npcHandler:sayLocalized("npc.huntsman.just_between_you_4", npc, creature)
+			npcHandler:say("Just between you and me, I heard a guy named {Cruleo} is offering some handsome cash for the trophies of a white deer.", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "cruleo") then
 		if npcHandler:getTopic(playerId) == 4 then
 			player:addMapMark(Position(32723, 31793, 7), MAPMARK_FLAG, "Cruleo's Hut")
-			npcHandler:sayLocalized("npc.huntsman.he_has_a_5", npc, creature)
+			npcHandler:say("He has a house in the wilderness. Just between Ab'Dendriel and the orcland. I'll mark his hut on your map.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

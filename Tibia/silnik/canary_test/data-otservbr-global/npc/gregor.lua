@@ -65,60 +65,60 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if player:getStorageValue(Storage.Quest.U7_6.TheApeCity.Questline) <= 15 then
-		npcHandler:sayLocalized("npc.gregor.sorry_but_i_1", npc, creature)
+		npcHandler:say("Sorry but I don't have anything for you at the moment.", npc, creature)
 		return true
 	end
 
 	local addonProgress = player:getStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonHelmet)
 	if MsgContains(message, "task") then
 		if not player:isPremium() then
-			npcHandler:sayLocalized("npc.gregor.sorry_but_our_2", npc, creature)
+			npcHandler:say("Sorry, but our tasks are only for premium warriors.", npc, creature)
 			return true
 		end
 
 		if addonProgress < 1 then
-			npcHandler:sayLocalized("npc.gregor.you_mean_you_3", npc, creature)
+			npcHandler:say("You mean you would like to prove that you deserve to wear such a helmet?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif addonProgress == 1 then
-			npcHandler:sayLocalized("npc.gregor.your_current_task_4", npc, creature)
+			npcHandler:say("Your current task is to bring me 100 perfect behemoth fangs, |PLAYERNAME|.", npc, creature)
 		elseif addonProgress == 2 then
-			npcHandler:sayLocalized("npc.gregor.your_current_task_5", npc, creature)
+			npcHandler:say("Your current task is to retrieve the helmet of Ramsay the Reckless from Banuta, |PLAYERNAME|.", npc, creature)
 		elseif addonProgress == 3 then
-			npcHandler:sayLocalized("npc.gregor.your_current_task_6", npc, creature)
+			npcHandler:say("Your current task is to obtain a flask of warrior's sweat, |PLAYERNAME|.", npc, creature)
 		elseif addonProgress == 4 then
-			npcHandler:sayLocalized("npc.gregor.your_current_task_7", npc, creature)
+			npcHandler:say("Your current task is to bring me royal steel, |PLAYERNAME|.", npc, creature)
 		elseif addonProgress == 5 then
-			npcHandler:sayLocalized("npc.gregor.please_talk_to_8", npc, creature)
+			npcHandler:say("Please talk to Sam and tell him I sent you. I'm sure he will be glad to refine your helmet, |PLAYERNAME|.", npc, creature)
 		else
-			npcHandler:sayLocalized("npc.gregor.youve_already_completed_9", npc, creature)
+			npcHandler:say("You've already completed the task and can consider yourself a mighty warrior, |PLAYERNAME|.", npc, creature)
 		end
 	elseif MsgContains(message, "behemoth fang") then
 		if addonProgress == 1 then
-			npcHandler:sayLocalized("npc.gregor.have_you_really_10", npc, creature)
+			npcHandler:say("Have you really managed to fulfil the task and brought me 100 perfect behemoth fangs?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		else
-			npcHandler:sayLocalized("npc.gregor.youre_not_serious_11", npc, creature)
+			npcHandler:say("You're not serious asking that, are you? They come from behemoths, of course. Unless there are behemoth rabbits. Duh.", npc, creature)
 		end
 	elseif MsgContains(message, "ramsay the reckless helmet") then
 		if addonProgress == 2 then
-			npcHandler:sayLocalized("npc.gregor.did_you_recover_12", npc, creature)
+			npcHandler:say("Did you recover the helmet of Ramsay the Reckless?", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		else
-			npcHandler:sayLocalized("npc.gregor.these_pesky_apes_13", npc, creature)
+			npcHandler:say("These pesky apes steal everything they can get their dirty hands on.", npc, creature)
 		end
 	elseif MsgContains(message, "sweat") then
 		if addonProgress == 3 then
-			npcHandler:sayLocalized("npc.gregor.were_you_able_14", npc, creature)
+			npcHandler:say("Were you able to get hold of a flask with pure warrior's sweat?", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		else
-			npcHandler:sayLocalized("npc.gregor.warriors_sweat_can_15", npc, creature)
+			npcHandler:say("Warrior's sweat can be magically extracted from headgear worn by a true warrior, but only in small amounts. Djinns are said to be good at magical extractions.", npc, creature)
 		end
 	elseif MsgContains(message, "royal steel") then
 		if addonProgress == 4 then
-			npcHandler:sayLocalized("npc.gregor.ah_have_you_16", npc, creature)
+			npcHandler:say("Ah, have you brought the royal steel?", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		else
-			npcHandler:sayLocalized("npc.gregor.royal_steel_can_17", npc, creature)
+			npcHandler:say("Royal steel can only be refined by very skilled smiths.", npc, creature)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
@@ -131,7 +131,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature, 100)
 			npcHandler:setTopic(playerId, 2)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.gregor.bah_then_you_18", npc, creature)
+			npcHandler:say("Bah. Then you will have to wait for the day these helmets are sold in shops, but that will not happen before hell freezes over.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
@@ -139,67 +139,67 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.OutfitQuest.Ref, math.max(0, player:getStorageValue(Storage.OutfitQuest.Ref)) + 1)
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonHelmet, 1)
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.MissionHelmet, 1)
-			npcHandler:sayLocalized("npc.gregor.alright_then_come_19", npc, creature)
+			npcHandler:say("Alright then. Come back to me once you have collected 100 perfect behemoth fangs.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.gregor.would_you_like_20", npc, creature)
+			npcHandler:say("Would you like me to repeat the task requirements then?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 3 then
 		if MsgContains(message, "yes") then
 			if not player:removeItem(5893, 100) then
-				npcHandler:sayLocalized("npc.gregor.lying_is_not_21", npc, creature)
+				npcHandler:say("Lying is not exactly honourable, |PLAYERNAME|. Shame on you.", npc, creature)
 				return true
 			end
 
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonHelmet, 2)
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.MissionHelmet, 2)
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.RamsaysHelmetDoor, 1)
-			npcHandler:sayLocalized("npc.gregor.im_deeply_impressed_22", npc, creature)
+			npcHandler:say("I'm deeply impressed, brave Knight |PLAYERNAME|. I expected nothing less from you. Now, please retrieve Ramsay's helmet.", npc, creature)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.gregor.there_is_no_23", npc, creature)
+			npcHandler:say("There is no need to rush anyway.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 4 then
 		if MsgContains(message, "yes") then
 			if not player:removeItem(5924, 1) then
-				npcHandler:sayLocalized("npc.gregor.lying_is_not_24", npc, creature)
+				npcHandler:say("Lying is not exactly honourable, |PLAYERNAME|. Shame on you.", npc, creature)
 				return true
 			end
 
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonHelmet, 3)
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.MissionHelmet, 3)
-			npcHandler:sayLocalized("npc.gregor.good_work_brave_25", npc, creature)
+			npcHandler:say("Good work, brave Knight |PLAYERNAME|! Even though it is damaged, it has a lot of sentimental value. Now, please bring me warrior's sweat.", npc, creature)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.gregor.there_is_no_26", npc, creature)
+			npcHandler:say("There is no need to rush anyway.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 5 then
 		if MsgContains(message, "yes") then
 			if not player:removeItem(5885, 1) then
-				npcHandler:sayLocalized("npc.gregor.lying_is_not_27", npc, creature)
+				npcHandler:say("Lying is not exactly honourable, |PLAYERNAME|. Shame on you.", npc, creature)
 				return true
 			end
 
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonHelmet, 4)
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.MissionHelmet, 4)
-			npcHandler:sayLocalized("npc.gregor.now_that_is_28", npc, creature)
+			npcHandler:say("Now that is a pleasant surprise, brave Knight |PLAYERNAME|! There is only one task left now: Obtain royal steel to have your helmet refined.", npc, creature)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.gregor.there_is_no_29", npc, creature)
+			npcHandler:say("There is no need to rush anyway.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 6 then
 		if MsgContains(message, "yes") then
 			if not player:removeItem(5887, 1) then
-				npcHandler:sayLocalized("npc.gregor.lying_is_not_30", npc, creature)
+				npcHandler:say("Lying is not exactly honourable, |PLAYERNAME|. Shame on you.", npc, creature)
 				return true
 			end
 
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.AddonHelmet, 5)
 			player:setStorageValue(Storage.Quest.U7_8.KnightOutfits.MissionHelmet, 5)
-			npcHandler:sayLocalized("npc.gregor.you_truly_deserve_31", npc, creature)
+			npcHandler:say("You truly deserve to wear an adorned helmet, brave Knight |PLAYERNAME|. Please talk to Sam and tell him I sent you. I'm sure he will be glad to refine your helmet.", npc, creature)
 		elseif MsgContains(message, "no") then
-			npcHandler:sayLocalized("npc.gregor.there_is_no_32", npc, creature)
+			npcHandler:say("There is no need to rush anyway.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

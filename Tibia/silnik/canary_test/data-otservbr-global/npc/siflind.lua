@@ -60,61 +60,61 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 5 then
-			npcHandler:sayLocalized("npc.siflind.i_heard_you_1", npc, creature)
+			npcHandler:say("I heard you have already helped our cause. Are you interested in another mission, even when it requires you to travel to a distant land?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 7 then
-			npcHandler:sayLocalized("npc.siflind.well_done_the_2", npc, creature)
+			npcHandler:say("Well done. The termites caused just the distraction that we needed. Are you ready for the next step of my plan?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 9 then
-			npcHandler:sayLocalized("npc.siflind.you_saved_the_3", npc, creature)
+			npcHandler:say("You saved the lives of many innocent animals. Thank you very much. If you are looking for another mission, just ask me.", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 10)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 10 then
-			npcHandler:sayLocalized("npc.siflind.our_warriors_need_4", npc, creature)
+			npcHandler:say("Our warriors need a more potent yet more secure berserker elixir to fight our enemies. To brew it, I need several ingredients. The first things needed are 5 bat wings. Bring them to me and Ill tell you the next ingredients we need.", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 11)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission05, 1) -- Questlog The Ice Islands Quest, Nibelor 4: Berserk Brewery
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 11 then
-			npcHandler:sayLocalized("npc.siflind.do_you_have_5", npc, creature)
+			npcHandler:say("Do you have the 5 bat wings I requested?", npc, creature)
 			npcHandler:setTopic(playerId, 5)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 12 then
-			npcHandler:sayLocalized("npc.siflind.the_second_things_6", npc, creature)
+			npcHandler:say("The second things needed are 4 bear paws. Bring them to me and Ill tell you the next ingredients we need.", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 13)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission05, 2) -- Questlog The Ice Islands Quest, Nibelor 4: Berserk Brewery
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 13 then
-			npcHandler:sayLocalized("npc.siflind.do_you_have_7", npc, creature)
+			npcHandler:say("Do you have the 4 bear paws I requested?", npc, creature)
 			npcHandler:setTopic(playerId, 6)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 14 then
-			npcHandler:sayLocalized("npc.siflind.the_next_things_8", npc, creature)
+			npcHandler:say("The next things needed are 3 bonelord eyes. Bring them to me and Ill tell you the next ingredients we need.", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 15)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission05, 3) -- Questlog The Ice Islands Quest, Nibelor 4: Berserk Brewery
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 15 then
-			npcHandler:sayLocalized("npc.siflind.do_you_have_9", npc, creature)
+			npcHandler:say("Do you have the 3 bonelord eyes I requested?", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 16 then
-			npcHandler:sayLocalized("npc.siflind.the_next_things_10", npc, creature)
+			npcHandler:say("The next things needed are 2 fish fins. Bring them to me and Ill tell you the next ingredients we need.", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 17)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission05, 4) -- Questlog The Ice Islands Quest, Nibelor 4: Berserk Brewery
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 17 then
-			npcHandler:sayLocalized("npc.siflind.do_you_have_11", npc, creature)
+			npcHandler:say("Do you have the 2 fish fins I requested?", npc, creature)
 			npcHandler:setTopic(playerId, 8)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 18 then
-			npcHandler:sayLocalized("npc.siflind.the_last_thing_12", npc, creature)
+			npcHandler:say("The last thing needed is a green dragon scale. Bring them to me and Ill tell you the next ingredients we need.", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 19)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission05, 5) -- Questlog The Ice Islands Quest, Nibelor 4: Berserk Brewery
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 19 then
-			npcHandler:sayLocalized("npc.siflind.do_you_have_13", npc, creature)
+			npcHandler:say("Do you have the green dragon scale I requested?", npc, creature)
 			npcHandler:setTopic(playerId, 9)
 		else
-			npcHandler:sayLocalized("npc.siflind.i_have_now_14", npc, creature)
+			npcHandler:say("I have now no mission for you.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "jug") then
-		npcHandler:sayLocalized("npc.siflind.do_you_want_15", npc, creature)
+		npcHandler:say("Do you want to buy a jug for 1000 gold?", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
@@ -130,81 +130,81 @@ local function creatureSayCallback(npc, creature, type, message)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if player:getMoney() + player:getBankBalance() >= 1000 then
 				player:removeMoneyBank(1000)
-				npcHandler:sayLocalized("npc.siflind.here_you_are_16", npc, creature)
+				npcHandler:say("Here you are.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				player:addItem(7243, 1)
 			end
 		elseif npcHandler:getTopic(playerId) == 3 then
-			npcHandler:sayLocalized("npc.siflind.good_now_listen_17", npc, creature)
+			npcHandler:say("Good! Now listen. To protect the animals there, we have to harm the profit of the hunters. Therefor, I ask you to ruin their best source of earnings. Are you willing to do that?", npc, creature)
 			npcHandler:setTopic(playerId, 4)
 		elseif npcHandler:getTopic(playerId) == 4 then
-			npcHandler:sayLocalized("npc.siflind.so_lets_proceed_18", npc, creature)
+			npcHandler:say("So let's proceed. Take this vial of paint. Travel to Tyrsung again and ruin as many pelts of baby seals as possible before the paint runs dry or freezes. Then return here to report about your mission. ", npc, creature)
 			player:addItem(7253, 1)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 8)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission04, 1) -- Questlog The Ice Islands Quest, Nibelor 3: Artful Sabotage
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then -- Wings
 			if player:removeItem(5894, 5) then
-				npcHandler:sayLocalized("npc.siflind.thank_you_very_19", npc, creature)
+				npcHandler:say("Thank you very much.", npc, creature)
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 12)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.siflind.come_back_when_20", npc, creature)
+				npcHandler:say("Come back when you do.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 6 then -- Paws
 			if player:removeItem(5896, 4) then
-				npcHandler:sayLocalized("npc.siflind.thank_you_very_21", npc, creature)
+				npcHandler:say("Thank you very much.", npc, creature)
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 14)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.siflind.come_back_when_22", npc, creature)
+				npcHandler:say("Come back when you do.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 7 then -- Eyes
 			if player:removeItem(5898, 3) then
-				npcHandler:sayLocalized("npc.siflind.thank_you_very_23", npc, creature)
+				npcHandler:say("Thank you very much.", npc, creature)
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 16)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.siflind.come_back_when_24", npc, creature)
+				npcHandler:say("Come back when you do.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 8 then -- Fins
 			if player:removeItem(5895, 2) then
-				npcHandler:sayLocalized("npc.siflind.thank_you_very_25", npc, creature)
+				npcHandler:say("Thank you very much.", npc, creature)
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 18)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.siflind.come_back_when_26", npc, creature)
+				npcHandler:say("Come back when you do.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 9 then -- Scale
 			if player:removeItem(5920, 1) then
-				npcHandler:sayLocalized("npc.siflind.thank_you_very_27", npc, creature)
+				npcHandler:say("Thank you very much. This will help us to defend Svargrond. But I heard young Nilsor is in dire need of help. Please contact him immediately.", npc, creature)
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 20)
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission05, 6) -- Questlog The Ice Islands Quest, Nibelor 4: Berserk Brewery
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.siflind.come_back_when_28", npc, creature)
+				npcHandler:say("Come back when you do.", npc, creature)
 			end
 			npcHandler:setTopic(playerId, 0)
 		end
 	end
 	if MsgContains(message, "buy animal cure") or MsgContains(message, "animal cure") then -- animal cure for in service of yalahar
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) >= 30 and player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) <= 54 then
-			npcHandler:sayLocalized("npc.siflind.you_want_to_29", npc, creature)
+			npcHandler:say("You want to buy animal cure for 400 gold coins?", npc, creature)
 			npcHandler:setTopic(playerId, 13)
 		else
-			npcHandler:sayLocalized("npc.siflind.im_out_of_30", npc, creature)
+			npcHandler:say("Im out of stock.", npc, creature)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 13 then
 		if npcHandler:getTopic(playerId) == 13 and player:removeMoneyBank(400) then
 			player:addItem(8819, 1)
-			npcHandler:sayLocalized("npc.siflind.here_you_go_31", npc, creature)
+			npcHandler:say("Here you go.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:sayLocalized("npc.siflind.you_dont_have_32", npc, creature)
+			npcHandler:say("You dont have enough of gold coins.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

@@ -56,31 +56,31 @@ local function creatureSayCallback(npc, creature, type, message)
 	local playerId = player:getId()
 	if message == "cookie" then
 		if player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission02) == 1 and player:getItemCount(8199) > 0 and player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Ortheus) < 0 then
-			npcHandler:sayLocalized("npc.ortheus.a_cookie_well_1", npc, creature)
+			npcHandler:say("A cookie? Well... I have to admit I haven't had one for ages. Can I have it?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:sayLocalized("npc.ortheus.itd_be_better_2", npc, creature)
+			npcHandler:say("It'd be better for you to leave now.", npc, creature)
 		end
 	elseif message == "yes" then
 		if npcHandler:getTopic(playerId) == 1 and player:removeItem(8199, 1) then -- garlic cookie
-			npcHandler:sayLocalized("npc.ortheus.well_thanks_it_3", npc, creature)
+			npcHandler:say("Well thanks, it looks tasty, I'll just take a bi - COUGH! Are you trying to poison me?? Get out of here before I forget myself!", npc, creature)
 			player:setStorageValue(Storage.Quest.U8_4.BloodBrothers.Cookies.Ortheus, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if player:removeItem(2880, 17) then -- mug of tea
-				npcHandler:sayLocalized("npc.ortheus.wow_these_polite_4", npc, creature)
+				npcHandler:say("Wow. These polite young adventurers nowadays. Thank you.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:sayLocalized("npc.ortheus.hmmm_you_dont_5", npc, creature)
+				npcHandler:say("Hmmm, you don't have tea with you.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif message == "tea" then
-		npcHandler:sayLocalized("npc.ortheus.have_you_actually_6", npc, creature)
+		npcHandler:say("Have you actually brought me a mug of tea??", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif message == "no" then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:sayLocalized("npc.ortheus.what_a_pity_7", npc, creature)
+			npcHandler:say("What a pity.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

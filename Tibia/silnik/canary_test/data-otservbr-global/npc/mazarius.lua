@@ -60,10 +60,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "brings") then
-		npcHandler:sayLocalized("npc.mazarius.ah_you_have_1", npc, creature)
+		npcHandler:say("Ah, you have heard about my search for experienced help. And indeed your reputation for solving certain {problems} has preceded you.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "problems") then
-		npcHandler:sayLocalized("npc.mazarius.my_problems_are_2", npc, creature)
+		npcHandler:say("My problems are, so to say, dire news for the whole world. <sigh> I don't want to confuse you with overly complicated and lengthy stories, so do you want to hear the {long} version or the {short}?", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "long") then
 		npcHandler:say({
@@ -90,13 +90,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 and player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Access) < 1 then
-		npcHandler:sayLocalized("npc.mazarius.good_but_i_3", npc, creature)
+		npcHandler:say("Good!, but I need 30 {demonic essences} to exchange with the demonic messenger for a ticket for you to enter the Abodes of Torments.", npc, creature)
 	elseif MsgContains(message, "demonic essence") or MsgContains(message, "essence") then
-		npcHandler:sayLocalized("npc.mazarius.do_you_have_4", npc, creature)
+		npcHandler:say("Do you have 30 demonic essences to offer to the demonic messenger?", npc, creature)
 		npcHandler:setTopic(playerId, 3)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 3 then
 		if player:removeItem(6499, 30) then
-			npcHandler:sayLocalized("npc.mazarius.excellent_this_will_5", npc, creature)
+			npcHandler:say("Excellent! This will empower possibilty to create a breach is enough to let you pass into that hellish hiding place. ...", npc, creature)
 			player:addItem(22182, 1)
 			player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Access, 1)
 			player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.FirstDoor, 1)
@@ -104,7 +104,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.TarbazDoor, 1)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:sayLocalized("npc.mazarius.you_dont_have_6", npc, creature)
+			npcHandler:say("You don't have the demonic essences, back here when you get it.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "godbreaker") then
@@ -119,7 +119,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "Ruthless Seven") or MsgContains(message, "ruthless seven") then
-		npcHandler:sayLocalized("npc.mazarius.given_the_internal_7", npc, creature)
+		npcHandler:say("Given the internal power plays amongst the Seven, they are the ideal keepers for individual parts of an powerful artefact. Not one of them would allow his compatriots to hold such a power, and neither would trust the other.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "demi-plane") then
 		npcHandler:say({
@@ -146,16 +146,16 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "bozarn") then
-		npcHandler:sayLocalized("npc.mazarius.ah_a_good_8", npc, creature)
+		npcHandler:say("Ah, a good man and a competent aid.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "darashia") then
-		npcHandler:sayLocalized("npc.mazarius.i_like_the_9", npc, creature)
+		npcHandler:say("I like the quietness and the climate. And admittedly it helped my studies not to be constantly disturbed by petitioners.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "thais") then
-		npcHandler:sayLocalized("npc.mazarius.thais_has_become_10", npc, creature)
+		npcHandler:say("Thais has become a melting pot of some source. Yet whatever you melt, if the ingredients are corrupted, the outcome is always flawed.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "carlin") then
-		npcHandler:sayLocalized("npc.mazarius.instead_of_banding_11", npc, creature)
+		npcHandler:say("Instead of banding together and starting to change something, they and Thais keep wasting resources in hostilities.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "kazordoon") then
 		npcHandler:say({
@@ -170,7 +170,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "edron") then
-		npcHandler:sayLocalized("npc.mazarius.edron_has_become_12", npc, creature)
+		npcHandler:say("Edron has become as stagnant as the teachings in its academy. No new idea has been thought there for decades. The whole Edron is an example for what happens when humanity has become fat and lazy.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "demons") then
 		npcHandler:say({
@@ -179,7 +179,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "venore") then
-		npcHandler:sayLocalized("npc.mazarius.an_almost_laughable_13", npc, creature)
+		npcHandler:say("An almost laughable greed is persistent in that city. At least this makes knowledge and materials conveniently available to those who can match their prizes.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	else
 		npcHandler:say("What?!", npc, creature)

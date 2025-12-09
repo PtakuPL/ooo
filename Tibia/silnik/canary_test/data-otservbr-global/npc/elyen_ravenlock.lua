@@ -62,10 +62,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if (MsgContains(message, "scroll") or MsgContains(message, "mission")) and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission60) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission61) < 1 then
-		npcHandler:sayLocalized("npc.elyen_ravenlock.hello_brother_you_1", npc, creature)
+		npcHandler:say("Hello, brother. You come with a question to me, I believe?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission60) == 1 then
-		npcHandler:sayLocalized("npc.elyen_ravenlock.and_what_is_2", npc, creature)
+		npcHandler:say("And what is it you want? Do you bring news from the undead, or do you seek a dark {artefact}?", npc, creature)
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission45, 1)
 		npcHandler:setTopic(playerId, 2)
 	elseif (MsgContains(message, "artefact") or MsgContains(message, "yes")) and npcHandler:getTopic(playerId) == 2 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission60) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission61) < 1 then
@@ -86,7 +86,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		player:addItem(18932, 1)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission66) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission67) < 1 then
-		npcHandler:sayLocalized("npc.elyen_ravenlock.hello_brother_you_3", npc, creature)
+		npcHandler:say("Hello, brother. You have finished the dance?", npc, creature)
 		npcHandler:setTopic(playerId, 4)
 	elseif (MsgContains(message, "yes")) and npcHandler:getTopic(playerId) == 4 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission66) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission67) < 1 then
 		npcHandler:say({
@@ -97,7 +97,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission67, 1)
 		npcHandler:setTopic(playerId, 0)
 	else
-		npcHandler:sayLocalized("npc.elyen_ravenlock.time_is_money_4", npc, creature)
+		npcHandler:say("Time is money, hurry.", npc, creature)
 	end
 	return true
 end

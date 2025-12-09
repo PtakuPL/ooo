@@ -61,10 +61,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission10) >= 1 then
-		npcHandler:sayLocalized("npc.jondrin.you_already_got_1", npc, creature)
+		npcHandler:say("You already got the Necrometer.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:sayLocalized("npc.jondrin.indeed_i_heard_2", npc, creature)
+		npcHandler:say("Indeed I heard you did a good job out there. <sigh> I guess that means I can hand you one of our necrometers. Handle it with care.", npc, creature)
 		player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission10, 1)
 		player:addItem(21124, 1)
 		npcHandler:setTopic(playerId, 0)

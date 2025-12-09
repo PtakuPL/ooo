@@ -85,7 +85,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 5)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 5 then
-		npcHandler:sayLocalized("npc.charles.do_you_seek_1", npc, creature)
+		npcHandler:say("Do you seek a shortcut passage to {Thais} for 100 gold, to {Edron} for 90 gold, to {Liberty Bay} for 20 gold or to {Yalahar} for 200 gold?", npc, creature)
 		npcHandler:setTopic(playerId, 6)
 	elseif npcHandler:getTopic(playerId) == 6 then
 		local travelTo = shortcuts[message:lower()]
@@ -101,11 +101,11 @@ local function creatureSayCallback(npc, creature, type, message)
 						player:setStorageValue(Storage.Quest.U11_80.TheSecretLibrary.SmallIslands.Questline, 2)
 					end
 				end
-				npcHandler:sayLocalized("npc.charles.set_the_sails_2", npc, creature)
+				npcHandler:say("Set the sails and good luck to us!", npc, creature)
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				return true
 			else
-				npcHandler:sayLocalized("npc.charles.you_dont_have_3", npc, creature)
+				npcHandler:say("You don't have enough money.", npc, creature)
 			end
 		end
 	else

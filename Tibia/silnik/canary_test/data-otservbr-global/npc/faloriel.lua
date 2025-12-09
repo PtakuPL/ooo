@@ -67,19 +67,19 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "ring") then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fifth.Memories) == 1 then
-			npcHandler:sayLocalized("npc.faloriel.so_the_librarian_1", npc, creature)
+			npcHandler:say("So, the Librarian sent you. Well, yes, I have a vial of the hallucinogen you need. I'll give it to you for 1000 gold. Do you agree?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:sayLocalized("npc.faloriel.i_dont_have_2", npc, creature)
+			npcHandler:say("I don't have anything to offer you regarding a ring.", npc, creature)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
 		if player:getMoney() + player:getBankBalance() >= 1000 then
-			npcHandler:sayLocalized("npc.faloriel.great_here_take_3", npc, creature)
+			npcHandler:say("Great. Here, take it.", npc, creature)
 			player:removeMoneyBank(1000)
 			player:addItem(31350, 1)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:sayLocalized("npc.faloriel.you_do_not_4", npc, creature)
+			npcHandler:say("You do not have enough money.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

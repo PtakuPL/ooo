@@ -54,30 +54,30 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "key") then
-		npcHandler:sayLocalized("npc.skjaar.i_will_give_1", npc, creature)
+		npcHandler:say("I will give the key to the crypt only to the closest followers of my master. Would you like me to test you?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:sayLocalized("npc.skjaar.before_we_start_2", npc, creature)
+		npcHandler:say("Before we start I must ask you for a small donation of 1000 gold coins. Are you willing to pay 1000 gold coins for the test?", npc, creature)
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 then
 		if player:removeMoneyBank(1000) then
-			npcHandler:sayLocalized("npc.skjaar.all_right_then_3", npc, creature)
+			npcHandler:say("All right then. Here comes the first question. What was the name of Dago's favourite pet?", npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		else
-			npcHandler:sayLocalized("npc.skjaar.you_dont_have_4", npc, creature)
+			npcHandler:say("You don't have enough money", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "redips") and npcHandler:getTopic(playerId) == 3 then
-		npcHandler:sayLocalized("npc.skjaar.perhaps_you_knew_5", npc, creature)
+		npcHandler:say("Perhaps you knew him after all. Tell me - how many fingers did he have when he died?", npc, creature)
 		npcHandler:setTopic(playerId, 4)
 	elseif MsgContains(message, "7") and npcHandler:getTopic(playerId) == 4 then
-		npcHandler:sayLocalized("npc.skjaar.also_true_but_6", npc, creature)
+		npcHandler:say("Also true. But can you also tell me the colour of the deamons in which master specialized?", npc, creature)
 		npcHandler:setTopic(playerId, 5)
 	elseif MsgContains(message, "black") and npcHandler:getTopic(playerId) == 5 then
-		npcHandler:sayLocalized("npc.skjaar.it_seems_you_7", npc, creature)
+		npcHandler:say("It seems you are worthy after all. Do you want the key to the crypt?", npc, creature)
 		npcHandler:setTopic(playerId, 6)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 6 then
-		npcHandler:sayLocalized("npc.skjaar.here_you_are_8", npc, creature)
+		npcHandler:say("Here you are", npc, creature)
 		local key = player:addItem(2970, 1)
 		if key then
 			key:setActionId(3142)

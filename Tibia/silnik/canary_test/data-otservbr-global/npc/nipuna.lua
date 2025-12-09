@@ -23,14 +23,11 @@ npcConfig.flags = {
 	floorchange = false,
 }
 
--- Load NPC helper library
-dofile(CORE_DIRECTORY .. "/libs/npc/i18n.lua")
-
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = NPC_LIB.i18n.get("npc.nipuna.voice_selling") },
-	{ text = NPC_LIB.i18n.get("npc.nipuna.voice_runes") },
+	{ text = "I'm selling magic equipment. Come and have a look." },
+	{ text = "If you need runes, this is the market stall for you!" },
 }
 
 local itemsTable = {
@@ -163,7 +160,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), itemsTable)
-		npcHandler:sayLocalized("npc.nipuna.of_course_just_1" .. remainingCategories .. ".", npc, player)
+		npcHandler:say("Of course, just browse through my wares. You can also look at " .. remainingCategories .. ".", npc, player)
 		npc:openShopWindowTable(player, categoryTable)
 	end
 	return true

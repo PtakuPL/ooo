@@ -71,7 +71,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 		player:getPosition():sendMagicEffect(CONST_ME_EXPLOSIONAREA)
 		player:addHealth(1 - player:getHealth())
-		npcHandler:sayLocalized("npc.stutch.take_this_1", npc, creature)
+		npcHandler:say("Take this!", npc, creature)
 		npc:getPosition():sendMagicEffect(CONST_ME_YELLOW_RINGS)
 	end
 	return true

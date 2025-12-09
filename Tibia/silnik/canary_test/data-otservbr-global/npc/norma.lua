@@ -35,7 +35,6 @@ npcConfig.voices = {
 
 local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
-local npcI18n = NPC_LIB and NPC_LIB.i18n
 
 npcType.onThink = function(npc, interval)
 	npcHandler:onThink(npc, interval)
@@ -80,18 +79,10 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "addon") or MsgContains(message, "outfit") or MsgContains(message, "hat") then
 		if player:getStorageValue(Storage.Quest.U7_8.CitizenOutfitsRook.AddonHatRook) == 1 then
-			if npcI18n then
-				npcI18n.sayLocalized(player, "npc.norma.addon_ask", nil, MESSAGE_NPC_FROM)
-			else
-				npcHandler:say("Oh, you're back already? Did you bring a legion helmet, 100 chicken feathers and 50 honeycombs?", npc, creature)
-			end
+			npcHandler:say("Oh, you're back already? Did you bring a legion helmet, 100 chicken feathers and 50 honeycombs?", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U7_8.CitizenOutfitsRook.MissionHatRookRook) < 1 then
-			if npcI18n then
-				npcI18n.sayLocalized(player, "npc.norma.addon_offer", nil, MESSAGE_NPC_FROM)
-			else
-				npcHandler:say("Pretty, isn't it? I made it myself, but I could teach you how to do that if you like. What do you say?", npc, creature)
-			end
+			npcHandler:say("Pretty, isn't it? I made it myself, but I could teach you how to do that if you like. What do you say?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 
@@ -102,45 +93,21 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			player:setStorageValue(Storage.Quest.U7_8.CitizenOutfitsRook.AddonHatRook, 1)
 			player:setStorageValue(Storage.Quest.U7_8.CitizenOutfitsRook.MissionHatRook, 1)
-			if npcI18n then
-				npcI18n.sayLocalized(player, "npc.norma.addon_instructions", nil, MESSAGE_NPC_FROM)
-			else
-				npcHandler:say("Okay, here we go, listen closely! I need a few things... a basic hat of course, maybe a legion helmet would do. Then about 100 chicken feathers... and 50 honeycombs as glue.That's it, come back to me once you gathered it!!", npc, creature)
-			end
+			npcHandler:say("Okay, here we go, listen closely! I need a few things... a basic hat of course, maybe a legion helmet would do. Then about 100 chicken feathers... and 50 honeycombs as glue.That's it, come back to me once you gathered it!!", npc, creature)
 		else
-			if npcI18n then
-				npcI18n.sayLocalized(player, "npc.norma.addon_no", nil, MESSAGE_NPC_FROM)
-			else
-				npcHandler:say("Aw, I guess you don't like feather hats. No big deal.", npc, creature)
-			end
+			npcHandler:say("Aw, I guess you don't like feather hats. No big deal.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "yes") then
 			if player:getItemCount(3374) < 1 then
-				if npcI18n then
-					npcI18n.sayLocalized(player, "npc.norma.addon_no_helmet", nil, MESSAGE_NPC_FROM)
-				else
-					npcHandler:say("Sorry, but I can't see a legion helmet.", npc, creature)
-				end
+				npcHandler:say("Sorry, but I can't see a legion helmet.", npc, creature)
 			elseif player:getItemCount(5890) < 100 then
-				if npcI18n then
-					npcI18n.sayLocalized(player, "npc.norma.addon_no_feathers", nil, MESSAGE_NPC_FROM)
-				else
-					npcHandler:say("Sorry, but you don't enough chicken feathers.", npc, creature)
-				end
+				npcHandler:say("Sorry, but you don't enough chicken feathers.", npc, creature)
 			elseif player:getItemCount(5902) < 50 then
-				if npcI18n then
-					npcI18n.sayLocalized(player, "npc.norma.addon_no_honeycombs", nil, MESSAGE_NPC_FROM)
-				else
-					npcHandler:say("Sorry, but you don't have enough honeycombs.", npc, creature)
-				end
+				npcHandler:say("Sorry, but you don't have enough honeycombs.", npc, creature)
 			else
-				if npcI18n then
-					npcI18n.sayLocalized(player, "npc.norma.addon_success", nil, MESSAGE_NPC_FROM)
-				else
-					npcHandler:say("Great job! That must have taken a lot of work. Okay, you put it like this... then glue like this... here!", npc, creature)
-				end
+				npcHandler:say("Great job! That must have taken a lot of work. Okay, you put it like this... then glue like this... here!", npc, creature)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 				player:removeItem(3374, 1)
 				player:removeItem(5902, 50)
@@ -151,11 +118,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U7_8.CitizenOutfitsRook.AddonHatRook, 2)
 			end
 		else
-			if npcI18n then
-				npcI18n.sayLocalized(player, "npc.norma.addon_later", nil, MESSAGE_NPC_FROM)
-			else
-				npcHandler:say("Maybe another time.", npc, creature)
-			end
+			npcHandler:say("Maybe another time.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	end

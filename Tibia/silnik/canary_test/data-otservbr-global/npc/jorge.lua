@@ -125,9 +125,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				if getPlayerItemCount(creature, 19083) >= 20 then
 					doPlayerRemoveItem(creature, 19083, 20)
 					doPlayerAddItem(creature, items[i].id, 1)
-					npcHandler:sayLocalized("npc.jorge.you_just_swapped_1" .. items[i].name .. ".", npc, creature)
+					npcHandler:say("You just swapped 20 silver raid tokens for 1 " .. items[i].name .. ".", npc, creature)
 				else
-					npcHandler:sayLocalized("npc.jorge.im_sorry_i_2", npc, creature)
+					npcHandler:say("I'm sorry, I need at least 20 silver tokens for that. Please come back when you have them.", npc, creature)
 				end
 				npcHandler:setTopic(playerId, 0) -- Reset topic after processing
 				return true

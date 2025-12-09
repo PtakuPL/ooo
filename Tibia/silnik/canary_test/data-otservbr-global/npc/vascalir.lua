@@ -62,7 +62,7 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 	-- Reject to start missions
 	if player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Questline) == -1 and player:getLevel() > 5 then
-		npcHandler:sayLocalized("npc.vascalir.welcome_adventurer_player_1", npc, creature)
+		npcHandler:say("Welcome, adventurer |PLAYERNAME|. Thank you for offering your help - but you are already too experienced to start this quest. Just go on hunting monsters, you'll be better off that way.", npc, creature)
 		return false
 		-- Warn if started missions and reached level 8
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Questline) == 1 and player:getLevel() == 8 and player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Level8Warning) == -1 then
@@ -74,7 +74,7 @@ local function greetCallback(npc, creature)
 		})
 		-- Completed all missions
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Questline) == 2 then
-		npcHandler:sayLocalized("npc.vascalir.playername_the_only_2", npc, creature)
+		npcHandler:say("|PLAYERNAME|, the only thing left for you to do here is to talk to the oracle above the academy and leave for the Isle of Destiny. Thanks again for your great work and good luck on your journeys!", npc, creature)
 		return false
 		-- Not started mission 2
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission02) == -1 then
@@ -93,7 +93,7 @@ local function greetCallback(npc, creature)
 		npcHandler:setMessage(MESSAGE_GREET, "Welcome back, |PLAYERNAME|. Are you done with the 5 rats I asked you to kill?")
 		-- Started but not finished mission 4
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission04) >= 1 and player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission04) <= 4 then
-		npcHandler:sayLocalized("npc.vascalir.greetings_playername_righ_3", npc, creature)
+		npcHandler:say("Greetings, |PLAYERNAME|. Right now I don't need your help. I heard that Lily south-west of here requires assistance though.", npc, creature)
 		return false
 		-- Finishing mission 4
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission04) == 5 then
@@ -114,14 +114,14 @@ local function greetCallback(npc, creature)
 		npcHandler:setMessage(MESSAGE_GREET, "Welcome back, |PLAYERNAME|! How about that studded armor - would you like to have it now?")
 		-- Started but not finished mission 6
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) >= 1 and player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) <= 6 then
-		npcHandler:sayLocalized("npc.vascalir.greetings_playername_righ_4", npc, creature)
+		npcHandler:say("Greetings, |PLAYERNAME|. Right now I don't need your help. You should pay a visit to Tom the Tanner. His hut is south-west of the academy!", npc, creature)
 		return false
 		-- Finished mission 6 but not started mission 7
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) == 7 and player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission07) == -1 then
 		npcHandler:setMessage(MESSAGE_GREET, "|PLAYERNAME|! Thank the gods you are back! While you were gone, something horrible happened. Do you smell the fire?")
 		-- Started but not finished mission 7
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission07) == 1 and player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.LibraryChest) == -1 then
-		npcHandler:sayLocalized("npc.vascalir.you_can_find_5", npc, creature)
+		npcHandler:say("You can find the vault if you go down the stairs in the northern part of the academy. The book should be in a large blue chest somewhere down there - I hope it's not burnt yet.", npc, creature)
 		return false
 		-- Finishing mission 7
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission07) == 1 and player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.LibraryChest) == 1 then
@@ -131,14 +131,14 @@ local function greetCallback(npc, creature)
 		npcHandler:setMessage(MESSAGE_GREET, "Are you prepared for your next mission, |PLAYERNAME|?")
 		-- Started but not finished mission 8
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission08) == 1 then
-		npcHandler:sayLocalized("npc.vascalir.i_think_its_6", npc, creature)
+		npcHandler:say("I think it's a good idea to go see Paulie before you leave the village again. Just go downstairs and to the right to find the bank.", npc, creature)
 		return false
 		-- Finished mission 8 but not started mission 9
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission08) == 2 and player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission09) == -1 then
 		npcHandler:setMessage(MESSAGE_GREET, "Now that you know how to store your money, it's time to go after the trolls. I'm even going to give you some more equipment as reward. Do you feel ready for that mission?")
 		-- Started but not finished mission 9
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission09) >= 1 and player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission09) <= 7 then
-		npcHandler:sayLocalized("npc.vascalir.playername_you_need_7", npc, creature)
+		npcHandler:say("|PLAYERNAME|, you need to discover the troll tunnel and find a way to make it collapse. Maybe you're able to use some of the trolls' tools. Make sure they can't enter the village via that tunnel anymore!", npc, creature)
 		return false
 		-- Finishing mission 9
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission09) == 8 then
@@ -177,7 +177,7 @@ local function greetCallback(npc, creature)
 		npcHandler:setMessage(MESSAGE_GREET, "|PLAYERNAME|, the time of our triumph has come. Are you ready to vanquish Kraknaknork once and for all?")
 		-- Started but not finished mission 12
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission12) >= 1 and player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission12) <= 13 then
-		npcHandler:sayLocalized("npc.vascalir.playername_the_air_8", npc, creature)
+		npcHandler:say("|PLAYERNAME|, the air smells like victory. Head into the orc fortress and vanquish Kraknaknork once and for all. Don't forget to take the items from below the academy!", npc, creature)
 		return false
 		-- Finish mission 12
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission12) == 14 then
@@ -335,7 +335,7 @@ keywordHandler:addKeyword({ "yes" }, nil, {}, function(player)
 	return player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission03) == 1 and player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.RatKills) < 5
 end, function(player)
 	local ratKills = player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.RatKills)
-	npcHandler:sayLocalized("npc.vascalir.you_still_need_9" .. (5 - ratKills) .. " more rats. Come back once you've killed enough for some experience and equipment!", player.uid)
+	npcHandler:say("You still need to kill " .. (5 - ratKills) .. " more rats. Come back once you've killed enough for some experience and equipment!", player.uid)
 end)
 keywordHandler:addAliasKeyword({ "no" })
 

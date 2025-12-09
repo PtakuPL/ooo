@@ -20,7 +20,6 @@ npcConfig.flags = {
 
 local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
-local npcI18n = NPC_LIB and NPC_LIB.i18n
 
 npcType.onThink = function(npc, interval)
 	npcHandler:onThink(npc, interval)
@@ -59,37 +58,22 @@ local function greetCallback(npc, creature, message)
 	--Checks if the player has completed the quest
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission03) ~= 3 then
 		if not MsgContains(message, "djanni'hah") then
-			if npcI18n then
-				npcI18n.sayLocalized(player, "npc.nah_bob.no_place", {player:getName()}, MESSAGE_NPC_FROM)
-			else
-				npcHandler:say("Whoa! A human! This is no place for you, |PLAYERNAME|. Go and play somewhere else.", npc, creature)
-			end
+			npcHandler:say("Whoa! A human! This is no place for you, |PLAYERNAME|. Go and play somewhere else.", npc, creature)
 			endConversationWithDelay(npcHandler, npc, creature)
 			return false
 		end
 
 		if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.EfreetFaction.Start) == 1 then
-			if npcI18n then
-				npcI18n.npcSayMultiple(npcHandler, npc, creature, {
-					"npc.nah_bob.laugh_1",
-					"npc.nah_bob.laugh_2",
-				}, 100, {nil, {player:getName()}})
-			else
-				npcHandler:say({
-					"Hahahaha! ...",
-					"|PLAYERNAME|, that almost sounded like the word of greeting. Humans - cute they are!",
-				}, npc, creature)
-			end
+			npcHandler:say({
+				"Hahahaha! ...",
+				"|PLAYERNAME|, that almost sounded like the word of greeting. Humans - cute they are!",
+			}, npc, creature)
 			endConversationWithDelay(npcHandler, npc, creature)
 			return false
 		end
 	end
 
-	if npcI18n then
-		npcI18n.sayLocalized(player, "npc.nah_bob.greet", {player:getName()}, MESSAGE_NPC_FROM)
-	else
-		npcHandler:say("<Sighs> Another {customer}! I've only just sat down! What is it, |PLAYERNAME|?", npc, creature)
-	end
+	npcHandler:say("<Sighs> Another {customer}! I've only just sat down! What is it, |PLAYERNAME|?", npc, creature)
 	npcHandler:setInteraction(npc, creature)
 
 	return true
@@ -105,21 +89,13 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "cookie") then
 		if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 31 and player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.CookieDelivery.Djinn) ~= 1 then
-			if npcI18n then
-				npcI18n.sayLocalized(player, "npc.nah_bob.cookie_ask", nil, MESSAGE_NPC_FROM)
-			else
-				npcHandler:say("You brought cookies! How nice of you! Can I have one?", npc, creature)
-			end
+			npcHandler:say("You brought cookies! How nice of you! Can I have one?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if not player:removeItem(130, 1) then
-				if npcI18n then
-					npcI18n.sayLocalized(player, "npc.nah_bob.cookie_none", nil, MESSAGE_NPC_FROM)
-				else
-					npcHandler:say("You have no cookie that I'd like.", npc, creature)
-				end
+				npcHandler:say("You have no cookie that I'd like.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -130,21 +106,13 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 
 			npc:getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)
-			if npcI18n then
-				npcI18n.sayLocalized(player, "npc.nah_bob.cookie_rage", nil, MESSAGE_NPC_FROM)
-			else
-				npcHandler:say("You see, good deeds like this will ... YOU ... YOU SPAWN OF EVIL! I WILL MAKE SURE THE MASTER LEARNS ABOUT THIS!", npc, creature)
-			end
+			npcHandler:say("You see, good deeds like this will ... YOU ... YOU SPAWN OF EVIL! I WILL MAKE SURE THE MASTER LEARNS ABOUT THIS!", npc, creature)
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 1 then
-			if npcI18n then
-				npcI18n.sayLocalized(player, "npc.nah_bob.cookie_no", nil, MESSAGE_NPC_FROM)
-			else
-				npcHandler:say("I see.", npc, creature)
-			end
+			npcHandler:say("I see.", npc, creature)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end
@@ -156,11 +124,7 @@ local function onTradeRequest(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U7_4.DjinnWar.MaridFaction.Mission03) ~= 3 then
-		if npcI18n then
-			npcI18n.sayLocalized(player, "npc.nah_bob.trade_denied", nil, MESSAGE_NPC_FROM)
-		else
-			npcHandler:say("I'm sorry, human. But you need Gabel's permission to trade with me.", npc, creature)
-		end
+		npcHandler:say("I'm sorry, human. But you need Gabel's permission to trade with me.", npc, creature)
 		return false
 	end
 

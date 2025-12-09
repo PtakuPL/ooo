@@ -560,3 +560,13 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/phpmyadmin/libraries/advisory_rules_generic.php
 /home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/phpmyadmin/libraries/config.values.php
 /home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/phpmyadmin/setup/validate.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/phpmyadmin/setup/index.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/phpmyadmin/examples/openid.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/phpmyadmin/examples/signon.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/tools/translation_manager.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/index.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/app/Controller/Pages/Outfit.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/app/Controller/Admin/Items.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/resources/icons/bootstrap-icons-1.8.1/index.html
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/browser/shell.html
+/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/modules/game_shaders/shaders.html

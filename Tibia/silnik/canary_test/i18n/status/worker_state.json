@@ -1,16 +1,16 @@
 {
   "schema_version": "2.0",
-  "last_updated": "2025-12-09T03:17:19+01:00",
+  "last_updated": "2025-12-09T03:20:04+01:00",
   "worker": {
     "version": "4.0",
     "status": "running",
     "mode": "extraction",
-    "cycle": 2,
+    "cycle": 3,
     "files_per_cycle": 10,
     "pid": 3364177
   },
   "global_progress": {
-    "total_files_processed": 542,
+    "total_files_processed": 562,
     "total_files_excluded": 5329,
     "total_keys": 49992,
     "total_languages": 53,
@@ -26,28 +26,28 @@
   },
   "recent_files": [
   {
-    "file": "bans.php",
-    "time": "03:17:19",
+    "file": "index.html",
+    "time": "03:20:04",
     "status": "success"
   },
   {
-    "file": "monsters.php",
-    "time": "03:17:19",
+    "file": "advisory_rules_mysql_before80003.php",
+    "time": "03:20:04",
     "status": "success"
   },
   {
-    "file": "records.php",
-    "time": "03:17:19",
+    "file": "advisory_rules_generic.php",
+    "time": "03:20:04",
     "status": "success"
   },
   {
-    "file": "highscores.php",
-    "time": "03:17:19",
+    "file": "config.values.php",
+    "time": "03:20:04",
     "status": "success"
   },
   {
-    "file": "team.php",
-    "time": "03:17:19",
+    "file": "validate.php",
+    "time": "03:20:04",
     "status": "success"
   }
 ]

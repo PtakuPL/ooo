@@ -353,3 +353,13 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/gnomelvis.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/angus.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/huntsman.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/kallimae.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/a_strange_fellow.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/uzgod.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/a_dead_bureaucrat2.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/gail.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/maeryn.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/jondrin.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/haroun.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/marvin.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/elathriel.lua

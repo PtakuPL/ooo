@@ -70,7 +70,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		local player = Player(creature)
 		if player:getStorageValue(Storage.Quest.U7_9.ThePitsOfInferno.ThronePumin) == 4 then
 			player:setStorageValue(Storage.Quest.U7_9.ThePitsOfInferno.ThronePumin, 5)
-			npcHandler:say("Sure, you can get it from me. Here you are. Bye", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_dead_bureaucrat2.say_1")
 		end
 	end
 	return true

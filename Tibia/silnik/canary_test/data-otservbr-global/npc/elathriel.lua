@@ -202,19 +202,19 @@ local function creatureSayCallback(npc, creature, type, message)
 		if npcHandler:getTopic(playerId) == 1 then
 			local player = Player(creature)
 			if player:removeMoneyBank(5000) then
-				npcHandler:say("Here it is.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elathriel.say_1")
 				local key = player:addItem(2970, 1)
 				if key then
 					key:setActionId(3012)
 				end
 			else
-				npcHandler:say("Come back when you have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elathriel.say_2")
 			end
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Believe me, it's better for you that way.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.elathriel.say_3")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

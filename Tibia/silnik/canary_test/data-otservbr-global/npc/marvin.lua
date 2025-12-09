@@ -62,16 +62,16 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:say("You can't vote yet.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marvin.say_1")
 		end
 	elseif MsgContains(message, "archives") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("How many of your x votes do you want to cast?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marvin.say_2")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "1") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Did I get that right: You want to cast 1 of your votes on funding the {archives}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marvin.say_3")
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "yes") then
@@ -81,7 +81,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U10_50.OramondQuest.VotingPoints, currentVotes - 1)
 			end
 			player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission08, 1)
-			npcHandler:say("Thanks, you successfully cast your vote. Feel free to continue gathering votes by helping the city! Farewell.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.marvin.say_4")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

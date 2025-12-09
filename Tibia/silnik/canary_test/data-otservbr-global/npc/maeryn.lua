@@ -83,13 +83,13 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "tokens") then
 	elseif table.contains({ "dangerous", "beasts" }, message:lower()) then
-		npcHandler:say("So you don't know it yet. This island, Grimvale, is affected by were-sickness. Many {pitiful}, who are stricken with the curse, dwell in the {tunnels} and caverns underneath the village and the nearby hurst.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_1")
 	elseif MsgContains(message, "pitiful") then
-		npcHandler:say("Yes, pitiful. For they are savage beasts now who regularly come up from below to attack the village. But once they were inhabitants of Grimvale, before they {changed}.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_2")
 	elseif MsgContains(message, "changed") then
-		npcHandler:say("Through a bite or even a scratch, you may be infected with the were-sickness. If that happens, there is little {hope} - until the next full moon you'll change into a were-creature, depending on the animal that hurt you.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_3")
 	elseif MsgContains(message, "hope") then
-		npcHandler:say("There is a plant, the purple nightshade. It blossoms exclusively in the light of the full moon and only underground, where the full moon's light is falling through fissures in the surface. Only this plant's blossoms are able to defeat the {were-sickness}.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_4")
 	elseif table.contains({ "were-sickness", "curse" }, message:lower()) then
 		npcHandler:say({
 			"It transforms peaceful villagers into savage beasts. We're not sure how this curse found the way into our small village. But one day it began. At first it befell just a few people. ...",
@@ -100,9 +100,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "tunnels") then
 		npcHandler:say({ "We are not sure what they are doing down there. We're glad if they stay in the caverns and leave us alone. Only at full moon do they come up and threaten the island's surface and village. ...", "I, however, have a {hunch} as to why they dwell so deep under the earth." }, npc, creature)
 	elseif MsgContains(message, "hunch") then
-		npcHandler:say({ "There are old legends about a subterranean temple that was once built in this area. Supposedly many {artefacts} are still hidden down there. ...", "I don't have the time to tell you the entire tale, but there is a book downstairs in which you may read the whole story." }, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_5")
 	elseif MsgContains(message, "artefacts") then
-		npcHandler:say("Yes, the story goes that there are ancient artefacts still hidden in the temple ruins, such as helmets in the form of wolven heads, for example. It is said that moonlight crystals are needed to enchant these artefacts.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_6")
 	elseif MsgContains(message, "moon") then
 		npcHandler:say({
 			"Every month around the 13th, the single Tibian moon will by fully visible to us. That's when the curse hits us hardest. ...",
@@ -112,31 +112,31 @@ local function creatureSayCallback(npc, creature, type, message)
 			"During this time, we try to not leave the house, we shut the windows and hope it will pass. The curse will weaken a bit after that but it returns. Every month.",
 		}, npc, creature)
 	elseif MsgContains(message, "nightshade") then
-		npcHandler:say("Three of these blossoms should suffice to heal some afflicted persons. But if you bring more I'd be grateful, of course.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_7")
 	elseif MsgContains(message, "name") then
-		npcHandler:say("My name is Maeryn.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_8")
 	elseif MsgContains(message, "maeryn") then
-		npcHandler:say("Yes, that's me.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_9")
 	elseif MsgContains(message, "time") then
 		npcHandler:say("It's exactly " .. getFormattedWorldTime() .. ".", npc, creature)
 	elseif MsgContains(message, "job") then
-		npcHandler:say("I'm the protector of this little village. A bit of a self-proclaimed function, I admit, but someone has to watch over {Grimvale}. It is a {dangerous} place.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_10")
 	elseif MsgContains(message, "grimvale") then
-		npcHandler:say("The small island you are standing on. For a long time it was a peaceful and placid place. But lately it has become more {dangerous}.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_11")
 	elseif MsgContains(message, "owin") then
-		npcHandler:say("He's an experienced hunter and knows much about the woods, the animals that dwell there, and about the {werewolves}. He's devoted himself to finding out everything there is to know about the {Curse}.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_12")
 	elseif MsgContains(message, "werewolves") then
-		npcHandler:say("Yes, my friend, werewolves. They dwell here on {Grimvale}, threatening our life. The were-sickness transforms peaceful villagers into savage beasts. We're not sure how this curse found its way into our small village. But undoubtedly it did.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_13")
 	elseif MsgContains(message, "gladys") then
-		npcHandler:say("She's an old druid. She's been living here on {Grimvale} since she was a little girl, just like me. She's very interested in were-creature body parts. If you find any, I'm sure she will love to trade with you.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_14")
 	elseif MsgContains(message, "cornell") then
-		npcHandler:say("He's basically a ferryman nowadays, but I remember when he was our village's leading fisherman. He offers a ferry service between Grimvale and Edron. You must have met him - he sailed you here.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_15")
 	elseif MsgContains(message, "werewolf helmet") then
-		npcHandler:say("You brought the wolven helmet, as i see. Do you want to change something?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_16")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("So, which profession would you give preference to when enchanting the helmet: {knight}, {sorcerer}, {druid} or {paladin}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_17")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif table.contains({ "knight", "sorcerer", "druid", "paladin" }, message:lower()) and npcHandler:getTopic(playerId) == 2 then
@@ -145,16 +145,16 @@ local function creatureSayCallback(npc, creature, type, message)
 			return false
 		end
 		if message:lower() == "knight" then
-			npcHandler:say("And what would be your preferred weapon? {Club}, {axe} or {sword}", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_18")
 			knightChoice[playerId] = helmet
 			npcHandler:setTopic(playerId, 3)
 		end
 		if npcHandler:getTopic(playerId) == 2 then
 			--if (Set storage if player can enchant helmet(need Grim Vale quest)) then
 			player:setStorageValue(Storage.Quest.U10_80.GrimvaleQuest.WereHelmetEnchant, vocations[helmet])
-			npcHandler:say("So this is your choice. If you want to change it, you will have to come to me again.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_19")
 			--else
-			--npcHandler:say("Message when player do not have quest.", npc, creature)
+			--NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_20")
 			--end
 			npcHandler:setTopic(playerId, 0)
 		end
@@ -165,9 +165,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		else
 			--if (Set storage if player can enchant helmet(need Grim Vale quest)) then
 			player:setStorageValue(Storage.Quest.U10_80.GrimvaleQuest.WereHelmetEnchant, vocations[knightChoice[playerId]][weapontype])
-			npcHandler:say("So this is your choice. If you want to change it, you will have to come to me again.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_21")
 			--else
-			--npcHandler:say("Message when player do not have quest.", npc, creature)
+			--NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_22")
 			--end
 			knightChoice[playerId] = nil
 			npcHandler:setTopic(playerId, 0)

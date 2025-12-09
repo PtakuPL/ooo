@@ -1,7 +1,7 @@
 {
-  "category": "npc",
+  "category": "player",
   "status": "completed",
   "last_updated": "2025-12-09T12:26:39+01:00",
-  "keys": 11991,
+  "keys": 151,
   "cycle": 3
 }

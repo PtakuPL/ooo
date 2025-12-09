@@ -1,53 +1,58 @@
 {
-  "schema_version": "2.0",
-  "last_updated": "2025-12-09T12:21:54+01:00",
+  "schema_version": "2.1",
+  "last_updated": "2025-12-09T12:26:39+01:00",
   "worker": {
-    "version": "4.0",
+    "version": "4.2",
     "status": "running",
     "mode": "analysis",
-    "cycle": 157,
+    "cycle": 3,
     "files_per_cycle": 10,
-    "pid": 457957
+    "pid": 2911224
   },
   "global_progress": {
     "total_files_processed": 578,
     "total_files_excluded": 5329,
-    "total_keys": 49992,
+    "total_keys": 52190,
     "total_languages": 53,
     "total_conflicts": 50
   },
   "categories": {
-    "npc": {"status": "completed", "keys": 11991},
-    "scripts": {"status": "in_progress", "keys": 713},
-    "items": {"status": "completed", "keys": 36972},
-    "monsters": {"status": "pending", "keys": 0},
-    "server": {"status": "pending", "keys": 0},
-    "spells": {"status": "pending", "keys": 0}
+    "npc": {"status": "completed", "keys": 11991, "target": 13000},
+    "scripts": {"status": "in_progress", "keys": 713, "target": 1000},
+    "items": {"status": "completed", "keys": 36972, "target": 40000},
+    "monsters": {"status": "in_progress", "keys": 100, "target": 500},
+    "server": {"status": "in_progress", "keys": 116, "target": 300},
+    "spells": {"status": "in_progress", "keys": 100, "target": 200},
+    "system": {"status": "completed", "keys": 1832, "target": 2000},
+    "ui": {"status": "in_progress", "keys": 86, "target": 200},
+    "game": {"status": "in_progress", "keys": 36, "target": 100},
+    "player": {"status": "completed", "keys": 151, "target": 200},
+    "misc": {"status": "completed", "keys": 93, "target": 100}
   },
   "recent_files": [
   {
     "file": "game_questlog.html",
-    "time": "12:21:54",
+    "time": "12:26:39",
     "status": "success"
   },
   {
     "file": "#displayUIPickReward.html",
-    "time": "12:21:54",
+    "time": "12:26:39",
     "status": "success"
   },
   {
     "file": "game_rewardwall.html",
-    "time": "12:21:54",
+    "time": "12:26:39",
     "status": "success"
   },
   {
     "file": "status.php",
-    "time": "12:21:54",
+    "time": "12:26:39",
     "status": "success"
   },
   {
     "file": "updater.php",
-    "time": "12:21:54",
+    "time": "12:26:39",
     "status": "success"
   }
 ]

@@ -60,44 +60,44 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission01) == -1 then
-			npcHandler:say("Well, there is little where we need help beyond the normal tasks you can do for the city. However, there is one thing out of the ordinary where some {assistance} would be appreciated.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ezebeth.say_1")
 			npcHandler:setTopic(playerId, 1)
 		else
-			npcHandler:say("You already asked for a mission, go to the next.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ezebeth.say_2")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "assistance") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("It's nothing really important, so no one has yet found the time to look it up. It concerns the town's beggars that have started to behave {strange} lately.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ezebeth.say_3")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "strange") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("They usually know better than to show up in the streets and harass our citizens, but lately they've grown more bold or desperate or whatever. I ask you to investigate what they are up to. If necessary, you may scare them away a bit.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ezebeth.say_4")
 			player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission01, 1) -- Mission 1 start
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "outfit") then
 		if player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission18) == 1 and player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Outfit) < 1 then
-			npcHandler:say("Nice work, take your outfit.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ezebeth.say_5")
 			player:addOutfit(610, 0)
 			player:addOutfit(618, 0)
 			player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Outfit, 1)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("You already have the outfit.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ezebeth.say_6")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "addon") then
 		if player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Outfit) == 1 then
 			if player:getStorageValue(Storage.Quest.U10_50.OramondQuest.VotingPoints) >= 6 and player:getStorageValue(Storage.Quest.U10_50.GloothEngineerOutfits.Addon2) < 1 then
-				npcHandler:say("Receive the second addon.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ezebeth.say_7")
 				player:addOutfit(610, 2)
 				player:addOutfit(618, 2)
 				player:setStorageValue(Storage.Quest.U10_50.GloothEngineerOutfits.Addon2, 1)
 				npcHandler:setTopic(playerId, 0)
 			elseif player:getStorageValue(Storage.Quest.U10_50.OramondQuest.VotingPoints) >= 3 and player:getStorageValue(Storage.Quest.U10_50.GloothEngineerOutfits.Addon1) < 1 then
-				npcHandler:say("Receive the first addon.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ezebeth.say_8")
 				player:addOutfit(610, 1)
 				player:addOutfit(618, 1)
 				player:setStorageValue(Storage.Quest.U10_50.GloothEngineerOutfits.Addon1, 1)

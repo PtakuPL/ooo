@@ -76,7 +76,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fifth.MemoriesShards, 0)
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourth.Moe, 6)
 		else
-			npcHandler:say("You don't need any instructions about the ring right now.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_librarian.say_1")
 		end
 	end
 

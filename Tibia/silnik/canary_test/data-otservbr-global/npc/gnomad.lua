@@ -68,16 +68,16 @@ local function creatureSayCallback(npc, creature, type, message)
 		}, npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "job") then
-		npcHandler:say("I'm the gnomish tactical advisor for this area!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomad.say_1")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "crystals") then
-		npcHandler:say("Ah you are amazed by our crystals, aren't you? Well, you have only seen a tiny fraction of what they are able to do.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomad.say_2")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "mushrooms") then
-		npcHandler:say("In the last century mushrooms have become more and more important for producing raw materials and tools and less important for sustenance.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomad.say_3")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "gnomes") then
-		npcHandler:say("We gnomes are masters of growing and working crystals and we also mastered the raising of a variety of mushrooms for different purposes.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomad.say_4")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

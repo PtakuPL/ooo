@@ -72,31 +72,31 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "ticket") then
 		if Player(creature):getStorageValue(Storage.WagonTicket) >= os.time() then
-			npcHandler:say("Your weekly ticket is still valid. Would be a waste of money to purchase a second one", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lokur.say_1")
 			return true
 		end
 
-		npcHandler:say("Do you want to purchase a weekly ticket for the ore wagons? With it you can travel freely and swiftly through Kazordoon for one week. 250 gold only. Deal?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lokur.say_2")
 		npcHandler:setTopic(playerId, 9)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) > 0 then
 		local player = Player(creature)
 		if npcHandler:getTopic(playerId) == 9 then
 			if not player:removeMoneyBank(250) then
-				npcHandler:say("You don't have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lokur.say_3")
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
 
 			player:setStorageValue(Storage.WagonTicket, os.time() + 7 * 24 * 60 * 60)
-			npcHandler:say("Here is your stamp. It can't be transferred to another person and will last one week from now. You'll get notified upon using an ore wagon when it isn't valid anymore.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lokur.say_4")
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) > 0 then
-		npcHandler:say("No then.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lokur.say_5")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "measurements") then
 		if player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission07) >= 6 and player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.MeasurementsKroox) ~= 1 then
-			npcHandler:say("Come on, I have no clue what they are. Better ask my armorer Kroox for such nonsense.Go and ask him for good ol' Lokurs measurements, he'll know.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lokur.say_6")
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission07, player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission07) + 1)
 		else
 			npcHandler:say("...", npc, creature)

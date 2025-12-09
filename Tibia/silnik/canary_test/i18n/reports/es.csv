@@ -43599,11 +43599,11 @@ npc.omrabas.say_38,"Welcome, welcome! Finally! The last {scroll} piece.... you d
 npc.omrabas.say_39,You don't have my scroll.,,missing
 npc.omrabas.say_40,Chzzzz. wtf??@! leave.,,missing
 npc.the_librarian.say_1,You don't need any instructions about the ring right now.,,missing
-npc.ongulf.say_1,"Well, it's a long story but you really should listen to understand what is going on here. You can also hear a short version of the story, but then don't blame me if you mess something up due to your undwarfish impatience. ...",,missing
-npc.ongulf.say_2,"Excellent. Although we have no idea what awaits us in this foreign land, it is always good to know something more about our surroundings.",,missing
-npc.ongulf.say_3,"That's good news for sure. It will give our operation a new impulse. However, only if there is not some unexpected trouble ahead. Well, we'll talk about that when we discuss your next {mission}.",,missing
-npc.ongulf.say_4,"Shortly after you killed that creature, the others crumbled to dust and stone. I hope this incident does not foreshadow similar problems in our mines. However, for now I have other things to take care of and you have other {missions} to accomplish. ",,missing
-npc.ongulf.say_5,"You did an excellent job! With all this help Farmine will grow and prosper. While we put all available resources into building this base, I have another urgent {mission} for you.",,missing
+npc.ongulf.say_1,"Excellent. Although we have no idea what awaits us in this foreign land, it is always good to know something more about our surroundings.",,missing
+npc.ongulf.say_2,"That's good news for sure. It will give our operation a new impulse. However, only if there is not some unexpected trouble ahead. Well, we'll talk about that when we discuss your next {mission}.",,missing
+npc.ongulf.say_3,"Shortly after you killed that creature, the others crumbled to dust and stone. I hope this incident does not foreshadow similar problems in our mines. However, for now I have other things to take care of and you have other {missions} to accomplish. ",,missing
+npc.ongulf.say_4,"You did an excellent job! With all this help Farmine will grow and prosper. While we put all available resources into building this base, I have another urgent {mission} for you.",,missing
+npc.ongulf.say_5,"Oh my. What a mess you have gotten yourself into. Well, at least you made it out alive. Whatever the value of a minotaur's promise might be, I guess that is the best we can get. ...",,missing
 npc.ongulf.say_6,"Oh my. What a mess you have gotten yourself into. Well, at least you made it out alive. Whatever the value of a minotaur's promise might be, I guess that is the best we can get. ...",,missing
 npc.lazaran.say_1,Me people wanting {peace}. No war with others. No war with {little men}. We few. We weak. Need {help}. We not wanting make {war}. No hurt.,,missing
 npc.lazaran.say_2,Oh! You found holy skull? In bone pile you found?! Thank Pandor you brought! Me can have it back?,,missing
@@ -43666,9 +43666,9 @@ npc.zalamon.say_8,Exzztraordinary. We are mozzt fortunate to have zzezze documen
 npc.zalamon.say_9,I've marked itzz location on your map. Go and find out what happened zzere. In zze pazzt it wazz known azz zze Temple of Equilibrium. ,,missing
 npc.zalamon.say_10,Zzizz izz not hizz head but clearly belonged to zze keeper. I - I am imprezzed. You can go now. Leave me alone for a zzecond. ,,missing
 npc.zalamon.say_11,Finally. At lazzt. Zze zzeptre izz - ourzz. Ourzz of courzze. A weapon we should uzze wizzely for our cauzze. I need a zzecond or two. Do you leave me already? ,,missing
-npc.asima.say_1,So you ask me for a {,,missing
-npc.asima.say_2,What? I have already gave you one {,,missing
-npc.asima.say_3,"Sorry, you aren't a druid either a sorcerer.",,missing
+npc.asima.say_1,"Sorry, you aren't a druid either a sorcerer.",,missing
+npc.asima.say_2,"Here you are young adept, take care yourself.",,missing
+npc.asima.say_3,Ok then.,,missing
 npc.asima.say_4,"Here you are young adept, take care yourself.",,missing
 npc.asima.say_5,Ok then.,,missing
 npc.asima.say_6,"Of course, just browse through my wares. You can also look at ",,missing
@@ -43685,8 +43685,8 @@ npc.gnomad.say_3,In the last century mushrooms have become more and more importa
 npc.gnomad.say_4,We gnomes are masters of growing and working crystals and we also mastered the raising of a variety of mushrooms for different purposes.,,missing
 npc.rock_in_a_hard_place.say_1,"Of course, just browse through my wares. You can also look at ",,missing
 npc.rock_in_a_hard_place.say_2,You would be surprised how many things are washed ashore here. I trade ,,missing
-npc.rock_in_a_hard_place.stdmod_3,Have you noticed that I'm actually the only rock on this island with a proper job? Those lazy pebbleheads! I'm proud to announce: I'm a trader,,missing
-npc.rock_in_a_hard_place.stdmod_4,"No, you got it all wrong! I said I'm stuck between a rock and a hard place!",,missing
+npc.rock_in_a_hard_place.stdmod_3,"I can help you buy trading stuff with you. Good for me, good for you. It's a win-win!",,missing
+npc.rock_in_a_hard_place.stdmod_4,Have you noticed that I'm actually the only rock on this island with a proper job? Those lazy pebbleheads! I'm proud to announce: I'm a trader,,missing
 npc.rock_in_a_hard_place.stdmod_5,"I can help you buy trading stuff with you. Good for me, good for you. It's a win-win!",,missing
 npc.rock_in_a_hard_place.stdmod_6,Have you noticed that I'm actually the only rock on this island with a proper job? Those lazy pebbleheads! I'm proud to announce: I'm a trader,,missing
 npc.guide_tiko.say_1,"Would you like me to mark locations like - for example - the depot, bank and shops on your map?",,missing
@@ -44878,6 +44878,8 @@ npc.daniel_steelsoul.stdmod_19,LONG LIVE THE KING!,,missing
 npc.lardoc_bashsmite.stdmod_17,"Here's the situation: a tide of hazardous bugs, the gnomes named them {diremaws}, threatens our base. Then there is some kind of {growth} which seems connected to them somehow. We need to get rid of both.",,missing
 npc.lardoc_bashsmite.stdmod_18,Bashsmite. That's all you need to know.,,missing
 npc.arkulius.stdmod_4,"How dare you asking me this?!? I'm Arkulius - Master of Elements, the HEADMASTER of this academy!!",,missing
+npc.rock_in_a_hard_place.stdmod_1,Have you noticed that I'm actually the only rock on this island with a proper job? Those lazy pebbleheads! I'm proud to announce: I'm a trader,,missing
+npc.rock_in_a_hard_place.stdmod_2,"No, you got it all wrong! I said I'm stuck between a rock and a hard place!",,missing
 player.status.cleanse,You are no longer {0}. (cleanse charm),Ya no estás {0}. (amuleto de limpieza),translated
 player.condition.poisoned,You are poisoned.,Estás envenenado.,translated
 player.condition.drowning,You are drowning.,Te estás ahogando.,translated

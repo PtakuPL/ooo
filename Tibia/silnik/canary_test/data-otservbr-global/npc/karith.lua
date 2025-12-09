@@ -128,7 +128,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Venore) == 1 or player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) >= 5 then
-			npcHandler:say({ "The swamp spice will turn out very lucrative considering that it helps to make even the most disgusting dish taste good. Do you want a passage to Venore for 185 gold?" }, npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_1")
 			npcHandler:setTopic(playerId, 13)
 		else
 			return false
@@ -205,131 +205,131 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 and player:removeItem(8758, 1) then
-			npcHandler:say("What's that? Bug milk? Hm, perhaps I can find some customers for that! ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_2")
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.AbDendriel, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) + 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 and player:removeItem(8760, 1) then
-			npcHandler:say("Sand wasp honey? Hm, interesting at least!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_3")
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Darashia, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) + 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 and player:removeItem(8759, 1) then
-			npcHandler:say("Some special spice might be of value indeed.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_4")
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Venore, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) + 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 and player:removeItem(8761, 1) then
-			npcHandler:say("I can hardly imagine that someone is interested in embalming fluid, but I'll give it a try.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_5")
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Ankrahmun, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) + 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 and player:removeItem(3044, 1) then
-			npcHandler:say("Of course! Ivory! Its value is quite obvious.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_6")
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.PortHope, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) + 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 6 and player:removeItem(8762, 1) then
-			npcHandler:say("This royal satin is indeed of acceptable quality.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_7")
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Thais, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) + 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 7 and player:removeItem(5552, 1, 13) then
-			npcHandler:say("I doubt that the esteemed Yalahari will indulge into something profane as rum. But who knows, I'll give it a try.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_8")
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.LibertyBay, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) + 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 8 and player:removeItem(8763, 1) then
-			npcHandler:say("I doubt that these flowers will stay fresh and healthy forever. But if they do, they could be indeed valuable.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_9")
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.Carlin, 1)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) + 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 11 then
 			if player:removeMoneyBank(160) then
-				npcHandler:say("Set the sails!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_10")
 				doTeleportThing(creature, Position(32734, 31668, 6))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_11")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 12 then
 			if player:removeMoneyBank(210) then
-				npcHandler:say("Set the sails!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_12")
 				doTeleportThing(creature, Position(33289, 32480, 6))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_13")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 13 then
 			if player:removeMoneyBank(185) then
-				npcHandler:say("Set the sails!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_14")
 				doTeleportThing(creature, Position(32954, 32022, 6))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_15")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 14 then
 			if player:removeMoneyBank(230) then
-				npcHandler:say("Set the sails!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_16")
 				doTeleportThing(creature, Position(33092, 32883, 6))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_17")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 15 then
 			if player:removeMoneyBank(260) then
-				npcHandler:say("Set the sails!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_18")
 				doTeleportThing(creature, Position(32527, 32784, 6))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_19")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 16 then
 			if player:removeMoneyBank(200) then
-				npcHandler:say("Set the sails!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_20")
 				doTeleportThing(creature, Position(32310, 32210, 6))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_21")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 17 then
 			if player:removeMoneyBank(275) then
-				npcHandler:say("Set the sails!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_22")
 				doTeleportThing(creature, Position(32285, 32892, 6))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_23")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 18 then
 			if player:removeMoneyBank(185) then
-				npcHandler:say("Set the sails!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_24")
 				doTeleportThing(creature, Position(32387, 31820, 6))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_25")
 				npcHandler:setTopic(playerId, 0)
 			end
 		else
-			npcHandler:say("Don't waste my time.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_26")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
-		npcHandler:say({ "Then no." }, npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.karith.say_27")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true

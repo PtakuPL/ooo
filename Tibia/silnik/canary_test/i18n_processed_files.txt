@@ -530,3 +530,13 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/index.nginx-debian.html
 /home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/exception.php
 /home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/src/Settings.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/src/Spells.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/src/Monsters.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/libs/rfc6238.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/exp-stages.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/polls.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/bans.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/monsters.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/records.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/highscores.php
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/pages/team.php

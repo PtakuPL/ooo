@@ -213,5 +213,10 @@
   "item.516.name": "carved stone tile",
   "item.562.name": "stone floor",
   "item.565.name": "stone floor",
-  "item.593.name": "stone pile"
+  "item.593.name": "stone pile",
+  "item.594.name": "hole",
+  "item.595.name": "hole",
+  "item.606.name": "loose stone pile",
+  "item.607.name": "hole",
+  "item.608.name": "loose ice pile"
 }

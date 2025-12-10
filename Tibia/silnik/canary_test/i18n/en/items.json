@@ -188,5 +188,10 @@
   "item.417.name": "tiled floor",
   "item.418.name": "stone floor",
   "item.421.name": "stone tile",
-  "item.422.name": "sandstone tile"
+  "item.422.name": "sandstone tile",
+  "item.423.name": "tiled floor",
+  "item.428.name": "stairs",
+  "item.429.name": "stone tile",
+  "item.432.name": "trapdoor",
+  "item.433.name": "ladder"
 }

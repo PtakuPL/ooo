@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:45:13 UTC  
+> **Aktualizacja:** 2025-12-11 00:45:19 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **29314** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#141** | - |
+| 🔄 Cykl | **#142** | - |
 
 ---
 
@@ -67,9 +67,9 @@
 |-------|--------|--------|------|
 | 🇩🇪 Niemiecki | 📊 494139 kluczy | 494139 | [EN] prefix |
 | 🇵🇱 Polski | 📊 452919 kluczy | 452919 | [EN] prefix |
-| 🇪🇸 Hiszpański | 🔄 Sync... | 452919 | [EN] prefix |
+| 🇪🇸 Hiszpański | 📊 452919 kluczy | 452919 | [EN] prefix |
 | 🇫🇷 Francuski | 📊 152368 kluczy | 152368 | [EN] prefix |
-| 🌐 Pozostałe (0/53) | 🔄 | 1946790 | Aktualnie: ES |
+| 🌐 Pozostałe (0/53) | 🔄 | 1976024 | Aktualnie: PT |
 
 ---
 
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   141 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   142 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🌍 TRANSLATION_SYNC (Etap 1)              │
-│ Kategoria: 🌍 ES/html.json                           │
+│ Kategoria: 🌍 PT/html.json                           │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: ES/html.json                                   │
+│ 📊 Ostatnia aktywność: PT/html.json                                   │
 │ [██████████████████████████████████████████████████] │
-│ 452919/29314 kluczy (1545%)                                          │
+│ 423679/29314 kluczy (1445%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 27515 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:45:13                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:45:19                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -103,7 +103,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29314** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#141** | continuous mode |
+| 🔄 Cykli wykonanych | **#142** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,7 +111,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🌍 `ES/html.json` +452919 kluczy @ 00:45:12
+- 🌍 `PT/html.json` +423679 kluczy @ 00:45:19
 - ⚡ `html` +0 kluczy @ 00:44:52
 - ⚡ `php` +0 kluczy @ 00:43:46
 - ⚡ `npclib` +0 kluczy @ 00:39:00
@@ -322,7 +322,7 @@
 | client | 1m | 2x | Progresywny backoff |
 | sendtextmessage | 1m | 2x | Progresywny backoff |
 | keywordhandler | 1m | 2x | Progresywny backoff |
-| twig | 2m | 2x | Progresywny backoff |
+| twig | 1m | 2x | Progresywny backoff |
 | php | 8m | 2x | Progresywny backoff |
 | html | 9m | 2x | Progresywny backoff |
 
@@ -332,7 +332,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #141 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #142 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -343,8 +343,8 @@
 |-------|--------|--------|
 | DE | 494,139 | ⏳ |
 | PL | 452,919 | ⏳ |
-| ES | 452,919 | 🔄 |
-| PT | 394,445 | ⏳ |
+| ES | 452,919 | ⏳ |
+| PT | 423,679 | 🔄 |
 | FR | 152,368 | ⏳ |
 | IT | 0 | ⏳ |
 | NL | 0 | ⏳ |
@@ -352,7 +352,7 @@
 | SK | 0 | ⏳ |
 | HU | 0 | ⏳ |
 
-> **Aktualnie:** ES / html.json  
+> **Aktualnie:** PT / html.json  
 > **Ukończone języki:** 0/53  
 > **Prefix:** `[EN] ` (klucze do przetłumaczenia)
 
@@ -375,7 +375,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:45:13  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:45:19  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

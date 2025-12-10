@@ -2120,11 +2120,12 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
             
             echo "$file" >> "$PROCESSED_FILE"
             [ "$count" -ge "$batch" ] && break
-        done
+        done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
     done
     
     log "${GREEN}✅ Events: $count plików${NC}"
+    echo "$count"
 }
 
 # Przetwarzaj kategorię chatchannels
@@ -2140,9 +2141,8 @@ process_chatchannels_category() {
     for dir in data/chatchannels data-otservbr-global/chatchannels; do
         [ ! -d "$dir" ] && continue
         
-        for file in $(find "$dir" -name "*.lua" 2>/dev/null | head -$batch); do
+        while IFS= read -r file; do
             [ -f "$file" ] || continue
-            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
             
             local base=$(basename "$file" .lua)
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
@@ -2162,11 +2162,12 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
             log "   💬 channel.$safe.name = $name"
             
             [ "$count" -ge "$batch" ] && break
-        done
+        done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
     done
     
     log "${GREEN}✅ Chatchannels: $count kluczy${NC}"
+    echo "$count"
 }
 
 # Przetwarzaj kategorię modules
@@ -2182,9 +2183,8 @@ process_modules_category() {
     for dir in data/modules data-otservbr-global/modules; do
         [ ! -d "$dir" ] && continue
         
-        for file in $(find "$dir" -name "*.lua" 2>/dev/null | head -$batch); do
+        while IFS= read -r file; do
             [ -f "$file" ] || continue
-            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
             
             local base=$(basename "$file" .lua)
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
@@ -2231,9 +2231,8 @@ process_startup_category() {
     for dir in data-otservbr-global/startup data-canary/startup; do
         [ ! -d "$dir" ] && continue
         
-        for file in $(find "$dir" -name "*.lua" 2>/dev/null | head -$batch); do
+        while IFS= read -r file; do
             [ -f "$file" ] || continue
-            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
             
             local base=$(basename "$file" .lua)
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
@@ -2281,9 +2280,8 @@ process_npclib_category() {
     for dir in data/npclib; do
         [ ! -d "$dir" ] && continue
         
-        for file in $(find "$dir" -name "*.lua" 2>/dev/null | head -$batch); do
+        while IFS= read -r file; do
             [ -f "$file" ] || continue
-            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
             
             local base=$(basename "$file" .lua)
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
@@ -2328,9 +2326,8 @@ process_php_category() {
     
     log "${CYAN}🐘 Processing PHP (html_copy)...${NC}"
     
-    for file in $(find html_copy -name "*.php" 2>/dev/null | head -$batch); do
+    while IFS= read -r file; do
         [ -f "$file" ] || continue
-        grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
         
         # Pomiń jeśli już używa __(
         grep -q "__(" "$file" 2>/dev/null && continue
@@ -2379,9 +2376,8 @@ process_html_category() {
     
     log "${CYAN}📄 Processing HTML/Twig...${NC}"
     
-    for file in $(find html_copy -name "*.html" -o -name "*.twig" 2>/dev/null | head -$batch); do
+    while IFS= read -r file; do
         [ -f "$file" ] || continue
-        grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
         
         local base=$(basename "$file" | sed 's/\.\(html\|twig\)$//')
         local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
@@ -2427,9 +2423,8 @@ process_cpp_category() {
     
     log "${CYAN}⚙️ Processing C++ (src)...${NC}"
     
-    for file in $(find src -name "*.cpp" -o -name "*.hpp" 2>/dev/null | head -$batch); do
+    while IFS= read -r file; do
         [ -f "$file" ] || continue
-        grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
         
         local base=$(basename "$file" | sed 's/\.\(cpp\|hpp\)$//')
         local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
@@ -2477,9 +2472,8 @@ process_client_category() {
     for dir in testyy/modules testyy/mods; do
         [ ! -d "$dir" ] && continue
         
-        for file in $(find "$dir" -name "*.lua" -o -name "*.otui" 2>/dev/null | head -$batch); do
+        while IFS= read -r file; do
             [ -f "$file" ] || continue
-            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
             
             local base=$(basename "$file" | sed 's/\.\(lua\|otui\)$//')
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')

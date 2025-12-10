@@ -1150,3 +1150,13 @@ TWIG:html_copy/admin/pages/modules/templates/balance.html.twig
 TWIG:html_copy/admin/pages/modules/templates/lastlogin.html.twig
 TWIG:html_copy/admin/pages/modules/templates/coins.html.twig
 TWIG:html_copy/templates/tibiacom/buttons.change_email.html.twig
+TWIG:html_copy/templates/tibiacom/buttons.logout.html.twig
+TWIG:html_copy/templates/tibiacom/buttons.change_sex.html.twig
+TWIG:html_copy/templates/tibiacom/buttons.register_account.html.twig
+TWIG:html_copy/templates/tibiacom/buttons.change_name.html.twig
+TWIG:html_copy/templates/tibiacom/buttons.view.html.twig
+TWIG:html_copy/templates/tibiacom/account.management.html.twig
+TWIG:html_copy/templates/tibiacom/buttons.account_lost.html.twig
+TWIG:html_copy/templates/tibiacom/buttons.base.html.twig
+TWIG:html_copy/templates/tibiacom/buttons.submit.html.twig
+TWIG:html_copy/templates/tibiacom/buttons.back.html.twig

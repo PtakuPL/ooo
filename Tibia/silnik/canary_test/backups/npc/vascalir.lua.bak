@@ -207,7 +207,7 @@ keywordHandler:addKeyword({ "no" }, StdModule.say, {
 	return player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission02) == -1
 end)
 
-local mission02Reject = KeywordNode:new({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.vascalir.stdmod_1" })
+local mission02Reject = KeywordNode:new({ "no" }, StdModule.say, { npcHandler = npcHandler, text = "OK, dude!" })
 
 -- Mission 2: Accept
 local mission2Accept = mission2:addChildKeyword(

@@ -13143,5 +13143,20 @@
   "item.47500.name": "bandit soul core",
   "item.47501.name": "assassin soul core",
   "item.47502.name": "dark monk soul core",
-  "item.47503.name": "butterfly soul core (blue)"
+  "item.47503.name": "butterfly soul core (blue)",
+  "item.47504.name": "butterfly soul core (red)",
+  "item.47506.name": "quara predator soul core",
+  "item.47507.name": "quara predator scout soul core",
+  "item.47508.name": "quara constrictor soul core",
+  "item.47509.name": "quara constrictor scout soul core",
+  "item.47510.name": "quara mantassin soul core",
+  "item.47511.name": "quara mantassin scout soul core",
+  "item.47512.name": "quara hydromancer soul core",
+  "item.47513.name": "quara hydromancer scout soul core",
+  "item.47514.name": "quara pincher soul core",
+  "item.47515.name": "quara pincher scout soul core",
+  "item.47516.name": "pirate marauder soul core",
+  "item.47517.name": "pirate cutthroat soul core",
+  "item.47518.name": "pirate buccaneer soul core",
+  "item.47519.name": "pirate corsair soul core"
 }

@@ -22337,3 +22337,267 @@ Duplikaty, błędy składni, brakujące tłumaczenia
 Klucze i18n: 52191
 
 ---
+
+## [2025-12-10 04:01:05] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 50 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-10 04:01:06] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 52191
+
+---
+
+## [2025-12-10 04:04:11] ANALIZA KONFLIKTÓW
+
+### Plik: `Cały projekt`
+
+**Akcja:** Znaleziono 50 konfliktów
+
+**Szczegóły:**
+Duplikaty, błędy składni, brakujące tłumaczenia
+
+---
+
+## [2025-12-10 04:04:12] WALIDACJA STRUKTURY
+
+### Plik: `Cały projekt`
+
+**Akcja:** Lua: 11085, C++: 186, PHP: 5587
+
+**Szczegóły:**
+Klucze i18n: 52191
+
+---
+
+## [2025-12-10 04:06:18] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/ninev.lua`
+
+**Akcja:** Zmigrowano 30 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:06:19] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/bruno.lua`
+
+**Akcja:** Zmigrowano 7 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:06:23] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/captain_gulliver.lua`
+
+**Akcja:** Zmigrowano 17 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:06:25] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/archery.lua`
+
+**Akcja:** Zmigrowano 1 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:06:34] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/hyacinth.lua`
+
+**Akcja:** Zmigrowano 46 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:06:35] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/captain_chelop.lua`
+
+**Akcja:** Zmigrowano 7 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:06:36] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/nina.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:06:37] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/cornell.lua`
+
+**Akcja:** Zmigrowano 3 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:06:39] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/captain_cookie.lua`
+
+**Akcja:** Zmigrowano 6 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:06:41] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/petros.lua`
+
+**Akcja:** Zmigrowano 8 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:06:49] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/tonar.lua`
+
+**Akcja:** Zmigrowano 2 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:06:54] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/uzon.lua`
+
+**Akcja:** Zmigrowano 23 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:07:16] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/al_dee.lua`
+
+**Akcja:** Zmigrowano 57 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:07:23] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/isimov.lua`
+
+**Akcja:** Zmigrowano 30 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:07:26] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/kendra_thais.lua`
+
+**Akcja:** Zmigrowano 9 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:07:29] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/ziyad.lua`
+
+**Akcja:** Zmigrowano 11 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:07:32] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/norf.lua`
+
+**Akcja:** Zmigrowano 14 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:07:38] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/kawill.lua`
+
+**Akcja:** Zmigrowano 29 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:07:49] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/dallheim.lua`
+
+**Akcja:** Zmigrowano 55 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:08:00] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/lily.lua`
+
+**Akcja:** Zmigrowano 62 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---

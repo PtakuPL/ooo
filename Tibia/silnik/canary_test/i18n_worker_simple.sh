@@ -1730,26 +1730,37 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
 # Przetwarzaj kategorię items (z XML)
 process_items_category() {
     local batch="${1:-50}"
+    local mini_batch="${MINI_BATCH:-10}"
+    local mini_pause="${MINI_PAUSE:-3}"
     local json_file="$I18N_DIR/en/items.json"
     local count=0
     
     [ ! -f "$json_file" ] && echo '{}' > "$json_file"
     
-    log "${CYAN}🎒 Processing items...${NC}"
+    log "${CYAN}🎒 Processing items (batch=$batch, mini=$mini_batch, pause=${mini_pause}s)...${NC}"
     
     # Items są głównie w XML
     local items_xml="data/items/items.xml"
     [ ! -f "$items_xml" ] && items_xml="data-otservbr-global/items/items.xml"
     
     if [ -f "$items_xml" ]; then
-        # Wyciągnij nazwy itemów z XML
-        python3 << ITEMSPY
+        # Przetwarzaj w mini-batch z pauzami
+        local processed=0
+        local total_added=0
+        
+        while [ $processed -lt $batch ]; do
+            local current_mini=$mini_batch
+            [ $((processed + mini_batch)) -gt $batch ] && current_mini=$((batch - processed))
+            
+            # Wyciągnij mini-batch itemów
+            python3 << ITEMSPY
 import json
 import re
 
 json_file = "$json_file"
 items_xml = "$items_xml"
-batch = $batch
+mini_batch = $current_mini
+skip = $processed
 
 try:
     with open(json_file) as f:
@@ -1766,27 +1777,55 @@ try:
     # Znajdź wszystkie <item id="..." name="...">
     items = re.findall(r'<item\s+id="(\d+)"[^>]*name="([^"]+)"', content)
     
+    # Przefiltruj tylko te które nie istnieją
+    new_items = [(id, name) for id, name in items if f"item.{id}.name" not in data]
+    
     count = 0
-    for item_id, name in items:
-        if count >= batch:
-            break
+    for item_id, name in new_items[skip:skip+mini_batch]:
         key = f"item.{item_id}.name"
-        if key not in data:
-            data[key] = name
-            count += 1
+        data[key] = name
+        count += 1
     
     with open(json_file, 'w') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     
-    print(f"Dodano {count} nowych itemów (razem: {len(data)})")
+    print(f"{count}")
 except Exception as e:
-    print(f"Błąd: {e}")
+    print(f"0")
 ITEMSPY
+            
+            added=$(python3 -c "
+import json
+import re
+with open('$json_file') as f: data = json.load(f)
+with open('$items_xml', 'r', errors='ignore') as f: content = f.read()
+items = re.findall(r'<item\s+id=\"(\d+)\"[^>]*name=\"([^\"]+)\"', content)
+new_items = [(id, name) for id, name in items if f'item.{id}.name' not in data]
+batch = min($current_mini, len(new_items))
+for item_id, name in new_items[:batch]:
+    data[f'item.{item_id}.name'] = name
+with open('$json_file', 'w') as f: json.dump(data, f, indent=2, ensure_ascii=False)
+print(batch)
+" 2>/dev/null || echo "0")
+            
+            total_added=$((total_added + added))
+            processed=$((processed + current_mini))
+            
+            log "   📦 Mini-batch: +$added items (total: $total_added)"
+            
+            # Pauza między mini-batch (ale nie po ostatnim)
+            if [ $processed -lt $batch ] && [ "$added" -gt 0 ]; then
+                sleep $mini_pause
+            fi
+            
+            # Jeśli nie dodano nic, zakończ wcześniej
+            [ "$added" -eq 0 ] && break
+        done
+        
+        log "${GREEN}✅ Items: +$total_added kluczy w $((processed / mini_batch)) mini-batch${NC}"
     else
         log "${YELLOW}⚠️ Brak pliku items.xml${NC}"
     fi
-    
-    log "${GREEN}✅ Items: przetworzono${NC}"
 }
 
 # Przetwarzaj kategorię raids

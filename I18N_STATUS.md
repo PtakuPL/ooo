@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 13:18:28 UTC  
+> **Aktualizacja:** 2025-12-10 13:18:38 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **19** | ↑ |
+| 📁 Plików przetworzonych | **20** | ↑ |
 | ⏭️ Plików wykluczonych | **713** | - |
 | 🔑 Kluczy i18n | **4** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#26** | - |
+| 🔄 Cykl | **#12** | - |
 
 ---
 
@@ -76,9 +76,9 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    26 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    12 │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    🟢 RUNNING                                │
+│ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (8 etapów)                     │
 │ Kategoria: 🧙 NPC Dialogs                            │
 ├─────────────────────────────────────────────────────────────────┤
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 13:18:28                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 13:18:38                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,11 +98,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przetworzonych | **19** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **19** (299 z i18nKey) | z 1026 plików NPC |
+| 📁 Plików przetworzonych | **20** | z i18n_file_status.json |
+| ✅ NPC zmigrowanych | **20** (299 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **4** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
-| 🔄 Cykli wykonanych | **#26** | continuous mode |
+| 🔄 Cykli wykonanych | **#12** | continuous mode |
 | ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -110,11 +110,11 @@
 
 ## 📜 Historia ostatnich operacji
 
-- ✅ `frederik` - ukończono 2025-12-10 13:18
-- ✅ `frans` - ukończono 2025-12-10 13:18
-- ✅ `nipuna` - ukończono 2025-12-10 13:18
-- ✅ `nelly` - ukończono 2025-12-10 13:18
-- ✅ `chuckles` - ukończono 2025-12-10 13:18
+- ✅ `the_lootmonger` - ukończono 2025-12-10 13:18
+- ✅ `tandros` - ukończono 2025-12-10 13:18
+- ✅ `sundara` - ukończono 2025-12-10 13:18
+- ✅ `sigurd` - ukończono 2025-12-10 13:18
+- ✅ `shiriel` - ukończono 2025-12-10 13:18
 
 ---
 
@@ -273,7 +273,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #26 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #12 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -294,23 +294,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 13:18:28  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 13:18:38  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `the_lootmonger` - ukończono 2025-12-10 13:18
+- ✅ `tandros` - ukończono 2025-12-10 13:18
+- ✅ `sundara` - ukończono 2025-12-10 13:18
+- ✅ `sigurd` - ukończono 2025-12-10 13:18
+- ✅ `shiriel` - ukończono 2025-12-10 13:18
+- ✅ `seymour` - ukończono 2025-12-10 13:18
+- ✅ `romir` - ukończono 2025-12-10 13:18
+- ✅ `rock_in_a_hard_place` - ukończono 2025-12-10 13:18
+- ✅ `richard` - ukończono 2025-12-10 13:18
 - ✅ `frederik` - ukończono 2025-12-10 13:18
-- ✅ `frans` - ukończono 2025-12-10 13:18
-- ✅ `nipuna` - ukończono 2025-12-10 13:18
-- ✅ `nelly` - ukończono 2025-12-10 13:18
-- ✅ `chuckles` - ukończono 2025-12-10 13:18
-- ✅ `mordecai` - ukończono 2025-12-10 13:18
-- ✅ `battlemart` - ukończono 2025-12-10 13:18
-- ✅ `hamish` - ukończono 2025-12-10 13:18
-- ✅ `alaistar` - ukończono 2025-12-10 13:18
-- ✅ `gnomegica` - ukończono 2025-12-10 13:18
 
 ---
 

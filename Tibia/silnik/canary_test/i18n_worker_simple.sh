@@ -1617,7 +1617,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
         echo $$ > "$PID_FILE"
         
         BATCH="${2:-5}"  # Ile plików na batch (domyślnie 5)
-        DELAY="${3:-10}" # Przerwa między batchami w sekundach (domyślnie 10)
+        DELAY="${3:-4}" # Przerwa między batchami w sekundach (domyślnie 4)
         
         echo "╔════════════════════════════════════════════════════════════╗"
         echo "║   I18N WORKER v2.0 - TRYB CIĄGŁY (Multi-Mode)             ║"

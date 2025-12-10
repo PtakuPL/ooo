@@ -27,6 +27,23 @@ TRANSLATION_BATCH=300       # Ile kluczy na batch synchronizacji
 TRANSLATION_SUBSTAGE=4      # Ile kluczy na składnię
 LANG_PRIORITY="de pl es pt fr it ru nl sv da no fi cs"  # Priorytet języków (Europa first)
 
+#===============================================================================
+# GET_UNPROCESSED_FILES - Znajdź pliki które jeszcze nie były przetwarzane
+#===============================================================================
+# Użycie: get_unprocessed_files <find_pattern> <batch_size>
+# Przykład: get_unprocessed_files "data-otservbr-global/monster -name *.lua" 50
+# Zwraca listę plików które NIE są w PROCESSED_FILE, max batch_size
+#===============================================================================
+get_unprocessed_files() {
+    local find_args="$1"
+    local batch="${2:-50}"
+    
+    # Filtruj processed i weź batch
+    eval "find $find_args 2>/dev/null" | while read -r f; do
+        grep -qF "$f" "$PROCESSED_FILE" 2>/dev/null || echo "$f"
+    done | head -$batch
+}
+
 # Kolory
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -1773,9 +1790,9 @@ process_spells_category() {
     for dir in data-otservbr-global/scripts/spells data/scripts/spells; do
         [ ! -d "$dir" ] && continue
         
-        for file in $(find "$dir" -name "*.lua" 2>/dev/null | head -$batch); do
+        # NAPRAWIONE: Filtruj processed PRZED head
+        while IFS= read -r file; do
             [ -f "$file" ] || continue
-            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
             
             local base=$(basename "$file" .lua)
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
@@ -1803,11 +1820,12 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
             log "   ✨ spell.$safe.name = $name"
             
             [ "$count" -ge "$batch" ] && break
-        done
+        done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
     done
     
     log "${GREEN}✅ Spells: $count kluczy${NC}"
+    echo "$count"
 }
 
 # Przetwarzaj kategorię items (z XML)

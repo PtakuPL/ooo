@@ -6,7 +6,7 @@
     "world": 1765413370.2989767,
     "items": 1765408504.1267972,
     "libs": 1765408519.8926592,
-    "events": 1765406723.1089385,
+    "events": 1765408527.5168731,
     "chatchannels": 1765406737.3371353,
     "modules": 1765406777.3153095,
     "startup": 1765406784.3081145,
@@ -45,7 +45,7 @@
     },
     "events": {
       "count": 0,
-      "timestamp": 1765406123.1089334
+      "timestamp": 1765406727.5168674
     },
     "chatchannels": {
       "count": 0,
@@ -95,7 +95,7 @@
     "world": 5,
     "items": 3,
     "libs": 3,
-    "events": 2,
+    "events": 3,
     "chatchannels": 2,
     "modules": 2,
     "startup": 2,

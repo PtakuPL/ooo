@@ -738,5 +738,10 @@
   "item.2263.name": "stone pillar",
   "item.2264.name": "broken stone pillar",
   "item.2289.name": "stone pillar",
-  "item.2290.name": "broken stone pillar"
+  "item.2290.name": "broken stone pillar",
+  "item.2299.name": "small totem pole",
+  "item.2300.name": "large totem pole",
+  "item.2301.name": "totem pole",
+  "item.2315.name": "square table",
+  "item.2316.name": "small round table"
 }

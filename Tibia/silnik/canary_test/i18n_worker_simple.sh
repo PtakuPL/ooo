@@ -2440,8 +2440,15 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                         npc)
                             echo "   🧙 Przetwarzam NPC..."
                             COUNT=0
+                            # Wczytaj completed files raz na początku
+                            COMPLETED_LIST=$(python3 -c "import json; d=json.load(open('$STATUS_FILE')); print(' '.join([f for f,v in d.get('files',{}).items() if v.get('overall_status')=='completed']))" 2>/dev/null)
+                            
                             for f in data-otservbr-global/npc/*.lua; do
                                 [ -f "$f" ] || continue
+                                
+                                # Sprawdź czy już completed
+                                echo "$COMPLETED_LIST" | grep -qF "$f" && continue
+                                
                                 NEEDS_WORK=false
                                 
                                 if grep -q "StdModule\.say" "$f" 2>/dev/null; then

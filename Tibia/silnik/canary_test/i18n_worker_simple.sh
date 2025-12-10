@@ -1721,9 +1721,9 @@ process_monsters_category() {
     for dir in data-otservbr-global/monster data-canary/monster; do
         [ ! -d "$dir" ] && continue
         
-        for file in $(find "$dir" -name "*.lua" -o -name "*.xml" 2>/dev/null | head -$batch); do
+        # NAPRAWIONE: Najpierw odfiltruj processed, POTEM weź batch
+        while IFS= read -r file; do
             [ -f "$file" ] || continue
-            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
             
             local base=$(basename "$file" | sed 's/\.\(lua\|xml\)$//')
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
@@ -1752,11 +1752,12 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
             
             echo "$file" >> "$PROCESSED_FILE"
             [ "$count" -ge "$batch" ] && break
-        done
+        done < <(find "$dir" -name "*.lua" -o -name "*.xml" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
     done
     
     log "${GREEN}✅ Monsters: $count kluczy${NC}"
+    echo "$count"
 }
 
 # Przetwarzaj kategorię spells

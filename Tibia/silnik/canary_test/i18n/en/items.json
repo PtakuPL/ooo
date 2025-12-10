@@ -183,5 +183,10 @@
   "item.408.name": "wooden floor",
   "item.409.name": "white marble floor",
   "item.410.name": "black marble floor",
-  "item.415.name": "sandstone floor"
+  "item.415.name": "sandstone floor",
+  "item.416.name": "stone floor",
+  "item.417.name": "tiled floor",
+  "item.418.name": "stone floor",
+  "item.421.name": "stone tile",
+  "item.422.name": "sandstone tile"
 }

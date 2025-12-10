@@ -1222,5 +1222,20 @@
   "npc.eroth.stdmod_6": "[ES] Magic comes almost naturally to the Cenath. We keep the secrets of ages.",
   "npc.eroth.stdmod_7": "[ES] I can teach the spells 'magic shield', 'destroy field', 'creature illusion', 'chameleon', 'convince creature', and 'summon creature'.",
   "npc.eroth.stdmod_8": "[ES] I greet thee, outsider.",
-  "npc.eroth.stdmod_9": "[ES] Asha Thrazi. Go, where you have to go."
+  "npc.eroth.stdmod_9": "[ES] Asha Thrazi. Go, where you have to go.",
+  "npc.eruaran.stdmod_1": "[ES] What addon you are looking? I need for first addon: {dream warden mask} and for second {dream warden claw}.",
+  "npc.eruaran.stdmod_2": "[ES] To achieve the first dream addon you need to give me 1 dream warden mask. Do you have them with you?",
+  "npc.eruaran.stdmod_3": "[ES] Alright then. Come back when you got all neccessary items.",
+  "npc.eruaran.stdmod_4": "[ES] To achieve the second dream addon you need to give me 1 dream warden claw. Do you have them with you?",
+  "npc.eruaran.stdmod_5": "[ES] Alright then. Come back when you got all neccessary items.",
+  "npc.eruaran.stdmod_6": "[ES] Greetings, |PLAYERNAME|.",
+  "npc.eruaran.stdmod_7": "[ES] Goodbye, |PLAYERNAME|.",
+  "npc.fenbala.stdmod_1": "[ES] MIND YOUR MANNERS COMMONER! To address the queen greet with her title!",
+  "npc.fenbala.stdmod_2": "[ES] MIND YOUR MANNERS COMMONER! To address the queen greet with her title!",
+  "npc.fenbala.stdmod_3": "[ES] HAIL TO THE QUEEN!",
+  "npc.fenbala.stdmod_4": "[ES] HAIL TO THE QUEEN!",
+  "npc.ferryman_kamil.stdmod_1": "[ES] You want me to transport you and your spouse to Honeymoon Island {Meluna}?",
+  "npc.ferryman_kamil.stdmod_2": "[ES] You shouldn't miss the experience.",
+  "npc.ferryman_kamil_meluna.stdmod_1": "[ES] You want me to transport you and your spouse back to {Fibula}?",
+  "npc.ferryman_kamil_meluna.stdmod_2": "[ES] You shouldn't miss the experience."
 }

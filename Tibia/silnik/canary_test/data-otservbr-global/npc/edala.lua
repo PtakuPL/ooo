@@ -132,9 +132,9 @@ keywordHandler:addKeyword({ "solitude" }, StdModule.say, { npcHandler = npcHandl
 keywordHandler:addAliasKeyword({ "wisdom" })
 
 -- Greeting message
-keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Greetings, |PLAYERNAME|." })
+keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Greetings, |PLAYERNAME|.", i18nKey = "npc.edala.greet_1" })
 --Farewell message
-keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Asha Thrazi, |PLAYERNAME|." })
+keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Asha Thrazi, |PLAYERNAME|.", i18nKey = "npc.edala.farewell_1" })
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 

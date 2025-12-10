@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 14:05:20 UTC  
+> **Aktualizacja:** 2025-12-10 14:05:39 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **20** | ↑ |
-| ⏭️ Plików wykluczonych | **713** | - |
-| 🔑 Kluczy i18n | **4184** | ↑ |
+| 📁 Plików przetworzonych | **35** | ↑ |
+| ⏭️ Plików wykluczonych | **708** | - |
+| 🔑 Kluczy i18n | **4216** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#71** | - |
+| 🔄 Cykl | **#72** | - |
 
 ---
 
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 4184/15000 (28%) | 15000 |
+| 🧙 NPC Dialogs | 🔄 | 4216/15000 (28%) | 15000 |
 | 📜 Lua Scripts | ⏳ | 0/1000 (0%) | 1000 |
 | 🎒 Items Database | ⏳ | 0/40000 (0%) | 40000 |
 | 👹 Monsters | ⏳ | 0/500 (0%) | 500 |
@@ -76,7 +76,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    71 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    72 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (8 etapów)                     │
@@ -84,11 +84,11 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Postęp migracji NPC:                                        │
 │ [██████████████████████████████████████████████████] │
-│ 299/299 plików (100%)                                          │
+│ 304/304 plików (100%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 14:05:20                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 14:05:39                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,11 +98,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przetworzonych | **20** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **20** (299 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **4184** | we wszystkich kategoriach |
+| 📁 Plików przetworzonych | **35** | z i18n_file_status.json |
+| ✅ NPC zmigrowanych | **35** (304 z i18nKey) | z 1026 plików NPC |
+| 🔑 Kluczy wyciągniętych | **4216** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
-| 🔄 Cykli wykonanych | **#71** | continuous mode |
+| 🔄 Cykli wykonanych | **#72** | continuous mode |
 | ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -114,7 +114,7 @@
 - ✅ `frans` - ukończono 2025-12-10 14:05
 - ✅ `chuckles` - ukończono 2025-12-10 14:05
 - ✅ `battlemart` - ukończono 2025-12-10 14:05
-- ✅ `alaistar` - ukończono 2025-12-10 14:05
+- ✅ `faluae` - ukończono 2025-12-10 14:05
 
 ---
 
@@ -173,12 +173,12 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 4184 |
+| 🔑 Kluczy | 4216 |
 | 🎯 Cel | 15000 |
 | 📊 Postęp | 28% |
 | 📁 Plik | i18n/en/npc.json |
 | 📁 Plików NPC | 1026 |
-| ✅ Zmigrowanych | 299 |
+| ✅ Zmigrowanych | 304 |
 | 🔄 Do migracji | 0 |
 
 </details>
@@ -273,7 +273,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #71 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #72 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -282,7 +282,7 @@
 
 ```
 [⏳] Items (0)      ░░░░░░░░░░░░░░░░░░░░  0%
-[🔄] NPC (4184)            █████░░░░░░░░░░░░░░░  28%
+[🔄] NPC (4216)            █████░░░░░░░░░░░░░░░  28%
 [⏳] Scripts (0)      ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Monsters (0)    ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Spells (0)       ░░░░░░░░░░░░░░░░░░░░  0%
@@ -294,7 +294,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 14:05:20  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 14:05:39  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
@@ -305,12 +305,12 @@
 - ✅ `frans` - ukończono 2025-12-10 14:05
 - ✅ `chuckles` - ukończono 2025-12-10 14:05
 - ✅ `battlemart` - ukończono 2025-12-10 14:05
+- ✅ `faluae` - ukończono 2025-12-10 14:05
 - ✅ `alaistar` - ukończono 2025-12-10 14:05
-- ✅ `the_lootmonger` - ukończono 2025-12-10 14:01
-- ✅ `tandros` - ukończono 2025-12-10 14:01
-- ✅ `sundara` - ukończono 2025-12-10 14:01
-- ✅ `sigurd` - ukończono 2025-12-10 14:01
-- ✅ `shiriel` - ukończono 2025-12-10 14:01
+- ✅ `eruaran` - ukończono 2025-12-10 14:05
+- ✅ `eroth` - ukończono 2025-12-10 14:05
+- ✅ `emperor_kruzak` - ukończono 2025-12-10 14:05
+- ✅ `elvith` - ukończono 2025-12-10 14:05
 
 ---
 

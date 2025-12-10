@@ -53,27 +53,27 @@ local function addBuyableKeyword(keywords, itemid, amount, price, text)
 		keyword = keywordHandler:addKeyword({ "goshak", keywords }, StdModule.say, { npcHandler = npcHandler, text = text })
 	end
 
-	keyword:addChildKeyword({ "mok" }, StdModule.say, { npcHandler = npcHandler, text = "Maruk rambo zambo!", reset = true }, function(player)
+	keyword:addChildKeyword({ "mok" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.blind_orc.stdmod_1", reset = true }, function(player)
 		return player:getMoney() + player:getBankBalance() >= price
 	end, function(player)
 		if player:removeMoneyBank(price) then
 			player:addItem(itemid, amount)
 		end
 	end)
-	keyword:addChildKeyword({ "mok" }, StdModule.say, { npcHandler = npcHandler, text = "Maruk nixda!", reset = true })
-	keyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, text = "Buta maruk klamuk!", reset = true })
+	keyword:addChildKeyword({ "mok" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.blind_orc.stdmod_2", reset = true })
+	keyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.blind_orc.stdmod_3", reset = true })
 end
 
 -- Greeting and Farewell
 keywordHandler:addGreetKeyword({ "charach" }, { npcHandler = npcHandler, text = "Ikem Charach maruk." })
 keywordHandler:addFarewellKeyword({ "futchi" }, { npcHandler = npcHandler, text = "Futchi!" })
 
-keywordHandler:addKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, onlyUnfocus = true, text = "Buta humak!" })
+keywordHandler:addKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, onlyUnfocus = true, i18nKey = "npc.blind_orc.stdmod_4" })
 
-keywordHandler:addKeyword({ "ikem", "goshak" }, StdModule.say, { npcHandler = npcHandler, text = "Ikem pashak porak, bata, dora. Ba goshak maruk?" })
-keywordHandler:addKeyword({ "goshak", "porak" }, StdModule.say, { npcHandler = npcHandler, text = "Ikem pashak charcha, burka, burka bata, hakhak. Ba goshak maruk?" })
-keywordHandler:addKeyword({ "goshak", "bata" }, StdModule.say, { npcHandler = npcHandler, text = "Ikem pashak aka bora, tulak bora, grofa. Ba goshak maruk?" })
-keywordHandler:addKeyword({ "goshak", "dora" }, StdModule.say, { npcHandler = npcHandler, text = "Ikem pashak donga. Ba goshak maruk?" })
+keywordHandler:addKeyword({ "ikem", "goshak" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.blind_orc.stdmod_5" })
+keywordHandler:addKeyword({ "goshak", "porak" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.blind_orc.stdmod_6" })
+keywordHandler:addKeyword({ "goshak", "bata" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.blind_orc.stdmod_7" })
+keywordHandler:addKeyword({ "goshak", "dora" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.blind_orc.stdmod_8" })
 
 -- Bow
 addBuyableKeyword("batuk", 3350, 1, 400, "Ahhhh, maruk, goshak batuk?")

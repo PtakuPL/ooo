@@ -278,6 +278,20 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `faluae` - ukończono 2025-12-10 14:05
+- ✅ `eruaran` - ukończono 2025-12-10 14:05
+- ✅ `eroth` - ukończono 2025-12-10 14:05
+- ✅ `emperor_kruzak` - ukończono 2025-12-10 14:05
+- ✅ `elvith` - ukończono 2025-12-10 14:05
+- ✅ `elf_guard` - ukończono 2025-12-10 14:05
+- ✅ `edala` - ukończono 2025-12-10 14:05
+- ✅ `dixi` - ukończono 2025-12-10 14:05
+- ✅ `dario` - ukończono 2025-12-10 14:05
+- ✅ `briasol` - ukończono 2025-12-10 14:05
+- ✅ `blind_orc` - ukończono 2025-12-10 14:05
+- ✅ `bashira` - ukończono 2025-12-10 14:05
+- ✅ `barbara` - ukończono 2025-12-10 14:05
+- ✅ `a_starving_dog` - ukończono 2025-12-10 14:05
 - ✅ `anerui` - ukończono 2025-12-10 13:57
 - ✅ `the_lootmonger` - ukończono 2025-12-10 13:05
 - ✅ `tandros` - ukończono 2025-12-10 13:05

@@ -56,9 +56,9 @@ npcType.onCloseChannel = function(npc, creature)
 end
 
 -- Greeting message
-keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Greetings, |PLAYERNAME|.", i18nKey = "npc.bashira.greet_1" })
+keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Greetings, |PLAYERNAME|." })
 --Farewell message
-keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Good bye, |PLAYERNAME|.", i18nKey = "npc.bashira.farewell_1" })
+keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Good bye, |PLAYERNAME|." })
 
 npcHandler:setMessage(MESSAGE_GREET, "Welcome, |PLAYERNAME|.")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Good Bye, |PLAYERNAME|.")

@@ -50,8 +50,8 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-keywordHandler:addKeyword({ "hi" }, StdModule.say, { npcHandler = npcHandler, onlyUnfocus = true, text = "MIND YOUR MANNERS COMMONER! To address the queen greet with her title!" })
-keywordHandler:addKeyword({ "hello" }, StdModule.say, { npcHandler = npcHandler, onlyUnfocus = true, text = "MIND YOUR MANNERS COMMONER! To address the queen greet with her title!" })
+keywordHandler:addKeyword({ "hi" }, StdModule.say, { npcHandler = npcHandler, onlyUnfocus = true, i18nKey = "npc.barbara.stdmod_1" })
+keywordHandler:addKeyword({ "hello" }, StdModule.say, { npcHandler = npcHandler, onlyUnfocus = true, i18nKey = "npc.barbara.stdmod_2" })
 
 local function creatureSayCallback(npc, creature, type, message)
 	local player = Player(creature)

@@ -1158,5 +1158,20 @@
   "item.3048.name": "might ring",
   "item.3049.name": "stealth ring",
   "item.3050.name": "power ring",
-  "item.3051.name": "energy ring"
+  "item.3051.name": "energy ring",
+  "item.3052.name": "life ring",
+  "item.3053.name": "time ring",
+  "item.3054.name": "silver amulet",
+  "item.3055.name": "platinum amulet",
+  "item.3056.name": "bronze amulet",
+  "item.3057.name": "amulet of loss",
+  "item.3058.name": "strange symbol",
+  "item.3059.name": "spellbook",
+  "item.3060.name": "orb",
+  "item.3061.name": "life crystal",
+  "item.3062.name": "mind stone",
+  "item.3063.name": "gold ring",
+  "item.3064.name": "orb of nature",
+  "item.3065.name": "terra rod",
+  "item.3066.name": "snakebite rod"
 }

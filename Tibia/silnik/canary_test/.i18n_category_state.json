@@ -2,7 +2,8 @@
   "skip_until": {
     "scripts": 1765412581.8600788,
     "monsters": 1765409802.2766323,
-    "raids": 1765409853.853684
+    "raids": 1765409853.853684,
+    "world": 1765409860.6005616
   },
   "last_processed": {
     "scripts": {
@@ -19,7 +20,7 @@
     },
     "world": {
       "count": 0,
-      "timestamp": 1765406170.2989686
+      "timestamp": 1765409260.6005557
     },
     "items": {
       "count": 0,
@@ -78,7 +79,8 @@
     "html": 0,
     "scripts": 4,
     "monsters": 2,
-    "raids": 2
+    "raids": 2,
+    "world": 2
   },
   "total_processed": {
     "items": 11689,

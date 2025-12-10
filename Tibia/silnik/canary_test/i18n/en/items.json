@@ -4728,5 +4728,20 @@
   "item.11841.name": "unknown item",
   "item.11897.name": "pillar",
   "item.11925.name": "sand",
-  "item.11942.name": "sand"
+  "item.11942.name": "sand",
+  "item.11982.name": "dry piece of wood",
+  "item.12007.name": "stone",
+  "item.12008.name": "the fist of the Colossus",
+  "item.12014.name": "big toe of the Colossus",
+  "item.12017.name": "big toe of the Colossus",
+  "item.12023.name": "huge cauldron",
+  "item.12032.name": "RESERVED SPRITE",
+  "item.12033.name": "closed door",
+  "item.12034.name": "open door",
+  "item.12035.name": "closed door",
+  "item.12036.name": "open door",
+  "item.12039.name": "panther head",
+  "item.12040.name": "panther paw",
+  "item.12047.name": "pharaoh dummy",
+  "item.12048.name": "hydromancer dummy"
 }

@@ -190,7 +190,7 @@ npcConfig.voices = {
 
 ## 📊 Obecny stan systemu
 
-> **Ostatnia aktualizacja:** 2025-12-10 12:30 UTC
+> **Ostatnia aktualizacja:** 2025-12-10 13:00 UTC
 
 ### ✅ Co mamy (ZROBIONE):
 - ✅ `i18n_worker_simple.sh` - Worker v2.1 Multi-Mode (8 etapów)
@@ -199,7 +199,7 @@ npcConfig.voices = {
 - ✅ Pliki JSON z kluczami (npc.json, items.json, scripts.json, etc.)
 - ✅ Cron job dla Guardian
 - ✅ **StdModule.say** - 297/297 plików zmigrowanych ✅
-- ✅ **npcHandler:say("text")** - NOWA funkcjonalność v2.1 ✅
+- ✅ **npcHandler:say("text")** - ~450 plików z NPC_LIB.i18n.npcSay ✅
 - ✅ **~4200 kluczy** wyciągniętych do en/npc.json
 - ✅ Placeholder'y dla 8 języków (pl, de, es, fr, it, pt, ru, uk)
 - ✅ Dokumentacja MD dla każdego NPC
@@ -211,6 +211,14 @@ npcConfig.voices = {
 - ✅ Rozróżnianie konkatenacji Lua (` .. `) od wielokropków (`...`)
 - ✅ Pomijanie tablic `npcHandler:say({...})` (zachowane bez zmian)
 - ✅ Ekstrakcja kluczy z obu wzorców do npc.json
+
+### 🔴 Kolejne do zrobienia (PRIORYTET):
+| Wzorzec | Plików | Wymaga C++ | Złożoność | Status |
+|---------|--------|------------|-----------|--------|
+| `voices = {{ text = }}` | ~131 | **TAK** | 🔶 ŚREDNIA | 📋 ANALIZA GOTOWA |
+| `keywordHandler:add*Keyword` | ~21 | NIE | 🟢 NISKA | ❌ DO ANALIZY |
+| `npcHandler:say({array})` | ~50 | NIE | 🟢 NISKA | ❌ DO ZROBIENIA |
+| `player:sendTextMessage()` | ~312 | NIE | 🟡 ŚREDNIA | ❌ DO ZROBIENIA |
 
 ---
 
@@ -232,10 +240,10 @@ npcConfig.voices = {
 | Typ | Plików | Z i18nKey | Do migracji | Priorytet | Status |
 |-----|--------|-----------|-------------|-----------|--------|
 | `StdModule.say(text=)` | 297 | 297 ✅ | 0 | - | ✅ DONE |
-| `npcHandler:say("text")` | 133 | ~90 | **~43** | 🔴 WYSOKI | 🔄 v2.1 |
+| `npcHandler:say("text")` | ~450 | ~450 ✅ | **~2** | - | ✅ v2.1 DONE |
 | `npcHandler:say({array})` | ~50 | 0 | **~50** | 🟡 ŚREDNI | ❌ TODO |
 | `player:sendTextMessage()` | 312 | 0 | **312** | 🔴 WYSOKI | ❌ TODO |
-| `voices = {{ text = }}` | 131 | 0 | **131** | 🟡 ŚREDNI | ❌ TODO |
+| `voices = {{ text = }}` | 131 | 0 | **131** | 🟡 ŚREDNI | ❌ TODO (C++) |
 | `keywordHandler:add*Keyword` | 21 | 0 | **21** | 🟡 ŚREDNI | ❌ TODO |
 
 ### 🌐 2. HTML_COPY (Strona WWW - AAC)

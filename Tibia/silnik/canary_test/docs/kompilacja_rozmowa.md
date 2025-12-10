@@ -42,42 +42,87 @@
 
 ---
 
-## 🎯 AKTUALNY STATUS (2025-12-09 02:55 UTC)
+## 🎯 AKTUALNY STATUS (2025-12-10 08:30 UTC) - AKTUALIZACJA AGENT 2
 
 ### 📋 PODZIAŁ ZADAŃ:
 | Platforma | Agent | Status |
 |-----------|-------|--------|
 | **Web/Emscripten** | Agent 1 | 🔧 W trakcie naprawy (PhysFS) |
-| **Android** | Agent 2 | ✅ Fix pushed, czeka na run |
-| **Linux/Windows** | Agent 2 | ✅ **NAPRAWIONE** - sonar config fix |
+| **Android** | Agent 2 | ⏳ Fix #3 pushed, czeka na run |
+| **Linux** | Agent 2 | ⏳ Fix pushed, czeka na run |
+| **Windows** | Agent 2 | ⏳ Fix pushed, czeka na run |
 
-### 📊 STATUS WORKFLOW:
-| Workflow | Status | Błąd | Uwagi |
-|----------|--------|------|-------|
-| **SonarCloud Linux** | 🟡 `queued` | - | Fix: sonar-project.properties |
-| **SonarCloud Windows** | 🟡 `queued` | - | Fix: sonar-project.properties |
-| **SonarCloud Web** | 🔴 `failure` | PhysFS not found | Agent 1 naprawia |
-| **SonarCloud Android** | 🟡 `queued` | - | Fix: `-DOTC_ENABLE_PHYSFS=OFF` |
-
-### 🎉 POSTĘP:
-1. **Android Fix #1** (`-DTOGGLE_FRAMEWORK_SOUND=OFF`) ZADZIAŁAŁ - błąd zmienił się z OpenAL na PhysFS
-2. **Android Fix #2** (`-DOTC_ENABLE_PHYSFS=OFF`) pushed - czeka na run
-3. **Linux/Windows Fix** - naprawiono `sonar-project.properties`:
-   - Problem: moduł `server` szukał folderu `scripts` który nie istnieje
-   - Rozwiązanie: usunięto moduł server, zostawiono tylko client (OTClient)
-   - Commit: `0ba544f9`
+### 📊 STATUS WORKFLOW (nowe runy w trakcie):
+| Workflow | Status | Ostatni błąd | Naprawa |
+|----------|--------|--------------|---------|
+| **SonarCloud Linux** | 🟡 `in_progress` | compile_commands.json not found | `working-directory` fix |
+| **SonarCloud Windows** | 🟡 `in_progress` | compile_commands.json not found | `working-directory` fix |
+| **SonarCloud Web** | 🟡 `in_progress` | PhysFS not found | Agent 1 naprawia |
+| **SonarCloud Android** | 🟡 `in_progress` | GMP not found | `OTC_ENABLE_GMP=OFF` fix |
 
 ---
 
-## ✅ LINUX/WINDOWS - NAPRAWIONE (2025-12-09 02:55 UTC)
+## 📝 PEŁNA HISTORIA NAPRAW AGENT 2 (2025-12-09/10):
 
-### Problem:
-```
-[sonar-scanner][ERROR] Invalid value of sonar.sources for PtakuPL_ooo:server
-[sonar-scanner][ERROR] The folder 'scripts' does not exist for 'PtakuPL_ooo:server'
+### 🔧 NAPRAWA 1: sonar-project.properties (commit `0ba544f9`)
+**Problem:** `The folder 'scripts' does not exist for 'PtakuPL_ooo:server'`
+**Przyczyna:** Multi-module config szukał folderu `scripts` w canary_test, który nie istnieje
+**Rozwiązanie:** Usunięto moduł `server`, zostawiono tylko `client` (OTClient)
+
+### 🔧 NAPRAWA 2: CMake opcje warunkowe (commity `fbcef101`, `68583784`)
+**Problem:** CMake failował na brakujących zależnościach (PhysFS, LZMA, nlohmann_json, pugixml, fmt, GMP)
+**Przyczyna:** `src/CMakeLists.txt` NIE miał warunków `if(OTC_ENABLE_*)` dla wielu zależności
+**Rozwiązanie:** Dodano opcje i warunki dla:
+- `OTC_ENABLE_PHYSFS` ✅
+- `OTC_ENABLE_LZMA` ✅  
+- `OTC_ENABLE_NLOHMANN_JSON` ✅
+- `OTC_ENABLE_PUGIXML` ✅
+- `OTC_ENABLE_FMT` ✅
+- `OTC_ENABLE_GMP` ✅ (ostatnia naprawa)
+
+**Pliki zmodyfikowane:**
+- `Tibia/silnik/canary_test/testyy/CMakeLists.txt` - dodano opcje
+- `Tibia/silnik/canary_test/testyy/src/CMakeLists.txt` - dodano warunki `if(...)`
+
+### 🔧 NAPRAWA 3: working-directory dla CMake (commit `a08d37f3`)
+**Problem:** `NoSuchFileException: /home/runner/work/ooo/ooo/build/compile_commands.json`
+**Przyczyna:** CMake budował w root repo zamiast w `testyy/`
+**Rozwiązanie:** Dodano `working-directory: Tibia/silnik/canary_test/testyy` do kroków CMake w:
+- `analysis-sonarcloud-linux.yml`
+- `analysis-sonarcloud-windows.yml`
+
+---
+
+## ⚠️ WAŻNE INFORMACJE DLA AGENT 1:
+
+### Web/Emscripten - twój obszar:
+1. **Problem:** `Could not find PhysFS; install physfs or libphysfs-dev`
+2. **Workflow:** `.github/workflows/analysis-sonarcloud-web.yml` MA już `-DOTC_ENABLE_PHYSFS=OFF`
+3. **ALE:** `src/CMakeLists.txt` teraz obsługuje tę flagę (dzięki moim naprawom)
+4. **TODO:** Sprawdź czy nowy run przejdzie - jeśli nie, to mogą być inne brakujące zależności
+
+### Flagi CMake do wyłączania zależności (wszystkie działają):
+```cmake
+-DOTC_ENABLE_PHYSFS=OFF       # PhysFS
+-DOTC_ENABLE_LZMA=OFF         # LZMA compression
+-DOTC_ENABLE_NLOHMANN_JSON=OFF # nlohmann/json
+-DOTC_ENABLE_PUGIXML=OFF      # pugixml XML parser
+-DOTC_ENABLE_FMT=OFF          # fmt library
+-DOTC_ENABLE_GMP=OFF          # GMP (RSA when no OpenSSL)
+-DOTC_ENABLE_TTF=OFF          # Freetype/TTF
+-DOTC_ENABLE_HARFBUZZ=OFF     # HarfBuzz shaping
+-DOTC_ENABLE_FRIBIDI=OFF      # FriBidi bidi
+-DOTC_ENABLE_PROTOBUF=OFF     # Protobuf
+-DTOGGLE_FRAMEWORK_SOUND=OFF  # OpenAL/Vorbis/Ogg (uwaga: inna nazwa!)
 ```
 
-### Przyczyna:
+### Jak sprawdzić logi workflow:
+```bash
+gh run list --branch="PtakuPL/issue30" --limit=8
+gh run view <ID> --log-failed
+```
+
+---
 `sonar-project.properties` definiował dwa moduły: `client` i `server`.
 Moduł `server` miał:
 - `projectBaseDir=..` (folder wyżej - canary_test)

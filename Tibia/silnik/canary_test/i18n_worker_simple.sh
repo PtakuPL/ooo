@@ -147,7 +147,23 @@ def count_keys(filename):
             pass
     return 0
 
-# Wszystkie kategorie (stare + nowe)
+# ============ DYNAMICZNE SKANOWANIE WSZYSTKICH KATEGORII JSON ============
+all_json_categories = {}
+if os.path.isdir(f"{I18N_DIR}/en"):
+    for jf in sorted(os.listdir(f"{I18N_DIR}/en")):
+        if jf.endswith(".json"):
+            cat_name = jf.replace(".json", "")
+            all_json_categories[cat_name] = count_keys(jf)
+
+# ============ INTEGRACJA ZE STANEM WORKERA ============
+worker_state = {"skip_until": {}, "last_processed": {}, "consecutive_zeros": {}, "total_processed": {}}
+try:
+    with open(".i18n_category_state.json") as f:
+        worker_state = json.load(f)
+except:
+    pass
+
+# Wszystkie kategorie (stare + nowe) - dla kompatybilności
 game_keys = count_keys("game.json")
 items_keys = count_keys("items.json")
 misc_keys = count_keys("misc.json")

@@ -5103,5 +5103,20 @@
   "item.13135.name": "closed door",
   "item.13136.name": "closed door",
   "item.13137.name": "open door",
-  "item.13142.name": "closed door"
+  "item.13142.name": "closed door",
+  "item.13143.name": "closed door",
+  "item.13144.name": "open door",
+  "item.13155.name": "large fossil volute",
+  "item.13156.name": "small fossil volute",
+  "item.13268.name": "RESERVED SPRITE",
+  "item.13272.name": "RESERVED SPRITE",
+  "item.13301.name": "broken insectoid eggs",
+  "item.13302.name": "insectoid egg",
+  "item.13341.name": "ramp",
+  "item.13342.name": "ramp",
+  "item.13397.name": "RESERVED SPRITE",
+  "item.13400.name": "hivecomb floor",
+  "item.13429.name": "bag with stolen gold",
+  "item.13558.name": "ramp",
+  "item.13559.name": "ramp"
 }

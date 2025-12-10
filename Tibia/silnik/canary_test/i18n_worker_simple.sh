@@ -43,6 +43,7 @@ update_github_status() {
     python3 << 'STATUSPY'
 import json
 import os
+import subprocess
 from datetime import datetime
 
 WORK_DIR = os.getcwd()
@@ -50,6 +51,13 @@ STATUS_FILE = "i18n_file_status.json"
 I18N_DIR = "i18n"
 PROCESSED_FILE = "i18n_processed_files.txt"
 EXCLUDED_FILE = "i18n_excluded_files.txt"
+
+# Znajdź git root (tam zapisujemy I18N_STATUS.md)
+try:
+    GIT_ROOT = subprocess.check_output(['git', 'rev-parse', '--show-toplevel'], 
+                                        stderr=subprocess.DEVNULL).decode().strip()
+except:
+    GIT_ROOT = WORK_DIR  # Fallback do bieżącego katalogu
 
 # Wczytaj status workera
 try:

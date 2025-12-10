@@ -923,3 +923,8 @@ data-otservbr-global/raids/svargrond/ghazbaran.xml
 data-otservbr-global/raids/svargrond/ice_golems.xml
 data-otservbr-global/raids/svargrond/barbarian.xml
 data-otservbr-global/raids/svargrond/hirintror.xml
+KWH:data-otservbr-global/npc/jack_springer.lua
+KWH:data-otservbr-global/npc/ghost_of_a_priest.lua
+KWH:data-otservbr-global/npc/klom_stonecutter.lua
+KWH:data-otservbr-global/npc/cipfried.lua
+KWH:data-otservbr-global/npc/plunderpurse.lua

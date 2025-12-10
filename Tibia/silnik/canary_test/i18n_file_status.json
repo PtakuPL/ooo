@@ -108,7 +108,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:53:29.614203"
+      "completed_at": "2025-12-10T14:53:50.844848"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -218,7 +218,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:53:30.404453"
+      "completed_at": "2025-12-10T14:53:51.714848"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {
@@ -328,7 +328,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:53:32.519953"
+      "completed_at": "2025-12-10T14:53:53.607573"
     },
     "data-otservbr-global/npc/hamish.lua": {
       "stages": {
@@ -442,7 +442,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:53:33.919569"
+      "completed_at": "2025-12-10T14:53:55.006617"
     },
     "data-otservbr-global/npc/mordecai.lua": {
       "stages": {
@@ -552,7 +552,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:53:36.091852"
+      "completed_at": "2025-12-10T14:53:57.139205"
     },
     "data-otservbr-global/npc/nelly.lua": {
       "stages": {
@@ -662,7 +662,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:53:37.084158"
+      "completed_at": "2025-12-10T14:53:58.177310"
     },
     "data-otservbr-global/npc/alaistar.lua": {
       "stages": {
@@ -772,7 +772,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:53:24.739827"
+      "completed_at": "2025-12-10T14:53:46.077022"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -882,7 +882,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:53:26.286662"
+      "completed_at": "2025-12-10T14:53:47.554802"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -992,7 +992,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:53:27.833517"
+      "completed_at": "2025-12-10T14:53:49.092084"
     },
     "data-otservbr-global/npc/ghorza.lua": {
       "stages": {
@@ -1102,7 +1102,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:53:31.387621"
+      "completed_at": "2025-12-10T14:53:52.661385"
     }
   },
   "global_stats": {

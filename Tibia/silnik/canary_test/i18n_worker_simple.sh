@@ -3142,6 +3142,36 @@ CATEGORIES = {
         "json": "client.json",
         "file_ext": [".lua", ".otui"],
         "priority": 17
+    },
+    
+    # === SENDTEXTMESSAGE - player:sendTextMessage patterns (priorytet 18) ===
+    "sendtextmessage": {
+        "dirs": ["data-otservbr-global/scripts", "data/scripts", "data-otservbr-global/npc", "data-canary/npc"],
+        "patterns": [r'sendTextMessage\s*\([^,]+,\s*"[^"]+"'],
+        "exclude_if": ["sendLocalizedTextMessage"],
+        "json": "messages.json",
+        "file_ext": [".lua"],
+        "priority": 18
+    },
+    
+    # === KEYWORDHANDLER - add*Keyword bez i18nKey (priorytet 19) ===
+    "keywordhandler": {
+        "dirs": ["data-otservbr-global/npc", "data-canary/npc"],
+        "patterns": [r'keywordHandler:add\w+Keyword\s*\([^)]+\)'],
+        "exclude_if": ["i18nKey"],
+        "json": "npc.json",
+        "file_ext": [".lua"],
+        "priority": 19
+    },
+    
+    # === TWIG - Twig templates bez trans() (priorytet 20) ===
+    "twig": {
+        "dirs": ["html_copy"],
+        "patterns": [r'>[A-Z][^<]{10,}<', r'placeholder="[^"]+', r'title="[^"]+"'],
+        "exclude_if": ["trans(", "{{ "],
+        "json": "html.json",
+        "file_ext": [".twig", ".html.twig"],
+        "priority": 20
     }
 }
 

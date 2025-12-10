@@ -1701,11 +1701,14 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                     ;;
                 TRANSLATION)
                     echo "🌍 TRYB 2: TŁUMACZENIA (język: $MODE_ARG, $MODE_COUNT kluczy)"
-                    mode_translation "$MODE_ARG"
+                    echo "⏭️  Tryb TRANSLATION wymaga interaktywnego terminala."
+                    echo "   Uruchom ręcznie: ./i18n_worker_simple.sh --translate $MODE_ARG"
+                    echo "   Przechodzę do IDLE..."
                     ;;
                 IDLE)
-                    echo "✅ TRYB: IDLE - Wszystko zrobione!"
-                    echo "Czekam na nowe zadania..."
+                    echo "✅ TRYB: IDLE - Migracja zakończona!"
+                    echo "   Wszystkie NPC zmigrowane. Tłumaczenia wymagają ręcznego uruchomienia."
+                    echo "   Użyj: ./i18n_worker_simple.sh --translate pl"
                     ;;
             esac
             

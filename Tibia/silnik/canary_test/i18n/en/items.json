@@ -593,5 +593,10 @@
   "item.1841.name": "blue shrine stone",
   "item.1842.name": "red shrine stone",
   "item.1851.name": "stone",
-  "item.1852.name": "stones"
+  "item.1852.name": "stones",
+  "item.1853.name": "stone",
+  "item.1856.name": "stone",
+  "item.1940.name": "small basin",
+  "item.1947.name": "stairs",
+  "item.1948.name": "ladder"
 }

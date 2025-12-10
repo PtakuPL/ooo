@@ -56,6 +56,29 @@ NC='\033[0m'
 log() { echo -e "$1" >&2; }
 
 #===============================================================================
+# VALIDATION HELPERS
+#===============================================================================
+restore_backup_file() {
+    local file="$1"
+    local type="other"
+    [[ "$file" == *"/npc/"* ]] && type="npc"
+    [[ "$file" == *"/scripts/"* ]] && type="scripts"
+    local backup="$BACKUP_DIR/$type/$(basename "$file").bak"
+    [ -f "$backup" ] && cp "$backup" "$file"
+}
+
+validate_lua_file() {
+    local file="$1"
+    if command -v lua >/dev/null 2>&1; then
+        lua -p "$file" >/dev/null 2>&1
+    else
+        # Brak lua w PATH – nie blokuj, ale sygnalizuj przez exit 0
+        return 0
+    fi
+}
+
+
+#===============================================================================
 # UPDATE_CATEGORY_STATE - Zapamiętaj wynik przetwarzania kategorii
 #===============================================================================
 update_category_state() {

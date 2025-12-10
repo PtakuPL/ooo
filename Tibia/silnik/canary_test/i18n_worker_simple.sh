@@ -437,15 +437,15 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 │ 🔴 LIVE: Worker v2.0                          Cykl #{cycle_count:>6} │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    {"🟢 RUNNING" if in_progress > 0 else "✅ IDLE":40} │
-│ Tryb:      {"MIGRATION (8 etapów)":40} │
-│ Kategoria: {"🧙 NPC Dialogs":40} │
+│ Tryb:      {"MIGRATION (multi-category)":40} │
+│ Kategoria: {"🎒 " + current_category.upper() if current_category else "IDLE":40} │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Postęp migracji NPC:                                        │
-│ [{progress_bar(migrated_npc, migrated_npc + needs_migration_npc, 50)}] │
-│ {migrated_npc}/{migrated_npc + needs_migration_npc} plików ({round(migrated_npc/(migrated_npc + needs_migration_npc)*100) if (migrated_npc + needs_migration_npc) > 0 else 0}%)                                          │
+│ 📊 Ostatnia aktywność: {current_category}                      │
+│ [{progress_bar(all_json_categories.get(current_category, 0), TARGETS.get(current_category, 1000), 50)}] │
+│ {all_json_categories.get(current_category, 0)}/{TARGETS.get(current_category, 1000)} kluczy ({round(all_json_categories.get(current_category, 0)/TARGETS.get(current_category, 1000)*100) if TARGETS.get(current_category, 1000) else 0}%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Pozostało: {needs_migration_npc} plików NPC                              │
-│ 🕐 ETA: ~{needs_migration_npc * 4 // 60}min {needs_migration_npc * 4 % 60}s (przy 4s/plik)                             │
+│ ⏳ Total processed: {total_files_processed} operacji               │
+│ 🕐 Aktywne kategorie: {len([c for c,k in all_json_categories.items() if k > 0])}                               │
 │ 📅 Ostatnia aktualizacja: {timestamp}                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -456,19 +456,19 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przetworzonych | **{processed_count}** | z i18n_file_status.json |
+| 📁 Operacji wykonanych | **{total_files_processed}** | we wszystkich kategoriach |
 | ✅ NPC zmigrowanych | **{completed}** ({migrated_npc} z i18nKey) | z {total_npc} plików NPC |
 | 🔑 Kluczy wyciągniętych | **{total_keys}** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **{len(langs_with_data)}**/{langs_count} | {", ".join(sorted(langs_with_data)[:5])}{"..." if len(langs_with_data) > 5 else ""} |
 | 🔄 Cykli wykonanych | **#{cycle_count}** | continuous mode |
-| ⚠️ Plików do migracji | **{needs_migration_npc}** | NPC z StdModule.say |
+| 🎯 Aktywne kategorie | **{len([c for c,k in all_json_categories.items() if k > 0])}** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
-{chr(10).join(recent_completed[:5]) if recent_completed else "- Brak operacji"}
+{chr(10).join([f"- {'🎒' if op['category']=='items' else '🧙' if op['category']=='npc' else '📜' if op['category']=='scripts' else '👹' if op['category']=='monsters' else '⚡'} `{op['category']}` +{op['count']} kluczy @ {op['time_str']}" for op in recent_operations[:8]]) if recent_operations else "- Brak operacji"}
 
 ---
 

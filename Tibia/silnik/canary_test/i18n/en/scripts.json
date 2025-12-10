@@ -375,5 +375,13 @@
   "scripts.actions_treasure_chest.msg_2": "You found ",
   "scripts.actions_portal_minis_feaster.msg_1": "All the players need to be level ",
   "scripts.actions_portal_minis_feaster.msg_2": "You have to wait ",
-  "scripts.quest_system1.msg_1": "You have found "
+  "scripts.quest_system1.msg_1": "You have found ",
+  "scripts.quest_system2.msg_1": "You have found ",
+  "scripts.manage_storage.msg_1": "The storage with id: ",
+  "scripts.manage_storage.msg_2": "The storage with id: ",
+  "scripts.add_bosstiary_kills.msg_1": "You received kills: ",
+  "scripts.manage_kv.msg_1": "Boss cooldown for ",
+  "scripts.manage_tutor.msg_1": "You have been promoted to a tutor by ",
+  "scripts.manage_tutor.msg_2": "You have been demoted to a normal player by ",
+  "scripts.tutor_position.msg_1": "Your current position is: \\z"
 }

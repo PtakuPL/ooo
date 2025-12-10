@@ -1013,5 +1013,10 @@
   "item.2903.name": "golden mug",
   "item.2904.name": "large amphora",
   "item.2905.name": "plate",
-  "item.2906.name": "watch"
+  "item.2906.name": "watch",
+  "item.2907.name": "wall lamp",
+  "item.2908.name": "lit wall lamp",
+  "item.2909.name": "wall lamp",
+  "item.2910.name": "lit wall lamp",
+  "item.2911.name": "candelabrum"
 }

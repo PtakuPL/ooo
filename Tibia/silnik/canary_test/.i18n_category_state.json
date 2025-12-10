@@ -10,6 +10,10 @@
     "scripts": {
       "count": 0,
       "timestamp": 1765395743.4246907
+    },
+    "monsters": {
+      "count": 10,
+      "timestamp": 1765395751.0510068
     }
   }
 }

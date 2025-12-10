@@ -4106,5 +4106,15 @@
   "monster.dragons.dragon.voice_1": "FCHHHHH",
   "monster.dragons.dragon.voice_2": "GROOAAARRR",
   "monster.dragons.dragon_lord_hatchling.voice_1": "Fchu?",
-  "monster.dragons.dragon_lord_hatchling.voice_2": "Rooawwrr"
+  "monster.dragons.dragon_lord_hatchling.voice_2": "Rooawwrr",
+  "monster.green_frog.name": "melee",
+  "monster.green_frog.desc": "a green frog",
+  "monster.salamander.name": "gold coin",
+  "monster.salamander.desc": "a salamander",
+  "monster.infernal_frog.name": "gold coin",
+  "monster.infernal_frog.desc": "an infernal frog",
+  "monster.orchid_frog.name": "gold coin",
+  "monster.orchid_frog.desc": "an orchid frog",
+  "monster.azure_frog.name": "gold coin",
+  "monster.azure_frog.desc": "an azure frog"
 }

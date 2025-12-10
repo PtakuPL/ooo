@@ -850,3 +850,8 @@ TWIG:html_copy/system/templates/news.archive.html.twig
 TWIG:html_copy/system/templates/buttons.change_email.html.twig
 TWIG:html_copy/system/templates/buttons.logout.html.twig
 TWIG:html_copy/system/templates/account.characters.change-sex.html.twig
+data-canary/monster/amphibics/green_frog.lua
+data-canary/monster/amphibics/salamander.lua
+data-canary/monster/amphibics/infernal_frog.lua
+data-canary/monster/amphibics/orchid_frog.lua
+data-canary/monster/amphibics/azure_frog.lua

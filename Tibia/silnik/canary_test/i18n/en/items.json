@@ -6648,5 +6648,20 @@
   "item.19770.name": "pester maws",
   "item.19771.name": "crimson fin",
   "item.19772.name": "ichor thistle",
-  "item.19790.name": "ruined window"
+  "item.19790.name": "ruined window",
+  "item.19803.name": "large vortex",
+  "item.19804.name": "strange vortex",
+  "item.19805.name": "tiny vortex",
+  "item.19824.name": "unknown item",
+  "item.19918.name": "RESERVED SPRITE",
+  "item.20028.name": "RESERVED SPRITE",
+  "item.20029.name": "broken dream",
+  "item.20030.name": "dream sand",
+  "item.20047.name": "ancient dream",
+  "item.20048.name": "delicate pan",
+  "item.20049.name": "dream nebuliser",
+  "item.20050.name": "strange good night songs",
+  "item.20051.name": "traces of an ancient dream",
+  "item.20052.name": "bad dream",
+  "item.20053.name": "bucket filled with gravel"
 }

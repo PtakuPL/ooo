@@ -1233,5 +1233,20 @@
   "item.3125.name": "remains of a fish",
   "item.3126.name": "rubbish",
   "item.3127.name": "rubbish",
-  "item.3128.name": "rubbish"
+  "item.3128.name": "rubbish",
+  "item.3129.name": "some leaves",
+  "item.3130.name": "twigs",
+  "item.3131.name": "burnt down firewood",
+  "item.3132.name": "skull",
+  "item.3133.name": "human remains",
+  "item.3134.name": "ashes",
+  "item.3141.name": "stone rubbish",
+  "item.3145.name": "trashed wooden bars",
+  "item.3146.name": "trashed wooden bars",
+  "item.3147.name": "blank rune",
+  "item.3148.name": "destroy field rune",
+  "item.3149.name": "energy bomb rune",
+  "item.3152.name": "intense healing rune",
+  "item.3153.name": "cure poison rune",
+  "item.3154.name": "spell rune"
 }

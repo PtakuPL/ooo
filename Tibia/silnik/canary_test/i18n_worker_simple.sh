@@ -3110,6 +3110,7 @@ auto_translate_keys() {
 import json
 import os
 import re
+import hashlib
 
 I18N_DIR = "i18n"
 target_lang = "$target_lang"
@@ -3244,30 +3245,60 @@ try:
 except:
     lang_data = {}
 
+# Pamięć tłumaczeń (TM) - przechowuje tłumaczenie + hash źródła
+tm_path = f"{I18N_DIR}/translation_memory.json"
+try:
+    with open(tm_path) as f:
+        tm_data = json.load(f)
+except:
+    tm_data = {}
+
+if target_lang not in tm_data:
+    tm_data[target_lang] = {}
+
+def src_hash(text: str) -> str:
+    return hashlib.md5(text.encode("utf-8")).hexdigest()
+
+def count_placeholders(text: str):
+    braces = re.findall(r'\{[^}]*\}', text)
+    pipes = re.findall(r'\|[^|]+\|', text)
+    return len(braces), len(pipes)
+
 # Przetwórz klucze
 translated = 0
 placeholders = 0
 guard_fail = 0
+tm_updates = 0
 for key, en_text in en_data.items():
     if key in lang_data:
         # Sprawdź czy to placeholder
         if not lang_data[key].startswith("["):
             continue  # Już przetłumaczone
     
+    # TM lookup: użyj zapamiętanego tłumaczenia jeśli hash źródła pasuje
+    h = src_hash(en_text)
+    saved = tm_data.get(target_lang, {}).get(key)
+    if saved and saved.get("src_hash") == h:
+        candidate = saved.get("text", "")
+        sb, sp = count_placeholders(en_text)
+        tb, tp = count_placeholders(candidate)
+        if sb == tb and sp == tp and candidate:
+            lang_data[key] = candidate
+            translated += 1
+            continue
+
     # Spróbuj prostego tłumaczenia
     simple = simple_translate(en_text, target_lang)
     
     if simple:
         # Guard na placeholdery {} i |...|
-        def count_placeholders(text):
-            braces = re.findall(r'\{[^}]*\}', text)
-            pipes = re.findall(r'\|[^|]+\|', text)
-            return len(braces), len(pipes)
         sb, sp = count_placeholders(en_text)
         tb, tp = count_placeholders(simple)
         if sb == tb and sp == tp:
             lang_data[key] = simple
             translated += 1
+            tm_data[target_lang][key] = {"src_hash": h, "text": simple}
+            tm_updates += 1
         else:
             lang_data[key] = f"[{target_lang.upper()}] {en_text}"
             placeholders += 1
@@ -3282,7 +3313,11 @@ lang_data = dict(sorted(lang_data.items()))
 with open(lang_file, 'w') as f:
     json.dump(lang_data, f, indent=2, ensure_ascii=False)
 
-print(f"✅ {target_lang}/{json_file}: {translated} przetłumaczonych, {placeholders} placeholder'ów")
+if tm_updates > 0:
+    with open(tm_path, 'w') as f:
+        json.dump(tm_data, f, indent=2, ensure_ascii=False)
+
+print(f"✅ {target_lang}/{json_file}: {translated} przetłumaczonych, {placeholders} placeholder'ów, TM+{tm_updates}, guard_fail={guard_fail}")
 AUTOTRANSPY
     
     log "${GREEN}✅ Auto-translate zakończone${NC}"

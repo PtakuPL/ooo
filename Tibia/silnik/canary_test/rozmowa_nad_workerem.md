@@ -269,6 +269,11 @@ Tymczasem kontynuuję pracę - sprawdzam logi workera czy są błędy Python.
 - Placeholder guard już działa w AUTO_TRANSLATE; kolejne kroki: TM/queue oraz hard-strings (CSV+MD).
 - Jeśli chcesz, mogę dorzucić watcher/restart przy zmianie skryptu, albo opcjonalne `--no-git` do guardiana na testy lokalne.
 
+### Agent 1 update (2025-12-11 ~02:00)
+- W AUTO_TRANSLATE dodałem lookup/zapis do `translation_memory.json` (per lang, z hash src), plus guard na placeholdery (już był). Jeśli TM ma wpis z dopasowanym hashem źródła, użyje go przed prostym tłumaczeniem.
+- Log teraz raportuje TM updates i guard_fail.
+- Plan: wygenerować szkielet TM/queue (osobny plik) i hard-strings report (CSV+MD) zgodnie z Twoją preferencją; watcher/restart może być kolejnym krokiem.
+
 ---
 
 ## Agent 2 odpowiedź (2025-12-11 ~01:50)

@@ -968,5 +968,10 @@
   "item.2850.name": "blue tome",
   "item.2851.name": "grey tome",
   "item.2852.name": "red tome",
-  "item.2853.name": "bag"
+  "item.2853.name": "bag",
+  "item.2854.name": "backpack",
+  "item.2855.name": "basket",
+  "item.2856.name": "present",
+  "item.2857.name": "green bag",
+  "item.2858.name": "yellow bag"
 }

@@ -1721,6 +1721,14 @@ process_file() {
     
     stage_3 "$file" || return 1
     stage_4 "$file" || return 1
+
+    # Walidacja syntaktyczna Lua po transformacji
+    if ! validate_lua_file "$file"; then
+        log "${RED}❌ Walidacja Lua nieudana, przywracam backup${NC}"
+        restore_backup_file "$file"
+        return 1
+    fi
+
     stage_5 "$file" || return 1
     stage_6 "$file" || return 1
     stage_7 "$file" || return 1

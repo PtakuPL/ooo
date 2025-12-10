@@ -1018,5 +1018,10 @@
   "item.2908.name": "lit wall lamp",
   "item.2909.name": "wall lamp",
   "item.2910.name": "lit wall lamp",
-  "item.2911.name": "candelabrum"
+  "item.2911.name": "candelabrum",
+  "item.2912.name": "lit candelabrum",
+  "item.2913.name": "used candelabrum",
+  "item.2914.name": "lamp",
+  "item.2915.name": "lit lamp",
+  "item.2916.name": "used lamp"
 }

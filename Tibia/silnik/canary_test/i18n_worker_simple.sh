@@ -35,6 +35,49 @@ NC='\033[0m'
 log() { echo -e "$1"; }
 
 #===============================================================================
+# UPDATE_CATEGORY_STATE - Zapamiętaj wynik przetwarzania kategorii
+#===============================================================================
+update_category_state() {
+    local CATEGORY="$1"
+    local PROCESSED_COUNT="$2"
+    
+    python3 << CATSTATEPY
+import json
+import time
+import os
+
+CATEGORY_STATE_FILE = ".i18n_category_state.json"
+CATEGORY = "$CATEGORY"
+PROCESSED_COUNT = $PROCESSED_COUNT
+
+# Wczytaj obecny stan
+try:
+    with open(CATEGORY_STATE_FILE, 'r') as f:
+        state = json.load(f)
+except:
+    state = {"skip_until": {}, "last_processed": {}}
+
+# Zapisz wynik
+state["last_processed"][CATEGORY] = {
+    "count": PROCESSED_COUNT,
+    "timestamp": time.time()
+}
+
+# Jeśli 0 przetworzonych - oznacz do pominięcia na 5 minut
+if PROCESSED_COUNT == 0:
+    state["skip_until"][CATEGORY] = time.time() + 300  # 5 minut
+    print(f"⏭️ Kategoria '{CATEGORY}' pominięta na 5 minut (0 przetworzonych)")
+else:
+    # Wyczyść skip jeśli coś przetworzyliśmy
+    state["skip_until"].pop(CATEGORY, None)
+
+# Zapisz stan
+with open(CATEGORY_STATE_FILE, 'w') as f:
+    json.dump(state, f, indent=2)
+CATSTATEPY
+}
+
+#===============================================================================
 # UPDATE_STATUS - Aktualizacja I18N_STATUS.md dla GitHub (pełna wersja)
 #===============================================================================
 update_github_status() {

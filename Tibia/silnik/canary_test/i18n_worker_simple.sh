@@ -1132,78 +1132,73 @@ print(f"   Składni: {total_substages}")
 # [4/6] TRANSLATE_BATCH - tłumaczenie ze składniami
 print(f"[4/6] TRANSLATE_BATCH: Tłumaczenie")
 
-# Słownik tłumaczeń dla popularnych fraz
-TRANSLATIONS = {
-    "pl": {
-        "Hello": "Witaj", "Goodbye": "Żegnaj", "Welcome": "Witamy", "Greetings": "Pozdrowienia",
-        "Yes": "Tak", "No": "Nie", "Thank you": "Dziękuję", "Thanks": "Dzięki",
-        "adventurer": "przybyszu", "traveler": "podróżniku", "friend": "przyjacielu",
-        "What do you need": "Czego potrzebujesz", "How can I help": "Jak mogę pomóc",
-        "Come back": "Wróć", "Farewell": "Żegnaj", "Good luck": "Powodzenia",
-        "I am": "Jestem", "I sell": "Sprzedaję", "I buy": "Kupuję", "I can": "Mogę",
-        "equipment": "ekwipunek", "weapons": "bronie", "armor": "zbroje", "armour": "zbroje",
-        "potions": "mikstury", "food": "jedzenie", "items": "przedmioty", "goods": "towary",
-        "shop": "sklep", "store": "sklep", "trade": "handel", "business": "interes",
-        "gold": "złoto", "coins": "monety", "money": "pieniądze",
-        "sword": "miecz", "shield": "tarcza", "helmet": "hełm", "boots": "buty",
-        "monster": "potwór", "creature": "stworzenie", "enemy": "wróg",
-        "quest": "zadanie", "mission": "misja", "task": "zadanie",
-        "help": "pomoc", "information": "informacja", "news": "nowiny",
-        "city": "miasto", "town": "miasteczko", "village": "wioska",
-        "king": "król", "queen": "królowa", "knight": "rycerz",
-        "magic": "magia", "spell": "zaklęcie", "rune": "runa",
-        "dangerous": "niebezpieczny", "safe": "bezpieczny", "careful": "ostrożny",
-        "north": "północ", "south": "południe", "east": "wschód", "west": "zachód",
-        "Please": "Proszę", "Sorry": "Przepraszam", "Excuse me": "Przepraszam"
-    },
-    "de": {
-        "Hello": "Hallo", "Goodbye": "Auf Wiedersehen", "Welcome": "Willkommen",
-        "Yes": "Ja", "No": "Nein", "Thank you": "Danke",
-        "adventurer": "Abenteurer", "traveler": "Reisender",
-        "I am": "Ich bin", "I sell": "Ich verkaufe", "I buy": "Ich kaufe",
-        "equipment": "Ausrüstung", "weapons": "Waffen", "armor": "Rüstung",
-        "shop": "Laden", "gold": "Gold", "coins": "Münzen"
-    },
-    "es": {
-        "Hello": "Hola", "Goodbye": "Adiós", "Welcome": "Bienvenido",
-        "Yes": "Sí", "No": "No", "Thank you": "Gracias",
-        "adventurer": "aventurero", "I am": "Soy", "I sell": "Vendo"
-    },
-    "pt": {
-        "Hello": "Olá", "Goodbye": "Adeus", "Welcome": "Bem-vindo",
-        "Yes": "Sim", "No": "Não", "Thank you": "Obrigado"
-    },
-    "fr": {
-        "Hello": "Bonjour", "Goodbye": "Au revoir", "Welcome": "Bienvenue",
-        "Yes": "Oui", "No": "Non", "Thank you": "Merci"
-    },
-    "it": {
-        "Hello": "Ciao", "Goodbye": "Arrivederci", "Welcome": "Benvenuto",
-        "Yes": "Sì", "No": "No", "Thank you": "Grazie"
-    },
-    "ru": {
-        "Hello": "Привет", "Goodbye": "До свидания", "Welcome": "Добро пожаловать",
-        "Yes": "Да", "No": "Нет", "Thank you": "Спасибо"
-    }
+#===============================================================================
+# INSTRUKCJE DLA AGENTA LLM - TŁUMACZENIE
+#===============================================================================
+# Agent LLM (np. GPT, Claude, Phi) powinien:
+# 1. Przetłumaczyć CAŁE zdanie na język docelowy
+# 2. Zachować komendy w 'apostrofach' BEZ TŁUMACZENIA (np. 'trade', 'job', 'yes')
+# 3. Zachować zmienne w {nawiasach} bez zmian (np. {player}, {amount})
+# 4. Zachować formatowanie |PIPE| bez zmian (np. |PLAYERNAME|)
+# 5. Tłumaczyć naturalnie, zachowując ton i styl NPC
+#===============================================================================
+
+LANG_NAMES = {
+    "pl": "polski", "de": "niemiecki", "es": "hiszpański", "pt": "portugalski",
+    "fr": "francuski", "it": "włoski", "ru": "rosyjski", "nl": "holenderski",
+    "sv": "szwedzki", "da": "duński", "no": "norweski", "fi": "fiński",
+    "cs": "czeski", "sk": "słowacki", "hu": "węgierski", "ro": "rumuński",
+    "bg": "bułgarski", "el": "grecki", "tr": "turecki", "uk": "ukraiński",
+    "zh": "chiński", "ja": "japoński", "ko": "koreański", "ar": "arabski"
 }
 
 def translate_text(text, lang):
-    if lang not in TRANSLATIONS:
-        return f"[{lang.upper()}] {text}"
+    """
+    Tłumaczy tekst na język docelowy.
     
-    result = text
-    trans = TRANSLATIONS[lang]
+    ZASADY DLA AGENTA LLM:
+    - Przetłumacz całe zdanie naturalnie na język: {lang_name}
+    - Komendy w 'apostrofach' (np. 'trade', 'buy', 'sell', 'yes', 'no') 
+      NIE TŁUMACZ - zostaw w oryginale angielskim
+    - Zmienne w {nawiasach} zachowaj bez zmian
+    - Formatowanie |PIPE| zachowaj bez zmian
+    - Zachowaj ton i styl postaci NPC
     
-    # Zamień znane frazy (case-insensitive)
-    for en, loc in sorted(trans.items(), key=lambda x: -len(x[0])):  # Dłuższe najpierw
-        pattern = re.compile(re.escape(en), re.IGNORECASE)
-        result = pattern.sub(loc, result)
+    PRZYKŁAD dla polskiego:
+    EN: "Hello adventurer! Ask me about 'trade' or 'job'. I have {count} items."
+    PL: "Witaj przybyszu! Zapytaj mnie o 'trade' lub 'job'. Mam {count} przedmiotów."
+    """
+    import re
     
-    # Jeśli nic się nie zmieniło, oznacz jako TODO
-    if result == text:
-        return f"[{lang.upper()}] {text}"
+    lang_name = LANG_NAMES.get(lang, lang)
     
-    return result
+    # Znajdź i zachowaj komendy w 'apostrofach'
+    commands = re.findall(r"'[^']+?'", text)
+    
+    # Znajdź i zachowaj zmienne w {nawiasach}
+    variables = re.findall(r"\{[^}]+?\}", text)
+    
+    # Znajdź i zachowaj formatowanie |PIPE|
+    pipes = re.findall(r"\|[^|]+?\|", text)
+    
+    #---------------------------------------------------------------------------
+    # TUTAJ AGENT LLM WYKONUJE TŁUMACZENIE
+    # Agent powinien przetłumaczyć 'text' na język 'lang_name'
+    # zachowując commands, variables i pipes bez zmian
+    #---------------------------------------------------------------------------
+    
+    # Tymczasowo: oznacz jako do przetłumaczenia przez agenta
+    # Agent LLM podmieni tę linię na właściwe tłumaczenie
+    translated = f"[TRANSLATE:{lang.upper()}] {text}"
+    
+    #---------------------------------------------------------------------------
+    # WALIDACJA - sprawdź czy komendy zostały zachowane
+    #---------------------------------------------------------------------------
+    for cmd in commands:
+        if cmd not in translated:
+            print(f"    ⚠️ UWAGA: Komenda {cmd} została zmieniona!")
+    
+    return translated
 
 # Przetwórz składnie
 translated_count = 0
@@ -1215,10 +1210,26 @@ for substage in range(total_substages):
     
     print(f"  └─ Składnia {substage + 1}/{total_substages}: {len(substage_keys)} kluczy")
     
+    # Wyświetl instrukcję dla agenta LLM
+    print(f"")
+    print(f"    📝 INSTRUKCJA DLA AGENTA LLM:")
+    print(f"    Przetłumacz poniższe teksty na język {LANG_NAMES.get(target_lang, target_lang)}.")
+    print(f"    Komendy w 'apostrofach' NIE tłumacz (np. 'trade', 'job').")
+    print(f"    Zmienne w {{nawiasach}} zachowaj bez zmian.")
+    print(f"")
+    
     for key, en_text in substage_keys:
+        print(f"    {key}:")
+        print(f"      EN: {en_text}")
+        
+        # Agent LLM powinien tutaj wstawić tłumaczenie
         translated = translate_text(en_text, target_lang)
         lang_data[key] = translated
         translated_count += 1
+        
+        print(f"      {target_lang.upper()}: {translated}")
+        print(f"")
+        
         if not translated.startswith("["):
             real_translations += 1
 

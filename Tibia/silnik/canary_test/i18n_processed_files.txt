@@ -1120,3 +1120,13 @@ TWIG:html_copy/system/templates/faq.form.html.twig
 TWIG:html_copy/system/templates/characters.html.twig
 TWIG:html_copy/system/templates/account.change-email.html.twig
 TWIG:html_copy/system/templates/houses.html.twig
+TWIG:html_copy/system/templates/admin.plugins.html.twig
+TWIG:html_copy/system/templates/forum.boards.html.twig
+TWIG:html_copy/system/templates/news.back_button.html.twig
+TWIG:html_copy/system/templates/forum.show_thread.html.twig
+TWIG:html_copy/system/templates/buttons.create_character.html.twig
+TWIG:html_copy/system/templates/admin.menus.header.html.twig
+TWIG:html_copy/system/templates/admin.pages.html.twig
+TWIG:html_copy/system/templates/guilds.pass_leadership.html.twig
+TWIG:html_copy/system/templates/forum.edit_post.html.twig
+TWIG:html_copy/system/templates/mail.account.register.html.twig

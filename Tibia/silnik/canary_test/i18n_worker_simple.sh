@@ -19,10 +19,13 @@ BACKUP_DIR="backups"
 PROCESSED_FILE="i18n_processed_files.txt"
 
 # Konfiguracja trybów
-MIGRATION_BATCH=15          # Ile plików NPC na cykl migracji
-TRANSLATION_BATCH=50        # Ile kluczy na batch tłumaczeń  
+MIGRATION_BATCH=50          # Ile plików na cykl migracji (total)
+MINI_BATCH=10               # Ile plików w mini-batch
+MINI_PAUSE=3                # Pauza między mini-batch (sekundy)
+CYCLE_PAUSE=12              # Pauza po pełnym cyklu (sekundy)
+TRANSLATION_BATCH=300       # Ile kluczy na batch synchronizacji
 TRANSLATION_SUBSTAGE=4      # Ile kluczy na składnię
-LANG_PRIORITY="pl de es pt fr it ru nl sv da no fi cs"  # Priorytet języków
+LANG_PRIORITY="de pl es pt fr it ru nl sv da no fi cs"  # Priorytet języków (Europa first)
 
 # Kolory
 RED='\033[0;31m'

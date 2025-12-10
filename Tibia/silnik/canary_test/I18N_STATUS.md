@@ -278,6 +278,7 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `anerui` - ukończono 2025-12-10 13:57
 - ✅ `the_lootmonger` - ukończono 2025-12-10 13:05
 - ✅ `tandros` - ukończono 2025-12-10 13:05
 - ✅ `sundara` - ukończono 2025-12-10 13:05

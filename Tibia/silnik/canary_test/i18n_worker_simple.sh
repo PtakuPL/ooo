@@ -245,8 +245,30 @@ for cat, info in worker_state.get("last_processed", {}).items():
                 "category": cat,
                 "count": count,
                 "timestamp": ts,
-                "time_str": time_str
+                "time_str": time_str,
+                "type": "migration"
             })
+
+# Pobierz operacje z translation_sync
+translation_sync_data = worker_state.get("translation_sync", {})
+sync_last_ts = translation_sync_data.get("last_sync", 0)
+sync_current_lang = translation_sync_data.get("current_lang", "")
+sync_current_cat = translation_sync_data.get("current_category", "")
+sync_stats = translation_sync_data.get("stats", {})
+sync_langs_done = translation_sync_data.get("languages_done", [])
+
+if sync_last_ts > 0 and sync_current_lang:
+    from datetime import datetime
+    sync_time_str = datetime.fromtimestamp(sync_last_ts).strftime("%H:%M:%S")
+    lang_total = sync_stats.get(sync_current_lang, {}).get("total", 0)
+    recent_operations.append({
+        "category": f"🌍 {sync_current_lang.upper()}/{sync_current_cat}",
+        "count": lang_total,
+        "timestamp": sync_last_ts,
+        "time_str": sync_time_str,
+        "type": "translation_sync"
+    })
+
 recent_operations.sort(key=lambda x: -x["timestamp"])
 
 # Oblicz total processed ze wszystkich kategorii

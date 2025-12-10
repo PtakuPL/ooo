@@ -51,13 +51,13 @@ npcType.onCloseChannel = function(npc, creature)
 end
 
 -- Mission (Tibia Tales: Rest In Hallowed Ground)
-local startMissionKeyword = keywordHandler:addKeyword({ "mission" }, StdModule.say, { npcHandler = npcHandler, text = "Well, I would do it myself but I can't leave town for a longer time. Would you be so kind to bring me a vial of holy water from the White Raven Monastery?" }, function(player)
+local startMissionKeyword = keywordHandler:addKeyword({ "mission" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_1" }, function(player)
 	return player:getStorageValue(Storage.Quest.U8_1.RestInHallowedGround.Questline) == -1
 end)
-startMissionKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, text = "I thank you a lot in advance. The power of the holy water from the White Raven Monastery is legendary. For my task it is indispensable. We talk about that when you get back.", reset = true }, nil, function(player)
+startMissionKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_2", reset = true }, nil, function(player)
 	player:setStorageValue(Storage.Quest.U8_1.RestInHallowedGround.Questline, 1)
 end)
-startMissionKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, text = "It's your decision. I will ask the next believing mind that visits the temple of Banor's blood.", reset = true })
+startMissionKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_3", reset = true })
 
 local function addMissionKeyword(text, value, newValue, addItem)
 	keywordHandler:addKeyword({ "mission" }, StdModule.say, { npcHandler = npcHandler, text = text }, function(player)
@@ -79,7 +79,7 @@ addMissionKeyword("Have you heard about the unholy graveyard north of Edron? Go 
 addMissionKeyword("I feel that the spirits have not come to a rest yet. There must still be some graves left to sanctify.", 3)
 addMissionKeyword("I appreciate your help. May Banor be always on your side. Here, your reward is this package which contains five mana and five health potions.", 4, 5, true)
 
-keywordHandler:addKeyword({ "mission" }, StdModule.say, { npcHandler = npcHandler, text = "Your mission here on Tibia is to be polite and friendly. The gods will reward you, I promise!" })
+keywordHandler:addKeyword({ "mission" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_4" })
 
 -- Twist of Fate
 local blessKeyword = keywordHandler:addKeyword({ "twist of fate" }, StdModule.say, {
@@ -92,53 +92,53 @@ local blessKeyword = keywordHandler:addKeyword({ "twist of fate" }, StdModule.sa
 	},
 })
 blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, text = "So receive the protection of the twist of fate, pilgrim.", cost = "|PVPBLESSCOST|", bless = 1 })
-blessKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, text = "Fine. You are free to decline my offer.", reset = true })
+blessKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_5", reset = true })
 
 -- Adventurer Stone
-keywordHandler:addKeyword({ "adventurer stone" }, StdModule.say, { npcHandler = npcHandler, text = "Keep your adventurer's stone well." }, function(player)
+keywordHandler:addKeyword({ "adventurer stone" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_6" }, function(player)
 	return player:getItemById(16277, true)
 end)
 
-local stoneKeyword = keywordHandler:addKeyword({ "adventurer stone" }, StdModule.say, { npcHandler = npcHandler, text = "Ah, you want to replace your adventurer's stone for free?" }, function(player)
+local stoneKeyword = keywordHandler:addKeyword({ "adventurer stone" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_7" }, function(player)
 	return player:getStorageValue(Storage.Quest.U9_80.AdventurersGuild.FreeStone.Amanda) ~= 1
 end)
-stoneKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, text = "Here you are. Take care.", reset = true }, nil, function(player)
+stoneKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_8", reset = true }, nil, function(player)
 	player:addItem(16277, 1)
 	player:setStorageValue(Storage.Quest.U9_80.AdventurersGuild.FreeStone.Amanda, 1)
 end)
 
-local stoneKeyword = keywordHandler:addKeyword({ "adventurer stone" }, StdModule.say, { npcHandler = npcHandler, text = "Ah, you want to replace your adventurer's stone for 30 gold?" })
-stoneKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, text = "Here you are. Take care.", reset = true }, function(player)
+local stoneKeyword = keywordHandler:addKeyword({ "adventurer stone" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_9" })
+stoneKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_10", reset = true }, function(player)
 	return player:getMoney() + player:getBankBalance() >= 30
 end, function(player)
 	if player:removeMoneyBank(30) then
 		player:addItem(16277, 1)
 	end
 end)
-stoneKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, text = "Sorry, you don't have enough money.", reset = true })
-stoneKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, text = "No problem.", reset = true })
+stoneKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_11", reset = true })
+stoneKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_12", reset = true })
 
 -- Wooden Stake
-keywordHandler:addKeyword({ "stake" }, StdModule.say, { npcHandler = npcHandler, text = "I think you have forgotten to bring your stake, my child." }, function(player)
+keywordHandler:addKeyword({ "stake" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_13" }, function(player)
 	return player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheBlessedStake) == 6 and player:getItemCount(5941) == 0
 end)
 
-local stakeKeyword = keywordHandler:addKeyword({ "stake" }, StdModule.say, { npcHandler = npcHandler, text = "Yes, I was informed what to do. Are you prepared to receive my line of the prayer?" }, function(player)
+local stakeKeyword = keywordHandler:addKeyword({ "stake" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_14" }, function(player)
 	return player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheBlessedStake) == 6
 end)
-stakeKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, text = "So receive my prayer: 'Wicked curses shall be broken'. Now, bring your stake to Kasmir in Darashia for the next line of the prayer. I will inform him what to do.", reset = true }, nil, function(player)
+stakeKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_15", reset = true }, nil, function(player)
 	player:setStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheBlessedStake, 7)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 end)
-stakeKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, text = "I'll wait for you.", reset = true })
+stakeKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_16", reset = true })
 
-keywordHandler:addKeyword({ "stake" }, StdModule.say, { npcHandler = npcHandler, text = "You should visit Kasmir in Darashia now, my child." }, function(player)
+keywordHandler:addKeyword({ "stake" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_17" }, function(player)
 	return player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheBlessedStake) == 7
 end)
-keywordHandler:addKeyword({ "stake" }, StdModule.say, { npcHandler = npcHandler, text = "You already received my line of the prayer." }, function(player)
+keywordHandler:addKeyword({ "stake" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_18" }, function(player)
 	return player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheBlessedStake) > 7
 end)
-keywordHandler:addKeyword({ "stake" }, StdModule.say, { npcHandler = npcHandler, text = "A blessed stake? That's a strange request. Maybe Quentin knows more, he is one of the oldest monks after all." })
+keywordHandler:addKeyword({ "stake" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_19" })
 
 -- Healing
 local function addHealKeyword(text, condition, effect)
@@ -154,7 +154,7 @@ addHealKeyword("You are burning. Let me quench those flames.", CONDITION_FIRE, C
 addHealKeyword("You are poisoned. Let me soothe your pain.", CONDITION_POISON, CONST_ME_MAGIC_RED)
 addHealKeyword("You are electrified, my child. Let me help you to stop trembling.", CONDITION_ENERGY, CONST_ME_MAGIC_GREEN)
 
-keywordHandler:addKeyword({ "heal" }, StdModule.say, { npcHandler = npcHandler, text = "You are hurt, my child. I will heal your wounds." }, function(player)
+keywordHandler:addKeyword({ "heal" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_20" }, function(player)
 	return player:getHealth() < 40
 end, function(player)
 	local health = player:getHealth()
@@ -163,38 +163,38 @@ end, function(player)
 	end
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
 end)
-keywordHandler:addKeyword({ "heal" }, StdModule.say, { npcHandler = npcHandler, text = "You aren't looking that bad. Sorry, I can't help you. But if you are looking for additional protection you should go on the {pilgrimage} of ashes or get the protection of the {twist of fate} here." })
+keywordHandler:addKeyword({ "heal" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_21" })
 
 -- Basic
-keywordHandler:addKeyword({ "pilgrimage" }, StdModule.say, { npcHandler = npcHandler, text = "Whenever you receive a lethal wound, your vital force is damaged and there is a chance that you lose some of your equipment. With every single of the five {blessings} you have, this damage and chance of loss will be reduced." })
-keywordHandler:addKeyword({ "blessings" }, StdModule.say, { npcHandler = npcHandler, text = "There are five blessings available in five sacred places: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. Additionally, you can receive the {twist of fate} here." })
-keywordHandler:addKeyword({ "spiritual" }, StdModule.say, { npcHandler = npcHandler, text = "I see you received the spiritual shielding in the whiteflower temple south of Thais." }, function(player)
+keywordHandler:addKeyword({ "pilgrimage" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_22" })
+keywordHandler:addKeyword({ "blessings" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_23" })
+keywordHandler:addKeyword({ "spiritual" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_24" }, function(player)
 	return player:hasBlessing(1)
 end)
 keywordHandler:addAliasKeyword({ "shield" })
-keywordHandler:addKeyword({ "embrace" }, StdModule.say, { npcHandler = npcHandler, text = "I can sense that the druids north of Carlin have provided you with the Embrace of Tibia." }, function(player)
+keywordHandler:addKeyword({ "embrace" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_25" }, function(player)
 	return player:hasBlessing(2)
 end)
-keywordHandler:addKeyword({ "suns" }, StdModule.say, { npcHandler = npcHandler, text = "I can see you received the blessing of the two suns in the suntower near Ab'Dendriel." }, function(player)
+keywordHandler:addKeyword({ "suns" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_26" }, function(player)
 	return player:hasBlessing(3)
 end)
 keywordHandler:addAliasKeyword({ "fire" })
-keywordHandler:addKeyword({ "phoenix" }, StdModule.say, { npcHandler = npcHandler, text = "I can sense that the spark of the phoenix already was given to you by the dwarven priests of earth and fire in Kazordoon." }, function(player)
+keywordHandler:addKeyword({ "phoenix" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_27" }, function(player)
 	return player:hasBlessing(4)
 end)
 keywordHandler:addAliasKeyword({ "spark" })
-keywordHandler:addKeyword({ "solitude" }, StdModule.say, { npcHandler = npcHandler, text = "I can sense you already talked to the hermit Eremo on the isle of Cormaya and received this blessing." }, function(player)
+keywordHandler:addKeyword({ "solitude" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_28" }, function(player)
 	return player:hasBlessing(5)
 end)
 keywordHandler:addAliasKeyword({ "wisdom" })
-keywordHandler:addKeyword({ "spiritual" }, StdModule.say, { npcHandler = npcHandler, text = "You can ask for the blessing of spiritual shielding in the whiteflower temple south of Thais." })
+keywordHandler:addKeyword({ "spiritual" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_29" })
 keywordHandler:addAliasKeyword({ "shield" })
-keywordHandler:addKeyword({ "embrace" }, StdModule.say, { npcHandler = npcHandler, text = "The druids north of Carlin will provide you with the embrace of Tibia." })
-keywordHandler:addKeyword({ "suns" }, StdModule.say, { npcHandler = npcHandler, text = "You can ask for the blessing of the two suns in the suntower near Ab'Dendriel." })
+keywordHandler:addKeyword({ "embrace" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_30" })
+keywordHandler:addKeyword({ "suns" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_31" })
 keywordHandler:addAliasKeyword({ "fire" })
-keywordHandler:addKeyword({ "phoenix" }, StdModule.say, { npcHandler = npcHandler, text = "The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon." })
+keywordHandler:addKeyword({ "phoenix" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_32" })
 keywordHandler:addAliasKeyword({ "spark" })
-keywordHandler:addKeyword({ "solitude" }, StdModule.say, { npcHandler = npcHandler, text = "Talk to the hermit Eremo on the isle of Cormaya about this blessing." })
+keywordHandler:addKeyword({ "solitude" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.amanda.stdmod_33" })
 keywordHandler:addAliasKeyword({ "wisdom" })
 
 npcHandler:setMessage(MESSAGE_GREET, "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.")

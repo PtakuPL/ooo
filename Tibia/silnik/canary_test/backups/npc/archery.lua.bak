@@ -59,7 +59,7 @@ end
 
 -- Basic
 
-keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.archery.stdmod_1" })
+keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, text = "I am the owner of this saloon. I call it Archery's Hut. I am also {selling} ammunitions." })
 
 npcHandler:setMessage(MESSAGE_GREET, "Welcome to Archery's shop!")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Please come back from time to time.")

@@ -1547,6 +1547,392 @@ ITEMSPY
     log "${GREEN}✅ Items: przetworzono${NC}"
 }
 
+# Przetwarzaj kategorię raids
+process_raids_category() {
+    local batch="${1:-10}"
+    local json_file="$I18N_DIR/en/raids.json"
+    local count=0
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}⚔️ Processing raids...${NC}"
+    
+    for dir in data-otservbr-global/raids data-canary/raids data/raids; do
+        [ ! -d "$dir" ] && continue
+        
+        for file in $(find "$dir" -name "*.lua" -o -name "*.xml" 2>/dev/null | head -$batch); do
+            [ -f "$file" ] || continue
+            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
+            
+            local base=$(basename "$file" | sed 's/\.\(lua\|xml\)$//')
+            local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
+            local name=$(echo "$base" | tr '_' ' ' | sed 's/\b\(.\)/\u\1/g')
+            
+            # Wyciągnij komunikaty raidów
+            local announce=$(grep -oP '(?:broadcast|announce|message)[^"]*"\K[^"]+' "$file" 2>/dev/null | head -1)
+            
+            python3 -c "
+import json
+try:
+    with open('$json_file') as f: d = json.load(f)
+except: d = {}
+d['raid.$safe.name'] = '''$name'''
+if '''$announce''':
+    d['raid.$safe.announce'] = '''$announce'''
+with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+            
+            echo "$file" >> "$PROCESSED_FILE"
+            count=$((count + 1))
+            log "   ⚔️ raid.$safe.name = $name"
+            
+            [ "$count" -ge "$batch" ] && break
+        done
+        [ "$count" -ge "$batch" ] && break
+    done
+    
+    log "${GREEN}✅ Raids: $count kluczy${NC}"
+}
+
+# Przetwarzaj kategorię world (mapy, areas, wydarzenia)
+process_world_category() {
+    local batch="${1:-10}"
+    local json_file="$I18N_DIR/en/world.json"
+    local count=0
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}🗺️ Processing world...${NC}"
+    
+    for dir in data-otservbr-global/world data-canary/world data/world; do
+        [ ! -d "$dir" ] && continue
+        
+        for file in $(find "$dir" -name "*.lua" 2>/dev/null | head -$batch); do
+            [ -f "$file" ] || continue
+            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
+            
+            # Wyciągnij teksty z plików świata
+            local texts=$(grep -oP '"[^"]{10,}"' "$file" 2>/dev/null | head -5)
+            local base=$(basename "$file" .lua)
+            local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
+            
+            if [ -n "$texts" ]; then
+                python3 -c "
+import json
+import re
+try:
+    with open('$json_file') as f: d = json.load(f)
+except: d = {}
+
+texts = '''$texts'''.strip().split('\n')
+for i, t in enumerate(texts[:5]):
+    t = t.strip('\"')
+    if len(t) > 5:
+        key = f'world.$safe.text{i+1}'
+        d[key] = t
+with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+                count=$((count + 1))
+            fi
+            
+            echo "$file" >> "$PROCESSED_FILE"
+            [ "$count" -ge "$batch" ] && break
+        done
+        [ "$count" -ge "$batch" ] && break
+    done
+    
+    log "${GREEN}✅ World: $count plików${NC}"
+}
+
+# Przetwarzaj kategorię libs
+process_libs_category() {
+    local batch="${1:-10}"
+    local json_file="$I18N_DIR/en/libs.json"
+    local count=0
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}📚 Processing libs...${NC}"
+    
+    for dir in data/libs data-otservbr-global/lib data-canary/lib; do
+        [ ! -d "$dir" ] && continue
+        
+        for file in $(find "$dir" -name "*.lua" 2>/dev/null | head -$batch); do
+            [ -f "$file" ] || continue
+            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
+            
+            # Wyciągnij stringi z bibliotek
+            local strings=$(grep -oP 'sendTextMessage\s*\([^,]+,\s*"\K[^"]+' "$file" 2>/dev/null | head -5)
+            local base=$(basename "$file" .lua)
+            local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
+            
+            if [ -n "$strings" ]; then
+                local i=1
+                while IFS= read -r str; do
+                    if [ -n "$str" ] && [ ${#str} -gt 5 ]; then
+                        python3 -c "
+import json
+try:
+    with open('$json_file') as f: d = json.load(f)
+except: d = {}
+d['lib.$safe.msg$i'] = '''$str'''
+with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+                        i=$((i + 1))
+                    fi
+                done <<< "$strings"
+                count=$((count + 1))
+            fi
+            
+            echo "$file" >> "$PROCESSED_FILE"
+            [ "$count" -ge "$batch" ] && break
+        done
+        [ "$count" -ge "$batch" ] && break
+    done
+    
+    log "${GREEN}✅ Libs: $count plików${NC}"
+}
+
+# Przetwarzaj kategorię events
+process_events_category() {
+    local batch="${1:-10}"
+    local json_file="$I18N_DIR/en/events.json"
+    local count=0
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}🎉 Processing events...${NC}"
+    
+    for dir in data/events data-otservbr-global/events; do
+        [ ! -d "$dir" ] && continue
+        
+        for file in $(find "$dir" -name "*.lua" 2>/dev/null | head -$batch); do
+            [ -f "$file" ] || continue
+            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
+            
+            local base=$(basename "$file" .lua)
+            local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
+            
+            # Wyciągnij komunikaty eventów
+            local messages=$(grep -oP '"[^"]{10,}"' "$file" 2>/dev/null | head -5)
+            
+            if [ -n "$messages" ]; then
+                python3 -c "
+import json
+try:
+    with open('$json_file') as f: d = json.load(f)
+except: d = {}
+
+texts = '''$messages'''.strip().split('\n')
+for i, t in enumerate(texts[:5]):
+    t = t.strip('\"')
+    if len(t) > 5:
+        d[f'event.$safe.msg{i+1}'] = t
+with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+                count=$((count + 1))
+            fi
+            
+            echo "$file" >> "$PROCESSED_FILE"
+            [ "$count" -ge "$batch" ] && break
+        done
+        [ "$count" -ge "$batch" ] && break
+    done
+    
+    log "${GREEN}✅ Events: $count plików${NC}"
+}
+
+# Przetwarzaj kategorię chatchannels
+process_chatchannels_category() {
+    local batch="${1:-10}"
+    local json_file="$I18N_DIR/en/chatchannels.json"
+    local count=0
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}💬 Processing chatchannels...${NC}"
+    
+    for dir in data/chatchannels data-otservbr-global/chatchannels; do
+        [ ! -d "$dir" ] && continue
+        
+        for file in $(find "$dir" -name "*.lua" 2>/dev/null | head -$batch); do
+            [ -f "$file" ] || continue
+            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
+            
+            local base=$(basename "$file" .lua)
+            local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
+            local name=$(echo "$base" | tr '_' ' ' | sed 's/\b\(.\)/\u\1/g')
+            
+            python3 -c "
+import json
+try:
+    with open('$json_file') as f: d = json.load(f)
+except: d = {}
+d['channel.$safe.name'] = '''$name'''
+with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+            
+            echo "$file" >> "$PROCESSED_FILE"
+            count=$((count + 1))
+            log "   💬 channel.$safe.name = $name"
+            
+            [ "$count" -ge "$batch" ] && break
+        done
+        [ "$count" -ge "$batch" ] && break
+    done
+    
+    log "${GREEN}✅ Chatchannels: $count kluczy${NC}"
+}
+
+# Przetwarzaj kategorię modules
+process_modules_category() {
+    local batch="${1:-10}"
+    local json_file="$I18N_DIR/en/modules.json"
+    local count=0
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}📦 Processing modules...${NC}"
+    
+    for dir in data/modules data-otservbr-global/modules; do
+        [ ! -d "$dir" ] && continue
+        
+        for file in $(find "$dir" -name "*.lua" 2>/dev/null | head -$batch); do
+            [ -f "$file" ] || continue
+            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
+            
+            local base=$(basename "$file" .lua)
+            local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
+            
+            # Wyciągnij teksty z modułów
+            local texts=$(grep -oP '"[^"]{10,}"' "$file" 2>/dev/null | head -5)
+            
+            if [ -n "$texts" ]; then
+                python3 -c "
+import json
+try:
+    with open('$json_file') as f: d = json.load(f)
+except: d = {}
+
+texts = '''$texts'''.strip().split('\n')
+for i, t in enumerate(texts[:5]):
+    t = t.strip('\"')
+    if len(t) > 5:
+        d[f'module.$safe.text{i+1}'] = t
+with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+                count=$((count + 1))
+            fi
+            
+            echo "$file" >> "$PROCESSED_FILE"
+            [ "$count" -ge "$batch" ] && break
+        done
+        [ "$count" -ge "$batch" ] && break
+    done
+    
+    log "${GREEN}✅ Modules: $count plików${NC}"
+}
+
+# Przetwarzaj kategorię startup
+process_startup_category() {
+    local batch="${1:-10}"
+    local json_file="$I18N_DIR/en/startup.json"
+    local count=0
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}🚀 Processing startup...${NC}"
+    
+    for dir in data-otservbr-global/startup data-canary/startup; do
+        [ ! -d "$dir" ] && continue
+        
+        for file in $(find "$dir" -name "*.lua" 2>/dev/null | head -$batch); do
+            [ -f "$file" ] || continue
+            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
+            
+            local base=$(basename "$file" .lua)
+            local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
+            
+            # Wyciągnij komunikaty startowe
+            local messages=$(grep -oP 'print\s*\(\s*"\K[^"]+' "$file" 2>/dev/null | head -5)
+            [ -z "$messages" ] && messages=$(grep -oP '"[^"]{10,}"' "$file" 2>/dev/null | head -5)
+            
+            if [ -n "$messages" ]; then
+                python3 -c "
+import json
+try:
+    with open('$json_file') as f: d = json.load(f)
+except: d = {}
+
+texts = '''$messages'''.strip().split('\n')
+for i, t in enumerate(texts[:5]):
+    t = t.strip('\"')
+    if len(t) > 5:
+        d[f'startup.$safe.msg{i+1}'] = t
+with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+                count=$((count + 1))
+            fi
+            
+            echo "$file" >> "$PROCESSED_FILE"
+            [ "$count" -ge "$batch" ] && break
+        done
+        [ "$count" -ge "$batch" ] && break
+    done
+    
+    log "${GREEN}✅ Startup: $count plików${NC}"
+}
+
+# Przetwarzaj kategorię npclib
+process_npclib_category() {
+    local batch="${1:-10}"
+    local json_file="$I18N_DIR/en/npclib.json"
+    local count=0
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}📖 Processing npclib...${NC}"
+    
+    for dir in data/npclib; do
+        [ ! -d "$dir" ] && continue
+        
+        for file in $(find "$dir" -name "*.lua" 2>/dev/null | head -$batch); do
+            [ -f "$file" ] || continue
+            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
+            
+            local base=$(basename "$file" .lua)
+            local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
+            
+            # Wyciągnij stałe tekstowe z biblioteki NPC
+            local strings=$(grep -oP '(?:TEXT_|MSG_)[A-Z_]+\s*=\s*"\K[^"]+' "$file" 2>/dev/null | head -10)
+            
+            if [ -n "$strings" ]; then
+                local i=1
+                while IFS= read -r str; do
+                    if [ -n "$str" ] && [ ${#str} -gt 3 ]; then
+                        python3 -c "
+import json
+try:
+    with open('$json_file') as f: d = json.load(f)
+except: d = {}
+d['npclib.$safe.const$i'] = '''$str'''
+with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+                        i=$((i + 1))
+                    fi
+                done <<< "$strings"
+                count=$((count + 1))
+            fi
+            
+            echo "$file" >> "$PROCESSED_FILE"
+            [ "$count" -ge "$batch" ] && break
+        done
+        [ "$count" -ge "$batch" ] && break
+    done
+    
+    log "${GREEN}✅ NpcLib: $count plików${NC}"
+}
+
 #===============================================================================
 # AUTO TRANSLATE - Automatyczne tłumaczenie BEZ interakcji
 #===============================================================================

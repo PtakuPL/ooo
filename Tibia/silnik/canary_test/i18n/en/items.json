@@ -12873,5 +12873,20 @@
   "item.43845.name": "RESERVED SPRITE",
   "item.43846.name": "decayed finger bone",
   "item.43847.name": "rotten vermin ichor",
-  "item.43848.name": "worm sponge"
+  "item.43848.name": "worm sponge",
+  "item.43849.name": "rotten roots",
+  "item.43850.name": "dark obsidian splinter",
+  "item.43851.name": "darklight matter",
+  "item.43852.name": "darklight basalt chunk",
+  "item.43853.name": "darklight core",
+  "item.43863.name": "conch shell horn",
+  "item.43864.name": "sanguine blade",
+  "item.43865.name": "grand sanguine blade",
+  "item.43866.name": "sanguine cudgel",
+  "item.43867.name": "grand sanguine cudgel",
+  "item.43868.name": "sanguine hatchet",
+  "item.43869.name": "grand sanguine hatchet",
+  "item.43870.name": "sanguine razor",
+  "item.43871.name": "grand sanguine razor",
+  "item.43872.name": "sanguine bludgeon"
 }

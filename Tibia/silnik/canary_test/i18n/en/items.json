@@ -5778,5 +5778,20 @@
   "item.17114.name": "RESERVED SPRITE",
   "item.17150.name": "RESERVED SPRITE",
   "item.17151.name": "freshly cut venorean spice",
-  "item.17152.name": "growing venorean spice"
+  "item.17152.name": "growing venorean spice",
+  "item.17153.name": "venorean spice",
+  "item.17212.name": "muddy brick wall",
+  "item.17222.name": "brick wall",
+  "item.17228.name": "wooden treadmill",
+  "item.17229.name": "wooden cabin",
+  "item.17230.name": "wooden ladder",
+  "item.17231.name": "wooden scaffolding",
+  "item.17238.name": "muddy floor",
+  "item.17239.name": "hole",
+  "item.17315.name": "muddy mountain",
+  "item.17316.name": "cobbled pavement",
+  "item.17317.name": "RESERVED SPRITE",
+  "item.17322.name": "RESERVED SPRITE",
+  "item.17339.name": "copper roof",
+  "item.17340.name": "socket"
 }

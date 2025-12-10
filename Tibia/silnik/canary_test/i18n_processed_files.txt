@@ -819,3 +819,4 @@ data-otservbr-global/scripts/actions/roshamuul/prison/golden.lua
 data-otservbr-global/scripts/spells/monster/nightmare_beast_curse.lua
 data-otservbr-global/scripts/spells/monster/maxxenius_energy_elemental.lua
 data-otservbr-global/scripts/spells/monster/spider_queen_wrap.lua
+data/scripts/talkactions/gm/push_town.lua

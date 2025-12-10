@@ -75,5 +75,6 @@
   "scripts.golden.msg_3": "You have faced this boss in the last ",
   "scripts.nightmare_beast_curse.msg_1": "The beast laid a terrible curse on you!",
   "scripts.maxxenius_energy_elemental.msg_1": "You feel a powerfull eletric charge building up!",
-  "scripts.spider_queen_wrap.msg_1": "The spider queen caught you in her net and paralysed you!"
+  "scripts.spider_queen_wrap.msg_1": "The spider queen caught you in her net and paralysed you!",
+  "scripts.push_town.msg_1": "You have been teleported to your temple."
 }

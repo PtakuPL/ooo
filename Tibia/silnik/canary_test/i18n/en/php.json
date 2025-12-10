@@ -257,5 +257,10 @@
   "php.usagestatistics.text3": "SELECT `value` FROM `server_config` WHERE `config` = ",
   "php.usagestatistics.text4": "SELECT VERSION() as `version`;",
   "php.usagestatistics.text5": "SELECT SUM(ROUND(((DATA_LENGTH + INDEX_LENGTH) / 1024 ), 0)) AS ",
-  "php.csrftoken.text1": "core.csrf_protection"
+  "php.csrftoken.text1": "core.csrf_protection",
+  "php.player.text1": "core.vocations_amount",
+  "php.player.text2": "core.outfit_images_url",
+  "php.player.text3": " . $this->looktype . (!empty($this->lookaddons) ? ",
+  "php.player.text4": " . $this->lookaddons : ",
+  "php.player.text5": " . $this->lookhead . "
 }

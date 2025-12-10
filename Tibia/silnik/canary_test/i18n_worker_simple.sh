@@ -108,11 +108,18 @@ actions_keys = count_keys("actions.json")
 errors_keys = count_keys("errors.json")
 messages_keys = count_keys("messages.json")
 
+# KATEGORIE ZEWNĘTRZNE (Website/Client - dodane 2025-12-10)
+php_keys = count_keys("php.json")
+cpp_keys = count_keys("cpp.json")
+html_keys = count_keys("html.json")
+client_keys = count_keys("client.json")
+
 total_keys = (game_keys + items_keys + misc_keys + monsters_keys + npc_keys + 
               player_keys + quests_keys + scripts_keys + server_keys + spells_keys + 
               system_keys + ui_keys + startup_keys + raids_keys + world_keys + 
               libs_keys + events_keys + chatchannels_keys + modules_keys + npclib_keys +
-              actions_keys + errors_keys + messages_keys)
+              actions_keys + errors_keys + messages_keys +
+              php_keys + cpp_keys + html_keys + client_keys)
 
 # Zlicz języki (wszystkie dostępne)
 ALL_LANGUAGES = ["en", "pl", "de", "es", "pt", "fr", "it", "ru", "uk", "zh", "ja", "ko", "ar", "tr", "nl", "sv", "da", "no", "fi", "cs", "sk", "hu", "ro", "bg", "el", "he", "hi", "th", "vi", "id", "ms", "tl", "sw", "bn", "ta", "te", "ml", "ka", "hy", "az", "kk", "uz", "sr", "hr", "sl", "bs", "mk", "sq", "lv", "lt", "et", "fa", "zh_TW"]

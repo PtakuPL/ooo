@@ -708,7 +708,7 @@ EOF
 }
 
 #===============================================================================
-# ETAP 4: TRANSFORMATION (text → i18nKey)
+# ETAP 4: TRANSFORMATION (text → i18nKey + npcHandler:say → NPC_LIB.i18n.npcSay)
 #===============================================================================
 stage_4() {
     local file="$1"
@@ -718,7 +718,7 @@ stage_4() {
     local base=$(basename "$file" .lua)
     local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
     
-    # Użyj Pythona dla multi-line parsing (text = może być na innej linii niż StdModule.say)
+    # Użyj Pythona dla multi-line parsing
     local transformed=$(python3 << TRANSFORM_PY
 import re
 import os
@@ -729,32 +729,90 @@ safe_name = "$safe"
 with open(file_path, 'r') as f:
     content = f.read()
 
-# Sprawdź czy już ma i18nKey
-if 'i18nKey' in content:
-    print(0)
-    exit(0)
+original_content = content
+total_transformed = 0
 
-# Pattern dla multi-line StdModule.say z text = "..."
-# Szukamy bloków: StdModule.say, { ... text = "...", ... }
-pattern = r'(StdModule\.say\s*,\s*\{[^}]*?)text\s*=\s*"([^"]{5,})"([^}]*?\})'
+#==============================================================================
+# TRANSFORMACJA 1: StdModule.say z text = "..." → i18nKey = "..."
+#==============================================================================
+stdmod_counter = [0]
 
-counter = [0]  # Użyj listy żeby móc modyfikować w funkcji
-
-def replace_with_i18n(match):
-    counter[0] += 1
-    key = f"npc.{safe_name}.stdmod_{counter[0]}"
+def replace_stdmod_with_i18n(match):
+    stdmod_counter[0] += 1
+    key = f"npc.{safe_name}.stdmod_{stdmod_counter[0]}"
     before = match.group(1)
     after = match.group(3)
     return f'{before}i18nKey = "{key}"{after}'
 
-new_content = re.sub(pattern, replace_with_i18n, content, flags=re.DOTALL)
+# Pattern dla multi-line StdModule.say z text = "..."
+pattern_stdmod = r'(StdModule\.say\s*,\s*\{[^}]*?)text\s*=\s*"([^"]{5,})"([^}]*?\})'
+content = re.sub(pattern_stdmod, replace_stdmod_with_i18n, content, flags=re.DOTALL)
+total_transformed += stdmod_counter[0]
 
-if counter[0] > 0:
+#==============================================================================
+# TRANSFORMACJA 2: npcHandler:say("text", npc, creature) → NPC_LIB.i18n.npcSay()
+# Wzorce:
+#   npcHandler:say("Hello world", npc, creature)
+#   npcHandler:say("Hello world", npc, player)
+#   return npcHandler:say("Hello world", npc, creature)
+# NIE transformujemy:
+#   npcHandler:say({...})  - tablice
+#   npcHandler:say("..." .. var ..) - konkatenacje
+#   npcHandler:say(zmienna, ...) - zmienne
+#==============================================================================
+npcsay_counter = [0]
+
+def replace_npcsay_with_i18n(match):
+    npcsay_counter[0] += 1
+    key = f"npc.{safe_name}.say_{npcsay_counter[0]}"
+    prefix = match.group(1) or ""  # "return " lub puste
+    text = match.group(2)  # oryginalny tekst (zachowamy w JSON)
+    args = match.group(3)  # ", npc, creature)" lub ", npc, player)"
+    
+    # Sprawdź czy to nie jest już NPC_LIB
+    if "NPC_LIB" in prefix:
+        return match.group(0)
+    
+    return f'{prefix}NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "{key}")'
+
+# Pattern: opcjonalnie "return ", potem npcHandler:say("prosty tekst bez konkatenacji", npc, creature/player)
+# Ignorujemy jeśli po " jest .. (konkatenacja) lub jeśli zaczyna się od {
+pattern_npcsay = r'((?:return\s+)?)?npcHandler:say\(\s*"([^"]{5,})"\s*,\s*npc\s*,\s*(?:creature|player)\s*\)'
+
+# Najpierw sprawdź czy w pliku są npcHandler:say do transformacji
+if 'npcHandler:say("' in content and 'NPC_LIB.i18n.npcSay' not in content:
+    # Filtruj - nie transformujemy konkatenacji
+    def safe_replace_npcsay(match):
+        full_match = match.group(0)
+        text = match.group(2) if match.lastindex >= 2 else ""
+        
+        # Pomiń jeśli to konkatenacja (.. przed lub po cudzysłowiu)
+        start = match.start()
+        end = match.end()
+        before_ctx = content[max(0, start-5):start]
+        after_ctx = content[end:min(len(content), end+5)]
+        
+        if '.."' in full_match or '"..' in content[end:end+10]:
+            return full_match  # Nie transformuj konkatenacji
+        
+        npcsay_counter[0] += 1
+        key = f"npc.{safe_name}.say_{npcsay_counter[0]}"
+        prefix = match.group(1) or ""
+        
+        return f'{prefix}NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "{key}")'
+    
+    content = re.sub(pattern_npcsay, safe_replace_npcsay, content)
+    total_transformed += npcsay_counter[0]
+
+#==============================================================================
+# ZAPIS
+#==============================================================================
+if total_transformed > 0 and content != original_content:
     with open(file_path, 'w') as f:
-        f.write(new_content)
-    print(counter[0])
+        f.write(content)
+    print(f"{total_transformed}|{stdmod_counter[0]}|{npcsay_counter[0]}")
 else:
-    print(0)
+    print("0|0|0")
 TRANSFORM_PY
 )
     

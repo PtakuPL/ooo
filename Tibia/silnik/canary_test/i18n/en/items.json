@@ -8,5 +8,10 @@
   "item.7.name": "oil",
   "item.8.name": "urine",
   "item.9.name": "milk",
-  "item.10.name": "manafluid"
+  "item.10.name": "manafluid",
+  "item.11.name": "lifefluid",
+  "item.12.name": "lemonade",
+  "item.13.name": "rum",
+  "item.14.name": "fruit juice",
+  "item.15.name": "coconut milk"
 }

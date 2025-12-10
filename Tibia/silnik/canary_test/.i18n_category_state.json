@@ -121,8 +121,8 @@
     "twig": 365
   },
   "translation_sync": {
-    "current_lang": "pt",
-    "current_category": "startup.json",
+    "current_lang": "fr",
+    "current_category": "chatchannels.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -196,8 +196,12 @@
         "scripts": 385,
         "spells": 15,
         "startup": 19
+      },
+      "fr": {
+        "chatchannels": 8,
+        "total": 8
       }
     },
-    "last_sync": 1765406673.56499
+    "last_sync": 1765406685.4162803
   }
 }

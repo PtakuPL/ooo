@@ -5298,5 +5298,20 @@
   "item.14041.name": "deepling ridge",
   "item.14042.name": "warrior's shield",
   "item.14043.name": "guardian axe",
-  "item.14044.name": "deepling claw"
+  "item.14044.name": "deepling claw",
+  "item.14050.name": "unknown item",
+  "item.14051.name": "gooey substance",
+  "item.14052.name": "flask of chitin dissolver",
+  "item.14053.name": "flask of dissolved chitin",
+  "item.14054.name": "reagent flask",
+  "item.14055.name": "aggressive fluid",
+  "item.14064.name": "hive pore",
+  "item.14065.name": "overgrown hive pore",
+  "item.14076.name": "swarmer antenna",
+  "item.14077.name": "kollos shell",
+  "item.14078.name": "spitter nose",
+  "item.14079.name": "crawler head plating",
+  "item.14080.name": "waspoid claw",
+  "item.14081.name": "waspoid wing",
+  "item.14082.name": "spidris mandible"
 }

@@ -13197,5 +13197,9 @@
   "npc.a_frog.stdmod_5": "Finally someone notices I'm a FROG. Congratulations, you're VERY observant... *sigh*",
   "npc.a_frog.stdmod_6": "A quest? Yeah I got a quest! Go and tell King Tibianus his son tried to kiss me again!",
   "npc.a_frog.stdmod_7": "Pyrale? That idiot transformed me into an human once. But my wife came and kissed me, so I'm a frog again.",
-  "npc.a_frog.stdmod_8": "Pyrale? That idiot transformed me into an human once. But my wife came and kissed me, so I'm a frog again."
+  "npc.a_frog.stdmod_8": "Pyrale? That idiot transformed me into an human once. But my wife came and kissed me, so I'm a frog again.",
+  "npc..stdmod_1": "You will now be travelled out of here. Are you sure that you want to face that teleport?",
+  "npc..stdmod_2": "Then stay here in these ghostly halls.",
+  "npc..stdmod_3": "I can offer you a {teleport}.",
+  "npc..stdmod_4": "Dont mind me."
 }

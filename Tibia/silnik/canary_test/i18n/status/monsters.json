@@ -1,7 +1,20 @@
 {
   "category": "monsters",
-  "status": "in_progress",
-  "last_updated": "2025-12-10T05:37:46+01:00",
-  "keys": 100,
-  "cycle": 31
+  "last_updated": "2025-12-10 05:39:57",
+  "status": "not_started",
+  "progress": {
+    "percentage": 20,
+    "total_keys": 100,
+    "translated_pl": 20,
+    "files_processed": 0,
+    "files_remaining": 0
+  },
+  "languages": {
+    "total": 53,
+    "with_translations": 53
+  },
+  "details": {
+    "source_file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/i18n/en/monsters.json",
+    "primary_translation": "/home/ptaku/serweryt/Tibia/silnik/canary_test/i18n/pl/monsters.json"
+  }
 }

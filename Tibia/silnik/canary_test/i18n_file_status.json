@@ -1,1 +1,22 @@
-{"files": {}, "meta": {"version": "5.0", "created": "2025-12-10T05:30:00+01:00"}}
+{
+  "files": {
+    "data-otservbr-global/npc/a_ghostly_sage.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "3f1fe8035827da55923f3dd64d31b632",
+          "type": "npc"
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 4
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        }
+      },
+      "overall_status": "in_progress"
+    }
+  }
+}

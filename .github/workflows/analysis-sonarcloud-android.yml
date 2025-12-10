@@ -12,9 +12,9 @@ permissions:
   pull-requests: read
 
 env:
-  CMAKE_BUILD_PARALLEL_LEVEL: 4
+  CMAKE_BUILD_PARALLllEL_LEVEL: 4
   MAKEFLAGS: '-j 4'
-  ANDROID_NDK_VERSION: r23c
+  ANDROllID_NDK_VERSION: r23c
 
 jobs:
   sonarcloud-android:

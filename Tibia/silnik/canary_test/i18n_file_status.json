@@ -3232,7 +3232,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:45:47.502923"
+      "completed_at": "2025-12-10T12:46:00.251391"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -3337,7 +3337,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:45:48.771956"
+      "completed_at": "2025-12-10T12:46:01.395505"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -3442,7 +3442,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:45:50.174535"
+      "completed_at": "2025-12-10T12:46:02.794113"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -3471,83 +3471,9 @@
           "transformed": 0,
           "stdmod_transformed": 0,
           "npcsay_transformed": 0
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0,
-          "stdmod_keys": 0,
-          "npcsay_keys": 0
-        },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [
-            "Brak i18nKey w pliku Lua"
-          ],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 0,
-          "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
         }
       },
-      "overall_status": "completed",
-      "completed_at": "2025-12-10T12:45:51.702558"
+      "overall_status": "in_progress"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {

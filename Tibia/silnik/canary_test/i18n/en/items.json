@@ -2433,5 +2433,20 @@
   "item.5729.name": "dead seagull",
   "item.5730.name": "sand",
   "item.5731.name": "hole",
-  "item.5732.name": "closed door"
+  "item.5732.name": "closed door",
+  "item.5733.name": "closed door",
+  "item.5734.name": "open door",
+  "item.5735.name": "closed door",
+  "item.5736.name": "closed door",
+  "item.5737.name": "open door",
+  "item.5738.name": "shark fin",
+  "item.5741.name": "skull helmet",
+  "item.5745.name": "closed door",
+  "item.5746.name": "open door",
+  "item.5747.name": "earth pile",
+  "item.5748.name": "open door",
+  "item.5749.name": "closed door",
+  "item.5755.name": "turtle",
+  "item.5756.name": "turtle",
+  "item.5762.name": "dead quara constrictor"
 }

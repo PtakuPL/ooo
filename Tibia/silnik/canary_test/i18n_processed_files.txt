@@ -4025,3 +4025,13 @@ html_copy/resources/view/admin/modules/donates/view.html.twig
 html_copy/resources/view/admin/modules/items/index.html.twig
 html_copy/resources/view/admin/modules/publications/news.html.twig
 html_copy/resources/view/admin/modules/publications/index.html.twig
+html_copy/resources/view/admin/modules/publications/newsticker.html.twig
+html_copy/resources/view/admin/modules/publications/featuredarticle.html.twig
+html_copy/resources/view/admin/modules/countdowns/index.html.twig
+html_copy/resources/view/admin/modules/settings/index.html.twig
+html_copy/resources/view/admin/modules/bans/index.html.twig
+html_copy/resources/view/admin/modules/accounts/index.html.twig
+html_copy/resources/view/admin/modules/accounts/view.html.twig
+html_copy/resources/view/admin/modules/pagination/link.html.twig
+html_copy/resources/view/admin/modules/pagination/box.html.twig
+html_copy/resources/view/admin/modules/compendium/index.html.twig

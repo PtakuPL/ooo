@@ -98,15 +98,16 @@ def process_file(filepath, translations, dry_run=False):
     new_translations = {}
     changes = 0
     
-    # Wzorzec: npcHandler:say({ ... }, npc, creature, delay)
+    # Wzorzec: npcHandler:say({ ... }, npc, creature/player, delay)
     # Musi być wystarczająco elastyczny dla wieloliniowych tablic
-    pattern = r'npcHandler:say\(\s*\{([^}]+(?:\{[^}]*\}[^}]*)*)\}\s*,\s*npc\s*,\s*creature\s*(?:,\s*(\d+))?\s*\)'
+    pattern = r'npcHandler:say\(\s*\{([^}]+(?:\{[^}]*\}[^}]*)*)\}\s*,\s*npc\s*,\s*(creature|player)\s*(?:,\s*(\d+))?\s*\)'
     
     def replace_match(match):
         nonlocal max_num, changes, new_translations
         
         array_content = match.group(1)
-        delay = match.group(2) if match.group(2) else "100"
+        target_var = match.group(2)  # creature lub player
+        delay = match.group(3) if match.group(3) else "100"
         
         # Wyodrębnij stringi
         strings = extract_strings_from_array(array_content)
@@ -126,7 +127,7 @@ def process_file(filepath, translations, dry_run=False):
         
         # Generuj nowy kod
         keys_str = ', '.join([f'"{k}"' for k in keys])
-        return f'NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {{{keys_str}}}, {delay})'
+        return f'NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, {target_var}, {{{keys_str}}}, {delay})'
     
     new_content = re.sub(pattern, replace_match, content, flags=re.DOTALL)
     

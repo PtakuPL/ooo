@@ -1,19 +1,7 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 11:22:28 UTC  
-> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
-
----
-
-## 🤖 AI Agent Integration
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  Status zoptymalizowany dla AI agentów (Codex/Copilot/Claude)  │
-│  JSON data: i18n_file_status.json                              │
-│  Worker: i18n_worker_simple.sh                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
+> **Aktualizacja:** 2025-12-10 17:08:04 UTC  
+> **Worker:** v3.0 Multi-Category | **Języki:** 53
 
 ---
 
@@ -21,54 +9,56 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **763** | ↑ |
-| ⏭️ Plików wykluczonych | **5161** | - |
-| 🔑 Kluczy i18n | **3594** | ↑ |
+| 🔑 **Kluczy i18n** | **9448** | ↑↑↑ |
+| 🧙 NPC zmigrowanych | **318/1026** | ↑ |
+| 📁 Plików przetworzonych | **26** | ↑ |
 | 🌍 Języków | **53** | ✓ |
-| ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#1** | - |
+| 🔄 Cykl | **#132** | - |
 
 ---
 
-## ✅ CHECKLIST - Plan Pracy
+## 🎮 Faza 1: Canary Server
 
-> **Aktualna faza:** 🎮 Canary Server  
-> **Aktualna kategoria:** NPC Migration
+| Kategoria | Klucze | Cel | Postęp | Status |
+|-----------|--------|-----|--------|--------|
+| 🧙 NPC Dialogs | 4941 | 15000 | 32% | 🔄 |
+| 👹 Monsters | 4108 | 5000 | 82% | 🔄 |
+| 📜 Scripts | 368 | 1000 | 36% | 🔄 |
+| 🎒 Items | 0 | 40000 | 0% | ⏳ |
+| 📋 Quests | 0 | 500 | 0% | ⏳ |
+| ✨ Spells | 0 | 200 | 0% | ⏳ |
+| ⚙️ Server C++ | 15 | 500 | 3% | 🔄 |
+| 🚀 Startup | 8 | 100 | 8% | 🔄 |
 
-### 🔄 Faza 1: 🎮 Canary Server
+---
 
-| Kategoria | Status | Postęp | Cel |
-|-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 3594/15000 (24%) | 15000 |
-| 📜 Lua Scripts | ⏳ | 0/1000 (0%) | 1000 |
-| 🎒 Items Database | ⏳ | 0/40000 (0%) | 40000 |
-| 👹 Monsters | ⏳ | 0/500 (0%) | 500 |
-| ✨ Spells & Magic | ⏳ | 0/200 (0%) | 200 |
-| ⚙️ Server C++ | ⏳ | 0/300 (0%) | 300 |
+## 🌐 Faza 2: Website (AAC)
 
-### ⏳ Faza 2: 🌐 Website (AAC)
+| Kategoria | Klucze | Cel | Postęp | Status |
+|-----------|--------|-----|--------|--------|
+| 🐘 PHP Backend | 8 | 3000 | 0% | 🔄 |
+| 📄 HTML Views | 0 | 500 | 0% | ⏳ |
 
-| Kategoria | Status | Postęp | Cel |
-|-----------|--------|--------|-----|
-| 🐘 PHP Backend | ⏳ | 0/2015 (0%) | 2015 |
-| 📄 HTML Views | ⏳ | 0/300 (0%) | 300 |
-| 📦 JavaScript | ⏳ | 0/100 (0%) | 100 |
+---
 
-### ⏳ Faza 3: 📱 Instalka/Klient
+## 📱 Faza 3: Client
 
-| Kategoria | Status | Postęp | Cel |
-|-----------|--------|--------|-----|
-| 🖥️ Client UI | ⏳ | 0/200 (0%) | 200 |
-| 💿 Installer | ⏳ | 0/94 (0%) | 94 |
+| Kategoria | Klucze | Cel | Postęp | Status |
+|-----------|--------|-----|--------|--------|
+| 🖥️ Client UI | 0 | 200 | 0% | ⏳ |
 
-### ⏳ Faza 4: 🌍 Tłumaczenia
+---
 
-| Kategoria | Status | Postęp | Cel |
-|-----------|--------|--------|-----|
-| 🇵🇱 Polski | 🔄 | 1/1 | 1 |
-| 🇩🇪 Niemiecki | 🔄 | 1/1 | 1 |
-| 🇪🇸 Hiszpański | 🔄 | 1/1 | 1 |
-| 🌐 Pozostałe (50) | ⏳ | 8/53 (15%) | 53 |
+## 📈 Szczegóły Kluczy (EN)
+
+| Plik JSON | Kluczy | 
+|-----------|--------|
+| `npc.json` | **4941** |
+| `monsters.json` | **4108** |
+| `scripts.json` | **368** |
+| `cpp.json` | **15** |
+| `startup.json` | **8** |
+| `php.json` | **8** |
 
 ---
 
@@ -77,333 +67,32 @@
 | Parametr | Wartość |
 |----------|---------|
 | Status | ✅ idle |
-| Operacja | 🎮 Canary Server - NPC |
-| Plik | Cykl #1 |
-| Szczegóły | NPC:3594 Scripts:0 Items:0 |
-| Ostatnia aktualizacja | 2025-12-10 11:22:28 |
+| Sesja | Key Extraction |
+| Szczegóły | NPC:4941 Monsters:4108 Scripts:368 |
+| Ostatnia aktualizacja | 2025-12-10 17:08:04 |
 
 ---
 
-## 📈 Statystyki sesji
+## 📜 Ostatnie zmiany (Sesja 2025-12-10)
 
-| Metryka | Wartość |
-|---------|---------|
-| Plików przetworzonych | 763 |
-| NPC zmigrowanych | 255 |
-| Kluczy wyciągniętych | 3594 |
-| Błędów | 0 |
+- ✅ Ekstrakcja voices z NPC (+604 kluczy)
+- ✅ Ekstrakcja voices z Monsters (+4098 kluczy)
+- ✅ Deep scan Scripts (+290 kluczy)
+- ✅ Ekstrakcja array patterns z NPC (+81 kluczy)
 
 ---
 
-## 📂 Szczegóły Kategorii
+## 🛠️ Worker Commands (GitHub Control)
 
-<details>
-<summary>🎮 1. Game - ⏳ (0%)</summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | 0 |
-| 🎯 Cel | 100 |
-| 📊 Postęp | 0% |
-| 📁 Plik | i18n/en/game.json |
-
-</details>
-
-<details>
-<summary>🎒 2. Items - ⏳ (0%)</summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | 0 |
-| 🎯 Cel | 40000 |
-| 📊 Postęp | 0% |
-| 📁 Plik | i18n/en/items.json |
-
-</details>
-
-<details>
-<summary>📦 3. Misc - ⏳ (0%)</summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | 0 |
-| 🎯 Cel | 100 |
-| 📊 Postęp | 0% |
-| 📁 Plik | i18n/en/misc.json |
-
-</details>
-
-<details>
-<summary>👹 4. Monsters - ⏳ (0%)</summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | 0 |
-| 🎯 Cel | 500 |
-| 📊 Postęp | 0% |
-| 📁 Plik | i18n/en/monsters.json |
-
-</details>
-
-<details>
-<summary>🧙 5. NPC - 🔄 (24%)</summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | 3594 |
-| 🎯 Cel | 15000 |
-| 📊 Postęp | 24% |
-| 📁 Plik | i18n/en/npc.json |
-| 📁 Plików NPC | 1026 |
-| ✅ Zmigrowanych | 262 |
-| 🔄 Do migracji | 35 |
-
-</details>
-
-<details>
-<summary>👤 6. Player - ⏳ (0%)</summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | 0 |
-| 🎯 Cel | 200 |
-| 📊 Postęp | 0% |
-| 📁 Plik | i18n/en/player.json |
-
-</details>
-
-<details>
-<summary>📜 7. Quests - ⏳ (0%)</summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | 0 |
-| 🎯 Cel | 500 |
-| 📊 Postęp | 0% |
-| 📁 Plik | i18n/en/quests.json |
-
-</details>
-
-<details>
-<summary>📜 8. Scripts - ⏳ (0%)</summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | 0 |
-| 🎯 Cel | 1000 |
-| 📊 Postęp | 0% |
-| 📁 Plik | i18n/en/scripts.json |
-
-</details>
-
-<details>
-<summary>⚙️ 9. Server - ⏳ (0%)</summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | 0 |
-| 🎯 Cel | 300 |
-| 📊 Postęp | 0% |
-| 📁 Plik | i18n/en/server.json |
-
-</details>
-
-<details>
-<summary>✨ 10. Spells - ⏳ (0%)</summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | 0 |
-| 🎯 Cel | 200 |
-| 📊 Postęp | 0% |
-| 📁 Plik | i18n/en/spells.json |
-
-</details>
-
-<details>
-<summary>🖥️ 11. System - ⏳ (0%)</summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | 0 |
-| 🎯 Cel | 2000 |
-| 📊 Postęp | 0% |
-| 📁 Plik | i18n/en/system.json |
-
-</details>
-
-<details>
-<summary>🎨 12. UI - ⏳ (0%)</summary>
-
-| Metryka | Wartość |
-|---------|---------|
-| 🔑 Kluczy | 0 |
-| 🎯 Cel | 200 |
-| 📊 Postęp | 0% |
-| 📁 Plik | i18n/en/ui.json |
-
-</details>
-
----
-
-## 🔧 Worker & Guardian Status
-
-| System | Status | Info |
-|--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
-| Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
-
----
-
-## 🗺️ Roadmap
+Edytuj `worker_commands.txt` aby sterować workerem:
 
 ```
-[⏳] Items (0)      ░░░░░░░░░░░░░░░░░░░░  0%
-[🔄] NPC (3594)            ████░░░░░░░░░░░░░░░░  24%
-[⏳] Scripts (0)      ░░░░░░░░░░░░░░░░░░░░  0%
-[⏳] Monsters (0)    ░░░░░░░░░░░░░░░░░░░░  0%
-[⏳] Spells (0)       ░░░░░░░░░░░░░░░░░░░░  0%
-[⏳] Server (0)       ░░░░░░░░░░░░░░░░░░░░  0%
-[⏳] System (0)       ░░░░░░░░░░░░░░░░░░░░  0%
-[⏳] UI (0)             ░░░░░░░░░░░░░░░░░░░░  0%
+FORCE:monsters    - Wymuszaj kategorię
+RANDOM           - Losowa kategoria
+STATUS           - Pokaż status
+PAUSE:30         - Pauza 30 sekund
 ```
 
 ---
 
-🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:22:28  
-🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
-
----
-
-## Ostatnio zmigrowane NPC
-
-- ✅ `menesto` - ukończono 2025-12-10 15:04
-- ✅ `cranky_lizard_crone` - ukończono 2025-12-10 15:04
-- ✅ `bertram` - ukończono 2025-12-10 15:04
-- ✅ `canary` - ukończono 2025-12-10 15:01
-- ✅ `ukea` - ukończono 2025-12-10 14:15
-- ✅ `stutch` - ukończono 2025-12-10 14:15
-- ✅ `shirith` - ukończono 2025-12-10 14:15
-- ✅ `shanar` - ukończono 2025-12-10 14:15
-- ✅ `rata_mari` - ukończono 2025-12-10 14:15
-- ✅ `queen_eloise` - ukończono 2025-12-10 14:15
-- ✅ `llathriel` - ukończono 2025-12-10 14:15
-- ✅ `lavirias` - ukończono 2025-12-10 14:15
-- ✅ `karith` - ukończono 2025-12-10 14:15
-- ✅ `irea` - ukończono 2025-12-10 14:15
-- ✅ `harsky` - ukończono 2025-12-10 14:15
-- ✅ `gnomish_operative_volcano` - ukończono 2025-12-10 14:15
-- ✅ `gnomish_operative_resonating` - ukończono 2025-12-10 14:15
-- ✅ `gnomish_operative_raiders` - ukończono 2025-12-10 14:15
-- ✅ `gnomish_operative_gt_m_01` - ukończono 2025-12-10 14:11
-- ✅ `gnomish_operative_cathing` - ukończono 2025-12-10 14:11
-- ✅ `gnominer` - ukończono 2025-12-10 14:11
-- ✅ `gnomadness` - ukończono 2025-12-10 14:11
-- ✅ `fenbala` - ukończono 2025-12-10 14:11
-- ✅ `gnomerik` - ukończono 2025-12-10 14:10
-- ✅ `faluae` - ukończono 2025-12-10 14:05
-- ✅ `eruaran` - ukończono 2025-12-10 14:05
-- ✅ `eroth` - ukończono 2025-12-10 14:05
-- ✅ `emperor_kruzak` - ukończono 2025-12-10 14:05
-- ✅ `elvith` - ukończono 2025-12-10 14:05
-- ✅ `elf_guard` - ukończono 2025-12-10 14:05
-- ✅ `edala` - ukończono 2025-12-10 14:05
-- ✅ `dixi` - ukończono 2025-12-10 14:05
-- ✅ `dario` - ukończono 2025-12-10 14:05
-- ✅ `briasol` - ukończono 2025-12-10 14:05
-- ✅ `blind_orc` - ukończono 2025-12-10 14:05
-- ✅ `bashira` - ukończono 2025-12-10 14:05
-- ✅ `barbara` - ukończono 2025-12-10 14:05
-- ✅ `a_starving_dog` - ukończono 2025-12-10 14:05
-- ✅ `anerui` - ukończono 2025-12-10 13:57
-- ✅ `the_lootmonger` - ukończono 2025-12-10 13:05
-- ✅ `tandros` - ukończono 2025-12-10 13:05
-- ✅ `sundara` - ukończono 2025-12-10 13:05
-- ✅ `sigurd` - ukończono 2025-12-10 13:05
-- ✅ `shiriel` - ukończono 2025-12-10 13:05
-- ✅ `seymour` - ukończono 2025-12-10 13:05
-- ✅ `romir` - ukończono 2025-12-10 13:05
-- ✅ `rock_in_a_hard_place` - ukończono 2025-12-10 13:05
-- ✅ `nipuna` - ukończono 2025-12-10 13:05
-- ✅ `nelly` - ukończono 2025-12-10 13:05
-- ✅ `mordecai` - ukończono 2025-12-10 13:00
-- ✅ `imbuement_assistant` - ukończono 2025-12-10 13:00
-- ✅ `gnomegica` - ukończono 2025-12-10 13:00
-- ✅ `ghorza` - ukończono 2025-12-10 13:00
-- ✅ `dallheim` - ukończono 2025-12-10 12:59
-- ✅ `amarie` - ukończono 2025-12-10 12:52
-- ✅ `frederik` - ukończono 2025-12-10 12:20
-- ✅ `frans` - ukończono 2025-12-10 12:20
-- ✅ `chuckles` - ukończono 2025-12-10 12:20
-- ✅ `battlemart` - ukończono 2025-12-10 12:20
-- ✅ `alaistar` - ukończono 2025-12-10 12:20
-- ✅ `flickering_soul` - ukończono 2025-12-10 12:18
-- ✅ `one_eyed_joe` - ukończono 2025-12-10 12:08
-- ✅ `zarak` - ukończono 2025-12-10 11:31
-- ✅ `woblin` - ukończono 2025-12-10 11:31
-- ✅ `willie` - ukończono 2025-12-10 11:31
-- ✅ `wentworth` - ukończono 2025-12-10 11:31
-- ✅ `uso` - ukończono 2025-12-10 11:31
-- ✅ `tristan` - ukończono 2025-12-10 11:31
-- ✅ `trisha` - ukończono 2025-12-10 11:31
-- ✅ `thorwulf` - ukończono 2025-12-10 11:31
-- ✅ `the_queen_of_the_banshees` - ukończono 2025-12-10 11:31
-- ✅ `spectulus` - ukończono 2025-12-10 11:31
-- ✅ `ser_tybald` - ukończono 2025-12-10 11:31
-- ✅ `sebastian` - ukończono 2025-12-10 11:31
-- ✅ `sandra` - ukończono 2025-12-10 11:31
-- ✅ `richard` - ukończono 2025-12-10 11:31
-- ✅ `rachel` - ukończono 2025-12-10 11:31
-- ✅ `puffels` - ukończono 2025-12-10 11:31
-- ✅ `plunderpurse` - ukończono 2025-12-10 11:30
-- ✅ `ormuhn` - ukończono 2025-12-10 11:30
-- ✅ `oressa` - ukończono 2025-12-10 11:30
-- ✅ `nielson` - ukończono 2025-12-10 11:30
-- ✅ `mr_morris` - ukończono 2025-12-10 11:30
-- ✅ `morgan` - ukończono 2025-12-10 11:30
-- ✅ `king_tibianus` - ukończono 2025-12-10 11:30
-- ✅ `falonzo` - ukończono 2025-12-10 11:30
-- ✅ `anderson` - ukończono 2025-12-10 11:30
-- ✅ `amber` - ukończono 2025-12-10 11:30
-- ✅ `inigo` - ukończono 2025-12-10 11:25
-- ✅ `hamish` - ukończono 2025-12-10 11:25
-- ✅ `gregor` - ukończono 2025-12-10 11:25
-- ✅ `gerimor` - ukończono 2025-12-10 11:25
-- ✅ `garamond` - ukończono 2025-12-10 11:25
-- ✅ `eremo` - ukończono 2025-12-10 11:25
-- ✅ `elathriel` - ukończono 2025-12-10 11:25
-- ✅ `dalbrect` - ukończono 2025-12-10 11:25
-- ✅ `coltrayne` - ukończono 2025-12-10 11:25
-- ✅ `captain_dreadnought` - ukończono 2025-12-10 11:22
-- ✅ `zumtah` - ukończono 2025-12-10 07:21
-- ✅ `zora` - ukończono 2025-12-10 07:21
-- ✅ `ziyad` - ukończono 2025-12-10 07:21
-- ✅ `zerbrus` - ukończono 2025-12-10 07:21
-- ✅ `zedrulon_the_fallen` - ukończono 2025-12-10 07:20
-- ✅ `zarifan` - ukończono 2025-12-10 07:20
-- ✅ `yoem` - ukończono 2025-12-10 07:20
-- ✅ `yberius` - ukończono 2025-12-10 07:20
-- ✅ `vascalir` - ukończono 2025-12-10 07:20
-
----
-
-## 🚀 Jak uruchomić
-
-```bash
-# Pojedynczy plik
-./i18n_worker_simple.sh --file data-otservbr-global/npc/nazwa.lua
-
-# Status lokalny
-./i18n_worker_simple.sh --status
-
-# Auto migracja (5 plików)
-./i18n_worker_simple.sh --auto 5
-
-# Aktualizuj I18N_STATUS.md
-./i18n_worker_simple.sh --update-status
-```
-
----
-
-*Wygenerowano automatycznie przez i18n_worker_simple.sh v1.1*
+*Auto-generated by i18n_worker_simple.sh v3.0*

@@ -1742,3 +1742,13 @@ data-otservbr-global/monster/quests/ferumbras_ascension/traps/void.lua
 data-otservbr-global/monster/quests/ferumbras_ascension/traps/guilt.lua
 data-otservbr-global/monster/quests/ferumbras_ascension/damned_soul.lua
 data-otservbr-global/monster/quests/ferumbras_ascension/rage_of_mazoran.lua
+data-otservbr-global/monster/quests/ferumbras_ascension/summons/rift_invader.lua
+data-otservbr-global/monster/quests/ferumbras_ascension/summons/enthralled_demon.lua
+data-otservbr-global/monster/quests/ferumbras_ascension/summons/rift_fragment.lua
+data-otservbr-global/monster/quests/ferumbras_ascension/bosses/ferumbras_soul_splinter.lua
+data-otservbr-global/monster/quests/ferumbras_ascension/bosses/razzagorn.lua
+data-otservbr-global/monster/quests/ferumbras_ascension/bosses/zamulosh.lua
+data-otservbr-global/monster/quests/ferumbras_ascension/bosses/redeemed_soul.lua
+data-otservbr-global/monster/quests/ferumbras_ascension/bosses/ragiaz.lua
+data-otservbr-global/monster/quests/ferumbras_ascension/bosses/mazoran.lua
+data-otservbr-global/monster/quests/ferumbras_ascension/bosses/shulgrax.lua

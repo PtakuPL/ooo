@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:38:54 UTC  
+> **Aktualizacja:** 2025-12-11 00:39:01 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **29113** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#96** | - |
+| 🔄 Cykl | **#97** | - |
 
 ---
 
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    96 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    97 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 STARTUP                                │
+│ Kategoria: 🎒 NPCLIB                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: startup                                        │
-│ [█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 23/1000 kluczy (2%)                                          │
+│ 📊 Ostatnia aktywność: npclib                                         │
+│ [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
+│ 0/1000 kluczy (0%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 26912 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:38:54                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:39:01                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -103,7 +103,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29113** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#96** | continuous mode |
+| 🔄 Cykli wykonanych | **#97** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,6 +111,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `npclib` +0 kluczy @ 00:39:00
 - ⚡ `startup` +0 kluczy @ 00:38:54
 - ⚡ `modules` +0 kluczy @ 00:38:46
 - ⚡ `chatchannels` +0 kluczy @ 00:38:39
@@ -118,7 +119,6 @@
 - ⚡ `libs` +0 kluczy @ 00:38:25
 - 🌍 `DE/php.json` +377465 kluczy @ 00:38:18
 - 🎒 `items` +0 kluczy @ 00:37:50
-- ⚡ `world` +0 kluczy @ 00:37:43
 
 
 ---
@@ -281,7 +281,7 @@
 | items | 13749 | 11689 | 4 | ⏭️ Skip 58m |
 | monsters | 7341 | 9549 | 4 | ⏭️ Skip 57m |
 | npc | 5334 | 0 | 0 | ✅ Active |
-| php | 1097 | 3219 | 2 | ⏭️ Skip 4m |
+| php | 1097 | 3219 | 2 | ⏭️ Skip 3m |
 | html | 663 | 749 | 2 | ⏭️ Skip 5m |
 | scripts | 385 | 0 | 4 | ⏭️ Skip 44m |
 | client | 283 | 821 | 2 | ⏭️ Skip 7m |
@@ -296,7 +296,7 @@
 | events | 5 | 5 | 4 | ⏭️ Skip 59m |
 | actions | 0 | 0 | 0 | ⏳ Empty |
 | errors | 0 | 0 | 0 | ⏳ Empty |
-| npclib | 0 | 0 | 2 | ⏭️ Skip 0m |
+| npclib | 0 | 0 | 4 | ⏭️ Skip 59m |
 | quests | 0 | 0 | 0 | ⏳ Empty |
 | server | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
@@ -318,8 +318,8 @@
 | chatchannels | 59m | 4x | Progresywny backoff |
 | modules | 59m | 4x | Progresywny backoff |
 | startup | 59m | 4x | Progresywny backoff |
-| npclib | 0m | 2x | Progresywny backoff |
-| php | 4m | 2x | Progresywny backoff |
+| npclib | 59m | 4x | Progresywny backoff |
+| php | 3m | 2x | Progresywny backoff |
 | html | 5m | 2x | Progresywny backoff |
 | client | 7m | 2x | Progresywny backoff |
 | sendtextmessage | 8m | 2x | Progresywny backoff |
@@ -332,7 +332,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #96 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #97 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -375,7 +375,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:38:54  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:39:01  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

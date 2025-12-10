@@ -703,5 +703,10 @@
   "item.2140.name": "ashes",
   "item.2141.name": "RESERVED SPRITE",
   "item.2142.name": "RESERVED SPRITE",
-  "item.2143.name": "RESERVED SPRITE"
+  "item.2143.name": "RESERVED SPRITE",
+  "item.2144.name": "lava",
+  "item.2145.name": "slits",
+  "item.2146.name": "blades",
+  "item.2147.name": "strange holes",
+  "item.2148.name": "spikes"
 }

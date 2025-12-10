@@ -513,5 +513,10 @@
   "item.1588.name": "grass wall window",
   "item.1591.name": "grass wall window",
   "item.1592.name": "grass wall",
-  "item.1628.name": "closed door"
+  "item.1628.name": "closed door",
+  "item.1629.name": "closed door",
+  "item.1630.name": "open door",
+  "item.1631.name": "closed door",
+  "item.1632.name": "closed door",
+  "item.1633.name": "open door"
 }

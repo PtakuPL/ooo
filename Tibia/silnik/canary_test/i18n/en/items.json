@@ -493,5 +493,10 @@
   "item.1068.name": "ant trail",
   "item.1069.name": "bug tral",
   "item.1079.name": "ant-hill",
-  "item.1080.name": "pitfall"
+  "item.1080.name": "pitfall",
+  "item.1090.name": "jagged stones",
+  "item.1099.name": "RESERVED SPRITE",
+  "item.1156.name": "trapdoor",
+  "item.1316.name": "sandstone",
+  "item.1339.name": "rifty earth"
 }

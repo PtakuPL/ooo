@@ -1058,3 +1058,5 @@ KWH:data-otservbr-global/npc/falonzo.lua
 KWH:data-otservbr-global/npc/gnomus.lua
 KWH:data-otservbr-global/npc/alkestios.lua
 KWH:data-otservbr-global/npc/iskan.lua
+KWH:data-otservbr-global/npc/red_lilly.lua
+KWH:data-otservbr-global/npc/gerimor.lua

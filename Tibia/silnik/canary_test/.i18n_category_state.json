@@ -78,8 +78,8 @@
       "timestamp": 1765405935.574355
     },
     "keywordhandler": {
-      "count": 18,
-      "timestamp": 1765405943.5609634
+      "count": 46,
+      "timestamp": 1765405951.092708
     }
   },
   "consecutive_zeros": {
@@ -110,7 +110,7 @@
     "php": 24,
     "html": 14,
     "client": 14,
-    "keywordhandler": 18
+    "keywordhandler": 64
   },
   "translation_sync": {
     "current_lang": "de",

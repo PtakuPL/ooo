@@ -1995,40 +1995,146 @@ I18N_DIR = "i18n"
 LANG_PRIORITY = ["pl", "de", "es", "pt", "fr", "it", "ru", "nl", "sv", "cs"]
 ALL_LANGUAGES = ["pl", "de", "es", "pt", "fr", "it", "ru", "uk", "nl", "sv", "da", "no", "fi", "cs", "sk", "hu", "ro", "bg", "el", "tr", "ar", "he", "hi", "zh", "ja", "ko", "th", "vi", "id", "ms"]
 
-# Definicja kategorii do przetworzenia
+# ============================================================================
+# PEŁNA DEFINICJA KATEGORII - WSZYSTKIE FOLDERY
+# ============================================================================
 CATEGORIES = {
+    # === NPC (priorytet 1) ===
     "npc": {
         "dirs": ["data-otservbr-global/npc", "data-canary/npc"],
-        "patterns": [r'StdModule\.say', r'text\s*=\s*"', r'npcHandler:say\(\s*"[^"]{5,}"'],
+        "patterns": [r'StdModule\.say', r'npcHandler:say\('],
         "exclude_if": ["i18nKey", "NPC_LIB.i18n.npcSay"],
-        "check_combined": True,  # Dla NPC: StdModule + text muszą być razem
-        "json": "npc.json"
+        "json": "npc.json",
+        "priority": 1
     },
+    
+    # === SCRIPTS (priorytet 2) ===
     "scripts": {
         "dirs": ["data-otservbr-global/scripts", "data/scripts"],
-        "patterns": [r'sendTextMessage\s*\([^,]+,\s*"[^"]+"\s*\)'],
-        "exclude_if": ["sendLocalizedTextMessage"],
-        "json": "scripts.json"
+        "patterns": [r'sendTextMessage\s*\(', r'player:say\s*\('],
+        "exclude_if": ["sendLocalizedTextMessage", "i18n.get"],
+        "json": "scripts.json",
+        "priority": 2
     },
+    
+    # === MONSTERS (priorytet 3) ===
     "monsters": {
         "dirs": ["data-otservbr-global/monster", "data-canary/monster"],
-        "patterns": [r'description\s*=\s*"[^"]+"', r'name\s*=\s*"[^"]+"'],
-        "exclude_if": [],
-        "json": "monsters.json"
+        "patterns": [r'description\s*=\s*"[^"]+', r'<description>[^<]+'],
+        "exclude_if": ["i18n:"],
+        "json": "monsters.json",
+        "file_ext": [".lua", ".xml"],
+        "priority": 3
     },
+    
+    # === RAIDS (priorytet 4) ===
+    "raids": {
+        "dirs": ["data-otservbr-global/raids", "data-canary/raids"],
+        "patterns": [r'message="[^"]+', r'<message>[^<]+'],
+        "exclude_if": ["i18n:"],
+        "json": "raids.json",
+        "file_ext": [".xml"],
+        "priority": 4
+    },
+    
+    # === WORLD (priorytet 5) ===
+    "world": {
+        "dirs": ["data-otservbr-global/world", "data-canary/world"],
+        "patterns": [r'name="[^"]+', r'description="[^"]+'],
+        "exclude_if": [],
+        "json": "world.json",
+        "file_ext": [".xml", ".lua"],
+        "priority": 5
+    },
+    
+    # === SPELLS (priorytet 6) ===
     "spells": {
         "dirs": ["data-otservbr-global/scripts/spells", "data/scripts/spells"],
-        "patterns": [r'words\s*=\s*"[^"]+"', r'description\s*=\s*"[^"]+"'],
-        "exclude_if": [],
-        "json": "spells.json"
+        "patterns": [r'words\s*=\s*"[^"]+', r'description\s*=\s*"[^"]+'],
+        "exclude_if": ["i18n:"],
+        "json": "spells.json",
+        "priority": 6
     },
+    
+    # === ITEMS (priorytet 7) ===
     "items": {
-        "dirs": ["data/items"],
-        "patterns": [r'name="[^"]+"', r'description="[^"]+"'],
+        "dirs": ["data/items", "data/XML"],
+        "patterns": [r'name="[^"]+', r'description="[^"]+', r'<attribute key="description" value="[^"]+'],
         "exclude_if": [],
-        "json": "items.json"
+        "json": "items.json",
+        "file_ext": [".xml"],
+        "priority": 7
+    },
+    
+    # === LIBS (priorytet 8) ===
+    "libs": {
+        "dirs": ["data/libs", "data-otservbr-global/lib"],
+        "patterns": [r'"[^"]{20,}"'],
+        "exclude_if": ["i18n", "require"],
+        "json": "libs.json",
+        "priority": 8
+    },
+    
+    # === EVENTS (priorytet 9) ===
+    "events": {
+        "dirs": ["data/events"],
+        "patterns": [r'sendTextMessage\s*\(', r'"[^"]{15,}"'],
+        "exclude_if": ["i18n"],
+        "json": "events.json",
+        "priority": 9
+    },
+    
+    # === CHATCHANNELS (priorytet 10) ===
+    "chatchannels": {
+        "dirs": ["data/chatchannels"],
+        "patterns": [r'name\s*=\s*"[^"]+'],
+        "exclude_if": [],
+        "json": "chatchannels.json",
+        "priority": 10
+    },
+    
+    # === MODULES (priorytet 11) ===
+    "modules": {
+        "dirs": ["data/modules"],
+        "patterns": [r'"[^"]{10,}"'],
+        "exclude_if": ["require", "dofile"],
+        "json": "modules.json",
+        "priority": 11
+    },
+    
+    # === STARTUP (priorytet 12) ===
+    "startup": {
+        "dirs": ["data-otservbr-global/startup"],
+        "patterns": [r'"[^"]{10,}"'],
+        "exclude_if": [],
+        "json": "startup.json",
+        "priority": 12
+    },
+    
+    # === NPCLIB (priorytet 13) ===
+    "npclib": {
+        "dirs": ["data/npclib"],
+        "patterns": [r'"[^"]{10,}"'],
+        "exclude_if": ["i18n"],
+        "json": "npclib.json",
+        "priority": 13
     }
 }
+
+# Plik komend sterowania workerem
+COMMAND_FILE = ".worker_command"
+
+def read_command():
+    """Odczytaj komendę z pliku (jeśli istnieje)"""
+    try:
+        if os.path.exists(COMMAND_FILE):
+            with open(COMMAND_FILE) as f:
+                cmd = f.read().strip()
+            os.remove(COMMAND_FILE)  # Usuń po odczytaniu
+            return cmd
+    except:
+        pass
+    return None
 
 # Wczytaj status plików z i18n_file_status.json
 STATUS_FILE = "i18n_file_status.json"

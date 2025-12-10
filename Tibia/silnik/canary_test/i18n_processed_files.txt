@@ -761,3 +761,6 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/nilsor.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/captain_greyhound.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/urks_the_mute.lua
+data-otservbr-global/scripts/quests/grimvale/actions_portal_minis_grimvale.lua
+data-otservbr-global/scripts/quests/grimvale/actions_portal_minis_ancient_feud.lua
+data-otservbr-global/scripts/quests/the_shattered_isles_quest/action_tortoise_egg_nargor.lua

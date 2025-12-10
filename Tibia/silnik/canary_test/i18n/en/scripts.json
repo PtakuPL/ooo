@@ -1,1 +1,6 @@
-{}
+{
+  "scripts.actions_portal_minis_grimvale.msg_1": "You have to wait ",
+  "scripts.actions_portal_minis_ancient_feud.msg_1": "All the players need to be level ",
+  "scripts.actions_portal_minis_ancient_feud.msg_2": "You have to wait ",
+  "scripts.action_tortoise_egg_nargor.msg_1": "You found "
+}

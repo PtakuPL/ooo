@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:45:06 UTC  
+> **Aktualizacja:** 2025-12-11 00:45:13 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **29314** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#140** | - |
+| 🔄 Cykl | **#141** | - |
 
 ---
 
@@ -66,10 +66,10 @@
 | Język | Status | Kluczy | Etap |
 |-------|--------|--------|------|
 | 🇩🇪 Niemiecki | 📊 494139 kluczy | 494139 | [EN] prefix |
-| 🇵🇱 Polski | 🔄 Sync... | 452919 | [EN] prefix |
-| 🇪🇸 Hiszpański | 📊 423616 kluczy | 423616 | [EN] prefix |
+| 🇵🇱 Polski | 📊 452919 kluczy | 452919 | [EN] prefix |
+| 🇪🇸 Hiszpański | 🔄 Sync... | 452919 | [EN] prefix |
 | 🇫🇷 Francuski | 📊 152368 kluczy | 152368 | [EN] prefix |
-| 🌐 Pozostałe (0/53) | 🔄 | 1917487 | Aktualnie: PL |
+| 🌐 Pozostałe (0/53) | 🔄 | 1946790 | Aktualnie: ES |
 
 ---
 
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   140 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   141 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🌍 TRANSLATION_SYNC (Etap 1)              │
-│ Kategoria: 🌍 PL/html.json                           │
+│ Kategoria: 🌍 ES/html.json                           │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: PL/html.json                                   │
+│ 📊 Ostatnia aktywność: ES/html.json                                   │
 │ [██████████████████████████████████████████████████] │
 │ 452919/29314 kluczy (1545%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 27515 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:45:06                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:45:13                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -103,7 +103,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29314** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#140** | continuous mode |
+| 🔄 Cykli wykonanych | **#141** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,7 +111,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🌍 `PL/html.json` +452919 kluczy @ 00:45:06
+- 🌍 `ES/html.json` +452919 kluczy @ 00:45:12
 - ⚡ `html` +0 kluczy @ 00:44:52
 - ⚡ `php` +0 kluczy @ 00:43:46
 - ⚡ `npclib` +0 kluczy @ 00:39:00
@@ -321,7 +321,7 @@
 | npclib | 53m | 4x | Progresywny backoff |
 | client | 1m | 2x | Progresywny backoff |
 | sendtextmessage | 1m | 2x | Progresywny backoff |
-| keywordhandler | 2m | 2x | Progresywny backoff |
+| keywordhandler | 1m | 2x | Progresywny backoff |
 | twig | 2m | 2x | Progresywny backoff |
 | php | 8m | 2x | Progresywny backoff |
 | html | 9m | 2x | Progresywny backoff |
@@ -332,7 +332,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #140 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #141 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -342,8 +342,8 @@
 | Język | Kluczy | Status |
 |-------|--------|--------|
 | DE | 494,139 | ⏳ |
-| PL | 452,919 | 🔄 |
-| ES | 423,616 | ⏳ |
+| PL | 452,919 | ⏳ |
+| ES | 452,919 | 🔄 |
 | PT | 394,445 | ⏳ |
 | FR | 152,368 | ⏳ |
 | IT | 0 | ⏳ |
@@ -352,7 +352,7 @@
 | SK | 0 | ⏳ |
 | HU | 0 | ⏳ |
 
-> **Aktualnie:** PL / html.json  
+> **Aktualnie:** ES / html.json  
 > **Ukończone języki:** 0/53  
 > **Prefix:** `[EN] ` (klucze do przetłumaczenia)
 
@@ -375,7 +375,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:45:06  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:45:13  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

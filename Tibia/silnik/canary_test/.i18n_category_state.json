@@ -123,7 +123,7 @@
     "raids": 351
   },
   "translation_sync": {
-    "current_lang": "pl",
+    "current_lang": "es",
     "current_category": "html.json",
     "languages_done": [],
     "stats": {
@@ -165,11 +165,11 @@
       },
       "es": {
         "chatchannels": 8,
-        "total": 423616,
+        "total": 452919,
         "client": 283,
         "cpp": 15,
         "events": 5,
-        "html": 663,
+        "html": 795,
         "items": 13749,
         "libs": 21,
         "modules": 16,
@@ -215,6 +215,6 @@
         "raids": 147
       }
     },
-    "last_sync": 1765410306.2278562
+    "last_sync": 1765410312.9960806
   }
 }

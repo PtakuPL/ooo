@@ -57,9 +57,9 @@ npcType.onCloseChannel = function(npc, creature)
 end
 
 -- Travel
-local travelKeyword = keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandler, text = "Ye' want a passage back to cormaya? {Yes} or {no}." })
+local travelKeyword = keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.hawkhurst_ingol.stdmod_1" })
 travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, cost = 400, text = "All Hand Hoy!", destination = Position(33356, 31983, 7) })
-travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, text = "We would like to serve you some time.", reset = true })
+travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.hawkhurst_ingol.stdmod_2", reset = true })
 
 npcHandler:setMessage(MESSAGE_GREET, "Ahoy, matey! Lookin' for a {passage}, eh.")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye.")

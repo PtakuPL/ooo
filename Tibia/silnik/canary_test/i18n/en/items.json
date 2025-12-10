@@ -178,5 +178,10 @@
   "item.403.name": "File AH-X17L89",
   "item.404.name": "barrel of beer",
   "item.405.name": "weapons crate",
-  "item.406.name": "family signet ring"
+  "item.406.name": "family signet ring",
+  "item.407.name": "grass",
+  "item.408.name": "wooden floor",
+  "item.409.name": "white marble floor",
+  "item.410.name": "black marble floor",
+  "item.415.name": "sandstone floor"
 }

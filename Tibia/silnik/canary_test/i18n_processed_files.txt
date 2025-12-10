@@ -1090,3 +1090,13 @@ TWIG:html_copy/system/templates/buttons.submit.html.twig
 TWIG:html_copy/system/templates/guilds.change_logo.html.twig
 TWIG:html_copy/system/templates/forum.new_thread.html.twig
 TWIG:html_copy/system/templates/buttons.back.html.twig
+TWIG:html_copy/system/templates/admin.news.table.html.twig
+TWIG:html_copy/system/templates/exception.html.twig
+TWIG:html_copy/system/templates/admin.plugins.outdated.html.twig
+TWIG:html_copy/system/templates/account.characters.delete.html.twig
+TWIG:html_copy/system/templates/team.html.twig
+TWIG:html_copy/system/templates/buttons.change_password.html.twig
+TWIG:html_copy/system/templates/faq.html.twig
+TWIG:html_copy/system/templates/guilds.change_motd.html.twig
+TWIG:html_copy/system/templates/admin.changelog.html.twig
+TWIG:html_copy/system/templates/online.html.twig

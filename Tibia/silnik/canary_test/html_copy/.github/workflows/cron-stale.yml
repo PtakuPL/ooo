@@ -1,8 +1,11 @@
 ---
-name: 'Cron - Stale issues and PRs'
+name: 'Cron - Stale issues and PRs (disabled)'
 on:
-  schedule:
-    - cron: '30 1 * * *'
+  workflow_dispatch:
+    inputs:
+      note:
+        description: 'Workflow disabled; manual dispatch only.'
+        required: false
 
 jobs:
   stale:

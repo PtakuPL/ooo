@@ -26,6 +26,10 @@
     "items": {
       "count": 0,
       "timestamp": 1765405787.7135022
+    },
+    "libs": {
+      "count": 5,
+      "timestamp": 1765405794.969008
     }
   },
   "consecutive_zeros": {
@@ -33,10 +37,12 @@
     "monsters": 4,
     "raids": 4,
     "world": 4,
-    "items": 1
+    "items": 1,
+    "libs": 0
   },
   "total_processed": {
-    "items": 11689
+    "items": 11689,
+    "libs": 5
   },
   "translation_sync": {
     "current_lang": "de",

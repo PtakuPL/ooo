@@ -138,67 +138,88 @@ npcHandler:setMessage(
 
 keywordHandler:addKeyword({ "name" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.inigo.stdmod_1",
+	text = "Ah, back in the old days, I was called Inigo Verasquiriz, but I doubt my family would acknowledge me. \z
+		Those that are still alive, that is.",
 })
 keywordHandler:addKeyword({ "job" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.inigo.stdmod_2",
+	text = "I used to be a hunter and trapper, but these bones have grown weary. \z
+		I now tan furs and hides and {trade} in creature products. And I can help you find your way if you need directions.",
 })
 keywordHandler:addKeyword({ "tibia" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.inigo.stdmod_3",
+	text = "That's where we are - the world of Tibia. \z
+		We're on a small island called {Dawnport}, not far from the coast of the Tibian {Mainland}, to be precise.",
 })
 keywordHandler:addKeyword({ "questing" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.inigo.stdmod_4",
+	text = "Oh, I can handle my tasks myself, thank you. \z
+		If you are looking for something to do, you should go to Morris and ask him for quests. \z
+		You can also help us fight {monsters}.",
 })
 keywordHandler:addKeyword({ "people" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.inigo.stdmod_5",
+	text = "Well, the other fellows you see here, selling stuff and so forth. \z
+		Say a name and I'll tell you what I know of him or her.",
 })
 keywordHandler:addKeyword({ "monsters" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.inigo.stdmod_6",
+	text = "Marvellous specimen we have here on {Dawnport}! \z
+		Just be careful when you go hunting them, {dying} hurts in {Tibia}! \z
+		I will happily buy any creature products you may find.",
 })
 keywordHandler:addKeyword({ "garamond" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.inigo.stdmod_7",
+	text = "Used to be a professor at the magic academy in Edron, I believe. \z
+		Likes to see different places, so he joined our illustrous little group. \z
+		Sells {sorcerer} and {druid} {spells} to our trainees.",
 })
 keywordHandler:addKeyword({ "tybald" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.inigo.stdmod_8",
+	text = "I'm not sure that's his actual name, but I guess he has good reasons to stay incognito here. \z
+		In any case, he's a formidable fighter and knows usefull {spells} for knights and paladins.",
 })
 keywordHandler:addKeyword({ "richard" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.inigo.stdmod_9",
+	text = "Richard came here as a shipwrecked carpenter, and now sells {tools} and {food} to all adventurers. \z
+		If you need a {rope} or {shovel}, {fishing rod} or some provisions for a hunt, you should trade with him!",
 })
 keywordHandler:addKeyword({ "knight" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.inigo.stdmod_10",
+	text = "Knights are close combat fighters, the toughest vocation of all. \z
+		They usually wield melee weapons such as swords, axes or clubs.",
 })
 keywordHandler:addKeyword({ "druid" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.inigo.stdmod_11",
+	text = "Druids are nature magicians. \z
+		Their speciality is casting ice and earth magic, as well as providing healing for others.",
 })
 keywordHandler:addKeyword({ "paladin" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.inigo.stdmod_12",
+	text = "Paladins are well-trained distance fighters and can cast holy magic. \z
+		You will usually see them wearing bows or crossbows.",
 })
 keywordHandler:addKeyword({ "sorcerer" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.inigo.stdmod_13",
+	text = "Sorcerers are elemental magicians. They have mastered fire, energy and death magic.",
 })
 keywordHandler:addKeyword({ "tools" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.inigo.stdmod_14",
+	text = "In {Tibia}, you can use different tools with your environment, or for quests. \z
+		The most important tools are {rope} and {shovel}. \z
+		A {fishing rod}'s also good when you need to eat, and are near a river or the sea.",
 })
 keywordHandler:addKeyword({ "food" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.inigo.stdmod_15",
+	text = "Food is very important for your health and mana. \z
+		If you are hurt in a fight with a monster, select 'USE' on food such as cheese, ham or meat to eat it. \z
+		This will slowly refill your health and mana. Here at the outpost, you can buy food from {Richard}.",
 })
 keywordHandler:addKeyword({ "fishing rod" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.inigo.stdmod_16",
+	text = "Use a fishing rod on a patch of water to see if you can catch fish! \z
+		Eating is essential in {Tibia} - if you don't eat when you're hungry, you won't regenerate health or mana. \z
+		So you should aways have some {food} with you.",
 })
 
 local function creatureSayCallback(npc, creature, type, message)

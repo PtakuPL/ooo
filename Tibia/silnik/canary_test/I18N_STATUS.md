@@ -278,6 +278,8 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `inigo` - ukończono 2025-12-10 11:25
+- ✅ `hamish` - ukończono 2025-12-10 11:25
 - ✅ `gregor` - ukończono 2025-12-10 11:25
 - ✅ `gerimor` - ukończono 2025-12-10 11:25
 - ✅ `garamond` - ukończono 2025-12-10 11:25

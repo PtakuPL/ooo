@@ -774,3 +774,8 @@ data-otservbr-global/scripts/quests/kilmaresh_quest/actions_coruja.lua
 data-otservbr-global/scripts/quests/kilmaresh_quest/actions_scissors.lua
 data-otservbr-global/scripts/quests/kilmaresh_quest/actions_tortoise.lua
 data-otservbr-global/scripts/quests/kilmaresh_quest/actions_cagekey.lua
+data-otservbr-global/scripts/quests/kilmaresh_quest/actions_tumuloerro.lua
+data-otservbr-global/scripts/quests/kilmaresh_quest/actions_basin.lua
+data-otservbr-global/scripts/quests/kilmaresh_quest/actions_tumulo.lua
+data-otservbr-global/scripts/quests/kilmaresh_quest/actions_peeler.lua
+data-otservbr-global/scripts/quests/kilmaresh_quest/actions_sangra.lua

@@ -68,8 +68,8 @@
       "timestamp": 1765409653.3533702
     },
     "client": {
-      "count": 0,
-      "timestamp": 1765406226.1324477
+      "count": 98,
+      "timestamp": 1765409676.7994382
     },
     "sendtextmessage": {
       "count": 0,
@@ -97,7 +97,8 @@
     "modules": 2,
     "startup": 2,
     "npclib": 2,
-    "php": 2
+    "php": 2,
+    "client": 0
   },
   "total_processed": {
     "items": 11689,
@@ -108,7 +109,7 @@
     "startup": 23,
     "php": 3219,
     "html": 749,
-    "client": 14,
+    "client": 161,
     "keywordhandler": 64,
     "twig": 365,
     "monsters": 9549,

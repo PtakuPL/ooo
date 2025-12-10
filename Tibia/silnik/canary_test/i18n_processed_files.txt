@@ -1242,3 +1242,13 @@ html_copy/system/locale/cs/main.php
 html_copy/system/locale/sk/main.php
 html_copy/system/locale/sr/main.php
 html_copy/system/locale/en/main.php
+html_copy/system/locale/en/install.php
+html_copy/system/locale/en/admin.php
+html_copy/system/locale/no/main.php
+html_copy/system/locale/be/main.php
+html_copy/system/locale/ru/main.php
+html_copy/system/locale/ru/install.php
+html_copy/system/locale/ru/admin.php
+html_copy/system/locale/uk/main.php
+html_copy/system/locale/pl/main.php
+html_copy/system/locale/pl/install.php

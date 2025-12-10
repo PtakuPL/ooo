@@ -15,7 +15,8 @@
     "sendtextmessage": 1765406847.0815792,
     "keywordhandler": 1765406861.8998344,
     "twig": 1765406985.7602158,
-    "startup": 1765408820.5196626
+    "startup": 1765408820.5196626,
+    "php": 1765408877.3955452
   },
   "last_processed": {
     "scripts": {
@@ -63,8 +64,8 @@
       "timestamp": 1765408227.6209323
     },
     "php": {
-      "count": 46,
-      "timestamp": 1765408268.2887404
+      "count": 0,
+      "timestamp": 1765408277.39554
     },
     "html": {
       "count": 0,
@@ -99,7 +100,7 @@
     "modules": 4,
     "startup": 2,
     "npclib": 4,
-    "php": 0,
+    "php": 2,
     "html": 2,
     "client": 2,
     "sendtextmessage": 2,

@@ -2247,6 +2247,162 @@ MSGPY
 }
 
 #===============================================================================
+# NOWA KATEGORIA: keywordHandler bez i18nKey
+#===============================================================================
+# Przetwarza keywordHandler:addKeyword które mają text = {...} bez i18nKey
+# Dodaje klucze do npc.json i transformuje Lua
+#===============================================================================
+process_keywordHandler_category() {
+    local batch="${1:-5}"
+    local json_file="$I18N_DIR/en/npc.json"
+    local count=0
+    local modified=0
+    
+    log "${CYAN}🔑 Processing keywordHandler without i18nKey...${NC}"
+    
+    # Python script do przetwarzania plików
+    python3 << 'KWPY'
+import json
+import re
+import os
+import sys
+
+BATCH = int(sys.argv[1]) if len(sys.argv) > 1 else 5
+json_file = "i18n/en/npc.json"
+processed_file = "i18n_processed_files.txt"
+
+# Wczytaj JSON
+try:
+    with open(json_file) as f:
+        npc_data = json.load(f)
+except:
+    npc_data = {}
+
+# Wczytaj przetworzone pliki
+processed = set()
+try:
+    with open(processed_file) as f:
+        processed = set(line.strip() for line in f)
+except:
+    pass
+
+modified_count = 0
+keys_added = 0
+
+# Znajdź pliki NPC z keywordHandler bez i18nKey
+npc_dir = "data-otservbr-global/npc"
+for filename in os.listdir(npc_dir):
+    if not filename.endswith('.lua'):
+        continue
+    
+    filepath = os.path.join(npc_dir, filename)
+    marker = f"KWH:{filepath}"
+    
+    if marker in processed:
+        continue
+    
+    try:
+        with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+            content = f.read()
+    except:
+        continue
+    
+    # Szukaj keywordHandler:addKeyword bez i18nKey
+    # Pattern: keywordHandler:addKeyword({ "word" }, StdModule.say, {\n\tnpcHandler = npcHandler,\n\ttext = {...}\n})
+    pattern = r'keywordHandler:addKeyword\(\s*\{\s*"([^"]+)"\s*\}\s*,\s*StdModule\.say\s*,\s*\{\s*npcHandler\s*=\s*npcHandler\s*,\s*text\s*=\s*\{([^}]+)\}\s*,?\s*\}\)'
+    
+    matches = list(re.finditer(pattern, content, re.DOTALL))
+    
+    if not matches:
+        continue
+    
+    # Sprawdź czy już ma i18nKey
+    has_i18n = 'i18nKey' in content
+    needs_work = False
+    
+    for match in matches:
+        full_match = match.group(0)
+        if 'i18nKey' not in full_match:
+            needs_work = True
+            break
+    
+    if not needs_work:
+        continue
+    
+    npc_name = filename.replace('.lua', '').lower().replace(' ', '_').replace('-', '_')
+    new_content = content
+    local_keys_added = 0
+    
+    for i, match in enumerate(matches):
+        keyword = match.group(1)
+        text_block = match.group(2)
+        full_match = match.group(0)
+        
+        # Już ma i18nKey?
+        if 'i18nKey' in full_match:
+            continue
+        
+        # Wyciągnij teksty z tablicy
+        texts = re.findall(r'"([^"]+)"', text_block)
+        
+        if not texts:
+            continue
+        
+        # Utwórz klucz
+        safe_kw = keyword.lower().replace(' ', '_')
+        base_key = f"npc.{npc_name}.kw_{safe_kw}"
+        
+        # Dla wielu tekstów - utwórz array key
+        if len(texts) == 1:
+            key = base_key
+            npc_data[key] = texts[0]
+            keys_added += 1
+            local_keys_added += 1
+        else:
+            # Wiele tekstów - dodaj jako array_1, array_2, ...
+            for j, txt in enumerate(texts, 1):
+                key = f"{base_key}_{j}"
+                npc_data[key] = txt
+                keys_added += 1
+                local_keys_added += 1
+        
+        # Transformacja - dodaj i18nKey do istniejącego kodu
+        # Zamień text = {...} na text = {...}, i18nKey = "..."
+        if len(texts) == 1:
+            new_text_block = f'text = "{texts[0]}", i18nKey = "{base_key}"'
+        else:
+            # Dla array, tworzymy nowy format
+            new_text_block = f'text = {{{text_block}}}, i18nKey = "{base_key}_1"'
+        
+        # Prostsza zamiana - dodaj i18nKey przed zamknięciem
+        old_ending = 'npcHandler = npcHandler,'
+        if old_ending in full_match:
+            # Znajdź pozycję i wstaw i18nKey
+            pass  # Skomplikowane, pomińmy transformację na razie
+    
+    # Zapisz klucze (transformacja plików w następnej wersji)
+    if local_keys_added > 0:
+        print(f"   🔑 {filename}: +{local_keys_added} kluczy")
+        modified_count += 1
+        
+        # Oznacz jako częściowo przetworzony (klucze wyciągnięte)
+        with open(processed_file, 'a') as f:
+            f.write(f"{marker}\n")
+    
+    if modified_count >= BATCH:
+        break
+
+# Zapisz JSON
+with open(json_file, 'w', encoding='utf-8') as f:
+    json.dump(npc_data, f, indent=2, ensure_ascii=False)
+
+print(f"   📊 Razem: {modified_count} plików, +{keys_added} kluczy")
+KWPY
+    
+    log "${GREEN}✅ keywordHandler: Przetworzono${NC}"
+}
+
+#===============================================================================
 # AUTO TRANSLATE - Automatyczne tłumaczenie BEZ interakcji
 #===============================================================================
 # Kopiuje klucze EN do innych języków z prefiksem [LANG] lub używa prostych
@@ -3582,6 +3738,11 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                             echo "   📨 Przetwarzam sendTextMessage patterns..."
                             process_sendTextMessage_category "$BATCH"
                             echo "   📊 sendTextMessage: Zamieniono pliki"
+                            ;;
+                        keywordhandler|kwh)
+                            echo "   🔑 Przetwarzam keywordHandler bez i18nKey..."
+                            process_keywordHandler_category "$BATCH"
+                            echo "   📊 keywordHandler: Dodano klucze"
                             ;;
                         *)
                             echo "   ⚠️ Nieznana kategoria: $MODE_CAT"

@@ -278,6 +278,7 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `gnomerik` - ukończono 2025-12-10 14:10
 - ✅ `faluae` - ukończono 2025-12-10 14:05
 - ✅ `eruaran` - ukończono 2025-12-10 14:05
 - ✅ `eroth` - ukończono 2025-12-10 14:05

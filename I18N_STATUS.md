@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 13:19:35 UTC  
+> **Aktualizacja:** 2025-12-10 13:19:41 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,7 +21,7 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **13** | ↑ |
+| 📁 Plików przetworzonych | **14** | ↑ |
 | ⏭️ Plików wykluczonych | **717** | - |
 | 🔑 Kluczy i18n | **4** | ↑ |
 | 🌍 Języków | **53** | ✓ |
@@ -78,7 +78,7 @@
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #    29 │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    ✅ IDLE                                   │
+│ Status:    🟢 RUNNING                                │
 │ Tryb:      MIGRATION (8 etapów)                     │
 │ Kategoria: 🧙 NPC Dialogs                            │
 ├─────────────────────────────────────────────────────────────────┤
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 13:19:35                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 13:19:41                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,8 +98,8 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przetworzonych | **13** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **13** (299 z i18nKey) | z 1026 plików NPC |
+| 📁 Plików przetworzonych | **14** | z i18n_file_status.json |
+| ✅ NPC zmigrowanych | **14** (299 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **4** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
 | 🔄 Cykli wykonanych | **#29** | continuous mode |
@@ -110,11 +110,11 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ✅ `richard` - ukończono 2025-12-10 13:19
 - ✅ `frederik` - ukończono 2025-12-10 13:19
 - ✅ `nipuna` - ukończono 2025-12-10 13:19
 - ✅ `frans` - ukończono 2025-12-10 13:19
 - ✅ `nelly` - ukończono 2025-12-10 13:19
-- ✅ `mordecai` - ukończono 2025-12-10 13:19
 
 ---
 
@@ -294,13 +294,14 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 13:19:35  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 13:19:41  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `richard` - ukończono 2025-12-10 13:19
 - ✅ `frederik` - ukończono 2025-12-10 13:19
 - ✅ `nipuna` - ukończono 2025-12-10 13:19
 - ✅ `frans` - ukończono 2025-12-10 13:19
@@ -310,7 +311,6 @@
 - ✅ `battlemart` - ukończono 2025-12-10 13:19
 - ✅ `hamish` - ukończono 2025-12-10 13:19
 - ✅ `alaistar` - ukończono 2025-12-10 13:19
-- ✅ `gnomegica` - ukończono 2025-12-10 13:19
 
 ---
 

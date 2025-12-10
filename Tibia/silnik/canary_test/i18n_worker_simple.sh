@@ -989,7 +989,7 @@ greet_count = 0
 farewell_count = 0
 
 # Pattern dla addGreetKeyword z text = "..."
-pattern_greet = r'addGreetKeyword\s*\([^)]+\)\s*,\s*\{[^}]*?text\s*=\s*"([^"]+)"'
+pattern_greet = r'addGreetKeyword\s*\(\{[^}]+\}\s*,\s*\{[^}]*?text\s*=\s*"([^"]+)"'
 texts_greet = re.findall(pattern_greet, content, re.DOTALL)
 
 for i, text in enumerate(texts_greet, 1):
@@ -1002,7 +1002,7 @@ for i, text in enumerate(texts_greet, 1):
             greet_count += 1
 
 # Pattern dla addFarewellKeyword z text = "..."
-pattern_farewell = r'addFarewellKeyword\s*\([^)]+\)\s*,\s*\{[^}]*?text\s*=\s*"([^"]+)"'
+pattern_farewell = r'addFarewellKeyword\s*\(\{[^}]+\}\s*,\s*\{[^}]*?text\s*=\s*"([^"]+)"'
 texts_farewell = re.findall(pattern_farewell, content, re.DOTALL)
 
 for i, text in enumerate(texts_farewell, 1):

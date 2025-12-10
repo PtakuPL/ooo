@@ -23001,13 +23001,102 @@
           "status": "completed",
           "doc_file": "docs/i18n/npc/rahkem.md",
           "keys_documented": 32
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 30
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 32
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 32
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 216 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 30,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
         }
       },
-      "overall_status": "in_progress"
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T07:14:04.668958"
     }
   },
   "global_stats": {
-    "files_completed": 202,
+    "files_completed": 203,
     "total_keys": 0
   }
 }

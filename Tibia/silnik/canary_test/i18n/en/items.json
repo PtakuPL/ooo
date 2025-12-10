@@ -2388,5 +2388,20 @@
   "item.5541.name": "dead carrion worm",
   "item.5542.name": "rope-ladder",
   "item.5543.name": "cart",
-  "item.5544.name": "trapdoor"
+  "item.5544.name": "trapdoor",
+  "item.5552.name": "rum flask",
+  "item.5553.name": "small fish",
+  "item.5564.name": "slain pirate skeleton",
+  "item.5565.name": "slain pirate ghost",
+  "item.5566.name": "slain pirate ghost",
+  "item.5567.name": "slain pirate ghost",
+  "item.5615.name": "pirate tapestry",
+  "item.5624.name": "dead tortoise",
+  "item.5625.name": "dead tortoise",
+  "item.5626.name": "dead tortoise",
+  "item.5627.name": "dead thornback tortoise",
+  "item.5628.name": "dead thornback tortoise",
+  "item.5629.name": "dead tortoise",
+  "item.5646.name": "dirt wall",
+  "item.5647.name": "stone wall"
 }

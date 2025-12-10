@@ -4743,5 +4743,20 @@
   "item.12039.name": "panther head",
   "item.12040.name": "panther paw",
   "item.12047.name": "pharaoh dummy",
-  "item.12048.name": "hydromancer dummy"
+  "item.12048.name": "hydromancer dummy",
+  "item.12049.name": "mutated rat dummy",
+  "item.12050.name": "zombie dummy",
+  "item.12051.name": "nightstalker dummy",
+  "item.12052.name": "lost soul dummy",
+  "item.12053.name": "carniphila dummy",
+  "item.12056.name": "blightwalker dummy",
+  "item.12057.name": "reward box",
+  "item.12058.name": "dead crystal wolf",
+  "item.12064.name": "RESERVED SPRITE",
+  "item.12069.name": "dead crystal wolf",
+  "item.12070.name": "dead crystal wolf",
+  "item.12071.name": "dead crystal wolf",
+  "item.12073.name": "slime fungus",
+  "item.12074.name": "RESERVED SPRITE",
+  "item.12077.name": "slime gobbler"
 }

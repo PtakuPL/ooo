@@ -3065,6 +3065,46 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                             process_items_category "$BATCH"
                             echo "   📊 Items: Dodano klucze"
                             ;;
+                        raids)
+                            echo "   ⚔️ Przetwarzam RAIDS..."
+                            process_raids_category "$BATCH"
+                            echo "   📊 Raids: Dodano klucze"
+                            ;;
+                        world)
+                            echo "   🗺️ Przetwarzam WORLD..."
+                            process_world_category "$BATCH"
+                            echo "   📊 World: Dodano klucze"
+                            ;;
+                        libs)
+                            echo "   📚 Przetwarzam LIBS..."
+                            process_libs_category "$BATCH"
+                            echo "   📊 Libs: Dodano klucze"
+                            ;;
+                        events)
+                            echo "   🎉 Przetwarzam EVENTS..."
+                            process_events_category "$BATCH"
+                            echo "   📊 Events: Dodano klucze"
+                            ;;
+                        chatchannels)
+                            echo "   💬 Przetwarzam CHATCHANNELS..."
+                            process_chatchannels_category "$BATCH"
+                            echo "   📊 Chatchannels: Dodano klucze"
+                            ;;
+                        modules)
+                            echo "   📦 Przetwarzam MODULES..."
+                            process_modules_category "$BATCH"
+                            echo "   📊 Modules: Dodano klucze"
+                            ;;
+                        startup)
+                            echo "   🚀 Przetwarzam STARTUP..."
+                            process_startup_category "$BATCH"
+                            echo "   📊 Startup: Dodano klucze"
+                            ;;
+                        npclib)
+                            echo "   📖 Przetwarzam NPCLIB..."
+                            process_npclib_category "$BATCH"
+                            echo "   📊 NpcLib: Dodano klucze"
+                            ;;
                         *)
                             echo "   ⚠️ Nieznana kategoria: $MODE_CAT"
                             ;;

@@ -1797,14 +1797,29 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                     echo "🔧 TRYB 1: MIGRACJA ($MODE_ARG plików do zrobienia)"
                     COUNT=0
                     for f in data-otservbr-global/npc/*.lua; do
-                        # Sprawdź czy ma StdModule.say (może być na innej linii niż text)
+                        NEEDS_WORK=false
+                        
+                        # Sprawdź StdModule.say bez i18nKey
                         if grep -q "StdModule\.say" "$f" 2>/dev/null; then
                             if ! grep -q "i18nKey" "$f" 2>/dev/null; then
-                                process_file "$f"
-                                COUNT=$((COUNT + 1))
-                                if [ "$COUNT" -ge "$BATCH" ]; then
-                                    break
+                                if grep -q 'text = "' "$f" 2>/dev/null; then
+                                    NEEDS_WORK=true
                                 fi
+                            fi
+                        fi
+                        
+                        # Sprawdź npcHandler:say("...") bez NPC_LIB.i18n.npcSay
+                        if grep -qE 'npcHandler:say\(\s*"[^"]{5,}"' "$f" 2>/dev/null; then
+                            if ! grep -q "NPC_LIB.i18n.npcSay" "$f" 2>/dev/null; then
+                                NEEDS_WORK=true
+                            fi
+                        fi
+                        
+                        if [ "$NEEDS_WORK" = "true" ]; then
+                            process_file "$f"
+                            COUNT=$((COUNT + 1))
+                            if [ "$COUNT" -ge "$BATCH" ]; then
+                                break
                             fi
                         fi
                     done

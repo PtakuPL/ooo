@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 23:40:06 UTC  
+> **Aktualizacja:** 2025-12-10 23:40:13 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **24214** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#50** | - |
+| 🔄 Cykl | **#51** | - |
 
 ---
 
@@ -76,7 +76,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    50 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    51 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 12215 operacji               │
 │ 🕐 Aktywne kategorie: 16                               │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 23:40:06                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 23:40:13                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -102,7 +102,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **24214** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
-| 🔄 Cykli wykonanych | **#50** | continuous mode |
+| 🔄 Cykli wykonanych | **#51** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -291,14 +291,14 @@
 | messages | 11 | 0 | 0 | ✅ Active |
 | chatchannels | 8 | 8 | 2 | ⏭️ Skip 5m |
 | events | 5 | 5 | 2 | ⏭️ Skip 5m |
-| libs | 5 | 5 | 2 | ⏭️ Skip 5m |
+| libs | 5 | 5 | 2 | ⏭️ Skip 4m |
 | actions | 0 | 0 | 0 | ⏳ Empty |
 | errors | 0 | 0 | 0 | ⏳ Empty |
 | npclib | 0 | 0 | 2 | ⏭️ Skip 6m |
 | quests | 0 | 0 | 0 | ⏳ Empty |
 | server | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
-| world | 0 | 0 | 5 | ⏭️ Skip 116m |
+| world | 0 | 0 | 5 | ⏭️ Skip 115m |
 
 ---
 
@@ -309,9 +309,9 @@
 | scripts | 57m | 6x | Progresywny backoff |
 | monsters | 115m | 5x | Progresywny backoff |
 | raids | 115m | 5x | Progresywny backoff |
-| world | 116m | 5x | Progresywny backoff |
+| world | 115m | 5x | Progresywny backoff |
 | items | 4m | 2x | Progresywny backoff |
-| libs | 5m | 2x | Progresywny backoff |
+| libs | 4m | 2x | Progresywny backoff |
 | events | 5m | 2x | Progresywny backoff |
 | chatchannels | 5m | 2x | Progresywny backoff |
 | modules | 6m | 2x | Progresywny backoff |
@@ -330,7 +330,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #50 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #51 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -340,7 +340,7 @@
 | Język | Kluczy | Status |
 |-------|--------|--------|
 | DE | 246,646 | ⏳ |
-| PL | 157,039 | 🔄 |
+| PL | 181,223 | 🔄 |
 | ES | 0 | ⏳ |
 | PT | 0 | ⏳ |
 | FR | 0 | ⏳ |
@@ -350,7 +350,7 @@
 | SK | 0 | ⏳ |
 | HU | 0 | ⏳ |
 
-> **Aktualnie:** PL / scripts.json  
+> **Aktualnie:** PL / spells.json  
 > **Ukończone języki:** 0/53  
 > **Prefix:** `[EN] ` (klucze do przetłumaczenia)
 
@@ -373,7 +373,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:40:06  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:40:13  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

@@ -298,27 +298,25 @@ NOTE:tekst       # Notatka
 - ❌ **voices** - ~300+ plików, wymaga modyfikacji C++ (broadcast → per-player)
 - ❌ **npcHandler:say({...})** - tablice tekstów (~50 plików)
 - ❌ **Automatyczne tłumaczenia** - tryb TRANSLATION wymaga interaktywnego terminala
-- ✅ **StdModule.say** - 297/297 plików zmigrowanych ✅
-- ✅ **npcHandler:say("text")** - ~450 plików z NPC_LIB.i18n.npcSay ✅
-- ✅ **~4200 kluczy** wyciągniętych do en/npc.json
-- ✅ Placeholder'y dla 8 języków (pl, de, es, fr, it, pt, ru, uk)
-- ✅ Dokumentacja MD dla każdego NPC
-- ✅ Live Dashboard na GitHub (I18N_STATUS.md)
-
-### 🆕 Nowe w v2.1 (2025-12-10):
-- ✅ Transformacja `npcHandler:say("text", npc, creature)` → `NPC_LIB.i18n.npcSay()`
-- ✅ Obsługa multi-line tekstów (teksty rozciągnięte na wiele linii)
-- ✅ Rozróżnianie konkatenacji Lua (` .. `) od wielokropków (`...`)
-- ✅ Pomijanie tablic `npcHandler:say({...})` (zachowane bez zmian)
-- ✅ Ekstrakcja kluczy z obu wzorców do npc.json
+- ❌ **Scripts z wieloliniowymi sendTextMessage** - regex nie łapie multi-line
+- ❌ **Scripts ze zmiennymi** - `sendTextMessage(type, info.msgs[2])` - pominąć lub oznaczyć
 
 ### 🔴 Kolejne do zrobienia (PRIORYTET):
 | Wzorzec | Plików | Wymaga C++ | Złożoność | Status |
 |---------|--------|------------|-----------|--------|
 | `voices = {{ text = }}` | ~131 | **TAK** | 🔶 ŚREDNIA | 📋 ANALIZA GOTOWA |
-| `keywordHandler:add*Keyword` | ~21 | NIE | 🟢 NISKA | ❌ DO ANALIZY |
 | `npcHandler:say({array})` | ~50 | NIE | 🟢 NISKA | ❌ DO ZROBIENIA |
 | `player:sendTextMessage()` | ~312 | NIE | 🟡 ŚREDNIA | ❌ DO ZROBIENIA |
+| `scripts - zmienne` | ~100+ | NIE | 🔴 WYSOKA | ⚠️ RĘCZNA PRACA |
+| `keywordHandler:add*Keyword` | ~21 | NIE | 🟢 NISKA | ❌ DO ANALIZY |
+
+### 📝 NOTATKI - Scripts problem:
+Wiele plików scripts używa:
+1. **Zmiennych**: `sendTextMessage(type, info.msgs[2])` - nie można automatycznie
+2. **Konkatenacji**: `"You have " .. time .. " seconds"` - wymaga placeholderów `{time}`
+3. **Multi-line**: Regex `sendTextMessage\([^)]+\)` nie łapie wieloliniowych
+
+**Rozwiązanie**: Nowy regex lub ręczna migracja dla skomplikowanych przypadków.
 
 ---
 

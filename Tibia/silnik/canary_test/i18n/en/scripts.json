@@ -33,11 +33,20 @@
   "scripts.movements_boat_puzzle.msg_4": "You see the scattered parts of a wrecked ship. Miraculously the ship telescope survived the wreck it seems still to be intact.",
   "scripts.movements_boat_puzzle.msg_5": "Witout any points of orientation you will never find your way back. Try to find a way to improve your navigation.",
   "scripts.actions_telescope.msg_1": "The telescope provides a perfect view over the endless ocean - no land in sight",
-  "scripts.actions_doors.msg_1": "The door seems to be sealed against unwanted intruders.",
+  "scripts.actions_doors.msg_1": "You do not have enough level.",
   "scripts.actions_entrance.msg_1": "Once more you mix the chalk with a drop of your blood and a bit of water and renew the symbol on the floor...",
   "scripts.actions_entrance.msg_2": "You can only use this entrance during the night.",
-  "scripts.actions_doors.msg_2": "You can not use this boat yet.",
+  "scripts.actions_doors.msg_2": "The door seems to be sealed against unwanted intruders.",
   "scripts.movements_teleportto.msg_1": "You must wait. Someone is challenging Furious Scorpion now.",
   "scripts.actions_chests.msg_1": "You have found a ",
-  "scripts.actions_chests.msg_2": "It is empty."
+  "scripts.actions_chests.msg_2": "It is empty.",
+  "scripts.movements_sacrifice_foods.msg_1": "You have completed the food offering ritual!",
+  "scripts.movements_elemental_portals.msg_1": "You took too long, the battle has ended.",
+  "scripts.movements_elemental_portals.msg_2": "You can not use this portal yet.",
+  "scripts.movements_elemental_portals.msg_3": "You have discovered an old writing desk that contains an ancient map.",
+  "scripts.actions_bonefiddle.msg_1": "You attach the ebony wood to the skull. This should meet the requirements of a fingerboard.",
+  "scripts.actions_bonefiddle.msg_2": "You tack the hair to the ebony fingerboard. The strands should be adquate to serve as strings.",
+  "scripts.actions_bonefiddle.msg_3": "*There was once a maiden fair, with dark eyes and silken hair. Far away from home she died. No grave, no wake, no mourning.*",
+  "scripts.actions_bonefiddle.msg_4": "You are playing the Peacock Ballad and the portal opens.",
+  "scripts.actions_bonefiddle.msg_5": "You are playing the bone fiddle."
 }

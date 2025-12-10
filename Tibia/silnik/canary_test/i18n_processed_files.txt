@@ -789,3 +789,8 @@ data-otservbr-global/scripts/quests/the_secret_library_quest/the_order_of_the_fa
 data-otservbr-global/scripts/quests/the_secret_library_quest/the_order_of_the_falcon/actions_doors.lua
 data-otservbr-global/scripts/quests/the_secret_library_quest/the_parth_of_defiances_desert/movements_teleportTo.lua
 data-otservbr-global/scripts/quests/the_secret_library_quest/the_parth_of_defiances_desert/actions_chests.lua
+data-otservbr-global/scripts/quests/the_secret_library_quest/the_parth_of_defiances_desert/actions_doors.lua
+data-otservbr-global/scripts/quests/the_secret_library_quest/the_parth_of_defiances_desert/movements_sacrifice_foods.lua
+data-otservbr-global/scripts/quests/the_secret_library_quest/the_lament_asuras/movements_elemental_portals.lua
+data-otservbr-global/scripts/quests/the_secret_library_quest/the_lament_asuras/actions_doors.lua
+data-otservbr-global/scripts/quests/the_secret_library_quest/the_lament_asuras/actions_bonefiddle.lua

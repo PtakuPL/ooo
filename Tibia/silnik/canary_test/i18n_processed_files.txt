@@ -1171,3 +1171,4 @@ data-otservbr-global/startup/tables/door_level.lua
 data-otservbr-global/startup/tables/tile_pick.lua
 data-otservbr-global/startup/tables/door_key.lua
 data-otservbr-global/startup/tables/load.lua
+data/npclib/npc_system/npc_handler.lua

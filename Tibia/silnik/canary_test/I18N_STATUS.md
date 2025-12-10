@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 07:03:16 UTC  
+> **Aktualizacja:** 2025-12-10 07:03:41 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -23,7 +23,7 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **763** | ↑ |
 | ⏭️ Plików wykluczonych | **5161** | - |
-| 🔑 Kluczy i18n | **1515** | ↑ |
+| 🔑 Kluczy i18n | **1540** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
 | 🔄 Cykl | **#1** | - |
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 1515/15000 (10%) | 15000 |
+| 🧙 NPC Dialogs | 🔄 | 1540/15000 (10%) | 15000 |
 | 📜 Lua Scripts | ⏳ | 0/1000 (0%) | 1000 |
 | 🎒 Items Database | ⏳ | 0/40000 (0%) | 40000 |
 | 👹 Monsters | ⏳ | 0/500 (0%) | 500 |
@@ -79,8 +79,8 @@
 | Status | ✅ idle |
 | Operacja | 🎮 Canary Server - NPC |
 | Plik | Cykl #1 |
-| Szczegóły | NPC:1515 Scripts:0 Items:0 |
-| Ostatnia aktualizacja | 2025-12-10 07:03:16 |
+| Szczegóły | NPC:1540 Scripts:0 Items:0 |
+| Ostatnia aktualizacja | 2025-12-10 07:03:41 |
 
 ---
 
@@ -89,8 +89,8 @@
 | Metryka | Wartość |
 |---------|---------|
 | Plików przetworzonych | 763 |
-| NPC zmigrowanych | 111 |
-| Kluczy wyciągniętych | 1515 |
+| NPC zmigrowanych | 115 |
+| Kluczy wyciągniętych | 1540 |
 | Błędów | 0 |
 
 ---
@@ -150,13 +150,13 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 1515 |
+| 🔑 Kluczy | 1540 |
 | 🎯 Cel | 15000 |
 | 📊 Postęp | 10% |
 | 📁 Plik | i18n/en/npc.json |
 | 📁 Plików NPC | 1026 |
-| ✅ Zmigrowanych | 117 |
-| 🔄 Do migracji | 180 |
+| ✅ Zmigrowanych | 121 |
+| 🔄 Do migracji | 176 |
 
 </details>
 
@@ -259,7 +259,7 @@
 
 ```
 [⏳] Items (0)      ░░░░░░░░░░░░░░░░░░░░  0%
-[🔄] NPC (1515)            ██░░░░░░░░░░░░░░░░░░  10%
+[🔄] NPC (1540)            ██░░░░░░░░░░░░░░░░░░  10%
 [⏳] Scripts (0)      ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Monsters (0)    ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Spells (0)       ░░░░░░░░░░░░░░░░░░░░  0%
@@ -271,23 +271,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 07:03:16  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 07:03:41  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `hanna` - ukończono 2025-12-10 07:03
+- ✅ `halvar` - ukończono 2025-12-10 07:03
+- ✅ `hairycles` - ukończono 2025-12-10 07:03
+- ✅ `habdel` - ukończono 2025-12-10 07:03
+- ✅ `captain_dreadnought` - ukończono 2025-12-10 07:03
 - ✅ `gurbasch` - ukończono 2025-12-10 07:03
 - ✅ `guide_tiko` - ukończono 2025-12-10 07:03
 - ✅ `guide_thelandil` - ukończono 2025-12-10 07:03
 - ✅ `guide_rahlkora` - ukończono 2025-12-10 07:03
-- ✅ `captain_dreadnought` - ukończono 2025-12-10 07:03
 - ✅ `guide_luke` - ukończono 2025-12-10 07:02
-- ✅ `guide_kunibert` - ukończono 2025-12-10 07:02
-- ✅ `guide_jonathan` - ukończono 2025-12-10 07:02
-- ✅ `guide_elena` - ukończono 2025-12-10 07:02
-- ✅ `guide_edna` - ukończono 2025-12-10 07:02
 
 ---
 

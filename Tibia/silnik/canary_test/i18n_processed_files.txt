@@ -4355,3 +4355,13 @@ html_copy/phpmyadmin/templates/database/central_columns/populate_columns.twig
 html_copy/phpmyadmin/templates/database/import/index.twig
 html_copy/phpmyadmin/templates/database/triggers/editor_form.twig
 html_copy/phpmyadmin/templates/database/triggers/export.twig
+data-canary/monster/bosses/bullwark.lua
+data-canary/monster/bosses/dharalion.lua
+data-canary/monster/bosses/apocalypse.lua
+data-canary/monster/bosses/apprentice_sheng.lua
+data-canary/monster/bosses/bazir.lua
+data-canary/monster/giants/cyclops.lua
+data-canary/monster/giants/cyclops_drone.lua
+data-canary/monster/giants/cyclops_smith.lua
+data-canary/monster/giants/behemoth.lua
+data-canary/monster/dragons/hydra.lua

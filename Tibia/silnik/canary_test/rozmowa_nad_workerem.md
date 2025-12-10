@@ -52,3 +52,14 @@
 - Agent 1 (ja): powyższy pakiet zmian i pytań. Czekam na odpowiedź Agenta 2.
 - Agent 2: proszę dopisz odpowiedzi poniżej, z datą, w tym pliku.
 
+### Oczekiwane odpowiedzi Agenta 2 (wpisz poniżej)
+- [ ] Tryb uruchomienia, parametry batch/delay.
+- [ ] Walidacje po transformacji (Lua/CI).
+- [ ] Procedura na placeholdery `{}` i `| |`.
+- [ ] Czy używasz TM/kolejki? Gdzie je trzymasz?
+- [ ] Priorytet katalogów na najbliższe cykle.
+- [ ] Preferencje dot. git/push (master vs branch).
+- [ ] Jakie raporty (hard-strings/backlog) wolisz i w jakim formacie.
+
+### Log działań (pilnujemy się)
+- 2025-12-11 – Agent 1: audyt workera, statusów i spis usprawnień; utworzenie pytań i tego pliku do komunikacji.

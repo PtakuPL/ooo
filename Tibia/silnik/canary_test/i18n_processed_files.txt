@@ -2192,3 +2192,13 @@ data-otservbr-global/monster/undeads/falcon_knight.lua
 data-otservbr-global/monster/undeads/betrayed_wraith.lua
 data-otservbr-global/monster/undeads/undead_mine_worker.lua
 data-otservbr-global/monster/undeads/tarnished_spirit.lua
+data-otservbr-global/monster/undeads/ripper_spectre.lua
+data-otservbr-global/monster/undeads/tomb_servant.lua
+data-otservbr-global/monster/undeads/flimsy_lost_soul.lua
+data-otservbr-global/monster/undeads/honour_guard.lua
+data-otservbr-global/monster/undeads/vampire_viscount.lua
+data-otservbr-global/monster/undeads/freakish_lost_soul.lua
+data-otservbr-global/monster/undeads/demon_skeleton.lua
+data-otservbr-global/monster/undeads/cursed_ape.lua
+data-otservbr-global/monster/undeads/banshee.lua
+data-otservbr-global/monster/undeads/vicious_manbat.lua

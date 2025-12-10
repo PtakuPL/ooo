@@ -1,0 +1,10 @@
+{
+  "php.api.text1": "/api/v1/characters.php",
+  "php.api.text2": "/api/v1/highscores.php",
+  "php.api.text3": "/api/v1/check_charactername.php",
+  "php.home.text1": "required-admin-login",
+  "php.home.text2": "required-admin-login",
+  "php.home.text3": "required-admin-login",
+  "php.home.text4": "required-admin-login",
+  "php.home.text5": "required-admin-login"
+}

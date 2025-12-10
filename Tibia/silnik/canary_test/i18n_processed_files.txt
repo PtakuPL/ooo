@@ -828,3 +828,5 @@ data-otservbr-global/monster/nostalgia/old_wolf.lua
 data-otservbr-global/startup/startup.lua
 data-otservbr-global/startup/others/functions.lua
 data-otservbr-global/startup/others/load.lua
+html_copy/routes/api.php
+html_copy/routes/admin/home.php

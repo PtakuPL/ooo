@@ -1950,6 +1950,204 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
     log "${GREEN}✅ NpcLib: $count plików${NC}"
 }
 
+# Przetwarzaj kategorię PHP (html_copy - strona WWW)
+process_php_category() {
+    local batch="${1:-5}"
+    local json_file="$I18N_DIR/en/php.json"
+    local count=0
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}🐘 Processing PHP (html_copy)...${NC}"
+    
+    for file in $(find html_copy -name "*.php" 2>/dev/null | head -$batch); do
+        [ -f "$file" ] || continue
+        grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
+        
+        # Pomiń jeśli już używa __(
+        grep -q "__(" "$file" 2>/dev/null && continue
+        
+        local base=$(basename "$file" .php)
+        local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
+        
+        # Wyciągnij echo "..." i teksty > 20 znaków
+        local strings=$(grep -oP '(?:echo\s+|print\s+)?["'\''][^"'\'']{20,}["'\'']' "$file" 2>/dev/null | head -5)
+        
+        if [ -n "$strings" ]; then
+            local i=1
+            while IFS= read -r str; do
+                str=$(echo "$str" | tr -d '"'"'" | head -c 200)
+                if [ -n "$str" ] && [ ${#str} -gt 15 ]; then
+                    python3 -c "
+import json
+try:
+    with open('$json_file') as f: d = json.load(f)
+except: d = {}
+key = f'php.$safe.text$i'
+if key not in d:
+    d[key] = '''$str'''[:200]
+    with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+                    i=$((i + 1))
+                fi
+            done <<< "$strings"
+            count=$((count + 1))
+        fi
+        
+        echo "$file" >> "$PROCESSED_FILE"
+        [ "$count" -ge "$batch" ] && break
+    done
+    
+    log "${GREEN}✅ PHP: $count plików${NC}"
+}
+
+# Przetwarzaj kategorię HTML/Twig
+process_html_category() {
+    local batch="${1:-10}"
+    local json_file="$I18N_DIR/en/html.json"
+    local count=0
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}📄 Processing HTML/Twig...${NC}"
+    
+    for file in $(find html_copy -name "*.html" -o -name "*.twig" 2>/dev/null | head -$batch); do
+        [ -f "$file" ] || continue
+        grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
+        
+        local base=$(basename "$file" | sed 's/\.\(html\|twig\)$//')
+        local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
+        
+        # Wyciągnij teksty między tagami
+        local strings=$(grep -oP '>([^<]{20,})<' "$file" 2>/dev/null | tr -d '><' | head -5)
+        
+        if [ -n "$strings" ]; then
+            local i=1
+            while IFS= read -r str; do
+                str=$(echo "$str" | head -c 200)
+                if [ -n "$str" ] && [ ${#str} -gt 15 ]; then
+                    python3 -c "
+import json
+try:
+    with open('$json_file') as f: d = json.load(f)
+except: d = {}
+key = f'html.$safe.text$i'
+if key not in d:
+    d[key] = '''$str'''[:200]
+    with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+                    i=$((i + 1))
+                fi
+            done <<< "$strings"
+            count=$((count + 1))
+        fi
+        
+        echo "$file" >> "$PROCESSED_FILE"
+        [ "$count" -ge "$batch" ] && break
+    done
+    
+    log "${GREEN}✅ HTML: $count plików${NC}"
+}
+
+# Przetwarzaj kategorię C++ (src)
+process_cpp_category() {
+    local batch="${1:-5}"
+    local json_file="$I18N_DIR/en/cpp.json"
+    local count=0
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}⚙️ Processing C++ (src)...${NC}"
+    
+    for file in $(find src -name "*.cpp" -o -name "*.hpp" 2>/dev/null | head -$batch); do
+        [ -f "$file" ] || continue
+        grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
+        
+        local base=$(basename "$file" | sed 's/\.\(cpp\|hpp\)$//')
+        local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
+        
+        # Wyciągnij stringi > 10 znaków
+        local strings=$(grep -oP '"[^"]{10,100}"' "$file" 2>/dev/null | tr -d '"' | head -5)
+        
+        if [ -n "$strings" ]; then
+            local i=1
+            while IFS= read -r str; do
+                if [ -n "$str" ] && [ ${#str} -gt 8 ]; then
+                    python3 -c "
+import json
+try:
+    with open('$json_file') as f: d = json.load(f)
+except: d = {}
+key = f'cpp.$safe.str$i'
+if key not in d:
+    d[key] = '''$str'''
+    with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+                    i=$((i + 1))
+                fi
+            done <<< "$strings"
+            count=$((count + 1))
+        fi
+        
+        echo "$file" >> "$PROCESSED_FILE"
+        [ "$count" -ge "$batch" ] && break
+    done
+    
+    log "${GREEN}✅ C++: $count plików${NC}"
+}
+
+# Przetwarzaj kategorię OTClient (testyy)
+process_client_category() {
+    local batch="${1:-10}"
+    local json_file="$I18N_DIR/en/client.json"
+    local count=0
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}🎮 Processing OTClient (testyy)...${NC}"
+    
+    for dir in testyy/modules testyy/mods; do
+        [ ! -d "$dir" ] && continue
+        
+        for file in $(find "$dir" -name "*.lua" -o -name "*.otui" 2>/dev/null | head -$batch); do
+            [ -f "$file" ] || continue
+            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
+            
+            local base=$(basename "$file" | sed 's/\.\(lua\|otui\)$//')
+            local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
+            
+            # Wyciągnij stringi (pomiń tr( - już tłumaczone)
+            local strings=$(grep -oP '(?<!tr\()"[^"]{10,}"' "$file" 2>/dev/null | tr -d '"' | head -5)
+            
+            if [ -n "$strings" ]; then
+                local i=1
+                while IFS= read -r str; do
+                    if [ -n "$str" ] && [ ${#str} -gt 8 ]; then
+                        python3 -c "
+import json
+try:
+    with open('$json_file') as f: d = json.load(f)
+except: d = {}
+key = f'client.$safe.text$i'
+if key not in d:
+    d[key] = '''$str'''
+    with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+                        i=$((i + 1))
+                    fi
+                done <<< "$strings"
+                count=$((count + 1))
+            fi
+            
+            echo "$file" >> "$PROCESSED_FILE"
+            [ "$count" -ge "$batch" ] && break
+        done
+        [ "$count" -ge "$batch" ] && break
+    done
+    
+    log "${GREEN}✅ Client: $count plików${NC}"
+}
+
 #===============================================================================
 # AUTO TRANSLATE - Automatyczne tłumaczenie BEZ interakcji
 #===============================================================================

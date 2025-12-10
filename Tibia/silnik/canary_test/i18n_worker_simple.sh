@@ -1626,8 +1626,9 @@ for f in glob.glob(f"{NPC_DIR}/*.lua"):
         # Sprawdź addGreetKeyword/addFarewellKeyword z text= bez i18nKey
         if ('addGreetKeyword' in content or 'addFarewellKeyword' in content) and 'text = "' in content:
             # Sprawdź czy te z text mają już i18nKey
-            pattern_greet = r'addGreetKeyword\s*\([^)]+\)\s*,\s*\{[^}]*?text\s*=\s*"[^"]+"[^}]*?\}'
-            pattern_farewell = r'addFarewellKeyword\s*\([^)]+\)\s*,\s*\{[^}]*?text\s*=\s*"[^"]+"[^}]*?\}'
+            # Pattern: { "klucze" } jako pierwszy argument
+            pattern_greet = r'addGreetKeyword\s*\(\{[^}]+\}\s*,\s*\{[^}]*?text\s*=\s*"[^"]+"[^}]*\}'
+            pattern_farewell = r'addFarewellKeyword\s*\(\{[^}]+\}\s*,\s*\{[^}]*?text\s*=\s*"[^"]+"[^}]*\}'
             
             for pattern in [pattern_greet, pattern_farewell]:
                 matches = re.findall(pattern, content, re.DOTALL)

@@ -6558,5 +6558,20 @@
   "item.19159.name": "pannier backpack",
   "item.19160.name": "Omrabas' talking skull",
   "item.19164.name": "RESERVED SPRITE",
-  "item.19165.name": "brain heater machine"
+  "item.19165.name": "brain heater machine",
+  "item.19166.name": "Omrabas' bone key",
+  "item.19173.name": "Omrabas' copper key",
+  "item.19200.name": "lift",
+  "item.19201.name": "ornate door with a keyhole",
+  "item.19202.name": "reward container",
+  "item.19203.name": "spirit shovel",
+  "item.19204.name": "tuning fork",
+  "item.19205.name": "ghost detector",
+  "item.19206.name": "thermometer",
+  "item.19207.name": "lodestone",
+  "item.19208.name": "ghost pacifier",
+  "item.19209.name": "monster nest",
+  "item.19210.name": "destroyed monster nest",
+  "item.19211.name": "Ominous mound",
+  "item.19212.name": "Ominous mound opened"
 }

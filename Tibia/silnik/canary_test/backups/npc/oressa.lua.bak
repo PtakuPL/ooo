@@ -68,19 +68,20 @@ end
 -- Basic keywords
 keywordHandler:addKeyword({ "name" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.oressa.stdmod_1",
+	text = "I am Oressa Fourwinds, the {healer}. ",
 })
 keywordHandler:addKeyword({ "healer" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.oressa.stdmod_2",
+	text = "If you are hurt my child, I will {heal} your wounds.",
 })
 keywordHandler:addKeyword({ "job" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.oressa.stdmod_3",
+	text = "I can {heal} you if you are hurt. I can also help you choose your {vocation}. ",
 })
 keywordHandler:addKeyword({ "doors" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.oressa.stdmod_4",
+	text = "Behind each of those doors, the equipment and skills of one vocation lies - \z
+		sorcerer, paladin, knight or druid. ...",
 	"When you have reached level 8, you can choose your definite vocation. You have to talk to me to receive it, \z
 		and then you may open one of the doors, take up your vocation's gear, and leave the island. But be aware: ...",
 	"Once you have chosen your vocation and stepped through a door, you cannot go back or choose a different vocation. \z
@@ -88,23 +89,24 @@ keywordHandler:addKeyword({ "doors" }, StdModule.say, {
 })
 keywordHandler:addKeyword({ "inigo" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.oressa.stdmod_5",
+	text = "He has seen much, and likes to help the younger ones. If you have questions about what to do, \z
+			or whom to ask for anything, go to Inigo.",
 })
 keywordHandler:addKeyword({ "richard" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.oressa.stdmod_6",
+	text = "Found a new way of living and took to it like a fish to water.",
 })
 keywordHandler:addKeyword({ "coltrayne" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.oressa.stdmod_7",
+	text = "Ah. Some wounds never heal. <sighs> Shipwrecked in body and mind. Nowhere to go, so he doesn't leave.",
 })
 keywordHandler:addKeyword({ "morris" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.oressa.stdmod_8",
+	text = "He broods over problems he won't share. But maybe you can help him with a little quest or two.",
 })
 keywordHandler:addKeyword({ "hamish" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.oressa.stdmod_9",
+	text = "He lives only for his experiments and potions",
 })
 keywordHandler:addKeyword({ "dawnport" }, StdModule.say, {
 	npcHandler = npcHandler,
@@ -116,7 +118,7 @@ keywordHandler:addKeyword({ "dawnport" }, StdModule.say, {
 })
 keywordHandler:addKeyword({ "rookgaard" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.oressa.stdmod_10",
+	text = "I have heard of it, yes.",
 })
 
 --From topic of vocation to topic of the "yes" message (choosing vocation)

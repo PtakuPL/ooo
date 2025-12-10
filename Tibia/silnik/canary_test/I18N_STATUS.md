@@ -278,6 +278,11 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `plunderpurse` - ukończono 2025-12-10 11:30
+- ✅ `ormuhn` - ukończono 2025-12-10 11:30
+- ✅ `oressa` - ukończono 2025-12-10 11:30
+- ✅ `nielson` - ukończono 2025-12-10 11:30
+- ✅ `mr_morris` - ukończono 2025-12-10 11:30
 - ✅ `morgan` - ukończono 2025-12-10 11:30
 - ✅ `king_tibianus` - ukończono 2025-12-10 11:30
 - ✅ `falonzo` - ukończono 2025-12-10 11:30

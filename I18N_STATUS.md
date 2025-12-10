@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 11:30:37 UTC  
+> **Aktualizacja:** 2025-12-10 11:30:58 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,9 +21,9 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **5** | ↑ |
+| 📁 Plików przetworzonych | **10** | ↑ |
 | ⏭️ Plików wykluczonych | **729** | - |
-| 🔑 Kluczy i18n | **3920** | ↑ |
+| 🔑 Kluczy i18n | **4000** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
 | 🔄 Cykl | **#1** | - |
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 3920/15000 (26%) | 15000 |
+| 🧙 NPC Dialogs | 🔄 | 4000/15000 (27%) | 15000 |
 | 📜 Lua Scripts | ⏳ | 0/1000 (0%) | 1000 |
 | 🎒 Items Database | ⏳ | 0/40000 (0%) | 40000 |
 | 👹 Monsters | ⏳ | 0/500 (0%) | 500 |
@@ -83,12 +83,12 @@
 │ Kategoria: 🧙 NPC Dialogs                            │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Postęp migracji NPC:                                        │
-│ [██████████████████████████████████████████████░░░░] │
-│ 276/297 plików (93%)                                          │
+│ [███████████████████████████████████████████████░░░] │
+│ 281/297 plików (95%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Pozostało: 21 plików NPC                              │
-│ 🕐 ETA: ~3min 30s (przy 10s/plik)                            │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 11:30:37                 │
+│ ⏳ Pozostało: 16 plików NPC                              │
+│ 🕐 ETA: ~2min 40s (przy 10s/plik)                            │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 11:30:58                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,23 +98,23 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przetworzonych | **5** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **276**/297 | 93% ukończone |
-| 🔑 Kluczy wyciągniętych | **3920** | we wszystkich kategoriach |
+| 📁 Plików przetworzonych | **10** | z i18n_file_status.json |
+| ✅ NPC zmigrowanych | **281**/297 | 95% ukończone |
+| 🔑 Kluczy wyciągniętych | **4000** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
 | 🔄 Cykli wykonanych | **#1** | continuous mode |
-| ⚠️ Plików do migracji | **21** | NPC z StdModule.say |
+| ⚠️ Plików do migracji | **16** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
-- ✅ `morgan` - ukończono 2025-12-10 11:30
-- ✅ `king_tibianus` - ukończono 2025-12-10 11:30
-- ✅ `falonzo` - ukończono 2025-12-10 11:30
-- ✅ `anderson` - ukończono 2025-12-10 11:30
-- ✅ `amber` - ukończono 2025-12-10 11:30
+- ✅ `plunderpurse` - ukończono 2025-12-10 11:30
+- ✅ `ormuhn` - ukończono 2025-12-10 11:30
+- ✅ `oressa` - ukończono 2025-12-10 11:30
+- ✅ `nielson` - ukończono 2025-12-10 11:30
+- ✅ `mr_morris` - ukończono 2025-12-10 11:30
 
 ---
 
@@ -169,17 +169,17 @@
 </details>
 
 <details>
-<summary>🧙 5. NPC - 🔄 (26%)</summary>
+<summary>🧙 5. NPC - 🔄 (27%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 3920 |
+| 🔑 Kluczy | 4000 |
 | 🎯 Cel | 15000 |
-| 📊 Postęp | 26% |
+| 📊 Postęp | 27% |
 | 📁 Plik | i18n/en/npc.json |
 | 📁 Plików NPC | 1026 |
-| ✅ Zmigrowanych | 276 |
-| 🔄 Do migracji | 21 |
+| ✅ Zmigrowanych | 281 |
+| 🔄 Do migracji | 16 |
 
 </details>
 
@@ -282,7 +282,7 @@
 
 ```
 [⏳] Items (0)      ░░░░░░░░░░░░░░░░░░░░  0%
-[🔄] NPC (3920)            █████░░░░░░░░░░░░░░░  26%
+[🔄] NPC (4000)            █████░░░░░░░░░░░░░░░  27%
 [⏳] Scripts (0)      ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Monsters (0)    ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Spells (0)       ░░░░░░░░░░░░░░░░░░░░  0%
@@ -294,13 +294,18 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:30:37  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:30:58  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `plunderpurse` - ukończono 2025-12-10 11:30
+- ✅ `ormuhn` - ukończono 2025-12-10 11:30
+- ✅ `oressa` - ukończono 2025-12-10 11:30
+- ✅ `nielson` - ukończono 2025-12-10 11:30
+- ✅ `mr_morris` - ukończono 2025-12-10 11:30
 - ✅ `morgan` - ukończono 2025-12-10 11:30
 - ✅ `king_tibianus` - ukończono 2025-12-10 11:30
 - ✅ `falonzo` - ukończono 2025-12-10 11:30

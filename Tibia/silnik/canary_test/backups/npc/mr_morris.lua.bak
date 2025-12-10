@@ -286,87 +286,109 @@ end
 
 keywordHandler:addKeyword({ "quest" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_1",
+	text = "Hm. Well, you look like you want to take a look at the unknown yourself. \z
+			I might have a job for you. Choose what you would like to do - {fetch} some things, or {kill} some monsters.",
 })
 keywordHandler:addKeyword({ "mission" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_2",
+	text = "Hm. Well, you look like you want to take a look at the unknown yourself. \z
+			I might have a job for you. Choose what you would like to do - {fetch} some things, or {kill} some monsters.",
 })
 keywordHandler:addKeyword({ "fetch" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_3",
+	text = "There's three things that need to be found. You can look for an {amulet}, \z
+			a {log book} or pick some rare {herbs}. Take your pick.",
 })
 keywordHandler:addKeyword({ "kill" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_4",
+	text = "Well, those monsters have grown very uppity lately. There's a choice of three - mountain {trolls}, \z
+			muglex clan {goblins} or, if you are up to it or together with some friends, \z
+			there's a need to weed out some risky {minotaur} bruisers. Choose your target.",
 })
 keywordHandler:addKeyword({ "name" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_5",
+	text = "Mr Morris will do.",
 })
 keywordHandler:addKeyword({ "job" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_6",
+	text = "There's always someone who needs to be at the front, to take the first step into the unknown. \z
+			My whole life has been full of such steps.",
 })
 keywordHandler:addKeyword({ "dawnport" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_7",
+	text = "Ah, that old story of how it was named? I spread it around. \z
+			Can't remember really what its origins are. Interesting archeological findings here, though.",
 })
 keywordHandler:addKeyword({ "secrets of dawnport" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_8",
+	text = "Ah yes. Well, the magic that led us here seems to be most potent at a certain time, close before sunrise. \z
+			Perhaps like a giant pulse, or beacon. Maybe the gods set it here, or a mad sorcerer, \z
+			we don't know for sure yet... The portal deep down in the caves, resonating with magical energy where you came \z
+			through, can maybe bring something else into this world as well. \z
+			So it must be carefully guarded while we investigate the island for more clues... \z
+			There are some very interesting archeological findings here on the island throughout. \z
+			Seems the island has drawn some cults here, but why they are gone now, no one knows.",
 })
 keywordHandler:addKeyword({ "archeological" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_9",
+	text = "It seems that throughout its history, this island was inhabited by very different species. \z
+			I like to study their remains.",
 })
 keywordHandler:addKeyword({ "rookgaard" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_10",
+	text = "Yeah. Long time I haven't been to that place. How's old Vascalir? Still hanging around in the academy? \z
+			And Kraknaknork? Hah, I remember our brawl after that last card game. Fun times.",
 })
 keywordHandler:addKeyword({ "coltrayne" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_11",
+	text = "What about him? Is he in one of his dark moods again? That's his normal mood, I mean. \z
+			Just buy your armor, weaponry and ammunition there and don't worry.",
 })
 keywordHandler:addKeyword({ "garamond" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_12",
+	text = "Tired of the academy, maybe, but not of teaching. If you need druid or sorcerer spells, go to him.",
 })
 keywordHandler:addKeyword({ "hamish" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_13",
+	text = "Ah, good old Hamish. A real wizard with potions. \z
+			Will supply you with very useful magic equipment for hunting.",
 })
 keywordHandler:addKeyword({ "mr morris" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_14",
+	text = "Exactly. Has a nice ring to it.",
 })
 keywordHandler:addKeyword({ "oressa" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_15",
+	text = "She's a good listener if you should still hesitate as to the choice of your definite vocation.",
 })
 keywordHandler:addKeyword({ "plunderpurse" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_16",
+	text = "Well, for him it's always been just a question of ''Your gold or your life'' - gold it is nowadays. \z
+			You can stash your loose change at ol' Abram, but make sure to withdraw it once you leave Dawnport!",
 })
 keywordHandler:addKeyword({ "inigo" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_17",
+	text = "Ran across Inigo a few times on some remote islands, years and years ago. \z
+			Talked him into coming along here, and he seems to enjoy helping newcomers find their way. \z
+			Passing his knowledge on to the next generation.",
 })
 keywordHandler:addKeyword({ "richard" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_18",
+	text = "We found him here half-dead and fixed him up, now he fixes us dinner and roof beams. \z
+			Definitely someone you should check out for food, a rope and a shovel.",
 })
 keywordHandler:addKeyword({ "ser tybald" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_19",
+	text = "Been together through many a desperate situation. A romantic underneath it all. \z
+			Found the time to specialise on spells for paladins and knights somewhere along the way.",
 })
 keywordHandler:addKeyword({ "wentworth" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_20",
+	text = "Be careful that he doesn't bore you to death with accountants of, well, your bank account history.",
 })
 keywordHandler:addKeyword({ "woblin" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.mr_morris.stdmod_21",
+	text = "Ah, the goblin who sneaks around here now and then? Lives in a cave to the west, somewhere.",
 })
 
 npcHandler:setMessage(

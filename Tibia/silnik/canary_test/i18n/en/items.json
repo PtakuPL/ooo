@@ -463,5 +463,10 @@
   "item.922.name": "RESERVED SPRITE",
   "item.937.name": "grass",
   "item.938.name": "ship's telescope",
-  "item.939.name": "bait"
+  "item.939.name": "bait",
+  "item.940.name": "natural soil",
+  "item.941.name": "glimmering soil",
+  "item.942.name": "flawless ice crystal",
+  "item.943.name": "holy soil",
+  "item.944.name": "iced soil"
 }

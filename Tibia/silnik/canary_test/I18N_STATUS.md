@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 04:28:28 UTC  
+> **Aktualizacja:** 2025-12-10 04:30:28 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,9 +21,9 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **674** | ↑ |
-| ⏭️ Plików wykluczonych | **4888** | - |
-| 🔑 Kluczy i18n | **50780** | ↑ |
+| 📁 Plików przetworzonych | **691** | ↑ |
+| ⏭️ Plików wykluczonych | **4943** | - |
+| 🔑 Kluczy i18n | **51050** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
 | 🔄 Cykl | **#1** | - |
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | ✅ | 12779/13190 (96%) | 13190 |
+| 🧙 NPC Dialogs | ✅ | 12947/13190 (98%) | 13190 |
 | 📜 Lua Scripts | 🔄 | 713/1000 (71%) | 1000 |
 | 🎒 Items Database | 🔄 | 36972/40000 (92%) | 40000 |
 | 👹 Monsters | 🔄 | 100/500 (20%) | 500 |
@@ -77,16 +77,16 @@
 | Parametr | Wartość |
 |----------|----------|
 | **Status** | 🔄 in_progress |
-| **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #1` |
-| **Szczegóły** | NPC:12779 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-10 04:28:02 |
+| **Operacja** | Przetwarzanie lua |
+| **Plik** | `captain_seagull.lua` |
+| **Szczegóły** | Katalog: data-otservbr-global/npc |
+| **Ostatnia aktualizacja** | 2025-12-10 04:30:24 |
 
 ### 📈 Statystyki sesji
 
 | Metryka | Wartość |
 |---------|----------|
-| Plików przetworzonych | 743 |
+| Plików przetworzonych | 755 |
 | Kluczy wyciągniętych | 0 |
 | Błędów | 0 |
 | Napraw zastosowanych | 0 |
@@ -152,13 +152,13 @@
 ---
 
 <details>
-<summary><h3>🧙 5. Npc - Zakończone ✅</h3></summary>
+<summary><h3>🧙 5. Npc - Oczekuje ⏳</h3></summary>
 
 | Metryka | Wartość |
 |---------|----------|
-| 🔑 Kluczy | **12779** |
+| 🔑 Kluczy | **** |
 | 🎯 Cel | 13000 |
-| 📊 Postęp | 98% |
+| 📊 Postęp | 0% |
 | 📁 Plik | `i18n/en/npc.json` |
 
 </details>
@@ -267,7 +267,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.2** | 🟢 RUNNING | PID: 298614, Cykl #1 |
+| **Worker v4.2** | 🟢 RUNNING | PID: 328613, Cykl #1 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -276,7 +276,7 @@
 
 ```
 [✅] Items (36972)      ██████████████████░░  92%
-[✅] NPC (12779)        ███████████████████░  98%
+[⏳] NPC (0)        █░░░░░░░░░░░░░░░░░░░░   0%
 [🔄] Scripts (713)    ██████████████░░░░░░  71%
 [🔄] Monsters (100)   ████░░░░░░░░░░░░░░░░  20%
 [🔄] Spells (100)     ██████████░░░░░░░░░░  50%
@@ -288,5 +288,5 @@
 ---
 
 *🤖 Machine-readable: `i18n/status/worker_state.json`*  
-*📅 Auto-updated by Worker v4.2 | Last: 2025-12-10 04:28:29*  
+*📅 Auto-updated by Worker v4.2 | Last: 2025-12-10 04:30:29*  
 *🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)*

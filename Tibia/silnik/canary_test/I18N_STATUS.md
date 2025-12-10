@@ -278,6 +278,7 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `rafzan` - ukończono 2025-12-10 07:14
 - ✅ `quentin` - ukończono 2025-12-10 07:13
 - ✅ `queen_eloise` - ukończono 2025-12-10 07:13
 - ✅ `pythius_the_rotten` - ukończono 2025-12-10 07:13

@@ -4211,7 +4211,7 @@
           "errors": [],
           "warnings": [
             "Brak i18nKey w pliku Lua",
-            "Znaleziono 210 duplikat\u00f3w warto\u015bci"
+            "Znaleziono 214 duplikat\u00f3w warto\u015bci"
           ],
           "valid_langs": [
             "zh_TW",
@@ -4276,7 +4276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T07:13:21.194439"
+      "completed_at": "2025-12-10T07:13:52.112076"
     },
     "data-otservbr-global/npc/captain_fearless.lua": {
       "stages": {
@@ -22637,10 +22637,377 @@
       },
       "overall_status": "completed",
       "completed_at": "2025-12-10T07:13:31.067776"
+    },
+    "data-otservbr-global/npc/queen_eloise.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "2b8b3a3d0d61a14e57526835264dfdbd",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "queen_eloise",
+          "StdModule_say": 49,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 49,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/queen_eloise.md",
+          "keys_documented": 52
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 49
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 52
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 52
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 216 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 49,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T07:13:56.783329"
+    },
+    "data-otservbr-global/npc/quentin.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "b818511b66f8bf56c0333d98a7039a01",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "quentin",
+          "StdModule_say": 31,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 31,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/quentin.md",
+          "keys_documented": 31
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 30
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 31
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 31
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 216 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 30,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T07:13:59.238174"
+    },
+    "data-otservbr-global/npc/rafzan.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "7371c9e90f5f2e7f783cff2e7668cc24",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "rafzan",
+          "StdModule_say": 12,
+          "npcHandler_say": 0,
+          "sendTextMessage": 1,
+          "total": 13,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/rafzan.md",
+          "keys_documented": 14
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 12
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 14
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 14
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 216 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 12,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T07:14:01.328761"
+    },
+    "data-otservbr-global/npc/rahkem.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "b256036c5882a81924c017edbea6bb5f",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "rahkem",
+          "StdModule_say": 31,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 31,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/rahkem.md",
+          "keys_documented": 32
+        }
+      },
+      "overall_status": "in_progress"
     }
   },
   "global_stats": {
-    "files_completed": 199,
+    "files_completed": 202,
     "total_keys": 0
   }
 }

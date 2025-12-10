@@ -420,12 +420,37 @@ for fpath, completed_at in sorted_files:
     recent_completed.append(f"- ✅ `{fname}` - ukończono {time_str}")
 
 # Cele dla kategorii (zaktualizowane 2025-12-10)
+# AUTO-ADJUST: jeśli current > target, cel wzrasta automatycznie
 TARGETS = {
     "game": 100, "items": 40000, "misc": 100, "monsters": 5000,
     "npc": 15000, "player": 200, "quests": 500, "scripts": 1000,
     "server": 300, "spells": 200, "system": 2000, "ui": 200,
     "php": 3000, "cpp": 500, "html": 500, "client": 200
 }
+
+# Auto-adjust targets na podstawie aktualnych wartości
+def auto_adjust_target(current, base_target):
+    """Zwiększ cel jeśli przekroczono, zaokrąglij do ładnej liczby"""
+    if current <= base_target:
+        return base_target
+    # Zaokrąglij w górę do najbliższej "ładnej" liczby
+    if current < 1000:
+        return ((current // 100) + 1) * 100  # np. 550 -> 600
+    elif current < 10000:
+        return ((current // 500) + 1) * 500  # np. 5699 -> 6000
+    else:
+        return ((current // 1000) + 1) * 1000  # np. 15500 -> 16000
+
+# Aktualizuj TARGETS na podstawie aktualnych danych
+category_current = {
+    "items": items_keys, "monsters": monsters_keys, "npc": npc_keys,
+    "scripts": scripts_keys, "spells": spells_keys, "server": server_keys,
+    "system": system_keys, "ui": ui_keys, "php": php_keys, "cpp": cpp_keys,
+    "html": html_keys, "client": client_keys
+}
+for cat, cur in category_current.items():
+    if cat in TARGETS:
+        TARGETS[cat] = auto_adjust_target(cur, TARGETS[cat])
 
 def progress_bar(current, target, width=20):
     if target == 0:

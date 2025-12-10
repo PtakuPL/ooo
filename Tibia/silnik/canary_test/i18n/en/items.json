@@ -3558,5 +3558,20 @@
   "item.8618.name": "mechanism",
   "item.8645.name": "piano",
   "item.8657.name": "corkscrew stairs",
-  "item.8658.name": "corkscrew stairs"
+  "item.8658.name": "corkscrew stairs",
+  "item.8667.name": "wall mirror",
+  "item.8680.name": "stone pedestal",
+  "item.8684.name": "water",
+  "item.8689.name": "wall mirror",
+  "item.8690.name": "stairs",
+  "item.8708.name": "closed trapdoor",
+  "item.8709.name": "open trapdoor",
+  "item.8715.name": "metal piece",
+  "item.8716.name": "swamp",
+  "item.8717.name": "dust of Boreth",
+  "item.8718.name": "dust of Lersatio",
+  "item.8719.name": "dust of Marziel",
+  "item.8720.name": "dust of Arthei",
+  "item.8737.name": "CM token",
+  "item.8738.name": "slain vampire bride"
 }

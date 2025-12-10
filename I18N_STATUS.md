@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 11:37:51 UTC  
+> **Aktualizacja:** 2025-12-10 11:37:59 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -87,8 +87,8 @@
 │ 297/297 plików (100%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
-│ 🕐 ETA: ~0min 0s (przy 10s/plik)                            │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 11:37:51                 │
+│ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 11:37:59                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -99,7 +99,7 @@
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
 | 📁 Plików przetworzonych | **26** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **297**/297 | 100% ukończone |
+| ✅ NPC zmigrowanych | **26** (297 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **4145** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
 | 🔄 Cykli wykonanych | **#1** | continuous mode |
@@ -294,7 +294,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:37:51  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:37:59  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

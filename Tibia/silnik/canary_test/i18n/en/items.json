@@ -3393,5 +3393,20 @@
   "item.8050.name": "crystalline armor",
   "item.8051.name": "voltage armor",
   "item.8052.name": "swamplair armor",
-  "item.8053.name": "fireborn giant armor"
+  "item.8053.name": "fireborn giant armor",
+  "item.8054.name": "earthborn titan armor",
+  "item.8055.name": "windborn colossus armor",
+  "item.8056.name": "oceanborn leviathan armor",
+  "item.8057.name": "divine plate",
+  "item.8058.name": "molten plate",
+  "item.8059.name": "frozen plate",
+  "item.8060.name": "master archer's armor",
+  "item.8061.name": "skullcracker armor",
+  "item.8062.name": "robe of the underworld",
+  "item.8063.name": "paladin armor",
+  "item.8064.name": "ethno coat",
+  "item.8072.name": "spellbook of enlightenment",
+  "item.8073.name": "spellbook of warding",
+  "item.8074.name": "spellbook of mind control",
+  "item.8075.name": "spellbook of lost souls"
 }

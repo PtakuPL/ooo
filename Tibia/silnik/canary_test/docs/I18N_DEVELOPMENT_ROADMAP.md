@@ -52,6 +52,117 @@ if now - last_time > 24 * 3600:  # 24 godziny
 
 ---
 
+## 🌍 SYSTEM TŁUMACZEŃ - Etap 1: Synchronizacja Kluczy
+
+> **Data dodania**: 2025-12-10 23:20 UTC  
+> **Status**: 🔄 W IMPLEMENTACJI
+
+### Koncepcja
+
+Gdy worker nie ma kategorii do przetwarzania (wszystkie w backoff), przechodzi w **TRYB TŁUMACZEŃ**.
+
+**Etap 1** to **synchronizacja struktury kluczy** - kopiowanie kluczy z `en/*.json` do innych języków z prefixem `[EN]`.
+
+### Przepływ pracy
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    DISPATCHER LOGIC                          │
+├─────────────────────────────────────────────────────────────┤
+│  1. Sprawdź kategorie migracji (items, npc, scripts...)     │
+│     └─ Jeśli wszystkie w backoff → przejdź do TŁUMACZEŃ     │
+│                                                              │
+│  2. TRYB TŁUMACZEŃ - Etap 1:                                │
+│     ├─ Weź kolejny język z listy (de → pl → es → ...)       │
+│     ├─ Weź kolejną kategorię JSON (npc → items → monsters)  │
+│     ├─ Synchronizuj klucze EN → LANG                        │
+│     └─ Zapisz postęp do state                               │
+│                                                              │
+│  3. Po zakończeniu wszystkich języków:                      │
+│     └─ Wróć do sprawdzania migracji (backoff mógł minąć)    │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Przykład działania
+
+**Źródło `i18n/en/npc.json`:**
+```json
+{
+  "npc.seymour.greet_1": "Hello, |PLAYERNAME|!",
+  "npc.seymour.farewell_1": "Goodbye!"
+}
+```
+
+**Wynik `i18n/pl/npc.json` (po synchronizacji):**
+```json
+{
+  "npc.seymour.greet_1": "[EN] Hello, |PLAYERNAME|!",
+  "npc.seymour.farewell_1": "[EN] Goodbye!"
+}
+```
+
+### Kolejność języków (od europejskich)
+
+```bash
+TARGET_LANGUAGES=(
+  # Europa Zachodnia & Środkowa
+  "de" "pl" "es" "pt" "fr" "it" "nl" "cs" "sk" "hu" 
+  # Europa Północna
+  "sv" "da" "no" "fi" "et" "lv" "lt"
+  # Europa Południowa & Wschodnia  
+  "ro" "bg" "el" "hr" "sl" "bs" "sr" "mk" "sq"
+  # Rosja & Azja Środkowa
+  "ru" "uk" "kk" "uz" "az" "hy" "ka"
+  # Bliski Wschód
+  "tr" "ar" "he" "fa"
+  # Azja
+  "zh" "zh_TW" "ja" "ko" "hi" "th" "vi" "id" "ms" "tl"
+  # Inne
+  "bn" "ta" "te" "ml" "sw"
+)
+# Razem: 53 języki (en jest źródłem)
+```
+
+### Parametry
+
+| Parametr | Wartość | Opis |
+|----------|---------|------|
+| `TRANSLATION_BATCH_SIZE` | 300 | Kluczy na cykl |
+| `UNTRANSLATED_PREFIX` | `[EN] ` | Prefix dla nieprzetłumaczonych |
+| `TRANSLATION_PRIORITY` | NISKI | Migracja ma wyższy priorytet |
+
+### Śledzenie postępu
+
+**Nowy state w `.i18n_category_state.json`:**
+```json
+{
+  "translation_sync": {
+    "current_lang": "de",
+    "current_category": "npc", 
+    "languages_done": ["pl"],
+    "stats": {
+      "pl": {"npc": 5270, "items": 9000, "total": 14270},
+      "de": {"npc": 5270, "total": 5270}
+    },
+    "last_sync": 1733871600
+  }
+}
+```
+
+### Korzyści Etapu 1
+
+1. ✅ **Wszystkie pliki językowe mają identyczną strukturę**
+2. ✅ **Łatwo zobaczyć co wymaga tłumaczenia** (szukaj `[EN]`)
+3. ✅ **Gra działa od razu** - wyświetla angielski tekst z prefixem
+4. ✅ **Przygotowanie do Etapu 2** - wiadomo ile jest do przetłumaczenia
+5. ✅ **Statystyki** - dokładnie widać postęp per język/kategoria
+
+### Etap 2 (przyszłość)
+
+Po ukończeniu Etapu 1, Etap 2 będzie automatycznie tłumaczył teksty z `[EN]` na docelowy język.
+
+---
+
 ## 📊 AKTUALNY STAN PROJEKTU (2025-12-10 21:25)
 
 ### Statystyki kluczy

@@ -6693,5 +6693,20 @@
   "item.20080.name": "umbral hammer",
   "item.20081.name": "umbral master hammer",
   "item.20082.name": "crude umbral bow",
-  "item.20083.name": "umbral bow"
+  "item.20083.name": "umbral bow",
+  "item.20084.name": "umbral master bow",
+  "item.20085.name": "crude umbral crossbow",
+  "item.20086.name": "umbral crossbow",
+  "item.20087.name": "umbral master crossbow",
+  "item.20088.name": "crude umbral spellbook",
+  "item.20089.name": "umbral spellbook",
+  "item.20090.name": "umbral master spellbook",
+  "item.20091.name": "bed chamber",
+  "item.20094.name": "tea cup",
+  "item.20101.name": "tall dusky cypress",
+  "item.20102.name": "tall gloomy cypress",
+  "item.20103.name": "ether captor",
+  "item.20104.name": "rooted evil",
+  "item.20105.name": "pester maws",
+  "item.20106.name": "crimson fin"
 }

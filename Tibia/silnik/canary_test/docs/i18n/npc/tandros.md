@@ -1,7 +1,7 @@
 # NPC: tandros
 
 **Plik:** `data-otservbr-global/npc/tandros.lua`
-**Data migracji:** 2025-12-10 13:05
+**Data migracji:** 2025-12-10 13:08
 **Liczba tekstów:** 1
 
 ## Klucze i18n

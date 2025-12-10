@@ -1,7 +1,7 @@
 # NPC: nelly
 
 **Plik:** `data-otservbr-global/npc/nelly.lua`
-**Data migracji:** 2025-12-10 13:05
+**Data migracji:** 2025-12-10 13:08
 **Liczba tekstów:** 2
 
 ## Klucze i18n

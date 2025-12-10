@@ -1,7 +1,7 @@
 # NPC: richard
 
 **Plik:** `data-otservbr-global/npc/richard.lua`
-**Data migracji:** 2025-12-10 13:05
+**Data migracji:** 2025-12-10 13:08
 **Liczba tekstów:** 6
 
 ## Klucze i18n

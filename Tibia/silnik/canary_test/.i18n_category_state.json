@@ -5,7 +5,8 @@
     "raids": 1765406156.5696745,
     "world": 1765406163.0668073,
     "items": 1765406087.7135088,
-    "libs": 1765406102.3402169
+    "libs": 1765406102.3402169,
+    "events": 1765406117.095477
   },
   "last_processed": {
     "scripts": {
@@ -33,8 +34,8 @@
       "timestamp": 1765405802.3402064
     },
     "events": {
-      "count": 5,
-      "timestamp": 1765405809.737486
+      "count": 0,
+      "timestamp": 1765405817.0954719
     }
   },
   "consecutive_zeros": {
@@ -44,7 +45,7 @@
     "world": 4,
     "items": 1,
     "libs": 1,
-    "events": 0
+    "events": 1
   },
   "total_processed": {
     "items": 11689,

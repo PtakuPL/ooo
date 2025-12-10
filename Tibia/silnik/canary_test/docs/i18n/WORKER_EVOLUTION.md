@@ -112,23 +112,37 @@ StdModule.sayLocalized(npc, creature, "npc.alexander.greeting")
 **Kluczowe cechy v2.0:**
 1. **Multi-Mode** - Automatyczne przełączanie między trybami pracy
 2. **TRYB 1: MIGRATION** - 8-etapowy pipeline migracji kodu NPC
-3. **TRYB 2: TRANSLATION** - 6-etapowy pipeline tłumaczeń (instrukcje dla agenta LLM)
+3. **TRYB 2: TRANSLATION** - Interaktywny tryb tłumaczeń (agent wpisuje)
 4. **Dispatcher** - Automatycznie wybiera tryb na podstawie stanu projektu
-5. **Składnie** - Tłumaczenia podzielone na małe paczki (4 klucze na składnię)
 
-**WAŻNE - Tryb TRANSLATION:**
-Worker generuje **instrukcje dla agenta LLM** (np. GPT, Claude, Phi), NIE tłumaczy sam!
+**WAŻNE - Tryb TRANSLATION (INTERAKTYWNY):**
+Agent LLM uruchamia `./i18n_worker_simple.sh --translate pl` i **wpisuje tłumaczenia bezpośrednio**!
 
 ```
-📝 INSTRUKCJA DLA AGENTA LLM:
-Przetłumacz poniższe teksty na język polski.
-Komendy w 'apostrofach' NIE tłumacz (np. 'trade', 'job').
-Zmienne w {nawiasach} zachowaj bez zmian.
-
-npc.al_dee.stdmod_2:
-  EN: Feeling lost? You can always ask me about general hints!
-  PL: [TU AGENT WSTAWIA TŁUMACZENIE]
+┌─────────────────────────────────────────────────────────────────────────┐
+│  SCREEN z agentem LLM                                                   │
+│                                                                         │
+│  ./i18n_worker_simple.sh --translate pl                                 │
+│                                                                         │
+│  [1/50] 📌 npc.archery.stdmod_1                                         │
+│                                                                         │
+│    EN: Come into my tavern and share some stories!                      │
+│                                                                         │
+│    PL: _  ← Agent wpisuje tutaj tłumaczenie                             │
+│                                                                         │
+│  Agent wpisuje: "Wejdź do mojej tawerny i podziel się historiami!"      │
+│                                                                         │
+│    ✅ OK                                                                │
+│                                                                         │
+│  [2/50] 📌 następny klucz...                                            │
+└─────────────────────────────────────────────────────────────────────────┘
 ```
+
+**Komendy dla agenta:**
+- Wpisz tłumaczenie → zapisuje i przechodzi dalej
+- `SKIP` → pomija klucz
+- `QUIT` → kończy sesję i zapisuje
+- `SAVE` → zapisuje postęp i kontynuuje
 
 **Zasady tłumaczenia:**
 - ✅ Tłumacz całe zdania naturalnie

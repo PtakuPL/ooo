@@ -123,18 +123,18 @@
     "raids": 351
   },
   "translation_sync": {
-    "current_lang": "es",
-    "current_category": "php.json",
+    "current_lang": "de",
+    "current_category": "html.json",
     "languages_done": [],
     "stats": {
       "de": {
         "npc": 5334,
         "chatchannels": 8,
-        "total": 464836,
+        "total": 494139,
         "client": 283,
         "cpp": 15,
         "events": 5,
-        "html": 663,
+        "html": 795,
         "items": 13749,
         "libs": 21,
         "modules": 16,
@@ -215,6 +215,6 @@
         "raids": 147
       }
     },
-    "last_sync": 1765410252.361953
+    "last_sync": 1765410299.3313937
   }
 }

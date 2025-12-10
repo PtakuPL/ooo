@@ -254,6 +254,115 @@ for cat_name, config in sorted_cats:
 
 ---
 
+## 🔴 PROBLEM: I18N_STATUS.md - Brakujące kategorie
+
+### Analiza problemu (2025-12-10 21:30)
+
+**Symptom:** I18N_STATUS.md nie pokazuje wielu aktywnych kategorii i ich statystyk.
+
+### Kategorie JSON które ISTNIEJĄ ale NIE SĄ pokazane:
+
+| Plik JSON | Kluczy | Status w I18N_STATUS.md |
+|-----------|--------|-------------------------|
+| html.json | 39 | ❌ BRAK |
+| raids.json | 30 | ❌ BRAK |
+| messages.json | 11 | ❌ BRAK |
+| startup.json | 8 | ❌ BRAK |
+| events.json | 0 | ❌ BRAK w szczegółach |
+| chatchannels.json | 0 | ❌ BRAK |
+| modules.json | 0 | ❌ BRAK |
+| npclib.json | 0 | ❌ BRAK |
+| libs.json | 0 | ❌ BRAK |
+| world.json | 0 | ❌ BRAK |
+
+### Kategorie WORKERA które NIE SĄ pokazane:
+
+| Kategoria | Opis | Status |
+|-----------|------|--------|
+| sendtextmessage | Zamiana na sendLocalizedTextMessage | ❌ BRAK |
+| keywordhandler | Dodawanie i18nKey do keyword | ❌ BRAK |
+| twig | Ekstrakcja z szablonów Twig | ❌ BRAK |
+
+### Informacje z `.i18n_category_state.json` NIE pokazane:
+
+| Pole | Opis | Status |
+|------|------|--------|
+| consecutive_zeros | Ile razy kategoria zwróciła 0 | ❌ BRAK |
+| total_processed | Łączna liczba przetworzonych | ❌ BRAK |
+| skip_until | Czas do którego pomijana | ❌ BRAK |
+| last_processed | Ostatni wynik kategorii | ❌ BRAK |
+
+### PLAN NAPRAWY I18N_STATUS.md
+
+#### Krok 1: Dynamiczna lista kategorii
+
+```python
+# Zamiast hardcodowanych zmiennych:
+game_keys = count_keys("game.json")
+items_keys = count_keys("items.json")
+# ... 
+
+# Użyć dynamicznego skanowania:
+all_json_files = os.listdir("i18n/en")
+categories = {}
+for f in all_json_files:
+    if f.endswith(".json"):
+        name = f.replace(".json", "")
+        categories[name] = count_keys(f)
+```
+
+#### Krok 2: Integracja z .i18n_category_state.json
+
+```python
+# Wczytaj stan kategorii
+try:
+    with open(".i18n_category_state.json") as f:
+        cat_state = json.load(f)
+except:
+    cat_state = {}
+
+# Dla każdej kategorii pokaż:
+# - Aktualną liczbę kluczy
+# - consecutive_zeros (jeśli > 0)
+# - skip_until (jeśli aktywny)
+# - total_processed
+```
+
+#### Krok 3: Nowa sekcja "Worker Activity"
+
+```markdown
+## 🤖 Worker Activity
+
+| Kategoria | Kluczy | Przetworzono | Seria zer | Skip do |
+|-----------|--------|--------------|-----------|---------|
+| items | 2990 | 1155 | 0 | - |
+| scripts | 385 | 92 | 2 | 21:35 |
+| monsters | 4158 | 0 | 2 | 21:40 |
+```
+
+#### Krok 4: Automatyczne TARGETS
+
+```python
+# Zamiast hardcodowanych celów:
+TARGETS = {"items": 40000, ...}
+
+# Dynamiczne obliczanie z potencjału:
+# - items: count(data/XML/items/*.xml)
+# - npc: count(data-otservbr-global/npc/*.lua) * avg_keys_per_npc
+# - scripts: count(scripts/**/*.lua z sendTextMessage)
+```
+
+### Priorytet implementacji
+
+| Krok | Trudność | Wartość | Priorytet |
+|------|----------|---------|-----------|
+| 1. Dynamiczna lista | ⭐⭐ | ⭐⭐⭐⭐⭐ | P0 |
+| 2. Integracja state | ⭐⭐⭐ | ⭐⭐⭐⭐ | P0 |
+| 3. Worker Activity | ⭐⭐ | ⭐⭐⭐⭐ | P1 |
+| 4. Auto TARGETS | ⭐⭐⭐⭐ | ⭐⭐⭐ | P2 |
+
+---
+
 ## 🐛 KNOWN ISSUES / DO NAPRAWY
 
 ### 🔴 Priorytet WYSOKI

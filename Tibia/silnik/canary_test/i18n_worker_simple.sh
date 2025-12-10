@@ -262,7 +262,7 @@ if sync_last_ts > 0 and sync_current_lang:
     sync_time_str = datetime.fromtimestamp(sync_last_ts).strftime("%H:%M:%S")
     lang_total = sync_stats.get(sync_current_lang, {}).get("total", 0)
     recent_operations.append({
-        "category": f"🌍 {sync_current_lang.upper()}/{sync_current_cat}",
+        "category": f"{sync_current_lang.upper()}/{sync_current_cat}",
         "count": lang_total,
         "timestamp": sync_last_ts,
         "time_str": sync_time_str,

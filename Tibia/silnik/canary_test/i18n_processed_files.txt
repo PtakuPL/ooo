@@ -892,3 +892,4 @@ data/scripts/talkactions/god/test.lua
 data/scripts/talkactions/gm/clean.lua
 data/scripts/talkactions/player/tutor_position.lua
 data/scripts/talkactions/player/refill.lua
+data/scripts/creaturescripts/monster/boss_lever_death.lua

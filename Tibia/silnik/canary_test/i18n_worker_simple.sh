@@ -712,25 +712,50 @@ stage_4() {
     local base=$(basename "$file" .lua)
     local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
     
-    local temp=$(mktemp)
-    local counter=1
-    local transformed=0
+    # Użyj Pythona dla multi-line parsing (text = może być na innej linii niż StdModule.say)
+    local transformed=$(python3 << TRANSFORM_PY
+import re
+import os
+
+file_path = "$file"
+safe_name = "$safe"
+
+with open(file_path, 'r') as f:
+    content = f.read()
+
+# Sprawdź czy już ma i18nKey
+if 'i18nKey' in content:
+    print(0)
+    exit(0)
+
+# Pattern dla multi-line StdModule.say z text = "..."
+# Szukamy bloków: StdModule.say, { ... text = "...", ... }
+pattern = r'(StdModule\.say\s*,\s*\{[^}]*?)text\s*=\s*"([^"]{5,})"([^}]*?\})'
+
+counter = [0]  # Użyj listy żeby móc modyfikować w funkcji
+
+def replace_with_i18n(match):
+    counter[0] += 1
+    key = f"npc.{safe_name}.stdmod_{counter[0]}"
+    before = match.group(1)
+    after = match.group(3)
+    return f'{before}i18nKey = "{key}"{after}'
+
+new_content = re.sub(pattern, replace_with_i18n, content, flags=re.DOTALL)
+
+if counter[0] > 0:
+    with open(file_path, 'w') as f:
+        f.write(new_content)
+    print(counter[0])
+else:
+    print(0)
+TRANSFORM_PY
+)
     
-    while IFS= read -r line || [ -n "$line" ]; do
-        if echo "$line" | grep -qE 'StdModule\.say.*text[[:space:]]*=[[:space:]]*"[^"]{5,}"'; then
-            local key="npc.${safe}.stdmod_${counter}"
-            line=$(echo "$line" | sed "s|text[[:space:]]*=[[:space:]]*\"[^\"]*\"|i18nKey = \"${key}\"|")
-            counter=$((counter + 1))
-            transformed=$((transformed + 1))
-        fi
-        echo "$line" >> "$temp"
-    done < "$file"
-    
-    if [ "$transformed" -gt 0 ]; then
-        mv "$temp" "$file"
+    if [ "$transformed" -gt 0 ] 2>/dev/null; then
         log "${GREEN}✓ Etap 4 OK${NC}: Zamieniono $transformed wystąpień"
     else
-        rm -f "$temp"
+        transformed=0
         log "${YELLOW}⏭ Etap 4${NC}: Brak zmian"
     fi
     

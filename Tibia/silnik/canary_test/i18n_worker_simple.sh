@@ -1942,9 +1942,9 @@ process_raids_category() {
     for dir in data-otservbr-global/raids data-canary/raids data/raids; do
         [ ! -d "$dir" ] && continue
         
-        for file in $(find "$dir" -name "*.lua" -o -name "*.xml" 2>/dev/null | head -$batch); do
+        # NAPRAWIONE: Filtruj processed PRZED head
+        while IFS= read -r file; do
             [ -f "$file" ] || continue
-            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
             
             local base=$(basename "$file" | sed 's/\.\(lua\|xml\)$//')
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
@@ -1969,11 +1969,12 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
             log "   ⚔️ raid.$safe.name = $name"
             
             [ "$count" -ge "$batch" ] && break
-        done
+        done < <(find "$dir" -name "*.lua" -o -name "*.xml" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
     done
     
     log "${GREEN}✅ Raids: $count kluczy${NC}"
+    echo "$count"
 }
 
 # Przetwarzaj kategorię world (mapy, areas, wydarzenia)
@@ -1989,9 +1990,9 @@ process_world_category() {
     for dir in data-otservbr-global/world data-canary/world data/world; do
         [ ! -d "$dir" ] && continue
         
-        for file in $(find "$dir" -name "*.lua" 2>/dev/null | head -$batch); do
+        # NAPRAWIONE: Filtruj processed PRZED head
+        while IFS= read -r file; do
             [ -f "$file" ] || continue
-            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
             
             # Wyciągnij teksty z plików świata
             local texts=$(grep -oP '"[^"]{10,}"' "$file" 2>/dev/null | head -5)
@@ -2019,11 +2020,12 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
             
             echo "$file" >> "$PROCESSED_FILE"
             [ "$count" -ge "$batch" ] && break
-        done
+        done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
     done
     
     log "${GREEN}✅ World: $count plików${NC}"
+    echo "$count"
 }
 
 # Przetwarzaj kategorię libs
@@ -2039,9 +2041,9 @@ process_libs_category() {
     for dir in data/libs data-otservbr-global/lib data-canary/lib; do
         [ ! -d "$dir" ] && continue
         
-        for file in $(find "$dir" -name "*.lua" 2>/dev/null | head -$batch); do
+        # NAPRAWIONE: Filtruj processed PRZED head
+        while IFS= read -r file; do
             [ -f "$file" ] || continue
-            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
             
             # Wyciągnij stringi z bibliotek
             local strings=$(grep -oP 'sendTextMessage\s*\([^,]+,\s*"\K[^"]+' "$file" 2>/dev/null | head -5)
@@ -2068,11 +2070,12 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
             
             echo "$file" >> "$PROCESSED_FILE"
             [ "$count" -ge "$batch" ] && break
-        done
+        done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
     done
     
     log "${GREEN}✅ Libs: $count plików${NC}"
+    echo "$count"
 }
 
 # Przetwarzaj kategorię events
@@ -2088,9 +2091,9 @@ process_events_category() {
     for dir in data/events data-otservbr-global/events; do
         [ ! -d "$dir" ] && continue
         
-        for file in $(find "$dir" -name "*.lua" 2>/dev/null | head -$batch); do
+        # NAPRAWIONE: Filtruj processed PRZED head
+        while IFS= read -r file; do
             [ -f "$file" ] || continue
-            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
             
             local base=$(basename "$file" .lua)
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')

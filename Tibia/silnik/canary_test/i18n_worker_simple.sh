@@ -2211,11 +2211,12 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
             
             echo "$file" >> "$PROCESSED_FILE"
             [ "$count" -ge "$batch" ] && break
-        done
+        done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
     done
     
     log "${GREEN}✅ Modules: $count plików${NC}"
+    echo "$count"
 }
 
 # Przetwarzaj kategorię startup
@@ -2260,11 +2261,12 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
             
             echo "$file" >> "$PROCESSED_FILE"
             [ "$count" -ge "$batch" ] && break
-        done
+        done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
     done
     
     log "${GREEN}✅ Startup: $count plików${NC}"
+    echo "$count"
 }
 
 # Przetwarzaj kategorię npclib
@@ -2309,11 +2311,12 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
             
             echo "$file" >> "$PROCESSED_FILE"
             [ "$count" -ge "$batch" ] && break
-        done
+        done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
     done
     
     log "${GREEN}✅ NpcLib: $count plików${NC}"
+    echo "$count"
 }
 
 # Przetwarzaj kategorię PHP (html_copy - strona WWW)
@@ -2361,9 +2364,10 @@ if key not in d:
         
         echo "$file" >> "$PROCESSED_FILE"
         [ "$count" -ge "$batch" ] && break
-    done
+    done < <(find html_copy -name "*.php" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
     
     log "${GREEN}✅ PHP: $count plików${NC}"
+    echo "$count"
 }
 
 # Przetwarzaj kategorię HTML/Twig
@@ -2408,9 +2412,10 @@ if key not in d:
         
         echo "$file" >> "$PROCESSED_FILE"
         [ "$count" -ge "$batch" ] && break
-    done
+    done < <(find html_copy -name "*.html" -o -name "*.twig" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
     
     log "${GREEN}✅ HTML: $count plików${NC}"
+    echo "$count"
 }
 
 # Przetwarzaj kategorię C++ (src)

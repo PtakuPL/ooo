@@ -878,5 +878,10 @@
   "item.2602.name": "blackboard",
   "item.2605.name": "blackboard",
   "item.2606.name": "banner",
-  "item.2635.name": "wall mirror"
+  "item.2635.name": "wall mirror",
+  "item.2638.name": "wall mirror",
+  "item.2644.name": "purple tapestry",
+  "item.2647.name": "green tapestry",
+  "item.2650.name": "yellow tapestry",
+  "item.2653.name": "orange tapestry"
 }

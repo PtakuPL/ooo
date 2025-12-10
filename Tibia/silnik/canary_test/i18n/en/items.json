@@ -10218,5 +10218,20 @@
   "item.31962.name": "reserved sprite",
   "item.32009.name": "veal",
   "item.32010.name": "meat hammer",
-  "item.32011.name": "milk churn"
+  "item.32011.name": "milk churn",
+  "item.32012.name": "cow bell",
+  "item.32013.name": "orc hammer",
+  "item.32020.name": "trapdoor",
+  "item.32021.name": "burning wall",
+  "item.32043.name": "bass",
+  "item.32044.name": "small bass",
+  "item.32045.name": "tiny bass",
+  "item.32064.name": "all knowing sausages",
+  "item.32065.name": "reserved sprite",
+  "item.32066.name": "green gingerbread heart",
+  "item.32067.name": "blue gingerbread heart",
+  "item.32068.name": "leberkassemmel",
+  "item.32069.name": "candy floss",
+  "item.32070.name": "Stockfish",
+  "item.32071.name": "empty beer mug"
 }

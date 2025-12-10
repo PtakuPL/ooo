@@ -193,5 +193,10 @@
   "item.428.name": "stairs",
   "item.429.name": "stone tile",
   "item.432.name": "trapdoor",
-  "item.433.name": "ladder"
+  "item.433.name": "ladder",
+  "item.434.name": "trapdoor",
+  "item.435.name": "sewer grate",
+  "item.436.name": "stone floor",
+  "item.451.name": "RESERVED SPRITE",
+  "item.463.name": "white stone tile"
 }

@@ -2979,58 +2979,89 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             echo "🔄 CYKL #$CYCLE - $(date '+%Y-%m-%d %H:%M:%S')"
             echo "═══════════════════════════════════════════════════════════════"
             
-            # Sprawdź komendy sterowania z pliku .worker_command
+            # Sprawdź komendy sterowania z plików
+            # Najpierw sprawdź worker_commands.txt (dla GitHub), potem .worker_command (lokalny)
+            COMMANDS_TXT="worker_commands.txt"
             COMMAND_FILE=".worker_command"
-            if [ -f "$COMMAND_FILE" ]; then
-                CMD=$(cat "$COMMAND_FILE" 2>/dev/null)
-                rm -f "$COMMAND_FILE"
+            CMD=""
+            
+            # 1. Sprawdź worker_commands.txt (można edytować przez GitHub)
+            if [ -f "$COMMANDS_TXT" ]; then
+                # Znajdź pierwszą odkomentowaną komendę (bez # na początku)
+                CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|RANDOM|STATUS|SKIP|PAUSE:|NOTE:)' | head -1)
                 
                 if [ -n "$CMD" ]; then
-                    echo "📨 Odebrano komendę: $CMD"
+                    echo "📨 Odebrano z worker_commands.txt: $CMD"
                     
-                    case "$CMD" in
-                        FORCE:*)
-                            FORCED_CAT=$(echo "$CMD" | cut -d: -f2)
-                            echo "🎯 Wymuszam kategorię: $FORCED_CAT"
-                            # Użyj wymuszonej kategorii zamiast dispatchera
-                            MODE_TYPE="MIGRATION"
-                            MODE_CAT="$FORCED_CAT"
-                            MODE_COUNT="forced"
-                            MODE_EXTRA="FORCED"
-                            ;;
-                        RANDOM)
-                            # Losowa kategoria z tych które mają pracę
-                            echo "🎲 Losowanie kategorii..."
-                            ALL_CATS="npc scripts monsters raids world spells items libs events chatchannels modules startup npclib"
-                            RANDOM_CAT=$(echo "$ALL_CATS" | tr ' ' '\n' | shuf | head -1)
-                            echo "🎯 Wylosowano: $RANDOM_CAT"
-                            MODE_TYPE="MIGRATION"
-                            MODE_CAT="$RANDOM_CAT"
-                            MODE_COUNT="random"
-                            MODE_EXTRA="RANDOM"
-                            ;;
-                        STATUS)
-                            echo "📊 STATUS WSZYSTKICH KATEGORII:"
-                            for cat in npc scripts monsters raids world spells items libs events chatchannels modules startup npclib; do
-                                count=$(find data-otservbr-global/$cat data-canary/$cat data/$cat -name "*.lua" 2>/dev/null | wc -l)
-                                echo "   $cat: ~$count plików"
-                            done
-                            continue
-                            ;;
-                        SKIP)
-                            echo "⏭️ Pomijam ten cykl..."
-                            continue
-                            ;;
-                        *)
-                            echo "⚠️ Nieznana komenda: $CMD"
-                            ;;
-                    esac
+                    # Zakomentuj wykonaną komendę i dodaj do historii
+                    TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
+                    sed -i "s/^$CMD/#$CMD  # Wykonano $TIMESTAMP/" "$COMMANDS_TXT" 2>/dev/null
+                    
+                    # Dodaj do historii na końcu sekcji
+                    echo "# [$TIMESTAMP] Wykonano: $CMD" >> "$COMMANDS_TXT"
                 fi
+            fi
+            
+            # 2. Sprawdź .worker_command (szybsze, lokalne)
+            if [ -z "$CMD" ] && [ -f "$COMMAND_FILE" ]; then
+                CMD=$(cat "$COMMAND_FILE" 2>/dev/null)
+                rm -f "$COMMAND_FILE"
+                [ -n "$CMD" ] && echo "📨 Odebrano z .worker_command: $CMD"
+            fi
+            
+            # 3. Wykonaj komendę jeśli jest
+            if [ -n "$CMD" ]; then
+                case "$CMD" in
+                    FORCE:*)
+                        FORCED_CAT=$(echo "$CMD" | cut -d: -f2)
+                        echo "🎯 Wymuszam kategorię: $FORCED_CAT"
+                        MODE_TYPE="MIGRATION"
+                        MODE_CAT="$FORCED_CAT"
+                        MODE_COUNT="forced"
+                        MODE_EXTRA="FORCED"
+                        ;;
+                    RANDOM)
+                        echo "🎲 Losowanie kategorii..."
+                        ALL_CATS="npc scripts monsters raids world spells items libs events chatchannels modules startup npclib"
+                        RANDOM_CAT=$(echo "$ALL_CATS" | tr ' ' '\n' | shuf | head -1)
+                        echo "🎯 Wylosowano: $RANDOM_CAT"
+                        MODE_TYPE="MIGRATION"
+                        MODE_CAT="$RANDOM_CAT"
+                        MODE_COUNT="random"
+                        MODE_EXTRA="RANDOM"
+                        ;;
+                    STATUS)
+                        echo "📊 STATUS WSZYSTKICH KATEGORII:"
+                        for cat in npc scripts monsters raids world spells items libs events chatchannels modules startup npclib; do
+                            count=$(find data-otservbr-global/$cat data-canary/$cat data/$cat -name "*.lua" 2>/dev/null | wc -l)
+                            keys=$(python3 -c "import json; print(len(json.load(open('i18n/en/${cat}.json'))))" 2>/dev/null || echo 0)
+                            echo "   $cat: ~$count plików, $keys kluczy"
+                        done
+                        continue
+                        ;;
+                    SKIP)
+                        echo "⏭️ Pomijam ten cykl..."
+                        continue
+                        ;;
+                    PAUSE:*)
+                        PAUSE_CYCLES=$(echo "$CMD" | cut -d: -f2)
+                        echo "⏸️ PAUZA na $PAUSE_CYCLES cykli..."
+                        sleep $((PAUSE_CYCLES * DELAY))
+                        continue
+                        ;;
+                    NOTE:*)
+                        NOTE_TEXT=$(echo "$CMD" | cut -d: -f2-)
+                        echo "📝 NOTATKA: $NOTE_TEXT"
+                        # Notatka nie wykonuje akcji, kontynuuj normalnie
+                        ;;
+                    *)
+                        echo "⚠️ Nieznana komenda: $CMD"
+                        ;;
+                esac
             fi
             
             # Jeśli nie było wymuszenia, użyj dispatchera
             if [ -z "$MODE_EXTRA" ] || [ "$MODE_EXTRA" != "FORCED" -a "$MODE_EXTRA" != "RANDOM" ]; then
-                # Użyj dispatchera do wyboru trybu
                 MODE_RESULT=$(select_work_mode)
                 MODE_TYPE=$(echo "$MODE_RESULT" | cut -d: -f1)
                 MODE_CAT=$(echo "$MODE_RESULT" | cut -d: -f2)

@@ -41,6 +41,10 @@
     "chatchannels": {
       "count": 0,
       "timestamp": 1765405835.9951742
+    },
+    "modules": {
+      "count": 16,
+      "timestamp": 1765405842.8540168
     }
   },
   "consecutive_zeros": {
@@ -51,13 +55,15 @@
     "items": 1,
     "libs": 1,
     "events": 1,
-    "chatchannels": 1
+    "chatchannels": 1,
+    "modules": 0
   },
   "total_processed": {
     "items": 11689,
     "libs": 5,
     "events": 5,
-    "chatchannels": 8
+    "chatchannels": 8,
+    "modules": 16
   },
   "translation_sync": {
     "current_lang": "de",

@@ -98,5 +98,10 @@
   "item.235.name": "bag",
   "item.236.name": "strong health potion",
   "item.237.name": "strong mana potion",
-  "item.238.name": "great mana potion"
+  "item.238.name": "great mana potion",
+  "item.239.name": "great health potion",
+  "item.266.name": "health potion",
+  "item.267.name": "linen",
+  "item.268.name": "mana potion",
+  "item.269.name": "dead dragon hatchling"
 }

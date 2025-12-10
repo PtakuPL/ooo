@@ -126,7 +126,7 @@ end
 
 keywordHandler:addKeyword({ "magic" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.rachel.stdmod_1",
+	text = "Okay, then just browse through all of my wares.",
 })
 
 local items = {

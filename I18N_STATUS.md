@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 11:30:58 UTC  
+> **Aktualizacja:** 2025-12-10 11:31:15 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,9 +21,9 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **10** | ↑ |
+| 📁 Plików przetworzonych | **15** | ↑ |
 | ⏭️ Plików wykluczonych | **729** | - |
-| 🔑 Kluczy i18n | **4000** | ↑ |
+| 🔑 Kluczy i18n | **4029** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
 | 🔄 Cykl | **#1** | - |
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 4000/15000 (27%) | 15000 |
+| 🧙 NPC Dialogs | 🔄 | 4029/15000 (27%) | 15000 |
 | 📜 Lua Scripts | ⏳ | 0/1000 (0%) | 1000 |
 | 🎒 Items Database | ⏳ | 0/40000 (0%) | 40000 |
 | 👹 Monsters | ⏳ | 0/500 (0%) | 500 |
@@ -83,12 +83,12 @@
 │ Kategoria: 🧙 NPC Dialogs                            │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Postęp migracji NPC:                                        │
-│ [███████████████████████████████████████████████░░░] │
-│ 281/297 plików (95%)                                          │
+│ [████████████████████████████████████████████████░░] │
+│ 286/297 plików (96%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Pozostało: 16 plików NPC                              │
-│ 🕐 ETA: ~2min 40s (przy 10s/plik)                            │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 11:30:58                 │
+│ ⏳ Pozostało: 11 plików NPC                              │
+│ 🕐 ETA: ~1min 50s (przy 10s/plik)                            │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 11:31:15                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,23 +98,23 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przetworzonych | **10** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **281**/297 | 95% ukończone |
-| 🔑 Kluczy wyciągniętych | **4000** | we wszystkich kategoriach |
+| 📁 Plików przetworzonych | **15** | z i18n_file_status.json |
+| ✅ NPC zmigrowanych | **286**/297 | 96% ukończone |
+| 🔑 Kluczy wyciągniętych | **4029** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
 | 🔄 Cykli wykonanych | **#1** | continuous mode |
-| ⚠️ Plików do migracji | **16** | NPC z StdModule.say |
+| ⚠️ Plików do migracji | **11** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
-- ✅ `plunderpurse` - ukończono 2025-12-10 11:30
-- ✅ `ormuhn` - ukończono 2025-12-10 11:30
-- ✅ `oressa` - ukończono 2025-12-10 11:30
-- ✅ `nielson` - ukończono 2025-12-10 11:30
-- ✅ `mr_morris` - ukończono 2025-12-10 11:30
+- ✅ `sebastian` - ukończono 2025-12-10 11:31
+- ✅ `sandra` - ukończono 2025-12-10 11:31
+- ✅ `richard` - ukończono 2025-12-10 11:31
+- ✅ `rachel` - ukończono 2025-12-10 11:31
+- ✅ `puffels` - ukończono 2025-12-10 11:31
 
 ---
 
@@ -173,13 +173,13 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 4000 |
+| 🔑 Kluczy | 4029 |
 | 🎯 Cel | 15000 |
 | 📊 Postęp | 27% |
 | 📁 Plik | i18n/en/npc.json |
 | 📁 Plików NPC | 1026 |
-| ✅ Zmigrowanych | 281 |
-| 🔄 Do migracji | 16 |
+| ✅ Zmigrowanych | 286 |
+| 🔄 Do migracji | 11 |
 
 </details>
 
@@ -282,7 +282,7 @@
 
 ```
 [⏳] Items (0)      ░░░░░░░░░░░░░░░░░░░░  0%
-[🔄] NPC (4000)            █████░░░░░░░░░░░░░░░  27%
+[🔄] NPC (4029)            █████░░░░░░░░░░░░░░░  27%
 [⏳] Scripts (0)      ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Monsters (0)    ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Spells (0)       ░░░░░░░░░░░░░░░░░░░░  0%
@@ -294,23 +294,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:30:58  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:31:15  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `sebastian` - ukończono 2025-12-10 11:31
+- ✅ `sandra` - ukończono 2025-12-10 11:31
+- ✅ `richard` - ukończono 2025-12-10 11:31
+- ✅ `rachel` - ukończono 2025-12-10 11:31
+- ✅ `puffels` - ukończono 2025-12-10 11:31
 - ✅ `plunderpurse` - ukończono 2025-12-10 11:30
 - ✅ `ormuhn` - ukończono 2025-12-10 11:30
 - ✅ `oressa` - ukończono 2025-12-10 11:30
 - ✅ `nielson` - ukończono 2025-12-10 11:30
 - ✅ `mr_morris` - ukończono 2025-12-10 11:30
-- ✅ `morgan` - ukończono 2025-12-10 11:30
-- ✅ `king_tibianus` - ukończono 2025-12-10 11:30
-- ✅ `falonzo` - ukończono 2025-12-10 11:30
-- ✅ `anderson` - ukończono 2025-12-10 11:30
-- ✅ `amber` - ukończono 2025-12-10 11:30
 
 ---
 

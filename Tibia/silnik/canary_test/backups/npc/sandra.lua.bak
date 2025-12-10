@@ -134,7 +134,7 @@ end
 
 keywordHandler:addKeyword({ "shop" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.sandra.stdmod_1",
+	text = "I sell potions and fluids. If you'd like to see my offers, ask me for a {trade}.",
 })
 
 npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|, welcome to the fluid and potion {shop} of Edron.")

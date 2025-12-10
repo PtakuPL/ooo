@@ -278,6 +278,11 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `sebastian` - ukończono 2025-12-10 11:31
+- ✅ `sandra` - ukończono 2025-12-10 11:31
+- ✅ `richard` - ukończono 2025-12-10 11:31
+- ✅ `rachel` - ukończono 2025-12-10 11:31
+- ✅ `puffels` - ukończono 2025-12-10 11:31
 - ✅ `plunderpurse` - ukończono 2025-12-10 11:30
 - ✅ `ormuhn` - ukończono 2025-12-10 11:30
 - ✅ `oressa` - ukończono 2025-12-10 11:30

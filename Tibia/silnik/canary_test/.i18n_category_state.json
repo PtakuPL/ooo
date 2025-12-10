@@ -123,15 +123,15 @@
     "raids": 351
   },
   "translation_sync": {
-    "current_lang": "fr",
-    "current_category": "events.json",
+    "current_lang": "de",
+    "current_category": "client.json",
     "languages_done": [],
     "stats": {
       "de": {
         "npc": 5334,
         "chatchannels": 8,
-        "total": 246646,
-        "client": 14,
+        "total": 271118,
+        "client": 283,
         "cpp": 15,
         "events": 5,
         "html": 418,
@@ -207,6 +207,6 @@
         "events": 5
       }
     },
-    "last_sync": 1765406770.9378314
+    "last_sync": 1765409849.9266691
   }
 }

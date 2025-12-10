@@ -3,5 +3,10 @@
   "item.2.name": "wine",
   "item.3.name": "beer",
   "item.4.name": "mud",
-  "item.5.name": "blood"
+  "item.5.name": "blood",
+  "item.6.name": "slime",
+  "item.7.name": "oil",
+  "item.8.name": "urine",
+  "item.9.name": "milk",
+  "item.10.name": "manafluid"
 }

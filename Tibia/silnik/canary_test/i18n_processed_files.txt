@@ -1060,3 +1060,13 @@ KWH:data-otservbr-global/npc/alkestios.lua
 KWH:data-otservbr-global/npc/iskan.lua
 KWH:data-otservbr-global/npc/red_lilly.lua
 KWH:data-otservbr-global/npc/gerimor.lua
+TWIG:html_copy/system/templates/account.create.html.twig
+TWIG:html_copy/system/templates/experience_stages.html.twig
+TWIG:html_copy/system/templates/buttons.change_sex.html.twig
+TWIG:html_copy/system/templates/admin.open_source.html.twig
+TWIG:html_copy/system/templates/buttons.register_account.html.twig
+TWIG:html_copy/system/templates/admin.reports.html.twig
+TWIG:html_copy/system/templates/guilds.manager.html.twig
+TWIG:html_copy/system/templates/buttons.change_name.html.twig
+TWIG:html_copy/system/templates/news.html.twig
+TWIG:html_copy/system/templates/account.generate_new_recovery_key.html.twig

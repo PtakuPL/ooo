@@ -81,6 +81,10 @@
     "keywordhandler": {
       "count": 0,
       "timestamp": 1765405958.277475
+    },
+    "twig": {
+      "count": 37,
+      "timestamp": 1765405965.185893
     }
   },
   "consecutive_zeros": {
@@ -99,7 +103,8 @@
     "html": 1,
     "client": 1,
     "sendtextmessage": 1,
-    "keywordhandler": 1
+    "keywordhandler": 1,
+    "twig": 0
   },
   "total_processed": {
     "items": 11689,
@@ -111,7 +116,8 @@
     "php": 24,
     "html": 14,
     "client": 14,
-    "keywordhandler": 64
+    "keywordhandler": 64,
+    "twig": 37
   },
   "translation_sync": {
     "current_lang": "de",

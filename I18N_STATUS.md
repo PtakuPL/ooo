@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 23:32:38 UTC  
+> **Aktualizacja:** 2025-12-10 23:32:45 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -23,10 +23,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **26** | ↑ |
 | ⏭️ Plików wykluczonych | **711** | - |
-| 🔑 Kluczy i18n | **23849** | ↑ |
+| 🔑 Kluczy i18n | **23886** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#36** | - |
+| 🔄 Cykl | **#37** | - |
 
 ---
 
@@ -51,7 +51,7 @@
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
 | 🐘 PHP Backend | 🔄 | 32/3000 (1%) | 3000 |
-| 📄 HTML Views | 🔄 | 53/300 (18%) | 300 |
+| 📄 HTML Views | 🔄 | 90/300 (30%) | 300 |
 | 📦 JavaScript | 🔄 | 14/200 (7%) | 200 |
 
 ### ⏳ Faza 3: 📱 Instalka/Klient
@@ -76,19 +76,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    36 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    37 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 KEYWORDHANDLER                         │
+│ Kategoria: 🎒 TWIG                                   │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: keywordhandler                      │
+│ 📊 Ostatnia aktywność: twig                      │
 │ [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
 │ 0/1000 kluczy (0%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Total processed: 11850 operacji               │
+│ ⏳ Total processed: 11887 operacji               │
 │ 🕐 Aktywne kategorie: 16                               │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 23:32:38                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 23:32:45                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,11 +98,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Operacji wykonanych | **11850** | we wszystkich kategoriach |
+| 📁 Operacji wykonanych | **11887** | we wszystkich kategoriach |
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **23849** | we wszystkich kategoriach |
+| 🔑 Kluczy wyciągniętych | **23886** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
-| 🔄 Cykli wykonanych | **#36** | continuous mode |
+| 🔄 Cykli wykonanych | **#37** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -110,6 +110,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `twig` +37 kluczy @ 23:32:45
 - ⚡ `keywordhandler` +0 kluczy @ 23:32:38
 - ⚡ `sendtextmessage` +0 kluczy @ 23:32:15
 - ⚡ `client` +0 kluczy @ 23:32:00
@@ -117,7 +118,6 @@
 - ⚡ `php` +0 kluczy @ 23:31:26
 - ⚡ `npclib` +0 kluczy @ 23:31:10
 - ⚡ `startup` +0 kluczy @ 23:31:03
-- ⚡ `modules` +0 kluczy @ 23:30:49
 
 ---
 
@@ -280,7 +280,7 @@
 | npc | 5334 | 0 | 0 | ✅ Active |
 | monsters | 4158 | 0 | 4 | ⏭️ Skip 3m |
 | scripts | 385 | 0 | 6 | ⏭️ Skip 64m |
-| html | 53 | 14 | 1 | ⏭️ Skip 4m |
+| html | 90 | 14 | 1 | ⏭️ Skip 3m |
 | php | 32 | 24 | 1 | ⏭️ Skip 3m |
 | raids | 30 | 0 | 4 | ⏭️ Skip 3m |
 | startup | 19 | 11 | 1 | ⏭️ Skip 3m |
@@ -318,7 +318,7 @@
 | startup | 3m | 1x | Progresywny backoff |
 | npclib | 3m | 1x | Progresywny backoff |
 | php | 3m | 1x | Progresywny backoff |
-| html | 4m | 1x | Progresywny backoff |
+| html | 3m | 1x | Progresywny backoff |
 | client | 4m | 1x | Progresywny backoff |
 | sendtextmessage | 4m | 1x | Progresywny backoff |
 | keywordhandler | 4m | 1x | Progresywny backoff |
@@ -329,7 +329,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #36 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #37 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -372,7 +372,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:32:38  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:32:45  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

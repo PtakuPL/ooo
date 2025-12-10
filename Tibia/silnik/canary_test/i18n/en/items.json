@@ -868,5 +868,10 @@
   "item.2522.name": "lemonade cask",
   "item.2523.name": "barrel",
   "item.2524.name": "trough",
-  "item.2525.name": "small cask"
+  "item.2525.name": "small cask",
+  "item.2526.name": "dustbin",
+  "item.2595.name": "badger fur",
+  "item.2596.name": "painting",
+  "item.2597.name": "blackboard",
+  "item.2598.name": "blackboard"
 }

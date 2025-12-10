@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:38:19 UTC  
+> **Aktualizacja:** 2025-12-11 00:38:26 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **29113** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#91** | - |
+| 🔄 Cykl | **#92** | - |
 
 ---
 
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    91 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    92 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🌍 TRANSLATION_SYNC (Etap 1)              │
-│ Kategoria: 🌍 DE/php.json                            │
+│ Tryb:      MIGRATION (multi-category)               │
+│ Kategoria: 🎒 LIBS                                   │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: DE/php.json                                    │
-│ [██████████████████████████████████████████████████] │
-│ 377465/29113 kluczy (1297%)                                          │
+│ 📊 Ostatnia aktywność: libs                                           │
+│ [█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
+│ 21/1000 kluczy (2%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 26912 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:38:19                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:38:26                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -103,7 +103,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29113** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#91** | continuous mode |
+| 🔄 Cykli wykonanych | **#92** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,6 +111,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `libs` +0 kluczy @ 00:38:25
 - 🌍 `DE/php.json` +377465 kluczy @ 00:38:18
 - 🎒 `items` +0 kluczy @ 00:37:50
 - ⚡ `world` +0 kluczy @ 00:37:43
@@ -118,7 +119,6 @@
 - ⚡ `twig` +0 kluczy @ 00:37:17
 - ⚡ `keywordhandler` +0 kluczy @ 00:37:09
 - ⚡ `sendtextmessage` +0 kluczy @ 00:37:02
-- 👹 `monsters` +0 kluczy @ 00:36:49
 
 
 ---
@@ -287,7 +287,7 @@
 | client | 283 | 821 | 2 | ⏭️ Skip 8m |
 | raids | 147 | 351 | 4 | ⏭️ Skip 59m |
 | startup | 23 | 23 | 2 | ⏭️ Skip 0m |
-| libs | 21 | 53 | 2 | ⏭️ Skip 0m |
+| libs | 21 | 53 | 4 | ⏭️ Skip 59m |
 | modules | 16 | 16 | 2 | ⏭️ Skip 0m |
 | cpp | 15 | 0 | 0 | ✅ Active |
 | spells | 15 | 0 | 0 | ✅ Active |
@@ -313,7 +313,7 @@
 | raids | 59m | 4x | Progresywny backoff |
 | world | 59m | 4x | Progresywny backoff |
 | items | 59m | 4x | Progresywny backoff |
-| libs | 0m | 2x | Progresywny backoff |
+| libs | 59m | 4x | Progresywny backoff |
 | events | 0m | 2x | Progresywny backoff |
 | chatchannels | 0m | 2x | Progresywny backoff |
 | modules | 0m | 2x | Progresywny backoff |
@@ -332,7 +332,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #91 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #92 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -375,7 +375,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:38:19  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:38:26  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

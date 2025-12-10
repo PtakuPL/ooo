@@ -297,7 +297,118 @@ npcConfig.voices = {
 **Lokalizacja:**
 - Definicja: `data/npclib/npc_system/keyword_handler.lua`
 
-**Status:** ❌ Wymaga analizy
+**Status:** ✅ 79% ZROBIONE (2915 z i18nKey, 778 bez)
+
+---
+
+## 🔧 TECHNICZNE FAKTY - System i18n (Sesja #4)
+
+### 📁 Struktura plików i18n
+
+**Główny folder:** `i18n/` (53 języki: en, pl, de, es, fr, etc.)
+
+**Pliki JSON w każdym języku:**
+| Plik | Opis | Klucze |
+|------|------|--------|
+| `npc.json` | Dialogi NPC | ~5,206 |
+| `monsters.json` | Głosy potworów | ~4,108 |
+| `scripts.json` | Teksty ze skryptów | ~368 |
+| `messages.json` | **NOWY!** Wiadomości systemowe | 11 |
+| `cpp.json` | Teksty z kodu C++ | 15 |
+| `php.json` | Teksty z PHP (strona WWW) | 8 |
+| `startup.json` | Teksty startowe | 8 |
+
+**Szukanie plików przez C++ (w kolejności):**
+1. `data-otservbr-global/i18n/`
+2. `data/i18n/`
+3. `i18n/`
+
+### 📞 Funkcje wysyłania tekstu do gracza
+
+| Funkcja | Tłumaczy? | Użycie |
+|---------|-----------|--------|
+| `player:sendTextMessage(type, text)` | ❌ NIE | Zwykły tekst |
+| `player:sendLocalizedTextMessage(type, key, args)` | ✅ TAK | **Główna funkcja i18n!** |
+| `NPC_LIB.i18n.npcSay(handler, npc, creature, key, args)` | ✅ TAK | Wrapper dla NPC |
+| `NPC_LIB.i18n.sayLocalized(player, key, args, type)` | ✅ TAK | Bezpośredni wrapper |
+
+### 🔑 Format kluczy i argumentów
+
+**Klucze używają numerowanych placeholderów `{1}`, `{2}`, `{3}`:**
+```json
+{
+  "system.trade.sold": "Sold {1}x {2} for {3} gold."
+}
+```
+
+**Wywołanie z Lua:**
+```lua
+-- Argumenty jako tablica (indeksowana od 1)
+player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
+-- → "Sold 5x sword for 100 gold."
+```
+
+### 📄 Lokalizacja kodu i18n
+
+| Komponent | Plik | Opis |
+|-----------|------|------|
+| **NPC_LIB.i18n** | `data-otservbr-global/lib/npc/i18n.lua` | Wrapper Lua dla NPC |
+| **Translator C++** | `src/utils/i18n/translator.cpp` | Ładowanie JSON, tłumaczenie |
+| **Player functions** | `src/lua/functions/creatures/player/player_functions.cpp:2631` | `sendLocalizedTextMessage` |
+| **Player implementation** | `src/creatures/players/player.cpp:2345` | Wysyłanie do klienta |
+| **server_i18n.lua** | `data/libs/server_i18n.lua` | Alternatywny system (nieużywany) |
+
+### 🔄 Przepływ tłumaczenia
+
+```
+1. Lua: player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {5, "sword", 100})
+2. C++: PlayerFunctions::luaPlayerSendLocalizedTextMessage()
+3. C++: player->sendLocalizedTextMessage(type, key, args)
+4. C++: Translator::translate(key, player->getLanguage())  ← TŁUMACZENIE
+5. C++: Podstawienie {1}, {2}, {3} → "Sold 5x sword for 100 gold."
+6. C++: player->sendTextMessage() z przetłumaczonym tekstem
+7. Klient: Wyświetla tekst
+```
+
+### 📦 messages.json - Klucze systemowe (Sesja #4)
+
+```json
+{
+  "system.trade.sold": "Sold {1}x {2} for {3} gold.",
+  "system.trade.bought": "Bought {1}x {2} for {3} gold.",
+  "system.blessing.received": "You received the remaining {1} blesses.",
+  "system.blessing.already": "You are already blessed.",
+  "system.store.check_inbox": "Please make sure you have free slots in your store inbox.",
+  "system.experience.gained": "You gained {1} experience points.",
+  "system.mission.points": "You earned {1} point(s) on the {2} mission.",
+  "system.mount.received": "Congratulations you received the {1} mount.",
+  "system.item.received": "You gained a {1}.",
+  "system.stash.count": "Your supply stash contains {1} items.",
+  "system.venture.decay": "Venture the path of decay!"
+}
+```
+
+### ⚡ Gotowe polecenia sed do migracji
+
+**1. Zamiana `Sold %ix %s for %i gold.` (304 pliki):**
+```bash
+find data-otservbr-global/npc/ -name "*.lua" -exec sed -i \
+  's|player:sendTextMessage(MESSAGE_TRADE, string\.format("Sold %ix %s for %i gold\.", amount, name, totalCost))|player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})|g' {} \;
+```
+
+**2. Zamiana `You are already blessed.`:**
+```bash
+sed -i 's|player:sendTextMessage(MESSAGE_STATUS, "You are already blessed.")|player:sendLocalizedTextMessage(MESSAGE_STATUS, "system.blessing.already")|g' data-otservbr-global/npc/*.lua
+```
+
+### 📊 Statystyki do dalszej pracy
+
+| Kategoria | Do zrobienia | Priorytet |
+|-----------|--------------|-----------|
+| sendTextMessage `"Sold..."` | 304 pliki | 🔴 WYSOKI (1 sed!) |
+| keywordHandler bez i18nKey | 778 wywołań | 🟡 ŚREDNI |
+| Twig bez trans() | 533 pliki | 🟢 NISKI |
+| Inne sendTextMessage | ~20 unikalnych | 🟡 ŚREDNI |
 
 ---
 

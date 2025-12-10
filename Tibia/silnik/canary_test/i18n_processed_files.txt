@@ -1130,3 +1130,13 @@ TWIG:html_copy/system/templates/admin.pages.html.twig
 TWIG:html_copy/system/templates/guilds.pass_leadership.html.twig
 TWIG:html_copy/system/templates/forum.edit_post.html.twig
 TWIG:html_copy/system/templates/mail.account.register.html.twig
+TWIG:html_copy/system/templates/experience_table.html.twig
+TWIG:html_copy/system/templates/guilds.create.html.twig
+TWIG:html_copy/system/templates/buttons.delete_character.html.twig
+TWIG:html_copy/system/templates/guilds.change_rank.html.twig
+TWIG:html_copy/system/templates/gallery.form.html.twig
+TWIG:html_copy/system/templates/account.characters.create.html.twig
+TWIG:html_copy/system/templates/buttons.cancel.html.twig
+TWIG:html_copy/system/templates/account.logout.html.twig
+TWIG:html_copy/system/templates/account.change-password.html.twig
+TWIG:html_copy/system/templates/guilds.change_description.html.twig

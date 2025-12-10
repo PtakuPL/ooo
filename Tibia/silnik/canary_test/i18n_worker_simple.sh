@@ -593,32 +593,60 @@ stage_2() {
     local file="$1"
     log "${BLUE}[2/8] ANALYSIS${NC}: $file"
     
-    # Szukamy StdModule.say (text może być na innej linii)
+    # Szukamy różnych wzorców tekstowych
     local stdmod=$(grep -c "StdModule\.say" "$file" 2>/dev/null || echo "0")
     local npcsay=$(grep -c "npcHandler:say" "$file" 2>/dev/null || echo "0")
     local sendtxt=$(grep -c "sendTextMessage" "$file" 2>/dev/null || echo "0")
+    local greet=$(grep -c "addGreetKeyword" "$file" 2>/dev/null || echo "0")
+    local farewell=$(grep -c "addFarewellKeyword" "$file" 2>/dev/null || echo "0")
     local i18nkey=$(grep -c "i18nKey" "$file" 2>/dev/null || echo "0")
+    local npcsaylib=$(grep -c "NPC_LIB.i18n.npcSay" "$file" 2>/dev/null || echo "0")
     
     # Wyczyść zmienne - usuń białe znaki
     stdmod=${stdmod//[[:space:]]/}
     npcsay=${npcsay//[[:space:]]/}
     sendtxt=${sendtxt//[[:space:]]/}
+    greet=${greet//[[:space:]]/}
+    farewell=${farewell//[[:space:]]/}
     i18nkey=${i18nkey//[[:space:]]/}
+    npcsaylib=${npcsaylib//[[:space:]]/}
     
     # Domyślne wartości
     [ -z "$stdmod" ] && stdmod=0
     [ -z "$npcsay" ] && npcsay=0
     [ -z "$sendtxt" ] && sendtxt=0
+    [ -z "$greet" ] && greet=0
+    [ -z "$farewell" ] && farewell=0
     [ -z "$i18nkey" ] && i18nkey=0
+    [ -z "$npcsaylib" ] && npcsaylib=0
     
-    local total=$((stdmod + npcsay + sendtxt))
+    local total=$((stdmod + npcsay + sendtxt + greet + farewell))
+    local greet_farewell=$((greet + farewell))
     
     local base=$(basename "$file" .lua)
     local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
     
-    local needs="true"
-    [ "$total" -eq 0 ] && needs="false"
-    [ "$i18nkey" -ge "$stdmod" ] && [ "$stdmod" -gt 0 ] && needs="false"
+    # Sprawdź czy plik wymaga migracji
+    local needs="false"
+    
+    # StdModule.say wymaga migracji jeśli brak i18nKey
+    if [ "$stdmod" -gt 0 ] && [ "$i18nkey" -lt "$stdmod" ]; then
+        needs="true"
+    fi
+    
+    # npcHandler:say wymaga migracji jeśli brak NPC_LIB.i18n.npcSay
+    if [ "$npcsay" -gt 0 ] && [ "$npcsaylib" -eq 0 ]; then
+        needs="true"
+    fi
+    
+    # addGreetKeyword/addFarewellKeyword z text wymaga migracji jeśli brak i18nKey
+    if [ "$greet_farewell" -gt 0 ]; then
+        local greet_with_i18n=$(grep -c "addGreetKeyword.*i18nKey\|addFarewellKeyword.*i18nKey" "$file" 2>/dev/null || echo "0")
+        greet_with_i18n=${greet_with_i18n//[[:space:]]/}
+        if [ "$greet_with_i18n" -lt "$greet_farewell" ]; then
+            needs="true"
+        fi
+    fi
     
     python3 -c "
 import json
@@ -633,15 +661,18 @@ data['files']['$file']['stages']['2_analysis'] = {
     'StdModule_say': $stdmod,
     'npcHandler_say': $npcsay,
     'sendTextMessage': $sendtxt,
+    'addGreetKeyword': $greet,
+    'addFarewellKeyword': $farewell,
     'total': $total,
     'already_i18n': $i18nkey,
+    'npcSayLib': $npcsaylib,
     'needs_migration': needs_bool
 }
 
 with open('$STATUS_FILE', 'w') as f: json.dump(data, f, indent=2)
 print('OK')
 "
-    log "${GREEN}✓ Etap 2 OK${NC}: StdModule=$stdmod, total=$total, needs=$needs"
+    log "${GREEN}✓ Etap 2 OK${NC}: StdModule=$stdmod, greet/farewell=$greet_farewell, needs=$needs"
     [ "$needs" = "true" ] && return 0 || return 2
 }
 

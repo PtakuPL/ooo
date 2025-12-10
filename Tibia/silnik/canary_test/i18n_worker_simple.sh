@@ -3578,6 +3578,11 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                             process_client_category "$BATCH"
                             echo "   📊 Client: Dodano klucze"
                             ;;
+                        sendtextmessage|stm)
+                            echo "   📨 Przetwarzam sendTextMessage patterns..."
+                            process_sendTextMessage_category "$BATCH"
+                            echo "   📊 sendTextMessage: Zamieniono pliki"
+                            ;;
                         *)
                             echo "   ⚠️ Nieznana kategoria: $MODE_CAT"
                             ;;

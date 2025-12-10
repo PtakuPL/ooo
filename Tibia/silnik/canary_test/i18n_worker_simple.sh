@@ -1295,9 +1295,11 @@ status["translation_status"][target_lang] = {
 with open(status_file, "w") as f:
     json.dump(status, f, indent=2)
 
-print(f"\n✅ TŁUMACZENIE ZAKOŃCZONE: {target_lang}")
-print(f"   Przetłumaczono w tym batchu: {translated_count}")
-print(f"   Prawdziwe tłumaczenia: {real_total}/{len(lang_data)}")
+print(f"\n✅ SESJA TŁUMACZENIA ZAKOŃCZONA: {target_lang}")
+print(f"   Przetłumaczono: {translated_count}")
+print(f"   Pominięto: {skipped_count}")
+print(f"   Razem w pliku: {len(lang_data)} kluczy")
+print(f"   Prawdziwe tłumaczenia: {real_total}")
 print(f"   Pozostało placeholder'ów: {placeholders}")
 PYTRANSLATE
 

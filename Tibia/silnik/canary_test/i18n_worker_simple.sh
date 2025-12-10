@@ -157,14 +157,19 @@ for f in os.listdir("data-otservbr-global/npc"):
             except:
                 pass
 
-# Cykl (z pliku jeśli istnieje)
+# Cykl - pobierz z i18n_global_stats.json lub status file
 cycle_count = 1
 try:
-    with open("i18n_worker_state.json") as f:
-        ws = json.load(f)
-        cycle_count = ws.get("cycle", 1)
+    with open("i18n_global_stats.json") as f:
+        gs = json.load(f)
+        cycle_count = gs.get("total_cycles", 1)
 except:
-    pass
+    try:
+        with open("i18n_worker_state.json") as f:
+            ws = json.load(f)
+            cycle_count = ws.get("cycle", 1)
+    except:
+        pass
 
 # Ostatnio ukończone NPC
 recent_completed = []
@@ -295,7 +300,7 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 │ {migrated_npc}/{migrated_npc + needs_migration_npc} plików ({round(migrated_npc/(migrated_npc + needs_migration_npc)*100) if (migrated_npc + needs_migration_npc) > 0 else 0}%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: {needs_migration_npc} plików NPC                              │
-│ 🕐 ETA: ~{needs_migration_npc * 10 // 60}min {needs_migration_npc * 10 % 60}s (przy 10s/plik)                            │
+│ 🕐 ETA: ~{needs_migration_npc * 4 // 60}min {needs_migration_npc * 4 % 60}s (przy 4s/plik)                             │
 │ 📅 Ostatnia aktualizacja: {timestamp}                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -307,7 +312,7 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
 | 📁 Plików przetworzonych | **{processed_count}** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **{migrated_npc}**/{migrated_npc + needs_migration_npc} | {round(migrated_npc/(migrated_npc + needs_migration_npc)*100) if (migrated_npc + needs_migration_npc) > 0 else 0}% ukończone |
+| ✅ NPC zmigrowanych | **{completed}** ({migrated_npc} z i18nKey) | z {total_npc} plików NPC |
 | 🔑 Kluczy wyciągniętych | **{total_keys}** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **{len(langs_with_data)}**/{langs_count} | {", ".join(sorted(langs_with_data)[:5])}{"..." if len(langs_with_data) > 5 else ""} |
 | 🔄 Cykli wykonanych | **#{cycle_count}** | continuous mode |
@@ -961,11 +966,10 @@ for key in i18n_keys_in_lua:
         missing_in_json.append(key)
         errors.append(f"Klucz {key} brakuje w en/npc.json")
 
-# 3. Sprawdź duplikaty wartości
-values = list(en_data.values())
-duplicates = [v for v in values if values.count(v) > 1]
-if duplicates:
-    warnings.append(f"Znaleziono {len(set(duplicates))} duplikatów wartości")
+# 3. Duplikaty wartości - pomijamy (to normalne że różni NPC używają tych samych słów)
+# values = list(en_data.values())
+# duplicates = [v for v in values if values.count(v) > 1]
+# To NIE jest błąd - wiele NPC może mieć te same teksty
 
 # 4. Walidacja JSON wszystkich języków
 valid_langs = []

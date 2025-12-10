@@ -1,14 +1,14 @@
 {
   "category": "scripts",
   "status": "in_progress",
-  "last_updated": "2025-12-10T04:08:51+01:00",
+  "last_updated": "2025-12-10T04:11:30+01:00",
   "summary": {
     "total_keys": 713,
-    "files_processed": 599
+    "files_processed": 624
   },
   "current_work": {
     "directory": "data-otservbr-global/scripts/",
-    "cycle": 3
+    "cycle": 4
   },
   "subdirectories": {
     "quests": {"processed": 23},
@@ -16,28 +16,28 @@
   },
   "recent_files": [
   {
-    "file": "ziyad.lua",
-    "time": "04:08:50",
+    "file": "alia.lua",
+    "time": "04:11:29",
     "status": "success"
   },
   {
-    "file": "norf.lua",
-    "time": "04:08:50",
+    "file": "captain_harava.lua",
+    "time": "04:11:29",
     "status": "success"
   },
   {
-    "file": "kawill.lua",
-    "time": "04:08:50",
+    "file": "lea.lua",
+    "time": "04:11:29",
     "status": "success"
   },
   {
-    "file": "dallheim.lua",
-    "time": "04:08:50",
+    "file": "edala.lua",
+    "time": "04:11:29",
     "status": "success"
   },
   {
-    "file": "lily.lua",
-    "time": "04:08:50",
+    "file": "captain_seahorse.lua",
+    "time": "04:11:29",
     "status": "success"
   }
 ]

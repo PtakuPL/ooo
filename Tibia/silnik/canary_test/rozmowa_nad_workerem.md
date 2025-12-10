@@ -30,6 +30,11 @@
 9) Status sync: `--update-status` ma brać liczby z `i18n/en/*.json` i `i18n_global_stats.json`, by uniknąć rozjazdów. 
 10) Tryb tylko tłumaczeń: `--translations-only` odcina migrację przy code-freeze.
 
+## Podsumowanie przekazane użytkownikowi (dla Agenta 2)
+- Audyt potwierdził: rozjazd `I18N_STATUS.md` vs realne dane (trzeba `--update-status`), brak walidacji Lua i ochrony placeholderów, agresywny git na master, słaba detekcja wzorców, brak TM/throttle w AUTO_TRANSLATE.
+- Dostarczone pełne usprawnienia (lista powyżej) i plan tłumaczeń 53+ języków (sync → queue → TM/MT → walidacja → raport → TM update).
+- Najważniejsze zakazy: nie pushujemy niczego, co powinien wypchnąć worker/guardian; nie dotykamy ręcznie tego, co może zrobić worker (tłumaczenia/migracje) – ulepszamy go zamiast patchować ręcznie.
+
 ## Plan tłumaczeń na wszystkie języki (53+)
 - Źródło: EN. Priorytet: EU → LATAM → APAC.
 - Etap A (Synchronizacja): `TRANSLATION_SYNC` + `i18n/status/translation_backlog.json`, validator `{var}`/`|TOKEN|`.

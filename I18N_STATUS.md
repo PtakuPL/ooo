@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 11:04:51 UTC  
+> **Aktualizacja:** 2025-12-10 11:14:24 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,7 +21,7 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **0** | ↑ |
+| 📁 Plików przetworzonych | **255** | ↑ |
 | ⏭️ Plików wykluczonych | **729** | - |
 | 🔑 Kluczy i18n | **3594** | ↑ |
 | 🌍 Języków | **53** | ✓ |
@@ -74,24 +74,47 @@
 
 ## 🔴 LIVE: Aktualna Aktywność
 
-| Parametr | Wartość |
-|----------|---------|
-| Status | ✅ idle |
-| Operacja | 🎮 Canary Server - NPC |
-| Plik | Cykl #1 |
-| Szczegóły | NPC:3594 Scripts:0 Items:0 |
-| Ostatnia aktualizacja | 2025-12-10 11:04:51 |
+```
+┌─────────────────────────────────────────────────────────────────┐
+│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
+├─────────────────────────────────────────────────────────────────┤
+│ Status:    ✅ IDLE                                   │
+│ Tryb:      MIGRATION (8 etapów)                     │
+│ Kategoria: 🧙 NPC Dialogs                            │
+├─────────────────────────────────────────────────────────────────┤
+│ 📊 Postęp migracji NPC:                                        │
+│ [███████████████████████████████████████████░░░░░░░] │
+│ 261/297 plików (88%)                                          │
+├─────────────────────────────────────────────────────────────────┤
+│ ⏳ Pozostało: 36 plików NPC                              │
+│ 🕐 ETA: ~6min 0s (przy 10s/plik)                            │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 11:14:24                 │
+└─────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
 ## 📈 Statystyki sesji
 
-| Metryka | Wartość |
-|---------|---------|
-| Plików przetworzonych | 0 |
-| NPC zmigrowanych | 0 |
-| Kluczy wyciągniętych | 3594 |
-| Błędów | 0 |
+| Metryka | Wartość | Szczegóły |
+|---------|---------|-----------|
+| 📁 Plików przetworzonych | **255** | z i18n_file_status.json |
+| ✅ NPC zmigrowanych | **261**/297 | 88% ukończone |
+| 🔑 Kluczy wyciągniętych | **3594** | we wszystkich kategoriach |
+| 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
+| 🔄 Cykli wykonanych | **#1** | continuous mode |
+| ⚠️ Plików do migracji | **36** | NPC z StdModule.say |
+| ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
+
+---
+
+## 📜 Historia ostatnich operacji
+
+- ✅ `captain_dreadnought` - ukończono 2025-12-10 11:14
+- ✅ `zumtah` - ukończono 2025-12-10 07:21
+- ✅ `zora` - ukończono 2025-12-10 07:21
+- ✅ `ziyad` - ukończono 2025-12-10 07:21
+- ✅ `zerbrus` - ukończono 2025-12-10 07:21
 
 ---
 
@@ -271,14 +294,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:04:51  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:14:24  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- Brak
+- ✅ `captain_dreadnought` - ukończono 2025-12-10 11:14
+- ✅ `zumtah` - ukończono 2025-12-10 07:21
+- ✅ `zora` - ukończono 2025-12-10 07:21
+- ✅ `ziyad` - ukończono 2025-12-10 07:21
+- ✅ `zerbrus` - ukończono 2025-12-10 07:21
+- ✅ `zedrulon_the_fallen` - ukończono 2025-12-10 07:20
+- ✅ `zarifan` - ukończono 2025-12-10 07:20
+- ✅ `yoem` - ukończono 2025-12-10 07:20
+- ✅ `yberius` - ukończono 2025-12-10 07:20
+- ✅ `vascalir` - ukończono 2025-12-10 07:20
 
 ---
 

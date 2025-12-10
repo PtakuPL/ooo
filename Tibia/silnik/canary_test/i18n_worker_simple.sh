@@ -3177,6 +3177,8 @@ CATEGORIES = {
 
 # Plik komend sterowania workerem
 COMMAND_FILE = ".worker_command"
+# Plik stanu kategorii (skip po 0 przetworzonych)
+CATEGORY_STATE_FILE = ".i18n_category_state.json"
 
 def read_command():
     """Odczytaj komendę z pliku (jeśli istnieje)"""
@@ -3189,6 +3191,22 @@ def read_command():
     except:
         pass
     return None
+
+def read_category_state():
+    """Odczytaj stan kategorii - które mają być pominięte"""
+    try:
+        if os.path.exists(CATEGORY_STATE_FILE):
+            with open(CATEGORY_STATE_FILE) as f:
+                return json.load(f)
+    except:
+        pass
+    return {"skip_until": {}, "last_processed": {}}
+
+def should_skip_category(cat_name, state):
+    """Sprawdź czy kategoria powinna być pominięta"""
+    skip_until = state.get("skip_until", {}).get(cat_name, 0)
+    import time
+    return time.time() < skip_until
 
 # Wczytaj status plików z i18n_file_status.json
 STATUS_FILE = "i18n_file_status.json"

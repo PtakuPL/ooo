@@ -1560,6 +1560,7 @@ LANG_PRIORITY = ["pl", "de", "es", "pt", "fr", "it", "ru"]
 
 # 1. Czy są pliki NPC do migracji?
 # Szukamy plików z: StdModule.say bez i18nKey LUB npcHandler:say("...) bez NPC_LIB
+# LUB addGreetKeyword/addFarewellKeyword z text= ale bez i18nKey
 needs_migration = 0
 for f in glob.glob(f"{NPC_DIR}/*.lua"):
     try:
@@ -1581,6 +1582,19 @@ for f in glob.glob(f"{NPC_DIR}/*.lua"):
             if re.search(pattern, content):
                 if "NPC_LIB.i18n.npcSay" not in content:
                     needs_work = True
+        
+        # Sprawdź addGreetKeyword/addFarewellKeyword z text= bez i18nKey
+        if ('addGreetKeyword' in content or 'addFarewellKeyword' in content) and 'text = "' in content:
+            # Sprawdź czy te z text mają już i18nKey
+            pattern_greet = r'addGreetKeyword\s*\([^)]+\)\s*,\s*\{[^}]*?text\s*=\s*"[^"]+"[^}]*?\}'
+            pattern_farewell = r'addFarewellKeyword\s*\([^)]+\)\s*,\s*\{[^}]*?text\s*=\s*"[^"]+"[^}]*?\}'
+            
+            for pattern in [pattern_greet, pattern_farewell]:
+                matches = re.findall(pattern, content, re.DOTALL)
+                for match in matches:
+                    if 'i18nKey' not in match:
+                        needs_work = True
+                        break
         
         if needs_work:
             needs_migration += 1

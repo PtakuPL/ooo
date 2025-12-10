@@ -3264,10 +3264,27 @@ def read_category_state():
     try:
         if os.path.exists(CATEGORY_STATE_FILE):
             with open(CATEGORY_STATE_FILE) as f:
-                return json.load(f)
+                state = json.load(f)
+            
+            # Auto-reset kategorii po 24h bez aktywności
+            import time
+            now = time.time()
+            reset_threshold = 24 * 3600  # 24 godziny
+            
+            for cat_name in list(state.get("skip_until", {}).keys()):
+                last_proc = state.get("last_processed", {}).get(cat_name, {})
+                last_time = last_proc.get("timestamp", 0)
+                
+                # Jeśli minęło 24h od ostatniej próby, resetuj skip
+                if now - last_time > reset_threshold:
+                    state["skip_until"].pop(cat_name, None)
+                    state["consecutive_zeros"][cat_name] = 0
+                    print(f"🔄 Auto-reset kategorii '{cat_name}' po 24h")
+            
+            return state
     except:
         pass
-    return {"skip_until": {}, "last_processed": {}}
+    return {"skip_until": {}, "last_processed": {}, "consecutive_zeros": {}, "total_processed": {}}
 
 def should_skip_category(cat_name, state):
     """Sprawdź czy kategoria powinna być pominięta"""

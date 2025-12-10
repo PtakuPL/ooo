@@ -2460,33 +2460,37 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                             # Wczytaj completed files raz na początku
                             COMPLETED_LIST=$(python3 -c "import json; d=json.load(open('$STATUS_FILE')); print(' '.join([f for f,v in d.get('files',{}).items() if v.get('overall_status')=='completed']))" 2>/dev/null)
                             
-                            for f in data-otservbr-global/npc/*.lua; do
-                                [ -f "$f" ] || continue
-                                
-                                # Sprawdź czy już completed
-                                echo "$COMPLETED_LIST" | grep -qF "$f" && continue
-                                
-                                NEEDS_WORK=false
-                                
-                                if grep -q "StdModule\.say" "$f" 2>/dev/null; then
-                                    if ! grep -q "i18nKey" "$f" 2>/dev/null; then
-                                        if grep -q 'text = "' "$f" 2>/dev/null; then
+                            # Przetwórz oba katalogi NPC
+                            for npc_dir in data-otservbr-global/npc data-canary/npc; do
+                                [ -d "$npc_dir" ] || continue
+                                for f in "$npc_dir"/*.lua; do
+                                    [ -f "$f" ] || continue
+                                    
+                                    # Sprawdź czy już completed
+                                    echo "$COMPLETED_LIST" | grep -qF "$f" && continue
+                                    
+                                    NEEDS_WORK=false
+                                    
+                                    if grep -q "StdModule\.say" "$f" 2>/dev/null; then
+                                        if ! grep -q "i18nKey" "$f" 2>/dev/null; then
+                                            if grep -q 'text = "' "$f" 2>/dev/null; then
+                                                NEEDS_WORK=true
+                                            fi
+                                        fi
+                                    fi
+                                    
+                                    if grep -qE 'npcHandler:say\(\s*"[^"]{5,}"' "$f" 2>/dev/null; then
+                                        if ! grep -q "NPC_LIB.i18n.npcSay" "$f" 2>/dev/null; then
                                             NEEDS_WORK=true
                                         fi
                                     fi
-                                fi
-                                
-                                if grep -qE 'npcHandler:say\(\s*"[^"]{5,}"' "$f" 2>/dev/null; then
-                                    if ! grep -q "NPC_LIB.i18n.npcSay" "$f" 2>/dev/null; then
-                                        NEEDS_WORK=true
+                                    
+                                    if [ "$NEEDS_WORK" = "true" ]; then
+                                        process_file "$f"
+                                        COUNT=$((COUNT + 1))
+                                        [ "$COUNT" -ge "$BATCH" ] && break 2
                                     fi
-                                fi
-                                
-                                if [ "$NEEDS_WORK" = "true" ]; then
-                                    process_file "$f"
-                                    COUNT=$((COUNT + 1))
-                                    [ "$COUNT" -ge "$BATCH" ] && break
-                                fi
+                                done
                             done
                             echo "   📊 NPC: Zmigrowano $COUNT plików"
                             ;;

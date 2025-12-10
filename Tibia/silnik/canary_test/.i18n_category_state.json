@@ -24,7 +24,7 @@
     },
     "items": {
       "count": 15,
-      "timestamp": 1765405508.955628
+      "timestamp": 1765405516.1172588
     }
   },
   "consecutive_zeros": {
@@ -35,6 +35,17 @@
     "items": 0
   },
   "total_processed": {
-    "items": 10995
+    "items": 11010
+  },
+  "translation_sync": {
+    "current_lang": "de",
+    "current_category": "npc.json",
+    "languages_done": [],
+    "stats": {
+      "de": {
+        "npc": 4580
+      }
+    },
+    "last_sync": 1765405512.8417017
   }
 }

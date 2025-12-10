@@ -15,7 +15,8 @@
     "client": 1765406826.1324565,
     "sendtextmessage": 1765406847.0815792,
     "keywordhandler": 1765406861.8998344,
-    "twig": 1765406985.7602158
+    "twig": 1765406985.7602158,
+    "startup": 1765408820.5196626
   },
   "last_processed": {
     "scripts": {
@@ -55,8 +56,8 @@
       "timestamp": 1765408203.3996513
     },
     "startup": {
-      "count": 8,
-      "timestamp": 1765408213.753815
+      "count": 0,
+      "timestamp": 1765408220.5196571
     },
     "npclib": {
       "count": 0,
@@ -97,7 +98,7 @@
     "events": 3,
     "chatchannels": 3,
     "modules": 4,
-    "startup": 0,
+    "startup": 2,
     "npclib": 2,
     "php": 2,
     "html": 2,

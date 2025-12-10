@@ -301,6 +301,8 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `battlemart` - ukończono 2025-12-10 20:41
+- ✅ `alaistar` - ukończono 2025-12-10 20:41
 - ✅ `ser_tybald` - ukończono 2025-12-10 15:04
 - ✅ `menesto` - ukończono 2025-12-10 15:04
 - ✅ `garamond` - ukończono 2025-12-10 15:04

@@ -8403,5 +8403,20 @@
   "item.25881.name": "great health cask",
   "item.25882.name": "ultimate health cask",
   "item.25883.name": "supreme health cask",
-  "item.25889.name": "mana cask"
+  "item.25889.name": "mana cask",
+  "item.25890.name": "strong mana cask",
+  "item.25891.name": "great mana cask",
+  "item.25892.name": "ultimate mana cask",
+  "item.25893.name": "supreme mana cask",
+  "item.25899.name": "great spirit cask",
+  "item.25900.name": "ultimate spirit cask",
+  "item.25903.name": "health keg",
+  "item.25904.name": "strong health keg",
+  "item.25905.name": "great health keg",
+  "item.25906.name": "ultimate health keg",
+  "item.25907.name": "supreme health keg",
+  "item.25908.name": "mana keg",
+  "item.25909.name": "strong mana keg",
+  "item.25910.name": "great mana keg",
+  "item.25911.name": "ultimate mana keg"
 }

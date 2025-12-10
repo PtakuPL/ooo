@@ -63,6 +63,20 @@
 | N2 | **addGreetKeyword/addFarewellKeyword** | Dodano transformację + naprawiono regex dla callbacków |
 | N3 | **GreetModule bez i18n** | Dodano obsługę i18nKey w `custom_modules.lua` |
 
+### ✅ ZROBIONE (2025-12-10 wieczór) - Sesja z agentem
+
+| # | Co zrobiono | Szczegóły |
+|---|-------------|-----------|
+| W1 | **Worker v3.0 - 17 kategorii** | Rozszerzono z 5 do 17 kategorii: npc, scripts, monsters, raids, world, spells, items, libs, events, chatchannels, modules, startup, npclib, php, html, cpp, client |
+| W2 | **worker_commands.txt** | Plik sterowania przez GitHub! Można edytować z telefonu. Komendy: FORCE:kategoria, RANDOM, STATUS, SKIP, PAUSE:X, NOTE:tekst |
+| W3 | **Kategoria PHP (html_copy)** | 5587 plików PHP ze strony WWW, funkcja `process_php_category()` |
+| W4 | **Kategoria HTML/Twig** | 102 pliki HTML + Twig templates |
+| W5 | **Kategoria C++ (src)** | 186 plików C++ serwera, funkcja `process_cpp_category()` |
+| W6 | **Kategoria Client (testyy)** | OTClient modules/mods z testyy/ |
+| W7 | **Naprawiono update_github_status** | Teraz liczy wszystkie 17+ kategorii (startup, raids, cpp, php, etc.) |
+| W8 | **Naprawiono parsing opcji --continuous** | Błąd `head: unrecognized option '---batch'` - naprawiono shift w parsowaniu |
+| W9 | **Statystyki: 4375 kluczy** | npc:4256, scripts:78, monsters:10, startup:8, php:8, cpp:15 |
+
 ### 🟢 Priorytet NISKI
 
 | # | Problem | Opis | Status |
@@ -228,23 +242,57 @@ npcConfig.voices = {
 
 ## 📊 Obecny stan systemu
 
-> **Ostatnia aktualizacja:** 2025-12-10 14:15 UTC
+> **Ostatnia aktualizacja:** 2025-12-10 16:15 UTC
 
 ### ✅ Co mamy (ZROBIONE):
-- ✅ `i18n_worker_simple.sh` - Worker v2.2 Multi-Mode (8 etapów)
+- ✅ `i18n_worker_simple.sh` - **Worker v3.0** Multi-Mode (17 kategorii!)
+- ✅ `worker_commands.txt` - **Sterowanie przez GitHub** (z telefonu!)
 - ✅ `i18n_guardian.sh` - Guardian restartujący workera + auto-push
 - ✅ 53 katalogi językowe w `i18n/`
-- ✅ Pliki JSON z kluczami (npc.json, items.json, scripts.json, etc.)
+- ✅ Pliki JSON z kluczami (npc.json, scripts.json, monsters.json, php.json, cpp.json, etc.)
 - ✅ Cron job dla Guardian
 - ✅ **StdModule.say** - 297/297 plików zmigrowanych (100%)
 - ✅ **npcHandler:say("...", npc, creature)** - ~150 plików zmigrowanych
 - ✅ **addGreetKeyword/addFarewellKeyword** - 43/43 plików zmigrowanych (78 kluczy)
 - ✅ **GreetModule** obsługuje i18nKey w `custom_modules.lua`
-- ✅ **4252 kluczy** w `i18n/en/npc.json`
+- ✅ **4375 kluczy** we wszystkich plikach JSON
+
+### 🆕 Worker v3.0 - 17 kategorii:
+| Kategoria | Folder | Plików | Kluczy | Status |
+|-----------|--------|--------|--------|--------|
+| `npc` | data-otservbr-global/npc | 1026 | 4256 | 🔄 Aktywna |
+| `scripts` | data-otservbr-global/scripts | 1755 | 78 | 🔄 Aktywna |
+| `monsters` | data-otservbr-global/monster | 1637 | 10 | 🔄 Aktywna |
+| `raids` | data-otservbr-global/raids | ~50 | 0 | ⏳ Nowa |
+| `world` | data-otservbr-global/world | ~20 | 0 | ⏳ Nowa |
+| `spells` | data/scripts/spells | ~200 | 0 | ⏳ Nowa |
+| `items` | data/items | 1 (XML) | 0 | ⏳ Nowa |
+| `libs` | data/libs | 55 | 0 | ⏳ Nowa |
+| `events` | data/events | 4 | 0 | ⏳ Nowa |
+| `chatchannels` | data/chatchannels | 8 | 0 | ⏳ Nowa |
+| `modules` | data/modules | 7 | 0 | ⏳ Nowa |
+| `startup` | data-otservbr-global/startup | 20 | 8 | 🔄 Aktywna |
+| `npclib` | data/npclib | 7 | 0 | ⏳ Nowa |
+| `php` | html_copy/ | 5587 | 8 | 🆕 Nowa! |
+| `html` | html_copy/ | 102 | 0 | 🆕 Nowa! |
+| `cpp` | src/ | 186 | 15 | 🆕 Nowa! |
+| `client` | testyy/modules | ~100 | 0 | 🆕 Nowa! |
+
+### 🎮 Sterowanie workerem (worker_commands.txt):
+```bash
+# Komendy (odkomentuj w pliku na GitHub):
+FORCE:monsters    # Wymuś kategorię
+RANDOM           # Losowa kategoria
+STATUS           # Pokaż status
+SKIP             # Pomiń cykl
+PAUSE:5          # Pauza 5 cykli
+NOTE:tekst       # Notatka
+```
 
 ### ⚠️ NAPRAWIONE BUGI (ta sesja):
 - ✅ **Krytyczny bug stage_5**: `data = {}` przy błędzie kasowało JSON → zmieniono na `exit(1)`
 - ✅ **Regex greet/farewell**: Nie łapał formatu z callbackiem `}, function(player)` → naprawiono
+- ✅ **update_github_status**: Nie liczył nowych kategorii → naprawiono
 
 ### ❌ Pozostało do zrobienia:
 - ❌ **voices** - ~300+ plików, wymaga modyfikacji C++ (broadcast → per-player)

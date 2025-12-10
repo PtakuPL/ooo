@@ -112,9 +112,29 @@ StdModule.sayLocalized(npc, creature, "npc.alexander.greeting")
 **Kluczowe cechy v2.0:**
 1. **Multi-Mode** - Automatyczne przełączanie między trybami pracy
 2. **TRYB 1: MIGRATION** - 8-etapowy pipeline migracji kodu NPC
-3. **TRYB 2: TRANSLATION** - 6-etapowy pipeline tłumaczeń ze składniami
+3. **TRYB 2: TRANSLATION** - 6-etapowy pipeline tłumaczeń (instrukcje dla agenta LLM)
 4. **Dispatcher** - Automatycznie wybiera tryb na podstawie stanu projektu
 5. **Składnie** - Tłumaczenia podzielone na małe paczki (4 klucze na składnię)
+
+**WAŻNE - Tryb TRANSLATION:**
+Worker generuje **instrukcje dla agenta LLM** (np. GPT, Claude, Phi), NIE tłumaczy sam!
+
+```
+📝 INSTRUKCJA DLA AGENTA LLM:
+Przetłumacz poniższe teksty na język polski.
+Komendy w 'apostrofach' NIE tłumacz (np. 'trade', 'job').
+Zmienne w {nawiasach} zachowaj bez zmian.
+
+npc.al_dee.stdmod_2:
+  EN: Feeling lost? You can always ask me about general hints!
+  PL: [TU AGENT WSTAWIA TŁUMACZENIE]
+```
+
+**Zasady tłumaczenia:**
+- ✅ Tłumacz całe zdania naturalnie
+- ❌ NIE tłumacz komend w 'apostrofach' (np. 'trade', 'job', 'yes', 'no')
+- ❌ NIE zmieniaj zmiennych w {nawiasach} (np. {player}, {amount})
+- ❌ NIE zmieniaj formatowania |PIPE| (np. |PLAYERNAME|)
 
 **Tryby pracy:**
 ```
@@ -270,10 +290,16 @@ cd /home/ptaku/serweryt/Tibia/silnik/canary_test
 
 ## Statystyki (grudzień 2025)
 
-- **Zmigrowanych NPC:** ~25+ (rośnie w trybie ciągłym)
-- **Kluczy i18n:** ~350+ 
-- **Języków:** 8 (de, en, es, fr, it, pl, pt, ru)
-- **Do zrobienia:** ~265 NPC
+- **Zmigrowanych NPC:** 255+ (rośnie w trybie ciągłym)
+- **Kluczy i18n:** 3594+
+- **Języków:** 55 (pełna lista w `i18n/`)
+- **Do zrobienia (migracja):** ~36 NPC
+- **Do zrobienia (tłumaczenia):** 55 języków × 3594 kluczy
+
+**Lista języków:**
+ar, az, bg, bn, bs, cs, da, de, el, en, es, et, fa, fi, fr, he, hi, hr, hu, hy, 
+id, it, ja, ka, kk, ko, lt, lv, mk, ml, ms, nl, no, pl, pt, ro, ru, sk, sl, sq, 
+sr, sv, sw, ta, te, th, tl, tr, uk, uz, vi, zh, zh_TW
 
 ---
 
@@ -284,6 +310,8 @@ cd /home/ptaku/serweryt/Tibia/silnik/canary_test
 3. **Transformuj kod** - ekstrakcja bez transformacji jest bezużyteczna
 4. **Weryfikuj** - każda zmiana powinna być sprawdzona
 5. **Automatyzuj** - tryb ciągły + guardian = zero interwencji
+6. **LLM dla tłumaczeń** - worker generuje instrukcje, agent LLM tłumaczy
+7. **Zachowaj komendy** - teksty w 'apostrofach' to komendy gracza, NIE tłumaczyć
 
 ---
 

@@ -4147,3 +4147,11 @@ html_copy/vendor/illuminate/database/Events/MigrationEnded.php
 html_copy/vendor/illuminate/database/Events/TransactionBeginning.php
 html_copy/vendor/illuminate/database/Events/MigrationsEvent.php
 html_copy/vendor/illuminate/database/Events/ModelPruningStarting.php
+html_copy/vendor/illuminate/database/Events/TransactionRolledBack.php
+html_copy/vendor/illuminate/database/Events/ConnectionEstablished.php
+html_copy/vendor/illuminate/database/Events/ConnectionEvent.php
+html_copy/vendor/illuminate/database/Events/DatabaseRefreshed.php
+html_copy/vendor/illuminate/database/Events/NoPendingMigrations.php
+html_copy/vendor/illuminate/database/Events/SchemaLoaded.php
+html_copy/vendor/illuminate/database/Events/ModelsPruned.php
+html_copy/vendor/illuminate/database/Events/MigrationsStarted.php

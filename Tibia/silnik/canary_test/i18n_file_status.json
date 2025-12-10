@@ -328,7 +328,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:01:00.201908"
+      "completed_at": "2025-12-10T14:01:12.615908"
     },
     "data-otservbr-global/npc/tandros.lua": {
       "stages": {
@@ -438,7 +438,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:01:00.935139"
+      "completed_at": "2025-12-10T14:01:13.364998"
     },
     "data-otservbr-global/npc/hamish.lua": {
       "stages": {
@@ -662,7 +662,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:01:01.817489"
+      "completed_at": "2025-12-10T14:01:14.099278"
     },
     "data-otservbr-global/npc/mordecai.lua": {
       "stages": {
@@ -882,7 +882,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:01:03.288325"
+      "completed_at": "2025-12-10T14:01:23.306605"
     },
     "data-otservbr-global/npc/nelly.lua": {
       "stages": {
@@ -1102,7 +1102,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:01:04.556685"
+      "completed_at": "2025-12-10T14:01:24.287104"
     },
     "data-otservbr-global/npc/nipuna.lua": {
       "stages": {
@@ -1254,10 +1254,8 @@
           "farewell_keys": 0
         },
         "7_validation": {
-          "status": "failed",
-          "errors": [
-            "B\u0142\u0105d JSON w en/npc.json: Expecting value: line 3070 column 32 (char 350235)"
-          ],
+          "status": "completed",
+          "errors": [],
           "warnings": [
             "Brak i18nKey w pliku Lua"
           ],
@@ -1282,6 +1280,7 @@
             "tl",
             "sk",
             "sr",
+            "en",
             "ka",
             "da",
             "es",
@@ -1316,14 +1315,14 @@
             "hr"
           ],
           "keys_in_lua": 0,
-          "validation_passed": false
+          "validation_passed": true
         },
         "8_sync": {
           "status": "completed"
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:01:05.814146"
+      "completed_at": "2025-12-10T14:01:25.586159"
     },
     "data-otservbr-global/npc/richard.lua": {
       "stages": {
@@ -1661,7 +1660,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:01:07.449205"
+      "completed_at": "2025-12-10T14:01:26.816314"
     },
     "data-otservbr-global/npc/romir.lua": {
       "stages": {
@@ -1881,7 +1880,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:01:08.519673"
+      "completed_at": "2025-12-10T14:01:27.478908"
     },
     "data-otservbr-global/npc/seymour.lua": {
       "stages": {
@@ -2035,13 +2034,195 @@
           "npcsay_keys": 0,
           "greet_keys": 0,
           "farewell_keys": 0
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [],
+          "keys_per_lang": 2,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 2,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
         }
       },
-      "overall_status": "in_progress"
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T14:01:10.711899"
+    },
+    "data-otservbr-global/npc/sigurd.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "c6ab1bfda3e7422461cefb9544a8b01e",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "sigurd",
+          "StdModule_say": 0,
+          "npcHandler_say": 1,
+          "sendTextMessage": 1,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 2,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/sigurd.md",
+          "keys_documented": 1
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 0,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Brak i18nKey w pliku Lua"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 0,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T14:01:11.810284"
     }
   },
   "global_stats": {
-    "files_completed": 18,
+    "files_completed": 20,
     "total_keys": 0
   }
 }

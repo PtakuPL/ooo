@@ -1067,19 +1067,24 @@ process_file() {
 }
 
 #===============================================================================
-# TRYB 2: TŁUMACZENIA - 6 etapów + składnie
+# TRYB 2: TŁUMACZENIA - INTERAKTYWNY dla agenta LLM
 #===============================================================================
-# TEN TRYB GENERUJE INSTRUKCJE DLA AGENTA LLM (np. GPT, Claude, Phi)
-# Agent powinien przetłumaczyć całe zdania naturalnie, zachowując:
-# - Komendy w 'apostrofach' (np. 'trade', 'job', 'buy') - NIE TŁUMACZYĆ
-# - Zmienne w {nawiasach} (np. {player}, {amount}) - BEZ ZMIAN
+# Agent LLM (Phi-4, GPT, Claude) uruchamia ten skrypt w terminalu.
+# Worker wyświetla tekst EN, agent wpisuje tłumaczenie, worker zapisuje.
+#
+# ZASADY DLA AGENTA:
+# - Tłumacz całe zdania naturalnie
+# - Komendy w 'apostrofach' (np. 'trade', 'job') - NIE TŁUMACZ
+# - Zmienne w {nawiasach} (np. {player}) - BEZ ZMIAN
 # - Formatowanie |PIPE| - BEZ ZMIAN
+# - Wpisz "SKIP" aby pominąć klucz
+# - Wpisz "QUIT" aby zakończyć sesję
 #===============================================================================
 mode_translation() {
     local target_lang="${1:-pl}"
     
     log "${BLUE}═══════════════════════════════════════════════════════════════${NC}"
-    log "${BLUE}TRYB 2: TŁUMACZENIA (instrukcje dla LLM)${NC} - Język: $target_lang"
+    log "${BLUE}TRYB 2: TŁUMACZENIA INTERAKTYWNE${NC} - Język: $target_lang"
     log "${BLUE}═══════════════════════════════════════════════════════════════${NC}"
     
     # Przekaż zmienne do Pythona przez zmienne środowiskowe
@@ -1093,6 +1098,7 @@ mode_translation() {
 import json
 import os
 import re
+import sys
 
 target_lang = os.environ.get("TRANSLATE_LANG", "pl")
 i18n_dir = os.environ.get("TRANSLATE_I18N_DIR", "i18n")

@@ -4211,7 +4211,7 @@
           "errors": [],
           "warnings": [
             "Brak i18nKey w pliku Lua",
-            "Znaleziono 197 duplikat\u00f3w warto\u015bci"
+            "Znaleziono 204 duplikat\u00f3w warto\u015bci"
           ],
           "valid_langs": [
             "zh_TW",
@@ -4276,7 +4276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T07:11:47.221682"
+      "completed_at": "2025-12-10T07:12:19.253994"
     },
     "data-otservbr-global/npc/captain_fearless.lua": {
       "stages": {
@@ -21269,10 +21269,466 @@
       },
       "overall_status": "completed",
       "completed_at": "2025-12-10T07:11:57.945339"
+    },
+    "data-otservbr-global/npc/oswald.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "f23c2091000065693e8ea22f9cd7b9d7",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "oswald",
+          "StdModule_say": 32,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 32,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/oswald.md",
+          "keys_documented": 32
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 32
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 32
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 32
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 205 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 32,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T07:12:23.376487"
+    },
+    "data-otservbr-global/npc/padreia.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "938d367cc7386888ea439bf7c20f4154",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "padreia",
+          "StdModule_say": 7,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 7,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/padreia.md",
+          "keys_documented": 7
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 7
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 7
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 7
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 205 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 7,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T07:12:25.643422"
+    },
+    "data-otservbr-global/npc/partos.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "4f5be3248d9f9f4798d63bcd32d7871f",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "partos",
+          "StdModule_say": 3,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 3,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/partos.md",
+          "keys_documented": 3
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 3
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 3
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 3
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 206 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 3,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T07:12:27.684456"
+    },
+    "data-otservbr-global/npc/pemaret.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "6dc82e7a2d445d40b0d43a79e95fb2f3",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "pemaret",
+          "StdModule_say": 7,
+          "npcHandler_say": 0,
+          "sendTextMessage": 1,
+          "total": 8,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/pemaret.md",
+          "keys_documented": 7
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 7
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 7
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 7
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 207 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 7,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T07:12:29.970563"
     }
   },
   "global_stats": {
-    "files_completed": 187,
+    "files_completed": 191,
     "total_keys": 0
   }
 }

@@ -4211,7 +4211,7 @@
           "errors": [],
           "warnings": [
             "Brak i18nKey w pliku Lua",
-            "Znaleziono 85 duplikat\u00f3w warto\u015bci"
+            "Znaleziono 88 duplikat\u00f3w warto\u015bci"
           ],
           "valid_langs": [
             "zh_TW",
@@ -4276,7 +4276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T06:58:50.239897"
+      "completed_at": "2025-12-10T06:59:14.204018"
     },
     "data-otservbr-global/npc/captain_fearless.lua": {
       "stages": {
@@ -7583,10 +7583,466 @@
       },
       "overall_status": "completed",
       "completed_at": "2025-12-10T06:58:56.317664"
+    },
+    "data-otservbr-global/npc/dermot.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "2f6085d4680cf6ea5a3fb024c26c533e",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "dermot",
+          "StdModule_say": 7,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 7,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/dermot.md",
+          "keys_documented": 7
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 7
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 7
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 7
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 89 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 7,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T06:59:15.423110"
+    },
+    "data-otservbr-global/npc/dixi.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "f4c366a1ee46d8acaa15e0017318c353",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "dixi",
+          "StdModule_say": 47,
+          "npcHandler_say": 0,
+          "sendTextMessage": 1,
+          "total": 48,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/dixi.md",
+          "keys_documented": 56
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 47
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 56
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 56
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 94 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 47,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T06:59:17.031527"
+    },
+    "data-otservbr-global/npc/duria.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "8af658901191ea1f7a1951c488476d59",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "duria",
+          "StdModule_say": 3,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 3,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/duria.md",
+          "keys_documented": 3
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 3
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 3
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 3
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 94 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 3,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T06:59:17.977790"
+    },
+    "data-otservbr-global/npc/edala.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "1021d9b018dd1587af2f621bba155bb7",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "edala",
+          "StdModule_say": 15,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 15,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/edala.md",
+          "keys_documented": 17
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 14
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 17
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 17
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 94 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 14,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T06:59:19.143397"
     }
   },
   "global_stats": {
-    "files_completed": 67,
+    "files_completed": 71,
     "total_keys": 0
   }
 }

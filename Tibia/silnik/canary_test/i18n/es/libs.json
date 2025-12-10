@@ -1,0 +1,7 @@
+{
+  "lib.functions.msg1": "[EN] You were teleported because the habitats are returning to their original form.",
+  "lib.functions.msg2": "[EN] You must wait. Someone is challenging ",
+  "lib.player.msg1": "[EN] Item amount is wrong, please contact an administrator.",
+  "lib.player.msg2": "[EN] It is empty.",
+  "lib.player.msg3": "[EN] Reward item is wrong, please contact an administrator."
+}

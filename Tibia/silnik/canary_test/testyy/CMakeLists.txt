@@ -218,6 +218,9 @@ option(OTC_ENABLE_FMT "Enable fmt library for formatting" ON)
 # GMP (optional, used for RSA when OpenSSL is not available)
 option(OTC_ENABLE_GMP "Enable GMP library for RSA" ON)
 
+# Android Game Activity (optional, can be disabled for static analysis)
+option(OTC_ENABLE_ANDROID_GAME_ACTIVITY "Enable Android Game Activity SDK" ON)
+
 if(OTC_ENABLE_PROTOBUF)
   add_subdirectory(src/protobuf)
 else()

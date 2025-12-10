@@ -78,24 +78,24 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Narsai) == 1 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Narsai) == 1 then
-			npcHandler:say({ "Could you help me do a ritual?" }, npc, creature) -- It needs to be revised, it's not the same as the global
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.narsai.say_1") -- It needs to be revised, it's not the same as the global
 			npcHandler:setTopic(playerId, 1)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Narsai) == 1 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Narsai) == 1 then
 			player:addItem(31714, 1)
-			npcHandler:say({ "Here is the list of ingredients that are missing to complete the ritual. " }, npc, creature) -- It needs to be revised, it's not the same as the global
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.narsai.say_2") -- It needs to be revised, it's not the same as the global
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Narsai, 2)
 			npcHandler:setTopic(playerId, 2)
 			npcHandler:setTopic(playerId, 2)
 		else
-			npcHandler:say({ "Sorry." }, npc, creature) -- It needs to be revised, it's not the same as the global
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.narsai.say_3") -- It needs to be revised, it's not the same as the global
 		end
 	end
 	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Narsai) == 2 then
 		if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Narsai) == 2 then
-			npcHandler:say({ "Did you bring all the materials I informed you about?" }, npc, creature) -- It needs to be revised, it's not the same as the global
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.narsai.say_4") -- It needs to be revised, it's not the same as the global
 			npcHandler:setTopic(playerId, 3)
 			npcHandler:setTopic(playerId, 3)
 		end
@@ -104,12 +104,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:removeItem(31335, 10)
 			player:removeItem(10279, 2)
 			player:removeItem(31332, 5)
-			npcHandler:say({ "Thank you this stage of the ritual is complete." }, npc, creature) -- It needs to be revised, it's not the same as the global
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.narsai.say_5") -- It needs to be revised, it's not the same as the global
 			player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eighth.Narsai, 3)
 			npcHandler:setTopic(playerId, 4)
 			npcHandler:setTopic(playerId, 4)
 		else
-			npcHandler:say({ "Sorry." }, npc, creature) -- It needs to be revised, it's not the same as the global
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.narsai.say_6") -- It needs to be revised, it's not the same as the global
 		end
 	end
 	return true

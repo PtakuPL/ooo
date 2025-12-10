@@ -38467,7 +38467,7 @@ npc.elyen_ravenlock.time_is_money_4,"Time is money, hurry.",,missing
 npc.emael.do_you_want_1,Do you want to appropriately show off your boss trophies and buy an additional podium of vigour for 1000000 Gold?,,missing
 npc.emael.ah_i_see_2,"Ah, I see you killed a lot of dangerous creatures. Here's your podium of vigour!",,missing
 npc.emael.please_make_sure_3,Please make sure you have free slots in your store inbox.,,missing
-npc.emael.you_dont_have_4,You don'	 have enough money.,,missing
+npc.emael.you_dont_have_4,You don'\t have enough money.,,missing
 npc.emael.you_have_not_5,You have not aquired enough knowledge in hunting big scary creatures.,,missing
 npc.emael.blessings_on_your_6,Blessings on your hunts!,,missing
 npc.emma.i_am_still_1,"I am still a bit sceptical, but well, welcome to the girls brigade.",,missing
@@ -41247,9 +41247,7 @@ npc.jean_claude.take_this_1,Take this!,,missing
 npc.stutch.take_this_1,Take this!,,missing
 npc.taegen.then_not_1,Then not.,,missing
 npc.warbert.take_this_1,Take this!,,missing
-npc.bertram.oh_my_you_1,"Oh my! You look so great in your uniform! \z
-				You archpostwomen are not only daring but also beautiful. \z
-				Here take it, that's the key you wanted. Just promise to visit me now and then!",,missing
+npc.bertram.oh_my_you_1,"Oh my! You look so great in your uniform! \\z\n\t\t\t\tYou archpostwomen are not only daring but also beautiful. \\z\n\t\t\t\tHere take it, that's the key you wanted. Just promise to visit me now and then!",,missing
 npc.canary.say_1,This the our discord group link: {https://discordapp.com/invite/3NxYnyV},,missing
 npc.alyxo.say_1,Could you kill 3 bosses for me?,,missing
 npc.alyxo.say_2,Come back as soon as you kill all 3 bosses.,,missing
@@ -42472,8 +42470,7 @@ npc.grizzly_adams.say_7,"Alright, what would you like to hunt? {Crocodiles}, {ba
 npc.grizzly_adams.say_8,"You've three unfinished tasks running old chap. If you want to accept a new one, you have to delete one of your old ones. Do you want to delete a task?",,missing
 npc.grizzly_adams.say_9,The spawn of pure evil must be erased from Tibia. You'll find demons lurking in the northern ruins of Edron as well as in some other deeper dungeons of Tibia. Slay 6666 demons for the greater good! Do you think you can handle this task?,,missing
 npc.grizzly_adams.say_10,In this task you must defeat ,,missing
-npc.grizzly_adams.say_11,"The status of your current tasks is:
-",,missing
+npc.grizzly_adams.say_11,The status of your current tasks is:\n,,missing
 npc.grizzly_adams.say_12,You haven't started any task yet.,,missing
 npc.grizzly_adams.say_13,"Congratulations, |PLAYERNAME|! You have gained the highest rank: 'Elite hunter'. If you haven't done yet, ask me for the {special} task.",,missing
 npc.grizzly_adams.say_14,You have not enough points for promotion.,,missing
@@ -43013,7 +43010,7 @@ npc.undal.say_14,"Sorry, I didn't understand.",,missing
 npc.emael.say_1,Do you want to appropriately show off your boss trophies and buy an additional podium of vigour for 1000000 Gold?,,missing
 npc.emael.say_2,"Ah, I see you killed a lot of dangerous creatures. Here's your podium of vigour!",,missing
 npc.emael.say_3,Please make sure you have free slots in your store inbox.,,missing
-npc.emael.say_4,You don'	 have enough money.,,missing
+npc.emael.say_4,You don'\t have enough money.,,missing
 npc.emael.say_5,You have not aquired enough knowledge in hunting big scary creatures.,,missing
 npc.emael.say_6,Blessings on your hunts!,,missing
 npc.brewster.say_1,The only person who might have some cough syrup is this druid Ustan. You find him in the tavern. Hmmm the tavern ... <hicks>,,missing
@@ -44765,11 +44762,9 @@ npc.habdel.say_4,No... that's not it.,,missing
 npc.habdel.say_5,"Yeah! That's it! I can't wait to give it to her! Oh - but first, I'll fulfil my promise: Here is your scimitar! Thanks again!",,missing
 npc.habdel.say_6,Ah well. Doesn't matter.,,missing
 npc.habdel.stdmod_7,"I sell the finest weapons in town. If you'd like to see my offers, ask me for a {trade}.",,missing
-npc.richard.multiline_1,"I was a carpenter, back on Main. Wanted my own little shop. Didn't sit with the old man. \z
-					So I shipped to somewhere else. Terrible storm.",,missing
+npc.richard.multiline_1,"I was a carpenter, back on Main. Wanted my own little shop. Didn't sit with the old man. \\z\n\t\t\t\t\tSo I shipped to somewhere else. Terrible storm.",,missing
 npc.richard.multiline_2,Woke up on this island. Had to eat squirrels before the adventurers found me and took me in. End of story.,,missing
-npc.richard.multiline_3,"Only the best quality, I assure you. A rope in need is a friend indeed! Imagine you stumble into a rat \z
-					hole without a rope - heh, your bones will be gnawed clean before someone finds ya!",,missing
+npc.richard.multiline_3,"Only the best quality, I assure you. A rope in need is a friend indeed! Imagine you stumble into a rat \\z\n\t\t\t\t\thole without a rope - heh, your bones will be gnawed clean before someone finds ya!",,missing
 npc.budrik.say_1,"As I was just saying to the others, 'this brave fellow will bring me my mining helmet back' and here you are with it!! Here take my spare helmet, I don't need it anymore!",,missing
 npc.budrik.say_2,"We presume the hideout of The Horned Fox is somewhere in the south-west near the coast, good luck finding my mining helmet!",,missing
 npc.budrik.say_3,Come back when you have slain {5000 minotaurs!},,missing
@@ -45932,18 +45927,11 @@ npc.elyen_ravenlock.say_2,"And what is it you want? Do you bring news from the u
 npc.elyen_ravenlock.say_3,"Hello, brother. You have finished the dance?",,missing
 npc.elyen_ravenlock.say_4,"Time is money, hurry.",,missing
 npc.hamish.multiline_1,"Small and deceptively friendly-looking island. Well, I used to study the plants and herbs here for my potions.",,missing
-npc.hamish.multiline_2,"Nowadays, I leave that to Oressa, she has a better way with that horrible wildlife here. \z
-				I prefer to distil potions in the quiet of my lab. \z
-				If you need some potions, runes or other magic equipment, ask for a trade.",,missing
-npc.hamish.multiline_3,"Dawnport is not far off from the coast of the Tibian Mainland. Lots of cities, monsters, bandits, \z
-				brigands, mean folk and people of low understanding with no sense of respect towards alchemical genius. \z
-				<mutters to himself>",,missing
-npc.hamish.multiline_4,"Ahem. Once you're level 8, you should be experienced enough to choose your definite vocation and leave \z
-				Dawnport for Main - and Tibia definitely needs more skilled adventurers to keep those monsters in check \z
-				which roam our lands!",,missing
+npc.hamish.multiline_2,"Nowadays, I leave that to Oressa, she has a better way with that horrible wildlife here. \\z\n\t\t\t\tI prefer to distil potions in the quiet of my lab. \\z\n\t\t\t\tIf you need some potions, runes or other magic equipment, ask for a trade.",,missing
+npc.hamish.multiline_3,"Dawnport is not far off from the coast of the Tibian Mainland. Lots of cities, monsters, bandits, \\z\n\t\t\t\tbrigands, mean folk and people of low understanding with no sense of respect towards alchemical genius. \\z\n\t\t\t\t<mutters to himself>",,missing
+npc.hamish.multiline_4,"Ahem. Once you're level 8, you should be experienced enough to choose your definite vocation and leave \\z\n\t\t\t\tDawnport for Main - and Tibia definitely needs more skilled adventurers to keep those monsters in check \\z\n\t\t\t\twhich roam our lands!",,missing
 npc.hamish.multiline_5,I wish I had thought of changing my name to that of a hero. Would have smoothed my way no end!,,missing
-npc.hamish.multiline_6,"Anyway, whatever he was before he joined, Tybald now fits the bill of the legendary hero. \z
-				He even has a crush on lady Oressa. Cute. <chuckles>",,missing
+npc.hamish.multiline_6,"Anyway, whatever he was before he joined, Tybald now fits the bill of the legendary hero. \\z\n\t\t\t\tHe even has a crush on lady Oressa. Cute. <chuckles>",,missing
 npc.terrence.say_1,"I'm not allowed to let just anyone pass. If you have proven your willingness and effort to participate in the fighting, I'm allowed to let you pass.",,missing
 npc.terrence.say_2,Ahhhhhhhh! ,,missing
 npc.terrence.say_3,"You fought hard enough against the minotaurs. Since you've shown so much effort in our war, I'll let you pass through the gate.",,missing
@@ -46270,9 +46258,7 @@ npc.moe.say_7,"I guess I could do this, yes. But I have to impose a condition. I
 npc.moe.say_8,You don't need this ring anymore.,,missing
 npc.moe.say_9,"I'm upset to accuse myself, the lyre is hidden in a tomb west of Kilmaresh.",,missing
 npc.moe.say_10,You already know about the lyre's location.,,missing
-npc.canary.multiline_1,"The goal is for Canary to be an 'engine', that is, it will be \z
-					a server with a 'clean' datapack, with as few things as possible, \z
-					thus facilitating development and testing.",,missing
+npc.canary.multiline_1,"The goal is for Canary to be an 'engine', that is, it will be \\z\n\t\t\t\t\ta server with a 'clean' datapack, with as few things as possible, \\z\n\t\t\t\t\tthus facilitating development and testing.",,missing
 npc.chondur.multi_1,"I guess I cannot stop you then. Since you told me about my apprentice, it is my turn to help you. I will perform a ritual for you, but I need a few ingredients. ...",,missing
 npc.chondur.multi_2,"Bring me one fresh dead chicken, one fresh dead rat and one fresh dead black sheep, in that order.",,missing
 npc.chondur.multi_3,Ohhhhh Mmmmmmmmmmmm Ammmmmgggggggaaaaaaa ...,,missing
@@ -49907,6 +49893,499 @@ npc.captain_seahorse.stdmod_4,"Where do you want to go? To {Krailos}, {Thais}, {
 npc.captain_seahorse.stdmod_5,My name is Captain Seahorse from the Royal Tibia Line.,,missing
 npc.captain_seahorse.stdmod_6,This is Edron. Where do you want to go?,,missing
 npc.captain_seahorse.stdmod_7,"I'm sorry, but we don't serve this route. However, I heard that Wyrdin here in Edron is looking for adventurers to go on a trip to Yalahar for him.",,missing
+npc.iyad.stdmod_1,Never heard about a place like this.,,missing
+npc.iyad.stdmod_2,Do you seek a ride to ,,missing
+npc.iyad.stdmod_3,You shouldn't miss the experience.,,missing
+npc.iyad.stdmod_4,I'm a licensed c...carpet pilot. I can {transport} you t...to a warm p...place.,,missing
+npc.iyad.stdmod_5,I t...{transport} travellers to the continent of Darama for a small fee. It's w...warm there.,,missing
+npc.iyad.stdmod_6,"I can fly you to {Darashia}, to {Edron}, to {Kazordoon}, to Z... Zao, to the F...{Femor Hills}, to {Issavi} or to M... {Marapur} if you like. W....Where do you want to go?",,missing
+npc.iyad.stdmod_7,"I can fly you to {Darashia}, to {Edron}, to {Kazordoon}, to Z... Zao, to the F...{Femor Hills}, to {Issavi} or to M... {Marapur} if you like. W....Where do you want to go?",,missing
+npc.iyad.stdmod_8,"I can fly you to {Darashia}, to {Edron}, to {Kazordoon}, to Z... Zao, to the F...{Femor Hills}, to {Issavi} or to M... {Marapur} if you like. W....Where do you want to go?",,missing
+npc.iyad.stdmod_9,I'm k...known as Iyad Ibn Abdul.,,missing
+npc.iyad.stdmod_10,The thought of s...some mad sorcerer unleashing some f...fire magic is very tempting.,,missing
+npc.iyad.stdmod_11,S...so close and s...still that far away.,,missing
+npc.iyad.stdmod_12,"For all its m...mistakes, Thais is warm at least.",,missing
+npc.iyad.stdmod_13,"I can fly you to {Darashia}, to {Edron}, to {Kazordoon}, to Z... Zao, to the F...{Femor Hills}, to {Issavi} or to M... {Marapur} if you like. W....Where do you want to go?",,missing
+npc.iyad.stdmod_14,I would t...trade it for some firewood.,,missing
+npc.iyad.stdmod_15,This h...here is no continent. This is h...hell.,,missing
+npc.iyad.stdmod_16,Even D...Drefia can't be worse than this land.,,missing
+npc.iyad.stdmod_17,I d...don't care about any n...news unless it's the announcement of a h....heatwave.,,missing
+npc.iyad.stdmod_18,It's p...probably the ice age.,,missing
+npc.iyad.stdmod_19,"Th...there, in case you have {earmuffs}, I pay w...well!",,missing
+npc.iyad.stdmod_20,"Do you really have earmuffs f...for me?? If so, just ask me for a {trade}!",,missing
+npc.junkar_robsons.stdmod_1,"Well, then you stay here, simple as that.",,missing
+npc.junkar_robsons.stdmod_2,Where do you want me to take you? To {Kazordoon} or to {Thais}? Occasionally we can even reach the {mines} if they are cleared.,,missing
+npc.lorek.stdmod_1,Do you seek a passage to ,,missing
+npc.lorek.stdmod_2,Maybe another time.,,missing
+npc.lorek.stdmod_3,I heard he is some scary magician or so.,,missing
+npc.lorek.stdmod_4,"I can travel you to west, centre, darama, chor or banuta.",,missing
+npc.buddel_raider_camp.stdmod_1,"No, no, no, you even are no barb....barba...er.. one of us!!!! Talk to the Jarl first!",,missing
+npc.buddel_raider_camp.stdmod_2,"Ohh, you got a nice ring there! Ya don't have to pay if you gimme the ring and I promise you I will bring you to the correct spot!*HICKS* Alright?",,missing
+npc.buddel_raider_camp.stdmod_3,Give me 50 gold and I bring you to ,,missing
+npc.buddel_raider_camp.stdmod_4,You shouldn't miss the experience.,,missing
+npc.buddel_raider_camp.stdmod_5,You shouldn't miss the experience.,,missing
+npc.buddel_raider_camp.stdmod_6,Where are we at the moment? Is this Svargrond? Ahh yes!*HICKS* Where do you want to go?,,missing
+npc.iptar_sin.stdmod_1,"Alright, I guess you need a stake first. Maybe Gamon can help you, the leg of a chair or something could just do. Try asking him for a stake, and if you have one, bring it back to me.",,missing
+npc.iptar_sin.stdmod_2,"I guess you couldn't convince Gamon to give you a stake, eh?",,missing
+npc.iptar_sin.stdmod_3,"Yes, I was informed what to do. Are you prepared to receive my line of the prayer?",,missing
+npc.iptar_sin.stdmod_4,"So receive my prayer: 'Light shall be near - and darkness afar'. Now, bring your stake to Tibra in the Carlin church for the next line of the prayer. I will inform her what to do.",,missing
+npc.iptar_sin.stdmod_5,I will wait for you.,,missing
+npc.iptar_sin.stdmod_6,You should visit Tibra in the Carlin church now.,,missing
+npc.iptar_sin.stdmod_7,You already received my line of the prayer.,,missing
+npc.iptar_sin.stdmod_8,Fine. You are free to decline my offer.,,missing
+npc.iptar_sin.stdmod_9,Keep your adventurer's stone well.,,missing
+npc.iptar_sin.stdmod_10,"Ah, you want to replace your adventurer's stone for free?",,missing
+npc.iptar_sin.stdmod_11,Here you are. Take care.,,missing
+npc.iptar_sin.stdmod_12,No problem.,,missing
+npc.iptar_sin.stdmod_13,"Ah, you want to replace your adventurer's stone for 30 gold?",,missing
+npc.iptar_sin.stdmod_14,Here you are. Take care.,,missing
+npc.iptar_sin.stdmod_15,"Sorry, you don't have enough money.",,missing
+npc.iptar_sin.stdmod_16,No problem.,,missing
+npc.iptar_sin.stdmod_17,"You are hurt, my child. I will heal your wounds.",,missing
+npc.iptar_sin.stdmod_18,"You aren't looking that bad. Sorry, I can't help you. But if you are looking for additional protection you should go on the {pilgrimage} of ashes or get the protection of the {twist of fate} here.",,missing
+npc.iptar_sin.stdmod_19,"Whenever you receive a lethal wound, your vital force is damaged and there is a chance that you lose some of your equipment. With every single of the five {blessings} you have, this damage and chance of loss will be reduced.",,missing
+npc.iptar_sin.stdmod_20,"There are five blessings available in five sacred places: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. Additionally, you can receive the {twist of fate} here.",,missing
+npc.iptar_sin.stdmod_21,I see you received the spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.iptar_sin.stdmod_22,I can sense that the druids north of Carlin have provided you with the Embrace of Tibia.,,missing
+npc.iptar_sin.stdmod_23,I can see you received the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.iptar_sin.stdmod_24,I can sense that the spark of the phoenix already was given to you by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.iptar_sin.stdmod_25,I can sense you already talked to the hermit Eremo on the isle of Cormaya and received this blessing.,,missing
+npc.iptar_sin.stdmod_26,You can ask for the blessing of spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.iptar_sin.stdmod_27,The druids north of Carlin will provide you with the embrace of Tibia.,,missing
+npc.iptar_sin.stdmod_28,You can ask for the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.iptar_sin.stdmod_29,The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.iptar_sin.stdmod_30,Talk to the hermit Eremo on the isle of Cormaya about this blessing.,,missing
+npc.captain_jack.stdmod_1,Do you seek a passage back to Tibia?,,missing
+npc.captain_jack.stdmod_2,We would like to serve you some time.,,missing
+npc.captain_jack.stdmod_3,I can travel you to {Tibia}.,,missing
+npc.captain_jack.stdmod_4,I can travel you to {Tibia}.,,missing
+npc.nomad.stdmod_1,I am able to grant you the heart of the mountain's blessing. But I must ask of you to sacrifice |BLESSCOST| gold. Are you willing to part with that amount of wealth?,,missing
+npc.nomad.stdmod_2,Fine. You are free to decline my offer.,,missing
+npc.nomad.stdmod_3,"You are hurt, my child. I will heal your wounds.",,missing
+npc.nomad.stdmod_4,"You aren't looking that bad. Sorry, I can't help you. But if you are looking for additional protection you should go on the {pilgrimage} of ashes or get the protection of the {twist of fate} here.",,missing
+npc.nomad.stdmod_5,"Well, as I am quite in a {fix} currently, my only hope to escape this situation may be to grant you {healing} or an {enhanced} blessing if you wish. You must desire SOMETHING, right? Sure you do.",,missing
+npc.nomad.stdmod_6,You can ask for the blessing of spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.nomad.stdmod_7,You can ask for the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.nomad.stdmod_8,The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.nomad.stdmod_9,Talk to the hermit Eremo on the isle of Cormaya about this blessing.,,missing
+npc.nomad.stdmod_10,The druids north of Carlin will provide you with the embrace of Tibia.,,missing
+npc.nomad.stdmod_11,"I know of a mysterious djinn, bound to an existence of slavery far to the north of Tiquanda's jungles. He is bound to tell you his secrets and offer you the 'blood of the mountain'. ...\nI do not know where exactly but I guess you must first dig that one out to actually talk to him.",,missing
+npc.nomad.stdmod_12,"I am one with nature, one with the ice and the cold. Names are of no worth out here. Out here, you face isolation and loneliness. Only your strength, willpower and {training} can keep you alive.",,missing
+npc.nomad.stdmod_13,"My life is one of hardship, hardship I chose freely. Endurance, strength and the power of the will are my only companions in this frigid wilderness. My strength comes from disciplined training and knowledge of the outdoors.",,missing
+npc.prezil.stdmod_1,Fine. You are free to decline my offer.,,missing
+npc.prezil.stdmod_2,Keep your adventurer's stone well.,,missing
+npc.prezil.stdmod_3,"Ah, you want to replace your adventurer's stone for free?",,missing
+npc.prezil.stdmod_4,Here you are. Take care.,,missing
+npc.prezil.stdmod_5,No problem.,,missing
+npc.prezil.stdmod_6,"Ah, you want to replace your adventurer's stone for 30 gold?",,missing
+npc.prezil.stdmod_7,Here you are. Take care.,,missing
+npc.loui.stdmod_1,My name is Loui.,,missing
+npc.loui.stdmod_2,"I'm a {monk}. I wanted to do something here, but I forgot what it was when I fell in that {hole}.",,missing
+npc.loui.stdmod_3,I'm a humble servant of the {gods}.,,missing
+npc.loui.stdmod_4,They created Tibia and all lifeforms.,,missing
+npc.loui.stdmod_5,I have no idea how long I've been in this {hole}. It seemed like an eternity!,,missing
+npc.loui.stdmod_6,"While looking for something - which I forgot - I found that {hole}. I went down, even though I had no torch. And then I heard {THEM}! There must be dozens!",,missing
+npc.loui.stdmod_7,"They were so many, EVERYWHERE! I could barely escape alive. I have no clue what THEY were but one more second down there and I'd have been dead!",,missing
+npc.loui.stdmod_8,"Sorry, I'm out of mana and ingredients, please visit Cipfried in town.",,missing
+npc.loui.stdmod_9,The good thing is that those horrible rats stay mostly in town. The bad thing is that they do so because of bigger {monsters} that would devour them outside.,,missing
+npc.loui.stdmod_10,"Everything around us, that is Tibia.",,missing
+npc.loui.stdmod_11,Most adventurers take their first steps there.,,missing
+npc.loui.stdmod_12,"Pah, king! He should do something about this {hole}!",,missing
+npc.loui.stdmod_13,This is the place where everything starts.,,missing
+npc.loui.stdmod_14,"Was it...? Yes, I might have looked for blueberries as I foolishly entered this unholy {hole}.",,missing
+npc.loui.stdmod_15,"There must be an army of them, just down this {hole}.",,missing
+npc.loui.stdmod_16,"Then, they must be magic wielding beasts using creature illusion! Good thing you escaped.",,missing
+npc.loui.stdmod_17,The gods blessed Tibia with abundant forms of life.,,missing
+npc.loui.stdmod_18,The good thing is that those horrible rats stay mostly in town. The bad thing is that they do so because of bigger {monsters} that would devour them outside.,,missing
+npc.loui.stdmod_19,I have no quests but to stay away from that {hole} and I recommend you to do the same.,,missing
+npc.loui.stdmod_20,I'm penniless and poor as becomes a humble monk like me.,,missing
+npc.loui.stdmod_21,She owns a shop in town.,,missing
+npc.loui.stdmod_22,She owns a bar in town.,,missing
+npc.loui.stdmod_23,Waaaah! Don't shock me like that!,,missing
+npc.loui.stdmod_24,"He has his own monsters, I believe.",,missing
+npc.loui.stdmod_25,Harmless old woman.,,missing
+npc.loui.stdmod_26,He owns a shop in town.,,missing
+npc.loui.stdmod_27,Who's that? Never heard about her.,,missing
+npc.loui.stdmod_28,He owns a shop in town.,,missing
+npc.loui.stdmod_29,He's a farmer.,,missing
+npc.loui.stdmod_30,The gods may protect me from his rudeness.,,missing
+npc.loui.stdmod_31,A hermit on the other side of town.,,missing
+npc.loui.stdmod_32,The oracle! Yes! You should get off this island as fast as you can!,,missing
+npc.loui.stdmod_33,Young and inexperienced he is.,,missing
+npc.loui.stdmod_34,Seymour is the headmaster of the local {academy}.,,missing
+npc.loui.stdmod_35,I'm sure he has never seen monsters like those in this hole before.,,missing
+npc.loui.stdmod_36,I tried to warn him about these monsters but he just laughed at me!! It's an outrage!,,missing
+npc.edvard.stdmod_1,"Well, as you can see, I sell furniture. Ask me for a {trade} if you're interested to see my wares.",,missing
+npc.eddy.stdmod_1,"I have {beds}, {chairs}, {containers}, {decoration}, {flowers}, {instruments}, {pillows}, {pottery}, {statues}, {tapestries} and {tables}. Which of those would you like to see?",,missing
+npc.ferus.stdmod_1,Fine. You are free to decline my offer.,,missing
+npc.ferus.stdmod_2,Keep your adventurer's stone well.,,missing
+npc.ferus.stdmod_3,"Ah, you want to replace your adventurer's stone for free?",,missing
+npc.ferus.stdmod_4,Here you are. Take care.,,missing
+npc.ferus.stdmod_5,No problem.,,missing
+npc.ferus.stdmod_6,"Ah, you want to replace your adventurer's stone for 30 gold?",,missing
+npc.ferus.stdmod_7,Here you are. Take care.,,missing
+npc.ferus.stdmod_8,"Sorry, you don't have enough money.",,missing
+npc.ferus.stdmod_9,No problem.,,missing
+npc.ferus.stdmod_10,"You are hurt, my child. I will heal your wounds.",,missing
+npc.ferus.stdmod_11,"You aren't looking that bad. Sorry, I can't help you. But if you are looking for additional protection you should go on the {pilgrimage} of ashes or get the protection of the {twist of fate} here.",,missing
+npc.ferus.stdmod_12,"Whenever you receive a lethal wound, your vital force is damaged and there is a chance that you lose some of your equipment. With every single of the five {blessings} you have, this damage and chance of loss will be reduced.",,missing
+npc.ferus.stdmod_13,"There are five blessings available in five sacred places: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. Additionally, you can receive the {twist of fate} here.",,missing
+npc.ferus.stdmod_14,I see you received the spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.ferus.stdmod_15,I can sense that the druids north of Carlin have provided you with the Embrace of Tibia.,,missing
+npc.ferus.stdmod_16,I can see you received the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.ferus.stdmod_17,I can sense that the spark of the phoenix already was given to you by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.ferus.stdmod_18,I can sense you already talked to the hermit Eremo on the isle of Cormaya and received this blessing.,,missing
+npc.ferus.stdmod_19,You can ask for the blessing of spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.ferus.stdmod_20,The druids north of Carlin will provide you with the embrace of Tibia.,,missing
+npc.ferus.stdmod_21,You can ask for the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.ferus.stdmod_22,The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.ferus.stdmod_23,Talk to the hermit Eremo on the isle of Cormaya about this blessing.,,missing
+npc.a_wrinkled_bonelord.stdmod_1,"Yes, yes, I will kill you soon enough, now let me continue my investigation on you.",,missing
+npc.a_wrinkled_bonelord.stdmod_2,They will mourn the day they abandoned us.,,missing
+npc.a_wrinkled_bonelord.stdmod_3,I am the great librarian.,,missing
+npc.a_wrinkled_bonelord.stdmod_4,"It's a fine library, isn't it?",,missing
+npc.a_wrinkled_bonelord.stdmod_5,I am 486486 and NOT 'Blinky' as some people called me ... before they died.,,missing
+npc.a_wrinkled_bonelord.stdmod_6,"It's 1, not 'Tibia', silly.",,missing
+npc.a_wrinkled_bonelord.stdmod_7,Uglyness incarnate. One eye! Imagine that! Horrible!,,missing
+npc.a_wrinkled_bonelord.stdmod_8,These fools and their superstitious life cult don't understand anything of importance.,,missing
+npc.a_wrinkled_bonelord.stdmod_9,Only inferior species need weapons.,,missing
+npc.a_wrinkled_bonelord.stdmod_10,I heard that elves moved in upstairs.,,missing
+npc.a_wrinkled_bonelord.stdmod_11,Numbers are essential. They are the secret behind the scenes. If you are a master of mathematics you are a master over life and death.,,missing
+npc.a_wrinkled_bonelord.stdmod_12,"Our books are written in 469, of course you can't understand them.",,missing
+npc.a_wrinkled_bonelord.stdmod_13,Go and wash your eyes for using this obscene number!,,missing
+npc.a_wrinkled_bonelord.stdmod_14,The language of my kind. Superior to any other language and only to be spoken by entities with enough eyes to blink it.,,missing
+npc.a_wrinkled_bonelord.stdmod_15,Noisy pests.,,missing
+npc.a_wrinkled_bonelord.stdmod_16,Their mages are so close to the truth. Closer then they know and closer then it's good for them.,,missing
+npc.a_wrinkled_bonelord.stdmod_17,"Good tools to work with ... After their death, that is.",,missing
+npc.a_wrinkled_bonelord.stdmod_18,"You pitiful two-eyed creatures. In our eyes, you look weird. It is pathetic how much you depend on hands and legs. Since we bonelords have more eyes than any creature in the world, it is obvious that you can determine the value of a species by the number of its eyes. ",,missing
+npc.a_wrinkled_bonelord.stdmod_19,"Our race is very old. Over the time, we have been given many different names by other races. The term bonelord sticks to us for quite a while now. In our language the name of our race is not fix but a complex formula, and as such it always changes for the subjective viewer. ",,missing
+npc.rahkem.stdmod_1,Fine. You are free to decline my offer.,,missing
+npc.rahkem.stdmod_2,Keep your adventurer's stone well.,,missing
+npc.rahkem.stdmod_3,"Ah, you want to replace your adventurer's stone for free?",,missing
+npc.rahkem.stdmod_4,Here you are. Take care.,,missing
+npc.rahkem.stdmod_5,No problem.,,missing
+npc.rahkem.stdmod_6,"Ah, you want to replace your adventurer's stone for 30 gold?",,missing
+npc.rahkem.stdmod_7,Here you are. Take care.,,missing
+npc.rahkem.stdmod_8,"Sorry, you don't have enough money.",,missing
+npc.rahkem.stdmod_9,No problem.,,missing
+npc.rahkem.stdmod_10,"You are hurt, my child. I will heal your wounds.",,missing
+npc.rahkem.stdmod_11,"You aren't looking that bad. Sorry, I can't help you. But if you are looking for additional protection you should go on the {pilgrimage} of ashes or get the protection of the {twist of fate} here.",,missing
+npc.rahkem.stdmod_12,"I think you have forgotten to bring your stake, pilgrim.",,missing
+npc.rahkem.stdmod_13,"Yes, I was informed what to do. Are you prepared to receive my line of the prayer?",,missing
+npc.rahkem.stdmod_14,"So receive my prayer: 'Let there be power and compassion'. Now, bring your stake to Brewster in Port Hope for the next line of the prayer. I will inform him what to do.",,missing
+npc.rahkem.stdmod_15,I will wait for you.,,missing
+npc.rahkem.stdmod_16,You should visit Brewster in Port Hope now.,,missing
+npc.rahkem.stdmod_17,You already received my line of the prayer.,,missing
+npc.rahkem.stdmod_18,"A blessed stake? That is a strange request. Maybe Quentin knows more, he is one of the oldest monks after all.",,missing
+npc.rahkem.stdmod_19,"Whenever you receive a lethal wound, your vital force is damaged and there is a chance that you lose some of your equipment. With every single of the five {blessings} you have, this damage and chance of loss will be reduced.",,missing
+npc.rahkem.stdmod_20,"There are five blessings available in five sacred places: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. Additionally, you can receive the {twist of fate} here.",,missing
+npc.rahkem.stdmod_21,I see you received the spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.rahkem.stdmod_22,I can sense that the druids north of Carlin have provided you with the Embrace of Tibia.,,missing
+npc.rahkem.stdmod_23,I can see you received the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.rahkem.stdmod_24,I can sense that the spark of the phoenix already was given to you by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.rahkem.stdmod_25,I can sense you already talked to the hermit Eremo on the isle of Cormaya and received this blessing.,,missing
+npc.rahkem.stdmod_26,You can ask for the blessing of spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.rahkem.stdmod_27,The druids north of Carlin will provide you with the embrace of Tibia.,,missing
+npc.rahkem.stdmod_28,You can ask for the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.rahkem.stdmod_29,The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.rahkem.stdmod_30,Talk to the hermit Eremo on the isle of Cormaya about this blessing.,,missing
+npc.captain_bluebear.stdmod_1,I'm sorry but I don't sail there.,,missing
+npc.captain_bluebear.stdmod_2,Do you seek a passage to ,,missing
+npc.captain_bluebear.stdmod_3,We would like to serve you some time.,,missing
+npc.captain_bluebear.stdmod_4,My name is Captain Bluebear from the Royal Tibia Line.,,missing
+npc.captain_bluebear.stdmod_5,I am the captain of this sailing-ship.,,missing
+npc.captain_bluebear.stdmod_6,I am the captain of this sailing-ship.,,missing
+npc.captain_bluebear.stdmod_7,The Royal Tibia Line connects all seaside towns of Tibia.,,missing
+npc.captain_bluebear.stdmod_8,The Royal Tibia Line connects all seaside towns of Tibia.,,missing
+npc.captain_bluebear.stdmod_9,The Royal Tibia Line connects all seaside towns of Tibia.,,missing
+npc.captain_bluebear.stdmod_10,The Royal Tibia Line connects all seaside towns of Tibia.,,missing
+npc.captain_bluebear.stdmod_11,We can transport everything you want.,,missing
+npc.captain_bluebear.stdmod_12,We would like to welcome you on board.,,missing
+npc.captain_bluebear.stdmod_13,"Where do you want to go? To {Carlin}, {Ab'Dendriel}, {Venore}, {Port Hope}, {Liberty Bay}, {Svargrond}, {Yalahar}, {Roshamuul}, {Oramond} or {Edron}?",,missing
+npc.captain_bluebear.stdmod_14,"Where do you want to go? To {Carlin}, {Ab'Dendriel}, {Venore}, {Port Hope}, {Liberty Bay}, {Svargrond}, {Yalahar}, {Roshamuul}, {Oramond} or {Edron}?",,missing
+npc.captain_bluebear.stdmod_15,"Where do you want to go? To {Carlin}, {Ab'Dendriel}, {Venore}, {Port Hope}, {Liberty Bay}, {Svargrond}, {Yalahar}, {Roshamuul}, {Oramond} or {Edron}?",,missing
+npc.captain_bluebear.stdmod_16,"Where do you want to go? To {Carlin}, {Ab'Dendriel}, {Venore}, {Port Hope}, {Liberty Bay}, {Svargrond}, {Yalahar}, {Roshamuul}, {Oramond} or {Edron}?",,missing
+npc.captain_bluebear.stdmod_17,"Where do you want to go? To {Carlin}, {Ab'Dendriel}, {Venore}, {Port Hope}, {Liberty Bay}, {Svargrond}, {Yalahar}, {Roshamuul}, {Oramond} or {Edron}?",,missing
+npc.captain_bluebear.stdmod_18,"Where do you want to go? To {Carlin}, {Ab'Dendriel}, {Venore}, {Port Hope}, {Liberty Bay}, {Svargrond}, {Yalahar}, {Roshamuul}, {Oramond} or {Edron}?",,missing
+npc.captain_bluebear.stdmod_19,"Where do you want to go? To {Carlin}, {Ab'Dendriel}, {Venore}, {Port Hope}, {Liberty Bay}, {Svargrond}, {Yalahar}, {Roshamuul}, {Oramond} or {Edron}?",,missing
+npc.captain_bluebear.stdmod_20,"I'm sorry, but we don't serve the routes to the Ice Islands.",,missing
+npc.captain_bluebear.stdmod_21,"I'm sorry, but we don't serve the routes to the Ice Islands.",,missing
+npc.captain_bluebear.stdmod_22,"I'm sorry, but we don't serve the routes to the Ice Islands.",,missing
+npc.captain_bluebear.stdmod_23,"I'm sorry, but we don't serve the routes to the Ice Islands.",,missing
+npc.captain_bluebear.stdmod_24,I'm not sailing there. This route is afflicted by a ghostship! However I've heard that Captain Fearless from Venore sails there.,,missing
+npc.captain_bluebear.stdmod_25,I'm not sailing there. This route is afflicted by a ghostship! However I've heard that Captain Fearless from Venore sails there.,,missing
+npc.captain_bluebear.stdmod_26,Many people who sailed to Darashia never returned because they were attacked by a ghostship! I'll never sail there!,,missing
+npc.captain_bluebear.stdmod_27,This is Thais. Where do you want to go?,,missing
+npc.uzon_back.stdmod_1,Never heard about a place like this.,,missing
+npc.uzon_back.stdmod_2,You shouldn't miss the experience.,,missing
+npc.uzon_back.stdmod_3,I am known as Uzon Ibn Kalith.,,missing
+npc.uzon_back.stdmod_4,I transport travellers to the continent of Darama for a small fee. So many want to see the wonders of the desert and learn the secrets of Darama.,,missing
+npc.uzon_back.stdmod_5,I heard too many news to recall them all.,,missing
+npc.uzon_back.stdmod_6,I heard too many news to recall them all.,,missing
+npc.uzon_back.stdmod_7,It's 3:42 pm right now. The next flight is scheduled soon.,,missing
+npc.legola.stdmod_1,"We are always looking for sniper gloves. They are supposed to raise accuracy. If you find a pair, bring them here. Maybe I can offer you a nice trade.",,missing
+npc.melian.stdmod_1,Do you seek a ride to ,,missing
+npc.melian.stdmod_2,You shouldn't miss the experience.,,missing
+npc.melian.stdmod_3,"There are many of them to the north and south of this continent. I had thought they only existed on Tiquanda, but I was mistaken.",,missing
+npc.melian.stdmod_4,What a strange and bizarre continent. I'm glad my landing place is far away from all the mess I've seen from above.,,missing
+npc.melian.stdmod_5,"I can fly you to {Darashia}, {Edron}, {Issavi}, {Svargrond}, {Kazordoon}, {Femor Hills} or to {Marapur} if you like. Where do you want to go?",,missing
+npc.melian.stdmod_6,"I'm a carpet pilot. I can fly you to the {Femor Hills}, to {Kazordoon}, {Svargrond}, {Edron}, {Darashia}, {Issavi} or {Marapur}.",,missing
+npc.melian.stdmod_7,"I'm a carpet pilot. I can fly you to the {Femor Hills}, to {Kazordoon}, {Svargrond}, {Edron}, {Darashia}, {Issavi} or {Marapur}.",,missing
+npc.melian.stdmod_8,Melian at your service.,,missing
+npc.melian.stdmod_9,These mountains don't look friendly. I prefer not staying long inbetween my carpet trips.,,missing
+npc.melian.stdmod_10,Only licensed carpet pilots are allowed to fly those.,,missing
+npc.melian.stdmod_11,"There's so much green stuff down there that I'm not sure whether there are any, but yes, might be, might be.",,missing
+npc.melian.stdmod_12,"Well, dwarves and their steamboat technology are well and good, but nothing beats flying on a carpet.",,missing
+npc.melian.stdmod_13,"Well, dwarves and their steamboat technology are well and good, but nothing beats flying on a carpet.",,missing
+npc.melian.stdmod_14,That's the name of that dwarven base as far as I know. Got a bit of a pessimistic ring to it if you ask me. Sounds to me like they're starving.,,missing
+npc.melian.stdmod_15,"I can fly you to {Darashia} on {Darama}, to {Kazordoon}, to {Svargrond} on Hrodmir, to {Edron}, to the {Femor Hills}, to {Issavi} or to {Marapur} if you like. Where do you want to go?",,missing
+npc.melian.stdmod_16,"I can fly you to {Darashia} on {Darama}, to {Kazordoon}, to {Svargrond} on Hrodmir, to {Edron}, to the {Femor Hills}, to {Issavi} or to {Marapur} if you like. Where do you want to go?",,missing
+npc.melian.stdmod_17,"I can fly you to {Darashia} on {Darama}, to {Kazordoon}, to {Svargrond} on Hrodmir, to {Edron}, to the {Femor Hills}, to {Issavi} or to {Marapur} if you like. Where do you want to go?",,missing
+npc.melian.stdmod_18,"I can fly you to {Darashia} on {Darama}, to {Kazordoon}, to {Svargrond} on Hrodmir, to {Edron}, to the {Femor Hills}, to {Issavi} or to {Marapur} if you like. Where do you want to go?",,missing
+npc.melian.stdmod_19,"I can fly you to {Darashia} on {Darama}, to {Kazordoon}, to {Svargrond} on Hrodmir, to {Edron}, to the {Femor Hills}, to {Issavi} or to {Marapur} if you like. Where do you want to go?",,missing
+npc.melian.stdmod_20,The only humans I've seen on this continent are those that come up to my carpet.,,missing
+npc.melian.stdmod_21,What a strange and bizarre continent. I'm glad my landing place is far away from all the mess I've seen from above.,,missing
+npc.melian.stdmod_22,You are probably talking about the {FEMOR hills}.,,missing
+npc.melian.stdmod_23,It's 2:55 pm right now. I think I'm five minutes late in my schedule.,,missing
+npc.cipfried.stdmod_1,My name is Cipfried.,,missing
+npc.cipfried.stdmod_2,"Me? Oh, I'm just a humble {monk}. Ask me if you need {help} or {healing}.",,missing
+npc.cipfried.stdmod_3,"Now it is |TIME|, my child.",,missing
+npc.cipfried.stdmod_4,I have sacrificed my life to serve the good gods of {Tibia} and to help newcomers in this world.,,missing
+npc.cipfried.stdmod_5,You can deposit your money at the bank. That way you won't lose it if you get {killed}. The bank is just under the academy and to the right.,,missing
+npc.cipfried.stdmod_6,"Your near destiny will be to choose a {vocation} once you are level 8. Whether you will become a {knight}, {sorcerer}, {paladin} or {druid} is a big decision!",,missing
+npc.cipfried.stdmod_7,"That's where we are - the world of Tibia, in a village called {Rookgaard}, to be precise, with many {monsters}, {quests} and {citizens} around.",,missing
+npc.cipfried.stdmod_8,How can I help you? I can tell you about specific {citizens} if you tell me their name. I can also give you general {hints} about {Tibia}. ,,missing
+npc.cipfried.stdmod_9,"Only a few people live in our village, most of them are {merchants}. You can either ask them for a {trade} or about various other topics, like the names of other citizens, their {job} or Tibia in general.",,missing
+npc.cipfried.stdmod_10,"I don't have any goods for trade, but if you ask one of the {merchants}, he or she will gladly show you what you can buy or sell.",,missing
+npc.cipfried.stdmod_11,"A single rat doesn't pose a grave danger to you, but be careful not to get cornered by many of them. They could still {kill} you.",,missing
+npc.cipfried.stdmod_12,"If you face spiders, beware of the {poisonous} ones. If you are poisoned, you will constantly lose health. Come to me and I'll heal you from poison.",,missing
+npc.cipfried.stdmod_13,"If you get killed, you will revive in this temple. However, you will lose experience and also equipment, which can be quite painful. Take good care of yourself!",,missing
+npc.cipfried.stdmod_14,"Poison is very dangerous! Don't ever drink green liquids, they are poisonous and will make you lose health!",,missing
+npc.cipfried.stdmod_15,"There are four vocations in Tibia: {knight}, {sorcerer}, {paladin} or {druid}. Each vocation has its unique special abilities.",,missing
+npc.cipfried.stdmod_16,"Knights are close combat fighters. They usually wield melee weapons such as swords, axes or clubs.",,missing
+npc.cipfried.stdmod_17,"Druids are nature magicians. Their speciality is casting ice and earth magic, as well as providing healing for others.",,missing
+npc.cipfried.stdmod_18,Paladins are well-trained distance fighters and can cast holy magic. You will usually see them wearing bows or crossbows.,,missing
+npc.cipfried.stdmod_19,"Sorcerers are elemental magicians. They have mastered fire, energy and death magic.",,missing
+npc.cipfried.stdmod_20,"You can buy and sell goods from merchants. To do so, simply talk to them and ask them for a {trade}. They will gladly show you their offers and also the things they buy from you.",,missing
+npc.cipfried.stdmod_21,You can buy equipment from the {merchants} in this village once you earned some {gold}. Some {monsters} also carry equipment pieces with them.,,missing
+npc.cipfried.stdmod_22,"Shovels are very useful. There may be a hidden entrance under a loose pile of stone and without a shovel, how would you know?",,missing
+npc.cipfried.stdmod_23,"Never go adventuring without a rope! If you don't have one when you fall through a hole in the ground, you won't be able to leave without a rope.",,missing
+npc.cipfried.stdmod_24,"To defend yourself against enemies, you will need a weapon. You can purchase weapons at {Obi}'s shop.",,missing
+npc.cipfried.stdmod_25,"Food is very important for your health. If you are hurt in a fight with a {monster}, select 'Use' on food such as cheese, ham or meat to eat it. This will slowly refill your health.",,missing
+npc.cipfried.stdmod_26,"As a premium adventurer, you are an official tax payer and thus privileged in many ways. For example, you can travel by {ship} and get better deals from {merchants}.",,missing
+npc.cipfried.stdmod_27,"Potions will come in handy once you are in a fight deep in a dungeon. If you aren't in immediate danger, you can simply eat {food} to regain health, though.",,missing
+npc.cipfried.stdmod_28,"The academy is just north of here. You can learn helpful things there from {Seymour}, if you wish to!",,missing
+npc.cipfried.stdmod_29,"Well, King Tibianus of course. The island of {Rookgaard} belongs to his kingdom.",,missing
+npc.cipfried.stdmod_30,The {gods} have chosen this isle as the point of arrival for newborn souls. The {citizens} will help you if you ask them.,,missing
+npc.cipfried.stdmod_31,They created {Tibia} and all life on it. Visit our {academy} and learn about them.,,missing
+npc.cipfried.stdmod_32,"Monsters are a constant threat to this village. You would tremendously help us by fighting them, starting with {rats} in the {sewers}, then turning to {spiders} or {wolves}.",,missing
+npc.cipfried.stdmod_33,"You can buy and sell goods from merchants. To do so, simply talk to them and ask them for a {trade}. They will gladly show you their offers and also the things they buy from you.",,missing
+npc.cipfried.stdmod_34,"The sewers are right below this village. North of this temple, you find a sewer grate which leads down, but there are also many small huts in the village which are connected to the sewers.",,missing
+npc.cipfried.stdmod_35,"I'm sorry, but I'm not interested in worldly goods. If you want to buy or sell something, you should ask a local merchant for a trade.",,missing
+npc.cipfried.stdmod_36,"To defend yourself against enemies, you will need armor and shields. You can purchase both at {Dixi}'s shop.",,missing
+npc.cipfried.stdmod_37,"You can earn a fair amount of gold by fighting {monsters} and picking up the things they carry. Many {citizens} are buying some of that loot, simply ask around.",,missing
+npc.cipfried.stdmod_38,"Oh, I can handle my tasks myself, thank you. If you are looking for something to do, you should listen to the local {citizens} and ask them for {quests}. You could also help us fight {monsters}.",,missing
+npc.cipfried.stdmod_39,"Wolves can only be found outside of the village. If you want to know where their dens are, best talk to {Dallheim} or {Zerbrus} at the bridges.",,missing
+npc.cipfried.stdmod_40,I can see a bright future for you... you will soon embark on a very big adventure and explore the world of {Tibia} - maybe even influence history!,,missing
+npc.cipfried.stdmod_41,You are poisoned. I will help you.,,missing
+npc.cipfried.stdmod_42,Let me heal your wounds.,,missing
+npc.cipfried.stdmod_43,"You aren't looking really bad, |PLAYERNAME|. I can only help in cases of real emergencies. Raise your health simply by eating {food}.",,missing
+npc.cipfried.stdmod_44,"Obi's {shop} is to the north-east of this humble temple. He sells {weapons}, and his granddaughter {Dixi} sells {armor} and {shields} upstairs.",,missing
+npc.cipfried.stdmod_45,She recently opened a little bar north of this village.,,missing
+npc.cipfried.stdmod_46,"That's a sad story. He used to help me guard this temple, but for some reason he went out of his mind.",,missing
+npc.cipfried.stdmod_47,I absolutely appreciate what he's doing. He has helped me a lot since he took up the job of welcoming newcomers to this island.,,missing
+npc.cipfried.stdmod_48,"That old lady hasn't had an easy life. Her son {Tom} completely abandoned her, but I have no idea why.",,missing
+npc.cipfried.stdmod_49,"In Al Dee's shop you'll find important general equipment such as {ropes}, {shovels} and torches.",,missing
+npc.cipfried.stdmod_50,"Amber is such a lovely girl, and also a very experienced {explorer} and {adventurer}. It's always interesting to chat with her.",,missing
+npc.cipfried.stdmod_51,"He's a farmer, just like his cousin {Willie}. He doesn't talk to everybody, though.",,missing
+npc.cipfried.stdmod_52,"Willie is a farmer, just like his cousin {Billy}. His farm is located left of the temple. You can buy and sell {food} there.",,missing
+npc.cipfried.stdmod_53,Yes? How can I {help} you?,,missing
+npc.cipfried.stdmod_54,That's {Obi's} granddaughter. Her counter is just upstairs from Obi's shop. She helps him by selling {armor} and {shields}.,,missing
+npc.cipfried.stdmod_55,Hyacinth is a close friend of mine. He left the village many years ago to live in solitude. I think all this bustle here simply was too much for him.,,missing
+npc.cipfried.stdmod_56,Lee'Delle's shop is on the {premium} side of the village. You should visit her!,,missing
+npc.cipfried.stdmod_57,"You must have passed the house of Lily on your way here. She sells {potions}. If you pick blueberries or find cookies, she'll buy them from you.",,missing
+npc.cipfried.stdmod_58,"You can find the oracle on the top floor of the {academy}, just above {Seymour}. Go there when you are level 8 to find your {destiny}.",,missing
+npc.cipfried.stdmod_59,"He is the {bank} clerk, making sure your {money} remains safe.",,missing
+npc.cipfried.stdmod_60,Seymour is a loyal follower of the {king} and a teacher in the {academy}.,,missing
+npc.cipfried.stdmod_61,Tom is the main provider for leather armor in this village. You can sell fresh corpses or even minotaur leather to him.,,missing
+npc.cipfried.stdmod_62,"May the gods bless our loyal guardsmen! Day and night they stand watch on our bridges, ensuring that it is not passed by dangerous {monsters}!",,missing
+npc.azalea.stdmod_1,Fine. You are free to decline my offer.,,missing
+npc.azalea.stdmod_2,Keep your adventurer's stone well.,,missing
+npc.azalea.stdmod_3,"Ah, you want to replace your adventurer's stone for free?",,missing
+npc.azalea.stdmod_4,Here you are. Take care.,,missing
+npc.azalea.stdmod_5,No problem.,,missing
+npc.azalea.stdmod_6,"Ah, you want to replace your adventurer's stone for 30 gold?",,missing
+npc.azalea.stdmod_7,Here you are. Take care.,,missing
+npc.azalea.stdmod_8,"Sorry, you don't have enough money.",,missing
+npc.azalea.stdmod_9,No problem.,,missing
+npc.azalea.stdmod_10,"You are hurt, my child. I will heal your wounds.",,missing
+npc.azalea.stdmod_11,"You aren't looking that bad. Sorry, I can't help you. But if you are looking for additional protection you should go on the {pilgrimage} of ashes or get the protection of the {twist of fate} here.",,missing
+npc.azalea.stdmod_12,"Whenever you receive a lethal wound, your vital force is damaged and there is a chance that you lose some of your equipment. With every single of the five {blessings} you have, this damage and chance of loss will be reduced.",,missing
+npc.azalea.stdmod_13,"There are five blessings available in five sacred places: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. Additionally, you can receive the {twist of fate} here.",,missing
+npc.azalea.stdmod_14,I see you received the spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.azalea.stdmod_15,I can sense that the druids north of Carlin have provided you with the Embrace of Tibia.,,missing
+npc.azalea.stdmod_16,I can see you received the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.azalea.stdmod_17,I can sense that the spark of the phoenix already was given to you by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.azalea.stdmod_18,I can sense you already talked to the hermit Eremo on the isle of Cormaya and received this blessing.,,missing
+npc.azalea.stdmod_19,You can ask for the blessing of spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.azalea.stdmod_20,The druids north of Carlin will provide you with the embrace of Tibia.,,missing
+npc.azalea.stdmod_21,You can ask for the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.azalea.stdmod_22,The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.azalea.stdmod_23,Talk to the hermit Eremo on the isle of Cormaya about this blessing.,,missing
+npc.captain_seagull.stdmod_1,I'm sorry but I don't sail there.,,missing
+npc.captain_seagull.stdmod_2,Do you seek a passage to ,,missing
+npc.captain_seagull.stdmod_3,We would like to serve you some time.,,missing
+npc.captain_seagull.stdmod_4,My name is Captain Seagull from the Royal Tibia Line.,,missing
+npc.captain_seagull.stdmod_5,I am the captain of this sailing-ship.,,missing
+npc.captain_seagull.stdmod_6,I am the captain of this sailing-ship.,,missing
+npc.captain_seagull.stdmod_7,The Royal Tibia Line connects all seaside towns of Tibia.,,missing
+npc.captain_seagull.stdmod_8,The Royal Tibia Line connects all seaside towns of Tibia.,,missing
+npc.captain_seagull.stdmod_9,The Royal Tibia Line connects all seaside towns of Tibia.,,missing
+npc.captain_seagull.stdmod_10,The Royal Tibia Line connects all seaside towns of Tibia.,,missing
+npc.captain_seagull.stdmod_11,The Royal Tibia Line connects all seaside towns of Tibia.,,missing
+npc.captain_seagull.stdmod_12,We can transport everything you want.,,missing
+npc.captain_seagull.stdmod_13,We would like to welcome you on board.,,missing
+npc.captain_seagull.stdmod_14,"Where do you want to go? To {Thais}, {Carlin}, {Venore}, {Yalahar}, {Edron} or {Gray Island}?",,missing
+npc.captain_seagull.stdmod_15,"WWhere do you want to go? To {Thais}, {Carlin}, {Venore}, {Yalahar}, {Edron} or {Gray Island}?",,missing
+npc.captain_seagull.stdmod_16,"Where do you want to go? To {Thais}, {Carlin}, {Venore}, {Yalahar}, {Edron} or {Gray Island}?",,missing
+npc.captain_seagull.stdmod_17,"Where do you want to go? To {Thais}, {Carlin}, {Venore}, {Yalahar}, {Edron} or {Gray Island}?",,missing
+npc.captain_seagull.stdmod_18,"Where do you want to go? To {Thais}, {Carlin}, {Venore}, {Yalahar}, {Edron} or {Gray Island}?",,missing
+npc.captain_seagull.stdmod_19,"Where do you want to go? To {Thais}, {Carlin}, {Venore}, {Yalahar}, {Edron} or {Gray Island}?",,missing
+npc.captain_seagull.stdmod_20,"I'm sorry, but we don't serve the routes to the Ice Islands.",,missing
+npc.captain_seagull.stdmod_21,"I'm sorry, but we don't serve the routes to the Ice Islands.",,missing
+npc.captain_seagull.stdmod_22,"I'm sorry, but we don't serve the routes to the Ice Islands.",,missing
+npc.captain_seagull.stdmod_23,"I'm sorry, but we don't serve the routes to the Ice Islands.",,missing
+npc.captain_seagull.stdmod_24,"I'm sorry, but we don't serve this route.",,missing
+npc.captain_seagull.stdmod_25,"I'm sorry, but we don't serve this route.",,missing
+npc.captain_seagull.stdmod_26,"I'm sorry, but we don't serve this route.",,missing
+npc.captain_seagull.stdmod_27,I'm not sailing there. This route is afflicted by a ghost ship! However I've heard that Captain Fearless from Venore sails there.,,missing
+npc.captain_seagull.stdmod_28,I'm not sailing there. This route is afflicted by a ghost ship! However I've heard that Captain Fearless from Venore sails there.,,missing
+npc.captain_seagull.stdmod_29,Many people who sailed to Darashia never returned because they were attacked by a ghostship! I'll never sail there!,,missing
+npc.captain_seagull.stdmod_30,This is Ab'Dendriel. Where do you want to go?,,missing
+npc.imalas.stdmod_1,I offer quite a lot of food. Ask me for a {trade} if you're hungry,,missing
+npc.ninos.say_1,"Oh they don't change that much since in the old days as... <tells a boring and confusing story about a cake, a parcel, himself and two squirrels, at least he tells you his measurements in the end> ",,missing
+npc.frodo.stdmod_1,I hope you like it. Would you like some {food}?,,missing
+npc.frodo.stdmod_2,I am the owner of this saloon. I call it Frodo's Hut. I am also {selling} food.,,missing
+npc.frodo.stdmod_3,"I can offer you bread, cheese, ham, or meat. If you'd like to see my offers, ask me for a trade.",,missing
+npc.frodo.stdmod_4,Some travelers from Edron told about a great treasure guarded by cruel demons in the dungeons there.,,missing
+npc.frodo.stdmod_5,"Oh, our beloved king! Thanks to him, alcohol is so cheap.",,missing
+npc.frodo.stdmod_6,Harkath Bloodblade is the royal general.,,missing
+npc.frodo.stdmod_7,Hehe. Great customers.,,missing
+npc.frodo.stdmod_8,Just call me Frodo.,,missing
+npc.frodo.stdmod_9,It is exactly |TIME|.,,missing
+npc.frodo.stdmod_10,"Ah yes, the graveyard dungeon. All I know is this riddle: His Grave to the south, the tree above, his soul in the shade. No idea what that means, though!",,missing
+npc.frodo.stdmod_11, I heard it when I was a child.,,missing
+npc.frodo.stdmod_12,"Yes, I remember him. His name was Berfasmur.",,missing
+npc.frodo.stdmod_13,"Sorry, he spoke only very little. I know nothing more about him.",,missing
+npc.frodo.stdmod_14,Come on! You know that our world is called Tibia.,,missing
+npc.frodo.stdmod_15,Nothing more than a tale for warriors.,,missing
+npc.frodo.stdmod_16,"Uhm, do not mention him. It may scare customers away.",,missing
+npc.frodo.stdmod_17,"No idea who that is, but maybe you'll find something in the Royal Archives...",,missing
+npc.frodo.stdmod_18,"Oh, the Royal Archives are in Rain Castle!",,missing
+npc.frodo.stdmod_19,The king's residence has been renovated lately.,,missing
+npc.frodo.stdmod_20,Many travellers tell funny stories about all the emancipated women in this northern town.,,missing
+npc.frodo.stdmod_21,Here in Thais is the center of Tibia.,,missing
+npc.frodo.stdmod_22,He is a little shy. In his youth he dreamed to become a druid.,,missing
+npc.frodo.stdmod_23,He's able to drink a bottle or two.,,missing
+npc.frodo.stdmod_24,I am trying to hire him for an evening or two.,,missing
+npc.frodo.stdmod_25,"Oh, that old guy! He's a good customer, that's for sure.",,missing
+npc.frodo.stdmod_26,Can you believe that she actually told her guildfellows that alcohol is a bad thing?,,missing
+npc.frodo.stdmod_27,She makes excellent arrows and bows.,,missing
+npc.frodo.stdmod_28,"Many of his customers visit my Hut, too.",,missing
+npc.frodo.stdmod_29,The knights have sometimes parties here after some arena fights.,,missing
+npc.frodo.stdmod_30,Too disciplined to enjoy life.,,missing
+npc.frodo.stdmod_31,I think some time ago a stranger from Fibula with that name stayed here for some nights.,,missing
+npc.frodo.stdmod_32,"I overheard some conversations about his evilness. That's enough to hope, that I never ever meet him.",,missing
+npc.frodo.stdmod_33,"A sorceress, you can find her in their guild sitting befor a book - always!",,missing
+npc.frodo.stdmod_34,Just between you and me: What a babe!,,missing
+npc.frodo.stdmod_35,Marvik seldom leaves his guildhall at all.,,missing
+npc.frodo.stdmod_36,The McRonalds are a nice couple. Donald is a dear friend of mine.,,missing
+npc.frodo.stdmod_37,Muriel has never visited this place.,,missing
+npc.frodo.stdmod_38,I hate him. Each of his visits here ends with a bar brawl.,,missing
+npc.frodo.stdmod_39,He hardly visits my humble tavern.,,missing
+npc.frodo.stdmod_40,"A loud neighbour, I get a lot of complaints about him.",,missing
+npc.frodo.stdmod_41,That fellow is filthy rich. He rented a room upstairs for months in advance and always orders the best beer and wine i serve.,,missing
+npc.frodo.stdmod_42,"I don't know where he gets these fluids. If I could sell them here, the hut would be crowded.",,missing
+npc.hawkhurst.stdmod_1,"Ye' want a passage to the blasted isle, right? {Yes} or {no}?",,missing
+npc.hawkhurst.stdmod_2,We would like to serve you some time.,,missing
+npc.zerbrus.stdmod_1,"Hmm, |PLAYERNAME|. I really don't know if you should go into the wilderness without a shield. You should earn some money by hunting rats under the village first until you can afford at least a wooden shield.",,missing
+npc.zerbrus.stdmod_2,"Zerbrus, at your service.",,missing
+npc.zerbrus.stdmod_3,"I'm the guard of this bridge. I defend Rookgaard against the beasts of the {wilderness} and the {dungeons}, and even of the stinking {sewers}.",,missing
+npc.zerbrus.stdmod_4,My duty is eternal. Time is of no importance.,,missing
+npc.zerbrus.stdmod_5,"Before you fight monsters, deposit your money there. If you die, you won't lose it if it's save in the bank.",,missing
+npc.zerbrus.stdmod_6,Fine.,,missing
+npc.zerbrus.stdmod_7,"I have to stay here, sorry. But I can {heal} you if you are wounded. I have also valuable information about {monsters}.",,missing
+npc.zerbrus.stdmod_8,I'm an expert concerning the wildlife and {monsters} on this island.,,missing
+npc.zerbrus.stdmod_9,"I'm not a gossiper, but if you want to know something about a certain Rookgaardian, ask.",,missing
+npc.zerbrus.stdmod_10,"They're not that dangerous, but don't let yourself get cornered by many of them. They still can hurt.",,missing
+npc.zerbrus.stdmod_11,"There are two types of spiders on this island: normal spiders and poison spiders. As their name says, the latter ones can poison you which will cause a constant loss of your health. Beware of them!",,missing
+npc.zerbrus.stdmod_12,"Once you have upgraded your starter {equipment} a little - maybe leather stuff - and got a better weapon as well as a shield, you should be able to kill trolls.",,missing
+npc.zerbrus.stdmod_13,You need a stronger weapon than the starter club to kill wolves. Maybe a {sabre} or a short {sword} will do.,,missing
+npc.zerbrus.stdmod_14,"The orcs have a hideout under the troll cave, just descend deep. Still, be very careful!",,missing
+npc.zerbrus.stdmod_15,Minotaurs are very strong. You will need a group of people or at least level 6 and good equipment to be able to kill them.,,missing
+npc.zerbrus.stdmod_16,"They are a little tougher than they look like, but they're still good beginner monsters.",,missing
+npc.zerbrus.stdmod_17,The skeletons on this island are usually fairly hidden. They are often found near graves and always underground. Beware of their evil life drain.,,missing
+npc.zerbrus.stdmod_18,"There is a bear cave close to this bridge. Be careful, though, they hit hard!",,missing
+npc.zerbrus.stdmod_19,"Wasp hives exist only behind the north bridge, so ask {Dallheim} for information. I'm glad there are no wasps here. They always make me jump.",,missing
+npc.zerbrus.stdmod_20,"Snakes can poison you, too, but their poison is usually not as dangerous as that of poison spiders. Just be careful and kill them fast.",,missing
+npc.zerbrus.stdmod_21,Premium warriors pay. They gain many advantages this way.,,missing
+npc.zerbrus.stdmod_22,HAIL TO THE KING!,,missing
+npc.zerbrus.stdmod_23,It's north of the temple.,,missing
+npc.zerbrus.stdmod_24,A place of protection. Nothing can harm you there.,,missing
+npc.zerbrus.stdmod_25,I can mark you some dungeons on your map if you ask me about {monsters} suited for your level.,,missing
+npc.zerbrus.stdmod_26,The sewers are crowded with {rats}. They make fine targets for young heroes.,,missing
+npc.zerbrus.stdmod_27,"There are {wolves}, {bears}, {snakes}, {deer}, and {spiders} in the wilderness past this bridge.",,missing
+npc.zerbrus.stdmod_28,I'm a follower of {Banor}.,,missing
+npc.zerbrus.stdmod_29,The heavenly warrior! Read {books} to learn about him.,,missing
+npc.zerbrus.stdmod_30,You will learn about magic soon enough.,,missing
+npc.zerbrus.stdmod_31,"In the world of Tibia, many challenges await the brave adventurer.",,missing
+npc.zerbrus.stdmod_32,There are many books in the {academy}. Theory can be just as important as practice.,,missing
+npc.zerbrus.stdmod_33,It's my duty to protect this village and its {citizens}.,,missing
+npc.zerbrus.stdmod_34,It looks like you have mastered the drill.,,missing
+npc.zerbrus.stdmod_35,"Sorry, I don't trade. Ask the shop owners for a trade instead.",,missing
+npc.zerbrus.stdmod_36,I don't approve of her opening a bar. Those drunken adventurers stumbling over the bridge at nighttime are not especially helpful in improving the situation.,,missing
+npc.zerbrus.stdmod_37,Such a chicken-hearted person.,,missing
+npc.zerbrus.stdmod_38,"He sells {weapons}. His shop is south west of town, close to the {temple}.",,missing
+npc.zerbrus.stdmod_39,He dedicated his life to welcoming newcomers to this island.,,missing
+npc.zerbrus.stdmod_40,She has her own problems.,,missing
+npc.zerbrus.stdmod_41,There's something about this guy I don't like.,,missing
+npc.zerbrus.stdmod_42,She's very attractive. Too bad my duty leaves me no time to date her.,,missing
+npc.zerbrus.stdmod_43,"He guards the temple and can heal you if you are badly injured or poisoned, just like me.",,missing
+npc.zerbrus.stdmod_44,"She's {Obi's} granddaughter and deals with {armors} and {shields}. Her shop is south west of town, close to the temple.",,missing
+npc.zerbrus.stdmod_45,One of these reclusive druids.,,missing
+npc.zerbrus.stdmod_46,Her shop is just north of the bridge. She really has good offers.,,missing
+npc.zerbrus.stdmod_47,"Gentle girl, but a little to esoteric for my taste. However, her {potions} might come in handy.",,missing
+npc.zerbrus.stdmod_48,"You can find the oracle on the top floor of the {academy}, just above {Seymour}. Go there when you are level 8.",,missing
+npc.zerbrus.stdmod_49,The local {bank} clerk.,,missing
+npc.zerbrus.stdmod_50,His job of teaching young heroes is important for the survival of all of us.,,missing
+npc.zerbrus.stdmod_51,He's the local tanner. You could try selling fresh corpses or leather to him.,,missing
+npc.zerbrus.stdmod_52,"He does a fine job, protecting the north bridge. He's been on duty longer than me and knows the north side of Rookgaard well.",,missing
+npc.zerbrus.stdmod_53,At your service.,,missing
+npc.zerbrus.stdmod_54,"He's a farmer. A little more friendly than his cousin {Willie}, he also buys and sells {food}.",,missing
+npc.zerbrus.stdmod_55,"He's quite rude. Also, he buys and sells {food}.",,missing
+npc.zerbrus.stdmod_56,You are poisoned. I will help you.,,missing
+npc.zerbrus.stdmod_57,You are looking really bad. Let me heal your wounds.,,missing
+npc.zerbrus.stdmod_58,You aren't looking really bad. Eat some food to regain strength.,,missing
+npc.pythius_the_rotten.stdmod_1,LIKE MY TREASURE? WANNA PICK SOMETHING OUT OF IT?,,missing
+npc.pythius_the_rotten.stdmod_2,"ALRIGHT. BUT FIRST OF ALL I WANT YOU TO BRING ME SOMETHING IN EXCHANGE. SURPRISE ME....AND IF I LIKE IT, YOU MAY GET WHAT YOU DESERVE.",,missing
+npc.pythius_the_rotten.stdmod_3,HAVE YOU SEEN THESE LEGENDARY ITEMS BACK THERE? WHO COULD REFUSE THE CHANCE OF OBTAINING ONE?!? SO WHAT IS YOUR ANSWER?,,missing
+npc.pythius_the_rotten.stdmod_4,I GRANT YOU ACCESS TO THE DUNGEON IN THE NORTH. YOU'LL FIND SOME OF MY LIVING BROTHERS THERE....BUT.....EVERY TIME YOU WANT TO ENTER YOU HAVE TO GIVE ME SOMETHING PRECIOUS. ALRIGHT?,,missing
+npc.pythius_the_rotten.stdmod_5,AS YOU WISH. WHAT DO YOU HAVE TO OFFER?,,missing
+npc.pythius_the_rotten.stdmod_6,I LIKE THAT AND GRANT YOU ACCESS TO THE DUNGEON IN THE NORTH FOR THE NEXT FEW MINUTES. COME BACK ANYTIME AND BRING ME MORE TREASURES.,,missing
+npc.pythius_the_rotten.stdmod_7,THIS IS NOT WORTH BEING PART OF MY TREASURE! BRING ME SOMETHING ELSE.,,missing
+npc.pythius_the_rotten.stdmod_8,THIS IS NOT WORTH BEING PART OF MY TREASURE! BRING ME SOMETHING ELSE,,missing
+npc.pythius_the_rotten.stdmod_9,TELL ME IF YOU CHANGE YOUR MIND. MY TREASURE THIRSTS FOR GOLD.,,missing
+npc.pythius_the_rotten.stdmod_10,YOU LITTLE MAGGOT. COME BACK TO ME WHEN YOU CAN HANDLE A FIGHT AGAINST MY KIND.,,missing
+npc.pythius_the_rotten.stdmod_11,I HAVE A MISSION FOR YOU BUT YOU NEED TO DIE FIRST AND RETURN AS AN {UNDEAD} CREATURE. COME BACK TO ME WHEN YOU ACHIEVED THIS GOAL.,,missing
+npc.pythius_the_rotten.stdmod_12,EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!,,missing
+npc.pythius_the_rotten.stdmod_13,I HAVE A MISSION FOR YOU BUT YOU NEED TO DIE FIRST AND RETURN AS AN {UNDEAD} CREATURE. COME BACK TO ME WHEN YOU ACHIEVED THIS GOAL.,,missing
+npc.pythius_the_rotten.stdmod_14,BOON AND BANE. I HAVE CHOSEN THIS LIFE VOLUNTARILLY AND I NEVER REGRET IT. MY {TREASURE} IS GROWING BIGGER EACH DAY.,,missing
+npc.captain_max_calassa.stdmod_1,Do you want go back to Liberty Bay?,,missing
+npc.captain_max_calassa.stdmod_2,"Maybe another time, then.",,missing
+npc.captain_max_calassa.stdmod_3,Do you want go back to {Liberty Bay}?,,missing
+npc.captain_max_calassa.stdmod_4,"Welcome on board, noble |PLAYERNAME|. I can bring you back to {Liberty Bay}. Do you want me to do it?",,missing
+npc.captain_max_calassa.stdmod_5,I am the captain of this ship.,,missing
+npc.captain_max_calassa.stdmod_6,I am the captain of this ship.,,missing
 player.status.cleanse,You are no longer {0}. (cleanse charm),Nie jesteś już {0}. (urok oczyszczenia),translated
 player.condition.poisoned,You are poisoned.,Jesteś zatruty.,translated
 player.condition.drowning,You are drowning.,Toniesz.,translated

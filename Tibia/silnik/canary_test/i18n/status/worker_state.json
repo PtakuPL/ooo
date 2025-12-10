@@ -1,23 +1,23 @@
 {
   "schema_version": "2.1",
-  "last_updated": "2025-12-10T04:28:29+01:00",
+  "last_updated": "2025-12-10T04:30:29+01:00",
   "worker": {
     "version": "4.2",
     "status": "running",
     "mode": "migration",
     "cycle": 1,
     "files_per_cycle": 10,
-    "pid": 298614
+    "pid": 328613
   },
   "global_progress": {
-    "total_files_processed": 674,
-    "total_files_excluded": 4888,
-    "total_keys": 52978,
+    "total_files_processed": 691,
+    "total_files_excluded": 4943,
+    "total_keys": 53248,
     "total_languages": 53,
     "total_conflicts": 0
   },
   "categories": {
-    "npc": {"status": "completed", "keys": 12779, "target": 13000},
+    "npc": {"status": "completed", "keys": 13049, "target": 13000},
     "scripts": {"status": "in_progress", "keys": 713, "target": 1000},
     "items": {"status": "completed", "keys": 36972, "target": 40000},
     "monsters": {"status": "in_progress", "keys": 100, "target": 500},
@@ -31,28 +31,28 @@
   },
   "recent_files": [
   {
-    "file": "maris_fenrock.lua",
-    "time": "04:28:29",
+    "file": "legola.lua",
+    "time": "04:30:29",
     "status": "success"
   },
   {
-    "file": "rapanaio_isle_of_evil.lua",
-    "time": "04:28:29",
+    "file": "maritima.lua",
+    "time": "04:30:29",
     "status": "success"
   },
   {
-    "file": "alternative_rock.lua",
-    "time": "04:28:29",
+    "file": "melian.lua",
+    "time": "04:30:29",
     "status": "success"
   },
   {
-    "file": "a_ghostly_woman.lua",
-    "time": "04:28:29",
+    "file": "cipfried.lua",
+    "time": "04:30:29",
     "status": "success"
   },
   {
-    "file": "rafzan.lua",
-    "time": "04:28:29",
+    "file": "azalea.lua",
+    "time": "04:30:29",
     "status": "success"
   }
 ]

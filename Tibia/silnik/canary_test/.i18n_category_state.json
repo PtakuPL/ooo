@@ -3,7 +3,8 @@
     "scripts": 1765409845.7158847,
     "monsters": 1765406149.4102924,
     "raids": 1765406156.5696745,
-    "world": 1765406163.0668073
+    "world": 1765406163.0668073,
+    "items": 1765406087.7135088
   },
   "last_processed": {
     "scripts": {
@@ -23,8 +24,8 @@
       "timestamp": 1765402563.0667286
     },
     "items": {
-      "count": 4,
-      "timestamp": 1765405780.621773
+      "count": 0,
+      "timestamp": 1765405787.7135022
     }
   },
   "consecutive_zeros": {
@@ -32,7 +33,7 @@
     "monsters": 4,
     "raids": 4,
     "world": 4,
-    "items": 0
+    "items": 1
   },
   "total_processed": {
     "items": 11689

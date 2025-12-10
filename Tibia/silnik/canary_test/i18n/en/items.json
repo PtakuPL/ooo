@@ -6363,5 +6363,20 @@
   "item.18450.name": "menhir",
   "item.18451.name": "menhir",
   "item.18452.name": "small menhir",
-  "item.18453.name": "menhir"
+  "item.18453.name": "menhir",
+  "item.18481.name": "RESERVED SPRITE",
+  "item.18620.name": "blood",
+  "item.18629.name": "sandy rock pile",
+  "item.18650.name": "ramp",
+  "item.18651.name": "ramp",
+  "item.18652.name": "ramp",
+  "item.18653.name": "ramp",
+  "item.18654.name": "ramp",
+  "item.18655.name": "ramp",
+  "item.18656.name": "ramp",
+  "item.18657.name": "ramp",
+  "item.18814.name": "branches",
+  "item.18817.name": "enormous tree",
+  "item.18818.name": "tree branch",
+  "item.18875.name": "enormous tree"
 }

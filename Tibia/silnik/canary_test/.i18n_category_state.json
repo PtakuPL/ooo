@@ -15,6 +15,10 @@
     "monsters": {
       "count": 0,
       "timestamp": 1765395758.6926003
+    },
+    "raids": {
+      "count": 10,
+      "timestamp": 1765395772.297322
     }
   }
 }

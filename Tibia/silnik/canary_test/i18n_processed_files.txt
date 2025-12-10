@@ -855,3 +855,8 @@ data-canary/monster/amphibics/salamander.lua
 data-canary/monster/amphibics/infernal_frog.lua
 data-canary/monster/amphibics/orchid_frog.lua
 data-canary/monster/amphibics/azure_frog.lua
+data-otservbr-global/raids/darashia/pirates.xml
+data-otservbr-global/raids/darashia/arachir_the_ancient_one.xml
+data-otservbr-global/raids/darashia/lions.xml
+data-otservbr-global/raids/darashia/minotaurs.xml
+data-otservbr-global/raids/darashia/necropharus.xml

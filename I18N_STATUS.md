@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:54:59 UTC  
+> **Aktualizacja:** 2025-12-11 00:55:29 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -23,10 +23,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **26** | ↑ |
 | ⏭️ Plików wykluczonych | **711** | - |
-| 🔑 Kluczy i18n | **29454** | ↑ |
+| 🔑 Kluczy i18n | **29528** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#19** | - |
+| 🔄 Cykl | **#20** | - |
 
 ---
 
@@ -51,7 +51,7 @@
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
 | 🐘 PHP Backend | 🔄 | 1306/3000 (44%) | 3000 |
-| 📄 HTML Views | ✅ | 795/300 (265%) | 300 |
+| 📄 HTML Views | ✅ | 869/300 (290%) | 300 |
 | 📦 JavaScript | ✅ | 283/300 (94%) | 300 |
 
 ### ⏳ Faza 3: 📱 Instalka/Klient
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    19 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    20 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 PHP                                    │
+│ Kategoria: 🎒 HTML                                   │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: php                                            │
-│ [█████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 1306/3000 kluczy (44%)                                          │
+│ 📊 Ostatnia aktywność: html                                           │
+│ [████████████████████████████████████████████████░░] │
+│ 869/900 kluczy (97%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Total processed: 27935 operacji               │
+│ ⏳ Total processed: 28157 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:54:59                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:55:29                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -99,11 +99,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Operacji wykonanych | **27935** | we wszystkich kategoriach |
+| 📁 Operacji wykonanych | **28157** | we wszystkich kategoriach |
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **29454** | we wszystkich kategoriach |
+| 🔑 Kluczy wyciągniętych | **29528** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#19** | continuous mode |
+| 🔄 Cykli wykonanych | **#20** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,13 +111,13 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `html` +148 kluczy @ 00:55:29
 - ⚡ `php` +0 kluczy @ 00:54:59
 - 🌍 `SK/html.json` +2022 kluczy @ 00:53:41
 - ⚡ `twig` +0 kluczy @ 00:47:28
 - ⚡ `keywordhandler` +0 kluczy @ 00:47:20
 - ⚡ `sendtextmessage` +0 kluczy @ 00:47:13
 - ⚡ `client` +0 kluczy @ 00:46:50
-- ⚡ `html` +0 kluczy @ 00:44:52
 - ⚡ `npclib` +0 kluczy @ 00:39:00
 
 
@@ -282,12 +282,12 @@
 | monsters | 7341 | 9549 | 4 | ⏭️ Skip 41m |
 | npc | 5334 | 0 | 0 | ✅ Active |
 | php | 1306 | 3846 | 2 | ⏭️ Skip 9m |
-| html | 795 | 1145 | 2 | ✅ Active |
-| scripts | 385 | 0 | 4 | ⏭️ Skip 28m |
+| html | 869 | 1367 | 0 | ✅ Active |
+| scripts | 385 | 0 | 4 | ⏭️ Skip 27m |
 | client | 283 | 821 | 4 | ⏭️ Skip 51m |
 | raids | 147 | 351 | 4 | ⏭️ Skip 42m |
 | startup | 23 | 23 | 4 | ⏭️ Skip 43m |
-| libs | 21 | 53 | 4 | ⏭️ Skip 43m |
+| libs | 21 | 53 | 4 | ⏭️ Skip 42m |
 | modules | 16 | 16 | 4 | ⏭️ Skip 43m |
 | cpp | 15 | 0 | 0 | ✅ Active |
 | spells | 15 | 0 | 0 | ✅ Active |
@@ -296,7 +296,7 @@
 | events | 5 | 5 | 4 | ⏭️ Skip 43m |
 | actions | 0 | 0 | 0 | ⏳ Empty |
 | errors | 0 | 0 | 0 | ⏳ Empty |
-| npclib | 0 | 0 | 4 | ⏭️ Skip 44m |
+| npclib | 0 | 0 | 4 | ⏭️ Skip 43m |
 | quests | 0 | 0 | 0 | ⏳ Empty |
 | server | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
@@ -308,21 +308,21 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| scripts | 28m | 4x | Progresywny backoff |
+| scripts | 27m | 4x | Progresywny backoff |
 | monsters | 41m | 4x | Progresywny backoff |
 | raids | 42m | 4x | Progresywny backoff |
 | world | 42m | 4x | Progresywny backoff |
 | items | 42m | 4x | Progresywny backoff |
-| libs | 43m | 4x | Progresywny backoff |
+| libs | 42m | 4x | Progresywny backoff |
 | events | 43m | 4x | Progresywny backoff |
 | chatchannels | 43m | 4x | Progresywny backoff |
 | modules | 43m | 4x | Progresywny backoff |
 | startup | 43m | 4x | Progresywny backoff |
-| npclib | 44m | 4x | Progresywny backoff |
+| npclib | 43m | 4x | Progresywny backoff |
 | client | 51m | 4x | Progresywny backoff |
-| sendtextmessage | 52m | 4x | Progresywny backoff |
-| keywordhandler | 52m | 4x | Progresywny backoff |
-| twig | 52m | 4x | Progresywny backoff |
+| sendtextmessage | 51m | 4x | Progresywny backoff |
+| keywordhandler | 51m | 4x | Progresywny backoff |
+| twig | 51m | 4x | Progresywny backoff |
 | php | 9m | 2x | Progresywny backoff |
 
 ---
@@ -331,7 +331,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #19 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #20 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -374,7 +374,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:54:59  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:55:29  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

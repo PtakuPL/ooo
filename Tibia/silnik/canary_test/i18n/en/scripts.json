@@ -57,5 +57,10 @@
   "scripts.movements_lost_exiles.msg_1": "Your escort has end.",
   "scripts.actions_using_crystals.msg_1": "This crystal geode is shaking from a battle nearby.",
   "scripts.actions_using_crystals.msg_2": "This crystal geode is shaking from a battle nearby.",
-  "scripts.actions_using_crystals.msg_3": "This crystal geode is shaking from a battle nearby."
+  "scripts.actions_using_crystals.msg_3": "This crystal geode is shaking from a battle nearby.",
+  "scripts.actions_lever_third.msg_1": "Something clicked at same time a booming sound almost deafens you.",
+  "scripts.actions_lever_first.msg_1": "Something clicked at same time a booming sound almost deafens you.",
+  "scripts.actions_lever_second.msg_1": "Something clicked at same time a booming sound almost deafens you.",
+  "scripts.movements_quaidden.msg_1": "With the power of the dark Custodian still holding away, the fog is keeping you from entering Quaid's den.",
+  "scripts.movements_cobra_mini_bosses.msg_1": "You pass the fire without taking any damage. It's now or never..."
 }

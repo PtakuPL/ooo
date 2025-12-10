@@ -799,3 +799,8 @@ data-otservbr-global/scripts/quests/dangerous_depth/actions_wooden_trash.lua
 data-otservbr-global/scripts/quests/dangerous_depth/movements_gnomes_ordnance_end.lua
 data-otservbr-global/scripts/quests/dangerous_depth/movements_lost_exiles.lua
 data-otservbr-global/scripts/quests/dangerous_depth/actions_using_crystals.lua
+data-otservbr-global/scripts/quests/ferumbras_ascension/actions_lever_third.lua
+data-otservbr-global/scripts/quests/ferumbras_ascension/actions_lever_first.lua
+data-otservbr-global/scripts/quests/ferumbras_ascension/actions_lever_second.lua
+data-otservbr-global/scripts/quests/grave_danger_quest/movements_quaidDen.lua
+data-otservbr-global/scripts/quests/grave_danger_quest/movements_cobra_mini_bosses.lua

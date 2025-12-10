@@ -278,6 +278,8 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `garamond` - ukończono 2025-12-10 11:25
+- ✅ `eremo` - ukończono 2025-12-10 11:25
 - ✅ `elathriel` - ukończono 2025-12-10 11:25
 - ✅ `dalbrect` - ukończono 2025-12-10 11:25
 - ✅ `coltrayne` - ukończono 2025-12-10 11:25

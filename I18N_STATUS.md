@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 11:25:23 UTC  
+> **Aktualizacja:** 2025-12-10 11:25:37 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,9 +21,9 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **258** | ↑ |
+| 📁 Plików przetworzonych | **260** | ↑ |
 | ⏭️ Plików wykluczonych | **729** | - |
-| 🔑 Kluczy i18n | **3658** | ↑ |
+| 🔑 Kluczy i18n | **3695** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
 | 🔄 Cykl | **#1** | - |
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 3658/15000 (24%) | 15000 |
+| 🧙 NPC Dialogs | 🔄 | 3695/15000 (25%) | 15000 |
 | 📜 Lua Scripts | ⏳ | 0/1000 (0%) | 1000 |
 | 🎒 Items Database | ⏳ | 0/40000 (0%) | 40000 |
 | 👹 Monsters | ⏳ | 0/500 (0%) | 500 |
@@ -84,11 +84,11 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Postęp migracji NPC:                                        │
 │ [████████████████████████████████████████████░░░░░░] │
-│ 265/297 plików (89%)                                          │
+│ 267/297 plików (90%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Pozostało: 32 plików NPC                              │
-│ 🕐 ETA: ~5min 20s (przy 10s/plik)                            │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 11:25:23                 │
+│ ⏳ Pozostało: 30 plików NPC                              │
+│ 🕐 ETA: ~5min 0s (przy 10s/plik)                            │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 11:25:37                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,23 +98,23 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przetworzonych | **258** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **265**/297 | 89% ukończone |
-| 🔑 Kluczy wyciągniętych | **3658** | we wszystkich kategoriach |
+| 📁 Plików przetworzonych | **260** | z i18n_file_status.json |
+| ✅ NPC zmigrowanych | **267**/297 | 90% ukończone |
+| 🔑 Kluczy wyciągniętych | **3695** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
 | 🔄 Cykli wykonanych | **#1** | continuous mode |
-| ⚠️ Plików do migracji | **32** | NPC z StdModule.say |
+| ⚠️ Plików do migracji | **30** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
+- ✅ `garamond` - ukończono 2025-12-10 11:25
+- ✅ `eremo` - ukończono 2025-12-10 11:25
 - ✅ `elathriel` - ukończono 2025-12-10 11:25
 - ✅ `dalbrect` - ukończono 2025-12-10 11:25
 - ✅ `coltrayne` - ukończono 2025-12-10 11:25
-- ✅ `captain_dreadnought` - ukończono 2025-12-10 11:22
-- ✅ `zumtah` - ukończono 2025-12-10 07:21
 
 ---
 
@@ -169,17 +169,17 @@
 </details>
 
 <details>
-<summary>🧙 5. NPC - 🔄 (24%)</summary>
+<summary>🧙 5. NPC - 🔄 (25%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 3658 |
+| 🔑 Kluczy | 3695 |
 | 🎯 Cel | 15000 |
-| 📊 Postęp | 24% |
+| 📊 Postęp | 25% |
 | 📁 Plik | i18n/en/npc.json |
 | 📁 Plików NPC | 1026 |
-| ✅ Zmigrowanych | 265 |
-| 🔄 Do migracji | 32 |
+| ✅ Zmigrowanych | 267 |
+| 🔄 Do migracji | 30 |
 
 </details>
 
@@ -282,7 +282,7 @@
 
 ```
 [⏳] Items (0)      ░░░░░░░░░░░░░░░░░░░░  0%
-[🔄] NPC (3658)            ████░░░░░░░░░░░░░░░░  24%
+[🔄] NPC (3695)            ████░░░░░░░░░░░░░░░░  25%
 [⏳] Scripts (0)      ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Monsters (0)    ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Spells (0)       ░░░░░░░░░░░░░░░░░░░░  0%
@@ -294,13 +294,15 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:25:23  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:25:37  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `garamond` - ukończono 2025-12-10 11:25
+- ✅ `eremo` - ukończono 2025-12-10 11:25
 - ✅ `elathriel` - ukończono 2025-12-10 11:25
 - ✅ `dalbrect` - ukończono 2025-12-10 11:25
 - ✅ `coltrayne` - ukończono 2025-12-10 11:25
@@ -309,8 +311,6 @@
 - ✅ `zora` - ukończono 2025-12-10 07:21
 - ✅ `ziyad` - ukończono 2025-12-10 07:21
 - ✅ `zerbrus` - ukończono 2025-12-10 07:21
-- ✅ `zedrulon_the_fallen` - ukończono 2025-12-10 07:20
-- ✅ `zarifan` - ukończono 2025-12-10 07:20
 
 ---
 

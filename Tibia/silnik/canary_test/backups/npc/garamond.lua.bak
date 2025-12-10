@@ -261,72 +261,84 @@ keywordHandler:addSpellKeyword({ "healfriend" }, {
 
 keywordHandler:addKeyword({ "healing spells" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.garamond.stdmod_1",
+	text = "In this category I have '{Lighthealing}', '{Healfriend}', and '{Curepoison}'.",
 })
 keywordHandler:addKeyword({ "support spells" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.garamond.stdmod_2",
+	text = "In this category I have '{Findperson}', '{Magicrope}', '{Levitate}', '{Light}', \z
+		'{Greatlight}', '{Haste}', '{Poisonfield}', '{Firefield}', '{Lightmagicmissile}' and '{Energyfield}'.",
 })
 keywordHandler:addKeyword({ "attack spells" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.garamond.stdmod_3",
+	text = "In this category I have '{Deathstrike}', '{Firewave}', '{Apprenticesstrike}', '{Energystrike}', \z
+		'{Terrastrike}', '{Flamestrike}', '{Icestrike}', '{Physicalstrike}', '{Icewave}'.",
 })
 keywordHandler:addKeyword({ "spells" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.garamond.stdmod_4",
+	text = "I can teach you {healing spells}, {support spells} and {attack spells}. \z
+		What kind of spell do you wish to learn?",
 })
 
 keywordHandler:addKeyword({ "name" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.garamond.stdmod_5",
+	text = "I am Garamond Starstream.",
 })
 keywordHandler:addKeyword({ "job" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.garamond.stdmod_6",
+	text = "Did you not listen? I am the teacher of druid and sorcerer spells for level 8 to 18. \z
+		I teach young adventurers spells they can use once they have the proper vocation - druid or sorcerer.",
 })
 keywordHandler:addKeyword({ "rookgaard" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.garamond.stdmod_7",
+	text = "I have an old friend there. Haven't heard from him in a while.",
 })
 keywordHandler:addKeyword({ "dawnport" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.garamond.stdmod_8",
+	text = "Oh, it's not too bad here, believe me. At least I always get young and enthusiast disciples! \z
+		Though I must confess I miss the vastness of the Tibian plains. <sighs>",
 })
 keywordHandler:addKeyword({ "inigo" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.garamond.stdmod_9",
+	text = "A kind old hunter. He loves to see young life around, taking on the ways and lays of the land. \z
+		If you have any question, ask Inigo for help.",
 })
 keywordHandler:addKeyword({ "coltrayne" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.garamond.stdmod_10",
+	text = "Roughened and toughened by life's tragedies. A good man, but somber.",
 })
 keywordHandler:addKeyword({ "garamond" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.garamond.stdmod_11",
+	text = "Yes, child. If you wish to learn a spell, tell me.",
 })
 keywordHandler:addKeyword({ "hamish" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.garamond.stdmod_12",
+	text = "A very headstrong young man, though I appreciate his devotion to the craft of potion-making. \z
+		No respect for senior authority or age at all! Except maybe for a little soft spot for Mr Morris.",
 })
 keywordHandler:addKeyword({ "mr morris" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.garamond.stdmod_13",
+	text = "A strange young man. He seems driven, to my mind. By what force, I do not know. \z
+		I take it the world needs adventurers such as him.",
 })
 keywordHandler:addKeyword({ "plunderpurse" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.garamond.stdmod_14",
+	text = "Redeeming one's soul by becoming a clerk? Not very likely. Once a pirate, always a pirate. \z
+		But he's a charming old rogue.",
 })
 keywordHandler:addKeyword({ "richard" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.garamond.stdmod_15",
+	text = "Not a half bad cook, truly. Must have been that squirrel diet, it seems to have lead him to \z
+		discover a new cuisine - everything to forget the bad taste of squirrels, he said.",
 })
 keywordHandler:addKeyword({ "ser tybald" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.garamond.stdmod_16",
+	text = "He is proficient in the martial arts. A very skilled teacher of spells for knights and paladins. \z
+		If that is your vocation, you should talk to Ser Tybald.",
 })
 keywordHandler:addKeyword({ "wentworth" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.garamond.stdmod_17",
+	text = "Ah, yes. Travelled with Plunderpurse a lot as I recall. Captain Plunderpurse, then. \z
+			Got his head full of numbers and statistics, that boy.",
 })
 
 local function creatureSayCallback(npc, creature, type, message)

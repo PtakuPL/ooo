@@ -120,11 +120,14 @@ if needs_migration == 0:
 
 #### Typy funkcji tekstowych w NPC:
 
-| Typ | Plików | Z i18nKey | Do migracji | Priorytet |
-|-----|--------|-----------|-------------|-----------|
-| `StdModule.say(text=)` | 297 | 297 ✅ | 0 | - |
-| `npcHandler:say("text")` | 133 | 42 | **91** | 🔴 WYSOKI |
-| `player:sendTextMessage()` | 312 | 0 | **312** | 🔴 WYSOKI |
+| Typ | Plików | Z i18nKey | Do migracji | Priorytet | Status |
+|-----|--------|-----------|-------------|-----------|--------|
+| `StdModule.say(text=)` | 297 | 297 ✅ | 0 | - | ✅ DONE |
+| `npcHandler:say("text")` | 133 | ~90 | **~43** | 🔴 WYSOKI | 🔄 v2.1 |
+| `npcHandler:say({array})` | ~50 | 0 | **~50** | 🟡 ŚREDNI | ❌ TODO |
+| `player:sendTextMessage()` | 312 | 0 | **312** | 🔴 WYSOKI | ❌ TODO |
+| `voices = {{ text = }}` | 131 | 0 | **131** | 🟡 ŚREDNI | ❌ TODO |
+| `keywordHandler:add*Keyword` | 21 | 0 | **21** | 🟡 ŚREDNI | ❌ TODO |
 
 ### 🌐 2. HTML_COPY (Strona WWW - AAC)
 

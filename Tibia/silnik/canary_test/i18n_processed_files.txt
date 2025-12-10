@@ -1140,3 +1140,13 @@ TWIG:html_copy/system/templates/buttons.cancel.html.twig
 TWIG:html_copy/system/templates/account.logout.html.twig
 TWIG:html_copy/system/templates/account.change-password.html.twig
 TWIG:html_copy/system/templates/guilds.change_description.html.twig
+TWIG:html_copy/system/templates/lastkills.html.twig
+TWIG:html_copy/system/templates/guilds.delete_guild.html.twig
+TWIG:html_copy/system/templates/account.generate_recovery_key.html.twig
+TWIG:html_copy/system/templates/commands.html.twig
+TWIG:html_copy/admin/pages/modules/templates/created.html.twig
+TWIG:html_copy/admin/pages/modules/templates/points.html.twig
+TWIG:html_copy/admin/pages/modules/templates/balance.html.twig
+TWIG:html_copy/admin/pages/modules/templates/lastlogin.html.twig
+TWIG:html_copy/admin/pages/modules/templates/coins.html.twig
+TWIG:html_copy/templates/tibiacom/buttons.change_email.html.twig

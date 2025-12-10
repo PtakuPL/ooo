@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:39:14 UTC  
+> **Aktualizacja:** 2025-12-11 00:39:20 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **29113** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#99** | - |
+| 🔄 Cykl | **#100** | - |
 
 ---
 
@@ -65,11 +65,11 @@
 
 | Język | Status | Kluczy | Etap |
 |-------|--------|--------|------|
-| 🇩🇪 Niemiecki | 🔄 Sync... | 435665 | [EN] prefix |
-| 🇵🇱 Polski | 📊 205426 kluczy | 205426 | [EN] prefix |
+| 🇩🇪 Niemiecki | 📊 435665 kluczy | 435665 | [EN] prefix |
+| 🇵🇱 Polski | 🔄 Sync... | 229898 | [EN] prefix |
 | 🇪🇸 Hiszpański | 📊 205426 kluczy | 205426 | [EN] prefix |
 | 🇫🇷 Francuski | 📊 109 kluczy | 109 | [EN] prefix |
-| 🌐 Pozostałe (0/53) | 🔄 | 1052052 | Aktualnie: DE |
+| 🌐 Pozostałe (0/53) | 🔄 | 1076524 | Aktualnie: PL |
 
 ---
 
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    99 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   100 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🌍 TRANSLATION_SYNC (Etap 1)              │
-│ Kategoria: 🌍 DE/startup.json                        │
+│ Kategoria: 🌍 PL/client.json                         │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: DE/startup.json                                │
+│ 📊 Ostatnia aktywność: PL/client.json                                 │
 │ [██████████████████████████████████████████████████] │
-│ 435665/29113 kluczy (1496%)                                          │
+│ 229898/29113 kluczy (790%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 26912 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:39:14                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:39:20                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -103,7 +103,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29113** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#99** | continuous mode |
+| 🔄 Cykli wykonanych | **#100** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,7 +111,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🌍 `DE/startup.json` +435665 kluczy @ 00:39:13
+- 🌍 `PL/client.json` +229898 kluczy @ 00:39:20
 - ⚡ `npclib` +0 kluczy @ 00:39:00
 - ⚡ `startup` +0 kluczy @ 00:38:54
 - ⚡ `modules` +0 kluczy @ 00:38:46
@@ -324,7 +324,7 @@
 | client | 7m | 2x | Progresywny backoff |
 | sendtextmessage | 7m | 2x | Progresywny backoff |
 | keywordhandler | 7m | 2x | Progresywny backoff |
-| twig | 8m | 2x | Progresywny backoff |
+| twig | 7m | 2x | Progresywny backoff |
 
 ---
 
@@ -332,7 +332,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #99 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #100 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -341,8 +341,8 @@
 
 | Język | Kluczy | Status |
 |-------|--------|--------|
-| DE | 435,665 | 🔄 |
-| PL | 205,426 | ⏳ |
+| DE | 435,665 | ⏳ |
+| PL | 229,898 | 🔄 |
 | ES | 205,426 | ⏳ |
 | PT | 205,426 | ⏳ |
 | FR | 109 | ⏳ |
@@ -352,7 +352,7 @@
 | SK | 0 | ⏳ |
 | HU | 0 | ⏳ |
 
-> **Aktualnie:** DE / startup.json  
+> **Aktualnie:** PL / client.json  
 > **Ukończone języki:** 0/53  
 > **Prefix:** `[EN] ` (klucze do przetłumaczenia)
 
@@ -375,7 +375,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:39:14  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:39:20  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

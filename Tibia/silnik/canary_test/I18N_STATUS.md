@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 07:21:19 UTC  
+> **Aktualizacja:** 2025-12-10 07:21:42 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -80,7 +80,7 @@
 | Operacja | 🎮 Canary Server - NPC |
 | Plik | Cykl #1 |
 | Szczegóły | NPC:3594 Scripts:0 Items:0 |
-| Ostatnia aktualizacja | 2025-12-10 07:21:19 |
+| Ostatnia aktualizacja | 2025-12-10 07:21:42 |
 
 ---
 
@@ -271,18 +271,18 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 07:21:19  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 07:21:42  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `captain_dreadnought` - ukończono 2025-12-10 07:21
 - ✅ `zumtah` - ukończono 2025-12-10 07:21
 - ✅ `zora` - ukończono 2025-12-10 07:21
 - ✅ `ziyad` - ukończono 2025-12-10 07:21
 - ✅ `zerbrus` - ukończono 2025-12-10 07:21
-- ✅ `captain_dreadnought` - ukończono 2025-12-10 07:21
 - ✅ `zedrulon_the_fallen` - ukończono 2025-12-10 07:20
 - ✅ `zarifan` - ukończono 2025-12-10 07:20
 - ✅ `yoem` - ukończono 2025-12-10 07:20

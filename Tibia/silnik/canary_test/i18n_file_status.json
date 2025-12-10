@@ -4211,7 +4211,7 @@
           "errors": [],
           "warnings": [
             "Brak i18nKey w pliku Lua",
-            "Znaleziono 274 duplikat\u00f3w warto\u015bci"
+            "Znaleziono 313 duplikat\u00f3w warto\u015bci"
           ],
           "valid_langs": [
             "zh_TW",
@@ -4276,7 +4276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T07:21:06.650881"
+      "completed_at": "2025-12-10T07:21:39.195366"
     },
     "data-otservbr-global/npc/captain_fearless.lua": {
       "stages": {

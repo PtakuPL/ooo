@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 21:44:12 UTC  
+> **Aktualizacja:** 2025-12-10 21:45:03 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -23,10 +23,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **26** | ↑ |
 | ⏭️ Plików wykluczonych | **711** | - |
-| 🔑 Kluczy i18n | **13889** | ↑ |
+| 🔑 Kluczy i18n | **13904** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#26** | - |
+| 🔄 Cykl | **#1** | - |
 
 ---
 
@@ -41,7 +41,7 @@
 |-----------|--------|--------|-----|
 | 🧙 NPC Dialogs | 🔄 | 5270/15000 (35%) | 15000 |
 | 📜 Lua Scripts | 🔄 | 385/1000 (38%) | 1000 |
-| 🎒 Items Database | 🔄 | 3950/40000 (10%) | 40000 |
+| 🎒 Items Database | 🔄 | 3965/40000 (10%) | 40000 |
 | 👹 Monsters | 🔄 | 4158/5000 (83%) | 5000 |
 | ✨ Spells & Magic | 🔄 | 15/200 (8%) | 200 |
 | ⚙️ Server C++ | ⏳ | 0/300 (0%) | 300 |
@@ -76,7 +76,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    26 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (8 etapów)                     │
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 21:44:12                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 21:45:03                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -100,9 +100,9 @@
 |---------|---------|-----------|
 | 📁 Plików przetworzonych | **26** | z i18n_file_status.json |
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **13889** | we wszystkich kategoriach |
+| 🔑 Kluczy wyciągniętych | **13904** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
-| 🔄 Cykli wykonanych | **#26** | continuous mode |
+| 🔄 Cykli wykonanych | **#1** | continuous mode |
 | ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -137,7 +137,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 3950 |
+| 🔑 Kluczy | 3965 |
 | 🎯 Cel | 40000 |
 | 📊 Postęp | 10% |
 | 📁 Plik | i18n/en/items.json |
@@ -274,11 +274,11 @@
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
 | npc | 5270 | 0 | 0 | ✅ Active |
-| monsters | 4158 | 0 | 3 | ⏭️ Skip 27m |
-| items | 3950 | 1890 | 0 | ✅ Active |
-| scripts | 385 | 0 | 4 | ⏭️ Skip 52m |
+| monsters | 4158 | 0 | 3 | ⏭️ Skip 26m |
+| items | 3965 | 1905 | 0 | ✅ Active |
+| scripts | 385 | 0 | 4 | ⏭️ Skip 51m |
 | html | 39 | 0 | 0 | ✅ Active |
-| raids | 30 | 0 | 3 | ⏭️ Skip 27m |
+| raids | 30 | 0 | 3 | ⏭️ Skip 26m |
 | cpp | 15 | 0 | 0 | ✅ Active |
 | spells | 15 | 0 | 0 | ✅ Active |
 | messages | 11 | 0 | 0 | ✅ Active |
@@ -290,7 +290,7 @@
 | quests | 0 | 0 | 0 | ⏳ Empty |
 | server | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
-| world | 0 | 0 | 3 | ⏭️ Skip 27m |
+| world | 0 | 0 | 3 | ⏭️ Skip 26m |
 
 ---
 
@@ -298,10 +298,10 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| scripts | 52m | 4x | Progresywny backoff |
-| monsters | 27m | 3x | Progresywny backoff |
-| raids | 27m | 3x | Progresywny backoff |
-| world | 27m | 3x | Progresywny backoff |
+| scripts | 51m | 4x | Progresywny backoff |
+| monsters | 26m | 3x | Progresywny backoff |
+| raids | 26m | 3x | Progresywny backoff |
+| world | 26m | 3x | Progresywny backoff |
 
 ---
 
@@ -316,16 +316,16 @@
 
 ## 🗺️ Roadmap
 
-```
-[{status_icon(items_keys, TARGETS["items"])}] Items ({items_keys})      {progress_bar(items_keys, TARGETS["items"])}  {round(items_keys/TARGETS["items"]*100) if TARGETS["items"] else 0}%
-[{status_icon(npc_keys, TARGETS["npc"])}] NPC ({npc_keys})            {progress_bar(npc_keys, TARGETS["npc"])}  {round(npc_keys/TARGETS["npc"]*100) if TARGETS["npc"] else 0}%
-[{status_icon(scripts_keys, TARGETS["scripts"])}] Scripts ({scripts_keys})      {progress_bar(scripts_keys, TARGETS["scripts"])}  {round(scripts_keys/TARGETS["scripts"]*100) if TARGETS["scripts"] else 0}%
-[{status_icon(monsters_keys, TARGETS["monsters"])}] Monsters ({monsters_keys})    {progress_bar(monsters_keys, TARGETS["monsters"])}  {round(monsters_keys/TARGETS["monsters"]*100) if TARGETS["monsters"] else 0}%
-[{status_icon(spells_keys, TARGETS["spells"])}] Spells ({spells_keys})       {progress_bar(spells_keys, TARGETS["spells"])}  {round(spells_keys/TARGETS["spells"]*100) if TARGETS["spells"] else 0}%
-[{status_icon(server_keys, TARGETS["server"])}] Server ({server_keys})       {progress_bar(server_keys, TARGETS["server"])}  {round(server_keys/TARGETS["server"]*100) if TARGETS["server"] else 0}%
-[{status_icon(system_keys, TARGETS["system"])}] System ({system_keys})       {progress_bar(system_keys, TARGETS["system"])}  {round(system_keys/TARGETS["system"]*100) if TARGETS["system"] else 0}%
-[{status_icon(ui_keys, TARGETS["ui"])}] UI ({ui_keys})             {progress_bar(ui_keys, TARGETS["ui"])}  {round(ui_keys/TARGETS["ui"]*100) if TARGETS["ui"] else 0}%
-```
+| Kategoria | Kluczy | Postęp | Cel | Status |
+|-----------|--------|--------|-----|--------|
+| 🎒 Items | {items_keys} | {progress_bar(items_keys, TARGETS["items"])} | {TARGETS["items"]} | {status_icon(items_keys, TARGETS["items"])} {round(items_keys/TARGETS["items"]*100) if TARGETS["items"] else 0}% |
+| 🧙 NPC | {npc_keys} | {progress_bar(npc_keys, TARGETS["npc"])} | {TARGETS["npc"]} | {status_icon(npc_keys, TARGETS["npc"])} {round(npc_keys/TARGETS["npc"]*100) if TARGETS["npc"] else 0}% |
+| 📜 Scripts | {scripts_keys} | {progress_bar(scripts_keys, TARGETS["scripts"])} | {TARGETS["scripts"]} | {status_icon(scripts_keys, TARGETS["scripts"])} {round(scripts_keys/TARGETS["scripts"]*100) if TARGETS["scripts"] else 0}% |
+| 👹 Monsters | {monsters_keys} | {progress_bar(monsters_keys, TARGETS["monsters"])} | {TARGETS["monsters"]} | {status_icon(monsters_keys, TARGETS["monsters"])} {round(monsters_keys/TARGETS["monsters"]*100) if TARGETS["monsters"] else 0}% |
+| ✨ Spells | {spells_keys} | {progress_bar(spells_keys, TARGETS["spells"])} | {TARGETS["spells"]} | {status_icon(spells_keys, TARGETS["spells"])} {round(spells_keys/TARGETS["spells"]*100) if TARGETS["spells"] else 0}% |
+| ⚙️ Server | {server_keys} | {progress_bar(server_keys, TARGETS["server"])} | {TARGETS["server"]} | {status_icon(server_keys, TARGETS["server"])} {round(server_keys/TARGETS["server"]*100) if TARGETS["server"] else 0}% |
+| 🖥️ System | {system_keys} | {progress_bar(system_keys, TARGETS["system"])} | {TARGETS["system"]} | {status_icon(system_keys, TARGETS["system"])} {round(system_keys/TARGETS["system"]*100) if TARGETS["system"] else 0}% |
+| 🎨 UI | {ui_keys} | {progress_bar(ui_keys, TARGETS["ui"])} | {TARGETS["ui"]} | {status_icon(ui_keys, TARGETS["ui"])} {round(ui_keys/TARGETS["ui"]*100) if TARGETS["ui"] else 0}% |
 
 ---
 

@@ -76,6 +76,10 @@
     "sendtextmessage": {
       "count": 0,
       "timestamp": 1765405935.574355
+    },
+    "keywordhandler": {
+      "count": 18,
+      "timestamp": 1765405943.5609634
     }
   },
   "consecutive_zeros": {
@@ -93,7 +97,8 @@
     "php": 1,
     "html": 1,
     "client": 1,
-    "sendtextmessage": 1
+    "sendtextmessage": 1,
+    "keywordhandler": 0
   },
   "total_processed": {
     "items": 11689,
@@ -104,7 +109,8 @@
     "startup": 11,
     "php": 24,
     "html": 14,
-    "client": 14
+    "client": 14,
+    "keywordhandler": 18
   },
   "translation_sync": {
     "current_lang": "de",

@@ -1053,3 +1053,8 @@ testyy/modules/game_features/features.lua
 testyy/modules/game_shortcuts/shortcuts.lua
 testyy/modules/game_shortcuts/shortcuts.otui
 testyy/modules/startup/startup.lua
+KWH:data-otservbr-global/npc/budrik.lua
+KWH:data-otservbr-global/npc/falonzo.lua
+KWH:data-otservbr-global/npc/gnomus.lua
+KWH:data-otservbr-global/npc/alkestios.lua
+KWH:data-otservbr-global/npc/iskan.lua

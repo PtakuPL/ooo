@@ -860,3 +860,5 @@ data-otservbr-global/raids/darashia/arachir_the_ancient_one.xml
 data-otservbr-global/raids/darashia/lions.xml
 data-otservbr-global/raids/darashia/minotaurs.xml
 data-otservbr-global/raids/darashia/necropharus.xml
+data-canary/raids/example.xml
+data-canary/raids/raids.xml

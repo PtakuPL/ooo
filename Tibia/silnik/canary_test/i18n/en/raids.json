@@ -8,5 +8,8 @@
   "raid.minotaurs.name": "Minotaurs",
   "raid.minotaurs.announce": "1000",
   "raid.necropharus.name": "Necropharus",
-  "raid.necropharus.announce": "1000"
+  "raid.necropharus.announce": "1000",
+  "raid.example.name": "Example",
+  "raid.example.announce": "1000",
+  "raid.raids.name": "Raids"
 }

@@ -57,8 +57,13 @@ function GreetModule.greet(npc, player, message, keywords, parameters)
 		return true
 	end
 
-	local parseInfo = { [TAG_PLAYERNAME] = Player(player):getName() }
-	parameters.npcHandler:say(parameters.npcHandler:parseMessage(parameters.text, parseInfo), npc, player)
+	-- i18n support: Use localized message if i18nKey is provided
+	if parameters.i18nKey and NPC_LIB and NPC_LIB.i18n and NPC_LIB.i18n.npcSay then
+		NPC_LIB.i18n.npcSay(parameters.npcHandler, npc, player, parameters.i18nKey, { Player(player):getName() })
+	else
+		local parseInfo = { [TAG_PLAYERNAME] = Player(player):getName() }
+		parameters.npcHandler:say(parameters.npcHandler:parseMessage(parameters.text, parseInfo), npc, player)
+	end
 	parameters.npcHandler:setInteraction(npc, player)
 	return true
 end
@@ -68,8 +73,13 @@ function GreetModule.farewell(npc, player, message, keywords, parameters)
 		return false
 	end
 
-	local parseInfo = { [TAG_PLAYERNAME] = Player(player):getName() }
-	parameters.npcHandler:say(parameters.npcHandler:parseMessage(parameters.text, parseInfo), npc, player)
+	-- i18n support: Use localized message if i18nKey is provided
+	if parameters.i18nKey and NPC_LIB and NPC_LIB.i18n and NPC_LIB.i18n.npcSay then
+		NPC_LIB.i18n.npcSay(parameters.npcHandler, npc, player, parameters.i18nKey, { Player(player):getName() })
+	else
+		local parseInfo = { [TAG_PLAYERNAME] = Player(player):getName() }
+		parameters.npcHandler:say(parameters.npcHandler:parseMessage(parameters.text, parseInfo), npc, player)
+	end
 	parameters.npcHandler:resetNpc(player)
 	parameters.npcHandler:removeInteraction(npc, player)
 	return true

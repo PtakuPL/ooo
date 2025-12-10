@@ -163,6 +163,34 @@ try:
 except:
     pass
 
+# Pobierz aktualną kategorię (ostatnio przetwarzaną)
+current_category = "items"  # default
+last_activity_time = 0
+for cat, info in worker_state.get("last_processed", {}).items():
+    if isinstance(info, dict) and info.get("timestamp", 0) > last_activity_time:
+        last_activity_time = info.get("timestamp", 0)
+        current_category = cat
+
+# Pobierz ostatnie operacje ze wszystkich kategorii
+recent_operations = []
+for cat, info in worker_state.get("last_processed", {}).items():
+    if isinstance(info, dict):
+        ts = info.get("timestamp", 0)
+        count = info.get("count", 0)
+        if ts > 0:
+            from datetime import datetime
+            time_str = datetime.fromtimestamp(ts).strftime("%H:%M:%S")
+            recent_operations.append({
+                "category": cat,
+                "count": count,
+                "timestamp": ts,
+                "time_str": time_str
+            })
+recent_operations.sort(key=lambda x: -x["timestamp"])
+
+# Oblicz total processed ze wszystkich kategorii
+total_files_processed = sum(worker_state.get("total_processed", {}).values())
+
 # Wszystkie kategorie (stare + nowe) - dla kompatybilności
 game_keys = count_keys("game.json")
 items_keys = count_keys("items.json")

@@ -523,20 +523,20 @@ except:
 
 # Znajdź lub dodaj sekcję NPC
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M')
-new_entry = f"- ✅ `{safe_name}` - ukończono {timestamp}\n"
+new_entry = "- ✅ \`" + safe_name + "\` - ukończono " + timestamp + "\\n"
 
 if "## Ostatnio zmigrowane NPC" not in content:
-    content += "\n## Ostatnio zmigrowane NPC\n\n"
+    content += "\\n## Ostatnio zmigrowane NPC\\n\\n"
 
 if safe_name not in content:
     # Dodaj po nagłówku
     content = content.replace(
-        "## Ostatnio zmigrowane NPC\n\n",
-        f"## Ostatnio zmigrowane NPC\n\n{new_entry}"
+        "## Ostatnio zmigrowane NPC\\n\\n",
+        "## Ostatnio zmigrowane NPC\\n\\n" + new_entry
     )
     with open(status_md, "w") as f:
         f.write(content)
-    print(f"Zaktualizowano {status_md}")
+    print("Zaktualizowano " + status_md)
 
 print(f"SYNC OK - plik oznaczony jako completed")
 PYEOF
@@ -592,30 +592,198 @@ case "${1:-}" in
         process_file "$2"
         ;;
     --status)
-        echo "Status plików:"
+        python3 << 'STATUSEOF'
+import json
+import os
+from datetime import datetime
+
+STATUS_FILE = "i18n_file_status.json"
+I18N_DIR = "i18n"
+
+try:
+    with open(STATUS_FILE) as f:
+        data = json.load(f)
+except:
+    data = {"files": {}}
+
+files = data.get("files", {})
+global_stats = data.get("global_stats", {})
+
+# Kolory ANSI
+GREEN = "\033[0;32m"
+YELLOW = "\033[1;33m"
+BLUE = "\033[0;34m"
+RED = "\033[0;31m"
+CYAN = "\033[0;36m"
+NC = "\033[0m"
+
+print(f"\n{CYAN}╔══════════════════════════════════════════════════════════════════╗{NC}")
+print(f"{CYAN}║          I18N WORKER - STATUS DASHBOARD                          ║{NC}")
+print(f"{CYAN}╚══════════════════════════════════════════════════════════════════╝{NC}")
+
+# Zlicz pliki po statusie
+completed = [f for f, info in files.items() if info.get("overall_status") == "completed"]
+in_progress = [f for f, info in files.items() if info.get("overall_status") == "in_progress"]
+
+# Zlicz pliki do migracji
+npc_dir = "data-otservbr-global/npc"
+total_npc = 0
+needs_migration = 0
+if os.path.isdir(npc_dir):
+    for f in os.listdir(npc_dir):
+        if f.endswith(".lua"):
+            total_npc += 1
+            fpath = os.path.join(npc_dir, f)
+            try:
+                with open(fpath, "r") as fp:
+                    content = fp.read()
+                    if "StdModule.say" in content and "text" in content:
+                        if "i18nKey" not in content:
+                            needs_migration += 1
+            except:
+                pass
+
+# Statystyki kluczy
+en_keys = 0
+if os.path.exists(f"{I18N_DIR}/en/npc.json"):
+    try:
+        with open(f"{I18N_DIR}/en/npc.json") as f:
+            en_keys = len(json.load(f))
+    except:
+        pass
+
+# Języki z tłumaczeniami
+langs_with_data = []
+if os.path.isdir(I18N_DIR):
+    for lang in os.listdir(I18N_DIR):
+        lang_file = f"{I18N_DIR}/{lang}/npc.json"
+        if os.path.exists(lang_file):
+            try:
+                with open(lang_file) as f:
+                    if len(json.load(f)) > 0:
+                        langs_with_data.append(lang)
+            except:
+                pass
+
+print(f"\n{BLUE}📊 STATYSTYKI GLOBALNE:{NC}")
+print(f"   ├─ Plików NPC ogółem:     {total_npc}")
+print(f"   ├─ Do migracji:          {YELLOW}{needs_migration}{NC}")
+print(f"   ├─ Ukończonych:          {GREEN}{len(completed)}{NC}")
+print(f"   ├─ W trakcie:            {CYAN}{len(in_progress)}{NC}")
+print(f"   ├─ Kluczy EN:            {en_keys}")
+print(f"   └─ Języków z danymi:     {len(langs_with_data)} ({', '.join(sorted(langs_with_data)[:5])}{'...' if len(langs_with_data) > 5 else ''})")
+
+# Pokaż pliki w trakcie
+if in_progress:
+    print(f"\n{YELLOW}🔄 W TRAKCIE PRZETWARZANIA:{NC}")
+    for fpath in in_progress:
+        info = files[fpath]
+        stages = info.get("stages", {})
+        done_stages = [s for s in stages.keys()]
+        last_stage = done_stages[-1] if done_stages else "brak"
+        print(f"   ├─ {os.path.basename(fpath)}")
+        print(f"   │  └─ Ostatni etap: {last_stage} ({len(done_stages)}/8)")
+
+# Pokaż ostatnie ukończone
+if completed:
+    print(f"\n{GREEN}✅ OSTATNIO UKOŃCZONE:{NC}")
+    # Sortuj po czasie ukończenia
+    sorted_completed = sorted(
+        [(f, files[f].get("completed_at", "")) for f in completed],
+        key=lambda x: x[1],
+        reverse=True
+    )[:5]
+    for fpath, completed_at in sorted_completed:
+        info = files[fpath]
+        stages = info.get("stages", {})
+        keys = stages.get("5_extraction_en", {}).get("keys_added", 0)
+        langs = len(stages.get("6_translation", {}).get("languages", []))
+        time_str = completed_at[:16].replace("T", " ") if completed_at else "?"
+        print(f"   ├─ {os.path.basename(fpath)}")
+        print(f"   │  └─ {time_str} | {keys} kluczy | {langs} języków")
+
+# Pokaż etapy dla ostatniego pliku
+if files:
+    last_file = list(files.keys())[-1]
+    info = files[last_file]
+    stages = info.get("stages", {})
+    print(f"\n{CYAN}📋 ETAPY DLA: {os.path.basename(last_file)}{NC}")
+    stage_names = {
+        "1_started": "STARTED",
+        "2_analysis": "ANALYSIS", 
+        "3_documentation": "DOCUMENTATION",
+        "4_transformation": "TRANSFORMATION",
+        "5_extraction_en": "EXTRACTION_EN",
+        "6_translation": "TRANSLATION",
+        "7_validation": "VALIDATION",
+        "8_sync": "SYNC"
+    }
+    for stage_key, stage_name in stage_names.items():
+        if stage_key in stages:
+            status = stages[stage_key].get("status", "?")
+            icon = "✅" if status == "completed" else "❌" if status == "failed" else "🔄"
+            extra = ""
+            if stage_key == "4_transformation":
+                extra = f" ({stages[stage_key].get('transformed', 0)} zmian)"
+            elif stage_key == "5_extraction_en":
+                extra = f" ({stages[stage_key].get('keys_added', 0)} kluczy)"
+            elif stage_key == "6_translation":
+                extra = f" ({len(stages[stage_key].get('languages', []))} języków)"
+            print(f"   {icon} {stage_name}{extra}")
+        else:
+            print(f"   ⬜ {stage_name}")
+
+print(f"\n{CYAN}─────────────────────────────────────────────────────────────────────{NC}")
+print(f"Użyj: ./i18n_worker_simple.sh --auto   aby kontynuować migrację")
+print()
+STATUSEOF
+        ;;
+    --stats)
+        echo "Szczegółowe statystyki..."
         python3 -c "
 import json
+import os
+
 with open('$STATUS_FILE') as f: d=json.load(f)
-for path, info in d.get('files',{}).items():
-    stages = list(info.get('stages',{}).keys())
-    print(f'  {path}: {stages}')
-print(f'Razem: {len(d.get(\"files\",{}))} plików')
+
+print('\n=== STATYSTYKI KLUCZY ===')
+for lang_dir in sorted(os.listdir('$I18N_DIR')):
+    npc_file = f'$I18N_DIR/{lang_dir}/npc.json'
+    if os.path.exists(npc_file):
+        with open(npc_file) as f:
+            keys = len(json.load(f))
+            print(f'  {lang_dir}: {keys} kluczy')
 "
         ;;
     --auto)
+        LIMIT="${2:-0}"
+        COUNT=0
         echo "Tryb AUTO - szukam plików NPC do migracji..."
+        [ "$LIMIT" -gt 0 ] && echo "Limit: $LIMIT plików"
         for f in data-otservbr-global/npc/*.lua; do
             if grep -q "StdModule\.say.*text" "$f" 2>/dev/null; then
                 if ! grep -q "i18nKey" "$f" 2>/dev/null; then
                     process_file "$f"
+                    COUNT=$((COUNT + 1))
+                    if [ "$LIMIT" -gt 0 ] && [ "$COUNT" -ge "$LIMIT" ]; then
+                        echo ""
+                        echo "Osiągnięto limit $LIMIT plików."
+                        break
+                    fi
                 fi
             fi
         done
+        echo ""
+        echo "Przetworzono: $COUNT plików"
         ;;
     *)
+        echo ""
         echo "Użycie:"
         echo "  $0 --file <path>   Przetwórz jeden plik"
-        echo "  $0 --status        Pokaż status"
+        echo "  $0 --status        Pokaż dashboard statusu"
+        echo "  $0 --stats         Szczegółowe statystyki języków"
         echo "  $0 --auto          Automatyczna migracja NPC"
+        echo "  $0 --auto N        Automatyczna migracja N plików"
+        echo ""
         ;;
 esac

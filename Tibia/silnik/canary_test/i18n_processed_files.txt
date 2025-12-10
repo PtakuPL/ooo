@@ -825,3 +825,6 @@ data-otservbr-global/monster/nostalgia/old_wasp.lua
 data-otservbr-global/monster/nostalgia/old_pig.lua
 data-otservbr-global/monster/nostalgia/old_giant_spider.lua
 data-otservbr-global/monster/nostalgia/old_wolf.lua
+data-otservbr-global/startup/startup.lua
+data-otservbr-global/startup/others/functions.lua
+data-otservbr-global/startup/others/load.lua

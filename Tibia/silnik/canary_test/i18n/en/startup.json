@@ -1,0 +1,10 @@
+{
+  "startup.startup.msg1": "/startup/tables/load.lua",
+  "startup.startup.msg2": "/startup/others/load.lua",
+  "startup.functions.msg1": "CreateItemOnMap",
+  "startup.functions.msg2": "create_item.lua",
+  "startup.functions.msg3": "Created all items in the map",
+  "startup.functions.msg4": "[loadLuaMapAction] - Wrong item id {} found",
+  "startup.functions.msg5": "Action id: {}, position {}",
+  "startup.load.msg1": "/startup/others/functions.lua"
+}

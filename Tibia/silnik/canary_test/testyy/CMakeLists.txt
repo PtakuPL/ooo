@@ -215,6 +215,9 @@ option(OTC_ENABLE_PUGIXML "Enable pugixml XML parsing" ON)
 # fmt (optional, can be disabled for build analysis when lib not available)
 option(OTC_ENABLE_FMT "Enable fmt library for formatting" ON)
 
+# GMP (optional, used for RSA when OpenSSL is not available)
+option(OTC_ENABLE_GMP "Enable GMP library for RSA" ON)
+
 if(OTC_ENABLE_PROTOBUF)
   add_subdirectory(src/protobuf)
 else()

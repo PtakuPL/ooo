@@ -913,3 +913,13 @@ data-canary/monster/slimes/slime.lua
 data-canary/monster/slimes/defiler.lua
 data-canary/monster/humanoids/frost_troll.lua
 data-canary/monster/humanoids/troll.lua
+data-otservbr-global/raids/darashia/undead_darashia.xml
+data-otservbr-global/raids/darashia/white_pale.xml
+data-otservbr-global/raids/darashia/the_pale_count.xml
+data-otservbr-global/raids/darashia/priestesses.xml
+data-otservbr-global/raids/svargrond/barba_svar.xml
+data-otservbr-global/raids/svargrond/barba_bittermor.xml
+data-otservbr-global/raids/svargrond/ghazbaran.xml
+data-otservbr-global/raids/svargrond/ice_golems.xml
+data-otservbr-global/raids/svargrond/barbarian.xml
+data-otservbr-global/raids/svargrond/hirintror.xml

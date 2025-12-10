@@ -11,5 +11,22 @@
   "raid.necropharus.announce": "1000",
   "raid.example.name": "Example",
   "raid.example.announce": "1000",
-  "raid.raids.name": "Raids"
+  "raid.raids.name": "Raids",
+  "raid.undead_darashia.name": "Undead Darashia",
+  "raid.undead_darashia.announce": "1000",
+  "raid.white_pale.name": "White Pale",
+  "raid.the_pale_count.name": "The Pale Count",
+  "raid.priestesses.name": "Priestesses",
+  "raid.priestesses.announce": "1000",
+  "raid.barba_svar.name": "Barba Svar",
+  "raid.barba_svar.announce": "1000",
+  "raid.barba_bittermor.name": "Barba Bittermor",
+  "raid.barba_bittermor.announce": "1000",
+  "raid.ghazbaran.name": "Ghazbaran",
+  "raid.ghazbaran.announce": "1000",
+  "raid.ice_golems.name": "Ice Golems",
+  "raid.ice_golems.announce": "1000",
+  "raid.barbarian.name": "Barbarian",
+  "raid.barbarian.announce": "1000",
+  "raid.hirintror.name": "Hirintror"
 }

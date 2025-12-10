@@ -122,20 +122,21 @@
   },
   "translation_sync": {
     "current_lang": "de",
-    "current_category": "items.json",
+    "current_category": "libs.json",
     "languages_done": [],
     "stats": {
       "de": {
         "npc": 4580,
         "chatchannels": 8,
-        "total": 42258,
+        "total": 61052,
         "client": 14,
         "cpp": 15,
         "events": 5,
         "html": 418,
-        "items": 13749
+        "items": 13749,
+        "libs": 5
       }
     },
-    "last_sync": 1765406212.2743506
+    "last_sync": 1765406219.1227741
   }
 }

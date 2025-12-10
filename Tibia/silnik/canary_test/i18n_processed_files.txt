@@ -2942,3 +2942,13 @@ data-canary/monster/humans/assassin.lua
 data-canary/monster/trainer/training_machine.lua
 data-canary/monster/demons/juggernaut.lua
 data-canary/monster/demons/demon.lua
+data-canary/monster/demons/hellhound.lua
+data-canary/monster/demons/destroyer.lua
+data-canary/monster/demons/hellspawn.lua
+data-canary/monster/demons/fury.lua
+data-canary/monster/reptiles/tortoise.lua
+data-canary/monster/reptiles/crocodile.lua
+data-canary/monster/reptiles/snake.lua
+data-canary/monster/familiars/sorcerer_familiar.lua
+data-canary/monster/familiars/knight_familiar.lua
+data-canary/monster/familiars/paladin_familiar.lua

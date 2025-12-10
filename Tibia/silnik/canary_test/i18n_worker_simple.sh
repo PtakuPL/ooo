@@ -1210,12 +1210,20 @@ for idx, (key, en_text) in enumerate(keys_batch):
         print("")
         print("")
     
-    # Czekaj na input od agenta
+    # Czekaj na input od agenta (przez terminal)
     print(f"  {target_lang.upper()}: ", end="")
     sys.stdout.flush()
     
     try:
-        translation = input().strip()
+        # Spróbuj czytać z /dev/tty (terminal) jeśli stdin jest pipe
+        if not sys.stdin.isatty():
+            try:
+                with open('/dev/tty', 'r') as tty:
+                    translation = tty.readline().strip()
+            except:
+                translation = input().strip()
+        else:
+            translation = input().strip()
     except EOFError:
         print("\n⚠️  Koniec input - zapisuję i kończę")
         break

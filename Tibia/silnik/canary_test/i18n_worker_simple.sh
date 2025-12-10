@@ -52,7 +52,8 @@ BLUE='\033[0;34m'
 CYAN='\033[0;36m'
 NC='\033[0m'
 
-log() { echo -e "$1"; }
+# NAPRAWIONE: Log do stderr żeby nie mieszać z return values w subshell
+log() { echo -e "$1" >&2; }
 
 #===============================================================================
 # UPDATE_CATEGORY_STATE - Zapamiętaj wynik przetwarzania kategorii
@@ -138,7 +139,8 @@ run_with_mini_batch() {
     local mini_count=0
     local total_added=0
     
-    log "${CYAN}📦 Mini-batch mode: $total_batch total, $mini_batch per batch, ${mini_pause}s pause${NC}"
+    # NAPRAWIONE: Logi do stderr (>&2) żeby nie mieszać z return value
+    echo "📦 Mini-batch mode: $total_batch total, $mini_batch per batch, ${mini_pause}s pause" >&2
     
     while [ $processed -lt $total_batch ]; do
         local current_mini=$mini_batch
@@ -147,8 +149,8 @@ run_with_mini_batch() {
         # Zlicz klucze przed
         local keys_before=$(python3 -c "import json,os; print(sum(len(json.load(open(f'i18n/en/{f}'))) for f in os.listdir('i18n/en') if f.endswith('.json')))" 2>/dev/null || echo 0)
         
-        # Wywołaj funkcję przetwarzania
-        $process_func "$current_mini"
+        # Wywołaj funkcję przetwarzania (przekieruj jej output do stderr)
+        $process_func "$current_mini" >&2
         
         # Zlicz klucze po
         local keys_after=$(python3 -c "import json,os; print(sum(len(json.load(open(f'i18n/en/{f}'))) for f in os.listdir('i18n/en') if f.endswith('.json')))" 2>/dev/null || echo 0)
@@ -158,24 +160,24 @@ run_with_mini_batch() {
         processed=$((processed + current_mini))
         mini_count=$((mini_count + 1))
         
-        log "   📦 Mini-batch #$mini_count: +$added kluczy (suma: $total_added)"
+        echo "   📦 Mini-batch #$mini_count: +$added kluczy (suma: $total_added)" >&2
         
         # Pauza między mini-batch (ale nie po ostatnim i nie gdy nic nie dodano)
         if [ $processed -lt $total_batch ] && [ "$added" -gt 0 ]; then
-            log "   ⏳ Pauza ${mini_pause}s..."
+            echo "   ⏳ Pauza ${mini_pause}s..." >&2
             sleep $mini_pause
         fi
         
         # Jeśli nie dodano nic, przerwij wcześniej
         if [ "$added" -eq 0 ]; then
-            log "   ⚠️ Brak nowych danych, kończę wcześniej"
+            echo "   ⚠️ Brak nowych danych, kończę wcześniej" >&2
             break
         fi
     done
     
-    log "${GREEN}✅ Zakończono: +$total_added kluczy w $mini_count mini-batch${NC}"
+    echo "✅ Zakończono: +$total_added kluczy w $mini_count mini-batch" >&2
     
-    # Zwróć liczbę dodanych kluczy (do update_category_state)
+    # Zwróć TYLKO liczbę dodanych kluczy (do stdout)
     echo "$total_added"
 }
 
@@ -2509,11 +2511,12 @@ if key not in d:
             
             echo "$file" >> "$PROCESSED_FILE"
             [ "$count" -ge "$batch" ] && break
-        done
+        done < <(find "$dir" -name "*.lua" -o -name "*.otui" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
     done
     
     log "${GREEN}✅ Client: $count plików${NC}"
+    echo "$count"
 }
 
 #===============================================================================

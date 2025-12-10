@@ -273,6 +273,13 @@ i18n/en/
 4. [ ] **Walidacja**: Sprawdzenie czy serwer działa po migracji
 5. [ ] **Masowa migracja**: Uruchomienie workera na wszystkich plikach
 
+### Sugestie operacyjne (dla agenta)
+- Dodaj do `StdModule.say` obsługę parametru `i18nKey` (jeśli jeszcze nie na wszystkich maszynach) i preferuj Opcję A/C – zmniejszy to liczbę zmian w plikach NPC.
+- W workerze dołóż walidację syntaktyczną Lua po transformacji (np. `luacheck` lub szybki `lua -p <plik>`), zanim batch trafi do git.
+- Przed masową migracją stwórz krótką listę kanałów powiadomień (log + plik `i18n/status/activity.json`) z wynikiem każdego cyklu, żeby agent wiedział czy batch przeszedł.
+- Przy transformacji `sendTextMessage` grupuj klucze w kategoriach (`quests.*`, `system.*`, `combat.*`) – ułatwi tłumaczenia i kontrolę jakości.
+- Dodaj mały smoke test: uruchomienie `./canary-debug --validate-i18n` (lub istniejący odpowiednik) na zestawie zmigrowanych plików, aby złapać brakujące klucze zanim pójdą tłumaczenia.
+
 ---
 
 ## 📝 Notatki

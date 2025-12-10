@@ -221,6 +221,33 @@ cat i18n/status/npc.json | jq .
 
 ---
 
+## ⚙️ Tryby, flagi i pliki stanu (Runbook)
+
+- Główne wejście: `i18n_worker_simple.sh` (v2.0).
+- Tryb domyślny bez flag: MIGRATION (8 etapów).  
+- Tryb ciągły: `./i18n_worker_simple.sh --continuous <batch_size> <sleep_sec>`  
+  - Przykład: `./i18n_worker_simple.sh --continuous 10 15` (10 plików na cykl, 15s przerwy).
+- Tłumaczenia ręczne (agent wpisuje w terminalu): `./i18n_worker_simple.sh --translate pl`
+- Pojedynczy plik: `./i18n_worker_simple.sh --file data-otservbr-global/npc/alexander.lua`
+- Aktualizacja dashboardu: `./i18n_worker_simple.sh --update-status`
+- Pauza kategorii po pustym batchu: zapisywana w `.i18n_category_state.json` (progressive backoff 5m → 10m → 30m → 1h → 2h).
+
+### Kluczowe pliki stanu
+- `.i18n_category_state.json` – backoff per kategoria (npc, scripts, items, monsters itd.).
+- `i18n_file_status.json` – status per plik (etapy pipeline).
+- `i18n_processed_files.txt` – lista już obrobionych.
+- `i18n_excluded_files.txt` – wykluczenia stałe (patrz też `i18n_excluded_files.txt.bak*`).
+- `i18n_worker_state.json` – ostatnie uruchomienie, PID, parametry.
+- `i18n_worker.log` / `i18n_worker_v5.log` / `work_i18n_*.log` – logi historyczne.
+
+### Szybkie procedury operacyjne
+- **Restart workera**: `pkill -f i18n_worker_simple.sh || true && ./i18n_worker_simple.sh --continuous 10 15 &`
+- **Odblokowanie kategorii**: usuń wpis z `.i18n_category_state.json` lub usuń plik, by zresetować backoff.
+- **Recovery po crashu**: usuń `.worker.pid` jeśli istnieje, sprawdź `i18n_worker.log`, uruchom ponownie w trybie continuous.
+- **Kontrola progresu**: `jq '.total_processed' .i18n_category_state.json` oraz `tail -n 20 i18n_worker.log`.
+
+---
+
 ## 📊 Statystyki (stan na 09.12.2025 03:05)
 
 | Metryka | Wartość |

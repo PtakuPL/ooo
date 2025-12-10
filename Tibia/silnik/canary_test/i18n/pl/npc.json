@@ -2346,5 +2346,22 @@
   "npc.melian.stdmod_21": "[PL] What a strange and bizarre continent. I'm glad my landing place is far away from all the mess I've seen from above.",
   "npc.melian.stdmod_22": "[PL] You are probably talking about the {FEMOR hills}.",
   "npc.melian.stdmod_23": "[PL] It's 2:55 pm right now. I think I'm five minutes late in my schedule.",
-  "npc.miles_the_guard.stdmod_1": "[PL] It's my duty to protect the city."
+  "npc.miles_the_guard.stdmod_1": "[PL] It's my duty to protect the city.",
+  "npc.mirabell.stdmod_1": "[PL] The Horn of Plenty is always open for tired adventurers.",
+  "npc.mirabell.stdmod_2": "[PL] I can offer you beer, wine, lemonade and water. If you'd like to see my offers, ask me for a {trade}.",
+  "npc.mirabell.stdmod_3": "[PL] Are you looking for food? I have bread, cheese, ham, and meat. If you'd like to see my offers, ask me for a {trade}.",
+  "npc.miraia.stdmod_1": "[PL] I can offer you lemonade, camel milk, and water. If you'd like to see my offers, ask me for a {trade}.",
+  "npc.miraia.stdmod_2": "[PL] Are you looking for food? I have bread, cheese, ham, and meat. If you'd like to see my offers, ask me for a {trade}.",
+  "npc.muhad.stdmod_1": "[PL] I am the leader of the true sons of {Daraman}.",
+  "npc.muhad.stdmod_2": "[PL] I am the leader of the true sons of {Daraman}.",
+  "npc.muhad.stdmod_3": "[PL] This is our home - the land of the desert.",
+  "npc.muhad.stdmod_4": "[PL] We will fight that city until we get back what belongs to us.",
+  "npc.muhad.stdmod_5": "[PL] We avoid these places you call cities.",
+  "npc.muhad.stdmod_6": "[PL] I would go crazy living in a cage like that.",
+  "npc.muhad.stdmod_7": "[PL] We have nothing that would be of value for you.",
+  "npc.muhad.stdmod_8": "[PL] That is the curse for not following the rules of the desert. No son of the desert has ever come back from the dead.",
+  "npc.muhad.stdmod_9": "[PL] We have nothing that would be of value for you.",
+  "npc.nina.stdmod_1": "[PL] The lizards here are the chosen ones of their kind. We believe them to be the strongest warriors in these lands.So I lead my people here to learn their ways. We are mere assassins but they are using foreign techniques and seem to be far more efficient",
+  "npc.nina.stdmod_2": "[PL] We of the Grey Shadow clan are studying the ways of the Chosen. Our training is hard, encounters with the lizards often deadly. Every one of us fights on his own. Each one more deadly than the other. Under my lead we wil rise renewed, as the Shadow Nina.",
+  "npc.nina.stdmod_3": "[PL] I am Nina, leader of the Grey Shadow clan. Me and my followers, the Shadow Nina, are exploring the largely uncharted parts of the continent Zao."
 }

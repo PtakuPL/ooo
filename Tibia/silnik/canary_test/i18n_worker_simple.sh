@@ -816,17 +816,31 @@ else:
 TRANSFORM_PY
 )
     
-    if [ "$transformed" -gt 0 ] 2>/dev/null; then
-        log "${GREEN}✓ Etap 4 OK${NC}: Zamieniono $transformed wystąpień"
+    # Parsuj wynik: total|stdmod|npcsay
+    local total_t=$(echo "$transformed" | cut -d'|' -f1)
+    local stdmod_t=$(echo "$transformed" | cut -d'|' -f2)
+    local npcsay_t=$(echo "$transformed" | cut -d'|' -f3)
+    
+    [ -z "$total_t" ] && total_t=0
+    [ -z "$stdmod_t" ] && stdmod_t=0
+    [ -z "$npcsay_t" ] && npcsay_t=0
+    
+    if [ "$total_t" -gt 0 ] 2>/dev/null; then
+        log "${GREEN}✓ Etap 4 OK${NC}: StdModule=$stdmod_t, npcHandler:say=$npcsay_t, Total=$total_t"
     else
-        transformed=0
+        total_t=0
         log "${YELLOW}⏭ Etap 4${NC}: Brak zmian"
     fi
     
     python3 -c "
 import json
 with open('$STATUS_FILE', 'r') as f: data = json.load(f)
-data['files']['$file']['stages']['4_transformation'] = {'status': 'completed', 'transformed': $transformed}
+data['files']['$file']['stages']['4_transformation'] = {
+    'status': 'completed', 
+    'transformed': $total_t,
+    'stdmod_transformed': $stdmod_t,
+    'npcsay_transformed': $npcsay_t
+}
 with open('$STATUS_FILE', 'w') as f: json.dump(data, f, indent=2)
 "
     return 0

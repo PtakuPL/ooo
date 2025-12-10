@@ -2403,6 +2403,132 @@ KWPY
 }
 
 #===============================================================================
+# NOWA KATEGORIA: Twig templates
+#===============================================================================
+# Ekstrahuje teksty z plików .twig do html.json
+# Później można ręcznie zastąpić przez {{ 'key'|trans }}
+#===============================================================================
+process_twig_category() {
+    local batch="${1:-10}"
+    local json_file="$I18N_DIR/en/html.json"
+    local count=0
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}🎨 Processing Twig templates...${NC}"
+    
+    python3 << 'TWIGPY'
+import json
+import re
+import os
+import sys
+
+BATCH = int(sys.argv[1]) if len(sys.argv) > 1 else 10
+json_file = "i18n/en/html.json"
+processed_file = "i18n_processed_files.txt"
+
+# Wczytaj JSON
+try:
+    with open(json_file) as f:
+        html_data = json.load(f)
+except:
+    html_data = {}
+
+# Wczytaj przetworzone pliki
+processed = set()
+try:
+    with open(processed_file) as f:
+        processed = set(line.strip() for line in f)
+except:
+    pass
+
+modified_count = 0
+keys_added = 0
+
+# Znajdź pliki Twig
+twig_dirs = ['html_copy/system/templates', 'html_copy/admin/pages', 'html_copy/templates']
+
+for twig_dir in twig_dirs:
+    if not os.path.isdir(twig_dir):
+        continue
+    
+    for root, dirs, files in os.walk(twig_dir):
+        for filename in files:
+            if not filename.endswith('.twig'):
+                continue
+            
+            filepath = os.path.join(root, filename)
+            marker = f"TWIG:{filepath}"
+            
+            if marker in processed:
+                continue
+            
+            try:
+                with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+                    content = f.read()
+            except:
+                continue
+            
+            # Pomiń jeśli już ma trans()
+            if '|trans' in content:
+                continue
+            
+            # Wyciągnij teksty:
+            # 1. {% set title = 'Text' %}
+            # 2. <b>Text</b>, <td>Text</td>, etc.
+            # 3. Hardcoded stringi w HTML
+            
+            tpl_name = filename.replace('.html.twig', '').replace('.twig', '').lower().replace(' ', '_').replace('-', '_')
+            local_keys = 0
+            
+            # Pattern 1: {% set var = 'text' %}
+            set_matches = re.findall(r"\{%\s*set\s+\w+\s*=\s*'([^']+)'\s*%\}", content)
+            for i, text in enumerate(set_matches, 1):
+                if len(text) > 3 and not text.startswith('{') and not text.startswith('/'):
+                    key = f"web.tpl.{tpl_name}.set_{i}"
+                    if key not in html_data:
+                        html_data[key] = text
+                        keys_added += 1
+                        local_keys += 1
+            
+            # Pattern 2: <b>Text</b>, <td>Text</td>, <span>Text</span>
+            tag_matches = re.findall(r'<(b|td|th|span|label|h[1-6])>([^<>{]+)</\1>', content)
+            for i, (tag, text) in enumerate(tag_matches, 1):
+                text = text.strip()
+                if len(text) > 2 and text not in ['&nbsp;', '']:
+                    key = f"web.tpl.{tpl_name}.{tag}_{i}"
+                    if key not in html_data:
+                        html_data[key] = text
+                        keys_added += 1
+                        local_keys += 1
+            
+            if local_keys > 0:
+                print(f"   🎨 {filename}: +{local_keys} kluczy")
+                modified_count += 1
+                
+                with open(processed_file, 'a') as f:
+                    f.write(f"{marker}\n")
+            
+            if modified_count >= BATCH:
+                break
+        
+        if modified_count >= BATCH:
+            break
+    
+    if modified_count >= BATCH:
+        break
+
+# Zapisz JSON
+with open(json_file, 'w', encoding='utf-8') as f:
+    json.dump(html_data, f, indent=2, ensure_ascii=False)
+
+print(f"   📊 Razem: {modified_count} plików, +{keys_added} kluczy")
+TWIGPY
+    
+    log "${GREEN}✅ Twig: Przetworzono${NC}"
+}
+
+#===============================================================================
 # AUTO TRANSLATE - Automatyczne tłumaczenie BEZ interakcji
 #===============================================================================
 # Kopiuje klucze EN do innych języków z prefiksem [LANG] lub używa prostych
@@ -3743,6 +3869,11 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                             echo "   🔑 Przetwarzam keywordHandler bez i18nKey..."
                             process_keywordHandler_category "$BATCH"
                             echo "   📊 keywordHandler: Dodano klucze"
+                            ;;
+                        twig)
+                            echo "   🎨 Przetwarzam Twig templates..."
+                            process_twig_category "$BATCH"
+                            echo "   📊 Twig: Dodano klucze"
                             ;;
                         *)
                             echo "   ⚠️ Nieznana kategoria: $MODE_CAT"

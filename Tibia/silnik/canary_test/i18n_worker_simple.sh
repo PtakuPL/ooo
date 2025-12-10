@@ -105,6 +105,64 @@ CATSTATEPY
 }
 
 #===============================================================================
+# RUN_WITH_MINI_BATCH - Wrapper do przetwarzania z mini-batch i pauzami
+#===============================================================================
+# Użycie: run_with_mini_batch <category_name> <process_function> <total_batch>
+# Przykład: run_with_mini_batch "items" "process_items_category" 50
+#===============================================================================
+run_with_mini_batch() {
+    local category="$1"
+    local process_func="$2"
+    local total_batch="${3:-$MIGRATION_BATCH}"
+    local mini_batch="${MINI_BATCH:-10}"
+    local mini_pause="${MINI_PAUSE:-3}"
+    
+    local processed=0
+    local mini_count=0
+    local total_added=0
+    
+    log "${CYAN}📦 Mini-batch mode: $total_batch total, $mini_batch per batch, ${mini_pause}s pause${NC}"
+    
+    while [ $processed -lt $total_batch ]; do
+        local current_mini=$mini_batch
+        [ $((processed + mini_batch)) -gt $total_batch ] && current_mini=$((total_batch - processed))
+        
+        # Zlicz klucze przed
+        local keys_before=$(python3 -c "import json,os; print(sum(len(json.load(open(f'i18n/en/{f}'))) for f in os.listdir('i18n/en') if f.endswith('.json')))" 2>/dev/null || echo 0)
+        
+        # Wywołaj funkcję przetwarzania
+        $process_func "$current_mini"
+        
+        # Zlicz klucze po
+        local keys_after=$(python3 -c "import json,os; print(sum(len(json.load(open(f'i18n/en/{f}'))) for f in os.listdir('i18n/en') if f.endswith('.json')))" 2>/dev/null || echo 0)
+        
+        local added=$((keys_after - keys_before))
+        total_added=$((total_added + added))
+        processed=$((processed + current_mini))
+        mini_count=$((mini_count + 1))
+        
+        log "   📦 Mini-batch #$mini_count: +$added kluczy (suma: $total_added)"
+        
+        # Pauza między mini-batch (ale nie po ostatnim i nie gdy nic nie dodano)
+        if [ $processed -lt $total_batch ] && [ "$added" -gt 0 ]; then
+            log "   ⏳ Pauza ${mini_pause}s..."
+            sleep $mini_pause
+        fi
+        
+        # Jeśli nie dodano nic, przerwij wcześniej
+        if [ "$added" -eq 0 ]; then
+            log "   ⚠️ Brak nowych danych, kończę wcześniej"
+            break
+        fi
+    done
+    
+    log "${GREEN}✅ Zakończono: +$total_added kluczy w $mini_count mini-batch${NC}"
+    
+    # Zwróć liczbę dodanych kluczy (do update_category_state)
+    echo "$total_added"
+}
+
+#===============================================================================
 # UPDATE_STATUS - Aktualizacja I18N_STATUS.md dla GitHub (pełna wersja)
 #===============================================================================
 update_github_status() {

@@ -5763,5 +5763,20 @@
   "item.16694.name": "ramp",
   "item.16695.name": "ramp",
   "item.16862.name": "RESERVED SPRITE",
-  "item.16863.name": "muddy mountain"
+  "item.16863.name": "muddy mountain",
+  "item.16864.name": "RESERVED SPRITE",
+  "item.16865.name": "grass",
+  "item.16866.name": "swamp clay mountain",
+  "item.16867.name": "RESERVED SPRITE",
+  "item.16868.name": "swamp clay mountain",
+  "item.16869.name": "muddy mountain",
+  "item.17109.name": "mean knight sword",
+  "item.17110.name": "mean paladin spear",
+  "item.17111.name": "sorcerer and druid staff",
+  "item.17112.name": "sorc and druid attack rune",
+  "item.17113.name": "healing rune for druids",
+  "item.17114.name": "RESERVED SPRITE",
+  "item.17150.name": "RESERVED SPRITE",
+  "item.17151.name": "freshly cut venorean spice",
+  "item.17152.name": "growing venorean spice"
 }

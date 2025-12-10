@@ -124,7 +124,7 @@
   },
   "translation_sync": {
     "current_lang": "it",
-    "current_category": "scripts.json",
+    "current_category": "spells.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -219,7 +219,7 @@
       },
       "it": {
         "chatchannels": 8,
-        "total": 183323,
+        "total": 212603,
         "client": 283,
         "cpp": 15,
         "events": 5,
@@ -231,9 +231,10 @@
         "npc": 5334,
         "php": 1166,
         "raids": 147,
-        "scripts": 385
+        "scripts": 385,
+        "spells": 15
       }
     },
-    "last_sync": 1765410498.1538022
+    "last_sync": 1765410505.7062948
   }
 }

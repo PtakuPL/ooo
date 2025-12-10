@@ -14,7 +14,7 @@
     "php": 1765406798.5227244,
     "html": 1765406805.5727773,
     "client": 1765406826.1324565,
-    "sendtextmessage": 1765406235.5743601,
+    "sendtextmessage": 1765406847.0815792,
     "keywordhandler": 1765406258.2774801,
     "twig": 1765406380.6591496
   },
@@ -77,7 +77,7 @@
     },
     "sendtextmessage": {
       "count": 0,
-      "timestamp": 1765405935.574355
+      "timestamp": 1765406247.081574
     },
     "keywordhandler": {
       "count": 0,
@@ -103,7 +103,7 @@
     "php": 2,
     "html": 2,
     "client": 2,
-    "sendtextmessage": 1,
+    "sendtextmessage": 2,
     "keywordhandler": 1,
     "twig": 1
   },

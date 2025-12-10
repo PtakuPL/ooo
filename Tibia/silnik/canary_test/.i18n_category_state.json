@@ -58,8 +58,8 @@
       "timestamp": 1765411154.0588799
     },
     "php": {
-      "count": 0,
-      "timestamp": 1765410899.5839918
+      "count": 94,
+      "timestamp": 1765411177.971661
     },
     "html": {
       "count": 160,
@@ -94,7 +94,8 @@
     "chatchannels": 2,
     "modules": 2,
     "startup": 2,
-    "npclib": 2
+    "npclib": 2,
+    "php": 0
   },
   "total_processed": {
     "items": 11689,
@@ -103,7 +104,7 @@
     "chatchannels": 8,
     "modules": 16,
     "startup": 23,
-    "php": 3846,
+    "php": 3987,
     "html": 2132,
     "client": 821,
     "keywordhandler": 64,

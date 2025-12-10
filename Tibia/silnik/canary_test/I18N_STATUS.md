@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 04:08:49 UTC  
+> **Aktualizacja:** 2025-12-10 04:11:29 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **599** | ↑ |
-| ⏭️ Plików wykluczonych | **4715** | - |
-| 🔑 Kluczy i18n | **50412** | ↑ |
+| 📁 Plików przetworzonych | **624** | ↑ |
+| ⏭️ Plików wykluczonych | **4813** | - |
+| 🔑 Kluczy i18n | **50694** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **50** | ✓ |
-| 🔄 Cykl | **#3** | - |
+| 🔄 Cykl | **#4** | - |
 
 ---
 
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 12411/13190 (94%) | 13190 |
+| 🧙 NPC Dialogs | ✅ | 12693/13190 (96%) | 13190 |
 | 📜 Lua Scripts | 🔄 | 713/1000 (71%) | 1000 |
 | 🎒 Items Database | 🔄 | 36972/40000 (92%) | 40000 |
 | 👹 Monsters | 🔄 | 100/500 (20%) | 500 |
@@ -78,15 +78,15 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #3` |
-| **Szczegóły** | NPC:12411 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-10 04:08:23 |
+| **Plik** | `Cykl #4` |
+| **Szczegóły** | NPC:12693 Scripts:713 Items:36972 |
+| **Ostatnia aktualizacja** | 2025-12-10 04:11:17 |
 
 ### 📈 Statystyki sesji
 
 | Metryka | Wartość |
 |---------|----------|
-| Plików przetworzonych | 683 |
+| Plików przetworzonych | 703 |
 | Kluczy wyciągniętych | 0 |
 | Błędów | 0 |
 | Napraw zastosowanych | 0 |
@@ -156,9 +156,9 @@
 
 | Metryka | Wartość |
 |---------|----------|
-| 🔑 Kluczy | **12411** |
+| 🔑 Kluczy | **12693** |
 | 🎯 Cel | 13000 |
-| 📊 Postęp | 95% |
+| 📊 Postęp | 97% |
 | 📁 Plik | `i18n/en/npc.json` |
 
 </details>
@@ -267,7 +267,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.2** | 🟢 RUNNING | PID: 116373, Cykl #3 |
+| **Worker v4.2** | 🟢 RUNNING | PID: 116373, Cykl #4 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -276,7 +276,7 @@
 
 ```
 [✅] Items (36972)      ██████████████████░░  92%
-[✅] NPC (12411)        ███████████████████░  95%
+[✅] NPC (12693)        ███████████████████░  97%
 [🔄] Scripts (713)    ██████████████░░░░░░  71%
 [🔄] Monsters (100)   ████░░░░░░░░░░░░░░░░  20%
 [🔄] Spells (100)     ██████████░░░░░░░░░░  50%
@@ -288,5 +288,5 @@
 ---
 
 *🤖 Machine-readable: `i18n/status/worker_state.json`*  
-*📅 Auto-updated by Worker v4.2 | Last: 2025-12-10 04:08:50*  
+*📅 Auto-updated by Worker v4.2 | Last: 2025-12-10 04:11:29*  
 *🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)*

@@ -118,15 +118,23 @@ if os.path.isdir(npc_dir):
             except:
                 pass
 
-# Processed & excluded files count
-processed_count = 0
+# Processed & excluded files count (z i18n_file_status.json, NIE ze starych plików!)
+processed_count = completed  # Używamy completed z JSON
+excluded_count = 0  # Już nie używamy starego systemu wykluczeń
+
+# Policz faktycznie wykluczone (bez StdModule.say lub już zmigrowane)
 excluded_count = 0
-if os.path.exists(PROCESSED_FILE):
-    with open(PROCESSED_FILE) as f:
-        processed_count = len([l for l in f.readlines() if l.strip()])
-if os.path.exists(EXCLUDED_FILE):
-    with open(EXCLUDED_FILE) as f:
-        excluded_count = len([l for l in f.readlines() if l.strip()])
+for f in os.listdir("data-otservbr-global/npc"):
+    if f.endswith(".lua"):
+        fpath = f"data-otservbr-global/npc/{f}"
+        if fpath not in files:  # Nie w statusie
+            try:
+                with open(fpath) as nf:
+                    content = nf.read()
+                    if "StdModule.say" not in content:
+                        excluded_count += 1  # Nie ma StdModule.say
+            except:
+                pass
 
 # Cykl (z pliku jeśli istnieje)
 cycle_count = 1

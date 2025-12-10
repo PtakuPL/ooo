@@ -1,14 +1,14 @@
 {
   "category": "scripts",
   "status": "in_progress",
-  "last_updated": "2025-12-10T04:36:57+01:00",
+  "last_updated": "2025-12-10T04:44:05+01:00",
   "summary": {
     "total_keys": 713,
-    "files_processed": 764
+    "files_processed": 765
   },
   "current_work": {
     "directory": "data-otservbr-global/scripts/",
-    "cycle": 3
+    "cycle": 6
   },
   "subdirectories": {
     "quests": {"processed": 23},
@@ -16,28 +16,28 @@
   },
   "recent_files": [
   {
-    "file": "luna.lua",
-    "time": "04:36:56",
-    "status": "success"
-  },
-  {
     "file": "olrik.lua",
-    "time": "04:36:56",
+    "time": "04:44:04",
     "status": "success"
   },
   {
     "file": "rapanaio_boat.lua",
-    "time": "04:36:56",
+    "time": "04:44:04",
     "status": "success"
   },
   {
     "file": "nilsor.lua",
-    "time": "04:36:56",
+    "time": "04:44:04",
     "status": "success"
   },
   {
     "file": "captain_greyhound.lua",
-    "time": "04:36:56",
+    "time": "04:44:04",
+    "status": "success"
+  },
+  {
+    "file": "urks_the_mute.lua",
+    "time": "04:44:04",
     "status": "success"
   }
 ]

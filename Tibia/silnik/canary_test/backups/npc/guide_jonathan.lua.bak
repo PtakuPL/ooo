@@ -1,4 +1,4 @@
-local internalNpcName = "Guide Luke"
+local internalNpcName = "Guide Jonathan"
 local npcType = Game.createNpcType(internalNpcName)
 local npcConfig = {}
 
@@ -11,11 +11,11 @@ npcConfig.walkInterval = 2000
 npcConfig.walkRadius = 2
 
 npcConfig.outfit = {
-	lookType = 131,
-	lookHead = 132,
-	lookBody = 39,
-	lookLegs = 38,
-	lookFeet = 114,
+	lookType = 134,
+	lookHead = 116,
+	lookBody = 3,
+	lookLegs = 0,
+	lookFeet = 117,
 	lookAddons = 0,
 }
 
@@ -60,9 +60,9 @@ npcType.onCloseChannel = function(npc, creature)
 end
 
 local configMarks = {
-	{ mark = "shops", position = Position(32367, 32197, 7), markId = MAPMARK_BAG, description = "Shops" },
-	{ mark = "depot", position = Position(32321, 32212, 7), markId = MAPMARK_LOCK, description = "Depot" },
-	{ mark = "temple", position = Position(32369, 32241, 7), markId = MAPMARK_TEMPLE, description = "Temple" },
+	{ mark = "shops", position = Position(33210, 31818, 7), markId = MAPMARK_BAG, description = "Shops" },
+	{ mark = "depot", position = Position(33173, 31812, 7), markId = MAPMARK_LOCK, description = "Depot" },
+	{ mark = "temple", position = Position(33210, 31814, 7), markId = MAPMARK_TEMPLE, description = "Temple" },
 }
 
 local function creatureSayCallback(npc, creature, type, message)
@@ -74,10 +74,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if table.contains({ "map", "marks" }, message) then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.guide_luke.say_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.guide_jonathan.say_1")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.guide_luke.say_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.guide_jonathan.say_2")
 		local mark
 		for i = 1, #configMarks do
 			mark = configMarks[i]
@@ -85,24 +85,23 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) >= 1 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.guide_luke.say_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.guide_jonathan.say_3")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true
 end
 
-keywordHandler:addKeyword({ "information" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_luke.stdmod_1" })
-keywordHandler:addKeyword({ "temple" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_luke.stdmod_2" })
-keywordHandler:addKeyword({ "bank" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_luke.stdmod_3" })
-keywordHandler:addKeyword({ "shops" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_luke.stdmod_4" })
-keywordHandler:addKeyword({ "depot" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_luke.stdmod_5" })
-keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_luke.stdmod_6" })
-keywordHandler:addKeyword({ "thais" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_luke.stdmod_7" })
-keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_luke.stdmod_8" })
+keywordHandler:addKeyword({ "information" }, StdModule.say, { npcHandler = npcHandler, text = "Currently, I can tell you all about the town, its temple, the bank, shops, spell trainers and the depot, as well as about the world status." })
+keywordHandler:addKeyword({ "temple" }, StdModule.say, { npcHandler = npcHandler, text = "The temple is near the shop area in the eastern part of the castle. Just go downstairs." })
+keywordHandler:addKeyword({ "bank" }, StdModule.say, { npcHandler = npcHandler, text = "Our local bank clerk is called Ebenizer. You can find him north of the depot, near the food shop." })
+keywordHandler:addKeyword({ "shops" }, StdModule.say, { npcHandler = npcHandler, text = "You can buy weapons, armor, tools, gems, magical equipment, furniture, spells and food here." })
+keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, text = "I'm your guide to the beautiful town Edron. I can mark important locations on your map and give you some information about the town and the world status." })
+keywordHandler:addKeyword({ "town" }, StdModule.say, { npcHandler = npcHandler, text = "The town of Edron with its shops and facilities is built inside strong castle walls. Another remarkable building is the magic academy." })
+keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, text = "I'm Jonathan. Pleased to meet you." })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello there, |PLAYERNAME| and welcome to Thais! Would you like some {information} and a {map} guide?")
+npcHandler:setMessage(MESSAGE_GREET, "Hello there, |PLAYERNAME| and welcome to Edron! Would you like some {information} and a {map} guide?")
 npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and enjoy your stay in Thais, |PLAYERNAME|.")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and enjoy your stay in Edron, |PLAYERNAME|.")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

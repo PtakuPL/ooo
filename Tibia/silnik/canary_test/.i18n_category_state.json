@@ -3,7 +3,8 @@
     "scripts": 1765412581.8600788,
     "monsters": 1765409802.2766323,
     "raids": 1765409853.853684,
-    "world": 1765409860.6005616
+    "world": 1765409860.6005616,
+    "items": 1765409868.079889
   },
   "last_processed": {
     "scripts": {
@@ -24,7 +25,7 @@
     },
     "items": {
       "count": 0,
-      "timestamp": 1765406704.1267912
+      "timestamp": 1765409268.0798838
     },
     "libs": {
       "count": 0,
@@ -80,7 +81,8 @@
     "scripts": 4,
     "monsters": 2,
     "raids": 2,
-    "world": 2
+    "world": 2,
+    "items": 2
   },
   "total_processed": {
     "items": 11689,

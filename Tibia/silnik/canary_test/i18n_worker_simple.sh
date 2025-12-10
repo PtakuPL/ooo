@@ -995,7 +995,9 @@ status["files"]["$file"]["stages"]["5_extraction_en"] = {
     "status": "completed", 
     "keys_added": added,
     "stdmod_keys": stdmod_count,
-    "npcsay_keys": npcsay_count
+    "npcsay_keys": npcsay_count,
+    "greet_keys": greet_count,
+    "farewell_keys": farewell_count
 }
 with open("$STATUS_FILE", "w") as f:
     json.dump(status, f, indent=2)

@@ -123,5 +123,10 @@
   "item.288.name": "dead cat",
   "item.289.name": "dead cat",
   "item.293.name": "grass",
-  "item.294.name": "pitfall"
+  "item.294.name": "pitfall",
+  "item.304.name": "grass",
+  "item.305.name": "dirt",
+  "item.306.name": "empty flower pot",
+  "item.316.name": "flower pot",
+  "item.321.name": "flower pot"
 }

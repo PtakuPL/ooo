@@ -19,7 +19,7 @@ BACKUP_DIR="backups"
 PROCESSED_FILE="i18n_processed_files.txt"
 
 # Konfiguracja trybów
-MIGRATION_BATCH=5           # Ile plików NPC na cykl migracji
+MIGRATION_BATCH=15          # Ile plików NPC na cykl migracji
 TRANSLATION_BATCH=50        # Ile kluczy na batch tłumaczeń  
 TRANSLATION_SUBSTAGE=4      # Ile kluczy na składnię
 LANG_PRIORITY="pl de es pt fr it ru nl sv da no fi cs"  # Priorytet języków
@@ -3673,7 +3673,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
         
         # Parsuj opcje
         shift  # usuń --continuous
-        BATCH=5
+        BATCH=15
         DELAY=4
         while [ $# -gt 0 ]; do
             case "$1" in
@@ -3874,8 +3874,8 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                                 grep -qF "$f" "$PROCESSED_FILE" 2>/dev/null && continue
                                 grep -qF "$(pwd)/$f" "$PROCESSED_FILE" 2>/dev/null && continue
                                 
-                                # Szukaj sendTextMessage z czystym stringiem
-                                if grep -qE 'sendTextMessage\s*\([^,]+,\s*"[^"]+"\s*\)' "$f" 2>/dev/null; then
+                                # Szukaj sendTextMessage z jakimkolwiek stringiem (czystym lub konkatenowanym)
+                                if grep -qE 'sendTextMessage\s*\([^,]+,\s*"' "$f" 2>/dev/null; then
                                     if ! grep -q "sendLocalizedTextMessage" "$f" 2>/dev/null; then
                                         process_scripts_file "$f"
                                         COUNT=$((COUNT + 1))

@@ -2423,7 +2423,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                         npc)
                             echo "   🧙 Przetwarzam NPC..."
                             COUNT=0
-                            for f in data-otservbr-global/npc/*.lua data-canary/npc/*.lua 2>/dev/null; do
+                            for f in data-otservbr-global/npc/*.lua; do
                                 [ -f "$f" ] || continue
                                 NEEDS_WORK=false
                                 

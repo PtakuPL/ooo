@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:33:00 UTC  
+> **Aktualizacja:** 2025-12-11 00:33:24 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -23,10 +23,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **26** | ↑ |
 | ⏭️ Plików wykluczonych | **711** | - |
-| 🔑 Kluczy i18n | **28689** | ↑ |
+| 🔑 Kluczy i18n | **28773** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#67** | - |
+| 🔄 Cykl | **#68** | - |
 
 ---
 
@@ -51,7 +51,7 @@
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
 | 🐘 PHP Backend | 🔄 | 1097/3000 (37%) | 3000 |
-| 📄 HTML Views | ✅ | 508/300 (169%) | 300 |
+| 📄 HTML Views | ✅ | 592/300 (197%) | 300 |
 | 📦 JavaScript | 🔄 | 14/200 (7%) | 200 |
 
 ### ⏳ Faza 3: 📱 Instalka/Klient
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    67 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    68 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 PHP                                    │
+│ Kategoria: 🎒 HTML                                   │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: php                                            │
-│ [██████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 1097/3000 kluczy (37%)                                          │
+│ 📊 Ostatnia aktywność: html                                           │
+│ [██████████████████████████████████████████████████] │
+│ 592/500 kluczy (118%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Total processed: 25640 operacji               │
+│ ⏳ Total processed: 25892 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:33:00                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:33:24                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -99,11 +99,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Operacji wykonanych | **25640** | we wszystkich kategoriach |
+| 📁 Operacji wykonanych | **25892** | we wszystkich kategoriach |
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **28689** | we wszystkich kategoriach |
+| 🔑 Kluczy wyciągniętych | **28773** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#67** | continuous mode |
+| 🔄 Cykli wykonanych | **#68** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,6 +111,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `html` +168 kluczy @ 00:33:24
 - ⚡ `php` +0 kluczy @ 00:32:59
 - ⚡ `npclib` +0 kluczy @ 00:28:55
 - ⚡ `startup` +0 kluczy @ 00:28:49
@@ -118,7 +119,6 @@
 - ⚡ `chatchannels` +0 kluczy @ 00:28:35
 - ⚡ `events` +0 kluczy @ 00:28:28
 - ⚡ `libs` +0 kluczy @ 00:28:21
-- 🎒 `items` +0 kluczy @ 00:27:48
 
 
 ---
@@ -282,11 +282,11 @@
 | monsters | 7341 | 9549 | 2 | ⏭️ Skip 3m |
 | npc | 5334 | 0 | 0 | ✅ Active |
 | php | 1097 | 3219 | 2 | ⏭️ Skip 9m |
-| html | 508 | 284 | 0 | ✅ Active |
-| scripts | 385 | 0 | 4 | ⏭️ Skip 50m |
+| html | 592 | 536 | 0 | ✅ Active |
+| scripts | 385 | 0 | 4 | ⏭️ Skip 49m |
 | raids | 147 | 351 | 2 | ⏭️ Skip 4m |
 | startup | 23 | 23 | 2 | ⏭️ Skip 5m |
-| libs | 21 | 53 | 2 | ⏭️ Skip 5m |
+| libs | 21 | 53 | 2 | ⏭️ Skip 4m |
 | modules | 16 | 16 | 2 | ⏭️ Skip 5m |
 | cpp | 15 | 0 | 0 | ✅ Active |
 | spells | 15 | 0 | 0 | ✅ Active |
@@ -308,12 +308,12 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| scripts | 50m | 4x | Progresywny backoff |
+| scripts | 49m | 4x | Progresywny backoff |
 | monsters | 3m | 2x | Progresywny backoff |
 | raids | 4m | 2x | Progresywny backoff |
 | world | 4m | 2x | Progresywny backoff |
 | items | 4m | 2x | Progresywny backoff |
-| libs | 5m | 2x | Progresywny backoff |
+| libs | 4m | 2x | Progresywny backoff |
 | events | 5m | 2x | Progresywny backoff |
 | chatchannels | 5m | 2x | Progresywny backoff |
 | modules | 5m | 2x | Progresywny backoff |
@@ -327,7 +327,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #67 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #68 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -370,7 +370,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:33:00  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:33:24  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

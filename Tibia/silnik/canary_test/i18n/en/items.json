@@ -398,5 +398,10 @@
   "item.818.name": "magma boots",
   "item.819.name": "glacier shoes",
   "item.820.name": "lightning boots",
-  "item.821.name": "magma legs"
+  "item.821.name": "magma legs",
+  "item.822.name": "lightning legs",
+  "item.823.name": "glacier kilt",
+  "item.824.name": "glacier robe",
+  "item.825.name": "lightning robe",
+  "item.826.name": "magma coat"
 }

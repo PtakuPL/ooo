@@ -278,6 +278,7 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `hardek` - ukończono 2025-12-10 07:04
 - ✅ `hanna` - ukończono 2025-12-10 07:03
 - ✅ `halvar` - ukończono 2025-12-10 07:03
 - ✅ `hairycles` - ukończono 2025-12-10 07:03

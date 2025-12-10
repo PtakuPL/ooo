@@ -3014,27 +3014,19 @@
         },
         "4_transformation": {
           "status": "completed",
-          "transformed": 0,
+          "transformed": 8,
           "stdmod_transformed": 0,
-          "npcsay_transformed": 0
+          "npcsay_transformed": 8
         },
         "5_extraction_en": {
           "status": "completed",
-          "keys_added": 8,
+          "keys_added": 0,
           "stdmod_keys": 1,
           "npcsay_keys": 8
         },
         "6_placeholder": {
           "status": "completed",
-          "languages": [
-            "pl",
-            "de",
-            "es",
-            "pt",
-            "fr",
-            "it",
-            "ru"
-          ],
+          "languages": [],
           "keys_per_lang": 8,
           "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
         },
@@ -3107,7 +3099,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:08:35.367019"
+      "completed_at": "2025-12-10T12:09:41.845518"
     }
   },
   "global_stats": {

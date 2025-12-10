@@ -762,25 +762,11 @@ total_transformed += stdmod_counter[0]
 #==============================================================================
 npcsay_counter = [0]
 
-def replace_npcsay_with_i18n(match):
-    npcsay_counter[0] += 1
-    key = f"npc.{safe_name}.say_{npcsay_counter[0]}"
-    prefix = match.group(1) or ""  # "return " lub puste
-    text = match.group(2)  # oryginalny tekst (zachowamy w JSON)
-    args = match.group(3)  # ", npc, creature)" lub ", npc, player)"
-    
-    # Sprawdź czy to nie jest już NPC_LIB
-    if "NPC_LIB" in prefix:
-        return match.group(0)
-    
-    return f'{prefix}NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "{key}")'
-
 # Pattern: opcjonalnie "return ", potem npcHandler:say("prosty tekst bez konkatenacji", npc, creature/player)
-# Ignorujemy jeśli po " jest .. (konkatenacja) lub jeśli zaczyna się od {
 pattern_npcsay = r'((?:return\s+)?)?npcHandler:say\(\s*"([^"]{5,})"\s*,\s*npc\s*,\s*(?:creature|player)\s*\)'
 
-# Najpierw sprawdź czy w pliku są npcHandler:say do transformacji
-if 'npcHandler:say("' in content and 'NPC_LIB.i18n.npcSay' not in content:
+# Transformuj wszystkie npcHandler:say("...") - nawet jeśli już są jakieś NPC_LIB w pliku
+if 'npcHandler:say("' in content:
     # Filtruj - nie transformujemy konkatenacji
     def safe_replace_npcsay(match):
         full_match = match.group(0)
@@ -789,8 +775,6 @@ if 'npcHandler:say("' in content and 'NPC_LIB.i18n.npcSay' not in content:
         # Pomiń jeśli to konkatenacja (.. przed lub po cudzysłowiu)
         start = match.start()
         end = match.end()
-        before_ctx = content[max(0, start-5):start]
-        after_ctx = content[end:min(len(content), end+5)]
         
         if '.."' in full_match or '"..' in content[end:end+10]:
             return full_match  # Nie transformuj konkatenacji

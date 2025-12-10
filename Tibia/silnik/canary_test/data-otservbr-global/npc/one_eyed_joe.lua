@@ -109,13 +109,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.multi_10")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") and player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe) > 0 and player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe) < 3 then
-		npcHandler:say("Hmm. No, I don't think so. I still feel this strange prickling in my toes.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.say_1")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "no") and player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe) > 0 and player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe) < 3 then
-		npcHandler:say("Too bad.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.say_2")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "protect ears") then
-		npcHandler:say("Protect your ears? Hmm ... Wasn't there some fabulous seafarer who used wax or something to plug his ears? There was a story about horrible bird-women or something ...? No, sounds like hogwash, doesn't it.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.say_3")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.multi_7")
@@ -127,7 +127,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Questline, 0)
 		end
 		player:setStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe, 0)
-		npcHandler:say("Great! Good luck and be careful down there!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.say_4")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "crystals") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.multi_5")
@@ -142,14 +142,14 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.multi_2")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "job") then
-		npcHandler:say("I'm a pirate. Normally I'm sailing the seas, boarding other ships and gathering treasures. But at the moment my captain graciously assigned me to watch this {cursed} entrance.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.say_5")
 	elseif MsgContains(message, "name") then
-		npcHandler:say("I'm One-Eyed Joe. From Josephina, got that? And I regard this eye patch as a personal feature of beauty!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.say_6")
 	elseif MsgContains(message, "bye") then
-		npcHandler:say("Good bye adventurer. It was nice to talk with you.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.say_7")
 		npcHandler:setTopic(playerId, 0)
 	elseif player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe) >= 0 and player:getStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe) < 3 then
-		npcHandler:say("Ah, the brave adventurer who sought to destroy the evil crystal down there. Have you been successful?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.one_eyed_joe.say_8")
 		npcHandler:setTopic(playerId, 0)
 	end
 

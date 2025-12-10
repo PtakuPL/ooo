@@ -1731,17 +1731,34 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
         LIMIT="${2:-0}"
         COUNT=0
         echo "Tryb AUTO - szukam plików NPC do migracji..."
+        echo "Wzorce: StdModule.say z text= oraz npcHandler:say(\"...\")"
         [ "$LIMIT" -gt 0 ] && echo "Limit: $LIMIT plików"
         for f in data-otservbr-global/npc/*.lua; do
-            if grep -q "StdModule\.say.*text" "$f" 2>/dev/null; then
+            NEEDS_WORK=false
+            
+            # Sprawdź StdModule.say bez i18nKey
+            if grep -q "StdModule\.say" "$f" 2>/dev/null; then
                 if ! grep -q "i18nKey" "$f" 2>/dev/null; then
-                    process_file "$f"
-                    COUNT=$((COUNT + 1))
-                    if [ "$LIMIT" -gt 0 ] && [ "$COUNT" -ge "$LIMIT" ]; then
-                        echo ""
-                        echo "Osiągnięto limit $LIMIT plików."
-                        break
+                    if grep -q 'text = "' "$f" 2>/dev/null; then
+                        NEEDS_WORK=true
                     fi
+                fi
+            fi
+            
+            # Sprawdź npcHandler:say("...") bez NPC_LIB.i18n.npcSay
+            if grep -qE 'npcHandler:say\(\s*"[^"]{5,}"' "$f" 2>/dev/null; then
+                if ! grep -q "NPC_LIB.i18n.npcSay" "$f" 2>/dev/null; then
+                    NEEDS_WORK=true
+                fi
+            fi
+            
+            if [ "$NEEDS_WORK" = "true" ]; then
+                process_file "$f"
+                COUNT=$((COUNT + 1))
+                if [ "$LIMIT" -gt 0 ] && [ "$COUNT" -ge "$LIMIT" ]; then
+                    echo ""
+                    echo "Osiągnięto limit $LIMIT plików."
+                    break
                 fi
             fi
         done

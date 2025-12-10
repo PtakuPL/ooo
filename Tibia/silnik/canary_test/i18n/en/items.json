@@ -1533,5 +1533,20 @@
   "item.3450.name": "power bolt",
   "item.3451.name": "pitchfork",
   "item.3452.name": "rake",
-  "item.3453.name": "scythe"
+  "item.3453.name": "scythe",
+  "item.3454.name": "broom",
+  "item.3455.name": "hoe",
+  "item.3456.name": "pick",
+  "item.3457.name": "shovel",
+  "item.3458.name": "anvil",
+  "item.3459.name": "wooden hammer",
+  "item.3460.name": "hammer",
+  "item.3461.name": "saw",
+  "item.3462.name": "small axe",
+  "item.3463.name": "mirror",
+  "item.3464.name": "baking tray",
+  "item.3465.name": "pot",
+  "item.3466.name": "pan",
+  "item.3467.name": "fork",
+  "item.3468.name": "spoon"
 }

@@ -5,7 +5,8 @@
     "raids": 1765411689.6962147,
     "world": 1765411697.1339889,
     "items": 1765411709.7604096,
-    "libs": 1765411717.616234
+    "libs": 1765411717.616234,
+    "events": 1765411724.8454416
   },
   "last_processed": {
     "scripts": {
@@ -34,7 +35,7 @@
     },
     "events": {
       "count": 0,
-      "timestamp": 1765409913.1482024
+      "timestamp": 1765411124.8454354
     },
     "chatchannels": {
       "count": 0,
@@ -84,7 +85,8 @@
     "raids": 2,
     "world": 2,
     "items": 2,
-    "libs": 2
+    "libs": 2,
+    "events": 2
   },
   "total_processed": {
     "items": 11689,

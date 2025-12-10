@@ -809,3 +809,8 @@ data-otservbr-global/scripts/quests/soulpit/soulpit_fight.lua
 data-otservbr-global/scripts/quests/deeplings_worldchange/actions_coral.lua
 data-otservbr-global/scripts/quests/deeplings_worldchange/actions_boxramp.lua
 data-otservbr-global/scripts/quests/deeplings_worldchange/actions_crystal.lua
+data-otservbr-global/scripts/quests/the_gravedigger_of_drefia/actions_brain.lua
+data-otservbr-global/scripts/quests/liquid_black/actions_notescoordinates.lua
+data-otservbr-global/scripts/quests/liquid_black/actions_chairteleport.lua
+data-otservbr-global/scripts/quests/feaster_of_souls/creaturescripts_pale_worm_death.lua
+data-otservbr-global/scripts/quests/the_dream_courts_quest/actions_dreamcatcher_curse.lua

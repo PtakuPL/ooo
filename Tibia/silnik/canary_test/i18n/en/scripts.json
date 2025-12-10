@@ -65,5 +65,7 @@
   "scripts.movements_cobra_mini_bosses.msg_1": "You pass the fire without taking any damage. It's now or never...",
   "scripts.actions_scarlett.msg_1": "You are not allowed to use this yet.",
   "scripts.actions_scarlett.msg_2": "You hold the old chestplate of Galthein in front of you. It does not fit and far too old to withstand any attack.",
-  "scripts.soulpit_fight.msg_1": "Someone is fighting in the soulpit!"
+  "scripts.soulpit_fight.msg_1": "Someone is fighting in the soulpit!",
+  "scripts.creaturescripts_pale_worm_death.msg_1": "Congratulations you received the Poltergeist Outfit.",
+  "scripts.actions_dreamcatcher_curse.msg_1": "You have a feeling of dread."
 }

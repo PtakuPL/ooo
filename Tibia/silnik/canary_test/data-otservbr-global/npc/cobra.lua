@@ -50,7 +50,7 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getCondition(CONDITION_POISON) then
-		player:sendTextMessage(MESSAGE_GAME_HIGHLIGHT, "Venture the path of decay!")
+		player:sendLocalizedTextMessage(MESSAGE_GAME_HIGHLIGHT, "system.venture.decay")
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		player:teleportTo(Position(33396, 32836, 14))
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)

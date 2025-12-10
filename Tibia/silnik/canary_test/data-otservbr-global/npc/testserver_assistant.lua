@@ -86,7 +86,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		local missingBlessAmt = #missingBless + (hasToF and 0 or 1)
 
 		if missingBlessAmt == 0 then
-			player:sendTextMessage(MESSAGE_STATUS, "You are already blessed.")
+			player:sendLocalizedTextMessage(MESSAGE_STATUS, "system.blessing.already")
 			player:getPosition():sendMagicEffect(CONST_ME_POFF)
 			return false
 		end

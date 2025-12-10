@@ -85,7 +85,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:say("Your hazard level has been set to " .. desiredLevel .. ". Good luck!", npc, creature)
 				if desiredLevel >= 6 and not player:kv():scoped("primal-ordeal"):get("received-prize") then
 					player:addMount(202)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Congratulations you received the Noxious Ripptor mount.")
+					player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "system.mount.received", {"Noxious Ripptor"})
 					player:addAchievement("Ripp-Ripp Hooray!")
 					player:addItem(PRIMAL_BAG, 1)
 					player:kv():scoped("primal-ordeal"):set("received-prize", true)

@@ -498,5 +498,10 @@
   "item.1099.name": "RESERVED SPRITE",
   "item.1156.name": "trapdoor",
   "item.1316.name": "sandstone",
-  "item.1339.name": "rifty earth"
+  "item.1339.name": "rifty earth",
+  "item.1465.name": "stone wall window",
+  "item.1471.name": "stone wall window",
+  "item.1481.name": "stone wall window",
+  "item.1486.name": "stone wall window",
+  "item.1538.name": "bamboo wall window"
 }

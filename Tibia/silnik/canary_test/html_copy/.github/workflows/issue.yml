@@ -1,8 +1,10 @@
-name: Issue - Labeling
+name: Issue - Labeling (disabled)
 on:
   workflow_dispatch:
-  issues:
-      types: ['opened']
+    inputs:
+      note:
+        description: 'Workflow disabled; manual dispatch only.'
+        required: false
 jobs:
   build:
     runs-on: ubuntu-latest

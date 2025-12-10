@@ -56,8 +56,8 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, text = "Once I was a member of the order of the nightmare knights. Now I am but a shadow who walks these cold halls." })
-keywordHandler:addKeyword({ "boots" }, StdModule.say, { npcHandler = npcHandler, text = "The north has a puzzle to complete." })
+keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.a_ghostly_woman.stdmod_1" })
+keywordHandler:addKeyword({ "boots" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.a_ghostly_woman.stdmod_2" })
 
 npcHandler:setMessage(MESSAGE_GREET, "I feel you. I hear your thoughts. You are ... alive.")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Alone ... so alone. So cold.")

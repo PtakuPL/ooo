@@ -66,7 +66,7 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-keywordHandler:addKeyword({ "acorn" }, StdModule.say, { npcHandler = npcHandler, text = "Chh? Chhh?? <though you don't understand squirrelish, that one seems really excited>" })
+keywordHandler:addKeyword({ "acorn" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.a_fluffy_squirrel.stdmod_1" })
 
 npcHandler:setMessage(MESSAGE_GREET, "Chhchh?")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Chh...")

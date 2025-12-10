@@ -4872,3 +4872,17 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/gladys.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/gnomish_operative_cathing.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/menesto.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/milos.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/albert.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/iwan.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/ezean.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/zeronex.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/tezila.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/gnome.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/tandros.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/telas_golem.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/ross.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/robert.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/an_imprisoned_goblin.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/drog.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/norman_the_foreman.lua

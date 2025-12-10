@@ -665,3 +665,10 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/tonar_oskayaat.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/cerdras.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/sebastian_nargor.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/obi.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/kendra.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/maris_fenrock.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/rapanaio_isle_of_evil.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/alternative_rock.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/a_ghostly_woman.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/rafzan.lua

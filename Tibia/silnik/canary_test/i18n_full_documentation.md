@@ -23184,3 +23184,80 @@ Kategoria: npc
 Kategoria: npc
 
 ---
+
+## [2025-12-10 04:16:15] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/obi.lua`
+
+**Akcja:** Wyekstrahowano 47 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:16:18] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/kendra.lua`
+
+**Akcja:** Wyekstrahowano 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:16:20] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/maris_fenrock.lua`
+
+**Akcja:** Wyekstrahowano 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:16:24] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/rapanaio_isle_of_evil.lua`
+
+**Akcja:** Wyekstrahowano 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:16:25] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/alternative_rock.lua`
+
+**Akcja:** Wyekstrahowano 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:16:26] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/a_ghostly_woman.lua`
+
+**Akcja:** Wyekstrahowano 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:16:30] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/rafzan.lua`
+
+**Akcja:** Wyekstrahowano 12 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---

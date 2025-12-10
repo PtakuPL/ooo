@@ -1,152 +1,152 @@
 {
-  "last_updated": "2025-12-10 04:16:02",
+  "last_updated": "2025-12-10 04:16:30",
   "current_operation": {
-    "type": "process",
+    "type": "cycle_end",
     "phase": 1,
     "category": "scripts",
-    "file": "obi.lua",
-    "action": "Przetwarzanie lua",
-    "status": "in_progress",
-    "details": "Katalog: data-otservbr-global/npc"
+    "file": "Cykl 1",
+    "action": "Zakończono przetwarzanie",
+    "status": "completed",
+    "details": "10 plików"
   },
   "recent_operations": [
     {
-      "time": "2025-12-10 04:16:02",
-      "type": "process",
-      "file": "obi.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:16:01",
-      "type": "process",
-      "file": "menesto.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:16:01",
-      "type": "process",
-      "file": "gnomish_operative_cathing.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:16:01",
-      "type": "process",
-      "file": "gladys.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:16:01",
-      "type": "process",
-      "file": "ukea.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:16:01",
-      "type": "process",
-      "file": "chuck_the_worker.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:16:01",
-      "type": "process",
-      "file": "golem_guardian.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:16:01",
-      "type": "process",
-      "file": "sebastian_nargor.lua",
-      "action": "Lua migration",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-10 04:15:59",
-      "type": "process",
-      "file": "sebastian_nargor.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:15:58",
-      "type": "process",
-      "file": "adrenius.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:15:58",
-      "type": "process",
-      "file": "cerdras.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:15:58",
-      "type": "process",
-      "file": "tonar_oskayaat.lua",
-      "action": "Lua migration",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-10 04:15:58",
+      "time": "2025-12-10 04:16:30",
       "type": "cycle_end",
       "file": "Cykl 1",
       "action": "Zakończono przetwarzanie",
       "status": "completed"
     },
     {
-      "time": "2025-12-10 04:15:58",
+      "time": "2025-12-10 04:16:30",
       "type": "process",
-      "file": "tonar_oskayaat.lua",
+      "file": "rafzan.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-10 04:15:57",
+      "time": "2025-12-10 04:16:27",
       "type": "process",
-      "file": "tonar_oskayaat.lua",
+      "file": "rafzan.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:15:57",
+      "time": "2025-12-10 04:16:27",
       "type": "process",
-      "file": "tonar_oskayaat.lua",
+      "file": "norman_the_foreman.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:15:57",
+      "time": "2025-12-10 04:16:26",
       "type": "process",
-      "file": "dr_merlay.lua",
+      "file": "drog.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:15:57",
+      "time": "2025-12-10 04:16:26",
       "type": "process",
-      "file": "dr_merlay.lua",
+      "file": "an_imprisoned_goblin.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:15:57",
+      "time": "2025-12-10 04:16:26",
       "type": "process",
-      "file": "corym_worker_04.lua",
+      "file": "a_ghostly_woman.lua",
+      "action": "Lua migration",
+      "status": "completed"
+    },
+    {
+      "time": "2025-12-10 04:16:25",
+      "type": "process",
+      "file": "a_ghostly_woman.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:15:57",
+      "time": "2025-12-10 04:16:25",
       "type": "process",
-      "file": "corym_worker_04.lua",
+      "file": "robert.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:16:25",
+      "type": "process",
+      "file": "alternative_rock.lua",
+      "action": "Lua migration",
+      "status": "completed"
+    },
+    {
+      "time": "2025-12-10 04:16:24",
+      "type": "process",
+      "file": "alternative_rock.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:16:24",
+      "type": "process",
+      "file": "ross.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:16:24",
+      "type": "process",
+      "file": "rapanaio_isle_of_evil.lua",
+      "action": "Lua migration",
+      "status": "completed"
+    },
+    {
+      "time": "2025-12-10 04:16:22",
+      "type": "process",
+      "file": "rapanaio_isle_of_evil.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:16:22",
+      "type": "process",
+      "file": "telas_golem.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:16:20",
+      "type": "process",
+      "file": "tandros.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:16:20",
+      "type": "process",
+      "file": "gnome.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:16:20",
+      "type": "process",
+      "file": "maris_fenrock.lua",
+      "action": "Lua migration",
+      "status": "completed"
+    },
+    {
+      "time": "2025-12-10 04:16:18",
+      "type": "process",
+      "file": "maris_fenrock.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:16:18",
+      "type": "process",
+      "file": "tezila.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     }
@@ -154,7 +154,7 @@
   "errors": [],
   "warnings": [],
   "stats": {
-    "files_this_session": 736,
+    "files_this_session": 743,
     "keys_this_session": 0,
     "errors_this_session": 0,
     "fixes_applied": 0

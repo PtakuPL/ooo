@@ -2193,5 +2193,20 @@
   "item.4870.name": "botanist's container",
   "item.4871.name": "explorer brooch",
   "item.4872.name": "ice pick",
-  "item.4909.name": "ship rail"
+  "item.4909.name": "ship rail",
+  "item.4910.name": "ship cabin wall",
+  "item.4911.name": "open door",
+  "item.4912.name": "closed door",
+  "item.4913.name": "closed door",
+  "item.4914.name": "open door",
+  "item.4917.name": "ship railing",
+  "item.4918.name": "ship rail",
+  "item.4919.name": "ship cabin wall",
+  "item.4971.name": "ventilation grille",
+  "item.4972.name": "bollard",
+  "item.4973.name": "anchor",
+  "item.4976.name": "anchor",
+  "item.4989.name": "white flag",
+  "item.4990.name": "pirate flag",
+  "item.4994.name": "sharp icicles"
 }

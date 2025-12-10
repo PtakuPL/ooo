@@ -2504,10 +2504,13 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                             # Przeszukaj wszystkie pliki scripts (bez limitu)
                             while IFS= read -r f; do
                                 [ -f "$f" ] || continue
-                                # Pomiń już przetworzone w JSON
+                                
+                                # Pomiń już przetworzone w JSON (relatywna ścieżka)
                                 echo "$COMPLETED_LIST" | grep -qF "$f" && continue
-                                # Pomiń już przetworzone w starym pliku
+                                
+                                # Pomiń już przetworzone w starym pliku (absolutna lub relatywna)
                                 grep -qF "$f" "$PROCESSED_FILE" 2>/dev/null && continue
+                                grep -qF "$(pwd)/$f" "$PROCESSED_FILE" 2>/dev/null && continue
                                 
                                 # Szukaj sendTextMessage z czystym stringiem
                                 if grep -qE 'sendTextMessage\s*\([^,]+,\s*"[^"]+"\s*\)' "$f" 2>/dev/null; then

@@ -67,5 +67,13 @@
   "scripts.actions_scarlett.msg_2": "You hold the old chestplate of Galthein in front of you. It does not fit and far too old to withstand any attack.",
   "scripts.soulpit_fight.msg_1": "Someone is fighting in the soulpit!",
   "scripts.creaturescripts_pale_worm_death.msg_1": "Congratulations you received the Poltergeist Outfit.",
-  "scripts.actions_dreamcatcher_curse.msg_1": "You have a feeling of dread."
+  "scripts.actions_dreamcatcher_curse.msg_1": "You have a feeling of dread.",
+  "scripts.keys.msg_1": "You have entered an ancient demon prison cell!",
+  "scripts.keys.msg_2": "You have fifteen minutes to kill and loot this boss, else you will lose that chance.",
+  "scripts.golden.msg_1": "You need 5 players to fight with this boss.",
+  "scripts.golden.msg_2": "Someone is fighting against the boss! You need wait awhile.",
+  "scripts.golden.msg_3": "You have faced this boss in the last ",
+  "scripts.nightmare_beast_curse.msg_1": "The beast laid a terrible curse on you!",
+  "scripts.maxxenius_energy_elemental.msg_1": "You feel a powerfull eletric charge building up!",
+  "scripts.spider_queen_wrap.msg_1": "The spider queen caught you in her net and paralysed you!"
 }

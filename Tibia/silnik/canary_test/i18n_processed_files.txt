@@ -814,3 +814,8 @@ data-otservbr-global/scripts/quests/liquid_black/actions_notescoordinates.lua
 data-otservbr-global/scripts/quests/liquid_black/actions_chairteleport.lua
 data-otservbr-global/scripts/quests/feaster_of_souls/creaturescripts_pale_worm_death.lua
 data-otservbr-global/scripts/quests/the_dream_courts_quest/actions_dreamcatcher_curse.lua
+data-otservbr-global/scripts/actions/roshamuul/prison/keys.lua
+data-otservbr-global/scripts/actions/roshamuul/prison/golden.lua
+data-otservbr-global/scripts/spells/monster/nightmare_beast_curse.lua
+data-otservbr-global/scripts/spells/monster/maxxenius_energy_elemental.lua
+data-otservbr-global/scripts/spells/monster/spider_queen_wrap.lua

@@ -3232,7 +3232,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:24:51.478178"
+      "completed_at": "2025-12-10T12:25:01.861734"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -3337,7 +3337,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:24:52.364831"
+      "completed_at": "2025-12-10T12:25:02.861528"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -3442,7 +3442,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:24:53.331084"
+      "completed_at": "2025-12-10T12:25:04.373123"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -3547,7 +3547,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:24:54.421993"
+      "completed_at": "2025-12-10T12:25:06.117788"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -3652,7 +3652,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:24:54.962258"
+      "completed_at": "2025-12-10T12:25:06.943810"
     }
   },
   "global_stats": {

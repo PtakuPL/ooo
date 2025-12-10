@@ -782,18 +782,15 @@ EOF
 #===============================================================================
 stage_6() {
     local file="$1"
-    log "${BLUE}[6/8] TRANSLATION${NC}: $file"
+    log "${BLUE}[6/8] PLACEHOLDER${NC}: $file"
     
     local base=$(basename "$file" .lua)
     local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
     
-    # Lista głównych języków (zaczynamy od najważniejszych)
-    local MAIN_LANGS="pl de es pt fr it ru"
-    
+    # Etap 6 tylko tworzy placeholdery [LANG] - prawdziwe tłumaczenia w trybie TRANSLATION
     python3 << PYEOF
 import json
 import os
-import re
 
 safe_name = "$safe"
 status_file = "$STATUS_FILE"
@@ -813,13 +810,12 @@ except:
 npc_keys = {k: v for k, v in en_data.items() if k.startswith(f"npc.{safe_name}.")}
 
 if not npc_keys:
-    print("Brak kluczy dla tego NPC")
+    print("Brak kluczy dla tego NPC - skip")
     exit(0)
 
-# Prosta "pseudo-tłumaczenie" dla testu - w produkcji użyć API tłumaczenia
-# Na razie tylko kopiujemy EN jako placeholder z tagiem [LANG]
-langs_done = []
+# Tylko placeholder dla głównych języków (szybkie)
 MAIN_LANGS = ["pl", "de", "es", "pt", "fr", "it", "ru"]
+langs_done = []
 
 for lang in MAIN_LANGS:
     lang_dir = f"{i18n_dir}/{lang}"
@@ -835,7 +831,7 @@ for lang in MAIN_LANGS:
     added = 0
     for key, text in npc_keys.items():
         if key not in lang_data:
-            # Placeholder - do ręcznego tłumaczenia lub API
+            # Placeholder - do przetłumaczenia w trybie TRANSLATION
             lang_data[key] = f"[{lang.upper()}] {text}"
             added += 1
     
@@ -847,15 +843,16 @@ for lang in MAIN_LANGS:
 # Update status
 with open(status_file, "r") as f:
     status = json.load(f)
-status["files"][file_path]["stages"]["6_translation"] = {
+status["files"][file_path]["stages"]["6_placeholder"] = {
     "status": "completed",
     "languages": langs_done,
-    "keys_per_lang": len(npc_keys)
+    "keys_per_lang": len(npc_keys),
+    "note": "Placeholdery - do przetłumaczenia w trybie --translate"
 }
 with open(status_file, "w") as f:
     json.dump(status, f, indent=2)
 
-print(f"Tłumaczenie: {len(langs_done)} języków, {len(npc_keys)} kluczy każdy")
+print(f"Placeholdery: {len(langs_done)} języków, {len(npc_keys)} kluczy każdy")
 PYEOF
     
     log "${GREEN}✓ Etap 6 OK${NC}"

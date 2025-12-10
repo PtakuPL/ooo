@@ -4214,6 +4214,12 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                     echo "   📈 Wynik: +$KEYS_ADDED kluczy, $FILES_CHANGED plików .lua, COUNT=$COUNT"
                     update_category_state "$MODE_CAT" "$EFFECTIVE_COUNT"
                     ;;
+                TRANSLATION_SYNC)
+                    echo "🌍 TRYB: TRANSLATION_SYNC - Etap 1 (język: $MODE_CAT, plik: $MODE_COUNT, brakuje: $MODE_EXTRA)"
+                    
+                    # Synchronizuj klucze EN → LANG z prefixem [EN]
+                    sync_translation_keys "$MODE_CAT" "$MODE_COUNT" "${MODE_EXTRA:-300}"
+                    ;;
                 AUTO_TRANSLATE)
                     echo "🌍 TRYB: AUTO TRANSLATE (język: $MODE_CAT, plik: $MODE_COUNT, kluczy: $MODE_EXTRA)"
                     

@@ -1,11 +1,11 @@
 {
   "schema_version": "2.1",
-  "last_updated": "2025-12-10T05:02:43+01:00",
+  "last_updated": "2025-12-10T05:10:49+01:00",
   "worker": {
     "version": "4.2",
     "status": "running",
-    "mode": "extraction",
-    "cycle": 15,
+    "mode": "analysis",
+    "cycle": 19,
     "files_per_cycle": 10,
     "pid": 385540
   },
@@ -32,27 +32,27 @@
   "recent_files": [
   {
     "file": "olrik.lua",
-    "time": "05:02:43",
+    "time": "05:10:49",
     "status": "success"
   },
   {
     "file": "rapanaio_boat.lua",
-    "time": "05:02:43",
+    "time": "05:10:49",
     "status": "success"
   },
   {
     "file": "nilsor.lua",
-    "time": "05:02:43",
+    "time": "05:10:49",
     "status": "success"
   },
   {
     "file": "captain_greyhound.lua",
-    "time": "05:02:43",
+    "time": "05:10:49",
     "status": "success"
   },
   {
     "file": "urks_the_mute.lua",
-    "time": "05:02:43",
+    "time": "05:10:49",
     "status": "success"
   }
 ]

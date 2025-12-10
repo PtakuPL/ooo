@@ -18,5 +18,10 @@
   "item.17.name": "tea",
   "item.18.name": "ink",
   "item.19.name": "candyfluid",
-  "item.20.name": "chocolate"
+  "item.20.name": "chocolate",
+  "item.100.name": "void",
+  "item.101.name": "earth",
+  "item.102.name": "white flower",
+  "item.103.name": "dirt",
+  "item.104.name": "sand"
 }

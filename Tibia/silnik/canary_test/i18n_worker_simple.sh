@@ -502,14 +502,15 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 | 🖥️ Client UI | {status_icon(ui_keys, 200)} | {ui_keys}/200 ({round(ui_keys/200*100)}%) | 200 |
 | 💿 Installer/C++ | {status_icon(cpp_keys, TARGETS["cpp"])} | {cpp_keys}/{TARGETS["cpp"]} ({round(cpp_keys/TARGETS["cpp"]*100) if TARGETS["cpp"] else 0}%) | {TARGETS["cpp"]} |
 
-### ⏳ Faza 4: 🌍 Tłumaczenia
+### ⏳ Faza 4: 🌍 Tłumaczenia (Etap 1: Sync Kluczy)
 
-| Kategoria | Status | Postęp | Cel |
-|-----------|--------|--------|-----|
-| 🇵🇱 Polski | {"🔄" if "pl" in langs_with_data else "⏳"} | {len([l for l in langs_with_data if l == "pl"])}/1 | 1 |
-| 🇩🇪 Niemiecki | {"🔄" if "de" in langs_with_data else "⏳"} | {len([l for l in langs_with_data if l == "de"])}/1 | 1 |
-| 🇪🇸 Hiszpański | {"🔄" if "es" in langs_with_data else "⏳"} | {len([l for l in langs_with_data if l == "es"])}/1 | 1 |
-| 🌐 Pozostałe (50) | ⏳ | {len(langs_with_data)}/{langs_count} ({round(len(langs_with_data)/langs_count*100)}%) | {langs_count} |
+| Język | Status | Kluczy | Etap |
+|-------|--------|--------|------|
+| 🇩🇪 Niemiecki | {"✅ Sync" if "de" in sync_langs_done else ("🔄 Sync..." if sync_current_lang == "de" else ("📊 " + str(sync_stats.get("de", {}).get("total", 0)) + " kluczy" if sync_stats.get("de") else "⏳ Czeka"))} | {sync_stats.get("de", {}).get("total", 0) if sync_stats.get("de") else 0} | {"[EN] prefix" if sync_stats.get("de") else "nie rozpoczęto"} |
+| 🇵🇱 Polski | {"✅ Sync" if "pl" in sync_langs_done else ("🔄 Sync..." if sync_current_lang == "pl" else ("📊 " + str(sync_stats.get("pl", {}).get("total", 0)) + " kluczy" if sync_stats.get("pl") else "⏳ Czeka"))} | {sync_stats.get("pl", {}).get("total", 0) if sync_stats.get("pl") else 0} | {"[EN] prefix" if sync_stats.get("pl") else "nie rozpoczęto"} |
+| 🇪🇸 Hiszpański | {"✅ Sync" if "es" in sync_langs_done else ("🔄 Sync..." if sync_current_lang == "es" else ("📊 " + str(sync_stats.get("es", {}).get("total", 0)) + " kluczy" if sync_stats.get("es") else "⏳ Czeka"))} | {sync_stats.get("es", {}).get("total", 0) if sync_stats.get("es") else 0} | {"[EN] prefix" if sync_stats.get("es") else "nie rozpoczęto"} |
+| 🇫🇷 Francuski | {"✅ Sync" if "fr" in sync_langs_done else ("🔄 Sync..." if sync_current_lang == "fr" else ("📊 " + str(sync_stats.get("fr", {}).get("total", 0)) + " kluczy" if sync_stats.get("fr") else "⏳ Czeka"))} | {sync_stats.get("fr", {}).get("total", 0) if sync_stats.get("fr") else 0} | {"[EN] prefix" if sync_stats.get("fr") else "nie rozpoczęto"} |
+| 🌐 Pozostałe ({len(sync_langs_done)}/53) | {"🔄" if sync_current_lang else "⏳"} | {sum(v.get("total", 0) for v in sync_stats.values())} | {f"Aktualnie: {sync_current_lang.upper()}" if sync_current_lang else "nie rozpoczęto"} |
 
 ---
 
@@ -519,16 +520,16 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #{cycle_count:>6} │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    {"🟢 RUNNING" if in_progress > 0 else "✅ IDLE":40} │
-│ Tryb:      {"MIGRATION (multi-category)":40} │
-│ Kategoria: {"🎒 " + current_category.upper() if current_category else "IDLE":40} │
+│ Status:    {"🟢 RUNNING" if in_progress > 0 or sync_current_lang else "✅ IDLE":40} │
+│ Tryb:      {("🌍 TRANSLATION_SYNC (Etap 1)" if sync_last_ts > last_activity_time and sync_current_lang else "MIGRATION (multi-category)"):40} │
+│ Kategoria: {("🌍 " + sync_current_lang.upper() + "/" + sync_current_cat if sync_last_ts > last_activity_time and sync_current_lang else "🎒 " + current_category.upper() if current_category else "IDLE"):40} │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: {current_category}                      │
-│ [{progress_bar(all_json_categories.get(current_category, 0), TARGETS.get(current_category, 1000), 50)}] │
-│ {all_json_categories.get(current_category, 0)}/{TARGETS.get(current_category, 1000)} kluczy ({round(all_json_categories.get(current_category, 0)/TARGETS.get(current_category, 1000)*100) if TARGETS.get(current_category, 1000) else 0}%)                                          │
+│ 📊 Ostatnia aktywność: {(sync_current_lang.upper() + "/" + sync_current_cat if sync_last_ts > last_activity_time and sync_current_lang else current_category):25}                      │
+│ [{progress_bar(sync_stats.get(sync_current_lang, {}).get("total", 0) if sync_last_ts > last_activity_time else all_json_categories.get(current_category, 0), total_keys if sync_last_ts > last_activity_time else TARGETS.get(current_category, 1000), 50)}] │
+│ {(str(sync_stats.get(sync_current_lang, {}).get("total", 0)) + "/" + str(total_keys) + " kluczy") if sync_last_ts > last_activity_time else str(all_json_categories.get(current_category, 0)) + "/" + str(TARGETS.get(current_category, 1000)) + " kluczy"} ({round((sync_stats.get(sync_current_lang, {}).get("total", 0)/total_keys*100) if sync_last_ts > last_activity_time and total_keys else (all_json_categories.get(current_category, 0)/TARGETS.get(current_category, 1000)*100) if TARGETS.get(current_category, 1000) else 0)}%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: {total_files_processed} operacji               │
-│ 🕐 Aktywne kategorie: {len([c for c,k in all_json_categories.items() if k > 0])}                               │
+│ 🌍 Języki zsync: {len(sync_langs_done)}/53                                │
 │ 📅 Ostatnia aktualizacja: {timestamp}                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -542,7 +543,7 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 | 📁 Operacji wykonanych | **{total_files_processed}** | we wszystkich kategoriach |
 | ✅ NPC zmigrowanych | **{completed}** ({migrated_npc} z i18nKey) | z {total_npc} plików NPC |
 | 🔑 Kluczy wyciągniętych | **{total_keys}** | we wszystkich kategoriach |
-| 🌍 Języków z danymi | **{len(langs_with_data)}**/{langs_count} | {", ".join(sorted(langs_with_data)[:5])}{"..." if len(langs_with_data) > 5 else ""} |
+| 🌍 Języków zsynchronizowanych | **{len(sync_langs_done)}**/53 | {", ".join(sync_langs_done[:5]) if sync_langs_done else "brak"}{"..." if len(sync_langs_done) > 5 else ""} |
 | 🔄 Cykli wykonanych | **#{cycle_count}** | continuous mode |
 | 🎯 Aktywne kategorie | **{len([c for c,k in all_json_categories.items() if k > 0])}** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
@@ -551,7 +552,8 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 ## 📜 Historia ostatnich operacji
 
-{chr(10).join([f"- {'🎒' if op['category']=='items' else '🧙' if op['category']=='npc' else '📜' if op['category']=='scripts' else '👹' if op['category']=='monsters' else '⚡'} `{op['category']}` +{op['count']} kluczy @ {op['time_str']}" for op in recent_operations[:8]]) if recent_operations else "- Brak operacji"}
+{chr(10).join([f"- {'🌍' if op.get('type')=='translation_sync' else '🎒' if op['category']=='items' else '🧙' if op['category']=='npc' else '📜' if op['category']=='scripts' else '👹' if op['category']=='monsters' else '⚡'} `{op['category']}` +{op['count']} kluczy @ {op['time_str']}" for op in recent_operations[:8]]) if recent_operations else "- Brak operacji"}
+
 
 ---
 

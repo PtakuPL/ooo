@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:41:14 UTC  
+> **Aktualizacja:** 2025-12-11 00:41:21 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **29113** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#116** | - |
+| 🔄 Cykl | **#117** | - |
 
 ---
 
@@ -69,7 +69,7 @@
 | 🇵🇱 Polski | 📊 394445 kluczy | 394445 | [EN] prefix |
 | 🇪🇸 Hiszpański | 📊 394445 kluczy | 394445 | [EN] prefix |
 | 🇫🇷 Francuski | 📊 109 kluczy | 109 | [EN] prefix |
-| 🌐 Pozostałe (0/53) | 🔄 | 1504012 | Aktualnie: PT |
+| 🌐 Pozostałe (0/53) | 🔄 | 1531928 | Aktualnie: PT |
 
 ---
 
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   116 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   117 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🌍 TRANSLATION_SYNC (Etap 1)              │
-│ Kategoria: 🌍 PT/libs.json                           │
+│ Kategoria: 🌍 PT/monsters.json                       │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: PT/libs.json                                   │
+│ 📊 Ostatnia aktywność: PT/monsters.json                               │
 │ [██████████████████████████████████████████████████] │
-│ 279348/29113 kluczy (960%)                                          │
+│ 307264/29113 kluczy (1055%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 26912 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:41:14                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:41:21                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -103,7 +103,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29113** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#116** | continuous mode |
+| 🔄 Cykli wykonanych | **#117** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,7 +111,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🌍 `PT/libs.json` +279348 kluczy @ 00:41:14
+- 🌍 `PT/monsters.json` +307264 kluczy @ 00:41:20
 - ⚡ `npclib` +0 kluczy @ 00:39:00
 - ⚡ `startup` +0 kluczy @ 00:38:54
 - ⚡ `modules` +0 kluczy @ 00:38:46
@@ -324,7 +324,7 @@
 | client | 5m | 2x | Progresywny backoff |
 | sendtextmessage | 5m | 2x | Progresywny backoff |
 | keywordhandler | 5m | 2x | Progresywny backoff |
-| twig | 6m | 2x | Progresywny backoff |
+| twig | 5m | 2x | Progresywny backoff |
 
 ---
 
@@ -332,7 +332,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #116 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #117 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -344,7 +344,7 @@
 | DE | 435,665 | ⏳ |
 | PL | 394,445 | ⏳ |
 | ES | 394,445 | ⏳ |
-| PT | 279,348 | 🔄 |
+| PT | 307,264 | 🔄 |
 | FR | 109 | ⏳ |
 | IT | 0 | ⏳ |
 | NL | 0 | ⏳ |
@@ -352,7 +352,7 @@
 | SK | 0 | ⏳ |
 | HU | 0 | ⏳ |
 
-> **Aktualnie:** PT / libs.json  
+> **Aktualnie:** PT / monsters.json  
 > **Ukończone języki:** 0/53  
 > **Prefix:** `[EN] ` (klucze do przetłumaczenia)
 
@@ -375,7 +375,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:41:14  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:41:21  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

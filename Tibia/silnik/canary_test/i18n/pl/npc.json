@@ -4250,5 +4250,8 @@
   "npc.ukea.farewell_1": "[PL] Goodbye, |PLAYERNAME|.",
   "npc.zerbrus.greet_1": "[PL] Greetings, |PLAYERNAME|! You're looking really bad. Let me heal your wounds.",
   "npc.zerbrus.greet_2": "[PL] <nods> At your service, |PLAYERNAME|, protecting the {village} from {monsters}.",
-  "npc.zerbrus.farewell_1": "[PL] Bye, |PLAYERNAME|."
+  "npc.zerbrus.farewell_1": "[PL] Bye, |PLAYERNAME|.",
+  "npc.canary.stdmod_1": "[PL] I can promote you for 20000 gold coins. Do you want me to promote you?",
+  "npc.canary.stdmod_2": "[PL] Alright then, come back when you are ready.",
+  "npc.canary.say_1": "[PL] This the our discord group link: {https://discordapp.com/invite/3NxYnyV}"
 }

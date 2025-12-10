@@ -278,6 +278,7 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `canary` - ukończono 2025-12-10 15:01
 - ✅ `ukea` - ukończono 2025-12-10 14:15
 - ✅ `stutch` - ukończono 2025-12-10 14:15
 - ✅ `shirith` - ukończono 2025-12-10 14:15

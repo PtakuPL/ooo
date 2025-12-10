@@ -317,7 +317,7 @@ NOTE:tekst       # Notatka
 
 ### ❌ Pozostało do zrobienia:
 - ❌ **voices** - ~300+ plików, wymaga modyfikacji C++ (broadcast → per-player)
-- ❌ **npcHandler:say({...})** - tablice tekstów (~50 plików)
+- ✅ **npcHandler:say({...})** - tablice tekstów (22 z 24 plików przetworzonych - 265 nowych kluczy)
 - ❌ **Automatyczne tłumaczenia** - tryb TRANSLATION wymaga interaktywnego terminala
 - ❌ **Scripts z wieloliniowymi sendTextMessage** - regex nie łapie multi-line
 - ❌ **Scripts ze zmiennymi** - `sendTextMessage(type, info.msgs[2])` - pominąć lub oznaczyć
@@ -326,10 +326,22 @@ NOTE:tekst       # Notatka
 | Wzorzec | Plików | Wymaga C++ | Złożoność | Status |
 |---------|--------|------------|-----------|--------|
 | `voices = {{ text = }}` | ~131 | **TAK** | 🔶 ŚREDNIA | 📋 ANALIZA GOTOWA |
-| `npcHandler:say({array})` | ~50 | NIE | 🟢 NISKA | ❌ DO ZROBIENIA |
+| `npcHandler:say({array})` | ~~50~~ **2** | NIE | 🟢 NISKA | ✅ **95% GOTOWE** |
 | `player:sendTextMessage()` | ~312 | NIE | 🟡 ŚREDNIA | ❌ DO ZROBIENIA |
 | `scripts - zmienne` | ~100+ | NIE | 🔴 WYSOKA | ⚠️ RĘCZNA PRACA |
 | `keywordHandler:add*Keyword` | ~21 | NIE | 🟢 NISKA | ❌ DO ANALIZY |
+
+### ✅ ZROBIONE (2025-12-10 - sesja wieczorna 17:00+)
+
+| ID | Co zrobiono | Szczegóły |
+|----|-------------|-----------|
+| A1 | **npcHandler:say({...}) konwersja** | 22/24 plików, 89 tablic → 265 kluczy i18n |
+| A2 | **Nowy skrypt Python** | `i18n_process_say_arrays.py` do konwersji tablic |
+| A3 | **Nowa funkcja Lua** | `NPC_LIB.i18n.npcSayMultiple()` do tablic i18n |
+
+**Pozostałe 2 pliki z tablicami (wymaga ręcznej migracji):**
+- `lynda.lua` - dynamiczne wartości (imiona graczy w ceremonii ślubnej)
+- `inigo.lua` - używa zmiennych (`hints[i]`) zamiast stringów
 
 ### 📝 NOTATKI - Scripts problem:
 Wiele plików scripts używa:
@@ -360,7 +372,7 @@ Wiele plików scripts używa:
 |-----|--------|-----------|-------------|-----------|--------|
 | `StdModule.say(text=)` | 297 | 297 ✅ | 0 | - | ✅ DONE |
 | `npcHandler:say("text")` | ~450 | ~450 ✅ | **~2** | - | ✅ v2.1 DONE |
-| `npcHandler:say({array})` | ~50 | 0 | **~50** | 🟡 ŚREDNI | ❌ TODO |
+| `npcHandler:say({array})` | 24 | **22** ✅ | **2** | 🟡 ŚREDNI | ✅ 95% DONE |
 | `player:sendTextMessage()` | 312 | 0 | **312** | 🔴 WYSOKI | ❌ TODO |
 | `voices = {{ text = }}` | 131 | 0 | **131** | 🟡 ŚREDNI | ❌ TODO (C++) |
 | `keywordHandler:add*Keyword` | 21 | 0 | **21** | 🟡 ŚREDNI | ❌ TODO |

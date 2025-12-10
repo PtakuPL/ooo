@@ -207,11 +207,12 @@ for fpath, completed_at in sorted_files:
     time_str = completed_at[:16].replace("T", " ") if completed_at else "?"
     recent_completed.append(f"- ✅ `{fname}` - ukończono {time_str}")
 
-# Cele dla kategorii
+# Cele dla kategorii (zaktualizowane 2025-12-10)
 TARGETS = {
-    "game": 100, "items": 40000, "misc": 100, "monsters": 500,
+    "game": 100, "items": 40000, "misc": 100, "monsters": 5000,
     "npc": 15000, "player": 200, "quests": 500, "scripts": 1000,
-    "server": 300, "spells": 200, "system": 2000, "ui": 200
+    "server": 300, "spells": 200, "system": 2000, "ui": 200,
+    "php": 3000, "cpp": 500, "html": 500, "client": 200
 }
 
 def progress_bar(current, target, width=20):

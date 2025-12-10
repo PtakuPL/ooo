@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:36:41 UTC  
+> **Aktualizacja:** 2025-12-11 00:36:49 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **29113** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#79** | - |
+| 🔄 Cykl | **#80** | - |
 
 ---
 
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    79 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    80 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 CLIENT                                 │
+│ Kategoria: 🎒 MONSTERS                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: client                                         │
+│ 📊 Ostatnia aktywność: monsters                                       │
 │ [██████████████████████████████████████████████████] │
-│ 283/200 kluczy (142%)                                          │
+│ 7341/5000 kluczy (147%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 26912 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:36:41                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:36:49                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -103,7 +103,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29113** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#79** | continuous mode |
+| 🔄 Cykli wykonanych | **#80** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,6 +111,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- 👹 `monsters` +0 kluczy @ 00:36:49
 - ⚡ `client` +0 kluczy @ 00:36:41
 - ⚡ `html` +0 kluczy @ 00:34:13
 - ⚡ `php` +0 kluczy @ 00:32:59
@@ -118,7 +119,6 @@
 - ⚡ `startup` +0 kluczy @ 00:28:49
 - ⚡ `modules` +0 kluczy @ 00:28:42
 - ⚡ `chatchannels` +0 kluczy @ 00:28:35
-- ⚡ `events` +0 kluczy @ 00:28:28
 
 
 ---
@@ -278,17 +278,17 @@
 
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
-| items | 13749 | 11689 | 2 | ⏭️ Skip 1m |
-| monsters | 7341 | 9549 | 2 | ⏭️ Skip 0m |
+| items | 13749 | 11689 | 2 | ⏭️ Skip 0m |
+| monsters | 7341 | 9549 | 4 | ⏭️ Skip 59m |
 | npc | 5334 | 0 | 0 | ✅ Active |
 | php | 1097 | 3219 | 2 | ⏭️ Skip 6m |
 | html | 663 | 749 | 2 | ⏭️ Skip 7m |
 | scripts | 385 | 0 | 4 | ⏭️ Skip 46m |
 | client | 283 | 821 | 2 | ⏭️ Skip 9m |
 | raids | 147 | 351 | 2 | ⏭️ Skip 0m |
-| startup | 23 | 23 | 2 | ⏭️ Skip 2m |
+| startup | 23 | 23 | 2 | ⏭️ Skip 1m |
 | libs | 21 | 53 | 2 | ⏭️ Skip 1m |
-| modules | 16 | 16 | 2 | ⏭️ Skip 2m |
+| modules | 16 | 16 | 2 | ⏭️ Skip 1m |
 | cpp | 15 | 0 | 0 | ✅ Active |
 | spells | 15 | 0 | 0 | ✅ Active |
 | messages | 11 | 0 | 0 | ✅ Active |
@@ -309,15 +309,15 @@
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
 | scripts | 46m | 4x | Progresywny backoff |
-| monsters | 0m | 2x | Progresywny backoff |
+| monsters | 59m | 4x | Progresywny backoff |
 | raids | 0m | 2x | Progresywny backoff |
 | world | 0m | 2x | Progresywny backoff |
-| items | 1m | 2x | Progresywny backoff |
+| items | 0m | 2x | Progresywny backoff |
 | libs | 1m | 2x | Progresywny backoff |
 | events | 1m | 2x | Progresywny backoff |
 | chatchannels | 1m | 2x | Progresywny backoff |
-| modules | 2m | 2x | Progresywny backoff |
-| startup | 2m | 2x | Progresywny backoff |
+| modules | 1m | 2x | Progresywny backoff |
+| startup | 1m | 2x | Progresywny backoff |
 | npclib | 2m | 2x | Progresywny backoff |
 | php | 6m | 2x | Progresywny backoff |
 | html | 7m | 2x | Progresywny backoff |
@@ -329,7 +329,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #79 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #80 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -372,7 +372,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:36:41  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:36:49  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

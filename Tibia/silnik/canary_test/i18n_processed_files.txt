@@ -3885,3 +3885,13 @@ testyy/modules/game_minimap/minimap.lua
 testyy/modules/game_minimap/minimap.otui
 testyy/modules/game_ruleviolation/ruleviolation.otui
 testyy/modules/game_ruleviolation/ruleviolation.lua
+data-canary/monster/familiars/druid_familiar.lua
+data-canary/monster/vermins/poison_spider.lua
+data-canary/monster/vermins/spider.lua
+data-canary/monster/vermins/wasp.lua
+data-canary/monster/vermins/sandcrawler.lua
+data-canary/monster/magicals/frazzlemaw.lua
+data-canary/monster/magicals/guzzlemaw.lua
+data-canary/monster/bosses/black_knight.lua
+data-canary/monster/bosses/shadowpelt.lua
+data-canary/monster/bosses/custodian.lua

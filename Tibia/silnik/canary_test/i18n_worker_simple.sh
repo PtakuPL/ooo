@@ -1161,7 +1161,6 @@ LANG_NAMES = {
     "bg": "bułgarski", "el": "grecki", "tr": "turecki", "uk": "ukraiński",
     "zh": "chiński (uproszczony)", "ja": "japoński", "ko": "koreański", "ar": "arabski"
 }
-    pf.write(f"## Teksty do przetłumaczenia ({len(keys_batch)} kluczy)\n\n")
 
 # Przetwórz interaktywnie - agent wpisuje tłumaczenia
 translated_count = 0

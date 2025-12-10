@@ -278,6 +278,8 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `gregor` - ukończono 2025-12-10 11:25
+- ✅ `gerimor` - ukończono 2025-12-10 11:25
 - ✅ `garamond` - ukończono 2025-12-10 11:25
 - ✅ `eremo` - ukończono 2025-12-10 11:25
 - ✅ `elathriel` - ukończono 2025-12-10 11:25

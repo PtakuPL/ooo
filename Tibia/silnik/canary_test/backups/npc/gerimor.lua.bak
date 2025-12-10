@@ -64,7 +64,7 @@ end
 -- Keywords
 keywordHandler:addKeyword({ "place" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.gerimor.stdmod_1",
+	text = "This place is a sanctuary of Crunor and provides me with a opportunity of spiritual contemplation.",
 })
 
 keywordHandler:addKeyword({ "me" }, StdModule.say, {
@@ -78,7 +78,7 @@ keywordHandler:addKeyword({ "me" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "circle" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.gerimor.stdmod_2",
+	text = "We focus our interest on this we see as threatening for live and the laws of nature itself.",
 })
 
 keywordHandler:addKeyword({ "persons" }, StdModule.say, {
@@ -91,7 +91,7 @@ keywordHandler:addKeyword({ "persons" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "approaches" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.gerimor.stdmod_3",
+	text = "We might not be many but we are diverse. Our rather informal order came together in the dawn of time, when the wars of the gods ravaged the world.",
 })
 
 keywordHandler:addKeyword({ "dawn" }, StdModule.say, {
@@ -121,12 +121,12 @@ keywordHandler:addKeyword({ "direct" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "interfere" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.gerimor.stdmod_4",
+	text = "Interference comes in different forms. In this particular case there is sadly little time for subtlety and a more direct approach is necessary.",
 })
 
 keywordHandler:addKeyword({ "feyrist" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.gerimor.stdmod_5",
+	text = "The fae granted me permission to enter their hidden realm. As a druid I'm in close touch with nature so I could gain their trust. The nature spirits are inhabiting this peninsula for ages.",
 })
 
 keywordHandler:addKeyword({ "fae" }, StdModule.say, {
@@ -224,15 +224,15 @@ keywordHandler:addKeyword({ "worst" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "investigate" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.gerimor.stdmod_6",
+	text = "Those cults have to be stopped by any means possible. These are desperate times and they demand desperate actions.",
 })
 keywordHandler:addKeyword({ "actions" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.gerimor.stdmod_7",
+	text = "Spare lives where you see it fit but the cults may not be allowed to exist and disrupt the fabric of the world even more.",
 })
 keywordHandler:addKeyword({ "fabric" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.gerimor.stdmod_8",
+	text = "The weakened fabric of our reality still repels the unnatural intruder. The cults provide the thing a hold and supply it with more power, even if we couldn't figure out yet, how this works at all.",
 })
 
 keywordHandler:addKeyword({ "works" }, StdModule.say, {
@@ -248,7 +248,7 @@ keywordHandler:addKeyword({ "works" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "ties" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.gerimor.stdmod_9",
+	text = "I have several missions available that deal with servering the ties of the corrupting influence on our world.",
 })
 
 local config = {

@@ -1,6 +1,6 @@
-# NPC: frederik
+# NPC: romir
 
-**Plik:** `data-otservbr-global/npc/frederik.lua`
+**Plik:** `data-otservbr-global/npc/romir.lua`
 **Data migracji:** 2025-12-10 13:05
 **Liczba tekstów:** 0
 

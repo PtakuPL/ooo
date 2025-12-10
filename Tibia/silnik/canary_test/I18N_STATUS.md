@@ -278,6 +278,16 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `the_lootmonger` - ukończono 2025-12-10 13:05
+- ✅ `tandros` - ukończono 2025-12-10 13:05
+- ✅ `sundara` - ukończono 2025-12-10 13:05
+- ✅ `sigurd` - ukończono 2025-12-10 13:05
+- ✅ `shiriel` - ukończono 2025-12-10 13:05
+- ✅ `seymour` - ukończono 2025-12-10 13:05
+- ✅ `romir` - ukończono 2025-12-10 13:05
+- ✅ `rock_in_a_hard_place` - ukończono 2025-12-10 13:05
+- ✅ `nipuna` - ukończono 2025-12-10 13:05
+- ✅ `nelly` - ukończono 2025-12-10 13:05
 - ✅ `mordecai` - ukończono 2025-12-10 13:00
 - ✅ `imbuement_assistant` - ukończono 2025-12-10 13:00
 - ✅ `gnomegica` - ukończono 2025-12-10 13:00

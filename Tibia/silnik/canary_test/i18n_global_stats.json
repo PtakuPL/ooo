@@ -27,7 +27,7 @@
     "total": 0,
     "by_stage": {}
   },
-  "total_cycles": 14,
-  "last_update": "2025-12-10T13:04:51+01:00",
-  "mode": "TRANSLATION"
+  "total_cycles": 1,
+  "last_update": "2025-12-10T13:05:33+01:00",
+  "mode": "MIGRATION"
 }

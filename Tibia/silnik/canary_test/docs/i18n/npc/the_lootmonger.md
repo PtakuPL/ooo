@@ -1,6 +1,6 @@
-# NPC: frederik
+# NPC: the_lootmonger
 
-**Plik:** `data-otservbr-global/npc/frederik.lua`
+**Plik:** `data-otservbr-global/npc/the_lootmonger.lua`
 **Data migracji:** 2025-12-10 13:05
 **Liczba tekstów:** 0
 

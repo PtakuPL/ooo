@@ -1,4 +1,4 @@
-local internalNpcName = "Shiriel"
+local internalNpcName = "Romir"
 local npcType = Game.createNpcType(internalNpcName)
 local npcConfig = {}
 
@@ -11,11 +11,12 @@ npcConfig.walkInterval = 2000
 npcConfig.walkRadius = 2
 
 npcConfig.outfit = {
-	lookType = 159,
-	lookHead = 1,
-	lookBody = 103,
-	lookLegs = 0,
-	lookFeet = 95,
+	lookType = 153,
+	lookHead = 19,
+	lookBody = 48,
+	lookLegs = 67,
+	lookFeet = 126,
+	lookAddons = 3,
 }
 
 npcConfig.flags = {
@@ -34,7 +35,10 @@ local itemsTable = {
 		{ itemName = "mana potion", clientId = 268, buy = 56 },
 		{ itemName = "strong health potion", clientId = 236, buy = 115 },
 		{ itemName = "strong mana potion", clientId = 237, buy = 108 },
+		{ itemName = "supreme health potion", clientId = 23375, buy = 650 },
 		{ itemName = "ultimate health potion", clientId = 7643, buy = 379 },
+		{ itemName = "ultimate mana potion", clientId = 23373, buy = 488 },
+		{ itemName = "ultimate spirit potion", clientId = 23374, buy = 488 },
 		{ itemName = "vial", clientId = 2874, sell = 5 },
 	},
 	["runes"] = {
@@ -61,13 +65,21 @@ local itemsTable = {
 		{ itemName = "ultimate healing rune", clientId = 3160, buy = 175 },
 	},
 	["wands"] = {
+		{ itemName = "hailstorm rod", clientId = 3067, buy = 15000 },
 		{ itemName = "moonlight rod", clientId = 3070, buy = 1000 },
 		{ itemName = "necrotic rod", clientId = 3069, buy = 5000 },
+		{ itemName = "northwind rod", clientId = 8083, buy = 7500 },
 		{ itemName = "snakebite rod", clientId = 3066, buy = 500 },
+		{ itemName = "springsprout rod", clientId = 8084, buy = 18000 },
 		{ itemName = "terra rod", clientId = 3065, buy = 10000 },
+		{ itemName = "underworld rod", clientId = 8082, buy = 22000 },
 		{ itemName = "wand of cosmic energy", clientId = 3073, buy = 10000 },
 		{ itemName = "wand of decay", clientId = 3072, buy = 5000 },
+		{ itemName = "wand of draconia", clientId = 8093, buy = 7500 },
 		{ itemName = "wand of dragonbreath", clientId = 3075, buy = 1000 },
+		{ itemName = "wand of inferno", clientId = 3071, buy = 15000 },
+		{ itemName = "wand of starstorm", clientId = 8092, buy = 18000 },
+		{ itemName = "wand of voodoo", clientId = 8094, buy = 22000 },
 		{ itemName = "wand of vortex", clientId = 3074, buy = 500 },
 	},
 	["exercise weapons"] = {
@@ -139,16 +151,11 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Goodbye, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Goodbye, |PLAYERNAME|.")
+npcHandler:setMessage(MESSAGE_GREET, "Greetings, traveller. I'm a magical trader and trainer for sorcerer spells. How may I help you?")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye.")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my wares. Or do you want to look only at " .. GetFormattedShopCategoryNames(itemsTable) .. ".")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
-
--- Greeting message
-keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Greetings, |PLAYERNAME|.", i18nKey = "npc.shiriel.greet_1" })
---Farewell message
-keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Goodbye, |PLAYERNAME|.", i18nKey = "npc.shiriel.farewell_1" })
 
 -- On buy npc shop message
 npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBackpacks, totalCost)

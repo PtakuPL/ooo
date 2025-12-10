@@ -4176,5 +4176,9 @@
   "npc.dallheim.greet_2": "[IT] <nods> At your service, |PLAYERNAME|, protecting the {village} from {monsters}.",
   "npc.dallheim.farewell_1": "[IT] Bye, |PLAYERNAME|.",
   "npc.imbuement_assistant.say_1": "[IT] Sorry, you don't have enough money",
-  "npc.imbuement_assistant.say_2": "[IT] You have successfully completed your purchase of the items."
+  "npc.imbuement_assistant.say_2": "[IT] You have successfully completed your purchase of the items.",
+  "npc.seymour.greet_1": "[IT] Hello, |PLAYERNAME|. Welcome to the Academy of Rookgaard. May I sign you up as a {student}?",
+  "npc.seymour.farewell_1": "[IT] Good bye, |PLAYERNAME|! And remember: No running up and down in the academy!",
+  "npc.shiriel.greet_1": "[IT] Greetings, |PLAYERNAME|.",
+  "npc.shiriel.farewell_1": "[IT] Goodbye, |PLAYERNAME|."
 }

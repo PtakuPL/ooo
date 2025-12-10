@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 13:04:52 UTC  
+> **Aktualizacja:** 2025-12-10 13:05:33 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **39** | ↑ |
-| ⏭️ Plików wykluczonych | **717** | - |
-| 🔑 Kluczy i18n | **4177** | ↑ |
+| 📁 Plików przetworzonych | **49** | ↑ |
+| ⏭️ Plików wykluczonych | **709** | - |
+| 🔑 Kluczy i18n | **4181** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#14** | - |
+| 🔄 Cykl | **#1** | - |
 
 ---
 
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 4177/15000 (28%) | 15000 |
+| 🧙 NPC Dialogs | 🔄 | 4181/15000 (28%) | 15000 |
 | 📜 Lua Scripts | ⏳ | 0/1000 (0%) | 1000 |
 | 🎒 Items Database | ⏳ | 0/40000 (0%) | 40000 |
 | 👹 Monsters | ⏳ | 0/500 (0%) | 500 |
@@ -76,7 +76,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    14 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      MIGRATION (8 etapów)                     │
@@ -84,11 +84,11 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Postęp migracji NPC:                                        │
 │ [██████████████████████████████████████████████████] │
-│ 298/298 plików (100%)                                          │
+│ 299/299 plików (100%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 13:04:52                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 13:05:33                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,11 +98,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przetworzonych | **39** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **39** (298 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **4177** | we wszystkich kategoriach |
+| 📁 Plików przetworzonych | **49** | z i18n_file_status.json |
+| ✅ NPC zmigrowanych | **49** (299 z i18nKey) | z 1026 plików NPC |
+| 🔑 Kluczy wyciągniętych | **4181** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
-| 🔄 Cykli wykonanych | **#14** | continuous mode |
+| 🔄 Cykli wykonanych | **#1** | continuous mode |
 | ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -110,11 +110,11 @@
 
 ## 📜 Historia ostatnich operacji
 
-- ✅ `mordecai` - ukończono 2025-12-10 13:00
-- ✅ `imbuement_assistant` - ukończono 2025-12-10 13:00
-- ✅ `hamish` - ukończono 2025-12-10 13:00
-- ✅ `gnomegica` - ukończono 2025-12-10 13:00
-- ✅ `ghorza` - ukończono 2025-12-10 13:00
+- ✅ `the_lootmonger` - ukończono 2025-12-10 13:05
+- ✅ `tandros` - ukończono 2025-12-10 13:05
+- ✅ `sundara` - ukończono 2025-12-10 13:05
+- ✅ `sigurd` - ukończono 2025-12-10 13:05
+- ✅ `shiriel` - ukończono 2025-12-10 13:05
 
 ---
 
@@ -173,12 +173,12 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 4177 |
+| 🔑 Kluczy | 4181 |
 | 🎯 Cel | 15000 |
 | 📊 Postęp | 28% |
 | 📁 Plik | i18n/en/npc.json |
 | 📁 Plików NPC | 1026 |
-| ✅ Zmigrowanych | 298 |
+| ✅ Zmigrowanych | 299 |
 | 🔄 Do migracji | 0 |
 
 </details>
@@ -273,7 +273,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #14 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -282,7 +282,7 @@
 
 ```
 [⏳] Items (0)      ░░░░░░░░░░░░░░░░░░░░  0%
-[🔄] NPC (4177)            █████░░░░░░░░░░░░░░░  28%
+[🔄] NPC (4181)            █████░░░░░░░░░░░░░░░  28%
 [⏳] Scripts (0)      ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Monsters (0)    ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Spells (0)       ░░░░░░░░░░░░░░░░░░░░  0%
@@ -294,23 +294,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 13:04:52  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 13:05:33  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `mordecai` - ukończono 2025-12-10 13:00
-- ✅ `imbuement_assistant` - ukończono 2025-12-10 13:00
-- ✅ `hamish` - ukończono 2025-12-10 13:00
-- ✅ `gnomegica` - ukończono 2025-12-10 13:00
-- ✅ `ghorza` - ukończono 2025-12-10 13:00
-- ✅ `frederik` - ukończono 2025-12-10 13:00
-- ✅ `frans` - ukończono 2025-12-10 13:00
-- ✅ `chuckles` - ukończono 2025-12-10 13:00
-- ✅ `battlemart` - ukończono 2025-12-10 13:00
-- ✅ `alaistar` - ukończono 2025-12-10 13:00
+- ✅ `the_lootmonger` - ukończono 2025-12-10 13:05
+- ✅ `tandros` - ukończono 2025-12-10 13:05
+- ✅ `sundara` - ukończono 2025-12-10 13:05
+- ✅ `sigurd` - ukończono 2025-12-10 13:05
+- ✅ `shiriel` - ukończono 2025-12-10 13:05
+- ✅ `seymour` - ukończono 2025-12-10 13:05
+- ✅ `romir` - ukończono 2025-12-10 13:05
+- ✅ `rock_in_a_hard_place` - ukończono 2025-12-10 13:05
+- ✅ `richard` - ukończono 2025-12-10 13:05
+- ✅ `nipuna` - ukończono 2025-12-10 13:05
 
 ---
 

@@ -143,58 +143,47 @@ end
 
 keywordHandler:addKeyword({ "name" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Richard. Just Richard. Lost my surname with my past in that storm. <winks>",
+	i18nKey = "npc.richard.stdmod_1",
 })
 keywordHandler:addKeyword({ "dawnport" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "This lovely island here. Once I didn't have to live off squirrels, it became quite enjoyable. \z
-			Nasty things though live underground, so take care where you tread and ALWAYS have a rope with you!",
+	i18nKey = "npc.richard.stdmod_2",
 })
 keywordHandler:addKeyword({ "rookgaard" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "<shrugs> Never been, mate. Heard it's kinda cute, though.",
+	i18nKey = "npc.richard.stdmod_3",
 })
 keywordHandler:addKeyword({ "coltrayne" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "You know, I really don't want to poke into someone else's private life. \z
-			Suffice it to say that everyone has chapters of his life he doesn't want to mention. \z
-			Judging by Coltrayne's looks, we're looking at a trilogy here.",
+	i18nKey = "npc.richard.stdmod_4",
 })
 keywordHandler:addKeyword({ "inigo" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Old Inigo was the one who found me, actually, and brought me to the outpost. \z
-			I was half starved by then. He taught me how to make better traps and how to fish... I owe much to Inigo.",
+	i18nKey = "npc.richard.stdmod_5",
 })
 keywordHandler:addKeyword({ "garamond" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Can you believe how old he is? He won't say it, \z
-			but I wouldn't be surprised if he had been around for loooooong time.",
+	i18nKey = "npc.richard.stdmod_6",
 })
 keywordHandler:addKeyword({ "squirrel" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Don't talk to ME about squirrels! <shudders> Had to live off them the first days, \z
-			when they were the only thing to go into my self-made acorn traps. Nasty.",
+	i18nKey = "npc.richard.stdmod_7",
 })
 keywordHandler:addKeyword({ "mr morris" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Don't know what to make of him. Great researcher in all Dawnport matters, though. \z
-			Always has a quest or two where he needs help, if you're looking for adventuring work.",
+	i18nKey = "npc.richard.stdmod_8",
 })
 keywordHandler:addKeyword({ "oressa" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Quiet little lady, her. Knows her way around the isle, looking for herbs and stuff \z
-			but mostly spends her time in the temple, helping younglings like you choose a vocation.",
+	i18nKey = "npc.richard.stdmod_9",
 })
 keywordHandler:addKeyword({ "plunderpurse" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "You know, on the day that ol' pirate decides to make off with all that gold in the bank, \z
-			I'm gonna come with him. Should be much more fun landing on a strange island with some gold \z
-			to spend on booze and babes! <winks>",
+	i18nKey = "npc.richard.stdmod_10",
 })
 keywordHandler:addKeyword({ "hamish" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Tries to act tough, but he's quite a witty and decent bloke who wouldn't hurt a fly. \z
-			We enjoy a good laugh together in the evenings.",
+	i18nKey = "npc.richard.stdmod_11",
 })
 
 npcHandler:setMessage(MESSAGE_GREET, "Hello there, mate. Here for a {trade}? My stock's just been refilled.")

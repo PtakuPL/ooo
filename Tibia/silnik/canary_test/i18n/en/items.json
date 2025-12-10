@@ -1033,5 +1033,10 @@
   "item.2923.name": "lit torch",
   "item.2924.name": "torch",
   "item.2925.name": "lit torch",
-  "item.2926.name": "burnt down torch"
+  "item.2926.name": "burnt down torch",
+  "item.2927.name": "lit candelabrum",
+  "item.2928.name": "torch bearer",
+  "item.2929.name": "lit torch bearer",
+  "item.2930.name": "torch bearer",
+  "item.2931.name": "lit torch bearer"
 }

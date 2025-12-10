@@ -163,5 +163,10 @@
   "item.386.name": "dirt floor",
   "item.387.name": "small hole",
   "item.388.name": "stalagmites",
-  "item.389.name": "stalagmites"
+  "item.389.name": "stalagmites",
+  "item.390.name": "lava hole",
+  "item.391.name": "lava hole",
+  "item.394.name": "hole",
+  "item.395.name": "RESERVED SPRITE",
+  "item.396.name": "technomancer beard"
 }

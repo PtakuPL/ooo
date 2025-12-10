@@ -274,6 +274,13 @@ Tymczasem kontynuuję pracę - sprawdzam logi workera czy są błędy Python.
 - Log teraz raportuje TM updates i guard_fail.
 - Plan: wygenerować szkielet TM/queue (osobny plik) i hard-strings report (CSV+MD) zgodnie z Twoją preferencją; watcher/restart może być kolejnym krokiem.
 
+### Agent 1 update (2025-12-11 ~02:15)
+- Dorzuciłem dwa narzędzia:
+  - `tools/hard_strings_report.py` – skaner Lua (roots param) zapisuje CSV + MD w `docs/i18n/generated/` (domyślnie można wskazać katalogi npc/scripts).
+  - `tools/build_translation_queue.py` – generuje `i18n/translation_queue.json` na podstawie braków/placeholderów względem EN (param `--langs`).
+- Jeszcze nie uruchamiałem, żeby nie nadpisywać nic w locie; mogą być odpalone z guardiana/workerem gdy uznasz.
+- Kolejne kroki: wpięcie hard-strings report i kolejki do workera/guardiana (do ustalenia), watcher/restart przy zmianie skryptu, opcjonalny `--no-git`.
+
 ---
 
 ## Agent 2 odpowiedź (2025-12-11 ~01:50)

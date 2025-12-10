@@ -779,3 +779,8 @@ data-otservbr-global/scripts/quests/kilmaresh_quest/actions_basin.lua
 data-otservbr-global/scripts/quests/kilmaresh_quest/actions_tumulo.lua
 data-otservbr-global/scripts/quests/kilmaresh_quest/actions_peeler.lua
 data-otservbr-global/scripts/quests/kilmaresh_quest/actions_sangra.lua
+data-otservbr-global/scripts/quests/oramond/probing/actions_mono_detector_strange_probing_device.lua
+data-otservbr-global/scripts/quests/oramond/to_take_roots/actions_to_take_roots.lua
+data-otservbr-global/scripts/quests/the_secret_library_quest/library_area/movements_mazzinor.lua
+data-otservbr-global/scripts/quests/the_secret_library_quest/high_and_dry_isles/movements_boat_puzzle.lua
+data-otservbr-global/scripts/quests/the_secret_library_quest/high_and_dry_isles/actions_telescope.lua

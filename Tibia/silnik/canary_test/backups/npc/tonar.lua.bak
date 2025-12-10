@@ -1,5 +1,5 @@
 local internalNpcName = "Tonar"
-local npcType = Game.createNpcType("Tonar Oskayaat")
+local npcType = Game.createNpcType(internalNpcName)
 local npcConfig = {}
 
 npcConfig.name = internalNpcName
@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I don't feel safe here ... I hope we can return to Ankrahmun soon." },
+	{ text = "What a beautiful day for a little boat trip." },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -59,17 +59,17 @@ end
 -- Travel
 local function addTravelKeyword(keyword, text, cost, destination, action, condition)
 	if condition then
-		keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tonar_oskayaat.stdmod_1" }, condition)
+		keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = "You are not ready yet." }, condition)
 	end
 
 	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = text, cost = cost, discount = "postman" })
 	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, text = "Alright, off we go!", cost = cost, discount = "postman", destination = destination }, nil, action)
-	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tonar_oskayaat.stdmod_2", reset = true })
+	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, text = "We would like to serve you some time.", reset = true })
 end
 
-addTravelKeyword("passage", "A passage to Ankrahmun? Shall we cast off?", 0, Position(33182, 32883, 7))
+addTravelKeyword("passage", "A passage to Oskayaat? Shall we cast off?", 0, Position(33070, 32916, 7))
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome back, Sir.")
+npcHandler:setMessage(MESSAGE_GREET, "Welcome, Sir.")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

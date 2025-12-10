@@ -59,12 +59,12 @@ end
 -- Travel
 local function addTravelKeyword(keyword, text, cost, destination, action, condition)
 	if condition then
-		keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = "You are not ready yet." }, condition)
+		keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tonar.stdmod_1" }, condition)
 	end
 
 	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = text, cost = cost, discount = "postman" })
 	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, text = "Alright, off we go!", cost = cost, discount = "postman", destination = destination }, nil, action)
-	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, text = "We would like to serve you some time.", reset = true })
+	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tonar.stdmod_2", reset = true })
 end
 
 addTravelKeyword("passage", "A passage to Oskayaat? Shall we cast off?", 0, Position(33070, 32916, 7))

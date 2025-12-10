@@ -1,10 +1,10 @@
 {
   "worker": {
     "version": "2.0",
-    "active_mode": "TRANSLATION",
-    "active_mode_stage": 4,
-    "active_mode_substage": 13,
-    "last_activity": "2025-12-10 08:00:42",
+    "active_mode": null,
+    "active_mode_stage": null,
+    "active_mode_substage": null,
+    "last_activity": "2025-12-10 08:01:56",
     "cycles_total": 0
   },
   "mode_1_migration": {
@@ -4290,7 +4290,7 @@
           }
         },
         "overall_status": "completed",
-        "completed_at": "2025-12-10T08:00:38.597290"
+        "completed_at": "2025-12-10T08:01:40.403921"
       },
       "data-otservbr-global/npc/captain_fearless.lua": {
         "stages": {
@@ -29050,8 +29050,8 @@
     "languages": {
       "pl": {
         "status": "in_progress",
-        "translated": 34,
-        "placeholders": 3560,
+        "translated": 49,
+        "placeholders": 3545,
         "total": 3594,
         "last_batch": 1
       }

@@ -90,7 +90,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "myra") then
 		if player:getSex() == PLAYERSEX_FEMALE and player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak) == 10 and not player:hasOutfit(138, 2) then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.zoltan.say_1", "npc.zoltan.say_2", "npc.zoltan.say_3"}, 100)
+			npcHandler:say({
+				"Bah, I know. I received some sort of 'nomination' from our outpost in Port Hope. ...",
+				"Usually it takes a little more than that for an award though. However, I honour Myra's word. ...",
+				"I hereby grant you the right to wear a special sign of honour, acknowledged by the academy of Edron. Since you are a woman, I guess you don't want manly stuff. There you go.",
+			}, npc, creature, 100)
 			player:addOutfitAddon(138, 2) -- female mage addon
 			player:addOutfitAddon(141, 2) -- female summoner addon
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)

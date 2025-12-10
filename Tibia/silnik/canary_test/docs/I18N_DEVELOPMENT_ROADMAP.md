@@ -9,7 +9,28 @@
 
 ## 🆕 CHANGELOG - Co zostało zrobione
 
-### 📅 2025-12-10 (sesja wieczorna) - Worker v3.0
+### 📅 2025-12-10 (sesja wieczorna #2) - Masowa ekstrakcja kluczy 🚀
+
+| Zmiana | Opis | Status |
+|--------|------|--------|
+| **NPC arrays** | Ekstrakcja `npcHandler:say({...})` multiline patterns | ✅ +81 kluczy |
+| **NPC voices** | Ekstrakcja `{ text = "...", yell = ... }` patterns | ✅ +604 kluczy |
+| **Monster voices** | Rekurencyjne skanowanie monster/**/*.lua | ✅ +4,098 kluczy |
+| **Scripts deep scan** | sendTextMessage + creature:say w scripts/**/*.lua | ✅ +290 kluczy |
+| **I18N_STATUS.md** | Regeneracja z aktualnymi danymi (pokazywał 3594 zamiast 9448) | ✅ FIXED |
+| **Worker keys** | Dodano php_keys, cpp_keys, html_keys, client_keys do total_keys | ✅ FIXED |
+
+**📊 Statystyki PRZED → PO sesji:**
+| Źródło | Przed | Po | Zmiana |
+|--------|-------|-----|--------|
+| npc.json | 4,256 | 4,941 | +685 |
+| monsters.json | 10 | 4,108 | **+4,098** |
+| scripts.json | 78 | 368 | +290 |
+| **RAZEM** | ~4,350 | **9,448** | **+117%** |
+
+---
+
+### 📅 2025-12-10 (sesja wieczorna #1) - Worker v3.0
 
 | Zmiana | Opis | Status |
 |--------|------|--------|

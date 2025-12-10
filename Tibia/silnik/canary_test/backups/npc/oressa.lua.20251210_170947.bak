@@ -214,11 +214,27 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 3)
 		-- knight
 	elseif MsgContains(message, "close") and npcHandler:getTopic(playerId) == 2 then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_1", "npc.oressa.say_2", "npc.oressa.say_3", "npc.oressa.say_4"}, 10)
+		npcHandler:say({
+			"Then you should choose the {vocation} of a knight and become a valiant fighter with sword and shield. ...",
+			"Knights are the toughest of all vocations. They can take more damage and carry more items than the other \z
+					vocations, but they will deal less damage than paladins, druids or sorcerers. ...",
+			"Knights can wield one- or two-handed swords, axes and clubs, and they can cast a few spells to draw a \z
+					monster's attention to them. ...",
+			"So tell me: DO YOU WISH TO BECOME A VALIANT KNIGHT? Answer with a proud {YES} if that is your choice!",
+		}, npc, creature, 10)
 		npcHandler:setTopic(playerId, 5)
 		-- Paladin
 	elseif MsgContains(message, "bow") or MsgContains(message, "spear") and npcHandler:getTopic(playerId) == 3 then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_5", "npc.oressa.say_6", "npc.oressa.say_7", "npc.oressa.say_8", "npc.oressa.say_9"}, 10)
+		npcHandler:say({
+			"Then you should join the ranks of the paladins, noble hunters and rangers of the wild, who rely on the \z
+					swiftness of movement and ranged attacks. ...",
+			"Paladins are jacks of all trades. They are tougher than the magically gifted and can carry more items \z
+					than druids or sorcerers, but they can take not as much damage as a knight can. ...",
+			"Paladins deal more damage than knights but less than druids or sorcerers, and have the longest range \z
+					in their distance attacks. ...",
+			"They can also use holy magic to slay the unholy and undead in particular. ...",
+			"DO YOU WISH TO BECOME A DARING PALADIN? Answer with a proud {YES} if that is your choice!",
+		}, npc, creature, 10)
 		npcHandler:setTopic(playerId, 6)
 		-- Mage
 	elseif MsgContains(message, "magic") and npcHandler:getTopic(playerId) == 3 then
@@ -231,11 +247,25 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 4)
 		-- Druid
 	elseif MsgContains(message, "heal") and npcHandler:getTopic(playerId) == 4 then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_10", "npc.oressa.say_11", "npc.oressa.say_12", "npc.oressa.say_13"}, 10)
+		npcHandler:say({
+			"Then you should learn the ways of the druids, healers and powerful masters of natural magic. ...",
+			"Druids can heal their friends and allies, but they can also cast powerful ice and earth magic \z
+					to kill their enemies. They can do a little energy, fire or death damage as well. ...",
+			"Druids cannot take much damage or carry many items, but they deal \z
+					much more damage than paladins or knights. ...",
+			"So tell me: DO YOU WISH TO BECOME A SAGACIOUS DRUID? Answer with a proud {YES} if that is your choice!",
+		}, npc, creature, 10)
 		npcHandler:setTopic(playerId, 7)
 		-- Sorcerer
 	elseif MsgContains(message, "death") and npcHandler:getTopic(playerId) == 4 then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_14", "npc.oressa.say_15", "npc.oressa.say_16", "npc.oressa.say_17"}, 10)
+		npcHandler:say({
+			"Then you should become a sorcerer, a mighty wielder of deathly energies and arcane fire. ...",
+			"Sorcerers are powerful casters of magic. They use fire, energy and death magic to lay low their enemies. \z
+					They can do a little ice or earth damage as well. ...",
+			"Sorcerers cannot take much damage or carry many items, \z
+					but they deal much more damage than paladins or knights. ...",
+			"So tell me: DO YOU WISH TO BECOME A POWERFUL SORCERER? Answer with a proud {YES} if that is your choice!",
+		}, npc, creature, 10)
 		npcHandler:setTopic(playerId, 8)
 		-- Choosing dialog start
 	elseif MsgContains(message, "decided") and npcHandler:getTopic(playerId) == 0 then
@@ -334,7 +364,12 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 			-- Remove Mainland smuggling items
 			removeMainlandSmugglingItems(player)
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_18", "npc.oressa.say_19", "npc.oressa.say_20", "npc.oressa.say_21"}, 10)
+			npcHandler:say({
+				"SO BE IT. CAST OFF YOUR TRAINING GEAR AND RISE, NOBLE " .. player:getVocation():getName():upper() .. "! ...",
+				"Go through the second door from the right. Open the chest and take the equipment inside \z
+						before you leave to the north. ...",
+				"Take the ship to reach the Mainland. Farewell, friend and good luck in all you undertake!",
+			}, npc, creature, 10)
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
 			local vocationMessage = {
@@ -343,7 +378,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				[7] = "{knight}, {paladin} or {sorcerer}",
 				[8] = "{knight}, {paladin} or {druid}",
 			}
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_22", "npc.oressa.say_23"}, 10)
+			npcHandler:say({
+				"As you wish. If you wish to learn something about the " .. vocationMessage[npcHandler:getTopic(playerId)] .. " vocation, tell me.",
+			}, npc, creature, 10)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

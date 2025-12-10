@@ -76,12 +76,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	--Help
 	if MsgContains(message, "bank account") then
-		npcHandler:say({
-			"Every Adventurer has one. \z
-					The big advantage is that you can access your money in every branch of the World Bank! ...",
-			"Would you like to know more about the {basic} functions of your bank account, the {advanced} functions, \z
-					or are you already bored, perhaps?",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.wentworth.say_1", "npc.wentworth.say_2"}, 10)
 		npcHandler:setTopic(playerId, 0)
 		return true
 		--Balance

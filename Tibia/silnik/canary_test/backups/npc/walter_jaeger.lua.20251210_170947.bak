@@ -305,7 +305,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		return false
 	end
 	if MsgContains(message, "rewards") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.walter_jaeger.say_1", "npc.walter_jaeger.say_2"}, 100)
+		npcHandler:say({
+			"Finishing prey hunting tasks will give you hunting task points (HTP). These can be exchanged for items of the following categories: {outfit}, {mount}, {trophies} and {furniture}. ...",
+			"Please note, that all items will be put into your Store inbox!",
+		}, npc, creature, 100)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "tasks") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_1")

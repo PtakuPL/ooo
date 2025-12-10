@@ -1,4 +1,4 @@
-local internalNpcName = "Plunderpurse"
+local internalNpcName = "Wentworth"
 local npcType = Game.createNpcType(internalNpcName)
 local npcConfig = {}
 
@@ -7,15 +7,15 @@ npcConfig.description = internalNpcName
 
 npcConfig.health = 100
 npcConfig.maxHealth = npcConfig.health
-npcConfig.walkInterval = 2000
+npcConfig.walkInterval = 0
 npcConfig.walkRadius = 2
 
 npcConfig.outfit = {
 	lookType = 151,
-	lookHead = 114,
-	lookBody = 132,
-	lookLegs = 0,
-	lookFeet = 78,
+	lookHead = 97,
+	lookBody = 19,
+	lookLegs = 124,
+	lookFeet = 115,
 	lookAddons = 1,
 }
 
@@ -59,6 +59,7 @@ npcType.onCloseChannel = function(npc, creature)
 end
 
 local count = {}
+
 local function greetCallback(npc, creature)
 	local playerId = creature:getId()
 	count[playerId] = nil
@@ -75,7 +76,12 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	--Help
 	if MsgContains(message, "bank account") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.plunderpurse.say_1", "npc.plunderpurse.say_2"}, 10)
+		npcHandler:say({
+			"Every Adventurer has one. \z
+					The big advantage is that you can access your money in every branch of the World Bank! ...",
+			"Would you like to know more about the {basic} functions of your bank account, the {advanced} functions, \z
+					or are you already bored, perhaps?",
+		}, npc, creature, 10)
 		npcHandler:setTopic(playerId, 0)
 		return true
 		--Balance
@@ -105,11 +111,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "deposit") then
 		count[playerId] = player:getMoney()
 		if count[playerId] < 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_1")
 			npcHandler:setTopic(playerId, 0)
 			return false
 		elseif not isValidMoney(count[playerId]) then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_2")
 			npcHandler:setTopic(playerId, 0)
 			return false
 		end
@@ -122,7 +128,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if string.match(message, "%d+") then
 				count[playerId] = getMoneyCount(message)
 				if count[playerId] < 1 then
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_4")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_4")
 					npcHandler:setTopic(playerId, 0)
 					return false
 				end
@@ -130,7 +136,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 2)
 				return true
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_6")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_6")
 				npcHandler:setTopic(playerId, 1)
 				return true
 			end
@@ -142,25 +148,33 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 2)
 			return true
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_8")
 			npcHandler:setTopic(playerId, 0)
 			return true
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "yes") then
-			if count[playerId] > 1500 or player:getBankBalance() >= 1500 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_9")
-				npcHandler:setTopic(playerId, 0)
-				return false
+			if player:getLevel() == 8 then
+				if count[playerId] > 1000 or player:getBankBalance() >= 1000 then
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_9")
+					npcHandler:setTopic(playerId, 0)
+					return false
+				end
+			elseif player:getLevel() > 9 then
+				if count[playerId] > 2000 or player:getBankBalance() >= 2000 then
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_10")
+					npcHandler:setTopic(playerId, 0)
+					return false
+				end
 			end
 			if player:depositMoney(count[playerId]) then
 				npcHandler:say("Alright, we have added the amount of " .. count[playerId] .. " gold to your {balance}. \z
 				You can {withdraw} your money anytime you want to.", npc, creature)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_10")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_11")
 			end
 		elseif MsgContains(message, "no") then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_12")
 		end
 		npcHandler:setTopic(playerId, 0)
 		return true
@@ -172,12 +186,12 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:say("Are you sure you wish to withdraw " .. count[playerId] .. " gold from your bank account?", npc, creature)
 				npcHandler:setTopic(playerId, 7)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_13")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_14")
 				npcHandler:setTopic(playerId, 0)
 			end
 			return true
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_14")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_15")
 			npcHandler:setTopic(playerId, 6)
 			return true
 		end
@@ -187,7 +201,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:say("Are you sure you wish to withdraw " .. count[playerId] .. " gold from your bank account?", npc, creature)
 			npcHandler:setTopic(playerId, 7)
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_16")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_17")
 			npcHandler:setTopic(playerId, 0)
 		end
 		return true
@@ -195,7 +209,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			if player:getFreeCapacity() >= getMoneyWeight(count[playerId]) then
 				if not player:withdrawMoney(count[playerId]) then
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_17")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_18")
 				else
 					npcHandler:say("Here you are, " .. count[playerId] .. " gold. \z
 						Please let me know if there is something else I can do for you.", npc, creature)
@@ -210,17 +224,17 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_18")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_19")
 			npcHandler:setTopic(playerId, 0)
 		end
 		return true
 		--Money exchange
 	elseif MsgContains(message, "change gold") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_19")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_20")
 		npcHandler:setTopic(playerId, 14)
 	elseif npcHandler:getTopic(playerId) == 14 then
 		if getMoneyCount(message) < 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_20")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_21")
 			npcHandler:setTopic(playerId, 0)
 		else
 			count[playerId] = getMoneyCount(message)
@@ -232,31 +246,31 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			if player:removeItem(3031, count[playerId] * 100) then
 				player:addItem(3035, count[playerId])
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_21")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_22")
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_22")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_23")
 			end
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_23")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_24")
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "change platinum") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_24")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_25")
 		npcHandler:setTopic(playerId, 16)
 	elseif npcHandler:getTopic(playerId) == 16 then
 		if MsgContains(message, "gold") then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_25")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_26")
 			npcHandler:setTopic(playerId, 17)
 		elseif MsgContains(message, "crystal") then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_26")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_27")
 			npcHandler:setTopic(playerId, 19)
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_27")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_28")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 17 then
 		if getMoneyCount(message) < 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_28")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_29")
 			npcHandler:setTopic(playerId, 0)
 		else
 			count[playerId] = getMoneyCount(message)
@@ -268,17 +282,17 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			if player:removeItem(3035, count[playerId]) then
 				player:addItem(3031, count[playerId] * 100)
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_29")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_30")
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_30")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_31")
 			end
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_31")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_32")
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif npcHandler:getTopic(playerId) == 19 then
 		if getMoneyCount(message) < 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_32")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_33")
 			npcHandler:setTopic(playerId, 0)
 		else
 			count[playerId] = getMoneyCount(message)
@@ -290,20 +304,20 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			if player:removeItem(3035, count[playerId] * 100) then
 				player:addItem(3043, count[playerId])
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_33")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_34")
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_34")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_35")
 			end
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_35")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_36")
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "change crystal") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_36")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_37")
 		npcHandler:setTopic(playerId, 21)
 	elseif npcHandler:getTopic(playerId) == 21 then
 		if getMoneyCount(message) < 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_37")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_38")
 			npcHandler:setTopic(playerId, 0)
 		else
 			count[playerId] = getMoneyCount(message)
@@ -315,117 +329,56 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			if player:removeItem(3043, count[playerId]) then
 				player:addItem(3035, count[playerId] * 100)
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_38")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_39")
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_39")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_40")
 			end
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.plunderpurse.say_40")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_41")
 		end
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true
 end
 
-keywordHandler:addKeyword({ "dawnport" }, StdModule.say, {
+keywordHandler:addKeyword({ "money" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_1",
+	i18nKey = "npc.wentworth.stdmod_1",
 })
 keywordHandler:addKeyword({ "change" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_2",
+	i18nKey = "npc.wentworth.stdmod_2",
 })
 keywordHandler:addKeyword({ "bank" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_3",
+	i18nKey = "npc.wentworth.stdmod_3",
 })
 keywordHandler:addKeyword({ "advanced" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_4",
+	i18nKey = "npc.wentworth.stdmod_4",
 })
-keywordHandler:addKeyword({ "name" }, StdModule.say, {
+keywordHandler:addKeyword({ "help" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_5",
+	i18nKey = "npc.wentworth.stdmod_5",
 })
 keywordHandler:addKeyword({ "functions" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_6",
+	i18nKey = "npc.wentworth.stdmod_6",
 })
-keywordHandler:addKeyword({ "rookgaard" }, StdModule.say, {
+keywordHandler:addKeyword({ "basic" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_7",
+	i18nKey = "npc.wentworth.stdmod_7",
 })
 keywordHandler:addKeyword({ "job" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_8",
-})
-keywordHandler:addKeyword({ "mainland" }, StdModule.say, {
-	npcHandler = npcHandler,
-	text = {
-		"Aye, Tibia is a vast world, my friend, with plenty of adventures, harbours, and loot! \z
-			The Mainland is open to everyone; but there are many beautiful islands and more cities to explore, \z
-			if you have premium rights and can use a ship.",
-		"Once you have reached level 8 here on this isle, you can choose your definite vocation and leave for the Mainland.",
-	},
-})
-keywordHandler:addKeyword({ "vocation" }, StdModule.say, {
-	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_9",
+	i18nKey = "npc.wentworth.stdmod_8",
 })
 keywordHandler:addKeyword({ "transfer" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_10",
-})
-keywordHandler:addKeyword({ "inigo" }, StdModule.say, {
-	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_11",
-})
-keywordHandler:addKeyword({ "coltrayne" }, StdModule.say, {
-	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_12",
-})
-keywordHandler:addKeyword({ "garamond" }, StdModule.say, {
-	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_13",
-})
-keywordHandler:addKeyword({ "hamish" }, StdModule.say, {
-	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_14",
-})
-keywordHandler:addKeyword({ "richard" }, StdModule.say, {
-	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_15",
-})
-keywordHandler:addKeyword({ "mr morris" }, StdModule.say, {
-	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_16",
-})
-keywordHandler:addKeyword({ "oressa" }, StdModule.say, {
-	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_17",
-})
-keywordHandler:addKeyword({ "plunderpurse" }, StdModule.say, {
-	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_18",
-})
-keywordHandler:addKeyword({ "quest" }, StdModule.say, {
-	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_19",
-})
-keywordHandler:addKeyword({ "ser tybald" }, StdModule.say, {
-	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_20",
-})
-keywordHandler:addKeyword({ "wentworth" }, StdModule.say, {
-	npcHandler = npcHandler,
-	i18nKey = "npc.plunderpurse.stdmod_21",
+	i18nKey = "npc.wentworth.stdmod_9",
 })
 
-npcHandler:setMessage(
-	MESSAGE_GREET,
-	"Welcome, young adventurer! Harr! {Deposit} your gold or {withdraw} \z
-	your money from your bank account. I can also explain the functions of your {bank} account to ya."
-)
+npcHandler:setMessage(MESSAGE_GREET, "Yes? What may I do for you, |PLAYERNAME|? Bank business, perhaps?")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Have a nice day.")
 npcHandler:setMessage(MESSAGE_WALKAWAY, "Have a nice day.")
 

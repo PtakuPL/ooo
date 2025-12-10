@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 17:09:20 UTC  
+> **Aktualizacja:** 2025-12-10 17:09:53 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -23,10 +23,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **26** | ↑ |
 | ⏭️ Plików wykluczonych | **711** | - |
-| 🔑 Kluczy i18n | **9425** | ↑ |
+| 🔑 Kluczy i18n | **9628** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#135** | - |
+| 🔄 Cykl | **#136** | - |
 
 ---
 
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 4941/15000 (33%) | 15000 |
+| 🧙 NPC Dialogs | 🔄 | 5144/15000 (34%) | 15000 |
 | 📜 Lua Scripts | 🔄 | 368/1000 (37%) | 1000 |
 | 🎒 Items Database | ⏳ | 0/40000 (0%) | 40000 |
 | 👹 Monsters | ✅ | 4108/500 (822%) | 500 |
@@ -76,7 +76,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   135 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   136 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (8 etapów)                     │
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 17:09:20                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 17:09:53                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -100,9 +100,9 @@
 |---------|---------|-----------|
 | 📁 Plików przetworzonych | **26** | z i18n_file_status.json |
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **9425** | we wszystkich kategoriach |
+| 🔑 Kluczy wyciągniętych | **9628** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
-| 🔄 Cykli wykonanych | **#135** | continuous mode |
+| 🔄 Cykli wykonanych | **#136** | continuous mode |
 | ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -169,13 +169,13 @@
 </details>
 
 <details>
-<summary>🧙 5. NPC - 🔄 (33%)</summary>
+<summary>🧙 5. NPC - 🔄 (34%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 4941 |
+| 🔑 Kluczy | 5144 |
 | 🎯 Cel | 15000 |
-| 📊 Postęp | 33% |
+| 📊 Postęp | 34% |
 | 📁 Plik | i18n/en/npc.json |
 | 📁 Plików NPC | 1026 |
 | ✅ Zmigrowanych | 318 |
@@ -273,7 +273,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #135 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #136 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -282,7 +282,7 @@
 
 ```
 [⏳] Items (0)      ░░░░░░░░░░░░░░░░░░░░  0%
-[🔄] NPC (4941)            ██████░░░░░░░░░░░░░░  33%
+[🔄] NPC (5144)            ██████░░░░░░░░░░░░░░  34%
 [🔄] Scripts (368)      ███████░░░░░░░░░░░░░  37%
 [✅] Monsters (4108)    ████████████████████  822%
 [⏳] Spells (0)       ░░░░░░░░░░░░░░░░░░░░  0%
@@ -294,7 +294,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 17:09:20  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 17:09:53  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

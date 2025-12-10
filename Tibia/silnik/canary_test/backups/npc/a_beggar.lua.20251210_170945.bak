@@ -64,7 +64,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_beggar.say_1")
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.a_beggar.say_1", "npc.a_beggar.say_2", "npc.a_beggar.say_3", "npc.a_beggar.say_4", "npc.a_beggar.say_5"}, 100)
+			npcHandler:say({
+				"Thought so. You'll have to talk to the king though. The beggar king that is. The king does not grant an audience to just everyone. You know how those kings are, don't you? ... ",
+				"However, to get an audience with the king, you'll have to help his subjects a bit. ... ",
+				"His subjects that would be us, the poor, you know? ... ",
+				"So why don't you show your dedication to the poor? Go and help Chavis at the poor house. He's collecting food for people like us. ... ",
+				"If you brought enough of the stuff you'll see that the king will grant you entrance in his {palace}.",
+			}, npc, creature, 100)
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission01, 2) -- Mission 1 end
 			player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission02, 1) -- Mission 2 start

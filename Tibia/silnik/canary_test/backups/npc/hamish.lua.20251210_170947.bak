@@ -154,11 +154,27 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	local categoryTable = itemsTable[message:lower()]
 	if MsgContains(message, "dawnport") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.hamish.say_1", "npc.hamish.say_2"}, 200)
+		npcHandler:say({
+			"Small and deceptively friendly-looking island. Well, I used to study the plants and herbs here for my potions.",
+			"Nowadays, I leave that to Oressa, she has a better way with that horrible wildlife here. \z
+				I prefer to distil potions in the quiet of my lab. \z
+				If you need some potions, runes or other magic equipment, ask for a trade.",
+		}, npc, creature, 200)
 	elseif MsgContains(message, "mainland") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.hamish.say_3", "npc.hamish.say_4"}, 200)
+		npcHandler:say({
+			"Dawnport is not far off from the coast of the Tibian Mainland. Lots of cities, monsters, bandits, \z
+				brigands, mean folk and people of low understanding with no sense of respect towards alchemical genius. \z
+				<mutters to himself>",
+			"Ahem. Once you're level 8, you should be experienced enough to choose your definite vocation and leave \z
+				Dawnport for Main - and Tibia definitely needs more skilled adventurers to keep those monsters in check \z
+				which roam our lands!",
+		}, npc, creature, 200)
 	elseif MsgContains(message, "ser tybald") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.hamish.say_5", "npc.hamish.say_6"}, 200)
+		npcHandler:say({
+			"I wish I had thought of changing my name to that of a hero. Would have smoothed my way no end!",
+			"Anyway, whatever he was before he joined, Tybald now fits the bill of the legendary hero. \z
+				He even has a crush on lady Oressa. Cute. <chuckles>",
+		}, npc, creature, 200)
 	elseif categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), itemsTable)
 		npcHandler:say("Of course, just browse through my wares. You can also look at " .. remainingCategories .. ".", npc, player)

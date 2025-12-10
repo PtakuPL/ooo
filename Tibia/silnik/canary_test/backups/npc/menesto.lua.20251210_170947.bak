@@ -1,4 +1,4 @@
-local internalNpcName = "A Beggar"
+local internalNpcName = "Menesto"
 local npcType = Game.createNpcType(internalNpcName)
 local npcConfig = {}
 
@@ -11,11 +11,11 @@ npcConfig.walkInterval = 2000
 npcConfig.walkRadius = 2
 
 npcConfig.outfit = {
-	lookType = 153,
-	lookHead = 39,
-	lookBody = 39,
-	lookLegs = 39,
-	lookFeet = 76,
+	lookType = 131,
+	lookHead = 114,
+	lookBody = 38,
+	lookLegs = 78,
+	lookFeet = 114,
 	lookAddons = 0,
 }
 
@@ -50,6 +50,26 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
+local function greetCallback(npc, creature)
+	local player = Player(creature)
+	local playerId = player:getId()
+
+	if player:getStorageValue(Storage.Tutorial) < 1 then
+		npcHandler:say({
+			"Finally, reinforcements - oh but no, you came through the crystal portal, like the others! \z
+					I am ser Menesto, I guard the portal. That beast caught me by surprise, I lost my dagger and had to retreat. ...",
+			"... ...",
+			"Hmm. ...",
+			"You look hungry, you should eat regularly to reagain your strength! \z
+					See what you can find while hunting. Or buy food in a city shop. \z
+					Here, have some of my rations, I'll take my dagger. Tell me when you're {ready}.",
+		}, npc, creature, 10)
+		player:addItem(3577, 1)
+		player:setStorageValue(Storage.Dawnport.Tutorial, 1)
+	end
+	return true
+end
+
 local function creatureSayCallback(npc, creature, type, message)
 	local player = Player(creature)
 	local playerId = player:getId()
@@ -57,25 +77,23 @@ local function creatureSayCallback(npc, creature, type, message)
 	if not npcHandler:checkInteraction(npc, creature) then
 		return false
 	end
-	if MsgContains(message, "want") then
-		if player:getStorageValue(Storage.Quest.U10_50.DarkTrails.Mission01) == 1 then
-			npcHandler:setTopic(playerId, 1)
-		end
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_beggar.say_1")
-	elseif MsgContains(message, "yes") then
-		if npcHandler:getTopic(playerId) == 1 then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.a_beggar.say_1", "npc.a_beggar.say_2", "npc.a_beggar.say_3", "npc.a_beggar.say_4", "npc.a_beggar.say_5"}, 100)
+
+	if MsgContains(message, "ready") then
+		if player:getStorageValue(Storage.Dawnport.Tutorial) == 1 then
+			npcHandler:say({
+				"I'll stay here till reinforcements come. Go up the ladder to reach the surface. \z
+						You'll need a rope for the ropestot that comes after the ladder - here, take my spare equipment. ...",
+				"And remember: Tibia is a world with many dangers and mysteries, so be careful! Farewell, friend.",
+			}, npc, creature, 10)
+			player:setStorageValue(Storage.Dawnport.Tutorial, 2)
 			npcHandler:setTopic(playerId, 0)
-			player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission01, 2) -- Mission 1 end
-			player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission02, 1) -- Mission 2 start
 		end
 	end
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Hi! What is it, what d'ye {want}?")
-
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
+npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -94,7 +94,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 3 then
 			if npcHandler:getTopic(playerId) == 3 then
-				NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.jack.say_1", "npc.jack.say_2"}, 1000)
+				npcHandler:say({
+					"So it's that name again. You are really determined, aren't you. ...",
+					"So if he thinks I'm someone he knew who is now 'lost' and needs to come back or whatever - tell him he is WRONG. I always lived here with my mother and sister, I'm happy here and I certainly don't want to go to that academy of yours.",
+				}, npc, creature, 1000)
 				player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine, 4)
 			end
 		end

@@ -55,15 +55,7 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Tutorial) < 1 then
-		npcHandler:say({
-			"Finally, reinforcements - oh but no, you came through the crystal portal, like the others! \z
-					I am ser Menesto, I guard the portal. That beast caught me by surprise, I lost my dagger and had to retreat. ...",
-			"... ...",
-			"Hmm. ...",
-			"You look hungry, you should eat regularly to reagain your strength! \z
-					See what you can find while hunting. Or buy food in a city shop. \z
-					Here, have some of my rations, I'll take my dagger. Tell me when you're {ready}.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.menesto.say_1", "npc.menesto.say_2", "npc.menesto.say_3", "npc.menesto.say_4"}, 10)
 		player:addItem(3577, 1)
 		player:setStorageValue(Storage.Dawnport.Tutorial, 1)
 	end
@@ -80,11 +72,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "ready") then
 		if player:getStorageValue(Storage.Dawnport.Tutorial) == 1 then
-			npcHandler:say({
-				"I'll stay here till reinforcements come. Go up the ladder to reach the surface. \z
-						You'll need a rope for the ropestot that comes after the ladder - here, take my spare equipment. ...",
-				"And remember: Tibia is a world with many dangers and mysteries, so be careful! Farewell, friend.",
-			}, npc, creature, 10)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.menesto.say_5", "npc.menesto.say_6"}, 10)
 			player:setStorageValue(Storage.Dawnport.Tutorial, 2)
 			npcHandler:setTopic(playerId, 0)
 		end

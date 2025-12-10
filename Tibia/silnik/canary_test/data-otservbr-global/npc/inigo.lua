@@ -210,286 +210,63 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "portal") then
-		npcHandler:say({
-			"It seems to emanate a magical call or pulse that draws all sorts of creatures to it - no offense meant. \z
-					When we first found it, we were flabbergasted - we thought maybe a mad sorcerer had built it, \z
-					or a cult, to summon something evil. ...",
-			"But we didn't find any conclusive hints. \z
-					{Menesto} and a few others volunteered to guard the portal from the {monsters} of this isle. \z
-					You say you came through it from your world! Astounding. ...",
-			"You couldn't have chosen a better time. \z
-					We really need help against the monsters that swarm this island, and the whole world of {Tibia}. \z
-					If you're unsure on how to {help} exactly, I can give you directions.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_1", "npc.inigo.say_2", "npc.inigo.say_3"}, 10)
 	elseif MsgContains(message, "menesto") then
-		npcHandler:say({
-			"Hasn't been with us for very long. Very interested in all things mystical, \z
-					so Menesto was sent down to guard the strange crystal {portal} we found here. ...",
-			"... But of course, you met him. ... So it really is a portal, and you came through it \z
-					from another plane of existence! I never quite believed the tales of old, not really. \z
-					But now... it's wonderful, truly wonderful. ...",
-			"Well, if you have any questions as to THIS plane of existence, which we call {Tibia}, just ask me. \z
-					I can give directions, {hints}, you name it. <winks at you>",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_4", "npc.inigo.say_5", "npc.inigo.say_6"}, 10)
 	elseif MsgContains(message, "play") then
-		npcHandler:say({
-			"Our world {Tibia} is swarmed by many dangerous {monsters}, so {fighting} is something you will \z
-					have to learn and master quickly. You can fight as a {sorcerer}, druid, {paladin} or {knight}. ...",
-			"We need your help in keeping the monsters at bay - walk out of one of the four gates here, \z
-					and you will receive one of the four {vocations} and its gear to try out and fight monsters. ...",
-			"{Dawnport} is just a small, but dangerous island. You will have to reach level 8 at least and \z
-					choose your definite vocation before you can leave for the {mainland}. To reach level 8, you \z
-					will have to fight some monsters in order to progress. ... ",
-			"Fighting is essential in Tibia, and though Dawnport is quite safe in comparison to the mainland, \z
-					be careful not to die, as {dying} HURTS. ...",
-			"If you have any other questions, tell me.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_7", "npc.inigo.say_8", "npc.inigo.say_9", "npc.inigo.say_10", "npc.inigo.say_11"}, 10)
 	elseif MsgContains(message, "combat") then
-		npcHandler:say({
-			"There are many dangers in {Tibia}. You may have to defend yourself not only against {monsters}, \z
-					but if {PvP} is allowed, against other {players}, too. ...",
-			"To attack, click on your chosen target in the battle list. \z
-					A red frame will show you which target you are currently attacking. ...",
-			"To automatically follow your target, click on 'Chase Opponent' in your combat controls - the top left button. ...",
-			"You can also define your attack and defense mode, by selecting {offensive}, {balanced} or {defensive} fighting.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_12", "npc.inigo.say_13", "npc.inigo.say_14", "npc.inigo.say_15"}, 10)
 	elseif MsgContains(message, "pvp") then
-		npcHandler:say({
-			"Depending on the world you chose in {Tibia}, {players} may attack you at all times or only if you consent. ...",
-			"On an Optional PvP world, PvP is only possible if both players consent to it; \z
-					but on Open PvP or Hardcore PvP worlds, any player may always attack you, so be watchful. ...",
-			"A brown frame around a player indicates he or she is in a PvP situation. \z
-					A {skull} next to a player name means he or she attacked or killed another player. ...",
-			"Here on {Dawnport}, PvP is not allowed inside the outpost, \z
-					and not possible until you have reached level 8 at least. If you have any other questions, tell me.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_16", "npc.inigo.say_17", "npc.inigo.say_18", "npc.inigo.say_19"}, 10)
 	elseif MsgContains(message, "players") then
-		npcHandler:say({
-			"To chat with other players, you can click on one of the chat channels and see who is posting in there. ...",
-			"If you want to message a specific player, right-click on his or her name and select \z
-					'Message to <player name>'. This will open up a chat channel where you can type in your message to him or her.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_20", "npc.inigo.say_21"}, 10)
 	elseif MsgContains(message, "npc") then
-		npcHandler:say({
-			"NPC means someone like me or {Hamish} or {Coltrayne}, for example. \z
-					You can easily discern us from {players} like you, because there is a speech bubble next to our {name}. ...",
-			"We all have our different ways, but normally, addressing an NPC with 'hi' or \z
-					'hello' will open a conversation. ...",
-			"Some NPCs will have secret words that they react to that are not highlighted in their conversation. \z
-					In that case, you need to type in your question. ...",
-			"To do so, open the NPC Chat Channel and click on the empty space below the NPCs dialogue, and start typing. ...",
-			"You can try this out by asking an NPC about their {job}, as this is a keyword most will react to. \z
-					If you have any other questions, tell me.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_22", "npc.inigo.say_23", "npc.inigo.say_24", "npc.inigo.say_25", "npc.inigo.say_26"}, 10)
 	elseif MsgContains(message, "spells") then
-		npcHandler:say({
-			"Every vocation has specific spells that can only be used if you have that vocation. \z
-					Sorcerers and druids of course rely heavily on spells, while knights only have a few at their disposal. ...",
-			"As an adventurer in training, you have a few spells at your disposal at the beginning, \z
-					but more will become available as you progress. ...",
-			"Once you're level 8, new spells become available upstairs at the spell trainers {Garamond} and {Tybald}. \z
-					They can tell you more.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_27", "npc.inigo.say_28", "npc.inigo.say_29"}, 10)
 	elseif MsgContains(message, "shovel") then
-		npcHandler:say({
-			"Second best thing to a rope - a shovel will reveal secret entrances buried \z
-					under loose stone piles, or under sand, or earth... you will see! ...",
-			"Shovels can be bought at {Richard}'s, like the other equipment, or food. \z
-					If you don't have the money yet, go out and kill some {monsters} outside - \z
-					and maybe you'll even find a shovel, who knows!",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_30", "npc.inigo.say_31"}, 10)
 	elseif MsgContains(message, "dawnport") then
-		npcHandler:say({
-			"We found the island following a strange glow we saw at night, close before dawn. \z
-					We were looking for a source of unknown, powerful magic, and it seemed that this island was its source. ...",
-			"When we arrived, we found goblins, minotaurs, trolls and undead warring on this island. \z
-					We wondered why. Then they seemed to reach an agreement, and settled down in the caves. \z
-					We decided to investigate. ...",
-			"That is when we found the strange crystal {portal}, through which you came. \z
-					Perhaps this is why the {monsters} battle, but won't leave. ...",
-			"It certainly is a place of power, so {Menesto}'s group was sent down to guard it. \z
-					However, we are but few, so we need every help we can get to defend and maintain the outpost on this isle. ...",
-			"That is why we need your help - choose the vocation that suits you, take up its arms and help us \z
-					defend this place against the evil that wants to claim it! If you need any help in how to do these things, ask me.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_32", "npc.inigo.say_33", "npc.inigo.say_34", "npc.inigo.say_35", "npc.inigo.say_36"}, 10)
 	elseif MsgContains(message, "mainland") then
-		npcHandler:say({
-			"The mainland harbours the most ancient cities of {Tibia}, and many dangers and adventures as well. \z
-					When you have helped us defend {Dawnport}, and learned enough of the ways of Tibia to \z
-					reach level 8 at least, you should leave for the mainland. ...",
-			"There you can continue to battle evil - and believe me, there is much of that in our world, alas. <sigh> ...",
-			"Premium adventurers can also sail to the many islands that surround the mainland, which offer many more dangers \z
-					and mysteries to be explored; and you can do quests to ride mounts, and dress in a variety of new outfits.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_37", "npc.inigo.say_38", "npc.inigo.say_39"}, 10)
 	elseif MsgContains(message, "figthing") then
-		npcHandler:say({
-			"Go through one of the open gates on this floor and you will be equipped with \z
-					training weapons and {spells} of a specific vocation. ...",
-			"There are four vocations in Tibia: {knight}, {druid}, {paladin} and {sorcerer}. \z
-					Each one has its unique abilities, strengths and weaknesses. \z
-					Just try them out to see which one suits you best. ...",
-			"We need your help in our battle. Fight {monsters} to gain experience and better {skills}, \z
-					until you reach level 8 at least. Make sure you always have not only a weapon, \z
-					but a {rope} with you, as well! ...",
-			"Once you reached level 8 or more, you have to choose one vocation as your definite vocation \z
-					before you can leave for the Tibian {mainland}, where more dangers await you. ... ",
-			"To choose your definite vocation, talk to {Oressa} downstairs in the {temple}. \z
-					She can also heal you if you are severely wounded or poisoned - just say 'heal' or 'help' to her. ...",
-			"If you have any other questions, tell me.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_40", "npc.inigo.say_41", "npc.inigo.say_42", "npc.inigo.say_43", "npc.inigo.say_44", "npc.inigo.say_45"}, 10)
 	elseif MsgContains(message, "vocations") then
-		npcHandler:say({
-			"A vocation is your profession and chosen destiny, rolled into one. \z
-					There are four vocations in {Tibia}: {knight}, {sorcerer}, {paladin} or {druid}. \z
-					Each vocation has its unique special abilities with which to fight evil. ...",
-			"You need to choose your vocation before you can leave {Dawnport} to go to the {Mainland}. \z
-					But first, you have to gain enough experience to reach level 8 in order to do so. ...",
-			"Once you've reached level 8 and want to choose your definite vocation, \z
-					talk to {Oressa} downstairs in the temple. She can also heal you if you are hurt or poisoned. ...",
-			"If you have any other questions, tell me.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_46", "npc.inigo.say_47", "npc.inigo.say_48", "npc.inigo.say_49"}, 10)
 	elseif MsgContains(message, "help") then
-		npcHandler:say({
-			"I can give you directions how to {play}, some basic survival and {combat} tips, or explain {PvP}, ...",
-			"I can also tell you how to talk with other {players} or {NPC}s, \z
-					or can inform you about {questing} or {spells}. ...",
-			"I also have a list of small {hints} if you prefer that, and can tell you something of the {people} here. \z
-					Just tell me what you want to know. ...",
-			"Oh, but first that help I mentioned - you should get yourself a {shovel}, friend. \z
-					It will come in handy when you set about finding secret entrances to dungeons or hidden treasures - \z
-					many useful things lie hidden beneath earth, sand or stones! ",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_50", "npc.inigo.say_51", "npc.inigo.say_52", "npc.inigo.say_53"}, 10)
 	elseif MsgContains(message, "offensive") then
-		npcHandler:say({
-			"Offensive {fighting} means you deal harder attacks, but have a weaker defense. \z
-					Magical damage you deal is not affected by this. ...",
-			"You should switch to offensive only if you want to finish off a monster quickly \z
-					and are sure you can survive its harder attacks. \z
-					I can also tell you something about {balanced} and {defensive} fighting.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_54", "npc.inigo.say_55"}, 10)
 	elseif MsgContains(message, "balanced") then
-		npcHandler:say({
-			"Balanced {fighting} balances out your attack strength as well as your defense strength. \z
-					Magical damage you deal is not affected by this. ...",
-			"I can also tell you something about {offensive} and {defensive} fighting.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_56", "npc.inigo.say_57"}, 10)
 	elseif MsgContains(message, "defensive") then
-		npcHandler:say({
-			"Defensive {fighting} increases your defense but reduces your attack strength. \z
-					The magical damage you deal is not affected by this. ...",
-			"I can also tell you something about {offensive} and {balanced} fighting.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_58", "npc.inigo.say_59"}, 10)
 	elseif MsgContains(message, "skull") then
-		npcHandler:say({
-			"A white skull means that this player attacked and maybe killed another player without justification. ...",
-			"A red skull means someone has killed many other {players}, while a black skull depicts \z
-					someone on a serious killing spree - so watch out!",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_60", "npc.inigo.say_61"}, 10)
 	elseif MsgContains(message, "hamish") then
-		npcHandler:say({
-			"Some sort of misguided genius, I think. Brilliant with potions and runes, \z
-					but couldn't get on with his master or with the other students. \z
-					Ran away and set up his own little lab, selling to travellers along the road. ...",
-			"Was robbed and left for dead by some plunderers, when Morris found him. \z
-					{Morris} patched him up and said he could use him, so Hamish came here. \z
-					If you need a wand, rune or potion, Hamish's your man.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_62", "npc.inigo.say_63"}, 10)
 	elseif MsgContains(message, "coltrayne") then
-		npcHandler:say({
-			"Coltrayne doesn't say much about himself. What I gathered from the 15 years \z
-					I've known him is that he was raised by a blacksmith as a foundling. ...",
-			"When a fire destroyed his foster family's home, he took up an unsteady life, always wandering around. \z
-					Then he met {Morris} and decided to go adventuring with him.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_64", "npc.inigo.say_65"}, 10)
 	elseif MsgContains(message, "morris") then
-		npcHandler:say({
-			"Ah, there are lots of stories about Morris. Likes to insist on the 'Mr'. Nobody knows his first name, \z
-					and the telling goes that he has gambled with a demon and lost his first name to him. ...",
-			"The demon is said to have set Morris free so he can reclaim him at the end of his life, \z
-					meanwhile having fun watching Morris struggle through hardship and adventures. ...",
-			"Anyway. One way or another, Morris picked us all up and gathered us here. \z
-					Not sure that sending others on missions is really all it's about for him, \z
-					but if you're looking for a quest, go ask Morris for one.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_66", "npc.inigo.say_67", "npc.inigo.say_68"}, 10)
 	elseif MsgContains(message, "skills") then
-		npcHandler:say({
-			"Not your level, but your skill with your weapon determines how much damage you make. \z
-					With a distance weapon like a bow, you {train} your distance {fighting} skill, \z
-					with a sword your sword fighting, etc. ...",
-			"Druids and sorcerers train their magic level by using their mana through {spells} and runes. \z
-					Their wand or rod damage is not affected by their magic level. If you have any other questions, tell me.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_69", "npc.inigo.say_70"}, 10)
 	elseif MsgContains(message, "rope") then
-		npcHandler:say({
-			"You should never leave without a rope. NEVER. A rope can save your life. \z
-					I once fell down into a poison spider lair - without a rope, I wouldn't be standing here today! ...",
-			"You can buy a rope over at {Richard}'s shop. \z
-					If you don't have the money, kill and loot a few {monsters} - maybe one of them \z
-					even has a rope with it, that sort of thing happens.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_71", "npc.inigo.say_72"}, 10)
 	elseif MsgContains(message, "oressa") then
-		npcHandler:say({
-			"Our local healer. Don't know why that druid girl decided she wanted the unsteady life of an \z
-					adventurer, but she's quite hardy, to tell the truth. I once saw her confront a polar bear.... \z
-					but I'm getting carried away. ...",
-			"If you need healing, go see her. Oressa can also help you decide if you want to \z
-					choose your vocation to leave for the {Mainland}.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_73", "npc.inigo.say_74"}, 10)
 	elseif MsgContains(message, "temple") then
-		npcHandler:say({
-			"When you die, you will be resurrected in the temple of the city you chose as your home. \z
-					Temple {NPC}s, like {Oressa} here on {Dawnport}, can heal you if you're wounded or poisoned. \z
-					Some special temple NPCs can also {bless} you. ...",
-			"To be fully blessed, you should start the Pilgrimage of Ashes at a local guide in the \z
-					harbour once you have reached the {mainland}.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_75", "npc.inigo.say_76"}, 10)
 	elseif MsgContains(message, "dying") then
-		npcHandler:say({
-			"Don't be deceived by its sweet looks - {Tibia} is a rough world. \z
-					If you die, you will lose skill and experience and perhaps even some items, \z
-					and other {players} can rob your corpse. ...",
-			"On the {Mainland}, you can buy blessings from {temple} {NPC}s to prevent item loss, \z
-					but you will always lose some {skills} and experience, so be careful. ...",
-			"Always have a {rope} with you, for a start. A rope is essential.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_77", "npc.inigo.say_78", "npc.inigo.say_79"}, 10)
 	elseif MsgContains(message, "druid spells") then
-		npcHandler:say({
-			"Every vocation has specific {spells} that can only be used if you have that vocation. \z
-					Sorcerers and druids of course rely heavily on spells, \z
-					while knights only have a few at their disposal. ...",
-			"As an adventurer in training, you have a few spells at your disposal at the beginning, \z
-					but more will become available as you progress. ...",
-			"Once you're level 8, new spells become available upstairs at the spell trainers {Garamond} and {Tybald}. \z
-					They can tell you more.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_80", "npc.inigo.say_81", "npc.inigo.say_82"}, 10)
 	elseif MsgContains(message, "train") then
-		npcHandler:say({
-			"Go through one of the open gates on this floor and you will be equipped with \z
-					training weapons and {spells} of a specific vocation. ...",
-			"There are four {vocations} in Tibia: {knight}, {sorcerer}, {paladin} or {druid}. \z
-					Each one has its unique abilities, strengths and weaknesses. \z
-					Just try them out to see which one suits you best. ...",
-			"We need your help in our battle. \z
-					Fight {monsters} to gain experience and better {skills}, until you reach level 8 at least. \z
-					Make sure you always have not only a weapon, but a {rope} with you, as well! ...",
-			"Once you reached level 8 or more, you have to choose one vocation as your definite \z
-					vocation before you can leave for the Tibian {mainland}, where more dangers await you. ...",
-			"To choose your definite vocation, talk to {Oressa} downstairs in the {temple}. \z
-					She can also heal you if you are severely wounded or poisoned - just say 'heal' or 'help' to her. ...",
-			"If you have any other questions, tell me.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_83", "npc.inigo.say_84", "npc.inigo.say_85", "npc.inigo.say_86", "npc.inigo.say_87", "npc.inigo.say_88"}, 10)
 	elseif MsgContains(message, "bless") then
-		npcHandler:say({
-			"The blessings of the gods will protect you from item loss and alleviate the skill \z
-					and experience loss when you die. \z
-					But you will have to undertake the Pilgrimage of Ashes on the {mainland} to get the blessings. ...",
-			"If you die in a fight from a monster's attack, your blessings will be lost, \z
-					and you will have to get them again. ...",
-			"There is also a blessing that will protect you specifically from losses in a {PvP} fight. \z
-					This blessing you will need to get again when you have been killed in a PvP fight. ...",
-			"Here on {Dawnport}, you are protected from losses in a PvP fight by the Adventurer's Blessing - \z
-					unless you attack another player. If you attack another player or reach level 20, you will lose this blessing.",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_89", "npc.inigo.say_90", "npc.inigo.say_91", "npc.inigo.say_92"}, 10)
 	elseif MsgContains(message, "hints") then
 		for i = 0, 35, 1 do
 			if i <= 35 then
@@ -512,11 +289,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say({
-			"Careful, careful, it's a one-way ticket only! \z
-			You can never come back here if you leave now, and you will loso all your Dawnport equipment and products! ...",
-			"Are you {SURE} you want to {LEAVE} Dawnport for ROOKGAARD?",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_93", "npc.inigo.say_94"}, 10)
 		npcHandler:setTopic(playerId, 2)
 	elseif npcHandler:getTopic(playerId) == 2 and MsgContains(message, "yes") or MsgContains(message, "sure") or MsgContains(message, "leave") then
 		local town = Town(TOWNS_LIST.ROOKGAARD)

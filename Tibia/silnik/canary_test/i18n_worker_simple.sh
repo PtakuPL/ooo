@@ -3559,27 +3559,96 @@ for cat_name, config in sorted_cats:
         print(f"MIGRATION:{cat_name}:{needs_work}")
         exit(0)
 
-# 2. Migracja zakończona - sprawdź tłumaczenia
-total_untranslated = 0
-json_files = [f"{c['json']}" for c in CATEGORIES.values()]
-for json_file in json_files:
-    en_keys = count_keys_in_json(json_file)
-    if en_keys == 0:
-        continue
+# 2. Migracja zakończona - sprawdź TRANSLATION_SYNC (Etap 1)
+# Kolejność języków: Europa → Rosja/Azja Śr. → Bliski Wschód → Azja → Inne
+TARGET_LANGUAGES = [
+    # Europa Zachodnia & Środkowa
+    "de", "pl", "es", "pt", "fr", "it", "nl", "cs", "sk", "hu",
+    # Europa Północna
+    "sv", "da", "no", "fi", "et", "lv", "lt",
+    # Europa Południowa & Wschodnia
+    "ro", "bg", "el", "hr", "sl", "bs", "sr", "mk", "sq",
+    # Rosja & Azja Środkowa
+    "ru", "uk", "kk", "uz", "az", "hy", "ka",
+    # Bliski Wschód
+    "tr", "ar", "he", "fa",
+    # Azja
+    "zh", "zh_TW", "ja", "ko", "hi", "th", "vi", "id", "ms", "tl",
+    # Inne
+    "bn", "ta", "te", "ml", "sw"
+]
+
+# Funkcja synchronizacji kluczy EN → LANG
+def get_sync_state():
+    """Pobierz stan synchronizacji z category_state"""
+    try:
+        with open(CATEGORY_STATE_FILE) as f:
+            state = json.load(f)
+        return state.get("translation_sync", {})
+    except:
+        return {}
+
+def count_missing_keys(lang, json_file):
+    """Zlicz klucze brakujące w danym języku (nie mają odpowiednika lub nie mają [EN] prefix)"""
+    en_path = f"{I18N_DIR}/en/{json_file}"
+    lang_path = f"{I18N_DIR}/{lang}/{json_file}"
     
-    for lang in LANG_PRIORITY:
-        untranslated = count_untranslated_keys(lang, json_file)
-        if untranslated > 0:
-            total_untranslated += untranslated
-            # Zwróć AUTO_TRANSLATE zamiast TRANSLATION (bez interakcji!)
-            print(f"AUTO_TRANSLATE:{lang}:{json_file}:{untranslated}")
+    if not os.path.exists(en_path):
+        return 0
+    
+    try:
+        with open(en_path) as f:
+            en_data = json.load(f)
+        
+        if not os.path.exists(lang_path):
+            return len(en_data)  # Wszystkie klucze brakują
+        
+        with open(lang_path) as f:
+            lang_data = json.load(f)
+        
+        # Zlicz klucze które nie istnieją w pliku językowym
+        missing = 0
+        for key in en_data:
+            if key not in lang_data:
+                missing += 1
+        return missing
+    except:
+        return 0
+
+# Znajdź pierwszy język/kategorię do synchronizacji
+sync_state = get_sync_state()
+languages_done = sync_state.get("languages_done", [])
+
+# Pobierz unikalne pliki JSON z kategorii
+json_files = list(set([c["json"] for c in CATEGORIES.values()]))
+json_files.sort()
+
+for lang in TARGET_LANGUAGES:
+    if lang in languages_done:
+        continue  # Ten język już zsynchronizowany
+    
+    for json_file in json_files:
+        missing = count_missing_keys(lang, json_file)
+        if missing > 0:
+            # Znaleziono język/kategorię do synchronizacji
+            print(f"TRANSLATION_SYNC:{lang}:{json_file}:{missing}")
             exit(0)
 
-# 3. Wszystko zrobione
-if total_untranslated == 0:
-    print("IDLE:all_done:0")
+# 3. Sprawdź czy wszystko zsynchronizowane
+all_synced = True
+for lang in TARGET_LANGUAGES:
+    for json_file in json_files:
+        if count_missing_keys(lang, json_file) > 0:
+            all_synced = False
+            break
+    if not all_synced:
+        break
+
+if all_synced:
+    print("IDLE:all_synced:0")
 else:
-    print(f"AUTO_TRANSLATE:all:{total_untranslated}")
+    # Coś poszło nie tak - powtórz od początku
+    print(f"TRANSLATION_SYNC:{TARGET_LANGUAGES[0]}:{json_files[0]}:retry")
 DISPATCHERPY
 }
 

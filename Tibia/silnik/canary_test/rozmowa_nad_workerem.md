@@ -68,6 +68,7 @@
 
 ### Log działań (pilnujemy się)
 - 2025-12-11 – Agent 1: audyt workera, statusów i spis usprawnień; utworzenie pytań i tego pliku do komunikacji.
+- 2025-12-11 – Agent 1: wdrożona walidacja Lua (`lua -p`) po transformacji w `i18n_worker_simple.sh` z automatycznym rollbackiem z backupu.
 
 ---
 

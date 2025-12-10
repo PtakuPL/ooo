@@ -588,7 +588,8 @@ stage_2() {
     local file="$1"
     log "${BLUE}[2/8] ANALYSIS${NC}: $file"
     
-    local stdmod=$(grep -c "StdModule\.say.*text" "$file" 2>/dev/null || echo "0")
+    # Szukamy StdModule.say (text może być na innej linii)
+    local stdmod=$(grep -c "StdModule\.say" "$file" 2>/dev/null || echo "0")
     local npcsay=$(grep -c "npcHandler:say" "$file" 2>/dev/null || echo "0")
     local sendtxt=$(grep -c "sendTextMessage" "$file" 2>/dev/null || echo "0")
     local i18nkey=$(grep -c "i18nKey" "$file" 2>/dev/null || echo "0")

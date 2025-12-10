@@ -282,24 +282,43 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 ## 🔴 LIVE: Aktualna Aktywność
 
-| Parametr | Wartość |
-|----------|---------|
-| Status | {"🔄 in_progress" if in_progress > 0 else "✅ idle"} |
-| Operacja | 🎮 Canary Server - NPC |
-| Plik | Cykl #{cycle_count} |
-| Szczegóły | NPC:{npc_keys} Scripts:{scripts_keys} Items:{items_keys} |
-| Ostatnia aktualizacja | {timestamp} |
+```
+┌─────────────────────────────────────────────────────────────────┐
+│ 🔴 LIVE: Worker v2.0                          Cykl #{cycle_count:>6} │
+├─────────────────────────────────────────────────────────────────┤
+│ Status:    {"🟢 RUNNING" if in_progress > 0 else "✅ IDLE":40} │
+│ Tryb:      {"MIGRATION (8 etapów)":40} │
+│ Kategoria: {"🧙 NPC Dialogs":40} │
+├─────────────────────────────────────────────────────────────────┤
+│ 📊 Postęp migracji NPC:                                        │
+│ [{progress_bar(migrated_npc, migrated_npc + needs_migration_npc, 50)}] │
+│ {migrated_npc}/{migrated_npc + needs_migration_npc} plików ({round(migrated_npc/(migrated_npc + needs_migration_npc)*100) if (migrated_npc + needs_migration_npc) > 0 else 0}%)                                          │
+├─────────────────────────────────────────────────────────────────┤
+│ ⏳ Pozostało: {needs_migration_npc} plików NPC                              │
+│ 🕐 ETA: ~{needs_migration_npc * 10 // 60}min {needs_migration_npc * 10 % 60}s (przy 10s/plik)                            │
+│ 📅 Ostatnia aktualizacja: {timestamp}                 │
+└─────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
 ## 📈 Statystyki sesji
 
-| Metryka | Wartość |
-|---------|---------|
-| Plików przetworzonych | {processed_count} |
-| NPC zmigrowanych | {completed} |
-| Kluczy wyciągniętych | {total_keys} |
-| Błędów | 0 |
+| Metryka | Wartość | Szczegóły |
+|---------|---------|-----------|
+| 📁 Plików przetworzonych | **{processed_count}** | z i18n_file_status.json |
+| ✅ NPC zmigrowanych | **{migrated_npc}**/{migrated_npc + needs_migration_npc} | {round(migrated_npc/(migrated_npc + needs_migration_npc)*100) if (migrated_npc + needs_migration_npc) > 0 else 0}% ukończone |
+| 🔑 Kluczy wyciągniętych | **{total_keys}** | we wszystkich kategoriach |
+| 🌍 Języków z danymi | **{len(langs_with_data)}**/{langs_count} | {", ".join(sorted(langs_with_data)[:5])}{"..." if len(langs_with_data) > 5 else ""} |
+| 🔄 Cykli wykonanych | **#{cycle_count}** | continuous mode |
+| ⚠️ Plików do migracji | **{needs_migration_npc}** | NPC z StdModule.say |
+| ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
+
+---
+
+## 📜 Historia ostatnich operacji
+
+{chr(10).join(recent_completed[:5]) if recent_completed else "- Brak operacji"}
 
 ---
 

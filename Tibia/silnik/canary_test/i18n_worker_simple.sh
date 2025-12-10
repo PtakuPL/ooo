@@ -2006,7 +2006,7 @@ CATEGORIES = {
     },
     "scripts": {
         "dirs": ["data-otservbr-global/scripts", "data/scripts"],
-        "patterns": [r'sendTextMessage\s*\([^,]+,\s*"[^"]{10,}"', r'player:say\(\s*"[^"]+"'],
+        "patterns": [r'sendTextMessage\s*\([^,]+,\s*"[^"]+"\s*\)'],
         "exclude_if": ["sendLocalizedTextMessage"],
         "json": "scripts.json"
     },

@@ -278,6 +278,7 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `one_eyed_joe` - ukończono 2025-12-10 12:08
 - ✅ `zarak` - ukończono 2025-12-10 11:31
 - ✅ `woblin` - ukończono 2025-12-10 11:31
 - ✅ `willie` - ukończono 2025-12-10 11:31

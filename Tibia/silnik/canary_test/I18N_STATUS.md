@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 11:22:12 UTC  
+> **Aktualizacja:** 2025-12-10 11:22:28 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -80,7 +80,7 @@
 | Operacja | 🎮 Canary Server - NPC |
 | Plik | Cykl #1 |
 | Szczegóły | NPC:3594 Scripts:0 Items:0 |
-| Ostatnia aktualizacja | 2025-12-10 11:22:12 |
+| Ostatnia aktualizacja | 2025-12-10 11:22:28 |
 
 ---
 
@@ -155,8 +155,8 @@
 | 📊 Postęp | 24% |
 | 📁 Plik | i18n/en/npc.json |
 | 📁 Plików NPC | 1026 |
-| ✅ Zmigrowanych | 261 |
-| 🔄 Do migracji | 36 |
+| ✅ Zmigrowanych | 262 |
+| 🔄 Do migracji | 35 |
 
 </details>
 
@@ -271,7 +271,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:22:12  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:22:28  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

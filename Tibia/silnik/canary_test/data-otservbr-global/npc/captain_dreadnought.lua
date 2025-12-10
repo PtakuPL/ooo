@@ -318,25 +318,23 @@ end
 -- Other topics
 keywordHandler:addKeyword({ "name" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Ruby Dreadnought. But it's Captain Dreadnought to you!",
+	i18nKey = "npc.captain_dreadnought.stdmod_1",
 })
 keywordHandler:addKeyword({ "job" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I'm captain of this little sloop here, the Sea Cat.",
+	i18nKey = "npc.captain_dreadnought.stdmod_2",
 })
 keywordHandler:addKeyword({ "ship" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "She's pretty, isn't she? Will ship you safely to any port. Though a young landlubber such as you should \z
-	consider to travel to Thais first. The travel is for free. Just once though! You have to ask for a {passage}.",
+	i18nKey = "npc.captain_dreadnought.stdmod_3",
 })
 keywordHandler:addKeyword({ "mainland" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "You chose a peaceful world. Not much danger from other adventurers. Just beware the monsters. \z
-	Want go there, ask for a {passage}.",
+	i18nKey = "npc.captain_dreadnought.stdmod_4",
 })
 keywordHandler:addKeyword({ "rookgaard" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "That old place? Sorry, I don't sail there, no loot to be had.",
+	i18nKey = "npc.captain_dreadnought.stdmod_5",
 })
 keywordHandler:addKeyword({ "adventurers guild" }, StdModule.say, {
 	npcHandler = npcHandler,
@@ -348,21 +346,20 @@ keywordHandler:addKeyword({ "adventurers guild" }, StdModule.say, {
 })
 keywordHandler:addKeyword({ "premium" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Some regions in the world can't be accessed by everyone. Gotta pay, you know? \z
-	If you spend some real cash for premium time, I can bring you to much more challenging locations.",
+	i18nKey = "npc.captain_dreadnought.stdmod_6",
 })
 keywordHandler:addKeyword({ "tibia" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "That's what the whole place is called.",
+	i18nKey = "npc.captain_dreadnought.stdmod_7",
 })
 -- Main topic nodes
 local readyNode = keywordHandler:addKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Good. Got all you want to take to the mainland, {yes}? Gear, limbs, loot?",
+	i18nKey = "npc.captain_dreadnought.stdmod_8",
 })
 local notReadyNode = keywordHandler:addKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "What? Then what DO you want? Learn about the main Tibian {cities}?",
+	i18nKey = "npc.captain_dreadnought.stdmod_9",
 })
 -- Main subtopic nodes
 -- hi, yes, ...
@@ -377,13 +374,13 @@ local defaultTownNode = readyNode:addChildKeyword({ "yes" }, StdModule.say, {
 })
 readyNode:addChildKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "While you take time to ponder, I will just stroll over there and pretend not to listen to you thinking.",
+	i18nKey = "npc.captain_dreadnought.stdmod_10",
 	ungreet = true,
 })
 -- hi, no, ...
 local aboutTownsNode = notReadyNode:addChildKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Well, I can tell you stuff about " .. townNames.all .. ".",
+	i18nKey = "npc.captain_dreadnought.stdmod_11" .. townNames.all .. ".",
 })
 local aboutSailNode = notReadyNode:addChildKeyword({ "no" }, townTravelHandler, {
 	sailableTowns = true,
@@ -396,7 +393,7 @@ defaultTownNode:addChildKeyword({ "no" }, townTravelHandler, { decline = true })
 -- Towns topic nodes
 local townsNode = keywordHandler:addKeyword({ "cities" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Do you want to know about " .. townNames.all .. "?",
+	i18nKey = "npc.captain_dreadnought.stdmod_12" .. townNames.all .. "?",
 })
 for id, town in pairs(towns) do
 	local townNode = KeywordNode:new({ town.name:lower() }, StdModule.say, { npcHandler = npcHandler, text = town.about })
@@ -407,7 +404,7 @@ keywordHandler:addAliasKeyword({ "city" })
 -- Sail topic nodes
 local sailNode = keywordHandler:addKeyword({ "sail" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "So, you've decided on your new home city? Which one will it be?",
+	i18nKey = "npc.captain_dreadnought.stdmod_13",
 })
 local confirmNode = KeywordNode:new({ "yes" }, townTravelHandler, { confirm = true })
 local declineNode = KeywordNode:new({ "no" }, townTravelHandler, { decline = true })

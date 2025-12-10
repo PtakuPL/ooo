@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 11:14:24 UTC  
+> **Aktualizacja:** 2025-12-10 11:23:10 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -83,12 +83,12 @@
 │ Kategoria: 🧙 NPC Dialogs                            │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Postęp migracji NPC:                                        │
-│ [███████████████████████████████████████████░░░░░░░] │
-│ 261/297 plików (88%)                                          │
+│ [████████████████████████████████████████████░░░░░░] │
+│ 262/297 plików (88%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Pozostało: 36 plików NPC                              │
-│ 🕐 ETA: ~6min 0s (przy 10s/plik)                            │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 11:14:24                 │
+│ ⏳ Pozostało: 35 plików NPC                              │
+│ 🕐 ETA: ~5min 50s (przy 10s/plik)                            │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 11:23:10                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -99,18 +99,18 @@
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
 | 📁 Plików przetworzonych | **255** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **261**/297 | 88% ukończone |
+| ✅ NPC zmigrowanych | **262**/297 | 88% ukończone |
 | 🔑 Kluczy wyciągniętych | **3594** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
 | 🔄 Cykli wykonanych | **#1** | continuous mode |
-| ⚠️ Plików do migracji | **36** | NPC z StdModule.say |
+| ⚠️ Plików do migracji | **35** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
-- ✅ `captain_dreadnought` - ukończono 2025-12-10 11:14
+- ✅ `captain_dreadnought` - ukończono 2025-12-10 11:22
 - ✅ `zumtah` - ukończono 2025-12-10 07:21
 - ✅ `zora` - ukończono 2025-12-10 07:21
 - ✅ `ziyad` - ukończono 2025-12-10 07:21
@@ -178,8 +178,8 @@
 | 📊 Postęp | 24% |
 | 📁 Plik | i18n/en/npc.json |
 | 📁 Plików NPC | 1026 |
-| ✅ Zmigrowanych | 261 |
-| 🔄 Do migracji | 36 |
+| ✅ Zmigrowanych | 262 |
+| 🔄 Do migracji | 35 |
 
 </details>
 
@@ -294,14 +294,14 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:14:24  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:23:10  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `captain_dreadnought` - ukończono 2025-12-10 11:14
+- ✅ `captain_dreadnought` - ukończono 2025-12-10 11:22
 - ✅ `zumtah` - ukończono 2025-12-10 07:21
 - ✅ `zora` - ukończono 2025-12-10 07:21
 - ✅ `ziyad` - ukończono 2025-12-10 07:21

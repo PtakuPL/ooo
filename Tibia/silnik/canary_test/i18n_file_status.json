@@ -4195,22 +4195,22 @@
         },
         "4_transformation": {
           "status": "completed",
-          "transformed": 0
+          "transformed": 13
         },
         "5_extraction_en": {
           "status": "completed",
           "keys_added": 0
         },
-        "6_translation": {
+        "6_placeholder": {
           "status": "completed",
           "languages": [],
-          "keys_per_lang": 19
+          "keys_per_lang": 19,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
         },
         "7_validation": {
           "status": "completed",
           "errors": [],
           "warnings": [
-            "Brak i18nKey w pliku Lua",
             "Znaleziono 313 duplikat\u00f3w warto\u015bci"
           ],
           "valid_langs": [
@@ -4268,7 +4268,7 @@
             "mk",
             "hr"
           ],
-          "keys_in_lua": 0,
+          "keys_in_lua": 13,
           "validation_passed": true
         },
         "8_sync": {
@@ -4276,7 +4276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T11:22:10.069995"
+      "completed_at": "2025-12-10T11:22:19.594990"
     },
     "data-otservbr-global/npc/captain_fearless.lua": {
       "stages": {

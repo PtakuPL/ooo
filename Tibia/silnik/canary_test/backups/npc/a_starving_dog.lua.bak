@@ -67,7 +67,7 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 npcHandler:setMessage(MESSAGE_WALKAWAY, "")
-keywordHandler:addGreetKeyword({ "sniffler" }, { npcHandler = npcHandler, text = "<sniff>" })
+keywordHandler:addGreetKeyword({ "sniffler" }, { npcHandler = npcHandler, text = "<sniff>", i18nKey = "npc.a_starving_dog.greet_1" })
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

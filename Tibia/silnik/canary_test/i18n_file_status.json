@@ -813,12 +813,76 @@
           "greet_keys": 0,
           "farewell_keys": 0
         },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Brak i18nKey w pliku Lua"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 0,
+          "validation_passed": true
+        },
         "8_sync": {
           "status": "completed"
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:05:34.648127"
+      "completed_at": "2025-12-10T14:05:55.246003"
     },
     "data-otservbr-global/npc/nelly.lua": {
       "stages": {
@@ -1038,7 +1102,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:05:36.077531"
+      "completed_at": "2025-12-10T14:05:56.896230"
     },
     "data-otservbr-global/npc/nipuna.lua": {
       "stages": {
@@ -1258,7 +1322,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:05:37.479079"
+      "completed_at": "2025-12-10T14:05:58.070893"
     },
     "data-otservbr-global/npc/richard.lua": {
       "stages": {
@@ -1596,7 +1660,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:05:38.835815"
+      "completed_at": "2025-12-10T14:05:59.375808"
     },
     "data-otservbr-global/npc/romir.lua": {
       "stages": {
@@ -1816,7 +1880,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:05:39.524620"
+      "completed_at": "2025-12-10T14:05:59.990490"
     },
     "data-otservbr-global/npc/seymour.lua": {
       "stages": {
@@ -2160,7 +2224,7 @@
       "stages": {
         "1_started": {
           "status": "completed",
-          "hash": "5e46acf7a71e5d522ead4311b5e65fe3",
+          "hash": "a2789f65f2de23bdbbe47438f911816d",
           "type": "npc"
         },
         "2_analysis": {
@@ -2172,111 +2236,12 @@
           "addGreetKeyword": 1,
           "addFarewellKeyword": 0,
           "total": 1,
-          "already_i18n": 0,
+          "already_i18n": 1,
           "npcSayLib": 1,
-          "needs_migration": true
-        },
-        "3_documentation": {
-          "status": "completed",
-          "doc_file": "docs/i18n/npc/a_starving_dog.md",
-          "keys_documented": 1
-        },
-        "4_transformation": {
-          "status": "completed",
-          "transformed": 1,
-          "stdmod_transformed": 0,
-          "npcsay_transformed": 0
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1,
-          "stdmod_keys": 0,
-          "npcsay_keys": 0,
-          "greet_keys": 1,
-          "farewell_keys": 0
-        },
-        "6_placeholder": {
-          "status": "completed",
-          "languages": [
-            "pl",
-            "de",
-            "es",
-            "pt",
-            "fr",
-            "it",
-            "ru"
-          ],
-          "keys_per_lang": 1,
-          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
-        },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 1,
-          "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
+          "needs_migration": false
         }
       },
-      "overall_status": "completed",
-      "completed_at": "2025-12-10T14:05:21.915823"
+      "overall_status": "in_progress"
     },
     "data-otservbr-global/npc/barbara.lua": {
       "stages": {
@@ -3920,7 +3885,7 @@
     }
   },
   "global_stats": {
-    "files_completed": 35,
+    "files_completed": 34,
     "total_keys": 0
   }
 }

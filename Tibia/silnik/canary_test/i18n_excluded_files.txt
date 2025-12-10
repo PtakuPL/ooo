@@ -5154,3 +5154,7 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/allen.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/robin.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/old_rock_boy.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/bertram.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/a_goblin_exile.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/grubokk.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/lib/npc/load.lua

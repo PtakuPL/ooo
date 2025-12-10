@@ -24086,3 +24086,14 @@ Kategoria: npc
 Kategoria: npc
 
 ---
+
+## [2025-12-10 04:37:48] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/urks_the_mute.lua`
+
+**Akcja:** Wyekstrahowano 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---

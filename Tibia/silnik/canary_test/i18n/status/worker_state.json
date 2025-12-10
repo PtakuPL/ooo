@@ -1,17 +1,17 @@
 {
   "schema_version": "2.1",
-  "last_updated": "2025-12-10T04:34:35+01:00",
+  "last_updated": "2025-12-10T04:36:56+01:00",
   "worker": {
     "version": "4.2",
     "status": "running",
     "mode": "extraction",
-    "cycle": 2,
+    "cycle": 3,
     "files_per_cycle": 10,
     "pid": 385540
   },
   "global_progress": {
-    "total_files_processed": 741,
-    "total_files_excluded": 5102,
+    "total_files_processed": 764,
+    "total_files_excluded": 5156,
     "total_keys": 53385,
     "total_languages": 53,
     "total_conflicts": 0
@@ -31,28 +31,28 @@
   },
   "recent_files": [
   {
-    "file": "yoem.lua",
-    "time": "04:34:35",
+    "file": "luna.lua",
+    "time": "04:36:56",
     "status": "success"
   },
   {
-    "file": "gamon.lua",
-    "time": "04:34:35",
+    "file": "olrik.lua",
+    "time": "04:36:56",
     "status": "success"
   },
   {
-    "file": "valentina.lua",
-    "time": "04:34:35",
+    "file": "rapanaio_boat.lua",
+    "time": "04:36:56",
     "status": "success"
   },
   {
-    "file": "kjesse.lua",
-    "time": "04:34:35",
+    "file": "nilsor.lua",
+    "time": "04:36:56",
     "status": "success"
   },
   {
-    "file": "buddel_tyrsung.lua",
-    "time": "04:34:35",
+    "file": "captain_greyhound.lua",
+    "time": "04:36:56",
     "status": "success"
   }
 ]

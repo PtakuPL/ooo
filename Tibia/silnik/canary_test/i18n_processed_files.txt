@@ -762,3 +762,4 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/rapanaio_boat.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/nilsor.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/captain_greyhound.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/urks_the_mute.lua

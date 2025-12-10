@@ -53,5 +53,10 @@
   "item.135.name": "special flask",
   "item.136.name": "beer bottle",
   "item.137.name": "water cask",
-  "item.138.name": "empty beer bottle"
+  "item.138.name": "empty beer bottle",
+  "item.139.name": "mining helmet",
+  "item.140.name": "parcel",
+  "item.141.name": "cigar",
+  "item.142.name": "bale of white cloth",
+  "item.143.name": "bale of yellowed cloth"
 }

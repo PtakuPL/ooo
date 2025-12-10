@@ -718,5 +718,10 @@
   "item.2177.name": "closed fence gate",
   "item.2178.name": "open fence gate",
   "item.2179.name": "closed fence gate",
-  "item.2180.name": "open fence gate"
+  "item.2180.name": "open fence gate",
+  "item.2186.name": "RESERVED SPRITE",
+  "item.2187.name": "nothing special",
+  "item.2188.name": "sandstone pillar",
+  "item.2189.name": "sandstone statue",
+  "item.2190.name": "oriental pillar"
 }

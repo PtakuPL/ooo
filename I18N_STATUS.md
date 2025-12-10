@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:49:45 UTC  
+> **Aktualizacja:** 2025-12-11 00:49:53 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **29314** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#177** | - |
+| 🔄 Cykl | **#178** | - |
 
 ---
 
@@ -69,7 +69,7 @@
 | 🇵🇱 Polski | 📊 452919 kluczy | 452919 | [EN] prefix |
 | 🇪🇸 Hiszpański | 📊 452919 kluczy | 452919 | [EN] prefix |
 | 🇫🇷 Francuski | 📊 297907 kluczy | 297907 | [EN] prefix |
-| 🌐 Pozostałe (0/53) | 🔄 | 2489217 | Aktualnie: NL |
+| 🌐 Pozostałe (0/53) | 🔄 | 2517950 | Aktualnie: NL |
 
 ---
 
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   177 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   178 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🌍 TRANSLATION_SYNC (Etap 1)              │
-│ Kategoria: 🌍 NL/npc.json                            │
+│ Kategoria: 🌍 NL/php.json                            │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: NL/npc.json                                    │
+│ 📊 Ostatnia aktywność: NL/php.json                                    │
 │ [██████████████████████████████████████████████████] │
-│ 96445/29314 kluczy (329%)                                          │
+│ 125178/29314 kluczy (427%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 27515 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:49:45                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:49:53                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -103,7 +103,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29314** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#177** | continuous mode |
+| 🔄 Cykli wykonanych | **#178** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,7 +111,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🌍 `NL/npc.json` +96445 kluczy @ 00:49:45
+- 🌍 `NL/php.json` +125178 kluczy @ 00:49:53
 - ⚡ `twig` +0 kluczy @ 00:47:28
 - ⚡ `keywordhandler` +0 kluczy @ 00:47:20
 - ⚡ `sendtextmessage` +0 kluczy @ 00:47:13
@@ -278,17 +278,17 @@
 
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
-| items | 13749 | 11689 | 4 | ⏭️ Skip 48m |
-| monsters | 7341 | 9549 | 4 | ⏭️ Skip 47m |
+| items | 13749 | 11689 | 4 | ⏭️ Skip 47m |
+| monsters | 7341 | 9549 | 4 | ⏭️ Skip 46m |
 | npc | 5334 | 0 | 0 | ✅ Active |
-| php | 1166 | 3426 | 2 | ⏭️ Skip 4m |
-| html | 795 | 1145 | 2 | ⏭️ Skip 5m |
+| php | 1166 | 3426 | 2 | ⏭️ Skip 3m |
+| html | 795 | 1145 | 2 | ⏭️ Skip 4m |
 | scripts | 385 | 0 | 4 | ⏭️ Skip 33m |
-| client | 283 | 821 | 4 | ⏭️ Skip 57m |
+| client | 283 | 821 | 4 | ⏭️ Skip 56m |
 | raids | 147 | 351 | 4 | ⏭️ Skip 47m |
 | startup | 23 | 23 | 4 | ⏭️ Skip 49m |
 | libs | 21 | 53 | 4 | ⏭️ Skip 48m |
-| modules | 16 | 16 | 4 | ⏭️ Skip 49m |
+| modules | 16 | 16 | 4 | ⏭️ Skip 48m |
 | cpp | 15 | 0 | 0 | ✅ Active |
 | spells | 15 | 0 | 0 | ✅ Active |
 | messages | 11 | 0 | 0 | ✅ Active |
@@ -309,22 +309,22 @@
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
 | scripts | 33m | 4x | Progresywny backoff |
-| monsters | 47m | 4x | Progresywny backoff |
+| monsters | 46m | 4x | Progresywny backoff |
 | raids | 47m | 4x | Progresywny backoff |
 | world | 47m | 4x | Progresywny backoff |
-| items | 48m | 4x | Progresywny backoff |
+| items | 47m | 4x | Progresywny backoff |
 | libs | 48m | 4x | Progresywny backoff |
 | events | 48m | 4x | Progresywny backoff |
 | chatchannels | 48m | 4x | Progresywny backoff |
-| modules | 49m | 4x | Progresywny backoff |
+| modules | 48m | 4x | Progresywny backoff |
 | startup | 49m | 4x | Progresywny backoff |
 | npclib | 49m | 4x | Progresywny backoff |
-| client | 57m | 4x | Progresywny backoff |
+| client | 56m | 4x | Progresywny backoff |
 | sendtextmessage | 57m | 4x | Progresywny backoff |
 | keywordhandler | 57m | 4x | Progresywny backoff |
 | twig | 57m | 4x | Progresywny backoff |
-| php | 4m | 2x | Progresywny backoff |
-| html | 5m | 2x | Progresywny backoff |
+| php | 3m | 2x | Progresywny backoff |
+| html | 4m | 2x | Progresywny backoff |
 
 ---
 
@@ -332,7 +332,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #177 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #178 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -347,12 +347,12 @@
 | PT | 452,982 | ⏳ |
 | FR | 297,907 | ⏳ |
 | IT | 241,906 | ⏳ |
-| NL | 96,445 | 🔄 |
+| NL | 125,178 | 🔄 |
 | CS | 0 | ⏳ |
 | SK | 0 | ⏳ |
 | HU | 0 | ⏳ |
 
-> **Aktualnie:** NL / npc.json  
+> **Aktualnie:** NL / php.json  
 > **Ukończone języki:** 0/53  
 > **Prefix:** `[EN] ` (klucze do przetłumaczenia)
 
@@ -375,7 +375,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:49:45  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:49:53  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

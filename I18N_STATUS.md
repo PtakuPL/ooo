@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 23:36:24 UTC  
+> **Aktualizacja:** 2025-12-10 23:36:31 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **24214** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#20** | - |
+| 🔄 Cykl | **#21** | - |
 
 ---
 
@@ -76,19 +76,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    20 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    21 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 STARTUP                                │
+│ Kategoria: 🎒 NPCLIB                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: startup                      │
+│ 📊 Ostatnia aktywność: npclib                      │
 │ [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 19/1000 kluczy (2%)                                          │
+│ 0/1000 kluczy (0%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 12215 operacji               │
 │ 🕐 Aktywne kategorie: 16                               │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 23:36:24                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 23:36:31                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -102,7 +102,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **24214** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
-| 🔄 Cykli wykonanych | **#20** | continuous mode |
+| 🔄 Cykli wykonanych | **#21** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -110,6 +110,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `npclib` +0 kluczy @ 23:36:31
 - ⚡ `startup` +0 kluczy @ 23:36:24
 - ⚡ `modules` +0 kluczy @ 23:36:17
 - ⚡ `world` +0 kluczy @ 23:36:10
@@ -117,7 +118,6 @@
 - 👹 `monsters` +0 kluczy @ 23:35:51
 - ⚡ `chatchannels` +0 kluczy @ 23:35:37
 - ⚡ `events` +0 kluczy @ 23:35:23
-- ⚡ `libs` +0 kluczy @ 23:35:08
 
 ---
 
@@ -280,8 +280,8 @@
 | npc | 5334 | 0 | 0 | ✅ Active |
 | monsters | 4158 | 0 | 5 | ⏭️ Skip 119m |
 | html | 418 | 14 | 1 | ⏭️ Skip 0m |
-| scripts | 385 | 0 | 6 | ⏭️ Skip 61m |
-| php | 32 | 24 | 1 | ⏭️ Skip 0m |
+| scripts | 385 | 0 | 6 | ⏭️ Skip 60m |
+| php | 32 | 24 | 1 | ✅ Active |
 | raids | 30 | 0 | 5 | ⏭️ Skip 119m |
 | startup | 19 | 11 | 2 | ⏭️ Skip 9m |
 | modules | 16 | 16 | 2 | ⏭️ Skip 9m |
@@ -294,7 +294,7 @@
 | libs | 5 | 5 | 2 | ⏭️ Skip 8m |
 | actions | 0 | 0 | 0 | ⏳ Empty |
 | errors | 0 | 0 | 0 | ⏳ Empty |
-| npclib | 0 | 0 | 1 | ⏳ Empty |
+| npclib | 0 | 0 | 2 | ⏭️ Skip 9m |
 | quests | 0 | 0 | 0 | ⏳ Empty |
 | server | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
@@ -306,7 +306,7 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| scripts | 61m | 6x | Progresywny backoff |
+| scripts | 60m | 6x | Progresywny backoff |
 | monsters | 119m | 5x | Progresywny backoff |
 | raids | 119m | 5x | Progresywny backoff |
 | world | 119m | 5x | Progresywny backoff |
@@ -316,7 +316,7 @@
 | chatchannels | 9m | 2x | Progresywny backoff |
 | modules | 9m | 2x | Progresywny backoff |
 | startup | 9m | 2x | Progresywny backoff |
-| php | 0m | 1x | Progresywny backoff |
+| npclib | 9m | 2x | Progresywny backoff |
 | html | 0m | 1x | Progresywny backoff |
 | client | 0m | 1x | Progresywny backoff |
 | sendtextmessage | 0m | 1x | Progresywny backoff |
@@ -329,7 +329,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #20 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #21 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -372,7 +372,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:36:24  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:36:31  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

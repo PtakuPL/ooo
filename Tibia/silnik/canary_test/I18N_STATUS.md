@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 04:58:29 UTC  
+> **Aktualizacja:** 2025-12-10 05:00:37 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **765** | ↑ |
+| 📁 Plików przetworzonych | **763** | ↑ |
 | ⏭️ Plików wykluczonych | **5160** | - |
-| 🔑 Kluczy i18n | **51192** | ↑ |
+| 🔑 Kluczy i18n | **51200** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **50** | ✓ |
-| 🔄 Cykl | **#13** | - |
+| 🔄 Cykl | **#14** | - |
 
 ---
 
@@ -78,9 +78,9 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #13` |
+| **Plik** | `Cykl #14` |
 | **Szczegóły** | NPC:13191 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-10 04:58:02 |
+| **Ostatnia aktualizacja** | 2025-12-10 05:00:08 |
 
 ### 📈 Statystyki sesji
 
@@ -156,7 +156,7 @@
 
 | Metryka | Wartość |
 |---------|----------|
-| 🔑 Kluczy | **13191** |
+| 🔑 Kluczy | **13199** |
 | 🎯 Cel | 13000 |
 | 📊 Postęp | 100% |
 | 📁 Plik | `i18n/en/npc.json` |
@@ -267,7 +267,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.2** | 🟢 RUNNING | PID: 385540, Cykl #13 |
+| **Worker v4.2** | 🟢 RUNNING | PID: 385540, Cykl #14 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -276,7 +276,7 @@
 
 ```
 [✅] Items (36972)      ██████████████████░░  92%
-[✅] NPC (13191)        ████████████████████░ 100%
+[✅] NPC (13199)        ████████████████████░ 100%
 [🔄] Scripts (713)    ██████████████░░░░░░  71%
 [🔄] Monsters (100)   ████░░░░░░░░░░░░░░░░  20%
 [🔄] Spells (100)     ██████████░░░░░░░░░░  50%
@@ -288,5 +288,5 @@
 ---
 
 *🤖 Machine-readable: `i18n/status/worker_state.json`*  
-*📅 Auto-updated by Worker v4.2 | Last: 2025-12-10 04:58:30*  
+*📅 Auto-updated by Worker v4.2 | Last: 2025-12-10 05:00:38*  
 *🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)*

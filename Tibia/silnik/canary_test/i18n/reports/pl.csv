@@ -50386,6 +50386,19 @@ npc.captain_max_calassa.stdmod_3,Do you want go back to {Liberty Bay}?,,missing
 npc.captain_max_calassa.stdmod_4,"Welcome on board, noble |PLAYERNAME|. I can bring you back to {Liberty Bay}. Do you want me to do it?",,missing
 npc.captain_max_calassa.stdmod_5,I am the captain of this ship.,,missing
 npc.captain_max_calassa.stdmod_6,I am the captain of this ship.,,missing
+npc.oldrak.job,I guard this humble temple as a monument for the order of the {nightmare knights}.,,missing
+npc.oldrak.name,My name is Oldrak.,,missing
+npc.oldrak.monster,These plains are not safe for ordinary travellers. It will take heroes to survive here.,,missing
+npc.oldrak.help,"I can't help you, sorry!",,missing
+npc.oldrak.goshnar,The greatest necromant who ever cursed our land with the steps of his feet. He was defeated by the nightmare knights.,,missing
+npc.a_frog.stdmod_1,"If another prince comes to kiss me, I'll kick his ass so bad that he'll need a sedan chair to get away.",,missing
+npc.a_frog.stdmod_2,"If another prince comes to kiss me, I'll kick his ass so bad that he'll need a sedan chair to get away.",,missing
+npc.a_frog.stdmod_3,Don't even try to kiss me or I'll rondhouse kick you!,,missing
+npc.a_frog.stdmod_4,"Talking frogs don't exist, idiot. It's your fucking imagination tricking you. And now your imagination commands you to walk away.",,missing
+npc.a_frog.stdmod_5,"Finally someone notices I'm a FROG. Congratulations, you're VERY observant... *sigh*",,missing
+npc.a_frog.stdmod_6,A quest? Yeah I got a quest! Go and tell King Tibianus his son tried to kiss me again!,,missing
+npc.a_frog.stdmod_7,"Pyrale? That idiot transformed me into an human once. But my wife came and kissed me, so I'm a frog again.",,missing
+npc.a_frog.stdmod_8,"Pyrale? That idiot transformed me into an human once. But my wife came and kissed me, so I'm a frog again.",,missing
 player.status.cleanse,You are no longer {0}. (cleanse charm),Nie jesteś już {0}. (urok oczyszczenia),translated
 player.condition.poisoned,You are poisoned.,Jesteś zatruty.,translated
 player.condition.drowning,You are drowning.,Toniesz.,translated
@@ -52595,9 +52608,9 @@ data.otservbr.global.npc.oblivion.L98.990,A shadow preceded you. You wish?,A sha
 data.otservbr.global.npc.ocelus.L105.434,"Greetings, dear visitor |PLAYERNAME|.","Greetings, dear visitor |PLAYERNAME|.",identical
 data.otservbr.global.npc.ocelus.L106.435,Good bye.,Good bye.,identical
 data.otservbr.global.npc.ocelus.L107.436,Oh well.,Oh well.,identical
-data.otservbr.global.npc.oldrak.L195.1241,Welcome |PLAYERNAME|! Only rarely I can welcome {visitors} these days.,Welcome |PLAYERNAME|! Only rarely I can welcome {visitors} these days.,identical
-data.otservbr.global.npc.oldrak.L196.1242,"Take care, it's dangerous out there.","Take care, it's dangerous out there.",identical
-data.otservbr.global.npc.oldrak.L197.1243,"Good Bye, |PLAYERNAME|","Good Bye, |PLAYERNAME|",identical
+data.otservbr.global.npc.oldrak.L196.1241,Welcome |PLAYERNAME|! Only rarely I can welcome {visitors} these days.,Welcome |PLAYERNAME|! Only rarely I can welcome {visitors} these days.,identical
+data.otservbr.global.npc.oldrak.L197.1242,"Take care, it's dangerous out there.","Take care, it's dangerous out there.",identical
+data.otservbr.global.npc.oldrak.L198.1243,"Good Bye, |PLAYERNAME|","Good Bye, |PLAYERNAME|",identical
 data.otservbr.global.npc.olrik.L87.1584,Hello. How may I help you |PLAYERNAME|? Ask me for a {trade} if you want to buy something. I can also explain the {mail} system.,Hello. How may I help you |PLAYERNAME|? Ask me for a {trade} if you want to buy something. I can also explain the {mail} system.,identical
 data.otservbr.global.npc.olrik.L88.1585,"It was a pleasure to help you, |PLAYERNAME|.","It was a pleasure to help you, |PLAYERNAME|.",identical
 data.otservbr.global.npc.olrik.L89.1586,Here. Don't forget that you need to buy a label too if you want to send a parcel. Always write the name of the {receiver} in the first line.,Here. Don't forget that you need to buy a label too if you want to send a parcel. Always write the name of the {receiver} in the first line.,identical

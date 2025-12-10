@@ -224,8 +224,8 @@ cat i18n/status/npc.json | jq .
 ## ⚙️ Tryby, flagi i pliki stanu (Runbook)
 
 - Główne wejście: `i18n_worker_simple.sh` (v2.0).
-- Tryb domyślny bez flag: MIGRATION (8 etapów).  
-- Tryb ciągły: `./i18n_worker_simple.sh --continuous <batch_size> <sleep_sec>`  
+- Tryb domyślny bez flag: MIGRATION (8 etapów).
+- Tryb ciągły: `./i18n_worker_simple.sh --continuous <batch_size> <sleep_sec>`
   - Przykład: `./i18n_worker_simple.sh --continuous 10 15` (10 plików na cykl, 15s przerwy).
 - Tłumaczenia ręczne (agent wpisuje w terminalu): `./i18n_worker_simple.sh --translate pl`
 - Pojedynczy plik: `./i18n_worker_simple.sh --file data-otservbr-global/npc/alexander.lua`
@@ -239,12 +239,33 @@ cat i18n/status/npc.json | jq .
 - `i18n_excluded_files.txt` – wykluczenia stałe (patrz też `i18n_excluded_files.txt.bak*`).
 - `i18n_worker_state.json` – ostatnie uruchomienie, PID, parametry.
 - `i18n_worker.log` / `i18n_worker_v5.log` / `work_i18n_*.log` – logi historyczne.
+- `worker_commands.txt` / `.worker_command` – zdalne sterowanie dispatcherem (FORCE:, RANDOM, STATUS, SKIP, PAUSE:n, NOTE:).
+- `i18n_global_stats.json` – licznik cykli i ostatnia aktualizacja dashboardu.
 
 ### Szybkie procedury operacyjne
 - **Restart workera**: `pkill -f i18n_worker_simple.sh || true && ./i18n_worker_simple.sh --continuous 10 15 &`
 - **Odblokowanie kategorii**: usuń wpis z `.i18n_category_state.json` lub usuń plik, by zresetować backoff.
 - **Recovery po crashu**: usuń `.worker.pid` jeśli istnieje, sprawdź `i18n_worker.log`, uruchom ponownie w trybie continuous.
 - **Kontrola progresu**: `jq '.total_processed' .i18n_category_state.json` oraz `tail -n 20 i18n_worker.log`.
+
+### Tryby i komendy CLI (mapowanie na kod)
+- `--file <path>` – MIGRATION dla jednego pliku (8 etapów).
+- `--auto [N]` – MIGRATION dla N plików NPC (StdModule.say/text lub npcHandler:say), bez dispatcherów.
+- `--continuous [--batch N] [--delay S]` – pełny tryb 24/7 z dispatcherem (MIGRATION → TRANSLATION_SYNC → AUTO_TRANSLATE → IDLE), obsługuje komendy z `worker_commands.txt`.
+- `--translate [lang]` – tryb interaktywny tłumaczeń (SKIP/QUIT/SAVE).
+- `--status` / `--stats` – dashboard tekstowy (statystyki plików, etapy, klucze).
+- `--update-status` – aktualizacja `I18N_STATUS.md` i plików statusu.
+- Brak flagi – wyświetla krótką pomoc (opis trybów).
+
+### Dispatcher i kategorie (tryb continuous)
+- MIGRATION kategorie: `npc, scripts, monsters, spells, items, raids, world, libs, events, chatchannels, modules, startup, npclib, php, html, cpp, client, sendtextmessage/stm, keywordhandler/kwh, twig`.
+- TRANSLATION_SYNC: synchronizacja kluczy EN → język, wykrywa brakujące klucze per plik JSON i język.
+- AUTO_TRANSLATE: automatyczne wypełnianie placeholderów (non-interactive) dla brakujących kluczy.
+- IDLE: gdy brak pracy (migracja + tłumaczenia zakończone), usypia na 5 minut.
+- Sterowanie z plików: `worker_commands.txt` (z repo) lub `.worker_command` (lokalnie) – umożliwia wymuszenie kategorii, losowanie, pauzę, skip cyklu, notatki.
+
+### Git / push
+- Każdy cykl continuous: `git add -A` → commit `"📊 I18N: <liczba kluczy> <tryb> - Cykl #<n>"` → `git push origin master` (jeśli są zmiany). Jeśli push padnie, cykl leci dalej.
 
 ---
 

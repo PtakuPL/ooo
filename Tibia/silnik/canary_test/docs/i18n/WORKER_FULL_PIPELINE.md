@@ -3,7 +3,13 @@
 > **Dokument**: Szczegółowy plan autonomicznego workera i18n  
 > **Wersja**: 2.0  
 > **Data**: 2025-12-10  
-> **Status**: PLANOWANIE
+> **Status**: PLANOWANIE (implementacja częściowo w `i18n_worker_simple.sh`)
+
+### Mapowanie na aktualny skrypt (`i18n_worker_simple.sh`)
+- Wejścia CLI: `--file`, `--auto`, `--continuous [--batch N --delay S]`, `--translate [lang]`, `--status/--stats`, `--update-status`.
+- Tryby w dispatcherze continuous: `MIGRATION` (kategorie NPC/SCRIPTS/... 16+), `TRANSLATION_SYNC`, `AUTO_TRANSLATE`, `IDLE`.
+- Pliki stanu: `i18n_file_status.json` (etapy), `.i18n_category_state.json` (backoff kategorii), `i18n_global_stats.json` (cykle), `worker_commands.txt`/`.worker_command` (sterowanie), backupy w `backups/`.
+- Każdy cykl continuous wykonuje commit/push jeśli są zmiany (nazwa: `📊 I18N: <klucze> <tryb> - Cykl #N`).
 
 ---
 

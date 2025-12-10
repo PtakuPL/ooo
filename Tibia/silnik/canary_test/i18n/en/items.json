@@ -5718,5 +5718,20 @@
   "item.16245.name": "RESERVED SPRITE",
   "item.16246.name": "strange symbols",
   "item.16247.name": "RESERVED SPRITE",
-  "item.16248.name": "huge brown mushroom"
+  "item.16248.name": "huge brown mushroom",
+  "item.16249.name": "RESERVED SPRITE",
+  "item.16250.name": "unknown item",
+  "item.16251.name": "golem wrench",
+  "item.16252.name": "gnomish voucher type MB",
+  "item.16253.name": "gnomish voucher type MA1",
+  "item.16254.name": "gnomish voucher type MA2",
+  "item.16255.name": "gnomish voucher type CB",
+  "item.16256.name": "gnomish voucher type CA1",
+  "item.16257.name": "gnomish voucher type CA2",
+  "item.16264.name": "prismatic ring",
+  "item.16277.name": "adventurer's stone",
+  "item.16278.name": "RESERVED SPRITE",
+  "item.16279.name": "crystal rubbish",
+  "item.16383.name": "mire bough",
+  "item.16384.name": "choking swamp gnarl"
 }

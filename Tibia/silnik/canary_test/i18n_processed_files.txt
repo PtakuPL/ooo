@@ -764,3 +764,13 @@
 data-otservbr-global/scripts/quests/grimvale/actions_portal_minis_grimvale.lua
 data-otservbr-global/scripts/quests/grimvale/actions_portal_minis_ancient_feud.lua
 data-otservbr-global/scripts/quests/the_shattered_isles_quest/action_tortoise_egg_nargor.lua
+data-otservbr-global/scripts/quests/the_order_of_lion/creatureevent-commander_kills.lua
+data-otservbr-global/scripts/quests/the_order_of_lion/action-drume.lua
+data-otservbr-global/scripts/quests/the_order_of_lion/moveevent-drume_entrance.lua
+data-otservbr-global/scripts/quests/kilmaresh_quest/1-fafnars-wrath/2-ambassadors-treason.lua
+data-otservbr-global/scripts/quests/kilmaresh_quest/1-fafnars-wrath/6-mind-travel.lua
+data-otservbr-global/scripts/quests/kilmaresh_quest/1-fafnars-wrath/8-blessing-the-statues.lua
+data-otservbr-global/scripts/quests/kilmaresh_quest/actions_coruja.lua
+data-otservbr-global/scripts/quests/kilmaresh_quest/actions_scissors.lua
+data-otservbr-global/scripts/quests/kilmaresh_quest/actions_tortoise.lua
+data-otservbr-global/scripts/quests/kilmaresh_quest/actions_cagekey.lua

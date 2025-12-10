@@ -1,22 +1,5 @@
 {
-  "skip_until": {
-    "scripts": 1765412581.8600788,
-    "monsters": 1765413409.1547892,
-    "raids": 1765413456.7703903,
-    "world": 1765413463.6158943,
-    "items": 1765413470.6846058,
-    "libs": 1765413505.9823458,
-    "events": 1765413513.1482074,
-    "chatchannels": 1765413519.9187703,
-    "modules": 1765413526.9376585,
-    "startup": 1765413534.0953534,
-    "npclib": 1765413540.8837514,
-    "client": 1765414010.556108,
-    "sendtextmessage": 1765414033.2138329,
-    "keywordhandler": 1765414040.6771817,
-    "twig": 1765414048.030098,
-    "php": 1765411499.5839975
-  },
+  "skip_until": {},
   "last_processed": {
     "scripts": {
       "count": 0,
@@ -67,8 +50,8 @@
       "timestamp": 1765410899.5839918
     },
     "html": {
-      "count": 102,
-      "timestamp": 1765410982.1126177
+      "count": 160,
+      "timestamp": 1765411044.293723
     },
     "client": {
       "count": 0,
@@ -88,23 +71,7 @@
     }
   },
   "consecutive_zeros": {
-    "html": 0,
-    "scripts": 4,
-    "monsters": 4,
-    "raids": 4,
-    "world": 4,
-    "items": 4,
-    "libs": 4,
-    "events": 4,
-    "chatchannels": 4,
-    "modules": 4,
-    "startup": 4,
-    "npclib": 4,
-    "php": 2,
-    "client": 4,
-    "sendtextmessage": 4,
-    "keywordhandler": 4,
-    "twig": 4
+    "html": 0
   },
   "total_processed": {
     "items": 11689,
@@ -114,7 +81,7 @@
     "modules": 16,
     "startup": 23,
     "php": 3846,
-    "html": 1892,
+    "html": 2132,
     "client": 821,
     "keywordhandler": 64,
     "twig": 365,

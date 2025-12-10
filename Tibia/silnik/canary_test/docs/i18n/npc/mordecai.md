@@ -1,7 +1,7 @@
 # NPC: mordecai
 
 **Plik:** `data-otservbr-global/npc/mordecai.lua`
-**Data migracji:** 2025-12-10 14:55
+**Data migracji:** 2025-12-10 20:46
 **Liczba tekstów:** 6
 
 ## Klucze i18n

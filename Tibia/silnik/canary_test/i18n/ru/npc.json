@@ -4254,5 +4254,11 @@
   "npc.canary.stdmod_1": "[RU] I can promote you for 20000 gold coins. Do you want me to promote you?",
   "npc.canary.stdmod_2": "[RU] Alright then, come back when you are ready.",
   "npc.canary.say_1": "[RU] This the our discord group link: {https://discordapp.com/invite/3NxYnyV}",
-  "npc.bertram.say_1": "[RU] Oh my! You look so great in your uniform! \\z You archpostwomen are not only daring but also beautiful. \\z Here take it, that's the key you wanted. Just promise to visit me now and then!"
+  "npc.bertram.say_1": "[RU] Oh my! You look so great in your uniform! \\z You archpostwomen are not only daring but also beautiful. \\z Here take it, that's the key you wanted. Just promise to visit me now and then!",
+  "npc.frans.voice_1": "[RU] Aaaaah... ruuunes... waaaaaands... rooooods... spellboooooks...",
+  "npc.ghorza.voice_1": "[RU] Great Hunger is upset.",
+  "npc.ghorza.voice_2": "[RU] Spirits are restless.",
+  "npc.ghorza.voice_3": "[RU] All water drying up and Vuzrog does nothing!",
+  "npc.gnomegica.voice_1": "[RU] Oh my, such a mess! I really should clean up things more often.",
+  "npc.gnomegica.voice_2": "[RU] Laaa Laaa LaLa Laa Laaa!"
 }

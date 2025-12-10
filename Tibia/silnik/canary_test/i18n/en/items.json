@@ -93,5 +93,10 @@
   "item.230.name": "ship cabin wall",
   "item.231.name": "sand",
   "item.232.name": "burning wall",
-  "item.233.name": "spider egg"
+  "item.233.name": "spider egg",
+  "item.234.name": "remains of a spider egg",
+  "item.235.name": "bag",
+  "item.236.name": "strong health potion",
+  "item.237.name": "strong mana potion",
+  "item.238.name": "great mana potion"
 }

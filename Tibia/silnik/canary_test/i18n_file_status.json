@@ -3020,14 +3020,22 @@
         },
         "5_extraction_en": {
           "status": "completed",
-          "keys_added": 7,
+          "keys_added": 8,
           "stdmod_keys": 0,
-          "npcsay_keys": 7
+          "npcsay_keys": 8
         },
         "6_placeholder": {
           "status": "completed",
-          "languages": [],
-          "keys_per_lang": 7,
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 8,
           "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
         },
         "7_validation": {
@@ -3099,7 +3107,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:13:57.964990"
+      "completed_at": "2025-12-10T12:14:44.661597"
     }
   },
   "global_stats": {

@@ -98,9 +98,11 @@ def process_file(filepath, translations, dry_run=False):
     new_translations = {}
     changes = 0
     
-    # Wzorzec: npcHandler:say({ ... }, npc, creature/player, delay)
-    # Musi być wystarczająco elastyczny dla wieloliniowych tablic
-    pattern = r'npcHandler:say\(\s*\{([^}]+(?:\{[^}]*\}[^}]*)*)\}\s*,\s*npc\s*,\s*(creature|player)\s*(?:,\s*(\d+))?\s*\)'
+    # Wzorzec 1: npcHandler:say({ ... }, npc, creature/player, delay) - nowy format
+    pattern1 = r'npcHandler:say\(\s*\{([^}]+(?:\{[^}]*\}[^}]*)*)\}\s*,\s*npc\s*,\s*(creature|player)\s*(?:,\s*(\d+))?\s*\)'
+    
+    # Wzorzec 2: npcHandler:say({ ... }, creature) - stary format bez npc
+    pattern2 = r'npcHandler:say\(\s*\{([^}]+(?:\{[^}]*\}[^}]*)*)\}\s*,\s*(creature)\s*\)'
     
     def replace_match(match):
         nonlocal max_num, changes, new_translations
@@ -129,7 +131,36 @@ def process_file(filepath, translations, dry_run=False):
         keys_str = ', '.join([f'"{k}"' for k in keys])
         return f'NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, {target_var}, {{{keys_str}}}, {delay})'
     
-    new_content = re.sub(pattern, replace_match, content, flags=re.DOTALL)
+    def replace_match_old_format(match):
+        """Obsługuje stary format: npcHandler:say({...}, creature)"""
+        nonlocal max_num, changes, new_translations
+        
+        array_content = match.group(1)
+        target_var = match.group(2)  # creature
+        
+        # Wyodrębnij stringi
+        strings = extract_strings_from_array(array_content)
+        
+        if not strings:
+            return match.group(0)  # Zwróć oryginał
+        
+        # Generuj klucze dla każdego stringa
+        keys = []
+        for s in strings:
+            max_num += 1
+            key = f"{base_key}.say_{max_num}"
+            keys.append(key)
+            new_translations[key] = s
+        
+        changes += 1
+        
+        # Generuj nowy kod - używamy 100 jako domyślne opóźnienie
+        keys_str = ', '.join([f'"{k}"' for k in keys])
+        return f'NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, {target_var}, {{{keys_str}}}, 100)'
+    
+    # Zastosuj oba wzorce
+    new_content = re.sub(pattern1, replace_match, content, flags=re.DOTALL)
+    new_content = re.sub(pattern2, replace_match_old_format, new_content, flags=re.DOTALL)
     
     if changes > 0 and not dry_run:
         # Backup

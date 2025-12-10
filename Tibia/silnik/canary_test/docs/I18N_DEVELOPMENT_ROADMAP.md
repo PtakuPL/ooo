@@ -1,13 +1,62 @@
 # 🗺️ I18N System - Plan Rozwoju i Usprawnień
 
 > **Dokument**: Plan rozwoju systemu internacjonalizacji  
-> **Wersja**: 4.0  
-> **Data**: 2025-12-10 23:00 UTC  
+> **Wersja**: 5.0  
+> **Data**: 2025-12-10 21:10 UTC  
 > **Autor**: AI Assistant + PtakuPL
 
 ---
 
 ## 🆕 CHANGELOG - Co zostało zrobione
+
+### 📅 2025-12-10 (sesja #5) - Naprawa rotacji kategorii w Dispatcherze 🔄
+
+| Zmiana | Opis | Status |
+|--------|------|--------|
+| **Problem zidentyfikowany** | Worker utknął na kategorii `scripts` zwracając 0 przetworzonych plików w kółko | ✅ ZDIAGNOZOWANO |
+| **Przyczyna** | Dispatcher (Python) zwracał `scripts:406` ale bash processor nic nie znajdował (wszystko już zrobione) | ✅ ZNALEZIONO |
+| **Rozwiązanie 1** | Dodano `.i18n_category_state.json` - plik stanu kategorii z mechanizmem skip | ✅ ZAIMPLEMENTOWANO |
+| **Rozwiązanie 2** | Nowe funkcje: `read_category_state()`, `should_skip_category()`, `update_category_state()` | ✅ ZAIMPLEMENTOWANO |
+| **Rozwiązanie 3** | Śledzenie `KEYS_BEFORE`/`KEYS_AFTER` + `FILES_CHANGED` po każdej kategorii | ✅ ZAIMPLEMENTOWANO |
+| **Skip mechanizm** | Kategoria z 0 wynikami pomijana na 5 minut, potem ponowna próba | ✅ DZIAŁA |
+| **Nowe kategorie** | Dodano `sendtextmessage`, `keywordhandler`, `twig` do CATEGORIES dict w Pythonie | ✅ DODANO |
+| **Wynik** | Worker przeszedł do `items` i dodaje +5 kluczy/cykl | ✅ SUKCES |
+
+**📊 Postęp podczas sesji #5:**
+| Metryka | Początek | Koniec | Zmiana |
+|---------|----------|--------|--------|
+| Total kluczy | 9,810 | 10,683+ | **+873+** |
+| Items.json | 110 | 850+ | **+740+** |
+| Cykli workera | 1 | 167+ | - |
+
+**📁 Nowe pliki/zmiany:**
+- `.i18n_category_state.json` - stan kategorii z `skip_until` i `last_processed`
+- `update_category_state()` - funkcja bash zapisująca wynik do JSON
+- CATEGORIES dict w Pythonie - dodane priorytety 18-20 dla nowych kategorii
+
+**🔧 Kluczowa zmiana w select_work_mode():**
+```python
+# Przed: ignorował kategorie które nic nie zwracają
+# Po: pomija je na 5 minut dzięki skip_until
+
+cat_state = read_category_state()
+for cat_name, config in sorted_cats:
+    if should_skip_category(cat_name, cat_state):
+        continue  # Pomiń "puste" kategorie
+    ...
+```
+
+**📊 Stan kategorii po naprawie:**
+| Kategoria | Status | Powód |
+|-----------|--------|-------|
+| npc | ✅ OK | count=1, wszystko zmigrowane |
+| scripts | ⏭️ SKIP | count=0, 92 pliki już przetworzone |
+| monsters | ⏭️ SKIP | count=0, pattern nie pasuje |
+| raids | ⏭️ SKIP | count=0, brak danych XML |
+| world | ⏭️ SKIP | count=0, brak danych |
+| items | 🔄 AKTYWNY | count=5+, +5 kluczy/cykl |
+
+---
 
 ### 📅 2025-12-10 (sesja #4) - Analiza player:sendTextMessage + keywordHandler + Twig 📋
 

@@ -4413,5 +4413,20 @@
   "item.10991.name": "marble floor",
   "item.10992.name": "window",
   "item.11006.name": "stone wall",
-  "item.11009.name": "stone wall"
+  "item.11009.name": "stone wall",
+  "item.11038.name": "jade ornament",
+  "item.11047.name": "pillar",
+  "item.11048.name": "torch",
+  "item.11049.name": "stone wall",
+  "item.11050.name": "torch",
+  "item.11053.name": "pillar",
+  "item.11056.name": "table",
+  "item.11057.name": "pillar",
+  "item.11067.name": "stone wall",
+  "item.11068.name": "timbers",
+  "item.11090.name": "decorative axe",
+  "item.11095.name": "decorative axe",
+  "item.11100.name": "iron case",
+  "item.11136.name": "closed door",
+  "item.11137.name": "closed door"
 }

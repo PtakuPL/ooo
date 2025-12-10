@@ -789,28 +789,73 @@ if 'npcHandler:say("' in content:
     total_transformed += npcsay_counter[0]
 
 #==============================================================================
+# TRANSFORMACJA 3: addGreetKeyword/addFarewellKeyword text = "..." → i18nKey = "..."
+# Wzorce:
+#   keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Greetings, |PLAYERNAME|." })
+#   keywordHandler:addFarewellKeyword({ "bye" }, { npcHandler = npcHandler, text = "Good bye." })
+# Transformacja:
+#   Dodaj i18nKey = "npc.{name}.greet_N" lub "npc.{name}.farewell_N"
+#==============================================================================
+greet_counter = [0]
+farewell_counter = [0]
+
+def replace_greet_with_i18n(match):
+    greet_counter[0] += 1
+    key = f"npc.{safe_name}.greet_{greet_counter[0]}"
+    before = match.group(1)
+    text = match.group(2)
+    after = match.group(3)
+    return f'{before}text = "{text}", i18nKey = "{key}"{after}'
+
+def replace_farewell_with_i18n(match):
+    farewell_counter[0] += 1
+    key = f"npc.{safe_name}.farewell_{farewell_counter[0]}"
+    before = match.group(1)
+    text = match.group(2)
+    after = match.group(3)
+    return f'{before}text = "{text}", i18nKey = "{key}"{after}'
+
+# Pattern dla addGreetKeyword z text = "..." (bez i18nKey)
+pattern_greet = r'(addGreetKeyword\s*\([^)]+\)\s*,\s*\{[^}]*?)text\s*=\s*"([^"]+)"([^}]*?\})'
+# Pattern dla addFarewellKeyword z text = "..." (bez i18nKey)
+pattern_farewell = r'(addFarewellKeyword\s*\([^)]+\)\s*,\s*\{[^}]*?)text\s*=\s*"([^"]+)"([^}]*?\})'
+
+# Tylko transformuj jeśli nie ma jeszcze i18nKey
+if 'addGreetKeyword' in content and 'i18nKey' not in content:
+    content = re.sub(pattern_greet, replace_greet_with_i18n, content, flags=re.DOTALL)
+    total_transformed += greet_counter[0]
+
+if 'addFarewellKeyword' in content and 'i18nKey' not in content:
+    content = re.sub(pattern_farewell, replace_farewell_with_i18n, content, flags=re.DOTALL)
+    total_transformed += farewell_counter[0]
+
+greet_fare_total = greet_counter[0] + farewell_counter[0]
+
+#==============================================================================
 # ZAPIS
 #==============================================================================
 if total_transformed > 0 and content != original_content:
     with open(file_path, 'w') as f:
         f.write(content)
-    print(f"{total_transformed}|{stdmod_counter[0]}|{npcsay_counter[0]}")
+    print(f"{total_transformed}|{stdmod_counter[0]}|{npcsay_counter[0]}|{greet_fare_total}")
 else:
-    print("0|0|0")
+    print("0|0|0|0")
 TRANSFORM_PY
 )
     
-    # Parsuj wynik: total|stdmod|npcsay
+    # Parsuj wynik: total|stdmod|npcsay|greetfare
     local total_t=$(echo "$transformed" | cut -d'|' -f1)
     local stdmod_t=$(echo "$transformed" | cut -d'|' -f2)
     local npcsay_t=$(echo "$transformed" | cut -d'|' -f3)
+    local greetfare_t=$(echo "$transformed" | cut -d'|' -f4)
     
     [ -z "$total_t" ] && total_t=0
     [ -z "$stdmod_t" ] && stdmod_t=0
     [ -z "$npcsay_t" ] && npcsay_t=0
+    [ -z "$greetfare_t" ] && greetfare_t=0
     
     if [ "$total_t" -gt 0 ] 2>/dev/null; then
-        log "${GREEN}✓ Etap 4 OK${NC}: StdModule=$stdmod_t, npcHandler:say=$npcsay_t, Total=$total_t"
+        log "${GREEN}✓ Etap 4 OK${NC}: StdModule=$stdmod_t, npcHandler:say=$npcsay_t, greet/farewell=$greetfare_t, Total=$total_t"
     else
         total_t=0
         log "${YELLOW}⏭ Etap 4${NC}: Brak zmian"

@@ -9363,5 +9363,20 @@
   "item.29945.name": "Izcandar's sundial",
   "item.29946.name": "beast's nightmare-cushion",
   "item.29947.name": "nightmare beast santa",
-  "item.29950.name": "acid resistant fishing rod"
+  "item.29950.name": "acid resistant fishing rod",
+  "item.29968.name": "tree",
+  "item.29979.name": "portal",
+  "item.29980.name": "portal",
+  "item.29987.name": "closed door",
+  "item.29988.name": "minotaur skull",
+  "item.29989.name": "orc skull",
+  "item.29990.name": "troll skull",
+  "item.29991.name": "anatomy book",
+  "item.29992.name": "old lock",
+  "item.29993.name": "rosebush",
+  "item.29994.name": "magical paint",
+  "item.29995.name": "sun fruit",
+  "item.30000.name": "skeleton",
+  "item.30001.name": "unknown item",
+  "item.30002.name": "frozen wall"
 }

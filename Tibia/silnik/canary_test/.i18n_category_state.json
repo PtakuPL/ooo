@@ -61,6 +61,10 @@
     "php": {
       "count": 0,
       "timestamp": 1765405886.3302932
+    },
+    "html": {
+      "count": 14,
+      "timestamp": 1765405893.9071915
     }
   },
   "consecutive_zeros": {
@@ -75,7 +79,8 @@
     "modules": 1,
     "startup": 1,
     "npclib": 1,
-    "php": 1
+    "php": 1,
+    "html": 0
   },
   "total_processed": {
     "items": 11689,
@@ -84,7 +89,8 @@
     "chatchannels": 8,
     "modules": 16,
     "startup": 11,
-    "php": 24
+    "php": 24,
+    "html": 14
   },
   "translation_sync": {
     "current_lang": "de",

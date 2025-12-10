@@ -37,5 +37,19 @@
   "web.tpl.buttons.logout.set_1": "Logout",
   "web.tpl.account.characters.change_sex.set_1": "Change sex",
   "web.tpl.account.characters.change_sex.span_1": "Character:",
-  "web.tpl.account.characters.change_sex.span_2": "New Sex:"
+  "web.tpl.account.characters.change_sex.span_2": "New Sex:",
+  "html.created.html.text1": "{{ result.created|date(\"M d Y, H:i:s\") }}",
+  "html.web_status.text1": " {% if is_closed %}Closed{% else %}Open{% endif %}",
+  "html.web_status.text2": "{{ closed_message }}",
+  "html.web_status.text3": "(only visible if closed)",
+  "html.points.html.text1": "Top 10 - Most premium points",
+  "html.points.html.text2": "{{ result.premium_points }}",
+  "html.balance.html.text1": "{{ result.balance }}",
+  "html.lastlogin.html.text1": "{{ result.lastlogin|date(\"M d Y, H:i:s\") }}",
+  "html.coins.html.text1": "{{ result.name ?? result.id }}",
+  "html.statistics.html.text1": "{{ count.total_accounts }}",
+  "html.statistics.html.text2": "{{ count.total_players }}",
+  "html.statistics.html.text3": "{{ count.total_monsters }}",
+  "html.statistics.html.text4": "{{ count.total_guilds }}",
+  "html.statistics.html.text5": "{{ count.total_houses }}"
 }

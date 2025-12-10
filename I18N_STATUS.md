@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 23:31:26 UTC  
+> **Aktualizacja:** 2025-12-10 23:31:34 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -23,10 +23,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **26** | ↑ |
 | ⏭️ Plików wykluczonych | **711** | - |
-| 🔑 Kluczy i18n | **23757** | ↑ |
+| 🔑 Kluczy i18n | **23771** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#28** | - |
+| 🔄 Cykl | **#29** | - |
 
 ---
 
@@ -51,7 +51,7 @@
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
 | 🐘 PHP Backend | 🔄 | 32/3000 (1%) | 3000 |
-| 📄 HTML Views | 🔄 | 39/300 (13%) | 300 |
+| 📄 HTML Views | 🔄 | 53/300 (18%) | 300 |
 | 📦 JavaScript | ⏳ | 0/200 (0%) | 200 |
 
 ### ⏳ Faza 3: 📱 Instalka/Klient
@@ -76,19 +76,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    28 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    29 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 PHP                                    │
+│ Kategoria: 🎒 HTML                                   │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: php                      │
-│ [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 32/3000 kluczy (1%)                                          │
+│ 📊 Ostatnia aktywność: html                      │
+│ [█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
+│ 53/500 kluczy (11%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Total processed: 11758 operacji               │
+│ ⏳ Total processed: 11772 operacji               │
 │ 🕐 Aktywne kategorie: 15                               │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 23:31:26                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 23:31:34                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,11 +98,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Operacji wykonanych | **11758** | we wszystkich kategoriach |
+| 📁 Operacji wykonanych | **11772** | we wszystkich kategoriach |
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **23757** | we wszystkich kategoriach |
+| 🔑 Kluczy wyciągniętych | **23771** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
-| 🔄 Cykli wykonanych | **#28** | continuous mode |
+| 🔄 Cykli wykonanych | **#29** | continuous mode |
 | 🎯 Aktywne kategorie | **15** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -110,6 +110,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `html` +14 kluczy @ 23:31:33
 - ⚡ `php` +0 kluczy @ 23:31:26
 - ⚡ `npclib` +0 kluczy @ 23:31:10
 - ⚡ `startup` +0 kluczy @ 23:31:03
@@ -117,7 +118,6 @@
 - ⚡ `chatchannels` +0 kluczy @ 23:30:35
 - ⚡ `events` +0 kluczy @ 23:30:17
 - ⚡ `libs` +0 kluczy @ 23:30:02
-- 🎒 `items` +0 kluczy @ 23:29:47
 
 ---
 
@@ -280,7 +280,7 @@
 | npc | 5270 | 0 | 0 | ✅ Active |
 | monsters | 4158 | 0 | 4 | ⏭️ Skip 4m |
 | scripts | 385 | 0 | 6 | ⏭️ Skip 65m |
-| html | 39 | 0 | 0 | ✅ Active |
+| html | 53 | 14 | 0 | ✅ Active |
 | php | 32 | 24 | 1 | ⏭️ Skip 4m |
 | raids | 30 | 0 | 4 | ⏭️ Skip 4m |
 | startup | 19 | 11 | 1 | ⏭️ Skip 4m |
@@ -324,7 +324,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #28 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #29 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -367,7 +367,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:31:26  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:31:34  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

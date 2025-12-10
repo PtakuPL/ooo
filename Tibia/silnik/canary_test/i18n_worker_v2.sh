@@ -718,7 +718,7 @@ mode_3_validation() {
     log "${YELLOW}TRYB 3: WALIDACJA${NC}"
     log "${YELLOW}═══════════════════════════════════════════════════════════════${NC}"
     
-    python3 << 'PYVALIDATE'
+    python3 << PYVALIDATE
 import json
 import os
 import glob
@@ -795,7 +795,7 @@ PYVALIDATE
 # UPDATE STATUS MD - Aktualizacja I18N_STATUS.md
 #===============================================================================
 update_status_md() {
-    python3 << 'PYSTATUSMD'
+    python3 << PYSTATUSMD
 import json
 import os
 from datetime import datetime

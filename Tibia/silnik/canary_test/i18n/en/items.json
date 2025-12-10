@@ -588,5 +588,10 @@
   "item.1780.name": "stone",
   "item.1781.name": "small stone",
   "item.1782.name": "stone",
-  "item.1822.name": "stone pile"
+  "item.1822.name": "stone pile",
+  "item.1840.name": "mossy stone",
+  "item.1841.name": "blue shrine stone",
+  "item.1842.name": "red shrine stone",
+  "item.1851.name": "stone",
+  "item.1852.name": "stones"
 }

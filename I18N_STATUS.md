@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:42:09 UTC  
+> **Aktualizacja:** 2025-12-11 00:42:17 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **29113** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#123** | - |
+| 🔄 Cykl | **#124** | - |
 
 ---
 
@@ -68,8 +68,8 @@
 | 🇩🇪 Niemiecki | 📊 435665 kluczy | 435665 | [EN] prefix |
 | 🇵🇱 Polski | 📊 394445 kluczy | 394445 | [EN] prefix |
 | 🇪🇸 Hiszpański | 📊 394445 kluczy | 394445 | [EN] prefix |
-| 🇫🇷 Francuski | 🔄 Sync... | 16117 | [EN] prefix |
-| 🌐 Pozostałe (0/53) | 🔄 | 1635117 | Aktualnie: FR |
+| 🇫🇷 Francuski | 🔄 Sync... | 30861 | [EN] prefix |
+| 🌐 Pozostałe (0/53) | 🔄 | 1649861 | Aktualnie: FR |
 
 ---
 
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   123 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   124 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🌍 TRANSLATION_SYNC (Etap 1)              │
-│ Kategoria: 🌍 FR/items.json                          │
+│ Kategoria: 🌍 FR/libs.json                           │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: FR/items.json                                  │
-│ [███████████████████████████░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 16117/29113 kluczy (55%)                                          │
+│ 📊 Ostatnia aktywność: FR/libs.json                                   │
+│ [██████████████████████████████████████████████████] │
+│ 30861/29113 kluczy (106%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 26912 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:42:09                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:42:17                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -103,7 +103,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29113** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#123** | continuous mode |
+| 🔄 Cykli wykonanych | **#124** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,7 +111,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🌍 `FR/items.json` +16117 kluczy @ 00:42:09
+- 🌍 `FR/libs.json` +30861 kluczy @ 00:42:16
 - ⚡ `npclib` +0 kluczy @ 00:39:00
 - ⚡ `startup` +0 kluczy @ 00:38:54
 - ⚡ `modules` +0 kluczy @ 00:38:46
@@ -282,7 +282,7 @@
 | monsters | 7341 | 9549 | 4 | ⏭️ Skip 54m |
 | npc | 5334 | 0 | 0 | ✅ Active |
 | php | 1097 | 3219 | 2 | ⏭️ Skip 0m |
-| html | 663 | 749 | 2 | ⏭️ Skip 2m |
+| html | 663 | 749 | 2 | ⏭️ Skip 1m |
 | scripts | 385 | 0 | 4 | ⏭️ Skip 40m |
 | client | 283 | 821 | 2 | ⏭️ Skip 4m |
 | raids | 147 | 351 | 4 | ⏭️ Skip 55m |
@@ -320,10 +320,10 @@
 | startup | 56m | 4x | Progresywny backoff |
 | npclib | 56m | 4x | Progresywny backoff |
 | php | 0m | 2x | Progresywny backoff |
-| html | 2m | 2x | Progresywny backoff |
+| html | 1m | 2x | Progresywny backoff |
 | client | 4m | 2x | Progresywny backoff |
 | sendtextmessage | 4m | 2x | Progresywny backoff |
-| keywordhandler | 5m | 2x | Progresywny backoff |
+| keywordhandler | 4m | 2x | Progresywny backoff |
 | twig | 5m | 2x | Progresywny backoff |
 
 ---
@@ -332,7 +332,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #123 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #124 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -345,14 +345,14 @@
 | PL | 394,445 | ⏳ |
 | ES | 394,445 | ⏳ |
 | PT | 394,445 | ⏳ |
-| FR | 16,117 | 🔄 |
+| FR | 30,861 | 🔄 |
 | IT | 0 | ⏳ |
 | NL | 0 | ⏳ |
 | CS | 0 | ⏳ |
 | SK | 0 | ⏳ |
 | HU | 0 | ⏳ |
 
-> **Aktualnie:** FR / items.json  
+> **Aktualnie:** FR / libs.json  
 > **Ukończone języki:** 0/53  
 > **Prefix:** `[EN] ` (klucze do przetłumaczenia)
 
@@ -375,7 +375,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:42:09  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:42:17  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

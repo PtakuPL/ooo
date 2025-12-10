@@ -1008,5 +1008,10 @@
   "item.2892.name": "broken bottle",
   "item.2893.name": "amphora",
   "item.2894.name": "broken flask",
-  "item.2901.name": "waterskin"
+  "item.2901.name": "waterskin",
+  "item.2902.name": "bowl",
+  "item.2903.name": "golden mug",
+  "item.2904.name": "large amphora",
+  "item.2905.name": "plate",
+  "item.2906.name": "watch"
 }

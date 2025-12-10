@@ -218,5 +218,10 @@
   "item.595.name": "hole",
   "item.606.name": "loose stone pile",
   "item.607.name": "hole",
-  "item.608.name": "loose ice pile"
+  "item.608.name": "loose ice pile",
+  "item.609.name": "hole",
+  "item.610.name": "hole",
+  "item.611.name": "snow heap",
+  "item.614.name": "sand",
+  "item.615.name": "hole"
 }

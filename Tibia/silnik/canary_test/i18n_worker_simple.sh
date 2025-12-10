@@ -1069,11 +1069,17 @@ process_file() {
 #===============================================================================
 # TRYB 2: TŁUMACZENIA - 6 etapów + składnie
 #===============================================================================
+# TEN TRYB GENERUJE INSTRUKCJE DLA AGENTA LLM (np. GPT, Claude, Phi)
+# Agent powinien przetłumaczyć całe zdania naturalnie, zachowując:
+# - Komendy w 'apostrofach' (np. 'trade', 'job', 'buy') - NIE TŁUMACZYĆ
+# - Zmienne w {nawiasach} (np. {player}, {amount}) - BEZ ZMIAN
+# - Formatowanie |PIPE| - BEZ ZMIAN
+#===============================================================================
 mode_translation() {
     local target_lang="${1:-pl}"
     
     log "${BLUE}═══════════════════════════════════════════════════════════════${NC}"
-    log "${BLUE}TRYB 2: TŁUMACZENIA${NC} - Język: $target_lang"
+    log "${BLUE}TRYB 2: TŁUMACZENIA (instrukcje dla LLM)${NC} - Język: $target_lang"
     log "${BLUE}═══════════════════════════════════════════════════════════════${NC}"
     
     python3 << PYTRANSLATE

@@ -2943,5 +2943,20 @@
   "item.6802.name": "entrance",
   "item.6803.name": "entrance",
   "item.6838.name": "snow",
-  "item.6850.name": "ornamented wall"
+  "item.6850.name": "ornamented wall",
+  "item.6853.name": "ornamented wall",
+  "item.6891.name": "closed door",
+  "item.6892.name": "closed door",
+  "item.6893.name": "open door",
+  "item.6894.name": "closed door",
+  "item.6895.name": "open door",
+  "item.6896.name": "gate of expertise",
+  "item.6897.name": "gate of expertise",
+  "item.6898.name": "closed door",
+  "item.6899.name": "open door",
+  "item.6900.name": "closed door",
+  "item.6901.name": "closed door",
+  "item.6902.name": "open door",
+  "item.6903.name": "closed door",
+  "item.6904.name": "open door"
 }

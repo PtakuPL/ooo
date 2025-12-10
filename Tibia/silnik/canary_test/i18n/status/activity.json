@@ -1,15 +1,43 @@
 {
-  "last_updated": "2025-12-10 04:45:39",
+  "last_updated": "2025-12-10 04:49:47",
   "current_operation": {
     "type": "cycle",
     "phase": 1,
     "category": "scripts",
-    "file": "Cykl #7",
+    "file": "Cykl #9",
     "action": "🎮 Canary Server - scripts",
     "status": "in_progress",
     "details": "NPC:13186 Scripts:713 Items:36972"
   },
   "recent_operations": [
+    {
+      "time": "2025-12-10 04:49:47",
+      "type": "cycle",
+      "file": "Cykl #9",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:48:42",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
+    {
+      "time": "2025-12-10 04:47:42",
+      "type": "cycle",
+      "file": "Cykl #8",
+      "action": "🎮 Canary Server - scripts",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:46:37",
+      "type": "idle",
+      "file": "-",
+      "action": "Oczekiwanie na nowe pliki",
+      "status": "waiting"
+    },
     {
       "time": "2025-12-10 04:45:39",
       "type": "cycle",
@@ -120,34 +148,6 @@
       "type": "scan",
       "file": "Skanowanie",
       "action": "Nowe pliki",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:36:20",
-      "type": "cycle",
-      "file": "Cykl #3",
-      "action": "🎮 Canary Server - scripts",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:36:01",
-      "type": "cycle_end",
-      "file": "Cykl 2",
-      "action": "Zakończono przetwarzanie",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-10 04:36:01",
-      "type": "process",
-      "file": "captain_greyhound.lua",
-      "action": "Lua migration",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-10 04:35:59",
-      "type": "process",
-      "file": "captain_greyhound.lua",
-      "action": "Przetwarzanie lua",
       "status": "in_progress"
     }
   ],

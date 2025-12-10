@@ -2937,8 +2937,25 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
         PID_FILE=".worker_simple.pid"
         echo $$ > "$PID_FILE"
         
-        BATCH="${2:-5}"  # Ile plików na batch (domyślnie 5)
-        DELAY="${3:-4}" # Przerwa między batchami w sekundach (domyślnie 4)
+        # Parsuj opcje
+        shift  # usuń --continuous
+        BATCH=5
+        DELAY=4
+        while [ $# -gt 0 ]; do
+            case "$1" in
+                --batch)
+                    BATCH="${2:-5}"
+                    shift 2
+                    ;;
+                --delay)
+                    DELAY="${2:-4}"
+                    shift 2
+                    ;;
+                *)
+                    shift
+                    ;;
+            esac
+        done
         
         echo "╔════════════════════════════════════════════════════════════════════╗"
         echo "║   I18N WORKER v3.0 - FULL AUTONOMOUS (24/7)                        ║"

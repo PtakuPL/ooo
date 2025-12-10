@@ -820,3 +820,8 @@ data-otservbr-global/scripts/spells/monster/nightmare_beast_curse.lua
 data-otservbr-global/scripts/spells/monster/maxxenius_energy_elemental.lua
 data-otservbr-global/scripts/spells/monster/spider_queen_wrap.lua
 data/scripts/talkactions/gm/push_town.lua
+data-otservbr-global/monster/nostalgia/old_bonelord.lua
+data-otservbr-global/monster/nostalgia/old_wasp.lua
+data-otservbr-global/monster/nostalgia/old_pig.lua
+data-otservbr-global/monster/nostalgia/old_giant_spider.lua
+data-otservbr-global/monster/nostalgia/old_wolf.lua

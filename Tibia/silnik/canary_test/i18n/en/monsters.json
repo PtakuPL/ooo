@@ -1,1 +1,12 @@
-{}
+{
+  "monster.old_bonelord.name": "Beholder",
+  "monster.old_bonelord.desc": "a beholder",
+  "monster.old_wasp.name": "Wasp",
+  "monster.old_wasp.desc": "a wasp",
+  "monster.old_pig.name": "Pig",
+  "monster.old_pig.desc": "a pig",
+  "monster.old_giant_spider.name": "Giant Spider",
+  "monster.old_giant_spider.desc": "a giant spider",
+  "monster.old_wolf.name": "Wolf",
+  "monster.old_wolf.desc": "a wolf"
+}

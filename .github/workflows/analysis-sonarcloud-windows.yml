@@ -97,6 +97,7 @@ jobs:
           cmakeVersion: '~3.27.0'
 
       - name: Generate compilation database
+        working-directory: Tibia/silnik/canary_test/testyy
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Force -Path build | Out-Null

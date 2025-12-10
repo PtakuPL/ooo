@@ -135,6 +135,7 @@ jobs:
         uses: SonarSource/sonarqube-scan-action/install-build-wrapper@v6
 
       - name: Generate compilation database
+        working-directory: Tibia/silnik/canary_test/testyy
         run: |
           mkdir -p build
           cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \

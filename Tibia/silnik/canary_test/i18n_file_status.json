@@ -4211,7 +4211,7 @@
           "errors": [],
           "warnings": [
             "Brak i18nKey w pliku Lua",
-            "Znaleziono 106 duplikat\u00f3w warto\u015bci"
+            "Znaleziono 108 duplikat\u00f3w warto\u015bci"
           ],
           "valid_langs": [
             "zh_TW",
@@ -4276,7 +4276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T07:01:09.570738"
+      "completed_at": "2025-12-10T07:01:32.447747"
     },
     "data-otservbr-global/npc/captain_fearless.lua": {
       "stages": {
@@ -10321,10 +10321,466 @@
       },
       "overall_status": "completed",
       "completed_at": "2025-12-10T07:01:14.923551"
+    },
+    "data-otservbr-global/npc/gamon.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "1a04bfb414f61630009e96d06523e721",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "gamon",
+          "StdModule_say": 4,
+          "npcHandler_say": 0,
+          "sendTextMessage": 1,
+          "total": 5,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/gamon.md",
+          "keys_documented": 5
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 4
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 5
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 5
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 108 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 4,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T07:01:34.159071"
+    },
+    "data-otservbr-global/npc/gelagos.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "d70bb210c39759e707bb1552a9afc857",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "gelagos",
+          "StdModule_say": 7,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 7,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/gelagos.md",
+          "keys_documented": 7
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 7
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 7
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 7
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 108 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 7,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T07:01:35.122415"
+    },
+    "data-otservbr-global/npc/gewen.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "220849aebfb172551f2965627ada2ad1",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "gewen",
+          "StdModule_say": 4,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 4,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/gewen.md",
+          "keys_documented": 6
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 4
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 6
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 6
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 110 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 4,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T07:01:36.217312"
+    },
+    "data-otservbr-global/npc/ghost_of_a_priest.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "82bb56ec9cccc0bbd06c5ce461345447",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "ghost_of_a_priest",
+          "StdModule_say": 19,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 19,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/ghost_of_a_priest.md",
+          "keys_documented": 19
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 19
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 19
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 19
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 110 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 19,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T07:01:37.642778"
     }
   },
   "global_stats": {
-    "files_completed": 91,
+    "files_completed": 95,
     "total_keys": 0
   }
 }

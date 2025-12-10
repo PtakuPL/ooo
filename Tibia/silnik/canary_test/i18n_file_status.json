@@ -108,7 +108,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:11:36.732705"
+      "completed_at": "2025-12-10T13:11:54.178770"
     },
     "data-otservbr-global/npc/seymour.lua": {
       "stages": {
@@ -446,7 +446,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:11:37.799107"
+      "completed_at": "2025-12-10T13:11:55.253134"
     },
     "data-otservbr-global/npc/sigurd.lua": {
       "stages": {
@@ -776,7 +776,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:11:39.074046"
+      "completed_at": "2025-12-10T13:11:56.497772"
     },
     "data-otservbr-global/npc/tandros.lua": {
       "stages": {
@@ -996,7 +996,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:11:39.921975"
+      "completed_at": "2025-12-10T13:11:57.078677"
     },
     "data-otservbr-global/npc/the_lootmonger.lua": {
       "stages": {
@@ -1216,7 +1216,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:11:35.690976"
+      "completed_at": "2025-12-10T13:11:53.154911"
     },
     "data-otservbr-global/npc/ghorza.lua": {
       "stages": {

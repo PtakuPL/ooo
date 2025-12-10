@@ -278,6 +278,8 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `charles` - ukończono 2025-12-10 06:58
+- ✅ `cerdras` - ukończono 2025-12-10 06:57
 - ✅ `cedrik` - ukończono 2025-12-10 06:57
 - ✅ `carlson` - ukończono 2025-12-10 06:57
 - ✅ `caramellia` - ukończono 2025-12-10 06:57

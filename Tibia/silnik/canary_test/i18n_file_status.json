@@ -3237,7 +3237,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:59:40.870789"
+      "completed_at": "2025-12-10T12:59:52.742573"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -3347,7 +3347,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:59:41.895748"
+      "completed_at": "2025-12-10T12:59:53.903566"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -3457,7 +3457,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:59:43.197226"
+      "completed_at": "2025-12-10T12:59:55.096958"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -3484,6 +3484,12 @@
           "doc_file": "docs/i18n/npc/frans.md",
           "keys_documented": 1
         },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 0,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
         "5_extraction_en": {
           "status": "completed",
           "keys_added": 0,
@@ -3493,10 +3499,8 @@
           "farewell_keys": 0
         },
         "7_validation": {
-          "status": "failed",
-          "errors": [
-            "B\u0142\u0105d JSON w pl/npc.json: Expecting value: line 1324 column 27 (char 154786)"
-          ],
+          "status": "completed",
+          "errors": [],
           "warnings": [
             "Brak i18nKey w pliku Lua"
           ],
@@ -3539,6 +3543,7 @@
             "lv",
             "tr",
             "uk",
+            "pl",
             "zh",
             "el",
             "vi",
@@ -3555,14 +3560,14 @@
             "hr"
           ],
           "keys_in_lua": 0,
-          "validation_passed": false
+          "validation_passed": true
         },
         "8_sync": {
           "status": "completed"
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:59:45.102995"
+      "completed_at": "2025-12-10T12:59:56.511770"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -3672,7 +3677,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:59:45.830027"
+      "completed_at": "2025-12-10T12:59:57.493968"
     },
     "data-otservbr-global/npc/amarie.lua": {
       "stages": {

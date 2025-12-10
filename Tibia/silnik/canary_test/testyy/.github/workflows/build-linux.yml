@@ -1,14 +1,11 @@
-name: build-linux
+name: build-linux (disabled)
 
 on:
-  push:
-    paths:
-      - 'Tibia/silnik/canary_test/testyy/**'
-      - 'Tibia/silnik/canary_test/testyy/.github/workflows/build-linux.yml'
-  pull_request:
-    paths:
-      - 'Tibia/silnik/canary_test/testyy/**'
-      - 'Tibia/silnik/canary_test/testyy/.github/workflows/build-linux.yml'
+  workflow_dispatch:
+    inputs:
+      note:
+        description: 'Workflow disabled; manual dispatch only.'
+        required: false
 
 jobs:
   linux:

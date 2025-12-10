@@ -7,7 +7,8 @@
     "items": 1765406087.7135088,
     "libs": 1765406102.3402169,
     "events": 1765406117.095477,
-    "chatchannels": 1765406135.995182
+    "chatchannels": 1765406135.995182,
+    "modules": 1765406149.481288
   },
   "last_processed": {
     "scripts": {
@@ -43,8 +44,8 @@
       "timestamp": 1765405835.9951742
     },
     "modules": {
-      "count": 16,
-      "timestamp": 1765405842.8540168
+      "count": 0,
+      "timestamp": 1765405849.4812827
     }
   },
   "consecutive_zeros": {
@@ -56,7 +57,7 @@
     "libs": 1,
     "events": 1,
     "chatchannels": 1,
-    "modules": 0
+    "modules": 1
   },
   "total_processed": {
     "items": 11689,

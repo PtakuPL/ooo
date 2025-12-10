@@ -2962,12 +2962,64 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             echo "🔄 CYKL #$CYCLE - $(date '+%Y-%m-%d %H:%M:%S')"
             echo "═══════════════════════════════════════════════════════════════"
             
-            # Użyj dispatchera do wyboru trybu
-            MODE_RESULT=$(select_work_mode)
-            MODE_TYPE=$(echo "$MODE_RESULT" | cut -d: -f1)
-            MODE_CAT=$(echo "$MODE_RESULT" | cut -d: -f2)
-            MODE_COUNT=$(echo "$MODE_RESULT" | cut -d: -f3)
-            MODE_EXTRA=$(echo "$MODE_RESULT" | cut -d: -f4)
+            # Sprawdź komendy sterowania z pliku .worker_command
+            COMMAND_FILE=".worker_command"
+            if [ -f "$COMMAND_FILE" ]; then
+                CMD=$(cat "$COMMAND_FILE" 2>/dev/null)
+                rm -f "$COMMAND_FILE"
+                
+                if [ -n "$CMD" ]; then
+                    echo "📨 Odebrano komendę: $CMD"
+                    
+                    case "$CMD" in
+                        FORCE:*)
+                            FORCED_CAT=$(echo "$CMD" | cut -d: -f2)
+                            echo "🎯 Wymuszam kategorię: $FORCED_CAT"
+                            # Użyj wymuszonej kategorii zamiast dispatchera
+                            MODE_TYPE="MIGRATION"
+                            MODE_CAT="$FORCED_CAT"
+                            MODE_COUNT="forced"
+                            MODE_EXTRA="FORCED"
+                            ;;
+                        RANDOM)
+                            # Losowa kategoria z tych które mają pracę
+                            echo "🎲 Losowanie kategorii..."
+                            ALL_CATS="npc scripts monsters raids world spells items libs events chatchannels modules startup npclib"
+                            RANDOM_CAT=$(echo "$ALL_CATS" | tr ' ' '\n' | shuf | head -1)
+                            echo "🎯 Wylosowano: $RANDOM_CAT"
+                            MODE_TYPE="MIGRATION"
+                            MODE_CAT="$RANDOM_CAT"
+                            MODE_COUNT="random"
+                            MODE_EXTRA="RANDOM"
+                            ;;
+                        STATUS)
+                            echo "📊 STATUS WSZYSTKICH KATEGORII:"
+                            for cat in npc scripts monsters raids world spells items libs events chatchannels modules startup npclib; do
+                                count=$(find data-otservbr-global/$cat data-canary/$cat data/$cat -name "*.lua" 2>/dev/null | wc -l)
+                                echo "   $cat: ~$count plików"
+                            done
+                            continue
+                            ;;
+                        SKIP)
+                            echo "⏭️ Pomijam ten cykl..."
+                            continue
+                            ;;
+                        *)
+                            echo "⚠️ Nieznana komenda: $CMD"
+                            ;;
+                    esac
+                fi
+            fi
+            
+            # Jeśli nie było wymuszenia, użyj dispatchera
+            if [ -z "$MODE_EXTRA" ] || [ "$MODE_EXTRA" != "FORCED" -a "$MODE_EXTRA" != "RANDOM" ]; then
+                # Użyj dispatchera do wyboru trybu
+                MODE_RESULT=$(select_work_mode)
+                MODE_TYPE=$(echo "$MODE_RESULT" | cut -d: -f1)
+                MODE_CAT=$(echo "$MODE_RESULT" | cut -d: -f2)
+                MODE_COUNT=$(echo "$MODE_RESULT" | cut -d: -f3)
+                MODE_EXTRA=$(echo "$MODE_RESULT" | cut -d: -f4)
+            fi
             
             echo "📋 Dispatcher: $MODE_TYPE | Kategoria: $MODE_CAT | Ilość: ${MODE_COUNT:-0}"
             echo ""
@@ -3156,6 +3208,10 @@ with open('i18n_global_stats.json', 'w') as f:
             
             echo ""
             echo "💤 Przerwa ${DELAY}s przed następnym cyklem..."
+            
+            # Reset zmiennych wymuszenia przed następnym cyklem
+            MODE_EXTRA=""
+            
             sleep "$DELAY"
         done
         ;;

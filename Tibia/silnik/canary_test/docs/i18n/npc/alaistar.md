@@ -1,7 +1,7 @@
 # NPC: alaistar
 
 **Plik:** `data-otservbr-global/npc/alaistar.lua`
-**Data migracji:** 2025-12-10 12:42
+**Data migracji:** 2025-12-10 12:43
 **Liczba tekstów:** 0
 
 ## Klucze i18n

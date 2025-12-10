@@ -4211,7 +4211,7 @@
           "errors": [],
           "warnings": [
             "Brak i18nKey w pliku Lua",
-            "Znaleziono 134 duplikat\u00f3w warto\u015bci"
+            "Znaleziono 141 duplikat\u00f3w warto\u015bci"
           ],
           "valid_langs": [
             "zh_TW",
@@ -4276,7 +4276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T07:05:11.033797"
+      "completed_at": "2025-12-10T07:05:34.956202"
     },
     "data-otservbr-global/npc/captain_fearless.lua": {
       "stages": {
@@ -14881,10 +14881,466 @@
       },
       "overall_status": "completed",
       "completed_at": "2025-12-10T07:05:17.268414"
+    },
+    "data-otservbr-global/npc/iskan.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "ed6fb1b7b1713941102dbcd3ce30b841",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "iskan",
+          "StdModule_say": 23,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 23,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/iskan.md",
+          "keys_documented": 23
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 23
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 23
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 23
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 141 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 23,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T07:05:37.189244"
+    },
+    "data-otservbr-global/npc/ivalisse.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "8ef23933944378820521c4272cd2de95",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "ivalisse",
+          "StdModule_say": 7,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 7,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/ivalisse.md",
+          "keys_documented": 7
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 7
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 7
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 7
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 142 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 7,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T07:05:38.413978"
+    },
+    "data-otservbr-global/npc/iyad.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "8d3f0339db95f4e4fdbaf1a0a6f63a19",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "iyad",
+          "StdModule_say": 20,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 20,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/iyad.md",
+          "keys_documented": 23
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 20
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 23
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 23
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 143 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 20,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T07:05:39.618938"
+    },
+    "data-otservbr-global/npc/jack_drone.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "b89c8f3437eba43560627237d768ed9a",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "jack_drone",
+          "StdModule_say": 5,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 5,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/jack_drone.md",
+          "keys_documented": 5
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 5
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 5
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 5
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 144 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 5,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T07:05:40.892217"
     }
   },
   "global_stats": {
-    "files_completed": 131,
+    "files_completed": 135,
     "total_keys": 0
   }
 }

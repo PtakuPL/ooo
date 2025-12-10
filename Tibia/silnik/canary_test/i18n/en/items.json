@@ -6873,5 +6873,20 @@
   "item.20458.name": "gate of expertise",
   "item.20459.name": "closed door",
   "item.20460.name": "open door",
-  "item.20490.name": "sewer cover"
+  "item.20490.name": "sewer cover",
+  "item.20491.name": "stairs",
+  "item.20492.name": "stairs",
+  "item.20493.name": "stairs",
+  "item.20494.name": "stairs",
+  "item.20495.name": "stairs",
+  "item.20496.name": "stairs",
+  "item.20573.name": "rungs in the wall",
+  "item.20578.name": "rungs in the wall",
+  "item.20579.name": "wall",
+  "item.20580.name": "sewer duct",
+  "item.20581.name": "barred sewer duct",
+  "item.20582.name": "sewer duct",
+  "item.20652.name": "parquet floor",
+  "item.20678.name": "plug",
+  "item.20689.name": "plug"
 }

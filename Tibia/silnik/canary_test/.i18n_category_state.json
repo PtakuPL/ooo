@@ -1,9 +1,11 @@
 {
-  "skip_until": {},
+  "skip_until": {
+    "scripts": 1765411673.7207973
+  },
   "last_processed": {
     "scripts": {
       "count": 0,
-      "timestamp": 1765408981.8600733
+      "timestamp": 1765411073.7207918
     },
     "monsters": {
       "count": 0,
@@ -71,7 +73,8 @@
     }
   },
   "consecutive_zeros": {
-    "html": 0
+    "html": 0,
+    "scripts": 2
   },
   "total_processed": {
     "items": 11689,

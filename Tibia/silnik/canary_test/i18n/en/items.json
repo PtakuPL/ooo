@@ -158,5 +158,10 @@
   "item.350.name": "case of rust bugs",
   "item.368.name": "earth ground",
   "item.371.name": "RESERVED SPRITE",
-  "item.372.name": "earth"
+  "item.372.name": "earth",
+  "item.385.name": "hole",
+  "item.386.name": "dirt floor",
+  "item.387.name": "small hole",
+  "item.388.name": "stalagmites",
+  "item.389.name": "stalagmites"
 }

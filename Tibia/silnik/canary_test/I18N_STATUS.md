@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 19:12:38 UTC  
+> **Aktualizacja:** 2025-12-10 19:13:06 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **9724** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#265** | - |
+| 🔄 Cykl | **#266** | - |
 
 ---
 
@@ -68,7 +68,7 @@
 | 🇵🇱 Polski | 🔄 | 1/1 | 1 |
 | 🇩🇪 Niemiecki | 🔄 | 1/1 | 1 |
 | 🇪🇸 Hiszpański | 🔄 | 1/1 | 1 |
-| 🌐 Pozostałe (50) | ⏳ | 8/53 (15%) | 53 |
+| 🌐 Pozostałe (50) | ⏳ | 53/53 (100%) | 53 |
 
 ---
 
@@ -76,7 +76,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   265 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   266 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (8 etapów)                     │
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 19:12:38                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 19:13:06                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -101,8 +101,8 @@
 | 📁 Plików przetworzonych | **26** | z i18n_file_status.json |
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **9724** | we wszystkich kategoriach |
-| 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
-| 🔄 Cykli wykonanych | **#265** | continuous mode |
+| 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
+| 🔄 Cykli wykonanych | **#266** | continuous mode |
 | ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -273,7 +273,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #265 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #266 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -294,7 +294,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 19:12:38  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 19:13:06  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

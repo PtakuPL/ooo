@@ -683,6 +683,49 @@ md += f'''
 
 ---
 
+## 🌍 Tłumaczenia - Etap 1: Synchronizacja Kluczy
+
+'''
+
+# Pobierz dane synchronizacji
+sync_data = worker_state.get("translation_sync", {})
+sync_stats = sync_data.get("stats", {})
+languages_done = sync_data.get("languages_done", [])
+current_sync_lang = sync_data.get("current_lang", "")
+current_sync_cat = sync_data.get("current_category", "")
+
+# Kolejność języków
+TARGET_LANGS_ORDER = ["de", "pl", "es", "pt", "fr", "it", "nl", "cs", "sk", "hu", "sv", "da", "no", "fi", "ru", "uk", "tr", "ar", "zh", "ja", "ko"]
+
+# Oblicz postęp dla każdego języka
+lang_progress = []
+for lang in TARGET_LANGS_ORDER[:10]:  # Pokaż top 10
+    if lang in sync_stats:
+        stats = sync_stats[lang]
+        lang_total = stats.get("total", sum(v for k,v in stats.items() if k != "total"))
+        is_done = "✅" if lang in languages_done else "🔄" if lang == current_sync_lang else "⏳"
+        lang_progress.append(f"| {lang.upper()} | {lang_total:,} | {is_done} |")
+    else:
+        lang_progress.append(f"| {lang.upper()} | 0 | ⏳ |")
+
+if lang_progress:
+    md += '''| Język | Kluczy | Status |
+|-------|--------|--------|
+'''
+    md += "\n".join(lang_progress)
+    md += f'''
+
+> **Aktualnie:** {current_sync_lang.upper() if current_sync_lang else "IDLE"} / {current_sync_cat if current_sync_cat else "-"}  
+> **Ukończone języki:** {len(languages_done)}/53  
+> **Prefix:** `[EN] ` (klucze do przetłumaczenia)
+'''
+else:
+    md += "*Synchronizacja jeszcze nie rozpoczęta*"
+
+md += f'''
+
+---
+
 ## 🗺️ Roadmap
 
 | Kategoria | Kluczy | Postęp | Cel | Status |

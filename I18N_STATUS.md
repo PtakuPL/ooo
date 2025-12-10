@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 23:15:59 UTC  
+> **Aktualizacja:** 2025-12-10 23:16:06 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -23,10 +23,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **26** | ↑ |
 | ⏭️ Plików wykluczonych | **711** | - |
-| 🔑 Kluczy i18n | **21914** | ↑ |
+| 🔑 Kluczy i18n | **21929** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#58** | - |
+| 🔄 Cykl | **#59** | - |
 
 ---
 
@@ -41,7 +41,7 @@
 |-----------|--------|--------|-----|
 | 🧙 NPC Dialogs | 🔄 | 5270/15000 (35%) | 15000 |
 | 📜 Lua Scripts | 🔄 | 385/1000 (38%) | 1000 |
-| 🎒 Items Database | 🔄 | 11975/40000 (30%) | 40000 |
+| 🎒 Items Database | 🔄 | 11990/40000 (30%) | 40000 |
 | 👹 Monsters | 🔄 | 4158/5000 (83%) | 5000 |
 | ✨ Spells & Magic | 🔄 | 15/200 (8%) | 200 |
 | ⚙️ Server C++ | ⏳ | 0/300 (0%) | 300 |
@@ -76,7 +76,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    58 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    59 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
@@ -84,11 +84,11 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Ostatnia aktywność: items                      │
 │ [██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 11975/40000 kluczy (30%)                                          │
+│ 11990/40000 kluczy (30%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Total processed: 9915 operacji               │
+│ ⏳ Total processed: 9930 operacji               │
 │ 🕐 Aktywne kategorie: 11                               │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 23:15:59                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 23:16:06                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,11 +98,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Operacji wykonanych | **9915** | we wszystkich kategoriach |
+| 📁 Operacji wykonanych | **9930** | we wszystkich kategoriach |
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **21914** | we wszystkich kategoriach |
+| 🔑 Kluczy wyciągniętych | **21929** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
-| 🔄 Cykli wykonanych | **#58** | continuous mode |
+| 🔄 Cykli wykonanych | **#59** | continuous mode |
 | 🎯 Aktywne kategorie | **11** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -110,7 +110,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🎒 `items` +15 kluczy @ 23:15:59
+- 🎒 `items` +15 kluczy @ 23:16:06
 - 📜 `scripts` +0 kluczy @ 22:37:25
 - ⚡ `world` +0 kluczy @ 22:36:03
 - ⚡ `raids` +0 kluczy @ 22:35:56
@@ -137,7 +137,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 11975 |
+| 🔑 Kluczy | 11990 |
 | 🎯 Cel | 40000 |
 | 📊 Postęp | 30% |
 | 📁 Plik | i18n/en/items.json |
@@ -273,7 +273,7 @@
 
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
-| items | 11975 | 9915 | 0 | ✅ Active |
+| items | 11990 | 9930 | 0 | ✅ Active |
 | npc | 5270 | 0 | 0 | ✅ Active |
 | monsters | 4158 | 0 | 4 | ⏭️ Skip 19m |
 | scripts | 385 | 0 | 6 | ⏭️ Skip 81m |
@@ -290,7 +290,7 @@
 | quests | 0 | 0 | 0 | ⏳ Empty |
 | server | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
-| world | 0 | 0 | 4 | ⏭️ Skip 20m |
+| world | 0 | 0 | 4 | ⏭️ Skip 19m |
 
 ---
 
@@ -301,7 +301,7 @@
 | scripts | 81m | 6x | Progresywny backoff |
 | monsters | 19m | 4x | Progresywny backoff |
 | raids | 19m | 4x | Progresywny backoff |
-| world | 20m | 4x | Progresywny backoff |
+| world | 19m | 4x | Progresywny backoff |
 
 ---
 
@@ -309,7 +309,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #58 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #59 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -318,7 +318,7 @@
 
 | Kategoria | Kluczy | Postęp | Cel | Status |
 |-----------|--------|--------|-----|--------|
-| 🎒 Items | 11975 | █████░░░░░░░░░░░░░░░ | 40000 | 🔄 30% |
+| 🎒 Items | 11990 | █████░░░░░░░░░░░░░░░ | 40000 | 🔄 30% |
 | 🧙 NPC | 5270 | ███████░░░░░░░░░░░░░ | 15000 | 🔄 35% |
 | 📜 Scripts | 385 | ███████░░░░░░░░░░░░░ | 1000 | 🔄 38% |
 | 👹 Monsters | 4158 | ████████████████░░░░ | 5000 | 🔄 83% |
@@ -330,7 +330,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:15:59  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:16:06  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

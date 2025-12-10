@@ -2255,8 +2255,39 @@ def count_untranslated_keys(lang, json_file):
 
 # ============ GŁÓWNA LOGIKA DISPATCHERA ============
 
-# 1. Sprawdź każdą kategorię po kolei
-for cat_name, config in CATEGORIES.items():
+# 0. Sprawdź komendy sterowania
+cmd = read_command()
+if cmd:
+    if cmd.startswith("FORCE:"):
+        # Wymuś kategorię: FORCE:monsters
+        forced_cat = cmd.split(":")[1]
+        if forced_cat in CATEGORIES:
+            needs = count_files_needing_work(forced_cat)
+            print(f"MIGRATION:{forced_cat}:{needs}:FORCED")
+            exit(0)
+        elif forced_cat == "random":
+            # Losowa kategoria
+            import random
+            cats_with_work = [(c, count_files_needing_work(c)) for c in CATEGORIES]
+            cats_with_work = [(c, n) for c, n in cats_with_work if n > 0]
+            if cats_with_work:
+                cat, needs = random.choice(cats_with_work)
+                print(f"MIGRATION:{cat}:{needs}:RANDOM")
+                exit(0)
+    elif cmd == "SKIP":
+        # Pomiń aktualną kategorię
+        print("SKIP:current:0")
+        exit(0)
+    elif cmd == "STATUS":
+        # Wyświetl status wszystkich kategorii
+        for cat in CATEGORIES:
+            needs = count_files_needing_work(cat)
+            print(f"STATUS:{cat}:{needs}")
+        exit(0)
+
+# 1. Sprawdź każdą kategorię po kolei (według priorytetu)
+sorted_cats = sorted(CATEGORIES.items(), key=lambda x: x[1].get("priority", 99))
+for cat_name, config in sorted_cats:
     needs_work = count_files_needing_work(cat_name)
     if needs_work > 0:
         print(f"MIGRATION:{cat_name}:{needs_work}")
@@ -2264,7 +2295,8 @@ for cat_name, config in CATEGORIES.items():
 
 # 2. Migracja zakończona - sprawdź tłumaczenia
 total_untranslated = 0
-for json_file in ["npc.json", "scripts.json", "monsters.json", "spells.json"]:
+json_files = [f"{c['json']}" for c in CATEGORIES.values()]
+for json_file in json_files:
     en_keys = count_keys_in_json(json_file)
     if en_keys == 0:
         continue

@@ -4477,14 +4477,14 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                             update_category_state "sendtextmessage" "$COUNT"
                             ;;
                         keywordhandler|kwh)
-                            echo "   🔑 Przetwarzam keywordHandler bez i18nKey..."
-                            process_keywordHandler_category "$BATCH"
-                            echo "   📊 keywordHandler: Dodano klucze"
+                            echo "   🔑 Przetwarzam keywordHandler z mini-batch..."
+                            COUNT=$(run_with_mini_batch "keywordhandler" "process_keywordHandler_category" "$BATCH")
+                            update_category_state "keywordhandler" "$COUNT"
                             ;;
                         twig)
-                            echo "   🎨 Przetwarzam Twig templates..."
-                            process_twig_category "$BATCH"
-                            echo "   📊 Twig: Dodano klucze"
+                            echo "   🎨 Przetwarzam Twig templates z mini-batch..."
+                            COUNT=$(run_with_mini_batch "twig" "process_twig_category" "$BATCH")
+                            update_category_state "twig" "$COUNT"
                             ;;
                         *)
                             echo "   ⚠️ Nieznana kategoria: $MODE_CAT"

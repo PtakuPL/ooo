@@ -585,6 +585,57 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 ---
 
+## 📊 Wszystkie Kategorie JSON (Dynamiczne)
+
+| Kategoria | Kluczy | Przetworzono | Seria zer | Status |
+|-----------|--------|--------------|-----------|--------|
+'''
+
+# Generuj dynamiczną tabelę wszystkich kategorii
+import time
+now = time.time()
+for cat_name, keys in sorted(all_json_categories.items(), key=lambda x: -x[1]):
+    total_proc = worker_state.get("total_processed", {}).get(cat_name, 0)
+    consec_zeros = worker_state.get("consecutive_zeros", {}).get(cat_name, 0)
+    skip_until = worker_state.get("skip_until", {}).get(cat_name, 0)
+    
+    # Status
+    if skip_until > now:
+        status = f"⏭️ Skip {int((skip_until - now) / 60)}m"
+    elif keys > 0:
+        status = "✅ Active"
+    else:
+        status = "⏳ Empty"
+    
+    md += f"| {cat_name} | {keys} | {total_proc} | {consec_zeros} | {status} |\n"
+
+md += '''
+---
+
+## 🤖 Worker Category State
+
+'''
+
+# Pokaż kategorie z aktywnym skip
+skipped_cats = []
+for cat_name, skip_time in worker_state.get("skip_until", {}).items():
+    if skip_time > now:
+        mins_left = int((skip_time - now) / 60)
+        consec = worker_state.get("consecutive_zeros", {}).get(cat_name, 0)
+        skipped_cats.append(f"| {cat_name} | {mins_left}m | {consec}x | Progresywny backoff |")
+
+if skipped_cats:
+    md += '''| Kategoria | Skip pozostało | Seria zer | Powód |
+|-----------|----------------|-----------|-------|
+'''
+    md += "\n".join(skipped_cats)
+else:
+    md += "*Brak kategorii z aktywnym skip*"
+
+md += '''
+
+---
+
 ## 🔧 Worker & Guardian Status
 
 | System | Status | Info |

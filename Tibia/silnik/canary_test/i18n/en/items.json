@@ -3528,5 +3528,20 @@
   "item.8275.name": "torn book",
   "item.8325.name": "vampire lord statue",
   "item.8326.name": "vampire lord",
-  "item.8356.name": "open door"
+  "item.8356.name": "open door",
+  "item.8357.name": "closed door",
+  "item.8358.name": "open door",
+  "item.8359.name": "closed door",
+  "item.8360.name": "open door",
+  "item.8361.name": "closed door",
+  "item.8362.name": "open door",
+  "item.8363.name": "closed door",
+  "item.8364.name": "open door",
+  "item.8365.name": "gate of expertise",
+  "item.8366.name": "gate of expertise",
+  "item.8367.name": "gate of expertise",
+  "item.8368.name": "gate of expertise",
+  "item.8388.name": "stone pillar",
+  "item.8389.name": "broken stone pillar",
+  "item.8390.name": "statue"
 }

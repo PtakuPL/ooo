@@ -378,5 +378,10 @@
   "item.798.name": "energy dragon slayer",
   "item.799.name": "snow",
   "item.800.name": "ice",
-  "item.801.name": "energy barbarian axe"
+  "item.801.name": "energy barbarian axe",
+  "item.802.name": "energy knight axe",
+  "item.803.name": "energy heroic axe",
+  "item.804.name": "energy headchopper",
+  "item.805.name": "energy war axe",
+  "item.806.name": "energy clerical mace"
 }

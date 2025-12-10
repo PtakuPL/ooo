@@ -6,5 +6,18 @@
   "lib.player.msg3": "Reward item is wrong, please contact an administrator.",
   "lib.quests.msg1": "Your questlog has been updated.",
   "lib.soul_war.msg1": "You have gained the ",
-  "lib.players.msg1": "You have received a fame point."
+  "lib.players.msg1": "You have received a fame point.",
+  "lib.hireling.msg1": "You do not have enough capacity.",
+  "lib.hireling.msg2": "You don't have enough room in your inbox.",
+  "lib.hireling.msg3": "You do not have enough capacity.",
+  "lib.hireling.msg4": "You don't have enough room in your inbox.",
+  "lib.concoctions.msg1": "Your concoction ",
+  "lib.exaltation_forge.msg1": "You received ",
+  "lib.exaltation_forge.msg2": "You did not receive ",
+  "lib.exaltation_forge.msg3": "You received ",
+  "lib.exaltation_forge.msg4": "You did not receive ",
+  "lib.familiar.msg1": "Your summon will disappear in less than ",
+  "lib.vip.msg1": "Your VIP status has expired. All VIP benefits have been removed.",
+  "lib.vip.msg2": "You have unlimited VIP status.",
+  "lib.vip.msg3": "Your VIP status is currently inactive."
 }

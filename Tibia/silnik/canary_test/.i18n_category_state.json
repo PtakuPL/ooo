@@ -28,8 +28,8 @@
       "timestamp": 1765409268.0798838
     },
     "libs": {
-      "count": 6,
-      "timestamp": 1765409279.7311323
+      "count": 26,
+      "timestamp": 1765409294.219121
     },
     "events": {
       "count": 0,
@@ -87,7 +87,7 @@
   },
   "total_processed": {
     "items": 11689,
-    "libs": 14,
+    "libs": 53,
     "events": 5,
     "chatchannels": 8,
     "modules": 16,

@@ -7728,5 +7728,20 @@
   "item.23087.name": "rift floor",
   "item.23090.name": "rift floor",
   "item.23114.name": "unknown item",
-  "item.23119.name": "unknown item"
+  "item.23119.name": "unknown item",
+  "item.23124.name": "unknown item",
+  "item.23129.name": "unknown item",
+  "item.23134.name": "unknown item",
+  "item.23139.name": "unknown item",
+  "item.23140.name": "crater",
+  "item.23189.name": "rift wall",
+  "item.23190.name": "RESERVED SPRITE",
+  "item.23360.name": "crater",
+  "item.23361.name": "RESERVED SPRITE",
+  "item.23362.name": "crater",
+  "item.23363.name": "rift floor",
+  "item.23364.name": "rift hole",
+  "item.23365.name": "fire trap",
+  "item.23366.name": "energy trap",
+  "item.23367.name": "toxic trap"
 }

@@ -1,6 +1,13 @@
 #!/bin/bash
 #===============================================================================
-# I18N WORKER SIMPLE v1.1 - Prosty worker bez zawieszania
+# I18N WORKER v2.0 - Multi-Mode Worker z trybami pracy
+#===============================================================================
+# TRYBY:
+#   1. MIGRATION   - Migracja kodu NPC (8 etapów) - domyślny
+#   2. TRANSLATION - Tłumaczenia kluczy EN → inne języki (6 etapów + składnie)
+#   3. VALIDATION  - Walidacja tłumaczeń (4 etapy)
+#
+# Worker automatycznie przełącza się między trybami w trybie --continuous
 #===============================================================================
 
 cd "$(dirname "$0")"
@@ -10,6 +17,12 @@ STATUS_FILE="i18n_file_status.json"
 I18N_DIR="i18n"
 BACKUP_DIR="backups"
 PROCESSED_FILE="i18n_processed_files.txt"
+
+# Konfiguracja trybów
+MIGRATION_BATCH=5           # Ile plików NPC na cykl migracji
+TRANSLATION_BATCH=50        # Ile kluczy na batch tłumaczeń  
+TRANSLATION_SUBSTAGE=4      # Ile kluczy na składnię
+LANG_PRIORITY="pl de es pt fr it ru nl sv da no fi cs"  # Priorytet języków
 
 # Kolory
 RED='\033[0;31m'

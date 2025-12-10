@@ -43,5 +43,10 @@
   "item.125.name": "special flask",
   "item.126.name": "special flask",
   "item.127.name": "magical inkwell",
-  "item.128.name": "signed contract"
+  "item.128.name": "signed contract",
+  "item.129.name": "contract",
+  "item.130.name": "exploding cookie",
+  "item.131.name": "ectoplasm container",
+  "item.132.name": "scrying crystal ball",
+  "item.133.name": "special flask"
 }

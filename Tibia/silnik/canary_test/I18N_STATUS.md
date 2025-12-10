@@ -301,6 +301,9 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `shiriel` - ukończono 2025-12-10 21:24
+- ✅ `seymour` - ukończono 2025-12-10 21:24
+- ✅ `romir` - ukończono 2025-12-10 21:24
 - ✅ `rock_in_a_hard_place` - ukończono 2025-12-10 21:13
 - ✅ `nipuna` - ukończono 2025-12-10 21:13
 - ✅ `nelly` - ukończono 2025-12-10 21:12

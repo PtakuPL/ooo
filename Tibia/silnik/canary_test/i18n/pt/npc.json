@@ -4270,5 +4270,13 @@
   "npc.nelly.voice_1": "[PT] Welcome to the post office!",
   "npc.nelly.voice_2": "[PT] Also selling runes, potions and magical equipment!",
   "npc.nipuna.voice_1": "[PT] I'm selling magic equipment. Come and have a look.",
-  "npc.nipuna.voice_2": "[PT] If you need runes, this is the market stall for you!"
+  "npc.nipuna.voice_2": "[PT] If you need runes, this is the market stall for you!",
+  "npc.seymour.voice_1": "[PT] Newcomers - visit me! I'll answer your questions!",
+  "npc.seymour.voice_2": "[PT] Get some training in the academy!",
+  "npc.seymour.voice_3": "[PT] Feeling lost? Ask me for help!",
+  "npc.seymour.voice_4": "[PT] Gain some knowledge in the academy!",
+  "npc.sigurd.voice_1": "[PT] Hiho adventurers, get your runes, potions, wands and rods here!",
+  "npc.sundara.voice_1": "[PT] Health potions! Mana potions! Buy them here!",
+  "npc.sundara.voice_2": "[PT] All kinds of potions available here!",
+  "npc.tandros.voice_1": "[PT] Potions, wands and runes for aspiring magicians."
 }

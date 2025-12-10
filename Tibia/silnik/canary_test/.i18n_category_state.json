@@ -28,7 +28,7 @@
     },
     "items": {
       "count": 15,
-      "timestamp": 1765398249.0029683
+      "timestamp": 1765398303.0899389
     },
     "keywordhandler": {
       "count": 17,
@@ -38,5 +38,11 @@
       "count": 15,
       "timestamp": 1765397921.6979392
     }
+  },
+  "consecutive_zeros": {
+    "items": 0
+  },
+  "total_processed": {
+    "items": 15
   }
 }

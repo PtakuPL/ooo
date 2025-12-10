@@ -3827,3 +3827,13 @@ testyy/modules/modulelib/eventcontroller.lua
 testyy/modules/modulelib/controller.lua
 testyy/modules/modulelib/htmlcssparser/ElementNode.lua
 testyy/modules/modulelib/htmlcssparser/voidelements.lua
+testyy/modules/modulelib/htmlcssparser/htmlparser.lua
+testyy/modules/modulelib/htmlcssparser/luacs.lua
+testyy/modules/modulelib/ext/parse.lua
+testyy/modules/modulelib/ext/style.lua
+testyy/modules/modulelib/ext/translator.lua
+testyy/modules/modulelib/ext/parseevent.lua
+testyy/modules/modulelib/htmlloader.lua
+testyy/modules/game_questlog/styles/game_questlog.otui
+testyy/modules/game_questlog/game_questlog.lua
+testyy/modules/game_hotkeys/hotkeys_manager.lua

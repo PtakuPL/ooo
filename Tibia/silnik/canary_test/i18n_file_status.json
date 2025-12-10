@@ -79,6 +79,26 @@
         }
       },
       "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/amber.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "a6da651f28a4534540cc15c27ccc5afa",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "amber",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
     }
   }
 }

@@ -288,16 +288,16 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🐘 PHP Backend | ⏳ | 0/2015 (0%) | 2015 |
-| 📄 HTML Views | ⏳ | 0/300 (0%) | 300 |
-| 📦 JavaScript | ⏳ | 0/100 (0%) | 100 |
+| 🐘 PHP Backend | {status_icon(php_keys, TARGETS["php"])} | {php_keys}/{TARGETS["php"]} ({round(php_keys/TARGETS["php"]*100) if TARGETS["php"] else 0}%) | {TARGETS["php"]} |
+| 📄 HTML Views | {status_icon(html_keys, 300)} | {html_keys}/300 ({round(html_keys/300*100) if html_keys else 0}%) | 300 |
+| 📦 JavaScript | {status_icon(client_keys, TARGETS["client"])} | {client_keys}/{TARGETS["client"]} ({round(client_keys/TARGETS["client"]*100) if TARGETS["client"] else 0}%) | {TARGETS["client"]} |
 
 ### ⏳ Faza 3: 📱 Instalka/Klient
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🖥️ Client UI | ⏳ | {ui_keys}/200 ({round(ui_keys/200*100)}%) | 200 |
-| 💿 Installer | ⏳ | 0/94 (0%) | 94 |
+| 🖥️ Client UI | {status_icon(ui_keys, 200)} | {ui_keys}/200 ({round(ui_keys/200*100)}%) | 200 |
+| 💿 Installer/C++ | {status_icon(cpp_keys, TARGETS["cpp"])} | {cpp_keys}/{TARGETS["cpp"]} ({round(cpp_keys/TARGETS["cpp"]*100) if TARGETS["cpp"] else 0}%) | {TARGETS["cpp"]} |
 
 ### ⏳ Faza 4: 🌍 Tłumaczenia
 

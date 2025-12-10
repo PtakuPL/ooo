@@ -102,9 +102,13 @@
           ],
           "keys_in_lua": 0,
           "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
         }
       },
-      "overall_status": "in_progress"
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T14:49:12.063407"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -214,7 +218,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:49:02.329629"
+      "completed_at": "2025-12-10T14:49:13.161757"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {

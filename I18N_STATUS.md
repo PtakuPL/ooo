@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 11:29:51 UTC  
+> **Aktualizacja:** 2025-12-10 11:29:58 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,7 +21,7 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **264** | ↑ |
+| 📁 Plików przetworzonych | **0** | ↑ |
 | ⏭️ Plików wykluczonych | **729** | - |
 | 🔑 Kluczy i18n | **3775** | ↑ |
 | 🌍 Języków | **53** | ✓ |
@@ -78,7 +78,7 @@
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    🟢 RUNNING                                │
+│ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (8 etapów)                     │
 │ Kategoria: 🧙 NPC Dialogs                            │
 ├─────────────────────────────────────────────────────────────────┤
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 26 plików NPC                              │
 │ 🕐 ETA: ~4min 20s (przy 10s/plik)                            │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 11:29:51                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 11:29:58                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,7 +98,7 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przetworzonych | **264** | z i18n_file_status.json |
+| 📁 Plików przetworzonych | **0** | z i18n_file_status.json |
 | ✅ NPC zmigrowanych | **271**/297 | 91% ukończone |
 | 🔑 Kluczy wyciągniętych | **3775** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
@@ -110,11 +110,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- ✅ `inigo` - ukończono 2025-12-10 11:25
-- ✅ `hamish` - ukończono 2025-12-10 11:25
-- ✅ `gregor` - ukończono 2025-12-10 11:25
-- ✅ `gerimor` - ukończono 2025-12-10 11:25
-- ✅ `garamond` - ukończono 2025-12-10 11:25
+- Brak operacji
 
 ---
 
@@ -294,23 +290,14 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:29:51  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:29:58  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `inigo` - ukończono 2025-12-10 11:25
-- ✅ `hamish` - ukończono 2025-12-10 11:25
-- ✅ `gregor` - ukończono 2025-12-10 11:25
-- ✅ `gerimor` - ukończono 2025-12-10 11:25
-- ✅ `garamond` - ukończono 2025-12-10 11:25
-- ✅ `eremo` - ukończono 2025-12-10 11:25
-- ✅ `elathriel` - ukończono 2025-12-10 11:25
-- ✅ `dalbrect` - ukończono 2025-12-10 11:25
-- ✅ `coltrayne` - ukończono 2025-12-10 11:25
-- ✅ `captain_dreadnought` - ukończono 2025-12-10 11:22
+- Brak
 
 ---
 

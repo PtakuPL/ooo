@@ -1,7 +1,7 @@
 # NPC: frans
 
 **Plik:** `data-otservbr-global/npc/frans.lua`
-**Data migracji:** 2025-12-10 14:26
+**Data migracji:** 2025-12-10 14:27
 **Liczba tekstów:** 1
 
 ## Klucze i18n

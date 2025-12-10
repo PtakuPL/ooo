@@ -488,5 +488,10 @@
   "item.1012.name": "sparkling gem",
   "item.1019.name": "jungle grass",
   "item.1053.name": "earth",
-  "item.1066.name": "mud stain"
+  "item.1066.name": "mud stain",
+  "item.1067.name": "pitfall",
+  "item.1068.name": "ant trail",
+  "item.1069.name": "bug tral",
+  "item.1079.name": "ant-hill",
+  "item.1080.name": "pitfall"
 }

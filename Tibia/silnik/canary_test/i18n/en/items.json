@@ -9828,5 +9828,20 @@
   "item.31269.name": "ankh mosaic",
   "item.31270.name": "jade Zaoan queen",
   "item.31271.name": "jade Zaoan king",
-  "item.31272.name": "jade Zaoan bishop"
+  "item.31272.name": "jade Zaoan bishop",
+  "item.31273.name": "jade Zaoan knight",
+  "item.31274.name": "jade Zaoan rook",
+  "item.31275.name": "jade Zaoan pawn",
+  "item.31276.name": "obsidian Zaoan queen",
+  "item.31277.name": "obsidian Zaoan king",
+  "item.31278.name": "obsidian Zaoan bishop",
+  "item.31279.name": "obsidian Zaoan knight",
+  "item.31280.name": "obsidian Zaoan rook",
+  "item.31281.name": "obsidian Zaoan pawn",
+  "item.31282.name": "Zaoan chess box",
+  "item.31283.name": "fire bowl",
+  "item.31296.name": "flask with snake poison",
+  "item.31297.name": "empty ritual flask",
+  "item.31298.name": "black marble floor",
+  "item.31299.name": "stone tile"
 }

@@ -4458,5 +4458,20 @@
   "item.11246.name": "gate of expertise",
   "item.11247.name": "gate of expertise",
   "item.11248.name": "closed door",
-  "item.11249.name": "open door"
+  "item.11249.name": "open door",
+  "item.11250.name": "wall mirror",
+  "item.11251.name": "mirror",
+  "item.11256.name": "unknown item",
+  "item.11257.name": "unknown item",
+  "item.11258.name": "unknown item",
+  "item.11310.name": "unknown item",
+  "item.11316.name": "wooden floor",
+  "item.11317.name": "blob",
+  "item.11318.name": "watchguard",
+  "item.11328.name": "marked crate",
+  "item.11329.name": "lump of clay",
+  "item.11330.name": "timber archway",
+  "item.11331.name": "sacred bowl",
+  "item.11332.name": "timber archway",
+  "item.11333.name": "bowl with sacred water"
 }

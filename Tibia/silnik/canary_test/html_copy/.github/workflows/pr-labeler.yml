@@ -1,7 +1,11 @@
 ---
-name: 'PR - Labeler'
+name: 'PR - Labeler (disabled)'
 on:
-  - pull_request_target
+  workflow_dispatch:
+    inputs:
+      note:
+        description: 'Workflow disabled; manual dispatch only.'
+        required: false
 
 jobs:
   triage:

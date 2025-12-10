@@ -9753,5 +9753,20 @@
   "item.31051.name": "wooden planks",
   "item.31052.name": "wooden scaffolding",
   "item.31056.name": "wooden scaffolding",
-  "item.31118.name": "unknown item"
+  "item.31118.name": "unknown item",
+  "item.31125.name": "broken amphora",
+  "item.31126.name": "small amphora",
+  "item.31127.name": "unknown",
+  "item.31128.name": "bucket",
+  "item.31129.name": "wooden ladder",
+  "item.31130.name": "wooden ladder",
+  "item.31139.name": "sandstone",
+  "item.31150.name": "blazing bonfire",
+  "item.31151.name": "hanging sabre",
+  "item.31152.name": "hanging shield",
+  "item.31157.name": "wall lamp",
+  "item.31158.name": "lit wall lamp",
+  "item.31159.name": "RESERVED SPRITE",
+  "item.31160.name": "cleansed soul splinter",
+  "item.31163.name": "stone pile"
 }

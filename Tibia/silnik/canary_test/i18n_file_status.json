@@ -3472,8 +3472,11 @@
           "StdModule_say": 0,
           "npcHandler_say": 1,
           "sendTextMessage": 1,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
           "total": 2,
           "already_i18n": 0,
+          "npcSayLib": 0,
           "needs_migration": true
         },
         "3_documentation": {
@@ -3491,7 +3494,9 @@
           "status": "completed",
           "keys_added": 0,
           "stdmod_keys": 0,
-          "npcsay_keys": 0
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0
         },
         "7_validation": {
           "status": "completed",
@@ -3562,7 +3567,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:55:19.576017"
+      "completed_at": "2025-12-10T12:56:05.571654"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -3577,8 +3582,11 @@
           "StdModule_say": 0,
           "npcHandler_say": 1,
           "sendTextMessage": 1,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
           "total": 2,
           "already_i18n": 0,
+          "npcSayLib": 0,
           "needs_migration": true
         },
         "3_documentation": {
@@ -3596,7 +3604,9 @@
           "status": "completed",
           "keys_added": 0,
           "stdmod_keys": 0,
-          "npcsay_keys": 0
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0
         },
         "7_validation": {
           "status": "completed",
@@ -3667,7 +3677,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:55:20.279096"
+      "completed_at": "2025-12-10T12:56:06.221114"
     },
     "data-otservbr-global/npc/amarie.lua": {
       "stages": {

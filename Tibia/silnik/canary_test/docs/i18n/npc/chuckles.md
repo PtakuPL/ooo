@@ -1,7 +1,7 @@
 # NPC: chuckles
 
 **Plik:** `data-otservbr-global/npc/chuckles.lua`
-**Data migracji:** 2025-12-10 12:27
+**Data migracji:** 2025-12-10 12:28
 **Liczba tekstów:** 0
 
 ## Klucze i18n

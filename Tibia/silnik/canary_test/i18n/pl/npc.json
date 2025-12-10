@@ -4260,5 +4260,11 @@
   "npc.ghorza.voice_2": "[PL] Spirits are restless.",
   "npc.ghorza.voice_3": "[PL] All water drying up and Vuzrog does nothing!",
   "npc.gnomegica.voice_1": "[PL] Oh my, such a mess! I really should clean up things more often.",
-  "npc.gnomegica.voice_2": "[PL] Laaa Laaa LaLa Laa Laaa!"
+  "npc.gnomegica.voice_2": "[PL] Laaa Laaa LaLa Laa Laaa!",
+  "npc.mordecai.voice_1": "[PL] Come in, young mages! Purchase the latest in runes and wands!",
+  "npc.mordecai.voice_2": "[PL] Perhaps I need to bake them hotter? Or was it longer?",
+  "npc.mordecai.voice_3": "[PL] Offering all sorts of magic equipment!",
+  "npc.mordecai.voice_4": "[PL] Now where did Alaistar put the wood for the new wands?",
+  "npc.mordecai.voice_5": "[PL] Hmmm.. Maybe those crushed gems caused the strange side effect?",
+  "npc.mordecai.voice_6": "[PL] Wands and rods, the true magician's weapons of choice!"
 }

@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 20:45:49 UTC  
+> **Aktualizacja:** 2025-12-10 20:46:11 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **25** | ↑ |
+| 📁 Plików przetworzonych | **26** | ↑ |
 | ⏭️ Plików wykluczonych | **711** | - |
 | 🔑 Kluczy i18n | **9933** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#27** | - |
+| 🔄 Cykl | **#1** | - |
 
 ---
 
@@ -76,9 +76,9 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    27 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    🟢 RUNNING                                │
+│ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (8 etapów)                     │
 │ Kategoria: 🧙 NPC Dialogs                            │
 ├─────────────────────────────────────────────────────────────────┤
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 20:45:49                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 20:46:11                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,11 +98,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przetworzonych | **25** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **25** (318 z i18nKey) | z 1026 plików NPC |
+| 📁 Plików przetworzonych | **26** | z i18n_file_status.json |
+| ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **9933** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
-| 🔄 Cykli wykonanych | **#27** | continuous mode |
+| 🔄 Cykli wykonanych | **#1** | continuous mode |
 | ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -110,11 +110,11 @@
 
 ## 📜 Historia ostatnich operacji
 
-- ✅ `alaistar` - ukończono 2025-12-10 20:45
-- ✅ `ser_tybald` - ukończono 2025-12-10 15:04
-- ✅ `menesto` - ukończono 2025-12-10 15:04
-- ✅ `garamond` - ukończono 2025-12-10 15:04
-- ✅ `cranky_lizard_crone` - ukończono 2025-12-10 15:04
+- ✅ `mordecai` - ukończono 2025-12-10 20:46
+- ✅ `gnomegica` - ukończono 2025-12-10 20:45
+- ✅ `ghorza` - ukończono 2025-12-10 20:45
+- ✅ `frederik` - ukończono 2025-12-10 20:45
+- ✅ `frans` - ukończono 2025-12-10 20:45
 
 ---
 
@@ -273,7 +273,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #27 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -294,23 +294,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 20:45:49  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 20:46:11  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `mordecai` - ukończono 2025-12-10 20:46
+- ✅ `gnomegica` - ukończono 2025-12-10 20:45
+- ✅ `ghorza` - ukończono 2025-12-10 20:45
+- ✅ `frederik` - ukończono 2025-12-10 20:45
+- ✅ `frans` - ukończono 2025-12-10 20:45
+- ✅ `chuckles` - ukończono 2025-12-10 20:45
+- ✅ `battlemart` - ukończono 2025-12-10 20:45
 - ✅ `alaistar` - ukończono 2025-12-10 20:45
 - ✅ `ser_tybald` - ukończono 2025-12-10 15:04
 - ✅ `menesto` - ukończono 2025-12-10 15:04
-- ✅ `garamond` - ukończono 2025-12-10 15:04
-- ✅ `cranky_lizard_crone` - ukończono 2025-12-10 15:04
-- ✅ `bertram` - ukończono 2025-12-10 15:04
-- ✅ `canary` - ukończono 2025-12-10 15:01
-- ✅ `the_lootmonger` - ukończono 2025-12-10 14:55
-- ✅ `tandros` - ukończono 2025-12-10 14:55
-- ✅ `sundara` - ukończono 2025-12-10 14:55
 
 ---
 

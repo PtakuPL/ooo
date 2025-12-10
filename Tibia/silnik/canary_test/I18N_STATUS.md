@@ -301,6 +301,7 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `mordecai` - ukończono 2025-12-10 20:46
 - ✅ `gnomegica` - ukończono 2025-12-10 20:45
 - ✅ `ghorza` - ukończono 2025-12-10 20:45
 - ✅ `frederik` - ukończono 2025-12-10 20:45

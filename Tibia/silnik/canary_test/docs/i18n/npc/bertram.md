@@ -1,6 +1,6 @@
-# NPC: ser_tybald
+# NPC: bertram
 
-**Plik:** `data-otservbr-global/npc/ser_tybald.lua`
+**Plik:** `data-otservbr-global/npc/bertram.lua`
 **Data migracji:** 2025-12-10 15:04
 **Liczba tekstów:** 0
 

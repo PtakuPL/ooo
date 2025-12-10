@@ -4253,5 +4253,6 @@
   "npc.zerbrus.farewell_1": "[DE] Bye, |PLAYERNAME|.",
   "npc.canary.stdmod_1": "[DE] I can promote you for 20000 gold coins. Do you want me to promote you?",
   "npc.canary.stdmod_2": "[DE] Alright then, come back when you are ready.",
-  "npc.canary.say_1": "[DE] This the our discord group link: {https://discordapp.com/invite/3NxYnyV}"
+  "npc.canary.say_1": "[DE] This the our discord group link: {https://discordapp.com/invite/3NxYnyV}",
+  "npc.bertram.say_1": "[DE] Oh my! You look so great in your uniform! \\z You archpostwomen are not only daring but also beautiful. \\z Here take it, that's the key you wanted. Just promise to visit me now and then!"
 }

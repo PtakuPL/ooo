@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 15:04:34 UTC  
+> **Aktualizacja:** 2025-12-10 15:04:51 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **21** | ↑ |
-| ⏭️ Plików wykluczonych | **713** | - |
-| 🔑 Kluczy i18n | **4255** | ↑ |
+| 📁 Plików przetworzonych | **26** | ↑ |
+| ⏭️ Plików wykluczonych | **711** | - |
+| 🔑 Kluczy i18n | **4256** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#8** | - |
+| 🔄 Cykl | **#1** | - |
 
 ---
 
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 4255/15000 (28%) | 15000 |
+| 🧙 NPC Dialogs | 🔄 | 4256/15000 (28%) | 15000 |
 | 📜 Lua Scripts | ⏳ | 0/1000 (0%) | 1000 |
 | 🎒 Items Database | ⏳ | 0/40000 (0%) | 40000 |
 | 👹 Monsters | ⏳ | 0/500 (0%) | 500 |
@@ -76,7 +76,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     8 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (8 etapów)                     │
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 15:04:34                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 15:04:51                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,11 +98,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przetworzonych | **21** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **21** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **4255** | we wszystkich kategoriach |
+| 📁 Plików przetworzonych | **26** | z i18n_file_status.json |
+| ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
+| 🔑 Kluczy wyciągniętych | **4256** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
-| 🔄 Cykli wykonanych | **#8** | continuous mode |
+| 🔄 Cykli wykonanych | **#1** | continuous mode |
 | ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -110,11 +110,11 @@
 
 ## 📜 Historia ostatnich operacji
 
-- ✅ `canary` - ukończono 2025-12-10 15:01
-- ✅ `the_lootmonger` - ukończono 2025-12-10 14:55
-- ✅ `tandros` - ukończono 2025-12-10 14:55
-- ✅ `sundara` - ukończono 2025-12-10 14:55
-- ✅ `sigurd` - ukończono 2025-12-10 14:55
+- ✅ `ser_tybald` - ukończono 2025-12-10 15:04
+- ✅ `menesto` - ukończono 2025-12-10 15:04
+- ✅ `garamond` - ukończono 2025-12-10 15:04
+- ✅ `cranky_lizard_crone` - ukończono 2025-12-10 15:04
+- ✅ `bertram` - ukończono 2025-12-10 15:04
 
 ---
 
@@ -173,7 +173,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 4255 |
+| 🔑 Kluczy | 4256 |
 | 🎯 Cel | 15000 |
 | 📊 Postęp | 28% |
 | 📁 Plik | i18n/en/npc.json |
@@ -273,7 +273,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #8 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -282,7 +282,7 @@
 
 ```
 [⏳] Items (0)      ░░░░░░░░░░░░░░░░░░░░  0%
-[🔄] NPC (4255)            █████░░░░░░░░░░░░░░░  28%
+[🔄] NPC (4256)            █████░░░░░░░░░░░░░░░  28%
 [⏳] Scripts (0)      ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Monsters (0)    ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Spells (0)       ░░░░░░░░░░░░░░░░░░░░  0%
@@ -294,23 +294,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 15:04:34  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 15:04:51  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `ser_tybald` - ukończono 2025-12-10 15:04
+- ✅ `menesto` - ukończono 2025-12-10 15:04
+- ✅ `garamond` - ukończono 2025-12-10 15:04
+- ✅ `cranky_lizard_crone` - ukończono 2025-12-10 15:04
+- ✅ `bertram` - ukończono 2025-12-10 15:04
 - ✅ `canary` - ukończono 2025-12-10 15:01
 - ✅ `the_lootmonger` - ukończono 2025-12-10 14:55
 - ✅ `tandros` - ukończono 2025-12-10 14:55
 - ✅ `sundara` - ukończono 2025-12-10 14:55
 - ✅ `sigurd` - ukończono 2025-12-10 14:55
-- ✅ `shiriel` - ukończono 2025-12-10 14:55
-- ✅ `seymour` - ukończono 2025-12-10 14:55
-- ✅ `romir` - ukończono 2025-12-10 14:55
-- ✅ `rock_in_a_hard_place` - ukończono 2025-12-10 14:55
-- ✅ `richard` - ukończono 2025-12-10 14:55
 
 ---
 

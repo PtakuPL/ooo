@@ -278,6 +278,9 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `menesto` - ukończono 2025-12-10 15:04
+- ✅ `cranky_lizard_crone` - ukończono 2025-12-10 15:04
+- ✅ `bertram` - ukończono 2025-12-10 15:04
 - ✅ `canary` - ukończono 2025-12-10 15:01
 - ✅ `ukea` - ukończono 2025-12-10 14:15
 - ✅ `stutch` - ukończono 2025-12-10 14:15

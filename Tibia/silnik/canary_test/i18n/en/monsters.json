@@ -4146,5 +4146,15 @@
   "monster.toad.name": "Azure Frog",
   "monster.toad.desc": "a toad",
   "monster.coral_frog.name": "gold coin",
-  "monster.coral_frog.desc": "a coral frog"
+  "monster.coral_frog.desc": "a coral frog",
+  "monster.filth_toad.name": "gold coin",
+  "monster.filth_toad.desc": "a filth toad",
+  "monster.slime.name": "Slime",
+  "monster.slime.desc": "a slime",
+  "monster.defiler.name": "melee",
+  "monster.defiler.desc": "a defiler",
+  "monster.frost_troll.name": "melee",
+  "monster.frost_troll.desc": "a frost troll",
+  "monster.troll.name": "melee",
+  "monster.troll.desc": "a troll"
 }

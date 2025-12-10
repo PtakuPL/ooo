@@ -908,3 +908,8 @@ data-canary/monster/amphibics/bog_frog.lua
 data-canary/monster/amphibics/crimson_frog.lua
 data-canary/monster/amphibics/toad.lua
 data-canary/monster/amphibics/coral_frog.lua
+data-canary/monster/amphibics/filth_toad.lua
+data-canary/monster/slimes/slime.lua
+data-canary/monster/slimes/defiler.lua
+data-canary/monster/humanoids/frost_troll.lua
+data-canary/monster/humanoids/troll.lua

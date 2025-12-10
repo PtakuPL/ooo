@@ -13038,5 +13038,20 @@
   "item.47377.name": "amber crossbow",
   "item.47381.name": "orc warlord soul core",
   "item.47383.name": "orc rider soul core",
-  "item.47384.name": "orc soul core"
+  "item.47384.name": "orc soul core",
+  "item.47385.name": "orc shaman soul core",
+  "item.47386.name": "orc warrior soul core",
+  "item.47387.name": "orc berserker soul core",
+  "item.47388.name": "necromancer soul core",
+  "item.47390.name": "hunter soul core",
+  "item.47392.name": "sheep soul core",
+  "item.47394.name": "bear soul core",
+  "item.47395.name": "bonelord soul core",
+  "item.47396.name": "ghoul soul core",
+  "item.47397.name": "slime soul core",
+  "item.47398.name": "rat soul core",
+  "item.47399.name": "cyclops soul core",
+  "item.47400.name": "minotaur mage soul core",
+  "item.47401.name": "minotaur archer soul core",
+  "item.47402.name": "minotaur soul core"
 }

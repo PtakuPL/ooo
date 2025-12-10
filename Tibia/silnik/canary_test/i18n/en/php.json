@@ -1164,5 +1164,10 @@
   "php.number.text1": ", static::format($number, $precision, $maxPrecision), $units[$displayExponent] ?? ",
   "php.number.text2": " PHP extension is required to use the [",
   "php.facade.text1": "Facade does not implement getFacadeAccessor method.",
-  "php.facade.text2": "A facade root has not been set."
+  "php.facade.text2": "A facade root has not been set.",
+  "php.auth.text1": "In order to use the Auth::routes() method, please install the laravel/ui package.",
+  "php.process.text1": ", array|string $errorOutput = ",
+  "php.storage.text1": "framework/testing/disks/",
+  "php.storage.text2": "{$root}_test_{$token}",
+  "php.storage.text3": "framework/testing/disks/"
 }

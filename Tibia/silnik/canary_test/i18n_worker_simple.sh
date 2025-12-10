@@ -2521,6 +2521,46 @@ CATEGORIES = {
         "exclude_if": ["i18n"],
         "json": "npclib.json",
         "priority": 13
+    },
+    
+    # === HTML_COPY - PHP (priorytet 14) - Strona WWW ===
+    "php": {
+        "dirs": ["html_copy"],
+        "patterns": [r'"[^"]{20,}"', r"'[^']{20,}'", r'echo\s*"[^"]+"'],
+        "exclude_if": ["__()"],
+        "json": "php.json",
+        "file_ext": [".php"],
+        "priority": 14
+    },
+    
+    # === HTML_COPY - HTML/Twig (priorytet 15) ===
+    "html": {
+        "dirs": ["html_copy"],
+        "patterns": [r'>[^<]{20,}<', r'title="[^"]+', r'placeholder="[^"]+'],
+        "exclude_if": ["{{", "trans"],
+        "json": "html.json",
+        "file_ext": [".html", ".twig"],
+        "priority": 15
+    },
+    
+    # === SRC - C++ Server (priorytet 16) ===
+    "cpp": {
+        "dirs": ["src"],
+        "patterns": [r'"[^"]{10,}"', r'pushString\s*\("[^"]+"\)'],
+        "exclude_if": ["i18n::"],
+        "json": "cpp.json",
+        "file_ext": [".cpp", ".hpp"],
+        "priority": 16
+    },
+    
+    # === TESTYY - OTClient (priorytet 17) ===
+    "client": {
+        "dirs": ["testyy/modules", "testyy/mods"],
+        "patterns": [r'"[^"]{10,}"', r"'[^']{10,}'"],
+        "exclude_if": ["tr("],
+        "json": "client.json",
+        "file_ext": [".lua", ".otui"],
+        "priority": 17
     }
 }
 

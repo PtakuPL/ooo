@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 23:44:52 UTC  
+> **Aktualizacja:** 2025-12-10 23:45:04 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **24214** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#84** | - |
+| 🔄 Cykl | **#85** | - |
 
 ---
 
@@ -76,19 +76,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    84 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    85 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 TWIG                                   │
+│ Kategoria: 🎒 ITEMS                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: twig                      │
-│ [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 0/1000 kluczy (0%)                                          │
+│ 📊 Ostatnia aktywność: items                      │
+│ [█████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
+│ 13749/40000 kluczy (34%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 12215 operacji               │
 │ 🕐 Aktywne kategorie: 16                               │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 23:44:52                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 23:45:04                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -102,7 +102,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **24214** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
-| 🔄 Cykli wykonanych | **#84** | continuous mode |
+| 🔄 Cykli wykonanych | **#85** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -110,6 +110,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- 🎒 `items` +0 kluczy @ 23:45:04
 - ⚡ `twig` +0 kluczy @ 23:39:45
 - ⚡ `keywordhandler` +0 kluczy @ 23:37:41
 - ⚡ `sendtextmessage` +0 kluczy @ 23:37:27
@@ -117,7 +118,6 @@
 - ⚡ `html` +0 kluczy @ 23:36:45
 - ⚡ `php` +0 kluczy @ 23:36:38
 - ⚡ `npclib` +0 kluczy @ 23:36:31
-- ⚡ `startup` +0 kluczy @ 23:36:24
 
 ---
 
@@ -276,13 +276,13 @@
 
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
-| items | 13749 | 11689 | 2 | ⏭️ Skip 0m |
+| items | 13749 | 11689 | 3 | ⏭️ Skip 29m |
 | npc | 5334 | 0 | 0 | ✅ Active |
 | monsters | 4158 | 0 | 5 | ⏭️ Skip 110m |
 | html | 418 | 14 | 2 | ⏭️ Skip 1m |
 | scripts | 385 | 0 | 6 | ⏭️ Skip 52m |
 | php | 32 | 24 | 2 | ⏭️ Skip 1m |
-| raids | 30 | 0 | 5 | ⏭️ Skip 111m |
+| raids | 30 | 0 | 5 | ⏭️ Skip 110m |
 | startup | 19 | 11 | 2 | ⏭️ Skip 1m |
 | modules | 16 | 16 | 2 | ⏭️ Skip 1m |
 | cpp | 15 | 0 | 0 | ✅ Active |
@@ -308,9 +308,9 @@
 |-----------|----------------|-----------|-------|
 | scripts | 52m | 6x | Progresywny backoff |
 | monsters | 110m | 5x | Progresywny backoff |
-| raids | 111m | 5x | Progresywny backoff |
+| raids | 110m | 5x | Progresywny backoff |
 | world | 111m | 5x | Progresywny backoff |
-| items | 0m | 2x | Progresywny backoff |
+| items | 29m | 3x | Progresywny backoff |
 | libs | 0m | 2x | Progresywny backoff |
 | events | 0m | 2x | Progresywny backoff |
 | chatchannels | 0m | 2x | Progresywny backoff |
@@ -330,7 +330,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #84 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #85 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -373,7 +373,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:44:52  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:45:04  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

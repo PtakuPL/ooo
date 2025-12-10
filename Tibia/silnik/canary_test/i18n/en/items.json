@@ -23,5 +23,10 @@
   "item.101.name": "earth",
   "item.102.name": "white flower",
   "item.103.name": "dirt",
-  "item.104.name": "sand"
+  "item.104.name": "sand",
+  "item.105.name": "poison field",
+  "item.106.name": "grass",
+  "item.107.name": "special flask",
+  "item.110.name": "special flask",
+  "item.111.name": "dead human"
 }

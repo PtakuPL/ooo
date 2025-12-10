@@ -124,7 +124,7 @@
   },
   "translation_sync": {
     "current_lang": "cs",
-    "current_category": "monsters.json",
+    "current_category": "npc.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -255,7 +255,7 @@
       },
       "cs": {
         "chatchannels": 8,
-        "total": 68878,
+        "total": 96445,
         "client": 283,
         "cpp": 15,
         "events": 5,
@@ -263,9 +263,10 @@
         "items": 13749,
         "libs": 21,
         "modules": 16,
-        "monsters": 7341
+        "monsters": 7341,
+        "npc": 5334
       }
     },
-    "last_sync": 1765410737.7101257
+    "last_sync": 1765410745.51602
   }
 }

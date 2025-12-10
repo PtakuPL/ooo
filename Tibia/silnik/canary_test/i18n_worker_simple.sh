@@ -3242,6 +3242,7 @@ except:
 # Przetwórz klucze
 translated = 0
 placeholders = 0
+guard_fail = 0
 for key, en_text in en_data.items():
     if key in lang_data:
         # Sprawdź czy to placeholder
@@ -3252,8 +3253,20 @@ for key, en_text in en_data.items():
     simple = simple_translate(en_text, target_lang)
     
     if simple:
-        lang_data[key] = simple
-        translated += 1
+        # Guard na placeholdery {} i |...|
+        def count_placeholders(text):
+            braces = re.findall(r'\{[^}]*\}', text)
+            pipes = re.findall(r'\|[^|]+\|', text)
+            return len(braces), len(pipes)
+        sb, sp = count_placeholders(en_text)
+        tb, tp = count_placeholders(simple)
+        if sb == tb and sp == tp:
+            lang_data[key] = simple
+            translated += 1
+        else:
+            lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+            placeholders += 1
+            guard_fail += 1
     else:
         # Placeholder z kodem języka
         lang_data[key] = f"[{target_lang.upper()}] {en_text}"

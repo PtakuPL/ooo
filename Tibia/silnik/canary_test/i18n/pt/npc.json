@@ -4140,5 +4140,8 @@
   "npc.willie.stdmod_49": "[PT] Too bad.",
   "npc.woblin.stdmod_1": "[PT] No part of clan. Me prefer company of precious. Or mirror image. Always nice to see pretty me!",
   "npc.woblin.stdmod_2": "[PT] What you on quest for? Go leave Woblin alone with {precious}",
-  "npc.woblin.stdmod_3": "[PT] Me not give {key}! Key my precious now! By old goblin law all that one has in his pockets for two days \\z\n\t\t\tis family heirloom! Me no part with my precious ... hm unless you provide Woblin with some {reward}!"
+  "npc.woblin.stdmod_3": "[PT] Me not give {key}! Key my precious now! By old goblin law all that one has in his pockets for two days \\z\n\t\t\tis family heirloom! Me no part with my precious ... hm unless you provide Woblin with some {reward}!",
+  "npc.zarak.stdmod_1": "[PT] In this category I have '{Bruise Bane}', '{Cure Bleeding}', '{Wound Cleansing}', \\z\n\t\t'{Cure Poison}', '{Intense Wound Cleansing}', '{Recovery}' and '{Intense Recovery}'.",
+  "npc.zarak.stdmod_2": "[PT] In this category I have '{Light}', '{Find Person}', '{Magic Rope}', '{Levitate}', '{Haste}', \\z\n\t\t'{Charge}' and '{Great Light}'.",
+  "npc.zarak.stdmod_3": "[PT] I can teach you {healing spells}, {attack spells} and {support spells}. \\z\n\t\tWhat kind of spell do you wish to learn? \\z\n\t\t\tYou can also tell me for which level you would like to learn a spell, if you prefer that."
 }

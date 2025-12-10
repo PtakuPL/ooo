@@ -278,6 +278,7 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `zarak` - ukończono 2025-12-10 11:31
 - ✅ `woblin` - ukończono 2025-12-10 11:31
 - ✅ `willie` - ukończono 2025-12-10 11:31
 - ✅ `wentworth` - ukończono 2025-12-10 11:31

@@ -58,8 +58,8 @@
       "timestamp": 1765409335.9992979
     },
     "php": {
-      "count": 336,
-      "timestamp": 1765409529.5830255
+      "count": 138,
+      "timestamp": 1765409553.336337
     },
     "html": {
       "count": 180,
@@ -104,7 +104,7 @@
     "chatchannels": 8,
     "modules": 16,
     "startup": 23,
-    "php": 2898,
+    "php": 3105,
     "html": 284,
     "client": 14,
     "keywordhandler": 64,

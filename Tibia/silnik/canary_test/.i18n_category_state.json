@@ -23,8 +23,8 @@
       "timestamp": 1765402563.0667286
     },
     "items": {
-      "count": 15,
-      "timestamp": 1765405773.7135348
+      "count": 4,
+      "timestamp": 1765405780.621773
     }
   },
   "consecutive_zeros": {
@@ -35,7 +35,7 @@
     "items": 0
   },
   "total_processed": {
-    "items": 11685
+    "items": 11689
   },
   "translation_sync": {
     "current_lang": "de",

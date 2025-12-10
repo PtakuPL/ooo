@@ -242,7 +242,7 @@ local function confirmRemoveEngage(npc, creature, message, keywords, parameters,
 	local playerSpouse = getPlayerSpouse(player:getGuid())
 	if playerStatus == PROPOSED_STATUS then
 		npcHandler:say("Are you sure you want to remove your wedding proposal with {" .. getPlayerNameById(playerSpouse) .. "}?", npc, creature)
-		node:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 3, i18nKey = "npc.lynda.stdmod_1" })
+		node:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 3, text = "Ok, let's keep it then." })
 
 		local function removeEngage(creature, message, keywords, parameters, node)
 			doPlayerAddItem(creature, ITEM_WEDDING_RING, 1)
@@ -266,7 +266,7 @@ local function confirmDivorce(npc, creature, message, keywords, parameters, node
 	local playerSpouse = getPlayerSpouse(player:getGuid())
 	if playerStatus == MARRIED_STATUS then
 		npcHandler:say("Are you sure you want to divorce of {" .. getPlayerNameById(playerSpouse) .. "}?", npc, creature)
-		node:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 3, i18nKey = "npc.lynda.stdmod_2" })
+		node:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 3, text = "Great! Marriages should be an eternal commitment." })
 
 		local function divorce(creature, message, keywords, parameters, node)
 			local player = Player(creature)
@@ -286,14 +286,14 @@ local function confirmDivorce(npc, creature, message, keywords, parameters, node
 	return true
 end
 
-local node1 = keywordHandler:addKeyword({ "marry" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, i18nKey = "npc.lynda.stdmod_3" })
-node1:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 1, i18nKey = "npc.lynda.stdmod_4" })
-local node2 = node1:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, i18nKey = "npc.lynda.stdmod_5" })
+local node1 = keywordHandler:addKeyword({ "marry" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, text = "Would you like to get married? Make sure you have a wedding ring and the wedding outfit box with you." })
+node1:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 1, text = "That's fine." })
+local node2 = node1:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, text = "And who would you like to marry?" })
 node2:addChildKeyword({ "[%w]" }, tryEngage, {})
 
-local node3 = keywordHandler:addKeyword({ "celebration" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, i18nKey = "npc.lynda.stdmod_6" })
-node3:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 1, i18nKey = "npc.lynda.stdmod_7" })
-local node4 = node3:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, i18nKey = "npc.lynda.stdmod_8" }) --, confirmWedding, {})
+local node3 = keywordHandler:addKeyword({ "celebration" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, text = "Is your soulmate and friends here with you for the celebration?" })
+node3:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 1, text = "Then go bring them here!" })
+local node4 = node3:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, text = "Good, let's {begin} then!" }) --, confirmWedding, {})
 node4:addChildKeyword({ "begin" }, confirmWedding, {})
 
 keywordHandler:addKeyword({ "remove" }, confirmRemoveEngage, {})

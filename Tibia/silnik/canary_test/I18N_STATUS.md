@@ -293,4 +293,7 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅  - ukończono 2025-12-10 05:57
+- ✅  - ukończono 2025-12-10 05:57
+- ✅  - ukończono 2025-12-10 05:57
 - ✅  - ukończono 2025-12-10 05:51

@@ -4397,87 +4397,84 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                             update_category_state "scripts" "$COUNT"
                             ;;
                         monsters)
-                            echo "   👹 Przetwarzam MONSTERS..."
-                            COUNT=0
-                            process_monsters_category "$BATCH"
-                            echo "   📊 Monsters: Dodano klucze"
+                            echo "   👹 Przetwarzam MONSTERS z mini-batch..."
+                            COUNT=$(run_with_mini_batch "monsters" "process_monsters_category" "$BATCH")
+                            update_category_state "monsters" "$COUNT"
                             ;;
                         spells)
-                            echo "   ✨ Przetwarzam SPELLS..."
-                            COUNT=0
-                            process_spells_category "$BATCH"
-                            echo "   📊 Spells: Dodano klucze"
+                            echo "   ✨ Przetwarzam SPELLS z mini-batch..."
+                            COUNT=$(run_with_mini_batch "spells" "process_spells_category" "$BATCH")
+                            update_category_state "spells" "$COUNT"
                             ;;
                         items)
-                            echo "   🎒 Przetwarzam ITEMS..."
-                            COUNT=0
-                            process_items_category "$BATCH"
-                            echo "   📊 Items: Dodano klucze"
+                            echo "   🎒 Przetwarzam ITEMS z mini-batch..."
+                            COUNT=$(run_with_mini_batch "items" "process_items_category" "$BATCH")
+                            update_category_state "items" "$COUNT"
                             ;;
                         raids)
-                            echo "   ⚔️ Przetwarzam RAIDS..."
-                            process_raids_category "$BATCH"
-                            echo "   📊 Raids: Dodano klucze"
+                            echo "   ⚔️ Przetwarzam RAIDS z mini-batch..."
+                            COUNT=$(run_with_mini_batch "raids" "process_raids_category" "$BATCH")
+                            update_category_state "raids" "$COUNT"
                             ;;
                         world)
-                            echo "   🗺️ Przetwarzam WORLD..."
-                            process_world_category "$BATCH"
-                            echo "   📊 World: Dodano klucze"
+                            echo "   🗺️ Przetwarzam WORLD z mini-batch..."
+                            COUNT=$(run_with_mini_batch "world" "process_world_category" "$BATCH")
+                            update_category_state "world" "$COUNT"
                             ;;
                         libs)
-                            echo "   📚 Przetwarzam LIBS..."
-                            process_libs_category "$BATCH"
-                            echo "   📊 Libs: Dodano klucze"
+                            echo "   📚 Przetwarzam LIBS z mini-batch..."
+                            COUNT=$(run_with_mini_batch "libs" "process_libs_category" "$BATCH")
+                            update_category_state "libs" "$COUNT"
                             ;;
                         events)
-                            echo "   🎉 Przetwarzam EVENTS..."
-                            process_events_category "$BATCH"
-                            echo "   📊 Events: Dodano klucze"
+                            echo "   🎉 Przetwarzam EVENTS z mini-batch..."
+                            COUNT=$(run_with_mini_batch "events" "process_events_category" "$BATCH")
+                            update_category_state "events" "$COUNT"
                             ;;
                         chatchannels)
-                            echo "   💬 Przetwarzam CHATCHANNELS..."
-                            process_chatchannels_category "$BATCH"
-                            echo "   📊 Chatchannels: Dodano klucze"
+                            echo "   💬 Przetwarzam CHATCHANNELS z mini-batch..."
+                            COUNT=$(run_with_mini_batch "chatchannels" "process_chatchannels_category" "$BATCH")
+                            update_category_state "chatchannels" "$COUNT"
                             ;;
                         modules)
-                            echo "   📦 Przetwarzam MODULES..."
-                            process_modules_category "$BATCH"
-                            echo "   📊 Modules: Dodano klucze"
+                            echo "   📦 Przetwarzam MODULES z mini-batch..."
+                            COUNT=$(run_with_mini_batch "modules" "process_modules_category" "$BATCH")
+                            update_category_state "modules" "$COUNT"
                             ;;
                         startup)
-                            echo "   🚀 Przetwarzam STARTUP..."
-                            process_startup_category "$BATCH"
-                            echo "   📊 Startup: Dodano klucze"
+                            echo "   🚀 Przetwarzam STARTUP z mini-batch..."
+                            COUNT=$(run_with_mini_batch "startup" "process_startup_category" "$BATCH")
+                            update_category_state "startup" "$COUNT"
                             ;;
                         npclib)
-                            echo "   📖 Przetwarzam NPCLIB..."
-                            process_npclib_category "$BATCH"
-                            echo "   📊 NpcLib: Dodano klucze"
+                            echo "   📖 Przetwarzam NPCLIB z mini-batch..."
+                            COUNT=$(run_with_mini_batch "npclib" "process_npclib_category" "$BATCH")
+                            update_category_state "npclib" "$COUNT"
                             ;;
                         php)
-                            echo "   🐘 Przetwarzam PHP (html_copy)..."
-                            process_php_category "$BATCH"
-                            echo "   📊 PHP: Dodano klucze"
+                            echo "   🐘 Przetwarzam PHP z mini-batch..."
+                            COUNT=$(run_with_mini_batch "php" "process_php_category" "$BATCH")
+                            update_category_state "php" "$COUNT"
                             ;;
                         html)
-                            echo "   📄 Przetwarzam HTML/Twig..."
-                            process_html_category "$BATCH"
-                            echo "   📊 HTML: Dodano klucze"
+                            echo "   📄 Przetwarzam HTML/Twig z mini-batch..."
+                            COUNT=$(run_with_mini_batch "html" "process_html_category" "$BATCH")
+                            update_category_state "html" "$COUNT"
                             ;;
                         cpp)
-                            echo "   ⚙️ Przetwarzam C++ (src)..."
-                            process_cpp_category "$BATCH"
-                            echo "   📊 C++: Dodano klucze"
+                            echo "   ⚙️ Przetwarzam C++ z mini-batch..."
+                            COUNT=$(run_with_mini_batch "cpp" "process_cpp_category" "$BATCH")
+                            update_category_state "cpp" "$COUNT"
                             ;;
                         client)
-                            echo "   🎮 Przetwarzam OTClient (testyy)..."
-                            process_client_category "$BATCH"
-                            echo "   📊 Client: Dodano klucze"
+                            echo "   🎮 Przetwarzam OTClient z mini-batch..."
+                            COUNT=$(run_with_mini_batch "client" "process_client_category" "$BATCH")
+                            update_category_state "client" "$COUNT"
                             ;;
                         sendtextmessage|stm)
-                            echo "   📨 Przetwarzam sendTextMessage patterns..."
-                            process_sendTextMessage_category "$BATCH"
-                            echo "   📊 sendTextMessage: Zamieniono pliki"
+                            echo "   📨 Przetwarzam sendTextMessage z mini-batch..."
+                            COUNT=$(run_with_mini_batch "sendtextmessage" "process_sendTextMessage_category" "$BATCH")
+                            update_category_state "sendtextmessage" "$COUNT"
                             ;;
                         keywordhandler|kwh)
                             echo "   🔑 Przetwarzam keywordHandler bez i18nKey..."

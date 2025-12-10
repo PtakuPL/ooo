@@ -24,21 +24,157 @@
 
 ## 📊 Obecny stan systemu
 
-### Co mamy:
-- ✅ `i18n_autonomous_worker.sh` - Worker v4.0 migrujący pliki Lua
+> **Ostatnia aktualizacja:** 2025-12-10 11:45 UTC
+
+### ✅ Co mamy (ZROBIONE):
+- ✅ `i18n_worker_simple.sh` - Worker v2.0 Multi-Mode (8 etapów)
 - ✅ `i18n_guardian.sh` - Guardian restartujący workera + auto-push
 - ✅ 53 katalogi językowe w `i18n/`
 - ✅ Pliki JSON z kluczami (npc.json, items.json, scripts.json, etc.)
 - ✅ Cron job dla Guardian
+- ✅ **StdModule.say** - 297/297 plików zmigrowanych ✅
+- ✅ **4145 kluczy** wyciągniętych do en/npc.json
+- ✅ Placeholder'y dla 8 języków (pl, de, es, fr, it, pt, ru, uk)
+- ✅ Dokumentacja MD dla każdego NPC
+- ✅ Live Dashboard na GitHub (I18N_STATUS.md)
+
+---
+
+## 📈 PEŁNA ANALIZA PROJEKTU (2025-12-10)
+
+### 🎮 1. DATA-OTSERVBR-GLOBAL (Serwer Lua)
+
+| Katalog | Plików | Z tekstami | Status |
+|---------|--------|------------|--------|
+| **npc/** | 1026 | 812 | 🔄 Częściowo |
+| **scripts/** | 1755 | 668 | ❌ Do zrobienia |
+| **monster/** | 1637 | 3 | ❌ Do zrobienia |
+| **startup/** | 20 | 3 | ❌ Do zrobienia |
+| **lib/** | 26 | 10 | ❌ Do zrobienia |
+| **migrations/** | 52 | 0 | ✅ Nie wymaga |
+
+#### Typy funkcji tekstowych w NPC:
+
+| Typ | Plików | Z i18nKey | Do migracji | Priorytet |
+|-----|--------|-----------|-------------|-----------|
+| `StdModule.say(text=)` | 297 | 297 ✅ | 0 | - |
+| `npcHandler:say("text")` | 133 | 42 | **91** | 🔴 WYSOKI |
+| `player:sendTextMessage()` | 312 | 0 | **312** | 🔴 WYSOKI |
+
+### 🌐 2. HTML_COPY (Strona WWW - AAC)
+
+| Typ pliku | Ilość | Z tekstami | Status |
+|-----------|-------|------------|--------|
+| **PHP** | 5587 | ~1310 | ❌ Do zrobienia |
+| **HTML** | 102 | ~50 | ❌ Do zrobienia |
+| **JavaScript** | 4967 | ~500 | ❌ Do zrobienia |
+| **Twig templates** | 575 | ~300 | ❌ Do zrobienia |
+
+### 📂 3. DATA (Główne skrypty)
+
+| Katalog | Plików | Z tekstami | Status |
+|---------|--------|------------|--------|
+| **scripts/** | 479 | 200 | ❌ Do zrobienia |
+| **libs/** | 55 | 23 | ❌ Do zrobienia |
+| **modules/** | 7 | 5 | ❌ Do zrobienia |
+| **chatchannels/** | 8 | 6 | ❌ Do zrobienia |
+| **npclib/** | 7 | 6 | ❌ Do zrobienia |
+| **events/** | 4 | 1 | ❌ Do zrobienia |
+
+### ⚙️ 4. SRC (C++ Server)
+
+| Typ | Ilość | Z stringami | Status |
+|-----|-------|-------------|--------|
+| **cpp** | 186 | 168 | ❌ Do zrobienia |
+| **hpp** | 249 | ~50 | ❌ Do zrobienia |
+
+### 🎮 5. DATA-CANARY
+
+| Katalog | Plików | Z tekstami | Status |
+|---------|--------|------------|--------|
+| **monster/** | 67 | 51 | ❌ Do zrobienia |
+| **scripts/** | 25 | 5 | ❌ Do zrobienia |
+| **npc/** | 1 | 1 | ❌ Do zrobienia |
+
+### 💻 6. TESTYY (Instalka/Klient OTClient)
+
+| Typ | Ilość | Z tekstami | Status |
+|-----|-------|------------|--------|
+| **Lua/OTUI/OTMOD** | 449 | 284 | ❌ Do zrobienia |
+
+---
+
+## 📋 PLAN ROZSZERZENIA WORKERA
+
+### Faza A: NPC Completion (PRIORYTET 🔴)
+
+1. **`npcHandler:say("text")`** - 91 plików
+   - Format: `npcHandler:say("text", npc, creature)`
+   - Zamiana na: `npcHandler:sayI18n("key", npc, creature)`
+   - Klucze: `npc.{nazwa}.say_{N}`
+
+2. **`player:sendTextMessage()`** - 312 plików
+   - Format: `player:sendTextMessage(TYPE, "text")`
+   - Zamiana na: `player:sendTextMessageI18n(TYPE, "key")`
+   - Klucze: `system.{nazwa}.msg_{N}`
+
+### Faza B: Scripts (PRIORYTET 🟡)
+
+3. **data-otservbr-global/scripts/** - 668 plików
+   - `player:sendTextMessage()`
+   - `creature:say()`
+   - `Game.broadcastMessage()`
+   - Klucze: `scripts.{kategoria}.{nazwa}.msg_{N}`
+
+### Faza C: C++ Server (PRIORYTET 🟡)
+
+4. **src/*.cpp** - 168 plików
+   - `player->sendTextMessage()`
+   - `fmt::format()`
+   - Wymaga: Raportu + ręcznej implementacji
+   - Klucze: `cpp.{moduł}.{funkcja}.msg_{N}`
+
+### Faza D: Website AAC (PRIORYTET 🟢)
+
+5. **html_copy/*.php** - 1310 plików
+   - `echo "text"`
+   - `$lang['key']`
+   - Klucze: `web.{strona}.{sekcja}.msg_{N}`
+
+6. **html_copy/*.twig** - 575 plików
+   - `{{ 'text' }}`
+   - Klucze: `web.tpl.{nazwa}.msg_{N}`
+
+### Faza E: Klient OTClient (PRIORYTET 🟢)
+
+7. **testyy/** - 284 plików
+   - `tr("text")` (już może istnieć system!)
+   - `.otui` files
+   - Klucze: `client.{moduł}.{element}`
+
+---
+
+## 📊 PODSUMOWANIE DO MIGRACJI
+
+| Kategoria | Plików | Szacunkowa ilość tekstów | Priorytet |
+|-----------|--------|--------------------------|-----------|
+| NPC (pozostałe) | 403 | ~2000 | 🔴 WYSOKI |
+| Scripts Lua | 868 | ~3000 | 🟡 ŚREDNI |
+| C++ Server | 218 | ~500 | 🟡 ŚREDNI |
+| PHP Website | 1310 | ~5000 | 🟢 NISKI |
+| Twig Templates | 575 | ~1500 | 🟢 NISKI |
+| OTClient | 284 | ~1000 | 🟢 NISKI |
+| **RAZEM** | **~3658** | **~13000** | - |
+
+---
 
 ### Ograniczenia obecnego systemu:
-- ❌ Worker przetwarza tylko pliki Lua
-- ❌ Brak prawdziwego tłumaczenia (tylko klucze EN)
+- ❌ Worker przetwarza tylko `StdModule.say`
+- ❌ Brak obsługi `npcHandler:say()` i `player:sendTextMessage()`
+- ❌ Brak parsera PHP/C++/Twig
+- ❌ Brak prawdziwego tłumaczenia (tylko placeholder'y)
 - ❌ Brak walidacji poprawności kodu po modyfikacji
 - ❌ Brak rollback w przypadku błędów
-- ❌ Brak interfejsu do zarządzania tłumaczeniami
-- ❌ Brak testów automatycznych
-- ❌ Brak metryki postępu w czasie rzeczywistym
 
 ---
 

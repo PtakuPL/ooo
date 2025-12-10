@@ -8103,5 +8103,20 @@
   "item.24878.name": "RESERVED SPRITE",
   "item.24887.name": "RESERVED SPRITE",
   "item.24888.name": "platform rising from water",
-  "item.24889.name": "platform rising into water"
+  "item.24889.name": "platform rising into water",
+  "item.24890.name": "platform rising from water",
+  "item.24903.name": "closed door",
+  "item.24912.name": "RESERVED SPRITE",
+  "item.24926.name": "monument",
+  "item.24927.name": "dead lloyd",
+  "item.24928.name": "remains of an observer eye",
+  "item.24929.name": "lightsphere",
+  "item.24930.name": "lit lightsphere",
+  "item.24931.name": "RESERVED SPRITE",
+  "item.24932.name": "unknown teleport",
+  "item.24933.name": "large glowing emerald",
+  "item.24934.name": "large glowing ruby",
+  "item.24935.name": "large glowing sapphire",
+  "item.24936.name": "large glowing amethyst",
+  "item.24937.name": "dragon blood"
 }

@@ -25,6 +25,10 @@
     "world": {
       "count": 0,
       "timestamp": 1765395792.3366282
+    },
+    "items": {
+      "count": 5,
+      "timestamp": 1765395799.234663
     }
   }
 }

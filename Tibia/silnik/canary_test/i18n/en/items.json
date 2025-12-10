@@ -1,1 +1,7 @@
-{}
+{
+  "item.1.name": "water",
+  "item.2.name": "wine",
+  "item.3.name": "beer",
+  "item.4.name": "mud",
+  "item.5.name": "blood"
+}

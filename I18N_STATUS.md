@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 13:13:22 UTC  
+> **Aktualizacja:** 2025-12-10 13:13:35 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **12** | ↑ |
-| ⏭️ Plików wykluczonych | **720** | - |
+| 📁 Plików przetworzonych | **16** | ↑ |
+| ⏭️ Plików wykluczonych | **716** | - |
 | 🔑 Kluczy i18n | **4181** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#1** | - |
+| 🔄 Cykl | **#12** | - |
 
 ---
 
@@ -76,9 +76,9 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    12 │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    ✅ IDLE                                   │
+│ Status:    🟢 RUNNING                                │
 │ Tryb:      MIGRATION (8 etapów)                     │
 │ Kategoria: 🧙 NPC Dialogs                            │
 ├─────────────────────────────────────────────────────────────────┤
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 13:13:22                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 13:13:35                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,11 +98,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przetworzonych | **12** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **12** (299 z i18nKey) | z 1026 plików NPC |
+| 📁 Plików przetworzonych | **16** | z i18n_file_status.json |
+| ✅ NPC zmigrowanych | **16** (299 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **4181** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
-| 🔄 Cykli wykonanych | **#1** | continuous mode |
+| 🔄 Cykli wykonanych | **#12** | continuous mode |
 | ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -110,11 +110,11 @@
 
 ## 📜 Historia ostatnich operacji
 
-- ✅ `the_lootmonger` - ukończono 2025-12-10 13:13
-- ✅ `tandros` - ukończono 2025-12-10 13:13
-- ✅ `sundara` - ukończono 2025-12-10 13:13
-- ✅ `sigurd` - ukończono 2025-12-10 13:13
-- ✅ `shiriel` - ukończono 2025-12-10 13:13
+- ✅ `frederik` - ukończono 2025-12-10 13:13
+- ✅ `frans` - ukończono 2025-12-10 13:13
+- ✅ `gnomegica` - ukończono 2025-12-10 13:13
+- ✅ `ghorza` - ukończono 2025-12-10 13:13
+- ✅ `chuckles` - ukończono 2025-12-10 13:13
 
 ---
 
@@ -273,7 +273,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #12 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -294,23 +294,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 13:13:22  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 13:13:35  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `frederik` - ukończono 2025-12-10 13:13
+- ✅ `frans` - ukończono 2025-12-10 13:13
+- ✅ `gnomegica` - ukończono 2025-12-10 13:13
+- ✅ `ghorza` - ukończono 2025-12-10 13:13
+- ✅ `chuckles` - ukończono 2025-12-10 13:13
+- ✅ `battlemart` - ukończono 2025-12-10 13:13
+- ✅ `alaistar` - ukończono 2025-12-10 13:13
 - ✅ `the_lootmonger` - ukończono 2025-12-10 13:13
 - ✅ `tandros` - ukończono 2025-12-10 13:13
 - ✅ `sundara` - ukończono 2025-12-10 13:13
-- ✅ `sigurd` - ukończono 2025-12-10 13:13
-- ✅ `shiriel` - ukończono 2025-12-10 13:13
-- ✅ `seymour` - ukończono 2025-12-10 13:13
-- ✅ `frederik` - ukończono 2025-12-10 13:13
-- ✅ `frans` - ukończono 2025-12-10 13:13
-- ✅ `romir` - ukończono 2025-12-10 13:13
-- ✅ `rock_in_a_hard_place` - ukończono 2025-12-10 13:13
 
 ---
 

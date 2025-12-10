@@ -548,7 +548,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:19:28.288043"
+      "completed_at": "2025-12-10T13:20:05.198930"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -658,7 +658,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:19:29.948589"
+      "completed_at": "2025-12-10T13:20:06.760861"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -1470,13 +1470,122 @@
           "transformed": 0,
           "stdmod_transformed": 0,
           "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0
+        },
+        "7_validation": {
+          "status": "failed",
+          "errors": [
+            "Klucz npc.richard.stdmod_1 brakuje w en/npc.json",
+            "Klucz npc.richard.stdmod_2 brakuje w en/npc.json",
+            "Klucz npc.richard.stdmod_3 brakuje w en/npc.json",
+            "Klucz npc.richard.stdmod_4 brakuje w en/npc.json",
+            "Klucz npc.richard.stdmod_5 brakuje w en/npc.json",
+            "Klucz npc.richard.stdmod_6 brakuje w en/npc.json",
+            "Klucz npc.richard.stdmod_7 brakuje w en/npc.json",
+            "Klucz npc.richard.stdmod_8 brakuje w en/npc.json",
+            "Klucz npc.richard.stdmod_9 brakuje w en/npc.json",
+            "Klucz npc.richard.stdmod_10 brakuje w en/npc.json",
+            "Klucz npc.richard.stdmod_11 brakuje w en/npc.json"
+          ],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 11,
+          "validation_passed": false
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T13:19:38.004621"
+    },
+    "data-otservbr-global/npc/rock_in_a_hard_place.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "9378c6c185e73c3ffef931328c39dc84",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "rock_in_a_hard_place",
+          "StdModule_say": 4,
+          "npcHandler_say": 2,
+          "sendTextMessage": 1,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 7,
+          "already_i18n": 4,
+          "npcSayLib": 0,
+          "needs_migration": true
         }
       },
       "overall_status": "in_progress"
     }
   },
   "global_stats": {
-    "files_completed": 13,
+    "files_completed": 14,
     "total_keys": 0
   }
 }

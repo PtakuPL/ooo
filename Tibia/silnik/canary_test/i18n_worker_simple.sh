@@ -1477,21 +1477,38 @@ select_work_mode() {
 import os
 import json
 import glob
+import re
 
 I18N_DIR = "i18n"
 NPC_DIR = "data-otservbr-global/npc"
 LANG_PRIORITY = ["pl", "de", "es", "pt", "fr", "it", "ru"]
 
 # 1. Czy są pliki NPC do migracji?
+# Szukamy plików z: StdModule.say bez i18nKey LUB npcHandler:say("...) bez NPC_LIB
 needs_migration = 0
 for f in glob.glob(f"{NPC_DIR}/*.lua"):
     try:
         with open(f) as nf:
             content = nf.read()
-        # StdModule.say może być na innej linii niż text
-        if "StdModule.say" in content:
+        
+        needs_work = False
+        
+        # Sprawdź StdModule.say bez i18nKey
+        if "StdModule.say" in content and 'text = "' in content:
             if "i18nKey" not in content:
-                needs_migration += 1
+                needs_work = True
+        
+        # Sprawdź npcHandler:say("...) bez NPC_LIB.i18n.npcSay
+        # Szukamy: npcHandler:say("tekst", npc, creature/player)
+        if 'npcHandler:say("' in content:
+            # Sprawdź czy są proste npcHandler:say (nie tablice/konkatenacje)
+            pattern = r'npcHandler:say\(\s*"[^"]{5,}"\s*,\s*npc\s*,\s*(?:creature|player)\s*\)'
+            if re.search(pattern, content):
+                if "NPC_LIB.i18n.npcSay" not in content:
+                    needs_work = True
+        
+        if needs_work:
+            needs_migration += 1
     except:
         pass
 

@@ -1745,9 +1745,9 @@ process_monsters_category() {
             local base=$(basename "$file" | sed 's/\.\(lua\|xml\)$//')
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
             
-            # Wyciągnij name i description
-            local name=$(grep -oP 'name\s*=\s*"\K[^"]+' "$file" 2>/dev/null | head -1)
-            local desc=$(grep -oP 'description\s*=\s*"\K[^"]+' "$file" 2>/dev/null | head -1)
+            # NAPRAWIONE: Szukaj nazwy w createMonsterType("Name") lub monster.description
+            local name=$(grep -oP 'createMonsterType\s*\(\s*"\K[^"]+' "$file" 2>/dev/null | head -1)
+            local desc=$(grep -oP 'monster\.description\s*=\s*"\K[^"]+' "$file" 2>/dev/null | head -1)
             
             # Domyślnie użyj nazwy pliku jako name
             [ -z "$name" ] && name=$(echo "$base" | tr '_' ' ' | sed 's/\b\(.\)/\u\1/g')

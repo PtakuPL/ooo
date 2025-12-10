@@ -1518,5 +1518,20 @@
   "item.3435.name": "castle shield",
   "item.3436.name": "medusa shield",
   "item.3437.name": "amazon shield",
-  "item.3438.name": "eagle shield"
+  "item.3438.name": "eagle shield",
+  "item.3439.name": "phoenix shield",
+  "item.3440.name": "scarab shield",
+  "item.3441.name": "bone shield",
+  "item.3442.name": "tempest shield",
+  "item.3443.name": "tusk shield",
+  "item.3444.name": "sentinel shield",
+  "item.3445.name": "salamander shield",
+  "item.3446.name": "bolt",
+  "item.3447.name": "arrow",
+  "item.3448.name": "poison arrow",
+  "item.3449.name": "burst arrow",
+  "item.3450.name": "power bolt",
+  "item.3451.name": "pitchfork",
+  "item.3452.name": "rake",
+  "item.3453.name": "scythe"
 }

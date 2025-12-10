@@ -1254,6 +1254,89 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
     --update-status)
         update_github_status
         ;;
+    --continuous)
+        # Tryb ciągły - pracuje cały czas
+        PID_FILE=".worker_simple.pid"
+        echo $$ > "$PID_FILE"
+        
+        BATCH="${2:-5}"  # Ile plików na batch (domyślnie 5)
+        DELAY="${3:-10}" # Przerwa między batchami w sekundach (domyślnie 10)
+        
+        echo "╔════════════════════════════════════════════════════════════╗"
+        echo "║   I18N WORKER SIMPLE v1.1 - TRYB CIĄGŁY                   ║"
+        echo "║   PID: $$                                                  ║"
+        echo "║   Batch: $BATCH plików | Przerwa: ${DELAY}s                ║"
+        echo "╚════════════════════════════════════════════════════════════╝"
+        echo ""
+        echo "Aby zatrzymać: kill $$ lub Ctrl+C"
+        echo ""
+        
+        CYCLE=0
+        
+        # Obsługa Ctrl+C
+        trap 'echo ""; echo "⛔ Zatrzymuję worker..."; update_github_status; rm -f "$PID_FILE"; exit 0' SIGINT SIGTERM
+        
+        while true; do
+            CYCLE=$((CYCLE + 1))
+            echo ""
+            echo "═══════════════════════════════════════════════════════════════"
+            echo "🔄 CYKL #$CYCLE - $(date '+%Y-%m-%d %H:%M:%S')"
+            echo "═══════════════════════════════════════════════════════════════"
+            
+            # Znajdź pliki do migracji
+            FILES_TODO=0
+            for f in data-otservbr-global/npc/*.lua; do
+                if grep -q "StdModule\.say.*text" "$f" 2>/dev/null; then
+                    if ! grep -q "i18nKey" "$f" 2>/dev/null; then
+                        FILES_TODO=$((FILES_TODO + 1))
+                    fi
+                fi
+            done
+            
+            if [ "$FILES_TODO" -eq 0 ]; then
+                echo "✅ Wszystkie pliki NPC zmigrowane!"
+                echo "Aktualizuję status i kończę..."
+                update_github_status
+                rm -f "$PID_FILE"
+                exit 0
+            fi
+            
+            echo "📋 Pozostało do migracji: $FILES_TODO plików"
+            echo ""
+            
+            # Przetwórz batch plików
+            COUNT=0
+            for f in data-otservbr-global/npc/*.lua; do
+                if grep -q "StdModule\.say.*text" "$f" 2>/dev/null; then
+                    if ! grep -q "i18nKey" "$f" 2>/dev/null; then
+                        process_file "$f"
+                        COUNT=$((COUNT + 1))
+                        if [ "$COUNT" -ge "$BATCH" ]; then
+                            break
+                        fi
+                    fi
+                fi
+            done
+            
+            echo ""
+            echo "📊 Cykl #$CYCLE zakończony: $COUNT plików"
+            
+            # Aktualizuj status co cykl
+            update_github_status
+            
+            # Git commit co cykl
+            if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
+                git add -A 2>/dev/null
+                MIGRATED=$(cat "$STATUS_FILE" 2>/dev/null | python3 -c "import json,sys; d=json.load(sys.stdin); print(len([f for f,i in d.get('files',{}).items() if i.get('overall_status')=='completed']))" 2>/dev/null || echo "?")
+                git commit -m "📊 I18N: $MIGRATED NPCs migrated - Cykl #$CYCLE" 2>/dev/null
+                git push origin master 2>/dev/null && echo "📤 Push OK" || echo "⚠️ Push failed"
+            fi
+            
+            echo ""
+            echo "💤 Przerwa ${DELAY}s przed następnym cyklem..."
+            sleep "$DELAY"
+        done
+        ;;
     *)
         echo ""
         echo "Użycie:"

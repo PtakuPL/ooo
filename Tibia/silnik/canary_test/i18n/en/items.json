@@ -1038,5 +1038,10 @@
   "item.2928.name": "torch bearer",
   "item.2929.name": "lit torch bearer",
   "item.2930.name": "torch bearer",
-  "item.2931.name": "lit torch bearer"
+  "item.2931.name": "lit torch bearer",
+  "item.2932.name": "oil lamp",
+  "item.2933.name": "small oil lamp",
+  "item.2934.name": "table lamp",
+  "item.2935.name": "lit table lamp",
+  "item.2936.name": "wall lamp"
 }

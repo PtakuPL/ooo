@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 21:40:03 UTC  
+> **Aktualizacja:** 2025-12-10 21:41:03 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -23,10 +23,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **26** | ↑ |
 | ⏭️ Plików wykluczonych | **711** | - |
-| 🔑 Kluczy i18n | **13544** | ↑ |
+| 🔑 Kluczy i18n | **13559** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#111** | - |
+| 🔄 Cykl | **#1** | - |
 
 ---
 
@@ -41,7 +41,7 @@
 |-----------|--------|--------|-----|
 | 🧙 NPC Dialogs | 🔄 | 5270/15000 (35%) | 15000 |
 | 📜 Lua Scripts | 🔄 | 385/1000 (38%) | 1000 |
-| 🎒 Items Database | 🔄 | 3605/40000 (9%) | 40000 |
+| 🎒 Items Database | 🔄 | 3620/40000 (9%) | 40000 |
 | 👹 Monsters | 🔄 | 4158/5000 (83%) | 5000 |
 | ✨ Spells & Magic | 🔄 | 15/200 (8%) | 200 |
 | ⚙️ Server C++ | ⏳ | 0/300 (0%) | 300 |
@@ -76,7 +76,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   111 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (8 etapów)                     │
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 21:40:03                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 21:41:03                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -100,9 +100,9 @@
 |---------|---------|-----------|
 | 📁 Plików przetworzonych | **26** | z i18n_file_status.json |
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **13544** | we wszystkich kategoriach |
+| 🔑 Kluczy wyciągniętych | **13559** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
-| 🔄 Cykli wykonanych | **#111** | continuous mode |
+| 🔄 Cykli wykonanych | **#1** | continuous mode |
 | ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -137,7 +137,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 3605 |
+| 🔑 Kluczy | 3620 |
 | 🎯 Cel | 40000 |
 | 📊 Postęp | 9% |
 | 📁 Plik | i18n/en/items.json |
@@ -269,11 +269,47 @@
 
 ---
 
+## 📊 Wszystkie Kategorie JSON (Dynamiczne)
+
+| Kategoria | Kluczy | Przetworzono | Seria zer | Status |
+|-----------|--------|--------------|-----------|--------|
+| npc | 5270 | 0 | 0 | ✅ Active |
+| monsters | 4158 | 0 | 2 | ⏭️ Skip 0m |
+| items | 3620 | 1560 | 0 | ✅ Active |
+| scripts | 385 | 0 | 4 | ⏭️ Skip 55m |
+| html | 39 | 0 | 0 | ✅ Active |
+| raids | 30 | 0 | 2 | ⏭️ Skip 0m |
+| cpp | 15 | 0 | 0 | ✅ Active |
+| spells | 15 | 0 | 0 | ✅ Active |
+| messages | 11 | 0 | 0 | ✅ Active |
+| php | 8 | 0 | 0 | ✅ Active |
+| startup | 8 | 0 | 0 | ✅ Active |
+| actions | 0 | 0 | 0 | ⏳ Empty |
+| errors | 0 | 0 | 0 | ⏳ Empty |
+| events | 0 | 0 | 0 | ⏳ Empty |
+| quests | 0 | 0 | 0 | ⏳ Empty |
+| server | 0 | 0 | 0 | ⏳ Empty |
+| ui | 0 | 0 | 0 | ⏳ Empty |
+| world | 0 | 0 | 2 | ⏭️ Skip 0m |
+
+---
+
+## 🤖 Worker Category State
+
+| Kategoria | Skip pozostało | Seria zer | Powód |
+|-----------|----------------|-----------|-------|
+| scripts | 55m | 4x | Progresywny backoff |
+| monsters | 0m | 2x | Progresywny backoff |
+| raids | 0m | 2x | Progresywny backoff |
+| world | 0m | 2x | Progresywny backoff |
+
+---
+
 ## 🔧 Worker & Guardian Status
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #111 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #{cycle_count} |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -281,36 +317,27 @@
 ## 🗺️ Roadmap
 
 ```
-[🔄] Items (3605)      █░░░░░░░░░░░░░░░░░░░  9%
-[🔄] NPC (5270)            ███████░░░░░░░░░░░░░  35%
-[🔄] Scripts (385)      ███████░░░░░░░░░░░░░  38%
-[🔄] Monsters (4158)    ████████████████░░░░  83%
-[🔄] Spells (15)       █░░░░░░░░░░░░░░░░░░░  8%
-[⏳] Server (0)       ░░░░░░░░░░░░░░░░░░░░  0%
-[⏳] System (0)       ░░░░░░░░░░░░░░░░░░░░  0%
-[⏳] UI (0)             ░░░░░░░░░░░░░░░░░░░░  0%
+[{status_icon(items_keys, TARGETS["items"])}] Items ({items_keys})      {progress_bar(items_keys, TARGETS["items"])}  {round(items_keys/TARGETS["items"]*100) if TARGETS["items"] else 0}%
+[{status_icon(npc_keys, TARGETS["npc"])}] NPC ({npc_keys})            {progress_bar(npc_keys, TARGETS["npc"])}  {round(npc_keys/TARGETS["npc"]*100) if TARGETS["npc"] else 0}%
+[{status_icon(scripts_keys, TARGETS["scripts"])}] Scripts ({scripts_keys})      {progress_bar(scripts_keys, TARGETS["scripts"])}  {round(scripts_keys/TARGETS["scripts"]*100) if TARGETS["scripts"] else 0}%
+[{status_icon(monsters_keys, TARGETS["monsters"])}] Monsters ({monsters_keys})    {progress_bar(monsters_keys, TARGETS["monsters"])}  {round(monsters_keys/TARGETS["monsters"]*100) if TARGETS["monsters"] else 0}%
+[{status_icon(spells_keys, TARGETS["spells"])}] Spells ({spells_keys})       {progress_bar(spells_keys, TARGETS["spells"])}  {round(spells_keys/TARGETS["spells"]*100) if TARGETS["spells"] else 0}%
+[{status_icon(server_keys, TARGETS["server"])}] Server ({server_keys})       {progress_bar(server_keys, TARGETS["server"])}  {round(server_keys/TARGETS["server"]*100) if TARGETS["server"] else 0}%
+[{status_icon(system_keys, TARGETS["system"])}] System ({system_keys})       {progress_bar(system_keys, TARGETS["system"])}  {round(system_keys/TARGETS["system"]*100) if TARGETS["system"] else 0}%
+[{status_icon(ui_keys, TARGETS["ui"])}] UI ({ui_keys})             {progress_bar(ui_keys, TARGETS["ui"])}  {round(ui_keys/TARGETS["ui"]*100) if TARGETS["ui"] else 0}%
 ```
 
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 21:40:03  
+📅 Auto-updated by Worker v1.1 | Last: {timestamp}  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `the_lootmonger` - ukończono 2025-12-10 21:25
-- ✅ `tandros` - ukończono 2025-12-10 21:25
-- ✅ `sundara` - ukończono 2025-12-10 21:25
-- ✅ `sigurd` - ukończono 2025-12-10 21:25
-- ✅ `shiriel` - ukończono 2025-12-10 21:25
-- ✅ `seymour` - ukończono 2025-12-10 21:25
-- ✅ `romir` - ukończono 2025-12-10 21:25
-- ✅ `rock_in_a_hard_place` - ukończono 2025-12-10 21:25
-- ✅ `nipuna` - ukończono 2025-12-10 21:25
-- ✅ `nelly` - ukończono 2025-12-10 21:25
+{chr(10).join(recent_completed) if recent_completed else "- Brak"}
 
 ---
 

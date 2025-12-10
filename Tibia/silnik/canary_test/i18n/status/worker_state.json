@@ -1,23 +1,23 @@
 {
   "schema_version": "2.1",
-  "last_updated": "2025-12-10T04:05:41+01:00",
+  "last_updated": "2025-12-10T04:08:50+01:00",
   "worker": {
     "version": "4.2",
     "status": "running",
-    "mode": "analysis",
-    "cycle": 2,
+    "mode": "extraction",
+    "cycle": 3,
     "files_per_cycle": 10,
     "pid": 116373
   },
   "global_progress": {
-    "total_files_processed": 578,
-    "total_files_excluded": 5089,
-    "total_keys": 52190,
+    "total_files_processed": 599,
+    "total_files_excluded": 4715,
+    "total_keys": 52610,
     "total_languages": 53,
     "total_conflicts": 50
   },
   "categories": {
-    "npc": {"status": "completed", "keys": 11991, "target": 13000},
+    "npc": {"status": "completed", "keys": 12411, "target": 13000},
     "scripts": {"status": "in_progress", "keys": 713, "target": 1000},
     "items": {"status": "completed", "keys": 36972, "target": 40000},
     "monsters": {"status": "in_progress", "keys": 100, "target": 500},
@@ -31,28 +31,28 @@
   },
   "recent_files": [
   {
-    "file": "game_questlog.html",
-    "time": "04:05:41",
+    "file": "ziyad.lua",
+    "time": "04:08:50",
     "status": "success"
   },
   {
-    "file": "#displayUIPickReward.html",
-    "time": "04:05:41",
+    "file": "norf.lua",
+    "time": "04:08:50",
     "status": "success"
   },
   {
-    "file": "game_rewardwall.html",
-    "time": "04:05:41",
+    "file": "kawill.lua",
+    "time": "04:08:50",
     "status": "success"
   },
   {
-    "file": "status.php",
-    "time": "04:05:41",
+    "file": "dallheim.lua",
+    "time": "04:08:50",
     "status": "success"
   },
   {
-    "file": "updater.php",
-    "time": "04:05:41",
+    "file": "lily.lua",
+    "time": "04:08:50",
     "status": "success"
   }
 ]

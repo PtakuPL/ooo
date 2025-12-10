@@ -1179,6 +1179,7 @@ migrate_lua_file() {
     
     local temp_file=$(mktemp)
     local transformed=0
+    local extracted=0  # Licznik wyekstrahowanych kluczy (nawet bez zmiany kodu)
     local key_counter=1
     local json_file="$I18N_DIR/en/${category}.json"
     
@@ -1250,8 +1251,8 @@ d['$key']='''$text'''
 json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
 " 2>/dev/null
                     
-                    transformed=$((transformed + 1))
-                    log_info "      📝 StdModule (ręczna migracja): $key"
+                    extracted=$((extracted + 1))
+                    log_info "      📝 StdModule (ekstrakcja): $key"
                 fi
             fi
         fi
@@ -1285,6 +1286,7 @@ json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
     done < "$file"
     
     if [ "$transformed" -gt 0 ]; then
+        # Kod został zmieniony - nadpisz plik
         mv "$temp_file" "$file"
         rm -f "${file}.bak"
         log_success "   ✅ Zmigrowano $transformed stringów (API: NPC_LIB.i18n/sendLocalizedTextMessage)"
@@ -1294,6 +1296,17 @@ json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
         
         TOTAL_FILES_PROCESSED=$((TOTAL_FILES_PROCESSED + 1))
         TOTAL_STRINGS_FOUND=$((TOTAL_STRINGS_FOUND + transformed))
+        return 0
+    elif [ "$extracted" -gt 0 ]; then
+        # Klucze wyekstrahowane ale kod nie zmieniony (np. StdModule.say)
+        rm -f "$temp_file" "${file}.bak"
+        log_success "   ✅ Wyekstrahowano $extracted kluczy (kod bez zmian - StdModule.say)"
+        
+        mark_processed "$file"
+        document "EKSTRAKCJA LUA" "$relative_path" "Wyekstrahowano $extracted kluczy" "Kategoria: $category"
+        
+        TOTAL_FILES_PROCESSED=$((TOTAL_FILES_PROCESSED + 1))
+        TOTAL_STRINGS_FOUND=$((TOTAL_STRINGS_FOUND + extracted))
         return 0
     else
         rm -f "$temp_file" "${file}.bak"

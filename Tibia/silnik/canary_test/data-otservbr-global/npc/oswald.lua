@@ -93,26 +93,26 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "invitation") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission03) == 1 then
-			npcHandler:say("What? So why in the world should I give you an invitation? It's not as if you were someone important, are you?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oswald.say_33")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Well, rich and generous people are always welcome in the palace.If you donate 1000 gold to a fund I oversee, I'll give you an invitation, ok?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oswald.say_34")
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:removeMoneyBank(1000) then
 				player:addItem(7933, 1)
 				player:setStorageValue(Storage.Quest.U8_2.TheThievesGuildQuest.Mission03, 2)
-				npcHandler:say("Excellent! Here is your invitation!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oswald.say_35")
 			else
-				npcHandler:say("You don't have enough money.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oswald.say_36")
 			end
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "gold") then
 		if npcHandler:getTopic(playerId) == 1 then
-			npcHandler:say("Not that I am bribeable but I doubt that you own 1000 gold pieces. Or do you?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oswald.say_37")
 			npcHandler:setTopic(playerId, 2)
 		end
 	end

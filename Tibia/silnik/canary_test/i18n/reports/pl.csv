@@ -49625,6 +49625,288 @@ npc.lily.stdmod_59,Seymour is a teacher running the {academy}. He has many impor
 npc.lily.stdmod_60,He's the local tanner. You could try selling fresh corpses or leather to him.,,missing
 npc.lily.stdmod_61,He is a great warrior. He can also tell you much about {monsters} and {dungeons} on this island.,,missing
 npc.lily.stdmod_62,He's a farmer and sells {food}. Food will help you regain health when you are injured. Many {monsters} also carry food with them.,,missing
+npc.tyrias.stdmod_1,Fine. You are free to decline my offer.,,missing
+npc.tyrias.stdmod_2,Keep your adventurer's stone well.,,missing
+npc.tyrias.stdmod_3,"Ah, you want to replace your adventurer's stone for free?",,missing
+npc.tyrias.stdmod_4,Here you are. Take care.,,missing
+npc.tyrias.stdmod_5,No problem.,,missing
+npc.tyrias.stdmod_6,"Ah, you want to replace your adventurer's stone for 30 gold?",,missing
+npc.tyrias.stdmod_7,Here you are. Take care.,,missing
+npc.tyrias.stdmod_8,"Sorry, you don't have enough money.",,missing
+npc.tyrias.stdmod_9,No problem.,,missing
+npc.tyrias.stdmod_10,You don't even have that strange stake with you.,,missing
+npc.tyrias.stdmod_11,"Brewster sent me a strange message about some strange hocus-pocus. I think it's nonsense, but since you have come that far, I'll play along. Are you ready?",,missing
+npc.tyrias.stdmod_12,"So receive my prayer: 'Your mind shall be a vessel for joy, light and wisdom' - uh, wow, something happened. Well, I guess that's it, but next time if you need some mumbo jumbo rather go to Chondur.",,missing
+npc.tyrias.stdmod_13,You don't even have that strange stake with you.,,missing
+npc.tyrias.stdmod_14,"No problem, I have other things to do.",,missing
+npc.tyrias.stdmod_15,"A blessed stake? I don't believe in things like that. If anyone does, it's probably old Quentin.",,missing
+npc.tyrias.stdmod_16,I won't do that rubbish again. Go pester Chondur with your hocus-pocus.,,missing
+npc.tyrias.stdmod_17,"You are hurt, my child. I will heal your wounds.",,missing
+npc.tyrias.stdmod_18,"You aren't looking that bad. Sorry, I can't help you. But if you are looking for additional protection you should go on the {pilgrimage} of ashes or get the protection of the {twist of fate} here.",,missing
+npc.tyrias.stdmod_19,"Whenever you receive a lethal wound, your vital force is damaged and there is a chance that you lose some of your equipment. With every single of the five {blessings} you have, this damage and chance of loss will be reduced.",,missing
+npc.tyrias.stdmod_20,"There are five blessings available in five sacred places: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. Additionally, you can receive the {twist of fate} here.",,missing
+npc.tyrias.stdmod_21,I see you received the spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.tyrias.stdmod_22,I can sense that the druids north of Carlin have provided you with the Embrace of Tibia.,,missing
+npc.tyrias.stdmod_23,I can see you received the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.tyrias.stdmod_24,I can sense that the spark of the phoenix already was given to you by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.tyrias.stdmod_25,I can sense you already talked to the hermit Eremo on the isle of Cormaya and received this blessing.,,missing
+npc.tyrias.stdmod_26,You can ask for the blessing of spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.tyrias.stdmod_27,The druids north of Carlin will provide you with the embrace of Tibia.,,missing
+npc.tyrias.stdmod_28,You can ask for the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.tyrias.stdmod_29,The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.tyrias.stdmod_30,Talk to the hermit Eremo on the isle of Cormaya about this blessing.,,missing
+npc.cedrik.stdmod_1,Fine. You are free to decline my offer.,,missing
+npc.cedrik.stdmod_2,Keep your adventurer's stone well.,,missing
+npc.cedrik.stdmod_3,"Ah, you want to replace your adventurer's stone for free?",,missing
+npc.cedrik.stdmod_4,Here you are. Take care.,,missing
+npc.cedrik.stdmod_5,No problem.,,missing
+npc.cedrik.stdmod_6,"Ah, you want to replace your adventurer's stone for 30 gold?",,missing
+npc.cedrik.stdmod_7,Here you are. Take care.,,missing
+npc.cedrik.stdmod_8,"Sorry, you don't have enough money.",,missing
+npc.cedrik.stdmod_9,No problem.,,missing
+npc.cedrik.stdmod_10,"You are hurt, my child. I will heal your wounds.",,missing
+npc.cedrik.stdmod_11,"You aren't looking that bad. Sorry, I can't help you. But if you are looking for additional protection you should go on the {pilgrimage} of ashes or get the protection of the {twist of fate} here.",,missing
+npc.cedrik.stdmod_12,"Whenever you receive a lethal wound, your vital force is damaged and there is a chance that you lose some of your equipment. With every single of the five {blessings} you have, this damage and chance of loss will be reduced.",,missing
+npc.cedrik.stdmod_13,"There are five blessings available in five sacred places: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. Additionally, you can receive the {twist of fate} here.",,missing
+npc.cedrik.stdmod_14,I see you received the spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.cedrik.stdmod_15,I can sense that the druids north of Carlin have provided you with the Embrace of Tibia.,,missing
+npc.cedrik.stdmod_16,I can see you received the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.cedrik.stdmod_17,I can sense that the spark of the phoenix already was given to you by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.cedrik.stdmod_18,I can sense you already talked to the hermit Eremo on the isle of Cormaya and received this blessing.,,missing
+npc.cedrik.stdmod_19,You can ask for the blessing of spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.cedrik.stdmod_20,The druids north of Carlin will provide you with the embrace of Tibia.,,missing
+npc.cedrik.stdmod_21,You can ask for the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.cedrik.stdmod_22,The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.cedrik.stdmod_23,Talk to the hermit Eremo on the isle of Cormaya about this blessing.,,missing
+npc.lee_delle.stdmod_1,My name is Lee'Delle.,,missing
+npc.lee_delle.stdmod_2,"I'm a merchant. If you like to see my offers, just ask me for a {trade}.",,missing
+npc.lee_delle.stdmod_3,It's about |TIME|.,,missing
+npc.lee_delle.stdmod_4,"Well, it's a good idea to leave most of your money in the bank and only take what you need. That way your gold is safe.",,missing
+npc.lee_delle.stdmod_5,"Oh no! I've got to watch what I eat. {Lily} loves cookies, though.",,missing
+npc.lee_delle.stdmod_6,There are many merchants in this village. Just ask them for a {trade} to see their offers. But I can promise you - my offers are the best around!,,missing
+npc.lee_delle.stdmod_7,I'm fine. I'm delighted to welcome you as my customer.,,missing
+npc.lee_delle.stdmod_8,"What kind of information do you need? I could tell you about different topics such as {equipment}, {monsters} or {Rookgaard} in general.",,missing
+npc.lee_delle.stdmod_9,How can I help you? Would you like to {trade} with me? I can also give you general {hints}. Or just ask me anything you'd like to know.,,missing
+npc.lee_delle.stdmod_10,"You should really take some time and travel around the marvellous areas of Tibia. There's everything - ice islands, deserts, jungles and mountains!",,missing
+npc.lee_delle.stdmod_11,The temple is the place to go when you are very low on {health} or poisoned. Ask {Cipfried} for a heal - he usually notices emergencies by himself.,,missing
+npc.lee_delle.stdmod_12,"Health potions will heal you for about 75 hit points. It can't hurt to carry one with you, just in case.",,missing
+npc.lee_delle.stdmod_13,"Well, very important equipment would be a {backpack}, a {rope}, a {shovel}, a {weapon}, an {armor} and a {shield}. Maybe also a torch if you're heading into a dark {dungeon}.",,missing
+npc.lee_delle.stdmod_14,I sell fishing rods and worms in case you want to go fishing. Simply ask me for a {trade}.,,missing
+npc.lee_delle.stdmod_15,You could check out which weapons I offer by asking me for a {trade}. Don't be shy!,,missing
+npc.lee_delle.stdmod_16,"Oh, I'm sorry, that's one of the things I don't have for sale. But {Willie} or {Billy} surely have something to eat for you.",,missing
+npc.lee_delle.stdmod_17,The king supports our little village very much!,,missing
+npc.lee_delle.stdmod_18,In the academy you can get a lot of information from books. You can also try out a few things by yourself.,,missing
+npc.lee_delle.stdmod_19,Isn't it lovely here? You'll be surprised once you reach the {mainland} -  so much to explore!,,missing
+npc.lee_delle.stdmod_20,"Well, the mainland also consists of several continents. You can go there once you've reached level 8 and talked to the {oracle}.",,missing
+npc.lee_delle.stdmod_21,Good monsters to start with are rats. They live in the {sewers} under the village of {Rookgaard}.,,missing
+npc.lee_delle.stdmod_22,Just ask me for a {trade} to see what I buy from you.,,missing
+npc.lee_delle.stdmod_23,Be careful down there! Make sure you bought enough {torches} and a {rope} or you might get lost.,,missing
+npc.lee_delle.stdmod_24,"There are many sewer entrances throughout Rookgaard. If you want to know more details about monsters and dungeons, best talk to one of the guards.",,missing
+npc.lee_delle.stdmod_25,"Just ask me for a {trade} to see my offers. Apart from that, I also sell {footballs}.",,missing
+npc.lee_delle.stdmod_26,"I really love flowers. My favourites are {honey flowers}. Sadly, they are very rare on this isle. If you can find one for me, I'll give you a little reward.",,missing
+npc.lee_delle.stdmod_27,You could check out which armors or shields I offer by asking me for a {trade}. Don't be shy!,,missing
+npc.lee_delle.stdmod_28,"Yes, I'm selling that. Simply ask me for a {trade} to view all my offers.",,missing
+npc.lee_delle.stdmod_29,"Well, no gold, no deal. Earn gold by fighting {monsters} and picking up the things they carry. Sell it to {merchants} to make profit!",,missing
+npc.lee_delle.stdmod_30,"He sells {weapons}. However, I can offer you better deals than him!",,missing
+npc.lee_delle.stdmod_31,I'm glad she stopped selling stuff. There was too much of a competition going on!,,missing
+npc.lee_delle.stdmod_32,"Sometimes, I see him walking outside the village near some hole.",,missing
+npc.lee_delle.stdmod_33,He dedicated his life to welcome newcomers to this island.,,missing
+npc.lee_delle.stdmod_34,"Poor old woman, her son {Tom} never visits her.",,missing
+npc.lee_delle.stdmod_35,Al Dee has a general {equipment} store in the north-western part of the village.,,missing
+npc.lee_delle.stdmod_36,She lives under the {academy}. Always nice to chat with her!,,missing
+npc.lee_delle.stdmod_37,"He's a local farmer. If you need fresh {food} to regain health, it's a good place to go. He's only trading with premium adventurers, though.",,missing
+npc.lee_delle.stdmod_38,"He's a local farmer. If you need fresh {food} to regain your health, it's a good place to go. However, many monsters carry also food such as meat. Or you could simply pick {blueberries}.",,missing
+npc.lee_delle.stdmod_39,Visiting Cipfried in the {temple} is a good idea if you are injured or poisoned. He can heal you.,,missing
+npc.lee_delle.stdmod_40,"She's {Obi's} granddaughter and deals with {armors} and {shields}, just as I do.",,missing
+npc.lee_delle.stdmod_41,He mostly stays by himself. He's a hermit outside of town - good luck finding him.,,missing
+npc.lee_delle.stdmod_42,She buys all {blueberries} and {cookies} you can find.,,missing
+npc.lee_delle.stdmod_43,"You can find the oracle on the top floor of the {academy}, just above {Seymour}. Go there when you are level 8 to reach more areas of {Tibia}.",,missing
+npc.lee_delle.stdmod_44,"He is the {bank} clerk, just below the academy.",,missing
+npc.lee_delle.stdmod_45,Seymour is a teacher running the {academy}. He has a lot of important {information} about Tibia.,,missing
+npc.lee_delle.stdmod_46,He's the local tanner. You could try selling fresh corpses or leather to him.,,missing
+npc.lee_delle.stdmod_47,He is a great warrior and our protector.,,missing
+npc.lee_delle.stdmod_48,Do you want to buy a football for 111 gold?,,missing
+npc.lee_delle.stdmod_49,Here you go.,,missing
+npc.lee_delle.stdmod_50,You don't have enough money.,,missing
+npc.lee_delle.stdmod_51,"Oh, but it's fun to play!",,missing
+npc.lee_delle.stdmod_52,"Oh, thank you so much! Please take this piece of armor as reward.",,missing
+npc.lee_delle.stdmod_53,Honey flowers are my favourites <sighs>.,,missing
+npc.ferryman_kamil_meluna.stdmod_1,You want me to transport you and your spouse back to {Fibula}?,,missing
+npc.ferryman_kamil_meluna.stdmod_2,You shouldn't miss the experience.,,missing
+npc.lector.stdmod_1,"I can offer you ham or meat. If you'd like to check the quality of my wares, ask me for a {trade}.",,missing
+npc.humphrey.stdmod_1,"Would you like to receive that protection for a sacrifice of |BLESSCOST| gold, child?",,missing
+npc.humphrey.stdmod_2,Fine. You are free to decline my offer.,,missing
+npc.humphrey.stdmod_3,"You are hurt, my child. I will heal your wounds.",,missing
+npc.humphrey.stdmod_4,"You aren't looking that bad. Sorry, I can't help you. But if you are looking for additional protection you should go on the {pilgrimage} of ashes or get the protection of the {twist of fate} here.",,missing
+npc.humphrey.stdmod_5,"Whenever you receive a lethal wound, your vital force is damaged and there is a chance that you lose some of your equipment. With every single of the five {blessings} you have, this damage and chance of loss will be reduced.",,missing
+npc.humphrey.stdmod_6,"There are five blessings available in five sacred places: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. Additionally, you can receive the {twist of fate} here.",,missing
+npc.humphrey.stdmod_7,I see you received the spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.humphrey.stdmod_8,I can see you received the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.humphrey.stdmod_9,I can sense that the spark of the phoenix already was given to you by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.humphrey.stdmod_10,I can sense you already talked to the hermit Eremo on the isle of Cormaya and received this blessing.,,missing
+npc.humphrey.stdmod_11,You can ask for the blessing of spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.humphrey.stdmod_12,You can ask for the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.humphrey.stdmod_13,The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.humphrey.stdmod_14,Talk to the hermit Eremo on the isle of Cormaya about this blessing.,,missing
+npc.anerui.stdmod_1,I am the mistress of the hunt. At this place you may buy the food our hunts provide.,,missing
+npc.anerui.stdmod_2,"Hunting is an art, practiced too often by diletantes. Every fool with a bow or a spear considers himself a hunter.",,missing
+npc.anerui.stdmod_3,"Bow, arrow, and spear are the hunters' best friends. In the northeast of the town one of us may sell such tools.",,missing
+npc.anerui.stdmod_4,"Hunters live a life of freedom and closeness to nature, unlike a simple farmer or bugherder.",,missing
+npc.anerui.stdmod_5,"Nature is not a friend but an unforgiving teacher, and the lessons we have to learn are endless.",,missing
+npc.anerui.stdmod_6,"Watch the sky, it will tell you.",,missing
+npc.anerui.stdmod_7,I guess it's a human god for the human sight of nature. I have not much knowledge of this entity.,,missing
+npc.anerui.stdmod_8,If they ever existed they are gone now.,,missing
+npc.anerui.stdmod_9,The Kuridai are too agressive not only to people but also to the enviroment. They lack any understanding of the balance that we know as nature.,,missing
+npc.anerui.stdmod_10,"The balance of nature, of course. It's everywhere, so don't ask but observe and learn.",,missing
+npc.anerui.stdmod_11,"We try to live in harmony with the forces of nature, may they be living or unliving.",,missing
+npc.anerui.stdmod_12,The humans are a loud and ugly race. They lack any grace and are more kin to the orcs then to us.,,missing
+npc.anerui.stdmod_13,Life and death are significant parts of the balance.,,missing
+npc.anerui.stdmod_14,Life and death are significant parts of the balance.,,missing
+npc.anerui.stdmod_15,"I despise their presence in our town, but it may be a necessary evil.",,missing
+npc.anerui.stdmod_16,That is the race to which I belong.,,missing
+npc.anerui.stdmod_17,The magic they wield is all that matters to them.,,missing
+npc.old_adall.stdmod_1,Do you seek a passage to the ,,missing
+npc.old_adall.stdmod_2,Maybe another time.,,missing
+npc.old_adall.stdmod_3,"I can bring you either to the east end of Port Hope or to the west end of the town, where would you like to go?",,missing
+npc.nydala.stdmod_1,"Well, as you can see, I sell furniture. Ask me for a {trade} if you're interested to see my wares.",,missing
+npc.nydala.stdmod_2,My name is Nydala. I run this store.,,missing
+npc.nydala.stdmod_3,It is |TIME|. Do you need a clock for your house?,,missing
+npc.oswald.stdmod_1,"I think the gods are too busy to care about us mortals, hmm... that makes me feel godlike, too.",,missing
+npc.oswald.stdmod_2,"I am honored to be the assistant of the great, the illustrious, the magnificent {Durin}!",,missing
+npc.oswald.stdmod_3,"I am honored to be the assistant of the great, the illustrious, the magnificent {Durin}!",,missing
+npc.oswald.stdmod_4,"I have a job of great responsibility, mostly I keep annoying persons away from my boss.",,missing
+npc.oswald.stdmod_5,"You better don't ask, you wouldn't like the answer.",,missing
+npc.oswald.stdmod_6,"Ah, yes, yes, hail to King {Tibianus}! Long live the king and so on...",,missing
+npc.oswald.stdmod_7,"I overheard a conversation of officials, that magic will be forbidden soon.",,missing
+npc.oswald.stdmod_8,"My name is Oswald, but let's proceed, I am a very busy man.",,missing
+npc.oswald.stdmod_9,"Hey, I am not a shopkeeper, I am an important man!",,missing
+npc.oswald.stdmod_10,"It is nearly tea time, so please hurry!",,missing
+npc.oswald.stdmod_11,"It's rumoured that Sam does not forge all weapons himself, but buys them from his cousin, who is married to a cyclops.",,missing
+npc.oswald.stdmod_12, If you want to see dungeons just don't pay your taxes.,,missing
+npc.oswald.stdmod_13,It's beyond all doubt that certain sinister elements in our city have certain knowledge about this myth.,,missing
+npc.oswald.stdmod_14,You are not the first one to ask about that. Am I the only one that preferes wine to such disgusting stuff?,,missing
+npc.oswald.stdmod_15,What do you expect from ex-soldiers? He is nuts! Hacked on the head far too often.,,missing
+npc.oswald.stdmod_16,Isn't he the artist formerly known as the prince?,,missing
+npc.oswald.stdmod_17,"I never found any rumour concerning him, isn't that odd?",,missing
+npc.oswald.stdmod_18,They say she killed over a dozen husbands already.,,missing
+npc.oswald.stdmod_19,This man lives in the darkness like a rat and is also as handsome as one of them. He surely is up to no good and often consorts with sinister strangers.,,missing
+npc.oswald.stdmod_20,"Just last week a one eyed man, who had a room at Frodo's, met him in the middle of the night.",,missing
+npc.oswald.stdmod_21,He sells his scrolls far too expensive.,,missing
+npc.oswald.stdmod_22,I was told he lost a body part or two in duels... if you know what I mean.,,missing
+npc.oswald.stdmod_23,He is rumoured to summon kinky demons to... well you know.,,missing
+npc.oswald.stdmod_24,You know a rumour? TELL ME! TELL ME! TELL ME!,,missing
+npc.oswald.stdmod_25,Fascinating! Absolutely fascinating!,,missing
+npc.oswald.stdmod_26,I heard he was a ladies' man in younger days. In our days he is rumoured to wear women clothes now and then.,,missing
+npc.oswald.stdmod_27,A simple shopkeeper with minor intelligence.,,missing
+npc.oswald.stdmod_28,They say he isn't truly dead. He was... or is a necromant after all.,,missing
+npc.oswald.stdmod_29, Some say he is Ferumbras in disguise.,,missing
+npc.oswald.stdmod_30,What a shame. He claimed to be the king of thiefs and was caught stealing some fruit.,,missing
+npc.oswald.stdmod_31,"Just between you and me, he can be quite a tyrant.",,missing
+npc.oswald.stdmod_32,AHHHH!!! WHERE??? WHERE???,,missing
+npc.oswald.say_33,"What? So why in the world should I give you an invitation? It's not as if you were someone important, are you?",,missing
+npc.oswald.say_34,"Well, rich and generous people are always welcome in the palace.If you donate 1000 gold to a fund I oversee, I'll give you an invitation, ok?",,missing
+npc.oswald.say_35,Excellent! Here is your invitation!,,missing
+npc.oswald.say_36,You don't have enough money.,,missing
+npc.oswald.say_37,Not that I am bribeable but I doubt that you own 1000 gold pieces. Or do you?,,missing
+npc.carlson.stdmod_1,Do you want to sail ,,missing
+npc.carlson.stdmod_2,We would like to serve you some time.,,missing
+npc.carlson.stdmod_3,"Where do you want to go? To {Folda}, {Senja} or {Tibia}?",,missing
+npc.buddel_okolnir.stdmod_1,"No, no, no, you even are no barb....barba...er.. one of us!!!! Talk to the Jarl first!",,missing
+npc.buddel_okolnir.stdmod_2,"Ohh, you got a nice ring there! Ya don't have to pay if you gimme the ring and I promise you I will bring you to the correct spot!*HICKS* Alright?",,missing
+npc.buddel_okolnir.stdmod_3,Give me 50 gold and I bring you to ,,missing
+npc.buddel_okolnir.stdmod_4,You shouldn't miss the experience.,,missing
+npc.buddel_okolnir.stdmod_5,You shouldn't miss the experience.,,missing
+npc.buddel_okolnir.stdmod_6,Where are we at the moment? Is this Svargrond? Ahh yes!*HICKS* Where do you want to go?,,missing
+npc.junkar_mines.stdmod_1,"Well, then you stay here, simple as that.",,missing
+npc.junkar_mines.stdmod_2,"Where do you want me to take you? To {Kazordoon}, {Thais} or to {Robsons Isle}?",,missing
+npc.lorietta.stdmod_1,Fine. You are free to decline my offer.,,missing
+npc.lorietta.stdmod_2,Keep your adventurer's stone well.,,missing
+npc.lorietta.stdmod_3,"Ah, you want to replace your adventurer's stone for free?",,missing
+npc.lorietta.stdmod_4,Here you are. Take care.,,missing
+npc.lorietta.stdmod_5,No problem.,,missing
+npc.lorietta.stdmod_6,"Ah, you want to replace your adventurer's stone for 30 gold?",,missing
+npc.lorietta.stdmod_7,Here you are. Take care.,,missing
+npc.lorietta.stdmod_8,"Sorry, you don't have enough money.",,missing
+npc.lorietta.stdmod_9,No problem.,,missing
+npc.lorietta.stdmod_10,"You are hurt, my child. I will heal your wounds.",,missing
+npc.lorietta.stdmod_11,"You aren't looking that bad. Sorry, I can't help you. But if you are looking for additional protection you should go on the {pilgrimage} of ashes or get the protection of the {twist of fate} here.",,missing
+npc.lorietta.stdmod_12,"Whenever you receive a lethal wound, your vital force is damaged and there is a chance that you lose some of your equipment. With every single of the five {blessings} you have, this damage and chance of loss will be reduced.",,missing
+npc.lorietta.stdmod_13,"There are five blessings available in five sacred places: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. Additionally, you can receive the {twist of fate} here.",,missing
+npc.lorietta.stdmod_14,I see you received the spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.lorietta.stdmod_15,I can sense that the druids north of Carlin have provided you with the Embrace of Tibia.,,missing
+npc.lorietta.stdmod_16,I can see you received the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.lorietta.stdmod_17,I can sense that the spark of the phoenix already was given to you by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.lorietta.stdmod_18,I can sense you already talked to the hermit Eremo on the isle of Cormaya and received this blessing.,,missing
+npc.lorietta.stdmod_19,You can ask for the blessing of spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.lorietta.stdmod_20,The druids north of Carlin will provide you with the embrace of Tibia.,,missing
+npc.lorietta.stdmod_21,You can ask for the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.lorietta.stdmod_22,The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.lorietta.stdmod_23,Talk to the hermit Eremo on the isle of Cormaya about this blessing.,,missing
+npc.a_ghostly_sage.stdmod_1,You will now be travelled out of here. Are you sure that you want to face that teleport?,,missing
+npc.a_ghostly_sage.stdmod_2,Then stay here in these ghostly halls.,,missing
+npc.a_ghostly_sage.stdmod_3,I can offer you a {teleport}.,,missing
+npc.a_ghostly_sage.stdmod_4,Dont mind me.,,missing
+npc.alia.stdmod_1,Fine. You are free to decline my offer.,,missing
+npc.alia.stdmod_2,Keep your adventurer's stone well.,,missing
+npc.alia.stdmod_3,"Ah, you want to replace your adventurer's stone for free?",,missing
+npc.alia.stdmod_4,Here you are. Take care.,,missing
+npc.alia.stdmod_5,No problem.,,missing
+npc.alia.stdmod_6,"Ah, you want to replace your adventurer's stone for 30 gold?",,missing
+npc.alia.stdmod_7,Here you are. Take care.,,missing
+npc.alia.stdmod_8,"Sorry, you don't have enough money.",,missing
+npc.alia.stdmod_9,No problem.,,missing
+npc.alia.stdmod_10,"You are hurt, my child. I will heal your wounds.",,missing
+npc.alia.stdmod_11,"You aren't looking that bad. Sorry, I can't help you. But if you are looking for additional protection you should go on the {pilgrimage} of ashes or get the protection of the {twist of fate} here.",,missing
+npc.alia.stdmod_12,"Whenever you receive a lethal wound, your vital force is damaged and there is a chance that you lose some of your equipment. With every single of the five {blessings} you have, this damage and chance of loss will be reduced.",,missing
+npc.alia.stdmod_13,"There are five blessings available in five sacred places: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. Additionally, you can receive the {twist of fate} here.",,missing
+npc.alia.stdmod_14,I see you received the spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.alia.stdmod_15,I can sense that the druids north of Carlin have provided you with the Embrace of Tibia.,,missing
+npc.alia.stdmod_16,I can see you received the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.alia.stdmod_17,I can sense that the spark of the phoenix already was given to you by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.alia.stdmod_18,I can sense you already talked to the hermit Eremo on the isle of Cormaya and received this blessing.,,missing
+npc.alia.stdmod_19,You can ask for the blessing of spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.alia.stdmod_20,The druids north of Carlin will provide you with the embrace of Tibia.,,missing
+npc.alia.stdmod_21,You can ask for the blessing of the two suns in the suntower near Ab'Dendriel.,,missing
+npc.alia.stdmod_22,The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.alia.stdmod_23,Talk to the hermit Eremo on the isle of Cormaya about this blessing.,,missing
+npc.captain_harava.stdmod_1,I'm sorry but I don't sail there.,,missing
+npc.captain_harava.stdmod_2,Do you seek a passage to ,,missing
+npc.captain_harava.stdmod_3,We would like to serve you some time.,,missing
+npc.captain_harava.stdmod_4,"I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",,missing
+npc.captain_harava.stdmod_5,"I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",,missing
+npc.captain_harava.stdmod_6,"I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",,missing
+npc.captain_harava.stdmod_7,"I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",,missing
+npc.captain_harava.stdmod_8,"I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",,missing
+npc.captain_harava.stdmod_9,"I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",,missing
+npc.captain_harava.stdmod_10,"I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",,missing
+npc.lea.stdmod_1,I am the archsorcerer of Carlin. I keep the secrets of our order.,,missing
+npc.lea.stdmod_2,My name is Lea.,,missing
+npc.lea.stdmod_3,"Sorry, I only sell spells to sorcerers.",,missing
+npc.lea.stdmod_4,Time is a force we sorcerers will master one day.,,missing
+npc.lea.stdmod_5,Any sorcerer dedicates his whole life to the study of the arcane arts.,,missing
+npc.lea.stdmod_6,We sorcerers wield arcane powers beyond comprehension of men.,,missing
+npc.lea.stdmod_7,We sorcerers wield arcane powers beyond comprehension of men.,,missing
+npc.edala.stdmod_1,"Would you like to receive that protection for a sacrifice of |BLESSCOST| gold, child?",,missing
+npc.edala.stdmod_2,Fine. You are free to decline my offer.,,missing
+npc.edala.stdmod_3,"You are hurt, my child. I will heal your wounds.",,missing
+npc.edala.stdmod_4,"You aren't looking that bad. Sorry, I can't help you. But if you are looking for additional protection you should go on the {pilgrimage} of ashes or get the protection of the {twist of fate} here.",,missing
+npc.edala.stdmod_5,"Whenever you receive a lethal wound, your vital force is damaged and there is a chance that you lose some of your equipment. With every single of the five {blessings} you have, this damage and chance of loss will be reduced.",,missing
+npc.edala.stdmod_6,"There are five blessings available in five sacred places: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. Additionally, you can receive the {twist of fate} here.",,missing
+npc.edala.stdmod_7,I see you received the spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.edala.stdmod_8,I can sense that the druids north of Carlin have provided you with the Embrace of Tibia.,,missing
+npc.edala.stdmod_9,I can sense that the spark of the phoenix already was given to you by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.edala.stdmod_10,I can sense you already talked to the hermit Eremo on the isle of Cormaya and received this blessing.,,missing
+npc.edala.stdmod_11,You can ask for the blessing of spiritual shielding in the whiteflower temple south of Thais.,,missing
+npc.edala.stdmod_12,The druids north of Carlin will provide you with the embrace of Tibia.,,missing
+npc.edala.stdmod_13,The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.,,missing
+npc.edala.stdmod_14,Talk to the hermit Eremo on the isle of Cormaya about this blessing.,,missing
+npc.captain_seahorse.stdmod_1,Do you seek a seek a passage to ,,missing
+npc.captain_seahorse.stdmod_2,We would like to serve you some time.,,missing
+npc.captain_seahorse.stdmod_3,"Where do you want to go? To {Krailos}, {Thais}, {Carlin}, {Ab'Dendriel}, {Venore}, {Port Hope}, {Ankrahmun}, {Liberty Bay}, {Gray Island} or the isle {Cormaya}?",,missing
+npc.captain_seahorse.stdmod_4,"Where do you want to go? To {Krailos}, {Thais}, {Carlin}, {Ab'Dendriel}, {Venore}, {Port Hope}, {Ankrahmun}, {Liberty Bay}, {Gray Island} or the isle {Cormaya}?",,missing
+npc.captain_seahorse.stdmod_5,My name is Captain Seahorse from the Royal Tibia Line.,,missing
+npc.captain_seahorse.stdmod_6,This is Edron. Where do you want to go?,,missing
+npc.captain_seahorse.stdmod_7,"I'm sorry, but we don't serve this route. However, I heard that Wyrdin here in Edron is looking for adventurers to go on a trip to Yalahar for him.",,missing
 player.status.cleanse,You are no longer {0}. (cleanse charm),Nie jesteś już {0}. (urok oczyszczenia),translated
 player.condition.poisoned,You are poisoned.,Jesteś zatruty.,translated
 player.condition.drowning,You are drowning.,Toniesz.,translated

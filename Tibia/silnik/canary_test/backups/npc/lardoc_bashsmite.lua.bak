@@ -229,7 +229,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-keywordHandler:addKeyword({ "work" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lardoc_bashsmite.stdmod_1" })
+keywordHandler:addKeyword({ "work" }, StdModule.say, { npcHandler = npcHandler, text = "Here's the situation: a tide of hazardous bugs, the gnomes named them {diremaws}, threatens our base. Then there is some kind of {growth} which seems connected to them somehow. We need to get rid of both." })
 keywordHandler:addKeyword({ "worth" }, StdModule.say, {
 	npcHandler = npcHandler,
 	text = {
@@ -246,7 +246,7 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, {
 		"But even if we knew nothing more about them, the fact alone that they employ the help of those mockeries of all things dwarfish, marks them as an enemy of the dwarves and it's our obligation to annihilate them.",
 	},
 })
-keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lardoc_bashsmite.stdmod_2" })
+keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, text = "Bashsmite. That's all you need to know." })
 
 npcHandler:setMessage(MESSAGE_GREET, "Since you are obviously not one of my relatives who pays me a long overdue visit, we should get {work} right away. We'll see if you can prove your {worth} to our alliance.")
 npcHandler:setMessage(MESSAGE_WALKAWAY, "Well, bye then.")

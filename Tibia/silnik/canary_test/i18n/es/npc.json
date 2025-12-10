@@ -1995,5 +1995,16 @@
   "npc.klom_stonecutter.stdmod_3": "[ES] Preparation is paramount.",
   "npc.klom_stonecutter.stdmod_4": "[ES] Well, the biggest problem we need to address are the ever charging {subterraneans} around here. And on top of that, there's the threat of the Lost, who quite made themselves at {home} in these parts.",
   "npc.klom_stonecutter.stdmod_5": "[ES] Maintainin' this whole operation, the dwarven involvement 'course. Don't know about them gnomes but if I ain't gettin' those dwarves in line, there'll be chaos down here. I also oversee the {defences} and {counterattacks}.",
-  "npc.klom_stonecutter.stdmod_6": "[ES] Klom Stonecutter's the name. "
+  "npc.klom_stonecutter.stdmod_6": "[ES] Klom Stonecutter's the name. ",
+  "npc.kulag_the_guard.stdmod_1": "[ES] It's my duty to protect the city.",
+  "npc.lailene.stdmod_1": "[ES] ... what?! Uh - no, no. Of course I wouldn't have anything to do with... them.",
+  "npc.lardoc_bashsmite.stdmod_1": "[ES] Here's the situation: a tide of hazardous bugs, the gnomes named them {diremaws}, threatens our base. Then there is some kind of {growth} which seems connected to them somehow. We need to get rid of both.",
+  "npc.lardoc_bashsmite.stdmod_2": "[ES] Bashsmite. That's all you need to know.",
+  "npc.lea.stdmod_1": "[ES] I am the archsorcerer of Carlin. I keep the secrets of our order.",
+  "npc.lea.stdmod_2": "[ES] My name is Lea.",
+  "npc.lea.stdmod_3": "[ES] Sorry, I only sell spells to sorcerers.",
+  "npc.lea.stdmod_4": "[ES] Time is a force we sorcerers will master one day.",
+  "npc.lea.stdmod_5": "[ES] Any sorcerer dedicates his whole life to the study of the arcane arts.",
+  "npc.lea.stdmod_6": "[ES] We sorcerers wield arcane powers beyond comprehension of men.",
+  "npc.lea.stdmod_7": "[ES] We sorcerers wield arcane powers beyond comprehension of men."
 }

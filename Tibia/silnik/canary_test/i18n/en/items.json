@@ -2973,5 +2973,20 @@
   "item.6916.name": "ramp",
   "item.6966.name": "icicles",
   "item.6967.name": "ice floor",
-  "item.6972.name": "bone totem"
+  "item.6972.name": "bone totem",
+  "item.6973.name": "mammoth totem",
+  "item.6986.name": "pillar",
+  "item.7023.name": "snowy pine tree",
+  "item.7024.name": "pine",
+  "item.7033.name": "closed door",
+  "item.7034.name": "closed door",
+  "item.7035.name": "open door",
+  "item.7036.name": "closed door",
+  "item.7037.name": "open door",
+  "item.7038.name": "gate of expertise",
+  "item.7039.name": "gate of expertise",
+  "item.7040.name": "closed door",
+  "item.7041.name": "open door",
+  "item.7042.name": "closed door",
+  "item.7043.name": "closed door"
 }

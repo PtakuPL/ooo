@@ -4276,7 +4276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T09:43:33.166753"
+      "completed_at": "2025-12-10T09:43:54.844122"
     },
     "data-otservbr-global/npc/captain_fearless.lua": {
       "stages": {
@@ -29035,7 +29035,7 @@
       "translated": 85,
       "placeholders": 3509,
       "last_batch": 0,
-      "last_update": "2025-12-10 09:43:12"
+      "last_update": "2025-12-10 09:43:53"
     },
     "de": {
       "total_keys": 3594,

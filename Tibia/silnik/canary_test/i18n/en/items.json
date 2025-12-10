@@ -1578,5 +1578,20 @@
   "item.3514.name": "empty coal basin",
   "item.3533.name": "black token",
   "item.3534.name": "white token",
-  "item.3535.name": "white pawn"
+  "item.3535.name": "white pawn",
+  "item.3536.name": "white castle",
+  "item.3537.name": "white knight",
+  "item.3538.name": "white bishop",
+  "item.3539.name": "the white queen",
+  "item.3540.name": "the white king",
+  "item.3541.name": "black pawn",
+  "item.3542.name": "black castle",
+  "item.3543.name": "black knight",
+  "item.3544.name": "black bishop",
+  "item.3545.name": "the black queen",
+  "item.3546.name": "the black king",
+  "item.3549.name": "pair of soft boots",
+  "item.3550.name": "patched boots",
+  "item.3551.name": "sandals",
+  "item.3552.name": "leather boots"
 }

@@ -1,13 +1,53 @@
 # 🗺️ I18N System - Plan Rozwoju i Usprawnień
 
 > **Dokument**: Plan rozwoju systemu internacjonalizacji  
-> **Wersja**: 3.0  
-> **Data**: 2025-12-10 16:15 UTC  
+> **Wersja**: 4.0  
+> **Data**: 2025-12-10 23:00 UTC  
 > **Autor**: AI Assistant + PtakuPL
 
 ---
 
 ## 🆕 CHANGELOG - Co zostało zrobione
+
+### 📅 2025-12-10 (sesja #4) - Analiza player:sendTextMessage + keywordHandler + Twig 📋
+
+| Zmiana | Opis | Status |
+|--------|------|--------|
+| **sendTextMessage analiza** | Zidentyfikowano 304 plików z tym samym pattern `"Sold %ix %s for %i gold."` | ✅ ZBADANO |
+| **sendLocalizedTextMessage** | Odkryto że istnieje C++ funkcja `player:sendLocalizedTextMessage(type, key, args)` | ✅ ODKRYTO |
+| **NPC_LIB.i18n** | Pełna dokumentacja systemu i18n dla NPC (lokalizacja: `data-otservbr-global/lib/npc/i18n.lua`) | ✅ ZDOKUMENTOWANO |
+| **keywordHandler status** | 2915 z i18nKey (79%), 778 bez i18nKey (21%) - większość już zrobiona! | ✅ ZLICZONO |
+| **Twig templates** | 575 plików, tylko 42 z `trans()` - ogromny potencjał | ✅ ZBADANO |
+| **messages.json** | Stworzono z 11 kluczami systemowymi, skopiowano do 53 języków | ✅ ZROBIONO |
+| **Test zamiany** | `irea.lua` - pomyślna zamiana na `sendLocalizedTextMessage` | ✅ TEST OK |
+
+**📊 Szczegółowa analiza player:sendTextMessage:**
+
+| Pattern | Ilość | Opis |
+|---------|-------|------|
+| `"Sold %ix %s for %i gold."` | **304** | Callback sprzedaży - JEDEN pattern! |
+| Inne unikalne teksty | ~20 | Różne wiadomości systemowe |
+
+**Odkrycie:** 304 plików ma IDENTYCZNY tekst - wystarczy jedna zamiana sed!
+
+**📊 Status keywordHandler:**
+
+| Stan | Ilość | Procent |
+|------|-------|---------|
+| Z i18nKey | 2,915 | **79%** ✅ |
+| Bez i18nKey | 778 | 21% |
+| **RAZEM** | 3,693 | 100% |
+
+**📊 Twig templates:**
+
+| Metryka | Wartość |
+|---------|---------|
+| Pliki .twig | 575 |
+| Z `trans()` | 42 (7%) |
+| Bez tłumaczenia | 533 (93%) |
+| Najczęstsze teksty | `'Are you sure?'`, `'Logo'`, `'Description'` |
+
+---
 
 ### 📅 2025-12-10 (sesja #3) - Naprawa I18N_STATUS.md na GitHub 🔧
 

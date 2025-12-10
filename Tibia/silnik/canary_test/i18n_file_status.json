@@ -108,7 +108,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:44:57.325343"
+      "completed_at": "2025-12-10T14:44:59.775877"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -218,7 +218,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:44:57.983241"
+      "completed_at": "2025-12-10T14:45:00.406330"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {
@@ -328,7 +328,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:44:44.247943"
+      "completed_at": "2025-12-10T14:45:01.916267"
     },
     "data-otservbr-global/npc/hamish.lua": {
       "stages": {
@@ -442,7 +442,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:44:45.236932"
+      "completed_at": "2025-12-10T14:45:03.049091"
     },
     "data-otservbr-global/npc/mordecai.lua": {
       "stages": {
@@ -552,7 +552,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:44:46.734790"
+      "completed_at": "2025-12-10T14:45:04.793943"
     },
     "data-otservbr-global/npc/nelly.lua": {
       "stages": {
@@ -662,7 +662,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:44:47.424097"
+      "completed_at": "2025-12-10T14:45:05.735444"
     },
     "data-otservbr-global/npc/alaistar.lua": {
       "stages": {
@@ -1094,7 +1094,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:44:43.569036"
+      "completed_at": "2025-12-10T14:45:01.199117"
     }
   },
   "global_stats": {

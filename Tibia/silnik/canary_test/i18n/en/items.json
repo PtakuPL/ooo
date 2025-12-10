@@ -228,5 +228,10 @@
   "item.617.name": "DEPRECATED item",
   "item.618.name": "grass",
   "item.619.name": "waterball",
-  "item.622.name": "water"
+  "item.622.name": "water",
+  "item.628.name": "wooden floor",
+  "item.637.name": "document",
+  "item.638.name": "document",
+  "item.639.name": "scroll",
+  "item.640.name": "scroll"
 }

@@ -4818,5 +4818,20 @@
   "item.12249.name": "closed door",
   "item.12250.name": "open door",
   "item.12251.name": "shapechanger",
-  "item.12252.name": "bunch of winterberries"
+  "item.12252.name": "bunch of winterberries",
+  "item.12259.name": "unknown item",
+  "item.12260.name": "hunting horn",
+  "item.12261.name": "unknown item",
+  "item.12275.name": "sugar",
+  "item.12276.name": "book",
+  "item.12282.name": "stone",
+  "item.12283.name": "stone",
+  "item.12284.name": "stone",
+  "item.12285.name": "magic tile",
+  "item.12286.name": "magic tile",
+  "item.12287.name": "magic tile",
+  "item.12288.name": "magic tile",
+  "item.12289.name": "magic tile",
+  "item.12290.name": "magic tile",
+  "item.12291.name": "magic tile"
 }

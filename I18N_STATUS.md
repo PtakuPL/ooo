@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 21:51:39 UTC  
+> **Aktualizacja:** 2025-12-10 21:51:46 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -23,10 +23,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **26** | ↑ |
 | ⏭️ Plików wykluczonych | **711** | - |
-| 🔑 Kluczy i18n | **14744** | ↑ |
+| 🔑 Kluczy i18n | **14759** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#57** | - |
+| 🔄 Cykl | **#58** | - |
 
 ---
 
@@ -41,7 +41,7 @@
 |-----------|--------|--------|-----|
 | 🧙 NPC Dialogs | 🔄 | 5270/15000 (35%) | 15000 |
 | 📜 Lua Scripts | 🔄 | 385/1000 (38%) | 1000 |
-| 🎒 Items Database | 🔄 | 4805/40000 (12%) | 40000 |
+| 🎒 Items Database | 🔄 | 4820/40000 (12%) | 40000 |
 | 👹 Monsters | 🔄 | 4158/5000 (83%) | 5000 |
 | ✨ Spells & Magic | 🔄 | 15/200 (8%) | 200 |
 | ⚙️ Server C++ | ⏳ | 0/300 (0%) | 300 |
@@ -76,7 +76,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    57 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    58 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (8 etapów)                     │
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 21:51:39                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 21:51:46                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -100,9 +100,9 @@
 |---------|---------|-----------|
 | 📁 Plików przetworzonych | **26** | z i18n_file_status.json |
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **14744** | we wszystkich kategoriach |
+| 🔑 Kluczy wyciągniętych | **14759** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
-| 🔄 Cykli wykonanych | **#57** | continuous mode |
+| 🔄 Cykli wykonanych | **#58** | continuous mode |
 | ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -137,7 +137,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 4805 |
+| 🔑 Kluczy | 4820 |
 | 🎯 Cel | 40000 |
 | 📊 Postęp | 12% |
 | 📁 Plik | i18n/en/items.json |
@@ -274,8 +274,8 @@
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
 | npc | 5270 | 0 | 0 | ✅ Active |
-| items | 4805 | 2745 | 0 | ✅ Active |
-| monsters | 4158 | 0 | 3 | ⏭️ Skip 20m |
+| items | 4820 | 2760 | 0 | ✅ Active |
+| monsters | 4158 | 0 | 3 | ⏭️ Skip 19m |
 | scripts | 385 | 0 | 4 | ⏭️ Skip 45m |
 | html | 39 | 0 | 0 | ✅ Active |
 | raids | 30 | 0 | 3 | ⏭️ Skip 20m |
@@ -299,7 +299,7 @@
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
 | scripts | 45m | 4x | Progresywny backoff |
-| monsters | 20m | 3x | Progresywny backoff |
+| monsters | 19m | 3x | Progresywny backoff |
 | raids | 20m | 3x | Progresywny backoff |
 | world | 20m | 3x | Progresywny backoff |
 

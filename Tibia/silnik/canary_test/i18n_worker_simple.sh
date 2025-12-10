@@ -943,11 +943,14 @@ with open("$backup", "r") as f:
 
 # Wczytaj npc.json
 json_file = "$I18N_DIR/en/npc.json"
+data = {}
 try:
     with open(json_file, "r") as f:
         data = json.load(f)
-except:
-    data = {}
+except Exception as e:
+    print(f"BŁĄD KRYTYCZNY: Nie można wczytać {json_file}: {e}")
+    print("Przerywam ekstrakcję - nie chcę nadpisać danych!")
+    exit(1)
 
 added = 0
 stdmod_count = 0

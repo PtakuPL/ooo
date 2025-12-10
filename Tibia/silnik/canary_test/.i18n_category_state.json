@@ -1,0 +1,15 @@
+{
+  "skip_until": {
+    "scripts": 1765398984.348044
+  },
+  "last_processed": {
+    "scripts": {
+      "count": 0,
+      "timestamp": 1765398384.3480392
+    }
+  },
+  "consecutive_zeros": {
+    "scripts": 2
+  },
+  "total_processed": {}
+}

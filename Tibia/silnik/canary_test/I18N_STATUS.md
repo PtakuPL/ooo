@@ -278,6 +278,7 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `dallheim` - ukończono 2025-12-10 12:59
 - ✅ `amarie` - ukończono 2025-12-10 12:52
 - ✅ `frederik` - ukończono 2025-12-10 12:20
 - ✅ `frans` - ukończono 2025-12-10 12:20

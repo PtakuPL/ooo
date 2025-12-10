@@ -4171,5 +4171,8 @@
   "npc.flickering_soul.say_16": "[PT] I have cleansed you from the taints that you carried with you. You are now free from the burden that you should not have to bear.",
   "npc.flickering_soul.say_17": "[PT] You are not tainted by the darkness of the world. You are pure and free from the burdens that others carry.",
   "npc.amarie.greet_1": "[PT] Greetings, |PLAYERNAME|.",
-  "npc.amarie.farewell_1": "[PT] Good bye, |PLAYERNAME|."
+  "npc.amarie.farewell_1": "[PT] Good bye, |PLAYERNAME|.",
+  "npc.dallheim.greet_1": "[PT] Greetings, |PLAYERNAME|! You're looking really bad. Let me heal your wounds.",
+  "npc.dallheim.greet_2": "[PT] <nods> At your service, |PLAYERNAME|, protecting the {village} from {monsters}.",
+  "npc.dallheim.farewell_1": "[PT] Bye, |PLAYERNAME|."
 }

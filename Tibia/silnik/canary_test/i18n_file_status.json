@@ -3237,7 +3237,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:59:29.801640"
+      "completed_at": "2025-12-10T12:59:40.870789"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -3347,7 +3347,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:59:30.965372"
+      "completed_at": "2025-12-10T12:59:41.895748"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -3457,7 +3457,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:59:32.135838"
+      "completed_at": "2025-12-10T12:59:43.197226"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -3484,12 +3484,6 @@
           "doc_file": "docs/i18n/npc/frans.md",
           "keys_documented": 1
         },
-        "4_transformation": {
-          "status": "completed",
-          "transformed": 0,
-          "stdmod_transformed": 0,
-          "npcsay_transformed": 0
-        },
         "5_extraction_en": {
           "status": "completed",
           "keys_added": 0,
@@ -3499,8 +3493,10 @@
           "farewell_keys": 0
         },
         "7_validation": {
-          "status": "completed",
-          "errors": [],
+          "status": "failed",
+          "errors": [
+            "B\u0142\u0105d JSON w pl/npc.json: Expecting value: line 1324 column 27 (char 154786)"
+          ],
           "warnings": [
             "Brak i18nKey w pliku Lua"
           ],
@@ -3543,7 +3539,6 @@
             "lv",
             "tr",
             "uk",
-            "pl",
             "zh",
             "el",
             "vi",
@@ -3560,14 +3555,14 @@
             "hr"
           ],
           "keys_in_lua": 0,
-          "validation_passed": true
+          "validation_passed": false
         },
         "8_sync": {
           "status": "completed"
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:59:33.447611"
+      "completed_at": "2025-12-10T12:59:45.102995"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -3677,7 +3672,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:59:34.165503"
+      "completed_at": "2025-12-10T12:59:45.830027"
     },
     "data-otservbr-global/npc/amarie.lua": {
       "stages": {
@@ -3779,10 +3774,132 @@
       },
       "overall_status": "completed",
       "completed_at": "2025-12-10T12:53:53.231398"
+    },
+    "data-otservbr-global/npc/dallheim.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "d6c443d9dfed3a916c2f6d9cbd8fb831",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "dallheim",
+          "StdModule_say": 56,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 2,
+          "addFarewellKeyword": 1,
+          "total": 59,
+          "already_i18n": 55,
+          "npcSayLib": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/dallheim.md",
+          "keys_documented": 8
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 3,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 3,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 2,
+          "farewell_keys": 1
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 66,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 58,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T12:59:45.317707"
     }
   },
   "global_stats": {
-    "files_completed": 33,
+    "files_completed": 34,
     "total_keys": 0
   },
   "translation_status": {

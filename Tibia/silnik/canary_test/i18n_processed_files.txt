@@ -804,3 +804,8 @@ data-otservbr-global/scripts/quests/ferumbras_ascension/actions_lever_first.lua
 data-otservbr-global/scripts/quests/ferumbras_ascension/actions_lever_second.lua
 data-otservbr-global/scripts/quests/grave_danger_quest/movements_quaidDen.lua
 data-otservbr-global/scripts/quests/grave_danger_quest/movements_cobra_mini_bosses.lua
+data-otservbr-global/scripts/quests/grave_danger_quest/cobra_bastion/actions_scarlett.lua
+data-otservbr-global/scripts/quests/soulpit/soulpit_fight.lua
+data-otservbr-global/scripts/quests/deeplings_worldchange/actions_coral.lua
+data-otservbr-global/scripts/quests/deeplings_worldchange/actions_boxramp.lua
+data-otservbr-global/scripts/quests/deeplings_worldchange/actions_crystal.lua

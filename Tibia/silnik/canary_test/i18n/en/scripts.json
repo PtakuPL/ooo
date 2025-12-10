@@ -62,5 +62,8 @@
   "scripts.actions_lever_first.msg_1": "Something clicked at same time a booming sound almost deafens you.",
   "scripts.actions_lever_second.msg_1": "Something clicked at same time a booming sound almost deafens you.",
   "scripts.movements_quaidden.msg_1": "With the power of the dark Custodian still holding away, the fog is keeping you from entering Quaid's den.",
-  "scripts.movements_cobra_mini_bosses.msg_1": "You pass the fire without taking any damage. It's now or never..."
+  "scripts.movements_cobra_mini_bosses.msg_1": "You pass the fire without taking any damage. It's now or never...",
+  "scripts.actions_scarlett.msg_1": "You are not allowed to use this yet.",
+  "scripts.actions_scarlett.msg_2": "You hold the old chestplate of Galthein in front of you. It does not fit and far too old to withstand any attack.",
+  "scripts.soulpit_fight.msg_1": "Someone is fighting in the soulpit!"
 }

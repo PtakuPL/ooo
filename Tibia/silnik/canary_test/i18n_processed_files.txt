@@ -784,3 +784,8 @@ data-otservbr-global/scripts/quests/oramond/to_take_roots/actions_to_take_roots.
 data-otservbr-global/scripts/quests/the_secret_library_quest/library_area/movements_mazzinor.lua
 data-otservbr-global/scripts/quests/the_secret_library_quest/high_and_dry_isles/movements_boat_puzzle.lua
 data-otservbr-global/scripts/quests/the_secret_library_quest/high_and_dry_isles/actions_telescope.lua
+data-otservbr-global/scripts/quests/the_secret_library_quest/bursting_at_the_seams_museum/actions_doors.lua
+data-otservbr-global/scripts/quests/the_secret_library_quest/the_order_of_the_falcon/actions_entrance.lua
+data-otservbr-global/scripts/quests/the_secret_library_quest/the_order_of_the_falcon/actions_doors.lua
+data-otservbr-global/scripts/quests/the_secret_library_quest/the_parth_of_defiances_desert/movements_teleportTo.lua
+data-otservbr-global/scripts/quests/the_secret_library_quest/the_parth_of_defiances_desert/actions_chests.lua

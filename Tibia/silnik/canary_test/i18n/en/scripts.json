@@ -32,5 +32,12 @@
   "scripts.movements_boat_puzzle.msg_3": "You use the hawser to lash up the loose planks. The raft should be seaworthy now.",
   "scripts.movements_boat_puzzle.msg_4": "You see the scattered parts of a wrecked ship. Miraculously the ship telescope survived the wreck it seems still to be intact.",
   "scripts.movements_boat_puzzle.msg_5": "Witout any points of orientation you will never find your way back. Try to find a way to improve your navigation.",
-  "scripts.actions_telescope.msg_1": "The telescope provides a perfect view over the endless ocean - no land in sight"
+  "scripts.actions_telescope.msg_1": "The telescope provides a perfect view over the endless ocean - no land in sight",
+  "scripts.actions_doors.msg_1": "The door seems to be sealed against unwanted intruders.",
+  "scripts.actions_entrance.msg_1": "Once more you mix the chalk with a drop of your blood and a bit of water and renew the symbol on the floor...",
+  "scripts.actions_entrance.msg_2": "You can only use this entrance during the night.",
+  "scripts.actions_doors.msg_2": "You can not use this boat yet.",
+  "scripts.movements_teleportto.msg_1": "You must wait. Someone is challenging Furious Scorpion now.",
+  "scripts.actions_chests.msg_1": "You have found a ",
+  "scripts.actions_chests.msg_2": "It is empty."
 }

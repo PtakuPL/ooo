@@ -2476,9 +2476,14 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                         scripts)
                             echo "   📜 Przetwarzam SCRIPTS..."
                             COUNT=0
+                            # Wczytaj completed files
+                            COMPLETED_LIST=$(python3 -c "import json; d=json.load(open('$STATUS_FILE')); print(' '.join([f for f,v in d.get('files',{}).items() if v.get('overall_status')=='completed']))" 2>/dev/null)
+                            
                             for f in $(find data-otservbr-global/scripts data/scripts -name "*.lua" 2>/dev/null | head -100); do
                                 [ -f "$f" ] || continue
-                                # Pomiń już przetworzone
+                                # Pomiń już przetworzone w JSON
+                                echo "$COMPLETED_LIST" | grep -qF "$f" && continue
+                                # Pomiń już przetworzone w starym pliku
                                 grep -qF "$f" "$PROCESSED_FILE" 2>/dev/null && continue
                                 
                                 # Szukaj sendTextMessage

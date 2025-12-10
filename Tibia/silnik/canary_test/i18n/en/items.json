@@ -483,5 +483,10 @@
   "item.956.name": "dead sea serpent",
   "item.957.name": "birch",
   "item.958.name": "dead tree",
-  "item.967.name": "hole"
+  "item.967.name": "hole",
+  "item.1006.name": "jagged stones",
+  "item.1012.name": "sparkling gem",
+  "item.1019.name": "jungle grass",
+  "item.1053.name": "earth",
+  "item.1066.name": "mud stain"
 }

@@ -3922,8 +3922,19 @@ with open('i18n_global_stats.json', 'w') as f:
             # Git commit co cykl
             if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
                 git add -A 2>/dev/null
-                MIGRATED=$(cat "$STATUS_FILE" 2>/dev/null | python3 -c "import json,sys; d=json.load(sys.stdin); print(len([f for f,i in d.get('files',{}).items() if i.get('overall_status')=='completed']))" 2>/dev/null || echo "?")
-                git commit -m "📊 I18N v2: $MIGRATED NPCs, $MODE_TYPE - Cykl #$CYCLE" 2>/dev/null
+                # Zlicz TOTAL kluczy ze wszystkich JSON (nie tylko NPC completed)
+                TOTAL_KEYS=$(python3 -c "
+import json, os
+total = 0
+for f in os.listdir('i18n/en'):
+    if f.endswith('.json'):
+        try:
+            with open(f'i18n/en/{f}') as jf:
+                total += len(json.load(jf))
+        except: pass
+print(total)
+" 2>/dev/null || echo "?")
+                git commit -m "📊 I18N: $TOTAL_KEYS kluczy, $MODE_TYPE - Cykl #$CYCLE" 2>/dev/null
                 git push origin master 2>/dev/null && echo "📤 Push OK" || echo "⚠️ Push failed"
             fi
             

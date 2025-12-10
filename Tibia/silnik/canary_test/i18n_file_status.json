@@ -108,7 +108,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:46:50.151998"
+      "completed_at": "2025-12-10T14:46:58.424179"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -218,7 +218,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:46:50.793613"
+      "completed_at": "2025-12-10T14:46:58.996522"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {
@@ -328,7 +328,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:46:39.964613"
+      "completed_at": "2025-12-10T14:47:00.373443"
     },
     "data-otservbr-global/npc/hamish.lua": {
       "stages": {
@@ -442,7 +442,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:46:40.979558"
+      "completed_at": "2025-12-10T14:47:01.332633"
     },
     "data-otservbr-global/npc/mordecai.lua": {
       "stages": {
@@ -552,7 +552,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:46:42.578119"
+      "completed_at": "2025-12-10T14:47:02.876814"
     },
     "data-otservbr-global/npc/nelly.lua": {
       "stages": {
@@ -662,7 +662,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:46:43.525395"
+      "completed_at": "2025-12-10T14:47:03.661592"
     },
     "data-otservbr-global/npc/alaistar.lua": {
       "stages": {
@@ -684,50 +684,9 @@
           "npcSayLib": 0,
           "needs_migration": true
         },
-        "4_transformation": {
-          "status": "completed",
-          "transformed": 0,
-          "stdmod_transformed": 0,
-          "npcsay_transformed": 0
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0,
-          "stdmod_keys": 0,
-          "npcsay_keys": 0,
-          "greet_keys": 0,
-          "farewell_keys": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-10T14:46:43.146583"
-    },
-    "data-otservbr-global/npc/battlemart.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "hash": "d093255573292da6b2911e1210a61c5e",
-          "type": "npc"
-        },
-        "2_analysis": {
-          "status": "completed",
-          "safe_name": "battlemart",
-          "StdModule_say": 0,
-          "npcHandler_say": 2,
-          "sendTextMessage": 1,
-          "addGreetKeyword": 0,
-          "addFarewellKeyword": 0,
-          "total": 3,
-          "already_i18n": 0,
-          "npcSayLib": 0,
-          "needs_migration": true
-        },
         "3_documentation": {
           "status": "completed",
-          "doc_file": "docs/i18n/npc/battlemart.md",
+          "doc_file": "docs/i18n/npc/alaistar.md",
           "keys_documented": 0
         },
         "4_transformation": {
@@ -813,7 +772,30 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:46:44.701933"
+      "completed_at": "2025-12-10T14:47:03.936998"
+    },
+    "data-otservbr-global/npc/battlemart.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "d093255573292da6b2911e1210a61c5e",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "battlemart",
+          "StdModule_say": 0,
+          "npcHandler_say": 2,
+          "sendTextMessage": 1,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 3,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": true
+        }
+      },
+      "overall_status": "in_progress"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -923,7 +905,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:46:48.912887"
+      "completed_at": "2025-12-10T14:46:57.087966"
     },
     "data-otservbr-global/npc/ghorza.lua": {
       "stages": {
@@ -1033,7 +1015,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:46:39.282734"
+      "completed_at": "2025-12-10T14:46:59.702031"
     }
   },
   "global_stats": {

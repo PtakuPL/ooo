@@ -2479,7 +2479,8 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                                         fi
                                     fi
                                     
-                                    if grep -qE 'npcHandler:say\(\s*"[^"]{5,}"' "$f" 2>/dev/null; then
+                                    # Prostszy pattern - npcHandler:say( bez wymuszania " zaraz po
+                                    if grep -q 'npcHandler:say(' "$f" 2>/dev/null; then
                                         if ! grep -q "NPC_LIB.i18n.npcSay" "$f" 2>/dev/null; then
                                             NEEDS_WORK=true
                                         fi

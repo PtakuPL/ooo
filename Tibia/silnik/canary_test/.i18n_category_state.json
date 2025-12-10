@@ -31,6 +31,10 @@
     "libs": {
       "count": 0,
       "timestamp": 1765405802.3402064
+    },
+    "events": {
+      "count": 5,
+      "timestamp": 1765405809.737486
     }
   },
   "consecutive_zeros": {
@@ -39,11 +43,13 @@
     "raids": 4,
     "world": 4,
     "items": 1,
-    "libs": 1
+    "libs": 1,
+    "events": 0
   },
   "total_processed": {
     "items": 11689,
-    "libs": 5
+    "libs": 5,
+    "events": 5
   },
   "translation_sync": {
     "current_lang": "de",

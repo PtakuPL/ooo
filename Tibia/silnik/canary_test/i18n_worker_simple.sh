@@ -642,7 +642,7 @@ if skipped_cats:
 else:
     md += "*Brak kategorii z aktywnym skip*"
 
-md += '''
+md += f'''
 
 ---
 

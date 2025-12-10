@@ -81,19 +81,27 @@ if needs_migration == 0:
 
 ## 📊 Obecny stan systemu
 
-> **Ostatnia aktualizacja:** 2025-12-10 11:45 UTC
+> **Ostatnia aktualizacja:** 2025-12-10 12:30 UTC
 
 ### ✅ Co mamy (ZROBIONE):
-- ✅ `i18n_worker_simple.sh` - Worker v2.0 Multi-Mode (8 etapów)
+- ✅ `i18n_worker_simple.sh` - Worker v2.1 Multi-Mode (8 etapów)
 - ✅ `i18n_guardian.sh` - Guardian restartujący workera + auto-push
 - ✅ 53 katalogi językowe w `i18n/`
 - ✅ Pliki JSON z kluczami (npc.json, items.json, scripts.json, etc.)
 - ✅ Cron job dla Guardian
 - ✅ **StdModule.say** - 297/297 plików zmigrowanych ✅
-- ✅ **4145 kluczy** wyciągniętych do en/npc.json
+- ✅ **npcHandler:say("text")** - NOWA funkcjonalność v2.1 ✅
+- ✅ **~4200 kluczy** wyciągniętych do en/npc.json
 - ✅ Placeholder'y dla 8 języków (pl, de, es, fr, it, pt, ru, uk)
 - ✅ Dokumentacja MD dla każdego NPC
 - ✅ Live Dashboard na GitHub (I18N_STATUS.md)
+
+### 🆕 Nowe w v2.1 (2025-12-10):
+- ✅ Transformacja `npcHandler:say("text", npc, creature)` → `NPC_LIB.i18n.npcSay()`
+- ✅ Obsługa multi-line tekstów (teksty rozciągnięte na wiele linii)
+- ✅ Rozróżnianie konkatenacji Lua (` .. `) od wielokropków (`...`)
+- ✅ Pomijanie tablic `npcHandler:say({...})` (zachowane bez zmian)
+- ✅ Ekstrakcja kluczy z obu wzorców do npc.json
 
 ---
 

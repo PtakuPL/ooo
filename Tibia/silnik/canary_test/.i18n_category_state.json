@@ -124,7 +124,7 @@
   },
   "translation_sync": {
     "current_lang": "es",
-    "current_category": "html.json",
+    "current_category": "libs.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -165,13 +165,13 @@
       },
       "es": {
         "chatchannels": 8,
-        "total": 254615,
+        "total": 279348,
         "client": 283,
         "cpp": 15,
         "events": 5,
         "html": 663,
         "items": 13749,
-        "libs": 5,
+        "libs": 21,
         "modules": 16,
         "monsters": 4158,
         "npc": 5334,
@@ -207,6 +207,6 @@
         "events": 5
       }
     },
-    "last_sync": 1765410019.9519928
+    "last_sync": 1765410026.5308561
   }
 }

@@ -9888,5 +9888,20 @@
   "item.31351.name": "black raven",
   "item.31352.name": "grey raven",
   "item.31353.name": "white raven",
-  "item.31354.name": "blue memory shard"
+  "item.31354.name": "blue memory shard",
+  "item.31355.name": "violet memory shard",
+  "item.31356.name": "green memory shard",
+  "item.31357.name": "memory englitener",
+  "item.31363.name": "gryphon egg shell",
+  "item.31364.name": "pile of scrolls",
+  "item.31365.name": "half burnt scroll",
+  "item.31366.name": "rope",
+  "item.31369.name": "gryphon mask",
+  "item.31370.name": "silver mask",
+  "item.31371.name": "ivory mask",
+  "item.31372.name": "mirror mask",
+  "item.31373.name": "RESERVED SPRITE",
+  "item.31374.name": "ancient sarcophagus",
+  "item.31379.name": "wooden cage key",
+  "item.31380.name": "energy field"
 }

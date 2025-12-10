@@ -203,5 +203,10 @@
   "item.469.name": "stairs",
   "item.475.name": "closed trapdoor",
   "item.476.name": "trapdoor",
-  "item.477.name": "pedestal"
+  "item.477.name": "pedestal",
+  "item.478.name": "sandstone wall",
+  "item.479.name": "stone tile",
+  "item.480.name": "sandstone wall",
+  "item.481.name": "stone flooring",
+  "item.484.name": "trapdoor"
 }

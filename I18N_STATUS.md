@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:12:21 UTC  
+> **Aktualizacja:** 2025-12-11 00:12:45 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -23,10 +23,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **26** | ↑ |
 | ⏭️ Plików wykluczonych | **711** | - |
-| 🔑 Kluczy i18n | **24481** | ↑ |
+| 🔑 Kluczy i18n | **24555** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#9** | - |
+| 🔄 Cykl | **#10** | - |
 
 ---
 
@@ -42,7 +42,7 @@
 | 🧙 NPC Dialogs | 🔄 | 5334/15000 (36%) | 15000 |
 | 📜 Lua Scripts | 🔄 | 385/1000 (38%) | 1000 |
 | 🎒 Items Database | 🔄 | 13749/40000 (34%) | 40000 |
-| 👹 Monsters | 🔄 | 4158/5000 (83%) | 5000 |
+| 👹 Monsters | 🔄 | 4232/5000 (85%) | 5000 |
 | ✨ Spells & Magic | 🔄 | 15/200 (8%) | 200 |
 | ⚙️ Server C++ | ⏳ | 0/300 (0%) | 300 |
 
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     9 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    10 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 SCRIPTS                                │
+│ Kategoria: 🎒 MONSTERS                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: scripts                                        │
-│ [███████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 385/1000 kluczy (38%)                                          │
+│ 📊 Ostatnia aktywność: monsters                                       │
+│ [██████████████████████████████████████████░░░░░░░░] │
+│ 4232/5000 kluczy (85%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Total processed: 13016 operacji               │
+│ ⏳ Total processed: 13238 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:12:21                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:12:45                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -99,11 +99,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Operacji wykonanych | **13016** | we wszystkich kategoriach |
+| 📁 Operacji wykonanych | **13238** | we wszystkich kategoriach |
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **24481** | we wszystkich kategoriach |
+| 🔑 Kluczy wyciągniętych | **24555** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#9** | continuous mode |
+| 🔄 Cykli wykonanych | **#10** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,6 +111,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- 👹 `monsters` +148 kluczy @ 00:12:45
 - 📜 `scripts` +0 kluczy @ 00:12:21
 - ⚡ `html` +180 kluczy @ 00:11:44
 - ⚡ `php` +0 kluczy @ 00:11:17
@@ -118,7 +119,6 @@
 - ⚡ `startup` +0 kluczy @ 00:10:20
 - ⚡ `modules` +0 kluczy @ 00:10:03
 - 🌍 `FR/events.json` +109 kluczy @ 23:46:10
-- ⚡ `chatchannels` +0 kluczy @ 23:45:39
 
 
 ---
@@ -162,13 +162,13 @@
 </details>
 
 <details>
-<summary>👹 4. Monsters - 🔄 (83%)</summary>
+<summary>👹 4. Monsters - 🔄 (85%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 4158 |
+| 🔑 Kluczy | 4232 |
 | 🎯 Cel | 5000 |
-| 📊 Postęp | 83% |
+| 📊 Postęp | 85% |
 | 📁 Plik | i18n/en/monsters.json |
 
 </details>
@@ -280,7 +280,7 @@
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 11689 | 0 | ✅ Active |
 | npc | 5334 | 0 | 0 | ✅ Active |
-| monsters | 4158 | 0 | 0 | ✅ Active |
+| monsters | 4232 | 222 | 0 | ✅ Active |
 | html | 508 | 284 | 0 | ✅ Active |
 | scripts | 385 | 0 | 2 | ⏭️ Skip 9m |
 | php | 205 | 543 | 0 | ✅ Active |
@@ -316,7 +316,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #9 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #10 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -350,7 +350,7 @@
 | 🎒 Items | 13749 | ██████░░░░░░░░░░░░░░ | 40000 | 🔄 34% |
 | 🧙 NPC | 5334 | ███████░░░░░░░░░░░░░ | 15000 | 🔄 36% |
 | 📜 Scripts | 385 | ███████░░░░░░░░░░░░░ | 1000 | 🔄 38% |
-| 👹 Monsters | 4158 | ████████████████░░░░ | 5000 | 🔄 83% |
+| 👹 Monsters | 4232 | ████████████████░░░░ | 5000 | 🔄 85% |
 | ✨ Spells | 15 | █░░░░░░░░░░░░░░░░░░░ | 200 | 🔄 8% |
 | ⚙️ Server | 0 | ░░░░░░░░░░░░░░░░░░░░ | 300 | ⏳ 0% |
 | 🖥️ System | 0 | ░░░░░░░░░░░░░░░░░░░░ | 2000 | ⏳ 0% |
@@ -359,7 +359,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:12:21  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:12:45  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

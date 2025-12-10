@@ -8,8 +8,8 @@
       "timestamp": 1765408341.584613
     },
     "monsters": {
-      "count": 0,
-      "timestamp": 1765406151.9903698
+      "count": 148,
+      "timestamp": 1765408365.428902
     },
     "raids": {
       "count": 0,
@@ -74,7 +74,8 @@
   },
   "consecutive_zeros": {
     "html": 0,
-    "scripts": 2
+    "scripts": 2,
+    "monsters": 0
   },
   "total_processed": {
     "items": 11689,
@@ -87,7 +88,8 @@
     "html": 284,
     "client": 14,
     "keywordhandler": 64,
-    "twig": 365
+    "twig": 365,
+    "monsters": 222
   },
   "translation_sync": {
     "current_lang": "fr",

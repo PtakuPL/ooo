@@ -3442,7 +3442,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:43:30.948693"
+      "completed_at": "2025-12-10T12:43:42.744377"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -3547,7 +3547,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:43:32.279598"
+      "completed_at": "2025-12-10T12:43:44.445205"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -3652,7 +3652,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:43:32.954307"
+      "completed_at": "2025-12-10T12:43:45.152690"
     }
   },
   "global_stats": {

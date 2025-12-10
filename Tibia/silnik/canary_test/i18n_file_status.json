@@ -4211,7 +4211,7 @@
           "errors": [],
           "warnings": [
             "Brak i18nKey w pliku Lua",
-            "Znaleziono 79 duplikat\u00f3w warto\u015bci"
+            "Znaleziono 82 duplikat\u00f3w warto\u015bci"
           ],
           "valid_langs": [
             "zh_TW",
@@ -4276,7 +4276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T06:57:58.547606"
+      "completed_at": "2025-12-10T06:58:24.073371"
     },
     "data-otservbr-global/npc/captain_fearless.lua": {
       "stages": {
@@ -6671,10 +6671,466 @@
       },
       "overall_status": "completed",
       "completed_at": "2025-12-10T06:58:04.745062"
+    },
+    "data-otservbr-global/npc/cipfried.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "675b136233ebe0402231ed78d697ae70",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "cipfried",
+          "StdModule_say": 63,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 63,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/cipfried.md",
+          "keys_documented": 66
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 62
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 66
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 66
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 83 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 62,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T06:58:27.628315"
+    },
+    "data-otservbr-global/npc/cornelia.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "7a0d661590a84b00628a504f97833a13",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "cornelia",
+          "StdModule_say": 1,
+          "npcHandler_say": 0,
+          "sendTextMessage": 1,
+          "total": 2,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/cornelia.md",
+          "keys_documented": 2
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 1
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 2
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 2
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 83 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 1,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T06:58:29.870634"
+    },
+    "data-otservbr-global/npc/cornell.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "b991e0eb3f5b6b85ff9979e2f6176361",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "cornell",
+          "StdModule_say": 3,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 3,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/cornell.md",
+          "keys_documented": 4
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 3
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 4
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 4
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 83 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 3,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T06:58:30.944855"
+    },
+    "data-otservbr-global/npc/cranky_lizard_crone.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "f2448293e3e6abbe372af29ca5042c87",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "cranky_lizard_crone",
+          "StdModule_say": 9,
+          "npcHandler_say": 6,
+          "sendTextMessage": 0,
+          "total": 15,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/cranky_lizard_crone.md",
+          "keys_documented": 9
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 9
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 9
+        },
+        "6_translation": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 9
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 85 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 9,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T06:58:32.189959"
     }
   },
   "global_stats": {
-    "files_completed": 59,
+    "files_completed": 63,
     "total_keys": 0
   }
 }

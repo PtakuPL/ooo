@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:46:50 UTC  
+> **Aktualizacja:** 2025-12-11 00:46:57 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **29314** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#154** | - |
+| 🔄 Cykl | **#155** | - |
 
 ---
 
@@ -69,7 +69,7 @@
 | 🇵🇱 Polski | 📊 452919 kluczy | 452919 | [EN] prefix |
 | 🇪🇸 Hiszpański | 📊 452919 kluczy | 452919 | [EN] prefix |
 | 🇫🇷 Francuski | 📊 297907 kluczy | 297907 | [EN] prefix |
-| 🌐 Pozostałe (0/53) | 🔄 | 2152888 | Aktualnie: IT |
+| 🌐 Pozostałe (0/53) | 🔄 | 2167743 | Aktualnie: IT |
 
 ---
 
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   154 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   155 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 CLIENT                                 │
+│ Tryb:      🌍 TRANSLATION_SYNC (Etap 1)              │
+│ Kategoria: 🌍 IT/items.json                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: client                                         │
-│ [██████████████████████████████████████████████████] │
-│ 283/200 kluczy (142%)                                          │
+│ 📊 Ostatnia aktywność: IT/items.json                                  │
+│ [████████████████████████████░░░░░░░░░░░░░░░░░░░░░░] │
+│ 16877/29314 kluczy (58%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 27515 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:46:50                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:46:57                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -103,7 +103,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29314** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#154** | continuous mode |
+| 🔄 Cykli wykonanych | **#155** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,8 +111,8 @@
 
 ## 📜 Historia ostatnich operacji
 
+- 🌍 `IT/items.json` +16877 kluczy @ 00:46:57
 - ⚡ `client` +0 kluczy @ 00:46:50
-- 🌍 `IT/html.json` +2022 kluczy @ 00:46:38
 - ⚡ `html` +0 kluczy @ 00:44:52
 - ⚡ `php` +0 kluczy @ 00:43:46
 - ⚡ `npclib` +0 kluczy @ 00:39:00
@@ -282,11 +282,11 @@
 | monsters | 7341 | 9549 | 4 | ⏭️ Skip 49m |
 | npc | 5334 | 0 | 0 | ✅ Active |
 | php | 1166 | 3426 | 2 | ⏭️ Skip 6m |
-| html | 795 | 1145 | 2 | ⏭️ Skip 8m |
+| html | 795 | 1145 | 2 | ⏭️ Skip 7m |
 | scripts | 385 | 0 | 4 | ⏭️ Skip 36m |
 | client | 283 | 821 | 4 | ⏭️ Skip 59m |
 | raids | 147 | 351 | 4 | ⏭️ Skip 50m |
-| startup | 23 | 23 | 4 | ⏭️ Skip 52m |
+| startup | 23 | 23 | 4 | ⏭️ Skip 51m |
 | libs | 21 | 53 | 4 | ⏭️ Skip 51m |
 | modules | 16 | 16 | 4 | ⏭️ Skip 51m |
 | cpp | 15 | 0 | 0 | ✅ Active |
@@ -317,14 +317,14 @@
 | events | 51m | 4x | Progresywny backoff |
 | chatchannels | 51m | 4x | Progresywny backoff |
 | modules | 51m | 4x | Progresywny backoff |
-| startup | 52m | 4x | Progresywny backoff |
+| startup | 51m | 4x | Progresywny backoff |
 | npclib | 52m | 4x | Progresywny backoff |
 | client | 59m | 4x | Progresywny backoff |
 | sendtextmessage | 0m | 2x | Progresywny backoff |
 | keywordhandler | 0m | 2x | Progresywny backoff |
 | twig | 0m | 2x | Progresywny backoff |
 | php | 6m | 2x | Progresywny backoff |
-| html | 8m | 2x | Progresywny backoff |
+| html | 7m | 2x | Progresywny backoff |
 
 ---
 
@@ -332,7 +332,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #154 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #155 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -346,13 +346,13 @@
 | ES | 452,919 | ⏳ |
 | PT | 452,982 | ⏳ |
 | FR | 297,907 | ⏳ |
-| IT | 2,022 | 🔄 |
+| IT | 16,877 | 🔄 |
 | NL | 0 | ⏳ |
 | CS | 0 | ⏳ |
 | SK | 0 | ⏳ |
 | HU | 0 | ⏳ |
 
-> **Aktualnie:** IT / html.json  
+> **Aktualnie:** IT / items.json  
 > **Ukończone języki:** 0/53  
 > **Prefix:** `[EN] ` (klucze do przetłumaczenia)
 
@@ -375,7 +375,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:46:50  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:46:57  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

@@ -713,5 +713,10 @@
   "item.2150.name": "RESERVED SPRITE",
   "item.2151.name": "RESERVED SPRITE",
   "item.2152.name": "stone pillar",
-  "item.2153.name": "marble pillar"
+  "item.2153.name": "marble pillar",
+  "item.2170.name": "framework wall",
+  "item.2177.name": "closed fence gate",
+  "item.2178.name": "open fence gate",
+  "item.2179.name": "closed fence gate",
+  "item.2180.name": "open fence gate"
 }

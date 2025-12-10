@@ -278,6 +278,11 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `frederik` - ukończono 2025-12-10 12:20
+- ✅ `frans` - ukończono 2025-12-10 12:20
+- ✅ `chuckles` - ukończono 2025-12-10 12:20
+- ✅ `battlemart` - ukończono 2025-12-10 12:20
+- ✅ `alaistar` - ukończono 2025-12-10 12:20
 - ✅ `flickering_soul` - ukończono 2025-12-10 12:18
 - ✅ `one_eyed_joe` - ukończono 2025-12-10 12:08
 - ✅ `zarak` - ukończono 2025-12-10 11:31

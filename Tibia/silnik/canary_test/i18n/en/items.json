@@ -733,5 +733,10 @@
   "item.2197.name": "ramp",
   "item.2198.name": "ramp",
   "item.2199.name": "obelisk",
-  "item.2200.name": "broken obelisk"
+  "item.2200.name": "broken obelisk",
+  "item.2217.name": "RESERVED SPRITE",
+  "item.2263.name": "stone pillar",
+  "item.2264.name": "broken stone pillar",
+  "item.2289.name": "stone pillar",
+  "item.2290.name": "broken stone pillar"
 }

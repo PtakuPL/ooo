@@ -1,7 +1,7 @@
 # NPC: hamish
 
 **Plik:** `data-otservbr-global/npc/hamish.lua`
-**Data migracji:** 2025-12-10 13:16
+**Data migracji:** 2025-12-10 13:17
 **Liczba tekstów:** 10
 
 ## Klucze i18n

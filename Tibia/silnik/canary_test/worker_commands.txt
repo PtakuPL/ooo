@@ -1,1 +1,2 @@
-FORCE:keywordhandler
+#FORCE:keywordhandler  # Wykonano 2025-12-10 19:26:51
+# [2025-12-10 19:26:51] Wykonano: FORCE:keywordhandler

@@ -835,3 +835,8 @@ src/game/zones/zone.hpp
 src/game/functions/game_reload.cpp
 src/game/functions/game_reload.hpp
 src/game/bank/bank.cpp
+KWH:data-otservbr-global/npc/lily.lua
+KWH:data-otservbr-global/npc/a_bearded_woman.lua
+KWH:data-otservbr-global/npc/captain_dreadnought.lua
+KWH:data-otservbr-global/npc/lardoc_bashsmite.lua
+KWH:data-otservbr-global/npc/emma.lua

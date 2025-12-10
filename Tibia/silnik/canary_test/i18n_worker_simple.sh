@@ -1680,7 +1680,8 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                     echo "🔧 TRYB 1: MIGRACJA ($MODE_ARG plików do zrobienia)"
                     COUNT=0
                     for f in data-otservbr-global/npc/*.lua; do
-                        if grep -q "StdModule\.say.*text" "$f" 2>/dev/null; then
+                        # Sprawdź czy ma StdModule.say (może być na innej linii niż text)
+                        if grep -q "StdModule\.say" "$f" 2>/dev/null; then
                             if ! grep -q "i18nKey" "$f" 2>/dev/null; then
                                 process_file "$f"
                                 COUNT=$((COUNT + 1))

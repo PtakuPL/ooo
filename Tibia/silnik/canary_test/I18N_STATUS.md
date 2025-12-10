@@ -278,6 +278,7 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `gnomus` - ukończono 2025-12-10 07:01
 - ✅ `ghost_of_a_priest` - ukończono 2025-12-10 07:01
 - ✅ `gewen` - ukończono 2025-12-10 07:01
 - ✅ `gelagos` - ukończono 2025-12-10 07:01

@@ -22,8 +22,16 @@
 | # | Problem | Opis | Status |
 |---|---------|------|--------|
 | 4 | **npcHandler:say z tablicami** | `npcHandler:say({...})` z tablicami tekstów nie jest obsługiwane. | ❌ DO ROZBUDOWY |
-| 5 | **voices/keywordHandler patterns** | Wzorce `voices = {{ text = "..." }}` i `keywordHandler:add*Keyword` nie są transformowane. | ❌ DO ROZBUDOWY |
+| 5 | **voices pattern** | `voices = {{ text = "..." }}` wymaga modyfikacji C++ (broadcast → per-player). | ❌ WYMAGA C++ |
 | 6 | **Brak raportu końcowego** | Po zakończeniu migracji brak szczegółowego raportu co zostało zrobione vs co pominięto. | ❌ DO DODANIA |
+
+### ✅ NAPRAWIONE (2025-12-10)
+
+| # | Problem | Rozwiązanie |
+|---|---------|-------------|
+| N1 | **Bug stage_5 kasujący JSON** | Zmieniono `except: data = {}` na `exit(1)` przy błędzie odczytu |
+| N2 | **addGreetKeyword/addFarewellKeyword** | Dodano transformację + naprawiono regex dla callbacków |
+| N3 | **GreetModule bez i18n** | Dodano obsługę i18nKey w `custom_modules.lua` |
 
 ### 🟢 Priorytet NISKI
 
@@ -190,14 +198,28 @@ npcConfig.voices = {
 
 ## 📊 Obecny stan systemu
 
-> **Ostatnia aktualizacja:** 2025-12-10 13:00 UTC
+> **Ostatnia aktualizacja:** 2025-12-10 14:15 UTC
 
 ### ✅ Co mamy (ZROBIONE):
-- ✅ `i18n_worker_simple.sh` - Worker v2.1 Multi-Mode (8 etapów)
+- ✅ `i18n_worker_simple.sh` - Worker v2.2 Multi-Mode (8 etapów)
 - ✅ `i18n_guardian.sh` - Guardian restartujący workera + auto-push
 - ✅ 53 katalogi językowe w `i18n/`
 - ✅ Pliki JSON z kluczami (npc.json, items.json, scripts.json, etc.)
 - ✅ Cron job dla Guardian
+- ✅ **StdModule.say** - 297/297 plików zmigrowanych (100%)
+- ✅ **npcHandler:say("...", npc, creature)** - ~150 plików zmigrowanych
+- ✅ **addGreetKeyword/addFarewellKeyword** - 43/43 plików zmigrowanych (78 kluczy)
+- ✅ **GreetModule** obsługuje i18nKey w `custom_modules.lua`
+- ✅ **4252 kluczy** w `i18n/en/npc.json`
+
+### ⚠️ NAPRAWIONE BUGI (ta sesja):
+- ✅ **Krytyczny bug stage_5**: `data = {}` przy błędzie kasowało JSON → zmieniono na `exit(1)`
+- ✅ **Regex greet/farewell**: Nie łapał formatu z callbackiem `}, function(player)` → naprawiono
+
+### ❌ Pozostało do zrobienia:
+- ❌ **voices** - ~300+ plików, wymaga modyfikacji C++ (broadcast → per-player)
+- ❌ **npcHandler:say({...})** - tablice tekstów (~50 plików)
+- ❌ **Automatyczne tłumaczenia** - tryb TRANSLATION wymaga interaktywnego terminala
 - ✅ **StdModule.say** - 297/297 plików zmigrowanych ✅
 - ✅ **npcHandler:say("text")** - ~450 plików z NPC_LIB.i18n.npcSay ✅
 - ✅ **~4200 kluczy** wyciągniętych do en/npc.json

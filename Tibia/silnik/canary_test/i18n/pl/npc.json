@@ -337,6 +337,9 @@
   "npc.oldrak.tible_done": "Oto twoje Święte Pismo.",
   "npc.oldrak.not_enough_money": "Nie masz wystarczająco pieniędzy.",
 
+  "npc.oliver.report": "Nikt nie zna kłopotów, jakie widziałem... <składa dość szczegółowy raport.>",
+  "npc.oliver.pass_choice": "Możesz użyć {pass}, by przejść do {Factory Quarter} albo {Sunken Quarter}. Dokąd się wybierasz?",
+
   "npc.one_eyed_joe.voice_1": "Też to słyszałeś?",
   "npc.one_eyed_joe.greet_done": "Dobra robota! Ale wiedz o tym: Przeklęty kryształ zdaje się regenerować z czasem. Może być konieczne, by wrócić i powtórzyć to, co zrobiłeś tam na dole.",
   "npc.one_eyed_joe.greet": "Witaj. Przepraszam, ledwo cię zauważyłem. Jestem trochę zdenerwowany. Te upiornie {dźwięki} tam na dole, wiesz",

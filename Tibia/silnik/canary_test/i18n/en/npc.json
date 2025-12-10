@@ -337,6 +337,9 @@
   "npc.oldrak.tible_done": "Here is your The Holy Tible.",
   "npc.oldrak.not_enough_money": "You do not have enough money.",
 
+  "npc.oliver.report": "Nobody knows the trouble I've seen... <tells a quite detailed report.>",
+  "npc.oliver.pass_choice": "You can {pass} either to the {Factory Quarter} or {Sunken Quarter}. Which one will it be?",
+
   "npc.one_eyed_joe.voice_1": "Did you hear that, too?",
   "npc.one_eyed_joe.greet_done": "Well done! But know this: The cursed crystal seems to regenerate over time. It could be necessary to come back and repeat whatever you have done down there.",
   "npc.one_eyed_joe.greet": "Hello there. I'm sorry, I hardly noticed you. I'm a bit nervous. The spooky {sounds} down there, you know",

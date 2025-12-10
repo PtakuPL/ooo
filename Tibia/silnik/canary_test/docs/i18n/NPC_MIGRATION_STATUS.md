@@ -1,6 +1,6 @@
 # Status Migracji NPC do i18n
 
-**Ostatnia aktualizacja:** 2025-12-11  
+**Ostatnia aktualizacja:** 2025-12-12  
 **Odpowiedzialny:** Agent 2 (N-Z), Agent 1 (A-M)
 
 ## Podsumowanie
@@ -10,7 +10,7 @@
 | Łącznie NPC | 1025 |
 | NPC z `sendTextMessage` | 317 |
 | NPC z `setMessage` | 627 |
-| Zmigrowane | 29 |
+| Zmigrowane | 30 |
 | W trakcie | 0 |
 | Pozostałe | ~999 |
 
@@ -22,8 +22,8 @@
 | N-Z | Agent 2 | W TOKU |
 
 ## Pipeline Status
-- **Kluczy:** 39966
-- **Języki:** en, pl, es, pt, de (100%)
+- **Kluczy:** 39968
+- **Języki:** en, pl, es, pt, de (100% po pipeline z 2025-12-12)
 
 ## Zmigrowane NPC
 
@@ -79,7 +79,7 @@
 | old_adall | `npc/old_adall.lua` | — | ⏭️ SKIP (StdModule travel) | — |
 | old_rock_boy | `npc/old_rock_boy.lua` | — | ⏭️ SKIP (brak dialogów) | — |
 | oldrak | `npc/oldrak.lua` | `npc.oldrak.*` (24 klucze) | ✅ DONE | 2025-12-11 |
-| oliver | `npc/oliver.lua` | — | ⏳ TODO (mały) | — |
+| oliver | `npc/oliver.lua` | `npc.oliver.*` (2 klucze) | ✅ DONE | 2025-12-12 |
 | olrik | `npc/olrik.lua` | `npc.olrik.*` (3 klucze) | ✅ DONE | 2025-12-10 |
 | omrabas | `npc/omrabas.lua` | — | ⏳ TODO (BARDZO DUŻY ~551 linii) | — |
 | omur | `npc/omur.lua` | — | ⏭️ SKIP (shop) | — |

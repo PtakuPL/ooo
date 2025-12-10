@@ -37335,6 +37335,8 @@ npc.oldrak.tible_ask,Would you like to buy a The Holy Tible for 1000 gold?,Czy c
 npc.oldrak.tible_quest_first,You need to complete the quest for the book first before you can buy The Holy Tible.,"Musisz najpierw ukończyć quest na księgę, zanim będziesz mógł kupić Święte Pismo.",translated
 npc.oldrak.tible_done,Here is your The Holy Tible.,Oto twoje Święte Pismo.,translated
 npc.oldrak.not_enough_money,You do not have enough money.,Nie masz wystarczająco pieniędzy.,translated
+npc.oliver.report,Nobody knows the trouble I've seen... <tells a quite detailed report.>,"Nikt nie zna kłopotów, jakie widziałem... <składa dość szczegółowy raport.>",translated
+npc.oliver.pass_choice,You can {pass} either to the {Factory Quarter} or {Sunken Quarter}. Which one will it be?,"Możesz użyć {pass}, by przejść do {Factory Quarter} albo {Sunken Quarter}. Dokąd się wybierasz?",translated
 npc.one_eyed_joe.voice_1,"Did you hear that, too?",Też to słyszałeś?,translated
 npc.one_eyed_joe.greet_done,Well done! But know this: The cursed crystal seems to regenerate over time. It could be necessary to come back and repeat whatever you have done down there.,"Dobra robota! Ale wiedz o tym: Przeklęty kryształ zdaje się regenerować z czasem. Może być konieczne, by wrócić i powtórzyć to, co zrobiłeś tam na dole.",translated
 npc.one_eyed_joe.greet,"Hello there. I'm sorry, I hardly noticed you. I'm a bit nervous. The spooky {sounds} down there, you know","Witaj. Przepraszam, ledwo cię zauważyłem. Jestem trochę zdenerwowany. Te upiornie {dźwięki} tam na dole, wiesz",translated

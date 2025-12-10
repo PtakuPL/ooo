@@ -337,6 +337,9 @@
   "npc.oldrak.tible_done": "Hier ist deine Heilige Bibel.",
   "npc.oldrak.not_enough_money": "Du hast nicht genug Geld.",
 
+  "npc.oliver.report": "Niemand kennt die Probleme, die ich gesehen habe... <erstattet einen ziemlich ausführlichen Bericht.>",
+  "npc.oliver.pass_choice": "Du kannst mit {pass} entweder zum {Factory Quarter} oder zum {Sunken Quarter} gehen. Wohin soll es gehen?",
+
   "npc.one_eyed_joe.voice_1": "Hast du das auch gehört?",
   "npc.one_eyed_joe.greet_done": "Gut gemacht! Aber wisse: Der verfluchte Kristall scheint sich mit der Zeit zu regenerieren. Es könnte nötig sein, zurückzukommen und zu wiederholen, was du dort unten getan hast.",
   "npc.one_eyed_joe.greet": "Hallo. Entschuldige, ich habe dich kaum bemerkt. Ich bin etwas nervös. Die gespenstischen {Geräusche} dort unten, weisst du",

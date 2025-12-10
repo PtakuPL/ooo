@@ -109,12 +109,17 @@
 -DOTC_ENABLE_PUGIXML=OFF      # pugixml XML parser
 -DOTC_ENABLE_FMT=OFF          # fmt library
 -DOTC_ENABLE_GMP=OFF          # GMP (RSA when no OpenSSL)
+-DOTC_ENABLE_ANDROID_GAME_ACTIVITY=OFF  # Android Game Activity SDK (NOWE!)
 -DOTC_ENABLE_TTF=OFF          # Freetype/TTF
 -DOTC_ENABLE_HARFBUZZ=OFF     # HarfBuzz shaping
 -DOTC_ENABLE_FRIBIDI=OFF      # FriBidi bidi
 -DOTC_ENABLE_PROTOBUF=OFF     # Protobuf
 -DTOGGLE_FRAMEWORK_SOUND=OFF  # OpenAL/Vorbis/Ogg (uwaga: inna nazwa!)
 ```
+
+### 🔧 NAPRAWA 4: Android Game Activity (commit `f7ee7ca7`)
+**Problem:** `Could not find a package configuration file provided by "game-activity"`
+**Rozwiązanie:** Dodano opcję `OTC_ENABLE_ANDROID_GAME_ACTIVITY` i flagę w workflow
 
 ### Jak sprawdzić logi workflow:
 ```bash

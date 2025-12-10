@@ -337,6 +337,9 @@
   "npc.oldrak.tible_done": "Aqui está sua Sagrada Bíblia.",
   "npc.oldrak.not_enough_money": "Você não tem dinheiro suficiente.",
 
+  "npc.oliver.report": "Ninguém conhece os problemas que eu vi... <faz um relatório bastante detalhado.>",
+  "npc.oliver.pass_choice": "Você pode usar {pass} para ir ao {Factory Quarter} ou ao {Sunken Quarter}. Qual você escolhe?",
+
   "npc.one_eyed_joe.voice_1": "Você também ouviu isso?",
   "npc.one_eyed_joe.greet_done": "Muito bem! Mas saiba disto: O cristal amaldiçoado parece se regenerar com o tempo. Pode ser necessário voltar e repetir o que você fez lá embaixo.",
   "npc.one_eyed_joe.greet": "Olá. Desculpe, mal te notei. Estou um pouco nervoso. Os {sons} assustadores lá embaixo, sabe",

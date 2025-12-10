@@ -337,6 +337,9 @@
   "npc.oldrak.tible_done": "Aquí está tu Santa Biblia.",
   "npc.oldrak.not_enough_money": "No tienes suficiente dinero.",
 
+  "npc.oliver.report": "Nadie conoce los problemas que he visto... <presenta un informe bastante detallado.>",
+  "npc.oliver.pass_choice": "Puedes usar {pass} para ir al {Factory Quarter} o al {Sunken Quarter}. ¿Cuál eliges?",
+
   "npc.one_eyed_joe.voice_1": "¿Tú también escuchaste eso?",
   "npc.one_eyed_joe.greet_done": "¡Bien hecho! Pero debes saber: El cristal maldito parece regenerarse con el tiempo. Podría ser necesario volver y repetir lo que hayas hecho allí abajo.",
   "npc.one_eyed_joe.greet": "Hola. Lo siento, apenas te noté. Estoy un poco nervioso. Los escalofriantes {sonidos} de allí abajo, ya sabes",

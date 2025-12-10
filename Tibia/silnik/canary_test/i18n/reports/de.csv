@@ -37335,6 +37335,8 @@ npc.oldrak.tible_ask,Would you like to buy a The Holy Tible for 1000 gold?,Möch
 npc.oldrak.tible_quest_first,You need to complete the quest for the book first before you can buy The Holy Tible.,"Du musst zuerst die Quest für das Buch abschließen, bevor du die Heilige Bibel kaufen kannst.",translated
 npc.oldrak.tible_done,Here is your The Holy Tible.,Hier ist deine Heilige Bibel.,translated
 npc.oldrak.not_enough_money,You do not have enough money.,Du hast nicht genug Geld.,translated
+npc.oliver.report,Nobody knows the trouble I've seen... <tells a quite detailed report.>,"Niemand kennt die Probleme, die ich gesehen habe... <erstattet einen ziemlich ausführlichen Bericht.>",translated
+npc.oliver.pass_choice,You can {pass} either to the {Factory Quarter} or {Sunken Quarter}. Which one will it be?,Du kannst mit {pass} entweder zum {Factory Quarter} oder zum {Sunken Quarter} gehen. Wohin soll es gehen?,translated
 npc.one_eyed_joe.voice_1,"Did you hear that, too?",Hast du das auch gehört?,translated
 npc.one_eyed_joe.greet_done,Well done! But know this: The cursed crystal seems to regenerate over time. It could be necessary to come back and repeat whatever you have done down there.,"Gut gemacht! Aber wisse: Der verfluchte Kristall scheint sich mit der Zeit zu regenerieren. Es könnte nötig sein, zurückzukommen und zu wiederholen, was du dort unten getan hast.",translated
 npc.one_eyed_joe.greet,"Hello there. I'm sorry, I hardly noticed you. I'm a bit nervous. The spooky {sounds} down there, you know","Hallo. Entschuldige, ich habe dich kaum bemerkt. Ich bin etwas nervös. Die gespenstischen {Geräusche} dort unten, weisst du",translated

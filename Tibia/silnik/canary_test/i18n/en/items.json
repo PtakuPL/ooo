@@ -2238,5 +2238,20 @@
   "item.5059.name": "small snake head",
   "item.5060.name": "small snake head",
   "item.5080.name": "panda teddy",
-  "item.5081.name": "stairs"
+  "item.5081.name": "stairs",
+  "item.5082.name": "closed door",
+  "item.5083.name": "open door",
+  "item.5084.name": "closed door",
+  "item.5085.name": "open door",
+  "item.5086.name": "monkey statue 'see' kit",
+  "item.5087.name": "monkey statue 'hear' kit",
+  "item.5088.name": "monkey statue 'speak' kit",
+  "item.5089.name": "butterfly conservation kit",
+  "item.5090.name": "treasure map",
+  "item.5095.name": "coconut palm",
+  "item.5096.name": "mango",
+  "item.5097.name": "closed door",
+  "item.5098.name": "closed door",
+  "item.5099.name": "open door",
+  "item.5100.name": "closed door"
 }

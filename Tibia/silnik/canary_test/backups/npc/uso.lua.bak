@@ -200,7 +200,7 @@ keywordHandler:addSpellKeyword({ "annihilation" }, {
 
 keywordHandler:addKeyword({ "healing", "spells" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.uso.stdmod_1",
+	text = "In this category I have '{Bruise Bane}', '{Cure Bleeding}', '{Wound Cleansing}', '{Cure Poison}', '{Intense Wound Cleansing}', '{Recovery}' and '{Intense Recovery}'.",
 })
 keywordHandler:addKeyword({ "attack", "spells" }, StdModule.say, {
 	npcHandler = npcHandler,
@@ -208,11 +208,11 @@ keywordHandler:addKeyword({ "attack", "spells" }, StdModule.say, {
 })
 keywordHandler:addKeyword({ "support", "spells" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.uso.stdmod_2",
+	text = "In this category I have '{Light}', '{Find Person}', '{Magic Rope}', '{Levitate}', '{Haste}', '{Charge}' and '{Great Light}'.",
 })
 keywordHandler:addKeyword({ "spells" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.uso.stdmod_3",
+	text = "I can teach you {healing spells}, {attack spells} and {support spells}. What kind of spell do you wish to learn? You can also tell me for which level you would like to learn a spell, if you prefer that.",
 })
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

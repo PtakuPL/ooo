@@ -82,7 +82,7 @@ end
 -- Basic keywords
 keywordHandler:addKeyword({ "offer" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_1",
+	text = "Haven't they taught you anything at school? Ask for a {trade} if you want to trade.",
 })
 keywordHandler:addAliasKeyword({ "sell" })
 keywordHandler:addAliasKeyword({ "buy" })
@@ -90,178 +90,178 @@ keywordHandler:addAliasKeyword({ "food" })
 
 keywordHandler:addKeyword({ "information" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_2",
+	text = "Help yourself. Or ask the other {citizens}, I don't have time for that.",
 })
 keywordHandler:addAliasKeyword({ "help" })
 keywordHandler:addAliasKeyword({ "hint" })
 
 keywordHandler:addKeyword({ "how", "are", "you" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_3",
+	text = "Fine enough.",
 })
 keywordHandler:addKeyword({ "name" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_4",
+	text = "Willie.",
 })
 keywordHandler:addKeyword({ "job" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_5",
+	text = "I'm a farmer and a cook.",
 })
 keywordHandler:addKeyword({ "cook" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_6",
+	text = "I try out old and new {recipes}. You can sell all {food} to me.",
 })
 keywordHandler:addKeyword({ "recipe" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_7",
+	text = "I'd love to try a banana pie but I lack the {bananas}. If you get me one, I'll reward you.",
 })
 keywordHandler:addKeyword({ "citizen" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_8",
+	text = "Which one?",
 })
 keywordHandler:addKeyword({ "rookgaard" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_9",
+	text = "This island would be wonderful if there weren't a constant flood of newcomers.",
 })
 keywordHandler:addKeyword({ "tibia" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_10",
+	text = "If I were you, I'd stay here.",
 })
 keywordHandler:addKeyword({ "spell" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_11",
+	text = "I know how to spell.",
 })
 keywordHandler:addKeyword({ "magic" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_12",
+	text = "I'm a magician in the kitchen.",
 })
 keywordHandler:addKeyword({ "weapon" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_13",
+	text = "I'm not in the weapon business, so stop disturbing me.",
 })
 keywordHandler:addKeyword({ "king" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_14",
+	text = "I'm glad that we don't see many officials here.",
 })
 keywordHandler:addKeyword({ "god" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_15",
+	text = "I'm a farmer, not a preacher.",
 })
 keywordHandler:addKeyword({ "sewer" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_16",
+	text = "What about them? Do you live there?",
 })
 keywordHandler:addKeyword({ "dungeon" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_17",
+	text = "I've got no time for your dungeon nonsense.",
 })
 keywordHandler:addKeyword({ "rat" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_18",
+	text = "My cousin {Billy} cooks rat stew. Yuck! Can you imagine that?",
 })
 keywordHandler:addKeyword({ "monster" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_19",
+	text = "Are you afraid of monsters? I bet even the sight of a {rat} would let your knees tremble. Hahaha.",
 })
 keywordHandler:addKeyword({ "time" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_20",
+	text = "Do I look like a clock?",
 })
 keywordHandler:addKeyword({ "god" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_21",
+	text = "I'm a farmer, not a preacher.",
 })
 
 -- Names
 keywordHandler:addKeyword({ "al", "dee" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_22",
+	text = "Can't stand him.",
 })
 keywordHandler:addKeyword({ "amber" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_23",
+	text = "Quite a babe.",
 })
 keywordHandler:addKeyword({ "billy" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_24",
+	text = "Don't ever mention his name again! He can't even {cook}!",
 })
 keywordHandler:addKeyword({ "cipfried" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_25",
+	text = "Our little monkey.",
 })
 keywordHandler:addKeyword({ "dallheim" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_26",
+	text = "Uhm, fine guy I think.",
 })
 keywordHandler:addKeyword({ "dixi" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_27",
+	text = "Boring little girl.",
 })
 keywordHandler:addKeyword({ "hyacinth" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_28",
+	text = "Overrated.",
 })
 keywordHandler:addKeyword({ "lee'delle" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_29",
+	text = "She thinks she owns this island with her underpriced offers.",
 })
 keywordHandler:addKeyword({ "lily" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_30",
+	text = "I don't like hippie girls.",
 })
 keywordHandler:addKeyword({ "loui" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_31",
+	text = "Leave me alone with that guy.",
 })
 keywordHandler:addKeyword({ "norma" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_32",
+	text = "About time we got a bar here.",
 })
 keywordHandler:addKeyword({ "obi" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_33",
+	text = "This old guy has only money on his mind.",
 })
 keywordHandler:addKeyword({ "oracle" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_34",
+	text = "Hopefully it gets you off this island soon so you can stop bugging me.",
 })
 keywordHandler:addKeyword({ "paulie" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_35",
+	text = "Uptight and correct in any situation.",
 })
 keywordHandler:addKeyword({ "santiago" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_36",
+	text = "If he wants to sacrifice all his free time for beginners, fine with me. Then they don't disturb me.",
 })
 keywordHandler:addKeyword({ "seymour" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_37",
+	text = "This joke of a man thinks he is sooo important.",
 })
 keywordHandler:addKeyword({ "tom" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_38",
+	text = "Decent guy.",
 })
 keywordHandler:addKeyword({ "willie" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_39",
+	text = "Yeah, so?",
 })
 keywordHandler:addKeyword({ "zerbrus" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_40",
+	text = "Overrated.",
 })
 keywordHandler:addKeyword({ "zirella" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_41",
+	text = "Too old to be interesting for me.",
 })
 
 -- Studded Shield Quest
 local bananaKeyword = keywordHandler:addKeyword({ "banana" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_42",
+	text = "Have you found a banana for me?",
 })
 bananaKeyword:addChildKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_43",
+	text = "A banana! Great. Here, take this shield, I don't need it anyway.",
 	reset = true,
 }, function(player)
 	return player:getItemCount(3587) > 0
@@ -271,12 +271,12 @@ end, function(player)
 end)
 bananaKeyword:addChildKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_44",
+	text = "Are you trying to mess with me?!",
 	reset = true,
 })
 bananaKeyword:addChildKeyword({ "" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.willie.stdmod_45",
+	text = "Too bad.",
 	reset = true,
 })
 

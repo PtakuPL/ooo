@@ -847,7 +847,7 @@ with open('$STATUS_FILE', 'w') as f: json.dump(data, f, indent=2)
 }
 
 #===============================================================================
-# ETAP 5: EXTRACTION_EN (klucze do JSON)
+# ETAP 5: EXTRACTION_EN (klucze do JSON) - StdModule.say + npcHandler:say
 #===============================================================================
 stage_5() {
     local file="$1"
@@ -872,9 +872,6 @@ import re
 with open("$backup", "r") as f:
     content = f.read()
 
-# Znajdź wszystkie text = "..."
-texts = re.findall(r'text\s*=\s*"([^"]+)"', content)
-
 # Wczytaj npc.json
 json_file = "$I18N_DIR/en/npc.json"
 try:
@@ -883,11 +880,31 @@ try:
 except:
     data = {}
 
-# Dodaj klucze
 added = 0
-for i, text in enumerate(texts, 1):
+
+#==============================================================================
+# EKSTRAKCJA 1: StdModule.say z text = "..."
+#==============================================================================
+texts_stdmod = re.findall(r'text\s*=\s*"([^"]+)"', content)
+for i, text in enumerate(texts_stdmod, 1):
     if len(text) >= 5:
         key = f"npc.$safe.stdmod_{i}"
+        if key not in data:
+            data[key] = text
+            added += 1
+
+#==============================================================================
+# EKSTRAKCJA 2: npcHandler:say("text", npc, creature/player)
+# Nie ekstrakcja konkatenacji ani tablic
+#==============================================================================
+# Pattern dla prostych npcHandler:say("tekst", npc, creature)
+pattern_npcsay = r'npcHandler:say\(\s*"([^"]{5,})"\s*,\s*npc\s*,\s*(?:creature|player)\s*\)'
+texts_npcsay = re.findall(pattern_npcsay, content)
+
+for i, text in enumerate(texts_npcsay, 1):
+    # Pomiń konkatenacje (jeśli tekst zawiera zmienne)
+    if '..' not in text:
+        key = f"npc.$safe.say_{i}"
         if key not in data:
             data[key] = text
             added += 1
@@ -896,12 +913,17 @@ for i, text in enumerate(texts, 1):
 with open(json_file, "w") as f:
     json.dump(data, f, indent=2, ensure_ascii=False)
 
-print(f"Dodano {added} kluczy")
+print(f"Dodano {added} kluczy (StdModule: {len(texts_stdmod)}, npcHandler:say: {len(texts_npcsay)})")
 
 # Update status
 with open("$STATUS_FILE", "r") as f:
     status = json.load(f)
-status["files"]["$file"]["stages"]["5_extraction_en"] = {"status": "completed", "keys_added": added}
+status["files"]["$file"]["stages"]["5_extraction_en"] = {
+    "status": "completed", 
+    "keys_added": added,
+    "stdmod_keys": len([t for t in texts_stdmod if len(t) >= 5]),
+    "npcsay_keys": len(texts_npcsay)
+}
 with open("$STATUS_FILE", "w") as f:
     json.dump(status, f, indent=2)
 EOF

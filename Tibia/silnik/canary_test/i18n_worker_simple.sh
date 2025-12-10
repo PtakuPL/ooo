@@ -3262,6 +3262,26 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                             process_npclib_category "$BATCH"
                             echo "   📊 NpcLib: Dodano klucze"
                             ;;
+                        php)
+                            echo "   🐘 Przetwarzam PHP (html_copy)..."
+                            process_php_category "$BATCH"
+                            echo "   📊 PHP: Dodano klucze"
+                            ;;
+                        html)
+                            echo "   📄 Przetwarzam HTML/Twig..."
+                            process_html_category "$BATCH"
+                            echo "   📊 HTML: Dodano klucze"
+                            ;;
+                        cpp)
+                            echo "   ⚙️ Przetwarzam C++ (src)..."
+                            process_cpp_category "$BATCH"
+                            echo "   📊 C++: Dodano klucze"
+                            ;;
+                        client)
+                            echo "   🎮 Przetwarzam OTClient (testyy)..."
+                            process_client_category "$BATCH"
+                            echo "   📊 Client: Dodano klucze"
+                            ;;
                         *)
                             echo "   ⚠️ Nieznana kategoria: $MODE_CAT"
                             ;;

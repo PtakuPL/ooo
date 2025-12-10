@@ -1023,5 +1023,10 @@
   "item.2913.name": "used candelabrum",
   "item.2914.name": "lamp",
   "item.2915.name": "lit lamp",
-  "item.2916.name": "used lamp"
+  "item.2916.name": "used lamp",
+  "item.2917.name": "candlestick",
+  "item.2918.name": "lit candlestick",
+  "item.2919.name": "used candlestick",
+  "item.2920.name": "torch",
+  "item.2921.name": "lit torch"
 }

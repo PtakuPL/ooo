@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 23:36:03 UTC  
+> **Aktualizacja:** 2025-12-10 23:36:10 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **24214** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#17** | - |
+| 🔄 Cykl | **#18** | - |
 
 ---
 
@@ -76,19 +76,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    17 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    18 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 RAIDS                                  │
+│ Kategoria: 🎒 WORLD                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: raids                      │
-│ [█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 30/1000 kluczy (3%)                                          │
+│ 📊 Ostatnia aktywność: world                      │
+│ [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
+│ 0/1000 kluczy (0%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 12215 operacji               │
 │ 🕐 Aktywne kategorie: 16                               │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 23:36:03                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 23:36:10                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -102,7 +102,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **24214** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
-| 🔄 Cykli wykonanych | **#17** | continuous mode |
+| 🔄 Cykli wykonanych | **#18** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -110,6 +110,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `world` +0 kluczy @ 23:36:10
 - ⚡ `raids` +0 kluczy @ 23:36:03
 - 👹 `monsters` +0 kluczy @ 23:35:51
 - ⚡ `chatchannels` +0 kluczy @ 23:35:37
@@ -117,7 +118,6 @@
 - ⚡ `libs` +0 kluczy @ 23:35:08
 - 🎒 `items` +0 kluczy @ 23:34:54
 - ⚡ `twig` +0 kluczy @ 23:34:40
-- ⚡ `keywordhandler` +0 kluczy @ 23:32:38
 
 ---
 
@@ -291,14 +291,14 @@
 | messages | 11 | 0 | 0 | ✅ Active |
 | chatchannels | 8 | 8 | 2 | ⏭️ Skip 9m |
 | events | 5 | 5 | 2 | ⏭️ Skip 9m |
-| libs | 5 | 5 | 2 | ⏭️ Skip 9m |
+| libs | 5 | 5 | 2 | ⏭️ Skip 8m |
 | actions | 0 | 0 | 0 | ⏳ Empty |
 | errors | 0 | 0 | 0 | ⏳ Empty |
-| npclib | 0 | 0 | 1 | ⏭️ Skip 0m |
+| npclib | 0 | 0 | 1 | ⏳ Empty |
 | quests | 0 | 0 | 0 | ⏳ Empty |
 | server | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
-| world | 0 | 0 | 4 | ⏳ Empty |
+| world | 0 | 0 | 5 | ⏭️ Skip 119m |
 
 ---
 
@@ -309,11 +309,11 @@
 | scripts | 61m | 6x | Progresywny backoff |
 | monsters | 119m | 5x | Progresywny backoff |
 | raids | 119m | 5x | Progresywny backoff |
+| world | 119m | 5x | Progresywny backoff |
 | items | 8m | 2x | Progresywny backoff |
-| libs | 9m | 2x | Progresywny backoff |
+| libs | 8m | 2x | Progresywny backoff |
 | events | 9m | 2x | Progresywny backoff |
 | chatchannels | 9m | 2x | Progresywny backoff |
-| npclib | 0m | 1x | Progresywny backoff |
 | php | 0m | 1x | Progresywny backoff |
 | html | 0m | 1x | Progresywny backoff |
 | client | 0m | 1x | Progresywny backoff |
@@ -327,7 +327,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #17 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #18 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -370,7 +370,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:36:03  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:36:10  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

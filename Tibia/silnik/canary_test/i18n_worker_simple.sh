@@ -1082,16 +1082,23 @@ mode_translation() {
     log "${BLUE}TRYB 2: TŁUMACZENIA (instrukcje dla LLM)${NC} - Język: $target_lang"
     log "${BLUE}═══════════════════════════════════════════════════════════════${NC}"
     
-    python3 << PYTRANSLATE
+    # Przekaż zmienne do Pythona przez zmienne środowiskowe
+    export TRANSLATE_LANG="$target_lang"
+    export TRANSLATE_I18N_DIR="$I18N_DIR"
+    export TRANSLATE_STATUS_FILE="$STATUS_FILE"
+    export TRANSLATE_BATCH="$TRANSLATION_BATCH"
+    export TRANSLATE_SUBSTAGE="$TRANSLATION_SUBSTAGE"
+    
+    python3 << 'PYTRANSLATE'
 import json
 import os
 import re
 
-target_lang = "$target_lang"
-i18n_dir = "$I18N_DIR"
-status_file = "$STATUS_FILE"
-batch_size = $TRANSLATION_BATCH
-substage_size = $TRANSLATION_SUBSTAGE
+target_lang = os.environ.get("TRANSLATE_LANG", "pl")
+i18n_dir = os.environ.get("TRANSLATE_I18N_DIR", "i18n")
+status_file = os.environ.get("TRANSLATE_STATUS_FILE", "i18n_file_status.json")
+batch_size = int(os.environ.get("TRANSLATE_BATCH", "50"))
+substage_size = int(os.environ.get("TRANSLATE_SUBSTAGE", "4"))
 
 # [1/6] SELECT_SOURCE
 print("[1/6] SELECT_SOURCE: en/npc.json")

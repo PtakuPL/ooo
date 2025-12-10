@@ -8508,5 +8508,20 @@
   "item.25999.name": "valuable mayhem hammer",
   "item.26000.name": "ornate mayhem hammer",
   "item.26001.name": "plain mayhem bow",
-  "item.26002.name": "valuable mayhem bow"
+  "item.26002.name": "valuable mayhem bow",
+  "item.26003.name": "ornate mayhem bow",
+  "item.26004.name": "plain mayhem crossbow",
+  "item.26005.name": "valuable mayhem crossbow",
+  "item.26006.name": "ornate mayhem crossbow",
+  "item.26007.name": "plain mayhem wand",
+  "item.26008.name": "valuable mayhem wand",
+  "item.26009.name": "ornate mayhem wand",
+  "item.26010.name": "plain mayhem rod",
+  "item.26011.name": "valuable mayhem rod",
+  "item.26012.name": "ornate mayhem rod",
+  "item.26014.name": "plain remedy blade",
+  "item.26015.name": "valuable remedy blade",
+  "item.26016.name": "ornate remedy blade",
+  "item.26017.name": "plain remedy slayer",
+  "item.26018.name": "valuable remedy slayer"
 }

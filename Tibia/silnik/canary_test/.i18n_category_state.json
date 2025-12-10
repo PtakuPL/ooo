@@ -124,7 +124,7 @@
   },
   "translation_sync": {
     "current_lang": "it",
-    "current_category": "modules.json",
+    "current_category": "monsters.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -219,16 +219,17 @@
       },
       "it": {
         "chatchannels": 8,
-        "total": 46645,
+        "total": 68878,
         "client": 283,
         "cpp": 15,
         "events": 5,
         "html": 795,
         "items": 13749,
         "libs": 21,
-        "modules": 16
+        "modules": 16,
+        "monsters": 7341
       }
     },
-    "last_sync": 1765410463.13786
+    "last_sync": 1765410469.9458568
   }
 }

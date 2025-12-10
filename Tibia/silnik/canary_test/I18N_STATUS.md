@@ -301,6 +301,11 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `gnomegica` - ukończono 2025-12-10 20:45
+- ✅ `ghorza` - ukończono 2025-12-10 20:45
+- ✅ `frederik` - ukończono 2025-12-10 20:45
+- ✅ `frans` - ukończono 2025-12-10 20:45
+- ✅ `chuckles` - ukończono 2025-12-10 20:45
 - ✅ `battlemart` - ukończono 2025-12-10 20:41
 - ✅ `alaistar` - ukończono 2025-12-10 20:41
 - ✅ `ser_tybald` - ukończono 2025-12-10 15:04

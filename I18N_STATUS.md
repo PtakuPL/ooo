@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 20:45:43 UTC  
+> **Aktualizacja:** 2025-12-10 20:45:49 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,7 +21,7 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **26** | ↑ |
+| 📁 Plików przetworzonych | **25** | ↑ |
 | ⏭️ Plików wykluczonych | **711** | - |
 | 🔑 Kluczy i18n | **9933** | ↑ |
 | 🌍 Języków | **53** | ✓ |
@@ -78,7 +78,7 @@
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #    27 │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    ✅ IDLE                                   │
+│ Status:    🟢 RUNNING                                │
 │ Tryb:      MIGRATION (8 etapów)                     │
 │ Kategoria: 🧙 NPC Dialogs                            │
 ├─────────────────────────────────────────────────────────────────┤
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 20:45:43                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 20:45:49                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,8 +98,8 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przetworzonych | **26** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
+| 📁 Plików przetworzonych | **25** | z i18n_file_status.json |
+| ✅ NPC zmigrowanych | **25** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **9933** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
 | 🔄 Cykli wykonanych | **#27** | continuous mode |
@@ -110,11 +110,11 @@
 
 ## 📜 Historia ostatnich operacji
 
-- ✅ `battlemart` - ukończono 2025-12-10 20:41
-- ✅ `alaistar` - ukończono 2025-12-10 20:41
+- ✅ `alaistar` - ukończono 2025-12-10 20:45
 - ✅ `ser_tybald` - ukończono 2025-12-10 15:04
 - ✅ `menesto` - ukończono 2025-12-10 15:04
 - ✅ `garamond` - ukończono 2025-12-10 15:04
+- ✅ `cranky_lizard_crone` - ukończono 2025-12-10 15:04
 
 ---
 
@@ -294,15 +294,14 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 20:45:43  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 20:45:49  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `battlemart` - ukończono 2025-12-10 20:41
-- ✅ `alaistar` - ukończono 2025-12-10 20:41
+- ✅ `alaistar` - ukończono 2025-12-10 20:45
 - ✅ `ser_tybald` - ukończono 2025-12-10 15:04
 - ✅ `menesto` - ukończono 2025-12-10 15:04
 - ✅ `garamond` - ukończono 2025-12-10 15:04
@@ -311,6 +310,7 @@
 - ✅ `canary` - ukończono 2025-12-10 15:01
 - ✅ `the_lootmonger` - ukończono 2025-12-10 14:55
 - ✅ `tandros` - ukończono 2025-12-10 14:55
+- ✅ `sundara` - ukończono 2025-12-10 14:55
 
 ---
 

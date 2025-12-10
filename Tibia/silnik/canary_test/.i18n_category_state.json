@@ -11,7 +11,8 @@
     "modules": 1765409922.4203713,
     "startup": 1765409929.1682544,
     "npclib": 1765409935.999303,
-    "php": 1765410179.939669
+    "php": 1765410179.939669,
+    "html": 1765410253.3533757
   },
   "last_processed": {
     "scripts": {
@@ -63,8 +64,8 @@
       "timestamp": 1765409579.939664
     },
     "html": {
-      "count": 26,
-      "timestamp": 1765409645.1858938
+      "count": 0,
+      "timestamp": 1765409653.3533702
     },
     "client": {
       "count": 0,
@@ -84,7 +85,7 @@
     }
   },
   "consecutive_zeros": {
-    "html": 0,
+    "html": 2,
     "scripts": 4,
     "monsters": 2,
     "raids": 2,

@@ -3597,3 +3597,13 @@ html_copy/templates/tibiacom/buttons.change_password.html.twig
 html_copy/templates/tibiacom/buttons.login.html.twig
 html_copy/templates/tibiacom/buttons.edit.html.twig
 html_copy/templates/tibiacom/buttons.create_character.html.twig
+html_copy/templates/tibiacom/news.tickers.html.twig
+html_copy/templates/tibiacom/buttons.delete_character.html.twig
+html_copy/templates/tibiacom/news.featured_article.html.twig
+html_copy/templates/tibiacom/buttons.cancel.html.twig
+html_copy/images/editor/index.html
+html_copy/images/gallery/index.html
+html_copy/resources/index.html
+html_copy/resources/canary/vendors/js/ckeditor/plugins/preview/preview.html
+html_copy/resources/canary/vendors/js/ckeditor/plugins/exportpdf/tests/manual/paperformat.html
+html_copy/resources/canary/vendors/js/ckeditor/plugins/exportpdf/tests/manual/tokenwithouturl.html

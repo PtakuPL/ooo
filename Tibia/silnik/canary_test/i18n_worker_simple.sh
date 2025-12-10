@@ -1067,6 +1067,257 @@ process_file() {
 }
 
 #===============================================================================
+# TRYB 2: TŁUMACZENIA - 6 etapów + składnie
+#===============================================================================
+mode_translation() {
+    local target_lang="${1:-pl}"
+    
+    log "${BLUE}═══════════════════════════════════════════════════════════════${NC}"
+    log "${BLUE}TRYB 2: TŁUMACZENIA${NC} - Język: $target_lang"
+    log "${BLUE}═══════════════════════════════════════════════════════════════${NC}"
+    
+    python3 << PYTRANSLATE
+import json
+import os
+import re
+
+target_lang = "$target_lang"
+i18n_dir = "$I18N_DIR"
+status_file = "$STATUS_FILE"
+batch_size = $TRANSLATION_BATCH
+substage_size = $TRANSLATION_SUBSTAGE
+
+# [1/6] SELECT_SOURCE
+print("[1/6] SELECT_SOURCE: en/npc.json")
+en_file = f"{i18n_dir}/en/npc.json"
+if not os.path.exists(en_file):
+    print("❌ Brak pliku en/npc.json")
+    exit(1)
+
+with open(en_file) as f:
+    en_data = json.load(f)
+
+# [2/6] DETECT_PROGRESS
+print(f"[2/6] DETECT_PROGRESS: Sprawdzam {target_lang}/npc.json")
+lang_dir = f"{i18n_dir}/{target_lang}"
+os.makedirs(lang_dir, exist_ok=True)
+lang_file = f"{lang_dir}/npc.json"
+
+if os.path.exists(lang_file):
+    with open(lang_file) as f:
+        lang_data = json.load(f)
+else:
+    lang_data = {}
+
+# Znajdź klucze do przetłumaczenia (brakujące lub z placeholder [LANG])
+keys_todo = []
+for key, text in en_data.items():
+    if key not in lang_data:
+        keys_todo.append((key, text))
+    elif lang_data[key].startswith(f"[{target_lang.upper()}]") or lang_data[key].startswith("[TODO]"):
+        keys_todo.append((key, text))
+
+print(f"   Kluczy do tłumaczenia: {len(keys_todo)}")
+
+if len(keys_todo) == 0:
+    print(f"✅ Wszystkie klucze dla {target_lang} są przetłumaczone!")
+    exit(0)
+
+# [3/6] PREPARE_BATCH
+print(f"[3/6] PREPARE_BATCH: Przygotowanie {min(batch_size, len(keys_todo))} kluczy")
+keys_batch = keys_todo[:batch_size]
+total_substages = (len(keys_batch) + substage_size - 1) // substage_size
+print(f"   Składni: {total_substages}")
+
+# [4/6] TRANSLATE_BATCH - tłumaczenie ze składniami
+print(f"[4/6] TRANSLATE_BATCH: Tłumaczenie")
+
+# Słownik tłumaczeń dla popularnych fraz
+TRANSLATIONS = {
+    "pl": {
+        "Hello": "Witaj", "Goodbye": "Żegnaj", "Welcome": "Witamy", "Greetings": "Pozdrowienia",
+        "Yes": "Tak", "No": "Nie", "Thank you": "Dziękuję", "Thanks": "Dzięki",
+        "adventurer": "przybyszu", "traveler": "podróżniku", "friend": "przyjacielu",
+        "What do you need": "Czego potrzebujesz", "How can I help": "Jak mogę pomóc",
+        "Come back": "Wróć", "Farewell": "Żegnaj", "Good luck": "Powodzenia",
+        "I am": "Jestem", "I sell": "Sprzedaję", "I buy": "Kupuję", "I can": "Mogę",
+        "equipment": "ekwipunek", "weapons": "bronie", "armor": "zbroje", "armour": "zbroje",
+        "potions": "mikstury", "food": "jedzenie", "items": "przedmioty", "goods": "towary",
+        "shop": "sklep", "store": "sklep", "trade": "handel", "business": "interes",
+        "gold": "złoto", "coins": "monety", "money": "pieniądze",
+        "sword": "miecz", "shield": "tarcza", "helmet": "hełm", "boots": "buty",
+        "monster": "potwór", "creature": "stworzenie", "enemy": "wróg",
+        "quest": "zadanie", "mission": "misja", "task": "zadanie",
+        "help": "pomoc", "information": "informacja", "news": "nowiny",
+        "city": "miasto", "town": "miasteczko", "village": "wioska",
+        "king": "król", "queen": "królowa", "knight": "rycerz",
+        "magic": "magia", "spell": "zaklęcie", "rune": "runa",
+        "dangerous": "niebezpieczny", "safe": "bezpieczny", "careful": "ostrożny",
+        "north": "północ", "south": "południe", "east": "wschód", "west": "zachód",
+        "Please": "Proszę", "Sorry": "Przepraszam", "Excuse me": "Przepraszam"
+    },
+    "de": {
+        "Hello": "Hallo", "Goodbye": "Auf Wiedersehen", "Welcome": "Willkommen",
+        "Yes": "Ja", "No": "Nein", "Thank you": "Danke",
+        "adventurer": "Abenteurer", "traveler": "Reisender",
+        "I am": "Ich bin", "I sell": "Ich verkaufe", "I buy": "Ich kaufe",
+        "equipment": "Ausrüstung", "weapons": "Waffen", "armor": "Rüstung",
+        "shop": "Laden", "gold": "Gold", "coins": "Münzen"
+    },
+    "es": {
+        "Hello": "Hola", "Goodbye": "Adiós", "Welcome": "Bienvenido",
+        "Yes": "Sí", "No": "No", "Thank you": "Gracias",
+        "adventurer": "aventurero", "I am": "Soy", "I sell": "Vendo"
+    },
+    "pt": {
+        "Hello": "Olá", "Goodbye": "Adeus", "Welcome": "Bem-vindo",
+        "Yes": "Sim", "No": "Não", "Thank you": "Obrigado"
+    },
+    "fr": {
+        "Hello": "Bonjour", "Goodbye": "Au revoir", "Welcome": "Bienvenue",
+        "Yes": "Oui", "No": "Non", "Thank you": "Merci"
+    },
+    "it": {
+        "Hello": "Ciao", "Goodbye": "Arrivederci", "Welcome": "Benvenuto",
+        "Yes": "Sì", "No": "No", "Thank you": "Grazie"
+    },
+    "ru": {
+        "Hello": "Привет", "Goodbye": "До свидания", "Welcome": "Добро пожаловать",
+        "Yes": "Да", "No": "Нет", "Thank you": "Спасибо"
+    }
+}
+
+def translate_text(text, lang):
+    if lang not in TRANSLATIONS:
+        return f"[{lang.upper()}] {text}"
+    
+    result = text
+    trans = TRANSLATIONS[lang]
+    
+    # Zamień znane frazy (case-insensitive)
+    for en, loc in sorted(trans.items(), key=lambda x: -len(x[0])):  # Dłuższe najpierw
+        pattern = re.compile(re.escape(en), re.IGNORECASE)
+        result = pattern.sub(loc, result)
+    
+    # Jeśli nic się nie zmieniło, oznacz jako TODO
+    if result == text:
+        return f"[{lang.upper()}] {text}"
+    
+    return result
+
+# Przetwórz składnie
+translated_count = 0
+real_translations = 0
+for substage in range(total_substages):
+    start_idx = substage * substage_size
+    end_idx = min(start_idx + substage_size, len(keys_batch))
+    substage_keys = keys_batch[start_idx:end_idx]
+    
+    print(f"  └─ Składnia {substage + 1}/{total_substages}: {len(substage_keys)} kluczy")
+    
+    for key, en_text in substage_keys:
+        translated = translate_text(en_text, target_lang)
+        lang_data[key] = translated
+        translated_count += 1
+        if not translated.startswith("["):
+            real_translations += 1
+
+# [5/6] SAVE_TRANSLATIONS
+print(f"[5/6] SAVE_TRANSLATIONS: Zapisuję {translated_count} kluczy")
+lang_data = dict(sorted(lang_data.items()))
+with open(lang_file, "w") as f:
+    json.dump(lang_data, f, indent=2, ensure_ascii=False)
+
+# Statystyki
+placeholders = len([v for v in lang_data.values() if v.startswith("[")])
+real_total = len(lang_data) - placeholders
+
+# [6/6] SYNC
+print(f"[6/6] SYNC: Aktualizacja statusu")
+
+# Aktualizuj status
+with open(status_file) as f:
+    status = json.load(f)
+
+if "translation_status" not in status:
+    status["translation_status"] = {}
+
+status["translation_status"][target_lang] = {
+    "total_keys": len(lang_data),
+    "translated": real_total,
+    "placeholders": placeholders,
+    "last_batch": translated_count,
+    "last_update": __import__("datetime").datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+}
+
+with open(status_file, "w") as f:
+    json.dump(status, f, indent=2)
+
+print(f"\n✅ TŁUMACZENIE ZAKOŃCZONE: {target_lang}")
+print(f"   Przetłumaczono w tym batchu: {translated_count}")
+print(f"   Prawdziwe tłumaczenia: {real_total}/{len(lang_data)}")
+print(f"   Pozostało placeholder'ów: {placeholders}")
+PYTRANSLATE
+
+    log "${GREEN}✅ TRYB TŁUMACZEŃ ZAKOŃCZONY${NC}"
+    return 0
+}
+
+#===============================================================================
+# DISPATCHER - Wybór trybu w continuous mode
+#===============================================================================
+select_work_mode() {
+    python3 << 'DISPATCHERPY'
+import os
+import json
+import glob
+
+I18N_DIR = "i18n"
+NPC_DIR = "data-otservbr-global/npc"
+LANG_PRIORITY = ["pl", "de", "es", "pt", "fr", "it", "ru"]
+
+# 1. Czy są pliki NPC do migracji?
+needs_migration = 0
+for f in glob.glob(f"{NPC_DIR}/*.lua"):
+    try:
+        with open(f) as nf:
+            content = nf.read()
+        if "StdModule.say" in content and "text" in content:
+            if "i18nKey" not in content:
+                needs_migration += 1
+    except:
+        pass
+
+if needs_migration > 0:
+    print(f"MIGRATION:{needs_migration}")
+    exit(0)
+
+# 2. Czy są klucze do przetłumaczenia?
+en_file = f"{I18N_DIR}/en/npc.json"
+if os.path.exists(en_file):
+    with open(en_file) as f:
+        en_keys = set(json.load(f).keys())
+    
+    for lang in LANG_PRIORITY:
+        lang_file = f"{I18N_DIR}/{lang}/npc.json"
+        if os.path.exists(lang_file):
+            with open(lang_file) as f:
+                lang_data = json.load(f)
+            # Policz placeholder'y
+            placeholders = len([v for v in lang_data.values() if v.startswith("[")])
+            if placeholders > 0:
+                print(f"TRANSLATION:{lang}:{placeholders}")
+                exit(0)
+        else:
+            print(f"TRANSLATION:{lang}:{len(en_keys)}")
+            exit(0)
+
+# 3. Wszystko zrobione
+print("IDLE:0")
+DISPATCHERPY
+}
+
+#===============================================================================
 # MAIN
 #===============================================================================
 echo "╔════════════════════════════════════════╗"

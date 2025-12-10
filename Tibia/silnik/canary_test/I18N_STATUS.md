@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 17:13:26 UTC  
+> **Aktualizacja:** 2025-12-10 17:17:25 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -50,16 +50,16 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🐘 PHP Backend | ⏳ | 0/2015 (0%) | 2015 |
+| 🐘 PHP Backend | 🔄 | 8/3000 (0%) | 3000 |
 | 📄 HTML Views | ⏳ | 0/300 (0%) | 300 |
-| 📦 JavaScript | ⏳ | 0/100 (0%) | 100 |
+| 📦 JavaScript | ⏳ | 0/200 (0%) | 200 |
 
 ### ⏳ Faza 3: 📱 Instalka/Klient
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
 | 🖥️ Client UI | ⏳ | 0/200 (0%) | 200 |
-| 💿 Installer | ⏳ | 0/94 (0%) | 94 |
+| 💿 Installer/C++ | 🔄 | 15/500 (3%) | 500 |
 
 ### ⏳ Faza 4: 🌍 Tłumaczenia
 
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 17:13:26                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 17:17:25                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -294,7 +294,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 17:13:26  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 17:17:25  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

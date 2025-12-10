@@ -9,6 +9,21 @@
 
 ## 🆕 CHANGELOG - Co zostało zrobione
 
+### 📅 2025-12-10 (sesja #3) - Naprawa I18N_STATUS.md na GitHub 🔧
+
+| Zmiana | Opis | Status |
+|--------|------|--------|
+| **Faza 2 hardcode** | PHP/HTML/JS pokazywały 0/X zamiast zmiennych php_keys, html_keys, client_keys | ✅ FIXED |
+| **Faza 3 hardcode** | Installer pokazywał 0/94 zamiast cpp_keys | ✅ FIXED |
+| **Guard analiza** | Sprawdzono współpracę guard↔worker (push co 2 min) | ✅ OK |
+| **Worker targets** | Zaktualizowano TARGETS dict dla nowych kategorii | ✅ DONE |
+
+**Problem:** GitHub I18N_STATUS.md pokazywał 202 kluczy (stara wersja) zamiast 9713.
+**Przyczyna:** Worker nadpisywał status swoją funkcją która miała zahardcodowane wartości.
+**Rozwiązanie:** Naprawiono `update_github_status()` - Faza 2/3 teraz używa `php_keys`, `html_keys`, `cpp_keys`, `client_keys`.
+
+---
+
 ### 📅 2025-12-10 (sesja wieczorna #2) - Masowa ekstrakcja kluczy 🚀
 
 | Zmiana | Opis | Status |

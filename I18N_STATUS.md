@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 23:33:25 UTC  
+> **Aktualizacja:** 2025-12-10 23:33:27 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 12117 operacji               │
 │ 🕐 Aktywne kategorie: 16                               │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 23:33:25                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 23:33:27                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -279,9 +279,9 @@
 | items | 13749 | 11689 | 1 | ⏭️ Skip 1m |
 | npc | 5334 | 0 | 0 | ✅ Active |
 | monsters | 4158 | 0 | 4 | ⏭️ Skip 2m |
-| scripts | 385 | 0 | 6 | ⏭️ Skip 64m |
+| scripts | 385 | 0 | 6 | ⏭️ Skip 63m |
 | html | 320 | 14 | 1 | ⏭️ Skip 3m |
-| php | 32 | 24 | 1 | ⏭️ Skip 3m |
+| php | 32 | 24 | 1 | ⏭️ Skip 2m |
 | raids | 30 | 0 | 4 | ⏭️ Skip 2m |
 | startup | 19 | 11 | 1 | ⏭️ Skip 2m |
 | modules | 16 | 16 | 1 | ⏭️ Skip 2m |
@@ -306,7 +306,7 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| scripts | 64m | 6x | Progresywny backoff |
+| scripts | 63m | 6x | Progresywny backoff |
 | monsters | 2m | 4x | Progresywny backoff |
 | raids | 2m | 4x | Progresywny backoff |
 | world | 2m | 4x | Progresywny backoff |
@@ -317,7 +317,7 @@
 | modules | 2m | 1x | Progresywny backoff |
 | startup | 2m | 1x | Progresywny backoff |
 | npclib | 2m | 1x | Progresywny backoff |
-| php | 3m | 1x | Progresywny backoff |
+| php | 2m | 1x | Progresywny backoff |
 | html | 3m | 1x | Progresywny backoff |
 | client | 3m | 1x | Progresywny backoff |
 | sendtextmessage | 3m | 1x | Progresywny backoff |
@@ -372,7 +372,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:33:25  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:33:27  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

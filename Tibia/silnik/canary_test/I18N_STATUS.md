@@ -278,6 +278,11 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `morgan` - ukończono 2025-12-10 11:30
+- ✅ `king_tibianus` - ukończono 2025-12-10 11:30
+- ✅ `falonzo` - ukończono 2025-12-10 11:30
+- ✅ `anderson` - ukończono 2025-12-10 11:30
+- ✅ `amber` - ukończono 2025-12-10 11:30
 - ✅ `inigo` - ukończono 2025-12-10 11:25
 - ✅ `hamish` - ukończono 2025-12-10 11:25
 - ✅ `gregor` - ukończono 2025-12-10 11:25

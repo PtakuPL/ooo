@@ -52,12 +52,12 @@ end
 
 keywordHandler:addKeyword({ "name" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I'm professor Falonzo from the mage's guild.",
+	i18nKey = "npc.falonzo.stdmod_1",
 })
 
 keywordHandler:addKeyword({ "job" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I'm a researcher of scientific council of the mage guild and I came to that {place} to study this {anomaly}.",
+	i18nKey = "npc.falonzo.stdmod_2",
 })
 
 keywordHandler:addKeyword({ "place" }, StdModule.say, {
@@ -78,12 +78,12 @@ keywordHandler:addKeyword({ "anomaly" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "plane" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "This is a lesser plane of tarnished, elemental fire that once belonged to the world that we know. It was despoiled in the wars of the gods and broke loose from our world. {Lost} and drifting through the void, without a connection to our plane.",
+	i18nKey = "npc.falonzo.stdmod_3",
 })
 
 keywordHandler:addKeyword({ "intruders" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Infernalists were the first who found their way into this sphere. Hoping to tap its rotten power somehow. Yet this sphere created creatures of its own and draw others here from other planes.",
+	i18nKey = "npc.falonzo.stdmod_4",
 })
 
 keywordHandler:addKeyword({ "dragged" }, StdModule.say, {
@@ -106,7 +106,7 @@ keywordHandler:addAliasKeyword({ "changed" })
 
 keywordHandler:addKeyword({ "lost" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Well, that was how it used to be. Lost and without any connection to our world. But that was before things ... have {changed}.",
+	i18nKey = "npc.falonzo.stdmod_5",
 })
 
 keywordHandler:addKeyword({ "boundaries" }, StdModule.say, {
@@ -119,7 +119,7 @@ keywordHandler:addKeyword({ "boundaries" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "attention" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Such an anomaly can't go unnoticed for long. That lead to the presence to unwanted {intruders} and other entities were {dragged} into by the nature of the sphere.",
+	i18nKey = "npc.falonzo.stdmod_6",
 })
 
 npcHandler:setMessage(MESSAGE_GREET, "Greetings, adventurer!")

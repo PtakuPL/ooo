@@ -132,237 +132,237 @@ end
 keywordHandler:addKeyword({ "hint" }, StdModule.rookgaardHints, { npcHandler = npcHandler })
 keywordHandler:addKeyword({ "how", "are", "you" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I'm recovering from a {sea} passage.",
+	i18nKey = "npc.amber.stdmod_1",
 })
 keywordHandler:addKeyword({ "job" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I'm an {explorer} who seeks {adventures}.",
+	i18nKey = "npc.amber.stdmod_2",
 })
 keywordHandler:addKeyword({ "explore" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I've been almost everywhere in {Tibia}.",
+	i18nKey = "npc.amber.stdmod_3",
 })
 keywordHandler:addKeyword({ "adventure" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I fought fierce {monsters}, climbed the highest mountains, explored the deepest {dungeons} and crossed the {sea} on a {raft}.",
+	i18nKey = "npc.amber.stdmod_4",
 })
 keywordHandler:addKeyword({ "sea" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "My voyage on the sea was exhausting. The weather was bad, the waves high and my raft quite simple. There's a certain excitement to it, though.",
+	i18nKey = "npc.amber.stdmod_5",
 })
 keywordHandler:addKeyword({ "time" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Sorry, I lost my watch in a storm.",
+	i18nKey = "npc.amber.stdmod_6",
 })
 keywordHandler:addKeyword({ "help" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Well, I can give you general {hints} or tell you about my {adventures} and many other topics. Oh, and if you are bored, I might have a small {quest} for you.",
+	i18nKey = "npc.amber.stdmod_7",
 })
 keywordHandler:addKeyword({ "information" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Well, I can give you general {hints} or tell you about my {adventures} and many other topics. Oh, and if you are bored, I might have a small {quest} for you.",
+	i18nKey = "npc.amber.stdmod_8",
 })
 keywordHandler:addKeyword({ "dungeon" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I had no time to explore the dungeons of this isle yet, but I've seen two big caves in the East, and there is a ruined tower to the north-west. Oh, and there're the {sewers}.",
+	i18nKey = "npc.amber.stdmod_9",
 })
 keywordHandler:addKeyword({ "sewer" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I like sewers. I made my very first battle experience in the sewers below {Thais}. The small sewer system of {Rookgaard} has some nasty rats to fight.",
+	i18nKey = "npc.amber.stdmod_10",
 })
 keywordHandler:addKeyword({ "monster" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Oh, I fought {orcs}, {cyclopses}, {minotaurs}, even {dragons}, and many other creatures.",
+	i18nKey = "npc.amber.stdmod_11",
 })
 keywordHandler:addKeyword({ "cyclops" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I don't like the way they look at you. Their eye seems to pierce right through you. Creepy!",
+	i18nKey = "npc.amber.stdmod_12",
 })
 keywordHandler:addKeyword({ "dragon" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Their breath is so hot! I had to cut my hair after my last encounter with a dragon because the ends were all burnt. That's what you gotta deal with as a female adventurer!",
+	i18nKey = "npc.amber.stdmod_13",
 })
 keywordHandler:addKeyword({ "raft" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I left my raft at the south-eastern shore. I forgot my private {notebook} on it. If you could return it to me, I would be very grateful.",
+	i18nKey = "npc.amber.stdmod_14",
 })
 keywordHandler:addKeyword({ "quest" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I left my raft at the south-eastern shore. I forgot my private {notebook} on it. If you could return it to me, I would be very grateful.",
+	i18nKey = "npc.amber.stdmod_15",
 })
 keywordHandler:addKeyword({ "mission" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I left my raft at the south-eastern shore. I forgot my private {notebook} on it. If you could return it to me, I would be very grateful.",
+	i18nKey = "npc.amber.stdmod_16",
 })
 keywordHandler:addKeyword({ "seymour" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I think this poor guy was a bad choice as head of the {academy}.",
+	i18nKey = "npc.amber.stdmod_17",
 })
 keywordHandler:addKeyword({ "academy" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "A fine institution, but it needs definitely more funds from the {king}.",
+	i18nKey = "npc.amber.stdmod_18",
 })
 keywordHandler:addKeyword({ "king" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "King Tibianus is the ruler of {Thais}. The island of {Rookgaard} belongs to his kingdom.",
+	i18nKey = "npc.amber.stdmod_19",
 })
 keywordHandler:addKeyword({ "thais" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "A fine city, but the {king} has some problems enforcing the law.",
+	i18nKey = "npc.amber.stdmod_20",
 })
 keywordHandler:addKeyword({ "weapon" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The best weapons on this isle are just toothpicks compared with the weapons warriors wield on the {mainland}.",
+	i18nKey = "npc.amber.stdmod_21",
 })
 keywordHandler:addKeyword({ "magic" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Spells are only taught in the guildhalls of the mainland.",
+	i18nKey = "npc.amber.stdmod_22",
 })
 keywordHandler:addKeyword({ "tibia" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I'm trying to explore each spot of Tibia, and one day I'll have seen it all.",
+	i18nKey = "npc.amber.stdmod_23",
 })
 keywordHandler:addKeyword({ "castle" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "If you travel to Thais, you really should visit the marvelous castle there.",
+	i18nKey = "npc.amber.stdmod_24",
 })
 keywordHandler:addKeyword({ "mainland" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "You'll be surprised once you leave this island. The world outside there is gigantic.",
+	i18nKey = "npc.amber.stdmod_25",
 })
 keywordHandler:addKeyword({ "tools" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The most important tools you need are a {rope}, a {shovel} and maybe a {torch}.",
+	i18nKey = "npc.amber.stdmod_26",
 })
 keywordHandler:addKeyword({ "rope" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "One day I fell into a hole without having a rope. I was yelling for help for three whole days! Eventually a fisherman passed by and pulled me out with his own rope, lucky me.",
+	i18nKey = "npc.amber.stdmod_27",
 })
 keywordHandler:addKeyword({ "shovel" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Sometimes I have the strong urge to use it to knock someone out.",
+	i18nKey = "npc.amber.stdmod_28",
 })
 keywordHandler:addKeyword({ "torch" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "You know, on mainland you will be able to cast magic spells which provide you with light. You won't really need torches anymore.",
+	i18nKey = "npc.amber.stdmod_29",
 })
 keywordHandler:addKeyword({ "bank" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I have almost no money with me anyway, so no need to deposit any at the bank.",
+	i18nKey = "npc.amber.stdmod_30",
 })
 keywordHandler:addKeyword({ "destiny" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "You will find your destiny. I'm sure it's something big and important.",
+	i18nKey = "npc.amber.stdmod_31",
 })
 keywordHandler:addKeyword({ "academy" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "A fine institution, but it needs definitely more funds from the {king}.",
+	i18nKey = "npc.amber.stdmod_32",
 })
 keywordHandler:addKeyword({ "trade" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Oh, I'm sorry, but I'm not interested in buying or selling anything.",
+	i18nKey = "npc.amber.stdmod_33",
 })
 keywordHandler:addKeyword({ "premium" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I wouldn't want to miss being a premium adventurer. Everything is so much easier!",
+	i18nKey = "npc.amber.stdmod_34",
 })
 
 -- Names
 keywordHandler:addKeyword({ "al", "dee" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I don't have much to say about him. I think he sells {tools}.",
+	i18nKey = "npc.amber.stdmod_35",
 })
 keywordHandler:addKeyword({ "loui" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Never seen him around.",
+	i18nKey = "npc.amber.stdmod_36",
 })
 keywordHandler:addKeyword({ "zirella" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "She seriously asked me if she could have the remains of my {raft} as fire wood! Can you imagine that??",
+	i18nKey = "npc.amber.stdmod_37",
 })
 keywordHandler:addKeyword({ "santiago" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "He promised to repair my {raft}.",
+	i18nKey = "npc.amber.stdmod_38",
 })
 keywordHandler:addKeyword({ "amber" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Did you know my name is also the name of a gem?",
+	i18nKey = "npc.amber.stdmod_39",
 })
 keywordHandler:addKeyword({ "tom" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "To me he seems a bit rude, but maybe that's just my impression.",
+	i18nKey = "npc.amber.stdmod_40",
 })
 keywordHandler:addKeyword({ "lee'delle" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I heard her offers are extraordinarily good.",
+	i18nKey = "npc.amber.stdmod_41",
 })
 keywordHandler:addKeyword({ "oracle" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The oracle is said to show you your {destiny} once you are level 8.",
+	i18nKey = "npc.amber.stdmod_42",
 })
 keywordHandler:addKeyword({ "norma" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "She has changed a lot since I last saw her.",
+	i18nKey = "npc.amber.stdmod_43",
 })
 keywordHandler:addKeyword({ "seymour" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I think this poor guy was a bad choice as head of the {academy}.",
+	i18nKey = "npc.amber.stdmod_44",
 })
 keywordHandler:addKeyword({ "lily" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Hm, I think I haven't met her yet.",
+	i18nKey = "npc.amber.stdmod_45",
 })
 keywordHandler:addKeyword({ "billy" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "He brought me some of his famous rat stew. I really didn't want to insult him, but I simply can't eat something like that. So I told him I'm a vegetarian and I only eat fish. <gulps>",
+	i18nKey = "npc.amber.stdmod_46",
 })
 keywordHandler:addKeyword({ "willie" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "He's funny in his own way.",
+	i18nKey = "npc.amber.stdmod_47",
 })
 keywordHandler:addKeyword({ "paulie" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "No, I didn't go to the {bank} yet.",
+	i18nKey = "npc.amber.stdmod_48",
 })
 keywordHandler:addKeyword({ "cipfried" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "A gentle person. You should visit him if you have questions or need healing.",
+	i18nKey = "npc.amber.stdmod_49",
 })
 keywordHandler:addKeyword({ "hyacinth" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Hyacinth is a great healer. He lives somewhere hidden on this isle.",
+	i18nKey = "npc.amber.stdmod_50",
 })
 keywordHandler:addKeyword({ "obi" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "He's a funny little man.",
+	i18nKey = "npc.amber.stdmod_51",
 })
 keywordHandler:addKeyword({ "dixi" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I don't really know her, but she seems to be a nice girl.",
+	i18nKey = "npc.amber.stdmod_52",
 })
 keywordHandler:addKeyword({ "zerbrus" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "An extraordinary warrior. He's the first and last line of defense of {Rookgaard}.",
+	i18nKey = "npc.amber.stdmod_53",
 })
 keywordHandler:addAliasKeyword({ "dallheim" })
 
 -- Orc language
 keywordHandler:addKeyword({ "orc" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Not the nicest guys you can encounter. I had some clashes with them and finally ended up being their {prisoner} for a few months.",
+	i18nKey = "npc.amber.stdmod_54",
 })
 local prisonerKeyword = keywordHandler:addKeyword({ "prisoner" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I speak some Orcish words, not many though, just a few basics like '{yes}' and '{no}'.",
+	i18nKey = "npc.amber.stdmod_55",
 })
 prisonerKeyword:addChildKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "It's 'mok' in Orcish. I tell you more if you bring me some {food}.",
+	i18nKey = "npc.amber.stdmod_56",
 	reset = true,
 })
 prisonerKeyword:addChildKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "In Orcish that's 'burp'. I tell you more if you bring me some {food}.",
+	i18nKey = "npc.amber.stdmod_57",
 	reset = true,
 })
 keywordHandler:addAliasKeyword({ "language" })
@@ -370,15 +370,15 @@ keywordHandler:addAliasKeyword({ "language" })
 -- Food (Salmon)
 keywordHandler:addKeyword({ "food" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "My favorite dish is {salmon}. Oh please, bring me some.",
+	i18nKey = "npc.amber.stdmod_58",
 })
 local salmonKeyword = keywordHandler:addKeyword({ "salmon" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Yeah! If you give me some salmon, I'll tell you another Orcish word. Okay?",
+	i18nKey = "npc.amber.stdmod_59",
 })
 salmonKeyword:addChildKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Thank you. Orcs call arrows 'pixo'.",
+	i18nKey = "npc.amber.stdmod_60",
 	reset = true,
 }, function(player)
 	return player:getItemCount(3579) > 0
@@ -387,23 +387,23 @@ end, function(player)
 end)
 salmonKeyword:addChildKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "You don't have any salmon!",
+	i18nKey = "npc.amber.stdmod_61",
 	reset = true,
 })
 salmonKeyword:addChildKeyword({ "" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Ok, then I won't tell you another Orcish word.",
+	i18nKey = "npc.amber.stdmod_62",
 	reset = true,
 })
 
 -- Logbook Quest
 local bookKeyword = keywordHandler:addKeyword({ "book" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Do you bring me my notebook?",
+	i18nKey = "npc.amber.stdmod_63",
 })
 bookKeyword:addChildKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Excellent. Here, take this short sword as a reward.",
+	i18nKey = "npc.amber.stdmod_64",
 	reset = true,
 }, function(player)
 	return player:getItemCount(2821) > 0
@@ -413,12 +413,12 @@ end, function(player)
 end)
 bookKeyword:addChildKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Mhm, whatever you have there, it is not my notebook.",
+	i18nKey = "npc.amber.stdmod_65",
 	reset = true,
 })
 bookKeyword:addChildKeyword({ "" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Too bad.",
+	i18nKey = "npc.amber.stdmod_66",
 	reset = true,
 })
 keywordHandler:addAliasKeyword({ "notebook" })

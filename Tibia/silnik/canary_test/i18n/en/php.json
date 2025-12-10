@@ -1299,5 +1299,10 @@
   "php.mysqlgrammar.text2": ") is not null AND json_type(json_extract(",
   "php.mysqlgrammar.text3": " in natural language mode",
   "php.mysqlgrammar.text4": "] ?? []) && ($where[",
-  "php.mysqlgrammar.text5": " with query expansion"
+  "php.mysqlgrammar.text5": " with query expansion",
+  "php.builder.text1": "A subquery must be a query builder instance, a Closure, or a string.",
+  "php.builder.text2": "Illegal operator and value combination.",
+  "php.builder.text3": "Nested arrays may not be passed to whereIn method.",
+  "php.builder.text4": "The number of columns must match the number of values",
+  "php.builder.text5": "or where JSON contains"
 }

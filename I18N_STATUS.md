@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 23:45:39 UTC  
+> **Aktualizacja:** 2025-12-10 23:45:45 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 12215 operacji               │
 │ 🕐 Aktywne kategorie: 16                               │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 23:45:39                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 23:45:45                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -279,7 +279,7 @@
 | items | 13749 | 11689 | 3 | ⏭️ Skip 29m |
 | npc | 5334 | 0 | 0 | ✅ Active |
 | monsters | 4158 | 0 | 5 | ⏭️ Skip 110m |
-| html | 418 | 14 | 2 | ⏭️ Skip 1m |
+| html | 418 | 14 | 2 | ⏭️ Skip 0m |
 | scripts | 385 | 0 | 6 | ⏭️ Skip 51m |
 | php | 32 | 24 | 2 | ⏭️ Skip 0m |
 | raids | 30 | 0 | 5 | ⏭️ Skip 110m |
@@ -318,11 +318,11 @@
 | startup | 0m | 2x | Progresywny backoff |
 | npclib | 0m | 2x | Progresywny backoff |
 | php | 0m | 2x | Progresywny backoff |
-| html | 1m | 2x | Progresywny backoff |
+| html | 0m | 2x | Progresywny backoff |
 | client | 1m | 2x | Progresywny backoff |
 | sendtextmessage | 1m | 2x | Progresywny backoff |
-| keywordhandler | 2m | 2x | Progresywny backoff |
-| twig | 4m | 2x | Progresywny backoff |
+| keywordhandler | 1m | 2x | Progresywny backoff |
+| twig | 3m | 2x | Progresywny backoff |
 
 ---
 
@@ -373,7 +373,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:45:39  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:45:45  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

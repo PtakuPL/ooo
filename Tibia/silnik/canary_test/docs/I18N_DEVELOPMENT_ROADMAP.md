@@ -1,9 +1,39 @@
 # 🗺️ I18N System - Plan Rozwoju i Usprawnień
 
 > **Dokument**: Plan rozwoju systemu internacjonalizacji  
-> **Wersja**: 2.1  
-> **Data**: 2025-12-10  
+> **Wersja**: 3.0  
+> **Data**: 2025-12-10 16:15 UTC  
 > **Autor**: AI Assistant + PtakuPL
+
+---
+
+## 🆕 CHANGELOG - Co zostało zrobione
+
+### 📅 2025-12-10 (sesja wieczorna) - Worker v3.0
+
+| Zmiana | Opis | Status |
+|--------|------|--------|
+| **17 kategorii** | Rozszerzono z 13 do 17: dodano `php`, `html`, `cpp`, `client` | ✅ DONE |
+| **worker_commands.txt** | Sterowanie workerem przez GitHub (z telefonu!) | ✅ DONE |
+| **Komendy** | `FORCE:kategoria`, `RANDOM`, `STATUS`, `SKIP`, `PAUSE:X`, `NOTE:tekst` | ✅ DONE |
+| **PHP kategoria** | Przetwarzanie html_copy/ (5587 plików PHP) | ✅ DONE |
+| **C++ kategoria** | Przetwarzanie src/ (186 plików C++) | ✅ DONE |
+| **OTClient** | Przetwarzanie testyy/modules (klient gry) | ✅ DONE |
+| **update_github_status** | Naprawiono - liczy wszystkie 17+ kategorii | ✅ DONE |
+
+**Statystyki po sesji:**
+- 4375 kluczy wyciągniętych
+- 17 kategorii obsługiwanych
+- 26 plików NPC zmigrowanych z transformacją Lua
+- Nowe pliki: `php.json` (8 kluczy), `cpp.json` (15 kluczy)
+
+### 📅 2025-12-10 (sesja popołudniowa) - Worker v2.2
+
+| Zmiana | Opis | Status |
+|--------|------|--------|
+| **Multi-category dispatcher** | Worker przełącza się między kategoriami | ✅ DONE |
+| **13 kategorii** | npc, scripts, monsters, raids, world, spells, items, libs, events, chatchannels, modules, startup, npclib | ✅ DONE |
+| **Priorytetyzacja** | Kategorie mają priorytety 1-17 | ✅ DONE |
 
 ---
 

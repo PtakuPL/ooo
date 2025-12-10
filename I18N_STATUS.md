@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:27:09 UTC  
+> **Aktualizacja:** 2025-12-11 00:27:26 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -23,10 +23,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **26** | ↑ |
 | ⏭️ Plików wykluczonych | **711** | - |
-| 🔑 Kluczy i18n | **27743** | ↑ |
+| 🔑 Kluczy i18n | **27781** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#45** | - |
+| 🔄 Cykl | **#46** | - |
 
 ---
 
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    45 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    46 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      MIGRATION (multi-category)               │
 │ Kategoria: 🎒 RAIDS                                  │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Ostatnia aktywność: raids                                          │
-│ [█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 109/1000 kluczy (11%)                                          │
+│ [███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
+│ 147/1000 kluczy (15%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Total processed: 22802 operacji               │
+│ ⏳ Total processed: 22916 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:27:09                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:27:26                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -99,11 +99,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Operacji wykonanych | **22802** | we wszystkich kategoriach |
+| 📁 Operacji wykonanych | **22916** | we wszystkich kategoriach |
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **27743** | we wszystkich kategoriach |
+| 🔑 Kluczy wyciągniętych | **27781** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#45** | continuous mode |
+| 🔄 Cykli wykonanych | **#46** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,7 +111,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- ⚡ `raids` +158 kluczy @ 00:27:08
+- ⚡ `raids` +76 kluczy @ 00:27:26
 - 👹 `monsters` +0 kluczy @ 00:26:42
 - 📜 `scripts` +0 kluczy @ 00:23:01
 - ⚡ `html` +180 kluczy @ 00:11:44
@@ -284,7 +284,7 @@
 | html | 508 | 284 | 0 | ✅ Active |
 | scripts | 385 | 0 | 4 | ⏭️ Skip 55m |
 | php | 205 | 543 | 0 | ✅ Active |
-| raids | 109 | 237 | 0 | ✅ Active |
+| raids | 147 | 351 | 0 | ✅ Active |
 | startup | 23 | 23 | 0 | ✅ Active |
 | modules | 16 | 16 | 0 | ✅ Active |
 | cpp | 15 | 0 | 0 | ✅ Active |
@@ -317,7 +317,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #45 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #46 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -360,7 +360,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:27:09  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:27:26  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

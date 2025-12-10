@@ -13,8 +13,8 @@
       "timestamp": 1765409202.2766266
     },
     "raids": {
-      "count": 158,
-      "timestamp": 1765409228.861603
+      "count": 76,
+      "timestamp": 1765409246.5976954
     },
     "world": {
       "count": 0,
@@ -92,7 +92,7 @@
     "keywordhandler": 64,
     "twig": 365,
     "monsters": 9549,
-    "raids": 237
+    "raids": 351
   },
   "translation_sync": {
     "current_lang": "fr",

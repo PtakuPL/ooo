@@ -7998,5 +7998,20 @@
   "item.24192.name": "monument wall",
   "item.24225.name": "astral glyph",
   "item.24226.name": "shielded astral glyph",
-  "item.24227.name": "animated sword"
+  "item.24227.name": "animated sword",
+  "item.24228.name": "astral source",
+  "item.24229.name": "distorted astral source",
+  "item.24244.name": "RESERVED SPRITE",
+  "item.24245.name": "empty plant tub",
+  "item.24246.name": "plant tub",
+  "item.24247.name": "empty ruined plant tub",
+  "item.24249.name": "RESERVED SPRITE",
+  "item.24256.name": "unknown item",
+  "item.24258.name": "waterway",
+  "item.24313.name": "dead Lloyd",
+  "item.24314.name": "dead Lloyd",
+  "item.24317.name": "cut grass",
+  "item.24380.name": "bone toothpick",
+  "item.24381.name": "beetle carapace",
+  "item.24382.name": "bug meat"
 }

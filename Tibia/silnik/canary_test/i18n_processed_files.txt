@@ -840,3 +840,13 @@ KWH:data-otservbr-global/npc/a_bearded_woman.lua
 KWH:data-otservbr-global/npc/captain_dreadnought.lua
 KWH:data-otservbr-global/npc/lardoc_bashsmite.lua
 KWH:data-otservbr-global/npc/emma.lua
+TWIG:html_copy/system/templates/forum.add_board.html.twig
+TWIG:html_copy/system/templates/guilds.list.html.twig
+TWIG:html_copy/system/templates/guilds.create.success.html.twig
+TWIG:html_copy/system/templates/admin.tools.account.html.twig
+TWIG:html_copy/system/templates/highscores.html.twig
+TWIG:html_copy/system/templates/monster.html.twig
+TWIG:html_copy/system/templates/news.archive.html.twig
+TWIG:html_copy/system/templates/buttons.change_email.html.twig
+TWIG:html_copy/system/templates/buttons.logout.html.twig
+TWIG:html_copy/system/templates/account.characters.change-sex.html.twig

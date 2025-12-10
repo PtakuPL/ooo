@@ -2704,6 +2704,143 @@ TWIGPY
 }
 
 #===============================================================================
+# SYNC TRANSLATION KEYS - Etap 1: Synchronizacja struktury kluczy
+#===============================================================================
+# Kopiuje klucze z EN do innych języków z prefixem [EN] 
+# Nie tłumaczy! Tylko synchronizuje strukturę.
+#===============================================================================
+sync_translation_keys() {
+    local target_lang="$1"
+    local json_file="$2"
+    local batch_size="${3:-300}"
+    
+    log "${CYAN}🌍 SYNC KEYS: $target_lang <- en/$json_file (batch: $batch_size)${NC}"
+    
+    python3 << SYNCPY
+import json
+import os
+import time
+
+I18N_DIR = "i18n"
+target_lang = "$target_lang"
+json_file = "$json_file"
+batch_size = int("$batch_size") if "$batch_size".isdigit() else 300
+CATEGORY_STATE_FILE = ".i18n_category_state.json"
+UNTRANSLATED_PREFIX = "[EN] "
+
+# Wczytaj plik EN (źródło)
+en_path = f"{I18N_DIR}/en/{json_file}"
+if not os.path.exists(en_path):
+    print(f"   ❌ Brak pliku źródłowego: {en_path}")
+    exit(1)
+
+with open(en_path, 'r', encoding='utf-8') as f:
+    en_data = json.load(f)
+
+print(f"   📖 Źródło EN: {len(en_data)} kluczy")
+
+# Utwórz katalog językowy jeśli nie istnieje
+lang_dir = f"{I18N_DIR}/{target_lang}"
+os.makedirs(lang_dir, exist_ok=True)
+
+# Wczytaj lub stwórz plik językowy
+lang_path = f"{lang_dir}/{json_file}"
+if os.path.exists(lang_path):
+    with open(lang_path, 'r', encoding='utf-8') as f:
+        lang_data = json.load(f)
+    print(f"   📄 Istniejące: {len(lang_data)} kluczy")
+else:
+    lang_data = {}
+    print(f"   📄 Tworzę nowy plik: {lang_path}")
+
+# Znajdź brakujące klucze
+missing_keys = [key for key in en_data if key not in lang_data]
+print(f"   🔍 Brakujących: {len(missing_keys)}")
+
+if not missing_keys:
+    print(f"   ✅ Wszystkie klucze zsynchronizowane dla {target_lang}/{json_file}")
+    exit(0)
+
+# Synchronizuj batch kluczy
+synced = 0
+for key in missing_keys[:batch_size]:
+    en_value = en_data[key]
+    # Dodaj prefix [EN] do wartości
+    lang_data[key] = f"{UNTRANSLATED_PREFIX}{en_value}"
+    synced += 1
+
+# Zapisz plik językowy (posortowany alfabetycznie)
+lang_data_sorted = dict(sorted(lang_data.items()))
+with open(lang_path, 'w', encoding='utf-8') as f:
+    json.dump(lang_data_sorted, f, indent=2, ensure_ascii=False)
+
+print(f"   ✅ Zsynchronizowano: +{synced} kluczy → {target_lang}/{json_file}")
+print(f"   📊 Teraz: {len(lang_data)} kluczy (pozostało: {len(missing_keys) - synced})")
+
+# Zaktualizuj state synchronizacji
+try:
+    with open(CATEGORY_STATE_FILE, 'r') as f:
+        state = json.load(f)
+except:
+    state = {}
+
+if "translation_sync" not in state:
+    state["translation_sync"] = {
+        "current_lang": target_lang,
+        "current_category": json_file,
+        "languages_done": [],
+        "stats": {},
+        "last_sync": 0
+    }
+
+sync_state = state["translation_sync"]
+
+# Aktualizuj statystyki
+if target_lang not in sync_state.get("stats", {}):
+    sync_state["stats"][target_lang] = {}
+
+sync_state["stats"][target_lang][json_file.replace(".json", "")] = len(lang_data)
+sync_state["current_lang"] = target_lang
+sync_state["current_category"] = json_file
+sync_state["last_sync"] = time.time()
+
+# Sprawdź czy wszystkie kategorie dla tego języka są zsynchronizowane
+all_json_files = [f for f in os.listdir(f"{I18N_DIR}/en") if f.endswith(".json")]
+all_synced_for_lang = True
+for jf in all_json_files:
+    jp = f"{I18N_DIR}/{target_lang}/{jf}"
+    if not os.path.exists(jp):
+        all_synced_for_lang = False
+        break
+    with open(f"{I18N_DIR}/en/{jf}") as f:
+        en_keys = set(json.load(f).keys())
+    with open(jp) as f:
+        lang_keys = set(json.load(f).keys())
+    if en_keys - lang_keys:  # Jeśli są brakujące klucze
+        all_synced_for_lang = False
+        break
+
+if all_synced_for_lang and target_lang not in sync_state.get("languages_done", []):
+    if "languages_done" not in sync_state:
+        sync_state["languages_done"] = []
+    sync_state["languages_done"].append(target_lang)
+    print(f"   🎉 Język {target_lang} w pełni zsynchronizowany!")
+
+# Oblicz total dla języka
+total_keys = sum(sync_state["stats"].get(target_lang, {}).values())
+sync_state["stats"][target_lang]["total"] = total_keys
+
+# Zapisz state
+with open(CATEGORY_STATE_FILE, 'w') as f:
+    json.dump(state, f, indent=2)
+
+print(f"   💾 State zapisany")
+SYNCPY
+    
+    log "${GREEN}✅ Sync: Zakończono batch${NC}"
+}
+
+#===============================================================================
 # AUTO TRANSLATE - Automatyczne tłumaczenie BEZ interakcji
 #===============================================================================
 # Kopiuje klucze EN do innych języków z prefiksem [LANG] lub używa prostych

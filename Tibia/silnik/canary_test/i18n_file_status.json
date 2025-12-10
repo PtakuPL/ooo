@@ -962,7 +962,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:18:02.743344"
+      "completed_at": "2025-12-10T14:18:19.284878"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -1072,7 +1072,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:18:03.656994"
+      "completed_at": "2025-12-10T14:18:20.230666"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -1182,7 +1182,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:18:04.613330"
+      "completed_at": "2025-12-10T14:18:21.255767"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -1292,7 +1292,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:18:05.738971"
+      "completed_at": "2025-12-10T14:18:22.944330"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -1402,7 +1402,86 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:18:06.244804"
+      "completed_at": "2025-12-10T14:18:23.748122"
+    },
+    "data-otservbr-global/npc/gnomish_operative_resonating.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "814703ccbb97594a0ef2d966fc4fa8df",
+          "type": "npc"
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/gnomish_operative_volcano.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "9620ec847ec6623ed3e2bab1ade80637",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "gnomish_operative_volcano",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 1,
+          "addFarewellKeyword": 0,
+          "total": 1,
+          "already_i18n": 1,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/harsky.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "eb201162cd65c0358a43749cc208d6c4",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "harsky",
+          "StdModule_say": 2,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 2,
+          "addFarewellKeyword": 0,
+          "total": 4,
+          "already_i18n": 4,
+          "npcSayLib": 1,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/irea.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "888b71d4b1d0c71d60dec734ee54881f",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "irea",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 1,
+          "addGreetKeyword": 1,
+          "addFarewellKeyword": 1,
+          "total": 3,
+          "already_i18n": 2,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
     }
   },
   "global_stats": {

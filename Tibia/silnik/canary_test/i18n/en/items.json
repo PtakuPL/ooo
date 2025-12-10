@@ -12918,5 +12918,20 @@
   "item.44065.name": "exercise shield",
   "item.44066.name": "durable exercise shield",
   "item.44067.name": "lasting exercise shield",
-  "item.44602.name": "lesser guardian gem"
+  "item.44602.name": "lesser guardian gem",
+  "item.44603.name": "guardian gem",
+  "item.44604.name": "greater guardian gem",
+  "item.44605.name": "lesser marksman gem",
+  "item.44606.name": "marksman gem",
+  "item.44607.name": "greater marksman gem",
+  "item.44608.name": "lesser sage gem",
+  "item.44609.name": "sage gem",
+  "item.44610.name": "greater sage gem",
+  "item.44611.name": "lesser mystic gem",
+  "item.44612.name": "mystic gem",
+  "item.44613.name": "greater mystic gem",
+  "item.44619.name": "stoic iks cuirass",
+  "item.44620.name": "stoic iks chestplate",
+  "item.44621.name": "dauntless dragon scale armor",
+  "item.44622.name": "unerring dragon scale armor"
 }

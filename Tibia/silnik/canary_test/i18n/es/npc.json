@@ -4214,5 +4214,6 @@
   "npc.eruaran.greet_1": "[ES] Greetings, |PLAYERNAME|.",
   "npc.eruaran.farewell_1": "[ES] Goodbye, |PLAYERNAME|.",
   "npc.faluae.greet_1": "[ES] Greetings, |PLAYERNAME|.",
-  "npc.faluae.farewell_1": "[ES] Goodbye, |PLAYERNAME|."
+  "npc.faluae.farewell_1": "[ES] Goodbye, |PLAYERNAME|.",
+  "npc.gnomerik.greet_1": "[ES] Hello and welcome in the gnomish {recruitment} office."
 }

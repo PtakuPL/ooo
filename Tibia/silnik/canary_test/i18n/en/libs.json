@@ -3,5 +3,8 @@
   "lib.functions.msg2": "You must wait. Someone is challenging ",
   "lib.player.msg1": "Item amount is wrong, please contact an administrator.",
   "lib.player.msg2": "It is empty.",
-  "lib.player.msg3": "Reward item is wrong, please contact an administrator."
+  "lib.player.msg3": "Reward item is wrong, please contact an administrator.",
+  "lib.quests.msg1": "Your questlog has been updated.",
+  "lib.soul_war.msg1": "You have gained the ",
+  "lib.players.msg1": "You have received a fame point."
 }

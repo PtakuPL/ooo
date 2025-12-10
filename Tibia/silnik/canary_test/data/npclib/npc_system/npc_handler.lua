@@ -103,7 +103,6 @@ NpcHandler = {
 			[MESSAGE_WALKAWAY_MALE] = "",
 			[MESSAGE_WALKAWAY_FEMALE] = "",
 		},
-		},
 		localizedMessages = nil,
 	}
 

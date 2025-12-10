@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 05:00:37 UTC  
+> **Aktualizacja:** 2025-12-10 05:02:43 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -22,11 +22,11 @@
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **763** | ↑ |
-| ⏭️ Plików wykluczonych | **5160** | - |
+| ⏭️ Plików wykluczonych | **5161** | - |
 | 🔑 Kluczy i18n | **51200** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **50** | ✓ |
-| 🔄 Cykl | **#14** | - |
+| 🔄 Cykl | **#15** | - |
 
 ---
 
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 13191/14510 (90%) | 14510 |
+| 🧙 NPC Dialogs | 🔄 | 13199/14510 (90%) | 14510 |
 | 📜 Lua Scripts | 🔄 | 713/1000 (71%) | 1000 |
 | 🎒 Items Database | 🔄 | 36972/40000 (92%) | 40000 |
 | 👹 Monsters | 🔄 | 100/500 (20%) | 500 |
@@ -78,9 +78,9 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #14` |
-| **Szczegóły** | NPC:13191 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-10 05:00:08 |
+| **Plik** | `Cykl #15` |
+| **Szczegóły** | NPC:13199 Scripts:713 Items:36972 |
+| **Ostatnia aktualizacja** | 2025-12-10 05:02:15 |
 
 ### 📈 Statystyki sesji
 
@@ -267,7 +267,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.2** | 🟢 RUNNING | PID: 385540, Cykl #14 |
+| **Worker v4.2** | 🟢 RUNNING | PID: 385540, Cykl #15 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -288,5 +288,5 @@
 ---
 
 *🤖 Machine-readable: `i18n/status/worker_state.json`*  
-*📅 Auto-updated by Worker v4.2 | Last: 2025-12-10 05:00:38*  
+*📅 Auto-updated by Worker v4.2 | Last: 2025-12-10 05:02:43*  
 *🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)*

@@ -41,15 +41,7 @@
         },
         "6_placeholder": {
           "status": "completed",
-          "languages": [
-            "pl",
-            "de",
-            "es",
-            "pt",
-            "fr",
-            "it",
-            "ru"
-          ],
+          "languages": [],
           "keys_per_lang": 1,
           "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
         },
@@ -122,7 +114,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T20:45:56.834681"
+      "completed_at": "2025-12-10T21:12:54.081150"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -232,7 +224,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T20:45:57.991013"
+      "completed_at": "2025-12-10T21:12:54.842712"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {
@@ -275,15 +267,7 @@
         },
         "6_placeholder": {
           "status": "completed",
-          "languages": [
-            "pl",
-            "de",
-            "es",
-            "pt",
-            "fr",
-            "it",
-            "ru"
-          ],
+          "languages": [],
           "keys_per_lang": 2,
           "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
         },
@@ -356,7 +340,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T20:45:59.727750"
+      "completed_at": "2025-12-10T21:12:56.731053"
     },
     "data-otservbr-global/npc/hamish.lua": {
       "stages": {
@@ -513,15 +497,7 @@
         },
         "6_placeholder": {
           "status": "completed",
-          "languages": [
-            "pl",
-            "de",
-            "es",
-            "pt",
-            "fr",
-            "it",
-            "ru"
-          ],
+          "languages": [],
           "keys_per_lang": 6,
           "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
         },
@@ -594,13 +570,13 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T20:46:08.254785"
+      "completed_at": "2025-12-10T21:12:58.741987"
     },
     "data-otservbr-global/npc/nelly.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "hash": "3ba9ca198dfd49a8993d595d94632b06",
+          "hash": "209ab6d9006a32a1e41dd53984c56a31",
           "type": "npc"
         },
         "2_analysis": {
@@ -608,10 +584,10 @@
           "safe_name": "nelly",
           "StdModule_say": 0,
           "npcHandler_say": 1,
-          "sendTextMessage": 1,
+          "sendTextMessage": 0,
           "addGreetKeyword": 0,
           "addFarewellKeyword": 0,
-          "total": 2,
+          "total": 1,
           "already_i18n": 0,
           "npcSayLib": 0,
           "needs_migration": true
@@ -634,6 +610,20 @@
           "npcsay_keys": 0,
           "greet_keys": 0,
           "farewell_keys": 0
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 2,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
         },
         "7_validation": {
           "status": "completed",
@@ -704,7 +694,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:55:23.175503"
+      "completed_at": "2025-12-10T21:12:59.715921"
     },
     "data-otservbr-global/npc/alaistar.lua": {
       "stages": {
@@ -814,7 +804,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T20:45:49.053587"
+      "completed_at": "2025-12-10T21:12:50.467234"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -924,7 +914,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T20:45:50.459888"
+      "completed_at": "2025-12-10T21:12:51.578833"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -1034,7 +1024,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T20:45:52.256947"
+      "completed_at": "2025-12-10T21:12:52.746059"
     },
     "data-otservbr-global/npc/ghorza.lua": {
       "stages": {
@@ -1077,15 +1067,7 @@
         },
         "6_placeholder": {
           "status": "completed",
-          "languages": [
-            "pl",
-            "de",
-            "es",
-            "pt",
-            "fr",
-            "it",
-            "ru"
-          ],
+          "languages": [],
           "keys_per_lang": 3,
           "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
         },
@@ -1158,13 +1140,13 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T20:45:58.922129"
+      "completed_at": "2025-12-10T21:12:55.959648"
     },
     "data-otservbr-global/npc/nipuna.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "hash": "3d600d0e9a6bceb500131cdc8d4c31e3",
+          "hash": "ce15aacdea02e67e83e8c0ef600d903b",
           "type": "npc"
         },
         "2_analysis": {
@@ -1172,10 +1154,10 @@
           "safe_name": "nipuna",
           "StdModule_say": 0,
           "npcHandler_say": 1,
-          "sendTextMessage": 1,
+          "sendTextMessage": 0,
           "addGreetKeyword": 0,
           "addFarewellKeyword": 0,
-          "total": 2,
+          "total": 1,
           "already_i18n": 0,
           "npcSayLib": 0,
           "needs_migration": true
@@ -1198,6 +1180,20 @@
           "npcsay_keys": 0,
           "greet_keys": 0,
           "farewell_keys": 0
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 2,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
         },
         "7_validation": {
           "status": "completed",
@@ -1268,7 +1264,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:55:41.857132"
+      "completed_at": "2025-12-10T21:13:00.628227"
     },
     "data-otservbr-global/npc/richard.lua": {
       "stages": {
@@ -1388,7 +1384,7 @@
       "stages": {
         "1_started": {
           "status": "completed",
-          "hash": "9378c6c185e73c3ffef931328c39dc84",
+          "hash": "90f148cd0d53cd387b46cd0028e4a574",
           "type": "npc"
         },
         "2_analysis": {
@@ -1396,10 +1392,10 @@
           "safe_name": "rock_in_a_hard_place",
           "StdModule_say": 4,
           "npcHandler_say": 2,
-          "sendTextMessage": 1,
+          "sendTextMessage": 0,
           "addGreetKeyword": 0,
           "addFarewellKeyword": 0,
-          "total": 7,
+          "total": 6,
           "already_i18n": 4,
           "npcSayLib": 0,
           "needs_migration": true
@@ -1496,7 +1492,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:55:44.887945"
+      "completed_at": "2025-12-10T21:13:09.432099"
     },
     "data-otservbr-global/npc/romir.lua": {
       "stages": {

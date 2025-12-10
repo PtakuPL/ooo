@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 21:12:45 UTC  
+> **Aktualizacja:** 2025-12-10 21:13:11 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **10903** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#215** | - |
+| 🔄 Cykl | **#1** | - |
 
 ---
 
@@ -76,7 +76,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   215 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (8 etapów)                     │
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 21:12:45                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 21:13:11                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -102,7 +102,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **10903** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
-| 🔄 Cykli wykonanych | **#215** | continuous mode |
+| 🔄 Cykli wykonanych | **#1** | continuous mode |
 | ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -110,11 +110,11 @@
 
 ## 📜 Historia ostatnich operacji
 
-- ✅ `mordecai` - ukończono 2025-12-10 20:46
-- ✅ `gnomegica` - ukończono 2025-12-10 20:45
-- ✅ `ghorza` - ukończono 2025-12-10 20:45
-- ✅ `frederik` - ukończono 2025-12-10 20:45
-- ✅ `frans` - ukończono 2025-12-10 20:45
+- ✅ `rock_in_a_hard_place` - ukończono 2025-12-10 21:13
+- ✅ `nipuna` - ukończono 2025-12-10 21:13
+- ✅ `nelly` - ukończono 2025-12-10 21:12
+- ✅ `mordecai` - ukończono 2025-12-10 21:12
+- ✅ `gnomegica` - ukończono 2025-12-10 21:12
 
 ---
 
@@ -273,7 +273,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #215 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -294,23 +294,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 21:12:45  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 21:13:11  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `mordecai` - ukończono 2025-12-10 20:46
-- ✅ `gnomegica` - ukończono 2025-12-10 20:45
-- ✅ `ghorza` - ukończono 2025-12-10 20:45
-- ✅ `frederik` - ukończono 2025-12-10 20:45
-- ✅ `frans` - ukończono 2025-12-10 20:45
-- ✅ `chuckles` - ukończono 2025-12-10 20:45
-- ✅ `battlemart` - ukończono 2025-12-10 20:45
-- ✅ `alaistar` - ukończono 2025-12-10 20:45
-- ✅ `ser_tybald` - ukończono 2025-12-10 15:04
-- ✅ `menesto` - ukończono 2025-12-10 15:04
+- ✅ `rock_in_a_hard_place` - ukończono 2025-12-10 21:13
+- ✅ `nipuna` - ukończono 2025-12-10 21:13
+- ✅ `nelly` - ukończono 2025-12-10 21:12
+- ✅ `mordecai` - ukończono 2025-12-10 21:12
+- ✅ `gnomegica` - ukończono 2025-12-10 21:12
+- ✅ `ghorza` - ukończono 2025-12-10 21:12
+- ✅ `frederik` - ukończono 2025-12-10 21:12
+- ✅ `frans` - ukończono 2025-12-10 21:12
+- ✅ `chuckles` - ukończono 2025-12-10 21:12
+- ✅ `battlemart` - ukończono 2025-12-10 21:12
 
 ---
 

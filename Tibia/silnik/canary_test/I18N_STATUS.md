@@ -301,6 +301,9 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `rock_in_a_hard_place` - ukończono 2025-12-10 21:13
+- ✅ `nipuna` - ukończono 2025-12-10 21:13
+- ✅ `nelly` - ukończono 2025-12-10 21:12
 - ✅ `mordecai` - ukończono 2025-12-10 20:46
 - ✅ `gnomegica` - ukończono 2025-12-10 20:45
 - ✅ `ghorza` - ukończono 2025-12-10 20:45

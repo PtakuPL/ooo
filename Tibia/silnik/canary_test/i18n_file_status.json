@@ -3232,7 +3232,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:48:55.553449"
+      "completed_at": "2025-12-10T12:49:08.851661"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -3337,7 +3337,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:48:56.577018"
+      "completed_at": "2025-12-10T12:49:09.950869"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -3442,7 +3442,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:48:58.865234"
+      "completed_at": "2025-12-10T12:49:11.566704"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -3547,7 +3547,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:49:00.372523"
+      "completed_at": "2025-12-10T12:49:12.947146"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -3652,7 +3652,27 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:49:01.094014"
+      "completed_at": "2025-12-10T12:49:13.581713"
+    },
+    "data-otservbr-global/npc/amarie.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "3984b372e2dc1ddd3f3421c0b9790485",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "amarie",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
     }
   },
   "global_stats": {

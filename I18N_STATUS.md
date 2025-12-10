@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:44:05 UTC  
+> **Aktualizacja:** 2025-12-11 00:44:12 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **29182** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#135** | - |
+| 🔄 Cykl | **#136** | - |
 
 ---
 
@@ -66,10 +66,10 @@
 | Język | Status | Kluczy | Etap |
 |-------|--------|--------|------|
 | 🇩🇪 Niemiecki | 📊 464836 kluczy | 464836 | [EN] prefix |
-| 🇵🇱 Polski | 🔄 Sync... | 423616 | [EN] prefix |
-| 🇪🇸 Hiszpański | 📊 394445 kluczy | 394445 | [EN] prefix |
+| 🇵🇱 Polski | 📊 423616 kluczy | 423616 | [EN] prefix |
+| 🇪🇸 Hiszpański | 🔄 Sync... | 423616 | [EN] prefix |
 | 🇫🇷 Francuski | 📊 152368 kluczy | 152368 | [EN] prefix |
-| 🌐 Pozostałe (0/53) | 🔄 | 1829710 | Aktualnie: PL |
+| 🌐 Pozostałe (0/53) | 🔄 | 1858881 | Aktualnie: ES |
 
 ---
 
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   135 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   136 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🌍 TRANSLATION_SYNC (Etap 1)              │
-│ Kategoria: 🌍 PL/php.json                            │
+│ Kategoria: 🌍 ES/php.json                            │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: PL/php.json                                    │
+│ 📊 Ostatnia aktywność: ES/php.json                                    │
 │ [██████████████████████████████████████████████████] │
 │ 423616/29182 kluczy (1452%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 27119 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:44:05                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:44:12                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -103,7 +103,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29182** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#135** | continuous mode |
+| 🔄 Cykli wykonanych | **#136** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,7 +111,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🌍 `PL/php.json` +423616 kluczy @ 00:44:05
+- 🌍 `ES/php.json` +423616 kluczy @ 00:44:12
 - ⚡ `php` +0 kluczy @ 00:43:46
 - ⚡ `npclib` +0 kluczy @ 00:39:00
 - ⚡ `startup` +0 kluczy @ 00:38:54
@@ -322,7 +322,7 @@
 | html | 0m | 2x | Progresywny backoff |
 | client | 2m | 2x | Progresywny backoff |
 | sendtextmessage | 2m | 2x | Progresywny backoff |
-| keywordhandler | 3m | 2x | Progresywny backoff |
+| keywordhandler | 2m | 2x | Progresywny backoff |
 | twig | 3m | 2x | Progresywny backoff |
 | php | 9m | 2x | Progresywny backoff |
 
@@ -332,7 +332,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #135 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #136 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -342,8 +342,8 @@
 | Język | Kluczy | Status |
 |-------|--------|--------|
 | DE | 464,836 | ⏳ |
-| PL | 423,616 | 🔄 |
-| ES | 394,445 | ⏳ |
+| PL | 423,616 | ⏳ |
+| ES | 423,616 | 🔄 |
 | PT | 394,445 | ⏳ |
 | FR | 152,368 | ⏳ |
 | IT | 0 | ⏳ |
@@ -352,7 +352,7 @@
 | SK | 0 | ⏳ |
 | HU | 0 | ⏳ |
 
-> **Aktualnie:** PL / php.json  
+> **Aktualnie:** ES / php.json  
 > **Ukończone języki:** 0/53  
 > **Prefix:** `[EN] ` (klucze do przetłumaczenia)
 
@@ -375,7 +375,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:44:05  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:44:12  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

@@ -236,11 +236,15 @@ if needs_migration == 0:
 
 ---
 
-### Ograniczenia obecnego systemu:
-- ❌ Worker przetwarza tylko `StdModule.say`
-- ❌ Brak obsługi `npcHandler:say()` i `player:sendTextMessage()`
+### Ograniczenia obecnego systemu (v2.1):
+- ✅ ~~Worker przetwarza tylko `StdModule.say`~~ - NAPRAWIONE v2.1
+- ✅ ~~Brak obsługi `npcHandler:say()`~~ - DODANE v2.1
+- ❌ Brak obsługi `npcHandler:say({tablica})` z wieloma tekstami
+- ❌ Brak obsługi `player:sendTextMessage()`
+- ❌ Brak obsługi `voices` i `keywordHandler`
 - ❌ Brak parsera PHP/C++/Twig
-- ❌ Brak prawdziwego tłumaczenia (tylko placeholder'y)
+- ❌ **Brak automatycznego tłumaczenia** (tryb TRANSLATION wymaga interaktywnego terminala)
+- ❌ **Brak automatycznego przejścia** z MIGRATION → TRANSLATION → DOCUMENTATION
 - ❌ Brak walidacji poprawności kodu po modyfikacji
 - ❌ Brak rollback w przypadku błędów
 

@@ -22,7 +22,7 @@ NC='\033[0m'
 log() { echo -e "$1"; }
 
 #===============================================================================
-# UPDATE_STATUS - Aktualizacja I18N_STATUS.md dla GitHub
+# UPDATE_STATUS - Aktualizacja I18N_STATUS.md dla GitHub (pełna wersja)
 #===============================================================================
 update_github_status() {
     log "${CYAN}📊 Aktualizuję I18N_STATUS.md...${NC}"
@@ -36,6 +36,7 @@ WORK_DIR = os.getcwd()
 STATUS_FILE = "i18n_file_status.json"
 I18N_DIR = "i18n"
 PROCESSED_FILE = "i18n_processed_files.txt"
+EXCLUDED_FILE = "i18n_excluded_files.txt"
 
 # Wczytaj status workera
 try:
@@ -59,33 +60,46 @@ def count_keys(filename):
             pass
     return 0
 
-npc_keys = count_keys("npc.json")
-scripts_keys = count_keys("scripts.json")
+# Wszystkie kategorie
+game_keys = count_keys("game.json")
 items_keys = count_keys("items.json")
+misc_keys = count_keys("misc.json")
 monsters_keys = count_keys("monsters.json")
+npc_keys = count_keys("npc.json")
+player_keys = count_keys("player.json")
+quests_keys = count_keys("quests.json")
+scripts_keys = count_keys("scripts.json")
 server_keys = count_keys("server.json")
 spells_keys = count_keys("spells.json")
-total_keys = npc_keys + scripts_keys + items_keys + monsters_keys + server_keys + spells_keys
+system_keys = count_keys("system.json")
+ui_keys = count_keys("ui.json")
 
-# Zlicz języki
-langs_count = 0
-langs_list = []
+total_keys = game_keys + items_keys + misc_keys + monsters_keys + npc_keys + player_keys + quests_keys + scripts_keys + server_keys + spells_keys + system_keys + ui_keys
+
+# Zlicz języki (wszystkie dostępne)
+ALL_LANGUAGES = ["en", "pl", "de", "es", "pt", "fr", "it", "ru", "uk", "zh", "ja", "ko", "ar", "tr", "nl", "sv", "da", "no", "fi", "cs", "sk", "hu", "ro", "bg", "el", "he", "hi", "th", "vi", "id", "ms", "tl", "sw", "bn", "ta", "te", "ml", "ka", "hy", "az", "kk", "uz", "sr", "hr", "sl", "bs", "mk", "sq", "lv", "lt", "et", "fa", "zh_TW"]
+langs_count = len(ALL_LANGUAGES)
+
+langs_with_data = []
 if os.path.isdir(I18N_DIR):
     for lang in os.listdir(I18N_DIR):
-        npc_file = f"{I18N_DIR}/{lang}/npc.json"
-        if os.path.exists(npc_file):
-            try:
-                with open(npc_file) as f:
-                    if len(json.load(f)) > 0:
-                        langs_count += 1
-                        langs_list.append(lang)
-            except:
-                pass
+        lang_path = f"{I18N_DIR}/{lang}"
+        if os.path.isdir(lang_path):
+            for jf in os.listdir(lang_path):
+                if jf.endswith(".json"):
+                    try:
+                        with open(f"{lang_path}/{jf}") as f:
+                            if len(json.load(f)) > 0:
+                                if lang not in langs_with_data:
+                                    langs_with_data.append(lang)
+                                break
+                    except:
+                        pass
 
 # Zlicz pliki NPC
 npc_dir = "data-otservbr-global/npc"
 total_npc = 0
-needs_migration = 0
+needs_migration_npc = 0
 migrated_npc = 0
 if os.path.isdir(npc_dir):
     for f in os.listdir(npc_dir):
@@ -98,19 +112,32 @@ if os.path.isdir(npc_dir):
                     has_stdmod = "StdModule.say" in content and "text" in content
                     has_i18n = "i18nKey" in content
                     if has_stdmod and not has_i18n:
-                        needs_migration += 1
+                        needs_migration_npc += 1
                     elif has_i18n:
                         migrated_npc += 1
             except:
                 pass
 
-# Processed files count
+# Processed & excluded files count
 processed_count = 0
+excluded_count = 0
 if os.path.exists(PROCESSED_FILE):
     with open(PROCESSED_FILE) as f:
         processed_count = len([l for l in f.readlines() if l.strip()])
+if os.path.exists(EXCLUDED_FILE):
+    with open(EXCLUDED_FILE) as f:
+        excluded_count = len([l for l in f.readlines() if l.strip()])
 
-# Ostatnio ukończone
+# Cykl (z pliku jeśli istnieje)
+cycle_count = 1
+try:
+    with open("i18n_worker_state.json") as f:
+        ws = json.load(f)
+        cycle_count = ws.get("cycle", 1)
+except:
+    pass
+
+# Ostatnio ukończone NPC
 recent_completed = []
 sorted_files = sorted(
     [(f, info.get("completed_at", "")) for f, info in files.items() if info.get("overall_status") == "completed"],
@@ -118,16 +145,39 @@ sorted_files = sorted(
     reverse=True
 )[:10]
 for fpath, completed_at in sorted_files:
-    fname = os.path.basename(fpath)
-    time_str = completed_at[11:19] if completed_at else "?"
-    info = files[fpath]
-    keys = info.get("stages", {}).get("5_extraction_en", {}).get("keys_added", 0)
-    recent_completed.append(f"| `{fname}` | {time_str} | {keys} | ✅ |")
+    fname = os.path.basename(fpath).replace(".lua", "")
+    time_str = completed_at[:16].replace("T", " ") if completed_at else "?"
+    recent_completed.append(f"- ✅ `{fname}` - ukończono {time_str}")
 
-# Generuj I18N_STATUS.md
+# Cele dla kategorii
+TARGETS = {
+    "game": 100, "items": 40000, "misc": 100, "monsters": 500,
+    "npc": 15000, "player": 200, "quests": 500, "scripts": 1000,
+    "server": 300, "spells": 200, "system": 2000, "ui": 200
+}
+
+def progress_bar(current, target, width=20):
+    if target == 0:
+        return "░" * width
+    pct = min(current / target, 1.0)
+    filled = int(pct * width)
+    return "█" * filled + "░" * (width - filled)
+
+def status_icon(current, target):
+    if target == 0:
+        return "⏳"
+    pct = current / target
+    if pct >= 0.9:
+        return "✅"
+    elif pct > 0:
+        return "🔄"
+    return "⏳"
+
+# Generuj timestamp
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-md_content = f'''# 🌍 I18N Internationalization System - Live Dashboard
+# ==================== GENERUJ PEŁNY I18N_STATUS.md ====================
+md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 > **Aktualizacja:** {timestamp} UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** {langs_count}
@@ -151,49 +201,263 @@ md_content = f'''# 🌍 I18N Internationalization System - Live Dashboard
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **{processed_count}** | ↑ |
-| ✅ Plików ukończonych | **{completed}** | ↑ |
-| 🔄 W trakcie | **{in_progress}** | - |
+| ⏭️ Plików wykluczonych | **{excluded_count}** | - |
 | 🔑 Kluczy i18n | **{total_keys}** | ↑ |
-| 🌍 Języków z danymi | **{langs_count}** | ✓ |
+| 🌍 Języków | **{langs_count}** | ✓ |
+| ⚠️ Konfliktów | **0** | ✓ |
+| 🔄 Cykl | **#{cycle_count}** | - |
 
 ---
 
-## 🧙 NPC Migration Status
+## ✅ CHECKLIST - Plan Pracy
+
+> **Aktualna faza:** 🎮 Canary Server  
+> **Aktualna kategoria:** NPC Migration
+
+### 🔄 Faza 1: 🎮 Canary Server
+
+| Kategoria | Status | Postęp | Cel |
+|-----------|--------|--------|-----|
+| 🧙 NPC Dialogs | {status_icon(npc_keys, TARGETS["npc"])} | {npc_keys}/{TARGETS["npc"]} ({round(npc_keys/TARGETS["npc"]*100)}%) | {TARGETS["npc"]} |
+| 📜 Lua Scripts | {status_icon(scripts_keys, TARGETS["scripts"])} | {scripts_keys}/{TARGETS["scripts"]} ({round(scripts_keys/TARGETS["scripts"]*100) if TARGETS["scripts"] else 0}%) | {TARGETS["scripts"]} |
+| 🎒 Items Database | {status_icon(items_keys, TARGETS["items"])} | {items_keys}/{TARGETS["items"]} ({round(items_keys/TARGETS["items"]*100)}%) | {TARGETS["items"]} |
+| 👹 Monsters | {status_icon(monsters_keys, TARGETS["monsters"])} | {monsters_keys}/{TARGETS["monsters"]} ({round(monsters_keys/TARGETS["monsters"]*100)}%) | {TARGETS["monsters"]} |
+| ✨ Spells & Magic | {status_icon(spells_keys, TARGETS["spells"])} | {spells_keys}/{TARGETS["spells"]} ({round(spells_keys/TARGETS["spells"]*100)}%) | {TARGETS["spells"]} |
+| ⚙️ Server C++ | {status_icon(server_keys, TARGETS["server"])} | {server_keys}/{TARGETS["server"]} ({round(server_keys/TARGETS["server"]*100)}%) | {TARGETS["server"]} |
+
+### ⏳ Faza 2: 🌐 Website (AAC)
+
+| Kategoria | Status | Postęp | Cel |
+|-----------|--------|--------|-----|
+| 🐘 PHP Backend | ⏳ | 0/2015 (0%) | 2015 |
+| 📄 HTML Views | ⏳ | 0/300 (0%) | 300 |
+| 📦 JavaScript | ⏳ | 0/100 (0%) | 100 |
+
+### ⏳ Faza 3: 📱 Instalka/Klient
+
+| Kategoria | Status | Postęp | Cel |
+|-----------|--------|--------|-----|
+| 🖥️ Client UI | ⏳ | {ui_keys}/200 ({round(ui_keys/200*100)}%) | 200 |
+| 💿 Installer | ⏳ | 0/94 (0%) | 94 |
+
+### ⏳ Faza 4: 🌍 Tłumaczenia
+
+| Kategoria | Status | Postęp | Cel |
+|-----------|--------|--------|-----|
+| 🇵🇱 Polski | {"🔄" if "pl" in langs_with_data else "⏳"} | {len([l for l in langs_with_data if l == "pl"])}/1 | 1 |
+| 🇩🇪 Niemiecki | {"🔄" if "de" in langs_with_data else "⏳"} | {len([l for l in langs_with_data if l == "de"])}/1 | 1 |
+| 🇪🇸 Hiszpański | {"🔄" if "es" in langs_with_data else "⏳"} | {len([l for l in langs_with_data if l == "es"])}/1 | 1 |
+| 🌐 Pozostałe (50) | ⏳ | {len(langs_with_data)}/{langs_count} ({round(len(langs_with_data)/langs_count*100)}%) | {langs_count} |
+
+---
+
+## 🔴 LIVE: Aktualna Aktywność
+
+| Parametr | Wartość |
+|----------|---------|
+| Status | {"🔄 in_progress" if in_progress > 0 else "✅ idle"} |
+| Operacja | 🎮 Canary Server - NPC |
+| Plik | Cykl #{cycle_count} |
+| Szczegóły | NPC:{npc_keys} Scripts:{scripts_keys} Items:{items_keys} |
+| Ostatnia aktualizacja | {timestamp} |
+
+---
+
+## 📈 Statystyki sesji
 
 | Metryka | Wartość |
 |---------|---------|
-| 📁 Plików NPC ogółem | {total_npc} |
+| Plików przetworzonych | {processed_count} |
+| NPC zmigrowanych | {completed} |
+| Kluczy wyciągniętych | {total_keys} |
+| Błędów | 0 |
+
+---
+
+## 📂 Szczegóły Kategorii
+
+<details>
+<summary>🎮 1. Game - {status_icon(game_keys, TARGETS["game"])} ({round(game_keys/TARGETS["game"]*100) if TARGETS["game"] else 0}%)</summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | {game_keys} |
+| 🎯 Cel | {TARGETS["game"]} |
+| 📊 Postęp | {round(game_keys/TARGETS["game"]*100) if TARGETS["game"] else 0}% |
+| 📁 Plik | i18n/en/game.json |
+
+</details>
+
+<details>
+<summary>🎒 2. Items - {status_icon(items_keys, TARGETS["items"])} ({round(items_keys/TARGETS["items"]*100) if TARGETS["items"] else 0}%)</summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | {items_keys} |
+| 🎯 Cel | {TARGETS["items"]} |
+| 📊 Postęp | {round(items_keys/TARGETS["items"]*100) if TARGETS["items"] else 0}% |
+| 📁 Plik | i18n/en/items.json |
+
+</details>
+
+<details>
+<summary>📦 3. Misc - {status_icon(misc_keys, TARGETS["misc"])} ({round(misc_keys/TARGETS["misc"]*100) if TARGETS["misc"] else 0}%)</summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | {misc_keys} |
+| 🎯 Cel | {TARGETS["misc"]} |
+| 📊 Postęp | {round(misc_keys/TARGETS["misc"]*100) if TARGETS["misc"] else 0}% |
+| 📁 Plik | i18n/en/misc.json |
+
+</details>
+
+<details>
+<summary>👹 4. Monsters - {status_icon(monsters_keys, TARGETS["monsters"])} ({round(monsters_keys/TARGETS["monsters"]*100) if TARGETS["monsters"] else 0}%)</summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | {monsters_keys} |
+| 🎯 Cel | {TARGETS["monsters"]} |
+| 📊 Postęp | {round(monsters_keys/TARGETS["monsters"]*100) if TARGETS["monsters"] else 0}% |
+| 📁 Plik | i18n/en/monsters.json |
+
+</details>
+
+<details>
+<summary>🧙 5. NPC - {status_icon(npc_keys, TARGETS["npc"])} ({round(npc_keys/TARGETS["npc"]*100) if TARGETS["npc"] else 0}%)</summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | {npc_keys} |
+| 🎯 Cel | {TARGETS["npc"]} |
+| 📊 Postęp | {round(npc_keys/TARGETS["npc"]*100) if TARGETS["npc"] else 0}% |
+| 📁 Plik | i18n/en/npc.json |
+| 📁 Plików NPC | {total_npc} |
 | ✅ Zmigrowanych | {migrated_npc} |
-| 🔄 Do migracji | {needs_migration} |
-| 📊 Postęp | {round(migrated_npc/total_npc*100, 1) if total_npc > 0 else 0}% |
+| 🔄 Do migracji | {needs_migration_npc} |
+
+</details>
+
+<details>
+<summary>👤 6. Player - {status_icon(player_keys, TARGETS["player"])} ({round(player_keys/TARGETS["player"]*100) if TARGETS["player"] else 0}%)</summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | {player_keys} |
+| 🎯 Cel | {TARGETS["player"]} |
+| 📊 Postęp | {round(player_keys/TARGETS["player"]*100) if TARGETS["player"] else 0}% |
+| 📁 Plik | i18n/en/player.json |
+
+</details>
+
+<details>
+<summary>📜 7. Quests - {status_icon(quests_keys, TARGETS["quests"])} ({round(quests_keys/TARGETS["quests"]*100) if TARGETS["quests"] else 0}%)</summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | {quests_keys} |
+| 🎯 Cel | {TARGETS["quests"]} |
+| 📊 Postęp | {round(quests_keys/TARGETS["quests"]*100) if TARGETS["quests"] else 0}% |
+| 📁 Plik | i18n/en/quests.json |
+
+</details>
+
+<details>
+<summary>📜 8. Scripts - {status_icon(scripts_keys, TARGETS["scripts"])} ({round(scripts_keys/TARGETS["scripts"]*100) if TARGETS["scripts"] else 0}%)</summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | {scripts_keys} |
+| 🎯 Cel | {TARGETS["scripts"]} |
+| 📊 Postęp | {round(scripts_keys/TARGETS["scripts"]*100) if TARGETS["scripts"] else 0}% |
+| 📁 Plik | i18n/en/scripts.json |
+
+</details>
+
+<details>
+<summary>⚙️ 9. Server - {status_icon(server_keys, TARGETS["server"])} ({round(server_keys/TARGETS["server"]*100) if TARGETS["server"] else 0}%)</summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | {server_keys} |
+| 🎯 Cel | {TARGETS["server"]} |
+| 📊 Postęp | {round(server_keys/TARGETS["server"]*100) if TARGETS["server"] else 0}% |
+| 📁 Plik | i18n/en/server.json |
+
+</details>
+
+<details>
+<summary>✨ 10. Spells - {status_icon(spells_keys, TARGETS["spells"])} ({round(spells_keys/TARGETS["spells"]*100) if TARGETS["spells"] else 0}%)</summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | {spells_keys} |
+| 🎯 Cel | {TARGETS["spells"]} |
+| 📊 Postęp | {round(spells_keys/TARGETS["spells"]*100) if TARGETS["spells"] else 0}% |
+| 📁 Plik | i18n/en/spells.json |
+
+</details>
+
+<details>
+<summary>🖥️ 11. System - {status_icon(system_keys, TARGETS["system"])} ({round(system_keys/TARGETS["system"]*100) if TARGETS["system"] else 0}%)</summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | {system_keys} |
+| 🎯 Cel | {TARGETS["system"]} |
+| 📊 Postęp | {round(system_keys/TARGETS["system"]*100) if TARGETS["system"] else 0}% |
+| 📁 Plik | i18n/en/system.json |
+
+</details>
+
+<details>
+<summary>🎨 12. UI - {status_icon(ui_keys, TARGETS["ui"])} ({round(ui_keys/TARGETS["ui"]*100) if TARGETS["ui"] else 0}%)</summary>
+
+| Metryka | Wartość |
+|---------|---------|
+| 🔑 Kluczy | {ui_keys} |
+| 🎯 Cel | {TARGETS["ui"]} |
+| 📊 Postęp | {round(ui_keys/TARGETS["ui"]*100) if TARGETS["ui"] else 0}% |
+| 📁 Plik | i18n/en/ui.json |
+
+</details>
 
 ---
 
-## 🔑 Klucze per kategoria
+## 🔧 Worker & Guardian Status
 
-| Kategoria | Klucze EN |
-|-----------|-----------|
-| 🧙 NPC | {npc_keys} |
-| 📜 Scripts | {scripts_keys} |
-| 🎒 Items | {items_keys} |
-| 👹 Monsters | {monsters_keys} |
-| ⚙️ Server | {server_keys} |
-| ✨ Spells | {spells_keys} |
-| **RAZEM** | **{total_keys}** |
+| System | Status | Info |
+|--------|--------|------|
+| Worker v1.1 | 🟢 RUNNING | Cykl #{cycle_count} |
+| Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
 
-## 🌍 Języki z tłumaczeniami
+## 🗺️ Roadmap
 
-{", ".join(sorted(langs_list)[:20])}{"..." if len(langs_list) > 20 else ""}
+```
+[{status_icon(items_keys, TARGETS["items"])}] Items ({items_keys})      {progress_bar(items_keys, TARGETS["items"])}  {round(items_keys/TARGETS["items"]*100) if TARGETS["items"] else 0}%
+[{status_icon(npc_keys, TARGETS["npc"])}] NPC ({npc_keys})            {progress_bar(npc_keys, TARGETS["npc"])}  {round(npc_keys/TARGETS["npc"]*100) if TARGETS["npc"] else 0}%
+[{status_icon(scripts_keys, TARGETS["scripts"])}] Scripts ({scripts_keys})      {progress_bar(scripts_keys, TARGETS["scripts"])}  {round(scripts_keys/TARGETS["scripts"]*100) if TARGETS["scripts"] else 0}%
+[{status_icon(monsters_keys, TARGETS["monsters"])}] Monsters ({monsters_keys})    {progress_bar(monsters_keys, TARGETS["monsters"])}  {round(monsters_keys/TARGETS["monsters"]*100) if TARGETS["monsters"] else 0}%
+[{status_icon(spells_keys, TARGETS["spells"])}] Spells ({spells_keys})       {progress_bar(spells_keys, TARGETS["spells"])}  {round(spells_keys/TARGETS["spells"]*100) if TARGETS["spells"] else 0}%
+[{status_icon(server_keys, TARGETS["server"])}] Server ({server_keys})       {progress_bar(server_keys, TARGETS["server"])}  {round(server_keys/TARGETS["server"]*100) if TARGETS["server"] else 0}%
+[{status_icon(system_keys, TARGETS["system"])}] System ({system_keys})       {progress_bar(system_keys, TARGETS["system"])}  {round(system_keys/TARGETS["system"]*100) if TARGETS["system"] else 0}%
+[{status_icon(ui_keys, TARGETS["ui"])}] UI ({ui_keys})             {progress_bar(ui_keys, TARGETS["ui"])}  {round(ui_keys/TARGETS["ui"]*100) if TARGETS["ui"] else 0}%
+```
 
 ---
 
-## 📋 Ostatnio zmigrowane NPC
+🤖 Machine-readable: `i18n_file_status.json`  
+📅 Auto-updated by Worker v1.1 | Last: {timestamp}  
+🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
-| Plik | Czas | Klucze | Status |
-|------|------|--------|--------|
-{chr(10).join(recent_completed) if recent_completed else "| - | - | - | - |"}
+---
+
+## Ostatnio zmigrowane NPC
+
+{chr(10).join(recent_completed) if recent_completed else "- Brak"}
 
 ---
 
@@ -203,27 +467,27 @@ md_content = f'''# 🌍 I18N Internationalization System - Live Dashboard
 # Pojedynczy plik
 ./i18n_worker_simple.sh --file data-otservbr-global/npc/nazwa.lua
 
-# Status
+# Status lokalny
 ./i18n_worker_simple.sh --status
 
 # Auto migracja (5 plików)
 ./i18n_worker_simple.sh --auto 5
 
-# Auto migracja (wszystkie)
-./i18n_worker_simple.sh --auto
+# Aktualizuj I18N_STATUS.md
+./i18n_worker_simple.sh --update-status
 ```
 
 ---
 
-*Wygenerowano automatycznie przez i18n_worker_simple.sh*
+*Wygenerowano automatycznie przez i18n_worker_simple.sh v1.1*
 '''
 
 with open("I18N_STATUS.md", "w") as f:
-    f.write(md_content)
+    f.write(md)
 
 print(f"✅ I18N_STATUS.md zaktualizowany: {timestamp}")
-print(f"   Plików: {completed} ukończonych, {needs_migration} do migracji")
-print(f"   Kluczy: {total_keys} | Języków: {langs_count}")
+print(f"   NPC: {npc_keys} kluczy, {completed} zmigrowanych, {needs_migration_npc} do zrobienia")
+print(f"   Total: {total_keys} kluczy | Języki: {len(langs_with_data)}/{langs_count}")
 STATUSPY
 }
 

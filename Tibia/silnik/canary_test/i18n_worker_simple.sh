@@ -2501,22 +2501,23 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                             # Wczytaj completed files
                             COMPLETED_LIST=$(python3 -c "import json; d=json.load(open('$STATUS_FILE')); print(' '.join([f for f,v in d.get('files',{}).items() if v.get('overall_status')=='completed']))" 2>/dev/null)
                             
-                            for f in $(find data-otservbr-global/scripts data/scripts -name "*.lua" 2>/dev/null | head -100); do
+                            # Przeszukaj wszystkie pliki scripts (bez limitu)
+                            while IFS= read -r f; do
                                 [ -f "$f" ] || continue
                                 # Pomiń już przetworzone w JSON
                                 echo "$COMPLETED_LIST" | grep -qF "$f" && continue
                                 # Pomiń już przetworzone w starym pliku
                                 grep -qF "$f" "$PROCESSED_FILE" 2>/dev/null && continue
                                 
-                                # Szukaj sendTextMessage
-                                if grep -qE 'sendTextMessage\s*\([^,]+,\s*"[^"]{10,}"' "$f" 2>/dev/null; then
+                                # Szukaj sendTextMessage z czystym stringiem
+                                if grep -qE 'sendTextMessage\s*\([^,]+,\s*"[^"]+"\s*\)' "$f" 2>/dev/null; then
                                     if ! grep -q "sendLocalizedTextMessage" "$f" 2>/dev/null; then
                                         process_scripts_file "$f"
                                         COUNT=$((COUNT + 1))
                                         [ "$COUNT" -ge "$BATCH" ] && break
                                     fi
                                 fi
-                            done
+                            done < <(find data-otservbr-global/scripts data/scripts -name "*.lua" 2>/dev/null)
                             echo "   📊 Scripts: Przetworzono $COUNT plików"
                             ;;
                         monsters)

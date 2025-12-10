@@ -11478,5 +11478,20 @@
   "item.36718.name": "dead afflicted strider",
   "item.36719.name": "dead afflicted strider",
   "item.36723.name": "kooldown-aid",
-  "item.36724.name": "strike enhancement"
+  "item.36724.name": "strike enhancement",
+  "item.36725.name": "stamina extension",
+  "item.36726.name": "charm upgrade",
+  "item.36727.name": "wealth duplex",
+  "item.36728.name": "bestiary betterment",
+  "item.36729.name": "fire resilience",
+  "item.36730.name": "ice resilience",
+  "item.36731.name": "earth resilience",
+  "item.36732.name": "energy resilience",
+  "item.36733.name": "holy resilience",
+  "item.36734.name": "death resilience",
+  "item.36735.name": "physical resilience",
+  "item.36736.name": "fire amplification",
+  "item.36737.name": "ice amplification",
+  "item.36738.name": "earth amplification",
+  "item.36739.name": "energy amplification"
 }

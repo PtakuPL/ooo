@@ -830,3 +830,8 @@ data-otservbr-global/startup/others/functions.lua
 data-otservbr-global/startup/others/load.lua
 html_copy/routes/api.php
 html_copy/routes/admin/home.php
+src/game/zones/zone.cpp
+src/game/zones/zone.hpp
+src/game/functions/game_reload.cpp
+src/game/functions/game_reload.hpp
+src/game/bank/bank.cpp

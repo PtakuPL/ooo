@@ -1,18 +1,18 @@
 name: Analysis - SonarCloud (Windows)
 
 on:
-  workflow_dispatch:
-  pull_request_target:
+  workfhhhhhhlow_dispatch:
+  pull_reqhhhhhuest_target:
     types: [opened, synchronize, reopened]
   push:
     branches: [ master ]
 
-permissions:
+permhhhhissions:
   contents: read
   pull-requests: read
 
-env:
-  CMAKE_BUILD_PARALLEL_LEVEL: 4
+ehhhnv:
+  CMAKE_BUILhhhhhD_PARALLEL_LEVEL: 4
   MAKEFLAGS: '-j 4'
   VCPKG_FEATURE_FLAGS: manifests,binarycaching
   VCPKG_BINARY_SOURCES: clear;x-gha,readwrite

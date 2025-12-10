@@ -10353,5 +10353,20 @@
   "item.32489.name": "straw bed foot section",
   "item.32490.name": "canopy footboard",
   "item.32491.name": "blue headboard",
-  "item.32492.name": "green headboard"
+  "item.32492.name": "green headboard",
+  "item.32493.name": "red headboard",
+  "item.32494.name": "yellow headboard",
+  "item.32495.name": "cot headboard",
+  "item.32496.name": "hammock head section",
+  "item.32497.name": "simple headboard",
+  "item.32498.name": "straw mat head section",
+  "item.32499.name": "canopy headboard",
+  "item.32500.name": "blue footboard",
+  "item.32501.name": "green footboard",
+  "item.32502.name": "red footboard",
+  "item.32503.name": "yellow footboard",
+  "item.32504.name": "cot footboard",
+  "item.32505.name": "hammock foot section",
+  "item.32506.name": "simple footboard",
+  "item.32507.name": "straw bed foot section"
 }

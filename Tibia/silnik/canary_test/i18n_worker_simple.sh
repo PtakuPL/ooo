@@ -52,12 +52,8 @@ I18N_DIR = "i18n"
 PROCESSED_FILE = "i18n_processed_files.txt"
 EXCLUDED_FILE = "i18n_excluded_files.txt"
 
-# Znajdź git root (tam zapisujemy I18N_STATUS.md)
-try:
-    GIT_ROOT = subprocess.check_output(['git', 'rev-parse', '--show-toplevel'], 
-                                        stderr=subprocess.DEVNULL).decode().strip()
-except:
-    GIT_ROOT = WORK_DIR  # Fallback do bieżącego katalogu
+# Używamy WORK_DIR bezpośrednio (tam gdzie jest worker)
+GIT_ROOT = WORK_DIR
 
 # Wczytaj status workera
 try:

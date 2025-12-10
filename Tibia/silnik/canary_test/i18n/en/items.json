@@ -1383,5 +1383,20 @@
   "item.3300.name": "katana",
   "item.3301.name": "broadsword",
   "item.3302.name": "dragon lance",
-  "item.3303.name": "great axe"
+  "item.3303.name": "great axe",
+  "item.3304.name": "crowbar",
+  "item.3305.name": "battle hammer",
+  "item.3306.name": "golden sickle",
+  "item.3307.name": "scimitar",
+  "item.3308.name": "machete",
+  "item.3309.name": "thunder hammer",
+  "item.3310.name": "iron hammer",
+  "item.3311.name": "clerical mace",
+  "item.3312.name": "silver mace",
+  "item.3313.name": "obsidian lance",
+  "item.3314.name": "naginata",
+  "item.3315.name": "guardian halberd",
+  "item.3316.name": "orcish axe",
+  "item.3317.name": "barbarian axe",
+  "item.3318.name": "knight axe"
 }

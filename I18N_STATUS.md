@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 05:37:45 UTC  
+> **Aktualizacja:** 2025-12-10 05:43:00 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -23,10 +23,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **763** | ↑ |
 | ⏭️ Plików wykluczonych | **5161** | - |
-| 🔑 Kluczy i18n | **51200** | ↑ |
+| 🔑 Kluczy i18n | **51215** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **50** | ✓ |
-| 🔄 Cykl | **#31** | - |
+| 🔄 Cykl | **#33** | - |
 
 ---
 
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 13199/14510 (90%) | 14510 |
+| 🧙 NPC Dialogs | 🔄 | 13214/14510 (91%) | 14510 |
 | 📜 Lua Scripts | 🔄 | 713/1000 (71%) | 1000 |
 | 🎒 Items Database | 🔄 | 36972/40000 (92%) | 40000 |
 | 👹 Monsters | 🔄 | 100/500 (20%) | 500 |
@@ -78,9 +78,9 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #31` |
-| **Szczegóły** | NPC:13199 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-10 05:37:06 |
+| **Plik** | `Cykl #33` |
+| **Szczegóły** | NPC:13214 Scripts:713 Items:36972 |
+| **Ostatnia aktualizacja** | 2025-12-10 05:42:22 |
 
 ### 📈 Statystyki sesji
 
@@ -156,7 +156,7 @@
 
 | Metryka | Wartość |
 |---------|----------|
-| 🔑 Kluczy | **13199** |
+| 🔑 Kluczy | **13214** |
 | 🎯 Cel | 13000 |
 | 📊 Postęp | 100% |
 | 📁 Plik | `i18n/en/npc.json` |
@@ -267,7 +267,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.2** | 🟢 RUNNING | PID: 385540, Cykl #31 |
+| **Worker v4.2** | 🟢 RUNNING | PID: 385540, Cykl #33 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -276,7 +276,7 @@
 
 ```
 [✅] Items (36972)      ██████████████████░░  92%
-[✅] NPC (13199)        ████████████████████░ 100%
+[✅] NPC (13214)        ████████████████████░ 100%
 [🔄] Scripts (713)    ██████████████░░░░░░  71%
 [🔄] Monsters (100)   ████░░░░░░░░░░░░░░░░  20%
 [🔄] Spells (100)     ██████████░░░░░░░░░░  50%
@@ -288,5 +288,5 @@
 ---
 
 *🤖 Machine-readable: `i18n/status/worker_state.json`*  
-*📅 Auto-updated by Worker v4.2 | Last: 2025-12-10 05:37:46*  
+*📅 Auto-updated by Worker v4.2 | Last: 2025-12-10 05:43:01*  
 *🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)*

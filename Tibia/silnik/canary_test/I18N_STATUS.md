@@ -278,6 +278,7 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `elane` - ukończono 2025-12-10 07:00
 - ✅ `edvard` - ukończono 2025-12-10 06:59
 - ✅ `edowir` - ukończono 2025-12-10 06:59
 - ✅ `edgar-ellen` - ukończono 2025-12-10 06:59

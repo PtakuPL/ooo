@@ -1100,3 +1100,13 @@ TWIG:html_copy/system/templates/faq.html.twig
 TWIG:html_copy/system/templates/guilds.change_motd.html.twig
 TWIG:html_copy/system/templates/admin.changelog.html.twig
 TWIG:html_copy/system/templates/online.html.twig
+TWIG:html_copy/system/templates/guilds.view.html.twig
+TWIG:html_copy/system/templates/forum.new_post.html.twig
+TWIG:html_copy/system/templates/guilds.accept_invite.html.twig
+TWIG:html_copy/system/templates/admin.visitors.html.twig
+TWIG:html_copy/system/templates/buttons.login.html.twig
+TWIG:html_copy/system/templates/admin.menus.js.html.twig
+TWIG:html_copy/system/templates/guilds.delete_invite.html.twig
+TWIG:html_copy/system/templates/bans.html.twig
+TWIG:html_copy/system/templates/guilds.kick_player.html.twig
+TWIG:html_copy/system/templates/buttons.edit.html.twig

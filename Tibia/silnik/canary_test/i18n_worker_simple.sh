@@ -1589,7 +1589,10 @@ PYTRANSLATE
 }
 
 #===============================================================================
-# DISPATCHER - Wybór trybu w continuous mode
+# DISPATCHER - Wybór trybu w continuous mode (Multi-Category)
+#===============================================================================
+# KATEGORIE: NPC → SCRIPTS → MONSTERS → ITEMS → SPELLS → SERVER → WEB
+# Po zakończeniu migracji wszystkich kategorii → AUTO_TRANSLATE
 #===============================================================================
 select_work_mode() {
     python3 << 'DISPATCHERPY'
@@ -1599,79 +1602,156 @@ import glob
 import re
 
 I18N_DIR = "i18n"
-NPC_DIR = "data-otservbr-global/npc"
-LANG_PRIORITY = ["pl", "de", "es", "pt", "fr", "it", "ru"]
+LANG_PRIORITY = ["pl", "de", "es", "pt", "fr", "it", "ru", "nl", "sv", "cs"]
+ALL_LANGUAGES = ["pl", "de", "es", "pt", "fr", "it", "ru", "uk", "nl", "sv", "da", "no", "fi", "cs", "sk", "hu", "ro", "bg", "el", "tr", "ar", "he", "hi", "zh", "ja", "ko", "th", "vi", "id", "ms"]
 
-# 1. Czy są pliki NPC do migracji?
-# Szukamy plików z: StdModule.say bez i18nKey LUB npcHandler:say("...) bez NPC_LIB
-# LUB addGreetKeyword/addFarewellKeyword z text= ale bez i18nKey
-needs_migration = 0
-for f in glob.glob(f"{NPC_DIR}/*.lua"):
+# Definicja kategorii do przetworzenia
+CATEGORIES = {
+    "npc": {
+        "dirs": ["data-otservbr-global/npc", "data-canary/npc"],
+        "patterns": [r'StdModule\.say.*text\s*=\s*"[^"]+"', r'npcHandler:say\(\s*"[^"]{5,}"'],
+        "exclude_if": ["i18nKey", "NPC_LIB.i18n.npcSay"],
+        "json": "npc.json"
+    },
+    "scripts": {
+        "dirs": ["data-otservbr-global/scripts", "data/scripts"],
+        "patterns": [r'sendTextMessage\s*\([^,]+,\s*"[^"]{10,}"', r'player:say\(\s*"[^"]+"'],
+        "exclude_if": ["sendLocalizedTextMessage"],
+        "json": "scripts.json"
+    },
+    "monsters": {
+        "dirs": ["data-otservbr-global/monster", "data-canary/monster"],
+        "patterns": [r'description\s*=\s*"[^"]+"', r'name\s*=\s*"[^"]+"'],
+        "exclude_if": [],
+        "json": "monsters.json"
+    },
+    "spells": {
+        "dirs": ["data-otservbr-global/scripts/spells", "data/scripts/spells"],
+        "patterns": [r'words\s*=\s*"[^"]+"', r'description\s*=\s*"[^"]+"'],
+        "exclude_if": [],
+        "json": "spells.json"
+    },
+    "items": {
+        "dirs": ["data/items"],
+        "patterns": [r'name="[^"]+"', r'description="[^"]+"'],
+        "exclude_if": [],
+        "json": "items.json"
+    }
+}
+
+def count_files_needing_work(category):
+    """Zlicz pliki wymagające migracji w danej kategorii"""
+    config = CATEGORIES.get(category, {})
+    if not config:
+        return 0
+    
+    needs_work = 0
+    for dir_path in config["dirs"]:
+        if not os.path.isdir(dir_path):
+            continue
+        for root, dirs, files in os.walk(dir_path):
+            for f in files:
+                if not f.endswith(".lua") and not f.endswith(".xml"):
+                    continue
+                fpath = os.path.join(root, f)
+                try:
+                    with open(fpath, 'r', errors='ignore') as fp:
+                        content = fp.read()
+                    
+                    # Sprawdź czy plik ma wzorce do migracji
+                    has_pattern = False
+                    for pattern in config["patterns"]:
+                        if re.search(pattern, content):
+                            has_pattern = True
+                            break
+                    
+                    if not has_pattern:
+                        continue
+                    
+                    # Sprawdź czy nie jest już zmigrowany
+                    already_done = False
+                    for exclude in config["exclude_if"]:
+                        if exclude in content:
+                            already_done = True
+                            break
+                    
+                    if has_pattern and not already_done:
+                        needs_work += 1
+                except:
+                    pass
+    return needs_work
+
+def count_keys_in_json(json_file):
+    """Zlicz klucze w pliku JSON"""
+    fpath = f"{I18N_DIR}/en/{json_file}"
+    if os.path.exists(fpath):
+        try:
+            with open(fpath) as f:
+                return len(json.load(f))
+        except:
+            pass
+    return 0
+
+def count_untranslated_keys(lang, json_file):
+    """Zlicz klucze z placeholderami [LANG] lub brakujące"""
+    en_path = f"{I18N_DIR}/en/{json_file}"
+    lang_path = f"{I18N_DIR}/{lang}/{json_file}"
+    
+    if not os.path.exists(en_path):
+        return 0
+    
     try:
-        with open(f) as nf:
-            content = nf.read()
+        with open(en_path) as f:
+            en_data = json.load(f)
         
-        needs_work = False
+        if not os.path.exists(lang_path):
+            return len(en_data)
         
-        # Sprawdź StdModule.say bez i18nKey
-        if "StdModule.say" in content and 'text = "' in content:
-            if "i18nKey" not in content:
-                needs_work = True
+        with open(lang_path) as f:
+            lang_data = json.load(f)
         
-        # Sprawdź npcHandler:say("...) bez NPC_LIB.i18n.npcSay
-        # Szukamy: npcHandler:say("tekst", npc, creature/player)
-        if 'npcHandler:say("' in content:
-            # Sprawdź czy są proste npcHandler:say (nie tablice/konkatenacje)
-            pattern = r'npcHandler:say\(\s*"[^"]{5,}"\s*,\s*npc\s*,\s*(?:creature|player)\s*\)'
-            if re.search(pattern, content):
-                if "NPC_LIB.i18n.npcSay" not in content:
-                    needs_work = True
-        
-        # Sprawdź addGreetKeyword/addFarewellKeyword z text= bez i18nKey
-        if ('addGreetKeyword' in content or 'addFarewellKeyword' in content) and 'text = "' in content:
-            # Sprawdź czy te z text mają już i18nKey
-            # Pattern: { "klucze" } jako pierwszy argument
-            pattern_greet = r'addGreetKeyword\s*\(\{[^}]+\}\s*,\s*\{[^}]*?text\s*=\s*"[^"]+"[^}]*\}'
-            pattern_farewell = r'addFarewellKeyword\s*\(\{[^}]+\}\s*,\s*\{[^}]*?text\s*=\s*"[^"]+"[^}]*\}'
-            
-            for pattern in [pattern_greet, pattern_farewell]:
-                matches = re.findall(pattern, content, re.DOTALL)
-                for match in matches:
-                    if 'i18nKey' not in match:
-                        needs_work = True
-                        break
-        
-        if needs_work:
-            needs_migration += 1
+        # Zlicz placeholdery i brakujące
+        untranslated = 0
+        for key in en_data:
+            if key not in lang_data:
+                untranslated += 1
+            elif lang_data[key].startswith("["):
+                untranslated += 1
+            elif lang_data[key] == en_data[key]:  # Identyczne = nie przetłumaczone
+                untranslated += 1
+        return untranslated
     except:
-        pass
+        return 0
 
-if needs_migration > 0:
-    print(f"MIGRATION:{needs_migration}")
-    exit(0)
+# ============ GŁÓWNA LOGIKA DISPATCHERA ============
 
-# 2. Czy są klucze do przetłumaczenia?
-en_file = f"{I18N_DIR}/en/npc.json"
-if os.path.exists(en_file):
-    with open(en_file) as f:
-        en_keys = set(json.load(f).keys())
+# 1. Sprawdź każdą kategorię po kolei
+for cat_name, config in CATEGORIES.items():
+    needs_work = count_files_needing_work(cat_name)
+    if needs_work > 0:
+        print(f"MIGRATION:{cat_name}:{needs_work}")
+        exit(0)
+
+# 2. Migracja zakończona - sprawdź tłumaczenia
+total_untranslated = 0
+for json_file in ["npc.json", "scripts.json", "monsters.json", "spells.json"]:
+    en_keys = count_keys_in_json(json_file)
+    if en_keys == 0:
+        continue
     
     for lang in LANG_PRIORITY:
-        lang_file = f"{I18N_DIR}/{lang}/npc.json"
-        if os.path.exists(lang_file):
-            with open(lang_file) as f:
-                lang_data = json.load(f)
-            # Policz placeholder'y
-            placeholders = len([v for v in lang_data.values() if v.startswith("[")])
-            if placeholders > 0:
-                print(f"TRANSLATION:{lang}:{placeholders}")
-                exit(0)
-        else:
-            print(f"TRANSLATION:{lang}:{len(en_keys)}")
+        untranslated = count_untranslated_keys(lang, json_file)
+        if untranslated > 0:
+            total_untranslated += untranslated
+            # Zwróć AUTO_TRANSLATE zamiast TRANSLATION (bez interakcji!)
+            print(f"AUTO_TRANSLATE:{lang}:{json_file}:{untranslated}")
             exit(0)
 
 # 3. Wszystko zrobione
-print("IDLE:0")
+if total_untranslated == 0:
+    print("IDLE:all_done:0")
+else:
+    print(f"AUTO_TRANSLATE:all:{total_untranslated}")
 DISPATCHERPY
 }
 

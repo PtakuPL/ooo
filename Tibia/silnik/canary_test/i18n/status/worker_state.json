@@ -1,20 +1,20 @@
 {
   "schema_version": "2.1",
-  "last_updated": "2025-12-10T04:11:29+01:00",
+  "last_updated": "2025-12-10T04:13:33+01:00",
   "worker": {
     "version": "4.2",
     "status": "running",
-    "mode": "extraction",
-    "cycle": 4,
+    "mode": "migration",
+    "cycle": 1,
     "files_per_cycle": 10,
-    "pid": 116373
+    "pid": 218098
   },
   "global_progress": {
-    "total_files_processed": 624,
+    "total_files_processed": 626,
     "total_files_excluded": 4813,
     "total_keys": 52892,
     "total_languages": 53,
-    "total_conflicts": 50
+    "total_conflicts": 0
   },
   "categories": {
     "npc": {"status": "completed", "keys": 12693, "target": 13000},
@@ -31,28 +31,28 @@
   },
   "recent_files": [
   {
-    "file": "alia.lua",
-    "time": "04:11:29",
-    "status": "success"
-  },
-  {
-    "file": "captain_harava.lua",
-    "time": "04:11:29",
-    "status": "success"
-  },
-  {
     "file": "lea.lua",
-    "time": "04:11:29",
+    "time": "04:13:33",
     "status": "success"
   },
   {
     "file": "edala.lua",
-    "time": "04:11:29",
+    "time": "04:13:33",
     "status": "success"
   },
   {
     "file": "captain_seahorse.lua",
-    "time": "04:11:29",
+    "time": "04:13:33",
+    "status": "success"
+  },
+  {
+    "file": "ninev.lua",
+    "time": "04:13:33",
+    "status": "success"
+  },
+  {
+    "file": "ninev.lua",
+    "time": "04:13:33",
     "status": "success"
   }
 ]

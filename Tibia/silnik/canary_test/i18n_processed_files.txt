@@ -622,3 +622,5 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/lea.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/edala.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/captain_seahorse.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/ninev.lua
+/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/ninev.lua

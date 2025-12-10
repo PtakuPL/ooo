@@ -1,7 +1,20 @@
 {
   "category": "ui",
+  "last_updated": "2025-12-10 04:13:53",
   "status": "in_progress",
-  "last_updated": "2025-12-10T04:11:30+01:00",
-  "keys": 86,
-  "cycle": 4
+  "progress": {
+    "percentage": 2,
+    "total_keys": 86,
+    "translated_pl": 2,
+    "files_processed": 62,
+    "files_remaining": 5635
+  },
+  "languages": {
+    "total": 53,
+    "with_translations": 53
+  },
+  "details": {
+    "source_file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/i18n/en/ui.json",
+    "primary_translation": "/home/ptaku/serweryt/Tibia/silnik/canary_test/i18n/pl/ui.json"
+  }
 }

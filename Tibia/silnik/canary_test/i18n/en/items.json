@@ -13233,5 +13233,20 @@
   "item.47601.name": "energy elemental soul core",
   "item.47602.name": "earth elemental soul core",
   "item.47603.name": "bog raider soul core",
-  "item.47606.name": "goblin assassin soul core"
+  "item.47606.name": "goblin assassin soul core",
+  "item.47607.name": "goblin scavenger soul core",
+  "item.47608.name": "grim reaper soul core",
+  "item.47619.name": "mutated rat soul core",
+  "item.47622.name": "mutated bat soul core",
+  "item.47624.name": "haunted treeling soul core",
+  "item.47626.name": "acid blob soul core",
+  "item.47627.name": "death blob soul core",
+  "item.47628.name": "mercury blob soul core",
+  "item.47629.name": "mutated tiger soul core",
+  "item.47631.name": "nightmare scion soul core",
+  "item.47632.name": "hellspawn soul core",
+  "item.47633.name": "nightstalker soul core",
+  "item.47634.name": "mutated human soul core",
+  "item.47635.name": "gozzler soul core",
+  "item.47636.name": "damaged worker golem soul core"
 }

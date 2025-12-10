@@ -198,5 +198,10 @@
   "item.435.name": "sewer grate",
   "item.436.name": "stone floor",
   "item.451.name": "RESERVED SPRITE",
-  "item.463.name": "white stone tile"
+  "item.463.name": "white stone tile",
+  "item.464.name": "wooden floor",
+  "item.469.name": "stairs",
+  "item.475.name": "closed trapdoor",
+  "item.476.name": "trapdoor",
+  "item.477.name": "pedestal"
 }

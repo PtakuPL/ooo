@@ -7,49 +7,22 @@
           "hash": "d093255573292da6b2911e1210a61c5e",
           "type": "npc"
         },
-        "3_documentation": {
-          "status": "completed",
-          "doc_file": "docs/i18n/npc/battlemart.md",
-          "keys_documented": 0
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0,
-          "stdmod_keys": 0,
-          "npcsay_keys": 0,
-          "greet_keys": 0,
-          "farewell_keys": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:30.534230"
-    },
-    "data-otservbr-global/npc/frederik.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "hash": "32e89365b11176eb5da7b3de3529ce6b",
-          "type": "npc"
-        },
         "2_analysis": {
           "status": "completed",
-          "safe_name": "frederik",
+          "safe_name": "battlemart",
           "StdModule_say": 0,
-          "npcHandler_say": 1,
+          "npcHandler_say": 2,
           "sendTextMessage": 1,
           "addGreetKeyword": 0,
           "addFarewellKeyword": 0,
-          "total": 2,
+          "total": 3,
           "already_i18n": 0,
           "npcSayLib": 0,
           "needs_migration": true
         },
         "3_documentation": {
           "status": "completed",
-          "doc_file": "docs/i18n/npc/frederik.md",
+          "doc_file": "docs/i18n/npc/battlemart.md",
           "keys_documented": 0
         },
         "4_transformation": {
@@ -135,7 +108,53 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:35.755107"
+      "completed_at": "2025-12-10T13:15:50.607078"
+    },
+    "data-otservbr-global/npc/frederik.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "32e89365b11176eb5da7b3de3529ce6b",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "frederik",
+          "StdModule_say": 0,
+          "npcHandler_say": 1,
+          "sendTextMessage": 1,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 2,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/frederik.md",
+          "keys_documented": 0
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 0,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T13:15:54.540344"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -176,12 +195,76 @@
           "greet_keys": 0,
           "farewell_keys": 0
         },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Brak i18nKey w pliku Lua"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 0,
+          "validation_passed": true
+        },
         "8_sync": {
           "status": "completed"
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:32.489218"
+      "completed_at": "2025-12-10T13:15:51.868535"
     },
     "data-otservbr-global/npc/ghorza.lua": {
       "stages": {
@@ -291,7 +374,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:16.914306"
+      "completed_at": "2025-12-10T13:15:44.664400"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {
@@ -401,7 +484,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:17.627809"
+      "completed_at": "2025-12-10T13:15:45.290955"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -511,7 +594,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:34.439110"
+      "completed_at": "2025-12-10T13:15:53.626648"
     },
     "data-otservbr-global/npc/hamish.lua": {
       "stages": {
@@ -631,7 +714,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:18.594911"
+      "completed_at": "2025-12-10T13:15:46.205326"
     },
     "data-otservbr-global/npc/mordecai.lua": {
       "stages": {
@@ -741,7 +824,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:20.173067"
+      "completed_at": "2025-12-10T13:15:47.911792"
     },
     "data-otservbr-global/npc/nelly.lua": {
       "stages": {
@@ -851,7 +934,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:20.918310"
+      "completed_at": "2025-12-10T13:15:48.978825"
     },
     "data-otservbr-global/npc/nipuna.lua": {
       "stages": {
@@ -961,7 +1044,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:21.598201"
+      "completed_at": "2025-12-10T13:15:49.820457"
     },
     "data-otservbr-global/npc/richard.lua": {
       "stages": {
@@ -1081,7 +1164,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:23.552702"
+      "completed_at": "2025-12-10T13:15:51.052105"
     },
     "data-otservbr-global/npc/rock_in_a_hard_place.lua": {
       "stages": {
@@ -1194,7 +1277,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:24.403189"
+      "completed_at": "2025-12-10T13:15:51.755665"
     },
     "data-otservbr-global/npc/romir.lua": {
       "stages": {
@@ -1304,7 +1387,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:25.177921"
+      "completed_at": "2025-12-10T13:15:52.596512"
     },
     "data-otservbr-global/npc/seymour.lua": {
       "stages": {
@@ -1451,742 +1534,4 @@
             "Klucz npc.seymour.stdmod_95 brakuje w en/npc.json",
             "Klucz npc.seymour.stdmod_96 brakuje w en/npc.json",
             "Klucz npc.seymour.stdmod_97 brakuje w en/npc.json",
-            "Klucz npc.seymour.stdmod_98 brakuje w en/npc.json",
-            "Klucz npc.seymour.stdmod_99 brakuje w en/npc.json",
-            "Klucz npc.seymour.stdmod_100 brakuje w en/npc.json",
-            "Klucz npc.seymour.stdmod_101 brakuje w en/npc.json",
-            "Klucz npc.seymour.stdmod_102 brakuje w en/npc.json",
-            "Klucz npc.seymour.stdmod_103 brakuje w en/npc.json"
-          ],
-          "warnings": [],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 105,
-          "validation_passed": false
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:26.657850"
-    },
-    "data-otservbr-global/npc/shiriel.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "hash": "500dddbad9711fb2ad6ecb670d42e8de",
-          "type": "npc"
-        },
-        "2_analysis": {
-          "status": "completed",
-          "safe_name": "shiriel",
-          "StdModule_say": 0,
-          "npcHandler_say": 1,
-          "sendTextMessage": 1,
-          "addGreetKeyword": 1,
-          "addFarewellKeyword": 1,
-          "total": 4,
-          "already_i18n": 2,
-          "npcSayLib": 0,
-          "needs_migration": true
-        },
-        "3_documentation": {
-          "status": "completed",
-          "doc_file": "docs/i18n/npc/shiriel.md",
-          "keys_documented": 2
-        },
-        "4_transformation": {
-          "status": "completed",
-          "transformed": 0,
-          "stdmod_transformed": 0,
-          "npcsay_transformed": 0
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0,
-          "stdmod_keys": 0,
-          "npcsay_keys": 0,
-          "greet_keys": 0,
-          "farewell_keys": 0
-        },
-        "6_placeholder": {
-          "status": "completed",
-          "languages": [],
-          "keys_per_lang": 2,
-          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
-        },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 2,
-          "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:27.824965"
-    },
-    "data-otservbr-global/npc/sigurd.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "hash": "c6ab1bfda3e7422461cefb9544a8b01e",
-          "type": "npc"
-        },
-        "2_analysis": {
-          "status": "completed",
-          "safe_name": "sigurd",
-          "StdModule_say": 0,
-          "npcHandler_say": 1,
-          "sendTextMessage": 1,
-          "addGreetKeyword": 0,
-          "addFarewellKeyword": 0,
-          "total": 2,
-          "already_i18n": 0,
-          "npcSayLib": 0,
-          "needs_migration": true
-        },
-        "3_documentation": {
-          "status": "completed",
-          "doc_file": "docs/i18n/npc/sigurd.md",
-          "keys_documented": 1
-        },
-        "4_transformation": {
-          "status": "completed",
-          "transformed": 0,
-          "stdmod_transformed": 0,
-          "npcsay_transformed": 0
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0,
-          "stdmod_keys": 0,
-          "npcsay_keys": 0,
-          "greet_keys": 0,
-          "farewell_keys": 0
-        },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [
-            "Brak i18nKey w pliku Lua"
-          ],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 0,
-          "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:29.457566"
-    },
-    "data-otservbr-global/npc/sundara.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "hash": "ce93e7562fa5a1cadd1abb5f21a9da5b",
-          "type": "npc"
-        },
-        "2_analysis": {
-          "status": "completed",
-          "safe_name": "sundara",
-          "StdModule_say": 0,
-          "npcHandler_say": 1,
-          "sendTextMessage": 1,
-          "addGreetKeyword": 0,
-          "addFarewellKeyword": 0,
-          "total": 2,
-          "already_i18n": 0,
-          "npcSayLib": 0,
-          "needs_migration": true
-        },
-        "3_documentation": {
-          "status": "completed",
-          "doc_file": "docs/i18n/npc/sundara.md",
-          "keys_documented": 2
-        },
-        "4_transformation": {
-          "status": "completed",
-          "transformed": 0,
-          "stdmod_transformed": 0,
-          "npcsay_transformed": 0
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0,
-          "stdmod_keys": 0,
-          "npcsay_keys": 0,
-          "greet_keys": 0,
-          "farewell_keys": 0
-        },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [
-            "Brak i18nKey w pliku Lua"
-          ],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 0,
-          "validation_passed": true
-        }
-      },
-      "overall_status": "in_progress"
-    },
-    "data-otservbr-global/npc/tandros.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "hash": "5d187afeed9556214740916cb032f8a2",
-          "type": "npc"
-        },
-        "2_analysis": {
-          "status": "completed",
-          "safe_name": "tandros",
-          "StdModule_say": 0,
-          "npcHandler_say": 1,
-          "sendTextMessage": 1,
-          "addGreetKeyword": 0,
-          "addFarewellKeyword": 0,
-          "total": 2,
-          "already_i18n": 0,
-          "npcSayLib": 0,
-          "needs_migration": true
-        },
-        "3_documentation": {
-          "status": "completed",
-          "doc_file": "docs/i18n/npc/tandros.md",
-          "keys_documented": 1
-        },
-        "4_transformation": {
-          "status": "completed",
-          "transformed": 0,
-          "stdmod_transformed": 0,
-          "npcsay_transformed": 0
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0,
-          "stdmod_keys": 0,
-          "npcsay_keys": 0,
-          "greet_keys": 0,
-          "farewell_keys": 0
-        },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [
-            "Brak i18nKey w pliku Lua"
-          ],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 0,
-          "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:31.841468"
-    },
-    "data-otservbr-global/npc/the_lootmonger.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "hash": "cebac07c414508fc14914eee83ecbc21",
-          "type": "npc"
-        },
-        "2_analysis": {
-          "status": "completed",
-          "safe_name": "the_lootmonger",
-          "StdModule_say": 0,
-          "npcHandler_say": 2,
-          "sendTextMessage": 1,
-          "addGreetKeyword": 0,
-          "addFarewellKeyword": 0,
-          "total": 3,
-          "already_i18n": 0,
-          "npcSayLib": 0,
-          "needs_migration": true
-        },
-        "3_documentation": {
-          "status": "completed",
-          "doc_file": "docs/i18n/npc/the_lootmonger.md",
-          "keys_documented": 0
-        },
-        "4_transformation": {
-          "status": "completed",
-          "transformed": 0,
-          "stdmod_transformed": 0,
-          "npcsay_transformed": 0
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0,
-          "stdmod_keys": 0,
-          "npcsay_keys": 0,
-          "greet_keys": 0,
-          "farewell_keys": 0
-        },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [
-            "Brak i18nKey w pliku Lua"
-          ],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 0,
-          "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:32.955616"
-    },
-    "data-otservbr-global/npc/alaistar.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "hash": "bb375733efed14acf6113187656ef47a",
-          "type": "npc"
-        },
-        "2_analysis": {
-          "status": "completed",
-          "safe_name": "alaistar",
-          "StdModule_say": 0,
-          "npcHandler_say": 1,
-          "sendTextMessage": 1,
-          "addGreetKeyword": 0,
-          "addFarewellKeyword": 0,
-          "total": 2,
-          "already_i18n": 0,
-          "npcSayLib": 0,
-          "needs_migration": true
-        },
-        "3_documentation": {
-          "status": "completed",
-          "doc_file": "docs/i18n/npc/alaistar.md",
-          "keys_documented": 0
-        },
-        "4_transformation": {
-          "status": "completed",
-          "transformed": 0,
-          "stdmod_transformed": 0,
-          "npcsay_transformed": 0
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0,
-          "stdmod_keys": 0,
-          "npcsay_keys": 0,
-          "greet_keys": 0,
-          "farewell_keys": 0
-        },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [
-            "Brak i18nKey w pliku Lua"
-          ],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 0,
-          "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-10T13:15:28.072985"
-    }
-  },
-  "global_stats": {
-    "files_completed": 19,
-    "total_keys": 0
-  }
-}
+            "Klucz npc.seymour.stdmod_98 brakuje w en/npc.json"

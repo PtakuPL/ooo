@@ -1999,8 +1999,9 @@ ALL_LANGUAGES = ["pl", "de", "es", "pt", "fr", "it", "ru", "uk", "nl", "sv", "da
 CATEGORIES = {
     "npc": {
         "dirs": ["data-otservbr-global/npc", "data-canary/npc"],
-        "patterns": [r'StdModule\.say.*text\s*=\s*"[^"]+"', r'npcHandler:say\(\s*"[^"]{5,}"'],
+        "patterns": [r'StdModule\.say', r'text\s*=\s*"', r'npcHandler:say\(\s*"[^"]{5,}"'],
         "exclude_if": ["i18nKey", "NPC_LIB.i18n.npcSay"],
+        "check_combined": True,  # Dla NPC: StdModule + text muszą być razem
         "json": "npc.json"
     },
     "scripts": {

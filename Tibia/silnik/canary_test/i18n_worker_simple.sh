@@ -950,11 +950,43 @@ for i, text in enumerate(texts_npcsay, 1):
             added += 1
             npcsay_count += 1
 
+#==============================================================================
+# EKSTRAKCJA 3: addGreetKeyword/addFarewellKeyword text = "..."
+#==============================================================================
+greet_count = 0
+farewell_count = 0
+
+# Pattern dla addGreetKeyword z text = "..."
+pattern_greet = r'addGreetKeyword\s*\([^)]+\)\s*,\s*\{[^}]*?text\s*=\s*"([^"]+)"'
+texts_greet = re.findall(pattern_greet, content, re.DOTALL)
+
+for i, text in enumerate(texts_greet, 1):
+    text_clean = ' '.join(text.split())
+    if len(text_clean) >= 3:
+        key = f"npc.$safe.greet_{i}"
+        if key not in data:
+            data[key] = text_clean
+            added += 1
+            greet_count += 1
+
+# Pattern dla addFarewellKeyword z text = "..."
+pattern_farewell = r'addFarewellKeyword\s*\([^)]+\)\s*,\s*\{[^}]*?text\s*=\s*"([^"]+)"'
+texts_farewell = re.findall(pattern_farewell, content, re.DOTALL)
+
+for i, text in enumerate(texts_farewell, 1):
+    text_clean = ' '.join(text.split())
+    if len(text_clean) >= 3:
+        key = f"npc.$safe.farewell_{i}"
+        if key not in data:
+            data[key] = text_clean
+            added += 1
+            farewell_count += 1
+
 # Zapisz
 with open(json_file, "w") as f:
     json.dump(data, f, indent=2, ensure_ascii=False)
 
-print(f"Dodano {added} kluczy (StdModule: {stdmod_count}, npcHandler:say: {npcsay_count})")
+print(f"Dodano {added} kluczy (StdModule: {stdmod_count}, npcHandler:say: {npcsay_count}, greet: {greet_count}, farewell: {farewell_count})")
 
 # Update status
 with open("$STATUS_FILE", "r") as f:

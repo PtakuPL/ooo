@@ -1389,7 +1389,8 @@ for f in glob.glob(f"{NPC_DIR}/*.lua"):
     try:
         with open(f) as nf:
             content = nf.read()
-        if "StdModule.say" in content and "text" in content:
+        # StdModule.say może być na innej linii niż text
+        if "StdModule.say" in content:
             if "i18nKey" not in content:
                 needs_migration += 1
     except:

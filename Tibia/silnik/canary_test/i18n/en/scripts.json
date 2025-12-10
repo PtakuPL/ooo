@@ -366,5 +366,14 @@
   "scripts.creaturescripts.gaz_haragoth_heal.say_2": "Gaz'haragoth HEALS himself!",
   "scripts.creaturescripts.shargon_growth_check.say_1": "Your tricks are older then my minions! You wont trap me! Amuse yourself with my slaves as long was your traps are in place!",
   "scripts.creaturescripts.the_pale_count_kill.say_1": "Dare to follow me to my Sanctuary below and you shall DIE!",
-  "scripts.creaturescripts.omrafir_explode.say_1": "OMRAFIR EXPLODES INTO FLAMES!"
+  "scripts.creaturescripts.omrafir_explode.say_1": "OMRAFIR EXPLODES INTO FLAMES!",
+  "scripts.actions_last_fight.msg_1": "You need atleast ",
+  "scripts.actions_portal_minis_kilmaresh.msg_1": "All the players need to be level ",
+  "scripts.actions_portal_minis_kilmaresh.msg_2": "You have to wait ",
+  "scripts.movements_stepin.msg_1": "You must wait. Someone is challenging ",
+  "scripts.actions_treasure_chest.msg_1": "You found ",
+  "scripts.actions_treasure_chest.msg_2": "You found ",
+  "scripts.actions_portal_minis_feaster.msg_1": "All the players need to be level ",
+  "scripts.actions_portal_minis_feaster.msg_2": "You have to wait ",
+  "scripts.quest_system1.msg_1": "You have found "
 }

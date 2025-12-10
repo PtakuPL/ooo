@@ -3142,8 +3142,11 @@
           "StdModule_say": 0,
           "npcHandler_say": 1,
           "sendTextMessage": 1,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
           "total": 2,
           "already_i18n": 0,
+          "npcSayLib": 0,
           "needs_migration": true
         },
         "3_documentation": {
@@ -3161,7 +3164,9 @@
           "status": "completed",
           "keys_added": 0,
           "stdmod_keys": 0,
-          "npcsay_keys": 0
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0
         },
         "7_validation": {
           "status": "completed",
@@ -3232,7 +3237,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:55:15.849155"
+      "completed_at": "2025-12-10T12:56:00.749378"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -3247,8 +3252,11 @@
           "StdModule_say": 0,
           "npcHandler_say": 2,
           "sendTextMessage": 1,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
           "total": 3,
           "already_i18n": 0,
+          "npcSayLib": 0,
           "needs_migration": true
         },
         "3_documentation": {
@@ -3266,7 +3274,9 @@
           "status": "completed",
           "keys_added": 0,
           "stdmod_keys": 0,
-          "npcsay_keys": 0
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0
         },
         "7_validation": {
           "status": "completed",
@@ -3337,7 +3347,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:55:16.971827"
+      "completed_at": "2025-12-10T12:56:01.925036"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -3352,8 +3362,11 @@
           "StdModule_say": 0,
           "npcHandler_say": 1,
           "sendTextMessage": 1,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
           "total": 2,
           "already_i18n": 0,
+          "npcSayLib": 0,
           "needs_migration": true
         },
         "3_documentation": {
@@ -3371,7 +3384,9 @@
           "status": "completed",
           "keys_added": 0,
           "stdmod_keys": 0,
-          "npcsay_keys": 0
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0
         },
         "7_validation": {
           "status": "completed",
@@ -3442,7 +3457,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:55:18.171226"
+      "completed_at": "2025-12-10T12:56:04.015777"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {

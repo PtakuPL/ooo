@@ -1,0 +1,12 @@
+{
+    "last_updated": null,
+    "total_files": {"npc": 0, "scripts": 0, "quests": 0, "libs": 0},
+    "processed_files": {"npc": 0, "scripts": 0, "quests": 0, "libs": 0},
+    "total_keys": {},
+    "stages_summary": {
+        "1_started": 0, "2_analysis": 0, "3_documentation": 0,
+        "4_transformation": 0, "5_extraction_en": 0, "6_translation": 0,
+        "7_validation": 0, "8_sync": 0
+    },
+    "errors": {"total": 0, "by_stage": {}}
+}

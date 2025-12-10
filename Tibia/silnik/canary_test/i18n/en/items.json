@@ -208,5 +208,10 @@
   "item.479.name": "stone tile",
   "item.480.name": "sandstone wall",
   "item.481.name": "stone flooring",
-  "item.484.name": "trapdoor"
+  "item.484.name": "trapdoor",
+  "item.485.name": "stairway",
+  "item.516.name": "carved stone tile",
+  "item.562.name": "stone floor",
+  "item.565.name": "stone floor",
+  "item.593.name": "stone pile"
 }

@@ -882,7 +882,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:10:48.452392"
+      "completed_at": "2025-12-10T14:11:07.178340"
     },
     "data-otservbr-global/npc/nelly.lua": {
       "stages": {
@@ -1102,7 +1102,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:10:49.559097"
+      "completed_at": "2025-12-10T14:11:08.627225"
     },
     "data-otservbr-global/npc/nipuna.lua": {
       "stages": {
@@ -1322,7 +1322,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:10:50.977996"
+      "completed_at": "2025-12-10T14:11:10.420325"
     },
     "data-otservbr-global/npc/richard.lua": {
       "stages": {
@@ -1660,7 +1660,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:10:52.168048"
+      "completed_at": "2025-12-10T14:11:11.844928"
     },
     "data-otservbr-global/npc/romir.lua": {
       "stages": {
@@ -1880,7 +1880,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:10:52.727146"
+      "completed_at": "2025-12-10T14:11:12.552845"
     },
     "data-otservbr-global/npc/seymour.lua": {
       "stages": {
@@ -4004,10 +4004,598 @@
       },
       "overall_status": "completed",
       "completed_at": "2025-12-10T14:10:01.085943"
+    },
+    "data-otservbr-global/npc/fenbala.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "f077abecf9fb0bb37d00fbf5bfd484e1",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "fenbala",
+          "StdModule_say": 2,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 2,
+          "addFarewellKeyword": 0,
+          "total": 4,
+          "already_i18n": 2,
+          "npcSayLib": 1,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/fenbala.md",
+          "keys_documented": 2
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 2,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 2,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 2,
+          "farewell_keys": 0
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 6,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 4,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T14:11:05.097524"
+    },
+    "data-otservbr-global/npc/gnomadness.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "d3f4f0dae625f0ab6644fb68588d6a18",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "gnomadness",
+          "StdModule_say": 0,
+          "npcHandler_say": 2,
+          "sendTextMessage": 1,
+          "addGreetKeyword": 1,
+          "addFarewellKeyword": 0,
+          "total": 4,
+          "already_i18n": 0,
+          "npcSayLib": 3,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/gnomadness.md",
+          "keys_documented": 4
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 1,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 1,
+          "farewell_keys": 0
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 1,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 1,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T14:11:06.241072"
+    },
+    "data-otservbr-global/npc/gnominer.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "bbc59e942885284dc4d4cb787f762fbe",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "gnominer",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 1,
+          "addFarewellKeyword": 0,
+          "total": 1,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/gnominer.md",
+          "keys_documented": 1
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 1,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 1,
+          "farewell_keys": 0
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 1,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 1,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T14:11:07.312732"
+    },
+    "data-otservbr-global/npc/gnomish_operative_cathing.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "7b3fcf4e669e400f8728a3cedb6bc615",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "gnomish_operative_cathing",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 1,
+          "addFarewellKeyword": 0,
+          "total": 1,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/gnomish_operative_cathing.md",
+          "keys_documented": 1
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 1,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 1,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 1,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T14:11:08.563760"
+    },
+    "data-otservbr-global/npc/gnomish_operative_gt-m-01.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "a102813cb484fb4f85257f6e6fdfb8c5",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "gnomish_operative_gt_m_01",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 1,
+          "addFarewellKeyword": 0,
+          "total": 1,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/gnomish_operative_gt_m_01.md",
+          "keys_documented": 1
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 1,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 1,
+          "farewell_keys": 0
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 1,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T14:11:10.056730"
     }
   },
   "global_stats": {
-    "files_completed": 35,
+    "files_completed": 40,
     "total_keys": 0
   }
 }

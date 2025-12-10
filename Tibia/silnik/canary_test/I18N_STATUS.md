@@ -278,6 +278,11 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `gnomish_operative_gt_m_01` - ukończono 2025-12-10 14:11
+- ✅ `gnomish_operative_cathing` - ukończono 2025-12-10 14:11
+- ✅ `gnominer` - ukończono 2025-12-10 14:11
+- ✅ `gnomadness` - ukończono 2025-12-10 14:11
+- ✅ `fenbala` - ukończono 2025-12-10 14:11
 - ✅ `gnomerik` - ukończono 2025-12-10 14:10
 - ✅ `faluae` - ukończono 2025-12-10 14:05
 - ✅ `eruaran` - ukończono 2025-12-10 14:05

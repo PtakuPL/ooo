@@ -4215,5 +4215,11 @@
   "npc.eruaran.farewell_1": "[FR] Goodbye, |PLAYERNAME|.",
   "npc.faluae.greet_1": "[FR] Greetings, |PLAYERNAME|.",
   "npc.faluae.farewell_1": "[FR] Goodbye, |PLAYERNAME|.",
-  "npc.gnomerik.greet_1": "[FR] Hello and welcome in the gnomish {recruitment} office."
+  "npc.gnomerik.greet_1": "[FR] Hello and welcome in the gnomish {recruitment} office.",
+  "npc.fenbala.greet_1": "[FR] HAIL TO THE QUEEN!",
+  "npc.fenbala.greet_2": "[FR] HAIL TO THE QUEEN!",
+  "npc.gnomadness.greet_1": "[FR] Hello and welcome in the Gnomprona Gardens. If you want to change your {hazard} level, I 'm who you're looking for.",
+  "npc.gnominer.greet_1": "[FR] Hello and welcome in the Gnomprona Gardens",
+  "npc.gnomish_operative_cathing.greet_1": "[FR] Hello and welcome in the Gnomprona Gardens",
+  "npc.gnomish_operative_gt_m_01.greet_1": "[FR] Hello and welcome in the Gnomprona Gardens"
 }

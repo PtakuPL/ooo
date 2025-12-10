@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 22:35:56 UTC  
+> **Aktualizacja:** 2025-12-10 22:36:03 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **16919** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#8** | - |
+| 🔄 Cykl | **#1** | - |
 
 ---
 
@@ -76,7 +76,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     8 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (8 etapów)                     │
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 22:35:56                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 22:36:03                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -102,7 +102,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **16919** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
-| 🔄 Cykli wykonanych | **#8** | continuous mode |
+| 🔄 Cykli wykonanych | **#1** | continuous mode |
 | ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -290,7 +290,7 @@
 | quests | 0 | 0 | 0 | ⏳ Empty |
 | server | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
-| world | 0 | 0 | 3 | ⏳ Empty |
+| world | 0 | 0 | 4 | ⏭️ Skip 59m |
 
 ---
 
@@ -301,6 +301,7 @@
 | scripts | 0m | 4x | Progresywny backoff |
 | monsters | 59m | 4x | Progresywny backoff |
 | raids | 59m | 4x | Progresywny backoff |
+| world | 59m | 4x | Progresywny backoff |
 
 ---
 
@@ -308,7 +309,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #8 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -329,7 +330,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 22:35:56  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 22:36:03  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

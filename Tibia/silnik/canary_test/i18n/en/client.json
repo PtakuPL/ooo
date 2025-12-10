@@ -276,5 +276,10 @@
   "client.options.text4": "General Hotkeys",
   "client.options.text5": "keybindsPanel",
   "client.help.text1": "https://github.com/mehah/otclient/wiki",
-  "client.help.text2": "https://github.com/mehah/otclient/wiki"
+  "client.help.text2": "https://github.com/mehah/otclient/wiki",
+  "client.console.text1": "Chat Channel",
+  "client.console.text2": "Next Channel",
+  "client.console.text3": "Chat Channel",
+  "client.console.text4": "Next Channel",
+  "client.console.text5": "Chat Channel"
 }

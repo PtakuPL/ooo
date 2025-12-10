@@ -3877,3 +3877,11 @@ testyy/modules/client_options/options.otui
 testyy/modules/game_inventory/inventory.lua
 testyy/modules/game_inventory/inventory.otui
 testyy/modules/game_console/communicationwindow.otui
+testyy/modules/game_console/violationwindow.otui
+testyy/modules/game_console/console.otui
+testyy/modules/game_console/console.lua
+testyy/modules/game_console/channelswindow.otui
+testyy/modules/game_minimap/minimap.lua
+testyy/modules/game_minimap/minimap.otui
+testyy/modules/game_ruleviolation/ruleviolation.otui
+testyy/modules/game_ruleviolation/ruleviolation.lua

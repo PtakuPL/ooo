@@ -3587,3 +3587,13 @@ html_copy/templates/tibiacom/buttons.change_name.html.twig
 html_copy/templates/tibiacom/success.html.twig
 html_copy/templates/tibiacom/account.login.html.twig
 html_copy/templates/tibiacom/buttons.view.html.twig
+html_copy/templates/tibiacom/tables.headline.html.twig
+html_copy/templates/tibiacom/account.management.html.twig
+html_copy/templates/tibiacom/buttons.account_lost.html.twig
+html_copy/templates/tibiacom/buttons.base.html.twig
+html_copy/templates/tibiacom/buttons.submit.html.twig
+html_copy/templates/tibiacom/buttons.back.html.twig
+html_copy/templates/tibiacom/buttons.change_password.html.twig
+html_copy/templates/tibiacom/buttons.login.html.twig
+html_copy/templates/tibiacom/buttons.edit.html.twig
+html_copy/templates/tibiacom/buttons.create_character.html.twig

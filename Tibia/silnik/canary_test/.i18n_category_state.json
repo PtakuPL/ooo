@@ -63,8 +63,8 @@
       "timestamp": 1765409579.939664
     },
     "html": {
-      "count": 116,
-      "timestamp": 1765409627.219678
+      "count": 26,
+      "timestamp": 1765409645.1858938
     },
     "client": {
       "count": 0,
@@ -106,7 +106,7 @@
     "modules": 16,
     "startup": 23,
     "php": 3219,
-    "html": 710,
+    "html": 749,
     "client": 14,
     "keywordhandler": 64,
     "twig": 365,

@@ -8973,5 +8973,20 @@
   "item.28515.name": "scribbled notes",
   "item.28517.name": "skeleton",
   "item.28518.name": "old letter",
-  "item.28519.name": "closed door"
+  "item.28519.name": "closed door",
+  "item.28520.name": "open door",
+  "item.28524.name": "RESERVED SPRITE",
+  "item.28525.name": "magic gold converter",
+  "item.28526.name": "magic gold converter",
+  "item.28535.name": "ritual figurine",
+  "item.28536.name": "exultant ritual figurine",
+  "item.28537.name": "ritual sword",
+  "item.28538.name": "ritual stone tablet",
+  "item.28539.name": "bonelord statue",
+  "item.28540.name": "training sword",
+  "item.28541.name": "training axe",
+  "item.28542.name": "training club",
+  "item.28543.name": "training bow",
+  "item.28544.name": "training rod",
+  "item.28545.name": "training wand"
 }

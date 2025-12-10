@@ -317,6 +317,16 @@ def status_icon(current, target):
 # Generuj timestamp
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
+# Pre-compute roadmap values for table
+roadmap_items = f"| 🎒 Items | {items_keys} | {progress_bar(items_keys, TARGETS['items'])} | {TARGETS['items']} | {status_icon(items_keys, TARGETS['items'])} {round(items_keys/TARGETS['items']*100) if TARGETS['items'] else 0}% |"
+roadmap_npc = f"| 🧙 NPC | {npc_keys} | {progress_bar(npc_keys, TARGETS['npc'])} | {TARGETS['npc']} | {status_icon(npc_keys, TARGETS['npc'])} {round(npc_keys/TARGETS['npc']*100) if TARGETS['npc'] else 0}% |"
+roadmap_scripts = f"| 📜 Scripts | {scripts_keys} | {progress_bar(scripts_keys, TARGETS['scripts'])} | {TARGETS['scripts']} | {status_icon(scripts_keys, TARGETS['scripts'])} {round(scripts_keys/TARGETS['scripts']*100) if TARGETS['scripts'] else 0}% |"
+roadmap_monsters = f"| 👹 Monsters | {monsters_keys} | {progress_bar(monsters_keys, TARGETS['monsters'])} | {TARGETS['monsters']} | {status_icon(monsters_keys, TARGETS['monsters'])} {round(monsters_keys/TARGETS['monsters']*100) if TARGETS['monsters'] else 0}% |"
+roadmap_spells = f"| ✨ Spells | {spells_keys} | {progress_bar(spells_keys, TARGETS['spells'])} | {TARGETS['spells']} | {status_icon(spells_keys, TARGETS['spells'])} {round(spells_keys/TARGETS['spells']*100) if TARGETS['spells'] else 0}% |"
+roadmap_server = f"| ⚙️ Server | {server_keys} | {progress_bar(server_keys, TARGETS['server'])} | {TARGETS['server']} | {status_icon(server_keys, TARGETS['server'])} {round(server_keys/TARGETS['server']*100) if TARGETS['server'] else 0}% |"
+roadmap_system = f"| 🖥️ System | {system_keys} | {progress_bar(system_keys, TARGETS['system'])} | {TARGETS['system']} | {status_icon(system_keys, TARGETS['system'])} {round(system_keys/TARGETS['system']*100) if TARGETS['system'] else 0}% |"
+roadmap_ui = f"| 🎨 UI | {ui_keys} | {progress_bar(ui_keys, TARGETS['ui'])} | {TARGETS['ui']} | {status_icon(ui_keys, TARGETS['ui'])} {round(ui_keys/TARGETS['ui']*100) if TARGETS['ui'] else 0}% |"
+
 # ==================== GENERUJ PEŁNY I18N_STATUS.md ====================
 md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 

@@ -1,9 +1,66 @@
 # 🗺️ I18N System - Plan Rozwoju i Usprawnień
 
 > **Dokument**: Plan rozwoju systemu internacjonalizacji  
-> **Wersja**: 1.0  
-> **Data**: 2025-12-08  
+> **Wersja**: 2.1  
+> **Data**: 2025-12-10  
 > **Autor**: AI Assistant + PtakuPL
+
+---
+
+## 🐛 KNOWN ISSUES / DO NAPRAWY
+
+### 🔴 Priorytet WYSOKI
+
+| # | Problem | Opis | Status |
+|---|---------|------|--------|
+| 1 | **Tryb TRANSLATION pomijany w background** | Worker po zakończeniu migracji przechodzi do TRANSLATION, ale wymaga interaktywnego terminala i jest pomijany. Powinien automatycznie tłumaczyć klucze EN→PL bez interakcji użytkownika. | ❌ DO NAPRAWY |
+| 2 | **Brak automatycznego przejścia do dokumentacji** | Po migracji worker nie generuje automatycznie dokumentacji dla wszystkich plików - tylko dla tych przetwarzanych w danym cyklu. | ❌ DO NAPRAWY |
+| 3 | **Pliki z konkatenacjami pomijane bez logu** | Pliki z `npcHandler:say("text" .. var)` są pomijane bez informacji dlaczego. | ⚠️ CZĘŚCIOWO |
+
+### 🟡 Priorytet ŚREDNI
+
+| # | Problem | Opis | Status |
+|---|---------|------|--------|
+| 4 | **npcHandler:say z tablicami** | `npcHandler:say({...})` z tablicami tekstów nie jest obsługiwane. | ❌ DO ROZBUDOWY |
+| 5 | **voices/keywordHandler patterns** | Wzorce `voices = {{ text = "..." }}` i `keywordHandler:add*Keyword` nie są transformowane. | ❌ DO ROZBUDOWY |
+| 6 | **Brak raportu końcowego** | Po zakończeniu migracji brak szczegółowego raportu co zostało zrobione vs co pominięto. | ❌ DO DODANIA |
+
+### 🟢 Priorytet NISKI
+
+| # | Problem | Opis | Status |
+|---|---------|------|--------|
+| 7 | **Zombie procesy** | Stare procesy workera pozostają jako `<defunct>`. | ⚠️ KOSMETYCZNE |
+| 8 | **Duplikaty kluczy w JSON** | Brak sprawdzania czy klucz już istnieje z inną wartością. | ❌ DO WALIDACJI |
+
+---
+
+## 🔧 PLAN NAPRAWY (Krótkoterminowy)
+
+### Issue #1: Tryb TRANSLATION w background
+
+**Problem**: Tryb TRANSLATION wymaga interaktywnego terminala (`read` do potwierdzenia tłumaczeń).
+
+**Rozwiązanie**: 
+1. Stworzyć tryb `TRANSLATION_AUTO` który automatycznie tłumaczy bez potwierdzenia
+2. Użyć API tłumaczeniowego (Google/DeepL) w tle
+3. Lub: Kopiować wartości EN jako placeholder z prefiksem `[AUTO] `
+
+**Implementacja**:
+```bash
+# W select_work_mode po MIGRATION:
+if needs_migration == 0:
+    # Przejdź do automatycznego tłumaczenia
+    print("TRANSLATION_AUTO:pl:1000")
+```
+
+### Issue #2: Automatyczna dokumentacja
+
+**Problem**: Dokumentacja generowana tylko dla przetwarzanych plików.
+
+**Rozwiązanie**:
+1. Dodać nowy tryb `DOCUMENTATION` po MIGRATION
+2. Skanować wszystkie pliki z i18nKey i generować MD
+3. Aktualizować index dokumentacji
 
 ---
 

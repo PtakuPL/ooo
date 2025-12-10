@@ -83,8 +83,8 @@
       "timestamp": 1765405958.277475
     },
     "twig": {
-      "count": 73,
-      "timestamp": 1765405971.942661
+      "count": 22,
+      "timestamp": 1765405979.4600034
     }
   },
   "consecutive_zeros": {
@@ -117,7 +117,7 @@
     "html": 14,
     "client": 14,
     "keywordhandler": 64,
-    "twig": 110
+    "twig": 132
   },
   "translation_sync": {
     "current_lang": "de",

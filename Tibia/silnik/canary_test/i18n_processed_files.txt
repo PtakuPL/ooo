@@ -1080,3 +1080,13 @@ TWIG:html_copy/system/templates/spells.html.twig
 TWIG:html_copy/system/templates/admin.plugins.form.html.twig
 TWIG:html_copy/system/templates/monsters.html.twig
 TWIG:html_copy/system/templates/account.management.html.twig
+TWIG:html_copy/system/templates/buttons.account_lost.html.twig
+TWIG:html_copy/system/templates/characters.form.html.twig
+TWIG:html_copy/system/templates/changelog.html.twig
+TWIG:html_copy/system/templates/account.redirect.html.twig
+TWIG:html_copy/system/templates/forum.move_thread.html.twig
+TWIG:html_copy/system/templates/account.characters.change-name.html.twig
+TWIG:html_copy/system/templates/buttons.submit.html.twig
+TWIG:html_copy/system/templates/guilds.change_logo.html.twig
+TWIG:html_copy/system/templates/forum.new_thread.html.twig
+TWIG:html_copy/system/templates/buttons.back.html.twig

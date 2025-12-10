@@ -66,6 +66,10 @@
     "html": {
       "count": 0,
       "timestamp": 1765405901.5858986
+    },
+    "client": {
+      "count": 14,
+      "timestamp": 1765405910.2544827
     }
   },
   "consecutive_zeros": {
@@ -81,7 +85,8 @@
     "startup": 1,
     "npclib": 1,
     "php": 1,
-    "html": 1
+    "html": 1,
+    "client": 0
   },
   "total_processed": {
     "items": 11689,
@@ -91,7 +96,8 @@
     "modules": 16,
     "startup": 11,
     "php": 24,
-    "html": 14
+    "html": 14,
+    "client": 14
   },
   "translation_sync": {
     "current_lang": "de",

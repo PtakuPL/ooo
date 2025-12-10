@@ -1,0 +1,16 @@
+{
+  "client.game_store.text1": "https://github.com/mehah/otclient",
+  "client.game_store.text2": "http://localhost/images/store/",
+  "client.game_store.text3": "transferHistory",
+  "client.game_store.text4": "Page (%d+)/(%d+)",
+  "client.game_store.text5": "HTTP error: ",
+  "client.blessing.text1": "style.otui",
+  "client.blessing.text2": "blessingTEST",
+  "client.blessing.text3": " .. entry.store .. ",
+  "client.blessing.text4": " {30%, #f75f5f}.",
+  "client.blessing.text5": " {0%, #f75f5f}.",
+  "client.shortcuts.text1": "/images/game/mobile/attack",
+  "client.shortcuts.text2": "/images/game/mobile/look",
+  "client.shortcuts.text3": "/images/game/mobile/follow",
+  "client.shortcuts.text4": "/images/game/mobile/use"
+}

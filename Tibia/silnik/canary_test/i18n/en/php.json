@@ -1158,5 +1158,11 @@
   "php.reflectsclosures.text1": "The given Closure has no parameters.",
   "php.reflectsclosures.text2": "The first parameter of the given Closure is missing a type hint.",
   "php.reflectsclosures.text3": "The given Closure has no parameters.",
-  "php.reflectsclosures.text4": "The first parameter of the given Closure is missing a type hint."
+  "php.reflectsclosures.text4": "The first parameter of the given Closure is missing a type hint.",
+  "php.forwardscalls.text1": "~^Call to undefined method (?P<class>[^:]+)::(?P<method>[^\\(]+)\\(\\)$~",
+  "php.forwardscalls.text2": "Call to undefined method %s::%s()",
+  "php.number.text1": ", static::format($number, $precision, $maxPrecision), $units[$displayExponent] ?? ",
+  "php.number.text2": " PHP extension is required to use the [",
+  "php.facade.text1": "Facade does not implement getFacadeAccessor method.",
+  "php.facade.text2": "A facade root has not been set."
 }

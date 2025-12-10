@@ -68,8 +68,8 @@
       "timestamp": 1765409653.3533702
     },
     "client": {
-      "count": 112,
-      "timestamp": 1765409765.0497942
+      "count": 66,
+      "timestamp": 1765409783.4288805
     },
     "sendtextmessage": {
       "count": 0,
@@ -109,7 +109,7 @@
     "startup": 23,
     "php": 3219,
     "html": 749,
-    "client": 707,
+    "client": 806,
     "keywordhandler": 64,
     "twig": 365,
     "monsters": 9549,

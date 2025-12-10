@@ -11,7 +11,8 @@
     "modules": 1765406149.481288,
     "startup": 1765406163.2215934,
     "npclib": 1765406170.592655,
-    "php": 1765406186.3302987
+    "php": 1765406186.3302987,
+    "html": 1765406201.585904
   },
   "last_processed": {
     "scripts": {
@@ -63,8 +64,8 @@
       "timestamp": 1765405886.3302932
     },
     "html": {
-      "count": 14,
-      "timestamp": 1765405893.9071915
+      "count": 0,
+      "timestamp": 1765405901.5858986
     }
   },
   "consecutive_zeros": {
@@ -80,7 +81,7 @@
     "startup": 1,
     "npclib": 1,
     "php": 1,
-    "html": 0
+    "html": 1
   },
   "total_processed": {
     "items": 11689,

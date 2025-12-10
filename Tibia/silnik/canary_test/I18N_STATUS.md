@@ -278,6 +278,10 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `mordecai` - ukończono 2025-12-10 13:00
+- ✅ `imbuement_assistant` - ukończono 2025-12-10 13:00
+- ✅ `gnomegica` - ukończono 2025-12-10 13:00
+- ✅ `ghorza` - ukończono 2025-12-10 13:00
 - ✅ `dallheim` - ukończono 2025-12-10 12:59
 - ✅ `amarie` - ukończono 2025-12-10 12:52
 - ✅ `frederik` - ukończono 2025-12-10 12:20

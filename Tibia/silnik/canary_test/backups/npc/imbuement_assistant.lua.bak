@@ -68,7 +68,7 @@ function addItemsToShoppingBag(npc, player)
 		local moneyRequired = playerData.moneyRequired
 		local itemList = playerData.itemList
 		if player:getMoney() + player:getBankBalance() < moneyRequired then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.imbuement_assistant.say_1")
+			npcHandler:say("Sorry, you don't have enough money", npc, player)
 			npcHandler:setTopic(player:getId(), 0)
 			return false, "You don't have enough money."
 		end
@@ -350,7 +350,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 
 		playerImbuementData[playerId] = nil
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.imbuement_assistant.say_2")
+		npcHandler:say("You have successfully completed your purchase of the items.", npc, player)
 		npcHandler:setTopic(playerId, 1)
 		npcHandler:say(imbuementPackages, npc, creature)
 	end

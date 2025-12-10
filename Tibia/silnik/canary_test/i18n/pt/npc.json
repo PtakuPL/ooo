@@ -4174,5 +4174,7 @@
   "npc.amarie.farewell_1": "[PT] Good bye, |PLAYERNAME|.",
   "npc.dallheim.greet_1": "[PT] Greetings, |PLAYERNAME|! You're looking really bad. Let me heal your wounds.",
   "npc.dallheim.greet_2": "[PT] <nods> At your service, |PLAYERNAME|, protecting the {village} from {monsters}.",
-  "npc.dallheim.farewell_1": "[PT] Bye, |PLAYERNAME|."
+  "npc.dallheim.farewell_1": "[PT] Bye, |PLAYERNAME|.",
+  "npc.imbuement_assistant.say_1": "[PT] Sorry, you don't have enough money",
+  "npc.imbuement_assistant.say_2": "[PT] You have successfully completed your purchase of the items."
 }

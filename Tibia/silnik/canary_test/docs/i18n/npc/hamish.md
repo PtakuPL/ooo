@@ -1,8 +1,8 @@
 # NPC: hamish
 
 **Plik:** `data-otservbr-global/npc/hamish.lua`
-**Data migracji:** 2025-12-10 11:25
-**Liczba tekstów:** 21
+**Data migracji:** 2025-12-10 13:00
+**Liczba tekstów:** 10
 
 ## Klucze i18n
 
@@ -18,16 +18,3 @@
 | `npc.hamish.stdmod_8` | Taking back empty potion flasks! Get your deposit back here! |
 | `npc.hamish.stdmod_9` | Careful with that! That's a highly reactive potion you have ... |
 | `npc.hamish.stdmod_10` | Mana potions to refill your magic power! |
-| `npc.hamish.stdmod_11` | Hamish MacGuffin, at your disposal. |
-| `npc.hamish.stdmod_12` | I craft highly efficient runes, wands and potions - always h... |
-| `npc.hamish.stdmod_13` | Nope. Doesn't sound familiar. |
-| `npc.hamish.stdmod_14` | Never asked about his past. Seems it's a pretty gloomy one. ... |
-| `npc.hamish.stdmod_15` | Inigo taught me a trick or two since I joined Mr Morris' lit... |
-| `npc.hamish.stdmod_16` | Can be quite feisty if you doubt his seniorship. \z
-		<snort... |
-| `npc.hamish.stdmod_17` | Keeran? He's a bit like Plunderpurse's shadow, isn't he? \z
-... |
-| `npc.hamish.stdmod_18` | Seems good-natured enough a guy. Nimble with his hands, be i... |
-| `npc.hamish.stdmod_19` | If it wasn't for Mr Morris, maybe none of us would be alive.... |
-| `npc.hamish.stdmod_20` | Our druid, down in the temple. Just appeared out of the blue... |
-| `npc.hamish.stdmod_21` | Now there's someone who has lived life to the full! Don't kn... |

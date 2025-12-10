@@ -278,6 +278,7 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `uzon_back` - ukończono 2025-12-10 07:19
 - ✅ `urks_the_mute` - ukończono 2025-12-10 07:19
 - ✅ `tyrias` - ukończono 2025-12-10 07:19
 - ✅ `tonar_oskayaat` - ukończono 2025-12-10 07:19

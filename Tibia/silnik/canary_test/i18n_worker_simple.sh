@@ -2153,6 +2153,100 @@ if key not in d:
 }
 
 #===============================================================================
+# NOWA KATEGORIA: sendTextMessage → sendLocalizedTextMessage
+#===============================================================================
+# Zamienia player:sendTextMessage(TYPE, "text") na sendLocalizedTextMessage
+# z kluczami w messages.json
+#===============================================================================
+process_sendTextMessage_category() {
+    local batch="${1:-10}"
+    local json_file="$I18N_DIR/en/messages.json"
+    local count=0
+    local modified=0
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}📨 Processing sendTextMessage patterns...${NC}"
+    
+    # Pattern 1: Główny pattern "Sold %ix %s for %i gold." (304 plików!)
+    local sold_pattern='player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))'
+    local sold_replace='player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})'
+    
+    for file in $(find data-otservbr-global/npc -name "*.lua" 2>/dev/null); do
+        [ -f "$file" ] || continue
+        
+        # Sprawdź czy plik ma pattern
+        if grep -q 'string\.format("Sold %ix %s for %i gold\."' "$file" 2>/dev/null; then
+            # Zamień
+            sed -i 's|player:sendTextMessage(MESSAGE_TRADE, string\.format("Sold %ix %s for %i gold\.", amount, name, totalCost))|player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})|g' "$file"
+            modified=$((modified + 1))
+            log "   📨 Zamieniono w: $(basename $file)"
+        fi
+        
+        count=$((count + 1))
+        [ "$modified" -ge "$batch" ] && break
+    done
+    
+    # Dodaj klucz do messages.json jeśli nie istnieje
+    python3 << 'MSGPY'
+import json
+json_file = "i18n/en/messages.json"
+try:
+    with open(json_file) as f:
+        data = json.load(f)
+except:
+    data = {}
+
+# Kluczowe wiadomości systemowe
+keys = {
+    "system.trade.sold": "Sold {1}x {2} for {3} gold.",
+    "system.trade.bought": "Bought {1}x {2} for {3} gold.",
+    "system.blessing.already": "You are already blessed.",
+    "system.blessing.received": "You received the remaining {1} blesses.",
+    "system.experience.gained": "You gained {1} experience points.",
+    "system.item.received": "You gained a {1}.",
+    "system.mount.received": "Congratulations you received the {1} mount.",
+    "system.store.check_inbox": "Please make sure you have free slots in your store inbox.",
+    "system.venture.decay": "Venture the path of decay!"
+}
+
+added = 0
+for key, value in keys.items():
+    if key not in data:
+        data[key] = value
+        added += 1
+
+with open(json_file, 'w') as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
+
+if added > 0:
+    print(f"   📝 Dodano {added} kluczy do messages.json")
+MSGPY
+    
+    # Pattern 2: Proste teksty bez zmiennych
+    local simple_patterns=(
+        'MESSAGE_STATUS|"You are already blessed."|system.blessing.already'
+        'MESSAGE_GAME_HIGHLIGHT|"Venture the path of decay!"|system.venture.decay'
+    )
+    
+    for pattern_line in "${simple_patterns[@]}"; do
+        IFS='|' read -r msg_type old_text new_key <<< "$pattern_line"
+        
+        for file in $(find data-otservbr-global/npc -name "*.lua" 2>/dev/null); do
+            [ -f "$file" ] || continue
+            
+            if grep -q "sendTextMessage($msg_type, $old_text)" "$file" 2>/dev/null; then
+                sed -i "s|player:sendTextMessage($msg_type, $old_text)|player:sendLocalizedTextMessage($msg_type, \"$new_key\")|g" "$file"
+                modified=$((modified + 1))
+                log "   📨 Simple pattern w: $(basename $file)"
+            fi
+        done
+    done
+    
+    log "${GREEN}✅ sendTextMessage: $modified plików zmodyfikowanych${NC}"
+}
+
+#===============================================================================
 # AUTO TRANSLATE - Automatyczne tłumaczenie BEZ interakcji
 #===============================================================================
 # Kopiuje klucze EN do innych języków z prefiksem [LANG] lub używa prostych

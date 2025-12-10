@@ -2066,7 +2066,23 @@ def count_files_needing_work(category):
                     with open(fpath, 'r', errors='ignore') as fp:
                         content = fp.read()
                     
-                    # Sprawdź czy plik ma wzorce do migracji
+                    # Specjalna logika dla NPC (zgodna z bash)
+                    if category == "npc":
+                        needs = False
+                        # StdModule.say + text= i bez i18nKey
+                        if re.search(r'StdModule\.say', content):
+                            if re.search(r'text\s*=\s*"', content):
+                                if 'i18nKey' not in content:
+                                    needs = True
+                        # npcHandler:say("długi") bez NPC_LIB
+                        if re.search(r'npcHandler:say\(\s*"[^"]{5,}"', content):
+                            if 'NPC_LIB.i18n.npcSay' not in content:
+                                needs = True
+                        if needs:
+                            needs_work += 1
+                        continue
+                    
+                    # Standardowa logika dla innych kategorii
                     has_pattern = False
                     for pattern in config["patterns"]:
                         if re.search(pattern, content):

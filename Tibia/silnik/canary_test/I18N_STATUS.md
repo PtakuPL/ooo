@@ -278,6 +278,7 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `jack_fate_goroma` - ukończono 2025-12-10 07:06
 - ✅ `jack_drone` - ukończono 2025-12-10 07:05
 - ✅ `iyad` - ukończono 2025-12-10 07:05
 - ✅ `ivalisse` - ukończono 2025-12-10 07:05

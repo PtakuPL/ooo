@@ -988,5 +988,10 @@
   "item.2870.name": "grey backpack",
   "item.2871.name": "golden backpack",
   "item.2872.name": "camouflage backpack",
-  "item.2873.name": "bucket"
+  "item.2873.name": "bucket",
+  "item.2874.name": "vial",
+  "item.2875.name": "bottle",
+  "item.2876.name": "vase",
+  "item.2877.name": "green flask",
+  "item.2878.name": "broken flask"
 }

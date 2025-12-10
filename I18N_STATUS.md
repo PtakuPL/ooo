@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 21:25:10 UTC  
+> **Aktualizacja:** 2025-12-10 21:25:36 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -23,10 +23,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **26** | ↑ |
 | ⏭️ Plików wykluczonych | **711** | - |
-| 🔑 Kluczy i18n | **11984** | ↑ |
+| 🔑 Kluczy i18n | **11999** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#2** | - |
+| 🔄 Cykl | **#3** | - |
 
 ---
 
@@ -41,7 +41,7 @@
 |-----------|--------|--------|-----|
 | 🧙 NPC Dialogs | 🔄 | 5270/15000 (35%) | 15000 |
 | 📜 Lua Scripts | 🔄 | 385/1000 (38%) | 1000 |
-| 🎒 Items Database | 🔄 | 2045/40000 (5%) | 40000 |
+| 🎒 Items Database | 🔄 | 2060/40000 (5%) | 40000 |
 | 👹 Monsters | 🔄 | 4158/5000 (83%) | 5000 |
 | ✨ Spells & Magic | 🔄 | 15/200 (8%) | 200 |
 | ⚙️ Server C++ | ⏳ | 0/300 (0%) | 300 |
@@ -76,7 +76,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     2 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     3 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (8 etapów)                     │
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 21:25:10                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 21:25:36                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -100,9 +100,9 @@
 |---------|---------|-----------|
 | 📁 Plików przetworzonych | **26** | z i18n_file_status.json |
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **11984** | we wszystkich kategoriach |
+| 🔑 Kluczy wyciągniętych | **11999** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
-| 🔄 Cykli wykonanych | **#2** | continuous mode |
+| 🔄 Cykli wykonanych | **#3** | continuous mode |
 | ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -110,11 +110,11 @@
 
 ## 📜 Historia ostatnich operacji
 
-- ✅ `the_lootmonger` - ukończono 2025-12-10 21:24
-- ✅ `tandros` - ukończono 2025-12-10 21:24
-- ✅ `sundara` - ukończono 2025-12-10 21:24
-- ✅ `sigurd` - ukończono 2025-12-10 21:24
-- ✅ `shiriel` - ukończono 2025-12-10 21:24
+- ✅ `the_lootmonger` - ukończono 2025-12-10 21:25
+- ✅ `tandros` - ukończono 2025-12-10 21:25
+- ✅ `sundara` - ukończono 2025-12-10 21:25
+- ✅ `sigurd` - ukończono 2025-12-10 21:25
+- ✅ `shiriel` - ukończono 2025-12-10 21:25
 
 ---
 
@@ -137,7 +137,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 2045 |
+| 🔑 Kluczy | 2060 |
 | 🎯 Cel | 40000 |
 | 📊 Postęp | 5% |
 | 📁 Plik | i18n/en/items.json |
@@ -273,7 +273,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #2 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #3 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -281,7 +281,7 @@
 ## 🗺️ Roadmap
 
 ```
-[🔄] Items (2045)      █░░░░░░░░░░░░░░░░░░░  5%
+[🔄] Items (2060)      █░░░░░░░░░░░░░░░░░░░  5%
 [🔄] NPC (5270)            ███████░░░░░░░░░░░░░  35%
 [🔄] Scripts (385)      ███████░░░░░░░░░░░░░  38%
 [🔄] Monsters (4158)    ████████████████░░░░  83%
@@ -294,23 +294,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 21:25:10  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 21:25:36  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `the_lootmonger` - ukończono 2025-12-10 21:24
-- ✅ `tandros` - ukończono 2025-12-10 21:24
-- ✅ `sundara` - ukończono 2025-12-10 21:24
-- ✅ `sigurd` - ukończono 2025-12-10 21:24
-- ✅ `shiriel` - ukończono 2025-12-10 21:24
-- ✅ `seymour` - ukończono 2025-12-10 21:24
-- ✅ `romir` - ukończono 2025-12-10 21:24
-- ✅ `rock_in_a_hard_place` - ukończono 2025-12-10 21:24
-- ✅ `nipuna` - ukończono 2025-12-10 21:24
-- ✅ `nelly` - ukończono 2025-12-10 21:24
+- ✅ `the_lootmonger` - ukończono 2025-12-10 21:25
+- ✅ `tandros` - ukończono 2025-12-10 21:25
+- ✅ `sundara` - ukończono 2025-12-10 21:25
+- ✅ `sigurd` - ukończono 2025-12-10 21:25
+- ✅ `shiriel` - ukończono 2025-12-10 21:25
+- ✅ `seymour` - ukończono 2025-12-10 21:25
+- ✅ `romir` - ukończono 2025-12-10 21:25
+- ✅ `rock_in_a_hard_place` - ukończono 2025-12-10 21:25
+- ✅ `nipuna` - ukończono 2025-12-10 21:25
+- ✅ `nelly` - ukończono 2025-12-10 21:25
 
 ---
 

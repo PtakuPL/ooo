@@ -831,10 +831,10 @@ greet_counter = [0]
 farewell_counter = [0]
 
 # Pattern dla addGreetKeyword z text = "..." (bez i18nKey)
-# Pierwszy argument to { "klucze" } więc używamy \{[^}]+\}
-pattern_greet = r'(addGreetKeyword\s*\(\{[^}]+\}\s*,\s*\{[^}]*?)text\s*=\s*"([^"]+)"([^}]*?\})'
+# Szukamy: { ... text = "..." } - końcowy } zamyka blok parametrów
+pattern_greet = r'(addGreetKeyword\s*\(\{[^}]+\}\s*,\s*\{[^}]*?)(text\s*=\s*"([^"]+)")(\s*\})'
 # Pattern dla addFarewellKeyword z text = "..." (bez i18nKey)
-pattern_farewell = r'(addFarewellKeyword\s*\(\{[^}]+\}\s*,\s*\{[^}]*?)text\s*=\s*"([^"]+)"([^}]*?\})'
+pattern_farewell = r'(addFarewellKeyword\s*\(\{[^}]+\}\s*,\s*\{[^}]*?)(text\s*=\s*"([^"]+)")(\s*\})'
 
 # Transformuj tylko te wpisy które nie mają jeszcze i18nKey
 def safe_replace_greet(match):
@@ -844,9 +844,10 @@ def safe_replace_greet(match):
     greet_counter[0] += 1
     key = f"npc.{safe_name}.greet_{greet_counter[0]}"
     before = match.group(1)
-    text = match.group(2)
-    after = match.group(3)
-    return f'{before}text = "{text}", i18nKey = "{key}"{after}'
+    text_part = match.group(2)
+    text = match.group(3)
+    after = match.group(4)
+    return f'{before}{text_part}, i18nKey = "{key}"{after}'
 
 def safe_replace_farewell(match):
     full = match.group(0)
@@ -855,9 +856,10 @@ def safe_replace_farewell(match):
     farewell_counter[0] += 1
     key = f"npc.{safe_name}.farewell_{farewell_counter[0]}"
     before = match.group(1)
-    text = match.group(2)
-    after = match.group(3)
-    return f'{before}text = "{text}", i18nKey = "{key}"{after}'
+    text_part = match.group(2)
+    text = match.group(3)
+    after = match.group(4)
+    return f'{before}{text_part}, i18nKey = "{key}"{after}'
 
 if 'addGreetKeyword' in content:
     content = re.sub(pattern_greet, safe_replace_greet, content, flags=re.DOTALL)

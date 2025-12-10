@@ -19,6 +19,66 @@
         }
       },
       "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/falonzo.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "dee8d7a1a792ea7e7f2a5b08393a33b1",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "falonzo",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/king_tibianus.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "e45628059e17f9fb74f5646ad8b3d2a1",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "king_tibianus",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/morgan.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "89bceb4414de90c333ce08365bdb8e0b",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "morgan",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
     }
   }
 }

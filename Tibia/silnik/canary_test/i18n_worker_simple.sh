@@ -1321,7 +1321,7 @@ DISPATCHERPY
 # MAIN
 #===============================================================================
 echo "╔════════════════════════════════════════╗"
-echo "║   I18N WORKER SIMPLE v1.1              ║"
+echo "║   I18N WORKER v2.0 - Multi-Mode        ║"
 echo "╚════════════════════════════════════════╝"
 
 # Inicjalizuj JSON
@@ -1332,6 +1332,12 @@ case "${1:-}" in
     --file)
         [ -z "${2:-}" ] && { echo "Podaj ścieżkę pliku"; exit 1; }
         process_file "$2"
+        ;;
+    --translate)
+        # Tryb tłumaczeń
+        LANG="${2:-pl}"
+        mode_translation "$LANG"
+        update_github_status
         ;;
     --status)
         python3 << 'STATUSEOF'

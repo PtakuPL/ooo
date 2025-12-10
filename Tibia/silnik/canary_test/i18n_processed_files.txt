@@ -3459,3 +3459,11 @@ html_copy/vendor/psr/http-factory/src/RequestFactoryInterface.php
 html_copy/vendor/psr/http-factory/src/ServerRequestFactoryInterface.php
 html_copy/vendor/psr/http-factory/src/ResponseFactoryInterface.php
 html_copy/vendor/psr/http-factory/src/UriFactoryInterface.php
+html_copy/vendor/psr/http-factory/src/StreamFactoryInterface.php
+html_copy/vendor/psr/http-factory/src/UploadedFileFactoryInterface.php
+html_copy/vendor/psr/http-client/src/ClientInterface.php
+html_copy/vendor/psr/http-client/src/RequestExceptionInterface.php
+html_copy/vendor/psr/http-client/src/ClientExceptionInterface.php
+html_copy/vendor/psr/http-client/src/NetworkExceptionInterface.php
+html_copy/vendor/psr/http-message/src/MessageInterface.php
+html_copy/vendor/psr/http-message/src/ServerRequestInterface.php

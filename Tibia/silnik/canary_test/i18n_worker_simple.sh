@@ -4183,12 +4183,12 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
         
         # Parsuj opcje
         shift  # usuń --continuous
-        BATCH=15
+        BATCH=$MIGRATION_BATCH  # Domyślnie 50 z podziałem na mini-batch
         DELAY=4
         while [ $# -gt 0 ]; do
             case "$1" in
                 --batch)
-                    BATCH="${2:-5}"
+                    BATCH="${2:-$MIGRATION_BATCH}"
                     shift 2
                     ;;
                 --delay)

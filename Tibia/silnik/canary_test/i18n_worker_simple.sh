@@ -1530,7 +1530,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
         update_github_status
         ;;
     --continuous)
-        # Tryb ciągły - pracuje cały czas
+        # Tryb ciągły - pracuje cały czas, przełącza się między trybami
         PID_FILE=".worker_simple.pid"
         echo $$ > "$PID_FILE"
         
@@ -1538,9 +1538,10 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
         DELAY="${3:-10}" # Przerwa między batchami w sekundach (domyślnie 10)
         
         echo "╔════════════════════════════════════════════════════════════╗"
-        echo "║   I18N WORKER SIMPLE v1.1 - TRYB CIĄGŁY                   ║"
+        echo "║   I18N WORKER v2.0 - TRYB CIĄGŁY (Multi-Mode)             ║"
         echo "║   PID: $$                                                  ║"
         echo "║   Batch: $BATCH plików | Przerwa: ${DELAY}s                ║"
+        echo "║   Tryby: MIGRATION → TRANSLATION → IDLE                   ║"
         echo "╚════════════════════════════════════════════════════════════╝"
         echo ""
         echo "Aby zatrzymać: kill $$ lub Ctrl+C"
@@ -1558,43 +1559,41 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             echo "🔄 CYKL #$CYCLE - $(date '+%Y-%m-%d %H:%M:%S')"
             echo "═══════════════════════════════════════════════════════════════"
             
-            # Znajdź pliki do migracji
-            FILES_TODO=0
-            for f in data-otservbr-global/npc/*.lua; do
-                if grep -q "StdModule\.say.*text" "$f" 2>/dev/null; then
-                    if ! grep -q "i18nKey" "$f" 2>/dev/null; then
-                        FILES_TODO=$((FILES_TODO + 1))
-                    fi
-                fi
-            done
+            # Użyj dispatchera do wyboru trybu
+            MODE_RESULT=$(select_work_mode)
+            MODE_TYPE=$(echo "$MODE_RESULT" | cut -d: -f1)
+            MODE_ARG=$(echo "$MODE_RESULT" | cut -d: -f2)
+            MODE_COUNT=$(echo "$MODE_RESULT" | cut -d: -f3)
             
-            if [ "$FILES_TODO" -eq 0 ]; then
-                echo "✅ Wszystkie pliki NPC zmigrowane!"
-                echo "Aktualizuję status i kończę..."
-                update_github_status
-                rm -f "$PID_FILE"
-                exit 0
-            fi
-            
-            echo "📋 Pozostało do migracji: $FILES_TODO plików"
+            echo "📋 Dispatcher: $MODE_TYPE (arg: $MODE_ARG, count: ${MODE_COUNT:-0})"
             echo ""
             
-            # Przetwórz batch plików
-            COUNT=0
-            for f in data-otservbr-global/npc/*.lua; do
-                if grep -q "StdModule\.say.*text" "$f" 2>/dev/null; then
-                    if ! grep -q "i18nKey" "$f" 2>/dev/null; then
-                        process_file "$f"
-                        COUNT=$((COUNT + 1))
-                        if [ "$COUNT" -ge "$BATCH" ]; then
-                            break
+            case "$MODE_TYPE" in
+                MIGRATION)
+                    echo "🔧 TRYB 1: MIGRACJA ($MODE_ARG plików do zrobienia)"
+                    COUNT=0
+                    for f in data-otservbr-global/npc/*.lua; do
+                        if grep -q "StdModule\.say.*text" "$f" 2>/dev/null; then
+                            if ! grep -q "i18nKey" "$f" 2>/dev/null; then
+                                process_file "$f"
+                                COUNT=$((COUNT + 1))
+                                if [ "$COUNT" -ge "$BATCH" ]; then
+                                    break
+                                fi
+                            fi
                         fi
-                    fi
-                fi
-            done
-            
-            echo ""
-            echo "📊 Cykl #$CYCLE zakończony: $COUNT plików"
+                    done
+                    echo "📊 Zmigrowano: $COUNT plików"
+                    ;;
+                TRANSLATION)
+                    echo "🌍 TRYB 2: TŁUMACZENIA (język: $MODE_ARG, $MODE_COUNT kluczy)"
+                    mode_translation "$MODE_ARG"
+                    ;;
+                IDLE)
+                    echo "✅ TRYB: IDLE - Wszystko zrobione!"
+                    echo "Czekam na nowe zadania..."
+                    ;;
+            esac
             
             # Aktualizuj status co cykl
             update_github_status
@@ -1603,7 +1602,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
                 git add -A 2>/dev/null
                 MIGRATED=$(cat "$STATUS_FILE" 2>/dev/null | python3 -c "import json,sys; d=json.load(sys.stdin); print(len([f for f,i in d.get('files',{}).items() if i.get('overall_status')=='completed']))" 2>/dev/null || echo "?")
-                git commit -m "📊 I18N: $MIGRATED NPCs migrated - Cykl #$CYCLE" 2>/dev/null
+                git commit -m "📊 I18N v2: $MIGRATED NPCs, $MODE_TYPE - Cykl #$CYCLE" 2>/dev/null
                 git push origin master 2>/dev/null && echo "📤 Push OK" || echo "⚠️ Push failed"
             fi
             
@@ -1614,13 +1613,20 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
         ;;
     *)
         echo ""
+        echo "I18N Worker v2.0 - Multi-Mode Worker"
+        echo ""
+        echo "TRYBY PRACY:"
+        echo "  1. MIGRATION   - Migracja kodu NPC (text= → i18nKey=)"
+        echo "  2. TRANSLATION - Tłumaczenia kluczy EN → inne języki"
+        echo ""
         echo "Użycie:"
-        echo "  $0 --file <path>      Przetwórz jeden plik"
+        echo "  $0 --file <path>      Przetwórz jeden plik (MIGRATION)"
+        echo "  $0 --translate [lang] Tłumacz na język (domyślnie: pl)"
         echo "  $0 --status           Pokaż dashboard statusu"
         echo "  $0 --stats            Szczegółowe statystyki języków"
-        echo "  $0 --auto             Automatyczna migracja NPC"
-        echo "  $0 --auto N           Automatyczna migracja N plików"
-        echo "  $0 --update-status    Aktualizuj I18N_STATUS.md dla GitHub"
+        echo "  $0 --auto [N]         Automatyczna migracja N plików"
+        echo "  $0 --continuous [B] [D] Tryb ciągły (B=batch, D=delay)"
+        echo "  $0 --update-status    Aktualizuj I18N_STATUS.md"
         echo ""
         ;;
 esac

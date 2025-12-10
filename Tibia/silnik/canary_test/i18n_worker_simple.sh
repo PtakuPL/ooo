@@ -81,7 +81,7 @@ def count_keys(filename):
             pass
     return 0
 
-# Wszystkie kategorie
+# Wszystkie kategorie (stare + nowe)
 game_keys = count_keys("game.json")
 items_keys = count_keys("items.json")
 misc_keys = count_keys("misc.json")
@@ -95,7 +95,24 @@ spells_keys = count_keys("spells.json")
 system_keys = count_keys("system.json")
 ui_keys = count_keys("ui.json")
 
-total_keys = game_keys + items_keys + misc_keys + monsters_keys + npc_keys + player_keys + quests_keys + scripts_keys + server_keys + spells_keys + system_keys + ui_keys
+# NOWE KATEGORIE (dodane 2025-12-10)
+startup_keys = count_keys("startup.json")
+raids_keys = count_keys("raids.json")
+world_keys = count_keys("world.json")
+libs_keys = count_keys("libs.json")
+events_keys = count_keys("events.json")
+chatchannels_keys = count_keys("chatchannels.json")
+modules_keys = count_keys("modules.json")
+npclib_keys = count_keys("npclib.json")
+actions_keys = count_keys("actions.json")
+errors_keys = count_keys("errors.json")
+messages_keys = count_keys("messages.json")
+
+total_keys = (game_keys + items_keys + misc_keys + monsters_keys + npc_keys + 
+              player_keys + quests_keys + scripts_keys + server_keys + spells_keys + 
+              system_keys + ui_keys + startup_keys + raids_keys + world_keys + 
+              libs_keys + events_keys + chatchannels_keys + modules_keys + npclib_keys +
+              actions_keys + errors_keys + messages_keys)
 
 # Zlicz języki (wszystkie dostępne)
 ALL_LANGUAGES = ["en", "pl", "de", "es", "pt", "fr", "it", "ru", "uk", "zh", "ja", "ko", "ar", "tr", "nl", "sv", "da", "no", "fi", "cs", "sk", "hu", "ro", "bg", "el", "he", "hi", "th", "vi", "id", "ms", "tl", "sw", "bn", "ta", "te", "ml", "ka", "hy", "az", "kk", "uz", "sr", "hr", "sl", "bs", "mk", "sq", "lv", "lt", "et", "fa", "zh_TW"]

@@ -405,5 +405,16 @@
   "web.tpl.buttons.submit.set_2": "button.submit",
   "web.tpl.buttons.submit.set_3": "_sbutton_submit",
   "web.tpl.buttons.back.set_2": "_sbutton_back",
-  "web.tpl.buttons.back.set_3": "button.back"
+  "web.tpl.buttons.back.set_3": "button.back",
+  "web.tpl.buttons.change_password.set_2": "_sbutton_changepassword",
+  "web.tpl.buttons.change_password.set_3": "button.change_password",
+  "web.tpl.buttons.login.set_2": "_sbutton_login",
+  "web.tpl.buttons.login.set_3": "button.login",
+  "web.tpl.buttons.edit.set_2": "_sbutton_edit",
+  "web.tpl.buttons.edit.set_3": "button.edit",
+  "web.tpl.buttons.create_character.set_2": "button.create_character",
+  "web.tpl.buttons.delete_character.set_2": "_sbutton_deletecharacter",
+  "web.tpl.buttons.delete_character.set_3": "button.delete_character",
+  "web.tpl.buttons.cancel.set_2": "_sbutton_cancel",
+  "web.tpl.buttons.cancel.set_3": "button.cancel"
 }

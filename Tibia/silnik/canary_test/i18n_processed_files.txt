@@ -1160,3 +1160,9 @@ TWIG:html_copy/templates/tibiacom/buttons.account_lost.html.twig
 TWIG:html_copy/templates/tibiacom/buttons.base.html.twig
 TWIG:html_copy/templates/tibiacom/buttons.submit.html.twig
 TWIG:html_copy/templates/tibiacom/buttons.back.html.twig
+TWIG:html_copy/templates/tibiacom/buttons.change_password.html.twig
+TWIG:html_copy/templates/tibiacom/buttons.login.html.twig
+TWIG:html_copy/templates/tibiacom/buttons.edit.html.twig
+TWIG:html_copy/templates/tibiacom/buttons.create_character.html.twig
+TWIG:html_copy/templates/tibiacom/buttons.delete_character.html.twig
+TWIG:html_copy/templates/tibiacom/buttons.cancel.html.twig

@@ -3703,8 +3703,23 @@ def count_untranslated_keys(lang, json_file):
 cmd = read_command()
 if cmd:
     if cmd.startswith("FORCE:"):
-        # Wymuś kategorię: FORCE:monsters
+        # Wymuś kategorię: FORCE:monsters lub FORCE:translation
         forced_cat = cmd.split(":")[1]
+        
+        # FORCE:translation - wymuś przejście do synchronizacji tłumaczeń
+        if forced_cat == "translation":
+            # Znajdź pierwszy język/kategorię do synchronizacji
+            json_files = list(set([c["json"] for c in CATEGORIES.values()]))
+            json_files.sort()
+            for lang in TARGET_LANGUAGES:
+                for json_file in json_files:
+                    missing = count_missing_keys(lang, json_file)
+                    if missing > 0:
+                        print(f"TRANSLATION_SYNC:{lang}:{json_file}:{missing}:FORCED")
+                        exit(0)
+            print("IDLE:translation_done:0:FORCED")
+            exit(0)
+        
         if forced_cat in CATEGORIES:
             needs = count_files_needing_work(forced_cat)
             print(f"MIGRATION:{forced_cat}:{needs}:FORCED")

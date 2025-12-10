@@ -598,5 +598,10 @@
   "item.1856.name": "stone",
   "item.1940.name": "small basin",
   "item.1947.name": "stairs",
-  "item.1948.name": "ladder"
+  "item.1948.name": "ladder",
+  "item.1949.name": "magic forcefield",
+  "item.1950.name": "ramp",
+  "item.1951.name": "ramp",
+  "item.1952.name": "ramp",
+  "item.1953.name": "ramp"
 }

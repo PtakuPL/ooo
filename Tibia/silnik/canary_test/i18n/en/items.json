@@ -1563,5 +1563,20 @@
   "item.3487.name": "telescope",
   "item.3488.name": "ship's telescope",
   "item.3489.name": "ship's telescope",
-  "item.3490.name": "ship's telescope"
+  "item.3490.name": "ship's telescope",
+  "item.3491.name": "ship's telescope",
+  "item.3492.name": "worm",
+  "item.3501.name": "mailbox",
+  "item.3502.name": "depot chest",
+  "item.3503.name": "parcel",
+  "item.3504.name": "stamped parcel",
+  "item.3505.name": "letter",
+  "item.3506.name": "stamped letter",
+  "item.3507.name": "label",
+  "item.3508.name": "mailbox",
+  "item.3509.name": "inkwell",
+  "item.3514.name": "empty coal basin",
+  "item.3533.name": "black token",
+  "item.3534.name": "white token",
+  "item.3535.name": "white pawn"
 }

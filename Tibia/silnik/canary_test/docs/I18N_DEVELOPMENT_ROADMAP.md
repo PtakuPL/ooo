@@ -64,6 +64,115 @@ if needs_migration == 0:
 
 ---
 
+## 🎯 ANALIZA TECHNICZNA: voices i keywordHandler
+
+### 📢 npcConfig.voices - Analiza (2025-12-10)
+
+**Lokalizacja w kodzie:**
+- Definicja w NPC: `npcConfig.voices = { interval=N, chance=N, { text = "...", yell = true/false }, ... }`
+- Przetwarzanie Lua: `data/scripts/lib/register_npc_type.lua` → `registerNpcType.voices()`
+- Przetwarzanie C++: `src/lua/functions/creatures/npc/npc_type_functions.cpp` → `luaNpcTypeAddVoice()`
+- Odtwarzanie C++: `src/creatures/npcs/npc.cpp` linii 635-644 → `g_game().internalCreatureSay()`
+
+**Problem i18n voices:**
+Voices są **broadcastem** do wszystkich graczy w zasięgu NPC przez `g_game().internalCreatureSay()`. 
+Tekst jest wysyłany jednocześnie do wielu graczy - a każdy może mieć inny język!
+
+**Obecny przepływ:**
+```
+1. Lua: npcConfig.voices = {{ text = "Hello!", yell = false }}
+2. Lua: registerNpcType.voices() → npcType:addVoice(text, interval, chance, yell)
+3. C++: luaNpcTypeAddVoice() → voiceBlock_t{text, yellText} → voiceVector.push_back()
+4. C++: npc.cpp onThink() → losowy voice → g_game().internalCreatureSay(text)
+5. C++: game.cpp → dla każdego spectator → player->sendCreatureSay(text)
+```
+
+**Propozycja rozwiązania (WYMAGA C++):**
+
+1. **Rozszerzyć `voiceBlock_t`** o pole `std::string i18nKey`:
+   ```cpp
+   struct voiceBlock_t {
+       std::string text;      // Oryginalna wartość (fallback)
+       bool yellText;
+       std::string i18nKey;   // NOWE: klucz i18n
+   };
+   ```
+
+2. **Zmodyfikować `luaNpcTypeAddVoice`** aby przyjmować opcjonalny `i18nKey`:
+   ```cpp
+   // npcType:addVoice(sentence, interval, chance, yell, i18nKey)
+   voice.i18nKey = Lua::isString(L, 6) ? Lua::getString(L, 6) : "";
+   ```
+
+3. **Zmodyfikować `npc.cpp`** aby wysyłać zlokalizowany tekst:
+   ```cpp
+   for (const auto &spectator : spectators) {
+       if (const auto &tmpPlayer = spectator->getPlayer()) {
+           std::string localizedText = text;
+           if (!i18nKey.empty()) {
+               localizedText = tmpPlayer->getLocalizedText(i18nKey, text);
+           }
+           tmpPlayer->sendCreatureSay(creature, type, localizedText, pos);
+       }
+   }
+   ```
+
+4. **Zmodyfikować `registerNpcType.voices`** w Lua:
+   ```lua
+   registerNpcType.voices = function(npcType, mask)
+       if type(mask.voices) == "table" then
+           local interval = mask.voices.interval
+           local chance = mask.voices.chance
+           for k, v in pairs(mask.voices) do
+               if type(v) == "table" then
+                   npcType:addVoice(v.text, interval, chance, v.yell, v.i18nKey or "")
+               end
+           end
+       end
+   end
+   ```
+
+**Transformacja worker'em:**
+```lua
+-- PRZED:
+npcConfig.voices = {
+    interval = 15000, chance = 50,
+    { text = "Don't forget to deposit your money!", yell = false },
+}
+
+-- PO:
+npcConfig.voices = {
+    interval = 15000, chance = 50,
+    { text = "Don't forget to deposit your money!", yell = false, i18nKey = "npc.paulie.voice_1" },
+}
+```
+
+**Klucze w npc.json:**
+```json
+{
+    "npc.paulie.voice_1": "Don't forget to deposit your money!"
+}
+```
+
+**Szacowany nakład pracy:**
+- Modyfikacje C++: 2-4 godziny (voiceBlock_t, npc_type_functions, npc.cpp)
+- Modyfikacje Lua: 30 min (register_npc_type.lua)
+- Transformacja worker: 1-2 godziny (nowy etap stage_4_voices)
+- Testowanie: 1-2 godziny
+
+### 🔑 keywordHandler:add*Keyword - Analiza (TODO)
+
+**Typy:**
+- `keywordHandler:addKeyword({"word"}, callback, {i18nKey = "..."})`
+- `keywordHandler:addAliasKeyword({"alias"}, callback)`
+
+**Lokalizacja:**
+- Definicja: `data/npclib/npc_system/keyword_handler.lua`
+
+**Status:** ❌ Wymaga analizy
+
+---
+
 ## 📋 Spis treści
 
 1. [Obecny stan systemu](#-obecny-stan-systemu)

@@ -2982,5 +2982,22 @@
   "npc.romella.stdmod_9": "[PT] I heard the amazons are after it.",
   "npc.romella.stdmod_10": "[PT] Don't go exploring without weapons. Especially you'll need a machete.",
   "npc.sam.stdmod_1": "[PT] Hello there, adventurer! Need a deal in weapons or armor? I'm your man!",
-  "npc.sam.stdmod_2": "[PT] I am the blacksmith. If you need weapons or armor - just ask me."
+  "npc.sam.stdmod_2": "[PT] I am the blacksmith. If you need weapons or armor - just ask me.",
+  "npc.sane_mage.stdmod_1": "[PT] Hm? What is the meaning of all this?",
+  "npc.sane_mage.stdmod_2": "[PT] What have I become? What is slime if it's not for everyone?",
+  "npc.sane_mage.stdmod_3": "[PT] Slime! Everywhere! SLIME TIME! Or... not?",
+  "npc.sane_mage.stdmod_4": "[PT] I AM THE... I mean... I am - what is a mage, if he is not {mad}? If he isn't... raging? I am... I am just sane. A sane mage.",
+  "npc.sane_mage.stdmod_5": "[PT] I am not mad... I- YES, that's the whole problem, isn't it? What's going on, what's happening to me? I don't even know anymore.",
+  "npc.sane_mage.stdmod_6": "[PT] Yes, well... I'm taking a break. It will take some time. I don't know how long I just... I want to get away from all this for some time, that's it.",
+  "npc.sane_mage.stdmod_7": "[PT] Slime is my mission. Is there anything more important? There isn't. To me. Right now at least.",
+  "npc.sane_mage.stdmod_8": "[PT] Slime is my mission. Is there anything more important? There isn't. To me. Right now at least.",
+  "npc.sane_mage.stdmod_9": "[PT] You want to help me? HELP me? You? Who... who are you anyway? Ah nevermind.",
+  "npc.scrutinon.stdmod_1": "[PT] Do you want to sail ",
+  "npc.scrutinon.stdmod_2": "[PT] We would like to serve you some time.",
+  "npc.sebastian_nargor.stdmod_1": "[PT] Do you want to sail ",
+  "npc.sebastian_nargor.stdmod_2": "[PT] We would like to serve you some time.",
+  "npc.sebastian_nargor.stdmod_3": "[PT] Where do you want to go? To {Liberty bay} or to {Meriana}?",
+  "npc.sebastian_nargor.stdmod_4": "[PT] I am the captain of this ship.",
+  "npc.sebastian_nargor.stdmod_5": "[PT] I am the captain of this ship.",
+  "npc.serafin.stdmod_1": "[PT] There's something about these words which makes me feel awkward. Or maybe it's you who causes that feeling. You better get lost."
 }

@@ -21,13 +21,20 @@
     "world": {
       "count": 0,
       "timestamp": 1765398408.53113
+    },
+    "items": {
+      "count": 15,
+      "timestamp": 1765398417.2536826
     }
   },
   "consecutive_zeros": {
     "scripts": 2,
     "monsters": 1,
     "raids": 1,
-    "world": 1
+    "world": 1,
+    "items": 0
   },
-  "total_processed": {}
+  "total_processed": {
+    "items": 15
+  }
 }

@@ -882,7 +882,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:04:58.328533"
+      "completed_at": "2025-12-10T14:05:15.627733"
     },
     "data-otservbr-global/npc/nelly.lua": {
       "stages": {
@@ -1102,7 +1102,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:04:59.198571"
+      "completed_at": "2025-12-10T14:05:16.709715"
     },
     "data-otservbr-global/npc/nipuna.lua": {
       "stages": {
@@ -1322,7 +1322,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:05:00.147577"
+      "completed_at": "2025-12-10T14:05:17.850453"
     },
     "data-otservbr-global/npc/richard.lua": {
       "stages": {
@@ -1660,7 +1660,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:05:01.321361"
+      "completed_at": "2025-12-10T14:05:19.130787"
     },
     "data-otservbr-global/npc/romir.lua": {
       "stages": {
@@ -1880,7 +1880,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:05:01.989277"
+      "completed_at": "2025-12-10T14:05:19.816234"
     },
     "data-otservbr-global/npc/seymour.lua": {
       "stages": {
@@ -2219,6 +2219,16 @@
       },
       "overall_status": "completed",
       "completed_at": "2025-12-10T14:01:11.810284"
+    },
+    "data-otservbr-global/npc/a_starving_dog.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "5e46acf7a71e5d522ead4311b5e65fe3",
+          "type": "npc"
+        }
+      },
+      "overall_status": "in_progress"
     }
   },
   "global_stats": {

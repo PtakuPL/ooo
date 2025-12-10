@@ -1,22 +1,231 @@
 #!/bin/bash
 #===============================================================================
-# I18N WORKER SIMPLE v1.0 - Prosty worker bez zawieszania
+# I18N WORKER SIMPLE v1.1 - Prosty worker bez zawieszania
 #===============================================================================
 
 cd "$(dirname "$0")"
+WORK_DIR="$(pwd)"
 
 STATUS_FILE="i18n_file_status.json"
 I18N_DIR="i18n"
 BACKUP_DIR="backups"
+PROCESSED_FILE="i18n_processed_files.txt"
 
 # Kolory
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
+CYAN='\033[0;36m'
 NC='\033[0m'
 
 log() { echo -e "$1"; }
+
+#===============================================================================
+# UPDATE_STATUS - Aktualizacja I18N_STATUS.md dla GitHub
+#===============================================================================
+update_github_status() {
+    log "${CYAN}📊 Aktualizuję I18N_STATUS.md...${NC}"
+    
+    python3 << 'STATUSPY'
+import json
+import os
+from datetime import datetime
+
+WORK_DIR = os.getcwd()
+STATUS_FILE = "i18n_file_status.json"
+I18N_DIR = "i18n"
+PROCESSED_FILE = "i18n_processed_files.txt"
+
+# Wczytaj status workera
+try:
+    with open(STATUS_FILE) as f:
+        data = json.load(f)
+except:
+    data = {"files": {}}
+
+files = data.get("files", {})
+completed = len([f for f, info in files.items() if info.get("overall_status") == "completed"])
+in_progress = len([f for f, info in files.items() if info.get("overall_status") == "in_progress"])
+
+# Zlicz klucze per kategoria
+def count_keys(filename):
+    filepath = f"{I18N_DIR}/en/{filename}"
+    if os.path.exists(filepath):
+        try:
+            with open(filepath) as f:
+                return len(json.load(f))
+        except:
+            pass
+    return 0
+
+npc_keys = count_keys("npc.json")
+scripts_keys = count_keys("scripts.json")
+items_keys = count_keys("items.json")
+monsters_keys = count_keys("monsters.json")
+server_keys = count_keys("server.json")
+spells_keys = count_keys("spells.json")
+total_keys = npc_keys + scripts_keys + items_keys + monsters_keys + server_keys + spells_keys
+
+# Zlicz języki
+langs_count = 0
+langs_list = []
+if os.path.isdir(I18N_DIR):
+    for lang in os.listdir(I18N_DIR):
+        npc_file = f"{I18N_DIR}/{lang}/npc.json"
+        if os.path.exists(npc_file):
+            try:
+                with open(npc_file) as f:
+                    if len(json.load(f)) > 0:
+                        langs_count += 1
+                        langs_list.append(lang)
+            except:
+                pass
+
+# Zlicz pliki NPC
+npc_dir = "data-otservbr-global/npc"
+total_npc = 0
+needs_migration = 0
+migrated_npc = 0
+if os.path.isdir(npc_dir):
+    for f in os.listdir(npc_dir):
+        if f.endswith(".lua"):
+            total_npc += 1
+            fpath = f"{npc_dir}/{f}"
+            try:
+                with open(fpath) as fp:
+                    content = fp.read()
+                    has_stdmod = "StdModule.say" in content and "text" in content
+                    has_i18n = "i18nKey" in content
+                    if has_stdmod and not has_i18n:
+                        needs_migration += 1
+                    elif has_i18n:
+                        migrated_npc += 1
+            except:
+                pass
+
+# Processed files count
+processed_count = 0
+if os.path.exists(PROCESSED_FILE):
+    with open(PROCESSED_FILE) as f:
+        processed_count = len([l for l in f.readlines() if l.strip()])
+
+# Ostatnio ukończone
+recent_completed = []
+sorted_files = sorted(
+    [(f, info.get("completed_at", "")) for f, info in files.items() if info.get("overall_status") == "completed"],
+    key=lambda x: x[1],
+    reverse=True
+)[:10]
+for fpath, completed_at in sorted_files:
+    fname = os.path.basename(fpath)
+    time_str = completed_at[11:19] if completed_at else "?"
+    info = files[fpath]
+    keys = info.get("stages", {}).get("5_extraction_en", {}).get("keys_added", 0)
+    recent_completed.append(f"| `{fname}` | {time_str} | {keys} | ✅ |")
+
+# Generuj I18N_STATUS.md
+timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+md_content = f'''# 🌍 I18N Internationalization System - Live Dashboard
+
+> **Aktualizacja:** {timestamp} UTC  
+> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** {langs_count}
+
+---
+
+## 🤖 AI Agent Integration
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  Status zoptymalizowany dla AI agentów (Codex/Copilot/Claude)  │
+│  JSON data: i18n_file_status.json                              │
+│  Worker: i18n_worker_simple.sh                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📊 Globalny Postęp
+
+| Metryka | Wartość | Trend |
+|---------|---------|-------|
+| 📁 Plików przetworzonych | **{processed_count}** | ↑ |
+| ✅ Plików ukończonych | **{completed}** | ↑ |
+| 🔄 W trakcie | **{in_progress}** | - |
+| 🔑 Kluczy i18n | **{total_keys}** | ↑ |
+| 🌍 Języków z danymi | **{langs_count}** | ✓ |
+
+---
+
+## 🧙 NPC Migration Status
+
+| Metryka | Wartość |
+|---------|---------|
+| 📁 Plików NPC ogółem | {total_npc} |
+| ✅ Zmigrowanych | {migrated_npc} |
+| 🔄 Do migracji | {needs_migration} |
+| 📊 Postęp | {round(migrated_npc/total_npc*100, 1) if total_npc > 0 else 0}% |
+
+---
+
+## 🔑 Klucze per kategoria
+
+| Kategoria | Klucze EN |
+|-----------|-----------|
+| 🧙 NPC | {npc_keys} |
+| 📜 Scripts | {scripts_keys} |
+| 🎒 Items | {items_keys} |
+| 👹 Monsters | {monsters_keys} |
+| ⚙️ Server | {server_keys} |
+| ✨ Spells | {spells_keys} |
+| **RAZEM** | **{total_keys}** |
+
+---
+
+## 🌍 Języki z tłumaczeniami
+
+{", ".join(sorted(langs_list)[:20])}{"..." if len(langs_list) > 20 else ""}
+
+---
+
+## 📋 Ostatnio zmigrowane NPC
+
+| Plik | Czas | Klucze | Status |
+|------|------|--------|--------|
+{chr(10).join(recent_completed) if recent_completed else "| - | - | - | - |"}
+
+---
+
+## 🚀 Jak uruchomić
+
+```bash
+# Pojedynczy plik
+./i18n_worker_simple.sh --file data-otservbr-global/npc/nazwa.lua
+
+# Status
+./i18n_worker_simple.sh --status
+
+# Auto migracja (5 plików)
+./i18n_worker_simple.sh --auto 5
+
+# Auto migracja (wszystkie)
+./i18n_worker_simple.sh --auto
+```
+
+---
+
+*Wygenerowano automatycznie przez i18n_worker_simple.sh*
+'''
+
+with open("I18N_STATUS.md", "w") as f:
+    f.write(md_content)
+
+print(f"✅ I18N_STATUS.md zaktualizowany: {timestamp}")
+print(f"   Plików: {completed} ukończonych, {needs_migration} do migracji")
+print(f"   Kluczy: {total_keys} | Języków: {langs_count}")
+STATUSPY
+}
 
 #===============================================================================
 # ETAP 1: STARTED
@@ -579,7 +788,7 @@ process_file() {
 # MAIN
 #===============================================================================
 echo "╔════════════════════════════════════════╗"
-echo "║   I18N WORKER SIMPLE v1.0              ║"
+echo "║   I18N WORKER SIMPLE v1.1              ║"
 echo "╚════════════════════════════════════════╝"
 
 # Inicjalizuj JSON
@@ -775,15 +984,21 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
         done
         echo ""
         echo "Przetworzono: $COUNT plików"
+        # Aktualizuj status dla GitHub
+        update_github_status
+        ;;
+    --update-status)
+        update_github_status
         ;;
     *)
         echo ""
         echo "Użycie:"
-        echo "  $0 --file <path>   Przetwórz jeden plik"
-        echo "  $0 --status        Pokaż dashboard statusu"
-        echo "  $0 --stats         Szczegółowe statystyki języków"
-        echo "  $0 --auto          Automatyczna migracja NPC"
-        echo "  $0 --auto N        Automatyczna migracja N plików"
+        echo "  $0 --file <path>      Przetwórz jeden plik"
+        echo "  $0 --status           Pokaż dashboard statusu"
+        echo "  $0 --stats            Szczegółowe statystyki języków"
+        echo "  $0 --auto             Automatyczna migracja NPC"
+        echo "  $0 --auto N           Automatyczna migracja N plików"
+        echo "  $0 --update-status    Aktualizuj I18N_STATUS.md dla GitHub"
         echo ""
         ;;
 esac

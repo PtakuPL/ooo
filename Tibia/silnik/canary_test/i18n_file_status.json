@@ -4193,10 +4193,6 @@
           "doc_file": "docs/i18n/npc/captain_dreadnought.md",
           "keys_documented": 19
         },
-        "4_transformation": {
-          "status": "completed",
-          "transformed": 0
-        },
         "5_extraction_en": {
           "status": "completed",
           "keys_added": 0
@@ -4276,7 +4272,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T09:42:51.673875"
+      "completed_at": "2025-12-10T09:43:13.299228"
     },
     "data-otservbr-global/npc/captain_fearless.lua": {
       "stages": {
@@ -29034,8 +29030,8 @@
       "total_keys": 3594,
       "translated": 85,
       "placeholders": 3509,
-      "last_batch": 50,
-      "last_update": "2025-12-10 09:11:46"
+      "last_batch": 0,
+      "last_update": "2025-12-10 09:43:12"
     },
     "de": {
       "total_keys": 3594,

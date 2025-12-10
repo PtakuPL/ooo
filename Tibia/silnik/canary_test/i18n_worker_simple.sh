@@ -3852,6 +3852,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                                 done
                             done
                             echo "   📊 NPC: Zmigrowano $COUNT plików"
+                            update_category_state "npc" "$COUNT"
                             ;;
                         scripts)
                             echo "   📜 Przetwarzam SCRIPTS..."
@@ -3880,6 +3881,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                                 fi
                             done < <(find data-otservbr-global/scripts data/scripts -name "*.lua" 2>/dev/null)
                             echo "   📊 Scripts: Przetworzono $COUNT plików"
+                            update_category_state "scripts" "$COUNT"
                             ;;
                         monsters)
                             echo "   👹 Przetwarzam MONSTERS..."

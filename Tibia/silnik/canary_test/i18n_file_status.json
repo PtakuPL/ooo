@@ -108,7 +108,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:46:11.828526"
+      "completed_at": "2025-12-10T14:46:28.507570"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -218,7 +218,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:46:12.547017"
+      "completed_at": "2025-12-10T14:46:29.244603"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {
@@ -772,7 +772,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:46:06.991528"
+      "completed_at": "2025-12-10T14:46:27.464912"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -813,76 +813,12 @@
           "greet_keys": 0,
           "farewell_keys": 0
         },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [
-            "Brak i18nKey w pliku Lua"
-          ],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 0,
-          "validation_passed": true
-        },
         "8_sync": {
           "status": "completed"
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:46:08.726584"
+      "completed_at": "2025-12-10T14:46:28.964226"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -986,13 +922,9 @@
           ],
           "keys_in_lua": 0,
           "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
         }
       },
-      "overall_status": "completed",
-      "completed_at": "2025-12-10T14:46:10.313114"
+      "overall_status": "in_progress"
     },
     "data-otservbr-global/npc/ghorza.lua": {
       "stages": {

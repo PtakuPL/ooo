@@ -1187,9 +1187,6 @@ with open(prompt_file, "w") as pf:
         pf.write(f"{target_lang.upper()}: [TWOJE TŁUMACZENIE TUTAJ]\n")
     pf.write("```\n\n")
     pf.write(f"---\n\n")
-    pf.write(f"## Teksty do przetłumaczenia ({{len(keys_batch)}} kluczy)\n\n".replace("{{len(keys_batch)}}", str(len(keys_batch))))
-    pf.write(f"```\n\n")
-    pf.write(f"---\n\n")
     pf.write(f"## Teksty do przetłumaczenia ({len(keys_batch)} kluczy)\n\n")
 
 # Przetwórz składnie

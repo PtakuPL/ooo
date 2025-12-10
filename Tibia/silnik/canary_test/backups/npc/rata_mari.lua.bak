@@ -93,7 +93,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-keywordHandler:addKeyword({ "rat" }, StdModule.say, { npcHandler = npcHandler, text = "Your power of observation is stunning. Yes, I'm a rat." })
+keywordHandler:addKeyword({ "rat" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.rata_mari.stdmod_1" })
 
 -- Greeting message
 keywordHandler:addGreetKeyword({ "piedpiper" }, { npcHandler = npcHandler, text = "Meep? I mean - hello! Sorry, |PLAYERNAME|... Being a {rat} has kind of grown on me." })

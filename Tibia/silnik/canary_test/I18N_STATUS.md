@@ -278,6 +278,12 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `ukea` - ukończono 2025-12-10 14:15
+- ✅ `stutch` - ukończono 2025-12-10 14:15
+- ✅ `shirith` - ukończono 2025-12-10 14:15
+- ✅ `shanar` - ukończono 2025-12-10 14:15
+- ✅ `rata_mari` - ukończono 2025-12-10 14:15
+- ✅ `queen_eloise` - ukończono 2025-12-10 14:15
 - ✅ `llathriel` - ukończono 2025-12-10 14:15
 - ✅ `lavirias` - ukończono 2025-12-10 14:15
 - ✅ `karith` - ukończono 2025-12-10 14:15

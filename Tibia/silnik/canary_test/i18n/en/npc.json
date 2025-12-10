@@ -4238,5 +4238,17 @@
   "npc.maealil.greet_1": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
   "npc.maealil.farewell_1": "May the gods bless you, |PLAYERNAME|!",
   "npc.queen_eloise.greet_1": "I greet thee, my loyal {subject}.",
-  "npc.queen_eloise.greet_2": "I greet thee, my loyal {subject}."
+  "npc.queen_eloise.greet_2": "I greet thee, my loyal {subject}.",
+  "npc.rata_mari.greet_1": "Meep? I mean - hello! Sorry, |PLAYERNAME|... Being a {rat} has kind of grown on me.",
+  "npc.shanar.greet_1": "Greetings, |PLAYERNAME|.",
+  "npc.shanar.farewell_1": "Goodbye, |PLAYERNAME|.",
+  "npc.shirith.greet_1": "Greetings, |PLAYERNAME|.",
+  "npc.shirith.farewell_1": "Good bye!.",
+  "npc.stutch.greet_1": "HAIL TO THE KING!",
+  "npc.stutch.greet_2": "HAIL TO THE KING!",
+  "npc.ukea.greet_1": "Greetings, |PLAYERNAME|.",
+  "npc.ukea.farewell_1": "Goodbye, |PLAYERNAME|.",
+  "npc.zerbrus.greet_1": "Greetings, |PLAYERNAME|! You're looking really bad. Let me heal your wounds.",
+  "npc.zerbrus.greet_2": "<nods> At your service, |PLAYERNAME|, protecting the {village} from {monsters}.",
+  "npc.zerbrus.farewell_1": "Bye, |PLAYERNAME|."
 }

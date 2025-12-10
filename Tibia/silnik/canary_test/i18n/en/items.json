@@ -9738,5 +9738,20 @@
   "item.30927.name": "amphora",
   "item.30960.name": "wall lamp",
   "item.30961.name": "lit wall lamp",
-  "item.30962.name": "hanging lamp"
+  "item.30962.name": "hanging lamp",
+  "item.30963.name": "lit hanging lamp",
+  "item.30964.name": "empty fire bowl",
+  "item.30965.name": "fire bowl",
+  "item.30966.name": "hanging sabre",
+  "item.30967.name": "hanging shield",
+  "item.30972.name": "unknown item",
+  "item.30973.name": "bundle of reed",
+  "item.30974.name": "reed",
+  "item.30975.name": "bunch of reed",
+  "item.30976.name": "reed",
+  "item.30989.name": "intricate cobra shrine",
+  "item.31051.name": "wooden planks",
+  "item.31052.name": "wooden scaffolding",
+  "item.31056.name": "wooden scaffolding",
+  "item.31118.name": "unknown item"
 }

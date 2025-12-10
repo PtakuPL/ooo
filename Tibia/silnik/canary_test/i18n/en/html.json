@@ -648,5 +648,18 @@
   "html.lastkills.html.text1": "{{ lastkill.time|date(\"j.m.Y, G:i:s\") }}",
   "html.guilds.delete_guild.html.text1": "Are you sure you want delete guild ",
   "html.guilds.delete_guild.html.text2": "{{ guild.getName() }}",
-  "html.commands.html.text1": "{{ command.description }}"
+  "html.commands.html.text1": "{{ command.description }}",
+  "html.27_downloads.text1": "We're using official Tibia Client ",
+  "html.27_downloads.text2": "{{ config.client / 100 }}",
+  "html.27_downloads.text3": "Download Tibia Client ",
+  "html.27_downloads.text4": "{{ config.client / 100 }}",
+  "html.27_commands.text1": "This is just an example",
+  "html.27_commands.text2": "Buy house you are looking at",
+  "html.news.html.text3": "» {{ __('news_comment_link') }}",
+  "html.networks.html.text1": "{{ config['network_twitter'] }}",
+  "html.networks.html.text2": "!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.",
+  "html.success.html.text1": "{{ description|raw }}",
+  "html.account.login.html.text3": "{{ config.lua.serverName }}...",
+  "html.account.login.html.text4": "... where hardcore gaming meets fantasy.",
+  "html.account.login.html.text5": "... where friendships last a lifetime."
 }

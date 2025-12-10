@@ -2994,5 +2994,14 @@
   "global_stats": {
     "files_completed": 26,
     "total_keys": 0
+  },
+  "translation_status": {
+    "pl": {
+      "total_keys": 4145,
+      "translated": 85,
+      "placeholders": 4060,
+      "last_batch": 0,
+      "last_update": "2025-12-10 11:31:58"
+    }
   }
 }

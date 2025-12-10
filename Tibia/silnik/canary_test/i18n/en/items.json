@@ -648,5 +648,10 @@
   "item.2028.name": "monument",
   "item.2029.name": "minotaur statue",
   "item.2030.name": "goblin statue",
-  "item.2031.name": "angel statue"
+  "item.2031.name": "angel statue",
+  "item.2032.name": "dwarven statue",
+  "item.2033.name": "watchdog statue",
+  "item.2034.name": "sandstone statue",
+  "item.2043.name": "minotaur statue",
+  "item.2044.name": "minotaur statue"
 }

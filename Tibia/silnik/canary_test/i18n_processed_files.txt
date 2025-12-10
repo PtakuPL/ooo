@@ -1166,3 +1166,8 @@ TWIG:html_copy/templates/tibiacom/buttons.edit.html.twig
 TWIG:html_copy/templates/tibiacom/buttons.create_character.html.twig
 TWIG:html_copy/templates/tibiacom/buttons.delete_character.html.twig
 TWIG:html_copy/templates/tibiacom/buttons.cancel.html.twig
+data-otservbr-global/startup/tables/storage_keys_update.lua
+data-otservbr-global/startup/tables/door_level.lua
+data-otservbr-global/startup/tables/tile_pick.lua
+data-otservbr-global/startup/tables/door_key.lua
+data-otservbr-global/startup/tables/load.lua

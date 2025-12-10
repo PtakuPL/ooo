@@ -6,7 +6,7 @@
   "startup.functions.msg3": "Created all items in the map",
   "startup.functions.msg4": "[loadLuaMapAction] - Wrong item id {} found",
   "startup.functions.msg5": "Action id: {}, position {}",
-  "startup.load.msg1": "/startup/others/functions.lua",
+  "startup.load.msg1": "/startup/tables/chest.lua",
   "startup.writeable.msg1": "Personal log book of Mr Morris. (The following lines are written in a code that you cannot make out. It seems Mr Morris is a very distrustful person.)",
   "startup.writeable.msg2": "Cooking Recipes for the Wildlife (excepting Squirrels!), by Richard",
   "startup.writeable.msg3": "Buried forever that he never shall return. Don't remove this seal or bad things may happen.",
@@ -17,5 +17,9 @@
   "startup.chest.msg2": "for use of the script",
   "startup.chest.msg3": "container = bagId",
   "startup.chest.msg4": "legiondawnport",
-  "startup.chest.msg5": "deeperfibula1"
+  "startup.chest.msg5": "deeperfibula1",
+  "startup.load.msg2": "/startup/tables/corpse.lua",
+  "startup.load.msg3": "/startup/tables/create_item.lua",
+  "startup.load.msg4": "/startup/tables/door_key.lua",
+  "startup.load.msg5": "/startup/tables/door_level.lua"
 }

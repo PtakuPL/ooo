@@ -9,7 +9,6 @@
     "events": 1765408527.5168731,
     "chatchannels": 1765408539.2878587,
     "modules": 1765411803.3996568,
-    "startup": 1765406784.3081145,
     "npclib": 1765406791.1998112,
     "php": 1765406798.5227244,
     "html": 1765406805.5727773,
@@ -56,8 +55,8 @@
       "timestamp": 1765408203.3996513
     },
     "startup": {
-      "count": 0,
-      "timestamp": 1765406184.3081093
+      "count": 8,
+      "timestamp": 1765408213.753815
     },
     "npclib": {
       "count": 0,
@@ -98,7 +97,7 @@
     "events": 3,
     "chatchannels": 3,
     "modules": 4,
-    "startup": 2,
+    "startup": 0,
     "npclib": 2,
     "php": 2,
     "html": 2,
@@ -113,7 +112,7 @@
     "events": 5,
     "chatchannels": 8,
     "modules": 16,
-    "startup": 11,
+    "startup": 23,
     "php": 24,
     "html": 14,
     "client": 14,

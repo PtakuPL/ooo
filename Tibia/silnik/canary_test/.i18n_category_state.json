@@ -1,15 +1,21 @@
 {
   "skip_until": {
-    "scripts": 1765398984.348044
+    "scripts": 1765398984.348044,
+    "monsters": 1765398691.3425815
   },
   "last_processed": {
     "scripts": {
       "count": 0,
       "timestamp": 1765398384.3480392
+    },
+    "monsters": {
+      "count": 0,
+      "timestamp": 1765398391.342577
     }
   },
   "consecutive_zeros": {
-    "scripts": 2
+    "scripts": 2,
+    "monsters": 1
   },
   "total_processed": {}
 }

@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 08:49:56 UTC  
+> **Aktualizacja:** 2025-12-10 08:50:05 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,8 +21,8 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **255** | ↑ |
-| ⏭️ Plików wykluczonych | **729** | - |
+| 📁 Plików przetworzonych | **763** | ↑ |
+| ⏭️ Plików wykluczonych | **5161** | - |
 | 🔑 Kluczy i18n | **3594** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
@@ -80,7 +80,7 @@
 | Operacja | 🎮 Canary Server - NPC |
 | Plik | Cykl #1 |
 | Szczegóły | NPC:3594 Scripts:0 Items:0 |
-| Ostatnia aktualizacja | 2025-12-10 08:49:56 |
+| Ostatnia aktualizacja | 2025-12-10 08:50:05 |
 
 ---
 
@@ -88,7 +88,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| Plików przetworzonych | 255 |
+| Plików przetworzonych | 763 |
 | NPC zmigrowanych | 255 |
 | Kluczy wyciągniętych | 3594 |
 | Błędów | 0 |
@@ -271,14 +271,14 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 08:49:56  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 08:50:05  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `captain_dreadnought` - ukończono 2025-12-10 08:49
+- ✅ `captain_dreadnought` - ukończono 2025-12-10 08:50
 - ✅ `zumtah` - ukończono 2025-12-10 07:21
 - ✅ `zora` - ukończono 2025-12-10 07:21
 - ✅ `ziyad` - ukończono 2025-12-10 07:21

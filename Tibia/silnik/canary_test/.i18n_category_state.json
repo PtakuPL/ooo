@@ -124,7 +124,7 @@
   },
   "translation_sync": {
     "current_lang": "nl",
-    "current_category": "items.json",
+    "current_category": "libs.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -237,14 +237,15 @@
       },
       "nl": {
         "chatchannels": 8,
-        "total": 16877,
+        "total": 31753,
         "client": 283,
         "cpp": 15,
         "events": 5,
         "html": 795,
-        "items": 13749
+        "items": 13749,
+        "libs": 21
       }
     },
-    "last_sync": 1765410558.1812792
+    "last_sync": 1765410564.8797703
   }
 }

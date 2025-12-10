@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:51:12 UTC  
+> **Aktualizacja:** 2025-12-11 00:52:03 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **29314** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#188** | - |
+| 🔄 Cykl | **#1** | - |
 
 ---
 
@@ -42,7 +42,7 @@
 | 🧙 NPC Dialogs | 🔄 | 5334/15000 (36%) | 15000 |
 | 📜 Lua Scripts | 🔄 | 385/1000 (38%) | 1000 |
 | 🎒 Items Database | 🔄 | 13749/40000 (34%) | 40000 |
-| 👹 Monsters | ✅ | 7341/5000 (147%) | 5000 |
+| 👹 Monsters | ✅ | 7341/7500 (98%) | 7500 |
 | ✨ Spells & Magic | 🔄 | 15/200 (8%) | 200 |
 | ⚙️ Server C++ | ⏳ | 0/300 (0%) | 300 |
 
@@ -52,7 +52,7 @@
 |-----------|--------|--------|-----|
 | 🐘 PHP Backend | 🔄 | 1166/3000 (39%) | 3000 |
 | 📄 HTML Views | ✅ | 795/300 (265%) | 300 |
-| 📦 JavaScript | ✅ | 283/200 (142%) | 200 |
+| 📦 JavaScript | ✅ | 283/300 (94%) | 300 |
 
 ### ⏳ Faza 3: 📱 Instalka/Klient
 
@@ -69,7 +69,7 @@
 | 🇵🇱 Polski | 📊 452919 kluczy | 452919 | [EN] prefix |
 | 🇪🇸 Hiszpański | 📊 452919 kluczy | 452919 | [EN] prefix |
 | 🇫🇷 Francuski | 📊 297907 kluczy | 297907 | [EN] prefix |
-| 🌐 Pozostałe (0/53) | 🔄 | 2651555 | Aktualnie: CS |
+| 🌐 Pozostałe (0/53) | 🔄 | 2666431 | Aktualnie: CS |
 
 ---
 
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   188 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🌍 TRANSLATION_SYNC (Etap 1)              │
-│ Kategoria: 🌍 CS/items.json                          │
+│ Kategoria: 🌍 CS/libs.json                           │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: CS/items.json                                  │
-│ [████████████████████████████░░░░░░░░░░░░░░░░░░░░░░] │
-│ 16877/29314 kluczy (58%)                                          │
+│ 📊 Ostatnia aktywność: CS/libs.json                                   │
+│ [██████████████████████████████████████████████████] │
+│ 31753/29314 kluczy (108%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 27515 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:51:12                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:52:03                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -103,7 +103,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29314** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#188** | continuous mode |
+| 🔄 Cykli wykonanych | **#1** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,7 +111,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🌍 `CS/items.json` +16877 kluczy @ 00:51:09
+- 🌍 `CS/libs.json` +31753 kluczy @ 00:52:03
 - ⚡ `twig` +0 kluczy @ 00:47:28
 - ⚡ `keywordhandler` +0 kluczy @ 00:47:20
 - ⚡ `sendtextmessage` +0 kluczy @ 00:47:13
@@ -162,13 +162,13 @@
 </details>
 
 <details>
-<summary>👹 4. Monsters - ✅ (147%)</summary>
+<summary>👹 4. Monsters - ✅ (98%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
 | 🔑 Kluczy | 7341 |
-| 🎯 Cel | 5000 |
-| 📊 Postęp | 147% |
+| 🎯 Cel | 7500 |
+| 📊 Postęp | 98% |
 | 📁 Plik | i18n/en/monsters.json |
 
 </details>
@@ -278,29 +278,29 @@
 
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
-| items | 13749 | 11689 | 4 | ⏭️ Skip 46m |
-| monsters | 7341 | 9549 | 4 | ⏭️ Skip 45m |
+| items | 13749 | 11689 | 4 | ⏭️ Skip 45m |
+| monsters | 7341 | 9549 | 4 | ⏭️ Skip 44m |
 | npc | 5334 | 0 | 0 | ✅ Active |
-| php | 1166 | 3426 | 2 | ⏭️ Skip 2m |
-| html | 795 | 1145 | 2 | ⏭️ Skip 3m |
-| scripts | 385 | 0 | 4 | ⏭️ Skip 31m |
-| client | 283 | 821 | 4 | ⏭️ Skip 55m |
-| raids | 147 | 351 | 4 | ⏭️ Skip 46m |
-| startup | 23 | 23 | 4 | ⏭️ Skip 47m |
-| libs | 21 | 53 | 4 | ⏭️ Skip 47m |
-| modules | 16 | 16 | 4 | ⏭️ Skip 47m |
+| php | 1166 | 3426 | 2 | ⏭️ Skip 1m |
+| html | 795 | 1145 | 2 | ⏭️ Skip 2m |
+| scripts | 385 | 0 | 4 | ⏭️ Skip 30m |
+| client | 283 | 821 | 4 | ⏭️ Skip 54m |
+| raids | 147 | 351 | 4 | ⏭️ Skip 45m |
+| startup | 23 | 23 | 4 | ⏭️ Skip 46m |
+| libs | 21 | 53 | 4 | ⏭️ Skip 46m |
+| modules | 16 | 16 | 4 | ⏭️ Skip 46m |
 | cpp | 15 | 0 | 0 | ✅ Active |
 | spells | 15 | 0 | 0 | ✅ Active |
 | messages | 11 | 0 | 0 | ✅ Active |
-| chatchannels | 8 | 8 | 4 | ⏭️ Skip 47m |
-| events | 5 | 5 | 4 | ⏭️ Skip 47m |
+| chatchannels | 8 | 8 | 4 | ⏭️ Skip 46m |
+| events | 5 | 5 | 4 | ⏭️ Skip 46m |
 | actions | 0 | 0 | 0 | ⏳ Empty |
 | errors | 0 | 0 | 0 | ⏳ Empty |
-| npclib | 0 | 0 | 4 | ⏭️ Skip 47m |
+| npclib | 0 | 0 | 4 | ⏭️ Skip 46m |
 | quests | 0 | 0 | 0 | ⏳ Empty |
 | server | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
-| world | 0 | 0 | 4 | ⏭️ Skip 46m |
+| world | 0 | 0 | 4 | ⏭️ Skip 45m |
 
 ---
 
@@ -308,23 +308,23 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| scripts | 31m | 4x | Progresywny backoff |
-| monsters | 45m | 4x | Progresywny backoff |
-| raids | 46m | 4x | Progresywny backoff |
-| world | 46m | 4x | Progresywny backoff |
-| items | 46m | 4x | Progresywny backoff |
-| libs | 47m | 4x | Progresywny backoff |
-| events | 47m | 4x | Progresywny backoff |
-| chatchannels | 47m | 4x | Progresywny backoff |
-| modules | 47m | 4x | Progresywny backoff |
-| startup | 47m | 4x | Progresywny backoff |
-| npclib | 47m | 4x | Progresywny backoff |
-| client | 55m | 4x | Progresywny backoff |
-| sendtextmessage | 56m | 4x | Progresywny backoff |
-| keywordhandler | 56m | 4x | Progresywny backoff |
-| twig | 56m | 4x | Progresywny backoff |
-| php | 2m | 2x | Progresywny backoff |
-| html | 3m | 2x | Progresywny backoff |
+| scripts | 30m | 4x | Progresywny backoff |
+| monsters | 44m | 4x | Progresywny backoff |
+| raids | 45m | 4x | Progresywny backoff |
+| world | 45m | 4x | Progresywny backoff |
+| items | 45m | 4x | Progresywny backoff |
+| libs | 46m | 4x | Progresywny backoff |
+| events | 46m | 4x | Progresywny backoff |
+| chatchannels | 46m | 4x | Progresywny backoff |
+| modules | 46m | 4x | Progresywny backoff |
+| startup | 46m | 4x | Progresywny backoff |
+| npclib | 46m | 4x | Progresywny backoff |
+| client | 54m | 4x | Progresywny backoff |
+| sendtextmessage | 55m | 4x | Progresywny backoff |
+| keywordhandler | 55m | 4x | Progresywny backoff |
+| twig | 55m | 4x | Progresywny backoff |
+| php | 1m | 2x | Progresywny backoff |
+| html | 2m | 2x | Progresywny backoff |
 
 ---
 
@@ -332,7 +332,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #188 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -348,11 +348,11 @@
 | FR | 297,907 | ⏳ |
 | IT | 241,906 | ⏳ |
 | NL | 241,906 | ⏳ |
-| CS | 16,877 | 🔄 |
+| CS | 31,753 | 🔄 |
 | SK | 0 | ⏳ |
 | HU | 0 | ⏳ |
 
-> **Aktualnie:** CS / items.json  
+> **Aktualnie:** CS / libs.json  
 > **Ukończone języki:** 0/53  
 > **Prefix:** `[EN] ` (klucze do przetłumaczenia)
 
@@ -366,7 +366,7 @@
 | 🎒 Items | 13749 | ██████░░░░░░░░░░░░░░ | 40000 | 🔄 34% |
 | 🧙 NPC | 5334 | ███████░░░░░░░░░░░░░ | 15000 | 🔄 36% |
 | 📜 Scripts | 385 | ███████░░░░░░░░░░░░░ | 1000 | 🔄 38% |
-| 👹 Monsters | 7341 | ████████████████████ | 5000 | ✅ 147% |
+| 👹 Monsters | 7341 | ███████████████████░ | 7500 | ✅ 98% |
 | ✨ Spells | 15 | █░░░░░░░░░░░░░░░░░░░ | 200 | 🔄 8% |
 | ⚙️ Server | 0 | ░░░░░░░░░░░░░░░░░░░░ | 300 | ⏳ 0% |
 | 🖥️ System | 0 | ░░░░░░░░░░░░░░░░░░░░ | 2000 | ⏳ 0% |
@@ -375,7 +375,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:51:12  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:52:03  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

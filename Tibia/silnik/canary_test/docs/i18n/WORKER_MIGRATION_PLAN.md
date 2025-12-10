@@ -279,6 +279,8 @@ i18n/en/
 - Przed masową migracją stwórz krótką listę kanałów powiadomień (log + plik `i18n/status/activity.json`) z wynikiem każdego cyklu, żeby agent wiedział czy batch przeszedł.
 - Przy transformacji `sendTextMessage` grupuj klucze w kategoriach (`quests.*`, `system.*`, `combat.*`) – ułatwi tłumaczenia i kontrolę jakości.
 - Dodaj mały smoke test: uruchomienie `./canary-debug --validate-i18n` (lub istniejący odpowiednik) na zestawie zmigrowanych plików, aby złapać brakujące klucze zanim pójdą tłumaczenia.
+- Utrzymuj świeży raport “hard strings” i “translation backlog”: dwa pliki CSV/MD generowane co cykl continuous (lista nowych literalnych tekstów + lista braków tłumaczeń per język).
+- Dodaj tryb `--translations-only` i ogranicz auto-translate batch (`--auto-translate-limit`) żeby nie blokować migracji, gdy kod jest zamrożony.
 
 ---
 

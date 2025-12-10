@@ -48,5 +48,14 @@
   "scripts.actions_bonefiddle.msg_2": "You tack the hair to the ebony fingerboard. The strands should be adquate to serve as strings.",
   "scripts.actions_bonefiddle.msg_3": "*There was once a maiden fair, with dark eyes and silken hair. Far away from home she died. No grave, no wake, no mourning.*",
   "scripts.actions_bonefiddle.msg_4": "You are playing the Peacock Ballad and the portal opens.",
-  "scripts.actions_bonefiddle.msg_5": "You are playing the bone fiddle."
+  "scripts.actions_bonefiddle.msg_5": "You are playing the bone fiddle.",
+  "scripts.actions_fragrance.msg_1": "Hmmmm, what an infatuating fragrance!",
+  "scripts.actions_wooden_trash.msg_1": "You started an escort, get your prisoner to the dwarf outpost!",
+  "scripts.actions_wooden_trash.msg_2": "You find nothing of interest beneath the rubble.",
+  "scripts.movements_gnomes_ordnance_end.msg_1": "Your escort has end.",
+  "scripts.movements_gnomes_ordnance_end.msg_2": "Your escort has end.",
+  "scripts.movements_lost_exiles.msg_1": "Your escort has end.",
+  "scripts.actions_using_crystals.msg_1": "This crystal geode is shaking from a battle nearby.",
+  "scripts.actions_using_crystals.msg_2": "This crystal geode is shaking from a battle nearby.",
+  "scripts.actions_using_crystals.msg_3": "This crystal geode is shaking from a battle nearby."
 }

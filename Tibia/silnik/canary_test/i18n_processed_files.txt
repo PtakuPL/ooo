@@ -794,3 +794,8 @@ data-otservbr-global/scripts/quests/the_secret_library_quest/the_parth_of_defian
 data-otservbr-global/scripts/quests/the_secret_library_quest/the_lament_asuras/movements_elemental_portals.lua
 data-otservbr-global/scripts/quests/the_secret_library_quest/the_lament_asuras/actions_doors.lua
 data-otservbr-global/scripts/quests/the_secret_library_quest/the_lament_asuras/actions_bonefiddle.lua
+data-otservbr-global/scripts/quests/the_secret_library_quest/the_lament_asuras/actions_fragrance.lua
+data-otservbr-global/scripts/quests/dangerous_depth/actions_wooden_trash.lua
+data-otservbr-global/scripts/quests/dangerous_depth/movements_gnomes_ordnance_end.lua
+data-otservbr-global/scripts/quests/dangerous_depth/movements_lost_exiles.lua
+data-otservbr-global/scripts/quests/dangerous_depth/actions_using_crystals.lua

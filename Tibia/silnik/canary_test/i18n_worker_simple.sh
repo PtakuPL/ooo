@@ -1709,6 +1709,21 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                     ;;
             esac
             
+            # Zapisz licznik cykli do pliku (dla statusu)
+            python3 -c "
+import json
+try:
+    with open('i18n_global_stats.json', 'r') as f:
+        data = json.load(f)
+except:
+    data = {}
+data['total_cycles'] = $CYCLE
+data['last_update'] = '$(date -Iseconds)'
+data['mode'] = '$MODE_TYPE'
+with open('i18n_global_stats.json', 'w') as f:
+    json.dump(data, f, indent=2)
+"
+            
             # Aktualizuj status co cykl
             update_github_status
             

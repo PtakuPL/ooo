@@ -7548,5 +7548,20 @@
   "item.22532.name": "thundersoul tabard",
   "item.22533.name": "frostsoul tabard",
   "item.22534.name": "firemind raiment",
-  "item.22535.name": "earthmind raiment"
+  "item.22535.name": "earthmind raiment",
+  "item.22536.name": "thundermind raiment",
+  "item.22537.name": "frostmind raiment",
+  "item.22565.name": "stairs",
+  "item.22566.name": "stairs",
+  "item.22626.name": "large pile of bones",
+  "item.22641.name": "RESERVED SPRITE",
+  "item.22642.name": "clay pot",
+  "item.22643.name": "moon flower",
+  "item.22644.name": "parrot's beak plant",
+  "item.22645.name": "skull orchid",
+  "item.22646.name": "single oxalis",
+  "item.22647.name": "several oxalis",
+  "item.22648.name": "voodoo lily",
+  "item.22649.name": "shark teeth",
+  "item.22650.name": "rattling gourd"
 }

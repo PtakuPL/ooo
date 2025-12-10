@@ -852,7 +852,7 @@ stage_5() {
 import json
 import re
 
-# Wczytaj backup
+# Wczytaj backup (oryginalne teksty przed transformacją)
 with open("$backup", "r") as f:
     content = f.read()
 
@@ -865,39 +865,50 @@ except:
     data = {}
 
 added = 0
+stdmod_count = 0
+npcsay_count = 0
 
 #==============================================================================
-# EKSTRAKCJA 1: StdModule.say z text = "..."
+# EKSTRAKCJA 1: StdModule.say z text = "..." (może być multi-line)
 #==============================================================================
-texts_stdmod = re.findall(r'text\s*=\s*"([^"]+)"', content)
+# Pattern dla multi-line - text = "..." wewnątrz bloku StdModule.say
+pattern_stdmod = r'StdModule\.say\s*,\s*\{[^}]*?text\s*=\s*"([^"]+)"'
+texts_stdmod = re.findall(pattern_stdmod, content, re.DOTALL)
+
 for i, text in enumerate(texts_stdmod, 1):
     if len(text) >= 5:
         key = f"npc.$safe.stdmod_{i}"
         if key not in data:
             data[key] = text
             added += 1
+            stdmod_count += 1
 
 #==============================================================================
 # EKSTRAKCJA 2: npcHandler:say("text", npc, creature/player)
-# Nie ekstrakcja konkatenacji ani tablic
+# Multi-line aware - tekst może być rozciągnięty na wiele linii w pliku
 #==============================================================================
-# Pattern dla prostych npcHandler:say("tekst", npc, creature)
-pattern_npcsay = r'npcHandler:say\(\s*"([^"]{5,})"\s*,\s*npc\s*,\s*(?:creature|player)\s*\)'
-texts_npcsay = re.findall(pattern_npcsay, content)
+# Pattern dla npcHandler:say("tekst", npc, creature/player)
+# Szuka całego wywołania z tekstem
+pattern_npcsay = r'npcHandler:say\(\s*"([^"]+)"\s*,\s*npc\s*,\s*(?:creature|player)\s*\)'
+texts_npcsay = re.findall(pattern_npcsay, content, re.DOTALL)
 
 for i, text in enumerate(texts_npcsay, 1):
-    # Pomiń konkatenacje (jeśli tekst zawiera zmienne)
-    if '..' not in text:
+    # Wyczyść ewentualne newline'y w tekście (artifact zawijania linii)
+    text_clean = ' '.join(text.split())
+    
+    # Pomiń konkatenacje i krótkie teksty
+    if '..' not in text_clean and len(text_clean) >= 5:
         key = f"npc.$safe.say_{i}"
         if key not in data:
-            data[key] = text
+            data[key] = text_clean
             added += 1
+            npcsay_count += 1
 
 # Zapisz
 with open(json_file, "w") as f:
     json.dump(data, f, indent=2, ensure_ascii=False)
 
-print(f"Dodano {added} kluczy (StdModule: {len(texts_stdmod)}, npcHandler:say: {len(texts_npcsay)})")
+print(f"Dodano {added} kluczy (StdModule: {stdmod_count}, npcHandler:say: {npcsay_count})")
 
 # Update status
 with open("$STATUS_FILE", "r") as f:
@@ -905,8 +916,8 @@ with open("$STATUS_FILE", "r") as f:
 status["files"]["$file"]["stages"]["5_extraction_en"] = {
     "status": "completed", 
     "keys_added": added,
-    "stdmod_keys": len([t for t in texts_stdmod if len(t) >= 5]),
-    "npcsay_keys": len(texts_npcsay)
+    "stdmod_keys": stdmod_count,
+    "npcsay_keys": npcsay_count
 }
 with open("$STATUS_FILE", "w") as f:
     json.dump(status, f, indent=2)

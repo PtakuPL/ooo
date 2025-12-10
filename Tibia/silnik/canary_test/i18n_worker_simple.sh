@@ -50,12 +50,24 @@ CATEGORY_STATE_FILE = ".i18n_category_state.json"
 CATEGORY = "$CATEGORY"
 PROCESSED_COUNT = $PROCESSED_COUNT
 
+# Progresywne czasy skip (w sekundach)
+SKIP_TIMES = [300, 600, 1800, 3600, 7200]  # 5min, 10min, 30min, 1h, 2h
+
 # Wczytaj obecny stan
 try:
     with open(CATEGORY_STATE_FILE, 'r') as f:
         state = json.load(f)
 except:
-    state = {"skip_until": {}, "last_processed": {}}
+    state = {"skip_until": {}, "last_processed": {}, "consecutive_zeros": {}, "total_processed": {}}
+
+# Upewnij się że wszystkie klucze istnieją
+for key in ["skip_until", "last_processed", "consecutive_zeros", "total_processed"]:
+    if key not in state:
+        state[key] = {}
+
+# Pobierz poprzednie wartości
+prev_zeros = state["consecutive_zeros"].get(CATEGORY, 0)
+prev_total = state["total_processed"].get(CATEGORY, 0)
 
 # Zapisz wynik
 state["last_processed"][CATEGORY] = {
@@ -63,13 +75,25 @@ state["last_processed"][CATEGORY] = {
     "timestamp": time.time()
 }
 
-# Jeśli 0 przetworzonych - oznacz do pominięcia na 5 minut
 if PROCESSED_COUNT == 0:
-    state["skip_until"][CATEGORY] = time.time() + 300  # 5 minut
-    print(f"⏭️ Kategoria '{CATEGORY}' pominięta na 5 minut (0 przetworzonych)")
+    # Zwiększ licznik consecutive zeros
+    state["consecutive_zeros"][CATEGORY] = prev_zeros + 1
+    zeros = state["consecutive_zeros"][CATEGORY]
+    
+    # Progresywny backoff - im więcej zer, tym dłuższy skip
+    skip_index = min(zeros - 1, len(SKIP_TIMES) - 1)
+    skip_time = SKIP_TIMES[skip_index]
+    state["skip_until"][CATEGORY] = time.time() + skip_time
+    
+    skip_min = skip_time // 60
+    print(f"⏭️ Kategoria '{CATEGORY}' pominięta na {skip_min} min (0 przetworzonych, seria: {zeros}x)")
 else:
-    # Wyczyść skip jeśli coś przetworzyliśmy
+    # Reset consecutive zeros przy sukcesie
+    state["consecutive_zeros"][CATEGORY] = 0
+    state["total_processed"][CATEGORY] = prev_total + PROCESSED_COUNT
+    # Wyczyść skip
     state["skip_until"].pop(CATEGORY, None)
+    print(f"✅ Kategoria '{CATEGORY}': +{PROCESSED_COUNT} (total: {prev_total + PROCESSED_COUNT})")
 
 # Zapisz stan
 with open(CATEGORY_STATE_FILE, 'w') as f:

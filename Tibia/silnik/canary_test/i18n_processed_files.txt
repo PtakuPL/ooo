@@ -1008,3 +1008,9 @@ data-otservbr-global/startup/tables/item_daily_reward.lua
 data-otservbr-global/startup/tables/item.lua
 data-otservbr-global/startup/tables/teleport_item.lua
 data-otservbr-global/startup/tables/tile.lua
+data/npclib/npc_system/custom_modules.lua
+data/npclib/npc_system/keyword_handler.lua
+data/npclib/npc_system/bank_system.lua
+data/npclib/npc_system/modules.lua
+data/npclib/npc.lua
+data/npclib/load.lua

@@ -3228,5 +3228,20 @@
   "item.7563.name": "skull",
   "item.7570.name": "bone claw",
   "item.7571.name": "bone",
-  "item.7572.name": "bone claw"
+  "item.7572.name": "bone claw",
+  "item.7573.name": "bone",
+  "item.7592.name": "druid statue",
+  "item.7593.name": "brown pavement",
+  "item.7594.name": "earth",
+  "item.7629.name": "strange statue",
+  "item.7642.name": "great spirit potion",
+  "item.7643.name": "ultimate health potion",
+  "item.7644.name": "antidote potion",
+  "item.7711.name": "closed door",
+  "item.7712.name": "closed door",
+  "item.7713.name": "open door",
+  "item.7714.name": "closed door",
+  "item.7715.name": "closed door",
+  "item.7716.name": "open door",
+  "item.7717.name": "closed door"
 }

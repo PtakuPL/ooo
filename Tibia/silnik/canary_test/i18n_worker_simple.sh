@@ -1155,60 +1155,48 @@ LANG_NAMES = {
     "sv": "szwedzki", "da": "duński", "no": "norweski", "fi": "fiński",
     "cs": "czeski", "sk": "słowacki", "hu": "węgierski", "ro": "rumuński",
     "bg": "bułgarski", "el": "grecki", "tr": "turecki", "uk": "ukraiński",
-    "zh": "chiński", "ja": "japoński", "ko": "koreański", "ar": "arabski"
+    "zh": "chiński (uproszczony)", "ja": "japoński", "ko": "koreański", "ar": "arabski"
 }
 
-def translate_text(text, lang):
-    """
-    Tłumaczy tekst na język docelowy.
-    
-    ZASADY DLA AGENTA LLM:
-    - Przetłumacz całe zdanie naturalnie na język: {lang_name}
-    - Komendy w 'apostrofach' (np. 'trade', 'buy', 'sell', 'yes', 'no') 
-      NIE TŁUMACZ - zostaw w oryginale angielskim
-    - Zmienne w {nawiasach} zachowaj bez zmian
-    - Formatowanie |PIPE| zachowaj bez zmian
-    - Zachowaj ton i styl postaci NPC
-    
-    PRZYKŁAD dla polskiego:
-    EN: "Hello adventurer! Ask me about 'trade' or 'job'. I have {count} items."
-    PL: "Witaj przybyszu! Zapytaj mnie o 'trade' lub 'job'. Mam {count} przedmiotów."
-    """
-    import re
-    
-    lang_name = LANG_NAMES.get(lang, lang)
-    
-    # Znajdź i zachowaj komendy w 'apostrofach'
-    commands = re.findall(r"'[^']+?'", text)
-    
-    # Znajdź i zachowaj zmienne w {nawiasach}
-    variables = re.findall(r"\{[^}]+?\}", text)
-    
-    # Znajdź i zachowaj formatowanie |PIPE|
-    pipes = re.findall(r"\|[^|]+?\|", text)
-    
-    #---------------------------------------------------------------------------
-    # TUTAJ AGENT LLM WYKONUJE TŁUMACZENIE
-    # Agent powinien przetłumaczyć 'text' na język 'lang_name'
-    # zachowując commands, variables i pipes bez zmian
-    #---------------------------------------------------------------------------
-    
-    # Tymczasowo: oznacz jako do przetłumaczenia przez agenta
-    # Agent LLM podmieni tę linię na właściwe tłumaczenie
-    translated = f"[TRANSLATE:{lang.upper()}] {text}"
-    
-    #---------------------------------------------------------------------------
-    # WALIDACJA - sprawdź czy komendy zostały zachowane
-    #---------------------------------------------------------------------------
-    for cmd in commands:
-        if cmd not in translated:
-            print(f"    ⚠️ UWAGA: Komenda {cmd} została zmieniona!")
-    
-    return translated
+# Generuj plik z promptem dla LLM
+prompt_file = f"{i18n_dir}/translate_prompt_{target_lang}.md"
+with open(prompt_file, "w") as pf:
+    pf.write(f"# 🌍 PROMPT TŁUMACZENIA NA JĘZYK: {LANG_NAMES.get(target_lang, target_lang).upper()}\n\n")
+    pf.write(f"## Instrukcje dla agenta LLM\n\n")
+    pf.write(f"Przetłumacz poniższe teksty z angielskiego na **{LANG_NAMES.get(target_lang, target_lang)}**.\n\n")
+    pf.write(f"### ⚠️ ZASADY (BARDZO WAŻNE!):\n")
+    pf.write(f"1. **Komendy w 'apostrofach'** - NIE TŁUMACZ! (np. 'trade', 'job', 'yes', 'no', 'buy', 'sell')\n")
+    pf.write(f"2. **Zmienne w {{nawiasach}}** - zostaw bez zmian (np. {{player}}, {{amount}}, {{npc}})\n")
+    pf.write(f"3. **Formatowanie |PIPE|** - zostaw bez zmian (np. |PLAYERNAME|, |TIME|)\n")
+    pf.write(f"4. Tłumacz naturalnie, zachowując ton i styl postaci NPC\n\n")
+    pf.write(f"### Przykład poprawnego tłumaczenia:\n")
+    pf.write(f"```\n")
+    pf.write(f"EN: Hello adventurer! Ask me about 'trade' or 'job'. I have {{count}} items.\n")
+    if target_lang == "pl":
+        pf.write(f"PL: Witaj przybyszu! Zapytaj mnie o 'trade' lub 'job'. Mam {{count}} przedmiotów.\n")
+    elif target_lang == "de":
+        pf.write(f"DE: Hallo Abenteurer! Frag mich nach 'trade' oder 'job'. Ich habe {{count}} Gegenstände.\n")
+    else:
+        pf.write(f"{target_lang.upper()}: [TWOJE TŁUMACZENIE TUTAJ]\n")
+    pf.write(f"```\n\n")
+    pf.write(f"---\n\n")
+    pf.write(f"## Teksty do przetłumaczenia ({len(keys_batch)} kluczy)\n\n")
 
 # Przetwórz składnie
 translated_count = 0
 real_translations = 0
+
+print(f"")
+print(f"╔══════════════════════════════════════════════════════════════════════╗")
+print(f"║  📝 PROMPT DLA AGENTA LLM - TŁUMACZENIE NA {LANG_NAMES.get(target_lang, target_lang).upper():15}            ║")
+print(f"╠══════════════════════════════════════════════════════════════════════╣")
+print(f"║  ZASADY:                                                             ║")
+print(f"║  • Komendy w 'apostrofach' NIE TŁUMACZ (np. 'trade', 'job')          ║")
+print(f"║  • Zmienne w {{nawiasach}} zachowaj bez zmian                         ║")
+print(f"║  • Formatowanie |PIPE| zachowaj bez zmian                            ║")
+print(f"╚══════════════════════════════════════════════════════════════════════╝")
+print(f"")
+
 for substage in range(total_substages):
     start_idx = substage * substage_size
     end_idx = min(start_idx + substage_size, len(keys_batch))
@@ -1216,31 +1204,41 @@ for substage in range(total_substages):
     
     print(f"  └─ Składnia {substage + 1}/{total_substages}: {len(substage_keys)} kluczy")
     
-    # Wyświetl instrukcję dla agenta LLM
-    print(f"")
-    print(f"    📝 INSTRUKCJA DLA AGENTA LLM:")
-    print(f"    Przetłumacz poniższe teksty na język {LANG_NAMES.get(target_lang, target_lang)}.")
-    print(f"    Komendy w 'apostrofach' NIE tłumacz (np. 'trade', 'job').")
-    print(f"    Zmienne w {{nawiasach}} zachowaj bez zmian.")
-    print(f"")
+    # Zapisz do pliku promptów
+    with open(prompt_file, "a") as pf:
+        pf.write(f"### Składnia {substage + 1}/{total_substages}\n\n")
     
     for key, en_text in substage_keys:
-        print(f"    {key}:")
-        print(f"      EN: {en_text}")
-        
-        # Agent LLM powinien tutaj wstawić tłumaczenie
-        translated = translate_text(en_text, target_lang)
-        lang_data[key] = translated
-        translated_count += 1
-        
-        print(f"      {target_lang.upper()}: {translated}")
+        # Wyświetl w terminalu (dla agenta LLM)
         print(f"")
+        print(f"    📌 {key}")
+        print(f"    EN: {en_text}")
+        print(f"    {target_lang.upper()}: _______________________________________________")
         
-        if not translated.startswith("["):
-            real_translations += 1
+        # Zapisz do pliku promptów w formacie łatwym do edycji
+        with open(prompt_file, "a") as pf:
+            pf.write(f"**{key}**\n")
+            pf.write(f"- EN: `{en_text}`\n")
+            pf.write(f"- {target_lang.upper()}: \n\n")
+        
+        # Zapisz placeholder do JSON (do późniejszej edycji)
+        lang_data[key] = f"[TODO:{target_lang.upper()}] {en_text}"
+        translated_count += 1
+
+print(f"")
+print(f"═══════════════════════════════════════════════════════════════════════")
+print(f"📄 Prompt zapisany do: {prompt_file}")
+print(f"")
+print(f"NASTĘPNE KROKI DLA AGENTA LLM:")
+print(f"1. Przeczytaj prompt z pliku: {prompt_file}")
+print(f"2. Dla każdego klucza wpisz tłumaczenie po linii '{target_lang.upper()}:'")  
+print(f"3. Zachowaj komendy 'w apostrofach' i zmienne {{w nawiasach}}")
+print(f"4. Po ukończeniu - zaktualizuj plik {lang_file}")
+print(f"═══════════════════════════════════════════════════════════════════════")
+print(f"")
 
 # [5/6] SAVE_TRANSLATIONS
-print(f"[5/6] SAVE_TRANSLATIONS: Zapisuję {translated_count} kluczy")
+print(f"[5/6] SAVE_TRANSLATIONS: Zapisuję {translated_count} kluczy (placeholder'ów)")
 lang_data = dict(sorted(lang_data.items()))
 with open(lang_file, "w") as f:
     json.dump(lang_data, f, indent=2, ensure_ascii=False)

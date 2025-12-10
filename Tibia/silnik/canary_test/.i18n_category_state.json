@@ -124,7 +124,7 @@
   },
   "translation_sync": {
     "current_lang": "pl",
-    "current_category": "php.json",
+    "current_category": "raids.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -147,7 +147,7 @@
       },
       "pl": {
         "chatchannels": 8,
-        "total": 336245,
+        "total": 365343,
         "client": 283,
         "cpp": 15,
         "events": 5,
@@ -158,7 +158,7 @@
         "monsters": 7341,
         "npc": 5334,
         "php": 1097,
-        "raids": 30,
+        "raids": 147,
         "scripts": 385,
         "spells": 15,
         "startup": 19
@@ -207,6 +207,6 @@
         "events": 5
       }
     },
-    "last_sync": 1765409990.9170043
+    "last_sync": 1765410000.4818964
   }
 }

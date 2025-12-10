@@ -511,10 +511,13 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 *Wygenerowano automatycznie przez i18n_worker_simple.sh v1.1*
 '''
 
-with open("I18N_STATUS.md", "w") as f:
+# Zapisz do git root (nie do lokalnego katalogu!)
+status_path = os.path.join(GIT_ROOT, "I18N_STATUS.md")
+with open(status_path, "w") as f:
     f.write(md)
 
 print(f"✅ I18N_STATUS.md zaktualizowany: {timestamp}")
+print(f"   Ścieżka: {status_path}")
 print(f"   NPC: {npc_keys} kluczy, {completed} zmigrowanych, {needs_migration_npc} do zrobienia")
 print(f"   Total: {total_keys} kluczy | Języki: {len(langs_with_data)}/{langs_count}")
 STATUSPY

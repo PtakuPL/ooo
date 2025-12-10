@@ -1070,3 +1070,13 @@ TWIG:html_copy/system/templates/guilds.manager.html.twig
 TWIG:html_copy/system/templates/buttons.change_name.html.twig
 TWIG:html_copy/system/templates/news.html.twig
 TWIG:html_copy/system/templates/account.generate_new_recovery_key.html.twig
+TWIG:html_copy/system/templates/buttons.view.html.twig
+TWIG:html_copy/system/templates/account.change-info.html.twig
+TWIG:html_copy/system/templates/admin.logs.html.twig
+TWIG:html_copy/system/templates/account.lost.form.html.twig
+TWIG:html_copy/system/templates/serverinfo.html.twig
+TWIG:html_copy/system/templates/commands.form.html.twig
+TWIG:html_copy/system/templates/spells.html.twig
+TWIG:html_copy/system/templates/admin.plugins.form.html.twig
+TWIG:html_copy/system/templates/monsters.html.twig
+TWIG:html_copy/system/templates/account.management.html.twig

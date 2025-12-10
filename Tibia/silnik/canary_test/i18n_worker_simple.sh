@@ -3358,8 +3358,13 @@ if cmd:
         exit(0)
 
 # 1. Sprawdź każdą kategorię po kolei (według priorytetu)
+# Uwzględnij skip dla kategorii które zwróciły 0 w poprzednim cyklu
+cat_state = read_category_state()
 sorted_cats = sorted(CATEGORIES.items(), key=lambda x: x[1].get("priority", 99))
 for cat_name, config in sorted_cats:
+    # Pomiń kategorie oznaczone do skip
+    if should_skip_category(cat_name, cat_state):
+        continue
     needs_work = count_files_needing_work(cat_name)
     if needs_work > 0:
         print(f"MIGRATION:{cat_name}:{needs_work}")

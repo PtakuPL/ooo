@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 17:16:25 UTC  
+> **Aktualizacja:** 2025-12-10 19:38:39 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -23,10 +23,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **26** | ↑ |
 | ⏭️ Plików wykluczonych | **711** | - |
-| 🔑 Kluczy i18n | **9713** | ↑ |
+| 🔑 Kluczy i18n | **9810** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#3** | - |
+| 🔄 Cykl | **#1** | - |
 
 ---
 
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 5206/15000 (35%) | 15000 |
+| 🧙 NPC Dialogs | 🔄 | 5253/15000 (35%) | 15000 |
 | 📜 Lua Scripts | 🔄 | 368/1000 (37%) | 1000 |
 | 🎒 Items Database | ⏳ | 0/40000 (0%) | 40000 |
 | 👹 Monsters | 🔄 | 4108/5000 (82%) | 5000 |
@@ -50,16 +50,16 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🐘 PHP Backend | ⏳ | 0/2015 (0%) | 2015 |
-| 📄 HTML Views | ⏳ | 0/300 (0%) | 300 |
-| 📦 JavaScript | ⏳ | 0/100 (0%) | 100 |
+| 🐘 PHP Backend | 🔄 | 8/3000 (0%) | 3000 |
+| 📄 HTML Views | 🔄 | 39/300 (13%) | 300 |
+| 📦 JavaScript | ⏳ | 0/200 (0%) | 200 |
 
 ### ⏳ Faza 3: 📱 Instalka/Klient
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
 | 🖥️ Client UI | ⏳ | 0/200 (0%) | 200 |
-| 💿 Installer | ⏳ | 0/94 (0%) | 94 |
+| 💿 Installer/C++ | 🔄 | 15/500 (3%) | 500 |
 
 ### ⏳ Faza 4: 🌍 Tłumaczenia
 
@@ -68,7 +68,7 @@
 | 🇵🇱 Polski | 🔄 | 1/1 | 1 |
 | 🇩🇪 Niemiecki | 🔄 | 1/1 | 1 |
 | 🇪🇸 Hiszpański | 🔄 | 1/1 | 1 |
-| 🌐 Pozostałe (50) | ⏳ | 8/53 (15%) | 53 |
+| 🌐 Pozostałe (50) | ⏳ | 53/53 (100%) | 53 |
 
 ---
 
@@ -76,7 +76,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     3 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (8 etapów)                     │
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 17:16:25                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 19:38:39                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -100,9 +100,9 @@
 |---------|---------|-----------|
 | 📁 Plików przetworzonych | **26** | z i18n_file_status.json |
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **9713** | we wszystkich kategoriach |
-| 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
-| 🔄 Cykli wykonanych | **#3** | continuous mode |
+| 🔑 Kluczy wyciągniętych | **9810** | we wszystkich kategoriach |
+| 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
+| 🔄 Cykli wykonanych | **#1** | continuous mode |
 | ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -173,7 +173,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 5206 |
+| 🔑 Kluczy | 5253 |
 | 🎯 Cel | 15000 |
 | 📊 Postęp | 35% |
 | 📁 Plik | i18n/en/npc.json |
@@ -273,7 +273,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #3 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -282,7 +282,7 @@
 
 ```
 [⏳] Items (0)      ░░░░░░░░░░░░░░░░░░░░  0%
-[🔄] NPC (5206)            ██████░░░░░░░░░░░░░░  35%
+[🔄] NPC (5253)            ███████░░░░░░░░░░░░░  35%
 [🔄] Scripts (368)      ███████░░░░░░░░░░░░░  37%
 [🔄] Monsters (4108)    ████████████████░░░░  82%
 [⏳] Spells (0)       ░░░░░░░░░░░░░░░░░░░░  0%
@@ -294,7 +294,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 17:16:25  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 19:38:39  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

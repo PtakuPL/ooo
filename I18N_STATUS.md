@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 23:44:03 UTC  
+> **Aktualizacja:** 2025-12-10 23:44:10 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **24214** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#80** | - |
+| 🔄 Cykl | **#81** | - |
 
 ---
 
@@ -76,7 +76,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    80 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    81 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 12215 operacji               │
 │ 🕐 Aktywne kategorie: 16                               │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 23:44:03                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 23:44:10                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -102,7 +102,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **24214** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
-| 🔄 Cykli wykonanych | **#80** | continuous mode |
+| 🔄 Cykli wykonanych | **#81** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -282,23 +282,23 @@
 | html | 418 | 14 | 2 | ⏭️ Skip 2m |
 | scripts | 385 | 0 | 6 | ⏭️ Skip 53m |
 | php | 32 | 24 | 2 | ⏭️ Skip 2m |
-| raids | 30 | 0 | 5 | ⏭️ Skip 112m |
+| raids | 30 | 0 | 5 | ⏭️ Skip 111m |
 | startup | 19 | 11 | 2 | ⏭️ Skip 2m |
 | modules | 16 | 16 | 2 | ⏭️ Skip 2m |
 | cpp | 15 | 0 | 0 | ✅ Active |
 | spells | 15 | 0 | 0 | ✅ Active |
-| client | 14 | 14 | 2 | ⏭️ Skip 3m |
+| client | 14 | 14 | 2 | ⏭️ Skip 2m |
 | messages | 11 | 0 | 0 | ✅ Active |
 | chatchannels | 8 | 8 | 2 | ⏭️ Skip 1m |
 | events | 5 | 5 | 2 | ⏭️ Skip 1m |
-| libs | 5 | 5 | 2 | ⏭️ Skip 1m |
+| libs | 5 | 5 | 2 | ⏭️ Skip 0m |
 | actions | 0 | 0 | 0 | ⏳ Empty |
 | errors | 0 | 0 | 0 | ⏳ Empty |
 | npclib | 0 | 0 | 2 | ⏭️ Skip 2m |
 | quests | 0 | 0 | 0 | ⏳ Empty |
 | server | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
-| world | 0 | 0 | 5 | ⏭️ Skip 112m |
+| world | 0 | 0 | 5 | ⏭️ Skip 111m |
 
 ---
 
@@ -308,10 +308,10 @@
 |-----------|----------------|-----------|-------|
 | scripts | 53m | 6x | Progresywny backoff |
 | monsters | 111m | 5x | Progresywny backoff |
-| raids | 112m | 5x | Progresywny backoff |
-| world | 112m | 5x | Progresywny backoff |
+| raids | 111m | 5x | Progresywny backoff |
+| world | 111m | 5x | Progresywny backoff |
 | items | 0m | 2x | Progresywny backoff |
-| libs | 1m | 2x | Progresywny backoff |
+| libs | 0m | 2x | Progresywny backoff |
 | events | 1m | 2x | Progresywny backoff |
 | chatchannels | 1m | 2x | Progresywny backoff |
 | modules | 2m | 2x | Progresywny backoff |
@@ -319,7 +319,7 @@
 | npclib | 2m | 2x | Progresywny backoff |
 | php | 2m | 2x | Progresywny backoff |
 | html | 2m | 2x | Progresywny backoff |
-| client | 3m | 2x | Progresywny backoff |
+| client | 2m | 2x | Progresywny backoff |
 | sendtextmessage | 3m | 2x | Progresywny backoff |
 | keywordhandler | 3m | 2x | Progresywny backoff |
 | twig | 5m | 2x | Progresywny backoff |
@@ -330,7 +330,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #80 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #81 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -342,7 +342,7 @@
 | DE | 246,646 | ⏳ |
 | PL | 205,426 | ⏳ |
 | ES | 205,426 | ⏳ |
-| PT | 157,039 | 🔄 |
+| PT | 181,223 | 🔄 |
 | FR | 0 | ⏳ |
 | IT | 0 | ⏳ |
 | NL | 0 | ⏳ |
@@ -350,7 +350,7 @@
 | SK | 0 | ⏳ |
 | HU | 0 | ⏳ |
 
-> **Aktualnie:** PT / scripts.json  
+> **Aktualnie:** PT / spells.json  
 > **Ukończone języki:** 0/53  
 > **Prefix:** `[EN] ` (klucze do przetłumaczenia)
 
@@ -373,7 +373,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:44:03  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 23:44:10  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

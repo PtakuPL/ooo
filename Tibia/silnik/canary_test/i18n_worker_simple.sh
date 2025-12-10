@@ -1195,63 +1195,110 @@ with open(prompt_file, "w") as pf:
     pf.write(f"---\n\n")
     pf.write(f"## Teksty do przetłumaczenia ({len(keys_batch)} kluczy)\n\n")
 
-# Przetwórz składnie
+# Przetwórz interaktywnie - agent wpisuje tłumaczenia
 translated_count = 0
-real_translations = 0
+skipped_count = 0
 
-print(f"")
-print(f"╔══════════════════════════════════════════════════════════════════════╗")
-print(f"║  📝 PROMPT DLA AGENTA LLM - TŁUMACZENIE NA {LANG_NAMES.get(target_lang, target_lang).upper():15}            ║")
-print(f"╠══════════════════════════════════════════════════════════════════════╣")
-print(f"║  ZASADY:                                                             ║")
-print(f"║  • Komendy w 'apostrofach' NIE TŁUMACZ (np. 'trade', 'job')          ║")
-print(f"║  • Zmienne w {{nawiasach}} zachowaj bez zmian                         ║")
-print(f"║  • Formatowanie |PIPE| zachowaj bez zmian                            ║")
-print(f"╚══════════════════════════════════════════════════════════════════════╝")
-print(f"")
+print("")
+print("╔══════════════════════════════════════════════════════════════════════╗")
+print(f"║  🌍 TRYB INTERAKTYWNY - TŁUMACZENIE NA {LANG_NAMES.get(target_lang, target_lang).upper():20}         ║")
+print("╠══════════════════════════════════════════════════════════════════════╣")
+print("║  ZASADY:                                                             ║")
+print("║  • Komendy w 'apostrofach' NIE TŁUMACZ (np. 'trade', 'job')          ║")
+print("║  • Zmienne w {nawiasach} zachowaj bez zmian                          ║")
+print("║  • Formatowanie |PIPE| zachowaj bez zmian                            ║")
+print("║                                                                      ║")
+print("║  KOMENDY: SKIP = pomiń | QUIT = zakończ | SAVE = zapisz i kontynuuj  ║")
+print("╚══════════════════════════════════════════════════════════════════════╝")
+print("")
+print(f"📊 Do przetłumaczenia: {len(keys_batch)} kluczy")
+print("")
 
-for substage in range(total_substages):
-    start_idx = substage * substage_size
-    end_idx = min(start_idx + substage_size, len(keys_batch))
-    substage_keys = keys_batch[start_idx:end_idx]
-    
-    print(f"  └─ Składnia {substage + 1}/{total_substages}: {len(substage_keys)} kluczy")
-    
-    # Zapisz do pliku promptów
-    with open(prompt_file, "a") as pf:
-        pf.write(f"### Składnia {substage + 1}/{total_substages}\n\n")
-    
-    for key, en_text in substage_keys:
-        # Wyświetl w terminalu (dla agenta LLM)
-        print(f"")
-        print(f"    📌 {key}")
-        print(f"    EN: {en_text}")
-        print(f"    {target_lang.upper()}: _______________________________________________")
-        
-        # Zapisz do pliku promptów w formacie łatwym do edycji
-        with open(prompt_file, "a") as pf:
-            pf.write(f"**{key}**\n")
-            pf.write(f"- EN: `{en_text}`\n")
-            pf.write(f"- {target_lang.upper()}: \n\n")
-        
-        # Zapisz placeholder do JSON (do późniejszej edycji)
-        lang_data[key] = f"[TODO:{target_lang.upper()}] {en_text}"
-        translated_count += 1
+quit_requested = False
 
-print(f"")
-print(f"═══════════════════════════════════════════════════════════════════════")
-print(f"📄 Prompt zapisany do: {prompt_file}")
-print(f"")
-print(f"NASTĘPNE KROKI DLA AGENTA LLM:")
-print(f"1. Przeczytaj prompt z pliku: {prompt_file}")
-print(f"2. Dla każdego klucza wpisz tłumaczenie po linii '{target_lang.upper()}:'")  
-print(f"3. Zachowaj komendy 'w apostrofach' i zmienne {{w nawiasach}}")
-print(f"4. Po ukończeniu - zaktualizuj plik {lang_file}")
-print(f"═══════════════════════════════════════════════════════════════════════")
-print(f"")
+for idx, (key, en_text) in enumerate(keys_batch):
+    if quit_requested:
+        break
+    
+    # Wyświetl tekst do tłumaczenia
+    print("─" * 70)
+    print(f"[{idx + 1}/{len(keys_batch)}] 📌 {key}")
+    print(f"")
+    print(f"  EN: {en_text}")
+    print(f"")
+    
+    # Pokaż zmienne/komendy do zachowania
+    commands = re.findall(r"'[^']+?'", en_text)
+    variables = re.findall(r"\{[^}]+?\}", en_text)
+    pipes = re.findall(r"\|[^|]+?\|", en_text)
+    
+    if commands or variables or pipes:
+        print(f"  ⚠️  Zachowaj bez zmian: ", end="")
+        if commands:
+            print(f"komendy: {', '.join(commands)} ", end="")
+        if variables:
+            print(f"zmienne: {', '.join(variables)} ", end="")
+        if pipes:
+            print(f"pipe: {', '.join(pipes)}", end="")
+        print("")
+        print("")
+    
+    # Czekaj na input od agenta
+    print(f"  {target_lang.upper()}: ", end="")
+    sys.stdout.flush()
+    
+    try:
+        translation = input().strip()
+    except EOFError:
+        print("\n⚠️  Koniec input - zapisuję i kończę")
+        break
+    
+    # Obsłuż komendy
+    if translation.upper() == "QUIT":
+        print("  ✋ Zakończono sesję")
+        quit_requested = True
+        break
+    elif translation.upper() == "SKIP":
+        print("  ⏭️  Pominięto")
+        skipped_count += 1
+        lang_data[key] = f"[SKIP:{target_lang.upper()}] {en_text}"
+        continue
+    elif translation.upper() == "SAVE":
+        print("  💾 Zapisuję dotychczasowe i kontynuuję...")
+        lang_data = dict(sorted(lang_data.items()))
+        with open(lang_file, "w") as f:
+            json.dump(lang_data, f, indent=2, ensure_ascii=False)
+        print(f"  ✅ Zapisano {len(lang_data)} kluczy")
+        continue
+    elif not translation:
+        print("  ⏭️  Puste - pominięto")
+        skipped_count += 1
+        lang_data[key] = f"[EMPTY:{target_lang.upper()}] {en_text}"
+        continue
+    
+    # Walidacja - czy zachowano komendy i zmienne
+    valid = True
+    for cmd in commands:
+        if cmd not in translation:
+            print(f"  ⚠️  UWAGA: Brakuje komendy {cmd}!")
+            valid = False
+    for var in variables:
+        if var not in translation:
+            print(f"  ⚠️  UWAGA: Brakuje zmiennej {var}!")
+            valid = False
+    
+    if valid:
+        print(f"  ✅ OK")
+    
+    # Zapisz tłumaczenie
+    lang_data[key] = translation
+    translated_count += 1
+
+print("")
+print("═" * 70)
 
 # [5/6] SAVE_TRANSLATIONS
-print(f"[5/6] SAVE_TRANSLATIONS: Zapisuję {translated_count} kluczy (placeholder'ów)")
+print(f"[5/6] SAVE_TRANSLATIONS: Zapisuję {translated_count} tłumaczeń")
 lang_data = dict(sorted(lang_data.items()))
 with open(lang_file, "w") as f:
     json.dump(lang_data, f, indent=2, ensure_ascii=False)

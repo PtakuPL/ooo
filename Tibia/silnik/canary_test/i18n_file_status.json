@@ -668,7 +668,7 @@
       "stages": {
         "1_started": {
           "status": "completed",
-          "hash": "bb375733efed14acf6113187656ef47a",
+          "hash": "97136ab46cb664dc9d9fe703bbb55539",
           "type": "npc"
         },
         "2_analysis": {
@@ -676,10 +676,10 @@
           "safe_name": "alaistar",
           "StdModule_say": 0,
           "npcHandler_say": 1,
-          "sendTextMessage": 1,
+          "sendTextMessage": 0,
           "addGreetKeyword": 0,
           "addFarewellKeyword": 0,
-          "total": 2,
+          "total": 1,
           "already_i18n": 0,
           "npcSayLib": 0,
           "needs_migration": true
@@ -772,13 +772,13 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:55:12.471326"
+      "completed_at": "2025-12-10T20:41:00.542074"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "hash": "d093255573292da6b2911e1210a61c5e",
+          "hash": "a280ca6aabc954d68d173941ca4ff318",
           "type": "npc"
         },
         "2_analysis": {
@@ -786,10 +786,10 @@
           "safe_name": "battlemart",
           "StdModule_say": 0,
           "npcHandler_say": 2,
-          "sendTextMessage": 1,
+          "sendTextMessage": 0,
           "addGreetKeyword": 0,
           "addFarewellKeyword": 0,
-          "total": 3,
+          "total": 2,
           "already_i18n": 0,
           "npcSayLib": 0,
           "needs_migration": true
@@ -882,7 +882,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:55:13.759215"
+      "completed_at": "2025-12-10T20:41:04.133748"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {

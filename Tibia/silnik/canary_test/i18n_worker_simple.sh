@@ -3986,15 +3986,17 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                     
                     # === ŚLEDZENIE WYNIKU KATEGORII ===
                     # Zlicz klucze PO przetwarzaniu
-                    KEYS_AFTER=$(python3 -c "import json,os; print(sum(len(json.load(open(f'i18n/en/{f}'))) for f in os.listdir('i18n/en') if f.endswith('.json')))" 2>/dev/null || echo 0)
+                    KEYS_AFTER=$(python3 -c "import json,os; print(sum(len(json.load(open(f'i18n/en/{f}'))) for f in os.listdir('i18n/en') if f.endswith('.json')))" 2>/dev/null || echo "0")
                     KEYS_ADDED=$((KEYS_AFTER - KEYS_BEFORE))
                     
                     # Sprawdź też zmiany w git (pliki .lua zmodyfikowane)
-                    FILES_CHANGED=$(git diff --name-only 2>/dev/null | grep -c "\.lua$" || echo 0)
+                    FILES_CHANGED=$(git diff --name-only 2>/dev/null | grep "\.lua$" | wc -l)
+                    FILES_CHANGED=${FILES_CHANGED:-0}
                     
                     # Jeśli ani kluczy nie dodano, ani plików nie zmieniono - kategoria jest "pusta"
-                    EFFECTIVE_COUNT=$((KEYS_ADDED + FILES_CHANGED + ${COUNT:-0}))
-                    echo "   📈 Wynik: +$KEYS_ADDED kluczy, $FILES_CHANGED plików .lua, COUNT=${COUNT:-0}"
+                    COUNT=${COUNT:-0}
+                    EFFECTIVE_COUNT=$((KEYS_ADDED + FILES_CHANGED + COUNT))
+                    echo "   📈 Wynik: +$KEYS_ADDED kluczy, $FILES_CHANGED plików .lua, COUNT=$COUNT"
                     update_category_state "$MODE_CAT" "$EFFECTIVE_COUNT"
                     ;;
                 AUTO_TRANSLATE)

@@ -124,7 +124,7 @@
   },
   "translation_sync": {
     "current_lang": "fr",
-    "current_category": "html.json",
+    "current_category": "php.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -201,7 +201,7 @@
       },
       "fr": {
         "chatchannels": 8,
-        "total": 181179,
+        "total": 210059,
         "client": 283,
         "cpp": 15,
         "events": 5,
@@ -211,10 +211,10 @@
         "modules": 16,
         "monsters": 7341,
         "npc": 5334,
-        "php": 1097,
+        "php": 1166,
         "raids": 147
       }
     },
-    "last_sync": 1765410333.0375886
+    "last_sync": 1765410340.3294406
   }
 }

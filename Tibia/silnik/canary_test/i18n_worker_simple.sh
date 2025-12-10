@@ -2029,6 +2029,18 @@ CATEGORIES = {
     }
 }
 
+# Wczytaj status plików z i18n_file_status.json
+STATUS_FILE = "i18n_file_status.json"
+completed_files = set()
+try:
+    with open(STATUS_FILE) as f:
+        status_data = json.load(f)
+    for fpath, info in status_data.get("files", {}).items():
+        if info.get("overall_status") == "completed":
+            completed_files.add(fpath)
+except:
+    pass
+
 def count_files_needing_work(category):
     """Zlicz pliki wymagające migracji w danej kategorii"""
     config = CATEGORIES.get(category, {})
@@ -2044,6 +2056,11 @@ def count_files_needing_work(category):
                 if not f.endswith(".lua") and not f.endswith(".xml"):
                     continue
                 fpath = os.path.join(root, f)
+                
+                # Sprawdź czy plik nie jest już oznaczony jako completed
+                if fpath in completed_files:
+                    continue
+                
                 try:
                     with open(fpath, 'r', errors='ignore') as fp:
                         content = fp.read()

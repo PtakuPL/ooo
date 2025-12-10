@@ -1,1 +1,6 @@
-{}
+{
+  "npc.seymour.greet_1": "Hello, |PLAYERNAME|. Welcome to the Academy of Rookgaard. May I sign you up as a {student}?",
+  "npc.seymour.farewell_1": "Good bye, |PLAYERNAME|! And remember: No running up and down in the academy!",
+  "npc.shiriel.greet_1": "Greetings, |PLAYERNAME|.",
+  "npc.shiriel.farewell_1": "Goodbye, |PLAYERNAME|."
+}

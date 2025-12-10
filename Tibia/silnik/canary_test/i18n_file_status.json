@@ -31,6 +31,14 @@
           "stdmod_transformed": 0,
           "npcsay_transformed": 0
         },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0
+        },
         "7_validation": {
           "status": "completed",
           "errors": [],
@@ -100,7 +108,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:14:09.909522"
+      "completed_at": "2025-12-10T13:14:33.444227"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -320,7 +328,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:14:10.685756"
+      "completed_at": "2025-12-10T13:14:34.134257"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -540,7 +548,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:14:11.441373"
+      "completed_at": "2025-12-10T13:14:34.768399"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -761,7 +769,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:14:12.266086"
+      "completed_at": "2025-12-10T13:14:35.453908"
     },
     "data-otservbr-global/npc/alaistar.lua": {
       "stages": {
@@ -1857,10 +1865,342 @@
       },
       "overall_status": "completed",
       "completed_at": "2025-12-10T13:14:31.320263"
+    },
+    "data-otservbr-global/npc/seymour.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "77efeea9497806c423887f1cd65b56b8",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "seymour",
+          "StdModule_say": 105,
+          "npcHandler_say": 5,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 1,
+          "addFarewellKeyword": 1,
+          "total": 112,
+          "already_i18n": 105,
+          "npcSayLib": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/seymour.md",
+          "keys_documented": 6
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 0,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 2,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 1,
+          "farewell_keys": 1
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [],
+          "keys_per_lang": 2,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "failed",
+          "errors": [
+            "Klucz npc.seymour.stdmod_1 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_2 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_3 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_4 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_5 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_6 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_7 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_8 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_9 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_10 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_11 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_12 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_13 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_14 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_15 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_16 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_17 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_18 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_19 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_20 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_21 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_22 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_23 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_24 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_25 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_26 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_27 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_28 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_29 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_30 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_31 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_32 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_33 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_34 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_35 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_36 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_37 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_38 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_39 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_40 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_41 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_42 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_43 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_44 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_45 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_46 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_47 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_48 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_49 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_50 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_51 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_52 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_53 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_54 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_55 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_56 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_57 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_58 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_59 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_60 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_61 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_62 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_63 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_64 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_65 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_66 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_67 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_68 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_69 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_70 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_71 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_72 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_73 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_74 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_75 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_76 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_77 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_78 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_79 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_80 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_81 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_82 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_83 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_84 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_85 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_86 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_87 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_88 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_89 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_90 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_91 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_92 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_93 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_94 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_95 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_96 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_97 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_98 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_99 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_100 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_101 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_102 brakuje w en/npc.json",
+            "Klucz npc.seymour.stdmod_103 brakuje w en/npc.json"
+          ],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 105,
+          "validation_passed": false
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T13:14:32.151326"
+    },
+    "data-otservbr-global/npc/shiriel.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "500dddbad9711fb2ad6ecb670d42e8de",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "shiriel",
+          "StdModule_say": 0,
+          "npcHandler_say": 1,
+          "sendTextMessage": 1,
+          "addGreetKeyword": 1,
+          "addFarewellKeyword": 1,
+          "total": 4,
+          "already_i18n": 2,
+          "npcSayLib": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/shiriel.md",
+          "keys_documented": 2
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 0,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 2,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 1,
+          "farewell_keys": 1
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [],
+          "keys_per_lang": 2,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 2,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T13:14:32.844579"
     }
   },
   "global_stats": {
-    "files_completed": 18,
+    "files_completed": 20,
     "total_keys": 0
   }
 }

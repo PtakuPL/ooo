@@ -29023,10 +29023,395 @@
       },
       "overall_status": "completed",
       "completed_at": "2025-12-10T07:21:19.188588"
+    },
+    "data-otservbr-global/npc/amber.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "a6da651f28a4534540cc15c27ccc5afa",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "amber",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/anderson.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "c31401bb944c12bb3db73700c6959637",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "anderson",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/coltrayne.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "8c7d111261b3b2c41711c8b0b39cb99f",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "coltrayne",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 1,
+          "total": 1,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/coltrayne.md",
+          "keys_documented": 17
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 12
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 17
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 17,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 313 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 12,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T11:25:19.168969"
+    },
+    "data-otservbr-global/npc/dalbrect.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "f375835ff9cc1b655b1a8adb00b25a8a",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "dalbrect",
+          "StdModule_say": 0,
+          "npcHandler_say": 2,
+          "sendTextMessage": 0,
+          "total": 2,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/dalbrect.md",
+          "keys_documented": 14
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 13
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 14
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 14,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 315 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 13,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T11:25:20.994483"
+    },
+    "data-otservbr-global/npc/elathriel.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "84d446bcca4f1316cd76571a286701f4",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "elathriel",
+          "StdModule_say": 0,
+          "npcHandler_say": 1,
+          "sendTextMessage": 0,
+          "total": 1,
+          "already_i18n": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/elathriel.md",
+          "keys_documented": 33
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 31
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 33
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 33,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Znaleziono 319 duplikat\u00f3w warto\u015bci"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 31,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T11:25:23.405442"
     }
   },
   "global_stats": {
-    "files_completed": 255,
+    "files_completed": 258,
     "total_keys": 0
   },
   "translation_status": {

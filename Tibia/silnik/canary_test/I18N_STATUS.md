@@ -278,6 +278,9 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `elathriel` - ukończono 2025-12-10 11:25
+- ✅ `dalbrect` - ukończono 2025-12-10 11:25
+- ✅ `coltrayne` - ukończono 2025-12-10 11:25
 - ✅ `captain_dreadnought` - ukończono 2025-12-10 11:22
 - ✅ `zumtah` - ukończono 2025-12-10 07:21
 - ✅ `zora` - ukończono 2025-12-10 07:21

@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 11:25:08 UTC  
+> **Aktualizacja:** 2025-12-10 11:25:23 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,9 +21,9 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **255** | ↑ |
+| 📁 Plików przetworzonych | **258** | ↑ |
 | ⏭️ Plików wykluczonych | **729** | - |
-| 🔑 Kluczy i18n | **3594** | ↑ |
+| 🔑 Kluczy i18n | **3658** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
 | 🔄 Cykl | **#1** | - |
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 3594/15000 (24%) | 15000 |
+| 🧙 NPC Dialogs | 🔄 | 3658/15000 (24%) | 15000 |
 | 📜 Lua Scripts | ⏳ | 0/1000 (0%) | 1000 |
 | 🎒 Items Database | ⏳ | 0/40000 (0%) | 40000 |
 | 👹 Monsters | ⏳ | 0/500 (0%) | 500 |
@@ -78,17 +78,17 @@
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    ✅ IDLE                                   │
+│ Status:    🟢 RUNNING                                │
 │ Tryb:      MIGRATION (8 etapów)                     │
 │ Kategoria: 🧙 NPC Dialogs                            │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Postęp migracji NPC:                                        │
 │ [████████████████████████████████████████████░░░░░░] │
-│ 262/297 plików (88%)                                          │
+│ 265/297 plików (89%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Pozostało: 35 plików NPC                              │
-│ 🕐 ETA: ~5min 50s (przy 10s/plik)                            │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 11:25:08                 │
+│ ⏳ Pozostało: 32 plików NPC                              │
+│ 🕐 ETA: ~5min 20s (przy 10s/plik)                            │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 11:25:23                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,23 +98,23 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przetworzonych | **255** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **262**/297 | 88% ukończone |
-| 🔑 Kluczy wyciągniętych | **3594** | we wszystkich kategoriach |
+| 📁 Plików przetworzonych | **258** | z i18n_file_status.json |
+| ✅ NPC zmigrowanych | **265**/297 | 89% ukończone |
+| 🔑 Kluczy wyciągniętych | **3658** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
 | 🔄 Cykli wykonanych | **#1** | continuous mode |
-| ⚠️ Plików do migracji | **35** | NPC z StdModule.say |
+| ⚠️ Plików do migracji | **32** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
+- ✅ `elathriel` - ukończono 2025-12-10 11:25
+- ✅ `dalbrect` - ukończono 2025-12-10 11:25
+- ✅ `coltrayne` - ukończono 2025-12-10 11:25
 - ✅ `captain_dreadnought` - ukończono 2025-12-10 11:22
 - ✅ `zumtah` - ukończono 2025-12-10 07:21
-- ✅ `zora` - ukończono 2025-12-10 07:21
-- ✅ `ziyad` - ukończono 2025-12-10 07:21
-- ✅ `zerbrus` - ukończono 2025-12-10 07:21
 
 ---
 
@@ -173,13 +173,13 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 3594 |
+| 🔑 Kluczy | 3658 |
 | 🎯 Cel | 15000 |
 | 📊 Postęp | 24% |
 | 📁 Plik | i18n/en/npc.json |
 | 📁 Plików NPC | 1026 |
-| ✅ Zmigrowanych | 262 |
-| 🔄 Do migracji | 35 |
+| ✅ Zmigrowanych | 265 |
+| 🔄 Do migracji | 32 |
 
 </details>
 
@@ -282,7 +282,7 @@
 
 ```
 [⏳] Items (0)      ░░░░░░░░░░░░░░░░░░░░  0%
-[🔄] NPC (3594)            ████░░░░░░░░░░░░░░░░  24%
+[🔄] NPC (3658)            ████░░░░░░░░░░░░░░░░  24%
 [⏳] Scripts (0)      ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Monsters (0)    ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Spells (0)       ░░░░░░░░░░░░░░░░░░░░  0%
@@ -294,13 +294,16 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:25:08  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 11:25:23  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `elathriel` - ukończono 2025-12-10 11:25
+- ✅ `dalbrect` - ukończono 2025-12-10 11:25
+- ✅ `coltrayne` - ukończono 2025-12-10 11:25
 - ✅ `captain_dreadnought` - ukończono 2025-12-10 11:22
 - ✅ `zumtah` - ukończono 2025-12-10 07:21
 - ✅ `zora` - ukończono 2025-12-10 07:21
@@ -308,9 +311,6 @@
 - ✅ `zerbrus` - ukończono 2025-12-10 07:21
 - ✅ `zedrulon_the_fallen` - ukończono 2025-12-10 07:20
 - ✅ `zarifan` - ukończono 2025-12-10 07:20
-- ✅ `yoem` - ukończono 2025-12-10 07:20
-- ✅ `yberius` - ukończono 2025-12-10 07:20
-- ✅ `vascalir` - ukończono 2025-12-10 07:20
 
 ---
 

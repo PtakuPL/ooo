@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 12:53:41 UTC  
+> **Aktualizacja:** 2025-12-10 12:53:53 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **33** | ↑ |
-| ⏭️ Plików wykluczonych | **721** | - |
+| 📁 Plików przetworzonych | **0** | ↑ |
+| ⏭️ Plików wykluczonych | **729** | - |
 | 🔑 Kluczy i18n | **4172** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#162** | - |
+| 🔄 Cykl | **#163** | - |
 
 ---
 
@@ -76,9 +76,9 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   162 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   163 │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    🟢 RUNNING                                │
+│ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (8 etapów)                     │
 │ Kategoria: 🧙 NPC Dialogs                            │
 ├─────────────────────────────────────────────────────────────────┤
@@ -88,7 +88,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 12:53:41                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 12:53:53                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,11 +98,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przetworzonych | **33** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **33** (298 z i18nKey) | z 1026 plików NPC |
+| 📁 Plików przetworzonych | **0** | z i18n_file_status.json |
+| ✅ NPC zmigrowanych | **0** (298 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **4172** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
-| 🔄 Cykli wykonanych | **#162** | continuous mode |
+| 🔄 Cykli wykonanych | **#163** | continuous mode |
 | ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -110,11 +110,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- ✅ `frederik` - ukończono 2025-12-10 12:53
-- ✅ `frans` - ukończono 2025-12-10 12:53
-- ✅ `chuckles` - ukończono 2025-12-10 12:53
-- ✅ `battlemart` - ukończono 2025-12-10 12:53
-- ✅ `alaistar` - ukończono 2025-12-10 12:53
+- Brak operacji
 
 ---
 
@@ -273,7 +269,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #162 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #163 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -294,23 +290,14 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 12:53:41  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 12:53:53  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `frederik` - ukończono 2025-12-10 12:53
-- ✅ `frans` - ukończono 2025-12-10 12:53
-- ✅ `chuckles` - ukończono 2025-12-10 12:53
-- ✅ `battlemart` - ukończono 2025-12-10 12:53
-- ✅ `alaistar` - ukończono 2025-12-10 12:53
-- ✅ `amarie` - ukończono 2025-12-10 12:52
-- ✅ `flickering_soul` - ukończono 2025-12-10 12:18
-- ✅ `zarak` - ukończono 2025-12-10 11:31
-- ✅ `woblin` - ukończono 2025-12-10 11:31
-- ✅ `willie` - ukończono 2025-12-10 11:31
+- Brak
 
 ---
 

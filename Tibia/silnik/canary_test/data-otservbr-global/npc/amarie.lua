@@ -58,7 +58,7 @@ end
 -- Greeting message
 keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Greetings, |PLAYERNAME|.", i18nKey = "npc.amarie.greet_1" })
 --Farewell message
-keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Good bye, |PLAYERNAME|." })
+keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Good bye, |PLAYERNAME|.", i18nKey = "npc.amarie.farewell_1" })
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

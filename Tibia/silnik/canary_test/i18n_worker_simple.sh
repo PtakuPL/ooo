@@ -830,22 +830,6 @@ if 'npcHandler:say("' in content:
 greet_counter = [0]
 farewell_counter = [0]
 
-def replace_greet_with_i18n(match):
-    greet_counter[0] += 1
-    key = f"npc.{safe_name}.greet_{greet_counter[0]}"
-    before = match.group(1)
-    text = match.group(2)
-    after = match.group(3)
-    return f'{before}text = "{text}", i18nKey = "{key}"{after}'
-
-def replace_farewell_with_i18n(match):
-    farewell_counter[0] += 1
-    key = f"npc.{safe_name}.farewell_{farewell_counter[0]}"
-    before = match.group(1)
-    text = match.group(2)
-    after = match.group(3)
-    return f'{before}text = "{text}", i18nKey = "{key}"{after}'
-
 # Pattern dla addGreetKeyword z text = "..." (bez i18nKey)
 # Pierwszy argument to { "klucze" } więc używamy \{[^}]+\}
 pattern_greet = r'(addGreetKeyword\s*\(\{[^}]+\}\s*,\s*\{[^}]*?)text\s*=\s*"([^"]+)"([^}]*?\})'

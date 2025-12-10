@@ -3232,7 +3232,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:53:37.337538"
+      "completed_at": "2025-12-10T12:53:48.871012"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -3337,7 +3337,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:53:38.378804"
+      "completed_at": "2025-12-10T12:53:49.893712"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -3442,7 +3442,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:53:39.483310"
+      "completed_at": "2025-12-10T12:53:51.007199"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -3547,7 +3547,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:53:40.742982"
+      "completed_at": "2025-12-10T12:53:52.380967"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -3652,7 +3652,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:53:41.376465"
+      "completed_at": "2025-12-10T12:53:53.097240"
     },
     "data-otservbr-global/npc/amarie.lua": {
       "stages": {
@@ -3661,19 +3661,6 @@
           "hash": "3984b372e2dc1ddd3f3421c0b9790485",
           "type": "npc"
         },
-        "2_analysis": {
-          "status": "completed",
-          "safe_name": "amarie",
-          "StdModule_say": 0,
-          "npcHandler_say": 0,
-          "sendTextMessage": 0,
-          "addGreetKeyword": 1,
-          "addFarewellKeyword": 1,
-          "total": 2,
-          "already_i18n": 0,
-          "npcSayLib": 0,
-          "needs_migration": true
-        },
         "3_documentation": {
           "status": "completed",
           "doc_file": "docs/i18n/npc/amarie.md",
@@ -3681,29 +3668,21 @@
         },
         "4_transformation": {
           "status": "completed",
-          "transformed": 1,
+          "transformed": 2,
           "stdmod_transformed": 0,
           "npcsay_transformed": 0
         },
         "5_extraction_en": {
           "status": "completed",
-          "keys_added": 2,
+          "keys_added": 0,
           "stdmod_keys": 0,
           "npcsay_keys": 0,
-          "greet_keys": 1,
-          "farewell_keys": 1
+          "greet_keys": 0,
+          "farewell_keys": 0
         },
         "6_placeholder": {
           "status": "completed",
-          "languages": [
-            "pl",
-            "de",
-            "es",
-            "pt",
-            "fr",
-            "it",
-            "ru"
-          ],
+          "languages": [],
           "keys_per_lang": 2,
           "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
         },
@@ -3766,7 +3745,7 @@
             "mk",
             "hr"
           ],
-          "keys_in_lua": 1,
+          "keys_in_lua": 2,
           "validation_passed": true
         },
         "8_sync": {
@@ -3774,7 +3753,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:52:44.529713"
+      "completed_at": "2025-12-10T12:53:53.231398"
     }
   },
   "global_stats": {

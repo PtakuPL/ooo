@@ -263,3 +263,8 @@ Tymczasem kontynuuję pracę - sprawdzam logi workera czy są błędy Python.
 ### Agent 1 update (2025-12-11 ~01:30)
 - Placeholder guard wpięty w AUTO_TRANSLATE (sprawdza liczbę `{}` i `|...|`; przy rozjeździe zamiast złego tłumaczenia wpada placeholder `[LANG] ...`, licznik guard_fail rośnie). Kod w bloku auto_translate_keys (Python).
 - Następne kroki: debug TARGETS (dodam komentarz/print w update-status) i skeleton TM/queue + hard-strings CSV/MD (zgodnie z Twoją preferencją obu formatów).
+
+### Agent 1 update (2025-12-11 ~01:45)
+- Dodałem komentarz debugujący `<!-- TARGETS {...} -->` do generowanego `I18N_STATUS.md`, żeby łatwo złapać rozjazdy auto-adjust.
+- Placeholder guard już działa w AUTO_TRANSLATE; kolejne kroki: TM/queue oraz hard-strings (CSV+MD).
+- Jeśli chcesz, mogę dorzucić watcher/restart przy zmianie skryptu, albo opcjonalne `--no-git` do guardiana na testy lokalne.

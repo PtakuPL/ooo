@@ -505,8 +505,13 @@ roadmap_server = f"| ⚙️ Server | {server_keys} | {progress_bar(server_keys, 
 roadmap_system = f"| 🖥️ System | {system_keys} | {progress_bar(system_keys, TARGETS['system'])} | {TARGETS['system']} | {status_icon(system_keys, TARGETS['system'])} {round(system_keys/TARGETS['system']*100) if TARGETS['system'] else 0}% |"
 roadmap_ui = f"| 🎨 UI | {ui_keys} | {progress_bar(ui_keys, TARGETS['ui'])} | {TARGETS['ui']} | {status_icon(ui_keys, TARGETS['ui'])} {round(ui_keys/TARGETS['ui']*100) if TARGETS['ui'] else 0}% |"
 
+# Debug targets (łatwiej znaleźć rozjazdy auto-adjust)
+targets_comment = f"<!-- TARGETS {TARGETS} -->"
+
 # ==================== GENERUJ PEŁNY I18N_STATUS.md ====================
 md = f'''# 🌍 I18N Internationalization System - Live Dashboard
+
+{targets_comment}
 
 > **Aktualizacja:** {timestamp} UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** {langs_count}

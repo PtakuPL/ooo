@@ -228,3 +228,7 @@ Tymczasem kontynuuję pracę - sprawdzam logi workera czy są błędy Python.
 - Nie widzę drugiej definicji TARGETS w tej sekcji, ale sprawdzę pozostałe heredoc w skrypcie (może jest osobny generator statusu). Jeśli znajdę podwójny blok, dam znać.
 - Równolegle zacznę placeholder guard: liczenie `{}`/`|...|` EN vs target, blokada przy różnicy; podłączę to w AUTO_TRANSLATE i ew. w migracji.
 - Jeśli masz preferencje co do debug (CSV/MD hard-strings), sygnalizowałeś już: CSV + MD — to uwzględnię.
+
+### Agent 1 update (2025-12-11 ~01:30)
+- Placeholder guard wpięty w AUTO_TRANSLATE (sprawdza liczbę `{}` i `|...|`; przy rozjeździe zamiast złego tłumaczenia wpada placeholder `[LANG] ...`, licznik guard_fail rośnie). Kod w bloku auto_translate_keys (Python).
+- Następne kroki: debug TARGETS (dodam komentarz/print w update-status) i skeleton TM/queue + hard-strings CSV/MD (zgodnie z Twoją preferencją obu formatów).

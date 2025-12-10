@@ -1,13 +1,105 @@
 # 🗺️ I18N System - Plan Rozwoju i Usprawnień
 
 > **Dokument**: Plan rozwoju systemu internacjonalizacji  
-> **Wersja**: 5.0  
-> **Data**: 2025-12-10 21:10 UTC  
+> **Wersja**: 6.0  
+> **Data**: 2025-12-10 21:25 UTC  
 > **Autor**: AI Assistant + PtakuPL
 
 ---
 
+## 🛡️ SYSTEM ZABEZPIECZEŃ WORKERA
+
+### Progresywny Backoff dla kategorii
+
+Worker automatycznie zarządza kategoriami które nie zwracają wyników:
+
+| Seria zer | Czas skip | Opis |
+|-----------|-----------|------|
+| 1x | 5 min | Pierwsza próba bez wyników |
+| 2x | 10 min | Druga próba |
+| 3x | 30 min | Trzecia próba |
+| 4x | 1h | Czwarta próba |
+| 5x+ | 2h | Maksymalny czas skip |
+
+### Auto-reset po 24h
+
+Kategorie pomijane przez 24h są automatycznie resetowane:
+```python
+# W read_category_state():
+if now - last_time > 24 * 3600:  # 24 godziny
+    state["skip_until"].pop(cat_name, None)
+    state["consecutive_zeros"][cat_name] = 0
+```
+
+### Plik stanu `.i18n_category_state.json`
+
+```json
+{
+  "skip_until": {"scripts": 1765398348.92},
+  "last_processed": {"npc": {"count": 1, "timestamp": ...}},
+  "consecutive_zeros": {"scripts": 3},
+  "total_processed": {"items": 1500, "npc": 26}
+}
+```
+
+### Funkcje zabezpieczające
+
+| Funkcja | Opis |
+|---------|------|
+| `update_category_state(cat, count)` | Zapisuje wynik, ustawia progresywny skip |
+| `read_category_state()` | Odczytuje stan, wykonuje auto-reset 24h |
+| `should_skip_category(cat, state)` | Sprawdza czy kategoria ma być pominięta |
+
+---
+
+## 📊 AKTUALNY STAN PROJEKTU (2025-12-10 21:25)
+
+### Statystyki kluczy
+
+| Plik JSON | Kluczy | Opis |
+|-----------|--------|------|
+| npc.json | 5,270+ | Dialogi NPC |
+| monsters.json | 4,158 | Głosy potworów |
+| items.json | 1,450+ | Nazwy przedmiotów |
+| scripts.json | 385+ | Wiadomości questów |
+| spells.json | 15+ | Nazwy zaklęć |
+| html.json | 39 | Szablony Twig |
+| raids.json | 30 | Wiadomości rajdów |
+| cpp.json | 15 | Stringi C++ |
+| **TOTAL** | **11,400+** | |
+
+### Co zostało do zrobienia
+
+| Kategoria | Ilość | Priorytet | Status |
+|-----------|-------|-----------|--------|
+| keywordHandler bez i18nKey | ~1,500 | 🔴 WYSOKI | Worker obsługuje |
+| Twig bez trans() | 575 | 🟡 ŚREDNI | Worker obsługuje |
+| PHP bez __() | 5,289 | 🟡 ŚREDNI | Worker obsługuje |
+| Spells | 591 | 🟡 ŚREDNI | Worker obsługuje |
+| Items (pozostałe) | ~2,000+ | 🟢 NISKI | W trakcie |
+
+---
+
 ## 🆕 CHANGELOG - Co zostało zrobione
+
+### 📅 2025-12-10 (sesja #6) - System zabezpieczeń Worker 🛡️
+
+| Zmiana | Opis | Status |
+|--------|------|--------|
+| **Progresywny backoff** | Skip 5min→10min→30min→1h→2h dla kategorii z 0 wynikami | ✅ ZAIMPLEMENTOWANO |
+| **consecutive_zeros** | Licznik ile razy z rzędu kategoria zwróciła 0 | ✅ ZAIMPLEMENTOWANO |
+| **total_processed** | Śledzenie łącznej liczby przetworzonych elementów per kategoria | ✅ ZAIMPLEMENTOWANO |
+| **Auto-reset 24h** | Kategorie pomijane >24h automatycznie resetowane | ✅ ZAIMPLEMENTOWANO |
+| **Batch zwiększony** | Z 5 do 15 plików/cykl (3x szybciej) | ✅ ZAIMPLEMENTOWANO |
+| **Pattern scripts** | Rozszerzony by łapał stringi z konkatenacją | ✅ NAPRAWIONO |
+
+**📊 Postęp sesji #6:**
+| Metryka | Wartość |
+|---------|---------|
+| keywordHandler | +17 kluczy (ghost_of_a_priest +6, klom_stonecutter +5...) |
+| spells | +15 kluczy (dragonling_wave, devovorga_curse...) |
+| items | +300+ kluczy (batch=15) |
+| Total | 9,810 → 11,400+ (+1,590 kluczy) |
 
 ### 📅 2025-12-10 (sesja #5) - Naprawa rotacji kategorii w Dispatcherze 🔄
 

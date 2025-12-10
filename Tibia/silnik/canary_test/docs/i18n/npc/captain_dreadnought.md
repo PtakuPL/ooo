@@ -1,7 +1,7 @@
 # NPC: captain_dreadnought
 
 **Plik:** `data-otservbr-global/npc/captain_dreadnought.lua`
-**Data migracji:** 2025-12-10 10:48
+**Data migracji:** 2025-12-10 10:49
 **Liczba tekstów:** 19
 
 ## Klucze i18n

@@ -216,13 +216,9 @@
           ],
           "keys_in_lua": 0,
           "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
         }
       },
-      "overall_status": "completed",
-      "completed_at": "2025-12-10T13:13:32.523784"
+      "overall_status": "in_progress"
     },
     "data-otservbr-global/npc/rock_in_a_hard_place.lua": {
       "stages": {
@@ -556,7 +552,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:13:34.090382"
+      "completed_at": "2025-12-10T13:13:53.022310"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -666,7 +662,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:13:34.871201"
+      "completed_at": "2025-12-10T13:13:53.710334"
     },
     "data-otservbr-global/npc/seymour.lua": {
       "stages": {
@@ -1343,19 +1339,6 @@
           "hash": "bb375733efed14acf6113187656ef47a",
           "type": "npc"
         },
-        "2_analysis": {
-          "status": "completed",
-          "safe_name": "alaistar",
-          "StdModule_say": 0,
-          "npcHandler_say": 1,
-          "sendTextMessage": 1,
-          "addGreetKeyword": 0,
-          "addFarewellKeyword": 0,
-          "total": 2,
-          "already_i18n": 0,
-          "npcSayLib": 0,
-          "needs_migration": true
-        },
         "3_documentation": {
           "status": "completed",
           "doc_file": "docs/i18n/npc/alaistar.md",
@@ -1444,7 +1427,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:13:29.854299"
+      "completed_at": "2025-12-10T13:13:52.190707"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -1554,7 +1537,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T13:13:31.128782"
+      "completed_at": "2025-12-10T13:13:53.396406"
     },
     "data-otservbr-global/npc/ghorza.lua": {
       "stages": {

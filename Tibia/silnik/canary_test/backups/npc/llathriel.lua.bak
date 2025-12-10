@@ -1,5 +1,5 @@
-local internalNpcName = "Gnomish Operative"
-local npcType = Game.createNpcType("Gnomish Operative (Resonating)")
+local internalNpcName = "Llathriel"
+local npcType = Game.createNpcType(internalNpcName)
 local npcConfig = {}
 
 npcConfig.name = internalNpcName
@@ -11,12 +11,7 @@ npcConfig.walkInterval = 2000
 npcConfig.walkRadius = 2
 
 npcConfig.outfit = {
-	lookType = 493,
-	lookHead = 79,
-	lookBody = 94,
-	lookLegs = 66,
-	lookFeet = 121,
-	lookAddons = 0,
+	lookType = 63,
 }
 
 npcConfig.flags = {
@@ -50,11 +45,13 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "Hello and welcome in the Gnomprona Gardens", i18nKey = "npc.gnomish_operative_resonating.greet_1" })
-keywordHandler:addAliasKeyword({ "hello" })
+-- Greeting message
+keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Greetings, |PLAYERNAME|." })
+--Farewell message
+keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Goodbye, |PLAYERNAME|." })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello and welcome in the Gnomprona Gardens")
-npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
+npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye!")
+
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

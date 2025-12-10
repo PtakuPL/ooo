@@ -4221,5 +4221,22 @@
   "npc.gnomadness.greet_1": "[DE] Hello and welcome in the Gnomprona Gardens. If you want to change your {hazard} level, I 'm who you're looking for.",
   "npc.gnominer.greet_1": "[DE] Hello and welcome in the Gnomprona Gardens",
   "npc.gnomish_operative_cathing.greet_1": "[DE] Hello and welcome in the Gnomprona Gardens",
-  "npc.gnomish_operative_gt_m_01.greet_1": "[DE] Hello and welcome in the Gnomprona Gardens"
+  "npc.gnomish_operative_gt_m_01.greet_1": "[DE] Hello and welcome in the Gnomprona Gardens",
+  "npc.gnomish_operative_raiders.greet_1": "[DE] Hello and welcome in the Gnomprona Gardens",
+  "npc.gnomish_operative_resonating.greet_1": "[DE] Hello and welcome in the Gnomprona Gardens",
+  "npc.gnomish_operative_volcano.greet_1": "[DE] Hello and welcome in the Gnomprona Gardens",
+  "npc.harsky.greet_1": "[DE] HAIL TO THE KING!",
+  "npc.harsky.greet_2": "[DE] HAIL TO THE KING!",
+  "npc.irea.greet_1": "[DE] Greetings, |PLAYERNAME|.",
+  "npc.irea.farewell_1": "[DE] Goodbye, |PLAYERNAME|.",
+  "npc.karith.greet_1": "[DE] Hello! Tell me what's on your mind. Time is money.",
+  "npc.karith.farewell_1": "[DE] Goodbye, |PLAYERNAME|.",
+  "npc.lavirias.greet_1": "[DE] Greetings, |PLAYERNAME|.",
+  "npc.lavirias.farewell_1": "[DE] Goodbye, |PLAYERNAME|.",
+  "npc.llathriel.greet_1": "[DE] Greetings, |PLAYERNAME|.",
+  "npc.llathriel.farewell_1": "[DE] Goodbye, |PLAYERNAME|.",
+  "npc.maealil.greet_1": "[DE] Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+  "npc.maealil.farewell_1": "[DE] May the gods bless you, |PLAYERNAME|!",
+  "npc.queen_eloise.greet_1": "[DE] I greet thee, my loyal {subject}.",
+  "npc.queen_eloise.greet_2": "[DE] I greet thee, my loyal {subject}."
 }

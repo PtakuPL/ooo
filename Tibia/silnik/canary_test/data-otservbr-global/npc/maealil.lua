@@ -163,9 +163,9 @@ keywordHandler:addKeyword({ "solitude" }, StdModule.say, { npcHandler = npcHandl
 keywordHandler:addAliasKeyword({ "wisdom" })
 
 -- Greeting message
-keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free." })
+keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.", i18nKey = "npc.maealil.greet_1" })
 --Farewell message
-keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "May the gods bless you, |PLAYERNAME|!" })
+keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "May the gods bless you, |PLAYERNAME|!", i18nKey = "npc.maealil.farewell_1" })
 
 npcHandler:setMessage(MESSAGE_GREET, "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.")
 npcHandler:setMessage(MESSAGE_WALKAWAY, "Remember: If you are heavily wounded or poisoned, I can heal you for free.")

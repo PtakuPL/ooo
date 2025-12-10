@@ -1,5 +1,5 @@
 local internalNpcName = "Gnomish Operative"
-local npcType = Game.createNpcType("Gnomish Operative (Resonating)")
+local npcType = Game.createNpcType("Gnomish Operative (Raiders)")
 local npcConfig = {}
 
 npcConfig.name = internalNpcName
@@ -12,10 +12,10 @@ npcConfig.walkRadius = 2
 
 npcConfig.outfit = {
 	lookType = 493,
-	lookHead = 79,
-	lookBody = 94,
-	lookLegs = 66,
-	lookFeet = 121,
+	lookHead = 82,
+	lookBody = 77,
+	lookLegs = 58,
+	lookFeet = 76,
 	lookAddons = 0,
 }
 
@@ -50,7 +50,7 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "Hello and welcome in the Gnomprona Gardens", i18nKey = "npc.gnomish_operative_resonating.greet_1" })
+keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "Hello and welcome in the Gnomprona Gardens" })
 keywordHandler:addAliasKeyword({ "hello" })
 
 npcHandler:setMessage(MESSAGE_GREET, "Hello and welcome in the Gnomprona Gardens")

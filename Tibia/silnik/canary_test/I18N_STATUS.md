@@ -278,6 +278,14 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `llathriel` - ukończono 2025-12-10 14:15
+- ✅ `lavirias` - ukończono 2025-12-10 14:15
+- ✅ `karith` - ukończono 2025-12-10 14:15
+- ✅ `irea` - ukończono 2025-12-10 14:15
+- ✅ `harsky` - ukończono 2025-12-10 14:15
+- ✅ `gnomish_operative_volcano` - ukończono 2025-12-10 14:15
+- ✅ `gnomish_operative_resonating` - ukończono 2025-12-10 14:15
+- ✅ `gnomish_operative_raiders` - ukończono 2025-12-10 14:15
 - ✅ `gnomish_operative_gt_m_01` - ukończono 2025-12-10 14:11
 - ✅ `gnomish_operative_cathing` - ukończono 2025-12-10 14:11
 - ✅ `gnominer` - ukończono 2025-12-10 14:11

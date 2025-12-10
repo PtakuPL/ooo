@@ -1110,3 +1110,13 @@ TWIG:html_copy/system/templates/guilds.delete_invite.html.twig
 TWIG:html_copy/system/templates/bans.html.twig
 TWIG:html_copy/system/templates/guilds.kick_player.html.twig
 TWIG:html_copy/system/templates/buttons.edit.html.twig
+TWIG:html_copy/system/templates/account.welcome_mail.html.twig
+TWIG:html_copy/system/templates/account.characters.change-comment.html.twig
+TWIG:html_copy/system/templates/admin.notepad.html.twig
+TWIG:html_copy/system/templates/admin.tools.teleport.html.twig
+TWIG:html_copy/system/templates/guilds.leave_guild.html.twig
+TWIG:html_copy/system/templates/error_box.html.twig
+TWIG:html_copy/system/templates/faq.form.html.twig
+TWIG:html_copy/system/templates/characters.html.twig
+TWIG:html_copy/system/templates/account.change-email.html.twig
+TWIG:html_copy/system/templates/houses.html.twig

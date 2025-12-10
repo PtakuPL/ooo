@@ -13,7 +13,7 @@
     "npclib": 1765413540.8837514,
     "client": 1765414010.556108,
     "sendtextmessage": 1765414033.2138329,
-    "keywordhandler": 1765410429.605224,
+    "keywordhandler": 1765414040.6771817,
     "twig": 1765410437.7434473,
     "php": 1765410826.4216452,
     "html": 1765410892.1257033
@@ -81,7 +81,7 @@
     },
     "keywordhandler": {
       "count": 0,
-      "timestamp": 1765409829.605218
+      "timestamp": 1765410440.6771722
     },
     "twig": {
       "count": 0,
@@ -104,7 +104,7 @@
     "php": 2,
     "client": 4,
     "sendtextmessage": 4,
-    "keywordhandler": 2,
+    "keywordhandler": 4,
     "twig": 2
   },
   "total_processed": {

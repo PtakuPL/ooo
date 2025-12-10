@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:47:13 UTC  
+> **Aktualizacja:** 2025-12-11 00:47:20 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -26,7 +26,7 @@
 | 🔑 Kluczy i18n | **29314** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#156** | - |
+| 🔄 Cykl | **#157** | - |
 
 ---
 
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   156 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   157 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 SENDTEXTMESSAGE                        │
+│ Kategoria: 🎒 KEYWORDHANDLER                         │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: sendtextmessage                                │
+│ 📊 Ostatnia aktywność: keywordhandler                                 │
 │ [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
 │ 0/1000 kluczy (0%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 27515 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:47:13                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:47:20                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -103,7 +103,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29314** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#156** | continuous mode |
+| 🔄 Cykli wykonanych | **#157** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,6 +111,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `keywordhandler` +0 kluczy @ 00:47:20
 - ⚡ `sendtextmessage` +0 kluczy @ 00:47:13
 - 🌍 `IT/items.json` +16877 kluczy @ 00:46:57
 - ⚡ `client` +0 kluczy @ 00:46:50
@@ -118,7 +119,6 @@
 - ⚡ `php` +0 kluczy @ 00:43:46
 - ⚡ `npclib` +0 kluczy @ 00:39:00
 - ⚡ `startup` +0 kluczy @ 00:38:54
-- ⚡ `modules` +0 kluczy @ 00:38:46
 
 
 ---
@@ -321,7 +321,7 @@
 | npclib | 51m | 4x | Progresywny backoff |
 | client | 59m | 4x | Progresywny backoff |
 | sendtextmessage | 59m | 4x | Progresywny backoff |
-| twig | 0m | 2x | Progresywny backoff |
+| keywordhandler | 59m | 4x | Progresywny backoff |
 | php | 6m | 2x | Progresywny backoff |
 | html | 7m | 2x | Progresywny backoff |
 
@@ -331,7 +331,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #156 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #157 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -374,7 +374,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:47:13  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:47:20  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

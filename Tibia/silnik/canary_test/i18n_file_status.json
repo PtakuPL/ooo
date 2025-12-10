@@ -108,7 +108,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:51:40.476967"
+      "completed_at": "2025-12-10T14:51:59.880968"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -218,7 +218,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:51:41.220312"
+      "completed_at": "2025-12-10T14:52:00.641604"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {
@@ -328,7 +328,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:51:42.910609"
+      "completed_at": "2025-12-10T14:52:02.810704"
     },
     "data-otservbr-global/npc/hamish.lua": {
       "stages": {
@@ -772,7 +772,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:51:36.227846"
+      "completed_at": "2025-12-10T14:51:55.692069"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -882,7 +882,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:51:37.508695"
+      "completed_at": "2025-12-10T14:51:56.950621"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -992,7 +992,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:51:38.940070"
+      "completed_at": "2025-12-10T14:51:58.294211"
     },
     "data-otservbr-global/npc/ghorza.lua": {
       "stages": {
@@ -1102,7 +1102,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T14:51:42.064462"
+      "completed_at": "2025-12-10T14:52:01.632766"
     }
   },
   "global_stats": {

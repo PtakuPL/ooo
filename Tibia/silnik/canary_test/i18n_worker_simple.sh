@@ -852,13 +852,35 @@ pattern_greet = r'(addGreetKeyword\s*\(\{[^}]+\}\s*,\s*\{[^}]*?)text\s*=\s*"([^"
 # Pattern dla addFarewellKeyword z text = "..." (bez i18nKey)
 pattern_farewell = r'(addFarewellKeyword\s*\(\{[^}]+\}\s*,\s*\{[^}]*?)text\s*=\s*"([^"]+)"([^}]*?\})'
 
-# Tylko transformuj jeśli nie ma jeszcze i18nKey
-if 'addGreetKeyword' in content and 'i18nKey' not in content:
-    content = re.sub(pattern_greet, replace_greet_with_i18n, content, flags=re.DOTALL)
+# Transformuj tylko te wpisy które nie mają jeszcze i18nKey
+def safe_replace_greet(match):
+    full = match.group(0)
+    if 'i18nKey' in full:
+        return full  # Już ma - nie transformuj
+    greet_counter[0] += 1
+    key = f"npc.{safe_name}.greet_{greet_counter[0]}"
+    before = match.group(1)
+    text = match.group(2)
+    after = match.group(3)
+    return f'{before}text = "{text}", i18nKey = "{key}"{after}'
+
+def safe_replace_farewell(match):
+    full = match.group(0)
+    if 'i18nKey' in full:
+        return full  # Już ma - nie transformuj
+    farewell_counter[0] += 1
+    key = f"npc.{safe_name}.farewell_{farewell_counter[0]}"
+    before = match.group(1)
+    text = match.group(2)
+    after = match.group(3)
+    return f'{before}text = "{text}", i18nKey = "{key}"{after}'
+
+if 'addGreetKeyword' in content:
+    content = re.sub(pattern_greet, safe_replace_greet, content, flags=re.DOTALL)
     total_transformed += greet_counter[0]
 
-if 'addFarewellKeyword' in content and 'i18nKey' not in content:
-    content = re.sub(pattern_farewell, replace_farewell_with_i18n, content, flags=re.DOTALL)
+if 'addFarewellKeyword' in content:
+    content = re.sub(pattern_farewell, safe_replace_farewell, content, flags=re.DOTALL)
     total_transformed += farewell_counter[0]
 
 greet_fare_total = greet_counter[0] + farewell_counter[0]

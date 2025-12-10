@@ -122,13 +122,13 @@
   },
   "translation_sync": {
     "current_lang": "de",
-    "current_category": "npc.json",
+    "current_category": "php.json",
     "languages_done": [],
     "stats": {
       "de": {
         "npc": 5334,
         "chatchannels": 8,
-        "total": 126552,
+        "total": 150306,
         "client": 14,
         "cpp": 15,
         "events": 5,
@@ -136,9 +136,10 @@
         "items": 13749,
         "libs": 5,
         "modules": 16,
-        "monsters": 4158
+        "monsters": 4158,
+        "php": 32
       }
     },
-    "last_sync": 1765406268.5002522
+    "last_sync": 1765406275.250684
   }
 }

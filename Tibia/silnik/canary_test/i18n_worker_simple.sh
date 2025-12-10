@@ -1340,6 +1340,396 @@ process_file() {
 }
 
 #===============================================================================
+# FUNKCJE PRZETWARZANIA KATEGORII (SCRIPTS, MONSTERS, SPELLS, ITEMS)
+#===============================================================================
+
+# Przetwarzaj pliki skryptów (sendTextMessage → klucze i18n)
+process_scripts_file() {
+    local file="$1"
+    local base=$(basename "$file" .lua)
+    local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
+    local json_file="$I18N_DIR/en/scripts.json"
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}📜 Processing script: $base${NC}"
+    
+    # Wyciągnij stringi z sendTextMessage
+    local count=0
+    while IFS= read -r text; do
+        [ -z "$text" ] && continue
+        [ ${#text} -lt 10 ] && continue
+        
+        local key="scripts.${safe}.msg_$((count + 1))"
+        
+        # Dodaj do JSON
+        python3 -c "
+import json
+try:
+    with open('$json_file') as f: d = json.load(f)
+except: d = {}
+d['$key'] = '''$text'''
+with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+        
+        count=$((count + 1))
+        log "   🔑 $key"
+    done < <(grep -oP 'sendTextMessage\s*\([^,]+,\s*"\K[^"]+' "$file" 2>/dev/null | head -20)
+    
+    # Oznacz jako przetworzony
+    echo "$file" >> "$PROCESSED_FILE"
+    
+    log "${GREEN}✅ Scripts: $count kluczy z $base${NC}"
+    return 0
+}
+
+# Przetwarzaj kategorię monsters
+process_monsters_category() {
+    local batch="${1:-10}"
+    local json_file="$I18N_DIR/en/monsters.json"
+    local count=0
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}👹 Processing monsters...${NC}"
+    
+    # Szukaj plików monsters w różnych lokalizacjach
+    for dir in data-otservbr-global/monster data-canary/monster; do
+        [ ! -d "$dir" ] && continue
+        
+        for file in $(find "$dir" -name "*.lua" -o -name "*.xml" 2>/dev/null | head -$batch); do
+            [ -f "$file" ] || continue
+            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
+            
+            local base=$(basename "$file" | sed 's/\.\(lua\|xml\)$//')
+            local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
+            
+            # Wyciągnij name i description
+            local name=$(grep -oP 'name\s*=\s*"\K[^"]+' "$file" 2>/dev/null | head -1)
+            local desc=$(grep -oP 'description\s*=\s*"\K[^"]+' "$file" 2>/dev/null | head -1)
+            
+            # Domyślnie użyj nazwy pliku jako name
+            [ -z "$name" ] && name=$(echo "$base" | tr '_' ' ' | sed 's/\b\(.\)/\u\1/g')
+            
+            if [ -n "$name" ]; then
+                python3 -c "
+import json
+try:
+    with open('$json_file') as f: d = json.load(f)
+except: d = {}
+d['monster.$safe.name'] = '''$name'''
+if '''$desc''':
+    d['monster.$safe.desc'] = '''$desc'''
+with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+                count=$((count + 1))
+                log "   👹 monster.$safe.name = $name"
+            fi
+            
+            echo "$file" >> "$PROCESSED_FILE"
+            [ "$count" -ge "$batch" ] && break
+        done
+        [ "$count" -ge "$batch" ] && break
+    done
+    
+    log "${GREEN}✅ Monsters: $count kluczy${NC}"
+}
+
+# Przetwarzaj kategorię spells
+process_spells_category() {
+    local batch="${1:-10}"
+    local json_file="$I18N_DIR/en/spells.json"
+    local count=0
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}✨ Processing spells...${NC}"
+    
+    for dir in data-otservbr-global/scripts/spells data/scripts/spells; do
+        [ ! -d "$dir" ] && continue
+        
+        for file in $(find "$dir" -name "*.lua" 2>/dev/null | head -$batch); do
+            [ -f "$file" ] || continue
+            grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null && continue
+            
+            local base=$(basename "$file" .lua)
+            local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
+            local name=$(echo "$base" | tr '_' ' ' | sed 's/\b\(.\)/\u\1/g')
+            
+            # Wyciągnij words (słowa do rzucenia spella)
+            local words=$(grep -oP 'words\s*=\s*"\K[^"]+' "$file" 2>/dev/null | head -1)
+            local desc=$(grep -oP 'description\s*=\s*"\K[^"]+' "$file" 2>/dev/null | head -1)
+            
+            python3 -c "
+import json
+try:
+    with open('$json_file') as f: d = json.load(f)
+except: d = {}
+d['spell.$safe.name'] = '''$name'''
+if '''$words''':
+    d['spell.$safe.words'] = '''$words'''
+if '''$desc''':
+    d['spell.$safe.desc'] = '''$desc'''
+with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
+" 2>/dev/null
+            
+            echo "$file" >> "$PROCESSED_FILE"
+            count=$((count + 1))
+            log "   ✨ spell.$safe.name = $name"
+            
+            [ "$count" -ge "$batch" ] && break
+        done
+        [ "$count" -ge "$batch" ] && break
+    done
+    
+    log "${GREEN}✅ Spells: $count kluczy${NC}"
+}
+
+# Przetwarzaj kategorię items (z XML)
+process_items_category() {
+    local batch="${1:-50}"
+    local json_file="$I18N_DIR/en/items.json"
+    local count=0
+    
+    [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    
+    log "${CYAN}🎒 Processing items...${NC}"
+    
+    # Items są głównie w XML
+    local items_xml="data/items/items.xml"
+    [ ! -f "$items_xml" ] && items_xml="data-otservbr-global/items/items.xml"
+    
+    if [ -f "$items_xml" ]; then
+        # Wyciągnij nazwy itemów z XML
+        python3 << ITEMSPY
+import json
+import re
+
+json_file = "$json_file"
+items_xml = "$items_xml"
+batch = $batch
+
+try:
+    with open(json_file) as f:
+        data = json.load(f)
+except:
+    data = {}
+
+existing_keys = len(data)
+
+try:
+    with open(items_xml, 'r', errors='ignore') as f:
+        content = f.read()
+    
+    # Znajdź wszystkie <item id="..." name="...">
+    items = re.findall(r'<item\s+id="(\d+)"[^>]*name="([^"]+)"', content)
+    
+    count = 0
+    for item_id, name in items:
+        if count >= batch:
+            break
+        key = f"item.{item_id}.name"
+        if key not in data:
+            data[key] = name
+            count += 1
+    
+    with open(json_file, 'w') as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    
+    print(f"Dodano {count} nowych itemów (razem: {len(data)})")
+except Exception as e:
+    print(f"Błąd: {e}")
+ITEMSPY
+    else
+        log "${YELLOW}⚠️ Brak pliku items.xml${NC}"
+    fi
+    
+    log "${GREEN}✅ Items: przetworzono${NC}"
+}
+
+#===============================================================================
+# AUTO TRANSLATE - Automatyczne tłumaczenie BEZ interakcji
+#===============================================================================
+# Kopiuje klucze EN do innych języków z prefiksem [LANG] lub używa prostych
+# tłumaczeń dla popularnych fraz.
+#===============================================================================
+auto_translate_keys() {
+    local target_lang="$1"
+    local json_file="$2"
+    local keys_count="$3"
+    
+    log "${CYAN}🌍 AUTO TRANSLATE: $target_lang <- $json_file${NC}"
+    
+    python3 << AUTOTRANSPY
+import json
+import os
+import re
+
+I18N_DIR = "i18n"
+target_lang = "$target_lang"
+json_file = "$json_file"
+
+# Prosty słownik tłumaczeń dla popularnych fraz
+SIMPLE_TRANSLATIONS = {
+    "pl": {
+        "Hello": "Witaj",
+        "Welcome": "Witamy",
+        "Goodbye": "Do widzenia",
+        "Thank you": "Dziękuję",
+        "Yes": "Tak",
+        "No": "Nie",
+        "Buy": "Kup",
+        "Sell": "Sprzedaj",
+        "Trade": "Handel",
+        "Help": "Pomoc",
+        "Quest": "Zadanie",
+        "Mission": "Misja",
+        "Gold": "Złoto",
+        "Player": "Gracz",
+        "Monster": "Potwór",
+        "Item": "Przedmiot",
+        "Spell": "Zaklęcie",
+        "Attack": "Atak",
+        "Defense": "Obrona",
+        "Health": "Zdrowie",
+        "Mana": "Mana",
+    },
+    "de": {
+        "Hello": "Hallo",
+        "Welcome": "Willkommen",
+        "Goodbye": "Auf Wiedersehen",
+        "Thank you": "Danke",
+        "Yes": "Ja",
+        "No": "Nein",
+        "Buy": "Kaufen",
+        "Sell": "Verkaufen",
+        "Trade": "Handel",
+        "Help": "Hilfe",
+        "Quest": "Quest",
+        "Mission": "Mission",
+        "Gold": "Gold",
+        "Player": "Spieler",
+        "Monster": "Monster",
+        "Item": "Gegenstand",
+        "Spell": "Zauber",
+    },
+    "es": {
+        "Hello": "Hola",
+        "Welcome": "Bienvenido",
+        "Goodbye": "Adiós",
+        "Thank you": "Gracias",
+        "Yes": "Sí",
+        "No": "No",
+        "Buy": "Comprar",
+        "Sell": "Vender",
+        "Trade": "Comercio",
+        "Help": "Ayuda",
+        "Quest": "Misión",
+        "Gold": "Oro",
+        "Player": "Jugador",
+        "Monster": "Monstruo",
+    },
+    "ru": {
+        "Hello": "Привет",
+        "Welcome": "Добро пожаловать",
+        "Goodbye": "До свидания",
+        "Thank you": "Спасибо",
+        "Yes": "Да",
+        "No": "Нет",
+        "Buy": "Купить",
+        "Sell": "Продать",
+        "Trade": "Торговля",
+        "Help": "Помощь",
+        "Quest": "Задание",
+        "Gold": "Золото",
+        "Player": "Игрок",
+        "Monster": "Монстр",
+    },
+    "pt": {
+        "Hello": "Olá",
+        "Welcome": "Bem-vindo",
+        "Goodbye": "Adeus",
+        "Thank you": "Obrigado",
+        "Yes": "Sim",
+        "No": "Não",
+        "Buy": "Comprar",
+        "Sell": "Vender",
+        "Trade": "Comércio",
+        "Help": "Ajuda",
+        "Quest": "Missão",
+        "Gold": "Ouro",
+        "Player": "Jogador",
+        "Monster": "Monstro",
+    }
+}
+
+def simple_translate(text, lang):
+    """Prosta zamiana znanych fraz"""
+    if lang not in SIMPLE_TRANSLATIONS:
+        return None
+    
+    result = text
+    for en, translated in SIMPLE_TRANSLATIONS[lang].items():
+        # Case-insensitive replace zachowując wielkość liter
+        pattern = re.compile(re.escape(en), re.IGNORECASE)
+        result = pattern.sub(translated, result)
+    
+    # Jeśli nic się nie zmieniło, zwróć None
+    if result == text:
+        return None
+    return result
+
+# Wczytaj EN jako źródło
+en_file = f"{I18N_DIR}/en/{json_file}"
+if not os.path.exists(en_file):
+    print(f"Brak pliku źródłowego: {en_file}")
+    exit(0)
+
+with open(en_file) as f:
+    en_data = json.load(f)
+
+# Wczytaj lub utwórz plik docelowy
+lang_file = f"{I18N_DIR}/{target_lang}/{json_file}"
+os.makedirs(os.path.dirname(lang_file), exist_ok=True)
+
+try:
+    with open(lang_file) as f:
+        lang_data = json.load(f)
+except:
+    lang_data = {}
+
+# Przetwórz klucze
+translated = 0
+placeholders = 0
+for key, en_text in en_data.items():
+    if key in lang_data:
+        # Sprawdź czy to placeholder
+        if not lang_data[key].startswith("["):
+            continue  # Już przetłumaczone
+    
+    # Spróbuj prostego tłumaczenia
+    simple = simple_translate(en_text, target_lang)
+    
+    if simple:
+        lang_data[key] = simple
+        translated += 1
+    else:
+        # Placeholder z kodem języka
+        lang_data[key] = f"[{target_lang.upper()}] {en_text}"
+        placeholders += 1
+
+# Zapisz
+lang_data = dict(sorted(lang_data.items()))
+with open(lang_file, 'w') as f:
+    json.dump(lang_data, f, indent=2, ensure_ascii=False)
+
+print(f"✅ {target_lang}/{json_file}: {translated} przetłumaczonych, {placeholders} placeholder'ów")
+AUTOTRANSPY
+    
+    log "${GREEN}✅ Auto-translate zakończone${NC}"
+}
+
+#===============================================================================
 # TRYB 2: TŁUMACZENIA - INTERAKTYWNY dla agenta LLM
 #===============================================================================
 # Agent LLM (Phi-4, GPT, Claude) uruchamia ten skrypt w terminalu.

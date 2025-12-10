@@ -10308,5 +10308,20 @@
   "item.32163.name": "green wooden candelabra",
   "item.32164.name": "blue wall hangings",
   "item.32165.name": "green wall hangings",
-  "item.32166.name": "red wall hangings"
+  "item.32166.name": "red wall hangings",
+  "item.32170.name": "inscribed red heart",
+  "item.32171.name": "inscribed green heart",
+  "item.32172.name": "inscribed blue heart",
+  "item.32176.name": "unknow item",
+  "item.32197.name": "ulcer probe",
+  "item.32198.name": "filled milk churn",
+  "item.32225.name": "scalpel",
+  "item.32226.name": "purifier for lost souls",
+  "item.32227.name": "lost soul",
+  "item.32228.name": "purified soul",
+  "item.32263.name": "unknow item",
+  "item.32264.name": "unknow item",
+  "item.32265.name": "unknow item",
+  "item.32266.name": "unknow item",
+  "item.32267.name": "unknow item"
 }

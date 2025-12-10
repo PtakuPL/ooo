@@ -107,13 +107,24 @@ StdModule.sayLocalized(npc, creature, "npc.alexander.greeting")
 **Plik:** `i18n_worker_simple.sh`
 
 **Data utworzenia:** 10 grudnia 2025
+**Aktualizacja do v2.0:** 10 grudnia 2025
 
-**Kluczowe decyzje projektowe:**
-1. **Prosty 8-etapowy pipeline** - każdy etap robi JEDNĄ rzecz
-2. **Używa istniejącego API** - `i18nKey` parameter w `StdModule.say`
-3. **JSON status** - pełne śledzenie postępu każdego pliku
-4. **Tryb ciągły** - `--continuous` dla pracy 24/7
-5. **Automatyczne pushe** - co cykl do GitHub
+**Kluczowe cechy v2.0:**
+1. **Multi-Mode** - Automatyczne przełączanie między trybami pracy
+2. **TRYB 1: MIGRATION** - 8-etapowy pipeline migracji kodu NPC
+3. **TRYB 2: TRANSLATION** - 6-etapowy pipeline tłumaczeń ze składniami
+4. **Dispatcher** - Automatycznie wybiera tryb na podstawie stanu projektu
+5. **Składnie** - Tłumaczenia podzielone na małe paczki (4 klucze na składnię)
+
+**Tryby pracy:**
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    DISPATCHER                                    │
+│  1. Czy są pliki NPC do migracji? → TRYB 1: MIGRATION           │
+│  2. Czy są klucze do przetłumaczenia? → TRYB 2: TRANSLATION     │
+│  3. Wszystko zrobione → IDLE                                     │
+└─────────────────────────────────────────────────────────────────┘
+```
 
 ---
 

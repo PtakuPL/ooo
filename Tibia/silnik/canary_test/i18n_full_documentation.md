@@ -23261,3 +23261,113 @@ Kategoria: npc
 Kategoria: npc
 
 ---
+
+## [2025-12-10 04:29:10] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/loui.lua`
+
+**Akcja:** Wyekstrahowano 36 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:29:14] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/edvard.lua`
+
+**Akcja:** Wyekstrahowano 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:29:16] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/eddy.lua`
+
+**Akcja:** Wyekstrahowano 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:29:26] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/ferus.lua`
+
+**Akcja:** Wyekstrahowano 23 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:29:33] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/a_wrinkled_bonelord.lua`
+
+**Akcja:** Wyekstrahowano 19 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:29:40] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/rahkem.lua`
+
+**Akcja:** Wyekstrahowano 30 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:29:48] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/captain_bluebear.lua`
+
+**Akcja:** Wyekstrahowano 27 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:29:51] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/uzon_back.lua`
+
+**Akcja:** Wyekstrahowano 7 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:29:52] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/legola.lua`
+
+**Akcja:** Wyekstrahowano 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:29:56] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/melian.lua`
+
+**Akcja:** Wyekstrahowano 23 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---

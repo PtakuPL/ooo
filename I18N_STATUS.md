@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 04:14:04 UTC  
+> **Aktualizacja:** 2025-12-10 04:28:28 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,9 +21,9 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **626** | ↑ |
-| ⏭️ Plików wykluczonych | **4813** | - |
-| 🔑 Kluczy i18n | **50694** | ↑ |
+| 📁 Plików przetworzonych | **674** | ↑ |
+| ⏭️ Plików wykluczonych | **4888** | - |
+| 🔑 Kluczy i18n | **50780** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
 | 🔄 Cykl | **#1** | - |
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | ✅ | 12693/13190 (96%) | 13190 |
+| 🧙 NPC Dialogs | ✅ | 12779/13190 (96%) | 13190 |
 | 📜 Lua Scripts | 🔄 | 713/1000 (71%) | 1000 |
 | 🎒 Items Database | 🔄 | 36972/40000 (92%) | 40000 |
 | 👹 Monsters | 🔄 | 100/500 (20%) | 500 |
@@ -79,14 +79,14 @@
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
 | **Plik** | `Cykl #1` |
-| **Szczegóły** | NPC:12693 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-10 04:13:35 |
+| **Szczegóły** | NPC:12779 Scripts:713 Items:36972 |
+| **Ostatnia aktualizacja** | 2025-12-10 04:28:02 |
 
 ### 📈 Statystyki sesji
 
 | Metryka | Wartość |
 |---------|----------|
-| Plików przetworzonych | 703 |
+| Plików przetworzonych | 743 |
 | Kluczy wyciągniętych | 0 |
 | Błędów | 0 |
 | Napraw zastosowanych | 0 |
@@ -156,9 +156,9 @@
 
 | Metryka | Wartość |
 |---------|----------|
-| 🔑 Kluczy | **12693** |
+| 🔑 Kluczy | **12779** |
 | 🎯 Cel | 13000 |
-| 📊 Postęp | 97% |
+| 📊 Postęp | 98% |
 | 📁 Plik | `i18n/en/npc.json` |
 
 </details>
@@ -267,7 +267,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.2** | 🟢 RUNNING | PID: 221687, Cykl #1 |
+| **Worker v4.2** | 🟢 RUNNING | PID: 298614, Cykl #1 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -276,7 +276,7 @@
 
 ```
 [✅] Items (36972)      ██████████████████░░  92%
-[✅] NPC (12693)        ███████████████████░  97%
+[✅] NPC (12779)        ███████████████████░  98%
 [🔄] Scripts (713)    ██████████████░░░░░░  71%
 [🔄] Monsters (100)   ████░░░░░░░░░░░░░░░░  20%
 [🔄] Spells (100)     ██████████░░░░░░░░░░  50%
@@ -288,5 +288,5 @@
 ---
 
 *🤖 Machine-readable: `i18n/status/worker_state.json`*  
-*📅 Auto-updated by Worker v4.2 | Last: 2025-12-10 04:14:05*  
+*📅 Auto-updated by Worker v4.2 | Last: 2025-12-10 04:28:29*  
 *🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)*

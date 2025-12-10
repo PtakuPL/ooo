@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-12-10 04:28:02",
+  "last_updated": "2025-12-10 04:29:57",
   "current_operation": {
     "type": "cycle",
     "phase": 1,
@@ -7,146 +7,146 @@
     "file": "Cykl #1",
     "action": "🎮 Canary Server - scripts",
     "status": "in_progress",
-    "details": "NPC:12779 Scripts:713 Items:36972"
+    "details": "NPC:12947 Scripts:713 Items:36972"
   },
   "recent_operations": [
     {
-      "time": "2025-12-10 04:28:02",
+      "time": "2025-12-10 04:29:57",
       "type": "cycle",
       "file": "Cykl #1",
       "action": "🎮 Canary Server - scripts",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:16:30",
+      "time": "2025-12-10 04:29:56",
       "type": "cycle_end",
       "file": "Cykl 1",
       "action": "Zakończono przetwarzanie",
       "status": "completed"
     },
     {
-      "time": "2025-12-10 04:16:30",
+      "time": "2025-12-10 04:29:56",
       "type": "process",
-      "file": "rafzan.lua",
+      "file": "melian.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-10 04:16:27",
+      "time": "2025-12-10 04:29:53",
       "type": "process",
-      "file": "rafzan.lua",
+      "file": "melian.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:16:27",
+      "time": "2025-12-10 04:29:53",
       "type": "process",
-      "file": "norman_the_foreman.lua",
+      "file": "an_apparition.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:16:26",
+      "time": "2025-12-10 04:29:53",
       "type": "process",
-      "file": "drog.lua",
+      "file": "gundralph.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:16:26",
+      "time": "2025-12-10 04:29:52",
       "type": "process",
-      "file": "an_imprisoned_goblin.lua",
+      "file": "maritima.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:16:26",
+      "time": "2025-12-10 04:29:52",
       "type": "process",
-      "file": "a_ghostly_woman.lua",
+      "file": "lavirias.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:29:52",
+      "type": "process",
+      "file": "fadil.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:29:52",
+      "type": "process",
+      "file": "a_ghostly_woman_ghostland.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:29:52",
+      "type": "process",
+      "file": "torence.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:29:52",
+      "type": "process",
+      "file": "legola.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-10 04:16:25",
+      "time": "2025-12-10 04:29:51",
       "type": "process",
-      "file": "a_ghostly_woman.lua",
+      "file": "legola.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:16:25",
+      "time": "2025-12-10 04:29:51",
       "type": "process",
-      "file": "robert.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:16:25",
-      "type": "process",
-      "file": "alternative_rock.lua",
+      "file": "uzon_back.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-10 04:16:24",
+      "time": "2025-12-10 04:29:49",
       "type": "process",
-      "file": "alternative_rock.lua",
+      "file": "uzon_back.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:16:24",
+      "time": "2025-12-10 04:29:49",
       "type": "process",
-      "file": "ross.lua",
+      "file": "eva.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:16:24",
+      "time": "2025-12-10 04:29:49",
       "type": "process",
-      "file": "rapanaio_isle_of_evil.lua",
-      "action": "Lua migration",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-10 04:16:22",
-      "type": "process",
-      "file": "rapanaio_isle_of_evil.lua",
+      "file": "cold_percht_sleigh.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:16:22",
+      "time": "2025-12-10 04:29:48",
       "type": "process",
-      "file": "telas_golem.lua",
+      "file": "willem.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:16:20",
+      "time": "2025-12-10 04:29:48",
       "type": "process",
-      "file": "tandros.lua",
+      "file": "shalmar.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:16:20",
+      "time": "2025-12-10 04:29:48",
       "type": "process",
-      "file": "gnome.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:16:20",
-      "type": "process",
-      "file": "maris_fenrock.lua",
-      "action": "Lua migration",
-      "status": "completed"
-    },
-    {
-      "time": "2025-12-10 04:16:18",
-      "type": "process",
-      "file": "maris_fenrock.lua",
+      "file": "black_bert.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     }
@@ -154,7 +154,7 @@
   "errors": [],
   "warnings": [],
   "stats": {
-    "files_this_session": 743,
+    "files_this_session": 753,
     "keys_this_session": 0,
     "errors_this_session": 0,
     "fixes_applied": 0

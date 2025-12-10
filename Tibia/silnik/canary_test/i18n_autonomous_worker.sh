@@ -1082,6 +1082,46 @@ is_processed() { grep -qF "$1" "$PROCESSED_FILE" 2>/dev/null; }
 mark_processed() { echo "$1" >> "$PROCESSED_FILE"; }
 mark_excluded() { echo "$1" >> "$EXCLUDED_FILE"; }
 
+# Atomowy zapis klucza do JSON (bezpieczny przy współbieżnym zapisie)
+add_key_to_json() {
+    local json_file="$1"
+    local key="$2"
+    local value="$3"
+    
+    # Używamy flock dla bezpieczeństwa współbieżnego
+    (
+        flock -x 200
+        python3 -c "
+import json, os, tempfile, shutil
+f='$json_file'
+k='''$key'''
+v='''$value'''
+
+# Wczytaj istniejący JSON
+d={}
+if os.path.exists(f) and os.path.getsize(f) > 2:
+    try:
+        with open(f, 'r') as fp:
+            d = json.load(fp)
+    except:
+        d = {}
+
+# Dodaj klucz
+d[k] = v
+
+# Zapisz atomowo (do pliku tymczasowego, potem mv)
+fd, tmp = tempfile.mkstemp(suffix='.json', dir=os.path.dirname(f))
+try:
+    with os.fdopen(fd, 'w') as fp:
+        json.dump(d, fp, indent=2, ensure_ascii=False)
+    shutil.move(tmp, f)
+except:
+    os.unlink(tmp)
+    raise
+" 2>/dev/null
+    ) 200>"${json_file}.lock"
+}
+
 get_file_type() {
     local file="$1"
     case "${file##*.}" in
@@ -1201,16 +1241,10 @@ migrate_lua_file() {
                     # Zamiana: npcHandler:say("tekst", npc, creature) → NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "key")
                     new_line=$(echo "$line" | sed "s|npcHandler:say(\s*\"[^\"]*\",\s*npc,\s*creature)|NPC_LIB.i18n.npcSay(npcHandler, npc, creature, \"${key}\")|")
                     
-                    python3 -c "
-import json, os
-f='$json_file'
-d=json.load(open(f)) if os.path.exists(f) and os.path.getsize(f) > 2 else {}
-d['$key']='''$text'''
-json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
-" 2>/dev/null
+                    add_key_to_json "$json_file" "$key" "$text"
                     
                     transformed=$((transformed + 1))
-                    log_info "      �� $key"
+                    log_info "      🔑 $key"
                 fi
             fi
             
@@ -1223,13 +1257,7 @@ json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
                     
                     new_line=$(echo "$line" | sed "s|npcHandler:say(\s*{\s*\"[^\"]*\"[^}]*},\s*npc,\s*creature)|NPC_LIB.i18n.npcSay(npcHandler, npc, creature, \"${key}\")|")
                     
-                    python3 -c "
-import json, os
-f='$json_file'
-d=json.load(open(f)) if os.path.exists(f) and os.path.getsize(f) > 2 else {}
-d['$key']='''$text'''
-json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
-" 2>/dev/null
+                    add_key_to_json "$json_file" "$key" "$text"
                     
                     transformed=$((transformed + 1))
                     log_info "      🔑 $key"
@@ -1243,13 +1271,7 @@ json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
                     local key="npc.${safe_name}.stdmod_${key_counter}"
                     key_counter=$((key_counter + 1))
                     
-                    python3 -c "
-import json, os
-f='$json_file'
-d=json.load(open(f)) if os.path.exists(f) and os.path.getsize(f) > 2 else {}
-d['$key']='''$text'''
-json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
-" 2>/dev/null
+                    add_key_to_json "$json_file" "$key" "$text"
                     
                     extracted=$((extracted + 1))
                     log_info "      📝 StdModule (ekstrakcja): $key"
@@ -1268,13 +1290,7 @@ json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
                     
                     new_line=$(echo "$line" | sed "s|player:sendTextMessage(\s*\([^,]*\),\s*\"[^\"]*\")|player:sendLocalizedTextMessage(\1, \"${key}\")|")
                     
-                    python3 -c "
-import json, os
-f='$json_file'
-d=json.load(open(f)) if os.path.exists(f) and os.path.getsize(f) > 2 else {}
-d['$key']='$text'
-json.dump(d, open(f,'w'), indent=2, ensure_ascii=False)
-" 2>/dev/null
+                    add_key_to_json "$json_file" "$key" "$text"
                     
                     transformed=$((transformed + 1))
                     log_info "      🔑 Script: $key"

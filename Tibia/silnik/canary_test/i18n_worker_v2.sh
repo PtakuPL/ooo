@@ -690,7 +690,7 @@ PYTRANSLATE
     
     # ETAP 6: SYNC
     log_stage "6/6" "SYNC: Aktualizacja statusu"
-    python3 << 'PYSYNC'
+    python3 << PYSYNC
 import json
 from datetime import datetime
 

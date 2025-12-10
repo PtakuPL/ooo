@@ -708,5 +708,10 @@
   "item.2145.name": "slits",
   "item.2146.name": "blades",
   "item.2147.name": "strange holes",
-  "item.2148.name": "spikes"
+  "item.2148.name": "spikes",
+  "item.2149.name": "RESERVED SPRITE",
+  "item.2150.name": "RESERVED SPRITE",
+  "item.2151.name": "RESERVED SPRITE",
+  "item.2152.name": "stone pillar",
+  "item.2153.name": "marble pillar"
 }

@@ -633,5 +633,10 @@
   "item.1983.name": "stone coffin",
   "item.1984.name": "stone coffin",
   "item.1990.name": "RESERVED SPRITE",
-  "item.1991.name": "RESERVED SPRITE"
+  "item.1991.name": "RESERVED SPRITE",
+  "item.1992.name": "sarcophagus",
+  "item.1993.name": "sarcophagus",
+  "item.1994.name": "sarcophagus",
+  "item.1995.name": "sarcophagus",
+  "item.2001.name": "unlit campfire"
 }

@@ -1152,16 +1152,7 @@ print(f"   Składni: {total_substages}")
 print(f"[4/6] TRANSLATE_BATCH: Tłumaczenie")
 
 #===============================================================================
-# INSTRUKCJE DLA AGENTA LLM - TŁUMACZENIE
-#===============================================================================
-# Agent LLM (np. GPT, Claude, Phi) powinien:
-# 1. Przetłumaczyć CAŁE zdanie na język docelowy
-# 2. Zachować komendy w 'apostrofach' BEZ TŁUMACZENIA (np. 'trade', 'job', 'yes')
-# 3. Zachować zmienne w {nawiasach} bez zmian (np. {player}, {amount})
-# 4. Zachować formatowanie |PIPE| bez zmian (np. |PLAYERNAME|)
-# 5. Tłumaczyć naturalnie, zachowując ton i styl NPC
-#===============================================================================
-
+# Słownik nazw języków
 LANG_NAMES = {
     "pl": "polski", "de": "niemiecki", "es": "hiszpański", "pt": "portugalski",
     "fr": "francuski", "it": "włoski", "ru": "rosyjski", "nl": "holenderski",
@@ -1170,29 +1161,6 @@ LANG_NAMES = {
     "bg": "bułgarski", "el": "grecki", "tr": "turecki", "uk": "ukraiński",
     "zh": "chiński (uproszczony)", "ja": "japoński", "ko": "koreański", "ar": "arabski"
 }
-
-# Generuj plik z promptem dla LLM
-prompt_file = f"{i18n_dir}/translate_prompt_{target_lang}.md"
-with open(prompt_file, "w") as pf:
-    pf.write(f"# 🌍 PROMPT TŁUMACZENIA NA JĘZYK: {LANG_NAMES.get(target_lang, target_lang).upper()}\n\n")
-    pf.write(f"## Instrukcje dla agenta LLM\n\n")
-    pf.write(f"Przetłumacz poniższe teksty z angielskiego na **{LANG_NAMES.get(target_lang, target_lang)}**.\n\n")
-    pf.write(f"### ⚠️ ZASADY (BARDZO WAŻNE!):\n")
-    pf.write(f"1. **Komendy w 'apostrofach'** - NIE TŁUMACZ! (np. 'trade', 'job', 'yes', 'no', 'buy', 'sell')\n")
-    pf.write("2. **Zmienne w {nawiasach}** - zostaw bez zmian (np. {player}, {amount}, {npc})\n")
-    pf.write(f"3. **Formatowanie |PIPE|** - zostaw bez zmian (np. |PLAYERNAME|, |TIME|)\n")
-    pf.write(f"4. Tłumacz naturalnie, zachowując ton i styl postaci NPC\n\n")
-    pf.write(f"### Przykład poprawnego tłumaczenia:\n")
-    pf.write("```\n")
-    pf.write("EN: Hello adventurer! Ask me about 'trade' or 'job'. I have {count} items.\n")
-    if target_lang == "pl":
-        pf.write("PL: Witaj przybyszu! Zapytaj mnie o 'trade' lub 'job'. Mam {count} przedmiotów.\n")
-    elif target_lang == "de":
-        pf.write("DE: Hallo Abenteurer! Frag mich nach 'trade' oder 'job'. Ich habe {count} Gegenstände.\n")
-    else:
-        pf.write(f"{target_lang.upper()}: [TWOJE TŁUMACZENIE TUTAJ]\n")
-    pf.write("```\n\n")
-    pf.write(f"---\n\n")
     pf.write(f"## Teksty do przetłumaczenia ({len(keys_batch)} kluczy)\n\n")
 
 # Przetwórz interaktywnie - agent wpisuje tłumaczenia

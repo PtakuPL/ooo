@@ -2459,9 +2459,10 @@ if key not in d:
         
         echo "$file" >> "$PROCESSED_FILE"
         [ "$count" -ge "$batch" ] && break
-    done
+    done < <(find src -name "*.cpp" -o -name "*.hpp" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
     
     log "${GREEN}✅ C++: $count plików${NC}"
+    echo "$count"
 }
 
 # Przetwarzaj kategorię OTClient (testyy)

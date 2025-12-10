@@ -896,8 +896,9 @@ for i, text in enumerate(texts_npcsay, 1):
     # Wyczyść ewentualne newline'y w tekście (artifact zawijania linii)
     text_clean = ' '.join(text.split())
     
-    # Pomiń konkatenacje i krótkie teksty
-    if '..' not in text_clean and len(text_clean) >= 5:
+    # Pomiń konkatenacje Lua (np. " .. variable .. ") ale NIE wielokropki (...)
+    # Konkatenacja Lua to " .. " ze spacjami, wielokropek to "..."
+    if ' .. ' not in text_clean and len(text_clean) >= 5:
         key = f"npc.$safe.say_{i}"
         if key not in data:
             data[key] = text_clean

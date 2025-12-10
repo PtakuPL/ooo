@@ -60,7 +60,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "measurements") then
 		if player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission07) >= 1 and player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.MeasurementsOlrik) ~= 1 then
-			npcHandler:say("My measurements? Listen, lets make that a bit more exciting ... No, no, not what you think! I mean let's gamble. I will roll a dice. If I roll a 6 you win and I'll tell you what you need to know, else I win and get 5 gold. Deal? ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.olrik.say_1")
 			npcHandler:setTopic(playerId, 1)
 		else
 			npcHandler:say("...", npc, creature)

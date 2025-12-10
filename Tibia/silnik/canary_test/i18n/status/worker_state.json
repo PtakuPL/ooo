@@ -1,17 +1,17 @@
 {
   "schema_version": "2.1",
-  "last_updated": "2025-12-10T04:32:30+01:00",
+  "last_updated": "2025-12-10T04:34:35+01:00",
   "worker": {
     "version": "4.2",
     "status": "running",
-    "mode": "migration",
-    "cycle": 1,
+    "mode": "extraction",
+    "cycle": 2,
     "files_per_cycle": 10,
     "pid": 385540
   },
   "global_progress": {
-    "total_files_processed": 717,
-    "total_files_excluded": 5038,
+    "total_files_processed": 741,
+    "total_files_excluded": 5102,
     "total_keys": 53385,
     "total_languages": 53,
     "total_conflicts": 0
@@ -31,28 +31,28 @@
   },
   "recent_files": [
   {
-    "file": "buddel_helheim.lua",
-    "time": "04:32:30",
+    "file": "yoem.lua",
+    "time": "04:34:35",
     "status": "success"
   },
   {
-    "file": "maealil.lua",
-    "time": "04:32:30",
+    "file": "gamon.lua",
+    "time": "04:34:35",
     "status": "success"
   },
   {
-    "file": "rock_with_a_soft_spot.lua",
-    "time": "04:32:30",
+    "file": "valentina.lua",
+    "time": "04:34:35",
     "status": "success"
   },
   {
-    "file": "zedrulon_the_fallen.lua",
-    "time": "04:32:30",
+    "file": "kjesse.lua",
+    "time": "04:34:35",
     "status": "success"
   },
   {
-    "file": "dane.lua",
-    "time": "04:32:30",
+    "file": "buddel_tyrsung.lua",
+    "time": "04:34:35",
     "status": "success"
   }
 ]

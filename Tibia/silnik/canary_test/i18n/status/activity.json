@@ -1,152 +1,152 @@
 {
-  "last_updated": "2025-12-10 04:33:49",
+  "last_updated": "2025-12-10 04:36:01",
   "current_operation": {
     "type": "cycle_end",
     "phase": 1,
     "category": "scripts",
-    "file": "Cykl 1",
+    "file": "Cykl 2",
     "action": "Zakończono przetwarzanie",
     "status": "completed",
     "details": "10 plików"
   },
   "recent_operations": [
     {
-      "time": "2025-12-10 04:33:49",
+      "time": "2025-12-10 04:36:01",
       "type": "cycle_end",
-      "file": "Cykl 1",
+      "file": "Cykl 2",
       "action": "Zakończono przetwarzanie",
       "status": "completed"
     },
     {
-      "time": "2025-12-10 04:33:49",
+      "time": "2025-12-10 04:36:01",
       "type": "process",
-      "file": "buddel_tyrsung.lua",
+      "file": "captain_greyhound.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-10 04:33:47",
+      "time": "2025-12-10 04:35:59",
       "type": "process",
-      "file": "buddel_tyrsung.lua",
+      "file": "captain_greyhound.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:33:47",
+      "time": "2025-12-10 04:35:59",
       "type": "process",
-      "file": "messenger_of_heaven.lua",
+      "file": "old_rock_boy.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:33:47",
+      "time": "2025-12-10 04:35:59",
       "type": "process",
-      "file": "gnomish_operative_gt-m-01.lua",
+      "file": "robin.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:33:47",
+      "time": "2025-12-10 04:35:59",
       "type": "process",
-      "file": "kjesse.lua",
+      "file": "allen.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:35:59",
+      "type": "process",
+      "file": "nilsor.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:35:59",
+      "type": "process",
+      "file": "rapanaio_boat.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-10 04:33:45",
+      "time": "2025-12-10 04:35:58",
       "type": "process",
-      "file": "kjesse.lua",
+      "file": "rapanaio_boat.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:33:45",
+      "time": "2025-12-10 04:35:58",
       "type": "process",
-      "file": "soilance.lua",
+      "file": "znozel.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:33:45",
+      "time": "2025-12-10 04:35:58",
       "type": "process",
-      "file": "shadowpunch.lua",
+      "file": "ulrik.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:33:45",
+      "time": "2025-12-10 04:35:58",
       "type": "process",
-      "file": "valentina.lua",
+      "file": "a_drillworm.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:35:58",
+      "type": "process",
+      "file": "humnog_the_guard.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:35:58",
+      "type": "process",
+      "file": "graham.lua",
+      "action": "Przetwarzanie lua",
+      "status": "in_progress"
+    },
+    {
+      "time": "2025-12-10 04:35:58",
+      "type": "process",
+      "file": "olrik.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-10 04:33:44",
+      "time": "2025-12-10 04:35:57",
       "type": "process",
-      "file": "valentina.lua",
+      "file": "olrik.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:33:44",
+      "time": "2025-12-10 04:35:57",
       "type": "process",
-      "file": "hawkyr.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:33:44",
-      "type": "process",
-      "file": "boveas.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:33:44",
-      "type": "process",
-      "file": "gamon.lua",
+      "file": "luna.lua",
       "action": "Lua migration",
       "status": "completed"
     },
     {
-      "time": "2025-12-10 04:33:42",
+      "time": "2025-12-10 04:35:56",
       "type": "process",
-      "file": "gamon.lua",
+      "file": "luna.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:33:42",
+      "time": "2025-12-10 04:35:55",
       "type": "process",
-      "file": "a_tainted_soul.lua",
+      "file": "kihil_the_guard.lua",
       "action": "Przetwarzanie lua",
       "status": "in_progress"
     },
     {
-      "time": "2025-12-10 04:33:42",
+      "time": "2025-12-10 04:35:55",
       "type": "process",
-      "file": "paolo.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:33:40",
-      "type": "process",
-      "file": "nipuna.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:33:40",
-      "type": "process",
-      "file": "yanni.lua",
-      "action": "Przetwarzanie lua",
-      "status": "in_progress"
-    },
-    {
-      "time": "2025-12-10 04:33:40",
-      "type": "process",
-      "file": "yoem.lua",
+      "file": "chemar.lua",
       "action": "Lua migration",
       "status": "completed"
     }
@@ -154,7 +154,7 @@
   "errors": [],
   "warnings": [],
   "stats": {
-    "files_this_session": 798,
+    "files_this_session": 818,
     "keys_this_session": 0,
     "errors_this_session": 0,
     "fixes_applied": 0

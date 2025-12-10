@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 04:32:29 UTC  
+> **Aktualizacja:** 2025-12-10 04:34:34 UTC  
 > **Worker:** v4.0 | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **717** | ↑ |
-| ⏭️ Plików wykluczonych | **5038** | - |
+| 📁 Plików przetworzonych | **741** | ↑ |
+| ⏭️ Plików wykluczonych | **5102** | - |
 | 🔑 Kluczy i18n | **51187** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#1** | - |
+| 🔄 Cykl | **#2** | - |
 
 ---
 
@@ -78,15 +78,15 @@
 |----------|----------|
 | **Status** | 🔄 in_progress |
 | **Operacja** | 🎮 Canary Server - scripts |
-| **Plik** | `Cykl #1` |
+| **Plik** | `Cykl #2` |
 | **Szczegóły** | NPC:13186 Scripts:713 Items:36972 |
-| **Ostatnia aktualizacja** | 2025-12-10 04:32:03 |
+| **Ostatnia aktualizacja** | 2025-12-10 04:34:08 |
 
 ### 📈 Statystyki sesji
 
 | Metryka | Wartość |
 |---------|----------|
-| Plików przetworzonych | 778 |
+| Plików przetworzonych | 798 |
 | Kluczy wyciągniętych | 0 |
 | Błędów | 0 |
 | Napraw zastosowanych | 0 |
@@ -267,7 +267,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| **Worker v4.2** | 🟢 RUNNING | PID: 385540, Cykl #1 |
+| **Worker v4.2** | 🟢 RUNNING | PID: 385540, Cykl #2 |
 | **Guardian v2.0** | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -288,5 +288,5 @@
 ---
 
 *🤖 Machine-readable: `i18n/status/worker_state.json`*  
-*📅 Auto-updated by Worker v4.2 | Last: 2025-12-10 04:32:30*  
+*📅 Auto-updated by Worker v4.2 | Last: 2025-12-10 04:34:35*  
 *🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)*

@@ -4168,5 +4168,7 @@
   "npc.flickering_soul.say_14": "His avatar might be destroyed for now and it'd grip on Zarganash considerably weakened. Yet he burrowed to deep into the essence of this realm to be annihilated this easy.",
   "npc.flickering_soul.say_15": "I despised my followers for their petty agendas and for their limited vision of my own goals and personality.",
   "npc.flickering_soul.say_16": "I have cleansed you from the taints that you carried with you. You are now free from the burden that you should not have to bear.",
-  "npc.flickering_soul.say_17": "You are not tainted by the darkness of the world. You are pure and free from the burdens that others carry."
+  "npc.flickering_soul.say_17": "You are not tainted by the darkness of the world. You are pure and free from the burdens that others carry.",
+  "npc.amarie.greet_1": "Greetings, |PLAYERNAME|.",
+  "npc.amarie.farewell_1": "Good bye, |PLAYERNAME|."
 }

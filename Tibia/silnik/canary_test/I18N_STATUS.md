@@ -278,6 +278,7 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `amarie` - ukończono 2025-12-10 12:52
 - ✅ `frederik` - ukończono 2025-12-10 12:20
 - ✅ `frans` - ukończono 2025-12-10 12:20
 - ✅ `chuckles` - ukończono 2025-12-10 12:20

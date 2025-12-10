@@ -3232,7 +3232,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:52:35.876107"
+      "completed_at": "2025-12-10T12:52:47.038128"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -3337,7 +3337,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:52:36.901597"
+      "completed_at": "2025-12-10T12:52:48.042698"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -3442,7 +3442,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:52:38.016260"
+      "completed_at": "2025-12-10T12:52:49.986733"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -3547,7 +3547,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:52:39.303502"
+      "completed_at": "2025-12-10T12:52:51.305588"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -3652,7 +3652,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-10T12:52:39.939087"
+      "completed_at": "2025-12-10T12:52:52.146946"
     },
     "data-otservbr-global/npc/amarie.lua": {
       "stages": {
@@ -3681,24 +3681,36 @@
         },
         "4_transformation": {
           "status": "completed",
-          "transformed": 0,
+          "transformed": 1,
           "stdmod_transformed": 0,
           "npcsay_transformed": 0
         },
         "5_extraction_en": {
           "status": "completed",
-          "keys_added": 0,
+          "keys_added": 2,
           "stdmod_keys": 0,
           "npcsay_keys": 0,
-          "greet_keys": 0,
-          "farewell_keys": 0
+          "greet_keys": 1,
+          "farewell_keys": 1
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [
+            "pl",
+            "de",
+            "es",
+            "pt",
+            "fr",
+            "it",
+            "ru"
+          ],
+          "keys_per_lang": 2,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
         },
         "7_validation": {
           "status": "completed",
           "errors": [],
-          "warnings": [
-            "Brak i18nKey w pliku Lua"
-          ],
+          "warnings": [],
           "valid_langs": [
             "zh_TW",
             "fa",
@@ -3754,15 +3766,19 @@
             "mk",
             "hr"
           ],
-          "keys_in_lua": 0,
+          "keys_in_lua": 1,
           "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
         }
       },
-      "overall_status": "in_progress"
+      "overall_status": "completed",
+      "completed_at": "2025-12-10T12:52:44.529713"
     }
   },
   "global_stats": {
-    "files_completed": 32,
+    "files_completed": 33,
     "total_keys": 0
   },
   "translation_status": {

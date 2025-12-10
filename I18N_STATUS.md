@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 12:52:40 UTC  
+> **Aktualizacja:** 2025-12-10 12:52:52 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -21,12 +21,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **32** | ↑ |
+| 📁 Plików przetworzonych | **33** | ↑ |
 | ⏭️ Plików wykluczonych | **721** | - |
-| 🔑 Kluczy i18n | **4170** | ↑ |
+| 🔑 Kluczy i18n | **4172** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#157** | - |
+| 🔄 Cykl | **#158** | - |
 
 ---
 
@@ -39,7 +39,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 4170/15000 (28%) | 15000 |
+| 🧙 NPC Dialogs | 🔄 | 4172/15000 (28%) | 15000 |
 | 📜 Lua Scripts | ⏳ | 0/1000 (0%) | 1000 |
 | 🎒 Items Database | ⏳ | 0/40000 (0%) | 40000 |
 | 👹 Monsters | ⏳ | 0/500 (0%) | 500 |
@@ -76,7 +76,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   157 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   158 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      MIGRATION (8 etapów)                     │
@@ -84,11 +84,11 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Postęp migracji NPC:                                        │
 │ [██████████████████████████████████████████████████] │
-│ 297/297 plików (100%)                                          │
+│ 298/298 plików (100%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Pozostało: 0 plików NPC                              │
 │ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 12:52:40                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-10 12:52:52                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -98,11 +98,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przetworzonych | **32** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **32** (297 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **4170** | we wszystkich kategoriach |
+| 📁 Plików przetworzonych | **33** | z i18n_file_status.json |
+| ✅ NPC zmigrowanych | **33** (298 z i18nKey) | z 1026 plików NPC |
+| 🔑 Kluczy wyciągniętych | **4172** | we wszystkich kategoriach |
 | 🌍 Języków z danymi | **8**/53 | de, en, es, fr, it... |
-| 🔄 Cykli wykonanych | **#157** | continuous mode |
+| 🔄 Cykli wykonanych | **#158** | continuous mode |
 | ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -173,12 +173,12 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 4170 |
+| 🔑 Kluczy | 4172 |
 | 🎯 Cel | 15000 |
 | 📊 Postęp | 28% |
 | 📁 Plik | i18n/en/npc.json |
 | 📁 Plików NPC | 1026 |
-| ✅ Zmigrowanych | 297 |
+| ✅ Zmigrowanych | 298 |
 | 🔄 Do migracji | 0 |
 
 </details>
@@ -273,7 +273,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #157 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #158 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -282,7 +282,7 @@
 
 ```
 [⏳] Items (0)      ░░░░░░░░░░░░░░░░░░░░  0%
-[🔄] NPC (4170)            █████░░░░░░░░░░░░░░░  28%
+[🔄] NPC (4172)            █████░░░░░░░░░░░░░░░  28%
 [⏳] Scripts (0)      ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Monsters (0)    ░░░░░░░░░░░░░░░░░░░░  0%
 [⏳] Spells (0)       ░░░░░░░░░░░░░░░░░░░░  0%
@@ -294,7 +294,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 12:52:40  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 12:52:52  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
@@ -306,11 +306,11 @@
 - ✅ `chuckles` - ukończono 2025-12-10 12:52
 - ✅ `battlemart` - ukończono 2025-12-10 12:52
 - ✅ `alaistar` - ukończono 2025-12-10 12:52
+- ✅ `amarie` - ukończono 2025-12-10 12:52
 - ✅ `flickering_soul` - ukończono 2025-12-10 12:18
 - ✅ `zarak` - ukończono 2025-12-10 11:31
 - ✅ `woblin` - ukończono 2025-12-10 11:31
 - ✅ `willie` - ukończono 2025-12-10 11:31
-- ✅ `wentworth` - ukończono 2025-12-10 11:31
 
 ---
 

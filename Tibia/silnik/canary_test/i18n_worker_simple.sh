@@ -1992,12 +1992,12 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
         BATCH="${2:-5}"  # Ile plików na batch (domyślnie 5)
         DELAY="${3:-4}" # Przerwa między batchami w sekundach (domyślnie 4)
         
-        echo "╔════════════════════════════════════════════════════════════╗"
-        echo "║   I18N WORKER v2.0 - TRYB CIĄGŁY (Multi-Mode)             ║"
-        echo "║   PID: $$                                                  ║"
-        echo "║   Batch: $BATCH plików | Przerwa: ${DELAY}s                ║"
-        echo "║   Tryby: MIGRATION → TRANSLATION → IDLE                   ║"
-        echo "╚════════════════════════════════════════════════════════════╝"
+        echo "╔════════════════════════════════════════════════════════════════════╗"
+        echo "║   I18N WORKER v3.0 - FULL AUTONOMOUS (24/7)                        ║"
+        echo "║   PID: $$                                                          ║"
+        echo "║   Batch: $BATCH plików | Przerwa: ${DELAY}s                        ║"
+        echo "║   Tryby: NPC → SCRIPTS → MONSTERS → ITEMS → AUTO_TRANSLATE        ║"
+        echo "╚════════════════════════════════════════════════════════════════════╝"
         echo ""
         echo "Aby zatrzymać: kill $$ lub Ctrl+C"
         echo ""
@@ -2017,55 +2017,105 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             # Użyj dispatchera do wyboru trybu
             MODE_RESULT=$(select_work_mode)
             MODE_TYPE=$(echo "$MODE_RESULT" | cut -d: -f1)
-            MODE_ARG=$(echo "$MODE_RESULT" | cut -d: -f2)
+            MODE_CAT=$(echo "$MODE_RESULT" | cut -d: -f2)
             MODE_COUNT=$(echo "$MODE_RESULT" | cut -d: -f3)
+            MODE_EXTRA=$(echo "$MODE_RESULT" | cut -d: -f4)
             
-            echo "📋 Dispatcher: $MODE_TYPE (arg: $MODE_ARG, count: ${MODE_COUNT:-0})"
+            echo "📋 Dispatcher: $MODE_TYPE | Kategoria: $MODE_CAT | Ilość: ${MODE_COUNT:-0}"
             echo ""
             
             case "$MODE_TYPE" in
                 MIGRATION)
-                    echo "🔧 TRYB 1: MIGRACJA ($MODE_ARG plików do zrobienia)"
-                    COUNT=0
-                    for f in data-otservbr-global/npc/*.lua; do
-                        NEEDS_WORK=false
-                        
-                        # Sprawdź StdModule.say bez i18nKey
-                        if grep -q "StdModule\.say" "$f" 2>/dev/null; then
-                            if ! grep -q "i18nKey" "$f" 2>/dev/null; then
-                                if grep -q 'text = "' "$f" 2>/dev/null; then
-                                    NEEDS_WORK=true
+                    echo "🔧 TRYB: MIGRACJA kategorii '$MODE_CAT' ($MODE_COUNT plików do zrobienia)"
+                    
+                    # Wywołaj odpowiednią funkcję migracji dla kategorii
+                    case "$MODE_CAT" in
+                        npc)
+                            echo "   🧙 Przetwarzam NPC..."
+                            COUNT=0
+                            for f in data-otservbr-global/npc/*.lua data-canary/npc/*.lua 2>/dev/null; do
+                                [ -f "$f" ] || continue
+                                NEEDS_WORK=false
+                                
+                                if grep -q "StdModule\.say" "$f" 2>/dev/null; then
+                                    if ! grep -q "i18nKey" "$f" 2>/dev/null; then
+                                        if grep -q 'text = "' "$f" 2>/dev/null; then
+                                            NEEDS_WORK=true
+                                        fi
+                                    fi
                                 fi
-                            fi
-                        fi
-                        
-                        # Sprawdź npcHandler:say("...") bez NPC_LIB.i18n.npcSay
-                        if grep -qE 'npcHandler:say\(\s*"[^"]{5,}"' "$f" 2>/dev/null; then
-                            if ! grep -q "NPC_LIB.i18n.npcSay" "$f" 2>/dev/null; then
-                                NEEDS_WORK=true
-                            fi
-                        fi
-                        
-                        if [ "$NEEDS_WORK" = "true" ]; then
-                            process_file "$f"
-                            COUNT=$((COUNT + 1))
-                            if [ "$COUNT" -ge "$BATCH" ]; then
-                                break
-                            fi
-                        fi
-                    done
-                    echo "📊 Zmigrowano: $COUNT plików"
+                                
+                                if grep -qE 'npcHandler:say\(\s*"[^"]{5,}"' "$f" 2>/dev/null; then
+                                    if ! grep -q "NPC_LIB.i18n.npcSay" "$f" 2>/dev/null; then
+                                        NEEDS_WORK=true
+                                    fi
+                                fi
+                                
+                                if [ "$NEEDS_WORK" = "true" ]; then
+                                    process_file "$f"
+                                    COUNT=$((COUNT + 1))
+                                    [ "$COUNT" -ge "$BATCH" ] && break
+                                fi
+                            done
+                            echo "   📊 NPC: Zmigrowano $COUNT plików"
+                            ;;
+                        scripts)
+                            echo "   📜 Przetwarzam SCRIPTS..."
+                            COUNT=0
+                            for f in $(find data-otservbr-global/scripts data/scripts -name "*.lua" 2>/dev/null | head -100); do
+                                [ -f "$f" ] || continue
+                                # Pomiń już przetworzone
+                                grep -qF "$f" "$PROCESSED_FILE" 2>/dev/null && continue
+                                
+                                # Szukaj sendTextMessage
+                                if grep -qE 'sendTextMessage\s*\([^,]+,\s*"[^"]{10,}"' "$f" 2>/dev/null; then
+                                    if ! grep -q "sendLocalizedTextMessage" "$f" 2>/dev/null; then
+                                        process_scripts_file "$f"
+                                        COUNT=$((COUNT + 1))
+                                        [ "$COUNT" -ge "$BATCH" ] && break
+                                    fi
+                                fi
+                            done
+                            echo "   📊 Scripts: Przetworzono $COUNT plików"
+                            ;;
+                        monsters)
+                            echo "   👹 Przetwarzam MONSTERS..."
+                            COUNT=0
+                            process_monsters_category "$BATCH"
+                            echo "   📊 Monsters: Dodano klucze"
+                            ;;
+                        spells)
+                            echo "   ✨ Przetwarzam SPELLS..."
+                            COUNT=0
+                            process_spells_category "$BATCH"
+                            echo "   📊 Spells: Dodano klucze"
+                            ;;
+                        items)
+                            echo "   🎒 Przetwarzam ITEMS..."
+                            COUNT=0
+                            process_items_category "$BATCH"
+                            echo "   📊 Items: Dodano klucze"
+                            ;;
+                        *)
+                            echo "   ⚠️ Nieznana kategoria: $MODE_CAT"
+                            ;;
+                    esac
                     ;;
-                TRANSLATION)
-                    echo "🌍 TRYB 2: TŁUMACZENIA (język: $MODE_ARG, $MODE_COUNT kluczy)"
-                    echo "⏭️  Tryb TRANSLATION wymaga interaktywnego terminala."
-                    echo "   Uruchom ręcznie: ./i18n_worker_simple.sh --translate $MODE_ARG"
-                    echo "   Przechodzę do IDLE..."
+                AUTO_TRANSLATE)
+                    echo "🌍 TRYB: AUTO TRANSLATE (język: $MODE_CAT, plik: $MODE_COUNT, kluczy: $MODE_EXTRA)"
+                    
+                    # Automatyczne tłumaczenie BEZ interakcji!
+                    auto_translate_keys "$MODE_CAT" "$MODE_COUNT" "$MODE_EXTRA"
                     ;;
                 IDLE)
-                    echo "✅ TRYB: IDLE - Migracja zakończona!"
-                    echo "   Wszystkie NPC zmigrowane. Tłumaczenia wymagają ręcznego uruchomienia."
-                    echo "   Użyj: ./i18n_worker_simple.sh --translate pl"
+                    echo "✅ TRYB: IDLE - Wszystko zrobione!"
+                    echo "   Migracja: ✅ | Tłumaczenia: ✅"
+                    echo "   Czekam 5 minut na nowe pliki..."
+                    sleep 300
+                    continue
+                    ;;
+                *)
+                    echo "⚠️ Nieznany tryb: $MODE_TYPE"
                     ;;
             esac
             

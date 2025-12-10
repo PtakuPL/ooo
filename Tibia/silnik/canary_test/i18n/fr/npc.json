@@ -4180,5 +4180,7 @@
   "npc.seymour.greet_1": "[FR] Hello, |PLAYERNAME|. Welcome to the Academy of Rookgaard. May I sign you up as a {student}?",
   "npc.seymour.farewell_1": "[FR] Good bye, |PLAYERNAME|! And remember: No running up and down in the academy!",
   "npc.shiriel.greet_1": "[FR] Greetings, |PLAYERNAME|.",
-  "npc.shiriel.farewell_1": "[FR] Goodbye, |PLAYERNAME|."
+  "npc.shiriel.farewell_1": "[FR] Goodbye, |PLAYERNAME|.",
+  "npc.anerui.greet_1": "[FR] Ashari, |PLAYERNAME|.",
+  "npc.anerui.farewell_1": "[FR] Asha Thrazi."
 }

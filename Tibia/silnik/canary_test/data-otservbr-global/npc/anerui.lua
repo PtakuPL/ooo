@@ -64,9 +64,9 @@ keywordHandler:addKeyword({ "elf" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "cenath" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.anerui.stdmod_17" })
 
 -- Greeting message
-keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Ashari, |PLAYERNAME|." })
+keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Ashari, |PLAYERNAME|.", i18nKey = "npc.anerui.greet_1" })
 -- Farewell message
-keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Asha Thrazi." })
+keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Asha Thrazi.", i18nKey = "npc.anerui.farewell_1" })
 
 npcHandler:setMessage(MESSAGE_GREET, "Ashari |PLAYERNAME|.")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Asha Thrazi.")

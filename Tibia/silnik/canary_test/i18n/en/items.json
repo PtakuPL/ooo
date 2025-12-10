@@ -1548,5 +1548,20 @@
   "item.3465.name": "pot",
   "item.3466.name": "pan",
   "item.3467.name": "fork",
-  "item.3468.name": "spoon"
+  "item.3468.name": "spoon",
+  "item.3469.name": "kitchen knife",
+  "item.3470.name": "wooden spoon",
+  "item.3471.name": "cleaver",
+  "item.3472.name": "oven spatula",
+  "item.3473.name": "rolling pin",
+  "item.3481.name": "closed trap",
+  "item.3482.name": "trap",
+  "item.3483.name": "fishing rod",
+  "item.3484.name": "telescope",
+  "item.3485.name": "telescope",
+  "item.3486.name": "telescope",
+  "item.3487.name": "telescope",
+  "item.3488.name": "ship's telescope",
+  "item.3489.name": "ship's telescope",
+  "item.3490.name": "ship's telescope"
 }

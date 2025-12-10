@@ -124,7 +124,7 @@
   },
   "translation_sync": {
     "current_lang": "pl",
-    "current_category": "raids.json",
+    "current_category": "startup.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -147,7 +147,7 @@
       },
       "pl": {
         "chatchannels": 8,
-        "total": 365343,
+        "total": 394445,
         "client": 283,
         "cpp": 15,
         "events": 5,
@@ -161,7 +161,7 @@
         "raids": 147,
         "scripts": 385,
         "spells": 15,
-        "startup": 19
+        "startup": 23
       },
       "es": {
         "chatchannels": 8,
@@ -207,6 +207,6 @@
         "events": 5
       }
     },
-    "last_sync": 1765410000.4818964
+    "last_sync": 1765410006.5803134
   }
 }

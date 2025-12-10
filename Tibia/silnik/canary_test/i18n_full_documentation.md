@@ -22821,3 +22821,366 @@ Kategoria: npc
 Kategoria: npc
 
 ---
+
+## [2025-12-10 04:14:14] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/iyad.lua`
+
+**Akcja:** Wyekstrahowano 20 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:14:16] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/junkar_robsons.lua`
+
+**Akcja:** Wyekstrahowano 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:14:18] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/lorek.lua`
+
+**Akcja:** Wyekstrahowano 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:14:22] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/buddel_raider_camp.lua`
+
+**Akcja:** Wyekstrahowano 6 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:14:29] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/iptar-sin.lua`
+
+**Akcja:** Wyekstrahowano 30 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:14:30] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/captain_jack.lua`
+
+**Akcja:** Wyekstrahowano 4 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:14:37] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/nomad.lua`
+
+**Akcja:** Wyekstrahowano 13 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:14:49] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/prezil.lua`
+
+**Akcja:** Wyekstrahowano 23 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:14:51] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/lailene.lua`
+
+**Akcja:** Wyekstrahowano 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:14:51] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/prezil.lua`
+
+**Akcja:** Wyekstrahowano 23 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:14:54] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/duria.lua`
+
+**Akcja:** Wyekstrahowano 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:14:55] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/duria.lua`
+
+**Akcja:** Wyekstrahowano 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:14:57] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/hardek.lua`
+
+**Akcja:** Wyekstrahowano 1 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:00] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/captain_max.lua`
+
+**Akcja:** Wyekstrahowano 7 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:11] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/kasmir.lua`
+
+**Akcja:** Wyekstrahowano 30 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:13] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/kasmir.lua`
+
+**Akcja:** Wyekstrahowano 30 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:13] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/imbul.lua`
+
+**Akcja:** Wyekstrahowano 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:15] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/imbul.lua`
+
+**Akcja:** Wyekstrahowano 3 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:18] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/brasith.lua`
+
+**Akcja:** Wyekstrahowano 10 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:19] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/brasith.lua`
+
+**Akcja:** Wyekstrahowano 10 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:22] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/blind_orc.lua`
+
+**Akcja:** Wyekstrahowano 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:22] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/blind_orc.lua`
+
+**Akcja:** Wyekstrahowano 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:31] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/phillip.lua`
+
+**Akcja:** Wyekstrahowano 25 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:31] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/phillip.lua`
+
+**Akcja:** Wyekstrahowano 25 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:47] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/dixi.lua`
+
+**Akcja:** Wyekstrahowano 47 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:47] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/dixi.lua`
+
+**Akcja:** Wyekstrahowano 47 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:49] MIGRACJA LUA
+
+### Plik: `data-otservbr-global/npc/ottokar.lua`
+
+**Akcja:** Zmigrowano 4 stringów
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:53] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/captain_pelagia.lua`
+
+**Akcja:** Wyekstrahowano 12 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:57] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/a_frog.lua`
+
+**Akcja:** Wyekstrahowano 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:57] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/a_frog.lua`
+
+**Akcja:** Wyekstrahowano 8 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:58] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/tonar_oskayaat.lua`
+
+**Akcja:** Wyekstrahowano 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:15:58] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/tonar_oskayaat.lua`
+
+**Akcja:** Wyekstrahowano 2 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---
+
+## [2025-12-10 04:16:01] EKSTRAKCJA LUA
+
+### Plik: `data-otservbr-global/npc/sebastian_nargor.lua`
+
+**Akcja:** Wyekstrahowano 5 kluczy
+
+**Szczegóły:**
+Kategoria: npc
+
+---

@@ -847,7 +847,8 @@ def replace_farewell_with_i18n(match):
     return f'{before}text = "{text}", i18nKey = "{key}"{after}'
 
 # Pattern dla addGreetKeyword z text = "..." (bez i18nKey)
-pattern_greet = r'(addGreetKeyword\s*\([^)]+\)\s*,\s*\{[^}]*?)text\s*=\s*"([^"]+)"([^}]*?\})'
+# Pierwszy argument to { "klucze" } więc używamy \{[^}]+\}
+pattern_greet = r'(addGreetKeyword\s*\(\{[^}]+\}\s*,\s*\{[^}]*?)text\s*=\s*"([^"]+)"([^}]*?\})'
 # Pattern dla addFarewellKeyword z text = "..." (bez i18nKey)
 pattern_farewell = r'(addFarewellKeyword\s*\([^)]+\)\s*,\s*\{[^}]*?)text\s*=\s*"([^"]+)"([^}]*?\})'
 

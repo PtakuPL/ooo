@@ -278,6 +278,11 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `trisha` - ukończono 2025-12-10 11:31
+- ✅ `thorwulf` - ukończono 2025-12-10 11:31
+- ✅ `the_queen_of_the_banshees` - ukończono 2025-12-10 11:31
+- ✅ `spectulus` - ukończono 2025-12-10 11:31
+- ✅ `ser_tybald` - ukończono 2025-12-10 11:31
 - ✅ `sebastian` - ukończono 2025-12-10 11:31
 - ✅ `sandra` - ukończono 2025-12-10 11:31
 - ✅ `richard` - ukończono 2025-12-10 11:31

@@ -220,15 +220,15 @@ keywordHandler:addSpellKeyword({ "great", "light" }, {
 })
 keywordHandler:addKeyword({ "healing", "spells" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.trisha.stdmod_1",
+	text = "In this category I have '{Wound Cleansing}'' and '{Cure Poison}''.",
 })
 keywordHandler:addKeyword({ "support", "spells" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.trisha.stdmod_2",
+	text = "In this category I have '{Light}', '{Find Person}' and '{Great Light}'.",
 })
 keywordHandler:addKeyword({ "spells" }, StdModule.say, {
 	npcHandler = npcHandler,
-	i18nKey = "npc.trisha.stdmod_3",
+	text = "I can teach you {healing spells} and {support spells}. What kind of spell do you wish to learn? You can also tell me for which level you would like to learn a spell, if you prefer that.",
 })
 
 npcHandler:setMessage(MESSAGE_WALKAWAY, "Be careful on your journeys.")

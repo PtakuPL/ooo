@@ -1,23 +1,23 @@
 {
   "schema_version": "2.1",
-  "last_updated": "2025-12-10T04:50:13+01:00",
+  "last_updated": "2025-12-10T04:58:30+01:00",
   "worker": {
     "version": "4.2",
     "status": "running",
     "mode": "analysis",
-    "cycle": 9,
+    "cycle": 13,
     "files_per_cycle": 10,
     "pid": 385540
   },
   "global_progress": {
     "total_files_processed": 765,
     "total_files_excluded": 5160,
-    "total_keys": 53385,
+    "total_keys": 53390,
     "total_languages": 53,
     "total_conflicts": 50
   },
   "categories": {
-    "npc": {"status": "completed", "keys": 13186, "target": 13000},
+    "npc": {"status": "completed", "keys": 13191, "target": 13000},
     "scripts": {"status": "in_progress", "keys": 713, "target": 1000},
     "items": {"status": "completed", "keys": 36972, "target": 40000},
     "monsters": {"status": "in_progress", "keys": 100, "target": 500},
@@ -32,27 +32,27 @@
   "recent_files": [
   {
     "file": "olrik.lua",
-    "time": "04:50:13",
+    "time": "04:58:30",
     "status": "success"
   },
   {
     "file": "rapanaio_boat.lua",
-    "time": "04:50:13",
+    "time": "04:58:30",
     "status": "success"
   },
   {
     "file": "nilsor.lua",
-    "time": "04:50:13",
+    "time": "04:58:30",
     "status": "success"
   },
   {
     "file": "captain_greyhound.lua",
-    "time": "04:50:13",
+    "time": "04:58:30",
     "status": "success"
   },
   {
     "file": "urks_the_mute.lua",
-    "time": "04:50:13",
+    "time": "04:58:30",
     "status": "success"
   }
 ]

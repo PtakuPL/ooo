@@ -1264,17 +1264,20 @@ migrate_lua_file() {
                 fi
             fi
             
-            # WZORZEC 3: StdModule.say - tylko ekstrakcja (wymaga ręcznej migracji)
+            # WZORZEC 3: StdModule.say - PEŁNA TRANSFORMACJA text → i18nKey
             if echo "$line" | grep -qE 'StdModule\.say.*text\s*=\s*"[^"]{5,}"'; then
-                local text=$(echo "$line" | sed -n 's/.*text\s*=\s*"\([^"]*\)".*/\1/p')
+                local text=$(echo "$line" | sed -n 's/.*text[[:space:]]*=[[:space:]]*"\([^"]*\)".*/\1/p')
                 if [ -n "$text" ] && [ ${#text} -ge 5 ]; then
                     local key="npc.${safe_name}.stdmod_${key_counter}"
                     key_counter=$((key_counter + 1))
                     
+                    # TRANSFORMACJA: text = "..." → i18nKey = "klucz"
+                    new_line=$(echo "$line" | sed "s|text[[:space:]]*=[[:space:]]*\"[^\"]*\"|i18nKey = \"${key}\"|")
+                    
                     add_key_to_json "$json_file" "$key" "$text"
                     
-                    extracted=$((extracted + 1))
-                    log_info "      📝 StdModule (ekstrakcja): $key"
+                    transformed=$((transformed + 1))
+                    log_info "      🔄 StdModule: $key"
                 fi
             fi
         fi
@@ -1305,18 +1308,18 @@ migrate_lua_file() {
         # Kod został zmieniony - nadpisz plik
         mv "$temp_file" "$file"
         rm -f "${file}.bak"
-        log_success "   ✅ Zmigrowano $transformed stringów (API: NPC_LIB.i18n/sendLocalizedTextMessage)"
+        log_success "   ✅ Zmigrowano $transformed stringów (text → i18nKey)"
         
         mark_processed "$file"
-        document "MIGRACJA LUA" "$relative_path" "Zmigrowano $transformed stringów" "Kategoria: $category"
+        document "MIGRACJA LUA" "$relative_path" "Zmigrowano $transformed stringów (text → i18nKey)" "Kategoria: $category"
         
         TOTAL_FILES_PROCESSED=$((TOTAL_FILES_PROCESSED + 1))
         TOTAL_STRINGS_FOUND=$((TOTAL_STRINGS_FOUND + transformed))
         return 0
     elif [ "$extracted" -gt 0 ]; then
-        # Klucze wyekstrahowane ale kod nie zmieniony (np. StdModule.say)
+        # Klucze wyekstrahowane ale kod nie zmieniony (inne wzorce)
         rm -f "$temp_file" "${file}.bak"
-        log_success "   ✅ Wyekstrahowano $extracted kluczy (kod bez zmian - StdModule.say)"
+        log_success "   ✅ Wyekstrahowano $extracted kluczy (bez transformacji)"
         
         mark_processed "$file"
         document "EKSTRAKCJA LUA" "$relative_path" "Wyekstrahowano $extracted kluczy" "Kategoria: $category"

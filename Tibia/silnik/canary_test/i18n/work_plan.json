@@ -18,9 +18,9 @@
             "data-canary/npc",
             "data/npclib"
           ],
-          "target_keys": 13190,
-          "status": "completed",
-          "keys_extracted": 13186,
+          "target_keys": 14510,
+          "status": "in_progress",
+          "keys_extracted": 13191,
           "files_processed": 877
         },
         {

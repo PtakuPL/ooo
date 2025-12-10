@@ -659,8 +659,6 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/dixi.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/ottokar.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/captain_pelagia.lua
-/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/a_frog.lua
-/home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/a_frog.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/tonar_oskayaat.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/tonar_oskayaat.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/cerdras.lua

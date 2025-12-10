@@ -1,20 +1,7 @@
 {
   "category": "npc",
-  "last_updated": "2025-12-10 04:51:46",
-  "status": "in_progress",
-  "progress": {
-    "percentage": 3,
-    "total_keys": 13186,
-    "translated_pl": 397,
-    "files_processed": 667,
-    "files_remaining": 360
-  },
-  "languages": {
-    "total": 53,
-    "with_translations": 53
-  },
-  "details": {
-    "source_file": "/home/ptaku/serweryt/Tibia/silnik/canary_test/i18n/en/npc.json",
-    "primary_translation": "/home/ptaku/serweryt/Tibia/silnik/canary_test/i18n/pl/npc.json"
-  }
+  "status": "completed",
+  "last_updated": "2025-12-10T04:58:30+01:00",
+  "keys": 13191,
+  "cycle": 13
 }

@@ -13184,5 +13184,10 @@
   "npc.captain_max_calassa.stdmod_3": "Do you want go back to {Liberty Bay}?",
   "npc.captain_max_calassa.stdmod_4": "Welcome on board, noble |PLAYERNAME|. I can bring you back to {Liberty Bay}. Do you want me to do it?",
   "npc.captain_max_calassa.stdmod_5": "I am the captain of this ship.",
-  "npc.captain_max_calassa.stdmod_6": "I am the captain of this ship."
+  "npc.captain_max_calassa.stdmod_6": "I am the captain of this ship.",
+  "npc.oldrak.job": "I guard this humble temple as a monument for the order of the {nightmare knights}.",
+  "npc.oldrak.name": "My name is Oldrak.",
+  "npc.oldrak.monster": "These plains are not safe for ordinary travellers. It will take heroes to survive here.",
+  "npc.oldrak.help": "I can't help you, sorry!",
+  "npc.oldrak.goshnar": "The greatest necromant who ever cursed our land with the steps of his feet. He was defeated by the nightmare knights."
 }

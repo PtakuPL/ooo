@@ -69,7 +69,20 @@ if Modules == nil then
 				parseInfo[k] = v
 			end
 		end
-		if parameters.text then
+		
+		-- I18N: Obsługa klucza i18n (priorytet nad text)
+		if parameters.i18nKey then
+			-- Używamy sendLocalizedTextMessage z kluczem i18n
+			local args = {}
+			-- Zbieramy argumenty z parseInfo dla placeholderów {0}, {1}, etc.
+			if parseInfo[TAG_PLAYERNAME] then
+				table.insert(args, parseInfo[TAG_PLAYERNAME])
+			end
+			if parseInfo[TAG_TRAVELCOST] then
+				table.insert(args, parseInfo[TAG_TRAVELCOST])
+			end
+			player:sendLocalizedTextMessage(MESSAGE_NPC_FROM, parameters.i18nKey, #args > 0 and args or nil)
+		elseif parameters.text then
 			npcHandler:say(npcHandler:parseMessage(parameters.text, parseInfo, player, message), npc, player)
 		end
 

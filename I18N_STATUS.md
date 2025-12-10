@@ -1,6 +1,6 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 00:26:42 UTC  
+> **Aktualizacja:** 2025-12-11 00:27:09 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -23,10 +23,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **26** | ↑ |
 | ⏭️ Plików wykluczonych | **711** | - |
-| 🔑 Kluczy i18n | **27664** | ↑ |
+| 🔑 Kluczy i18n | **27743** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#44** | - |
+| 🔄 Cykl | **#45** | - |
 
 ---
 
@@ -77,19 +77,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    44 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    45 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 MONSTERS                               │
+│ Kategoria: 🎒 RAIDS                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: monsters                                       │
-│ [██████████████████████████████████████████████████] │
-│ 7341/5000 kluczy (147%)                                          │
+│ 📊 Ostatnia aktywność: raids                                          │
+│ [█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
+│ 109/1000 kluczy (11%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Total processed: 22565 operacji               │
+│ ⏳ Total processed: 22802 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 00:26:42                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 00:27:09                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -99,11 +99,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Operacji wykonanych | **22565** | we wszystkich kategoriach |
+| 📁 Operacji wykonanych | **22802** | we wszystkich kategoriach |
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **27664** | we wszystkich kategoriach |
+| 🔑 Kluczy wyciągniętych | **27743** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#44** | continuous mode |
+| 🔄 Cykli wykonanych | **#45** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -111,6 +111,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `raids` +158 kluczy @ 00:27:08
 - 👹 `monsters` +0 kluczy @ 00:26:42
 - 📜 `scripts` +0 kluczy @ 00:23:01
 - ⚡ `html` +180 kluczy @ 00:11:44
@@ -118,7 +119,6 @@
 - ⚡ `npclib` +0 kluczy @ 00:10:27
 - ⚡ `startup` +0 kluczy @ 00:10:20
 - ⚡ `modules` +0 kluczy @ 00:10:03
-- 🌍 `FR/events.json` +109 kluczy @ 23:46:10
 
 
 ---
@@ -282,9 +282,9 @@
 | monsters | 7341 | 9549 | 2 | ⏭️ Skip 9m |
 | npc | 5334 | 0 | 0 | ✅ Active |
 | html | 508 | 284 | 0 | ✅ Active |
-| scripts | 385 | 0 | 4 | ⏭️ Skip 56m |
+| scripts | 385 | 0 | 4 | ⏭️ Skip 55m |
 | php | 205 | 543 | 0 | ✅ Active |
-| raids | 30 | 0 | 0 | ✅ Active |
+| raids | 109 | 237 | 0 | ✅ Active |
 | startup | 23 | 23 | 0 | ✅ Active |
 | modules | 16 | 16 | 0 | ✅ Active |
 | cpp | 15 | 0 | 0 | ✅ Active |
@@ -308,7 +308,7 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| scripts | 56m | 4x | Progresywny backoff |
+| scripts | 55m | 4x | Progresywny backoff |
 | monsters | 9m | 2x | Progresywny backoff |
 
 ---
@@ -317,7 +317,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #44 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #45 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -360,7 +360,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:26:42  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 00:27:09  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

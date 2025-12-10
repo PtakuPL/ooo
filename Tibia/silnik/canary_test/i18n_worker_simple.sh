@@ -831,10 +831,11 @@ greet_counter = [0]
 farewell_counter = [0]
 
 # Pattern dla addGreetKeyword z text = "..." (bez i18nKey)
-# Szukamy: { ... text = "..." } - końcowy } zamyka blok parametrów
-pattern_greet = r'(addGreetKeyword\s*\(\{[^}]+\}\s*,\s*\{[^}]*?)(text\s*=\s*"([^"]+)")(\s*\})'
+# Szukamy: addGreetKeyword(..., { ... text = "..." ... (może być } albo }, function)
+# Zmieniony pattern - szukamy text = "..." i dodajemy i18nKey zaraz po
+pattern_greet = r'(addGreetKeyword\s*\([^)]*?)(text\s*=\s*"([^"]+)")([^}]*?\})'
 # Pattern dla addFarewellKeyword z text = "..." (bez i18nKey)
-pattern_farewell = r'(addFarewellKeyword\s*\(\{[^}]+\}\s*,\s*\{[^}]*?)(text\s*=\s*"([^"]+)")(\s*\})'
+pattern_farewell = r'(addFarewellKeyword\s*\([^)]*?)(text\s*=\s*"([^"]+)")([^}]*?\})'
 
 # Transformuj tylko te wpisy które nie mają jeszcze i18nKey
 def safe_replace_greet(match):

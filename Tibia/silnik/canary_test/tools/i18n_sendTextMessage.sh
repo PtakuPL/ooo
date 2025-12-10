@@ -82,16 +82,17 @@ log "Dodano $keys_added kluczy systemowych"
 log "Zamieniam player:sendTextMessage w plikach NPC..."
 
 # Pattern do zamiany - główny tekst sprzedaży
-OLD_PATTERN='player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))'
-NEW_PATTERN='player:sendTextMessage(MESSAGE_TRADE, i18n.get("system.trade.sold", {amount = amount, item = name, gold = totalCost}))'
+# Używamy sendLocalizedTextMessage z args jako tabela
+# player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+# -> player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 
 # Znajdź wszystkie pliki z tym patternem
 while IFS= read -r file; do
     if [[ -f "$file" ]]; then
         total_files=$((total_files + 1))
         
-        # Użyj sed do zamiany
-        if sed -i 's|player:sendTextMessage(MESSAGE_TRADE, string\.format("Sold %ix %s for %i gold\.", amount, name, totalCost))|player:sendTextMessage(MESSAGE_TRADE, i18n.get("system.trade.sold", {amount = amount, item = name, gold = totalCost}))|g' "$file" 2>/dev/null; then
+        # Użyj sed do zamiany - zamień na sendLocalizedTextMessage
+        if sed -i 's|player:sendTextMessage(MESSAGE_TRADE, string\.format("Sold %ix %s for %i gold\.", amount, name, totalCost))|player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})|g' "$file" 2>/dev/null; then
             if grep -q "system.trade.sold" "$file" 2>/dev/null; then
                 modified_files=$((modified_files + 1))
             fi
@@ -107,10 +108,10 @@ log "Przetworzono $total_files plików, zmodyfikowano $modified_files"
 log "Zamieniam inne patterny sendTextMessage..."
 
 # Pattern: "You are already blessed."
-sed -i 's|player:sendTextMessage(MESSAGE_STATUS, "You are already blessed.")|player:sendTextMessage(MESSAGE_STATUS, i18n.get("system.blessing.already"))|g' data-otservbr-global/npc/*.lua 2>/dev/null || true
+sed -i 's|player:sendTextMessage(MESSAGE_STATUS, "You are already blessed.")|player:sendLocalizedTextMessage(MESSAGE_STATUS, "system.blessing.already")|g' data-otservbr-global/npc/*.lua 2>/dev/null || true
 
 # Pattern: "Please make sure you have free slots in your store inbox."
-sed -i 's|player:sendTextMessage(MESSAGE_LOOK, "Please make sure you have free slots in your store inbox.")|player:sendTextMessage(MESSAGE_LOOK, i18n.get("system.store.check_inbox"))|g' data-otservbr-global/npc/*.lua 2>/dev/null || true
+sed -i 's|player:sendTextMessage(MESSAGE_LOOK, "Please make sure you have free slots in your store inbox.")|player:sendLocalizedTextMessage(MESSAGE_LOOK, "system.store.check_inbox")|g' data-otservbr-global/npc/*.lua 2>/dev/null || true
 
 # =================================================================
 # KROK 5: Podsumowanie

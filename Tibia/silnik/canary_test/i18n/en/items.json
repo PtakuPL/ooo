@@ -223,5 +223,10 @@
   "item.610.name": "hole",
   "item.611.name": "snow heap",
   "item.614.name": "sand",
-  "item.615.name": "hole"
+  "item.615.name": "hole",
+  "item.616.name": "DEPRECATED item",
+  "item.617.name": "DEPRECATED item",
+  "item.618.name": "grass",
+  "item.619.name": "waterball",
+  "item.622.name": "water"
 }

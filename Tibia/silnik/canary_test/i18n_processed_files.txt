@@ -414,3 +414,13 @@ data-otservbr-global/raids/roshamuul/gaz_haragoth.xml
 data-otservbr-global/raids/carlin/yeti.xml
 data-otservbr-global/raids/carlin/orc.xml
 data-otservbr-global/raids/ankrahmun/gargoyle.xml
+data/libs/functions/revscriptsys.lua
+data/libs/functions/monstertype.lua
+data/libs/functions/bit.lua
+data/libs/functions/load.lua
+data/libs/functions/set.lua
+data/libs/functions/itemtype.lua
+data/libs/libs.lua
+data/libs/systems/hireling.lua
+data/libs/systems/blessing.lua
+data/libs/systems/daily_reward.lua

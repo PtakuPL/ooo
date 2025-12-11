@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 200, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 200} -->
 
-> **Aktualizacja:** 2025-12-11 01:39:38 UTC  
+> **Aktualizacja:** 2025-12-11 01:39:45 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -28,7 +28,7 @@
 | 🔑 Kluczy i18n | **28550** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#5** | - |
+| 🔄 Cykl | **#6** | - |
 
 ---
 
@@ -71,7 +71,7 @@
 | 🇵🇱 Polski | 📊 30368 kluczy | 30368 | [EN] prefix |
 | 🇪🇸 Hiszpański | 📊 30368 kluczy | 30368 | [EN] prefix |
 | 🇫🇷 Francuski | 📊 30368 kluczy | 30368 | [EN] prefix |
-| 🌐 Pozostałe (0/53) | 🔄 | 836632 | Aktualnie: KK |
+| 🌐 Pozostałe (0/53) | 🔄 | 843973 | Aktualnie: KK |
 
 ---
 
@@ -79,19 +79,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     5 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     6 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🌍 TRANSLATION_SYNC (Etap 1)              │
-│ Kategoria: 🌍 KK/modules.json                        │
+│ Kategoria: 🌍 KK/monsters.json                       │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: KK/modules.json                                │
-│ [██████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 15294/28550 kluczy (54%)                                          │
+│ 📊 Ostatnia aktywność: KK/monsters.json                               │
+│ [███████████████████████████████████████░░░░░░░░░░░] │
+│ 22635/28550 kluczy (79%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 30712 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 01:39:38                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 01:39:45                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -105,7 +105,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **28550** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#5** | continuous mode |
+| 🔄 Cykli wykonanych | **#6** | continuous mode |
 | 🎯 Aktywne kategorie | **13** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -113,7 +113,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🌍 `KK/modules.json` +15294 kluczy @ 01:39:37
+- 🌍 `KK/monsters.json` +22635 kluczy @ 01:39:45
 - ⚡ `client` +0 kluczy @ 01:29:30
 - ⚡ `php` +0 kluczy @ 01:29:28
 - 🧙 `npc` +1 kluczy @ 01:23:36
@@ -285,7 +285,7 @@
 | npc | 5334 | 2 | 0 | ✅ Active |
 | html | 1495 | 3245 | 4 | ⏭️ Skip 33m |
 | scripts | 385 | 0 | 4 | ⏭️ Skip 28m |
-| raids | 147 | 351 | 4 | ⏭️ Skip 29m |
+| raids | 147 | 351 | 4 | ⏭️ Skip 28m |
 | startup | 23 | 23 | 4 | ⏭️ Skip 29m |
 | libs | 21 | 53 | 4 | ⏭️ Skip 29m |
 | modules | 16 | 16 | 4 | ⏭️ Skip 29m |
@@ -312,7 +312,7 @@
 |-----------|----------------|-----------|-------|
 | scripts | 28m | 4x | Progresywny backoff |
 | monsters | 28m | 4x | Progresywny backoff |
-| raids | 29m | 4x | Progresywny backoff |
+| raids | 28m | 4x | Progresywny backoff |
 | world | 29m | 4x | Progresywny backoff |
 | items | 29m | 4x | Progresywny backoff |
 | libs | 29m | 4x | Progresywny backoff |
@@ -334,7 +334,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #5 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #6 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -354,7 +354,7 @@
 | SK | 30,368 | ⏳ |
 | HU | 30,368 | ⏳ |
 
-> **Aktualnie:** KK / modules.json  
+> **Aktualnie:** KK / monsters.json  
 > **Ukończone języki:** 0/53  
 > **Prefix:** `[EN] ` (klucze do przetłumaczenia)
 
@@ -377,7 +377,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 01:39:38  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 01:39:45  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

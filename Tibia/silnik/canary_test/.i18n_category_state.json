@@ -25,7 +25,8 @@
     "server": 1765470044.067745,
     "client_modules": 1765470183.9155903,
     "client_mods": 1765470192.3493555,
-    "client_data": 1765470199.4713297
+    "client_data": 1765470199.4713297,
+    "client_cpp": 1765470206.5729406
   },
   "last_processed": {
     "npc": {
@@ -143,6 +144,10 @@
     "client_data": {
       "count": 0,
       "timestamp": 1765469599.4713247
+    },
+    "client_cpp": {
+      "count": 0,
+      "timestamp": 1765469606.5729349
     }
   },
   "consecutive_zeros": {
@@ -174,7 +179,8 @@
     "server": 2,
     "client_modules": 2,
     "client_mods": 2,
-    "client_data": 2
+    "client_data": 2,
+    "client_cpp": 2
   },
   "total_processed": {
     "npc": 160,

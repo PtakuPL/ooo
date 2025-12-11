@@ -45,7 +45,7 @@
 #AUTO:tr:monsters.json:10  # Wykonano 2025-12-11 02:29:30
 #AUTO:tr:items.json:10  # Wykonano 2025-12-11 02:29:37
 #AUTO:tr:spells.json:10  # Wykonano 2025-12-11 02:29:44
-AUTO:tr:php.json:10
+#AUTO:tr:php.json:10  # Wykonano 2025-12-11 02:29:50
 AUTO:tr:client.json:10
 # [2025-12-11 02:27:32] Wykonano: AUTO:pl:scripts.json:10
 # [2025-12-11 02:27:39] Wykonano: AUTO:pl:monsters.json:10
@@ -63,3 +63,4 @@ AUTO:tr:client.json:10
 # [2025-12-11 02:29:30] Wykonano: AUTO:tr:monsters.json:10
 # [2025-12-11 02:29:37] Wykonano: AUTO:tr:items.json:10
 # [2025-12-11 02:29:44] Wykonano: AUTO:tr:spells.json:10
+# [2025-12-11 02:29:50] Wykonano: AUTO:tr:php.json:10

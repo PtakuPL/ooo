@@ -124,13 +124,13 @@
   },
   "translation_sync": {
     "current_lang": "sk",
-    "current_category": "items.json",
+    "current_category": "libs.json",
     "languages_done": [],
     "stats": {
       "de": {
         "npc": 5334,
         "chatchannels": 8,
-        "total": 554510,
+        "total": 30368,
         "client": 283,
         "cpp": 15,
         "events": 5,
@@ -147,7 +147,7 @@
       },
       "pl": {
         "chatchannels": 8,
-        "total": 513290,
+        "total": 30368,
         "client": 283,
         "cpp": 15,
         "events": 5,
@@ -165,7 +165,7 @@
       },
       "es": {
         "chatchannels": 8,
-        "total": 513290,
+        "total": 30368,
         "client": 283,
         "cpp": 15,
         "events": 5,
@@ -183,7 +183,7 @@
       },
       "pt": {
         "chatchannels": 8,
-        "total": 513353,
+        "total": 30368,
         "client": 283,
         "cpp": 15,
         "events": 5,
@@ -201,7 +201,7 @@
       },
       "fr": {
         "chatchannels": 8,
-        "total": 358278,
+        "total": 30368,
         "client": 283,
         "cpp": 15,
         "events": 5,
@@ -219,7 +219,7 @@
       },
       "it": {
         "chatchannels": 8,
-        "total": 302277,
+        "total": 30368,
         "client": 283,
         "cpp": 15,
         "events": 5,
@@ -237,7 +237,7 @@
       },
       "nl": {
         "chatchannels": 8,
-        "total": 302277,
+        "total": 30368,
         "client": 283,
         "cpp": 15,
         "events": 5,
@@ -255,7 +255,7 @@
       },
       "cs": {
         "chatchannels": 8,
-        "total": 302277,
+        "total": 30368,
         "client": 283,
         "cpp": 15,
         "events": 5,
@@ -273,14 +273,15 @@
       },
       "sk": {
         "chatchannels": 8,
-        "total": 15555,
+        "total": 15576,
         "client": 283,
         "cpp": 15,
         "events": 5,
         "html": 1495,
-        "items": 13749
+        "items": 13749,
+        "libs": 21
       }
     },
-    "last_sync": 1765411563.5667517
+    "last_sync": 1765411571.1970353
   }
 }

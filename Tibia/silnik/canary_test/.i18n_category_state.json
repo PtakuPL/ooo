@@ -14,7 +14,8 @@
     "globalevents": 1765489767.3099396,
     "items": 1765489772.4415934,
     "mounts": 1765489778.8411977,
-    "libs": 1765489788.7950451
+    "libs": 1765489788.7950451,
+    "events": 1765489791.197286
   },
   "last_processed": {
     "npc": {
@@ -76,6 +77,10 @@
     "libs": {
       "count": 0,
       "timestamp": 1765489188.7950397
+    },
+    "events": {
+      "count": 0,
+      "timestamp": 1765489191.1972775
     }
   },
   "consecutive_zeros": {
@@ -93,7 +98,8 @@
     "globalevents": 2,
     "items": 2,
     "mounts": 2,
-    "libs": 2
+    "libs": 2,
+    "events": 2
   },
   "total_processed": {},
   "migrations_done": false

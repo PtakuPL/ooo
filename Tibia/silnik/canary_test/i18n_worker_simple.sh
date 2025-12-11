@@ -2401,20 +2401,34 @@ process_php_category() {
         local base=$(basename "$file" .php)
         local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
         
-        # Wyciągnij echo "..." i teksty > 20 znaków
-        # FILTRUJ: pomiń URLe, ścieżki, kod PHP
-        local strings=$(grep -oP '(?:echo\s+|print\s+)?["'\''][^"'\'']{20,}["'\'']' "$file" 2>/dev/null \
-            | grep -v '^["\x27]/' \
-            | grep -v 'http' \
-            | grep -v '\$' \
-            | grep -v '\->' \
-            | grep -v '::' \
-            | grep -v '\[' \
-            | grep -v '(' \
-            | grep -v '\.php' \
-            | grep -v '\.js' \
-            | grep -v '\.css' \
-            | head -5)
+        # Wyciągnij kandydatów ze stringów, odfiltruj kod/ścieżki/URL/SQL
+        local strings=$(python3 - << 'PYCODE'
+import re, sys
+from pathlib import Path
+path = Path(""""$file"""")
+try:
+    text = path.read_text(encoding="utf-8", errors="ignore")
+except Exception:
+    sys.exit(0)
+res = []
+for m in re.finditer(r'"([^"\n]{15,})"', text):
+    val = m.group(1).strip()
+    if len(val) < 15:
+        continue
+    low = val.lower()
+    if low.startswith(("http", "/", "./", "../")):
+        continue
+    if any(tok in val for tok in ["$_", "$this", "<?php", "->", "::", "<?", "?>", "{", "}", "[", "]", "(", ")", ";", "=", ":"]):
+        continue
+    if any(ext in low for ext in [".php", ".js", ".css", ".png", ".jpg", ".jpeg", ".gif", ".svg", ".ttf", ".woff", ".otf", ".map"]):
+        continue
+    if re.search(r"\\b(SELECT|INSERT|UPDATE|DELETE|FROM|WHERE|JOIN|ORDER BY)\\b", val, re.IGNORECASE):
+        continue
+    res.append(val[:200])
+for line in res[:5]:
+    print(line)
+PYCODE
+)
         
         if [ -n "$strings" ]; then
             local i=1

@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 200, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 01:07:17 UTC  
+> **Aktualizacja:** 2025-12-11 01:07:25 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -28,7 +28,7 @@
 | 🔑 Kluczy i18n | **30379** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#3** | - |
+| 🔄 Cykl | **#4** | - |
 
 ---
 
@@ -71,7 +71,7 @@
 | 🇵🇱 Polski | 📊 30368 kluczy | 30368 | [EN] prefix |
 | 🇪🇸 Hiszpański | 📊 30368 kluczy | 30368 | [EN] prefix |
 | 🇫🇷 Francuski | 📊 30368 kluczy | 30368 | [EN] prefix |
-| 🌐 Pozostałe (0/53) | 🔄 | 271211 | Aktualnie: SK |
+| 🌐 Pozostałe (0/53) | 🔄 | 272742 | Aktualnie: SK |
 
 ---
 
@@ -79,19 +79,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     3 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     4 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🌍 TRANSLATION_SYNC (Etap 1)              │
-│ Kategoria: 🌍 SK/npc.json                            │
+│ Kategoria: 🌍 SK/php.json                            │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: SK/npc.json                                    │
-│ [██████████████████████████████████████████████░░░░] │
-│ 28267/30379 kluczy (93%)                                          │
+│ 📊 Ostatnia aktywność: SK/php.json                                    │
+│ [█████████████████████████████████████████████████░] │
+│ 29798/30379 kluczy (98%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 30710 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 01:07:17                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 01:07:25                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -105,7 +105,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **30379** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#3** | continuous mode |
+| 🔄 Cykli wykonanych | **#4** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -113,7 +113,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🌍 `SK/npc.json` +28267 kluczy @ 01:07:17
+- 🌍 `SK/php.json` +29798 kluczy @ 01:07:25
 - ⚡ `twig` +0 kluczy @ 01:03:49
 - ⚡ `keywordhandler` +0 kluczy @ 01:03:40
 - ⚡ `sendtextmessage` +0 kluczy @ 01:03:32
@@ -286,7 +286,7 @@
 | php | 1531 | 4521 | 2 | ⏭️ Skip 3m |
 | html | 1495 | 3245 | 2 | ⏭️ Skip 5m |
 | scripts | 385 | 0 | 2 | ⏭️ Skip 0m |
-| client | 283 | 821 | 2 | ⏭️ Skip 6m |
+| client | 283 | 821 | 2 | ⏭️ Skip 5m |
 | raids | 147 | 351 | 2 | ⏭️ Skip 0m |
 | startup | 23 | 23 | 2 | ⏭️ Skip 1m |
 | libs | 21 | 53 | 2 | ⏭️ Skip 1m |
@@ -323,7 +323,7 @@
 | npclib | 1m | 2x | Progresywny backoff |
 | php | 3m | 2x | Progresywny backoff |
 | html | 5m | 2x | Progresywny backoff |
-| client | 6m | 2x | Progresywny backoff |
+| client | 5m | 2x | Progresywny backoff |
 | sendtextmessage | 6m | 2x | Progresywny backoff |
 | keywordhandler | 6m | 2x | Progresywny backoff |
 | twig | 6m | 2x | Progresywny backoff |
@@ -334,7 +334,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #3 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #4 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -351,10 +351,10 @@
 | IT | 30,368 | ⏳ |
 | NL | 30,368 | ⏳ |
 | CS | 30,368 | ⏳ |
-| SK | 28,267 | 🔄 |
+| SK | 29,798 | 🔄 |
 | HU | 0 | ⏳ |
 
-> **Aktualnie:** SK / npc.json  
+> **Aktualnie:** SK / php.json  
 > **Ukończone języki:** 0/53  
 > **Prefix:** `[EN] ` (klucze do przetłumaczenia)
 
@@ -377,7 +377,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 01:07:17  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 01:07:25  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

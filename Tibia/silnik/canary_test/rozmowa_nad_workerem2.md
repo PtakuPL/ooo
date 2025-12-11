@@ -314,26 +314,29 @@ Po ustaleniu odpowiedzi na pytania, zaczynam od:
 
 ## 🎯 KONKRETNY PLAN AKCJI
 
-### Etap 1: Migracja 431 NPC (PRIORYTET)
-**Problem:** 431 plików NPC ma hard-coded stringi bez i18nKey
-**Rozwiązanie:** 
-1. Worker w trybie MIGRATION już przetwarza NPC
-2. Trzeba sprawdzić dlaczego pomija te 431 plików
-3. Możliwe przyczyny:
-   - NPC nie mają handlerów `say` (tylko nazwa/opis)
-   - Pattern matching nie łapie wszystkich wzorców
-   - Pliki są w `PROCESSED_FILE` ale bez faktycznej migracji
+### ⚡ PRIORYTET 1: Naprawić 71 częściowo zmigrowanych NPC
+**Problem:** Worker migruje JEDEN dialog i oznacza plik jako "done"
+**Rozwiązanie:**
+1. Dodać warunek w workerze: plik jest "completed" TYLKO gdy `grep 'npcHandler:say\s*\(\s*"' == 0`
+2. Uruchomić ponownie migrację dla 71 plików
+3. Sprawdzić czy wszystkie dialogi są zmigrowane
 
-### Etap 2: Integracja hard_strings z workerem
+### Etap 2: Migracja nazw/opisów NPC (400 plików)
+**Problem:** NPC mają tylko `npcConfig.name = "..."` bez i18nKey
+**Rozwiązanie:**
+1. Dodać nowy pattern: `npcConfig.name = "..."` → `npcConfig.name = i18n.get("npc.xxx.name")`
+2. Dodać pattern: `npcConfig.description = "..."` → i18nKey
+3. To jest oddzielna logika od dialogów say
+
+### Etap 3: Integracja hard_strings z workerem
 1. Parsować `hard_strings.csv` do JSON
 2. Porównywać z `i18n_file_status.json`
 3. Znaleźć pliki które są w hard_strings ale nie w file_status
 
-### Etap 3: Priorytetyzacja
-1. **Faza A**: 39 NPC z handlerami say (dialogi)
-2. **Faza B**: 392 NPC bez handlerów say (nazwy/opisy)
-3. **Faza C**: scripts/lib (2339 wpisów)
-4. **Faza D**: quests (1500 wpisów)
+### Etap 4: Inne kategorie (scripts, quests, etc.)
+1. **Faza C**: scripts/lib (2339 wpisów)
+2. **Faza D**: quests (1500 wpisów)
+3. **Faza E**: pozostałe
 
 ---
 

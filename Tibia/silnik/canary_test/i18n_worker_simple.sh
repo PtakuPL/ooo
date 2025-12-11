@@ -377,7 +377,9 @@ total_keys = (game_keys + items_keys + misc_keys + monsters_keys + npc_keys +
               system_keys + ui_keys + startup_keys + raids_keys + world_keys + 
               libs_keys + events_keys + chatchannels_keys + modules_keys + npclib_keys +
               actions_keys + errors_keys + messages_keys +
-              php_keys + cpp_keys + html_keys + client_keys)
+              php_keys + cpp_keys + html_keys + client_keys +
+              otclient_modules_keys + otclient_data_keys + otclient_src_keys +
+              otclient_mods_keys + otclient_tools_keys)
 
 # Generuj timestamp (używany też przy baseline)
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')

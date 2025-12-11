@@ -1290,9 +1290,81 @@
           "greet_keys": 0,
           "farewell_keys": 0,
           "voices_keys": 0
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [],
+          "keys_per_lang": 2,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 2,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
         }
       },
-      "overall_status": "in_progress"
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T18:54:03.301414"
     },
     "data-otservbr-global/npc/rock_in_a_hard_place.lua": {
       "stages": {
@@ -1407,7 +1479,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:53:12.091303"
+      "completed_at": "2025-12-11T18:54:05.782878"
     },
     "data-otservbr-global/npc/romir.lua": {
       "stages": {
@@ -1518,7 +1590,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:53:13.415221"
+      "completed_at": "2025-12-11T18:54:06.923491"
     },
     "data-otservbr-global/npc/seymour.lua": {
       "stages": {
@@ -1633,7 +1705,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:53:15.113974"
+      "completed_at": "2025-12-11T18:54:08.472667"
     },
     "data-otservbr-global/npc/shiriel.lua": {
       "stages": {
@@ -1748,7 +1820,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:53:17.345123"
+      "completed_at": "2025-12-11T18:54:09.691339"
     },
     "data-otservbr-global/npc/sigurd.lua": {
       "stages": {
@@ -1863,7 +1935,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:53:18.928683"
+      "completed_at": "2025-12-11T18:54:10.918242"
     },
     "data-otservbr-global/npc/sundara.lua": {
       "stages": {
@@ -1978,7 +2050,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:53:20.564364"
+      "completed_at": "2025-12-11T18:54:12.516453"
     },
     "data-otservbr-global/npc/tandros.lua": {
       "stages": {
@@ -2093,7 +2165,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:53:22.029462"
+      "completed_at": "2025-12-11T18:54:13.899533"
     },
     "data-otservbr-global/npc/the_lootmonger.lua": {
       "stages": {
@@ -2204,7 +2276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:53:23.504864"
+      "completed_at": "2025-12-11T18:54:15.242174"
     }
   },
   "global_stats": {

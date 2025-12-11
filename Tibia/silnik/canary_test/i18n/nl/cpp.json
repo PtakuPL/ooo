@@ -1,17 +1,1 @@
-{
-  "cpp.bank.str1": "[EN] game/bank/bank.hpp",
-  "cpp.bank.str2": "[EN] config/configmanager.hpp",
-  "cpp.bank.str3": "[EN] creatures/players/player.hpp",
-  "cpp.bank.str4": "[EN] game/game.hpp",
-  "cpp.bank.str5": "[EN] game/scheduling/save_manager.hpp",
-  "cpp.game_reload.str1": "[EN] game/functions/game_reload.hpp",
-  "cpp.game_reload.str2": "[EN] config/configmanager.hpp",
-  "cpp.game_reload.str3": "[EN] creatures/appearance/mounts/mounts.hpp",
-  "cpp.game_reload.str4": "[EN] creatures/interactions/chat.hpp",
-  "cpp.game_reload.str5": "[EN] creatures/monsters/monsters.hpp",
-  "cpp.zone.str1": "[EN] game/zones/zone.hpp",
-  "cpp.zone.str2": "[EN] game/game.hpp",
-  "cpp.zone.str3": "[EN] creatures/monsters/monster.hpp",
-  "cpp.zone.str4": "[EN] creatures/npcs/npc.hpp",
-  "cpp.zone.str5": "[EN] creatures/players/player.hpp"
-}
+{}

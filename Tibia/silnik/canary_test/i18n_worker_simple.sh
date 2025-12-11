@@ -4122,9 +4122,11 @@ for cat_name, config in sorted_cats:
         exit(0)
 
 # Standardowy przebieg
+pending_skip = False
 for cat_name, config in sorted_cats:
     # Pomiń kategorie oznaczone do skip
     if should_skip_category(cat_name, cat_state):
+        pending_skip = True
         continue
     needs_work = count_files_needing_work(cat_name)
     if needs_work > 0:
@@ -4132,6 +4134,13 @@ for cat_name, config in sorted_cats:
         write_category_state(cat_state)
         print(f"MIGRATION:{cat_name}:{needs_work}")
         exit(0)
+
+# Jeśli są kategorie na skip/backoff, nie przechodź do TRANSLATION_SYNC
+if pending_skip:
+    cat_state["migrations_done"] = False
+    write_category_state(cat_state)
+    print("MIGRATION:pending_skip:0:WAIT")
+    exit(0)
 
 # Jeśli tu doszliśmy: brak pracy migracyjnej → uznaj migracje za zakończone
 cat_state["migrations_done"] = True

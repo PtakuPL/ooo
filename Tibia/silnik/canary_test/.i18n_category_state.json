@@ -17,7 +17,8 @@
     "twig": 1765415642.8418,
     "php": 1765417680.7879562,
     "client": 1765417730.3851938,
-    "cpp": 1765415343.2795043
+    "cpp": 1765415343.2795043,
+    "pending_skip": 1765415135.9187732
   },
   "last_processed": {
     "scripts": {
@@ -99,6 +100,10 @@
     "cpp": {
       "count": 0,
       "timestamp": 1765414743.2794962
+    },
+    "pending_skip": {
+      "count": 0,
+      "timestamp": 1765414835.9187677
     }
   },
   "consecutive_zeros": {
@@ -121,7 +126,8 @@
     "client": 4,
     "php": 4,
     "spells": 0,
-    "cpp": 2
+    "cpp": 2,
+    "pending_skip": 1
   },
   "total_processed": {
     "items": 11689,
@@ -142,7 +148,7 @@
   },
   "translation_sync": {
     "current_lang": "az",
-    "current_category": "raids.json",
+    "current_category": "scripts.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -670,7 +676,7 @@
       },
       "az": {
         "chatchannels": 8,
-        "total": 28383,
+        "total": 28768,
         "client": 236,
         "events": 5,
         "html": 1495,
@@ -680,10 +686,11 @@
         "monsters": 7341,
         "npc": 5334,
         "php": 31,
-        "raids": 147
+        "raids": 147,
+        "scripts": 385
       }
     },
-    "last_sync": 1765414822.401325
+    "last_sync": 1765414830.6913543
   },
-  "migrations_done": true
+  "migrations_done": false
 }

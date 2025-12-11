@@ -3,7 +3,8 @@
     "npc": 1765489997.1887853,
     "scripts": 1765490035.8229382,
     "monsters": 1765490052.2641137,
-    "actions": 1765490061.8105276
+    "actions": 1765490061.8105276,
+    "quests": 1765490071.259005
   },
   "last_processed": {
     "npc": {
@@ -21,13 +22,18 @@
     "actions": {
       "count": 0,
       "timestamp": 1765489461.8105206
+    },
+    "quests": {
+      "count": 0,
+      "timestamp": 1765489471.2589943
     }
   },
   "consecutive_zeros": {
     "npc": 2,
     "scripts": 2,
     "monsters": 2,
-    "actions": 2
+    "actions": 2,
+    "quests": 2
   },
   "total_processed": {},
   "migrations_done": false

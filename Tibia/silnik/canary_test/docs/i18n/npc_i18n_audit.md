@@ -1,23 +1,50 @@
 # Audyt NPC – stan internacjonalizacji
 
-Data: 2025-12-11 17:18 UTC  
+Data: 2025-12-11 19:30 UTC (aktualizacja)  
 Źródło: lokalne skanowanie `data-otservbr-global/npc/*.lua`
 
 ## Wyniki skanu
-- Plików NPC: **1026**
-- Pliki z `i18nKey`: **445**
-- Pliki **bez** `i18nKey`: **581**
-- Pliki z twardymi tekstami w `NpcHandler:say`/`StdModule.say`: **100** (do natychmiastowej migracji na klucze)
+| Kategoria | Liczba |
+|-----------|--------|
+| Plików NPC ogółem | **1026** |
+| Pliki z `i18nKey` | **445** |
+| Pliki z `NPC_LIB.i18n.npcSay` | **453** |
+| Pliki **bez** `i18nKey` | **581** |
+| Pliki z twardymi stringami w `npcHandler:say()` | **100** |
+| Z tego już zmigrowane (ma NPC_LIB) | **81** |
+| **Faktycznie do migracji** | **19** |
+| Pliki "skeleton" (brak say/text) | **531** |
 
-Przykłady bez `i18nKey`: `chondur.lua`, `vigintius.lua`, `herbert.lua`, `malor.lua`, `romir.lua`, `vuzrog.lua`, `grombur.lua`, `ceiron.lua`, `scott_the_scout.lua`, `neill.lua`, `arkhothep.lua`, `ashari.lua`, `the_gate_keeper.lua`, `abran_ironeye.lua`, `curos.lua`, `pyromental.lua`, `corym_worker_01.lua`, `izsh.lua`, `angelina.lua`, `hjaern.lua`, … (łącznie 581).
+## Szczegółowa analiza 581 plików bez i18nKey
 
-Przykłady z twardymi stringami w `say`: `romir.lua`, `hjaern.lua`, `gnomargery.lua`, `charos.lua`, `paulie.lua`, `dalbrect.lua`, `jeronimo.lua`, `hireling.lua`, `sven.lua`, `dove.lua`, `storkus.lua`, `frosty.lua`, `duncan.lua`, `captain_dreadnought.lua`, `cledwyn.lua`, `grizzly_adams.lua`, `battlemart.lua`, `ocelus.lua`, `sigurd.lua`, `inigo.lua`, … (łącznie 100).
+Te pliki **nie** wymagają migracji mimo braku `i18nKey`:
+- **531 "skeleton"** – pliki bez żadnych `StdModule.say` ani `npcHandler:say` – nie mają tekstów do migracji
+- **50 z jakimś say** – ale z tego **244 już ma NPC_LIB.i18n.npcSay** (zmigrowane poprzez inny mechanizm)
 
-## Dlaczego worker ich nie robi?
-- Detekcja w workerze opiera się głównie na `StdModule.say` + `text` i `i18nKey`.  
-- Wiele plików używa `NpcHandler:say`/`npcHandler:say` bez `i18nKey` – nie spełniają obecnego warunku i są pomijane.  
-- Efekt: dispatcher widzi 0 „needs” mimo że w plikach są twarde stringi.
+## Pliki faktycznie wymagające migracji (19)
 
-## Sugestia naprawy
-- Rozszerzyć detekcję w Pythonie na `npcHandler:say` / `NpcHandler:say` (oraz ewentualnie `StdModule.say` bez `text`) z literalnymi stringami i brakiem `i18nKey`.  
-- Po zmianie ponownie przeliczyć `needs_migration_npc` i cykl migracji powinien ruszyć na brakujących 581 plikach (100 z bezpośrednimi stringami + reszta bez kluczy).
+Pliki z `npcHandler:say("literal")` bez `NPC_LIB`:
+- `alaistar.lua`, `battlemart.lua`, `bertram.lua`, `chuckles.lua`, `frans.lua`
+- `frederik.lua`, `ghorza.lua`, `gnomegica.lua`, `mordecai.lua`, `nelly.lua`
+- `nipuna.lua`, `rock_in_a_hard_place.lua`, `romir.lua`, `seymour.lua`, `shiriel.lua`
+- `sigurd.lua`, `sundara.lua`, `tandros.lua`, `the_lootmonger.lua`
+
+## Status detekcji w workerze
+
+✅ **Naprawione** (2025-12-11): Detekcja rozszerzona o:
+1. `StdModule.say` z `text = "..."` bez `i18nKey`
+2. `npcHandler:say("literal")` bez `NPC_LIB.i18n.npcSay`
+3. `NpcHandler:say("literal")` bez `NPC_LIB.i18n.npcSay`
+4. `npcConfig.voices` z `text = "..."` bez `i18nKey`
+
+Worker teraz poprawnie wykrywa **19 plików** do migracji.
+
+## Wnioski
+
+Wcześniejsza analiza (581 brakujących) była **błędna** – liczyła pliki bez `i18nKey`, ale nie weryfikowała czy mają cokolwiek do migracji. Większość to:
+- Pliki skeleton (tylko definicja NPC, brak dialogów)
+- Pliki już zmigrowane przez `NPC_LIB.i18n.npcSay` (bez użycia `i18nKey`)
+
+## Historia zmian
+- 2025-12-11 17:18 – Pierwszy audyt (błędne liczby)
+- 2025-12-11 19:30 – Korekta po analizie, rozszerzenie detekcji w workerze

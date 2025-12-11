@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-11 21:47:03 UTC  
+> **Aktualizacja:** 2025-12-11 21:47:39 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28803
 
 ---
@@ -69,7 +69,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#22** | od uruchomienia |
+| 🔄 Cykl aktualny | **#23** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **0** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -170,7 +170,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    22 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    23 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
@@ -180,7 +180,7 @@
 │    ├─ Kategoria    NPC:   5339 kluczy EN                    │
 │    └─ Total kluczy EN:  28803                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-11 21:47:03            │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 21:47:39            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -195,13 +195,13 @@
 | ⬜ Plików bez kluczy | **354** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **28803** | we wszystkich kategoriach |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#22** | continuous mode |
+| 🔄 Cykli wykonanych | **#23** | continuous mode |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
-- 🧙 `npc` +20 kluczy @ 21:47:02
+- 🧙 `npc` +20 kluczy @ 21:47:38
 - ⚡ `errors` +0 kluczy @ 17:41:10
 - ⚡ `otclient_tools` +0 kluczy @ 17:41:03
 - ⚡ `otclient_src` +0 kluczy @ 17:22:35
@@ -370,7 +370,7 @@
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 0 | 2 | ✅ Active |
 | monsters | 7341 | 0 | 2 | ✅ Active |
-| npc | 5339 | 12300 | 0 | ✅ Active |
+| npc | 5339 | 12340 | 0 | ✅ Active |
 | html | 1495 | 0 | 2 | ✅ Active |
 | spells | 304 | 0 | 2 | ✅ Active |
 | client | 242 | 0 | 2 | ✅ Active |
@@ -404,7 +404,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #22 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #23 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -447,7 +447,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 21:47:03  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 21:47:39  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
@@ -455,15 +455,15 @@
 ## Ostatnio zmigrowane NPC
 
 - ✅ `the_lootmonger` - ukończono 2025-12-11 21:47
-- ✅ `tandros` - ukończono 2025-12-11 21:46
-- ✅ `sundara` - ukończono 2025-12-11 21:46
-- ✅ `sigurd` - ukończono 2025-12-11 21:46
-- ✅ `shiriel` - ukończono 2025-12-11 21:46
-- ✅ `seymour` - ukończono 2025-12-11 21:46
-- ✅ `romir` - ukończono 2025-12-11 21:46
-- ✅ `rock_in_a_hard_place` - ukończono 2025-12-11 21:46
-- ✅ `nipuna` - ukończono 2025-12-11 21:46
-- ✅ `nelly` - ukończono 2025-12-11 21:46
+- ✅ `tandros` - ukończono 2025-12-11 21:47
+- ✅ `sundara` - ukończono 2025-12-11 21:47
+- ✅ `sigurd` - ukończono 2025-12-11 21:47
+- ✅ `shiriel` - ukończono 2025-12-11 21:47
+- ✅ `seymour` - ukończono 2025-12-11 21:47
+- ✅ `romir` - ukończono 2025-12-11 21:47
+- ✅ `rock_in_a_hard_place` - ukończono 2025-12-11 21:47
+- ✅ `nipuna` - ukończono 2025-12-11 21:47
+- ✅ `nelly` - ukończono 2025-12-11 21:47
 
 ---
 

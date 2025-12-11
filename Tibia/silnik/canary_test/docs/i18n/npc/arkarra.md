@@ -1,7 +1,7 @@
 # NPC: arkarra
 
 **Plik:** `data-otservbr-global/npc/arkarra.lua`
-**Data migracji:** 2025-12-11 04:06
+**Data migracji:** 2025-12-11 04:07
 **Liczba tekstów:** 1
 
 ## Klucze i18n

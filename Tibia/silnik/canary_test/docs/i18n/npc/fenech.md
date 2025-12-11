@@ -1,7 +1,7 @@
 # NPC: fenech
 
 **Plik:** `data-otservbr-global/npc/fenech.lua`
-**Data migracji:** 2025-12-11 04:07
+**Data migracji:** 2025-12-11 04:08
 **Liczba tekstów:** 1
 
 ## Klucze i18n

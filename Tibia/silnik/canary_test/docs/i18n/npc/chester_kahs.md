@@ -1,7 +1,7 @@
 # NPC: chester_kahs
 
 **Plik:** `data-otservbr-global/npc/chester_kahs.lua`
-**Data migracji:** 2025-12-11 04:07
+**Data migracji:** 2025-12-11 04:08
 **Liczba tekstów:** 5
 
 ## Klucze i18n

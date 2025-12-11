@@ -1,7 +1,16 @@
 {
-  "skip_until": {},
-  "last_processed": {},
-  "consecutive_zeros": {},
+  "skip_until": {
+    "npc": 1765422028.8379047
+  },
+  "last_processed": {
+    "npc": {
+      "count": 0,
+      "timestamp": 1765421428.837897
+    }
+  },
+  "consecutive_zeros": {
+    "npc": 2
+  },
   "total_processed": {},
   "translation_sync": {},
   "migrations_done": false

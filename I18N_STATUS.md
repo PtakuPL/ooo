@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 03:49:59 UTC  
+> **Aktualizacja:** 2025-12-11 03:50:29 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 29134
 
 ---
@@ -28,7 +28,7 @@
 | 🔑 Kluczy i18n (EN) | **29134** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#3** | - |
+| 🔄 Cykl | **#1** | - |
 
 ---
 
@@ -122,19 +122,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     3 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 RAIDS                                  │
+│ Kategoria: 🎒 NPC                                    │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: raids                                          │
-│ [███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 147/1000 kluczy (15%)                                          │
+│ 📊 Ostatnia aktywność: npc                                            │
+│ [█████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
+│ 5339/15000 kluczy (36%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 0 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 03:49:59                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 03:50:29                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -148,7 +148,7 @@
 | ✅ NPC zmigrowanych | **144** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29134** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#3** | continuous mode |
+| 🔄 Cykli wykonanych | **#1** | continuous mode |
 | 🎯 Aktywne kategorie | **15** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -156,10 +156,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- ⚡ `raids` +0 kluczy @ 03:49:59
-- 👹 `monsters` +0 kluczy @ 03:49:51
-- 📜 `scripts` +0 kluczy @ 03:49:42
-- 🧙 `npc` +0 kluczy @ 03:48:51
+- 🧙 `npc` +0 kluczy @ 03:50:28
 
 
 ---
@@ -320,13 +317,13 @@
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 0 | 0 | ✅ Active |
-| monsters | 7341 | 0 | 2 | ⏭️ Skip 9m |
-| npc | 5339 | 0 | 2 | ⏭️ Skip 8m |
+| monsters | 7341 | 0 | 0 | ✅ Active |
+| npc | 5339 | 0 | 2 | ⏭️ Skip 9m |
 | html | 1495 | 0 | 0 | ✅ Active |
-| scripts | 385 | 0 | 2 | ⏭️ Skip 9m |
+| scripts | 385 | 0 | 0 | ✅ Active |
 | spells | 304 | 0 | 0 | ✅ Active |
 | client | 236 | 0 | 0 | ✅ Active |
-| raids | 147 | 0 | 2 | ⏭️ Skip 9m |
+| raids | 147 | 0 | 0 | ✅ Active |
 | php | 54 | 0 | 0 | ✅ Active |
 | startup | 23 | 0 | 0 | ✅ Active |
 | libs | 21 | 0 | 0 | ✅ Active |
@@ -349,10 +346,7 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| npc | 8m | 2x | Progresywny backoff |
-| scripts | 9m | 2x | Progresywny backoff |
-| monsters | 9m | 2x | Progresywny backoff |
-| raids | 9m | 2x | Progresywny backoff |
+| npc | 9m | 2x | Progresywny backoff |
 
 ---
 
@@ -360,7 +354,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #3 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -403,7 +397,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:49:59  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:50:29  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

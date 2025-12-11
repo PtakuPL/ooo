@@ -130,7 +130,7 @@
   },
   "translation_sync": {
     "current_lang": "kk",
-    "current_category": "scripts.json",
+    "current_category": "spells.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -593,7 +593,7 @@
       },
       "kk": {
         "chatchannels": 8,
-        "total": 28501,
+        "total": 28516,
         "events": 5,
         "html": 1495,
         "items": 13749,
@@ -602,9 +602,10 @@
         "monsters": 7341,
         "npc": 5334,
         "raids": 147,
-        "scripts": 385
+        "scripts": 385,
+        "spells": 15
       }
     },
-    "last_sync": 1765413614.4430969
+    "last_sync": 1765413623.0023968
   }
 }

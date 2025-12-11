@@ -2510,12 +2510,23 @@ process_cpp_category() {
         local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
         
         # Wyciągnij stringi > 10 znaków
-        local strings=$(grep -oP '"[^"]{10,100}"' "$file" 2>/dev/null | tr -d '"' | head -5)
+        # FILTRUJ: pomiń kod, formaty, ścieżki
+        local strings=$(grep -oP '"[^"]{10,100}"' "$file" 2>/dev/null \
+            | tr -d '"' \
+            | grep -v '%' \
+            | grep -v '\\' \
+            | grep -v '::' \
+            | grep -v '->' \
+            | grep -v '/' \
+            | grep -v '\.' \
+            | grep -v '_' \
+            | head -5)
         
         if [ -n "$strings" ]; then
             local i=1
             while IFS= read -r str; do
-                if [ -n "$str" ] && [ ${#str} -gt 8 ]; then
+                # Tylko tekst z literami i spacjami, bez camelCase
+                if [ -n "$str" ] && [ ${#str} -gt 8 ] && [[ "$str" =~ [a-zA-Z].*[[:space:]].*[a-zA-Z] ]]; then
                     python3 -c "
 import json
 try:

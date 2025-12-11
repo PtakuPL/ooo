@@ -524,6 +524,44 @@ roadmap_ui = f"| 🎨 UI | {ui_keys} | {progress_bar(ui_keys, TARGETS['ui'])} | 
 # Debug targets (łatwiej znaleźć rozjazdy auto-adjust)
 targets_comment = f"<!-- TARGETS {TARGETS} -->"
 
+# AUTO tłumaczenia - statystyki TM
+try:
+    with open(f"{I18N_DIR}/translation_memory.json") as f:
+        tm_data = json.load(f)
+except:
+    tm_data = {}
+
+# Języki do podglądu auto (TM lub kluczowe)
+auto_langs = sorted(set(list(tm_data.keys()) + ["pl","de","es","pt","ru","fr","tr","it","sv","ro","tr"]))
+auto_rows = []
+for _lang in auto_langs:
+    tm_count = len(tm_data.get(_lang, {})) if isinstance(tm_data.get(_lang, {}), dict) else 0
+    status_auto = "✅ TM" if tm_count > 0 else "⚠️ placeholdery (brak TM)"
+    auto_rows.append(f"| {_lang.upper()} | {tm_count} | {status_auto} |")
+auto_table = "
+".join(auto_rows)
+
+# Status workera (ostatni tryb z i18n_global_stats.json)
+try:
+    with open("i18n_global_stats.json") as f:
+        _global_stats = json.load(f)
+        last_mode = _global_stats.get("mode", "")
+except:
+    last_mode = ""
+
+# Podgląd aktualnego trybu/kategorii do LIVE box
+if sync_current_lang:
+    mode_display = "🌍 TRANSLATION_SYNC (Etap 1)"
+    category_display = f"🌍 {sync_current_lang.upper()}/{sync_current_cat}"
+elif last_mode == "AUTO_TRANSLATE":
+    mode_display = "🤖 AUTO_TRANSLATE"
+    category_display = "AUTO_TRANSLATE"
+elif current_category:
+    mode_display = "MIGRATION (multi-category)"
+    category_display = f"🎒 {current_category.upper()}"
+else:
+    mode_display = "IDLE"
+    category_display = "IDLE"
 # Status workera (ostatni tryb z i18n_global_stats.json)
 try:
     with open("i18n_global_stats.json") as f:

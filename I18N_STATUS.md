@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-11 22:29:50 UTC  
+> **Aktualizacja:** 2025-12-11 22:31:31 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28857
 
 ---
@@ -180,7 +180,7 @@
 │    ├─ Kategoria SCRIPTS:     97 kluczy EN                    │
 │    └─ Total kluczy EN:  28857                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-11 22:29:50            │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 22:31:31            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -368,29 +368,29 @@
 
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
-| items | 13749 | 0 | 4 | ⏭️ Skip 50m |
-| monsters | 7341 | 0 | 4 | ⏭️ Skip 48m |
-| npc | 5339 | 13620 | 4 | ⏭️ Skip 56m |
-| html | 1495 | 0 | 4 | ⏭️ Skip 52m |
+| items | 13749 | 0 | 4 | ⏭️ Skip 48m |
+| monsters | 7341 | 0 | 4 | ⏭️ Skip 47m |
+| npc | 5339 | 13620 | 4 | ⏭️ Skip 54m |
+| html | 1495 | 0 | 4 | ⏭️ Skip 51m |
 | spells | 304 | 0 | 2 | ✅ Active |
 | client | 242 | 0 | 2 | ✅ Active |
-| raids | 147 | 0 | 4 | ⏭️ Skip 49m |
-| scripts | 97 | 273 | 4 | ⏭️ Skip 59m |
-| php | 59 | 15 | 2 | ⏭️ Skip 2m |
-| startup | 23 | 0 | 4 | ⏭️ Skip 51m |
-| libs | 21 | 0 | 4 | ⏭️ Skip 51m |
-| modules | 16 | 0 | 4 | ⏭️ Skip 51m |
+| raids | 147 | 0 | 4 | ⏭️ Skip 47m |
+| scripts | 97 | 273 | 4 | ⏭️ Skip 58m |
+| php | 59 | 15 | 2 | ⏭️ Skip 0m |
+| startup | 23 | 0 | 4 | ⏭️ Skip 50m |
+| libs | 21 | 0 | 4 | ⏭️ Skip 49m |
+| modules | 16 | 0 | 4 | ⏭️ Skip 49m |
 | messages | 11 | 0 | 0 | ✅ Active |
-| chatchannels | 8 | 0 | 4 | ⏭️ Skip 51m |
-| events | 5 | 0 | 4 | ⏭️ Skip 51m |
-| actions | 0 | 0 | 4 | ⏭️ Skip 49m |
+| chatchannels | 8 | 0 | 4 | ⏭️ Skip 49m |
+| events | 5 | 0 | 4 | ⏭️ Skip 49m |
+| actions | 0 | 0 | 4 | ⏭️ Skip 47m |
 | cpp | 0 | 0 | 2 | ⏳ Empty |
-| errors | 0 | 0 | 4 | ⏭️ Skip 53m |
-| npclib | 0 | 0 | 4 | ⏭️ Skip 51m |
-| quests | 0 | 0 | 4 | ⏭️ Skip 49m |
+| errors | 0 | 0 | 4 | ⏭️ Skip 51m |
+| npclib | 0 | 0 | 4 | ⏭️ Skip 50m |
+| quests | 0 | 0 | 4 | ⏭️ Skip 47m |
 | server | 0 | 0 | 2 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
-| world | 0 | 0 | 4 | ⏭️ Skip 49m |
+| world | 0 | 0 | 4 | ⏭️ Skip 48m |
 
 ---
 
@@ -398,32 +398,32 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| monsters | 48m | 4x | Progresywny backoff |
-| actions | 49m | 4x | Progresywny backoff |
-| quests | 49m | 4x | Progresywny backoff |
-| raids | 49m | 4x | Progresywny backoff |
-| world | 49m | 4x | Progresywny backoff |
-| talkactions | 49m | 4x | Progresywny backoff |
-| movements | 50m | 4x | Progresywny backoff |
-| creaturescripts | 50m | 4x | Progresywny backoff |
-| globalevents | 50m | 4x | Progresywny backoff |
-| items | 50m | 4x | Progresywny backoff |
-| mounts | 50m | 4x | Progresywny backoff |
-| libs | 51m | 4x | Progresywny backoff |
-| events | 51m | 4x | Progresywny backoff |
-| chatchannels | 51m | 4x | Progresywny backoff |
-| modules | 51m | 4x | Progresywny backoff |
-| startup | 51m | 4x | Progresywny backoff |
-| npclib | 51m | 4x | Progresywny backoff |
-| dataroot | 52m | 4x | Progresywny backoff |
-| html | 52m | 4x | Progresywny backoff |
-| otclient_modules | 52m | 4x | Progresywny backoff |
-| otclient_data | 53m | 4x | Progresywny backoff |
-| otclient_tools | 53m | 4x | Progresywny backoff |
-| errors | 53m | 4x | Progresywny backoff |
-| npc | 56m | 4x | Progresywny backoff |
-| scripts | 59m | 4x | Progresywny backoff |
-| php | 2m | 2x | Progresywny backoff |
+| monsters | 47m | 4x | Progresywny backoff |
+| actions | 47m | 4x | Progresywny backoff |
+| quests | 47m | 4x | Progresywny backoff |
+| raids | 47m | 4x | Progresywny backoff |
+| world | 48m | 4x | Progresywny backoff |
+| talkactions | 48m | 4x | Progresywny backoff |
+| movements | 48m | 4x | Progresywny backoff |
+| creaturescripts | 48m | 4x | Progresywny backoff |
+| globalevents | 48m | 4x | Progresywny backoff |
+| items | 48m | 4x | Progresywny backoff |
+| mounts | 49m | 4x | Progresywny backoff |
+| libs | 49m | 4x | Progresywny backoff |
+| events | 49m | 4x | Progresywny backoff |
+| chatchannels | 49m | 4x | Progresywny backoff |
+| modules | 49m | 4x | Progresywny backoff |
+| startup | 50m | 4x | Progresywny backoff |
+| npclib | 50m | 4x | Progresywny backoff |
+| dataroot | 50m | 4x | Progresywny backoff |
+| html | 51m | 4x | Progresywny backoff |
+| otclient_modules | 51m | 4x | Progresywny backoff |
+| otclient_data | 51m | 4x | Progresywny backoff |
+| otclient_tools | 51m | 4x | Progresywny backoff |
+| errors | 51m | 4x | Progresywny backoff |
+| npc | 54m | 4x | Progresywny backoff |
+| scripts | 58m | 4x | Progresywny backoff |
+| php | 0m | 2x | Progresywny backoff |
 
 ---
 
@@ -474,7 +474,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 22:29:50  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 22:31:31  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

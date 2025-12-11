@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-12-11 17:18:45",
+  "counts": {
+    "npc": 5339,
+    "scripts": 43,
+    "items": 13749,
+    "monsters": 7341,
+    "spells": 304,
+    "server": 0,
+    "php": 59,
+    "html": 1495,
+    "client": 242,
+    "ui": 0,
+    "cpp": 0
+  }
+}

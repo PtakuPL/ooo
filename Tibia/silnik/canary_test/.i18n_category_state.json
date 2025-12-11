@@ -141,7 +141,7 @@
     "spells": 150
   },
   "translation_sync": {
-    "current_lang": "bs",
+    "current_lang": "sr",
     "current_category": "spells.json",
     "languages_done": [],
     "stats": {
@@ -551,7 +551,7 @@
       },
       "sr": {
         "chatchannels": 8,
-        "total": 28806,
+        "total": 28856,
         "events": 5,
         "html": 1495,
         "items": 13749,
@@ -561,7 +561,7 @@
         "npc": 5334,
         "raids": 147,
         "scripts": 385,
-        "spells": 15,
+        "spells": 65,
         "startup": 23,
         "client": 236,
         "php": 31
@@ -680,7 +680,7 @@
         "monsters": 7341
       }
     },
-    "last_sync": 1765414735.2758663
+    "last_sync": 1765414745.290375
   },
   "migrations_done": true
 }

@@ -4629,7 +4629,9 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             fi
             
             # Jeśli nie było wymuszenia, użyj dispatchera
-            if [ -z "$MODE_EXTRA" ] || [ "$MODE_EXTRA" != "FORCED" -a "$MODE_EXTRA" != "RANDOM" ]; then
+            if [ "$MODE_EXTRA2" = "AUTO" ]; then
+                :
+            elif [ -z "$MODE_EXTRA" ] || [ "$MODE_EXTRA" != "FORCED" -a "$MODE_EXTRA" != "RANDOM" ]; then
                 MODE_RESULT=$(select_work_mode)
                 MODE_TYPE=$(echo "$MODE_RESULT" | cut -d: -f1)
                 MODE_CAT=$(echo "$MODE_RESULT" | cut -d: -f2)

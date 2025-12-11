@@ -20,7 +20,7 @@
     "keywordhandler": 1765416427.864905,
     "twig": 1765416436.027876,
     "items": 1765416450.6506839,
-    "pending_skip": 1765419490.8147528
+    "pending_skip": 1765423099.2147293
   },
   "last_processed": {
     "npc": {
@@ -109,7 +109,7 @@
     },
     "pending_skip": {
       "count": 0,
-      "timestamp": 1765415890.8147476
+      "timestamp": 1765415899.2147214
     }
   },
   "consecutive_zeros": {
@@ -134,7 +134,7 @@
     "sendtextmessage": 2,
     "keywordhandler": 2,
     "twig": 2,
-    "pending_skip": 4
+    "pending_skip": 5
   },
   "total_processed": {
     "spells": 370,

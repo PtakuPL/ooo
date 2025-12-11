@@ -1,7 +1,7 @@
 # NPC: nipuna
 
 **Plik:** `data-otservbr-global/npc/nipuna.lua`
-**Data migracji:** 2025-12-11 17:11
+**Data migracji:** 2025-12-11 17:12
 **Liczba tekstów:** 0
 
 ## Klucze i18n

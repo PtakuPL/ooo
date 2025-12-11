@@ -142,7 +142,7 @@
   },
   "translation_sync": {
     "current_lang": "az",
-    "current_category": "php.json",
+    "current_category": "raids.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -670,7 +670,7 @@
       },
       "az": {
         "chatchannels": 8,
-        "total": 28236,
+        "total": 28383,
         "client": 236,
         "events": 5,
         "html": 1495,
@@ -679,10 +679,11 @@
         "modules": 16,
         "monsters": 7341,
         "npc": 5334,
-        "php": 31
+        "php": 31,
+        "raids": 147
       }
     },
-    "last_sync": 1765414813.6041882
+    "last_sync": 1765414822.401325
   },
   "migrations_done": true
 }

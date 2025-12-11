@@ -676,7 +676,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:51:08.227439"
+      "completed_at": "2025-12-11T18:51:58.737468"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -787,7 +787,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:51:10.547785"
+      "completed_at": "2025-12-11T18:52:00.889603"
     },
     "data-otservbr-global/npc/bertram.lua": {
       "stages": {
@@ -904,7 +904,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:51:12.651617"
+      "completed_at": "2025-12-11T18:52:02.393235"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {

@@ -130,7 +130,7 @@
   },
   "translation_sync": {
     "current_lang": "fi",
-    "current_category": "client.json",
+    "current_category": "php.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -369,7 +369,7 @@
       },
       "fi": {
         "chatchannels": 8,
-        "total": 28775,
+        "total": 28806,
         "events": 5,
         "html": 1495,
         "items": 13749,
@@ -381,7 +381,8 @@
         "scripts": 385,
         "spells": 15,
         "startup": 23,
-        "client": 236
+        "client": 236,
+        "php": 31
       },
       "et": {
         "chatchannels": 8,
@@ -616,6 +617,6 @@
         "items": 13749
       }
     },
-    "last_sync": 1765414027.700511
+    "last_sync": 1765414035.35756
   }
 }

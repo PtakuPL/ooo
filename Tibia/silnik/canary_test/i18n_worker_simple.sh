@@ -4058,36 +4058,51 @@ def check_translation(key, en_text, translation, lang, source_file):
     
     return local_issues
 
-# Skanuj wszystkie pliki JSON
-for subdir in ['npc', 'scripts', 'monsters', 'items', 'spells']:
-    dir_path = os.path.join(I18N_DIR, subdir)
-    if not os.path.exists(dir_path):
+# Skanuj wszystkie pliki JSON w strukturze i18n/{lang}/{category}.json
+CATEGORIES = ['npc', 'scripts', 'monsters', 'items', 'spells', 'quests', 'actions']
+
+# Najpierw wczytaj EN jako bazę
+en_dir = os.path.join(I18N_DIR, "en")
+if not os.path.exists(en_dir):
+    print("⚠️ Brak katalogu i18n/en")
+    exit(0)
+
+en_data = {}  # {category: {key: text}}
+for cat in CATEGORIES:
+    en_file = os.path.join(en_dir, f"{cat}.json")
+    if os.path.exists(en_file):
+        try:
+            with open(en_file, 'r', encoding='utf-8') as f:
+                en_data[cat] = json.load(f)
+        except:
+            pass
+
+# Teraz sprawdź tłumaczenia w innych językach
+for lang_dir in os.listdir(I18N_DIR):
+    lang_path = os.path.join(I18N_DIR, lang_dir)
+    if not os.path.isdir(lang_path) or lang_dir == 'en':
         continue
     
-    for fname in os.listdir(dir_path):
-        if not fname.endswith('.json'):
+    for cat in CATEGORIES:
+        if cat not in en_data:
             continue
         
-        fpath = os.path.join(dir_path, fname)
+        lang_file = os.path.join(lang_path, f"{cat}.json")
+        if not os.path.exists(lang_file):
+            continue
+        
         try:
-            with open(fpath, 'r', encoding='utf-8') as f:
-                data = json.load(f)
+            with open(lang_file, 'r', encoding='utf-8') as f:
+                lang_data = json.load(f)
         except:
             continue
         
-        for key, val in data.items():
-            if not isinstance(val, dict):
+        for key, translation in lang_data.items():
+            en_text = en_data[cat].get(key, '')
+            if not en_text or not translation:
                 continue
             
-            en_text = val.get('en', '')
-            if not en_text:
-                continue
-            
-            for lang, translation in val.items():
-                if lang == 'en' or not translation:
-                    continue
-                
-                issues.extend(check_translation(key, en_text, translation, lang, fpath))
+            issues.extend(check_translation(key, en_text, translation, lang_dir, lang_file))
 
 # Zapisz raport
 report = {
@@ -5102,12 +5117,19 @@ for cat_name, config in sorted_cats:
 
 # Standardowy przebieg
 pending_skip = False
+skip_has_work = False
+total_needs = 0
 for cat_name, config in sorted_cats:
-    # Pomiń kategorie oznaczone do skip
+    needs_work = count_files_needing_work(cat_name)
+    total_needs += needs_work
+    
+    # Pomiń kategorie oznaczone do skip, ale zapamiętaj czy mają pracę
     if should_skip_category(cat_name, cat_state):
         pending_skip = True
+        if needs_work > 0:
+            skip_has_work = True
         continue
-    needs_work = count_files_needing_work(cat_name)
+    
     if needs_work > 0:
         cat_state["migrations_done"] = False
         write_category_state(cat_state)
@@ -5118,8 +5140,10 @@ for cat_name, config in sorted_cats:
 if pending_skip:
     cat_state["migrations_done"] = False
     write_category_state(cat_state)
-    print("MIGRATION:pending_skip:0:WAIT")
-    exit(0)
+    if skip_has_work or total_needs > 0:
+        print(f"MIGRATION:pending_skip:{total_needs}:WAIT")
+        exit(0)
+    # jeśli nie ma realnej pracy, pozwól przejść dalej
 
 # Jeśli tu doszliśmy: brak pracy migracyjnej → uznaj migracje za zakończone
 cat_state["migrations_done"] = True

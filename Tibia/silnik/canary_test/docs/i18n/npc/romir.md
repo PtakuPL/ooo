@@ -1,7 +1,7 @@
 # NPC: romir
 
 **Plik:** `data-otservbr-global/npc/romir.lua`
-**Data migracji:** 2025-12-11 20:28
+**Data migracji:** 2025-12-11 20:29
 **Liczba tekstów:** 0
 
 ## Klucze i18n

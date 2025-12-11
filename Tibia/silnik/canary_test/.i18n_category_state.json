@@ -37,7 +37,7 @@
   "last_processed": {
     "npc": {
       "count": 20,
-      "timestamp": 1765481731.1712286
+      "timestamp": 1765481776.2195513
     },
     "scripts": {
       "count": 44,
@@ -219,7 +219,7 @@
     "errors": 2
   },
   "total_processed": {
-    "npc": 8860,
+    "npc": 8900,
     "scripts": 69,
     "php": 15
   },

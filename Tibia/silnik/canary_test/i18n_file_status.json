@@ -228,7 +228,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:35:18.787593"
+      "completed_at": "2025-12-11T20:36:04.740071"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -450,7 +450,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:35:20.062636"
+      "completed_at": "2025-12-11T20:36:05.924753"
     },
     "data-otservbr-global/npc/bertram.lua": {
       "stages": {
@@ -682,7 +682,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:35:21.734777"
+      "completed_at": "2025-12-11T20:36:07.474659"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -908,7 +908,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:35:23.121443"
+      "completed_at": "2025-12-11T20:36:08.734606"
     },
     "data-otservbr-global/npc/cranky_lizard_crone.lua": {
       "stages": {
@@ -1138,7 +1138,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:35:24.436288"
+      "completed_at": "2025-12-11T20:36:09.935048"
     },
     "data-otservbr-global/npc/sundara.lua": {
       "stages": {
@@ -1253,7 +1253,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:35:26.017954"
+      "completed_at": "2025-12-11T20:36:11.422884"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -1820,7 +1820,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:35:28.950530"
+      "completed_at": "2025-12-11T20:36:14.080686"
     },
     "data-otservbr-global/npc/mordecai.lua": {
       "stages": {
@@ -2276,7 +2276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:35:27.469540"
+      "completed_at": "2025-12-11T20:36:12.728023"
     }
   },
   "global_stats": {

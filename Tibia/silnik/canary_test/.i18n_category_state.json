@@ -18,7 +18,8 @@
     "php": 1765417680.7879562,
     "client": 1765417730.3851938,
     "cpp": 1765415343.2795043,
-    "pending_skip": 1765422823.6741395
+    "pending_skip": 1765422823.6741395,
+    "translation": 1765415931.5427024
   },
   "last_processed": {
     "scripts": {
@@ -104,6 +105,10 @@
     "pending_skip": {
       "count": 0,
       "timestamp": 1765415623.6741338
+    },
+    "translation": {
+      "count": 0,
+      "timestamp": 1765415631.5426953
     }
   },
   "consecutive_zeros": {
@@ -127,7 +132,8 @@
     "php": 4,
     "spells": 0,
     "cpp": 2,
-    "pending_skip": 88
+    "pending_skip": 88,
+    "translation": 1
   },
   "total_processed": {
     "items": 11689,

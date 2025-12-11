@@ -3347,6 +3347,11 @@ placeholders = 0
 guard_fail = 0
 tm_updates = 0
 for key, en_text in en_data.items():
+    # Sprawdź limit tłumaczeń
+    if translate_limit > 0 and translated >= translate_limit:
+        print(f"⚠️ Osiągnięto limit {translate_limit} tłumaczeń")
+        break
+        
     if key in lang_data:
         # Sprawdź czy to placeholder
         if not lang_data[key].startswith("["):

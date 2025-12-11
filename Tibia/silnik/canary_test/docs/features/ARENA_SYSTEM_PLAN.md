@@ -316,3 +316,104 @@ html_copy/                           # Strona WWW
 - `docs/API_ARENA.md` - Dokumentacja API (do napisania)
 - `tests/arena/` - Testy jednostkowe
 
+
+---
+
+## ⚙️ Architektura Techniczna (Serwer + WWW + Klient)
+
+### 1. Przepływ danych (high‑level)
+
+1. Gracz otwiera okno Areny (UI jak Market) w kliencie.
+2. Klient wysyła pakiet `ARENA_OPEN`, serwer odsyła statystyki (`ARENA_STATS`).
+3. Gracz wybiera tryb, klient wysyła `ARENA_JOIN_QUEUE(mode)` / `ARENA_LEAVE_QUEUE`.
+4. Serwer (C++) dodaje gracza do kolejki `arena_queue` (DB + cache w pamięci).
+5. `ArenaSystem::tickMatchmaking()` cyklicznie dobiera składy wg MMR i trybu.
+6. Serwer tworzy rekord w `arena_matches`, teleportuje graczy na mapę areny.
+7. Po meczu serwer liczy wynik, aktualizuje `arena_players` i `arena_match_players`.
+8. WWW i klient czytają z DB / cache rankingi i historię meczów.
+
+### 2. Serwer gry (C++ + Lua + DB)
+
+**Moduł C++ `ArenaSystem` (`src/game/arena/`):**
+
+- `joinQueue(Player*, ArenaMode)` / `leaveQueue(Player*)` – wejście/wyjście z kolejki.
+- `tickMatchmaking()` – logika dobierania przeciwników (MMR, rozszerzanie zakresu).
+- `startMatch(std::vector<Player*>, ArenaMode)` – utworzenie meczu, teleporty.
+- `finishMatch(ArenaMatchResult)` – wynik, obliczenie MMR, nagrody, zapis do DB.
+
+**Struktury pomocnicze:**
+
+- `ArenaMatch` – stan trwającego meczu (gracze, teamy, mapa, czas, statystyki).
+- Hooki do istniejącej logiki walki: `onKill`, `onDeath`, `onLogout` w arenie.
+
+**Lua (`data/scripts/arena/`):**
+
+- `arena_main.lua` – klej pomiędzy C++ a skryptami.
+- `arena_matchmaking.lua` – dodatkowe zasady (np. wybór mapy, tryb losowy).
+- `modes/*.lua` – szczegółowe reguły FFA, CTF, KotH, LMS itd.
+
+**Matchmaking / MMR:**
+
+- MMR w `arena_players.mmr`, aktualizowany po każdym meczu.
+- Zakres dobierania przeciwników:
+  - start: MMR ±100, po 30s: ±200, po 60s: ±500, po 120s: dowolny.
+- K‑factor / formuła MMR zależna od różnicy ratingu i wyniku meczu.
+
+### 3. Warstwa WWW (`html_copy/arena/`)
+
+**Routing / strony:**
+
+- `/arena` – opis systemu, aktualny sezon.
+- `/arena/rankings` – globalny ranking (MMR, Wins, Streak).
+- `/arena/rankings/1v1`, `/arena/rankings/team` – widoki per tryb.
+- `/arena/player/{name}` – karta arenowa gracza (MMR, historia meczów).
+
+**Implementacja (PHP + Twig):**
+
+- `index.php`, `rankings.php`, `player.php` + szablony Twig.
+- Zapytania do `arena_players`, `arena_season_rankings`, `arena_match_players`.
+- Paginacja (np. 50 wierszy na stronę) + sortowanie po MMR / wins.
+- Możliwy cache JSON (np. `cache/arena_rankings.json`) odświeżany co X minut.
+
+### 4. Warstwa klienta (instalka) – UI jak Market
+
+**Nowe okno „Arena” w kliencie:**
+
+- Zakładka `Arena` obok `Market/Store`.
+- Lista trybów (kafle/przyciski) + opis, wymagania, nagrody.
+- Panel statystyk gracza: `MMR`, `Wins`, `Losses`, `Streak`.
+- Przyciski `Join Queue` / `Leave Queue`.
+- Mini‑rankingi (Top 10) zsynchronizowane z serwerem.
+
+**Pakiety protokołu (`protocolgame_arena.cpp`):**
+
+- Client → Server:
+  - `ARENA_OPEN`, `ARENA_JOIN_QUEUE(mode)`, `ARENA_LEAVE_QUEUE`, `ARENA_REQUEST_RANKING(page,filter)`.
+- Server → Client:
+  - `ARENA_STATUS` (stan: idle/queue/match, ETA, wielkość kolejki),
+  - `ARENA_STATS` (MMR + wins/losses/streak),
+  - `ARENA_MATCH_FOUND` (info o przeciwnikach/mapie),
+  - `ARENA_RANKING_DATA` (dane do UI rankingów).
+
+**UI technicznie:**
+
+- Reuse istniejących komponentów marketu: listview, scroll, buttons.
+- Nowe ikony / grafiki w assets (np. dla trybów areny).
+
+### 5. Integracje: i18n, logi, bezpieczeństwo
+
+- Nowy plik `i18n/en/arena.json` + tłumaczenia (nazwy trybów, komunikaty, UI).
+- Log `logs/arena.log` – tworzenie meczów, wyniki, zmiany MMR.
+- Anti‑cheat / anti‑boost:
+  - blokada teleportów/spelli spoza areny w trakcie meczu,
+  - wykrywanie powtarzających się par graczy i podejrzanych serii,
+  - limity dziennego zysku MMR.
+
+### 6. Etapy wdrożenia (technicznie)
+
+1. **Serwer core** – tabele DB + prosty `ArenaSystem` + komendy GM.
+2. **Prosty klient UI** – okno areny, join/leave kolejki, podstawowe staty.
+3. **Pełny matchmaking + statystyki** – zapis meczów, K/D, damage/heal.
+4. **WWW rankingi** – podstrony arena + API rankingu.
+5. **Sezony i polish** – nagrody, sklep, balans, testy, i18n.
+

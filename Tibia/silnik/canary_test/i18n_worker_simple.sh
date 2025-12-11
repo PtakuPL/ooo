@@ -538,7 +538,10 @@ try:
         tm_data = json.load(f)
 except:
     tm_data = {}
-no_tm_langs = [lang for lang in TARGET_LANGUAGES if lang not in tm_data]
+tm_langs = set(tm_data.keys())
+sync_langs = set(sync_stats.keys()) if isinstance(sync_stats, dict) else set()
+known_langs = sorted(tm_langs | sync_langs | {"pl", "de", "es", "pt", "ru", "fr", "tr"})
+no_tm_langs = [lang for lang in known_langs if lang not in tm_langs]
 
 # Podgląd aktualnego trybu/kategorii do LIVE box
 if sync_current_lang:

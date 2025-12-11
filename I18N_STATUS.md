@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-11 22:18:37 UTC  
+> **Aktualizacja:** 2025-12-11 22:18:50 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28857
 
 ---
@@ -26,8 +26,8 @@
 |---------|---------|---------|------|
 | 📂 **Wszystkie pliki** | **16,208** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **7,742** | 47.8% | pliki z kodem/tekstami |
-| 🔍 **Przeskanowane** | **111** | **1.4%** | historia workera |
-| ⏳ Nie przeskanowane | **7,631** | 98.6% | czekają na skan |
+| 🔍 **Przeskanowane** | **121** | **1.6%** | historia workera |
+| ⏳ Nie przeskanowane | **7,621** | 98.4% | czekają na skan |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -69,7 +69,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#1** | od uruchomienia |
+| 🔄 Cykl aktualny | **#2** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **0** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -170,17 +170,17 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     2 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
-│ Kategoria: 📁 SCRIPTS                                │
+│ Kategoria: 📁 MONSTERS                               │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Pliki przeskanowane:     20 (wszystkie kategorie)          │
-│    ├─ Kategoria SCRIPTS:     97 kluczy EN                    │
+│    ├─ Kategoria MONSTERS:   7341 kluczy EN                    │
 │    └─ Total kluczy EN:  28857                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-11 22:18:37            │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 22:18:50            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -195,12 +195,13 @@
 | ⬜ Plików bez kluczy | **20** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **0** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#1** | continuous mode |
+| 🔄 Cykli wykonanych | **#2** | continuous mode |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
+- 👹 `monsters` +0 kluczy @ 22:18:48
 - 📜 `scripts` +0 kluczy @ 22:18:35
 - 🧙 `npc` +0 kluczy @ 22:15:45
 - ⚡ `errors` +0 kluczy @ 17:41:10
@@ -208,7 +209,6 @@
 - ⚡ `otclient_src` +0 kluczy @ 17:22:35
 - ⚡ `otclient_data` +0 kluczy @ 17:22:22
 - ⚡ `otclient_mods` +0 kluczy @ 17:22:11
-- ⚡ `otclient_modules` +0 kluczy @ 17:22:03
 
 
 ---
@@ -369,8 +369,8 @@
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 0 | 2 | ✅ Active |
-| monsters | 7341 | 0 | 2 | ✅ Active |
-| npc | 5339 | 13620 | 2 | ⏭️ Skip 7m |
+| monsters | 7341 | 0 | 4 | ⏭️ Skip 59m |
+| npc | 5339 | 13620 | 2 | ⏭️ Skip 6m |
 | html | 1495 | 0 | 2 | ✅ Active |
 | spells | 304 | 0 | 2 | ✅ Active |
 | client | 242 | 0 | 2 | ✅ Active |
@@ -398,7 +398,8 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| npc | 7m | 2x | Progresywny backoff |
+| monsters | 59m | 4x | Progresywny backoff |
+| npc | 6m | 2x | Progresywny backoff |
 | scripts | 9m | 2x | Progresywny backoff |
 
 ---
@@ -407,7 +408,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #2 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -450,7 +451,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 22:18:37  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 22:18:50  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

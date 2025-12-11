@@ -109,3 +109,13 @@ data/scripts/talkactions/gm/clean.lua
 data/scripts/talkactions/player/tutor_position.lua
 data/scripts/talkactions/player/refill.lua
 data/scripts/creaturescripts/monster/boss_lever_death.lua
+data-otservbr-global/monster/nostalgia/old_bonelord.lua
+data-otservbr-global/monster/nostalgia/old_wasp.lua
+data-otservbr-global/monster/nostalgia/old_pig.lua
+data-otservbr-global/monster/nostalgia/old_giant_spider.lua
+data-otservbr-global/monster/nostalgia/old_wolf.lua
+data-otservbr-global/monster/nostalgia/old_bear.lua
+data-otservbr-global/monster/nostalgia/old_spider.lua
+data-otservbr-global/monster/nostalgia/old_bug.lua
+data-otservbr-global/monster/constructs/weeper.lua
+data-otservbr-global/monster/constructs/eternal_guardian.lua

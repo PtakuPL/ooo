@@ -799,7 +799,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:18:44.305407"
+      "completed_at": "2025-12-11T04:19:52.819466"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -3087,7 +3087,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:18:39.013618"
+      "completed_at": "2025-12-11T04:19:46.928040"
     },
     "data-otservbr-global/npc/a_dead_bureaucrat2.lua": {
       "stages": {
@@ -3204,7 +3204,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:18:40.469447"
+      "completed_at": "2025-12-11T04:19:48.435492"
     },
     "data-otservbr-global/npc/a_dead_bureaucrat3.lua": {
       "stages": {
@@ -3321,7 +3321,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:18:41.878990"
+      "completed_at": "2025-12-11T04:19:49.851907"
     },
     "data-otservbr-global/npc/a_dead_bureaucrat4.lua": {
       "stages": {
@@ -3438,7 +3438,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:18:43.114948"
+      "completed_at": "2025-12-11T04:19:51.261827"
     },
     "data-otservbr-global/npc/ambassador_of_rathleton.lua": {
       "stages": {
@@ -3555,7 +3555,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:18:45.764009"
+      "completed_at": "2025-12-11T04:19:54.476354"
     },
     "data-otservbr-global/npc/an_old_dragon_lord.lua": {
       "stages": {
@@ -3672,7 +3672,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:18:47.122129"
+      "completed_at": "2025-12-11T04:19:56.004279"
     },
     "data-otservbr-global/npc/an_orc_guard.lua": {
       "stages": {
@@ -3789,7 +3789,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:18:48.172985"
+      "completed_at": "2025-12-11T04:19:57.341076"
     },
     "data-otservbr-global/npc/ariella.lua": {
       "stages": {
@@ -3906,7 +3906,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:18:49.106403"
+      "completed_at": "2025-12-11T04:19:58.798057"
     },
     "data-otservbr-global/npc/arito.lua": {
       "stages": {
@@ -4023,7 +4023,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:18:49.982793"
+      "completed_at": "2025-12-11T04:20:00.132792"
     },
     "data-otservbr-global/npc/arkarra.lua": {
       "stages": {
@@ -4140,7 +4140,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:18:50.862793"
+      "completed_at": "2025-12-11T04:20:01.547256"
     },
     "data-otservbr-global/npc/aruda.lua": {
       "stages": {
@@ -4187,77 +4187,9 @@
           "languages": [],
           "keys_per_lang": 1,
           "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
-        },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [
-            "Brak i18nKey w pliku Lua"
-          ],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 0,
-          "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
         }
       },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T04:18:51.787971"
+      "overall_status": "in_progress"
     },
     "data-otservbr-global/npc/ashtamor.lua": {
       "stages": {

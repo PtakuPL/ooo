@@ -3,7 +3,8 @@
     "monsters": 1765422277.1052995,
     "raids": 1765422285.7101755,
     "world": 1765422293.0261648,
-    "spells": 1765422301.6123815
+    "spells": 1765422301.6123815,
+    "items": 1765422309.4483867
   },
   "last_processed": {
     "npc": {
@@ -29,6 +30,10 @@
     "spells": {
       "count": 0,
       "timestamp": 1765421701.6123755
+    },
+    "items": {
+      "count": 0,
+      "timestamp": 1765421709.4483814
     }
   },
   "consecutive_zeros": {
@@ -37,7 +42,8 @@
     "monsters": 2,
     "raids": 2,
     "world": 2,
-    "spells": 2
+    "spells": 2,
+    "items": 2
   },
   "total_processed": {
     "npc": 100,

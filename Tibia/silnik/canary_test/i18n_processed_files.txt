@@ -239,3 +239,13 @@ html_copy/admin/pages/modules/templates/lastlogin.html.twig
 html_copy/admin/pages/modules/templates/coins.html.twig
 html_copy/admin/pages/modules/templates/statistics.html.twig
 html_copy/admin/pages/index.html
+src/game/zones/zone.cpp
+src/game/zones/zone.hpp
+src/game/functions/game_reload.cpp
+src/game/functions/game_reload.hpp
+src/game/bank/bank.cpp
+src/game/bank/bank.hpp
+src/game/game.cpp
+src/game/movement/position.cpp
+src/game/movement/teleport.hpp
+src/game/movement/teleport.cpp

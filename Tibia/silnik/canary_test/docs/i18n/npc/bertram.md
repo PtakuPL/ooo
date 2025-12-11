@@ -1,7 +1,7 @@
 # NPC: bertram
 
 **Plik:** `data-otservbr-global/npc/bertram.lua`
-**Data migracji:** 2025-12-11 21:58
+**Data migracji:** 2025-12-11 22:00
 **Liczba tekstów:** 0
 
 ## Klucze i18n

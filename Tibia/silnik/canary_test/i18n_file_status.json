@@ -47,8 +47,10 @@
           "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
         },
         "7_validation": {
-          "status": "completed",
-          "errors": [],
+          "status": "failed",
+          "errors": [
+            "Klucz npc.frans.voice_1 brakuje w en/npc.json"
+          ],
           "warnings": [],
           "valid_langs": [
             "zh_TW",
@@ -106,14 +108,14 @@
             "hr"
           ],
           "keys_in_lua": 1,
-          "validation_passed": true
+          "validation_passed": false
         },
         "8_sync": {
           "status": "completed"
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:11:54.900343"
+      "completed_at": "2025-12-11T19:13:12.096518"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -224,7 +226,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:11:50.105207"
+      "completed_at": "2025-12-11T19:13:06.509427"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -335,7 +337,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:11:56.293516"
+      "completed_at": "2025-12-11T19:13:13.618971"
     },
     "data-otservbr-global/npc/cranky_lizard_crone.lua": {
       "stages": {
@@ -361,12 +363,6 @@
           "status": "completed",
           "doc_file": "docs/i18n/npc/cranky_lizard_crone.md",
           "keys_documented": 0
-        },
-        "4_transformation": {
-          "status": "completed",
-          "transformed": 0,
-          "stdmod_transformed": 0,
-          "npcsay_transformed": 0
         },
         "5_extraction_en": {
           "status": "completed",
@@ -450,7 +446,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:11:52.062938"
+      "completed_at": "2025-12-11T19:13:08.916993"
     },
     "data-otservbr-global/npc/ghorza.lua": {
       "stages": {
@@ -565,7 +561,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:11:57.902106"
+      "completed_at": "2025-12-11T19:13:15.495243"
     },
     "data-otservbr-global/npc/alaistar.lua": {
       "stages": {
@@ -676,7 +672,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:11:43.381226"
+      "completed_at": "2025-12-11T19:12:58.781680"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -709,85 +705,12 @@
           "stdmod_transformed": 0,
           "npcsay_transformed": 0
         },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0,
-          "stdmod_keys": 0,
-          "npcsay_keys": 0,
-          "greet_keys": 0,
-          "farewell_keys": 0,
-          "voices_keys": 0
-        },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [
-            "Brak i18nKey w pliku Lua"
-          ],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 0,
-          "validation_passed": true
-        },
         "8_sync": {
           "status": "completed"
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:11:45.986704"
+      "completed_at": "2025-12-11T19:13:01.817847"
     },
     "data-otservbr-global/npc/bertram.lua": {
       "stages": {
@@ -904,7 +827,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:11:47.567299"
+      "completed_at": "2025-12-11T19:13:03.544232"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {
@@ -951,75 +874,9 @@
           "languages": [],
           "keys_per_lang": 2,
           "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
-        },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 2,
-          "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
         }
       },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T19:11:59.244974"
+      "overall_status": "in_progress"
     },
     "data-otservbr-global/npc/mordecai.lua": {
       "stages": {
@@ -1134,7 +991,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:12:04.416232"
+      "completed_at": "2025-12-11T19:12:53.887992"
     },
     "data-otservbr-global/npc/nelly.lua": {
       "stages": {
@@ -1249,7 +1106,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:12:06.538912"
+      "completed_at": "2025-12-11T19:12:55.365144"
     },
     "data-otservbr-global/npc/nipuna.lua": {
       "stages": {
@@ -1364,7 +1221,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:12:07.843911"
+      "completed_at": "2025-12-11T19:12:56.995213"
     },
     "data-otservbr-global/npc/rock_in_a_hard_place.lua": {
       "stages": {
@@ -1479,7 +1336,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:12:10.309745"
+      "completed_at": "2025-12-11T19:12:59.686964"
     },
     "data-otservbr-global/npc/romir.lua": {
       "stages": {
@@ -1500,11 +1357,6 @@
           "already_i18n": 0,
           "npcSayLib": 0,
           "needs_migration": true
-        },
-        "3_documentation": {
-          "status": "completed",
-          "doc_file": "docs/i18n/npc/romir.md",
-          "keys_documented": 0
         },
         "4_transformation": {
           "status": "completed",
@@ -1590,7 +1442,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:12:11.573704"
+      "completed_at": "2025-12-11T19:13:01.473740"
     },
     "data-otservbr-global/npc/seymour.lua": {
       "stages": {
@@ -1705,7 +1557,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:12:13.137920"
+      "completed_at": "2025-12-11T19:13:03.499717"
     },
     "data-otservbr-global/npc/shiriel.lua": {
       "stages": {
@@ -1820,7 +1672,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:12:14.501892"
+      "completed_at": "2025-12-11T19:13:05.040227"
     },
     "data-otservbr-global/npc/sigurd.lua": {
       "stages": {
@@ -1935,7 +1787,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:12:15.794344"
+      "completed_at": "2025-12-11T19:13:06.689311"
     },
     "data-otservbr-global/npc/sundara.lua": {
       "stages": {
@@ -2050,7 +1902,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:12:17.313295"
+      "completed_at": "2025-12-11T19:13:08.679953"
     },
     "data-otservbr-global/npc/tandros.lua": {
       "stages": {
@@ -2165,7 +2017,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:12:18.639125"
+      "completed_at": "2025-12-11T19:13:10.288051"
     },
     "data-otservbr-global/npc/the_lootmonger.lua": {
       "stages": {
@@ -2173,19 +2025,6 @@
           "status": "completed",
           "hash": "cdd8add76033c765237d96cc142d6924",
           "type": "npc"
-        },
-        "2_analysis": {
-          "status": "completed",
-          "safe_name": "the_lootmonger",
-          "StdModule_say": 0,
-          "npcHandler_say": 2,
-          "sendTextMessage": 0,
-          "addGreetKeyword": 0,
-          "addFarewellKeyword": 0,
-          "total": 2,
-          "already_i18n": 0,
-          "npcSayLib": 0,
-          "needs_migration": true
         },
         "3_documentation": {
           "status": "completed",
@@ -2207,76 +2046,12 @@
           "farewell_keys": 0,
           "voices_keys": 0
         },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [
-            "Brak i18nKey w pliku Lua"
-          ],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 0,
-          "validation_passed": true
-        },
         "8_sync": {
           "status": "completed"
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:12:20.505542"
+      "completed_at": "2025-12-11T19:13:12.708844"
     }
   },
   "global_stats": {

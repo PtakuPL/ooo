@@ -12,7 +12,7 @@
     "movements": 1765493763.5622706,
     "creaturescripts": 1765493771.549787,
     "globalevents": 1765493780.9595008,
-    "items": 1765490157.8332818,
+    "items": 1765493802.786157,
     "mounts": 1765490166.6601021,
     "libs": 1765490176.8560476,
     "events": 1765490185.5983384,
@@ -83,7 +83,7 @@
     },
     "items": {
       "count": 0,
-      "timestamp": 1765489557.8332717
+      "timestamp": 1765490202.7861512
     },
     "mounts": {
       "count": 0,
@@ -171,7 +171,7 @@
     "movements": 4,
     "creaturescripts": 4,
     "globalevents": 4,
-    "items": 2,
+    "items": 4,
     "mounts": 2,
     "libs": 2,
     "events": 2,

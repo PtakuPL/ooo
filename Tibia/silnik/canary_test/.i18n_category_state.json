@@ -1,129 +1,16 @@
 {
   "skip_until": {
-    "scripts": 1765421556.3124065,
-    "monsters": 1765421565.1171825,
-    "raids": 1765421572.540611,
-    "world": 1765421588.128411,
-    "items": 1765421629.9992843,
-    "libs": 1765421638.3282638,
-    "events": 1765421645.5352628,
-    "chatchannels": 1765421653.3053668,
-    "modules": 1765421662.047202,
-    "startup": 1765421671.15763,
-    "npclib": 1765421686.3719923,
-    "php": 1765421695.7337558,
-    "html": 1765421702.9125588,
-    "cpp": 1765421710.9794192,
-    "client": 1765421717.940325,
-    "sendtextmessage": 1765421731.9334419,
-    "keywordhandler": 1765421739.860388,
-    "twig": 1765421748.5590813,
-    "npc": 1765421771.711708
+    "npc": 1765421832.0871391
   },
   "last_processed": {
-    "scripts": {
-      "count": 0,
-      "timestamp": 1765420956.3123975
-    },
-    "monsters": {
-      "count": 0,
-      "timestamp": 1765420965.1171772
-    },
-    "raids": {
-      "count": 0,
-      "timestamp": 1765420972.540606
-    },
-    "world": {
-      "count": 0,
-      "timestamp": 1765420988.1284008
-    },
-    "spells": {
-      "count": 98,
-      "timestamp": 1765421021.6263344
-    },
-    "items": {
-      "count": 0,
-      "timestamp": 1765421029.999279
-    },
-    "libs": {
-      "count": 0,
-      "timestamp": 1765421038.3282585
-    },
-    "events": {
-      "count": 0,
-      "timestamp": 1765421045.535254
-    },
-    "chatchannels": {
-      "count": 0,
-      "timestamp": 1765421053.3053603
-    },
-    "modules": {
-      "count": 0,
-      "timestamp": 1765421062.0471961
-    },
-    "startup": {
-      "count": 0,
-      "timestamp": 1765421071.1576245
-    },
-    "npclib": {
-      "count": 0,
-      "timestamp": 1765421086.3719864
-    },
-    "php": {
-      "count": 0,
-      "timestamp": 1765421095.7337494
-    },
-    "html": {
-      "count": 0,
-      "timestamp": 1765421102.9125538
-    },
-    "cpp": {
-      "count": 0,
-      "timestamp": 1765421110.9794137
-    },
-    "client": {
-      "count": 0,
-      "timestamp": 1765421117.9403174
-    },
-    "sendtextmessage": {
-      "count": 0,
-      "timestamp": 1765421131.933436
-    },
-    "keywordhandler": {
-      "count": 0,
-      "timestamp": 1765421139.8603828
-    },
-    "twig": {
-      "count": 0,
-      "timestamp": 1765421148.5590754
-    },
     "npc": {
       "count": 0,
-      "timestamp": 1765421171.711703
+      "timestamp": 1765421232.0871327
     }
   },
   "migrations_done": false,
   "consecutive_zeros": {
-    "npc": 2,
-    "scripts": 2,
-    "monsters": 2,
-    "raids": 2,
-    "world": 2,
-    "spells": 0,
-    "items": 2,
-    "libs": 2,
-    "events": 2,
-    "chatchannels": 2,
-    "modules": 2,
-    "startup": 2,
-    "npclib": 2,
-    "php": 2,
-    "html": 2,
-    "cpp": 2,
-    "client": 2,
-    "sendtextmessage": 2,
-    "keywordhandler": 2,
-    "twig": 2
+    "npc": 2
   },
   "total_processed": {
     "spells": 294,

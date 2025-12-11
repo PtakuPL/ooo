@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 03:46:11 UTC  
+> **Aktualizacja:** 2025-12-11 03:47:12 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 29134
 
 ---
@@ -134,7 +134,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 498 operacji               │
 │ 🌍 Języki zsync: 32/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 03:46:11                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 03:47:12                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -156,14 +156,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🧙 `npc` +0 kluczy @ 03:46:11
-- ⚡ `twig` +0 kluczy @ 03:45:48
-- ⚡ `keywordhandler` +0 kluczy @ 03:45:39
-- ⚡ `sendtextmessage` +0 kluczy @ 03:45:31
-- ⚡ `client` +0 kluczy @ 03:45:17
-- ⚡ `cpp` +0 kluczy @ 03:45:10
-- ⚡ `html` +0 kluczy @ 03:45:02
-- ⚡ `php` +0 kluczy @ 03:44:55
+- 🧙 `npc` +0 kluczy @ 03:47:12
 
 
 ---
@@ -323,29 +316,29 @@
 
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
-| items | 13749 | 0 | 2 | ⏭️ Skip 7m |
-| monsters | 7341 | 0 | 2 | ⏭️ Skip 6m |
+| items | 13749 | 0 | 0 | ✅ Active |
+| monsters | 7341 | 0 | 0 | ✅ Active |
 | npc | 5339 | 162 | 2 | ⏭️ Skip 9m |
-| html | 1495 | 0 | 2 | ⏭️ Skip 8m |
-| scripts | 385 | 0 | 2 | ⏭️ Skip 6m |
+| html | 1495 | 0 | 0 | ✅ Active |
+| scripts | 385 | 0 | 0 | ✅ Active |
 | spells | 304 | 294 | 0 | ✅ Active |
-| client | 236 | 0 | 2 | ⏭️ Skip 9m |
-| raids | 147 | 0 | 2 | ⏭️ Skip 6m |
-| php | 54 | 42 | 2 | ⏭️ Skip 8m |
-| startup | 23 | 0 | 2 | ⏭️ Skip 8m |
-| libs | 21 | 0 | 2 | ⏭️ Skip 7m |
-| modules | 16 | 0 | 2 | ⏭️ Skip 8m |
+| client | 236 | 0 | 0 | ✅ Active |
+| raids | 147 | 0 | 0 | ✅ Active |
+| php | 54 | 42 | 0 | ✅ Active |
+| startup | 23 | 0 | 0 | ✅ Active |
+| libs | 21 | 0 | 0 | ✅ Active |
+| modules | 16 | 0 | 0 | ✅ Active |
 | messages | 11 | 0 | 0 | ✅ Active |
-| chatchannels | 8 | 0 | 2 | ⏭️ Skip 8m |
-| events | 5 | 0 | 2 | ⏭️ Skip 7m |
+| chatchannels | 8 | 0 | 0 | ✅ Active |
+| events | 5 | 0 | 0 | ✅ Active |
 | actions | 0 | 0 | 0 | ⏳ Empty |
-| cpp | 0 | 0 | 2 | ⏭️ Skip 8m |
+| cpp | 0 | 0 | 0 | ⏳ Empty |
 | errors | 0 | 0 | 0 | ⏳ Empty |
-| npclib | 0 | 0 | 2 | ⏭️ Skip 8m |
+| npclib | 0 | 0 | 0 | ⏳ Empty |
 | quests | 0 | 0 | 0 | ⏳ Empty |
 | server | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
-| world | 0 | 0 | 2 | ⏭️ Skip 6m |
+| world | 0 | 0 | 0 | ⏳ Empty |
 
 ---
 
@@ -353,24 +346,6 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| scripts | 6m | 2x | Progresywny backoff |
-| monsters | 6m | 2x | Progresywny backoff |
-| raids | 6m | 2x | Progresywny backoff |
-| world | 6m | 2x | Progresywny backoff |
-| items | 7m | 2x | Progresywny backoff |
-| libs | 7m | 2x | Progresywny backoff |
-| events | 7m | 2x | Progresywny backoff |
-| chatchannels | 8m | 2x | Progresywny backoff |
-| modules | 8m | 2x | Progresywny backoff |
-| startup | 8m | 2x | Progresywny backoff |
-| npclib | 8m | 2x | Progresywny backoff |
-| php | 8m | 2x | Progresywny backoff |
-| html | 8m | 2x | Progresywny backoff |
-| cpp | 8m | 2x | Progresywny backoff |
-| client | 9m | 2x | Progresywny backoff |
-| sendtextmessage | 9m | 2x | Progresywny backoff |
-| keywordhandler | 9m | 2x | Progresywny backoff |
-| twig | 9m | 2x | Progresywny backoff |
 | npc | 9m | 2x | Progresywny backoff |
 
 ---
@@ -422,7 +397,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:46:11  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:47:12  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

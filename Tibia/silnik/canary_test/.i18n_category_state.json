@@ -7,7 +7,8 @@
     "quests": 1765489723.992195,
     "raids": 1765492737.3150015,
     "world": 1765489743.9865234,
-    "spells": 1765489750.0205536
+    "spells": 1765489750.0205536,
+    "talkactions": 1765489752.8856475
   },
   "last_processed": {
     "npc": {
@@ -41,6 +42,10 @@
     "spells": {
       "count": 0,
       "timestamp": 1765489150.0205438
+    },
+    "talkactions": {
+      "count": 0,
+      "timestamp": 1765489152.885642
     }
   },
   "consecutive_zeros": {
@@ -51,7 +56,8 @@
     "quests": 2,
     "raids": 4,
     "world": 2,
-    "spells": 2
+    "spells": 2,
+    "talkactions": 2
   },
   "total_processed": {},
   "migrations_done": false

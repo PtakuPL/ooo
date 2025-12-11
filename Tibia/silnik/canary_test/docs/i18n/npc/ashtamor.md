@@ -1,7 +1,7 @@
 # NPC: ashtamor
 
 **Plik:** `data-otservbr-global/npc/ashtamor.lua`
-**Data migracji:** 2025-12-11 04:05
+**Data migracji:** 2025-12-11 04:06
 **Liczba tekstów:** 1
 
 ## Klucze i18n

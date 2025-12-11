@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 300, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 03:07:56 UTC  
+> **Aktualizacja:** 2025-12-11 03:08:03 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -28,7 +28,7 @@
 | 🔑 Kluczy i18n | **29017** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#13** | - |
+| 🔄 Cykl | **#14** | - |
 
 ---
 
@@ -80,19 +80,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    13 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    14 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 NPCLIB                                 │
+│ Kategoria: 🎒 PHP                                    │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: npclib                                         │
+│ 📊 Ostatnia aktywność: php                                            │
 │ [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 0/1000 kluczy (0%)                                          │
+│ 40/3000 kluczy (1%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 150 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 03:07:56                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 03:08:03                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -106,7 +106,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29017** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#13** | continuous mode |
+| 🔄 Cykli wykonanych | **#14** | continuous mode |
 | 🎯 Aktywne kategorie | **15** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -114,6 +114,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `php` +0 kluczy @ 03:08:03
 - ⚡ `npclib` +0 kluczy @ 03:07:55
 - ⚡ `startup` +0 kluczy @ 03:07:49
 - ⚡ `modules` +0 kluczy @ 03:07:41
@@ -121,7 +122,6 @@
 - ⚡ `events` +0 kluczy @ 03:07:27
 - ⚡ `libs` +0 kluczy @ 03:07:18
 - 🎒 `items` +0 kluczy @ 03:07:10
-- ⚡ `spells` +100 kluczy @ 03:07:03
 
 
 ---
@@ -289,7 +289,7 @@
 | client | 236 | 0 | 0 | ✅ Active |
 | spells | 206 | 150 | 0 | ✅ Active |
 | raids | 147 | 0 | 2 | ⏭️ Skip 8m |
-| php | 40 | 0 | 0 | ✅ Active |
+| php | 40 | 0 | 2 | ⏭️ Skip 9m |
 | startup | 23 | 0 | 2 | ⏭️ Skip 9m |
 | libs | 21 | 0 | 2 | ⏭️ Skip 9m |
 | modules | 16 | 0 | 2 | ⏭️ Skip 9m |
@@ -323,6 +323,7 @@
 | modules | 9m | 2x | Progresywny backoff |
 | startup | 9m | 2x | Progresywny backoff |
 | npclib | 9m | 2x | Progresywny backoff |
+| php | 9m | 2x | Progresywny backoff |
 
 ---
 
@@ -330,7 +331,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #13 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #14 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -373,7 +374,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:07:56  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:08:03  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

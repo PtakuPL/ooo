@@ -4210,3 +4210,13 @@ data-otservbr-global/scripts/spells/monster/crystal_spider_paralyze_2.lua
 data-otservbr-global/scripts/spells/monster/dread_maiden_rcircle.lua
 data-otservbr-global/scripts/spells/monster/sapling_explode.lua
 data-otservbr-global/scripts/spells/monster/infected_weeper_summon.lua
+html_copy/system/src/Models/PlayerItem.php
+html_copy/system/src/Models/Changelog.php
+html_copy/system/src/Models/PlayerStorage.php
+html_copy/system/src/Models/BugTracker.php
+html_copy/system/src/Models/Weapon.php
+html_copy/system/src/Models/ServerRecord.php
+html_copy/system/src/Models/Forum.php
+html_copy/system/src/Models/Gallery.php
+html_copy/system/src/Models/GuildInvite.php
+html_copy/system/src/global.php

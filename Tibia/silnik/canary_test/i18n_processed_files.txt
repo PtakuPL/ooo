@@ -258,3 +258,5 @@ data-otservbr-global/scripts/spells/monster/plagirath_heal.lua
 data-otservbr-global/scripts/spells/monster/hideous_fungus_summon.lua
 data-otservbr-global/scripts/spells/monster/death_priest_shargon_curse.lua
 data-otservbr-global/scripts/spells/monster/defiler_paralyze_3.lua
+data/libs/functions/fs.lua
+data/libs/functions/tables.lua

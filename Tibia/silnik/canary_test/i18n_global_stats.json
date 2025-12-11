@@ -1,14 +1,14 @@
 {
-  "total_cycles": 8,
+  "total_cycles": 10,
   "mode": "MIGRATION",
-  "category": "items",
-  "last_update": "2025-12-11T22:39:32.536246",
+  "category": "mounts",
+  "last_update": "2025-12-11T22:39:38.891381",
   "migration": {
     "files_scanned": 0,
     "files_with_keys": 0,
     "files_without_keys": 0,
     "keys_extracted": 0,
-    "current_category": "items",
-    "batch_size": 10
+    "current_category": "mounts",
+    "batch_size": 3
   }
 }

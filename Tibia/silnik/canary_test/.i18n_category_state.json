@@ -14,7 +14,8 @@
     "php": 1765421695.7337558,
     "html": 1765421702.9125588,
     "cpp": 1765421710.9794192,
-    "client": 1765421717.940325
+    "client": 1765421717.940325,
+    "sendtextmessage": 1765421731.9334419
   },
   "last_processed": {
     "npc": {
@@ -84,6 +85,10 @@
     "client": {
       "count": 0,
       "timestamp": 1765421117.9403174
+    },
+    "sendtextmessage": {
+      "count": 0,
+      "timestamp": 1765421131.933436
     }
   },
   "migrations_done": false,
@@ -104,7 +109,8 @@
     "php": 2,
     "html": 2,
     "cpp": 2,
-    "client": 2
+    "client": 2,
+    "sendtextmessage": 2
   },
   "total_processed": {
     "spells": 294,

@@ -1,7 +1,7 @@
 # NPC: canary
 
 **Plik:** `data-otservbr-global/npc/canary.lua`
-**Data migracji:** 2025-12-11 04:09
+**Data migracji:** 2025-12-11 04:10
 **Liczba tekstów:** 1
 
 ## Klucze i18n

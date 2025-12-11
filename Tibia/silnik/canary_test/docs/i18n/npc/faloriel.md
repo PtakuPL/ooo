@@ -1,7 +1,7 @@
 # NPC: faloriel
 
 **Plik:** `data-otservbr-global/npc/faloriel.lua`
-**Data migracji:** 2025-12-11 04:09
+**Data migracji:** 2025-12-11 04:10
 **Liczba tekstów:** 2
 
 ## Klucze i18n

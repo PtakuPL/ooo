@@ -1,6 +1,5 @@
 {
   "skip_until": {
-    "npc": 1765419791.6988628,
     "scripts": 1765423493.2288196,
     "monsters": 1765423500.2300198,
     "raids": 1765423507.6843708,
@@ -18,13 +17,10 @@
     "sendtextmessage": 1765423724.014326,
     "keywordhandler": 1765423731.132717,
     "twig": 1765423738.202282,
-    "php": 1765423745.8622632
+    "php": 1765423745.8622632,
+    "npc": 1765421072.6448445
   },
   "last_processed": {
-    "npc": {
-      "count": 0,
-      "timestamp": 1765419191.698857
-    },
     "scripts": {
       "count": 0,
       "timestamp": 1765419893.2288144
@@ -100,6 +96,10 @@
     "twig": {
       "count": 0,
       "timestamp": 1765420138.202276
+    },
+    "npc": {
+      "count": 0,
+      "timestamp": 1765420472.644836
     }
   },
   "migrations_done": false,

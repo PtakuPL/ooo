@@ -7,7 +7,7 @@
     "raids": 1765419905.2586505,
     "world": 1765419917.7686558,
     "libs": 1765419339.908812,
-    "events": 1765417850.9182835,
+    "events": 1765425250.0371673,
     "chatchannels": 1765419955.9280417,
     "modules": 1765419963.2891085,
     "startup": 1765419970.0471904,
@@ -61,7 +61,7 @@
     },
     "events": {
       "count": 0,
-      "timestamp": 1765416050.9182785
+      "timestamp": 1765418050.037161
     },
     "chatchannels": {
       "count": 0,
@@ -122,7 +122,7 @@
     "spells": 0,
     "items": 4,
     "libs": 4,
-    "events": 3,
+    "events": 5,
     "chatchannels": 4,
     "modules": 4,
     "startup": 4,

@@ -2,7 +2,7 @@
   "skip_until": {
     "npc": 1765419791.6988628,
     "scripts": 1765423493.2288196,
-    "monsters": 1765419875.9832613,
+    "monsters": 1765423500.2300198,
     "raids": 1765419883.6474264,
     "world": 1765419890.5013714,
     "items": 1765419932.1648421,
@@ -31,7 +31,7 @@
     },
     "monsters": {
       "count": 0,
-      "timestamp": 1765419275.9832556
+      "timestamp": 1765419900.2300134
     },
     "raids": {
       "count": 0,
@@ -106,7 +106,7 @@
   "consecutive_zeros": {
     "npc": 2,
     "scripts": 4,
-    "monsters": 2,
+    "monsters": 4,
     "raids": 2,
     "world": 2,
     "spells": 0,

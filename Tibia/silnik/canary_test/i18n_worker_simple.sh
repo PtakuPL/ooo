@@ -636,7 +636,7 @@ else:
     mode_display = f"❓ {last_mode}"
     category_display = f"📁 {last_category}"
     live_details = "│ 📊 Brak szczegółowych danych                                      │"
-elif last_mode == "AUTO_TRANSLATE":
+
 # TM coverage (do notki o placeholderach)
 try:
     with open(f"{I18N_DIR}/translation_memory.json") as f:

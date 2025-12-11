@@ -762,17 +762,13 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #{cycle_count:>6} │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    {"🟢 RUNNING" if in_progress > 0 or sync_current_lang else "✅ IDLE":40} │
+│ Status:    {("🟢 RUNNING" if last_mode != "IDLE" else "✅ IDLE"):40} │
 │ Tryb:      {mode_display:40} │
 │ Kategoria: {category_display:40} │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: {(sync_current_lang.upper() + "/" + sync_current_cat if sync_last_ts > last_activity_time and sync_current_lang else current_category):25}                      │
-│ [{progress_bar(sync_stats.get(sync_current_lang, {}).get("total", 0) if sync_last_ts > last_activity_time else all_json_categories.get(current_category, 0), total_keys if sync_last_ts > last_activity_time else TARGETS.get(current_category, 1000), 50)}] │
-│ {(str(sync_stats.get(sync_current_lang, {}).get("total", 0)) + "/" + str(total_keys) + " kluczy") if sync_last_ts > last_activity_time else str(all_json_categories.get(current_category, 0)) + "/" + str(TARGETS.get(current_category, 1000)) + " kluczy"} ({round((sync_stats.get(sync_current_lang, {}).get("total", 0)/total_keys*100) if sync_last_ts > last_activity_time and total_keys else (all_json_categories.get(current_category, 0)/TARGETS.get(current_category, 1000)*100) if TARGETS.get(current_category, 1000) else 0)}%)                                          │
+{live_details}
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Total processed: {total_files_processed} operacji               │
-│ 🌍 Języki zsync: {len(sync_langs_done)}/53                                │
-│ 📅 Ostatnia aktualizacja: {timestamp}                 │
+│ 📅 Ostatnia aktualizacja: {timestamp:30} │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -782,13 +778,12 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Operacji wykonanych | **{total_files_processed}** | we wszystkich kategoriach |
-| ✅ NPC zmigrowanych | **{completed}** ({migrated_npc} z i18nKey) | z {total_npc} plików NPC |
+| 📁 Plików przeskanowanych | **{migration_data.get('files_scanned', completed)}** | wszystkie kategorie |
+| ✅ Plików z kluczami | **{migration_data.get('files_with_keys', 0)}** | zawierały hardcoded strings |
+| ⬜ Plików bez kluczy | **{migration_data.get('files_without_keys', 0)}** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **{total_keys}** | we wszystkich kategoriach |
-| 🌍 Języków zsynchronizowanych | **{len(sync_langs_done)}**/53 | {", ".join(sync_langs_done[:5]) if sync_langs_done else "brak"}{"..." if len(sync_langs_done) > 5 else ""} |
+| 🌍 Języków | **{langs_count}** | EN + tłumaczenia |
 | 🔄 Cykli wykonanych | **#{cycle_count}** | continuous mode |
-| 🎯 Aktywne kategorie | **{len([c for c,k in all_json_categories.items() if k > 0])}** | z danymi |
-| ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
 ---
 

@@ -1,9 +1,9 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-<!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 300, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
+<!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 03:43:08 UTC  
-> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 29085
+> **Aktualizacja:** 2025-12-11 03:43:41 UTC  
+> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 29134
 
 ---
 
@@ -25,10 +25,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **144** | ↑ |
 | ⏭️ Plików wykluczonych | **593** | - |
-| 🔑 Kluczy i18n (EN) | **29085** | ↑ |
+| 🔑 Kluczy i18n (EN) | **29134** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#5** | - |
+| 🔄 Cykl | **#6** | - |
 
 ---
 
@@ -69,7 +69,7 @@
 | 📜 Lua Scripts | 🔄 | 385/1000 (38%) | 1000 |
 | 🎒 Items Database | 🔄 | 13749/40000 (34%) | 40000 |
 | 👹 Monsters | ✅ | 7341/7500 (98%) | 7500 |
-| ✨ Spells & Magic | 🔄 | 255/300 (85%) | 300 |
+| ✨ Spells & Magic | 🔄 | 304/400 (76%) | 400 |
 | ⚙️ Server C++ | ⏳ | 0/300 (0%) | 300 |
 
 ### ⏳ Faza 2: 🌐 Website (AAC)
@@ -122,19 +122,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     5 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     6 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 WORLD                                  │
+│ Kategoria: 🎒 SPELLS                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: world                                          │
-│ [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 0/1000 kluczy (0%)                                          │
+│ 📊 Ostatnia aktywność: spells                                         │
+│ [██████████████████████████████████████░░░░░░░░░░░░] │
+│ 304/400 kluczy (76%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Total processed: 351 operacji               │
+│ ⏳ Total processed: 498 operacji               │
 │ 🌍 Języki zsync: 32/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 03:43:08                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 03:43:41                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -144,11 +144,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Operacji wykonanych | **351** | we wszystkich kategoriach |
+| 📁 Operacji wykonanych | **498** | we wszystkich kategoriach |
 | ✅ NPC zmigrowanych | **144** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **29085** | we wszystkich kategoriach |
+| 🔑 Kluczy wyciągniętych | **29134** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **32**/53 | sv, hu, bs, ro, az... |
-| 🔄 Cykli wykonanych | **#5** | continuous mode |
+| 🔄 Cykli wykonanych | **#6** | continuous mode |
 | 🎯 Aktywne kategorie | **15** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -156,6 +156,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `spells` +98 kluczy @ 03:43:41
 - ⚡ `world` +0 kluczy @ 03:43:08
 - ⚡ `raids` +0 kluczy @ 03:42:52
 - 👹 `monsters` +0 kluczy @ 03:42:45
@@ -279,13 +280,13 @@
 </details>
 
 <details>
-<summary>✨ 10. Spells - 🔄 (85%)</summary>
+<summary>✨ 10. Spells - 🔄 (76%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 255 |
-| 🎯 Cel | 300 |
-| 📊 Postęp | 85% |
+| 🔑 Kluczy | 304 |
+| 🎯 Cel | 400 |
+| 📊 Postęp | 76% |
 | 📁 Plik | i18n/en/spells.json |
 
 </details>
@@ -324,8 +325,8 @@
 | monsters | 7341 | 0 | 2 | ⏭️ Skip 9m |
 | npc | 5339 | 162 | 0 | ✅ Active |
 | html | 1495 | 0 | 0 | ✅ Active |
-| scripts | 385 | 0 | 2 | ⏭️ Skip 9m |
-| spells | 255 | 147 | 0 | ✅ Active |
+| scripts | 385 | 0 | 2 | ⏭️ Skip 8m |
+| spells | 304 | 294 | 0 | ✅ Active |
 | client | 236 | 0 | 0 | ✅ Active |
 | raids | 147 | 0 | 2 | ⏭️ Skip 9m |
 | php | 54 | 42 | 0 | ✅ Active |
@@ -350,7 +351,7 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| scripts | 9m | 2x | Progresywny backoff |
+| scripts | 8m | 2x | Progresywny backoff |
 | monsters | 9m | 2x | Progresywny backoff |
 | raids | 9m | 2x | Progresywny backoff |
 | world | 9m | 2x | Progresywny backoff |
@@ -361,7 +362,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #5 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #6 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -396,7 +397,7 @@
 | 🧙 NPC | 5339 | ███████░░░░░░░░░░░░░ | 15000 | 🔄 36% |
 | 📜 Scripts | 385 | ███████░░░░░░░░░░░░░ | 1000 | 🔄 38% |
 | 👹 Monsters | 7341 | ███████████████████░ | 7500 | ✅ 98% |
-| ✨ Spells | 255 | █████████████████░░░ | 300 | 🔄 85% |
+| ✨ Spells | 304 | ███████████████░░░░░ | 400 | 🔄 76% |
 | ⚙️ Server | 0 | ░░░░░░░░░░░░░░░░░░░░ | 300 | ⏳ 0% |
 | 🖥️ System | 0 | ░░░░░░░░░░░░░░░░░░░░ | 2000 | ⏳ 0% |
 | 🎨 UI | 0 | ░░░░░░░░░░░░░░░░░░░░ | 200 | ⏳ 0% |
@@ -404,7 +405,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:43:08  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:43:41  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

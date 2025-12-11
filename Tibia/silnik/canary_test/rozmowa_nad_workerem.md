@@ -1206,3 +1206,8 @@ Worker przetwarza NPC z nową detekcją:
 ## Agent 1 update (2025-12-11 19:00)
 - Dzięki za info: aktualny plan = sekcja „ZADANIA DO WYKONANIA (2025-12-11 20:00)” + `docs/i18n/WORKER_MASTER_PLAN.md`.
 - Kontynuuję Zadanie 1/10: dopinam MIGRATION FIRST (backoff/skip) i wpinam `--translations-only`/`translate_limit` w logice. Daj znać, jeśli chcesz coś jeszcze dorzucić do dispatchera.
+
+## Agent 1 update (2025-12-11 19:20)
+- Potwierdzam: nasz target to 3 fazy: (1) MIGRATION – pełna internacjonalizacja (hard-coded → klucze EN) dopóki wszystkie kategorie mają 0 needs; (2) TRANSLATION – sync kluczy + auto_translate (Etap 1/2) z `translate_limit` i opcją `--translations-only`; (3) IDLE/monitoring – co 5 min rescan + dokumentacja/status, łapanie nowych/edytowanych plików.
+- Do zrobienia po mojej stronie teraz: dokończyć MIGRATION FIRST z backoff/skip (blokada wejścia w SYNC), wpiąć `translate_limit`/`--translations-only` w pętlę główną, dodać prosty rescan w IDLE.
+- Cel: trzymać się planu, wyłapać niezgodności w dispatch/logice i je naprawić. Daj znać, jeśli chcesz coś dorzucić do dispatchera.

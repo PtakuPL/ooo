@@ -130,7 +130,7 @@
   },
   "translation_sync": {
     "current_lang": "kk",
-    "current_category": "html.json",
+    "current_category": "items.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -593,11 +593,12 @@
       },
       "kk": {
         "chatchannels": 8,
-        "total": 1508,
+        "total": 15257,
         "events": 5,
-        "html": 1495
+        "html": 1495,
+        "items": 13749
       }
     },
-    "last_sync": 1765413552.9690888
+    "last_sync": 1765413560.8373754
   }
 }

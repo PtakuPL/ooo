@@ -566,35 +566,77 @@ for _lang in auto_langs:
     auto_rows.append(f"| {_lang.upper()} | {tm_count} | {status_auto} |")
 auto_table = chr(10).join(auto_rows)
 
-# Status workera (ostatni tryb z i18n_global_stats.json)
+# ============ WCZYTAJ ROZSZERZONE DANE Z i18n_global_stats.json ============
+global_stats = {}
 try:
     with open("i18n_global_stats.json") as f:
-        _global_stats = json.load(f)
-        last_mode = _global_stats.get("mode", "")
+        global_stats = json.load(f)
 except:
-    last_mode = ""
+    pass
 
-# Podgląd aktualnego trybu/kategorii do LIVE box
-if sync_current_lang:
-    mode_display = "🌍 TRANSLATION_SYNC (Etap 1)"
-    category_display = f"🌍 {sync_current_lang.upper()}/{sync_current_cat}"
+last_mode = global_stats.get("mode", "MIGRATION")
+last_category = global_stats.get("category", "npc")
+
+# Dane specyficzne dla trybu
+migration_data = global_stats.get("migration", {})
+translation_sync_data_gs = global_stats.get("translation_sync", {})
+auto_translate_data = global_stats.get("auto_translate", {})
+idle_data = global_stats.get("idle", {})
+
+# ============ GENERUJ LIVE DISPLAY W ZALEŻNOŚCI OD TRYBU ============
+if last_mode == "MIGRATION":
+    mode_display = "🔧 MIGRATION (skanowanie plików)"
+    category_display = f"📁 {last_category.upper()}"
+    
+    # Statystyki migracji
+    files_scanned = migration_data.get("files_scanned", 0)
+    files_with_keys = migration_data.get("files_with_keys", 0)
+    files_without_keys = migration_data.get("files_without_keys", 0)
+    keys_extracted = migration_data.get("keys_extracted", 0)
+    
+    live_details = f"""│ 📊 Pliki przeskanowane: {files_scanned:>6}                                 │
+│    ├─ Z kluczami:      {files_with_keys:>6} ({keys_extracted} kluczy)              │
+│    └─ Bez kluczy:      {files_without_keys:>6} (czyste)                       │"""
+
+elif last_mode == "TRANSLATION_SYNC":
+    mode_display = "🌍 TRANSLATION_SYNC (synchronizacja)"
+    sync_lang = translation_sync_data_gs.get("language", "?")
+    sync_file = translation_sync_data_gs.get("json_file", "?")
+    sync_keys = translation_sync_data_gs.get("keys_to_sync", 0)
+    category_display = f"🌍 {sync_lang.upper()}/{sync_file}"
+    
+    live_details = f"""│ 📊 Synchronizacja kluczy EN → {sync_lang.upper()}                           │
+│    ├─ Plik:           {sync_file:>20}                       │
+│    └─ Kluczy do sync: {sync_keys:>6}                                 │"""
+
 elif last_mode == "AUTO_TRANSLATE":
-    mode_display = "🤖 AUTO_TRANSLATE"
-    category_display = "AUTO_TRANSLATE"
-elif current_category:
-    mode_display = "MIGRATION (multi-category)"
-    category_display = f"🎒 {current_category.upper()}"
-else:
-    mode_display = "IDLE"
-    category_display = "IDLE"
-# Status workera (ostatni tryb z i18n_global_stats.json)
-try:
-    with open("i18n_global_stats.json") as f:
-        _global_stats = json.load(f)
-        last_mode = _global_stats.get("mode", "")
-except:
-    last_mode = ""
+    mode_display = "🤖 AUTO_TRANSLATE (tłumaczenie)"
+    at_lang = auto_translate_data.get("language", "?")
+    at_file = auto_translate_data.get("json_file", "?")
+    at_keys = auto_translate_data.get("keys_to_translate", 0)
+    category_display = f"🤖 {at_lang.upper()}/{at_file}"
+    
+    live_details = f"""│ 📊 Automatyczne tłumaczenie                                       │
+│    ├─ Język:          {at_lang.upper():>10}                               │
+│    ├─ Plik:           {at_file:>20}                       │
+│    └─ Kluczy:         {at_keys:>6}                                 │"""
 
+elif last_mode == "IDLE":
+    mode_display = "✅ IDLE (oczekiwanie)"
+    category_display = "📋 Skanowanie nowych plików"
+    
+    new_files = idle_data.get("new_files_detected", 0)
+    quality_issues = idle_data.get("quality_issues", 0)
+    
+    live_details = f"""│ 📊 Tryb IDLE - wszystko zrobione                                  │
+│    ├─ Nowe pliki:     {new_files:>6} {'(restart!)' if new_files > 0 else '(brak)'}             │
+│    └─ Problemy TM:    {quality_issues:>6}                                 │"""
+
+else:
+    mode_display = f"❓ {last_mode}"
+    category_display = f"📁 {last_category}"
+    live_details = "│ 📊 Brak szczegółowych danych                                      │"
+elif last_mode == "AUTO_TRANSLATE":
 # TM coverage (do notki o placeholderach)
 try:
     with open(f"{I18N_DIR}/translation_memory.json") as f:
@@ -605,20 +647,6 @@ tm_langs = set(tm_data.keys())
 sync_langs = set(sync_stats.keys()) if isinstance(sync_stats, dict) else set()
 known_langs = sorted(tm_langs | sync_langs | {"pl", "de", "es", "pt", "ru", "fr", "tr"})
 no_tm_langs = [lang for lang in known_langs if lang not in tm_langs]
-
-# Podgląd aktualnego trybu/kategorii do LIVE box
-if sync_current_lang:
-    mode_display = "🌍 TRANSLATION_SYNC (Etap 1)"
-    category_display = f"🌍 {sync_current_lang.upper()}/{sync_current_cat}"
-elif last_mode == "AUTO_TRANSLATE":
-    mode_display = "🤖 AUTO_TRANSLATE"
-    category_display = "AUTO_TRANSLATE"
-elif current_category:
-    mode_display = "MIGRATION (multi-category)"
-    category_display = f"🎒 {current_category.upper()}"
-else:
-    mode_display = "IDLE"
-    category_display = "IDLE"
 
 # ==================== GENERUJ PEŁNY I18N_STATUS.md ====================
 md = f'''# 🌍 I18N Internationalization System - Live Dashboard

@@ -10,3 +10,4 @@
 [2025-12-11 01:56:45] AGENT_2: 🎉 Super, działa! TAK - przestaw dispatcher na MIGRATION-first. Logika: najpierw wszystkie kategorie MIGRATION, dopiero potem SYNC. Dodaj flagę ALL_MIGRATIONS_DONE. Co do guardiana - włącz go w crontab. Pytanie: czy spells +50 kluczy to nowe czy znalezione stare hardcoded?
 [2025-12-11 01:57:40] AGENT_2: 📊 Worker działa! Cykl #61, TRANSLATION_SYNC spells.json (no, fi). 28867 kluczy total, 53/53 języków. Wszystko OK. Czy zrobiłeś MIGRATION-first w dispatcherze?
 [2025-12-11 01:58:31] AGENT_2: 📈 Cykl #65+, sync spells.json kontynuuje. items.json ma 13749 kluczy, monsters.json 7341. Czekam na Twój update o dispatcher MIGRATION-first.
+[2025-12-11 01:59:23] AGENT_2: 🔄 Worker zrestartowany (nowy PID 3668946). Teraz sync sr/spells.json. Wszystko działa stabilnie. Czekam na info o MIGRATION-first.

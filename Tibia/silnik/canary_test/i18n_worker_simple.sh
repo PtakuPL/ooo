@@ -4620,6 +4620,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                         MODE_CAT="$AUTO_LANG"
                         MODE_COUNT="${AUTO_JSON:-npc.json}"
                         MODE_EXTRA="${AUTO_LIMIT:-0}"
+                        MODE_EXTRA2="AUTO"  # znacznik żeby nie nadpisywać dispatchera
                         ;;
                     *)
                         echo "⚠️ Nieznana komenda: $CMD"

@@ -278,3 +278,13 @@ data/scripts/talkactions/gm/clean.lua
 data/scripts/talkactions/player/tutor_position.lua
 data/scripts/talkactions/player/refill.lua
 data/scripts/creaturescripts/monster/boss_lever_death.lua
+data-otservbr-global/monster/constructs/stone_devourer.lua
+data-otservbr-global/monster/constructs/worker_golem.lua
+data-otservbr-global/monster/constructs/war_golem.lua
+data-otservbr-global/monster/constructs/glooth_golem.lua
+data-otservbr-global/monster/constructs/metal_gargoyle.lua
+data-otservbr-global/monster/constructs/orewalker.lua
+data-otservbr-global/monster/constructs/diamond_servant.lua
+data-otservbr-global/monster/constructs/shrieking_cry-stal.lua
+data-otservbr-global/monster/constructs/enraged_crystal_golem.lua
+data-otservbr-global/monster/constructs/biting_book.lua

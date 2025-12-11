@@ -19,7 +19,8 @@
     "keywordhandler": 1765416427.864905,
     "twig": 1765416436.027876,
     "items": 1765416450.6506839,
-    "pending_skip": 1765423547.3401835
+    "pending_skip": 1765423547.3401835,
+    "php": 1765417015.3923128
   },
   "last_processed": {
     "npc": {
@@ -79,8 +80,8 @@
       "timestamp": 1765416376.8241735
     },
     "php": {
-      "count": 12,
-      "timestamp": 1765416407.706544
+      "count": 0,
+      "timestamp": 1765416415.3923078
     },
     "html": {
       "count": 0,
@@ -126,7 +127,7 @@
     "modules": 4,
     "startup": 4,
     "npclib": 4,
-    "php": 0,
+    "php": 2,
     "html": 2,
     "cpp": 2,
     "client": 2,

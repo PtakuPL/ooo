@@ -4140,3 +4140,13 @@ html_copy/system/src/Models/GuildMembership.php
 html_copy/system/src/Models/Notepad.php
 html_copy/system/src/Models/PlayerKillers.php
 html_copy/system/src/Models/PlayerDeath.php
+html_copy/system/src/Models/Pages.php
+html_copy/system/src/Models/FAQ.php
+html_copy/system/src/Models/Visitor.php
+html_copy/system/src/Models/News.php
+html_copy/system/src/Models/Settings.php
+html_copy/system/src/Models/Config.php
+html_copy/system/src/Models/House.php
+html_copy/system/src/Models/PlayerOnline.php
+html_copy/system/src/Models/PlayerSkill.php
+html_copy/system/src/Models/Player.php

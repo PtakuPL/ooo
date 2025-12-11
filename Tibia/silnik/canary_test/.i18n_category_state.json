@@ -10,7 +10,8 @@
     "movements": 1765469893.295219,
     "creaturescripts": 1765469902.0029929,
     "globalevents": 1765469915.9794476,
-    "items": 1765469925.4908524
+    "items": 1765469925.4908524,
+    "mounts": 1765469933.5831628
   },
   "last_processed": {
     "npc": {
@@ -64,6 +65,10 @@
     "items": {
       "count": 0,
       "timestamp": 1765469325.4908445
+    },
+    "mounts": {
+      "count": 0,
+      "timestamp": 1765469333.5831554
     }
   },
   "consecutive_zeros": {
@@ -79,7 +84,8 @@
     "movements": 2,
     "creaturescripts": 2,
     "globalevents": 2,
-    "items": 2
+    "items": 2,
+    "mounts": 2
   },
   "total_processed": {
     "npc": 40,

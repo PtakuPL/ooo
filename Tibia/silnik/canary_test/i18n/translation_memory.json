@@ -20321,6 +20321,42 @@
     "html.faq.text4": {
       "src_hash": "8a99aafd0a77ef609a787c525232e72a",
       "text": "FAQ - Frequently Asked Zadanieions"
+    },
+    "lib.player.msg1": {
+      "src_hash": "70e1805b803ae7b2ba2119ad2d5d4500",
+      "text": "Przedmiot amount is wrong, please contact an administrator."
+    },
+    "lib.player.msg3": {
+      "src_hash": "b62304fa1ffa58d5ef2ddcd033a8948c",
+      "text": "Reward Przedmiot is wrong, please contact an administrator."
+    },
+    "lib.quests.msg1": {
+      "src_hash": "3a8b46b6187246602db4445aed35296d",
+      "text": "Your Zadanielog has been updated."
+    },
+    "lib.hireling.msg1": {
+      "src_hash": "e8171b1e5ecaea0e0ed448151b738c8b",
+      "text": "You do Niet have eNieugh capacity."
+    },
+    "lib.hireling.msg2": {
+      "src_hash": "67566b1658e2ca3f129c39e8dfa10c38",
+      "text": "You don't have eNieugh room in your inbox."
+    },
+    "lib.hireling.msg3": {
+      "src_hash": "e8171b1e5ecaea0e0ed448151b738c8b",
+      "text": "You do Niet have eNieugh capacity."
+    },
+    "lib.hireling.msg4": {
+      "src_hash": "67566b1658e2ca3f129c39e8dfa10c38",
+      "text": "You don't have eNieugh room in your inbox."
+    },
+    "lib.exaltation_forge.msg2": {
+      "src_hash": "3086afd3cca5bf3f92bb9fa5824a70bc",
+      "text": "You did Niet receive "
+    },
+    "lib.exaltation_forge.msg4": {
+      "src_hash": "3086afd3cca5bf3f92bb9fa5824a70bc",
+      "text": "You did Niet receive "
     }
   }
 }

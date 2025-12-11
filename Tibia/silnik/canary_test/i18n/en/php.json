@@ -29,5 +29,8 @@
   "php.template.text3": "navbar-nav ml-auto",
   "php.index.text1": " . BASE_URL . install",
   "php.exception.text1": "error.log couldnt be opened for writing.. so the detailed information couldnt be saved.. are you sure directory system/logs is writable by web server? Correct this, and then refresh this site.",
-  "php.exception.text2": "$message<br/><br/>"
+  "php.exception.text2": "$message<br/><br/>",
+  "php.settingssetcommand.text1": "Setting $key successfully updated",
+  "php.migrateruncommand.text1": "Please check it and re-run the command",
+  "php.migrateruncommand.text2": "No migration has been executed"
 }

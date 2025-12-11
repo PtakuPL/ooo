@@ -12,7 +12,6 @@
     "modules": 1765419963.2891085,
     "startup": 1765419970.0471904,
     "npclib": 1765419976.824179,
-    "php": 1765416382.4982648,
     "html": 1765416391.293715,
     "cpp": 1765416398.7365139,
     "client": 1765416405.786226,
@@ -80,8 +79,8 @@
       "timestamp": 1765416376.8241735
     },
     "php": {
-      "count": 0,
-      "timestamp": 1765415782.4982593
+      "count": 6,
+      "timestamp": 1765416388.58637
     },
     "html": {
       "count": 0,
@@ -127,7 +126,7 @@
     "modules": 4,
     "startup": 4,
     "npclib": 4,
-    "php": 2,
+    "php": 0,
     "html": 2,
     "cpp": 2,
     "client": 2,
@@ -138,7 +137,8 @@
   },
   "total_processed": {
     "spells": 370,
-    "items": 28958
+    "items": 28958,
+    "php": 9
   },
   "translation_sync": {},
   "migrations_done": false

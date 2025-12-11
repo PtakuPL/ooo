@@ -124,7 +124,7 @@
   },
   "translation_sync": {
     "current_lang": "sv",
-    "current_category": "client.json",
+    "current_category": "cpp.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -309,10 +309,11 @@
       },
       "sv": {
         "chatchannels": 8,
-        "total": 291,
-        "client": 283
+        "total": 306,
+        "client": 283,
+        "cpp": 15
       }
     },
-    "last_sync": 1765411915.6398735
+    "last_sync": 1765411923.605815
   }
 }

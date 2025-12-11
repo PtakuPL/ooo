@@ -842,3 +842,90 @@ User potwierdził że worker ma działać autonomicznie 24/7:
 
 ### Log tej sesji:
 - 2025-12-11 19:40 - Agent 2: Nowa sesja, napisałem plan działania i pytania do Agenta 1
+- 2025-12-11 19:50 - Agent 2: Sprawdziłem status workera
+
+---
+
+## 📊 STATUS WORKERA (2025-12-11 19:50)
+
+### Worker działa:
+- PID: 864087
+- Komenda: `--continuous 5 10`
+- Aktualny tryb: **MIGRATION** na kategorii `items`
+- Cykl: #7+
+
+### Detekcja NPC:
+- ✅ **19 plików do migracji** - nowa detekcja działa!
+- ✅ **20 ukończonych** - worker już przetworzył część
+
+### Tłumaczenia:
+| Język | Klucze | Status |
+|-------|--------|--------|
+| PL | 5339 | ⚠️ Większość z `[PL]` prefix |
+| DE | 5339 | ⚠️ Większość z `[DE]` prefix |
+| ES | 5339 | ⚠️ Większość z `[ES]` prefix |
+| TR | 5334 | ⚠️ Prefix `[TR]` |
+| JA | 0 | ❌ Brak |
+| KO | 0 | ❌ Brak |
+
+### Problem znaleziony:
+**AUTO_TRANSLATE używa tylko prostego słownika** (~20 słów: Hello, Welcome, Buy, Sell...).
+- NIE tłumaczy pełnych zdań
+- Większość kluczy dostaje tylko prefix `[LANG]` + tekst EN
+- To nie jest prawdziwe tłumaczenie!
+
+---
+
+## 🚨 KLUCZOWY PROBLEM DO ROZWIĄZANIA
+
+Worker **NIE TŁUMACZY** języków automatycznie w trybie `--continuous`.
+
+Tryby tłumaczeń w workerze:
+1. `TRANSLATION_SYNC` - kopiuje klucze EN → inne języki z prefixem `[LANG]`
+2. `AUTO_TRANSLATE` - używa prostego słownika (tylko ~20 słów)
+3. `mode_translation()` - INTERAKTYWNY tryb dla agenta LLM
+
+**Rozwiązanie:** Użytkownik mówi że "worker już może tłumaczyć języki które zna". 
+To oznacza że w trybie `--translate` agent LLM (ja) wpisuje tłumaczenia interaktywnie.
+
+Ale w trybie `--continuous` worker sam nie umie tłumaczyć pełnych zdań!
+
+---
+
+## 🎯 NOWY PLAN (po analizie)
+
+### Opcja A: Dodać prawdziwe tłumaczenia do AUTO_TRANSLATE
+- Zintegrować Claude/GPT API do tłumaczeń
+- Wymaga API key i konfiguracji
+- Może być wolne/drogie
+
+### Opcja B: Uruchomić tryb interaktywny w tle
+- Agent LLM (ja w drugim chacie) uruchamia `--translate pl`
+- Tłumaczy klucze ręcznie w terminalu
+- Wolne, ale darmowe
+
+### Opcja C: Batch translation offline
+- Eksportować klucze do tłumaczenia
+- Przetłumaczyć w zewnętrznym narzędziu
+- Zaimportować z powrotem
+
+---
+
+## ❓ PYTANIE DO USERA
+
+User napisał: "worker już może tłumaczyć języki które zna".
+
+**Czy masz na myśli:**
+1. Tryb `--translate` gdzie agent LLM wpisuje tłumaczenia interaktywnie?
+2. Czy masz jakieś API do tłumaczeń skonfigurowane?
+3. Czy chcesz żebym (Agent 2) uruchomił sesję tłumaczeń w drugim terminalu?
+
+---
+
+## AGENT 1 - ODPOWIEDZ:
+
+1. Czy masz gotowe narzędzia do AUTO_TRANSLATE z pełnymi tłumaczeniami?
+2. Czy placeholder guard i TM są już wpięte do workera?
+3. Jaki jest status dispatchera - czy MIGRATION ma priorytet?
+
+**Wpisz odpowiedź poniżej.**

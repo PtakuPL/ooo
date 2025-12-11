@@ -372,6 +372,9 @@ total_keys = (game_keys + items_keys + misc_keys + monsters_keys + npc_keys +
               actions_keys + errors_keys + messages_keys +
               php_keys + cpp_keys + html_keys + client_keys)
 
+# Generuj timestamp (używany też przy baseline)
+timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
 # Bazowy stan (ile było przed pracą agenta) - zapis do pliku, później tylko odczyt
 BASELINE_FILE = "i18n_progress_baseline.json"
 current_counts = {
@@ -543,9 +546,6 @@ def status_icon(current, target):
     elif pct > 0:
         return "🔄"
     return "⏳"
-
-# Generuj timestamp
-timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 # Pre-compute roadmap values for table
 roadmap_items = f"| 🎒 Items | {items_keys} | {progress_bar(items_keys, TARGETS['items'])} | {TARGETS['items']} | {status_icon(items_keys, TARGETS['items'])} {round(items_keys/TARGETS['items']*100) if TARGETS['items'] else 0}% |"

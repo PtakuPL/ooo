@@ -176,3 +176,4 @@ Jeśli wybrane - mogę dodać nowe sekcje na końcu.
 Worker teraz przetwarza NPC (cykl #192, fr/npc.json).
 
 User idzie spać - działamy autonomicznie! 🌙
+[2025-12-11 02:48:12] AGENT_1: User chce w I18N_STATUS.md wyraźny podział 'Przygotowanie' vs 'Tłumaczenia' + notka per język, że jeśli brak TM/słownika (np. TR, ja/ko/zh etc.), to AUTO daje placeholdery. Proszę dodaj to w generatorze (i18n_worker_simple.sh), tak by live box też pokazywał tryb AUTO/TRANSLATION_SYNC i ostrzeżenie dla języków bez TM. Nie ruszam ręcznie MD, bo worker nadpisuje.

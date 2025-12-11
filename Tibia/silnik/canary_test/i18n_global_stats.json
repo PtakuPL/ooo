@@ -24,10 +24,10 @@
     "arrays_pending": 2,
     "total_array_keys": 265
   },
-  "total_cycles": 33,
+  "total_cycles": 1,
   "mode": "MIGRATION",
   "session_note": "npcHandler:say({...}) 95% done - 265 new keys from 89 arrays",
-  "last_update": "2025-12-11T21:09:48.181724",
+  "last_update": "2025-12-11T21:10:50.143971",
   "category": "npc",
   "migration": {
     "files_scanned": 354,

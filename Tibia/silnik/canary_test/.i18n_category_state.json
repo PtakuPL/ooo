@@ -21,7 +21,8 @@
     "dataroot": 1765469990.1001577,
     "html": 1765470019.811796,
     "cpp": 1765470027.8852427,
-    "client": 1765470036.5682485
+    "client": 1765470036.5682485,
+    "server": 1765470044.067745
   },
   "last_processed": {
     "npc": {
@@ -123,6 +124,10 @@
     "client": {
       "count": 0,
       "timestamp": 1765469436.5682433
+    },
+    "server": {
+      "count": 0,
+      "timestamp": 1765469444.0677402
     }
   },
   "consecutive_zeros": {
@@ -150,7 +155,8 @@
     "php": 0,
     "html": 2,
     "cpp": 2,
-    "client": 2
+    "client": 2,
+    "server": 2
   },
   "total_processed": {
     "npc": 40,

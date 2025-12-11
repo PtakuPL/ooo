@@ -17,7 +17,7 @@
     "client": 1765420031.11734,
     "sendtextmessage": 1765420045.6226606,
     "keywordhandler": 1765421666.5858078,
-    "twig": 1765416436.027876,
+    "twig": 1765421674.2202225,
     "items": 1765421643.4259934,
     "pending_skip": 1765423547.3401835,
     "php": 1765421658.6083164
@@ -105,7 +105,7 @@
     },
     "twig": {
       "count": 0,
-      "timestamp": 1765415836.0278702
+      "timestamp": 1765418074.220216
     },
     "pending_skip": {
       "count": 0,
@@ -133,7 +133,7 @@
     "client": 4,
     "sendtextmessage": 4,
     "keywordhandler": 4,
-    "twig": 2,
+    "twig": 4,
     "pending_skip": 52
   },
   "total_processed": {

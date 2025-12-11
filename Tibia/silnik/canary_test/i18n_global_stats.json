@@ -2,11 +2,11 @@
   "total_cycles": 1,
   "mode": "MIGRATION",
   "category": "npc",
-  "last_update": "2025-12-11T22:00:58.047035",
+  "last_update": "2025-12-11T22:01:47.665396",
   "migration": {
-    "files_scanned": 5,
+    "files_scanned": 20,
     "files_with_keys": 0,
-    "files_without_keys": 5,
+    "files_without_keys": 20,
     "keys_extracted": 0,
     "current_category": "npc",
     "batch_size": 20

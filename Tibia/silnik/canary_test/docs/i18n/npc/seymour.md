@@ -1,7 +1,7 @@
 # NPC: seymour
 
 **Plik:** `data-otservbr-global/npc/seymour.lua`
-**Data migracji:** 2025-12-11 22:00
+**Data migracji:** 2025-12-11 22:01
 **Liczba tekstów:** 2
 
 ## Klucze i18n

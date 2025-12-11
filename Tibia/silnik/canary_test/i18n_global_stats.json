@@ -1,14 +1,14 @@
 {
-  "total_cycles": 22,
+  "total_cycles": 23,
   "mode": "MIGRATION",
-  "category": "otclient_modules",
-  "last_update": "2025-12-11T22:22:47.375864",
+  "category": "otclient_data",
+  "last_update": "2025-12-11T22:23:00.294161",
   "migration": {
     "files_scanned": 20,
     "files_with_keys": 0,
     "files_without_keys": 20,
     "keys_extracted": 0,
-    "current_category": "otclient_modules",
-    "batch_size": 155
+    "current_category": "otclient_data",
+    "batch_size": 54
   }
 }

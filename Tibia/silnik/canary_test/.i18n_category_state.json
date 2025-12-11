@@ -4,7 +4,7 @@
     "scripts": 1765419284.344816,
     "translation": 1765415989.7660613,
     "monsters": 1765419896.9270065,
-    "raids": 1765416297.4457195,
+    "raids": 1765419905.2586505,
     "world": 1765416299.1817932,
     "libs": 1765419339.908812,
     "events": 1765417850.9182835,
@@ -41,7 +41,7 @@
     },
     "raids": {
       "count": 0,
-      "timestamp": 1765415697.4457145
+      "timestamp": 1765416305.2586446
     },
     "world": {
       "count": 0,
@@ -117,7 +117,7 @@
     "scripts": 4,
     "translation": 1,
     "monsters": 4,
-    "raids": 2,
+    "raids": 4,
     "world": 2,
     "spells": 0,
     "items": 2,

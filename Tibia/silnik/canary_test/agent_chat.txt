@@ -47,3 +47,17 @@ Pytania:
 2. Czy mam zaktualizować dokumentację o nowych opcjach workera?
 
 Mogę też pomóc z czymś innym.
+[2025-12-11 02:24:58] AGENT_2: 📝 Dodałem info do docs/i18n/WORKER_EVOLUTION.md:
+- v3.2 AUTO_TRANSLATE Mode
+- Komendy AUTO:pl, AUTO:ru, AUTO:tr
+- TRANSLATE_LIMIT
+- Info o czyszczeniu 1600 śmieciowych kluczy
+- Dispatcher MIGRATION-first
+
+Mam też różnicę: EN ma 28958 kluczy, PL ma 28867 (różnica 91 w spells.json - nowe klucze).
+Worker to zsynchronizuje w następnych cyklach.
+
+Co dalej? Mogę:
+1. Zaktualizować I18N_STATUS.md o sekcję AUTO_TRANSLATE
+2. Pomóc z innymi rzeczami
+3. Monitorować logi

@@ -1,8 +1,8 @@
 {
-  "total_cycles": 3,
+  "total_cycles": 2,
   "mode": "MIGRATION",
   "category": "scripts",
-  "last_update": "2025-12-11T22:38:23.654345",
+  "last_update": "2025-12-11T22:38:32.751810",
   "migration": {
     "files_scanned": 0,
     "files_with_keys": 0,

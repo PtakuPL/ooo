@@ -219,3 +219,12 @@ html_copy/routes/api/v1/characters.php
 html_copy/routes/pages.php
 html_copy/routes/admin.php
 html_copy/admin/pages/accounts.php
+data-otservbr-global/monster/constructs/stone_devourer.lua
+data-otservbr-global/monster/constructs/worker_golem.lua
+data-otservbr-global/monster/constructs/war_golem.lua
+data-otservbr-global/monster/constructs/glooth_golem.lua
+data-otservbr-global/monster/constructs/metal_gargoyle.lua
+data-otservbr-global/monster/constructs/orewalker.lua
+data-otservbr-global/monster/constructs/diamond_servant.lua
+data-otservbr-global/monster/constructs/shrieking_cry-stal.lua
+data-otservbr-global/monster/constructs/enraged_crystal_golem.lua

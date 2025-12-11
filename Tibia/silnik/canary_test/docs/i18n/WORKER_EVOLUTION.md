@@ -331,3 +331,35 @@ sr, sv, sw, ta, te, th, tl, tr, uk, uz, vi, zh, zh_TW
 
 *Ostatnia aktualizacja: 10 grudnia 2025*
 *Autor: AI Assistant + PtakuPL*
+
+---
+
+## 🆕 Aktualizacja v3.1 (2025-12-11)
+
+Worker został rozbudowany o nowe funkcje:
+
+### Nowe opcje CLI:
+```bash
+./i18n_worker_simple.sh --continuous 5 10 [opcje]
+
+Opcje:
+  --no-git              # Wyłącz git add/commit/push
+  --translate-limit N   # Max N tłumaczeń na cykl
+  --translations-only   # Tylko tłumaczenia, bez migracji kodu
+```
+
+### Nowe funkcje:
+| Funkcja | Opis |
+|---------|------|
+| `validate_lua_file()` | Walidacja `lua -p` po transformacji |
+| `smoke_test_lua()` | Bardziej rygorystyczny test `loadfile()` |
+| Translation Memory | Cache tłumaczeń z hash źródła |
+| Placeholder guard | Walidacja `{}` i `|...|` w tłumaczeniach |
+
+### Nowe narzędzia:
+| Narzędzie | Wynik |
+|-----------|-------|
+| `tools/hard_strings_report.py` | 24204 stringów do tłumaczenia |
+| `tools/build_translation_queue.py` | 53884 wpisów w kolejce |
+
+*Aktualizacja przez Agent 1 + Agent 2, 2025-12-11*

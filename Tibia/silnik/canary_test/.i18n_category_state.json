@@ -128,5 +128,569 @@
   "total_processed": {
     "spells": 147,
     "php": 42
-  }
+  },
+  "translation_sync": {
+    "stats": {
+      "zh_TW": {
+        "total": 11
+      },
+      "fa": {
+        "total": 11
+      },
+      "sv": {
+        "total": 28867
+      },
+      "hy": {
+        "total": 11
+      },
+      "hu": {
+        "total": 28867
+      },
+      "hi": {
+        "total": 11
+      },
+      "ar": {
+        "total": 11
+      },
+      "sw": {
+        "total": 11
+      },
+      "bs": {
+        "total": 28867
+      },
+      "ro": {
+        "total": 28867
+      },
+      "id": {
+        "total": 11
+      },
+      "az": {
+        "total": 28779
+      },
+      "te": {
+        "total": 11
+      },
+      "et": {
+        "total": 28867
+      },
+      "it": {
+        "total": 28867
+      },
+      "fr": {
+        "total": 28867
+      },
+      "cs": {
+        "total": 28867
+      },
+      "tl": {
+        "total": 11
+      },
+      "sk": {
+        "total": 28867
+      },
+      "sr": {
+        "total": 28867
+      },
+      "ka": {
+        "total": 11
+      },
+      "da": {
+        "total": 28867
+      },
+      "es": {
+        "total": 29017
+      },
+      "no": {
+        "total": 28867
+      },
+      "he": {
+        "total": 11
+      },
+      "sq": {
+        "total": 28867
+      },
+      "uz": {
+        "total": 28867
+      },
+      "sl": {
+        "total": 28867
+      },
+      "fi": {
+        "total": 28867
+      },
+      "kk": {
+        "total": 28867
+      },
+      "ru": {
+        "total": 28967
+      },
+      "bn": {
+        "total": 11
+      },
+      "th": {
+        "total": 11
+      },
+      "ms": {
+        "total": 11
+      },
+      "lv": {
+        "total": 28867
+      },
+      "tr": {
+        "total": 28967
+      },
+      "uk": {
+        "total": 28867
+      },
+      "pl": {
+        "total": 28967
+      },
+      "zh": {
+        "total": 11
+      },
+      "el": {
+        "total": 28867
+      },
+      "vi": {
+        "total": 11
+      },
+      "de": {
+        "total": 28867
+      },
+      "ml": {
+        "total": 11
+      },
+      "bg": {
+        "total": 28867
+      },
+      "pt": {
+        "total": 29017
+      },
+      "ta": {
+        "total": 11
+      },
+      "nl": {
+        "total": 28867
+      },
+      "ko": {
+        "total": 11
+      },
+      "lt": {
+        "total": 28867
+      },
+      "ja": {
+        "total": 11
+      },
+      "mk": {
+        "total": 28867
+      },
+      "hr": {
+        "total": 28867
+      }
+    },
+    "languages_done": [
+      "sv",
+      "hu",
+      "bs",
+      "ro",
+      "az",
+      "et",
+      "it",
+      "fr",
+      "cs",
+      "sk",
+      "sr",
+      "da",
+      "es",
+      "no",
+      "sq",
+      "uz",
+      "sl",
+      "fi",
+      "kk",
+      "ru",
+      "lv",
+      "tr",
+      "uk",
+      "pl",
+      "el",
+      "de",
+      "bg",
+      "pt",
+      "nl",
+      "lt",
+      "mk",
+      "hr"
+    ],
+    "current_lang": "",
+    "current_category": "",
+    "last_sync": 0
+  },
+  "translation_stats": {
+    "zh_TW": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "fa": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "sv": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "hy": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "hu": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "hi": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "ar": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "sw": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "bs": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "ro": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "id": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "az": {
+      "total_keys": 28779,
+      "en_prefix": 28768,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.0
+    },
+    "te": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "et": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "it": {
+      "total_keys": 28867,
+      "en_prefix": 24576,
+      "real_translations": 11,
+      "lang_placeholder": 4280,
+      "sync_percent": 99.3
+    },
+    "fr": {
+      "total_keys": 28867,
+      "en_prefix": 23522,
+      "real_translations": 11,
+      "lang_placeholder": 5334,
+      "sync_percent": 99.3
+    },
+    "cs": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "tl": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "sk": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "sr": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "ka": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "da": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "es": {
+      "total_keys": 29017,
+      "en_prefix": 8,
+      "real_translations": 3363,
+      "lang_placeholder": 25646,
+      "sync_percent": 99.8
+    },
+    "no": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "he": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "sq": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "uz": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "sl": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "fi": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "kk": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "ru": {
+      "total_keys": 28967,
+      "en_prefix": 0,
+      "real_translations": 3622,
+      "lang_placeholder": 25345,
+      "sync_percent": 99.6
+    },
+    "bn": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "th": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "ms": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "lv": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "tr": {
+      "total_keys": 28967,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 28956,
+      "sync_percent": 99.6
+    },
+    "uk": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "pl": {
+      "total_keys": 28967,
+      "en_prefix": 0,
+      "real_translations": 3952,
+      "lang_placeholder": 25015,
+      "sync_percent": 99.6
+    },
+    "zh": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "el": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "vi": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "de": {
+      "total_keys": 28867,
+      "en_prefix": 23522,
+      "real_translations": 2207,
+      "lang_placeholder": 3138,
+      "sync_percent": 99.3
+    },
+    "ml": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "bg": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "pt": {
+      "total_keys": 29017,
+      "en_prefix": 8,
+      "real_translations": 3621,
+      "lang_placeholder": 25388,
+      "sync_percent": 99.8
+    },
+    "ta": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "nl": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "ko": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "lt": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "ja": {
+      "total_keys": 11,
+      "en_prefix": 0,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 0.0
+    },
+    "mk": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    },
+    "hr": {
+      "total_keys": 28867,
+      "en_prefix": 28856,
+      "real_translations": 11,
+      "lang_placeholder": 0,
+      "sync_percent": 99.3
+    }
+  },
+  "en_keys_total": 29080
 }

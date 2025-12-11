@@ -25,3 +25,25 @@
 # [2025-12-11 02:18:31] Wykonano: AUTO:pl:npc.json:1500
 # [2025-12-11 02:18:39] Wykonano: AUTO:ru:npc.json:1500
 # [2025-12-11 02:18:47] Wykonano: AUTO:tr:npc.json:1500
+
+# Nowe polecenia AUTO (limit 10) – pl/ru/tr dla głównych plików
+AUTO:pl:scripts.json:10
+AUTO:pl:monsters.json:10
+AUTO:pl:items.json:10
+AUTO:pl:spells.json:10
+AUTO:pl:php.json:10
+AUTO:pl:client.json:10
+
+AUTO:ru:scripts.json:10
+AUTO:ru:monsters.json:10
+AUTO:ru:items.json:10
+AUTO:ru:spells.json:10
+AUTO:ru:php.json:10
+AUTO:ru:client.json:10
+
+AUTO:tr:scripts.json:10
+AUTO:tr:monsters.json:10
+AUTO:tr:items.json:10
+AUTO:tr:spells.json:10
+AUTO:tr:php.json:10
+AUTO:tr:client.json:10

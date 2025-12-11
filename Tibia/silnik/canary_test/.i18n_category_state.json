@@ -1,28 +1,7 @@
 {
-  "skip_until": {
-    "npc": 1765421931.239358,
-    "scripts": 1765421982.6484299,
-    "monsters": 1765421991.4632356
-  },
-  "last_processed": {
-    "npc": {
-      "count": 0,
-      "timestamp": 1765421331.2393517
-    },
-    "scripts": {
-      "count": 0,
-      "timestamp": 1765421382.6484244
-    },
-    "monsters": {
-      "count": 0,
-      "timestamp": 1765421391.46323
-    }
-  },
-  "consecutive_zeros": {
-    "npc": 2,
-    "scripts": 2,
-    "monsters": 2
-  },
+  "skip_until": {},
+  "last_processed": {},
+  "consecutive_zeros": {},
   "total_processed": {},
   "translation_sync": {},
   "migrations_done": false

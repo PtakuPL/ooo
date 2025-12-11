@@ -1,7 +1,7 @@
 # NPC: elyen_ravenlock
 
 **Plik:** `data-otservbr-global/npc/elyen_ravenlock.lua`
-**Data migracji:** 2025-12-11 03:39
+**Data migracji:** 2025-12-11 03:53
 **Liczba tekstów:** 3
 
 ## Klucze i18n

@@ -1,47 +1,16 @@
 {
-  "skip_until": {
-    "npc": 1765422103.8494146,
-    "monsters": 1765422133.1557667,
-    "raids": 1765422141.105776,
-    "world": 1765422147.981837,
-    "spells": 1765422155.8775423
-  },
+  "skip_until": {},
   "last_processed": {
     "npc": {
-      "count": 0,
-      "timestamp": 1765421503.8494093
-    },
-    "scripts": {
-      "count": 52,
-      "timestamp": 1765421524.4159336
-    },
-    "monsters": {
-      "count": 0,
-      "timestamp": 1765421533.1557615
-    },
-    "raids": {
-      "count": 0,
-      "timestamp": 1765421541.1057713
-    },
-    "world": {
-      "count": 0,
-      "timestamp": 1765421547.981832
-    },
-    "spells": {
-      "count": 0,
-      "timestamp": 1765421555.8775368
+      "count": 50,
+      "timestamp": 1765421636.2358572
     }
   },
   "consecutive_zeros": {
-    "npc": 2,
-    "scripts": 0,
-    "monsters": 2,
-    "raids": 2,
-    "world": 2,
-    "spells": 2
+    "npc": 0
   },
   "total_processed": {
-    "scripts": 102
+    "npc": 100
   },
   "translation_sync": {},
   "migrations_done": false

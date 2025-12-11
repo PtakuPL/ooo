@@ -1,7 +1,7 @@
 # NPC: ambassador_of_rathleton
 
 **Plik:** `data-otservbr-global/npc/ambassador_of_rathleton.lua`
-**Data migracji:** 2025-12-11 03:38
+**Data migracji:** 2025-12-11 03:53
 **Liczba tekstów:** 3
 
 ## Klucze i18n

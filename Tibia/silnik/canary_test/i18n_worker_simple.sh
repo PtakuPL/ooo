@@ -4815,9 +4815,6 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                                 for f in "$npc_dir"/*.lua; do
                                     [ -f "$f" ] || continue
                                     
-                                    # Sprawdź czy już completed
-                                    echo "$COMPLETED_LIST" | grep -qF "$f" && continue
-                                    
                                     NEEDS_WORK=false
                                     
                                     if grep -q "StdModule\.say" "$f" 2>/dev/null; then

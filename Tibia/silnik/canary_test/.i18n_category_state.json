@@ -8,7 +8,8 @@
     "libs": 1765421638.3282638,
     "events": 1765421645.5352628,
     "chatchannels": 1765421653.3053668,
-    "modules": 1765421662.047202
+    "modules": 1765421662.047202,
+    "startup": 1765421671.15763
   },
   "last_processed": {
     "npc": {
@@ -54,6 +55,10 @@
     "modules": {
       "count": 0,
       "timestamp": 1765421062.0471961
+    },
+    "startup": {
+      "count": 0,
+      "timestamp": 1765421071.1576245
     }
   },
   "migrations_done": false,
@@ -68,7 +73,8 @@
     "libs": 2,
     "events": 2,
     "chatchannels": 2,
-    "modules": 2
+    "modules": 2,
+    "startup": 2
   },
   "total_processed": {
     "spells": 294,

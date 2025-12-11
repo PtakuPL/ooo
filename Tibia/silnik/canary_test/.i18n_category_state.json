@@ -16,7 +16,8 @@
     "mounts": 1765490166.6601021,
     "libs": 1765490176.8560476,
     "events": 1765490185.5983384,
-    "chatchannels": 1765490194.9768438
+    "chatchannels": 1765490194.9768438,
+    "modules": 1765490210.3311844
   },
   "last_processed": {
     "npc": {
@@ -86,6 +87,10 @@
     "chatchannels": {
       "count": 0,
       "timestamp": 1765489594.9768384
+    },
+    "modules": {
+      "count": 0,
+      "timestamp": 1765489610.3311794
     }
   },
   "consecutive_zeros": {
@@ -105,7 +110,8 @@
     "mounts": 2,
     "libs": 2,
     "events": 2,
-    "chatchannels": 2
+    "chatchannels": 2,
+    "modules": 2
   },
   "total_processed": {},
   "migrations_done": false

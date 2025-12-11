@@ -1,149 +1,16 @@
 {
-  "skip_until": {
-    "mounts": 1765469466.5320747,
-    "dataroot": 1765469477.9739716,
-    "server": 1765469497.949791
-  },
+  "skip_until": {},
   "last_processed": {
     "npc": {
       "count": 20,
-      "timestamp": 1765469032.7842233
-    },
-    "scripts": {
-      "count": -313,
-      "timestamp": 1765463344.3609834
-    },
-    "monsters": {
-      "count": 0,
-      "timestamp": 1765463349.4560893
-    },
-    "raids": {
-      "count": 0,
-      "timestamp": 1765463352.4643257
-    },
-    "world": {
-      "count": 0,
-      "timestamp": 1765463356.098401
-    },
-    "spells": {
-      "count": 0,
-      "timestamp": 1765463360.9943755
-    },
-    "items": {
-      "count": 0,
-      "timestamp": 1765463363.2443023
-    },
-    "libs": {
-      "count": 0,
-      "timestamp": 1765463369.5700028
-    },
-    "events": {
-      "count": 0,
-      "timestamp": 1765463370.705659
-    },
-    "chatchannels": {
-      "count": 0,
-      "timestamp": 1765463377.4238267
-    },
-    "modules": {
-      "count": 0,
-      "timestamp": 1765463378.4510148
-    },
-    "startup": {
-      "count": 0,
-      "timestamp": 1765463385.4162474
-    },
-    "npclib": {
-      "count": 0,
-      "timestamp": 1765463391.6187663
-    },
-    "php": {
-      "count": 0,
-      "timestamp": 1765463393.490898
-    },
-    "html": {
-      "count": 0,
-      "timestamp": 1765463399.5407493
-    },
-    "cpp": {
-      "count": 0,
-      "timestamp": 1765463400.3720922
-    },
-    "client": {
-      "count": 0,
-      "timestamp": 1765463409.7549827
-    },
-    "sendtextmessage": {
-      "count": 0,
-      "timestamp": 1765463430.7897243
-    },
-    "keywordhandler": {
-      "count": 0,
-      "timestamp": 1765463439.3136044
-    },
-    "twig": {
-      "count": 0,
-      "timestamp": 1765463443.9202116
-    },
-    "actions": {
-      "count": 128,
-      "timestamp": 1765468803.671581
-    },
-    "quests": {
-      "count": 128,
-      "timestamp": 1765468816.4095614
-    },
-    "talkactions": {
-      "count": 128,
-      "timestamp": 1765468823.555492
-    },
-    "movements": {
-      "count": 128,
-      "timestamp": 1765468830.6074297
-    },
-    "creaturescripts": {
-      "count": 128,
-      "timestamp": 1765468837.6588285
-    },
-    "globalevents": {
-      "count": 128,
-      "timestamp": 1765468845.8500605
-    },
-    "mounts": {
-      "count": 0,
-      "timestamp": 1765468866.5320601
-    },
-    "dataroot": {
-      "count": 0,
-      "timestamp": 1765468877.973964
-    },
-    "server": {
-      "count": 0,
-      "timestamp": 1765468897.9497836
+      "timestamp": 1765469142.3946736
     }
   },
   "consecutive_zeros": {
-    "npc": 0,
-    "actions": 0,
-    "quests": 0,
-    "talkactions": 0,
-    "movements": 0,
-    "creaturescripts": 0,
-    "globalevents": 0,
-    "mounts": 2,
-    "dataroot": 2,
-    "server": 2
+    "npc": 0
   },
   "total_processed": {
-    "npc": 1928,
-    "scripts": 0,
-    "actions": 128,
-    "quests": 128,
-    "talkactions": 128,
-    "movements": 128,
-    "creaturescripts": 128,
-    "globalevents": 128
+    "npc": 40
   },
-  "translation_sync": {},
   "migrations_done": false
 }

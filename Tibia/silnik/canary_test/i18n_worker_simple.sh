@@ -5983,20 +5983,97 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                     ;;
             esac
             
-            # Zapisz licznik cykli do pliku (dla statusu)
-            python3 -c "
+            # Zapisz licznik cykli do pliku (dla statusu) - ROZSZERZONE DANE
+            python3 << SAVEPY
 import json
+import os
+from datetime import datetime
+
 try:
     with open('i18n_global_stats.json', 'r') as f:
         data = json.load(f)
 except:
     data = {}
+
+# Podstawowe dane cyklu
 data['total_cycles'] = $CYCLE
-data['last_update'] = '$(date -Iseconds)'
+data['last_update'] = datetime.now().isoformat()
 data['mode'] = '$MODE_TYPE'
+data['category'] = '$MODE_CAT'
+
+# === DANE SPECYFICZNE DLA TRYBU ===
+if '$MODE_TYPE' == 'MIGRATION':
+    # Statystyki migracji plików
+    status_file = 'i18n_file_status.json'
+    try:
+        with open(status_file) as f:
+            status_data = json.load(f)
+        files = status_data.get('files', {})
+        
+        # Zlicz pliki
+        completed = [f for f, info in files.items() if info.get('overall_status') == 'completed']
+        files_with_keys = 0
+        files_without_keys = 0
+        total_keys_extracted = 0
+        
+        for fpath in completed:
+            keys = files[fpath].get('stages', {}).get('5_extraction_en', {}).get('keys_added', 0)
+            if keys > 0:
+                files_with_keys += 1
+                total_keys_extracted += keys
+            else:
+                files_without_keys += 1
+        
+        data['migration'] = {
+            'files_scanned': len(completed),
+            'files_with_keys': files_with_keys,
+            'files_without_keys': files_without_keys,
+            'keys_extracted': total_keys_extracted,
+            'current_category': '$MODE_CAT',
+            'batch_size': int('${MODE_COUNT:-0}') if '${MODE_COUNT:-0}'.isdigit() else 0
+        }
+    except Exception as e:
+        data['migration'] = {'error': str(e)}
+
+elif '$MODE_TYPE' == 'TRANSLATION_SYNC':
+    data['translation_sync'] = {
+        'language': '$MODE_CAT',
+        'json_file': '$MODE_COUNT',
+        'keys_to_sync': int('${MODE_EXTRA:-0}') if '${MODE_EXTRA:-0}'.isdigit() else 0
+    }
+
+elif '$MODE_TYPE' == 'AUTO_TRANSLATE':
+    data['auto_translate'] = {
+        'language': '$MODE_CAT',
+        'json_file': '$MODE_COUNT',
+        'keys_to_translate': int('${MODE_EXTRA:-0}') if '${MODE_EXTRA:-0}'.isdigit() else 0
+    }
+
+elif '$MODE_TYPE' == 'IDLE':
+    # Sprawdź wyniki skanowania
+    new_files_count = 0
+    quality_issues = 0
+    try:
+        with open('i18n/new_files_detected.json') as f:
+            new_files_count = json.load(f).get('needs_migration', 0)
+    except:
+        pass
+    try:
+        with open('i18n/quality_report.json') as f:
+            quality_issues = json.load(f).get('total_issues', 0)
+    except:
+        pass
+    
+    data['idle'] = {
+        'new_files_detected': new_files_count,
+        'quality_issues': quality_issues,
+        'last_scan': datetime.now().isoformat()
+    }
+
+# Zapisz
 with open('i18n_global_stats.json', 'w') as f:
     json.dump(data, f, indent=2)
-"
+SAVEPY
             
             # Aktualizuj status co cykl
             update_github_status

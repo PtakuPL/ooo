@@ -13,3 +13,6 @@
 # [2025-12-11 01:55:04] Wykonano: FORCE:monsters
 # [2025-12-11 01:55:11] Wykonano: FORCE:items
 # [2025-12-11 01:55:18] Wykonano: FORCE:spells
+AUTO:pl:npc.json:1500
+AUTO:ru:npc.json:1500
+AUTO:tr:npc.json:1500

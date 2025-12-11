@@ -4090,3 +4090,13 @@ html_copy/system/locale/de/install.php
 html_copy/system/locale/de/admin.php
 html_copy/system/locale/ja/main.php
 html_copy/system/locale/ja/install.php
+src/game/movement/position.hpp
+src/game/scheduling/save_manager.cpp
+src/game/scheduling/events_scheduler.cpp
+src/game/scheduling/dispatcher.cpp
+src/game/scheduling/task.cpp
+src/game/scheduling/events_scheduler.hpp
+src/game/scheduling/save_manager.hpp
+src/game/scheduling/dispatcher.hpp
+src/game/scheduling/task.hpp
+src/game/game.hpp

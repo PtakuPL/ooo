@@ -1,14 +1,14 @@
 {
-  "total_cycles": 5,
+  "total_cycles": 6,
   "mode": "MIGRATION",
-  "category": "html",
-  "last_update": "2025-12-11T22:40:41.806262",
+  "category": "cpp",
+  "last_update": "2025-12-11T22:40:51.600012",
   "migration": {
-    "files_scanned": 30,
-    "files_with_keys": 20,
+    "files_scanned": 40,
+    "files_with_keys": 30,
     "files_without_keys": 10,
-    "keys_extracted": 20,
-    "current_category": "html",
-    "batch_size": 1
+    "keys_extracted": 30,
+    "current_category": "cpp",
+    "batch_size": 0
   }
 }

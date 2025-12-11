@@ -539,10 +539,190 @@
       "overall_status": "completed",
       "completed_at": "2025-12-11T22:40:41.381917",
       "category": "creaturescripts"
+    },
+    "src/game/zones/zone.cpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:49.895228",
+      "category": "weapons"
+    },
+    "src/game/zones/zone.hpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:49.961288",
+      "category": "weapons"
+    },
+    "src/game/functions/game_reload.cpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:50.029268",
+      "category": "weapons"
+    },
+    "src/game/functions/game_reload.hpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:50.177768",
+      "category": "weapons"
+    },
+    "src/game/bank/bank.cpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:50.254158",
+      "category": "weapons"
+    },
+    "src/game/bank/bank.hpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:50.327448",
+      "category": "weapons"
+    },
+    "src/game/game.cpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:50.403351",
+      "category": "weapons"
+    },
+    "src/game/movement/position.cpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:50.539005",
+      "category": "weapons"
+    },
+    "src/game/movement/teleport.hpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:50.622773",
+      "category": "weapons"
+    },
+    "src/game/movement/teleport.cpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:50.694635",
+      "category": "weapons"
     }
   },
   "global_stats": {
-    "files_completed": 30,
+    "files_completed": 40,
     "total_keys": 0
   }
 }

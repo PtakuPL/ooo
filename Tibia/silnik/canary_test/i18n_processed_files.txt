@@ -308,3 +308,13 @@ html_copy/system/templates/guilds.create.success.html.twig
 html_copy/system/templates/admin.tools.account.html.twig
 html_copy/system/templates/highscores.html.twig
 html_copy/system/templates/monster.html.twig
+src/game/zones/zone.cpp
+src/game/zones/zone.hpp
+src/game/functions/game_reload.cpp
+src/game/functions/game_reload.hpp
+src/game/bank/bank.cpp
+src/game/bank/bank.hpp
+src/game/game.cpp
+src/game/movement/position.cpp
+src/game/movement/teleport.hpp
+src/game/movement/teleport.cpp

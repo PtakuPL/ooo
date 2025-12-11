@@ -1,6 +1,7 @@
 {
   "skip_until": {
-    "mounts": 1765469466.5320747
+    "mounts": 1765469466.5320747,
+    "dataroot": 1765469477.9739716
   },
   "last_processed": {
     "npc": {
@@ -110,6 +111,10 @@
     "mounts": {
       "count": 0,
       "timestamp": 1765468866.5320601
+    },
+    "dataroot": {
+      "count": 0,
+      "timestamp": 1765468877.973964
     }
   },
   "consecutive_zeros": {
@@ -120,7 +125,8 @@
     "movements": 0,
     "creaturescripts": 0,
     "globalevents": 0,
-    "mounts": 2
+    "mounts": 2,
+    "dataroot": 2
   },
   "total_processed": {
     "npc": 1848,

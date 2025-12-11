@@ -124,7 +124,7 @@
   },
   "translation_sync": {
     "current_lang": "fi",
-    "current_category": "items.json",
+    "current_category": "libs.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -362,12 +362,13 @@
       },
       "fi": {
         "chatchannels": 8,
-        "total": 15257,
+        "total": 15278,
         "events": 5,
         "html": 1495,
-        "items": 13749
+        "items": 13749,
+        "libs": 21
       }
     },
-    "last_sync": 1765412321.2507763
+    "last_sync": 1765412328.5141323
   }
 }

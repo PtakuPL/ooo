@@ -2,7 +2,7 @@
   "skip_until": {
     "monsters": 1765491528.6309016,
     "actions": 1765491538.287728,
-    "quests": 1765469816.788425,
+    "quests": 1765491548.8651543,
     "raids": 1765469826.6551127,
     "world": 1765469835.0284467,
     "spells": 1765469845.4166665,
@@ -55,7 +55,7 @@
     },
     "quests": {
       "count": 0,
-      "timestamp": 1765469216.7884142
+      "timestamp": 1765487948.8651462
     },
     "raids": {
       "count": 0,
@@ -187,7 +187,7 @@
     "scripts": 2,
     "monsters": 4,
     "actions": 4,
-    "quests": 2,
+    "quests": 4,
     "raids": 2,
     "world": 2,
     "spells": 2,

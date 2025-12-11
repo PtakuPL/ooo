@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-11 22:37:58 UTC  
+> **Aktualizacja:** 2025-12-11 22:38:25 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28857
 
 ---
@@ -69,7 +69,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#1** | od uruchomienia |
+| 🔄 Cykl aktualny | **#3** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **0** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -170,17 +170,17 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     3 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
-│ Kategoria: 📁 NPC                                    │
+│ Kategoria: 📁 SCRIPTS                                │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Pliki przeskanowane:      0 (wszystkie kategorie)          │
-│    ├─ Kategoria    NPC:   5339 kluczy EN                    │
+│    ├─ Kategoria SCRIPTS:     97 kluczy EN                    │
 │    └─ Total kluczy EN:  28857                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-11 22:37:58            │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 22:38:25            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -195,12 +195,13 @@
 | ⬜ Plików bez kluczy | **0** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **0** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#1** | continuous mode |
+| 🔄 Cykli wykonanych | **#3** | continuous mode |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
+- 📜 `scripts` +0 kluczy @ 22:38:23
 - 🧙 `npc` +0 kluczy @ 22:37:57
 
 
@@ -368,7 +369,7 @@
 | spells | 304 | 0 | 0 | ✅ Active |
 | client | 242 | 0 | 0 | ✅ Active |
 | raids | 147 | 0 | 0 | ✅ Active |
-| scripts | 97 | 0 | 0 | ✅ Active |
+| scripts | 97 | 0 | 2 | ⏭️ Skip 9m |
 | php | 59 | 0 | 0 | ✅ Active |
 | startup | 23 | 0 | 0 | ✅ Active |
 | libs | 21 | 0 | 0 | ✅ Active |
@@ -392,6 +393,7 @@
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
 | npc | 59m | 4x | Progresywny backoff |
+| scripts | 9m | 2x | Progresywny backoff |
 
 ---
 
@@ -399,7 +401,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #3 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -442,7 +444,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 22:37:58  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 22:38:25  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

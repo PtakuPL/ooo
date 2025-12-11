@@ -1,15 +1,21 @@
 {
   "skip_until": {
-    "npc": 1765492677.106859
+    "npc": 1765492677.106859,
+    "scripts": 1765489703.592325
   },
   "last_processed": {
     "npc": {
       "count": 0,
       "timestamp": 1765489077.1068504
+    },
+    "scripts": {
+      "count": 0,
+      "timestamp": 1765489103.5923193
     }
   },
   "consecutive_zeros": {
-    "npc": 4
+    "npc": 4,
+    "scripts": 2
   },
   "total_processed": {},
   "migrations_done": false

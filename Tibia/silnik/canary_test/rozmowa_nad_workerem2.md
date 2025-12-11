@@ -11,13 +11,27 @@
 - **Funkcja `mark_file_completed()`**: ✅ NAPRAWIONA - zapisuje do obu źródeł
 
 ### NPC do migracji
-- **39 NPC** z literalnymi dialogami bez i18nKey (wg audytu Agenta 1)
-- Przykłady: `a_prisoner.lua`, `alaistar.lua`, `angus.lua`, `asima.lua`, etc.
-- **3 NPC znalezione lokalnie**: `grizzly_adams.lua`, `ruprecht.lua`, `the_oracle.lua`
+- **431 plików NPC** w hard_strings.csv bez i18nKey (pełna lista)
+- **39 NPC** z literalnymi dialogami (`npcHandler:say`) bez i18nKey (wg audytu Agenta 1)
+- Różnica: 431 vs 39 - prawdopodobnie 392 NPC mają stringi ale NIE mają handlerów say (np. tylko nazwa/opis)
+- Przykłady: `a_beautiful_girl.lua`, `a_beggar.lua`, `a_behemoth.lua`, `abran_ironeye.lua`, etc.
 
 ### Hard strings reports (istniejące)
 - `docs/i18n/generated/hard_strings.csv`: **24205 wpisów** (serwer)
-- `docs/i18n/generated/testyy_hard_strings.csv`: **51254 wpisów** (instalka)
+- `docs/i18n/generated/testyy_hard_strings.csv`: **51254 wpisów** (klient - głównie już przetłumaczone locales)
+
+### Podział hard_strings serwera (24205 wpisów):
+| Kategoria | Wpisów | Priorytet |
+|-----------|--------|-----------|
+| NPC | 14262 | 🔴 WYSOKI |
+| scripts/lib | 2339 | 🟡 ŚREDNI |
+| spells/monster | 816 | 🟢 NISKI |
+| talkactions/god | 480 | 🟢 NISKI |
+| actions/items | 398 | 🟡 ŚREDNI |
+| creaturescripts | 363 | 🟡 ŚREDNI |
+| spells/attack | 283 | 🟢 NISKI |
+| quests/* | ~1500 | 🟡 ŚREDNI |
+| inne | ~3764 | 🟢 NISKI |
 
 ---
 
@@ -223,6 +237,48 @@ Po ustaleniu odpowiedzi na pytania, zaczynam od:
 2. **Funkcja scan** - dodanie `scan_hard_strings()` do workera
 3. **Integracja** - połączenie z dispatcherem
 4. **Status** - aktualizacja I18N_STATUS.md
+
+---
+
+## 🎯 KONKRETNY PLAN AKCJI
+
+### Etap 1: Migracja 431 NPC (PRIORYTET)
+**Problem:** 431 plików NPC ma hard-coded stringi bez i18nKey
+**Rozwiązanie:** 
+1. Worker w trybie MIGRATION już przetwarza NPC
+2. Trzeba sprawdzić dlaczego pomija te 431 plików
+3. Możliwe przyczyny:
+   - NPC nie mają handlerów `say` (tylko nazwa/opis)
+   - Pattern matching nie łapie wszystkich wzorców
+   - Pliki są w `PROCESSED_FILE` ale bez faktycznej migracji
+
+### Etap 2: Integracja hard_strings z workerem
+1. Parsować `hard_strings.csv` do JSON
+2. Porównywać z `i18n_file_status.json`
+3. Znaleźć pliki które są w hard_strings ale nie w file_status
+
+### Etap 3: Priorytetyzacja
+1. **Faza A**: 39 NPC z handlerami say (dialogi)
+2. **Faza B**: 392 NPC bez handlerów say (nazwy/opisy)
+3. **Faza C**: scripts/lib (2339 wpisów)
+4. **Faza D**: quests (1500 wpisów)
+
+---
+
+## 📋 ZADANIA DO WYKONANIA
+
+### Agent 2 (obecny):
+- [x] Analiza struktury hard_strings.csv
+- [x] Identyfikacja 431 NPC bez i18nKey
+- [x] Znalezienie testyy (OTClient)
+- [ ] Sprawdzić dlaczego worker pomija 431 NPC
+- [ ] Dodać logikę hard_strings do dispatchera
+- [ ] Stworzyć sekcję "Hard-coded Strings" w I18N_STATUS.md
+
+### Agent 1:
+- [ ] Zweryfikować listę 39 NPC z dialogami
+- [ ] Sprawdzić czy hard_strings.csv jest aktualny
+- [ ] Przygotować ignore-listę dla false-positive
 
 ---
 

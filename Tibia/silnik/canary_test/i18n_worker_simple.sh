@@ -1140,6 +1140,15 @@ stage_2() {
         fi
     fi
     
+    # npcConfig.voices z text = "..." wymaga migracji jeśli brak i18nKey
+    if grep -q "npcConfig.voices" "$file" 2>/dev/null; then
+        if grep -q 'text = "' "$file" 2>/dev/null; then
+            if ! grep -q "i18nKey" "$file" 2>/dev/null; then
+                needs="true"
+            fi
+        fi
+    fi
+    
     python3 -c "
 import json
 

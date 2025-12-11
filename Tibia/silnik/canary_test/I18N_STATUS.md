@@ -303,6 +303,8 @@
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `a_dead_bureaucrat2` - ukończono 2025-12-11 03:38
+- ✅ `a_dead_bureaucrat1` - ukończono 2025-12-11 03:38
 - ✅ `shiriel` - ukończono 2025-12-10 21:24
 - ✅ `seymour` - ukończono 2025-12-10 21:24
 - ✅ `romir` - ukończono 2025-12-10 21:24

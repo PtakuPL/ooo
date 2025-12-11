@@ -130,7 +130,7 @@
   },
   "translation_sync": {
     "current_lang": "bs",
-    "current_category": "client.json",
+    "current_category": "php.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -522,7 +522,7 @@
       },
       "bs": {
         "chatchannels": 8,
-        "total": 28775,
+        "total": 28806,
         "events": 5,
         "html": 1495,
         "items": 13749,
@@ -534,7 +534,8 @@
         "scripts": 385,
         "spells": 15,
         "startup": 23,
-        "client": 236
+        "client": 236,
+        "php": 31
       },
       "sr": {
         "chatchannels": 8,
@@ -634,6 +635,6 @@
         "items": 13749
       }
     },
-    "last_sync": 1765414225.6402109
+    "last_sync": 1765414233.450061
   }
 }

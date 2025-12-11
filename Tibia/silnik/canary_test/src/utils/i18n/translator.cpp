@@ -126,7 +126,7 @@ std::string Translator::format(const std::string &key, const std::string &locale
 
 	std::string translation;
 	{
-		std::scoped_lock lock(mutex);
+		std::shared_lock lock(mutex);  // Shared lock for read - multiple readers allowed!
 		translation = lookupUnlocked(resolvedLocale, key);
 		if (translation.empty() && resolvedLocale != fallbackLocale) {
 			translation = lookupUnlocked(fallbackLocale, key);
@@ -164,7 +164,18 @@ void Translator::ensureLocaleLoaded(const std::string &locale) const {
 		return;
 	}
 
-	std::scoped_lock lock(mutex);
+	// First check with shared lock (fast path - read only)
+	{
+		std::shared_lock readLock(mutex);
+		const auto it = locales.find(locale);
+		if (it != locales.end() && it->second.loaded) {
+			return;  // Already loaded, no need for exclusive lock
+		}
+	}
+
+	// Need to load - acquire exclusive lock
+	std::unique_lock writeLock(mutex);
+	// Double-check after acquiring exclusive lock (another thread might have loaded it)
 	const auto it = locales.find(locale);
 	if (it != locales.end() && it->second.loaded) {
 		return;

@@ -33,6 +33,7 @@
 #include "server/network/protocol/protocolstatus.hpp"
 #include "server/network/webhook/webhook.hpp"
 #include "creatures/players/vocations/vocation.hpp"
+#include "utils/i18n/translator.hpp"
 
 CanaryServer::CanaryServer(
 	Logger &logger,
@@ -417,6 +418,18 @@ void CanaryServer::loadModules() {
 	g_ioBosstiary().loadBoostedBoss();
 	g_ioprey().initializeTaskHuntOptions();
 	g_game().logCyclopediaStats();
+
+	// Preload common locales for i18n system to avoid lag on first player connection
+	logger.info("Preloading i18n translations...");
+	const auto &defaultLocale = g_configManager().getString(DEFAULT_LOCALE);
+	i18n::g_translator().setFallbackLocale(defaultLocale);
+	
+	// Preload most common languages (can be extended based on server population)
+	const std::vector<std::string> preloadLocales = {"en", "pl", "pt", "es", "de"};
+	for (const auto &loc : preloadLocales) {
+		i18n::g_translator().loadLocale(loc);
+	}
+	logger.info("I18n translations preloaded for {} locales.", preloadLocales.size());
 }
 
 void CanaryServer::modulesLoadHelper(bool loaded, std::string moduleName) {

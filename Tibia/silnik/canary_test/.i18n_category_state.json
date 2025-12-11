@@ -21,7 +21,8 @@
     "startup": 1765489804.4497108,
     "npclib": 1765489813.9160173,
     "dataroot": 1765489821.8914454,
-    "php": 1765489831.916997
+    "php": 1765489831.916997,
+    "html": 1765489841.7588153
   },
   "last_processed": {
     "npc": {
@@ -111,6 +112,10 @@
     "php": {
       "count": 0,
       "timestamp": 1765489231.9169884
+    },
+    "html": {
+      "count": 0,
+      "timestamp": 1765489241.7588036
     }
   },
   "consecutive_zeros": {
@@ -135,7 +140,8 @@
     "startup": 2,
     "npclib": 2,
     "dataroot": 2,
-    "php": 2
+    "php": 2,
+    "html": 2
   },
   "total_processed": {},
   "migrations_done": false

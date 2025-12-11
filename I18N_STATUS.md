@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-11 21:58:35 UTC  
+> **Aktualizacja:** 2025-12-11 21:59:24 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28803
 
 ---
@@ -44,9 +44,9 @@
 | Status | Ilość | Procent | Opis |
 |--------|-------|---------|------|
 | ✅ Zmigrowane | **0** | 0.0% | mają klucze i18n |
-| 🔄 Wymaga migracji | **20** | - | trzeba dodać i18n |
+| 🔄 Wymaga migracji | **19** | - | trzeba dodać i18n |
 | ⚪ Czyste | **334** | - | bez tekstów |
-| 🔧 W trakcie | **0** | - | obecnie przetwarzane |
+| 🔧 W trakcie | **1** | - | obecnie przetwarzane |
 
 ### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
@@ -176,11 +176,11 @@
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
 │ Kategoria: 📁 NPC                                    │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Pliki przeskanowane:    354 (wszystkie kategorie)          │
+│ 📊 Pliki przeskanowane:    353 (wszystkie kategorie)          │
 │    ├─ Kategoria    NPC:   5339 kluczy EN                    │
 │    └─ Total kluczy EN:  28803                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-11 21:58:35            │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 21:59:24            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -447,23 +447,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 21:58:35  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 21:59:24  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `the_lootmonger` - ukończono 2025-12-11 21:58
-- ✅ `tandros` - ukończono 2025-12-11 21:58
-- ✅ `sundara` - ukończono 2025-12-11 21:58
-- ✅ `sigurd` - ukończono 2025-12-11 21:58
-- ✅ `shiriel` - ukończono 2025-12-11 21:58
-- ✅ `seymour` - ukończono 2025-12-11 21:58
-- ✅ `romir` - ukończono 2025-12-11 21:58
-- ✅ `rock_in_a_hard_place` - ukończono 2025-12-11 21:58
-- ✅ `nipuna` - ukończono 2025-12-11 21:58
-- ✅ `nelly` - ukończono 2025-12-11 21:58
+- ✅ `seymour` - ukończono 2025-12-11 21:59
+- ✅ `romir` - ukończono 2025-12-11 21:59
+- ✅ `rock_in_a_hard_place` - ukończono 2025-12-11 21:59
+- ✅ `nipuna` - ukończono 2025-12-11 21:59
+- ✅ `nelly` - ukończono 2025-12-11 21:59
+- ✅ `mordecai` - ukończono 2025-12-11 21:59
+- ✅ `gnomegica` - ukończono 2025-12-11 21:59
+- ✅ `ghorza` - ukończono 2025-12-11 21:59
+- ✅ `frederik` - ukończono 2025-12-11 21:58
+- ✅ `frans` - ukończono 2025-12-11 21:58
 
 ---
 

@@ -124,7 +124,7 @@
   },
   "translation_sync": {
     "current_lang": "lv",
-    "current_category": "raids.json",
+    "current_category": "scripts.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -392,7 +392,7 @@
       },
       "lv": {
         "chatchannels": 8,
-        "total": 28116,
+        "total": 28501,
         "events": 5,
         "html": 1495,
         "items": 13749,
@@ -400,9 +400,10 @@
         "modules": 16,
         "monsters": 7341,
         "npc": 5334,
-        "raids": 147
+        "raids": 147,
+        "scripts": 385
       }
     },
-    "last_sync": 1765412547.9160817
+    "last_sync": 1765412555.3098097
   }
 }

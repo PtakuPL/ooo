@@ -372,6 +372,42 @@ total_keys = (game_keys + items_keys + misc_keys + monsters_keys + npc_keys +
               actions_keys + errors_keys + messages_keys +
               php_keys + cpp_keys + html_keys + client_keys)
 
+# Bazowy stan (ile było przed pracą agenta) - zapis do pliku, później tylko odczyt
+BASELINE_FILE = "i18n_progress_baseline.json"
+current_counts = {
+    "npc": npc_keys,
+    "scripts": scripts_keys,
+    "items": items_keys,
+    "monsters": monsters_keys,
+    "spells": spells_keys,
+    "server": server_keys,
+    "php": php_keys,
+    "html": html_keys,
+    "client": client_keys,
+    "ui": ui_keys,
+    "cpp": cpp_keys,
+}
+baseline_ts = timestamp
+baseline_counts = current_counts.copy()
+if os.path.exists(BASELINE_FILE):
+    try:
+        with open(BASELINE_FILE) as f:
+            baseline_data = json.load(f)
+            baseline_counts = baseline_data.get("counts", baseline_counts)
+            baseline_ts = baseline_data.get("timestamp", baseline_ts)
+    except Exception:
+        pass
+else:
+    try:
+        with open(BASELINE_FILE, "w") as f:
+            json.dump({"timestamp": baseline_ts, "counts": baseline_counts}, f, indent=2, ensure_ascii=False)
+    except Exception:
+        pass
+
+delta_counts = {}
+for k, v in current_counts.items():
+    delta_counts[k] = v - baseline_counts.get(k, 0)
+
 # Zlicz języki (wszystkie dostępne)
 ALL_LANGUAGES = ["en", "pl", "de", "es", "pt", "fr", "it", "ru", "uk", "zh", "ja", "ko", "ar", "tr", "nl", "sv", "da", "no", "fi", "cs", "sk", "hu", "ro", "bg", "el", "he", "hi", "th", "vi", "id", "ms", "tl", "sw", "bn", "ta", "te", "ml", "ka", "hy", "az", "kk", "uz", "sr", "hr", "sl", "bs", "mk", "sq", "lv", "lt", "et", "fa", "zh_TW"]
 langs_count = len(ALL_LANGUAGES)

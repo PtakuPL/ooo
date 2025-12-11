@@ -2971,6 +2971,1156 @@
       },
       "overall_status": "completed",
       "completed_at": "2025-12-10T15:04:49.381178"
+    },
+    "data-otservbr-global/npc/a_dead_bureaucrat1.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "24765abb9c2a4a34229217d9f060e3ea",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "a_dead_bureaucrat1",
+          "StdModule_say": 0,
+          "npcHandler_say": 1,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 1,
+          "already_i18n": 0,
+          "npcSayLib": 8,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/a_dead_bureaucrat2.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "a78c4be7343e8206cc88bca462a71055",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "a_dead_bureaucrat2",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 1,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/a_dead_bureaucrat3.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "e2d8fc533aa4f2270d83c178e0bf859b",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "a_dead_bureaucrat3",
+          "StdModule_say": 0,
+          "npcHandler_say": 1,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 1,
+          "already_i18n": 0,
+          "npcSayLib": 4,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/a_dead_bureaucrat4.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "777da09de8df2bbc6f9a4d9baecaf8ea",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "a_dead_bureaucrat4",
+          "StdModule_say": 0,
+          "npcHandler_say": 1,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 1,
+          "already_i18n": 0,
+          "npcSayLib": 4,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/ambassador_of_rathleton.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "532fadb8c1a452b7c3188f37a22a017f",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "ambassador_of_rathleton",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 3,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/an_old_dragon_lord.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "887b5e617f57d0803ac744017e9f29c3",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "an_old_dragon_lord",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 4,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/an_orc_guard.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "f28af2bb8ea9aa36777fc88a2a8b6f21",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "an_orc_guard",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/ariella.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "cdf70bfe28ebd9c6f7de7d7762a41981",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "ariella",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 18,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/arito.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "4d605e6f90f109e87ca49b8f17eeb5e2",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "arito",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 9,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/arkarra.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "04066cd4e85f0babd9c61d965d3215c0",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "arkarra",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/aruda.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "cf028642643a85799833e302b3980ac7",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "aruda",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 42,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/ashtamor.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "1f9b1f3e2174e2c6e15aa767bd2cb2e3",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "ashtamor",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/asralius.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "a6e48ef5a420cae36e01f1efc5085e1d",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "asralius",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/atur.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "c5df683a6f195a4b04f615484d1a3fcc",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "atur",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/baxter.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "cd2f4f1c95e170a796b91c26226686f1",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "baxter",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/beatrice.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "7973c7488095a0eca30458cde654d1f6",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "beatrice",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 3,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/benevola.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "837d0f7147f9cc14d48bb1d34b1ee6ac",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "benevola",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/benjamin.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "84029d0099c82b07b11b50fa55b803d2",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "benjamin",
+          "StdModule_say": 0,
+          "npcHandler_say": 1,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 1,
+          "already_i18n": 0,
+          "npcSayLib": 1,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/bo_ques.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "87f3cd9e46a1cef34a99cb81043a2882",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "bo_ques",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 21,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/busty_bonecrusher.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "35b7adf75fd84d19b5143f5a4cb17f8d",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "busty_bonecrusher",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 1,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/cael.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "b5931eaa302c86e453001d289e5deece",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "cael",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 103,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/canary.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "bad7088d03aeac8a730436de93f45cc9",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "canary",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 2,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/carlos.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "af34f14506035ca866d32197082f2a6f",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "carlos",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 15,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/chester_kahs.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "f2b545e9ef9db576dab7a622dc532812",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "chester_kahs",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 66,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/cledwyn.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "71a254dd5adcbbe1eca475280c596314",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "cledwyn",
+          "StdModule_say": 0,
+          "npcHandler_say": 7,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 7,
+          "already_i18n": 0,
+          "npcSayLib": 15,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/cruleo.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "2da452a903ddddb71ab610bde7212679",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "cruleo",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/ebenizer.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "4c7aaa5d5bc2f8c7e2a2866f6bf1f572",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "ebenizer",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/eclesius.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "75a30e9ffc738660480d99a0055622d1",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "eclesius",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/eighty.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "cb497387e05eb18fb56fb2e68f05d5d1",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "eighty",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/elgar.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "b58641d6a395a49fcf62a22a8ef2e91b",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "elgar",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/elyen_ravenlock.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "04d20af90bd900b7c05ca4b46cdde2c9",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "elyen_ravenlock",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 13,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/emael.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "e39f103537bd07709339dc1e119cdc05",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "emael",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 6,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/eshaya.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "08b530aa31a912c09d8bcab1bd95509f",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "eshaya",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 16,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/eva.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "f22fb81cbd5d3b858ea3ba0876f192ab",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "eva",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/faloriel.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "180d82df07f8e31dad3844cd8befa5cb",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "faloriel",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 4,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/feizuhl.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "5a9105440df4647d95c075dff4f91956",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "feizuhl",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/fenech.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "6de800f5002d3cc279c17c4be9874564",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "fenech",
+          "StdModule_say": 0,
+          "npcHandler_say": 3,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 3,
+          "already_i18n": 0,
+          "npcSayLib": 3,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/ferks.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "2172b868ddb8894b8940eaddc485c7c4",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "ferks",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/finarfin.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "dca2295aa30eadc1a4098e89f5b5c732",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "finarfin",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/florentine.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "f120cd5039297e95e7d8b8e452fc6735",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "florentine",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/galuna.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "6b8c92627494298b2c754f9d6430607b",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "galuna",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/gamel.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "002d8fe0c2b541d871c0812dff53dd86",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "gamel",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 4,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/gnomillion.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "c440f7eb8800e14b5aa9afbe3e547731",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "gnomillion",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/guard_saros.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "2d3c576942e66cb17057d51e1037b0be",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "guard_saros",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 42,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/gundralph.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "2234ffafac2a0a9e7ff265bb5d8ca4f8",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "gundralph",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/hoggle.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "4fe554e206e9230b5523d453e872aa61",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "hoggle",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/imbuement_assistant.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "be116809c0830cee27b9e1ceb8949cd7",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "imbuement_assistant",
+          "StdModule_say": 0,
+          "npcHandler_say": 4,
+          "sendTextMessage": 1,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 5,
+          "already_i18n": 0,
+          "npcSayLib": 2,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/iwan.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "a4a79d2854ed6eace196adbb67c487bd",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "iwan",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/jack.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "80217f90b80c9de0fc4082efb92f60f9",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "jack",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 16,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
+    },
+    "data-otservbr-global/npc/jamesfrancis.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "4b05fcf83da758724d55994edc739188",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "jamesfrancis",
+          "StdModule_say": 0,
+          "npcHandler_say": 0,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 0,
+          "already_i18n": 0,
+          "npcSayLib": 5,
+          "needs_migration": false
+        }
+      },
+      "overall_status": "in_progress"
     }
   },
   "global_stats": {

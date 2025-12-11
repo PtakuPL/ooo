@@ -17,8 +17,7 @@
     "sendtextmessage": 1765423724.014326,
     "keywordhandler": 1765423731.132717,
     "twig": 1765423738.202282,
-    "php": 1765423745.8622632,
-    "npc": 1765424142.547605
+    "php": 1765423745.8622632
   },
   "last_processed": {
     "scripts": {
@@ -98,13 +97,12 @@
       "timestamp": 1765420138.202276
     },
     "npc": {
-      "count": 0,
-      "timestamp": 1765420542.5475984
+      "count": 50,
+      "timestamp": 1765420607.4356773
     }
   },
   "migrations_done": false,
   "consecutive_zeros": {
-    "npc": 4,
     "scripts": 4,
     "monsters": 4,
     "raids": 4,
@@ -123,11 +121,13 @@
     "client": 4,
     "sendtextmessage": 4,
     "keywordhandler": 4,
-    "twig": 4
+    "twig": 4,
+    "npc": 0
   },
   "total_processed": {
     "spells": 147,
-    "php": 42
+    "php": 42,
+    "npc": 100
   },
   "translation_sync": {
     "stats": {

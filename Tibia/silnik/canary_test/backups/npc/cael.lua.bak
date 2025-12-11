@@ -1,0 +1,376 @@
+local internalNpcName = "Cael"
+local npcType = Game.createNpcType(internalNpcName)
+local npcConfig = {}
+
+npcConfig.name = internalNpcName
+npcConfig.description = internalNpcName
+
+npcConfig.health = 100
+npcConfig.maxHealth = npcConfig.health
+npcConfig.walkInterval = 2000
+npcConfig.walkRadius = 2
+
+npcConfig.outfit = {
+	lookType = 66,
+}
+
+npcConfig.flags = {
+	floorchange = false,
+}
+
+npcConfig.voices = {
+	interval = 15000,
+	chance = 50,
+	{ text = "I wish I could learn more about this strange world." },
+	{ text = "Those different cultures are amazing." },
+	{ text = "What an interesting continent." },
+}
+
+local tomes = Storage.Quest.U8_54.TheNewFrontier.TomeofKnowledge
+-- Npc shop
+npcConfig.shop = {
+	{ itemName = "didgeridoo", clientId = 2965, buy = 5000, storageKey = tomes, storageValue = 6 },
+	{ itemName = "war drum", clientId = 2966, buy = 1000, storageKey = tomes, storageValue = 6 },
+	{ itemName = "Dragon Statue Kit", clientId = 10212, buy = 2500, storageKey = tomes, storageValue = 11 },
+	{ itemName = "Dragon Throne Kit", clientId = 10286, buy = 5000, storageKey = tomes, storageValue = 12 },
+}
+-- On buy npc shop message
+npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBackpacks, totalCost)
+	npc:sellItem(player, itemId, amount, subType, 0, ignore, inBackpacks)
+end
+-- On sell npc shop message
+npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
+end
+-- On check npc shop message (look item)
+npcType.onCheckItem = function(npc, player, clientId, subType) end
+
+local keywordHandler = KeywordHandler:new()
+local npcHandler = NpcHandler:new(keywordHandler)
+
+npcType.onThink = function(npc, interval)
+	npcHandler:onThink(npc, interval)
+end
+
+npcType.onAppear = function(npc, creature)
+	npcHandler:onAppear(npc, creature)
+end
+
+npcType.onDisappear = function(npc, creature)
+	npcHandler:onDisappear(npc, creature)
+end
+
+npcType.onMove = function(npc, creature, fromPosition, toPosition)
+	npcHandler:onMove(npc, creature, fromPosition, toPosition)
+end
+
+npcType.onSay = function(npc, creature, type, message)
+	npcHandler:onSay(npc, creature, type, message)
+end
+
+npcType.onCloseChannel = function(npc, creature)
+	npcHandler:onCloseChannel(npc, creature)
+end
+
+local TheNewFrontier = Storage.Quest.U8_54.TheNewFrontier
+local function creatureSayCallback(npc, creature, type, message)
+	local player = Player(creature)
+	local playerId = player:getId()
+
+	if not npcHandler:checkInteraction(npc, creature) then
+		return false
+	end
+
+	if MsgContains(message, "tome") or MsgContains(message, "knowledge") then
+		--The first 8 missions of The New Frontier Quest completed to be able to trade 6 Tomes of Knowledge with NPC Cael.
+		if player:getStorageValue(TheNewFrontier.Mission08) == 2 then
+			if player:getStorageValue(TheNewFrontier.TomeofKnowledge) < 1 then --tome1
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_1")
+				npcHandler:setTopic(playerId, 1)
+			elseif player:getStorageValue(TheNewFrontier.TomeofKnowledge) >= 1 and player:getStorageValue(TheNewFrontier.TomeofKnowledge) <= 5 then --tome2 - tome6
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_2")
+				npcHandler:setTopic(playerId, player:getStorageValue(TheNewFrontier.TomeofKnowledge) + 1)
+			elseif player:getStorageValue(TheNewFrontier.TomeofKnowledge) >= 6 and player:getStorageValue(TheNewFrontier.TomeofKnowledge) <= 11 then --tome7 - tome12
+				--The New Frontier Quest completed to trade more Tomes of Knowledge with NPC Cael.
+				if player:getStorageValue(TheNewFrontier.Mission10[1]) == 2 then
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_3")
+					npcHandler:setTopic(playerId, player:getStorageValue(TheNewFrontier.TomeofKnowledge) + 1)
+				else
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_4")
+				end
+			elseif player:getStorageValue(TheNewFrontier.TomeofKnowledge) >= 12 then -- more then 12 tomes
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_5")
+				npcHandler:setTopic(playerId, 13)
+			end
+		else
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_6")
+		end
+	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) >= 1 and npcHandler:getTopic(playerId) <= 13 then
+		if player:removeItem(10217, 1) then --remove tome
+			if npcHandler:getTopic(playerId) == 1 then --tome1
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_7")
+				player:setStorageValue(TheNewFrontier.TomeofKnowledge, 1)
+				npcHandler:setTopic(playerId, 21)
+			elseif npcHandler:getTopic(playerId) >= 2 and npcHandler:getTopic(playerId) <= 12 then --tome2 - tome12
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_8")
+				player:setStorageValue(TheNewFrontier.TomeofKnowledge, player:getStorageValue(TheNewFrontier.TomeofKnowledge) + 1)
+				if player:getStorageValue(TheNewFrontier.TomeofKnowledge) == 10 then
+					player:setStorageValue(TheNewFrontier.ZaoPalaceDoors, 1)
+				elseif player:getStorageValue(TheNewFrontier.TomeofKnowledge) == 7 then
+					player:setStorageValue(TheNewFrontier.SnakeHeadTeleport, 1)
+				elseif player:getStorageValue(TheNewFrontier.TomeofKnowledge) == 8 then
+					player:setStorageValue(TheNewFrontier.CorruptionHole, 1)
+				end
+				npcHandler:setTopic(playerId, player:getStorageValue(TheNewFrontier.TomeofKnowledge) + 20)
+			elseif npcHandler:getTopic(playerId) == 13 then -- more then 12 tomes
+				player:addExperience(5000, true)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_9")
+				npcHandler:setTopic(playerId, 33)
+			end
+		else
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_10")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "zao") then
+		if npcHandler:getTopic(playerId) == 21 then --tome1
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_11")
+			npcHandler:setTopic(playerId, 40)
+		elseif npcHandler:getTopic(playerId) == 22 then --tome2
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_12")
+			npcHandler:setTopic(playerId, 41)
+		elseif npcHandler:getTopic(playerId) == 23 then --tome3
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_13")
+			npcHandler:setTopic(playerId, 42)
+		elseif npcHandler:getTopic(playerId) == 24 then --tome4
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_14")
+			npcHandler:setTopic(playerId, 43)
+		elseif npcHandler:getTopic(playerId) == 25 then --tome5
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_15")
+			npcHandler:setTopic(playerId, 44)
+		elseif npcHandler:getTopic(playerId) == 26 then --tome6
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_16")
+			npcHandler:setTopic(playerId, 45)
+		elseif npcHandler:getTopic(playerId) == 27 then --tome7
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_17")
+			npcHandler:setTopic(playerId, 46)
+		elseif npcHandler:getTopic(playerId) == 28 then --tome8
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_18")
+			npcHandler:setTopic(playerId, 47)
+		elseif npcHandler:getTopic(playerId) == 29 then --tome9
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_19")
+			npcHandler:setTopic(playerId, 48)
+		elseif npcHandler:getTopic(playerId) == 30 then --tome10
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_20")
+			npcHandler:setTopic(playerId, 49)
+		elseif npcHandler:getTopic(playerId) == 31 then --tome11
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_21")
+			npcHandler:setTopic(playerId, 50)
+		elseif npcHandler:getTopic(playerId) == 32 then --tome12
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_22")
+			npcHandler:setTopic(playerId, 51)
+		elseif npcHandler:getTopic(playerId) == 33 then --more than tome12
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_23")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "lizard") then --tome1
+		if npcHandler:getTopic(playerId) == 40 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_63")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_64")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_65")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_66")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "minotaur") then --tome2
+		if npcHandler:getTopic(playerId) == 41 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_58")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_59")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_60")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_61")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_62")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "draken") then --tome3
+		if npcHandler:getTopic(playerId) == 42 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_55")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_56")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_57")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "food") then --tome4
+		if npcHandler:getTopic(playerId) == 43 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_52")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_53")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_54")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "zzaion") then --tome5
+		if npcHandler:getTopic(playerId) == 44 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_49")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_50")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_51")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "human") then --tome6
+		if npcHandler:getTopic(playerId) == 45 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_45")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_46")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_47")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_48")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "steppe") then --tome7
+		if npcHandler:getTopic(playerId) == 46 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_39")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_40")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_41")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_42")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_43")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_44")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "corruption") then --tome8
+		if npcHandler:getTopic(playerId) == 47 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_30")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_31")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_32")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_33")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_34")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_35")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_36")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_37")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_38")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "origin") then --tome9
+		if npcHandler:getTopic(playerId) == 48 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_21")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_22")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_23")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_24")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_25")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_26")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_27")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_28")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_29")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "founder") then --tome10
+		if npcHandler:getTopic(playerId) == 49 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_14")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_15")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_16")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_17")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_18")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_19")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_20")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "dragons") then --tome11
+		if npcHandler:getTopic(playerId) == 50 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_12")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_13")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "thrones") then --tome12
+		if npcHandler:getTopic(playerId) == 51 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.multi_6")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "lantern") then
+		if player:getStorageValue(TheNewFrontier.TomeofKnowledge) >= 11 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_24")
+			npcHandler:setTopic(playerId, 65)
+		end
+	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 65 then
+		if player:removeItem(10289, 1) then
+			player:addItem(10212, 1)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_25")
+			npcHandler:setTopic(playerId, 0)
+		else
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_26")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "cloth") then
+		if player:getStorageValue(TheNewFrontier.TomeofKnowledge) >= 12 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_27")
+			npcHandler:setTopic(playerId, 66)
+		end
+	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 66 then
+		if player:removeItem(5911, 1) then
+			player:addItem(10286, 1)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_28")
+			npcHandler:setTopic(playerId, 0)
+		else
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_29")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "crest") then
+		if player:hasOutfit(player:getSex() == PLAYERSEX_FEMALE and 336 or 335) and player:getItemCount(10199) > 0 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_30")
+			npcHandler:setTopic(playerId, 60)
+		elseif player:hasOutfit(player:getSex() == PLAYERSEX_FEMALE and 336 or 335) and player:getItemCount(10198) > 0 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_31")
+			npcHandler:setTopic(playerId, 61)
+		else
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_32")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) >= 60 and npcHandler:getTopic(playerId) <= 61 then
+		if npcHandler:getTopic(playerId) == 60 then
+			if not player:hasOutfit(player:getSex() == PLAYERSEX_FEMALE and 336 or 335, 1) and player:removeItem(10199, 1) then
+				player:addOutfitAddon(335, 1)
+				player:addOutfitAddon(336, 1)
+				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_33")
+				npcHandler:setTopic(playerId, 0)
+			else
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_34")
+				npcHandler:setTopic(playerId, 0)
+			end
+		elseif npcHandler:getTopic(playerId) == 61 then
+			if not player:hasOutfit(player:getSex() == PLAYERSEX_FEMALE and 336 or 335, 2) and player:removeItem(10198, 1) then
+				player:addOutfitAddon(335, 2)
+				player:addOutfitAddon(336, 2)
+				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_35")
+				npcHandler:setTopic(playerId, 0)
+			else
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_36")
+				npcHandler:setTopic(playerId, 0)
+			end
+		end
+	end
+	return true
+end
+
+local function onTradeRequest(npc, creature)
+	local player = Player(creature)
+	local playerId = player:getId()
+
+	if player:getStorageValue(TheNewFrontier.TomeofKnowledge) < 6 then
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cael.say_37")
+		return false
+	end
+
+	return true
+end
+
+npcHandler:setMessage(MESSAGE_GREET, "Greetings, |PLAYERNAME|! You must have come around quite a bit. I'm always interested in learning new things about Zao.")
+npcHandler:setMessage(MESSAGE_SENDTRADE, "Keep in mind you won't find better offers here. Just browse through my wares.")
+
+npcHandler:setCallback(CALLBACK_ON_TRADE_REQUEST, onTradeRequest)
+npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
+npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
+
+-- npcType registering the npcConfig table
+npcType:register(npcConfig)

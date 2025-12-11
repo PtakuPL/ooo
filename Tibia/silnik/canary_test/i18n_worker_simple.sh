@@ -2487,7 +2487,7 @@ if '''$announce''':
 with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
 " 2>/dev/null
             
-            echo "$file" >> "$PROCESSED_FILE"
+            mark_file_completed "$file" "raids" "1"
             count=$((count + 1))
             log "   ⚔️ raid.$safe.name = $name"
             
@@ -2541,7 +2541,7 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
                 count=$((count + 1))
             fi
             
-            echo "$file" >> "$PROCESSED_FILE"
+            mark_file_completed "$file" "world" "1"
             [ "$count" -ge "$batch" ] && break
         done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
@@ -2591,7 +2591,7 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
                 count=$((count + 1))
             fi
             
-            echo "$file" >> "$PROCESSED_FILE"
+            mark_file_completed "$file" "libs" "1"
             [ "$count" -ge "$batch" ] && break
         done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
@@ -2641,7 +2641,7 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
                 count=$((count + 1))
             fi
             
-            echo "$file" >> "$PROCESSED_FILE"
+            mark_file_completed "$file" "events" "1"
             [ "$count" -ge "$batch" ] && break
         done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
@@ -2680,7 +2680,7 @@ d['channel.$safe.name'] = '''$name'''
 with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
 " 2>/dev/null
             
-            echo "$file" >> "$PROCESSED_FILE"
+            mark_file_completed "$file" "actions" "1"
             count=$((count + 1))
             log "   💬 channel.$safe.name = $name"
             
@@ -2732,7 +2732,7 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
                 count=$((count + 1))
             fi
             
-            echo "$file" >> "$PROCESSED_FILE"
+            mark_file_completed "$file" "movements" "1"
             [ "$count" -ge "$batch" ] && break
         done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
@@ -2782,7 +2782,7 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
                 count=$((count + 1))
             fi
             
-            echo "$file" >> "$PROCESSED_FILE"
+            mark_file_completed "$file" "talkactions" "1"
             [ "$count" -ge "$batch" ] && break
         done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
@@ -2832,7 +2832,7 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
                 count=$((count + 1))
             fi
             
-            echo "$file" >> "$PROCESSED_FILE"
+            mark_file_completed "$file" "globalevents" "1"
             [ "$count" -ge "$batch" ] && break
         done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
@@ -2914,7 +2914,7 @@ if key not in d:
             count=$((count + 1))
         fi
         
-        echo "$file" >> "$PROCESSED_FILE"
+        mark_file_completed "$file" "quests" "$q_keys"
         [ "$count" -ge "$batch" ] && break
     done < <(find html_copy -name "*.php" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
     
@@ -2962,7 +2962,7 @@ if key not in d:
             count=$((count + 1))
         fi
         
-        echo "$file" >> "$PROCESSED_FILE"
+        mark_file_completed "$file" "creaturescripts" "1"
         [ "$count" -ge "$batch" ] && break
     done < <(find html_copy -name "*.html" -o -name "*.twig" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
     
@@ -3020,7 +3020,7 @@ if key not in d:
             count=$((count + 1))
         fi
         
-        echo "$file" >> "$PROCESSED_FILE"
+        mark_file_completed "$file" "weapons" "1"
         [ "$count" -ge "$batch" ] && break
     done < <(find src -name "*.cpp" -o -name "*.hpp" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
     
@@ -3099,7 +3099,7 @@ if key not in d:
                 count=$((count + 1))
             fi
             
-            echo "$file" >> "$PROCESSED_FILE"
+            mark_file_completed "$file" "php" "1"
             [ "$count" -ge "$batch" ] && break
         done < <(find "$dir" -name "*.lua" -o -name "*.otui" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break

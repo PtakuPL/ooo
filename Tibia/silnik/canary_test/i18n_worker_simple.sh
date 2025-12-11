@@ -3189,7 +3189,8 @@ auto_translate_keys() {
     local target_lang="$1"
     local json_file="$2"
     local keys_count="$3"
-    local translate_limit="${TRANSLATE_LIMIT:-0}"  # 0 = brak limitu
+    # Jeśli TRANSLATE_LIMIT nie ustawiony, użyj keys_count jako limitu
+    local translate_limit="${TRANSLATE_LIMIT:-${keys_count:-0}}"  # 0 = brak limitu
     
     log "${CYAN}🌍 AUTO TRANSLATE: $target_lang <- $json_file (limit: $translate_limit)${NC}"
     
@@ -4608,6 +4609,17 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                         NOTE_TEXT=$(echo "$CMD" | cut -d: -f2-)
                         echo "📝 NOTATKA: $NOTE_TEXT"
                         # Notatka nie wykonuje akcji, kontynuuj normalnie
+                        ;;
+                    AUTO:*)
+                        # Format: AUTO:<lang>:<json_file>:<limit>
+                        AUTO_LANG=$(echo "$CMD" | cut -d: -f2)
+                        AUTO_JSON=$(echo "$CMD" | cut -d: -f3)
+                        AUTO_LIMIT=$(echo "$CMD" | cut -d: -f4)
+                        echo "🎯 Wymuszam AUTO_TRANSLATE: $AUTO_LANG / $AUTO_JSON (limit: $AUTO_LIMIT)"
+                        MODE_TYPE="AUTO_TRANSLATE"
+                        MODE_CAT="$AUTO_LANG"
+                        MODE_COUNT="${AUTO_JSON:-npc.json}"
+                        MODE_EXTRA="${AUTO_LIMIT:-0}"
                         ;;
                     *)
                         echo "⚠️ Nieznana komenda: $CMD"

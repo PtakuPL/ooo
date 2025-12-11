@@ -5,7 +5,8 @@
     "translation": 1765415989.7660613,
     "monsters": 1765416291.8609195,
     "raids": 1765416297.4457195,
-    "world": 1765416299.1817932
+    "world": 1765416299.1817932,
+    "libs": 1765419339.908812
   },
   "last_processed": {
     "npc": {
@@ -35,6 +36,14 @@
     "spells": {
       "count": 132,
       "timestamp": 1765415724.168065
+    },
+    "items": {
+      "count": 28958,
+      "timestamp": 1765415732.8205228
+    },
+    "libs": {
+      "count": 0,
+      "timestamp": 1765415739.9088047
     }
   },
   "consecutive_zeros": {
@@ -44,10 +53,13 @@
     "monsters": 2,
     "raids": 2,
     "world": 2,
-    "spells": 0
+    "spells": 0,
+    "items": 0,
+    "libs": 4
   },
   "total_processed": {
-    "spells": 370
+    "spells": 370,
+    "items": 28958
   },
   "translation_sync": {},
   "migrations_done": true

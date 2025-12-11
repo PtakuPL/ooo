@@ -130,7 +130,7 @@
   },
   "translation_sync": {
     "current_lang": "bg",
-    "current_category": "html.json",
+    "current_category": "items.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -443,11 +443,12 @@
       },
       "bg": {
         "chatchannels": 8,
-        "total": 1508,
+        "total": 15257,
         "events": 5,
-        "html": 1495
+        "html": 1495,
+        "items": 13749
       }
     },
-    "last_sync": 1765412814.9265847
+    "last_sync": 1765412821.980018
   }
 }

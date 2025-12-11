@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 300, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 03:42:53 UTC  
+> **Aktualizacja:** 2025-12-11 03:43:08 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 29085
 
 ---
@@ -28,7 +28,7 @@
 | 🔑 Kluczy i18n (EN) | **29085** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#4** | - |
+| 🔄 Cykl | **#5** | - |
 
 ---
 
@@ -122,19 +122,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     4 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     5 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 RAIDS                                  │
+│ Kategoria: 🎒 WORLD                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: raids                                          │
-│ [███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 147/1000 kluczy (15%)                                          │
+│ 📊 Ostatnia aktywność: world                                          │
+│ [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
+│ 0/1000 kluczy (0%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 351 operacji               │
 │ 🌍 Języki zsync: 32/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 03:42:53                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 03:43:08                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -148,7 +148,7 @@
 | ✅ NPC zmigrowanych | **144** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29085** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **32**/53 | sv, hu, bs, ro, az... |
-| 🔄 Cykli wykonanych | **#4** | continuous mode |
+| 🔄 Cykli wykonanych | **#5** | continuous mode |
 | 🎯 Aktywne kategorie | **15** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -156,6 +156,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `world` +0 kluczy @ 03:43:08
 - ⚡ `raids` +0 kluczy @ 03:42:52
 - 👹 `monsters` +0 kluczy @ 03:42:45
 - 📜 `scripts` +0 kluczy @ 03:42:36
@@ -341,7 +342,7 @@
 | quests | 0 | 0 | 0 | ⏳ Empty |
 | server | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
-| world | 0 | 0 | 0 | ⏳ Empty |
+| world | 0 | 0 | 2 | ⏭️ Skip 9m |
 
 ---
 
@@ -352,6 +353,7 @@
 | scripts | 9m | 2x | Progresywny backoff |
 | monsters | 9m | 2x | Progresywny backoff |
 | raids | 9m | 2x | Progresywny backoff |
+| world | 9m | 2x | Progresywny backoff |
 
 ---
 
@@ -359,7 +361,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #4 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #5 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -402,7 +404,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:42:53  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:43:08  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

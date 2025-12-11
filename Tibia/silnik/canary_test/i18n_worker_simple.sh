@@ -4447,9 +4447,12 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
         done
         
         echo "╔════════════════════════════════════════════════════════════════════╗"
-        echo "║   I18N WORKER v3.0 - FULL AUTONOMOUS (24/7)                        ║"
+        echo "║   I18N WORKER v3.1 - FULL AUTONOMOUS (24/7)                        ║"
         echo "║   PID: $$                                                          ║"
         echo "║   Batch: $BATCH plików | Przerwa: ${DELAY}s                        ║"
+        [ "$NO_GIT" = "true" ] && echo "║   🚫 --no-git: Git push WYŁĄCZONY                                ║"
+        [ "$TRANSLATE_LIMIT" -gt 0 ] 2>/dev/null && echo "║   📊 --translate-limit: max $TRANSLATE_LIMIT kluczy/cykl                       ║"
+        [ "$TRANSLATIONS_ONLY" = "true" ] && echo "║   🌐 --translations-only: tylko tłumaczenia                      ║"
         echo "║   Tryby: NPC → SCRIPTS → MONSTERS → ITEMS → AUTO_TRANSLATE        ║"
         echo "╚════════════════════════════════════════════════════════════════════╝"
         echo ""

@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-11 22:14:32 UTC  
+> **Aktualizacja:** 2025-12-11 22:15:47 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28803
 
 ---
@@ -24,7 +24,7 @@
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
-| 📂 **Wszystkie pliki** | **16,208** | 100% | cały projekt |
+| 📂 **Wszystkie pliki** | **16,207** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **7,742** | 47.8% | pliki z kodem/tekstami |
 | 🔍 **Przeskanowane** | **20** | **0.3%** | historia workera |
 | ⏳ Nie przeskanowane | **7,722** | 99.7% | czekają na skan |
@@ -69,7 +69,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#7** | od uruchomienia |
+| 🔄 Cykl aktualny | **#1** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **0** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -170,7 +170,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     7 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
@@ -180,7 +180,7 @@
 │    ├─ Kategoria    NPC:   5339 kluczy EN                    │
 │    └─ Total kluczy EN:  28803                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-11 22:14:32            │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 22:15:47            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -195,13 +195,13 @@
 | ⬜ Plików bez kluczy | **20** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **0** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#7** | continuous mode |
+| 🔄 Cykli wykonanych | **#1** | continuous mode |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
-- 🧙 `npc` +20 kluczy @ 22:14:30
+- 🧙 `npc` +0 kluczy @ 22:15:45
 - ⚡ `errors` +0 kluczy @ 17:41:10
 - ⚡ `otclient_tools` +0 kluczy @ 17:41:03
 - ⚡ `otclient_src` +0 kluczy @ 17:22:35
@@ -370,7 +370,7 @@
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 0 | 2 | ✅ Active |
 | monsters | 7341 | 0 | 2 | ✅ Active |
-| npc | 5339 | 13620 | 0 | ✅ Active |
+| npc | 5339 | 13620 | 2 | ⏭️ Skip 9m |
 | html | 1495 | 0 | 2 | ✅ Active |
 | spells | 304 | 0 | 2 | ✅ Active |
 | client | 242 | 0 | 2 | ✅ Active |
@@ -396,7 +396,9 @@
 
 ## 🤖 Worker Category State
 
-*Brak kategorii z aktywnym skip*
+| Kategoria | Skip pozostało | Seria zer | Powód |
+|-----------|----------------|-----------|-------|
+| npc | 9m | 2x | Progresywny backoff |
 
 ---
 
@@ -404,7 +406,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #7 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -447,23 +449,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 22:14:32  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 22:15:47  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `gnomegica` - ukończono 2025-12-11 22:14
+- ✅ `ghorza` - ukończono 2025-12-11 22:14
+- ✅ `frederik` - ukończono 2025-12-11 22:14
+- ✅ `frans` - ukończono 2025-12-11 22:14
+- ✅ `cranky_lizard_crone` - ukończono 2025-12-11 22:14
+- ✅ `chuckles` - ukończono 2025-12-11 22:14
+- ✅ `bertram` - ukończono 2025-12-11 22:14
+- ✅ `battlemart` - ukończono 2025-12-11 22:14
+- ✅ `alaistar` - ukończono 2025-12-11 22:14
 - ✅ `the_lootmonger` - ukończono 2025-12-11 22:14
-- ✅ `tandros` - ukończono 2025-12-11 22:14
-- ✅ `sundara` - ukończono 2025-12-11 22:14
-- ✅ `sigurd` - ukończono 2025-12-11 22:14
-- ✅ `shiriel` - ukończono 2025-12-11 22:14
-- ✅ `seymour` - ukończono 2025-12-11 22:14
-- ✅ `romir` - ukończono 2025-12-11 22:14
-- ✅ `rock_in_a_hard_place` - ukończono 2025-12-11 22:14
-- ✅ `nipuna` - ukończono 2025-12-11 22:14
-- ✅ `nelly` - ukończono 2025-12-11 22:14
 
 ---
 

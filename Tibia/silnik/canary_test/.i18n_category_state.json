@@ -32,12 +32,13 @@
     "otclient_data": 1765470742.3158674,
     "otclient_src": 1765470755.1444988,
     "otclient_tools": 1765471863.6724072,
-    "errors": 1765471870.941524
+    "errors": 1765471870.941524,
+    "npc": 1765488345.2443192
   },
   "last_processed": {
     "npc": {
-      "count": 20,
-      "timestamp": 1765487670.8846076
+      "count": 0,
+      "timestamp": 1765487745.2443116
     },
     "scripts": {
       "count": 44,
@@ -181,7 +182,7 @@
     }
   },
   "consecutive_zeros": {
-    "npc": 0,
+    "npc": 2,
     "scripts": 0,
     "monsters": 2,
     "actions": 2,

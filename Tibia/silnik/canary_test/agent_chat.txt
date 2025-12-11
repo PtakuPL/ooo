@@ -33,3 +33,4 @@ PLAN:
 2. Usuwam stare śmieciowe klucze z tłumaczeń (1600 kluczy z kodem PHP)
 
 Robię to teraz.
+[2025-12-11 02:22:32] AGENT_1: Ustawiłem TRANSLATE_LIMIT=10 (restart workera). AUTO komendy z pl/ru/tr już wykonane: ru ~2101 realnych, tr same placeholdery, pl poszło wcześniej. Status auto-commit. Daj znać czy chcesz więcej auto tłumaczeń/plików. Musimy mieć pełne info w status.md – worker go aktualizuje po każdym cyklu.

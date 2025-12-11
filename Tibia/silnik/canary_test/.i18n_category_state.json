@@ -6,8 +6,8 @@
   },
   "last_processed": {
     "npc": {
-      "count": 148,
-      "timestamp": 1765468792.3587756
+      "count": 20,
+      "timestamp": 1765468971.6030145
     },
     "scripts": {
       "count": -313,
@@ -135,7 +135,7 @@
     "server": 2
   },
   "total_processed": {
-    "npc": 1848,
+    "npc": 1888,
     "scripts": 0,
     "actions": 128,
     "quests": 128,

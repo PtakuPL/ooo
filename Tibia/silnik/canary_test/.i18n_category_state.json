@@ -16,7 +16,7 @@
     "client": 1765415607.6007419,
     "sendtextmessage": 1765415627.7470727,
     "keywordhandler": 1765415635.1195862,
-    "twig": 1765412029.1047232
+    "twig": 1765415642.8418
   },
   "last_processed": {
     "scripts": {
@@ -85,7 +85,7 @@
     },
     "twig": {
       "count": 0,
-      "timestamp": 1765411429.1047153
+      "timestamp": 1765412042.8417923
     }
   },
   "consecutive_zeros": {
@@ -105,7 +105,7 @@
     "client": 4,
     "sendtextmessage": 4,
     "keywordhandler": 4,
-    "twig": 2
+    "twig": 4
   },
   "total_processed": {
     "items": 11689,

@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 17:42:45 UTC  
+> **Aktualizacja:** 2025-12-11 17:43:21 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28803
 
 ---
@@ -28,7 +28,7 @@
 | 🔑 Kluczy i18n (EN) | **28803** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#5** | - |
+| 🔄 Cykl | **#6** | - |
 
 ---
 
@@ -146,7 +146,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     5 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     6 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
@@ -156,9 +156,9 @@
 │ [█████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
 │ 5339/15000 kluczy (36%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Total processed: 904 operacji               │
+│ ⏳ Total processed: 944 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 17:42:45                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 17:43:21                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -168,11 +168,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Operacji wykonanych | **904** | we wszystkich kategoriach |
+| 📁 Operacji wykonanych | **944** | we wszystkich kategoriach |
 | ✅ NPC zmigrowanych | **20** (445 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **28803** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#5** | continuous mode |
+| 🔄 Cykli wykonanych | **#6** | continuous mode |
 | 🎯 Aktywne kategorie | **15** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -180,7 +180,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🧙 `npc` +20 kluczy @ 17:42:45
+- 🧙 `npc` +20 kluczy @ 17:43:21
 - ⚡ `errors` +0 kluczy @ 17:41:10
 - ⚡ `otclient_tools` +0 kluczy @ 17:41:03
 - ⚡ `otclient_src` +0 kluczy @ 17:22:35
@@ -349,7 +349,7 @@
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 0 | 2 | ✅ Active |
 | monsters | 7341 | 0 | 2 | ✅ Active |
-| npc | 5339 | 820 | 0 | ✅ Active |
+| npc | 5339 | 860 | 0 | ✅ Active |
 | html | 1495 | 0 | 2 | ✅ Active |
 | spells | 304 | 0 | 2 | ✅ Active |
 | client | 242 | 0 | 2 | ✅ Active |
@@ -364,7 +364,7 @@
 | events | 5 | 0 | 2 | ✅ Active |
 | actions | 0 | 0 | 2 | ⏳ Empty |
 | cpp | 0 | 0 | 2 | ⏳ Empty |
-| errors | 0 | 0 | 2 | ⏭️ Skip 8m |
+| errors | 0 | 0 | 2 | ⏭️ Skip 7m |
 | npclib | 0 | 0 | 2 | ⏳ Empty |
 | quests | 0 | 0 | 2 | ⏳ Empty |
 | server | 0 | 0 | 2 | ⏳ Empty |
@@ -377,8 +377,8 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| otclient_tools | 8m | 2x | Progresywny backoff |
-| errors | 8m | 2x | Progresywny backoff |
+| otclient_tools | 7m | 2x | Progresywny backoff |
+| errors | 7m | 2x | Progresywny backoff |
 
 ---
 
@@ -386,7 +386,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #5 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #6 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -429,23 +429,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 17:42:45  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 17:43:21  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `the_lootmonger` - ukończono 2025-12-11 17:42
-- ✅ `tandros` - ukończono 2025-12-11 17:42
-- ✅ `sundara` - ukończono 2025-12-11 17:42
-- ✅ `sigurd` - ukończono 2025-12-11 17:42
-- ✅ `shiriel` - ukończono 2025-12-11 17:42
-- ✅ `seymour` - ukończono 2025-12-11 17:42
-- ✅ `romir` - ukończono 2025-12-11 17:42
-- ✅ `rock_in_a_hard_place` - ukończono 2025-12-11 17:42
-- ✅ `nipuna` - ukończono 2025-12-11 17:42
-- ✅ `nelly` - ukończono 2025-12-11 17:42
+- ✅ `the_lootmonger` - ukończono 2025-12-11 17:43
+- ✅ `tandros` - ukończono 2025-12-11 17:43
+- ✅ `sundara` - ukończono 2025-12-11 17:43
+- ✅ `sigurd` - ukończono 2025-12-11 17:43
+- ✅ `shiriel` - ukończono 2025-12-11 17:43
+- ✅ `seymour` - ukończono 2025-12-11 17:43
+- ✅ `romir` - ukończono 2025-12-11 17:43
+- ✅ `rock_in_a_hard_place` - ukończono 2025-12-11 17:43
+- ✅ `nipuna` - ukończono 2025-12-11 17:43
+- ✅ `nelly` - ukończono 2025-12-11 17:43
 
 ---
 

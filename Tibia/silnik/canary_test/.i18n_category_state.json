@@ -12,7 +12,8 @@
     "startup": 1765421671.15763,
     "npclib": 1765421686.3719923,
     "php": 1765421695.7337558,
-    "html": 1765421702.9125588
+    "html": 1765421702.9125588,
+    "cpp": 1765421710.9794192
   },
   "last_processed": {
     "npc": {
@@ -74,6 +75,10 @@
     "html": {
       "count": 0,
       "timestamp": 1765421102.9125538
+    },
+    "cpp": {
+      "count": 0,
+      "timestamp": 1765421110.9794137
     }
   },
   "migrations_done": false,
@@ -92,7 +97,8 @@
     "startup": 2,
     "npclib": 2,
     "php": 2,
-    "html": 2
+    "html": 2,
+    "cpp": 2
   },
   "total_processed": {
     "spells": 294,

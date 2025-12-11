@@ -4400,3 +4400,13 @@ html_copy/system/libs/pot/E_OTS_NotAContainer.php
 html_copy/system/libs/pot/OTS_IPBans_List.php
 html_copy/system/libs/pot/OTS_Players_List.php
 html_copy/system/libs/pot/OTS_FileNode.php
+src/items/tile.hpp
+src/items/trashholder.hpp
+src/items/functions/item/item_parse.hpp
+src/items/functions/item/item_parse.cpp
+src/items/functions/item/attribute.cpp
+src/items/functions/item/attribute.hpp
+src/items/functions/item/custom_attribute.hpp
+src/items/functions/item/custom_attribute.cpp
+src/items/tile.cpp
+src/items/items_definitions.hpp

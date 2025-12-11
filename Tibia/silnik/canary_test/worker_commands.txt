@@ -68,7 +68,7 @@
 
 # Agent 2 - Nowe AUTO dla pozostałych plików (2025-12-11 02:30)
 #AUTO:pl:chatchannels.json:10  # Wykonano 2025-12-11 02:35:03
-AUTO:pl:events.json:10
+#AUTO:pl:events.json:10  # Wykonano 2025-12-11 02:35:15
 AUTO:pl:html.json:10
 AUTO:pl:libs.json:10
 AUTO:pl:modules.json:10
@@ -94,3 +94,4 @@ AUTO:tr:npc.json:10
 AUTO:tr:raids.json:10
 AUTO:tr:startup.json:10
 # [2025-12-11 02:35:03] Wykonano: AUTO:pl:chatchannels.json:10
+# [2025-12-11 02:35:15] Wykonano: AUTO:pl:events.json:10

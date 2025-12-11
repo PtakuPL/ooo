@@ -19609,6 +19609,10 @@
     "channel.help.name": {
       "src_hash": "6a26f548831e6a8c26bfbbd9f6ec61e0",
       "text": "Pomoc"
+    },
+    "event.player.msg1": {
+      "src_hash": "c6688013ffa822ec6f74cbb8fceb229e",
+      "text": "You can't move that Przedmiot so fast."
     }
   }
 }

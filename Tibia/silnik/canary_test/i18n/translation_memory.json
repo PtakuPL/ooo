@@ -52061,6 +52061,10 @@
     "lib.exaltation_forge.msg4": {
       "src_hash": "3086afd3cca5bf3f92bb9fa5824a70bc",
       "text": "You did Not receive "
+    },
+    "startup.writeable.msg1": {
+      "src_hash": "1a419d903676ddfd0fa2c6e4f59f6c2f",
+      "text": "Personal log book of Mr Morris. (The following lines are written in a code that you canNot make out. It seems Mr Morris is a very distrustful person.)"
     }
   },
   "pt": {

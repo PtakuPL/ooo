@@ -4795,9 +4795,12 @@ with open('i18n_global_stats.json', 'w') as f:
             
             # Git commit co cykl
             if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
-                git add -A 2>/dev/null
-                # Zlicz TOTAL kluczy ze wszystkich JSON (nie tylko NPC completed)
-                TOTAL_KEYS=$(python3 -c "
+                if [ "$NO_GIT" = "true" ]; then
+                    echo "🚫 --no-git: pomijam git add/commit/push"
+                else
+                    git add -A 2>/dev/null
+                    # Zlicz TOTAL kluczy ze wszystkich JSON (nie tylko NPC completed)
+                    TOTAL_KEYS=$(python3 -c "
 import json, os
 total = 0
 for f in os.listdir('i18n/en'):
@@ -4808,8 +4811,9 @@ for f in os.listdir('i18n/en'):
         except: pass
 print(total)
 " 2>/dev/null || echo "?")
-                git commit -m "📊 I18N: $TOTAL_KEYS kluczy, $MODE_TYPE - Cykl #$CYCLE" 2>/dev/null
-                git push origin master 2>/dev/null && echo "📤 Push OK" || echo "⚠️ Push failed"
+                    git commit -m "📊 I18N: $TOTAL_KEYS kluczy, $MODE_TYPE - Cykl #$CYCLE" 2>/dev/null
+                    git push origin master 2>/dev/null && echo "📤 Push OK" || echo "⚠️ Push failed"
+                fi
             fi
             
             echo ""

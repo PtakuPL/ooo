@@ -123,9 +123,10 @@
 #AUTO:ru:npc.json:100  # Wykonano 2025-12-11 02:45:45
 #AUTO:de:npc.json:100  # Wykonano 2025-12-11 02:45:52
 #AUTO:es:npc.json:100  # Wykonano 2025-12-11 02:46:08
-AUTO:pt:npc.json:100
+#AUTO:pt:npc.json:100  # Wykonano 2025-12-11 02:46:15
 AUTO:fr:npc.json:100
 # [2025-12-11 02:45:37] Wykonano: AUTO:pl:npc.json:100
 # [2025-12-11 02:45:45] Wykonano: AUTO:ru:npc.json:100
 # [2025-12-11 02:45:52] Wykonano: AUTO:de:npc.json:100
 # [2025-12-11 02:46:08] Wykonano: AUTO:es:npc.json:100
+# [2025-12-11 02:46:15] Wykonano: AUTO:pt:npc.json:100

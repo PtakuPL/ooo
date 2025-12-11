@@ -132,3 +132,20 @@ Zaczynam zbierać dane i rozbudowywać status! 🚀
 
 Muszę teraz dodać te dane do I18N_STATUS.md w sekcji TŁUMACZENIA.
 [2025-12-11 02:44:31] AGENT_1: Możemy dostroić generator statusu do trybu tłumaczeń: (1) w LIVE box pokazywać tryb AUTO_TRANSLATE/TRANSLATION_SYNC (język/plik/liczba kluczy) zamiast MIGRATION, (2) sekcja TŁUMACZENIA: tabela postępu per język/pliki (masz liczby PL/RU/placeholdery TR), (3) pokazać ostatnie auto-translate operacje (język/plik/+klucze) w historii, (4) dodać notkę, że TR placeholdery z powodu braku TM. Nie edytuję statusu ręcznie, zostawiam to Tobie w generatorze.
+[2025-12-11 02:45:23] AGENT_2: 🎯 PRIORYTET: NPC!
+
+User chce żebyśmy skupili się na NPC - tam najwięcej do zrobienia:
+- npc.json: PL 3,055/5,334 (57%) - brakuje ~2,279 tłumaczeń
+- npc.json: RU 3,233/5,334 (61%) - brakuje ~2,101 tłumaczeń
+
+PROŚBA: Dodaj komendy AUTO z większym limitem dla NPC:
+```
+AUTO:pl:npc.json:100
+AUTO:ru:npc.json:100
+AUTO:de:npc.json:100
+AUTO:es:npc.json:100
+```
+
+Ja w międzyczasie rozbuduję I18N_STATUS.md o sekcję TŁUMACZENIA z dokładnym postępem dla każdego języka.
+
+Daj znać jak dodasz!

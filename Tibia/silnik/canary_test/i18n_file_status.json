@@ -113,7 +113,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:31:31.065793"
+      "completed_at": "2025-12-11T20:32:17.568407"
     },
     "data-otservbr-global/npc/rock_in_a_hard_place.lua": {
       "stages": {
@@ -228,7 +228,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:31:33.628380"
+      "completed_at": "2025-12-11T20:32:20.175840"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -450,7 +450,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:31:34.928931"
+      "completed_at": "2025-12-11T20:32:21.372210"
     },
     "data-otservbr-global/npc/bertram.lua": {
       "stages": {
@@ -682,7 +682,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:31:36.655575"
+      "completed_at": "2025-12-11T20:32:22.971783"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -908,7 +908,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:31:38.015880"
+      "completed_at": "2025-12-11T20:32:24.263419"
     },
     "data-otservbr-global/npc/cranky_lizard_crone.lua": {
       "stages": {
@@ -929,9 +929,101 @@
           "already_i18n": 9,
           "npcSayLib": 0,
           "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/cranky_lizard_crone.md",
+          "keys_documented": 0
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 0,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0,
+          "voices_keys": 0
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [],
+          "keys_per_lang": 9,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 9,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
         }
       },
-      "overall_status": "in_progress"
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T20:32:03.921499"
     },
     "data-otservbr-global/npc/sigurd.lua": {
       "stages": {
@@ -1046,7 +1138,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:31:39.384056"
+      "completed_at": "2025-12-11T20:32:25.511909"
     },
     "data-otservbr-global/npc/sundara.lua": {
       "stages": {
@@ -1161,7 +1253,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:31:40.948329"
+      "completed_at": "2025-12-11T20:32:26.980214"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -1276,7 +1368,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:31:19.539665"
+      "completed_at": "2025-12-11T20:32:06.416786"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -1387,7 +1479,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:31:20.749878"
+      "completed_at": "2025-12-11T20:32:07.524880"
     },
     "data-otservbr-global/npc/ghorza.lua": {
       "stages": {
@@ -1502,7 +1594,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:31:22.253978"
+      "completed_at": "2025-12-11T20:32:08.927180"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {
@@ -1617,7 +1709,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:31:23.681688"
+      "completed_at": "2025-12-11T20:32:10.193117"
     },
     "data-otservbr-global/npc/the_lootmonger.lua": {
       "stages": {
@@ -1728,7 +1820,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:31:44.338071"
+      "completed_at": "2025-12-11T20:32:29.708629"
     },
     "data-otservbr-global/npc/mordecai.lua": {
       "stages": {
@@ -1743,4 +1835,452 @@
           "StdModule_say": 0,
           "npcHandler_say": 1,
           "sendTextMessage": 0,
-          
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 1,
+          "already_i18n": 6,
+          "npcSayLib": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/mordecai.md",
+          "keys_documented": 0
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 0,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0,
+          "voices_keys": 0
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [],
+          "keys_per_lang": 6,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 6,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T20:32:14.537127"
+    },
+    "data-otservbr-global/npc/nelly.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "349a1663b4284b51172094e4bfafe498",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "nelly",
+          "StdModule_say": 0,
+          "npcHandler_say": 1,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 1,
+          "already_i18n": 2,
+          "npcSayLib": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/nelly.md",
+          "keys_documented": 0
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 0,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0,
+          "voices_keys": 0
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [],
+          "keys_per_lang": 2,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 2,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T20:32:16.070878"
+    },
+    "data-otservbr-global/npc/alaistar.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "97136ab46cb664dc9d9fe703bbb55539",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "alaistar",
+          "StdModule_say": 0,
+          "npcHandler_say": 1,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 1,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/alaistar.md",
+          "keys_documented": 0
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 0,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0,
+          "voices_keys": 0
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Brak i18nKey w pliku Lua"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 0,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T20:31:55.909531"
+    },
+    "data-otservbr-global/npc/tandros.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "ad493b80198b782eb36ff63ce4cb000d",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "tandros",
+          "StdModule_say": 0,
+          "npcHandler_say": 1,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 1,
+          "already_i18n": 1,
+          "npcSayLib": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/tandros.md",
+          "keys_documented": 0
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 0,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0,
+          "voices_keys": 0
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [],
+          "keys_per_lang": 1,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 1,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T20:32:28.356372"
+    }
+  },
+  "global_stats": {
+    "files_completed": 20,
+    "total_keys": 0
+  }
+}

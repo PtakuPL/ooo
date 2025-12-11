@@ -1,7 +1,7 @@
 # NPC: galuna
 
 **Plik:** `data-otservbr-global/npc/galuna.lua`
-**Data migracji:** 2025-12-11 03:53
+**Data migracji:** 2025-12-11 03:58
 **Liczba tekstów:** 1
 
 ## Klucze i18n

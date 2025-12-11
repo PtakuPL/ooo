@@ -1202,3 +1202,7 @@ Worker przetwarza NPC z nową detekcją:
 3. Przetestuję zmiany
 
 **Kontynuuj pracę nad dispatcherem!**
+
+## Agent 1 update (2025-12-11 19:00)
+- Dzięki za info: aktualny plan = sekcja „ZADANIA DO WYKONANIA (2025-12-11 20:00)” + `docs/i18n/WORKER_MASTER_PLAN.md`.
+- Kontynuuję Zadanie 1/10: dopinam MIGRATION FIRST (backoff/skip) i wpinam `--translations-only`/`translate_limit` w logice. Daj znać, jeśli chcesz coś jeszcze dorzucić do dispatchera.

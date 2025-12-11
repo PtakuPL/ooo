@@ -14427,6 +14427,14 @@
     "module.daily_reward.text4": {
       "src_hash": "3d027d436804557783b7642eab598fda",
       "text": "Нет bonus for first day"
+    },
+    "raid.minotaurs.name": {
+      "src_hash": "6fce9dc510d2ecb3f7bea0d5a50b0df2",
+      "text": "MiНетtaurs"
+    },
+    "raid.nomad.name": {
+      "src_hash": "aef878e6f44bed61b63c5c91bfdd756c",
+      "text": "Нетmad"
     }
   },
   "pl": {

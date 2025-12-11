@@ -66459,6 +66459,14 @@
     "client.keybins.text4": {
       "src_hash": "5969789bc00f068ce14d9bd7a558996d",
       "text": "UnkNãown chat mode"
+    },
+    "raid.minotaurs.name": {
+      "src_hash": "6fce9dc510d2ecb3f7bea0d5a50b0df2",
+      "text": "MiNãotaurs"
+    },
+    "raid.nomad.name": {
+      "src_hash": "aef878e6f44bed61b63c5c91bfdd756c",
+      "text": "Nãomad"
     }
   }
 }

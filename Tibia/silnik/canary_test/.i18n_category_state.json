@@ -130,7 +130,7 @@
   },
   "translation_sync": {
     "current_lang": "uz",
-    "current_category": "raids.json",
+    "current_category": "scripts.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -641,7 +641,7 @@
       },
       "uz": {
         "chatchannels": 8,
-        "total": 28383,
+        "total": 28768,
         "events": 5,
         "html": 1495,
         "items": 13749,
@@ -651,9 +651,10 @@
         "monsters": 7341,
         "npc": 5334,
         "php": 31,
-        "raids": 147
+        "raids": 147,
+        "scripts": 385
       }
     },
-    "last_sync": 1765414405.7507582
+    "last_sync": 1765414413.298051
   }
 }

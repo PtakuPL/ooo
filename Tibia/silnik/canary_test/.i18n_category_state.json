@@ -17,7 +17,7 @@
     "client": 1765423710.921889,
     "sendtextmessage": 1765423724.014326,
     "keywordhandler": 1765423731.132717,
-    "twig": 1765420123.75802,
+    "twig": 1765423738.202282,
     "php": 1765420138.1363013
   },
   "last_processed": {
@@ -99,7 +99,7 @@
     },
     "twig": {
       "count": 0,
-      "timestamp": 1765419523.7580147
+      "timestamp": 1765420138.202276
     }
   },
   "migrations_done": false,
@@ -123,7 +123,7 @@
     "client": 4,
     "sendtextmessage": 4,
     "keywordhandler": 4,
-    "twig": 2
+    "twig": 4
   },
   "total_processed": {
     "spells": 147,

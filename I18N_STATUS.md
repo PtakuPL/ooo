@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 300, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 03:28:31 UTC  
+> **Aktualizacja:** 2025-12-11 03:28:44 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -28,7 +28,7 @@
 | 🔑 Kluczy i18n | **29080** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#20** | - |
+| 🔄 Cykl | **#21** | - |
 
 ---
 
@@ -98,19 +98,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    20 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    21 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 CLIENT                                 │
+│ Kategoria: 🎒 SENDTEXTMESSAGE                        │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: client                                         │
-│ [███████████████████████████████████████░░░░░░░░░░░] │
-│ 236/300 kluczy (79%)                                          │
+│ 📊 Ostatnia aktywność: sendtextmessage                                │
+│ [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
+│ 0/1000 kluczy (0%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 189 operacji               │
 │ 🌍 Języki zsync: 32/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 03:28:31                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 03:28:44                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -124,7 +124,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29080** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **32**/53 | sv, hu, bs, ro, az... |
-| 🔄 Cykli wykonanych | **#20** | continuous mode |
+| 🔄 Cykli wykonanych | **#21** | continuous mode |
 | 🎯 Aktywne kategorie | **15** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -132,6 +132,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `sendtextmessage` +0 kluczy @ 03:28:44
 - ⚡ `client` +0 kluczy @ 03:28:30
 - ⚡ `html` +0 kluczy @ 03:27:53
 - ⚡ `npclib` +0 kluczy @ 03:26:45
@@ -139,7 +140,6 @@
 - ⚡ `modules` +0 kluczy @ 03:26:25
 - ⚡ `chatchannels` +0 kluczy @ 03:26:17
 - ⚡ `events` +0 kluczy @ 03:26:09
-- ⚡ `libs` +0 kluczy @ 03:26:02
 
 
 ---
@@ -308,7 +308,7 @@
 | client | 236 | 0 | 4 | ⏭️ Skip 59m |
 | raids | 147 | 0 | 4 | ⏭️ Skip 56m |
 | php | 54 | 42 | 2 | ⏭️ Skip 0m |
-| startup | 23 | 0 | 4 | ⏭️ Skip 58m |
+| startup | 23 | 0 | 4 | ⏭️ Skip 57m |
 | libs | 21 | 0 | 4 | ⏭️ Skip 57m |
 | modules | 16 | 0 | 4 | ⏭️ Skip 57m |
 | messages | 11 | 0 | 0 | ✅ Active |
@@ -338,11 +338,11 @@
 | events | 57m | 4x | Progresywny backoff |
 | chatchannels | 57m | 4x | Progresywny backoff |
 | modules | 57m | 4x | Progresywny backoff |
-| startup | 58m | 4x | Progresywny backoff |
+| startup | 57m | 4x | Progresywny backoff |
 | npclib | 58m | 4x | Progresywny backoff |
 | html | 59m | 4x | Progresywny backoff |
 | client | 59m | 4x | Progresywny backoff |
-| twig | 0m | 2x | Progresywny backoff |
+| sendtextmessage | 59m | 4x | Progresywny backoff |
 | php | 0m | 2x | Progresywny backoff |
 
 ---
@@ -351,7 +351,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #20 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #21 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -394,7 +394,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:28:31  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:28:44  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

@@ -1007,10 +1007,190 @@
       "overall_status": "completed",
       "completed_at": "2025-12-11T22:47:29.953393",
       "category": "quests"
+    },
+    "html_copy/system/templates/gallery.get.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:44.392513",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/news.archive.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:44.518330",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/monsters.back_button.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:44.589903",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/buttons.change_email.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:44.668297",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/install.config.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:44.983000",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/browsehappy.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:45.172982",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/buttons.logout.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:45.275256",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/account.characters.change-sex.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:45.551797",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/admin-bar.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:46.087359",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/account.create.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:46.860277",
+      "category": "creaturescripts"
     }
   },
   "global_stats": {
-    "files_completed": 56,
+    "files_completed": 66,
     "total_keys": 0
   }
 }

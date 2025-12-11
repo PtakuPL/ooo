@@ -1,14 +1,14 @@
 {
-  "total_cycles": 22,
+  "total_cycles": 23,
   "mode": "MIGRATION",
-  "category": "php",
-  "last_update": "2025-12-11T22:47:30.461352",
+  "category": "html",
+  "last_update": "2025-12-11T22:47:47.292511",
   "migration": {
-    "files_scanned": 56,
-    "files_with_keys": 46,
+    "files_scanned": 66,
+    "files_with_keys": 56,
     "files_without_keys": 10,
-    "keys_extracted": 46,
-    "current_category": "php",
-    "batch_size": 5
+    "keys_extracted": 56,
+    "current_category": "html",
+    "batch_size": 1
   }
 }

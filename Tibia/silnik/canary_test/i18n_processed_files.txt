@@ -374,3 +374,13 @@ html_copy/admin/pages/pages.php
 html_copy/admin/pages/plugins.php
 html_copy/admin/pages/dashboard.php
 html_copy/admin/pages/news.php
+html_copy/system/templates/gallery.get.html.twig
+html_copy/system/templates/news.archive.html.twig
+html_copy/system/templates/monsters.back_button.html.twig
+html_copy/system/templates/buttons.change_email.html.twig
+html_copy/system/templates/install.config.html.twig
+html_copy/system/templates/browsehappy.html.twig
+html_copy/system/templates/buttons.logout.html.twig
+html_copy/system/templates/account.characters.change-sex.html.twig
+html_copy/system/templates/admin-bar.html.twig
+html_copy/system/templates/account.create.html.twig

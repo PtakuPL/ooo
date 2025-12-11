@@ -1,7 +1,7 @@
 # NPC: battlemart
 
 **Plik:** `data-otservbr-global/npc/battlemart.lua`
-**Data migracji:** 2025-12-11 21:30
+**Data migracji:** 2025-12-11 21:31
 **Liczba tekstów:** 0
 
 ## Klucze i18n

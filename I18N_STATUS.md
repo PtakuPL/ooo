@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-11 21:30:57 UTC  
+> **Aktualizacja:** 2025-12-11 21:31:14 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28803
 
 ---
@@ -180,7 +180,7 @@
 │    ├─ Kategoria    NPC:   5339 kluczy EN                    │
 │    └─ Total kluczy EN:  28803                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-11 21:30:57            │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 21:31:14            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -447,13 +447,15 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 21:30:57  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 21:31:14  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `battlemart` - ukończono 2025-12-11 21:31
+- ✅ `alaistar` - ukończono 2025-12-11 21:31
 - ✅ `the_lootmonger` - ukończono 2025-12-11 21:30
 - ✅ `tandros` - ukończono 2025-12-11 21:30
 - ✅ `sundara` - ukończono 2025-12-11 21:30
@@ -462,8 +464,6 @@
 - ✅ `seymour` - ukończono 2025-12-11 21:30
 - ✅ `romir` - ukończono 2025-12-11 21:30
 - ✅ `rock_in_a_hard_place` - ukończono 2025-12-11 21:30
-- ✅ `nipuna` - ukończono 2025-12-11 21:30
-- ✅ `nelly` - ukończono 2025-12-11 21:30
 
 ---
 

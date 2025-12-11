@@ -524,6 +524,36 @@ roadmap_ui = f"| 🎨 UI | {ui_keys} | {progress_bar(ui_keys, TARGETS['ui'])} | 
 # Debug targets (łatwiej znaleźć rozjazdy auto-adjust)
 targets_comment = f"<!-- TARGETS {TARGETS} -->"
 
+# Status workera (ostatni tryb z i18n_global_stats.json)
+try:
+    with open("i18n_global_stats.json") as f:
+        _global_stats = json.load(f)
+        last_mode = _global_stats.get("mode", "")
+except:
+    last_mode = ""
+
+# TM coverage (do notki o placeholderach)
+try:
+    with open(f"{I18N_DIR}/translation_memory.json") as f:
+        tm_data = json.load(f)
+except:
+    tm_data = {}
+no_tm_langs = [lang for lang in TARGET_LANGUAGES if lang not in tm_data]
+
+# Podgląd aktualnego trybu/kategorii do LIVE box
+if sync_current_lang:
+    mode_display = "🌍 TRANSLATION_SYNC (Etap 1)"
+    category_display = f"🌍 {sync_current_lang.upper()}/{sync_current_cat}"
+elif last_mode == "AUTO_TRANSLATE":
+    mode_display = "🤖 AUTO_TRANSLATE"
+    category_display = "AUTO_TRANSLATE"
+elif current_category:
+    mode_display = "MIGRATION (multi-category)"
+    category_display = f"🎒 {current_category.upper()}"
+else:
+    mode_display = "IDLE"
+    category_display = "IDLE"
+
 # ==================== GENERUJ PEŁNY I18N_STATUS.md ====================
 md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 

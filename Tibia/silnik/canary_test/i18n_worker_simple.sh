@@ -671,6 +671,15 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 | 🇫🇷 Francuski | {"✅ Sync" if "fr" in sync_langs_done else ("🔄 Sync..." if sync_current_lang == "fr" else ("📊 " + str(sync_stats.get("fr", {}).get("total", 0)) + " kluczy" if sync_stats.get("fr") else "⏳ Czeka"))} | {sync_stats.get("fr", {}).get("total", 0) if sync_stats.get("fr") else 0} | {"[EN] prefix" if sync_stats.get("fr") else "nie rozpoczęto"} |
 | 🌐 Pozostałe ({len(sync_langs_done)}/53) | {"🔄" if sync_current_lang else "⏳"} | {sum(v.get("total", 0) for v in sync_stats.values())} | {f"Aktualnie: {sync_current_lang.upper()}" if sync_current_lang else "nie rozpoczęto"} |
 
+### 📦 Etap 1: Przygotowanie (SYNC)
+- Języki z plikami przygotowanymi: {len(sync_stats)}/{langs_count}
+- Ostatni sync: {(sync_current_lang.upper() + '/' + sync_current_cat) if sync_current_lang else '-'}
+
+### 🌍 Etap 2: Tłumaczenia (AUTO)
+| Język | TM wpisy | Status |
+|-------|----------|--------|
+{auto_table}
+
 **Języki bez TM (AUTO → placeholdery):** {', '.join(no_tm_langs[:8]) + ('...' if len(no_tm_langs) > 8 else '') if no_tm_langs else 'brak (TM dostępny)'}
 ---
 

@@ -87,3 +87,10 @@ Pliki wymagające najwięcej tłumaczeń:
 - raids.json: 147 kluczy
 
 Worker powinien teraz przetwarzać nowe komendy. Monitoruję logi.
+[2025-12-11 02:39:16] AGENT_2: 📝 Zaczynam rozbudowę I18N_STATUS.md:
+1. Osobna sekcja PRZYGOTOWANIE (ekstrakcja kluczy)
+2. Osobna sekcja TŁUMACZENIA (AUTO_TRANSLATE progress)
+3. Dokładne info dla każdej kategorii
+4. Status na żywo żebyś mógł śledzić postęp
+
+User idzie spać - będziemy pracować autonomicznie i aktualizować status.

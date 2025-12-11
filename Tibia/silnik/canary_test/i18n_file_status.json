@@ -339,7 +339,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:22:37.958421"
+      "completed_at": "2025-12-11T21:23:43.249287"
     },
     "data-otservbr-global/npc/romir.lua": {
       "stages": {
@@ -567,7 +567,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:22:39.498907"
+      "completed_at": "2025-12-11T21:23:45.106086"
     },
     "data-otservbr-global/npc/seymour.lua": {
       "stages": {
@@ -793,7 +793,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:22:41.981392"
+      "completed_at": "2025-12-11T21:23:47.897509"
     },
     "data-otservbr-global/npc/shiriel.lua": {
       "stages": {
@@ -1023,7 +1023,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:22:43.949492"
+      "completed_at": "2025-12-11T21:23:49.886876"
     },
     "data-otservbr-global/npc/sigurd.lua": {
       "stages": {
@@ -1368,7 +1368,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:22:46.986030"
+      "completed_at": "2025-12-11T21:23:53.781542"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -1479,7 +1479,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:22:49.178574"
+      "completed_at": "2025-12-11T21:23:55.536099"
     },
     "data-otservbr-global/npc/ghorza.lua": {
       "stages": {
@@ -1594,7 +1594,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:22:50.947883"
+      "completed_at": "2025-12-11T21:23:57.629433"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {
@@ -1709,7 +1709,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:22:53.598099"
+      "completed_at": "2025-12-11T21:24:00.282318"
     },
     "data-otservbr-global/npc/the_lootmonger.lua": {
       "stages": {
@@ -2161,7 +2161,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:22:34.641786"
+      "completed_at": "2025-12-11T21:24:05.189399"
     },
     "data-otservbr-global/npc/tandros.lua": {
       "stages": {

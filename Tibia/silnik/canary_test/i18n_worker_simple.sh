@@ -469,6 +469,83 @@ except:
     except:
         pass
 
+# ============ NOWE STATYSTYKI DLA ROZBUDOWANEGO GLOBALNY POSTĘP ============
+
+# 1. WSZYSTKIE PLIKI W PROJEKCIE
+all_project_files = 0
+all_lua_files = 0
+all_xml_files = 0
+for root, dirs, flist in os.walk('.'):
+    dirs[:] = [d for d in dirs if d not in ['vcpkg', 'build', '.git', 'node_modules', 'html_copy', 'oryginall']]
+    for fname in flist:
+        all_project_files += 1
+        if fname.endswith('.lua'):
+            all_lua_files += 1
+        elif fname.endswith('.xml'):
+            all_xml_files += 1
+
+# 2. PLIKI DO SKANOWANIA (lua + xml w folderach projektu)
+scannable_files = all_lua_files + all_xml_files
+
+# 3. PRZESKANOWANE (z processed_files.txt)
+scanned_files = 0
+try:
+    with open(PROCESSED_FILE) as pf:
+        scanned_files = len([l for l in pf if l.strip()])
+except:
+    pass
+
+# 4. ZMIGROWANE (pliki z kluczami > 0 w file_status)
+migrated_files = 0
+files_with_keys_count = 0
+for fpath, info in files.items():
+    stages = info.get('stages', {})
+    extraction = stages.get('5_extraction_en', {})
+    if extraction.get('keys_added', 0) > 0:
+        migrated_files += 1
+        files_with_keys_count += extraction.get('keys_added', 0)
+
+# 5. DO ZMIGROWANIA (przeskanowane ale bez kluczy - może mieć teksty)
+to_migrate_files = scanned_files - migrated_files
+
+# 6. JĘZYKI Z TŁUMACZENIAMI (nie tylko [EN] placeholdery)
+translated_langs = 0
+prepared_langs = 0  # Języki z przygotowanymi plikami ([EN] prefix)
+for lang_dir in os.listdir(I18N_DIR):
+    lang_path = os.path.join(I18N_DIR, lang_dir)
+    if not os.path.isdir(lang_path) or lang_dir == 'en':
+        continue
+    
+    has_json = False
+    has_real_translations = False
+    
+    for jf in os.listdir(lang_path):
+        if jf.endswith('.json'):
+            has_json = True
+            try:
+                with open(os.path.join(lang_path, jf)) as f:
+                    data = json.load(f)
+                    for v in data.values():
+                        if isinstance(v, str) and not v.startswith('[EN]') and v.strip():
+                            has_real_translations = True
+                            break
+            except:
+                pass
+        if has_real_translations:
+            break
+    
+    if has_json:
+        prepared_langs += 1
+    if has_real_translations:
+        translated_langs += 1
+
+# 7. ROZPOCZĘTE PRACE (pliki w statusie "in_progress")
+in_progress_files = len([f for f, info in files.items() if info.get('overall_status') == 'in_progress'])
+
+# Procenty
+scanned_pct = round(scanned_files / scannable_files * 100, 1) if scannable_files > 0 else 0
+migrated_pct = round(migrated_files / scanned_files * 100, 1) if scanned_files > 0 else 0
+
 # Ostatnio ukończone NPC
 recent_completed = []
 sorted_files = sorted(

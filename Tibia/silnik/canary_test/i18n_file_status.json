@@ -113,7 +113,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:37:24.829188"
+      "completed_at": "2025-12-11T18:37:59.862052"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -224,7 +224,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:37:22.334129"
+      "completed_at": "2025-12-11T18:37:56.394007"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -335,7 +335,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:37:25.564605"
+      "completed_at": "2025-12-11T18:38:00.860862"
     },
     "data-otservbr-global/npc/cranky_lizard_crone.lua": {
       "stages": {
@@ -450,7 +450,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:37:23.291792"
+      "completed_at": "2025-12-11T18:37:57.669011"
     },
     "data-otservbr-global/npc/ghorza.lua": {
       "stages": {
@@ -497,75 +497,9 @@
           "languages": [],
           "keys_per_lang": 3,
           "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
-        },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 3,
-          "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
         }
       },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T18:37:26.512463"
+      "overall_status": "in_progress"
     },
     "data-otservbr-global/npc/alaistar.lua": {
       "stages": {
@@ -676,7 +610,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:37:18.699957"
+      "completed_at": "2025-12-11T18:37:51.296129"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -787,7 +721,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:37:20.067846"
+      "completed_at": "2025-12-11T18:37:53.242745"
     },
     "data-otservbr-global/npc/bertram.lua": {
       "stages": {
@@ -904,7 +838,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:37:20.898364"
+      "completed_at": "2025-12-11T18:37:54.433236"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {

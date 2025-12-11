@@ -1,7 +1,7 @@
 # NPC: sundara
 
 **Plik:** `data-otservbr-global/npc/sundara.lua`
-**Data migracji:** 2025-12-11 21:11
+**Data migracji:** 2025-12-11 21:12
 **Liczba tekstów:** 0
 
 ## Klucze i18n

@@ -1,0 +1,45 @@
+{
+  "last_updated": "2025-12-10T17:12:00+01:00",
+  "total_keys": {
+    "npc": 5206,
+    "scripts": 78,
+    "monsters": 10,
+    "startup": 8,
+    "php": 8,
+    "cpp": 15,
+    "total": 5325
+  },
+  "processed_files": {
+    "npc": 812,
+    "scripts": 25,
+    "arrays_converted": 22
+  },
+  "pending_files": {
+    "lynda.lua": "dynamic values (player names)",
+    "inigo.lua": "variable arrays (hints[i])"
+  },
+  "conversion_stats": {
+    "arrays_total": 24,
+    "arrays_converted": 22,
+    "arrays_pending": 2,
+    "total_array_keys": 265
+  },
+  "total_cycles": 38,
+  "mode": "MIGRATION",
+  "session_note": "npcHandler:say({...}) 95% done - 265 new keys from 89 arrays",
+  "last_update": "2025-12-11T21:58:33.963458",
+  "category": "npc",
+  "migration": {
+    "files_scanned": 354,
+    "files_with_keys": 0,
+    "files_without_keys": 354,
+    "keys_extracted": 0,
+    "current_category": "npc",
+    "batch_size": 20
+  },
+  "idle": {
+    "new_files_detected": 15,
+    "quality_issues": 287,
+    "last_scan": "2025-12-11T20:45:00"
+  }
+}

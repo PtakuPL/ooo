@@ -129,7 +129,7 @@
     "npc": 2
   },
   "translation_sync": {
-    "current_lang": "hu",
+    "current_lang": "sv",
     "current_category": "client.json",
     "languages_done": [],
     "stats": {
@@ -315,8 +315,8 @@
       },
       "sv": {
         "chatchannels": 8,
-        "total": 30368,
-        "client": 283,
+        "total": 30406,
+        "client": 321,
         "cpp": 15,
         "events": 5,
         "html": 1495,
@@ -614,6 +614,6 @@
         "items": 13749
       }
     },
-    "last_sync": 1765413983.7128892
+    "last_sync": 1765413992.073697
   }
 }

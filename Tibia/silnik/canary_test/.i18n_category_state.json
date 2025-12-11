@@ -16,7 +16,7 @@
     "keywordhandler": 1765415635.1195862,
     "twig": 1765415642.8418,
     "php": 1765417680.7879562,
-    "client": 1765414513.8889637
+    "client": 1765417730.3851938
   },
   "last_processed": {
     "scripts": {
@@ -73,7 +73,7 @@
     },
     "client": {
       "count": 0,
-      "timestamp": 1765413913.8889582
+      "timestamp": 1765414130.3851852
     },
     "sendtextmessage": {
       "count": 0,
@@ -109,7 +109,7 @@
     "keywordhandler": 4,
     "twig": 4,
     "npc": 0,
-    "client": 2,
+    "client": 4,
     "php": 4
   },
   "total_processed": {

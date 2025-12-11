@@ -267,11 +267,11 @@ i18n/en/
 
 ## 🛠️ Następne Kroki
 
-1. [ ] **Decyzja**: Wybór strategii dla `StdModule.say` (A/B/C)
-2. [ ] **Implementacja**: Dodanie `transform_*` funkcji do workera
-3. [ ] **Test**: Migracja jednego pliku NPC jako proof-of-concept
-4. [ ] **Walidacja**: Sprawdzenie czy serwer działa po migracji
-5. [ ] **Masowa migracja**: Uruchomienie workera na wszystkich plikach
+1. [x] **Decyzja**: Wybór strategii dla `StdModule.say` → **Opcja A** (i18nKey)
+2. [x] **Implementacja**: Dodanie `transform_*` funkcji do workera
+3. [x] **Test**: Migracja jednego pliku NPC jako proof-of-concept
+4. [x] **Walidacja**: Sprawdzenie czy serwer działa po migracji
+5. [x] **Masowa migracja**: Uruchomienie workera (tryb ciągły)
 
 ### Sugestie operacyjne (dla agenta)
 - Dodaj do `StdModule.say` obsługę parametru `i18nKey` (jeśli jeszcze nie na wszystkich maszynach) i preferuj Opcję A/C – zmniejszy to liczbę zmian w plikach NPC.

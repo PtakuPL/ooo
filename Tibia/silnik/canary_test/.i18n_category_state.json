@@ -130,7 +130,7 @@
   },
   "translation_sync": {
     "current_lang": "ro",
-    "current_category": "npc.json",
+    "current_category": "raids.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -428,16 +428,17 @@
       },
       "ro": {
         "chatchannels": 8,
-        "total": 27969,
+        "total": 28116,
         "events": 5,
         "html": 1495,
         "items": 13749,
         "libs": 21,
         "modules": 16,
         "monsters": 7341,
-        "npc": 5334
+        "npc": 5334,
+        "raids": 147
       }
     },
-    "last_sync": 1765412753.5571384
+    "last_sync": 1765412761.6007426
   }
 }

@@ -248,3 +248,13 @@ data-otservbr-global/raids/port_hope/terrorbirds.xml
 data-otservbr-global/raids/port_hope/midnight_panther_2.xml
 data-otservbr-global/raids/port_hope/serpent_spawn.xml
 data-otservbr-global/raids/port_hope/lizards.xml
+data-otservbr-global/scripts/spells/monster/annihilon_paralyze.lua
+data-otservbr-global/scripts/spells/monster/pirate_corsair_skill_reducer.lua
+data-otservbr-global/scripts/spells/monster/large_black_ring.lua
+data-otservbr-global/scripts/spells/monster/dragonling_wave.lua
+data-otservbr-global/scripts/spells/monster/rupture_wave.lua
+data-otservbr-global/scripts/spells/monster/rotthingholy_ulus.lua
+data-otservbr-global/scripts/spells/monster/plagirath_heal.lua
+data-otservbr-global/scripts/spells/monster/hideous_fungus_summon.lua
+data-otservbr-global/scripts/spells/monster/death_priest_shargon_curse.lua
+data-otservbr-global/scripts/spells/monster/defiler_paralyze_3.lua

@@ -3910,3 +3910,13 @@ testyy/modules/game_minimap/minimap.lua
 testyy/modules/game_minimap/minimap.otui
 testyy/modules/game_ruleviolation/ruleviolation.otui
 testyy/modules/game_ruleviolation/ruleviolation.lua
+html_copy/system/locale/cs/main.php
+html_copy/system/locale/sk/main.php
+html_copy/system/locale/sr/main.php
+html_copy/system/locale/en/main.php
+html_copy/system/locale/en/install.php
+html_copy/system/locale/en/admin.php
+html_copy/system/locale/no/main.php
+html_copy/system/locale/be/main.php
+html_copy/system/locale/ru/main.php
+html_copy/system/locale/ru/install.php

@@ -11,7 +11,7 @@
     "modules": 1765415361.890652,
     "startup": 1765415368.7261581,
     "npclib": 1765415375.5295043,
-    "php": 1765415463.364814,
+    "php": 1765419837.3467274,
     "html": 1765415600.2206395,
     "client": 1765415607.6007419,
     "sendtextmessage": 1765415627.7470727,
@@ -65,7 +65,7 @@
     },
     "php": {
       "count": 0,
-      "timestamp": 1765411863.3648086
+      "timestamp": 1765412637.3467212
     },
     "html": {
       "count": 0,
@@ -105,7 +105,7 @@
     "modules": 4,
     "startup": 4,
     "npclib": 4,
-    "php": 4,
+    "php": 6,
     "client": 4,
     "sendtextmessage": 4,
     "keywordhandler": 4,

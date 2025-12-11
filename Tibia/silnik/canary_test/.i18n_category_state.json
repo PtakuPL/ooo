@@ -26,6 +26,10 @@
     "world": {
       "count": 0,
       "timestamp": 1765419290.5013664
+    },
+    "spells": {
+      "count": 98,
+      "timestamp": 1765419321.8408062
     }
   },
   "migrations_done": false,
@@ -34,7 +38,10 @@
     "scripts": 2,
     "monsters": 2,
     "raids": 2,
-    "world": 2
+    "world": 2,
+    "spells": 0
   },
-  "total_processed": {}
+  "total_processed": {
+    "spells": 147
+  }
 }

@@ -404,3 +404,13 @@ data-otservbr-global/monster/constructs/goggle_cake.lua
 data-otservbr-global/monster/constructs/lava_golem.lua
 data-otservbr-global/monster/constructs/gingerbread_men.lua
 data-otservbr-global/monster/amphibics/green_frog.lua
+data-otservbr-global/raids/oramond/crustacea_gigantica_4.xml
+data-otservbr-global/raids/oramond/crustacea_gigantica_5.xml
+data-otservbr-global/raids/fury_gate/furyosa.xml
+data-otservbr-global/raids/chayenne/chayenne.xml
+data-otservbr-global/raids/raids.xml
+data-otservbr-global/raids/roshamuul/omrafir.xml
+data-otservbr-global/raids/roshamuul/gaz_haragoth.xml
+data-otservbr-global/raids/carlin/yeti.xml
+data-otservbr-global/raids/carlin/orc.xml
+data-otservbr-global/raids/ankrahmun/gargoyle.xml

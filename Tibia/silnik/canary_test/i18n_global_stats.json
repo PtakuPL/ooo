@@ -1,14 +1,14 @@
 {
-  "total_cycles": 45,
+  "total_cycles": 46,
   "mode": "MIGRATION",
-  "category": "quests",
-  "last_update": "2025-12-11T22:55:16.150181",
+  "category": "raids",
+  "last_update": "2025-12-11T22:55:29.788994",
   "migration": {
-    "files_scanned": 86,
-    "files_with_keys": 76,
+    "files_scanned": 96,
+    "files_with_keys": 86,
     "files_without_keys": 10,
-    "keys_extracted": 76,
-    "current_category": "quests",
-    "batch_size": 720
+    "keys_extracted": 86,
+    "current_category": "raids",
+    "batch_size": 58
   }
 }

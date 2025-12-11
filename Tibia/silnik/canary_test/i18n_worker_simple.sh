@@ -4428,6 +4428,18 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                     DELAY="${2:-4}"
                     shift 2
                     ;;
+                --no-git)
+                    NO_GIT=true
+                    shift
+                    ;;
+                --translate-limit)
+                    TRANSLATE_LIMIT="${2:-100}"
+                    shift 2
+                    ;;
+                --translations-only)
+                    TRANSLATIONS_ONLY=true
+                    shift
+                    ;;
                 *)
                     shift
                     ;;

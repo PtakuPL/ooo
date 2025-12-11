@@ -1,7 +1,7 @@
 # NPC: busty_bonecrusher
 
 **Plik:** `data-otservbr-global/npc/busty_bonecrusher.lua`
-**Data migracji:** 2025-12-11 04:08
+**Data migracji:** 2025-12-11 04:09
 **Liczba tekstów:** 1
 
 ## Klucze i18n

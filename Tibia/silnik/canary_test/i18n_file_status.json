@@ -339,7 +339,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:01:08.928742"
+      "completed_at": "2025-12-11T20:01:55.178236"
     },
     "data-otservbr-global/npc/romir.lua": {
       "stages": {
@@ -567,7 +567,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:01:10.256393"
+      "completed_at": "2025-12-11T20:01:56.423322"
     },
     "data-otservbr-global/npc/seymour.lua": {
       "stages": {
@@ -793,7 +793,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:01:12.667023"
+      "completed_at": "2025-12-11T20:01:58.656951"
     },
     "data-otservbr-global/npc/shiriel.lua": {
       "stages": {
@@ -1023,7 +1023,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:01:14.186314"
+      "completed_at": "2025-12-11T20:02:00.081939"
     },
     "data-otservbr-global/npc/sigurd.lua": {
       "stages": {
@@ -1300,75 +1300,9 @@
           "languages": [],
           "keys_per_lang": 1,
           "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
-        },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 1,
-          "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
         }
       },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T20:01:16.779343"
+      "overall_status": "in_progress"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -2161,7 +2095,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:01:06.553051"
+      "completed_at": "2025-12-11T20:01:53.060354"
     },
     "data-otservbr-global/npc/tandros.lua": {
       "stages": {

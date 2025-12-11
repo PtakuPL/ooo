@@ -115,7 +115,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:22:47.876625"
+      "completed_at": "2025-12-11T04:24:10.926605"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -226,7 +226,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:22:49.319158"
+      "completed_at": "2025-12-11T04:24:12.308235"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {
@@ -1138,7 +1138,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:22:53.863700"
+      "completed_at": "2025-12-11T04:24:17.541934"
     },
     "data-otservbr-global/npc/nipuna.lua": {
       "stages": {
@@ -7176,9 +7176,13 @@
           ],
           "keys_in_lua": 0,
           "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
         }
       },
-      "overall_status": "in_progress"
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T04:24:02.555548"
     },
     "data-otservbr-global/npc/fenech.lua": {
       "stages": {
@@ -7295,7 +7299,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:22:42.074522"
+      "completed_at": "2025-12-11T04:24:04.485345"
     },
     "data-otservbr-global/npc/ferks.lua": {
       "stages": {
@@ -7412,7 +7416,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:22:43.520605"
+      "completed_at": "2025-12-11T04:24:06.172973"
     },
     "data-otservbr-global/npc/finarfin.lua": {
       "stages": {
@@ -7529,7 +7533,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:22:44.961853"
+      "completed_at": "2025-12-11T04:24:07.804732"
     },
     "data-otservbr-global/npc/florentine.lua": {
       "stages": {
@@ -7646,7 +7650,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:22:46.394933"
+      "completed_at": "2025-12-11T04:24:09.331808"
     },
     "data-otservbr-global/npc/galuna.lua": {
       "stages": {
@@ -7763,7 +7767,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:22:50.938329"
+      "completed_at": "2025-12-11T04:24:14.156177"
     },
     "data-otservbr-global/npc/gamel.lua": {
       "stages": {
@@ -7880,7 +7884,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:22:52.322088"
+      "completed_at": "2025-12-11T04:24:15.890519"
     },
     "data-otservbr-global/npc/gnomillion.lua": {
       "stages": {

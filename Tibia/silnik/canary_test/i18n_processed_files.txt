@@ -3562,3 +3562,8 @@ testyy/modules/game_store/style/acceptwindow.otui
 testyy/modules/game_store/style/ui.otui
 testyy/modules/game_store/style/transferpoints.otui
 testyy/modules/game_store/style/changename.otui
+testyy/modules/game_store/game_store.lua
+testyy/modules/client_background/background.lua
+testyy/modules/client_background/background.otui
+testyy/modules/game_shaders/shaders.lua
+testyy/modules/game_blessing/blessing.lua

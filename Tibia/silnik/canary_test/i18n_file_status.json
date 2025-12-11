@@ -2447,10 +2447,190 @@
       "overall_status": "completed",
       "completed_at": "2025-12-11T23:55:45.959566",
       "category": "monsters"
+    },
+    "data-otservbr-global/raids/ankrahmun/nomad.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:56:12.741375",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/ankrahmun/cobra.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:56:12.862367",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/ankrahmun/bone_beast.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:56:12.985218",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/ankrahmun/terramite.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:56:13.104640",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/ankrahmun/scarab.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:56:13.222990",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/liberty_bay/crustacea_gigantica_1.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:56:13.340689",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/liberty_bay/undead_cavebear.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:56:13.467086",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/liberty_bay/tigers.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:56:13.592755",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/liberty_bay/morgaroth.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:56:13.716100",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/liberty_bay/crustacea_gigantica_2.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:56:13.839382",
+      "category": "raids"
     }
   },
   "global_stats": {
-    "files_completed": 136,
+    "files_completed": 146,
     "total_keys": 0
   }
 }

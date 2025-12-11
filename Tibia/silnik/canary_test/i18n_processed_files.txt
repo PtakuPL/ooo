@@ -454,3 +454,13 @@ data-otservbr-global/monster/amphibics/makara.lua
 data-otservbr-global/monster/amphibics/crimson_frog.lua
 data-otservbr-global/monster/amphibics/toad.lua
 data-otservbr-global/monster/amphibics/coral_frog.lua
+data-otservbr-global/raids/ankrahmun/nomad.xml
+data-otservbr-global/raids/ankrahmun/cobra.xml
+data-otservbr-global/raids/ankrahmun/bone_beast.xml
+data-otservbr-global/raids/ankrahmun/terramite.xml
+data-otservbr-global/raids/ankrahmun/scarab.xml
+data-otservbr-global/raids/liberty_bay/crustacea_gigantica_1.xml
+data-otservbr-global/raids/liberty_bay/undead_cavebear.xml
+data-otservbr-global/raids/liberty_bay/tigers.xml
+data-otservbr-global/raids/liberty_bay/morgaroth.xml
+data-otservbr-global/raids/liberty_bay/crustacea_gigantica_2.xml

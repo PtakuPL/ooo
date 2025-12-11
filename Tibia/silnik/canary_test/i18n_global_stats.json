@@ -1,14 +1,14 @@
 {
-  "total_cycles": 132,
+  "total_cycles": 133,
   "mode": "MIGRATION",
-  "category": "world",
-  "last_update": "2025-12-11T23:56:23.193160",
+  "category": "talkactions",
+  "last_update": "2025-12-11T23:56:31.608558",
   "migration": {
     "files_scanned": 146,
     "files_with_keys": 126,
     "files_without_keys": 20,
     "keys_extracted": 126,
-    "current_category": "world",
-    "batch_size": 11
+    "current_category": "talkactions",
+    "batch_size": 88
   }
 }

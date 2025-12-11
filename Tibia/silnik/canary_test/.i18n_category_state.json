@@ -8,7 +8,7 @@
     "raids": 1765500974.4208193,
     "world": 1765500983.1434286,
     "spells": 1765490104.104978,
-    "talkactions": 1765493760.1411483,
+    "talkactions": 1765500991.5555527,
     "movements": 1765493763.5622706,
     "creaturescripts": 1765493771.549787,
     "globalevents": 1765493780.9595008,
@@ -67,7 +67,7 @@
     },
     "talkactions": {
       "count": 0,
-      "timestamp": 1765490160.1411426
+      "timestamp": 1765493791.5555475
     },
     "movements": {
       "count": 0,
@@ -167,7 +167,7 @@
     "raids": 6,
     "world": 6,
     "spells": 2,
-    "talkactions": 4,
+    "talkactions": 6,
     "movements": 4,
     "creaturescripts": 4,
     "globalevents": 4,

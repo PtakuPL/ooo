@@ -10,7 +10,7 @@
     "chatchannels": 1765415355.0227084,
     "modules": 1765415361.890652,
     "startup": 1765415368.7261581,
-    "npclib": 1765411754.0588856,
+    "npclib": 1765415375.5295043,
     "php": 1765411860.886356,
     "html": 1765411992.0708418,
     "client": 1765411998.9947343,
@@ -61,7 +61,7 @@
     },
     "npclib": {
       "count": 0,
-      "timestamp": 1765411154.0588799
+      "timestamp": 1765411775.529499
     },
     "php": {
       "count": 0,
@@ -100,7 +100,7 @@
     "chatchannels": 4,
     "modules": 4,
     "startup": 4,
-    "npclib": 2,
+    "npclib": 4,
     "php": 2,
     "client": 2,
     "sendtextmessage": 2,

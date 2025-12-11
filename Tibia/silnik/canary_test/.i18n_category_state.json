@@ -6,7 +6,9 @@
     "monsters": 1765416291.8609195,
     "raids": 1765416297.4457195,
     "world": 1765416299.1817932,
-    "libs": 1765419339.908812
+    "libs": 1765419339.908812,
+    "events": 1765416046.0000865,
+    "chatchannels": 1765416352.012566
   },
   "last_processed": {
     "npc": {
@@ -44,6 +46,14 @@
     "libs": {
       "count": 0,
       "timestamp": 1765415739.9088047
+    },
+    "events": {
+      "count": 0,
+      "timestamp": 1765415746.000082
+    },
+    "chatchannels": {
+      "count": 0,
+      "timestamp": 1765415752.0125573
     }
   },
   "consecutive_zeros": {
@@ -55,7 +65,9 @@
     "world": 2,
     "spells": 0,
     "items": 0,
-    "libs": 4
+    "libs": 4,
+    "events": 1,
+    "chatchannels": 2
   },
   "total_processed": {
     "spells": 370,

@@ -4272,24 +4272,54 @@ CATEGORIES = {
         "priority": 24
     },
     
-    # === TESTYY/CLIENT - OTClient (priorytet 25) ===
-    "client": {
-        "dirs": ["testyy/modules", "testyy/mods"],
-        "patterns": [r'"[^"]{10,}"', r"'[^']{10,}'"],
-        "exclude_if": ["tr("],
+    # === TESTYY/MODULES - OTClient Modules (priorytet 25) ===
+    "client_modules": {
+        "dirs": ["testyy/modules"],
+        "patterns": [r'"[^"]{10,}"', r"'[^']{10,}'", r'tr\s*\([^)]+\)'],
+        "exclude_if": [],
         "json": "client.json",
         "file_ext": [".lua", ".otui"],
         "priority": 25
     },
     
-    # === SERVER ERRORS/MESSAGES (priorytet 26) ===
+    # === TESTYY/MODS - OTClient Mods (priorytet 26) ===
+    "client_mods": {
+        "dirs": ["testyy/mods"],
+        "patterns": [r'"[^"]{10,}"', r"'[^']{10,}'"],
+        "exclude_if": [],
+        "json": "client.json",
+        "file_ext": [".lua", ".otui"],
+        "priority": 26
+    },
+    
+    # === TESTYY/DATA - OTClient Data (priorytet 27) ===
+    "client_data": {
+        "dirs": ["testyy/data"],
+        "patterns": [r'"[^"]{10,}"', r"'[^']{10,}'"],
+        "exclude_if": [],
+        "json": "client.json",
+        "file_ext": [".lua", ".otui", ".xml"],
+        "priority": 27
+    },
+    
+    # === TESTYY/SRC - OTClient C++ (priorytet 28) ===
+    "client_cpp": {
+        "dirs": ["testyy/src"],
+        "patterns": [r'"[^"]{10,}"', r'pushString\s*\('],
+        "exclude_if": [],
+        "json": "client_cpp.json",
+        "file_ext": [".cpp", ".hpp", ".h"],
+        "priority": 28
+    },
+    
+    # === SERVER ERRORS/MESSAGES (priorytet 29) ===
     "server": {
         "dirs": ["src"],
         "patterns": [r'sendTextMessage\s*\(', r'fmt::format\s*\("[^"]+'],
         "exclude_if": ["i18n::"],
         "json": "server.json",
         "file_ext": [".cpp", ".hpp"],
-        "priority": 26
+        "priority": 29
     }
 }
 

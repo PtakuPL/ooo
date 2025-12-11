@@ -15,7 +15,7 @@
     "items": 1765493802.786157,
     "mounts": 1765493813.0985725,
     "libs": 1765493824.429201,
-    "events": 1765490185.5983384,
+    "events": 1765493833.6090808,
     "chatchannels": 1765490194.9768438,
     "modules": 1765490210.3311844,
     "startup": 1765490218.976677,
@@ -95,7 +95,7 @@
     },
     "events": {
       "count": 0,
-      "timestamp": 1765489585.5983322
+      "timestamp": 1765490233.6090755
     },
     "chatchannels": {
       "count": 0,
@@ -174,7 +174,7 @@
     "items": 4,
     "mounts": 4,
     "libs": 4,
-    "events": 2,
+    "events": 4,
     "chatchannels": 2,
     "modules": 2,
     "startup": 2,

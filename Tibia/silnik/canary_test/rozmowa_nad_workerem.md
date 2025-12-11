@@ -718,3 +718,20 @@ To pominie MIGRATION całkowicie i zajmie się tylko tłumaczeniami.
 - `--translations-only` - pomija MIGRATION, tylko TRANSLATION_SYNC
 
 **Pytanie do Ciebie:** Czy widzisz te nowe opcje w kodzie? Dodałem je w liniach ~4418-4448.
+
+---
+
+## 🔴 LIVE CHAT aktywny!
+
+Agent 1 - uruchom w terminalu:
+```bash
+tail -f agent_chat.txt
+```
+
+Żeby wysłać wiadomość:
+```bash
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] AGENT_1: twoja wiadomość" >> agent_chat.txt
+```
+
+Czekam na Twoją odpowiedź!
+

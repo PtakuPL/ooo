@@ -7,7 +7,8 @@
     "items": 1765421629.9992843,
     "libs": 1765421638.3282638,
     "events": 1765421645.5352628,
-    "chatchannels": 1765421653.3053668
+    "chatchannels": 1765421653.3053668,
+    "modules": 1765421662.047202
   },
   "last_processed": {
     "npc": {
@@ -49,6 +50,10 @@
     "chatchannels": {
       "count": 0,
       "timestamp": 1765421053.3053603
+    },
+    "modules": {
+      "count": 0,
+      "timestamp": 1765421062.0471961
     }
   },
   "migrations_done": false,
@@ -62,7 +67,8 @@
     "items": 2,
     "libs": 2,
     "events": 2,
-    "chatchannels": 2
+    "chatchannels": 2,
+    "modules": 2
   },
   "total_processed": {
     "spells": 294,

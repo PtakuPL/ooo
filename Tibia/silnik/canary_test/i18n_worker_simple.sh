@@ -1547,14 +1547,10 @@ for i, text in enumerate(texts_farewell, 1):
 #==============================================================================
 voices_count = 0
 
-# Pattern dla npcConfig.voices z text = "..."
+# Pattern dla npcConfig.voices z text = "..." (obsługa wielu bloków)
 if 'npcConfig.voices' in content:
-    # Znajdź cały blok voices
-    voices_block_match = re.search(r'npcConfig\.voices\s*=\s*\{(.+?)\n\}', content, re.DOTALL)
-    if voices_block_match:
-        voices_block = voices_block_match.group(1)
-        # Wyciągnij wszystkie text = "..."
-        texts_voices = re.findall(r'text\s*=\s*"([^"]+)"', voices_block)
+    for voices_block in re.findall(r'npcConfig\\.voices\\s*=\\s*\\{([^}]*)\\}', content, re.DOTALL):
+        texts_voices = re.findall(r'text\\s*=\\s*\"([^\"]+)\"', voices_block)
         for i, text in enumerate(texts_voices, 1):
             text_clean = ' '.join(text.split())
             if len(text_clean) >= 3:

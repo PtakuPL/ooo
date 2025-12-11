@@ -41,8 +41,8 @@
       "timestamp": 1765487745.2443116
     },
     "scripts": {
-      "count": 88,
-      "timestamp": 1765487792.857904
+      "count": 33,
+      "timestamp": 1765487848.6763046
     },
     "monsters": {
       "count": 0,
@@ -221,7 +221,7 @@
   },
   "total_processed": {
     "npc": 13620,
-    "scripts": 207,
+    "scripts": 273,
     "php": 15
   },
   "migrations_done": false

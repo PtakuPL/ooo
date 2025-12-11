@@ -424,3 +424,13 @@ data/libs/libs.lua
 data/libs/systems/hireling.lua
 data/libs/systems/blessing.lua
 data/libs/systems/daily_reward.lua
+html_copy/admin/pages/menus.php
+html_copy/admin/pages/open_source.php
+html_copy/admin/pages/statistics.php
+html_copy/admin/pages/changelog.php
+html_copy/admin/pages/version.php
+html_copy/admin/pages/players.php
+html_copy/admin/pages/logs.php
+html_copy/admin/pages/mass_account.php
+html_copy/admin/pages/tools.php
+html_copy/admin/pages/visitors.php

@@ -3178,8 +3178,9 @@ auto_translate_keys() {
     local target_lang="$1"
     local json_file="$2"
     local keys_count="$3"
+    local translate_limit="${TRANSLATE_LIMIT:-0}"  # 0 = brak limitu
     
-    log "${CYAN}🌍 AUTO TRANSLATE: $target_lang <- $json_file${NC}"
+    log "${CYAN}🌍 AUTO TRANSLATE: $target_lang <- $json_file (limit: $translate_limit)${NC}"
     
     python3 << AUTOTRANSPY
 import json
@@ -3190,6 +3191,7 @@ import hashlib
 I18N_DIR = "i18n"
 target_lang = "$target_lang"
 json_file = "$json_file"
+translate_limit = int("$translate_limit" or "0")
 
 # Prosty słownik tłumaczeń dla popularnych fraz
 SIMPLE_TRANSLATIONS = {

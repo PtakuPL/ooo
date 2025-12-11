@@ -5159,3 +5159,6 @@
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/grubokk.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/lib/npc/load.lua
 /home/ptaku/serweryt/Tibia/silnik/canary_test/data-otservbr-global/npc/a_frog.lua
+
+# Cache Twig - skompilowane szablony, nie źródła (dodane 2025-12-11)
+/home/ptaku/serweryt/Tibia/silnik/canary_test/html_copy/system/cache/

@@ -113,7 +113,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:55:28.335486"
+      "completed_at": "2025-12-11T19:56:13.655555"
     },
     "data-otservbr-global/npc/rock_in_a_hard_place.lua": {
       "stages": {
@@ -228,7 +228,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:55:30.902741"
+      "completed_at": "2025-12-11T19:56:16.080860"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -450,7 +450,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:55:32.191019"
+      "completed_at": "2025-12-11T19:56:17.231583"
     },
     "data-otservbr-global/npc/bertram.lua": {
       "stages": {
@@ -682,7 +682,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:55:33.923073"
+      "completed_at": "2025-12-11T19:56:18.795537"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -908,7 +908,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:55:35.345558"
+      "completed_at": "2025-12-11T19:56:20.049294"
     },
     "data-otservbr-global/npc/cranky_lizard_crone.lua": {
       "stages": {
@@ -1138,7 +1138,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:55:36.680631"
+      "completed_at": "2025-12-11T19:56:21.291209"
     },
     "data-otservbr-global/npc/sundara.lua": {
       "stages": {
@@ -1253,7 +1253,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:55:38.259537"
+      "completed_at": "2025-12-11T19:56:22.701996"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -1479,7 +1479,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:55:17.929009"
+      "completed_at": "2025-12-11T19:56:04.011266"
     },
     "data-otservbr-global/npc/ghorza.lua": {
       "stages": {
@@ -1594,7 +1594,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:55:19.461251"
+      "completed_at": "2025-12-11T19:56:05.450254"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {
@@ -1709,7 +1709,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:55:20.905644"
+      "completed_at": "2025-12-11T19:56:06.711472"
     },
     "data-otservbr-global/npc/the_lootmonger.lua": {
       "stages": {
@@ -1820,7 +1820,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:55:41.212475"
+      "completed_at": "2025-12-11T19:56:25.401429"
     },
     "data-otservbr-global/npc/mordecai.lua": {
       "stages": {
@@ -1935,7 +1935,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:55:25.382703"
+      "completed_at": "2025-12-11T19:56:10.974750"
     },
     "data-otservbr-global/npc/nelly.lua": {
       "stages": {
@@ -2050,7 +2050,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:55:26.946236"
+      "completed_at": "2025-12-11T19:56:12.393049"
     },
     "data-otservbr-global/npc/alaistar.lua": {
       "stages": {
@@ -2276,7 +2276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:55:39.702512"
+      "completed_at": "2025-12-11T19:56:24.024576"
     }
   },
   "global_stats": {

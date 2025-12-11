@@ -129,8 +129,8 @@
     "npc": 2
   },
   "translation_sync": {
-    "current_lang": "bs",
-    "current_category": "chatchannels.json",
+    "current_lang": "sr",
+    "current_category": "html.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -503,9 +503,26 @@
       },
       "bs": {
         "chatchannels": 8,
-        "total": 8
+        "total": 28539,
+        "events": 5,
+        "html": 1495,
+        "items": 13749,
+        "libs": 21,
+        "modules": 16,
+        "monsters": 7341,
+        "npc": 5334,
+        "raids": 147,
+        "scripts": 385,
+        "spells": 15,
+        "startup": 23
+      },
+      "sr": {
+        "chatchannels": 8,
+        "total": 1508,
+        "events": 5,
+        "html": 1495
       }
     },
-    "last_sync": 1765413083.7267737
+    "last_sync": 1765413168.766745
   }
 }

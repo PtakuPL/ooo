@@ -2402,10 +2402,13 @@ process_php_category() {
         local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
         
         # Wyciągnij kandydatów ze stringów, odfiltruj kod/ścieżki/URL/SQL
-        local strings=$(python3 - << 'PYCODE'
+        local strings=$(python3 - "$file" << 'PYCODE'
 import re, sys
 from pathlib import Path
-path = Path(""""$file"""")
+
+if len(sys.argv) < 2:
+    sys.exit(0)
+path = Path(sys.argv[1])
 try:
     text = path.read_text(encoding="utf-8", errors="ignore")
 except Exception:
@@ -2585,10 +2588,13 @@ process_client_category() {
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
             
             # Wyciągnij stringi (pomiń tr() i techniczne ścieżki/kod)
-            local strings=$(python3 - << 'PYCODE'
+            local strings=$(python3 - "$file" << 'PYCODE'
 import re, sys
 from pathlib import Path
-path = Path(""""$file"""")
+
+if len(sys.argv) < 2:
+    sys.exit(0)
+path = Path(sys.argv[1])
 try:
     text = path.read_text(encoding="utf-8", errors="ignore")
 except Exception:

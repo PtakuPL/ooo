@@ -130,7 +130,7 @@
   },
   "translation_sync": {
     "current_lang": "uk",
-    "current_category": "modules.json",
+    "current_category": "monsters.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -578,14 +578,15 @@
       },
       "uk": {
         "chatchannels": 8,
-        "total": 15294,
+        "total": 22635,
         "events": 5,
         "html": 1495,
         "items": 13749,
         "libs": 21,
-        "modules": 16
+        "modules": 16,
+        "monsters": 7341
       }
     },
-    "last_sync": 1765413479.5228884
+    "last_sync": 1765413484.298778
   }
 }

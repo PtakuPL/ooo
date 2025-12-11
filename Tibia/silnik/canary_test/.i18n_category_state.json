@@ -4,7 +4,8 @@
     "scripts": 1765419868.828563,
     "monsters": 1765419875.9832613,
     "raids": 1765419883.6474264,
-    "world": 1765419890.5013714
+    "world": 1765419890.5013714,
+    "items": 1765419932.1648421
   },
   "last_processed": {
     "npc": {
@@ -30,6 +31,10 @@
     "spells": {
       "count": 98,
       "timestamp": 1765419321.8408062
+    },
+    "items": {
+      "count": 0,
+      "timestamp": 1765419332.1648364
     }
   },
   "migrations_done": false,
@@ -39,7 +44,8 @@
     "monsters": 2,
     "raids": 2,
     "world": 2,
-    "spells": 0
+    "spells": 0,
+    "items": 2
   },
   "total_processed": {
     "spells": 147

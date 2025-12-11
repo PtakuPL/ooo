@@ -383,5 +383,7 @@
   "scripts.manage_kv.msg_1": "Boss cooldown for ",
   "scripts.manage_tutor.msg_1": "You have been promoted to a tutor by ",
   "scripts.manage_tutor.msg_2": "You have been demoted to a normal player by ",
-  "scripts.tutor_position.msg_1": "Your current position is: \\z"
+  "scripts.tutor_position.msg_1": "Your current position is: \\z",
+  "scripts.actions_rewards.msg_1": "You found ",
+  "scripts.actions_rewards.msg_2": "You found "
 }

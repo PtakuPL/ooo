@@ -119,3 +119,13 @@ data-otservbr-global/monster/nostalgia/old_spider.lua
 data-otservbr-global/monster/nostalgia/old_bug.lua
 data-otservbr-global/monster/constructs/weeper.lua
 data-otservbr-global/monster/constructs/eternal_guardian.lua
+data-otservbr-global/raids/darashia/pirates.xml
+data-otservbr-global/raids/darashia/arachir_the_ancient_one.xml
+data-otservbr-global/raids/darashia/lions.xml
+data-otservbr-global/raids/darashia/minotaurs.xml
+data-otservbr-global/raids/darashia/necropharus.xml
+data-otservbr-global/raids/darashia/undead_darashia.xml
+data-otservbr-global/raids/darashia/white_pale.xml
+data-otservbr-global/raids/darashia/the_pale_count.xml
+data-otservbr-global/raids/darashia/priestesses.xml
+data-otservbr-global/raids/svargrond/barba_svar.xml

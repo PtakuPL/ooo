@@ -18,7 +18,7 @@
     "keywordhandler": 1765423731.132717,
     "twig": 1765423738.202282,
     "php": 1765423745.8622632,
-    "npc": 1765421072.6448445
+    "npc": 1765424142.547605
   },
   "last_processed": {
     "scripts": {
@@ -99,12 +99,12 @@
     },
     "npc": {
       "count": 0,
-      "timestamp": 1765420472.644836
+      "timestamp": 1765420542.5475984
     }
   },
   "migrations_done": false,
   "consecutive_zeros": {
-    "npc": 2,
+    "npc": 4,
     "scripts": 4,
     "monsters": 4,
     "raids": 4,

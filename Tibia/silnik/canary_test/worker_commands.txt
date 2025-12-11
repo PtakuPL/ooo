@@ -184,3 +184,5 @@
 # [2025-12-11 03:11:45] Wykonano: AUTO:pt:startup.json:10
 #FORCE:items  # Wykonano 2025-12-11 03:29:43
 # [2025-12-11 03:29:43] Wykonano: FORCE:items
+#FORCE:npc  # Wykonano 2025-12-11 03:35:33
+# [2025-12-11 03:35:33] Wykonano: FORCE:npc

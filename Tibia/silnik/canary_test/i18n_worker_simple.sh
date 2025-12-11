@@ -4514,7 +4514,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
         LIMIT="${2:-0}"
         COUNT=0
         echo "Tryb AUTO - szukam plików NPC do migracji..."
-        echo "Wzorce: StdModule.say z text= oraz npcHandler:say(\"...\")"
+        echo "Wzorce: StdModule.say, npcHandler:say, npcConfig.voices z text="
         [ "$LIMIT" -gt 0 ] && echo "Limit: $LIMIT plików"
         for f in data-otservbr-global/npc/*.lua; do
             NEEDS_WORK=false
@@ -4532,6 +4532,15 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             if grep -qE 'npcHandler:say\(\s*"[^"]{5,}"' "$f" 2>/dev/null; then
                 if ! grep -q "NPC_LIB.i18n.npcSay" "$f" 2>/dev/null; then
                     NEEDS_WORK=true
+                fi
+            fi
+            
+            # Sprawdź npcConfig.voices z text = "..." bez i18nKey
+            if grep -q "npcConfig.voices" "$f" 2>/dev/null; then
+                if grep -q 'text = "' "$f" 2>/dev/null; then
+                    if ! grep -q "i18nKey" "$f" 2>/dev/null; then
+                        NEEDS_WORK=true
+                    fi
                 fi
             fi
             
@@ -4775,6 +4784,15 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                                     if grep -q 'npcHandler:say(' "$f" 2>/dev/null; then
                                         if ! grep -q "NPC_LIB.i18n.npcSay" "$f" 2>/dev/null; then
                                             NEEDS_WORK=true
+                                        fi
+                                    fi
+                                    
+                                    # npcConfig.voices z text = "..." bez i18nKey
+                                    if grep -q "npcConfig.voices" "$f" 2>/dev/null; then
+                                        if grep -q 'text = "' "$f" 2>/dev/null; then
+                                            if ! grep -q "i18nKey" "$f" 2>/dev/null; then
+                                                NEEDS_WORK=true
+                                            fi
                                         fi
                                     fi
                                     

@@ -165,3 +165,10 @@ data/chatchannels/scripts/advertising-rook.lua
 data/chatchannels/scripts/gamemaster.lua
 data/chatchannels/scripts/advertising.lua
 data/chatchannels/scripts/world_chat.lua
+data/modules/lib/modules.lua
+data/modules/scripts/cults_of_tibia/death.lua
+data/modules/scripts/hirelings/hireling_module.lua
+data/modules/scripts/gamestore/init.lua
+data/modules/scripts/gamestore/gamestore.lua
+data/modules/scripts/questtrack/questtrack.lua
+data/modules/scripts/daily_reward/daily_reward.lua

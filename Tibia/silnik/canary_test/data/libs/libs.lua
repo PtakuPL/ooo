@@ -15,3 +15,9 @@ dofile(CORE_DIRECTORY .. "/libs/systems/load.lua")
 
 -- Tables
 dofile(CORE_DIRECTORY .. "/libs/tables/load.lua")
+
+-- I18N Server-side translation system
+dofile(CORE_DIRECTORY .. "/libs/server_i18n.lua")
+
+-- I18N Wrappers for NPC_LIB.i18n, Item:setLocalizedDescription, etc.
+dofile(CORE_DIRECTORY .. "/libs/i18n_wrappers.lua")

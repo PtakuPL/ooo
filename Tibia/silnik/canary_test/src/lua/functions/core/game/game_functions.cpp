@@ -112,6 +112,8 @@ void GameFunctions::init(lua_State* L) {
 
 	Lua::registerMethod(L, "Game", "getMonstersByRace", GameFunctions::luaGameGetMonstersByRace);
 	Lua::registerMethod(L, "Game", "getMonstersByBestiaryStars", GameFunctions::luaGameGetMonstersByBestiaryStars);
+
+	Lua::registerMethod(L, "Game", "broadcastLocalizedMessage", GameFunctions::luaGameBroadcastLocalizedMessage);
 }
 
 // Game
@@ -1084,5 +1086,34 @@ int GameFunctions::luaGameGetMonstersByBestiaryStars(lua_State* L) {
 		Lua::setMetatable(L, -1, "MonsterType");
 		lua_rawseti(L, -2, ++index);
 	}
+	return 1;
+}
+
+int GameFunctions::luaGameBroadcastLocalizedMessage(lua_State* L) {
+	// Game.broadcastLocalizedMessage(key, messageType[, args])
+	// Broadcasts a localized message to all online players
+	const std::string &key = Lua::getString(L, 1);
+	const MessageClasses messageType = Lua::getNumber<MessageClasses>(L, 2, MESSAGE_STATUS_WARNING);
+	
+	std::vector<std::string> args;
+	if (lua_istable(L, 3)) {
+		const auto length = lua_rawlen(L, 3);
+		args.reserve(length);
+		for (size_t idx = 1; idx <= length; ++idx) {
+			lua_rawgeti(L, 3, idx);
+			args.emplace_back(Lua::getString(L, -1));
+			lua_pop(L, 1);
+		}
+	}
+	
+	// Send localized message to each online player
+	for (const auto &playerEntry : g_game().getPlayers()) {
+		const auto &player = playerEntry.second;
+		if (player) {
+			player->sendLocalizedTextMessage(messageType, key, args);
+		}
+	}
+	
+	Lua::pushBoolean(L, true);
 	return 1;
 }

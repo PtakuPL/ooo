@@ -1264,3 +1264,82 @@ int CreatureFunctions::luaCreatureSetShader(lua_State* L) {
 	Lua::pushBoolean(L, true);
 	return 1;
 }
+
+int CreatureFunctions::luaCreatureSayLocalized(lua_State* L) {
+	// creature:sayLocalized(key[, type = TALKTYPE_MONSTER_SAY[, ghost = false[, target = nullptr[, position]]]], args)
+	// Sends a localized message from the creature using i18n key
+	const int parameters = lua_gettop(L);
+
+	Position position;
+	if (parameters >= 6 && !lua_istable(L, 6)) {
+		position = Lua::getPosition(L, 6);
+		if (!position.x || !position.y) {
+			Lua::reportErrorFunc("Invalid position specified.");
+			Lua::pushBoolean(L, false);
+			return 1;
+		}
+	}
+
+	std::shared_ptr<Creature> target = nullptr;
+	if (parameters >= 5 && !lua_istable(L, 5)) {
+		target = Lua::getCreature(L, 5);
+	}
+
+	const bool ghost = Lua::getBoolean(L, 4, false);
+	const auto type = Lua::getNumber<SpeakClasses>(L, 3, TALKTYPE_MONSTER_SAY);
+	const std::string &key = Lua::getString(L, 2);
+	const auto &creature = Lua::getUserdataShared<Creature>(L, 1, "Creature");
+	
+	if (!creature) {
+		lua_pushnil(L);
+		return 1;
+	}
+
+	// Get args from last parameter if it's a table
+	std::vector<std::string> args;
+	int argsIndex = parameters;
+	if (parameters >= 4 && lua_istable(L, argsIndex)) {
+		const auto length = lua_rawlen(L, argsIndex);
+		args.reserve(length);
+		for (size_t idx = 1; idx <= length; ++idx) {
+			lua_rawgeti(L, argsIndex, idx);
+			args.emplace_back(Lua::getString(L, -1));
+			lua_pop(L, 1);
+		}
+	}
+
+	// If target is a player, send localized message
+	if (target) {
+		const auto &player = target->getPlayer();
+		if (player) {
+			player->sendLocalizedTextMessage(static_cast<MessageClasses>(type), key, std::move(args));
+			Lua::pushBoolean(L, true);
+			return 1;
+		}
+	}
+
+	// For non-player targets or broadcast, we need to get the translated text and use regular say
+	// This is a fallback - ideally players should receive localized messages directly
+	Spectators spectators;
+	if (target) {
+		spectators.insert(target);
+	}
+
+	// Get all players in spectators range and send localized message to each
+	if (position.x != 0) {
+		spectators.find<Player>(position, true);
+	} else {
+		spectators.find<Player>(creature->getPosition(), true);
+	}
+
+	// Send localized message to each player spectator
+	for (const auto &spectator : spectators) {
+		const auto &player = spectator->getPlayer();
+		if (player) {
+			player->sendLocalizedTextMessage(static_cast<MessageClasses>(type), key, args);
+		}
+	}
+
+	Lua::pushBoolean(L, true);
+	return 1;
+}

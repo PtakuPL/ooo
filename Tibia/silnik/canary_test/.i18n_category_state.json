@@ -5,7 +5,7 @@
     "translation": 1765415989.7660613,
     "monsters": 1765419896.9270065,
     "raids": 1765419905.2586505,
-    "world": 1765416299.1817932,
+    "world": 1765419917.7686558,
     "libs": 1765419339.908812,
     "events": 1765417850.9182835,
     "chatchannels": 1765416352.012566,
@@ -45,7 +45,7 @@
     },
     "world": {
       "count": 0,
-      "timestamp": 1765415699.181786
+      "timestamp": 1765416317.7686505
     },
     "spells": {
       "count": 132,
@@ -118,7 +118,7 @@
     "translation": 1,
     "monsters": 4,
     "raids": 4,
-    "world": 2,
+    "world": 4,
     "spells": 0,
     "items": 2,
     "libs": 4,

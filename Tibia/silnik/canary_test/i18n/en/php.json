@@ -32,5 +32,11 @@
   "php.exception.text2": "$message<br/><br/>",
   "php.settingssetcommand.text1": "Setting $key successfully updated",
   "php.migrateruncommand.text1": "Please check it and re-run the command",
-  "php.migrateruncommand.text2": "No migration has been executed"
+  "php.migrateruncommand.text2": "No migration has been executed",
+  "php.plugins.text3": ", and youre using version",
+  "php.plugins.text4": "to be installed.",
+  "php.plugins.text5": "to exist in the database.",
+  "php.settings.text3": "input-group-append input-group-text",
+  "php.settings.text4": "fas fa-eye-slash",
+  "php.settings.text5": "well setting-default"
 }

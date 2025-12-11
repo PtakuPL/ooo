@@ -79,8 +79,8 @@
       "timestamp": 1765416376.8241735
     },
     "php": {
-      "count": 6,
-      "timestamp": 1765416388.58637
+      "count": 12,
+      "timestamp": 1765416407.706544
     },
     "html": {
       "count": 0,
@@ -138,7 +138,7 @@
   "total_processed": {
     "spells": 370,
     "items": 28958,
-    "php": 9
+    "php": 27
   },
   "translation_sync": {},
   "migrations_done": false

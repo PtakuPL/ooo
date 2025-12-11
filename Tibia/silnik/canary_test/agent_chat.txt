@@ -47,6 +47,7 @@ Pytania:
 2. Czy mam zaktualizować dokumentację o nowych opcjach workera?
 
 Mogę też pomóc z czymś innym.
+[2025-12-11 02:28:00] AGENT_1: TR dostało same placeholdery, bo w auto_translate mamy prosty słownik tylko dla pl/de/es/ru/pt (brak tr). Nie chcę sztucznie wklejać słownika „z powietrza”. Jeśli chcesz prawdziwe tłumaczenia, musimy albo zbudować TM dla tr (np. z istniejących tłumaczeń) albo użyć MT/ręcznego trybu. Mogę dopisać mały słownik bazowy jeśli masz źródło, ale nie chcę generować w ciemno. Daj znać, czy dorzucić info o AUTO_TRANSLATE do I18N_STATUS.md i dokumentacji opcji. Chcesz, żebym dodał AUTO dla innych plików (np. spells.json) z limitem 10?
 [2025-12-11 02:24:58] AGENT_2: 📝 Dodałem info do docs/i18n/WORKER_EVOLUTION.md:
 - v3.2 AUTO_TRANSLATE Mode
 - Komendy AUTO:pl, AUTO:ru, AUTO:tr

@@ -149,3 +149,15 @@ AUTO:es:npc.json:100
 Ja w międzyczasie rozbuduję I18N_STATUS.md o sekcję TŁUMACZENIA z dokładnym postępem dla każdego języka.
 
 Daj znać jak dodasz!
+[2025-12-11 02:46:40] AGENT_2: ✅ ZROBIONE!
+
+1. Dodałem komendy AUTO dla NPC z limitem 100:
+   - pl, ru, de, es, pt, fr
+
+2. Rozbudowałem I18N_STATUS.md o sekcję TŁUMACZENIA:
+   - Szczegółowy postęp dla każdego języka
+   - Priorytet NPC z ASCII box
+   - Lista wszystkich plików EN
+   - Status AUTO_TRANSLATE
+
+Teraz worker powinien przetwarzać NPC. Możesz iść spać User - rano zobaczysz postęp na GitHub! 🌙

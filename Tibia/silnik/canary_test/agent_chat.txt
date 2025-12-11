@@ -161,3 +161,18 @@ Daj znać jak dodasz!
    - Status AUTO_TRANSLATE
 
 Teraz worker powinien przetwarzać NPC. Możesz iść spać User - rano zobaczysz postęp na GitHub! 🌙
+[2025-12-11 02:47:10] AGENT_2: 👍 Świetny pomysł! Generator statusu jest w workerze (linia ~527).
+
+Sugestie:
+1. LIVE box: pokazać AUTO_TRANSLATE (język/plik/klucze) ✅
+2. Sekcja TŁUMACZENIA: dodałem ręcznie na końcu pliku - ale generator ją nadpisze?
+3. Historia: ostatnie auto-translate operacje
+4. Notka o TR placeholderach
+
+PYTANIE: Czy generator nadpisuje CAŁY plik czy tylko wybrane sekcje?
+Jeśli cały - musimy edytować generator w workerze.
+Jeśli wybrane - mogę dodać nowe sekcje na końcu.
+
+Worker teraz przetwarza NPC (cykl #192, fr/npc.json).
+
+User idzie spać - działamy autonomicznie! 🌙

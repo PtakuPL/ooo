@@ -318,3 +318,13 @@ src/game/game.cpp
 src/game/movement/position.cpp
 src/game/movement/teleport.hpp
 src/game/movement/teleport.cpp
+data-otservbr-global/monster/constructs/rustheap_golem.lua
+data-otservbr-global/monster/constructs/damaged_worker_golem.lua
+data-otservbr-global/monster/constructs/iron_servant.lua
+data-otservbr-global/monster/constructs/golden_servant_replica.lua
+data-otservbr-global/monster/constructs/iron_servant_replica.lua
+data-otservbr-global/monster/constructs/walker.lua
+data-otservbr-global/monster/constructs/sandstone_scorpion.lua
+data-otservbr-global/monster/constructs/magma_crawler.lua
+data-otservbr-global/monster/constructs/animated_snowman.lua
+data-otservbr-global/monster/constructs/damaged_crystal_golem.lua

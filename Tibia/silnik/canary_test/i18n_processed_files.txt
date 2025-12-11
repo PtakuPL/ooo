@@ -288,3 +288,13 @@ data-otservbr-global/monster/constructs/diamond_servant.lua
 data-otservbr-global/monster/constructs/shrieking_cry-stal.lua
 data-otservbr-global/monster/constructs/enraged_crystal_golem.lua
 data-otservbr-global/monster/constructs/biting_book.lua
+data-otservbr-global/raids/svargrond/barba_bittermor.xml
+data-otservbr-global/raids/svargrond/ghazbaran.xml
+data-otservbr-global/raids/svargrond/ice_golems.xml
+data-otservbr-global/raids/svargrond/barbarian.xml
+data-otservbr-global/raids/svargrond/hirintror.xml
+data-otservbr-global/raids/svargrond/ocyakao.xml
+data-otservbr-global/raids/svargrond/zushuka.xml
+data-otservbr-global/raids/abdendriel/warwolf.xml
+data-otservbr-global/raids/abdendriel/dragons.xml
+data-otservbr-global/raids/abdendriel/wasp_bear.xml

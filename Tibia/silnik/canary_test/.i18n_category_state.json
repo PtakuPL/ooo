@@ -104,6 +104,10 @@
     "dataroot": {
       "count": 0,
       "timestamp": 1765469390.1001503
+    },
+    "php": {
+      "count": 10,
+      "timestamp": 1765469406.3619926
     }
   },
   "consecutive_zeros": {
@@ -127,11 +131,13 @@
     "modules": 2,
     "startup": 2,
     "npclib": 2,
-    "dataroot": 2
+    "dataroot": 2,
+    "php": 0
   },
   "total_processed": {
     "npc": 40,
-    "scripts": 69
+    "scripts": 69,
+    "php": 15
   },
   "migrations_done": false
 }

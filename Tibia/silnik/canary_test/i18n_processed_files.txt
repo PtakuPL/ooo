@@ -338,3 +338,13 @@ html_copy/routes/api/v1/characters.php
 html_copy/routes/pages.php
 html_copy/routes/admin.php
 html_copy/admin/pages/accounts.php
+html_copy/admin/pages/clmd.php
+html_copy/admin/pages/data.php
+html_copy/admin/pages/notepad.php
+html_copy/admin/pages/mass_teleport.php
+html_copy/admin/pages/mailer.php
+html_copy/admin/pages/reports.php
+html_copy/admin/pages/modules/lastlogin.php
+html_copy/admin/pages/modules/web_status.php
+html_copy/admin/pages/modules/points.php
+html_copy/admin/pages/modules/balance.php

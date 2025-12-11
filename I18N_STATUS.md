@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 200, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 02:14:57 UTC  
+> **Aktualizacja:** 2025-12-11 02:14:59 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -83,15 +83,15 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 RAIDS                                  │
+│ Kategoria: 🎒 WORLD                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: raids                                          │
-│ [███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 147/1000 kluczy (15%)                                          │
+│ 📊 Ostatnia aktywność: world                                          │
+│ [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
+│ 0/1000 kluczy (0%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 0 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 02:14:57                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 02:14:59                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -113,6 +113,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `world` +0 kluczy @ 02:14:59
 - ⚡ `raids` +0 kluczy @ 02:14:57
 - 👹 `monsters` +0 kluczy @ 02:14:51
 - ⚡ `translation` +0 kluczy @ 02:14:49
@@ -299,7 +300,7 @@
 | quests | 0 | 0 | 0 | ⏳ Empty |
 | server | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
-| world | 0 | 0 | 0 | ⏳ Empty |
+| world | 0 | 0 | 2 | ⏭️ Skip 9m |
 
 ---
 
@@ -312,6 +313,7 @@
 | translation | 4m | 1x | Progresywny backoff |
 | monsters | 9m | 2x | Progresywny backoff |
 | raids | 9m | 2x | Progresywny backoff |
+| world | 9m | 2x | Progresywny backoff |
 
 ---
 
@@ -362,7 +364,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 02:14:57  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 02:14:59  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

@@ -3,7 +3,8 @@
     "npc": 1765419337.9990776,
     "scripts": 1765419370.563002,
     "monsters": 1765419377.8838763,
-    "raids": 1765419384.8873925
+    "raids": 1765419384.8873925,
+    "world": 1765419392.5446718
   },
   "last_processed": {
     "npc": {
@@ -21,13 +22,18 @@
     "raids": {
       "count": 0,
       "timestamp": 1765418784.887381
+    },
+    "world": {
+      "count": 0,
+      "timestamp": 1765418792.5446663
     }
   },
   "consecutive_zeros": {
     "npc": 2,
     "scripts": 2,
     "monsters": 2,
-    "raids": 2
+    "raids": 2,
+    "world": 2
   },
   "total_processed": {},
   "translation_sync": {},

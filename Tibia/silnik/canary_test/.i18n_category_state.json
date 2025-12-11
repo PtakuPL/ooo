@@ -130,7 +130,7 @@
   },
   "translation_sync": {
     "current_lang": "uz",
-    "current_category": "client.json",
+    "current_category": "libs.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -641,13 +641,14 @@
       },
       "uz": {
         "chatchannels": 8,
-        "total": 15493,
+        "total": 15514,
         "events": 5,
         "html": 1495,
         "items": 13749,
-        "client": 236
+        "client": 236,
+        "libs": 21
       }
     },
-    "last_sync": 1765414341.938358
+    "last_sync": 1765414356.0128512
   }
 }

@@ -4390,3 +4390,13 @@ data-otservbr-global/scripts/spells/monster/the_dreadorian_drown.lua
 data-otservbr-global/scripts/spells/monster/spitter_paralyze.lua
 data-otservbr-global/scripts/spells/monster/big_skill_reducer.lua
 data-otservbr-global/scripts/spells/monster/lizard_dragon_priest_summon.lua
+html_copy/system/libs/pot/OTS_Guilds_List.php
+html_copy/system/libs/pot/OTS_MapCoords.php
+html_copy/system/libs/pot/OTS_DB_MySQL.php
+html_copy/system/libs/pot/OTS_ItemType.php
+html_copy/system/libs/pot/OTS_Groups_List.php
+html_copy/system/libs/pot/OTS_RSA.php
+html_copy/system/libs/pot/E_OTS_NotAContainer.php
+html_copy/system/libs/pot/OTS_IPBans_List.php
+html_copy/system/libs/pot/OTS_Players_List.php
+html_copy/system/libs/pot/OTS_FileNode.php

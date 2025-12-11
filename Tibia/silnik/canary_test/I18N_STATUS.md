@@ -1,32 +1,34 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-10 19:38:15 UTC  
-> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
+> **Aktualizacja:** 2025-12-11 02:36:05 UTC  
+> **Worker:** i18n_worker_simple.sh (auto) | **Guardian:** aktywny | **Języki:** 53 | **Klucze EN:** 28 967
 
 ---
 
-## 🤖 AI Agent Integration
+## 🔀 Podział: Przygotowanie vs Tłumaczenia
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  Status zoptymalizowany dla AI agentów (Codex/Copilot/Claude)  │
-│  JSON data: i18n_file_status.json                              │
-│  Worker: i18n_worker_simple.sh                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
+### 📦 Przygotowanie (ekstrakcja/migracja)
+| Kategoria | Klucze EN | Stan |
+|-----------|-----------|------|
+| NPC | 5334 | ✅ |
+| Scripts | 385 | ✅ |
+| Monsters | 7341 | ✅ |
+| Items | 13749 | ✅ |
+| Spells | 65 | ✅ |
+| Raids | 147 | ✅ |
+| World/Modules/Libs/Events/Chatchannels/Startup | 16–1495 | ✅ |
+| PHP (html_copy) | 31 | ✅ (cache/twig wykluczone) |
+| Client (OTClient) | 236 | ✅ |
 
----
+### 🌍 Tłumaczenia (AUTO_TRANSLATE + SYNC)
+| Język | Tryb | Limit | Uwagi |
+|-------|------|-------|-------|
+| PL | AUTO + SYNC | 10/cykl | tłumaczy realnie |
+| RU | AUTO + SYNC | 10/cykl | ~2100 realnych tłumaczeń |
+| TR | AUTO + SYNC | 10/cykl | brak słownika → placeholdery |
+| Pozostałe 50 | SYNC | - | wyrównane do EN |
 
-## 📊 Globalny Postęp
-
-| Metryka | Wartość | Trend |
-|---------|---------|-------|
-| 📁 Plików przetworzonych | **26** | ↑ |
-| ⏭️ Plików wykluczonych | **711** | - |
-| 🔑 Kluczy i18n | **9810** | ↑ |
-| 🌍 Języków | **53** | ✓ |
-| ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#27** | - |
+> AUTO używa `translation_memory.json`; brak TM/słownika dla TR powoduje placeholdery `[TR] ...`. Jeśli dostarczymy glossary EN→TR, AUTO zacznie wypełniać realne tłumaczenia.
 
 ---
 

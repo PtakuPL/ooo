@@ -1,0 +1,11 @@
+# NPC: aruda
+
+**Plik:** `data-otservbr-global/npc/aruda.lua`
+**Data migracji:** 2025-12-11 03:38
+**Liczba tekstów:** 1
+
+## Klucze i18n
+
+| Klucz | Tekst EN |
+|-------|----------|
+| `npc.aruda.stdmod_1` | Hey there, up for a chat? |

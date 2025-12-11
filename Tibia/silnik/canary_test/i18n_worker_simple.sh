@@ -600,7 +600,7 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 {targets_comment}
 
 > **Aktualizacja:** {timestamp} UTC  
-> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** {langs_count}
+> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** {langs_count} | **Klucze EN:** {total_keys}
 
 ---
 
@@ -622,10 +622,25 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **{processed_count}** | ↑ |
 | ⏭️ Plików wykluczonych | **{excluded_count}** | - |
-| 🔑 Kluczy i18n | **{total_keys}** | ↑ |
+| 🔑 Kluczy i18n (EN) | **{total_keys}** | ↑ |
 | 🌍 Języków | **{langs_count}** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
 | 🔄 Cykl | **#{cycle_count}** | - |
+
+---
+
+## 🔀 Etap 1 vs Etap 2
+
+### 📦 Etap 1: Przygotowanie (SYNC kluczy EN → pliki językowe)
+- Języki z plikami przygotowanymi: {len(sync_stats)}/{langs_count}  
+- Ostatni sync: {(sync_current_lang.upper() + '/' + sync_current_cat) if sync_current_lang else '-'}
+
+### 🌍 Etap 2: Tłumaczenia (AUTO + TM)
+| Język | TM wpisy | Status |
+|-------|----------|--------|
+{auto_table}
+
+**Języki bez TM (AUTO → placeholdery):** {', '.join(no_tm_langs[:8]) + ('...' if len(no_tm_langs) > 8 else '') if no_tm_langs else 'brak (TM dostępny)'}
 
 ---
 
@@ -1527,11 +1542,33 @@ for i, text in enumerate(texts_farewell, 1):
             added += 1
             farewell_count += 1
 
+#==============================================================================
+# EKSTRAKCJA 4: npcConfig.voices z { text = "..." }
+#==============================================================================
+voices_count = 0
+
+# Pattern dla npcConfig.voices z text = "..."
+if 'npcConfig.voices' in content:
+    # Znajdź cały blok voices
+    voices_block_match = re.search(r'npcConfig\.voices\s*=\s*\{(.+?)\n\}', content, re.DOTALL)
+    if voices_block_match:
+        voices_block = voices_block_match.group(1)
+        # Wyciągnij wszystkie text = "..."
+        texts_voices = re.findall(r'text\s*=\s*"([^"]+)"', voices_block)
+        for i, text in enumerate(texts_voices, 1):
+            text_clean = ' '.join(text.split())
+            if len(text_clean) >= 3:
+                key = f"npc.$safe.voice_{i}"
+                if key not in data:
+                    data[key] = text_clean
+                    added += 1
+                    voices_count += 1
+
 # Zapisz
 with open(json_file, "w") as f:
     json.dump(data, f, indent=2, ensure_ascii=False)
 
-print(f"Dodano {added} kluczy (StdModule: {stdmod_count}, npcHandler:say: {npcsay_count}, greet: {greet_count}, farewell: {farewell_count})")
+print(f"Dodano {added} kluczy (StdModule: {stdmod_count}, npcHandler:say: {npcsay_count}, greet: {greet_count}, farewell: {farewell_count}, voices: {voices_count})")
 
 # Update status
 with open("$STATUS_FILE", "r") as f:
@@ -1542,7 +1579,8 @@ status["files"]["$file"]["stages"]["5_extraction_en"] = {
     "stdmod_keys": stdmod_count,
     "npcsay_keys": npcsay_count,
     "greet_keys": greet_count,
-    "farewell_keys": farewell_count
+    "farewell_keys": farewell_count,
+    "voices_keys": voices_count
 }
 with open("$STATUS_FILE", "w") as f:
     json.dump(status, f, indent=2)

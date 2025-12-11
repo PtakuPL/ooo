@@ -328,3 +328,13 @@ data-otservbr-global/monster/constructs/sandstone_scorpion.lua
 data-otservbr-global/monster/constructs/magma_crawler.lua
 data-otservbr-global/monster/constructs/animated_snowman.lua
 data-otservbr-global/monster/constructs/damaged_crystal_golem.lua
+data-otservbr-global/raids/thais/rats.xml
+data-otservbr-global/raids/thais/cyclops.xml
+data-otservbr-global/raids/thais/orcs.xml
+data-otservbr-global/raids/thais/wild_horses.xml
+data-otservbr-global/raids/rookgaard/rats.xml
+data-otservbr-global/raids/rookgaard/sheng.xml
+data-otservbr-global/raids/rookgaard/munster.xml
+data-otservbr-global/raids/rookgaard/rottie1.xml
+data-otservbr-global/raids/rookgaard/teleskor.xml
+data-otservbr-global/raids/rookgaard/rottie2.xml

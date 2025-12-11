@@ -179,10 +179,190 @@
       "overall_status": "completed",
       "completed_at": "2025-12-11T22:44:11.640736",
       "category": "monsters"
+    },
+    "data-otservbr-global/raids/thais/rats.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:44:40.744474",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/thais/cyclops.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:44:40.859634",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/thais/orcs.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:44:41.003561",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/thais/wild_horses.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:44:41.138729",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/rookgaard/rats.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:44:41.257074",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/rookgaard/sheng.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:44:41.393796",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/rookgaard/munster.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:44:41.578217",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/rookgaard/rottie1.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:44:41.920766",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/rookgaard/teleskor.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:44:42.299770",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/rookgaard/rottie2.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:44:42.632814",
+      "category": "raids"
     }
   },
   "global_stats": {
-    "files_completed": 10,
+    "files_completed": 20,
     "total_keys": 0
   }
 }

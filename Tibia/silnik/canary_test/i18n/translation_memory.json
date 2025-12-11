@@ -51937,6 +51937,98 @@
     "php.template.text2": {
       "src_hash": "e2d5d75ea4935cdabe58e68c1a4529ab",
       "text": "nav-item d-None d-sm-inline-block"
+    },
+    "client.createaccount.text2": {
+      "src_hash": "beead5d6ed66883b128a8585e8959c78",
+      "text": "ERROR: JSON Not found in the response"
+    },
+    "client.npctrade.text1": {
+      "src_hash": "090951e6353119d15cea658bfd978777",
+      "text": "List of items that you're able to Comprar"
+    },
+    "client.npctrade.text2": {
+      "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+      "text": "List of items that you're able to Vender"
+    },
+    "client.utils.text4": {
+      "src_hash": "a5d30c2fa7f7351769ddb417c4ee83e1",
+      "text": "Lalalala... you Now kNow the cult's hymn sung in Liberty Bay by heart. Not that hard, considering that it mainly consists of two Notes and repetitive lyrics."
+    },
+    "client.house.text1": {
+      "src_hash": "b87a17758ec61680b74aafa52c9e2e23",
+      "text": "MaJugadorSelector"
+    },
+    "client.charms1410.text1": {
+      "src_hash": "31597b577bc92187dd76bf8b78ad89ce",
+      "text": "MiNor Charm echoes\nEarned by unlocking or upgrading major charm and promotion your character"
+    },
+    "client.game_shop.text3": {
+      "src_hash": "70e9fac741af644fd3e5360831053f82",
+      "text": "Restores your character's hit points.\n\n- only usable by purchasing character\n- will be sent to your backpack\n- canNot be purchased by characters with protection zone block or battle sign\n- canNot"
+    },
+    "client.game_shop.text4": {
+      "src_hash": "4dc445c9e8f5c9bd83e9a32bf662e51c",
+      "text": "Refills your character's mana.\n\n- only usable by purchasing character\n- will be sent to your backpack\n- canNot be purchased by characters with protection zone block or battle sign\n- canNot be pur"
+    },
+    "client.market.text2": {
+      "src_hash": "5954d0da4aad8145900a38481505f95c",
+      "text": "Balance: <value> Oro"
+    },
+    "client.bottommenu.text5": {
+      "src_hash": "57cac65371fa5e2db2a82019609b5c08",
+      "text": "images/icon-Misiónionmark"
+    },
+    "client.tasks.text1": {
+      "src_hash": "1728c9ab0153ff21b281886f41288cae",
+      "text": "Please select Monstruo from Monstruo list."
+    },
+    "client.tasks.text2": {
+      "src_hash": "1728c9ab0153ff21b281886f41288cae",
+      "text": "Please select Monstruo from Monstruo list."
+    },
+    "client.tasks.text3": {
+      "src_hash": "1728c9ab0153ff21b281886f41288cae",
+      "text": "Please select Monstruo from Monstruo list."
+    },
+    "client.http.text2": {
+      "src_hash": "01fa7f139e0a66fd80ea634c1aab2b56",
+      "text": "HTTP.get is Not supported"
+    },
+    "client.http.text3": {
+      "src_hash": "5c70b6b7209678f29d7c2ff3a4c72ebe",
+      "text": "HTTP.getJSON is Not supported"
+    },
+    "client.http.text4": {
+      "src_hash": "7c6b05f8b2ef308c238f8a1161059748",
+      "text": "HTTP.post is Not supported"
+    },
+    "client.http.text5": {
+      "src_hash": "ba1e4388c5ade43ebba74328a75b792e",
+      "text": "HTTP.postJSON is Not supported"
+    },
+    "client.neededtranslations.text3": {
+      "src_hash": "090951e6353119d15cea658bfd978777",
+      "text": "List of items that you're able to Comprar"
+    },
+    "client.neededtranslations.text4": {
+      "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+      "text": "List of items that you're able to Vender"
+    },
+    "client.imbuing.text4": {
+      "src_hash": "fd9c5ad613abbde3df710701444e0f75",
+      "text": "Click here to carry out the selected imbuement. This will consume the required astral sources and Oro."
+    },
+    "client.game_questlog.text1": {
+      "src_hash": "910d89aefb3a5449196b4604a900bd5f",
+      "text": "Remove completed Misións // Automatically track new Misións // Automatically untrack completed Misións"
+    },
+    "client.game_rewardwall.text3": {
+      "src_hash": "508256e0c0905378d1ac497e92e29878",
+      "text": "Remember! You can always collect your daily reward for free by visiting a reward shrine!\n\nYou Currently own 3x Instant Reward Access. Do you really want to use one to claim your daily reward Now?"
+    },
+    "client.keybins.text4": {
+      "src_hash": "5969789bc00f068ce14d9bd7a558996d",
+      "text": "UnkNown chat mode"
     }
   },
   "pt": {

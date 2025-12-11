@@ -129,8 +129,8 @@
     "npc": 2
   },
   "translation_sync": {
-    "current_lang": "mk",
-    "current_category": "startup.json",
+    "current_lang": "sq",
+    "current_category": "chatchannels.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -545,8 +545,12 @@
         "scripts": 385,
         "spells": 15,
         "startup": 23
+      },
+      "sq": {
+        "chatchannels": 8,
+        "total": 8
       }
     },
-    "last_sync": 1765413334.7697861
+    "last_sync": 1765413340.5483344
   }
 }

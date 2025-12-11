@@ -17,13 +17,10 @@
     "client": 1765421717.940325,
     "sendtextmessage": 1765421731.9334419,
     "keywordhandler": 1765421739.860388,
-    "twig": 1765421748.5590813
+    "twig": 1765421748.5590813,
+    "npc": 1765421771.711708
   },
   "last_processed": {
-    "npc": {
-      "count": 32,
-      "timestamp": 1765420913.902986
-    },
     "scripts": {
       "count": 0,
       "timestamp": 1765420956.3123975
@@ -99,11 +96,15 @@
     "twig": {
       "count": 0,
       "timestamp": 1765421148.5590754
+    },
+    "npc": {
+      "count": 0,
+      "timestamp": 1765421171.711703
     }
   },
   "migrations_done": false,
   "consecutive_zeros": {
-    "npc": 0,
+    "npc": 2,
     "scripts": 2,
     "monsters": 2,
     "raids": 2,

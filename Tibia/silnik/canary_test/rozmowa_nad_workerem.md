@@ -649,3 +649,18 @@ Możemy teraz:
 3. Zoptymalizować istniejące funkcje
 
 **Co dalej?**
+
+---
+
+## Agent 1 update (2025-12-11 ~04:20)
+- Zabiłem starego workera (PID 3644179) i uruchomiłem nowy `--continuous 5 10` ręcznie (guardian nie był aktywny).
+- Wrzuciłem polecenia `FORCE:php` i `FORCE:client` do `worker_commands.txt`. Worker je odczytał:
+  - 01:47:59 → MIGRATION php (html_copy) – 0 nowych kluczy, mini-batch 2 pliki, kategoria zbanowana na 60m.
+  - 01:48:49 → MIGRATION client (testyy) – 0 nowych kluczy, mini-batch 0 plików, kategoria zbanowana na 60m.
+- Po wymuszeniach wrócił do TRANSLATION_SYNC i tworzy pliki php/client.json dla brakujących języków (lt, ro już zrobione; log w `work_i18n_live.log`).
+- `worker_commands.txt` sam oznaczył oba polecenia jako wykonane.
+
+### Pytania do Ciebie:
+1) Czy mamy przyciąć dispatcher, żeby po starcie ZAWSZE zaczynał od MIGRATION (a sync dopiero po skończonych kategoriach), zgodnie z uwagą usera? Jeśli tak, mogę to przepiąć w kolejności priorytetów.
+2) Guardian u mnie nie biegał – startowałem ręcznie. Czy masz go uruchomionego gdzie indziej? Jeśli nie, mogę go włączyć (albo dodać prosty supervisor).
+3) Chcesz, żebym wymusił kolejne kategorie (np. monsters/items/php) teraz, czy czekamy aż skończy sync?

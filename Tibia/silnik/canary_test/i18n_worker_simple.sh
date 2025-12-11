@@ -2560,12 +2560,25 @@ process_client_category() {
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
             
             # Wyciągnij stringi (pomiń tr( - już tłumaczone)
-            local strings=$(grep -oP '(?<!tr\()"[^"]{10,}"' "$file" 2>/dev/null | tr -d '"' | head -5)
+            # FILTRUJ: pomiń URLe, ścieżki, nazwy zmiennych, kod
+            local strings=$(grep -oP '(?<!tr\()"[^"]{10,}"' "$file" 2>/dev/null \
+                | tr -d '"' \
+                | grep -v '^/' \
+                | grep -v 'http' \
+                | grep -v '\.lua' \
+                | grep -v '\.otui' \
+                | grep -v '\.png' \
+                | grep -v '\.ogg' \
+                | grep -v '\.' \
+                | grep -v '%' \
+                | grep -v '_' \
+                | head -5)
             
             if [ -n "$strings" ]; then
                 local i=1
                 while IFS= read -r str; do
-                    if [ -n "$str" ] && [ ${#str} -gt 8 ]; then
+                    # Pomiń jeśli wygląda jak kod lub nazwa pliku
+                    if [ -n "$str" ] && [ ${#str} -gt 8 ] && [[ ! "$str" =~ ^[a-z]+[A-Z] ]] && [[ ! "$str" =~ ^[A-Z_]+$ ]]; then
                         python3 -c "
 import json
 try:

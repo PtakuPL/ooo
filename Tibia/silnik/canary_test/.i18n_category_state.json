@@ -1,5 +1,7 @@
 {
-  "skip_until": {},
+  "skip_until": {
+    "mounts": 1765469466.5320747
+  },
   "last_processed": {
     "npc": {
       "count": 148,
@@ -104,6 +106,10 @@
     "globalevents": {
       "count": 128,
       "timestamp": 1765468845.8500605
+    },
+    "mounts": {
+      "count": 0,
+      "timestamp": 1765468866.5320601
     }
   },
   "consecutive_zeros": {
@@ -113,7 +119,8 @@
     "talkactions": 0,
     "movements": 0,
     "creaturescripts": 0,
-    "globalevents": 0
+    "globalevents": 0,
+    "mounts": 2
   },
   "total_processed": {
     "npc": 1848,

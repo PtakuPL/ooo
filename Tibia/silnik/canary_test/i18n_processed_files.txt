@@ -484,3 +484,13 @@ html_copy/admin/tools/status.php
 html_copy/admin/tools/upload_image.php
 html_copy/admin/tools/phpinfo.php
 html_copy/admin/template/menus.php
+html_copy/system/templates/account.generate_new_recovery_key.html.twig
+html_copy/system/templates/buttons.view.html.twig
+html_copy/system/templates/account.change-info.html.twig
+html_copy/system/templates/install.installer.html.twig
+html_copy/system/templates/admin.logs.html.twig
+html_copy/system/templates/account.lost.form.html.twig
+html_copy/system/templates/guilds.back_button.html.twig
+html_copy/system/templates/admin.pages.form.html.twig
+html_copy/system/templates/serverinfo.html.twig
+html_copy/system/templates/commands.form.html.twig

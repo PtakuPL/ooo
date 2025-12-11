@@ -4345,41 +4345,41 @@ CATEGORIES = {
     },
     
     # === TESTYY/MODULES - OTClient Modules (priorytet 25) ===
-    "client_modules": {
+    "otclient_modules": {
         "dirs": ["testyy/modules"],
         "patterns": [r'"[^"]{10,}"', r"'[^']{10,}'", r'tr\s*\([^)]+\)'],
         "exclude_if": [],
-        "json": "client.json",
+        "json": "otclient_modules.json",
         "file_ext": [".lua", ".otui"],
         "priority": 25
     },
     
     # === TESTYY/MODS - OTClient Mods (priorytet 26) ===
-    "client_mods": {
+    "otclient_mods": {
         "dirs": ["testyy/mods"],
         "patterns": [r'"[^"]{10,}"', r"'[^']{10,}'"],
         "exclude_if": [],
-        "json": "client.json",
+        "json": "otclient_mods.json",
         "file_ext": [".lua", ".otui"],
         "priority": 26
     },
     
     # === TESTYY/DATA - OTClient Data (priorytet 27) ===
-    "client_data": {
+    "otclient_data": {
         "dirs": ["testyy/data"],
         "patterns": [r'"[^"]{10,}"', r"'[^']{10,}'"],
         "exclude_if": [],
-        "json": "client.json",
+        "json": "otclient_data.json",
         "file_ext": [".lua", ".otui", ".xml"],
         "priority": 27
     },
     
     # === TESTYY/SRC - OTClient C++ (priorytet 28) ===
-    "client_cpp": {
+    "otclient_src": {
         "dirs": ["testyy/src"],
         "patterns": [r'"[^"]{10,}"', r'pushString\s*\('],
         "exclude_if": [],
-        "json": "client_cpp.json",
+        "json": "otclient_src.json",
         "file_ext": [".cpp", ".hpp", ".h"],
         "priority": 28
     },

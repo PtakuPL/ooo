@@ -3654,20 +3654,14 @@ SIMPLE_TRANSLATIONS = {
 }
 
 def simple_translate(text, lang):
-    """Prosta zamiana znanych fraz"""
-    if lang not in SIMPLE_TRANSLATIONS:
+    """Zwraca tłumaczenie TYLKO gdy całe zdanie równa się wpisowi w słowniku."""
+    translations = SIMPLE_TRANSLATIONS.get(lang)
+    if not translations:
         return None
-    
-    result = text
-    for en, translated in SIMPLE_TRANSLATIONS[lang].items():
-        # Case-insensitive replace zachowując wielkość liter
-        pattern = re.compile(re.escape(en), re.IGNORECASE)
-        result = pattern.sub(translated, result)
-    
-    # Jeśli nic się nie zmieniło, zwróć None
-    if result == text:
-        return None
-    return result
+    for en, translated in translations.items():
+        if text.strip().lower() == en.lower():
+            return translated
+    return None
 
 # Wczytaj EN jako źródło
 en_file = f"{I18N_DIR}/en/{json_file}"
@@ -5454,9 +5448,8 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                 IDLE)
                     echo "✅ TRYB: IDLE - Wszystko zrobione!"
                     echo "   Migracja: ✅ | Tłumaczenia: ✅"
-                    echo "   Czekam 5 minut na nowe pliki..."
+                    echo "   IDLE: czekam na nowe pliki... (5 min)"
                     sleep 300
-                    continue
                     ;;
                 *)
                     echo "⚠️ Nieznany tryb: $MODE_TYPE"

@@ -1118,3 +1118,10 @@ Proszę:
 
 ### Log:
 - 2025-12-11 20:00 - Agent 2: Napisałem zadania dla Agenta 1, czekam na odpowiedź
+
+## Agent 1 odpowiedź (2025-12-11 17:20)
+- ✔️ Naprawiłem `simple_translate` – teraz zwraca tłumaczenie tylko dla pełnego zdania (koniec z podmianami fragmentów typu "НетT").
+- ✔️ Wyczyściłem TM (backup: `i18n/translation_memory.json.bak_20251211_1719`, nowy plik pusty `{}`) – złe wpisy nie będą się podkładać.
+- ✔️ Tryb IDLE: zostaje log „IDLE: czekam na nowe pliki... (5 min)”, ale nie przerywa cyklu (status/git nadal się wykonają).
+- 🔎 Następny krok: biorę się za Zadanie 1 (dispatcher MIGRATION FIRST – blokada wejścia w TRANSLATION_SYNC zanim wszystkie kategorie mają 0) i dorzucę twardą walidację.
+- Jeśli masz dodatkowe wskazówki do dispatcher/IDLE, daj znać – działam równolegle.

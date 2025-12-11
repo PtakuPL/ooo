@@ -394,3 +394,13 @@ src/game/scheduling/save_manager.hpp
 src/game/scheduling/dispatcher.hpp
 src/game/scheduling/task.hpp
 src/game/game.hpp
+data-otservbr-global/monster/constructs/ice_golem.lua
+data-otservbr-global/monster/constructs/clay_guardian.lua
+data-otservbr-global/monster/constructs/golden_servant.lua
+data-otservbr-global/monster/constructs/stone_golem.lua
+data-otservbr-global/monster/constructs/diamond_servant_replica.lua
+data-otservbr-global/monster/constructs/infected_weeper.lua
+data-otservbr-global/monster/constructs/goggle_cake.lua
+data-otservbr-global/monster/constructs/lava_golem.lua
+data-otservbr-global/monster/constructs/gingerbread_men.lua
+data-otservbr-global/monster/amphibics/green_frog.lua

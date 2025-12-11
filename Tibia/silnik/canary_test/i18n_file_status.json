@@ -1367,10 +1367,190 @@
       "overall_status": "completed",
       "completed_at": "2025-12-11T22:47:56.656399",
       "category": "weapons"
+    },
+    "data-otservbr-global/monster/constructs/ice_golem.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:54:48.855169",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/constructs/clay_guardian.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:54:49.005461",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/constructs/golden_servant.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:54:49.138613",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/constructs/stone_golem.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:54:49.262989",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/constructs/diamond_servant_replica.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:54:49.386204",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/constructs/infected_weeper.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:54:49.526262",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/constructs/goggle_cake.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:54:49.672638",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/constructs/lava_golem.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:54:49.801837",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/constructs/gingerbread_men.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:54:49.951680",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/amphibics/green_frog.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:54:50.104261",
+      "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 76,
+    "files_completed": 86,
     "total_keys": 0
   }
 }

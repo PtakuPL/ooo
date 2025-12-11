@@ -471,21 +471,31 @@ except:
 
 # ============ NOWE STATYSTYKI DLA ROZBUDOWANEGO GLOBALNY POSTĘP ============
 
-# 1. WSZYSTKIE PLIKI W PROJEKCIE
+# 1. WSZYSTKIE PLIKI W PROJEKCIE - PEŁNY SKAN
 all_project_files = 0
-all_lua_files = 0
-all_xml_files = 0
+files_by_type = {}
+scannable_extensions = ['.lua', '.xml', '.php', '.html', '.js', '.cpp', '.hpp', '.h', '.py', '.json', '.ts', '.css']
+
 for root, dirs, flist in os.walk('.'):
-    dirs[:] = [d for d in dirs if d not in ['vcpkg', 'build', '.git', 'node_modules', 'html_copy', 'oryginall']]
+    # Pomijaj foldery które nie są częścią projektu
+    dirs[:] = [d for d in dirs if d not in ['vcpkg', 'build', '.git', 'node_modules', 'html_copy', 'oryginall', '__pycache__', 'large_files_zip']]
     for fname in flist:
         all_project_files += 1
-        if fname.endswith('.lua'):
-            all_lua_files += 1
-        elif fname.endswith('.xml'):
-            all_xml_files += 1
+        ext = os.path.splitext(fname)[1].lower()
+        if ext:
+            files_by_type[ext] = files_by_type.get(ext, 0) + 1
 
-# 2. PLIKI DO SKANOWANIA (lua + xml w folderach projektu)
-scannable_files = all_lua_files + all_xml_files
+# 2. PLIKI DO SKANOWANIA (wszystkie z kodem/tekstami)
+scannable_files = sum(files_by_type.get(ext, 0) for ext in scannable_extensions)
+
+# Szczegóły per typ
+lua_files = files_by_type.get('.lua', 0)
+xml_files = files_by_type.get('.xml', 0)
+php_files = files_by_type.get('.php', 0)
+html_files = files_by_type.get('.html', 0)
+js_files = files_by_type.get('.js', 0)
+cpp_files = files_by_type.get('.cpp', 0) + files_by_type.get('.hpp', 0) + files_by_type.get('.h', 0)
+json_files_count = files_by_type.get('.json', 0)
 
 # 3. PRZESKANOWANE (z processed_files.txt)
 scanned_files = 0
@@ -495,22 +505,43 @@ try:
 except:
     pass
 
-# 4. ZMIGROWANE (pliki z kluczami > 0 w file_status)
-migrated_files = 0
-files_with_keys_count = 0
+# 4. ANALIZA STATUSÓW PLIKÓW
+files_migrated = 0       # Mają klucze i18n
+files_needs_migration = 0  # Trzeba dodać i18n
+files_clean = 0          # Czyste (bez tekstów do tłumaczenia)
+files_in_progress = 0    # W trakcie przetwarzania
+total_keys_extracted = 0
+
 for fpath, info in files.items():
+    status = info.get('overall_status', '')
     stages = info.get('stages', {})
-    extraction = stages.get('5_extraction_en', {})
-    if extraction.get('keys_added', 0) > 0:
-        migrated_files += 1
-        files_with_keys_count += extraction.get('keys_added', 0)
+    
+    if status == 'in_progress':
+        files_in_progress += 1
+    elif status == 'completed':
+        extraction = stages.get('5_extraction_en', {})
+        keys = extraction.get('keys_added', 0)
+        if keys > 0:
+            files_migrated += 1
+            total_keys_extracted += keys
+        else:
+            # Sprawdź czy plik miał teksty do migracji
+            analysis = stages.get('2_analysis', {})
+            if analysis.get('needs_migration', False):
+                files_needs_migration += 1
+            else:
+                files_clean += 1
 
-# 5. DO ZMIGROWANIA (przeskanowane ale bez kluczy - może mieć teksty)
-to_migrate_files = scanned_files - migrated_files
+# 5. DO ZROBIENIA
+files_not_scanned = scannable_files - scanned_files
+files_to_migrate = files_needs_migration
 
-# 6. JĘZYKI Z TŁUMACZENIAMI (nie tylko [EN] placeholdery)
+# 6. JĘZYKI - szczegółowa analiza
 translated_langs = 0
-prepared_langs = 0  # Języki z przygotowanymi plikami ([EN] prefix)
+prepared_langs = 0
+langs_with_real_translations = []
+langs_with_placeholders_only = []
+
 for lang_dir in os.listdir(I18N_DIR):
     lang_path = os.path.join(I18N_DIR, lang_dir)
     if not os.path.isdir(lang_path) or lang_dir == 'en':
@@ -518,6 +549,8 @@ for lang_dir in os.listdir(I18N_DIR):
     
     has_json = False
     has_real_translations = False
+    total_keys_in_lang = 0
+    translated_keys_in_lang = 0
     
     for jf in os.listdir(lang_path):
         if jf.endswith('.json'):
@@ -525,26 +558,26 @@ for lang_dir in os.listdir(I18N_DIR):
             try:
                 with open(os.path.join(lang_path, jf)) as f:
                     data = json.load(f)
+                    total_keys_in_lang += len(data)
                     for v in data.values():
                         if isinstance(v, str) and not v.startswith('[EN]') and v.strip():
+                            translated_keys_in_lang += 1
                             has_real_translations = True
-                            break
             except:
                 pass
-        if has_real_translations:
-            break
     
     if has_json:
         prepared_langs += 1
-    if has_real_translations:
-        translated_langs += 1
+        if has_real_translations:
+            translated_langs += 1
+            langs_with_real_translations.append(lang_dir)
+        else:
+            langs_with_placeholders_only.append(lang_dir)
 
-# 7. ROZPOCZĘTE PRACE (pliki w statusie "in_progress")
-in_progress_files = len([f for f, info in files.items() if info.get('overall_status') == 'in_progress'])
-
-# Procenty
+# 7. PROCENTY
 scanned_pct = round(scanned_files / scannable_files * 100, 1) if scannable_files > 0 else 0
-migrated_pct = round(migrated_files / scanned_files * 100, 1) if scanned_files > 0 else 0
+migrated_pct = round(files_migrated / scanned_files * 100, 1) if scanned_files > 0 else 0
+translated_pct = round(translated_langs / langs_count * 100, 1) if langs_count > 0 else 0
 
 # Ostatnio ukończone NPC
 recent_completed = []
@@ -758,39 +791,57 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 ## 📊 Globalny Postęp
 
-### 📁 Pliki Projektu
+### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
-| 📂 Wszystkie pliki | **{all_project_files:,}** | 100% | cały projekt |
-| 📜 Pliki do skanowania | **{scannable_files:,}** | {round(scannable_files/all_project_files*100, 1)}% | .lua + .xml |
-| 🔍 Przeskanowane | **{scanned_files:,}** | {scanned_pct}% | worker history |
-| ✅ Zmigrowane (z kluczami) | **{migrated_files}** | {migrated_pct}% | mają klucze i18n |
-| ⏳ Do zmigrowania | **{to_migrate_files}** | - | bez kluczy jeszcze |
-| 🔄 W trakcie | **{in_progress_files}** | - | obecnie przetwarzane |
+| 📂 **Wszystkie pliki** | **{all_project_files:,}** | 100% | cały projekt |
+| 📜 Do skanowania (kod) | **{scannable_files:,}** | {round(scannable_files/all_project_files*100, 1)}% | pliki z kodem/tekstami |
+| 🔍 **Przeskanowane** | **{scanned_files:,}** | **{scanned_pct}%** | historia workera |
+| ⏳ Nie przeskanowane | **{files_not_scanned:,}** | {round(files_not_scanned/scannable_files*100, 1) if scannable_files else 0}% | czekają na skan |
+
+### 📊 Podział plików do skanowania
+| Typ | Ilość | Info |
+|-----|-------|------|
+| 📜 Lua (.lua) | {lua_files:,} | NPC, scripts, libs |
+| 📄 XML (.xml) | {xml_files:,} | items, monsters, spells |
+| 🐘 PHP (.php) | {php_files:,} | backend AAC |
+| 🌐 HTML (.html) | {html_files:,} | widoki |
+| 📦 JavaScript (.js) | {js_files:,} | frontend |
+| ⚙️ C++ (.cpp/.hpp/.h) | {cpp_files:,} | silnik serwera |
+| 📋 JSON (.json) | {json_files_count:,} | konfiguracje |
+
+### ✅ Status Migracji
+| Status | Ilość | Procent | Opis |
+|--------|-------|---------|------|
+| ✅ Zmigrowane | **{files_migrated}** | {migrated_pct}% | mają klucze i18n |
+| 🔄 Wymaga migracji | **{files_needs_migration}** | - | trzeba dodać i18n |
+| ⚪ Czyste | **{files_clean}** | - | bez tekstów |
+| 🔧 W trakcie | **{files_in_progress}** | - | obecnie przetwarzane |
 
 ### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔑 Klucze EN (źródłowe) | **{total_keys:,}** | wszystkie kategorie |
-| 📊 NPC | {npc_keys:,} | główna kategoria |
+| 🔑 **Klucze EN (źródłowe)** | **{total_keys:,}** | wszystkie kategorie |
+| 📊 NPC | {npc_keys:,} | dialogi NPC |
 | 📊 Items | {items_keys:,} | przedmioty |
 | 📊 Monsters | {monsters_keys:,} | potwory |
-| 📊 Pozostałe | {total_keys - npc_keys - items_keys - monsters_keys:,} | scripts, spells, etc. |
+| 📊 HTML | {html_keys:,} | widoki web |
+| 📊 Pozostałe | {total_keys - npc_keys - items_keys - monsters_keys - html_keys:,} | scripts, spells, etc. |
 
 ### 🌍 Języki i Tłumaczenia
-| Metryka | Wartość | Info |
-|---------|---------|------|
-| 🌐 Wszystkie języki | **{langs_count}** | foldery w i18n/ |
-| 📋 Przygotowane ([EN]) | **{prepared_langs}** | mają pliki JSON |
-| ✅ Przetłumaczone | **{translated_langs}** | mają prawdziwe tłumaczenia |
-| ⏳ Do tłumaczenia | **{prepared_langs - translated_langs}** | tylko placeholdery |
+| Metryka | Wartość | Procent | Info |
+|---------|---------|---------|------|
+| 🌐 Wszystkie języki | **{langs_count}** | 100% | foldery w i18n/ |
+| 📋 Przygotowane | **{prepared_langs}** | {round(prepared_langs/langs_count*100) if langs_count else 0}% | mają pliki [EN] |
+| ✅ **Przetłumaczone** | **{translated_langs}** | **{translated_pct}%** | prawdziwe tłumaczenia |
+| ⏳ Do tłumaczenia | **{prepared_langs - translated_langs}** | - | tylko placeholdery |
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
 | 🔄 Cykl aktualny | **#{cycle_count}** | od uruchomienia |
+| 🔑 Kluczy wyekstrahowanych | **{total_keys_extracted:,}** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
-| 🚀 Rozpoczętych prac | **{in_progress_files}** | pliki in_progress |
 
 ---
 

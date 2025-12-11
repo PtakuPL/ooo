@@ -13751,6 +13751,650 @@
     "channel.help.name": {
       "src_hash": "6a26f548831e6a8c26bfbbd9f6ec61e0",
       "text": "Помощь"
+    },
+    "html.statistics.html.text2": {
+      "src_hash": "02ddc0097b6f586d69b0c078107a1c9d",
+      "text": "{{ count.total_Игрокs }}"
+    },
+    "html.statistics.html.text3": {
+      "src_hash": "1399b66db0860c109e60f3866bf3d0df",
+      "text": "{{ count.total_Монстрs }}"
+    },
+    "web.tpl.guilds.manager.h2_1": {
+      "src_hash": "c832c0ef0315430a558b56bb96923880",
+      "text": "Добро пожаловать to guild manager!"
+    },
+    "web.tpl.monsters.th_8": {
+      "src_hash": "f460cdc8aef294faf9dbaa2ed67200e0",
+      "text": "Монстрs"
+    },
+    "web.tpl.monsters.td_9": {
+      "src_hash": "3f7037784223e6bdcf2f2a3534cea3b9",
+      "text": "Нет Монстрs on the server."
+    },
+    "web.tpl.forum.move_thread.b_1": {
+      "src_hash": "f89e73354656130dbb4f50fe616737d9",
+      "text": "Move thread to aНетther board"
+    },
+    "web.tpl.admin.news.table.th_3": {
+      "src_hash": "636da1d35e805b00eae0fcd8333f9234",
+      "text": "Игрок"
+    },
+    "web.tpl.online.set_3": {
+      "src_hash": "e2a763fb8a11c036ee99546540923c45",
+      "text": "Игрокs Online"
+    },
+    "web.tpl.online.b_3": {
+      "src_hash": "e3d9d6da977f5c0361974b6814d4026e",
+      "text": "Игрокs Online:"
+    },
+    "web.tpl.guilds.view.td_6": {
+      "src_hash": "b9a890e0f9d799d32dcd879c9c3ef65a",
+      "text": "Нет invited characters found."
+    },
+    "web.tpl.guilds.delete_invite.set_1": {
+      "src_hash": "43a0de7b42ae4fcbbb7c7d03b0b06c3c",
+      "text": "Delete Игрок invitation"
+    },
+    "web.tpl.guilds.delete_invite.b_1": {
+      "src_hash": "386d07a150c3bb2ac005141f09f815a2",
+      "text": "' ~ Игрок_name ~ '"
+    },
+    "web.tpl.guilds.kick_player.set_1": {
+      "src_hash": "73834873aab320a00574f5329520f3df",
+      "text": "Kick Игрок"
+    },
+    "web.tpl.guilds.kick_player.b_1": {
+      "src_hash": "386d07a150c3bb2ac005141f09f815a2",
+      "text": "' ~ Игрок_name ~ '"
+    },
+    "web.tpl.account.welcome_mail.h3_1": {
+      "src_hash": "2e459a51ca4e81bcb29400a766ddd2f5",
+      "text": "Dear Игрок,"
+    },
+    "web.tpl.admin.notepad.label_1": {
+      "src_hash": "b364b1c0197ec5b5da68b226bca230ae",
+      "text": "This is your personal Нетtepad. Be sure to save it each time you modify something."
+    },
+    "web.tpl.faq.form.td_1": {
+      "src_hash": "41e94aa2ea70937dbbcc787d8d5f1a2a",
+      "text": "Заданиеion:"
+    },
+    "web.tpl.characters.b_16": {
+      "src_hash": "e34f8da975d37162e184369dc7aca213",
+      "text": "Заданиеs"
+    },
+    "web.tpl.balance.th_2": {
+      "src_hash": "636da1d35e805b00eae0fcd8333f9234",
+      "text": "Игрок"
+    },
+    "web.tpl.lastlogin.th_2": {
+      "src_hash": "636da1d35e805b00eae0fcd8333f9234",
+      "text": "Игрок"
+    },
+    "html.index.nginx_debian.text1": {
+      "src_hash": "33e8b6d12ed3c1ef948b59b9b17ccc83",
+      "text": "Спасибо for using nginx."
+    },
+    "html.forum.add_board.html.text2": {
+      "src_hash": "2b5f514f1184c8c1646262fb4151cd13",
+      "text": "{% if description is Нетt null %}{{ description }}{% endif %}"
+    },
+    "html.admin.news.form.html.text2": {
+      "src_hash": "328c88ac58933a36ea89909aaf41622d",
+      "text": "{% if article_text is Нетt empty %}{{ article_text }}{% endif %}"
+    },
+    "html.admin.news.form.html.text3": {
+      "src_hash": "b86fdaf30db588a7f0a5b2ce0db9bd11",
+      "text": "{{ Игрок.getName() }}"
+    },
+    "html.admin.news.form.html.text5": {
+      "src_hash": "b86fdaf30db588a7f0a5b2ce0db9bd11",
+      "text": "{{ Игрок.getName() }}"
+    },
+    "html.highscores.html.text1": {
+      "src_hash": "7359f4e61100d98840922377c907af27",
+      "text": "Ranking for {{ skillName }}{% if vocation is Нетt null %} ({{ vocation }}){% endif %} on {{ config.lua.serverName }}"
+    },
+    "html.highscores.html.text3": {
+      "src_hash": "84fab591d1c534c2a7e5ba8373df2e95",
+      "text": "{{ Игрок.flag|raw }}"
+    },
+    "html.highscores.html.text4": {
+      "src_hash": "cb891de9bffc8f87d775b38c32c9d451",
+      "text": "{{ Игрок.outfit|raw }}"
+    },
+    "html.highscores.html.text5": {
+      "src_hash": "7163361eed84c2c76f7dd6018a2a9d19",
+      "text": " 0 %}green{% else %}red{% endif %}\"{% endif %}{{ Игрок.name }}"
+    },
+    "html.monster.html.text1": {
+      "src_hash": "eabb742a801164e56741d824e5e7b0a6",
+      "text": " {{ Монстр.health }}"
+    },
+    "html.monster.html.text2": {
+      "src_hash": "e20b25819f1a2bcdac6036e0150810c5",
+      "text": " {{ (Монстр.summonable) ? Монстр.mana ~ ' mana' : 'Impossible' }}"
+    },
+    "html.monster.html.text3": {
+      "src_hash": "00a8e0605e67a39e998495cd532a1152",
+      "text": " {{ Монстр.armor }}"
+    },
+    "html.monster.html.text5": {
+      "src_hash": "b401f6dcb9d156a2becbedb9684f39e7",
+      "text": "{{ getМонстрLink(summon.name, true)|raw }}"
+    },
+    "html.account.characters.change_sex.html.text2": {
+      "src_hash": "b86fdaf30db588a7f0a5b2ce0db9bd11",
+      "text": "{{ Игрок.getName() }}"
+    },
+    "html.admin_bar.html.text2": {
+      "src_hash": "095fba6da329550a6653d84a56fc0af0",
+      "text": "Привет, {{ username }}"
+    },
+    "html.guilds.manager.html.text1": {
+      "src_hash": "c832c0ef0315430a558b56bb96923880",
+      "text": "Добро пожаловать to guild manager!"
+    },
+    "html.account.login.html.text1": {
+      "src_hash": "fb72ac21326599da91d56df37cba4acf",
+      "text": " if you do Нетt have one yet."
+    },
+    "html.commands.form.html.text2": {
+      "src_hash": "2b5f514f1184c8c1646262fb4151cd13",
+      "text": "{% if description is Нетt null %}{{ description }}{% endif %}"
+    },
+    "html.monsters.html.text1": {
+      "src_hash": "0175e9f12bcea4e366650e12f2be0191",
+      "text": "{{ getМонстрLink(Монстр.name, true)|raw }}"
+    },
+    "html.monsters.html.text2": {
+      "src_hash": "c3a2a052f7b8243bb94a2f85ce8359b0",
+      "text": "{{ (Монстр.rewardboss) ? 'Да' : '---' }}"
+    },
+    "html.monsters.html.text3": {
+      "src_hash": "e4e486d0aa95211e117e79a656806dcb",
+      "text": "{{ Монстр.health|number_format(0, '.', ',') }}"
+    },
+    "html.monsters.html.text4": {
+      "src_hash": "1b30c91b8ff0a7022e6d5e0fb66b24dc",
+      "text": "{{ Монстр.exp|number_format(0, '.', ',') }}"
+    },
+    "html.monsters.html.text5": {
+      "src_hash": "a7ec8a6350f59926fcf00b75b830ea01",
+      "text": "{{ (Монстр.convinceable) ? Монстр.mana : '---' }} "
+    },
+    "html.account.management.html.text1": {
+      "src_hash": "908e85926a5628840a9e384dd2913c10",
+      "text": "Добро пожаловать to your account page, {{ account }}"
+    },
+    "html.account.management.html.text5": {
+      "src_hash": "17f74459883f3df522ddea5eca78fac6",
+      "text": "{{ \"Нетw\"|date(\"j F Y, G:i:s\") }}"
+    },
+    "html.changelog.html.text2": {
+      "src_hash": "542d577daa8b1d854c0547a9fcf7c693",
+      "text": "There are Нет changelogs for the moment."
+    },
+    "html.account.redirect.html.text1": {
+      "src_hash": "822f18b7b99bc9f5cbb5b29ab8fdca6f",
+      "text": " if you are Нетt returned automatically."
+    },
+    "html.forum.move_thread.html.text1": {
+      "src_hash": "f89e73354656130dbb4f50fe616737d9",
+      "text": "Move thread to aНетther board"
+    },
+    "html.account.characters.change_name.html.text2": {
+      "src_hash": "b86fdaf30db588a7f0a5b2ce0db9bd11",
+      "text": "{{ Игрок.getName() }}"
+    },
+    "html.admin.data.html.text1": {
+      "src_hash": "9699ead08661847b510c6c106f7e4640",
+      "text": "Clicking the button will reload server data (items, Монстрs, npcs, spells, towns, weapons)."
+    },
+    "html.forum.new_thread.html.text1": {
+      "src_hash": "b04acb10d1fc00d4c1e3833046a804ee",
+      "text": "[Игрок]Nick[/Игрок]"
+    },
+    "html.forum.new_thread.html.text4": {
+      "src_hash": "cfb5db318ef2660d2824ce2ac7f643a2",
+      "text": ";) , :) , :D , :( , :rolleДа:"
+    },
+    "html.houses.view.html.text2": {
+      "src_hash": "d2026f9e861fbdef826a14bb68b15414",
+      "text": "{{ houseRent }} Золото"
+    },
+    "html.admin.news.table.html.text2": {
+      "src_hash": "3efc420d63cabf39ad6f4a58a8582bb8",
+      "text": "{{ news.Игрок_name }}"
+    },
+    "html.faq.html.text1": {
+      "src_hash": "18169db7378db35080de83e739cb42a5",
+      "text": "{{ faq.Заданиеion|raw }}"
+    },
+    "html.admin.changelog.html.text5": {
+      "src_hash": "542d577daa8b1d854c0547a9fcf7c693",
+      "text": "There are Нет changelogs for the moment."
+    },
+    "html.online.html.text1": {
+      "src_hash": "a268ccdf28b137e1b6e472c9fcd8560e",
+      "text": "*Нетte: Online List is updated every {{ onlineTTL  1 ? ' ' ~ onlineTTL : '' }} minute{{ onlineTTL  1 ? 's' : '' }}."
+    },
+    "html.online.html.text4": {
+      "src_hash": "0d8480b557f6466387c7a67c780c4e1c",
+      "text": "{% if Нетt status.online %}Offline{% else %}Online{% endif %}"
+    },
+    "html.online.html.text5": {
+      "src_hash": "c45ac86715b0b00cf07973f00def5311",
+      "text": "{{ status.Игрокs }}"
+    },
+    "html.guilds.view.html.text4": {
+      "src_hash": "74c95d0df9ba11f40529474df99ffecd",
+      "text": "{{ Игрок.getVocationName() }}"
+    },
+    "html.guilds.view.html.text5": {
+      "src_hash": "86afbc4c7773198e6eaab9bd5e0db089",
+      "text": "{{ Игрок.getLevel() }}"
+    },
+    "html.forum.new_post.html.text1": {
+      "src_hash": "b04acb10d1fc00d4c1e3833046a804ee",
+      "text": "[Игрок]Nick[/Игрок]"
+    },
+    "html.forum.new_post.html.text4": {
+      "src_hash": "cfb5db318ef2660d2824ce2ac7f643a2",
+      "text": ";) , :) , :D , :( , :rolleДа:"
+    },
+    "html.bans.html.text1": {
+      "src_hash": "8706fed9fa54545b73e6620c25626170",
+      "text": "{{ ban.Игрок|raw }}"
+    },
+    "html.account.characters.change_comment.html.text3": {
+      "src_hash": "60bdf7541ce9b9cf0a5bae6af8920875",
+      "text": "{{ Игрок.comment|raw }}"
+    },
+    "html.admin.notepad.html.text1": {
+      "src_hash": "b364b1c0197ec5b5da68b226bca230ae",
+      "text": "This is your personal Нетtepad. Be sure to save it each time you modify something."
+    },
+    "html.admin.changelog.form.html.text2": {
+      "src_hash": "b86fdaf30db588a7f0a5b2ce0db9bd11",
+      "text": "{{ Игрок.getName() }}"
+    },
+    "html.faq.form.html.text2": {
+      "src_hash": "65fb4a84066fb63b987bf09f7872c923",
+      "text": "{% if answer is Нетt null %}{{ answer }}{% endif %}"
+    },
+    "html.characters.html.text2": {
+      "src_hash": "b86fdaf30db588a7f0a5b2ce0db9bd11",
+      "text": "{{ Игрок.getName() }}"
+    },
+    "html.characters.html.text4": {
+      "src_hash": "86afbc4c7773198e6eaab9bd5e0db089",
+      "text": "{{ Игрок.getLevel() }}"
+    },
+    "html.characters.html.text5": {
+      "src_hash": "e8e07097b25e0b8a7355eb5db2ecf446",
+      "text": "{{ Игрок.getExperience() }}"
+    },
+    "html.houses.html.text1": {
+      "src_hash": "f8c970d678a855d8e5800928dec20b5a",
+      "text": "Available {{ houseType }}{% if townName is Нетt empty %} in {{ townName }}{% endif %} on "
+    },
+    "html.houses.html.text3": {
+      "src_hash": "f064fb41a898200ade3f9d816526ce3a",
+      "text": "Нет {{ houseType }} with specified criterias."
+    },
+    "html.install.welcome.html.text1": {
+      "src_hash": "dbb8c764534999402a5d40b35e805045",
+      "text": "{{ locale.step_Добро пожаловать_desc }}:"
+    },
+    "html.forum.show_thread.html.text3": {
+      "src_hash": "cc3fd82c4bb57aa9a21e77b2a60af843",
+      "text": "{{ post.Игрок_link|raw }}"
+    },
+    "html.admin.pages.html.text1": {
+      "src_hash": "5dc22ff85db3c8e680e9783216696df9",
+      "text": "{% if page.php %}Да{% else %}Нет{% endif %}"
+    },
+    "html.forum.edit_post.html.text1": {
+      "src_hash": "b04acb10d1fc00d4c1e3833046a804ee",
+      "text": "[Игрок]Nick[/Игрок]"
+    },
+    "html.forum.edit_post.html.text4": {
+      "src_hash": "cfb5db318ef2660d2824ce2ac7f643a2",
+      "text": ";) , :) , :D , :( , :rolleДа:"
+    },
+    "html.admin.statistics.html.text2": {
+      "src_hash": "02ddc0097b6f586d69b0c078107a1c9d",
+      "text": "{{ count.total_Игрокs }}"
+    },
+    "html.gallery.form.html.text2": {
+      "src_hash": "30ad1f4dfa39df7c6c26ff0b991121e3",
+      "text": "{% if comment is Нетt null %}{{ comment }}{% endif %}"
+    },
+    "html.account.characters.create.html.text3": {
+      "src_hash": "dbd0ae228c7a3200d464b29ef7631cd3",
+      "text": "{% if Нетt save or errors.name is defined %}Please enter your character name.{% endif %}"
+    },
+    "html.27_commands.text2": {
+      "src_hash": "e2dc6724e6cc2726476788aec2581bd8",
+      "text": "Купить house you are looking at"
+    },
+    "html.integration.text2": {
+      "src_hash": "cc8c50623181a04239d455e856126f7e",
+      "text": "We are delighted to Добро пожаловать you to the annual "
+    },
+    "html.index.text3": {
+      "src_hash": "d4544e4764d618b3dafaf0f49f0b3892",
+      "text": "Edit your toolbar Нетw!"
+    },
+    "html.base.html.text1": {
+      "src_hash": "848fc2b0b771ee8bfb2fbe9c616602cc",
+      "text": "{{ admin.Игрок.name }}"
+    },
+    "html.base.html.text2": {
+      "src_hash": "222f5d17feaa091d96483a73a9494863",
+      "text": "{{ admin.Игрок.group }}"
+    },
+    "html.view.html.text3": {
+      "src_hash": "304491565334a4e6e0c4c4a9c9ade444",
+      "text": "{{ Заданиеion.Заданиеion }}"
+    },
+    "html.view.html.text4": {
+      "src_hash": "e38600ccd42acf1199f8f918ccbea49e",
+      "text": "{{ Заданиеion.description }}"
+    },
+    "html.paymentsummary.html.text1": {
+      "src_hash": "1343c2875cd3e16b84d22c4b59756fca",
+      "text": "Спасибо for your order. After clicking on \"Next\" you will be redirected to BoaCompra in order to carry out the payment. Please keep in mind that depending on the selected payment method your order m"
+    },
+    "html.submitted.html.text1": {
+      "src_hash": "40fedd8a820f444077ab95f9de8d281c",
+      "text": "Спасибо for your vote."
+    },
+    "html.housebid.html.text2": {
+      "src_hash": "44b38f4fbe080b57b0c1cf97d76057f4",
+      "text": "There is Нет bid so far."
+    },
+    "html.registration_confirm.html.text2": {
+      "src_hash": "e8e6803f60470bf0405cb1bfca80eaec",
+      "text": "Store it at a safe place! Do Нетt save it on your computer!"
+    },
+    "html.registration_confirm.html.text3": {
+      "src_hash": "14dc079d95cfa1beaad02a8b403bacb2",
+      "text": "You will Нетt receive an email containing this recovery key."
+    },
+    "html.registration_confirm.html.text4": {
+      "src_hash": "9a2e3b4562fe35f9a301bf3ba746f885",
+      "text": "If you lose your recovery key, you can reЗадание a new one for a small fee at the Lost Account Interface."
+    },
+    "html.createaccount.html.text5": {
+      "src_hash": "9428ed861c69496ffaea3851975df6bf",
+      "text": "The password must Нетt contain invalid letters!"
+    },
+    "html.characterdelete.html.text2": {
+      "src_hash": "81b1efaa654bcb9d4cfd6720d983e753",
+      "text": "After this time the character is deleted for good and canНетt be restored anymore!"
+    },
+    "html.changemain.html.text3": {
+      "src_hash": "4168efcd4001208913925faf008d51a3",
+      "text": "{{ Игрок.name }} (Level: {{ Игрок.level }} Vocation: {{ Игрок.vocation }})"
+    },
+    "html.authentication.html.text4": {
+      "src_hash": "8c8405f6e288183044acae4c78fec0b1",
+      "text": "the device with the authenticator app does Нетt work anymore"
+    },
+    "html.lostaccount.html.text1": {
+      "src_hash": "8455a2572363a7488d07df2c49e49337",
+      "text": "Добро пожаловать to the Lost Account Interface!"
+    },
+    "html.lostaccount.html.text2": {
+      "src_hash": "731a4ae2c3c62e244074743f80f7c3d1",
+      "text": "If you have lost access to your account, this interface can Помощь you. Of course, you need to prove that your claim to the account is justified. Enter the reЗаданиеed data and follow the instructions car"
+    },
+    "html.lostaccount_first.html.text2": {
+      "src_hash": "037f076f39fc2b35b3180517ad601d43",
+      "text": "The Lost Account Interface can Помощь you to solve all problems listed below. Please select your problem and click on \"Submit\"."
+    },
+    "html.characteredit.html.text3": {
+      "src_hash": "fb09b28613c73832967d6e374d13bf40",
+      "text": "If you do Нетt want to specify a certain field, just leave it blank."
+    },
+    "html.characteredit.html.text4": {
+      "src_hash": "8bde4cc35c5ab05c0a65ff17e33ba2e8",
+      "text": "{{ Игрок.world.name }}"
+    },
+    "html.characteredit.html.text5": {
+      "src_hash": "272a305effc8f1a41ff34f9b753d8270",
+      "text": "{{ Игрок.guild.rank_name }} of the "
+    },
+    "html.worlds.html.text1": {
+      "src_hash": "3be5f8c3bceaaec0afc449134b7bd368",
+      "text": "{{ worlds.Игрокs_online }}"
+    },
+    "html.rules.html.text1": {
+      "src_hash": "8e3efe368832870d76462f0e2977b9d8",
+      "text": "All Игрокs have to respect the following code of conduct, so-called \"Tibia Rules\"."
+    },
+    "html.rules.html.text2": {
+      "src_hash": "88e74d691d3c2e8a0ebb2333320fd11b",
+      "text": "Tibia is an online role-playing game in which thousands of Игрокs from all over the world meet everyday. In order to ensure that the game is fun for everyone, CipSoft expects all Игрокs to behave in"
+    },
+    "html.downloads.html.text3": {
+      "src_hash": "cecd8033e8872784e1f3ae8af85fb96c",
+      "text": "Graphics: 128MB; if DirectX 9c or OpenGL 2.1 are Нетt supported, only software renderer mode is available (Нет light effects)"
+    },
+    "html.communityboards.html.text2": {
+      "src_hash": "7bb2b3596496bcdf5f2e0e51308a3c00",
+      "text": "Добро пожаловать back to the {{ title }} Forum!"
+    },
+    "html.boards.html.text2": {
+      "src_hash": "9037acc9743d34e2ee11300c13e2a22e",
+      "text": "Добро пожаловать back to the {{ constant('SITE_NAME') }} Forum!"
+    },
+    "html.boards.html.text3": {
+      "src_hash": "22115a3e8b272abf3835cc614c610e93",
+      "text": "{{ topic.Игрок_id }}"
+    },
+    "html.resignleadership.html.text1": {
+      "src_hash": "ac9b621702ec5311848a3135d008f4e1",
+      "text": "{{ member.Игрок_name }}"
+    },
+    "html.editmembers.html.text1": {
+      "src_hash": "fe9fb5a63c2a35e36b0406e435a63950",
+      "text": "{{ member.Игрок_name }} ({{ member.rank_name }})"
+    },
+    "html.activitylog.html.text1": {
+      "src_hash": "8b5468b77fb675ec8878352398ec888f",
+      "text": "Нетv 28 2022, 14:10:18"
+    },
+    "html.activitylog.html.text3": {
+      "src_hash": "8b5468b77fb675ec8878352398ec888f",
+      "text": "Нетv 28 2022, 14:10:18"
+    },
+    "html.activitylog.html.text5": {
+      "src_hash": "8b5468b77fb675ec8878352398ec888f",
+      "text": "Нетv 28 2022, 14:10:18"
+    },
+    "html.guildevents.html.text1": {
+      "src_hash": "4f5f265df073afb48be23e993daa41b6",
+      "text": "There are Нет upcoming events for this guild!"
+    },
+    "html.found.html.text1": {
+      "src_hash": "012b67334bc503a5440cc02113e421c3",
+      "text": "Do you wnat to found a new guild? In order to do that, you need a premium account and Нетne of your characters may hold one of the two highest ranks in any other guild. Нетte that you need four other pl"
+    },
+    "html.viewguild.html.text4": {
+      "src_hash": "8f804321700f13f4852539d46d28f4d1",
+      "text": "(+0 Reserved Золото for Auctions)"
+    },
+    "html.declarewar.html.text4": {
+      "src_hash": "374d2cea70a5a8d00d723461a05f92a8",
+      "text": "(between 0 and 2000000000 Золото)"
+    },
+    "html.guildwars.html.text1": {
+      "src_hash": "39240bc8d1113cf6c13f96d9df7a130a",
+      "text": "The guild {{ guild.name }} has currently Нет open war declarations."
+    },
+    "html.guildwars.html.text2": {
+      "src_hash": "1fd2a7a8fe144385809ed995c4fb7464",
+      "text": "{{ war.price }} Золото coin"
+    },
+    "html.guildwars.html.text5": {
+      "src_hash": "467891d270604118bed569f4a38b0c48",
+      "text": "The guild {{ guild.name }} is currently Нетt involved in a guild war."
+    },
+    "html.invitecharacter.html.text4": {
+      "src_hash": "351c4b6f26ccc6fc8d8044853fbc1e48",
+      "text": "{{ invite.Игрок_name }}"
+    },
+    "html.invitecharacter.html.text5": {
+      "src_hash": "b9a890e0f9d799d32dcd879c9c3ef65a",
+      "text": "Нет invited characters found."
+    },
+    "html.allguilds.html.text4": {
+      "src_hash": "7f3261893af6306f563eed7fc670b4c1",
+      "text": "Нет guild found that suits your needs?"
+    },
+    "html.applytothisguild.html.text2": {
+      "src_hash": "46329cac7ae607907f992ab7f77201b7",
+      "text": "{{ app.Игрок_name }}"
+    },
+    "html.applytothisguild.html.text3": {
+      "src_hash": "8d1b856b7cae0cccb529fe6c7e3474e7",
+      "text": "{{ app.Игрок_level }}"
+    },
+    "html.applytothisguild.html.text4": {
+      "src_hash": "54977142381852525b40713d550a22bb",
+      "text": "{{ app.Игрок_vocation }}"
+    },
+    "html.surrender.html.text3": {
+      "src_hash": "8817b9e5f68bf5a72d699173e79e9a14",
+      "text": "Нет war has been surrendered so far."
+    },
+    "html.pending.html.text3": {
+      "src_hash": "54302953e145b4e5f1f0f74407aa7603",
+      "text": "Нет wars pending at the moment."
+    },
+    "html.active.html.text3": {
+      "src_hash": "227de8fbf5ec7f9342140866f662ffc5",
+      "text": "Нет wars active at the moment."
+    },
+    "html.ended.html.text3": {
+      "src_hash": "ba46ea5b388773b5beb3f6e2e546f40b",
+      "text": "Нет wars carried out to date."
+    },
+    "html.premiumfeatures.html.text2": {
+      "src_hash": "c0af634f78c78fd2d18006b1a12bdcc8",
+      "text": "Tibia is free, and Игрокs are Добро пожаловать to play free of charge for as long as they like. However, if you enjoy Tibia, you may consider to take the game further by Купитьing Premium Time. As a Premium play"
+    },
+    "html.premiumfeatures.html.text3": {
+      "src_hash": "db69d14f8fdb2f52e34df6cdf3525912",
+      "text": "The following benefits are available to Premium Игрокs:"
+    },
+    "html.header.text1": {
+      "src_hash": "7eae14904990ccace0db6cfa09137ea5",
+      "text": "html{display: Нетne;}"
+    },
+    "html.input.text1": {
+      "src_hash": "39a645d35d8cab9cb8f75245cd5b102e",
+      "text": "{{- get_image('b_Помощь', 'Documentation'|trans) -}}"
+    },
+    "html.themes.text2": {
+      "src_hash": "e837473a898ffd69c4c4f7ce1b31929d",
+      "text": "{% trans %}Take it{% Нетtes %}Choose the theme button in the themes list modal{% endtrans %}"
+    },
+    "html.check_relations.text1": {
+      "src_hash": "49ceda3ee5a0ffcfa80791e9bca0908e",
+      "text": "{% trans 'Нетt OK' %}"
+    },
+    "html.database_tables.text1": {
+      "src_hash": "161ae4d58986e8a91a483884cbc6ccd6",
+      "text": "{{ tab_pos[t_n] is Нетt defined or tab_pos[t_n]['V'] is Нетt empty ? 'v' : '&gt;' }}"
+    },
+    "html.user_listings.text2": {
+      "src_hash": "e31baac02960e09cdd745503a8840885",
+      "text": "{% trans 'Нет users were found belonging to this user group.' %}"
+    },
+    "html.change_password.text2": {
+      "src_hash": "6c8db3e074833f4c5925581eb1e70754",
+      "text": "{% trans 'Нет Password' %}"
+    },
+    "html.privileges_table.text1": {
+      "src_hash": "ba49334b3f289f0d322c71ea6d48baa7",
+      "text": "{% trans 'Нетte: MySQL privilege names are expressed in English.' %}"
+    },
+    "html.privileges_table.text3": {
+      "src_hash": "ba49334b3f289f0d322c71ea6d48baa7",
+      "text": "{% trans 'Нетte: MySQL privilege names are expressed in English.' %}"
+    },
+    "html.edit_routine_privileges.text1": {
+      "src_hash": "ba49334b3f289f0d322c71ea6d48baa7",
+      "text": "{% trans 'Нетte: MySQL privilege names are expressed in English.' %}"
+    },
+    "html.primary_configuration.text2": {
+      "src_hash": "521b8de88d97f21ca491bddf5a5a3be2",
+      "text": "{% trans 'Replicate all databases; IgНетre:' %}"
+    },
+    "html.primary_configuration.text3": {
+      "src_hash": "ad8f146eabf7713954d243cc360f047b",
+      "text": "{% trans 'IgНетre all databases; Replicate:' %}"
+    },
+    "html.show.text4": {
+      "src_hash": "bcb193b702895fd25a8136736a654dd5",
+      "text": "{{ 'UnkНетwn storage engine.'|trans|error }}"
+    },
+    "html.actions_panel.text2": {
+      "src_hash": "3485a8a5415cada31774cd5229610d51",
+      "text": "{% trans 'Insert as new row and igНетre errors' %}"
+    },
+    "html.index_form.text2": {
+      "src_hash": "f149a6cb982dece6ed04c70cf4d0e397",
+      "text": "-- {% trans 'IgНетre' %} --"
+    },
+    "html.gis_visualization.text3": {
+      "src_hash": "cfe69265a0cf2a16082f1b5d9d543444",
+      "text": "{% trans '-- Нетne --' %}"
+    },
+    "html.path.text2": {
+      "src_hash": "c5f33dbebfb7b49549218faabc4d16c2",
+      "text": "{% trans 'Нет tables found in database.' %}"
+    },
+    "html.node.text1": {
+      "src_hash": "c7158d5dec0045d855f40363d21b0898",
+      "text": "{{ get_image(Нетde.icon['image'], Нетde.icon['title']) }}"
+    },
+    "html.bookmark_content.text1": {
+      "src_hash": "226ddf9790f5d4c05aa1dc8d8289d9a8",
+      "text": "{{ Добро пожаловать_message }}"
+    },
+    "html.top_menu.text1": {
+      "src_hash": "114bc5b5c17f7c72840eef3cb9e50861",
+      "text": "{% trans %}(current){% Нетtes %}Current page{% endtrans %}"
+    },
+    "html.credits.text3": {
+      "src_hash": "587d0887059cecfb3265aab90b35e3fd",
+      "text": "Credits, in chroНетlogical order"
+    },
+    "html.import_export.text4": {
+      "src_hash": "b9d3a166d3793375a0f179b184f99255",
+      "text": "1.16 I canНетt upload big dump files (memory, HTTP or timeout problems)."
+    },
+    "html.config.text5": {
+      "src_hash": "1eaea48a2da89d61324ff9aa03a19164",
+      "text": " (this file is Нетt intended for changes)."
+    },
+    "html.faq.text1": {
+      "src_hash": "6c5526b3daff1b2d6efba75943d081fb",
+      "text": "FAQ - Frequently Asked Заданиеions &#8212; phpMyAdmin 5.2.2 documentation"
+    },
+    "html.faq.text3": {
+      "src_hash": "8a99aafd0a77ef609a787c525232e72a",
+      "text": "FAQ - Frequently Asked Заданиеions"
+    },
+    "html.faq.text4": {
+      "src_hash": "8a99aafd0a77ef609a787c525232e72a",
+      "text": "FAQ - Frequently Asked Заданиеions"
     }
   },
   "pl": {

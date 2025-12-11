@@ -464,3 +464,190 @@ mark_file_completed() {
 ---
 
 *Ten plik dokumentuje kompleksowy plan migracji i18n dla całego projektu (serwer + klient).*
+
+---
+
+## ✅ ZAIMPLEMENTOWANE FUNKCJE I18N W C++ (src/)
+
+### System Translator (`src/utils/i18n/translator.hpp`)
+
+Już istnieje kompletny system tłumaczeń w C++:
+
+```cpp
+namespace i18n {
+class Translator {
+    std::string get(const std::string &key, const std::string &locale = "en") const;
+    std::string format(const std::string &key, const std::string &locale, const std::vector<std::string> &args) const;
+    void loadLocale(const std::string &locale) const;
+    static const std::vector<std::string> &supportedLocales();
+};
+Translator &g_translator(); // Globalny singleton
+}
+```
+
+### Metody Player dostępne w Lua (`src/creatures/players/player.cpp`)
+
+| Metoda C++ | Dostępne w Lua | Opis |
+|------------|----------------|------|
+| `sendLocalizedTextMessage()` | ✅ `player:sendLocalizedTextMessage(TYPE, key, args)` | Wysyła przetłumaczoną wiadomość |
+| `sendLocalizedMessageDialog()` | ❌ Brak bindingu Lua | Dialog z tłumaczeniem |
+| `getLocalizedItemName()` | ❌ Brak bindingu Lua | Nazwa przedmiotu w języku gracza |
+
+**Istniejące użycie w C++:**
+```cpp
+// player.cpp - już używa i18n!
+sendLocalizedTextMessage(MESSAGE_PARTY, "player.status.cleanse", { it->second });
+sendLocalizedTextMessage(MESSAGE_FAILURE, "player.condition.poisoned");
+sendLocalizedTextMessage(MESSAGE_FAILURE, "player.condition.drowning");
+```
+
+### Metody NPC dostępne w Lua (`data/npclib/`)
+
+| Metoda Lua | Lokalizacja | Opis |
+|------------|-------------|------|
+| `npcHandler:sayLocalized(key, npc, player, args)` | `npc_handler.lua:754` | Używa `player:sendLocalizedTextMessage()` |
+| `NPC_LIB.i18n.npcSay(...)` | **NIE ZNALEZIONO** | Używane w worker ale nie ma definicji! |
+
+### Biblioteka Lua (`data/libs/server_i18n.lua`)
+
+```lua
+function t(key, vars, player) -- Pobiera tłumaczenie
+function sendTextMessageEx(player, msgType, key, vars) -- Wrapper
+function getPlayerLang(player) -- Język gracza ze storage
+function setPlayerLang(player, lang) -- Ustawia język
+```
+
+---
+
+## ⚠️ PROBLEM: BRAKUJĄCE IMPLEMENTACJE
+
+### 1. `NPC_LIB.i18n.npcSay` - NIE ISTNIEJE!
+
+Worker migruje do `NPC_LIB.i18n.npcSay(...)` ale **ta funkcja nie istnieje** w kodzie!
+
+Znaleziono użycie w `custom_modules.lua`:
+```lua
+if parameters.i18nKey and NPC_LIB and NPC_LIB.i18n and NPC_LIB.i18n.npcSay then
+    NPC_LIB.i18n.npcSay(parameters.npcHandler, npc, player, parameters.i18nKey, ...)
+```
+
+Ale nigdzie nie ma definicji `NPC_LIB.i18n = {...}`!
+
+**ROZWIĄZANIE:** Trzeba stworzyć lub używać `npcHandler:sayLocalized()` zamiast `NPC_LIB.i18n.npcSay`
+
+### 2. Brakujące bindingi C++ → Lua
+
+Dla pełnej funkcjonalności i18n potrzeba dodać do `src/lua/functions/`:
+
+| Funkcja | Plik docelowy | Status |
+|---------|--------------|--------|
+| `item:setLocalizedDescription(key)` | `item_functions.cpp` | ❌ BRAK |
+| `item:setLocalizedName(key)` | `item_functions.cpp` | ❌ BRAK |
+| `creature:sayLocalized(key, type)` | `creature_functions.cpp` | ❌ BRAK |
+| `Game.broadcastLocalizedMessage(key)` | `game_functions.cpp` | ❌ BRAK |
+| `player:showLocalizedTextDialog(item, key)` | `player_functions.cpp` | ❌ BRAK |
+
+### 3. Hardcoded stringi w C++ (`src/game/game.cpp`)
+
+Około **50+ miejsc** z hardcoded stringami w samym `game.cpp`:
+```cpp
+player->sendTextMessage(MESSAGE_FAILURE, "You are feared.");
+player->sendTextMessage(MESSAGE_TRADE, "This item is already being traded.");
+player->sendTextMessage(MESSAGE_FAILURE, "Sorry, not possible.");
+```
+
+Te muszą być zmienione na:
+```cpp
+player->sendLocalizedTextMessage(MESSAGE_FAILURE, "player.error.feared");
+```
+
+---
+
+## 🔧 PLAN IMPLEMENTACJI BRAKUJĄCYCH ELEMENTÓW
+
+### ETAP A: Naprawić definicję NPC_LIB.i18n
+
+**Plik:** `data/npclib/npc_system/npc_lib.lua` (lub podobny)
+
+```lua
+NPC_LIB = NPC_LIB or {}
+NPC_LIB.i18n = NPC_LIB.i18n or {}
+
+-- Wrapper używający istniejącego npcHandler:sayLocalized
+function NPC_LIB.i18n.npcSay(npcHandler, npc, player, key, args)
+    npcHandler:sayLocalized(key, npc, player, args or {})
+end
+
+function NPC_LIB.i18n.npcSayTable(npcHandler, npc, player, keys, args)
+    for _, key in ipairs(keys) do
+        npcHandler:sayLocalized(key, npc, player, args or {})
+    end
+end
+```
+
+### ETAP B: Dodać brakujące bindingi C++ (opcjonalnie)
+
+**Plik:** `src/lua/functions/items/item_functions.cpp`
+
+```cpp
+// item:setLocalizedName(key)
+int ItemFunctions::luaItemSetLocalizedName(lua_State* L) {
+    auto item = Lua::getUserdataShared<Item>(L, 1);
+    if (!item) {
+        Lua::pushBoolean(L, false);
+        return 1;
+    }
+    // Store i18n key for name
+    item->setAttribute(ItemAttribute_t::I18N_NAME_KEY, Lua::getString(L, 2));
+    Lua::pushBoolean(L, true);
+    return 1;
+}
+```
+
+### ETAP C: Wrappery Lua (bez zmian C++)
+
+Alternatywnie - wrappery w Lua bez modyfikacji C++:
+
+**Plik:** `data/libs/i18n_wrappers.lua`
+
+```lua
+-- Wrapper dla item:setDescription z i18n
+function Item:setLocalizedDescription(key, player)
+    local text = t(key, nil, player)
+    self:setDescription(text)
+end
+
+-- Wrapper dla creature:say z i18n
+function Creature:sayLocalized(key, talkType, player)
+    local text = t(key, nil, player)
+    self:say(text, talkType)
+end
+
+-- Wrapper dla broadcastMessage z i18n
+function Game.broadcastLocalizedMessage(key, ...)
+    -- Dla każdego gracza online wysyła w jego języku
+    for _, player in ipairs(Game.getPlayers()) do
+        player:sendLocalizedTextMessage(MESSAGE_STATUS_WARNING, key, {...})
+    end
+end
+```
+
+---
+
+## 📊 PODSUMOWANIE: CO TRZEBA ZROBIĆ
+
+| Element | Status | Akcja |
+|---------|--------|-------|
+| `i18n::Translator` (C++) | ✅ Istnieje | - |
+| `player:sendLocalizedTextMessage()` | ✅ Istnieje | - |
+| `npcHandler:sayLocalized()` | ✅ Istnieje | - |
+| `NPC_LIB.i18n.npcSay()` | ❌ **BRAK** | Stworzyć wrapper |
+| `item:setLocalizedName/Description()` | ❌ Brak | Wrapper Lua lub C++ |
+| `creature:sayLocalized()` | ❌ Brak | Wrapper Lua |
+| `Game.broadcastLocalizedMessage()` | ❌ Brak | Wrapper Lua |
+| Hardcoded C++ w game.cpp | ❌ ~50 miejsc | Migracja do kluczy |
+
+**WNIOSEK:** System i18n istnieje i działa, ale:
+1. Worker używa `NPC_LIB.i18n.npcSay` które **nie ma definicji**
+2. Brakuje wrapperów Lua dla innych typów (items, creatures)
+3. C++ nadal ma hardcoded stringi do migracji

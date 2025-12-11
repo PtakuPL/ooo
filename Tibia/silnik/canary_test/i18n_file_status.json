@@ -1,1 +1,188 @@
-{}
+{
+  "files": {
+    "data-otservbr-global/startup/tables/door_quest.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "talkactions"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:03.089270",
+      "category": "talkactions"
+    },
+    "data-otservbr-global/startup/tables/item_daily_reward.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "talkactions"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:03.157499",
+      "category": "talkactions"
+    },
+    "data-otservbr-global/startup/tables/item.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "talkactions"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:03.227125",
+      "category": "talkactions"
+    },
+    "data-otservbr-global/startup/tables/teleport_item.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "talkactions"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:03.306610",
+      "category": "talkactions"
+    },
+    "data-otservbr-global/startup/tables/tile.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "talkactions"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:03.386861",
+      "category": "talkactions"
+    },
+    "data-otservbr-global/startup/tables/storage_keys_update.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "talkactions"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:03.454024",
+      "category": "talkactions"
+    },
+    "data-otservbr-global/startup/tables/door_level.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "talkactions"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:03.530638",
+      "category": "talkactions"
+    },
+    "data-otservbr-global/startup/tables/tile_pick.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "talkactions"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:03.600476",
+      "category": "talkactions"
+    },
+    "data-otservbr-global/startup/tables/door_key.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "talkactions"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:03.671714",
+      "category": "talkactions"
+    },
+    "data-otservbr-global/startup/tables/load.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "talkactions"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:40:03.793698",
+      "category": "talkactions"
+    }
+  },
+  "global_stats": {
+    "files_completed": 10,
+    "total_keys": 0
+  }
+}

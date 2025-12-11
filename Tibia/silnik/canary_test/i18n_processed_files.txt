@@ -278,3 +278,13 @@ data-otservbr-global/lib/functions/players.lua
 data-otservbr-global/lib/functions/load.lua
 data-otservbr-global/lib/others/soulpit.lua
 data-otservbr-global/lib/others/dawnport.lua
+data-otservbr-global/startup/tables/door_quest.lua
+data-otservbr-global/startup/tables/item_daily_reward.lua
+data-otservbr-global/startup/tables/item.lua
+data-otservbr-global/startup/tables/teleport_item.lua
+data-otservbr-global/startup/tables/tile.lua
+data-otservbr-global/startup/tables/storage_keys_update.lua
+data-otservbr-global/startup/tables/door_level.lua
+data-otservbr-global/startup/tables/tile_pick.lua
+data-otservbr-global/startup/tables/door_key.lua
+data-otservbr-global/startup/tables/load.lua

@@ -76,7 +76,13 @@ try:
     with open(status_file) as f:
         status = json.load(f)
 except:
-    status = {"files": {}, "global_stats": {"files_completed": 0, "total_keys": 0}}
+    status = {}
+
+# Upewnij się że struktura istnieje
+if "files" not in status:
+    status["files"] = {}
+if "global_stats" not in status:
+    status["global_stats"] = {"files_completed": 0, "total_keys": 0}
 
 status["files"][file_path] = {
     "stages": {

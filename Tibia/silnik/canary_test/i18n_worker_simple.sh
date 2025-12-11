@@ -4544,7 +4544,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             # 1. Sprawdź worker_commands.txt (można edytować przez GitHub)
             if [ -f "$COMMANDS_TXT" ]; then
                 # Znajdź pierwszą odkomentowaną komendę (bez # na początku)
-                CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|RANDOM|STATUS|SKIP|PAUSE:|NOTE:)' | head -1)
+                CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|AUTO:|RANDOM|STATUS|SKIP|PAUSE:|NOTE:)' | head -1)
                 
                 if [ -n "$CMD" ]; then
                     echo "📨 Odebrano z worker_commands.txt: $CMD"

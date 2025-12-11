@@ -18,7 +18,8 @@
     "client": 1765416405.786226,
     "sendtextmessage": 1765416419.835836,
     "keywordhandler": 1765416427.864905,
-    "twig": 1765416436.027876
+    "twig": 1765416436.027876,
+    "items": 1765416450.6506839
   },
   "last_processed": {
     "npc": {
@@ -50,8 +51,8 @@
       "timestamp": 1765415724.168065
     },
     "items": {
-      "count": 28958,
-      "timestamp": 1765415732.8205228
+      "count": 0,
+      "timestamp": 1765415850.6506786
     },
     "libs": {
       "count": 0,
@@ -114,7 +115,7 @@
     "raids": 2,
     "world": 2,
     "spells": 0,
-    "items": 0,
+    "items": 2,
     "libs": 4,
     "events": 1,
     "chatchannels": 2,
@@ -134,5 +135,5 @@
     "items": 28958
   },
   "translation_sync": {},
-  "migrations_done": true
+  "migrations_done": false
 }

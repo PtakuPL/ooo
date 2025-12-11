@@ -24,3 +24,12 @@ Stare klucze wyglądają tak: php.06cc3119671642661dbc2cbc21705215.text1
 Nowe w EN: php.exception.text1
 
 Czy mam wyczyścić stare klucze z tłumaczeń (zostawić tylko te co są w EN)?
+[2025-12-11 02:19:10] AGENT_2: 🔍 Znalazłem źródło problemu! Te stare klucze z hashem pochodzą z html_copy/system/cache/twig/ - to CACHE TWIG (skompilowane szablony PHP), nie prawdziwe źródła!
+
+Przykład: php.06cc3119...text1 = kod z pliku cache/twig/06/06cc3119....php
+
+PLAN:
+1. Dodaję html_copy/system/cache/ do i18n_excluded_files.txt
+2. Usuwam stare śmieciowe klucze z tłumaczeń (1600 kluczy z kodem PHP)
+
+Robię to teraz.

@@ -82,6 +82,17 @@ validate_lua_file() {
     fi
 }
 
+# Smoke-test: próba załadowania pliku Lua (bardziej rygorystyczny test)
+smoke_test_lua() {
+    local file="$1"
+    if command -v lua >/dev/null 2>&1; then
+        # Użyj dofile w trybie "dry-run" - tylko parsowanie bez wykonywania
+        lua -e "local f = loadfile('$file'); if not f then os.exit(1) end" 2>/dev/null
+        return $?
+    fi
+    return 0
+}
+
 
 #===============================================================================
 # UPDATE_CATEGORY_STATE - Zapamiętaj wynik przetwarzania kategorii

@@ -223,5 +223,16 @@
   "client.keybins.text3": "Chat mode OFF",
   "client.keybins.text4": "Unknown chat mode",
   "client.options.text1": "General Hotkeys",
-  "client.options.text2": "Interface"
+  "client.options.text2": "Interface",
+  "client.keybinds.text1": "Chat Mode On",
+  "client.keybinds.text2": "Chat Mode Off",
+  "client.keybinds.text3": "Primary Key",
+  "client.keybinds.text4": "Secondary Key",
+  "client.key_edit.text1": "This action must be bound to a single key.",
+  "client.key_edit.text2": "This hotkey is already in use.",
+  "client.console.text1": "Chat Channel",
+  "client.console.text2": "Next Channel",
+  "client.console.text3": "Chat Channel",
+  "client.console.text4": "Next Channel",
+  "client.console.text5": "Chat Channel"
 }

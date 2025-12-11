@@ -1,0 +1,713 @@
+{
+  "timestamp": "2025-12-11T19:20:33.800426",
+  "total_issues": 2879,
+  "by_type": {
+    "MISSING_PLACEHOLDER": 1196,
+    "EXTRA_PLACEHOLDER": 1196,
+    "PIPE_FORMAT_CHANGED": 420,
+    "COMMAND_CHANGED": 66,
+    "LENGTH_SUSPICIOUS": 1
+  },
+  "issues": [
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_10",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_10",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_11",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_11",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_15",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_15",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_33",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_33",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_37",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_37",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_38",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_38",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_5",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_5",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_57",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{monsters}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_57",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Monstruos}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_6",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_6",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_7",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.al_dee.stdmod_7",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.alexander.stdmod_2",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.alexander.stdmod_2",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "PIPE_FORMAT_CHANGED",
+      "key": "npc.amarie.farewell_1",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "EN: {'|PLAYERNAME|'}, es: set()"
+    },
+    {
+      "type": "PIPE_FORMAT_CHANGED",
+      "key": "npc.amarie.greet_1",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "EN: {'|PLAYERNAME|'}, es: set()"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.amber.stdmod_12",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{quest}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.amber.stdmod_12",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Misión}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.amber.stdmod_13",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{quest}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.amber.stdmod_13",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Misión}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.amber.stdmod_16",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{minotaurs}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.amber.stdmod_16",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{miNotaurs}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.amber.stdmod_19",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{notebook}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.amber.stdmod_19",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Notebook}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.amber.stdmod_20",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{notebook}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.amber.stdmod_20",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Notebook}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.amber.stdmod_21",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{notebook}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.amber.stdmod_21",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Notebook}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.amber.stdmod_60",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{yes}', '{no}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.amber.stdmod_60",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{No}', '{Sí}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.amber.stdmod_9",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{monsters}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.amber.stdmod_9",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Monstruos}'}"
+    },
+    {
+      "type": "PIPE_FORMAT_CHANGED",
+      "key": "npc.anerui.greet_1",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "EN: {'|PLAYERNAME|'}, es: set()"
+    },
+    {
+      "type": "PIPE_FORMAT_CHANGED",
+      "key": "npc.anerui.stdmod_18",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "EN: {'|PLAYERNAME|'}, es: set()"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.archery.stdmod_2",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{selling}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.archery.stdmod_2",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Vendering}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.archery_rook.stdmod_2",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{selling}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.archery_rook.stdmod_2",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Vendering}'}"
+    },
+    {
+      "type": "PIPE_FORMAT_CHANGED",
+      "key": "npc.bashira.farewell_1",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "EN: {'|PLAYERNAME|'}, es: set()"
+    },
+    {
+      "type": "PIPE_FORMAT_CHANGED",
+      "key": "npc.bashira.greet_1",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "EN: {'|PLAYERNAME|'}, es: set()"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.bertha.stdmod_2",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.bertha.stdmod_2",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.billy.stdmod_15",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.billy.stdmod_15",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.billy.stdmod_17",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.billy.stdmod_17",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.billy.stdmod_18",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.billy.stdmod_18",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.billy.stdmod_28",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.billy.stdmod_28",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.billy.stdmod_29",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.billy.stdmod_29",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.billy.stdmod_34",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{monsters}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.billy.stdmod_34",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Monstruos}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.billy.stdmod_36",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.billy.stdmod_36",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "PIPE_FORMAT_CHANGED",
+      "key": "npc.briasol.farewell_1",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "EN: {'|PLAYERNAME|'}, es: set()"
+    },
+    {
+      "type": "PIPE_FORMAT_CHANGED",
+      "key": "npc.briasol.greet_1",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "EN: {'|PLAYERNAME|'}, es: set()"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.brodrosch.stdmod_2",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{Gnomprona}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.brodrosch.stdmod_2",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{GNomprona}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.bruno.stdmod_1",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.bruno.stdmod_1",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.bruno.stdmod_2",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.bruno.stdmod_2",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.bruno.stdmod_3",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{trade}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.bruno.stdmod_3",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Comercio}'}"
+    },
+    {
+      "type": "PIPE_FORMAT_CHANGED",
+      "key": "npc.bunny_bonecrusher.stdmod_1",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "EN: {'|PLAYERNAME|'}, es: set()"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.captain_bluebear.stdmod_14",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{Venore}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.captain_bluebear.stdmod_14",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{VeNore}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.captain_bluebear.stdmod_15",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{Venore}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.captain_bluebear.stdmod_15",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{VeNore}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.captain_bluebear.stdmod_16",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{Venore}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.captain_bluebear.stdmod_16",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{VeNore}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.captain_bluebear.stdmod_17",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{Venore}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.captain_bluebear.stdmod_17",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{VeNore}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.captain_bluebear.stdmod_18",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{Venore}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.captain_bluebear.stdmod_18",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{VeNore}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.captain_bluebear.stdmod_19",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{Venore}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.captain_bluebear.stdmod_19",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{VeNore}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.captain_bluebear.stdmod_20",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{Venore}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.captain_bluebear.stdmod_20",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{VeNore}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.captain_breezelda.stdmod_3",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{Venore}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.captain_breezelda.stdmod_3",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{VeNore}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.captain_breezelda.stdmod_4",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{Venore}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.captain_breezelda.stdmod_4",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{VeNore}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.captain_dreadnought.stdmod_13",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{yes}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.captain_dreadnought.stdmod_13",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{Sí}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.captain_greyhound.stdmod_14",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{Venore}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.captain_greyhound.stdmod_14",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{VeNore}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.captain_greyhound.stdmod_15",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{Venore}'}"
+    },
+    {
+      "type": "EXTRA_PLACEHOLDER",
+      "key": "npc.captain_greyhound.stdmod_15",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Nadmiarowe: {'{VeNore}'}"
+    },
+    {
+      "type": "MISSING_PLACEHOLDER",
+      "key": "npc.captain_greyhound.stdmod_16",
+      "lang": "es",
+      "file": "i18n/es/npc.json",
+      "details": "Brakuje: {'{Venore}'}"
+    }
+  ]
+}

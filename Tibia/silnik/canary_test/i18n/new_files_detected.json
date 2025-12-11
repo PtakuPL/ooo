@@ -1,0 +1,87 @@
+{
+  "scan_time": "2025-12-11T19:20:27.297179",
+  "total_new": 2712,
+  "needs_migration": 153,
+  "files": [
+    {
+      "file": "data-otservbr-global/npc/lothar.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/captain_gulliver.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/captain_haba.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/guide_thelandil.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/archery.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/captain_chelop.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/cornell.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/gorn.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/tonar.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/uzon.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/al_dee.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/guide_elena.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/a_fluffy_squirrel.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/kendra_thais.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/coltrayne.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/ziyad.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/gregor.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/dalbrect.lua",
+      "pattern": "npcHandler:say\\s*\\(\\s*\"[^\"]+\"\\s*[,\\)]..."
+    },
+    {
+      "file": "data-otservbr-global/npc/charles.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    },
+    {
+      "file": "data-otservbr-global/npc/dallheim.lua",
+      "pattern": "npcConfig\\.voices\\s*=\\s*\\{[^}]*text\\s*=\\..."
+    }
+  ]
+}

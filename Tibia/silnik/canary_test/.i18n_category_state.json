@@ -1,7 +1,7 @@
 {
   "skip_until": {
     "monsters": 1765491528.6309016,
-    "actions": 1765469808.3683636,
+    "actions": 1765491538.287728,
     "quests": 1765469816.788425,
     "raids": 1765469826.6551127,
     "world": 1765469835.0284467,
@@ -51,7 +51,7 @@
     },
     "actions": {
       "count": 0,
-      "timestamp": 1765469208.3683558
+      "timestamp": 1765487938.2877192
     },
     "quests": {
       "count": 0,
@@ -186,7 +186,7 @@
     "npc": 2,
     "scripts": 2,
     "monsters": 4,
-    "actions": 2,
+    "actions": 4,
     "quests": 2,
     "raids": 2,
     "world": 2,

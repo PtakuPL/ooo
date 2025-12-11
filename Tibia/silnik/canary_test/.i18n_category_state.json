@@ -32,7 +32,7 @@
     "otclient_data": 1765491780.2011817,
     "otclient_src": 1765470755.1444988,
     "otclient_tools": 1765491792.9204528,
-    "errors": 1765471870.941524,
+    "errors": 1765491806.6235964,
     "npc": 1765488345.2443192,
     "scripts": 1765488515.927548,
     "php": 1765488740.3592696
@@ -180,7 +180,7 @@
     },
     "errors": {
       "count": 0,
-      "timestamp": 1765471270.9415178
+      "timestamp": 1765488206.623582
     }
   },
   "consecutive_zeros": {
@@ -219,7 +219,7 @@
     "otclient_data": 4,
     "otclient_src": 2,
     "otclient_tools": 4,
-    "errors": 2
+    "errors": 4
   },
   "total_processed": {
     "npc": 13620,

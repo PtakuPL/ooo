@@ -539,10 +539,298 @@
       "overall_status": "completed",
       "completed_at": "2025-12-11T22:45:02.965354",
       "category": "spells"
+    },
+    "data/libs/functions/gematelier.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:46:14.555279",
+      "category": "libs"
+    },
+    "data/libs/functions/item.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:46:14.618808",
+      "category": "libs"
+    },
+    "data/libs/functions/modal_window_helper.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:46:14.676398",
+      "category": "libs"
+    },
+    "data/libs/functions/tile.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:46:14.738645",
+      "category": "libs"
+    },
+    "data/libs/functions/queue.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:46:14.800230",
+      "category": "libs"
+    },
+    "data/libs/functions/pronouns.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:46:14.863142",
+      "category": "libs"
+    },
+    "data/libs/functions/vocation.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:46:14.927707",
+      "category": "libs"
+    },
+    "data/libs/functions/constants.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:46:14.985788",
+      "category": "libs"
+    },
+    "data/libs/functions/creature.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:46:15.045109",
+      "category": "libs"
+    },
+    "data/libs/functions/boss_lever.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:46:15.126642",
+      "category": "libs"
+    },
+    "data-otservbr-global/lib/others/load.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:46:15.227149",
+      "category": "libs"
+    },
+    "data-otservbr-global/lib/tables/town.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:46:15.439231",
+      "category": "libs"
+    },
+    "data-otservbr-global/lib/tables/teleport_item_destinations.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:46:15.698140",
+      "category": "libs"
+    },
+    "data-otservbr-global/lib/tables/load.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:46:15.928950",
+      "category": "libs"
+    },
+    "data-otservbr-global/lib/npc/i18n.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:46:16.169219",
+      "category": "libs"
+    },
+    "data-otservbr-global/lib/npc/load.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:46:16.376899",
+      "category": "libs"
     }
   },
   "global_stats": {
-    "files_completed": 30,
+    "files_completed": 46,
     "total_keys": 0
   }
 }

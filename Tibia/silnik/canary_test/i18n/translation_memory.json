@@ -10655,6 +10655,2926 @@
     "monster.the_monster.desc": {
       "src_hash": "6e987c339566a3cb6d7b0b4618416500",
       "text": "The Монстр"
+    },
+    "item.396.name": {
+      "src_hash": "35b1a6bc1b8a1af2a0d419303df2e91f",
+      "text": "techНетmancer beard"
+    },
+    "item.611.name": {
+      "src_hash": "e976042727da314eac3fc6e76409b1ae",
+      "text": "sНетw heap"
+    },
+    "item.799.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.827.name": {
+      "src_hash": "a3a1b3b28d84718d22fbe36ca9e59bd5",
+      "text": "magma moНетcle"
+    },
+    "item.2029.name": {
+      "src_hash": "0bae36beb769de4b023d776c7086e7b6",
+      "text": "miНетtaur statue"
+    },
+    "item.2043.name": {
+      "src_hash": "0bae36beb769de4b023d776c7086e7b6",
+      "text": "miНетtaur statue"
+    },
+    "item.2044.name": {
+      "src_hash": "0bae36beb769de4b023d776c7086e7b6",
+      "text": "miНетtaur statue"
+    },
+    "item.2045.name": {
+      "src_hash": "0bae36beb769de4b023d776c7086e7b6",
+      "text": "miНетtaur statue"
+    },
+    "item.2187.name": {
+      "src_hash": "3a0d80b25c18603a29540cc999845d2f",
+      "text": "Нетthing special"
+    },
+    "item.2803.name": {
+      "src_hash": "7cbabeaab3a8cb7b709fa41f547a198d",
+      "text": "miНетtaur statue kit"
+    },
+    "item.2807.name": {
+      "src_hash": "d247612761a759f057a96994a39ce902",
+      "text": "piaНет kit"
+    },
+    "item.2863.name": {
+      "src_hash": "8f4fe004bcfaf8f96412fd6cfaa6dc27",
+      "text": "Золотоen bag"
+    },
+    "item.2871.name": {
+      "src_hash": "5aa2392cbe69e362a2d13620448c5c3a",
+      "text": "Золотоen backpack"
+    },
+    "item.2903.name": {
+      "src_hash": "bcffe9dba1e828ae957c20e91a72bfe3",
+      "text": "Золотоen mug"
+    },
+    "item.2959.name": {
+      "src_hash": "d113f1c3f9ed8019288f4e8ddecfb8ec",
+      "text": "piaНет"
+    },
+    "item.2960.name": {
+      "src_hash": "d113f1c3f9ed8019288f4e8ddecfb8ec",
+      "text": "piaНет"
+    },
+    "item.2961.name": {
+      "src_hash": "d113f1c3f9ed8019288f4e8ddecfb8ec",
+      "text": "piaНет"
+    },
+    "item.2962.name": {
+      "src_hash": "d113f1c3f9ed8019288f4e8ddecfb8ec",
+      "text": "piaНет"
+    },
+    "item.2972.name": {
+      "src_hash": "fb9d1c1a9bb37a86465347884dd5f193",
+      "text": "Золотоen key"
+    },
+    "item.2992.name": {
+      "src_hash": "3b9787927ecbf1b5a270ce1ff8566872",
+      "text": "sНетwball"
+    },
+    "item.3013.name": {
+      "src_hash": "6b58bc80a5b98409d02a1c53f6b88158",
+      "text": "Золотоen amulet"
+    },
+    "item.3020.name": {
+      "src_hash": "42c6fca86809548e9f0ae5d5191bfab5",
+      "text": "some Золотоen fruits"
+    },
+    "item.3031.name": {
+      "src_hash": "f3438daa15ed0904727d1eb45902efd9",
+      "text": "Золото coin"
+    },
+    "item.3040.name": {
+      "src_hash": "a5c533086098bcd1f0e42f35648ead20",
+      "text": "Золото nugget"
+    },
+    "item.3063.name": {
+      "src_hash": "8151d9df24ce1d4ab5d64b70767c987e",
+      "text": "Золото ring"
+    },
+    "item.3071.name": {
+      "src_hash": "36ce990746289fb8bc1f4666b614fcca",
+      "text": "wand of inferНет"
+    },
+    "item.3236.name": {
+      "src_hash": "2b8f3c3de59abf04901b9722ed09beed",
+      "text": "blue Нетte"
+    },
+    "item.3306.name": {
+      "src_hash": "e38a02da1a7263ef7187b73e3fb114ca",
+      "text": "Золотоen sickle"
+    },
+    "item.3360.name": {
+      "src_hash": "b906e8ea21a1464a1252fbb8c99852a4",
+      "text": "Золотоen armor"
+    },
+    "item.3364.name": {
+      "src_hash": "03e3eadb4b8958df57a2efc9df50f793",
+      "text": "Золотоen legs"
+    },
+    "item.3365.name": {
+      "src_hash": "448ad15436b25044cfe481ef4910f972",
+      "text": "Золотоen helmet"
+    },
+    "item.3380.name": {
+      "src_hash": "44899bdcba1e9140746cc7e6f34154ef",
+      "text": "Нетble armor"
+    },
+    "item.3417.name": {
+      "src_hash": "e19c4a8c46bdc58efe19ce663ca05f50",
+      "text": "shield of hoНетur"
+    },
+    "item.3555.name": {
+      "src_hash": "4d4369a7c2a3e5a41d7c2fbd3a4ce8b6",
+      "text": "Золотоen boots"
+    },
+    "item.3580.name": {
+      "src_hash": "54f813fcbc9ea57c19ff9fb26b3cac79",
+      "text": "Нетrthern pike"
+    },
+    "item.3608.name": {
+      "src_hash": "db451eeaa807ccd0f08ba69eb6659965",
+      "text": "sНетwy dead tree"
+    },
+    "item.3609.name": {
+      "src_hash": "d43c79146b4cc61780248d6d764aecce",
+      "text": "sНетwy fir tree"
+    },
+    "item.4011.name": {
+      "src_hash": "9f52e60c5266652b1cf3c50f209ff93d",
+      "text": "dead miНетtaur"
+    },
+    "item.4012.name": {
+      "src_hash": "9f52e60c5266652b1cf3c50f209ff93d",
+      "text": "dead miНетtaur"
+    },
+    "item.4013.name": {
+      "src_hash": "9f52e60c5266652b1cf3c50f209ff93d",
+      "text": "dead miНетtaur"
+    },
+    "item.4023.name": {
+      "src_hash": "08f6db3e2dcc0c5703302f3487305666",
+      "text": "unkНетwn corpse"
+    },
+    "item.4037.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.4047.name": {
+      "src_hash": "9f52e60c5266652b1cf3c50f209ff93d",
+      "text": "dead miНетtaur"
+    },
+    "item.4048.name": {
+      "src_hash": "9f52e60c5266652b1cf3c50f209ff93d",
+      "text": "dead miНетtaur"
+    },
+    "item.4052.name": {
+      "src_hash": "9f52e60c5266652b1cf3c50f209ff93d",
+      "text": "dead miНетtaur"
+    },
+    "item.4053.name": {
+      "src_hash": "9f52e60c5266652b1cf3c50f209ff93d",
+      "text": "dead miНетtaur"
+    },
+    "item.4057.name": {
+      "src_hash": "9f52e60c5266652b1cf3c50f209ff93d",
+      "text": "dead miНетtaur"
+    },
+    "item.4058.name": {
+      "src_hash": "9f52e60c5266652b1cf3c50f209ff93d",
+      "text": "dead miНетtaur"
+    },
+    "item.4272.name": {
+      "src_hash": "9f52e60c5266652b1cf3c50f209ff93d",
+      "text": "dead miНетtaur"
+    },
+    "item.4273.name": {
+      "src_hash": "9f52e60c5266652b1cf3c50f209ff93d",
+      "text": "dead miНетtaur"
+    },
+    "item.4274.name": {
+      "src_hash": "9f52e60c5266652b1cf3c50f209ff93d",
+      "text": "dead miНетtaur"
+    },
+    "item.4275.name": {
+      "src_hash": "9f52e60c5266652b1cf3c50f209ff93d",
+      "text": "dead miНетtaur"
+    },
+    "item.4433.name": {
+      "src_hash": "a21e72ba8a7d519925122cfe0241b090",
+      "text": "sНетwy birch tree"
+    },
+    "item.4995.name": {
+      "src_hash": "d5578710397e82bd3e6da8cee91df34d",
+      "text": "caНетpic jar"
+    },
+    "item.4996.name": {
+      "src_hash": "43a28886c43adaea8f8fe35606346a98",
+      "text": "remains of a caНетpic jar"
+    },
+    "item.5785.name": {
+      "src_hash": "af60e359004ed2386da44d4784768e53",
+      "text": "medal of hoНетur"
+    },
+    "item.5799.name": {
+      "src_hash": "536d508ad4175d20ff10a68c0c2303ff",
+      "text": "Золотоen figurine"
+    },
+    "item.5804.name": {
+      "src_hash": "d7ed45ba2e9ee445995ec66891df89f0",
+      "text": "Нетse ring"
+    },
+    "item.5805.name": {
+      "src_hash": "b813dacaf631c292bd038e3ce9d1a528",
+      "text": "Золотоen goblet"
+    },
+    "item.5878.name": {
+      "src_hash": "5423af6ac8ea0ac37a24163f2658624e",
+      "text": "miНетtaur leather"
+    },
+    "item.5928.name": {
+      "src_hash": "595bcafc73618d70612a7dc12684a7d0",
+      "text": "empty Золотоfish bowl"
+    },
+    "item.5929.name": {
+      "src_hash": "33aef43c9e3875fe0b34887fc370d663",
+      "text": "Золотоfish bowl"
+    },
+    "item.5969.name": {
+      "src_hash": "9f52e60c5266652b1cf3c50f209ff93d",
+      "text": "dead miНетtaur"
+    },
+    "item.5981.name": {
+      "src_hash": "9f52e60c5266652b1cf3c50f209ff93d",
+      "text": "dead miНетtaur"
+    },
+    "item.5982.name": {
+      "src_hash": "9f52e60c5266652b1cf3c50f209ff93d",
+      "text": "dead miНетtaur"
+    },
+    "item.5983.name": {
+      "src_hash": "9f52e60c5266652b1cf3c50f209ff93d",
+      "text": "dead miНетtaur"
+    },
+    "item.6091.name": {
+      "src_hash": "5d22f0227bd7e141df08b9ed1d51bad3",
+      "text": "very Нетble-looking watch"
+    },
+    "item.6092.name": {
+      "src_hash": "5d22f0227bd7e141df08b9ed1d51bad3",
+      "text": "very Нетble-looking watch"
+    },
+    "item.6123.name": {
+      "src_hash": "d113f1c3f9ed8019288f4e8ddecfb8ec",
+      "text": "piaНет"
+    },
+    "item.6594.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.6595.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.6596.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.6597.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.6598.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.6599.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.6600.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.6601.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.6602.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.6603.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.6604.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.6605.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.6606.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.6607.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.6608.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.6838.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.7023.name": {
+      "src_hash": "0cf497b9bbe68e8dc14f24c1d658d22b",
+      "text": "sНетwy pine tree"
+    },
+    "item.7369.name": {
+      "src_hash": "b813dacaf631c292bd038e3ce9d1a528",
+      "text": "Золотоen goblet"
+    },
+    "item.7401.name": {
+      "src_hash": "5a679deeb2a95801800721672fc0f76b",
+      "text": "miНетtaur trophy"
+    },
+    "item.7409.name": {
+      "src_hash": "98382f1648e78c951987db6045c2296d",
+      "text": "Нетrthern star"
+    },
+    "item.7456.name": {
+      "src_hash": "9b8c4fbc45b7f4661b7c8e43f6011a7e",
+      "text": "Нетble axe"
+    },
+    "item.7460.name": {
+      "src_hash": "221a9f9b9c5856413fc4a758184778ff",
+      "text": "Нетrse shield"
+    },
+    "item.7533.name": {
+      "src_hash": "19814c78783ca448b2c0f36f7d18629e",
+      "text": "Нетmad parchment"
+    },
+    "item.7870.name": {
+      "src_hash": "1a213383f066b50157e6361eec0442bf",
+      "text": "stolen Золотоen goblet"
+    },
+    "item.7872.name": {
+      "src_hash": "24ee6463dfdcf4d91fe009d4c83f9876",
+      "text": "Нетte pinned on the wall"
+    },
+    "item.7873.name": {
+      "src_hash": "8f37602ebfd9c93d82f9b7e1ea5f3fd1",
+      "text": "Нетte from the thieves guild"
+    },
+    "item.7936.name": {
+      "src_hash": "2f9b976dcc0c2d1bc554dbfde96d4071",
+      "text": "fishnapped Золотоfish"
+    },
+    "item.7938.name": {
+      "src_hash": "33aef43c9e3875fe0b34887fc370d663",
+      "text": "Золотоfish bowl"
+    },
+    "item.8016.name": {
+      "src_hash": "a6ffe5faaaabff3f955e6208d24d2dab",
+      "text": "jalapeНет pepper"
+    },
+    "item.8064.name": {
+      "src_hash": "3fda228f9182eea70ee41d5447f8b2e2",
+      "text": "ethНет coat"
+    },
+    "item.8083.name": {
+      "src_hash": "676183ea136138f9714446b4bd2ee4b2",
+      "text": "Нетrthwind rod"
+    },
+    "item.8142.name": {
+      "src_hash": "9e8737fc21d65c4d616ed7ac386c9bbf",
+      "text": "Santiago's piaНет"
+    },
+    "item.8148.name": {
+      "src_hash": "c3f033a3cdab93970ddbf25b9f7e3c2d",
+      "text": "Золотоen falcon"
+    },
+    "item.8151.name": {
+      "src_hash": "68ec7cb4a343804a6ab5b85edda8677f",
+      "text": "TibiaHispaНет Emblem"
+    },
+    "item.8153.name": {
+      "src_hash": "1d3ca05cd005011143d7663c404e0284",
+      "text": "Золотоen newspaper"
+    },
+    "item.8154.name": {
+      "src_hash": "508ca7cc112449d6c18b591aafcc35b7",
+      "text": "Нетrseman doll"
+    },
+    "item.8157.name": {
+      "src_hash": "508ca7cc112449d6c18b591aafcc35b7",
+      "text": "Нетrseman doll"
+    },
+    "item.8175.name": {
+      "src_hash": "c3f033a3cdab93970ddbf25b9f7e3c2d",
+      "text": "Золотоen falcon"
+    },
+    "item.8176.name": {
+      "src_hash": "1d3ca05cd005011143d7663c404e0284",
+      "text": "Золотоen newspaper"
+    },
+    "item.8645.name": {
+      "src_hash": "d113f1c3f9ed8019288f4e8ddecfb8ec",
+      "text": "piaНет"
+    },
+    "item.8759.name": {
+      "src_hash": "f80d285b5d62b450cf1cc19cf8b91188",
+      "text": "sample of veНетrean spice"
+    },
+    "item.8764.name": {
+      "src_hash": "926b6e6035e892000c50f908735e54e2",
+      "text": "research Нетtes"
+    },
+    "item.8866.name": {
+      "src_hash": "aa9f8e3cf158544d5f321dc4c92939d4",
+      "text": "dead unkНетwn"
+    },
+    "item.8867.name": {
+      "src_hash": "aa9f8e3cf158544d5f321dc4c92939d4",
+      "text": "dead unkНетwn"
+    },
+    "item.8868.name": {
+      "src_hash": "aa9f8e3cf158544d5f321dc4c92939d4",
+      "text": "dead unkНетwn"
+    },
+    "item.8869.name": {
+      "src_hash": "aa9f8e3cf158544d5f321dc4c92939d4",
+      "text": "dead unkНетwn"
+    },
+    "item.9058.name": {
+      "src_hash": "dc24ae532cf1f3d19fb9030abc2c1689",
+      "text": "Золото ingot"
+    },
+    "item.9085.name": {
+      "src_hash": "a7b2434fa8719bcc8d4f05f59c9881b3",
+      "text": "filled jalapeНет peppers"
+    },
+    "item.9088.name": {
+      "src_hash": "2db5fc65e99ba2b0df7a06c38f46d48c",
+      "text": "Нетrthern fishburger"
+    },
+    "item.9117.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.9132.name": {
+      "src_hash": "32656e1c5a47302b7858acab574c9cdd",
+      "text": "frost canНетn"
+    },
+    "item.9207.name": {
+      "src_hash": "9b8914c37950d0499984c43cb5522aca",
+      "text": "silver cup of hoНетur"
+    },
+    "item.9208.name": {
+      "src_hash": "e58648b552152a132b4e2bed26b0cabe",
+      "text": "bronze cup of hoНетur"
+    },
+    "item.9209.name": {
+      "src_hash": "bc6f3256a1bc25c450d82ded0cb0a6df",
+      "text": "Золотоen warrior trophy"
+    },
+    "item.9212.name": {
+      "src_hash": "41cddd76c61848c7ef99498d949e368f",
+      "text": "Золотоen trophy of excellence"
+    },
+    "item.9215.name": {
+      "src_hash": "54aeaef937e1f7affa7c46bdbc2514d8",
+      "text": "Золото medal"
+    },
+    "item.9392.name": {
+      "src_hash": "e26ff56e4b16bc82d8ac0739238382cd",
+      "text": "claw of 'The Нетxious Spawn'"
+    },
+    "item.9393.name": {
+      "src_hash": "e26ff56e4b16bc82d8ac0739238382cd",
+      "text": "claw of 'The Нетxious Spawn'"
+    },
+    "item.9394.name": {
+      "src_hash": "e26ff56e4b16bc82d8ac0739238382cd",
+      "text": "claw of 'The Нетxious Spawn'"
+    },
+    "item.9395.name": {
+      "src_hash": "e26ff56e4b16bc82d8ac0739238382cd",
+      "text": "claw of 'The Нетxious Spawn'"
+    },
+    "item.9397.name": {
+      "src_hash": "e26ff56e4b16bc82d8ac0739238382cd",
+      "text": "claw of 'The Нетxious Spawn'"
+    },
+    "item.9398.name": {
+      "src_hash": "e26ff56e4b16bc82d8ac0739238382cd",
+      "text": "claw of 'The Нетxious Spawn'"
+    },
+    "item.9614.name": {
+      "src_hash": "8c6ab465f6d7b00d8a9ec4634cc5bab9",
+      "text": "famous Золотоen bug"
+    },
+    "item.9640.name": {
+      "src_hash": "26415275f534347f74b3a22af1384e3e",
+      "text": "poisoНетus slime"
+    },
+    "item.9695.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.10011.name": {
+      "src_hash": "36227190a857cf681921d9bf34a765ad",
+      "text": "map to the unkНетwn"
+    },
+    "item.10207.name": {
+      "src_hash": "3dad4960c0bca534f7b644707d6f35bf",
+      "text": "sНетwman package"
+    },
+    "item.10208.name": {
+      "src_hash": "b932a6ec0f3bef993326983f5c8808eb",
+      "text": "sНетwman"
+    },
+    "item.10217.name": {
+      "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
+      "text": "Tome of KНетwledge"
+    },
+    "item.10327.name": {
+      "src_hash": "48eaac8ad0968067e11a82a3b5be2c77",
+      "text": "miНетtaur backpack"
+    },
+    "item.10339.name": {
+      "src_hash": "566623d8747d4935f19d3c8362cd3a58",
+      "text": "sНетwman doll"
+    },
+    "item.10797.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.11256.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.11257.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.11258.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.11310.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.11338.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.11340.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.11345.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.11348.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.11366.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.11450.name": {
+      "src_hash": "c44f12c396fef6ee5eea415f4e16a59c",
+      "text": "small Нетtebook"
+    },
+    "item.11454.name": {
+      "src_hash": "8d4b97ea7b8a51e499e72333bc2410e7",
+      "text": "lumiНетus orb"
+    },
+    "item.11472.name": {
+      "src_hash": "b660ee03560ac319976c18a2a30f2cd3",
+      "text": "miНетtaur horn"
+    },
+    "item.11486.name": {
+      "src_hash": "629fd63015e103a4e6109ff8157b4b8c",
+      "text": "Нетble turban"
+    },
+    "item.11591.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.11604.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11606.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11608.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11610.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11612.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11614.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11616.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11618.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11620.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11622.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11624.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11626.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11628.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11630.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11632.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11634.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11636.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11638.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11640.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11642.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11644.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11646.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11648.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11650.name": {
+      "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+      "text": "Золотоen rune emblem"
+    },
+    "item.11841.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.12078.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.12236.name": {
+      "src_hash": "d4ad6644f5978b201262fdd3b646be41",
+      "text": "unkНетwn hole"
+    },
+    "item.12259.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.12261.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.12303.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.12319.name": {
+      "src_hash": "01599aa9d33342e67b54cf3dd5fad3dc",
+      "text": "iНетperative tin lizzard"
+    },
+    "item.12477.name": {
+      "src_hash": "736558d9afc17aa871d85062c9e75bb6",
+      "text": "small Золотоen taboret"
+    },
+    "item.12479.name": {
+      "src_hash": "992c68cea99543f56194f5fb83b89222",
+      "text": "ornate caНетpic jar"
+    },
+    "item.12495.name": {
+      "src_hash": "2eddf0bc4b623cdd4961cfba6bade222",
+      "text": "dead Золотоen servant"
+    },
+    "item.12500.name": {
+      "src_hash": "3e1b617612bc1f2e5fa47efe5f41b529",
+      "text": "remains of a Золотоen servant"
+    },
+    "item.12501.name": {
+      "src_hash": "3e1b617612bc1f2e5fa47efe5f41b529",
+      "text": "remains of a Золотоen servant"
+    },
+    "item.12502.name": {
+      "src_hash": "3e1b617612bc1f2e5fa47efe5f41b529",
+      "text": "remains of a Золотоen servant"
+    },
+    "item.12506.name": {
+      "src_hash": "43a28886c43adaea8f8fe35606346a98",
+      "text": "remains of a caНетpic jar"
+    },
+    "item.12511.name": {
+      "src_hash": "992c68cea99543f56194f5fb83b89222",
+      "text": "ornate caНетpic jar"
+    },
+    "item.12542.name": {
+      "src_hash": "84c5d20ab7460938f93a397ae4b00fd2",
+      "text": "Золотоen scorpion pendant"
+    },
+    "item.12543.name": {
+      "src_hash": "a20e0869e820d9a7d8c01f7b91c5a8c4",
+      "text": "Золотоen hyaena pendant"
+    },
+    "item.12550.name": {
+      "src_hash": "7e16d4729a1c2ede5fb2814d1df84b0f",
+      "text": "Золотоen fir cone"
+    },
+    "item.12551.name": {
+      "src_hash": "9c0f4b705e452dc247cd826a090e3af2",
+      "text": "omiНетus piece of cloth"
+    },
+    "item.12553.name": {
+      "src_hash": "e994eddb43682e2c9f25476dda4fff7d",
+      "text": "volumiНетus piece of cloth"
+    },
+    "item.12556.name": {
+      "src_hash": "12ac52d02500b7f1fd3dedd490963907",
+      "text": "lumiНетus piece of cloth"
+    },
+    "item.12573.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.12575.name": {
+      "src_hash": "9a38c6b8cd9de92eb021328f0d5a2383",
+      "text": "WhiНетna"
+    },
+    "item.12579.name": {
+      "src_hash": "9a38c6b8cd9de92eb021328f0d5a2383",
+      "text": "WhiНетna"
+    },
+    "item.12692.name": {
+      "src_hash": "d8df57901e2b6a82ad76e80fbdc05cff",
+      "text": "scribbled Нетtes"
+    },
+    "item.12699.name": {
+      "src_hash": "d80b9d9009200a1649accd5296b806d6",
+      "text": "magic Золото converter"
+    },
+    "item.12739.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.12800.name": {
+      "src_hash": "fd41b979b7c7595afd07ce98307393b6",
+      "text": "iНетperative uniwheel"
+    },
+    "item.12801.name": {
+      "src_hash": "50e5e3f6c349c8a22912af6e02e1c6ee",
+      "text": "Золотоen can of oil"
+    },
+    "item.12804.name": {
+      "src_hash": "1517b2400d61d244b34fbaca04c5a644",
+      "text": "cup of molten Золото"
+    },
+    "item.12818.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.13429.name": {
+      "src_hash": "324f3809fd6c9a05f4d6055cfebf72ba",
+      "text": "bag with stolen Золото"
+    },
+    "item.13936.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.14019.name": {
+      "src_hash": "8c3c5a0e24351eb20de02143862c2553",
+      "text": "small Золотоen anchor"
+    },
+    "item.14050.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.14078.name": {
+      "src_hash": "cc1839c0ced8566153324708ced2a97b",
+      "text": "spitter Нетse"
+    },
+    "item.14112.name": {
+      "src_hash": "6ec93bd1012b7dbe9f1eba81d97f3956",
+      "text": "bar of Золото"
+    },
+    "item.14176.name": {
+      "src_hash": "582f313605bda0e61ff57635515ad203",
+      "text": "Нетtes and coordinates"
+    },
+    "item.14239.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.14671.name": {
+      "src_hash": "ca0aebba1633318c38ac742f90b93ac8",
+      "text": "Delany's Золотоen bug trophy"
+    },
+    "item.14672.name": {
+      "src_hash": "cb14b58a34fe229b504dab56fc5b4fdc",
+      "text": "Bolfrim's Золотоen bug trophy"
+    },
+    "item.14673.name": {
+      "src_hash": "30c127240064b711cf1c7311ec25d406",
+      "text": "Siramal's Золотоen bug trophy"
+    },
+    "item.15696.name": {
+      "src_hash": "929fa9a99d72d90981e2b8e72b9f6553",
+      "text": "gНетmish extraction crystal"
+    },
+    "item.15697.name": {
+      "src_hash": "e34899059c8e2eee597cba7f6a447fe2",
+      "text": "gНетmish resonance crystal"
+    },
+    "item.15698.name": {
+      "src_hash": "e548916dd22fc7b8549694b2bda037c9",
+      "text": "gНетmish supply package"
+    },
+    "item.15703.name": {
+      "src_hash": "e03f782c285cb1749aec8258eaecb0cd",
+      "text": "gНетmish repair crystal"
+    },
+    "item.15709.name": {
+      "src_hash": "b003a934a09464a02c2ceb16d1fd2850",
+      "text": "crystal canНетn"
+    },
+    "item.15711.name": {
+      "src_hash": "ea790915b3e5235b6053e5fef124e581",
+      "text": "inНетcent target"
+    },
+    "item.15802.name": {
+      "src_hash": "6b90ae6702b9836ddf729382b3308ed3",
+      "text": "gНетmish crystal package"
+    },
+    "item.15817.name": {
+      "src_hash": "ef15f8554948e731a1044dbcf7347090",
+      "text": "gНетmish spore gatherer"
+    },
+    "item.15818.name": {
+      "src_hash": "ef15f8554948e731a1044dbcf7347090",
+      "text": "gНетmish spore gatherer"
+    },
+    "item.15819.name": {
+      "src_hash": "ef15f8554948e731a1044dbcf7347090",
+      "text": "gНетmish spore gatherer"
+    },
+    "item.15820.name": {
+      "src_hash": "ef15f8554948e731a1044dbcf7347090",
+      "text": "gНетmish spore gatherer"
+    },
+    "item.15821.name": {
+      "src_hash": "ef15f8554948e731a1044dbcf7347090",
+      "text": "gНетmish spore gatherer"
+    },
+    "item.15831.name": {
+      "src_hash": "b003a934a09464a02c2ceb16d1fd2850",
+      "text": "crystal canНетn"
+    },
+    "item.16128.name": {
+      "src_hash": "8d07ec1265deca8f6a1aa9f30e433705",
+      "text": "miНетr crystalline token"
+    },
+    "item.16137.name": {
+      "src_hash": "7d381b469fdbc9251ac10b0ad904893f",
+      "text": "stone Нетse"
+    },
+    "item.16143.name": {
+      "src_hash": "9f066c3ea43ed8ff6fc3e5744c1065db",
+      "text": "enveНетmed arrow"
+    },
+    "item.16149.name": {
+      "src_hash": "ec5eba1d8c56429327746d2f01391cbc",
+      "text": "dead gНетmevil"
+    },
+    "item.16150.name": {
+      "src_hash": "ec5eba1d8c56429327746d2f01391cbc",
+      "text": "dead gНетmevil"
+    },
+    "item.16151.name": {
+      "src_hash": "ec5eba1d8c56429327746d2f01391cbc",
+      "text": "dead gНетmevil"
+    },
+    "item.16152.name": {
+      "src_hash": "ec5eba1d8c56429327746d2f01391cbc",
+      "text": "dead gНетmevil"
+    },
+    "item.16205.name": {
+      "src_hash": "86f5caefbdee3af2df7b475fcd689bf3",
+      "text": "GНетmevil's hat"
+    },
+    "item.16237.name": {
+      "src_hash": "01ac2644581d3658acae382c24f2ac56",
+      "text": "legs of GНетmevil"
+    },
+    "item.16238.name": {
+      "src_hash": "4db8d2913525e6e47d37026c65c951ea",
+      "text": "torso of GНетmevil"
+    },
+    "item.16239.name": {
+      "src_hash": "af4136883c7ea2d5d2f43cf922ed3021",
+      "text": "head of GНетmevil"
+    },
+    "item.16240.name": {
+      "src_hash": "23e0fe153eb49ad2c56bea12d2f996d1",
+      "text": "statue of GНетmevil"
+    },
+    "item.16250.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.16252.name": {
+      "src_hash": "9645759f1a6b0217683d85b60b20fc0f",
+      "text": "gНетmish voucher type MB"
+    },
+    "item.16253.name": {
+      "src_hash": "7e495b249664e3cf282afc59d8fc7b50",
+      "text": "gНетmish voucher type MA1"
+    },
+    "item.16254.name": {
+      "src_hash": "457b019bb51c5873e0a9753c0179f99c",
+      "text": "gНетmish voucher type MA2"
+    },
+    "item.16255.name": {
+      "src_hash": "2bb3b12dc5b4c1d17efa452ef93a8a7f",
+      "text": "gНетmish voucher type CB"
+    },
+    "item.16256.name": {
+      "src_hash": "f21b8be5d570bb05419bad885696a29c",
+      "text": "gНетmish voucher type CA1"
+    },
+    "item.16257.name": {
+      "src_hash": "843692b733024d636c246748a750bcce",
+      "text": "gНетmish voucher type CA2"
+    },
+    "item.17151.name": {
+      "src_hash": "ed236f29bdd92b875a195d5ad2b62c8c",
+      "text": "freshly cut veНетrean spice"
+    },
+    "item.17152.name": {
+      "src_hash": "6a8e6a39831a82deaef67bcc13cce682",
+      "text": "growing veНетrean spice"
+    },
+    "item.17153.name": {
+      "src_hash": "883d0c2e5202680f91b25adca73f9b76",
+      "text": "veНетrean spice"
+    },
+    "item.17345.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.17359.name": {
+      "src_hash": "4ac14eb54f2f89d5cc03e520448a333b",
+      "text": "veНетrean chair"
+    },
+    "item.17360.name": {
+      "src_hash": "4ac14eb54f2f89d5cc03e520448a333b",
+      "text": "veНетrean chair"
+    },
+    "item.17361.name": {
+      "src_hash": "4ac14eb54f2f89d5cc03e520448a333b",
+      "text": "veНетrean chair"
+    },
+    "item.17362.name": {
+      "src_hash": "4ac14eb54f2f89d5cc03e520448a333b",
+      "text": "veНетrean chair"
+    },
+    "item.17363.name": {
+      "src_hash": "0ef483687ebaa7fe108f965f22358b16",
+      "text": "veНетrean stool"
+    },
+    "item.17364.name": {
+      "src_hash": "0ef483687ebaa7fe108f965f22358b16",
+      "text": "veНетrean stool"
+    },
+    "item.17365.name": {
+      "src_hash": "0ef483687ebaa7fe108f965f22358b16",
+      "text": "veНетrean stool"
+    },
+    "item.17366.name": {
+      "src_hash": "0ef483687ebaa7fe108f965f22358b16",
+      "text": "veНетrean stool"
+    },
+    "item.17917.name": {
+      "src_hash": "9d339f14195ee220a95e7c5359caad2e",
+      "text": "caНетpy bed"
+    },
+    "item.17918.name": {
+      "src_hash": "9d339f14195ee220a95e7c5359caad2e",
+      "text": "caНетpy bed"
+    },
+    "item.17919.name": {
+      "src_hash": "9d339f14195ee220a95e7c5359caad2e",
+      "text": "caНетpy bed"
+    },
+    "item.17920.name": {
+      "src_hash": "9d339f14195ee220a95e7c5359caad2e",
+      "text": "caНетpy bed"
+    },
+    "item.17921.name": {
+      "src_hash": "9d339f14195ee220a95e7c5359caad2e",
+      "text": "caНетpy bed"
+    },
+    "item.17922.name": {
+      "src_hash": "9d339f14195ee220a95e7c5359caad2e",
+      "text": "caНетpy bed"
+    },
+    "item.17923.name": {
+      "src_hash": "9d339f14195ee220a95e7c5359caad2e",
+      "text": "caНетpy bed"
+    },
+    "item.17924.name": {
+      "src_hash": "9d339f14195ee220a95e7c5359caad2e",
+      "text": "caНетpy bed"
+    },
+    "item.17925.name": {
+      "src_hash": "9d339f14195ee220a95e7c5359caad2e",
+      "text": "caНетpy bed"
+    },
+    "item.17926.name": {
+      "src_hash": "9d339f14195ee220a95e7c5359caad2e",
+      "text": "caНетpy bed"
+    },
+    "item.17927.name": {
+      "src_hash": "9d339f14195ee220a95e7c5359caad2e",
+      "text": "caНетpy bed"
+    },
+    "item.17928.name": {
+      "src_hash": "9d339f14195ee220a95e7c5359caad2e",
+      "text": "caНетpy bed"
+    },
+    "item.17968.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.17972.name": {
+      "src_hash": "e89ae5a0e7f78b739cfa1a53c8aaba71",
+      "text": "caНетpy bed kit"
+    },
+    "item.17974.name": {
+      "src_hash": "f3e67f1df4a614c7b2346eb2316a6447",
+      "text": "veНетrean cabinet kit"
+    },
+    "item.17975.name": {
+      "src_hash": "50628f3d64b35e7826b570d61a2d0781",
+      "text": "veНетrean wardrobe kit"
+    },
+    "item.17977.name": {
+      "src_hash": "c2020667fac05baa41352f6414e7a1f4",
+      "text": "veНетrean drawer kit"
+    },
+    "item.18021.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.18022.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.18178.name": {
+      "src_hash": "f6d7e303aefef6e8fde22140069af11e",
+      "text": "dead Нетmad"
+    },
+    "item.18179.name": {
+      "src_hash": "f6d7e303aefef6e8fde22140069af11e",
+      "text": "dead Нетmad"
+    },
+    "item.18180.name": {
+      "src_hash": "f6d7e303aefef6e8fde22140069af11e",
+      "text": "dead Нетmad"
+    },
+    "item.18181.name": {
+      "src_hash": "f6d7e303aefef6e8fde22140069af11e",
+      "text": "dead Нетmad"
+    },
+    "item.18182.name": {
+      "src_hash": "f6d7e303aefef6e8fde22140069af11e",
+      "text": "dead Нетmad"
+    },
+    "item.18183.name": {
+      "src_hash": "f6d7e303aefef6e8fde22140069af11e",
+      "text": "dead Нетmad"
+    },
+    "item.18184.name": {
+      "src_hash": "f6d7e303aefef6e8fde22140069af11e",
+      "text": "dead Нетmad"
+    },
+    "item.18185.name": {
+      "src_hash": "f6d7e303aefef6e8fde22140069af11e",
+      "text": "dead Нетmad"
+    },
+    "item.18186.name": {
+      "src_hash": "3ede7c2886aeeb23ade4bf8037720131",
+      "text": "dead Нетvice of the cult"
+    },
+    "item.18187.name": {
+      "src_hash": "3ede7c2886aeeb23ade4bf8037720131",
+      "text": "dead Нетvice of the cult"
+    },
+    "item.18188.name": {
+      "src_hash": "3ede7c2886aeeb23ade4bf8037720131",
+      "text": "dead Нетvice of the cult"
+    },
+    "item.18189.name": {
+      "src_hash": "3ede7c2886aeeb23ade4bf8037720131",
+      "text": "dead Нетvice of the cult"
+    },
+    "item.18319.name": {
+      "src_hash": "f6d7e303aefef6e8fde22140069af11e",
+      "text": "dead Нетmad"
+    },
+    "item.18320.name": {
+      "src_hash": "f6d7e303aefef6e8fde22140069af11e",
+      "text": "dead Нетmad"
+    },
+    "item.18321.name": {
+      "src_hash": "f6d7e303aefef6e8fde22140069af11e",
+      "text": "dead Нетmad"
+    },
+    "item.18322.name": {
+      "src_hash": "f6d7e303aefef6e8fde22140069af11e",
+      "text": "dead Нетmad"
+    },
+    "item.18817.name": {
+      "src_hash": "7b95d3d2c0fc99802d49825012327ff6",
+      "text": "eНетrmous tree"
+    },
+    "item.18875.name": {
+      "src_hash": "7b95d3d2c0fc99802d49825012327ff6",
+      "text": "eНетrmous tree"
+    },
+    "item.18929.name": {
+      "src_hash": "54b78a5a287db319ef932c6046839898",
+      "text": "incantation Нетtes"
+    },
+    "item.19082.name": {
+      "src_hash": "daeeb3d5756bd8efbf22cd96cc04e1ce",
+      "text": "Золотоen raid token"
+    },
+    "item.19103.name": {
+      "src_hash": "a63bf0c49a6ac9185023bed34138b340",
+      "text": "dead Нетble lion"
+    },
+    "item.19104.name": {
+      "src_hash": "a63bf0c49a6ac9185023bed34138b340",
+      "text": "dead Нетble lion"
+    },
+    "item.19105.name": {
+      "src_hash": "a63bf0c49a6ac9185023bed34138b340",
+      "text": "dead Нетble lion"
+    },
+    "item.19106.name": {
+      "src_hash": "a63bf0c49a6ac9185023bed34138b340",
+      "text": "dead Нетble lion"
+    },
+    "item.19150.name": {
+      "src_hash": "508ca7cc112449d6c18b591aafcc35b7",
+      "text": "Нетrseman doll"
+    },
+    "item.19209.name": {
+      "src_hash": "9563efa5dd6d4e058c3e51d7012a5878",
+      "text": "Монстр nest"
+    },
+    "item.19210.name": {
+      "src_hash": "66e5966b63b2f08125a6935649ea46b2",
+      "text": "destroyed Монстр nest"
+    },
+    "item.19211.name": {
+      "src_hash": "38b09d302aa97f5b1ec26ca0de25873d",
+      "text": "OmiНетus mound"
+    },
+    "item.19212.name": {
+      "src_hash": "e06da0476acfd415738f88691a737396",
+      "text": "OmiНетus mound opened"
+    },
+    "item.19217.name": {
+      "src_hash": "affd690a9e7be8f2f0c5beff198f8f53",
+      "text": "magnetic moНетlith"
+    },
+    "item.19219.name": {
+      "src_hash": "76038531e2a0e3c523a4ab23fcc8e869",
+      "text": "gНетmish supplies"
+    },
+    "item.19358.name": {
+      "src_hash": "c8171459b68a096b5d54f477c2b20b70",
+      "text": "albiНет plate"
+    },
+    "item.19379.name": {
+      "src_hash": "2c04d03b149acd17b795e91bf1a8742b",
+      "text": "chargeless moНетlith"
+    },
+    "item.19824.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.20164.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.20175.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.20203.name": {
+      "src_hash": "52f510999a5c844b2825aed7021734df",
+      "text": "trapped bad dream Монстр"
+    },
+    "item.20207.name": {
+      "src_hash": "99e4902c18d72e3d0051b5324ce8bedb",
+      "text": "pool of chitiНетus glue"
+    },
+    "item.20265.name": {
+      "src_hash": "c59ba573ef6039de2e7c96a844b37172",
+      "text": "unkНетwm item"
+    },
+    "item.20273.name": {
+      "src_hash": "7a1a59b319750317c4895709fb6a4551",
+      "text": "Золотоen prison key"
+    },
+    "item.20311.name": {
+      "src_hash": "7eb10f7931f7fbfb86efc18fe4422175",
+      "text": "sНетw globe"
+    },
+    "item.20312.name": {
+      "src_hash": "7eb10f7931f7fbfb86efc18fe4422175",
+      "text": "sНетw globe"
+    },
+    "item.20315.name": {
+      "src_hash": "de73c40b0576ec99ff4f0fdd04dcd716",
+      "text": "sНетw flake tapestry"
+    },
+    "item.20324.name": {
+      "src_hash": "98695ff5ca1c07290cf0149cd234f6be",
+      "text": "unkНетwn tile"
+    },
+    "item.21000.name": {
+      "src_hash": "f3546e844aaa6319579b9a9a60bdf1a8",
+      "text": "dead miНетtaur amazon"
+    },
+    "item.21001.name": {
+      "src_hash": "f3546e844aaa6319579b9a9a60bdf1a8",
+      "text": "dead miНетtaur amazon"
+    },
+    "item.21002.name": {
+      "src_hash": "f3546e844aaa6319579b9a9a60bdf1a8",
+      "text": "dead miНетtaur amazon"
+    },
+    "item.21003.name": {
+      "src_hash": "f3546e844aaa6319579b9a9a60bdf1a8",
+      "text": "dead miНетtaur amazon"
+    },
+    "item.21090.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.21095.name": {
+      "src_hash": "c8761ca75ce19722357c70e800fb81c2",
+      "text": "dead miНетtaur hunter"
+    },
+    "item.21096.name": {
+      "src_hash": "c8761ca75ce19722357c70e800fb81c2",
+      "text": "dead miНетtaur hunter"
+    },
+    "item.21097.name": {
+      "src_hash": "c8761ca75ce19722357c70e800fb81c2",
+      "text": "dead miНетtaur hunter"
+    },
+    "item.21098.name": {
+      "src_hash": "c8761ca75ce19722357c70e800fb81c2",
+      "text": "dead miНетtaur hunter"
+    },
+    "item.21142.name": {
+      "src_hash": "1eead89c110b3b8184007dbca159c199",
+      "text": "omiНетusly glowing pill"
+    },
+    "item.21174.name": {
+      "src_hash": "e741d74dce7f080438c940b286af0c5b",
+      "text": "miНет lance"
+    },
+    "item.21175.name": {
+      "src_hash": "8b12ff9133621d2345706627df0edbd6",
+      "text": "miНет shield"
+    },
+    "item.21185.name": {
+      "src_hash": "693d9b38da9e5623c8981398a2197d6e",
+      "text": "Нетzzle for cowcoa"
+    },
+    "item.21192.name": {
+      "src_hash": "d093698e7b0e76328885c4e75de82959",
+      "text": "moНет detector"
+    },
+    "item.21293.name": {
+      "src_hash": "24ee6463dfdcf4d91fe009d4c83f9876",
+      "text": "Нетte pinned on the wall"
+    },
+    "item.21300.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.21372.name": {
+      "src_hash": "d13a6aa9ea3df8992504172f60176fdf",
+      "text": "Mr Jones's piaНет"
+    },
+    "item.21400.name": {
+      "src_hash": "1e6db7110903dde602608b8a1114b6f4",
+      "text": "spellbook of the Нетvice"
+    },
+    "item.21410.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.21746.name": {
+      "src_hash": "30389f993165bc4e2e92dcd385dd3be2",
+      "text": "cursed Золото"
+    },
+    "item.21750.name": {
+      "src_hash": "2367e8e3d2f3cb003dc94281a5247b59",
+      "text": "hoard of cursed Золото"
+    },
+    "item.21964.name": {
+      "src_hash": "f7e66c5b9def60a036863408497e2761",
+      "text": "hoard of dragon Золото"
+    },
+    "item.21965.name": {
+      "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+      "text": "sНетw"
+    },
+    "item.21974.name": {
+      "src_hash": "d66e87a95a136c94a33861cdb4e38881",
+      "text": "Золотоen lotus brooch"
+    },
+    "item.22189.name": {
+      "src_hash": "4a64ca90d3d46b19f776fa199161d7c1",
+      "text": "ogre Нетse ring"
+    },
+    "item.22361.name": {
+      "src_hash": "29ee29576a2c18f83df59dcd2e516005",
+      "text": "Золотоen quartzes"
+    },
+    "item.22677.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.22708.name": {
+      "src_hash": "4f91643e6f6853b11b0a605c33daa53c",
+      "text": "Золотоen quartz powder"
+    },
+    "item.22721.name": {
+      "src_hash": "8db5b4acbb608e4c40216e8a35a6d2ab",
+      "text": "Золото token"
+    },
+    "item.22868.name": {
+      "src_hash": "b813dacaf631c292bd038e3ce9d1a528",
+      "text": "Золотоen goblet"
+    },
+    "item.23114.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.23119.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.23124.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.23129.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.23134.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.23139.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.23681.name": {
+      "src_hash": "1d3ca05cd005011143d7663c404e0284",
+      "text": "Золотоen newspaper"
+    },
+    "item.23721.name": {
+      "src_hash": "66701f0cec3a2057e8c6890b9d75917d",
+      "text": "Золото pouch"
+    },
+    "item.23722.name": {
+      "src_hash": "1dcb449bb517860081f0adc358b40a39",
+      "text": "Золото converter"
+    },
+    "item.23723.name": {
+      "src_hash": "6964c6a737445c2e006b12ad17bf8a59",
+      "text": "Золотоen dragon tapestry"
+    },
+    "item.23731.name": {
+      "src_hash": "e52fdfcc84200657871b07c1c6a316b4",
+      "text": "old Нетte"
+    },
+    "item.23739.name": {
+      "src_hash": "d7fcb731d3d143ad3fda709a40727836",
+      "text": "unkНетwn wall"
+    },
+    "item.24040.name": {
+      "src_hash": "1a47fe5358e8233d91182c48422cb395",
+      "text": "unkНетwn item (tree)"
+    },
+    "item.24042.name": {
+      "src_hash": "e1c63e30b3ac887e2a98051c7dfb26b9",
+      "text": "Золотоen path"
+    },
+    "item.24256.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.24386.name": {
+      "src_hash": "35e09add989574c591bb8e7c5e23ba9f",
+      "text": "rhiНет horn carving"
+    },
+    "item.24387.name": {
+      "src_hash": "63502f6623f5a63074475093a9a286ce",
+      "text": "tarnished rhiНет figurine"
+    },
+    "item.24388.name": {
+      "src_hash": "1af08989e5f77df5ed11b89badf00137",
+      "text": "rhiНет hide"
+    },
+    "item.24389.name": {
+      "src_hash": "c22cbd185daec9b5a0cade73c93f4a51",
+      "text": "rhiНет horn"
+    },
+    "item.24497.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.24932.name": {
+      "src_hash": "c370fd52abebc758151f4a2885c66233",
+      "text": "unkНетwn teleport"
+    },
+    "item.24968.name": {
+      "src_hash": "8c33d7a0c4c2bf57fda9a5572d3075e6",
+      "text": "Золотоen talon"
+    },
+    "item.24972.name": {
+      "src_hash": "df4c26bf3b45ed8230a3bfbc7f1606fe",
+      "text": "key to kНетwledge"
+    },
+    "item.24978.name": {
+      "src_hash": "b3365891758efa2f1134405aa750886d",
+      "text": "coal eДа"
+    },
+    "item.25082.name": {
+      "src_hash": "3caecf5670389d15c95984f0d0952e6c",
+      "text": "remains of a stone rhiНет"
+    },
+    "item.25083.name": {
+      "src_hash": "3caecf5670389d15c95984f0d0952e6c",
+      "text": "remains of a stone rhiНет"
+    },
+    "item.25084.name": {
+      "src_hash": "3caecf5670389d15c95984f0d0952e6c",
+      "text": "remains of a stone rhiНет"
+    },
+    "item.25090.name": {
+      "src_hash": "b04156fd513448c03c3f6b483a031e20",
+      "text": "unkНетwn item (tile)"
+    },
+    "item.25131.name": {
+      "src_hash": "08f6db3e2dcc0c5703302f3487305666",
+      "text": "unkНетwn corpse"
+    },
+    "item.25132.name": {
+      "src_hash": "08f6db3e2dcc0c5703302f3487305666",
+      "text": "unkНетwn corpse"
+    },
+    "item.25133.name": {
+      "src_hash": "08f6db3e2dcc0c5703302f3487305666",
+      "text": "unkНетwn corpse"
+    },
+    "item.25134.name": {
+      "src_hash": "08f6db3e2dcc0c5703302f3487305666",
+      "text": "unkНетwn corpse"
+    },
+    "item.25141.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.25200.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.25238.name": {
+      "src_hash": "17666b8e42b19401fcf3f7f5a92e2660",
+      "text": "fur of a wolf wПомощь"
+    },
+    "item.25242.name": {
+      "src_hash": "56f1bc29bbc8bba83002a6225dec77a7",
+      "text": "Нетtes of a poacher"
+    },
+    "item.25689.name": {
+      "src_hash": "591b167b6f3dbaed4425ac505c5d74c6",
+      "text": "Золотоen brush"
+    },
+    "item.25690.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.25719.name": {
+      "src_hash": "95711d053405c72a15d58ba0feb68367",
+      "text": "temporary Золото converter"
+    },
+    "item.25726.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.25749.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.25761.name": {
+      "src_hash": "98695ff5ca1c07290cf0149cd234f6be",
+      "text": "unkНетwn tile"
+    },
+    "item.25782.name": {
+      "src_hash": "80a296284bc3517de3d71320d7b07d6c",
+      "text": "magical music Нетtes"
+    },
+    "item.25843.name": {
+      "src_hash": "6e094e2a219be0d2477a9ff28e812a71",
+      "text": "dead miНетtaur idol"
+    },
+    "item.25844.name": {
+      "src_hash": "6e094e2a219be0d2477a9ff28e812a71",
+      "text": "dead miНетtaur idol"
+    },
+    "item.25845.name": {
+      "src_hash": "6e094e2a219be0d2477a9ff28e812a71",
+      "text": "dead miНетtaur idol"
+    },
+    "item.25846.name": {
+      "src_hash": "6e094e2a219be0d2477a9ff28e812a71",
+      "text": "dead miНетtaur idol"
+    },
+    "item.26075.name": {
+      "src_hash": "08f6db3e2dcc0c5703302f3487305666",
+      "text": "unkНетwn corpse"
+    },
+    "item.26112.name": {
+      "src_hash": "32c199b7813fdca5155ab4a7ba7c6c08",
+      "text": "veНетrean table clock"
+    },
+    "item.26113.name": {
+      "src_hash": "32c199b7813fdca5155ab4a7ba7c6c08",
+      "text": "veНетrean table clock"
+    },
+    "item.26124.name": {
+      "src_hash": "57edf468d04bfd6530d37f475e220be2",
+      "text": "unkНетwn corpse (skeleton)"
+    },
+    "item.27306.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.27307.name": {
+      "src_hash": "10df2dc7501d4b135587b82c9cfb0c1a",
+      "text": "gНетme trigНетmetre"
+    },
+    "item.27308.name": {
+      "src_hash": "9e4ba2ee63957b7d7329c0a43a6798dc",
+      "text": "gНетme chart"
+    },
+    "item.27370.name": {
+      "src_hash": "d49650d99eeb9ada31cf7fd1b6911dc4",
+      "text": "hastily scribbled Нетte"
+    },
+    "item.27444.name": {
+      "src_hash": "9c8fc423756de12be2c12f2f8eb3d769",
+      "text": "Золото nuggets"
+    },
+    "item.27446.name": {
+      "src_hash": "9058dc1282ce4db75af7f885aed75d19",
+      "text": "Золото dust"
+    },
+    "item.27488.name": {
+      "src_hash": "a5c533086098bcd1f0e42f35648ead20",
+      "text": "Золото nugget"
+    },
+    "item.27490.name": {
+      "src_hash": "57edf468d04bfd6530d37f475e220be2",
+      "text": "unkНетwn corpse (skeleton)"
+    },
+    "item.27498.name": {
+      "src_hash": "723ff4d6a4a7958a22ff7fb9887bd46d",
+      "text": "gНетmish pesticides"
+    },
+    "item.27499.name": {
+      "src_hash": "f9f6510337d79846809cacdd74e82799",
+      "text": "Золотоen symbol of Suon"
+    },
+    "item.27582.name": {
+      "src_hash": "08f6db3e2dcc0c5703302f3487305666",
+      "text": "unkНетwn corpse"
+    },
+    "item.27586.name": {
+      "src_hash": "08f6db3e2dcc0c5703302f3487305666",
+      "text": "unkНетwn corpse"
+    },
+    "item.27599.name": {
+      "src_hash": "4f0642c7f14eb3e4ea93bb175313a698",
+      "text": "cave devourer eДа"
+    },
+    "item.27622.name": {
+      "src_hash": "6110c08df8a8c6b9603d1245b9c1977e",
+      "text": "chitiНетus mouth"
+    },
+    "item.27624.name": {
+      "src_hash": "9f8718652a5a94b680425c0e9a09eddc",
+      "text": "longing eДа"
+    },
+    "item.27626.name": {
+      "src_hash": "6110c08df8a8c6b9603d1245b9c1977e",
+      "text": "chitiНетus mouth"
+    },
+    "item.27647.name": {
+      "src_hash": "12db897556ebcdbce1a488f28c855ab7",
+      "text": "gНетme helmet"
+    },
+    "item.27648.name": {
+      "src_hash": "8123261b5782f8ee42614dca171fcc52",
+      "text": "gНетme armor"
+    },
+    "item.27649.name": {
+      "src_hash": "2b1b2ce3fc28766022a5b22dde1ac0e8",
+      "text": "gНетme legs"
+    },
+    "item.27650.name": {
+      "src_hash": "4dac22a8366b330f2018b3afcda1cd9d",
+      "text": "gНетme shield"
+    },
+    "item.27651.name": {
+      "src_hash": "92db096b6aae6aa21c97ae052856a7b1",
+      "text": "gНетme sword"
+    },
+    "item.27652.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.27701.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.27874.name": {
+      "src_hash": "89ce94b3a2723e706b555bc62cd9a666",
+      "text": "sample of Монстр blood"
+    },
+    "item.27933.name": {
+      "src_hash": "b3db16336ca44179e9638254017965ed",
+      "text": "omiНетus book"
+    },
+    "item.27934.name": {
+      "src_hash": "070c15c8c968688acd7940a07f3ed31a",
+      "text": "kНетwledgeable book"
+    },
+    "item.28182.name": {
+      "src_hash": "6e9eda0fd8bda7394767140eeab2fc1e",
+      "text": "eНетrmous ink well"
+    },
+    "item.28183.name": {
+      "src_hash": "c83d7a3b8f1e83acbdff8a7499f6fcd9",
+      "text": "unkНетwn item (statue)"
+    },
+    "item.28201.name": {
+      "src_hash": "c83d7a3b8f1e83acbdff8a7499f6fcd9",
+      "text": "unkНетwn item (statue)"
+    },
+    "item.28462.name": {
+      "src_hash": "f7480db930e8017e4c77bf0fe043e63c",
+      "text": "unkНетwn object"
+    },
+    "item.28469.name": {
+      "src_hash": "d7fcb731d3d143ad3fda709a40727836",
+      "text": "unkНетwn wall"
+    },
+    "item.28488.name": {
+      "src_hash": "aced45995b1b34f3daf8dd2a9622f63f",
+      "text": "parchment of dark kНетwledge"
+    },
+    "item.28515.name": {
+      "src_hash": "d8df57901e2b6a82ad76e80fbdc05cff",
+      "text": "scribbled Нетtes"
+    },
+    "item.28525.name": {
+      "src_hash": "d80b9d9009200a1649accd5296b806d6",
+      "text": "magic Золото converter"
+    },
+    "item.28526.name": {
+      "src_hash": "d80b9d9009200a1649accd5296b806d6",
+      "text": "magic Золото converter"
+    },
+    "item.28603.name": {
+      "src_hash": "7c0a89b9ec82a12ca24a3bc0d2bd789e",
+      "text": "slain kНетwledge elemental"
+    },
+    "item.28604.name": {
+      "src_hash": "7c0a89b9ec82a12ca24a3bc0d2bd789e",
+      "text": "slain kНетwledge elemental"
+    },
+    "item.28605.name": {
+      "src_hash": "7c0a89b9ec82a12ca24a3bc0d2bd789e",
+      "text": "slain kНетwledge elemental"
+    },
+    "item.28606.name": {
+      "src_hash": "7c0a89b9ec82a12ca24a3bc0d2bd789e",
+      "text": "slain kНетwledge elemental"
+    },
+    "item.28657.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.28698.name": {
+      "src_hash": "d029dd6e03685a5d361a80f04c38d278",
+      "text": "forget-me-Нетt"
+    },
+    "item.28734.name": {
+      "src_hash": "61a94843d1232156848443dbc9d22089",
+      "text": "dead grand caНетn dominus"
+    },
+    "item.28735.name": {
+      "src_hash": "61a94843d1232156848443dbc9d22089",
+      "text": "dead grand caНетn dominus"
+    },
+    "item.28736.name": {
+      "src_hash": "61a94843d1232156848443dbc9d22089",
+      "text": "dead grand caНетn dominus"
+    },
+    "item.28737.name": {
+      "src_hash": "61a94843d1232156848443dbc9d22089",
+      "text": "dead grand caНетn dominus"
+    },
+    "item.28854.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.28896.name": {
+      "src_hash": "c3f033a3cdab93970ddbf25b9f7e3c2d",
+      "text": "Золотоen falcon"
+    },
+    "item.28907.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.28952.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.28976.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.29250.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.29286.name": {
+      "src_hash": "b135dac4975890d2c4400b71eff76307",
+      "text": "Золотоen axe"
+    },
+    "item.29296.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.29297.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.29299.name": {
+      "src_hash": "3b8a9380e210a8fb4cc6764836bb6b83",
+      "text": "Золотоen idol of Tukh"
+    },
+    "item.29300.name": {
+      "src_hash": "0d639fe37dc7bb8bf5f7c00cdb03997a",
+      "text": "Золотоen idol of Tukh that is brand-new"
+    },
+    "item.29303.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.29407.name": {
+      "src_hash": "3a0d80b25c18603a29540cc999845d2f",
+      "text": "Нетthing special"
+    },
+    "item.29416.name": {
+      "src_hash": "9114d861ae315ed24a775b7ffeb1d4ab",
+      "text": "overcooked Нетodles"
+    },
+    "item.29944.name": {
+      "src_hash": "09f8107de3978340e24dab1a5f377232",
+      "text": "Izcandar's sНетw globe"
+    },
+    "item.29988.name": {
+      "src_hash": "7a6f38c531fa37d505bb5dcede8d7eea",
+      "text": "miНетtaur skull"
+    },
+    "item.30001.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.30018.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.30055.name": {
+      "src_hash": "809351e3b9f9ef6c6ca22e0c9ff03765",
+      "text": "cruНетr idol"
+    },
+    "item.30070.name": {
+      "src_hash": "b74d2eace8d077506b4dcce7f8b647ce",
+      "text": "dead arachНетphobica"
+    },
+    "item.30071.name": {
+      "src_hash": "b74d2eace8d077506b4dcce7f8b647ce",
+      "text": "dead arachНетphobica"
+    },
+    "item.30072.name": {
+      "src_hash": "b74d2eace8d077506b4dcce7f8b647ce",
+      "text": "dead arachНетphobica"
+    },
+    "item.30073.name": {
+      "src_hash": "b74d2eace8d077506b4dcce7f8b647ce",
+      "text": "dead arachНетphobica"
+    },
+    "item.30086.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.30104.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.30183.name": {
+      "src_hash": "4d71366cfbbff9de01053276e4a9fd3b",
+      "text": "CruНетr's heart"
+    },
+    "item.30184.name": {
+      "src_hash": "4d71366cfbbff9de01053276e4a9fd3b",
+      "text": "CruНетr's heart"
+    },
+    "item.30195.name": {
+      "src_hash": "0db74681576390be91f1d70f2ce01ad0",
+      "text": "Золотоen bell"
+    },
+    "item.30206.name": {
+      "src_hash": "347cdc86129c6cec8c1f23528ad48cde",
+      "text": "Золотоen idol of tukh"
+    },
+    "item.30219.name": {
+      "src_hash": "71119b9e8521e9729d7a62b916ba8fed",
+      "text": "large sНетwball"
+    },
+    "item.30285.name": {
+      "src_hash": "fb9ff6ce1708ccec552adf22021f9c7c",
+      "text": "Золотоen cotton reel"
+    },
+    "item.30319.name": {
+      "src_hash": "1c8e958eee50157a623ee5d2a1c72ecb",
+      "text": "Золотоen horseshoe"
+    },
+    "item.30332.name": {
+      "src_hash": "a449ab08aae1264a4ec4eebb4003c5bc",
+      "text": "dead animated sНетwman"
+    },
+    "item.30333.name": {
+      "src_hash": "a449ab08aae1264a4ec4eebb4003c5bc",
+      "text": "dead animated sНетwman"
+    },
+    "item.30334.name": {
+      "src_hash": "a449ab08aae1264a4ec4eebb4003c5bc",
+      "text": "dead animated sНетwman"
+    },
+    "item.30335.name": {
+      "src_hash": "a449ab08aae1264a4ec4eebb4003c5bc",
+      "text": "dead animated sНетwman"
+    },
+    "item.30336.name": {
+      "src_hash": "b932a6ec0f3bef993326983f5c8808eb",
+      "text": "sНетwman"
+    },
+    "item.30338.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.30352.name": {
+      "src_hash": "967bbe1c45741df2525e7967e0e78d74",
+      "text": "dead lost gНетme"
+    },
+    "item.30353.name": {
+      "src_hash": "967bbe1c45741df2525e7967e0e78d74",
+      "text": "dead lost gНетme"
+    },
+    "item.30354.name": {
+      "src_hash": "967bbe1c45741df2525e7967e0e78d74",
+      "text": "dead lost gНетme"
+    },
+    "item.30355.name": {
+      "src_hash": "967bbe1c45741df2525e7967e0e78d74",
+      "text": "dead lost gНетme"
+    },
+    "item.30972.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.31118.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.31127.name": {
+      "src_hash": "ad921d60486366258809553a3db49a4a",
+      "text": "unkНетwn"
+    },
+    "item.31164.name": {
+      "src_hash": "3b8a9380e210a8fb4cc6764836bb6b83",
+      "text": "Золотоen idol of Tukh"
+    },
+    "item.31170.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.31209.name": {
+      "src_hash": "b077bf2e76ffaa6826a73d77832e2360",
+      "text": "Золотоen miНетtaur skull"
+    },
+    "item.31210.name": {
+      "src_hash": "7a6f38c531fa37d505bb5dcede8d7eea",
+      "text": "miНетtaur skull"
+    },
+    "item.31211.name": {
+      "src_hash": "e1b994081a2425efc0abc88e55d6820b",
+      "text": "Золотоen demon skull"
+    },
+    "item.31223.name": {
+      "src_hash": "b077bf2e76ffaa6826a73d77832e2360",
+      "text": "Золотоen miНетtaur skull"
+    },
+    "item.31224.name": {
+      "src_hash": "7a6f38c531fa37d505bb5dcede8d7eea",
+      "text": "miНетtaur skull"
+    },
+    "item.31225.name": {
+      "src_hash": "e1b994081a2425efc0abc88e55d6820b",
+      "text": "Золотоen demon skull"
+    },
+    "item.31255.name": {
+      "src_hash": "5e5c50c0589eb51ef7bbda756367d830",
+      "text": "dead cart packed with Золото"
+    },
+    "item.31256.name": {
+      "src_hash": "5e5c50c0589eb51ef7bbda756367d830",
+      "text": "dead cart packed with Золото"
+    },
+    "item.31257.name": {
+      "src_hash": "5e5c50c0589eb51ef7bbda756367d830",
+      "text": "dead cart packed with Золото"
+    },
+    "item.31258.name": {
+      "src_hash": "5e5c50c0589eb51ef7bbda756367d830",
+      "text": "dead cart packed with Золото"
+    },
+    "item.31324.name": {
+      "src_hash": "6fdbac6edb7246c4dbe3e991c8778220",
+      "text": "Золотоen mask"
+    },
+    "item.31350.name": {
+      "src_hash": "d2c9d74d6fa1ce2afb36d236be346ab9",
+      "text": "flask of halluciНетgen"
+    },
+    "item.31381.name": {
+      "src_hash": "3e47b75000b0924b6c9ba5759a7cf15d",
+      "text": "Нетthing"
+    },
+    "item.31444.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.31448.name": {
+      "src_hash": "ad921d60486366258809553a3db49a4a",
+      "text": "unkНетwn"
+    },
+    "item.31484.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.31490.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.31500.name": {
+      "src_hash": "135c787075ebbbb62c124782eec8b70d",
+      "text": "Золотоen outfit display"
+    },
+    "item.31501.name": {
+      "src_hash": "ad56baad8275dbe1f12b69323383ae6c",
+      "text": "unkНетwn ground"
+    },
+    "item.31502.name": {
+      "src_hash": "135c787075ebbbb62c124782eec8b70d",
+      "text": "Золотоen outfit display"
+    },
+    "item.31503.name": {
+      "src_hash": "135c787075ebbbb62c124782eec8b70d",
+      "text": "Золотоen outfit display"
+    },
+    "item.31504.name": {
+      "src_hash": "135c787075ebbbb62c124782eec8b70d",
+      "text": "Золотоen outfit display"
+    },
+    "item.31505.name": {
+      "src_hash": "135c787075ebbbb62c124782eec8b70d",
+      "text": "Золотоen outfit display"
+    },
+    "item.31506.name": {
+      "src_hash": "135c787075ebbbb62c124782eec8b70d",
+      "text": "Золотоen outfit display"
+    },
+    "item.31507.name": {
+      "src_hash": "135c787075ebbbb62c124782eec8b70d",
+      "text": "Золотоen outfit display"
+    },
+    "item.31508.name": {
+      "src_hash": "135c787075ebbbb62c124782eec8b70d",
+      "text": "Золотоen outfit display"
+    },
+    "item.31509.name": {
+      "src_hash": "135c787075ebbbb62c124782eec8b70d",
+      "text": "Золотоen outfit display"
+    },
+    "item.31510.name": {
+      "src_hash": "135c787075ebbbb62c124782eec8b70d",
+      "text": "Золотоen outfit display"
+    },
+    "item.31511.name": {
+      "src_hash": "135c787075ebbbb62c124782eec8b70d",
+      "text": "Золотоen outfit display"
+    },
+    "item.31512.name": {
+      "src_hash": "135c787075ebbbb62c124782eec8b70d",
+      "text": "Золотоen outfit display"
+    },
+    "item.31513.name": {
+      "src_hash": "135c787075ebbbb62c124782eec8b70d",
+      "text": "Золотоen outfit display"
+    },
+    "item.31514.name": {
+      "src_hash": "135c787075ebbbb62c124782eec8b70d",
+      "text": "Золотоen outfit display"
+    },
+    "item.31515.name": {
+      "src_hash": "135c787075ebbbb62c124782eec8b70d",
+      "text": "Золотоen outfit display"
+    },
+    "item.31516.name": {
+      "src_hash": "135c787075ebbbb62c124782eec8b70d",
+      "text": "Золотоen outfit display"
+    },
+    "item.31548.name": {
+      "src_hash": "6392a105b3cdfe91a15ba683e26baee8",
+      "text": "dead ugly Монстр"
+    },
+    "item.31549.name": {
+      "src_hash": "6392a105b3cdfe91a15ba683e26baee8",
+      "text": "dead ugly Монстр"
+    },
+    "item.31550.name": {
+      "src_hash": "6392a105b3cdfe91a15ba683e26baee8",
+      "text": "dead ugly Монстр"
+    },
+    "item.31551.name": {
+      "src_hash": "6392a105b3cdfe91a15ba683e26baee8",
+      "text": "dead ugly Монстр"
+    },
+    "item.31572.name": {
+      "src_hash": "16a92c16b5beb09964fa6d3e86f2edda",
+      "text": "blue and Золотоen cordon"
+    },
+    "item.31575.name": {
+      "src_hash": "a43a6b129984c525e3889d6939658be9",
+      "text": "Золотоen bijou"
+    },
+    "item.31593.name": {
+      "src_hash": "b8594937ed5960d2b4aa2a4f761d9a0b",
+      "text": "Нетble cape"
+    },
+    "item.31595.name": {
+      "src_hash": "bf8b5d8be22d45ddb618d0077c4f2b0f",
+      "text": "Нетble amulet"
+    },
+    "item.31673.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.31676.name": {
+      "src_hash": "843217a8f3752b5ddcc71c4fc70a679b",
+      "text": "Нетte about two souls"
+    },
+    "item.31721.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.31722.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.31732.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.31736.name": {
+      "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+      "text": "unkНетwn item"
+    },
+    "item.31911.name": {
+      "src_hash": "9d22021951badea176299a7892425c7c",
+      "text": "Золотоen sea horse figurine"
+    },
+    "item.31929.name": {
+      "src_hash": "ad921d60486366258809553a3db49a4a",
+      "text": "unkНетwn"
+    },
+    "item.31957.name": {
+      "src_hash": "ad921d60486366258809553a3db49a4a",
+      "text": "unkНетwn"
+    },
+    "item.32064.name": {
+      "src_hash": "d5ee3dd793973025f698c5a826821760",
+      "text": "all kНетwing sausages"
+    },
+    "item.32176.name": {
+      "src_hash": "ab3ca850b2d87626dcfbda7e1e4a4140",
+      "text": "unkНетw item"
+    },
+    "item.32263.name": {
+      "src_hash": "ab3ca850b2d87626dcfbda7e1e4a4140",
+      "text": "unkНетw item"
+    },
+    "item.32264.name": {
+      "src_hash": "ab3ca850b2d87626dcfbda7e1e4a4140",
+      "text": "unkНетw item"
+    },
+    "item.32265.name": {
+      "src_hash": "ab3ca850b2d87626dcfbda7e1e4a4140",
+      "text": "unkНетw item"
+    },
+    "item.32266.name": {
+      "src_hash": "ab3ca850b2d87626dcfbda7e1e4a4140",
+      "text": "unkНетw item"
+    },
+    "item.32267.name": {
+      "src_hash": "ab3ca850b2d87626dcfbda7e1e4a4140",
+      "text": "unkНетw item"
+    },
+    "item.32268.name": {
+      "src_hash": "ab3ca850b2d87626dcfbda7e1e4a4140",
+      "text": "unkНетw item"
+    },
+    "item.32411.name": {
+      "src_hash": "ad921d60486366258809553a3db49a4a",
+      "text": "unkНетwn"
+    },
+    "item.32417.name": {
+      "src_hash": "5c940de9c166a32dc1f63d9dafc6822f",
+      "text": "unkНетw"
+    },
+    "item.32481.name": {
+      "src_hash": "b5968610bbefa5c9de3eb746bd6c8db9",
+      "text": "caНетpy headboard"
+    },
+    "item.32490.name": {
+      "src_hash": "933a95150598b7911ab8ae25dd7021a0",
+      "text": "caНетpy footboard"
+    },
+    "item.32499.name": {
+      "src_hash": "b5968610bbefa5c9de3eb746bd6c8db9",
+      "text": "caНетpy headboard"
+    },
+    "item.32508.name": {
+      "src_hash": "933a95150598b7911ab8ae25dd7021a0",
+      "text": "caНетpy footboard"
+    },
+    "item.32517.name": {
+      "src_hash": "b5968610bbefa5c9de3eb746bd6c8db9",
+      "text": "caНетpy headboard"
+    },
+    "item.32526.name": {
+      "src_hash": "b5968610bbefa5c9de3eb746bd6c8db9",
+      "text": "caНетpy headboard"
+    },
+    "item.32535.name": {
+      "src_hash": "933a95150598b7911ab8ae25dd7021a0",
+      "text": "caНетpy footboard"
+    },
+    "item.32548.name": {
+      "src_hash": "b5968610bbefa5c9de3eb746bd6c8db9",
+      "text": "caНетpy headboard"
+    },
+    "item.32557.name": {
+      "src_hash": "b5968610bbefa5c9de3eb746bd6c8db9",
+      "text": "caНетpy headboard"
+    },
+    "item.32566.name": {
+      "src_hash": "933a95150598b7911ab8ae25dd7021a0",
+      "text": "caНетpy footboard"
+    },
+    "item.32568.name": {
+      "src_hash": "5c940de9c166a32dc1f63d9dafc6822f",
+      "text": "unkНетw"
+    },
+    "item.32569.name": {
+      "src_hash": "5c940de9c166a32dc1f63d9dafc6822f",
+      "text": "unkНетw"
+    },
+    "item.32570.name": {
+      "src_hash": "5c940de9c166a32dc1f63d9dafc6822f",
+      "text": "unkНетw"
+    },
+    "item.32571.name": {
+      "src_hash": "5c940de9c166a32dc1f63d9dafc6822f",
+      "text": "unkНетw"
+    },
+    "item.32577.name": {
+      "src_hash": "5c940de9c166a32dc1f63d9dafc6822f",
+      "text": "unkНетw"
+    },
+    "item.32590.name": {
+      "src_hash": "5c940de9c166a32dc1f63d9dafc6822f",
+      "text": "unkНетw"
+    },
+    "item.32592.name": {
+      "src_hash": "5c940de9c166a32dc1f63d9dafc6822f",
+      "text": "unkНетw"
+    },
+    "item.32597.name": {
+      "src_hash": "13dd00f631b4f16145b92f39828725b5",
+      "text": "raveНетus circlet"
+    },
+    "item.32604.name": {
+      "src_hash": "ab3ca850b2d87626dcfbda7e1e4a4140",
+      "text": "unkНетw item"
+    },
+    "item.32605.name": {
+      "src_hash": "ab3ca850b2d87626dcfbda7e1e4a4140",
+      "text": "unkНетw item"
+    },
+    "item.32606.name": {
+      "src_hash": "ab3ca850b2d87626dcfbda7e1e4a4140",
+      "text": "unkНетw item"
+    },
+    "item.32614.name": {
+      "src_hash": "ab3ca850b2d87626dcfbda7e1e4a4140",
+      "text": "unkНетw item"
+    },
+    "item.32615.name": {
+      "src_hash": "ab3ca850b2d87626dcfbda7e1e4a4140",
+      "text": "unkНетw item"
+    },
+    "item.32637.name": {
+      "src_hash": "5c940de9c166a32dc1f63d9dafc6822f",
+      "text": "unkНетw"
+    },
+    "item.32638.name": {
+      "src_hash": "5c940de9c166a32dc1f63d9dafc6822f",
+      "text": "unkНетw"
+    },
+    "item.32639.name": {
+      "src_hash": "5c940de9c166a32dc1f63d9dafc6822f",
+      "text": "unkНетw"
+    },
+    "item.32694.name": {
+      "src_hash": "5c940de9c166a32dc1f63d9dafc6822f",
+      "text": "unkНетw"
+    },
+    "item.32695.name": {
+      "src_hash": "5c940de9c166a32dc1f63d9dafc6822f",
+      "text": "unkНетw"
+    },
+    "item.32696.name": {
+      "src_hash": "5c940de9c166a32dc1f63d9dafc6822f",
+      "text": "unkНетw"
+    },
+    "item.32706.name": {
+      "src_hash": "5c940de9c166a32dc1f63d9dafc6822f",
+      "text": "unkНетw"
+    },
+    "item.32724.name": {
+      "src_hash": "d370efc03f8adbcf75c57c7721128a12",
+      "text": "spectral Золото nugget"
+    },
+    "item.32738.name": {
+      "src_hash": "6ab028801f296c531b56bfde0026e3b0",
+      "text": "dead unДобро пожаловать"
+    },
+    "item.32739.name": {
+      "src_hash": "6ab028801f296c531b56bfde0026e3b0",
+      "text": "dead unДобро пожаловать"
+    },
+    "item.32740.name": {
+      "src_hash": "6ab028801f296c531b56bfde0026e3b0",
+      "text": "dead unДобро пожаловать"
+    },
+    "item.32741.name": {
+      "src_hash": "6ab028801f296c531b56bfde0026e3b0",
+      "text": "dead unДобро пожаловать"
+    },
+    "item.32756.name": {
+      "src_hash": "0bbd5cfea325148575f315d753690f49",
+      "text": "Золото hunter trophy"
+    },
+    "item.32767.name": {
+      "src_hash": "ad921d60486366258809553a3db49a4a",
+      "text": "unkНетwn"
+    },
+    "item.32786.name": {
+      "src_hash": "7a46b7890592d8ae421c2eeeed179b95",
+      "text": "Ferumbras' sНетwman"
+    },
+    "item.32787.name": {
+      "src_hash": "7a46b7890592d8ae421c2eeeed179b95",
+      "text": "Ferumbras' sНетwman"
+    },
+    "item.32794.name": {
+      "src_hash": "ad921d60486366258809553a3db49a4a",
+      "text": "unkНетwn"
+    },
+    "item.32917.name": {
+      "src_hash": "3b496790a0824c91ca6b4998cb6fff27",
+      "text": "Золото deed"
+    },
+    "item.32921.name": {
+      "src_hash": "1a7841239af9e3d0fc33ce53112f1b88",
+      "text": "Золото cup"
+    },
+    "item.32925.name": {
+      "src_hash": "168ced794bc19d67c90313705f1e4d3c",
+      "text": "Золотоen crown"
+    },
+    "item.33309.name": {
+      "src_hash": "a3851e5f9b90a67d33b2b73fa85af8dc",
+      "text": "Золотоen marble"
+    },
+    "item.33330.name": {
+      "src_hash": "daf446eb3c0e5fc92dee8a6336628cff",
+      "text": "moНетlith of the planes kit"
+    },
+    "item.33943.name": {
+      "src_hash": "f835a2a59f1f0c77f7cc5ea4c7e3a87b",
+      "text": "werehyaena Нетse"
+    },
+    "item.34064.name": {
+      "src_hash": "503bc5500e2fef2a2ad7b8c1e36e6110",
+      "text": "sculpture of a Нетblewoman"
+    },
+    "item.34065.name": {
+      "src_hash": "503bc5500e2fef2a2ad7b8c1e36e6110",
+      "text": "sculpture of a Нетblewoman"
+    },
+    "item.34066.name": {
+      "src_hash": "503bc5500e2fef2a2ad7b8c1e36e6110",
+      "text": "sculpture of a Нетblewoman"
+    },
+    "item.34067.name": {
+      "src_hash": "503bc5500e2fef2a2ad7b8c1e36e6110",
+      "text": "sculpture of a Нетblewoman"
+    },
+    "item.34068.name": {
+      "src_hash": "503bc5500e2fef2a2ad7b8c1e36e6110",
+      "text": "sculpture of a Нетblewoman"
+    },
+    "item.34069.name": {
+      "src_hash": "503bc5500e2fef2a2ad7b8c1e36e6110",
+      "text": "sculpture of a Нетblewoman"
+    },
+    "item.34070.name": {
+      "src_hash": "503bc5500e2fef2a2ad7b8c1e36e6110",
+      "text": "sculpture of a Нетblewoman"
+    },
+    "item.34071.name": {
+      "src_hash": "503bc5500e2fef2a2ad7b8c1e36e6110",
+      "text": "sculpture of a Нетblewoman"
+    },
+    "item.34205.name": {
+      "src_hash": "92dbbd84c76e7c097a5cf4287fe0b4c7",
+      "text": "dead srezz yellow eДа"
+    },
+    "item.34206.name": {
+      "src_hash": "92dbbd84c76e7c097a5cf4287fe0b4c7",
+      "text": "dead srezz yellow eДа"
+    },
+    "item.34207.name": {
+      "src_hash": "92dbbd84c76e7c097a5cf4287fe0b4c7",
+      "text": "dead srezz yellow eДа"
+    },
+    "item.34208.name": {
+      "src_hash": "92dbbd84c76e7c097a5cf4287fe0b4c7",
+      "text": "dead srezz yellow eДа"
+    },
+    "item.34330.name": {
+      "src_hash": "1a7841239af9e3d0fc33ce53112f1b88",
+      "text": "Золото cup"
+    },
+    "item.34331.name": {
+      "src_hash": "6c91fabffc0d1fbefed4a1cfab90b835",
+      "text": "Золотоen magic longsword"
+    },
+    "item.35579.name": {
+      "src_hash": "d71bbb451b4a9fb80c35c6acec23375e",
+      "text": "Золотоen dustbin"
+    },
+    "item.35580.name": {
+      "src_hash": "035a75579fd25a4fc12555fdc661a8ea",
+      "text": "Золотоen skull"
+    },
+    "item.35581.name": {
+      "src_hash": "8bdaa8ba3c06427eb6075ea70e3d90bd",
+      "text": "Золотоen cheese wedge"
+    },
+    "item.35586.name": {
+      "src_hash": "e9225404ed6a75bc552f979c527c77be",
+      "text": "Золотоen shark trophy"
+    },
+    "item.35589.name": {
+      "src_hash": "cf83f5c45598316d8d217109a3e408e6",
+      "text": "sНетwbash figurine"
+    },
+    "item.35973.name": {
+      "src_hash": "999b44197285c284af591b2a314708d4",
+      "text": "podium of reНетwn"
+    },
+    "item.35974.name": {
+      "src_hash": "999b44197285c284af591b2a314708d4",
+      "text": "podium of reНетwn"
+    },
+    "item.36478.name": {
+      "src_hash": "1ac33457942b92285ea545afecb360b5",
+      "text": "baНетr doll"
+    },
+    "item.36479.name": {
+      "src_hash": "1ac33457942b92285ea545afecb360b5",
+      "text": "baНетr doll"
+    },
+    "item.36480.name": {
+      "src_hash": "1ac33457942b92285ea545afecb360b5",
+      "text": "baНетr doll"
+    },
+    "item.36481.name": {
+      "src_hash": "1ac33457942b92285ea545afecb360b5",
+      "text": "baНетr doll"
+    },
+    "item.36599.name": {
+      "src_hash": "23912ef731cb7fd9e158e5286f236467",
+      "text": "fiery gНетmish stonesmasher"
+    },
+    "item.36600.name": {
+      "src_hash": "e9694383c4452f8e8478052250b663a0",
+      "text": "gНетmish stonesmasher"
+    },
+    "item.36605.name": {
+      "src_hash": "9b8585de1b0f7ad9d0808d2e115ea2da",
+      "text": "gНетmish lava fishing rod"
+    },
+    "item.36715.name": {
+      "src_hash": "b53d9d241cfa880f2cf2794a07cc0c65",
+      "text": "gНетme pick"
+    },
+    "item.36772.name": {
+      "src_hash": "6e66d7bbb83b949cac3135e579bfd0fd",
+      "text": "streaked devourer eДа"
+    },
+    "item.36875.name": {
+      "src_hash": "7302a318c5812f1c8eec0f0631a0f1b0",
+      "text": "Золотоen hand mirror"
+    },
+    "item.36887.name": {
+      "src_hash": "6f269602cfec17a2b0a84ae714033e42",
+      "text": "dead poisoНетus carnisylvan"
+    },
+    "item.36888.name": {
+      "src_hash": "6f269602cfec17a2b0a84ae714033e42",
+      "text": "dead poisoНетus carnisylvan"
+    },
+    "item.36889.name": {
+      "src_hash": "6f269602cfec17a2b0a84ae714033e42",
+      "text": "dead poisoНетus carnisylvan"
+    },
+    "item.36890.name": {
+      "src_hash": "6f269602cfec17a2b0a84ae714033e42",
+      "text": "dead poisoНетus carnisylvan"
+    },
+    "item.36923.name": {
+      "src_hash": "ee9d063ea600ae701e6a9e154398b5ed",
+      "text": "ritual Нетtes"
+    },
+    "item.36981.name": {
+      "src_hash": "c6da19fa3e0f42f36c88168a35859264",
+      "text": "gНетme shovel"
+    },
+    "item.36993.name": {
+      "src_hash": "1a7841239af9e3d0fc33ce53112f1b88",
+      "text": "Золото cup"
+    },
+    "item.36994.name": {
+      "src_hash": "cbadb3e1019db6131df8146738f2b170",
+      "text": "Золотоen blessed shield"
+    },
+    "item.37163.name": {
+      "src_hash": "1a7841239af9e3d0fc33ce53112f1b88",
+      "text": "Золото cup"
+    },
+    "item.37164.name": {
+      "src_hash": "6328077055df607a3f6597670efcb762",
+      "text": "Золотоen horned helmet"
+    },
+    "item.37272.name": {
+      "src_hash": "79bc8bd448332c00fa0b962cd10b33ca",
+      "text": "confetti canНетn"
+    },
+    "item.37409.name": {
+      "src_hash": "61efa2ddf6f39789c50021ba862c66fd",
+      "text": "picture of VeНетre's Statue"
+    },
+    "item.37463.name": {
+      "src_hash": "9309fcd71a76179eeb798c87934ba32c",
+      "text": "lumiНетus box"
+    },
+    "item.37542.name": {
+      "src_hash": "834c0ede47db2a474cda942490c73b4e",
+      "text": "Золотоen wallpaper"
+    },
+    "item.37546.name": {
+      "src_hash": "51c269b25899ecb7ac2f959a8d487322",
+      "text": "tapestry of hoНетur"
+    },
+    "item.37571.name": {
+      "src_hash": "d6cf69b57067c0025e211c8c045f7cb5",
+      "text": "aНетther yellow present kit"
+    },
+    "item.38639.name": {
+      "src_hash": "1a7841239af9e3d0fc33ce53112f1b88",
+      "text": "Золото cup"
+    },
+    "item.38642.name": {
+      "src_hash": "11279321557db4be6ccc89e1f95540fa",
+      "text": "Золотоen warlord sword"
+    },
+    "item.38650.name": {
+      "src_hash": "97c697992f787b08c6deaa9dd5a57f1d",
+      "text": "Золотоen hand"
+    },
+    "item.38826.name": {
+      "src_hash": "27284b902ed21d9d219b720ae071fea9",
+      "text": "volcaНет barbecue"
+    },
+    "item.38843.name": {
+      "src_hash": "b02d6b87e4960d3381ed86a4a7926c46",
+      "text": "silver and a Золотоen hand"
+    },
+    "item.39151.name": {
+      "src_hash": "ded62174b58764c8d8182799adb548ac",
+      "text": "arcaНетmancer regalia"
+    },
+    "item.39152.name": {
+      "src_hash": "3bc9c36d7554cb431c7dabaf56a651f8",
+      "text": "arcaНетmancer folio"
+    },
+    "item.39183.name": {
+      "src_hash": "40132f4b61db65a79d261bd62233ae38",
+      "text": "charged arcaНетmancer sigil"
+    },
+    "item.39184.name": {
+      "src_hash": "40132f4b61db65a79d261bd62233ae38",
+      "text": "charged arcaНетmancer sigil"
+    },
+    "item.39185.name": {
+      "src_hash": "34d25cbba8e2d3f901d885ca3a670d23",
+      "text": "arcaНетmancer sigil"
+    },
+    "item.39320.name": {
+      "src_hash": "cf4345aeb3e46adfd2e6dd81543809d2",
+      "text": "dead Нетxious ripptor"
+    },
+    "item.39321.name": {
+      "src_hash": "cf4345aeb3e46adfd2e6dd81543809d2",
+      "text": "dead Нетxious ripptor"
+    },
+    "item.39322.name": {
+      "src_hash": "cf4345aeb3e46adfd2e6dd81543809d2",
+      "text": "dead Нетxious ripptor"
+    },
+    "item.39323.name": {
+      "src_hash": "cf4345aeb3e46adfd2e6dd81543809d2",
+      "text": "dead Нетxious ripptor"
+    },
+    "item.39671.name": {
+      "src_hash": "40517dafb9abf4e6a21d2b65d5b0dc2b",
+      "text": "balloon Нет.0"
+    },
+    "item.39672.name": {
+      "src_hash": "bed7be81921958eba532dcf50acc76e4",
+      "text": "balloon Нет.1"
+    },
+    "item.39673.name": {
+      "src_hash": "5ac4bfe4f12d9bae8dc01d9ce0d98510",
+      "text": "balloon Нет.2"
+    },
+    "item.39674.name": {
+      "src_hash": "2f6c6b15c9f227c6091d667d647d0a5a",
+      "text": "balloon Нет.3"
+    },
+    "item.39675.name": {
+      "src_hash": "b0bb08096b0e0bcf9b498ae1cbb0baea",
+      "text": "balloon Нет.4"
+    },
+    "item.39676.name": {
+      "src_hash": "8566c5e1e4238ecae6832c9da57ab438",
+      "text": "balloon Нет.5"
+    },
+    "item.39677.name": {
+      "src_hash": "3f4c23414a15c2a1a9ecfd157bd49a6b",
+      "text": "balloon Нет.6"
+    },
+    "item.39678.name": {
+      "src_hash": "2384147b041dcea2f135278aed134539",
+      "text": "balloon Нет.7"
+    },
+    "item.39679.name": {
+      "src_hash": "5bfc57445414a5def54a28e829e54f49",
+      "text": "balloon Нет.8"
+    },
+    "item.39680.name": {
+      "src_hash": "665219c727f769fb87c5fca7bb17b332",
+      "text": "balloon Нет.9"
+    },
+    "item.39683.name": {
+      "src_hash": "40517dafb9abf4e6a21d2b65d5b0dc2b",
+      "text": "balloon Нет.0"
+    },
+    "item.39684.name": {
+      "src_hash": "bed7be81921958eba532dcf50acc76e4",
+      "text": "balloon Нет.1"
+    },
+    "item.39685.name": {
+      "src_hash": "5ac4bfe4f12d9bae8dc01d9ce0d98510",
+      "text": "balloon Нет.2"
+    },
+    "item.39686.name": {
+      "src_hash": "2f6c6b15c9f227c6091d667d647d0a5a",
+      "text": "balloon Нет.3"
+    },
+    "item.39687.name": {
+      "src_hash": "b0bb08096b0e0bcf9b498ae1cbb0baea",
+      "text": "balloon Нет.4"
+    },
+    "item.39688.name": {
+      "src_hash": "8566c5e1e4238ecae6832c9da57ab438",
+      "text": "balloon Нет.5"
+    },
+    "item.39689.name": {
+      "src_hash": "3f4c23414a15c2a1a9ecfd157bd49a6b",
+      "text": "balloon Нет.6"
+    },
+    "item.39690.name": {
+      "src_hash": "2384147b041dcea2f135278aed134539",
+      "text": "balloon Нет.7"
+    },
+    "item.39691.name": {
+      "src_hash": "5bfc57445414a5def54a28e829e54f49",
+      "text": "balloon Нет.8"
+    },
+    "item.39692.name": {
+      "src_hash": "665219c727f769fb87c5fca7bb17b332",
+      "text": "balloon Нет.9"
+    },
+    "item.40594.name": {
+      "src_hash": "8eb45ce3c4c7c2bba7ec8a1f84149444",
+      "text": "alchemist's Нетtepad"
+    },
+    "item.42247.name": {
+      "src_hash": "ce5635f081bfd5c31412de8c0c010efb",
+      "text": "dead Монстр"
+    },
+    "item.42248.name": {
+      "src_hash": "ce5635f081bfd5c31412de8c0c010efb",
+      "text": "dead Монстр"
+    },
+    "item.42249.name": {
+      "src_hash": "ce5635f081bfd5c31412de8c0c010efb",
+      "text": "dead Монстр"
+    },
+    "item.43734.name": {
+      "src_hash": "fee9bf27bb6d32f98ebe6e251ed72ee9",
+      "text": "Золотоen sun coin"
+    },
+    "item.43735.name": {
+      "src_hash": "79e11d2ebdb95a2fb838506a160ae06e",
+      "text": "Золотоen tiger coin"
+    },
+    "item.44751.name": {
+      "src_hash": "1d844eeb6a22c25ac724441b046cc753",
+      "text": "Золото-scaled sentinel"
+    },
+    "item.47400.name": {
+      "src_hash": "ba87c6ac09929e498d656c534b6e334c",
+      "text": "miНетtaur mage soul core"
+    },
+    "item.47401.name": {
+      "src_hash": "a25ab13fde95a062d28dd93c95e7f8d0",
+      "text": "miНетtaur archer soul core"
+    },
+    "item.47402.name": {
+      "src_hash": "c1542613889a6093ab5a87c31aa8f68a",
+      "text": "miНетtaur soul core"
+    },
+    "item.47406.name": {
+      "src_hash": "b05f48733528704c218b26ba0bab3e83",
+      "text": "miНетtaur guard soul core"
+    },
+    "item.47493.name": {
+      "src_hash": "795c52742299da2bea4e93bfb5084963",
+      "text": "dworc veНетmsniper soul core"
+    },
+    "item.47524.name": {
+      "src_hash": "4a42593ec704b6ab99dd57f6f3e66f44",
+      "text": "Нетvice of the cult soul core"
+    },
+    "item.47533.name": {
+      "src_hash": "cdf59722723f6e5ebc5da9a0f3b22561",
+      "text": "son of vermiНетr soul core"
+    },
+    "item.47558.name": {
+      "src_hash": "9fff14f26dc5a0bf1492696e0c649feb",
+      "text": "Нетmad soul core (basic)"
+    },
+    "item.47685.name": {
+      "src_hash": "ee5b3c85afd27619617a92bfa12b7f46",
+      "text": "lizard Нетble soul core"
+    },
+    "item.47705.name": {
+      "src_hash": "85c27b41f6daec213f49207b8fa550f0",
+      "text": "Золотоen servant soul core"
+    },
+    "item.47792.name": {
+      "src_hash": "f5b75cdc3d83bf6e40a208a4e779a165",
+      "text": "miНетtaur amazon soul core"
+    },
+    "item.47795.name": {
+      "src_hash": "5a3ccc2241c939e7d64d1c896d163578",
+      "text": "miНетtaur hunter soul core"
+    },
+    "item.47871.name": {
+      "src_hash": "aafbf9292ab084b31009c6d255bda24d",
+      "text": "miНетtaur cult follower soul core"
+    },
+    "item.47872.name": {
+      "src_hash": "7b0ac0e0362c1b31ce9ac2efca90e68b",
+      "text": "miНетtaur cult prophet soul core"
+    },
+    "item.47873.name": {
+      "src_hash": "dfa7cb650b214a7845677ed5882ca0c2",
+      "text": "miНетtaur cult zealot soul core"
+    },
+    "item.47888.name": {
+      "src_hash": "acd1cdf7b6e77c003f945f1f4c7ec7d5",
+      "text": "raveНетus lava lurker soul core"
+    },
+    "item.47923.name": {
+      "src_hash": "b3a912d5ef4fef16a9d573ac53f42d91",
+      "text": "arachНетphobica soul core"
+    },
+    "item.48005.name": {
+      "src_hash": "1e51c6602e9b4c77ee7d3d6a0c73a4f4",
+      "text": "poisoНетus carnisylvan soul core"
+    },
+    "item.48050.name": {
+      "src_hash": "049caae9cd222058b73b7d85f0b2fb80",
+      "text": "Нетxious ripptor soul core"
+    },
+    "item.48089.name": {
+      "src_hash": "bdd262000c2a8a22dd03ba43e20ac95b",
+      "text": "albiНет dragon soul core"
+    },
+    "item.48509.name": {
+      "src_hash": "18b43c4d46fb5816176d7a697fae728e",
+      "text": "resiНетus fish fin"
+    },
+    "item.48950.name": {
+      "src_hash": "1422bc20b9a66f55d2f050c99f014fb4",
+      "text": "hoНетur guard soul core"
+    },
+    "item.48965.name": {
+      "src_hash": "d9a14803ef7cc90e542028b4ec24898b",
+      "text": "Нетmad soul core (blue)"
+    },
+    "item.48966.name": {
+      "src_hash": "29f806defe5e732f4b663c1966516089",
+      "text": "Нетmad soul core (female)"
+    },
+    "item.48971.name": {
+      "src_hash": "58ee18980be240fd595d247dff25ad6d",
+      "text": "Нетrthern pike soul core"
+    },
+    "item.49002.name": {
+      "src_hash": "f3c00c110a27c68284d913d36ba03a95",
+      "text": "miНетtaur invader soul core"
+    },
+    "item.49003.name": {
+      "src_hash": "b810c72eca4ee6be20710a59f7466b16",
+      "text": "Нетble lion soul core"
+    },
+    "item.49009.name": {
+      "src_hash": "5b5a8c2f7ac532ae0c8773bd698b208a",
+      "text": "Золотоen servant replica soul core"
+    },
+    "item.49012.name": {
+      "src_hash": "3e9eadc63e7dfe8455639e4e1dd8e49e",
+      "text": "stone rhiНет soul core"
+    },
+    "item.49014.name": {
+      "src_hash": "c063f9b1778205c98ebd478f8067068d",
+      "text": "Золотоhanded cultist soul core"
+    },
+    "item.49015.name": {
+      "src_hash": "73ca838d04f8394baef62fc74230da21",
+      "text": "Золотоhanded cultist bride soul core"
+    },
+    "item.49025.name": {
+      "src_hash": "2bd32cf2b0a1df9a10a9913f88ef5cae",
+      "text": "kНетwledge elemental soul core"
+    },
+    "item.49031.name": {
+      "src_hash": "bc10b795fa27feeb5cdbf8501ee4f3e4",
+      "text": "animated sНетwman soul core"
+    },
+    "item.49163.name": {
+      "src_hash": "3b21a4eb7e5f12dc04034f370440348c",
+      "text": "omiНетus soul core"
     }
   },
   "pl": {

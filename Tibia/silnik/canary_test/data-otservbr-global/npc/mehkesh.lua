@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Potions brewed by the leading alchemists of the land!" },
+	{ i18nKey = "npc.mehkesh.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

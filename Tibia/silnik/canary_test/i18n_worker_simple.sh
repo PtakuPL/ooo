@@ -240,7 +240,7 @@ EXCLUDED_FILE = "i18n_excluded_files.txt"
 
 # Git root - tam gdzie jest .git (dla pushowania I18N_STATUS.md)
 try:
-    GIT_ROOT = subprocess.check_output(['git', 'rev-parse', '--show-toplevel'], stderr=subprocess.DEVNULL).decode().strip()
+    GIT_ROOT = "/home/ptaku/serweryt"
 except:
     GIT_ROOT = WORK_DIR
 
@@ -1389,30 +1389,80 @@ if 'addFarewellKeyword' in content:
 greet_fare_total = greet_counter[0] + farewell_counter[0]
 
 #==============================================================================
+# TRANSFORMACJA 4: npcConfig.voices { text = "..." } → { i18nKey = "..." }
+#==============================================================================
+voices_counter = [0]
+
+# Proste podejście: znajdź wszystkie { text = "..." } po npcConfig.voices
+if 'npcConfig.voices' in content:
+    # Znajdź pozycję początku voices
+    voices_start = content.find('npcConfig.voices')
+    if voices_start >= 0:
+        # Znajdź otwierający nawias bloku voices
+        brace_start = content.find('{', voices_start)
+        if brace_start >= 0:
+            # Policz nawiasy aby znaleźć zamykający nawias całego bloku
+            depth = 0
+            brace_end = brace_start
+            for i, c in enumerate(content[brace_start:], brace_start):
+                if c == '{':
+                    depth += 1
+                elif c == '}':
+                    depth -= 1
+                    if depth == 0:
+                        brace_end = i
+                        break
+            
+            # Wytnij blok voices
+            voices_block = content[brace_start:brace_end+1]
+            
+            # Transformuj text = "..." → i18nKey = "..." w bloku
+            def replace_voice(match):
+                voices_counter[0] += 1
+                key = f"npc.{safe_name}.voice_{voices_counter[0]}"
+                before = match.group(1)
+                after = match.group(3)
+                return f'{before}i18nKey = "{key}"{after}'
+            
+            # Pattern dla: { text = "..." } lub { text = "...", yell = false }
+            # Grupuje: ({\s*) text="..." (reszta do })
+            pattern_voice = r'(\{\s*)text\s*=\s*"([^"]+)"([^}]*\})'
+            new_voices_block = re.sub(pattern_voice, replace_voice, voices_block)
+            
+            # Zamień blok w content
+            content = content[:brace_start] + new_voices_block + content[brace_end+1:]
+            total_transformed += voices_counter[0]
+    total_transformed += voices_counter[0]
+
+voices_total = voices_counter[0]
+
+#==============================================================================
 # ZAPIS
 #==============================================================================
 if total_transformed > 0 and content != original_content:
     with open(file_path, 'w') as f:
         f.write(content)
-    print(f"{total_transformed}|{stdmod_counter[0]}|{npcsay_counter[0]}|{greet_fare_total}")
+    print(f"{total_transformed}|{stdmod_counter[0]}|{npcsay_counter[0]}|{greet_fare_total}|{voices_total}")
 else:
-    print("0|0|0|0")
+    print("0|0|0|0|0")
 TRANSFORM_PY
 )
     
-    # Parsuj wynik: total|stdmod|npcsay|greetfare
+    # Parsuj wynik: total|stdmod|npcsay|greetfare|voices
     local total_t=$(echo "$transformed" | cut -d'|' -f1)
     local stdmod_t=$(echo "$transformed" | cut -d'|' -f2)
     local npcsay_t=$(echo "$transformed" | cut -d'|' -f3)
     local greetfare_t=$(echo "$transformed" | cut -d'|' -f4)
+    local voices_t=$(echo "$transformed" | cut -d'|' -f5)
     
     [ -z "$total_t" ] && total_t=0
     [ -z "$stdmod_t" ] && stdmod_t=0
     [ -z "$npcsay_t" ] && npcsay_t=0
     [ -z "$greetfare_t" ] && greetfare_t=0
+    [ -z "$voices_t" ] && voices_t=0
     
     if [ "$total_t" -gt 0 ] 2>/dev/null; then
-        log "${GREEN}✓ Etap 4 OK${NC}: StdModule=$stdmod_t, npcHandler:say=$npcsay_t, greet/farewell=$greetfare_t, Total=$total_t"
+        log "${GREEN}✓ Etap 4 OK${NC}: StdModule=$stdmod_t, npcHandler:say=$npcsay_t, greet/farewell=$greetfare_t, voices=$voices_t, Total=$total_t"
     else
         total_t=0
         log "${YELLOW}⏭ Etap 4${NC}: Brak zmian"
@@ -3807,23 +3857,27 @@ LANG_PRIORITY = ["pl", "de", "es", "pt", "fr", "it", "ru", "nl", "sv", "cs"]
 ALL_LANGUAGES = ["pl", "de", "es", "pt", "fr", "it", "ru", "uk", "nl", "sv", "da", "no", "fi", "cs", "sk", "hu", "ro", "bg", "el", "tr", "ar", "he", "hi", "zh", "ja", "ko", "th", "vi", "id", "ms"]
 
 # ============================================================================
-# PEŁNA DEFINICJA KATEGORII - WSZYSTKIE FOLDERY
+# PEŁNA DEFINICJA KATEGORII - WSZYSTKIE FOLDERY CANARY_TEST
 # ============================================================================
 CATEGORIES = {
     # === NPC (priorytet 1) ===
     "npc": {
         "dirs": ["data-otservbr-global/npc", "data-canary/npc"],
-        "patterns": [r'StdModule\.say', r'npcHandler:say\('],
+        "patterns": [r'StdModule\.say', r'npcHandler:say\(', r'npcConfig\.voices'],
         "exclude_if": ["i18nKey", "NPC_LIB.i18n.npcSay"],
         "json": "npc.json",
         "priority": 1
     },
     
-    # === SCRIPTS (priorytet 2) ===
+    # === SCRIPTS GŁÓWNE (priorytet 2) ===
     "scripts": {
-        "dirs": ["data-otservbr-global/scripts", "data/scripts"],
-        "patterns": [r'sendTextMessage\s*\(', r'player:say\s*\('],
-        "exclude_if": ["sendLocalizedTextMessage", "i18n.get"],
+        "dirs": [
+            "data-otservbr-global/scripts",
+            "data/scripts",
+            "data-canary/scripts"
+        ],
+        "patterns": [r'sendTextMessage\s*\(', r'player:say\s*\(', r'"[^"]{15,}"'],
+        "exclude_if": ["sendLocalizedTextMessage", "i18n.get", "i18n:"],
         "json": "scripts.json",
         "priority": 2
     },
@@ -3838,167 +3892,254 @@ CATEGORIES = {
         "priority": 3
     },
     
-    # === RAIDS (priorytet 4) ===
+    # === ACTIONS (priorytet 4) - akcje przedmiotów ===
+    "actions": {
+        "dirs": [
+            "data-otservbr-global/scripts/actions",
+            "data-canary/scripts/actions",
+            "data/scripts/actions"
+        ],
+        "patterns": [r'sendTextMessage\s*\(', r'"[^"]{10,}"'],
+        "exclude_if": ["sendLocalizedTextMessage", "i18n"],
+        "json": "actions.json",
+        "priority": 4
+    },
+    
+    # === QUESTS (priorytet 5) - skrypty questów ===
+    "quests": {
+        "dirs": [
+            "data-otservbr-global/scripts/quests",
+            "data-canary/scripts/quests",
+            "data/scripts/quests"
+        ],
+        "patterns": [r'sendTextMessage\s*\(', r'player:say\s*\(', r'"[^"]{15,}"'],
+        "exclude_if": ["sendLocalizedTextMessage", "i18n"],
+        "json": "quests.json",
+        "priority": 5
+    },
+    
+    # === RAIDS (priorytet 6) ===
     "raids": {
         "dirs": ["data-otservbr-global/raids", "data-canary/raids"],
         "patterns": [r'message="[^"]+', r'<message>[^<]+'],
         "exclude_if": ["i18n:"],
         "json": "raids.json",
         "file_ext": [".xml"],
-        "priority": 4
+        "priority": 6
     },
     
-    # === WORLD (priorytet 5) ===
+    # === WORLD (priorytet 7) ===
     "world": {
         "dirs": ["data-otservbr-global/world", "data-canary/world"],
         "patterns": [r'name="[^"]+', r'description="[^"]+'],
         "exclude_if": [],
         "json": "world.json",
         "file_ext": [".xml", ".lua"],
-        "priority": 5
+        "priority": 7
     },
     
-    # === SPELLS (priorytet 6) ===
+    # === SPELLS (priorytet 8) ===
     "spells": {
-        "dirs": ["data-otservbr-global/scripts/spells", "data/scripts/spells"],
+        "dirs": [
+            "data-otservbr-global/scripts/spells",
+            "data/scripts/spells",
+            "data-canary/scripts/spells"
+        ],
         "patterns": [r'words\s*=\s*"[^"]+', r'description\s*=\s*"[^"]+'],
         "exclude_if": ["i18n:"],
         "json": "spells.json",
-        "priority": 6
+        "priority": 8
     },
     
-    # === ITEMS (priorytet 7) ===
+    # === TALKACTIONS (priorytet 9) - komendy czatu ===
+    "talkactions": {
+        "dirs": [
+            "data-otservbr-global/scripts/talkactions",
+            "data-canary/scripts/talkactions",
+            "data/scripts/talkactions"
+        ],
+        "patterns": [r'sendTextMessage\s*\(', r'"[^"]{10,}"'],
+        "exclude_if": ["sendLocalizedTextMessage", "i18n"],
+        "json": "talkactions.json",
+        "priority": 9
+    },
+    
+    # === MOVEMENTS (priorytet 10) - ruchy/wejścia ===
+    "movements": {
+        "dirs": [
+            "data-otservbr-global/scripts/movements",
+            "data-canary/scripts/movements",
+            "data/scripts/movements"
+        ],
+        "patterns": [r'sendTextMessage\s*\(', r'"[^"]{10,}"'],
+        "exclude_if": ["sendLocalizedTextMessage", "i18n"],
+        "json": "movements.json",
+        "priority": 10
+    },
+    
+    # === CREATURESCRIPTS (priorytet 11) - eventy kreatur ===
+    "creaturescripts": {
+        "dirs": [
+            "data-otservbr-global/scripts/creaturescripts",
+            "data-canary/scripts/creaturescripts",
+            "data/scripts/creaturescripts"
+        ],
+        "patterns": [r'sendTextMessage\s*\(', r'"[^"]{10,}"'],
+        "exclude_if": ["sendLocalizedTextMessage", "i18n"],
+        "json": "creaturescripts.json",
+        "priority": 11
+    },
+    
+    # === GLOBALEVENTS (priorytet 12) - globalne eventy ===
+    "globalevents": {
+        "dirs": [
+            "data-otservbr-global/scripts/globalevents",
+            "data-canary/scripts/globalevents",
+            "data/scripts/globalevents"
+        ],
+        "patterns": [r'sendTextMessage\s*\(', r'broadcastMessage\s*\(', r'"[^"]{10,}"'],
+        "exclude_if": ["sendLocalizedTextMessage", "i18n"],
+        "json": "globalevents.json",
+        "priority": 12
+    },
+    
+    # === ITEMS (priorytet 13) ===
     "items": {
         "dirs": ["data/items", "data/XML"],
         "patterns": [r'name="[^"]+', r'description="[^"]+', r'<attribute key="description" value="[^"]+'],
         "exclude_if": [],
         "json": "items.json",
         "file_ext": [".xml"],
-        "priority": 7
+        "priority": 13
     },
     
-    # === LIBS (priorytet 8) ===
+    # === MOUNTS (priorytet 14) ===
+    "mounts": {
+        "dirs": ["data/XML"],
+        "patterns": [r'<mount\s+[^>]*name="[^"]+', r'description="[^"]+'],
+        "exclude_if": [],
+        "json": "mounts.json",
+        "file_ext": [".xml"],
+        "priority": 14
+    },
+    
+    # === LIBS (priorytet 15) ===
     "libs": {
-        "dirs": ["data/libs", "data-otservbr-global/lib"],
+        "dirs": [
+            "data/libs",
+            "data-otservbr-global/lib",
+            "data-canary/lib"
+        ],
         "patterns": [r'"[^"]{20,}"'],
         "exclude_if": ["i18n", "require"],
         "json": "libs.json",
-        "priority": 8
+        "priority": 15
     },
     
-    # === EVENTS (priorytet 9) ===
+    # === EVENTS (priorytet 16) ===
     "events": {
         "dirs": ["data/events"],
         "patterns": [r'sendTextMessage\s*\(', r'"[^"]{15,}"'],
         "exclude_if": ["i18n"],
         "json": "events.json",
-        "priority": 9
+        "priority": 16
     },
     
-    # === CHATCHANNELS (priorytet 10) ===
+    # === CHATCHANNELS (priorytet 17) ===
     "chatchannels": {
         "dirs": ["data/chatchannels"],
         "patterns": [r'name\s*=\s*"[^"]+'],
         "exclude_if": [],
         "json": "chatchannels.json",
-        "priority": 10
+        "priority": 17
     },
     
-    # === MODULES (priorytet 11) ===
+    # === MODULES (priorytet 18) ===
     "modules": {
         "dirs": ["data/modules"],
         "patterns": [r'"[^"]{10,}"'],
         "exclude_if": ["require", "dofile"],
         "json": "modules.json",
-        "priority": 11
+        "priority": 18
     },
     
-    # === STARTUP (priorytet 12) ===
+    # === STARTUP (priorytet 19) ===
     "startup": {
         "dirs": ["data-otservbr-global/startup"],
         "patterns": [r'"[^"]{10,}"'],
         "exclude_if": [],
         "json": "startup.json",
-        "priority": 12
+        "priority": 19
     },
     
-    # === NPCLIB (priorytet 13) ===
+    # === NPCLIB (priorytet 20) ===
     "npclib": {
         "dirs": ["data/npclib"],
         "patterns": [r'"[^"]{10,}"'],
         "exclude_if": ["i18n"],
         "json": "npclib.json",
-        "priority": 13
+        "priority": 20
     },
     
-    # === HTML_COPY - PHP (priorytet 14) - Strona WWW ===
+    # === DATA ROOT (priorytet 21) - główne pliki lua w data/ ===
+    "dataroot": {
+        "dirs": ["data"],
+        "patterns": [r'"[^"]{15,}"'],
+        "exclude_if": ["require", "dofile", "i18n"],
+        "json": "dataroot.json",
+        "file_ext": [".lua"],
+        "recursive": False,  # Tylko główny folder, nie podkatalogi
+        "priority": 21
+    },
+    
+    # === HTML_COPY - PHP (priorytet 22) - Strona WWW ===
     "php": {
         "dirs": ["html_copy"],
         "patterns": [r'"[^"]{20,}"', r"'[^']{20,}'", r'echo\s*"[^"]+"'],
         "exclude_if": ["__()"],
         "json": "php.json",
         "file_ext": [".php"],
-        "priority": 14
+        "priority": 22
     },
     
-    # === HTML_COPY - HTML/Twig (priorytet 15) ===
+    # === HTML_COPY - HTML/Twig (priorytet 23) ===
     "html": {
         "dirs": ["html_copy"],
         "patterns": [r'>[^<]{20,}<', r'title="[^"]+', r'placeholder="[^"]+'],
         "exclude_if": ["{{", "trans"],
         "json": "html.json",
         "file_ext": [".html", ".twig"],
-        "priority": 15
+        "priority": 23
     },
     
-    # === SRC - C++ Server (priorytet 16) ===
+    # === SRC - C++ Server (priorytet 24) ===
     "cpp": {
         "dirs": ["src"],
         "patterns": [r'"[^"]{10,}"', r'pushString\s*\("[^"]+"\)'],
         "exclude_if": ["i18n::"],
         "json": "cpp.json",
         "file_ext": [".cpp", ".hpp"],
-        "priority": 16
+        "priority": 24
     },
     
-    # === TESTYY - OTClient (priorytet 17) ===
+    # === TESTYY/CLIENT - OTClient (priorytet 25) ===
     "client": {
         "dirs": ["testyy/modules", "testyy/mods"],
         "patterns": [r'"[^"]{10,}"', r"'[^']{10,}'"],
         "exclude_if": ["tr("],
         "json": "client.json",
         "file_ext": [".lua", ".otui"],
-        "priority": 17
+        "priority": 25
     },
     
-    # === SENDTEXTMESSAGE - player:sendTextMessage patterns (priorytet 18) ===
-    "sendtextmessage": {
-        "dirs": ["data-otservbr-global/scripts", "data/scripts", "data-otservbr-global/npc", "data-canary/npc"],
-        "patterns": [r'sendTextMessage\s*\([^,]+,\s*"[^"]+"'],
-        "exclude_if": ["sendLocalizedTextMessage"],
-        "json": "messages.json",
-        "file_ext": [".lua"],
-        "priority": 18
-    },
-    
-    # === KEYWORDHANDLER - add*Keyword bez i18nKey (priorytet 19) ===
-    "keywordhandler": {
-        "dirs": ["data-otservbr-global/npc", "data-canary/npc"],
-        "patterns": [r'keywordHandler:add\w+Keyword\s*\([^)]+\)'],
-        "exclude_if": ["i18nKey"],
-        "json": "npc.json",
-        "file_ext": [".lua"],
-        "priority": 19
-    },
-    
-    # === TWIG - Twig templates bez trans() (priorytet 20) ===
-    "twig": {
-        "dirs": ["html_copy"],
-        "patterns": [r'>[A-Z][^<]{10,}<', r'placeholder="[^"]+', r'title="[^"]+"'],
-        "exclude_if": ["trans(", "{{ "],
-        "json": "html.json",
-        "file_ext": [".twig", ".html.twig"],
-        "priority": 20
+    # === SERVER ERRORS/MESSAGES (priorytet 26) ===
+    "server": {
+        "dirs": ["src"],
+        "patterns": [r'sendTextMessage\s*\(', r'fmt::format\s*\("[^"]+'],
+        "exclude_if": ["i18n::"],
+        "json": "server.json",
+        "file_ext": [".cpp", ".hpp"],
+        "priority": 26
     }
 }
 
@@ -4955,23 +5096,55 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                             COUNT=$(run_with_mini_batch "client" "process_client_category" "$BATCH")
                             update_category_state "client" "$COUNT"
                             ;;
-                        sendtextmessage|stm)
-                            echo "   📨 Przetwarzam sendTextMessage z mini-batch..."
-                            COUNT=$(run_with_mini_batch "sendtextmessage" "process_sendTextMessage_category" "$BATCH")
-                            update_category_state "sendtextmessage" "$COUNT"
+                        actions)
+                            echo "   🎯 Przetwarzam ACTIONS z mini-batch..."
+                            COUNT=$(run_with_mini_batch "actions" "process_generic_category" "$BATCH")
+                            update_category_state "actions" "$COUNT"
                             ;;
-                        keywordhandler|kwh)
-                            echo "   🔑 Przetwarzam keywordHandler z mini-batch..."
-                            COUNT=$(run_with_mini_batch "keywordhandler" "process_keywordHandler_category" "$BATCH")
-                            update_category_state "keywordhandler" "$COUNT"
+                        quests)
+                            echo "   🏆 Przetwarzam QUESTS z mini-batch..."
+                            COUNT=$(run_with_mini_batch "quests" "process_generic_category" "$BATCH")
+                            update_category_state "quests" "$COUNT"
                             ;;
-                        twig)
-                            echo "   🎨 Przetwarzam Twig templates z mini-batch..."
-                            COUNT=$(run_with_mini_batch "twig" "process_twig_category" "$BATCH")
-                            update_category_state "twig" "$COUNT"
+                        talkactions)
+                            echo "   💬 Przetwarzam TALKACTIONS z mini-batch..."
+                            COUNT=$(run_with_mini_batch "talkactions" "process_generic_category" "$BATCH")
+                            update_category_state "talkactions" "$COUNT"
+                            ;;
+                        movements)
+                            echo "   🚶 Przetwarzam MOVEMENTS z mini-batch..."
+                            COUNT=$(run_with_mini_batch "movements" "process_generic_category" "$BATCH")
+                            update_category_state "movements" "$COUNT"
+                            ;;
+                        creaturescripts)
+                            echo "   👹 Przetwarzam CREATURESCRIPTS z mini-batch..."
+                            COUNT=$(run_with_mini_batch "creaturescripts" "process_generic_category" "$BATCH")
+                            update_category_state "creaturescripts" "$COUNT"
+                            ;;
+                        globalevents)
+                            echo "   🌍 Przetwarzam GLOBALEVENTS z mini-batch..."
+                            COUNT=$(run_with_mini_batch "globalevents" "process_generic_category" "$BATCH")
+                            update_category_state "globalevents" "$COUNT"
+                            ;;
+                        mounts)
+                            echo "   🐴 Przetwarzam MOUNTS z mini-batch..."
+                            COUNT=$(run_with_mini_batch "mounts" "process_generic_category" "$BATCH")
+                            update_category_state "mounts" "$COUNT"
+                            ;;
+                        dataroot)
+                            echo "   📁 Przetwarzam DATA ROOT z mini-batch..."
+                            COUNT=$(run_with_mini_batch "dataroot" "process_generic_category" "$BATCH")
+                            update_category_state "dataroot" "$COUNT"
+                            ;;
+                        server)
+                            echo "   🖥️ Przetwarzam SERVER z mini-batch..."
+                            COUNT=$(run_with_mini_batch "server" "process_generic_category" "$BATCH")
+                            update_category_state "server" "$COUNT"
                             ;;
                         *)
-                            echo "   ⚠️ Nieznana kategoria: $MODE_CAT"
+                            echo "   ⚠️ Nieznana kategoria: $MODE_CAT - próbuję generyczną obsługę..."
+                            COUNT=$(run_with_mini_batch "$MODE_CAT" "process_generic_category" "$BATCH")
+                            update_category_state "$MODE_CAT" "$COUNT"
                             ;;
                     esac
                     

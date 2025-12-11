@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Indeed, there has to be some other way." },
-	{ text = "Mmh, interesting." },
-	{ text = "Yes indeed, all of the equipment should be checked and calibrated regularly." },
-	{ text = "No, we have to give this another go." },
+	{ i18nKey = "npc.sinclair.voice_1" },
+	{ i18nKey = "npc.sinclair.voice_2" },
+	{ i18nKey = "npc.sinclair.voice_3" },
+	{ i18nKey = "npc.sinclair.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()

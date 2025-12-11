@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Stop by before embarking on your great adventure! Distance weapons and general equipment on sale today!" },
+	{ i18nKey = "npc.perod.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

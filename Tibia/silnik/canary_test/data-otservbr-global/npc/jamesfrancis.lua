@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Don't enter this area if you are an inexperienced fighter! It would be your end!" },
+	{ i18nKey = "npc.jamesfrancis.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

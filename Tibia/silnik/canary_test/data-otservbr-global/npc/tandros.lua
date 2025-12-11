@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Potions, wands and runes for aspiring magicians." },
+	{ i18nKey = "npc.tandros.voice_1" },
 }
 
 local itemsTable = {

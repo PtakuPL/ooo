@@ -26,9 +26,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Great Hunger is upset." },
-	{ text = "Spirits are restless." },
-	{ text = "All water drying up and Vuzrog does nothing!" },
+	{ i18nKey = "npc.ghorza.voice_1" },
+	{ i18nKey = "npc.ghorza.voice_2" },
+	{ i18nKey = "npc.ghorza.voice_3" },
 }
 
 local itemsTable = {

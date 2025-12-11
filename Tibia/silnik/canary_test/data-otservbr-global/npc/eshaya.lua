@@ -26,9 +26,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Praised be Suon and Bastesh." },
-	{ text = "I should talk to Kallimae soon." },
-	{ text = "Issavi's safety is my first concern." },
+	{ i18nKey = "npc.eshaya.voice_1" },
+	{ i18nKey = "npc.eshaya.voice_2" },
+	{ i18nKey = "npc.eshaya.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()

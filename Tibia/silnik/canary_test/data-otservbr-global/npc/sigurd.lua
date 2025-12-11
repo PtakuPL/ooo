@@ -21,7 +21,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Hiho adventurers, get your runes, potions, wands and rods here!" },
+	{ i18nKey = "npc.sigurd.voice_1" },
 }
 
 local itemsTable = {

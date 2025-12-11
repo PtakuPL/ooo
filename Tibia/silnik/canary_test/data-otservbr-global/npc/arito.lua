@@ -107,7 +107,7 @@ end
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Come in, have a drink and something to eat." },
+	{ i18nKey = "npc.arito.voice_1" },
 }
 
 npcHandler:setMessage(MESSAGE_FAREWELL, "Do visit us again.")

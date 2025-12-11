@@ -26,12 +26,12 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Come in, young mages! Purchase the latest in runes and wands!" },
-	{ text = "Perhaps I need to bake them hotter? Or was it longer?" },
-	{ text = "Offering all sorts of magic equipment!" },
-	{ text = "Now where did Alaistar put the wood for the new wands?" },
-	{ text = "Hmmm.. Maybe those crushed gems caused the strange side effect?" },
-	{ text = "Wands and rods, the true magician's weapons of choice!" },
+	{ i18nKey = "npc.mordecai.voice_1" },
+	{ i18nKey = "npc.mordecai.voice_2" },
+	{ i18nKey = "npc.mordecai.voice_3" },
+	{ i18nKey = "npc.mordecai.voice_4" },
+	{ i18nKey = "npc.mordecai.voice_5" },
+	{ i18nKey = "npc.mordecai.voice_6" },
 }
 
 local itemsTable = {

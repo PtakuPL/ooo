@@ -1,7 +1,7 @@
 # NPC: jack
 
 **Plik:** `data-otservbr-global/npc/jack.lua`
-**Data migracji:** 2025-12-11 03:39
+**Data migracji:** 2025-12-11 16:26
 **Liczba tekstów:** 4
 
 ## Klucze i18n

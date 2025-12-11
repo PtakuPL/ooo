@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Pssst!" },
+	{ i18nKey = "npc.gamel.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

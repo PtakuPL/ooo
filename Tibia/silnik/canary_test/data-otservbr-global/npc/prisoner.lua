@@ -26,13 +26,13 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Ahhhh!" },
-	{ text = "Have mercy!" },
-	{ text = "I admit! I admit!" },
-	{ text = "I repent!" },
-	{ text = "Noooooo!" },
-	{ text = "Please! I beg you to stop!" },
-	{ text = "Take it away! Please!" },
+	{ i18nKey = "npc.prisoner.voice_1" },
+	{ i18nKey = "npc.prisoner.voice_2" },
+	{ i18nKey = "npc.prisoner.voice_3" },
+	{ i18nKey = "npc.prisoner.voice_4" },
+	{ i18nKey = "npc.prisoner.voice_5" },
+	{ i18nKey = "npc.prisoner.voice_6" },
+	{ i18nKey = "npc.prisoner.voice_7" },
 }
 
 local keywordHandler = KeywordHandler:new()

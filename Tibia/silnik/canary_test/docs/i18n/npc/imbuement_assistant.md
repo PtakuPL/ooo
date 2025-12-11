@@ -1,7 +1,7 @@
 # NPC: imbuement_assistant
 
 **Plik:** `data-otservbr-global/npc/imbuement_assistant.lua`
-**Data migracji:** 2025-12-11 03:39
+**Data migracji:** 2025-12-11 16:26
 **Liczba tekstów:** 24
 
 ## Klucze i18n

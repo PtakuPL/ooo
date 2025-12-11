@@ -1,7 +1,7 @@
 # NPC: gnomillion
 
 **Plik:** `data-otservbr-global/npc/gnomillion.lua`
-**Data migracji:** 2025-12-11 03:39
+**Data migracji:** 2025-12-11 16:32
 **Liczba tekstów:** 1
 
 ## Klucze i18n

@@ -21,7 +21,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Aaaaah... ruuunes... waaaaaands... rooooods... spellboooooks..." },
+	{ i18nKey = "npc.frans.voice_1" },
 }
 
 local itemsTable = {

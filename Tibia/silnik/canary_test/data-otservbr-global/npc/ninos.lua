@@ -26,9 +26,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Welcome to the post office!" },
-	{ text = "If you need help with letters or parcels, just ask me. I can explain everything." },
-	{ text = "Hey, send a letter to your friend now and then. Keep in touch, you know." },
+	{ i18nKey = "npc.ninos.voice_1" },
+	{ i18nKey = "npc.ninos.voice_2" },
+	{ i18nKey = "npc.ninos.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()

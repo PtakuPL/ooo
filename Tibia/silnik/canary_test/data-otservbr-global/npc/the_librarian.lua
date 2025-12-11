@@ -26,9 +26,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I really have to find this scroll. Where did I put it?" },
-	{ text = "Too much dust here. I should tidy up on occasion." },
-	{ text = "Someone opened the Grimoire of Flames without permission. Egregious!" },
+	{ i18nKey = "npc.the_librarian.voice_1" },
+	{ i18nKey = "npc.the_librarian.voice_2" },
+	{ i18nKey = "npc.the_librarian.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()

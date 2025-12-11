@@ -26,9 +26,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Not enough purple nightshade ... not enough liquid silver. *sigh*" },
-	{ text = "You think the full moon is a romantic affair? Think again!" },
-	{ text = "This place isn't safe. You should leave this island." },
+	{ i18nKey = "npc.maeryn.voice_1" },
+	{ i18nKey = "npc.maeryn.voice_2" },
+	{ i18nKey = "npc.maeryn.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()

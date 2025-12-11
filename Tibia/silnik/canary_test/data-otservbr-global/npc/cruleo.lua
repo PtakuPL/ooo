@@ -25,9 +25,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "<gulp gulp>" },
-	{ text = "This will earn me some handsome amount of gold!" },
-	{ text = "Muhahaha!" },
+	{ i18nKey = "npc.cruleo.voice_1" },
+	{ i18nKey = "npc.cruleo.voice_2" },
+	{ i18nKey = "npc.cruleo.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()

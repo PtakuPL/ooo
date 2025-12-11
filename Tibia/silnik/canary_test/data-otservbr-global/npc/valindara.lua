@@ -31,9 +31,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Im eager for a bath in the lake." },
-	{ text = "Im interested in shiny precious things, if you have some." },
-	{ text = "No, you cant have this cloak." },
+	{ i18nKey = "npc.valindara.voice_1" },
+	{ i18nKey = "npc.valindara.voice_2" },
+	{ i18nKey = "npc.valindara.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()

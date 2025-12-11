@@ -63,9 +63,9 @@ npcType.onCheckItem = function(npc, player, clientId, subType) end
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Trading tokens! First-class bargains!" },
-	{ text = "Bespoke armor for all vocations! For the cost of some tokens only!" },
-	{ text = "Tokens! Bring your tokens!" },
+	{ i18nKey = "npc.cledwyn.voice_1" },
+	{ i18nKey = "npc.cledwyn.voice_2" },
+	{ i18nKey = "npc.cledwyn.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()

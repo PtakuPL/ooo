@@ -1,7 +1,7 @@
 # NPC: benjamin
 
 **Plik:** `data-otservbr-global/npc/benjamin.lua`
-**Data migracji:** 2025-12-11 04:26
+**Data migracji:** 2025-12-11 16:25
 **Liczba tekstów:** 3
 
 ## Klucze i18n

@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Don't forget to deposit your money here in the Global Bank before you head out for adventure.", yell = false },
+	{ i18nKey = "npc.elgar.voice_1", yell = false },
 }
 npcConfig.shop = {
 	{ itemName = "label", clientId = 3507, buy = 1 },

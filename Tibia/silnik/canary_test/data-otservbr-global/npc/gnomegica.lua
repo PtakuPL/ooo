@@ -26,8 +26,8 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Oh my, such a mess! I really should clean up things more often." },
-	{ text = "Laaa Laaa LaLa Laa Laaa!" },
+	{ i18nKey = "npc.gnomegica.voice_1" },
+	{ i18nKey = "npc.gnomegica.voice_2" },
 }
 
 local itemsTable = {

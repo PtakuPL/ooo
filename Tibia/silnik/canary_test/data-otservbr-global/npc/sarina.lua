@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "General equipment and all sorts of goods. Visit my store!" },
+	{ i18nKey = "npc.sarina.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

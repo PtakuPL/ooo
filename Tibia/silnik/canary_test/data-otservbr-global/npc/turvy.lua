@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Courageous adventurers, come buy your weapons and armors here!" },
+	{ i18nKey = "npc.turvy.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

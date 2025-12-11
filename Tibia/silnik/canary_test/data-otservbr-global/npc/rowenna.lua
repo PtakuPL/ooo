@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Selling and buying fine weapons!" },
+	{ i18nKey = "npc.rowenna.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

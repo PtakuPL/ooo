@@ -2,8 +2,8 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 04:27:04 UTC  
-> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 29142
+> **Aktualizacja:** 2025-12-11 17:00:46 UTC  
+> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28779
 
 ---
 
@@ -23,12 +23,12 @@
 
 | Metryka | Wartość | Trend |
 |---------|---------|-------|
-| 📁 Plików przetworzonych | **144** | ↑ |
-| ⏭️ Plików wykluczonych | **593** | - |
-| 🔑 Kluczy i18n (EN) | **29142** | ↑ |
+| 📁 Plików przetworzonych | **20** | ↑ |
+| ⏭️ Plików wykluczonych | **712** | - |
+| 🔑 Kluczy i18n (EN) | **28779** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#46** | - |
+| 🔄 Cykl | **#6** | - |
 
 ---
 
@@ -66,7 +66,7 @@
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
 | 🧙 NPC Dialogs | 🔄 | 5339/15000 (36%) | 15000 |
-| 📜 Lua Scripts | 🔄 | 387/1000 (39%) | 1000 |
+| 📜 Lua Scripts | 🔄 | 24/1000 (2%) | 1000 |
 | 🎒 Items Database | 🔄 | 13749/40000 (34%) | 40000 |
 | 👹 Monsters | ✅ | 7341/7500 (98%) | 7500 |
 | ✨ Spells & Magic | 🔄 | 304/400 (76%) | 400 |
@@ -122,19 +122,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    46 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     6 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 NPC                                    │
+│ Kategoria: 🎒 GLOBALEVENTS                           │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: npc                                            │
-│ [█████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 5339/15000 kluczy (36%)                                          │
+│ 📊 Ostatnia aktywność: globalevents                                   │
+│ [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
+│ 0/1000 kluczy (0%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Total processed: 2800 operacji               │
+│ ⏳ Total processed: 2616 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 04:27:04                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 17:00:46                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -144,11 +144,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Operacji wykonanych | **2800** | we wszystkich kategoriach |
-| ✅ NPC zmigrowanych | **144** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **29142** | we wszystkich kategoriach |
+| 📁 Operacji wykonanych | **2616** | we wszystkich kategoriach |
+| ✅ NPC zmigrowanych | **20** (445 z i18nKey) | z 1026 plików NPC |
+| 🔑 Kluczy wyciągniętych | **28779** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#46** | continuous mode |
+| 🔄 Cykli wykonanych | **#6** | continuous mode |
 | 🎯 Aktywne kategorie | **15** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -156,14 +156,14 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🧙 `npc` +50 kluczy @ 04:27:04
-- ⚡ `twig` +0 kluczy @ 03:57:14
-- ⚡ `keywordhandler` +0 kluczy @ 03:57:05
-- ⚡ `sendtextmessage` +0 kluczy @ 03:56:53
-- ⚡ `client` +12 kluczy @ 03:56:39
-- ⚡ `cpp` +0 kluczy @ 03:56:27
-- ⚡ `html` +0 kluczy @ 03:56:19
-- ⚡ `php` +0 kluczy @ 03:56:12
+- ⚡ `globalevents` +128 kluczy @ 17:00:45
+- ⚡ `creaturescripts` +128 kluczy @ 17:00:37
+- ⚡ `movements` +128 kluczy @ 17:00:30
+- ⚡ `talkactions` +128 kluczy @ 17:00:23
+- ⚡ `quests` +128 kluczy @ 17:00:16
+- ⚡ `actions` +128 kluczy @ 17:00:03
+- 🧙 `npc` +148 kluczy @ 16:59:52
+- ⚡ `twig` +0 kluczy @ 15:30:43
 
 
 ---
@@ -228,7 +228,7 @@
 | 📊 Postęp | 36% |
 | 📁 Plik | i18n/en/npc.json |
 | 📁 Plików NPC | 1026 |
-| ✅ Zmigrowanych | 318 |
+| ✅ Zmigrowanych | 445 |
 | 🔄 Do migracji | 0 |
 
 </details>
@@ -258,13 +258,13 @@
 </details>
 
 <details>
-<summary>📜 8. Scripts - 🔄 (39%)</summary>
+<summary>📜 8. Scripts - 🔄 (2%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 387 |
+| 🔑 Kluczy | 24 |
 | 🎯 Cel | 1000 |
-| 📊 Postęp | 39% |
+| 📊 Postęp | 2% |
 | 📁 Plik | i18n/en/scripts.json |
 
 </details>
@@ -323,29 +323,29 @@
 
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
-| items | 13749 | 0 | 2 | ✅ Active |
-| monsters | 7341 | 0 | 2 | ✅ Active |
-| npc | 5339 | 2700 | 0 | ✅ Active |
-| html | 1495 | 0 | 2 | ✅ Active |
-| scripts | 387 | 82 | 0 | ✅ Active |
-| spells | 304 | 0 | 2 | ✅ Active |
-| client | 242 | 18 | 0 | ✅ Active |
-| raids | 147 | 0 | 2 | ✅ Active |
-| php | 54 | 0 | 2 | ✅ Active |
-| startup | 23 | 0 | 2 | ✅ Active |
-| libs | 21 | 0 | 2 | ✅ Active |
-| modules | 16 | 0 | 2 | ✅ Active |
+| items | 13749 | 0 | 0 | ✅ Active |
+| monsters | 7341 | 0 | 0 | ✅ Active |
+| npc | 5339 | 1848 | 0 | ✅ Active |
+| html | 1495 | 0 | 0 | ✅ Active |
+| spells | 304 | 0 | 0 | ✅ Active |
+| client | 242 | 0 | 0 | ✅ Active |
+| raids | 147 | 0 | 0 | ✅ Active |
+| php | 54 | 0 | 0 | ✅ Active |
+| scripts | 24 | 0 | 0 | ✅ Active |
+| startup | 23 | 0 | 0 | ✅ Active |
+| libs | 21 | 0 | 0 | ✅ Active |
+| modules | 16 | 0 | 0 | ✅ Active |
 | messages | 11 | 0 | 0 | ✅ Active |
-| chatchannels | 8 | 0 | 2 | ✅ Active |
-| events | 5 | 0 | 2 | ✅ Active |
-| actions | 0 | 0 | 0 | ⏳ Empty |
-| cpp | 0 | 0 | 2 | ⏳ Empty |
+| chatchannels | 8 | 0 | 0 | ✅ Active |
+| events | 5 | 0 | 0 | ✅ Active |
+| actions | 0 | 128 | 0 | ⏳ Empty |
+| cpp | 0 | 0 | 0 | ⏳ Empty |
 | errors | 0 | 0 | 0 | ⏳ Empty |
-| npclib | 0 | 0 | 2 | ⏳ Empty |
-| quests | 0 | 0 | 0 | ⏳ Empty |
+| npclib | 0 | 0 | 0 | ⏳ Empty |
+| quests | 0 | 128 | 0 | ⏳ Empty |
 | server | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
-| world | 0 | 0 | 2 | ⏳ Empty |
+| world | 0 | 0 | 0 | ⏳ Empty |
 
 ---
 
@@ -359,7 +359,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #46 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #6 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -392,7 +392,7 @@
 |-----------|--------|--------|-----|--------|
 | 🎒 Items | 13749 | ██████░░░░░░░░░░░░░░ | 40000 | 🔄 34% |
 | 🧙 NPC | 5339 | ███████░░░░░░░░░░░░░ | 15000 | 🔄 36% |
-| 📜 Scripts | 387 | ███████░░░░░░░░░░░░░ | 1000 | 🔄 39% |
+| 📜 Scripts | 24 | ░░░░░░░░░░░░░░░░░░░░ | 1000 | 🔄 2% |
 | 👹 Monsters | 7341 | ███████████████████░ | 7500 | ✅ 98% |
 | ✨ Spells | 304 | ███████████████░░░░░ | 400 | 🔄 76% |
 | ⚙️ Server | 0 | ░░░░░░░░░░░░░░░░░░░░ | 300 | ⏳ 0% |
@@ -402,23 +402,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 04:27:04  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 17:00:46  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `ghorza` - ukończono 2025-12-11 04:27
-- ✅ `gamel` - ukończono 2025-12-11 04:27
-- ✅ `galuna` - ukończono 2025-12-11 04:27
-- ✅ `frederik` - ukończono 2025-12-11 04:26
-- ✅ `frans` - ukończono 2025-12-11 04:26
-- ✅ `florentine` - ukończono 2025-12-11 04:26
-- ✅ `finarfin` - ukończono 2025-12-11 04:26
-- ✅ `ferks` - ukończono 2025-12-11 04:26
-- ✅ `fenech` - ukończono 2025-12-11 04:26
-- ✅ `feizuhl` - ukończono 2025-12-11 04:26
+- ✅ `alaistar` - ukończono 2025-12-11 17:00
+- ✅ `the_lootmonger` - ukończono 2025-12-11 16:59
+- ✅ `tandros` - ukończono 2025-12-11 16:59
+- ✅ `sundara` - ukończono 2025-12-11 16:59
+- ✅ `sigurd` - ukończono 2025-12-11 16:59
+- ✅ `shiriel` - ukończono 2025-12-11 16:59
+- ✅ `seymour` - ukończono 2025-12-11 16:59
+- ✅ `romir` - ukończono 2025-12-11 16:59
+- ✅ `rock_in_a_hard_place` - ukończono 2025-12-11 16:59
+- ✅ `nipuna` - ukończono 2025-12-11 16:59
 
 ---
 

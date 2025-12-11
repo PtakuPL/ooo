@@ -1,131 +1,129 @@
 {
-  "skip_until": {
-    "monsters": 1765422277.1052995,
-    "raids": 1765422285.7101755,
-    "world": 1765422293.0261648,
-    "spells": 1765422301.6123815,
-    "items": 1765422309.4483867,
-    "libs": 1765422322.0963476,
-    "events": 1765422334.685926,
-    "chatchannels": 1765422343.054985,
-    "modules": 1765422350.3036828,
-    "startup": 1765422357.4210293,
-    "npclib": 1765422364.2949774,
-    "php": 1765422372.17209,
-    "html": 1765422379.9348977,
-    "cpp": 1765422387.0566025,
-    "sendtextmessage": 1765422413.5821848,
-    "keywordhandler": 1765422425.737191,
-    "twig": 1765422434.6787822
-  },
+  "skip_until": {},
   "last_processed": {
     "npc": {
-      "count": 50,
-      "timestamp": 1765423624.3239872
+      "count": 148,
+      "timestamp": 1765468792.3587756
     },
     "scripts": {
-      "count": 41,
-      "timestamp": 1765421668.7664037
+      "count": -313,
+      "timestamp": 1765463344.3609834
     },
     "monsters": {
       "count": 0,
-      "timestamp": 1765421677.1052942
+      "timestamp": 1765463349.4560893
     },
     "raids": {
       "count": 0,
-      "timestamp": 1765421685.7101693
+      "timestamp": 1765463352.4643257
     },
     "world": {
       "count": 0,
-      "timestamp": 1765421693.026159
+      "timestamp": 1765463356.098401
     },
     "spells": {
       "count": 0,
-      "timestamp": 1765421701.6123755
+      "timestamp": 1765463360.9943755
     },
     "items": {
       "count": 0,
-      "timestamp": 1765421709.4483814
+      "timestamp": 1765463363.2443023
     },
     "libs": {
       "count": 0,
-      "timestamp": 1765421722.096342
+      "timestamp": 1765463369.5700028
     },
     "events": {
       "count": 0,
-      "timestamp": 1765421734.6859202
+      "timestamp": 1765463370.705659
     },
     "chatchannels": {
       "count": 0,
-      "timestamp": 1765421743.0549798
+      "timestamp": 1765463377.4238267
     },
     "modules": {
       "count": 0,
-      "timestamp": 1765421750.3036776
+      "timestamp": 1765463378.4510148
     },
     "startup": {
       "count": 0,
-      "timestamp": 1765421757.421024
+      "timestamp": 1765463385.4162474
     },
     "npclib": {
       "count": 0,
-      "timestamp": 1765421764.2949722
+      "timestamp": 1765463391.6187663
     },
     "php": {
       "count": 0,
-      "timestamp": 1765421772.1720846
+      "timestamp": 1765463393.490898
     },
     "html": {
       "count": 0,
-      "timestamp": 1765421779.9348927
+      "timestamp": 1765463399.5407493
     },
     "cpp": {
       "count": 0,
-      "timestamp": 1765421787.0565975
+      "timestamp": 1765463400.3720922
     },
     "client": {
-      "count": 12,
-      "timestamp": 1765421799.3725004
+      "count": 0,
+      "timestamp": 1765463409.7549827
     },
     "sendtextmessage": {
       "count": 0,
-      "timestamp": 1765421813.5821795
+      "timestamp": 1765463430.7897243
     },
     "keywordhandler": {
       "count": 0,
-      "timestamp": 1765421825.7371855
+      "timestamp": 1765463439.3136044
     },
     "twig": {
       "count": 0,
-      "timestamp": 1765421834.6787765
+      "timestamp": 1765463443.9202116
+    },
+    "actions": {
+      "count": 128,
+      "timestamp": 1765468803.671581
+    },
+    "quests": {
+      "count": 128,
+      "timestamp": 1765468816.4095614
+    },
+    "talkactions": {
+      "count": 128,
+      "timestamp": 1765468823.555492
+    },
+    "movements": {
+      "count": 128,
+      "timestamp": 1765468830.6074297
+    },
+    "creaturescripts": {
+      "count": 128,
+      "timestamp": 1765468837.6588285
+    },
+    "globalevents": {
+      "count": 128,
+      "timestamp": 1765468845.8500605
     }
   },
   "consecutive_zeros": {
     "npc": 0,
-    "scripts": 0,
-    "monsters": 2,
-    "raids": 2,
-    "world": 2,
-    "spells": 2,
-    "items": 2,
-    "libs": 2,
-    "events": 2,
-    "chatchannels": 2,
-    "modules": 2,
-    "startup": 2,
-    "npclib": 2,
-    "php": 2,
-    "html": 2,
-    "cpp": 2,
-    "client": 0,
-    "sendtextmessage": 2,
-    "keywordhandler": 2,
-    "twig": 2
+    "actions": 0,
+    "quests": 0,
+    "talkactions": 0,
+    "movements": 0,
+    "creaturescripts": 0,
+    "globalevents": 0
   },
   "total_processed": {
-    "npc": 2700,
-    "scripts": 82,
-    "client": 18
+    "npc": 1848,
+    "scripts": 0,
+    "actions": 128,
+    "quests": 128,
+    "talkactions": 128,
+    "movements": 128,
+    "creaturescripts": 128,
+    "globalevents": 128
   },
   "translation_sync": {},
   "migrations_done": false

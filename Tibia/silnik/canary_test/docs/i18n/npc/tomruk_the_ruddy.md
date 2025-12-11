@@ -1,7 +1,7 @@
 # NPC: tomruk_the_ruddy
 
 **Plik:** `data-otservbr-global/npc/tomruk_the_ruddy.lua`
-**Data migracji:** 2025-12-11 03:41
+**Data migracji:** 2025-12-11 16:31
 **Liczba tekstów:** 4
 
 ## Klucze i18n

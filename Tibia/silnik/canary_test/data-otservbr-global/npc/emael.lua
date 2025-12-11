@@ -27,7 +27,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Not enough space for all my trophies..." },
+	{ i18nKey = "npc.emael.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

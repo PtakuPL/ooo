@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Come over here if you have to resupply!" },
+	{ i18nKey = "npc.zethra.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

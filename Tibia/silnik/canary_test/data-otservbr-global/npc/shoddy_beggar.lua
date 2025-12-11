@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "*mumbles*" },
-	{ text = "That astronomer of the academy simply has no idea what he is dealing with..." },
-	{ text = "Some secrets should better be left uncovered." },
-	{ text = "Ha, ha... *mumbles* Hmm." },
+	{ i18nKey = "npc.shoddy_beggar.voice_1" },
+	{ i18nKey = "npc.shoddy_beggar.voice_2" },
+	{ i18nKey = "npc.shoddy_beggar.voice_3" },
+	{ i18nKey = "npc.shoddy_beggar.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()

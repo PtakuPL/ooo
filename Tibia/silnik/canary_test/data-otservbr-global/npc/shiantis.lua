@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Containers, decoration and general goods, all here!" },
+	{ i18nKey = "npc.shiantis.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

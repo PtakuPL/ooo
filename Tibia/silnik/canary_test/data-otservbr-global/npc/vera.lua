@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Have you moved to a new home? I'm the specialist for equipping it." },
+	{ i18nKey = "npc.vera.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

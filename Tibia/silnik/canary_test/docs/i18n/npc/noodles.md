@@ -1,7 +1,7 @@
 # NPC: noodles
 
 **Plik:** `data-otservbr-global/npc/noodles.lua`
-**Data migracji:** 2025-12-11 03:40
+**Data migracji:** 2025-12-11 16:27
 **Liczba tekstów:** 5
 
 ## Klucze i18n

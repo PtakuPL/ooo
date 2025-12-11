@@ -21,7 +21,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Krrrrrng." },
+	{ i18nKey = "npc.arkarra.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

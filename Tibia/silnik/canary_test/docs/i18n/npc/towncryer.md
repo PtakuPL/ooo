@@ -1,7 +1,7 @@
 # NPC: towncryer
 
 **Plik:** `data-otservbr-global/npc/towncryer.lua`
-**Data migracji:** 2025-12-11 03:41
+**Data migracji:** 2025-12-11 16:31
 **Liczba tekstów:** 8
 
 ## Klucze i18n

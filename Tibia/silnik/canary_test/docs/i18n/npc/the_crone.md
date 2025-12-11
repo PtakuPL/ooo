@@ -1,7 +1,7 @@
 # NPC: the_crone
 
 **Plik:** `data-otservbr-global/npc/the_crone.lua`
-**Data migracji:** 2025-12-11 03:41
+**Data migracji:** 2025-12-11 16:30
 **Liczba tekstów:** 1
 
 ## Klucze i18n

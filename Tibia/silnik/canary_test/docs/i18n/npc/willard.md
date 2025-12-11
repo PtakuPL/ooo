@@ -1,7 +1,7 @@
 # NPC: willard
 
 **Plik:** `data-otservbr-global/npc/willard.lua`
-**Data migracji:** 2025-12-11 03:41
+**Data migracji:** 2025-12-11 16:33
 **Liczba tekstów:** 1
 
 ## Klucze i18n

@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "The passage to the afterlife is filled with obstacles, but I can help you with my wares." },
+	{ i18nKey = "npc.ashtamor.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

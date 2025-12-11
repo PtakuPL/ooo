@@ -21,11 +21,11 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Grrrrrrr." },
-	{ text = "<wiggles>" },
-	{ text = "<sniff>" },
-	{ text = "Woof! Woof!" },
-	{ text = "Wooof!" },
+	{ i18nKey = "npc.noodles.voice_1" },
+	{ i18nKey = "npc.noodles.voice_2" },
+	{ i18nKey = "npc.noodles.voice_3" },
+	{ i18nKey = "npc.noodles.voice_4" },
+	{ i18nKey = "npc.noodles.voice_5" },
 }
 
 local keywordHandler = KeywordHandler:new()

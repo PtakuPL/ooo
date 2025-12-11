@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Welcome to the post office!" },
-	{ text = "Hey, send a letter to your friend now and then. Keep in touch, you know." },
-	{ text = "If you need help with letters or parcels, just ask me. I can explain everything." },
-	{ text = "No, no, no, there IS no parcel bug, I'm telling you!" },
+	{ i18nKey = "npc.liane.voice_1" },
+	{ i18nKey = "npc.liane.voice_2" },
+	{ i18nKey = "npc.liane.voice_3" },
+	{ i18nKey = "npc.liane.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()

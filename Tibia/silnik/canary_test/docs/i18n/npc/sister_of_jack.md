@@ -1,7 +1,7 @@
 # NPC: sister_of_jack
 
 **Plik:** `data-otservbr-global/npc/sister_of_jack.lua`
-**Data migracji:** 2025-12-11 03:41
+**Data migracji:** 2025-12-11 16:29
 **Liczba tekstów:** 4
 
 ## Klucze i18n

@@ -24,7 +24,7 @@ npcConfig.outfit = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 20,
-	{ text = "Welcome to the Canary Server!" },
+	{ i18nKey = "npc.canary.voice_1" },
 }
 
 npcConfig.flags = {

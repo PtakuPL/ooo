@@ -1,7 +1,7 @@
 # NPC: maeryn
 
 **Plik:** `data-otservbr-global/npc/maeryn.lua`
-**Data migracji:** 2025-12-11 03:40
+**Data migracji:** 2025-12-11 16:27
 **Liczba tekstów:** 3
 
 ## Klucze i18n

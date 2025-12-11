@@ -21,9 +21,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I wish I could learn more about this strange world." },
-	{ text = "Those different cultures are amazing." },
-	{ text = "What an interesting continent." },
+	{ i18nKey = "npc.cael.voice_1" },
+	{ i18nKey = "npc.cael.voice_2" },
+	{ i18nKey = "npc.cael.voice_3" },
 }
 
 local tomes = Storage.Quest.U8_54.TheNewFrontier.TomeofKnowledge

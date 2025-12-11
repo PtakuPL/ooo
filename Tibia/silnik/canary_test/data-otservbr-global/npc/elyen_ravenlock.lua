@@ -21,9 +21,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "<hums a dark tune>" },
-	{ text = "<chants> Re Ha, Omrah, Tan Ra..." },
-	{ text = "The rats... the rats in the walls..." },
+	{ i18nKey = "npc.elyen_ravenlock.voice_1" },
+	{ i18nKey = "npc.elyen_ravenlock.voice_2" },
+	{ i18nKey = "npc.elyen_ravenlock.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()

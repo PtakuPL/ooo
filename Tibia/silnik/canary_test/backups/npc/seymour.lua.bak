@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Newcomers - visit me! I'll answer your questions!" },
-	{ text = "Get some training in the academy!" },
-	{ text = "Feeling lost? Ask me for help!" },
-	{ text = "Gain some knowledge in the academy!" },
+	{ i18nKey = "npc.seymour.voice_1" },
+	{ i18nKey = "npc.seymour.voice_2" },
+	{ i18nKey = "npc.seymour.voice_3" },
+	{ i18nKey = "npc.seymour.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()

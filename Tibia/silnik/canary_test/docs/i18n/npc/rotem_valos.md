@@ -1,7 +1,7 @@
 # NPC: rotem_valos
 
 **Plik:** `data-otservbr-global/npc/rotem_valos.lua`
-**Data migracji:** 2025-12-11 03:40
+**Data migracji:** 2025-12-11 16:28
 **Liczba tekstów:** 1
 
 ## Klucze i18n

@@ -1,7 +1,7 @@
 # NPC: wyrdin
 
 **Plik:** `data-otservbr-global/npc/wyrdin.lua`
-**Data migracji:** 2025-12-11 03:41
+**Data migracji:** 2025-12-11 16:33
 **Liczba tekstów:** 4
 
 ## Klucze i18n

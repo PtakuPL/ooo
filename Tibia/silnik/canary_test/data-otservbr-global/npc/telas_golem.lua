@@ -21,7 +21,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "What .. happened?" },
+	{ i18nKey = "npc.telas_golem.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

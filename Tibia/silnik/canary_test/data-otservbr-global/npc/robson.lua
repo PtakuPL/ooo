@@ -21,8 +21,8 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "<mumbles>" },
-	{ text = "Just great. Getting stranded on a remote underground isle was not that bad but now I'm becoming a tourist attraction!" },
+	{ i18nKey = "npc.robson.voice_1" },
+	{ i18nKey = "npc.robson.voice_2" },
 }
 
 local keywordHandler = KeywordHandler:new()

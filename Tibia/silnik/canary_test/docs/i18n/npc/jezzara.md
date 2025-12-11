@@ -1,7 +1,7 @@
 # NPC: jezzara
 
 **Plik:** `data-otservbr-global/npc/jezzara.lua`
-**Data migracji:** 2025-12-11 03:40
+**Data migracji:** 2025-12-11 16:26
 **Liczba tekstów:** 1
 
 ## Klucze i18n

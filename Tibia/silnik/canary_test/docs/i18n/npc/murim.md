@@ -1,7 +1,7 @@
 # NPC: murim
 
 **Plik:** `data-otservbr-global/npc/murim.lua`
-**Data migracji:** 2025-12-11 03:40
+**Data migracji:** 2025-12-11 16:32
 **Liczba tekstów:** 1
 
 ## Klucze i18n

@@ -26,8 +26,8 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "People of Thais, bring honour to your king by fighting in the orc war!" },
-	{ text = "The orcs are preparing for war!!!" },
+	{ i18nKey = "npc.baxter.voice_1" },
+	{ i18nKey = "npc.baxter.voice_2" },
 }
 
 local keywordHandler = KeywordHandler:new()

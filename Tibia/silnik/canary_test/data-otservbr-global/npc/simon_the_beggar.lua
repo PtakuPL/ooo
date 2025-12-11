@@ -40,9 +40,9 @@ npcType.onCheckItem = function(npc, player, clientId, subType) end
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Alms! Alms for the poor!" },
-	{ text = "Sir, Ma'am, have a gold coin to spare?" },
-	{ text = "I need help! Please help me!" },
+	{ i18nKey = "npc.simon_the_beggar.voice_1" },
+	{ i18nKey = "npc.simon_the_beggar.voice_2" },
+	{ i18nKey = "npc.simon_the_beggar.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()

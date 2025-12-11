@@ -21,8 +21,8 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Now where did I put that form?" },
-	{ text = "Hail Pumin. Yes, hail." },
+	{ i18nKey = "npc.a_dead_bureaucrat3.voice_1" },
+	{ i18nKey = "npc.a_dead_bureaucrat3.voice_2" },
 }
 
 local keywordHandler = KeywordHandler:new()

@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Isn't this a beautiful day? Perfect for farming." },
+	{ i18nKey = "npc.sherry_mcronald.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

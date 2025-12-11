@@ -26,11 +26,11 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Hmm, we should do something about your outfit." },
-	{ text = "Ah, another adventurer. Let's talk a little." },
-	{ text = "Psst! Come over here for a little trade." },
-	{ text = "Hello, hello! Don't be shy, I don't bite." },
-	{ text = "By the way, if you want to look at old hints again, find the 'Help' button near your inventory and select 'Tutorial Hints'." },
+	{ i18nKey = "npc.carlos.voice_1" },
+	{ i18nKey = "npc.carlos.voice_2" },
+	{ i18nKey = "npc.carlos.voice_3" },
+	{ i18nKey = "npc.carlos.voice_4" },
+	{ i18nKey = "npc.carlos.voice_5" },
 }
 
 -- Npc shop

@@ -26,8 +26,8 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Health potions! Mana potions! Buy them here!" },
-	{ text = "All kinds of potions available here!" },
+	{ i18nKey = "npc.sundara.voice_1" },
+	{ i18nKey = "npc.sundara.voice_2" },
 }
 
 local itemsTable = {

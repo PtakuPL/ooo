@@ -1,7 +1,7 @@
 # NPC: ongulf
 
 **Plik:** `data-otservbr-global/npc/ongulf.lua`
-**Data migracji:** 2025-12-11 03:40
+**Data migracji:** 2025-12-11 16:32
 **Liczba tekstów:** 2
 
 ## Klucze i18n

@@ -1,7 +1,7 @@
 # NPC: the_librarian
 
 **Plik:** `data-otservbr-global/npc/the_librarian.lua`
-**Data migracji:** 2025-12-11 03:41
+**Data migracji:** 2025-12-11 16:31
 **Liczba tekstów:** 3
 
 ## Klucze i18n

@@ -1,7 +1,7 @@
 # NPC: jeronimo
 
 **Plik:** `data-otservbr-global/npc/jeronimo.lua`
-**Data migracji:** 2025-12-11 03:40
+**Data migracji:** 2025-12-11 16:26
 **Liczba tekstów:** 1
 
 ## Klucze i18n

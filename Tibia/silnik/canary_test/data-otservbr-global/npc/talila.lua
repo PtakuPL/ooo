@@ -26,9 +26,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Are you interested in a trade?" },
-	{ text = "Dont touch the wings, theyre delicate." },
-	{ text = "Tralllalalla." },
+	{ i18nKey = "npc.talila.voice_1" },
+	{ i18nKey = "npc.talila.voice_2" },
+	{ i18nKey = "npc.talila.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()

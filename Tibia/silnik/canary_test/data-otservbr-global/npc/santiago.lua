@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Evil little beasts... I hope someone helps me fight them." },
-	{ text = "Nasty creepy crawlies!" },
-	{ text = "Hey! You over there, could you help me with a little quest? Just say 'hi' or 'hello' to talk to me!" },
-	{ text = "Don't be shy, can't hurt to greet me with 'hello' or 'hi'!" },
+	{ i18nKey = "npc.santiago.voice_1" },
+	{ i18nKey = "npc.santiago.voice_2" },
+	{ i18nKey = "npc.santiago.voice_3" },
+	{ i18nKey = "npc.santiago.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()

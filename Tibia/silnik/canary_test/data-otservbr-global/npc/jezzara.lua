@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Food of various kinds, have a look." },
+	{ i18nKey = "npc.jezzara.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Embellish your home with flowers!" },
+	{ i18nKey = "npc.florentine.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

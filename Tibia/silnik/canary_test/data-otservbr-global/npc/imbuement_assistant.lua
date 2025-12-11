@@ -27,7 +27,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Hello adventurer, looking for Imbuement items? Just ask me!" },
+	{ i18nKey = "npc.imbuement_assistant.voice_1" },
 }
 
 local playerImbuementData = {}

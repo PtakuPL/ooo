@@ -26,8 +26,8 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I'm selling magic equipment. Come and have a look." },
-	{ text = "If you need runes, this is the market stall for you!" },
+	{ i18nKey = "npc.nipuna.voice_1" },
+	{ i18nKey = "npc.nipuna.voice_2" },
 }
 
 local itemsTable = {

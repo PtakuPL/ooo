@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Hey mate, up for a game of dice?" },
+	{ i18nKey = "npc.zebron.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

@@ -26,9 +26,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "The menu of the day sounds delicious!" },
-	{ text = "The last visit to the theatre was quite rewarding." },
-	{ text = "Such a beautiful and wealthy city - with so many opportunities ..." },
+	{ i18nKey = "npc.moe.voice_1" },
+	{ i18nKey = "npc.moe.voice_2" },
+	{ i18nKey = "npc.moe.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()

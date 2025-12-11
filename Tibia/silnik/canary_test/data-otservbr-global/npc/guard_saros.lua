@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Praised be Suon, the Benevolent King!" },
+	{ i18nKey = "npc.guard_saros.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

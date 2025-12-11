@@ -26,8 +26,8 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Welcome to the post office!" },
-	{ text = "Also selling runes, potions and magical equipment!" },
+	{ i18nKey = "npc.nelly.voice_1" },
+	{ i18nKey = "npc.nelly.voice_2" },
 }
 
 local itemsTable = {

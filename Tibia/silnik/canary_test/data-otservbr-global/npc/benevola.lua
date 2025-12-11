@@ -26,9 +26,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Nature is in pain." },
-	{ text = "The weather is fine today." },
-	{ text = "I can hear the call of the forest." },
+	{ i18nKey = "npc.benevola.voice_1" },
+	{ i18nKey = "npc.benevola.voice_2" },
+	{ i18nKey = "npc.benevola.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()

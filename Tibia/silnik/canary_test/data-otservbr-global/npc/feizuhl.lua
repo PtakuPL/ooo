@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I sell furniture both to the mourned and the enlightened." },
+	{ i18nKey = "npc.feizuhl.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

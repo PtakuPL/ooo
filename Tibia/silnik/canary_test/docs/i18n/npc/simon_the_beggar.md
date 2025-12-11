@@ -1,7 +1,7 @@
 # NPC: simon_the_beggar
 
 **Plik:** `data-otservbr-global/npc/simon_the_beggar.lua`
-**Data migracji:** 2025-12-11 03:41
+**Data migracji:** 2025-12-11 16:29
 **Liczba tekstów:** 3
 
 ## Klucze i18n

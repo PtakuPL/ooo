@@ -908,7 +908,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:31:19.602790"
+      "completed_at": "2025-12-11T19:32:04.573461"
     },
     "data-otservbr-global/npc/cranky_lizard_crone.lua": {
       "stages": {
@@ -1138,7 +1138,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:31:20.884299"
+      "completed_at": "2025-12-11T19:32:05.771315"
     },
     "data-otservbr-global/npc/sundara.lua": {
       "stages": {
@@ -1253,7 +1253,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:31:22.225882"
+      "completed_at": "2025-12-11T19:32:07.361227"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -1820,7 +1820,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:31:24.811660"
+      "completed_at": "2025-12-11T19:32:09.814286"
     },
     "data-otservbr-global/npc/mordecai.lua": {
       "stages": {
@@ -2276,7 +2276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:31:23.535698"
+      "completed_at": "2025-12-11T19:32:08.572756"
     }
   },
   "global_stats": {

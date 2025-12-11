@@ -1,7 +1,7 @@
 # NPC: finarfin
 
 **Plik:** `data-otservbr-global/npc/finarfin.lua`
-**Data migracji:** 2025-12-11 03:59
+**Data migracji:** 2025-12-11 04:00
 **Liczba tekstów:** 1
 
 ## Klucze i18n

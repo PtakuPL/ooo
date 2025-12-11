@@ -4,7 +4,7 @@
     "scripts": 1765500935.5539868,
     "monsters": 1765500946.5276,
     "actions": 1765500955.2332852,
-    "quests": 1765493716.0981553,
+    "quests": 1765500964.2862816,
     "raids": 1765493729.6850271,
     "world": 1765493745.0186677,
     "spells": 1765490104.104978,
@@ -51,7 +51,7 @@
     },
     "quests": {
       "count": 0,
-      "timestamp": 1765490116.0981498
+      "timestamp": 1765493764.286276
     },
     "raids": {
       "count": 0,
@@ -163,7 +163,7 @@
     "scripts": 6,
     "monsters": 6,
     "actions": 6,
-    "quests": 4,
+    "quests": 6,
     "raids": 4,
     "world": 4,
     "spells": 2,

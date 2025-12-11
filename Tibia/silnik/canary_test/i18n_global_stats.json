@@ -27,7 +27,7 @@
   "total_cycles": 1,
   "mode": "MIGRATION",
   "session_note": "npcHandler:say({...}) 95% done - 265 new keys from 89 arrays",
-  "last_update": "2025-12-11T19:42:41.747477",
+  "last_update": "2025-12-11T19:43:43.744889",
   "category": "npc",
   "migration": {
     "files_scanned": 20,

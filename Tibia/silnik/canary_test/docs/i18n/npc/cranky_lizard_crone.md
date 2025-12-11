@@ -1,7 +1,7 @@
 # NPC: cranky_lizard_crone
 
 **Plik:** `data-otservbr-global/npc/cranky_lizard_crone.lua`
-**Data migracji:** 2025-12-11 17:18
+**Data migracji:** 2025-12-11 17:19
 **Liczba tekstów:** 0
 
 ## Klucze i18n

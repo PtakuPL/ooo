@@ -14,6 +14,7 @@
 # [2025-12-11 01:55:11] Wykonano: FORCE:items
 # [2025-12-11 01:55:18] Wykonano: FORCE:spells
 #AUTO:pl:npc.json:1500  # Wykonano 2025-12-11 02:17:40
-AUTO:ru:npc.json:1500
+#AUTO:ru:npc.json:1500  # Wykonano 2025-12-11 02:17:48
 AUTO:tr:npc.json:1500
 # [2025-12-11 02:17:40] Wykonano: AUTO:pl:npc.json:1500
+# [2025-12-11 02:17:48] Wykonano: AUTO:ru:npc.json:1500

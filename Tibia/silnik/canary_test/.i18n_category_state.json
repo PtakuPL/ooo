@@ -4,7 +4,8 @@
     "raids": 1765422285.7101755,
     "world": 1765422293.0261648,
     "spells": 1765422301.6123815,
-    "items": 1765422309.4483867
+    "items": 1765422309.4483867,
+    "libs": 1765422322.0963476
   },
   "last_processed": {
     "npc": {
@@ -34,6 +35,10 @@
     "items": {
       "count": 0,
       "timestamp": 1765421709.4483814
+    },
+    "libs": {
+      "count": 0,
+      "timestamp": 1765421722.096342
     }
   },
   "consecutive_zeros": {
@@ -43,7 +48,8 @@
     "raids": 2,
     "world": 2,
     "spells": 2,
-    "items": 2
+    "items": 2,
+    "libs": 2
   },
   "total_processed": {
     "npc": 100,

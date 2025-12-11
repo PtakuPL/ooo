@@ -66323,6 +66323,30 @@
     "html.faq.text4": {
       "src_hash": "8a99aafd0a77ef609a787c525232e72a",
       "text": "FAQ - Frequently Asked Missãoions"
+    },
+    "php.settings.text1": {
+      "src_hash": "353d8ff78b17c34b31c8ad01d525a804",
+      "text": "Plugin $plugin does Nãot exist or does Nãot have settings defined."
+    },
+    "php.settings.text2": {
+      "src_hash": "4cf7384b414a9d7d4624d7e776f98aee",
+      "text": "CanNãot load settings file for plugin $plugin"
+    },
+    "php.players.text4": {
+      "src_hash": "37d5fea6c0635308195096e7f8d6df21",
+      "text": "Jogador_datatable table table-striped table-bordered table-responsive d-md-table"
+    },
+    "php.upload_image.text1": {
+      "src_hash": "32e960d3879a6fb709a3d6de9507911b",
+      "text": "There is Não P3P policy."
+    },
+    "php.template.text2": {
+      "src_hash": "e2d5d75ea4935cdabe58e68c1a4529ab",
+      "text": "nav-item d-Nãone d-sm-inline-block"
+    },
+    "php.migrateruncommand.text2": {
+      "src_hash": "045ed1be584efb9e9a37a4b4550c6ea0",
+      "text": "Não migration has been executed"
     }
   }
 }

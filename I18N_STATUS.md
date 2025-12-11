@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 03:48:51 UTC  
+> **Aktualizacja:** 2025-12-11 03:49:42 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 29134
 
 ---
@@ -126,15 +126,15 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 NPC                                    │
+│ Kategoria: 🎒 SCRIPTS                                │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: npc                                            │
-│ [█████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 5339/15000 kluczy (36%)                                          │
+│ 📊 Ostatnia aktywność: scripts                                        │
+│ [███████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
+│ 385/1000 kluczy (38%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 0 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 03:48:51                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 03:49:42                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -156,6 +156,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- 📜 `scripts` +0 kluczy @ 03:49:42
 - 🧙 `npc` +0 kluczy @ 03:48:51
 
 
@@ -320,7 +321,7 @@
 | monsters | 7341 | 0 | 0 | ✅ Active |
 | npc | 5339 | 0 | 2 | ⏭️ Skip 9m |
 | html | 1495 | 0 | 0 | ✅ Active |
-| scripts | 385 | 0 | 0 | ✅ Active |
+| scripts | 385 | 0 | 2 | ⏭️ Skip 9m |
 | spells | 304 | 0 | 0 | ✅ Active |
 | client | 236 | 0 | 0 | ✅ Active |
 | raids | 147 | 0 | 0 | ✅ Active |
@@ -347,6 +348,7 @@
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
 | npc | 9m | 2x | Progresywny backoff |
+| scripts | 9m | 2x | Progresywny backoff |
 
 ---
 
@@ -397,7 +399,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:48:51  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:49:42  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

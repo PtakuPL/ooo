@@ -4108,21 +4108,22 @@ def count_files_needing_work(category):
                     if category == "npc":
                         needs = False
                         # StdModule.say + text= i bez i18nKey
-                    if re.search(r'StdModule\.say', content):
-                        if re.search(r'text\s*=\s*"', content):
-                            if 'i18nKey' not in content:
+                        if re.search(r'StdModule\.say', content):
+                            if re.search(r'text\s*=\s*"', content):
+                                if 'i18nKey' not in content:
+                                    needs = True
+                        # npcHandler:say( bez NPC_LIB (prostszy pattern)
+                        if 'npcHandler:say(' in content:
+                            if 'NPC_LIB.i18n.npcSay' not in content:
                                 needs = True
-                    # npcHandler:say( bez NPC_LIB (prostszy pattern)
-                    if 'npcHandler:say(' in content:
-                        if 'NPC_LIB.i18n.npcSay' not in content:
-                            needs = True
-                    # npcConfig.voices z text = "..." (brak i18n)
-                    if re.search(r'npcConfig\.voices\s*=\s*\{', content):
-                        if re.search(r'text\s*=\s*"', content):
-                            needs = True
-                    if needs:
-                        needs_work += 1
-                    continue
+                        # npcConfig.voices z text = "..." (brak i18n)
+                        if re.search(r'npcConfig\.voices\s*=\s*\{', content):
+                            if re.search(r'text\s*=\s*"', content):
+                                if 'i18nKey' not in content:
+                                    needs = True
+                        if needs:
+                            needs_work += 1
+                        continue
                     
                     # Standardowa logika dla innych kategorii
                     has_pattern = False

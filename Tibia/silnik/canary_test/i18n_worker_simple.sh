@@ -740,13 +740,17 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 | 📄 HTML Views | {status_icon(html_keys, 300)} | {html_keys}/300 ({round(html_keys/300*100) if html_keys else 0}%) | 300 |
 | 📦 JavaScript | {status_icon(client_keys, TARGETS["client"])} | {client_keys}/{TARGETS["client"]} ({round(client_keys/TARGETS["client"]*100) if TARGETS["client"] else 0}%) | {TARGETS["client"]} |
 
-### ⏳ Faza 3: 📱 Instalka/Klient
+### ⏳ Faza 3: 📱 OTClient / Testyy
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
 | 🖥️ Client UI | {status_icon(ui_keys, 200)} | {ui_keys}/200 ({round(ui_keys/200*100)}%) | 200 |
-| 💿 Installer/C++ | {status_icon(cpp_keys, TARGETS["cpp"])} | {cpp_keys}/{TARGETS["cpp"]} ({round(cpp_keys/TARGETS["cpp"]*100) if TARGETS["cpp"] else 0}%) | {TARGETS["cpp"]} |
-
+| 💿 Server C++ | {status_icon(cpp_keys, TARGETS["cpp"])} | {cpp_keys}/{TARGETS["cpp"]} ({round(cpp_keys/TARGETS["cpp"]*100) if TARGETS["cpp"] else 0}%) | {TARGETS["cpp"]} |
+| 🎮 OTClient Modules | {status_icon(otclient_modules_keys, 500)} | {otclient_modules_keys}/500 ({round(otclient_modules_keys/500*100) if otclient_modules_keys else 0}%) | 500 |
+| 📦 OTClient Data | {status_icon(otclient_data_keys, 200)} | {otclient_data_keys}/200 ({round(otclient_data_keys/200*100) if otclient_data_keys else 0}%) | 200 |
+| ⚙️ OTClient Src | {status_icon(otclient_src_keys, 300)} | {otclient_src_keys}/300 ({round(otclient_src_keys/300*100) if otclient_src_keys else 0}%) | 300 |
+| 🔧 OTClient Mods | {status_icon(otclient_mods_keys, 100)} | {otclient_mods_keys}/100 ({round(otclient_mods_keys/100*100) if otclient_mods_keys else 0}%) | 100 |
+| 🛠️ OTClient Tools | {status_icon(otclient_tools_keys, 50)} | {otclient_tools_keys}/50 ({round(otclient_tools_keys/50*100) if otclient_tools_keys else 0}%) | 50 |
 ### ⏳ Faza 4: 🌍 Tłumaczenia (Etap 1: Sync Kluczy)
 
 | Język | Status | Kluczy | Etap |

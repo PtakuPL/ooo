@@ -1,1 +1,16 @@
-{"skip_until":{},"last_processed":{},"migrations_done":false}
+{
+  "skip_until": {
+    "npc": 1765419791.6988628
+  },
+  "last_processed": {
+    "npc": {
+      "count": 0,
+      "timestamp": 1765419191.698857
+    }
+  },
+  "migrations_done": false,
+  "consecutive_zeros": {
+    "npc": 2
+  },
+  "total_processed": {}
+}

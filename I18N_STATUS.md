@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-11 22:44:14 UTC  
+> **Aktualizacja:** 2025-12-11 22:44:23 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28857
 
 ---
@@ -69,7 +69,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#3** | od uruchomienia |
+| 🔄 Cykl aktualny | **#4** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **10** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -170,17 +170,17 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     3 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     4 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
-│ Kategoria: 📁 MONSTERS                               │
+│ Kategoria: 📁 ACTIONS                                │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Pliki przeskanowane:     10 (wszystkie kategorie)          │
-│    ├─ Kategoria MONSTERS:   7341 kluczy EN                    │
+│    ├─ Kategoria ACTIONS:      0 kluczy EN                    │
 │    └─ Total kluczy EN:  28857                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-11 22:44:14            │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 22:44:23            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -195,12 +195,13 @@
 | ⬜ Plików bez kluczy | **0** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **10** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#3** | continuous mode |
+| 🔄 Cykli wykonanych | **#4** | continuous mode |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `actions` +0 kluczy @ 22:44:21
 - 👹 `monsters` +0 kluczy @ 22:44:12
 - 📜 `scripts` +0 kluczy @ 22:43:55
 - 🧙 `npc` +0 kluczy @ 22:43:17
@@ -365,7 +366,7 @@
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 0 | 0 | ✅ Active |
 | monsters | 7341 | 0 | 2 | ⏭️ Skip 9m |
-| npc | 5339 | 0 | 2 | ⏭️ Skip 9m |
+| npc | 5339 | 0 | 2 | ⏭️ Skip 8m |
 | html | 1495 | 0 | 0 | ✅ Active |
 | spells | 304 | 0 | 0 | ✅ Active |
 | client | 242 | 0 | 0 | ✅ Active |
@@ -378,7 +379,7 @@
 | messages | 11 | 0 | 0 | ✅ Active |
 | chatchannels | 8 | 0 | 0 | ✅ Active |
 | events | 5 | 0 | 0 | ✅ Active |
-| actions | 0 | 0 | 0 | ⏳ Empty |
+| actions | 0 | 0 | 2 | ⏭️ Skip 9m |
 | cpp | 0 | 0 | 0 | ⏳ Empty |
 | errors | 0 | 0 | 0 | ⏳ Empty |
 | npclib | 0 | 0 | 0 | ⏳ Empty |
@@ -393,9 +394,10 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| npc | 9m | 2x | Progresywny backoff |
+| npc | 8m | 2x | Progresywny backoff |
 | scripts | 9m | 2x | Progresywny backoff |
 | monsters | 9m | 2x | Progresywny backoff |
+| actions | 9m | 2x | Progresywny backoff |
 
 ---
 
@@ -403,7 +405,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #3 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #4 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -446,7 +448,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 22:44:14  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 22:44:23  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

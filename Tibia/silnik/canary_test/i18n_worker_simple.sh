@@ -4382,17 +4382,6 @@ CATEGORIES = {
         "json": "otclient_src.json",
         "file_ext": [".cpp", ".hpp", ".h"],
         "priority": 28
-    },
-    
-    # === SERVER ERRORS/MESSAGES (priorytet 29) ===
-    "server": {
-        "dirs": ["src"],
-        "patterns": [r'sendTextMessage\s*\(', r'fmt::format\s*\("[^"]+'],
-        "exclude_if": ["i18n::"],
-        "json": "server.json",
-        "file_ext": [".cpp", ".hpp"],
-        "priority": 29
-    }
 }
 
 # Plik komend sterowania workerem

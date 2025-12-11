@@ -6,7 +6,7 @@
     "actions": 1765493703.9237611,
     "quests": 1765493716.0981553,
     "raids": 1765493729.6850271,
-    "world": 1765490093.234227,
+    "world": 1765493745.0186677,
     "spells": 1765490104.104978,
     "talkactions": 1765490112.9538877,
     "movements": 1765490126.1440518,
@@ -59,7 +59,7 @@
     },
     "world": {
       "count": 0,
-      "timestamp": 1765489493.2342203
+      "timestamp": 1765490145.018659
     },
     "spells": {
       "count": 0,
@@ -165,7 +165,7 @@
     "actions": 4,
     "quests": 4,
     "raids": 4,
-    "world": 2,
+    "world": 4,
     "spells": 2,
     "talkactions": 2,
     "movements": 2,

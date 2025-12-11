@@ -365,7 +365,7 @@ cpp_keys = count_keys("cpp.json")
 html_keys = count_keys("html.json")
 client_keys = count_keys("client.json")
 
-# KATEGORIE OTCLIENT/TESTYY (dodane 2025-12-11)
+# KATEGORIE OTCLIENT/TESTYY (dodane 2025-01-XX)
 otclient_modules_keys = count_keys("otclient_modules.json")
 otclient_data_keys = count_keys("otclient_data.json")
 otclient_src_keys = count_keys("otclient_src.json")
@@ -378,47 +378,8 @@ total_keys = (game_keys + items_keys + misc_keys + monsters_keys + npc_keys +
               libs_keys + events_keys + chatchannels_keys + modules_keys + npclib_keys +
               actions_keys + errors_keys + messages_keys +
               php_keys + cpp_keys + html_keys + client_keys +
-              otclient_modules_keys + otclient_data_keys + otclient_src_keys +
+              otclient_modules_keys + otclient_data_keys + otclient_src_keys + 
               otclient_mods_keys + otclient_tools_keys)
-
-# Generuj timestamp (używany też przy baseline)
-timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-
-# Bazowy stan (ile było przed pracą agenta) - zapis do pliku, później tylko odczyt
-BASELINE_FILE = "i18n_progress_baseline.json"
-current_counts = {
-    "npc": npc_keys,
-    "scripts": scripts_keys,
-    "items": items_keys,
-    "monsters": monsters_keys,
-    "spells": spells_keys,
-    "server": server_keys,
-    "php": php_keys,
-    "html": html_keys,
-    "client": client_keys,
-    "ui": ui_keys,
-    "cpp": cpp_keys,
-}
-baseline_ts = timestamp
-baseline_counts = current_counts.copy()
-if os.path.exists(BASELINE_FILE):
-    try:
-        with open(BASELINE_FILE) as f:
-            baseline_data = json.load(f)
-            baseline_counts = baseline_data.get("counts", baseline_counts)
-            baseline_ts = baseline_data.get("timestamp", baseline_ts)
-    except Exception:
-        pass
-else:
-    try:
-        with open(BASELINE_FILE, "w") as f:
-            json.dump({"timestamp": baseline_ts, "counts": baseline_counts}, f, indent=2, ensure_ascii=False)
-    except Exception:
-        pass
-
-delta_counts = {}
-for k, v in current_counts.items():
-    delta_counts[k] = v - baseline_counts.get(k, 0)
 
 # Zlicz języki (wszystkie dostępne)
 ALL_LANGUAGES = ["en", "pl", "de", "es", "pt", "fr", "it", "ru", "uk", "zh", "ja", "ko", "ar", "tr", "nl", "sv", "da", "no", "fi", "cs", "sk", "hu", "ro", "bg", "el", "he", "hi", "th", "vi", "id", "ms", "tl", "sw", "bn", "ta", "te", "ml", "ka", "hy", "az", "kk", "uz", "sr", "hr", "sl", "bs", "mk", "sq", "lv", "lt", "et", "fa", "zh_TW"]
@@ -512,7 +473,10 @@ TARGETS = {
     "game": 100, "items": 40000, "misc": 100, "monsters": 5000,
     "npc": 15000, "player": 200, "quests": 500, "scripts": 1000,
     "server": 300, "spells": 200, "system": 2000, "ui": 200,
-    "php": 3000, "cpp": 500, "html": 500, "client": 200
+    "php": 3000, "cpp": 500, "html": 500, "client": 200,
+    # OTClient/Testyy kategorie
+    "otclient_modules": 500, "otclient_data": 200, "otclient_src": 300,
+    "otclient_mods": 100, "otclient_tools": 50
 }
 
 # Auto-adjust targets na podstawie aktualnych wartości
@@ -556,6 +520,9 @@ def status_icon(current, target):
         return "🔄"
     return "⏳"
 
+# Generuj timestamp
+timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
 # Pre-compute roadmap values for table
 roadmap_items = f"| 🎒 Items | {items_keys} | {progress_bar(items_keys, TARGETS['items'])} | {TARGETS['items']} | {status_icon(items_keys, TARGETS['items'])} {round(items_keys/TARGETS['items']*100) if TARGETS['items'] else 0}% |"
 roadmap_npc = f"| 🧙 NPC | {npc_keys} | {progress_bar(npc_keys, TARGETS['npc'])} | {TARGETS['npc']} | {status_icon(npc_keys, TARGETS['npc'])} {round(npc_keys/TARGETS['npc']*100) if TARGETS['npc'] else 0}% |"
@@ -584,32 +551,6 @@ for _lang in auto_langs:
     status_auto = "✅ TM" if tm_count > 0 else "⚠️ placeholdery (brak TM)"
     auto_rows.append(f"| {_lang.upper()} | {tm_count} | {status_auto} |")
 auto_table = chr(10).join(auto_rows)
-
-# Tabela postępu agenta vs stan początkowy
-progress_order = ["npc", "items", "monsters", "scripts", "spells", "php", "html", "client", "server", "ui", "cpp"]
-display = {
-    "npc": "🧙 NPC",
-    "items": "🎒 Items",
-    "monsters": "👹 Monsters",
-    "scripts": "📜 Scripts",
-    "spells": "✨ Spells",
-    "php": "🐘 PHP",
-    "html": "📄 HTML",
-    "client": "📦 JS/Client",
-    "server": "⚙️ Server",
-    "ui": "🎨 UI",
-    "cpp": "💿 C++",
-}
-progress_rows = []
-for cat in progress_order:
-    base = baseline_counts.get(cat, 0)
-    cur = current_counts.get(cat, 0)
-    delta = delta_counts.get(cat, 0)
-    progress_rows.append(f"| {display.get(cat, cat)} | {base} | {cur} | {'+' if delta>=0 else ''}{delta} |")
-progress_table = chr(10).join(progress_rows)
-progress_total_base = sum(baseline_counts.get(c, 0) for c in progress_order)
-progress_total_cur = sum(current_counts.get(c, 0) for c in progress_order)
-progress_total_delta = progress_total_cur - progress_total_base
 
 # Status workera (ostatni tryb z i18n_global_stats.json)
 try:
@@ -700,16 +641,6 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 ---
 
-## 📈 Postęp agenta vs stan początkowy
-- Baseline z: {baseline_ts}  
-
-| Kategoria | Na starcie | Teraz | +Agent |
-|-----------|------------|-------|--------|
-{progress_table}
-| **Suma** | **{progress_total_base}** | **{progress_total_cur}** | **{('+' if progress_total_delta>=0 else '') + str(progress_total_delta)}** |
-
----
-
 ## 🔀 Etap 1 vs Etap 2
 
 ### 📦 Etap 1: Przygotowanie (SYNC kluczy EN → pliki językowe)
@@ -760,6 +691,7 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 | ⚙️ OTClient Src | {status_icon(otclient_src_keys, 300)} | {otclient_src_keys}/300 ({round(otclient_src_keys/300*100) if otclient_src_keys else 0}%) | 300 |
 | 🔧 OTClient Mods | {status_icon(otclient_mods_keys, 100)} | {otclient_mods_keys}/100 ({round(otclient_mods_keys/100*100) if otclient_mods_keys else 0}%) | 100 |
 | 🛠️ OTClient Tools | {status_icon(otclient_tools_keys, 50)} | {otclient_tools_keys}/50 ({round(otclient_tools_keys/50*100) if otclient_tools_keys else 0}%) | 50 |
+
 ### ⏳ Faza 4: 🌍 Tłumaczenia (Etap 1: Sync Kluczy)
 
 | Język | Status | Kluczy | Etap |
@@ -4407,7 +4339,7 @@ CATEGORIES = {
         "priority": 29
     },
     
-    # === SERVER C++ (priorytet 30) ===
+    # === SERVER ERRORS/MESSAGES (priorytet 30) ===
     "server": {
         "dirs": ["src"],
         "patterns": [r'sendTextMessage\s*\(', r'fmt::format\s*\("[^"]+'],
@@ -4420,7 +4352,7 @@ CATEGORIES = {
     # === ERRORS - Komunikaty błędów (priorytet 31) ===
     "errors": {
         "dirs": ["data-otservbr-global/scripts", "data-canary/scripts", "data/scripts", "src"],
-        "patterns": [r'error\s*[=(].*"[^"]+"', r'Error:\s*"[^"]+"'],
+        "patterns": [r'error\s*[=(].*"[^"]+"', r'Error:\s*"[^"]+"', r'fmt::format\s*\("[^"]+'],
         "exclude_if": ["i18n::"],
         "json": "errors.json",
         "file_ext": [".lua", ".cpp", ".hpp"],

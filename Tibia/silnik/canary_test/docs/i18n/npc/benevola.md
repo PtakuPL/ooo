@@ -1,7 +1,7 @@
 # NPC: benevola
 
 **Plik:** `data-otservbr-global/npc/benevola.lua`
-**Data migracji:** 2025-12-11 04:20
+**Data migracji:** 2025-12-11 04:22
 **Liczba tekstów:** 3
 
 ## Klucze i18n

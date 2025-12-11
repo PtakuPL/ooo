@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 300, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 03:07:27 UTC  
+> **Aktualizacja:** 2025-12-11 03:07:34 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -28,7 +28,7 @@
 | 🔑 Kluczy i18n | **29017** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#9** | - |
+| 🔄 Cykl | **#10** | - |
 
 ---
 
@@ -80,19 +80,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     9 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    10 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 EVENTS                                 │
+│ Kategoria: 🎒 CHATCHANNELS                           │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: events                                         │
+│ 📊 Ostatnia aktywność: chatchannels                                   │
 │ [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 5/1000 kluczy (0%)                                          │
+│ 8/1000 kluczy (1%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 150 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 03:07:27                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 03:07:34                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -106,7 +106,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29017** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#9** | continuous mode |
+| 🔄 Cykli wykonanych | **#10** | continuous mode |
 | 🎯 Aktywne kategorie | **15** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -114,6 +114,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `chatchannels` +0 kluczy @ 03:07:34
 - ⚡ `events` +0 kluczy @ 03:07:27
 - ⚡ `libs` +0 kluczy @ 03:07:18
 - 🎒 `items` +0 kluczy @ 03:07:10
@@ -121,7 +122,6 @@
 - ⚡ `world` +0 kluczy @ 03:06:32
 - ⚡ `raids` +0 kluczy @ 03:06:24
 - 👹 `monsters` +0 kluczy @ 03:06:17
-- 📜 `scripts` +0 kluczy @ 03:06:10
 
 
 ---
@@ -294,7 +294,7 @@
 | libs | 21 | 0 | 2 | ⏭️ Skip 9m |
 | modules | 16 | 0 | 0 | ✅ Active |
 | messages | 11 | 0 | 0 | ✅ Active |
-| chatchannels | 8 | 0 | 0 | ✅ Active |
+| chatchannels | 8 | 0 | 2 | ⏭️ Skip 9m |
 | events | 5 | 0 | 2 | ⏭️ Skip 9m |
 | actions | 0 | 0 | 0 | ⏳ Empty |
 | cpp | 0 | 0 | 0 | ⏳ Empty |
@@ -303,7 +303,7 @@
 | quests | 0 | 0 | 0 | ⏳ Empty |
 | server | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
-| world | 0 | 0 | 2 | ⏭️ Skip 9m |
+| world | 0 | 0 | 2 | ⏭️ Skip 8m |
 
 ---
 
@@ -315,10 +315,11 @@
 | scripts | 8m | 2x | Progresywny backoff |
 | monsters | 8m | 2x | Progresywny backoff |
 | raids | 8m | 2x | Progresywny backoff |
-| world | 9m | 2x | Progresywny backoff |
+| world | 8m | 2x | Progresywny backoff |
 | items | 9m | 2x | Progresywny backoff |
 | libs | 9m | 2x | Progresywny backoff |
 | events | 9m | 2x | Progresywny backoff |
+| chatchannels | 9m | 2x | Progresywny backoff |
 
 ---
 
@@ -326,7 +327,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #9 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #10 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -369,7 +370,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:07:27  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:07:34  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

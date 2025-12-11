@@ -7,7 +7,8 @@
     "world": 1765419392.5446718,
     "items": 1765419430.5368755,
     "libs": 1765419438.2644188,
-    "events": 1765419447.1513338
+    "events": 1765419447.1513338,
+    "chatchannels": 1765419454.1968577
   },
   "last_processed": {
     "npc": {
@@ -45,6 +46,10 @@
     "events": {
       "count": 0,
       "timestamp": 1765418847.1513255
+    },
+    "chatchannels": {
+      "count": 0,
+      "timestamp": 1765418854.196852
     }
   },
   "consecutive_zeros": {
@@ -56,7 +61,8 @@
     "spells": 0,
     "items": 2,
     "libs": 2,
-    "events": 2
+    "events": 2,
+    "chatchannels": 2
   },
   "total_processed": {
     "spells": 150

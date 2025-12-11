@@ -19,7 +19,8 @@
     "sendtextmessage": 1765416419.835836,
     "keywordhandler": 1765416427.864905,
     "twig": 1765416436.027876,
-    "items": 1765416450.6506839
+    "items": 1765416450.6506839,
+    "pending_skip": 1765416161.5687027
   },
   "last_processed": {
     "npc": {
@@ -105,6 +106,10 @@
     "twig": {
       "count": 0,
       "timestamp": 1765415836.0278702
+    },
+    "pending_skip": {
+      "count": 0,
+      "timestamp": 1765415861.5686975
     }
   },
   "consecutive_zeros": {
@@ -128,7 +133,8 @@
     "client": 2,
     "sendtextmessage": 2,
     "keywordhandler": 2,
-    "twig": 2
+    "twig": 2,
+    "pending_skip": 1
   },
   "total_processed": {
     "spells": 370,

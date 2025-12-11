@@ -13,7 +13,6 @@
     "npclib": 1765415375.5295043,
     "php": 1765420168.1395986,
     "html": 1765415600.2206395,
-    "client": 1765420170.776909,
     "sendtextmessage": 1765415627.7470727,
     "keywordhandler": 1765415635.1195862,
     "twig": 1765415642.8418
@@ -106,7 +105,6 @@
     "startup": 4,
     "npclib": 4,
     "php": 8,
-    "client": 6,
     "sendtextmessage": 4,
     "keywordhandler": 4,
     "twig": 4,
@@ -130,7 +128,7 @@
   },
   "translation_sync": {
     "current_lang": "uz",
-    "current_category": "html.json",
+    "current_category": "items.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -608,11 +606,12 @@
       },
       "uz": {
         "chatchannels": 8,
-        "total": 1508,
+        "total": 15257,
         "events": 5,
-        "html": 1495
+        "html": 1495,
+        "items": 13749
       }
     },
-    "last_sync": 1765413663.0613337
+    "last_sync": 1765413670.5268028
   }
 }

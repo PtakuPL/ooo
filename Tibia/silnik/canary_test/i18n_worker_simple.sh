@@ -3901,26 +3901,42 @@ def read_category_state():
         if os.path.exists(CATEGORY_STATE_FILE):
             with open(CATEGORY_STATE_FILE) as f:
                 state = json.load(f)
+        else:
+            state = {}
+        
+        # Ustaw wartości domyślne
+        state.setdefault("skip_until", {})
+        state.setdefault("last_processed", {})
+        state.setdefault("consecutive_zeros", {})
+        state.setdefault("total_processed", {})
+        state.setdefault("migrations_done", False)
+        
+        # Auto-reset kategorii po 24h bez aktywności
+        import time
+        now = time.time()
+        reset_threshold = 24 * 3600  # 24 godziny
+        
+        for cat_name in list(state.get("skip_until", {}).keys()):
+            last_proc = state.get("last_processed", {}).get(cat_name, {})
+            last_time = last_proc.get("timestamp", 0)
             
-            # Auto-reset kategorii po 24h bez aktywności
-            import time
-            now = time.time()
-            reset_threshold = 24 * 3600  # 24 godziny
-            
-            for cat_name in list(state.get("skip_until", {}).keys()):
-                last_proc = state.get("last_processed", {}).get(cat_name, {})
-                last_time = last_proc.get("timestamp", 0)
-                
-                # Jeśli minęło 24h od ostatniej próby, resetuj skip
-                if now - last_time > reset_threshold:
-                    state["skip_until"].pop(cat_name, None)
-                    state["consecutive_zeros"][cat_name] = 0
-                    print(f"🔄 Auto-reset kategorii '{cat_name}' po 24h")
-            
-            return state
+            # Jeśli minęło 24h od ostatniej próby, resetuj skip
+            if now - last_time > reset_threshold:
+                state["skip_until"].pop(cat_name, None)
+                state["consecutive_zeros"][cat_name] = 0
+                print(f"🔄 Auto-reset kategorii '{cat_name}' po 24h")
+        
+        return state
+    except:
+        return {"skip_until": {}, "last_processed": {}, "consecutive_zeros": {}, "total_processed": {}, "migrations_done": False}
+
+def write_category_state(state):
+    """Zapisz stan kategorii"""
+    try:
+        with open(CATEGORY_STATE_FILE, "w") as f:
+            json.dump(state, f, indent=2)
     except:
         pass
-    return {"skip_until": {}, "last_processed": {}, "consecutive_zeros": {}, "total_processed": {}}
 
 def should_skip_category(cat_name, state):
     """Sprawdź czy kategoria powinna być pominięta"""
@@ -4095,17 +4111,37 @@ if cmd:
 # 1. Sprawdź każdą kategorię po kolei (według priorytetu)
 # Uwzględnij skip dla kategorii które zwróciły 0 w poprzednim cyklu
 cat_state = read_category_state()
+last_processed = cat_state.get("last_processed", {})
+
+# BOOTSTRAP: jeśli kategoria nie była jeszcze ruszana, zrób co najmniej jedno podejście (nawet gdy needs=0)
 sorted_cats = sorted(CATEGORIES.items(), key=lambda x: x[1].get("priority", 99))
+for cat_name, config in sorted_cats:
+    if cat_name not in last_processed:
+        needs_work = count_files_needing_work(cat_name)
+        print(f"MIGRATION:{cat_name}:{needs_work}:BOOTSTRAP")
+        exit(0)
+
+# Standardowy przebieg
 for cat_name, config in sorted_cats:
     # Pomiń kategorie oznaczone do skip
     if should_skip_category(cat_name, cat_state):
         continue
     needs_work = count_files_needing_work(cat_name)
     if needs_work > 0:
+        cat_state["migrations_done"] = False
+        write_category_state(cat_state)
         print(f"MIGRATION:{cat_name}:{needs_work}")
         exit(0)
 
+# Jeśli tu doszliśmy: brak pracy migracyjnej → uznaj migracje za zakończone
+cat_state["migrations_done"] = True
+write_category_state(cat_state)
+
 # 2. Migracja zakończona - sprawdź TRANSLATION_SYNC (Etap 1)
+# Jeśli migracje nie są oficjalnie zakończone, zatrzymaj się tutaj
+if not cat_state.get("migrations_done", False):
+    print("MIGRATION:pending:0:WAIT")
+    exit(0)
 # Kolejność języków: Europa → Rosja/Azja Śr. → Bliski Wschód → Azja → Inne
 TARGET_LANGUAGES = [
     # Europa Zachodnia & Środkowa

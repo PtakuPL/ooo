@@ -130,7 +130,7 @@
   },
   "translation_sync": {
     "current_lang": "az",
-    "current_category": "events.json",
+    "current_category": "html.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -658,11 +658,12 @@
       },
       "az": {
         "chatchannels": 8,
-        "total": 249,
+        "total": 1744,
         "client": 236,
-        "events": 5
+        "events": 5,
+        "html": 1495
       }
     },
-    "last_sync": 1765414456.3713274
+    "last_sync": 1765414464.118256
   }
 }

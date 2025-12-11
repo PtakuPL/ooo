@@ -4397,6 +4397,37 @@ CATEGORIES = {
     # === SERVER C++ (priorytet 30) ===
     "server": {
         "dirs": ["src"],
+        "patterns": [r'sendTextMessage\s*\(', r'fmt::format\s*\("[^"]+'],
+        "exclude_if": ["i18n::"],
+        "json": "server.json",
+        "file_ext": [".cpp", ".hpp"],
+        "priority": 30
+    },
+    
+    # === ERRORS - Komunikaty błędów (priorytet 31) ===
+    "errors": {
+        "dirs": ["data-otservbr-global/scripts", "data-canary/scripts", "data/scripts", "src"],
+        "patterns": [r'error\s*[=(].*"[^"]+"', r'Error:\s*"[^"]+"'],
+        "exclude_if": ["i18n::"],
+        "json": "errors.json",
+        "file_ext": [".lua", ".cpp", ".hpp"],
+        "priority": 31
+    }
+}
+    
+    # === TESTYY/TOOLS - OTClient Tools (priorytet 29) ===
+    "otclient_tools": {
+        "dirs": ["testyy/tools"],
+        "patterns": [r'"[^"]{10,}"', r"'[^']{10,}'"],
+        "exclude_if": [],
+        "json": "otclient_tools.json",
+        "file_ext": [".lua", ".py", ".sh"],
+        "priority": 29
+    },
+    
+    # === SERVER C++ (priorytet 30) ===
+    "server": {
+        "dirs": ["src"],
         "patterns": [r'sendTextMessage\s*\(', r'fmt::format\s*\("[^"]+'"],
         "exclude_if": ["i18n::"],
         "json": "server.json",

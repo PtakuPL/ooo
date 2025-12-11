@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 04:14:22 UTC  
+> **Aktualizacja:** 2025-12-11 04:15:28 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 29142
 
 ---
@@ -28,7 +28,7 @@
 | 🔑 Kluczy i18n (EN) | **29142** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#36** | - |
+| 🔄 Cykl | **#37** | - |
 
 ---
 
@@ -122,7 +122,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    36 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    37 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
@@ -132,9 +132,9 @@
 │ [█████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
 │ 5339/15000 kluczy (36%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Total processed: 1800 operacji               │
+│ ⏳ Total processed: 1900 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 04:14:22                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 04:15:28                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -144,11 +144,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Operacji wykonanych | **1800** | we wszystkich kategoriach |
+| 📁 Operacji wykonanych | **1900** | we wszystkich kategoriach |
 | ✅ NPC zmigrowanych | **144** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29142** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#36** | continuous mode |
+| 🔄 Cykli wykonanych | **#37** | continuous mode |
 | 🎯 Aktywne kategorie | **15** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -156,7 +156,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🧙 `npc` +50 kluczy @ 04:14:22
+- 🧙 `npc` +50 kluczy @ 04:15:28
 - ⚡ `twig` +0 kluczy @ 03:57:14
 - ⚡ `keywordhandler` +0 kluczy @ 03:57:05
 - ⚡ `sendtextmessage` +0 kluczy @ 03:56:53
@@ -325,7 +325,7 @@
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 0 | 2 | ✅ Active |
 | monsters | 7341 | 0 | 2 | ✅ Active |
-| npc | 5339 | 1700 | 0 | ✅ Active |
+| npc | 5339 | 1800 | 0 | ✅ Active |
 | html | 1495 | 0 | 2 | ✅ Active |
 | scripts | 387 | 82 | 0 | ✅ Active |
 | spells | 304 | 0 | 2 | ✅ Active |
@@ -359,7 +359,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #36 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #37 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -402,23 +402,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 04:14:22  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 04:15:28  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `ghorza` - ukończono 2025-12-11 04:14
-- ✅ `gamel` - ukończono 2025-12-11 04:14
-- ✅ `galuna` - ukończono 2025-12-11 04:14
-- ✅ `frederik` - ukończono 2025-12-11 04:14
-- ✅ `frans` - ukończono 2025-12-11 04:14
-- ✅ `florentine` - ukończono 2025-12-11 04:14
-- ✅ `finarfin` - ukończono 2025-12-11 04:14
-- ✅ `ferks` - ukończono 2025-12-11 04:14
-- ✅ `fenech` - ukończono 2025-12-11 04:14
-- ✅ `feizuhl` - ukończono 2025-12-11 04:14
+- ✅ `ghorza` - ukończono 2025-12-11 04:15
+- ✅ `gamel` - ukończono 2025-12-11 04:15
+- ✅ `galuna` - ukończono 2025-12-11 04:15
+- ✅ `frederik` - ukończono 2025-12-11 04:15
+- ✅ `frans` - ukończono 2025-12-11 04:15
+- ✅ `florentine` - ukończono 2025-12-11 04:15
+- ✅ `finarfin` - ukończono 2025-12-11 04:15
+- ✅ `ferks` - ukończono 2025-12-11 04:15
+- ✅ `fenech` - ukończono 2025-12-11 04:15
+- ✅ `feizuhl` - ukończono 2025-12-11 04:15
 
 ---
 

@@ -1,7 +1,7 @@
 # NPC: eighty
 
 **Plik:** `data-otservbr-global/npc/eighty.lua`
-**Data migracji:** 2025-12-11 04:14
+**Data migracji:** 2025-12-11 04:15
 **Liczba tekstów:** 1
 
 ## Klucze i18n

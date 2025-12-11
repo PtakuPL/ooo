@@ -1,7 +1,7 @@
 # NPC: an_old_dragon_lord
 
 **Plik:** `data-otservbr-global/npc/an_old_dragon_lord.lua`
-**Data migracji:** 2025-12-11 04:13
+**Data migracji:** 2025-12-11 04:14
 **Liczba tekstów:** 1
 
 ## Klucze i18n

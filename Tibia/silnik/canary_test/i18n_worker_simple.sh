@@ -49,6 +49,56 @@ get_unprocessed_files() {
     done | head -$batch
 }
 
+#===============================================================================
+# MARK_FILE_COMPLETED - Zapisz plik do obu źródeł (processed + file_status)
+#===============================================================================
+mark_file_completed() {
+    local file="$1"
+    local category="$2"
+    local keys_added="${3:-0}"
+    
+    # 1. Dodaj do processed_files.txt (jeśli nie ma)
+    if ! grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null; then
+        echo "$file" >> "$PROCESSED_FILE"
+    fi
+    
+    # 2. Dodaj do i18n_file_status.json
+    python3 << PYMARK
+import json
+from datetime import datetime
+
+status_file = "$STATUS_FILE"
+file_path = "$file"
+category = "$category"
+keys_added = int("$keys_added") if "$keys_added".isdigit() else 0
+
+try:
+    with open(status_file) as f:
+        status = json.load(f)
+except:
+    status = {"files": {}, "global_stats": {"files_completed": 0, "total_keys": 0}}
+
+status["files"][file_path] = {
+    "stages": {
+        "1_started": {"status": "completed", "type": category},
+        "5_extraction_en": {"status": "completed", "keys_added": keys_added},
+        "8_sync": {"status": "completed"}
+    },
+    "overall_status": "completed",
+    "completed_at": datetime.now().isoformat(),
+    "category": category
+}
+
+status["global_stats"]["files_completed"] = len([
+    f for f, info in status["files"].items() 
+    if info.get("overall_status") == "completed"
+])
+
+with open(status_file, "w") as f:
+    json.dump(status, f, indent=2)
+PYMARK
+}
+
 # Kolory
 RED='\033[0;31m'
 GREEN='\033[0;32m'

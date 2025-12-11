@@ -1,7 +1,7 @@
 # NPC: ghorza
 
 **Plik:** `data-otservbr-global/npc/ghorza.lua`
-**Data migracji:** 2025-12-11 20:47
+**Data migracji:** 2025-12-11 20:48
 **Liczba tekstów:** 0
 
 ## Klucze i18n

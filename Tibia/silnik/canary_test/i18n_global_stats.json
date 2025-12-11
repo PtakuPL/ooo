@@ -1,14 +1,14 @@
 {
-  "total_cycles": 12,
+  "total_cycles": 13,
   "mode": "MIGRATION",
-  "category": "globalevents",
-  "last_update": "2025-12-11T22:45:48.178195",
+  "category": "items",
+  "last_update": "2025-12-11T22:45:57.915584",
   "migration": {
     "files_scanned": 30,
     "files_with_keys": 30,
     "files_without_keys": 0,
     "keys_extracted": 30,
-    "current_category": "globalevents",
-    "batch_size": 16
+    "current_category": "items",
+    "batch_size": 10
   }
 }

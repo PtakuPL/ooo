@@ -1,14 +1,21 @@
 {
-  "skip_until": {},
+  "skip_until": {
+    "scripts": 1765421556.3124065
+  },
   "last_processed": {
     "npc": {
       "count": 32,
       "timestamp": 1765420913.902986
+    },
+    "scripts": {
+      "count": 0,
+      "timestamp": 1765420956.3123975
     }
   },
   "migrations_done": false,
   "consecutive_zeros": {
-    "npc": 0
+    "npc": 0,
+    "scripts": 2
   },
   "total_processed": {
     "spells": 147,

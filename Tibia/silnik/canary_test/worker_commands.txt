@@ -72,7 +72,7 @@
 #AUTO:pl:html.json:10  # Wykonano 2025-12-11 02:35:22
 #AUTO:pl:libs.json:10  # Wykonano 2025-12-11 02:35:30
 #AUTO:pl:modules.json:10  # Wykonano 2025-12-11 02:35:38
-AUTO:pl:npc.json:10
+#AUTO:pl:npc.json:10  # Wykonano 2025-12-11 02:35:46
 AUTO:pl:raids.json:10
 AUTO:pl:startup.json:10
 
@@ -98,3 +98,4 @@ AUTO:tr:startup.json:10
 # [2025-12-11 02:35:22] Wykonano: AUTO:pl:html.json:10
 # [2025-12-11 02:35:30] Wykonano: AUTO:pl:libs.json:10
 # [2025-12-11 02:35:38] Wykonano: AUTO:pl:modules.json:10
+# [2025-12-11 02:35:46] Wykonano: AUTO:pl:npc.json:10

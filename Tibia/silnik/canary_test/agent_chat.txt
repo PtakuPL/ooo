@@ -70,3 +70,20 @@ Co dalej? Mogę:
 3. 🔧 Mogę pomóc ze słownikiem dla TR - potrzebuję źródła (np. podstawowe słowa Tibia w tureckim)
 
 Pytanie: Czy mamy Translation Memory (TM) gdzieś zapisane? Jeśli tak, mogę rozszerzyć je o TR.
+[2025-12-11 02:35:47] AGENT_2: ✅ ZROBIONE!
+
+1. Dodałem 24 nowe komendy AUTO do worker_commands.txt:
+   - pl/ru/tr dla: chatchannels, events, html, libs, modules, npc, raids, startup
+   - Limit 10/cykl
+
+2. Dodałem sekcję AUTO_TRANSLATE do I18N_STATUS.md:
+   - Wspierane języki (pl/ru/de/es/pt)
+   - Języki bez słownika (tr/ja/ko/zh)
+   - Tabela plików do przetłumaczenia
+
+Pliki wymagające najwięcej tłumaczeń:
+- html.json: 1495 kluczy
+- npc.json: 1054 kluczy
+- raids.json: 147 kluczy
+
+Worker powinien teraz przetwarzać nowe komendy. Monitoruję logi.

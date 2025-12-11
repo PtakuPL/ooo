@@ -51317,6 +51317,38 @@
     "scripts.manage_tutor.msg_2": {
       "src_hash": "ccbdd820333ac4bcb4498d03de18969a",
       "text": "You have been demoted to a Normal Jugador by "
+    },
+    "spell.gnomevil_skill_reducer_2.name": {
+      "src_hash": "c2542458a3272a3f5e413c77958fad0b",
+      "text": "GNomevil Skill Reducer 2"
+    },
+    "spell.gnomevil_soulfire.name": {
+      "src_hash": "9b8ec7e37a16748518e14c963a791977",
+      "text": "GNomevil Soulfire"
+    },
+    "spell.minotaur_amazon_paralyze.name": {
+      "src_hash": "3df639a48fb9d0acd0f970ea65854500",
+      "text": "MiNotaur Amazon Paralyze"
+    },
+    "spell.ravennouslavalurkertarget.name": {
+      "src_hash": "fb705ff3d4c25199b50cc5025f3e8dd0",
+      "text": "RavenNousLavaLurkerTarget"
+    },
+    "spell.gnorre_chyllson_skill_reducer.name": {
+      "src_hash": "60a402a1d2a63914f9908b0138975dea",
+      "text": "GNorre Chyllson Skill Reducer"
+    },
+    "spell.anomaly_wave.name": {
+      "src_hash": "f002f1caa59b7d59756956adcb5f7967",
+      "text": "ANomaly Wave"
+    },
+    "spell.kraknaknork_poison_wave.name": {
+      "src_hash": "0f1f06b8c21399e3a2e84492f31b6e26",
+      "text": "KraknakNork Poison Wave"
+    },
+    "spell.kraknaknork_ice_wave.name": {
+      "src_hash": "3b8acd65f70d4077baa2d4565ab2cb2a",
+      "text": "KraknakNork Ice Wave"
     }
   },
   "pt": {

@@ -4691,6 +4691,13 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                 MIGRATION)
                     echo "🔧 TRYB: MIGRACJA kategorii '$MODE_CAT' ($MODE_COUNT plików do zrobienia)"
                     
+                    # Specjalny przypadek: wszystkie kategorie są na skip
+                    if [ "$MODE_CAT" = "pending_skip" ]; then
+                        echo "   ⏳ Wszystkie kategorie są tymczasowo pominięte (skip), czekam..."
+                        sleep 30
+                        continue
+                    fi
+                    
                     # Wywołaj odpowiednią funkcję migracji dla kategorii
                     case "$MODE_CAT" in
                         npc)

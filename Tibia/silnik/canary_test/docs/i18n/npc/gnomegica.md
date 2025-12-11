@@ -1,7 +1,7 @@
 # NPC: gnomegica
 
 **Plik:** `data-otservbr-global/npc/gnomegica.lua`
-**Data migracji:** 2025-12-11 17:23
+**Data migracji:** 2025-12-11 17:24
 **Liczba tekstów:** 0
 
 ## Klucze i18n

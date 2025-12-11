@@ -113,7 +113,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:57:22.401556"
+      "completed_at": "2025-12-11T21:58:16.979335"
     },
     "data-otservbr-global/npc/rock_in_a_hard_place.lua": {
       "stages": {
@@ -228,7 +228,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:57:25.612023"
+      "completed_at": "2025-12-11T21:58:19.889084"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -450,7 +450,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:57:28.084473"
+      "completed_at": "2025-12-11T21:58:21.297824"
     },
     "data-otservbr-global/npc/bertram.lua": {
       "stages": {
@@ -682,7 +682,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:57:29.941497"
+      "completed_at": "2025-12-11T21:58:22.967625"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -908,7 +908,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:57:32.308922"
+      "completed_at": "2025-12-11T21:58:25.007298"
     },
     "data-otservbr-global/npc/cranky_lizard_crone.lua": {
       "stages": {
@@ -1138,7 +1138,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:57:33.838572"
+      "completed_at": "2025-12-11T21:58:26.444735"
     },
     "data-otservbr-global/npc/sundara.lua": {
       "stages": {
@@ -1253,7 +1253,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:57:35.524420"
+      "completed_at": "2025-12-11T21:58:28.002152"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -1285,9 +1285,90 @@
           "transformed": 0,
           "stdmod_transformed": 0,
           "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0,
+          "voices_keys": 0
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [],
+          "keys_per_lang": 1,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 1,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
         }
       },
-      "overall_status": "in_progress"
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T21:58:03.732742"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -1398,7 +1479,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:57:09.910958"
+      "completed_at": "2025-12-11T21:58:05.591107"
     },
     "data-otservbr-global/npc/ghorza.lua": {
       "stages": {
@@ -1513,7 +1594,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:57:12.594250"
+      "completed_at": "2025-12-11T21:58:07.216486"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {
@@ -1628,7 +1709,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:57:14.120294"
+      "completed_at": "2025-12-11T21:58:08.635527"
     },
     "data-otservbr-global/npc/the_lootmonger.lua": {
       "stages": {
@@ -1739,7 +1820,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:57:38.756690"
+      "completed_at": "2025-12-11T21:58:31.007121"
     },
     "data-otservbr-global/npc/mordecai.lua": {
       "stages": {
@@ -1854,7 +1935,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:57:18.993936"
+      "completed_at": "2025-12-11T21:58:13.026956"
     },
     "data-otservbr-global/npc/nelly.lua": {
       "stages": {
@@ -1969,7 +2050,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:57:20.717186"
+      "completed_at": "2025-12-11T21:58:14.919768"
     },
     "data-otservbr-global/npc/alaistar.lua": {
       "stages": {
@@ -2195,7 +2276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:57:37.157418"
+      "completed_at": "2025-12-11T21:58:29.525330"
     },
     "data-otservbr-global/scripts/spells/monster/teleport_strike.lua": {
       "stages": {

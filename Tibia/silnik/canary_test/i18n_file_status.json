@@ -1187,10 +1187,190 @@
       "overall_status": "completed",
       "completed_at": "2025-12-11T22:47:46.860277",
       "category": "creaturescripts"
+    },
+    "src/game/movement/position.hpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:55.192780",
+      "category": "weapons"
+    },
+    "src/game/scheduling/save_manager.cpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:55.302962",
+      "category": "weapons"
+    },
+    "src/game/scheduling/events_scheduler.cpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:55.406612",
+      "category": "weapons"
+    },
+    "src/game/scheduling/dispatcher.cpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:55.517791",
+      "category": "weapons"
+    },
+    "src/game/scheduling/task.cpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:55.623677",
+      "category": "weapons"
+    },
+    "src/game/scheduling/events_scheduler.hpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:55.902619",
+      "category": "weapons"
+    },
+    "src/game/scheduling/save_manager.hpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:56.159449",
+      "category": "weapons"
+    },
+    "src/game/scheduling/dispatcher.hpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:56.429794",
+      "category": "weapons"
+    },
+    "src/game/scheduling/task.hpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:56.520208",
+      "category": "weapons"
+    },
+    "src/game/game.hpp": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "weapons"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:47:56.656399",
+      "category": "weapons"
     }
   },
   "global_stats": {
-    "files_completed": 66,
+    "files_completed": 76,
     "total_keys": 0
   }
 }

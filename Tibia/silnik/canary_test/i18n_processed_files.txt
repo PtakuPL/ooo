@@ -384,3 +384,13 @@ html_copy/system/templates/buttons.logout.html.twig
 html_copy/system/templates/account.characters.change-sex.html.twig
 html_copy/system/templates/admin-bar.html.twig
 html_copy/system/templates/account.create.html.twig
+src/game/movement/position.hpp
+src/game/scheduling/save_manager.cpp
+src/game/scheduling/events_scheduler.cpp
+src/game/scheduling/dispatcher.cpp
+src/game/scheduling/task.cpp
+src/game/scheduling/events_scheduler.hpp
+src/game/scheduling/save_manager.hpp
+src/game/scheduling/dispatcher.hpp
+src/game/scheduling/task.hpp
+src/game/game.hpp

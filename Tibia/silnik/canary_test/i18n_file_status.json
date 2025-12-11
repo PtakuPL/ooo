@@ -154,9 +154,81 @@
           "greet_keys": 0,
           "farewell_keys": 0,
           "voices_keys": 0
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [],
+          "keys_per_lang": 4,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 4,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
         }
       },
-      "overall_status": "in_progress"
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T20:18:03.620303"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -378,7 +450,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:17:18.905863"
+      "completed_at": "2025-12-11T20:18:04.833532"
     },
     "data-otservbr-global/npc/bertram.lua": {
       "stages": {
@@ -610,7 +682,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:17:20.634056"
+      "completed_at": "2025-12-11T20:18:06.425473"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -836,7 +908,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:17:22.052642"
+      "completed_at": "2025-12-11T20:18:07.710377"
     },
     "data-otservbr-global/npc/cranky_lizard_crone.lua": {
       "stages": {
@@ -1066,7 +1138,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:17:23.390742"
+      "completed_at": "2025-12-11T20:18:08.946191"
     },
     "data-otservbr-global/npc/sundara.lua": {
       "stages": {
@@ -1181,7 +1253,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:17:24.952536"
+      "completed_at": "2025-12-11T20:18:10.442235"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -1748,7 +1820,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:17:27.907511"
+      "completed_at": "2025-12-11T20:18:13.115824"
     },
     "data-otservbr-global/npc/mordecai.lua": {
       "stages": {
@@ -2204,7 +2276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:17:26.397321"
+      "completed_at": "2025-12-11T20:18:11.732760"
     }
   },
   "global_stats": {

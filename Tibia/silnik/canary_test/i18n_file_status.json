@@ -359,10 +359,190 @@
       "overall_status": "completed",
       "completed_at": "2025-12-11T22:44:42.632814",
       "category": "raids"
+    },
+    "data-otservbr-global/scripts/spells/monster/enslaved_dwarf_skill_reducer_2.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "spells"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:45:01.468397",
+      "category": "spells"
+    },
+    "data-otservbr-global/scripts/spells/monster/magma_crawler_soulfire.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "spells"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:45:01.651212",
+      "category": "spells"
+    },
+    "data-otservbr-global/scripts/spells/monster/devovorga_curse.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "spells"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:45:01.809399",
+      "category": "spells"
+    },
+    "data-otservbr-global/scripts/spells/monster/cults_of_tibia_armor_buff.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "spells"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:45:01.973381",
+      "category": "spells"
+    },
+    "data-otservbr-global/scripts/spells/monster/white_shade_paralyze.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "spells"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:45:02.137544",
+      "category": "spells"
+    },
+    "data-otservbr-global/scripts/spells/monster/plant_abomination_wave.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "spells"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:45:02.316884",
+      "category": "spells"
+    },
+    "data-otservbr-global/scripts/spells/monster/large_ice_ring.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "spells"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:45:02.498745",
+      "category": "spells"
+    },
+    "data-otservbr-global/scripts/spells/monster/teleport_strike.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "spells"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:45:02.693942",
+      "category": "spells"
+    },
+    "data-otservbr-global/scripts/spells/monster/quara_constrictor_freeze.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "spells"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:45:02.831862",
+      "category": "spells"
+    },
+    "data-otservbr-global/scripts/spells/monster/lersatio_summon.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "spells"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:45:02.965354",
+      "category": "spells"
     }
   },
   "global_stats": {
-    "files_completed": 20,
+    "files_completed": 30,
     "total_keys": 0
   }
 }

@@ -1,14 +1,14 @@
 {
-  "total_cycles": 7,
+  "total_cycles": 8,
   "mode": "MIGRATION",
-  "category": "world",
-  "last_update": "2025-12-11T22:44:53.292986",
+  "category": "spells",
+  "last_update": "2025-12-11T22:45:04.171486",
   "migration": {
-    "files_scanned": 20,
-    "files_with_keys": 20,
+    "files_scanned": 30,
+    "files_with_keys": 30,
     "files_without_keys": 0,
-    "keys_extracted": 20,
-    "current_category": "world",
-    "batch_size": 11
+    "keys_extracted": 30,
+    "current_category": "spells",
+    "batch_size": 0
   }
 }

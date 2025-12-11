@@ -338,3 +338,13 @@ data-otservbr-global/raids/rookgaard/munster.xml
 data-otservbr-global/raids/rookgaard/rottie1.xml
 data-otservbr-global/raids/rookgaard/teleskor.xml
 data-otservbr-global/raids/rookgaard/rottie2.xml
+data-otservbr-global/scripts/spells/monster/enslaved_dwarf_skill_reducer_2.lua
+data-otservbr-global/scripts/spells/monster/magma_crawler_soulfire.lua
+data-otservbr-global/scripts/spells/monster/devovorga_curse.lua
+data-otservbr-global/scripts/spells/monster/cults_of_tibia_armor_buff.lua
+data-otservbr-global/scripts/spells/monster/white_shade_paralyze.lua
+data-otservbr-global/scripts/spells/monster/plant_abomination_wave.lua
+data-otservbr-global/scripts/spells/monster/large_ice_ring.lua
+data-otservbr-global/scripts/spells/monster/teleport_strike.lua
+data-otservbr-global/scripts/spells/monster/quara_constrictor_freeze.lua
+data-otservbr-global/scripts/spells/monster/lersatio_summon.lua

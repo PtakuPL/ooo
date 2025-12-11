@@ -1,14 +1,14 @@
 {
-  "total_cycles": 30,
+  "total_cycles": 31,
   "mode": "MIGRATION",
-  "category": "server",
-  "last_update": "2025-12-11T22:48:59.495821",
+  "category": "errors",
+  "last_update": "2025-12-11T22:49:08.760675",
   "migration": {
     "files_scanned": 76,
     "files_with_keys": 66,
     "files_without_keys": 10,
     "keys_extracted": 66,
-    "current_category": "server",
-    "batch_size": 0
+    "current_category": "errors",
+    "batch_size": 22
   }
 }

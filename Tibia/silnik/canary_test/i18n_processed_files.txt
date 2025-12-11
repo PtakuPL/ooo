@@ -54,3 +54,7 @@ data-otservbr-global/scripts/quests/ferumbras_ascension/actions_lever_first.lua
 data-otservbr-global/scripts/quests/ferumbras_ascension/actions_lever_second.lua
 data-otservbr-global/scripts/quests/the_first_dragon/actions_treasure_chest.lua
 data-otservbr-global/scripts/quests/the_first_dragon/actions_rewards.lua
+data-otservbr-global/scripts/quests/the_rookie_guard/mission09_rock_troll.lua
+data-otservbr-global/scripts/quests/the_rookie_guard/mission10_tomb_raiding.lua
+data-otservbr-global/scripts/quests/the_rookie_guard/mission12_into_fortress.lua
+data-otservbr-global/scripts/quests/the_rookie_guard/mission06_run_like_wolf.lua

@@ -228,3 +228,4 @@ data-otservbr-global/monster/constructs/orewalker.lua
 data-otservbr-global/monster/constructs/diamond_servant.lua
 data-otservbr-global/monster/constructs/shrieking_cry-stal.lua
 data-otservbr-global/monster/constructs/enraged_crystal_golem.lua
+data-otservbr-global/monster/constructs/biting_book.lua

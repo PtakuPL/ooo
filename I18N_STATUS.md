@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-11 22:38:34 UTC  
+> **Aktualizacja:** 2025-12-11 22:38:37 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28857
 
 ---
@@ -26,8 +26,8 @@
 |---------|---------|---------|------|
 | 📂 **Wszystkie pliki** | **16,208** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **7,742** | 47.8% | pliki z kodem/tekstami |
-| 🔍 **Przeskanowane** | **225** | **2.9%** | historia workera |
-| ⏳ Nie przeskanowane | **7,517** | 97.1% | czekają na skan |
+| 🔍 **Przeskanowane** | **231** | **3.0%** | historia workera |
+| ⏳ Nie przeskanowane | **7,511** | 97.0% | czekają na skan |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -69,7 +69,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#2** | od uruchomienia |
+| 🔄 Cykl aktualny | **#4** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **0** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -170,17 +170,17 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     2 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     4 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
-│ Kategoria: 📁 SCRIPTS                                │
+│ Kategoria: 📁 MONSTERS                               │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Pliki przeskanowane:      0 (wszystkie kategorie)          │
-│    ├─ Kategoria SCRIPTS:     97 kluczy EN                    │
+│    ├─ Kategoria MONSTERS:   7341 kluczy EN                    │
 │    └─ Total kluczy EN:  28857                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-11 22:38:34            │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 22:38:37            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -195,12 +195,13 @@
 | ⬜ Plików bez kluczy | **0** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **0** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#2** | continuous mode |
+| 🔄 Cykli wykonanych | **#4** | continuous mode |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
+- 👹 `monsters` +0 kluczy @ 22:38:35
 - 📜 `scripts` +0 kluczy @ 22:38:32
 - 🧙 `npc` +0 kluczy @ 22:37:57
 
@@ -363,7 +364,7 @@
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 0 | 0 | ✅ Active |
-| monsters | 7341 | 0 | 0 | ✅ Active |
+| monsters | 7341 | 0 | 2 | ⏭️ Skip 9m |
 | npc | 5339 | 0 | 4 | ⏭️ Skip 59m |
 | html | 1495 | 0 | 0 | ✅ Active |
 | spells | 304 | 0 | 0 | ✅ Active |
@@ -394,6 +395,7 @@
 |-----------|----------------|-----------|-------|
 | npc | 59m | 4x | Progresywny backoff |
 | scripts | 59m | 4x | Progresywny backoff |
+| monsters | 9m | 2x | Progresywny backoff |
 
 ---
 
@@ -401,7 +403,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #2 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #4 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -444,7 +446,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 22:38:34  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 22:38:37  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

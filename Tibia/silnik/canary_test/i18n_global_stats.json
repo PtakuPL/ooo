@@ -1,14 +1,14 @@
 {
-  "total_cycles": 142,
+  "total_cycles": 143,
   "mode": "MIGRATION",
-  "category": "modules",
-  "last_update": "2025-12-11T23:57:54.594130",
+  "category": "startup",
+  "last_update": "2025-12-11T23:58:04.107541",
   "migration": {
     "files_scanned": 156,
     "files_with_keys": 136,
     "files_without_keys": 20,
     "keys_extracted": 136,
-    "current_category": "modules",
-    "batch_size": 3
+    "current_category": "startup",
+    "batch_size": 7
   }
 }

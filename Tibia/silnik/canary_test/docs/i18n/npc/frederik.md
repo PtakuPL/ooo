@@ -1,7 +1,7 @@
 # NPC: frederik
 
 **Plik:** `data-otservbr-global/npc/frederik.lua`
-**Data migracji:** 2025-12-11 22:07
+**Data migracji:** 2025-12-11 22:08
 **Liczba tekstów:** 0
 
 ## Klucze i18n

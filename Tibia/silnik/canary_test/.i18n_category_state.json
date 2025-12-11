@@ -4,13 +4,19 @@
     "npc": {
       "count": 50,
       "timestamp": 1765421636.2358572
+    },
+    "scripts": {
+      "count": 41,
+      "timestamp": 1765421668.7664037
     }
   },
   "consecutive_zeros": {
-    "npc": 0
+    "npc": 0,
+    "scripts": 0
   },
   "total_processed": {
-    "npc": 100
+    "npc": 100,
+    "scripts": 82
   },
   "translation_sync": {},
   "migrations_done": false

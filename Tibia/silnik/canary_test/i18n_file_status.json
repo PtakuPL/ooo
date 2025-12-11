@@ -799,7 +799,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:08:53.799972"
+      "completed_at": "2025-12-11T04:09:51.746509"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -840,77 +840,9 @@
           "greet_keys": 0,
           "farewell_keys": 0,
           "voices_keys": 0
-        },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [
-            "Brak i18nKey w pliku Lua"
-          ],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 0,
-          "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
         }
       },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T04:09:04.475082"
+      "overall_status": "in_progress"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -3087,7 +3019,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:08:48.616860"
+      "completed_at": "2025-12-11T04:09:48.116429"
     },
     "data-otservbr-global/npc/a_dead_bureaucrat2.lua": {
       "stages": {
@@ -3204,7 +3136,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:08:50.256281"
+      "completed_at": "2025-12-11T04:09:49.046608"
     },
     "data-otservbr-global/npc/a_dead_bureaucrat3.lua": {
       "stages": {
@@ -3321,7 +3253,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:08:51.572549"
+      "completed_at": "2025-12-11T04:09:49.923857"
     },
     "data-otservbr-global/npc/a_dead_bureaucrat4.lua": {
       "stages": {
@@ -3438,7 +3370,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:08:52.849492"
+      "completed_at": "2025-12-11T04:09:50.823152"
     },
     "data-otservbr-global/npc/ambassador_of_rathleton.lua": {
       "stages": {
@@ -3555,7 +3487,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:08:54.863025"
+      "completed_at": "2025-12-11T04:09:52.838213"
     },
     "data-otservbr-global/npc/an_old_dragon_lord.lua": {
       "stages": {
@@ -3672,7 +3604,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:08:55.884693"
+      "completed_at": "2025-12-11T04:09:53.816112"
     },
     "data-otservbr-global/npc/an_orc_guard.lua": {
       "stages": {
@@ -3789,7 +3721,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:08:56.800872"
+      "completed_at": "2025-12-11T04:09:54.730697"
     },
     "data-otservbr-global/npc/ariella.lua": {
       "stages": {
@@ -3906,7 +3838,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:08:57.778029"
+      "completed_at": "2025-12-11T04:09:55.697980"
     },
     "data-otservbr-global/npc/arito.lua": {
       "stages": {
@@ -4023,7 +3955,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:08:58.657802"
+      "completed_at": "2025-12-11T04:09:56.580849"
     },
     "data-otservbr-global/npc/arkarra.lua": {
       "stages": {
@@ -4140,7 +4072,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:08:59.573039"
+      "completed_at": "2025-12-11T04:09:57.469247"
     },
     "data-otservbr-global/npc/aruda.lua": {
       "stages": {
@@ -4257,7 +4189,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:09:00.515234"
+      "completed_at": "2025-12-11T04:09:58.381064"
     },
     "data-otservbr-global/npc/ashtamor.lua": {
       "stages": {
@@ -4374,7 +4306,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:09:01.421156"
+      "completed_at": "2025-12-11T04:09:59.322083"
     },
     "data-otservbr-global/npc/asralius.lua": {
       "stages": {
@@ -4491,7 +4423,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:09:02.416949"
+      "completed_at": "2025-12-11T04:10:00.259255"
     },
     "data-otservbr-global/npc/atur.lua": {
       "stages": {
@@ -4608,7 +4540,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T04:09:03.506967"
+      "completed_at": "2025-12-11T04:10:01.303619"
     },
     "data-otservbr-global/npc/baxter.lua": {
       "stages": {

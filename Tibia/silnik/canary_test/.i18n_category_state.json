@@ -34,7 +34,7 @@
     "otclient_tools": 1765491792.9204528,
     "errors": 1765491806.6235964,
     "npc": 1765491989.0436583,
-    "scripts": 1765488515.927548,
+    "scripts": 1765492188.9851587,
     "php": 1765488740.3592696
   },
   "last_processed": {
@@ -44,7 +44,7 @@
     },
     "scripts": {
       "count": 0,
-      "timestamp": 1765487915.9275308
+      "timestamp": 1765488588.9851518
     },
     "monsters": {
       "count": 0,
@@ -185,7 +185,7 @@
   },
   "consecutive_zeros": {
     "npc": 4,
-    "scripts": 2,
+    "scripts": 4,
     "monsters": 4,
     "actions": 4,
     "quests": 4,

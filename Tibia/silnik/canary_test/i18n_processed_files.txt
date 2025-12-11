@@ -172,3 +172,13 @@ data/modules/scripts/gamestore/init.lua
 data/modules/scripts/gamestore/gamestore.lua
 data/modules/scripts/questtrack/questtrack.lua
 data/modules/scripts/daily_reward/daily_reward.lua
+data-otservbr-global/startup/startup.lua
+data-otservbr-global/startup/others/functions.lua
+data-otservbr-global/startup/others/load.lua
+data-otservbr-global/startup/tables/writeable.lua
+data-otservbr-global/startup/tables/item_unmovable.lua
+data-otservbr-global/startup/tables/teleport.lua
+data-otservbr-global/startup/tables/lever.lua
+data-otservbr-global/startup/tables/create_item.lua
+data-otservbr-global/startup/tables/chest.lua
+data-otservbr-global/startup/tables/corpse.lua

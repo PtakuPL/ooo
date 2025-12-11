@@ -129,15 +129,15 @@
     "npc": 2
   },
   "translation_sync": {
-    "current_lang": "uz",
-    "current_category": "items.json",
+    "current_lang": "de",
+    "current_category": "client.json",
     "languages_done": [],
     "stats": {
       "de": {
         "npc": 5334,
         "chatchannels": 8,
-        "total": 30368,
-        "client": 283,
+        "total": 30406,
+        "client": 321,
         "cpp": 15,
         "events": 5,
         "html": 1495,
@@ -614,6 +614,6 @@
         "items": 13749
       }
     },
-    "last_sync": 1765413670.5268028
+    "last_sync": 1765413920.3902082
   }
 }

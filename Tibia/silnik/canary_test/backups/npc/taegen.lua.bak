@@ -1,0 +1,188 @@
+local internalNpcName = "Taegen"
+local npcType = Game.createNpcType(internalNpcName)
+local npcConfig = {}
+
+npcConfig.name = internalNpcName
+npcConfig.description = internalNpcName
+
+npcConfig.health = 100
+npcConfig.maxHealth = npcConfig.health
+npcConfig.walkInterval = 2000
+npcConfig.walkRadius = 2
+
+npcConfig.outfit = {
+	lookType = 980,
+	lookHead = 100,
+	lookBody = 41,
+	lookLegs = 94,
+	lookFeet = 41,
+	lookAddons = 0,
+}
+
+npcConfig.flags = {
+	floorchange = false,
+}
+
+npcConfig.voices = {
+	interval = 15000,
+	chance = 50,
+	{ text = "Id like to take a walk with Aurita." },
+	{ text = "I miss Aurita golden hair.*sigh*" },
+	{ text = "Pas in boldly tyll thow com to an hall the feyrist undir sky ... *sings*" },
+}
+
+local keywordHandler = KeywordHandler:new()
+local npcHandler = NpcHandler:new(keywordHandler)
+
+npcType.onThink = function(npc, interval)
+	npcHandler:onThink(npc, interval)
+end
+
+npcType.onAppear = function(npc, creature)
+	npcHandler:onAppear(npc, creature)
+end
+
+npcType.onDisappear = function(npc, creature)
+	npcHandler:onDisappear(npc, creature)
+end
+
+npcType.onMove = function(npc, creature, fromPosition, toPosition)
+	npcHandler:onMove(npc, creature, fromPosition, toPosition)
+end
+
+npcType.onSay = function(npc, creature, type, message)
+	npcHandler:onSay(npc, creature, type, message)
+end
+
+npcType.onCloseChannel = function(npc, creature)
+	npcHandler:onCloseChannel(npc, creature)
+end
+
+npcConfig.shop = {
+	{ itemName = "arrow", clientId = 3447, buy = 3 },
+	{ itemName = "blue quiver", clientId = 35848, buy = 400 },
+	{ itemName = "bolt", clientId = 3446, buy = 4 },
+	{ itemName = "bow", clientId = 3350, buy = 400, sell = 100 },
+	{ itemName = "crossbow", clientId = 3349, buy = 500, sell = 120 },
+	{ itemName = "crystalline arrow", clientId = 15793, buy = 20 },
+	{ itemName = "diamond arrow", clientId = 35901, buy = 130 },
+	{ itemName = "drill bolt", clientId = 16142, buy = 12 },
+	{ itemName = "earth arrow", clientId = 774, buy = 5 },
+	{ itemName = "envenomed arrow", clientId = 16143, buy = 12 },
+	{ itemName = "flaming arrow", clientId = 763, buy = 5 },
+	{ itemName = "flash arrow", clientId = 761, buy = 5 },
+	{ itemName = "onyx arrow", clientId = 7365, buy = 7 },
+	{ itemName = "piercing bolt", clientId = 7363, buy = 5 },
+	{ itemName = "power bolt", clientId = 3450, buy = 7 },
+	{ itemName = "prismatic bolt", clientId = 16141, buy = 20 },
+	{ itemName = "quiver", clientId = 35562, buy = 400 },
+	{ itemName = "red quiver", clientId = 35849, buy = 400 },
+	{ itemName = "royal spear", clientId = 7378, buy = 15 },
+	{ itemName = "shiver arrow", clientId = 762, buy = 5 },
+	{ itemName = "sniper arrow", clientId = 7364, buy = 5 },
+	{ itemName = "spear", clientId = 3277, buy = 9, sell = 3 },
+	{ itemName = "spectral bolt", clientId = 35902, buy = 70 },
+	{ itemName = "tarsal arrow", clientId = 14251, buy = 6 },
+	{ itemName = "throwing star", clientId = 3287, buy = 42 },
+	{ itemName = "vortex bolt", clientId = 14252, buy = 6 },
+}
+-- On buy npc shop message
+npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBackpacks, totalCost)
+	npc:sellItem(player, itemId, amount, subType, 0, ignore, inBackpacks)
+end
+-- On sell npc shop message
+npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
+end
+-- On check npc shop message (look item)
+npcType.onCheckItem = function(npc, player, clientId, subType) end
+
+local ThreatenedDreams = Storage.Quest.U11_40.ThreatenedDreams
+local function creatureSayCallback(npc, creature, type, message)
+	local player = Player(creature)
+	local playerId = player:getId()
+
+	if not npcHandler:checkInteraction(npc, creature) then
+		return false
+	end
+
+	if MsgContains(message, "mission") then
+		if player:getStorageValue(ThreatenedDreams.Mission03[1]) < 1 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.multi_15")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.multi_16")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.multi_17")
+			npcHandler:setTopic(playerId, 1)
+		elseif player:getStorageValue(ThreatenedDreams.Mission03[1]) == 1 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.multi_14")
+			npcHandler:setTopic(playerId, 0)
+		elseif player:getStorageValue(ThreatenedDreams.Mission03[1]) == 2 and player:getItemCount(25782) >= 1 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.multi_12")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.multi_13")
+			player:removeItem(25782, 1)
+			player:setStorageValue(ThreatenedDreams.Mission03[1], 3)
+			player:setStorageValue(ThreatenedDreams.Mission03.UnlikelyCouple, 4)
+			npcHandler:setTopic(playerId, 0)
+		else
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.multi_11")
+			npcHandler:setTopic(playerId, 0)
+		end
+	elseif MsgContains(message, "sun catcher") then
+		if player:getStorageValue(ThreatenedDreams.Mission03[1]) == 3 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.multi_10")
+			npcHandler:setTopic(playerId, 2)
+		elseif player:getStorageValue(ThreatenedDreams.Mission03[1]) == 4 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.multi_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.multi_9")
+			npcHandler:setTopic(playerId, 3)
+		end
+	elseif MsgContains(message, "yes") then
+		if npcHandler:getTopic(playerId) == 1 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.multi_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.multi_7")
+			player:setStorageValue(ThreatenedDreams.Mission03[1], 1)
+			player:setStorageValue(ThreatenedDreams.Mission03.UnlikelyCouple, 1)
+			npcHandler:setTopic(playerId, 0)
+		elseif npcHandler:getTopic(playerId) == 2 then
+			if player:getItemCount(5953) > 0 then
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.multi_5")
+				player:removeItem(5953, 1)
+				npcHandler:setTopic(playerId, 3)
+				player:setStorageValue(ThreatenedDreams.Mission03[1], 4)
+			else
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.multi_4")
+				npcHandler:setTopic(playerId, 0)
+			end
+		elseif npcHandler:getTopic(playerId) == 3 then
+			if player:getStorageValue(ThreatenedDreams.Mission03.DarkSunCatcher) == 1 then
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.multi_3")
+			elseif player:getItemCount(675) >= 2 and player:getItemCount(676) >= 2 and player:getItemCount(677) >= 2 and player:getItemCount(678) >= 2 and player:getStorageValue(ThreatenedDreams.Mission03.DarkSunCatcher) < 1 then
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.multi_2")
+				player:removeItem(675, 2)
+				player:removeItem(676, 2)
+				player:removeItem(677, 2)
+				player:removeItem(678, 2)
+				player:addItem(25733, 1)
+				player:setStorageValue(ThreatenedDreams.Mission03.DarkSunCatcher, 1)
+				npcHandler:setTopic(playerId, 0)
+			else
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.multi_1")
+				npcHandler:setTopic(playerId, 0)
+			end
+		end
+	elseif MsgContains(message, "no") then
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.taegen.say_1")
+		npcHandler:setTopic(playerId, 0)
+	end
+	return true
+end
+
+npcHandler:setMessage(MESSAGE_GREET, "Be greeted, mortal being!")
+npcHandler:setMessage(MESSAGE_FAREWELL, "May enlightenment be your path, |PLAYERNAME|.")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "May enlightenment be your path, |PLAYERNAME|.")
+npcHandler:setMessage(MESSAGE_SENDTRADE, " Im carving bolts and arrows and i also craft bows anda spears.If you'd like to buy some ammunition, take a look.")
+
+npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
+npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
+
+-- npcType registering the npcConfig table
+npcType:register(npcConfig)

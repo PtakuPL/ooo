@@ -1,12 +1,19 @@
 {
   "skip_until": {},
-  "last_processed": {},
+  "last_processed": {
+    "npc": {
+      "count": 32,
+      "timestamp": 1765420913.902986
+    }
+  },
   "migrations_done": false,
-  "consecutive_zeros": {},
+  "consecutive_zeros": {
+    "npc": 0
+  },
   "total_processed": {
     "spells": 147,
     "php": 42,
-    "npc": 100
+    "npc": 162
   },
   "translation_sync": {
     "stats": {

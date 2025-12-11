@@ -63,7 +63,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if (MsgContains(message, "scroll") or MsgContains(message, "mission")) and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission44) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission45) < 1 then
-		npcHandler:say("Lost. Hidden. The keys are shadow names. Find them, they will talk to me and reveal what is hidden. Will you go on that quest?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oblivion.say_1")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission44) == 1 then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oblivion.multi_4")
@@ -73,16 +73,16 @@ local function creatureSayCallback(npc, creature, type, message)
 		player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission45, 1)
 		npcHandler:setTopic(playerId, 0)
 	elseif (MsgContains(message, "scroll") or MsgContains(message, "mission")) and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission48) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission49) < 1 then
-		npcHandler:say("Yes. Have you gone there and found what you sought?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oblivion.say_2")
 		npcHandler:setTopic(playerId, 2)
 	elseif (MsgContains(message, "yes")) and npcHandler:getTopic(playerId) == 2 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission48) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission49) < 1 then
-		npcHandler:say("Tell me. Begin with the colour.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oblivion.say_3")
 		npcHandler:setTopic(playerId, 3)
 	elseif (MsgContains(message, "bronze")) and npcHandler:getTopic(playerId) == 3 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission48) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission49) < 1 then
-		npcHandler:say("Yes. The shadows say this is true. The beauty of House Dunesea, name it.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oblivion.say_4")
 		npcHandler:setTopic(playerId, 4)
 	elseif (MsgContains(message, "floating")) and npcHandler:getTopic(playerId) == 4 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission48) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission49) < 1 then
-		npcHandler:say("The floating gardens. Too beautiful to lie asleep in the memory of men. Yes. The name that is no more in Darkstone?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oblivion.say_5")
 		npcHandler:setTopic(playerId, 5)
 	elseif (MsgContains(message, "Takesha Antishu")) and npcHandler:getTopic(playerId) == 5 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission48) == 1 and player:getStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission49) < 1 then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oblivion.multi_1")

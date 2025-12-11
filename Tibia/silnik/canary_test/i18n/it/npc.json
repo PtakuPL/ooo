@@ -5332,5 +5332,10 @@
   "npc.zumtah.stdmod_5": "[IT] Pesky creatures. Many of them have been brought here, many of them died here. Humans, lizards, beasts, they all die the same. Down here, with me. Muhahaha.",
   "npc.zumtah.stdmod_6": "[IT] What? What do you mean by that?",
   "npc.zumtah.stdmod_7": "[IT] Hmm, an old one. I don't care much about politics or power, as here, he has none. Here, only I have power. Muhaha.",
-  "npc.zumtah.stdmod_8": "[IT] What are you talking about, such things do not matter down here. Down here alone, isolated and broken. Muhaha."
+  "npc.zumtah.stdmod_8": "[IT] What are you talking about, such things do not matter down here. Down here alone, isolated and broken. Muhaha.",
+  "npc.oblivion.say_1": "[IT] Lost. Hidden. The keys are shadow names. Find them, they will talk to me and reveal what is hidden. Will you go on that quest?",
+  "npc.oblivion.say_2": "[IT] Yes. Have you gone there and found what you sought?",
+  "npc.oblivion.say_3": "[IT] Tell me. Begin with the colour.",
+  "npc.oblivion.say_4": "[IT] Yes. The shadows say this is true. The beauty of House Dunesea, name it.",
+  "npc.oblivion.say_5": "[IT] The floating gardens. Too beautiful to lie asleep in the memory of men. Yes. The name that is no more in Darkstone?"
 }

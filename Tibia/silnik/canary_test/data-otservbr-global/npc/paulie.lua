@@ -210,12 +210,7 @@ local function creatureSayCallback(npc, creature, type, message)
 						Please let me know if there is something else I can do for you.", npc, creature)
 				end
 			else
-				npcHandler:say(
-					"Whoah, hold on, you have no room in your inventory to carry all those coins. \z
-					I don't want you to drop it on the floor, maybe come back with a cart!",
-					npc,
-					creature
-				)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.paulie.say_1")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then

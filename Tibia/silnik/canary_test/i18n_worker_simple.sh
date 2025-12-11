@@ -5914,7 +5914,21 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                 IDLE)
                     echo "✅ TRYB: IDLE - Wszystko zrobione!"
                     echo "   Migracja: ✅ | Tłumaczenia: ✅"
-                    echo "   IDLE: czekam na nowe pliki... (5 min)"
+                    echo ""
+                    
+                    # Pełny cykl IDLE: skan + walidacja + dokumentacja + raporty
+                    idle_full_cycle
+                    
+                    # Sprawdź czy wykryto nowe pliki do migracji
+                    if [[ -f "i18n/new_files_detected.json" ]]; then
+                        local new_count=$(python3 -c "import json; print(json.load(open('i18n/new_files_detected.json')).get('needs_migration', 0))" 2>/dev/null || echo "0")
+                        if [[ "$new_count" -gt 0 ]]; then
+                            echo "⚠️ Wykryto $new_count nowych plików - restart cyklu!"
+                            continue  # Restart pętli od MIGRATION
+                        fi
+                    fi
+                    
+                    echo "   Następny skan za 5 minut..."
                     sleep 300
                     ;;
                 *)

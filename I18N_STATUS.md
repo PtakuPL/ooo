@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 200, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 02:14:52 UTC  
+> **Aktualizacja:** 2025-12-11 02:14:57 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -28,7 +28,7 @@
 | 🔑 Kluczy i18n | **28867** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#3** | - |
+| 🔄 Cykl | **#4** | - |
 
 ---
 
@@ -79,19 +79,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     3 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     4 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 MONSTERS                               │
+│ Kategoria: 🎒 RAIDS                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: monsters                                       │
-│ [████████████████████████████████████████████████░░] │
-│ 7341/7500 kluczy (98%)                                          │
+│ 📊 Ostatnia aktywność: raids                                          │
+│ [███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
+│ 147/1000 kluczy (15%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 0 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 02:14:52                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 02:14:57                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -105,7 +105,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **28867** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#3** | continuous mode |
+| 🔄 Cykli wykonanych | **#4** | continuous mode |
 | 🎯 Aktywne kategorie | **15** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -113,6 +113,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `raids` +0 kluczy @ 02:14:57
 - 👹 `monsters` +0 kluczy @ 02:14:51
 - ⚡ `translation` +0 kluczy @ 02:14:49
 - 📜 `scripts` +0 kluczy @ 02:14:44
@@ -282,7 +283,7 @@
 | html | 1495 | 0 | 0 | ✅ Active |
 | scripts | 385 | 0 | 4 | ⏭️ Skip 59m |
 | client | 236 | 0 | 0 | ✅ Active |
-| raids | 147 | 0 | 0 | ✅ Active |
+| raids | 147 | 0 | 2 | ⏭️ Skip 9m |
 | spells | 65 | 0 | 0 | ✅ Active |
 | php | 31 | 0 | 0 | ✅ Active |
 | startup | 23 | 0 | 0 | ✅ Active |
@@ -310,6 +311,7 @@
 | scripts | 59m | 4x | Progresywny backoff |
 | translation | 4m | 1x | Progresywny backoff |
 | monsters | 9m | 2x | Progresywny backoff |
+| raids | 9m | 2x | Progresywny backoff |
 
 ---
 
@@ -317,7 +319,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #3 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #4 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -360,7 +362,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 02:14:52  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 02:14:57  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

@@ -4310,3 +4310,13 @@ html_copy/system/libs/pot/IOTS_DB.php
 html_copy/system/libs/pot/E_OTS_ReadOnly.php
 html_copy/system/libs/pot/IOTS_Display.php
 html_copy/system/libs/pot/OTS_House.php
+src/account/account_repository_db.hpp
+src/account/account_info.hpp
+src/account/account.cpp
+src/canary_server.cpp
+src/pch.hpp
+src/items/items_classification.hpp
+src/items/items.cpp
+src/items/items.hpp
+src/items/thing.hpp
+src/items/item.hpp

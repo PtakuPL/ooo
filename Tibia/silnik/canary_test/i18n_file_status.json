@@ -1637,9 +1637,75 @@
           "languages": [],
           "keys_per_lang": 115,
           "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 109,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
         }
       },
-      "overall_status": "in_progress"
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T18:02:02.710134"
     },
     "data-otservbr-global/npc/shiriel.lua": {
       "stages": {
@@ -1754,7 +1820,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:01:13.790203"
+      "completed_at": "2025-12-11T18:02:04.309794"
     },
     "data-otservbr-global/npc/sigurd.lua": {
       "stages": {
@@ -1869,7 +1935,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:01:15.033773"
+      "completed_at": "2025-12-11T18:02:05.689417"
     },
     "data-otservbr-global/npc/sundara.lua": {
       "stages": {
@@ -1984,7 +2050,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:01:16.460503"
+      "completed_at": "2025-12-11T18:02:07.353712"
     },
     "data-otservbr-global/npc/tandros.lua": {
       "stages": {
@@ -2099,7 +2165,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:01:17.727681"
+      "completed_at": "2025-12-11T18:02:08.818658"
     },
     "data-otservbr-global/npc/the_lootmonger.lua": {
       "stages": {
@@ -2210,7 +2276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T18:01:19.104296"
+      "completed_at": "2025-12-11T18:02:10.321937"
     }
   },
   "global_stats": {

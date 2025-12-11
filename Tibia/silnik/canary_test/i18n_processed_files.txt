@@ -348,3 +348,13 @@ html_copy/admin/pages/modules/lastlogin.php
 html_copy/admin/pages/modules/web_status.php
 html_copy/admin/pages/modules/points.php
 html_copy/admin/pages/modules/balance.php
+html_copy/index.nginx-debian.html
+html_copy/system/logs/index.html
+html_copy/system/index.html
+html_copy/system/templates/forum.add_board.html.twig
+html_copy/system/templates/guilds.list.html.twig
+html_copy/system/templates/admin.news.form.html.twig
+html_copy/system/templates/guilds.create.success.html.twig
+html_copy/system/templates/admin.tools.account.html.twig
+html_copy/system/templates/highscores.html.twig
+html_copy/system/templates/monster.html.twig

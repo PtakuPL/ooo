@@ -1,7 +1,8 @@
 {
   "skip_until": {
     "scripts": 1765421556.3124065,
-    "monsters": 1765421565.1171825
+    "monsters": 1765421565.1171825,
+    "raids": 1765421572.540611
   },
   "last_processed": {
     "npc": {
@@ -15,13 +16,18 @@
     "monsters": {
       "count": 0,
       "timestamp": 1765420965.1171772
+    },
+    "raids": {
+      "count": 0,
+      "timestamp": 1765420972.540606
     }
   },
   "migrations_done": false,
   "consecutive_zeros": {
     "npc": 0,
     "scripts": 2,
-    "monsters": 2
+    "monsters": 2,
+    "raids": 2
   },
   "total_processed": {
     "spells": 147,

@@ -1,7 +1,7 @@
 # NPC: atur
 
 **Plik:** `data-otservbr-global/npc/atur.lua`
-**Data migracji:** 2025-12-11 03:57
+**Data migracji:** 2025-12-11 03:58
 **Liczba tekstów:** 1
 
 ## Klucze i18n

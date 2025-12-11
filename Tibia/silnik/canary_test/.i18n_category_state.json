@@ -130,7 +130,7 @@
   },
   "translation_sync": {
     "current_lang": "hr",
-    "current_category": "items.json",
+    "current_category": "libs.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -473,12 +473,13 @@
       },
       "hr": {
         "chatchannels": 8,
-        "total": 15257,
+        "total": 15278,
         "events": 5,
         "html": 1495,
-        "items": 13749
+        "items": 13749,
+        "libs": 21
       }
     },
-    "last_sync": 1765412994.755858
+    "last_sync": 1765412999.1394198
   }
 }

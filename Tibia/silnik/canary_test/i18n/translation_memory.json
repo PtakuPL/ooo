@@ -66499,6 +66499,14 @@
     "module.daily_reward.text4": {
       "src_hash": "3d027d436804557783b7642eab598fda",
       "text": "Não bonus for first day"
+    },
+    "startup.writeable.msg1": {
+      "src_hash": "1a419d903676ddfd0fa2c6e4f59f6c2f",
+      "text": "Personal log book of Mr Morris. (The following lines are written in a code that you canNãot make out. It seems Mr Morris is a very distrustful person.)"
+    },
+    "startup.writeable.msg4": {
+      "src_hash": "45206c03cfd02c73921a12631c00877c",
+      "text": "Não come near! Goblin home! Humans leave!"
     }
   }
 }

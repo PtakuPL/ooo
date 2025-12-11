@@ -117,3 +117,12 @@
 # [2025-12-11 02:37:45] Wykonano: AUTO:tr:npc.json:10
 # [2025-12-11 02:37:56] Wykonano: AUTO:tr:raids.json:10
 # [2025-12-11 02:38:03] Wykonano: AUTO:tr:startup.json:10
+
+# PRIORYTET NPC - User request (2025-12-11 02:45)
+#AUTO:pl:npc.json:100  # Wykonano 2025-12-11 02:45:37
+AUTO:ru:npc.json:100
+AUTO:de:npc.json:100
+AUTO:es:npc.json:100
+AUTO:pt:npc.json:100
+AUTO:fr:npc.json:100
+# [2025-12-11 02:45:37] Wykonano: AUTO:pl:npc.json:100

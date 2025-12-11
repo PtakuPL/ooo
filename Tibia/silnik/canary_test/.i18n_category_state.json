@@ -10,7 +10,8 @@
     "chatchannels": 1765411731.948174,
     "modules": 1765411739.047291,
     "startup": 1765411746.4953654,
-    "npclib": 1765411754.0588856
+    "npclib": 1765411754.0588856,
+    "php": 1765411860.886356
   },
   "last_processed": {
     "scripts": {
@@ -58,8 +59,8 @@
       "timestamp": 1765411154.0588799
     },
     "php": {
-      "count": 216,
-      "timestamp": 1765411253.5539272
+      "count": 0,
+      "timestamp": 1765411260.8863509
     },
     "html": {
       "count": 160,
@@ -95,7 +96,7 @@
     "modules": 2,
     "startup": 2,
     "npclib": 2,
-    "php": 0
+    "php": 2
   },
   "total_processed": {
     "items": 11689,

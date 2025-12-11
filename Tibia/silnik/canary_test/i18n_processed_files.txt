@@ -4525,3 +4525,11 @@ html_copy/vendor/illuminate/collections/ItemNotFoundException.php
 html_copy/vendor/illuminate/contracts/Queue/EntityNotFoundException.php
 html_copy/vendor/illuminate/contracts/Queue/Job.php
 html_copy/vendor/illuminate/contracts/Queue/ShouldQueueAfterCommit.php
+html_copy/vendor/illuminate/contracts/Queue/QueueableCollection.php
+html_copy/vendor/illuminate/contracts/Queue/EntityResolver.php
+html_copy/vendor/illuminate/contracts/Queue/Queue.php
+html_copy/vendor/illuminate/contracts/Queue/Factory.php
+html_copy/vendor/illuminate/contracts/Queue/ShouldBeUniqueUntilProcessing.php
+html_copy/vendor/illuminate/contracts/Queue/QueueableEntity.php
+html_copy/vendor/illuminate/contracts/Queue/ShouldBeEncrypted.php
+html_copy/vendor/illuminate/contracts/Queue/Monitor.php

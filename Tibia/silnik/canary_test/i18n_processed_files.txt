@@ -4080,3 +4080,13 @@ data-otservbr-global/scripts/spells/monster/ushuriel_curse.lua
 data-otservbr-global/scripts/spells/monster/gorerilla_large_ring.lua
 data-otservbr-global/scripts/spells/monster/dire_penguin_paralyze.lua
 data-otservbr-global/scripts/spells/monster/fire_overlord_soulfire.lua
+html_copy/system/locale/ru/admin.php
+html_copy/system/locale/uk/main.php
+html_copy/system/locale/pl/main.php
+html_copy/system/locale/pl/install.php
+html_copy/system/locale/pl/admin.php
+html_copy/system/locale/de/main.php
+html_copy/system/locale/de/install.php
+html_copy/system/locale/de/admin.php
+html_copy/system/locale/ja/main.php
+html_copy/system/locale/ja/install.php

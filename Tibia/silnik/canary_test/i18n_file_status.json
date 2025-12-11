@@ -2627,10 +2627,190 @@
       "overall_status": "completed",
       "completed_at": "2025-12-11T23:56:13.839382",
       "category": "raids"
+    },
+    "data/libs/systems/features.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:57:27.175473",
+      "category": "libs"
+    },
+    "data/libs/systems/concoctions.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:57:27.310818",
+      "category": "libs"
+    },
+    "data/libs/systems/exaltation_forge.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:57:27.575668",
+      "category": "libs"
+    },
+    "data/libs/systems/raids.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:57:27.662312",
+      "category": "libs"
+    },
+    "data/libs/systems/encounters.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:57:27.744789",
+      "category": "libs"
+    },
+    "data/libs/systems/reward_boss.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:57:27.833114",
+      "category": "libs"
+    },
+    "data/libs/systems/hazard.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:57:27.907350",
+      "category": "libs"
+    },
+    "data/libs/systems/zones.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:57:27.984225",
+      "category": "libs"
+    },
+    "data/libs/systems/familiar.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:57:28.112115",
+      "category": "libs"
+    },
+    "data/libs/systems/vip.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:57:28.340943",
+      "category": "libs"
     }
   },
   "global_stats": {
-    "files_completed": 146,
+    "files_completed": 156,
     "total_keys": 0
   }
 }

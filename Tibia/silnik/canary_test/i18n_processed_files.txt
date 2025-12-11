@@ -464,3 +464,13 @@ data-otservbr-global/raids/liberty_bay/undead_cavebear.xml
 data-otservbr-global/raids/liberty_bay/tigers.xml
 data-otservbr-global/raids/liberty_bay/morgaroth.xml
 data-otservbr-global/raids/liberty_bay/crustacea_gigantica_2.xml
+data/libs/systems/features.lua
+data/libs/systems/concoctions.lua
+data/libs/systems/exaltation_forge.lua
+data/libs/systems/raids.lua
+data/libs/systems/encounters.lua
+data/libs/systems/reward_boss.lua
+data/libs/systems/hazard.lua
+data/libs/systems/zones.lua
+data/libs/systems/familiar.lua
+data/libs/systems/vip.lua

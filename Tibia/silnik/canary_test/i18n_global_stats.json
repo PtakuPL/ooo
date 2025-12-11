@@ -1,14 +1,14 @@
 {
-  "total_cycles": 138,
+  "total_cycles": 139,
   "mode": "MIGRATION",
-  "category": "mounts",
-  "last_update": "2025-12-11T23:57:18.945128",
+  "category": "libs",
+  "last_update": "2025-12-11T23:57:29.018121",
   "migration": {
-    "files_scanned": 146,
-    "files_with_keys": 126,
+    "files_scanned": 156,
+    "files_with_keys": 136,
     "files_without_keys": 20,
-    "keys_extracted": 126,
-    "current_category": "mounts",
-    "batch_size": 3
+    "keys_extracted": 136,
+    "current_category": "libs",
+    "batch_size": 39
   }
 }

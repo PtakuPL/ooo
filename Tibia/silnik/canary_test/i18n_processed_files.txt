@@ -182,3 +182,10 @@ data-otservbr-global/startup/tables/lever.lua
 data-otservbr-global/startup/tables/create_item.lua
 data-otservbr-global/startup/tables/chest.lua
 data-otservbr-global/startup/tables/corpse.lua
+data/npclib/npc_system/custom_modules.lua
+data/npclib/npc_system/keyword_handler.lua
+data/npclib/npc_system/bank_system.lua
+data/npclib/npc_system/modules.lua
+data/npclib/npc_system/npc_handler.lua
+data/npclib/npc.lua
+data/npclib/load.lua

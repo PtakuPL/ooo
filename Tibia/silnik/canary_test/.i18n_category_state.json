@@ -13,7 +13,8 @@
     "npclib": 1765422364.2949774,
     "php": 1765422372.17209,
     "html": 1765422379.9348977,
-    "cpp": 1765422387.0566025
+    "cpp": 1765422387.0566025,
+    "sendtextmessage": 1765422413.5821848
   },
   "last_processed": {
     "npc": {
@@ -83,6 +84,10 @@
     "client": {
       "count": 12,
       "timestamp": 1765421799.3725004
+    },
+    "sendtextmessage": {
+      "count": 0,
+      "timestamp": 1765421813.5821795
     }
   },
   "consecutive_zeros": {
@@ -102,7 +107,8 @@
     "php": 2,
     "html": 2,
     "cpp": 2,
-    "client": 0
+    "client": 0,
+    "sendtextmessage": 2
   },
   "total_processed": {
     "npc": 100,

@@ -1,7 +1,7 @@
 # NPC: asralius
 
 **Plik:** `data-otservbr-global/npc/asralius.lua`
-**Data migracji:** 2025-12-11 04:21
+**Data migracji:** 2025-12-11 04:23
 **Liczba tekstów:** 2
 
 ## Klucze i18n

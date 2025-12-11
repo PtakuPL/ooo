@@ -113,7 +113,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:11:09.499755"
+      "completed_at": "2025-12-11T22:12:18.914294"
     },
     "data-otservbr-global/npc/sundara.lua": {
       "stages": {
@@ -228,7 +228,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:11:12.735413"
+      "completed_at": "2025-12-11T22:12:22.508679"
     },
     "data-otservbr-global/npc/sigurd.lua": {
       "stages": {
@@ -343,7 +343,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:11:11.183781"
+      "completed_at": "2025-12-11T22:12:20.292152"
     },
     "data-otservbr-global/npc/tandros.lua": {
       "stages": {
@@ -458,7 +458,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:11:14.191577"
+      "completed_at": "2025-12-11T22:12:24.671688"
     },
     "data-otservbr-global/npc/the_lootmonger.lua": {
       "stages": {
@@ -569,7 +569,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:11:16.066324"
+      "completed_at": "2025-12-11T22:12:27.575755"
     },
     "data-otservbr-global/npc/alaistar.lua": {
       "stages": {
@@ -1943,9 +1943,114 @@
           "status": "completed",
           "hash": "90f148cd0d53cd387b46cd0028e4a574",
           "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "rock_in_a_hard_place",
+          "StdModule_say": 4,
+          "npcHandler_say": 2,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 6,
+          "already_i18n": 4,
+          "npcSayLib": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/rock_in_a_hard_place.md",
+          "keys_documented": 0
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 0,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0,
+          "voices_keys": 0
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [],
+          "keys_per_lang": 4,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 4,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
         }
       },
-      "overall_status": "in_progress"
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T22:12:13.248866"
     },
     "data-otservbr-global/npc/romir.lua": {
       "stages": {
@@ -2056,7 +2161,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:11:06.207249"
+      "completed_at": "2025-12-11T22:12:14.656121"
     },
     "data-otservbr-global/npc/seymour.lua": {
       "stages": {
@@ -2171,7 +2276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:11:07.715154"
+      "completed_at": "2025-12-11T22:12:16.910823"
     }
   },
   "global_stats": {

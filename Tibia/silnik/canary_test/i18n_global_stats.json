@@ -1,14 +1,14 @@
 {
-  "total_cycles": 8,
+  "total_cycles": 9,
   "mode": "MIGRATION",
-  "category": "spells",
-  "last_update": "2025-12-11T22:45:04.171486",
+  "category": "talkactions",
+  "last_update": "2025-12-11T22:45:13.008244",
   "migration": {
     "files_scanned": 30,
     "files_with_keys": 30,
     "files_without_keys": 0,
     "keys_extracted": 30,
-    "current_category": "spells",
-    "batch_size": 0
+    "current_category": "talkactions",
+    "batch_size": 88
   }
 }

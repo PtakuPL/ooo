@@ -27,6 +27,11 @@ TRANSLATION_BATCH=300       # Ile kluczy na batch synchronizacji
 TRANSLATION_SUBSTAGE=4      # Ile kluczy na składnię
 LANG_PRIORITY="de pl es pt fr it ru nl sv da no fi cs"  # Priorytet języków (Europa first)
 
+# Nowe opcje (Agent 2)
+NO_GIT=false                # Flaga --no-git: wyłącza git add/commit/push
+TRANSLATE_LIMIT=0           # --translate-limit N: max kluczy do przetłumaczenia na cykl (0=brak limitu)
+TRANSLATIONS_ONLY=false     # --translations-only: tylko tłumaczenia, bez migracji kodu
+
 #===============================================================================
 # GET_UNPROCESSED_FILES - Znajdź pliki które jeszcze nie były przetwarzane
 #===============================================================================

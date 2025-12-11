@@ -339,7 +339,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:19:11.695822"
+      "completed_at": "2025-12-11T20:19:58.180831"
     },
     "data-otservbr-global/npc/romir.lua": {
       "stages": {
@@ -567,7 +567,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:19:13.046507"
+      "completed_at": "2025-12-11T20:19:59.423212"
     },
     "data-otservbr-global/npc/seymour.lua": {
       "stages": {
@@ -793,7 +793,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:19:15.424612"
+      "completed_at": "2025-12-11T20:20:01.910833"
     },
     "data-otservbr-global/npc/shiriel.lua": {
       "stages": {
@@ -2161,7 +2161,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T20:19:09.307155"
+      "completed_at": "2025-12-11T20:19:56.077055"
     },
     "data-otservbr-global/npc/tandros.lua": {
       "stages": {

@@ -414,11 +414,25 @@ if os.path.isdir(npc_dir):
             try:
                 with open(fpath) as fp:
                     content = fp.read()
-                    has_stdmod = "StdModule.say" in content and "text" in content
                     has_i18n = "i18nKey" in content
-                    if has_stdmod and not has_i18n:
+                    has_npc_lib = "NPC_LIB.i18n.npcSay" in content
+                    needs = False
+                    # 1. StdModule.say z text = "..." bez i18nKey
+                    if "StdModule.say" in content and "text" in content and not has_i18n:
+                        needs = True
+                    # 2. npcHandler:say( z literalnym stringiem bez NPC_LIB
+                    import re
+                    if re.search(r'npcHandler:say\s*\(\s*["\']', content) and not has_npc_lib:
+                        needs = True
+                    # 3. NpcHandler:say( z literalnym stringiem bez NPC_LIB
+                    if re.search(r'NpcHandler:say\s*\(\s*["\']', content) and not has_npc_lib:
+                        needs = True
+                    # 4. npcConfig.voices z text = "..." bez i18nKey
+                    if "npcConfig.voices" in content and 'text = "' in content and not has_i18n:
+                        needs = True
+                    if needs:
                         needs_migration_npc += 1
-                    elif has_i18n:
+                    elif has_i18n or has_npc_lib:
                         migrated_npc += 1
             except:
                 pass
@@ -4798,9 +4812,24 @@ if os.path.isdir(npc_dir):
             try:
                 with open(fpath, "r") as fp:
                     content = fp.read()
-                    if "StdModule.say" in content and "text" in content:
-                        if "i18nKey" not in content:
-                            needs_migration += 1
+                    import re
+                    has_i18n = "i18nKey" in content
+                    has_npc_lib = "NPC_LIB.i18n.npcSay" in content
+                    needs = False
+                    # 1. StdModule.say z text = "..." bez i18nKey
+                    if "StdModule.say" in content and "text" in content and not has_i18n:
+                        needs = True
+                    # 2. npcHandler:say( z literalnym stringiem bez NPC_LIB
+                    if re.search(r'npcHandler:say\s*\(\s*["\']', content) and not has_npc_lib:
+                        needs = True
+                    # 3. NpcHandler:say( z literalnym stringiem bez NPC_LIB
+                    if re.search(r'NpcHandler:say\s*\(\s*["\']', content) and not has_npc_lib:
+                        needs = True
+                    # 4. npcConfig.voices z text = "..." bez i18nKey
+                    if "npcConfig.voices" in content and 'text = "' in content and not has_i18n:
+                        needs = True
+                    if needs:
+                        needs_migration += 1
             except:
                 pass
 

@@ -199,3 +199,13 @@ html_copy/routes/pages/account.php
 html_copy/routes/pages/outfit.php
 html_copy/routes/api/v1/check_charactername.php
 html_copy/routes/api/v1/discord.php
+html_copy/admin/pages/modules/index.html
+html_copy/admin/pages/modules/templates/created.html.twig
+html_copy/admin/pages/modules/templates/index.html
+html_copy/admin/pages/modules/templates/web_status.twig
+html_copy/admin/pages/modules/templates/points.html.twig
+html_copy/admin/pages/modules/templates/balance.html.twig
+html_copy/admin/pages/modules/templates/lastlogin.html.twig
+html_copy/admin/pages/modules/templates/coins.html.twig
+html_copy/admin/pages/modules/templates/statistics.html.twig
+html_copy/admin/pages/index.html

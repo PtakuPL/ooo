@@ -758,14 +758,39 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 ## 📊 Globalny Postęp
 
-| Metryka | Wartość | Trend |
-|---------|---------|-------|
-| 📁 Plików przetworzonych | **{processed_count}** | ↑ |
-| ⏭️ Plików wykluczonych | **{excluded_count}** | - |
-| 🔑 Kluczy i18n (EN) | **{total_keys}** | ↑ |
-| 🌍 Języków | **{langs_count}** | ✓ |
-| ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#{cycle_count}** | - |
+### 📁 Pliki Projektu
+| Metryka | Wartość | Procent | Info |
+|---------|---------|---------|------|
+| 📂 Wszystkie pliki | **{all_project_files:,}** | 100% | cały projekt |
+| 📜 Pliki do skanowania | **{scannable_files:,}** | {round(scannable_files/all_project_files*100, 1)}% | .lua + .xml |
+| 🔍 Przeskanowane | **{scanned_files:,}** | {scanned_pct}% | worker history |
+| ✅ Zmigrowane (z kluczami) | **{migrated_files}** | {migrated_pct}% | mają klucze i18n |
+| ⏳ Do zmigrowania | **{to_migrate_files}** | - | bez kluczy jeszcze |
+| 🔄 W trakcie | **{in_progress_files}** | - | obecnie przetwarzane |
+
+### 🔑 Klucze i18n
+| Metryka | Wartość | Info |
+|---------|---------|------|
+| 🔑 Klucze EN (źródłowe) | **{total_keys:,}** | wszystkie kategorie |
+| 📊 NPC | {npc_keys:,} | główna kategoria |
+| 📊 Items | {items_keys:,} | przedmioty |
+| 📊 Monsters | {monsters_keys:,} | potwory |
+| 📊 Pozostałe | {total_keys - npc_keys - items_keys - monsters_keys:,} | scripts, spells, etc. |
+
+### 🌍 Języki i Tłumaczenia
+| Metryka | Wartość | Info |
+|---------|---------|------|
+| 🌐 Wszystkie języki | **{langs_count}** | foldery w i18n/ |
+| 📋 Przygotowane ([EN]) | **{prepared_langs}** | mają pliki JSON |
+| ✅ Przetłumaczone | **{translated_langs}** | mają prawdziwe tłumaczenia |
+| ⏳ Do tłumaczenia | **{prepared_langs - translated_langs}** | tylko placeholdery |
+
+### 📈 Statystyki Pracy
+| Metryka | Wartość | Info |
+|---------|---------|------|
+| 🔄 Cykl aktualny | **#{cycle_count}** | od uruchomienia |
+| ⚠️ Konfliktów | **0** | merge conflicts |
+| 🚀 Rozpoczętych prac | **{in_progress_files}** | pliki in_progress |
 
 ---
 

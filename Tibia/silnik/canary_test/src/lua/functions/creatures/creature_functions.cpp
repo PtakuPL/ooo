@@ -75,6 +75,7 @@ void CreatureFunctions::init(lua_State* L) {
 	Lua::registerMethod(L, "Creature", "remove", CreatureFunctions::luaCreatureRemove);
 	Lua::registerMethod(L, "Creature", "teleportTo", CreatureFunctions::luaCreatureTeleportTo);
 	Lua::registerMethod(L, "Creature", "say", CreatureFunctions::luaCreatureSay);
+	Lua::registerMethod(L, "Creature", "sayLocalized", CreatureFunctions::luaCreatureSayLocalized);
 	Lua::registerMethod(L, "Creature", "getDamageMap", CreatureFunctions::luaCreatureGetDamageMap);
 	Lua::registerMethod(L, "Creature", "getSummons", CreatureFunctions::luaCreatureGetSummons);
 	Lua::registerMethod(L, "Creature", "hasBeenSummoned", CreatureFunctions::luaCreatureHasBeenSummoned);

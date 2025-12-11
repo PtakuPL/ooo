@@ -4220,3 +4220,13 @@ html_copy/system/src/Models/Forum.php
 html_copy/system/src/Models/Gallery.php
 html_copy/system/src/Models/GuildInvite.php
 html_copy/system/src/global.php
+src/game/game_definitions.hpp
+src/game/modal_window/modal_window.hpp
+src/config/configmanager.cpp
+src/config/config_enums.hpp
+src/config/configmanager.hpp
+src/pch.cpp
+src/account/account_repository_db.cpp
+src/account/account_repository.cpp
+src/account/account_repository.hpp
+src/account/account.hpp

@@ -1,7 +1,7 @@
 # NPC: an_orc_guard
 
 **Plik:** `data-otservbr-global/npc/an_orc_guard.lua`
-**Data migracji:** 2025-12-11 03:58
+**Data migracji:** 2025-12-11 03:59
 **Liczba tekstów:** 2
 
 ## Klucze i18n

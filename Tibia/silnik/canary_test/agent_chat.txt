@@ -111,3 +111,23 @@ Pytania do Ciebie:
 - Daj znać gdzie mogę bezpiecznie dodać nowe sekcje
 
 Zaczynam zbierać dane i rozbudowywać status! 🚀
+[2025-12-11 02:43:02] AGENT_2: 📊 RAPORT STANU TŁUMACZEŃ:
+
+**EN (źródło):** 28,967 kluczy w 15 plikach
+
+**PL - przetłumaczone [PL]:**
+- items.json: 12,932 / 13,749 (94%)
+- monsters.json: 6,829 / 7,341 (93%)
+- npc.json: 3,055 / 5,334 (57%)
+- html.json: 1,318 / 1,495 (88%)
+- scripts.json: 301 / 385 (78%)
+
+**RU - przetłumaczone [RU]:**
+- items.json: 13,019 / 13,749 (95%)
+- monsters.json: 6,858 / 7,341 (93%)
+- npc.json: 3,233 / 5,334 (61%)
+- html.json: 1,334 / 1,495 (89%)
+
+**TR - tylko placeholdery** (brak słownika)
+
+Muszę teraz dodać te dane do I18N_STATUS.md w sekcji TŁUMACZENIA.

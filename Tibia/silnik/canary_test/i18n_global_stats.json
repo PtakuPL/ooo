@@ -1,14 +1,14 @@
 {
-  "total_cycles": 139,
+  "total_cycles": 140,
   "mode": "MIGRATION",
-  "category": "libs",
-  "last_update": "2025-12-11T23:57:29.018121",
+  "category": "events",
+  "last_update": "2025-12-11T23:57:37.485717",
   "migration": {
     "files_scanned": 156,
     "files_with_keys": 136,
     "files_without_keys": 20,
     "keys_extracted": 136,
-    "current_category": "libs",
-    "batch_size": 39
+    "current_category": "events",
+    "batch_size": 2
   }
 }

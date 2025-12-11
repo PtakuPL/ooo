@@ -2584,20 +2584,33 @@ process_client_category() {
             local base=$(basename "$file" | sed 's/\.\(lua\|otui\)$//')
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
             
-            # Wyciągnij stringi (pomiń tr( - już tłumaczone)
-            # FILTRUJ: pomiń URLe, ścieżki, nazwy zmiennych, kod
-            local strings=$(grep -oP '(?<!tr\()"[^"]{10,}"' "$file" 2>/dev/null \
-                | tr -d '"' \
-                | grep -v '^/' \
-                | grep -v 'http' \
-                | grep -v '\.lua' \
-                | grep -v '\.otui' \
-                | grep -v '\.png' \
-                | grep -v '\.ogg' \
-                | grep -v '\.' \
-                | grep -v '%' \
-                | grep -v '_' \
-                | head -5)
+            # Wyciągnij stringi (pomiń tr() i techniczne ścieżki/kod)
+            local strings=$(python3 - << 'PYCODE'
+import re, sys
+from pathlib import Path
+path = Path(""""$file"""")
+try:
+    text = path.read_text(encoding="utf-8", errors="ignore")
+except Exception:
+    sys.exit(0)
+res = []
+for m in re.finditer(r'"([^"\n]{8,})"', text):
+    val = m.group(1).strip()
+    if val.startswith("tr(") or val.startswith("tr\""):
+        continue
+    if val.startswith(("http", "/", "./", "../")):
+        continue
+    if any(tok in val for tok in ["{", "}", "[", "]", "(", ")", "::", "->", "%", "_", "$"]):
+        continue
+    if any(ext in val for ext in [".lua", ".otui", ".png", ".ogg", ".wav", ".ttf"]):
+        continue
+    if len(val) < 8:
+        continue
+    res.append(val[:200])
+for line in res[:5]:
+    print(line)
+PYCODE
+)
             
             if [ -n "$strings" ]; then
                 local i=1

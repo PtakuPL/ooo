@@ -4853,5 +4853,10 @@ print(total)
         echo "  $0 --continuous [B] [D] Tryb ciągły (B=batch, D=delay)"
         echo "  $0 --update-status      Aktualizuj I18N_STATUS.md"
         echo ""
+        echo "Opcje --continuous:"
+        echo "  --no-git                Wyłącz git add/commit/push"
+        echo "  --translate-limit N     Max N kluczy do tłumaczenia na cykl"
+        echo "  --translations-only     Tylko tłumaczenia, bez migracji kodu"
+        echo ""
         ;;
 esac

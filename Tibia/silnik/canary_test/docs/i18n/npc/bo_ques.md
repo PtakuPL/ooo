@@ -1,7 +1,7 @@
 # NPC: bo_ques
 
 **Plik:** `data-otservbr-global/npc/bo_ques.lua`
-**Data migracji:** 2025-12-11 04:23
+**Data migracji:** 2025-12-11 04:24
 **Liczba tekstów:** 1
 
 ## Klucze i18n

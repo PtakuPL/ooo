@@ -2,8 +2,8 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-11 22:15:47 UTC  
-> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28803
+> **Aktualizacja:** 2025-12-11 22:16:34 UTC  
+> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28857
 
 ---
 
@@ -24,10 +24,10 @@
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
-| 📂 **Wszystkie pliki** | **16,207** | 100% | cały projekt |
+| 📂 **Wszystkie pliki** | **16,208** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **7,742** | 47.8% | pliki z kodem/tekstami |
-| 🔍 **Przeskanowane** | **20** | **0.3%** | historia workera |
-| ⏳ Nie przeskanowane | **7,722** | 99.7% | czekają na skan |
+| 🔍 **Przeskanowane** | **78** | **1.0%** | historia workera |
+| ⏳ Nie przeskanowane | **7,664** | 99.0% | czekają na skan |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -51,12 +51,12 @@
 ### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔑 **Klucze EN (źródłowe)** | **28,803** | wszystkie kategorie |
+| 🔑 **Klucze EN (źródłowe)** | **28,857** | wszystkie kategorie |
 | 📊 NPC | 5,339 | dialogi NPC |
 | 📊 Items | 13,749 | przedmioty |
 | 📊 Monsters | 7,341 | potwory |
 | 📊 HTML | 1,495 | widoki web |
-| 📊 Pozostałe | 879 | scripts, spells, etc. |
+| 📊 Pozostałe | 933 | scripts, spells, etc. |
 
 ### 🌍 Języki i Tłumaczenia
 | Metryka | Wartość | Procent | Info |
@@ -109,7 +109,7 @@
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
 | 🧙 NPC Dialogs | 🔄 | 5339/15000 (36%) | 15000 |
-| 📜 Lua Scripts | 🔄 | 43/1000 (4%) | 1000 |
+| 📜 Lua Scripts | 🔄 | 97/1000 (10%) | 1000 |
 | 🎒 Items Database | 🔄 | 13749/40000 (34%) | 40000 |
 | 👹 Monsters | ✅ | 7341/7500 (98%) | 7500 |
 | ✨ Spells & Magic | 🔄 | 304/400 (76%) | 400 |
@@ -174,13 +174,13 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
-│ Kategoria: 📁 NPC                                    │
+│ Kategoria: 📁 SCRIPTS                                │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Pliki przeskanowane:     20 (wszystkie kategorie)          │
-│    ├─ Kategoria    NPC:   5339 kluczy EN                    │
-│    └─ Total kluczy EN:  28803                                 │
+│    ├─ Kategoria SCRIPTS:     97 kluczy EN                    │
+│    └─ Total kluczy EN:  28857                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-11 22:15:47            │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 22:16:34            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -201,6 +201,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- 📜 `scripts` +88 kluczy @ 22:16:32
 - 🧙 `npc` +0 kluczy @ 22:15:45
 - ⚡ `errors` +0 kluczy @ 17:41:10
 - ⚡ `otclient_tools` +0 kluczy @ 17:41:03
@@ -208,7 +209,6 @@
 - ⚡ `otclient_data` +0 kluczy @ 17:22:22
 - ⚡ `otclient_mods` +0 kluczy @ 17:22:11
 - ⚡ `otclient_modules` +0 kluczy @ 17:22:03
-- ⚡ `client_cpp` +0 kluczy @ 17:13:26
 
 
 ---
@@ -303,13 +303,13 @@
 </details>
 
 <details>
-<summary>📜 8. Scripts - 🔄 (4%)</summary>
+<summary>📜 8. Scripts - 🔄 (10%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 43 |
+| 🔑 Kluczy | 97 |
 | 🎯 Cel | 1000 |
-| 📊 Postęp | 4% |
+| 📊 Postęp | 10% |
 | 📁 Plik | i18n/en/scripts.json |
 
 </details>
@@ -375,8 +375,8 @@
 | spells | 304 | 0 | 2 | ✅ Active |
 | client | 242 | 0 | 2 | ✅ Active |
 | raids | 147 | 0 | 2 | ✅ Active |
+| scripts | 97 | 207 | 0 | ✅ Active |
 | php | 59 | 15 | 0 | ✅ Active |
-| scripts | 43 | 69 | 0 | ✅ Active |
 | startup | 23 | 0 | 2 | ✅ Active |
 | libs | 21 | 0 | 2 | ✅ Active |
 | modules | 16 | 0 | 2 | ✅ Active |
@@ -439,7 +439,7 @@
 |-----------|--------|--------|-----|--------|
 | 🎒 Items | 13749 | ██████░░░░░░░░░░░░░░ | 40000 | 🔄 34% |
 | 🧙 NPC | 5339 | ███████░░░░░░░░░░░░░ | 15000 | 🔄 36% |
-| 📜 Scripts | 43 | ░░░░░░░░░░░░░░░░░░░░ | 1000 | 🔄 4% |
+| 📜 Scripts | 97 | █░░░░░░░░░░░░░░░░░░░ | 1000 | 🔄 10% |
 | 👹 Monsters | 7341 | ███████████████████░ | 7500 | ✅ 98% |
 | ✨ Spells | 304 | ███████████████░░░░░ | 400 | 🔄 76% |
 | ⚙️ Server | 0 | ░░░░░░░░░░░░░░░░░░░░ | 300 | ⏳ 0% |
@@ -449,7 +449,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 22:15:47  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 22:16:34  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

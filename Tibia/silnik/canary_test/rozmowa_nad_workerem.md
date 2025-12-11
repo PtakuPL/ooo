@@ -929,3 +929,81 @@ User napisał: "worker już może tłumaczyć języki które zna".
 3. Jaki jest status dispatchera - czy MIGRATION ma priorytet?
 
 **Wpisz odpowiedź poniżej.**
+
+---
+
+## Agent 2 dalsza analiza (19:55)
+
+### Translation Memory - JEST ale z bugiem:
+```
+i18n/translation_memory.json - 3MB
+```
+
+**Problem:** TM przechowuje BŁĘDNE tłumaczenia!
+```json
+"text": "I am НетT Princess Lumelia, you fools!"  // "НетT" = błąd
+"text": "You'll have to talk to the king though."  // Częściowo EN
+```
+
+To jest efekt `simple_translate()` które podmienia pojedyncze słowa w środku zdań:
+- "Not" → "Нет" (rosyjski)
+- Ale "Not" w "I am Not" staje się "I am Нет" co jest błędne
+
+### Narzędzia gotowe:
+- ✅ `tools/hard_strings_report.py`
+- ✅ `tools/build_translation_queue.py`
+- ✅ `tools/i18n_batch_processor.py`
+- ✅ `tools/i18n_glossary.py`
+
+### Placeholder guard - JEST w AUTO_TRANSLATE:
+Linia 3713-3718:
+```python
+sb, sp = count_placeholders(en_text)
+tb, tp = count_placeholders(simple)
+if sb == tb and sp == tp:
+    # OK
+else:
+    guard_fail += 1
+```
+
+---
+
+## 🔧 CO TRZEBA NAPRAWIĆ
+
+### Problem 1: `simple_translate()` psuje teksty
+**Rozwiązanie:** Wyłączyć proste tłumaczenie słów w środku zdań.
+- Albo tłumaczyć CAŁE zdanie (API/LLM)
+- Albo zostawić placeholder `[LANG]` dla złożonych tekstów
+
+### Problem 2: TM ma złe tłumaczenia
+**Rozwiązanie:** Wyczyścić TM lub dodać walidację przed zapisem
+
+### Problem 3: Worker nie tłumaczy pełnych zdań automatycznie
+**Rozwiązanie:** Użyć trybu `--translate` z agentem LLM
+
+---
+
+## 📋 PROPOZYCJA PLANU DZIAŁANIA
+
+### Dla Agenta 1:
+1. **Napraw `simple_translate()`** - niech tłumaczy tylko proste frazy (całe "Hello" → "Witaj"), nie fragmenty w środku zdań
+2. **Dodaj walidację do TM** - nie zapisuj jeśli wynik wygląda jak błąd (mieszanka języków)
+3. **Opcjonalnie:** Dodaj integrację z Claude API dla pełnych tłumaczeń
+
+### Dla Agenta 2 (ja):
+1. **Sprawdzam status workera** - ✅ Done
+2. **Uruchomię sesję tłumaczeń** jeśli user potwierdzi
+3. **Monitoring** - pilnuję że MIGRATION działa
+
+---
+
+## ❓ PYTANIA DO USERA (zanim zaczniemy)
+
+1. **Czy masz API key do Claude/GPT** które mogę użyć do tłumaczeń?
+2. **Czy chcesz żebym uruchomił `--translate pl`** i tłumaczył interaktywnie?
+3. **Priorytet:** Najpierw dokończyć MIGRATION czy od razu tłumaczenia?
+
+---
+
+### Log kontynuacja:
+- 2025-12-11 19:55 - Agent 2: Znalazłem bug w TM (złe tłumaczenia), narzędzia są gotowe

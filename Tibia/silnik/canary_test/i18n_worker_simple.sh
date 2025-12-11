@@ -639,8 +639,8 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 │ 🔴 LIVE: Worker v2.0                          Cykl #{cycle_count:>6} │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    {"🟢 RUNNING" if in_progress > 0 or sync_current_lang else "✅ IDLE":40} │
-│ Tryb:      {("🌍 TRANSLATION_SYNC (Etap 1)" if sync_last_ts > last_activity_time and sync_current_lang else "MIGRATION (multi-category)"):40} │
-│ Kategoria: {("🌍 " + sync_current_lang.upper() + "/" + sync_current_cat if sync_last_ts > last_activity_time and sync_current_lang else "🎒 " + current_category.upper() if current_category else "IDLE"):40} │
+│ Tryb:      {mode_display:40} │
+│ Kategoria: {category_display:40} │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Ostatnia aktywność: {(sync_current_lang.upper() + "/" + sync_current_cat if sync_last_ts > last_activity_time and sync_current_lang else current_category):25}                      │
 │ [{progress_bar(sync_stats.get(sync_current_lang, {}).get("total", 0) if sync_last_ts > last_activity_time else all_json_categories.get(current_category, 0), total_keys if sync_last_ts > last_activity_time else TARGETS.get(current_category, 1000), 50)}] │

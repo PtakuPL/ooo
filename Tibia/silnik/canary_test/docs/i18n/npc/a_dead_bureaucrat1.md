@@ -1,7 +1,7 @@
 # NPC: a_dead_bureaucrat1
 
 **Plik:** `data-otservbr-global/npc/a_dead_bureaucrat1.lua`
-**Data migracji:** 2025-12-11 04:15
+**Data migracji:** 2025-12-11 04:16
 **Liczba tekstów:** 2
 
 ## Klucze i18n

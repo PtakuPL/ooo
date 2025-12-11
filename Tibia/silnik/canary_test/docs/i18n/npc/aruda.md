@@ -1,7 +1,7 @@
 # NPC: aruda
 
 **Plik:** `data-otservbr-global/npc/aruda.lua`
-**Data migracji:** 2025-12-11 04:15
+**Data migracji:** 2025-12-11 04:16
 **Liczba tekstów:** 1
 
 ## Klucze i18n

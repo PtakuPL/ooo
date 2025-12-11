@@ -1,7 +1,7 @@
 # NPC: cael
 
 **Plik:** `data-otservbr-global/npc/cael.lua`
-**Data migracji:** 2025-12-11 04:15
+**Data migracji:** 2025-12-11 04:17
 **Liczba tekstów:** 3
 
 ## Klucze i18n

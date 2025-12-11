@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 17:22:22 UTC  
+> **Aktualizacja:** 2025-12-11 17:22:35 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28803
 
 ---
@@ -28,7 +28,7 @@
 | 🔑 Kluczy i18n (EN) | **28803** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#3** | - |
+| 🔄 Cykl | **#4** | - |
 
 ---
 
@@ -142,19 +142,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     3 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     4 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 OTCLIENT_DATA                          │
+│ Kategoria: 🎒 OTCLIENT_SRC                           │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: otclient_data                                  │
+│ 📊 Ostatnia aktywność: otclient_src                                   │
 │ [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
 │ 0/1000 kluczy (0%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 704 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 17:22:22                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 17:22:35                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -168,7 +168,7 @@
 | ✅ NPC zmigrowanych | **20** (445 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **28803** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#3** | continuous mode |
+| 🔄 Cykli wykonanych | **#4** | continuous mode |
 | 🎯 Aktywne kategorie | **15** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -176,6 +176,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `otclient_src` +0 kluczy @ 17:22:35
 - ⚡ `otclient_data` +0 kluczy @ 17:22:22
 - ⚡ `otclient_mods` +0 kluczy @ 17:22:11
 - ⚡ `otclient_modules` +0 kluczy @ 17:22:03
@@ -183,7 +184,6 @@
 - ⚡ `client_cpp` +0 kluczy @ 17:13:26
 - ⚡ `client_data` +0 kluczy @ 17:13:19
 - ⚡ `client_mods` +0 kluczy @ 17:13:12
-- ⚡ `client_modules` +0 kluczy @ 17:13:03
 
 
 ---
@@ -376,10 +376,11 @@
 | client_modules | 0m | 2x | Progresywny backoff |
 | client_mods | 0m | 2x | Progresywny backoff |
 | client_data | 0m | 2x | Progresywny backoff |
-| client_cpp | 1m | 2x | Progresywny backoff |
+| client_cpp | 0m | 2x | Progresywny backoff |
 | otclient_modules | 9m | 2x | Progresywny backoff |
 | otclient_mods | 9m | 2x | Progresywny backoff |
 | otclient_data | 9m | 2x | Progresywny backoff |
+| otclient_src | 9m | 2x | Progresywny backoff |
 
 ---
 
@@ -387,7 +388,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #3 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #4 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -430,7 +431,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 17:22:22  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 17:22:35  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

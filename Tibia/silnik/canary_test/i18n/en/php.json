@@ -52,5 +52,10 @@
   "php.rfc6238.text1": "234567QWERTYUIOPASDFGHJKLZXCVBNM",
   "php.rfc6238.text2": "from $counter <br/>",
   "php.rfc6238.text3": "Prior to HMAC calculation pad with zero on the left until 8 characters.<br/>",
-  "php.rfc6238.text4": "converting hex hash into characters<br/>"
+  "php.rfc6238.text4": "converting hex hash into characters<br/>",
+  "php.accounts.text1": "col-12 col-sm-12 col-lg-10",
+  "php.accounts.text2": "card card-info card-outline",
+  "php.accounts.text3": "acc_datatable table table-striped table-bordered table-responsive d-md-table",
+  "php.accounts.text4": "btn btn-success btn-sm",
+  "php.accounts.text5": "fas fa-pencil-alt"
 }

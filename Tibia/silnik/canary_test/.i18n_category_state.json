@@ -5,7 +5,8 @@
     "raids": 1765421572.540611,
     "world": 1765421588.128411,
     "items": 1765421629.9992843,
-    "libs": 1765421638.3282638
+    "libs": 1765421638.3282638,
+    "events": 1765421645.5352628
   },
   "last_processed": {
     "npc": {
@@ -39,6 +40,10 @@
     "libs": {
       "count": 0,
       "timestamp": 1765421038.3282585
+    },
+    "events": {
+      "count": 0,
+      "timestamp": 1765421045.535254
     }
   },
   "migrations_done": false,
@@ -50,7 +55,8 @@
     "world": 2,
     "spells": 0,
     "items": 2,
-    "libs": 2
+    "libs": 2,
+    "events": 2
   },
   "total_processed": {
     "spells": 294,

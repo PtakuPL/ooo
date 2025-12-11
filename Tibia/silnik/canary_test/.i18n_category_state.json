@@ -6,7 +6,8 @@
     "raids": 1765469826.6551127,
     "world": 1765469835.0284467,
     "spells": 1765469845.4166665,
-    "talkactions": 1765469883.8743591
+    "talkactions": 1765469883.8743591,
+    "movements": 1765469893.295219
   },
   "last_processed": {
     "npc": {
@@ -44,6 +45,10 @@
     "talkactions": {
       "count": 0,
       "timestamp": 1765469283.874347
+    },
+    "movements": {
+      "count": 0,
+      "timestamp": 1765469293.295211
     }
   },
   "consecutive_zeros": {
@@ -55,7 +60,8 @@
     "raids": 2,
     "world": 2,
     "spells": 2,
-    "talkactions": 2
+    "talkactions": 2,
+    "movements": 2
   },
   "total_processed": {
     "npc": 40,

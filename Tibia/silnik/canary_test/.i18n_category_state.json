@@ -1,15 +1,15 @@
 {
   "skip_until": {
-    "npc": 1765489668.5438507
+    "npc": 1765492677.106859
   },
   "last_processed": {
     "npc": {
       "count": 0,
-      "timestamp": 1765489068.5438437
+      "timestamp": 1765489077.1068504
     }
   },
   "consecutive_zeros": {
-    "npc": 2
+    "npc": 4
   },
   "total_processed": {},
   "migrations_done": false

@@ -576,6 +576,32 @@ for _lang in auto_langs:
     auto_rows.append(f"| {_lang.upper()} | {tm_count} | {status_auto} |")
 auto_table = chr(10).join(auto_rows)
 
+# Tabela postępu agenta vs stan początkowy
+progress_order = ["npc", "items", "monsters", "scripts", "spells", "php", "html", "client", "server", "ui", "cpp"]
+display = {
+    "npc": "🧙 NPC",
+    "items": "🎒 Items",
+    "monsters": "👹 Monsters",
+    "scripts": "📜 Scripts",
+    "spells": "✨ Spells",
+    "php": "🐘 PHP",
+    "html": "📄 HTML",
+    "client": "📦 JS/Client",
+    "server": "⚙️ Server",
+    "ui": "🎨 UI",
+    "cpp": "💿 C++",
+}
+progress_rows = []
+for cat in progress_order:
+    base = baseline_counts.get(cat, 0)
+    cur = current_counts.get(cat, 0)
+    delta = delta_counts.get(cat, 0)
+    progress_rows.append(f"| {display.get(cat, cat)} | {base} | {cur} | {'+' if delta>=0 else ''}{delta} |")
+progress_table = chr(10).join(progress_rows)
+progress_total_base = sum(baseline_counts.get(c, 0) for c in progress_order)
+progress_total_cur = sum(current_counts.get(c, 0) for c in progress_order)
+progress_total_delta = progress_total_cur - progress_total_base
+
 # Status workera (ostatni tryb z i18n_global_stats.json)
 try:
     with open("i18n_global_stats.json") as f:
@@ -662,6 +688,16 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 | 🌍 Języków | **{langs_count}** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
 | 🔄 Cykl | **#{cycle_count}** | - |
+
+---
+
+## 📈 Postęp agenta vs stan początkowy
+- Baseline z: {baseline_ts}  
+
+| Kategoria | Na starcie | Teraz | +Agent |
+|-----------|------------|-------|--------|
+{progress_table}
+| **Suma** | **{progress_total_base}** | **{progress_total_cur}** | **{('+' if progress_total_delta>=0 else '') + str(progress_total_delta)}** |
 
 ---
 

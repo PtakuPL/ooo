@@ -113,7 +113,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:17:11.158660"
+      "completed_at": "2025-12-11T17:17:46.243582"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -224,7 +224,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:17:08.038728"
+      "completed_at": "2025-12-11T17:17:43.052262"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -335,7 +335,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:17:11.972463"
+      "completed_at": "2025-12-11T17:17:47.078643"
     },
     "data-otservbr-global/npc/cranky_lizard_crone.lua": {
       "stages": {
@@ -450,7 +450,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:17:09.330197"
+      "completed_at": "2025-12-11T17:17:44.631186"
     },
     "data-otservbr-global/npc/ghorza.lua": {
       "stages": {
@@ -565,7 +565,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:17:13.062846"
+      "completed_at": "2025-12-11T17:17:49.088592"
     },
     "data-otservbr-global/npc/alaistar.lua": {
       "stages": {
@@ -676,7 +676,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:17:04.189726"
+      "completed_at": "2025-12-11T17:18:04.207484"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -717,77 +717,9 @@
           "greet_keys": 0,
           "farewell_keys": 0,
           "voices_keys": 0
-        },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [
-            "Brak i18nKey w pliku Lua"
-          ],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 0,
-          "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
         }
       },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T17:17:05.642857"
+      "overall_status": "in_progress"
     },
     "data-otservbr-global/npc/bertram.lua": {
       "stages": {
@@ -904,7 +836,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:17:06.483594"
+      "completed_at": "2025-12-11T17:17:41.653918"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {
@@ -1019,7 +951,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:17:13.942964"
+      "completed_at": "2025-12-11T17:17:50.274153"
     },
     "data-otservbr-global/npc/mordecai.lua": {
       "stages": {
@@ -1134,7 +1066,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:17:16.873798"
+      "completed_at": "2025-12-11T17:18:00.591578"
     },
     "data-otservbr-global/npc/nelly.lua": {
       "stages": {
@@ -1249,7 +1181,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:17:17.889082"
+      "completed_at": "2025-12-11T17:18:01.670738"
     },
     "data-otservbr-global/npc/nipuna.lua": {
       "stages": {
@@ -1257,114 +1189,9 @@
           "status": "completed",
           "hash": "71ea1ce60950d0cd4aed235be8c76d59",
           "type": "npc"
-        },
-        "2_analysis": {
-          "status": "completed",
-          "safe_name": "nipuna",
-          "StdModule_say": 0,
-          "npcHandler_say": 1,
-          "sendTextMessage": 0,
-          "addGreetKeyword": 0,
-          "addFarewellKeyword": 0,
-          "total": 1,
-          "already_i18n": 2,
-          "npcSayLib": 0,
-          "needs_migration": true
-        },
-        "3_documentation": {
-          "status": "completed",
-          "doc_file": "docs/i18n/npc/nipuna.md",
-          "keys_documented": 0
-        },
-        "4_transformation": {
-          "status": "completed",
-          "transformed": 0,
-          "stdmod_transformed": 0,
-          "npcsay_transformed": 0
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0,
-          "stdmod_keys": 0,
-          "npcsay_keys": 0,
-          "greet_keys": 0,
-          "farewell_keys": 0,
-          "voices_keys": 0
-        },
-        "6_placeholder": {
-          "status": "completed",
-          "languages": [],
-          "keys_per_lang": 2,
-          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
-        },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 2,
-          "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
         }
       },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T17:17:18.959315"
+      "overall_status": "in_progress"
     },
     "data-otservbr-global/npc/rock_in_a_hard_place.lua": {
       "stages": {
@@ -2280,7 +2107,7 @@
     }
   },
   "global_stats": {
-    "files_completed": 20,
+    "files_completed": 19,
     "total_keys": 0
   }
 }

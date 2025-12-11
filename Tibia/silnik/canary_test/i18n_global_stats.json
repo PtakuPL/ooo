@@ -1,14 +1,14 @@
 {
-  "total_cycles": 31,
+  "total_cycles": 40,
   "mode": "MIGRATION",
-  "category": "errors",
-  "last_update": "2025-12-11T22:49:08.760675",
+  "category": "npc",
+  "last_update": "2025-12-11T22:53:39.366579",
   "migration": {
     "files_scanned": 76,
     "files_with_keys": 66,
     "files_without_keys": 10,
     "keys_extracted": 66,
-    "current_category": "errors",
-    "batch_size": 22
+    "current_category": "npc",
+    "batch_size": 20
   }
 }

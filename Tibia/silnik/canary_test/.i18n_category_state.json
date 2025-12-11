@@ -62,8 +62,8 @@
       "timestamp": 1765411775.529499
     },
     "php": {
-      "count": 0,
-      "timestamp": 1765412968.1395931
+      "count": 62,
+      "timestamp": 1765413720.8871763
     },
     "html": {
       "count": 0,
@@ -107,7 +107,8 @@
     "keywordhandler": 4,
     "twig": 4,
     "npc": 0,
-    "client": 0
+    "client": 0,
+    "php": 0
   },
   "total_processed": {
     "items": 11689,
@@ -116,7 +117,7 @@
     "chatchannels": 8,
     "modules": 16,
     "startup": 23,
-    "php": 4521,
+    "php": 4614,
     "html": 3245,
     "client": 935,
     "keywordhandler": 64,

@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 200, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 200} -->
 
-> **Aktualizacja:** 2025-12-11 01:41:36 UTC  
+> **Aktualizacja:** 2025-12-11 01:42:01 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -25,10 +25,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **26** | ↑ |
 | ⏭️ Plików wykluczonych | **711** | - |
-| 🔑 Kluczy i18n | **28588** | ↑ |
+| 🔑 Kluczy i18n | **28619** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#9** | - |
+| 🔄 Cykl | **#10** | - |
 
 ---
 
@@ -52,7 +52,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🐘 PHP Backend | ⏳ | 0/3000 (0%) | 3000 |
+| 🐘 PHP Backend | 🔄 | 31/3000 (1%) | 3000 |
 | 📄 HTML Views | ✅ | 1495/300 (498%) | 300 |
 | 📦 JavaScript | 🔄 | 38/200 (19%) | 200 |
 
@@ -79,19 +79,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     9 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    10 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 CLIENT                                 │
+│ Kategoria: 🎒 PHP                                    │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: client                                         │
-│ [█████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 38/200 kluczy (19%)                                          │
+│ 📊 Ostatnia aktywność: php                                            │
+│ [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
+│ 31/3000 kluczy (1%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Total processed: 30826 operacji               │
+│ ⏳ Total processed: 30919 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 01:41:36                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 01:42:01                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -101,21 +101,21 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Operacji wykonanych | **30826** | we wszystkich kategoriach |
+| 📁 Operacji wykonanych | **30919** | we wszystkich kategoriach |
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **28588** | we wszystkich kategoriach |
+| 🔑 Kluczy wyciągniętych | **28619** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#9** | continuous mode |
-| 🎯 Aktywne kategorie | **14** | z danymi |
+| 🔄 Cykli wykonanych | **#10** | continuous mode |
+| 🎯 Aktywne kategorie | **15** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `php` +62 kluczy @ 01:42:00
 - ⚡ `client` +76 kluczy @ 01:41:36
 - 🌍 `UZ/items.json` +15257 kluczy @ 01:41:10
-- ⚡ `php` +0 kluczy @ 01:29:28
 - 🧙 `npc` +1 kluczy @ 01:23:36
 - ⚡ `twig` +0 kluczy @ 01:14:02
 - ⚡ `keywordhandler` +0 kluczy @ 01:13:55
@@ -280,15 +280,16 @@
 
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
-| items | 13749 | 11689 | 4 | ⏭️ Skip 27m |
+| items | 13749 | 11689 | 4 | ⏭️ Skip 26m |
 | monsters | 7341 | 9549 | 4 | ⏭️ Skip 26m |
 | npc | 5334 | 2 | 0 | ✅ Active |
 | html | 1495 | 3245 | 4 | ⏭️ Skip 31m |
 | scripts | 385 | 0 | 4 | ⏭️ Skip 26m |
-| raids | 147 | 351 | 4 | ⏭️ Skip 27m |
+| raids | 147 | 351 | 4 | ⏭️ Skip 26m |
 | client | 38 | 935 | 0 | ✅ Active |
+| php | 31 | 4614 | 0 | ✅ Active |
 | startup | 23 | 23 | 4 | ⏭️ Skip 27m |
-| libs | 21 | 53 | 4 | ⏭️ Skip 27m |
+| libs | 21 | 53 | 4 | ⏭️ Skip 26m |
 | modules | 16 | 16 | 4 | ⏭️ Skip 27m |
 | spells | 15 | 0 | 0 | ✅ Active |
 | messages | 11 | 0 | 0 | ✅ Active |
@@ -298,11 +299,10 @@
 | cpp | 0 | 0 | 0 | ⏳ Empty |
 | errors | 0 | 0 | 0 | ⏳ Empty |
 | npclib | 0 | 0 | 4 | ⏭️ Skip 27m |
-| php | 0 | 4521 | 0 | ⏳ Empty |
 | quests | 0 | 0 | 0 | ⏳ Empty |
 | server | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
-| world | 0 | 0 | 4 | ⏭️ Skip 27m |
+| world | 0 | 0 | 4 | ⏭️ Skip 26m |
 
 ---
 
@@ -312,18 +312,18 @@
 |-----------|----------------|-----------|-------|
 | scripts | 26m | 4x | Progresywny backoff |
 | monsters | 26m | 4x | Progresywny backoff |
-| raids | 27m | 4x | Progresywny backoff |
-| world | 27m | 4x | Progresywny backoff |
-| items | 27m | 4x | Progresywny backoff |
-| libs | 27m | 4x | Progresywny backoff |
+| raids | 26m | 4x | Progresywny backoff |
+| world | 26m | 4x | Progresywny backoff |
+| items | 26m | 4x | Progresywny backoff |
+| libs | 26m | 4x | Progresywny backoff |
 | events | 27m | 4x | Progresywny backoff |
 | chatchannels | 27m | 4x | Progresywny backoff |
 | modules | 27m | 4x | Progresywny backoff |
 | startup | 27m | 4x | Progresywny backoff |
 | npclib | 27m | 4x | Progresywny backoff |
 | html | 31m | 4x | Progresywny backoff |
-| sendtextmessage | 32m | 4x | Progresywny backoff |
-| keywordhandler | 32m | 4x | Progresywny backoff |
+| sendtextmessage | 31m | 4x | Progresywny backoff |
+| keywordhandler | 31m | 4x | Progresywny backoff |
 | twig | 32m | 4x | Progresywny backoff |
 
 ---
@@ -332,7 +332,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #9 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #10 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -375,7 +375,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 01:41:36  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 01:42:01  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

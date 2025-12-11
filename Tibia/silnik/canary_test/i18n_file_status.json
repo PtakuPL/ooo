@@ -2267,10 +2267,190 @@
       "overall_status": "completed",
       "completed_at": "2025-12-11T22:58:38.903869",
       "category": "creaturescripts"
+    },
+    "data-otservbr-global/monster/amphibics/salamander.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:55:43.894891",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/amphibics/infernal_frog.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:55:44.249155",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/amphibics/orchid_frog.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:55:44.703928",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/amphibics/azure_frog.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:55:44.995222",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/amphibics/deathspawn.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:55:45.177072",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/amphibics/bog_frog.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:55:45.344506",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/amphibics/makara.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:55:45.505548",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/amphibics/crimson_frog.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:55:45.658318",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/amphibics/toad.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:55:45.806494",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/amphibics/coral_frog.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T23:55:45.959566",
+      "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 126,
+    "files_completed": 136,
     "total_keys": 0
   }
 }

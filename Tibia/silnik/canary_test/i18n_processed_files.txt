@@ -444,3 +444,13 @@ html_copy/system/templates/buttons.change_name.html.twig
 html_copy/system/templates/success.html.twig
 html_copy/system/templates/news.html.twig
 html_copy/system/templates/account.login.html.twig
+data-otservbr-global/monster/amphibics/salamander.lua
+data-otservbr-global/monster/amphibics/infernal_frog.lua
+data-otservbr-global/monster/amphibics/orchid_frog.lua
+data-otservbr-global/monster/amphibics/azure_frog.lua
+data-otservbr-global/monster/amphibics/deathspawn.lua
+data-otservbr-global/monster/amphibics/bog_frog.lua
+data-otservbr-global/monster/amphibics/makara.lua
+data-otservbr-global/monster/amphibics/crimson_frog.lua
+data-otservbr-global/monster/amphibics/toad.lua
+data-otservbr-global/monster/amphibics/coral_frog.lua

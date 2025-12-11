@@ -339,7 +339,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:43:07.105193"
+      "completed_at": "2025-12-11T19:43:55.161541"
     },
     "data-otservbr-global/npc/romir.lua": {
       "stages": {
@@ -567,7 +567,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:43:08.503009"
+      "completed_at": "2025-12-11T19:43:56.502395"
     },
     "data-otservbr-global/npc/seymour.lua": {
       "stages": {
@@ -793,7 +793,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:43:10.832884"
+      "completed_at": "2025-12-11T19:43:58.707556"
     },
     "data-otservbr-global/npc/shiriel.lua": {
       "stages": {
@@ -1023,7 +1023,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:43:12.388348"
+      "completed_at": "2025-12-11T19:44:00.115191"
     },
     "data-otservbr-global/npc/sigurd.lua": {
       "stages": {
@@ -1362,13 +1362,9 @@
           ],
           "keys_in_lua": 1,
           "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
         }
       },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T19:43:15.158914"
+      "overall_status": "in_progress"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -2161,7 +2157,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:43:04.876821"
+      "completed_at": "2025-12-11T19:43:52.875462"
     },
     "data-otservbr-global/npc/tandros.lua": {
       "stages": {

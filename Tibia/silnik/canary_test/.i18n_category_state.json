@@ -90,6 +90,10 @@
     "npc": {
       "count": 1,
       "timestamp": 1765412616.5684137
+    },
+    "spells": {
+      "count": 100,
+      "timestamp": 1765414535.5271037
     }
   },
   "consecutive_zeros": {
@@ -110,7 +114,8 @@
     "twig": 4,
     "npc": 0,
     "client": 4,
-    "php": 4
+    "php": 4,
+    "spells": 0
   },
   "total_processed": {
     "items": 11689,
@@ -126,7 +131,8 @@
     "twig": 365,
     "monsters": 9549,
     "raids": 351,
-    "npc": 2
+    "npc": 2,
+    "spells": 150
   },
   "translation_sync": {
     "current_lang": "az",

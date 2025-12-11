@@ -371,9 +371,86 @@
           "transformed": 0,
           "stdmod_transformed": 0,
           "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0,
+          "voices_keys": 0
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Brak i18nKey w pliku Lua"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 0,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
         }
       },
-      "overall_status": "in_progress"
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T19:48:03.315841"
     },
     "data-otservbr-global/npc/bertram.lua": {
       "stages": {
@@ -605,7 +682,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:47:18.647655"
+      "completed_at": "2025-12-11T19:48:05.095757"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -831,7 +908,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:47:19.994618"
+      "completed_at": "2025-12-11T19:48:06.387566"
     },
     "data-otservbr-global/npc/cranky_lizard_crone.lua": {
       "stages": {
@@ -1061,7 +1138,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:47:21.393922"
+      "completed_at": "2025-12-11T19:48:07.629882"
     },
     "data-otservbr-global/npc/sundara.lua": {
       "stages": {
@@ -1176,7 +1253,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:47:22.940707"
+      "completed_at": "2025-12-11T19:48:09.076003"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -1743,7 +1820,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:47:25.856366"
+      "completed_at": "2025-12-11T19:48:11.706005"
     },
     "data-otservbr-global/npc/mordecai.lua": {
       "stages": {
@@ -2199,7 +2276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:47:24.352950"
+      "completed_at": "2025-12-11T19:48:10.359794"
     }
   },
   "global_stats": {

@@ -38,5 +38,19 @@
   "php.plugins.text5": "to exist in the database.",
   "php.settings.text3": "input-group-append input-group-text",
   "php.settings.text4": "fas fa-eye-slash",
-  "php.settings.text5": "well setting-default"
+  "php.settings.text5": "well setting-default",
+  "php.validator.text1": "Character name is too short. Min. length <b>$minLength</b> characters.",
+  "php.validator.text2": "Character name is too long. Max. length <b>$maxLength</b> characters.",
+  "php.validator.text3": "Invalid name format. Use only A-Z, spaces and .",
+  "php.validator.text4": "Invalid name format. Use only A-Z, spaces and .",
+  "php.validator.text5": "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789-",
+  "php.createcharacter.text1": "Error. Cant create character. Probably problem with database. Please try again later or contact with admin.",
+  "php.forum.text1": ". FORUM_TABLE_PREFIX .",
+  "php.monsters.text1": "<h2>All records deleted from table ",
+  "php.monsters.text2": "monsters in database.</h2>",
+  "php.monsters.text3": "is monster use haste spell",
+  "php.rfc6238.text1": "234567QWERTYUIOPASDFGHJKLZXCVBNM",
+  "php.rfc6238.text2": "from $counter <br/>",
+  "php.rfc6238.text3": "Prior to HMAC calculation pad with zero on the left until 8 characters.<br/>",
+  "php.rfc6238.text4": "converting hex hash into characters<br/>"
 }

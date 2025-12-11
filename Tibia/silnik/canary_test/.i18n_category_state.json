@@ -65,6 +65,10 @@
     "npclib": {
       "count": 0,
       "timestamp": 1765419399.5666409
+    },
+    "php": {
+      "count": 28,
+      "timestamp": 1765419450.4616203
     }
   },
   "migrations_done": false,
@@ -81,9 +85,11 @@
     "chatchannels": 2,
     "modules": 2,
     "startup": 2,
-    "npclib": 2
+    "npclib": 2,
+    "php": 0
   },
   "total_processed": {
-    "spells": 147
+    "spells": 147,
+    "php": 42
   }
 }

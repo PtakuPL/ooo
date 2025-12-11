@@ -20357,6 +20357,10 @@
     "lib.exaltation_forge.msg4": {
       "src_hash": "3086afd3cca5bf3f92bb9fa5824a70bc",
       "text": "You did Niet receive "
+    },
+    "module.daily_reward.text4": {
+      "src_hash": "3d027d436804557783b7642eab598fda",
+      "text": "Nie bonus for first day"
     }
   }
 }

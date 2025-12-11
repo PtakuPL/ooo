@@ -1,8 +1,8 @@
 {
-  "total_cycles": 4,
+  "total_cycles": 6,
   "mode": "MIGRATION",
   "category": "raids",
-  "last_update": "2025-12-11T22:38:54.132182",
+  "last_update": "2025-12-11T22:38:57.376183",
   "migration": {
     "files_scanned": 0,
     "files_with_keys": 0,

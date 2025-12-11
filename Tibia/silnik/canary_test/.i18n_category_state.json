@@ -5,7 +5,7 @@
     "monsters": 1765489715.7949352,
     "actions": 1765489721.2493904,
     "quests": 1765489723.992195,
-    "raids": 1765489734.0716836
+    "raids": 1765492737.3150015
   },
   "last_processed": {
     "npc": {
@@ -30,7 +30,7 @@
     },
     "raids": {
       "count": 0,
-      "timestamp": 1765489134.0716743
+      "timestamp": 1765489137.3149872
     }
   },
   "consecutive_zeros": {
@@ -39,7 +39,7 @@
     "monsters": 2,
     "actions": 2,
     "quests": 2,
-    "raids": 2
+    "raids": 4
   },
   "total_processed": {},
   "migrations_done": false

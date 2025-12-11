@@ -13,7 +13,8 @@
     "npclib": 1765411754.0588856,
     "php": 1765411860.886356,
     "html": 1765411992.0708418,
-    "client": 1765411998.9947343
+    "client": 1765411998.9947343,
+    "sendtextmessage": 1765412012.757036
   },
   "last_processed": {
     "scripts": {
@@ -74,7 +75,7 @@
     },
     "sendtextmessage": {
       "count": 0,
-      "timestamp": 1765410433.2138267
+      "timestamp": 1765411412.757028
     },
     "keywordhandler": {
       "count": 0,
@@ -99,7 +100,8 @@
     "startup": 2,
     "npclib": 2,
     "php": 2,
-    "client": 2
+    "client": 2,
+    "sendtextmessage": 2
   },
   "total_processed": {
     "items": 11689,

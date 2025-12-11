@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 200, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 01:03:19 UTC  
+> **Aktualizacja:** 2025-12-11 01:03:33 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -28,7 +28,7 @@
 | 🔑 Kluczy i18n | **30379** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#24** | - |
+| 🔄 Cykl | **#25** | - |
 
 ---
 
@@ -79,19 +79,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    24 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    25 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 CLIENT                                 │
+│ Kategoria: 🎒 SENDTEXTMESSAGE                        │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: client                                         │
-│ [███████████████████████████████████████████████░░░] │
-│ 283/300 kluczy (94%)                                          │
+│ 📊 Ostatnia aktywność: sendtextmessage                                │
+│ [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
+│ 0/1000 kluczy (0%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 30710 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 01:03:19                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 01:03:33                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -105,7 +105,7 @@
 | ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **30379** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#24** | continuous mode |
+| 🔄 Cykli wykonanych | **#25** | continuous mode |
 | 🎯 Aktywne kategorie | **16** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -113,6 +113,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `sendtextmessage` +0 kluczy @ 01:03:32
 - ⚡ `client` +0 kluczy @ 01:03:18
 - ⚡ `html` +0 kluczy @ 01:03:12
 - ⚡ `php` +0 kluczy @ 01:01:00
@@ -120,7 +121,6 @@
 - ⚡ `startup` +0 kluczy @ 00:59:06
 - ⚡ `modules` +0 kluczy @ 00:58:59
 - ⚡ `chatchannels` +0 kluczy @ 00:58:51
-- ⚡ `events` +0 kluczy @ 00:58:44
 
 
 ---
@@ -280,7 +280,7 @@
 
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
-| items | 13749 | 11689 | 2 | ⏭️ Skip 5m |
+| items | 13749 | 11689 | 2 | ⏭️ Skip 4m |
 | monsters | 7341 | 9549 | 2 | ⏭️ Skip 4m |
 | npc | 5334 | 0 | 0 | ✅ Active |
 | php | 1531 | 4521 | 2 | ⏭️ Skip 7m |
@@ -314,7 +314,7 @@
 | monsters | 4m | 2x | Progresywny backoff |
 | raids | 4m | 2x | Progresywny backoff |
 | world | 4m | 2x | Progresywny backoff |
-| items | 5m | 2x | Progresywny backoff |
+| items | 4m | 2x | Progresywny backoff |
 | libs | 5m | 2x | Progresywny backoff |
 | events | 5m | 2x | Progresywny backoff |
 | chatchannels | 5m | 2x | Progresywny backoff |
@@ -324,6 +324,7 @@
 | php | 7m | 2x | Progresywny backoff |
 | html | 9m | 2x | Progresywny backoff |
 | client | 9m | 2x | Progresywny backoff |
+| sendtextmessage | 9m | 2x | Progresywny backoff |
 
 ---
 
@@ -331,7 +332,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #24 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #25 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -374,7 +375,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 01:03:19  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 01:03:33  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

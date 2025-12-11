@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 03:47:18 UTC  
+> **Aktualizacja:** 2025-12-11 03:48:51 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 29134
 
 ---
@@ -35,7 +35,7 @@
 ## 🔀 Etap 1 vs Etap 2
 
 ### 📦 Etap 1: Przygotowanie (SYNC kluczy EN → pliki językowe)
-- Języki z plikami przygotowanymi: 52/53  
+- Języki z plikami przygotowanymi: 0/53  
 - Ostatni sync: -
 
 ### 🌍 Etap 2: Tłumaczenia (AUTO + TM)
@@ -52,7 +52,7 @@
 | SV | 0 | ⚠️ placeholdery (brak TM) |
 | TR | 0 | ⚠️ placeholdery (brak TM) |
 
-**Języki bez TM (AUTO → placeholdery):** ar, az, bg, bn, bs, cs, da, el...
+**Języki bez TM (AUTO → placeholdery):** fr, tr
 
 ---
 
@@ -91,14 +91,14 @@
 
 | Język | Status | Kluczy | Etap |
 |-------|--------|--------|------|
-| 🇩🇪 Niemiecki | ✅ Sync | 28867 | [EN] prefix |
-| 🇵🇱 Polski | ✅ Sync | 28967 | [EN] prefix |
-| 🇪🇸 Hiszpański | ✅ Sync | 29017 | [EN] prefix |
-| 🇫🇷 Francuski | ✅ Sync | 28867 | [EN] prefix |
-| 🌐 Pozostałe (32/53) | ⏳ | 924476 | nie rozpoczęto |
+| 🇩🇪 Niemiecki | ⏳ Czeka | 0 | nie rozpoczęto |
+| 🇵🇱 Polski | ⏳ Czeka | 0 | nie rozpoczęto |
+| 🇪🇸 Hiszpański | ⏳ Czeka | 0 | nie rozpoczęto |
+| 🇫🇷 Francuski | ⏳ Czeka | 0 | nie rozpoczęto |
+| 🌐 Pozostałe (0/53) | ⏳ | 0 | nie rozpoczęto |
 
 ### 📦 Etap 1: Przygotowanie (SYNC)
-- Języki z plikami przygotowanymi: 52/53
+- Języki z plikami przygotowanymi: 0/53
 - Ostatni sync: -
 
 ### 🌍 Etap 2: Tłumaczenia (AUTO)
@@ -115,7 +115,7 @@
 | SV | 0 | ⚠️ placeholdery (brak TM) |
 | TR | 0 | ⚠️ placeholdery (brak TM) |
 
-**Języki bez TM (AUTO → placeholdery):** ar, az, bg, bn, bs, cs, da, el...
+**Języki bez TM (AUTO → placeholdery):** fr, tr
 ---
 
 ## 🔴 LIVE: Aktualna Aktywność
@@ -132,9 +132,9 @@
 │ [█████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
 │ 5339/15000 kluczy (36%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Total processed: 498 operacji               │
-│ 🌍 Języki zsync: 32/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 03:47:18                 │
+│ ⏳ Total processed: 0 operacji               │
+│ 🌍 Języki zsync: 0/53                                │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 03:48:51                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -144,10 +144,10 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Operacji wykonanych | **498** | we wszystkich kategoriach |
+| 📁 Operacji wykonanych | **0** | we wszystkich kategoriach |
 | ✅ NPC zmigrowanych | **144** (318 z i18nKey) | z 1026 plików NPC |
 | 🔑 Kluczy wyciągniętych | **29134** | we wszystkich kategoriach |
-| 🌍 Języków zsynchronizowanych | **32**/53 | sv, hu, bs, ro, az... |
+| 🌍 Języków zsynchronizowanych | **0**/53 | brak |
 | 🔄 Cykli wykonanych | **#1** | continuous mode |
 | 🎯 Aktywne kategorie | **15** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
@@ -156,7 +156,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🧙 `npc` +0 kluczy @ 03:47:17
+- 🧙 `npc` +0 kluczy @ 03:48:51
 
 
 ---
@@ -318,13 +318,13 @@
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 0 | 0 | ✅ Active |
 | monsters | 7341 | 0 | 0 | ✅ Active |
-| npc | 5339 | 162 | 4 | ⏭️ Skip 59m |
+| npc | 5339 | 0 | 2 | ⏭️ Skip 9m |
 | html | 1495 | 0 | 0 | ✅ Active |
 | scripts | 385 | 0 | 0 | ✅ Active |
-| spells | 304 | 294 | 0 | ✅ Active |
+| spells | 304 | 0 | 0 | ✅ Active |
 | client | 236 | 0 | 0 | ✅ Active |
 | raids | 147 | 0 | 0 | ✅ Active |
-| php | 54 | 42 | 0 | ✅ Active |
+| php | 54 | 0 | 0 | ✅ Active |
 | startup | 23 | 0 | 0 | ✅ Active |
 | libs | 21 | 0 | 0 | ✅ Active |
 | modules | 16 | 0 | 0 | ✅ Active |
@@ -346,7 +346,7 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| npc | 59m | 4x | Progresywny backoff |
+| npc | 9m | 2x | Progresywny backoff |
 
 ---
 
@@ -363,19 +363,19 @@
 
 | Język | Kluczy | Status |
 |-------|--------|--------|
-| DE | 28,867 | ✅ |
-| PL | 28,967 | ✅ |
-| ES | 29,017 | ✅ |
-| PT | 29,017 | ✅ |
-| FR | 28,867 | ✅ |
-| IT | 28,867 | ✅ |
-| NL | 28,867 | ✅ |
-| CS | 28,867 | ✅ |
-| SK | 28,867 | ✅ |
-| HU | 28,867 | ✅ |
+| DE | 0 | ⏳ |
+| PL | 0 | ⏳ |
+| ES | 0 | ⏳ |
+| PT | 0 | ⏳ |
+| FR | 0 | ⏳ |
+| IT | 0 | ⏳ |
+| NL | 0 | ⏳ |
+| CS | 0 | ⏳ |
+| SK | 0 | ⏳ |
+| HU | 0 | ⏳ |
 
 > **Aktualnie:** IDLE / -  
-> **Ukończone języki:** 32/53  
+> **Ukończone języki:** 0/53  
 > **Prefix:** `[EN] ` (klucze do przetłumaczenia)
 
 
@@ -397,7 +397,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:47:18  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:48:51  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

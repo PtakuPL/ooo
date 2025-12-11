@@ -299,3 +299,24 @@ i18n/en/
 - `docs/i18n/NPC_MIGRATION_STATUS.md` - status migracji NPC
 - `docs/I18N_DEVELOPMENT_ROADMAP.md` - ogólny plan rozwoju
 - `data-otservbr-global/lib/npc/i18n.lua` - biblioteka i18n dla NPC
+
+---
+
+## 📊 Status Sugestii Operacyjnych (2025-12-11)
+
+**🎉 WSZYSTKIE ZAIMPLEMENTOWANE!**
+
+| Sugestia | Status | Implementacja |
+|----------|--------|---------------|
+| `StdModule.say` + `i18nKey` | ✅ | Worker dodaje `i18nKey=` do parametrów |
+| Walidacja `lua -p` | ✅ | `validate_lua_file()` w workerze |
+| Smoke-test `loadfile()` | ✅ | `smoke_test_lua()` w workerze |
+| Raport "hard strings" | ✅ | `tools/hard_strings_report.py` → 24204 wpisów |
+| Translation queue | ✅ | `tools/build_translation_queue.py` → 53884 wpisów |
+| `--translations-only` | ✅ | Pomija MIGRATION, tylko tłumaczenia |
+| `--translate-limit N` | ✅ | Limit kluczy na cykl |
+| `--no-git` | ✅ | Wyłącza git add/commit/push |
+| Translation Memory | ✅ | `translation_memory.json` z hash src |
+| Placeholder guard | ✅ | Walidacja `{}` i `|...|` w tłumaczeniach |
+
+*Ostatnia aktualizacja: 2025-12-11 ~04:15 przez Agent 2*

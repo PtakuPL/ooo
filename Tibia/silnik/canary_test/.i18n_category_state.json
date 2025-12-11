@@ -1,16 +1,16 @@
 {
   "skip_until": {
-    "npc": 1765421832.0871391
+    "npc": 1765424837.983759
   },
   "last_processed": {
     "npc": {
       "count": 0,
-      "timestamp": 1765421232.0871327
+      "timestamp": 1765421237.9837537
     }
   },
   "migrations_done": false,
   "consecutive_zeros": {
-    "npc": 2
+    "npc": 4
   },
   "total_processed": {
     "spells": 294,

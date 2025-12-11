@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 03:47:12 UTC  
+> **Aktualizacja:** 2025-12-11 03:47:18 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 29134
 
 ---
@@ -134,7 +134,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 498 operacji               │
 │ 🌍 Języki zsync: 32/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 03:47:12                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 03:47:18                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -156,7 +156,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🧙 `npc` +0 kluczy @ 03:47:12
+- 🧙 `npc` +0 kluczy @ 03:47:17
 
 
 ---
@@ -318,7 +318,7 @@
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 0 | 0 | ✅ Active |
 | monsters | 7341 | 0 | 0 | ✅ Active |
-| npc | 5339 | 162 | 2 | ⏭️ Skip 9m |
+| npc | 5339 | 162 | 4 | ⏭️ Skip 59m |
 | html | 1495 | 0 | 0 | ✅ Active |
 | scripts | 385 | 0 | 0 | ✅ Active |
 | spells | 304 | 294 | 0 | ✅ Active |
@@ -346,7 +346,7 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| npc | 9m | 2x | Progresywny backoff |
+| npc | 59m | 4x | Progresywny backoff |
 
 ---
 
@@ -397,7 +397,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:47:12  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:47:18  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

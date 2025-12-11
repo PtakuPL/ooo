@@ -130,7 +130,7 @@
   },
   "translation_sync": {
     "current_lang": "sr",
-    "current_category": "spells.json",
+    "current_category": "startup.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -518,7 +518,7 @@
       },
       "sr": {
         "chatchannels": 8,
-        "total": 28516,
+        "total": 28539,
         "events": 5,
         "html": 1495,
         "items": 13749,
@@ -528,9 +528,10 @@
         "npc": 5334,
         "raids": 147,
         "scripts": 385,
-        "spells": 15
+        "spells": 15,
+        "startup": 23
       }
     },
-    "last_sync": 1765413230.3352711
+    "last_sync": 1765413237.5361571
   }
 }

@@ -13635,6 +13635,118 @@
     "php.migrateruncommand.text2": {
       "src_hash": "045ed1be584efb9e9a37a4b4550c6ea0",
       "text": "Нет migration has been executed"
+    },
+    "client.createaccount.text2": {
+      "src_hash": "beead5d6ed66883b128a8585e8959c78",
+      "text": "ERROR: JSON Нетt found in the response"
+    },
+    "client.player.text1": {
+      "src_hash": "5f772cb1090f3e6d451d52926b1ae6c7",
+      "text": "Нет Vocation"
+    },
+    "client.const.text1": {
+      "src_hash": "3d7033662f9854085c5da74321ff2779",
+      "text": "Нетrth East"
+    },
+    "client.const.text4": {
+      "src_hash": "52f3e90e1282312c8302e476d7c64ed0",
+      "text": "Нетrth West"
+    },
+    "client.npctrade.text1": {
+      "src_hash": "090951e6353119d15cea658bfd978777",
+      "text": "List of items that you're able to Купить"
+    },
+    "client.npctrade.text2": {
+      "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+      "text": "List of items that you're able to Продать"
+    },
+    "client.utils.text4": {
+      "src_hash": "a5d30c2fa7f7351769ddb417c4ee83e1",
+      "text": "Lalalala... you Нетw kНетw the cult's hymn sung in Liberty Bay by heart. Нетt that hard, considering that it mainly consists of two Нетtes and repetitive lyrics."
+    },
+    "client.house.text1": {
+      "src_hash": "b87a17758ec61680b74aafa52c9e2e23",
+      "text": "MaИгрокSelector"
+    },
+    "client.charms1410.text1": {
+      "src_hash": "31597b577bc92187dd76bf8b78ad89ce",
+      "text": "MiНетr Charm echoes\nEarned by unlocking or upgrading major charm and promotion your character"
+    },
+    "client.game_shop.text3": {
+      "src_hash": "70e9fac741af644fd3e5360831053f82",
+      "text": "Restores your character's hit points.\n\n- only usable by purchasing character\n- will be sent to your backpack\n- canНетt be purchased by characters with protection zone block or battle sign\n- canНетt"
+    },
+    "client.game_shop.text4": {
+      "src_hash": "4dc445c9e8f5c9bd83e9a32bf662e51c",
+      "text": "Refills your character's mana.\n\n- only usable by purchasing character\n- will be sent to your backpack\n- canНетt be purchased by characters with protection zone block or battle sign\n- canНетt be pur"
+    },
+    "client.market.text2": {
+      "src_hash": "5954d0da4aad8145900a38481505f95c",
+      "text": "Balance: <value> Золото"
+    },
+    "client.bottommenu.text5": {
+      "src_hash": "57cac65371fa5e2db2a82019609b5c08",
+      "text": "images/icon-Заданиеionmark"
+    },
+    "client.tasks.text1": {
+      "src_hash": "1728c9ab0153ff21b281886f41288cae",
+      "text": "Please select Монстр from Монстр list."
+    },
+    "client.tasks.text2": {
+      "src_hash": "1728c9ab0153ff21b281886f41288cae",
+      "text": "Please select Монстр from Монстр list."
+    },
+    "client.tasks.text3": {
+      "src_hash": "1728c9ab0153ff21b281886f41288cae",
+      "text": "Please select Монстр from Монстр list."
+    },
+    "client.http.text2": {
+      "src_hash": "01fa7f139e0a66fd80ea634c1aab2b56",
+      "text": "HTTP.get is Нетt supported"
+    },
+    "client.http.text3": {
+      "src_hash": "5c70b6b7209678f29d7c2ff3a4c72ebe",
+      "text": "HTTP.getJSON is Нетt supported"
+    },
+    "client.http.text4": {
+      "src_hash": "7c6b05f8b2ef308c238f8a1161059748",
+      "text": "HTTP.post is Нетt supported"
+    },
+    "client.http.text5": {
+      "src_hash": "ba1e4388c5ade43ebba74328a75b792e",
+      "text": "HTTP.postJSON is Нетt supported"
+    },
+    "client.neededtranslations.text3": {
+      "src_hash": "090951e6353119d15cea658bfd978777",
+      "text": "List of items that you're able to Купить"
+    },
+    "client.neededtranslations.text4": {
+      "src_hash": "7d277e244c9a49fba327e245d6e2d4f1",
+      "text": "List of items that you're able to Продать"
+    },
+    "client.imbuing.text4": {
+      "src_hash": "fd9c5ad613abbde3df710701444e0f75",
+      "text": "Click here to carry out the selected imbuement. This will consume the required astral sources and Золото."
+    },
+    "client.htmlparser.text1": {
+      "src_hash": "95827181e8ae8791a144b16360d021c4",
+      "text": "ElementНетde"
+    },
+    "client.game_questlog.text1": {
+      "src_hash": "910d89aefb3a5449196b4604a900bd5f",
+      "text": "Remove completed Заданиеs // Automatically track new Заданиеs // Automatically untrack completed Заданиеs"
+    },
+    "client.game_rewardwall.text3": {
+      "src_hash": "508256e0c0905378d1ac497e92e29878",
+      "text": "Remember! You can always collect your daily reward for free by visiting a reward shrine!\n\nYou Currently own 3x Instant Reward Access. Do you really want to use one to claim your daily reward Нетw?"
+    },
+    "client.game_rewardwall.text4": {
+      "src_hash": "42f41410f847e180084dc4ef7bdd8386",
+      "text": "Warning: Нет Sufficient Instant Reward Access"
+    },
+    "client.keybins.text4": {
+      "src_hash": "5969789bc00f068ce14d9bd7a558996d",
+      "text": "UnkНетwn chat mode"
     }
   },
   "pl": {

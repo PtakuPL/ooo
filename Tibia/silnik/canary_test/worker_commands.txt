@@ -7,3 +7,6 @@
 #FORCE:client  # Wykonano 2025-12-11 01:48:49
 # [2025-12-11 01:47:59] Wykonano: FORCE:php
 # [2025-12-11 01:48:49] Wykonano: FORCE:client
+FORCE:monsters
+FORCE:items
+FORCE:spells

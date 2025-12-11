@@ -130,7 +130,7 @@
   },
   "translation_sync": {
     "current_lang": "az",
-    "current_category": "modules.json",
+    "current_category": "monsters.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -658,15 +658,16 @@
       },
       "az": {
         "chatchannels": 8,
-        "total": 15530,
+        "total": 22871,
         "client": 236,
         "events": 5,
         "html": 1495,
         "items": 13749,
         "libs": 21,
-        "modules": 16
+        "modules": 16,
+        "monsters": 7341
       }
     },
-    "last_sync": 1765414488.5101779
+    "last_sync": 1765414497.1389158
   }
 }

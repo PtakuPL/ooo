@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-11 22:40:15 UTC  
+> **Aktualizacja:** 2025-12-11 22:40:23 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28857
 
 ---
@@ -69,7 +69,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#2** | od uruchomienia |
+| 🔄 Cykl aktualny | **#3** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **10** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -170,17 +170,17 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     2 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     3 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
-│ Kategoria: 📁 NPCLIB                                 │
+│ Kategoria: 📁 DATAROOT                               │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Pliki przeskanowane:     10 (wszystkie kategorie)          │
-│    ├─ Kategoria NPCLIB:      0 kluczy EN                    │
+│    ├─ Kategoria DATAROOT:      0 kluczy EN                    │
 │    └─ Total kluczy EN:  28857                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-11 22:40:15            │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 22:40:23            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -195,12 +195,13 @@
 | ⬜ Plików bez kluczy | **0** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **10** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#2** | continuous mode |
+| 🔄 Cykli wykonanych | **#3** | continuous mode |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `dataroot` +0 kluczy @ 22:40:21
 - ⚡ `npclib` +0 kluczy @ 22:40:13
 - ⚡ `startup` +0 kluczy @ 22:40:04
 - ⚡ `modules` +0 kluczy @ 22:39:59
@@ -208,7 +209,6 @@
 - ⚡ `events` +0 kluczy @ 22:39:51
 - ⚡ `libs` +0 kluczy @ 22:39:48
 - ⚡ `mounts` +0 kluczy @ 22:39:38
-- 🎒 `items` +0 kluczy @ 22:39:32
 
 
 ---
@@ -407,8 +407,8 @@
 | world | 8m | 2x | Progresywny backoff |
 | spells | 8m | 2x | Progresywny backoff |
 | talkactions | 8m | 2x | Progresywny backoff |
-| movements | 9m | 2x | Progresywny backoff |
-| creaturescripts | 9m | 2x | Progresywny backoff |
+| movements | 8m | 2x | Progresywny backoff |
+| creaturescripts | 8m | 2x | Progresywny backoff |
 | globalevents | 9m | 2x | Progresywny backoff |
 | items | 9m | 2x | Progresywny backoff |
 | mounts | 9m | 2x | Progresywny backoff |
@@ -418,6 +418,7 @@
 | modules | 9m | 2x | Progresywny backoff |
 | startup | 9m | 2x | Progresywny backoff |
 | npclib | 9m | 2x | Progresywny backoff |
+| dataroot | 9m | 2x | Progresywny backoff |
 
 ---
 
@@ -425,7 +426,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #2 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #3 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -468,7 +469,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 22:40:15  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 22:40:23  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

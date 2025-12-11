@@ -1,0 +1,23 @@
+{
+  "lib.concoctions.msg1": "[TR] Your concoction ",
+  "lib.exaltation_forge.msg1": "[TR] You received ",
+  "lib.exaltation_forge.msg2": "[TR] You did not receive ",
+  "lib.exaltation_forge.msg3": "[TR] You received ",
+  "lib.exaltation_forge.msg4": "[TR] You did not receive ",
+  "lib.familiar.msg1": "[TR] Your summon will disappear in less than ",
+  "lib.functions.msg1": "[TR] You were teleported because the habitats are returning to their original form.",
+  "lib.functions.msg2": "[TR] You must wait. Someone is challenging ",
+  "lib.hireling.msg1": "[TR] You do not have enough capacity.",
+  "lib.hireling.msg2": "[TR] You don't have enough room in your inbox.",
+  "lib.hireling.msg3": "[TR] You do not have enough capacity.",
+  "lib.hireling.msg4": "[TR] You don't have enough room in your inbox.",
+  "lib.player.msg1": "[TR] Item amount is wrong, please contact an administrator.",
+  "lib.player.msg2": "[TR] It is empty.",
+  "lib.player.msg3": "[TR] Reward item is wrong, please contact an administrator.",
+  "lib.players.msg1": "[TR] You have received a fame point.",
+  "lib.quests.msg1": "[TR] Your questlog has been updated.",
+  "lib.soul_war.msg1": "[TR] You have gained the ",
+  "lib.vip.msg1": "[TR] Your VIP status has expired. All VIP benefits have been removed.",
+  "lib.vip.msg2": "[TR] You have unlimited VIP status.",
+  "lib.vip.msg3": "[TR] Your VIP status is currently inactive."
+}

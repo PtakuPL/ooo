@@ -37,7 +37,7 @@
 #AUTO:ru:scripts.json:10  # Wykonano 2025-12-11 02:28:24
 #AUTO:ru:monsters.json:10  # Wykonano 2025-12-11 02:28:37
 #AUTO:ru:items.json:10  # Wykonano 2025-12-11 02:28:52
-AUTO:ru:spells.json:10
+#AUTO:ru:spells.json:10  # Wykonano 2025-12-11 02:29:00
 AUTO:ru:php.json:10
 AUTO:ru:client.json:10
 
@@ -56,3 +56,4 @@ AUTO:tr:client.json:10
 # [2025-12-11 02:28:24] Wykonano: AUTO:ru:scripts.json:10
 # [2025-12-11 02:28:37] Wykonano: AUTO:ru:monsters.json:10
 # [2025-12-11 02:28:52] Wykonano: AUTO:ru:items.json:10
+# [2025-12-11 02:29:00] Wykonano: AUTO:ru:spells.json:10

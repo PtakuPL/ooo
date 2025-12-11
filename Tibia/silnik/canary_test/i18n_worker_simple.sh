@@ -365,6 +365,13 @@ cpp_keys = count_keys("cpp.json")
 html_keys = count_keys("html.json")
 client_keys = count_keys("client.json")
 
+# KATEGORIE OTCLIENT/TESTYY (dodane 2025-12-11)
+otclient_modules_keys = count_keys("otclient_modules.json")
+otclient_data_keys = count_keys("otclient_data.json")
+otclient_src_keys = count_keys("otclient_src.json")
+otclient_mods_keys = count_keys("otclient_mods.json")
+otclient_tools_keys = count_keys("otclient_tools.json")
+
 total_keys = (game_keys + items_keys + misc_keys + monsters_keys + npc_keys + 
               player_keys + quests_keys + scripts_keys + server_keys + spells_keys + 
               system_keys + ui_keys + startup_keys + raids_keys + world_keys + 

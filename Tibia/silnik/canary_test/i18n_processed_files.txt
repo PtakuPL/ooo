@@ -434,3 +434,13 @@ html_copy/admin/pages/logs.php
 html_copy/admin/pages/mass_account.php
 html_copy/admin/pages/tools.php
 html_copy/admin/pages/visitors.php
+html_copy/system/templates/experience_stages.html.twig
+html_copy/system/templates/buttons.change_sex.html.twig
+html_copy/system/templates/admin.open_source.html.twig
+html_copy/system/templates/buttons.register_account.html.twig
+html_copy/system/templates/admin.reports.html.twig
+html_copy/system/templates/guilds.manager.html.twig
+html_copy/system/templates/buttons.change_name.html.twig
+html_copy/system/templates/success.html.twig
+html_copy/system/templates/news.html.twig
+html_copy/system/templates/account.login.html.twig

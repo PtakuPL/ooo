@@ -16,7 +16,8 @@
     "cpp": 1765421710.9794192,
     "client": 1765421717.940325,
     "sendtextmessage": 1765421731.9334419,
-    "keywordhandler": 1765421739.860388
+    "keywordhandler": 1765421739.860388,
+    "twig": 1765421748.5590813
   },
   "last_processed": {
     "npc": {
@@ -94,6 +95,10 @@
     "keywordhandler": {
       "count": 0,
       "timestamp": 1765421139.8603828
+    },
+    "twig": {
+      "count": 0,
+      "timestamp": 1765421148.5590754
     }
   },
   "migrations_done": false,
@@ -116,7 +121,8 @@
     "cpp": 2,
     "client": 2,
     "sendtextmessage": 2,
-    "keywordhandler": 2
+    "keywordhandler": 2,
+    "twig": 2
   },
   "total_processed": {
     "spells": 294,

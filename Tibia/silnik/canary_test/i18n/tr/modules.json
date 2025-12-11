@@ -1,0 +1,18 @@
+{
+  "module.daily_reward.text1": "[TR] Westwol, Marcosvf132",
+  "module.daily_reward.text2": "[TR] 12/10/2020 - 20:30",
+  "module.daily_reward.text3": "[TR] Move this system to CPP",
+  "module.daily_reward.text4": "[TR] No bonus for first day",
+  "module.daily_reward.text5": "[TR] Allow Hit Point Regeneration",
+  "module.gamestore.text1": "[TR] /modules/scripts/gamestore/init.lua",
+  "module.gamestore.text2": "[TR] home/banner_armouredarcher.png",
+  "module.gamestore.text3": "[TR] home/banner_podiumoftenacity.png",
+  "module.gamestore.text4": "[TR] Premium Time",
+  "module.gamestore.text5": "[TR] Premium Time",
+  "module.hireling_module.text1": "[TR] 30/04/2020 ",
+  "module.init.text1": "[TR] 25-07-2020 11:52AM",
+  "module.init.text2": "[TR] exp-boost-count",
+  "module.init.text3": "[TR] purchase-cooldown",
+  "module.init.text4": "[TR] This outfit looks nice. Only high-class people are able to wear it!",
+  "module.init.text5": "[TR] An outfit that was created to suit you. We are sure you'll like it."
+}

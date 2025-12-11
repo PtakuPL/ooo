@@ -79,6 +79,10 @@
     "cpp": {
       "count": 0,
       "timestamp": 1765421787.0565975
+    },
+    "client": {
+      "count": 12,
+      "timestamp": 1765421799.3725004
     }
   },
   "consecutive_zeros": {
@@ -97,11 +101,13 @@
     "npclib": 2,
     "php": 2,
     "html": 2,
-    "cpp": 2
+    "cpp": 2,
+    "client": 0
   },
   "total_processed": {
     "npc": 100,
-    "scripts": 82
+    "scripts": 82,
+    "client": 18
   },
   "translation_sync": {},
   "migrations_done": false

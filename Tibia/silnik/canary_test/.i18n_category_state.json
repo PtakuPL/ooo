@@ -24,7 +24,8 @@
     "php": 1765489831.916997,
     "html": 1765489841.7588153,
     "cpp": 1765489851.4641054,
-    "otclient_modules": 1765489864.6595995
+    "otclient_modules": 1765489864.6595995,
+    "otclient_mods": 1765489872.8825603
   },
   "last_processed": {
     "npc": {
@@ -126,6 +127,10 @@
     "otclient_modules": {
       "count": 0,
       "timestamp": 1765489264.6595943
+    },
+    "otclient_mods": {
+      "count": 0,
+      "timestamp": 1765489272.882554
     }
   },
   "consecutive_zeros": {
@@ -153,7 +158,8 @@
     "php": 2,
     "html": 2,
     "cpp": 2,
-    "otclient_modules": 2
+    "otclient_modules": 2,
+    "otclient_mods": 2
   },
   "total_processed": {},
   "migrations_done": false

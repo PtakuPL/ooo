@@ -3970,3 +3970,13 @@ data-otservbr-global/scripts/spells/monster/ghastly_dragon_wave.lua
 data-otservbr-global/scripts/spells/monster/draken_elite_soulfire.lua
 data-otservbr-global/scripts/spells/monster/devourer_summon.lua
 data-otservbr-global/scripts/spells/monster/tenebris_summon.lua
+src/game/zones/zone.cpp
+src/game/zones/zone.hpp
+src/game/functions/game_reload.cpp
+src/game/functions/game_reload.hpp
+src/game/bank/bank.cpp
+src/game/bank/bank.hpp
+src/game/game.cpp
+src/game/movement/position.cpp
+src/game/movement/teleport.hpp
+src/game/movement/teleport.cpp

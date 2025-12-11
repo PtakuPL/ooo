@@ -1,7 +1,7 @@
 # NPC: emael
 
 **Plik:** `data-otservbr-global/npc/emael.lua`
-**Data migracji:** 2025-12-11 04:11
+**Data migracji:** 2025-12-11 04:12
 **Liczba tekstów:** 1
 
 ## Klucze i18n

@@ -1,7 +1,7 @@
 # NPC: eclesius
 
 **Plik:** `data-otservbr-global/npc/eclesius.lua`
-**Data migracji:** 2025-12-11 04:11
+**Data migracji:** 2025-12-11 04:12
 **Liczba tekstów:** 6
 
 ## Klucze i18n

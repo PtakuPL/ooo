@@ -10,7 +10,8 @@
     "events": 1765419951.439693,
     "chatchannels": 1765419966.5477965,
     "modules": 1765419980.092518,
-    "startup": 1765419987.7875433
+    "startup": 1765419987.7875433,
+    "npclib": 1765419999.5666466
   },
   "last_processed": {
     "npc": {
@@ -60,6 +61,10 @@
     "startup": {
       "count": 0,
       "timestamp": 1765419387.7875354
+    },
+    "npclib": {
+      "count": 0,
+      "timestamp": 1765419399.5666409
     }
   },
   "migrations_done": false,
@@ -75,7 +80,8 @@
     "events": 2,
     "chatchannels": 2,
     "modules": 2,
-    "startup": 2
+    "startup": 2,
+    "npclib": 2
   },
   "total_processed": {
     "spells": 147

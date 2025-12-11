@@ -41,5 +41,21 @@
   "scripts.manage_tutor.msg_1": "You have been promoted to a tutor by ",
   "scripts.manage_tutor.msg_2": "You have been demoted to a normal player by ",
   "scripts.push_town.msg_1": "You have been teleported to your temple.",
-  "scripts.tutor_position.msg_1": "Your current position is: \\z"
+  "scripts.tutor_position.msg_1": "Your current position is: \\z",
+  "scripts.actions_portal_minis_grimvale.msg_1": "You have to wait ",
+  "scripts.actions_portal_minis_ancient_feud.msg_1": "All the players need to be level ",
+  "scripts.actions_portal_minis_ancient_feud.msg_2": "You have to wait ",
+  "scripts.action_tortoise_egg_nargor.msg_1": "You found ",
+  "scripts.actions_last_fight.msg_1": "You need atleast ",
+  "scripts.creatureevent_commander_kills.msg_1": "You lost the skirmish.",
+  "scripts.action_drume.msg_1": "Your time is over.",
+  "scripts.moveevent_drume_entrance.msg_1": "You've been into the skirmish in the last 10 hours.",
+  "scripts.2_ambassadors_treason.msg_1": "Documents were burnt here recently. Only the part of one scroll still lies in front of the chimney but it's too sooted to read.",
+  "scripts.2_ambassadors_treason.msg_2": "You already investigated this.",
+  "scripts.2_ambassadors_treason.msg_3": "Paper scraps lie scattered on the floor. It takes some time to put them back together. But it's only a badly written poem.",
+  "scripts.2_ambassadors_treason.msg_4": "You already investigated this.",
+  "scripts.2_ambassadors_treason.msg_5": "You examine the scrolls carefully. Those are orders from Rathleton for the Ambassador. No sign of treason here.",
+  "scripts.2_ambassadors_treason.msg_6": "You already investigated this.",
+  "scripts.2_ambassadors_treason.msg_7": "You find nothing in the Ambassador's house. If he's in fact a traitor he got rid of any evidence that could incriminate him.",
+  "scripts.6_mind_travel.msg_1": "You feel shaky and dizzy, the world turns dark around you. Then your sight clears again - and you are somewhere else."
 }

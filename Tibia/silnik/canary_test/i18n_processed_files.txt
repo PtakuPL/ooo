@@ -18,3 +18,11 @@ data-otservbr-global/npc/sigurd.lua
 data-otservbr-global/npc/sundara.lua
 data-otservbr-global/npc/tandros.lua
 data-otservbr-global/npc/the_lootmonger.lua
+data-otservbr-global/scripts/quests/grimvale/actions_portal_minis_grimvale.lua
+data-otservbr-global/scripts/quests/grimvale/actions_portal_minis_ancient_feud.lua
+data-otservbr-global/scripts/quests/the_shattered_isles_quest/action_tortoise_egg_nargor.lua
+data-otservbr-global/scripts/quests/in_service_of_yalahar/actions_last_fight.lua
+data-otservbr-global/scripts/quests/the_order_of_lion/creatureevent-commander_kills.lua
+data-otservbr-global/scripts/quests/the_order_of_lion/action-drume.lua
+data-otservbr-global/scripts/quests/the_order_of_lion/moveevent-drume_entrance.lua
+data-otservbr-global/scripts/quests/kilmaresh_quest/1-fafnars-wrath/2-ambassadors-treason.lua

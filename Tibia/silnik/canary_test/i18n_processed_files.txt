@@ -4330,3 +4330,13 @@ html_copy/system/libs/pot/OTS_ItemsList.php
 html_copy/system/libs/pot/IOTS_GuildAction.php
 html_copy/system/libs/pot/OTS_PlayerBan.php
 html_copy/system/libs/pot/OTS_IPBan.php
+html_copy/system/libs/pot/OTS_Container.php
+html_copy/system/libs/pot/OTS_FileLoader.php
+html_copy/system/libs/pot/E_OTS_FileLoaderError.php
+html_copy/system/libs/pot/OTS_XTEA.php
+html_copy/system/libs/pot/OTS_MonstersList.php
+html_copy/system/libs/pot/E_OTS_OutOfBuffer.php
+html_copy/system/libs/pot/OTS_Row_DAO.php
+html_copy/system/libs/pot/OTS_DB_PDOQuery.php
+html_copy/system/libs/pot/OTS_AccountBan.php
+html_copy/system/libs/pot/IOTS_DataDisplay.php

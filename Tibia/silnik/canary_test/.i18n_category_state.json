@@ -18,7 +18,7 @@
     "sendtextmessage": 1765423724.014326,
     "keywordhandler": 1765423731.132717,
     "twig": 1765423738.202282,
-    "php": 1765420138.1363013
+    "php": 1765423745.8622632
   },
   "last_processed": {
     "npc": {
@@ -75,7 +75,7 @@
     },
     "php": {
       "count": 0,
-      "timestamp": 1765419538.136293
+      "timestamp": 1765420145.8622577
     },
     "html": {
       "count": 0,
@@ -117,7 +117,7 @@
     "modules": 4,
     "startup": 4,
     "npclib": 4,
-    "php": 2,
+    "php": 4,
     "html": 4,
     "cpp": 2,
     "client": 4,

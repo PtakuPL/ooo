@@ -7,7 +7,8 @@
     "world": 1765469835.0284467,
     "spells": 1765469845.4166665,
     "talkactions": 1765469883.8743591,
-    "movements": 1765469893.295219
+    "movements": 1765469893.295219,
+    "creaturescripts": 1765469902.0029929
   },
   "last_processed": {
     "npc": {
@@ -49,6 +50,10 @@
     "movements": {
       "count": 0,
       "timestamp": 1765469293.295211
+    },
+    "creaturescripts": {
+      "count": 0,
+      "timestamp": 1765469302.0029852
     }
   },
   "consecutive_zeros": {
@@ -61,7 +66,8 @@
     "world": 2,
     "spells": 2,
     "talkactions": 2,
-    "movements": 2
+    "movements": 2,
+    "creaturescripts": 2
   },
   "total_processed": {
     "npc": 40,

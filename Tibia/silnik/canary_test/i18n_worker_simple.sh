@@ -2240,8 +2240,8 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
         log "   🔑 $key"
     done < <(grep -oP 'sendTextMessage\s*\([^,]+,\s*"\K[^"]+' "$file" 2>/dev/null | head -20)
     
-    # Oznacz jako przetworzony
-    echo "$file" >> "$PROCESSED_FILE"
+    # Oznacz jako przetworzony (do obu plików!)
+    mark_file_completed "$file" "scripts" "$count"
     
     log "${GREEN}✅ Scripts: $count kluczy z $base${NC}"
     return 0
@@ -2290,7 +2290,7 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
                 log "   👹 monster.$safe.name = $name"
             fi
             
-            echo "$file" >> "$PROCESSED_FILE"
+            mark_file_completed "$file" "monsters" "1"
             [ "$count" -ge "$batch" ] && break
         done < <(find "$dir" -name "*.lua" -o -name "*.xml" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
@@ -2338,7 +2338,7 @@ if '''$desc''':
 with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
 " 2>/dev/null
             
-            echo "$file" >> "$PROCESSED_FILE"
+            mark_file_completed "$file" "spells" "1"
             count=$((count + 1))
             log "   ✨ spell.$safe.name = $name"
             

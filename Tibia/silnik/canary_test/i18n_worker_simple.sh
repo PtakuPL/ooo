@@ -538,8 +538,7 @@ for _lang in auto_langs:
     tm_count = len(tm_data.get(_lang, {})) if isinstance(tm_data.get(_lang, {}), dict) else 0
     status_auto = "✅ TM" if tm_count > 0 else "⚠️ placeholdery (brak TM)"
     auto_rows.append(f"| {_lang.upper()} | {tm_count} | {status_auto} |")
-auto_table = "
-".join(auto_rows)
+auto_table = chr(10).join(auto_rows)
 
 # Status workera (ostatni tryb z i18n_global_stats.json)
 try:

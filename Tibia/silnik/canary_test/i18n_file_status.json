@@ -40,6 +40,12 @@
           "farewell_keys": 0,
           "voices_keys": 0
         },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [],
+          "keys_per_lang": 2,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
         "7_validation": {
           "status": "completed",
           "errors": [],
@@ -107,7 +113,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:13:26.391028"
+      "completed_at": "2025-12-11T19:13:53.989727"
     },
     "data-otservbr-global/npc/rock_in_a_hard_place.lua": {
       "stages": {
@@ -222,7 +228,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:13:29.396587"
+      "completed_at": "2025-12-11T19:13:56.548128"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -333,7 +339,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:13:30.061646"
+      "completed_at": "2025-12-11T19:14:02.045621"
     },
     "data-otservbr-global/npc/romir.lua": {
       "stages": {
@@ -444,7 +450,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:13:31.032889"
+      "completed_at": "2025-12-11T19:13:57.909113"
     },
     "data-otservbr-global/npc/bertram.lua": {
       "stages": {
@@ -452,19 +458,6 @@
           "status": "completed",
           "hash": "91d2724d7fff519b135b0b52590207ee",
           "type": "npc"
-        },
-        "2_analysis": {
-          "status": "completed",
-          "safe_name": "bertram",
-          "StdModule_say": 0,
-          "npcHandler_say": 1,
-          "sendTextMessage": 0,
-          "addGreetKeyword": 0,
-          "addFarewellKeyword": 0,
-          "total": 1,
-          "already_i18n": 0,
-          "npcSayLib": 0,
-          "needs_migration": true
         },
         "3_documentation": {
           "status": "completed",
@@ -476,92 +469,9 @@
           "transformed": 0,
           "stdmod_transformed": 0,
           "npcsay_transformed": 0
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0,
-          "stdmod_keys": 0,
-          "npcsay_keys": 0,
-          "greet_keys": 0,
-          "farewell_keys": 0,
-          "voices_keys": 0
-        },
-        "6_placeholder": {
-          "status": "completed",
-          "languages": [],
-          "keys_per_lang": 1,
-          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
-        },
-        "7_validation": {
-          "status": "completed",
-          "errors": [],
-          "warnings": [
-            "Brak i18nKey w pliku Lua"
-          ],
-          "valid_langs": [
-            "zh_TW",
-            "fa",
-            "sv",
-            "hy",
-            "hu",
-            "hi",
-            "ar",
-            "sw",
-            "bs",
-            "ro",
-            "id",
-            "az",
-            "te",
-            "et",
-            "it",
-            "fr",
-            "cs",
-            "tl",
-            "sk",
-            "sr",
-            "en",
-            "ka",
-            "da",
-            "es",
-            "no",
-            "he",
-            "sq",
-            "uz",
-            "sl",
-            "fi",
-            "kk",
-            "ru",
-            "bn",
-            "th",
-            "ms",
-            "lv",
-            "tr",
-            "uk",
-            "pl",
-            "zh",
-            "el",
-            "vi",
-            "de",
-            "ml",
-            "bg",
-            "pt",
-            "ta",
-            "nl",
-            "ko",
-            "lt",
-            "ja",
-            "mk",
-            "hr"
-          ],
-          "keys_in_lua": 0,
-          "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
         }
       },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T19:13:31.616460"
+      "overall_status": "in_progress"
     },
     "data-otservbr-global/npc/seymour.lua": {
       "stages": {
@@ -676,7 +586,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:13:33.072531"
+      "completed_at": "2025-12-11T19:13:59.818749"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -902,7 +812,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:13:34.929615"
+      "completed_at": "2025-12-11T19:14:01.290226"
     },
     "data-otservbr-global/npc/cranky_lizard_crone.lua": {
       "stages": {
@@ -1132,7 +1042,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T19:13:37.226783"
+      "completed_at": "2025-12-11T19:14:03.343528"
     },
     "data-otservbr-global/npc/sundara.lua": {
       "stages": {
@@ -1837,13 +1747,243 @@
           ],
           "keys_in_lua": 6,
           "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
         }
       },
-      "overall_status": "in_progress"
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T19:13:50.811706"
+    },
+    "data-otservbr-global/npc/nelly.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "349a1663b4284b51172094e4bfafe498",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "nelly",
+          "StdModule_say": 0,
+          "npcHandler_say": 1,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 1,
+          "already_i18n": 2,
+          "npcSayLib": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/nelly.md",
+          "keys_documented": 0
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 0,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0,
+          "voices_keys": 0
+        },
+        "6_placeholder": {
+          "status": "completed",
+          "languages": [],
+          "keys_per_lang": 2,
+          "note": "Placeholdery - do przet\u0142umaczenia w trybie --translate"
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 2,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T19:13:52.593084"
+    },
+    "data-otservbr-global/npc/alaistar.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "hash": "97136ab46cb664dc9d9fe703bbb55539",
+          "type": "npc"
+        },
+        "2_analysis": {
+          "status": "completed",
+          "safe_name": "alaistar",
+          "StdModule_say": 0,
+          "npcHandler_say": 1,
+          "sendTextMessage": 0,
+          "addGreetKeyword": 0,
+          "addFarewellKeyword": 0,
+          "total": 1,
+          "already_i18n": 0,
+          "npcSayLib": 0,
+          "needs_migration": true
+        },
+        "3_documentation": {
+          "status": "completed",
+          "doc_file": "docs/i18n/npc/alaistar.md",
+          "keys_documented": 0
+        },
+        "4_transformation": {
+          "status": "completed",
+          "transformed": 0,
+          "stdmod_transformed": 0,
+          "npcsay_transformed": 0
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0,
+          "stdmod_keys": 0,
+          "npcsay_keys": 0,
+          "greet_keys": 0,
+          "farewell_keys": 0,
+          "voices_keys": 0
+        },
+        "7_validation": {
+          "status": "completed",
+          "errors": [],
+          "warnings": [
+            "Brak i18nKey w pliku Lua"
+          ],
+          "valid_langs": [
+            "zh_TW",
+            "fa",
+            "sv",
+            "hy",
+            "hu",
+            "hi",
+            "ar",
+            "sw",
+            "bs",
+            "ro",
+            "id",
+            "az",
+            "te",
+            "et",
+            "it",
+            "fr",
+            "cs",
+            "tl",
+            "sk",
+            "sr",
+            "en",
+            "ka",
+            "da",
+            "es",
+            "no",
+            "he",
+            "sq",
+            "uz",
+            "sl",
+            "fi",
+            "kk",
+            "ru",
+            "bn",
+            "th",
+            "ms",
+            "lv",
+            "tr",
+            "uk",
+            "pl",
+            "zh",
+            "el",
+            "vi",
+            "de",
+            "ml",
+            "bg",
+            "pt",
+            "ta",
+            "nl",
+            "ko",
+            "lt",
+            "ja",
+            "mk",
+            "hr"
+          ],
+          "keys_in_lua": 0,
+          "validation_passed": true
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-11T19:13:59.331016"
     }
   },
   "global_stats": {
-    "files_completed": 16,
+    "files_completed": 18,
     "total_keys": 0
   }
 }

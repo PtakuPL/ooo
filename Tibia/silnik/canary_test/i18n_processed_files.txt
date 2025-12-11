@@ -189,3 +189,13 @@ data/npclib/npc_system/modules.lua
 data/npclib/npc_system/npc_handler.lua
 data/npclib/npc.lua
 data/npclib/load.lua
+html_copy/whereami.php
+html_copy/routes/api.php
+html_copy/routes/admin/home.php
+html_copy/routes/admin/login.php
+html_copy/routes/pages/payment.php
+html_copy/routes/pages/guilds.php
+html_copy/routes/pages/account.php
+html_copy/routes/pages/outfit.php
+html_copy/routes/api/v1/check_charactername.php
+html_copy/routes/api/v1/discord.php

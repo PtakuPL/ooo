@@ -34,7 +34,8 @@
     "otclient_tools": 1765471863.6724072,
     "errors": 1765471870.941524,
     "npc": 1765488345.2443192,
-    "scripts": 1765488515.927548
+    "scripts": 1765488515.927548,
+    "php": 1765488740.3592696
   },
   "last_processed": {
     "npc": {
@@ -122,8 +123,8 @@
       "timestamp": 1765488121.692956
     },
     "php": {
-      "count": 10,
-      "timestamp": 1765469406.3619926
+      "count": 0,
+      "timestamp": 1765488140.3592615
     },
     "html": {
       "count": 0,
@@ -204,7 +205,7 @@
     "startup": 4,
     "npclib": 4,
     "dataroot": 4,
-    "php": 0,
+    "php": 2,
     "html": 2,
     "cpp": 2,
     "client": 2,

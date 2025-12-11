@@ -58,3 +58,13 @@ data-otservbr-global/scripts/quests/the_rookie_guard/mission09_rock_troll.lua
 data-otservbr-global/scripts/quests/the_rookie_guard/mission10_tomb_raiding.lua
 data-otservbr-global/scripts/quests/the_rookie_guard/mission12_into_fortress.lua
 data-otservbr-global/scripts/quests/the_rookie_guard/mission06_run_like_wolf.lua
+data-otservbr-global/monster/constructs/stone_devourer.lua
+data-otservbr-global/monster/constructs/worker_golem.lua
+data-otservbr-global/monster/constructs/war_golem.lua
+data-otservbr-global/monster/constructs/glooth_golem.lua
+data-otservbr-global/monster/constructs/metal_gargoyle.lua
+data-otservbr-global/monster/constructs/orewalker.lua
+data-otservbr-global/monster/constructs/diamond_servant.lua
+data-otservbr-global/monster/constructs/shrieking_cry-stal.lua
+data-otservbr-global/monster/constructs/enraged_crystal_golem.lua
+data-otservbr-global/monster/constructs/biting_book.lua

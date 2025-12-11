@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 200, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 01:59:11 UTC  
+> **Aktualizacja:** 2025-12-11 01:59:13 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -71,7 +71,7 @@
 | 🇵🇱 Polski | 📊 30456 kluczy | 30456 | [EN] prefix |
 | 🇪🇸 Hiszpański | 📊 30456 kluczy | 30456 | [EN] prefix |
 | 🇫🇷 Francuski | 📊 30456 kluczy | 30456 | [EN] prefix |
-| 🌐 Pozostałe (0/53) | 🔄 | 907601 | Aktualnie: MK |
+| 🌐 Pozostałe (0/53) | 🔄 | 907651 | Aktualnie: SQ |
 
 ---
 
@@ -83,15 +83,15 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🌍 TRANSLATION_SYNC (Etap 1)              │
-│ Kategoria: 🌍 MK/spells.json                         │
+│ Kategoria: 🌍 SQ/spells.json                         │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: MK/spells.json                                 │
+│ 📊 Ostatnia aktywność: SQ/spells.json                                 │
 │ [█████████████████████████████████████████████████░] │
 │ 28856/28867 kluczy (100%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 31537 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 01:59:11                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 01:59:13                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -113,7 +113,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🌍 `MK/spells.json` +28856 kluczy @ 01:59:11
+- 🌍 `SQ/spells.json` +28856 kluczy @ 01:59:13
 - ⚡ `cpp` +0 kluczy @ 01:59:03
 - ⚡ `spells` +100 kluczy @ 01:55:35
 - 🎒 `items` +0 kluczy @ 01:55:12
@@ -280,7 +280,7 @@
 
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
-| items | 13749 | 11689 | 6 | ⏭️ Skip 116m |
+| items | 13749 | 11689 | 6 | ⏭️ Skip 115m |
 | monsters | 7341 | 9549 | 6 | ⏭️ Skip 115m |
 | npc | 5334 | 2 | 0 | ✅ Active |
 | html | 1495 | 3245 | 4 | ⏭️ Skip 14m |
@@ -314,7 +314,7 @@
 | monsters | 115m | 6x | Progresywny backoff |
 | raids | 9m | 4x | Progresywny backoff |
 | world | 9m | 4x | Progresywny backoff |
-| items | 116m | 6x | Progresywny backoff |
+| items | 115m | 6x | Progresywny backoff |
 | libs | 9m | 4x | Progresywny backoff |
 | events | 9m | 4x | Progresywny backoff |
 | chatchannels | 10m | 4x | Progresywny backoff |
@@ -355,7 +355,7 @@
 | SK | 30,456 | ⏳ |
 | HU | 30,456 | ⏳ |
 
-> **Aktualnie:** MK / spells.json  
+> **Aktualnie:** SQ / spells.json  
 > **Ukończone języki:** 0/53  
 > **Prefix:** `[EN] ` (klucze do przetłumaczenia)
 
@@ -378,7 +378,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 01:59:11  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 01:59:13  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

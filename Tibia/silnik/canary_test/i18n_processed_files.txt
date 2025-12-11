@@ -269,3 +269,8 @@ testyy/modules/game_healthinfo/healthinfo.otui
 testyy/modules/client_debug_info/debug_info.otui
 testyy/modules/client_debug_info/debug_info.lua
 testyy/modules/client_serverlist/addserver.otui
+KWH:data-otservbr-global/npc/lily.lua
+KWH:data-otservbr-global/npc/a_bearded_woman.lua
+KWH:data-otservbr-global/npc/captain_dreadnought.lua
+KWH:data-otservbr-global/npc/lardoc_bashsmite.lua
+KWH:data-otservbr-global/npc/emma.lua

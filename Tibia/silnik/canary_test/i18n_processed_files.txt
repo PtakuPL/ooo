@@ -474,3 +474,13 @@ data/libs/systems/hazard.lua
 data/libs/systems/zones.lua
 data/libs/systems/familiar.lua
 data/libs/systems/vip.lua
+html_copy/admin/pages/phpinfo.php
+html_copy/admin/includes/settings_menus.php
+html_copy/admin/includes/functions.php
+html_copy/admin/includes/debugbar.php
+html_copy/admin/tools/reload_data.php
+html_copy/admin/tools/settings_save.php
+html_copy/admin/tools/status.php
+html_copy/admin/tools/upload_image.php
+html_copy/admin/tools/phpinfo.php
+html_copy/admin/template/menus.php

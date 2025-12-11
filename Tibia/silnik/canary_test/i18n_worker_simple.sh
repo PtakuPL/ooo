@@ -4561,6 +4561,14 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                 MODE_EXTRA=$(echo "$MODE_RESULT" | cut -d: -f4)
             fi
             
+            # --translations-only: wymusza TRANSLATION_SYNC zamiast MIGRATION
+            if [ "$TRANSLATIONS_ONLY" = "true" ] && [ "$MODE_TYPE" = "MIGRATION" ]; then
+                echo "🌐 --translations-only: pomijam MIGRATION, przechodzę do TRANSLATION_SYNC"
+                MODE_TYPE="TRANSLATION_SYNC"
+                MODE_CAT=""
+                MODE_COUNT="0"
+            fi
+            
             echo "📋 Dispatcher: $MODE_TYPE | Kategoria: $MODE_CAT | Ilość: ${MODE_COUNT:-0}"
             echo ""
             

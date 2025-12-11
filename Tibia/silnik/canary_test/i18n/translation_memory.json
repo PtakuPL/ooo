@@ -63391,6 +63391,1938 @@
     "item.49163.name": {
       "src_hash": "3b21a4eb7e5f12dc04034f370440348c",
       "text": "omiNãous soul core"
+    },
+    "monster.constructs.damaged_worker_golem.voice_7": {
+      "src_hash": "ffc43f896244d5d80e275df78e7e23f4",
+      "text": "Self-diagNãosis failed."
+    },
+    "monster.constructs.goggle_cake.voice_2": {
+      "src_hash": "7daff52e16b5f344ead8e71ec06fe241",
+      "text": "Hm? Where ... where are you Nãow?"
+    },
+    "monster.amphibics.infernal_frog.voice_3": {
+      "src_hash": "d1b2c4f05882e3e46872752f28a46703",
+      "text": "Não Kisses for you!"
+    },
+    "monster.amphibics.infernal_frog.yell_6": {
+      "src_hash": "d1b2c4f05882e3e46872752f28a46703",
+      "text": "Não Kisses for you!"
+    },
+    "monster.slimes.devourer.voice_3": {
+      "src_hash": "5c249eec8364f292440fa355da0228c5",
+      "text": "*omnNãommm Nãomm*"
+    },
+    "monster.humanoids.dwarf_henchman.voice_1": {
+      "src_hash": "9bc17d7e756fffd331d23e169737c67c",
+      "text": "This place is for our eSim only!"
+    },
+    "monster.humanoids.dwarf_henchman.voice_3": {
+      "src_hash": "f611ae8d076d0b49bfe9deb1ddb5cc9f",
+      "text": "I will die aNãother day!"
+    },
+    "monster.humanoids.dwarf_henchman.yell_5": {
+      "src_hash": "9bc17d7e756fffd331d23e169737c67c",
+      "text": "This place is for our eSim only!"
+    },
+    "monster.humanoids.dwarf_henchman.yell_7": {
+      "src_hash": "f611ae8d076d0b49bfe9deb1ddb5cc9f",
+      "text": "I will die aNãother day!"
+    },
+    "monster.humanoids.crazed_winter_vanguard.voice_1": {
+      "src_hash": "4663eccca7f3da2ef4995c3583f67c50",
+      "text": "Nãobody will ever escape from this place, muwahaha!!!"
+    },
+    "monster.humanoids.crazed_winter_vanguard.yell_4": {
+      "src_hash": "4663eccca7f3da2ef4995c3583f67c50",
+      "text": "Nãobody will ever escape from this place, muwahaha!!!"
+    },
+    "monster.humanoids.goblin.voice_4": {
+      "src_hash": "67a01fb31a7cc02e20fba75955223ea6",
+      "text": "Ajuda! Goblinkiller!"
+    },
+    "monster.humanoids.goblin.yell_9": {
+      "src_hash": "67a01fb31a7cc02e20fba75955223ea6",
+      "text": "Ajuda! Goblinkiller!"
+    },
+    "monster.humanoids.elf.voice_2": {
+      "src_hash": "85fa1c19cb10e431672acd431d7e3547",
+      "text": "You are Nãot Bem-vindo here."
+    },
+    "monster.quests_cults_of_tibia.cult_enforcer.voice_1": {
+      "src_hash": "72122e3d49c8246cc377c1023f5a4438",
+      "text": "Não one will stop us!"
+    },
+    "monster.quests_cults_of_tibia.cult_enforcer.yell_2": {
+      "src_hash": "72122e3d49c8246cc377c1023f5a4438",
+      "text": "Não one will stop us!"
+    },
+    "monster.quests_cults_of_tibia.goldhanded_cultist.voice_2": {
+      "src_hash": "0019d4ad5bfedc37ffd527cc36910b5d",
+      "text": "You can't ever be rich eNãough!"
+    },
+    "monster.quests_cults_of_tibia.goldhanded_cultist.yell_4": {
+      "src_hash": "0019d4ad5bfedc37ffd527cc36910b5d",
+      "text": "You can't ever be rich eNãough!"
+    },
+    "monster.quests_cults_of_tibia.barkless_devotee.voice_2": {
+      "src_hash": "58c716a0bd9033454d71486b57b74505",
+      "text": "You are Nãot loved by this world!"
+    },
+    "monster.quests_cults_of_tibia.barkless_devotee.yell_5": {
+      "src_hash": "58c716a0bd9033454d71486b57b74505",
+      "text": "You are Nãot loved by this world!"
+    },
+    "monster.quests_cults_of_tibia.misguided_bully.voice_3": {
+      "src_hash": "70067eb8eded67afe4eb29c0d50c850d",
+      "text": "Fortune brought you here, Nãow let us lead you."
+    },
+    "monster.quests_cults_of_tibia.barkless_fanatic.voice_1": {
+      "src_hash": "ac678b85cb5262fa5af01f397cdb1e01",
+      "text": "DO NãoT LEAVE THIS WORLD AS A WIMP!"
+    },
+    "monster.quests_cults_of_tibia.barkless_fanatic.yell_4": {
+      "src_hash": "ac678b85cb5262fa5af01f397cdb1e01",
+      "text": "DO NãoT LEAVE THIS WORLD AS A WIMP!"
+    },
+    "monster.quests_cults_of_tibia.misguided_thief.voice_3": {
+      "src_hash": "6f0db073bac5b475a7715e6a674dee3c",
+      "text": "There is Não escape Nãow, friend."
+    },
+    "monster.quests_cults_of_tibia.orc_cult_inquisitor.voice_1": {
+      "src_hash": "54ccf9e9f706e75f488e9538ee5b3d3b",
+      "text": "You uNãorcish scum will die!"
+    },
+    "monster.quests_cults_of_tibia.orc_cult_inquisitor.yell_2": {
+      "src_hash": "54ccf9e9f706e75f488e9538ee5b3d3b",
+      "text": "You uNãorcish scum will die!"
+    },
+    "monster.quests_cults_of_tibia_bosses.the_souldespoiler.voice_2": {
+      "src_hash": "ce0663dd585243ce98dc3d9b8828eb04",
+      "text": "The souls shall Nãot escape me! "
+    },
+    "monster.quests_cults_of_tibia_bosses_summons.freed_soul.voice_4": {
+      "src_hash": "c25257bb566ed813fab252dc7ada76be",
+      "text": "Nãow the despoiler will pay!"
+    },
+    "monster.quests_cults_of_tibia_bosses_summons.freed_soul.yell_6": {
+      "src_hash": "c25257bb566ed813fab252dc7ada76be",
+      "text": "Nãow the despoiler will pay!"
+    },
+    "monster.quests_killing_in_the_name_of.tormentor.voice_3": {
+      "src_hash": "d09a4b1a7b309d1308ce2b95a8a0886f",
+      "text": "Close your eSim... I have something for you."
+    },
+    "monster.quests_svargrond_arena_warlord.fallen_mooh'tah_master_ghar.voice_2": {
+      "src_hash": "0b6beb42640b91912de57ae9ec9b1e27",
+      "text": "You are Não match for a master of the Mooh'Tha!"
+    },
+    "monster.quests_svargrond_arena_warlord.fallen_mooh'tah_master_ghar.yell_5": {
+      "src_hash": "0b6beb42640b91912de57ae9ec9b1e27",
+      "text": "You are Não match for a master of the Mooh'Tha!"
+    },
+    "monster.quests_svargrond_arena_warlord.the_obliverator.voice_1": {
+      "src_hash": "4bd33975266f6a36d1ce8a9b738a9631",
+      "text": "Não ONE WILL BEAT ME"
+    },
+    "monster.quests_svargrond_arena_warlord.gnorre_chyllson.voice_1": {
+      "src_hash": "039b8c76247c81f95db78f8bb5573804",
+      "text": "I am like the merciless Nãorthwind."
+    },
+    "monster.quests_svargrond_arena_warlord.gnorre_chyllson.voice_2": {
+      "src_hash": "f58e406c4ab13058a518578d2653cd19",
+      "text": "SNãow will be your death shroud."
+    },
+    "monster.quests_svargrond_arena_warlord.svoren_the_mad.voice_1": {
+      "src_hash": "3f2029193e2d2d26fee4d8182897754f",
+      "text": "Não mommy Não, Leave me alone!"
+    },
+    "monster.quests_svargrond_arena_warlord.svoren_the_mad.voice_2": {
+      "src_hash": "c0b368b29e1103b8d45dae44f5955fde",
+      "text": "Nãot that tower again!"
+    },
+    "monster.quests_svargrond_arena_warlord.svoren_the_mad.yell_7": {
+      "src_hash": "3f2029193e2d2d26fee4d8182897754f",
+      "text": "Não mommy Não, Leave me alone!"
+    },
+    "monster.quests_svargrond_arena_warlord.svoren_the_mad.yell_8": {
+      "src_hash": "c0b368b29e1103b8d45dae44f5955fde",
+      "text": "Nãot that tower again!"
+    },
+    "monster.quests_svargrond_arena_greenhorn.rocky.voice_1": {
+      "src_hash": "de6a6120c2e0e8eebd98361c76010cb3",
+      "text": "ANãother little gladiator!"
+    },
+    "monster.quests_svargrond_arena_greenhorn.rocky.voice_4": {
+      "src_hash": "fb747001ba3775d3606874f531a070cd",
+      "text": "You'll be history soon eNãough."
+    },
+    "monster.quests_svargrond_arena_greenhorn.rocky.yell_5": {
+      "src_hash": "de6a6120c2e0e8eebd98361c76010cb3",
+      "text": "ANãother little gladiator!"
+    },
+    "monster.quests_svargrond_arena_scrapper.slim.voice_2": {
+      "src_hash": "2c1f70d13ab699b53a089693f135957e",
+      "text": "KNãooorrrrr!"
+    },
+    "monster.quests_svargrond_arena_scrapper.slim.yell_4": {
+      "src_hash": "2c1f70d13ab699b53a089693f135957e",
+      "text": "KNãooorrrrr!"
+    },
+    "monster.quests_svargrond_arena_scrapper.avalanche.voice_3": {
+      "src_hash": "4bd4989f8e59c9e54d8bd030005763cf",
+      "text": "You're Nãot cool."
+    },
+    "monster.quests_wrath_of_the_emperor.lizard_abomination.voice_1": {
+      "src_hash": "7ced7205a21f4f6d63eb48ff46e296ac",
+      "text": "NãoOOO! NãoW YOU HERETICS WILL FACE MY GODLY WRATH!"
+    },
+    "monster.quests_wrath_of_the_emperor.lizard_abomination.yell_4": {
+      "src_hash": "7ced7205a21f4f6d63eb48ff46e296ac",
+      "text": "NãoOOO! NãoW YOU HERETICS WILL FACE MY GODLY WRATH!"
+    },
+    "monster.quests_in_service_of_yalahar.yalahari.voice_1": {
+      "src_hash": "abf7c5581c993aa8b962d663577749d2",
+      "text": "Bem-vindo to Yalahar, outsider."
+    },
+    "monster.quests_in_service_of_yalahar.yalahari.voice_4": {
+      "src_hash": "40d4784279bb3c63c9b5cc4bdcd2420f",
+      "text": "Our wisdom and kNãowledge are unequalled in this world."
+    },
+    "monster.quests_in_service_of_yalahar.yalahari.voice_5": {
+      "src_hash": "ed2967a32853d5b6e66fce5ca82eadaa",
+      "text": "That kNãowledge would overburden your fragile mind."
+    },
+    "monster.quests_isle_of_evil.mephiles.voice_3": {
+      "src_hash": "4f020a44fa7351c6910fdbaef99116f8",
+      "text": "Sim, slay me for the loot I might have. Give in to your greed."
+    },
+    "monster.quests_isle_of_evil.dirtbeard.voice_1": {
+      "src_hash": "f3262b345ab7f70bcc8342da8f16dce6",
+      "text": "You are Não match for the scourge of the seas!"
+    },
+    "monster.quests_isle_of_evil.dirtbeard.yell_4": {
+      "src_hash": "f3262b345ab7f70bcc8342da8f16dce6",
+      "text": "You are Não match for the scourge of the seas!"
+    },
+    "monster.quests_isle_of_evil.boogey.voice_2": {
+      "src_hash": "f025888e7664bb9e1a24d322ce1e3eb4",
+      "text": "Too bad you did Nãot eat your lunch, Nãow I have to punish you!"
+    },
+    "monster.quests_isle_of_evil.boogey.yell_7": {
+      "src_hash": "f025888e7664bb9e1a24d322ce1e3eb4",
+      "text": "Too bad you did Nãot eat your lunch, Nãow I have to punish you!"
+    },
+    "monster.quests_isle_of_evil.monstor.voice_1": {
+      "src_hash": "49d508fa9bff9a0193f51da27f1695ae",
+      "text": "Não ARMY ME STOPPING! GRARR!"
+    },
+    "monster.quests_isle_of_evil.monstor.yell_4": {
+      "src_hash": "49d508fa9bff9a0193f51da27f1695ae",
+      "text": "Não ARMY ME STOPPING! GRARR!"
+    },
+    "monster.quests_isle_of_evil.evil_mastermind.voice_4": {
+      "src_hash": "085c351414a695e1c1f50f8d4535fb2a",
+      "text": "Beware! My evil moNãolog is coming!"
+    },
+    "monster.quests_isle_of_evil.evil_mastermind.yell_8": {
+      "src_hash": "085c351414a695e1c1f50f8d4535fb2a",
+      "text": "Beware! My evil moNãolog is coming!"
+    },
+    "monster.quests_kilmaresh.urmahlullu_the_weakened.voice_2": {
+      "src_hash": "50b001e345913a7684ba5eb51fbfc713",
+      "text": "Nãow you have to die!"
+    },
+    "monster.quests_kilmaresh.urmahlullu_the_weakened.yell_4": {
+      "src_hash": "50b001e345913a7684ba5eb51fbfc713",
+      "text": "Nãow you have to die!"
+    },
+    "monster.quests_kilmaresh.urmahlullu_the_tamed.voice_1": {
+      "src_hash": "c699c1908e19724882560936729a3fa5",
+      "text": "Nãot worth to be here!"
+    },
+    "monster.quests_kilmaresh.urmahlullu_the_tamed.yell_2": {
+      "src_hash": "c699c1908e19724882560936729a3fa5",
+      "text": "Nãot worth to be here!"
+    },
+    "monster.quests_ferumbras_ascension.damned_soul.voice_3": {
+      "src_hash": "2045a7fa6b278c3f3a2e10292c316cec",
+      "text": "Ajuda meee!"
+    },
+    "monster.quests_ferumbras_ascension.damned_soul.yell_6": {
+      "src_hash": "2045a7fa6b278c3f3a2e10292c316cec",
+      "text": "Ajuda meee!"
+    },
+    "monster.quests_ferumbras_ascension_bosses.ferumbras_mortal_shell.voice_3": {
+      "src_hash": "a9e093b92698693dde1d73babecd807a",
+      "text": "I' STILL POWERFUL ENãoUGH TO CRUSH YOU!"
+    },
+    "monster.quests_ferumbras_ascension_bosses.ferumbras_mortal_shell.yell_8": {
+      "src_hash": "a9e093b92698693dde1d73babecd807a",
+      "text": "I' STILL POWERFUL ENãoUGH TO CRUSH YOU!"
+    },
+    "monster.quests_forgotten_knowledge_bosses.the_enraged_thorn_knight.voice_3": {
+      "src_hash": "fb16cf18d22d4f278aaaefd5495e1d14",
+      "text": "NãoOOOO!"
+    },
+    "monster.quests_forgotten_knowledge_bosses.the_enraged_thorn_knight.yell_6": {
+      "src_hash": "fb16cf18d22d4f278aaaefd5495e1d14",
+      "text": "NãoOOOO!"
+    },
+    "monster.quests_ancient_tombs.morguthis.voice_6": {
+      "src_hash": "2b4a113330a3a357ee33d176fb6b6bcc",
+      "text": "ANãother one to bite the dust!"
+    },
+    "monster.quests_ancient_tombs.morguthis.yell_10": {
+      "src_hash": "2b4a113330a3a357ee33d176fb6b6bcc",
+      "text": "ANãother one to bite the dust!"
+    },
+    "monster.quests_ancient_tombs.omruc.voice_1": {
+      "src_hash": "d3fdcf984b8c10211e8b7642eb1059a3",
+      "text": "Nãow chhhou shhhee me ... Nãow chhhou don't."
+    },
+    "monster.quests_ancient_tombs.ashmunrah.voice_1": {
+      "src_hash": "6af3b6a634a7e9ea419b1be1749af0b5",
+      "text": "Não mortal or undead will steal my secrets!"
+    },
+    "monster.quests_ancient_tombs.ashmunrah.voice_5": {
+      "src_hash": "a6607507feb32203801ff5b2530d4fde",
+      "text": "I might be trapped but Nãot without power"
+    },
+    "monster.quests_ancient_tombs.ashmunrah.yell_8": {
+      "src_hash": "6af3b6a634a7e9ea419b1be1749af0b5",
+      "text": "Não mortal or undead will steal my secrets!"
+    },
+    "monster.quests_ancient_tombs.rahemos.voice_3": {
+      "src_hash": "56d048663d1104ead807d73f0667b7c4",
+      "text": "Nãothing hidden in my wrappings."
+    },
+    "monster.quests_ancient_tombs.rahemos.voice_4": {
+      "src_hash": "ccc116711054926fab57c0c4ddd8bc80",
+      "text": "It's Nãot a trick, it's Rahemos."
+    },
+    "monster.quests_ancient_tombs.horestis.voice_1": {
+      "src_hash": "39a799713f94b3367dca36c1a361d0cf",
+      "text": "I might be dead but I'm Nãot gone!"
+    },
+    "monster.quests_ancient_tombs.horestis.yell_2": {
+      "src_hash": "39a799713f94b3367dca36c1a361d0cf",
+      "text": "I might be dead but I'm Nãot gone!"
+    },
+    "monster.quests_roshamuul.terofar.voice_2": {
+      "src_hash": "caadcde5fbd1f923baa0c50db04bd91a",
+      "text": "IT TOOK AN ARMY OF YOUR KIND TO DEFEAT THE WARDEN. NãoW YOU ARE ALONE!"
+    },
+    "monster.quests_roshamuul.terofar.yell_6": {
+      "src_hash": "caadcde5fbd1f923baa0c50db04bd91a",
+      "text": "IT TOOK AN ARMY OF YOUR KIND TO DEFEAT THE WARDEN. NãoW YOU ARE ALONE!"
+    },
+    "monster.quests_roshamuul.gaz'haragoth.voice_1": {
+      "src_hash": "622a1d650cd2cded7eb5f4c4b2ecafea",
+      "text": "Não ONE WILL ESCAPE ME!"
+    },
+    "monster.quests_roshamuul.gaz'haragoth.voice_3": {
+      "src_hash": "92907c3156aa1c8c552e1a0bf192ee16",
+      "text": "I've beaten tougher demons then you even kNãow!"
+    },
+    "monster.quests_roshamuul.gaz'haragoth.yell_5": {
+      "src_hash": "622a1d650cd2cded7eb5f4c4b2ecafea",
+      "text": "Não ONE WILL ESCAPE ME!"
+    },
+    "monster.quests_roshamuul.gaz'haragoth.yell_7": {
+      "src_hash": "92907c3156aa1c8c552e1a0bf192ee16",
+      "text": "I've beaten tougher demons then you even kNãow!"
+    },
+    "monster.quests_roshamuul.prince_drazzak.voice_7": {
+      "src_hash": "54ee8a1b088bdc471250caab2850a701",
+      "text": "NãoT EVEN AEONS OF IMPRISONMENT WILL STOP ME!"
+    },
+    "monster.quests_roshamuul.prince_drazzak.voice_8": {
+      "src_hash": "7320cb0ae44344b71b3e7cf4c865577a",
+      "text": "EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKENED ME, YOU ARE Não MATCH TO ME!"
+    },
+    "monster.quests_roshamuul.prince_drazzak.yell_14": {
+      "src_hash": "54ee8a1b088bdc471250caab2850a701",
+      "text": "NãoT EVEN AEONS OF IMPRISONMENT WILL STOP ME!"
+    },
+    "monster.quests_roshamuul.prince_drazzak.yell_15": {
+      "src_hash": "7320cb0ae44344b71b3e7cf4c865577a",
+      "text": "EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKENED ME, YOU ARE Não MATCH TO ME!"
+    },
+    "monster.quests_roshamuul.horadron.voice_1": {
+      "src_hash": "d5bfd333b2a2bc9213127a11a0d5fd22",
+      "text": "Even I fear the wrath of the princes. And the cold touch of those whom they serve! You are Nãot prepared!"
+    },
+    "monster.quests_roshamuul.horadron.yell_4": {
+      "src_hash": "d5bfd333b2a2bc9213127a11a0d5fd22",
+      "text": "Even I fear the wrath of the princes. And the cold touch of those whom they serve! You are Nãot prepared!"
+    },
+    "monster.quests_bigfoots_burden_bosses.gnomevil.voice_3": {
+      "src_hash": "f751c3398d202675af2aa40ccfc326b3",
+      "text": "Não more Mr. NicegNãome!"
+    },
+    "monster.quests_bigfoots_burden_bosses.gnomevil.yell_7": {
+      "src_hash": "f751c3398d202675af2aa40ccfc326b3",
+      "text": "Não more Mr. NicegNãome!"
+    },
+    "monster.quests_the_secret_library_bosses.grand_master_oberon_functions.yell_2": {
+      "src_hash": "1361e0b7fd42b38045068740d0cb80a9",
+      "text": "Even before they smell your breath? Too bad you barely exist at all! SEHWO ASIMO, TOLIDO ESD Excuse me but I still do Nãot get the message! Then why are we fighting alone right Nãow? How appropriate, you look like something worms already got the better of!"
+    },
+    "monster.quests_the_secret_library_bosses.grand_master_oberon_functions.yell_10": {
+      "src_hash": "1b61e47aea98a8faedf02255e26542c2",
+      "text": "I lead the most hoNãourable and formidable following of knights!"
+    },
+    "monster.quests_the_secret_library_bosses.grand_master_oberon_functions.yell_16": {
+      "src_hash": "260e26b7317679d4a6d57b85962d09c2",
+      "text": "Excuse me but I still do Nãot get the message!"
+    },
+    "monster.quests_the_secret_library_bosses.preceptor_lazare.voice_1": {
+      "src_hash": "b815a8b0a4f16ca713a0dcdec8e655aa",
+      "text": "There is Nãothing here for you and you will die alone."
+    },
+    "monster.quests_the_curse_spreads.black_vixen.voice_1": {
+      "src_hash": "e1d63aac1a414f08db26395ed190d4f6",
+      "text": "You are Nãot clever eNãough to defeat me!"
+    },
+    "monster.quests_the_curse_spreads.black_vixen.yell_3": {
+      "src_hash": "e1d63aac1a414f08db26395ed190d4f6",
+      "text": "You are Nãot clever eNãough to defeat me!"
+    },
+    "monster.quests_the_inquisition.hellgorak.voice_3": {
+      "src_hash": "89008b61d61a1e31253220006c02e2dd",
+      "text": "Não man can defeat me!"
+    },
+    "monster.quests_the_inquisition.hellgorak.voice_4": {
+      "src_hash": "943f7ed2b1d29ffbd5c6fb2ddc9dfc07",
+      "text": "Your puny skills are Não match for me."
+    },
+    "monster.quests_the_inquisition.hellgorak.yell_9": {
+      "src_hash": "89008b61d61a1e31253220006c02e2dd",
+      "text": "Não man can defeat me!"
+    },
+    "monster.quests_the_inquisition.zugurosh.voice_1": {
+      "src_hash": "e1b7e9638796557428e5f655254c37d5",
+      "text": "You will run out of resources soon eNãough!"
+    },
+    "monster.quests_the_inquisition.zugurosh.voice_4": {
+      "src_hash": "fa3bfaa9591cbaf33afc186980065ebd",
+      "text": "I kNãow you will show a weakness!"
+    },
+    "monster.quests_the_inquisition.zugurosh.yell_6": {
+      "src_hash": "e1b7e9638796557428e5f655254c37d5",
+      "text": "You will run out of resources soon eNãough!"
+    },
+    "monster.quests_the_inquisition.zugurosh.yell_9": {
+      "src_hash": "fa3bfaa9591cbaf33afc186980065ebd",
+      "text": "I kNãow you will show a weakness!"
+    },
+    "monster.quests_the_inquisition.madareth.voice_3": {
+      "src_hash": "c8ea429cd55187a9e7614e2951389e27",
+      "text": "Não one matches my battle prowess!"
+    },
+    "monster.quests_the_inquisition.madareth.yell_7": {
+      "src_hash": "c8ea429cd55187a9e7614e2951389e27",
+      "text": "Não one matches my battle prowess!"
+    },
+    "monster.quests_soul_war_normal_monsters.many_faces.voice_2": {
+      "src_hash": "7e3ad5d4f287a0947b37a69144b73c44",
+      "text": "Look into my eSim! Não, the other ones!"
+    },
+    "monster.quests_soul_war_normal_monsters.many_faces.yell_4": {
+      "src_hash": "7e3ad5d4f287a0947b37a69144b73c44",
+      "text": "Look into my eSim! Não, the other ones!"
+    },
+    "monster.quests_soul_war_normal_monsters.distorted_phantom.voice_1": {
+      "src_hash": "f1884afde661d966b5666b9f0e0b22e6",
+      "text": "I'm Nãot here. I am there."
+    },
+    "monster.quests_soul_war_normal_monsters.distorted_phantom.voice_3": {
+      "src_hash": "4b5a7e23b1115edeada46941bff5d8d9",
+      "text": "Too late... Não turning back Nãow."
+    },
+    "monster.quests_soul_war_normal_monsters_furious_crater.poor_soul.voice_2": {
+      "src_hash": "7e3ad5d4f287a0947b37a69144b73c44",
+      "text": "Look into my eSim! Não, the other ones!"
+    },
+    "monster.quests_soul_war_normal_monsters_furious_crater.poor_soul.yell_4": {
+      "src_hash": "7e3ad5d4f287a0947b37a69144b73c44",
+      "text": "Look into my eSim! Não, the other ones!"
+    },
+    "monster.event_creatures.the_mutated_pumpkin.voice_4": {
+      "src_hash": "44f12236f36e539d74a09e434efa925d",
+      "text": "Não wait! Don't kill me! It's me, your friend!"
+    },
+    "monster.event_creatures.the_mutated_pumpkin.yell_13": {
+      "src_hash": "44f12236f36e539d74a09e434efa925d",
+      "text": "Não wait! Don't kill me! It's me, your friend!"
+    },
+    "monster.event_creatures.spectral_scum.voice_5": {
+      "src_hash": "74d4e4598ca804886e985af2323f15f3",
+      "text": "Nãothing better than plundering and getting plastered!"
+    },
+    "monster.event_creatures.spectral_scum.yell_10": {
+      "src_hash": "74d4e4598ca804886e985af2323f15f3",
+      "text": "Nãothing better than plundering and getting plastered!"
+    },
+    "monster.event_creatures.minishabaal.voice_7": {
+      "src_hash": "5342cf38e956fed3290a02a4230a2f88",
+      "text": "My dragon is Nãot that old, it's just second hand."
+    },
+    "monster.event_creatures.eclipse_knight.voice_1": {
+      "src_hash": "0d9bf80a3ca817b4ba938110bc72dddd",
+      "text": "Sim, flee from me!"
+    },
+    "monster.event_creatures.eclipse_knight.voice_2": {
+      "src_hash": "307e2f401e12155ce6107c411c123550",
+      "text": "You can run but you can Nãot hide!"
+    },
+    "monster.event_creatures.eclipse_knight.yell_3": {
+      "src_hash": "0d9bf80a3ca817b4ba938110bc72dddd",
+      "text": "Sim, flee from me!"
+    },
+    "monster.event_creatures.eclipse_knight.yell_4": {
+      "src_hash": "307e2f401e12155ce6107c411c123550",
+      "text": "You can run but you can Nãot hide!"
+    },
+    "monster.event_creatures.primitive.voice_7": {
+      "src_hash": "2a3d93bbd6f1278febcc860cf1740063",
+      "text": "Die Nãoob!"
+    },
+    "monster.event_creatures.primitive.voice_8": {
+      "src_hash": "4702e7261331a7190cf5b23ea9dcd500",
+      "text": "There are Não dragons!"
+    },
+    "monster.event_creatures.primitive.voice_10": {
+      "src_hash": "7682f369cbbbe9cef4b4eb7fe0310031",
+      "text": "You all are Nãoobs!"
+    },
+    "monster.event_creatures.primitive.yell_26": {
+      "src_hash": "2a3d93bbd6f1278febcc860cf1740063",
+      "text": "Die Nãoob!"
+    },
+    "monster.event_creatures.primitive.yell_27": {
+      "src_hash": "4702e7261331a7190cf5b23ea9dcd500",
+      "text": "There are Não dragons!"
+    },
+    "monster.event_creatures.primitive.yell_28": {
+      "src_hash": "7682f369cbbbe9cef4b4eb7fe0310031",
+      "text": "You all are Nãoobs!"
+    },
+    "monster.event_creatures.hacker.voice_3": {
+      "src_hash": "c23338b4010ffa8ca2a8791424ff35b1",
+      "text": "Gimme free Ouro!"
+    },
+    "monster.event_creatures.hacker.voice_9": {
+      "src_hash": "f7987ad5b00f0aeb33c05b49ea914a35",
+      "text": "Me Nãot stink!"
+    },
+    "monster.event_creatures.hacker.yell_13": {
+      "src_hash": "c23338b4010ffa8ca2a8791424ff35b1",
+      "text": "Gimme free Ouro!"
+    },
+    "monster.event_creatures.hacker.yell_19": {
+      "src_hash": "f7987ad5b00f0aeb33c05b49ea914a35",
+      "text": "Me Nãot stink!"
+    },
+    "monster.event_creatures.grynch_clan_goblin.voice_1": {
+      "src_hash": "2ae29925da1735a43e39b9270aecb854",
+      "text": "T'was Nãot me hand in your pocket!"
+    },
+    "monster.event_creatures.grynch_clan_goblin.voice_3": {
+      "src_hash": "c1e81f61c6cc003b6a480728384a7263",
+      "text": "Uhh! Nãobody home! <chuckle>"
+    },
+    "monster.event_creatures.grynch_clan_goblin.voice_5": {
+      "src_hash": "7c92edef8faf3031a34881a6c45e8a52",
+      "text": "Me Não steal! Me found it!"
+    },
+    "monster.event_creatures.grynch_clan_goblin.voice_6": {
+      "src_hash": "6fd60f84958e8d882d49ba283031d302",
+      "text": "Me had it for five minutes. It's family heirloom Nãow!"
+    },
+    "monster.event_creatures.grynch_clan_goblin.voice_14": {
+      "src_hash": "f77614b8307c722192ce64f20e512723",
+      "text": "Nãot me! Nãot me!"
+    },
+    "monster.event_creatures.grynch_clan_goblin.voice_15": {
+      "src_hash": "59a3c8b97b493e7d58636b56315e8b48",
+      "text": "Guys, Ajuda me here! Guys? Guys???"
+    },
+    "monster.event_creatures.grynch_clan_goblin.yell_26": {
+      "src_hash": "2ae29925da1735a43e39b9270aecb854",
+      "text": "T'was Nãot me hand in your pocket!"
+    },
+    "monster.event_creatures.grynch_clan_goblin.yell_29": {
+      "src_hash": "7c92edef8faf3031a34881a6c45e8a52",
+      "text": "Me Não steal! Me found it!"
+    },
+    "monster.event_creatures.grynch_clan_goblin.yell_30": {
+      "src_hash": "6fd60f84958e8d882d49ba283031d302",
+      "text": "Me had it for five minutes. It's family heirloom Nãow!"
+    },
+    "monster.event_creatures.grynch_clan_goblin.yell_36": {
+      "src_hash": "f77614b8307c722192ce64f20e512723",
+      "text": "Nãot me! Nãot me!"
+    },
+    "monster.undeads.vampire_bride.voice_4": {
+      "src_hash": "4235e3676f20b0cf8f969e90e0c7408f",
+      "text": "Enjoy the pain - I kNãow you love it."
+    },
+    "monster.undeads.vampire_bride.voice_5": {
+      "src_hash": "a34d3992dc15fce48364c2e64d849daa",
+      "text": "Are you suffering nicely eNãough?"
+    },
+    "monster.undeads.undead_prospector.voice_3": {
+      "src_hash": "7875234d26804efdf667e7a50fd5ce7f",
+      "text": "These mine is ours... you shall Nãot pass."
+    },
+    "monster.undeads.undead_gladiator.voice_4": {
+      "src_hash": "102133689ae695093cb08adeab501695",
+      "text": "I will Nãot give up!"
+    },
+    "monster.undeads.undead_gladiator.voice_5": {
+      "src_hash": "ed9ce544d17224d4d1ce94596d1940b4",
+      "text": "ANãother foolish adventurer who tries to beat me."
+    },
+    "monster.undeads.undead_gladiator.yell_8": {
+      "src_hash": "102133689ae695093cb08adeab501695",
+      "text": "I will Nãot give up!"
+    },
+    "monster.undeads.bonebeast.voice_1": {
+      "src_hash": "2c1f70d13ab699b53a089693f135957e",
+      "text": "KNãooorrrrr!"
+    },
+    "monster.undeads.bonebeast.yell_3": {
+      "src_hash": "2c1f70d13ab699b53a089693f135957e",
+      "text": "KNãooorrrrr!"
+    },
+    "monster.undeads.pirate_ghost.voice_5": {
+      "src_hash": "d7178cbadf6d05b04b8b09376882f9a0",
+      "text": "You will Nãot get my treasure."
+    },
+    "monster.undeads.white_shade.voice_3": {
+      "src_hash": "c681210f4701a58c77609cae38fb926d",
+      "text": "Não... don't go further stranger... danger lies in every step..."
+    },
+    "monster.undeads.vampire_viscount.voice_2": {
+      "src_hash": "1777ab276e45eb3dcd2f261701142d2e",
+      "text": "Don't struggle. We don't want to waste a drop of blood Nãow, do we?"
+    },
+    "monster.undeads.lost_soul.voice_3": {
+      "src_hash": "2045a7fa6b278c3f3a2e10292c316cec",
+      "text": "Ajuda meee!"
+    },
+    "monster.undeads.lost_soul.yell_6": {
+      "src_hash": "2045a7fa6b278c3f3a2e10292c316cec",
+      "text": "Ajuda meee!"
+    },
+    "monster.raids.arachir_the_ancient_one.voice_2": {
+      "src_hash": "054e25f2e5ca2f36b409826bb73f83bd",
+      "text": "Your worthles existence will Nãourish something greater!"
+    },
+    "monster.raids.arachir_the_ancient_one.yell_6": {
+      "src_hash": "054e25f2e5ca2f36b409826bb73f83bd",
+      "text": "Your worthles existence will Nãourish something greater!"
+    },
+    "monster.raids.yakchal.voice_5": {
+      "src_hash": "f07ff159009f72fa733fbbf7c0edc80a",
+      "text": "Não one will stop my plans!"
+    },
+    "monster.raids.yakchal.yell_10": {
+      "src_hash": "f07ff159009f72fa733fbbf7c0edc80a",
+      "text": "Não one will stop my plans!"
+    },
+    "monster.raids.mawhawk.voice_1": {
+      "src_hash": "6e74115f9794771cb4b2163dfa6277f5",
+      "text": "Better flee Nãow!"
+    },
+    "monster.raids.mawhawk.yell_3": {
+      "src_hash": "6e74115f9794771cb4b2163dfa6277f5",
+      "text": "Better flee Nãow!"
+    },
+    "monster.raids.the_pale_count.voice_2": {
+      "src_hash": "2e5a47e3b62710134b27292833297ecf",
+      "text": "The Monstros in the mirror will come eat your dreams."
+    },
+    "monster.raids.zulazza_the_corruptor.voice_3": {
+      "src_hash": "5bc858b26ff5cfb6a67004af520990d9",
+      "text": "Zzaion is our last zztand! I will Nãot leave wizzout a fight!"
+    },
+    "monster.raids.zulazza_the_corruptor.yell_6": {
+      "src_hash": "5bc858b26ff5cfb6a67004af520990d9",
+      "text": "Zzaion is our last zztand! I will Nãot leave wizzout a fight!"
+    },
+    "monster.raids.chizzoron_the_distorter.voice_3": {
+      "src_hash": "c797116d9244bab9bc5572d58181c692",
+      "text": "You are Nãot worzzy to touch zzizz zzacred ground!"
+    },
+    "monster.raids.chizzoron_the_distorter.yell_6": {
+      "src_hash": "c797116d9244bab9bc5572d58181c692",
+      "text": "You are Nãot worzzy to touch zzizz zzacred ground!"
+    },
+    "monster.raids.the_horned_fox.voice_4": {
+      "src_hash": "84c8f6e1f28c2257633535cc612e4a58",
+      "text": "Ajuda me, Gang!"
+    },
+    "monster.raids.the_horned_fox.yell_8": {
+      "src_hash": "84c8f6e1f28c2257633535cc612e4a58",
+      "text": "Ajuda me, Gang!"
+    },
+    "monster.raids.ferumbras.voice_1": {
+      "src_hash": "17421658d840ef648e12fcaab513b756",
+      "text": "Não ONE WILL STOP ME THIS TIME!"
+    },
+    "monster.raids.ferumbras.yell_6": {
+      "src_hash": "17421658d840ef648e12fcaab513b756",
+      "text": "Não ONE WILL STOP ME THIS TIME!"
+    },
+    "monster.mammals.starving_wolf.voice_2": {
+      "src_hash": "337a89d835b35ab96607029653bf59e6",
+      "text": "GNãoorrr"
+    },
+    "monster.mammals.horse.voice_2": {
+      "src_hash": "722f7d0f70687346d74a852830e1c5f0",
+      "text": "*sNãort*"
+    },
+    "monster.mammals.wild_horse.voice_2": {
+      "src_hash": "722f7d0f70687346d74a852830e1c5f0",
+      "text": "*sNãort*"
+    },
+    "monster.mammals.grey_horse.voice_2": {
+      "src_hash": "722f7d0f70687346d74a852830e1c5f0",
+      "text": "*sNãort*"
+    },
+    "monster.mammals.brown_horse.voice_2": {
+      "src_hash": "722f7d0f70687346d74a852830e1c5f0",
+      "text": "*sNãort*"
+    },
+    "monster.mammals.water_buffalo.voice_2": {
+      "src_hash": "17600cc8e0414d82bdd89be2b707d922",
+      "text": "GNãoorr!"
+    },
+    "monster.mammals.water_buffalo.voice_4": {
+      "src_hash": "90b10e904dd620f8a12d2e5132e500cf",
+      "text": "<sNãort>"
+    },
+    "monster.mammals.water_buffalo.yell_6": {
+      "src_hash": "17600cc8e0414d82bdd89be2b707d922",
+      "text": "GNãoorr!"
+    },
+    "monster.mammals.killer_rabbit.voice_1": {
+      "src_hash": "c4b08895701976375a2bb636e7e5fd8b",
+      "text": "Who is lunch NãoW?"
+    },
+    "monster.mammals.clomp.voice_1": {
+      "src_hash": "089ad162ace4f4ad44fbed9a1e00b07d",
+      "text": "SNãort!"
+    },
+    "monster.mammals.dromedary.voice_1": {
+      "src_hash": "607b0d650f6c825e33bf78436651530f",
+      "text": "SNãort"
+    },
+    "monster.plants.rootthing_nutshell.voice_3": {
+      "src_hash": "853c27b0c73155e4af229b7b73ed0220",
+      "text": "<KNãoORRR>"
+    },
+    "monster.plants.haunted_treeling.voice_3": {
+      "src_hash": "95ffa70ac3d9520ae80226fb2387af1a",
+      "text": "KNãorrrrrr"
+    },
+    "monster.plants.bane_bringer.voice_1": {
+      "src_hash": "3d93c4187d3d7b76df7fc52b79e741b6",
+      "text": "You shall Nãot succeed!"
+    },
+    "monster.plants.bane_bringer.yell_3": {
+      "src_hash": "3d93c4187d3d7b76df7fc52b79e741b6",
+      "text": "You shall Nãot succeed!"
+    },
+    "monster.aquatics.deepling_scout.voice_3": {
+      "src_hash": "c2454c2545349d24450d0f6b53461b96",
+      "text": "Djon't djare stjare injo the eSim of the djeep!"
+    },
+    "monster.aquatics.deepling_scout.yell_7": {
+      "src_hash": "c2454c2545349d24450d0f6b53461b96",
+      "text": "Djon't djare stjare injo the eSim of the djeep!"
+    },
+    "monster.humans.gladiator.voice_1": {
+      "src_hash": "a1ef38df45de6f1a744c0896f5445b4b",
+      "text": "You are Não match for me!"
+    },
+    "monster.humans.gladiator.yell_5": {
+      "src_hash": "a1ef38df45de6f1a744c0896f5445b4b",
+      "text": "You are Não match for me!"
+    },
+    "monster.humans.acolyte_of_darkness.voice_2": {
+      "src_hash": "73370e0a6bc8c15dc2dba514adb02082",
+      "text": "You can Nãot hope to stop us all!"
+    },
+    "monster.humans.acolyte_of_darkness.yell_5": {
+      "src_hash": "73370e0a6bc8c15dc2dba514adb02082",
+      "text": "You can Nãot hope to stop us all!"
+    },
+    "monster.humans.hero.voice_4": {
+      "src_hash": "09d1485d728307eaa276f415dd213661",
+      "text": "Bem-vindo to my battleground!"
+    },
+    "monster.humans.hero.yell_6": {
+      "src_hash": "09d1485d728307eaa276f415dd213661",
+      "text": "Bem-vindo to my battleground!"
+    },
+    "monster.humans.priestess.voice_2": {
+      "src_hash": "ea3d5b3e954cb1bc641ddfafd564ee4a",
+      "text": "Nãow your life is come to the end, hahahaha!"
+    },
+    "monster.humans.priestess.yell_4": {
+      "src_hash": "ea3d5b3e954cb1bc641ddfafd564ee4a",
+      "text": "Nãow your life is come to the end, hahahaha!"
+    },
+    "monster.humans.crazed_beggar.voice_4": {
+      "src_hash": "08fc3d0fe3002f2111ed6d03e68bd110",
+      "text": "Wanna Comprar roses??"
+    },
+    "monster.humans.usurper_knight.voice_1": {
+      "src_hash": "de25b9ef320b636b72ea59048888aa10",
+      "text": "This town is ours Nãow!"
+    },
+    "monster.humans.usurper_knight.yell_4": {
+      "src_hash": "de25b9ef320b636b72ea59048888aa10",
+      "text": "This town is ours Nãow!"
+    },
+    "monster.humans.black_sphinx_acolyte.voice_1": {
+      "src_hash": "ab521211def672aabe39b80e04aa7bd6",
+      "text": "Darkness is the mother of all kNãowledge!"
+    },
+    "monster.humans.black_sphinx_acolyte.yell_4": {
+      "src_hash": "ab521211def672aabe39b80e04aa7bd6",
+      "text": "Darkness is the mother of all kNãowledge!"
+    },
+    "monster.humans.cobra_assassin.voice_1": {
+      "src_hash": "db5211735810f1e6694fea24735daff9",
+      "text": "Hey, maybe you want to strike a deal... Não?"
+    },
+    "monster.humans.cobra_assassin.voice_3": {
+      "src_hash": "542a194b18ba0c3cec0d82c88c8be406",
+      "text": "You will Nãot leave this place breathing!"
+    },
+    "monster.humans.cobra_assassin.yell_5": {
+      "src_hash": "542a194b18ba0c3cec0d82c88c8be406",
+      "text": "You will Nãot leave this place breathing!"
+    },
+    "monster.humans.cobra_vizier.voice_3": {
+      "src_hash": "79c73fcbdefd56119fcaa8a17972c9fd",
+      "text": "OH Não, YOU WON'T!"
+    },
+    "monster.humans.cobra_vizier.yell_6": {
+      "src_hash": "79c73fcbdefd56119fcaa8a17972c9fd",
+      "text": "OH Não, YOU WON'T!"
+    },
+    "monster.humans.crypt_defiler.voice_1": {
+      "src_hash": "30f2db7213366572df00aa6b7b1ecc92",
+      "text": "I smell Ouro!"
+    },
+    "monster.humans.crypt_defiler.yell_5": {
+      "src_hash": "30f2db7213366572df00aa6b7b1ecc92",
+      "text": "I smell Ouro!"
+    },
+    "monster.humans.valkyrie.voice_1": {
+      "src_hash": "30cb51e15e836bc0bb41a0c331d39b84",
+      "text": "ANãother head for me!"
+    },
+    "monster.humans.valkyrie.yell_6": {
+      "src_hash": "30cb51e15e836bc0bb41a0c331d39b84",
+      "text": "ANãother head for me!"
+    },
+    "monster.humans.barbarian_headsplitter.voice_1": {
+      "src_hash": "4a86d359350a8205f024750662735b93",
+      "text": "I will regain my hoNãor with your blood!"
+    },
+    "monster.humans.barbarian_headsplitter.voice_2": {
+      "src_hash": "76854e7c8cefc762acdf90e155ee649f",
+      "text": "Surrender is Nãot option!"
+    },
+    "monster.humans.barbarian_headsplitter.yell_5": {
+      "src_hash": "4a86d359350a8205f024750662735b93",
+      "text": "I will regain my hoNãor with your blood!"
+    },
+    "monster.humans.barbarian_headsplitter.yell_6": {
+      "src_hash": "76854e7c8cefc762acdf90e155ee649f",
+      "text": "Surrender is Nãot option!"
+    },
+    "monster.humans.poacher.voice_1": {
+      "src_hash": "a597a3a433bf3d793e38e82d69c76682",
+      "text": "You will Nãot live to tell anyone!"
+    },
+    "monster.humans.poacher.yell_4": {
+      "src_hash": "a597a3a433bf3d793e38e82d69c76682",
+      "text": "You will Nãot live to tell anyone!"
+    },
+    "monster.humans.gang_member.voice_2": {
+      "src_hash": "14dc2ff4c52c945603524c3b52865755",
+      "text": "Ajuda me guys!"
+    },
+    "monster.humans.gang_member.yell_7": {
+      "src_hash": "14dc2ff4c52c945603524c3b52865755",
+      "text": "Ajuda me guys!"
+    },
+    "monster.humans.novice_of_the_cult.voice_2": {
+      "src_hash": "2f1d0e1d99fbc8236943fa90d355412e",
+      "text": "You will Nãot tell anyone what you have seen!"
+    },
+    "monster.humans.novice_of_the_cult.yell_5": {
+      "src_hash": "2f1d0e1d99fbc8236943fa90d355412e",
+      "text": "You will Nãot tell anyone what you have seen!"
+    },
+    "monster.humans.ice_witch.voice_2": {
+      "src_hash": "6b793d1cc82dd26c5a5822c770f82530",
+      "text": "I hope it is Nãot too cold for you! HeHeHe."
+    },
+    "monster.humans.infernalist.voice_1": {
+      "src_hash": "969468a3a113f9fb1404b26f9708f452",
+      "text": "Nãothing will remain but your scorched bones!"
+    },
+    "monster.humans.infernalist.yell_5": {
+      "src_hash": "969468a3a113f9fb1404b26f9708f452",
+      "text": "Nãothing will remain but your scorched bones!"
+    },
+    "monster.humans.dark_monk.voice_1": {
+      "src_hash": "dd727255eec66af43f73997c69759275",
+      "text": "You are Não match to us!"
+    },
+    "monster.humans.dark_monk.yell_4": {
+      "src_hash": "dd727255eec66af43f73997c69759275",
+      "text": "You are Não match to us!"
+    },
+    "monster.humans.feverish_citizen.voice_10": {
+      "src_hash": "dc4f158d1e49463bf223a100d9d67760",
+      "text": "This is VeNãore!"
+    },
+    "monster.humans.feverish_citizen.yell_18": {
+      "src_hash": "dc4f158d1e49463bf223a100d9d67760",
+      "text": "This is VeNãore!"
+    },
+    "monster.humans.vile_grandmaster.voice_3": {
+      "src_hash": "a332804c90b24ea7118289a5e8948c7b",
+      "text": "I will end this Nãow!"
+    },
+    "monster.humans.vile_grandmaster.voice_4": {
+      "src_hash": "0ccee3e66ce6616fbe9825b65df8dcae",
+      "text": "Your gods won't Ajuda you!"
+    },
+    "monster.humans.vile_grandmaster.yell_7": {
+      "src_hash": "a332804c90b24ea7118289a5e8948c7b",
+      "text": "I will end this Nãow!"
+    },
+    "monster.humans.vile_grandmaster.yell_8": {
+      "src_hash": "0ccee3e66ce6616fbe9825b65df8dcae",
+      "text": "Your gods won't Ajuda you!"
+    },
+    "monster.trainers.training_machine.voice_7": {
+      "src_hash": "17b7ef1669218a3bed31eca8be0b6dce",
+      "text": "Self-diagNãosis running."
+    },
+    "monster.demons.demon_outcast.voice_4": {
+      "src_hash": "db42a73d9285b29f8699166b1452487a",
+      "text": "Não one will imprison me again!"
+    },
+    "monster.demons.demon_outcast.yell_7": {
+      "src_hash": "db42a73d9285b29f8699166b1452487a",
+      "text": "Não one will imprison me again!"
+    },
+    "monster.demons.hellspawn.voice_2": {
+      "src_hash": "74426c2162633128cdc836f3445cd655",
+      "text": "You little weasel will Nãot live to see aNãother day."
+    },
+    "monster.reptiles.stonerefiner.voice_2": {
+      "src_hash": "7f68fcd9fab70c6a5eb0a040db4fc119",
+      "text": "NãomNãomNãom"
+    },
+    "monster.reptiles.rhindeer.voice_3": {
+      "src_hash": "089ad162ace4f4ad44fbed9a1e00b07d",
+      "text": "SNãort!"
+    },
+    "monster.fey.sugar_cube.voice_1": {
+      "src_hash": "f0f01d8df21def3e0d6744e285666d3d",
+      "text": "Não I don't work in the mines right Nãow. That's my day off."
+    },
+    "monster.fey.sugar_cube.voice_3": {
+      "src_hash": "95fcf2840146d0f06e6ddeb08ddb51a5",
+      "text": "Não touching please."
+    },
+    "monster.fey.swan_maiden.voice_1": {
+      "src_hash": "d60d629113243e60cebacc34c8c5e931",
+      "text": "Nightmarish Monstro! This dream is Nãot meant for you!"
+    },
+    "monster.fey.swan_maiden.voice_3": {
+      "src_hash": "1a00079c4281fa1e4134b488275686c1",
+      "text": "You are Nãot allowed to lay eSim on me in this shape!"
+    },
+    "monster.fey.swan_maiden.yell_5": {
+      "src_hash": "d60d629113243e60cebacc34c8c5e931",
+      "text": "Nightmarish Monstro! This dream is Nãot meant for you!"
+    },
+    "monster.fey.swan_maiden.yell_7": {
+      "src_hash": "1a00079c4281fa1e4134b488275686c1",
+      "text": "You are Nãot allowed to lay eSim on me in this shape!"
+    },
+    "monster.fey.angry_sugar_fairy.voice_2": {
+      "src_hash": "cfe880b5b192fd8fca2a5a4147ae2fe7",
+      "text": "Não sweet sugar jewellery for you, intruder!"
+    },
+    "monster.fey.angry_sugar_fairy.voice_3": {
+      "src_hash": "8a8e9f332cfc3488159c7c53d11074f0",
+      "text": "This is Nãot the Candy Carnival! You should leave!"
+    },
+    "monster.fey.angry_sugar_fairy.yell_5": {
+      "src_hash": "cfe880b5b192fd8fca2a5a4147ae2fe7",
+      "text": "Não sweet sugar jewellery for you, intruder!"
+    },
+    "monster.fey.angry_sugar_fairy.yell_6": {
+      "src_hash": "8a8e9f332cfc3488159c7c53d11074f0",
+      "text": "This is Nãot the Candy Carnival! You should leave!"
+    },
+    "monster.fey.cream_blob.voice_2": {
+      "src_hash": "4a50d50fc2aa2ab396a795abc92ce7e8",
+      "text": "Work in the Chocolate Mines? Não, Não, leave it to the sugar cubes."
+    },
+    "monster.fey.cream_blob.voice_3": {
+      "src_hash": "49b13bbe7f2b3c3c5d17b8ce8da4f481",
+      "text": "Nãothing better than to lie on the vanilla sugar beach on a sunny day."
+    },
+    "monster.fey.arctic_faun.voice_2": {
+      "src_hash": "5c11897125c6d1c33df9b3731a6d63cf",
+      "text": "In viNão veritas! Hahaha!"
+    },
+    "monster.fey.arctic_faun.yell_5": {
+      "src_hash": "5c11897125c6d1c33df9b3731a6d63cf",
+      "text": "In viNão veritas! Hahaha!"
+    },
+    "monster.fey.faun.voice_1": {
+      "src_hash": "5c11897125c6d1c33df9b3731a6d63cf",
+      "text": "In viNão veritas! Hahaha!"
+    },
+    "monster.fey.faun.yell_4": {
+      "src_hash": "5c11897125c6d1c33df9b3731a6d63cf",
+      "text": "In viNão veritas! Hahaha!"
+    },
+    "monster.fey.sugar_cube_worker.voice_1": {
+      "src_hash": "e3e736ed89c81fb81302137c6080aa22",
+      "text": "Please do Nãot obstruct our work."
+    },
+    "monster.fey.fruit_drop.voice_3": {
+      "src_hash": "78de7f15654789164561cc54c55615c1",
+      "text": "Olá, sweetie!"
+    },
+    "monster.fey.fruit_drop.yell_5": {
+      "src_hash": "78de7f15654789164561cc54c55615c1",
+      "text": "Olá, sweetie!"
+    },
+    "monster.elementals.cliff_strider.voice_1": {
+      "src_hash": "8f01cbb527fadd16be27d30a598460fc",
+      "text": "KNãorrrr"
+    },
+    "monster.elementals.knowledge_elemental.voice_1": {
+      "src_hash": "c8f117548c7b93c8b603e534a45420ae",
+      "text": "Did you kNãow... there are over 200 bones in your body to break?"
+    },
+    "monster.elementals.knowledge_elemental.voice_2": {
+      "src_hash": "18b1008865c8d78f84ceadaba3d8b84c",
+      "text": "Did you kNãow... a lot of so-called trivia facts aren't even remotely true?"
+    },
+    "monster.elementals.knowledge_elemental.voice_3": {
+      "src_hash": "34650fe9556d2d9dcd5b6a76b64ec0ac",
+      "text": "Did you kNãow... fear can be smelled?"
+    },
+    "monster.elementals.knowledge_elemental.voice_4": {
+      "src_hash": "16b4a992f5c4d400844b89645be90358",
+      "text": "Did you kNãow... you could die in 1.299.223 ways within the next ten seconds?"
+    },
+    "monster.magicals.lamassu.voice_1": {
+      "src_hash": "46337d42938ca486636b362c0b200f7a",
+      "text": "Be gone, mortal! This is Nãot your place!"
+    },
+    "monster.magicals.lamassu.yell_4": {
+      "src_hash": "46337d42938ca486636b362c0b200f7a",
+      "text": "Be gone, mortal! This is Nãot your place!"
+    },
+    "monster.magicals.nightstalker.voice_4": {
+      "src_hash": "541673024331f6f6bf9ae11b70ffd9dd",
+      "text": "You never kNãow what hides in the night."
+    },
+    "monster.magicals.nightstalker.voice_5": {
+      "src_hash": "7cf4fb50636e531ffcb0cc567cf4811f",
+      "text": "I remember your face - and I kNãow where you sleep."
+    },
+    "monster.magicals.nightmare.voice_1": {
+      "src_hash": "38e1a5df753a9d07d8ed48c8bbe1d2f1",
+      "text": "Close your eSim... I want to show you something."
+    },
+    "monster.magicals.thanatursus.voice_2": {
+      "src_hash": "4663eccca7f3da2ef4995c3583f67c50",
+      "text": "Nãobody will ever escape from this place, muwahaha!!!"
+    },
+    "monster.magicals.thanatursus.yell_4": {
+      "src_hash": "4663eccca7f3da2ef4995c3583f67c50",
+      "text": "Nãobody will ever escape from this place, muwahaha!!!"
+    },
+    "monster.magicals.feral_sphinx.voice_1": {
+      "src_hash": "1a206af67cdf00045aff96d3a223e397",
+      "text": "I am Nãot as kind as my sisters!"
+    },
+    "monster.magicals.feral_sphinx.yell_2": {
+      "src_hash": "1a206af67cdf00045aff96d3a223e397",
+      "text": "I am Nãot as kind as my sisters!"
+    },
+    "monster.magicals.phantasm_summon.voice_3": {
+      "src_hash": "374bd78f171d4bb8b4516ee57fd2e7a5",
+      "text": "Its Nãothing but a dream."
+    },
+    "monster.magicals.sight_of_surrender.voice_4": {
+      "src_hash": "1ee8b0a2f73cdb98c70eff4dba6b289e",
+      "text": "NãoW YOU WILL SURRENDER!"
+    },
+    "monster.magicals.sight_of_surrender.yell_7": {
+      "src_hash": "1ee8b0a2f73cdb98c70eff4dba6b289e",
+      "text": "NãoW YOU WILL SURRENDER!"
+    },
+    "monster.magicals.medusa.voice_2": {
+      "src_hash": "6e22bcd239f5d901990ecd6c1a671a89",
+      "text": "There isss Não chhhanccce of essscape"
+    },
+    "monster.magicals.fahim_the_wise.voice_1": {
+      "src_hash": "797e65cd3403f7643f686fcf95036e73",
+      "text": "You should kNãow better than to be an enemy of the Marid"
+    },
+    "monster.magicals.phantasm.voice_3": {
+      "src_hash": "374bd78f171d4bb8b4516ee57fd2e7a5",
+      "text": "Its Nãothing but a dream."
+    },
+    "monster.bosses.smuggler_baron_silvertoe.voice_2": {
+      "src_hash": "804f7a9ffbfec9c3d0ca44c8c2076cd2",
+      "text": "You should Nãot have interferred with my business!"
+    },
+    "monster.bosses.smuggler_baron_silvertoe.yell_7": {
+      "src_hash": "804f7a9ffbfec9c3d0ca44c8c2076cd2",
+      "text": "You should Nãot have interferred with my business!"
+    },
+    "monster.bosses.koshei_the_deathless.voice_4": {
+      "src_hash": "d491d56056b8b7893ca94178a7c3a45f",
+      "text": "Bem-vindo to my domain visitor!"
+    },
+    "monster.bosses.koshei_the_deathless.yell_12": {
+      "src_hash": "d491d56056b8b7893ca94178a7c3a45f",
+      "text": "Bem-vindo to my domain visitor!"
+    },
+    "monster.bosses.black_knight.voice_1": {
+      "src_hash": "4577c473208db809614075fd78d6bdd4",
+      "text": "Não PRISONERS!"
+    },
+    "monster.bosses.black_knight.voice_3": {
+      "src_hash": "8ac6c42753cf8461e6d0355e18a57c9e",
+      "text": "You're Não match for me!"
+    },
+    "monster.bosses.black_knight.voice_4": {
+      "src_hash": "bf01f60a8673b3d39c980e80b856a97e",
+      "text": "Não MERCY!"
+    },
+    "monster.bosses.black_knight.yell_6": {
+      "src_hash": "4577c473208db809614075fd78d6bdd4",
+      "text": "Não PRISONERS!"
+    },
+    "monster.bosses.black_knight.yell_8": {
+      "src_hash": "8ac6c42753cf8461e6d0355e18a57c9e",
+      "text": "You're Não match for me!"
+    },
+    "monster.bosses.black_knight.yell_9": {
+      "src_hash": "bf01f60a8673b3d39c980e80b856a97e",
+      "text": "Não MERCY!"
+    },
+    "monster.bosses.zushuka.voice_4": {
+      "src_hash": "321998ddfee8782c281b37f13a99a379",
+      "text": "Pay for your igNãorance!"
+    },
+    "monster.bosses.zushuka.yell_7": {
+      "src_hash": "321998ddfee8782c281b37f13a99a379",
+      "text": "Pay for your igNãorance!"
+    },
+    "monster.bosses.diseased_bill.voice_2": {
+      "src_hash": "6dd98cb4307efc02f09e7dc54197b287",
+      "text": "You all will pay for Nãot Ajudaing me!"
+    },
+    "monster.bosses.diseased_bill.yell_6": {
+      "src_hash": "6dd98cb4307efc02f09e7dc54197b287",
+      "text": "You all will pay for Nãot Ajudaing me!"
+    },
+    "monster.bosses.armenius.voice_1": {
+      "src_hash": "fd67eda43a170748017f5857753a44e0",
+      "text": "You kNãow what, I changed my mind. BRING IT!"
+    },
+    "monster.bosses.armenius.yell_2": {
+      "src_hash": "fd67eda43a170748017f5857753a44e0",
+      "text": "You kNãow what, I changed my mind. BRING IT!"
+    },
+    "monster.bosses.robby_the_reckless.voice_3": {
+      "src_hash": "2ee073b54bb0017d6366d171608ec5b9",
+      "text": "You won't get this Ouro!"
+    },
+    "monster.bosses.robby_the_reckless.voice_4": {
+      "src_hash": "19b04290f72c64a7a32d2715c700db14",
+      "text": "This is MY Ouro Nãow!"
+    },
+    "monster.bosses.robby_the_reckless.yell_7": {
+      "src_hash": "2ee073b54bb0017d6366d171608ec5b9",
+      "text": "You won't get this Ouro!"
+    },
+    "monster.bosses.robby_the_reckless.yell_8": {
+      "src_hash": "19b04290f72c64a7a32d2715c700db14",
+      "text": "This is MY Ouro Nãow!"
+    },
+    "monster.bosses.the_abomination.voice_5": {
+      "src_hash": "9984d731db004d69a7262ea9102a2fef",
+      "text": "YOU CAN NãoT ESCAPE ME!"
+    },
+    "monster.bosses.the_abomination.yell_21": {
+      "src_hash": "9984d731db004d69a7262ea9102a2fef",
+      "text": "YOU CAN NãoT ESCAPE ME!"
+    },
+    "monster.bosses.mad_mage.voice_1": {
+      "src_hash": "3a9d7dddcf08b37e71d6ea1ec29d6035",
+      "text": "Did it Nãot come to your mind that I placed them here for a reason?"
+    },
+    "monster.bosses.mad_mage.voice_2": {
+      "src_hash": "34ee8995a7ded1a2e27087206bf16135",
+      "text": "Nãow I have to create new servants! Do you want to spread this pest beyond these safe walls?"
+    },
+    "monster.bosses.rukor_zad.voice_4": {
+      "src_hash": "41d4c663412e628c60dc03ac441d8fc8",
+      "text": "You are Não match for a master assassin!"
+    },
+    "monster.bosses.rukor_zad.yell_9": {
+      "src_hash": "41d4c663412e628c60dc03ac441d8fc8",
+      "text": "You are Não match for a master assassin!"
+    },
+    "monster.bosses.zevelon_duskbringer.voice_3": {
+      "src_hash": "b846515bb4e74ae201b0f449f7418514",
+      "text": "I will be still around when my 'Nãoble' race is gone."
+    },
+    "monster.bosses.zevelon_duskbringer.voice_4": {
+      "src_hash": "7deb1dc8eb391a359c091e584eb00ce8",
+      "text": "Human blood is Nãot suitable for drinking!"
+    },
+    "monster.bosses.zevelon_duskbringer.yell_9": {
+      "src_hash": "7deb1dc8eb391a359c091e584eb00ce8",
+      "text": "Human blood is Nãot suitable for drinking!"
+    },
+    "monster.bosses.elvira_hammerthrust.voice_2": {
+      "src_hash": "6f104dd2523d40aeebaba1c136fa0ca9",
+      "text": "Hail Não one except for me!"
+    },
+    "monster.bosses.elvira_hammerthrust.yell_6": {
+      "src_hash": "6f104dd2523d40aeebaba1c136fa0ca9",
+      "text": "Hail Não one except for me!"
+    },
+    "monster.bosses.energized_raging_mage.voice_4": {
+      "src_hash": "4afd7936f837f55edfbf94325b3c06c6",
+      "text": "MWAAAHAHAAA!! Não ONE!! Não ONE CAN DEFEAT MEEE!!!"
+    },
+    "monster.bosses.energized_raging_mage.yell_8": {
+      "src_hash": "4afd7936f837f55edfbf94325b3c06c6",
+      "text": "MWAAAHAHAAA!! Não ONE!! Não ONE CAN DEFEAT MEEE!!!"
+    },
+    "monster.bosses.mad_technomancer.voice_2": {
+      "src_hash": "7c06fd72669b5e91ab6ad7c25bdbbda6",
+      "text": "My masterplan canNãot fail!"
+    },
+    "monster.bosses.mad_technomancer.yell_5": {
+      "src_hash": "7c06fd72669b5e91ab6ad7c25bdbbda6",
+      "text": "My masterplan canNãot fail!"
+    },
+    "monster.bosses.dharalion.voice_2": {
+      "src_hash": "ea0f67f72abbee28b0230f565a3e84c7",
+      "text": "Não one will stop my ascension!"
+    },
+    "monster.bosses.dharalion.yell_7": {
+      "src_hash": "ea0f67f72abbee28b0230f565a3e84c7",
+      "text": "Não one will stop my ascension!"
+    },
+    "monster.bosses.mornenion.voice_4": {
+      "src_hash": "f4dbd1d3a0a117d86697c4737a81a867",
+      "text": "You humans have eNãough to spare. We live in poverty."
+    },
+    "monster.bosses.apprentice_sheng.voice_4": {
+      "src_hash": "f2974931f1bdd59aee13ca75febbdef7",
+      "text": "You already kNãow too much."
+    },
+    "monster.bosses.groam.voice_1": {
+      "src_hash": "390f292d6c9ef4274f0c6a76f6032f54",
+      "text": "I sjaw the eSim of the djeep!"
+    },
+    "monster.bosses.groam.yell_4": {
+      "src_hash": "390f292d6c9ef4274f0c6a76f6032f54",
+      "text": "I sjaw the eSim of the djeep!"
+    },
+    "monster.bosses.diblis_the_fair.voice_1": {
+      "src_hash": "cc6cf9202e2c43ad165a156ff0de2c1e",
+      "text": "Nãot in my face you barbarian!"
+    },
+    "monster.bosses.diblis_the_fair.yell_5": {
+      "src_hash": "cc6cf9202e2c43ad165a156ff0de2c1e",
+      "text": "Nãot in my face you barbarian!"
+    },
+    "monster.bosses.morshabaal.voice_2": {
+      "src_hash": "3c17e32f4ee357ea46b862de271f831b",
+      "text": "You are starting to anNãoy me!"
+    },
+    "monster.bosses.morshabaal.voice_3": {
+      "src_hash": "ba47a14d4470e5c3631350d292634186",
+      "text": "I will restore our family hoNãor!"
+    },
+    "monster.bosses.morshabaal.yell_5": {
+      "src_hash": "3c17e32f4ee357ea46b862de271f831b",
+      "text": "You are starting to anNãoy me!"
+    },
+    "monster.bosses.morshabaal.yell_6": {
+      "src_hash": "ba47a14d4470e5c3631350d292634186",
+      "text": "I will restore our family hoNãor!"
+    },
+    "monster.bosses.the_flaming_orchid.voice_1": {
+      "src_hash": "1875ff208c41e4342b23e526e8d39e8d",
+      "text": "I will end your torment. Do Nãot run, little mortal."
+    },
+    "monster.bosses.mitmah_vanguard.voice_1": {
+      "src_hash": "9f32202f619fb144f291f84260d0fc2f",
+      "text": "Die, human. Nãow!"
+    },
+    "monster.bosses.mitmah_vanguard.voice_5": {
+      "src_hash": "523b57910746e855a162c1f1494e7936",
+      "text": "NãoW TREMBLE!"
+    },
+    "monster.bosses.mitmah_vanguard.yell_6": {
+      "src_hash": "9f32202f619fb144f291f84260d0fc2f",
+      "text": "Die, human. Nãow!"
+    },
+    "monster.bosses.mitmah_vanguard.yell_8": {
+      "src_hash": "523b57910746e855a162c1f1494e7936",
+      "text": "NãoW TREMBLE!"
+    },
+    "monster.bosses.mitmah_vanguard.yell_9": {
+      "src_hash": "2451b703155445638874abda99307d78",
+      "text": "GOT YOU NãoW!"
+    },
+    "monster.bosses.teleskor.voice_2": {
+      "src_hash": "e589ca95388f32c46abcea8430aee205",
+      "text": "Mourn the dead, do Nãot hunt them!"
+    },
+    "monster.bosses.teleskor.yell_3": {
+      "src_hash": "e589ca95388f32c46abcea8430aee205",
+      "text": "Mourn the dead, do Nãot hunt them!"
+    },
+    "monster.bosses.jesse_the_wicked.voice_2": {
+      "src_hash": "c4a0b79f59cbd27be5901664da657972",
+      "text": "You will Nãot take this Ouro from me!"
+    },
+    "monster.bosses.jesse_the_wicked.yell_7": {
+      "src_hash": "c4a0b79f59cbd27be5901664da657972",
+      "text": "You will Nãot take this Ouro from me!"
+    },
+    "monster.extra_dimensional.mitmah_scout.voice_3": {
+      "src_hash": "12c5e1f9eb4998a959632568e28959d7",
+      "text": "This belongs to us Nãow!"
+    },
+    "monster.extra_dimensional.mitmah_scout.yell_6": {
+      "src_hash": "12c5e1f9eb4998a959632568e28959d7",
+      "text": "This belongs to us Nãow!"
+    },
+    "monster.giants.cyclops_smith.voice_1": {
+      "src_hash": "b15c254bd1fff9838912c7a4025985e5",
+      "text": "Outis emoi g' oNãoma."
+    },
+    "monster.giants.cyclops_smith.voice_3": {
+      "src_hash": "aa53709f900235390e50bfab82a8c529",
+      "text": "Ai humy phary ty kayNãon"
+    },
+    "monster.giants.frost_giantess.voice_2": {
+      "src_hash": "e63c692e16cff0644ec6b2681718f4e6",
+      "text": "Não run so much, must stay fat!"
+    },
+    "monster.giants.frost_giantess.yell_7": {
+      "src_hash": "e63c692e16cff0644ec6b2681718f4e6",
+      "text": "Não run so much, must stay fat!"
+    },
+    "monster.stone_devourer.name": {
+      "src_hash": "f3438daa15ed0904727d1eb45902efd9",
+      "text": "Ouro coin"
+    },
+    "monster.golden_servant_replica.name": {
+      "src_hash": "957c4b199ad13617f92ebf557bf8fa10",
+      "text": "Ouroen Servant Replica"
+    },
+    "monster.golden_servant_replica.desc": {
+      "src_hash": "d9541eddc1334370fd725415e38a9940",
+      "text": "a Ouroen servant replica"
+    },
+    "monster.animated_snowman.name": {
+      "src_hash": "18f68ac12ddc5c6544334e3800b0a590",
+      "text": "Animated SNãowman"
+    },
+    "monster.animated_snowman.desc": {
+      "src_hash": "98f6ff90b2ad9cfc4c835363fdcc09b9",
+      "text": "an animated sNãowman"
+    },
+    "monster.golden_servant.name": {
+      "src_hash": "9e837df4ac3350049a0ce44def84b265",
+      "text": "Ouroen Servant"
+    },
+    "monster.golden_servant.desc": {
+      "src_hash": "902b471cc823171d49de4da19d7f5599",
+      "text": "a Ouroen servant"
+    },
+    "monster.son_of_verminor.name": {
+      "src_hash": "a4b3604c5a94ecf44596273fccf95d45",
+      "text": "Son of VermiNãor"
+    },
+    "monster.son_of_verminor.desc": {
+      "src_hash": "780fe635adc3673196447f10e12c529d",
+      "text": "a son of vermiNãor"
+    },
+    "monster.minotaur_bruiser.name": {
+      "src_hash": "b61c791d7ed0e327d33ba5ce20bb7f4a",
+      "text": "MiNãotaur Bruiser"
+    },
+    "monster.minotaur_bruiser.desc": {
+      "src_hash": "0d1f326db3467763972fa1fe6cb2fad0",
+      "text": "a miNãotaur bruiser"
+    },
+    "monster.minotaur_guard.name": {
+      "src_hash": "2af164b2a2fe0bda0daba8562a64f863",
+      "text": "MiNãotaur Guard"
+    },
+    "monster.minotaur_guard.desc": {
+      "src_hash": "20aec1cd1af8cd17c4cb7d5490d47e42",
+      "text": "a miNãotaur guard"
+    },
+    "monster.minotaur_amazon.name": {
+      "src_hash": "be37e72b953c0db5259fbcf77c31c418",
+      "text": "MiNãotaur Amazon"
+    },
+    "monster.minotaur_amazon.desc": {
+      "src_hash": "55da6d9f62f81077729eee088cbdb13b",
+      "text": "a miNãotaur amazon"
+    },
+    "monster.minotaur_totem.name": {
+      "src_hash": "2375a9940dfd1b9180658e927b1fd898",
+      "text": "MiNãotaur Totem"
+    },
+    "monster.minotaur_totem.desc": {
+      "src_hash": "8f55a055caee6015422ed955ced25d45",
+      "text": "a miNãotaur totem"
+    },
+    "monster.minotaur_mage.name": {
+      "src_hash": "59a8367246ce86abf56d7952814e638e",
+      "text": "MiNãotaur Mage"
+    },
+    "monster.minotaur_mage.desc": {
+      "src_hash": "ba76ac24dfb3df665258f580af755cec",
+      "text": "a miNãotaur mage"
+    },
+    "monster.minotaur_poacher.name": {
+      "src_hash": "8c0d7bfaff875ed9d5829cef9e853fa1",
+      "text": "MiNãotaur Poacher"
+    },
+    "monster.minotaur_poacher.desc": {
+      "src_hash": "ae4106527ccea544821e119ce4bc40bb",
+      "text": "a miNãotaur poacher"
+    },
+    "monster.minotaur_occultist.name": {
+      "src_hash": "f87ee93ec2e6f1382c3f45d5b78b2898",
+      "text": "MiNãotaur Occultist"
+    },
+    "monster.minotaur_occultist.desc": {
+      "src_hash": "f4f4fbfa60682535e6d90f8205b4ded0",
+      "text": "a miNãotaur occultist"
+    },
+    "monster.minotaur_cult_zealot.name": {
+      "src_hash": "c6d0cc07c1a6c394cb8e76803a18ba57",
+      "text": "MiNãotaur Cult Zealot"
+    },
+    "monster.minotaur_cult_zealot.desc": {
+      "src_hash": "362726fc10e55f43348b2ec4fe84afc4",
+      "text": "a miNãotaur cult zealot"
+    },
+    "monster.minotaur.name": {
+      "src_hash": "db4e0c60689b5789486e695c6ae30fb9",
+      "text": "MiNãotaur"
+    },
+    "monster.minotaur.desc": {
+      "src_hash": "598bf14e1d8ba33870869d117d9126a1",
+      "text": "a miNãotaur"
+    },
+    "monster.minotaur_cult_follower.name": {
+      "src_hash": "2c407009b19b2f0ef0d46c2a4e2e3174",
+      "text": "MiNãotaur Cult Follower"
+    },
+    "monster.minotaur_cult_follower.desc": {
+      "src_hash": "d67f9b74182c9a5f4f0f1529ab828f2d",
+      "text": "a miNãotaur cult follower"
+    },
+    "monster.minotaur_archer.name": {
+      "src_hash": "cc02985d6e73d1afa9a4d1efe2ee32f5",
+      "text": "MiNãotaur Archer"
+    },
+    "monster.minotaur_archer.desc": {
+      "src_hash": "670825f085ad5d8a599f2ff3a805d139",
+      "text": "a miNãotaur archer"
+    },
+    "monster.minotaur_cult_prophet.name": {
+      "src_hash": "da244c536134aaf40fbd866b14e4ad9d",
+      "text": "MiNãotaur Cult Prophet"
+    },
+    "monster.minotaur_cult_prophet.desc": {
+      "src_hash": "1ce144ff60bdc01898e80194ec46ccb6",
+      "text": "a miNãotaur cult prophet"
+    },
+    "monster.dworc_venomsniper.name": {
+      "src_hash": "6e0ab5d88982800cdfcedab8a857b8e2",
+      "text": "Dworc VeNãomsniper"
+    },
+    "monster.dworc_venomsniper.desc": {
+      "src_hash": "63ed456cd5df5e5cfcf5de4fb54f98bf",
+      "text": "a dworc veNãomsniper"
+    },
+    "monster.minotaur_invader.name": {
+      "src_hash": "74f63b140b54bf40aa92a94ed9ff3e93",
+      "text": "MiNãotaur Invader"
+    },
+    "monster.minotaur_invader.desc": {
+      "src_hash": "2fcc1540851bb69c5971b7da1b941172",
+      "text": "a miNãotaur invader"
+    },
+    "monster.glooth_powered_minotaur.name": {
+      "src_hash": "dc2d82364c11d204f9cba07a3dbfa67c",
+      "text": "Glooth Powered MiNãotaur"
+    },
+    "monster.glooth_powered_minotaur.desc": {
+      "src_hash": "33be1baea16ae2f39d4851e34eb97f22",
+      "text": "a glooth powered miNãotaur"
+    },
+    "monster.minotaur_hunter.name": {
+      "src_hash": "7f7c3dcca16fb3e07b4d633c15a0260a",
+      "text": "MiNãotaur Hunter"
+    },
+    "monster.minotaur_hunter.desc": {
+      "src_hash": "de511ca2769aa2b40e5946150f299c1f",
+      "text": "a miNãotaur hunter"
+    },
+    "monster.goldhanded_cultist.name": {
+      "src_hash": "2225807ad0d0ccf8627ec0c7839af989",
+      "text": "Ourohanded Cultist"
+    },
+    "monster.goldhanded_cultist.desc": {
+      "src_hash": "a1030742c74c8e0e71c6d21c06d8da75",
+      "text": "a Ourohanded cultist"
+    },
+    "monster.animated_rhino.name": {
+      "src_hash": "056e94112c574ef9c8fa6cd89849ec27",
+      "text": "Animated Stone RhiNão"
+    },
+    "monster.animated_rhino.desc": {
+      "src_hash": "a2d878a60ed937fd934515ebe9f62d7f",
+      "text": "an animated stone rhiNão"
+    },
+    "monster.minotaur_idol.name": {
+      "src_hash": "d13e77436d22bb987d0728d9b90d875d",
+      "text": "MiNãotaur Idol"
+    },
+    "monster.minotaur_idol.desc": {
+      "src_hash": "b12cee673418af3b5595f0417820247d",
+      "text": "a miNãotaur idol"
+    },
+    "monster.ravenous_hunger.name": {
+      "src_hash": "a14ebfe23c96e38bb9f054822a377d61",
+      "text": "RaveNãous Hunger"
+    },
+    "monster.ravenous_hunger.desc": {
+      "src_hash": "a14ebfe23c96e38bb9f054822a377d61",
+      "text": "RaveNãous Hunger"
+    },
+    "monster.the_noxious_spawn.name": {
+      "src_hash": "6f78fa208e963e99e7a6af37c45bcca9",
+      "text": "The Nãoxious Spawn"
+    },
+    "monster.the_noxious_spawn.desc": {
+      "src_hash": "6f78fa208e963e99e7a6af37c45bcca9",
+      "text": "The Nãoxious Spawn"
+    },
+    "monster.norgle_glacierbeard.name": {
+      "src_hash": "b25a51bb169604a46fcf1b14d11f3701",
+      "text": "Nãorgle Glacierbeard"
+    },
+    "monster.norgle_glacierbeard.desc": {
+      "src_hash": "b25a51bb169604a46fcf1b14d11f3701",
+      "text": "Nãorgle Glacierbeard"
+    },
+    "monster.gnorre_chyllson.name": {
+      "src_hash": "7c32303e589d4d00d36060228150c708",
+      "text": "GNãorre Chyllson"
+    },
+    "monster.gnorre_chyllson.desc": {
+      "src_hash": "7c32303e589d4d00d36060228150c708",
+      "text": "GNãorre Chyllson"
+    },
+    "monster.anomaly.name": {
+      "src_hash": "7da87aa189dbd7fce58b3a28596baddc",
+      "text": "ANãomaly"
+    },
+    "monster.anomaly.desc": {
+      "src_hash": "6aa8906d8a8df9d23ba996c431d73144",
+      "text": "aNãomaly"
+    },
+    "monster.charged_anomaly.name": {
+      "src_hash": "61003af93fdcaf44dedada1489eab56a",
+      "text": "Charged ANãomaly"
+    },
+    "monster.charged_anomaly.desc": {
+      "src_hash": "ee6e4a652c42d34397704c52abb7f13b",
+      "text": "a charged aNãomaly"
+    },
+    "monster.lost_gnome.name": {
+      "src_hash": "7a18ee63cd1bb81fe2a4e20c64aad692",
+      "text": "Lost GNãome"
+    },
+    "monster.lost_gnome.desc": {
+      "src_hash": "db4c898a666cc45bfbed6099c549a81f",
+      "text": "a lost gNãome"
+    },
+    "monster.gnome_pack_crawler.name": {
+      "src_hash": "b0f1fa858642799eaf8fb9a3edf56448",
+      "text": "GNãome Pack Crawler"
+    },
+    "monster.gnome_pack_crawler.desc": {
+      "src_hash": "8ef03da401b3e7da5beb1aca98ed1f04",
+      "text": "a gNãome pack crawler"
+    },
+    "monster.ugly_monster.name": {
+      "src_hash": "99526855b34f26c8ed537252bf60c256",
+      "text": "Ugly Monstro"
+    },
+    "monster.ugly_monster.desc": {
+      "src_hash": "3aafec1a4b27c018ce45e9c4e26b7685",
+      "text": "an ugly Monstro"
+    },
+    "monster.canopic_jar.name": {
+      "src_hash": "4709a140044348708dc4843da3b293f2",
+      "text": "CaNãopic Jar"
+    },
+    "monster.canopic_jar.desc": {
+      "src_hash": "2f971bcdb8390b6eba3a03ce3e3ec1c2",
+      "text": "a caNãopic jar"
+    },
+    "monster.greater_canopic_jar.name": {
+      "src_hash": "37b0b50f7005876af8412fd365166166",
+      "text": "Greater CaNãopic Jar"
+    },
+    "monster.greater_canopic_jar.desc": {
+      "src_hash": "35a5f8a1abecc147ca114caa155999cd",
+      "text": "a greater caNãopic jar"
+    },
+    "monster.depowered_minotaur.name": {
+      "src_hash": "4c5f2835b0817ef571f7f25f5786b982",
+      "text": "Depowered MiNãotaur"
+    },
+    "monster.depowered_minotaur.desc": {
+      "src_hash": "3800c44ff0dfc89616853877a54d3cf9",
+      "text": "a depowered miNãotaur"
+    },
+    "monster.gnomevil.name": {
+      "src_hash": "aff95f8799675c0e72f410396696b2e5",
+      "text": "GNãomevil"
+    },
+    "monster.gnomevil.desc": {
+      "src_hash": "aff95f8799675c0e72f410396696b2e5",
+      "text": "GNãomevil"
+    },
+    "monster.ravenous_beyondling.name": {
+      "src_hash": "d2ec8ab62cf5b3a9dfca75f1d8f9811b",
+      "text": "RaveNãous Beyondling"
+    },
+    "monster.ravenous_beyondling.desc": {
+      "src_hash": "3a4e57e2f4a5626bc75bdfec59612f65",
+      "text": "a raveNãous beyondling"
+    },
+    "monster.stolen_knowledge_of_lifesteal.name": {
+      "src_hash": "97f68f24daae84ba86b33807b8840609",
+      "text": "Stolen KNãowledge of Lifesteal"
+    },
+    "monster.stolen_knowledge_of_lifesteal.desc": {
+      "src_hash": "d4b2acf87ab30a34d1f1cc6376069484",
+      "text": "a stolen kNãowledge of lifesteal"
+    },
+    "monster.stolen_knowledge_of_summoning.name": {
+      "src_hash": "2495c7c6f4eb4f5bbdac79224c6b7a6d",
+      "text": "Stolen KNãowledge of Summoning"
+    },
+    "monster.stolen_knowledge_of_summoning.desc": {
+      "src_hash": "1cf41aba39bada1815e18a1264561b42",
+      "text": "a stolen kNãowledge of summoning"
+    },
+    "monster.dark_knowledge.name": {
+      "src_hash": "e3c52c13e393c043d934dd69cdcf6dd9",
+      "text": "Dark KNãowledge"
+    },
+    "monster.dark_knowledge.desc": {
+      "src_hash": "e3c52c13e393c043d934dd69cdcf6dd9",
+      "text": "Dark KNãowledge"
+    },
+    "monster.stolen_knowledge_of_healing.name": {
+      "src_hash": "4a36eb6f474f41dc491b7b2d52569331",
+      "text": "Stolen KNãowledge of Healing"
+    },
+    "monster.stolen_knowledge_of_healing.desc": {
+      "src_hash": "a056f36b6a8ecacf0f0a1a51089aacdf",
+      "text": "a stolen kNãowledge of healing"
+    },
+    "monster.stolen_knowledge_of_spells.name": {
+      "src_hash": "0030031c799568e25cf099acbd0ae42d",
+      "text": "Stolen KNãowledge of Spells"
+    },
+    "monster.stolen_knowledge_of_spells.desc": {
+      "src_hash": "d46bf47b3668ce4c6eee5b1f87847ca6",
+      "text": "a stolen kNãowledge of spells"
+    },
+    "monster.supercharged_mazzinor.name": {
+      "src_hash": "62db3f3b1429bf5096ad6dd7554c76d8",
+      "text": "Supercharged MazziNãor"
+    },
+    "monster.supercharged_mazzinor.desc": {
+      "src_hash": "62db3f3b1429bf5096ad6dd7554c76d8",
+      "text": "Supercharged MazziNãor"
+    },
+    "monster.wild_knowledge.name": {
+      "src_hash": "0c4936571133849f9aa674ab6cf1fb7c",
+      "text": "Wild KNãowledge"
+    },
+    "monster.wild_knowledge.desc": {
+      "src_hash": "cdf62406f76c90ac6247a09ad24a355a",
+      "text": "a wild kNãowledge"
+    },
+    "monster.knowledge_raider.name": {
+      "src_hash": "6884a734b38551b8f9ceaba3f209d091",
+      "text": "KNãowledge Raider"
+    },
+    "monster.knowledge_raider.desc": {
+      "src_hash": "a3274b2e6edf87addce026029e8c1d43",
+      "text": "a kNãowledge raider"
+    },
+    "monster.stolen_knowledge_of_armor.name": {
+      "src_hash": "dc84e83915aac211ce9b578da180c6b2",
+      "text": "Stolen KNãowledge of Armor"
+    },
+    "monster.stolen_knowledge_of_armor.desc": {
+      "src_hash": "3a37d84c008fd91e340f86c6942465c3",
+      "text": "a stolen kNãowledge of armor"
+    },
+    "monster.mazzinor.name": {
+      "src_hash": "331564544f3a649735f61dfa5d0df8e4",
+      "text": "MazziNãor"
+    },
+    "monster.mazzinor.desc": {
+      "src_hash": "331564544f3a649735f61dfa5d0df8e4",
+      "text": "MazziNãor"
+    },
+    "monster.grand_canon_dominus.name": {
+      "src_hash": "94e485868f278b0c354166b8e918f145",
+      "text": "Grand CaNãon Dominus"
+    },
+    "monster.grand_canon_dominus.desc": {
+      "src_hash": "94e485868f278b0c354166b8e918f145",
+      "text": "Grand CaNãon Dominus"
+    },
+    "monster.srezz_yellow_eyes.name": {
+      "src_hash": "3b63cd28cbeb669445078d6a474a1c1b",
+      "text": "Srezz Yellow ESim"
+    },
+    "monster.srezz_yellow_eyes.desc": {
+      "src_hash": "3b63cd28cbeb669445078d6a474a1c1b",
+      "text": "Srezz Yellow ESim"
+    },
+    "monster.the_unwelcome.name": {
+      "src_hash": "1681bf894750ce5399dffada6231a40a",
+      "text": "The UnBem-vindo"
+    },
+    "monster.the_unwelcome.desc": {
+      "src_hash": "1681bf894750ce5399dffada6231a40a",
+      "text": "The UnBem-vindo"
+    },
+    "monster.magnor_mournbringer.name": {
+      "src_hash": "1633dcf0bf15e2cc43bab09ecf9ec4fa",
+      "text": "MagNãor Mournbringer"
+    },
+    "monster.magnor_mournbringer.desc": {
+      "src_hash": "578cd8eac670883d403862b0c8ab8678",
+      "text": "a magNãor mournbringer"
+    },
+    "monster.shard_of_magnor.name": {
+      "src_hash": "c1eb54ad8d3f90538036bdbe6f566039",
+      "text": "Shard of MagNãor"
+    },
+    "monster.shard_of_magnor.desc": {
+      "src_hash": "fc7f43bbd1454da339ad8cc7098b9a72",
+      "text": "a shard of MagNãor"
+    },
+    "monster.cart_packed_with_gold.name": {
+      "src_hash": "79ea322871a9d59103d8c8ac1222ab19",
+      "text": "Cart Packed with Ouro"
+    },
+    "monster.cart_packed_with_gold.desc": {
+      "src_hash": "c07178c5c814c8a84a05e11d140a4517",
+      "text": "a cart packed with Ouro"
+    },
+    "monster.honour_guard.name": {
+      "src_hash": "57d8bd289a8526a150401161f91a2561",
+      "text": "HoNãour Guard"
+    },
+    "monster.honour_guard.desc": {
+      "src_hash": "bc1fc436fc30d3a58f6c76efe5f4acc0",
+      "text": "a hoNãour guard"
+    },
+    "monster.spyrat_facing_north.name": {
+      "src_hash": "67e6b06026221cd884b375606d9bafd3",
+      "text": "Spyrat Nãorth"
+    },
+    "monster.noble_lion.name": {
+      "src_hash": "2a40808af2d9abc7858e681bd905da39",
+      "text": "Nãoble Lion"
+    },
+    "monster.noble_lion.desc": {
+      "src_hash": "5972749a471894fa53f860381dc8f450",
+      "text": "a Nãoble lion"
+    },
+    "monster.stone_rhino.name": {
+      "src_hash": "5c540393593181b3ddf5464611e400ca",
+      "text": "Stone RhiNão"
+    },
+    "monster.stone_rhino.desc": {
+      "src_hash": "04128ce62a6463e311e7fb12283eb953",
+      "text": "a stone rhiNão"
+    },
+    "monster.northern_pike.name": {
+      "src_hash": "abc037fcfd90229902777d838836b76f",
+      "text": "Nãorthern Pike"
+    },
+    "monster.northern_pike.desc": {
+      "src_hash": "722b94fed527027ba29ee8ed721a7411",
+      "text": "a Nãorthern pike"
+    },
+    "monster.nomad.name": {
+      "src_hash": "aef878e6f44bed61b63c5c91bfdd756c",
+      "text": "Nãomad"
+    },
+    "monster.nomad.desc": {
+      "src_hash": "db3794e8ca6b9c2cff4d0bf57365b61a",
+      "text": "a Nãomad"
+    },
+    "monster.poisonous_carnisylvan.name": {
+      "src_hash": "4ce1d31adbd915a7946ab4e4da789f8c",
+      "text": "PoisoNãous Carnisylvan"
+    },
+    "monster.poisonous_carnisylvan.desc": {
+      "src_hash": "83042dd7dbf63ff87153e24e9ee94b1a",
+      "text": "a poisoNãous carnisylvan"
+    },
+    "monster.nomad_blue.name": {
+      "src_hash": "2c92833d091ee89cdb435e300104d449",
+      "text": "Nãomad Blue"
+    },
+    "monster.nomad_blue.desc": {
+      "src_hash": "db3794e8ca6b9c2cff4d0bf57365b61a",
+      "text": "a Nãomad"
+    },
+    "monster.novice_of_the_cult.name": {
+      "src_hash": "183315887f01d202ab48cdc37cd4f328",
+      "text": "Nãovice of the Cult"
+    },
+    "monster.novice_of_the_cult.desc": {
+      "src_hash": "cf558ca26325c65ac5ecee2d736a49bb",
+      "text": "a Nãovice of the cult"
+    },
+    "monster.nomad_female.name": {
+      "src_hash": "d3aa74e28d008aff7417f8b49891b36d",
+      "text": "Nãomad Female"
+    },
+    "monster.nomad_female.desc": {
+      "src_hash": "db3794e8ca6b9c2cff4d0bf57365b61a",
+      "text": "a Nãomad"
+    },
+    "monster.lizard_noble.name": {
+      "src_hash": "3d8256d32b395b3a3972e0e7e0e79241",
+      "text": "Lizard Nãoble"
+    },
+    "monster.lizard_noble.desc": {
+      "src_hash": "d499860acf2d5d34a6b2882034e389d9",
+      "text": "a lizard Nãoble"
+    },
+    "monster.noxious_ripptor.name": {
+      "src_hash": "e284312d1c0d9f294552282c67849b8f",
+      "text": "Nãoxious Ripptor"
+    },
+    "monster.noxious_ripptor.desc": {
+      "src_hash": "cec62c68248a9f6c923f013231f9ad5c",
+      "text": "a Nãoxious ripptor"
+    },
+    "monster.ravenous_lava_lurker.name": {
+      "src_hash": "993b05405d43d4aad132e47632cfbf48",
+      "text": "RaveNãous Lava Lurker"
+    },
+    "monster.ravenous_lava_lurker.desc": {
+      "src_hash": "00a0bb7d2588fb8678a270ab343eaed0",
+      "text": "a raveNãous lava lurker"
+    },
+    "monster.knowledge_elemental.name": {
+      "src_hash": "0eb508cc847d3666285f2326f0ea5940",
+      "text": "KNãowledge Elemental"
+    },
+    "monster.knowledge_elemental.desc": {
+      "src_hash": "e67667a84f97be9ce9d22d5f64118cf1",
+      "text": "a kNãowledge elemental"
+    },
+    "monster.arachnophobica.name": {
+      "src_hash": "b2473f65fdee04aa674b51cf15765d56",
+      "text": "ArachNãophobica"
+    },
+    "monster.arachnophobica.desc": {
+      "src_hash": "b819ff1d32a8a20b8ecd94e43da2307d",
+      "text": "an arachNãophobica"
+    },
+    "monster.mad_technomancer.name": {
+      "src_hash": "75b3727c5bf17422885def0e5ed2a05e",
+      "text": "Mad TechNãomancer"
+    },
+    "monster.mad_technomancer.desc": {
+      "src_hash": "f7b5d449b45427235bf8621ff31db893",
+      "text": "mad techNãomancer"
+    },
+    "monster.verminor.name": {
+      "src_hash": "b8d189a33f0310bc9b0519e05f948e58",
+      "text": "VermiNãor"
+    },
+    "monster.verminor.desc": {
+      "src_hash": "b8d189a33f0310bc9b0519e05f948e58",
+      "text": "VermiNãor"
+    },
+    "monster.kraknaknork.name": {
+      "src_hash": "acd0f73d9f0ef09b471d198578f1cd04",
+      "text": "KraknakNãork"
+    },
+    "monster.kraknaknork.desc": {
+      "src_hash": "acd0f73d9f0ef09b471d198578f1cd04",
+      "text": "KraknakNãork"
+    },
+    "monster.the_monster.name": {
+      "src_hash": "6e987c339566a3cb6d7b0b4618416500",
+      "text": "The Monstro"
+    },
+    "monster.the_monster.desc": {
+      "src_hash": "6e987c339566a3cb6d7b0b4618416500",
+      "text": "The Monstro"
     }
   }
 }

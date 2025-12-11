@@ -147,7 +147,7 @@
 #AUTO:es:startup.json:10  # Wykonano 2025-12-11 03:10:10
 
 #AUTO:pt:items.json:10  # Wykonano 2025-12-11 03:10:19
-AUTO:pt:monsters.json:10
+#AUTO:pt:monsters.json:10  # Wykonano 2025-12-11 03:10:27
 AUTO:pt:scripts.json:10
 AUTO:pt:spells.json:10
 AUTO:pt:html.json:10
@@ -171,3 +171,4 @@ AUTO:pt:startup.json:10
 # [2025-12-11 03:10:02] Wykonano: AUTO:es:events.json:10
 # [2025-12-11 03:10:10] Wykonano: AUTO:es:startup.json:10
 # [2025-12-11 03:10:19] Wykonano: AUTO:pt:items.json:10
+# [2025-12-11 03:10:27] Wykonano: AUTO:pt:monsters.json:10

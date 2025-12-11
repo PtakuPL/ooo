@@ -228,7 +228,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:53:14.430695"
+      "completed_at": "2025-12-11T21:54:04.120854"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -450,7 +450,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:53:15.874493"
+      "completed_at": "2025-12-11T21:54:05.917672"
     },
     "data-otservbr-global/npc/bertram.lua": {
       "stages": {
@@ -682,7 +682,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:53:18.194741"
+      "completed_at": "2025-12-11T21:54:07.499598"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -908,7 +908,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:53:19.696332"
+      "completed_at": "2025-12-11T21:54:08.868443"
     },
     "data-otservbr-global/npc/cranky_lizard_crone.lua": {
       "stages": {
@@ -1138,7 +1138,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:53:21.090085"
+      "completed_at": "2025-12-11T21:54:10.162961"
     },
     "data-otservbr-global/npc/sundara.lua": {
       "stages": {
@@ -1253,7 +1253,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:53:22.754234"
+      "completed_at": "2025-12-11T21:54:11.625527"
     },
     "data-otservbr-global/npc/frans.lua": {
       "stages": {
@@ -1820,7 +1820,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:53:26.435009"
+      "completed_at": "2025-12-11T21:54:14.928498"
     },
     "data-otservbr-global/npc/mordecai.lua": {
       "stages": {
@@ -2276,7 +2276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:53:24.939890"
+      "completed_at": "2025-12-11T21:54:13.571399"
     },
     "data-otservbr-global/scripts/spells/monster/teleport_strike.lua": {
       "stages": {

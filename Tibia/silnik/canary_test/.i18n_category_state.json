@@ -13,7 +13,7 @@
     "creaturescripts": 1765501008.2631812,
     "globalevents": 1765501016.5790205,
     "items": 1765501026.6882732,
-    "mounts": 1765493813.0985725,
+    "mounts": 1765501038.8911884,
     "libs": 1765493824.429201,
     "events": 1765493833.6090808,
     "chatchannels": 1765493848.6677132,
@@ -87,7 +87,7 @@
     },
     "mounts": {
       "count": 0,
-      "timestamp": 1765490213.098567
+      "timestamp": 1765493838.8911781
     },
     "libs": {
       "count": 0,
@@ -172,7 +172,7 @@
     "creaturescripts": 6,
     "globalevents": 6,
     "items": 6,
-    "mounts": 4,
+    "mounts": 6,
     "libs": 4,
     "events": 4,
     "chatchannels": 4,

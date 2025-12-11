@@ -13747,6 +13747,10 @@
     "client.keybins.text4": {
       "src_hash": "5969789bc00f068ce14d9bd7a558996d",
       "text": "UnkНетwn chat mode"
+    },
+    "channel.help.name": {
+      "src_hash": "6a26f548831e6a8c26bfbbd9f6ec61e0",
+      "text": "Помощь"
     }
   },
   "pl": {

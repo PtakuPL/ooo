@@ -4096,8 +4096,8 @@ def count_files_needing_work(category):
                     continue
                 fpath = os.path.join(root, f)
                 
-                # Sprawdź czy plik nie jest już oznaczony jako completed
-                if fpath in completed_files:
+                # Sprawdź czy plik nie jest już oznaczony jako completed (dla NPC pozwól na ponowne przetwarzanie, np. voices)
+                if category != "npc" and fpath in completed_files:
                     continue
                 
                 try:

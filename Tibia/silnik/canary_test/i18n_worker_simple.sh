@@ -3215,6 +3215,156 @@ TWIGPY
 }
 
 #===============================================================================
+# PROCESS_GENERIC_CATEGORY - Generyczna funkcja dla nowych kategorii
+#===============================================================================
+# Obsługuje kategorie: actions, quests, talkactions, movements, creaturescripts,
+# globalevents, mounts, dataroot, server
+#===============================================================================
+process_generic_category() {
+    local category="$1"
+    local BATCH="${2:-10}"
+    
+    log "${CYAN}📂 GENERIC CATEGORY: $category (batch: $BATCH)${NC}"
+    
+    python3 << GENERICPY
+import json
+import os
+import re
+import glob
+
+category = "$category"
+BATCH = int("$BATCH")
+I18N_DIR = "i18n"
+PROCESSED_FILE = "i18n_processed_files.txt"
+
+# Wczytaj definicję kategorii z pliku Python w dispatcherze
+# Albo użyj prostszego podejścia - hardcoded dirs
+CATEGORY_DIRS = {
+    "actions": ["data-otservbr-global/scripts/actions", "data-canary/scripts/actions"],
+    "quests": ["data-otservbr-global/scripts/quests", "data-canary/scripts/quests"],
+    "talkactions": ["data-otservbr-global/scripts/talkactions", "data-canary/scripts/talkactions"],
+    "movements": ["data-otservbr-global/scripts/movements", "data-canary/scripts/movements"],
+    "creaturescripts": ["data-otservbr-global/scripts/creaturescripts", "data-canary/scripts/creaturescripts"],
+    "globalevents": ["data-otservbr-global/scripts/globalevents", "data-canary/scripts/globalevents"],
+    "mounts": ["data/XML"],
+    "dataroot": ["data"],
+    "server": ["src"]
+}
+
+dirs = CATEGORY_DIRS.get(category, [])
+if not dirs:
+    print(f"   ⚠️ Brak definicji katalogów dla: {category}")
+    exit(0)
+
+# Wczytaj już przetworzone pliki
+processed = set()
+if os.path.exists(PROCESSED_FILE):
+    with open(PROCESSED_FILE) as f:
+        processed = set(line.strip() for line in f)
+
+# Wczytaj/stwórz JSON dla kategorii
+json_file = f"{I18N_DIR}/en/{category}.json"
+if os.path.exists(json_file):
+    with open(json_file) as f:
+        data = json.load(f)
+else:
+    data = {}
+
+keys_added = 0
+files_processed = 0
+
+# Rozszerzenia plików
+extensions = [".lua"] if category not in ["mounts", "server"] else [".xml", ".cpp", ".hpp"]
+
+for dir_path in dirs:
+    if not os.path.isdir(dir_path):
+        continue
+    
+    # Dla dataroot - tylko główny folder
+    if category == "dataroot":
+        files = [f for f in os.listdir(dir_path) if f.endswith('.lua')]
+        files = [os.path.join(dir_path, f) for f in files]
+    else:
+        files = []
+        for ext in extensions:
+            files.extend(glob.glob(f"{dir_path}/**/*{ext}", recursive=True))
+    
+    for filepath in files:
+        marker = f"{category.upper()}:{filepath}"
+        if marker in processed:
+            continue
+        
+        try:
+            with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+                content = f.read()
+        except:
+            continue
+        
+        # Pomiń jeśli ma już i18n
+        if 'i18n' in content.lower() or 'sendLocalizedTextMessage' in content:
+            continue
+        
+        # Wyciągnij stringi
+        basename = os.path.basename(filepath).replace('.lua', '').replace('.xml', '').replace('.cpp', '').replace('.hpp', '')
+        safe_name = re.sub(r'[^a-z0-9_]', '_', basename.lower())
+        
+        local_keys = 0
+        
+        # Pattern: sendTextMessage(TYPE, "text")
+        stm_matches = re.findall(r'sendTextMessage\s*\([^,]+,\s*"([^"]{10,})"', content)
+        for i, text in enumerate(stm_matches, 1):
+            key = f"{category}.{safe_name}.msg_{i}"
+            if key not in data:
+                data[key] = text
+                keys_added += 1
+                local_keys += 1
+        
+        # Pattern: player:say("text")
+        say_matches = re.findall(r'player:say\s*\(\s*"([^"]{10,})"', content)
+        for i, text in enumerate(say_matches, 1):
+            key = f"{category}.{safe_name}.say_{i}"
+            if key not in data:
+                data[key] = text
+                keys_added += 1
+                local_keys += 1
+        
+        # Pattern: broadcastMessage("text")
+        broadcast_matches = re.findall(r'broadcastMessage\s*\(\s*"([^"]{10,})"', content)
+        for i, text in enumerate(broadcast_matches, 1):
+            key = f"{category}.{safe_name}.broadcast_{i}"
+            if key not in data:
+                data[key] = text
+                keys_added += 1
+                local_keys += 1
+        
+        # Zapisz marker
+        processed.add(marker)
+        
+        if local_keys > 0:
+            files_processed += 1
+            print(f"   📄 {basename}: +{local_keys} kluczy")
+        
+        if files_processed >= BATCH:
+            break
+    
+    if files_processed >= BATCH:
+        break
+
+# Zapisz JSON
+with open(json_file, 'w', encoding='utf-8') as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
+
+# Zapisz processed
+with open(PROCESSED_FILE, 'w') as f:
+    f.write('\n'.join(sorted(processed)))
+
+print(f"   📊 Razem: {files_processed} plików, +{keys_added} kluczy")
+GENERICPY
+    
+    log "${GREEN}✅ Generic ($category): Przetworzono${NC}"
+}
+
+#===============================================================================
 # SYNC TRANSLATION KEYS - Etap 1: Synchronizacja struktury kluczy
 #===============================================================================
 # Kopiuje klucze z EN do innych języków z prefixem [EN] 

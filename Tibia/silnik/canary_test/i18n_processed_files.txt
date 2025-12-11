@@ -3717,3 +3717,13 @@ testyy/modules/game_cyclopedia/tab/magicalArchives/magicalArchives.otui
 testyy/modules/game_cyclopedia/tab/magicalArchives/magicalArchives.lua
 testyy/modules/game_cyclopedia/tab/bosstiary/bosstiary.lua
 testyy/modules/game_cyclopedia/tab/bosstiary/bosstiary.otui
+html_copy/system/compat/pages.php
+html_copy/system/clients.conf.php
+html_copy/system/locale/sv/main.php
+html_copy/system/locale/sv/install.php
+html_copy/system/locale/sv/admin.php
+html_copy/system/locale/hu/main.php
+html_copy/system/locale/ro/main.php
+html_copy/system/locale/pt_br/main.php
+html_copy/system/locale/pt_br/install.php
+html_copy/system/locale/pt_br/admin.php

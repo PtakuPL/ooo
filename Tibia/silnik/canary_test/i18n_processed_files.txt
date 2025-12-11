@@ -4320,3 +4320,13 @@ src/items/items.cpp
 src/items/items.hpp
 src/items/thing.hpp
 src/items/item.hpp
+html_copy/system/libs/pot/OTS.php
+html_copy/system/libs/pot/InvitesDriver.php
+html_copy/system/libs/pot/OTS_SQLFilter.php
+html_copy/system/libs/pot/OTS_PlayerBans_List.php
+html_copy/system/libs/pot/OTS_Base_DAO.php
+html_copy/system/libs/pot/OTS_Group.php
+html_copy/system/libs/pot/OTS_ItemsList.php
+html_copy/system/libs/pot/IOTS_GuildAction.php
+html_copy/system/libs/pot/OTS_PlayerBan.php
+html_copy/system/libs/pot/OTS_IPBan.php

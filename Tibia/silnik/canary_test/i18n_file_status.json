@@ -113,7 +113,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:44:51.833163"
+      "completed_at": "2025-12-11T17:45:28.872605"
     },
     "data-otservbr-global/npc/chuckles.lua": {
       "stages": {
@@ -224,7 +224,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:44:48.593251"
+      "completed_at": "2025-12-11T17:45:26.433962"
     },
     "data-otservbr-global/npc/frederik.lua": {
       "stages": {
@@ -335,7 +335,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:44:52.925058"
+      "completed_at": "2025-12-11T17:45:29.573272"
     },
     "data-otservbr-global/npc/cranky_lizard_crone.lua": {
       "stages": {
@@ -450,7 +450,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:44:50.144122"
+      "completed_at": "2025-12-11T17:45:27.345137"
     },
     "data-otservbr-global/npc/ghorza.lua": {
       "stages": {
@@ -565,7 +565,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:44:54.323555"
+      "completed_at": "2025-12-11T17:45:30.453469"
     },
     "data-otservbr-global/npc/alaistar.lua": {
       "stages": {
@@ -676,7 +676,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:44:43.926887"
+      "completed_at": "2025-12-11T17:45:22.893217"
     },
     "data-otservbr-global/npc/battlemart.lua": {
       "stages": {
@@ -787,7 +787,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:44:45.405021"
+      "completed_at": "2025-12-11T17:45:24.228815"
     },
     "data-otservbr-global/npc/bertram.lua": {
       "stages": {
@@ -904,7 +904,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:44:46.382212"
+      "completed_at": "2025-12-11T17:45:25.032346"
     },
     "data-otservbr-global/npc/gnomegica.lua": {
       "stages": {
@@ -1019,7 +1019,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:44:56.735860"
+      "completed_at": "2025-12-11T17:45:31.261449"
     },
     "data-otservbr-global/npc/mordecai.lua": {
       "stages": {
@@ -1134,7 +1134,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:45:00.527422"
+      "completed_at": "2025-12-11T17:45:33.953992"
     },
     "data-otservbr-global/npc/nelly.lua": {
       "stages": {
@@ -1249,7 +1249,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:45:04.498726"
+      "completed_at": "2025-12-11T17:45:34.851598"
     },
     "data-otservbr-global/npc/nipuna.lua": {
       "stages": {
@@ -1364,7 +1364,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:45:05.780715"
+      "completed_at": "2025-12-11T17:45:35.649693"
     },
     "data-otservbr-global/npc/rock_in_a_hard_place.lua": {
       "stages": {
@@ -1479,7 +1479,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:45:07.717740"
+      "completed_at": "2025-12-11T17:45:37.128574"
     },
     "data-otservbr-global/npc/romir.lua": {
       "stages": {
@@ -1590,7 +1590,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:45:08.421607"
+      "completed_at": "2025-12-11T17:45:37.875612"
     },
     "data-otservbr-global/npc/seymour.lua": {
       "stages": {
@@ -1705,7 +1705,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:45:09.359393"
+      "completed_at": "2025-12-11T17:45:38.883725"
     },
     "data-otservbr-global/npc/shiriel.lua": {
       "stages": {
@@ -1820,7 +1820,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:45:10.155203"
+      "completed_at": "2025-12-11T17:45:39.656926"
     },
     "data-otservbr-global/npc/sigurd.lua": {
       "stages": {
@@ -1935,7 +1935,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:45:10.889921"
+      "completed_at": "2025-12-11T17:45:40.422902"
     },
     "data-otservbr-global/npc/sundara.lua": {
       "stages": {
@@ -2050,7 +2050,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:45:11.790557"
+      "completed_at": "2025-12-11T17:45:41.368731"
     },
     "data-otservbr-global/npc/tandros.lua": {
       "stages": {
@@ -2165,7 +2165,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:45:12.579177"
+      "completed_at": "2025-12-11T17:45:42.161472"
     },
     "data-otservbr-global/npc/the_lootmonger.lua": {
       "stages": {
@@ -2276,7 +2276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:45:13.400439"
+      "completed_at": "2025-12-11T17:45:43.017371"
     }
   },
   "global_stats": {

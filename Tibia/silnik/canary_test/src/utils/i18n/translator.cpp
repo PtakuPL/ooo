@@ -76,7 +76,7 @@ void Translator::setSearchPaths(std::vector<std::filesystem::path> paths) {
 		normalized.assign(DEFAULT_SEARCH_PATHS.begin(), DEFAULT_SEARCH_PATHS.end());
 	}
 
-	std::scoped_lock lock(mutex);
+	std::unique_lock lock(mutex);  // Exclusive lock for write
 	searchPaths = std::move(normalized);
 	locales.clear();
 }
@@ -86,7 +86,7 @@ void Translator::setFallbackLocale(std::string locale) {
 		return;
 	}
 
-	std::scoped_lock lock(mutex);
+	std::unique_lock lock(mutex);  // Exclusive lock for write
 	fallbackLocale = std::move(locale);
 }
 
@@ -99,12 +99,12 @@ void Translator::loadLocale(const std::string &locale) const {
 		return;
 	}
 
-	std::scoped_lock lock(mutex);
+	std::unique_lock lock(mutex);  // Exclusive lock for write (loading)
 	loadLocaleUnlocked(locale);
 }
 
 bool Translator::isLocaleLoaded(const std::string &locale) const {
-	std::scoped_lock lock(mutex);
+	std::shared_lock lock(mutex);  // Shared lock for read
 	const auto it = locales.find(locale);
 	return it != locales.end() && it->second.loaded;
 }

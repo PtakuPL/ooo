@@ -2402,7 +2402,19 @@ process_php_category() {
         local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
         
         # Wyciągnij echo "..." i teksty > 20 znaków
-        local strings=$(grep -oP '(?:echo\s+|print\s+)?["'\''][^"'\'']{20,}["'\'']' "$file" 2>/dev/null | head -5)
+        # FILTRUJ: pomiń URLe, ścieżki, kod PHP
+        local strings=$(grep -oP '(?:echo\s+|print\s+)?["'\''][^"'\'']{20,}["'\'']' "$file" 2>/dev/null \
+            | grep -v '^["\x27]/' \
+            | grep -v 'http' \
+            | grep -v '\$' \
+            | grep -v '\->' \
+            | grep -v '::' \
+            | grep -v '\[' \
+            | grep -v '(' \
+            | grep -v '\.php' \
+            | grep -v '\.js' \
+            | grep -v '\.css' \
+            | head -5)
         
         if [ -n "$strings" ]; then
             local i=1

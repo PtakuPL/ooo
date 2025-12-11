@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-11 19:40:43 UTC  
+> **Aktualizacja:** 2025-12-11 20:42:45 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28803
 
 ---
@@ -129,17 +129,15 @@
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    ✅ IDLE                                   │
-│ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 NPC                                    │
+│ Status:    🟢 RUNNING                                │
+│ Tryb:      🔧 MIGRATION (skanowanie plików)          │
+│ Kategoria: 📁 NPC                                    │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: npc                                            │
-│ [█████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 5339/15000 kluczy (36%)                                          │
+│ 📊 Pliki przeskanowane:     20                                 │
+│    ├─ Z kluczami:           0 (0 kluczy)              │
+│    └─ Bez kluczy:          20 (czyste)                       │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Total processed: 6064 operacji               │
-│ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 19:40:43                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 20:42:45            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -149,19 +147,18 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Operacji wykonanych | **6064** | we wszystkich kategoriach |
-| ✅ NPC zmigrowanych | **20** (677 z i18nKey) | z 1026 plików NPC |
+| 📁 Plików przeskanowanych | **20** | wszystkie kategorie |
+| ✅ Plików z kluczami | **0** | zawierały hardcoded strings |
+| ⬜ Plików bez kluczy | **20** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **28803** | we wszystkich kategoriach |
-| 🌍 Języków zsynchronizowanych | **0**/53 | brak |
+| 🌍 Języków | **53** | EN + tłumaczenia |
 | 🔄 Cykli wykonanych | **#1** | continuous mode |
-| 🎯 Aktywne kategorie | **15** | z danymi |
-| ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
-- 🧙 `npc` +20 kluczy @ 19:40:42
+- 🧙 `npc` +20 kluczy @ 20:42:44
 - ⚡ `errors` +0 kluczy @ 17:41:10
 - ⚡ `otclient_tools` +0 kluczy @ 17:41:03
 - ⚡ `otclient_src` +0 kluczy @ 17:22:35
@@ -330,7 +327,7 @@
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 0 | 2 | ✅ Active |
 | monsters | 7341 | 0 | 2 | ✅ Active |
-| npc | 5339 | 5980 | 0 | ✅ Active |
+| npc | 5339 | 9220 | 0 | ✅ Active |
 | html | 1495 | 0 | 2 | ✅ Active |
 | spells | 304 | 0 | 2 | ✅ Active |
 | client | 242 | 0 | 2 | ✅ Active |
@@ -407,23 +404,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 19:40:43  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 20:42:45  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `the_lootmonger` - ukończono 2025-12-11 19:40
-- ✅ `tandros` - ukończono 2025-12-11 19:40
-- ✅ `sundara` - ukończono 2025-12-11 19:40
-- ✅ `sigurd` - ukończono 2025-12-11 19:40
-- ✅ `shiriel` - ukończono 2025-12-11 19:40
-- ✅ `seymour` - ukończono 2025-12-11 19:40
-- ✅ `romir` - ukończono 2025-12-11 19:40
-- ✅ `rock_in_a_hard_place` - ukończono 2025-12-11 19:40
-- ✅ `nipuna` - ukończono 2025-12-11 19:40
-- ✅ `nelly` - ukończono 2025-12-11 19:40
+- ✅ `the_lootmonger` - ukończono 2025-12-11 20:42
+- ✅ `tandros` - ukończono 2025-12-11 20:42
+- ✅ `sundara` - ukończono 2025-12-11 20:42
+- ✅ `sigurd` - ukończono 2025-12-11 20:42
+- ✅ `shiriel` - ukończono 2025-12-11 20:42
+- ✅ `seymour` - ukończono 2025-12-11 20:42
+- ✅ `romir` - ukończono 2025-12-11 20:42
+- ✅ `rock_in_a_hard_place` - ukończono 2025-12-11 20:42
+- ✅ `nipuna` - ukończono 2025-12-11 20:42
+- ✅ `nelly` - ukończono 2025-12-11 20:42
 
 ---
 

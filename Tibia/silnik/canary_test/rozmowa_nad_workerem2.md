@@ -147,10 +147,27 @@ if all_categories_skipped:
 
 ## Pytania wymagające odpowiedzi
 
-1. **Gdzie jest testyy?** - Agent 1 wspomina o `testyy` (instalka) ale nie widzę tego katalogu w workspace
-2. **Hard strings report dla client** - czy 51254 wpisów to z testyy? Czy mam skanować też client?
+1. **Gdzie jest testyy?** - ✅ ZNALEZIONE: `/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy` - to jest **OTClient** (klient gry)
+2. **Hard strings report dla client** - 51254 wpisów to głównie pliki `data/locales/*.lua` (już przetłumaczone!) - system `tr()` w kliencie
 3. **Priorytet** - czy najpierw 39 NPC serwera czy hard_strings z client?
 4. **Ignore-lista** - jakie wzorce mam ignorować? (URL, komendy, ścieżki?)
+
+### WAŻNE ODKRYCIE:
+- **testyy** = OTClient (klient gry Tibia)
+- **canary_test** = Canary Server (serwer gry)
+- Hard strings z testyy (51254) to głównie **już istniejące tłumaczenia** w `data/locales/`
+- Klient używa systemu `tr("tekst")` który jest już zaimplementowany
+- **Prawdziwa praca** to 39 NPC na serwerze bez i18nKey
+
+### Struktura testyy (OTClient):
+```
+testyy/
+├── data/
+│   └── locales/     # <- Tłumaczenia klienta (af.lua, pl.lua, de.lua, etc.)
+├── modules/         # <- UI klienta (game_store, game_viplist, etc.)
+├── src/             # <- Kod C++ klienta
+└── otclient         # <- Executable
+```
 
 ---
 

@@ -33,9 +33,42 @@
 | quests/* | ~1500 | 🟡 ŚREDNI |
 | inne | ~3764 | 🟢 NISKI |
 
+## 🔍 KLUCZOWE ODKRYCIE
+
+### Problem: 71 NPC częściowo zmigrowanych!
+Worker migruje część dialogów ale NIE wszystkie. Pliki mają:
+- `NPC_LIB.i18n.npcSay(...)` - zmigrowane dialogi ✅
+- `npcHandler:say("...")` - niezmigrowane dialogi ❌
+
+**Przykład** (`a_prisoner.lua`):
+```lua
+-- ZMIGROWANE:
+NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_prisoner.say_1")
+
+-- NIEZMIGROWANE:
+npcHandler:say("Great riddle, isn't it? ...", npc, creature)
+```
+
+### Przyczyna
+Worker wykrywa wzorzec i migruje JEDEN dialog, oznacza plik jako "przetworzony" i idzie dalej.
+Nie wraca do pliku żeby zmigrować pozostałe dialogi.
+
+### Rozwiązanie
+1. Zmienić logikę workera: nie oznaczaj pliku jako "completed" jeśli nadal ma `npcHandler:say("...")`
+2. Lub dodać tryb "deep migration" który przetwarza WSZYSTKIE dialogi w pliku
+
 ---
 
-## Co ustalił Agent 1 (plan do wdrożenia)
+## 📊 AKTUALNA STATYSTYKA NPC
+
+| Kategoria | Plików | Status |
+|-----------|--------|--------|
+| W pełni zmigrowane | ~555 | ✅ Gotowe |
+| Częściowo zmigrowane | 71 | ⚠️ DO NAPRAWY |
+| Bez dialogów (tylko nazwa) | ~400 | ℹ️ Nie wymaga migracji say |
+| **RAZEM NPC** | ~1026 | |
+
+---
 
 ### Źródło danych (IDLE scan)
 1. Włączyć `hard_strings_report.py` jako krok IDLE (raz na dobę lub przy zmianach)
@@ -190,7 +223,46 @@ testyy/
 | Data | Agent | Akcja |
 |------|-------|-------|
 | 2025-12-11 22:50 | Agent 2 | Utworzenie tego pliku z planem |
+| 2025-12-11 23:00 | Agent 2 | Analiza hard_strings.csv - 24205 wpisów serwera, 51254 klienta |
+| 2025-12-11 23:05 | Agent 2 | Znalezienie testyy = OTClient w canary_test/testyy |
+| 2025-12-11 23:10 | Agent 2 | **KLUCZOWE ODKRYCIE**: 71 NPC częściowo zmigrowanych (mają i18n + literały) |
 | | | |
+
+---
+
+## 📋 LISTA 71 CZĘŚCIOWO ZMIGROWANYCH NPC
+
+```
+a_dead_bureaucrat1    gnomally           lokur
+a_dead_bureaucrat3    gnomargery         lynda
+albinius              gnombold           maeryn
+alexander             gnomerik           miraia
+angus                 gnomilly           nilsor
+arkulius              gnomission         ninos
+asima                 gnomus             nokmir
+benjamin              grizzly_adams      ocelus
+captain_dreadnought   halvar             oldrak
+cassino               hamish             olrik
+charos                henricus           paulie
+chrystal              hireling           plunderpurse
+cledwyn               hjaern             rabaz
+daniel_steelsoul      imbuement_assistant rachel
+dove                  inkaef             richard
+duncan                jeronimo           ruprecht
+eruaran               jorge              sandomo
+fenech                khanna             spectulus
+frosty                klom_stonecutter   storkus
+gnomadness            kroox              sven
+                      lardoc_bashsmite   the_oracle
+                      liane              the_orc_king
+                                         topsy
+                                         vascalir
+                                         walter_jaeger
+                                         wentworth
+                                         xodet
+                                         yana
+                                         zebron
+```
 
 ---
 
@@ -271,12 +343,14 @@ Po ustaleniu odpowiedzi na pytania, zaczynam od:
 - [x] Analiza struktury hard_strings.csv
 - [x] Identyfikacja 431 NPC bez i18nKey
 - [x] Znalezienie testyy (OTClient)
-- [ ] Sprawdzić dlaczego worker pomija 431 NPC
+- [x] Sprawdzić dlaczego worker pomija 431 NPC → **ZNALEZIONO: 71 częściowo zmigrowanych!**
+- [ ] Naprawić logikę workera - nie oznaczać pliku jako "completed" jeśli ma jeszcze niezmigrowane dialogi
+- [ ] Dodać tryb "deep migration" dla NPC
 - [ ] Dodać logikę hard_strings do dispatchera
 - [ ] Stworzyć sekcję "Hard-coded Strings" w I18N_STATUS.md
 
 ### Agent 1:
-- [ ] Zweryfikować listę 39 NPC z dialogami
+- [ ] Zweryfikować listę 71 NPC częściowo zmigrowanych
 - [ ] Sprawdzić czy hard_strings.csv jest aktualny
 - [ ] Przygotować ignore-listę dla false-positive
 

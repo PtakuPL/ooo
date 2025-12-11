@@ -3,7 +3,8 @@
     "monsters": 1765469800.078101,
     "actions": 1765469808.3683636,
     "quests": 1765469816.788425,
-    "raids": 1765469826.6551127
+    "raids": 1765469826.6551127,
+    "world": 1765469835.0284467
   },
   "last_processed": {
     "npc": {
@@ -29,6 +30,10 @@
     "raids": {
       "count": 0,
       "timestamp": 1765469226.6551042
+    },
+    "world": {
+      "count": 0,
+      "timestamp": 1765469235.0284388
     }
   },
   "consecutive_zeros": {
@@ -37,7 +42,8 @@
     "monsters": 2,
     "actions": 2,
     "quests": 2,
-    "raids": 2
+    "raids": 2,
+    "world": 2
   },
   "total_processed": {
     "npc": 40,

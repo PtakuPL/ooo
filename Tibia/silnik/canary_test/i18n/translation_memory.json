@@ -29137,6 +29137,14 @@
     "npc.gerimor.kw_works_4": {
       "src_hash": "612d3cb43be4a5a3c94f8334ea6a0705",
       "text": "In some way their tainted kNiewledge brought the unthinkable into a resemblance of existence. ..."
+    },
+    "raid.minotaurs.name": {
+      "src_hash": "6fce9dc510d2ecb3f7bea0d5a50b0df2",
+      "text": "MiNietaurs"
+    },
+    "raid.nomad.name": {
+      "src_hash": "aef878e6f44bed61b63c5c91bfdd756c",
+      "text": "Niemad"
     }
   }
 }

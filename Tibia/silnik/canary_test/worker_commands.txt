@@ -131,3 +131,31 @@
 # [2025-12-11 02:46:08] Wykonano: AUTO:es:npc.json:100
 # [2025-12-11 02:46:15] Wykonano: AUTO:pt:npc.json:100
 # [2025-12-11 02:46:24] Wykonano: AUTO:fr:npc.json:100
+
+# Nowe AUTO (limit 10) dla ES/PT – główne pliki
+#AUTO:es:items.json:10  # Wykonano 2025-12-11 03:08:48
+AUTO:es:monsters.json:10
+AUTO:es:scripts.json:10
+AUTO:es:spells.json:10
+AUTO:es:html.json:10
+AUTO:es:php.json:10
+AUTO:es:client.json:10
+AUTO:es:raids.json:10
+AUTO:es:libs.json:10
+AUTO:es:modules.json:10
+AUTO:es:events.json:10
+AUTO:es:startup.json:10
+
+AUTO:pt:items.json:10
+AUTO:pt:monsters.json:10
+AUTO:pt:scripts.json:10
+AUTO:pt:spells.json:10
+AUTO:pt:html.json:10
+AUTO:pt:php.json:10
+AUTO:pt:client.json:10
+AUTO:pt:raids.json:10
+AUTO:pt:libs.json:10
+AUTO:pt:modules.json:10
+AUTO:pt:events.json:10
+AUTO:pt:startup.json:10
+# [2025-12-11 03:08:48] Wykonano: AUTO:es:items.json:10

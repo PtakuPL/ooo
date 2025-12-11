@@ -5321,6 +5321,36 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                             COUNT=$(run_with_mini_batch "server" "process_generic_category" "$BATCH")
                             update_category_state "server" "$COUNT"
                             ;;
+                        otclient_modules)
+                            echo "   🎮 Przetwarzam OTCLIENT MODULES z mini-batch..."
+                            COUNT=$(run_with_mini_batch "otclient_modules" "process_generic_category" "$BATCH")
+                            update_category_state "otclient_modules" "$COUNT"
+                            ;;
+                        otclient_data)
+                            echo "   📦 Przetwarzam OTCLIENT DATA z mini-batch..."
+                            COUNT=$(run_with_mini_batch "otclient_data" "process_generic_category" "$BATCH")
+                            update_category_state "otclient_data" "$COUNT"
+                            ;;
+                        otclient_src)
+                            echo "   ⚙️ Przetwarzam OTCLIENT SRC (C++) z mini-batch..."
+                            COUNT=$(run_with_mini_batch "otclient_src" "process_generic_category" "$BATCH")
+                            update_category_state "otclient_src" "$COUNT"
+                            ;;
+                        otclient_mods)
+                            echo "   🔧 Przetwarzam OTCLIENT MODS z mini-batch..."
+                            COUNT=$(run_with_mini_batch "otclient_mods" "process_generic_category" "$BATCH")
+                            update_category_state "otclient_mods" "$COUNT"
+                            ;;
+                        otclient_tools)
+                            echo "   🛠️ Przetwarzam OTCLIENT TOOLS z mini-batch..."
+                            COUNT=$(run_with_mini_batch "otclient_tools" "process_generic_category" "$BATCH")
+                            update_category_state "otclient_tools" "$COUNT"
+                            ;;
+                        errors)
+                            echo "   🐛 Przetwarzam ERRORS z mini-batch..."
+                            COUNT=$(run_with_mini_batch "errors" "process_generic_category" "$BATCH")
+                            update_category_state "errors" "$COUNT"
+                            ;;
                         *)
                             echo "   ⚠️ Nieznana kategoria: $MODE_CAT - próbuję generyczną obsługę..."
                             COUNT=$(run_with_mini_batch "$MODE_CAT" "process_generic_category" "$BATCH")

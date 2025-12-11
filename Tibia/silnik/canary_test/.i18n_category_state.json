@@ -28,7 +28,7 @@
     "otclient_mods": 1765490294.9086766,
     "otclient_data": 1765501149.9096153,
     "otclient_src": 1765490312.7852385,
-    "otclient_tools": 1765493947.1609821,
+    "otclient_tools": 1765501159.2284665,
     "server": 1765490339.4466524,
     "errors": 1765493956.5862303
   },
@@ -147,7 +147,7 @@
     },
     "otclient_tools": {
       "count": 0,
-      "timestamp": 1765490347.160976
+      "timestamp": 1765493959.228461
     },
     "server": {
       "count": 0,
@@ -187,7 +187,7 @@
     "otclient_mods": 2,
     "otclient_data": 6,
     "otclient_src": 2,
-    "otclient_tools": 4,
+    "otclient_tools": 6,
     "server": 2,
     "errors": 4
   },

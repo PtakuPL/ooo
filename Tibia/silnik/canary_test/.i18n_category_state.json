@@ -4,7 +4,8 @@
     "monsters": 1765421565.1171825,
     "raids": 1765421572.540611,
     "world": 1765421588.128411,
-    "items": 1765421629.9992843
+    "items": 1765421629.9992843,
+    "libs": 1765421638.3282638
   },
   "last_processed": {
     "npc": {
@@ -34,6 +35,10 @@
     "items": {
       "count": 0,
       "timestamp": 1765421029.999279
+    },
+    "libs": {
+      "count": 0,
+      "timestamp": 1765421038.3282585
     }
   },
   "migrations_done": false,
@@ -44,7 +49,8 @@
     "raids": 2,
     "world": 2,
     "spells": 0,
-    "items": 2
+    "items": 2,
+    "libs": 2
   },
   "total_processed": {
     "spells": 294,

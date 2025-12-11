@@ -21,7 +21,7 @@
   "last_processed": {
     "npc": {
       "count": 50,
-      "timestamp": 1765423110.4357514
+      "timestamp": 1765423176.9060256
     },
     "scripts": {
       "count": 41,
@@ -123,7 +123,7 @@
     "twig": 2
   },
   "total_processed": {
-    "npc": 2100,
+    "npc": 2200,
     "scripts": 82,
     "client": 18
   },

@@ -1,7 +1,7 @@
 # NPC: cledwyn
 
 **Plik:** `data-otservbr-global/npc/cledwyn.lua`
-**Data migracji:** 2025-12-11 04:18
+**Data migracji:** 2025-12-11 04:19
 **Liczba tekstów:** 3
 
 ## Klucze i18n

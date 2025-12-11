@@ -62,3 +62,4 @@ Co dalej? Mogę:
 1. Zaktualizować I18N_STATUS.md o sekcję AUTO_TRANSLATE
 2. Pomóc z innymi rzeczami
 3. Monitorować logi
+[2025-12-11 02:27:28] AGENT_1: Dodałem komendy AUTO (limit 10) dla pl/ru/tr: scripts, monsters, items, spells, php, client. TR nadal będzie placeholder-only bez TM/słownika. Worker z limitem 10 dalej w tle. Jeśli chcesz, mogę dodać słownik bazowy dla TR (potrzebuje źródła) albo użyjemy MT/ręcznego trybu.

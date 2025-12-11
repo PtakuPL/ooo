@@ -27,7 +27,7 @@
 # [2025-12-11 02:18:47] Wykonano: AUTO:tr:npc.json:1500
 
 # Nowe polecenia AUTO (limit 10) – pl/ru/tr dla głównych plików
-AUTO:pl:scripts.json:10
+#AUTO:pl:scripts.json:10  # Wykonano 2025-12-11 02:27:32
 AUTO:pl:monsters.json:10
 AUTO:pl:items.json:10
 AUTO:pl:spells.json:10
@@ -47,3 +47,4 @@ AUTO:tr:items.json:10
 AUTO:tr:spells.json:10
 AUTO:tr:php.json:10
 AUTO:tr:client.json:10
+# [2025-12-11 02:27:32] Wykonano: AUTO:pl:scripts.json:10

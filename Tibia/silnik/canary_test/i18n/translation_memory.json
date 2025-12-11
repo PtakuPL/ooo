@@ -8404,5 +8404,343 @@
       "src_hash": "612d3cb43be4a5a3c94f8334ea6a0705",
       "text": "In some way their tainted kНетwledge brought the unthinkable into a resemblance of existence. ..."
     }
+  },
+  "pl": {
+    "scripts.actions_portal_minis_ancient_feud.msg_1": {
+      "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+      "text": "All the Graczs need to be level "
+    },
+    "scripts.2_ambassadors_treason.msg_5": {
+      "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+      "text": "You examine the scrolls carefully. Those are orders from Rathleton for the Ambassador. Nie sign of treason here."
+    },
+    "scripts.2_ambassadors_treason.msg_7": {
+      "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+      "text": "You find Niething in the Ambassador's house. If he's in fact a traitor he got rid of any evidence that could incriminate him."
+    },
+    "scripts.actions_mono_detector_strange_probing_device.msg_3": {
+      "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+      "text": "Hm... the device reads: 0,0,zero,0,zero which may roughly translate to: NieTHING OF INTEREST HERE"
+    },
+    "scripts.actions_to_take_roots.msg_5": {
+      "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+      "text": "This root has already been harvested, Niething to gain here."
+    },
+    "scripts.movements_boat_puzzle.msg_3": {
+      "src_hash": "44d1a30bcfafa886f4ae741d76ffd4d5",
+      "text": "You use the hawser to lash up the loose planks. The raft should be seaworthy Niew."
+    },
+    "scripts.actions_telescope.msg_1": {
+      "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+      "text": "The telescope provides a perfect view over the endless ocean - Nie land in sight"
+    },
+    "scripts.actions_doors.msg_1": {
+      "src_hash": "97292b2d9c656199befd6d213f4e5194",
+      "text": "You do Niet have eNieugh level."
+    },
+    "scripts.movements_teleportto.msg_1": {
+      "src_hash": "e03f382c0e87c53675958417d2594faa",
+      "text": "You must wait. Someone is challenging Furious Scorpion Niew."
+    },
+    "scripts.movements_elemental_portals.msg_2": {
+      "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+      "text": "You can Niet use this portal yet."
+    },
+    "scripts.actions_bonefiddle.msg_3": {
+      "src_hash": "60b384a0aa95079616923d65a09d92fc",
+      "text": "*There was once a maiden fair, with dark eTak and silken hair. Far away from home she died. Nie grave, Nie wake, Nie mourning.*"
+    },
+    "scripts.actions_wooden_trash.msg_2": {
+      "src_hash": "464917965b3891096e423e2362e7f69c",
+      "text": "You find Niething of interest beneath the rubble."
+    },
+    "scripts.movements_cobra_mini_bosses.msg_1": {
+      "src_hash": "9f79011f8f12f7ac0095c97d21a11cea",
+      "text": "You pass the fire without taking any damage. It's Niew or never..."
+    },
+    "scripts.actions_scarlett.msg_1": {
+      "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+      "text": "You are Niet allowed to use this yet."
+    },
+    "scripts.actions_scarlett.msg_2": {
+      "src_hash": "7c285fed0553b05349a0985cdd855e24",
+      "text": "You hold the old chestplate of Galthein in front of you. It does Niet fit and far too old to withstand any Atak."
+    },
+    "scripts.golden.msg_1": {
+      "src_hash": "e8d548071c1f2fc16d9e331b53585349",
+      "text": "You need 5 Graczs to fight with this boss."
+    },
+    "scripts.quests.actions_portal_minis_ancient_feud.msg_1": {
+      "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+      "text": "All the Graczs need to be level "
+    },
+    "scripts.quests.actions_portal_minis_kilmaresh.msg_1": {
+      "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+      "text": "All the Graczs need to be level "
+    },
+    "scripts.quests.2-ambassadors-treason.msg_5": {
+      "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+      "text": "You examine the scrolls carefully. Those are orders from Rathleton for the Ambassador. Nie sign of treason here."
+    },
+    "scripts.quests.2-ambassadors-treason.msg_7": {
+      "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+      "text": "You find Niething in the Ambassador's house. If he's in fact a traitor he got rid of any evidence that could incriminate him."
+    },
+    "scripts.quests.2-ambassadors-treason.player_msg_5": {
+      "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+      "text": "You examine the scrolls carefully. Those are orders from Rathleton for the Ambassador. Nie sign of treason here."
+    },
+    "scripts.quests.2-ambassadors-treason.player_msg_7": {
+      "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+      "text": "You find Niething in the Ambassador's house. If he's in fact a traitor he got rid of any evidence that could incriminate him."
+    },
+    "scripts.quests.creaturescripts_depolarized_death.say_1": {
+      "src_hash": "69e223315b6235cac3b4dee668b2f3aa",
+      "text": "You have reached eNieugh charges to pass further into the destruction!"
+    },
+    "scripts.quests.creaturescripts_spark_death.say_2": {
+      "src_hash": "2d47ad020a0b969343320caf428e9bbd",
+      "text": "The room is fully charged up! You are permeated with its power and can venture deeper into the heart of destruction Niew!"
+    },
+    "scripts.quests.creaturescripts_overcharge_death.say_1": {
+      "src_hash": "69e223315b6235cac3b4dee668b2f3aa",
+      "text": "You have reached eNieugh charges to pass further into the destruction!"
+    },
+    "scripts.quests.actions_mono_detector_strange_probing_device.msg_2": {
+      "src_hash": "5ddadd6ad0c06716b93e59f10d11de37",
+      "text": "The device reads: 'abNiermal glooth structure detected, possible probing location'"
+    },
+    "scripts.quests.actions_mono_detector_strange_probing_device.msg_3": {
+      "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+      "text": "Hm... the device reads: 0,0,zero,0,zero which may roughly translate to: NieTHING OF INTEREST HERE"
+    },
+    "scripts.quests.actions_mono_detector_strange_probing_device.player_msg_2": {
+      "src_hash": "5ddadd6ad0c06716b93e59f10d11de37",
+      "text": "The device reads: 'abNiermal glooth structure detected, possible probing location'"
+    },
+    "scripts.quests.actions_mono_detector_strange_probing_device.player_msg_3": {
+      "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+      "text": "Hm... the device reads: 0,0,zero,0,zero which may roughly translate to: NieTHING OF INTEREST HERE"
+    },
+    "scripts.quests.actions_to_take_roots.msg_5": {
+      "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+      "text": "This root has already been harvested, Niething to gain here."
+    },
+    "scripts.quests.actions_to_take_roots.player_msg_5": {
+      "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+      "text": "This root has already been harvested, Niething to gain here."
+    },
+    "scripts.quests.movements_boat_puzzle.msg_3": {
+      "src_hash": "44d1a30bcfafa886f4ae741d76ffd4d5",
+      "text": "You use the hawser to lash up the loose planks. The raft should be seaworthy Niew."
+    },
+    "scripts.quests.movements_boat_puzzle.player_msg_3": {
+      "src_hash": "44d1a30bcfafa886f4ae741d76ffd4d5",
+      "text": "You use the hawser to lash up the loose planks. The raft should be seaworthy Niew."
+    },
+    "scripts.quests.actions_telescope.msg_1": {
+      "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+      "text": "The telescope provides a perfect view over the endless ocean - Nie land in sight"
+    },
+    "scripts.quests.actions_telescope.player_msg_1": {
+      "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+      "text": "The telescope provides a perfect view over the endless ocean - Nie land in sight"
+    },
+    "scripts.quests.actions_doors.msg_2": {
+      "src_hash": "62b19b138adec8ae1e6bba38c72981df",
+      "text": "You can Niet use this boat yet."
+    },
+    "scripts.quests.actions_doors.player_msg_2": {
+      "src_hash": "62b19b138adec8ae1e6bba38c72981df",
+      "text": "You can Niet use this boat yet."
+    },
+    "scripts.quests.movements_teleportto.msg_1": {
+      "src_hash": "e03f382c0e87c53675958417d2594faa",
+      "text": "You must wait. Someone is challenging Furious Scorpion Niew."
+    },
+    "scripts.quests.movements_teleportto.player_msg_1": {
+      "src_hash": "e03f382c0e87c53675958417d2594faa",
+      "text": "You must wait. Someone is challenging Furious Scorpion Niew."
+    },
+    "scripts.quests.movements_elemental_portals.msg_2": {
+      "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+      "text": "You can Niet use this portal yet."
+    },
+    "scripts.quests.movements_elemental_portals.player_msg_2": {
+      "src_hash": "3bc1a34a02f9f3267be0272cef918d5f",
+      "text": "You can Niet use this portal yet."
+    },
+    "scripts.quests.actions_bonefiddle.msg_3": {
+      "src_hash": "60b384a0aa95079616923d65a09d92fc",
+      "text": "*There was once a maiden fair, with dark eTak and silken hair. Far away from home she died. Nie grave, Nie wake, Nie mourning.*"
+    },
+    "scripts.quests.actions_bonefiddle.player_msg_3": {
+      "src_hash": "60b384a0aa95079616923d65a09d92fc",
+      "text": "*There was once a maiden fair, with dark eTak and silken hair. Far away from home she died. Nie grave, Nie wake, Nie mourning.*"
+    },
+    "scripts.quests.actions_wooden_trash.msg_2": {
+      "src_hash": "464917965b3891096e423e2362e7f69c",
+      "text": "You find Niething of interest beneath the rubble."
+    },
+    "scripts.quests.movements_blue_gem.msg_1": {
+      "src_hash": "bd80c605788f4b6875b9f20268f98fa3",
+      "text": "You hear a whisper: \\z\n\t\t'You will Niet be guided but your path shines in the colours blue, green and red. Heed this hierarchy.'"
+    },
+    "scripts.quests.movements_blue_gem.player_msg_1": {
+      "src_hash": "bd80c605788f4b6875b9f20268f98fa3",
+      "text": "You hear a whisper: \\z\n\t\t'You will Niet be guided but your path shines in the colours blue, green and red. Heed this hierarchy.'"
+    },
+    "scripts.quests.movements_green_gem.msg_1": {
+      "src_hash": "8abb1db9b4c97f61e4d33086c297399d",
+      "text": "You hear a whisper: \\z\n\t\t'You will Niet be guided but your path shines in the colours green, blue and red. Heed this hierarchy.'"
+    },
+    "scripts.quests.movements_green_gem.player_msg_1": {
+      "src_hash": "8abb1db9b4c97f61e4d33086c297399d",
+      "text": "You hear a whisper: \\z\n\t\t'You will Niet be guided but your path shines in the colours green, blue and red. Heed this hierarchy.'"
+    },
+    "scripts.quests.creaturescripts_rift_invader_death.say_1": {
+      "src_hash": "2be3a7e6822024fea4389c8e778bd9e9",
+      "text": "NieOOOOOOOOOO!"
+    },
+    "scripts.quests.movements_red_gem.msg_1": {
+      "src_hash": "eff8a635003036cca3494de729950540",
+      "text": "You hear a whisper: \\z\n\t\t'You will Niet be guided but your path shines in the colours red, blue and green. Heed this hierarchy.'"
+    },
+    "scripts.quests.movements_red_gem.player_msg_1": {
+      "src_hash": "eff8a635003036cca3494de729950540",
+      "text": "You hear a whisper: \\z\n\t\t'You will Niet be guided but your path shines in the colours red, blue and green. Heed this hierarchy.'"
+    },
+    "scripts.quests.creaturescripts_raging_mage_1.say_1": {
+      "src_hash": "4afd7936f837f55edfbf94325b3c06c6",
+      "text": "MWAAAHAHAAA!! Nie ONE!! Nie ONE CAN DEFEAT MEEE!!!"
+    },
+    "scripts.quests.creaturescripts_raging_mage_1.say_2": {
+      "src_hash": "4afd7936f837f55edfbf94325b3c06c6",
+      "text": "MWAAAHAHAAA!! Nie ONE!! Nie ONE CAN DEFEAT MEEE!!!"
+    },
+    "scripts.quests.movements_heaven_blossom.say_2": {
+      "src_hash": "413d929e4bb87f9c23fbbd20fa3bd3ac",
+      "text": "The fertile spirit brings a plant Potwór to life!"
+    },
+    "scripts.quests.actions_baeloc_nictros.say_1": {
+      "src_hash": "08b0bacc66c2fa0c9392ebf9059cb977",
+      "text": "I'll step back Niew. Let's see how you handle my brother!"
+    },
+    "scripts.quests.movements_cobra_mini_bosses.msg_1": {
+      "src_hash": "9f79011f8f12f7ac0095c97d21a11cea",
+      "text": "You pass the fire without taking any damage. It's Niew or never..."
+    },
+    "scripts.quests.actions_scarlett.msg_1": {
+      "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+      "text": "You are Niet allowed to use this yet."
+    },
+    "scripts.quests.actions_scarlett.msg_2": {
+      "src_hash": "7c285fed0553b05349a0985cdd855e24",
+      "text": "You hold the old chestplate of Galthein in front of you. It does Niet fit and far too old to withstand any Atak."
+    },
+    "scripts.quests.actions_scarlett.player_msg_1": {
+      "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+      "text": "You are Niet allowed to use this yet."
+    },
+    "scripts.quests.actions_scarlett.player_msg_2": {
+      "src_hash": "7c285fed0553b05349a0985cdd855e24",
+      "text": "You hold the old chestplate of Galthein in front of you. It does Niet fit and far too old to withstand any Atak."
+    },
+    "scripts.quests.actions_brain.msg_1": {
+      "src_hash": "76b9ee74c4dea36035865e57903f9629",
+      "text": "Nie brains"
+    },
+    "scripts.quests.actions_brain.player_msg_1": {
+      "src_hash": "76b9ee74c4dea36035865e57903f9629",
+      "text": "Nie brains"
+    },
+    "scripts.quests.actions_portal_minis_feaster.msg_1": {
+      "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+      "text": "All the Graczs need to be level "
+    },
+    "scripts.quests.soul_war_mechanics.msg_2": {
+      "src_hash": "4a5242bca6589c42bded887a1c6b4124",
+      "text": "You currently have Nie taint."
+    },
+    "scripts.quests.soul_war_mechanics.msg_3": {
+      "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+      "text": "Gracz is offline"
+    },
+    "scripts.quests.soul_war_mechanics.msg_6": {
+      "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+      "text": "Gracz is offline"
+    },
+    "scripts.quests.soul_war_mechanics.player_msg_2": {
+      "src_hash": "4a5242bca6589c42bded887a1c6b4124",
+      "text": "You currently have Nie taint."
+    },
+    "scripts.quests.soul_war_mechanics.player_msg_3": {
+      "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+      "text": "Gracz is offline"
+    },
+    "scripts.quests.soul_war_mechanics.player_msg_5": {
+      "src_hash": "a8ebcfefd8cb353159d225739900bfdd",
+      "text": "Gracz is offline"
+    },
+    "scripts.quests.soul_war_mechanics.say_1": {
+      "src_hash": "c3c250d8d11cdad39d0e1b311332f9b0",
+      "text": "Zdrowie restored by the mystic powers of Zarganash!"
+    },
+    "scripts.actions.golden.msg_1": {
+      "src_hash": "e8d548071c1f2fc16d9e331b53585349",
+      "text": "You need 5 Graczs to fight with this boss."
+    },
+    "scripts.actions.golden.player_msg_1": {
+      "src_hash": "e8d548071c1f2fc16d9e331b53585349",
+      "text": "You need 5 Graczs to fight with this boss."
+    },
+    "scripts.lib.register_actions.msg_1": {
+      "src_hash": "a4e95a1a5cb5f0e6c3e53424170a306d",
+      "text": "Even after a thorough and frustrating \\z\n\t\t\t\tsearch you could Niet find eNieugh liquified silver in this vein to fill a flask."
+    },
+    "scripts.lib.register_actions.msg_2": {
+      "src_hash": "2242b42cb38132c00a8815b7def03943",
+      "text": "Carefully you gather some of the liquified \\z\n\t\t\t\tsilver from this vein in a small flask. You Niew feel strangely affected to the moon."
+    },
+    "scripts.lib.register_actions.player_msg_1": {
+      "src_hash": "a4e95a1a5cb5f0e6c3e53424170a306d",
+      "text": "Even after a thorough and frustrating \\z\n\t\t\t\tsearch you could Niet find eNieugh liquified silver in this vein to fill a flask."
+    },
+    "scripts.lib.register_actions.player_msg_2": {
+      "src_hash": "2242b42cb38132c00a8815b7def03943",
+      "text": "Carefully you gather some of the liquified \\z\n\t\t\t\tsilver from this vein in a small flask. You Niew feel strangely affected to the moon."
+    },
+    "scripts.movements.dawnport_tiles.msg_1": {
+      "src_hash": "1cad3e67fe7b52006dd471b09049c8c9",
+      "text": "To Atak, click on a target in the battle list next to the game window. \\z\n\t\t\tA red frame shows which enemy you're Ataking."
+    },
+    "scripts.movements.dawnport_tiles.player_msg_1": {
+      "src_hash": "1cad3e67fe7b52006dd471b09049c8c9",
+      "text": "To Atak, click on a target in the battle list next to the game window. \\z\n\t\t\tA red frame shows which enemy you're Ataking."
+    },
+    "scripts.spells.tenebris_ultimate.say_1": {
+      "src_hash": "ce3bf599eae7275248dfb265bee5d614",
+      "text": "LADY TENEBRIS BEGINS TO CHANNEL A POWERFULL Zaklęcie! TAKE COVER!"
+    },
+    "scripts.spells.mawhawk_ue.say_1": {
+      "src_hash": "6c957ed29d901e0b551645105c61ecb9",
+      "text": "Better flee Niew."
+    },
+    "scripts.spells.plagueroot_teleport.say_1": {
+      "src_hash": "1200df1b5e592b282c9e76f7d3e408f3",
+      "text": "PLAGUEROOT TUNNELS TO ANieTHER PLACE!"
+    },
+    "scripts.actions_portal_minis_kilmaresh.msg_1": {
+      "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+      "text": "All the Graczs need to be level "
+    },
+    "scripts.actions_portal_minis_feaster.msg_1": {
+      "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+      "text": "All the Graczs need to be level "
+    },
+    "scripts.manage_tutor.msg_2": {
+      "src_hash": "ccbdd820333ac4bcb4498d03de18969a",
+      "text": "You have been demoted to a Niermal Gracz by "
+    }
   }
 }

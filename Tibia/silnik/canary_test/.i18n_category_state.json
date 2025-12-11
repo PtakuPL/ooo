@@ -23,7 +23,8 @@
     "dataroot": 1765490237.841282,
     "php": 1765490250.407698,
     "html": 1765490267.2456436,
-    "cpp": 1765490277.0664494
+    "cpp": 1765490277.0664494,
+    "otclient_modules": 1765490286.225684
   },
   "last_processed": {
     "npc": {
@@ -121,6 +122,10 @@
     "cpp": {
       "count": 0,
       "timestamp": 1765489677.0664437
+    },
+    "otclient_modules": {
+      "count": 0,
+      "timestamp": 1765489686.2256749
     }
   },
   "consecutive_zeros": {
@@ -147,7 +152,8 @@
     "dataroot": 2,
     "php": 2,
     "html": 2,
-    "cpp": 2
+    "cpp": 2,
+    "otclient_modules": 2
   },
   "total_processed": {},
   "migrations_done": false

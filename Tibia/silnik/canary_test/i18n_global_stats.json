@@ -1,14 +1,14 @@
 {
-  "total_cycles": 24,
+  "total_cycles": 25,
   "mode": "MIGRATION",
-  "category": "cpp",
-  "last_update": "2025-12-11T22:47:57.107362",
+  "category": "otclient_modules",
+  "last_update": "2025-12-11T22:48:06.352317",
   "migration": {
     "files_scanned": 76,
     "files_with_keys": 66,
     "files_without_keys": 10,
     "keys_extracted": 66,
-    "current_category": "cpp",
-    "batch_size": 0
+    "current_category": "otclient_modules",
+    "batch_size": 155
   }
 }

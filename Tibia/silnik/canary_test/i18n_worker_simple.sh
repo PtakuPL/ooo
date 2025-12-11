@@ -4427,7 +4427,6 @@ CATEGORIES = {
         "priority": 31
     }
 }
-}
 
 # Plik komend sterowania workerem
 COMMAND_FILE = ".worker_command"

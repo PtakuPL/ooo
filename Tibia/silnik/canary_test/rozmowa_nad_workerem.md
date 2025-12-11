@@ -1007,3 +1007,114 @@ else:
 
 ### Log kontynuacja:
 - 2025-12-11 19:55 - Agent 2: Znalazłem bug w TM (złe tłumaczenia), narzędzia są gotowe
+
+---
+
+# 🚀 ZADANIA DO WYKONANIA (2025-12-11 20:00)
+
+## Ostateczny Plan Workera (zatwierdzony przez Usera)
+
+```
+FAZA 1: MIGRATION     → Wszystkie kategorie plików (31)
+FAZA 2: TRANSLATION   → Tłumaczenia na języki które worker zna
+FAZA 3: IDLE          → Dokumentacja + monitoring + wykrywanie nowych plików (non-stop)
+```
+
+**Kluczowe:** Worker musi umieć stwierdzić "zrobiłem wszystko co mogę" i przejść do IDLE.
+
+---
+
+## 📋 ZADANIA DLA AGENTA 1
+
+### Zadanie 1: Napraw dispatcher - MIGRATION FIRST
+**Priorytet:** KRYTYCZNY
+
+Dispatcher musi:
+1. Sprawdzić WSZYSTKIE kategorie MIGRATION przed przejściem do tłumaczeń
+2. Ustawić `migrations_done = true` TYLKO gdy wszystkie kategorie mają 0 needs
+3. Nie wchodzić w TRANSLATION_SYNC dopóki migrations_done = false
+
+**Gdzie:** `i18n_worker_simple.sh` linie ~4560-4640 (funkcja `select_work_mode`)
+
+### Zadanie 2: Napraw `simple_translate()` 
+**Priorytet:** WYSOKI
+
+Problem: Funkcja podmienia słowa W ŚRODKU zdań, tworząc bzdury jak "НетT".
+
+Rozwiązanie:
+- Usuń `simple_translate()` lub
+- Zamień na tłumaczenie CAŁYCH fraz (np. "Hello!" → "Witaj!")
+- NIE zamieniaj fragmentów w dłuższych tekstach
+
+**Gdzie:** `i18n_worker_simple.sh` linie ~3656-3675
+
+### Zadanie 3: Wyczyść błędne TM
+**Priorytet:** ŚREDNI
+
+`i18n/translation_memory.json` ma 3MB błędnych tłumaczeń.
+
+Opcje:
+- Wyczyścić całą TM (usuń plik)
+- Lub dodać walidację przed zapisem (brak mieszanych języków)
+
+### Zadanie 4: Dodaj tryb IDLE
+**Priorytet:** WYSOKI
+
+Gdy:
+- `migrations_done = true`
+- Wszystkie tłumaczenia które worker zna są zrobione
+- Brak nowych plików
+
+Worker powinien:
+1. Generować/aktualizować dokumentację
+2. Skanować foldery co 5 minut na nowe pliki
+3. Jeśli znajdzie nowy plik → wrócić do MIGRATION
+4. Logować "IDLE: czekam na nowe pliki..."
+
+---
+
+## 📋 ZADANIA DLA AGENTA 2 (ja)
+
+### Zadanie 1: Monitoring workera
+- Sprawdzam logi co 5 minut
+- Upewniam się że MIGRATION działa
+- Raportuję postępy
+
+### Zadanie 2: Sprawdzam odpowiedzi Agenta 1
+- Czytam ten plik
+- Odpowiadam na pytania
+- Koordynuję pracę
+
+### Zadanie 3: Testy po zmianach
+- Po zmianach Agenta 1 testuję czy worker działa
+- Raportuję błędy
+
+---
+
+## 🔄 PROTOKÓŁ KOMUNIKACJI
+
+1. Agent 1 wpisuje zmiany/pytania w tym pliku
+2. Agent 2 sprawdza co 5-10 minut
+3. Odpowiedzi z timestampem
+
+**Format:**
+```
+## Agent X odpowiedź (YYYY-MM-DD HH:MM)
+[treść]
+```
+
+---
+
+## AGENT 1 - ZACZNIJ PRACĘ!
+
+Proszę:
+1. Przeczytaj zadania powyżej
+2. Zacznij od Zadania 1 (dispatcher MIGRATION FIRST)
+3. Wpisz tutaj co robisz i jakie masz pytania
+
+**Czekam na Twoją odpowiedź!**
+
+---
+
+### Log:
+- 2025-12-11 20:00 - Agent 2: Napisałem zadania dla Agenta 1, czekam na odpowiedź

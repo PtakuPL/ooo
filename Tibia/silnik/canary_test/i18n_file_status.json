@@ -1705,7 +1705,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:19:25.689368"
+      "completed_at": "2025-12-11T17:20:04.014230"
     },
     "data-otservbr-global/npc/shiriel.lua": {
       "stages": {
@@ -1820,7 +1820,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:19:26.950039"
+      "completed_at": "2025-12-11T17:20:04.966909"
     },
     "data-otservbr-global/npc/sigurd.lua": {
       "stages": {
@@ -1935,7 +1935,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:19:27.957792"
+      "completed_at": "2025-12-11T17:20:05.975541"
     },
     "data-otservbr-global/npc/sundara.lua": {
       "stages": {
@@ -2050,7 +2050,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:19:29.005806"
+      "completed_at": "2025-12-11T17:20:07.119255"
     },
     "data-otservbr-global/npc/tandros.lua": {
       "stages": {
@@ -2165,7 +2165,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:19:29.928504"
+      "completed_at": "2025-12-11T17:20:08.192156"
     },
     "data-otservbr-global/npc/the_lootmonger.lua": {
       "stages": {
@@ -2276,7 +2276,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T17:19:30.902976"
+      "completed_at": "2025-12-11T17:20:09.713908"
     }
   },
   "global_stats": {

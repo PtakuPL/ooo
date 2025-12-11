@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-11 20:42:45 UTC  
+> **Aktualizacja:** 2025-12-11 20:43:41 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28803
 
 ---
@@ -137,7 +137,7 @@
 │    ├─ Z kluczami:           0 (0 kluczy)              │
 │    └─ Bez kluczy:          20 (czyste)                       │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-11 20:42:45            │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 20:43:41            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -158,7 +158,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🧙 `npc` +20 kluczy @ 20:42:44
+- 🧙 `npc` +20 kluczy @ 20:43:41
 - ⚡ `errors` +0 kluczy @ 17:41:10
 - ⚡ `otclient_tools` +0 kluczy @ 17:41:03
 - ⚡ `otclient_src` +0 kluczy @ 17:22:35
@@ -327,7 +327,7 @@
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 0 | 2 | ✅ Active |
 | monsters | 7341 | 0 | 2 | ✅ Active |
-| npc | 5339 | 9220 | 0 | ✅ Active |
+| npc | 5339 | 9260 | 0 | ✅ Active |
 | html | 1495 | 0 | 2 | ✅ Active |
 | spells | 304 | 0 | 2 | ✅ Active |
 | client | 242 | 0 | 2 | ✅ Active |
@@ -404,23 +404,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 20:42:45  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 20:43:41  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `the_lootmonger` - ukończono 2025-12-11 20:42
-- ✅ `tandros` - ukończono 2025-12-11 20:42
-- ✅ `sundara` - ukończono 2025-12-11 20:42
-- ✅ `sigurd` - ukończono 2025-12-11 20:42
-- ✅ `shiriel` - ukończono 2025-12-11 20:42
-- ✅ `seymour` - ukończono 2025-12-11 20:42
-- ✅ `romir` - ukończono 2025-12-11 20:42
-- ✅ `rock_in_a_hard_place` - ukończono 2025-12-11 20:42
-- ✅ `nipuna` - ukończono 2025-12-11 20:42
-- ✅ `nelly` - ukończono 2025-12-11 20:42
+- ✅ `the_lootmonger` - ukończono 2025-12-11 20:43
+- ✅ `tandros` - ukończono 2025-12-11 20:43
+- ✅ `sundara` - ukończono 2025-12-11 20:43
+- ✅ `sigurd` - ukończono 2025-12-11 20:43
+- ✅ `shiriel` - ukończono 2025-12-11 20:43
+- ✅ `seymour` - ukończono 2025-12-11 20:43
+- ✅ `romir` - ukończono 2025-12-11 20:43
+- ✅ `rock_in_a_hard_place` - ukończono 2025-12-11 20:43
+- ✅ `nipuna` - ukończono 2025-12-11 20:43
+- ✅ `nelly` - ukończono 2025-12-11 20:43
 
 ---
 

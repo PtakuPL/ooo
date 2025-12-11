@@ -1,7 +1,7 @@
 # NPC: beatrice
 
 **Plik:** `data-otservbr-global/npc/beatrice.lua`
-**Data migracji:** 2025-12-11 04:04
+**Data migracji:** 2025-12-11 04:05
 **Liczba tekstów:** 1
 
 ## Klucze i18n

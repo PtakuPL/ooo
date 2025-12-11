@@ -19,7 +19,7 @@
     "keywordhandler": 1765421666.5858078,
     "twig": 1765421674.2202225,
     "items": 1765421643.4259934,
-    "pending_skip": 1765425508.0298038,
+    "pending_skip": 1765425514.8804555,
     "php": 1765421658.6083164
   },
   "last_processed": {
@@ -109,7 +109,7 @@
     },
     "pending_skip": {
       "count": 0,
-      "timestamp": 1765418308.0297987
+      "timestamp": 1765418314.8804498
     }
   },
   "consecutive_zeros": {
@@ -134,7 +134,7 @@
     "sendtextmessage": 4,
     "keywordhandler": 4,
     "twig": 4,
-    "pending_skip": 82
+    "pending_skip": 83
   },
   "total_processed": {
     "spells": 370,

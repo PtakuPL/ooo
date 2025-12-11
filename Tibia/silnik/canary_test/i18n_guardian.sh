@@ -8,6 +8,7 @@ WORKER_SCRIPT="i18n_worker_simple.sh"
 LOG_FILE="$WORK_DIR/work_i18n_live.log"
 PID_FILE="$WORK_DIR/.worker_simple.pid"
 GUARDIAN_LOG="$WORK_DIR/guardian.log"
+MTIME_FILE="$WORK_DIR/.worker_script_mtime"
 
 export HOME="/home/ptaku"
 export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
@@ -16,6 +17,20 @@ cd "$WORK_DIR" || exit 1
 
 log_guardian() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" >> "$GUARDIAN_LOG"
+}
+
+restart_worker() {
+    log_guardian "⚠️ Restart workera..."
+    pkill -9 -f "$WORKER_SCRIPT" 2>/dev/null
+    sleep 1
+    rm -f "$PID_FILE"
+    nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous 5 10 >> "$LOG_FILE" 2>&1 &
+    sleep 2
+    if [ -f "$PID_FILE" ]; then
+        log_guardian "✅ Worker uruchomiony PID: $(cat $PID_FILE)"
+    else
+        log_guardian "❌ Worker nie wystartował prawidłowo"
+    fi
 }
 
 # Sprawdź czy worker działa przez PID file
@@ -29,21 +44,23 @@ worker_running() {
     return 1
 }
 
+# Auto-restart jeśli zmienił się mtime skryptu workera
+if [ -f "$WORK_DIR/$WORKER_SCRIPT" ]; then
+    CURRENT_MTIME=$(stat -c %Y "$WORK_DIR/$WORKER_SCRIPT" 2>/dev/null || echo "")
+    LAST_MTIME=$(cat "$MTIME_FILE" 2>/dev/null || echo "")
+    if [ -n "$CURRENT_MTIME" ]; then
+        if [ "$CURRENT_MTIME" != "$LAST_MTIME" ]; then
+            log_guardian "🔄 Wykryto zmianę $WORKER_SCRIPT (mtime $LAST_MTIME -> $CURRENT_MTIME) - restart"
+            restart_worker
+        fi
+        echo "$CURRENT_MTIME" > "$MTIME_FILE"
+    fi
+fi
+
 # Restart workera jeśli nie działa
 if ! worker_running; then
     log_guardian "⚠️ Worker nie działa - restartuję..."
-    # Zabij ewentualne zombie procesy
-    pkill -9 -f "i18n_worker_simple.sh" 2>/dev/null
-    sleep 1
-    rm -f "$PID_FILE"
-    # Uruchom worker w trybie continuous (5 plików na batch, 10s przerwy)
-    nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous 5 10 >> "$LOG_FILE" 2>&1 &
-    sleep 2
-    if [ -f "$PID_FILE" ]; then
-        log_guardian "✅ Worker uruchomiony PID: $(cat $PID_FILE)"
-    else
-        log_guardian "❌ Worker nie wystartował prawidłowo"
-    fi
+    restart_worker
 else
     # Worker działa - cichy log co 5 minut
     MINUTE=$(date +%M)

@@ -3079,8 +3079,9 @@ if all_synced_for_lang and target_lang not in sync_state.get("languages_done", [
     sync_state["languages_done"].append(target_lang)
     print(f"   🎉 Język {target_lang} w pełni zsynchronizowany!")
 
-# Oblicz total dla języka
-total_keys = sum(sync_state["stats"].get(target_lang, {}).values())
+# Oblicz total dla języka (BEZ poprzedniego total - to powodowało błąd kumulacji!)
+lang_stats = sync_state["stats"].get(target_lang, {})
+total_keys = sum(v for k, v in lang_stats.items() if k != "total")
 sync_state["stats"][target_lang]["total"] = total_keys
 
 # Zapisz state

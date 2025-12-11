@@ -29,7 +29,7 @@
 # Nowe polecenia AUTO (limit 10) – pl/ru/tr dla głównych plików
 #AUTO:pl:scripts.json:10  # Wykonano 2025-12-11 02:27:32
 #AUTO:pl:monsters.json:10  # Wykonano 2025-12-11 02:27:39
-AUTO:pl:items.json:10
+#AUTO:pl:items.json:10  # Wykonano 2025-12-11 02:27:46
 AUTO:pl:spells.json:10
 AUTO:pl:php.json:10
 AUTO:pl:client.json:10
@@ -49,3 +49,4 @@ AUTO:tr:php.json:10
 AUTO:tr:client.json:10
 # [2025-12-11 02:27:32] Wykonano: AUTO:pl:scripts.json:10
 # [2025-12-11 02:27:39] Wykonano: AUTO:pl:monsters.json:10
+# [2025-12-11 02:27:46] Wykonano: AUTO:pl:items.json:10

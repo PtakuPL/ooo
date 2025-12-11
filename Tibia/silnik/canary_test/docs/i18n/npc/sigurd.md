@@ -1,7 +1,7 @@
 # NPC: sigurd
 
 **Plik:** `data-otservbr-global/npc/sigurd.lua`
-**Data migracji:** 2025-12-11 19:29
+**Data migracji:** 2025-12-11 19:30
 **Liczba tekstów:** 0
 
 ## Klucze i18n

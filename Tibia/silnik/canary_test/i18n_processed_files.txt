@@ -378,3 +378,4 @@ testyy/modules/client_serverlist/addserver.otui
 testyy/modules/client_serverlist/serverlist.lua
 testyy/modules/client_serverlist/serverlist.otui
 testyy/modules/client_serverlist/addserver.lua
+data-otservbr-global/npc/alaistar.lua

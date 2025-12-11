@@ -1959,6 +1959,11 @@ process_file() {
     stage_7 "$file" || return 1
     stage_8 "$file" || return 1
     
+    # Dodaj do listy przetworzonych (żeby nie przetwarzać ponownie)
+    if ! grep -qF "$file" "$PROCESSED_FILE" 2>/dev/null; then
+        echo "$file" >> "$PROCESSED_FILE"
+    fi
+    
     log "${GREEN}✅ WSZYSTKIE 8 ETAPÓW UKOŃCZONE!${NC}"
     return 0
 }

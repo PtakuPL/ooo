@@ -368,3 +368,13 @@ src/game/scheduling/save_manager.hpp
 src/game/scheduling/dispatcher.hpp
 src/game/scheduling/task.hpp
 src/game/game.hpp
+testyy/modules/game_shortcuts/shortcuts.otui
+testyy/modules/startup/startup.lua
+testyy/modules/game_healthinfo/healthinfo.lua
+testyy/modules/game_healthinfo/healthinfo.otui
+testyy/modules/client_debug_info/debug_info.otui
+testyy/modules/client_debug_info/debug_info.lua
+testyy/modules/client_serverlist/addserver.otui
+testyy/modules/client_serverlist/serverlist.lua
+testyy/modules/client_serverlist/serverlist.otui
+testyy/modules/client_serverlist/addserver.lua

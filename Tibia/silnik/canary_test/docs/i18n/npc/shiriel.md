@@ -1,7 +1,7 @@
 # NPC: shiriel
 
 **Plik:** `data-otservbr-global/npc/shiriel.lua`
-**Data migracji:** 2025-12-11 21:27
+**Data migracji:** 2025-12-11 21:28
 **Liczba tekstów:** 2
 
 ## Klucze i18n

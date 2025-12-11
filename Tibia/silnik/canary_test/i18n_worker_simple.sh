@@ -588,15 +588,24 @@ if last_mode == "MIGRATION":
     mode_display = "🔧 MIGRATION (skanowanie plików)"
     category_display = f"📁 {last_category.upper()}"
     
-    # Statystyki migracji
-    files_scanned = migration_data.get("files_scanned", 0)
-    files_with_keys = migration_data.get("files_with_keys", 0)
-    files_without_keys = migration_data.get("files_without_keys", 0)
-    keys_extracted = migration_data.get("keys_extracted", 0)
+    # Statystyki migracji - RZECZYWISTE DANE z plików JSON
+    # Klucze z i18n/en/*.json (faktyczne klucze), pliki z file_status
+    files_scanned = len([f for f, info in json.load(open(STATUS_FILE)).get("files", {}).items() 
+                        if info.get("overall_status") == "completed"]) if os.path.exists(STATUS_FILE) else 0
     
-    live_details = f"""│ 📊 Pliki przeskanowane: {files_scanned:>6}                                 │
-│    ├─ Z kluczami:      {files_with_keys:>6} ({keys_extracted} kluczy)              │
-│    └─ Bez kluczy:      {files_without_keys:>6} (czyste)                       │"""
+    # Klucze per kategoria - z tego co pokazujemy w tabelach
+    category_keys = {
+        "npc": npc_keys,
+        "scripts": scripts_keys,
+        "monsters": monsters_keys,
+        "items": items_keys,
+        "spells": spells_keys
+    }
+    current_cat_keys = category_keys.get(last_category.lower(), 0)
+    
+    live_details = f"""│ 📊 Pliki przeskanowane: {files_scanned:>6} (wszystkie kategorie)          │
+│    ├─ Kategoria {last_category.upper():>6}: {current_cat_keys:>6} kluczy EN                    │
+│    └─ Total kluczy EN: {total_keys:>6}                                 │"""
 
 elif last_mode == "TRANSLATION_SYNC":
     mode_display = "🌍 TRANSLATION_SYNC (synchronizacja)"

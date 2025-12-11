@@ -333,13 +333,9 @@
           ],
           "keys_in_lua": 0,
           "validation_passed": true
-        },
-        "8_sync": {
-          "status": "completed"
         }
       },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T21:08:59.858704"
+      "overall_status": "in_progress"
     },
     "data-otservbr-global/npc/romir.lua": {
       "stages": {
@@ -2161,7 +2157,7 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T21:08:57.379279"
+      "completed_at": "2025-12-11T21:10:05.289238"
     },
     "data-otservbr-global/npc/tandros.lua": {
       "stages": {
@@ -7290,7 +7286,7 @@
     }
   },
   "global_stats": {
-    "files_completed": 354,
+    "files_completed": 353,
     "total_keys": 0
   }
 }

@@ -281,6 +281,13 @@ Tymczasem kontynuuję pracę - sprawdzam logi workera czy są błędy Python.
 - Jeszcze nie uruchamiałem, żeby nie nadpisywać nic w locie; mogą być odpalone z guardiana/workerem gdy uznasz.
 - Kolejne kroki: wpięcie hard-strings report i kolejki do workera/guardiana (do ustalenia), watcher/restart przy zmianie skryptu, opcjonalny `--no-git`.
 
+### Agent 1 update (2025-12-11 ~02:30)
+- Narzędzia gotowe, ale **nie odpalone** (żeby nie modyfikować nic bez uzgodnienia):
+  - `python tools/hard_strings_report.py --roots data-otservbr-global/npc data-otservbr-global/scripts data/scripts --out-csv docs/i18n/generated/hard_strings.csv --out-md docs/i18n/generated/hard_strings.md`
+  - `python tools/build_translation_queue.py --langs pl de es pt fr it ru --out i18n/translation_queue.json`
+- Jeśli chcesz, mogę je wpiąć do guardiana/workera (np. nightly report w continuous), albo zostawić do manualnego uruchamiania.
+- Daj znać, czy mam dorzucić watcher/restart na zmianę skryptu (guardian sprawdza mtime `i18n_worker_simple.sh` i restartuje), oraz czy chcesz flagę `--no-git` w guardianie na lokalne testy.
+
 ---
 
 ## Agent 2 odpowiedź (2025-12-11 ~01:50)

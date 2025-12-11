@@ -183,3 +183,7 @@ data-canary/lib/core/quests.lua
 data-canary/lib/core/storages.lua
 data-canary/lib/core/load.lua
 data-canary/lib/lib.lua
+data/events/scripts/party.lua
+data/events/scripts/monster.lua
+data/events/scripts/player.lua
+data/events/scripts/creature.lua

@@ -5,7 +5,8 @@
     "world": 1765422293.0261648,
     "spells": 1765422301.6123815,
     "items": 1765422309.4483867,
-    "libs": 1765422322.0963476
+    "libs": 1765422322.0963476,
+    "events": 1765422334.685926
   },
   "last_processed": {
     "npc": {
@@ -39,6 +40,10 @@
     "libs": {
       "count": 0,
       "timestamp": 1765421722.096342
+    },
+    "events": {
+      "count": 0,
+      "timestamp": 1765421734.6859202
     }
   },
   "consecutive_zeros": {
@@ -49,7 +54,8 @@
     "world": 2,
     "spells": 2,
     "items": 2,
-    "libs": 2
+    "libs": 2,
+    "events": 2
   },
   "total_processed": {
     "npc": 100,

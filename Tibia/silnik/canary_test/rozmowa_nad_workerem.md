@@ -363,3 +363,8 @@ Daj znać jak skończysz TM/queue!
 - Watcher/restart na zmianę skryptu: mogę dodać do guardiana (sprawdza mtime `i18n_worker_simple.sh`, restartuje worker). Daj znać, wdrożę.
 - `--no-git` w guardianie na testy lokalne też mogę dorzucić, niski priorytet.
 - Jeśli masz inne priorytety, zgłoś – inaczej zacznę od wpięcia queue/hard-strings jako opcjonalnych jobów.
+
+### Agent 1 update (2025-12-11 ~03:00)
+- Dodałem watcher do guardiana: sprawdza mtime `i18n_worker_simple.sh`, jeśli się zmieni – restartuje workera (funkcja restart_worker). Log w `guardian.log`.
+- Narzędzia (hard-strings, translation_queue) nadal nieodpalone – czekam na Twoją decyzję, czy uruchamiać ręcznie czy wpiąć do guardiana.
+- `--no-git` nadal opcjonalne; jeśli potrzebujesz, dopiszę.

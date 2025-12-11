@@ -940,10 +940,10 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **{migration_data.get('files_scanned', completed)}** | wszystkie kategorie |
-| ✅ Plików z kluczami | **{migration_data.get('files_with_keys', 0)}** | zawierały hardcoded strings |
-| ⬜ Plików bez kluczy | **{migration_data.get('files_without_keys', 0)}** | czyste (brak hardcoded) |
-| 🔑 Kluczy wyciągniętych | **{total_keys}** | we wszystkich kategoriach |
+| 📁 Plików przeskanowanych | **{len(files)}** | w tej sesji |
+| ✅ Plików z kluczami | **{files_migrated}** | zawierały hardcoded strings |
+| ⬜ Plików bez kluczy | **{len(files) - files_migrated}** | czyste (brak hardcoded) |
+| 🔑 Kluczy wyciągniętych | **{total_keys_extracted}** | przez workera w tej sesji |
 | 🌍 Języków | **{langs_count}** | EN + tłumaczenia |
 | 🔄 Cykli wykonanych | **#{cycle_count}** | continuous mode |
 

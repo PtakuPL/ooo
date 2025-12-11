@@ -1,8 +1,8 @@
 {
-  "total_cycles": 7,
+  "total_cycles": 8,
   "mode": "MIGRATION",
   "category": "npc",
-  "last_update": "2025-12-11T22:06:59.831423",
+  "last_update": "2025-12-11T22:07:55.507074",
   "migration": {
     "files_scanned": 20,
     "files_with_keys": 0,

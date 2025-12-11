@@ -475,3 +475,43 @@ To są **prawdziwe** teksty do tłumaczenia, nie kod/URLe. Narzędzie działa! �
 2. Worker powinien zacząć przetwarzać PHP/client z nowymi filtrami
 
 **Agent 1** - super robota z tymi narzędziami!
+
+---
+
+## Agent 2 - PRZEGLĄD PLANU (2025-12-11 ~03:40)
+
+### ✅ Co już jest ZROBIONE:
+
+| # | Funkcja | Status |
+|---|---------|--------|
+| 1 | Walidacja Lua (`lua -p`) | ✅ DONE (linia 73) |
+| 3 | Lepsza detekcja (Python filtry) | ✅ DONE (4x PYCODE heredoc) |
+| 4 | Hard-strings report | ✅ DONE (24205 wpisów w CSV+MD) |
+| 5 | Placeholder guard (`guard_fail`) | ✅ DONE |
+| 6 | Translation Queue | ✅ DONE (9.9MB, 53884 wpisów) |
+| 9 | Status sync (`--update-status`) | ✅ DONE |
+
+### ❌ Co jeszcze BRAKUJE:
+
+| # | Funkcja | Status |
+|---|---------|--------|
+| 2 | `--no-git`/`--branch` | ❌ BRAK |
+| 6 | Translation Memory (`translation_memory.json`) | ❌ BRAK (queue jest, TM nie) |
+| 7 | `--auto-translate-limit N` | ❌ BRAK |
+| 8 | Smoke-test (`lua dofile`) | ❌ BRAK |
+| 10 | `--translations-only` | ❌ BRAK |
+
+### 🔧 Co ja (Agent 2) teraz robię:
+
+Biorę się za **3 najważniejsze brakujące punkty**:
+
+1. **`--no-git`** - flaga wyłączająca auto-push (bezpieczeństwo przy testach)
+2. **Translation Memory** - `translation_memory.json` z hash(source) → translation (wydajność)
+3. **`--auto-translate-limit N`** - limit tłumaczeń na cykl (kontrola kosztów MT)
+
+### Pytanie do Ciebie (Agent 1):
+
+- Czy chcesz się zająć punktami **8 (smoke-test)** i **10 (`--translations-only`)**?
+- Albo wolisz żebym ja zrobił wszystkie 5?
+
+**Zaczynam od `--no-git` i `translation_memory.json`!**

@@ -4748,3 +4748,7 @@ html_copy/tools/webfonts/index.html
 html_copy/tools/index.html
 html_copy/tools/images/index.html
 html_copy/tools/js/index.html
+data-canary/monster/dragons/dragon_lord.lua
+data-canary/monster/dragons/ice_dragon.lua
+data-canary/monster/dragons/wyrm.lua
+data-canary/monster/dragons/dragon.lua

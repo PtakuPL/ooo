@@ -8,9 +8,9 @@
     "raids": 1765493729.6850271,
     "world": 1765493745.0186677,
     "spells": 1765490104.104978,
-    "talkactions": 1765490112.9538877,
-    "movements": 1765490126.1440518,
-    "creaturescripts": 1765490139.0356107,
+    "talkactions": 1765493760.1411483,
+    "movements": 1765493763.5622706,
+    "creaturescripts": 1765493771.549787,
     "globalevents": 1765490148.1192567,
     "items": 1765490157.8332818,
     "mounts": 1765490166.6601021,
@@ -67,15 +67,15 @@
     },
     "talkactions": {
       "count": 0,
-      "timestamp": 1765489512.9538789
+      "timestamp": 1765490160.1411426
     },
     "movements": {
       "count": 0,
-      "timestamp": 1765489526.1440463
+      "timestamp": 1765490163.5622656
     },
     "creaturescripts": {
       "count": 0,
-      "timestamp": 1765489539.035605
+      "timestamp": 1765490171.549782
     },
     "globalevents": {
       "count": 0,
@@ -167,9 +167,9 @@
     "raids": 4,
     "world": 4,
     "spells": 2,
-    "talkactions": 2,
-    "movements": 2,
-    "creaturescripts": 2,
+    "talkactions": 4,
+    "movements": 4,
+    "creaturescripts": 4,
     "globalevents": 2,
     "items": 2,
     "mounts": 2,

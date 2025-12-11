@@ -2,8 +2,8 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 17:05:42 UTC  
-> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28779
+> **Aktualizacja:** 2025-12-11 17:06:28 UTC  
+> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28798
 
 ---
 
@@ -25,10 +25,10 @@
 |---------|---------|-------|
 | 📁 Plików przetworzonych | **20** | ↑ |
 | ⏭️ Plików wykluczonych | **712** | - |
-| 🔑 Kluczy i18n (EN) | **28779** | ↑ |
+| 🔑 Kluczy i18n (EN) | **28798** | ↑ |
 | 🌍 Języków | **53** | ✓ |
 | ⚠️ Konfliktów | **0** | ✓ |
-| 🔄 Cykl | **#1** | - |
+| 🔄 Cykl | **#2** | - |
 
 ---
 
@@ -66,7 +66,7 @@
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
 | 🧙 NPC Dialogs | 🔄 | 5339/15000 (36%) | 15000 |
-| 📜 Lua Scripts | 🔄 | 24/1000 (2%) | 1000 |
+| 📜 Lua Scripts | 🔄 | 43/1000 (4%) | 1000 |
 | 🎒 Items Database | 🔄 | 13749/40000 (34%) | 40000 |
 | 👹 Monsters | ✅ | 7341/7500 (98%) | 7500 |
 | ✨ Spells & Magic | 🔄 | 304/400 (76%) | 400 |
@@ -122,19 +122,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     2 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    ✅ IDLE                                   │
 │ Tryb:      MIGRATION (multi-category)               │
-│ Kategoria: 🎒 NPC                                    │
+│ Kategoria: 🎒 SCRIPTS                                │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Ostatnia aktywność: npc                                            │
-│ [█████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
-│ 5339/15000 kluczy (36%)                                          │
+│ 📊 Ostatnia aktywność: scripts                                        │
+│ [██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] │
+│ 43/1000 kluczy (4%)                                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Total processed: 40 operacji               │
+│ ⏳ Total processed: 109 operacji               │
 │ 🌍 Języki zsync: 0/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 17:05:42                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 17:06:28                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -144,11 +144,11 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Operacji wykonanych | **40** | we wszystkich kategoriach |
+| 📁 Operacji wykonanych | **109** | we wszystkich kategoriach |
 | ✅ NPC zmigrowanych | **20** (445 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **28779** | we wszystkich kategoriach |
+| 🔑 Kluczy wyciągniętych | **28798** | we wszystkich kategoriach |
 | 🌍 Języków zsynchronizowanych | **0**/53 | brak |
-| 🔄 Cykli wykonanych | **#1** | continuous mode |
+| 🔄 Cykli wykonanych | **#2** | continuous mode |
 | 🎯 Aktywne kategorie | **15** | z danymi |
 | ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
 
@@ -156,6 +156,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- 📜 `scripts` +44 kluczy @ 17:06:28
 - 🧙 `npc` +20 kluczy @ 17:05:42
 
 
@@ -251,13 +252,13 @@
 </details>
 
 <details>
-<summary>📜 8. Scripts - 🔄 (2%)</summary>
+<summary>📜 8. Scripts - 🔄 (4%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 24 |
+| 🔑 Kluczy | 43 |
 | 🎯 Cel | 1000 |
-| 📊 Postęp | 2% |
+| 📊 Postęp | 4% |
 | 📁 Plik | i18n/en/scripts.json |
 
 </details>
@@ -324,7 +325,7 @@
 | client | 242 | 0 | 0 | ✅ Active |
 | raids | 147 | 0 | 0 | ✅ Active |
 | php | 54 | 0 | 0 | ✅ Active |
-| scripts | 24 | 0 | 0 | ✅ Active |
+| scripts | 43 | 69 | 0 | ✅ Active |
 | startup | 23 | 0 | 0 | ✅ Active |
 | libs | 21 | 0 | 0 | ✅ Active |
 | modules | 16 | 0 | 0 | ✅ Active |
@@ -352,7 +353,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #2 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -385,7 +386,7 @@
 |-----------|--------|--------|-----|--------|
 | 🎒 Items | 13749 | ██████░░░░░░░░░░░░░░ | 40000 | 🔄 34% |
 | 🧙 NPC | 5339 | ███████░░░░░░░░░░░░░ | 15000 | 🔄 36% |
-| 📜 Scripts | 24 | ░░░░░░░░░░░░░░░░░░░░ | 1000 | 🔄 2% |
+| 📜 Scripts | 43 | ░░░░░░░░░░░░░░░░░░░░ | 1000 | 🔄 4% |
 | 👹 Monsters | 7341 | ███████████████████░ | 7500 | ✅ 98% |
 | ✨ Spells | 304 | ███████████████░░░░░ | 400 | 🔄 76% |
 | ⚙️ Server | 0 | ░░░░░░░░░░░░░░░░░░░░ | 300 | ⏳ 0% |
@@ -395,7 +396,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 17:05:42  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 17:06:28  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

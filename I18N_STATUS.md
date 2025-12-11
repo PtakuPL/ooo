@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 300, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300} -->
 
-> **Aktualizacja:** 2025-12-11 03:36:47 UTC  
+> **Aktualizacja:** 2025-12-11 03:37:55 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53
 
 ---
@@ -110,7 +110,7 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ ⏳ Total processed: 289 operacji               │
 │ 🌍 Języki zsync: 32/53                                │
-│ 📅 Ostatnia aktualizacja: 2025-12-11 03:36:47                 │
+│ 📅 Ostatnia aktualizacja: 2025-12-11 03:37:55                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -299,29 +299,29 @@
 
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
-| items | 13749 | 0 | 6 | ⏭️ Skip 112m |
-| monsters | 7341 | 0 | 4 | ⏭️ Skip 48m |
+| items | 13749 | 0 | 6 | ⏭️ Skip 111m |
+| monsters | 7341 | 0 | 4 | ⏭️ Skip 47m |
 | npc | 5334 | 100 | 0 | ✅ Active |
-| html | 1495 | 0 | 4 | ⏭️ Skip 51m |
-| scripts | 385 | 0 | 4 | ⏭️ Skip 48m |
+| html | 1495 | 0 | 4 | ⏭️ Skip 49m |
+| scripts | 385 | 0 | 4 | ⏭️ Skip 46m |
 | spells | 255 | 147 | 0 | ✅ Active |
-| client | 236 | 0 | 4 | ⏭️ Skip 51m |
-| raids | 147 | 0 | 4 | ⏭️ Skip 48m |
-| php | 54 | 42 | 4 | ⏭️ Skip 52m |
-| startup | 23 | 0 | 4 | ⏭️ Skip 49m |
-| libs | 21 | 0 | 4 | ⏭️ Skip 49m |
-| modules | 16 | 0 | 4 | ⏭️ Skip 49m |
+| client | 236 | 0 | 4 | ⏭️ Skip 50m |
+| raids | 147 | 0 | 4 | ⏭️ Skip 47m |
+| php | 54 | 42 | 4 | ⏭️ Skip 51m |
+| startup | 23 | 0 | 4 | ⏭️ Skip 48m |
+| libs | 21 | 0 | 4 | ⏭️ Skip 48m |
+| modules | 16 | 0 | 4 | ⏭️ Skip 48m |
 | messages | 11 | 0 | 0 | ✅ Active |
-| chatchannels | 8 | 0 | 4 | ⏭️ Skip 49m |
-| events | 5 | 0 | 4 | ⏭️ Skip 49m |
+| chatchannels | 8 | 0 | 4 | ⏭️ Skip 48m |
+| events | 5 | 0 | 4 | ⏭️ Skip 48m |
 | actions | 0 | 0 | 0 | ⏳ Empty |
 | cpp | 0 | 0 | 2 | ⏳ Empty |
 | errors | 0 | 0 | 0 | ⏳ Empty |
-| npclib | 0 | 0 | 4 | ⏭️ Skip 49m |
+| npclib | 0 | 0 | 4 | ⏭️ Skip 48m |
 | quests | 0 | 0 | 0 | ⏳ Empty |
 | server | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
-| world | 0 | 0 | 4 | ⏭️ Skip 48m |
+| world | 0 | 0 | 4 | ⏭️ Skip 47m |
 
 ---
 
@@ -329,23 +329,23 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| scripts | 48m | 4x | Progresywny backoff |
-| monsters | 48m | 4x | Progresywny backoff |
-| raids | 48m | 4x | Progresywny backoff |
-| world | 48m | 4x | Progresywny backoff |
-| items | 112m | 6x | Progresywny backoff |
-| libs | 49m | 4x | Progresywny backoff |
-| events | 49m | 4x | Progresywny backoff |
-| chatchannels | 49m | 4x | Progresywny backoff |
-| modules | 49m | 4x | Progresywny backoff |
-| startup | 49m | 4x | Progresywny backoff |
-| npclib | 49m | 4x | Progresywny backoff |
-| html | 51m | 4x | Progresywny backoff |
-| client | 51m | 4x | Progresywny backoff |
-| sendtextmessage | 51m | 4x | Progresywny backoff |
-| keywordhandler | 52m | 4x | Progresywny backoff |
-| twig | 52m | 4x | Progresywny backoff |
-| php | 52m | 4x | Progresywny backoff |
+| scripts | 46m | 4x | Progresywny backoff |
+| monsters | 47m | 4x | Progresywny backoff |
+| raids | 47m | 4x | Progresywny backoff |
+| world | 47m | 4x | Progresywny backoff |
+| items | 111m | 6x | Progresywny backoff |
+| libs | 48m | 4x | Progresywny backoff |
+| events | 48m | 4x | Progresywny backoff |
+| chatchannels | 48m | 4x | Progresywny backoff |
+| modules | 48m | 4x | Progresywny backoff |
+| startup | 48m | 4x | Progresywny backoff |
+| npclib | 48m | 4x | Progresywny backoff |
+| html | 49m | 4x | Progresywny backoff |
+| client | 50m | 4x | Progresywny backoff |
+| sendtextmessage | 50m | 4x | Progresywny backoff |
+| keywordhandler | 50m | 4x | Progresywny backoff |
+| twig | 51m | 4x | Progresywny backoff |
+| php | 51m | 4x | Progresywny backoff |
 
 ---
 
@@ -396,7 +396,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:36:47  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-11 03:37:55  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

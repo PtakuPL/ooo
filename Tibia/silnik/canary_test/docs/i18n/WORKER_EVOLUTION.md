@@ -363,3 +363,35 @@ Opcje:
 | `tools/build_translation_queue.py` | 53884 wpisów w kolejce |
 
 *Aktualizacja przez Agent 1 + Agent 2, 2025-12-11*
+
+---
+
+## v3.2 - AUTO_TRANSLATE Mode (2025-12-11)
+
+### Nowe funkcje:
+1. **AUTO_TRANSLATE** - automatyczne tłumaczenie kluczy z `[EN]` prefix
+   - Komendy: `AUTO:pl`, `AUTO:ru`, `AUTO:tr` itd.
+   - `TRANSLATE_LIMIT=N` - limit tłumaczeń na cykl (domyślnie 10)
+   - Worker wysyła batch do Gemini API i zapisuje tłumaczenia
+
+2. **Czyszczenie starych kluczy**
+   - Usunięto 1600 śmieciowych kluczy z cache/twig
+   - Dodano `html_copy/system/cache/` do excluded
+   - Wszystkie języki mają teraz dokładnie tyle kluczy co EN
+
+3. **Dispatcher MIGRATION-first**
+   - Najpierw wszystkie MIGRATION, potem SYNC
+   - Flaga `migrations_done` kontroluje przejście
+
+### Statystyki:
+- EN: 28,958 kluczy (źródło)
+- Języki: 53 (wszystkie zsynchronizowane)
+- Usunięto: 1,600 śmieciowych kluczy
+
+### Komendy worker_commands.txt:
+```
+FORCE:monsters     # Wymuś migrację monsters
+AUTO:pl            # Uruchom auto-tłumaczenie dla PL
+AUTO:ru            # Uruchom auto-tłumaczenie dla RU
+```
+

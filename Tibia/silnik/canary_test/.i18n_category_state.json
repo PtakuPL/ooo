@@ -124,7 +124,7 @@
   },
   "translation_sync": {
     "current_lang": "hu",
-    "current_category": "npc.json",
+    "current_category": "php.json",
     "languages_done": [],
     "stats": {
       "de": {
@@ -291,7 +291,7 @@
       },
       "hu": {
         "chatchannels": 8,
-        "total": 28267,
+        "total": 29798,
         "client": 283,
         "cpp": 15,
         "events": 5,
@@ -300,9 +300,10 @@
         "libs": 21,
         "modules": 16,
         "monsters": 7341,
-        "npc": 5334
+        "npc": 5334,
+        "php": 1531
       }
     },
-    "last_sync": 1765411857.9030993
+    "last_sync": 1765411870.8536086
   }
 }

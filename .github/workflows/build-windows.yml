@@ -1,0 +1,133 @@
+---
+name: Build - Windows
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - "Tibia/silnik/canary_test/testyy/src/**"
+      - "Tibia/silnik/canary_test/testyy/CMakeLists.txt"
+      - "Tibia/silnik/canary_test/testyy/vcpkg.json"
+      - ".github/workflows/build-windows.yml"
+
+permissions:
+  contents: read
+
+env:
+  CMAKE_BUILD_PARALLEL_LEVEL: 4
+  MAKEFLAGS: '-j 4'
+  # Use a recent vcpkg tool commit to avoid stale MSYS2 package URLs on Windows.
+  VCPKG_TOOL_COMMIT: cf6692675e04c036e21f26d64ae5fa3c8485f224
+  VCPKG_FEATURE_FLAGS: manifests,binarycaching
+  VCPKG_BINARY_SOURCES: clear;x-gha,readwrite
+  VCPKG_BUILD_TYPE: release
+  VCPKG_DEFAULT_TRIPLET: x64-windows
+  VCPKG_DEFAULT_HOST_TRIPLET: x64-windows
+
+jobs:
+  cancel-runs:
+    if: github.event_name == 'pull_request' && github.ref != 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.12.1
+        with:
+          access_token: ${{ github.token }}
+
+  build:
+    name: Windows Build (Release)
+    runs-on: windows-2022
+    defaults:
+      run:
+        working-directory: Tibia/silnik/canary_test/testyy
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Remove nested git directories (upstream mirrors)
+        shell: bash
+        run: |
+          rm -rf oryginall/canary-serwer/.git || true
+          rm -rf oryginall/otclient/.git || true
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1.1
+
+      - name: Setup MSVC environment
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+
+      - name: CCache
+        uses: hendrikmuhs/ccache-action@main
+        with:
+          max-size: "1G"
+          variant: "sccache"
+          key: ccache-windows-release
+          restore-keys: |
+            ccache-windows-
+
+      - name: Export GitHub Actions cache env
+        uses: actions/github-script@v7
+        with:
+          script: |
+            core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
+            core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
+
+      - name: Cache vcpkg artifacts
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ github.workspace }}\vcpkg\installed
+            ${{ github.workspace }}\vcpkg\buildtrees
+            ${{ github.workspace }}\vcpkg\downloads
+          key: vcpkg-build-x64-windows-${{ hashFiles('Tibia/silnik/canary_test/testyy/vcpkg.json') }}
+          restore-keys: |
+            vcpkg-build-x64-windows-
+            vcpkg-sonar-x64-windows-
+
+      - name: Remove Windows pre-installed MySQL
+        shell: pwsh
+        run: |
+          if (Test-Path "C:/mysql*") { Remove-Item -Recurse -Force C:/mysql* }
+
+      - name: Install vcpkg
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgGitCommitId: ${{ env.VCPKG_TOOL_COMMIT }}
+
+      - name: Setup CMake + Ninja
+        uses: lukka/get-cmake@latest
+        with:
+          cmakeVersion: '~3.27.0'
+
+      - name: Configure CMake
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path build | Out-Null
+          cmake -G "Ninja" `
+                -DCMAKE_BUILD_TYPE=Release `
+                -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" `
+                -DVCPKG_TARGET_TRIPLET=x64-windows `
+                -DSPEED_UP_BUILD_UNITY=ON `
+                -DTOGGLE_BIN_FOLDER=ON `
+                -DCMAKE_C_COMPILER_LAUNCHER=sccache `
+                -DCMAKE_CXX_COMPILER_LAUNCHER=sccache `
+                -S . -B build
+
+      - name: Build
+        shell: pwsh
+        run: |
+          cmake --build build --config Release --parallel 4
+
+      - name: Create and Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: otclient-windows-release-${{ github.sha }}
+          path: |
+            ${{ github.workspace }}/Tibia/silnik/canary_test/testyy/build/bin/
+          retention-days: 7

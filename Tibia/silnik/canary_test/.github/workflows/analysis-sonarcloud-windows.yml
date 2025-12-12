@@ -1,0 +1,80 @@
+name: SonarCloud (Windows)
+
+on:
+  push:
+    branches: [ master, main ]
+    paths:
+      - 'testyy/**'
+  pull_request:
+    branches: [ master, main ]
+    paths:
+      - 'testyy/**'
+  workflow_dispatch:
+
+env:
+  CMAKE_BUILD_PARALLEL_LEVEL: 4
+
+jobs:
+  sonarcloud:
+    runs-on: windows-2022
+    defaults:
+      run:
+        shell: pwsh
+        working-directory: testyy
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup MSVC environment
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+
+      - name: Setup vcpkg
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgDirectory: '${{ github.workspace }}/vcpkg'
+          vcpkgGitCommitId: 'a34c873a9717a888f58dc05268dea15592c2f0ff'
+
+      - name: Cache vcpkg packages
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ github.workspace }}/vcpkg/buildtrees
+            ${{ github.workspace }}/vcpkg/packages
+            ${{ github.workspace }}/vcpkg/downloads
+            ${{ github.workspace }}/vcpkg/installed
+          key: vcpkg-windows-testyy-${{ hashFiles('testyy/vcpkg.json') }}
+          restore-keys: |
+            vcpkg-windows-testyy-
+
+      - name: Install SonarCloud build-wrapper
+        run: |
+          $bwZip = "${{ github.workspace }}\\build-wrapper.zip"
+          Invoke-WebRequest -Uri https://sonarcloud.io/static/cpp/build-wrapper-win-x86.zip -OutFile $bwZip
+          Expand-Archive -Path $bwZip -DestinationPath build-wrapper -Force
+
+      - name: Configure CMake (preset)
+        env:
+          VCPKG_ROOT: ${{ github.workspace }}/vcpkg
+        run: cmake --preset windows-release-dyn
+
+      - name: Build (wrapped for Sonar)
+        env:
+          VCPKG_ROOT: ${{ github.workspace }}/vcpkg
+        run: |
+          build-wrapper\\build-wrapper-win-x86-64.exe --out-dir bw-output `
+            cmake --build build/windows-release-dyn --parallel
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v2
+        with:
+          projectBaseDir: testyy
+          args: >
+            -Dsonar.cfamily.build-wrapper-output=bw-output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONARCLOUDTOKEN }}

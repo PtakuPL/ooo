@@ -11,8 +11,7 @@
     "movements": 1765515918.6979642,
     "creaturescripts": 1765515926.3747902,
     "globalevents": 1765515929.1298966,
-    "items": 1765508291.6046674,
-    "mounts": 1765508301.306498,
+    "items": 1765515939.01123,
     "libs": 1765508312.0015862,
     "events": 1765508321.864914,
     "chatchannels": 1765508331.3453102,
@@ -30,7 +29,8 @@
     "otclient_tools": 1765508415.5008683,
     "server": 1765490339.4466524,
     "errors": 1765508423.926086,
-    "monsters": 1765509284.8340068
+    "monsters": 1765509284.8340068,
+    "mounts": 1765509039.8857145
   },
   "last_processed": {
     "npc": {
@@ -83,11 +83,11 @@
     },
     "items": {
       "count": 0,
-      "timestamp": 1765501091.60466
+      "timestamp": 1765508739.011224
     },
     "mounts": {
       "count": 0,
-      "timestamp": 1765501101.3064914
+      "timestamp": 1765508739.885706
     },
     "libs": {
       "count": 0,
@@ -171,8 +171,8 @@
     "movements": 10,
     "creaturescripts": 9,
     "globalevents": 10,
-    "items": 8,
-    "mounts": 8,
+    "items": 10,
+    "mounts": 1,
     "libs": 8,
     "events": 8,
     "chatchannels": 8,
@@ -192,7 +192,8 @@
     "errors": 8
   },
   "total_processed": {
-    "monsters": 349888
+    "monsters": 349888,
+    "mounts": -43324
   },
   "migrations_done": false
 }

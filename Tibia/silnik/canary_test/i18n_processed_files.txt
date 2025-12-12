@@ -2177,3 +2177,16 @@ data-canary/monster/vermins/spider.lua
 data-canary/monster/vermins/wasp.lua
 data-canary/monster/vermins/sandcrawler.lua
 data-canary/monster/magicals/frazzlemaw.lua
+data-canary/monster/magicals/guzzlemaw.lua
+data-canary/monster/magicals/guzzlemaw.lua
+data-canary/monster/magicals/guzzlemaw.lua
+data-canary/monster/bosses/black_knight.lua
+data-canary/monster/bosses/shadowpelt.lua
+data-canary/monster/bosses/custodian.lua
+data-canary/monster/bosses/custodian.lua
+data-canary/monster/bosses/bullwark.lua
+data-canary/monster/bosses/dharalion.lua
+data-canary/monster/bosses/apocalypse.lua
+data-canary/monster/bosses/apprentice_sheng.lua
+data-canary/monster/bosses/bazir.lua
+data-canary/monster/giants/cyclops.lua

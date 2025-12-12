@@ -41,8 +41,8 @@
       "timestamp": 1765508226.422677
     },
     "monsters": {
-      "count": 43210,
-      "timestamp": 1765508665.503913
+      "count": 21554,
+      "timestamp": 1765508675.1990683
     },
     "actions": {
       "count": 0,
@@ -191,7 +191,7 @@
     "errors": 8
   },
   "total_processed": {
-    "monsters": 263792
+    "monsters": 349670
   },
   "migrations_done": false
 }

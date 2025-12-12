@@ -336,6 +336,7 @@ private:
 	void sendPingBack();
 	void sendCreatureTurn(const std::shared_ptr<Creature> &creature, uint32_t stackpos);
 	void sendCreatureSay(const std::shared_ptr<Creature> &creature, SpeakClasses type, const std::string &text, const Position* pos = nullptr);
+	void sendCreatureLocalizedSay(const std::shared_ptr<Creature> &creature, SpeakClasses type, const std::string &i18nKey, const std::string &fallbackText, const Position* pos = nullptr);  // I18N: sends i18nKey for client-side translation of creature speech
 
 	// Unjust Panel
 	void sendUnjustifiedPoints(const uint8_t &dayProgress, const uint8_t &dayLeft, const uint8_t &weekProgress, const uint8_t &weekLeft, const uint8_t &monthProgress, const uint8_t &monthLeft, const uint8_t &skullDuration);

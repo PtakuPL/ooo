@@ -1,14 +1,14 @@
 {
-  "total_cycles": 360,
+  "total_cycles": 361,
   "mode": "MIGRATION",
-  "category": "startup",
-  "last_update": "2025-12-12T06:06:03.387728",
+  "category": "npclib",
+  "last_update": "2025-12-12T06:06:12.987672",
   "migration": {
     "files_scanned": 9,
     "files_with_keys": 9,
     "files_without_keys": 0,
     "keys_extracted": 9,
-    "current_category": "startup",
-    "batch_size": 7
+    "current_category": "npclib",
+    "batch_size": 4
   }
 }

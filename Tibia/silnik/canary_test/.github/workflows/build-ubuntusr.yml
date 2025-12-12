@@ -54,12 +54,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
 
       - name: Install Linux Dependencies
         working-directory: .
         run: >
-          sudo apt-get update && sudo apt-get install ccache linux-headers-"$(uname -r)"
+          sudo apt-get update && sudo apt-get install -y ccache software-properties-common
 
       - name: Switch to gcc-13 on Ubuntu 22.04
         if: matrix.os == 'ubuntu-22.04'
@@ -67,8 +67,10 @@ jobs:
         run: |
           sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
           sudo apt-get update
-          sudo apt install gcc-13 g++-13 -y
-          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 100 --slave /usr/bin/g++ g++ /usr/bin/g++-13 --slave /usr/bin/gcov gcov /usr/bin/gcov-12
+          sudo apt-get install -y gcc-13 g++-13
+          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 100 \
+            --slave /usr/bin/g++ g++ /usr/bin/g++-13 \
+            --slave /usr/bin/gcov gcov /usr/bin/gcov-13
           sudo update-alternatives --set gcc /usr/bin/gcc-13
 
       - name: Switch to gcc-14 on Ubuntu 24.04
@@ -77,8 +79,10 @@ jobs:
         run: |
           sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
           sudo apt-get update
-          sudo apt-get install gcc-14 g++-14 -y
-          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-14 100 --slave /usr/bin/g++ g++ /usr/bin/g++-14 --slave /usr/bin/gcov gcov /usr/bin/gcov-14
+          sudo apt-get install -y gcc-14 g++-14
+          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-14 100 \
+            --slave /usr/bin/g++ g++ /usr/bin/g++-14 \
+            --slave /usr/bin/gcov gcov /usr/bin/gcov-14
           sudo update-alternatives --set gcc /usr/bin/gcc-14
 
       - name: CCache
@@ -115,7 +119,7 @@ jobs:
           buildPreset: ${{ matrix.buildtype }}
 
       - name: Create and Upload Artifact
-        uses: actions/upload-artifact@main
+        uses: actions/upload-artifact@v4
         with:
           name: canary-${{ matrix.os }}-${{ matrix.buildtype }}-${{ github.sha }}
           path: |

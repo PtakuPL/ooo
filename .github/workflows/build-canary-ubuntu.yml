@@ -70,31 +70,35 @@ jobs:
           sudo apt install gcc-13 g++-13 -y
           sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 100 --slave /usr/bin/g++ g++ /usr/bin/g++-13 --slave /usr/bin/gcov gcov /usr/bin/gcov-12
           sudo update-alternatives --set gcc /usr/bin/gcc-13
-
+                    uses: actions/checkout@v4
       - name: Switch to gcc-14 on Ubuntu 24.04
         if: matrix.os == 'ubuntu-24.04'
         working-directory: .
-        run: |
+                      sudo apt-get update && sudo apt-get install -y ccache software-properties-common
           sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
           sudo apt-get update
           sudo apt-get install gcc-14 g++-14 -y
           sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-14 100 --slave /usr/bin/g++ g++ /usr/bin/g++-14 --slave /usr/bin/gcov gcov /usr/bin/gcov-14
           sudo update-alternatives --set gcc /usr/bin/gcc-14
 
-      - name: CCache
-        uses: hendrikmuhs/ccache-action@main
-        with:
+                      sudo apt-get install -y gcc-13 g++-13
+                      sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 100 \
+                        --slave /usr/bin/g++ g++ /usr/bin/g++-13 \
+                        --slave /usr/bin/gcov gcov /usr/bin/gcov-13
+                      sudo update-alternatives --set gcc /usr/bin/gcc-13
           max-size: "1G"
           key: ccache-${{ matrix.os }}-${{ matrix.buildtype }}
           restore-keys: |
             ccache-${{ matrix.os }}
 
       - name: Restore artifacts and install vcpkg
-        id: vcpkg-step
-        run: |
-          vcpkgCommitId=$(grep '.builtin-baseline' vcpkg.json | awk -F: '{print $2}' | tr -d '," ')
+                      sudo apt-get install -y gcc-14 g++-14
+                      sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-14 100 \
+                        --slave /usr/bin/g++ g++ /usr/bin/g++-14 \
+                        --slave /usr/bin/gcov gcov /usr/bin/gcov-14
+                      sudo update-alternatives --set gcc /usr/bin/gcc-14
           echo "vcpkg commit ID: $vcpkgCommitId"
-          echo "VCPKG_GIT_COMMIT_ID=$vcpkgCommitId" >> "$GITHUB_ENV"
+                    uses: actions/upload-artifact@v4
 
       - name: Get vcpkg commit id from vcpkg.json
         uses: lukka/run-vcpkg@main

@@ -634,12 +634,14 @@ void Npc::onThinkYell(uint32_t interval) {
 
 		if (!npcType->info.voiceVector.empty() && (npcType->info.yellChance >= static_cast<uint32_t>(uniform_random(1, 100)))) {
 			const uint32_t index = uniform_random(0, npcType->info.voiceVector.size() - 1);
-			const auto &[text, yellText] = npcType->info.voiceVector[index];
+			const auto &voice = npcType->info.voiceVector[index];
+			const SpeakClasses talkType = voice.yellText ? TALKTYPE_YELL : TALKTYPE_SAY;
 
-			if (yellText) {
-				g_game().internalCreatureSay(static_self_cast<Npc>(), TALKTYPE_YELL, text, false);
+			// I18N: If i18nKey is set, use localized say for client-side translation
+			if (!voice.i18nKey.empty()) {
+				g_game().internalCreatureLocalizedSay(static_self_cast<Npc>(), talkType, voice.i18nKey, voice.text, false);
 			} else {
-				g_game().internalCreatureSay(static_self_cast<Npc>(), TALKTYPE_SAY, text, false);
+				g_game().internalCreatureSay(static_self_cast<Npc>(), talkType, voice.text, false);
 			}
 		}
 	}

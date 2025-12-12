@@ -1386,12 +1386,14 @@ void Monster::onThinkYell(uint32_t interval) {
 
 		if (!m_monsterType->info.voiceVector.empty() && (m_monsterType->info.yellChance >= static_cast<uint32_t>(uniform_random(1, 100)))) {
 			const uint32_t index = uniform_random(0, m_monsterType->info.voiceVector.size() - 1);
-			const auto &[text, yellText] = m_monsterType->info.voiceVector[index];
+			const auto &voice = m_monsterType->info.voiceVector[index];
+			const SpeakClasses talkType = voice.yellText ? TALKTYPE_MONSTER_YELL : TALKTYPE_MONSTER_SAY;
 
-			if (yellText) {
-				g_game().internalCreatureSay(static_self_cast<Monster>(), TALKTYPE_MONSTER_YELL, text, false);
+			// I18N: If i18nKey is set, use localized say for client-side translation
+			if (!voice.i18nKey.empty()) {
+				g_game().internalCreatureLocalizedSay(static_self_cast<Monster>(), talkType, voice.i18nKey, voice.text, false);
 			} else {
-				g_game().internalCreatureSay(static_self_cast<Monster>(), TALKTYPE_MONSTER_SAY, text, false);
+				g_game().internalCreatureSay(static_self_cast<Monster>(), talkType, voice.text, false);
 			}
 		}
 	}

@@ -215,10 +215,1630 @@
       "overall_status": "completed",
       "completed_at": "2025-12-12T03:57:40.040212",
       "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/cult_believer.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:44.199615",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/animated_ogre_savage.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:44.352293",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/animated_ogre_brute.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:44.506690",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/animated_cyclops.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:44.655872",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/animated_skunk.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:44.811930",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/orc_cultist.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:44.952933",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/cult_enforcer.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:45.112044",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/animated_mummy.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:45.293110",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/animated_guzzlemaw.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:45.447211",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/goldhanded_cultist.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:45.591372",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/barkless_devotee.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:47.915906",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/misguided_bully.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:48.056643",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/orc_cult_minion.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:48.185565",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/animated_rhino.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:48.314325",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/animated_stone_golem.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:48.454832",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/minotaur_idol.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:48.591342",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/animated_clomp.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:48.739701",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/misguided_shadow.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:48.943285",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/the_unarmored_voidborn.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:49.163655",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/eliz_the_unyielding_stop.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:49.357614",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/the_remorseless_corruptor.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:49.559198",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/essence_of_malice.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:49.731707",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/dorokoll_the_mystic.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:49.904494",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/pillars/pillar_of_draining.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:50.076578",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/pillars/pillar_of_summoning.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:50.246744",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/pillars/destroyed_pillar.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:50.419276",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/pillars/pillar_of_protection.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:50.589204",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/pillars/containment_crystal.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:50.746358",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/pillars/pillar_of_death.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:50.889757",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/pillars/pillar_of_healing.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:51.035556",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/the_sinister_hermit_dirty.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:51.167457",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/wine_cask.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:51.296874",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/malkhar_deathbringer.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:51.519815",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/dorokoll_the_mystic_stop.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:51.642965",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/the_source_of_corruption.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:51.796300",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/last_planegazer.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:52.584753",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/the_armored_voidborn.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:52.705950",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/malkhar_deathbringer_stop.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:52.828974",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/mezlon_the_defiler.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:52.955842",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/the_false_god.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:53.093677",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/eshtaba_the_conjurer_stop.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:53.228498",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/mezlon_the_defiler_stop.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:53.362384",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/ravenous_hunger.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:53.494049",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/the_corruptor_of_souls.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:53.626992",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/the_sandking.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:53.874299",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/the_sandking_fake.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:54.108993",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/eliz_the_unyielding.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:54.264337",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/eshtaba_the_conjurer.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:54.418228",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/the_souldespoiler.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:54.577294",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/leiden.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:54.726468",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/summons/vermin_swarm.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:54.891114",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/summons/security_golem.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:55.071920",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/summons/sand_vortex.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:55.254065",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/summons/liquor_spirit.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:55.435128",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/summons/enraged_sand_brood.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:55.586589",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/summons/sphere_of_wrath.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:55.637535",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/summons/dread_minion.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:55.804149",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/summons/stolen_soul.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:55.977132",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/summons/soul_reaper.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:56.163357",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/summons/voidshard.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:56.319497",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/summons/freed_soul.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:56.449162",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/summons/sand_brood.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:56.580370",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/summons/dark_soul.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:57.083397",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/the_sinister_hermit_clean.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:57.237566",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/bosses/zarcorix_of_yalahar.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:57.385765",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/barkless_fanatic.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:57.528338",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/containment_machine.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:57.764227",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/animated_rotworm.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:57.977279",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/misguided_thief.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:58.139309",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/animated_moohtant.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:58.336004",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/orc_cult_fanatic.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:58.533637",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/cults_of_tibia/orc_cult_inquisitor.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:58.806502",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/hero_of_rathleton/weakened_glooth_horror.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:58.971887",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/hero_of_rathleton/deep_terror.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:59.159866",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/hero_of_rathleton/energy_pulse.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:59.321897",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/hero_of_rathleton/glooth_slasher.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:59.471627",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/hero_of_rathleton/glooth-generator.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:59.628935",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/hero_of_rathleton/glooth_trasher.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:59.811826",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/hero_of_rathleton/professor_maxxen.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:59.963841",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/hero_of_rathleton/empowered_glooth_horror.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:00.145715",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/hero_of_rathleton/feeble_glooth_horror.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:00.319753",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/hero_of_rathleton/strong_glooth_horror.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:00.484557",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/hero_of_rathleton/glooth_horror.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:00.570976",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/hero_of_rathleton/tentacle_of_the_deep_terror.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:00.722377",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/hero_of_rathleton/glooth_masher.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:00.875125",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/hemming.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:01.031944",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/esmeralda.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:01.179914",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/the_many.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:01.390667",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/leviathan.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:01.513423",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/gorgo.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:01.664570",
+      "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 12,
+    "files_completed": 102,
     "total_keys": 0
   }
 }

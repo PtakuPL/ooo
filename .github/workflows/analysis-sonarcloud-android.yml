@@ -118,7 +118,7 @@ jobs:
             -Dsonar.cfamily.threads=4
             -Dsonar.cfamily.cache.enabled=true
             "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
-            -Dsonar.cfamily.compile-commands=build-android/compile_commands.json
+            -Dsonar.cfamily.compile-commands=Tibia/silnik/canary_test/testyy/build-android/compile_commands.json
             -Dsonar.pullrequest.key=${{ github.event.pull_request.number }}
             -Dsonar.pullrequest.branch=${{ github.event.pull_request.head.ref }}
             -Dsonar.pullrequest.base=${{ github.event.pull_request.base.ref }}
@@ -135,4 +135,4 @@ jobs:
             -Dsonar.cfamily.threads=4
             -Dsonar.cfamily.cache.enabled=true
             "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
-            -Dsonar.cfamily.compile-commands=build-android/compile_commands.json
+            -Dsonar.cfamily.compile-commands=Tibia/silnik/canary_test/testyy/build-android/compile_commands.json

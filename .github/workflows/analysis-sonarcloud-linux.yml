@@ -160,7 +160,7 @@ jobs:
             -Dsonar.cfamily.threads=${{ steps.cpu-count.outputs.count }}
             -Dsonar.cfamily.cache.enabled=true
             "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
-            -Dsonar.cfamily.compile-commands=build/compile_commands.json
+            -Dsonar.cfamily.compile-commands=Tibia/silnik/canary_test/testyy/build/compile_commands.json
             -Dsonar.pullrequest.key=${{ github.event.pull_request.number }}
             -Dsonar.pullrequest.branch=${{ github.event.pull_request.head.ref }}
             -Dsonar.pullrequest.base=${{ github.event.pull_request.base.ref }}
@@ -177,5 +177,4 @@ jobs:
             -Dsonar.cfamily.threads=${{ steps.cpu-count.outputs.count }}
             -Dsonar.cfamily.cache.enabled=true
             "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
-            -Dsonar.cfamily.compile-commands=build/compile_commands.json
-
+            -Dsonar.cfamily.compile-commands=Tibia/silnik/canary_test/testyy/build/compile_commands.json

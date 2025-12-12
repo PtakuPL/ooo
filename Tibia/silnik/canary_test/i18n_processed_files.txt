@@ -530,3 +530,13 @@ html_copy/system/migrate.php
 html_copy/system/compat/classes.php
 html_copy/system/compat/config.php
 html_copy/system/compat/base.php
+html_copy/system/templates/spells.html.twig
+html_copy/system/templates/google_analytics.html.twig
+html_copy/system/templates/admin.plugins.form.html.twig
+html_copy/system/templates/index.html
+html_copy/system/templates/tables.headline.html.twig
+html_copy/system/templates/monsters.html.twig
+html_copy/system/templates/account.management.html.twig
+html_copy/system/templates/buttons.account_lost.html.twig
+html_copy/system/templates/characters.form.html.twig
+html_copy/system/templates/install.admin.html.twig

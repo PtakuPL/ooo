@@ -22,7 +22,7 @@
     "npclib": 1765508358.5352008,
     "dataroot": 1765508367.6876118,
     "php": 1765508380.8054655,
-    "html": 1765501126.707187,
+    "html": 1765508390.2512634,
     "cpp": 1765490277.0664494,
     "otclient_modules": 1765501136.8486123,
     "otclient_mods": 1765490294.9086766,
@@ -123,7 +123,7 @@
     },
     "html": {
       "count": 0,
-      "timestamp": 1765493926.707179
+      "timestamp": 1765501190.2512584
     },
     "cpp": {
       "count": 0,
@@ -181,7 +181,7 @@
     "npclib": 8,
     "dataroot": 8,
     "php": 8,
-    "html": 6,
+    "html": 8,
     "cpp": 2,
     "otclient_modules": 6,
     "otclient_mods": 2,

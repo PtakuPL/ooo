@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-12 04:04:45 UTC  
+> **Aktualizacja:** 2025-12-12 04:04:46 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 21648
 
 ---
@@ -180,7 +180,7 @@
 │    ├─ Kategoria MONSTERS:    132 kluczy EN                    │
 │    └─ Total kluczy EN:  21648                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-12 04:04:45            │
+│ 📅 Ostatnia aktualizacja: 2025-12-12 04:04:46            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -201,7 +201,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 👹 `monsters` +0 kluczy @ 04:04:43
+- 👹 `monsters` +0 kluczy @ 04:04:44
 - 📜 `scripts` +0 kluczy @ 03:57:06
 - 🧙 `npc` +0 kluczy @ 03:54:45
 - ⚡ `errors` +0 kluczy @ 02:00:23
@@ -374,7 +374,7 @@
 | spells | 304 | 0 | 2 | ✅ Active |
 | client | 242 | 0 | 0 | ✅ Active |
 | raids | 147 | 0 | 8 | ✅ Active |
-| monsters | 132 | 349888 | 1 | ⏭️ Skip 4m |
+| monsters | 132 | 349888 | 2 | ⏭️ Skip 9m |
 | scripts | 97 | 0 | 16 | ⏭️ Skip 112m |
 | php | 59 | 0 | 8 | ✅ Active |
 | startup | 23 | 0 | 8 | ✅ Active |
@@ -401,7 +401,7 @@
 |-----------|----------------|-----------|-------|
 | npc | 109m | 14x | Progresywny backoff |
 | scripts | 112m | 16x | Progresywny backoff |
-| monsters | 4m | 1x | Progresywny backoff |
+| monsters | 9m | 2x | Progresywny backoff |
 
 ---
 
@@ -452,7 +452,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 04:04:45  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 04:04:46  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

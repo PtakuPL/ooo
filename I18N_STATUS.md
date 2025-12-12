@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-12 04:06:32 UTC  
+> **Aktualizacja:** 2025-12-12 04:06:33 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 21648
 
 ---
@@ -174,13 +174,13 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
-│ Kategoria: 📁 OTCLIENT_DATA                          │
+│ Kategoria: 📁 OTCLIENT_TOOLS                         │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Pliki przeskanowane:      9 (wszystkie kategorie)          │
-│    ├─ Kategoria OTCLIENT_DATA:      0 kluczy EN                    │
+│    ├─ Kategoria OTCLIENT_TOOLS:      0 kluczy EN                    │
 │    └─ Total kluczy EN:  21648                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-12 04:06:32            │
+│ 📅 Ostatnia aktualizacja: 2025-12-12 04:06:33            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -201,6 +201,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `otclient_tools` +0 kluczy @ 04:06:32
 - ⚡ `otclient_data` +0 kluczy @ 04:06:30
 - ⚡ `otclient_modules` +0 kluczy @ 04:06:26
 - ⚡ `html` +0 kluczy @ 04:06:22
@@ -208,7 +209,6 @@
 - ⚡ `dataroot` +0 kluczy @ 04:06:09
 - ⚡ `npclib` +0 kluczy @ 04:06:04
 - ⚡ `startup` +0 kluczy @ 04:06:00
-- ⚡ `modules` +0 kluczy @ 04:05:58
 
 
 ---
@@ -421,6 +421,7 @@
 | html | 119m | 12x | Progresywny backoff |
 | otclient_modules | 119m | 11x | Progresywny backoff |
 | otclient_data | 119m | 10x | Progresywny backoff |
+| otclient_tools | 119m | 10x | Progresywny backoff |
 | monsters | 8m | 2x | Progresywny backoff |
 | mounts | 4m | 1x | Progresywny backoff |
 
@@ -473,7 +474,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 04:06:32  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 04:06:33  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

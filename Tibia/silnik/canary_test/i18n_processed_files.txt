@@ -2251,3 +2251,11 @@ html_copy/system/templates/exception.html.twig
 html_copy/system/templates/admin.plugins.outdated.html.twig
 html_copy/system/templates/account.characters.delete.html.twig
 html_copy/system/templates/team.html.twig
+html_copy/system/locale/en/main.php
+html_copy/system/locale/en/install.php
+html_copy/system/locale/en/admin.php
+html_copy/system/locale/no/main.php
+html_copy/system/locale/be/main.php
+html_copy/system/locale/ru/main.php
+html_copy/system/locale/ru/install.php
+html_copy/system/locale/ru/admin.php

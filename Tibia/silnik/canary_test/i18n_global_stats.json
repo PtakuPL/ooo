@@ -1,14 +1,14 @@
 {
-  "total_cycles": 361,
+  "total_cycles": 364,
   "mode": "MIGRATION",
-  "category": "npclib",
-  "last_update": "2025-12-12T06:06:12.987672",
+  "category": "dataroot",
+  "last_update": "2025-12-12T06:06:21.274427",
   "migration": {
     "files_scanned": 9,
     "files_with_keys": 9,
     "files_without_keys": 0,
     "keys_extracted": 9,
-    "current_category": "npclib",
-    "batch_size": 4
+    "current_category": "dataroot",
+    "batch_size": 442
   }
 }

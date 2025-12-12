@@ -5,7 +5,7 @@
     "monsters": 1765508189.2367184,
     "actions": 1765508201.4478962,
     "quests": 1765508217.1376894,
-    "raids": 1765500974.4208193,
+    "raids": 1765508229.5346136,
     "world": 1765500983.1434286,
     "spells": 1765490104.104978,
     "talkactions": 1765500991.5555527,
@@ -55,7 +55,7 @@
     },
     "raids": {
       "count": 0,
-      "timestamp": 1765493774.4208124
+      "timestamp": 1765501029.5346043
     },
     "world": {
       "count": 0,
@@ -164,7 +164,7 @@
     "monsters": 8,
     "actions": 8,
     "quests": 8,
-    "raids": 6,
+    "raids": 8,
     "world": 6,
     "spells": 2,
     "talkactions": 6,

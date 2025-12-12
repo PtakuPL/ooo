@@ -504,3 +504,13 @@ data-otservbr-global/monster/slimes/mercury_blob.lua
 data-otservbr-global/monster/slimes/glooth_blob.lua
 data-otservbr-global/monster/slimes/death_blob.lua
 data-otservbr-global/monster/slimes/son_of_verminor.lua
+data-otservbr-global/raids/liberty_bay/ferumbras.xml
+data-otservbr-global/raids/liberty_bay/crustacea_gigantica_3.xml
+data-otservbr-global/raids/liberty_bay/quaras.xml
+data-otservbr-global/raids/liberty_bay/tortoises.xml
+data-otservbr-global/raids/liberty_bay/diblis_the_fair.xml
+data-otservbr-global/raids/venore/dharalion.xml
+data-otservbr-global/raids/venore/undead.xml
+data-otservbr-global/raids/venore/elves.xml
+data-otservbr-global/raids/venore/the_old_widow.xml
+data-otservbr-global/raids/venore/fernfang.xml

@@ -3347,10 +3347,190 @@
       "overall_status": "completed",
       "completed_at": "2025-12-12T01:56:28.210100",
       "category": "monsters"
+    },
+    "data-otservbr-global/raids/liberty_bay/ferumbras.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:57:06.759438",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/liberty_bay/crustacea_gigantica_3.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:57:06.975084",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/liberty_bay/quaras.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:57:07.201745",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/liberty_bay/tortoises.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:57:07.392971",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/liberty_bay/diblis_the_fair.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:57:07.565995",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/venore/dharalion.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:57:07.755125",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/venore/undead.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:57:07.963929",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/venore/elves.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:57:08.216724",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/venore/the_old_widow.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:57:08.421985",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/venore/fernfang.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:57:08.607342",
+      "category": "raids"
     }
   },
   "global_stats": {
-    "files_completed": 186,
+    "files_completed": 196,
     "total_keys": 0
   }
 }

@@ -102,6 +102,7 @@ jobs:
         uses: lukka/run-cmake@main
         with:
           cmakeListsTxtPath: ${{ github.workspace }}/Tibia/silnik/canary_test/CMakeLists.txt
+          configurePresetAdditionalArgs: "['-DTOGGLE_BIN_FOLDER=ON']"
           configurePreset: ${{ matrix.buildtype }}
           buildPreset: ${{ matrix.buildtype }}
 
@@ -116,12 +117,12 @@ jobs:
       - name: Unit tests
         run: |
           cd build/${{ matrix.buildtype }}
-          ctest -V -R unit
+          if ctest -N -R unit | grep -q "Test #"; then ctest -V -R unit; else echo "No unit tests."; fi
 
       - name: Integration tests
         run: |
           cd build/${{ matrix.buildtype }}
-          ctest -V -R integration---
+          if ctest -N -R integration | grep -q "Test #"; then ctest -V -R integration; else echo "No integration tests."; fi
 name: Build - Ubuntu
 
 on:

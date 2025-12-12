@@ -1,6 +1,6 @@
 {
   "files": {
-    "data-otservbr-global/monster/quests/the_inquisition/ungreez.lua": {
+    "data-otservbr-global/monster/quests/the_new_frontier/tirecz.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -15,10 +15,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:02.064917",
+      "completed_at": "2025-12-12T04:00:12.776626",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/liquid_black/tanjis.lua": {
+    "data-otservbr-global/monster/quests/the_new_frontier/the_axeorcist.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -33,10 +33,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:02.860454",
+      "completed_at": "2025-12-12T04:00:13.157355",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/liquid_black/obujos.lua": {
+    "data-otservbr-global/monster/quests/the_new_frontier/coldheart.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -51,10 +51,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:02.699135",
+      "completed_at": "2025-12-12T04:00:13.345174",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/liquid_black/jaul.lua": {
+    "data-otservbr-global/monster/quests/the_new_frontier/haunter.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -69,10 +69,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:02.992391",
+      "completed_at": "2025-12-12T04:00:13.520679",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/feaster_of_souls/irgix_the_flimsy.lua": {
+    "data-otservbr-global/monster/quests/the_new_frontier/tremorak.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -87,10 +87,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:03.140769",
+      "completed_at": "2025-12-12T04:00:13.778360",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/feaster_of_souls/the_unwelcome.lua": {
+    "data-otservbr-global/monster/quests/the_new_frontier/shard_of_corruption.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -105,10 +105,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:03.289534",
+      "completed_at": "2025-12-12T04:00:13.912684",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/feaster_of_souls/the_dread_maiden.lua": {
+    "data-otservbr-global/monster/quests/the_new_frontier/the_dreadorian.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -123,10 +123,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:03.421483",
+      "completed_at": "2025-12-12T04:00:14.062409",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/feaster_of_souls/vok_the_freakish.lua": {
+    "data-otservbr-global/monster/quests/the_new_frontier/incineron.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -141,10 +141,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:03.338148",
+      "completed_at": "2025-12-12T04:00:14.247089",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/feaster_of_souls/the_pale_worm.lua": {
+    "data-otservbr-global/monster/quests/the_new_frontier/mooh'tah_master.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -159,10 +159,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:03.460986",
+      "completed_at": "2025-12-12T04:00:14.576027",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/feaster_of_souls/unaz_the_mean.lua": {
+    "data-otservbr-global/monster/quests/the_new_frontier/menace.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -177,10 +177,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:03.585178",
+      "completed_at": "2025-12-12T04:00:14.718640",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/feaster_of_souls/the_fear_feaster.lua": {
+    "data-otservbr-global/monster/quests/soul_war/goshnars_hatred.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -195,120 +195,12 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:04.289815",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/hidden_threats/cave_spider.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:04.406643",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/grave_danger/frozen_soul.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:04.510365",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/grave_danger/magnor_mournbringer.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:04.639685",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/grave_danger/rewar_the_bloody.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:04.747349",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/grave_danger/rewar_the_bloody_inv.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:04.858197",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/grave_danger/risen_soldier.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:05.000968",
+      "completed_at": "2025-12-12T04:00:14.841369",
       "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 17,
+    "files_completed": 11,
     "total_keys": 0
   }
 }

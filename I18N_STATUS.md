@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-12 04:06:11 UTC  
+> **Aktualizacja:** 2025-12-12 04:06:17 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 21648
 
 ---
@@ -26,8 +26,8 @@
 |---------|---------|---------|------|
 | 📂 **Wszystkie pliki** | **16,226** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **7,749** | 47.8% | pliki z kodem/tekstami |
-| 🔍 **Przeskanowane** | **2,221** | **28.7%** | historia workera |
-| ⏳ Nie przeskanowane | **5,528** | 71.3% | czekają na skan |
+| 🔍 **Przeskanowane** | **2,235** | **28.8%** | historia workera |
+| ⏳ Nie przeskanowane | **5,514** | 71.2% | czekają na skan |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -43,9 +43,9 @@
 ### ✅ Status Migracji
 | Status | Ilość | Procent | Opis |
 |--------|-------|---------|------|
-| ✅ Zmigrowane | **70** | 3.2% | mają klucze i18n |
+| ✅ Zmigrowane | **70** | 3.1% | mają klucze i18n |
 | 🔄 Wymaga migracji | **0** | - | trzeba dodać i18n |
-| ⚪ Czyste | **0** | - | bez tekstów |
+| ⚪ Czyste | **13** | - | bez tekstów |
 | 🔧 W trakcie | **0** | - | obecnie przetwarzane |
 
 ### 🔑 Klucze i18n
@@ -174,13 +174,13 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
-│ Kategoria: 📁 DATAROOT                               │
+│ Kategoria: 📁 PHP                                    │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Pliki przeskanowane:     70 (wszystkie kategorie)          │
-│    ├─ Kategoria DATAROOT:      0 kluczy EN                    │
+│ 📊 Pliki przeskanowane:     83 (wszystkie kategorie)          │
+│    ├─ Kategoria    PHP:      0 kluczy EN                    │
 │    └─ Total kluczy EN:  21648                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-12 04:06:11            │
+│ 📅 Ostatnia aktualizacja: 2025-12-12 04:06:17            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -190,9 +190,9 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **70** | w tej sesji |
+| 📁 Plików przeskanowanych | **83** | w tej sesji |
 | ✅ Plików z kluczami | **70** | zawierały hardcoded strings |
-| ⬜ Plików bez kluczy | **0** | czyste (brak hardcoded) |
+| ⬜ Plików bez kluczy | **13** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **70** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
 | 🔄 Cykli wykonanych | **#125** | continuous mode |
@@ -201,6 +201,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `php` +0 kluczy @ 04:06:15
 - ⚡ `dataroot` +0 kluczy @ 04:06:09
 - ⚡ `npclib` +0 kluczy @ 04:06:04
 - ⚡ `startup` +0 kluczy @ 04:06:00
@@ -208,7 +209,6 @@
 - ⚡ `chatchannels` +0 kluczy @ 04:05:50
 - ⚡ `events` +0 kluczy @ 04:05:48
 - ⚡ `libs` +0 kluczy @ 04:05:47
-- ⚡ `mounts` +0 kluczy @ 04:05:39
 
 
 ---
@@ -376,7 +376,7 @@
 | raids | 147 | 0 | 12 | ⏭️ Skip 118m |
 | monsters | 132 | 349888 | 2 | ⏭️ Skip 8m |
 | scripts | 97 | 0 | 16 | ⏭️ Skip 110m |
-| php | 59 | 0 | 8 | ✅ Active |
+| php | 59 | 0 | 10 | ⏭️ Skip 119m |
 | startup | 23 | 0 | 10 | ⏭️ Skip 119m |
 | libs | 21 | 0 | 10 | ⏭️ Skip 119m |
 | modules | 16 | 0 | 10 | ⏭️ Skip 119m |
@@ -405,7 +405,7 @@
 | quests | 118m | 11x | Progresywny backoff |
 | raids | 118m | 12x | Progresywny backoff |
 | world | 118m | 10x | Progresywny backoff |
-| talkactions | 119m | 11x | Progresywny backoff |
+| talkactions | 118m | 11x | Progresywny backoff |
 | movements | 119m | 10x | Progresywny backoff |
 | creaturescripts | 119m | 9x | Progresywny backoff |
 | globalevents | 119m | 10x | Progresywny backoff |
@@ -417,6 +417,7 @@
 | startup | 119m | 10x | Progresywny backoff |
 | npclib | 119m | 12x | Progresywny backoff |
 | dataroot | 119m | 10x | Progresywny backoff |
+| php | 119m | 10x | Progresywny backoff |
 | monsters | 8m | 2x | Progresywny backoff |
 | mounts | 4m | 1x | Progresywny backoff |
 
@@ -469,23 +470,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 04:06:11  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 04:06:17  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `raids.xml` - ukończono 2025-12-12 04:05
-- ✅ `example.xml` - ukończono 2025-12-12 04:05
-- ✅ `zulazza_the_corruptor.xml` - ukończono 2025-12-12 04:05
-- ✅ `beetles.xml` - ukończono 2025-12-12 04:05
-- ✅ `zevelon_duskbringer.xml` - ukończono 2025-12-12 04:05
-- ✅ `draptor.xml` - ukończono 2025-12-12 04:05
-- ✅ `gnarlhounds.xml` - ukończono 2025-12-12 04:05
-- ✅ `weakened_shlorg.xml` - ukończono 2025-12-12 04:05
-- ✅ `mad_mage.xml` - ukończono 2025-12-12 04:05
-- ✅ `warlock.xml` - ukończono 2025-12-12 04:05
+- ✅ `main.php` - ukończono 2025-12-12 04:06
+- ✅ `main.php` - ukończono 2025-12-12 04:06
+- ✅ `main.php` - ukończono 2025-12-12 04:06
+- ✅ `admin.php` - ukończono 2025-12-12 04:06
+- ✅ `install.php` - ukończono 2025-12-12 04:06
+- ✅ `main.php` - ukończono 2025-12-12 04:06
+- ✅ `main.php` - ukończono 2025-12-12 04:06
+- ✅ `main.php` - ukończono 2025-12-12 04:06
+- ✅ `admin.php` - ukończono 2025-12-12 04:06
+- ✅ `install.php` - ukończono 2025-12-12 04:06
 
 ---
 

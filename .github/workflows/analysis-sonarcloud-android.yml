@@ -91,6 +91,7 @@ jobs:
                 -DCMAKE_ANDROID_NDK=$ANDROID_NDK_HOME \
                 -DCMAKE_ANDROID_STL_TYPE=c++_shared \
                 -DSPEED_UP_BUILD_UNITY=OFF \
+                -DTOGGLE_FRAMEWORK_SOUND=OFF \
                 -DOTC_ENABLE_PHYSFS=OFF \
                 -DOTC_ENABLE_LZMA=OFF \
                 -DOTC_ENABLE_NLOHMANN_JSON=OFF \
@@ -135,4 +136,3 @@ jobs:
             -Dsonar.cfamily.cache.enabled=true
             "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
             -Dsonar.cfamily.compile-commands=build-android/compile_commands.json
-

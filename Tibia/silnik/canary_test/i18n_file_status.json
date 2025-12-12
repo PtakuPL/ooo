@@ -1,0 +1,530 @@
+{
+  "files": {
+    "html_copy/system/templates/guilds.change_logo.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:06:19.976263",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/forum.new_thread.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:06:20.420797",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/buttons.back.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:06:20.618671",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/houses.view.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:06:20.972415",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/admin.news.table.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:06:21.193503",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/exception.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:06:21.425729",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/admin.plugins.outdated.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:06:21.700342",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/account.characters.delete.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:06:21.786165",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/team.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:06:22.171633",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/locale/en/main.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:22.197083",
+      "category": "quests"
+    },
+    "html_copy/system/locale/en/install.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:22.345395",
+      "category": "quests"
+    },
+    "html_copy/system/locale/en/admin.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:22.499158",
+      "category": "quests"
+    },
+    "html_copy/system/locale/no/main.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:22.687928",
+      "category": "quests"
+    },
+    "html_copy/system/locale/be/main.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:22.828569",
+      "category": "quests"
+    },
+    "html_copy/system/locale/ru/main.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:22.972008",
+      "category": "quests"
+    },
+    "html_copy/system/locale/ru/install.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:23.173361",
+      "category": "quests"
+    },
+    "html_copy/system/locale/ru/admin.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:23.261917",
+      "category": "quests"
+    },
+    "html_copy/system/locale/uk/main.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:25.061149",
+      "category": "quests"
+    },
+    "html_copy/system/locale/pl/main.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:29.402960",
+      "category": "quests"
+    },
+    "html_copy/system/locale/pl/install.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:31.014683",
+      "category": "quests"
+    },
+    "html_copy/system/locale/pl/admin.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:31.181902",
+      "category": "quests"
+    },
+    "html_copy/system/locale/de/main.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:31.718407",
+      "category": "quests"
+    },
+    "html_copy/system/locale/de/admin.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:34.323220",
+      "category": "quests"
+    },
+    "html_copy/system/locale/ja/main.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:34.614604",
+      "category": "quests"
+    },
+    "html_copy/system/locale/ja/install.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:34.795670",
+      "category": "quests"
+    },
+    "html_copy/system/locale/ja/admin.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:35.016891",
+      "category": "quests"
+    },
+    "html_copy/system/src/Commands/Command.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:35.252721",
+      "category": "quests"
+    },
+    "html_copy/system/src/Commands/MailSendCommand.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:35.451821",
+      "category": "quests"
+    },
+    "html_copy/system/src/Commands/CronjobInstallCommand.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:35.613872",
+      "category": "quests"
+    }
+  },
+  "global_stats": {
+    "files_completed": 29,
+    "total_keys": 0
+  }
+}

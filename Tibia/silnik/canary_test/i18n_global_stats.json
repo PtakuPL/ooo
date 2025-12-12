@@ -1,14 +1,14 @@
 {
-  "total_cycles": 364,
+  "total_cycles": 361,
   "mode": "MIGRATION",
-  "category": "dataroot",
-  "last_update": "2025-12-12T06:06:21.274427",
+  "category": "php",
+  "last_update": "2025-12-12T06:06:36.521559",
   "migration": {
-    "files_scanned": 9,
+    "files_scanned": 29,
     "files_with_keys": 9,
-    "files_without_keys": 0,
+    "files_without_keys": 20,
     "keys_extracted": 9,
-    "current_category": "dataroot",
-    "batch_size": 442
+    "current_category": "php",
+    "batch_size": 5
   }
 }

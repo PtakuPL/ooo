@@ -985,3 +985,8 @@ data-otservbr-global/monster/quests/rotten_blood/bloated_man-maggot.lua
 data-otservbr-global/monster/quests/rotten_blood/echo_of_ichgahal.lua
 data-otservbr-global/monster/quests/rotten_blood/darklight_construct.lua
 data-otservbr-global/monster/quests/rotten_blood/echo_of_chagorz.lua
+data-otservbr-global/monster/quests/rotten_blood/echo_of_vemiath.lua
+data-otservbr-global/monster/quests/rotten_blood/walking_pillar.lua
+data-otservbr-global/monster/quests/rotten_blood/converter.lua
+data-otservbr-global/monster/quests/the_first_dragon/haunted_dragon.lua
+data-otservbr-global/monster/quests/the_first_dragon/somewhat_beatable.lua

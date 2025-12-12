@@ -2,8 +2,8 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-12 03:59:13 UTC  
-> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 21544
+> **Aktualizacja:** 2025-12-12 03:59:15 UTC  
+> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 21558
 
 ---
 
@@ -26,8 +26,8 @@
 |---------|---------|---------|------|
 | 📂 **Wszystkie pliki** | **16,226** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **7,749** | 47.8% | pliki z kodem/tekstami |
-| 🔍 **Przeskanowane** | **979** | **12.6%** | historia workera |
-| ⏳ Nie przeskanowane | **6,770** | 87.4% | czekają na skan |
+| 🔍 **Przeskanowane** | **986** | **12.7%** | historia workera |
+| ⏳ Nie przeskanowane | **6,763** | 87.3% | czekają na skan |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -43,7 +43,7 @@
 ### ✅ Status Migracji
 | Status | Ilość | Procent | Opis |
 |--------|-------|---------|------|
-| ✅ Zmigrowane | **0** | 0.0% | mają klucze i18n |
+| ✅ Zmigrowane | **14** | 1.4% | mają klucze i18n |
 | 🔄 Wymaga migracji | **0** | - | trzeba dodać i18n |
 | ⚪ Czyste | **0** | - | bez tekstów |
 | 🔧 W trakcie | **0** | - | obecnie przetwarzane |
@@ -51,10 +51,10 @@
 ### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔑 **Klucze EN (źródłowe)** | **21,544** | wszystkie kategorie |
+| 🔑 **Klucze EN (źródłowe)** | **21,558** | wszystkie kategorie |
 | 📊 NPC | 5,339 | dialogi NPC |
 | 📊 Items | 13,749 | przedmioty |
-| 📊 Monsters | 28 | potwory |
+| 📊 Monsters | 42 | potwory |
 | 📊 HTML | 1,495 | widoki web |
 | 📊 Pozostałe | 933 | scripts, spells, etc. |
 
@@ -70,7 +70,7 @@
 | Metryka | Wartość | Info |
 |---------|---------|------|
 | 🔄 Cykl aktualny | **#106** | od uruchomienia |
-| 🔑 Kluczy wyekstrahowanych | **0** | w tej sesji |
+| 🔑 Kluczy wyekstrahowanych | **14** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
 ---
@@ -111,7 +111,7 @@
 | 🧙 NPC Dialogs | 🔄 | 5339/15000 (36%) | 15000 |
 | 📜 Lua Scripts | 🔄 | 97/1000 (10%) | 1000 |
 | 🎒 Items Database | 🔄 | 13749/40000 (34%) | 40000 |
-| 👹 Monsters | 🔄 | 28/5000 (1%) | 5000 |
+| 👹 Monsters | 🔄 | 42/5000 (1%) | 5000 |
 | ✨ Spells & Magic | 🔄 | 304/400 (76%) | 400 |
 | ⚙️ Server C++ | ⏳ | 0/300 (0%) | 300 |
 
@@ -176,11 +176,11 @@
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
 │ Kategoria: 📁 MONSTERS                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Pliki przeskanowane:     14 (wszystkie kategorie)          │
-│    ├─ Kategoria MONSTERS:     28 kluczy EN                    │
-│    └─ Total kluczy EN:  21544                                 │
+│ 📊 Pliki przeskanowane:     17 (wszystkie kategorie)          │
+│    ├─ Kategoria MONSTERS:     42 kluczy EN                    │
+│    └─ Total kluczy EN:  21558                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-12 03:59:13            │
+│ 📅 Ostatnia aktualizacja: 2025-12-12 03:59:15            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -190,10 +190,10 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **0** | w tej sesji |
-| ✅ Plików z kluczami | **0** | zawierały hardcoded strings |
+| 📁 Plików przeskanowanych | **14** | w tej sesji |
+| ✅ Plików z kluczami | **14** | zawierały hardcoded strings |
 | ⬜ Plików bez kluczy | **0** | czyste (brak hardcoded) |
-| 🔑 Kluczy wyciągniętych | **0** | przez workera w tej sesji |
+| 🔑 Kluczy wyciągniętych | **14** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
 | 🔄 Cykli wykonanych | **#106** | continuous mode |
 
@@ -201,7 +201,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 👹 `monsters` +-1364 kluczy @ 03:59:11
+- 👹 `monsters` +-1368 kluczy @ 03:59:13
 - 📜 `scripts` +0 kluczy @ 03:57:06
 - 🧙 `npc` +0 kluczy @ 03:54:45
 - ⚡ `errors` +0 kluczy @ 02:00:23
@@ -256,7 +256,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 28 |
+| 🔑 Kluczy | 42 |
 | 🎯 Cel | 5000 |
 | 📊 Postęp | 1% |
 | 📁 Plik | i18n/en/monsters.json |
@@ -376,7 +376,7 @@
 | raids | 147 | 0 | 8 | ✅ Active |
 | scripts | 97 | 0 | 16 | ⏭️ Skip 117m |
 | php | 59 | 0 | 8 | ⏭️ Skip 0m |
-| monsters | 28 | 96371 | 0 | ✅ Active |
+| monsters | 42 | 94287 | 0 | ✅ Active |
 | startup | 23 | 0 | 8 | ✅ Active |
 | libs | 21 | 0 | 8 | ✅ Active |
 | modules | 16 | 0 | 8 | ✅ Active |
@@ -450,7 +450,7 @@
 | 🎒 Items | 13749 | ██████░░░░░░░░░░░░░░ | 40000 | 🔄 34% |
 | 🧙 NPC | 5339 | ███████░░░░░░░░░░░░░ | 15000 | 🔄 36% |
 | 📜 Scripts | 97 | █░░░░░░░░░░░░░░░░░░░ | 1000 | 🔄 10% |
-| 👹 Monsters | 28 | ░░░░░░░░░░░░░░░░░░░░ | 5000 | 🔄 1% |
+| 👹 Monsters | 42 | ░░░░░░░░░░░░░░░░░░░░ | 5000 | 🔄 1% |
 | ✨ Spells | 304 | ███████████████░░░░░ | 400 | 🔄 76% |
 | ⚙️ Server | 0 | ░░░░░░░░░░░░░░░░░░░░ | 300 | ⏳ 0% |
 | 🖥️ System | 0 | ░░░░░░░░░░░░░░░░░░░░ | 2000 | ⏳ 0% |
@@ -459,14 +459,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 03:59:13  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 03:59:15  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- Brak
+- ✅ `darklight_construct` - ukończono 2025-12-12 03:59
+- ✅ `echo_of_ichgahal` - ukończono 2025-12-12 03:59
+- ✅ `bloated_man-maggot` - ukończono 2025-12-12 03:59
+- ✅ `mycobiontic_beetle` - ukończono 2025-12-12 03:59
+- ✅ `wandering_pillar` - ukończono 2025-12-12 03:59
+- ✅ `echo_of_murcion` - ukończono 2025-12-12 03:59
+- ✅ `meandering_mushroom` - ukończono 2025-12-12 03:59
+- ✅ `sopping_carcass` - ukończono 2025-12-12 03:59
+- ✅ `mushroom` - ukończono 2025-12-12 03:59
+- ✅ `darklight_striker` - ukończono 2025-12-12 03:59
 
 ---
 

@@ -251,10 +251,118 @@
       "overall_status": "completed",
       "completed_at": "2025-12-12T03:59:13.276961",
       "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/rotten_blood/echo_of_chagorz.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:14.469595",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/rotten_blood/echo_of_vemiath.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:14.635787",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/rotten_blood/walking_pillar.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:15.086247",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/rotten_blood/converter.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:15.393364",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_first_dragon/haunted_dragon.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:15.639584",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_first_dragon/somewhat_beatable.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:15.834589",
+      "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 14,
+    "files_completed": 20,
     "total_keys": 0
   }
 }

@@ -521,10 +521,190 @@
       "overall_status": "completed",
       "completed_at": "2025-12-12T06:06:35.613872",
       "category": "quests"
+    },
+    "html_copy/system/templates/buttons.change_password.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:40.011033",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/faq.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:40.188285",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/guilds.change_motd.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:40.308557",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/language_selector.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:40.378441",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/forum.remove_post.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:40.486657",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/admin.changelog.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:40.749814",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/online.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:41.010938",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/guilds.view.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:41.317719",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/forum.new_post.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:41.641986",
+      "category": "creaturescripts"
+    },
+    "html_copy/system/templates/guilds.accept_invite.html.twig": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "creaturescripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T06:06:41.770989",
+      "category": "creaturescripts"
     }
   },
   "global_stats": {
-    "files_completed": 29,
+    "files_completed": 39,
     "total_keys": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "files": {
-    "data-otservbr-global/monster/quests/the_inquisition/hellgorak.lua": {
+    "data-otservbr-global/monster/quests/the_inquisition/ungreez.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -15,10 +15,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:59:59.931814",
+      "completed_at": "2025-12-12T04:00:02.064917",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/the_inquisition/dreadbeast.lua": {
+    "data-otservbr-global/monster/quests/liquid_black/tanjis.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -33,10 +33,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:00.089525",
+      "completed_at": "2025-12-12T04:00:02.860454",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/the_inquisition/eye_of_the_seven.lua": {
+    "data-otservbr-global/monster/quests/liquid_black/obujos.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -51,10 +51,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:00.229984",
+      "completed_at": "2025-12-12T04:00:02.699135",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/the_inquisition/a_carved_stone_tile.lua": {
+    "data-otservbr-global/monster/quests/liquid_black/jaul.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -69,10 +69,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:00.383333",
+      "completed_at": "2025-12-12T04:00:02.992391",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/the_inquisition/zugurosh.lua": {
+    "data-otservbr-global/monster/quests/feaster_of_souls/irgix_the_flimsy.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -87,10 +87,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:00.519013",
+      "completed_at": "2025-12-12T04:00:03.140769",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/the_inquisition/golgordan.lua": {
+    "data-otservbr-global/monster/quests/feaster_of_souls/the_unwelcome.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -105,10 +105,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:00.645968",
+      "completed_at": "2025-12-12T04:00:03.289534",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/the_inquisition/annihilon.lua": {
+    "data-otservbr-global/monster/quests/feaster_of_souls/the_dread_maiden.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -123,10 +123,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:00.780961",
+      "completed_at": "2025-12-12T04:00:03.421483",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/the_inquisition/the_count.lua": {
+    "data-otservbr-global/monster/quests/feaster_of_souls/vok_the_freakish.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -141,10 +141,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:00.927616",
+      "completed_at": "2025-12-12T04:00:03.338148",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/the_inquisition/latrivan.lua": {
+    "data-otservbr-global/monster/quests/feaster_of_souls/the_pale_worm.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -159,10 +159,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:01.057556",
+      "completed_at": "2025-12-12T04:00:03.460986",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/the_inquisition/the_weakened_count.lua": {
+    "data-otservbr-global/monster/quests/feaster_of_souls/unaz_the_mean.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -177,10 +177,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:01.239795",
+      "completed_at": "2025-12-12T04:00:03.585178",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/the_inquisition/ushuriel.lua": {
+    "data-otservbr-global/monster/quests/feaster_of_souls/the_fear_feaster.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -195,10 +195,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:01.404652",
+      "completed_at": "2025-12-12T04:00:04.289815",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/the_inquisition/madareth.lua": {
+    "data-otservbr-global/monster/quests/hidden_threats/cave_spider.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -213,12 +213,102 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T04:00:01.411486",
+      "completed_at": "2025-12-12T04:00:04.406643",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/grave_danger/frozen_soul.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:00:04.510365",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/grave_danger/magnor_mournbringer.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:00:04.639685",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/grave_danger/rewar_the_bloody.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:00:04.747349",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/grave_danger/rewar_the_bloody_inv.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:00:04.858197",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/grave_danger/risen_soldier.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:00:05.000968",
       "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 12,
+    "files_completed": 17,
     "total_keys": 0
   }
 }

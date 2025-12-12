@@ -881,10 +881,388 @@
       "overall_status": "completed",
       "completed_at": "2025-12-12T04:04:39.560264",
       "category": "monsters"
+    },
+    "data-otservbr-global/raids/venore/orc_backpack.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:01.400373",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/venore/feverish_citizen.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:01.532361",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/venore/hunter.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:01.667086",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/venore/water_buffalo.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:01.802979",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/kazordoon/goblins.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:01.966937",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/kazordoon/horned.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:02.147020",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/edron/goblins.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:02.312275",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/edron/feroxa.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:02.486818",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/edron/orshabaal.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:02.664641",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/edron/orc.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:03.067712",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/edron/sir_valorcrest.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:03.288652",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/edron/warlock.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:03.587941",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/edron/mad_mage.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:03.946054",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/edron/weakened_shlorg.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:04.316160",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/farmine/gnarlhounds.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:04.931516",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/farmine/draptor.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:05.145271",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/farmine/zevelon_duskbringer.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:05.365941",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/farmine/beetles.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:05.630471",
+      "category": "raids"
+    },
+    "data-otservbr-global/raids/farmine/zulazza_the_corruptor.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:05.925238",
+      "category": "raids"
+    },
+    "data-canary/raids/example.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:05.955201",
+      "category": "raids"
+    },
+    "data-canary/raids/raids.xml": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "raids"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:05:06.296552",
+      "category": "raids"
     }
   },
   "global_stats": {
-    "files_completed": 49,
+    "files_completed": 70,
     "total_keys": 0
   }
 }

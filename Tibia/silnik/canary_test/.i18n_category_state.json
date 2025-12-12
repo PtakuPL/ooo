@@ -12,9 +12,9 @@
     "creaturescripts": 1765523143.8254466,
     "globalevents": 1765523145.031561,
     "items": 1765523149.376839,
-    "libs": 1765515947.3202572,
-    "events": 1765515948.3473334,
-    "chatchannels": 1765515950.0542636,
+    "libs": 1765523152.4791956,
+    "events": 1765523153.3688185,
+    "chatchannels": 1765523154.6791472,
     "modules": 1765515958.443164,
     "startup": 1765515960.695933,
     "npclib": 1765515964.573194,
@@ -91,15 +91,15 @@
     },
     "libs": {
       "count": 0,
-      "timestamp": 1765508747.3202517
+      "timestamp": 1765515952.4791906
     },
     "events": {
       "count": 0,
-      "timestamp": 1765508748.3473232
+      "timestamp": 1765515953.3688107
     },
     "chatchannels": {
       "count": 0,
-      "timestamp": 1765508750.0542576
+      "timestamp": 1765515954.679142
     },
     "modules": {
       "count": 0,
@@ -173,9 +173,9 @@
     "globalevents": 12,
     "items": 12,
     "mounts": 5,
-    "libs": 10,
-    "events": 9,
-    "chatchannels": 10,
+    "libs": 11,
+    "events": 10,
+    "chatchannels": 12,
     "modules": 10,
     "startup": 10,
     "npclib": 12,

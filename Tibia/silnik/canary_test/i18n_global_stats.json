@@ -1,14 +1,14 @@
 {
   "total_cycles": 359,
   "mode": "MIGRATION",
-  "category": "items",
-  "last_update": "2025-12-12T06:05:49.422535",
+  "category": "chatchannels",
+  "last_update": "2025-12-12T06:05:54.745242",
   "migration": {
     "files_scanned": 9,
     "files_with_keys": 9,
     "files_without_keys": 0,
     "keys_extracted": 9,
-    "current_category": "items",
-    "batch_size": 10
+    "current_category": "chatchannels",
+    "batch_size": 1
   }
 }

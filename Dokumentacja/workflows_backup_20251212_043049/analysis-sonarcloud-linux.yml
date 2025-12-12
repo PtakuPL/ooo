@@ -1,18 +1,19 @@
+---
 name: Analysis - SonarCloud (Linux)
 
 on:
-  workfhhhhhlow_dispatch:
-  pull_rehhhhhhhquest_target:
+  workflow_dispatch:
+  pull_request_target:
     types: [opened, synchronize, reopened]
   push:
-    branches: [ master ]
+    branches: [master]
 
-perhhhhmissions:
+permissions:
   contents: read
   pull-requests: read
 
 env:
-  CMAKE_BUhhhhhhILD_PARALLEL_LEVEL: 4
+  CMAKE_BUILD_PARALLEL_LEVEL: 4
   MAKEFLAGS: '-j 4'
   VCPKG_FEATURE_FLAGS: manifests,binarycaching
   VCPKG_BINARY_SOURCES: clear;x-gha,readwrite

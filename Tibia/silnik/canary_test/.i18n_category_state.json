@@ -30,7 +30,7 @@
     "server": 1765490339.4466524,
     "errors": 1765515996.5421033,
     "monsters": 1765512897.775399,
-    "mounts": 1765510848.3060865
+    "mounts": 1765518075.37164
   },
   "last_processed": {
     "npc": {
@@ -87,7 +87,7 @@
     },
     "mounts": {
       "count": 0,
-      "timestamp": 1765509048.3060813
+      "timestamp": 1765510875.3716257
     },
     "libs": {
       "count": 0,
@@ -172,7 +172,7 @@
     "creaturescripts": 9,
     "globalevents": 10,
     "items": 10,
-    "mounts": 3,
+    "mounts": 5,
     "libs": 10,
     "events": 9,
     "chatchannels": 10,

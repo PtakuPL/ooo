@@ -1494,3 +1494,17 @@ data-otservbr-global/monster/mammals/grey_horse.lua
 data-otservbr-global/monster/mammals/mushroom_sniffer.lua
 data-otservbr-global/monster/mammals/mutated_bat.lua
 data-otservbr-global/monster/mammals/enraged_white_deer.lua
+data-otservbr-global/monster/mammals/brown_horse.lua
+data-otservbr-global/monster/mammals/ghost_wolf.lua
+data-otservbr-global/monster/mammals/elephant.lua
+data-otservbr-global/monster/mammals/poodle.lua
+data-otservbr-global/monster/mammals/white_tiger.lua
+data-otservbr-global/monster/mammals/water_buffalo.lua
+data-otservbr-global/monster/mammals/cat.lua
+data-otservbr-global/monster/mammals/killer_rabbit.lua
+data-otservbr-global/monster/mammals/hyaena.lua
+data-otservbr-global/monster/mammals/gore_horn.lua
+data-otservbr-global/monster/mammals/stone_rhino.lua
+data-otservbr-global/monster/mammals/fox.lua
+data-otservbr-global/monster/mammals/clomp.lua
+data-otservbr-global/monster/mammals/crystal_wolf.lua

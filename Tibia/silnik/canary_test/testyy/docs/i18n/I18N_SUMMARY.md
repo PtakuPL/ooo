@@ -1,12 +1,38 @@
 # 🌍 Internationalization (I18N) Project Summary
 
-## Project Status: ✅ COMPLETE
+## Project Status: 🔄 PHASE 2 - Protocol Implementation
 
 This document summarizes the comprehensive internationalization effort for OTClient (testyy) and Canary Server.
 
 ---
 
-## 🎯 Achievements
+## 🔴 CURRENT PHASE: Client-Server Protocol (2025-12-12)
+
+### Architecture Change
+**OLD:** Server translates texts → sends translated → client displays  
+**NEW:** Server sends i18n keys → client translates locally → displays
+
+### Why This Change?
+| Aspect | Old Approach | New Approach |
+|--------|--------------|--------------|
+| Server CPU | ❌ High (translation per request) | ✅ Minimal |
+| Bandwidth | ❌ Full text strings | ✅ Short keys |
+| Memory | ❌ Cache per locale on server | ✅ Dictionary only on client |
+| Scalability | ❌ Limited by server | ✅ Client handles translation |
+
+### Client (testyy) TODO
+- [ ] Analyze `src/client/protocolgame.cpp` - `parseTextMessage()`
+- [ ] Extend packet format: `[opcode][type][text][hasI18nKey:byte][i18nKey?]`
+- [ ] Integrate with `tr()` from `modules/corelib/keyboard.lua`
+- [ ] Fallback: if no translation → display original text
+
+### Server (canary_test) TODO
+- [ ] Modify `sendTextMessage()` to include optional `i18nKey`
+- [ ] Documentation: `canary_test/docs/I18N_PROTOCOL_IMPLEMENTATION.md`
+
+---
+
+## 🎯 Achievements (Phase 1 - Completed)
 
 ### Language Support
 - **53 languages** fully supported

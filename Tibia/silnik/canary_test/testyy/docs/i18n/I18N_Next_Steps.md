@@ -1,7 +1,54 @@
 # Internacjonalizacja Testyy — Kolejne Kroki i Priorytety
 
 Dokument utworzony: 2025-01-XX  
-Ostatnia aktualizacja: 2025-12-05
+Ostatnia aktualizacja: **2025-12-12**
+
+---
+
+## 🔴 NOWA FAZA: PROTOKÓŁ KLIENT-SERWER (2025-12-12)
+
+### Cel
+Zmodyfikować protokół komunikacji tak, aby **serwer wysyłał klucze i18n**, a **klient tłumaczył teksty lokalnie** używając istniejącej funkcji `tr()`.
+
+### Dlaczego ta zmiana?
+| Poprzednie podejście | Nowe podejście |
+|---------------------|----------------|
+| Serwer tłumaczy teksty | Serwer wysyła tylko klucze |
+| Duże obciążenie CPU/RAM | Minimalne obciążenie serwera |
+| Większy bandwidth | Mniejsze pakiety |
+| Mutex contention | Brak synchronizacji |
+
+### Co trzeba zrobić po stronie KLIENTA (testyy)
+
+#### Etap 1: Analiza protocolgame.cpp
+- [ ] Przeanalizować `parseTextMessage()` w `src/client/protocolgame.cpp`
+- [ ] Zidentyfikować format pakietu tekstowego (opcode, type, text)
+- [ ] Sprawdzić jak działa integracja z `tr()` w `modules/corelib/keyboard.lua`
+
+#### Etap 2: Modyfikacja parsera
+- [ ] Rozszerzyć `parseTextMessage()` o odczyt opcjonalnego pola `i18nKey`
+- [ ] Format pakietu: `[opcode][type][text][hasI18nKey:byte][i18nKey:string?]`
+- [ ] Jeśli `hasI18nKey == 1` → wywołać `tr(i18nKey)`
+- [ ] Fallback: jeśli `tr()` zwraca ten sam klucz → użyć `text`
+
+#### Etap 3: Integracja z systemem tłumaczeń
+- [ ] Upewnić się że `tr()` działa poprawnie z kluczami z serwera
+- [ ] Przenieść klucze z `canary_test/i18n/en/*.json` do `testyy/data/locales/`
+- [ ] Stworzyć skrypt konwersji JSON → Lua locales
+
+### Pliki do modyfikacji
+
+| Plik | Ścieżka | Co zrobić |
+|------|---------|-----------|
+| protocolgame.cpp | `src/client/` | Rozszerzyć parseTextMessage() |
+| keyboard.lua | `modules/corelib/` | Upewnić się że tr() działa |
+| *.lua | `data/locales/` | Dodać klucze z serwera |
+
+### Współpraca z serwerem
+
+Równolegle modyfikowany jest serwer (canary_test):
+- `src/server/network/protocol/protocolgame.cpp` - wysyłanie kluczy
+- Dokumentacja serwera: `canary_test/docs/I18N_PROTOCOL_IMPLEMENTATION.md`
 
 ---
 

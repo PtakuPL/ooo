@@ -2,6 +2,36 @@
 
 Dokument wspiera wymiane informacji miedzy agentami oraz zmniejsza ryzyko problemow przy laczeniu zmian z galezia `main`.
 
+---
+
+## 2025-12-12 – AI Agent (Claude)
+
+**Podsumowanie:** Rozpoczęto nową fazę projektu i18n - modyfikacja protokołu klient-serwer. Serwer będzie wysyłał klucze i18n zamiast przetłumaczonych tekstów, a klient (testyy) będzie tłumaczył lokalnie używając `tr()`.
+
+**Co zmienilem:** 
+- Zaktualizowano `testyy/docs/i18n/I18N_Next_Steps.md` - dodano sekcję o protokole klient-serwer
+- Dokumentacja serwera zaktualizowana w `canary_test/docs/`:
+  - `I18N_SESSION_HANDOFF.md` - zmiana architektury
+  - `I18N_DEVELOPMENT_ROADMAP.md` - wersja 7.0 z nowym planem
+  - `I18N_PROTOCOL_IMPLEMENTATION.md` - nowy plik z checklistą
+
+**TODO na kolejna osobe:**
+- Przeanalizować `src/client/protocolgame.cpp` - funkcja `parseTextMessage()`
+- Zidentyfikować format pakietu tekstowego (opcode, typ, tekst)
+- Rozszerzyć parser o opcjonalne pole `i18nKey`
+- Zintegrować z `tr()` z `modules/corelib/keyboard.lua`
+
+**Blokery / ryzyka:**
+- Modyfikacja protokołu wymaga synchronizacji serwer↔klient
+- Trzeba zachować kompatybilność wsteczną (stary klient bez i18n)
+
+**Pliki krytyczne:**
+- `src/client/protocolgame.cpp` - parser pakietów z serwera
+- `modules/corelib/keyboard.lua` - funkcja `tr()` do tłumaczeń
+- `data/locales/*.lua` - słowniki tłumaczeń (już istnieją!)
+
+---
+
 ## Jak korzystac
 - Dodawaj wpis przy kazdej sesji pracy i umieszczaj go na samej gorze dokumentu.
 - Zawsze podawaj date w formacie `YYYY-MM-DD` oraz nazwe agenta albo inicjaly.

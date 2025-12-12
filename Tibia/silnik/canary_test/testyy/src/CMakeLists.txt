@@ -889,11 +889,11 @@ elseif(ANDROID)
           ${ZLIB_LIBRARY}
           $<$<BOOL:${OTC_ENABLE_NLOHMANN_JSON}>:${NLOHMANN_JSON_LIBRARY}>
           ${EGL_LIBRARY}
-          $<$<NOT:$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>>:${OGG_LIBRARY}>
-          $<$<NOT:$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>>:${VORBIS_LIBRARY}>
-          $<$<NOT:$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>>:${VORBISFILE_LIBRARY}>
+          $<$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>:${OGG_LIBRARY}>
+          $<$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>:${VORBIS_LIBRARY}>
+          $<$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>:${VORBISFILE_LIBRARY}>
           $<$<BOOL:${OTC_ENABLE_GMP}>:${GMP_LIBRARY}>
-          $<$<NOT:$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>>:${OpenAL_LIBRARY}>
+          $<$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>:${OpenAL_LIBRARY}>
           $<$<BOOL:${OTC_ENABLE_OPENSSL}>:${OPENSSL_LIBRARIES}>
           ${STDUUID}
           ${MINIZIP_LIBRARY}
@@ -903,9 +903,9 @@ elseif(ANDROID)
           $<$<BOOL:${OTC_ENABLE_ABSEIL}>:absl::log_internal_check_op>
           Threads::Threads
           asio::asio
-          $<$<NOT:$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>>:OpenSLES>
-          $<$<NOT:$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>>:Vorbis::vorbis>
-          $<$<NOT:$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>>:Vorbis::vorbisfile>
+          $<$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>:OpenSLES>
+          $<$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>:Vorbis::vorbis>
+          $<$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>:Vorbis::vorbisfile>
           $<$<BOOL:${OTC_ENABLE_LZMA}>:LibLZMA::LibLZMA>
           $<$<NOT:$<BOOL:${OTC_SKIP_GAME_ACTIVITY}>>:game-activity::game-activity>
           GLESv3

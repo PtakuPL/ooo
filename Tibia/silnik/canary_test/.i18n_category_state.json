@@ -9,8 +9,8 @@
     "spells": 1765490104.104978,
     "talkactions": 1765523136.149141,
     "movements": 1765523139.5962288,
-    "creaturescripts": 1765515926.3747902,
-    "globalevents": 1765515929.1298966,
+    "creaturescripts": 1765523143.8254466,
+    "globalevents": 1765523145.031561,
     "items": 1765515939.01123,
     "libs": 1765515947.3202572,
     "events": 1765515948.3473334,
@@ -75,11 +75,11 @@
     },
     "creaturescripts": {
       "count": 0,
-      "timestamp": 1765508726.3747816
+      "timestamp": 1765515943.8254411
     },
     "globalevents": {
       "count": 0,
-      "timestamp": 1765508729.1298888
+      "timestamp": 1765515945.031551
     },
     "items": {
       "count": 0,
@@ -169,8 +169,8 @@
     "spells": 2,
     "talkactions": 15,
     "movements": 12,
-    "creaturescripts": 9,
-    "globalevents": 10,
+    "creaturescripts": 10,
+    "globalevents": 12,
     "items": 10,
     "mounts": 5,
     "libs": 10,

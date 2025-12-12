@@ -12,3 +12,6 @@ locale = {
 }
 
 modules.client_locales.installLocale(locale)
+
+-- Load game i18n translations (NPC dialogs, monster voices, etc.)
+dofile('game_i18n_en')

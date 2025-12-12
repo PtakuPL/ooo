@@ -1847,3 +1847,6 @@ local add = {
 for k,v in pairs(add) do
   locale.translation[k] = locale.translation[k] or v
 end
+
+-- Load game i18n translations (NPC dialogs, monster voices, etc.)
+dofile('game_i18n_pl')

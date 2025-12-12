@@ -1223,10 +1223,100 @@
       "overall_status": "completed",
       "completed_at": "2025-12-12T04:01:52.458616",
       "category": "monsters"
+    },
+    "data-otservbr-global/monster/aquatics/renegade_quara_mantassin.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:52.586068",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/aquatics/deepling_guard.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:52.723722",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/aquatics/quara_plunderer.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:52.848630",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/aquatics/renegade_quara_predator.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:52.976911",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/aquatics/renegade_quara_pincher.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:53.086829",
+      "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 68,
+    "files_completed": 73,
     "total_keys": 0
   }
 }

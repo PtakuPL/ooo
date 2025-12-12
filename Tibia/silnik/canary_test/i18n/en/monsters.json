@@ -136,5 +136,17 @@
   "monster.quara_raider.name": "Quara Raider",
   "monster.quara_raider.desc": "a quara raider",
   "monster.abyssal_calamary.name": "Abyssal Calamary",
-  "monster.abyssal_calamary.desc": "an abyssal calamary"
+  "monster.abyssal_calamary.desc": "an abyssal calamary",
+  "monster.renegade_quara_mantassin.name": "Renegade Quara Mantassin",
+  "monster.renegade_quara_mantassin.desc": "a renegade quara mantassin",
+  "monster.deepling_guard.name": "Deepling Guard",
+  "monster.deepling_guard.desc": "a deepling guard",
+  "monster.quara_plunderer.name": "Quara Plunderer",
+  "monster.quara_plunderer.desc": "a quara plunderer",
+  "monster.renegade_quara_predator.name": "Renegade Quara Predator",
+  "monster.renegade_quara_predator.desc": "a renegade quara predator",
+  "monster.renegade_quara_pincher.name": "Renegade Quara Pincher",
+  "monster.renegade_quara_pincher.desc": "a renegade quara pincher",
+  "monster.wild_warrior.name": "Wild Warrior",
+  "monster.wild_warrior.desc": "a wild warrior"
 }

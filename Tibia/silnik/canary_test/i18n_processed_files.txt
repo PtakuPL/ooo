@@ -1609,3 +1609,9 @@ data-otservbr-global/monster/aquatics/northern_pike.lua
 data-otservbr-global/monster/aquatics/quara_hydromancer_scout.lua
 data-otservbr-global/monster/aquatics/quara_raider.lua
 data-otservbr-global/monster/aquatics/abyssal_calamary.lua
+data-otservbr-global/monster/aquatics/renegade_quara_mantassin.lua
+data-otservbr-global/monster/aquatics/deepling_guard.lua
+data-otservbr-global/monster/aquatics/quara_plunderer.lua
+data-otservbr-global/monster/aquatics/renegade_quara_predator.lua
+data-otservbr-global/monster/aquatics/renegade_quara_pincher.lua
+data-otservbr-global/monster/humans/wild_warrior.lua

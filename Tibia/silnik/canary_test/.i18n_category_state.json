@@ -11,7 +11,7 @@
     "movements": 1765523139.5962288,
     "creaturescripts": 1765523143.8254466,
     "globalevents": 1765523145.031561,
-    "items": 1765515939.01123,
+    "items": 1765523149.376839,
     "libs": 1765515947.3202572,
     "events": 1765515948.3473334,
     "chatchannels": 1765515950.0542636,
@@ -83,7 +83,7 @@
     },
     "items": {
       "count": 0,
-      "timestamp": 1765508739.011224
+      "timestamp": 1765515949.3768334
     },
     "mounts": {
       "count": 0,
@@ -171,7 +171,7 @@
     "movements": 12,
     "creaturescripts": 10,
     "globalevents": 12,
-    "items": 10,
+    "items": 12,
     "mounts": 5,
     "libs": 10,
     "events": 9,

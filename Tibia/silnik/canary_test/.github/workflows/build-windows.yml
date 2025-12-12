@@ -1,0 +1,90 @@
+name: Build Windows Server
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+  workflow_dispatch:  # Manual trigger
+
+env:
+  CMAKE_BUILD_PARALLEL_LEVEL: 4
+  VCPKG_BINARY_SOURCES: "clear;nuget,GitHub,readwrite"
+
+jobs:
+  build-windows:
+    runs-on: windows-2022
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Setup vcpkg
+      uses: lukka/run-vcpkg@v11
+      with:
+        vcpkgDirectory: '${{ github.workspace }}/vcpkg'
+        vcpkgGitCommitId: 'a34c873a9717a888f58dc05268dea15592c2f0ff'
+
+    - name: Cache vcpkg packages
+      uses: actions/cache@v4
+      with:
+        path: |
+          ${{ github.workspace }}/vcpkg/buildtrees
+          ${{ github.workspace }}/vcpkg/packages
+          ${{ github.workspace }}/vcpkg/downloads
+          ${{ github.workspace }}/vcpkg/installed
+        key: vcpkg-windows-${{ hashFiles('vcpkg.json') }}
+        restore-keys: |
+          vcpkg-windows-
+
+    - name: Cache build
+      uses: actions/cache@v4
+      with:
+        path: build/windows-release
+        key: build-windows-${{ github.sha }}
+        restore-keys: |
+          build-windows-
+
+    - name: Configure CMake
+      run: |
+        cmake -B build/windows-release `
+          -DCMAKE_BUILD_TYPE=Release `
+          -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake `
+          -G "Visual Studio 17 2022" `
+          -A x64
+
+    - name: Build
+      run: |
+        cmake --build build/windows-release --config Release -j 4
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: canary-windows-x64
+        path: |
+          build/windows-release/bin/Release/canary.exe
+          build/windows-release/bin/Release/*.dll
+          config.lua.dist
+        retention-days: 30
+
+    - name: Create Release Package
+      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+      shell: pwsh
+      run: |
+        New-Item -ItemType Directory -Force -Path release-package
+        Copy-Item -Path "build/windows-release/bin/Release/canary.exe" -Destination "release-package/" -ErrorAction SilentlyContinue
+        Copy-Item -Path "build/windows-release/bin/Release/*.dll" -Destination "release-package/" -ErrorAction SilentlyContinue
+        Copy-Item -Path "config.lua.dist" -Destination "release-package/"
+        Copy-Item -Path "data" -Destination "release-package/" -Recurse
+        Copy-Item -Path "data-otservbr-global" -Destination "release-package/" -Recurse
+        Compress-Archive -Path "release-package/*" -DestinationPath "canary-windows-x64.zip"
+
+    - name: Upload Release Package
+      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+      uses: actions/upload-artifact@v4
+      with:
+        name: canary-windows-x64-release
+        path: canary-windows-x64.zip
+        retention-days: 90

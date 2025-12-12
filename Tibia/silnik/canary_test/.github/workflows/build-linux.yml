@@ -1,0 +1,106 @@
+name: Build Linux Server
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+  workflow_dispatch:  # Manual trigger
+
+env:
+  CMAKE_BUILD_PARALLEL_LEVEL: 4
+  VCPKG_BINARY_SOURCES: "clear;nuget,GitHub,readwrite"
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-22.04
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Setup vcpkg
+      uses: lukka/run-vcpkg@v11
+      with:
+        vcpkgDirectory: '${{ github.workspace }}/vcpkg'
+        vcpkgGitCommitId: 'a34c873a9717a888f58dc05268dea15592c2f0ff'
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          build-essential \
+          cmake \
+          ninja-build \
+          libluajit-5.1-dev \
+          libmysqlclient-dev \
+          libboost-all-dev \
+          libasio-dev \
+          libpugixml-dev \
+          libfmt-dev \
+          libcurl4-openssl-dev \
+          libssl-dev \
+          pkg-config \
+          ccache
+
+    - name: Cache vcpkg packages
+      uses: actions/cache@v4
+      with:
+        path: |
+          ${{ github.workspace }}/vcpkg/buildtrees
+          ${{ github.workspace }}/vcpkg/packages
+          ${{ github.workspace }}/vcpkg/downloads
+          ${{ github.workspace }}/vcpkg/installed
+        key: vcpkg-linux-${{ hashFiles('vcpkg.json') }}
+        restore-keys: |
+          vcpkg-linux-
+
+    - name: Cache build
+      uses: actions/cache@v4
+      with:
+        path: build/linux-release
+        key: build-linux-${{ github.sha }}
+        restore-keys: |
+          build-linux-
+
+    - name: Configure CMake
+      run: |
+        cmake -B build/linux-release \
+          -DCMAKE_BUILD_TYPE=Release \
+          -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake \
+          -G Ninja
+
+    - name: Build
+      run: |
+        cmake --build build/linux-release --config Release -j 4
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: canary-linux-x64
+        path: |
+          build/linux-release/bin/canary
+          config.lua.dist
+          data/
+          data-otservbr-global/
+        retention-days: 30
+
+    - name: Create Release Package
+      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+      run: |
+        mkdir -p release-package
+        cp build/linux-release/bin/canary release-package/ 2>/dev/null || true
+        cp config.lua.dist release-package/
+        cp -r data release-package/
+        cp -r data-otservbr-global release-package/
+        tar -czvf canary-linux-x64.tar.gz -C release-package .
+
+    - name: Upload Release Package
+      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+      uses: actions/upload-artifact@v4
+      with:
+        name: canary-linux-x64-release
+        path: canary-linux-x64.tar.gz
+        retention-days: 90

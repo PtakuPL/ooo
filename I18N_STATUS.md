@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-12 04:05:39 UTC  
+> **Aktualizacja:** 2025-12-12 04:05:42 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 21648
 
 ---
@@ -174,13 +174,13 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
-│ Kategoria: 📁 ITEMS                                  │
+│ Kategoria: 📁 MOUNTS                                 │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Pliki przeskanowane:     70 (wszystkie kategorie)          │
-│    ├─ Kategoria  ITEMS:  13749 kluczy EN                    │
+│    ├─ Kategoria MOUNTS:      0 kluczy EN                    │
 │    └─ Total kluczy EN:  21648                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-12 04:05:39            │
+│ 📅 Ostatnia aktualizacja: 2025-12-12 04:05:42            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -201,14 +201,14 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 🎒 `items` +0 kluczy @ 04:05:37
+- ⚡ `mounts` +0 kluczy @ 04:05:39
+- 🎒 `items` +0 kluczy @ 04:05:39
 - ⚡ `globalevents` +0 kluczy @ 04:05:29
 - ⚡ `creaturescripts` +0 kluczy @ 04:05:26
 - ⚡ `movements` +0 kluczy @ 04:05:18
 - ⚡ `talkactions` +0 kluczy @ 04:05:16
 - ⚡ `raids` +0 kluczy @ 04:05:07
 - ⚡ `world` +0 kluczy @ 04:05:06
-- ⚡ `quests` +0 kluczy @ 04:04:54
 
 
 ---
@@ -368,7 +368,7 @@
 
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
-| items | 13749 | 0 | 9 | ⏭️ Skip 119m |
+| items | 13749 | 0 | 10 | ⏭️ Skip 119m |
 | npc | 5339 | 0 | 14 | ⏭️ Skip 109m |
 | html | 1495 | 0 | 8 | ✅ Active |
 | spells | 304 | 0 | 2 | ✅ Active |
@@ -409,8 +409,9 @@
 | movements | 119m | 10x | Progresywny backoff |
 | creaturescripts | 119m | 9x | Progresywny backoff |
 | globalevents | 119m | 10x | Progresywny backoff |
-| items | 119m | 9x | Progresywny backoff |
+| items | 119m | 10x | Progresywny backoff |
 | monsters | 9m | 2x | Progresywny backoff |
+| mounts | 4m | 1x | Progresywny backoff |
 
 ---
 
@@ -461,7 +462,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 04:05:39  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 04:05:42  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

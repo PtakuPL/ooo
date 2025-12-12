@@ -28,6 +28,8 @@ option(OTC_ENABLE_PUGIXML "Enable pugixml (XML support)" ON)
 option(OTC_ENABLE_FMT "Enable fmt (formatting library)" ON)
 option(OTC_ENABLE_HTTPLIB "Enable cpp-httplib (HTTP server/client)" ON)
 option(OTC_ENABLE_GMP "Enable GMP (multiprecision library)" ON)
+option(OTC_ENABLE_OPENSSL "Enable OpenSSL (cryptographic library)" ON)
+option(OTC_ENABLE_ABSEIL "Enable Abseil (Google C++ library)" ON)
 
 # *****************************************************************************
 # Cmake Features
@@ -872,7 +874,7 @@ elseif(ANDROID)
           ${CMAKE_THREAD_LIBS_INIT}
           ${Protobuf_INCLUDE_DIRS}
           ${GMP_INCLUDE_DIR}
-          ${OPENSSL_INCLUDE_DIR}
+          $<$<BOOL:${OTC_ENABLE_OPENSSL}>:${OPENSSL_INCLUDE_DIR}>
           ${PHYSFS_INCLUDE_DIR}
           ${EGL_INCLUDE_DIR}
           ${PARALLEL_HASHMAP_INCLUDE_DIRS}
@@ -892,12 +894,12 @@ elseif(ANDROID)
           ${VORBISFILE_LIBRARY}
           ${GMP_LIBRARY}
           ${OpenAL_LIBRARY}
-          ${OPENSSL_LIBRARIES}
+          $<$<BOOL:${OTC_ENABLE_OPENSSL}>:${OPENSSL_LIBRARIES}>
           ${STDUUID}
           ${MINIZIP_LIBRARY}
 
           protobuf::libprotobuf protobuf
-          absl::log_internal_check_op
+          $<$<BOOL:${OTC_ENABLE_ABSEIL}>:absl::log_internal_check_op>
           Threads::Threads
           asio::asio
           OpenSLES

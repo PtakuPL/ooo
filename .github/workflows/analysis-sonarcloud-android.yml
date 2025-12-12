@@ -104,6 +104,8 @@ jobs:
                 -DOTC_ENABLE_FRIBIDI=OFF \
                 -DOTC_ENABLE_PROTOBUF=OFF \
                 -DOTC_SKIP_GAME_ACTIVITY=ON \
+                -DOTC_ENABLE_OPENSSL=OFF \
+                -DOTC_ENABLE_ABSEIL=OFF \
                 -DProtobuf_PROTOC_EXECUTABLE=$(which protoc) \
                 -S . -B build-android
 

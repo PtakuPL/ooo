@@ -2862,6 +2862,68 @@ void ProtocolGame::parseLocalizedTextMessage(const InputMessagePtr& msg)
     g_game.processTextMessage(mode, translatedText);
 }
 
+// I18N: Parse localized creature speech (monster/NPC voices)
+void ProtocolGame::parseLocalizedCreatureSay(const InputMessagePtr& msg)
+{
+    uint32_t statement = 0;
+    if (g_game.getFeature(Otc::GameMessageStatements)) {
+        statement = msg->getU32(); // channel statement guid
+    }
+
+    const auto& name = g_game.formatCreatureName(msg->getString());
+
+    if (statement > 0 && g_game.getClientVersion() >= 1281) {
+        msg->getU8(); // suffix
+    }
+
+    const uint16_t level = g_game.getFeature(Otc::GameMessageLevel) ? msg->getU16() : 0;
+
+    auto messageByte = msg->getU8();
+    const Otc::MessageMode mode = Proto::translateMessageModeFromServer(messageByte);
+    Position pos;
+
+    switch (mode) {
+        case Otc::MessageSay:
+        case Otc::MessageWhisper:
+        case Otc::MessageYell:
+        case Otc::MessageMonsterSay:
+        case Otc::MessageMonsterYell:
+        case Otc::MessageNpcTo:
+        case Otc::MessageBarkLow:
+        case Otc::MessageBarkLoud:
+        case Otc::MessageSpell:
+            pos = getPosition(msg);
+            break;
+        default:
+            throw Exception("ProtocolGame::parseLocalizedCreatureSay: unexpected message mode {}", messageByte);
+    }
+
+    // I18N: Read i18nKey and fallbackText
+    const auto& i18nKey = msg->getString();
+    const auto& fallbackText = msg->getString();
+
+    // Try to translate using client's locale system
+    std::string translatedText = fallbackText;
+    if (!i18nKey.empty()) {
+        try {
+            translatedText = g_lua.callGlobalField<std::string>("", "tr", i18nKey);
+            // If tr() returned the same key (no translation found), use fallback text
+            if (translatedText == i18nKey) {
+                translatedText = fallbackText;
+                g_logger.debug("[I18N CreatureSay] No translation for key '{}', using fallback: '{}'", i18nKey, fallbackText);
+            } else {
+                g_logger.debug("[I18N CreatureSay] Translated '{}' -> '{}'", i18nKey, translatedText);
+            }
+        } catch (...) {
+            // If tr() fails, use fallback text
+            translatedText = fallbackText;
+            g_logger.warning("[I18N CreatureSay] Failed to call tr() for key '{}', using fallback", i18nKey);
+        }
+    }
+
+    g_game.processTalk(name, level, mode, translatedText, 0, pos);
+}
+
 void ProtocolGame::parseCancelWalk(const InputMessagePtr& msg)
 {
     const auto direction = static_cast<Otc::Direction>(msg->getU8());

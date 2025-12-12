@@ -6559,6 +6559,44 @@ bool Game::internalCreatureSay(const std::shared_ptr<Creature> &creature, SpeakC
 	return true;
 }
 
+// I18N: Internal localized creature say - sends i18nKey for client-side translation
+bool Game::internalCreatureLocalizedSay(const std::shared_ptr<Creature> &creature, SpeakClasses type, const std::string &i18nKey, const std::string &fallbackText, bool ghostMode, Spectators* spectatorsPtr /* = nullptr*/, const Position* pos /* = nullptr*/) {
+	if (i18nKey.empty() && fallbackText.empty()) {
+		return false;
+	}
+
+	if (!pos) {
+		pos = &creature->getPosition();
+	}
+
+	Spectators spectators;
+
+	if (!spectatorsPtr || spectatorsPtr->empty()) {
+		if (type != TALKTYPE_YELL && type != TALKTYPE_MONSTER_YELL) {
+			spectators.find<Creature>(*pos, false, MAP_MAX_CLIENT_VIEW_PORT_X, MAP_MAX_CLIENT_VIEW_PORT_X, MAP_MAX_CLIENT_VIEW_PORT_Y, MAP_MAX_CLIENT_VIEW_PORT_Y);
+		} else {
+			spectators.find<Creature>(*pos, true, (MAP_MAX_CLIENT_VIEW_PORT_X + 1) * 2, (MAP_MAX_CLIENT_VIEW_PORT_X + 1) * 2, (MAP_MAX_CLIENT_VIEW_PORT_Y + 1) * 2, (MAP_MAX_CLIENT_VIEW_PORT_Y + 1) * 2);
+		}
+	} else {
+		spectators = (*spectatorsPtr);
+	}
+
+	// Send to client - localized version
+	for (const auto &spectator : spectators) {
+		if (const auto &tmpPlayer = spectator->getPlayer()) {
+			if (!ghostMode || tmpPlayer->canSeeCreature(creature)) {
+				tmpPlayer->sendCreatureLocalizedSay(creature, type, i18nKey, fallbackText, pos);
+			}
+		}
+	}
+
+	// event method - use fallback text for event callbacks
+	for (const auto &spectator : spectators) {
+		spectator->onCreatureSay(creature, type, fallbackText);
+	}
+	return true;
+}
+
 void Game::addCreatureCheck(const std::shared_ptr<Creature> &creature) {
 	if (creature->isRemoved()) {
 		return;

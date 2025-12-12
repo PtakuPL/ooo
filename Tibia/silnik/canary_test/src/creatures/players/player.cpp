@@ -8223,6 +8223,13 @@ void Player::sendCreatureSay(const std::shared_ptr<Creature> &creature, SpeakCla
 	}
 }
 
+// I18N: Send localized creature speech
+void Player::sendCreatureLocalizedSay(const std::shared_ptr<Creature> &creature, SpeakClasses type, const std::string &i18nKey, const std::string &fallbackText, const Position* pos) const {
+	if (client) {
+		client->sendCreatureLocalizedSay(creature, type, i18nKey, fallbackText, pos);
+	}
+}
+
 void Player::sendCreatureReload(const std::shared_ptr<Creature> &creature) const {
 	if (client) {
 		client->reloadCreature(creature);

@@ -230,6 +230,7 @@ public:
 	bool internalCreatureTurn(const std::shared_ptr<Creature> &creature, Direction dir);
 
 	bool internalCreatureSay(const std::shared_ptr<Creature> &creature, SpeakClasses type, const std::string &text, bool ghostMode, Spectators* spectatorsPtr = nullptr, const Position* pos = nullptr);
+	bool internalCreatureLocalizedSay(const std::shared_ptr<Creature> &creature, SpeakClasses type, const std::string &i18nKey, const std::string &fallbackText, bool ghostMode, Spectators* spectatorsPtr = nullptr, const Position* pos = nullptr);  // I18N
 
 	ObjectCategory_t getObjectCategory(const std::shared_ptr<Item> &item);
 	ObjectCategory_t getObjectCategory(const ItemType &it);

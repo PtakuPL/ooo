@@ -8,9 +8,7 @@
 #include <unordered_map>
 #include <vector>
 
-namespace nlohmann {
-	class json;
-}
+#include <nlohmann/json_fwd.hpp>
 
 namespace i18n {
 
@@ -34,7 +32,7 @@ private:
 	Translator();
 
 	void ensureLocaleLoaded(const std::string &locale) const;
-	void loadLocaleUnlocked(const std::string &locale);
+	void loadLocaleUnlocked(const std::string &locale) const;
 	[[nodiscard]] std::string lookupUnlocked(const std::string &locale, const std::string &key) const;
 	[[nodiscard]] std::filesystem::path resolveLocalePath(const std::string &locale) const;
 	static void flattenJson(const nlohmann::json &node, const std::string &prefix, std::unordered_map<std::string, std::string> &output);

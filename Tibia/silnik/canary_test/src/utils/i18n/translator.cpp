@@ -12,7 +12,7 @@
 #include "lib/logging/log_with_spd_log.hpp"
 
 namespace {
-constexpr std::array DEFAULT_SEARCH_PATHS = {
+const std::array DEFAULT_SEARCH_PATHS = {
 	std::filesystem::path("data-otservbr-global/i18n"),
 	std::filesystem::path("data/i18n"),
 	std::filesystem::path("i18n")
@@ -173,7 +173,7 @@ void Translator::ensureLocaleLoaded(const std::string &locale) const {
 	loadLocaleUnlocked(locale);
 }
 
-void Translator::loadLocaleUnlocked(const std::string &locale) {
+void Translator::loadLocaleUnlocked(const std::string &locale) const {
 	if (locale.empty()) {
 		return;
 	}

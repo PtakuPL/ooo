@@ -20,6 +20,9 @@
 #include "absl/debugging/stacktrace.h"
 #include "absl/debugging/symbolize.h"
 
+#include <cctype>
+#include <fmt/chrono.h>
+
 void printXMLError(const std::string &where, const std::string &fileName, const pugi::xml_parse_result &result) {
 	g_logger().error("[{}] Failed to load {}: {}", where, fileName, result.description());
 
@@ -277,9 +280,10 @@ void toLowerCaseString(std::string &source) {
 	// Only lower ASCII characters (single-byte); leave UTF-8 multi-byte sequences intact.
 	// Full Unicode case folding should be implemented with a proper Unicode library
 	// (e.g., utf8proc or ICU) — this is a pragmatic safety measure for now.
-	for (unsigned char &ch : source) {
-		if (ch < 128) {
-			ch = static_cast<unsigned char>(std::tolower(ch));
+	for (char &ch : source) {
+		const auto uch = static_cast<unsigned char>(ch);
+		if (uch < 128) {
+			ch = static_cast<char>(std::tolower(uch));
 		}
 	}
 }

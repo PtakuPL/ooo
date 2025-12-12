@@ -773,10 +773,442 @@
       "overall_status": "completed",
       "completed_at": "2025-12-12T03:59:48.214296",
       "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/the_blazing_rose.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:48.528573",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/malicious_minion.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:48.941485",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/supercharged_mazzinor.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:49.359320",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/wild_knowledge.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:49.916816",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/stolen_tome_of_portals.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:50.015023",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/knowledge_raider.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:50.116004",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/oberons_spite.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:50.237569",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/stolen_knowledge_of_armor.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:50.342126",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/invading_demon.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:50.443512",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/spawn_of_havoc.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:50.543657",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/the_diamond_blossom.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:50.660297",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/oberons_hate.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:50.774012",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/the_book_of_secrets.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:50.881722",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/demon_blood.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:51.779484",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/war_servant.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:51.903440",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/bosses/grand_master_oberon.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:52.051658",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/bosses/thawing_dragon_lord.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:52.180158",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/bosses/the_scourge_of_oblivion.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:52.303554",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/bosses/grand_commander_soeren.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:52.425990",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/bosses/mazzinor.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:52.552150",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/bosses/gorzindel.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:52.698818",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/bosses/grand_chaplain_gaunder.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:52.832470",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/bosses/grand_master_oberon_functions.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:52.997807",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/bosses/lokathmor.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:53.127564",
+      "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 43,
+    "files_completed": 67,
     "total_keys": 0
   }
 }

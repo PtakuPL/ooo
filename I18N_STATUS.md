@@ -2,8 +2,8 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-12 03:59:47 UTC  
-> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 21826
+> **Aktualizacja:** 2025-12-12 03:59:52 UTC  
+> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 21868
 
 ---
 
@@ -26,8 +26,8 @@
 |---------|---------|---------|------|
 | 📂 **Wszystkie pliki** | **16,226** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **7,749** | 47.8% | pliki z kodem/tekstami |
-| 🔍 **Przeskanowane** | **1,127** | **14.5%** | historia workera |
-| ⏳ Nie przeskanowane | **6,622** | 85.5% | czekają na skan |
+| 🔍 **Przeskanowane** | **1,147** | **14.8%** | historia workera |
+| ⏳ Nie przeskanowane | **6,602** | 85.2% | czekają na skan |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -43,7 +43,7 @@
 ### ✅ Status Migracji
 | Status | Ilość | Procent | Opis |
 |--------|-------|---------|------|
-| ✅ Zmigrowane | **34** | 3.0% | mają klucze i18n |
+| ✅ Zmigrowane | **56** | 4.9% | mają klucze i18n |
 | 🔄 Wymaga migracji | **0** | - | trzeba dodać i18n |
 | ⚪ Czyste | **0** | - | bez tekstów |
 | 🔧 W trakcie | **0** | - | obecnie przetwarzane |
@@ -51,10 +51,10 @@
 ### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔑 **Klucze EN (źródłowe)** | **21,826** | wszystkie kategorie |
+| 🔑 **Klucze EN (źródłowe)** | **21,868** | wszystkie kategorie |
 | 📊 NPC | 5,339 | dialogi NPC |
 | 📊 Items | 13,749 | przedmioty |
-| 📊 Monsters | 310 | potwory |
+| 📊 Monsters | 352 | potwory |
 | 📊 HTML | 1,495 | widoki web |
 | 📊 Pozostałe | 933 | scripts, spells, etc. |
 
@@ -70,7 +70,7 @@
 | Metryka | Wartość | Info |
 |---------|---------|------|
 | 🔄 Cykl aktualny | **#107** | od uruchomienia |
-| 🔑 Kluczy wyekstrahowanych | **34** | w tej sesji |
+| 🔑 Kluczy wyekstrahowanych | **56** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
 ---
@@ -111,7 +111,7 @@
 | 🧙 NPC Dialogs | 🔄 | 5339/15000 (36%) | 15000 |
 | 📜 Lua Scripts | 🔄 | 97/1000 (10%) | 1000 |
 | 🎒 Items Database | 🔄 | 13749/40000 (34%) | 40000 |
-| 👹 Monsters | 🔄 | 310/5000 (6%) | 5000 |
+| 👹 Monsters | 🔄 | 352/5000 (7%) | 5000 |
 | ✨ Spells & Magic | 🔄 | 304/400 (76%) | 400 |
 | ⚙️ Server C++ | ⏳ | 0/300 (0%) | 300 |
 
@@ -176,11 +176,11 @@
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
 │ Kategoria: 📁 MONSTERS                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Pliki przeskanowane:     38 (wszystkie kategorie)          │
-│    ├─ Kategoria MONSTERS:    310 kluczy EN                    │
-│    └─ Total kluczy EN:  21826                                 │
+│ 📊 Pliki przeskanowane:     63 (wszystkie kategorie)          │
+│    ├─ Kategoria MONSTERS:    352 kluczy EN                    │
+│    └─ Total kluczy EN:  21868                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-12 03:59:47            │
+│ 📅 Ostatnia aktualizacja: 2025-12-12 03:59:52            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -190,10 +190,10 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **34** | w tej sesji |
-| ✅ Plików z kluczami | **34** | zawierały hardcoded strings |
+| 📁 Plików przeskanowanych | **56** | w tej sesji |
+| ✅ Plików z kluczami | **56** | zawierały hardcoded strings |
 | ⬜ Plików bez kluczy | **0** | czyste (brak hardcoded) |
-| 🔑 Kluczy wyciągniętych | **34** | przez workera w tej sesji |
+| 🔑 Kluczy wyciągniętych | **56** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
 | 🔄 Cykli wykonanych | **#107** | continuous mode |
 
@@ -201,7 +201,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 👹 `monsters` +302 kluczy @ 03:59:46
+- 👹 `monsters` +298 kluczy @ 03:59:51
 - 📜 `scripts` +0 kluczy @ 03:57:06
 - 🧙 `npc` +0 kluczy @ 03:54:45
 - ⚡ `errors` +0 kluczy @ 02:00:23
@@ -252,13 +252,13 @@
 </details>
 
 <details>
-<summary>👹 4. Monsters - 🔄 (6%)</summary>
+<summary>👹 4. Monsters - 🔄 (7%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 310 |
+| 🔑 Kluczy | 352 |
 | 🎯 Cel | 5000 |
-| 📊 Postęp | 6% |
+| 📊 Postęp | 7% |
 | 📁 Plik | i18n/en/monsters.json |
 
 </details>
@@ -370,8 +370,8 @@
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 0 | 8 | ✅ Active |
 | npc | 5339 | 0 | 14 | ⏭️ Skip 114m |
-| html | 1495 | 0 | 8 | ⏭️ Skip 0m |
-| monsters | 310 | 181101 | 0 | ✅ Active |
+| html | 1495 | 0 | 8 | ✅ Active |
+| monsters | 352 | 181493 | 0 | ✅ Active |
 | spells | 304 | 0 | 2 | ✅ Active |
 | client | 242 | 0 | 0 | ✅ Active |
 | raids | 147 | 0 | 8 | ✅ Active |
@@ -401,7 +401,6 @@
 |-----------|----------------|-----------|-------|
 | npc | 114m | 14x | Progresywny backoff |
 | scripts | 117m | 16x | Progresywny backoff |
-| html | 0m | 8x | Progresywny backoff |
 | otclient_modules | 0m | 8x | Progresywny backoff |
 | otclient_data | 0m | 8x | Progresywny backoff |
 | otclient_tools | 0m | 8x | Progresywny backoff |
@@ -447,7 +446,7 @@
 | 🎒 Items | 13749 | ██████░░░░░░░░░░░░░░ | 40000 | 🔄 34% |
 | 🧙 NPC | 5339 | ███████░░░░░░░░░░░░░ | 15000 | 🔄 36% |
 | 📜 Scripts | 97 | █░░░░░░░░░░░░░░░░░░░ | 1000 | 🔄 10% |
-| 👹 Monsters | 310 | █░░░░░░░░░░░░░░░░░░░ | 5000 | 🔄 6% |
+| 👹 Monsters | 352 | █░░░░░░░░░░░░░░░░░░░ | 5000 | 🔄 7% |
 | ✨ Spells | 304 | ███████████████░░░░░ | 400 | 🔄 76% |
 | ⚙️ Server | 0 | ░░░░░░░░░░░░░░░░░░░░ | 300 | ⏳ 0% |
 | 🖥️ System | 0 | ░░░░░░░░░░░░░░░░░░░░ | 2000 | ⏳ 0% |
@@ -456,23 +455,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 03:59:47  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 03:59:52  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `concentrated_death` - ukończono 2025-12-12 03:59
-- ✅ `rift_breacher` - ukończono 2025-12-12 03:59
-- ✅ `ghulosh'_deathgaze` - ukończono 2025-12-12 03:59
-- ✅ `stolen_knowledge_of_summoning` - ukończono 2025-12-12 03:59
-- ✅ `rift_spawn` - ukończono 2025-12-12 03:59
-- ✅ `bone_jaw` - ukończono 2025-12-12 03:59
-- ✅ `stolen_knowledge_of_lifesteal` - ukończono 2025-12-12 03:59
-- ✅ `furious_scorpion` - ukończono 2025-12-12 03:59
-- ✅ `imp_intruder` - ukończono 2025-12-12 03:59
-- ✅ `force_field` - ukończono 2025-12-12 03:59
+- ✅ `the_book_of_secrets` - ukończono 2025-12-12 03:59
+- ✅ `oberons_hate` - ukończono 2025-12-12 03:59
+- ✅ `the_diamond_blossom` - ukończono 2025-12-12 03:59
+- ✅ `spawn_of_havoc` - ukończono 2025-12-12 03:59
+- ✅ `invading_demon` - ukończono 2025-12-12 03:59
+- ✅ `stolen_knowledge_of_armor` - ukończono 2025-12-12 03:59
+- ✅ `oberons_spite` - ukończono 2025-12-12 03:59
+- ✅ `knowledge_raider` - ukończono 2025-12-12 03:59
+- ✅ `stolen_tome_of_portals` - ukończono 2025-12-12 03:59
+- ✅ `wild_knowledge` - ukończono 2025-12-12 03:59
 
 ---
 

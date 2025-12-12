@@ -1853,3 +1853,15 @@ data-otservbr-global/monster/vermins/parasite.lua
 data-otservbr-global/monster/vermins/emerald_damselfly.lua
 data-otservbr-global/monster/vermins/blemished_spawn.lua
 data-otservbr-global/monster/vermins/insectoid_worker.lua
+data-otservbr-global/monster/vermins/centipede.lua
+data-otservbr-global/monster/vermins/ladybug.lua
+data-otservbr-global/monster/vermins/ladybug.lua
+data-otservbr-global/monster/vermins/eyeless_devourer.lua
+data-otservbr-global/monster/vermins/swarmer_hatchling.lua
+data-otservbr-global/monster/vermins/chasm_spawn.lua
+data-otservbr-global/monster/vermins/ancient_scarab.lua
+data-otservbr-global/monster/vermins/exotic_cave_spider.lua
+data-otservbr-global/monster/vermins/cave_devourer.lua
+data-otservbr-global/monster/vermins/tunnel_tyrant.lua
+data-otservbr-global/monster/vermins/crystal_spider.lua
+data-otservbr-global/monster/vermins/insect_swarm.lua

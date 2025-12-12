@@ -1694,8 +1694,9 @@ struct Outfit_t {
 };
 
 struct voiceBlock_t {
-	std::string text;
+	std::string text;      // Oryginalny tekst (fallback)
 	bool yellText;
+	std::string i18nKey;   // Klucz i18n dla klienta (krótki: "1", "a", "v1")
 };
 
 struct PartyAnalyzer {

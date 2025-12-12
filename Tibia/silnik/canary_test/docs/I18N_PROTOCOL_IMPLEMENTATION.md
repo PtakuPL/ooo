@@ -2,19 +2,69 @@
 
 > **Dokument**: Implementacja protokołu i18n klient-serwer  
 > **Data utworzenia**: 2025-12-12  
-> **Status**: 🔄 W TRAKCIE  
+> **Data aktualizacji**: 2025-12-12  
+> **Status**: 🔄 W TRAKCIE - FAZA 2  
 > **Autor**: AI Assistant + PtakuPL
 
 ---
 
 ## 📋 PODSUMOWANIE
 
-**Cel**: Zmodyfikować protokół komunikacji serwer↔klient tak, aby serwer wysyłał klucze i18n, a klient tłumaczył teksty lokalnie.
+**Cel**: Zmodyfikować protokół komunikacji serwer↔klient tak, aby serwer wysyłał **krótkie klucze i18n** (1, 2, a, b, ^, 12...), a klient tłumaczył teksty lokalnie.
 
 **Dlaczego to robimy:**
-- Optymalizacja serwera (zero tłumaczeń server-side)
-- Mniejszy bandwidth (klucze krótsze od tekstów)
+- **MEGA OPTYMALIZACJA** - klucze "1", "a" zamiast "Hello adventurer, welcome to..."
+- Zero tłumaczeń server-side (bez mutex, bez cache)
+- Mniejszy bandwidth (1-3 bajty vs 50-200 bajtów)
 - Klient OTClient (testyy) już ma funkcję `tr()` i słowniki!
+
+**Ryzyko:** Jeśli nie zadziała - cofamy wszystko i kombinujemy inaczej.
+
+---
+
+## 🎯 PEŁNA LISTA ELEMENTÓW DO ZLOKALIZOWANIA
+
+| # | Element | Opis | Priorytet | Status |
+|---|---------|------|-----------|--------|
+| 1 | **sendTextMessage** | Wiadomości systemowe | P0 | ✅ ZROBIONE |
+| 2 | **voiceBlock_t** | Głosy monster/NPC | P0 | ⏳ NASTĘPNE |
+| 3 | **Monster names** | Nazwy potworów | P0 | ❌ TODO |
+| 4 | **Item names** | Nazwy przedmiotów | P1 | ❌ TODO |
+| 5 | **NPC names** | Nazwy NPC | P1 | ❌ TODO |
+| 6 | **Spell names** | Nazwy zaklęć | P2 | ❌ TODO |
+| 7 | **Combat messages** | "A dragon hits you" | P2 | ❌ TODO |
+| 8 | **Descriptions** | Opisy (look at) | P3 | ❌ TODO |
+
+---
+
+## 🔑 STRATEGIA KLUCZY
+
+### Klucze krótkie (optymalizacja bandwidth)
+```
+Zamiast:  "npc.oracle.greeting_welcome_adventurer_to_tibia" (47 bajtów)
+Używamy:  "1" lub "a" lub "^" (1 bajt)
+
+Oszczędność: 46 bajtów × 1000 wiadomości = 46 KB per gracz!
+```
+
+### Mapowanie kluczy (na kliencie)
+```lua
+-- testyy/data/locales/pl.lua
+locale.translation = {
+    ["1"] = "Witaj wędrowcze! Zapraszam do Tibii...",
+    ["2"] = "Żegnaj!",
+    ["a"] = "Dragon",
+    ["b"] = "Rat",
+    -- ...
+}
+```
+
+### Generowanie kluczy (skrypt)
+```python
+# Generuj krótkie klucze: 1-9, a-z, A-Z, kombinacje
+keys = list("123456789") + list("abcdefghijklmnopqrstuvwxyz") + list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+# Dla >62 elementów: "10", "11", "aa", "ab", ...
+```
 
 ---
 

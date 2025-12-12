@@ -1,3 +1,4 @@
+---
 name: Analysis - SonarCloud (Android)
 
 on:
@@ -5,16 +6,16 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
   push:
-    branches: [ master ]
+    branches: [master]
 
 permissions:
   contents: read
   pull-requests: read
 
 env:
-  CMAKE_BUILD_PARALLllEL_LEVEL: 4
+  CMAKE_BUILD_PARALLEL_LEVEL: 4
   MAKEFLAGS: '-j 4'
-  ANDROllID_NDK_VERSION: r23c
+  ANDROID_NDK_VERSION: r23c
 
 jobs:
   sonarcloud-android:

@@ -135,6 +135,7 @@ namespace Proto
         GameServerEditText = 150,
         GameServerEditList = 151,
         GameServerSendGameNews = 152,
+        GameServerLocalizedCreatureSay = 153,  // I18N: creature speech with translation key
         GameServerSendBlessDialog = 155,
         GameServerBlessings = 156,
         GameServerPreset = 157,

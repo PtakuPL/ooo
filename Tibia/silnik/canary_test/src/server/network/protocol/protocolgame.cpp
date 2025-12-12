@@ -6599,6 +6599,46 @@ void ProtocolGame::sendCreatureSay(const std::shared_ptr<Creature> &creature, Sp
 	writeToOutputBuffer(msg);
 }
 
+// I18N: Send localized creature speech (monster/NPC voices)
+// Uses opcode 0x99 (153) to send i18nKey for client-side translation
+void ProtocolGame::sendCreatureLocalizedSay(const std::shared_ptr<Creature> &creature, SpeakClasses type, const std::string &i18nKey, const std::string &fallbackText, const Position* pos /* = nullptr*/) {
+	NetworkMessage msg;
+	msg.addByte(0x99);  // I18N opcode for localized creature say (153)
+
+	static uint32_t statementId = 0;
+	msg.add<uint32_t>(++statementId);
+
+	msg.addString(creature->getName());
+
+	if (!oldProtocol) {
+		msg.addByte(0x00); // Show (Traded)
+	}
+
+	// Add level only for players
+	if (std::shared_ptr<Player> speaker = creature->getPlayer()) {
+		msg.add<uint16_t>(speaker->getLevel());
+	} else {
+		msg.add<uint16_t>(0x00);
+	}
+
+	if (oldProtocol && type >= TALKTYPE_MONSTER_LAST_OLDPROTOCOL && type != TALKTYPE_CHANNEL_R2) {
+		msg.addByte(TALKTYPE_MONSTER_SAY);
+	} else {
+		msg.addByte(type);
+	}
+
+	if (pos) {
+		msg.addPosition(*pos);
+	} else {
+		msg.addPosition(creature->getPosition());
+	}
+
+	// I18N: Send both key and fallback
+	msg.addString(i18nKey);        // Key for client translation
+	msg.addString(fallbackText);   // Fallback for non-i18n clients
+	writeToOutputBuffer(msg);
+}
+
 void ProtocolGame::sendToChannel(const std::shared_ptr<Creature> &creature, SpeakClasses type, const std::string &text, uint16_t channelId) {
 	NetworkMessage msg;
 	msg.addByte(0xAA);

@@ -411,6 +411,9 @@ void ProtocolGame::parseMessage(const InputMessagePtr& msg)
                 case Proto::GameServerLocalizedTextMessage:
                     parseLocalizedTextMessage(msg);
                     break;
+                case Proto::GameServerLocalizedCreatureSay:
+                    parseLocalizedCreatureSay(msg);
+                    break;
                 case Proto::GameServerCancelWalk:
                     parseCancelWalk(msg);
                     break;

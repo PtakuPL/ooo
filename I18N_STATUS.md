@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-12 04:06:02 UTC  
+> **Aktualizacja:** 2025-12-12 04:06:06 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 21648
 
 ---
@@ -174,13 +174,13 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
-│ Kategoria: 📁 STARTUP                                │
+│ Kategoria: 📁 NPCLIB                                 │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Pliki przeskanowane:     70 (wszystkie kategorie)          │
-│    ├─ Kategoria STARTUP:      0 kluczy EN                    │
+│    ├─ Kategoria NPCLIB:      0 kluczy EN                    │
 │    └─ Total kluczy EN:  21648                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-12 04:06:02            │
+│ 📅 Ostatnia aktualizacja: 2025-12-12 04:06:06            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -201,6 +201,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `npclib` +0 kluczy @ 04:06:04
 - ⚡ `startup` +0 kluczy @ 04:06:00
 - ⚡ `modules` +0 kluczy @ 04:05:58
 - ⚡ `chatchannels` +0 kluczy @ 04:05:50
@@ -208,7 +209,6 @@
 - ⚡ `libs` +0 kluczy @ 04:05:47
 - ⚡ `mounts` +0 kluczy @ 04:05:39
 - 🎒 `items` +0 kluczy @ 04:05:39
-- ⚡ `globalevents` +0 kluczy @ 04:05:29
 
 
 ---
@@ -387,7 +387,7 @@
 | actions | 0 | 0 | 9 | ⏭️ Skip 118m |
 | cpp | 0 | 0 | 2 | ⏳ Empty |
 | errors | 0 | 0 | 8 | ⏳ Empty |
-| npclib | 0 | 0 | 8 | ⏳ Empty |
+| npclib | 0 | 0 | 12 | ⏭️ Skip 119m |
 | quests | 0 | 0 | 11 | ⏭️ Skip 118m |
 | server | 0 | 0 | 2 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
@@ -415,6 +415,7 @@
 | chatchannels | 119m | 10x | Progresywny backoff |
 | modules | 119m | 10x | Progresywny backoff |
 | startup | 119m | 10x | Progresywny backoff |
+| npclib | 119m | 12x | Progresywny backoff |
 | monsters | 8m | 2x | Progresywny backoff |
 | mounts | 4m | 1x | Progresywny backoff |
 
@@ -467,7 +468,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 04:06:02  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 04:06:06  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

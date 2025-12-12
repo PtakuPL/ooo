@@ -1,4 +1,127 @@
----
+name: Canary - Build Ubuntu
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - "Tibia/silnik/canary_test/src/**"
+      - "Tibia/silnik/canary_test/tests/**/*.cpp"
+      - "Tibia/silnik/canary_test/CMakeLists.txt"
+      - "Tibia/silnik/canary_test/CMakePresets.json"
+      - "Tibia/silnik/canary_test/vcpkg.json"
+      - ".github/workflows/build-canary-ubuntu.yml"
+  push:
+    branches: [master, main]
+    paths:
+      - "Tibia/silnik/canary_test/src/**"
+      - "Tibia/silnik/canary_test/tests/**/*.cpp"
+      - "Tibia/silnik/canary_test/CMakeLists.txt"
+      - "Tibia/silnik/canary_test/CMakePresets.json"
+      - "Tibia/silnik/canary_test/vcpkg.json"
+      - ".github/workflows/build-canary-ubuntu.yml"
+
+env:
+  CMAKE_BUILD_PARALLEL_LEVEL: 2
+  MAKEFLAGS: "-j 2"
+
+jobs:
+  build:
+    if: ${{ github.event_name == 'push' || !github.event.pull_request.draft }}
+    name: ${{ matrix.os }}-${{ matrix.buildtype }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-22.04, ubuntu-24.04]
+        buildtype: [linux-release, linux-debug]
+
+    defaults:
+      run:
+        working-directory: Tibia/silnik/canary_test
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Linux Dependencies
+        working-directory: .
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ccache software-properties-common
+
+      - name: Switch to gcc-13 on Ubuntu 22.04
+        if: matrix.os == 'ubuntu-22.04'
+        working-directory: .
+        run: |
+          sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
+          sudo apt-get update
+          sudo apt-get install -y gcc-13 g++-13
+          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 100 \
+            --slave /usr/bin/g++ g++ /usr/bin/g++-13 \
+            --slave /usr/bin/gcov gcov /usr/bin/gcov-13
+          sudo update-alternatives --set gcc /usr/bin/gcc-13
+
+      - name: Switch to gcc-14 on Ubuntu 24.04
+        if: matrix.os == 'ubuntu-24.04'
+        working-directory: .
+        run: |
+          sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
+          sudo apt-get update
+          sudo apt-get install -y gcc-14 g++-14
+          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-14 100 \
+            --slave /usr/bin/g++ g++ /usr/bin/g++-14 \
+            --slave /usr/bin/gcov gcov /usr/bin/gcov-14
+          sudo update-alternatives --set gcc /usr/bin/gcc-14
+
+      - name: CCache
+        uses: hendrikmuhs/ccache-action@v1
+        with:
+          max-size: 1G
+          key: ccache-${{ matrix.os }}-${{ matrix.buildtype }}
+
+      - name: Read vcpkg baseline
+        id: vcpkg-baseline
+        run: |
+          vcpkgCommitId=$(grep 'builtin-baseline' vcpkg.json | awk -F: '{print $2}' | tr -d '," ')
+          echo "VCPKG_GIT_COMMIT_ID=$vcpkgCommitId" >> "$GITHUB_ENV"
+          echo "vcpkg commit ID: $vcpkgCommitId"
+
+      - name: Install vcpkg
+        uses: lukka/run-vcpkg@main
+        with:
+          vcpkgGitURL: "https://github.com/microsoft/vcpkg.git"
+          vcpkgGitCommitId: ${{ env.VCPKG_GIT_COMMIT_ID }}
+          vcpkgDirectory: ${{ github.workspace }}/Tibia/silnik/canary_test/vcpkg
+
+      - name: Get latest CMake and Ninja
+        uses: lukka/get-cmake@main
+
+      - name: Configure + Build (CMake Presets)
+        uses: lukka/run-cmake@main
+        with:
+          cmakeListsTxtPath: ${{ github.workspace }}/Tibia/silnik/canary_test/CMakeLists.txt
+          configurePreset: ${{ matrix.buildtype }}
+          buildPreset: ${{ matrix.buildtype }}
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: canary-${{ matrix.os }}-${{ matrix.buildtype }}-${{ github.sha }}
+          path: |
+            ${{ github.workspace }}/Tibia/silnik/canary_test/build/${{ matrix.buildtype }}/bin/
+          retention-days: 14
+
+      - name: Unit tests
+        run: |
+          cd build/${{ matrix.buildtype }}
+          ctest -V -R unit
+
+      - name: Integration tests
+        run: |
+          cd build/${{ matrix.buildtype }}
+          ctest -V -R integration---
 name: Build - Ubuntu
 
 on:

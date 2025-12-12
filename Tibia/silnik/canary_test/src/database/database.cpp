@@ -14,6 +14,8 @@
 #include "lib/metrics/metrics.hpp"
 #include "utils/tools.hpp"
 
+#include <fmt/chrono.h>
+
 Database::~Database() {
 	if (handle != nullptr) {
 		mysql_close(handle);

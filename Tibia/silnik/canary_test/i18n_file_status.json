@@ -3635,10 +3635,190 @@
       "overall_status": "completed",
       "completed_at": "2025-12-12T01:58:31.474586",
       "category": "libs"
+    },
+    "html_copy/admin/template/template.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:59:39.407753",
+      "category": "quests"
+    },
+    "html_copy/admin/index.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:59:39.548325",
+      "category": "quests"
+    },
+    "html_copy/system/exception.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:59:39.728184",
+      "category": "quests"
+    },
+    "html_copy/system/countries.conf.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:59:39.828792",
+      "category": "quests"
+    },
+    "html_copy/system/get_version_for_release.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:59:39.933448",
+      "category": "quests"
+    },
+    "html_copy/system/locale.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:59:40.035940",
+      "category": "quests"
+    },
+    "html_copy/system/migrate.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:59:40.139719",
+      "category": "quests"
+    },
+    "html_copy/system/compat/classes.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:59:40.244929",
+      "category": "quests"
+    },
+    "html_copy/system/compat/config.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:59:40.353255",
+      "category": "quests"
+    },
+    "html_copy/system/compat/base.php": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "quests"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:59:40.460634",
+      "category": "quests"
     }
   },
   "global_stats": {
-    "files_completed": 202,
+    "files_completed": 212,
     "total_keys": 0
   }
 }

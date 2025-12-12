@@ -520,3 +520,13 @@ data/libs/i18n_wrappers.lua
 data/libs/tables/doors.lua
 data/libs/tables/windows.lua
 data/libs/tables/load.lua
+html_copy/admin/template/template.php
+html_copy/admin/index.php
+html_copy/system/exception.php
+html_copy/system/countries.conf.php
+html_copy/system/get_version_for_release.php
+html_copy/system/locale.php
+html_copy/system/migrate.php
+html_copy/system/compat/classes.php
+html_copy/system/compat/config.php
+html_copy/system/compat/base.php

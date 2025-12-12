@@ -150,7 +150,7 @@ keys = list("123456789") + list("abcdefghijklmnopqrstuvwxyz") + list("ABCDEFGHIJ
 
 ## 📝 NOTATKI Z IMPLEMENTACJI
 
-### Serwer - sendLocalizedTextMessage
+### 1. Serwer - sendLocalizedTextMessage (wiadomości systemowe)
 
 \`\`\`cpp
 // Nowa struktura (protocolgame.hpp)
@@ -163,22 +163,77 @@ void ProtocolGame::sendLocalizedTextMessage(const LocalizedTextMessage &message)
 // Opcode: 0xBC (188)
 \`\`\`
 
-### Klient - parseLocalizedTextMessage
+### 2. Serwer - sendCreatureLocalizedSay (głosy monster/NPC)
 
 \`\`\`cpp
-// Nowy opcode (protocolcodes.h)
-GameServerLocalizedTextMessage = 188
+// Deklaracja (protocolgame.hpp)
+void sendCreatureLocalizedSay(const std::shared_ptr<Creature> &creature, SpeakClasses type, 
+                              const std::string &i18nKey, const std::string &fallbackText, 
+                              const Position* pos = nullptr);
+// Opcode: 0x99 (153)
 
-// Parser (protocolgameparse.cpp)
-void ProtocolGame::parseLocalizedTextMessage(const InputMessagePtr& msg);
-// Wywołuje g_lua.callGlobalField<std::string>("", "tr", i18nKey)
+// Użycie w monster.cpp/npc.cpp:
+if (!voice.i18nKey.empty()) {
+    g_game().internalCreatureLocalizedSay(creature, talkType, voice.i18nKey, voice.text, false);
+} else {
+    g_game().internalCreatureSay(creature, talkType, voice.text, false);
+}
 \`\`\`
 
-### Format pakietu LocalizedTextMessage
+### 3. Struktura voiceBlock_t
 
+\`\`\`cpp
+// creatures_definitions.hpp
+struct voiceBlock_t {
+    std::string text;      // Oryginalny tekst (fallback)
+    bool yellText = false; // Czy krzyk
+    std::string i18nKey;   // Klucz i18n dla klienta
+};
+\`\`\`
+
+### 4. Lua API - addVoice()
+
+\`\`\`lua
+-- Nowy format z 6 parametrem (opcjonalny klucz i18n)
+monsterType:addVoice("GRRRR!", 2000, 10, false, "mv_dragon_1")
+npcType:addVoice("Hello traveler!", 5000, 5, false, "nv_shop_1")
+
+-- getVoices() zwraca:
+-- { text, interval, chance, yell, i18nKey }
+\`\`\`
+
+### 5. Klient - parseLocalizedCreatureSay
+
+\`\`\`cpp
+// protocolcodes.h
+GameServerLocalizedCreatureSay = 153
+
+// protocolgameparse.cpp
+void ProtocolGame::parseLocalizedCreatureSay(const InputMessagePtr& msg) {
+    // ... parsowanie jak parseTalk ...
+    const auto& i18nKey = msg->getString();
+    const auto& fallbackText = msg->getString();
+    
+    std::string translatedText = g_lua.callGlobalField<std::string>("", "tr", i18nKey);
+    if (translatedText == i18nKey) translatedText = fallbackText;
+    
+    g_game.processTalk(name, level, mode, translatedText, 0, pos);
+}
+\`\`\`
+
+### Format pakietów
+
+**LocalizedTextMessage (0xBC / 188):**
 \`\`\`
 [0xBC:byte][type:byte][...dane wg typu...][text:string][i18nKey:string]
                                            ↑ fallback    ↑ klucz do tr()
+\`\`\`
+
+**LocalizedCreatureSay (0x99 / 153):**
+\`\`\`
+[0x99:byte][statementId:u32][name:string][suffix:byte][level:u16]
+[talkType:byte][position:xyz][i18nKey:string][fallbackText:string]
+                             ↑ klucz do tr()  ↑ dla starych klientów
 \`\`\`
 
 ---

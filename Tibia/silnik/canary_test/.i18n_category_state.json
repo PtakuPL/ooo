@@ -9,7 +9,7 @@
     "world": 1765508239.759782,
     "spells": 1765490104.104978,
     "talkactions": 1765508251.0997639,
-    "movements": 1765500999.9320197,
+    "movements": 1765508262.1229177,
     "creaturescripts": 1765501008.2631812,
     "globalevents": 1765501016.5790205,
     "items": 1765501026.6882732,
@@ -71,7 +71,7 @@
     },
     "movements": {
       "count": 0,
-      "timestamp": 1765493799.932013
+      "timestamp": 1765501062.1229079
     },
     "creaturescripts": {
       "count": 0,
@@ -168,7 +168,7 @@
     "world": 8,
     "spells": 2,
     "talkactions": 8,
-    "movements": 6,
+    "movements": 8,
     "creaturescripts": 6,
     "globalevents": 6,
     "items": 6,

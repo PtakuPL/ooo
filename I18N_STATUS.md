@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-12 01:57:33 UTC  
+> **Aktualizacja:** 2025-12-12 01:57:44 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28857
 
 ---
@@ -69,7 +69,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#33** | od uruchomienia |
+| 🔄 Cykl aktualny | **#34** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **166** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -170,17 +170,17 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    33 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    34 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
-│ Kategoria: 📁 TALKACTIONS                            │
+│ Kategoria: 📁 MOVEMENTS                              │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Pliki przeskanowane:    196 (wszystkie kategorie)          │
-│    ├─ Kategoria TALKACTIONS:      0 kluczy EN                    │
+│    ├─ Kategoria MOVEMENTS:      0 kluczy EN                    │
 │    └─ Total kluczy EN:  28857                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-12 01:57:33            │
+│ 📅 Ostatnia aktualizacja: 2025-12-12 01:57:44            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -195,12 +195,13 @@
 | ⬜ Plików bez kluczy | **30** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **166** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#33** | continuous mode |
+| 🔄 Cykli wykonanych | **#34** | continuous mode |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `movements` +0 kluczy @ 01:57:42
 - ⚡ `talkactions` +0 kluczy @ 01:57:31
 - ⚡ `world` +0 kluczy @ 01:57:19
 - ⚡ `raids` +0 kluczy @ 01:57:09
@@ -208,7 +209,6 @@
 - ⚡ `actions` +0 kluczy @ 01:56:41
 - 👹 `monsters` +0 kluczy @ 01:56:29
 - 📜 `scripts` +0 kluczy @ 01:56:15
-- 🧙 `npc` +0 kluczy @ 01:54:25
 
 
 ---
@@ -382,8 +382,8 @@
 | modules | 16 | 0 | 6 | ⏭️ Skip 0m |
 | messages | 11 | 0 | 0 | ✅ Active |
 | chatchannels | 8 | 0 | 6 | ⏭️ Skip 0m |
-| events | 5 | 0 | 6 | ⏭️ Skip 0m |
-| actions | 0 | 0 | 8 | ⏭️ Skip 119m |
+| events | 5 | 0 | 6 | ✅ Active |
+| actions | 0 | 0 | 8 | ⏭️ Skip 118m |
 | cpp | 0 | 0 | 2 | ⏳ Empty |
 | errors | 0 | 0 | 6 | ⏭️ Skip 1m |
 | npclib | 0 | 0 | 6 | ⏭️ Skip 0m |
@@ -401,12 +401,12 @@
 | npc | 116m | 8x | Progresywny backoff |
 | scripts | 118m | 8x | Progresywny backoff |
 | monsters | 118m | 8x | Progresywny backoff |
-| actions | 119m | 8x | Progresywny backoff |
+| actions | 118m | 8x | Progresywny backoff |
 | quests | 119m | 8x | Progresywny backoff |
 | raids | 119m | 8x | Progresywny backoff |
 | world | 119m | 8x | Progresywny backoff |
 | talkactions | 119m | 8x | Progresywny backoff |
-| events | 0m | 6x | Progresywny backoff |
+| movements | 119m | 8x | Progresywny backoff |
 | chatchannels | 0m | 6x | Progresywny backoff |
 | modules | 0m | 6x | Progresywny backoff |
 | startup | 0m | 6x | Progresywny backoff |
@@ -425,7 +425,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #33 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #34 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -468,7 +468,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 01:57:33  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 01:57:44  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

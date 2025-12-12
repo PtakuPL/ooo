@@ -1,6 +1,6 @@
 {
   "skip_until": {
-    "npc": 1765508065.5364377,
+    "npc": 1765515285.4083164,
     "scripts": 1765508175.9044466,
     "monsters": 1765508189.2367184,
     "actions": 1765508201.4478962,
@@ -35,7 +35,7 @@
   "last_processed": {
     "npc": {
       "count": 0,
-      "timestamp": 1765500865.5364308
+      "timestamp": 1765508085.408306
     },
     "scripts": {
       "count": 0,
@@ -159,7 +159,7 @@
     }
   },
   "consecutive_zeros": {
-    "npc": 8,
+    "npc": 14,
     "scripts": 8,
     "monsters": 8,
     "actions": 8,

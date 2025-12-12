@@ -2,7 +2,6 @@
   "skip_until": {
     "npc": 1765515285.4083164,
     "scripts": 1765515426.4226851,
-    "monsters": 1765508189.2367184,
     "actions": 1765508201.4478962,
     "quests": 1765508217.1376894,
     "raids": 1765508229.5346136,
@@ -42,8 +41,8 @@
       "timestamp": 1765508226.422677
     },
     "monsters": {
-      "count": 0,
-      "timestamp": 1765500989.2367048
+      "count": -14462,
+      "timestamp": 1765508254.9093087
     },
     "actions": {
       "count": 0,
@@ -161,7 +160,7 @@
   "consecutive_zeros": {
     "npc": 14,
     "scripts": 16,
-    "monsters": 8,
+    "monsters": 0,
     "actions": 8,
     "quests": 8,
     "raids": 8,
@@ -191,6 +190,8 @@
     "server": 2,
     "errors": 8
   },
-  "total_processed": {},
+  "total_processed": {
+    "monsters": -21715
+  },
   "migrations_done": false
 }

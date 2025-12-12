@@ -1,6 +1,6 @@
 {
   "files": {
-    "data-otservbr-global/monster/constructs/rustheap_golem.lua": {
+    "data-otservbr-global/monster/humanoids/minotaur_amazon.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -15,10 +15,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:09.422982",
+      "completed_at": "2025-12-12T03:57:16.095687",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/constructs/damaged_worker_golem.lua": {
+    "data-otservbr-global/monster/humanoids/frost_troll.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -33,10 +33,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:09.632339",
+      "completed_at": "2025-12-12T03:57:16.331783",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/constructs/iron_servant.lua": {
+    "data-otservbr-global/monster/humanoids/broken_shaper.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -51,10 +51,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:09.865287",
+      "completed_at": "2025-12-12T03:57:16.560236",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/constructs/golden_servant_replica.lua": {
+    "data-otservbr-global/monster/humanoids/dwarf_guard.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -69,10 +69,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:10.131225",
+      "completed_at": "2025-12-12T03:57:16.821298",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/constructs/iron_servant_replica.lua": {
+    "data-otservbr-global/monster/humanoids/minotaur_totem.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -87,10 +87,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:10.704315",
+      "completed_at": "2025-12-12T03:57:17.029224",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/constructs/walker.lua": {
+    "data-otservbr-global/monster/humanoids/pirat_scoundrel.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -105,10 +105,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:11.000640",
+      "completed_at": "2025-12-12T03:57:17.222943",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/constructs/sandstone_scorpion.lua": {
+    "data-otservbr-global/monster/humanoids/lost_basher.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -123,10 +123,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:11.149226",
+      "completed_at": "2025-12-12T03:57:17.453628",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/constructs/magma_crawler.lua": {
+    "data-otservbr-global/monster/humanoids/dworc_fleshhunter.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -141,10 +141,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:11.318259",
+      "completed_at": "2025-12-12T03:57:17.668212",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/constructs/animated_snowman.lua": {
+    "data-otservbr-global/monster/humanoids/crazed_winter_rearguard.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -159,10 +159,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:11.475806",
+      "completed_at": "2025-12-12T03:57:17.868473",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/constructs/damaged_crystal_golem.lua": {
+    "data-otservbr-global/monster/humanoids/mooh'tah_warrior.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -177,1198 +177,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:11.640736",
+      "completed_at": "2025-12-12T03:57:18.270644",
       "category": "monsters"
     },
-    "data-otservbr-global/raids/thais/rats.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:40.744474",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/thais/cyclops.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:40.859634",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/thais/orcs.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:41.003561",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/thais/wild_horses.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:41.138729",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/rookgaard/rats.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:41.257074",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/rookgaard/sheng.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:41.393796",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/rookgaard/munster.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:41.578217",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/rookgaard/rottie1.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:41.920766",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/rookgaard/teleskor.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:42.299770",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/rookgaard/rottie2.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:44:42.632814",
-      "category": "raids"
-    },
-    "data-otservbr-global/scripts/spells/monster/enslaved_dwarf_skill_reducer_2.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "spells"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:45:01.468397",
-      "category": "spells"
-    },
-    "data-otservbr-global/scripts/spells/monster/magma_crawler_soulfire.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "spells"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:45:01.651212",
-      "category": "spells"
-    },
-    "data-otservbr-global/scripts/spells/monster/devovorga_curse.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "spells"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:45:01.809399",
-      "category": "spells"
-    },
-    "data-otservbr-global/scripts/spells/monster/cults_of_tibia_armor_buff.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "spells"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:45:01.973381",
-      "category": "spells"
-    },
-    "data-otservbr-global/scripts/spells/monster/white_shade_paralyze.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "spells"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:45:02.137544",
-      "category": "spells"
-    },
-    "data-otservbr-global/scripts/spells/monster/plant_abomination_wave.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "spells"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:45:02.316884",
-      "category": "spells"
-    },
-    "data-otservbr-global/scripts/spells/monster/large_ice_ring.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "spells"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:45:02.498745",
-      "category": "spells"
-    },
-    "data-otservbr-global/scripts/spells/monster/teleport_strike.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "spells"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:45:02.693942",
-      "category": "spells"
-    },
-    "data-otservbr-global/scripts/spells/monster/quara_constrictor_freeze.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "spells"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:45:02.831862",
-      "category": "spells"
-    },
-    "data-otservbr-global/scripts/spells/monster/lersatio_summon.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "spells"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:45:02.965354",
-      "category": "spells"
-    },
-    "data/libs/functions/gematelier.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:46:14.555279",
-      "category": "libs"
-    },
-    "data/libs/functions/item.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:46:14.618808",
-      "category": "libs"
-    },
-    "data/libs/functions/modal_window_helper.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:46:14.676398",
-      "category": "libs"
-    },
-    "data/libs/functions/tile.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:46:14.738645",
-      "category": "libs"
-    },
-    "data/libs/functions/queue.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:46:14.800230",
-      "category": "libs"
-    },
-    "data/libs/functions/pronouns.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:46:14.863142",
-      "category": "libs"
-    },
-    "data/libs/functions/vocation.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:46:14.927707",
-      "category": "libs"
-    },
-    "data/libs/functions/constants.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:46:14.985788",
-      "category": "libs"
-    },
-    "data/libs/functions/creature.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:46:15.045109",
-      "category": "libs"
-    },
-    "data/libs/functions/boss_lever.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:46:15.126642",
-      "category": "libs"
-    },
-    "data-otservbr-global/lib/others/load.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:46:15.227149",
-      "category": "libs"
-    },
-    "data-otservbr-global/lib/tables/town.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:46:15.439231",
-      "category": "libs"
-    },
-    "data-otservbr-global/lib/tables/teleport_item_destinations.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:46:15.698140",
-      "category": "libs"
-    },
-    "data-otservbr-global/lib/tables/load.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:46:15.928950",
-      "category": "libs"
-    },
-    "data-otservbr-global/lib/npc/i18n.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:46:16.169219",
-      "category": "libs"
-    },
-    "data-otservbr-global/lib/npc/load.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:46:16.376899",
-      "category": "libs"
-    },
-    "html_copy/admin/pages/modules/server_status.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:27.924189",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/modules/created.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:28.069639",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/modules/statistics.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:28.207079",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/modules/coins.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:28.345213",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/settings.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:28.647781",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/login.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:29.128470",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/pages.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:29.381792",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/plugins.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:29.655783",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/dashboard.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:29.767111",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/news.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:29.953393",
-      "category": "quests"
-    },
-    "html_copy/system/templates/gallery.get.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:44.392513",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/news.archive.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:44.518330",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/monsters.back_button.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:44.589903",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/buttons.change_email.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:44.668297",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/install.config.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:44.983000",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/browsehappy.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:45.172982",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/buttons.logout.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:45.275256",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/account.characters.change-sex.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:45.551797",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/admin-bar.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:46.087359",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/account.create.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:46.860277",
-      "category": "creaturescripts"
-    },
-    "src/game/movement/position.hpp": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "weapons"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:55.192780",
-      "category": "weapons"
-    },
-    "src/game/scheduling/save_manager.cpp": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "weapons"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:55.302962",
-      "category": "weapons"
-    },
-    "src/game/scheduling/events_scheduler.cpp": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "weapons"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:55.406612",
-      "category": "weapons"
-    },
-    "src/game/scheduling/dispatcher.cpp": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "weapons"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:55.517791",
-      "category": "weapons"
-    },
-    "src/game/scheduling/task.cpp": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "weapons"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:55.623677",
-      "category": "weapons"
-    },
-    "src/game/scheduling/events_scheduler.hpp": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "weapons"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:55.902619",
-      "category": "weapons"
-    },
-    "src/game/scheduling/save_manager.hpp": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "weapons"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:56.159449",
-      "category": "weapons"
-    },
-    "src/game/scheduling/dispatcher.hpp": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "weapons"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:56.429794",
-      "category": "weapons"
-    },
-    "src/game/scheduling/task.hpp": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "weapons"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:56.520208",
-      "category": "weapons"
-    },
-    "src/game/game.hpp": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "weapons"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:47:56.656399",
-      "category": "weapons"
-    },
-    "data-otservbr-global/monster/constructs/ice_golem.lua": {
+    "data-otservbr-global/monster/humanoids/pirat_artillerist.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -1383,10 +195,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:54:48.855169",
+      "completed_at": "2025-12-12T03:57:18.427479",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/constructs/clay_guardian.lua": {
+    "data-otservbr-global/monster/humanoids/lost_exile.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -1401,10 +213,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:54:49.005461",
+      "completed_at": "2025-12-12T03:57:18.597040",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/constructs/golden_servant.lua": {
+    "data-otservbr-global/monster/humanoids/cheese_thief.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -1419,10 +231,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:54:49.138613",
+      "completed_at": "2025-12-12T03:57:18.755989",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/constructs/stone_golem.lua": {
+    "data-otservbr-global/monster/humanoids/corym_vanguard.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -1437,10 +249,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:54:49.262989",
+      "completed_at": "2025-12-12T03:57:18.902491",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/constructs/diamond_servant_replica.lua": {
+    "data-otservbr-global/monster/humanoids/pirat_mate.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -1455,10 +267,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:54:49.386204",
+      "completed_at": "2025-12-12T03:57:19.034232",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/constructs/infected_weeper.lua": {
+    "data-otservbr-global/monster/humanoids/minotaur_mage.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -1473,10 +285,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:54:49.526262",
+      "completed_at": "2025-12-12T03:57:19.181068",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/constructs/goggle_cake.lua": {
+    "data-otservbr-global/monster/humanoids/pirat_bombardier.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -1491,10 +303,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:54:49.672638",
+      "completed_at": "2025-12-12T03:57:21.006680",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/constructs/lava_golem.lua": {
+    "data-otservbr-global/monster/humanoids/enslaved_dwarf.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -1509,10 +321,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:54:49.801837",
+      "completed_at": "2025-12-12T03:57:21.175565",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/constructs/gingerbread_men.lua": {
+    "data-otservbr-global/monster/humanoids/corym_skirmisher.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -1527,10 +339,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:54:49.951680",
+      "completed_at": "2025-12-12T03:57:21.348259",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/amphibics/green_frog.lua": {
+    "data-otservbr-global/monster/humanoids/minotaur_poacher.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -1545,730 +357,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T22:54:50.104261",
+      "completed_at": "2025-12-12T03:57:21.526518",
       "category": "monsters"
     },
-    "data-otservbr-global/raids/oramond/crustacea_gigantica_4.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:55:26.969727",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/oramond/crustacea_gigantica_5.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:55:27.129653",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/fury_gate/furyosa.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:55:27.300310",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/chayenne/chayenne.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:55:27.431382",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/raids.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:55:27.654327",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/roshamuul/omrafir.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:55:27.846118",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/roshamuul/gaz_haragoth.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:55:28.145479",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/carlin/yeti.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:55:28.356195",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/carlin/orc.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:55:28.494679",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/ankrahmun/gargoyle.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:55:28.662699",
-      "category": "raids"
-    },
-    "data/libs/functions/revscriptsys.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:57:03.015400",
-      "category": "libs"
-    },
-    "data/libs/functions/monstertype.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:57:03.083775",
-      "category": "libs"
-    },
-    "data/libs/functions/bit.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:57:03.148093",
-      "category": "libs"
-    },
-    "data/libs/functions/load.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:57:03.211173",
-      "category": "libs"
-    },
-    "data/libs/functions/set.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:57:03.275509",
-      "category": "libs"
-    },
-    "data/libs/functions/itemtype.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:57:03.356167",
-      "category": "libs"
-    },
-    "data/libs/libs.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:57:03.421700",
-      "category": "libs"
-    },
-    "data/libs/systems/hireling.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:57:03.681181",
-      "category": "libs"
-    },
-    "data/libs/systems/blessing.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:57:03.745725",
-      "category": "libs"
-    },
-    "data/libs/systems/daily_reward.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:57:03.815924",
-      "category": "libs"
-    },
-    "html_copy/admin/pages/menus.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:21.784141",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/open_source.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:21.903720",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/statistics.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:22.039744",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/changelog.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:22.184582",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/version.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:22.334941",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/players.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:22.802792",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/logs.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:22.945762",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/mass_account.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:23.087185",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/tools.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:23.231954",
-      "category": "quests"
-    },
-    "html_copy/admin/pages/visitors.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:23.356290",
-      "category": "quests"
-    },
-    "html_copy/system/templates/experience_stages.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:37.445629",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/buttons.change_sex.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:37.521945",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/admin.open_source.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:37.870061",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/buttons.register_account.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:37.958762",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/admin.reports.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:38.080351",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/guilds.manager.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:38.398183",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/buttons.change_name.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:38.472155",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/success.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:38.549997",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/news.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:38.722973",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/account.login.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T22:58:38.903869",
-      "category": "creaturescripts"
-    },
-    "data-otservbr-global/monster/amphibics/salamander.lua": {
+    "data-otservbr-global/monster/humanoids/elf_scout.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -2283,10 +375,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T23:55:43.894891",
+      "completed_at": "2025-12-12T03:57:21.729192",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/amphibics/infernal_frog.lua": {
+    "data-otservbr-global/monster/humanoids/pirat_cutthroat.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -2301,10 +393,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T23:55:44.249155",
+      "completed_at": "2025-12-12T03:57:21.915369",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/amphibics/orchid_frog.lua": {
+    "data-otservbr-global/monster/humanoids/execowtioner.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -2319,10 +411,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T23:55:44.703928",
+      "completed_at": "2025-12-12T03:57:22.146242",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/amphibics/azure_frog.lua": {
+    "data-otservbr-global/monster/humanoids/troll.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -2337,10 +429,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T23:55:44.995222",
+      "completed_at": "2025-12-12T03:57:22.368898",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/amphibics/deathspawn.lua": {
+    "data-otservbr-global/monster/humanoids/island_troll.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -2355,10 +447,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T23:55:45.177072",
+      "completed_at": "2025-12-12T03:57:22.720034",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/amphibics/bog_frog.lua": {
+    "data-otservbr-global/monster/humanoids/dwarf_henchman.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -2373,10 +465,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T23:55:45.344506",
+      "completed_at": "2025-12-12T03:57:22.929525",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/amphibics/makara.lua": {
+    "data-otservbr-global/monster/humanoids/firestarter.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -2391,10 +483,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T23:55:45.505548",
+      "completed_at": "2025-12-12T03:57:23.126564",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/amphibics/crimson_frog.lua": {
+    "data-otservbr-global/monster/humanoids/crazed_winter_vanguard.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -2409,10 +501,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T23:55:45.658318",
+      "completed_at": "2025-12-12T03:57:23.301355",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/amphibics/toad.lua": {
+    "data-otservbr-global/monster/humanoids/insane_siren.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -2427,10 +519,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T23:55:45.806494",
+      "completed_at": "2025-12-12T03:57:23.474182",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/amphibics/coral_frog.lua": {
+    "data-otservbr-global/monster/humanoids/swamp_troll.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -2445,730 +537,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-11T23:55:45.959566",
+      "completed_at": "2025-12-12T03:57:23.650852",
       "category": "monsters"
     },
-    "data-otservbr-global/raids/ankrahmun/nomad.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:56:12.741375",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/ankrahmun/cobra.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:56:12.862367",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/ankrahmun/bone_beast.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:56:12.985218",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/ankrahmun/terramite.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:56:13.104640",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/ankrahmun/scarab.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:56:13.222990",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/liberty_bay/crustacea_gigantica_1.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:56:13.340689",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/liberty_bay/undead_cavebear.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:56:13.467086",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/liberty_bay/tigers.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:56:13.592755",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/liberty_bay/morgaroth.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:56:13.716100",
-      "category": "raids"
-    },
-    "data-otservbr-global/raids/liberty_bay/crustacea_gigantica_2.xml": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "raids"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:56:13.839382",
-      "category": "raids"
-    },
-    "data/libs/systems/features.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:57:27.175473",
-      "category": "libs"
-    },
-    "data/libs/systems/concoctions.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:57:27.310818",
-      "category": "libs"
-    },
-    "data/libs/systems/exaltation_forge.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:57:27.575668",
-      "category": "libs"
-    },
-    "data/libs/systems/raids.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:57:27.662312",
-      "category": "libs"
-    },
-    "data/libs/systems/encounters.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:57:27.744789",
-      "category": "libs"
-    },
-    "data/libs/systems/reward_boss.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:57:27.833114",
-      "category": "libs"
-    },
-    "data/libs/systems/hazard.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:57:27.907350",
-      "category": "libs"
-    },
-    "data/libs/systems/zones.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:57:27.984225",
-      "category": "libs"
-    },
-    "data/libs/systems/familiar.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:57:28.112115",
-      "category": "libs"
-    },
-    "data/libs/systems/vip.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "libs"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:57:28.340943",
-      "category": "libs"
-    },
-    "html_copy/admin/pages/phpinfo.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:30.233422",
-      "category": "quests"
-    },
-    "html_copy/admin/includes/settings_menus.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:30.357523",
-      "category": "quests"
-    },
-    "html_copy/admin/includes/functions.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:30.489147",
-      "category": "quests"
-    },
-    "html_copy/admin/includes/debugbar.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:30.678626",
-      "category": "quests"
-    },
-    "html_copy/admin/tools/reload_data.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:31.156780",
-      "category": "quests"
-    },
-    "html_copy/admin/tools/settings_save.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:31.407335",
-      "category": "quests"
-    },
-    "html_copy/admin/tools/status.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:31.647169",
-      "category": "quests"
-    },
-    "html_copy/admin/tools/upload_image.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:31.872154",
-      "category": "quests"
-    },
-    "html_copy/admin/tools/phpinfo.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:32.000007",
-      "category": "quests"
-    },
-    "html_copy/admin/template/menus.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:32.153496",
-      "category": "quests"
-    },
-    "html_copy/system/templates/account.generate_new_recovery_key.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:44.056748",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/buttons.view.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:44.429093",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/account.change-info.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:44.675448",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/install.installer.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:44.819669",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/admin.logs.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:44.941808",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/account.lost.form.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:45.242207",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/guilds.back_button.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:45.383666",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/admin.pages.form.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:45.682072",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/serverinfo.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:46.051674",
-      "category": "creaturescripts"
-    },
-    "html_copy/system/templates/commands.form.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-11T23:58:46.298712",
-      "category": "creaturescripts"
-    },
-    "data-otservbr-global/monster/amphibics/filth_toad.lua": {
+    "data-otservbr-global/monster/humanoids/chakoya_windcaller.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -3183,10 +555,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:56:25.993266",
+      "completed_at": "2025-12-12T03:57:23.818440",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/slimes/midnight_spawn.lua": {
+    "data-otservbr-global/monster/humanoids/minotaur_occultist.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -3201,10 +573,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:56:26.227631",
+      "completed_at": "2025-12-12T03:57:23.987610",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/slimes/acid_blob.lua": {
+    "data-otservbr-global/monster/humanoids/goblin_assassin.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -3219,10 +591,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:56:26.478734",
+      "completed_at": "2025-12-12T03:57:24.138535",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/slimes/squidgy_slime.lua": {
+    "data-otservbr-global/monster/humanoids/bulltaur_brute.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -3237,10 +609,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:56:26.716245",
+      "completed_at": "2025-12-12T03:57:24.289597",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/slimes/devourer.lua": {
+    "data-otservbr-global/monster/humanoids/orc_marauder.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -3255,10 +627,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:56:26.979030",
+      "completed_at": "2025-12-12T03:57:26.284921",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/slimes/slime.lua": {
+    "data-otservbr-global/monster/humanoids/dwarf_geomancer.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -3273,10 +645,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:56:27.237638",
+      "completed_at": "2025-12-12T03:57:26.507065",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/slimes/mercury_blob.lua": {
+    "data-otservbr-global/monster/humanoids/chakoya_toolshaper.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -3291,10 +663,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:56:27.483631",
+      "completed_at": "2025-12-12T03:57:26.721923",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/slimes/glooth_blob.lua": {
+    "data-otservbr-global/monster/humanoids/orc_spearman.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -3309,10 +681,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:56:27.734655",
+      "completed_at": "2025-12-12T03:57:26.887469",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/slimes/death_blob.lua": {
+    "data-otservbr-global/monster/humanoids/minotaur_cult_zealot.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -3327,10 +699,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:56:27.973383",
+      "completed_at": "2025-12-12T03:57:27.081756",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/slimes/son_of_verminor.lua": {
+    "data-otservbr-global/monster/humanoids/dworc_voodoomaster.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -3345,14 +717,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:56:28.210100",
+      "completed_at": "2025-12-12T03:57:27.283262",
       "category": "monsters"
     },
-    "data-otservbr-global/raids/liberty_bay/ferumbras.xml": {
+    "data-otservbr-global/monster/humanoids/orc_rider.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "raids"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3363,14 +735,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:57:06.759438",
-      "category": "raids"
+      "completed_at": "2025-12-12T03:57:27.479230",
+      "category": "monsters"
     },
-    "data-otservbr-global/raids/liberty_bay/crustacea_gigantica_3.xml": {
+    "data-otservbr-global/monster/humanoids/troll_legionnaire.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "raids"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3381,14 +753,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:57:06.975084",
-      "category": "raids"
+      "completed_at": "2025-12-12T03:57:27.700400",
+      "category": "monsters"
     },
-    "data-otservbr-global/raids/liberty_bay/quaras.xml": {
+    "data-otservbr-global/monster/humanoids/minotaur.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "raids"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3399,14 +771,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:57:07.201745",
-      "category": "raids"
+      "completed_at": "2025-12-12T03:57:27.902581",
+      "category": "monsters"
     },
-    "data-otservbr-global/raids/liberty_bay/tortoises.xml": {
+    "data-otservbr-global/monster/humanoids/crazed_summer_vanguard.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "raids"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3417,14 +789,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:57:07.392971",
-      "category": "raids"
+      "completed_at": "2025-12-12T03:57:28.146922",
+      "category": "monsters"
     },
-    "data-otservbr-global/raids/liberty_bay/diblis_the_fair.xml": {
+    "data-otservbr-global/monster/humanoids/dwarf_miner.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "raids"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3435,14 +807,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:57:07.565995",
-      "category": "raids"
+      "completed_at": "2025-12-12T03:57:28.188497",
+      "category": "monsters"
     },
-    "data-otservbr-global/raids/venore/dharalion.xml": {
+    "data-otservbr-global/monster/humanoids/running_elite_orc_guard.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "raids"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3453,14 +825,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:57:07.755125",
-      "category": "raids"
+      "completed_at": "2025-12-12T03:57:28.402131",
+      "category": "monsters"
     },
-    "data-otservbr-global/raids/venore/undead.xml": {
+    "data-otservbr-global/monster/humanoids/minotaur_cult_follower.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "raids"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3471,14 +843,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:57:07.963929",
-      "category": "raids"
+      "completed_at": "2025-12-12T03:57:28.577465",
+      "category": "monsters"
     },
-    "data-otservbr-global/raids/venore/elves.xml": {
+    "data-otservbr-global/monster/humanoids/elite_pirat.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "raids"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3489,14 +861,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:57:08.216724",
-      "category": "raids"
+      "completed_at": "2025-12-12T03:57:28.754382",
+      "category": "monsters"
     },
-    "data-otservbr-global/raids/venore/the_old_widow.xml": {
+    "data-otservbr-global/monster/humanoids/elf_overseer.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "raids"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3507,14 +879,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:57:08.421985",
-      "category": "raids"
+      "completed_at": "2025-12-12T03:57:28.928685",
+      "category": "monsters"
     },
-    "data-otservbr-global/raids/venore/fernfang.xml": {
+    "data-otservbr-global/monster/humanoids/goblin.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "raids"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3525,14 +897,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:57:08.607342",
-      "category": "raids"
+      "completed_at": "2025-12-12T03:57:29.093438",
+      "category": "monsters"
     },
-    "data/libs/systems/load.lua": {
+    "data-otservbr-global/monster/humanoids/bulltaur_alchemist.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "libs"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3543,14 +915,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:58:30.932211",
-      "category": "libs"
+      "completed_at": "2025-12-12T03:57:29.259915",
+      "category": "monsters"
     },
-    "data/libs/server_i18n.lua": {
+    "data-otservbr-global/monster/humanoids/twisted_shaper.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "libs"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3561,14 +933,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:58:31.035249",
-      "category": "libs"
+      "completed_at": "2025-12-12T03:57:29.416935",
+      "category": "monsters"
     },
-    "data/libs/i18n_wrappers.lua": {
+    "data-otservbr-global/monster/humanoids/minotaur_archer.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "libs"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3579,14 +951,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:58:31.156160",
-      "category": "libs"
+      "completed_at": "2025-12-12T03:57:31.427033",
+      "category": "monsters"
     },
-    "data/libs/tables/doors.lua": {
+    "data-otservbr-global/monster/humanoids/orc_leader.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "libs"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3597,14 +969,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:58:31.256729",
-      "category": "libs"
+      "completed_at": "2025-12-12T03:57:31.614723",
+      "category": "monsters"
     },
-    "data/libs/tables/windows.lua": {
+    "data-otservbr-global/monster/humanoids/minotaur_cult_prophet.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "libs"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3615,14 +987,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:58:31.364888",
-      "category": "libs"
+      "completed_at": "2025-12-12T03:57:31.794739",
+      "category": "monsters"
     },
-    "data/libs/tables/load.lua": {
+    "data-otservbr-global/monster/humanoids/orc_berserker.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "libs"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3633,194 +1005,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:58:31.474586",
-      "category": "libs"
+      "completed_at": "2025-12-12T03:57:31.973833",
+      "category": "monsters"
     },
-    "html_copy/admin/template/template.php": {
+    "data-otservbr-global/monster/humanoids/corym_charlatan.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:39.407753",
-      "category": "quests"
-    },
-    "html_copy/admin/index.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:39.548325",
-      "category": "quests"
-    },
-    "html_copy/system/exception.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:39.728184",
-      "category": "quests"
-    },
-    "html_copy/system/countries.conf.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:39.828792",
-      "category": "quests"
-    },
-    "html_copy/system/get_version_for_release.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:39.933448",
-      "category": "quests"
-    },
-    "html_copy/system/locale.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:40.035940",
-      "category": "quests"
-    },
-    "html_copy/system/migrate.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:40.139719",
-      "category": "quests"
-    },
-    "html_copy/system/compat/classes.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:40.244929",
-      "category": "quests"
-    },
-    "html_copy/system/compat/config.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:40.353255",
-      "category": "quests"
-    },
-    "html_copy/system/compat/base.php": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "quests"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 0
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:40.460634",
-      "category": "quests"
-    },
-    "html_copy/system/templates/spells.html.twig": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "creaturescripts"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3831,14 +1023,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:48.812322",
-      "category": "creaturescripts"
+      "completed_at": "2025-12-12T03:57:32.151584",
+      "category": "monsters"
     },
-    "html_copy/system/templates/google_analytics.html.twig": {
+    "data-otservbr-global/monster/humanoids/dworc_venomsniper.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "creaturescripts"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3849,14 +1041,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:48.877574",
-      "category": "creaturescripts"
+      "completed_at": "2025-12-12T03:57:32.345941",
+      "category": "monsters"
     },
-    "html_copy/system/templates/admin.plugins.form.html.twig": {
+    "data-otservbr-global/monster/humanoids/furious_orc_berserker.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "creaturescripts"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3867,14 +1059,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:48.954611",
-      "category": "creaturescripts"
+      "completed_at": "2025-12-12T03:57:32.631823",
+      "category": "monsters"
     },
-    "html_copy/system/templates/index.html": {
+    "data-otservbr-global/monster/humanoids/troll_guard.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "creaturescripts"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3885,14 +1077,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:49.016646",
-      "category": "creaturescripts"
+      "completed_at": "2025-12-12T03:57:32.865493",
+      "category": "monsters"
     },
-    "html_copy/system/templates/tables.headline.html.twig": {
+    "data-otservbr-global/monster/humanoids/elf.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "creaturescripts"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3903,14 +1095,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:49.086113",
-      "category": "creaturescripts"
+      "completed_at": "2025-12-12T03:57:33.090257",
+      "category": "monsters"
     },
-    "html_copy/system/templates/monsters.html.twig": {
+    "data-otservbr-global/monster/humanoids/orc_warlord.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "creaturescripts"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3921,14 +1113,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:49.364670",
-      "category": "creaturescripts"
+      "completed_at": "2025-12-12T03:57:33.299565",
+      "category": "monsters"
     },
-    "html_copy/system/templates/account.management.html.twig": {
+    "data-otservbr-global/monster/humanoids/troll_champion.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "creaturescripts"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3939,14 +1131,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:49.634779",
-      "category": "creaturescripts"
+      "completed_at": "2025-12-12T03:57:33.468947",
+      "category": "monsters"
     },
-    "html_copy/system/templates/buttons.account_lost.html.twig": {
+    "data-otservbr-global/monster/humanoids/bulltaur_forgepriest.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "creaturescripts"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3957,14 +1149,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:49.714697",
-      "category": "creaturescripts"
+      "completed_at": "2025-12-12T03:57:33.605007",
+      "category": "monsters"
     },
-    "html_copy/system/templates/characters.form.html.twig": {
+    "data-otservbr-global/monster/humanoids/furious_troll.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "creaturescripts"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3975,14 +1167,14 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:49.777506",
-      "category": "creaturescripts"
+      "completed_at": "2025-12-12T03:57:33.828662",
+      "category": "monsters"
     },
-    "html_copy/system/templates/install.admin.html.twig": {
+    "data-otservbr-global/monster/humanoids/minotaur_invader.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
-          "type": "creaturescripts"
+          "type": "monsters"
         },
         "5_extraction_en": {
           "status": "completed",
@@ -3993,12 +1185,156 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T01:59:49.923982",
-      "category": "creaturescripts"
+      "completed_at": "2025-12-12T03:57:34.029611",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/humanoids/glooth_powered_minotaur.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:34.211975",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/humanoids/minotaur_hunter.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:34.388324",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/humanoids/chakoya_tribewarden.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:34.532081",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/humanoids/moohtant.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:34.724444",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/humanoids/lost_berserker.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:36.693404",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/humanoids/little_corym_charlatan.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:36.877187",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/humanoids/worm_priestess.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:37.090425",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/humanoids/lost_husher.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:57:37.280006",
+      "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 222,
+    "files_completed": 74,
     "total_keys": 0
   }
 }

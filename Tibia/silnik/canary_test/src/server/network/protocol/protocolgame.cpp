@@ -4811,6 +4811,55 @@ void ProtocolGame::sendTextMessage(const TextMessage &message) {
 	writeToOutputBuffer(msg);
 }
 
+// I18N: Send localized text message with i18nKey for client-side translation
+// Opcode 0xBC (188) - GameServerLocalizedTextMessage
+void ProtocolGame::sendLocalizedTextMessage(const LocalizedTextMessage &message) {
+	if (message.type == MESSAGE_NONE) {
+		g_logger().error("[ProtocolGame::sendLocalizedTextMessage] - Message type is wrong for player {}", player->getName());
+		return;
+	}
+
+	NetworkMessage msg;
+	msg.addByte(0xBC);  // New opcode for localized messages
+	msg.addByte(message.type);
+	
+	// Add position/channel data based on message type (same as sendTextMessage)
+	switch (message.type) {
+		case MESSAGE_DAMAGE_DEALT:
+		case MESSAGE_DAMAGE_RECEIVED:
+		case MESSAGE_DAMAGE_OTHERS:
+			msg.addPosition(message.position);
+			msg.add<uint32_t>(message.primary.value);
+			msg.addByte(message.primary.color);
+			msg.add<uint32_t>(message.secondary.value);
+			msg.addByte(message.secondary.color);
+			break;
+		case MESSAGE_HEALED:
+		case MESSAGE_HEALED_OTHERS:
+			msg.addPosition(message.position);
+			msg.add<uint32_t>(message.primary.value);
+			msg.addByte(message.primary.color);
+			break;
+		case MESSAGE_EXPERIENCE:
+		case MESSAGE_EXPERIENCE_OTHERS:
+			msg.addPosition(message.position);
+			msg.add<uint64_t>(message.primary.value);
+			msg.addByte(message.primary.color);
+			break;
+		case MESSAGE_GUILD:
+		case MESSAGE_PARTY_MANAGEMENT:
+		case MESSAGE_PARTY:
+			msg.add<uint16_t>(message.channelId);
+			break;
+		default:
+			break;
+	}
+	
+	msg.addString(message.text);      // Fallback text (for old clients or missing translations)
+	msg.addString(message.i18nKey);   // Translation key for client-side lookup
+	writeToOutputBuffer(msg);
+}
+
 void ProtocolGame::sendClosePrivate(uint16_t channelId) {
 	NetworkMessage msg;
 	msg.addByte(0xB3);

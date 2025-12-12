@@ -408,6 +408,9 @@ void ProtocolGame::parseMessage(const InputMessagePtr& msg)
                 case Proto::GameServerTextMessage:
                     parseTextMessage(msg);
                     break;
+                case Proto::GameServerLocalizedTextMessage:
+                    parseLocalizedTextMessage(msg);
+                    break;
                 case Proto::GameServerCancelWalk:
                     parseCancelWalk(msg);
                     break;
@@ -2748,6 +2751,112 @@ void ProtocolGame::parseTextMessage(const InputMessagePtr& msg)
     }
 
     g_game.processTextMessage(mode, text);
+}
+
+// I18N: Parse localized text message with translation key from server
+void ProtocolGame::parseLocalizedTextMessage(const InputMessagePtr& msg)
+{
+    const uint8_t code = msg->getU8();
+    const Otc::MessageMode mode = Proto::translateMessageModeFromServer(code);
+    std::string text;
+    std::string i18nKey;
+
+    g_logger.debug("[ProtocolGame::parseLocalizedTextMessage] code: {}, mode: {}", code, std::to_string(mode));
+
+    // Parse additional data based on message type (same as parseTextMessage)
+    switch (mode) {
+        case Otc::MessageChannelManagement:
+            msg->getU16(); // channelId
+            text = msg->getString();
+            break;
+        case Otc::MessageGuild:
+        case Otc::MessagePartyManagement:
+        case Otc::MessageParty:
+        {
+            msg->getU16(); // channelId
+            text = msg->getString();
+            break;
+        }
+        case Otc::MessageDamageDealed:
+        case Otc::MessageDamageReceived:
+        case Otc::MessageDamageOthers:
+        {
+            const auto& pos = getPosition(msg);
+            std::array<uint32_t, 2> value{};
+            std::array<uint8_t, 2> color{};
+
+            value[0] = msg->getU32();
+            color[0] = msg->getU8();
+            value[1] = msg->getU32();
+            color[1] = msg->getU8();
+            text = msg->getString();
+
+            for (auto j = 0; j < 2; j++) {
+                if (value[j] == 0) continue;
+                g_map.addAnimatedText(std::make_shared<AnimatedText>(std::to_string(value[j]), color[j]), pos);
+            }
+            break;
+        }
+        case Otc::MessageHeal:
+        case Otc::MessageMana:
+        case Otc::MessageHealOthers:
+        {
+            const auto& pos = getPosition(msg);
+            const uint32_t value = msg->getU32();
+            const uint8_t color = msg->getU8();
+            text = msg->getString();
+
+            g_map.addAnimatedText(std::make_shared<AnimatedText>(std::to_string(value), color), pos);
+            break;
+        }
+        case Otc::MessageExp:
+        case Otc::MessageExpOthers:
+        {
+            const auto& pos = getPosition(msg);
+            const uint64_t value = g_game.getClientVersion() >= 1332 ? msg->getU64() : msg->getU32();
+            const uint8_t color = msg->getU8();
+            text = msg->getString();
+
+            g_map.addAnimatedText(std::make_shared<AnimatedText>(std::to_string(value), color), pos);
+            break;
+        }
+        case Otc::MessageInvalid:
+            throw Exception("ProtocolGame::parseLocalizedTextMessage: unknown message mode {}", code);
+        default:
+            break;
+    }
+
+    // Read fallback text if not already read
+    if (text.empty()) {
+        text = msg->getString();
+    }
+    
+    // Read the i18n translation key
+    i18nKey = msg->getString();
+
+    // Try to translate using client's locale system
+    // The tr() function will return the translation if found, or the key itself if not found
+    std::string translatedText = text;
+    if (!i18nKey.empty()) {
+        // Call Lua tr() function to get translation
+        // g_lua.callGlobalField returns the translated string or the key if no translation
+        try {
+            translatedText = g_lua.callGlobalField<std::string>("", "tr", i18nKey);
+            // If tr() returned the same key (no translation found), use fallback text
+            if (translatedText == i18nKey) {
+                translatedText = text;
+                g_logger.debug("[I18N] No translation for key '{}', using fallback: '{}'", i18nKey, text);
+            } else {
+                g_logger.debug("[I18N] Translated '{}' -> '{}'", i18nKey, translatedText);
+            }
+        } catch (...) {
+            // If tr() fails, use fallback text
+            translatedText = text;
+            g_logger.warning("[I18N] Failed to call tr() for key '{}', using fallback", i18nKey);
+        }
+    }
+
+    g_game.processTextMessage(mode, translatedText);
 }
 
 void ProtocolGame::parseCancelWalk(const InputMessagePtr& msg)

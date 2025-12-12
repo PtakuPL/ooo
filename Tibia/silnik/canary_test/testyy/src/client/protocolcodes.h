@@ -168,6 +168,7 @@ namespace Proto
         GameServerBestiaryRefreshTracker = 185,
         GameServerTaskHuntingBasicData = 186,
         GameServerTaskHuntingData = 187,
+        GameServerLocalizedTextMessage = 188,  // I18N: text message with translation key
         GameServerBosstiaryCooldownTimer = 189,
         GameServerFloorChangeUp = 190,
         GameServerFloorChangeDown = 191,

@@ -719,10 +719,298 @@
       "overall_status": "completed",
       "completed_at": "2025-12-12T03:59:21.577266",
       "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/animated_sword.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:21.769419",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/lost_time.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:22.005865",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/dragon_egg.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:22.208471",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/thorn_minion.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:22.403032",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/frozen_man.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:22.622099",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/unbound_blightwalker.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:22.844571",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/cosmic_energy_prism_b.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:23.081761",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/the_distorted_astral_source.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:23.306483",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/frozen_minion.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:23.496641",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/cosmic_energy_prism_c.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:23.659955",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/cosmic_energy_prism_d_invu.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:23.842074",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/unbound_demon.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:24.012784",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/cosmic_energy_prism_a.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:24.169128",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/time_keeper.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:24.320632",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/cosmic_energy_prism_b_invu.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:24.484991",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/cosmic_energy_prism_d.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:24.646629",
+      "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 40,
+    "files_completed": 56,
     "total_keys": 0
   }
 }

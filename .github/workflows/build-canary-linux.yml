@@ -132,3 +132,4 @@ jobs:
         run: |
           cd build/${{ matrix.buildtype }}
           if ctest -N -R integration | grep -q "Test #"; then ctest -V -R integration; else echo "No integration tests."; fi
+          if ctest -N -R integration | grep -q "Test #"; then ctest -V -R integration; else echo "No integration tests."; fi

@@ -1122,3 +1122,13 @@ data-otservbr-global/monster/quests/the_secret_library/rift_spawn.lua
 data-otservbr-global/monster/quests/the_secret_library/stolen_knowledge_of_summoning.lua
 data-otservbr-global/monster/quests/the_secret_library/ghulosh'_deathgaze.lua
 data-otservbr-global/monster/quests/the_secret_library/rift_breacher.lua
+data-otservbr-global/monster/quests/the_secret_library/concentrated_death.lua
+data-otservbr-global/monster/quests/the_secret_library/neutral_deepling_warrior.lua
+data-otservbr-global/monster/quests/the_secret_library/yalahari_despoiler.lua
+data-otservbr-global/monster/quests/the_secret_library/dark_knowledge.lua
+data-otservbr-global/monster/quests/the_secret_library/the_devourer_of_secrets.lua
+data-otservbr-global/monster/quests/the_secret_library/stolen_knowledge_of_healing.lua
+data-otservbr-global/monster/quests/the_secret_library/stolen_knowledge_of_spells.lua
+data-otservbr-global/monster/quests/the_secret_library/the_scion_of_havoc.lua
+data-otservbr-global/monster/quests/the_secret_library/mean_minion.lua
+data-otservbr-global/monster/quests/the_secret_library/librarian.lua

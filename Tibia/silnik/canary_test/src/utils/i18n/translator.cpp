@@ -76,7 +76,7 @@ void Translator::setSearchPaths(std::vector<std::filesystem::path> paths) {
 		normalized.assign(DEFAULT_SEARCH_PATHS.begin(), DEFAULT_SEARCH_PATHS.end());
 	}
 
-	std::unique_lock lock(mutex);  // Exclusive lock for write
+	std::scoped_lock lock(mutex);
 	searchPaths = std::move(normalized);
 	locales.clear();
 }
@@ -86,7 +86,7 @@ void Translator::setFallbackLocale(std::string locale) {
 		return;
 	}
 
-	std::unique_lock lock(mutex);  // Exclusive lock for write
+	std::scoped_lock lock(mutex);
 	fallbackLocale = std::move(locale);
 }
 
@@ -99,12 +99,12 @@ void Translator::loadLocale(const std::string &locale) const {
 		return;
 	}
 
-	std::unique_lock lock(mutex);  // Exclusive lock for write (loading)
+	std::scoped_lock lock(mutex);
 	loadLocaleUnlocked(locale);
 }
 
 bool Translator::isLocaleLoaded(const std::string &locale) const {
-	std::shared_lock lock(mutex);  // Shared lock for read
+	std::scoped_lock lock(mutex);
 	const auto it = locales.find(locale);
 	return it != locales.end() && it->second.loaded;
 }
@@ -126,7 +126,7 @@ std::string Translator::format(const std::string &key, const std::string &locale
 
 	std::string translation;
 	{
-		std::shared_lock lock(mutex);  // Shared lock for read - multiple readers allowed!
+		std::scoped_lock lock(mutex);
 		translation = lookupUnlocked(resolvedLocale, key);
 		if (translation.empty() && resolvedLocale != fallbackLocale) {
 			translation = lookupUnlocked(fallbackLocale, key);
@@ -164,18 +164,7 @@ void Translator::ensureLocaleLoaded(const std::string &locale) const {
 		return;
 	}
 
-	// First check with shared lock (fast path - read only)
-	{
-		std::shared_lock readLock(mutex);
-		const auto it = locales.find(locale);
-		if (it != locales.end() && it->second.loaded) {
-			return;  // Already loaded, no need for exclusive lock
-		}
-	}
-
-	// Need to load - acquire exclusive lock
-	std::unique_lock writeLock(mutex);
-	// Double-check after acquiring exclusive lock (another thread might have loaded it)
+	std::scoped_lock lock(mutex);
 	const auto it = locales.find(locale);
 	if (it != locales.end() && it->second.loaded) {
 		return;

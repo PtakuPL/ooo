@@ -3,7 +3,6 @@
 #include <chrono>
 #include <filesystem>
 #include <mutex>
-#include <shared_mutex>
 #include <string>
 #include <string_view>
 #include <unordered_map>
@@ -47,7 +46,7 @@ private:
 	};
 
 	mutable std::unordered_map<std::string, LocaleStore> locales;
-	mutable std::shared_mutex mutex;  // Changed to shared_mutex for read-write lock
+	mutable std::mutex mutex;
 	std::vector<std::filesystem::path> searchPaths;
 	std::string fallbackLocale = "en";
 };

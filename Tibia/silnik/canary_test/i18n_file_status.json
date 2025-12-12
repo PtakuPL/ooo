@@ -2285,10 +2285,82 @@
       "overall_status": "completed",
       "completed_at": "2025-12-12T04:01:24.737137",
       "category": "monsters"
+    },
+    "data-otservbr-global/monster/mammals/hot_dog.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:26.727955",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/mammals/grey_horse.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:26.866632",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/mammals/mushroom_sniffer.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:27.028903",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/mammals/mutated_bat.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:27.165089",
+      "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 127,
+    "files_completed": 131,
     "total_keys": 0
   }
 }

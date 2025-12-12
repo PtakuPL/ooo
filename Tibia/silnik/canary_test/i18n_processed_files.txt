@@ -1489,3 +1489,8 @@ data-otservbr-global/monster/mammals/war_wolf.lua
 data-otservbr-global/monster/mammals/wild_horse.lua
 data-otservbr-global/monster/mammals/bat.lua
 data-otservbr-global/monster/mammals/doom_deer.lua
+data-otservbr-global/monster/mammals/hot_dog.lua
+data-otservbr-global/monster/mammals/grey_horse.lua
+data-otservbr-global/monster/mammals/mushroom_sniffer.lua
+data-otservbr-global/monster/mammals/mutated_bat.lua
+data-otservbr-global/monster/mammals/enraged_white_deer.lua

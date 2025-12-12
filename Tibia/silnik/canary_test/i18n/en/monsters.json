@@ -234,5 +234,15 @@
   "monster.bat.name": "Bat",
   "monster.bat.desc": "a bat",
   "monster.doom_deer.name": "Doom Deer",
-  "monster.doom_deer.desc": "a doom deer"
+  "monster.doom_deer.desc": "a doom deer",
+  "monster.hot_dog.name": "Hot Dog",
+  "monster.hot_dog.desc": "a hot dog",
+  "monster.grey_horse.name": "Grey Horse",
+  "monster.grey_horse.desc": "a horse",
+  "monster.mushroom_sniffer.name": "Mushroom Sniffer",
+  "monster.mushroom_sniffer.desc": "a mushroom sniffer",
+  "monster.mutated_bat.name": "Mutated Bat",
+  "monster.mutated_bat.desc": "a mutated bat",
+  "monster.enraged_white_deer.name": "Enraged White Deer",
+  "monster.enraged_white_deer.desc": "an enraged white deer"
 }

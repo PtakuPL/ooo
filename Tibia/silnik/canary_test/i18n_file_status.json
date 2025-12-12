@@ -3527,10 +3527,118 @@
       "overall_status": "completed",
       "completed_at": "2025-12-12T01:57:08.607342",
       "category": "raids"
+    },
+    "data/libs/systems/load.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:58:30.932211",
+      "category": "libs"
+    },
+    "data/libs/server_i18n.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:58:31.035249",
+      "category": "libs"
+    },
+    "data/libs/i18n_wrappers.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:58:31.156160",
+      "category": "libs"
+    },
+    "data/libs/tables/doors.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:58:31.256729",
+      "category": "libs"
+    },
+    "data/libs/tables/windows.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:58:31.364888",
+      "category": "libs"
+    },
+    "data/libs/tables/load.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "libs"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T01:58:31.474586",
+      "category": "libs"
     }
   },
   "global_stats": {
-    "files_completed": 196,
+    "files_completed": 202,
     "total_keys": 0
   }
 }

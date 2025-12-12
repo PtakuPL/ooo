@@ -514,3 +514,9 @@ data-otservbr-global/raids/venore/undead.xml
 data-otservbr-global/raids/venore/elves.xml
 data-otservbr-global/raids/venore/the_old_widow.xml
 data-otservbr-global/raids/venore/fernfang.xml
+data/libs/systems/load.lua
+data/libs/server_i18n.lua
+data/libs/i18n_wrappers.lua
+data/libs/tables/doors.lua
+data/libs/tables/windows.lua
+data/libs/tables/load.lua

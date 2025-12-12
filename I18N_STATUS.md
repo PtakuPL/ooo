@@ -2,8 +2,8 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-12 03:57:41 UTC  
-> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 21680
+> **Aktualizacja:** 2025-12-12 03:57:42 UTC  
+> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 21684
 
 ---
 
@@ -43,7 +43,7 @@
 ### ✅ Status Migracji
 | Status | Ilość | Procent | Opis |
 |--------|-------|---------|------|
-| ✅ Zmigrowane | **10** | 1.6% | mają klucze i18n |
+| ✅ Zmigrowane | **12** | 1.9% | mają klucze i18n |
 | 🔄 Wymaga migracji | **0** | - | trzeba dodać i18n |
 | ⚪ Czyste | **0** | - | bez tekstów |
 | 🔧 W trakcie | **0** | - | obecnie przetwarzane |
@@ -51,10 +51,10 @@
 ### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔑 **Klucze EN (źródłowe)** | **21,680** | wszystkie kategorie |
+| 🔑 **Klucze EN (źródłowe)** | **21,684** | wszystkie kategorie |
 | 📊 NPC | 5,339 | dialogi NPC |
 | 📊 Items | 13,749 | przedmioty |
-| 📊 Monsters | 164 | potwory |
+| 📊 Monsters | 168 | potwory |
 | 📊 HTML | 1,495 | widoki web |
 | 📊 Pozostałe | 933 | scripts, spells, etc. |
 
@@ -70,7 +70,7 @@
 | Metryka | Wartość | Info |
 |---------|---------|------|
 | 🔄 Cykl aktualny | **#103** | od uruchomienia |
-| 🔑 Kluczy wyekstrahowanych | **10** | w tej sesji |
+| 🔑 Kluczy wyekstrahowanych | **12** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
 ---
@@ -111,7 +111,7 @@
 | 🧙 NPC Dialogs | 🔄 | 5339/15000 (36%) | 15000 |
 | 📜 Lua Scripts | 🔄 | 97/1000 (10%) | 1000 |
 | 🎒 Items Database | 🔄 | 13749/40000 (34%) | 40000 |
-| 👹 Monsters | 🔄 | 164/5000 (3%) | 5000 |
+| 👹 Monsters | 🔄 | 168/5000 (3%) | 5000 |
 | ✨ Spells & Magic | 🔄 | 304/400 (76%) | 400 |
 | ⚙️ Server C++ | ⏳ | 0/300 (0%) | 300 |
 
@@ -177,10 +177,10 @@
 │ Kategoria: 📁 MONSTERS                               │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Pliki przeskanowane:     12 (wszystkie kategorie)          │
-│    ├─ Kategoria MONSTERS:    164 kluczy EN                    │
-│    └─ Total kluczy EN:  21680                                 │
+│    ├─ Kategoria MONSTERS:    168 kluczy EN                    │
+│    └─ Total kluczy EN:  21684                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-12 03:57:41            │
+│ 📅 Ostatnia aktualizacja: 2025-12-12 03:57:42            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -190,10 +190,10 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **10** | w tej sesji |
-| ✅ Plików z kluczami | **10** | zawierały hardcoded strings |
+| 📁 Plików przeskanowanych | **12** | w tej sesji |
+| ✅ Plików z kluczami | **12** | zawierały hardcoded strings |
 | ⬜ Plików bez kluczy | **0** | czyste (brak hardcoded) |
-| 🔑 Kluczy wyciągniętych | **10** | przez workera w tej sesji |
+| 🔑 Kluczy wyciągniętych | **12** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
 | 🔄 Cykli wykonanych | **#103** | continuous mode |
 
@@ -201,7 +201,7 @@
 
 ## 📜 Historia ostatnich operacji
 
-- 👹 `monsters` +14443 kluczy @ 03:57:39
+- 👹 `monsters` +262 kluczy @ 03:57:40
 - 📜 `scripts` +0 kluczy @ 03:57:06
 - 🧙 `npc` +0 kluczy @ 03:54:45
 - ⚡ `errors` +0 kluczy @ 02:00:23
@@ -256,7 +256,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 164 |
+| 🔑 Kluczy | 168 |
 | 🎯 Cel | 5000 |
 | 📊 Postęp | 3% |
 | 📁 Plik | i18n/en/monsters.json |
@@ -373,7 +373,7 @@
 | html | 1495 | 0 | 8 | ⏭️ Skip 2m |
 | spells | 304 | 0 | 2 | ✅ Active |
 | client | 242 | 0 | 0 | ✅ Active |
-| monsters | 164 | 50421 | 0 | ✅ Active |
+| monsters | 168 | 50783 | 0 | ✅ Active |
 | raids | 147 | 0 | 8 | ✅ Active |
 | scripts | 97 | 0 | 16 | ⏭️ Skip 119m |
 | php | 59 | 0 | 8 | ⏭️ Skip 1m |
@@ -383,7 +383,7 @@
 | example_merchant | 14 | 0 | 0 | ✅ Active |
 | messages | 11 | 0 | 0 | ✅ Active |
 | chatchannels | 8 | 0 | 8 | ⏭️ Skip 1m |
-| events | 5 | 0 | 8 | ⏭️ Skip 1m |
+| events | 5 | 0 | 8 | ⏭️ Skip 0m |
 | actions | 0 | 0 | 8 | ⏳ Empty |
 | cpp | 0 | 0 | 2 | ⏳ Empty |
 | errors | 0 | 0 | 8 | ⏭️ Skip 2m |
@@ -401,13 +401,12 @@
 |-----------|----------------|-----------|-------|
 | npc | 117m | 14x | Progresywny backoff |
 | scripts | 119m | 16x | Progresywny backoff |
-| movements | 0m | 8x | Progresywny backoff |
 | creaturescripts | 0m | 8x | Progresywny backoff |
 | globalevents | 0m | 8x | Progresywny backoff |
 | items | 0m | 8x | Progresywny backoff |
 | mounts | 0m | 8x | Progresywny backoff |
 | libs | 0m | 8x | Progresywny backoff |
-| events | 1m | 8x | Progresywny backoff |
+| events | 0m | 8x | Progresywny backoff |
 | chatchannels | 1m | 8x | Progresywny backoff |
 | modules | 1m | 8x | Progresywny backoff |
 | startup | 1m | 8x | Progresywny backoff |
@@ -460,7 +459,7 @@
 | 🎒 Items | 13749 | ██████░░░░░░░░░░░░░░ | 40000 | 🔄 34% |
 | 🧙 NPC | 5339 | ███████░░░░░░░░░░░░░ | 15000 | 🔄 36% |
 | 📜 Scripts | 97 | █░░░░░░░░░░░░░░░░░░░ | 1000 | 🔄 10% |
-| 👹 Monsters | 164 | ░░░░░░░░░░░░░░░░░░░░ | 5000 | 🔄 3% |
+| 👹 Monsters | 168 | ░░░░░░░░░░░░░░░░░░░░ | 5000 | 🔄 3% |
 | ✨ Spells | 304 | ███████████████░░░░░ | 400 | 🔄 76% |
 | ⚙️ Server | 0 | ░░░░░░░░░░░░░░░░░░░░ | 300 | ⏳ 0% |
 | 🖥️ System | 0 | ░░░░░░░░░░░░░░░░░░░░ | 2000 | ⏳ 0% |
@@ -469,13 +468,15 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 03:57:41  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 03:57:42  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
+- ✅ `animated_ogre_shaman` - ukończono 2025-12-12 03:57
+- ✅ `orc_cult_priest` - ukończono 2025-12-12 03:57
 - ✅ `cult_scholar` - ukończono 2025-12-12 03:57
 - ✅ `elf_arcanist` - ukończono 2025-12-12 03:57
 - ✅ `crazed_summer_rearguard` - ukończono 2025-12-12 03:57
@@ -484,8 +485,6 @@
 - ✅ `dwarf` - ukończono 2025-12-12 03:57
 - ✅ `orc_shaman` - ukończono 2025-12-12 03:57
 - ✅ `young_troll` - ukończono 2025-12-12 03:57
-- ✅ `orc` - ukończono 2025-12-12 03:57
-- ✅ `soul-broken_harbinger` - ukończono 2025-12-12 03:57
 
 ---
 

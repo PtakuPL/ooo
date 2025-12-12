@@ -15,6 +15,8 @@ permissions:
 env:
   CMAKE_BUILD_PARALLEL_LEVEL: 4
   MAKEFLAGS: '-j 4'
+  # Use a recent vcpkg tool commit to avoid stale MSYS2 package URLs on Windows.
+  VCPKG_TOOL_COMMIT: cf6692675e04c036e21f26d64ae5fa3c8485f224
   VCPKG_FEATURE_FLAGS: manifests,binarycaching
   VCPKG_BINARY_SOURCES: clear;x-gha,readwrite
   VCPKG_BUILD_TYPE: release
@@ -51,14 +53,6 @@ jobs:
         with:
           arch: x64
 
-      - name: Get vcpkg commit ID
-        id: vcpkg-step
-        shell: pwsh
-        run: |
-          $json = Get-Content vcpkg.json -Raw | ConvertFrom-Json
-          $commit = $json.'builtin-baseline'
-          echo "vcpkgGitCommitId=$commit" >> $env:GITHUB_OUTPUT
-
       - name: Cache vcpkg artifacts
         uses: actions/cache@v4
         with:
@@ -89,7 +83,7 @@ jobs:
       - name: Install vcpkg
         uses: lukka/run-vcpkg@v11
         with:
-          vcpkgGitCommitId: ${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}
+          vcpkgGitCommitId: ${{ env.VCPKG_TOOL_COMMIT }}
 
       - name: Setup CMake + Ninja
         uses: lukka/get-cmake@latest

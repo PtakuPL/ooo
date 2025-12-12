@@ -1966,3 +1966,11 @@ data-otservbr-global/monster/magicals/phantasm.lua
 data-otservbr-global/monster/magicals/manticore.lua
 data-otservbr-global/monster/bosses/diseased_fred.lua
 data-otservbr-global/monster/bosses/splasher.lua
+data-otservbr-global/monster/bosses/smuggler_baron_silvertoe.lua
+data-otservbr-global/monster/bosses/koshei_the_deathless.lua
+data-otservbr-global/monster/bosses/heoni.lua
+data-otservbr-global/monster/bosses/weakened_demon.lua
+data-otservbr-global/monster/bosses/incredibly_old_witch.lua
+data-otservbr-global/monster/bosses/the_first_dragon.lua
+data-otservbr-global/monster/bosses/alchemist_container.lua
+data-otservbr-global/monster/bosses/black_knight.lua

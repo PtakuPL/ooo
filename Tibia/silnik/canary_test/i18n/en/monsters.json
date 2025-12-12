@@ -10,5 +10,21 @@
   "monster.diseased_fred.name": "Diseased Fred",
   "monster.diseased_fred.desc": "Diseased Fred",
   "monster.splasher.name": "Splasher",
-  "monster.splasher.desc": "Splasher"
+  "monster.splasher.desc": "Splasher",
+  "monster.smuggler_baron_silvertoe.name": "Smuggler Baron Silvertoe",
+  "monster.smuggler_baron_silvertoe.desc": "Smuggler Baron Silvertoe",
+  "monster.koshei_the_deathless.name": "Koshei the Deathless",
+  "monster.koshei_the_deathless.desc": "Koshei the Deathless",
+  "monster.heoni.name": "Heoni",
+  "monster.heoni.desc": "Heoni",
+  "monster.weakened_demon.name": "Weakened Demon",
+  "monster.weakened_demon.desc": "a weakened demon",
+  "monster.incredibly_old_witch.name": "Incredibly Old Witch",
+  "monster.incredibly_old_witch.desc": "an incredibly old witch",
+  "monster.the_first_dragon.name": "The First Dragon",
+  "monster.the_first_dragon.desc": "the first dragon",
+  "monster.alchemist_container.name": "Alchemist Container",
+  "monster.alchemist_container.desc": "Alchemist Container",
+  "monster.black_knight.name": "Black Knight",
+  "monster.black_knight.desc": "Black Knight"
 }

@@ -485,10 +485,748 @@
       "overall_status": "completed",
       "completed_at": "2025-12-12T04:00:56.974455",
       "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/ripper_spectre.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:00.856441",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/tomb_servant.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:00.939083",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/flimsy_lost_soul.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:01.506838",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/honour_guard.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:01.739867",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/vampire_viscount.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:01.924360",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/freakish_lost_soul.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:02.123493",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/demon_skeleton.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:02.362310",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/cursed_ape.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:02.735533",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/banshee.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:03.102083",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/vicious_manbat.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:03.368133",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/gravedigger.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:04.246120",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/pirate_skeleton.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:04.428289",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/lost_soul.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:04.588009",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/iks_aucar.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:04.714663",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/souleater.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:04.872979",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/rot_elemental.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:05.013433",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/undead_dragon.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:05.128987",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/undeads/blood_beast.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:05.264253",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/captain_jones.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:05.392388",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/orc_shield.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:05.570439",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/spyrat_facing_west.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:06.758770",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/arachir_the_ancient_one.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:06.938279",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/brutus_bloodbeard.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:07.113353",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/yakchal.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:07.321634",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/mawhawk.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:07.557839",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/orc_armor.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:07.716399",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/egg_the_welter.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:07.865222",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/rottie_the_rotworm.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:08.003178",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/grorlam.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:08.149882",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/deadeye_devious.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:08.378826",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/giant_spider_wyda.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:08.491081",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/tyrn.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:08.887598",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/ocyakao.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:09.058368",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/spyrat_facing_east.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:09.498201",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/spawn_of_the_welter.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:09.718539",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/necropharus.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:09.901491",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/glooth_battery.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:10.045935",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/lethal_lissy.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:10.176917",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/the_pale_count.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:10.308708",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/frost_servant.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:10.472521",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/raids/orc_helmet.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T04:01:10.619606",
+      "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 27,
+    "files_completed": 68,
     "total_keys": 0
   }
 }

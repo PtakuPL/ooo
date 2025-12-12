@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-12 01:58:03 UTC  
+> **Aktualizacja:** 2025-12-12 01:58:13 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28857
 
 ---
@@ -69,7 +69,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#36** | od uruchomienia |
+| 🔄 Cykl aktualny | **#37** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **166** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -170,17 +170,17 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    36 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    37 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
-│ Kategoria: 📁 GLOBALEVENTS                           │
+│ Kategoria: 📁 ITEMS                                  │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Pliki przeskanowane:    196 (wszystkie kategorie)          │
-│    ├─ Kategoria GLOBALEVENTS:      0 kluczy EN                    │
+│    ├─ Kategoria  ITEMS:  13749 kluczy EN                    │
 │    └─ Total kluczy EN:  28857                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-12 01:58:03            │
+│ 📅 Ostatnia aktualizacja: 2025-12-12 01:58:13            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -195,12 +195,13 @@
 | ⬜ Plików bez kluczy | **30** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **166** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#36** | continuous mode |
+| 🔄 Cykli wykonanych | **#37** | continuous mode |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
+- 🎒 `items` +0 kluczy @ 01:58:11
 - ⚡ `globalevents` +0 kluczy @ 01:58:01
 - ⚡ `creaturescripts` +0 kluczy @ 01:57:52
 - ⚡ `movements` +0 kluczy @ 01:57:42
@@ -208,7 +209,6 @@
 - ⚡ `world` +0 kluczy @ 01:57:19
 - ⚡ `raids` +0 kluczy @ 01:57:09
 - ⚡ `quests` +0 kluczy @ 01:56:57
-- ⚡ `actions` +0 kluczy @ 01:56:41
 
 
 ---
@@ -368,16 +368,16 @@
 
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
-| items | 13749 | 0 | 6 | ✅ Active |
+| items | 13749 | 0 | 8 | ⏭️ Skip 119m |
 | monsters | 7341 | 0 | 8 | ⏭️ Skip 118m |
 | npc | 5339 | 0 | 8 | ⏭️ Skip 116m |
 | html | 1495 | 0 | 6 | ⏭️ Skip 0m |
 | spells | 304 | 0 | 2 | ✅ Active |
 | client | 242 | 0 | 0 | ✅ Active |
-| raids | 147 | 0 | 8 | ⏭️ Skip 119m |
+| raids | 147 | 0 | 8 | ⏭️ Skip 118m |
 | scripts | 97 | 0 | 8 | ⏭️ Skip 118m |
 | php | 59 | 0 | 6 | ⏭️ Skip 0m |
-| startup | 23 | 0 | 6 | ⏭️ Skip 0m |
+| startup | 23 | 0 | 6 | ✅ Active |
 | libs | 21 | 0 | 6 | ✅ Active |
 | modules | 16 | 0 | 6 | ✅ Active |
 | messages | 11 | 0 | 0 | ✅ Active |
@@ -386,7 +386,7 @@
 | actions | 0 | 0 | 8 | ⏭️ Skip 118m |
 | cpp | 0 | 0 | 2 | ⏳ Empty |
 | errors | 0 | 0 | 6 | ⏭️ Skip 1m |
-| npclib | 0 | 0 | 6 | ⏭️ Skip 0m |
+| npclib | 0 | 0 | 6 | ⏳ Empty |
 | quests | 0 | 0 | 8 | ⏭️ Skip 118m |
 | server | 0 | 0 | 2 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
@@ -403,19 +403,18 @@
 | monsters | 118m | 8x | Progresywny backoff |
 | actions | 118m | 8x | Progresywny backoff |
 | quests | 118m | 8x | Progresywny backoff |
-| raids | 119m | 8x | Progresywny backoff |
+| raids | 118m | 8x | Progresywny backoff |
 | world | 119m | 8x | Progresywny backoff |
 | talkactions | 119m | 8x | Progresywny backoff |
 | movements | 119m | 8x | Progresywny backoff |
 | creaturescripts | 119m | 8x | Progresywny backoff |
 | globalevents | 119m | 8x | Progresywny backoff |
-| startup | 0m | 6x | Progresywny backoff |
-| npclib | 0m | 6x | Progresywny backoff |
+| items | 119m | 8x | Progresywny backoff |
 | dataroot | 0m | 6x | Progresywny backoff |
 | php | 0m | 6x | Progresywny backoff |
 | html | 0m | 6x | Progresywny backoff |
 | otclient_modules | 0m | 6x | Progresywny backoff |
-| otclient_data | 1m | 6x | Progresywny backoff |
+| otclient_data | 0m | 6x | Progresywny backoff |
 | otclient_tools | 1m | 6x | Progresywny backoff |
 | errors | 1m | 6x | Progresywny backoff |
 
@@ -425,7 +424,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #36 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #37 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -468,7 +467,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 01:58:03  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 01:58:13  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

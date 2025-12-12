@@ -103,6 +103,7 @@ jobs:
                 -DOTC_ENABLE_HARFBUZZ=OFF \
                 -DOTC_ENABLE_FRIBIDI=OFF \
                 -DOTC_ENABLE_PROTOBUF=OFF \
+                -DOTC_SKIP_GAME_ACTIVITY=ON \
                 -DProtobuf_PROTOC_EXECUTABLE=$(which protoc) \
                 -S . -B build-android
 

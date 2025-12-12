@@ -554,7 +554,10 @@ if(ANDROID)
   set(OpenAL_LIBRARY ${OpenAL_LIBRARY} ${Android_LIBRARIES}/libopenal.a)
   set(MINIZIP_INCLUDE_DIR ${MINIZIP_INCLUDE_DIR} ${Android_INCLUDES}/minizip)
   set(MINIZIP_LIBRARY ${MINIZIP_LIBRARY} ${Android_LIBRARIES}/libminizip.a)
-  find_package(game-activity REQUIRED CONFIG)
+  # Skip game-activity when only generating compile_commands.json for analysis
+  if(NOT OTC_SKIP_GAME_ACTIVITY)
+    find_package(game-activity REQUIRED CONFIG)
+  endif()
   find_package(EGL REQUIRED)
 else()
   if(NOT WASM)
@@ -901,7 +904,7 @@ elseif(ANDROID)
           Vorbis::vorbis
           Vorbis::vorbisfile
           LibLZMA::LibLZMA
-          game-activity::game-activity
+          $<$<NOT:$<BOOL:${OTC_SKIP_GAME_ACTIVITY}>>:game-activity::game-activity>
           GLESv3
           android
           log

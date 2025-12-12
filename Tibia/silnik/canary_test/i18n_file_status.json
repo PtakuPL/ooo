@@ -1835,10 +1835,370 @@
       "overall_status": "completed",
       "completed_at": "2025-12-12T03:58:01.664570",
       "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/demodras.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:01.987962",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/stonecracker.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:02.166602",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/bruise_payne.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:02.385607",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/shardhead.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:02.580697",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/kerberos.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:03.835621",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/the_snapper.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:04.015416",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/the_old_widow.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:04.196150",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/thul.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:04.359736",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/fazzrah.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:04.513142",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/fleshcrawler.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:04.681532",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/the_bloodtusk.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:04.873841",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/bretzecutioner.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:05.065460",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/zanakeph.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:05.246183",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/tromphonyte.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:05.409706",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/deathbine.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:05.537572",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/sulphur_scuttler.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:05.673549",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/the_noxious_spawn.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:05.805813",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/the_bloodweb.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:05.943851",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/ribstride.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:06.079939",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/killing_in_the_name_of/tormentor.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:58:06.222557",
+      "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 102,
+    "files_completed": 122,
     "total_keys": 0
   }
 }

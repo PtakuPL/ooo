@@ -359,10 +359,370 @@
       "overall_status": "completed",
       "completed_at": "2025-12-12T03:59:15.834589",
       "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_first_dragon/dragon_warden.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:16.219563",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_first_dragon/dragon_wrath.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:16.552359",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_first_dragon/spirit_of_fertility.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:16.730705",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_first_dragon/ice_dragon.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:16.953809",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_first_dragon/dragon_essence.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:17.151180",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_first_dragon/bosses/zorvorax.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:17.325665",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_first_dragon/bosses/kalyassa.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:17.506424",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_first_dragon/bosses/gelidrazah_the_frozen.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:17.674139",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_first_dragon/bosses/tazhadur.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:17.915769",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_first_dragon/bosses/fallen_challenger.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:18.072275",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_first_dragon/angry_plant.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:18.222037",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_first_dragon/unbeatable_dragon.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:18.364642",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/unbound_demon_outcast.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:18.511341",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/time_waster.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:20.340258",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/unbound_defiler.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:20.513317",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/corrupted_soul.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:20.730462",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/baby_dragon.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:20.909188",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/cosmic_energy_prism_a_invu.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:21.082700",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/icicle.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:21.358056",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/forgotten_knowledge/soulcatcher.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:21.577266",
+      "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 20,
+    "files_completed": 40,
     "total_keys": 0
   }
 }

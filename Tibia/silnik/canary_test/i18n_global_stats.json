@@ -1,14 +1,14 @@
 {
-  "total_cycles": 34,
+  "total_cycles": 35,
   "mode": "MIGRATION",
-  "category": "movements",
-  "last_update": "2025-12-12T01:57:42.199910",
+  "category": "creaturescripts",
+  "last_update": "2025-12-12T01:57:52.172938",
   "migration": {
     "files_scanned": 196,
     "files_with_keys": 166,
     "files_without_keys": 30,
     "keys_extracted": 166,
-    "current_category": "movements",
-    "batch_size": 31
+    "current_category": "creaturescripts",
+    "batch_size": 45
   }
 }

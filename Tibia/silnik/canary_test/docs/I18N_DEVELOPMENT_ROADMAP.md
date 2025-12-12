@@ -1,9 +1,93 @@
 # 🗺️ I18N System - Plan Rozwoju i Usprawnień
 
 > **Dokument**: Plan rozwoju systemu internacjonalizacji  
-> **Wersja**: 6.0  
-> **Data**: 2025-12-10 21:25 UTC  
+> **Wersja**: 7.0  
+> **Data**: 2025-12-12 (AKTUALIZACJA ARCHITEKTURY)  
 > **Autor**: AI Assistant + PtakuPL
+
+---
+
+## 🔴 ZMIANA ARCHITEKTURY (2025-12-12) - WAŻNE!
+
+### Poprzednie podejście: Server-Side Translation (PORZUCONE)
+
+❌ Serwer tłumaczy teksty → wysyła przetłumaczone → klient wyświetla
+
+**Problemy:**
+- Mutex contention przy wielu graczach (200+ × 50 języków)
+- Wymaga kompilacji całego serwera C++ z nowymi funkcjami
+- Większe obciążenie CPU/RAM na serwerze
+- Dłuższe pakiety sieciowe (pełne teksty)
+
+### Nowe podejście: Client-Side Translation (AKTUALNE)
+
+✅ Serwer wysyła klucz i18n → klient tłumaczy lokalnie → wyświetla
+
+**Korzyści:**
+| Aspekt | Wartość |
+|--------|---------|
+| Obciążenie serwera | **Minimalne** - tylko wysyłanie kluczy |
+| Bandwidth | **Mniejszy** - klucze krótsze od tekstów |
+| Pamięć serwera | **Bez cache** - słowniki tylko na kliencie |
+| Kompilacja | **Tylko protokół** - nie cały system i18n |
+| Skalowalność | **Lepsza** - każdy klient tłumaczy samodzielnie |
+| Hotfix tłumaczeń | **Łatwiejszy** - tylko update plików klienta |
+
+### Pliki do modyfikacji
+
+```
+SERWER (canary_test/src/):
+├── server/network/protocol/protocolgame.cpp  ← wysyłanie kluczy
+├── server/network/protocol/protocolgame.hpp  ← definicje
+└── creatures/players/player.cpp               ← sendTextMessage → sendLocalizedMessage
+
+KLIENT (testyy/):
+├── src/client/protocolgame.cpp               ← parsowanie kluczy
+├── modules/corelib/keyboard.lua              ← funkcja tr() (już istnieje!)
+└── data/locales/*.lua                         ← słowniki (już istnieją!)
+```
+
+### Plan implementacji protokołu
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                    ETAP 1: Rozszerzenie pakietu                     │
+├─────────────────────────────────────────────────────────────────────┤
+│  Pakiet tekstowy (stary):                                           │
+│  [opcode][messageType][text]                                        │
+│                                                                     │
+│  Pakiet tekstowy (nowy - kompatybilny wstecz):                     │
+│  [opcode][messageType][text][hasI18nKey:byte][i18nKey?]            │
+│                                                                     │
+│  hasI18nKey = 0 → brak klucza, użyj text                           │
+│  hasI18nKey = 1 → jest klucz, spróbuj przetłumaczyć                │
+└─────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│                    ETAP 2: Logika klienta                           │
+├─────────────────────────────────────────────────────────────────────┤
+│  1. Odczytaj pakiet                                                 │
+│  2. if hasI18nKey:                                                  │
+│     a. translation = tr(i18nKey)                                    │
+│     b. if translation != i18nKey:  # znaleziono tłumaczenie        │
+│        displayText = translation                                    │
+│     c. else:                                                        │
+│        displayText = text  # fallback do oryginału                 │
+│  3. else:                                                           │
+│     displayText = text  # stary format                             │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+### Checklist implementacji
+
+- [ ] **SERWER: Analiza** `sendTextMessage()` w `protocolgame.cpp`
+- [ ] **SERWER: Dodanie** `sendLocalizedTextMessage(type, text, i18nKey)`
+- [ ] **SERWER: Test** kompatybilności wstecznej (stary klient działa)
+- [ ] **KLIENT: Analiza** `parseTextMessage()` w `protocolgame.cpp`
+- [ ] **KLIENT: Rozszerzenie** o odczyt `i18nKey`
+- [ ] **KLIENT: Integracja** z `tr()` z `keyboard.lua`
+- [ ] **KLIENT: Fallback** gdy brak tłumaczenia
+- [ ] **TEST: End-to-end** - serwer → klient → wyświetlenie
 
 ---
 

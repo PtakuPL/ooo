@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-12 06:05:37 UTC  
+> **Aktualizacja:** 2025-12-12 06:05:40 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 21648
 
 ---
@@ -69,7 +69,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#359** | od uruchomienia |
+| 🔄 Cykl aktualny | **#358** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **9** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -170,17 +170,17 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   359 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   358 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
-│ Kategoria: 📁 TALKACTIONS                            │
+│ Kategoria: 📁 MOVEMENTS                              │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Pliki przeskanowane:      9 (wszystkie kategorie)          │
-│    ├─ Kategoria TALKACTIONS:      0 kluczy EN                    │
+│    ├─ Kategoria MOVEMENTS:      0 kluczy EN                    │
 │    └─ Total kluczy EN:  21648                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-12 06:05:37            │
+│ 📅 Ostatnia aktualizacja: 2025-12-12 06:05:40            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -195,12 +195,13 @@
 | ⬜ Plików bez kluczy | **0** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **9** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#359** | continuous mode |
+| 🔄 Cykli wykonanych | **#358** | continuous mode |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `movements` +0 kluczy @ 06:05:39
 - ⚡ `talkactions` +0 kluczy @ 06:05:36
 - ⚡ `world` +0 kluczy @ 06:05:31
 - ⚡ `raids` +0 kluczy @ 06:05:23
@@ -208,7 +209,6 @@
 - ⚡ `actions` +0 kluczy @ 06:04:55
 - 📜 `scripts` +0 kluczy @ 05:58:12
 - 🧙 `npc` +0 kluczy @ 05:55:14
-- 👹 `monsters` +0 kluczy @ 05:14:58
 
 
 ---
@@ -368,7 +368,7 @@
 
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
-| items | 13749 | 0 | 10 | ⏭️ Skip 0m |
+| items | 13749 | 0 | 10 | ✅ Active |
 | npc | 5339 | 0 | 19 | ⏭️ Skip 109m |
 | html | 1495 | 0 | 12 | ⏭️ Skip 0m |
 | spells | 304 | 0 | 2 | ✅ Active |
@@ -406,7 +406,7 @@
 | raids | 119m | 14x | Progresywny backoff |
 | world | 119m | 12x | Progresywny backoff |
 | talkactions | 119m | 15x | Progresywny backoff |
-| items | 0m | 10x | Progresywny backoff |
+| movements | 119m | 12x | Progresywny backoff |
 | libs | 0m | 10x | Progresywny backoff |
 | events | 0m | 9x | Progresywny backoff |
 | chatchannels | 0m | 10x | Progresywny backoff |
@@ -429,7 +429,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #359 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #358 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -472,7 +472,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 06:05:37  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 06:05:40  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

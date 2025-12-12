@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-12 01:56:18 UTC  
+> **Aktualizacja:** 2025-12-12 01:56:31 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28857
 
 ---
@@ -26,8 +26,8 @@
 |---------|---------|---------|------|
 | 📂 **Wszystkie pliki** | **16,214** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **7,743** | 47.8% | pliki z kodem/tekstami |
-| 🔍 **Przeskanowane** | **496** | **6.4%** | historia workera |
-| ⏳ Nie przeskanowane | **7,247** | 93.6% | czekają na skan |
+| 🔍 **Przeskanowane** | **506** | **6.5%** | historia workera |
+| ⏳ Nie przeskanowane | **7,237** | 93.5% | czekają na skan |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -43,7 +43,7 @@
 ### ✅ Status Migracji
 | Status | Ilość | Procent | Opis |
 |--------|-------|---------|------|
-| ✅ Zmigrowane | **146** | 29.4% | mają klucze i18n |
+| ✅ Zmigrowane | **156** | 30.8% | mają klucze i18n |
 | 🔄 Wymaga migracji | **0** | - | trzeba dodać i18n |
 | ⚪ Czyste | **30** | - | bez tekstów |
 | 🔧 W trakcie | **0** | - | obecnie przetwarzane |
@@ -69,8 +69,8 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#27** | od uruchomienia |
-| 🔑 Kluczy wyekstrahowanych | **146** | w tej sesji |
+| 🔄 Cykl aktualny | **#28** | od uruchomienia |
+| 🔑 Kluczy wyekstrahowanych | **156** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
 ---
@@ -170,17 +170,17 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    27 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    28 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
-│ Kategoria: 📁 SCRIPTS                                │
+│ Kategoria: 📁 MONSTERS                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Pliki przeskanowane:    176 (wszystkie kategorie)          │
-│    ├─ Kategoria SCRIPTS:     97 kluczy EN                    │
+│ 📊 Pliki przeskanowane:    186 (wszystkie kategorie)          │
+│    ├─ Kategoria MONSTERS:   7341 kluczy EN                    │
 │    └─ Total kluczy EN:  28857                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-12 01:56:18            │
+│ 📅 Ostatnia aktualizacja: 2025-12-12 01:56:31            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -190,17 +190,18 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **176** | w tej sesji |
-| ✅ Plików z kluczami | **146** | zawierały hardcoded strings |
+| 📁 Plików przeskanowanych | **186** | w tej sesji |
+| ✅ Plików z kluczami | **156** | zawierały hardcoded strings |
 | ⬜ Plików bez kluczy | **30** | czyste (brak hardcoded) |
-| 🔑 Kluczy wyciągniętych | **146** | przez workera w tej sesji |
+| 🔑 Kluczy wyciągniętych | **156** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#27** | continuous mode |
+| 🔄 Cykli wykonanych | **#28** | continuous mode |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
+- 👹 `monsters` +0 kluczy @ 01:56:29
 - 📜 `scripts` +0 kluczy @ 01:56:15
 - 🧙 `npc` +0 kluczy @ 01:54:25
 - ⚡ `errors` +0 kluczy @ 23:59:29
@@ -208,7 +209,6 @@
 - ⚡ `otclient_data` +0 kluczy @ 23:59:09
 - ⚡ `otclient_modules` +0 kluczy @ 23:58:56
 - ⚡ `html` +0 kluczy @ 23:58:46
-- ⚡ `php` +0 kluczy @ 23:58:32
 
 
 ---
@@ -369,8 +369,8 @@
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 0 | 6 | ⏭️ Skip 0m |
-| monsters | 7341 | 0 | 6 | ✅ Active |
-| npc | 5339 | 0 | 8 | ⏭️ Skip 118m |
+| monsters | 7341 | 0 | 8 | ⏭️ Skip 119m |
+| npc | 5339 | 0 | 8 | ⏭️ Skip 117m |
 | html | 1495 | 0 | 6 | ⏭️ Skip 2m |
 | spells | 304 | 0 | 2 | ✅ Active |
 | client | 242 | 0 | 0 | ✅ Active |
@@ -378,19 +378,19 @@
 | scripts | 97 | 0 | 8 | ⏭️ Skip 119m |
 | php | 59 | 0 | 6 | ⏭️ Skip 2m |
 | startup | 23 | 0 | 6 | ⏭️ Skip 1m |
-| libs | 21 | 0 | 6 | ⏭️ Skip 1m |
+| libs | 21 | 0 | 6 | ⏭️ Skip 0m |
 | modules | 16 | 0 | 6 | ⏭️ Skip 1m |
 | messages | 11 | 0 | 0 | ✅ Active |
 | chatchannels | 8 | 0 | 6 | ⏭️ Skip 1m |
 | events | 5 | 0 | 6 | ⏭️ Skip 1m |
 | actions | 0 | 0 | 6 | ⏳ Empty |
 | cpp | 0 | 0 | 2 | ⏳ Empty |
-| errors | 0 | 0 | 6 | ⏭️ Skip 3m |
+| errors | 0 | 0 | 6 | ⏭️ Skip 2m |
 | npclib | 0 | 0 | 6 | ⏭️ Skip 1m |
 | quests | 0 | 0 | 6 | ⏳ Empty |
 | server | 0 | 0 | 2 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
-| world | 0 | 0 | 6 | ⏭️ Skip 0m |
+| world | 0 | 0 | 6 | ⏳ Empty |
 
 ---
 
@@ -398,28 +398,27 @@
 
 | Kategoria | Skip pozostało | Seria zer | Powód |
 |-----------|----------------|-----------|-------|
-| npc | 118m | 8x | Progresywny backoff |
+| npc | 117m | 8x | Progresywny backoff |
 | scripts | 119m | 8x | Progresywny backoff |
-| world | 0m | 6x | Progresywny backoff |
-| talkactions | 0m | 6x | Progresywny backoff |
+| monsters | 119m | 8x | Progresywny backoff |
 | movements | 0m | 6x | Progresywny backoff |
 | creaturescripts | 0m | 6x | Progresywny backoff |
 | globalevents | 0m | 6x | Progresywny backoff |
 | items | 0m | 6x | Progresywny backoff |
-| mounts | 1m | 6x | Progresywny backoff |
-| libs | 1m | 6x | Progresywny backoff |
+| mounts | 0m | 6x | Progresywny backoff |
+| libs | 0m | 6x | Progresywny backoff |
 | events | 1m | 6x | Progresywny backoff |
 | chatchannels | 1m | 6x | Progresywny backoff |
 | modules | 1m | 6x | Progresywny backoff |
 | startup | 1m | 6x | Progresywny backoff |
 | npclib | 1m | 6x | Progresywny backoff |
-| dataroot | 2m | 6x | Progresywny backoff |
+| dataroot | 1m | 6x | Progresywny backoff |
 | php | 2m | 6x | Progresywny backoff |
 | html | 2m | 6x | Progresywny backoff |
 | otclient_modules | 2m | 6x | Progresywny backoff |
 | otclient_data | 2m | 6x | Progresywny backoff |
-| otclient_tools | 3m | 6x | Progresywny backoff |
-| errors | 3m | 6x | Progresywny backoff |
+| otclient_tools | 2m | 6x | Progresywny backoff |
+| errors | 2m | 6x | Progresywny backoff |
 
 ---
 
@@ -427,7 +426,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #27 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #28 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -470,23 +469,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 01:56:18  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 01:56:31  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `commands.form.html.twig` - ukończono 2025-12-11 23:58
-- ✅ `serverinfo.html.twig` - ukończono 2025-12-11 23:58
-- ✅ `admin.pages.form.html.twig` - ukończono 2025-12-11 23:58
-- ✅ `guilds.back_button.html.twig` - ukończono 2025-12-11 23:58
-- ✅ `account.lost.form.html.twig` - ukończono 2025-12-11 23:58
-- ✅ `admin.logs.html.twig` - ukończono 2025-12-11 23:58
-- ✅ `install.installer.html.twig` - ukończono 2025-12-11 23:58
-- ✅ `account.change-info.html.twig` - ukończono 2025-12-11 23:58
-- ✅ `buttons.view.html.twig` - ukończono 2025-12-11 23:58
-- ✅ `account.generate_new_recovery_key.html.twig` - ukończono 2025-12-11 23:58
+- ✅ `son_of_verminor` - ukończono 2025-12-12 01:56
+- ✅ `death_blob` - ukończono 2025-12-12 01:56
+- ✅ `glooth_blob` - ukończono 2025-12-12 01:56
+- ✅ `mercury_blob` - ukończono 2025-12-12 01:56
+- ✅ `slime` - ukończono 2025-12-12 01:56
+- ✅ `devourer` - ukończono 2025-12-12 01:56
+- ✅ `squidgy_slime` - ukończono 2025-12-12 01:56
+- ✅ `acid_blob` - ukończono 2025-12-12 01:56
+- ✅ `midnight_spawn` - ukończono 2025-12-12 01:56
+- ✅ `filth_toad` - ukończono 2025-12-12 01:56
 
 ---
 

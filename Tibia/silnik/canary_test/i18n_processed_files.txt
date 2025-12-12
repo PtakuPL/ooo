@@ -494,3 +494,13 @@ html_copy/system/templates/guilds.back_button.html.twig
 html_copy/system/templates/admin.pages.form.html.twig
 html_copy/system/templates/serverinfo.html.twig
 html_copy/system/templates/commands.form.html.twig
+data-otservbr-global/monster/amphibics/filth_toad.lua
+data-otservbr-global/monster/slimes/midnight_spawn.lua
+data-otservbr-global/monster/slimes/acid_blob.lua
+data-otservbr-global/monster/slimes/squidgy_slime.lua
+data-otservbr-global/monster/slimes/devourer.lua
+data-otservbr-global/monster/slimes/slime.lua
+data-otservbr-global/monster/slimes/mercury_blob.lua
+data-otservbr-global/monster/slimes/glooth_blob.lua
+data-otservbr-global/monster/slimes/death_blob.lua
+data-otservbr-global/monster/slimes/son_of_verminor.lua

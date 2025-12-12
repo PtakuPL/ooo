@@ -2238,3 +2238,16 @@ html_copy/system/templates/account.redirect.html.twig
 html_copy/system/templates/forum.move_thread.html.twig
 html_copy/system/templates/buttons.base.html.twig
 html_copy/system/templates/mail.password_changed.html.twig
+html_copy/system/templates/account.characters.change-name.html.twig
+html_copy/system/templates/buttons.submit.html.twig
+html_copy/system/templates/admin.menus.form.html.twig
+html_copy/system/templates/admin.data.html.twig
+html_copy/system/templates/guilds.change_logo.html.twig
+html_copy/system/templates/forum.new_thread.html.twig
+html_copy/system/templates/buttons.back.html.twig
+html_copy/system/templates/houses.view.html.twig
+html_copy/system/templates/admin.news.table.html.twig
+html_copy/system/templates/exception.html.twig
+html_copy/system/templates/admin.plugins.outdated.html.twig
+html_copy/system/templates/account.characters.delete.html.twig
+html_copy/system/templates/team.html.twig

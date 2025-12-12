@@ -88,6 +88,15 @@ struct TextMessage {
 	} primary, secondary;
 };
 
+// I18N: Localized text message with translation key
+struct LocalizedTextMessage : public TextMessage {
+	LocalizedTextMessage() = default;
+	LocalizedTextMessage(MessageClasses initType, std::string initText, std::string initI18nKey) :
+		TextMessage(initType, std::move(initText)), i18nKey(std::move(initI18nKey)) { }
+
+	std::string i18nKey;  // Translation key for client-side translation
+};
+
 class ProtocolGame final : public Protocol {
 public:
 	// Static protocol information.
@@ -338,6 +347,7 @@ private:
 	void sendStats();
 	void sendBasicData();
 	void sendTextMessage(const TextMessage &message);
+	void sendLocalizedTextMessage(const LocalizedTextMessage &message);  // I18N: sends i18nKey for client-side translation
 	void sendReLoginWindow(uint8_t unfairFightReduction);
 
 	void sendTutorial(uint8_t tutorialId);

@@ -1,12 +1,13 @@
+---
 name: SonarCloud (Windows)
 
 on:
   push:
-    branches: [ master, main ]
+    branches: [master, main]
     paths:
       - 'testyy/**'
   pull_request:
-    branches: [ master, main ]
+    branches: [master, main]
     paths:
       - 'testyy/**'
   workflow_dispatch:

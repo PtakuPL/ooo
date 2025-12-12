@@ -1,14 +1,14 @@
 {
-  "total_cycles": 343,
+  "total_cycles": 355,
   "mode": "MIGRATION",
-  "category": "scripts",
-  "last_update": "2025-12-12T05:58:12.193883",
+  "category": "quests",
+  "last_update": "2025-12-12T06:04:56.809231",
   "migration": {
     "files_scanned": 9,
     "files_with_keys": 9,
     "files_without_keys": 0,
     "keys_extracted": 9,
-    "current_category": "scripts",
-    "batch_size": 1886
+    "current_category": "quests",
+    "batch_size": 720
   }
 }

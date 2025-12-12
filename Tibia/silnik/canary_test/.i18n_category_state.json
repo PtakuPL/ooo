@@ -2,8 +2,8 @@
   "skip_until": {
     "npc": 1765522514.3215396,
     "scripts": 1765522692.1213658,
-    "actions": 1765515892.2308197,
-    "quests": 1765515894.8148403,
+    "actions": 1765523095.7077534,
+    "quests": 1765523096.7530875,
     "raids": 1765515907.6456003,
     "world": 1765515906.2472677,
     "spells": 1765490104.104978,
@@ -47,11 +47,11 @@
     },
     "actions": {
       "count": 0,
-      "timestamp": 1765508692.2308083
+      "timestamp": 1765515895.7077487
     },
     "quests": {
       "count": 0,
-      "timestamp": 1765508694.8148313
+      "timestamp": 1765515896.7530813
     },
     "raids": {
       "count": 0,
@@ -162,8 +162,8 @@
     "npc": 19,
     "scripts": 24,
     "monsters": 6,
-    "actions": 9,
-    "quests": 11,
+    "actions": 10,
+    "quests": 13,
     "raids": 12,
     "world": 10,
     "spells": 2,

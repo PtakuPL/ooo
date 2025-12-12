@@ -2,13 +2,13 @@
   "total_cycles": 103,
   "mode": "MIGRATION",
   "category": "monsters",
-  "last_update": "2025-12-12T03:57:34.971409",
+  "last_update": "2025-12-12T03:57:40.750304",
   "migration": {
-    "files_scanned": 70,
-    "files_with_keys": 70,
+    "files_scanned": 12,
+    "files_with_keys": 12,
     "files_without_keys": 0,
-    "keys_extracted": 70,
+    "keys_extracted": 12,
     "current_category": "monsters",
-    "batch_size": 1663
+    "batch_size": 1702
   }
 }

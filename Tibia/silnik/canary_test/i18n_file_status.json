@@ -1,6 +1,6 @@
 {
   "files": {
-    "data-otservbr-global/monster/humanoids/minotaur_amazon.lua": {
+    "data-otservbr-global/monster/humanoids/soul-broken_harbinger.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -15,10 +15,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:16.095687",
+      "completed_at": "2025-12-12T03:57:37.668253",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/humanoids/frost_troll.lua": {
+    "data-otservbr-global/monster/humanoids/orc.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -33,10 +33,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:16.331783",
+      "completed_at": "2025-12-12T03:57:37.842074",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/humanoids/broken_shaper.lua": {
+    "data-otservbr-global/monster/humanoids/young_troll.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -51,10 +51,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:16.560236",
+      "completed_at": "2025-12-12T03:57:38.133525",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/humanoids/dwarf_guard.lua": {
+    "data-otservbr-global/monster/humanoids/orc_shaman.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -69,10 +69,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:16.821298",
+      "completed_at": "2025-12-12T03:57:38.349013",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/humanoids/minotaur_totem.lua": {
+    "data-otservbr-global/monster/humanoids/dwarf.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -87,10 +87,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:17.029224",
+      "completed_at": "2025-12-12T03:57:38.553622",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/humanoids/pirat_scoundrel.lua": {
+    "data-otservbr-global/monster/humanoids/dwarf_soldier.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -105,10 +105,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:17.222943",
+      "completed_at": "2025-12-12T03:57:38.742361",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/humanoids/lost_basher.lua": {
+    "data-otservbr-global/monster/humanoids/goblin_scavenger.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -123,10 +123,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:17.453628",
+      "completed_at": "2025-12-12T03:57:38.966575",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/humanoids/dworc_fleshhunter.lua": {
+    "data-otservbr-global/monster/humanoids/crazed_summer_rearguard.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -141,10 +141,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:17.668212",
+      "completed_at": "2025-12-12T03:57:39.159228",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/humanoids/crazed_winter_rearguard.lua": {
+    "data-otservbr-global/monster/humanoids/elf_arcanist.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -159,10 +159,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:17.868473",
+      "completed_at": "2025-12-12T03:57:39.446576",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/humanoids/mooh'tah_warrior.lua": {
+    "data-otservbr-global/monster/quests/cults_of_tibia/cult_scholar.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -177,10 +177,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:18.270644",
+      "completed_at": "2025-12-12T03:57:39.671417",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/humanoids/pirat_artillerist.lua": {
+    "data-otservbr-global/monster/quests/cults_of_tibia/orc_cult_priest.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -195,10 +195,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:18.427479",
+      "completed_at": "2025-12-12T03:57:39.856340",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/humanoids/lost_exile.lua": {
+    "data-otservbr-global/monster/quests/cults_of_tibia/animated_ogre_shaman.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -213,1128 +213,12 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:18.597040",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/cheese_thief.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:18.755989",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/corym_vanguard.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:18.902491",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/pirat_mate.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:19.034232",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/minotaur_mage.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:19.181068",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/pirat_bombardier.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:21.006680",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/enslaved_dwarf.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:21.175565",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/corym_skirmisher.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:21.348259",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/minotaur_poacher.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:21.526518",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/elf_scout.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:21.729192",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/pirat_cutthroat.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:21.915369",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/execowtioner.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:22.146242",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/troll.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:22.368898",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/island_troll.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:22.720034",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/dwarf_henchman.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:22.929525",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/firestarter.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:23.126564",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/crazed_winter_vanguard.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:23.301355",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/insane_siren.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:23.474182",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/swamp_troll.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:23.650852",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/chakoya_windcaller.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:23.818440",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/minotaur_occultist.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:23.987610",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/goblin_assassin.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:24.138535",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/bulltaur_brute.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:24.289597",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/orc_marauder.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:26.284921",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/dwarf_geomancer.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:26.507065",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/chakoya_toolshaper.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:26.721923",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/orc_spearman.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:26.887469",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/minotaur_cult_zealot.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:27.081756",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/dworc_voodoomaster.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:27.283262",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/orc_rider.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:27.479230",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/troll_legionnaire.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:27.700400",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/minotaur.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:27.902581",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/crazed_summer_vanguard.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:28.146922",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/dwarf_miner.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:28.188497",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/running_elite_orc_guard.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:28.402131",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/minotaur_cult_follower.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:28.577465",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/elite_pirat.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:28.754382",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/elf_overseer.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:28.928685",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/goblin.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:29.093438",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/bulltaur_alchemist.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:29.259915",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/twisted_shaper.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:29.416935",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/minotaur_archer.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:31.427033",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/orc_leader.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:31.614723",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/minotaur_cult_prophet.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:31.794739",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/orc_berserker.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:31.973833",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/corym_charlatan.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:32.151584",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/dworc_venomsniper.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:32.345941",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/furious_orc_berserker.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:32.631823",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/troll_guard.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:32.865493",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/elf.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:33.090257",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/orc_warlord.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:33.299565",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/troll_champion.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:33.468947",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/bulltaur_forgepriest.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:33.605007",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/furious_troll.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:33.828662",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/minotaur_invader.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:34.029611",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/glooth_powered_minotaur.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:34.211975",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/minotaur_hunter.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:34.388324",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/chakoya_tribewarden.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:34.532081",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/moohtant.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:34.724444",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/lost_berserker.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:36.693404",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/little_corym_charlatan.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:36.877187",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/worm_priestess.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:37.090425",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/humanoids/lost_husher.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:57:37.280006",
+      "completed_at": "2025-12-12T03:57:40.040212",
       "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 74,
+    "files_completed": 12,
     "total_keys": 0
   }
 }

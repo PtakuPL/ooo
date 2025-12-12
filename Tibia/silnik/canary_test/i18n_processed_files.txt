@@ -622,3 +622,16 @@ data-otservbr-global/monster/humanoids/lost_berserker.lua
 data-otservbr-global/monster/humanoids/little_corym_charlatan.lua
 data-otservbr-global/monster/humanoids/worm_priestess.lua
 data-otservbr-global/monster/humanoids/lost_husher.lua
+data-otservbr-global/monster/humanoids/orc_warrior.lua
+data-otservbr-global/monster/humanoids/soul-broken_harbinger.lua
+data-otservbr-global/monster/humanoids/orc.lua
+data-otservbr-global/monster/humanoids/young_troll.lua
+data-otservbr-global/monster/humanoids/orc_shaman.lua
+data-otservbr-global/monster/humanoids/dwarf.lua
+data-otservbr-global/monster/humanoids/dwarf_soldier.lua
+data-otservbr-global/monster/humanoids/goblin_scavenger.lua
+data-otservbr-global/monster/humanoids/crazed_summer_rearguard.lua
+data-otservbr-global/monster/humanoids/elf_arcanist.lua
+data-otservbr-global/monster/quests/cults_of_tibia/cult_scholar.lua
+data-otservbr-global/monster/quests/cults_of_tibia/orc_cult_priest.lua
+data-otservbr-global/monster/quests/cults_of_tibia/animated_ogre_shaman.lua

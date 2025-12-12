@@ -1,8 +1,45 @@
 # 🔄 I18N Session Handoff - Stan projektu
 
-> **Data**: 2025-12-10 ~14:15  
-> **Sesja**: Zakończona migracja greet/farewell + naprawa krytycznego buga  
+> **Data**: 2025-12-12 (aktualizacja)  
+> **Sesja**: Decyzja architekturalna - protokół klient-serwer zamiast server-side translation  
 > **Dla nowej sesji**: Przeczytaj ten plik żeby kontynuować
+
+---
+
+## 🔴 WAŻNA ZMIANA ARCHITEKTURALNA (2025-12-12)
+
+### Poprzednie podejście (PORZUCONE):
+- Server-side translation: serwer tłumaczy teksty i wysyła przetłumaczone
+- Wymaga kompilacji serwera z nowymi funkcjami C++
+- Problem z mutex contention przy 200 graczy × 50 języków
+
+### Nowe podejście (AKTUALNE):
+**Serwer wysyła klucze i18n → Klient tłumaczy lokalnie**
+
+#### Dlaczego lepsze:
+| Aspekt | Server-side | Client-side (WYBRANE) |
+|--------|-------------|----------------------|
+| Obciążenie serwera | ❌ Wysokie (tłumaczenie per-request) | ✅ Minimalne (tylko klucze) |
+| Bandwidth | ❌ Dłuższe teksty | ✅ Krótkie klucze |
+| Kompilacja serwera | ❌ Wymagana | ✅ Tylko protokół |
+| Klient (OTClient) | Bez zmian | ⚠️ Wymaga modyfikacji |
+| Pamięć | ❌ Cache per-locale na serwerze | ✅ Słownik tylko na kliencie |
+
+#### Pliki do modyfikacji:
+
+**SERWER (canary_test):**
+- `src/server/network/protocol/protocolgame.cpp` - wysyłanie kluczy zamiast tekstów
+- `src/server/network/protocol/protocolgame.hpp` - nowe metody/opcodes
+
+**KLIENT (testyy/OTClient):**
+- `testyy/src/client/protocolgame.cpp` - parsowanie kluczy
+- `testyy/data/locales/*.lua` - słowniki tłumaczeń (już istnieją!)
+- `testyy/modules/corelib/keyboard.lua` - funkcja `tr()` (już istnieje!)
+
+#### Plan implementacji:
+1. **Etap 1**: Rozszerzyć pakiety tekstowe o pole `i18nKey` (opcjonalne)
+2. **Etap 2**: Klient sprawdza czy jest `i18nKey` → jeśli tak, wywołuje `tr(key)`
+3. **Etap 3**: Fallback: jeśli brak klucza w słowniku → wyświetl oryginalny tekst
 
 ---
 
@@ -68,35 +105,38 @@ pattern_greet = r'(addGreetKeyword\s*\([^)]*?)(text\s*=\s*"([^"]+)")([^}]*?\})'
 
 ---
 
-## 🎯 CO ROBIĆ DALEJ (PRIORYTETY)
+## 🎯 CO ROBIĆ DALEJ (PRIORYTETY) - ZAKTUALIZOWANE 2025-12-12
 
-### 🔴 Priorytet 1: voices (WYMAGA C++)
-**Problem**: `npcConfig.voices` to broadcast - tekst wysyłany do wszystkich graczy jednocześnie.
+### 🔴 Priorytet 1: PROTOKÓŁ KLIENT-SERWER (NOWE!)
 
-**Co trzeba zrobić:**
-1. Zmodyfikować C++ `voiceBlock_t` o pole `i18nKey`
-2. Zmodyfikować `npc.cpp` żeby wysyłać tekst per-player
-3. Zmodyfikować `register_npc_type.lua` żeby przekazywać i18nKey
-4. Dodać transformację voices do workera
+**Cel**: Wysyłanie kluczy i18n z serwera, tłumaczenie po stronie klienta.
 
-**Szczegóły**: Zobacz `docs/I18N_DEVELOPMENT_ROADMAP.md` sekcja "voices"
+**Kroki:**
 
-### 🟡 Priorytet 2: npcHandler:say({...}) z tablicami
-**Problem**: Niektóre NPC używają tablic tekstów:
-```lua
-npcHandler:say({
-    "Line 1",
-    "Line 2", 
-    "Line 3"
-}, npc, creature)
-```
+#### Krok 1: Analiza istniejącego protokołu
+- [ ] Przeanalizować `src/server/network/protocol/protocolgame.cpp` - jak działa `sendTextMessage()`
+- [ ] Przeanalizować `testyy/src/client/protocolgame.cpp` - jak działa `parseTextMessage()`
+- [ ] Zidentyfikować format pakietów tekstowych
 
-**Rozwiązanie**: Trzeba rozszerzyć worker o detekcję i transformację tablic.
+#### Krok 2: Modyfikacja serwera
+- [ ] Rozszerzyć `sendTextMessage()` o opcjonalny parametr `i18nKey`
+- [ ] Dodać nową metodę `sendLocalizedTextMessage()` która wysyła klucz
+- [ ] Zachować kompatybilność wsteczną (klient bez i18n nadal działa)
 
-### 🟢 Priorytet 3: Automatyczne tłumaczenia
-**Problem**: Tryb TRANSLATION wymaga interaktywnego terminala.
+#### Krok 3: Modyfikacja klienta (testyy)
+- [ ] Rozszerzyć `parseTextMessage()` o odczyt klucza i18n
+- [ ] Jeśli jest klucz → wywołać `tr(key)` z `modules/corelib/keyboard.lua`
+- [ ] Jeśli brak tłumaczenia → fallback do oryginalnego tekstu
 
-**Rozwiązanie**: Dodać tryb `TRANSLATION_AUTO` z API tłumaczeniowym.
+#### Krok 4: Słowniki na kliencie
+- [ ] Przenieść klucze z `i18n/en/*.json` (serwer) do `testyy/data/locales/` (klient)
+- [ ] Format klienta: `tr "key" "translation"` lub Lua tables
+
+### 🟡 Priorytet 2: voices (WYMAGA C++) - ODŁOŻONE
+**Powód odłożenia**: Najpierw implementujemy protokół - potem voices wykorzysta ten sam mechanizm.
+
+### 🟢 Priorytet 3: Automatyczne tłumaczenia - ODŁOŻONE
+**Powód odłożenia**: Zależy od działającego protokołu i18n.
 
 ---
 

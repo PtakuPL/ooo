@@ -261,7 +261,7 @@ int NpcTypeFunctions::luaNpcTypeAddShopItem(lua_State* L) {
 }
 
 int NpcTypeFunctions::luaNpcTypeAddVoice(lua_State* L) {
-	// npcType:addVoice(sentence, interval, chance, yell)
+	// npcType:addVoice(sentence, interval, chance, yell[, i18nKey])
 	const auto &npcType = Lua::getUserdataShared<NpcType>(L, 1, "NpcType");
 	if (npcType) {
 		voiceBlock_t voice;
@@ -269,6 +269,10 @@ int NpcTypeFunctions::luaNpcTypeAddVoice(lua_State* L) {
 		npcType->info.yellSpeedTicks = Lua::getNumber<uint32_t>(L, 3);
 		npcType->info.yellChance = Lua::getNumber<uint32_t>(L, 4);
 		voice.yellText = Lua::getBoolean(L, 5);
+		// i18nKey - opcjonalny 6. parametr (krótki klucz dla klienta: "1", "a", "v1")
+		if (lua_gettop(L) >= 6 && Lua::isString(L, 6)) {
+			voice.i18nKey = Lua::getString(L, 6);
+		}
 		npcType->info.voiceVector.push_back(voice);
 		Lua::pushBoolean(L, true);
 	} else {
@@ -288,9 +292,10 @@ int NpcTypeFunctions::luaNpcTypeGetVoices(lua_State* L) {
 	int index = 0;
 	lua_createtable(L, npcType->info.voiceVector.size(), 0);
 	for (const auto &voiceBlock : npcType->info.voiceVector) {
-		lua_createtable(L, 0, 2);
+		lua_createtable(L, 0, 3);
 		Lua::setField(L, "text", voiceBlock.text);
 		Lua::setField(L, "yellText", voiceBlock.yellText);
+		Lua::setField(L, "i18nKey", voiceBlock.i18nKey);
 		lua_rawseti(L, -2, ++index);
 	}
 	return 1;

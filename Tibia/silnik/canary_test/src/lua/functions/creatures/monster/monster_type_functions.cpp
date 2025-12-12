@@ -1104,7 +1104,7 @@ int MonsterTypeFunctions::luaMonsterTypeGetElementList(lua_State* L) {
 }
 
 int MonsterTypeFunctions::luaMonsterTypeAddVoice(lua_State* L) {
-	// monsterType:addVoice(sentence, interval, chance, yell)
+	// monsterType:addVoice(sentence, interval, chance, yell[, i18nKey])
 	const auto &monsterType = Lua::getUserdataShared<MonsterType>(L, 1, "MonsterType");
 	if (monsterType) {
 		voiceBlock_t voice;
@@ -1112,6 +1112,10 @@ int MonsterTypeFunctions::luaMonsterTypeAddVoice(lua_State* L) {
 		monsterType->info.yellSpeedTicks = Lua::getNumber<uint32_t>(L, 3);
 		monsterType->info.yellChance = Lua::getNumber<uint32_t>(L, 4);
 		voice.yellText = Lua::getBoolean(L, 5);
+		// i18nKey - opcjonalny 6. parametr (krótki klucz dla klienta: "1", "a", "m1")
+		if (lua_gettop(L) >= 6 && Lua::isString(L, 6)) {
+			voice.i18nKey = Lua::getString(L, 6);
+		}
 		monsterType->info.voiceVector.push_back(voice);
 		Lua::pushBoolean(L, true);
 	} else {
@@ -1131,9 +1135,10 @@ int MonsterTypeFunctions::luaMonsterTypeGetVoices(lua_State* L) {
 	int index = 0;
 	lua_createtable(L, monsterType->info.voiceVector.size(), 0);
 	for (const auto &voiceBlock : monsterType->info.voiceVector) {
-		lua_createtable(L, 0, 2);
+		lua_createtable(L, 0, 3);
 		Lua::setField(L, "text", voiceBlock.text);
 		Lua::setField(L, "yellText", voiceBlock.yellText);
+		Lua::setField(L, "i18nKey", voiceBlock.i18nKey);
 		lua_rawseti(L, -2, ++index);
 	}
 	return 1;

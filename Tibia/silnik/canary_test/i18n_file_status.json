@@ -1205,10 +1205,280 @@
       "overall_status": "completed",
       "completed_at": "2025-12-12T03:59:53.127564",
       "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/bosses/preceptor_lazare.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:53.443132",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/bosses/grand_canon_dominus.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:53.842942",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/bosses/brokul.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:54.431202",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/bosses/ghulosh.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:54.687808",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/jailer.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:54.831327",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/dazed_leaf_golem.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:54.972436",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/lokathmor_stuck.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:55.129835",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/brother_chill.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:55.291184",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_secret_library/biting_cold.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:55.424266",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_curse_spreads/feroxa.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:55.566646",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_curse_spreads/feroxa2.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:55.699822",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_curse_spreads/bloodback.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:55.828112",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_curse_spreads/shadowpelt.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:55.961173",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_curse_spreads/darkfang.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:56.080770",
+      "category": "monsters"
+    },
+    "data-otservbr-global/monster/quests/the_curse_spreads/feroxa4.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "monsters"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-12T03:59:56.213100",
+      "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 67,
+    "files_completed": 82,
     "total_keys": 0
   }
 }

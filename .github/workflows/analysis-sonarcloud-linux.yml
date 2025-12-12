@@ -1,0 +1,181 @@
+---
+name: Analysis - SonarCloud (Linux)
+
+on:
+  workflow_dispatch:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+env:
+  CMAKE_BUILD_PARALLEL_LEVEL: 4
+  MAKEFLAGS: '-j 4'
+  VCPKG_FEATURE_FLAGS: manifests,binarycaching
+  VCPKG_BINARY_SOURCES: clear;x-gha,readwrite
+  VCPKG_BUILD_TYPE: release
+  VCPKG_DEFAULT_TRIPLET: x64-linux
+  VCPKG_DEFAULT_HOST_TRIPLET: x64-linux
+
+jobs:
+  sonarcloud-linux:
+    name: SonarCloud (Linux)
+    runs-on: ubuntu-22.04
+    env:
+      SONAR_TOKEN: ${{ secrets.SONARCLOUDTOKEN }}
+    defaults:
+      run:
+        working-directory: Tibia/silnik/canary_test/testyy
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Remove nested git directories (upstream mirrors)
+        run: |
+          rm -rf oryginall/canary-serwer/.git || true
+          rm -rf oryginall/otclient/.git || true
+
+      - name: Install Linux Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ccache libglew-dev libx11-dev linux-headers-$(uname -r)
+
+      - name: Switch to GCC 11
+        run: |
+          sudo apt install -y gcc-11 g++-11
+          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 100 \
+            --slave /usr/bin/g++ g++ /usr/bin/g++-11 \
+            --slave /usr/bin/gcov gcov /usr/bin/gcov-11
+          sudo update-alternatives --set gcc /usr/bin/gcc-11
+
+      - name: Detect CPU core count
+        id: cpu-count
+        run: echo "count=$(nproc)" >> "$GITHUB_OUTPUT"
+
+      - name: Cache CCache
+        uses: actions/cache@v4
+        with:
+          path: ~/.ccache
+          key: ccache-${{ runner.os }}-${{ hashFiles('Tibia/silnik/canary_test/testyy/CMakeLists.txt','Tibia/silnik/canary_test/testyy/vcpkg.json') }}
+          restore-keys: |
+            ccache-${{ runner.os }}-
+
+      - name: Cache SonarCloud analysis data
+        uses: actions/cache@v4
+        with:
+          path: ~/.cfamily
+          key: sonar-cfamily-${{ runner.os }}-${{ hashFiles('Tibia/silnik/canary_test/testyy/CMakeLists.txt','Tibia/silnik/canary_test/testyy/vcpkg.json') }}
+          restore-keys: |
+            sonar-cfamily-${{ runner.os }}-
+
+      - name: Cache SonarCloud packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.sonar/cache
+          key: sonar-packages-${{ runner.os }}
+          restore-keys: |
+            sonar-packages-${{ runner.os }}-
+
+      - name: Resolve vcpkg commit (builtin-baseline or fallback)
+        id: vcpkg-step
+        shell: bash
+        working-directory: Tibia/silnik/canary_test/testyy
+        run: |
+          fallback=4c4abc2e8727221ede31021349386dac674309b0
+          if [ -f vcpkg.json ]; then
+            commit=$(python3 -c "import json; print(json.load(open('vcpkg.json')).get('builtin-baseline',''))")
+          else
+            commit=""
+          fi
+          if [[ $commit =~ ^[0-9a-f]{40}$ ]]; then
+            echo "vcpkgGitCommitId=$commit" >> "$GITHUB_OUTPUT"
+            echo "Using builtin-baseline $commit"
+          else
+            echo "vcpkgGitCommitId=$fallback" >> "$GITHUB_OUTPUT"
+            echo "Using fallback commit $fallback"
+          fi
+
+      - name: Cache vcpkg installed packages
+        uses: actions/cache@v4
+        with:
+          path: Tibia/silnik/canary_test/testyy/build/vcpkg_installed
+          key: vcpkg-installed-${{ runner.os }}-${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}
+          restore-keys: |
+            vcpkg-installed-${{ runner.os }}-
+
+      - name: Setup CMake + Ninja
+        uses: lukka/get-cmake@latest
+        with:
+          cmakeVersion: '~3.27.0'
+
+      - name: Setup vcpkg (manifest install)
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgGitURL: https://github.com/microsoft/vcpkg.git
+          vcpkgGitCommitId: ${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}
+          runVcpkgInstall: true
+          vcpkgJsonGlob: Tibia/silnik/canary_test/testyy/vcpkg.json
+          vcpkgConfigurationJsonGlob: Tibia/silnik/canary_test/testyy/vcpkg-configuration.json
+          vcpkgJsonIgnores: "['**/vcpkg/**','**/browser/overlay-ports/**']"
+          doNotCache: false
+
+      - name: vcpkg manifest validation (preflight)
+        run: |
+          echo "vcpkg: printing installed ports and validating manifest..."
+          $VCPKG_ROOT/vcpkg search || echo "vcpkg search failed (ignored)"
+          $VCPKG_ROOT/vcpkg install || (echo "vcpkg manifest install failed; please check ports in vcpkg.json"; exit 1)
+
+      - name: Install sonar-scanner
+        uses: SonarSource/sonarqube-scan-action/install-build-wrapper@v6
+
+      - name: Generate compilation database
+        run: |
+          mkdir -p build
+          cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+                -DCMAKE_BUILD_TYPE=Debug \
+                -DCMAKE_TOOLCHAIN_FILE="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" \
+                -DOPTIONS_ENABLE_CCACHE=ON \
+                -DSPEED_UP_BUILD_UNITY=OFF \
+                -DOTC_ENABLE_TTF=OFF \
+                -DOTC_ENABLE_HARFBUZZ=OFF \
+                -DOTC_ENABLE_FRIBIDI=OFF \
+                -S . -B build
+
+      - name: Run PR sonar-scanner
+        if: ${{ (github.event_name == 'pull_request' || github.event_name == 'pull_request_target') && env.SONAR_TOKEN != '' }}
+        uses: SonarSource/sonarqube-scan-action@v6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ env.SONAR_TOKEN }}
+        with:
+          projectBaseDir: Tibia/silnik/canary_test/testyy
+          args: >
+            -Dsonar.cfamily.threads=${{ steps.cpu-count.outputs.count }}
+            -Dsonar.cfamily.cache.enabled=true
+            "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
+            -Dsonar.cfamily.compile-commands=build/compile_commands.json
+            -Dsonar.pullrequest.key=${{ github.event.pull_request.number }}
+            -Dsonar.pullrequest.branch=${{ github.event.pull_request.head.ref }}
+            -Dsonar.pullrequest.base=${{ github.event.pull_request.base.ref }}
+
+      - name: Run sonar-scanner
+        if: ${{ github.event_name == 'push' && env.SONAR_TOKEN != '' }}
+        uses: SonarSource/sonarqube-scan-action@v6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ env.SONAR_TOKEN }}
+        with:
+          projectBaseDir: Tibia/silnik/canary_test/testyy
+          args: >
+            -Dsonar.cfamily.threads=${{ steps.cpu-count.outputs.count }}
+            -Dsonar.cfamily.cache.enabled=true
+            "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
+            -Dsonar.cfamily.compile-commands=build/compile_commands.json
+

@@ -1,0 +1,138 @@
+---
+name: Analysis - SonarCloud (Android)
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+env:
+  CMAKE_BUILD_PARALLEL_LEVEL: 4
+  MAKEFLAGS: '-j 4'
+  ANDROID_NDK_VERSION: r23c
+
+jobs:
+  sonarcloud-android:
+    name: SonarCloud (Android)
+    runs-on: ubuntu-22.04
+    env:
+      SONAR_TOKEN: ${{ secrets.SONARCLOUDTOKEN }}
+    defaults:
+      run:
+        working-directory: Tibia/silnik/canary_test/testyy
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Remove nested git directories (upstream mirrors)
+        shell: bash
+        run: |
+          rm -rf oryginall/canary-serwer/.git || true
+          rm -rf oryginall/otclient/.git || true
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Android NDK
+        uses: nttld/setup-ndk@v1
+        id: setup-ndk
+        with:
+          ndk-version: ${{ env.ANDROID_NDK_VERSION }}
+
+      - name: Cache SonarCloud analysis data
+        uses: actions/cache@v4
+        with:
+          path: ~/.cfamily
+          key: sonar-cfamily-Android-${{ hashFiles('Tibia/silnik/canary_test/testyy/CMakeLists.txt') }}
+          restore-keys: |
+            sonar-cfamily-Android-
+
+      - name: Cache SonarCloud packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.sonar/cache
+          key: sonar-packages-Android
+          restore-keys: |
+            sonar-packages-Android-
+
+      - name: Setup CMake + Ninja
+        uses: lukka/get-cmake@latest
+        with:
+          cmakeVersion: '~3.27.0'
+
+      - name: Install protobuf compiler
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y protobuf-compiler libprotobuf-dev
+
+      - name: Generate compilation database (Android arm64-v8a)
+        env:
+          ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
+        run: |
+          rm -rf build-android
+          mkdir -p build-android
+          cmake -G "Ninja" \
+                -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+                -DCMAKE_BUILD_TYPE=Debug \
+                -DCMAKE_SYSTEM_NAME=Android \
+                -DCMAKE_ANDROID_ARCH_ABI=arm64-v8a \
+                -DCMAKE_ANDROID_NDK=$ANDROID_NDK_HOME \
+                -DCMAKE_ANDROID_STL_TYPE=c++_shared \
+                -DSPEED_UP_BUILD_UNITY=OFF \
+                -DOTC_ENABLE_PHYSFS=OFF \
+                -DOTC_ENABLE_LZMA=OFF \
+                -DOTC_ENABLE_NLOHMANN_JSON=OFF \
+                -DOTC_ENABLE_PUGIXML=OFF \
+                -DOTC_ENABLE_FMT=OFF \
+                -DOTC_ENABLE_HTTPLIB=OFF \
+                -DOTC_ENABLE_GMP=OFF \
+                -DOTC_ENABLE_TTF=OFF \
+                -DOTC_ENABLE_HARFBUZZ=OFF \
+                -DOTC_ENABLE_FRIBIDI=OFF \
+                -DOTC_ENABLE_PROTOBUF=OFF \
+                -DProtobuf_PROTOC_EXECUTABLE=$(which protoc) \
+                -S . -B build-android
+
+      - name: Run PR sonar-scanner
+        if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && env.SONAR_TOKEN != '' }}
+        uses: SonarSource/sonarqube-scan-action@v6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ env.SONAR_TOKEN }}
+        with:
+          projectBaseDir: Tibia/silnik/canary_test/testyy
+          args: >
+            -Dsonar.cfamily.threads=4
+            -Dsonar.cfamily.cache.enabled=true
+            "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
+            -Dsonar.cfamily.compile-commands=build-android/compile_commands.json
+            -Dsonar.pullrequest.key=${{ github.event.pull_request.number }}
+            -Dsonar.pullrequest.branch=${{ github.event.pull_request.head.ref }}
+            -Dsonar.pullrequest.base=${{ github.event.pull_request.base.ref }}
+
+      - name: Run sonar-scanner
+        if: ${{ github.event_name == 'push' && env.SONAR_TOKEN != '' }}
+        uses: SonarSource/sonarqube-scan-action@v6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ env.SONAR_TOKEN }}
+        with:
+          projectBaseDir: Tibia/silnik/canary_test/testyy
+          args: >
+            -Dsonar.cfamily.threads=4
+            -Dsonar.cfamily.cache.enabled=true
+            "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
+            -Dsonar.cfamily.compile-commands=build-android/compile_commands.json
+

@@ -30,7 +30,7 @@
     "otclient_src": 1765490312.7852385,
     "otclient_tools": 1765508415.5008683,
     "server": 1765490339.4466524,
-    "errors": 1765501169.0317209
+    "errors": 1765508423.926086
   },
   "last_processed": {
     "npc": {
@@ -155,7 +155,7 @@
     },
     "errors": {
       "count": 0,
-      "timestamp": 1765493969.0317097
+      "timestamp": 1765501223.9260807
     }
   },
   "consecutive_zeros": {
@@ -189,7 +189,7 @@
     "otclient_src": 2,
     "otclient_tools": 8,
     "server": 2,
-    "errors": 6
+    "errors": 8
   },
   "total_processed": {},
   "migrations_done": false

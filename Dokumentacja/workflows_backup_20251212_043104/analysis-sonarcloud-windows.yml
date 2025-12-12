@@ -1,0 +1,136 @@
+name: Analysis - SonarCloud (Windows)
+
+on:
+  workfhhhhhhlow_dispatch:
+  pull_reqhhhhhuest_target:
+    types: [opened, synchronize, reopened]
+  push:
+    branches: [ master ]
+
+permhhhhissions:
+  contents: read
+  pull-requests: read
+
+ehhhnv:
+  CMAKE_BUILhhhhhD_PARALLEL_LEVEL: 4
+  MAKEFLAGS: '-j 4'
+  VCPKG_FEATURE_FLAGS: manifests,binarycaching
+  VCPKG_BINARY_SOURCES: clear;x-gha,readwrite
+  VCPKG_BUILD_TYPE: release
+  VCPKG_DEFAULT_TRIPLET: x64-windows
+  VCPKG_DEFAULT_HOST_TRIPLET: x64-windows
+
+jobs:
+  sonarcloud-windows:
+    name: SonarCloud (Windows)
+    runs-on: windows-2022
+    env:
+      SONAR_TOKEN: ${{ secrets.SONARCLOUDTOKEN }}
+    defaults:
+      run:
+        working-directory: Tibia/silnik/canary_test/testyy
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Remove nested git directories (upstream mirrors)
+        shell: bash
+        run: |
+          rm -rf oryginall/canary-serwer/.git || true
+          rm -rf oryginall/otclient/.git || true
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1.1
+
+      - name: Get vcpkg commit ID
+        id: vcpkg-step
+        shell: pwsh
+        run: |
+          $json = Get-Content vcpkg.json -Raw | ConvertFrom-Json
+          $commit = $json.'builtin-baseline'
+          echo "vcpkgGitCommitId=$commit" >> $env:GITHUB_OUTPUT
+
+      - name: Cache vcpkg artifacts
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ github.workspace }}\vcpkg\installed
+            ${{ github.workspace }}\vcpkg\buildtrees
+            ${{ github.workspace }}\vcpkg\downloads
+          key: vcpkg-sonar-x64-windows-${{ hashFiles('Tibia/silnik/canary_test/testyy/vcpkg.json') }}
+          restore-keys: |
+            vcpkg-sonar-x64-windows-
+
+      - name: Cache SonarCloud analysis data
+        uses: actions/cache@v4
+        with:
+          path: ~/.cfamily
+          key: sonar-cfamily-Windows-${{ hashFiles('Tibia/silnik/canary_test/testyy/CMakeLists.txt','Tibia/silnik/canary_test/testyy/vcpkg.json') }}
+          restore-keys: |
+            sonar-cfamily-Windows-
+
+      - name: Cache SonarCloud packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.sonar/cache
+          key: sonar-packages-Windows
+          restore-keys: |
+            sonar-packages-Windows-
+
+      - name: Install vcpkg
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgGitCommitId: ${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}
+
+      - name: Setup CMake + Ninja
+        uses: lukka/get-cmake@latest
+        with:
+          cmakeVersion: '~3.27.0'
+
+      - name: Generate compilation database
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path build | Out-Null
+          cmake -G "Ninja" `
+                -DCMAKE_EXPORT_COMPILE_COMMANDS=ON `
+                -DCMAKE_BUILD_TYPE=Debug `
+                -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" `
+                -DSPEED_UP_BUILD_UNITY=OFF `
+                -DOTC_ENABLE_TTF=OFF `
+                -DOTC_ENABLE_HARFBUZZ=OFF `
+                -DOTC_ENABLE_FRIBIDI=OFF `
+                -S . -B build
+
+      - name: Run PR sonar-scanner
+        if: ${{ (github.event_name == 'pull_request' || github.event_name == 'pull_request_target') && env.SONAR_TOKEN != '' }}
+        uses: SonarSource/sonarqube-scan-action@v6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ env.SONAR_TOKEN }}
+        with:
+          projectBaseDir: Tibia/silnik/canary_test/testyy
+          args: >
+            -Dsonar.cfamily.threads=4
+            -Dsonar.cfamily.cache.enabled=true
+            "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
+            -Dsonar.cfamily.compile-commands=build/compile_commands.json
+            -Dsonar.pullrequest.key=${{ github.event.pull_request.number }}
+            -Dsonar.pullrequest.branch=${{ github.event.pull_request.head.ref }}
+            -Dsonar.pullrequest.base=${{ github.event.pull_request.base.ref }}
+
+      - name: Run sonar-scanner
+        if: ${{ github.event_name == 'push' && env.SONAR_TOKEN != '' }}
+        uses: SonarSource/sonarqube-scan-action@v6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ env.SONAR_TOKEN }}
+        with:
+          projectBaseDir: Tibia/silnik/canary_test/testyy
+          args: >
+            -Dsonar.cfamily.threads=4
+            -Dsonar.cfamily.cache.enabled=true
+            "-Dsonar.cfamily.cache.path=$HOME/.cfamily"
+            -Dsonar.cfamily.compile-commands=build/compile_commands.json

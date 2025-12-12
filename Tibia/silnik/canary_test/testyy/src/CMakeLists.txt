@@ -872,46 +872,47 @@ elseif(ANDROID)
           $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
           ${LUAJIT_INCLUDE_DIR}
           ${CMAKE_THREAD_LIBS_INIT}
-          ${Protobuf_INCLUDE_DIRS}
-          ${GMP_INCLUDE_DIR}
+          $<$<BOOL:${OTC_ENABLE_PROTOBUF}>:${Protobuf_INCLUDE_DIRS}>
+          $<$<BOOL:${OTC_ENABLE_GMP}>:${GMP_INCLUDE_DIR}>
           $<$<BOOL:${OTC_ENABLE_OPENSSL}>:${OPENSSL_INCLUDE_DIR}>
-          ${PHYSFS_INCLUDE_DIR}
+          $<$<BOOL:${OTC_ENABLE_PHYSFS}>:${PHYSFS_INCLUDE_DIR}>
           ${EGL_INCLUDE_DIR}
           ${PARALLEL_HASHMAP_INCLUDE_DIRS}
-          ${NLOHMANN_JSON_INCLUDE_DIR}
+          $<$<BOOL:${OTC_ENABLE_NLOHMANN_JSON}>:${NLOHMANN_JSON_INCLUDE_DIR}>
           ${MINIZIP_INCLUDE_DIR}
   )
   target_link_libraries(${PROJECT_NAME}
           PRIVATE
           ${LUA_LIBRARY}
           ${LUAJIT_LIBRARY}
-          ${PHYSFS_LIBRARY}
+          $<$<BOOL:${OTC_ENABLE_PHYSFS}>:${PHYSFS_LIBRARY}>
           ${ZLIB_LIBRARY}
-          ${NLOHMANN_JSON_LIBRARY}
+          $<$<BOOL:${OTC_ENABLE_NLOHMANN_JSON}>:${NLOHMANN_JSON_LIBRARY}>
           ${EGL_LIBRARY}
-          ${OGG_LIBRARY}
-          ${VORBIS_LIBRARY}
-          ${VORBISFILE_LIBRARY}
-          ${GMP_LIBRARY}
-          ${OpenAL_LIBRARY}
+          $<$<NOT:$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>>:${OGG_LIBRARY}>
+          $<$<NOT:$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>>:${VORBIS_LIBRARY}>
+          $<$<NOT:$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>>:${VORBISFILE_LIBRARY}>
+          $<$<BOOL:${OTC_ENABLE_GMP}>:${GMP_LIBRARY}>
+          $<$<NOT:$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>>:${OpenAL_LIBRARY}>
           $<$<BOOL:${OTC_ENABLE_OPENSSL}>:${OPENSSL_LIBRARIES}>
           ${STDUUID}
           ${MINIZIP_LIBRARY}
 
-          protobuf::libprotobuf protobuf
+          $<$<BOOL:${OTC_ENABLE_PROTOBUF}>:protobuf::libprotobuf>
+          $<$<BOOL:${OTC_ENABLE_PROTOBUF}>:protobuf>
           $<$<BOOL:${OTC_ENABLE_ABSEIL}>:absl::log_internal_check_op>
           Threads::Threads
           asio::asio
-          OpenSLES
-          Vorbis::vorbis
-          Vorbis::vorbisfile
-          LibLZMA::LibLZMA
+          $<$<NOT:$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>>:OpenSLES>
+          $<$<NOT:$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>>:Vorbis::vorbis>
+          $<$<NOT:$<BOOL:${TOGGLE_FRAMEWORK_SOUND}>>:Vorbis::vorbisfile>
+          $<$<BOOL:${OTC_ENABLE_LZMA}>:LibLZMA::LibLZMA>
           $<$<NOT:$<BOOL:${OTC_SKIP_GAME_ACTIVITY}>>:game-activity::game-activity>
           GLESv3
           android
           log
-          pugixml::pugixml
-          fmt::fmt-header-only
+          $<$<BOOL:${OTC_ENABLE_PUGIXML}>:pugixml::pugixml>
+          $<$<BOOL:${OTC_ENABLE_FMT}>:fmt::fmt-header-only>
   )
 
 elseif(WASM)

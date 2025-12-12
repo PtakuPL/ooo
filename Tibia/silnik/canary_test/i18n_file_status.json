@@ -1,6 +1,6 @@
 {
   "files": {
-    "data-otservbr-global/monster/quests/heart_of_destruction/damage_resonance.lua": {
+    "data-otservbr-global/monster/quests/rotten_blood/rotten_man-maggot.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -15,10 +15,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:37.895834",
+      "completed_at": "2025-12-12T03:59:10.114826",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/heart_of_destruction/the_rage.lua": {
+    "data-otservbr-global/monster/quests/rotten_blood/sopping_corpus.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -33,10 +33,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:38.039305",
+      "completed_at": "2025-12-12T03:59:10.385299",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/heart_of_destruction/outburst.lua": {
+    "data-otservbr-global/monster/quests/rotten_blood/darklight_emitter.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -51,10 +51,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:38.180561",
+      "completed_at": "2025-12-12T03:59:10.569481",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/heart_of_destruction/spark_of_destruction.lua": {
+    "data-otservbr-global/monster/quests/rotten_blood/oozing_carcass.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -69,10 +69,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:40.438487",
+      "completed_at": "2025-12-12T03:59:10.879362",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/heart_of_destruction/overcharged_disruption.lua": {
+    "data-otservbr-global/monster/quests/rotten_blood/darklight_striker.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -87,10 +87,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:44.028366",
+      "completed_at": "2025-12-12T03:59:11.135010",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/heart_of_destruction/charged_anomaly.lua": {
+    "data-otservbr-global/monster/quests/rotten_blood/mushroom.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -105,10 +105,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:45.141607",
+      "completed_at": "2025-12-12T03:59:11.333174",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/heart_of_destruction/foreshock.lua": {
+    "data-otservbr-global/monster/quests/rotten_blood/meandering_mushroom.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -123,10 +123,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:47.030231",
+      "completed_at": "2025-12-12T03:59:12.145667",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/heart_of_destruction/overcharge.lua": {
+    "data-otservbr-global/monster/quests/rotten_blood/sopping_carcass.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -141,10 +141,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:47.190300",
+      "completed_at": "2025-12-12T03:59:11.926072",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/heart_of_destruction/greed.lua": {
+    "data-otservbr-global/monster/quests/rotten_blood/echo_of_murcion.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -159,10 +159,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:47.343577",
+      "completed_at": "2025-12-12T03:59:12.326741",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/heart_of_destruction/aftershock.lua": {
+    "data-otservbr-global/monster/quests/rotten_blood/wandering_pillar.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -177,10 +177,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:47.521362",
+      "completed_at": "2025-12-12T03:59:12.536761",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/heart_of_destruction/eradicator2.lua": {
+    "data-otservbr-global/monster/quests/rotten_blood/mycobiontic_beetle.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -195,10 +195,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:47.697621",
+      "completed_at": "2025-12-12T03:59:12.722226",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/heart_of_destruction/the_destruction.lua": {
+    "data-otservbr-global/monster/quests/rotten_blood/bloated_man-maggot.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -213,10 +213,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:47.892374",
+      "completed_at": "2025-12-12T03:59:12.922142",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/isle_of_evil/mephiles.lua": {
+    "data-otservbr-global/monster/quests/rotten_blood/echo_of_ichgahal.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -231,10 +231,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:48.080484",
+      "completed_at": "2025-12-12T03:59:13.097933",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/isle_of_evil/dirtbeard.lua": {
+    "data-otservbr-global/monster/quests/rotten_blood/darklight_construct.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -249,192 +249,12 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:48.266784",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/isle_of_evil/boogey.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:48.499975",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/isle_of_evil/monstor.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:48.686675",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/isle_of_evil/doctor_perhaps.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:48.851356",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/isle_of_evil/evil_mastermind.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:49.010396",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/annihilator/angry_demon.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:49.184854",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/dangerous_depth/captured_dwarf.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:49.345516",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/dangerous_depth/aggressive_lava.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:49.505211",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/dangerous_depth/snail_slime.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:49.671976",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/dangerous_depth/fiery_blood.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:49.828389",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/dangerous_depth/organic_matter.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:49.978419",
+      "completed_at": "2025-12-12T03:59:13.276961",
       "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 24,
+    "files_completed": 14,
     "total_keys": 0
   }
 }

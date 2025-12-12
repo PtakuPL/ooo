@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 7500, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-12 01:56:43 UTC  
+> **Aktualizacja:** 2025-12-12 01:56:59 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 28857
 
 ---
@@ -69,7 +69,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#29** | od uruchomienia |
+| 🔄 Cykl aktualny | **#30** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **156** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -170,17 +170,17 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    29 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    30 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (skanowanie plików)          │
-│ Kategoria: 📁 ACTIONS                                │
+│ Kategoria: 📁 QUESTS                                 │
 ├─────────────────────────────────────────────────────────────────┤
 │ 📊 Pliki przeskanowane:    186 (wszystkie kategorie)          │
-│    ├─ Kategoria ACTIONS:      0 kluczy EN                    │
+│    ├─ Kategoria QUESTS:      0 kluczy EN                    │
 │    └─ Total kluczy EN:  28857                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-12 01:56:43            │
+│ 📅 Ostatnia aktualizacja: 2025-12-12 01:56:59            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -195,12 +195,13 @@
 | ⬜ Plików bez kluczy | **30** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **156** | przez workera w tej sesji |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#29** | continuous mode |
+| 🔄 Cykli wykonanych | **#30** | continuous mode |
 
 ---
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `quests` +0 kluczy @ 01:56:57
 - ⚡ `actions` +0 kluczy @ 01:56:41
 - 👹 `monsters` +0 kluczy @ 01:56:29
 - 📜 `scripts` +0 kluczy @ 01:56:15
@@ -208,7 +209,6 @@
 - ⚡ `errors` +0 kluczy @ 23:59:29
 - ⚡ `otclient_tools` +0 kluczy @ 23:59:19
 - ⚡ `otclient_data` +0 kluczy @ 23:59:09
-- ⚡ `otclient_modules` +0 kluczy @ 23:58:56
 
 
 ---
@@ -371,7 +371,7 @@
 | items | 13749 | 0 | 6 | ⏭️ Skip 0m |
 | monsters | 7341 | 0 | 8 | ⏭️ Skip 119m |
 | npc | 5339 | 0 | 8 | ⏭️ Skip 117m |
-| html | 1495 | 0 | 6 | ⏭️ Skip 2m |
+| html | 1495 | 0 | 6 | ⏭️ Skip 1m |
 | spells | 304 | 0 | 2 | ✅ Active |
 | client | 242 | 0 | 0 | ✅ Active |
 | raids | 147 | 0 | 6 | ✅ Active |
@@ -379,15 +379,15 @@
 | php | 59 | 0 | 6 | ⏭️ Skip 1m |
 | startup | 23 | 0 | 6 | ⏭️ Skip 1m |
 | libs | 21 | 0 | 6 | ⏭️ Skip 0m |
-| modules | 16 | 0 | 6 | ⏭️ Skip 1m |
+| modules | 16 | 0 | 6 | ⏭️ Skip 0m |
 | messages | 11 | 0 | 0 | ✅ Active |
-| chatchannels | 8 | 0 | 6 | ⏭️ Skip 1m |
+| chatchannels | 8 | 0 | 6 | ⏭️ Skip 0m |
 | events | 5 | 0 | 6 | ⏭️ Skip 0m |
 | actions | 0 | 0 | 8 | ⏭️ Skip 119m |
 | cpp | 0 | 0 | 2 | ⏳ Empty |
 | errors | 0 | 0 | 6 | ⏭️ Skip 2m |
 | npclib | 0 | 0 | 6 | ⏭️ Skip 1m |
-| quests | 0 | 0 | 6 | ⏳ Empty |
+| quests | 0 | 0 | 8 | ⏭️ Skip 119m |
 | server | 0 | 0 | 2 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
 | world | 0 | 0 | 6 | ⏳ Empty |
@@ -402,20 +402,19 @@
 | scripts | 119m | 8x | Progresywny backoff |
 | monsters | 119m | 8x | Progresywny backoff |
 | actions | 119m | 8x | Progresywny backoff |
-| creaturescripts | 0m | 6x | Progresywny backoff |
-| globalevents | 0m | 6x | Progresywny backoff |
+| quests | 119m | 8x | Progresywny backoff |
 | items | 0m | 6x | Progresywny backoff |
 | mounts | 0m | 6x | Progresywny backoff |
 | libs | 0m | 6x | Progresywny backoff |
 | events | 0m | 6x | Progresywny backoff |
-| chatchannels | 1m | 6x | Progresywny backoff |
-| modules | 1m | 6x | Progresywny backoff |
+| chatchannels | 0m | 6x | Progresywny backoff |
+| modules | 0m | 6x | Progresywny backoff |
 | startup | 1m | 6x | Progresywny backoff |
 | npclib | 1m | 6x | Progresywny backoff |
 | dataroot | 1m | 6x | Progresywny backoff |
 | php | 1m | 6x | Progresywny backoff |
-| html | 2m | 6x | Progresywny backoff |
-| otclient_modules | 2m | 6x | Progresywny backoff |
+| html | 1m | 6x | Progresywny backoff |
+| otclient_modules | 1m | 6x | Progresywny backoff |
 | otclient_data | 2m | 6x | Progresywny backoff |
 | otclient_tools | 2m | 6x | Progresywny backoff |
 | errors | 2m | 6x | Progresywny backoff |
@@ -426,7 +425,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #29 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #30 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -469,7 +468,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 01:56:43  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 01:56:59  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

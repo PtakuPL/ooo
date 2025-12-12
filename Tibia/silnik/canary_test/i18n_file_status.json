@@ -1,6 +1,6 @@
 {
   "files": {
-    "data-otservbr-global/monster/quests/svargrond_arena/warlord/gnorre_chyllson.lua": {
+    "data-otservbr-global/monster/quests/heart_of_destruction/damage_resonance.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -15,10 +15,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:09.984602",
+      "completed_at": "2025-12-12T03:58:37.895834",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/svargrond_arena/warlord/the_masked_marauder.lua": {
+    "data-otservbr-global/monster/quests/heart_of_destruction/the_rage.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -33,10 +33,10 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:10.151844",
+      "completed_at": "2025-12-12T03:58:38.039305",
       "category": "monsters"
     },
-    "data-otservbr-global/monster/quests/svargrond_arena/warlord/svoren_the_mad.lua": {
+    "data-otservbr-global/monster/quests/heart_of_destruction/outburst.lua": {
       "stages": {
         "1_started": {
           "status": "completed",
@@ -51,102 +51,12 @@
         }
       },
       "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:10.344972",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/svargrond_arena/warlord/deathbringer.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:10.506408",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/svargrond_arena/warlord/darakan_the_executioner.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:10.674784",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/svargrond_arena/greenhorn/achad.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:10.803201",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/svargrond_arena/greenhorn/rocky.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:10.963400",
-      "category": "monsters"
-    },
-    "data-otservbr-global/monster/quests/svargrond_arena/greenhorn/bovinus.lua": {
-      "stages": {
-        "1_started": {
-          "status": "completed",
-          "type": "monsters"
-        },
-        "5_extraction_en": {
-          "status": "completed",
-          "keys_added": 1
-        },
-        "8_sync": {
-          "status": "completed"
-        }
-      },
-      "overall_status": "completed",
-      "completed_at": "2025-12-12T03:58:11.145705",
+      "completed_at": "2025-12-12T03:58:38.180561",
       "category": "monsters"
     }
   },
   "global_stats": {
-    "files_completed": 8,
+    "files_completed": 3,
     "total_keys": 0
   }
 }

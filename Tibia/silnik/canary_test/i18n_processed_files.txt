@@ -2190,3 +2190,11 @@ data-canary/monster/bosses/apocalypse.lua
 data-canary/monster/bosses/apprentice_sheng.lua
 data-canary/monster/bosses/bazir.lua
 data-canary/monster/giants/cyclops.lua
+data-canary/monster/giants/cyclops_drone.lua
+data-canary/monster/giants/cyclops_smith.lua
+data-canary/monster/giants/behemoth.lua
+data-canary/monster/dragons/hydra.lua
+data-canary/monster/dragons/dragon_lord.lua
+data-canary/monster/dragons/ice_dragon.lua
+data-canary/monster/dragons/wyrm.lua
+data-canary/monster/dragons/dragon.lua

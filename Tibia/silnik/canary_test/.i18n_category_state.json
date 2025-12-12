@@ -29,7 +29,8 @@
     "otclient_src": 1765490312.7852385,
     "otclient_tools": 1765508415.5008683,
     "server": 1765490339.4466524,
-    "errors": 1765508423.926086
+    "errors": 1765508423.926086,
+    "monsters": 1765509284.8340068
   },
   "last_processed": {
     "npc": {
@@ -41,8 +42,8 @@
       "timestamp": 1765508226.422677
     },
     "monsters": {
-      "count": 21554,
-      "timestamp": 1765508675.1990683
+      "count": 0,
+      "timestamp": 1765508684.8339956
     },
     "actions": {
       "count": 0,
@@ -160,7 +161,7 @@
   "consecutive_zeros": {
     "npc": 14,
     "scripts": 16,
-    "monsters": 0,
+    "monsters": 2,
     "actions": 8,
     "quests": 8,
     "raids": 8,
@@ -191,7 +192,7 @@
     "errors": 8
   },
   "total_processed": {
-    "monsters": 349670
+    "monsters": 349888
   },
   "migrations_done": false
 }

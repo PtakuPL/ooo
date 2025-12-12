@@ -114,5 +114,21 @@
   "monster.bazir.name": "Bazir",
   "monster.bazir.desc": "Bazir",
   "monster.cyclops.name": "Cyclops",
-  "monster.cyclops.desc": "a cyclops"
+  "monster.cyclops.desc": "a cyclops",
+  "monster.cyclops_drone.name": "Cyclops Drone",
+  "monster.cyclops_drone.desc": "a cyclops drone",
+  "monster.cyclops_smith.name": "Cyclops Smith",
+  "monster.cyclops_smith.desc": "a cyclops smith",
+  "monster.behemoth.name": "Behemoth",
+  "monster.behemoth.desc": "a behemoth",
+  "monster.hydra.name": "Hydra",
+  "monster.hydra.desc": "a hydra",
+  "monster.dragon_lord.name": "Dragon Lord",
+  "monster.dragon_lord.desc": "a dragon lord",
+  "monster.ice_dragon.name": "Ice Dragon",
+  "monster.ice_dragon.desc": "an ice dragon",
+  "monster.wyrm.name": "Wyrm",
+  "monster.wyrm.desc": "a wyrm",
+  "monster.dragon.name": "Dragon",
+  "monster.dragon.desc": "a dragon"
 }

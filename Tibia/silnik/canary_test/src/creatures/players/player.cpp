@@ -5956,7 +5956,7 @@ void Player::onCleanseCondition(ConditionType_t type) const {
 
 	auto it = conditionMessages.find(type);
 	if (it != conditionMessages.end()) {
-		sendLocalizedTextMessage(MESSAGE_PARTY, "player.status.cleanse", std::vector<std::string> { it->second });
+		sendLocalizedTextMessage(MESSAGE_PARTY, "player.status.cleanse", std::vector<std::string> { std::string(it->second) });
 	}
 }
 

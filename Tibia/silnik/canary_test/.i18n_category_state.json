@@ -28,7 +28,7 @@
     "otclient_src": 1765490312.7852385,
     "otclient_tools": 1765523212.7019653,
     "server": 1765490339.4466524,
-    "errors": 1765515996.5421033,
+    "errors": 1765523215.9178283,
     "monsters": 1765520098.6233885,
     "mounts": 1765518075.37164
   },
@@ -155,7 +155,7 @@
     },
     "errors": {
       "count": 0,
-      "timestamp": 1765508796.5420938
+      "timestamp": 1765516015.91782
     }
   },
   "consecutive_zeros": {
@@ -189,7 +189,7 @@
     "otclient_src": 2,
     "otclient_tools": 12,
     "server": 2,
-    "errors": 10
+    "errors": 14
   },
   "total_processed": {
     "monsters": 349888,

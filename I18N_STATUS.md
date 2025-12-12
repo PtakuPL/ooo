@@ -2,7 +2,7 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-12 04:04:55 UTC  
+> **Aktualizacja:** 2025-12-12 04:04:57 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 21648
 
 ---
@@ -180,7 +180,7 @@
 │    ├─ Kategoria QUESTS:      0 kluczy EN                    │
 │    └─ Total kluczy EN:  21648                                 │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: 2025-12-12 04:04:55            │
+│ 📅 Ostatnia aktualizacja: 2025-12-12 04:04:57            │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -201,6 +201,7 @@
 
 ## 📜 Historia ostatnich operacji
 
+- ⚡ `quests` +0 kluczy @ 04:04:54
 - ⚡ `actions` +0 kluczy @ 04:04:52
 - 👹 `monsters` +0 kluczy @ 04:04:44
 - 📜 `scripts` +0 kluczy @ 03:57:06
@@ -208,7 +209,6 @@
 - ⚡ `errors` +0 kluczy @ 02:00:23
 - ⚡ `otclient_tools` +0 kluczy @ 02:00:15
 - ⚡ `otclient_data` +0 kluczy @ 02:00:06
-- ⚡ `otclient_modules` +0 kluczy @ 01:59:58
 
 
 ---
@@ -388,7 +388,7 @@
 | cpp | 0 | 0 | 2 | ⏳ Empty |
 | errors | 0 | 0 | 8 | ⏳ Empty |
 | npclib | 0 | 0 | 8 | ⏳ Empty |
-| quests | 0 | 0 | 8 | ⏳ Empty |
+| quests | 0 | 0 | 11 | ⏭️ Skip 119m |
 | server | 0 | 0 | 2 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
 | world | 0 | 0 | 8 | ⏳ Empty |
@@ -402,6 +402,7 @@
 | npc | 109m | 14x | Progresywny backoff |
 | scripts | 112m | 16x | Progresywny backoff |
 | actions | 119m | 9x | Progresywny backoff |
+| quests | 119m | 11x | Progresywny backoff |
 | monsters | 9m | 2x | Progresywny backoff |
 
 ---
@@ -453,7 +454,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 04:04:55  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-12 04:04:57  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

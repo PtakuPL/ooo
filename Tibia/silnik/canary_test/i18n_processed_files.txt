@@ -875,3 +875,5 @@ data-otservbr-global/monster/quests/heart_of_destruction/disruption.lua
 data-otservbr-global/monster/quests/heart_of_destruction/damage_resonance.lua
 data-otservbr-global/monster/quests/heart_of_destruction/the_rage.lua
 data-otservbr-global/monster/quests/heart_of_destruction/outburst.lua
+data-otservbr-global/monster/quests/heart_of_destruction/spark_of_destruction.lua
+data-otservbr-global/monster/quests/heart_of_destruction/overcharged_disruption.lua

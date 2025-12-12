@@ -24,84 +24,87 @@
 
 | Plik | Ścieżka | Funkcja | Status |
 |------|---------|---------|--------|
-| protocolgame.cpp | `src/server/network/protocol/` | Wysyłanie pakietów do klienta | ⏳ DO ANALIZY |
-| protocolgame.hpp | `src/server/network/protocol/` | Deklaracje metod protokołu | ⏳ DO ANALIZY |
-| player.cpp | `src/creatures/players/` | Metody sendTextMessage | ⏳ DO ANALIZY |
-| player.hpp | `src/creatures/players/` | Deklaracje player | ⏳ DO ANALIZY |
+| protocolgame.cpp | `src/server/network/protocol/` | sendLocalizedTextMessage() | ✅ ZAIMPLEMENTOWANO |
+| protocolgame.hpp | `src/server/network/protocol/` | LocalizedTextMessage struct | ✅ ZAIMPLEMENTOWANO |
+| player.cpp | `src/creatures/players/` | Metody sendTextMessage | ⏳ DO INTEGRACJI |
+| player.hpp | `src/creatures/players/` | Deklaracje player | ⏳ DO INTEGRACJI |
 
 ### KLIENT (testyy)
 
 | Plik | Ścieżka | Funkcja | Status |
 |------|---------|---------|--------|
-| protocolgame.cpp | `testyy/src/client/` | Parsowanie pakietów z serwera | ⏳ DO ANALIZY |
-| keyboard.lua | `testyy/modules/corelib/` | Funkcja tr() do tłumaczeń | ✅ JUŻ ISTNIEJE |
-| locales/*.lua | `testyy/data/locales/` | Słowniki tłumaczeń | ✅ JUŻ ISTNIEJĄ |
+| protocolcodes.h | `src/client/` | GameServerLocalizedTextMessage = 188 | ✅ ZAIMPLEMENTOWANO |
+| protocolgame.h | `src/client/` | parseLocalizedTextMessage() deklaracja | ✅ ZAIMPLEMENTOWANO |
+| protocolgameparse.cpp | `src/client/` | parseLocalizedTextMessage() implementacja | ✅ ZAIMPLEMENTOWANO |
+| locales.lua | `modules/client_locales/` | Funkcja tr() do tłumaczeń | ✅ JUŻ ISTNIEJE |
+| *.lua | `data/locales/` | Słowniki tłumaczeń | ✅ JUŻ ISTNIEJĄ |
 
 ---
 
 ## 🔧 ETAPY IMPLEMENTACJI
 
-### ETAP 1: Analiza protokołu (AKTUALNY)
-- [ ] Przeanalizować `sendTextMessage()` na serwerze
-- [ ] Przeanalizować `parseTextMessage()` na kliencie
-- [ ] Zidentyfikować opcode dla wiadomości tekstowych
-- [ ] Udokumentować obecny format pakietu
+### ETAP 1: Analiza protokołu ✅ ZAKOŃCZONY
+- [x] Przeanalizować `sendTextMessage()` na serwerze
+- [x] Przeanalizować `parseTextMessage()` na kliencie
+- [x] Zidentyfikować opcode dla wiadomości tekstowych (0xB4 = 180)
+- [x] Udokumentować obecny format pakietu
 
-### ETAP 2: Modyfikacja serwera
-- [ ] Dodać nową metodę `sendLocalizedTextMessage(type, text, i18nKey)`
-- [ ] Rozszerzyć pakiet o pole `hasI18nKey` + `i18nKey`
-- [ ] Przetestować że stary klient nadal działa (kompatybilność)
-- [ ] Zmodyfikować miejsca które wysyłają zlokalizowane teksty
+### ETAP 2: Modyfikacja serwera ✅ ZAKOŃCZONY
+- [x] Dodać strukturę `LocalizedTextMessage` w `protocolgame.hpp`
+- [x] Dodać metodę `sendLocalizedTextMessage()` w `protocolgame.cpp`
+- [x] Użyć opcode 0xBC (188) dla nowych wiadomości
+- [ ] Zintegrować z `player.cpp` (wywołania)
 
-### ETAP 3: Modyfikacja klienta
-- [ ] Rozszerzyć `parseTextMessage()` o odczyt `i18nKey`
-- [ ] Zintegrować z funkcją `tr()` z `keyboard.lua`
-- [ ] Dodać fallback gdy brak tłumaczenia
-- [ ] Przetestować wyświetlanie tłumaczonych tekstów
+### ETAP 3: Modyfikacja klienta ✅ ZAKOŃCZONY
+- [x] Dodać opcode `GameServerLocalizedTextMessage = 188` w `protocolcodes.h`
+- [x] Dodać deklarację `parseLocalizedTextMessage()` w `protocolgame.h`
+- [x] Dodać case w switch głównego parsera
+- [x] Zaimplementować `parseLocalizedTextMessage()` z integracją `tr()`
 
-### ETAP 4: Migracja kluczy
+### ETAP 4: Migracja kluczy (DO ZROBIENIA)
 - [ ] Przenieść klucze z `i18n/en/*.json` (serwer) do formatu klienta
 - [ ] Stworzyć skrypt konwersji JSON → Lua locales
 - [ ] Wygenerować pliki dla wszystkich języków
 
-### ETAP 5: Testy i dokumentacja
+### ETAP 5: Testy i dokumentacja (DO ZROBIENIA)
 - [ ] Test end-to-end: NPC mówi → klient wyświetla w języku gracza
 - [ ] Test różnych języków klienta
 - [ ] Dokumentacja dla deweloperów
 
 ---
 
-## 📝 NOTATKI Z ANALIZY
+## 📝 NOTATKI Z IMPLEMENTACJI
 
-### Serwer - sendTextMessage
+### Serwer - sendLocalizedTextMessage
 
-*Do uzupełnienia po analizie plików*
+\`\`\`cpp
+// Nowa struktura (protocolgame.hpp)
+struct LocalizedTextMessage : public TextMessage {
+    std::string i18nKey;  // Klucz tłumaczenia dla klienta
+};
 
-```cpp
-// Obecna sygnatura (do potwierdzenia):
-void ProtocolGame::sendTextMessage(const TextMessage& message);
-```
+// Nowa metoda (protocolgame.cpp)
+void ProtocolGame::sendLocalizedTextMessage(const LocalizedTextMessage &message);
+// Opcode: 0xBC (188)
+\`\`\`
 
-### Klient - parseTextMessage
+### Klient - parseLocalizedTextMessage
 
-*Do uzupełnienia po analizie plików*
+\`\`\`cpp
+// Nowy opcode (protocolcodes.h)
+GameServerLocalizedTextMessage = 188
 
-```cpp
-// Obecna sygnatura (do potwierdzenia):
-void ProtocolGame::parseTextMessage(const InputMessagePtr& msg);
-```
+// Parser (protocolgameparse.cpp)
+void ProtocolGame::parseLocalizedTextMessage(const InputMessagePtr& msg);
+// Wywołuje g_lua.callGlobalField<std::string>("", "tr", i18nKey)
+\`\`\`
 
-### Format pakietu tekstowego
+### Format pakietu LocalizedTextMessage
 
-*Do uzupełnienia po analizie*
-
-```
-Obecny format:
-[opcode:byte][type:byte][text:string]
-
-Proponowany format:
-[opcode:byte][type:byte][text:string][hasI18nKey:byte][i18nKey:string?]
-```
+\`\`\`
+[0xBC:byte][type:byte][...dane wg typu...][text:string][i18nKey:string]
+                                           ↑ fallback    ↑ klucz do tr()
+\`\`\`
 
 ---
 
@@ -109,14 +112,20 @@ Proponowany format:
 
 | Data | Co zrobiono | Kto |
 |------|-------------|-----|
-| 2025-12-12 | Utworzono plan pracy i dokumentację | AI + PtakuPL |
-| | *Następne kroki...* | |
+| 2025-12-12 | Analiza protokołu serwera i klienta | AI + PtakuPL |
+| 2025-12-12 | Implementacja LocalizedTextMessage na serwerze | AI |
+| 2025-12-12 | Implementacja parseLocalizedTextMessage na kliencie | AI |
+| | *Następne: integracja z player.cpp i testy* | |
 
 ---
 
 ## ⚠️ PROBLEMY I ROZWIĄZANIA
 
-*Sekcja na problemy napotkane podczas implementacji*
+### Problem: Stary klient bez obsługi nowego opcode
+**Rozwiązanie**: Opcode 188 jest nieznany dla starych klientów - zostanie zignorowany. Użyj `sendTextMessage()` dla kompatybilności wstecznej.
+
+### Problem: Brak tłumaczenia na kliencie
+**Rozwiązanie**: Parser sprawdza czy `tr()` zwraca klucz - jeśli tak, używa fallback text.
 
 ---
 

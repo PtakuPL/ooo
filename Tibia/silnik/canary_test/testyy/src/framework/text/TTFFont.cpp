@@ -5,6 +5,7 @@
 // OTClient rendering helpers
 #include <framework/graphics/drawpoolmanager.h> // g_drawPool
 #include <framework/graphics/coordsbuffer.h>
+#include <framework/core/resourcemanager.h>
 #include <framework/util/rect.h>
 #include <framework/util/color.h>
 #include <framework/util/point.h>
@@ -40,7 +41,10 @@ bool TTFFont::load(const std::string& mainTtf,
                    const std::vector<std::string>& fallbackTtfs,
                    int pixelSize) {
   if (FT_Init_FreeType(&m_ftLib)) return false;
-  if (FT_New_Face(m_ftLib, mainTtf.c_str(), 0, &m_face)) return false;
+  
+  // Convert virtual path to real filesystem path for FreeType
+  const std::string realMainPath = g_resources.getRealPath(mainTtf);
+  if (FT_New_Face(m_ftLib, realMainPath.c_str(), 0, &m_face)) return false;
   FT_Set_Pixel_Sizes(m_face, 0, pixelSize);
   m_pixelSize = pixelSize;
 
@@ -52,7 +56,9 @@ bool TTFFont::load(const std::string& mainTtf,
   // Load fallback fonts for CJK, Arabic, and other scripts
   for (const auto& fallbackPath : fallbackTtfs) {
     FT_Face fallbackFace = nullptr;
-    if (FT_New_Face(m_ftLib, fallbackPath.c_str(), 0, &fallbackFace) == 0) {
+    // Convert virtual path to real filesystem path
+    const std::string realFallbackPath = g_resources.getRealPath(fallbackPath);
+    if (FT_New_Face(m_ftLib, realFallbackPath.c_str(), 0, &fallbackFace) == 0) {
       FT_Set_Pixel_Sizes(fallbackFace, 0, pixelSize);
       hb_font_t* fallbackHbFont = hb_ft_font_create(fallbackFace, nullptr);
       if (fallbackHbFont) {

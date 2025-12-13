@@ -130,6 +130,11 @@ if (MSVC)
   # Since it's a header-only template library, we can't target specific source files.
   # Using /O1 globally is necessary as the ICE triggers during template instantiation
   # across multiple TUs. /O1 still provides optimizations (for size) while being safer.
+  # Remove default /O2 from Release flags before adding /O1 to avoid D9025 warning
+  string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
+  string(REPLACE "/O2" "" CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}")
+  set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}" CACHE STRING "" FORCE)
+  set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}" CACHE STRING "" FORCE)
   target_compile_options(${PROJECT_NAME} PRIVATE
     $<$<CONFIG:Release>:/O1>  # Use /O1 (minimize size) instead of /O2 (maximize speed) for Release
     $<$<CONFIG:RelWithDebInfo>:/O1>

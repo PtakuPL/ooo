@@ -2643,7 +2643,7 @@ int PlayerFunctions::luaPlayerSendLocalizedTextMessage(lua_State* L) {
 	const int parameters = lua_gettop(L);
 	if (parameters >= 4) {
 		if (lua_istable(L, 4)) {
-			const auto length = lua_rawlen(L, 4);
+			const auto length = lua_objlen(L, 4);
 			args.reserve(length);
 			for (size_t idx = 1; idx <= length; ++idx) {
 				lua_rawgeti(L, 4, idx);

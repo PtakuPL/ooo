@@ -1093,11 +1093,11 @@ int GameFunctions::luaGameBroadcastLocalizedMessage(lua_State* L) {
 	// Game.broadcastLocalizedMessage(key, messageType[, args])
 	// Broadcasts a localized message to all online players
 	const std::string &key = Lua::getString(L, 1);
-	const MessageClasses messageType = Lua::getNumber<MessageClasses>(L, 2, MESSAGE_STATUS_WARNING);
+	const MessageClasses messageType = Lua::getNumber<MessageClasses>(L, 2, MESSAGE_STATUS);
 	
 	std::vector<std::string> args;
 	if (lua_istable(L, 3)) {
-		const auto length = lua_rawlen(L, 3);
+		const auto length = lua_objlen(L, 3);
 		args.reserve(length);
 		for (size_t idx = 1; idx <= length; ++idx) {
 			lua_rawgeti(L, 3, idx);

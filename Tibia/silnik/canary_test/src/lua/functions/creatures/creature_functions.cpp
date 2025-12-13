@@ -1299,7 +1299,7 @@ int CreatureFunctions::luaCreatureSayLocalized(lua_State* L) {
 	std::vector<std::string> args;
 	int argsIndex = parameters;
 	if (parameters >= 4 && lua_istable(L, argsIndex)) {
-		const auto length = lua_rawlen(L, argsIndex);
+		const auto length = lua_objlen(L, argsIndex);
 		args.reserve(length);
 		for (size_t idx = 1; idx <= length; ++idx) {
 			lua_rawgeti(L, argsIndex, idx);

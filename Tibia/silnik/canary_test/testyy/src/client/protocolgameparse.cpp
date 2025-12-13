@@ -2844,7 +2844,7 @@ void ProtocolGame::parseLocalizedTextMessage(const InputMessagePtr& msg)
         // Call Lua tr() function to get translation
         // g_lua.callGlobalField returns the translated string or the key if no translation
         try {
-            translatedText = g_lua.callGlobalField<std::string>("", "tr", i18nKey);
+            translatedText = g_lua.callGlobalField<std::string>("_G", "tr", i18nKey);
             // If tr() returned the same key (no translation found), use fallback text
             if (translatedText == i18nKey) {
                 translatedText = text;
@@ -2906,7 +2906,7 @@ void ProtocolGame::parseLocalizedCreatureSay(const InputMessagePtr& msg)
     std::string translatedText = fallbackText;
     if (!i18nKey.empty()) {
         try {
-            translatedText = g_lua.callGlobalField<std::string>("", "tr", i18nKey);
+            translatedText = g_lua.callGlobalField<std::string>("_G", "tr", i18nKey);
             // If tr() returned the same key (no translation found), use fallback text
             if (translatedText == i18nKey) {
                 translatedText = fallbackText;

@@ -29,6 +29,7 @@
 #include <framework/graphics/drawpoolmanager.h>
 #include <framework/luaengine/luaobject.h>
 #include <framework/otml/declarations.h>
+#include <numeric>
 #include <variant>
 
 using namespace otclient::protobuf;

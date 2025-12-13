@@ -187,7 +187,7 @@ void Application::poll()
 
 void Application::exit()
 {
-    g_lua.callGlobalField<bool>("g_app", "onExit");
+    g_lua.callGlobalField("g_app", "onExit");
     m_stopping = true;
 }
 
@@ -199,7 +199,7 @@ void Application::close()
 
 void Application::restart()
 {
-    g_lua.callGlobalField<bool>("g_app", "onRestart");
+    g_lua.callGlobalField("g_app", "onRestart");
     g_platform.spawnProcess(g_resources.getBinaryPath(), m_startupArgs);
     exit();
 }

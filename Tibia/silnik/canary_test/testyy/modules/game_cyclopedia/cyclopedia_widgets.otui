@@ -143,7 +143,7 @@ CharacterGridItem < UIWidget
     id: amount
     !text: tr('0')
     color: #C0C0C0
-    font: verdana-11px-rounded
+    font: noto-12
     text-auto-resize: true
     anchors.bottom: parent.bottom
     anchors.right: parent.right
@@ -441,7 +441,7 @@ SlotBossSlots < UIWidget
       anchors.bottom: parent.bottom
       anchors.right: parent.right
       !text: tr('Select')
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       text-offset: 0 -1
       color: #C0C0C0
       enabled: false
@@ -513,7 +513,7 @@ SlotBossSlots < UIWidget
       anchors.left: ValueBackground.left
       margin-bottom: 25
       !text: tr('Remove')
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       text-offset: 0 -1
       color: #C0C0C0
 BossSlotProgress < UIWidget
@@ -816,7 +816,7 @@ CharacterCategoryItem < UIWidget
       margin-left: 10
       text-auto-resize: true
       !text: tr('General Stats')
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       color: #C0C0C0
       $checked:
         text-offset 10 10
@@ -1073,7 +1073,7 @@ BestiaryItem < UIItem
   Label
     id: Stackable
     text-auto-resize: true
-    font: verdana-11px-rounded
+    font: noto-12
     anchors.bottom: parent.bottom
     anchors.right: parent.right
     color: #BFBFBF
@@ -1431,7 +1431,7 @@ BlessCreate < UIWidget
   background-color: alpha
   text-offset: 35 1
   focusable: true
-  font: verdana-11px-rounded
+  font: noto-12
   text-align: left
 
   Label

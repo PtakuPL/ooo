@@ -171,7 +171,7 @@ EmptyImbue < Panel
     image-source: /images/game/imbuing/100percent
     image-clip: 0 0 66 66
     margin-left: 15
-    !tooltip: tr("Bribe the fates! Click here to raise your chance to 100%. For guaranteed success use gold.")
+    !tooltip: ("Bribe the fates! Click here to raise your chance to 100%. For guaranteed success use gold.")
 
   FlatLabel
     id: protectionCost

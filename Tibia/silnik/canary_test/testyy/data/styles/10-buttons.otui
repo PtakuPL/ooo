@@ -1,5 +1,5 @@
 Button < UIButton
-  font: verdana-11px-antialised
+  font: noto-12
   color: #dfdfdfff
   size: 106 23
   text-offset: 0 0

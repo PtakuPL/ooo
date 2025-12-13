@@ -2,7 +2,7 @@ Item < UIItem
   size: 34 34
   padding: 1
   image-source: /images/ui/item
-  font: verdana-11px-rounded
+  font: noto-12
   border-color: white
   color: white
 
@@ -202,7 +202,7 @@ MainInventoryItem < UIWidget
     anchors.centerIn: parent
     size: 34 34
     padding: 1
-    font: verdana-11px-rounded
+    font: noto-12
     border-color: white
     color: white
 	

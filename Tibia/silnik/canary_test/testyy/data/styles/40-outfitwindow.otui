@@ -332,7 +332,7 @@ OutfitWindow < MainWindow
           anchors.top: parent.top
           anchors.left: parent.left
           anchors.right: parent.right
-          font: verdana-11px-rounded
+          font: noto-12
           color: #00BC00
           text-align: center
         

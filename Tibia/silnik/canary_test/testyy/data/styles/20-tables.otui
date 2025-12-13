@@ -32,7 +32,7 @@ TableHeaderRow < Label
   text-wrap: true
 
 TableHeaderColumn < UITableHeaderColumn
-  font: verdana-11px-antialised
+  font: noto-12
   background-color: alpha
   color: #dfdfdfff
   height: 23

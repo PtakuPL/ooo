@@ -76,12 +76,12 @@ local CONST_WINDOWS_BOX = {
 
 local BOX_CONFIGS = {
     [CONST_WINDOWS_BOX.ALREADY] = {
-        title = tr("Warning"),
-        content = tr("Sorry, you have already taken your daily reward or you are unable to collect it")
+        title = "Warning",
+        content = "Sorry, you have already taken your daily reward or you are unable to collect it"
     },
     [CONST_WINDOWS_BOX.CONFIRMATION_IRA] = {
-        title = tr("Confirmation of using Instant Reward Access"),
-        content = tr("Remember! You can always collect your daily reward for free by visiting a reward shrine!\n\nYou Currently own 3x Instant Reward Access. Do you really want to use one to claim your daily reward now?"),
+        title = "Confirmation of using Instant Reward Access",
+        content = "Remember! You can always collect your daily reward for free by visiting a reward shrine!\n\nYou Currently own 3x Instant Reward Access. Do you really want to use one to claim your daily reward now?",
         okCallback = function()
             g_game.requestGetRewardDaily(bonusShrine, actualUsed)
             if windowsPickWindow then
@@ -96,8 +96,8 @@ local BOX_CONFIGS = {
         end
     },
     [CONST_WINDOWS_BOX.NO_IRA] = {
-        title = tr("Warning: No Sufficient Instant Reward Access"),
-        content = tr("Remember! you can always collect your daily reward for free by visiting a reward shrine!\nyou do not have an Instant Reward Access.\nVisit the store to buy more!")
+        title = "Warning: No Sufficient Instant Reward Access",
+        content = "Remember! you can always collect your daily reward for free by visiting a reward shrine!\nyou do not have an Instant Reward Access.\nVisit the store to buy more!"
     }
 }
 
@@ -362,13 +362,6 @@ local function onOpenRewardWall(bonusShrines, nextRewardTime, dayStreakDay, wasD
         g_game.getLocalPlayer():getResourceBalance(ResourceTypes.DAILYREWARD_STREAK))
 end
 
--- Populates the reward history UI list with a header row and one row per history entry.
--- Clears existing list items, creates a localized header, then adds each entry with formatted date,
--- streak value, and event description while alternating row background colors.
--- @param rewardHistory Array of history entries where each entry is an array:
---   index 1 = UNIX timestamp (number),
---   index 3 = event description (string),
---   index 4 = streak/balance value (string or number).
 local function onRewardHistory(rewardHistory)
     local transferHistory = rewardWallController.ui.historyPanel.historyList.List
     transferHistory:destroyChildren()
@@ -377,9 +370,9 @@ local function onRewardHistory(rewardHistory)
     headerRow:setBackgroundColor("#363636")
     headerRow:setBorderColor("#00000077")
     headerRow:setBorderWidth(1)
-    headerRow.date:setText(tr("Date"))
-    headerRow.Balance:setText(tr("Streak"))
-    headerRow.Description:setText(tr("Event"))
+    headerRow.date:setText("Date")
+    headerRow.Balance:setText("Streak")
+    headerRow.Description:setText("Event")
 
     for i, data in ipairs(rewardHistory) do
         local row = g_ui.createWidget("historyData2", transferHistory)
@@ -430,7 +423,6 @@ function toggle()
 end
 
 local function fixCssIncompatibility() -- temp
-    rewardWallController.ui:centerIn('parent') -- mainWindows to the center of the screen
     rewardWallController.ui.historyPanel.historyList:fill('parent')
 
     -- note: I don't know how to edit children in css
@@ -497,9 +489,11 @@ end
 -- =============================================*/
 function rewardWallController:onClickshowHistory()
     visibleHistory(not rewardWallController.ui.historyPanel:isVisible())
-    g_game.requestOpenRewardHistory()
+    if rewardWallController.ui.historyPanel:isVisible() then
+        g_game.requestOpenRewardHistory()
+    end
     rewardWallController.ui.footerPanel.historyButton:setText(
-        rewardWallController.ui.historyPanel:isVisible() and "back" or "history")
+    rewardWallController.ui.historyPanel:isVisible() and "back" or "history")
 end
 
 function rewardWallController:onClickToggle()
@@ -532,10 +526,10 @@ function rewardWallController:onClickDisplayWindowsPickRewardWindow(event)
             end
             windowsPickWindow = g_ui.displayUI('styles/pickreward')
             windowsPickWindow:show()
-            windowsPickWindow:getChildById('capacity'):setText(tr("Free capacity:") .. " " ..
+            windowsPickWindow:getChildById('capacity'):setText("Free capacity: " ..
                                                                    g_game:getLocalPlayer():getFreeCapacity() .. " oz")
 
-            local text = string.format(tr("You have selected") .. " [color=#D33C3C]0[/color] " .. tr("of %d reward items"), itemsToSelect)
+            local text = string.format("You have selected [color=#D33C3C]0[/color] of %d reward items", itemsToSelect)
             windowsPickWindow:getChildById('rewardLabel'):parseColoredText(text, "#c0c0c0")
 
             for i, item in pairs(event.target.rewardItem) do
@@ -577,7 +571,7 @@ function rewardWallController:onhoverBonus(event)
     local bonus = bonuses[index]
 
     if not bonus then
-        rewardWallController.ui.infoPanel:setText(tr("Unknown bonus."))
+        rewardWallController.ui.infoPanel:setText("Unknown bonus.")
         return
     end
 
@@ -598,12 +592,12 @@ function rewardWallController:onhoverStatusPlayer(event)
     end
 
     local playerStatus = {
-        rewardStreakIcon = tr("This explains the reward streak system. You need to claim your daily reward between regular server saves to maintain your streak. At a streak of 2+, your character gets resting area bonuses. Free accounts can reach a maximum bonus at streak level 3, while premium players can reach higher levels. Characters on the same account share the streak."),
-        timeLeft = tr("This is an urgent notification to claim your daily reward within one minute (before the next server save) to raise your reward streak by 1. It mentions that 3 Daily Reward Jokers will be used to prevent resetting your streak. It also encourages raising your streak to benefit from bonuses in resting areas."),
-        restingAreaGold = tr("This explains how Daily Reward Jokers work. They help you maintain your streak on days when you can't claim your daily reward. Each character receives one Daily Reward Joker on the first day of each month. The message recommends collecting rewards daily to stay safe.")
+        rewardStreakIcon = "This explains the reward streak system. You need to claim your daily reward between regular server saves to maintain your streak. At a streak of 2+, your character gets resting area bonuses. Free accounts can reach a maximum bonus at streak level 3, while premium players can reach higher levels. Characters on the same account share the streak.",
+        timeLeft = "This is an urgent notification to claim your daily reward within one minute (before the next server save) to raise your reward streak by 1. It mentions that 3 Daily Reward Jokers will be used to prevent resetting your streak. It also encourages raising your streak to benefit from bonuses in resting areas.",
+        restingAreaGold = "This explains how Daily Reward Jokers work. They help you maintain your streak on days when you can't claim your daily reward. Each character receives one Daily Reward Joker on the first day of each month. The message recommends collecting rewards daily to stay safe."
     }
 
-    local DEFAULT_MESSAGE = tr("Unknown bonus.")
+    local DEFAULT_MESSAGE = "Unknown bonus."
 
     local id = event.target:getId()
     local info = playerStatus[id]
@@ -662,9 +656,9 @@ end
 
 function rewardWallController:onhoverStatusReward(event)
     local statusReward = {
-        [STATUS.COLLECTED] = tr("You have already collected this daily reward.\nThe daily rewards follow a specific cycle where each day you claim it, you get another reward. The cycle repeats after 7 claimed rewards. You will be able to claim this daily reward again as soon as you have reached this postion in the next cycle."),
-        [STATUS.ACTIVE] = tr("The daily reward can be claimed now.\nIf you claim this reward now, it will cost you one Instant Reward Access.\nGet your daily reward for free by visiting a reward shrine.\nYou did not claim your daily reward in time.\nToo bad, you do not have enough Daily Reward Jokers."),
-        [STATUS.LOCKED] = tr("This daily reward is still locked.\nFirst collect the previous daily rewards of this cycle.")
+        [STATUS.COLLECTED] = "You have already collected this daily reward.\nThe daily rewards follow a specific cycle where each day you claim it, you get another reward. The cycle repeats after 7 claimed rewards. You will be able to claim this daily reward again as soon as you have reached this postion in the next cycle.",
+        [STATUS.ACTIVE] = "The daily reward can be claimed now.\nIf you claim this reward now, it will cost you one Instant Reward Access.\nGet your daily reward for free by visiting a reward shrine.\nYou did not claim your daily reward in time.\nToo bad, you do not have enough Daily Reward Jokers.",
+        [STATUS.LOCKED] = "This daily reward is still locked.\nFirst collect the previous daily rewards of this cycle."
     }
     if not event.value then
         rewardWallController.ui.infoPanel:setText("")
@@ -722,7 +716,7 @@ function onTextChangeChangeNumber(getPanel)
     local color = alreadyUsed == 0 and "#D33C3C" or "#00FF00"
     windowsPickWindow:getChildById('btnOk'):setEnabled(alreadyUsed > 0)
 
-    local text = string.format(tr("You have selected\") .. \" [color=%s]%d[/color] \" .. tr(\"of %d reward items\"), color, alreadyUsed,
+    local text = string.format("You have selected [color=%s]%d[/color] of %d reward items", color, alreadyUsed,
         getPanel.itemsToSelect)
     windowsPickWindow:getChildById('rewardLabel'):parseColoredText(text)
     getPanel:getChildById('weight'):setText(string.format("%.2f oz", actualUsed[itemId] * getPanel.totalWeight))

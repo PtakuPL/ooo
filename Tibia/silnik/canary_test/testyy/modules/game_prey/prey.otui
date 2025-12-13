@@ -206,7 +206,7 @@ ActivePreyPanel < Panel
       image-source: /images/ui/panel_flat
       image-border: 1
       size: 155 15
-      font: verdana-11px-rounded
+      font: noto-12
       !text: tr('Automatic Bonus Rer...')
       margin-left: 5
 
@@ -233,7 +233,7 @@ ActivePreyPanel < Panel
       image-source: /images/ui/panel_flat
       image-border: 1
       size: 155 15
-      font: verdana-11px-rounded
+      font: noto-12
       !text: tr('Lock Prey')
       margin-left: 5
 
@@ -653,7 +653,7 @@ PreyCreature < Panel
     margin-bottom: 7
     anchors.right: parent.right
     !text: tr('Inactive')
-    font: verdana-11px-rounded
+    font: noto-12
     text-align: left
 
   ProgressBar
@@ -680,7 +680,7 @@ PreyTracker < MiniWindow
 
     Label
       !text: tr('Prey Creatures')
-      font: verdana-11px-rounded
+      font: noto-12
 
     HorizontalSeparator
       margin-top: 1

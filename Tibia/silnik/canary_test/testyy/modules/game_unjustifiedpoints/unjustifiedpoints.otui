@@ -34,7 +34,7 @@ MiniWindow
       id: openPvpSituationsLabel
       anchors.top: prev.bottom
       anchors.left: parent.left
-      font: verdana-11px-rounded
+      font: noto-12
       margin-left: 12
       phantom: false
 
@@ -54,7 +54,7 @@ MiniWindow
       id: skullTimeLabel
       anchors.top: prev.top
       anchors.right: prev.left
-      font: verdana-11px-rounded
+      font: noto-12
       margin-right: 6
       phantom: false
 

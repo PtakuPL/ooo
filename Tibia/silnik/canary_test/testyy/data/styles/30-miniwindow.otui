@@ -1,5 +1,5 @@
 MiniWindow < UIMiniWindow
-  font: verdana-11px-antialised
+  font: noto-12
   icon-rect: 4 4 16 16
   width: 192
   height: 200

@@ -22,14 +22,14 @@ KeybindsTableColumn < Label
   text-align: left
   focusable: false
   text-offset: 2 0
-  font: verdana-11px-monochrome
+  font: noto-12
 
 EditableKeybindsTableColumn < Label
   color: #c0c0c0
   text-align: left
   focusable: false
   text-offset: 2 0
-  font: verdana-11px-monochrome
+  font: noto-12
   @onCheckChange: self.edit:setVisible(self:isChecked())
 
   Button
@@ -46,7 +46,7 @@ EditableHotkeysTableColumn < Label
   text-align: left
   focusable: false
   text-offset: 18 0
-  font: verdana-11px-monochrome
+  font: noto-12
   @onCheckChange: self.edit:setVisible(self:isChecked())
 
   UIItem
@@ -71,7 +71,7 @@ KeybindsTableHeaderRow < TableHeaderRow
   height: 18
 
 KeybindsTableHeaderColumn < UITableHeaderColumn
-  font: verdana-11px-monochrome
+  font: noto-12
   text-offset: 2 0
   text-align: left
   height: 14
@@ -186,7 +186,7 @@ UIWidget
     
     Label
       text-offset: 0 3
-      font: verdana-11px-monochrome
+      font: noto-12
       !text: tr('Type to search for a hotkey:')
     
     TextEdit

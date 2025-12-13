@@ -246,7 +246,7 @@ neededTranslations = {
   'Accomplished',
   'Account Badges',
   'Account Premium',
-w  'Achievements Points: ',
+'Achievements Points: ',
   'Active',
   'Add Tracked Quest',
   'Add VIP group (User-Created groups left: %s',

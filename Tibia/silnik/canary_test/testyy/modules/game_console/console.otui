@@ -1,5 +1,5 @@
 ConsoleLabel < UITextEdit
-  font: verdana-11px-antialised
+  font: noto-12
   height: 14
   color: yellow
   margin-left: 2
@@ -15,7 +15,7 @@ ConsoleLabel < UITextEdit
   focusable: false
 
 ConsolePhantomLabel < UILabel
-  font: verdana-11px-antialised
+  font: noto-12
   height: 14
   color: yellow
   text-wrap: true
@@ -62,7 +62,7 @@ ConsoleTabBarButton < UIButton
   image-source: /images/ui/console_button
   image-clip: 0 18 96 18
   color: #7f7f7fff
-  font: verdana-11px-rounded
+  font: noto-12
   &ignoreTextResize: true
   anchors.top: parent.top
   anchors.left: parent.left
@@ -299,7 +299,7 @@ Panel
     image-clip: 0 0 96 18
     icon: /images/game/console/readOnly
     color: #dfdfdfff
-    font: verdana-11px-rounded
+    font: noto-12
     padding: 5
     tab-spacing: 0
     &ignoreTextResize: true

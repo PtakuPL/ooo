@@ -40,7 +40,7 @@ Panel
     color: #e98d02
     margin-bottom: 110
     text: OTClient Redemption
-    font: verdana-11px-rounded
+    font: noto-12
     font-scale: 4
     shader: Map - Party
 
@@ -55,7 +55,7 @@ Panel
     Label
       id: showOffWindowText
       !text: tr('Random Hint')
-      font: verdana-11px-antialised
+      font: noto-12
       text-offset: 0 2
       text-align: top
       anchors.top: parent.top
@@ -75,7 +75,7 @@ Panel
 
     Label
       !text: tr('Event Schedule')
-      font: verdana-11px-antialised
+      font: noto-12
       text-offset: 0 2
       text-align: top
       anchors.top: parent.top
@@ -137,7 +137,7 @@ Panel
 
     Label
       !text: tr('Boosted')
-      font: verdana-11px-antialised
+      font: noto-12
       text-offset: 0 2
       text-align: top
       anchors.top: parent.top

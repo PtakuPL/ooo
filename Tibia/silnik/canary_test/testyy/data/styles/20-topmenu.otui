@@ -73,10 +73,10 @@ TopMenuPanel < Panel
   focusable: false
 
 TopMenuFrameCounterLabel < Label
-  font: verdana-11px-rounded
+  font: noto-12
   color: white
   margin-top: 4
   margin-left: 5
 
 TopMenuPingLabel < Label
-  font: verdana-11px-rounded
+  font: noto-12

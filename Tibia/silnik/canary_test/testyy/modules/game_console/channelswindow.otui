@@ -1,5 +1,5 @@
 ChannelListLabel < Label
-  font: verdana-11px-monochrome
+  font: noto-12
   background-color: alpha
   text-offset: 2 0
   focusable: true

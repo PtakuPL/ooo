@@ -1,5 +1,5 @@
 TextEdit < UITextEdit
-  font: verdana-11px-antialised
+  font: noto-12
   color: #f4f4f4ff
   size: 86 22
   text-offset: 0 4
@@ -21,7 +21,7 @@ MultilineTextEdit < TextEdit
   multiline: true
 
 TextQtEdit < UITextEdit
-  font: verdana-11px-antialised
+  font: noto-12
   color: #c0c0c0ff
   size: 86 22
   text-offset: 0 4

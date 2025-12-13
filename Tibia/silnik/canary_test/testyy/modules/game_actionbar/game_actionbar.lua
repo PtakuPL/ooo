@@ -999,7 +999,7 @@ function onSpellCooldown(spellId, duration)
                 progressRect:setId('progress' .. spell.id)
                 progressRect.item = slot
                 progressRect:fill('parent')
-                progressRect:setFont('verdana-11px-rounded')
+                progressRect:setFont('noto-12')
             else
                 progressRect:setPercent(0)
             end
@@ -1051,7 +1051,7 @@ function onSpellGroupCooldown(groupId, duration)
                         progressRect:setId('progress' .. groupId)
                         progressRect.item = slot
                         progressRect:fill('parent')
-                        progressRect:setFont('verdana-11px-rounded')
+                        progressRect:setFont('noto-12')
                     else
                         progressRect:setPercent(0)
                     end

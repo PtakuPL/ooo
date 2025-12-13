@@ -3,7 +3,7 @@ ImbuementTrackerMenuOption < ThickCheckBox
   text-align: left
   color: white
   background-color: alpha
-  font: verdana-11px-rounded
+  font: noto-12
   padding: 3 6
 
   $hover:
@@ -44,7 +44,7 @@ ImbuementSlot < Panel
     anchors.top: parent.top
     anchors.right: parent.right
     anchors.left: parent.left
-    font: verdana-11px-rounded
+    font: noto-12
     color: #ffff00
     margin-top: 3
 

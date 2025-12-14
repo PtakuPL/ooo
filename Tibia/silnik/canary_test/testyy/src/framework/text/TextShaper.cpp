@@ -201,20 +201,18 @@ std::vector<ShapedGlyph> TextShaper::shape(const std::u32string& text32,
   hb_glyph_position_t* pos = hb_buffer_get_glyph_positions(buf, &glyphCount);
 
   out.reserve(glyphCount);
-  float x = 0.0f, y = 0.0f;
-
   for (unsigned int i = 0; i < glyphCount; ++i) {
     ShapedGlyph g;
     g.glyphIndex = info[i].codepoint; // After shaping, this is the glyph index
     // Use cluster to map back to original codepoint for fallback font lookup
     const unsigned int cluster = info[i].cluster;
     g.codepoint = (cluster < visualOrder.size()) ? static_cast<char32_t>(visualOrder[cluster]) : 0;
-    g.x = x + (pos[i].x_offset / 64.0f);
-    g.y = y - (pos[i].y_offset / 64.0f);
+    // IMPORTANT: x/y are per-glyph offsets; the caller maintains the pen cursor using advanceX/advanceY.
+    // Returning absolute positions here would double-apply advances in TTFFont::buildQuads.
+    g.x = (pos[i].x_offset / 64.0f);
+    g.y = -(pos[i].y_offset / 64.0f);
     g.advanceX = pos[i].x_advance / 64.0f;
     g.advanceY = pos[i].y_advance / 64.0f;
-    x += g.advanceX;
-    y += g.advanceY;
     out.push_back(g);
   }
 

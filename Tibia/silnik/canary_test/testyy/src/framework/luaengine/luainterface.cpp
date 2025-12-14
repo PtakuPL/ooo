@@ -29,6 +29,8 @@
 
 #include <framework/core/resourcemanager.h>
 
+#include <exception>
+
 LuaInterface g_lua;
 
 void LuaInterface::init()
@@ -649,17 +651,28 @@ int LuaInterface::luaCppFunctionCallback(lua_State*)
     int numRets = 0;
 
     // do the call
+    ++g_lua.m_cppCallbackDepth;
     try {
-        ++g_lua.m_cppCallbackDepth;
         numRets = (*(funcPtr->get()))(&g_lua);
-        --g_lua.m_cppCallbackDepth;
         assert(numRets == g_lua.stackSize());
-    } catch (stdext::exception& e) {
-        // cleanup stack
+        --g_lua.m_cppCallbackDepth;
+    } catch (const stdext::exception& e) {
+        --g_lua.m_cppCallbackDepth;
         while (g_lua.stackSize() > 0)
             g_lua.pop();
-        numRets = 0;
         g_lua.pushString(fmt::format("C++ call failed: {}", g_lua.traceback(e.what())));
+        g_lua.error();
+    } catch (const std::exception& e) {
+        --g_lua.m_cppCallbackDepth;
+        while (g_lua.stackSize() > 0)
+            g_lua.pop();
+        g_lua.pushString(fmt::format("C++ call failed: {}", g_lua.traceback(e.what())));
+        g_lua.error();
+    } catch (...) {
+        --g_lua.m_cppCallbackDepth;
+        while (g_lua.stackSize() > 0)
+            g_lua.pop();
+        g_lua.pushString(fmt::format("C++ call failed: {}", g_lua.traceback("unknown exception")));
         g_lua.error();
     }
 

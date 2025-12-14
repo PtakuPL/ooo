@@ -2,9 +2,12 @@
 
 #include <cmath>
 #include <algorithm>
+#include <exception>
 // OTClient rendering helpers
+#include <framework/core/logger.h>
 #include <framework/graphics/drawpoolmanager.h> // g_drawPool
 #include <framework/graphics/coordsbuffer.h>
+#include <framework/graphics/graphics.h>
 #include <framework/core/resourcemanager.h>
 #include <framework/util/rect.h>
 #include <framework/util/color.h>
@@ -40,88 +43,143 @@ TTFFont::~TTFFont() {
 bool TTFFont::load(const std::string& mainTtf,
                    const std::vector<std::string>& fallbackTtfs,
                    int pixelSize) {
-  if (FT_Init_FreeType(&m_ftLib)) return false;
-
-  // Try filesystem path first (works when resources are plain files on disk).
-  // If that fails (e.g. resources are in PhysFS archives), fallback to memory faces.
-  bool mainLoaded = false;
-  const std::string resolvedMainTtf = g_resources.resolvePath(mainTtf);
-  const std::string realMainDir = g_resources.getRealDir(resolvedMainTtf);
-  if (!realMainDir.empty()) {
-    const std::string realMainPath = realMainDir + resolvedMainTtf;
-    mainLoaded = (FT_New_Face(m_ftLib, realMainPath.c_str(), 0, &m_face) == 0);
+  g_logger.info(fmt::format("TTFFont::load() mainTtf='{}' size={}", mainTtf, pixelSize));
+  
+  const FT_Error initError = FT_Init_FreeType(&m_ftLib);
+  if (initError) {
+    g_logger.error("TTFFont: FT_Init_FreeType failed (error={})", initError);
+    return false;
   }
+  g_logger.info("TTFFont: FreeType initialized OK");
+
+  // Try to load font - first via filesystem path, then via memory
+  bool mainLoaded = false;
+  
+  // Method 1: Try getRealPath() for direct filesystem access
+  const std::string realPath = g_resources.getRealPath(mainTtf);
+  g_logger.info(fmt::format("TTFFont: getRealPath('{}') = '{}'", mainTtf, realPath));
+  
+  if (!realPath.empty()) {
+    const FT_Error faceError = FT_New_Face(m_ftLib, realPath.c_str(), 0, &m_face);
+    if (faceError == 0) {
+      mainLoaded = true;
+      g_logger.info(fmt::format("TTFFont: FT_New_Face succeeded with path '{}'", realPath));
+    } else {
+      g_logger.warning(fmt::format("TTFFont: FT_New_Face failed (error={}) for path '{}'", faceError, realPath));
+    }
+  }
+  
+  // Method 2: Fallback to memory loading (for PhysFS archives)
   if (!mainLoaded) {
+    g_logger.info("TTFFont: trying memory-based loading...");
     try {
       m_mainFontData = g_resources.readFileContents(mainTtf);
+      g_logger.info(fmt::format("TTFFont: readFileContents got {} bytes", m_mainFontData.size()));
+    } catch (const std::exception& e) {
+      g_logger.error(fmt::format("TTFFont: readFileContents exception: {}", e.what()));
+      return false;
     } catch (...) {
+      g_logger.error("TTFFont: readFileContents unknown exception");
       return false;
     }
 
-    if (m_mainFontData.empty())
+    if (m_mainFontData.empty()) {
+      g_logger.error("TTFFont: font data is empty");
       return false;
+    }
 
-    mainLoaded = (FT_New_Memory_Face(
+    const FT_Error memFaceError = FT_New_Memory_Face(
         m_ftLib,
         reinterpret_cast<const FT_Byte*>(m_mainFontData.data()),
         static_cast<FT_Long>(m_mainFontData.size()),
         0,
-        &m_face) == 0);
+        &m_face);
+    if (memFaceError == 0) {
+      mainLoaded = true;
+      g_logger.info("TTFFont: FT_New_Memory_Face succeeded");
+    } else {
+      g_logger.error(fmt::format("TTFFont: FT_New_Memory_Face failed (error={})", memFaceError));
+    }
   }
 
-  if (!mainLoaded)
+  if (!mainLoaded) {
+    g_logger.error("TTFFont: failed to load main font by any method");
     return false;
+  }
 
-  FT_Set_Pixel_Sizes(m_face, 0, pixelSize);
+  const FT_Error pixelSizeError = FT_Set_Pixel_Sizes(m_face, 0, pixelSize);
+  if (pixelSizeError) {
+    g_logger.error("TTFFont: FT_Set_Pixel_Sizes failed (error={})", pixelSizeError);
+    return false;
+  }
   m_pixelSize = pixelSize;
+  g_logger.info(fmt::format("TTFFont: pixel size set to {}", pixelSize));
 
   // Create HarfBuzz face/font from FT_Face
   hb_face_t* hbFace = hb_ft_face_create(m_face, nullptr);
   m_hbFont = hb_ft_font_create(m_face, nullptr);
   hb_face_destroy(hbFace);
+  if (!m_hbFont) {
+    g_logger.error("TTFFont: HarfBuzz font creation failed");
+    return false;
+  }
+  g_logger.info("TTFFont: HarfBuzz font created OK");
 
   // Load fallback fonts for CJK, Arabic, and other scripts
   for (const auto& fallbackPath : fallbackTtfs) {
+    g_logger.info(fmt::format("TTFFont: loading fallback font '{}'", fallbackPath));
     FT_Face fallbackFace = nullptr;
     bool fallbackLoaded = false;
 
-    // Try filesystem path first.
-    const std::string resolvedFallbackPath = g_resources.resolvePath(fallbackPath);
-    const std::string realFallbackDir = g_resources.getRealDir(resolvedFallbackPath);
-    if (!realFallbackDir.empty()) {
-      const std::string realFallbackPath = realFallbackDir + resolvedFallbackPath;
-      fallbackLoaded = (FT_New_Face(m_ftLib, realFallbackPath.c_str(), 0, &fallbackFace) == 0);
+    // Try filesystem path first using getRealPath()
+    const std::string realFallbackPath = g_resources.getRealPath(fallbackPath);
+    if (!realFallbackPath.empty()) {
+      const FT_Error err = FT_New_Face(m_ftLib, realFallbackPath.c_str(), 0, &fallbackFace);
+      if (err == 0) {
+        fallbackLoaded = true;
+        g_logger.info(fmt::format("TTFFont: fallback '{}' loaded from filesystem", fallbackPath));
+      }
     }
 
     // Fallback to memory face (PhysFS archive-safe).
     if (!fallbackLoaded) {
       try {
         m_fallbackFontData.emplace_back(g_resources.readFileContents(fallbackPath));
+        const auto& data = m_fallbackFontData.back();
+        if (!data.empty()) {
+          const FT_Error err = FT_New_Memory_Face(
+              m_ftLib,
+              reinterpret_cast<const FT_Byte*>(data.data()),
+              static_cast<FT_Long>(data.size()),
+              0,
+              &fallbackFace);
+          if (err == 0) {
+            fallbackLoaded = true;
+            g_logger.info(fmt::format("TTFFont: fallback '{}' loaded from memory", fallbackPath));
+          } else {
+            m_fallbackFontData.pop_back();
+          }
+        } else {
+          m_fallbackFontData.pop_back();
+        }
+      } catch (const std::exception& e) {
+        g_logger.warning(fmt::format("TTFFont: fallback '{}' exception: {}", fallbackPath, e.what()));
+        continue;
       } catch (...) {
         continue;
       }
-
-      const auto& data = m_fallbackFontData.back();
-      if (data.empty()) {
-        m_fallbackFontData.pop_back();
-        continue;
-      }
-
-      fallbackLoaded = (FT_New_Memory_Face(
-          m_ftLib,
-          reinterpret_cast<const FT_Byte*>(data.data()),
-          static_cast<FT_Long>(data.size()),
-          0,
-          &fallbackFace) == 0);
-
-      if (!fallbackLoaded)
-        m_fallbackFontData.pop_back();
     }
 
-    if (!fallbackLoaded)
+    if (!fallbackLoaded) {
+      g_logger.warning(fmt::format("TTFFont: failed to load fallback '{}'", fallbackPath));
       continue;
+    }
 
-    FT_Set_Pixel_Sizes(fallbackFace, 0, pixelSize);
+    const FT_Error fallbackSizeError = FT_Set_Pixel_Sizes(fallbackFace, 0, pixelSize);
+    if (fallbackSizeError) {
+      FT_Done_Face(fallbackFace);
+      continue;
+    }
     hb_font_t* fallbackHbFont = hb_ft_font_create(fallbackFace, nullptr);
     if (fallbackHbFont) {
       m_fallbackFaces.push_back(fallbackFace);
@@ -131,7 +189,7 @@ bool TTFFont::load(const std::string& mainTtf,
     }
   }
 
-  ensureAtlas();
+  g_logger.info(fmt::format("TTFFont::load() completed successfully with {} fallback fonts", m_fallbackFaces.size()));
   return true;
 }
 
@@ -145,18 +203,33 @@ bool TTFFont::load(const std::string& mainTtf,
  * @return int Index of the newly created atlas within the internal atlas list.
  */
 int TTFFont::ensureAtlas() {
-  Atlas a;
-  a.width = 2048; a.height = 2048;
-  a.penX = a.penY = a.rowH = 0;
+  int atlasSize = 1024;
+  const int maxTextureSize = g_graphics.getMaxTextureSize();
+  if (maxTextureSize > 0)
+    atlasSize = std::min(atlasSize, maxTextureSize);
+  atlasSize = std::max(atlasSize, 256);
 
-  // Create blank RGBA image and corresponding GPU texture
-  a.image = std::make_shared<Image>(Size(a.width, a.height), 4 /*bpp*/, nullptr);
-  a.texture = std::make_shared<Texture>(a.image, /*buildMipmaps*/false, /*compress*/false);
-  a.texture->setSmooth(true);
-  a.texture->create();
+  try {
+    Atlas a;
+    a.width = atlasSize;
+    a.height = atlasSize;
+    a.penX = a.penY = a.rowH = 0;
 
-  m_atlases.push_back(a);
-  return static_cast<int>(m_atlases.size() - 1);
+    // Create blank RGBA image and corresponding GPU texture
+    a.image = std::make_shared<Image>(Size(a.width, a.height), 4 /*bpp*/, nullptr);
+    a.texture = std::make_shared<Texture>(a.image, /*buildMipmaps*/false, /*compress*/false);
+    a.texture->setSmooth(true);
+    a.texture->create();
+
+    m_atlases.push_back(a);
+    return static_cast<int>(m_atlases.size() - 1);
+  } catch (const std::exception& e) {
+    g_logger.error("TTF: failed to allocate glyph atlas {}x{}: {}", atlasSize, atlasSize, e.what());
+    return -1;
+  } catch (...) {
+    g_logger.error("TTF: failed to allocate glyph atlas {}x{}: unknown exception", atlasSize, atlasSize);
+    return -1;
+  }
 }
 
 /**
@@ -236,7 +309,7 @@ const AtlasGlyph* TTFFont::rasterizeGlyph(FT_Face face, uint32_t glyphIndex, uin
   // Space/empty glyph
   if (w == 0 || h == 0) {
     AtlasGlyph ag{};
-    ag.texture = m_atlases.back().texture;
+    ag.texture = nullptr;
     ag.x = ag.y = ag.w = ag.h = 0;
     ag.bearingX = g->bitmap_left;
     ag.bearingY = g->bitmap_top;
@@ -245,20 +318,38 @@ const AtlasGlyph* TTFFont::rasterizeGlyph(FT_Face face, uint32_t glyphIndex, uin
     return &m_glyphs[cacheKey];
   }
 
+  if (m_atlases.empty()) {
+    if (ensureAtlas() < 0)
+      return nullptr;
+  }
+
   // Pack into current atlas; make a new one if needed
   Atlas* A = &m_atlases.back();
   if (A->penX + w + 2 > A->width) { A->penX = 0; A->penY += A->rowH + 2; A->rowH = 0; }
-  if (A->penY + h + 2 > A->height) { ensureAtlas(); A = &m_atlases.back(); }
+  if (A->penY + h + 2 > A->height) {
+    if (ensureAtlas() < 0)
+      return nullptr;
+    A = &m_atlases.back();
+  }
 
   // Convert FT grayscale bitmap -> RGBA (white with alpha)
-  ImagePtr glyphImage = std::make_shared<Image>(Size(w, h), 4);
-  for (int yy = 0; yy < h; ++yy) {
-    const uint8_t* srcRow = g->bitmap.buffer + yy * g->bitmap.pitch;
-    for (int xx = 0; xx < w; ++xx) {
-      const uint8_t a = srcRow[xx];
-      uint8_t* dst = glyphImage->getPixel(xx, yy);
-      dst[0] = 255; dst[1] = 255; dst[2] = 255; dst[3] = a;
+  ImagePtr glyphImage;
+  try {
+    glyphImage = std::make_shared<Image>(Size(w, h), 4);
+    for (int yy = 0; yy < h; ++yy) {
+      const uint8_t* srcRow = g->bitmap.buffer + yy * g->bitmap.pitch;
+      for (int xx = 0; xx < w; ++xx) {
+        const uint8_t a = srcRow[xx];
+        uint8_t* dst = glyphImage->getPixel(xx, yy);
+        dst[0] = 255; dst[1] = 255; dst[2] = 255; dst[3] = a;
+      }
     }
+  } catch (const std::exception& e) {
+    g_logger.error("TTF: glyph rasterization failed (glyph={} {}x{}): {}", glyphIndex, w, h, e.what());
+    return nullptr;
+  } catch (...) {
+    g_logger.error("TTF: glyph rasterization failed (glyph={} {}x{}): unknown exception", glyphIndex, w, h);
+    return nullptr;
   }
 
   // Copy to CPU atlas and upload only the updated sub-region to the GPU
@@ -342,9 +433,12 @@ void TTFFont::drawText(const std::u32string& text32,
 float TTFFont::measureTextWidth(const std::u32string& text32,
                                 const ShapeParams& params) {
   if (!m_hbFont || text32.empty()) return 0.f;
-  std::vector<GlyphQuad> quads;
-  const Rect bounds = buildQuads(text32, params, quads);
-  return bounds.isValid() ? bounds.width() : 0.f;
+  const auto shaped = TextShaper::shape(text32, m_hbFont, params);
+  float penX = 0.f;
+  for (const auto& sg : shaped) {
+    penX += sg.advanceX;
+  }
+  return penX;
 }
 
 TexturePtr TTFFont::getAtlasTexture(const size_t index) const

@@ -20,21 +20,31 @@ end
 function importResources(dir, type, device)
     local path = '/' .. dir .. '/'
     local files = g_resources.listDirectoryFiles(path)
-    for _, file in pairs(files) do
+    table.sort(files)
+    for _, file in ipairs(files) do
         if g_resources.isFileType(file, type) then
             -- Debug: check if TTF files exist
-            if file:find("mono%-12") or file:find("noto%-12") then
+            if file == "mono-12.otfont" then
                 local ttfPath = "/fonts/ttf/NotoSansMono-Regular.ttf"
-                local exists = g_resources.fileExists(ttfPath)
-                local realPath = g_resources.getRealPath(ttfPath)
-                print("DEBUG TTF: " .. ttfPath .. " exists=" .. tostring(exists) .. " realPath=" .. tostring(realPath))
+                print("DEBUG TTF mono: " .. ttfPath ..
+                    " exists=" .. tostring(g_resources.fileExists(ttfPath)) ..
+                    " realPath=" .. tostring(g_resources.getRealPath(ttfPath)))
+            elseif file == "noto-12.otfont" then
+                local regular = "/fonts/ttf/NotoSans-Regular.ttf"
+                local bold = "/fonts/ttf/NotoSans-Bold.ttf"
+                print("DEBUG TTF noto regular: " .. regular ..
+                    " exists=" .. tostring(g_resources.fileExists(regular)) ..
+                    " realPath=" .. tostring(g_resources.getRealPath(regular)))
+                print("DEBUG TTF noto bold: " .. bold ..
+                    " exists=" .. tostring(g_resources.fileExists(bold)) ..
+                    " realPath=" .. tostring(g_resources.getRealPath(bold)))
             end
             
-            local success, err = pcall(function()
-                resourceLoaders[type](path .. file)
-            end)
-            if not success then
-                print("ERROR loading " .. type .. ": " .. path .. file .. " - " .. tostring(err))
+            local ok, resultOrErr = pcall(resourceLoaders[type], path .. file)
+            if not ok then
+                print("ERROR loading " .. type .. ": " .. path .. file .. " - " .. tostring(resultOrErr))
+            elseif resultOrErr == false then
+                print("FAILED loading " .. type .. ": " .. path .. file .. " (returned false)")
             else
                 print("OK loaded: " .. path .. file)
             end

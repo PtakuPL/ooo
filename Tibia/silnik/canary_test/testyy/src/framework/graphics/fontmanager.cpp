@@ -26,6 +26,8 @@
 #include <framework/core/resourcemanager.h>
 #include <framework/otml/otml.h>
 
+#include <exception>
+
 FontManager g_fonts;
 
 void FontManager::terminate() { clearFonts(); }
@@ -65,6 +67,12 @@ bool FontManager::importFont(const std::string& file)
         return true;
     } catch (const stdext::exception& e) {
         g_logger.error("Unable to load font from file '{}': {}", path, e.what());
+        return false;
+    } catch (const std::exception& e) {
+        g_logger.error("Unable to load font from file '{}': {}", path, e.what());
+        return false;
+    } catch (...) {
+        g_logger.error("Unable to load font from file '{}': unknown exception", path);
         return false;
     }
 }

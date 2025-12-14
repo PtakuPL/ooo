@@ -49,49 +49,73 @@ void BitmapFont::load(const OTMLNodePtr& fontNode)
     // === TTF path (handled before bitmap parsing) ===
 const std::string type = fontNode->valueAt<std::string>("type", "");
 if(type == "ttf") {
-    m_isTTF = true;
+    try {
+        m_isTTF = true;
 
-    // Required fields
-    const auto& srcNode = fontNode->at("source");
-    const std::string src = srcNode->value();
-    const std::string srcSource = srcNode->source();
-    g_logger.debug(fmt::format("TTF: src='{}', srcSource='{}'", src, srcSource));
-    
-    // If source path starts with /, use it directly (absolute virtual path)
-    std::string mainPath;
-    if (src.starts_with("/")) {
-        mainPath = src;
-    } else {
-        mainPath = stdext::resolve_path(src, srcSource);
-    }
-    g_logger.debug(fmt::format("TTF: mainPath='{}'", mainPath));
-    
-    const int size = fontNode->valueAt<int>("size", 12);
-
-    // Optional fallback: array of paths
-    std::vector<std::string> fbPaths;
-    if (const auto& fb = fontNode->get("fallback")) {
-        for (const auto& child : fb->children()) {
-            const std::string fbVal = child->value<std::string>();
-            if (fbVal.starts_with("/")) {
-                fbPaths.emplace_back(fbVal);
-            } else {
-                fbPaths.emplace_back(stdext::resolve_path(fbVal, child->source()));
-            }
+        // Required fields - use get() with null check instead of at() which throws
+        const auto srcNode = fontNode->get("source");
+        if (!srcNode) {
+            g_logger.error("TTF: missing 'source' field in font definition");
+            m_isTTF = false;
+            return;
         }
-    }
+        
+        const std::string src = srcNode->value();
+        g_logger.info(fmt::format("TTF: loading font source='{}'", src));
+        
+        // Use the path directly - it should be an absolute virtual path starting with /
+        std::string mainPath = src;
+        if (!src.starts_with("/")) {
+            // Relative path - resolve from source file location
+            const std::string srcSource = srcNode->source();
+            mainPath = stdext::resolve_path(src, srcSource);
+        }
+        g_logger.info(fmt::format("TTF: resolved mainPath='{}'", mainPath));
+        
+        const int size = fontNode->valueAt<int>("size", 12);
+        g_logger.info(fmt::format("TTF: size={}", size));
 
-    m_ttf = std::make_shared<TTFFont>();
-    if (!m_ttf->load(mainPath, fbPaths, size)) {
+        // Optional fallback: array of paths
+        std::vector<std::string> fbPaths;
+        if (const auto fb = fontNode->get("fallback")) {
+            for (const auto& child : fb->children()) {
+                const std::string fbVal = child->value<std::string>();
+                if (!fbVal.empty()) {
+                    if (fbVal.starts_with("/")) {
+                        fbPaths.emplace_back(fbVal);
+                    } else {
+                        fbPaths.emplace_back(stdext::resolve_path(fbVal, child->source()));
+                    }
+                }
+            }
+            g_logger.info(fmt::format("TTF: {} fallback fonts configured", fbPaths.size()));
+        }
+
+        m_ttf = std::make_shared<TTFFont>();
+        if (!m_ttf->load(mainPath, fbPaths, size)) {
+            g_logger.error(fmt::format("TTF: load() returned false for '{}'", src));
+            m_ttf.reset();
+            m_isTTF = false;
+            return;  // Don't throw - just fail gracefully
+        }
+
+        // for layout purposes
+        m_glyphHeight = size;
+        m_yOffset = fontNode->valueAt("y-offset", 0);
+        g_logger.info(fmt::format("TTF: font '{}' loaded successfully", src));
+        return; // skip bitmap path
+        
+    } catch (const std::exception& e) {
+        g_logger.error(fmt::format("TTF: exception while loading: {}", e.what()));
         m_ttf.reset();
         m_isTTF = false;
-        throw Exception("TTF load failed: '{}' (resolved: '{}')", src, mainPath);
+        return;
+    } catch (...) {
+        g_logger.error("TTF: unknown exception while loading");
+        m_ttf.reset();
+        m_isTTF = false;
+        return;
     }
-
-    // for layout purposes
-    m_glyphHeight = size;
-    m_yOffset = fontNode->valueAt("y-offset", 0);
-    return; // skip bitmap path
 }
 // === end TTF path ===
 const auto& textureNode = fontNode->at("texture");

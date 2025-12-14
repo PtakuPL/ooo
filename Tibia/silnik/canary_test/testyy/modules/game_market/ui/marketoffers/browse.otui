@@ -136,7 +136,7 @@ Panel
     anchors.left: prev.left
     margin-top: 9
     width: 30
-    font: verdana-11px-rounded
+    font: noto-12
     text-offset: 0 2
 
   TextEdit

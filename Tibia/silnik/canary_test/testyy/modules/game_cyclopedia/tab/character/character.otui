@@ -873,7 +873,7 @@ UIWidget
       id: previous
       size: 86 20
       !text: tr('Previous')
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       anchors.top: ListBase.bottom
       anchors.left: parent.left
       margin-top: 7
@@ -884,7 +884,7 @@ UIWidget
       id: next
       size: 86 20
       !text: tr('Next')
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       anchors.top: ListBase.bottom
       anchors.right: parent.right
       margin-right: -5
@@ -984,7 +984,7 @@ UIWidget
       id: previous
       size: 86 20
       !text: tr('Previous')
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       anchors.top: ListBase.bottom
       anchors.left: parent.left
       margin-top: 7
@@ -995,7 +995,7 @@ UIWidget
       id: next
       size: 86 20
       !text: tr('Next')
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       anchors.top: ListBase.bottom
       anchors.right: parent.right
       margin-right: -5

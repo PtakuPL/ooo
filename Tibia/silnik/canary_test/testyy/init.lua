@@ -50,18 +50,28 @@ else
     g_logger.debug("LUA debugger not started (not launched with VSCode local-lua).")
 end
 
+-- Debug: Print working directory
+local workDir = g_resources.getWorkDir()
+g_logger.info("Working directory: " .. tostring(workDir))
+
 -- add data directory to the search path
-if not g_resources.addSearchPath(g_resources.getWorkDir() .. 'data', true) then
+local dataPath = workDir .. 'data'
+g_logger.info("Adding data path: " .. dataPath)
+if not g_resources.addSearchPath(dataPath, true) then
     g_logger.fatal('Unable to add data directory to the search path.')
 end
 
 -- add modules directory to the search path
-if not g_resources.addSearchPath(g_resources.getWorkDir() .. 'modules', true) then
+local modulesPath = workDir .. 'modules'
+g_logger.info("Adding modules path: " .. modulesPath)
+if not g_resources.addSearchPath(modulesPath, true) then
     g_logger.fatal('Unable to add modules directory to the search path.')
 end
 
 -- try to add mods path too
-g_resources.addSearchPath(g_resources.getWorkDir() .. 'mods', true)
+local modsPath = workDir .. 'mods'
+g_logger.info("Adding mods path: " .. modsPath)
+g_resources.addSearchPath(modsPath, true)
 
 -- setup directory for saving configurations
 g_resources.setupUserWriteDir(('%s/'):format(g_app.getCompactName()))

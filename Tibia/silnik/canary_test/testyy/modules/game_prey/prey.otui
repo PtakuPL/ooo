@@ -585,7 +585,7 @@ MainWindow
     anchors.bottom: parent.bottom
     size: 45 21
     !text: tr('Close')
-    font: cipsoftFont
+    font: noto-12
     @onClick: modules.game_prey.hide()
 
   GoldLabel

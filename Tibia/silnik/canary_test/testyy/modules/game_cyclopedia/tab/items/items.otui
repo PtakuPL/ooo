@@ -47,7 +47,7 @@ UIWidget
     anchors.top: CategoryList.bottom
     margin-top: 40
     !text: tr("Level")
-    //font: verdana-bold-8px-antialiased
+    //font: noto-12
     text-offset: 13 6
     color: #C0C0C0
     @onCheckChange: modules.game_cyclopedia.Cyclopedia.levelFilter(self:isChecked())
@@ -58,7 +58,7 @@ UIWidget
     anchors.top: LevelButton.top
     margin-left: 5
     !text: tr("Voc.")
-    //font: verdana-bold-8px-antialiased
+    //font: noto-12
     text-offset: 13 6
     color: #C0C0C0
     @onCheckChange: modules.game_cyclopedia.Cyclopedia.vocationFilter(self:isChecked())
@@ -70,7 +70,7 @@ UIWidget
     margin-left: 5
     text-offset: 13 6
     !text: tr("1H")
-    //font: verdana-bold-8px-antialiased
+    //font: noto-12
     color: #C0C0C0
     @onCheckChange: modules.game_cyclopedia.Cyclopedia.handFilter(self:isChecked(), false)
   fakeCheckBox
@@ -81,7 +81,7 @@ UIWidget
     margin-left: 5
     !text: tr("2H")
 
-    //font: verdana-bold-8px-antialiased
+    //font: noto-12
     text-offset: 13 6
     color: #C0C0C0
     @onCheckChange: modules.game_cyclopedia.Cyclopedia.handFilter(false, self:isChecked())
@@ -153,7 +153,7 @@ UIWidget
     anchors.bottom: SelectedItem.bottom
     anchors.left: SelectedItem.right
     anchors.right: ItemListBase.right
-    //font: verdana-10px-antialiased
+    //font: noto-12-antialiased
     padding-top: 2
     padding-right: 15
     margin-left: 5
@@ -443,7 +443,7 @@ UIWidget
     anchors.left: parent.left
     anchors.bottom: parent.bottom
     !text: tr('Manage Containers')
-    //font: verdana-bold-8px-antialiased
+    //font: noto-12
     text-offset: 0 -1
     color: #C0C0C0
     @onClick: |

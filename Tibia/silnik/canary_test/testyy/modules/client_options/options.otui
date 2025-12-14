@@ -38,7 +38,7 @@ OptionsCategory < UIWidget
       text-auto-resize: true
       !text: tr('General Stats')
       color: #ffffff
-      font: cipsoftFont
+      font: noto-12
       $checked:
         text-offset: 12 10
       $!checked:

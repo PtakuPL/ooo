@@ -10,7 +10,7 @@ Panel
 
   Label
     !text: tr('Sell History')
-    font: verdana-11px-rounded
+    font: noto-12
     text-offset: 0 2
     anchors.top: parent.top
     anchors.left: parent.left
@@ -73,7 +73,7 @@ Panel
 
   Label
     !text: tr('Buy History')
-    font: verdana-11px-rounded
+    font: noto-12
     text-offset: 0 2
     anchors.top: myHistorySellingTable.bottom
     anchors.left: parent.left

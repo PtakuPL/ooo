@@ -1,12 +1,12 @@
 StatsTableRow < TableRow
-  font: verdana-11px-monochrome
+  font: noto-12
   focusable: true
   color: #cccccc
   height: 20
   focusable: false
 
 StatsTableColumn < TableColumn
-  font: verdana-11px-monochrome
+  font: noto-12
   background-color: alpha
   text-offset: 5 3
   color: #cccccc
@@ -19,7 +19,7 @@ Panel
 
   Label
     !text: tr('Buy Offers')
-    font: verdana-11px-rounded
+    font: noto-12
     text-offset: 0 2
     anchors.top: parent.top
     anchors.left: parent.left
@@ -63,7 +63,7 @@ Panel
 
   Label
     !text: tr('Sell Offers')
-    font: verdana-11px-rounded
+    font: noto-12
     text-offset: 0 2
     anchors.top: buyStatsTable.bottom
     anchors.left: parent.left

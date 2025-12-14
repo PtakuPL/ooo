@@ -10,7 +10,7 @@ Panel
     margin-top: 6
     margin-left: 6
     margin-right: 6
-    font: verdana-11px-rounded
+    font: noto-12
     text-offset: 0 2
     height: 50
     text-wrap: true

@@ -303,7 +303,7 @@ UIWidget
       color: #C0C0C0
       anchors.bottom: parent.bottom
       anchors.right: parent.right
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       text-offset: 0 -1
       change-cursor-image: false
     Button
@@ -314,7 +314,7 @@ UIWidget
       anchors.top: cancel.top
       anchors.right: cancel.left
       margin-right: 7
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       text-offset: 0 -1
       change-cursor-image: false
     Label
@@ -415,7 +415,7 @@ UIWidget
       color: #C0C0C0
       anchors.bottom: parent.bottom
       anchors.right: parent.right
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       text-offset: 0 -1
       change-cursor-image: false
     Button
@@ -426,7 +426,7 @@ UIWidget
       anchors.top: cancel.top
       anchors.right: cancel.left
       margin-right: 7
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       text-offset: 0 -1
       change-cursor-image: false
     Label
@@ -609,7 +609,7 @@ UIWidget
       color: #C0C0C0
       anchors.bottom: parent.bottom
       anchors.right: parent.right
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       text-offset: 0 -1
       change-cursor-image: false
     Button
@@ -620,7 +620,7 @@ UIWidget
       anchors.top: cancel.top
       anchors.right: cancel.left
       margin-right: 7
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       text-offset: 0 -1
       change-cursor-image: false
     Label
@@ -855,7 +855,7 @@ UIWidget
       color: #C0C0C0
       anchors.bottom: parent.bottom
       anchors.right: parent.right
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       text-offset: 0 -1
       change-cursor-image: false
     Button
@@ -866,7 +866,7 @@ UIWidget
       anchors.top: cancel.top
       anchors.right: cancel.left
       margin-right: 7
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       text-offset: 0 -1
       change-cursor-image: false
     Label
@@ -1040,7 +1040,7 @@ UIWidget
       color: #C0C0C0
       anchors.bottom: parent.bottom
       anchors.right: parent.right
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       text-offset: 0 -1
       change-cursor-image: false
     Button
@@ -1051,7 +1051,7 @@ UIWidget
       anchors.top: cancel.top
       anchors.right: cancel.left
       margin-right: 7
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       text-offset: 0 -1
       change-cursor-image: false
     Label
@@ -1225,7 +1225,7 @@ UIWidget
       color: #C0C0C0
       anchors.bottom: parent.bottom
       anchors.right: parent.right
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       text-offset: 0 -1
       change-cursor-image: false
     Button
@@ -1236,7 +1236,7 @@ UIWidget
       anchors.top: cancel.top
       anchors.right: cancel.left
       margin-right: 7
-      //font: verdana-bold-8px-antialiased
+      //font: noto-12
       text-offset: 0 -1
       change-cursor-image: false
     Label

@@ -62,7 +62,7 @@ MainWindow
     size: 45 20
     margin-top: 5
     !text: tr('Close')
-    font: cipsoftFont
+    font: noto-12
     @onClick: modules.game_rewardwall.destroyPickReward(true)
 
   QtButton
@@ -74,6 +74,6 @@ MainWindow
     margin-right: 10
     !text: tr('Ok')
     color: #FFFFFF
-    font: cipsoftFont
+    font: noto-12
     enabled: false
     @onClick: modules.game_rewardwall.onClickBtnOk()

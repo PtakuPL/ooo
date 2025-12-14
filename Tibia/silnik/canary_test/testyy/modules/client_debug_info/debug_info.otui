@@ -1,5 +1,5 @@
 DebugText < Label
-  font: terminus-10px
+  font: noto-12
   text-wrap: false
   text-auto-resize: true
   text-align: topleft

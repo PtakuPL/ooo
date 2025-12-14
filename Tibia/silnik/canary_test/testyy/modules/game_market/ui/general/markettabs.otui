@@ -2,7 +2,7 @@ MarketTabBar < TabBar
 MarketTabBarPanel < TabBarPanel
 MarketTabBarButton < TabBarButton
   size: 20 25
-  font: verdana-11px-rounded
+  font: noto-12
   text-offset: 0 2
 
   $!first:
@@ -22,7 +22,7 @@ MarketRightTabBar < TabBar
 MarketRightTabBarPanel < TabBarPanel
 MarketRightTabBarButton < TabBarButton
   size: 20 25
-  font: verdana-11px-rounded
+  font: noto-12
   text-offset: 0 2
   color: #929292
 

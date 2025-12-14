@@ -1,0 +1,10 @@
+Module
+  name: client_mods
+  description: Client modifications loader
+  author: OTClient
+  website: https://github.com/mehah/otclient
+  sandboxed: true
+  scripts: [ mods.lua ]
+
+  @onLoad: init()
+  @onUnload: terminate()

@@ -217,7 +217,7 @@ Window
       size: 128 20
       !text: tr('Clear Skipped Loot List')
       color: #C0C0C0
-      font: small-9px
+      font: noto-12
       anchors.top: accepted.bottom
       anchors.left: parent.left
       margin-top: 5
@@ -227,7 +227,7 @@ Window
       size: 128 20
       !text: tr('Add to Skipped Loot List')
       color: #C0C0C0
-      font: small-9px
+      font: noto-12
       anchors.bottom: parent.bottom
       anchors.left: parent.left
       @onClick: |

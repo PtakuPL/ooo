@@ -37,7 +37,7 @@ game
     min-static-text-duration: 3000
 
 font
-  widget: verdana-11px-antialised
-  static-text: verdana-11px-rounded
-  animated-text: verdana-11px-rounded
-  creature-text: verdana-11px-rounded
+  widget: noto-12
+  static-text: noto-12
+  animated-text: noto-12
+  creature-text: noto-12

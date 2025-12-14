@@ -118,19 +118,13 @@ locale = {
     ["Comment:"] = "Kommentar:",
     ["Connecting to game server..."] = "Verbindung zum Spielserver wird aufgebaut...",
     ["Connecting to login server..."] = "Verbindung zum Loginserver wird aufgebaut...",
-    ["Connecting to login server...
-Server: [%s]"] = "Verbindung zum Loginserver...
-Server: [%s]",
+    ["Connecting to login server...\nServer: [%s]"] = "Verbindung zum Loginserver...\nServer: [%s]",
     ["Connection Error"] = "Verbindungsfehler",
     ["Connection failed, the server address does not exist."] = "Verbindung fehlgeschlagen, die Serveradresse existiert nicht.",
     ["Connection failed."] = "Verbindung fehlgeschlagen.",
     ["Connection refused, the server might be offline or restarting.\nPlease try again later."] = "Verbindung abgelehnt, der Server ist möglicherweise offline oder startet neu.\nBitte versuchen Sie es später erneut.",
     ["Connection timed out. Either your network is failing or the server is offline."] = "Verbindungszeitüberschreitung. Entweder ist Ihr Netzwerk fehlerhaft oder der Server ist offline.",
-    ["ERROR , try adding 
-- ip/login.php 
-- Enable HTTP login"] = "FEHLER, versuche hinzuzufügen 
-- ip/login.php 
-- HTTP-Login aktivieren",
+    ["ERROR , try adding \n- ip/login.php \n- Enable HTTP login"] = "FEHLER, versuche hinzuzufügen \n- ip/login.php \n- HTTP-Login aktivieren",
     ["\nis this in the protobuf ?\n in http post ? \nor modify gamelib/spells.lua?"] = "\nist das in der Protobuf?\nim HTTP-Post?\noder gamelib/spells.lua ändern?",
     ["Console"] = "Konsole",
     ["Cooldown"] = "Abklingzeit",

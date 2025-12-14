@@ -1,9 +1,0 @@
-NotoSans-12.otfont
-{
-    type: "ttf"
-    source: "/fonts/ttf/NotoSans-Regular.ttf"
-    size: 12
-    dpi: 96
-    // Fallback fonts for CJK (Chinese/Japanese/Korean) and Arabic scripts
-    fallback: [ "/fonts/ttf/NotoSansSC-Regular.ttf", "/fonts/ttf/NotoNaskhArabic-Regular.ttf" ]
-}

@@ -1,5 +1,5 @@
 TextListQuestLog < Panel
-  font: verdana-11px-antialised
+  font: noto-12
   width: 192
   text-offset: 24 5
   text-align: topLeft
@@ -30,7 +30,7 @@ TextListQuestLog < Panel
     pixels-scroll: true
 
 MultiLineQuestLog < Panel
-  font: verdana-11px-antialised
+  font: noto-12
   width: 192
   text-offset: 24 5
   text-align: topLeft
@@ -198,7 +198,7 @@ ButtonTrackerMenuOption < UIButton
   text-align: left
   color: white
   background-color: alpha
-  font: verdana-11px-rounded
+  font: noto-12
   padding: 3 6
 
   $hover:

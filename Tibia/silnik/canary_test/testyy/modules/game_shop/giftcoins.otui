@@ -129,7 +129,7 @@ MainWindow
   Button
     id: cancelButton
     !text: tr('Cancel')
-    font: cipsoftFont
+    font: noto-12
     anchors.right: parent.right
     anchors.bottom: parent.bottom
     size: 45 21
@@ -140,7 +140,7 @@ MainWindow
   Button
     id: giftButton
     !text: tr('Gift')
-    font: cipsoftFont
+    font: noto-12
     size: 45 21
     anchors.verticalCenter: prev.verticalCenter
     anchors.right: prev.left

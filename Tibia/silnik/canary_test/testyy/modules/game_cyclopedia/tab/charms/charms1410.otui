@@ -245,7 +245,7 @@ UIWidget
       QtButton
         id: MajorCharms
         !text: tr('Major Charms')
-        font: verdana-11px-antialised
+        font: noto-12
         anchors.left: parent.left
         anchors.top: parent.top
         anchors.bottom: parent.bottom
@@ -265,7 +265,7 @@ UIWidget
       QtButton
         id: MinorCharms
         !text: tr('Minor Charms')
-        font: verdana-11px-antialised
+        font: noto-12
         width: 322
         anchors.top: parent.top
         anchors.left: prev.right
@@ -286,7 +286,7 @@ UIWidget
 
     Panel
       id: panelCharmList
-      font: verdana-11px-antialised
+      font: noto-12
       text-offset: 24 5
       text-align: topLeft
       border-width: 1

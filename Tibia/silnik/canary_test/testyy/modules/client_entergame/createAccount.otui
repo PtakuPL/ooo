@@ -208,7 +208,7 @@ MainWindow
 
         Button
           !text: tr('Suggest Name')
-          font: cipsoftFont
+          font: noto-12
           @onClick: onClickSuggestName()
       Panel
         id: panelSex
@@ -271,7 +271,7 @@ MainWindow
             image-source: /images/ui/createaccount/icon-no
         Button
           !text: tr('Change World')
-          font: cipsoftFont
+          font: noto-12
           margin-left: -30
           @onClick: toggleMainPanels(true)
     HorizontalSeparator
@@ -287,7 +287,7 @@ MainWindow
       margin-left: 5
       anchors.top: separatorOne.bottom
       anchors.left: parent.left
-      font: cipsoftFont
+      font: noto-12
       @onClick: toggleCreateAccount(true)
     UIButton
       id: buttonStartPlaying
@@ -297,7 +297,7 @@ MainWindow
       margin-right: 5
       anchors.top: separatorOne.bottom
       anchors.right: parent.right
-      font: cipsoftFont
+      font: noto-12
       image-source: /images/ui/createaccount/button_startplaying
       enabled:false
       @onClick: onClickStartPlaying()
@@ -319,7 +319,7 @@ MainWindow
     Label
       !text: tr('This site is protected by ReCAPTCHA and  the google Privacy Policy and Terms of Services apply.')
       margin-top: 5
-      font: cipsoftFont
+      font: noto-12
       anchors.top: prev.bottom
       anchors.left: parent.left
       anchors.right: parent.right
@@ -716,7 +716,7 @@ MainWindow
       margin-left: 5
       anchors.top: separadorThee.bottom
       anchors.left: parent.left
-      font: cipsoftFont
+      font: noto-12
       @onClick: toggleMainPanels(false)
 
     Button
@@ -726,7 +726,7 @@ MainWindow
       margin-left: 5
       anchors.top: separadorThee.bottom
       anchors.right: parent.right
-      font: cipsoftFont
+      font: noto-12
       @onClick: onClickOkChangeWorld()
 
     Button
@@ -736,5 +736,5 @@ MainWindow
       margin-right: 5
       anchors.top: separadorThee.bottom
       anchors.right: prev.left
-      font: cipsoftFont
+      font: noto-12
       @onClick: onClickResetGameWorld()

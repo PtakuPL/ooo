@@ -10,7 +10,7 @@ UIWidget
     anchors.right: parent.right
     margin-bottom: 35
     !text: tr('Search')
-    font: small-9px
+    font: noto-12
     text-offset: 0 -1
     color: #C0C0C0
     @onClick:  modules.game_cyclopedia.Cyclopedia.BestiarySearch(self:getText())
@@ -22,7 +22,7 @@ UIWidget
     margin-bottom: 1
     !placeholder: tr('Type to search')
     placeholder-color: #6E706F
-    font: verdana-11px-monochrome
+    font: noto-12
     color: #C0C0C0
     padding-top: 1
     shader: Map - Party
@@ -280,7 +280,7 @@ UIWidget
         anchors.bottom: CharmBase.bottom
         margin-left: 5
         !text: tr('Select')
-        //font: verdana-bold-8px-antialiased
+        //font: noto-12
         text-offset: 0 -1
         color: #C0C0C0
       ComboBox

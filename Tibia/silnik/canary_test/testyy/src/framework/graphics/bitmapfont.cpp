@@ -195,9 +195,12 @@ void BitmapFont::drawText(const std::string_view text, const Point& startPos, co
 void BitmapFont::drawText(const std::string_view text, const Rect& screenCoords, const Color& color, const Fw::AlignmentFlag align)
 {
 if (m_isTTF && m_ttf) {
-    g_logger.debug("BitmapFont::drawText TTF path: text='{}' rect=({},{} {}x{})", 
-                   std::string(text.substr(0, 20)), screenCoords.left(), screenCoords.top(), 
-                   screenCoords.width(), screenCoords.height());
+    static bool s_loggedTtfPathOnce = false;
+    if (!s_loggedTtfPathOnce) {
+        g_logger.info("BitmapFont::drawText: using TTF path (first time). rect=({},{} {}x{})", 
+                      screenCoords.left(), screenCoords.top(), screenCoords.width(), screenCoords.height());
+        s_loggedTtfPathOnce = true;
+    }
     const auto text32 = otc::text::utf8ToU32(text);
     const auto sp = otc::text::LocaleShaping::paramsFromUtf8(text, otc::text::LocaleShaping::getDefaultLocaleTag());
     const float w = m_ttf->measureTextWidth(text32, sp);

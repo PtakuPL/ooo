@@ -390,19 +390,36 @@ void TTFFont::drawText(const std::u32string& text32,
              float x, float y,
              const ShapeParams& params,
              const Color& color) {
-  if (!m_hbFont || text32.empty()) {
-    g_logger.debug("TTFFont::drawText: early return (hbFont={}, textEmpty={})", (m_hbFont != nullptr), text32.empty());
+  static bool s_loggedFirstCall = false;
+  static bool s_warnedMissingHbFont = false;
+  static bool s_warnedNoQuads = false;
+  static bool s_warnedNullOrEmptyTexture = false;
+
+  if (!m_hbFont) {
+    if (!s_warnedMissingHbFont) {
+      g_logger.warning("TTFFont::drawText: m_hbFont is null (font not ready); text will not render");
+      s_warnedMissingHbFont = true;
+    }
     return;
   }
+
+  if (text32.empty())
+    return;
 
   std::vector<GlyphQuad> quads;
   const Rect bounds = buildQuads(text32, params, quads);
   if (quads.empty()) {
-    g_logger.debug("TTFFont::drawText: no quads generated for text of {} codepoints", text32.size());
+    if (!s_warnedNoQuads) {
+      g_logger.warning("TTFFont::drawText: buildQuads produced 0 quads for {} codepoints (text will not render)", text32.size());
+      s_warnedNoQuads = true;
+    }
     return;
   }
 
-  g_logger.debug("TTFFont::drawText: rendering {} quads at ({}, {})", quads.size(), x, y);
+  if (!s_loggedFirstCall) {
+    g_logger.info("TTFFont::drawText: first call OK (quads={}, x={}, y={})", quads.size(), x, y);
+    s_loggedFirstCall = true;
+  }
 
   struct Batch {
     TexturePtr texture;
@@ -433,8 +450,13 @@ void TTFFont::drawText(const std::u32string& text32,
 
   for (const auto& batch : batches) {
     if (batch.coords && batch.coords->getVertexCount() > 0) {
-      g_logger.debug("TTFFont::drawText: submitting batch with {} vertices, texture={}", 
-                     batch.coords->getVertexCount(), (batch.texture != nullptr));
+      if (!batch.texture || batch.texture->isEmpty()) {
+        if (!s_warnedNullOrEmptyTexture) {
+          g_logger.warning("TTFFont::drawText: submitting vertices={} with INVALID texture (ptr={}, id={}) -> text will not render", 
+                           batch.coords->getVertexCount(), (batch.texture != nullptr), batch.texture ? batch.texture->getId() : 0);
+          s_warnedNullOrEmptyTexture = true;
+        }
+      }
       g_drawPool.addTexturedCoordsBuffer(batch.texture, batch.coords, color);
     }
   }

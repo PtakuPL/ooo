@@ -132,6 +132,8 @@ public:
                   std::vector<GlyphQuad>& outQuads);
 
 private:
+  struct Atlas;
+
   // When fonts are loaded from PhysFS archives (e.g. .otpkg), FreeType must use memory faces.
   // These buffers keep font data alive for the lifetime of FT_Face objects created via FT_New_Memory_Face.
   std::string m_mainFontData;

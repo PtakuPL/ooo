@@ -219,26 +219,29 @@ function EnterGame.init()
     end
 
     clientBox = getEnterGameWidget('clientComboBox')
-
-    for _, proto in pairs(g_game.getSupportedClients()) do
-        local protoStr = tostring(proto)
-        if installedClients[protoStr] or amountInstalledClients == 0 then
-            installedClients[protoStr] = nil
-            clientBox:addOption(proto)
+    if not clientBox then
+        print('Warning: client_entergame: clientComboBox not found in entergame UI; using configured client-version without UI selector.')
+    else
+        for _, proto in pairs(g_game.getSupportedClients()) do
+            local protoStr = tostring(proto)
+            if installedClients[protoStr] or amountInstalledClients == 0 then
+                installedClients[protoStr] = nil
+                clientBox:addOption(proto)
+            end
         end
-    end
 
-    for protoStr, status in pairs(installedClients) do
-        if status then
-            print(string.format('Warning: %s recognized as an installed client, but not supported.', protoStr))
+        for protoStr, status in pairs(installedClients) do
+            if status then
+                print(string.format('Warning: %s recognized as an installed client, but not supported.', protoStr))
+            end
         end
+
+        clientBox:setCurrentOption(clientVersion)
+
+        connect(clientBox, {
+            onOptionChange = EnterGame.onClientVersionChange
+        })
     end
-
-    clientBox:setCurrentOption(clientVersion)
-
-    connect(clientBox, {
-        onOptionChange = EnterGame.onClientVersionChange
-    })
 
     if Servers_init then
         if table.size(Servers_init) == 1 then

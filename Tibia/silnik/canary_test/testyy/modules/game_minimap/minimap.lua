@@ -11,8 +11,13 @@ local currentDayTime = {
 }
 
 local function refreshVirtualFloors()
-    mapController.ui.layersPanel.layersMark:setMarginTop(((virtualFloor + 1) * 4) - 3)
-    mapController.ui.layersPanel.automapLayers:setImageClip((virtualFloor * 14) .. ' 0 14 67')
+    local ui = mapController and mapController.ui
+    if not (ui and ui.layersPanel and ui.layersPanel.layersMark and ui.layersPanel.automapLayers) then
+        return
+    end
+
+    ui.layersPanel.layersMark:setMarginTop(((virtualFloor + 1) * 4) - 3)
+    ui.layersPanel.automapLayers:setImageClip((virtualFloor * 14) .. ' 0 14 67')
 end
 
 local function onPositionChange()
@@ -26,7 +31,12 @@ local function onPositionChange()
         return
     end
 
-    local minimapWidget = mapController.ui.minimapBorder.minimap
+    local ui = mapController and mapController.ui
+    if not (ui and ui.minimapBorder and ui.minimapBorder.minimap) then
+        return
+    end
+
+    local minimapWidget = ui.minimapBorder.minimap
     if not (minimapWidget) or minimapWidget:isDragging() then
         return
     end
@@ -57,6 +67,12 @@ Canary: void ProtocolGame::sendTibiaTime(int32_t time)
         m = minute
     }
 
+    local ui = mapController and mapController.ui
+    local ambients = ui and ui.rosePanel and ui.rosePanel.ambients
+    if not (ambients and ambients.main and ambients.secondary) then
+        return
+    end
+
     mapController:scheduleEvent(function()
         local nextH = currentDayTime.h
         local nextM = currentDayTime.m + 12
@@ -77,21 +93,21 @@ Canary: void ProtocolGame::sendTibiaTime(int32_t time)
         mainWidth = 31 - secondaryWidth
     end
 
-    mapController.ui.rosePanel.ambients.main:setWidth(mainWidth)
-    mapController.ui.rosePanel.ambients.secondary:setWidth(secondaryWidth)
+    ambients.main:setWidth(mainWidth)
+    ambients.secondary:setWidth(secondaryWidth)
 
     if secondaryWidth == 0 then
-        mapController.ui.rosePanel.ambients.secondary:hide()
+        ambients.secondary:hide()
     else
-        mapController.ui.rosePanel.ambients.secondary:setImageClip('0 0 ' .. secondaryWidth .. ' 31')
-        mapController.ui.rosePanel.ambients.secondary:show()
+        ambients.secondary:setImageClip('0 0 ' .. secondaryWidth .. ' 31')
+        ambients.secondary:show()
     end
 
     if mainWidth == 0 then
-        mapController.ui.rosePanel.ambients.main:hide()
+        ambients.main:hide()
     else
-        mapController.ui.rosePanel.ambients.main:setImageClip(position .. ' 0 ' .. mainWidth .. ' 31')
-        mapController.ui.rosePanel.ambients.main:show()
+        ambients.main:setImageClip(position .. ' 0 ' .. mainWidth .. ' 31')
+        ambients.main:show()
     end
 end
 

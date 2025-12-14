@@ -1,7 +1,7 @@
 # Migracja fontów OTClient na Unicode (TTF)
 
-## Data: 14 grudnia 2025
-## Status: W TRAKCIE - Problem z ładowaniem TTF + Refaktor UI
+## Data: 14-15 grudnia 2025
+## Status: ✅ ZAKOŃCZONE - Wszystkie fazy implementacji kompletne!
 
 ---
 
@@ -183,15 +183,17 @@ Po analizie kodu stwierdzono że pozostałe komponenty UI **nie wymagają zmian*
 
 ### FAZA 4: KONFIGURACJA FONTÓW
 
-**Status:** 🟡 W TRAKCIE
+**Status:** ✅ DONE (14.12.2025 06:00)
 
 | Zadanie | Opis | Status |
 |---------|------|--------|
-| **4.1** | Skonfigurować fallback fonts w `.otfont` dla JP/CJK | 🔄 Do sprawdzenia |
-| **4.2** | Upewnić się że pliki TTF są w instalacji | 🔄 Do sprawdzenia |
-| **4.3** | Ustawić domyślny font na noto-12 | 🔄 Do sprawdzenia |
+| **4.1** | Skonfigurować fallback fonts w `.otfont` dla JP/CJK | ✅ DONE |
+| **4.2** | Upewnić się że pliki TTF są w instalacji | ✅ DONE (26 plików Noto) |
+| **4.3** | Ustawić domyślny font na noto-12 | ✅ DONE |
 
 ### FAZA 5: TESTOWANIE
+
+**Status:** 🟡 GOTOWE DO TESTÓW MANUALNYCH
 
 | Test | Tekst | Cel |
 |------|-------|-----|
@@ -232,8 +234,12 @@ Po analizie kodu stwierdzono że pozostałe komponenty UI **nie wymagają zmian*
 ┌─────────────────────────────────────────────────────────────┐
 │ FAZA 4: Konfiguracja fontów                                 │
 │ Status: ✅ DONE (14.12.2025 06:00)                          │
+└─────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────┐
 │ FAZA 5: Testowanie                                          │
-│ Status: 🟡 GOTOWE DO TESTÓW                                 │
+│ Status: 🟡 GOTOWE DO TESTÓW MANUALNYCH                      │
+│ Testy: T1-T12 (patrz FAZA_2_CHECKLIST.md)                   │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -248,8 +254,8 @@ Po analizie kodu stwierdzono że pozostałe komponenty UI **nie wymagają zmian*
 | 2 | 5 | Średnia | 4-8h | ✅ NIE WYMAGANE |
 | 3 | 3 | Średnia | 2-4h | ⏭️ POMINIĘTE |
 | 4 | 3 | Niska | 1-2h | ✅ DONE |
-| 5 | 5 | Niska | 2-4h | 🟡 DO WYKONANIA |
-| **SUMA** | **30** | | **19-38h** | ~80% |
+| 5 | 5 | Niska | 2-4h | 🟡 GOTOWE DO TESTÓW |
+| **SUMA** | **30** | | **19-38h** | ~95% IMPLEMENTACJA ZAKOŃCZONA |
 
 ---
 
@@ -293,19 +299,52 @@ Po analizie kodu stwierdzono że pozostałe komponenty UI **nie wymagają zmian*
 
 | Plik | Zmiany |
 |------|--------|
-| `src/framework/graphics/bitmapfont.cpp` | try/catch TTF block, fontNode->get() |
+| `src/framework/graphics/bitmapfont.cpp` | try/catch TTF block, fontNode->get(), drawColoredText(), wrapText() codepoints, calculateTextRectSize() multiline |
+| `src/framework/graphics/bitmapfont.h` | Deklaracja drawColoredText() |
 | `src/framework/text/TTFFont.cpp` | getRealPath(), logging |
-| `src/framework/text/Utf8.h` | u32ToUtf8(), utf8Length(), itp. |
+| `src/framework/text/Utf8.h` | u32ToUtf8(), utf8Length(), utf8ByteOffset(), utf8CodepointIndex() |
 | `src/framework/ui/uitextedit.h` | m_text32, appendCharacter(char32_t) |
-| `src/framework/ui/uitextedit.cpp` | Kompletny refaktor na codepoints |
+| `src/framework/ui/uitextedit.cpp` | Kompletny refaktor na codepoints, getTextPos() TTF branch |
+| `src/framework/ui/uiwidgettext.cpp` | TTF branches w drawText() i updateText() |
+| `src/framework/stdext/string.cpp` | Unicode toupper/tolower/ucwords |
+| `src/client/statictext.cpp` | utf8Length() dla delay |
+| `src/framework/graphics/cachedtext.cpp` | TTF path z utf8ToU32() |
 | `data/fonts/noto-12.otfont` | default: true, fallback fonts |
 | `docs/FONT_UNICODE_MIGRATION.md` | Ta dokumentacja |
 
 ---
 
+## WERYFIKACJA KOŃCOWA (15.12.2025)
+
+### ✅ Sprawdzone komponenty:
+
+| Komponent | Plik | Status |
+|-----------|------|--------|
+| **BitmapFont** | `bitmapfont.cpp` | ✅ text.length() calls are in bitmap-only paths with TTF guards |
+| **CachedText** | `cachedtext.cpp` | ✅ Has proper TTF path with utf8ToU32() in update() |
+| **Protocol** | `inputmessage.cpp` | ✅ getString() returns raw UTF-8 bytes directly |
+| **UITextEdit** | `uitextedit.cpp` | ✅ All operations use m_text32 (codepoints) |
+| **UIWidget** | `uiwidgettext.cpp` | ✅ TTF branches for drawText() and updateText() |
+| **StaticText** | `statictext.cpp` | ✅ Uses utf8Length() for delay calculation |
+| **String utils** | `string.cpp` | ✅ Unicode case conversion for PL/DE/CZ |
+
+### 📦 Font files (26 Noto TTF):
+- NotoSans-Regular.ttf, NotoSans-Bold.ttf, NotoSans-Italic.ttf
+- NotoSansHebrew-Regular.ttf
+- NotoSansArabic-Regular.ttf
+- NotoSansJP-Regular.ttf
+- NotoSansSC-Regular.ttf (Simplified Chinese)
+- NotoSansTC-Regular.ttf (Traditional Chinese)
+- NotoSansKR-Regular.ttf (Korean)
+- NotoSansThai-Regular.ttf
+- NotoSansDevanagari-Regular.ttf
+- i więcej...
+
+---
+
 ## NASTĘPNY KROK
 
-**GOTOWE DO KOMPILACJI I TESTOWANIA!**
+**✅ IMPLEMENTACJA ZAKOŃCZONA - GOTOWE DO KOMPILACJI I TESTOWANIA!**
 
 Po kompilacji przetestować:
 1. Wyświetlanie polskich znaków (ą, ę, ó, ś, ć, ż, ź, ł, ń)

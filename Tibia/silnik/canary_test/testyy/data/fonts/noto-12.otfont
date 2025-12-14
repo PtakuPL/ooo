@@ -4,4 +4,9 @@ Font
   source: /fonts/ttf/NotoSans-Regular.ttf
   bold-source: /fonts/ttf/NotoSans-Bold.ttf
   size: 12
-  fallback: [ ]
+  default: true
+  fallback:
+    - /fonts/ttf/NotoSansSC-Regular.ttf
+    - /fonts/ttf/NotoSansHebrew-Regular.ttf
+    - /fonts/ttf/NotoNaskhArabic-Regular.ttf
+    - /fonts/ttf/NotoSansJP-Regular.otf

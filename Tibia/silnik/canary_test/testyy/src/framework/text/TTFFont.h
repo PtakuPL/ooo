@@ -132,6 +132,11 @@ public:
                   std::vector<GlyphQuad>& outQuads);
 
 private:
+  // When fonts are loaded from PhysFS archives (e.g. .otpkg), FreeType must use memory faces.
+  // These buffers keep font data alive for the lifetime of FT_Face objects created via FT_New_Memory_Face.
+  std::string m_mainFontData;
+  std::vector<std::string> m_fallbackFontData;
+
   // Ensure glyph is present in atlas, rasterizing and packing when needed
   // glyphIndex: glyph index in main font, codepoint: Unicode codepoint for fallback lookup
   const AtlasGlyph* cacheGlyph(uint32_t glyphIndex, char32_t codepoint = 0);

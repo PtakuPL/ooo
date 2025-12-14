@@ -41,10 +41,37 @@ bool TTFFont::load(const std::string& mainTtf,
                    const std::vector<std::string>& fallbackTtfs,
                    int pixelSize) {
   if (FT_Init_FreeType(&m_ftLib)) return false;
-  
-  // Convert virtual path to real filesystem path for FreeType
-  const std::string realMainPath = g_resources.getRealPath(mainTtf);
-  if (FT_New_Face(m_ftLib, realMainPath.c_str(), 0, &m_face)) return false;
+
+  // Try filesystem path first (works when resources are plain files on disk).
+  // If that fails (e.g. resources are in PhysFS archives), fallback to memory faces.
+  bool mainLoaded = false;
+  const std::string resolvedMainTtf = g_resources.resolvePath(mainTtf);
+  const std::string realMainDir = g_resources.getRealDir(resolvedMainTtf);
+  if (!realMainDir.empty()) {
+    const std::string realMainPath = realMainDir + resolvedMainTtf;
+    mainLoaded = (FT_New_Face(m_ftLib, realMainPath.c_str(), 0, &m_face) == 0);
+  }
+  if (!mainLoaded) {
+    try {
+      m_mainFontData = g_resources.readFileContents(mainTtf);
+    } catch (...) {
+      return false;
+    }
+
+    if (m_mainFontData.empty())
+      return false;
+
+    mainLoaded = (FT_New_Memory_Face(
+        m_ftLib,
+        reinterpret_cast<const FT_Byte*>(m_mainFontData.data()),
+        static_cast<FT_Long>(m_mainFontData.size()),
+        0,
+        &m_face) == 0);
+  }
+
+  if (!mainLoaded)
+    return false;
+
   FT_Set_Pixel_Sizes(m_face, 0, pixelSize);
   m_pixelSize = pixelSize;
 
@@ -56,17 +83,51 @@ bool TTFFont::load(const std::string& mainTtf,
   // Load fallback fonts for CJK, Arabic, and other scripts
   for (const auto& fallbackPath : fallbackTtfs) {
     FT_Face fallbackFace = nullptr;
-    // Convert virtual path to real filesystem path
-    const std::string realFallbackPath = g_resources.getRealPath(fallbackPath);
-    if (FT_New_Face(m_ftLib, realFallbackPath.c_str(), 0, &fallbackFace) == 0) {
-      FT_Set_Pixel_Sizes(fallbackFace, 0, pixelSize);
-      hb_font_t* fallbackHbFont = hb_ft_font_create(fallbackFace, nullptr);
-      if (fallbackHbFont) {
-        m_fallbackFaces.push_back(fallbackFace);
-        m_fallbackHbFonts.push_back(fallbackHbFont);
-      } else {
-        FT_Done_Face(fallbackFace);
+    bool fallbackLoaded = false;
+
+    // Try filesystem path first.
+    const std::string resolvedFallbackPath = g_resources.resolvePath(fallbackPath);
+    const std::string realFallbackDir = g_resources.getRealDir(resolvedFallbackPath);
+    if (!realFallbackDir.empty()) {
+      const std::string realFallbackPath = realFallbackDir + resolvedFallbackPath;
+      fallbackLoaded = (FT_New_Face(m_ftLib, realFallbackPath.c_str(), 0, &fallbackFace) == 0);
+    }
+
+    // Fallback to memory face (PhysFS archive-safe).
+    if (!fallbackLoaded) {
+      try {
+        m_fallbackFontData.emplace_back(g_resources.readFileContents(fallbackPath));
+      } catch (...) {
+        continue;
       }
+
+      const auto& data = m_fallbackFontData.back();
+      if (data.empty()) {
+        m_fallbackFontData.pop_back();
+        continue;
+      }
+
+      fallbackLoaded = (FT_New_Memory_Face(
+          m_ftLib,
+          reinterpret_cast<const FT_Byte*>(data.data()),
+          static_cast<FT_Long>(data.size()),
+          0,
+          &fallbackFace) == 0);
+
+      if (!fallbackLoaded)
+        m_fallbackFontData.pop_back();
+    }
+
+    if (!fallbackLoaded)
+      continue;
+
+    FT_Set_Pixel_Sizes(fallbackFace, 0, pixelSize);
+    hb_font_t* fallbackHbFont = hb_ft_font_create(fallbackFace, nullptr);
+    if (fallbackHbFont) {
+      m_fallbackFaces.push_back(fallbackFace);
+      m_fallbackHbFonts.push_back(fallbackHbFont);
+    } else {
+      FT_Done_Face(fallbackFace);
     }
   }
 

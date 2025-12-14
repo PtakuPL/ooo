@@ -55,7 +55,7 @@ if(type == "ttf") {
     const auto& srcNode = fontNode->at("source");
     const std::string src = srcNode->value();
     const std::string srcSource = srcNode->source();
-    g_logger.info(fmt::format("TTF: src='{}', srcSource='{}'", src, srcSource));
+    g_logger.debug(fmt::format("TTF: src='{}', srcSource='{}'", src, srcSource));
     
     // If source path starts with /, use it directly (absolute virtual path)
     std::string mainPath;
@@ -64,7 +64,7 @@ if(type == "ttf") {
     } else {
         mainPath = stdext::resolve_path(src, srcSource);
     }
-    g_logger.info(fmt::format("TTF: mainPath='{}'", mainPath));
+    g_logger.debug(fmt::format("TTF: mainPath='{}'", mainPath));
     
     const int size = fontNode->valueAt<int>("size", 12);
 
@@ -82,9 +82,10 @@ if(type == "ttf") {
     }
 
     m_ttf = std::make_shared<TTFFont>();
-    if(!m_ttf->load(mainPath, fbPaths, size)) {
-        g_logger.error(fmt::format("TTF load failed: {} (mainPath={})", src, mainPath));
-        return;
+    if (!m_ttf->load(mainPath, fbPaths, size)) {
+        m_ttf.reset();
+        m_isTTF = false;
+        throw Exception("TTF load failed: '{}' (resolved: '{}')", src, mainPath);
     }
 
     // for layout purposes

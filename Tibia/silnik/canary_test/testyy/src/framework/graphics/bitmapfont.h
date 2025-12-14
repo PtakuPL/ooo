@@ -51,6 +51,9 @@ public:
     /// Advanced text render delimited by a screen region and alignment
     void drawText(std::string_view text, const Rect& screenCoords, const Color& color = Color::white, Fw::AlignmentFlag align = Fw::AlignTopLeft);
 
+    /// Draw text with multiple colors (TTF-aware: byte positions converted to codepoint positions for TTF)
+    void drawColoredText(std::string_view text, const Rect& screenCoords, const std::vector<std::pair<int, Color>>& textColors, const Color& defaultColor, Fw::AlignmentFlag align = Fw::AlignTopLeft);
+
     std::vector<std::pair<Rect, Rect>> getDrawTextCoords(std::string_view text,
                                                                        const Size& textBoxSize,
                                                                        Fw::AlignmentFlag align,

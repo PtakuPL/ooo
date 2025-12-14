@@ -27,6 +27,7 @@
 
 #include "exception.h"
 #include "types.h"
+#include <framework/text/Utf8.h>
 
 #ifdef _MSC_VER
 #pragma warning(disable:4267) // '?' : conversion from 'A' to 'B', possible loss of data
@@ -156,9 +157,95 @@ namespace stdext
     std::string utf16_to_latin1(const std::wstring_view src) { return utf8_to_latin1(utf16_to_utf8(src)); }
 #endif
 
-    void tolower(std::string& str) { std::ranges::transform(str, str.begin(), ::tolower); }
+    // Unicode case conversion helper for Polish and common European characters
+    namespace {
+        char32_t unicodeToLower(char32_t cp) {
+            // Polish uppercase to lowercase
+            switch (cp) {
+                case U'Ą': return U'ą';
+                case U'Ć': return U'ć';
+                case U'Ę': return U'ę';
+                case U'Ł': return U'ł';
+                case U'Ń': return U'ń';
+                case U'Ó': return U'ó';
+                case U'Ś': return U'ś';
+                case U'Ź': return U'ź';
+                case U'Ż': return U'ż';
+                // German
+                case U'Ä': return U'ä';
+                case U'Ö': return U'ö';
+                case U'Ü': return U'ü';
+                // Czech/Slovak
+                case U'Č': return U'č';
+                case U'Ď': return U'ď';
+                case U'Ě': return U'ě';
+                case U'Ň': return U'ň';
+                case U'Ř': return U'ř';
+                case U'Š': return U'š';
+                case U'Ť': return U'ť';
+                case U'Ů': return U'ů';
+                case U'Ý': return U'ý';
+                case U'Ž': return U'ž';
+                default:
+                    if (cp < 128) return static_cast<char32_t>(std::tolower(static_cast<int>(cp)));
+                    return cp;
+            }
+        }
 
-    void toupper(std::string& str) { std::ranges::transform(str, str.begin(), ::toupper); }
+        char32_t unicodeToUpper(char32_t cp) {
+            // Polish lowercase to uppercase
+            switch (cp) {
+                case U'ą': return U'Ą';
+                case U'ć': return U'Ć';
+                case U'ę': return U'Ę';
+                case U'ł': return U'Ł';
+                case U'ń': return U'Ń';
+                case U'ó': return U'Ó';
+                case U'ś': return U'Ś';
+                case U'ź': return U'Ź';
+                case U'ż': return U'Ż';
+                // German
+                case U'ä': return U'Ä';
+                case U'ö': return U'Ö';
+                case U'ü': return U'Ü';
+                case U'ß': return U'ẞ';  // German sharp s (or could stay ß)
+                // Czech/Slovak
+                case U'č': return U'Č';
+                case U'ď': return U'Ď';
+                case U'ě': return U'Ě';
+                case U'ň': return U'Ň';
+                case U'ř': return U'Ř';
+                case U'š': return U'Š';
+                case U'ť': return U'Ť';
+                case U'ů': return U'Ů';
+                case U'ý': return U'Ý';
+                case U'ž': return U'Ž';
+                default:
+                    if (cp < 128) return static_cast<char32_t>(std::toupper(static_cast<int>(cp)));
+                    return cp;
+            }
+        }
+
+        bool unicodeIsSpace(char32_t cp) {
+            return cp == U' ' || cp == U'\t' || cp == U'\n' || cp == U'\r' || cp == U'\v' || cp == U'\f';
+        }
+    }
+
+    void tolower(std::string& str) { 
+        auto text32 = otc::text::utf8ToU32(str);
+        for (char32_t& cp : text32) {
+            cp = unicodeToLower(cp);
+        }
+        str = otc::text::u32ToUtf8(text32);
+    }
+
+    void toupper(std::string& str) { 
+        auto text32 = otc::text::utf8ToU32(str);
+        for (char32_t& cp : text32) {
+            cp = unicodeToUpper(cp);
+        }
+        str = otc::text::u32ToUtf8(text32);
+    }
 
     void ltrim(std::string& s) { s.erase(s.begin(), std::ranges::find_if(s, [](unsigned char ch) { return !std::isspace(ch); })); }
 
@@ -167,15 +254,17 @@ namespace stdext
     void trim(std::string& s) { ltrim(s);       rtrim(s); }
 
     void ucwords(std::string& str) {
+        auto text32 = otc::text::utf8ToU32(str);
         bool capitalize = true;
-        for (char& c : str) {
-            if (std::isspace(static_cast<unsigned char>(c)))
+        for (char32_t& cp : text32) {
+            if (unicodeIsSpace(cp)) {
                 capitalize = true;
-            else if (capitalize) {
-                c = std::toupper(static_cast<unsigned char>(c));
+            } else if (capitalize) {
+                cp = unicodeToUpper(cp);
                 capitalize = false;
             }
         }
+        str = otc::text::u32ToUtf8(text32);
     }
 
     void replace_all(std::string& str, std::string_view search, std::string_view replacement) {

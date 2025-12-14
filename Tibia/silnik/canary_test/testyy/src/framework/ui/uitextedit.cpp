@@ -25,6 +25,7 @@
 #include <framework/graphics/bitmapfont.h>
 #include <framework/graphics/graphics.h>
 #include <framework/input/mouse.h>
+#include <framework/text/Utf8.h>  // for otc::text::utf8ToU32, u32ToUtf8
 #include <cmath>
 #include <framework/otml/otmlnode.h>
 #include <framework/platform/platformwindow.h>
@@ -82,7 +83,10 @@ void UITextEdit::drawSelf(const DrawPoolType drawPane)
         update(false, true);
     }
 
-    const int textLength = std::min<int>(m_glyphsCoords.size(), m_text.length());
+    // For TTF: use codepoint count; for bitmap: use byte length capped by glyph coords
+    const int textLength = m_font->isTTF() 
+        ? static_cast<int>(m_text32.size())
+        : std::min<int>(m_glyphsCoords.size(), m_text.length());
     if (textLength == 0) {
         if (m_placeholderColor != Color::alpha && !m_placeholder.empty()) {
             m_placeholderFont->drawText(m_placeholder, m_drawArea, m_placeholderColor, m_placeholderAlign);
@@ -242,7 +246,13 @@ void UITextEdit::update(const bool focusCursor, bool disableAreaUpdate)
     // readjust start view area based on cursor position
     setProp(PropCursorInRange, false);
     if (focusCursor && getProp(PropAutoScroll)) {
-        if (m_cursorPos > 0 && textLength > 0) {
+        if (m_font->isTTF()) {
+            // For TTF fonts, we skip detailed glyph-based scrolling
+            // The cursor is always considered in range since TTF rendering handles clipping
+            m_textVirtualOffset = {};
+            setProp(PropCursorInRange, true);
+        } else if (m_cursorPos > 0 && textLength > 0) {
+            // Bitmap font path: m_cursorPos is byte-based for compatibility
             assert(m_cursorPos <= textLength);
             const Rect virtualRect(m_textVirtualOffset, m_rect.size() - Size(m_padding.left + m_padding.right, 0)); // previous rendered virtual rect
             int pos = m_cursorPos - 1; // element before cursor
@@ -271,12 +281,16 @@ void UITextEdit::update(const bool focusCursor, bool disableAreaUpdate)
                     }
                 }
             }
+            setProp(PropCursorInRange, true);
         } else {
             m_textVirtualOffset = {};
+            setProp(PropCursorInRange, true);
         }
-        setProp(PropCursorInRange, true);
     } else {
-        if (m_cursorPos > 0 && textLength > 0) {
+        if (m_font->isTTF()) {
+            // TTF fonts: cursor is always in range
+            setProp(PropCursorInRange, true);
+        } else if (m_cursorPos > 0 && textLength > 0) {
             const Rect virtualRect(m_textVirtualOffset, m_rect.size() - Size(2 * m_padding.left + m_padding.right, 0)); // previous rendered virtual rect
             const int pos = m_cursorPos - 1; // element before cursor
             glyph = static_cast<uint8_t>(text[pos]); // glyph of the element before cursor
@@ -328,113 +342,117 @@ void UITextEdit::update(const bool focusCursor, bool disableAreaUpdate)
     } else { // AlignLeft
     }
 
-    std::map<uint32_t, CoordsBufferPtr> colorCoordsMap;
-    uint32_t curColorRgba;
-    int32_t nextColorIndex = 0;
-    int32_t colorIndex = -1;
-    CoordsBufferPtr coords;
+    // Bitmap font rendering path - TTF fonts skip this entirely
+    // TTF fonts render via drawText() in drawSelf() which handles shaping internally
+    if (!m_font->isTTF()) {
+        std::map<uint32_t, CoordsBufferPtr> colorCoordsMap;
+        uint32_t curColorRgba;
+        int32_t nextColorIndex = 0;
+        int32_t colorIndex = -1;
+        CoordsBufferPtr coords;
 
-    const int textColorsSize = m_drawTextColors.size();
-    m_colorCoordsBuffer.clear();
-    m_coordsBuffer->clear();
+        const int textColorsSize = m_drawTextColors.size();
+        m_colorCoordsBuffer.clear();
+        m_coordsBuffer->clear();
 
-    for (int i = 0; i < textLength; ++i) {
-        if (i >= nextColorIndex) {
-            colorIndex = colorIndex + 1;
-            if (colorIndex < textColorsSize) {
-                curColorRgba = m_drawTextColors[colorIndex].second.rgba();
+        for (int i = 0; i < textLength; ++i) {
+            if (i >= nextColorIndex) {
+                colorIndex = colorIndex + 1;
+                if (colorIndex < textColorsSize) {
+                    curColorRgba = m_drawTextColors[colorIndex].second.rgba();
+                }
+                if (colorIndex + 1 < textColorsSize) {
+                    nextColorIndex = m_drawTextColors[colorIndex + 1].first;
+                } else {
+                    nextColorIndex = textLength;
+                }
+
+                if (!colorCoordsMap.contains(curColorRgba)) {
+                    colorCoordsMap.insert(std::make_pair(curColorRgba, std::make_shared<CoordsBuffer>()));
+                }
+
+                coords = colorCoordsMap[curColorRgba];
             }
-            if (colorIndex + 1 < textColorsSize) {
-                nextColorIndex = m_drawTextColors[colorIndex + 1].first;
+
+            glyph = static_cast<uint8_t>(text[i]);
+            m_glyphsCoords[i].first.clear();
+
+            // skip invalid glyphs
+            if (glyph < 32)
+                continue;
+
+            // calculate initial glyph rect and texture coords
+            Rect glyphScreenCoords(m_glyphsPositionsCache[i], glyphsSize[glyph]);
+            Rect glyphTextureCoords = glyphsTextureCoords[glyph];
+
+            // first translate to align position
+            if (m_textAlign & Fw::AlignBottom) {
+                glyphScreenCoords.translate(0, textScreenCoords.height() - textBoxSize.height());
+            } else if (m_textAlign & Fw::AlignVerticalCenter) {
+                glyphScreenCoords.translate(0, (textScreenCoords.height() - textBoxSize.height()) / 2);
+            } else { // AlignTop
+                // nothing to do
+            }
+
+            if (m_textAlign & Fw::AlignRight) {
+                glyphScreenCoords.translate(textScreenCoords.width() - textBoxSize.width(), 0);
+            } else if (m_textAlign & Fw::AlignHorizontalCenter) {
+                glyphScreenCoords.translate((textScreenCoords.width() - textBoxSize.width()) / 2, 0);
+            } else { // AlignLeft
+                // nothing to do
+            }
+
+            // only render glyphs that are after startRenderPosition
+            if (glyphScreenCoords.bottom() < m_textVirtualOffset.y || glyphScreenCoords.right() < m_textVirtualOffset.x)
+                continue;
+
+            // bound glyph topLeft to startRenderPosition
+            if (glyphScreenCoords.top() < m_textVirtualOffset.y) {
+                glyphTextureCoords.setTop(glyphTextureCoords.top() + (m_textVirtualOffset.y - glyphScreenCoords.top()));
+                glyphScreenCoords.setTop(m_textVirtualOffset.y);
+            }
+            if (glyphScreenCoords.left() < m_textVirtualOffset.x) {
+                glyphTextureCoords.setLeft(glyphTextureCoords.left() + (m_textVirtualOffset.x - glyphScreenCoords.left()));
+                glyphScreenCoords.setLeft(m_textVirtualOffset.x);
+            }
+
+            // subtract startInternalPos
+            glyphScreenCoords.translate(-m_textVirtualOffset);
+
+            // translate rect to screen coords
+            glyphScreenCoords.translate(textScreenCoords.topLeft());
+
+            // only render if glyph rect is visible on screenCoords
+            if (!textScreenCoords.intersects(glyphScreenCoords))
+                continue;
+
+            // bound glyph bottomRight to screenCoords bottomRight
+            if (glyphScreenCoords.bottom() > textScreenCoords.bottom()) {
+                glyphTextureCoords.setBottom(glyphTextureCoords.bottom() + (textScreenCoords.bottom() - glyphScreenCoords.bottom()));
+                glyphScreenCoords.setBottom(textScreenCoords.bottom());
+            }
+            if (glyphScreenCoords.right() > textScreenCoords.right()) {
+                glyphTextureCoords.setRight(glyphTextureCoords.right() + (textScreenCoords.right() - glyphScreenCoords.right()));
+                glyphScreenCoords.setRight(textScreenCoords.right());
+            }
+
+            // render glyph
+            m_glyphsCoords[i].first = glyphScreenCoords;
+            m_glyphsCoords[i].second = glyphTextureCoords;
+
+            if (m_atlasRegion)
+                glyphTextureCoords.translate(m_atlasRegion->x, m_atlasRegion->y);
+
+            if (textColorsSize > 0) {
+                coords->addRect(glyphScreenCoords, glyphTextureCoords);
             } else {
-                nextColorIndex = textLength;
+                m_coordsBuffer->addRect(glyphScreenCoords, glyphTextureCoords);
             }
-
-            if (!colorCoordsMap.contains(curColorRgba)) {
-                colorCoordsMap.insert(std::make_pair(curColorRgba, std::make_shared<CoordsBuffer>()));
-            }
-
-            coords = colorCoordsMap[curColorRgba];
         }
 
-        glyph = static_cast<uint8_t>(text[i]);
-        m_glyphsCoords[i].first.clear();
-
-        // skip invalid glyphs
-        if (glyph < 32)
-            continue;
-
-        // calculate initial glyph rect and texture coords
-        Rect glyphScreenCoords(m_glyphsPositionsCache[i], glyphsSize[glyph]);
-        Rect glyphTextureCoords = glyphsTextureCoords[glyph];
-
-        // first translate to align position
-        if (m_textAlign & Fw::AlignBottom) {
-            glyphScreenCoords.translate(0, textScreenCoords.height() - textBoxSize.height());
-        } else if (m_textAlign & Fw::AlignVerticalCenter) {
-            glyphScreenCoords.translate(0, (textScreenCoords.height() - textBoxSize.height()) / 2);
-        } else { // AlignTop
-            // nothing to do
+        for (auto& [rgba, crds] : colorCoordsMap) {
+            m_colorCoordsBuffer.emplace_back(Color(rgba), crds);
         }
-
-        if (m_textAlign & Fw::AlignRight) {
-            glyphScreenCoords.translate(textScreenCoords.width() - textBoxSize.width(), 0);
-        } else if (m_textAlign & Fw::AlignHorizontalCenter) {
-            glyphScreenCoords.translate((textScreenCoords.width() - textBoxSize.width()) / 2, 0);
-        } else { // AlignLeft
-            // nothing to do
-        }
-
-        // only render glyphs that are after startRenderPosition
-        if (glyphScreenCoords.bottom() < m_textVirtualOffset.y || glyphScreenCoords.right() < m_textVirtualOffset.x)
-            continue;
-
-        // bound glyph topLeft to startRenderPosition
-        if (glyphScreenCoords.top() < m_textVirtualOffset.y) {
-            glyphTextureCoords.setTop(glyphTextureCoords.top() + (m_textVirtualOffset.y - glyphScreenCoords.top()));
-            glyphScreenCoords.setTop(m_textVirtualOffset.y);
-        }
-        if (glyphScreenCoords.left() < m_textVirtualOffset.x) {
-            glyphTextureCoords.setLeft(glyphTextureCoords.left() + (m_textVirtualOffset.x - glyphScreenCoords.left()));
-            glyphScreenCoords.setLeft(m_textVirtualOffset.x);
-        }
-
-        // subtract startInternalPos
-        glyphScreenCoords.translate(-m_textVirtualOffset);
-
-        // translate rect to screen coords
-        glyphScreenCoords.translate(textScreenCoords.topLeft());
-
-        // only render if glyph rect is visible on screenCoords
-        if (!textScreenCoords.intersects(glyphScreenCoords))
-            continue;
-
-        // bound glyph bottomRight to screenCoords bottomRight
-        if (glyphScreenCoords.bottom() > textScreenCoords.bottom()) {
-            glyphTextureCoords.setBottom(glyphTextureCoords.bottom() + (textScreenCoords.bottom() - glyphScreenCoords.bottom()));
-            glyphScreenCoords.setBottom(textScreenCoords.bottom());
-        }
-        if (glyphScreenCoords.right() > textScreenCoords.right()) {
-            glyphTextureCoords.setRight(glyphTextureCoords.right() + (textScreenCoords.right() - glyphScreenCoords.right()));
-            glyphScreenCoords.setRight(textScreenCoords.right());
-        }
-
-        // render glyph
-        m_glyphsCoords[i].first = glyphScreenCoords;
-        m_glyphsCoords[i].second = glyphTextureCoords;
-
-        if (m_atlasRegion)
-            glyphTextureCoords.translate(m_atlasRegion->x, m_atlasRegion->y);
-
-        if (textColorsSize > 0) {
-            coords->addRect(glyphScreenCoords, glyphTextureCoords);
-        } else {
-            m_coordsBuffer->addRect(glyphScreenCoords, glyphTextureCoords);
-        }
-    }
-
-    for (auto& [rgba, crds] : colorCoordsMap) {
-        m_colorCoordsBuffer.emplace_back(Color(rgba), crds);
     }
 
     if (!disableAreaUpdate && fireAreaUpdate)
@@ -446,15 +464,16 @@ void UITextEdit::update(const bool focusCursor, bool disableAreaUpdate)
 void UITextEdit::setCursorPos(int pos)
 {
     if (pos < 0)
-        pos = m_text.length();
+        pos = static_cast<int>(m_text32.size());
 
     if (pos == m_cursorPos)
         return;
 
+    // Clamp cursor position to valid codepoint range
     if (pos < 0)
         m_cursorPos = 0;
-    else if (static_cast<size_t>(pos) >= m_text.length())
-        m_cursorPos = m_text.length();
+    else if (static_cast<size_t>(pos) >= m_text32.size())
+        m_cursorPos = static_cast<int>(m_text32.size());
     else
         m_cursorPos = pos;
 
@@ -470,10 +489,11 @@ void UITextEdit::setSelection(int start, int end)
         std::swap(start, end);
 
     if (end == -1)
-        end = m_text.length();
+        end = static_cast<int>(m_text32.size());
 
-    m_selectionStart = std::clamp<int>(start, 0, static_cast<int>(m_text.length()));
-    m_selectionEnd = std::clamp<int>(end, 0, static_cast<int>(m_text.length()));
+    // Clamp selection to valid codepoint range
+    m_selectionStart = std::clamp<int>(start, 0, static_cast<int>(m_text32.size()));
+    m_selectionEnd = std::clamp<int>(end, 0, static_cast<int>(m_text32.size()));
     recacheGlyphs();
 
     repaint();
@@ -496,76 +516,99 @@ void UITextEdit::setTextVirtualOffset(const Point& offset)
 
 void UITextEdit::appendText(const std::string_view txt)
 {
-    std::string text{ txt.data() };
+    std::string text{ txt.data(), txt.size() };
 
     if (hasSelection())
         del();
 
     if (m_cursorPos >= 0) {
-        // replace characters that are now allowed
+        // replace characters that are not allowed
         if (!getProp(PropMultiline))
             stdext::replace_all(text, "\n", " ");
         stdext::replace_all(text, "\r", "");
         stdext::replace_all(text, "\t", "    ");
 
-        if (text.length() > 0) {
-            // only add text if textedit can add it
-            if (m_maxLength > 0 && m_text.length() + text.length() > m_maxLength)
-                return;
+        if (text.empty())
+            return;
+            
+        // Convert input UTF-8 to codepoints
+        const std::u32string inputCodepoints = otc::text::utf8ToU32(text);
+        if (inputCodepoints.empty())
+            return;
 
-            // only ignore text append if it contains invalid characters
-            if (!m_validCharacters.empty()) {
-                for (const char i : text) {
-                    if (m_validCharacters.find(i) == std::string::npos)
-                        return;
-                }
+        // Check max length in codepoints (not bytes!)
+        if (m_maxLength > 0 && m_text32.size() + inputCodepoints.size() > m_maxLength)
+            return;
+
+        // Check valid characters (ASCII only for now - validCharacters is legacy)
+        if (!m_validCharacters.empty()) {
+            for (const char32_t cp : inputCodepoints) {
+                // Only check ASCII range against validCharacters
+                if (cp < 128 && m_validCharacters.find(static_cast<char>(cp)) == std::string::npos)
+                    return;
             }
-
-            std::string tmp = m_text;
-            tmp.insert(m_cursorPos, text);
-            m_cursorPos += text.length();
-            setText(tmp);
         }
+
+        // Insert codepoints at cursor position (which is now a codepoint index)
+        m_text32.insert(m_text32.begin() + m_cursorPos, inputCodepoints.begin(), inputCodepoints.end());
+        m_cursorPos += static_cast<int>(inputCodepoints.size());
+        
+        // Sync m_text (UTF-8) from m_text32 (codepoints)
+        setText(otc::text::u32ToUtf8(m_text32));
     }
 }
 
-void UITextEdit::appendCharacter(const char c)
+void UITextEdit::appendCharacter(const char32_t codepoint)
 {
-    if ((c == '\n' && !getProp(PropMultiline)) || c == '\r')
+    // Check newline/carriage return (they have same codepoints as ASCII)
+    if ((codepoint == U'\n' && !getProp(PropMultiline)) || codepoint == U'\r')
         return;
 
     if (hasSelection())
         del();
 
-    if (m_cursorPos == 0)
+    // Note: removed the "m_cursorPos == 0" check - it was a bug
+    // You should be able to type at position 0
+
+    // Check max length in codepoints
+    if (m_maxLength > 0 && m_text32.size() + 1 > m_maxLength)
         return;
 
-    if (m_maxLength > 0 && m_text.length() + 1 > m_maxLength)
-        return;
+    // Check valid characters (ASCII only for legacy support)
+    if (!m_validCharacters.empty() && codepoint < 128) {
+        if (m_validCharacters.find(static_cast<char>(codepoint)) == std::string::npos)
+            return;
+    }
 
-    if (!m_validCharacters.empty() && m_validCharacters.find(c) == std::string::npos)
-        return;
-
-    std::string tmp;
-    tmp = c;
-    std::string tmp2 = m_text;
-    tmp2.insert(m_cursorPos, tmp);
+    // Insert single codepoint at cursor position
+    m_text32.insert(m_text32.begin() + m_cursorPos, codepoint);
     ++m_cursorPos;
-    setText(tmp2);
+    
+    // Sync m_text (UTF-8) from m_text32 (codepoints)
+    setText(otc::text::u32ToUtf8(m_text32));
 }
 
 void UITextEdit::removeCharacter(const bool right)
 {
-    std::string tmp = m_text;
-    if (static_cast<size_t>(m_cursorPos) >= 0 && tmp.length() > 0) {
-        if (static_cast<size_t>(m_cursorPos) >= tmp.length()) {
-            tmp.erase(tmp.begin() + (--m_cursorPos));
-        } else if (right)
-            tmp.erase(tmp.begin() + m_cursorPos);
-        else if (m_cursorPos > 0)
-            tmp.erase(tmp.begin() + --m_cursorPos);
-        setText(tmp);
+    // Work with codepoints, not bytes - this fixes backspace for Polish characters
+    if (m_text32.empty())
+        return;
+        
+    if (right) {
+        // Delete key - remove character at cursor
+        if (static_cast<size_t>(m_cursorPos) < m_text32.size()) {
+            m_text32.erase(m_text32.begin() + m_cursorPos);
+        }
+    } else {
+        // Backspace - remove character before cursor
+        if (m_cursorPos > 0) {
+            --m_cursorPos;
+            m_text32.erase(m_text32.begin() + m_cursorPos);
+        }
     }
+    
+    // Sync m_text (UTF-8) from m_text32 (codepoints)
+    setText(otc::text::u32ToUtf8(m_text32));
 }
 
 void UITextEdit::blinkCursor()
@@ -576,16 +619,18 @@ void UITextEdit::blinkCursor()
 
 void UITextEdit::deleteSelection()
 {
-    if (!hasSelection()) {
+    if (!hasSelection())
         return;
-    }
 
-    std::string tmp = m_text;
-    tmp.erase(m_selectionStart, m_selectionEnd - m_selectionStart);
+    // Work with codepoints - selection indices are codepoint indices
+    m_text32.erase(m_text32.begin() + m_selectionStart, 
+                   m_text32.begin() + m_selectionEnd);
 
     setCursorPos(m_selectionStart);
     clearSelection();
-    setText(tmp);
+    
+    // Sync m_text (UTF-8) from m_text32 (codepoints)
+    setText(otc::text::u32ToUtf8(m_text32));
 }
 
 void UITextEdit::del(const bool right)
@@ -628,15 +673,18 @@ void UITextEdit::wrapText()
 
 void UITextEdit::moveCursorHorizontally(const bool right)
 {
+    // Move cursor by one codepoint, not byte
     if (right) {
-        if (static_cast<size_t>(m_cursorPos) + 1 <= m_text.length())
+        if (static_cast<size_t>(m_cursorPos) < m_text32.size())
             ++m_cursorPos;
         else
-            m_cursorPos = 0;
-    } else if (m_cursorPos - 1 >= 0)
-        --m_cursorPos;
-    else
-        m_cursorPos = m_text.length();
+            m_cursorPos = 0;  // wrap to beginning
+    } else {
+        if (m_cursorPos > 0)
+            --m_cursorPos;
+        else
+            m_cursorPos = static_cast<int>(m_text32.size());  // wrap to end
+    }
 
     blinkCursor();
     update(true);
@@ -649,6 +697,59 @@ void UITextEdit::moveCursorVertically(bool)
 
 int UITextEdit::getTextPos(const Point& pos)
 {
+    // For TTF fonts: use width-based approximation since we don't have per-glyph coords
+    if (m_font->isTTF()) {
+        const int codepointCount = static_cast<int>(m_text32.size());
+        if (codepointCount == 0)
+            return 0;
+        
+        // Calculate total text width and alignment offset
+        const std::string fullText = m_drawText;
+        const int totalW = m_font->calculateTextRectSize(fullText).width();
+        
+        float bx = static_cast<float>(m_drawArea.left());
+        if (m_textAlign & Fw::AlignRight) {
+            bx = static_cast<float>(m_drawArea.right()) - totalW;
+        } else if (m_textAlign & Fw::AlignHorizontalCenter) {
+            bx = static_cast<float>(m_drawArea.left()) + (m_drawArea.width() - totalW) * 0.5f;
+        }
+        
+        // If click is before text start
+        if (pos.x < static_cast<int>(bx))
+            return 0;
+        
+        // If click is after text end
+        if (pos.x >= static_cast<int>(bx) + totalW)
+            return codepointCount;
+        
+        // Binary search for position (find codepoint where click falls)
+        // Convert position to UTF-8 bytes for substring measurement
+        const int clickX = pos.x - static_cast<int>(bx);
+        int bestPos = 0;
+        int prevWidth = 0;
+        
+        for (int i = 1; i <= codepointCount; ++i) {
+            // Get UTF-8 byte offset for i codepoints
+            const size_t byteOffset = otc::text::utf8ByteOffset(m_text, i);
+            const int width = m_font->calculateTextRectSize(m_text.substr(0, byteOffset)).width();
+            
+            // Check if click is between prevWidth and width
+            if (clickX < width) {
+                // Decide if closer to previous or current position
+                if (clickX - prevWidth < width - clickX)
+                    return bestPos;
+                else
+                    return i;
+            }
+            
+            prevWidth = width;
+            bestPos = i;
+        }
+        
+        return codepointCount;
+    }
+    
+    // Bitmap font path (unchanged)
     const int textLength = std::min<int>(m_glyphsCoords.size(), m_text.length());
 
     // find any glyph that is actually on the
@@ -690,10 +791,12 @@ int UITextEdit::getTextPos(const Point& pos)
 void UITextEdit::updateDisplayedText()
 {
     std::string text;
-    if (getProp(PropTextHidden))
-        text = std::string(m_text.length(), '*');
-    else
+    if (getProp(PropTextHidden)) {
+        // For password fields: show asterisks for each CODEPOINT, not each byte
+        text = std::string(m_text32.size(), '*');
+    } else {
         text = m_text;
+    }
 
     m_drawTextColors = m_textColors;
 
@@ -708,13 +811,24 @@ std::string UITextEdit::getSelection()
 {
     if (!hasSelection())
         return {};
-    return m_text.substr(m_selectionStart, m_selectionEnd - m_selectionStart);
+    
+    // Convert selected codepoints back to UTF-8
+    const std::u32string selected(m_text32.begin() + m_selectionStart, 
+                                  m_text32.begin() + m_selectionEnd);
+    return otc::text::u32ToUtf8(selected);
 }
 
 void UITextEdit::updateText()
 {
-    if (m_cursorPos > static_cast<int>(m_text.length()))
-        m_cursorPos = m_text.length();
+    // Sync m_text32 from m_text when text is set externally (via setText())
+    const std::u32string newText32 = otc::text::utf8ToU32(m_text);
+    if (m_text32 != newText32) {
+        m_text32 = newText32;
+    }
+    
+    // Clamp cursor to valid codepoint range
+    if (m_cursorPos > static_cast<int>(m_text32.size()))
+        m_cursorPos = static_cast<int>(m_text32.size());
 
     // any text changes reset the selection
     if (getProp(PropSelectable)) {
@@ -745,7 +859,7 @@ void UITextEdit::onStyleApply(const std::string_view styleName, const OTMLNodePt
     for (const auto& node : styleNode->children()) {
         if (node->tag() == "text") {
             setText(node->value());
-            setCursorPos(m_text.length());
+            setCursorPos(static_cast<int>(m_text32.size()));
         } else if (node->tag() == "text-hidden")
             setTextHidden(node->value<bool>());
         else if (node->tag() == "shift-navigation")
@@ -792,7 +906,7 @@ void UITextEdit::onFocusChange(const bool focused, const Fw::FocusReason reason)
 {
     if (focused) {
         if (reason == Fw::KeyboardFocusReason)
-            setCursorPos(m_text.length());
+            setCursorPos(static_cast<int>(m_text32.size()));
         else
             blinkCursor();
         update(true);
@@ -811,12 +925,12 @@ bool UITextEdit::onKeyPress(const uint8_t keyCode, const int keyboardModifiers, 
 
     if (keyboardModifiers == Fw::KeyboardNoModifier) {
         if (keyCode == Fw::KeyDelete && getProp(PropEditable)) { // erase right character
-            if (hasSelection() || !m_text.empty()) {
+            if (hasSelection() || !m_text32.empty()) {
                 del(true);
                 return true;
             }
         } else if (keyCode == Fw::KeyBackspace && getProp(PropEditable)) { // erase left character
-            if (hasSelection() || !m_text.empty()) {
+            if (hasSelection() || !m_text32.empty()) {
                 del(false);
                 return true;
             }
@@ -835,9 +949,10 @@ bool UITextEdit::onKeyPress(const uint8_t keyCode, const int keyboardModifiers, 
                 return true;
             }
         } else if (keyCode == Fw::KeyEnd) { // move cursor to last character
-            if (m_cursorPos != static_cast<int>(m_text.length())) {
+            const int textLen = static_cast<int>(m_text32.size());
+            if (m_cursorPos != textLen) {
                 clearSelection();
-                setCursorPos(m_text.length());
+                setCursorPos(textLen);
                 return true;
             }
         } else if (keyCode == Fw::KeyTab && !getProp(PropShiftNavigation)) {
@@ -846,7 +961,7 @@ bool UITextEdit::onKeyPress(const uint8_t keyCode, const int keyboardModifiers, 
                 parent->focusNextChild(Fw::KeyboardFocusReason, true);
             return true;
         } else if (keyCode == Fw::KeyEnter && getProp(PropMultiline) && getProp(PropEditable)) {
-            appendCharacter('\n');
+            appendCharacter(U'\n');  // Unicode newline codepoint
             return true;
         } else if (keyCode == Fw::KeyUp && !getProp(PropShiftNavigation) && getProp(PropMultiline)) {
             moveCursorVertically(true);
@@ -872,27 +987,31 @@ bool UITextEdit::onKeyPress(const uint8_t keyCode, const int keyboardModifiers, 
                 return true;
             }
         } else if (keyCode == Fw::KeyA && getProp(PropSelectable)) {
-            if (m_text.length() > 0) {
+            if (!m_text32.empty()) {
                 selectAll();
                 return true;
             }
         } else if (keyCode == Fw::KeyBackspace) {
             if (hasSelection()) {
                 deleteSelection();
-            } else if (m_text.length() > 0) {
-                // delete last word
-                std::string tmp = m_text;
+            } else if (!m_text32.empty()) {
+                // delete last word - work with codepoints
                 if (m_cursorPos == 0) {
-                    tmp.erase(tmp.begin());
+                    m_text32.erase(m_text32.begin());
                 } else {
                     int pos = m_cursorPos;
-                    while (pos > 0 && tmp[pos - 1] == ' ')
+                    // Skip trailing spaces
+                    while (pos > 0 && m_text32[pos - 1] == U' ')
                         --pos;
-                    while (pos > 0 && tmp[pos - 1] != ' ')
+                    // Skip word characters
+                    while (pos > 0 && m_text32[pos - 1] != U' ')
                         --pos;
-                    tmp.erase(tmp.begin() + pos, tmp.begin() + m_cursorPos);
+                    // Erase from pos to cursor
+                    m_text32.erase(m_text32.begin() + pos, m_text32.begin() + m_cursorPos);
+                    m_cursorPos = pos;
                 }
-                setText(tmp);
+                // Sync m_text (UTF-8) from m_text32 (codepoints)
+                setText(otc::text::u32ToUtf8(m_text32));
                 return true;
             }
         }
@@ -926,9 +1045,10 @@ bool UITextEdit::onKeyPress(const uint8_t keyCode, const int keyboardModifiers, 
                 return true;
             }
         } else if (keyCode == Fw::KeyEnd) { // move cursor to last character
-            if (m_cursorPos != static_cast<int>(m_text.length())) {
-                setSelection(m_cursorPos, m_text.length());
-                setCursorPos(m_text.length());
+            const int textLen = static_cast<int>(m_text32.size());
+            if (m_cursorPos != textLen) {
+                setSelection(m_cursorPos, textLen);
+                setCursorPos(textLen);
                 return true;
             }
         }
@@ -1006,7 +1126,7 @@ bool UITextEdit::onDoubleClick(const Point& mousePos)
 {
     if (UIWidget::onDoubleClick(mousePos))
         return true;
-    if (getProp(PropSelectable) && m_text.length() > 0) {
+    if (getProp(PropSelectable) && !m_text32.empty()) {
         selectAll();
         return true;
     }

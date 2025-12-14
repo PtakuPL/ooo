@@ -26,6 +26,7 @@
 #include <framework/core/clock.h>
 #include <framework/core/eventdispatcher.h>
 #include <framework/graphics/fontmanager.h>
+#include <framework/text/Utf8.h>
 
 StaticText::StaticText()
 {
@@ -70,7 +71,8 @@ bool StaticText::addMessage(const std::string_view name, const Otc::MessageMode 
         m_updateEvent = nullptr;
     }
 
-    int delay = std::max<int>(g_gameConfig.getStaticDurationPerCharacter() * text.length(), g_gameConfig.getMinStatictextDuration());
+    // Use utf8Length to count codepoints, not bytes (for proper Unicode support)
+    int delay = std::max<int>(g_gameConfig.getStaticDurationPerCharacter() * otc::text::utf8Length(text), g_gameConfig.getMinStatictextDuration());
     if (isYell())
         delay *= 2;
 

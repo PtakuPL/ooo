@@ -23,6 +23,7 @@
 #pragma once
 
 #include "uiwidget.h"
+#include <framework/text/Utf8.h>  // for otc::text::utf8ToU32, u32ToUtf8
 
  // @bindclass
 class UITextEdit final : public UIWidget
@@ -59,7 +60,7 @@ public:
     void moveCursorHorizontally(bool right);
     void moveCursorVertically(bool up);
     void appendText(std::string_view text);
-    void appendCharacter(char c);
+    void appendCharacter(char32_t codepoint);  // accepts Unicode codepoint, not byte
     void removeCharacter(bool right);
     void blinkCursor();
 
@@ -68,7 +69,7 @@ public:
     void paste(std::string_view text);
     std::string copy();
     std::string cut();
-    void selectAll() { setSelection(0, m_text.length()); }
+    void selectAll() { setSelection(0, static_cast<int>(m_text32.size())); }
     void clearSelection() { setSelection(0, 0); }
 
     void wrapText();
@@ -156,6 +157,11 @@ private:
     std::vector<std::pair<Rect, Rect>> m_glyphsSelectRectCache;
 
     std::string m_displayedText;
+    
+    // Unicode text storage: m_text32 holds codepoints for proper Unicode handling
+    // m_cursorPos, m_selectionStart, m_selectionEnd are indices into m_text32
+    // m_text (inherited from UIWidget) is kept in sync as UTF-8 for compatibility
+    std::u32string m_text32;
 
     std::string m_placeholder;
     Color m_placeholderColor;

@@ -22,6 +22,7 @@
 
 #include "uitranslator.h"
 #include "uiwidget.h"
+#include <framework/core/logger.h>
 #include <framework/graphics/drawpoolmanager.h>
 #include <framework/graphics/fontmanager.h>
 #include <framework/graphics/textureatlas.h>
@@ -38,14 +39,27 @@ void UIWidget::updateText()
 {
     if (isTextWrap() && m_rect.isValid()) {
         m_drawTextColors = m_textColors;
-        m_drawText = m_font->wrapText(m_text, getWidth() - m_textOffset.x);
+        // For TTF fonts, adjust available width by fontScale
+        const int availableWidth = m_font && m_font->isTTF() && m_fontScale > 0.f
+            ? static_cast<int>((getWidth() - m_textOffset.x) / m_fontScale)
+            : (getWidth() - m_textOffset.x);
+        m_drawText = m_font->wrapText(m_text, availableWidth);
     } else {
         m_drawText = m_text;
         m_drawTextColors = m_textColors;
     }
 
-    if (m_font)
-        m_font->calculateGlyphsPositions(m_drawText, m_textAlign, m_glyphsPositionsCache, &m_textSize);
+    if (m_font) {
+        if (m_font->isTTF()) {
+            // TTF font: use calculateTextRectSize() for bounding box
+            // (calculateGlyphsPositions is bitmap-only)
+            m_textSize = m_font->calculateTextRectSize(m_drawText);
+            m_glyphsPositionsCache.clear(); // not used for TTF
+        } else {
+            // Bitmap font: calculate per-glyph positions
+            m_font->calculateGlyphsPositions(m_drawText, m_textAlign, m_glyphsPositionsCache, &m_textSize);
+        }
+    }
 
     // update rect size
     if (!m_rect.isValid() || hasProp(PropTextHorizontalAutoResize) || hasProp(PropTextVerticalAutoResize)) {
@@ -105,6 +119,32 @@ void UIWidget::drawText(const Rect& screenCoords)
     if (m_drawText.empty() || m_color.aF() == 0.f || !m_font)
         return;
 
+    // TTF font path - use BitmapFont's TTF-aware methods
+    if (m_font->isTTF()) {
+        // Calculate draw area with offset and alignment
+        auto drawArea = screenCoords;
+        drawArea.translate(m_textOffset);
+        
+        if (m_fontScale != 1.0f) {
+            g_drawPool.scale(m_fontScale);
+        }
+        g_drawPool.setDrawOrder(m_textDrawOrder);
+        
+        // Use colored text method if we have color segments, otherwise single-color
+        if (!m_drawTextColors.empty()) {
+            m_font->drawColoredText(m_drawText, drawArea, m_drawTextColors, m_color, m_textAlign);
+        } else {
+            m_font->drawText(m_drawText, drawArea, m_color, m_textAlign);
+        }
+        
+        g_drawPool.resetDrawOrder();
+        if (m_fontScale != 1.0f) {
+            g_drawPool.scale(1.f);  // Reset to default
+        }
+        return;
+    }
+
+    // Bitmap font path (original code)
     // Hack to fix font rendering in atlas
     if (m_font->getAtlasRegion() != m_atlasRegion) {
         m_atlasRegion = m_font->getAtlasRegion();

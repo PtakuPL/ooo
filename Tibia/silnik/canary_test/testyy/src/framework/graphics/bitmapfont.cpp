@@ -35,6 +35,7 @@
 #include <framework/core/logger.h>
 
 #include <fmt/format.h>
+#include <algorithm>
 #include <map>
 #include <string>
 #include <vector>
@@ -224,6 +225,104 @@ void BitmapFont::drawText(const std::string_view text, const Rect& screenCoords,
     calculateGlyphsPositions(text, align, s_glyphsPositions, &textBoxSize);
     for (const auto& [dest, src] : getDrawTextCoords(text, textBoxSize, align, screenCoords, s_glyphsPositions)) {
         g_drawPool.addTexturedRect(dest, m_texture, src, color);
+    }
+}
+
+/**
+ * @brief Renders colored text with TTF support (positions are converted from byte to codepoint for TTF).
+ */
+void BitmapFont::drawColoredText(const std::string_view text, const Rect& screenCoords,
+    const std::vector<std::pair<int, Color>>& textColors, const Color& defaultColor, const Fw::AlignmentFlag align)
+{
+    if (text.empty())
+        return;
+
+    if (m_isTTF && m_ttf) {
+        // Convert byte positions to codepoint positions for TTF
+        const auto text32 = otc::text::utf8ToU32(text);
+        const auto sp = otc::text::LocaleShaping::paramsFromUtf8(text, otc::text::LocaleShaping::getDefaultLocaleTag());
+        
+        // Build byte-to-codepoint position map
+        std::vector<size_t> byteToCodepoint;
+        byteToCodepoint.reserve(text.size() + 1);
+        size_t cpIdx = 0;
+        for (size_t i = 0; i < text.size(); ) {
+            byteToCodepoint.push_back(cpIdx);
+            // Skip UTF-8 continuation bytes
+            const uint8_t c = static_cast<uint8_t>(text[i]);
+            if ((c & 0x80) == 0) i += 1;
+            else if ((c & 0xE0) == 0xC0) i += 2;
+            else if ((c & 0xF0) == 0xE0) i += 3;
+            else if ((c & 0xF8) == 0xF0) i += 4;
+            else i += 1; // invalid, advance 1
+            ++cpIdx;
+        }
+        byteToCodepoint.push_back(cpIdx); // sentinel at end
+        
+        // Convert textColors from byte positions to codepoint positions
+        std::vector<std::pair<size_t, Color>> cpColors;
+        cpColors.reserve(textColors.size());
+        for (const auto& [bytePos, color] : textColors) {
+            const size_t safePos = std::min(static_cast<size_t>(bytePos), byteToCodepoint.size() - 1);
+            cpColors.emplace_back(byteToCodepoint[safePos], color);
+        }
+        
+        // Calculate total width for alignment
+        const float totalWidth = m_ttf->measureTextWidth(text32, sp);
+        const float h = static_cast<float>(m_glyphHeight);
+        
+        // Calculate baseline position
+        float baseX = static_cast<float>(screenCoords.left());
+        float baseY = static_cast<float>(screenCoords.top()) + h;
+        
+        // Vertical align
+        if (align & Fw::AlignBottom) {
+            baseY = static_cast<float>(screenCoords.bottom());
+        } else if (align & Fw::AlignVerticalCenter) {
+            baseY = static_cast<float>(screenCoords.top()) + (screenCoords.height() - h) * 0.5f + h;
+        }
+        
+        // Horizontal align
+        if (align & Fw::AlignRight) {
+            baseX = static_cast<float>(screenCoords.right()) - totalWidth;
+        } else if (align & Fw::AlignHorizontalCenter) {
+            baseX = static_cast<float>(screenCoords.left()) + (screenCoords.width() - totalWidth) * 0.5f;
+        }
+        
+        // Render each color segment
+        float penX = baseX;
+        size_t segmentStart = 0;
+        Color currentColor = defaultColor;
+        
+        // Sort colors by position
+        auto sortedColors = cpColors;
+        std::sort(sortedColors.begin(), sortedColors.end(), [](const auto& a, const auto& b) {
+            return a.first < b.first;
+        });
+        
+        for (size_t ci = 0; ci <= sortedColors.size(); ++ci) {
+            const size_t segmentEnd = (ci < sortedColors.size()) ? sortedColors[ci].first : text32.size();
+            
+            if (segmentEnd > segmentStart) {
+                const auto segment = text32.substr(segmentStart, segmentEnd - segmentStart);
+                m_ttf->drawText(segment, penX, baseY, sp, currentColor);
+                penX += m_ttf->measureTextWidth(segment, sp);
+            }
+            
+            if (ci < sortedColors.size()) {
+                currentColor = sortedColors[ci].second;
+                segmentStart = sortedColors[ci].first;
+            }
+        }
+        return;
+    }
+    
+    // Bitmap font path - just use the existing fillTextColorCoords
+    Size textBoxSize;
+    calculateGlyphsPositions(text, align, s_glyphsPositions, &textBoxSize);
+    for (const auto& [dest, src] : getDrawTextCoords(text, textBoxSize, align, screenCoords, s_glyphsPositions)) {
+        // This is a simplified fallback; proper colored bitmap path uses fillTextColorCoords
+        g_drawPool.addTexturedRect(dest, m_texture, src, defaultColor);
     }
 }
 
@@ -567,12 +666,46 @@ void BitmapFont::calculateGlyphsPositions(const std::string_view text, const Fw:
 }
 
 Size BitmapFont::calculateTextRectSize(const std::string_view text)
-{if (m_isTTF && m_ttf) {
-    const auto text32 = otc::text::utf8ToU32(text);
-    const auto sp = otc::text::LocaleShaping::paramsFromUtf8(text, otc::text::LocaleShaping::getDefaultLocaleTag());
-    const int w = static_cast<int>(std::lround(m_ttf->measureTextWidth(text32, sp)));
-    return Size(w, m_glyphHeight);
-}
+{
+    if (m_isTTF && m_ttf) {
+        const auto text32 = otc::text::utf8ToU32(text);
+        const auto sp = otc::text::LocaleShaping::paramsFromUtf8(text, otc::text::LocaleShaping::getDefaultLocaleTag());
+        
+        // Handle multiline text: split by \n and calculate max width + total height
+        int maxWidth = 0;
+        int lineCount = 0;
+        std::u32string currentLine;
+        
+        for (const char32_t cp : text32) {
+            if (cp == U'\n') {
+                // Measure current line
+                if (!currentLine.empty()) {
+                    const int lineWidth = static_cast<int>(std::lround(m_ttf->measureTextWidth(currentLine, sp)));
+                    maxWidth = std::max(maxWidth, lineWidth);
+                }
+                currentLine.clear();
+                ++lineCount;
+            } else {
+                currentLine += cp;
+            }
+        }
+        
+        // Measure last line (or only line if no newlines)
+        if (!currentLine.empty()) {
+            const int lineWidth = static_cast<int>(std::lround(m_ttf->measureTextWidth(currentLine, sp)));
+            maxWidth = std::max(maxWidth, lineWidth);
+        }
+        ++lineCount; // Count last line
+        
+        // Handle empty text edge case
+        if (lineCount == 0) lineCount = 1;
+        if (maxWidth == 0 && !text32.empty()) {
+            // Single line without newlines
+            maxWidth = static_cast<int>(std::lround(m_ttf->measureTextWidth(text32, sp)));
+        }
+        
+        return Size(maxWidth, m_glyphHeight * lineCount);
+    }
 
     Size size;
     calculateGlyphsPositions(text, Fw::AlignTopLeft, s_glyphsPositions, &size);
@@ -624,27 +757,58 @@ std::string BitmapFont::wrapText(const std::string_view text, const int maxWidth
     for (const auto& word : wordsSplit) {
         const int wordWidth = calculateTextRectSize(word).width();
         if (wordWidth > maxWidth) {
-            std::string newWord;
-            for (uint32_t j = 0; j < word.length(); ++j) {
-                std::string candidate = newWord + word[j];
-                if (j != word.length() - 1)
-                    candidate += '-';
+            // For TTF fonts: iterate by codepoints, not bytes
+            if (m_isTTF) {
+                const std::u32string word32 = otc::text::utf8ToU32(word);
+                std::u32string newWord32;
+                for (size_t j = 0; j < word32.size(); ++j) {
+                    std::u32string candidate32 = newWord32;
+                    candidate32 += word32[j];
+                    if (j != word32.size() - 1)
+                        candidate32 += U'-';
 
-                const int candidateWidth = calculateTextRectSize(candidate).width();
-                if (candidateWidth > maxWidth) {
-                    newWord += '-';
-                    words.push_back(newWord);
-                    currentSize += newWord.size() + 2; // each word break adds 2 characters: '-' and '\n'
-                    newWord.clear();
+                    const std::string candidateUtf8 = otc::text::u32ToUtf8(candidate32);
+                    const int candidateWidth = calculateTextRectSize(candidateUtf8).width();
+                    if (candidateWidth > maxWidth) {
+                        newWord32 += U'-';
+                        const std::string newWordUtf8 = otc::text::u32ToUtf8(newWord32);
+                        words.push_back(newWordUtf8);
+                        currentSize += newWordUtf8.size() + 2;
+                        newWord32.clear();
 
-                    updateColors(colors, currentSize - 2, 2);
+                        updateColors(colors, currentSize - 2, 2);
+                    }
+
+                    newWord32 += word32[j];
                 }
 
-                newWord += word[j];
-            }
+                const std::string finalWordUtf8 = otc::text::u32ToUtf8(newWord32);
+                words.push_back(finalWordUtf8);
+                currentSize += finalWordUtf8.size() + 1;
+            } else {
+                // Bitmap font: iterate by bytes (original code)
+                std::string newWord;
+                for (uint32_t j = 0; j < word.length(); ++j) {
+                    std::string candidate = newWord + word[j];
+                    if (j != word.length() - 1)
+                        candidate += '-';
 
-            words.push_back(newWord);
-            currentSize += newWord.size() + 1;
+                    const int candidateWidth = calculateTextRectSize(candidate).width();
+                    if (candidateWidth > maxWidth) {
+                        newWord += '-';
+                        words.push_back(newWord);
+                        currentSize += newWord.size() + 2;
+                        newWord.clear();
+
+                        updateColors(colors, currentSize - 2, 2);
+                    }
+
+                    newWord += word[j];
+                }
+
+                words.push_back(newWord);
+                currentSize += newWord.size() + 1;
+            }
         } else {
             words.push_back(word);
             currentSize += word.size() + 1;

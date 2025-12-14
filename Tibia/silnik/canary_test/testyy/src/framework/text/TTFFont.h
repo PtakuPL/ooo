@@ -147,6 +147,10 @@ private:
   // Create a new empty atlas and return its index
   int ensureAtlas();
 
+  // Ensure GPU textures exist for all atlases (lazy init after GL context is ready)
+  void ensureAtlasesGpuTextures();
+  bool ensureAtlasGpuTexture(Atlas& atlas);
+
   // FreeType & HarfBuzz state
   FT_Library m_ftLib = nullptr;
   FT_Face    m_face  = nullptr;

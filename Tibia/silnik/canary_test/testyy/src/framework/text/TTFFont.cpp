@@ -219,16 +219,12 @@ int TTFFont::ensureAtlas() {
     a.image = std::make_shared<Image>(Size(a.width, a.height), 4 /*bpp*/, nullptr);
     a.texture = std::make_shared<Texture>(a.image, /*buildMipmaps*/false, /*compress*/false);
     a.texture->setSmooth(true);
-    a.texture->create();
 
-    if (a.texture->isEmpty()) {
-      g_logger.warning("TTFFont::ensureAtlas(): atlas texture has id=0 after create(); text will not render");
-    } else {
-      static bool s_loggedAtlasOnce = false;
-      if (!s_loggedAtlasOnce) {
-        g_logger.info("TTFFont::ensureAtlas(): created atlas {}x{} with GL id={}", a.width, a.height, a.texture->getId());
-        s_loggedAtlasOnce = true;
-      }
+    // NOTE: On some platforms (notably Windows) fonts may be loaded before the GL context is ready.
+    // In that case, Texture::create() would produce m_id=0 and all subsequent sub-uploads would be ignored.
+    // We defer GPU creation until we actually render (when g_graphics.ok() is true).
+    if (g_graphics.ok()) {
+      a.texture->create();
     }
 
     m_atlases.push_back(a);
@@ -239,6 +235,48 @@ int TTFFont::ensureAtlas() {
   } catch (...) {
     g_logger.error("TTF: failed to allocate glyph atlas {}x{}: unknown exception", atlasSize, atlasSize);
     return -1;
+  }
+}
+
+bool TTFFont::ensureAtlasGpuTexture(Atlas& atlas)
+{
+  if (!atlas.texture)
+    return false;
+
+  if (!atlas.texture->isEmpty())
+    return true;
+
+  if (!g_graphics.ok())
+    return false;
+
+  if (!atlas.image)
+    return false;
+
+  // Re-upload the whole atlas image to initialize the GL texture id and content.
+  atlas.texture->updateImage(atlas.image);
+  atlas.texture->create();
+
+  if (atlas.texture->isEmpty()) {
+    g_logger.warning("TTFFont: failed to create atlas GPU texture (id=0) even though g_graphics.ok()=true");
+    return false;
+  }
+
+  static bool s_loggedOnce = false;
+  if (!s_loggedOnce) {
+    g_logger.info("TTFFont: atlas GPU texture created lazily (id={})", atlas.texture->getId());
+    s_loggedOnce = true;
+  }
+
+  return true;
+}
+
+void TTFFont::ensureAtlasesGpuTextures()
+{
+  if (!g_graphics.ok())
+    return;
+
+  for (auto& atlas : m_atlases) {
+    ensureAtlasGpuTexture(atlas);
   }
 }
 
@@ -365,6 +403,14 @@ const AtlasGlyph* TTFFont::rasterizeGlyph(FT_Face face, uint32_t glyphIndex, uin
   // Copy to CPU atlas and upload only the updated sub-region to the GPU
   const Point destPoint(A->penX, A->penY);
   A->image->blit(destPoint, glyphImage);
+
+  // Make sure the atlas has a valid GL texture id before sub-upload.
+  if (!ensureAtlasGpuTexture(*A)) {
+    // We still keep CPU atlas updated, so once GL is ready a full upload can happen.
+    // Returning nullptr here prevents caching a glyph that would never render.
+    return nullptr;
+  }
+
   A->texture->uploadSubPixels(Rect(destPoint, Size(w, h)), glyphImage);
 
   // Register glyph metrics
@@ -415,6 +461,10 @@ void TTFFont::drawText(const std::u32string& text32,
 
   if (text32.empty())
     return;
+
+  // If atlases were created before GL was ready, their Texture ids may still be 0.
+  // Ensure GPU textures exist before we start batching/drawing.
+  ensureAtlasesGpuTextures();
 
   std::vector<GlyphQuad> quads;
   const Rect bounds = buildQuads(text32, params, quads);

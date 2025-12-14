@@ -3,7 +3,8 @@ EnterGameWindow
   @onEnter: EnterGame.doLogin()
 
   MenuLabel
-    !text: tr('Account name')
+    id: emailLabel
+    !text: tr('Acc Name:')
     anchors.left: parent.left
     anchors.top: parent.top
     text-auto-resize: true
@@ -28,8 +29,9 @@ EnterGameWindow
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 2
-    
+
   MenuLabel
+    id: authenticatorTokenLabel
     !text: tr('Token')
     anchors.left: prev.left
     anchors.top: prev.bottom
@@ -37,114 +39,78 @@ EnterGameWindow
     margin-top: 8
 
   TextEdit
-    id: accountTokenTextEdit
+    id: authenticatorTokenTextEdit
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 2
 
-  Panel
-    id: serverSelectorPanel
+  HorizontalSeparator
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
-    height: 52
-    on: true
-    focusable: false
-    
-    $on:
-      visible: true
-      margin-top: 0
-    
-    $!on:
-      visible: false
-      margin-top: -52
-      
-    HorizontalSeparator
-      anchors.left: parent.left
-      anchors.right: parent.right
-      anchors.top: parent.top
-      margin-top: 10
+    margin-top: 10
 
-    MenuLabel
-      id: serverLabel
-      !text: tr('Server')
-      anchors.left: parent.left
-      anchors.top: prev.bottom
-      text-auto-resize: true    
-      margin-top: 5
+  MenuLabel
+    id: serverLabel
+    !text: tr('Server')
+    anchors.left: parent.left
+    anchors.top: prev.bottom
+    margin-top: 8
+    text-auto-resize: true
 
-    ComboBox
-      id: serverSelector
-      anchors.left: prev.left
-      anchors.right: parent.right
-      anchors.top: serverLabel.bottom
-      margin-top: 2
-      margin-right: 3
-      menu-scroll: true
-      menu-height: 125
-      menu-scroll-step: 25
-      text-offset: 5 2
-      @onOptionChange: EnterGame.onServerChange()
-    
-  Panel
-    id: customServerSelectorPanel
+  MenuLabel
+    id: portLabel
+    !text: tr('Port')
+    anchors.right: parent.right
+    anchors.top: serverLabel.top
+    text-auto-resize: true
+
+  TextEdit
+    id: serverPortTextEdit
+    anchors.right: parent.right
+    anchors.top: serverLabel.bottom
+    margin-top: 2
+    width: 60
+
+  TextEdit
+    id: serverHostTextEdit
+    anchors.left: parent.left
+    anchors.right: serverPortTextEdit.left
+    anchors.top: serverLabel.bottom
+    margin-top: 2
+    margin-right: 6
+
+  Button
+    id: serverListButton
+    !text: tr('Server List')
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
-    height: 52
-    on: true
-    focusable: true
-    
-    $on:
-      visible: true
-      margin-top: 0
-    
-    $!on:
-      visible: false
-      margin-top: -52
-    
-    HorizontalSeparator
-      anchors.left: parent.left
-      anchors.right: parent.right
-      anchors.top: parent.top
-      margin-top: 8
+    margin-top: 6
+    @onClick: |
+      if ServerList and ServerList.show then
+        ServerList.show()
+      end
 
-    MenuLabel
-      id: serverLabel
-      !text: tr('IP:PORT or URL')
-      anchors.left: prev.left
-      anchors.top: prev.bottom
-      margin-top: 8
-      text-auto-resize: true
+  MenuLabel
+    id: clientLabel
+    !text: tr('Client version')
+    anchors.left: parent.left
+    anchors.top: prev.bottom
+    margin-top: 8
+    text-auto-resize: true
 
-    TextEdit
-      id: serverHostTextEdit
-      !tooltip: tr('Make sure that your client uses\nthe correct game client version')
-      anchors.left: parent.left
-      anchors.top: serverLabel.bottom
-      margin-top: 2
-      width: 150
+  ComboBox
+    id: clientComboBox
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 2
+    menu-scroll: true
+    menu-height: 150
+    menu-scroll-step: 25
 
-    MenuLabel
-      id: clientLabel
-      !text: tr('Version')
-      anchors.left: serverHostTextEdit.right
-      anchors.top: serverLabel.top
-      text-auto-resize: true
-      margin-left: 10
-
-    ComboBox
-      id: clientVersionSelector
-      anchors.top: serverHostTextEdit.top
-      anchors.bottom: serverHostTextEdit.bottom
-      anchors.left: prev.left
-      anchors.right: parent.right
-      menu-scroll: true
-      menu-height: 125
-      menu-scroll-step: 25
-      margin-right: 3
-      
   HorizontalSeparator
     anchors.left: parent.left
     anchors.right: parent.right
@@ -152,34 +118,78 @@ EnterGameWindow
     margin-top: 10
 
   CheckBox
-    id: rememberPasswordBox
-    !text: tr('Remember password')
+    id: rememberEmailBox
+    !text: tr('Remember password:')
     !tooltip: tr('Remember account and password when starts client')
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
-    margin-top: 9
+    margin-top: 8
+
+  CheckBox
+    id: autoLoginBox
+    !text: tr('Auto login')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 4
+
+  CheckBox
+    id: stayLoggedBox
+    !text: tr('Stay logged in')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 4
+
+  CheckBox
+    id: httpLoginBox
+    !text: tr('HTTP login')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 4
 
   HorizontalSeparator
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
-    margin-top: 9
+    margin-top: 10
 
-  Button
-    !text: tr('Login')
+  Panel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 10
-    margin-left: 50
-    margin-right: 50
-    @onClick: EnterGame.doLogin()
+    height: 26
+
+    Button
+      !text: tr('Login')
+      anchors.left: parent.left
+      anchors.right: parent.horizontalCenter
+      anchors.top: parent.top
+      anchors.bottom: parent.bottom
+      margin-right: 4
+      @onClick: EnterGame.doLogin()
+
+    Button
+      id: btnCreateNewAccount
+      !text: tr('Create Account')
+      anchors.left: parent.horizontalCenter
+      anchors.right: parent.right
+      anchors.top: parent.top
+      anchors.bottom: parent.bottom
+      margin-left: 4
+      enabled: false
+      @onClick: |
+        if toggleCreateAccount then
+          toggleCreateAccount(false)
+        end
 
   Label
     id: serverInfoLabel
     font: noto-12
-    anchors.top: prev.top
+    anchors.top: prev.bottom
     anchors.left: parent.left
     margin-top: 5
     color: green

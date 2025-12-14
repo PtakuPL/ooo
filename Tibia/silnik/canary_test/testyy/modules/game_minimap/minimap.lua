@@ -96,11 +96,17 @@ Canary: void ProtocolGame::sendTibiaTime(int32_t time)
 end
 
 function mapController:onInit()
-    self.ui.minimapBorder.minimap:getChildById('floorUpButton'):hide()
-    self.ui.minimapBorder.minimap:getChildById('floorDownButton'):hide()
-    self.ui.minimapBorder.minimap:getChildById('zoomInButton'):hide()
-    self.ui.minimapBorder.minimap:getChildById('zoomOutButton'):hide()
-    self.ui.minimapBorder.minimap:getChildById('resetButton'):hide()
+    local minimap = self.ui and self.ui.minimapBorder and self.ui.minimapBorder.minimap
+    if not minimap then
+        return
+    end
+
+    for _, id in ipairs({'floorUpButton', 'floorDownButton', 'zoomInButton', 'zoomOutButton', 'resetButton'}) do
+        local widget = minimap:getChildById(id)
+        if widget then
+            widget:hide()
+        end
+    end
 end
 
 function mapController:onGameStart()

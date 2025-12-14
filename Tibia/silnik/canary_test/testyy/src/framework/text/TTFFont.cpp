@@ -390,12 +390,19 @@ void TTFFont::drawText(const std::u32string& text32,
              float x, float y,
              const ShapeParams& params,
              const Color& color) {
-  if (!m_hbFont || text32.empty()) return;
+  if (!m_hbFont || text32.empty()) {
+    g_logger.debug("TTFFont::drawText: early return (hbFont={}, textEmpty={})", (m_hbFont != nullptr), text32.empty());
+    return;
+  }
 
   std::vector<GlyphQuad> quads;
   const Rect bounds = buildQuads(text32, params, quads);
-  if (quads.empty())
+  if (quads.empty()) {
+    g_logger.debug("TTFFont::drawText: no quads generated for text of {} codepoints", text32.size());
     return;
+  }
+
+  g_logger.debug("TTFFont::drawText: rendering {} quads at ({}, {})", quads.size(), x, y);
 
   struct Batch {
     TexturePtr texture;
@@ -425,8 +432,11 @@ void TTFFont::drawText(const std::u32string& text32,
   }
 
   for (const auto& batch : batches) {
-    if (batch.coords && batch.coords->getVertexCount() > 0)
+    if (batch.coords && batch.coords->getVertexCount() > 0) {
+      g_logger.debug("TTFFont::drawText: submitting batch with {} vertices, texture={}", 
+                     batch.coords->getVertexCount(), (batch.texture != nullptr));
       g_drawPool.addTexturedCoordsBuffer(batch.texture, batch.coords, color);
+    }
   }
 }
 

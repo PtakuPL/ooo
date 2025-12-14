@@ -78,6 +78,15 @@ void Texture::create()
         createTexture();
         uploadPixels(m_image, getProp(buildMipmaps), getProp(compress));
         m_image = nullptr;
+        static bool s_loggedOnce = false;
+        if (!s_loggedOnce) {
+            g_logger.info("Texture::create() completed: m_id={}, size={}x{}, g_graphics.ok()={}", 
+                          m_id, m_size.width(), m_size.height(), g_graphics.ok());
+            s_loggedOnce = true;
+        }
+        if (m_id == 0) {
+            g_logger.warning("Texture::create() finished with m_id=0 (GL texture not created); rendering will fail");
+        }
     }
 }
 

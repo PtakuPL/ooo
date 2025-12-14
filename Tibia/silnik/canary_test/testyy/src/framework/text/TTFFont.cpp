@@ -221,6 +221,16 @@ int TTFFont::ensureAtlas() {
     a.texture->setSmooth(true);
     a.texture->create();
 
+    if (a.texture->isEmpty()) {
+      g_logger.warning("TTFFont::ensureAtlas(): atlas texture has id=0 after create(); text will not render");
+    } else {
+      static bool s_loggedAtlasOnce = false;
+      if (!s_loggedAtlasOnce) {
+        g_logger.info("TTFFont::ensureAtlas(): created atlas {}x{} with GL id={}", a.width, a.height, a.texture->getId());
+        s_loggedAtlasOnce = true;
+      }
+    }
+
     m_atlases.push_back(a);
     return static_cast<int>(m_atlases.size() - 1);
   } catch (const std::exception& e) {

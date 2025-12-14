@@ -5,6 +5,7 @@ Font
   bold-source: /fonts/ttf/NotoSans-Bold.ttf
   size: 12
   default: true
+  widget-default: true
   fallback:
     - /fonts/ttf/NotoSansSC-Regular.ttf
     - /fonts/ttf/NotoSansHebrew-Regular.ttf

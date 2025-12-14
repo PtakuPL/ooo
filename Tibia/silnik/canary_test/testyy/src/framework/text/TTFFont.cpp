@@ -220,13 +220,6 @@ int TTFFont::ensureAtlas() {
     a.texture = std::make_shared<Texture>(a.image, /*buildMipmaps*/false, /*compress*/false);
     a.texture->setSmooth(true);
 
-    // NOTE: On some platforms (notably Windows) fonts may be loaded before the GL context is ready.
-    // In that case, Texture::create() would produce m_id=0 and all subsequent sub-uploads would be ignored.
-    // We defer GPU creation until we actually render (when g_graphics.ok() is true).
-    if (g_graphics.ok()) {
-      a.texture->create();
-    }
-
     m_atlases.push_back(a);
     return static_cast<int>(m_atlases.size() - 1);
   } catch (const std::exception& e) {
@@ -235,48 +228,6 @@ int TTFFont::ensureAtlas() {
   } catch (...) {
     g_logger.error("TTF: failed to allocate glyph atlas {}x{}: unknown exception", atlasSize, atlasSize);
     return -1;
-  }
-}
-
-bool TTFFont::ensureAtlasGpuTexture(Atlas& atlas)
-{
-  if (!atlas.texture)
-    return false;
-
-  if (!atlas.texture->isEmpty())
-    return true;
-
-  if (!g_graphics.ok())
-    return false;
-
-  if (!atlas.image)
-    return false;
-
-  // Re-upload the whole atlas image to initialize the GL texture id and content.
-  atlas.texture->updateImage(atlas.image);
-  atlas.texture->create();
-
-  if (atlas.texture->isEmpty()) {
-    g_logger.warning("TTFFont: failed to create atlas GPU texture (id=0) even though g_graphics.ok()=true");
-    return false;
-  }
-
-  static bool s_loggedOnce = false;
-  if (!s_loggedOnce) {
-    g_logger.info("TTFFont: atlas GPU texture created lazily (id={})", atlas.texture->getId());
-    s_loggedOnce = true;
-  }
-
-  return true;
-}
-
-void TTFFont::ensureAtlasesGpuTextures()
-{
-  if (!g_graphics.ok())
-    return;
-
-  for (auto& atlas : m_atlases) {
-    ensureAtlasGpuTexture(atlas);
   }
 }
 
@@ -404,14 +355,12 @@ const AtlasGlyph* TTFFont::rasterizeGlyph(FT_Face face, uint32_t glyphIndex, uin
   const Point destPoint(A->penX, A->penY);
   A->image->blit(destPoint, glyphImage);
 
-  // Make sure the atlas has a valid GL texture id before sub-upload.
-  if (!ensureAtlasGpuTexture(*A)) {
-    // We still keep CPU atlas updated, so once GL is ready a full upload can happen.
-    // Returning nullptr here prevents caching a glyph that would never render.
-    return nullptr;
+  // IMPORTANT: Do not call any GL functions here.
+  // This path can run outside the active GL context/thread (especially on Windows),
+  // so we only queue the upload to be executed later by DrawPool (GL thread).
+  if (A->texture) {
+    A->pendingUploads.push_back(Atlas::PendingUpload{ Rect(destPoint, Size(w, h)), glyphImage });
   }
-
-  A->texture->uploadSubPixels(Rect(destPoint, Size(w, h)), glyphImage);
 
   // Register glyph metrics
   AtlasGlyph ag{};
@@ -462,10 +411,6 @@ void TTFFont::drawText(const std::u32string& text32,
   if (text32.empty())
     return;
 
-  // If atlases were created before GL was ready, their Texture ids may still be 0.
-  // Ensure GPU textures exist before we start batching/drawing.
-  ensureAtlasesGpuTextures();
-
   std::vector<GlyphQuad> quads;
   const Rect bounds = buildQuads(text32, params, quads);
   if (quads.empty()) {
@@ -474,6 +419,42 @@ void TTFFont::drawText(const std::u32string& text32,
       s_warnedNoQuads = true;
     }
     return;
+  }
+
+  // Flush pending atlas uploads on the GL thread via DrawPool actions.
+  // This avoids glGenTextures returning 0 when called without a current context (Windows regression).
+  for (auto& atlas : m_atlases) {
+    if (!atlas.texture || atlas.pendingUploads.empty())
+      continue;
+
+    auto texture = atlas.texture;
+    auto atlasImage = atlas.image;
+    auto uploads = std::move(atlas.pendingUploads);
+    atlas.pendingUploads.clear();
+
+    g_drawPool.addAction([texture, atlasImage, uploads = std::move(uploads)]() mutable {
+      if (!texture)
+        return;
+
+      const bool wasEmpty = texture->isEmpty();
+      if (wasEmpty && atlasImage) {
+        // Ensure Texture::create() has a backing image to upload.
+        texture->updateImage(atlasImage);
+        texture->create();
+        // Full atlas upload already contains all CPU blits up to this moment.
+        return;
+      }
+
+      // Ensure GL id exists before sub uploads.
+      if (texture->isEmpty() && atlasImage) {
+        texture->updateImage(atlasImage);
+        texture->create();
+      }
+
+      for (const auto& u : uploads) {
+        texture->uploadSubPixels(u.dest, u.image);
+      }
+    });
   }
 
   if (!s_loggedFirstCall) {

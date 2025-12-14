@@ -149,10 +149,6 @@ private:
   // Create a new empty atlas and return its index
   int ensureAtlas();
 
-  // Ensure GPU textures exist for all atlases (lazy init after GL context is ready)
-  void ensureAtlasesGpuTextures();
-  bool ensureAtlasGpuTexture(Atlas& atlas);
-
   // FreeType & HarfBuzz state
   FT_Library m_ftLib = nullptr;
   FT_Face    m_face  = nullptr;
@@ -165,10 +161,16 @@ private:
   int m_pixelSize = 12;
 
   struct Atlas {
+    struct PendingUpload {
+      Rect dest;
+      ImagePtr image;
+    };
+
     TexturePtr texture;   // GPU texture
     ImagePtr   image;     // CPU-side backing store (RGBA)
     int width, height;
     int penX, penY, rowH; // simple row-based packer
+    std::vector<PendingUpload> pendingUploads;
   };
   std::vector<Atlas> m_atlases;
   std::unordered_map<uint32_t, AtlasGlyph> m_glyphs;

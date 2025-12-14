@@ -319,9 +319,11 @@ function EnterGame.terminate()
     Keybind.delete("Misc.", "Change Character")
 
     if clientBox then
-        disconnect(clientBox, {
-            onOptionChange = EnterGame.onClientVersionChange
-        })
+        pcall(function()
+            disconnect(clientBox, {
+                onOptionChange = EnterGame.onClientVersionChange
+            })
+        end)
     end
     disconnect(g_game, {
         onGameStart = EnterGame.hidePanels

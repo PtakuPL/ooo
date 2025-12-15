@@ -1,0 +1,54 @@
+name: Windows Build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  windows-build:
+    name: Build Windows x64
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          
+      - name: Setup MSVC
+        uses: microsoft/setup-msbuild@v2
+        
+      - name: Setup vcpkg
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgDirectory: '${{ github.workspace }}/vcpkg'
+          vcpkgGitCommitId: 'a42af01b72c28a8e1d7b48107b33e4f286a55ef6'
+          
+      - name: Configure CMake
+        working-directory: testyy
+        run: |
+          cmake -S . -B build `
+            -DCMAKE_BUILD_TYPE=Release `
+            -DVCPKG_TARGET_TRIPLET=x64-windows `
+            -DCMAKE_TOOLCHAIN_FILE="${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake"
+            
+      - name: Build
+        working-directory: testyy
+        run: cmake --build build --config Release --parallel
+        
+      - name: Collect artifacts
+        working-directory: testyy/build/Release
+        run: |
+          mkdir -p ../../../artifacts
+          Copy-Item otclient.exe ../../../artifacts/
+          Copy-Item *.dll ../../../artifacts/ -ErrorAction SilentlyContinue
+          
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: otclient-windows-x64
+          path: artifacts/
+          retention-days: 7

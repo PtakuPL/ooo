@@ -204,7 +204,7 @@ if (m_isTTF && m_ttf) {
     const auto text32 = otc::text::utf8ToU32(text);
     const auto sp = otc::text::LocaleShaping::paramsFromUtf8(text, otc::text::LocaleShaping::getDefaultLocaleTag());
     const float w = m_ttf->measureTextWidth(text32, sp);
-    const float h = static_cast<float>(m_glyphHeight);
+    const float h = static_cast<float>(std::max(m_ttf->lineHeight(), m_glyphHeight));
 
     // baseline at top-left by default
     float bx = static_cast<float>(screenCoords.left());
@@ -276,7 +276,7 @@ void BitmapFont::drawColoredText(const std::string_view text, const Rect& screen
         
         // Calculate total width for alignment
         const float totalWidth = m_ttf->measureTextWidth(text32, sp);
-        const float h = static_cast<float>(m_glyphHeight);
+        const float h = static_cast<float>(std::max(m_ttf->lineHeight(), m_glyphHeight));
         
         // Calculate baseline position
         float baseX = static_cast<float>(screenCoords.left());
@@ -710,8 +710,9 @@ Size BitmapFont::calculateTextRectSize(const std::string_view text)
             // Single line without newlines
             maxWidth = static_cast<int>(std::lround(m_ttf->measureTextWidth(text32, sp)));
         }
-        
-        return Size(maxWidth, m_glyphHeight * lineCount);
+
+        const int lh = std::max(m_ttf->lineHeight(), m_glyphHeight);
+        return Size(maxWidth, lh * lineCount);
     }
 
     Size size;

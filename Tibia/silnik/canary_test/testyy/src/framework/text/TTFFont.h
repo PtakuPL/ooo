@@ -124,6 +124,11 @@ public:
   float measureTextWidth(const std::u32string& text32,
                          const ShapeParams& params);
 
+  // Font metrics (pixel units)
+  int lineHeight() const { return m_lineHeight; }
+  int ascent() const { return m_ascent; }
+  int descent() const { return m_descent; }
+
   // Clear all cached glyphs and atlases (use after font config changes)
   void clearCache() {
     m_glyphs.clear();
@@ -168,6 +173,9 @@ private:
   std::vector<hb_font_t*>  m_fallbackHbFonts;
 
   int m_pixelSize = 12;
+  int m_lineHeight = 12;
+  int m_ascent = 0;
+  int m_descent = 0;
 
   struct Atlas {
     struct PendingUpload {

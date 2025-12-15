@@ -113,6 +113,16 @@ bool TTFFont::load(const std::string& mainTtf,
     return false;
   }
   m_pixelSize = pixelSize;
+  // Derive metrics (ascent/descent/line height) from FreeType; fall back to pixel size
+  if (m_face && m_face->size && m_face->size->metrics.height > 0) {
+    m_lineHeight = static_cast<int>(m_face->size->metrics.height >> 6);
+    m_ascent = static_cast<int>(m_face->size->metrics.ascender >> 6);
+    m_descent = static_cast<int>(-(m_face->size->metrics.descender >> 6));
+  } else {
+    m_lineHeight = pixelSize;
+    m_ascent = pixelSize;
+    m_descent = 0;
+  }
   g_logger.info(fmt::format("TTFFont: pixel size set to {}", pixelSize));
 
   // Create HarfBuzz face/font from FT_Face
@@ -570,7 +580,7 @@ Rect TTFFont::buildQuads(const std::u32string& text32,
   float minX = 0.f;
   float minY = 0.f;
   float maxX = 0.f;
-  float maxY = static_cast<float>(m_pixelSize);
+  float maxY = static_cast<float>(m_lineHeight);
 
   for (const auto& sg : shaped) {
     const AtlasGlyph* ag = cacheGlyph(sg.glyphIndex, sg.codepoint);

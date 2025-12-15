@@ -264,6 +264,7 @@ const AtlasGlyph* TTFFont::cacheGlyph(uint32_t glyphIndex, char32_t codepoint) {
 
   // Main font failed - try fallback fonts using codepoint
   if (codepoint != 0) {
+    static bool s_warnedFallback = false;
     for (size_t fbIdx = 0; fbIdx < m_fallbackFaces.size(); ++fbIdx) {
       FT_Face fallbackFace = m_fallbackFaces[fbIdx];
       // Get glyph index for this codepoint in fallback font
@@ -274,8 +275,19 @@ const AtlasGlyph* TTFFont::cacheGlyph(uint32_t glyphIndex, char32_t codepoint) {
           FT_Render_Glyph(fallbackFace->glyph, FT_RENDER_MODE_NORMAL) == 0) {
         // Use unique cache key: high bits for fallback index, low bits for glyph
         const uint32_t cacheKey = static_cast<uint32_t>((fbIdx + 1) << 24) | (fbGlyphIndex & 0xFFFFFF);
+        if (!s_warnedFallback) {
+          g_logger.info(fmt::format("TTFFont: using fallback font #{} for codepoint U+{:04X}", fbIdx, static_cast<uint32_t>(codepoint)));
+          s_warnedFallback = true;
+        }
         return rasterizeGlyph(fallbackFace, fbGlyphIndex, cacheKey);
       }
+    }
+    
+    // No fallback font found - this will render as .notdef (square)
+    if (!s_warnedFallback && codepoint != 0) {
+      g_logger.warning(fmt::format("TTFFont: no fallback font has glyph for codepoint U+{:04X} ({} fallbacks checked)", 
+                                   static_cast<uint32_t>(codepoint), m_fallbackFaces.size()));
+      s_warnedFallback = true;
     }
   }
 

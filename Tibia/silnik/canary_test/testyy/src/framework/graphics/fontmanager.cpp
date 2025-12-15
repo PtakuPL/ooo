@@ -38,6 +38,18 @@ void FontManager::clearFonts() {
     m_defaultWidgetFont = nullptr;
 }
 
+void FontManager::clearAllFontCaches() {
+    // Clear TTF glyph caches when locale changes
+    for (const auto& font : m_fonts) {
+        if (font && font->isTTF()) {
+            const auto& ttf = font->getTTFFont();
+            if (ttf) {
+                ttf->clearCache();
+            }
+        }
+    }
+}
+
 bool FontManager::importFont(const std::string& file)
 {
     const auto& path = g_resources.guessFilePath(file, "otfont");

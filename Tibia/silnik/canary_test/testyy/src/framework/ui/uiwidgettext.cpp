@@ -127,9 +127,15 @@ void UIWidget::drawText(const Rect& screenCoords)
         auto drawArea = screenCoords;
         drawArea.translate(m_textOffset);
         
-        if (m_fontScale != 1.0f) {
-            g_drawPool.scale(m_fontScale);
+        // Apply fontScale to the draw area coordinates
+        if (m_fontScale != 1.0f && m_fontScale > 0.f) {
+            // Scale the rectangle itself, not via g_drawPool
+            // This ensures HarfBuzz receives correct baseline positions
+            const Point topLeft = drawArea.topLeft().scale(m_fontScale);
+            const Point bottomRight = drawArea.bottomRight().scale(m_fontScale);
+            drawArea = Rect(topLeft, bottomRight);
         }
+        
         g_drawPool.setDrawOrder(m_textDrawOrder);
         
         // Use colored text method if we have color segments, otherwise single-color
@@ -140,9 +146,6 @@ void UIWidget::drawText(const Rect& screenCoords)
         }
         
         g_drawPool.resetDrawOrder();
-        if (m_fontScale != 1.0f) {
-            g_drawPool.scale(1.f);  // Reset to default
-        }
         return;
     }
 

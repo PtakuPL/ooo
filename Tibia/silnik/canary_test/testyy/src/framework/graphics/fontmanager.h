@@ -33,6 +33,7 @@ class FontManager
 public:
     void terminate();
     void clearFonts();
+    void clearAllFontCaches(); // Clear TTF glyph caches when locale changes
 
     bool importFont(const std::string& file);
 

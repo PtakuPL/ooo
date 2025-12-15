@@ -124,6 +124,15 @@ public:
   float measureTextWidth(const std::u32string& text32,
                          const ShapeParams& params);
 
+  // Clear all cached glyphs and atlases (use after font config changes)
+  void clearCache() {
+    m_glyphs.clear();
+    m_atlases.clear();
+    if (ensureAtlas() < 0) {
+      g_logger.error("TTFFont::clearCache: failed to create initial atlas after clearing");
+    }
+  }
+
   hb_font_t* hbFont() const { return m_hbFont; }
   size_t atlasCount() const { return m_atlases.size(); }
   TexturePtr getAtlasTexture(size_t index) const;

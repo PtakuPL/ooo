@@ -194,6 +194,10 @@ function setLocale(name)
   end
   currentLocale = locale
   g_settings.set('locale', name)
+  
+  -- Clear TTF font caches when locale changes (different glyphs needed)
+  g_fonts.clearAllFontCaches()
+  
   if onLocaleChanged then
     onLocaleChanged(name)
   end

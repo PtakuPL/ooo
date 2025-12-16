@@ -3,7 +3,7 @@ local UI = nil
 function showBossSlot()
     UI = g_ui.loadUI("boss_slots", contentContainer)
     UI:show()
-    UI.RightBase.LockLabel:setText(tr("Unlocks at 1500 Boss Points"))
+    UI.RightBase.LockLabel:setText(tr("otclient_modules.boss_slots.tr_6"))
     g_game.requestBossSlootInfo()
     controllerCyclopedia.ui.CharmsBase:setVisible(false)
     controllerCyclopedia.ui.GoldBase:setVisible(true)
@@ -241,25 +241,25 @@ function Cyclopedia.setActiveSlot(widget, slot, slotData, data, bossId)
     widget.LockLabel:setVisible(false)
     widget.SelectBoss:setVisible(false)
     widget.ActivedBoss:setVisible(true)
-    widget:setText(string.format(tr("Slot %d: %s"), slot, raceData.name))
+    widget:setText(string.format(tr("otclient_modules.boss_slots.tr_5"), slot, raceData.name))
     widget.ActivedBoss.TypeIcon:setImageSource(ICONS[slotData.bossRace])
 
     Cyclopedia.setBosstiarySlotsBossProgress(widget.ActivedBoss.Progress, slotData.killBonus,
         CONFIG[slotData.bossRace].MASTERY)
 
     local tooltip = slotData.bossRace == CATEGORY.ARCHFOE and
-                        tr("Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60") or
-                        tr("Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60")
+                        tr("otclient_modules.boss_slots.tr_4") or
+                        tr("otclient_modules.boss_slots.tr_3")
 
     if slotData.bossRace ~= CATEGORY.ARCHFOE then
         tooltip =
-            tr("Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30")
+            tr("otclient_modules.boss_slots.tr_2")
     end
 
     widget.ActivedBoss.TypeIcon:setTooltip(tooltip)
     widget.ActivedBoss.Progress.ProgressBorder1:setTooltip()
 
-    local fullText = slotData.killBonus >= CONFIG[slotData.bossRace].MASTERY and tr("(fully unlocked)") or ""
+    local fullText = slotData.killBonus >= CONFIG[slotData.bossRace].MASTERY and tr("otclient_modules.boss_slots.tr_1") or ""
 
     local progress = widget.ActivedBoss.Progress
     progress.ProgressBorder1:setTooltip(string.format(" %d / %d %s", slotData.killBonus,

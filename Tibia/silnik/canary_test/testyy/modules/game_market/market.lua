@@ -176,11 +176,11 @@ end
 -- Always adds the "Buy" option and adds the "Sell" option only when an item is selected and the player's depot contains at least one of that item's tradeAs id.
 local function refreshTypeList()
     offerTypeList:clearOptions()
-    offerTypeList:addOption(tr('Buy'))
+    offerTypeList:addOption(tr("otclient_modules.market.tr_21"))
 
     if Market.isItemSelected() then
         if Market.getDepotCount(selectedItem.item.marketData.tradeAs) > 0 then
-            offerTypeList:addOption(tr('Sell'))
+            offerTypeList:addOption(tr("otclient_modules.market.tr_20"))
         end
     end
 end
@@ -257,7 +257,7 @@ local function addOffer(offer, offerType)
         row.ref = id
 
         if offer.warn then
-            row:setTooltip(tr('This offer is 25%% below the average market price'))
+            row:setTooltip(tr("otclient_modules.market.tr_19"))
             buyOfferTable:setColumnStyle('OfferTableColumn', true)
         end
     else
@@ -309,7 +309,7 @@ local function addOffer(offer, offerType)
         row.ref = id
 
         if offer.warn then
-            row:setTooltip(tr('This offer is 25%% above the average market price'))
+            row:setTooltip(tr("otclient_modules.market.tr_18"))
             sellOfferTable:setColumnStyle('OfferTableColumn', true)
         end
     end
@@ -593,7 +593,7 @@ local function updateBalance(balance)
     end
     information.balance = balance
 
-    balanceLabel:setText(tr('Balance:') .. ' ' .. balance .. ' ' .. tr('gold'))
+    balanceLabel:setText(tr("otclient_modules.market.tr_17") .. ' ' .. balance .. ' ' .. tr("otclient_modules.market.tr_16"))
     balanceLabel:resizeToText()
 end
 
@@ -608,7 +608,7 @@ local function updateFee(price, amount)
     elseif fee > 1000 then
         fee = 1000
     end
-    feeLabel:setText(tr('Fee:') .. ' ' .. fee)
+    feeLabel:setText(tr("otclient_modules.market.tr_15") .. ' ' .. fee)
     feeLabel:resizeToText()
 end
 
@@ -880,7 +880,7 @@ local function initInterface()
 
     -- setup 'Market Offer' section tabs
     marketOffersPanel = g_ui.loadUI('ui/marketoffers')
-    g_mouse.bindPress(mainTabBar:addTab(tr('Market Offers'), marketOffersPanel), function()
+    g_mouse.bindPress(mainTabBar:addTab(tr("otclient_modules.market.tr_14"), marketOffersPanel), function()
         lastKnownTab = 'market offers'
         if os.time() > refreshTimeout + 1 then
             refreshTimeout = os.time()
@@ -901,29 +901,29 @@ local function initInterface()
     selectionTabBar:setContentWidget(marketOffersPanel:getChildById('leftTabContent'))
 
     browsePanel = g_ui.loadUI('ui/marketoffers/browse')
-    selectionTabBar:addTab(tr('Browse'), browsePanel)
+    selectionTabBar:addTab(tr("otclient_modules.market.tr_13"), browsePanel)
 
     -- Currently not used
     -- "Reserved for more functionality later"
     -- overviewPanel = g_ui.loadUI('ui/marketoffers/overview')
-    -- selectionTabBar:addTab(tr('Overview'), overviewPanel)
+    -- selectionTabBar:addTab(tr("otclient_modules.market.tr_12"), overviewPanel)
 
     displaysTabBar = marketOffersPanel:getChildById('rightTabBar')
     displaysTabBar:setContentWidget(marketOffersPanel:getChildById('rightTabContent'))
 
     itemStatsPanel = g_ui.loadUI('ui/marketoffers/itemstats')
-    displaysTabBar:addTab(tr('Statistics'), itemStatsPanel)
+    displaysTabBar:addTab(tr("otclient_modules.market.tr_11"), itemStatsPanel)
 
     itemDetailsPanel = g_ui.loadUI('ui/marketoffers/itemdetails')
-    displaysTabBar:addTab(tr('Details'), itemDetailsPanel)
+    displaysTabBar:addTab(tr("otclient_modules.market.tr_10"), itemDetailsPanel)
 
     itemOffersPanel = g_ui.loadUI('ui/marketoffers/itemoffers')
-    displaysTabBar:addTab(tr('Offers'), itemOffersPanel)
-    displaysTabBar:selectTab(displaysTabBar:getTab(tr('Offers')))
+    displaysTabBar:addTab(tr("otclient_modules.market.tr_9"), itemOffersPanel)
+    displaysTabBar:selectTab(displaysTabBar:getTab(tr("otclient_modules.market.tr_8")))
 
     -- setup 'My Offer' section tabs
     myOffersPanel = g_ui.loadUI('ui/myoffers')
-    g_mouse.bindPress(mainTabBar:addTab(tr('My Offers'), myOffersPanel), function()
+    g_mouse.bindPress(mainTabBar:addTab(tr("otclient_modules.market.tr_7"), myOffersPanel), function()
         lastKnownTab = lastOfferTab ~= nil and lastOfferTab or 'current offers'
         if os.time() > refreshTimeout + 1 then
             refreshTimeout = os.time()
@@ -944,7 +944,7 @@ local function initInterface()
     offersTabBar:setContentWidget(myOffersPanel:getChildById('offersTabContent'))
 
     currentOffersPanel = g_ui.loadUI('ui/myoffers/currentoffers')
-    g_mouse.bindPress(offersTabBar:addTab(tr('Current Offers'), currentOffersPanel), function()
+    g_mouse.bindPress(offersTabBar:addTab(tr("otclient_modules.market.tr_6"), currentOffersPanel), function()
         lastKnownTab, lastOfferTab = 'current offers'
         if os.time() > refreshTimeout + 1 then
             refreshTimeout = os.time()
@@ -962,7 +962,7 @@ local function initInterface()
     end, MouseLeftButton)
 
     offerHistoryPanel = g_ui.loadUI('ui/myoffers/offerhistory')
-    g_mouse.bindPress(offersTabBar:addTab(tr('Offer History'), offerHistoryPanel), function()
+    g_mouse.bindPress(offersTabBar:addTab(tr("otclient_modules.market.tr_5"), offerHistoryPanel), function()
         lastKnownTab, lastOfferTab = 'offer history'
         if os.time() > refreshTimeout + 1 then
             refreshTimeout = os.time()
@@ -1166,7 +1166,7 @@ function Market.displayMessage(message)
         return
     end
 
-    local infoBox = displayInfoBox(tr('Market Error'), message)
+    local infoBox = displayInfoBox(tr("otclient_modules.market.tr_4"), message)
     infoBox:lock()
 end
 
@@ -1176,12 +1176,12 @@ function Market.clearSelectedItem()
     if Market.isItemSelected() then
         Market.resetCreateOffer(true)
         offerTypeList:clearOptions()
-        offerTypeList:setText(tr('Please Select'))
+        offerTypeList:setText(tr("otclient_modules.market.tr_3"))
         offerTypeList:setEnabled(false)
 
         clearOffers()
         radioItemSet:selectWidget(nil)
-        nameLabel:setText(tr('No item selected.'))
+        nameLabel:setText(tr("otclient_modules.market.tr_2"))
         selectedItem:setItem(nil)
         selectedItem.item = nil
         selectedItem.ref:setChecked(false)
@@ -1304,7 +1304,7 @@ function Market.refreshItemsWidget(selectItem)
         if amount > 0 then
             itemWidget:setText(amount)
             itemWidget:setTextOffset(topoint('0 10'))
-            itemBox:setTooltip(tr('You have %d in your depot.', amount))
+            itemBox:setTooltip(tr("otclient_modules.market.tr_1", amount))
         end
 
         radioItemSet:addWidget(itemBox)

@@ -1,9 +1,9 @@
 {
-  "category": "scripts",
+  "category": "otclient_modules",
   "cycle": 1,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2025-12-16T05:49:36Z",
+  "generated_at_utc": "2025-12-16T05:50:59Z",
   "message": "cycle end",
   "phase": "MIGRATION",
   "progress": {
@@ -14,103 +14,103 @@
   "recent": [
     {
       "action": "update",
-      "category": "scripts",
+      "category": "otclient_modules",
       "cycle": 1,
       "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
       "stage": "cycle_end",
-      "t": "2025-12-16T05:49:36Z"
+      "t": "2025-12-16T05:50:59Z"
     },
     {
       "action": "update",
-      "category": "scripts",
+      "category": "otclient_modules",
       "cycle": 1,
       "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
       "stage": "migration_done",
-      "t": "2025-12-16T05:49:36Z"
+      "t": "2025-12-16T05:50:59Z"
     },
     {
       "action": "update",
-      "category": "scripts",
+      "category": "otclient_modules",
       "cycle": 1,
-      "file": "data-otservbr-global/scripts/quests/to_blind_the_enemy_quest/mirror.lua",
+      "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
-      "stage": "file",
-      "t": "2025-12-16T05:49:35Z"
+      "stage": "mini_batch_end",
+      "t": "2025-12-16T05:50:59Z"
     },
     {
       "action": "update",
-      "category": "scripts",
+      "category": "otclient_modules",
       "cycle": 1,
-      "file": "data-otservbr-global/scripts/quests/in_service_of_yalahar/actions_formula.lua",
+      "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
-      "stage": "file",
-      "t": "2025-12-16T05:49:35Z"
+      "stage": "mini_batch_done",
+      "t": "2025-12-16T05:50:59Z"
     },
     {
       "action": "update",
-      "category": "scripts",
+      "category": "otclient_modules",
       "cycle": 1,
-      "file": "data-otservbr-global/scripts/quests/in_service_of_yalahar/quara_leader_kill.lua",
+      "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
-      "stage": "file",
-      "t": "2025-12-16T05:49:34Z"
+      "stage": "mini_batch",
+      "t": "2025-12-16T05:50:57Z"
     },
     {
       "action": "update",
-      "category": "scripts",
+      "category": "otclient_modules",
       "cycle": 1,
-      "file": "data-otservbr-global/scripts/quests/in_service_of_yalahar/movements_last_fight_teleport.lua",
+      "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
-      "stage": "file",
-      "t": "2025-12-16T05:49:34Z"
+      "stage": "mini_batch_done",
+      "t": "2025-12-16T05:50:54Z"
     },
     {
       "action": "update",
-      "category": "scripts",
+      "category": "otclient_modules",
       "cycle": 1,
-      "file": "data-otservbr-global/scripts/quests/in_service_of_yalahar/movements_quara_vortex.lua",
+      "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
-      "stage": "file",
-      "t": "2025-12-16T05:49:33Z"
+      "stage": "mini_batch",
+      "t": "2025-12-16T05:50:53Z"
     },
     {
       "action": "update",
-      "category": "scripts",
+      "category": "otclient_modules",
       "cycle": 1,
-      "file": "data-otservbr-global/scripts/quests/in_service_of_yalahar/creaturescritps_diseased_trio_kill.lua",
+      "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
-      "stage": "file",
-      "t": "2025-12-16T05:49:33Z"
+      "stage": "mini_batch_done",
+      "t": "2025-12-16T05:50:50Z"
     },
     {
       "action": "update",
-      "category": "scripts",
+      "category": "otclient_modules",
       "cycle": 1,
-      "file": "data-otservbr-global/scripts/quests/in_service_of_yalahar/actions_matrix.lua",
+      "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
-      "stage": "file",
-      "t": "2025-12-16T05:49:33Z"
+      "stage": "mini_batch",
+      "t": "2025-12-16T05:50:49Z"
     },
     {
       "action": "update",
-      "category": "scripts",
+      "category": "otclient_modules",
       "cycle": 1,
-      "file": "data-otservbr-global/scripts/quests/in_service_of_yalahar/creaturescritps_azerus_kill.lua",
+      "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
-      "stage": "file",
-      "t": "2025-12-16T05:49:32Z"
+      "stage": "mini_batch_done",
+      "t": "2025-12-16T05:50:46Z"
     }
   ],
   "stage": "cycle_end",

@@ -113,13 +113,13 @@ function ServerList.remove(widget)
         removeWindow = nil
     end
 
-    removeWindow = displayGeneralBox(tr('Remove'), tr('Remove ' .. host .. '?'), {
+    removeWindow = displayGeneralBox(tr("otclient_modules.serverlist.tr_3"), tr('Remove ' .. host .. '?'), {
         {
-            text = tr('Yes'),
+            text = tr("otclient_modules.serverlist.tr_2"),
             callback = yesCallback
         },
         {
-            text = tr('No'),
+            text = tr("otclient_modules.serverlist.tr_1"),
             callback = noCallback
         },
         anchor = AnchorHorizontalCenter

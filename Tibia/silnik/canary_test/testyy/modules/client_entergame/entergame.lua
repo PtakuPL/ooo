@@ -32,7 +32,7 @@ local function onError(protocol, message, errorCode)
         EnterGame.clearAccountFields()
     end
 
-    local errorBox = displayErrorBox(tr('Login Error'), message)
+    local errorBox = displayErrorBox(tr("otclient_modules.entergame.tr_21"), message)
     connect(errorBox, {
         onOk = EnterGame.show
     })
@@ -98,7 +98,7 @@ local function onCharacterList(protocol, characters, account, otui)
         local lastMotdNumber = g_settings.getNumber('motd')
         if G.motdNumber and G.motdNumber ~= lastMotdNumber then
             g_settings.set('motd', G.motdNumber)
-            motdWindow = displayInfoBox(tr('Message of the day'), G.motdMessage)
+            motdWindow = displayInfoBox(tr("otclient_modules.entergame.tr_20"), G.motdMessage)
             connect(motdWindow, {
                 onOk = function()
                     CharacterList.show()
@@ -121,7 +121,7 @@ local function onUpdateNeeded(protocol, signature)
         local cancelFunc = EnterGame.show
         EnterGame.updateFunc(signature, continueFunc, cancelFunc)
     else
-        local errorBox = displayErrorBox(tr('Update needed'), tr('Your client needs updating, try redownloading it.'))
+        local errorBox = displayErrorBox(tr("otclient_modules.entergame.tr_19"), tr("otclient_modules.entergame.tr_18"))
         connect(errorBox, {
             onOk = EnterGame.show
         })
@@ -131,24 +131,24 @@ end
 local function updateLabelText()
     local clientComboBox = getEnterGameWidget('clientComboBox')
     if clientComboBox and tonumber(clientComboBox:getText()) > 1080 then
-        enterGame:setText(tr("Journey Onwards"))
+        enterGame:setText(tr("otclient_modules.entergame.tr_17"))
         local emailLabel = getEnterGameWidget('emailLabel')
         if emailLabel then
-            emailLabel:setText(tr("Email:"))
+            emailLabel:setText(tr("otclient_modules.entergame.tr_16"))
         end
         local rememberEmailBox = getEnterGameWidget('rememberEmailBox')
         if rememberEmailBox then
-            rememberEmailBox:setText(tr("Remember Email:"))
+            rememberEmailBox:setText(tr("otclient_modules.entergame.tr_15"))
         end
     else
-        enterGame:setText(tr("Enter Game"))
+        enterGame:setText(tr("otclient_modules.entergame.tr_14"))
         local emailLabel = getEnterGameWidget('emailLabel')
         if emailLabel then
-            emailLabel:setText(tr("Acc Name:"))
+            emailLabel:setText(tr("otclient_modules.entergame.tr_13"))
         end
         local rememberEmailBox = getEnterGameWidget('rememberEmailBox')
         if rememberEmailBox then
-            rememberEmailBox:setText(tr("Remember password:"))
+            rememberEmailBox:setText(tr("otclient_modules.entergame.tr_12"))
         end
     end
 end
@@ -675,7 +675,7 @@ function EnterGame.tryHttpLogin(clientVersion, httpLogin)
             loadBox = nil
         end
 
-        local errorBox = displayErrorBox(tr("Login Error"), string.format("Things are not loaded, please put assets in things/%d/<assets>.", clientVersion))
+        local errorBox = displayErrorBox(tr("otclient_modules.entergame.tr_11"), string.format("Things are not loaded, please put assets in things/%d/<assets>.", clientVersion))
         connect(errorBox, {
             onOk = EnterGame.show
         })
@@ -701,10 +701,9 @@ function EnterGame.tryHttpLogin(clientVersion, httpLogin)
     end
 
     if not host then
-        loadBox = displayCancelBox(tr('Please wait'), tr('ERROR , try adding \n- ip/login.php \n- Enable HTTP login'))
+        loadBox = displayCancelBox(tr("otclient_modules.entergame.tr_10"), tr("otclient_modules.entergame.tr_9"))
     else
-        loadBox = displayCancelBox(tr('Please wait'), tr('Connecting to login server...\nServer: [%s]',
-            host .. ":" .. tostring(G.port) .. path))
+        loadBox = displayCancelBox(tr("otclient_modules.entergame.tr_8"), tr("otclient_modules.entergame.tr_7", host .. ":" .. tostring(G.port) .. path))
     end
 
     connect(loadBox, {
@@ -821,7 +820,7 @@ function EnterGame.doLogin()
     EnterGame.hide()
 
     if g_game.isOnline() then
-        local errorBox = displayErrorBox(tr('Login Error'), tr('Cannot login while already in game.'))
+        local errorBox = displayErrorBox(tr("otclient_modules.entergame.tr_6"), tr("otclient_modules.entergame.tr_5"))
         connect(errorBox, {
             onOk = EnterGame.show
         })
@@ -842,7 +841,7 @@ function EnterGame.doLogin()
         protocolLogin.onCharacterList = onCharacterList
         protocolLogin.onUpdateNeeded = onUpdateNeeded
 
-        loadBox = displayCancelBox(tr('Please wait'), tr('Connecting to login server...'))
+        loadBox = displayCancelBox(tr("otclient_modules.entergame.tr_4"), tr("otclient_modules.entergame.tr_3"))
         connect(loadBox, {
             onCancel = function(msgbox)
                 loadBox = nil
@@ -863,7 +862,7 @@ function EnterGame.doLogin()
                 loadBox = nil
             end
 
-            local errorBox = displayErrorBox(tr("Login Error"), string.format("Things are not loaded, please put spr and dat in things/%d/<here>.", clientVersion))
+            local errorBox = displayErrorBox(tr("otclient_modules.entergame.tr_2"), string.format("Things are not loaded, please put spr and dat in things/%d/<here>.", clientVersion))
             connect(errorBox, {
                onOk = EnterGame.show
             })
@@ -874,7 +873,7 @@ end
 
 function EnterGame.displayMotd()
     if not motdWindow then
-        motdWindow = displayInfoBox(tr('Message of the day'), G.motdMessage)
+        motdWindow = displayInfoBox(tr("otclient_modules.entergame.tr_1"), G.motdMessage)
         motdWindow.onOk = function()
             motdWindow = nil
         end

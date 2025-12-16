@@ -9,18 +9,18 @@ function showBosstiary()
         "Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30")
     -- UI.FilterBase.BaneIcon:setTooltipAlign(AlignTopLeft)
     UI.FilterBase.ArchfoeIcon:setTooltip(
-        tr("Archfoe") .. "\n\n" .. tr("For unlocking a level, you will receive the following boss points:") .. "\n" .. tr("Prowess") .. ": 10\n" .. tr("Expertise") .. ": 30\n" .. tr("Mastery") .. ": 60")
+        tr("otclient_modules.bosstiary.tr_13") .. "\n\n" .. tr("otclient_modules.bosstiary.tr_12") .. "\n" .. tr("otclient_modules.bosstiary.tr_11") .. ": 10\n" .. tr("otclient_modules.bosstiary.tr_10") .. ": 30\n" .. tr("otclient_modules.bosstiary.tr_9") .. ": 60")
     -- UI.FilterBase.ArchfoeIcon:setTooltipAlign(AlignTopLeft)
     UI.FilterBase.NemesisIcon:setTooltip(
-        tr("Nemesis") .. "\n\n" .. tr("For unlocking a level, you will receive the following boss points:") .. "\n" .. tr("Prowess") .. ": 10\n" .. tr("Expertise") .. ": 30\n" .. tr("Mastery") .. ": 60")
+        tr("otclient_modules.bosstiary.tr_8") .. "\n\n" .. tr("otclient_modules.bosstiary.tr_7") .. "\n" .. tr("otclient_modules.bosstiary.tr_6") .. ": 10\n" .. tr("otclient_modules.bosstiary.tr_5") .. ": 30\n" .. tr("otclient_modules.bosstiary.tr_4") .. ": 60")
     -- UI.FilterBase.NemesisIcon:setTooltipAlign(AlignTopLeft)
-    UI.StarBase.Info1:setTooltip(tr("Once you have reached the Prowess level, you can assign the boss\nto a boss slot."))
+    UI.StarBase.Info1:setTooltip(tr("otclient_modules.bosstiary.tr_3"))
     -- UI.StarBase.Info1:setTooltipAlign(AlignTopLeft)
     UI.StarBase.Info2:setTooltip(
-        tr("Once you have reached the Expertise Level, you can display the\nboss on a Podium of Vigour."))
+        tr("otclient_modules.bosstiary.tr_2"))
     -- UI.StarBase.Info2:setTooltipAlign(AlignTopLeft)
     UI.StarBase.Info3:setTooltip(
-        tr("Once you have reached the Mastery Level, you will receive an\nadditional 25% loot bonus when the boss is assigned to a boss slot."))
+        tr("otclient_modules.bosstiary.tr_1"))
     -- UI.StarBase.Info3:setTooltipAlign(AlignTopLeft)
     controllerCyclopedia.ui.CharmsBase:setVisible(false)
     controllerCyclopedia.ui.GoldBase:setVisible(false)

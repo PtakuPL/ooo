@@ -34,9 +34,8 @@ function startup()
     local errmsg = nil
 
     if g_graphics.getRenderer():lower():match('gdi generic') then
-        errtitle = tr('Graphics card driver not detected')
-        errmsg = tr(
-            'No graphics card detected, everything will be drawn using the CPU,\nthus the performance will be really bad.\nPlease update your graphics driver to have a better performance.')
+        errtitle = tr("otclient_modules.client.tr_2")
+        errmsg = tr("otclient_modules.client.tr_1")
     end
 
     -- Show entergame

@@ -1,32 +1,32 @@
 Cyclopedia.Items = {}
 Cyclopedia.CategoryItems = {
-    { id = 1, name = tr("Armors") },
-    { id = 2, name = tr("Amulets") },
-    { id = 3, name = tr("Boots") },
-    { id = 4, name = tr("Containers") },
-    { id = 24, name = tr("Creature Products") },
-    { id = 5, name = tr("Decoration") },
-    { id = 6, name = tr("Food") },
-    { id = 30, name = tr("Gold") },
-    { id = 7, name = tr("Helmets and Hats") },
-    { id = 8, name = tr("Legs") },
-    { id = 9, name = tr("Others") },
-    { id = 10, name = tr("Potions") },
-    { id = 25, name = tr("Quivers") },
-    { id = 11, name = tr("Rings") },
-    { id = 12, name = tr("Runes") },
-    { id = 13, name = tr("Shields") },
-    { id = 26, name = tr("Soul Cores") },
-    { id = 14, name = tr("Tools") },
-    { id = 31, name = tr("Unsorted") },
-    { id = 15, name = tr("Valuables") },
-    { id = 16, name = tr("Weapons: Ammo") },
-    { id = 17, name = tr("Weapons: Axe") },
-    { id = 18, name = tr("Weapons: Clubs") },
-    { id = 19, name = tr("Weapons: Distance") },
-    { id = 20, name = tr("Weapons: Swords") },
-    { id = 21, name = tr("Weapons: Wands") },
-    { id = 1000, name = tr("Weapons: All") }
+    { id = 1, name = tr("otclient_modules.items.tr_33") },
+    { id = 2, name = tr("otclient_modules.items.tr_32") },
+    { id = 3, name = tr("otclient_modules.items.tr_31") },
+    { id = 4, name = tr("otclient_modules.items.tr_30") },
+    { id = 24, name = tr("otclient_modules.items.tr_29") },
+    { id = 5, name = tr("otclient_modules.items.tr_28") },
+    { id = 6, name = tr("otclient_modules.items.tr_27") },
+    { id = 30, name = tr("otclient_modules.items.tr_26") },
+    { id = 7, name = tr("otclient_modules.items.tr_25") },
+    { id = 8, name = tr("otclient_modules.items.tr_24") },
+    { id = 9, name = tr("otclient_modules.items.tr_23") },
+    { id = 10, name = tr("otclient_modules.items.tr_22") },
+    { id = 25, name = tr("otclient_modules.items.tr_21") },
+    { id = 11, name = tr("otclient_modules.items.tr_20") },
+    { id = 12, name = tr("otclient_modules.items.tr_19") },
+    { id = 13, name = tr("otclient_modules.items.tr_18") },
+    { id = 26, name = tr("otclient_modules.items.tr_17") },
+    { id = 14, name = tr("otclient_modules.items.tr_16") },
+    { id = 31, name = tr("otclient_modules.items.tr_15") },
+    { id = 15, name = tr("otclient_modules.items.tr_14") },
+    { id = 16, name = tr("otclient_modules.items.tr_13") },
+    { id = 17, name = tr("otclient_modules.items.tr_12") },
+    { id = 18, name = tr("otclient_modules.items.tr_11") },
+    { id = 19, name = tr("otclient_modules.items.tr_10") },
+    { id = 20, name = tr("otclient_modules.items.tr_9") },
+    { id = 21, name = tr("otclient_modules.items.tr_8") },
+    { id = 1000, name = tr("otclient_modules.items.tr_7") }
 }
 
 local UI = nil
@@ -280,9 +280,9 @@ function Cyclopedia.internalCreateItem(data)
         widget:setBackgroundColor("#585858")
        
         if modules.game_quickloot.QuickLoot.data.filter == 2 then
-            UI.InfoBase.quickLootCheck:setText(tr("Loot when Quick Looting"))
+            UI.InfoBase.quickLootCheck:setText(tr("otclient_modules.items.tr_6"))
         else
-            UI.InfoBase.quickLootCheck:setText(tr('Skip when Quick Looting'))
+            UI.InfoBase.quickLootCheck:setText(tr("otclient_modules.items.tr_5"))
         end
         UI.InfoBase.quickLootCheck.onCheckChange = function(self, checked)
             if checked then
@@ -404,11 +404,11 @@ function Cyclopedia.selectItemCategory(id)
 
     if Cyclopedia.hasClassificationFilter(id) then
         UI.ItemFilter:clearOptions()
-        UI.ItemFilter:addOption(tr("All"), 0, true)
-        UI.ItemFilter:addOption(tr("None"), -1, true)
+        UI.ItemFilter:addOption(tr("otclient_modules.items.tr_4"), 0, true)
+        UI.ItemFilter:addOption(tr("otclient_modules.items.tr_3"), -1, true)
 
         for class = 1, 4 do
-            UI.ItemFilter:addOption(tr("Class") .. " " .. class, class, true)
+            UI.ItemFilter:addOption(tr("otclient_modules.items.tr_2") .. " " .. class, class, true)
         end
 
         UI.ItemFilter:enable()
@@ -493,7 +493,7 @@ function Cyclopedia.loadItemDetail(itemId, descriptions)
 
     if classification > 0 then
         local widget = g_ui.createWidget("UIWidget", UI.InfoBase.DetailsBase.List)
-        widget:setText(tr("Classification:") .. " " .. classification)
+        widget:setText(tr("otclient_modules.items.tr_1") .. " " .. classification)
         widget:setColor("#C0C0C0")
     end
 end

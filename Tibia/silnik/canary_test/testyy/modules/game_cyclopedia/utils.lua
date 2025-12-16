@@ -638,18 +638,18 @@ function Cyclopedia.formatSaleData(data)
     for name, value in pairs(s) do
         if value.various then
             table.insert(sell,
-                string.format(tr("%s gp, %s\nResidence: %s"), Cyclopedia.formatGold(value.price), name, tr("Various Locations")))
+                string.format(tr("otclient_modules.utils.tr_6"), Cyclopedia.formatGold(value.price), name, tr("otclient_modules.utils.tr_5")))
         else
-            table.insert(sell, string.format(tr("%s gp, %s\nResidence: %s"), Cyclopedia.formatGold(value.price), name, value.location))
+            table.insert(sell, string.format(tr("otclient_modules.utils.tr_4"), Cyclopedia.formatGold(value.price), name, value.location))
         end
     end
 
     for name, value in pairs(b) do
         if value.various then
             table.insert(buy,
-                string.format(tr("%s gp, %s\nResidence: %s"), Cyclopedia.formatGold(value.price), name, tr("Various Locations")))
+                string.format(tr("otclient_modules.utils.tr_3"), Cyclopedia.formatGold(value.price), name, tr("otclient_modules.utils.tr_2")))
         else
-            table.insert(buy, string.format(tr("%s gp, %s\nResidence: %s"), Cyclopedia.formatGold(value.price), name, value.location))
+            table.insert(buy, string.format(tr("otclient_modules.utils.tr_1"), Cyclopedia.formatGold(value.price), name, value.location))
         end
     end
 

@@ -32,9 +32,9 @@ local function downloadFiles(url, files, index, retries, doneCallback)
   local file_checksum = entry[2]
 
   if retries > 0 then
-    updaterWindow.downloadStatus:setText(tr("Downloading (%i retry):\n%s", retries, file))
+    updaterWindow.downloadStatus:setText(tr("otclient_modules.updater.tr_11", retries, file))
   else
-    updaterWindow.downloadStatus:setText(tr("Downloading:\n%s", file))
+    updaterWindow.downloadStatus:setText(tr("otclient_modules.updater.tr_10", file))
   end
   updaterWindow.downloadProgress:setPercent(0)
   updaterWindow.mainProgress:setPercent(math.floor(100 * index / #files))
@@ -42,11 +42,11 @@ local function downloadFiles(url, files, index, retries, doneCallback)
   httpOperationId = HTTP.download(url .. file, file,
     function(file, checksum, err)
       if not err and checksum ~= file_checksum then
-        err = tr("Invalid checksum of: %s.\nShould be %s, is: %s", file, file_checksum, checksum)
+        err = tr("otclient_modules.updater.tr_9", file, file_checksum, checksum)
       end
       if err then
         if retries >= Updater.maxRetries then
-          Updater.error(tr("Can't download file: %s.\nError: %s", file, err))
+          Updater.error(tr("otclient_modules.updater.tr_8", file, err))
         else
           scheduledEvent = scheduleEvent(function()
             downloadFiles(url, files, index, retries + 1, doneCallback)
@@ -58,7 +58,7 @@ local function downloadFiles(url, files, index, retries, doneCallback)
     end,
     function(progress, speed)
       updaterWindow.downloadProgress:setPercent(progress)
-      updaterWindow.downloadProgress:setText(tr("%s kbps", speed))
+      updaterWindow.downloadProgress:setText(tr("otclient_modules.updater.tr_7", speed))
     end)
 end
 
@@ -66,7 +66,7 @@ local function updateFiles(data, keepCurrentFiles)
   if not updaterWindow then return end
 
   if type(data) ~= "table" then
-    return Updater.error(tr("Invalid data from updater api (not table)"))
+    return Updater.error(tr("otclient_modules.updater.tr_6"))
   end
 
   if type(data.error) == 'string' and data.error:len() > 0 then
@@ -74,7 +74,7 @@ local function updateFiles(data, keepCurrentFiles)
   end
 
   if not data.files or type(data.url) ~= 'string' or data.url:len() < 4 then
-    return Updater.error(tr("Invalid data from updater api: %s", json.encode(data, 2)))
+    return Updater.error(tr("otclient_modules.updater.tr_5", json.encode(data, 2)))
   end
 
   if data.keepFiles then
@@ -135,7 +135,7 @@ local function updateFiles(data, keepCurrentFiles)
     end
   end
 
-  updaterWindow.status:setText(tr("Updating %i files", #toUpdate))
+  updaterWindow.status:setText(tr("otclient_modules.updater.tr_4", #toUpdate))
   updaterWindow.mainProgress:setPercent(0)
   updaterWindow.downloadProgress:setPercent(0)
   updaterWindow.downloadProgress:show()
@@ -143,7 +143,7 @@ local function updateFiles(data, keepCurrentFiles)
   updaterWindow.changeUrlButton:hide()
 
   downloadFiles(data["url"], toUpdate, 1, 0, function()
-    updaterWindow.status:setText(tr("Updating client (may take few seconds)"))
+    updaterWindow.status:setText(tr("otclient_modules.updater.tr_3"))
     updaterWindow.mainProgress:setPercent(100)
     updaterWindow.downloadProgress:hide()
     updaterWindow.downloadStatus:hide()
@@ -207,7 +207,7 @@ function Updater.check(args)
   local function progressUpdater(value)
     removeEvent(scheduledEvent)
     if value == 100 then
-      return Updater.error(tr("Timeout"))
+      return Updater.error(tr("otclient_modules.updater.tr_2"))
     end
     if updateData and (value > 60 or (not g_platform.isMobile() or not ALLOW_CUSTOM_SERVERS or not loadModulesFunc)) then -- gives 3s to set custom updater for mobile version
       return updateFiles(updateData)
@@ -234,7 +234,7 @@ end
 function Updater.error(message)
   removeEvent(scheduledEvent)
   if not updaterWindow then return end
-  displayErrorBox(tr("Updater Error"), message).onOk = function()
+  displayErrorBox(tr("otclient_modules.updater.tr_1"), message).onOk = function()
     Updater.abort()
   end
 end

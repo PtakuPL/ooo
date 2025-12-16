@@ -35,7 +35,7 @@ function init()
         onGameEnd = offline
     })
 
-    skillsButton = modules.game_mainpanel.addToggleButton('skillsButton', tr('Skills') .. ' (Alt+S)',
+    skillsButton = modules.game_mainpanel.addToggleButton('skillsButton', tr("otclient_modules.skills.tr_32") .. ' (Alt+S)',
                                                                    '/images/options/button_skills', toggle, false, 1)
     skillsButton:setOn(true)
     skillsWindow = g_ui.loadUI('skills')
@@ -264,7 +264,7 @@ function online()
     skillsWindow:setupOnStart() -- load character window configuration
     refresh()
     if g_game.getFeature(GameEnterGameShowAppearance) then
-        skillsWindow:recursiveGetChildById('regenerationTime'):getChildByIndex(1):setText(tr('Food'))
+        skillsWindow:recursiveGetChildById('regenerationTime'):getChildByIndex(1):setText(tr("otclient_modules.skills.tr_31"))
     end
 end
 
@@ -443,8 +443,8 @@ end
 
 function onLevelChange(localPlayer, value, percent)
     setSkillValue('level', comma_value(value))
-    local text = tr('You have %s percent to go', 100 - percent) .. '\n' ..
-                     tr('%s of experience left', expToAdvance(localPlayer:getLevel(), localPlayer:getExperience()))
+    local text = tr("otclient_modules.skills.tr_30", 100 - percent) .. '\n' ..
+                     tr("otclient_modules.skills.tr_29", expToAdvance(localPlayer:getLevel(), localPlayer:getExperience()))
 
     if localPlayer.expSpeed ~= nil then
         local expPerHour = math.floor(localPlayer.expSpeed * 3600)
@@ -453,8 +453,8 @@ function onLevelChange(localPlayer, value, percent)
             local hoursLeft = (nextLevelExp - localPlayer:getExperience()) / expPerHour
             local minutesLeft = math.floor((hoursLeft - math.floor(hoursLeft)) * 60)
             hoursLeft = math.floor(hoursLeft)
-            text = text .. '\n' .. tr('%s of experience per hour', comma_value(expPerHour))
-            text = text .. '\n' .. tr('Next level in %d hours and %d minutes', hoursLeft, minutesLeft)
+            text = text .. '\n' .. tr("otclient_modules.skills.tr_28", comma_value(expPerHour))
+            text = text .. '\n' .. tr("otclient_modules.skills.tr_27", hoursLeft, minutesLeft)
         end
     end
 
@@ -496,26 +496,25 @@ function onStaminaChange(localPlayer, stamina)
 
     -- TODO not all client versions have premium time
     if stamina > 2400 and g_game.getClientVersion() >= 1038 and localPlayer:isPremium() then
-        local text = tr('You have %s hours and %s minutes left', hours, minutes) .. '\n' ..
-                         tr('Now you will gain 50%% more experience')
+        local text = tr("otclient_modules.skills.tr_26", hours, minutes) .. '\n' ..
+                         tr("otclient_modules.skills.tr_25")
         setSkillPercent('stamina', percent, text, 'green')
     elseif stamina > 2400 and g_game.getClientVersion() >= 1038 and not localPlayer:isPremium() then
-        local text = tr('You have %s hours and %s minutes left', hours, minutes) .. '\n' .. tr(
-                         'You will not gain 50%% more experience because you aren\'t premium player, now you receive only 1x experience points')
+        local text = tr("otclient_modules.skills.tr_24", hours, minutes) .. '\n' .. tr("otclient_modules.skills.tr_23")
         setSkillPercent('stamina', percent, text, '#89F013')
     elseif stamina >= 2400 and g_game.getClientVersion() < 1038 then
-        local text = tr('You have %s hours and %s minutes left', hours, minutes) .. '\n' ..
-                         tr('If you are premium player, you will gain 50%% more experience')
+        local text = tr("otclient_modules.skills.tr_22", hours, minutes) .. '\n' ..
+                         tr("otclient_modules.skills.tr_21")
         setSkillPercent('stamina', percent, text, 'green')
     elseif stamina < 2400 and stamina > 840 then
-        setSkillPercent('stamina', percent, tr('You have %s hours and %s minutes left', hours, minutes), 'orange')
+        setSkillPercent('stamina', percent, tr("otclient_modules.skills.tr_20", hours, minutes), 'orange')
     elseif stamina <= 840 and stamina > 0 then
-        local text = tr('You have %s hours and %s minutes left', hours, minutes) .. '\n' ..
-                         tr('You gain only 50%% experience and you don\'t may gain loot from monsters')
+        local text = tr("otclient_modules.skills.tr_19", hours, minutes) .. '\n' ..
+                         tr("otclient_modules.skills.tr_18")
         setSkillPercent('stamina', percent, text, 'red')
     elseif stamina == 0 then
-        local text = tr('You have %s hours and %s minutes left', hours, minutes) .. '\n' ..
-                         tr('You don\'t may receive experience and loot from monsters')
+        local text = tr("otclient_modules.skills.tr_17", hours, minutes) .. '\n' ..
+                         tr("otclient_modules.skills.tr_16")
         setSkillPercent('stamina', percent, text, 'black')
     end
 end
@@ -532,7 +531,7 @@ function onOfflineTrainingChange(localPlayer, offlineTrainingTime)
     local percent = 100 * offlineTrainingTime / (12 * 60) -- max is 12 hours
 
     setSkillValue('offlineTraining', hours .. ':' .. minutes)
-    setSkillPercent('offlineTraining', percent, tr('You have %s percent', percent))
+    setSkillPercent('offlineTraining', percent, tr("otclient_modules.skills.tr_15", percent))
 end
 
 function onRegenerationChange(localPlayer, regenerationTime)
@@ -578,7 +577,7 @@ end
 
 function onMagicLevelChange(localPlayer, magiclevel, percent)
     setSkillValue('magiclevel', magiclevel)
-    setSkillPercent('magiclevel', percent, tr('You have %s percent to go', 100 - percent))
+    setSkillPercent('magiclevel', percent, tr("otclient_modules.skills.tr_14", 100 - percent))
 
     onBaseMagicLevelChange(localPlayer, localPlayer:getBaseMagicLevel())
 end
@@ -589,7 +588,7 @@ end
 
 function onSkillChange(localPlayer, id, level, percent)
     setSkillValue('skillId' .. id, level)
-    setSkillPercent('skillId' .. id, percent, tr('You have %s percent to go', 100 - percent))
+    setSkillPercent('skillId' .. id, percent, tr("otclient_modules.skills.tr_13", 100 - percent))
 
     onBaseSkillChange(localPlayer, id, localPlayer:getSkillBaseLevel(id))
 
@@ -628,19 +627,19 @@ local function updateExperienceRate(localPlayer)
 
     widget:setText(math.floor(expRateTotal) .. "%")
 
-    local tooltip = string.format(tr("Your current XP gain rate amounts to %d%%."), math.floor(expRateTotal))
+    local tooltip = string.format(tr("otclient_modules.skills.tr_12"), math.floor(expRateTotal))
     tooltip = tooltip ..
-                  string.format(tr("\nYour XP gain rate is calculated as follows:\n- Base XP gain rate %d%%"), baseRate)
+                  string.format(tr("otclient_modules.skills.tr_11"), baseRate)
 
     if (ExpRating[ExperienceRate.VOUCHER] or 0) > 0 then
-        tooltip = tooltip .. string.format(tr("\n- Voucher: %d%%"), ExpRating[ExperienceRate.VOUCHER])
+        tooltip = tooltip .. string.format(tr("otclient_modules.skills.tr_10"), ExpRating[ExperienceRate.VOUCHER])
     end
 
     if (ExpRating[ExperienceRate.XP_BOOST] or 0) > 0 then
-        tooltip = tooltip .. string.format(tr("\n- XP Boost: %d%% (%s h remaining)"), ExpRating[ExperienceRate.XP_BOOST],
+        tooltip = tooltip .. string.format(tr("otclient_modules.skills.tr_9"), ExpRating[ExperienceRate.XP_BOOST],
             formatTimeBySeconds(localPlayer:getStoreExpBoostTime()))
     end
-    tooltip = tooltip .. string.format(tr("\n- Stamina multiplier: x%.1f (%s h remaining)"), staminaMultiplier / 100,
+    tooltip = tooltip .. string.format(tr("otclient_modules.skills.tr_8"), staminaMultiplier / 100,
         formatTimeByMinutes(localPlayer:getStamina() - 2340))
 
     xpgainrate:setTooltip(tooltip)
@@ -695,13 +694,13 @@ end
 
 function onFlatDamageHealingChange(localPlayer, flatBonus)
     local tooltips =
-        tr("This flat bonus is the main source of your character's power, added to most of the damage and healing values you cause.")
+        tr("otclient_modules.skills.tr_7")
     setSkillValueWithTooltips('damageHealing', flatBonus, tooltips, false)
 end
 
 function onAttackInfoChange(localPlayer, attackValue, attackElement)
     local tooltips =
-        tr("This is your character's basic attack power whenever you enter a fight with a weapon or your fists. It does not apply to any spells you cast. The attack value is calculated from the weapon's attack value, the corresponding weapon skill, combat tactics, the bonus received from the Revelation Perks and the player's level. The value represents the average damage you would inflict on a creature which had no kind of defence or protection.")
+        tr("otclient_modules.skills.tr_6")
     setSkillValueWithTooltips('attackValue', attackValue, tooltips, false)
     local skill = skillsWindow:recursiveGetChildById("attackValue")
     if skill then
@@ -723,12 +722,12 @@ end
 
 function onImbuementsChange(localPlayer, lifeLeech, manaLeech, critChance, critDamage, onslaught)
     local lifeLeechTooltips =
-        tr("You have a +11.4% chance to trigger Onslaught, granting you 60% increased damage for all attacks.")
-    local manaLeechTooltips = tr("You have a +1% chance to cause +1% extra damage.")
+        tr("otclient_modules.skills.tr_5")
+    local manaLeechTooltips = tr("otclient_modules.skills.tr_4")
     local critChanceTooltips =
-        tr("Critical Hits deal more damage than normal attacks. They have a chance to be triggered during combat, inflicting additional damage beyond the standard amount.")
-    local critDamageTooltips = tr("You get +1% of the damage dealt as mana")
-    local onslaughtTooltips = tr("You get +1% of the damage dealt as hit points")
+        tr("otclient_modules.skills.tr_3")
+    local critDamageTooltips = tr("otclient_modules.skills.tr_2")
+    local onslaughtTooltips = tr("otclient_modules.skills.tr_1")
     skillsWindow:recursiveGetChildById("criticalHit"):setVisible(true)
     setSkillValueWithTooltips('lifeLeech', lifeLeech, lifeLeechTooltips, true)
     setSkillValueWithTooltips('manaLeech', manaLeech, manaLeechTooltips, true)

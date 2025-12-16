@@ -64,12 +64,12 @@ local function load(version)
 
         g_logger.setLevel(5)
         if not tryLoadDatWithFallbacks(datPath) then
-            errorList[#errorList + 1] = tr('Unable to load dat file, please place a valid dat in \'%s.dat\'', datPath)
+            errorList[#errorList + 1] = tr("otclient_modules.things.tr_3", datPath)
         end
         g_logger.setLevel(1)
 
         if not g_sprites.loadSpr(sprPath) then
-            errorList[#errorList + 1] = tr('Unable to load spr file, please place a valid spr in \'%s.spr\'', sprPath)
+            errorList[#errorList + 1] = tr("otclient_modules.things.tr_2", sprPath)
         end
         if g_game.getFeature(GameLoadSprInsteadProtobuf) and version >= 1281 then
             local staticPath = resolvepath(string.format('/things/%d/appearances', version))
@@ -89,7 +89,7 @@ local function load(version)
         return
     end
 
-    local messageBox = displayErrorBox(tr('Error'), table.concat(errorList, "\n"))
+    local messageBox = displayErrorBox(tr("otclient_modules.things.tr_1"), table.concat(errorList, "\n"))
     addEvent(function()
         messageBox:raise()
         messageBox:focus()

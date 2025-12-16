@@ -48,7 +48,7 @@ local function tryLogin(charInfo, tries)
     g_game.loginWorld(G.account, G.password, charInfo.worldName, charInfo.worldHost, charInfo.worldPort,
                       charInfo.characterName, G.authenticatorToken, G.sessionKey)
 
-    loadBox = displayCancelBox(tr('Please wait'), tr('Connecting to game server...'))
+    loadBox = displayCancelBox(tr("otclient_modules.characterlist.tr_18"), tr("otclient_modules.characterlist.tr_17"))
     connect(loadBox, {
         onCancel = function()
             loadBox = nil
@@ -74,7 +74,7 @@ local function updateWait(timeStart, timeEnd)
             progressBar:setPercent(percent)
 
             local label = waitingWindow:getChildById('timeLabel')
-            label:setText(tr('Trying to reconnect in %s seconds.', timeStr))
+            label:setText(tr("otclient_modules.characterlist.tr_16", timeStr))
 
             updateWaitEvent = scheduleEvent(function()
                 updateWait(timeStart, timeEnd)
@@ -141,7 +141,7 @@ end
 
 function onGameLoginError(message)
     CharacterList.destroyLoadBox()
-    errorBox = displayErrorBox(tr('Login Error'), message)
+    errorBox = displayErrorBox(tr("otclient_modules.characterlist.tr_15"), message)
     errorBox.onOk = function()
         errorBox = nil
         CharacterList.showAgain()
@@ -157,7 +157,7 @@ function onGameConnectionError(message, code)
     CharacterList.destroyLoadBox()
     local text = translateNetworkError(code, g_game.getProtocolGame() and g_game.getProtocolGame():isConnecting(),
                                        message)
-    errorBox = displayErrorBox(tr('Connection Error'), text)
+    errorBox = displayErrorBox(tr("otclient_modules.characterlist.tr_14"), text)
     errorBox.onOk = function()
         errorBox = nil
         CharacterList.showAgain()
@@ -166,7 +166,7 @@ end
 
 function onGameUpdateNeeded(signature)
     CharacterList.destroyLoadBox()
-    errorBox = displayErrorBox(tr('Update needed'), tr('Enter with your account again to update your client.'))
+    errorBox = displayErrorBox(tr("otclient_modules.characterlist.tr_13"), tr("otclient_modules.characterlist.tr_12"))
     errorBox.onOk = function()
         errorBox = nil
         CharacterList.showAgain()
@@ -377,21 +377,21 @@ function CharacterList.create(characters, account, otui)
     -- account
     local status = ''
     if account.status == AccountStatus.Frozen then
-        status = tr(' (Frozen)')
+        status = tr("otclient_modules.characterlist.tr_11")
     elseif account.status == AccountStatus.Suspended then
-        status = tr(' (Suspended)')
+        status = tr("otclient_modules.characterlist.tr_10")
     end
 
     if account.subStatus == SubscriptionStatus.Free then
-        accountStatusLabel:setText(('%s%s'):format(tr('Free Account'), status))
+        accountStatusLabel:setText(('%s%s'):format(tr("otclient_modules.characterlist.tr_9"), status))
         if accountStatusIcon ~= nil then
             accountStatusIcon:setImageSource('/images/game/entergame/nopremium')
         end
     elseif account.subStatus == SubscriptionStatus.Premium then
         if account.premDays == 0 or account.premDays == 65535 then
-            accountStatusLabel:setText(('%s%s'):format(tr('Gratis Premium Account'), status))
+            accountStatusLabel:setText(('%s%s'):format(tr("otclient_modules.characterlist.tr_8"), status))
         else
-            accountStatusLabel:setText(('%s%s'):format(tr('Premium Account (%s) days left', account.premDays), status))
+            accountStatusLabel:setText(('%s%s'):format(tr("otclient_modules.characterlist.tr_7", account.premDays), status))
         end
         if accountStatusIcon ~= nil then
             accountStatusIcon:setImageSource('/images/game/entergame/premium')
@@ -440,11 +440,11 @@ function CharacterList.show()
 
     local autoReconnect = g_settings.getBoolean('autoReconnect', false)
     autoReconnectButton:setOn(autoReconnect)
-    local reconnectStatus = autoReconnect and tr("On") or tr("Off")
+    local reconnectStatus = autoReconnect and tr("otclient_modules.characterlist.tr_6") or tr("otclient_modules.characterlist.tr_5")
     if not g_game.getFeature(GameEnterGameShowAppearance) then
-        autoReconnectButton:setText(tr('Auto reconnect:') .. '\n ' .. reconnectStatus)
+        autoReconnectButton:setText(tr("otclient_modules.characterlist.tr_4") .. '\n ' .. reconnectStatus)
     else
-        autoReconnectButton:setText(tr('Auto reconnect:') .. ' ' .. reconnectStatus)
+        autoReconnectButton:setText(tr("otclient_modules.characterlist.tr_3") .. ' ' .. reconnectStatus)
     end
 end
 
@@ -489,7 +489,7 @@ function CharacterList.doLogin()
         end
         tryLogin(charInfo)
     else
-        displayErrorBox(tr('Error'), tr('You must select a character to login!'))
+        displayErrorBox(tr("otclient_modules.characterlist.tr_2"), tr("otclient_modules.characterlist.tr_1"))
     end
 end
 

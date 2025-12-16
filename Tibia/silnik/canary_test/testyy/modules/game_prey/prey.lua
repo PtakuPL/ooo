@@ -27,25 +27,25 @@ local preyDescription = {}
 
 function bonusDescription(bonusType, bonusValue, bonusGrade)
     if bonusType == PREY_BONUS_DAMAGE_BOOST then
-        return tr('Damage bonus') .. ' (' .. bonusGrade .. '/10)'
+        return tr("otclient_modules.prey.tr_24") .. ' (' .. bonusGrade .. '/10)'
     elseif bonusType == PREY_BONUS_DAMAGE_REDUCTION then
-        return tr('Damage reduction bonus') .. ' (' .. bonusGrade .. '/10)'
+        return tr("otclient_modules.prey.tr_23") .. ' (' .. bonusGrade .. '/10)'
     elseif bonusType == PREY_BONUS_XP_BONUS then
-        return tr('XP bonus') .. ' (' .. bonusGrade .. '/10)'
+        return tr("otclient_modules.prey.tr_22") .. ' (' .. bonusGrade .. '/10)'
     elseif bonusType == PREY_BONUS_IMPROVED_LOOT then
-        return tr('Loot bonus') .. ' (' .. bonusGrade .. '/10)'
+        return tr("otclient_modules.prey.tr_21") .. ' (' .. bonusGrade .. '/10)'
     else
-        return tr('Unknown bonus')
+        return tr("otclient_modules.prey.tr_20")
     end
-    return tr('Unknown bonus')
+    return tr("otclient_modules.prey.tr_19")
 end
 
 function timeleftTranslation(timeleft, forPreyTimeleft) -- in seconds
     if timeleft == 0 then
         if forPreyTimeleft then
-            return tr('infinite bonus')
+            return tr("otclient_modules.prey.tr_18")
         end
-        return tr('Free')
+        return tr("otclient_modules.prey.tr_17")
     end
     local hours = string.format('%02.f', math.floor(timeleft / 3600))
     local mins = string.format('%02.f', math.floor(timeleft / 60 - (hours * 60)))
@@ -163,11 +163,11 @@ end
 function check()
     if g_game.getFeature(GamePrey) then
         if not preyButton then
-            preyButton = modules.game_mainpanel.addToggleButton('preyButton', tr('Prey Dialog'),
+            preyButton = modules.game_mainpanel.addToggleButton('preyButton', tr("otclient_modules.prey.tr_16"),
                                                                          '/images/options/button_preydialog', toggle)
         end
         if not preyTrackerButton then
-            preyTrackerButton = modules.game_mainpanel.addToggleButton('preyTrackerButton', tr('Prey Tracker'),
+            preyTrackerButton = modules.game_mainpanel.addToggleButton('preyTrackerButton', tr("otclient_modules.prey.tr_15"),
                                                                                 '/images/options/button_prey', toggleTracker)
         end
     elseif preyButton then
@@ -301,7 +301,7 @@ function setTimeUntilFreeReroll(slot, timeUntilFreeReroll) -- minutes
         if timeUntilFreeReroll > 0 then
             price:setText(comma_value(rerollPrice))
         else
-            price:setText(tr('Free'))
+            price:setText(tr("otclient_modules.prey.tr_14"))
         end
     end
 end
@@ -324,7 +324,7 @@ function onPreyLocked(slot, unlockState, timeUntilFreeReroll, wildcards)
     if not prey then
         return
     end
-    prey.title:setText(tr('Locked'))
+    prey.title:setText(tr("otclient_modules.prey.tr_13"))
     prey.inactive:hide()
     prey.active:hide()
     prey.locked:show()
@@ -341,11 +341,11 @@ function onPreyInactive(slot, timeUntilFreeReroll, wildcards)
     if tracker then
         tracker.creature:hide()
         tracker.noCreature:show()
-        tracker.creatureName:setText(tr('Inactive'))
+        tracker.creatureName:setText(tr("otclient_modules.prey.tr_12"))
         tracker.time:setPercent(0)
         tracker.preyType:setImageSource('/images/game/prey/prey_no_bonus')
         for i, element in pairs({tracker.creatureName, tracker.creature, tracker.preyType, tracker.time}) do
-            element:setTooltip(tr('Inactive Prey. \n\nClick in this window to open the prey dialog.'))
+            element:setTooltip(tr("otclient_modules.prey.tr_11"))
             element.onClick = function()
                 show()
             end
@@ -528,11 +528,11 @@ function onPreySelection(slot, names, outfits, timeUntilFreeReroll, wildcards)
     if tracker then
         tracker.creature:hide()
         tracker.noCreature:show()
-        tracker.creatureName:setText(tr('Inactive'))
+        tracker.creatureName:setText(tr("otclient_modules.prey.tr_10"))
         tracker.time:setPercent(0)
         tracker.preyType:setImageSource('/images/game/prey/prey_no_bonus')
         for i, element in pairs({tracker.creatureName, tracker.creature, tracker.preyType, tracker.time}) do
-            element:setTooltip(tr('Inactive Prey. \n\nClick in this window to open the prey dialog.'))
+            element:setTooltip(tr("otclient_modules.prey.tr_9"))
             element.onClick = function()
                 show()
             end
@@ -547,7 +547,7 @@ function onPreySelection(slot, names, outfits, timeUntilFreeReroll, wildcards)
     prey.active:hide()
     prey.locked:hide()
     prey.inactive:show()
-    prey.title:setText(tr('Select monster'))
+    prey.title:setText(tr("otclient_modules.prey.tr_8"))
     local rerollButton = prey.inactive.reroll.button.rerollButton
     rerollButton.onClick = function()
         g_game.preyAction(slot, PREY_ACTION_LISTREROLL, 0)
@@ -566,7 +566,7 @@ function onPreySelection(slot, names, outfits, timeUntilFreeReroll, wildcards)
                 return g_game.preyAction(slot, PREY_ACTION_MONSTERSELECTION, i - 1)
             end
         end
-        return showMessage(tr('Error'), tr('Select monster to proceed.'))
+        return showMessage(tr("otclient_modules.prey.tr_7"), tr("otclient_modules.prey.tr_6"))
     end
 end
 
@@ -588,11 +588,11 @@ function onPreySelectionChangeMonster(slot, names, outfits, bonusType, bonusValu
     if tracker then
         tracker.creature:hide()
         tracker.noCreature:show()
-        tracker.creatureName:setText(tr('Inactive'))
+        tracker.creatureName:setText(tr("otclient_modules.prey.tr_5"))
         tracker.time:setPercent(0)
         tracker.preyType:setImageSource('/images/game/prey/prey_no_bonus')
         for i, element in pairs({tracker.creatureName, tracker.creature, tracker.preyType, tracker.time}) do
-            element:setTooltip(tr('Inactive Prey. \n\nClick in this window to open the prey dialog.'))
+            element:setTooltip(tr("otclient_modules.prey.tr_4"))
             element.onClick = function()
                 show()
             end
@@ -607,7 +607,7 @@ function onPreySelectionChangeMonster(slot, names, outfits, bonusType, bonusValu
     prey.active:hide()
     prey.locked:hide()
     prey.inactive:show()
-    prey.title:setText(tr('Select monster'))
+    prey.title:setText(tr("otclient_modules.prey.tr_3"))
     local rerollButton = prey.inactive.reroll.button.rerollButton
     rerollButton.onClick = function()
         g_game.preyAction(slot, PREY_ACTION_LISTREROLL, 0)
@@ -626,7 +626,7 @@ function onPreySelectionChangeMonster(slot, names, outfits, bonusType, bonusValu
                 return g_game.preyAction(slot, PREY_ACTION_MONSTERSELECTION, i - 1)
             end
         end
-        return showMessage(tr('Error'), tr('Select monster to proceed.'))
+        return showMessage(tr("otclient_modules.prey.tr_2"), tr("otclient_modules.prey.tr_1"))
     end
 end
 

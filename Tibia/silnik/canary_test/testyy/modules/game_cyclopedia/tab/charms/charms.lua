@@ -43,8 +43,8 @@ local charmRune_t = {
 
 local charms = {
     [charmRune_t.CHARM_WOUND] = {
-        name = tr("Wound"),
-        description = tr("Triggers on a creature with a chance to deal 5%% of its initial HP as physical damage."),
+        name = tr("otclient_modules.charms.tr_74"),
+        description = tr("otclient_modules.charms.tr_73"),
         category = charmCategory_t.CHARM_MAJOR,
         type = charm_t.CHARM_OFFENSIVE,
         percent = 5,
@@ -52,8 +52,8 @@ local charms = {
         points = {240, 360, 1200}
     },
     [charmRune_t.CHARM_ENFLAME] = {
-        name = tr("Enflame"),
-        description = tr("Triggers on a creature with a chance to deal 5%% of its initial HP as fire damage."),
+        name = tr("otclient_modules.charms.tr_72"),
+        description = tr("otclient_modules.charms.tr_71"),
         category = charmCategory_t.CHARM_MAJOR,
         type = charm_t.CHARM_OFFENSIVE,
         percent = 5,
@@ -61,8 +61,8 @@ local charms = {
         points = {400, 600, 2000}
     },
     [charmRune_t.CHARM_POISON] = {
-        name = tr("Poison"),
-        description = tr("Triggers on a creature with a chance to deal 5%% of its initial HP as earth damage."),
+        name = tr("otclient_modules.charms.tr_70"),
+        description = tr("otclient_modules.charms.tr_69"),
         category = charmCategory_t.CHARM_MAJOR,
         type = charm_t.CHARM_OFFENSIVE,
         percent = 5,
@@ -70,8 +70,8 @@ local charms = {
         points = {240, 360, 1200}
     },
     [charmRune_t.CHARM_FREEZE] = {
-        name = tr("Freeze"),
-        description = tr("Triggers on a creature with a chance to deal 5%% of its initial HP as ice damage."),
+        name = tr("otclient_modules.charms.tr_68"),
+        description = tr("otclient_modules.charms.tr_67"),
         category = charmCategory_t.CHARM_MAJOR,
         type = charm_t.CHARM_OFFENSIVE,
         percent = 5,
@@ -79,8 +79,8 @@ local charms = {
         points = {320, 480, 1600}
     },
     [charmRune_t.CHARM_ZAP] = {
-        name = tr("Zap"),
-        description = tr("Triggers on a creature with a chance to deal 5%% of its initial HP as energy damage."),
+        name = tr("otclient_modules.charms.tr_66"),
+        description = tr("otclient_modules.charms.tr_65"),
         category = charmCategory_t.CHARM_MAJOR,
         type = charm_t.CHARM_OFFENSIVE,
         percent = 5,
@@ -88,8 +88,8 @@ local charms = {
         points = {320, 480, 1600}
     },
     [charmRune_t.CHARM_CURSE] = {
-        name = tr("Curse"),
-        description = tr("Triggers on a creature with a chance to deal 5%% of its initial HP as death damage."),
+        name = tr("otclient_modules.charms.tr_64"),
+        description = tr("otclient_modules.charms.tr_63"),
         category = charmCategory_t.CHARM_MAJOR,
         type = charm_t.CHARM_OFFENSIVE,
         percent = 5,
@@ -97,8 +97,8 @@ local charms = {
         points = {360, 540, 1800}
     },
     [charmRune_t.CHARM_CRIPPLE] = {
-        name = tr("Cripple"),
-        description = tr("Cripples the creature and paralyzes it for 10 seconds."),
+        name = tr("otclient_modules.charms.tr_62"),
+        description = tr("otclient_modules.charms.tr_61"),
         category = charmCategory_t.CHARM_MINOR,
         type = charm_t.CHARM_OFFENSIVE,
         chance = {6, 9, 12},
@@ -106,8 +106,8 @@ local charms = {
         points = {100, 150, 225}
     },
     [charmRune_t.CHARM_PARRY] = {
-        name = tr("Parry"),
-        description = tr("Reflects incoming damage back to the aggressor."),
+        name = tr("otclient_modules.charms.tr_60"),
+        description = tr("otclient_modules.charms.tr_59"),
         category = charmCategory_t.CHARM_MAJOR,
         type = charm_t.CHARM_DEFENSIVE,
         chance = {5, 10, 11},
@@ -115,8 +115,8 @@ local charms = {
         points = {400, 600, 2000}
     },
     [charmRune_t.CHARM_DODGE] = {
-        name = tr("Dodge"),
-        description = tr("Dodges an attack with a chance, avoiding all damage."),
+        name = tr("otclient_modules.charms.tr_58"),
+        description = tr("otclient_modules.charms.tr_57"),
         category = charmCategory_t.CHARM_MAJOR,
         type = charm_t.CHARM_DEFENSIVE,
         chance = {5, 10, 11},
@@ -124,8 +124,8 @@ local charms = {
         points = {240, 360, 1200}
     },
     [charmRune_t.CHARM_ADRENALINE] = {
-        name = tr("Adrenaline Burst"),
-        description = tr("Boosts movement speed for 10 seconds after being hit."),
+        name = tr("otclient_modules.charms.tr_56"),
+        description = tr("otclient_modules.charms.tr_55"),
         category = charmCategory_t.CHARM_MINOR,
         type = charm_t.CHARM_DEFENSIVE,
         chance = {6, 9, 12},
@@ -133,8 +133,8 @@ local charms = {
         points = {100, 150, 225}
     },
     [charmRune_t.CHARM_NUMB] = {
-        name = tr("Numb"),
-        description = tr("Numbs the creature and paralyzes it for 10 seconds."),
+        name = tr("otclient_modules.charms.tr_54"),
+        description = tr("otclient_modules.charms.tr_53"),
         category = charmCategory_t.CHARM_MINOR,
         type = charm_t.CHARM_DEFENSIVE,
         chance = {6, 9, 12},
@@ -142,8 +142,8 @@ local charms = {
         points = {100, 150, 225}
     },
     [charmRune_t.CHARM_CLEANSE] = {
-        name = tr("Cleanse"),
-        description = tr("Removes a negative status effect and grants temporary immunity."),
+        name = tr("otclient_modules.charms.tr_52"),
+        description = tr("otclient_modules.charms.tr_51"),
         category = charmCategory_t.CHARM_MINOR,
         type = charm_t.CHARM_DEFENSIVE,
         chance = {6, 9, 12},
@@ -151,8 +151,8 @@ local charms = {
         points = {100, 150, 225}
     },
     [charmRune_t.CHARM_BLESS] = {
-        name = tr("Bless"),
-        description = tr("Reduces skill and XP loss by 10%% when killed by the chosen creature."),
+        name = tr("otclient_modules.charms.tr_50"),
+        description = tr("otclient_modules.charms.tr_49"),
         category = charmCategory_t.CHARM_MINOR,
         type = charm_t.CHARM_PASSIVE,
         percent = 10,
@@ -160,32 +160,32 @@ local charms = {
         points = {100, 150, 225}
     },
     [charmRune_t.CHARM_SCAVENGE] = {
-        name = tr("Scavenge"),
-        description = tr("Enhances chances to successfully skin or dust a creature."),
+        name = tr("otclient_modules.charms.tr_48"),
+        description = tr("otclient_modules.charms.tr_47"),
         category = charmCategory_t.CHARM_MINOR,
         type = charm_t.CHARM_PASSIVE,
         chance = {60, 90, 120},
         points = {100, 150, 225}
     },
     [charmRune_t.CHARM_GUT] = {
-        name = tr("Gut"),
-        description = tr("Increases creature product yields by 20%%."),
+        name = tr("otclient_modules.charms.tr_46"),
+        description = tr("otclient_modules.charms.tr_45"),
         category = charmCategory_t.CHARM_MINOR,
         type = charm_t.CHARM_PASSIVE,
         chance = {6, 9, 12},
         points = {100, 150, 225}
     },
     [charmRune_t.CHARM_LOW] = {
-        name = tr("Low Blow"),
-        description = tr("Adds 8%% critical hit chance to attacks with critical hit weapons."),
+        name = tr("otclient_modules.charms.tr_44"),
+        description = tr("otclient_modules.charms.tr_43"),
         category = charmCategory_t.CHARM_MAJOR,
         type = charm_t.CHARM_PASSIVE,
         chance = {4, 8, 9},
         points = {800, 1200, 4000}
     },
     [charmRune_t.CHARM_DIVINE] = {
-        name = tr("Divine Wrath"),
-        description = tr("Triggers on a creature and deals 5%% of its initial HP as holy damage."),
+        name = tr("otclient_modules.charms.tr_42"),
+        description = tr("otclient_modules.charms.tr_41"),
         category = charmCategory_t.CHARM_MAJOR,
         type = charm_t.CHARM_OFFENSIVE,
         percent = 5,
@@ -193,32 +193,32 @@ local charms = {
         points = {600, 900, 3000}
     },
     [charmRune_t.CHARM_VAMP] = {
-        name = tr("Vampiric Embrace"),
-        description = tr("Adds 4%% life leech to attacks if using life-leeching equipment."),
+        name = tr("otclient_modules.charms.tr_40"),
+        description = tr("otclient_modules.charms.tr_39"),
         category = charmCategory_t.CHARM_MINOR,
         type = charm_t.CHARM_PASSIVE,
         chance = {1.6, 2.4, 3.2},
         points = {100, 150, 225}
     },
     [charmRune_t.CHARM_VOID] = {
-        name = tr("Void's Call"),
-        description = tr("Adds 2%% mana leech to attacks if using mana-leeching equipment."),
+        name = tr("otclient_modules.charms.tr_38"),
+        description = tr("otclient_modules.charms.tr_37"),
         category = charmCategory_t.CHARM_MINOR,
         type = charm_t.CHARM_PASSIVE,
         chance = {0.8, 1.2, 1.6},
         points = {100, 150, 225}
     },
     [charmRune_t.CHARM_SAVAGE] = {
-        name = tr("Savage Blow"),
-        description = tr("Adds extra critical damage to attacks with critical hit weapons."),
+        name = tr("otclient_modules.charms.tr_36"),
+        description = tr("otclient_modules.charms.tr_35"),
         category = charmCategory_t.CHARM_MAJOR,
         type = charm_t.CHARM_PASSIVE,
         chance = {20, 40, 44},
         points = {800, 1200, 4000}
     },
     [charmRune_t.CHARM_FATAL] = {
-        name = tr("Fatal Hold"),
-        description = tr("Prevents creatures from fleeing due to low health for 30 seconds."),
+        name = tr("otclient_modules.charms.tr_34"),
+        description = tr("otclient_modules.charms.tr_33"),
         category = charmCategory_t.CHARM_MINOR,
         type = charm_t.CHARM_PASSIVE,
         chance = {30, 45, 60},
@@ -226,16 +226,16 @@ local charms = {
         points = {100, 150, 225}
     },
     [charmRune_t.CHARM_VOIDINVERSION] = {
-        name = tr("Void Inversion"),
-        description = tr("Chance to gain mana instead of losing it when taking Mana Drain damage."),
+        name = tr("otclient_modules.charms.tr_32"),
+        description = tr("otclient_modules.charms.tr_31"),
         category = charmCategory_t.CHARM_MINOR,
         type = charm_t.CHARM_PASSIVE,
         chance = {20, 30, 40},
         points = {100, 150, 225}
     },
     [charmRune_t.CHARM_CARNAGE] = {
-        name = tr("Carnage"),
-        description = tr("Killing a monster deals physical damage to others nearby."),
+        name = tr("otclient_modules.charms.tr_30"),
+        description = tr("otclient_modules.charms.tr_29"),
         category = charmCategory_t.CHARM_MAJOR,
         type = charm_t.CHARM_OFFENSIVE,
         percent = 15,
@@ -243,8 +243,8 @@ local charms = {
         points = {600, 900, 3000}
     },
     [charmRune_t.CHARM_OVERPOWER] = {
-        name = tr("Overpower"),
-        description = tr("Deals physical damage based on your maximum health."),
+        name = tr("otclient_modules.charms.tr_28"),
+        description = tr("otclient_modules.charms.tr_27"),
         category = charmCategory_t.CHARM_MAJOR,
         type = charm_t.CHARM_OFFENSIVE,
         percent = 5,
@@ -252,8 +252,8 @@ local charms = {
         points = {600, 900, 3000}
     },
     [charmRune_t.CHARM_OVERFLUX] = {
-        name = tr("Overflux"),
-        description = tr("Deals physical damage based on your maximum mana."),
+        name = tr("otclient_modules.charms.tr_26"),
+        description = tr("otclient_modules.charms.tr_25"),
         category = charmCategory_t.CHARM_MAJOR,
         type = charm_t.CHARM_OFFENSIVE,
         percent = 2.5,
@@ -554,7 +554,7 @@ end
 -- @param UI_BASE Table of UI element handles used by the function. Expected keys: `UnlockButton`, `CreatureList`, `SearchEdit`, optional `SearchLabel`, and `CreaturesLabel`.
 local function setupCreatureList(widget, UI_BASE)
     if (widget.data.unlocked and not widget.data.asignedStatus) or isModernUI then
-        UI_BASE.UnlockButton:setText(tr("Select"))
+        UI_BASE.UnlockButton:setText(tr("otclient_modules.charms.tr_24"))
 
         local color = "#484848"
         for index, raceId in ipairs(Cyclopedia.Charms.Monsters) do
@@ -602,7 +602,7 @@ local function setupModernVersionUpgrade(widget, UI_BASE)
         end
         UI_BASE.UnlockButton:getParent().data = widget.data
     else
-        UI_BASE.UnlockButton:setText(tr("Fully Unlocked"))
+        UI_BASE.UnlockButton:setText(tr("otclient_modules.charms.tr_23"))
         UI.InformationBase.verticalPanelUnLockClearChram.PriceBaseCharm.Value:setText(comma_value(0))
     end
 end
@@ -665,7 +665,7 @@ function Cyclopedia.selectCharm(widget, isChecked)
     setupCreatureList(widget, UI_BASE)
 
     if widget.data.asignedStatus then
-        UI_BASE.UnlockButton:setText(tr("Remove"))
+        UI_BASE.UnlockButton:setText(tr("otclient_modules.charms.tr_22"))
         local creatureWidget = g_ui.createWidget("CharmCreatureName", UI_BASE.CreatureList)
         creatureWidget:setText(formatCreatureName(g_things.getRaceData(widget.data.raceId).name))
         creatureWidget:setEnabled(false)
@@ -679,7 +679,7 @@ function Cyclopedia.selectCharm(widget, isChecked)
     end
 
     if not widget.data.unlocked then
-        UI_BASE.UnlockButton:setText(tr("Unlock"))
+        UI_BASE.UnlockButton:setText(tr("otclient_modules.charms.tr_21"))
         UI_BASE.SearchEdit:setEnabled(false)
         if UI_BASE.SearchLabel then
             UI_BASE.SearchLabel:setEnabled(false)
@@ -808,15 +808,14 @@ function Cyclopedia.actionCharmButton(widget)
         end
 
         if not confirmWindow then
-            confirmWindow = displayGeneralBox(tr("Confirm Unlocking of Charm"), tr(
-                "Do you want to unlock the Charm %s? This will cost you %d Charm Points?", data.name, data.unlockPrice),
+            confirmWindow = displayGeneralBox(tr("otclient_modules.charms.tr_20"), tr("otclient_modules.charms.tr_19", data.name, data.unlockPrice),
                 {
                     {
-                        text = tr("Yes"),
+                        text = tr("otclient_modules.charms.tr_18"),
                         callback = yesCallback
                     },
                     {
-                        text = tr("No"),
+                        text = tr("otclient_modules.charms.tr_17"),
                         callback = noCallback
                     },
                     anchor = AnchorHorizontalCenter
@@ -845,14 +844,14 @@ function Cyclopedia.actionCharmButton(widget)
         end
 
         if not confirmWindow then
-            confirmWindow = displayGeneralBox(tr("Confirm Selected Charm"),
-                tr("Do you want to use the Charm %s for this creature?", data.name), {
+            confirmWindow = displayGeneralBox(tr("otclient_modules.charms.tr_16"),
+                tr("otclient_modules.charms.tr_15", data.name), {
                     {
-                        text = tr("Yes"),
+                        text = tr("otclient_modules.charms.tr_14"),
                         callback = yesCallback
                     },
                     {
-                        text = tr("No"),
+                        text = tr("otclient_modules.charms.tr_13"),
                         callback = noCallback
                     },
                     anchor = AnchorHorizontalCenter
@@ -879,15 +878,14 @@ function Cyclopedia.actionCharmButton(widget)
         end
 
         if not confirmWindow then
-            confirmWindow = displayGeneralBox(tr("Confirm Charm Removal"),
-                tr("Do you want to remove the Charm %s from this creature? This will cost you %s gold pieces.",
-                    data.name, comma_value(data.removeRuneCost)), {
+            confirmWindow = displayGeneralBox(tr("otclient_modules.charms.tr_12"),
+                tr("otclient_modules.charms.tr_11", data.name, comma_value(data.removeRuneCost)), {
                     {
-                        text = tr("Yes"),
+                        text = tr("otclient_modules.charms.tr_10"),
                         callback = yesCallback
                     },
                     {
-                        text = tr("No"),
+                        text = tr("otclient_modules.charms.tr_9"),
                         callback = noCallback
                     },
                     anchor = AnchorHorizontalCenter
@@ -912,15 +910,14 @@ function Cyclopedia.actionCharmButton(widget)
         end
 
         if not confirmWindow then
-            confirmWindow = displayGeneralBox(tr("Confirm Unlocking of Charm"), tr(
-                "Do you want to upgrade the Charm %s? This will cost you %d Charm Points?", data.name, data.unlockPrice),
+            confirmWindow = displayGeneralBox(tr("otclient_modules.charms.tr_8"), tr("otclient_modules.charms.tr_7", data.name, data.unlockPrice),
                 {
                     {
-                        text = tr("Yes"),
+                        text = tr("otclient_modules.charms.tr_6"),
                         callback = yesCallback
                     },
                     {
-                        text = tr("No"),
+                        text = tr("otclient_modules.charms.tr_5"),
                         callback = noCallback
                     },
                     anchor = AnchorHorizontalCenter
@@ -977,14 +974,14 @@ function Cyclopedia.actionSelectCharmButton(widget)
         end
 
         if not confirmWindow then
-            confirmWindow = displayGeneralBox(tr("Confirm Selected Charm"),
-                tr("Do you want to use the Charm %s for this creature?", data.name), {
+            confirmWindow = displayGeneralBox(tr("otclient_modules.charms.tr_4"),
+                tr("otclient_modules.charms.tr_3", data.name), {
                     {
-                        text = tr("Yes"),
+                        text = tr("otclient_modules.charms.tr_2"),
                         callback = yesCallback
                     },
                     {
-                        text = tr("No"),
+                        text = tr("otclient_modules.charms.tr_1"),
                         callback = noCallback
                     },
                     anchor = AnchorHorizontalCenter

@@ -765,7 +765,7 @@ function defaultXPBoostCallback(player, offer)
     end
 
     player:setStorageValue(boostStorage, newBoostEnd)
-    player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, "Your one hour XP boost has started! You will gain 50% extra experience while hunting.")
+    player:sendLocalizedTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, "otclient_modules.game_shop.msg_1")
 	return false
 end
 

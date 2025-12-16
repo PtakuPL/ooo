@@ -122,7 +122,7 @@ function init()
     end
     panelsRadioGroup:selectWidget(panelsList[1].checkbox)
 
-    logoutButton = modules.client_topmenu.addTopRightToggleButton('logoutButton', tr('Exit'), '/images/topbuttons/logout',
+    logoutButton = modules.client_topmenu.addTopRightToggleButton('logoutButton', tr("otclient_modules.gameinterface.tr_54"), '/images/topbuttons/logout',
         tryLogout, true)
 
     showTopMenuButton = gameMapPanel:getChildById('showTopMenuButton')
@@ -253,7 +253,7 @@ function show()
     gameMapPanel:followCreature(g_game.getLocalPlayer())
 
     updateStretchShrink()
-    logoutButton:setTooltip(tr('Logout'))
+    logoutButton:setTooltip(tr("otclient_modules.gameinterface.tr_53"))
 
     setupViewMode(0)
     if g_platform.isMobile() then
@@ -282,7 +282,7 @@ function hide()
     disconnect(g_app, {
         onClose = tryExit
     })
-    logoutButton:setTooltip(tr('Exit'))
+    logoutButton:setTooltip(tr("otclient_modules.gameinterface.tr_52"))
 
     if logoutWindow then
         logoutWindow:destroy()
@@ -316,7 +316,7 @@ function load()
 end
 
 function onLoginAdvice(message)
-    displayInfoBox(tr('For Your Information'), message)
+    displayInfoBox(tr("otclient_modules.gameinterface.tr_51"), message)
 end
 
 function forceExit()
@@ -344,19 +344,18 @@ function tryExit()
         exitWindow = nil
     end
 
-    exitWindow = displayGeneralBox(tr('Exit'), tr(
-            'If you shut down the program, your character might stay in the game.\nClick on \'Logout\' to ensure that you character leaves the game properly.\nClick on \'Exit\' if you want to exit the program without logging out your character.'),
+    exitWindow = displayGeneralBox(tr("otclient_modules.gameinterface.tr_50"), tr("otclient_modules.gameinterface.tr_49"),
         {
             {
-                text = tr('Cancel'),
+                text = tr("otclient_modules.gameinterface.tr_48"),
                 callback = cancelFunc
             },
             {
-                text = tr('Logout'),
+                text = tr("otclient_modules.gameinterface.tr_47"),
                 callback = logoutFunc
             },
             {
-                text = tr('Force Exit'),
+                text = tr("otclient_modules.gameinterface.tr_46"),
                 callback = exitFunc
             },
             anchor = AnchorHorizontalCenter
@@ -408,13 +407,13 @@ function tryLogout(prompt)
     end
 
     if prompt then
-        logoutWindow = displayGeneralBox(tr('Logout'), tr(msg), {
+        logoutWindow = displayGeneralBox(tr("otclient_modules.gameinterface.tr_45"), tr(msg), {
             {
-                text = tr('No'),
+                text = tr("otclient_modules.gameinterface.tr_44"),
                 callback = noCallback
             },
             {
-                text = tr('Yes'),
+                text = tr("otclient_modules.gameinterface.tr_43"),
                 callback = yesCallback
             },
             anchor = AnchorHorizontalCenter
@@ -573,7 +572,7 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
         shortcut = nil
     end
     if lookThing then
-        menu:addOption(tr('Look'), function()
+        menu:addOption(tr("otclient_modules.gameinterface.tr_42"), function()
             g_game.look(lookThing)
         end, shortcut)
     end
@@ -586,31 +585,31 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
     if useThing then
         if useThing:isContainer() then
             if useThing:getParentContainer() then
-                menu:addOption(tr('Open'), function()
+                menu:addOption(tr("otclient_modules.gameinterface.tr_41"), function()
                     g_game.open(useThing, useThing:getParentContainer())
                 end, shortcut)
-                menu:addOption(tr('Open in new window'), function()
+                menu:addOption(tr("otclient_modules.gameinterface.tr_40"), function()
                     g_game.open(useThing)
                 end)
             else
-                menu:addOption(tr('Open'), function()
+                menu:addOption(tr("otclient_modules.gameinterface.tr_39"), function()
                     g_game.open(useThing)
                 end, shortcut)
             end
         else
             if useThing:isMultiUse() then
-                menu:addOption(tr('Use with ...'), function()
+                menu:addOption(tr("otclient_modules.gameinterface.tr_38"), function()
                     startUseWith(useThing)
                 end, shortcut)
             else
-                menu:addOption(tr('Use'), function()
+                menu:addOption(tr("otclient_modules.gameinterface.tr_37"), function()
                     g_game.use(useThing)
                 end, shortcut)
             end
         end
 
         if useThing:isRotateable() then
-            menu:addOption(tr('Rotate'), function()
+            menu:addOption(tr("otclient_modules.gameinterface.tr_36"), function()
                 g_game.rotate(useThing)
             end)
         end
@@ -619,19 +618,19 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
             g_game.wrap(useThing)
         end
         if useThing:isWrapable() then
-            menu:addOption(tr('Wrap'), onWrapItem)
+            menu:addOption(tr("otclient_modules.gameinterface.tr_35"), onWrapItem)
         end
         if useThing:isUnwrapable() then
-            menu:addOption(tr('Unwrap'), onWrapItem)
+            menu:addOption(tr("otclient_modules.gameinterface.tr_34"), onWrapItem)
         end
 
         if g_game.getFeature(GameBrowseField) and useThing:getPosition().x ~= 0xffff then
-            menu:addOption(tr('Browse Field'), function()
+            menu:addOption(tr("otclient_modules.gameinterface.tr_33"), function()
                 g_game.browseField(useThing:getPosition())
             end)
         end
         if useThing:isLyingCorpse() and g_game.getFeature(GameThingQuickLoot) and modules.game_quickloot and useThing:getPosition().x ~= 0xffff then
-            menu.addOption(menu, tr("Loot corpse"), function()
+            menu.addOption(menu, tr("otclient_modules.gameinterface.tr_32"), function()
                 g_game.sendQuickLoot(1, useThing)
             end)
         end
@@ -639,7 +638,7 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
 
     if lookThing and not lookThing:isCreature() and not lookThing:isNotMoveable() and lookThing:isPickupable() then
         menu:addSeparator()
-        menu:addOption(tr('Trade with ...'), function()
+        menu:addOption(tr("otclient_modules.gameinterface.tr_31"), function()
             startTradeWith(lookThing)
         end)
     end
@@ -647,7 +646,7 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
     if lookThing then
         local parentContainer = lookThing:getParentContainer()
         if parentContainer and parentContainer:hasParent() then
-            menu:addOption(tr('Move up'), function()
+            menu:addOption(tr("otclient_modules.gameinterface.tr_30"), function()
                 g_game.moveToParentContainer(lookThing, lookThing:getCount())
             end)
         end
@@ -663,18 +662,18 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
             end)
 
             if g_game.getFeature(GamePrey) then
-                menu:addOption(tr('Prey Dialog'), function()
+                menu:addOption(tr("otclient_modules.gameinterface.tr_29"), function()
                     modules.game_prey.show()
                 end)
             end
 
             if g_game.getFeature(GamePlayerMounts) then
                 if not localPlayer:isMounted() then
-                    menu:addOption(tr('Mount'), function()
+                    menu:addOption(tr("otclient_modules.gameinterface.tr_28"), function()
                         localPlayer:mount()
                     end)
                 else
-                    menu:addOption(tr('Dismount'), function()
+                    menu:addOption(tr("otclient_modules.gameinterface.tr_27"), function()
                         localPlayer:dismount()
                     end)
                 end
@@ -683,16 +682,16 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
             if creatureThing:isPartyMember() then
                 if creatureThing:isPartyLeader() then
                     if creatureThing:isPartySharedExperienceActive() then
-                        menu:addOption(tr('Disable Shared Experience'), function()
+                        menu:addOption(tr("otclient_modules.gameinterface.tr_26"), function()
                             g_game.partyShareExperience(false)
                         end)
                     else
-                        menu:addOption(tr('Enable Shared Experience'), function()
+                        menu:addOption(tr("otclient_modules.gameinterface.tr_25"), function()
                             g_game.partyShareExperience(true)
                         end)
                     end
                 end
-                menu:addOption(tr('Leave Party'), function()
+                menu:addOption(tr("otclient_modules.gameinterface.tr_24"), function()
                     g_game.partyLeave()
                 end)
             end
@@ -705,21 +704,21 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
             end
             if creatureThing:getPosition().z == localPosition.z then
                 if g_game.getAttackingCreature() ~= creatureThing then
-                    menu:addOption(tr('Attack'), function()
+                    menu:addOption(tr("otclient_modules.gameinterface.tr_23"), function()
                         g_game.attack(creatureThing)
                     end, shortcut)
                 else
-                    menu:addOption(tr('Stop Attack'), function()
+                    menu:addOption(tr("otclient_modules.gameinterface.tr_22"), function()
                         g_game.cancelAttack()
                     end, shortcut)
                 end
 
                 if g_game.getFollowingCreature() ~= creatureThing then
-                    menu:addOption(tr('Follow'), function()
+                    menu:addOption(tr("otclient_modules.gameinterface.tr_21"), function()
                         g_game.follow(creatureThing)
                     end)
                 else
-                    menu:addOption(tr('Stop Follow'), function()
+                    menu:addOption(tr("otclient_modules.gameinterface.tr_20"), function()
                         g_game.cancelFollow()
                     end)
                 end
@@ -728,29 +727,29 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
             if creatureThing:isPlayer() then
                 menu:addSeparator()
                 local creatureName = creatureThing:getName()
-                menu:addOption(tr('Message to %s', creatureName), function()
+                menu:addOption(tr("otclient_modules.gameinterface.tr_19", creatureName), function()
                     g_game.openPrivateChannel(creatureName)
                 end)
                 if modules.game_console.getOwnPrivateTab() then
-                    menu:addOption(tr('Invite to private chat'), function()
+                    menu:addOption(tr("otclient_modules.gameinterface.tr_18"), function()
                         g_game.inviteToOwnChannel(creatureName)
                     end)
-                    menu:addOption(tr('Exclude from private chat'), function()
+                    menu:addOption(tr("otclient_modules.gameinterface.tr_17"), function()
                         g_game.excludeFromOwnChannel(creatureName)
                     end) -- [TODO] must be removed after message's popup labels been implemented
                 end
                 if not localPlayer:hasVip(creatureName) then
-                    menu:addOption(tr('Add to VIP list'), function()
+                    menu:addOption(tr("otclient_modules.gameinterface.tr_16"), function()
                         g_game.addVip(creatureName)
                     end)
                 end
 
                 if modules.game_console.isIgnored(creatureName) then
-                    menu:addOption(tr('Unignore') .. ' ' .. creatureName, function()
+                    menu:addOption(tr("otclient_modules.gameinterface.tr_15") .. ' ' .. creatureName, function()
                         modules.game_console.removeIgnoredPlayer(creatureName)
                     end)
                 else
-                    menu:addOption(tr('Ignore') .. ' ' .. creatureName, function()
+                    menu:addOption(tr("otclient_modules.gameinterface.tr_14") .. ' ' .. creatureName, function()
                         modules.game_console.addIgnoredPlayer(creatureName)
                     end)
                 end
@@ -760,33 +759,33 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
 
                 if localPlayerShield == ShieldNone or localPlayerShield == ShieldWhiteBlue then
                     if creatureShield == ShieldWhiteYellow then
-                        menu:addOption(tr('Join %s\'s Party', creatureThing:getName()), function()
+                        menu:addOption(tr("otclient_modules.gameinterface.tr_13", creatureThing:getName()), function()
                             g_game.partyJoin(creatureThing:getId())
                         end)
                     else
-                        menu:addOption(tr('Invite to Party'), function()
+                        menu:addOption(tr("otclient_modules.gameinterface.tr_12"), function()
                             g_game.partyInvite(creatureThing:getId())
                         end)
                     end
                 elseif localPlayerShield == ShieldWhiteYellow then
                     if creatureShield == ShieldWhiteBlue then
-                        menu:addOption(tr('Revoke %s\'s Invitation', creatureThing:getName()), function()
+                        menu:addOption(tr("otclient_modules.gameinterface.tr_11", creatureThing:getName()), function()
                             g_game.partyRevokeInvitation(creatureThing:getId())
                         end)
                     end
                 elseif localPlayerShield == ShieldYellow or localPlayerShield == ShieldYellowSharedExp or
                     localPlayerShield == ShieldYellowNoSharedExpBlink or localPlayerShield == ShieldYellowNoSharedExp then
                     if creatureShield == ShieldWhiteBlue then
-                        menu:addOption(tr('Revoke %s\'s Invitation', creatureThing:getName()), function()
+                        menu:addOption(tr("otclient_modules.gameinterface.tr_10", creatureThing:getName()), function()
                             g_game.partyRevokeInvitation(creatureThing:getId())
                         end)
                     elseif creatureShield == ShieldBlue or creatureShield == ShieldBlueSharedExp or creatureShield ==
                         ShieldBlueNoSharedExpBlink or creatureShield == ShieldBlueNoSharedExp then
-                        menu:addOption(tr('Pass Leadership to %s', creatureThing:getName()), function()
+                        menu:addOption(tr("otclient_modules.gameinterface.tr_9", creatureThing:getName()), function()
                             g_game.partyPassLeadership(creatureThing:getId())
                         end)
                     else
-                        menu:addOption(tr('Invite to Party'), function()
+                        menu:addOption(tr("otclient_modules.gameinterface.tr_8"), function()
                             g_game.partyInvite(creatureThing:getId())
                         end)
                     end
@@ -796,13 +795,13 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
 
         if modules.game_ruleviolation.hasWindowAccess() and creatureThing:isPlayer() then
             menu:addSeparator()
-            menu:addOption(tr('Rule Violation'), function()
+            menu:addOption(tr("otclient_modules.gameinterface.tr_7"), function()
                 modules.game_ruleviolation.show(creatureThing:getName())
             end)
         end
 
         menu:addSeparator()
-        menu:addOption(tr('Copy Name'), function()
+        menu:addOption(tr("otclient_modules.gameinterface.tr_6"), function()
             g_window.setClipboardText(creatureThing:getName())
         end)
     end
@@ -824,7 +823,7 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
     if modules.game_bot and useThing and useThing:isItem() then
         menu:addSeparator()
         local useThingId = useThing:getId()
-        menu:addOption(tr("ID:") .. " " .. useThingId, function() g_window.setClipboardText(useThingId) end)
+        menu:addOption(tr("otclient_modules.gameinterface.tr_5") .. " " .. useThingId, function() g_window.setClipboardText(useThingId) end)
     end
 
     if g_game.getFeature(GameThingQuickLoot) and modules.game_quickloot and lookThing and not lookThing:isCreature() and lookThing:isPickupable() then
@@ -832,13 +831,13 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
         menu.addSeparator(menu)
 
         if lookThing:isContainer() then
-            menu.addOption(menu, tr("Manage Loot Containers"), function()
+            menu.addOption(menu, tr("otclient_modules.gameinterface.tr_4"), function()
                 quickLoot.toggle()
             end)
         end
 
         local lootExists = quickLoot.lootExists(lookThing:getId())
-        local optionText = lootExists and tr("Remove from loot list") or tr("Add to loot list")
+        local optionText = lootExists and tr("otclient_modules.gameinterface.tr_3") or tr("otclient_modules.gameinterface.tr_2")
         local actionFunction = lootExists and quickLoot.removeLootList or quickLoot.addLootList
 
         menu.addOption(menu, optionText, function()
@@ -1373,7 +1372,7 @@ function setupOptionsMainButton()
         return
     end
 
-    logOutMainButton = modules.game_mainpanel.addSpecialToggleButton('logoutButton', tr('Exit'),
+    logOutMainButton = modules.game_mainpanel.addSpecialToggleButton('logoutButton', tr("otclient_modules.gameinterface.tr_1"),
         '/images/options/button_logout',
         tryLogout)
 end

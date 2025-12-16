@@ -153,7 +153,7 @@ function displayMessage(mode, text)
         (msgtype.consoleOption == nil or modules.client_options.getOption(msgtype.consoleOption)) then
         if msgtype == MessageSettings.loot then
             local lootColoredText = ItemsDatabase.setColorLootMessage(text)
-            modules.game_console.addText(lootColoredText, msgtype, tr("Server Log"))
+            modules.game_console.addText(lootColoredText, msgtype, tr("otclient_modules.textmessage.tr_2"))
             modules.game_console.addText(lootColoredText, msgtype, tr(msgtype.consoleTab))
         else
             modules.game_console.addText(text, msgtype, tr(msgtype.consoleTab))
@@ -210,5 +210,5 @@ function clearMessages()
 end
 
 function LocalPlayer:onAutoWalkFail(player)
-    modules.game_textmessage.displayFailureMessage(tr('There is no way.'))
+    modules.game_textmessage.displayFailureMessage(tr("otclient_modules.textmessage.tr_1"))
 end

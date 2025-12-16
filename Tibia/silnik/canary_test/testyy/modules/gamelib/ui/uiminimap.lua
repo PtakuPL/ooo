@@ -101,7 +101,7 @@ local function onFlagMouseRelease(widget, pos, button)
     if button == MouseLeftButton then
         local player = g_game.getLocalPlayer()
         if Position.distance(player:getPosition(), widget.pos) > 250 then
-            modules.game_textmessage.displayStatusMessage(tr('Destination is out of range.'))
+            modules.game_textmessage.displayStatusMessage(tr("otclient_modules.uiminimap.tr_4"))
             return false
         end
 
@@ -113,7 +113,7 @@ local function onFlagMouseRelease(widget, pos, button)
     elseif button == MouseRightButton then
         local menu = g_ui.createWidget('PopupMenu')
         menu:setGameMenu(true)
-        menu:addOption(tr('Delete mark'), function()
+        menu:addOption(tr("otclient_modules.uiminimap.tr_3"), function()
             widget:destroy()
         end)
         menu:display(pos)
@@ -286,7 +286,7 @@ function UIMinimap:onMouseRelease(pos, button)
             return g_game.sendGmTeleport(mapPos)
         end
         if Position.distance(player:getPosition(), mapPos) > 250 then
-            modules.game_textmessage.displayStatusMessage(tr('Destination is out of range.'))
+            modules.game_textmessage.displayStatusMessage(tr("otclient_modules.uiminimap.tr_2"))
             return false
         end
 
@@ -297,7 +297,7 @@ function UIMinimap:onMouseRelease(pos, button)
     elseif button == MouseRightButton then
         local menu = g_ui.createWidget('PopupMenu')
         menu:setGameMenu(true)
-        menu:addOption(tr('Create mark'), function()
+        menu:addOption(tr("otclient_modules.uiminimap.tr_1"), function()
             self:createFlagWindow(mapPos)
         end)
         menu:display(pos)

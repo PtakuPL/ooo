@@ -613,14 +613,14 @@ local function initializeWorldsList(worlds)
         end
     })
     UIComboBox.world:clearOptions()
-    UIComboBox.world:addOption(tr("All"))
+    UIComboBox.world:addOption(tr("otclient_modules.createaccount.tr_2"))
     for region in pairs(regions) do
         if region ~= "All" then
             UIComboBox.world:addOption(region)
         end
     end
     UIComboBox.pvp:clearOptions()
-    UIComboBox.pvp:addOption(tr("All"))
+    UIComboBox.pvp:addOption(tr("otclient_modules.createaccount.tr_1"))
     for pvpType in pairs(pvpTypes) do
         if pvpType ~= "All" then
             UIComboBox.pvp:addOption(pvpType)

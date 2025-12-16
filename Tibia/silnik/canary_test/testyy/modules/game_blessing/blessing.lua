@@ -18,7 +18,7 @@ function BlessingController:onGameStart()
         onUpdateBlessDialog = onUpdateBlessDialog
     })
     BlessingController.ui:hide()
-    BlessingController.ui.minipanel1:setText(tr("Record of Blessings")) -- Temp fix html/css system
+    BlessingController.ui.minipanel1:setText(tr("otclient_modules.blessing.tr_16")) -- Temp fix html/css system
 end
 
 -- Hides the blessing UI if it is currently visible.
@@ -48,7 +48,7 @@ function setHistory()
     ui.promotionStatus2:hide()
     ui.promotionStatus:hide()
     ui.blessingHistory:show()
-    ui.historyButton:setText(tr("Back"))
+    ui.historyButton:setText(tr("otclient_modules.blessing.tr_15"))
 end
 
 -- Switches the UI to the blessing view.
@@ -60,7 +60,7 @@ function setBlessing()
     ui.promotionStatus2:show()
     ui.promotionStatus:show()
     ui.blessingHistory:hide()
-    ui.historyButton:setText(tr("History"))
+    ui.historyButton:setText(tr("otclient_modules.blessing.tr_14"))
 end
 
 -- Toggle the blessing UI between shown and hidden states.
@@ -120,32 +120,32 @@ function onUpdateBlessDialog(data)
     if (data.promotion ~= 0) then
         BlessingController.ui.promotionStatus2.premium_only:setOn(true)
         BlessingController.ui.promotionStatus2.rank:setColoredText(
-            tr("Your character is promoted and your account has Premium\nstatus. As a result, your XP loss is reduced by") .. " {30%, #f75f5f}.")
+            tr("otclient_modules.blessing.tr_13") .. " {30%, #f75f5f}.")
     else
         BlessingController.ui.promotionStatus2.rank:setColoredText(
-            tr("Your character is promoted and your account has Premium\nstatus. As a result, your XP loss is reduced by") .. " {0%, #f75f5f}.")
+            tr("otclient_modules.blessing.tr_12") .. " {0%, #f75f5f}.")
             BlessingController.ui.promotionStatus2.premium_only:setOn(false)
     end
 
     BlessingController.ui.promotionStatus.fightRules:setColoredText(
-        tr("- Depending on the fair fight rules, you will lose between") .. " {" .. data.pvpMinXpLoss .. ", #f75f5f} " .. tr("and") .. " {" ..
-            data.pvpMaxXpLoss .. "%, #f75f5f} " .. tr("less XP and skill points \nupon your next PvP death."))
+        tr("otclient_modules.blessing.tr_11") .. " {" .. data.pvpMinXpLoss .. ", #f75f5f} " .. tr("otclient_modules.blessing.tr_10") .. " {" ..
+            data.pvpMaxXpLoss .. "%, #f75f5f} " .. tr("otclient_modules.blessing.tr_9"))
 
     BlessingController.ui.promotionStatus.expLoss:setColoredText(
-        tr("- You will lose") .. " {" .. data.pveExpLoss .. "%, #f75f5f}% " .. tr("less XP and skill points upon your next PvE death."))
+        tr("otclient_modules.blessing.tr_8") .. " {" .. data.pveExpLoss .. "%, #f75f5f}% " .. tr("otclient_modules.blessing.tr_7"))
 
     BlessingController.ui.promotionStatus.containerLoss:setColoredText(
-        tr("- There is a") .. " {" .. data.equipPvpLoss ..
-            "%, #f75f5f} " .. tr("chance that you will lose your equipped container on your next death."))
+        tr("otclient_modules.blessing.tr_6") .. " {" .. data.equipPvpLoss ..
+            "%, #f75f5f} " .. tr("otclient_modules.blessing.tr_5"))
 
     BlessingController.ui.promotionStatus.equipmentLoss:setColoredText(
-        tr("- There is a") .. " {" .. data.equipPveLoss .. "%, #f75f5f} " .. tr("chance that you will lose items upon your next death."))
+        tr("otclient_modules.blessing.tr_4") .. " {" .. data.equipPveLoss .. "%, #f75f5f} " .. tr("otclient_modules.blessing.tr_3"))
 
     BlessingController.ui.blessingHistory:getChildByIndex(1):destroyChildren()
     local row2 = g_ui.createWidget("historyData", BlessingController.ui.blessingHistory:getChildByIndex(1))
     row2:setBackgroundColor("#363636")
-    row2.rank:setText(tr("Date"))
-    row2.name:setText(tr("Event"))
+    row2.rank:setText(tr("otclient_modules.blessing.tr_2"))
+    row2.name:setText(tr("otclient_modules.blessing.tr_1"))
     row2.rank:setColor("#c0c0c0")
     row2.name:setColor("#c0c0c0")
     row2:setBorderColor("#00000077")

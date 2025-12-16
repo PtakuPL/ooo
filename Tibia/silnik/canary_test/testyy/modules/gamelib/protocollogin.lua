@@ -17,7 +17,7 @@ LoginServerErrorNew = 11
 
 function ProtocolLogin:login(host, port, accountName, accountPassword, authenticatorToken, stayLogged)
     if string.len(host) == 0 or port == nil or port == 0 then
-        signalcall(self.onLoginError, self, tr('You must enter a valid server address and port.'))
+        signalcall(self.onLoginError, self, tr("otclient_modules.protocollogin.tr_3"))
         return
     end
 
@@ -163,13 +163,13 @@ function ProtocolLogin:onRecv(msg)
         elseif opcode == LoginServerMotd then
             self:parseMotd(msg)
         elseif opcode == LoginServerUpdateNeeded then
-            signalcall(self.onLoginError, self, tr('Client needs update.'))
+            signalcall(self.onLoginError, self, tr("otclient_modules.protocollogin.tr_2"))
         elseif opcode == LoginServerTokenSuccess then
             local unknown = msg:getU8()
         elseif opcode == LoginServerTokenError then
             -- TODO: prompt for token here
             local unknown = msg:getU8()
-            signalcall(self.onLoginError, self, tr('Invalid authentification token.'))
+            signalcall(self.onLoginError, self, tr("otclient_modules.protocollogin.tr_1"))
         elseif opcode == LoginServerCharacterList then
             self:parseCharacterList(msg)
         elseif opcode == LoginServerExtendedCharacterList then

@@ -398,7 +398,7 @@ local function showQuestTracker()
     trackerMiniWindow.menuButton.onClick = function(widget, mousePos)
         local menu = g_ui.createWidget('PopupMenu')
         menu:setGameMenu(true)
-        menu:addOption(tr('Remove All quests'), function()
+        menu:addOption(tr("otclient_modules.game_questlog.tr_7"), function()
             if settings[namePlayer] then
                 table.clear(settings[namePlayer])
                 sendQuestTracker(settings[namePlayer])
@@ -406,14 +406,14 @@ local function showQuestTracker()
                 trackerMiniWindow.contentsPanel.list:getLayout():update()
             end
         end)
-        menu:addOption(tr('Remove completed quests'), function()
+        menu:addOption(tr("otclient_modules.game_questlog.tr_6"), function()
             print("to-do")
         end)
         menu:addSeparator()
-        menu:addCheckBox(tr('Automatically track new quests'), false, function(a, b)
+        menu:addCheckBox(tr("otclient_modules.game_questlog.tr_5"), false, function(a, b)
             print(a, b)
         end):disable()
-        menu:addCheckBox(tr('Automatically untrack completed quests'), false, function(a, b)
+        menu:addCheckBox(tr("otclient_modules.game_questlog.tr_4"), false, function(a, b)
             print(a, b)
         end):disable()
 
@@ -604,7 +604,7 @@ function onQuestLogMousePress(widget, mousePos, mouseButton)
     end
     local menu = g_ui.createWidget('PopupMenu')
     menu:setGameMenu(true)
-    menu:addOption(tr('remove'), function()
+    menu:addOption(tr("otclient_modules.game_questlog.tr_3"), function()
         removeNumber(namePlayer, widget:getParent():getId())
         if settings[namePlayer] then
             sendQuestTracker(settings[namePlayer])
@@ -643,7 +643,7 @@ function questLogController:onInit()
         onUpdateQuestTracker = onUpdateQuestTracker
     })
 
-    questLogButton = modules.game_mainpanel.addToggleButton('questLogButton', tr('Quest Log'),
+    questLogButton = modules.game_mainpanel.addToggleButton('questLogButton', tr("otclient_modules.game_questlog.tr_2"),
         '/images/options/button_questlog', function()
             toggle()
         end, false, 1000)
@@ -671,7 +671,7 @@ function questLogController:onGameStart()
         end
         if not buttonQuestLogTrackerButton then
             buttonQuestLogTrackerButton = modules.game_mainpanel.addToggleButton("QuestLogTracker",
-                tr("Open QuestLog Tracker"), "/images/options/button_questlog_tracker", function()
+                tr("otclient_modules.game_questlog.tr_1"), "/images/options/button_questlog_tracker", function()
                     questLogController:toggleMiniWindowsTracker()
                 end, false, 1001)
         end

@@ -50,22 +50,22 @@ function onGameEditText(id, itemId, maxLength, text, writer, time)
     textEdit:setEditable(writeable)
     textEdit:setCursorVisible(writeable)
 
-    local desc = tr('You read the following')
+    local desc = tr("otclient_modules.textwindow.tr_10")
     if #writer > 0 then
-        desc = desc .. tr(', written by \n%s\n', writer)
+        desc = desc .. tr("otclient_modules.textwindow.tr_9", writer)
         if #time > 0 then
-            desc = desc .. tr('on %s.\n', time)
+            desc = desc .. tr("otclient_modules.textwindow.tr_8", time)
         end
     elseif #time > 0 then
-        desc = desc .. tr(', written on \n%s.\n', time)
+        desc = desc .. tr("otclient_modules.textwindow.tr_7", time)
     else
         desc = desc .. '.\n'
     end
 
     if #text == 0 and not writeable then
-        desc = desc .. tr('It is empty.')
+        desc = desc .. tr("otclient_modules.textwindow.tr_6")
     elseif writeable then
-        desc = desc .. tr('You can enter new text.')
+        desc = desc .. tr("otclient_modules.textwindow.tr_5")
     end
 
     local lines = #{string.find(desc, '\n')}
@@ -76,12 +76,12 @@ function onGameEditText(id, itemId, maxLength, text, writer, time)
     description:setText(desc)
 
     if not writeable then
-        textWindow:setText(tr('Show Text'))
+        textWindow:setText(tr("otclient_modules.textwindow.tr_4"))
         cancelButton:hide()
         cancelButton:setWidth(0)
         okButton:setMarginRight(0)
     else
-        textWindow:setText(tr('Edit Text'))
+        textWindow:setText(tr("otclient_modules.textwindow.tr_3"))
         textEdit:focus()
         textEdit:setCursorPos(#text)
     end
@@ -132,8 +132,8 @@ function onGameEditList(id, doorId, text)
     textEdit:setEditable(true)
     textEdit:focus()
     textEdit:setCursorPos(#text)
-    description:setText(tr('Enter one name per line.'))
-    textWindow:setText(tr('Edit List'))
+    description:setText(tr("otclient_modules.textwindow.tr_2"))
+    textWindow:setText(tr("otclient_modules.textwindow.tr_1"))
 
     if description:getHeight() < 64 then
         description:setHeight(64)

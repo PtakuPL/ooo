@@ -55,18 +55,18 @@ function showHouse()
     Cyclopedia.selectTown({
         data = 0
     })
-    UI.TopBase.StatesOption:setOption(tr("All States"), true)
-    UI.TopBase.CityOption:setOption(tr("Own Houses"), true)
-    UI.TopBase.SortOption:setOption(tr("Sort by name"), true)
+    UI.TopBase.StatesOption:setOption(tr("otclient_modules.house.tr_101"), true)
+    UI.TopBase.CityOption:setOption(tr("otclient_modules.house.tr_100"), true)
+    UI.TopBase.SortOption:setOption(tr("otclient_modules.house.tr_99"), true)
 
     Cyclopedia.House.lastTown = nil
 end
 
 Cyclopedia.House = {}
 Cyclopedia.StateList = {
-    { Title = tr("All States") },
-    { Title = tr("Auctioned") },
-    { Title = tr("Rented") }
+    { Title = tr("otclient_modules.house.tr_98") },
+    { Title = tr("otclient_modules.house.tr_97") },
+    { Title = tr("otclient_modules.house.tr_96") }
 }
 
 Cyclopedia.CityList = {
@@ -92,11 +92,11 @@ Cyclopedia.CityList = {
 }
 
 Cyclopedia.SortList = {
-    { Title = tr("Sort by name") },
-    { Title = tr("Sort by size") },
-    { Title = tr("Sort by rent") },
-    { Title = tr("Sort by bid") },
-    { Title = tr("Sort by auction end") }
+    { Title = tr("otclient_modules.house.tr_95") },
+    { Title = tr("otclient_modules.house.tr_94") },
+    { Title = tr("otclient_modules.house.tr_93") },
+    { Title = tr("otclient_modules.house.tr_92") },
+    { Title = tr("otclient_modules.house.tr_91") }
 }
 
 local function resetButtons()
@@ -172,10 +172,9 @@ function Cyclopedia.houseMessage(houseId, type, message)
     if type == 1 then
         if message == 0 then
             if not confirmWindow then
-                confirmWindow = displayGeneralBox(tr("Summary"), tr(
-                    "Your bid was successfull. You are currently holding the highest bid."), {
+                confirmWindow = displayGeneralBox(tr("otclient_modules.house.tr_90"), tr("otclient_modules.house.tr_89"), {
                     {
-                        text = tr("Ok"),
+                        text = tr("otclient_modules.house.tr_88"),
                         callback = yesCallback
                     },
                     anchor = AnchorHorizontalCenter
@@ -186,11 +185,10 @@ function Cyclopedia.houseMessage(houseId, type, message)
                 Cyclopedia.Toggle(true, false)
             end
         elseif message == 17 then
-            confirmWindow = displayGeneralBox(tr("Summary"), tr(
-                "Bid failed.\nYour character's bank acocunt balance is too low to pay the bid and the rent for the first month."),
+            confirmWindow = displayGeneralBox(tr("otclient_modules.house.tr_87"), tr("otclient_modules.house.tr_86"),
                 {
                     {
-                        text = tr("Ok"),
+                        text = tr("otclient_modules.house.tr_85"),
                         callback = yesCallback
                     },
                     anchor = AnchorHorizontalCenter
@@ -202,9 +200,9 @@ function Cyclopedia.houseMessage(houseId, type, message)
         end
     elseif type == 2 then
         if message == 0 then
-            confirmWindow = displayGeneralBox(tr("Summary"), tr("You have sucessfully iniated your move out."), {
+            confirmWindow = displayGeneralBox(tr("otclient_modules.house.tr_84"), tr("otclient_modules.house.tr_83"), {
                 {
-                    text = tr("Ok"),
+                    text = tr("otclient_modules.house.tr_82"),
                     callback = yesCallback
                 },
                 anchor = AnchorHorizontalCenter
@@ -216,10 +214,10 @@ function Cyclopedia.houseMessage(houseId, type, message)
         end
     elseif type == 3 then
         if message == 0 then
-            confirmWindow = displayGeneralBox(tr("Summary"),
-                tr("You have sucessfully initiated the transfer of your house."), {
+            confirmWindow = displayGeneralBox(tr("otclient_modules.house.tr_81"),
+                tr("otclient_modules.house.tr_80"), {
                     {
-                        text = tr("Ok"),
+                        text = tr("otclient_modules.house.tr_79"),
                         callback = yesCallback
                     },
                     anchor = AnchorHorizontalCenter
@@ -229,10 +227,9 @@ function Cyclopedia.houseMessage(houseId, type, message)
             UI.ListBase:setVisible(true)
             Cyclopedia.Toggle(true, false)
         elseif message == 4 then
-            confirmWindow = displayGeneralBox(tr("Summary"), tr(
-                "Setting up a house transfer failed.\nA character with this name does not exist."), {
+            confirmWindow = displayGeneralBox(tr("otclient_modules.house.tr_78"), tr("otclient_modules.house.tr_77"), {
                 {
-                    text = tr("Ok"),
+                    text = tr("otclient_modules.house.tr_76"),
                     callback = yesCallback
                 },
                 anchor = AnchorHorizontalCenter
@@ -244,10 +241,9 @@ function Cyclopedia.houseMessage(houseId, type, message)
         end
     elseif type == 5 then
         if message == 0 then
-            confirmWindow = displayGeneralBox(tr("Summary"), tr(
-                "You have sucessfully cancelled the transfer. You will keep the house."), {
+            confirmWindow = displayGeneralBox(tr("otclient_modules.house.tr_75"), tr("otclient_modules.house.tr_74"), {
                 {
-                    text = tr("Ok"),
+                    text = tr("otclient_modules.house.tr_73"),
                     callback = yesCallback
                 },
                 anchor = AnchorHorizontalCenter
@@ -259,9 +255,9 @@ function Cyclopedia.houseMessage(houseId, type, message)
         end
     elseif type == 6 then
         if message == 0 then
-            confirmWindow = displayGeneralBox(tr("Summary"), tr("You have sucessfully accepted the transfer."), {
+            confirmWindow = displayGeneralBox(tr("otclient_modules.house.tr_72"), tr("otclient_modules.house.tr_71"), {
                 {
-                    text = tr("Ok"),
+                    text = tr("otclient_modules.house.tr_70"),
                     callback = yesCallback
                 },
                 anchor = AnchorHorizontalCenter
@@ -272,10 +268,9 @@ function Cyclopedia.houseMessage(houseId, type, message)
             Cyclopedia.Toggle(true, false)
         end
     elseif type == 7 and message == 0 then
-        confirmWindow = displayGeneralBox(tr("Summary"), tr(
-            "You jected the house transfer sucessfully. The old owner will keep the house."), {
+        confirmWindow = displayGeneralBox(tr("otclient_modules.house.tr_69"), tr("otclient_modules.house.tr_68"), {
             {
-                text = tr("Ok"),
+                text = tr("otclient_modules.house.tr_67"),
                 callback = yesCallback
             },
             anchor = AnchorHorizontalCenter
@@ -320,8 +315,8 @@ function Cyclopedia.rejectTransfer()
             end
             ]]--
 
-            UI.TopBase.StatesOption:setOption(tr("All States"), true)
-            UI.TopBase.SortOption:setOption(tr("Sort by name"), true)
+            UI.TopBase.StatesOption:setOption(tr("otclient_modules.house.tr_66"), true)
+            UI.TopBase.SortOption:setOption(tr("otclient_modules.house.tr_65"), true)
         end
 
         local function noCallback()
@@ -333,15 +328,13 @@ function Cyclopedia.rejectTransfer()
         end
 
         if not confirmWindow then
-            confirmWindow = displayGeneralBox(tr("Confirm House Action"), tr(
-                "Do you really want to reject the transfer for the house '%s' offered by %s?\nYou will not get the house. %s will keep the house and can set up a new transfer anytime.",
-                house.name, house.owner, house.owner), {
+            confirmWindow = displayGeneralBox(tr("otclient_modules.house.tr_64"), tr("otclient_modules.house.tr_63", house.name, house.owner, house.owner), {
                 {
-                    text = tr("Yes"),
+                    text = tr("otclient_modules.house.tr_62"),
                     callback = yesCallback
                 },
                 {
-                    text = tr("No"),
+                    text = tr("otclient_modules.house.tr_61"),
                     callback = noCallback
                 },
                 anchor = AnchorHorizontalCenter
@@ -388,8 +381,8 @@ function Cyclopedia.acceptTransfer()
             Cyclopedia.House.ignore = true
 
             -- g_game.requestShowHouses("")
-            UI.TopBase.StatesOption:setOption(tr("All States"), true)
-            UI.TopBase.SortOption:setOption(tr("Sort by name"), true)
+            UI.TopBase.StatesOption:setOption(tr("otclient_modules.house.tr_60"), true)
+            UI.TopBase.SortOption:setOption(tr("otclient_modules.house.tr_59"), true)
         end
 
         local function noCallback()
@@ -401,15 +394,13 @@ function Cyclopedia.acceptTransfer()
         end
 
         if not confirmWindow then
-            confirmWindow = displayGeneralBox(tr("Confirm House Action"), tr(
-                "Do you want to accept the house transfer offered by %s for the property '%s'?\nThe transfer is scheduled for %s.\nThe transfer price was set to %s.\n\nMake sure to have enough gold in your bank account to pay the costs for this house transfer and the next rent.\nRemember to edit the door rights as only the guest list will be reset after the transfer!",
-                house.owner, house.name, transferTime, comma_value(house.transferValue)), {
+            confirmWindow = displayGeneralBox(tr("otclient_modules.house.tr_58"), tr("otclient_modules.house.tr_57", house.owner, house.name, transferTime, comma_value(house.transferValue)), {
                 {
-                    text = tr("Yes"),
+                    text = tr("otclient_modules.house.tr_56"),
                     callback = yesCallback
                 },
                 {
-                    text = tr("No"),
+                    text = tr("otclient_modules.house.tr_55"),
                     callback = noCallback
                 },
                 anchor = AnchorHorizontalCenter
@@ -463,8 +454,8 @@ function Cyclopedia.cancelTransfer()
             end
             ]]--
 
-            UI.TopBase.StatesOption:setOption(tr("All States"), true)
-            UI.TopBase.SortOption:setOption(tr("Sort by name"), true)
+            UI.TopBase.StatesOption:setOption(tr("otclient_modules.house.tr_54"), true)
+            UI.TopBase.SortOption:setOption(tr("otclient_modules.house.tr_53"), true)
         end
 
         local function noCallback()
@@ -476,15 +467,14 @@ function Cyclopedia.cancelTransfer()
         end
 
         if not confirmWindow then
-            confirmWindow = displayGeneralBox(tr("Confirm House Action"),
-                tr("Do you really want to keep your house '%s'?\nYou will no longer transfer the house to %s on %s.",
-                    house.name, house.transferName, transferTime), {
+            confirmWindow = displayGeneralBox(tr("otclient_modules.house.tr_52"),
+                tr("otclient_modules.house.tr_51", house.name, house.transferName, transferTime), {
                     {
-                        text = tr("Yes"),
+                        text = tr("otclient_modules.house.tr_50"),
                         callback = yesCallback
                     },
                     {
-                        text = tr("No"),
+                        text = tr("otclient_modules.house.tr_49"),
                         callback = noCallback
                     },
                     anchor = AnchorHorizontalCenter
@@ -574,8 +564,8 @@ function Cyclopedia.transferHouse()
             end
             ]]--
 
-            UI.TopBase.StatesOption:setOption(tr("All States"), true)
-            UI.TopBase.SortOption:setOption(tr("Sort by name"), true)
+            UI.TopBase.StatesOption:setOption(tr("otclient_modules.house.tr_48"), true)
+            UI.TopBase.SortOption:setOption(tr("otclient_modules.house.tr_47"), true)
         end
 
         local function noCallback()
@@ -587,15 +577,13 @@ function Cyclopedia.transferHouse()
         end
 
         if not confirmWindow then
-            confirmWindow = displayGeneralBox(tr("Confirm House Action"), tr(
-                "Do you really want to transfer your house '%s', to %s?\nThe transfer is scheduled for %s.\nYou have set the transfer price to %s.\n\nThe transfer will only take place if %s accepts it!.\n\nPlease take all your personal belongings out of the house before the daily server save on the day you move\nout. Everything that remains in the house becomes the property of the new owner after the transfer. The only\nexception are items which have been purchased in the Store. They will be wrapped back up and sent to your\ninbox.",
-                house.name, transfer, os.date("%Y-%m-%d, %H:%M CET", timestemp), comma_value(value), transfer), {
+            confirmWindow = displayGeneralBox(tr("otclient_modules.house.tr_46"), tr("otclient_modules.house.tr_45", house.name, transfer, os.date("%Y-%m-%d, %H:%M CET", timestemp), comma_value(value), transfer), {
                 {
-                    text = tr("Yes"),
+                    text = tr("otclient_modules.house.tr_44"),
                     callback = yesCallback
                 },
                 {
-                    text = tr("No"),
+                    text = tr("otclient_modules.house.tr_43"),
                     callback = noCallback
                 },
                 anchor = AnchorHorizontalCenter
@@ -717,15 +705,14 @@ function Cyclopedia.moveOutHouse()
         end
 
         if not confirmWindow then
-            confirmWindow = displayGeneralBox(tr("Confirm House Action"),
-                tr("Do you really want to move out of the house '%s'?\nClick on 'Yes' to move out on %s.", house.name,
-                    os.date("%Y-%m-%d, %H:%M CET", timestemp)), {
+            confirmWindow = displayGeneralBox(tr("otclient_modules.house.tr_42"),
+                tr("otclient_modules.house.tr_41", house.name, os.date("%Y-%m-%d, %H:%M CET", timestemp)), {
                     {
-                        text = tr("Yes"),
+                        text = tr("otclient_modules.house.tr_40"),
                         callback = yesCallback
                     },
                     {
-                        text = tr("No"),
+                        text = tr("otclient_modules.house.tr_39"),
                         callback = noCallback
                     },
                     anchor = AnchorHorizontalCenter
@@ -869,7 +856,7 @@ function Cyclopedia.bidHouse(widget)
         if house.bidHolderLimit then
             local label = g_ui.createWidget("Label", UI.bidArea)
             label:setId("yourLimit")
-            label:setText(tr("Your Limit: "))
+            label:setText(tr("otclient_modules.house.tr_38"))
             label:setColor("#909090")
             label:setWidth(90)
             label:setHeight(15)
@@ -904,7 +891,7 @@ function Cyclopedia.bidHouse(widget)
 
         local label = g_ui.createWidget("Label", UI.bidArea)
         label:setId("soFar")
-        label:setText(tr("There is not bid so far."))
+        label:setText(tr("otclient_modules.house.tr_37"))
         label:setColor("#C0C0C0")
         label:addAnchor(AnchorTop, "prev", AnchorBottom)
         label:addAnchor(AnchorLeft, "parent", AnchorLeft)
@@ -943,10 +930,10 @@ function Cyclopedia.bidHouse(widget)
 
     if house.hasBid then
         bidArea.information:setText(string.format(
-            tr("When the auction ends at %s the winning bid plus the rent for the first month (%s) will be debited to your bank account."),
+            tr("otclient_modules.house.tr_36"),
             time, (house.rent)))
     else
-        bidArea.information:setText(string.format(tr("When the auction ends, the winning bid plus the rent for the first month (%s) will be debited to your bank account."), house.rent))
+        bidArea.information:setText(string.format(tr("otclient_modules.house.tr_35"), house.rent))
     end
 
     function UI.bidArea.cancel.onClick()
@@ -980,15 +967,13 @@ function Cyclopedia.bidHouse(widget)
         end
 
         if not confirmWindow then
-            confirmWindow = displayGeneralBox(tr("Confirm House Action"), tr(
-                "Do you really want to bid on the house '%s'?\nYour have set your bid limit to %s.\nWhen the auction ends, the winning bid plus the rent of %sfor the first month will be debited from your\nbank account.",
-                house.name, comma_value(value), (house.rent)), {
+            confirmWindow = displayGeneralBox(tr("otclient_modules.house.tr_34"), tr("otclient_modules.house.tr_33", house.name, comma_value(value), (house.rent)), {
                 {
-                    text = tr("Yes"),
+                    text = tr("otclient_modules.house.tr_32"),
                     callback = yesCallback
                 },
                 {
-                    text = tr("No"),
+                    text = tr("otclient_modules.house.tr_31"),
                     callback = noCallback
                 },
                 anchor = AnchorHorizontalCenter
@@ -1098,8 +1083,8 @@ function Cyclopedia.reloadHouseList()
                 widget.data = data
                 widget:setId(data.id)
                 widget:setText(data.name)
-                widget.size:setColoredText("{" .. tr("Size:") .. "     , #909090}" .. data.sqm .. " sqm")
-                widget.beds:setColoredText("{" .. tr("Max. Beds:") .. " ,#909090} " .. data.beds)
+                widget.size:setColoredText("{" .. tr("otclient_modules.house.tr_30") .. "     , #909090}" .. data.sqm .. " sqm")
+                widget.beds:setColoredText("{" .. tr("otclient_modules.house.tr_29") .. " ,#909090} " .. data.beds)
                 widget.rent:setColoredText(data.rent)
 
                 if data.description ~= "" then
@@ -1117,13 +1102,13 @@ function Cyclopedia.reloadHouseList()
                             return string.format("%02dh %02dmin", hour, minutes)
                         end
 
-                        widget.status:setColoredText("{" .. tr("Status:") .. "  , #909090}{" .. tr("auctioned") .. ", #00F000} (" .. tr("Bid:") .. " " ..
-                                                         data.hightestBid .. " " .. tr("Ends in:") .. " " .. format(data.bidEnd) .. ")")
+                        widget.status:setColoredText("{" .. tr("otclient_modules.house.tr_28") .. "  , #909090}{" .. tr("otclient_modules.house.tr_27") .. ", #00F000} (" .. tr("otclient_modules.house.tr_26") .. " " ..
+                                                         data.hightestBid .. " " .. tr("otclient_modules.house.tr_25") .. " " .. format(data.bidEnd) .. ")")
                     else
-                        widget.status:setColoredText("{" .. tr("Status:") .. "  , #909090}{" .. tr("auctioned") .. ", #00F000} (" .. tr("no bid yet") .. ")")
+                        widget.status:setColoredText("{" .. tr("otclient_modules.house.tr_24") .. "  , #909090}{" .. tr("otclient_modules.house.tr_23") .. ", #00F000} (" .. tr("otclient_modules.house.tr_22") .. ")")
                     end
                 elseif data.state == 2 then
-                    widget.status:setColoredText("{" .. tr("Status:") .. "  , #909090}" .. tr("rented by") .. " " .. data.owner)
+                    widget.status:setColoredText("{" .. tr("otclient_modules.house.tr_21") .. "  , #909090}" .. tr("otclient_modules.house.tr_20") .. " " .. data.owner)
                 end
 
                 widget.onClick = Cyclopedia.selectHouse
@@ -1146,7 +1131,7 @@ function Cyclopedia.reloadHouseList()
                 if data.shop then
                     local icon = g_ui.createWidget("HouseIcon", widget.icons)
                     -- icon:setImageSource("/game_cyclopedia/images/house-shop")
-                    icon:setTooltip(tr("This house is a shop."))
+                    icon:setTooltip(tr("otclient_modules.house.tr_19"))
                 end
             end
         end
@@ -1285,7 +1270,7 @@ function Cyclopedia.selectHouse(widget)
     if widget.data.shop then
         local icon = g_ui.createWidget("HouseIcon", UI.LateralBase.icons)
         -- icon:setImageSource("/game_cyclopedia/images/house-shop")
-        icon:setTooltip(tr("This house is a shop."))
+        icon:setTooltip(tr("otclient_modules.house.tr_18"))
     end
 
     if widget.data.description ~= "" then
@@ -1298,14 +1283,14 @@ function Cyclopedia.selectHouse(widget)
     resetSelectedInfo()
 
     if widget.data.hasBid then
-        UI.LateralBase.AuctionLabel:setText(tr("Auction"))
+        UI.LateralBase.AuctionLabel:setText(tr("otclient_modules.house.tr_17"))
 
         local formattedDate = os.date("%b %d, %H:%M", widget.data.bidEnd)
         local date = string.format("%s %s", formattedDate, "CET")
 
-        UI.LateralBase.AuctionText:setColoredText("{" .. tr("Hightest Bidder:") .. " , #909090}" .. widget.data.bidName ..
-                                                      "\n{      " .. tr("End Time:") .. " , #909090}" .. date ..
-                                                      "\n{   " .. tr("Highest Bid:") .. " , #909090}")
+        UI.LateralBase.AuctionText:setColoredText("{" .. tr("otclient_modules.house.tr_16") .. " , #909090}" .. widget.data.bidName ..
+                                                      "\n{      " .. tr("otclient_modules.house.tr_15") .. " , #909090}" .. date ..
+                                                      "\n{   " .. tr("otclient_modules.house.tr_14") .. " , #909090}")
         UI.LateralBase.highestBid:setVisible(true)
         UI.LateralBase.highestBidGold:setVisible(true)
         UI.LateralBase.highestBid:setText(comma_value(widget.data.hightestBid))
@@ -1320,9 +1305,9 @@ function Cyclopedia.selectHouse(widget)
         local formattedDate = os.date("%b %d, %H:%M", widget.data.paidUntil)
         local date = string.format("%s %s", formattedDate, "CET")
 
-        UI.LateralBase.AuctionLabel:setText(tr("Rental Details"))
-        UI.LateralBase.AuctionText:setColoredText("{            " .. tr("Tenant:") .. " , #909090}" .. widget.data.owner ..
-                                                      "\n{         " .. tr("Paid Until:") .. " , #909090}" .. date)
+        UI.LateralBase.AuctionLabel:setText(tr("otclient_modules.house.tr_13"))
+        UI.LateralBase.AuctionText:setColoredText("{            " .. tr("otclient_modules.house.tr_12") .. " , #909090}" .. widget.data.owner ..
+                                                      "\n{         " .. tr("otclient_modules.house.tr_11") .. " , #909090}" .. date)
 
         if widget.data.inTransfer then
             formattedDate = os.date("%b %d, %H:%M", widget.data.transferTime)
@@ -1330,23 +1315,23 @@ function Cyclopedia.selectHouse(widget)
 
             UI.LateralBase.subAuctionLabel:setVisible(true)
             UI.LateralBase.subAuctionText:setVisible(true)
-            UI.LateralBase.subAuctionText:setColoredText("{      " .. tr("New Owner:") .. "  , #909090}" .. widget.data.transferName ..
-                                                             "\n{                " .. tr("Date:") .. "  , #909090}" .. date)
+            UI.LateralBase.subAuctionText:setColoredText("{      " .. tr("otclient_modules.house.tr_10") .. "  , #909090}" .. widget.data.transferName ..
+                                                             "\n{                " .. tr("otclient_modules.house.tr_9") .. "  , #909090}" .. date)
             UI.LateralBase.transferLabel:setVisible(true)
             UI.LateralBase.transferValue:setVisible(true)
             UI.LateralBase.transferGold:setVisible(true)
             UI.LateralBase.transferValue:setText(comma_value(widget.data.transferValue))
         end
     else
-        UI.LateralBase.AuctionLabel:setText(tr("Auction"))
-        UI.LateralBase.AuctionText:setText(tr("There is no bid so far.\nBe the first to bid on this house."))
+        UI.LateralBase.AuctionLabel:setText(tr("otclient_modules.house.tr_8"))
+        UI.LateralBase.AuctionText:setText(tr("otclient_modules.house.tr_7"))
     end
 
     if widget.data.rented then
         if widget.data.isYourOwner then
             local button = g_ui.createWidget("Button", UI.LateralBase)
             button:setId("transferButton")
-            button:setText(tr("Transfer"))
+            button:setText(tr("otclient_modules.house.tr_6"))
             button:setColor("#C0C0C0")
             -- button:setFont("noto-12")
             button:setWidth(64)
@@ -1358,7 +1343,7 @@ function Cyclopedia.selectHouse(widget)
             button.onClick = Cyclopedia.transferHouse
             button = g_ui.createWidget("Button", UI.LateralBase)
             button:setId("moveOutButton")
-            button:setText(tr("Move Out"))
+            button:setText(tr("otclient_modules.house.tr_5"))
             button:setColor("#C0C0C0")
             -- button:setFont("noto-12")
             button:setWidth(64)
@@ -1371,7 +1356,7 @@ function Cyclopedia.selectHouse(widget)
     elseif widget.data.inTransfer and not widget.data.isTransferOwner then
         local button = g_ui.createWidget("Button", UI.LateralBase)
         button:setId("cancelTransfer")
-        button:setText(tr("Cancel Transfer"))
+        button:setText(tr("otclient_modules.house.tr_4"))
         button:setColor("#C0C0C0")
         -- button:setFont("noto-12")
         button:setWidth(86)
@@ -1384,7 +1369,7 @@ function Cyclopedia.selectHouse(widget)
     elseif widget.data.isTransferOwner then
         local button = g_ui.createWidget("Button", UI.LateralBase)
         button:setId("rejectTransfer")
-        button:setText(tr("Reject Transfer"))
+        button:setText(tr("otclient_modules.house.tr_3"))
         button:setColor("#C0C0C0")
         -- button:setFont("noto-12")
         button:setWidth(86)
@@ -1398,7 +1383,7 @@ function Cyclopedia.selectHouse(widget)
 
         local transferButton = g_ui.createWidget("Button", UI.LateralBase)
         transferButton:setId("acceptTransfer")
-        transferButton:setText(tr("Accept Transfer"))
+        transferButton:setText(tr("otclient_modules.house.tr_2"))
         transferButton:setColor("#C0C0C0")
         -- transferButton:setFont("noto-12")
         transferButton:setWidth(86)
@@ -1417,7 +1402,7 @@ function Cyclopedia.selectHouse(widget)
     else
         local button = g_ui.createWidget("Button", UI.LateralBase)
         button:setId("bidButton")
-        button:setText(tr("Bid"))
+        button:setText(tr("otclient_modules.house.tr_1"))
         button:setColor("#C0C0C0")
         -- button:setFont("noto-12")
         button:setWidth(64)

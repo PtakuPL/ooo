@@ -254,9 +254,9 @@
       },
       "last": {
         "delta": {
-          "files_migrated": 0
+          "files_migrated": 861
         },
-        "updated_at_utc": "2025-12-12T05:06:43Z"
+        "updated_at_utc": "2025-12-16T05:50:59Z"
       },
       "status": "idle"
     },
@@ -404,11 +404,11 @@
       "status": "backoff"
     }
   },
-  "generated_at_utc": "2025-12-16T05:49:36Z",
+  "generated_at_utc": "2025-12-16T05:50:59Z",
   "global": {
-    "en_keys_total": 21785,
+    "en_keys_total": 22596,
     "errors_total": 0,
-    "files_processed_total": 2403,
+    "files_processed_total": 2562,
     "languages_total": 53
   },
   "legacy": {
@@ -418,16 +418,16 @@
         "keys_to_translate": 2,
         "language": "pl"
       },
-      "category": "scripts",
+      "category": "otclient_modules",
       "idle": {
         "last_scan": "2025-12-16T05:59:39.875505",
         "new_files_detected": 152,
         "quality_issues": 2875
       },
-      "last_update": "2025-12-16T06:49:36.359278",
+      "last_update": "2025-12-16T06:50:59.667048",
       "migration": {
         "batch_size": 0,
-        "current_category": "scripts",
+        "current_category": "otclient_modules",
         "files_scanned": 147,
         "files_with_keys": 82,
         "files_without_keys": 65,
@@ -452,7 +452,7 @@
   "schema_version": "3.0",
   "worker": {
     "current": {
-      "category": "scripts",
+      "category": "otclient_modules",
       "detail": "cycle end",
       "eta_seconds": 0,
       "file": "-",
@@ -465,11 +465,11 @@
       "stage": "cycle_end"
     },
     "cycle": 1,
-    "heartbeat_at_utc": "2025-12-16T05:49:36Z",
+    "heartbeat_at_utc": "2025-12-16T05:50:59Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",
-    "pid": 202936,
+    "pid": 207057,
     "status": "running",
     "version": "unknown"
   }

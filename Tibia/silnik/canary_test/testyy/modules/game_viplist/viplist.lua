@@ -27,7 +27,7 @@ function controllerVip:onInit()
         callback = toggle,
       }
     })
-    vipButton = modules.game_mainpanel.addToggleButton('vipListButton', tr('VIP List') .. ' (Ctrl+P)',
+    vipButton = modules.game_mainpanel.addToggleButton('vipListButton', tr("otclient_modules.viplist.tr_33") .. ' (Ctrl+P)',
                                                                 '/images/options/button_vip', toggle, false, 3)
     vipWindow = g_ui.loadUI('viplist')
     controllerVip:registerEvents(g_game, {
@@ -193,7 +193,7 @@ function createEditWindow(widget)
     local id = widget:getId():sub(4)
     -- @Groups
     if not g_game.getFeature(GameVipGroups) then
-        editVipWindow:setText(tr('Edit VIP'))
+        editVipWindow:setText(tr("otclient_modules.viplist.tr_32"))
         editVipWindow:setSize('272 170')
     else
         editVipWindow:setHeight(350 + 2 * (#vipGroups))
@@ -564,8 +564,8 @@ function onVipStateChange(id, state, groupID)
     end
 
     if notify and state ~= VipState.Pending then
-        modules.game_textmessage.displayFailureMessage(state == VipState.Online and tr('%s has logged in.', name) or
-                                                           tr('%s has logged out.', name))
+        modules.game_textmessage.displayFailureMessage(state == VipState.Online and tr("otclient_modules.viplist.tr_31", name) or
+                                                           tr("otclient_modules.viplist.tr_30", name))
     end
 end
 
@@ -578,53 +578,53 @@ function onVipListMousePress(widget, mousePos, mouseButton)
 
     local menu = g_ui.createWidget('PopupMenu')
     menu:setGameMenu(true)
-    menu:addOption(tr('Add new VIP'), function()
+    menu:addOption(tr("otclient_modules.viplist.tr_29"), function()
         createAddWindow()
     end)
 
     menu:addSeparator()
     if not globalSettings.hideOfflineVips then
-        menu:addOption(tr('Hide Offline'), function()
+        menu:addOption(tr("otclient_modules.viplist.tr_28"), function()
             hideOffline(true)
         end)
     else
-        menu:addOption(tr('Show Offline'), function()
+        menu:addOption(tr("otclient_modules.viplist.tr_27"), function()
             hideOffline(false)
         end)
     end
 
     if g_game.getFeature(GameVipGroups) then
-        menu:addOption(tr('Add new group'), function()
+        menu:addOption(tr("otclient_modules.viplist.tr_26"), function()
             createAddGroupWindow()
         end)
     end
 
     menu:addSeparator()
     if not (getSortedBy() == 'name') then
-        menu:addOption(tr('Sort by name'), function()
+        menu:addOption(tr("otclient_modules.viplist.tr_25"), function()
             sortBy('name')
         end)
     end
 
     if not (getSortedBy() == 'status') then
-        menu:addOption(tr('Sort by status'), function()
+        menu:addOption(tr("otclient_modules.viplist.tr_24"), function()
             sortBy('status')
         end)
     end
 
     if not (getSortedBy() == 'type') then
-        menu:addOption(tr('Sort by type'), function()
+        menu:addOption(tr("otclient_modules.viplist.tr_23"), function()
             sortBy('type')
         end)
     end
     if g_game.getFeature(GameVipGroups) then
         if not globalSettings.showGrouped then
-            menu:addOption(tr('Show groups'), function()
+            menu:addOption(tr("otclient_modules.viplist.tr_22"), function()
                 globalSettings.showGrouped = true
                 showGroups()
             end)
         else
-            menu:addOption(tr('Hide groups'), function()
+            menu:addOption(tr("otclient_modules.viplist.tr_21"), function()
                 globalSettings.showGrouped = false
                 refresh()
             end)
@@ -647,33 +647,33 @@ function onVipListLabelMousePress(widget, mousePos, mouseButton)
     local menu = g_ui.createWidget('PopupMenu')
     menu:setGameMenu(true)
     if not isGroup then
-        menu:addOption(tr('Edit %s', widget:getText()), function()
+        menu:addOption(tr("otclient_modules.viplist.tr_20", widget:getText()), function()
             if widget then
                 createEditWindow(widget)
             end
         end)
-        menu:addOption(tr('Remove %s', widget:getText()), function()
+        menu:addOption(tr("otclient_modules.viplist.tr_19", widget:getText()), function()
             if widget then
                 removeVip(widget)
             end
         end)
 
         if isVip and widget.vipState == VipState.Online then
-            menu:addOption(tr('Message to %s', widget:getText()), function()
+            menu:addOption(tr("otclient_modules.viplist.tr_18", widget:getText()), function()
                 g_game.openPrivateChannel(widget:getText())
             end)
         end
     end
 
-    menu:addOption(tr('Add new VIP'), function()
+    menu:addOption(tr("otclient_modules.viplist.tr_17"), function()
         createAddWindow()
     end)
     if modules.game_console.getOwnPrivateTab() then
         menu:addSeparator()
-        menu:addOption(tr('Invite to private chat'), function()
+        menu:addOption(tr("otclient_modules.viplist.tr_16"), function()
             g_game.inviteToOwnChannel(widget:getText())
         end)
-        menu:addOption(tr('Exclude from private chat'), function()
+        menu:addOption(tr("otclient_modules.viplist.tr_15"), function()
             g_game.excludeFromOwnChannel(widget:getText())
         end)
     end
@@ -682,48 +682,48 @@ function onVipListLabelMousePress(widget, mousePos, mouseButton)
         if isGroup and widget.editable then
             local groupName = widget:getTooltip() and widget:getTooltip() or widget.group:getText()
 
-            menu:addOption(tr('Edit group %s', groupName), function()
+            menu:addOption(tr("otclient_modules.viplist.tr_14", groupName), function()
                 createEditGroupWindow(groupName, widget.groupId)
             end)
-            menu:addOption(tr('Remove group %s', groupName), function()
+            menu:addOption(tr("otclient_modules.viplist.tr_13", groupName), function()
                 g_game.editVipGroups(3, widget.groupId, '')
             end)
         end
 
-        menu:addOption(tr('Add new group'), function()
+        menu:addOption(tr("otclient_modules.viplist.tr_12"), function()
             createAddGroupWindow()
         end)
     end
 
     menu:addSeparator()
     if not globalSettings.hideOfflineVips then
-        menu:addOption(tr('Hide Offline'), function()
+        menu:addOption(tr("otclient_modules.viplist.tr_11"), function()
             hideOffline(true)
         end)
     else
-        menu:addOption(tr('Show Offline'), function()
+        menu:addOption(tr("otclient_modules.viplist.tr_10"), function()
             hideOffline(false)
         end)
     end
 
-    menu:addOption(tr('Sort by name'), function()
+    menu:addOption(tr("otclient_modules.viplist.tr_9"), function()
         sortBy('byName')
     end)
-    menu:addOption(tr('Sort by type'), function()
+    menu:addOption(tr("otclient_modules.viplist.tr_8"), function()
         sortBy('byType')
     end)
-    menu:addOption(tr('Sort by status'), function()
+    menu:addOption(tr("otclient_modules.viplist.tr_7"), function()
         sortBy('byState')
     end)
 
     if g_game.getFeature(GameVipGroups) then
         if not globalSettings.showGrouped then
-            menu:addOption(tr('Show groups'), function()
+            menu:addOption(tr("otclient_modules.viplist.tr_6"), function()
                 globalSettings.showGrouped = true
                 showGroups()
             end)
         else
-            menu:addOption(tr('Hide groups'), function()
+            menu:addOption(tr("otclient_modules.viplist.tr_5"), function()
                 globalSettings.showGrouped = false
                 refresh()
             end)
@@ -732,7 +732,7 @@ function onVipListLabelMousePress(widget, mousePos, mouseButton)
 
     if not isGroup then
         menu:addSeparator()
-        menu:addOption(tr('Copy Name'), function()
+        menu:addOption(tr("otclient_modules.viplist.tr_4"), function()
             g_window.setClipboardText(widget:getText())
         end)
     end
@@ -752,7 +752,7 @@ end
 
 function createAddGroupWindow()
     if maxVipGroups < 1 then
-        displayInfoBox(tr('Maximum of User-Created Groups Reached'),
+        displayInfoBox(tr("otclient_modules.viplist.tr_3"),
             'You have already reached the maximum of groups you can create yourself.')
         return
     end
@@ -768,8 +768,8 @@ end
 function createEditGroupWindow(groupName, groupId)
     if not addGroupWindow then
         addGroupWindow = g_ui.displayUI('addgroup')
-        addGroupWindow:setText(tr('Edit VIP group'))
-        addGroupWindow.header:setText(tr('Please enter a group name:'))
+        addGroupWindow:setText(tr("otclient_modules.viplist.tr_2"))
+        addGroupWindow.header:setText(tr("otclient_modules.viplist.tr_1"))
         addGroupWindow.name:setText(groupName)
         function addGroupWindow.onEnter()
             editGroup(groupId)

@@ -10,16 +10,16 @@ HOTKEY_ACTION_TOGGLE_CHASE = 4
 
 HotkeyActions = {{
     id = HOTKEY_ACTION_TOGGLE_WASD,
-    text = tr('Toggle WASD chat mode')
+    text = tr("otclient_modules.hotkeys_manager.tr_11")
 }, {
     id = HOTKEY_ACTION_ATTACK_NEXT,
-    text = tr('Attack next creature in battle list')
+    text = tr("otclient_modules.hotkeys_manager.tr_10")
 }, {
     id = HOTKEY_ACTION_ATTACK_PREV,
-    text = tr('Attack previous creature in battle list')
+    text = tr("otclient_modules.hotkeys_manager.tr_9")
 }, {
     id = HOTKEY_ACTION_TOGGLE_CHASE,
-    text = tr('Toggle chase mode')
+    text = tr("otclient_modules.hotkeys_manager.tr_8")
 }}
 
 HotkeyColors = {
@@ -74,7 +74,7 @@ function init()
     })
     hotkeysWindow = g_ui.displayUI('hotkeys_manager')
     hotkeysWindow:setVisible(false)
-    hotkeysWindowButton = modules.client_topmenu.addRightGameToggleButton('hotkeysWindowButton', tr('Hotkeys'), '/images/options/hotkeys', toggle)
+    hotkeysWindowButton = modules.client_topmenu.addRightGameToggleButton('hotkeysWindowButton', tr("otclient_modules.hotkeys_manager.tr_7"), '/images/options/hotkeys', toggle)
 
     currentHotkeys = hotkeysWindow:getChildById('currentHotkeys')
     currentItemPreview = hotkeysWindow:getChildById('itemPreview')
@@ -99,7 +99,7 @@ function init()
 
     hotkeyActionCombo = hotkeysWindow:getChildById('hotkeyActionCombo')
 
-    hotkeyActionCombo:addOption(tr('None'), 0)
+    hotkeyActionCombo:addOption(tr("otclient_modules.hotkeys_manager.tr_6"), 0)
     for _, action in pairs(HotkeyActions) do
         hotkeyActionCombo:addOption(action.text, action.id)
     end
@@ -588,16 +588,16 @@ function updateHotkeyLabel(hotkeyLabel)
         return
     end
     if hotkeyLabel.useType == HOTKEY_MANAGER_USEONSELF then
-        hotkeyLabel:setText(tr('%s: (use object on yourself)', hotkeyLabel.keyCombo))
+        hotkeyLabel:setText(tr("otclient_modules.hotkeys_manager.tr_5", hotkeyLabel.keyCombo))
         hotkeyLabel:setColor(HotkeyColors.itemUseSelf)
     elseif hotkeyLabel.useType == HOTKEY_MANAGER_USEONTARGET then
-        hotkeyLabel:setText(tr('%s: (use object on target)', hotkeyLabel.keyCombo))
+        hotkeyLabel:setText(tr("otclient_modules.hotkeys_manager.tr_4", hotkeyLabel.keyCombo))
         hotkeyLabel:setColor(HotkeyColors.itemUseTarget)
     elseif hotkeyLabel.useType == HOTKEY_MANAGER_USEWITH then
-        hotkeyLabel:setText(tr('%s: (use object with crosshair)', hotkeyLabel.keyCombo))
+        hotkeyLabel:setText(tr("otclient_modules.hotkeys_manager.tr_3", hotkeyLabel.keyCombo))
         hotkeyLabel:setColor(HotkeyColors.itemUseWith)
     elseif hotkeyLabel.itemId ~= nil then
-        hotkeyLabel:setText(tr('%s: (use object)', hotkeyLabel.keyCombo))
+        hotkeyLabel:setText(tr("otclient_modules.hotkeys_manager.tr_2", hotkeyLabel.keyCombo))
         hotkeyLabel:setColor(HotkeyColors.itemUse)
     elseif hotkeyLabel.action then
         for _, action in pairs(HotkeyActions) do
@@ -784,7 +784,7 @@ end
 function hotkeyCapture(assignWindow, keyCode, keyboardModifiers)
     local keyCombo = determineKeyComboDesc(keyCode, keyboardModifiers)
     local comboPreview = assignWindow:getChildById('comboPreview')
-    comboPreview:setText(tr('Current hotkey to add: %s', keyCombo))
+    comboPreview:setText(tr("otclient_modules.hotkeys_manager.tr_1", keyCombo))
     comboPreview.keyCombo = keyCombo
     comboPreview:resizeToText()
     assignWindow:getChildById('addButton'):enable()

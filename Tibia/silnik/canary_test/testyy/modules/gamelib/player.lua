@@ -38,36 +38,36 @@ PlayerStates = {
 }
 
 Icons = {}
-Icons[PlayerStates.Poison] = { clip = 1, tooltip = tr('You are poisoned'),  id = 'condition_poisoned' }
-Icons[PlayerStates.Burn] = { clip = 2, tooltip = tr('You are burning'),  id = 'condition_burning' }
-Icons[PlayerStates.Energy] = { clip = 3, tooltip = tr('You are electrified'),  id = 'condition_electrified' }
-Icons[PlayerStates.Drunk] = { clip = 4, tooltip = tr('You are drunk'),  id = 'condition_drunk' }
-Icons[PlayerStates.ManaShield] = { clip = 5, tooltip = tr('You are protected by a magic shield'),  id = 'condition_magic_shield' }
-Icons[PlayerStates.Paralyze] = { clip = 6, tooltip = tr('You are paralysed'),  id = 'condition_slowed' }
-Icons[PlayerStates.Haste] = { clip = 7, tooltip = tr('You are hasted'),  id = 'condition_haste' }
-Icons[PlayerStates.Swords] = { clip = 8, tooltip = tr('You may not logout during a fight'),  id = 'condition_logout_block' }
-Icons[PlayerStates.Drowning] = { clip = 9, tooltip = tr('You are drowning'),  id = 'condition_drowning' }
-Icons[PlayerStates.Freezing] = { clip = 10, tooltip = tr('You are freezing'),  id = 'condition_freezing' }
-Icons[PlayerStates.Dazzled] = { clip = 11, tooltip = tr('You are dazzled'),  id = 'condition_dazzled' }
-Icons[PlayerStates.Cursed] = { clip = 12, tooltip = tr('You are cursed'),  id = 'condition_cursed' }
-Icons[PlayerStates.PartyBuff] = { clip = 13, tooltip = tr('You are strengthened'),  id = 'condition_strengthened' }
-Icons[PlayerStates.RedSwords] = { clip = 14, tooltip = tr('You may not logout or enter a protection zone'),  id = 'condition_RedSwords' }
-Icons[PlayerStates.Pigeon] = { clip = 15, tooltip = tr('You are within a protection zone'),  id = 'condition_Pigeon' }
-Icons[PlayerStates.Bleeding] = { clip = 16, tooltip = tr('You are Bleeding'),  id = 'condition_Bleeding' }
-Icons[PlayerStates.LesserHex] = { clip = 17, tooltip = tr('You are LesserHex'),  id = 'condition_LesserHex' }
-Icons[PlayerStates.IntenseHex] = { clip = 18, tooltip = tr('You are IntenseHex'),  id = 'condition_IntenseHex' }
-Icons[PlayerStates.GreaterHex] = { clip = 19, tooltip = tr('You are GreaterHex'),  id = 'condition_GreaterHex' }
-Icons[PlayerStates.Rooted] = { clip = 20, tooltip = tr('You are Rooted'),  id = 'condition_Rooted' }
-Icons[PlayerStates.Feared] = { clip = 21, tooltip = tr('You are Feared'),  id = 'condition_Feared' }
-Icons[PlayerStates.GoshnarTaint1] = { clip = 22, tooltip = tr('You are GoshnarTaint'),  id = 'condition_GoshnarTaint1' }
-Icons[PlayerStates.GoshnarTaint2] = { clip = 23, tooltip = tr('You are GoshnarTaint'),  id = 'condition_GoshnarTaint2' }
-Icons[PlayerStates.GoshnarTaint3] = { clip = 24, tooltip = tr('You are GoshnarTaint'),  id = 'condition_GoshnarTaint3' }
-Icons[PlayerStates.GoshnarTaint4] = { clip = 25, tooltip = tr('You are GoshnarTaint'),  id = 'condition_GoshnarTaint4' }
-Icons[PlayerStates.GoshnarTaint5] = { clip = 26, tooltip = tr('You are GoshnarTaint'),  id = 'condition_GoshnarTaint5' }
-Icons[PlayerStates.NewManaShield] = {  clip = 27, tooltip = tr('You are NewManaShield'), id = 'condition_NewManaShield' }
-Icons[PlayerStates.Agony] = { clip = 28, tooltip = tr('You are Agony'),  id = 'condition_Agony' }
-Icons[PlayerStates.Rewards] = { clip = 30, tooltip = tr('Rewards'),  id = 'condition_Rewards' }
-Icons[PlayerStates.Hungry] = { clip = 32, tooltip = tr('You are hungry'),  id = 'condition_hungry' }
+Icons[PlayerStates.Poison] = { clip = 1, tooltip = tr("otclient_modules.player.tr_40"),  id = 'condition_poisoned' }
+Icons[PlayerStates.Burn] = { clip = 2, tooltip = tr("otclient_modules.player.tr_39"),  id = 'condition_burning' }
+Icons[PlayerStates.Energy] = { clip = 3, tooltip = tr("otclient_modules.player.tr_38"),  id = 'condition_electrified' }
+Icons[PlayerStates.Drunk] = { clip = 4, tooltip = tr("otclient_modules.player.tr_37"),  id = 'condition_drunk' }
+Icons[PlayerStates.ManaShield] = { clip = 5, tooltip = tr("otclient_modules.player.tr_36"),  id = 'condition_magic_shield' }
+Icons[PlayerStates.Paralyze] = { clip = 6, tooltip = tr("otclient_modules.player.tr_35"),  id = 'condition_slowed' }
+Icons[PlayerStates.Haste] = { clip = 7, tooltip = tr("otclient_modules.player.tr_34"),  id = 'condition_haste' }
+Icons[PlayerStates.Swords] = { clip = 8, tooltip = tr("otclient_modules.player.tr_33"),  id = 'condition_logout_block' }
+Icons[PlayerStates.Drowning] = { clip = 9, tooltip = tr("otclient_modules.player.tr_32"),  id = 'condition_drowning' }
+Icons[PlayerStates.Freezing] = { clip = 10, tooltip = tr("otclient_modules.player.tr_31"),  id = 'condition_freezing' }
+Icons[PlayerStates.Dazzled] = { clip = 11, tooltip = tr("otclient_modules.player.tr_30"),  id = 'condition_dazzled' }
+Icons[PlayerStates.Cursed] = { clip = 12, tooltip = tr("otclient_modules.player.tr_29"),  id = 'condition_cursed' }
+Icons[PlayerStates.PartyBuff] = { clip = 13, tooltip = tr("otclient_modules.player.tr_28"),  id = 'condition_strengthened' }
+Icons[PlayerStates.RedSwords] = { clip = 14, tooltip = tr("otclient_modules.player.tr_27"),  id = 'condition_RedSwords' }
+Icons[PlayerStates.Pigeon] = { clip = 15, tooltip = tr("otclient_modules.player.tr_26"),  id = 'condition_Pigeon' }
+Icons[PlayerStates.Bleeding] = { clip = 16, tooltip = tr("otclient_modules.player.tr_25"),  id = 'condition_Bleeding' }
+Icons[PlayerStates.LesserHex] = { clip = 17, tooltip = tr("otclient_modules.player.tr_24"),  id = 'condition_LesserHex' }
+Icons[PlayerStates.IntenseHex] = { clip = 18, tooltip = tr("otclient_modules.player.tr_23"),  id = 'condition_IntenseHex' }
+Icons[PlayerStates.GreaterHex] = { clip = 19, tooltip = tr("otclient_modules.player.tr_22"),  id = 'condition_GreaterHex' }
+Icons[PlayerStates.Rooted] = { clip = 20, tooltip = tr("otclient_modules.player.tr_21"),  id = 'condition_Rooted' }
+Icons[PlayerStates.Feared] = { clip = 21, tooltip = tr("otclient_modules.player.tr_20"),  id = 'condition_Feared' }
+Icons[PlayerStates.GoshnarTaint1] = { clip = 22, tooltip = tr("otclient_modules.player.tr_19"),  id = 'condition_GoshnarTaint1' }
+Icons[PlayerStates.GoshnarTaint2] = { clip = 23, tooltip = tr("otclient_modules.player.tr_18"),  id = 'condition_GoshnarTaint2' }
+Icons[PlayerStates.GoshnarTaint3] = { clip = 24, tooltip = tr("otclient_modules.player.tr_17"),  id = 'condition_GoshnarTaint3' }
+Icons[PlayerStates.GoshnarTaint4] = { clip = 25, tooltip = tr("otclient_modules.player.tr_16"),  id = 'condition_GoshnarTaint4' }
+Icons[PlayerStates.GoshnarTaint5] = { clip = 26, tooltip = tr("otclient_modules.player.tr_15"),  id = 'condition_GoshnarTaint5' }
+Icons[PlayerStates.NewManaShield] = {  clip = 27, tooltip = tr("otclient_modules.player.tr_14"), id = 'condition_NewManaShield' }
+Icons[PlayerStates.Agony] = { clip = 28, tooltip = tr("otclient_modules.player.tr_13"),  id = 'condition_Agony' }
+Icons[PlayerStates.Rewards] = { clip = 30, tooltip = tr("otclient_modules.player.tr_12"),  id = 'condition_Rewards' }
+Icons[PlayerStates.Hungry] = { clip = 32, tooltip = tr("otclient_modules.player.tr_11"),  id = 'condition_hungry' }
 
 combatStates= {
 	CLIENT_COMBAT_PHYSICAL = 0,
@@ -112,15 +112,15 @@ InventorySlotFirst = 1
 InventorySlotLast = 10
 
 vocationNamesByClientId = {
-    [0] = tr("No Vocation"),
-    [1] = tr("Knight"),
-    [2] = tr("Paladin"),
-    [3] = tr("Sorcerer"),
-    [4] = tr("Druid"),
-    [11]= tr("Elite Knight"),
-    [12] = tr("Royal Paladin"),
-    [13] = tr("Master Sorcerer"),
-    [14] = tr("Elder Druid")
+    [0] = tr("otclient_modules.player.tr_10"),
+    [1] = tr("otclient_modules.player.tr_9"),
+    [2] = tr("otclient_modules.player.tr_8"),
+    [3] = tr("otclient_modules.player.tr_7"),
+    [4] = tr("otclient_modules.player.tr_6"),
+    [11]= tr("otclient_modules.player.tr_5"),
+    [12] = tr("otclient_modules.player.tr_4"),
+    [13] = tr("otclient_modules.player.tr_3"),
+    [14] = tr("otclient_modules.player.tr_2")
 }
 
 function Player:isPartyLeader()
@@ -229,5 +229,5 @@ function Player:hasState(state, states)
 end
 
 function Player:getVocationNameByClientId()
-    return vocationNamesByClientId[self:getVocation()] or tr("Unknown Vocation")
+    return vocationNamesByClientId[self:getVocation()] or tr("otclient_modules.player.tr_1")
 end

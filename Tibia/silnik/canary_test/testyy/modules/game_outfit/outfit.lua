@@ -105,7 +105,7 @@ local function showSelectionList(data, tempValue, tempField, onSelectCallback)
         local button = g_ui.createWidget("SelectionButton", window.selectionList)
         button:setId("0")
 
-        button.name:setText(tr("None"))
+        button.name:setText(tr("otclient_modules.outfit.tr_9"))
         if tempValue == 0 then
             focused = 0
         end
@@ -340,7 +340,7 @@ function create(player, outfitList, creatureMount, mountList, familiarList, wing
     floor:hide()
 
     for _, appKey in ipairs(AppearanceData) do
-        updateAppearanceText(appKey, tr("None"))
+        updateAppearanceText(appKey, tr("otclient_modules.outfit.tr_8"))
     end
 
     previewCreature = window.preview.panel.creature
@@ -606,7 +606,7 @@ function newPreset()
     local presetWidget = g_ui.createWidget("PresetButton", window.presetsList)
     local presetId = #settings.presets + 1
     presetWidget:setId(presetId)
-    presetWidget.title:setText(tr("New Preset"))
+    presetWidget.title:setText(tr("otclient_modules.outfit.tr_7"))
     local outfitCopy = table.copy(tempOutfit)
     presetWidget.creature:setOutfit(outfitCopy)
     --  presetWidget.creature:setCenter(true)
@@ -926,7 +926,7 @@ function showMounts()
 
     local button = g_ui.createWidget("SelectionButton", window.selectionList)
     button:setId(0)
-    button.name:setText(tr("None"))
+    button.name:setText(tr("otclient_modules.outfit.tr_6"))
     button.state = 0
     focused = 0
 
@@ -995,7 +995,7 @@ function showFamiliars()
 
     local button = g_ui.createWidget("SelectionButton", window.selectionList)
     button:setId(0)
-    button.name:setText(tr("None"))
+    button.name:setText(tr("otclient_modules.outfit.tr_5"))
     focused = 0
     for _, familiarData in ipairs(ServerData.familiars) do
         local button = g_ui.createWidget("SelectionButton", window.selectionList)
@@ -1053,7 +1053,7 @@ function showShaders()
             addons = tempOutfit.addons
         })
         button.outfit:getCreature():setShader("Outfit - Default")
-        button.name:setText(tr("Outfit - Default"))
+        button.name:setText(tr("otclient_modules.outfit.tr_4"))
         if tempOutfit.shaders == "Outfit - Default" then
             focused = "Outfit - Default"
         end
@@ -1111,7 +1111,7 @@ function showHealthBars()
         button:setId("0")
 
         button.outfit:hide()
-        button.name:setText(tr("None"))
+        button.name:setText(tr("otclient_modules.outfit.tr_3"))
         if tempOutfit.healthBar == 0 then
             focused = 0
         end
@@ -1170,7 +1170,7 @@ function showTitle()
         button:setId("0")
 
 
-        button.name:setText(tr("None"))
+        button.name:setText(tr("otclient_modules.outfit.tr_2"))
         if tempOutfit.tile == 0 then
             focused = 0
         end
@@ -1481,7 +1481,7 @@ end
 
 function updateAppearanceTexts(outfit)
     for _, appKey in ipairs(AppearanceData) do
-        updateAppearanceText(appKey, tr("None"))
+        updateAppearanceText(appKey, tr("otclient_modules.outfit.tr_1"))
     end
 
     for key, value in pairs(outfit) do

@@ -148,7 +148,7 @@ function init()
 
     terminalWindow.onDoubleClick = popWindow
 
-    terminalButton = modules.client_topmenu.addTopRightToggleButton('terminalButton', tr('Terminal') .. ' (Ctrl + T)',
+    terminalButton = modules.client_topmenu.addTopRightToggleButton('terminalButton', tr("otclient_modules.terminal.tr_1") .. ' (Ctrl + T)',
                                                           '/images/topbuttons/terminal', toggle)
     Keybind.new("Misc.", "Toggle Terminal", "Ctrl+T", "")
     Keybind.bind("Misc.", "Toggle Terminal", {{

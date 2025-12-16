@@ -36,7 +36,7 @@ function init()
     if player then
         bankGold = player:getResourceBalance(ResourceTypes.BANK_BALANCE)
         inventoryGold = player:getResourceBalance(ResourceTypes.GOLD_EQUIPPED)
-        imbuingWindow.balance:setText(tr('Balance') .. ':\n' .. (player:getTotalMoney()))
+        imbuingWindow.balance:setText(tr("otclient_modules.imbuing.tr_13") .. ':\n' .. (player:getTotalMoney()))
     end
 
     groupsCombo.onOptionChange = function(widget)
@@ -77,7 +77,7 @@ function init()
                             end
                         end
                         emptyImbue.requiredItems:getChildByIndex(i).item:setItemId(source['item']:getId())
-                        emptyImbue.requiredItems:getChildByIndex(i).item:setTooltip(tr('The imbuement requires %s.', source['description']))
+                        emptyImbue.requiredItems:getChildByIndex(i).item:setTooltip(tr("otclient_modules.imbuing.tr_12", source['description']))
                     end
                     for i = 3, widget.currentIndex + 1, -1 do
                         emptyImbue.requiredItems:getChildByIndex(i).count:setText('')
@@ -159,10 +159,10 @@ function resetSlots()
     emptyImbue:setVisible(false)
     clearImbue:setVisible(false)
     for i = 1, 3 do
-        imbuingWindow.itemInfo.slots:getChildByIndex(i):setText(tr('Slot') .. ' ' .. i)
+        imbuingWindow.itemInfo.slots:getChildByIndex(i):setText(tr("otclient_modules.imbuing.tr_11") .. ' ' .. i)
         imbuingWindow.itemInfo.slots:getChildByIndex(i):setEnabled(false)
         imbuingWindow.itemInfo.slots:getChildByIndex(i):setTooltip(
-            tr('Items can have up to three imbuements slots. This slot is not available for this item.'))
+            tr("otclient_modules.imbuing.tr_10"))
         imbuingWindow.itemInfo.slots:getChildByIndex(i).onClick = nil
     end
 end
@@ -177,7 +177,7 @@ function selectSlot(widget, slotId, activeSlot)
     if activeSlot then
         emptyImbue:setVisible(false)
         widget:setText(activeSlot[1]['name'])
-        clearImbue.title:setText(tr('Clear Imbuement') .. ' "' .. activeSlot[1]['name'] .. '"')
+        clearImbue.title:setText(tr("otclient_modules.imbuing.tr_9") .. ' "' .. activeSlot[1]['name'] .. '"')
         clearImbue.groups:clearOptions()
         clearImbue.groups:addOption(activeSlot[1]['group'])
         clearImbue.imbuement:clearOptions()
@@ -197,7 +197,7 @@ function selectSlot(widget, slotId, activeSlot)
 
         local yesCallback = function()
             g_game.clearImbuement(slotId)
-            widget:setText(tr('Slot') .. ' ' .. (slotId + 1))
+            widget:setText(tr("otclient_modules.imbuing.tr_8") .. ' ' .. (slotId + 1))
             if clearConfirmWindow then
                 clearConfirmWindow:destroy()
                 clearConfirmWindow = nil
@@ -213,17 +213,17 @@ function selectSlot(widget, slotId, activeSlot)
 
         clearImbue.clear.onClick = function()
             imbuingWindow:hide()
-            clearConfirmWindow = displayGeneralBox(tr('Confirm Clearing'),
+            clearConfirmWindow = displayGeneralBox(tr("otclient_modules.imbuing.tr_7"),
                                                    tr(
                                                        'Do you wish to spend ' .. activeSlot[3] ..
                                                            ' gold coins to clear the imbuement "' ..
                                                            activeSlot[1]['name'] .. '" from your item?'), {
                 {
-                    text = tr('Yes'),
+                    text = tr("otclient_modules.imbuing.tr_6"),
                     callback = yesCallback
                 },
                 {
-                    text = tr('No'),
+                    text = tr("otclient_modules.imbuing.tr_5"),
                     callback = noCallback
                 },
                 anchor = AnchorHorizontalCenter
@@ -260,17 +260,17 @@ function selectSlot(widget, slotId, activeSlot)
                 cost = cost + selectedImbue['protectionCost']
                 successRate = '100'
             end
-            clearConfirmWindow = displayGeneralBox(tr('Confirm Imbuing Attempt'),
+            clearConfirmWindow = displayGeneralBox(tr("otclient_modules.imbuing.tr_4"),
                                                    'You are about to imbue your item with "' .. selectedImbue['name'] ..
                                                        '".\nYour chance to succeed is ' .. successRate ..
                                                        '%. It will consume the required astral sources and ' .. cost ..
                                                        ' gold coins.\nDo you wish to proceed?', {
                 {
-                    text = tr('Yes'),
+                    text = tr("otclient_modules.imbuing.tr_3"),
                     callback = yesCallback
                 },
                 {
-                    text = tr('No'),
+                    text = tr("otclient_modules.imbuing.tr_2"),
                     callback = noCallback
                 },
                 anchor = AnchorHorizontalCenter
@@ -333,7 +333,7 @@ function Imbuing.onResourcesBalanceChange(balance, oldBalance, type)
     local player = g_game.getLocalPlayer()
     if player then
         if type == ResourceTypes.BANK_BALANCE or type == ResourceTypes.GOLD_EQUIPPED then
-            imbuingWindow.balance:setText(tr('Balance') .. ':\n' .. (player:getTotalMoney()))
+            imbuingWindow.balance:setText(tr("otclient_modules.imbuing.tr_1") .. ':\n' .. (player:getTotalMoney()))
         end
     end
 end

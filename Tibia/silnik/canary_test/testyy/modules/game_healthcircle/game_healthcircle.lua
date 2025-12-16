@@ -526,23 +526,23 @@ function addToOptionsModule()
     opacityScrollbar = optionPanel:recursiveGetChildById('opacityScrollbar')
 
     -- ComboBox start values
-    chooseSkillComboBox:addOption(tr('Magic Level'), 'magic')
-    chooseSkillComboBox:addOption(tr('Fist Fighting'), 'fist')
-    chooseSkillComboBox:addOption(tr('Club Fighting'), 'club')
-    chooseSkillComboBox:addOption(tr('Sword Fighting'), 'sword')
-    chooseSkillComboBox:addOption(tr('Axe Fighting'), 'axe')
-    chooseSkillComboBox:addOption(tr('Distance Fighting'), 'distance')
-    chooseSkillComboBox:addOption(tr('Shielding'), 'shielding')
-    chooseSkillComboBox:addOption(tr('Fishing'), 'fishing')
+    chooseSkillComboBox:addOption(tr("otclient_modules.game_healthcircle.tr_17"), 'magic')
+    chooseSkillComboBox:addOption(tr("otclient_modules.game_healthcircle.tr_16"), 'fist')
+    chooseSkillComboBox:addOption(tr("otclient_modules.game_healthcircle.tr_15"), 'club')
+    chooseSkillComboBox:addOption(tr("otclient_modules.game_healthcircle.tr_14"), 'sword')
+    chooseSkillComboBox:addOption(tr("otclient_modules.game_healthcircle.tr_13"), 'axe')
+    chooseSkillComboBox:addOption(tr("otclient_modules.game_healthcircle.tr_12"), 'distance')
+    chooseSkillComboBox:addOption(tr("otclient_modules.game_healthcircle.tr_11"), 'shielding')
+    chooseSkillComboBox:addOption(tr("otclient_modules.game_healthcircle.tr_10"), 'fishing')
 
-    chooseStatsBarPlacement:addOption(tr('Top'), 'top')
-    chooseStatsBarPlacement:addOption(tr('Bottom'), 'bottom')
+    chooseStatsBarPlacement:addOption(tr("otclient_modules.game_healthcircle.tr_9"), 'top')
+    chooseStatsBarPlacement:addOption(tr("otclient_modules.game_healthcircle.tr_8"), 'bottom')
 
-    chooseStatsBarDimension:addOption(tr('Hide'), 'hide')
-    chooseStatsBarDimension:addOption(tr('Compact'), 'compact')
-    chooseStatsBarDimension:addOption(tr('Default'), 'default')
-    chooseStatsBarDimension:addOption(tr('Large'), 'large')
-    chooseStatsBarDimension:addOption(tr('Parallel'), 'parallel')
+    chooseStatsBarDimension:addOption(tr("otclient_modules.game_healthcircle.tr_7"), 'hide')
+    chooseStatsBarDimension:addOption(tr("otclient_modules.game_healthcircle.tr_6"), 'compact')
+    chooseStatsBarDimension:addOption(tr("otclient_modules.game_healthcircle.tr_5"), 'default')
+    chooseStatsBarDimension:addOption(tr("otclient_modules.game_healthcircle.tr_4"), 'large')
+    chooseStatsBarDimension:addOption(tr("otclient_modules.game_healthcircle.tr_3"), 'parallel')
 
     statsBarMenuLoaded = true
 
@@ -558,9 +558,9 @@ function addToOptionsModule()
     -- Prevent skill overwritten before initialize
     skillsLoaded = true
 
-    distFromCenScrollbar:setText(tr('Distance') .. ': ' .. distanceFromCenter)
+    distFromCenScrollbar:setText(tr("otclient_modules.game_healthcircle.tr_2") .. ': ' .. distanceFromCenter)
     distFromCenScrollbar:setValue(distanceFromCenter)
-    opacityScrollbar:setText(tr('Opacity') .. ': ' .. opacityCircle)
+    opacityScrollbar:setText(tr("otclient_modules.game_healthcircle.tr_1") .. ': ' .. opacityCircle)
     opacityScrollbar:setValue(opacityCircle * 100)
     modules.client_options.addButton("Interface", "HP/MP Circle", optionPanel)
 end

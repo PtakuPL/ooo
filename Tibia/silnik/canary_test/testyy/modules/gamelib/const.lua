@@ -75,14 +75,14 @@ SouthWest = Directions.SouthWest
 NorthWest = Directions.NorthWest
 
 DirectionString = {
-    [North] = tr("North"),
-    [East] = tr("East"),
-    [South] = tr("South"),
-    [West] = tr("West"),
-    [NorthEast] = tr("North East"),
-    [SouthEast] = tr("South East"),
-    [SouthWest] = tr("South West"),
-    [NorthWest] = tr("North West")
+    [North] = tr("otclient_modules.const.tr_8"),
+    [East] = tr("otclient_modules.const.tr_7"),
+    [South] = tr("otclient_modules.const.tr_6"),
+    [West] = tr("otclient_modules.const.tr_5"),
+    [NorthEast] = tr("otclient_modules.const.tr_4"),
+    [SouthEast] = tr("otclient_modules.const.tr_3"),
+    [SouthWest] = tr("otclient_modules.const.tr_2"),
+    [NorthWest] = tr("otclient_modules.const.tr_1")
 }
 
 FightOffensive = 1

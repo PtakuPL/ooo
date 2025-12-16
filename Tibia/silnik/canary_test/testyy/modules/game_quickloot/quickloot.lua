@@ -346,10 +346,9 @@ function QuickLoot.Define()
                         if thing and thing:isContainer() then
                             item = thing
                         else
-                            QuickLoot.ErrorWindow = displayGeneralBox(tr("Invalid Loot Container"), tr(
-                                "You can only select containers you carry in your inventory."), {
+                            QuickLoot.ErrorWindow = displayGeneralBox(tr("otclient_modules.quickloot.tr_6"), tr("otclient_modules.quickloot.tr_5"), {
                                 {
-                                    text = tr("Ok"),
+                                    text = tr("otclient_modules.quickloot.tr_4"),
                                     callback = QuickLoot.confirmError
                                 },
                                 anchor = AnchorHorizontalCenter
@@ -362,10 +361,9 @@ function QuickLoot.Define()
                         g_game.openContainerQuickLoot(QuickLoot.actionsId, QuickLoot.lastSelectBag:getId(),
                             item:getPosition(), item:getId(), item:getStackPos())
                     else
-                        QuickLoot.ErrorWindow = displayGeneralBox(tr("Invalid Loot Container"), tr(
-                            "You can only select containers you carry in your inventory."), {
+                        QuickLoot.ErrorWindow = displayGeneralBox(tr("otclient_modules.quickloot.tr_3"), tr("otclient_modules.quickloot.tr_2"), {
                             {
-                                text = tr("Ok"),
+                                text = tr("otclient_modules.quickloot.tr_1"),
                                 callback = QuickLoot.confirmError
                             },
                             anchor = AnchorHorizontalCenter

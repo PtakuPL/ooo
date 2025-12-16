@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-16 06:49:37 UTC  
-> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 21771  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: cycle_end | Kategoria: scripts | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T05:49:36Z
+> **Aktualizacja:** 2025-12-16 06:51:00 UTC  
+> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 22582  
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: cycle_end | Kategoria: otclient_modules | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T05:50:59Z
 
 ---
 
@@ -25,10 +25,10 @@
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
-| 📂 **Wszystkie pliki** | **16,506** | 100% | cały projekt |
-| 📜 Do skanowania (kod) | **7,830** | 47.4% | pliki z kodem/tekstami |
-| 🔍 **Przeskanowane** | **2,403** | **30.7%** | historia workera |
-| ⏳ Nie przeskanowane | **5,427** | 69.3% | czekają na skan |
+| 📂 **Wszystkie pliki** | **16,556** | 100% | cały projekt |
+| 📜 Do skanowania (kod) | **7,831** | 47.3% | pliki z kodem/tekstami |
+| 🔍 **Przeskanowane** | **2,562** | **32.7%** | historia workera |
+| ⏳ Nie przeskanowane | **5,269** | 67.3% | czekają na skan |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -39,12 +39,12 @@
 | 🌐 HTML (.html) | 6 | widoki |
 | 📦 JavaScript (.js) | 0 | frontend |
 | ⚙️ C++ (.cpp/.hpp/.h) | 839 | silnik serwera |
-| 📋 JSON (.json) | 950 | konfiguracje |
+| 📋 JSON (.json) | 951 | konfiguracje |
 
 ### ✅ Status Migracji
 | Status | Ilość | Procent | Opis |
 |--------|-------|---------|------|
-| ✅ Zmigrowane | **82** | 3.4% | mają klucze i18n |
+| ✅ Zmigrowane | **82** | 3.2% | mają klucze i18n |
 | 🔄 Wymaga migracji | **0** | - | trzeba dodać i18n |
 | ⚪ Czyste | **65** | - | bez tekstów |
 | 🔧 W trakcie | **0** | - | obecnie przetwarzane |
@@ -52,12 +52,12 @@
 ### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔑 **Klucze EN (źródłowe)** | **21,771** | wszystkie kategorie |
+| 🔑 **Klucze EN (źródłowe)** | **22,582** | wszystkie kategorie |
 | 📊 NPC | 5,339 | dialogi NPC |
 | 📊 Items | 13,749 | przedmioty |
 | 📊 Monsters | 132 | potwory |
 | 📊 HTML | 1,495 | widoki web |
-| 📊 Pozostałe | 1,056 | scripts, spells, etc. |
+| 📊 Pozostałe | 1,867 | scripts, spells, etc. |
 
 ### 🌍 Języki i Tłumaczenia
 | Metryka | Wartość | Procent | Info |
@@ -130,7 +130,7 @@
 |-----------|--------|--------|-----|
 | 🖥️ Client UI | ⏳ | 0/200 (0%) | 200 |
 | 💿 Server C++ | ⏳ | 0/500 (0%) | 500 |
-| 🎮 OTClient Modules | ⏳ | 0/500 (0%) | 500 |
+| 🎮 OTClient Modules | ✅ | 811/500 (162%) | 500 |
 | 📦 OTClient Data | ⏳ | 0/200 (0%) | 200 |
 | ⚙️ OTClient Src | ⏳ | 0/300 (0%) | 300 |
 | 🔧 OTClient Mods | ⏳ | 0/100 (0%) | 100 |
@@ -175,14 +175,14 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (cycle_end)                  │
-│ Kategoria: 📁 SCRIPTS                                │
+│ Kategoria: 📁 OTCLIENT_MODULES                       │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
 │ Postęp: 0/0 units                                             │
 │ Info: cycle end                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-16T05:49:36Z           │
+│ ❤️ Heartbeat: 2025-12-16T05:50:59Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -190,16 +190,16 @@
 
 ## 🔁 W tym cyklu
 
+- 🔧 MIGRATION.category_done [otclient_modules] ok (keys+811, files+50) — migration finished
+- 🔧 MIGRATION.mini_batch_done [otclient_modules] ok (keys+91) — mini_batch=5 processed=50/50
+- 🔧 MIGRATION.mini_batch_done [otclient_modules] ok (keys+192) — mini_batch=4 processed=40/50
+- 🔧 MIGRATION.mini_batch_done [otclient_modules] ok (keys+245) — mini_batch=3 processed=30/50
+- 🔧 MIGRATION.mini_batch_done [otclient_modules] ok (keys+165) — mini_batch=2 processed=20/50
+- 🔧 MIGRATION.mini_batch_done [otclient_modules] ok (keys+118) — mini_batch=1 processed=10/50
 - 🔧 MIGRATION.category_done [scripts] ok (keys+79, files+45) — migration finished
 - 🔧 MIGRATION.category_done [scripts] ok (keys+10, files+10) — migration finished
 - 🔧 MIGRATION.category_done [scripts] ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION.category_done [scripts] ok (keys+2, files+0) — migration finished
-- ✅ IDLE.IDLE_SLEEP [-] ok — sleep_seconds=300
-- ✅ IDLE.IDLE_CYCLE_DONE [-] ok — idle cycle complete
-- 🤖 AUTO_TRANSLATE.AUTO_TRANSLATE_DONE [pl] ok (files+1, translated+0, skipped+3060) — lang=pl file=npc.json
-- 🤖 AUTO_TRANSLATE.AUTO_TRANSLATE_DONE [pl] ok (files+1, translated+0, skipped+3060) — lang=pl file=npc.json
-- 🌍 TRANSLATION_SYNC.SYNC_FILE_DONE [pl] ok (keys+0, files+0) — lang=pl file=npc.json
-- 🔑 COMPACT_KEYS.export_done [-] ok (mapped_new+0) — export compact locales
 
 
 
@@ -207,8 +207,8 @@
 ## 📅 Dziś (UTC)
 
 - Cykle: **13**
-- MIGRATION: **+138** kluczy, **61** plików `.lua`
-- Kategorie dotknięte: actions, creaturescripts, globalevents, items, monsters, mounts, movements, npc, quests, raids...
+- MIGRATION: **+1760** kluczy, **111** plików `.lua`
+- Kategorie dotknięte: actions, creaturescripts, globalevents, items, monsters, mounts, movements, npc, otclient_modules, quests...
 - Błędy: **0**
 
 
@@ -385,6 +385,7 @@
 | items | 13749 | 0 | 0 | ✅ Active |
 | npc | 5339 | 0 | 0 | ✅ Active |
 | html | 1495 | 0 | 0 | ✅ Active |
+| otclient_modules | 811 | 0 | 0 | ✅ Active |
 | spells | 304 | 0 | 0 | ✅ Active |
 | client | 242 | 0 | 0 | ✅ Active |
 | scripts | 212 | 0 | 0 | ✅ Active |
@@ -462,7 +463,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-16 06:49:37  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-16 06:51:00  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

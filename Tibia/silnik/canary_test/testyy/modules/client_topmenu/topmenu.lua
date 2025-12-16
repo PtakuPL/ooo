@@ -116,7 +116,7 @@ function init()
     -- Language picker button (next to sound icons)
     languageButton = modules.client_topmenu.addRightToggleButton(
   'languageButton',
-  tr('Language'),
+  tr("otclient_modules.topmenu.tr_6"),
   '/images/topbuttons/options',
   function()
     if modules and modules.client_locales and modules.client_locales.openLanguagePicker then
@@ -138,7 +138,7 @@ function init()
       }
     })
     if Services.websites and not managerAccountsButton then
-        managerAccountsButton = modules.client_topmenu.addTopRightRegularButton('hotkeysButton', tr('Manage Account'),
+        managerAccountsButton = modules.client_topmenu.addTopRightRegularButton('hotkeysButton', tr("otclient_modules.topmenu.tr_5"),
             nil, openManagerAccounts)
     end
     if g_platform.isMobile() then
@@ -295,7 +295,7 @@ function updateFps(fps)
             end
 
             local midFps = math.floor((fpsMin + fpsMax) / 2)
-            fpsLabel:setTooltip(tr('Min:') .. ' ' .. fpsMin .. '\n' .. tr('Mid:') .. ' ' .. midFps .. '\n' .. tr('Max:') .. ' ' .. fpsMax)
+            fpsLabel:setTooltip(tr("otclient_modules.topmenu.tr_4") .. ' ' .. fpsMin .. '\n' .. tr("otclient_modules.topmenu.tr_3") .. ' ' .. midFps .. '\n' .. tr("otclient_modules.topmenu.tr_2") .. ' ' .. fpsMax)
         else
             fpsLabel:removeTooltip()
         end
@@ -371,7 +371,7 @@ function setFpsVisible(enable)
 end
 
 function setPlayersOnline(value)
-    topLeftOnlinePlayersLabel:setText(value .. " " .. tr('players online'))
+    topLeftOnlinePlayersLabel:setText(value .. " " .. tr("otclient_modules.topmenu.tr_1"))
 end
 function setDiscordStreams(value)
     topLeftDiscordStreamersLabel:setText(value)

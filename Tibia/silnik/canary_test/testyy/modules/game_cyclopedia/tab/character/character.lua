@@ -66,11 +66,11 @@ function showCharacter()
     if g_game.isOnline() then
         local player = g_game.getLocalPlayer()
         UI.CharacterBase:setText(player:getName())
-        UI.CharacterBase.InfoLabel:setText(string.format(tr("Level:") .. " %d\n%s", player:getLevel(), player:getVocationNameByClientId()))
+        UI.CharacterBase.InfoLabel:setText(string.format(tr("otclient_modules.character.tr_94") .. " %d\n%s", player:getLevel(), player:getVocationNameByClientId()))
         UI.CharacterBase.Outfit:setOutfit(player:getOutfit())
 
         UI.InfoBase.outfitPanel.Sprite:setOutfit(player:getOutfit())
-        UI.InfoBase.InspectLabel:setText(tr("You are inspecting") .. ": " .. player:getName())
+        UI.InfoBase.InspectLabel:setText(tr("otclient_modules.character.tr_93") .. ": " .. player:getName())
 
         for i = InventorySlotFirst, InventorySlotPurse do
             local item = player:getInventoryItem(i)
@@ -376,9 +376,9 @@ end
 -- Adds sort options to the achievements sort control, applies the default "accomplished" filter, and marks achievements as loaded to avoid repeating initialization.
 function Cyclopedia.loadCharacterAchievements()
     if not Cyclopedia.Character.Achievements.Loaded then
-        UI.CharacterAchievements.sort:addOption(tr("Alphabetically"), 1, true)
-        UI.CharacterAchievements.sort:addOption(tr("By Grade"), 2, true)
-        UI.CharacterAchievements.sort:addOption(tr("By Unlock Date"), 3, true)
+        UI.CharacterAchievements.sort:addOption(tr("otclient_modules.character.tr_92"), 1, true)
+        UI.CharacterAchievements.sort:addOption(tr("otclient_modules.character.tr_91"), 2, true)
+        UI.CharacterAchievements.sort:addOption(tr("otclient_modules.character.tr_90"), 3, true)
         Cyclopedia.achievementFilter(UI.CharacterAchievements.filters.accomplished)
         Cyclopedia.Character.Achievements.Loaded = true
     end
@@ -647,7 +647,7 @@ function Cyclopedia.loadCharacterCombatStats(data, mitigation, additionalSkillsA
             widget.item:setVirtual(true)
             local minutes = concoctionsArray[i][2] / 60
             local itemName = widget.item:getItem():getMarketData().name
-            widget.item:setTooltip(string.format(tr("%s: %.0f minutes"), itemName, minutes))
+            widget.item:setTooltip(string.format(tr("otclient_modules.character.tr_89"), itemName, minutes))
             widget.amount:setVisible(false)
         end
     end
@@ -778,7 +778,7 @@ function Cyclopedia.loadCharacterGeneralStats(data, skills)
 
     Cyclopedia.setCharacterSkillValue("level", comma_value(data.level))
 
-    local text = tr("You have %s percent to go ", 100 - data.levelPercent)
+    local text = tr("otclient_modules.character.tr_88", 100 - data.levelPercent)
     Cyclopedia.setCharacterSkillPercent("level", data.levelPercent, text)
     Cyclopedia.setCharacterSkillValue("experience", comma_value(player:getExperience()))
 
@@ -834,24 +834,23 @@ function Cyclopedia.loadCharacterGeneralStats(data, skills)
     Cyclopedia.setCharacterSkillValue("stamina", staminaHours .. ":" .. staminaMinutes)
 
     if data.staminaMinutes > 2400 and g_game.getClientVersion() >= 1038 and player:isPremium() then
-        local text = tr("You have %s hours and %s minutes left", staminaHours, staminaMinutes) .. "\n" ..
-                         tr("Now you will gain 50%% more experience")
+        local text = tr("otclient_modules.character.tr_87", staminaHours, staminaMinutes) .. "\n" ..
+                         tr("otclient_modules.character.tr_86")
 
         Cyclopedia.setCharacterSkillPercent("stamina", staminaPercent, text, "green")
     elseif data.staminaMinutes > 2400 and g_game.getClientVersion() >= 1038 and not player:isPremium() then
-        local text = tr("You have %s hours and %s minutes left", staminaHours, staminaMinutes) .. "\n" ..
-                         tr(
-                "You will not gain 50%% more experience because you aren't premium player, now you receive only 1x experience points")
+        local text = tr("otclient_modules.character.tr_85", staminaHours, staminaMinutes) .. "\n" ..
+                         tr("otclient_modules.character.tr_84")
 
         Cyclopedia.setCharacterSkillPercent("stamina", staminaPercent, text, "#89F013")
     elseif data.staminaMinutes <= 840 and data.staminaMinutes > 0 then
-        local text = tr("You have %s hours and %s minutes left", staminaHours, staminaMinutes) .. "\n" ..
-                         tr("You gain only 50%% experience and you don't may gain loot from monsters")
+        local text = tr("otclient_modules.character.tr_83", staminaHours, staminaMinutes) .. "\n" ..
+                         tr("otclient_modules.character.tr_82")
 
         Cyclopedia.setCharacterSkillPercent("stamina", staminaPercent, text, "red")
     elseif data.staminaMinutes == 0 then
-        local text = tr("You have %s hours and %s minutes left", staminaHours, staminaMinutes) .. "\n" ..
-                         tr("You don't may receive experience and loot from monsters")
+        local text = tr("otclient_modules.character.tr_81", staminaHours, staminaMinutes) .. "\n" ..
+                         tr("otclient_modules.character.tr_80")
 
         Cyclopedia.setCharacterSkillPercent("stamina", staminaPercent, text, "black")
     end
@@ -860,10 +859,10 @@ function Cyclopedia.loadCharacterGeneralStats(data, skills)
     local trainerPercent = 100 * data.offlineTrainingTime / 720
 
     Cyclopedia.setCharacterSkillValue("trainer", trainerHours .. ":" .. trainerMinutes)
-    Cyclopedia.setCharacterSkillPercent("trainer", trainerPercent, tr("You have %s percent", trainerPercent))
+    Cyclopedia.setCharacterSkillPercent("trainer", trainerPercent, tr("otclient_modules.character.tr_79", trainerPercent))
     Cyclopedia.setCharacterSkillValue("magiclevel", data.magicLevel)
     Cyclopedia.setCharacterSkillPercent("magiclevel", data.magicLevelPercent / 100,
-        tr("You have %s percent to go", 100 - data.magicLevelPercent / 100))
+        tr("otclient_modules.character.tr_78", 100 - data.magicLevelPercent / 100))
     Cyclopedia.setCharacterSkillBase("magiclevel", data.magicLevel, data.baseMagicLevel)
 
     for i = Skill.Fist + 1, Skill.Fishing + 1 do
@@ -922,7 +921,7 @@ end
 
 function Cyclopedia.onSkillChange(localPlayer, id, level, percent)
     Cyclopedia.setCharacterSkillValue("skillId" .. id, level)
-    Cyclopedia.setCharacterSkillPercent("skillId" .. id, percent, tr("You have %s percent to go", 100 - percent))
+    Cyclopedia.setCharacterSkillPercent("skillId" .. id, percent, tr("otclient_modules.character.tr_77", 100 - percent))
     Cyclopedia.onBaseCharacterSkillChange(localPlayer, id, localPlayer:getSkillBaseLevel(id))
 end
 
@@ -969,12 +968,12 @@ function Cyclopedia.configureCharacterCategories()
 
     local buttons = {
         {
-            text = tr("General Stats"),
+            text = tr("otclient_modules.character.tr_76"),
             icon = "/game_cyclopedia/images/character_icons/icon_generalstats",
             subCategories = function()
                 local categories = {
                     {
-                        text = tr("Character Stats"),
+                        text = tr("otclient_modules.character.tr_75"),
                         icon = "/game_cyclopedia/images/character_icons/icon-character-generalstats-overview",
                         open = "CharacterStats"
                     }
@@ -982,23 +981,23 @@ function Cyclopedia.configureCharacterCategories()
                 
                 if g_game.getClientVersion() < 1410 then
                     table.insert(categories, {
-                        text = tr("Combat Stats"),
+                        text = tr("otclient_modules.character.tr_74"),
                         icon = "/game_cyclopedia/images/character_icons/icon-character-generalstats-combatstats",
                         open = "CombatStats"
                     })
                 else
                     table.insert(categories, {
-                        text = tr("Offence Stats"),
+                        text = tr("otclient_modules.character.tr_73"),
                         icon = "/game_cyclopedia/images/character_icons/icon-character-generalstats-combatstats",
                         open = "OffenceStats"
                     })
                     table.insert(categories, {
-                        text = tr("Deffence Stats"),
+                        text = tr("otclient_modules.character.tr_72"),
                         icon = "/game_cyclopedia/images/character_icons/icon-character-generalstats-defence",
                         open = "DeffenceStats"
                     })
                     table.insert(categories, {
-                        text = tr("Misc. Stats"),
+                        text = tr("otclient_modules.character.tr_71"),
                         icon = "/game_cyclopedia/images/character_icons/icon-character-generalstats-misc",
                         open = "MiscStats"
                     })
@@ -1008,43 +1007,43 @@ function Cyclopedia.configureCharacterCategories()
             end
         },
         {
-            text = tr("Battle Results"),
+            text = tr("otclient_modules.character.tr_70"),
             icon = "/game_cyclopedia/images/character_icons/icon_battleresults",
             subCategories = {
                 {
-                    text = tr("Recent Deaths"),
+                    text = tr("otclient_modules.character.tr_69"),
                     icon = "/game_cyclopedia/images/character_icons/icon-character-battleresults-recentdeaths",
                     open = "RecentDeaths"
                 },
                 {
-                    text = tr("Recent PvP Kills"),
+                    text = tr("otclient_modules.character.tr_68"),
                     icon = "/game_cyclopedia/images/character_icons/icon-character-battleresults-recentpvpkills",
                     open = "RecentKills"
                 }
             }
         },
         {
-            text = tr("Achievements"),
+            text = tr("otclient_modules.character.tr_67"),
             icon = "/game_cyclopedia/images/character_icons/icon_achievement",
             open = "CharacterAchievements"
         },
         {
-            text = tr("Item Summary"),
+            text = tr("otclient_modules.character.tr_66"),
             icon = "/game_cyclopedia/images/character_icons/icon_items",
             open = "CharacterItems"
         },
         {
-            text = tr("Appearances"),
+            text = tr("otclient_modules.character.tr_65"),
             icon = "/game_cyclopedia/images/character_icons/icon_outfitsmounts",
             open = "CharacterAppearances"
         },
         {
-            text = tr("Store Summary"),
+            text = tr("otclient_modules.character.tr_64"),
             icon = "/game_cyclopedia/images/character_icons/icon-character-store",
             open = "StoreSummary"
         },
         {
-            text = tr("Character Titles"),
+            text = tr("otclient_modules.character.tr_63"),
             icon = "/game_cyclopedia/images/character_icons/icon-character-titles",
             open = "CharacterTitles"
         }
@@ -1215,22 +1214,22 @@ end
 function Cyclopedia.loadCharacterBadges(showAccountInformation, playerOnline, playerPremium, loyaltyTitle, badgesVector)
     UI.CharacterStats.ListBadge:destroyChildren()
 
-    local playerOnlineStatus = tr("Offline")
+    local playerOnlineStatus = tr("otclient_modules.character.tr_62")
     local playerOnlineStatusColor = "#ff0000"
     if playerOnline == 1 then
-        playerOnlineStatus = tr("Online")
+        playerOnlineStatus = tr("otclient_modules.character.tr_61")
         playerOnlineStatusColor = "#00ff00"
     end
 
-    local accountStatus = tr("Free")
+    local accountStatus = tr("otclient_modules.character.tr_60")
     local accountStatusColor = "#ff0000"
     if playerPremium == 1 then
-        accountStatus = tr("Premium")
+        accountStatus = tr("otclient_modules.character.tr_59")
         accountStatusColor = "#00ff00"
     end
 
     if not loyaltyTitle or loyaltyTitle == "" then
-        loyaltyTitle = tr("None")
+        loyaltyTitle = tr("otclient_modules.character.tr_58")
     end
 
     Cyclopedia.setCharacterSkillValue("accountStatus", accountStatus, accountStatusColor)
@@ -1287,9 +1286,9 @@ function Cyclopedia.onParseCyclopediaStoreSummary(xpBoostTime, dailyRewardXpBoos
     UI.StoreSummary.ListBase.List.dailyReward.InstantRewardAccessValue:setText(instantRewards)
 
     if hasCharmExpansion then
-        UI.StoreSummary.ListBase.List.CharmPanel.CharmExpansionValue:setText(tr("Yes"))
+        UI.StoreSummary.ListBase.List.CharmPanel.CharmExpansionValue:setText(tr("otclient_modules.character.tr_57"))
     else
-        UI.StoreSummary.ListBase.List.CharmPanel.CharmExpansionValue:setText(tr("No"))
+        UI.StoreSummary.ListBase.List.CharmPanel.CharmExpansionValue:setText(tr("otclient_modules.character.tr_56"))
     end
 
     UI.StoreSummary.ListBase.List.hirelings.PurchasedHirelingsValue:setText(hirelingsObtained)
@@ -1336,47 +1335,47 @@ local  function getWeaponSkillName(skillType)
     
         local attackValue = data.weaponAttack + data.weaponFlatModifier + data.weaponDamage + data.weaponSkillLevel
         local stats = {
-            {name = tr("Flat Damage and healing"), value = data.flatDamage or 0, icon = false, percent = false},
-            {name = tr("Attack Value"), value = attackValue, icon = true, weaponElement = data.weaponElement},
-            {name = tr("From Base Attack"), value = data.weaponAttack or 0, align = "center", icon = false},
-            {name = tr("From Equipment"), value = data.weaponFlatModifier or 0, align = "center", icon = false},
+            {name = tr("otclient_modules.character.tr_55"), value = data.flatDamage or 0, icon = false, percent = false},
+            {name = tr("otclient_modules.character.tr_54"), value = attackValue, icon = true, weaponElement = data.weaponElement},
+            {name = tr("otclient_modules.character.tr_53"), value = data.weaponAttack or 0, align = "center", icon = false},
+            {name = tr("otclient_modules.character.tr_52"), value = data.weaponFlatModifier or 0, align = "center", icon = false},
     
             {name = getWeaponSkillName(data.weaponSkillType), value = data.weaponSkillLevel or 0, align = "center", icon = false},
-            {name = tr("From Combat Tactics"), value = data.weaponDamage or 0, align = "center", icon = false},
+            {name = tr("otclient_modules.character.tr_51"), value = data.weaponDamage or 0, align = "center", icon = false},
     
-            {name = tr("Life Leech"), value = data.lifeLeech or 0, icon = false, percent = true},
-            {name = tr("From Base"), value = data.lifeLeechBase or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Equipment"), value = data.lifeLeechImbuement or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Wheel"), value = data.lifeLeechWheel or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_50"), value = data.lifeLeech or 0, icon = false, percent = true},
+            {name = tr("otclient_modules.character.tr_49"), value = data.lifeLeechBase or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_48"), value = data.lifeLeechImbuement or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_47"), value = data.lifeLeechWheel or 0, align = "center", percent = true, icon = false},
     
-            {name = tr("Mana Leech"), value = data.manaLeech or 0, icon = false, percent = true},
-            {name = tr("From Base"), value = data.manaLeechBase or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Equipment"), value = data.manaLeechImbuement or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Wheel"), value = data.manaLeechWheel or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_46"), value = data.manaLeech or 0, icon = false, percent = true},
+            {name = tr("otclient_modules.character.tr_45"), value = data.manaLeechBase or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_44"), value = data.manaLeechImbuement or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_43"), value = data.manaLeechWheel or 0, align = "center", percent = true, icon = false},
     
-            {name = tr("Onslaught"), value = data.onslaught or 0, icon = false, percent = true},
-            {name = tr("From Base"), value = data.onslaughtBase or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Amplification"), value = data.onslaughtBonus or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_42"), value = data.onslaught or 0, icon = false, percent = true},
+            {name = tr("otclient_modules.character.tr_41"), value = data.onslaughtBase or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_40"), value = data.onslaughtBonus or 0, align = "center", percent = true, icon = false},
     
-            {name = tr("Critical Hit"), parent = "right", value = "", icon = false},
-            {name = tr("Chance"), parent = "right", value = data.critChance or 0, percent = true, icon = false},
-            {name = tr("Extra Damage"), parent = "right", value = data.critDamage or 0, percent = true, icon = false},
-            {name = tr("From Base"), parent = "right", value = data.critDamageBase or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Equipment"), parent = "right", value = data.critDamageImbuement or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Wheel"), parent = "right", value = data.critDamageWheel or 0, align = "center", percent = true, icon = false}
+            {name = tr("otclient_modules.character.tr_39"), parent = "right", value = "", icon = false},
+            {name = tr("otclient_modules.character.tr_38"), parent = "right", value = data.critChance or 0, percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_37"), parent = "right", value = data.critDamage or 0, percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_36"), parent = "right", value = data.critDamageBase or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_35"), parent = "right", value = data.critDamageImbuement or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_34"), parent = "right", value = data.critDamageWheel or 0, align = "center", percent = true, icon = false}
         }
         
         if data.perfectShotDamage then
             for i = 1, 5 do
                 if data.perfectShotDamage[i] and data.perfectShotDamage[i] > 0 then
                     table.insert(stats, {
-                        name = tr("Perfect Shot Damage Bonus"), 
+                        name = tr("otclient_modules.character.tr_33"), 
                         parent = "right", 
                         value = "", 
                         icon = false
                     })
                     table.insert(stats, {
-                        name = "     +" .. data.perfectShotDamage[i] .. tr(" from range ") .. i, 
+                        name = "     +" .. data.perfectShotDamage[i] .. tr("otclient_modules.character.tr_32") .. i, 
                         parent = "right", 
                         value = "", 
                         align = "center", 
@@ -1445,32 +1444,32 @@ local  function getWeaponSkillName(skillType)
         UI.DeffenceStats.leftPanel:destroyChildren()
     
         local stats = {
-            {name = tr("Defence Value"), value = data.defense or 0, icon = false, percent = false},
-            {name = tr("From Equipment"), value = data.defenseEquipment or 0, align = "center", icon = false},
-            {name = tr("From Wheel"), value = data.defenseWheel or 0, align = "center", icon = false},
+            {name = tr("otclient_modules.character.tr_31"), value = data.defense or 0, icon = false, percent = false},
+            {name = tr("otclient_modules.character.tr_30"), value = data.defenseEquipment or 0, align = "center", icon = false},
+            {name = tr("otclient_modules.character.tr_29"), value = data.defenseWheel or 0, align = "center", icon = false},
             {name = getWeaponSkillName(data.defenseSkillType), value = data.shieldingSkill or 0, align = "center", icon = false},
             
-            {name = tr("Armor Value"), value = data.armor or 0, icon = false, percent = false},
+            {name = tr("otclient_modules.character.tr_28"), value = data.armor or 0, icon = false, percent = false},
             
-            {name = tr("Mitigation"), value = data.mitigation or 0, icon = false, percent = true},
-            {name = tr("From Shielding"), value = data.mitigationShield or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Combat Tactics"), value = data.mitigationCombatTactics or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Base"), value = data.mitigationBase or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Equipment"), value = data.mitigationEquipment or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Wheel"), value = data.mitigationWheel or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_27"), value = data.mitigation or 0, icon = false, percent = true},
+            {name = tr("otclient_modules.character.tr_26"), value = data.mitigationShield or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_25"), value = data.mitigationCombatTactics or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_24"), value = data.mitigationBase or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_23"), value = data.mitigationEquipment or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_22"), value = data.mitigationWheel or 0, align = "center", percent = true, icon = false},
             
-            {name = tr("Dodge"), value = data.dodgeTotal or 0, icon = false, percent = true},
-            {name = tr("From Base"), value = data.dodgeBase or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Amplification"), value = data.dodgeBonus or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Wheel"), value = data.dodgeWheel or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_21"), value = data.dodgeTotal or 0, icon = false, percent = true},
+            {name = tr("otclient_modules.character.tr_20"), value = data.dodgeBase or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_19"), value = data.dodgeBonus or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_18"), value = data.dodgeWheel or 0, align = "center", percent = true, icon = false},
             
-            {name = tr("Magic Shield Capacity"), value = data.magicShieldCapacity or 0, icon = false, percent = false},
-            {name = tr("Flat"), value = data.magicShieldCapacityFlat or 0, align = "center", icon = false},
-            {name = tr("Percent"), value = data.magicShieldCapacityPercent or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_17"), value = data.magicShieldCapacity or 0, icon = false, percent = false},
+            {name = tr("otclient_modules.character.tr_16"), value = data.magicShieldCapacityFlat or 0, align = "center", icon = false},
+            {name = tr("otclient_modules.character.tr_15"), value = data.magicShieldCapacityPercent or 0, align = "center", percent = true, icon = false},
             
-            {name = tr("Reflect Physical"), value = data.reflectPhysical or 0, icon = false, percent = false},
+            {name = tr("otclient_modules.character.tr_14"), value = data.reflectPhysical or 0, icon = false, percent = false},
             
-            {name = tr("Resistances"), parent = "right", value = "", icon = false}
+            {name = tr("otclient_modules.character.tr_13"), parent = "right", value = "", icon = false}
         }
         
         local resistanceMap = {}
@@ -1567,21 +1566,21 @@ local  function getWeaponSkillName(skillType)
         UI.MiscStats.rightPanel:destroyChildren()
     
         local stats = {
-            {name = tr("Momentum"), value = data.momentumTotal or 0, icon = false, percent = true},
-            {name = tr("From Equipment"), value = data.momentumBase or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Amplification"), value = data.momentumBonus or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Wheel"), value = data.momentumWheel or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_12"), value = data.momentumTotal or 0, icon = false, percent = true},
+            {name = tr("otclient_modules.character.tr_11"), value = data.momentumBase or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_10"), value = data.momentumBonus or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_9"), value = data.momentumWheel or 0, align = "center", percent = true, icon = false},
             
-            {name = tr("Transcendence"), value = data.dodgeTotal or 0, icon = false, percent = true},
-            {name = tr("From Base"), value = data.dodgeBase or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Amplification"), value = data.dodgeBonus or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Event Bonus"), value = data.dodgeWheel or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_8"), value = data.dodgeTotal or 0, icon = false, percent = true},
+            {name = tr("otclient_modules.character.tr_7"), value = data.dodgeBase or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_6"), value = data.dodgeBonus or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_5"), value = data.dodgeWheel or 0, align = "center", percent = true, icon = false},
             
-            {name = tr("Damage Reflection"), value = data.damageReflectionTotal or 0, icon = false, percent = true},
-            {name = tr("From Base"), value = data.damageReflectionBase or 0, align = "center", percent = true, icon = false},
-            {name = tr("From Bonus"), value = data.damageReflectionBonus or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_4"), value = data.damageReflectionTotal or 0, icon = false, percent = true},
+            {name = tr("otclient_modules.character.tr_3"), value = data.damageReflectionBase or 0, align = "center", percent = true, icon = false},
+            {name = tr("otclient_modules.character.tr_2"), value = data.damageReflectionBonus or 0, align = "center", percent = true, icon = false},
             
-            {name = tr("Blessings"), value = (data.haveBlesses or 0) .. "/" .. (data.totalBlesses or 0), icon = false, percent = false},
+            {name = tr("otclient_modules.character.tr_1"), value = (data.haveBlesses or 0) .. "/" .. (data.totalBlesses or 0), icon = false, percent = false},
 
         }
         

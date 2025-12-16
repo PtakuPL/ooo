@@ -20,7 +20,7 @@ function AddServer.add()
 
     local added, error = ServerList.add(host, port, protocol, false)
     if not added then
-        displayErrorBox(tr('Error'), tr(error))
+        displayErrorBox(tr("otclient_modules.addserver.tr_1"), tr(error))
     else
         AddServer.hide()
     end

@@ -495,7 +495,7 @@ end
 function onParseStoreCreateProducts(storeProducts)
     local comboBox = controllerShop.ui.panelItem.comboBoxContainer.showAll
     comboBox:clearOptions()
-    comboBox:addOption(tr("Disable"), 0)
+    comboBox:addOption(tr("otclient_modules.game_store.tr_16"), 0)
 
     if #storeProducts.menuFilter > 0 then
         for k, t in pairs(storeProducts.menuFilter) do
@@ -626,10 +626,10 @@ function onParseStoreGetHistory(currentPage, pageCount, historyData)
     headerRow:setBackgroundColor("#363636")
     headerRow:setBorderColor("#00000077")
     headerRow:setBorderWidth(1)
-    headerRow.date:setText(tr("Date"))
-    headerRow.Balance:setText(tr("Balance"))
-    headerRow.Description:setText(tr("Description"))
-    controllerShop.ui.transferHistory.lblPage:setText(tr("Page %d/%d", currentPage + 1, pageCount))
+    headerRow.date:setText(tr("otclient_modules.game_store.tr_15"))
+    headerRow.Balance:setText(tr("otclient_modules.game_store.tr_14"))
+    headerRow.Description:setText(tr("otclient_modules.game_store.tr_13"))
+    controllerShop.ui.transferHistory.lblPage:setText(tr("otclient_modules.game_store.tr_12", currentPage + 1, pageCount))
     for i, data in ipairs(historyData) do
         local row = g_ui.createWidget("historyData2", transferHistory)
         row.date:setText(convert_timestamp(data[1]))
@@ -851,7 +851,7 @@ function getCoinsWebsite()
     if GameStore.website.WEBSITE_GETCOINS ~= "" then
         g_platform.openUrl(GameStore.website.WEBSITE_GETCOINS)
     else
-        sendMessageBox(tr("Error"), tr("No data for store URL."))
+        sendMessageBox(tr("otclient_modules.game_store.tr_11"), tr("otclient_modules.game_store.tr_10"))
     end
 end
 -- /*=============================================
@@ -922,11 +922,11 @@ function chooseOffert(self, focusedChild)
         priceLabel:setText(offer.price)
 
         if offer.count and offer.count > 0 then
-            offerPanel:getChildById('btnBuy'):setText(tr("Buy %dx", offer.count))
+            offerPanel:getChildById('btnBuy'):setText(tr("otclient_modules.game_store.tr_9", offer.count))
         end
 
         if product.configurable then
-            offerPanel:getChildById('btnBuy'):setText(tr("Configurable"))
+            offerPanel:getChildById('btnBuy'):setText(tr("otclient_modules.game_store.tr_8"))
         end
 
         local isTransferable = offer.coinType == GameStore.CoinType.Transferable
@@ -1002,14 +1002,14 @@ function chooseOffert(self, focusedChild)
                         destroyWindow(processingWindow)
                     end
                     controllerShop.ui:hide()
-                    processingWindow = displayGeneralBox(tr('Processing purchase.'), tr('Your purchase is being processed'),
+                    processingWindow = displayGeneralBox(tr("otclient_modules.game_store.tr_7"), tr("otclient_modules.game_store.tr_6"),
                     {
-                      { text = tr('ok'),  callback = closeWindow },
+                      { text = tr("otclient_modules.game_store.tr_5"),  callback = closeWindow },
                       anchor = 50
                     }, closeWindow, closeWindow)
 
                 else
-                    displayErrorBox(controllerShop.ui:getText(), tr("You don't have enough coins"))
+                    displayErrorBox(controllerShop.ui:getText(), tr("otclient_modules.game_store.tr_4"))
                 end
                 destroyWindow(acceptWindow)
             end
@@ -1021,13 +1021,13 @@ function chooseOffert(self, focusedChild)
             local detailsMessage = string.format("%dx %s\nPrice: %d %s", offer.count or 1, product.name, offer.price, coinType)
             local data = getProductData(product)
 
-            acceptWindow = displayGeneralSHOPBox(tr('Confirmation of Purchase'), confirmationMessage, detailsMessage, {
+            acceptWindow = displayGeneralSHOPBox(tr("otclient_modules.game_store.tr_3"), confirmationMessage, detailsMessage, {
                 {
-                    text = tr('Buy'),
+                    text = tr("otclient_modules.game_store.tr_2"),
                     callback = acceptFunc
                 },
                 {
-                    text = tr('Cancel'),
+                    text = tr("otclient_modules.game_store.tr_1"),
                     callback = cancelFunc
                 },
                 anchor = AnchorHorizontalCenter

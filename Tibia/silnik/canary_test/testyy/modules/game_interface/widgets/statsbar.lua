@@ -39,15 +39,15 @@ local currentStats = {
 
 local skillsLineHeight = 20
 local skillsTuples = {
-    {skill = nil,               key = 'experience', icon = '/images/icons/icon_experience',  placement = 'center',   order = 0,  name = tr("Level")},
-    {skill = nil,               key = 'magic',      icon = '/images/icons/icon_magic',       placement = 'left',     order = 1,  name = tr("Magic Level")},
-    {skill = Skill.Axe,         key = 'axe',        icon = '/images/icons/icon_axe',         placement = 'right',    order = 1,  name = tr("Axe Fighting Skill")},
-    {skill = Skill.Club,        key = 'club',       icon = '/images/icons/icon_club',        placement = 'left',     order = 2,  name = tr("Club Fighting Skill")},
-    {skill = Skill.Distance,    key = 'distance',   icon = '/images/icons/icon_distance',    placement = 'right',    order = 2,  name = tr("Distance Fighting Skill")},
-    {skill = Skill.Fist,        key = 'fist',       icon = '/images/icons/icon_fist',        placement = 'left',     order = 3,  name = tr("Fist Fighting Skill")},
-    {skill = Skill.Shielding,   key = 'shielding',  icon = '/images/icons/icon_shielding',   placement = 'right',    order = 3,  name = tr("Shielding Skill")},
-    {skill = Skill.Sword,       key = 'sword',      icon = '/images/icons/icon_sword',       placement = 'left',     order = 4,  name = tr("Sword Fighting Skill")},
-    {skill = Skill.Fishing,     key = 'fishing',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = tr("Fishing Skill")},
+    {skill = nil,               key = 'experience', icon = '/images/icons/icon_experience',  placement = 'center',   order = 0,  name = tr("otclient_modules.statsbar.tr_12")},
+    {skill = nil,               key = 'magic',      icon = '/images/icons/icon_magic',       placement = 'left',     order = 1,  name = tr("otclient_modules.statsbar.tr_11")},
+    {skill = Skill.Axe,         key = 'axe',        icon = '/images/icons/icon_axe',         placement = 'right',    order = 1,  name = tr("otclient_modules.statsbar.tr_10")},
+    {skill = Skill.Club,        key = 'club',       icon = '/images/icons/icon_club',        placement = 'left',     order = 2,  name = tr("otclient_modules.statsbar.tr_9")},
+    {skill = Skill.Distance,    key = 'distance',   icon = '/images/icons/icon_distance',    placement = 'right',    order = 2,  name = tr("otclient_modules.statsbar.tr_8")},
+    {skill = Skill.Fist,        key = 'fist',       icon = '/images/icons/icon_fist',        placement = 'left',     order = 3,  name = tr("otclient_modules.statsbar.tr_7")},
+    {skill = Skill.Shielding,   key = 'shielding',  icon = '/images/icons/icon_shielding',   placement = 'right',    order = 3,  name = tr("otclient_modules.statsbar.tr_6")},
+    {skill = Skill.Sword,       key = 'sword',      icon = '/images/icons/icon_sword',       placement = 'left',     order = 4,  name = tr("otclient_modules.statsbar.tr_5")},
+    {skill = Skill.Fishing,     key = 'fishing',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = tr("otclient_modules.statsbar.tr_4")},
 }
 
 StatsBar = {}
@@ -418,12 +418,12 @@ local function openDropMenu(mousePos)
     if current and current.skills then
         for _, skillTuple in ipairs(skillsTuples) do
             if not g_settings.getBoolean('top_statsbar_' .. skillTuple.key) then
-                menu:addOption(tr('Show') .. ' ' .. tr(skillTuple.name), function()
+                menu:addOption(tr("otclient_modules.statsbar.tr_3") .. ' ' .. tr(skillTuple.name), function()
                     g_settings.set('top_statsbar_' .. skillTuple.key, true)
                     reloadSkillsTab(current.skills, current)
                 end)
             else
-                menu:addOption(tr('Hide') .. ' ' .. tr(skillTuple.name), function()
+                menu:addOption(tr("otclient_modules.statsbar.tr_2") .. ' ' .. tr(skillTuple.name), function()
                     g_settings.set('top_statsbar_' .. skillTuple.key, false)
                     reloadSkillsTab(current.skills, current)
                 end)
@@ -432,7 +432,7 @@ local function openDropMenu(mousePos)
     end
 
     menu:addSeparator()
-    menu:addOption(tr('Hide Customisable Status Bars'), function()
+    menu:addOption(tr("otclient_modules.statsbar.tr_1"), function()
         StatsBar.hideAll()
         modules.game_healthcircle.setStatsBarOption("hide")
     end)

@@ -27,10 +27,25 @@ def _read_text(path: str) -> str:
 
 
 def _write_text_atomic(path: str, content: str) -> None:
+    original_mode = None
+    try:
+        original_mode = os.stat(path).st_mode & 0o777
+    except FileNotFoundError:
+        original_mode = None
     tmp_path = f"{path}.tmp"
     with open(tmp_path, "w", encoding="utf-8", newline="\n") as f:
         f.write(content)
+    if original_mode is not None:
+        try:
+            os.chmod(tmp_path, original_mode)
+        except Exception:
+            pass
     os.replace(tmp_path, path)
+    if original_mode is not None:
+        try:
+            os.chmod(path, original_mode)
+        except Exception:
+            pass
 
 
 def _load_json(path: str) -> dict:

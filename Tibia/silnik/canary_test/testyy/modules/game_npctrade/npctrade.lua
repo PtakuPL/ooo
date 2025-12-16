@@ -187,7 +187,7 @@ function itemPopup(self, mousePosition, mouseButton)
     if mouseButton == MouseRightButton then
         local menu = g_ui.createWidget('PopupMenu')
         menu:setGameMenu(true)
-        menu:addOption(tr('Look'), function()
+        menu:addOption(tr("otclient_modules.npctrade.tr_2"), function()
             return g_game.inspectNpcTrade(self:getItem())
         end)
         menu:display(mousePosition)
@@ -250,7 +250,7 @@ function clearSelectedItem()
 end
 
 function getCurrentTradeType()
-    if tradeButton:getText() == tr('Buy') then
+    if tradeButton:getText() == tr("otclient_modules.npctrade.tr_1") then
         return BUY
     else
         return SELL

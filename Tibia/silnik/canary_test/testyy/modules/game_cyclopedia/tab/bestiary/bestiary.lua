@@ -94,15 +94,15 @@ function Cyclopedia.CreateCreatureItems(data)
         widget:setId(index)
 
         if index == 0 then
-            widget.Title:setText(tr("Common") .. ":")
+            widget.Title:setText(tr("otclient_modules.bestiary.tr_13") .. ":")
         elseif index == 1 then
-            widget.Title:setText(tr("Uncommon") .. ":")
+            widget.Title:setText(tr("otclient_modules.bestiary.tr_12") .. ":")
         elseif index == 2 then
-            widget.Title:setText(tr("Semi-Rare") .. ":")
+            widget.Title:setText(tr("otclient_modules.bestiary.tr_11") .. ":")
         elseif index == 3 then
-            widget.Title:setText(tr("Rare") .. ":")
+            widget.Title:setText(tr("otclient_modules.bestiary.tr_10") .. ":")
         else
-            widget.Title:setText(tr("Very Rare") .. ":")
+            widget.Title:setText(tr("otclient_modules.bestiary.tr_9") .. ":")
         end
 
         for i = 1, 15 do
@@ -264,7 +264,7 @@ function Cyclopedia.loadBestiarySelectedCreature(data)
     UI.ListBase.CreatureInfo.LocationField.Textlist.Text:setText(data.location)
 
     if data.AnimusMasteryPoints and data.AnimusMasteryPoints > 1 then
-        UI.ListBase.CreatureInfo.AnimusMastery:setTooltip(string.format(tr("The Animus Mastery for this creature is unlocked.\nIt yields %s%% bonus experience points, plus an additional 0.1%% for every 10 Animus Masteries unlocked, up to a maximum of 4%%.\nYou currently benefit from %s%% bonus experience points due to having unlocked %s Animus Masteries."), (data.AnimusMasteryBonus / 10), (data.AnimusMasteryBonus / 10), data.AnimusMasteryPoints))
+        UI.ListBase.CreatureInfo.AnimusMastery:setTooltip(string.format(tr("otclient_modules.bestiary.tr_8"), (data.AnimusMasteryBonus / 10), (data.AnimusMasteryBonus / 10), data.AnimusMasteryPoints))
         UI.ListBase.CreatureInfo.AnimusMastery:setVisible(true)
     else
         UI.ListBase.CreatureInfo.AnimusMastery:removeTooltip()
@@ -293,8 +293,8 @@ function Cyclopedia.CreateBestiaryCategoryItem(Data)
     widget.ClassIcon:setImageSource("/game_cyclopedia/images/bestiary/creatures/" .. Data.name:lower():gsub(" ", "_"))
     widget.Category = Data.name
     widget:setColor("#C0C0C0")
-    widget.TotalValue:setText(tr("Total:") .. " " .. Data.amount)
-    widget.KnownValue:setText(tr("Known:") .. " " .. Data.know)
+    widget.TotalValue:setText(tr("otclient_modules.bestiary.tr_7") .. " " .. Data.amount)
+    widget.KnownValue:setText(tr("otclient_modules.bestiary.tr_6") .. " " .. Data.know)
 
     function widget.ClassBase:onClick()
         UI.BackPageButton:setEnabled(true)
@@ -427,7 +427,7 @@ function Cyclopedia.CreateBestiaryCreaturesItem(data)
     widget.Sprite:getCreature():setStaticWalking(1000)
 
     if data.AnimusMasteryBonus > 0 then
-        widget.AnimusMastery:setTooltip(string.format(tr("The Animus Mastery for this creature is unlocked.\nIt yields %s%% bonus experience points, plus an additional 0.1%% for every 10 Animus Masteries unlocked, up to a maximum of 4%%.\nYou currently benefit from %s%% bonus experience points due to having unlocked %s Animus Masteries."), data.AnimusMasteryBonus, data.AnimusMasteryBonus, animusMasteryPoints))
+        widget.AnimusMastery:setTooltip(string.format(tr("otclient_modules.bestiary.tr_5"), data.AnimusMasteryBonus, data.AnimusMasteryBonus, animusMasteryPoints))
         widget.AnimusMastery:setVisible(true)
     else
         widget.AnimusMastery:removeTooltip()
@@ -442,7 +442,7 @@ function Cyclopedia.CreateBestiaryCreaturesItem(data)
         if data.currentLevel < 1 then
             widget.KillsLabel:setText("?")
             widget.Sprite:getCreature():setShader("Outfit - cyclopedia-black")
-            widget.Name:setText(tr("Unknown"))
+            widget.Name:setText(tr("otclient_modules.bestiary.tr_4"))
             widget.AnimusMastery:setVisible(false)
         else
             widget.KillsLabel:setText(string.format("%d / 3", data.currentLevel - 1))
@@ -793,7 +793,7 @@ function onTrackerClick(widget, mousePosition, mouseButton)
     local menu = g_ui.createWidget("PopupMenu")
 
     menu:setGameMenu(true)
-    menu:addOption(tr("Stop Tracking") .. " " .. widget.label:getText(), function()
+    menu:addOption(tr("otclient_modules.bestiary.tr_3") .. " " .. widget.label:getText(), function()
         g_game.sendStatusTrackerBestiary(taskId, false)
     end)
     menu:display(menuPosition)
@@ -810,12 +810,12 @@ function onAddLootClick(widget, mousePosition, mouseButton)
     menu:setGameMenu(true)
 
     if not quickLoot.lootExists(itemId, lootFilterValue) then
-        menu:addOption(tr("Add to Loot List"),
+        menu:addOption(tr("otclient_modules.bestiary.tr_2"),
         function()
             quickLoot.addLootList(itemId, lootFilterValue)
         end)
     else
-        menu:addOption(tr("Remove from Loot List"), 
+        menu:addOption(tr("otclient_modules.bestiary.tr_1"), 
         function() 
             quickLoot.removeLootList(itemId, lootFilterValue)
         end)

@@ -42,12 +42,12 @@ end
 -- Sets up main-panel toggle buttons, locates and stores UI widget references, builds the window type map with their render functions, imports Cyclopedia styles, registers game event handlers for bestiary/charms/items/character/boss slots, creates and configures the Bestiary and Bosstiary tracker mini-windows and their menus, initializes tracker state and filters, prepares boss-slot data, and binds global keybindings to toggle the trackers. Also updates the charms icon for client versions 1410 and above.
 function controllerCyclopedia:onGameStart()
     if g_game.getClientVersion() >= 1310 then
-        CyclopediaButton = modules.game_mainpanel.addToggleButton('CyclopediaButton', tr('Cyclopedia'),
+        CyclopediaButton = modules.game_mainpanel.addToggleButton('CyclopediaButton', tr("otclient_modules.game_cyclopedia.tr_6"),
             '/images/options/cooldowns', function() toggle("items") end, false, 7)
-        ButtonBossSlot = modules.game_mainpanel.addToggleButton("bossSlot", tr("Open Boss Slots dialog"),
+        ButtonBossSlot = modules.game_mainpanel.addToggleButton("bossSlot", tr("otclient_modules.game_cyclopedia.tr_5"),
             "/images/options/ButtonBossSlot", function() toggle("bossSlot") end, false, 20)
         CyclopediaButton:setOn(false)
-        ButtonBestiary = modules.game_mainpanel.addToggleButton("bosstiary", tr("Open Bosstiary dialog"),
+        ButtonBestiary = modules.game_mainpanel.addToggleButton("bosstiary", tr("otclient_modules.game_cyclopedia.tr_4"),
             "/images/options/ButtonBosstiary", function() toggle("bosstiary") end, false, 17)
 
         contentContainer = controllerCyclopedia.ui:recursiveGetChildById('contentContainer')
@@ -113,7 +113,7 @@ function controllerCyclopedia:onGameStart()
     =               Tracker Bestiary                      =
     =================================================== ]] --
 
-        trackerButton = modules.game_mainpanel.addToggleButton("trackerButton", tr("Bestiary Tracker"),
+        trackerButton = modules.game_mainpanel.addToggleButton("trackerButton", tr("otclient_modules.game_cyclopedia.tr_3"),
             "/images/options/bestiaryTracker", Cyclopedia.toggleBestiaryTracker, false, 17)
 
         trackerButton:setOn(false)
@@ -152,11 +152,11 @@ function controllerCyclopedia:onGameStart()
     =================================================== ]] --
 
         trackerButtonBosstiary = modules.game_mainpanel.addToggleButton("bosstiarytrackerButton",
-            tr("Bosstiary Tracker"), "/images/options/bosstiaryTracker", Cyclopedia.toggleBosstiaryTracker, false, 17)
+            tr("otclient_modules.game_cyclopedia.tr_2"), "/images/options/bosstiaryTracker", Cyclopedia.toggleBosstiaryTracker, false, 17)
 
         trackerButtonBosstiary:setOn(false)
         trackerMiniWindowBosstiary = g_ui.createWidget('BestiaryTracker', modules.game_interface.getRightPanel())
-        trackerMiniWindowBosstiary:setText(tr("Bosstiary Tracker"))
+        trackerMiniWindowBosstiary:setText(tr("otclient_modules.game_cyclopedia.tr_1"))
 
         trackerMiniWindowBosstiary.menuButton.onClick = function(widget, mousePos, mouseButton)
             local menu = g_ui.createWidget('bestiaryTrackerMenu')

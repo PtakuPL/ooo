@@ -188,7 +188,7 @@ function updateHistory()
         widget:getChildById("description"):setText(history[i].name)
     end
 
-    historyPanel:getChildById("pageLabel"):setText(tr("Page") .. " " .. currentPage .. "/" .. totalPages)
+    historyPanel:getChildById("pageLabel"):setText(tr("otclient_modules.game_shop.tr_21") .. " " .. currentPage .. "/" .. totalPages)
 end
 
 function onGameShopUpdateHistory(historyList)
@@ -296,7 +296,7 @@ function onGameShopUpdatePoints(data)
         transferWindow.taskPointsAmountScrollbar:show()
         transferWindow.taskPointsCoin:show()
         transferWindow.taskPointsBalance:show()
-        transferWindow.taskPointsBalance:setText(tr("Transferable Task points: ") .. comma_value(premiumSecondPoints))
+        transferWindow.taskPointsBalance:setText(tr("otclient_modules.game_shop.tr_20") .. comma_value(premiumSecondPoints))
         transferWindow.taskPointsAmountScrollbar:setMaximum(premiumSecondPoints)
     else
         balanceSecondWidget:hide()
@@ -309,7 +309,7 @@ function onGameShopUpdatePoints(data)
         transferWindow.taskPointsCoin:hide()
     end
 
-    transferWindow.coinsBalance:setText(tr("Transferable Tibia Coins: ") .. comma_value(premiumPoints))
+    transferWindow.coinsBalance:setText(tr("otclient_modules.game_shop.tr_19") .. comma_value(premiumPoints))
     transferWindow.coinsAmountScrollbar:setMaximum(premiumPoints)
 end
 
@@ -490,10 +490,10 @@ function updateDescription(self)
     buyButton:setEnabled(self.data.price <= globalPoints)
 
     if self.additionalPriceValue and self.additionalCountValue then
-        buyButton:setText(tr("Buy") .. " " .. self.data.count)
+        buyButton:setText(tr("otclient_modules.game_shop.tr_18") .. " " .. self.data.count)
 
         additionalPriceWidget:setEnabled(self.additionalPriceValue <= globalPoints)
-        additionalBuyButton:setText(tr("Buy") .. " " .. self.additionalCountValue)
+        additionalBuyButton:setText(tr("otclient_modules.game_shop.tr_17") .. " " .. self.additionalCountValue)
         additionalBuyButton:show()
         additionalBuyButton:setEnabled(self.additionalPriceValue <= globalPoints)
         additionalBuyButton.price = self.additionalPriceValue
@@ -512,7 +512,7 @@ function updateDescription(self)
         buyButton.price = nil
         buyButton.count = nil
 
-        buyButton:setText(tr("Buy"))
+        buyButton:setText(tr("otclient_modules.game_shop.tr_16"))
         additionalPriceWidget:hide()
     end
 
@@ -572,22 +572,22 @@ end
 
 function onOfferBuy(self)
     if not selectedOffer then
-        displayInfoBox(tr("Error"), tr("Something went wrong, make sure to select category and offer."))
+        displayInfoBox(tr("otclient_modules.game_shop.tr_15"), tr("otclient_modules.game_shop.tr_14"))
         return
     end
 
     hide()
 
-    local title = tr("Purchase Confirmation")
+    local title = tr("otclient_modules.game_shop.tr_13")
     local msg
     if self.count and self.count > 1 then
         msg =
-            tr("Do you want to buy") .. " " ..
-            self.count .. "x " .. selectedOffer.data.name .. " " .. tr("for") .. " " .. comma_value(self.price) .. " " .. tr("points?")  
+            tr("otclient_modules.game_shop.tr_12") .. " " ..
+            self.count .. "x " .. selectedOffer.data.name .. " " .. tr("otclient_modules.game_shop.tr_11") .. " " .. comma_value(self.price) .. " " .. tr("otclient_modules.game_shop.tr_10")  
     else
         msg =
-            tr("Do you want to buy") .. " " ..
-            selectedOffer.data.name .. " " .. tr("for") .. " " .. comma_value(selectedOffer.data.price) .. " " .. tr("points?")
+            tr("otclient_modules.game_shop.tr_9") .. " " ..
+            selectedOffer.data.name .. " " .. tr("otclient_modules.game_shop.tr_8") .. " " .. comma_value(selectedOffer.data.price) .. " " .. tr("otclient_modules.game_shop.tr_7")
     end
 
     if selectedOffer.data.name == "Name Change" then
@@ -596,8 +596,8 @@ function onOfferBuy(self)
             title,
             msg,
             {
-                {text = tr("Yes"), callback = changeName},
-                {text = tr("No"), callback = buyCanceled},
+                {text = tr("otclient_modules.game_shop.tr_6"), callback = changeName},
+                {text = tr("otclient_modules.game_shop.tr_5"), callback = buyCanceled},
                 anchor = AnchorHorizontalCenter
             },
             changeName,
@@ -609,8 +609,8 @@ function onOfferBuy(self)
             title,
             msg,
             {
-                {text = tr("Yes"), callback = buyConfirmed},
-                {text = tr("No"), callback = buyCanceled},
+                {text = tr("otclient_modules.game_shop.tr_4"), callback = buyConfirmed},
+                {text = tr("otclient_modules.game_shop.tr_3"), callback = buyCanceled},
                 anchor = AnchorHorizontalCenter
             },
             buyConfirmed,
@@ -748,11 +748,11 @@ function displayInfoBoxWithCallback(title, message, callback)
 end
 
 function changeCoinsAmount(value)
-    transferWindow:getChildById("coinsAmountLabel"):setText(tr("Amount to gift:") .. " " .. comma_value(value))
+    transferWindow:getChildById("coinsAmountLabel"):setText(tr("otclient_modules.game_shop.tr_2") .. " " .. comma_value(value))
 end
 
 function changeTaskPointsAmount(value)
-    transferWindow:getChildById("taskPointsAmountLabel"):setText(tr("Amount to gift:") .. " " .. comma_value(value))
+    transferWindow:getChildById("taskPointsAmountLabel"):setText(tr("otclient_modules.game_shop.tr_1") .. " " .. comma_value(value))
 end
 
 function confirmGiftCoins()

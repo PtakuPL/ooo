@@ -21,7 +21,7 @@ function init()
     })
 
     g_keyboard.bindKeyDown('Escape', hideWindowzz)
-	taskButton = modules.client_topmenu.addLeftGameButton('taskButton', tr('Tasks'), '/modules/game_tasks/images/taskIcon', toggleWindow)
+	taskButton = modules.client_topmenu.addLeftGameButton('taskButton', tr("otclient_modules.tasks.tr_16"), '/modules/game_tasks/images/taskIcon', toggleWindow)
     ProtocolGame.registerExtendedJSONOpcode(215, parseOpcode)
 end
 
@@ -121,7 +121,7 @@ end
 
 function start()
     if (not selectedEntry) then
-        return not setTaskConsoleText(tr("Please select monster from monster list."), "red")
+        return not setTaskConsoleText(tr("otclient_modules.tasks.tr_15"), "red")
     end
 
     sendOpcode({
@@ -132,7 +132,7 @@ end
 
 function finish()
     if (not selectedEntry) then
-        return not setTaskConsoleText(tr("Please select monster from monster list."), "red")
+        return not setTaskConsoleText(tr("otclient_modules.tasks.tr_14"), "red")
     end
 
     sendOpcode({
@@ -150,7 +150,7 @@ function abort()
     end
 
     if (not selectedEntry) then
-        return not setTaskConsoleText(tr("Please select monster from monster list."), "red")
+        return not setTaskConsoleText(tr("otclient_modules.tasks.tr_13"), "red")
     end
 
     local yesFunc = function()
@@ -167,13 +167,13 @@ function abort()
         cancelConfirm = nil
     end
 
-    cancelConfirm = displayGeneralBox(tr('Tasks'), tr("Do you really want to abort this task?"), {
+    cancelConfirm = displayGeneralBox(tr("otclient_modules.tasks.tr_12"), tr("otclient_modules.tasks.tr_11"), {
         {
-            text = tr('Yes'),
+            text = tr("otclient_modules.tasks.tr_10"),
             callback = yesFunc
         },
         {
-            text = tr('No'),
+            text = tr("otclient_modules.tasks.tr_9"),
             callback = noFunc
         },
         anchor = AnchorHorizontalCenter
@@ -196,12 +196,12 @@ function updateTasks(data)
         table.insert(playerTaskIds, task.id)
         button.creature:setOutfit(task.looktype)
         button.name:setText(task.name)
-        button.kills:setText(tr('Kills:') .. ' ' .. task.done .. '/' .. task.kills)
-        button.reward:setText(tr('Reward:') .. ' ' .. task.exp .. ' exp')
+        button.kills:setText(tr("otclient_modules.tasks.tr_8") .. ' ' .. task.done .. '/' .. task.kills)
+        button.reward:setText(tr("otclient_modules.tasks.tr_7") .. ' ' .. task.exp .. ' exp')
         if not (task.taskPoints == nil) then
-          button.rewardTaskPoints:setText(tr('Task Points:') .. ' ' .. task.taskPoints .. '')
+          button.rewardTaskPoints:setText(tr("otclient_modules.tasks.tr_6") .. ' ' .. task.taskPoints .. '')
         else
-          button.rewardTaskPoints:setText(tr('Task Points:') .. ' 0')
+          button.rewardTaskPoints:setText(tr("otclient_modules.tasks.tr_5") .. ' 0')
         end
         local progress = 159 * task.done / task.kills
         button.progress:setWidth(progress)
@@ -214,12 +214,12 @@ function updateTasks(data)
             button:setId(task.id)
             button.creature:setOutfit(task.looktype)
             button.name:setText(task.name)
-            button.kills:setText(tr('Kills:') .. ' ' .. task.kills)
-            button.reward:setText(tr('Reward:') .. ' ' .. task.exp .. ' exp')
+            button.kills:setText(tr("otclient_modules.tasks.tr_4") .. ' ' .. task.kills)
+            button.reward:setText(tr("otclient_modules.tasks.tr_3") .. ' ' .. task.exp .. ' exp')
             if not (task.taskPoints == nil) then
-              button.rewardTaskPoints:setText(tr('Task Points:') .. ' ' .. task.taskPoints .. '')
+              button.rewardTaskPoints:setText(tr("otclient_modules.tasks.tr_2") .. ' ' .. task.taskPoints .. '')
             else
-              button.rewardTaskPoints:setText(tr('Task Points:') .. ' 0')
+              button.rewardTaskPoints:setText(tr("otclient_modules.tasks.tr_1") .. ' 0')
             end
             button.progress:setWidth(0)
             selectionList:focusChild(button)

@@ -110,8 +110,8 @@
       "timestamp": 1765489677.0664437
     },
     "otclient_modules": {
-      "count": 0,
-      "timestamp": 1765516003.586198
+      "count": 861,
+      "timestamp": 1765864259.486552
     },
     "otclient_mods": {
       "count": 0,
@@ -176,7 +176,8 @@
     "mounts": -43324,
     "npc": 4,
     "scripts": 172,
-    "actions": 11
+    "actions": 11,
+    "otclient_modules": 861
   },
   "migrations_done": false
 }

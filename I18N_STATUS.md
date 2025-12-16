@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-16 10:17:01 UTC  
+> **Aktualizacja:** 2025-12-16 10:19:05 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 24448  
-> **LIVE:** Cykl #173 | Status: 🟢 RUNNING | Faza: TRANSLATION_SYNC | Etap: cycle_end | Kategoria: ro | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T09:16:58Z
+> **LIVE:** Cykl #191 | Status: 🟢 RUNNING | Faza: TRANSLATION_SYNC | Etap: cycle_end | Kategoria: el | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T09:19:03Z
 
 ---
 
@@ -31,10 +31,10 @@
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
-| 📂 **Wszystkie pliki** | **17,077** | 100% | cały projekt |
-| 📜 Do skanowania (kod) | **7,913** | 46.3% | pliki z kodem/tekstami |
+| 📂 **Wszystkie pliki** | **17,085** | 100% | cały projekt |
+| 📜 Do skanowania (kod) | **7,921** | 46.4% | pliki z kodem/tekstami |
 | 🔍 **Przeskanowane** | **4,973** | **62.8%** | historia workera |
-| ⏳ Nie przeskanowane | **2,940** | 37.2% | czekają na skan |
+| ⏳ Nie przeskanowane | **2,948** | 37.2% | czekają na skan |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -45,7 +45,7 @@
 | 🌐 HTML (.html) | 6 | widoki |
 | 📦 JavaScript (.js) | 0 | frontend |
 | ⚙️ C++ (.cpp/.hpp/.h) | 839 | silnik serwera |
-| 📋 JSON (.json) | 1,032 | konfiguracje |
+| 📋 JSON (.json) | 1,040 | konfiguracje |
 
 ### ✅ Status Migracji
 | Status | Ilość | Procent | Opis |
@@ -76,7 +76,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#173** | od uruchomienia |
+| 🔄 Cykl aktualny | **#191** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **574** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -177,42 +177,42 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   173 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   191 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🌍 TRANSLATION_SYNC (cycle_end)           │
-│ Kategoria: 📁 RO                                     │
+│ Kategoria: 📁 EL                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
 │ Postęp: 0/0 units                                             │
 │ Info: cycle end                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-16T09:16:58Z           │
+│ ❤️ Heartbeat: 2025-12-16T09:19:03Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2025-12-16 09:16:58 | TRANSLATION_SYNC:sync_done | ro | ok | server.json
-- 2025-12-16 09:16:58 | TRANSLATION_SYNC:sync_start | ro | ok | server.json
-- 2025-12-16 09:16:50 | TRANSLATION_SYNC:sync_done | ro | ok | scripts.json
-- 2025-12-16 09:16:49 | TRANSLATION_SYNC:sync_start | ro | ok | scripts.json
-- 2025-12-16 09:16:43 | TRANSLATION_SYNC:sync_done | ro | ok | quests.json
-- 2025-12-16 09:16:43 | TRANSLATION_SYNC:sync_start | ro | ok | quests.json
+- 2025-12-16 09:19:03 | TRANSLATION_SYNC:sync_done | el | ok | quests.json
+- 2025-12-16 09:19:03 | TRANSLATION_SYNC:sync_start | el | ok | quests.json
+- 2025-12-16 09:18:56 | TRANSLATION_SYNC:sync_done | el | ok | otclient_modules.json
+- 2025-12-16 09:18:56 | TRANSLATION_SYNC:sync_start | el | ok | otclient_modules.json
+- 2025-12-16 09:18:49 | TRANSLATION_SYNC:sync_done | el | ok | otclient_data.json
+- 2025-12-16 09:18:49 | TRANSLATION_SYNC:sync_start | el | ok | otclient_data.json
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [ro] → ok (keys+66, files+1) — lang=ro file=server.json
+- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [el] → ok (keys+117, files+1) — lang=el file=quests.json
 
 
 
 
 ## 📅 Dziś (UTC)
 
-- Cykle: **173**
+- Cykle: **191**
 - MIGRATION: **+5078** kluczy, **554** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, globalevents, items, libs...
 - Błędy: **0**
@@ -229,7 +229,7 @@
 | ⬜ Plików bez kluczy | **123** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **574** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#173** | continuous mode |
+| 🔄 Cykli wykonanych | **#191** | continuous mode |
 
 ---
 
@@ -435,7 +435,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #173 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #191 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -478,7 +478,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-16 10:17:01  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-16 10:19:05  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

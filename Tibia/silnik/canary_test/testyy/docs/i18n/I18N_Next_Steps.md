@@ -1,7 +1,7 @@
 # Internacjonalizacja Testyy — Kolejne Kroki i Priorytety
 
 Dokument utworzony: 2025-01-XX  
-Ostatnia aktualizacja: **2025-12-12**
+Ostatnia aktualizacja: **2025-12-16**
 
 ---
 
@@ -20,27 +20,24 @@ Zmodyfikować protokół komunikacji tak, aby **serwer wysyłał klucze i18n**, 
 
 ### Co trzeba zrobić po stronie KLIENTA (testyy)
 
-#### Etap 1: Analiza protocolgame.cpp
-- [ ] Przeanalizować `parseTextMessage()` w `src/client/protocolgame.cpp`
-- [ ] Zidentyfikować format pakietu tekstowego (opcode, type, text)
-- [ ] Sprawdzić jak działa integracja z `tr()` w `modules/corelib/keyboard.lua`
+#### Stan po stronie klienta (ZROBIONE)
+- [x] Obsługa pakietów I18N przez dedykowane opcode:
+  - `0xBC` (188) `LocalizedTextMessage`
+  - `0x99` (153) `LocalizedCreatureSay`
+  - `0xC5` (197) `LocalizedTextMessageArgs`
+  - `0xC4` (196) `LocalizedCreatureSayArgs`
+- [x] Parser args: odczyt `argc + args[]` i wywołanie `tr(i18nKey, ...)`.
+- [x] Fix: `tr()` nie myli compact ID wyglądających jak liczby (np. "00").
 
-#### Etap 2: Modyfikacja parsera
-- [ ] Rozszerzyć `parseTextMessage()` o odczyt opcjonalnego pola `i18nKey`
-- [ ] Format pakietu: `[opcode][type][text][hasI18nKey:byte][i18nKey:string?]`
-- [ ] Jeśli `hasI18nKey == 1` → wywołać `tr(i18nKey)`
-- [ ] Fallback: jeśli `tr()` zwraca ten sam klucz → użyć `text`
-
-#### Etap 3: Integracja z systemem tłumaczeń
-- [ ] Upewnić się że `tr()` działa poprawnie z kluczami z serwera
-- [ ] Przenieść klucze z `canary_test/i18n/en/*.json` do `testyy/data/locales/`
-- [ ] Stworzyć skrypt konwersji JSON → Lua locales
+#### Następne kroki po stronie klienta
+- [ ] E2E test z serwerem (obie ścieżki: bez args i z args).
+- [ ] Weryfikacja, że słowniki compact (`game_i18n_{lang}_compact.lua`) są ładowane dla aktywnego języka.
 
 ### Pliki do modyfikacji
 
 | Plik | Ścieżka | Co zrobić |
 |------|---------|-----------|
-| protocolgame.cpp | `src/client/` | Rozszerzyć parseTextMessage() |
+| protocolgameparse.cpp | `src/client/` | parseLocalizedTextMessage/CreatureSay + args |
 | keyboard.lua | `modules/corelib/` | Upewnić się że tr() działa |
 | *.lua | `data/locales/` | Dodać klucze z serwera |
 

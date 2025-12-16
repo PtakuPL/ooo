@@ -20,6 +20,8 @@ Worker pracuje w trybie `--continuous` non-stop:
 ### FAZA 1: MIGRATION (obecnie działająca)
 **Cel:** Zamiana twardych stringów na klucze i18n
 
+**Scope repo:** domyślnie worker ma pracować na **serwerze canary** (bez instalki/OTClient/strony). Kategorie typu `html_copy` i `testyy/*` są opcjonalne i mogą być włączone tylko świadomie (np. przez `I18N_SCOPE=all`).
+
 **Kategorie (31 zdefiniowanych):**
 | Priorytet | Kategoria | Ścieżki |
 |-----------|-----------|---------|

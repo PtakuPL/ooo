@@ -13,6 +13,8 @@
 #include "game/movement/position.hpp"
 #include "utils/utils_definitions.hpp"
 
+#include <vector>
+
 enum class PlayerIcon : uint8_t;
 enum class IconBakragore : uint8_t;
 enum class ForgeAction_t : uint8_t;
@@ -91,10 +93,11 @@ struct TextMessage {
 // I18N: Localized text message with translation key
 struct LocalizedTextMessage : public TextMessage {
 	LocalizedTextMessage() = default;
-	LocalizedTextMessage(MessageClasses initType, std::string initText, std::string initI18nKey) :
-		TextMessage(initType, std::move(initText)), i18nKey(std::move(initI18nKey)) { }
+	LocalizedTextMessage(MessageClasses initType, std::string initText, std::string initI18nKey, std::vector<std::string> initArgs = {}) :
+		TextMessage(initType, std::move(initText)), i18nKey(std::move(initI18nKey)), args(std::move(initArgs)) { }
 
 	std::string i18nKey;  // Translation key for client-side translation
+	std::vector<std::string> args;  // Optional formatting args for client-side translation
 };
 
 class ProtocolGame final : public Protocol {
@@ -336,7 +339,7 @@ private:
 	void sendPingBack();
 	void sendCreatureTurn(const std::shared_ptr<Creature> &creature, uint32_t stackpos);
 	void sendCreatureSay(const std::shared_ptr<Creature> &creature, SpeakClasses type, const std::string &text, const Position* pos = nullptr);
-	void sendCreatureLocalizedSay(const std::shared_ptr<Creature> &creature, SpeakClasses type, const std::string &i18nKey, const std::string &fallbackText, const Position* pos = nullptr);  // I18N: sends i18nKey for client-side translation of creature speech
+	void sendCreatureLocalizedSay(const std::shared_ptr<Creature> &creature, SpeakClasses type, const std::string &i18nKey, const std::string &fallbackText, const std::vector<std::string> &args = {}, const Position* pos = nullptr);  // I18N: sends i18nKey for client-side translation of creature speech
 
 	// Unjust Panel
 	void sendUnjustifiedPoints(const uint8_t &dayProgress, const uint8_t &dayLeft, const uint8_t &weekProgress, const uint8_t &weekLeft, const uint8_t &monthProgress, const uint8_t &monthLeft, const uint8_t &skullDuration);
@@ -495,6 +498,7 @@ private:
 	void sendBlessStatus();
 	// End Blessing
 	void sendPremiumTrigger();
+	void sendLocalizedError(uint8_t code, const std::string &i18nKey, const std::string &fallbackText, const std::vector<std::string> &args = {}); // I18N: server error/dialog with translation key
 	void sendMessageDialog(const std::string &message);
 	void AddWorldLight(NetworkMessage &msg, LightInfo lightInfo);
 	void AddCreatureLight(NetworkMessage &msg, const std::shared_ptr<Creature> &creature);

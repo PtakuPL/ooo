@@ -701,10 +701,154 @@
       "overall_status": "completed",
       "completed_at": "2025-12-12T06:06:41.770989",
       "category": "creaturescripts"
+    },
+    "data-otservbr-global/scripts/quests/soul_war/soul_war_mechanics.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 8
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T05:43:10.785608",
+      "category": "scripts"
+    },
+    "data-canary/scripts/actions/quests/quests.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 6
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T05:44:53.313332",
+      "category": "scripts"
+    },
+    "data-canary/scripts/actions/objects/imbuement_shrine.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 2
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T05:46:04.112778",
+      "category": "scripts"
+    },
+    "data-canary/scripts/actions/tools/fishing.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T05:49:32.477733",
+      "category": "scripts"
+    },
+    "data-canary/scripts/actions/other/fluids.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 2
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T05:50:09.945396",
+      "category": "scripts"
+    },
+    "data-canary/scripts/actions/other/construction_kits.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 2
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T05:50:54.477113",
+      "category": "scripts"
+    },
+    "data-canary/scripts/lib/register_actions.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 3
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T05:51:11.224116",
+      "category": "scripts"
+    },
+    "data-canary/scripts/creaturescripts/free_quest.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 2
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:00:24.524509",
+      "category": "scripts"
     }
   },
   "global_stats": {
-    "files_completed": 39,
+    "files_completed": 47,
     "total_keys": 0
   }
 }

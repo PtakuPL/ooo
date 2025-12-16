@@ -3756,6 +3756,11 @@
   "npc.obi.voice_2": "Kup your weapons here!",
   "npc.obi.voice_3": "Sprzedajing and Kuping all sorts of weapons, come and have a look!",
   "npc.obi.voice_4": "Give those Potwórs a good whipping with my weapons!",
+  "npc.oblivion.say_1": "[PL] Lost. Hidden. The keys are shadow names. Find them, they will talk to me and reveal what is hidden. Will you go on that quest?",
+  "npc.oblivion.say_2": "[PL] Yes. Have you gone there and found what you sought?",
+  "npc.oblivion.say_3": "[PL] Tell me. Begin with the colour.",
+  "npc.oblivion.say_4": "[PL] Yes. The shadows say this is true. The beauty of House Dunesea, name it.",
+  "npc.oblivion.say_5": "[PL] The floating gardens. Too beautiful to lie asleep in the memory of men. Yes. The name that is no more in Darkstone?",
   "npc.oblivion.voice_1": "[PL] Hm.",
   "npc.oblivion.voice_2": "Tak. I listen, master.",
   "npc.oblivion.voice_3": "[PL] I understand.",
@@ -5332,10 +5337,5 @@
   "npc.zumtah.stdmod_5": "[PL] Pesky creatures. Many of them have been brought here, many of them died here. Humans, lizards, beasts, they all die the same. Down here, with me. Muhahaha.",
   "npc.zumtah.stdmod_6": "[PL] What? What do you mean by that?",
   "npc.zumtah.stdmod_7": "Hmm, an old one. I don't care much about politics or power, as here, he has Niene. Here, only I have power. Muhaha.",
-  "npc.zumtah.stdmod_8": "What are you talking about, such things do Niet matter down here. Down here alone, isolated and broken. Muhaha.",
-  "npc.oblivion.say_1": "[PL] Lost. Hidden. The keys are shadow names. Find them, they will talk to me and reveal what is hidden. Will you go on that quest?",
-  "npc.oblivion.say_2": "[PL] Yes. Have you gone there and found what you sought?",
-  "npc.oblivion.say_3": "[PL] Tell me. Begin with the colour.",
-  "npc.oblivion.say_4": "[PL] Yes. The shadows say this is true. The beauty of House Dunesea, name it.",
-  "npc.oblivion.say_5": "[PL] The floating gardens. Too beautiful to lie asleep in the memory of men. Yes. The name that is no more in Darkstone?"
+  "npc.zumtah.stdmod_8": "What are you talking about, such things do Niet matter down here. Down here alone, isolated and broken. Muhaha."
 }

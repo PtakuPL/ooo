@@ -411,8 +411,17 @@ void ProtocolGame::parseMessage(const InputMessagePtr& msg)
                 case Proto::GameServerLocalizedTextMessage:
                     parseLocalizedTextMessage(msg);
                     break;
+                case Proto::GameServerLocalizedTextMessageArgs:
+                    parseLocalizedTextMessage(msg, true);
+                    break;
                 case Proto::GameServerLocalizedCreatureSay:
                     parseLocalizedCreatureSay(msg);
+                    break;
+                case Proto::GameServerLocalizedCreatureSayArgs:
+                    parseLocalizedCreatureSay(msg, true);
+                    break;
+                case Proto::GameServerLocalizedError:
+                    parseLocalizedError(msg);
                     break;
                 case Proto::GameServerCancelWalk:
                     parseCancelWalk(msg);
@@ -2757,7 +2766,7 @@ void ProtocolGame::parseTextMessage(const InputMessagePtr& msg)
 }
 
 // I18N: Parse localized text message with translation key from server
-void ProtocolGame::parseLocalizedTextMessage(const InputMessagePtr& msg)
+void ProtocolGame::parseLocalizedTextMessage(const InputMessagePtr& msg, const bool hasArgs)
 {
     const uint8_t code = msg->getU8();
     const Otc::MessageMode mode = Proto::translateMessageModeFromServer(code);
@@ -2837,13 +2846,45 @@ void ProtocolGame::parseLocalizedTextMessage(const InputMessagePtr& msg)
     // Read the i18n translation key
     i18nKey = msg->getString();
 
+    std::vector<std::string> args;
+    if (hasArgs) {
+        const uint8_t argc = msg->getU8();
+        args.reserve(argc);
+        for (uint8_t i = 0; i < argc; ++i) {
+            args.emplace_back(msg->getString());
+        }
+    }
+
     // Try to translate using client's locale system
     // The tr() function will return the translation if found, or the key itself if not found
     std::string translatedText = text;
     if (!i18nKey.empty()) {
         // Use explicit template parameters <std::string, std::string> to avoid MSVC ambiguous overload
         try {
-            translatedText = g_lua.callGlobalField<std::string, std::string>("_G", "tr", i18nKey);
+            if (args.empty()) {
+                translatedText = g_lua.callGlobalField<std::string, std::string>("_G", "tr", i18nKey);
+            } else {
+                const int baseStackSize = g_lua.stackSize();
+                try {
+                    g_lua.getGlobalField("_G", "tr");
+                    g_lua.pushString(i18nKey);
+                    for (const auto& arg : args) {
+                        g_lua.pushString(arg);
+                    }
+                    g_lua.safeCall(1 + static_cast<int>(args.size()), 1);
+                    translatedText = g_lua.popString();
+                } catch (...) {
+                    const int toPop = g_lua.stackSize() - baseStackSize;
+                    if (toPop > 0) {
+                        g_lua.pop(toPop);
+                    }
+                    throw;
+                }
+                const int toPop = g_lua.stackSize() - baseStackSize;
+                if (toPop > 0) {
+                    g_lua.pop(toPop);
+                }
+            }
             // If tr() returned the same key (no translation found), use fallback text
             if (translatedText == i18nKey) {
                 translatedText = text;
@@ -2862,7 +2903,7 @@ void ProtocolGame::parseLocalizedTextMessage(const InputMessagePtr& msg)
 }
 
 // I18N: Parse localized creature speech (monster/NPC voices)
-void ProtocolGame::parseLocalizedCreatureSay(const InputMessagePtr& msg)
+void ProtocolGame::parseLocalizedCreatureSay(const InputMessagePtr& msg, const bool hasArgs)
 {
     uint32_t statement = 0;
     if (g_game.getFeature(Otc::GameMessageStatements)) {
@@ -2901,12 +2942,44 @@ void ProtocolGame::parseLocalizedCreatureSay(const InputMessagePtr& msg)
     const auto& i18nKey = msg->getString();
     const auto& fallbackText = msg->getString();
 
+    std::vector<std::string> args;
+    if (hasArgs) {
+        const uint8_t argc = msg->getU8();
+        args.reserve(argc);
+        for (uint8_t i = 0; i < argc; ++i) {
+            args.emplace_back(msg->getString());
+        }
+    }
+
     // Try to translate using client's locale system
     std::string translatedText = fallbackText;
     if (!i18nKey.empty()) {
         try {
             // Use explicit template parameters <std::string, std::string> to avoid MSVC ambiguous overload
-            translatedText = g_lua.callGlobalField<std::string, std::string>("_G", "tr", i18nKey);
+            if (args.empty()) {
+                translatedText = g_lua.callGlobalField<std::string, std::string>("_G", "tr", i18nKey);
+            } else {
+                const int baseStackSize = g_lua.stackSize();
+                try {
+                    g_lua.getGlobalField("_G", "tr");
+                    g_lua.pushString(i18nKey);
+                    for (const auto& arg : args) {
+                        g_lua.pushString(arg);
+                    }
+                    g_lua.safeCall(1 + static_cast<int>(args.size()), 1);
+                    translatedText = g_lua.popString();
+                } catch (...) {
+                    const int toPop = g_lua.stackSize() - baseStackSize;
+                    if (toPop > 0) {
+                        g_lua.pop(toPop);
+                    }
+                    throw;
+                }
+                const int toPop = g_lua.stackSize() - baseStackSize;
+                if (toPop > 0) {
+                    g_lua.pop(toPop);
+                }
+            }
             // If tr() returned the same key (no translation found), use fallback text
             if (translatedText == i18nKey) {
                 translatedText = fallbackText;
@@ -5634,6 +5707,59 @@ void ProtocolGame::parseImbuementWindow(const InputMessagePtr& msg)
 void ProtocolGame::parseCloseImbuementWindow(const InputMessagePtr& /*msg*/)
 {
     g_lua.callGlobalField("g_game", "onCloseImbuementWindow");
+}
+
+// I18N: Parse localized server error/dialog (fallback + i18nKey [+ args])
+void ProtocolGame::parseLocalizedError(const InputMessagePtr& msg)
+{
+    const uint8_t code = msg->getU8();
+    const auto& fallbackText = msg->getString();
+    const auto& i18nKey = msg->getString();
+
+    const uint8_t argc = msg->getU8();
+    std::vector<std::string> args;
+    args.reserve(argc);
+    for (uint8_t i = 0; i < argc; ++i) {
+        args.emplace_back(msg->getString());
+    }
+
+    std::string translatedText = fallbackText.empty() ? i18nKey : fallbackText;
+    if (!i18nKey.empty()) {
+        try {
+            if (args.empty()) {
+                translatedText = g_lua.callGlobalField<std::string, std::string>("_G", "tr", i18nKey);
+            } else {
+                const int baseStackSize = g_lua.stackSize();
+                try {
+                    g_lua.getGlobalField("_G", "tr");
+                    g_lua.pushString(i18nKey);
+                    for (const auto& arg : args) {
+                        g_lua.pushString(arg);
+                    }
+                    g_lua.safeCall(1 + static_cast<int>(args.size()), 1);
+                    translatedText = g_lua.popString();
+                } catch (...) {
+                    const int toPop = g_lua.stackSize() - baseStackSize;
+                    if (toPop > 0) {
+                        g_lua.pop(toPop);
+                    }
+                    throw;
+                }
+                const int toPop = g_lua.stackSize() - baseStackSize;
+                if (toPop > 0) {
+                    g_lua.pop(toPop);
+                }
+            }
+
+            if (translatedText == i18nKey) {
+                translatedText = fallbackText.empty() ? i18nKey : fallbackText;
+            }
+        } catch (...) {
+            translatedText = fallbackText.empty() ? i18nKey : fallbackText;
+        }
+    }
+
+    g_lua.callGlobalField("g_game", "onServerError", code, translatedText);
 }
 
 void ProtocolGame::parseError(const InputMessagePtr& msg)

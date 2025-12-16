@@ -5,6 +5,30 @@
 
 ---
 
+## Stan wdrożenia (w repo)
+
+Zaimplementowane (MVP, gotowe do dalszej integracji protokołu/klienta):
+- `tools/i18n_keymap.py` utrzymuje mapowanie semantic→compact (2–7 znaków) w `i18n/keymap*.json`.
+- `tools/json_to_lua_locales.py --compact-keys` generuje `testyy/data/locales/game_i18n_{lang}_compact.lua`.
+- `i18n_worker_simple.sh` ma tryb `COMPACT_KEYS` w `--continuous` (dispatcher uruchamia go po zakończeniu migracji, gdy brakuje mapowań lub brakuje plików `_compact.lua`).
+- Statusy: worker emituje LIVE/op/error dla fazy `COMPACT_KEYS` do `i18n/status/*`.
+
+Dopięte (pierwsza integracja serwer↔klient):
+- Serwer mapuje `i18nKey` na compact ID na ścieżce wysyłki pakietów I18N: `ProtocolGame::sendLocalizedTextMessage` (0xBC) i `ProtocolGame::sendCreatureLocalizedSay` (0x99), z fallbackiem do klucza semantycznego gdy brak mapowania.
+- Klient ładuje słowniki compact dla `en` i `pl` (dofile `game_i18n_{lang}_compact.lua`), dzięki czemu `tr()` może tłumaczyć zarówno klucze semantyczne, jak i compact.
+- Dodane feature flagi w `config.lua` (z domyślnymi wartościami bezpiecznymi): `i18nCompactKeysEnabled`, `i18nKeymapPath`, `i18nUseLocalizedTextProtocol`, `i18nSendFallbackText`.
+
+Obsługa formatowania z argumentami (args):
+- Protokół args jest już zaimplementowany przez **dedykowane opcode** (bez ryzyka desynchronizacji strumienia):
+  - `0xC5` (197) — `LocalizedTextMessageArgs`
+  - `0xC4` (196) — `LocalizedCreatureSayArgs`
+- W wariancie args serwer wysyła: `fallbackText + i18nKey + argc + args[]`, a klient wywołuje `tr(i18nKey, ...)` (czyli lokalne `string.format`).
+
+Bezpieczny rollout:
+- Domyślnie trzymaj `i18nSendArgs=false` i włącz dopiero po potwierdzeniu kompatybilności klienta (stare klienty nie znają nowych opcode).
+
+---
+
 ## 1) Założenia i definicje
 
 - **Klucze semantyczne (source-of-truth):** obecne klucze typu `npc.rashid.greeting`, przechowywane w `i18n/en/*.json` i używane w kodzie.

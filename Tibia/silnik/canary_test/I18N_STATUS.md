@@ -1,34 +1,102 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-> **Aktualizacja:** 2025-12-11 02:36:05 UTC  
-> **Worker:** i18n_worker_simple.sh (auto) | **Guardian:** aktywny | **Języki:** 53 | **Klucze EN:** 28 967
+<!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 500, 'client': 200, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
+
+> **Aktualizacja:** 2025-12-16 06:22:09 UTC  
+> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 19886  
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: cycle_end | Kategoria: scripts | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T05:22:08Z
 
 ---
 
-## 🔀 Podział: Przygotowanie vs Tłumaczenia
+## 🤖 AI Agent Integration
 
-### 📦 Przygotowanie (ekstrakcja/migracja)
-| Kategoria | Klucze EN | Stan |
-|-----------|-----------|------|
-| NPC | 5334 | ✅ |
-| Scripts | 385 | ✅ |
-| Monsters | 7341 | ✅ |
-| Items | 13749 | ✅ |
-| Spells | 65 | ✅ |
-| Raids | 147 | ✅ |
-| World/Modules/Libs/Events/Chatchannels/Startup | 16–1495 | ✅ |
-| PHP (html_copy) | 31 | ✅ (cache/twig wykluczone) |
-| Client (OTClient) | 236 | ✅ |
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  Status zoptymalizowany dla AI agentów (Codex/Copilot/Claude)  │
+│  JSON data: i18n_file_status.json                              │
+│  Worker: i18n_worker_simple.sh                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
 
-### 🌍 Tłumaczenia (AUTO_TRANSLATE + SYNC)
-| Język | Tryb | Limit | Uwagi |
-|-------|------|-------|-------|
-| PL | AUTO + SYNC | 10/cykl | tłumaczy realnie |
-| RU | AUTO + SYNC | 10/cykl | ~2100 realnych tłumaczeń |
-| TR | AUTO + SYNC | 10/cykl | brak słownika → placeholdery |
-| Pozostałe 50 | SYNC | - | wyrównane do EN |
+---
 
-> AUTO używa `translation_memory.json`; brak TM/słownika dla TR powoduje placeholdery `[TR] ...`. Jeśli dostarczymy glossary EN→TR, AUTO zacznie wypełniać realne tłumaczenia.
+## 📊 Globalny Postęp
+
+### 📁 Pliki Projektu (pełny skan)
+| Metryka | Wartość | Procent | Info |
+|---------|---------|---------|------|
+| 📂 **Wszystkie pliki** | **16,449** | 100% | cały projekt |
+| 📜 Do skanowania (kod) | **7,828** | 47.6% | pliki z kodem/tekstami |
+| 🔍 **Przeskanowane** | **2,303** | **29.4%** | historia workera |
+| ⏳ Nie przeskanowane | **5,525** | 70.6% | czekają na skan |
+
+### 📊 Podział plików do skanowania
+| Typ | Ilość | Info |
+|-----|-------|------|
+| 📜 Lua (.lua) | 5,469 | NPC, scripts, libs |
+| 📄 XML (.xml) | 131 | items, monsters, spells |
+| 🐘 PHP (.php) | 2 | backend AAC |
+| 🌐 HTML (.html) | 6 | widoki |
+| 📦 JavaScript (.js) | 0 | frontend |
+| ⚙️ C++ (.cpp/.hpp/.h) | 839 | silnik serwera |
+| 📋 JSON (.json) | 950 | konfiguracje |
+
+### ✅ Status Migracji
+| Status | Ilość | Procent | Opis |
+|--------|-------|---------|------|
+| ✅ Zmigrowane | **27** | 1.2% | mają klucze i18n |
+| 🔄 Wymaga migracji | **0** | - | trzeba dodać i18n |
+| ⚪ Czyste | **20** | - | bez tekstów |
+| 🔧 W trakcie | **0** | - | obecnie przetwarzane |
+
+### 🔑 Klucze i18n
+| Metryka | Wartość | Info |
+|---------|---------|------|
+| 🔑 **Klucze EN (źródłowe)** | **19,886** | wszystkie kategorie |
+| 📊 NPC | 5,339 | dialogi NPC |
+| 📊 Items | 13,749 | przedmioty |
+| 📊 Monsters | 132 | potwory |
+| 📊 HTML | 0 | widoki web |
+| 📊 Pozostałe | 666 | scripts, spells, etc. |
+
+### 🌍 Języki i Tłumaczenia
+| Metryka | Wartość | Procent | Info |
+|---------|---------|---------|------|
+| 🌐 Wszystkie języki | **54** | 100% | foldery w i18n/ |
+| 📋 Przygotowane | **53** | 98% | mają pliki [EN] |
+| ✅ **Przetłumaczone** | **53** | **98.1%** | prawdziwe tłumaczenia |
+| ⏳ Do tłumaczenia | **0** | - | tylko placeholdery |
+
+### 📈 Statystyki Pracy
+| Metryka | Wartość | Info |
+|---------|---------|------|
+| 🔄 Cykl aktualny | **#1** | od uruchomienia |
+| 🔑 Kluczy wyekstrahowanych | **45** | w tej sesji |
+| ⚠️ Konfliktów | **0** | merge conflicts |
+
+---
+
+## 🔀 Etap 1 vs Etap 2
+
+### 📦 Etap 1: Przygotowanie (SYNC kluczy EN → pliki językowe)
+- Języki z plikami przygotowanymi: 0/54  
+- Ostatni sync: -
+
+### 🌍 Etap 2: Tłumaczenia (AUTO + TM)
+| Język | TM wpisy | Status |
+|-------|----------|--------|
+| DE | 0 | ⚠️ placeholdery (brak TM) |
+| ES | 0 | ⚠️ placeholdery (brak TM) |
+| FR | 0 | ⚠️ placeholdery (brak TM) |
+| IT | 0 | ⚠️ placeholdery (brak TM) |
+| PL | 0 | ⚠️ placeholdery (brak TM) |
+| PT | 0 | ⚠️ placeholdery (brak TM) |
+| RO | 0 | ⚠️ placeholdery (brak TM) |
+| RU | 0 | ⚠️ placeholdery (brak TM) |
+| SV | 0 | ⚠️ placeholdery (brak TM) |
+| TR | 0 | ⚠️ placeholdery (brak TM) |
+
+**Języki bez TM (AUTO → placeholdery):** de, es, fr, pl, pt, ru, tr
 
 ---
 
@@ -41,58 +109,108 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 5253/15000 (35%) | 15000 |
-| 📜 Lua Scripts | 🔄 | 368/1000 (37%) | 1000 |
-| 🎒 Items Database | ⏳ | 0/40000 (0%) | 40000 |
-| 👹 Monsters | 🔄 | 4108/5000 (82%) | 5000 |
-| ✨ Spells & Magic | ⏳ | 0/200 (0%) | 200 |
+| 🧙 NPC Dialogs | 🔄 | 5339/15000 (36%) | 15000 |
+| 📜 Lua Scripts | 🔄 | 123/1000 (12%) | 1000 |
+| 🎒 Items Database | 🔄 | 13749/40000 (34%) | 40000 |
+| 👹 Monsters | 🔄 | 132/5000 (3%) | 5000 |
+| ✨ Spells & Magic | 🔄 | 304/400 (76%) | 400 |
 | ⚙️ Server C++ | ⏳ | 0/300 (0%) | 300 |
 
 ### ⏳ Faza 2: 🌐 Website (AAC)
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🐘 PHP Backend | 🔄 | 8/3000 (0%) | 3000 |
-| 📄 HTML Views | 🔄 | 39/300 (13%) | 300 |
+| 🐘 PHP Backend | ⏳ | 0/3000 (0%) | 3000 |
+| 📄 HTML Views | ⏳ | 0/300 (0%) | 300 |
 | 📦 JavaScript | ⏳ | 0/200 (0%) | 200 |
 
-### ⏳ Faza 3: 📱 Instalka/Klient
+### ⏳ Faza 3: 📱 OTClient / Testyy
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
 | 🖥️ Client UI | ⏳ | 0/200 (0%) | 200 |
-| 💿 Installer/C++ | 🔄 | 15/500 (3%) | 500 |
+| 💿 Server C++ | ⏳ | 0/500 (0%) | 500 |
+| 🎮 OTClient Modules | ⏳ | 0/500 (0%) | 500 |
+| 📦 OTClient Data | ⏳ | 0/200 (0%) | 200 |
+| ⚙️ OTClient Src | ⏳ | 0/300 (0%) | 300 |
+| 🔧 OTClient Mods | ⏳ | 0/100 (0%) | 100 |
+| 🛠️ OTClient Tools | ⏳ | 0/50 (0%) | 50 |
 
-### ⏳ Faza 4: 🌍 Tłumaczenia
+### ⏳ Faza 4: 🌍 Tłumaczenia (Etap 1: Sync Kluczy)
 
-| Kategoria | Status | Postęp | Cel |
-|-----------|--------|--------|-----|
-| 🇵🇱 Polski | 🔄 | 1/1 | 1 |
-| 🇩🇪 Niemiecki | 🔄 | 1/1 | 1 |
-| 🇪🇸 Hiszpański | 🔄 | 1/1 | 1 |
-| 🌐 Pozostałe (50) | ⏳ | 53/53 (100%) | 53 |
+| Język | Status | Kluczy | Etap |
+|-------|--------|--------|------|
+| 🇩🇪 Niemiecki | ⏳ Czeka | 0 | nie rozpoczęto |
+| 🇵🇱 Polski | ⏳ Czeka | 0 | nie rozpoczęto |
+| 🇪🇸 Hiszpański | ⏳ Czeka | 0 | nie rozpoczęto |
+| 🇫🇷 Francuski | ⏳ Czeka | 0 | nie rozpoczęto |
+| 🌐 Pozostałe (0/53) | ⏳ | 0 | nie rozpoczęto |
 
+### 📦 Etap 1: Przygotowanie (SYNC)
+- Języki z plikami przygotowanymi: 0/54
+- Ostatni sync: -
+
+### 🌍 Etap 2: Tłumaczenia (AUTO)
+| Język | TM wpisy | Status |
+|-------|----------|--------|
+| DE | 0 | ⚠️ placeholdery (brak TM) |
+| ES | 0 | ⚠️ placeholdery (brak TM) |
+| FR | 0 | ⚠️ placeholdery (brak TM) |
+| IT | 0 | ⚠️ placeholdery (brak TM) |
+| PL | 0 | ⚠️ placeholdery (brak TM) |
+| PT | 0 | ⚠️ placeholdery (brak TM) |
+| RO | 0 | ⚠️ placeholdery (brak TM) |
+| RU | 0 | ⚠️ placeholdery (brak TM) |
+| SV | 0 | ⚠️ placeholdery (brak TM) |
+| TR | 0 | ⚠️ placeholdery (brak TM) |
+
+**Języki bez TM (AUTO → placeholdery):** de, es, fr, pl, pt, ru, tr
 ---
 
 ## 🔴 LIVE: Aktualna Aktywność
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    27 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    ✅ IDLE                                   │
-│ Tryb:      MIGRATION (8 etapów)                     │
-│ Kategoria: 🧙 NPC Dialogs                            │
+│ Status:    🟢 RUNNING                                │
+│ Tryb:      🔧 MIGRATION (cycle_end)                  │
+│ Kategoria: 📁 SCRIPTS                                │
 ├─────────────────────────────────────────────────────────────────┤
-│ 📊 Postęp migracji NPC:                                        │
-│ [██████████████████████████████████████████████████] │
-│ 318/318 plików (100%)                                          │
+│ Status: running                                               │
+│ Plik: -                                                       │
+│ Postęp: 0/0 units                                             │
+│ Info: cycle end                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ⏳ Pozostało: 0 plików NPC                              │
-│ 🕐 ETA: ~0min 0s (przy 4s/plik)                             │
-│ 📅 Ostatnia aktualizacja: 2025-12-10 19:38:15                 │
+│ ❤️ Heartbeat: 2025-12-16T05:22:08Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## 🔁 W tym cyklu
+
+- 🔧 MIGRATION.category_done [scripts] ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION.category_done [scripts] ok (keys+2, files+0) — migration finished
+- ✅ IDLE.IDLE_SLEEP [-] ok — sleep_seconds=300
+- ✅ IDLE.IDLE_CYCLE_DONE [-] ok — idle cycle complete
+- 🤖 AUTO_TRANSLATE.AUTO_TRANSLATE_DONE [pl] ok (files+1, translated+0, skipped+3060) — lang=pl file=npc.json
+- 🤖 AUTO_TRANSLATE.AUTO_TRANSLATE_DONE [pl] ok (files+1, translated+0, skipped+3060) — lang=pl file=npc.json
+- 🌍 TRANSLATION_SYNC.SYNC_FILE_DONE [pl] ok (keys+0, files+0) — lang=pl file=npc.json
+- 🔑 COMPACT_KEYS.export_done [-] ok (mapped_new+0) — export compact locales
+- 🔑 COMPACT_KEYS.keymap_sync [-] ok (mapped_new+5) — FORCED
+- 🔑 COMPACT_KEYS.export_done [-] ok (mapped_new+0) — export compact locales
+
+
+
+
+## 📅 Dziś (UTC)
+
+- Cykle: **13**
+- MIGRATION: **+49** kluczy, **6** plików `.lua`
+- Kategorie dotknięte: actions, creaturescripts, globalevents, items, monsters, mounts, movements, npc, quests, raids...
+- Błędy: **0**
+
 
 ---
 
@@ -100,23 +218,12 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przetworzonych | **26** | z i18n_file_status.json |
-| ✅ NPC zmigrowanych | **26** (318 z i18nKey) | z 1026 plików NPC |
-| 🔑 Kluczy wyciągniętych | **9810** | we wszystkich kategoriach |
-| 🌍 Języków z danymi | **53**/53 | ar, az, bg, bn, bs... |
-| 🔄 Cykli wykonanych | **#27** | continuous mode |
-| ⚠️ Plików do migracji | **0** | NPC z StdModule.say |
-| ❌ Błędów krytycznych | **0** | ✓ wszystko OK |
-
----
-
-## 📜 Historia ostatnich operacji
-
-- ✅ `ser_tybald` - ukończono 2025-12-10 15:04
-- ✅ `menesto` - ukończono 2025-12-10 15:04
-- ✅ `garamond` - ukończono 2025-12-10 15:04
-- ✅ `cranky_lizard_crone` - ukończono 2025-12-10 15:04
-- ✅ `bertram` - ukończono 2025-12-10 15:04
+| 📁 Plików przeskanowanych | **47** | w tej sesji |
+| ✅ Plików z kluczami | **27** | zawierały hardcoded strings |
+| ⬜ Plików bez kluczy | **20** | czyste (brak hardcoded) |
+| 🔑 Kluczy wyciągniętych | **45** | przez workera w tej sesji |
+| 🌍 Języków | **54** | EN + tłumaczenia |
+| 🔄 Cykli wykonanych | **#1** | continuous mode |
 
 ---
 
@@ -135,13 +242,13 @@
 </details>
 
 <details>
-<summary>🎒 2. Items - ⏳ (0%)</summary>
+<summary>🎒 2. Items - 🔄 (34%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 0 |
+| 🔑 Kluczy | 13749 |
 | 🎯 Cel | 40000 |
-| 📊 Postęp | 0% |
+| 📊 Postęp | 34% |
 | 📁 Plik | i18n/en/items.json |
 
 </details>
@@ -159,29 +266,29 @@
 </details>
 
 <details>
-<summary>👹 4. Monsters - 🔄 (82%)</summary>
+<summary>👹 4. Monsters - 🔄 (3%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 4108 |
+| 🔑 Kluczy | 132 |
 | 🎯 Cel | 5000 |
-| 📊 Postęp | 82% |
+| 📊 Postęp | 3% |
 | 📁 Plik | i18n/en/monsters.json |
 
 </details>
 
 <details>
-<summary>🧙 5. NPC - 🔄 (35%)</summary>
+<summary>🧙 5. NPC - 🔄 (36%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 5253 |
+| 🔑 Kluczy | 5339 |
 | 🎯 Cel | 15000 |
-| 📊 Postęp | 35% |
+| 📊 Postęp | 36% |
 | 📁 Plik | i18n/en/npc.json |
-| 📁 Plików NPC | 1026 |
-| ✅ Zmigrowanych | 318 |
-| 🔄 Do migracji | 0 |
+| 📁 Plików NPC | 1027 |
+| ✅ Zmigrowanych | 678 |
+| 🔄 Do migracji | 19 |
 
 </details>
 
@@ -210,13 +317,13 @@
 </details>
 
 <details>
-<summary>📜 8. Scripts - 🔄 (37%)</summary>
+<summary>📜 8. Scripts - 🔄 (12%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 368 |
+| 🔑 Kluczy | 123 |
 | 🎯 Cel | 1000 |
-| 📊 Postęp | 37% |
+| 📊 Postęp | 12% |
 | 📁 Plik | i18n/en/scripts.json |
 
 </details>
@@ -234,13 +341,13 @@
 </details>
 
 <details>
-<summary>✨ 10. Spells - ⏳ (0%)</summary>
+<summary>✨ 10. Spells - 🔄 (76%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 0 |
-| 🎯 Cel | 200 |
-| 📊 Postęp | 0% |
+| 🔑 Kluczy | 304 |
+| 🎯 Cel | 400 |
+| 📊 Postęp | 76% |
 | 📁 Plik | i18n/en/spells.json |
 
 </details>
@@ -271,179 +378,107 @@
 
 ---
 
+## 📊 Wszystkie Kategorie JSON (Dynamiczne)
+
+| Kategoria | Kluczy | Przetworzono | Seria zer | Status |
+|-----------|--------|--------------|-----------|--------|
+| items | 13749 | 0 | 0 | ✅ Active |
+| npc | 5339 | 0 | 0 | ✅ Active |
+| html | 1495 | 0 | 0 | ✅ Active |
+| spells | 304 | 0 | 0 | ✅ Active |
+| client | 242 | 0 | 0 | ✅ Active |
+| raids | 147 | 0 | 0 | ✅ Active |
+| monsters | 132 | 0 | 0 | ✅ Active |
+| scripts | 123 | 0 | 0 | ✅ Active |
+| php | 59 | 0 | 0 | ✅ Active |
+| startup | 23 | 0 | 0 | ✅ Active |
+| libs | 21 | 0 | 0 | ✅ Active |
+| modules | 16 | 0 | 0 | ✅ Active |
+| example_merchant | 14 | 0 | 0 | ✅ Active |
+| messages | 11 | 0 | 0 | ✅ Active |
+| actions | 8 | 0 | 0 | ✅ Active |
+| chatchannels | 8 | 0 | 0 | ✅ Active |
+| events | 5 | 0 | 0 | ✅ Active |
+| cpp | 0 | 0 | 0 | ⏳ Empty |
+| errors | 0 | 0 | 0 | ⏳ Empty |
+| npclib | 0 | 0 | 0 | ⏳ Empty |
+| quests | 0 | 0 | 0 | ⏳ Empty |
+| server | 0 | 0 | 0 | ⏳ Empty |
+| ui | 0 | 0 | 0 | ⏳ Empty |
+| world | 0 | 0 | 0 | ⏳ Empty |
+
+---
+
+## 🤖 Worker Category State
+
+*Brak kategorii z aktywnym skip*
+
+---
+
 ## 🔧 Worker & Guardian Status
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #27 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
+
+---
+
+## 🌍 Tłumaczenia - Etap 1: Synchronizacja Kluczy
+
+| Język | Kluczy | Status |
+|-------|--------|--------|
+| DE | 0 | ⏳ |
+| PL | 0 | ⏳ |
+| ES | 0 | ⏳ |
+| PT | 0 | ⏳ |
+| FR | 0 | ⏳ |
+| IT | 0 | ⏳ |
+| NL | 0 | ⏳ |
+| CS | 0 | ⏳ |
+| SK | 0 | ⏳ |
+| HU | 0 | ⏳ |
+
+> **Aktualnie:** IDLE / -  
+> **Ukończone języki:** 0/53  
+> **Prefix:** `[EN] ` (klucze do przetłumaczenia)
+
 
 ---
 
 ## 🗺️ Roadmap
 
-```
-[⏳] Items (0)      ░░░░░░░░░░░░░░░░░░░░  0%
-[🔄] NPC (5253)            ███████░░░░░░░░░░░░░  35%
-[🔄] Scripts (368)      ███████░░░░░░░░░░░░░  37%
-[🔄] Monsters (4108)    ████████████████░░░░  82%
-[⏳] Spells (0)       ░░░░░░░░░░░░░░░░░░░░  0%
-[⏳] Server (0)       ░░░░░░░░░░░░░░░░░░░░  0%
-[⏳] System (0)       ░░░░░░░░░░░░░░░░░░░░  0%
-[⏳] UI (0)             ░░░░░░░░░░░░░░░░░░░░  0%
-```
+| Kategoria | Kluczy | Postęp | Cel | Status |
+|-----------|--------|--------|-----|--------|
+| 🎒 Items | 13749 | ██████░░░░░░░░░░░░░░ | 40000 | 🔄 34% |
+| 🧙 NPC | 5339 | ███████░░░░░░░░░░░░░ | 15000 | 🔄 36% |
+| 📜 Scripts | 123 | ██░░░░░░░░░░░░░░░░░░ | 1000 | 🔄 12% |
+| 👹 Monsters | 132 | ░░░░░░░░░░░░░░░░░░░░ | 5000 | 🔄 3% |
+| ✨ Spells | 304 | ███████████████░░░░░ | 400 | 🔄 76% |
+| ⚙️ Server | 0 | ░░░░░░░░░░░░░░░░░░░░ | 300 | ⏳ 0% |
+| 🖥️ System | 0 | ░░░░░░░░░░░░░░░░░░░░ | 2000 | ⏳ 0% |
+| 🎨 UI | 0 | ░░░░░░░░░░░░░░░░░░░░ | 200 | ⏳ 0% |
 
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-10 19:38:15  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-16 06:22:09  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `znozel` - ukończono 2025-12-11 03:41
-- ✅ `zirella` - ukończono 2025-12-11 03:41
-- ✅ `zethra` - ukończono 2025-12-11 03:41
-- ✅ `zebron` - ukończono 2025-12-11 03:41
-- ✅ `yana` - ukończono 2025-12-11 03:41
-- ✅ `wyrdin` - ukończono 2025-12-11 03:41
-- ✅ `willard` - ukończono 2025-12-11 03:41
-- ✅ `virgil` - ukończono 2025-12-11 03:41
-- ✅ `vera` - ukończono 2025-12-11 03:41
-- ✅ `valindara` - ukończono 2025-12-11 03:41
-- ✅ `turvy` - ukończono 2025-12-11 03:41
-- ✅ `towncryer` - ukończono 2025-12-11 03:41
-- ✅ `topsy` - ukończono 2025-12-11 03:41
-- ✅ `tomruk_the_ruddy` - ukończono 2025-12-11 03:41
-- ✅ `timur` - ukończono 2025-12-11 03:41
-- ✅ `the_librarian` - ukończono 2025-12-11 03:41
-- ✅ `the_crone` - ukończono 2025-12-11 03:41
-- ✅ `tesha` - ukończono 2025-12-11 03:41
-- ✅ `telas_golem` - ukończono 2025-12-11 03:41
-- ✅ `talila` - ukończono 2025-12-11 03:41
-- ✅ `taegen` - ukończono 2025-12-11 03:41
-- ✅ `suzy` - ukończono 2025-12-11 03:41
-- ✅ `sister_of_jack` - ukończono 2025-12-11 03:41
-- ✅ `sissek` - ukończono 2025-12-11 03:41
-- ✅ `sinclair` - ukończono 2025-12-11 03:41
-- ✅ `simon_the_beggar` - ukończono 2025-12-11 03:41
-- ✅ `siestaar` - ukończono 2025-12-11 03:41
-- ✅ `shoddy_beggar` - ukończono 2025-12-11 03:41
-- ✅ `shiantis` - ukończono 2025-12-11 03:41
-- ✅ `sherry_mcronald` - ukończono 2025-12-11 03:41
-- ✅ `scott` - ukończono 2025-12-11 03:41
-- ✅ `sarina` - ukończono 2025-12-11 03:40
-- ✅ `santiago` - ukończono 2025-12-11 03:40
-- ✅ `rowenna` - ukończono 2025-12-11 03:40
-- ✅ `rotem_valos` - ukończono 2025-12-11 03:40
-- ✅ `rokyn` - ukończono 2025-12-11 03:40
-- ✅ `robson` - ukończono 2025-12-11 03:40
-- ✅ `raffael` - ukończono 2025-12-11 03:40
-- ✅ `prisoner` - ukończono 2025-12-11 03:40
-- ✅ `perod` - ukończono 2025-12-11 03:40
-- ✅ `paulie` - ukończono 2025-12-11 03:40
-- ✅ `ongulf` - ukończono 2025-12-11 03:40
-- ✅ `one_eyed_joe` - ukończono 2025-12-11 03:40
-- ✅ `omrabas` - ukończono 2025-12-11 03:40
-- ✅ `oblivion` - ukończono 2025-12-11 03:40
-- ✅ `noodles` - ukończono 2025-12-11 03:40
-- ✅ `ninos` - ukończono 2025-12-11 03:40
-- ✅ `naji` - ukończono 2025-12-11 03:40
-- ✅ `myzzi` - ukończono 2025-12-11 03:40
-- ✅ `muzir` - ukończono 2025-12-11 03:40
-- ✅ `murim` - ukończono 2025-12-11 03:40
-- ✅ `mr_brandon` - ukończono 2025-12-11 03:40
-- ✅ `mother_of_jack` - ukończono 2025-12-11 03:40
-- ✅ `moe` - ukończono 2025-12-11 03:40
-- ✅ `milos` - ukończono 2025-12-11 03:40
-- ✅ `memech` - ukończono 2025-12-11 03:40
-- ✅ `mehkesh` - ukończono 2025-12-11 03:40
-- ✅ `malunga` - ukończono 2025-12-11 03:40
-- ✅ `maeryn` - ukończono 2025-12-11 03:40
-- ✅ `lokur` - ukończono 2025-12-11 03:40
-- ✅ `liane` - ukończono 2025-12-11 03:40
-- ✅ `khanna` - ukończono 2025-12-11 03:40
-- ✅ `kepar` - ukończono 2025-12-11 03:40
-- ✅ `kaya` - ukończono 2025-12-11 03:40
-- ✅ `jezzara` - ukończono 2025-12-11 03:40
-- ✅ `jessica` - ukończono 2025-12-11 03:40
-- ✅ `jeronimo` - ukończono 2025-12-11 03:40
-- ✅ `jefrey` - ukończono 2025-12-11 03:40
-- ✅ `jamesfrancis` - ukończono 2025-12-11 03:40
-- ✅ `jack` - ukończono 2025-12-11 03:39
-- ✅ `iwan` - ukończono 2025-12-11 03:39
-- ✅ `imbuement_assistant` - ukończono 2025-12-11 03:39
-- ✅ `hoggle` - ukończono 2025-12-11 03:39
-- ✅ `gundralph` - ukończono 2025-12-11 03:39
-- ✅ `guard_saros` - ukończono 2025-12-11 03:39
-- ✅ `gnomillion` - ukończono 2025-12-11 03:39
-- ✅ `gamel` - ukończono 2025-12-11 03:39
-- ✅ `galuna` - ukończono 2025-12-11 03:39
-- ✅ `florentine` - ukończono 2025-12-11 03:39
-- ✅ `finarfin` - ukończono 2025-12-11 03:39
-- ✅ `ferks` - ukończono 2025-12-11 03:39
-- ✅ `fenech` - ukończono 2025-12-11 03:39
-- ✅ `feizuhl` - ukończono 2025-12-11 03:39
-- ✅ `faloriel` - ukończono 2025-12-11 03:39
-- ✅ `eva` - ukończono 2025-12-11 03:39
-- ✅ `eshaya` - ukończono 2025-12-11 03:39
-- ✅ `emael` - ukończono 2025-12-11 03:39
-- ✅ `elyen_ravenlock` - ukończono 2025-12-11 03:39
-- ✅ `elgar` - ukończono 2025-12-11 03:39
-- ✅ `eighty` - ukończono 2025-12-11 03:39
-- ✅ `eclesius` - ukończono 2025-12-11 03:39
-- ✅ `ebenizer` - ukończono 2025-12-11 03:39
-- ✅ `cruleo` - ukończono 2025-12-11 03:39
-- ✅ `cledwyn` - ukończono 2025-12-11 03:38
-- ✅ `chester_kahs` - ukończono 2025-12-11 03:38
-- ✅ `carlos` - ukończono 2025-12-11 03:38
-- ✅ `cael` - ukończono 2025-12-11 03:38
-- ✅ `busty_bonecrusher` - ukończono 2025-12-11 03:38
-- ✅ `bo_ques` - ukończono 2025-12-11 03:38
-- ✅ `benjamin` - ukończono 2025-12-11 03:38
-- ✅ `benevola` - ukończono 2025-12-11 03:38
-- ✅ `beatrice` - ukończono 2025-12-11 03:38
-- ✅ `baxter` - ukończono 2025-12-11 03:38
-- ✅ `atur` - ukończono 2025-12-11 03:38
-- ✅ `asralius` - ukończono 2025-12-11 03:38
-- ✅ `ashtamor` - ukończono 2025-12-11 03:38
-- ✅ `aruda` - ukończono 2025-12-11 03:38
-- ✅ `arkarra` - ukończono 2025-12-11 03:38
-- ✅ `arito` - ukończono 2025-12-11 03:38
-- ✅ `ariella` - ukończono 2025-12-11 03:38
-- ✅ `an_orc_guard` - ukończono 2025-12-11 03:38
-- ✅ `an_old_dragon_lord` - ukończono 2025-12-11 03:38
-- ✅ `ambassador_of_rathleton` - ukończono 2025-12-11 03:38
-- ✅ `a_dead_bureaucrat4` - ukończono 2025-12-11 03:38
-- ✅ `a_dead_bureaucrat3` - ukończono 2025-12-11 03:38
-- ✅ `a_dead_bureaucrat2` - ukończono 2025-12-11 03:38
-- ✅ `a_dead_bureaucrat1` - ukończono 2025-12-11 03:38
-- ✅ `shiriel` - ukończono 2025-12-10 21:24
-- ✅ `seymour` - ukończono 2025-12-10 21:24
-- ✅ `romir` - ukończono 2025-12-10 21:24
-- ✅ `rock_in_a_hard_place` - ukończono 2025-12-10 21:13
-- ✅ `nipuna` - ukończono 2025-12-10 21:13
-- ✅ `nelly` - ukończono 2025-12-10 21:12
-- ✅ `mordecai` - ukończono 2025-12-10 20:46
-- ✅ `gnomegica` - ukończono 2025-12-10 20:45
-- ✅ `ghorza` - ukończono 2025-12-10 20:45
-- ✅ `frederik` - ukończono 2025-12-10 20:45
-- ✅ `frans` - ukończono 2025-12-10 20:45
-- ✅ `chuckles` - ukończono 2025-12-10 20:45
-- ✅ `battlemart` - ukończono 2025-12-10 20:41
-- ✅ `alaistar` - ukończono 2025-12-10 20:41
-- ✅ `ser_tybald` - ukończono 2025-12-10 15:04
-- ✅ `menesto` - ukończono 2025-12-10 15:04
-- ✅ `garamond` - ukończono 2025-12-10 15:04
-- ✅ `cranky_lizard_crone` - ukończono 2025-12-10 15:04
-- ✅ `bertram` - ukończono 2025-12-10 15:04
-- ✅ `canary` - ukończono 2025-12-10 15:01
-- ✅ `the_lootmonger` - ukończono 2025-12-10 14:55
-- ✅ `tandros` - ukończono 2025-12-10 14:55
-- ✅ `sundara` - ukończono 2025-12-10 14:55
-- ✅ `sigurd` - ukończono 2025-12-10 14:55
+- ✅ `free_quest` - ukończono 2025-12-16 06:00
+- ✅ `register_actions` - ukończono 2025-12-16 05:51
+- ✅ `construction_kits` - ukończono 2025-12-16 05:50
+- ✅ `fluids` - ukończono 2025-12-16 05:50
+- ✅ `fishing` - ukończono 2025-12-16 05:49
+- ✅ `imbuement_shrine` - ukończono 2025-12-16 05:46
+- ✅ `quests` - ukończono 2025-12-16 05:44
+- ✅ `soul_war_mechanics` - ukończono 2025-12-16 05:43
+- ✅ `guilds.accept_invite.html.twig` - ukończono 2025-12-12 06:06
+- ✅ `forum.new_post.html.twig` - ukończono 2025-12-12 06:06
 
 ---
 

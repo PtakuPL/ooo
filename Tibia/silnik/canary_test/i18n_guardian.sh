@@ -74,6 +74,9 @@ fi
 MINUTE=$(date +%M)
 if [ $((MINUTE % 2)) -eq 0 ]; then
     cd "$WORK_DIR" || exit 1
+
+    # Zawsze odśwież dashboard tuż przed pushem (zgodnie z planem obserwowalności)
+    bash "$WORK_DIR/$WORKER_SCRIPT" --update-status >/dev/null 2>&1 || true
     
     # Git operations
     if [ -n "$(git status --porcelain 2>/dev/null)" ]; then

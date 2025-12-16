@@ -173,6 +173,30 @@ function installLocale(locale)
   else
     installedLocales[locale.name] = locale
   end
+
+  -- Auto-load game i18n dictionaries (semantic + compact) for this locale.
+  -- This keeps all locales consistent without editing every data/locales/<lang>.lua file.
+  if loadGameI18nForLocale then
+    loadGameI18nForLocale(locale)
+  end
+end
+
+function loadGameI18nForLocale(locale)
+  if not locale or not locale.name then
+    return
+  end
+
+  _G.__gameI18nLoaded = _G.__gameI18nLoaded or {}
+  if _G.__gameI18nLoaded[locale.name] then
+    return
+  end
+  _G.__gameI18nLoaded[locale.name] = true
+
+  local prevGlobalLocale = rawget(_G, 'locale')
+  _G.locale = locale
+  pcall(dofile, 'game_i18n_' .. locale.name)
+  pcall(dofile, 'game_i18n_' .. locale.name .. '_compact')
+  _G.locale = prevGlobalLocale
 end
 
 function installLocales(directory)
@@ -215,29 +239,33 @@ end
 -- global function used to translate texts
 function _G.tr(text, ...)
   if currentLocale then
-    if tonumber(text) and currentLocale.formatNumbers then
-      local number = tostring(text):split('.')
-      local out = ''
-      local reverseNumber = number[1]:reverse()
-      for i = 1, #reverseNumber do
-        out = out .. reverseNumber:sub(i, i)
-        if i % 3 == 0 and i ~= #number then
-          out = out .. currentLocale.thousandsSeperator
-        end
-      end
-      if number[2] then
-        out = number[2] .. currentLocale.decimalSeperator .. out
-      end
-      return out:reverse()
-    elseif tostring(text) then
+    if tostring(text) then
       local translation = currentLocale.translation[text]
-      if not translation then
-        if translation == nil and currentLocale.name ~= defaultLocaleName then
-          pdebug('Unable to translate: "' .. text .. '"')
-        end
-        translation = text
+      if translation then
+        return string.format(translation, ...)
       end
-      return string.format(translation, ...)
+
+      -- If there is no translation, we can still format numbers (kept for legacy usage).
+      if tonumber(text) and currentLocale.formatNumbers then
+        local number = tostring(text):split('.')
+        local out = ''
+        local reverseNumber = number[1]:reverse()
+        for i = 1, #reverseNumber do
+          out = out .. reverseNumber:sub(i, i)
+          if i % 3 == 0 and i ~= #number then
+            out = out .. currentLocale.thousandsSeperator
+          end
+        end
+        if number[2] then
+          out = number[2] .. currentLocale.decimalSeperator .. out
+        end
+        return out:reverse()
+      end
+
+      if currentLocale.name ~= defaultLocaleName then
+        pdebug('Unable to translate: "' .. text .. '"')
+      end
+      return string.format(text, ...)
     end
   end
   return text

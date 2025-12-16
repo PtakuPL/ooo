@@ -238,6 +238,11 @@ Narzędzia repo:
 - `tools/i18n_keymap.py` — mapping EN → compact (append-only, 2–7)
 - `tools/json_to_lua_locales.py --compact-keys` — eksport client locales pod compact ID
 
+Ważne (protokół args):
+- Warianty pakietów z argumentami formatowania są już zaimplementowane (dedykowane opcode `0xC4/0xC5`).
+- To pozwala utrzymywać format-stringi po stronie klienta (w locale), a serwer wysyła `i18nKey + args[]` zamiast gotowego tekstu.
+- Bezpieczny rollout: domyślnie trzymać `i18nSendArgs=false` i włączać dopiero po upewnieniu się, że klient ma wsparcie nowych opcode.
+
 Dokument wdrożenia: `docs/i18n/COMPACT_KEYS_PLAN.md`
 
 ---

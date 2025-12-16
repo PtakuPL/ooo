@@ -20,15 +20,25 @@ This document summarizes the comprehensive internationalization effort for OTCli
 | Memory | ❌ Cache per locale on server | ✅ Dictionary only on client |
 | Scalability | ❌ Limited by server | ✅ Client handles translation |
 
-### Client (testyy) TODO
-- [ ] Analyze `src/client/protocolgame.cpp` - `parseTextMessage()`
-- [ ] Extend packet format: `[opcode][type][text][hasI18nKey:byte][i18nKey?]`
-- [ ] Integrate with `tr()` from `modules/corelib/keyboard.lua`
-- [ ] Fallback: if no translation → display original text
+### Client (testyy)
+- ✅ Added localized opcodes parsing:
+   - `0xBC` (188) `LocalizedTextMessage`
+   - `0x99` (153) `LocalizedCreatureSay`
+   - `0xC5` (197) `LocalizedTextMessageArgs` (includes `argc + args[]`)
+   - `0xC4` (196) `LocalizedCreatureSayArgs` (includes `argc + args[]`)
+   - `0xC1` (193) `LocalizedError` (dialog/error via `onServerError`, includes `fallbackText + i18nKey + argc + args[]`)
+- ✅ Calls `tr(i18nKey, ...)` when args are present (client-side `string.format`).
+- ✅ Fix: `tr()` correctly handles compact IDs that look numeric (e.g. "00").
 
-### Server (canary_test) TODO
-- [ ] Modify `sendTextMessage()` to include optional `i18nKey`
-- [ ] Documentation: `canary_test/docs/I18N_PROTOCOL_IMPLEMENTATION.md`
+### Server (canary_test)
+- ✅ Sends localized packets using dedicated opcodes (no optional trailing bytes):
+   - `0xBC/0x99` (no args)
+   - `0xC5/0xC4` (with args)
+- ✅ Compact-keys mapping on send path (semantic → compact) when enabled.
+
+### Remaining TODO (both)
+- [ ] End-to-end verification with real client/server (including args on both packet types).
+- [ ] Rollout discipline: keep args sending behind feature flag by default until verified.
 
 ---
 

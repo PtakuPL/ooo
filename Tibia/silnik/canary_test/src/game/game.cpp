@@ -6585,7 +6585,7 @@ bool Game::internalCreatureLocalizedSay(const std::shared_ptr<Creature> &creatur
 	for (const auto &spectator : spectators) {
 		if (const auto &tmpPlayer = spectator->getPlayer()) {
 			if (!ghostMode || tmpPlayer->canSeeCreature(creature)) {
-				tmpPlayer->sendCreatureLocalizedSay(creature, type, i18nKey, fallbackText, pos);
+				tmpPlayer->sendCreatureLocalizedSay(creature, type, i18nKey, fallbackText, {}, pos);
 			}
 		}
 	}

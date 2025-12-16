@@ -13,6 +13,25 @@ coreDirectory = "data"
 -- NOTE: Debug and trace logs are only available if compiled in debug mode.
 logLevel = "info"
 
+-- I18N transport (compact keys)
+-- When enabled, server may send compact i18n IDs (2..7 chars) instead of long semantic keys.
+-- Requires that the client has loaded *_compact.lua dictionaries.
+-- NOTE: Messages with args can be sent as keys too, but require i18nSendArgs=true (client must support 0xC4/0xC5 opcodes).
+i18nCompactKeysEnabled = false
+i18nKeymapPath = "i18n/keymap.json"
+
+-- Use dedicated localized text opcodes for client-side translation.
+-- If disabled, Player:sendLocalizedTextMessage stays server-side translated.
+-- If args are present, enabling i18nSendArgs switches to args opcodes (0xC4/0xC5) and sends argc+args[].
+i18nUseLocalizedTextProtocol = false
+
+-- If true, server will append formatting arguments to I18N packets (requires updated client).
+-- If false, messages with args will remain server-formatted.
+i18nSendArgs = false
+
+-- Include fallback text along with the key (safer; bigger payload). Set to false once coverage is proven.
+i18nSendFallbackText = true
+
 --- Toggles the server's maintenance mode.
 -- When enabled, it restricts user access and indicates maintenance operations.
 -- @field [parent=#global] #boolean toggleMaintainMode false by default, set to true to enable maintenance mode.

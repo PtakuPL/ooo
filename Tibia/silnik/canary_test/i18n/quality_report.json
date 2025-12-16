@@ -1,11 +1,11 @@
 {
-  "timestamp": "2025-12-11T19:20:33.800426",
-  "total_issues": 2879,
+  "timestamp": "2025-12-16T05:59:39.033406",
+  "total_issues": 2875,
   "by_type": {
     "MISSING_PLACEHOLDER": 1196,
     "EXTRA_PLACEHOLDER": 1196,
     "PIPE_FORMAT_CHANGED": 420,
-    "COMMAND_CHANGED": 66,
+    "COMMAND_CHANGED": 62,
     "LENGTH_SUSPICIOUS": 1
   },
   "issues": [
@@ -266,7 +266,7 @@
       "key": "npc.amber.stdmod_60",
       "lang": "es",
       "file": "i18n/es/npc.json",
-      "details": "Brakuje: {'{yes}', '{no}'}"
+      "details": "Brakuje: {'{no}', '{yes}'}"
     },
     {
       "type": "EXTRA_PLACEHOLDER",

@@ -2345,12 +2345,36 @@ void Player::sendTextMessage(const TextMessage &message) const {
 void Player::sendLocalizedTextMessage(MessageClasses mclass, const std::string &key, std::vector<std::string> args) const {
 	const std::string fallback = g_configManager().getString(DEFAULT_LOCALE);
 	const std::string &activeLocale = locale.empty() ? fallback : locale;
+
+	// Optional: send the translation key to client (client-side translation) when we don't need args.
+	// If args are present, it can still be sent via protocol when i18nSendArgs is enabled.
+	if (client && g_configManager().getBoolean(I18N_USE_LOCALIZED_TEXT_PROTOCOL) && (args.empty() || g_configManager().getBoolean(I18N_SEND_ARGS))) {
+		std::string fallbackText;
+		if (g_configManager().getBoolean(I18N_SEND_FALLBACK_TEXT)) {
+			fallbackText = i18n::g_translator().format(key, activeLocale, args);
+		}
+		client->sendLocalizedTextMessage(LocalizedTextMessage(mclass, std::move(fallbackText), key, std::move(args)));
+		return;
+	}
+
 	sendTextMessage(mclass, i18n::g_translator().format(key, activeLocale, std::move(args)));
 }
 
 void Player::sendLocalizedMessageDialog(const std::string &key, std::vector<std::string> args) const {
 	const std::string fallback = g_configManager().getString(DEFAULT_LOCALE);
 	const std::string &activeLocale = locale.empty() ? fallback : locale;
+
+	// Optional: send the translation key to client (client-side translation).
+	// If args are present, only send them when i18nSendArgs is enabled.
+	if (client && g_configManager().getBoolean(I18N_USE_LOCALIZED_TEXT_PROTOCOL) && (args.empty() || g_configManager().getBoolean(I18N_SEND_ARGS))) {
+		std::string fallbackText;
+		if (g_configManager().getBoolean(I18N_SEND_FALLBACK_TEXT)) {
+			fallbackText = i18n::g_translator().format(key, activeLocale, args);
+		}
+		client->sendLocalizedError(0x14, key, std::move(fallbackText), args);
+		return;
+	}
+
 	sendMessageDialog(i18n::g_translator().format(key, activeLocale, std::move(args)));
 }
 
@@ -8224,9 +8248,9 @@ void Player::sendCreatureSay(const std::shared_ptr<Creature> &creature, SpeakCla
 }
 
 // I18N: Send localized creature speech
-void Player::sendCreatureLocalizedSay(const std::shared_ptr<Creature> &creature, SpeakClasses type, const std::string &i18nKey, const std::string &fallbackText, const Position* pos) const {
+void Player::sendCreatureLocalizedSay(const std::shared_ptr<Creature> &creature, SpeakClasses type, const std::string &i18nKey, const std::string &fallbackText, std::vector<std::string> args, const Position* pos) const {
 	if (client) {
-		client->sendCreatureLocalizedSay(creature, type, i18nKey, fallbackText, pos);
+		client->sendCreatureLocalizedSay(creature, type, i18nKey, fallbackText, args, pos);
 	}
 }
 

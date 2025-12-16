@@ -1,0 +1,118 @@
+{
+  "category": "scripts",
+  "cycle": 1,
+  "eta_seconds": 0,
+  "file": "-",
+  "generated_at_utc": "2025-12-16T05:22:08Z",
+  "message": "cycle end",
+  "phase": "MIGRATION",
+  "progress": {
+    "done": 0,
+    "total": 0,
+    "unit": "units"
+  },
+  "recent": [
+    {
+      "action": "update",
+      "category": "scripts",
+      "cycle": 1,
+      "file": "-",
+      "phase": "MIGRATION",
+      "result": "ok",
+      "stage": "cycle_end",
+      "t": "2025-12-16T05:22:08Z"
+    },
+    {
+      "action": "update",
+      "category": "scripts",
+      "cycle": 1,
+      "file": "-",
+      "phase": "MIGRATION",
+      "result": "ok",
+      "stage": "migration_done",
+      "t": "2025-12-16T05:22:08Z"
+    },
+    {
+      "action": "update",
+      "category": "scripts",
+      "cycle": 1,
+      "file": "-",
+      "phase": "MIGRATION",
+      "result": "ok",
+      "stage": "migration_start",
+      "t": "2025-12-16T05:21:50Z"
+    },
+    {
+      "action": "update",
+      "category": "scripts",
+      "cycle": 1,
+      "file": "-",
+      "phase": "MIGRATION",
+      "result": "ok",
+      "stage": "dispatch",
+      "t": "2025-12-16T05:21:50Z"
+    },
+    {
+      "action": "update",
+      "category": "-",
+      "cycle": 1,
+      "file": "-",
+      "phase": "IDLE",
+      "result": "ok",
+      "stage": "cycle_start",
+      "t": "2025-12-16T05:21:50Z"
+    },
+    {
+      "action": "update",
+      "category": "scripts",
+      "cycle": 1,
+      "file": "-",
+      "phase": "MIGRATION",
+      "result": "ok",
+      "stage": "stop_after_cycle",
+      "t": "2025-12-16T05:00:26Z"
+    },
+    {
+      "action": "update",
+      "category": "scripts",
+      "cycle": 1,
+      "file": "-",
+      "phase": "MIGRATION",
+      "result": "ok",
+      "stage": "cycle_end",
+      "t": "2025-12-16T05:00:25Z"
+    },
+    {
+      "action": "update",
+      "category": "scripts",
+      "cycle": 1,
+      "file": "-",
+      "phase": "MIGRATION",
+      "result": "ok",
+      "stage": "migration_done",
+      "t": "2025-12-16T05:00:24Z"
+    },
+    {
+      "action": "update",
+      "category": "scripts",
+      "cycle": 1,
+      "file": "data-canary/scripts/creaturescripts/free_quest.lua",
+      "phase": "MIGRATION",
+      "result": "ok",
+      "stage": "file",
+      "t": "2025-12-16T05:00:24Z"
+    },
+    {
+      "action": "update",
+      "category": "scripts",
+      "cycle": 1,
+      "file": "-",
+      "phase": "MIGRATION",
+      "result": "ok",
+      "stage": "migration_start",
+      "t": "2025-12-16T05:00:10Z"
+    }
+  ],
+  "stage": "cycle_end",
+  "status": "running"
+}

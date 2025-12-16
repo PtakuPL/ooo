@@ -8,6 +8,20 @@
 
 ---
 
+## 0) Stan wdrożenia (w repo)
+
+Zaimplementowane (pierwszy, minimalny pion):
+- `tools/i18n_status.py` zapisuje: `activity.json`, `ops.jsonl`, `errors.jsonl`, `daily/YYYY-MM-DD.json`.
+- `i18n_worker_simple.sh` aktualizuje LIVE w pętli `--continuous`:
+  - snapshot `cycle_start`/`cycle_end`,
+  - snapshot per plik dla `MIGRATION` w kategoriach `npc` i `scripts`,
+  - log `ops` po zakończeniu kategorii (z delta: `keys_added`, `files_changed`).
+- Generator `I18N_STATUS.md` preferuje nowe źródła:
+  - **LIVE** z `i18n/status/activity.json` (fallback: `i18n_global_stats.json`),
+  - **Dziś (UTC)** z `i18n/status/daily/YYYY-MM-DD.json`.
+
+---
+
 ## 1) Zasady projektu statusu
 
 1. **Jedno źródło prawdy (machine-readable):** JSON w `i18n/status/`.

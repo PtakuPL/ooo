@@ -2,8 +2,8 @@
 
 > **Dokument**: Implementacja protokołu i18n klient-serwer  
 > **Data utworzenia**: 2025-12-12  
-> **Data aktualizacji**: 2025-12-12  
-> **Status**: 🔄 W TRAKCIE - FAZA 2  
+> **Data aktualizacji**: 2025-12-16  
+> **Status**: 🔄 W TRAKCIE - FAZA 2 (protokół)  
 > **Autor**: AI Assistant + PtakuPL
 
 ---
@@ -122,6 +122,39 @@ Szczegółowy plan: `docs/i18n/COMPACT_KEYS_PLAN.md`
 |--------------|--------------|-------|----------|------|
 | 0xBC | 188 | LocalizedTextMessage | S→C | Wiadomości systemowe z kluczem i18n |
 | 0x99 | 153 | LocalizedCreatureSay | S→C | Głosy monster/NPC z kluczem i18n |
+| 0xC5 | 197 | LocalizedTextMessageArgs | S→C | Jak 0xBC, ale z argumentami formatowania (argc + args[]) |
+| 0xC4 | 196 | LocalizedCreatureSayArgs | S→C | Jak 0x99, ale z argumentami formatowania (argc + args[]) |
+| 0xC1 | 193 | LocalizedError | S→C | Dialog/error (pod `onServerError`) z kluczem i18n (+ opcjonalne args) |
+
+---
+
+## ⚙️ Konfiguracja i rollout (bezpieczne wdrożenie)
+
+Konfiguracja (serwer): `config.lua` / `config.lua.dist`
+- `i18nUseLocalizedTextProtocol` (bool)
+    - `false` → serwer wysyła klasyczne wiadomości (server-side format/translate)
+    - `true` → serwer może używać opcode I18N (0xBC/0x99) i wysyłać `i18nKey` do klienta
+- `i18nSendArgs` (bool)
+    - `false` → jeśli wiadomość ma args, serwer zostaje przy server-side formatowaniu
+    - `true` → serwer używa dedykowanych opcode args (0xC5/0xC4) i dopisuje `argc + args[]`
+- `i18nCompactKeysEnabled` (bool) + `i18nKeymapPath` (string)
+    - gdy `true`, serwer mapuje klucz semantyczny → compact ID na ścieżce wysyłki
+- `i18nSendFallbackText` (bool)
+    - gdy `true`, serwer wysyła również fallback (większy payload, łatwiejszy rollout)
+
+Rekomendowana kolejność włączania:
+1) `i18nUseLocalizedTextProtocol=true`, `i18nSendArgs=false`, `i18nCompactKeysEnabled=false`, `i18nSendFallbackText=true`
+2) Po potwierdzeniu kompatybilności klienta: `i18nSendArgs=true` (test: wiadomości z args dla obu typów pakietów)
+3) Po potwierdzeniu mapowań i słowników: `i18nCompactKeysEnabled=true` + poprawny `i18nKeymapPath`
+4) Opcjonalnie po stabilizacji: `i18nSendFallbackText=false`
+
+Szybki test manualny (bez dodatkowego kodu):
+- Włącz `i18nUseLocalizedTextProtocol=true`.
+- Wejdź w interakcję z NPC, który używa `player:sendLocalizedTextMessage(..., key, args)` (np. handel: `system.trade.sold`).
+- Przy `i18nSendArgs=true` ten sam scenariusz powinien przejść ścieżką opcode args (0xC5) i wywołać `tr(key, ...)` na kliencie.
+
+Rollback:
+- Ustaw `i18nUseLocalizedTextProtocol=false` (wraca do server-side) lub zostaw `i18nSendArgs=false` jeśli problem dotyczy tylko args.
 
 ---
 
@@ -152,6 +185,12 @@ Szczegółowy plan: `docs/i18n/COMPACT_KEYS_PLAN.md`
 - [x] Dodać case w switch głównego parsera dla obu opcode'ów
 - [x] Zaimplementować `parseLocalizedTextMessage()` z integracją `tr()`
 - [x] Zaimplementować `parseLocalizedCreatureSay()` z integracją `tr()`
+
+### ETAP 3.5: Protokół z argumentami (args) ✅ ZAKOŃCZONY
+- [x] Dodane nowe, dedykowane opcodes dla wariantów z args (bez ryzyka desync): 0xC4 / 0xC5
+- [x] Serwer: przy `I18N_SEND_ARGS=true` wybiera opcode args i dopisuje `argc + args[]`
+- [x] Klient: parsuje `argc + args[]` i wywołuje `tr(i18nKey, ...)` z argumentami
+- [x] Klient: zabezpieczenie wywołania `tr()` przed wyciekiem Lua stacka (sprzątanie stacka przy wyjątkach)
 
 ### ETAP 4: Migracja kluczy (DO ZROBIENIA)
 - [ ] Przenieść klucze z `i18n/en/*.json` (serwer) do formatu klienta
@@ -252,8 +291,14 @@ void ProtocolGame::parseLocalizedCreatureSay(const InputMessagePtr& msg) {
 
 **LocalizedTextMessage (0xBC / 188):**
 \`\`\`
-[0xBC:byte][type:byte][...dane wg typu...][text:string][i18nKey:string]
-                                           ↑ fallback    ↑ klucz do tr()
+[0xBC:byte][type:byte][...dane wg typu...][fallbackText:string][i18nKey:string]
+                                                 ↑ fallback      ↑ klucz do tr()
+\`\`\`
+
+**LocalizedTextMessageArgs (0xC5 / 197):**
+\`\`\`
+[0xC5:byte][type:byte][...dane wg typu...][fallbackText:string][i18nKey:string][argc:u8][arg1:string]..[argN:string]
+                                                 ↑ fallback      ↑ klucz do tr()       ↑ string.format(...) args
 \`\`\`
 
 **LocalizedCreatureSay (0x99 / 153):**
@@ -261,6 +306,19 @@ void ProtocolGame::parseLocalizedCreatureSay(const InputMessagePtr& msg) {
 [0x99:byte][statementId:u32][name:string][suffix:byte][level:u16]
 [talkType:byte][position:xyz][i18nKey:string][fallbackText:string]
                              ↑ klucz do tr()  ↑ dla starych klientów
+\`\`\`
+
+**LocalizedCreatureSayArgs (0xC4 / 196):**
+\`\`\`
+[0xC4:byte][statementId:u32][name:string][suffix:byte][level:u16]
+[talkType:byte][position:xyz][i18nKey:string][fallbackText:string][argc:u8][arg1:string]..[argN:string]
+                             ↑ klucz do tr()  ↑ fallback                ↑ string.format(...) args
+\`\`\`
+
+**LocalizedError (0xC1 / 193):**
+\`\`\`
+[0xC1:byte][code:byte][fallbackText:string][i18nKey:string][argc:u8][arg1:string]..[argN:string]
+            ↑ jak w 0xED       ↑ fallback       ↑ klucz do tr()       ↑ string.format(...) args
 \`\`\`
 
 ---
@@ -277,6 +335,9 @@ void ProtocolGame::parseLocalizedCreatureSay(const InputMessagePtr& msg) {
 | 2025-12-12 | Rozszerzenie voiceBlock_t o i18nKey | AI |
 | 2025-12-12 | Aktualizacja onThinkYell w monster.cpp i npc.cpp | AI |
 | 2025-12-12 | Aktualizacja funkcji Lua addVoice() | AI |
+| 2025-12-16 | Protokół args: nowe opcode 0xC4/0xC5 + `argc+args[]` (serwer+klient) | AI |
+| 2025-12-16 | Protokół: LocalizedError (0xC1) dla dialog/error z `tr(key, ...)` | AI |
+| 2025-12-16 | Fix klienta: `tr()` poprawnie obsługuje compact ID wyglądające jak liczby (np. "00") | AI |
 | | *Następne: Monster/Item/NPC names* | |
 
 ---
@@ -288,6 +349,10 @@ void ProtocolGame::parseLocalizedCreatureSay(const InputMessagePtr& msg) {
 
 ### Problem: Brak tłumaczenia na kliencie
 **Rozwiązanie**: Parser sprawdza czy `tr()` zwraca klucz - jeśli tak, używa fallback text.
+
+### Problem: Args jako „opcjonalne trailing bytes” powodują desync
+**Rozwiązanie**: Zamiast dopisywać `argc+args[]` do istniejących opcode (0xBC/0x99), używamy nowych opcode (0xC5/0xC4).
+To eliminuje ryzyko, że stary klient odczyta `argc` jako kolejny opcode i rozjedzie strumień pakietów.
 
 ---
 

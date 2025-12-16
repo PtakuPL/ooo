@@ -1,6 +1,7 @@
 # 🌍 System Lokalizacji Klienta (OTClient/testyy)
 
 > **Data utworzenia**: 2025-12-12  
+> **Ostatnia aktualizacja**: 2025-12-16  
 > **Status**: W TRAKCIE IMPLEMENTACJI  
 > **Powiązane**: Server I18N Protocol (canary_test/docs/I18N_PROTOCOL_IMPLEMENTATION.md)
 
@@ -17,7 +18,7 @@ używając funkcji `tr()` i słowników w plikach `data/locales/*.lua`.
 SERWER                         KLIENT
 ┌─────────────────┐           ┌─────────────────┐
 │ sendLocalizedMsg │  ──────► │ parseLocalized  │
-│ key="npc.1"     │   0xBC    │ tr("npc.1")     │
+│ key="Ab"        │   0xBC    │ tr("Ab")        │
 │ fallback="Hi"   │           │ "Witaj!"        │
 └─────────────────┘           └─────────────────┘
 ```
@@ -25,6 +26,9 @@ SERWER                         KLIENT
 ---
 
 ## 🔑 KONWENCJA KLUCZY I18N
+
+Uwaga: kanoniczne klucze w repo/kodzie są **semantyczne** (czytelne), a na granicy protokołu mogą być mapowane do **compact ID (2–7 znaków)** przez `i18n/keymap.json`.
+Dokument historycznie zawiera przykłady typu `npc.1` — traktuj je jako starszy wariant koncepcji, a nie źródło prawdy.
 
 ### Prefiksy kategorii (bandwidth-optimized)
 
@@ -95,6 +99,12 @@ testyy/
     └── client_locales/
         └── locales.lua      # System tr()
 ```
+
+W praktyce (stan repo): `data/locales/en.lua` i `data/locales/pl.lua` już ładują:
+- `dofile('game_i18n_<lang>')`
+- `dofile('game_i18n_<lang>_compact')`
+
+Czyli klient jest gotowy na oba tryby: semantyczne klucze oraz compact ID.
 
 ### Format pliku locale (istniejący)
 ```lua
@@ -208,6 +218,8 @@ function _G.tr(text, ...)
 end
 ```
 
+Uwaga (compact keys): część compact ID może wyglądać „numerycznie” (np. "00"). Implementacja `tr()` na kliencie priorytetowo sprawdza `currentLocale.translation[text]`, żeby takie klucze nie były błędnie traktowane jak liczby.
+
 ### Użycie w kodzie C++ klienta
 ```cpp
 // protocolgameparse.cpp - parseLocalizedCreatureSay
@@ -235,8 +247,16 @@ local text = tr("cm.hit.1", "Dragon", 150)
 Wiadomości systemowe z kluczem i18n.
 
 ```
-[0xBC][type:u8][...data...][text:string][i18nKey:string]
-                            ↑ fallback   ↑ klucz dla tr()
+[0xBC][type:u8][...data...][fallbackText:string][i18nKey:string]
+                                  ↑ fallback     ↑ klucz dla tr()
+
+### Opcode 0xC5 (197) - LocalizedTextMessageArgs
+Wiadomości systemowe z kluczem i18n + argumentami formatowania.
+
+```
+[0xC5][type:u8][...data...][fallbackText:string][i18nKey:string][argc:u8][arg1:string]..[argN:string]
+                                  ↑ fallback     ↑ tr() key       ↑ string.format args
+```
 ```
 
 ### Opcode 0x99 (153) - LocalizedCreatureSay  
@@ -246,6 +266,23 @@ Głosy monster/NPC z kluczem i18n.
 [0x99][statementId:u32][name:string][suffix:u8][level:u16]
 [talkType:u8][position:xyz][i18nKey:string][fallbackText:string]
                            ↑ klucz tr()   ↑ dla starych klientów
+
+### Opcode 0xC4 (196) - LocalizedCreatureSayArgs
+Głosy monster/NPC z kluczem i18n + argumentami formatowania.
+
+```
+[0xC4][statementId:u32][name:string][suffix:u8][level:u16]
+[talkType:u8][position:xyz][i18nKey:string][fallbackText:string][argc:u8][arg1:string]..[argN:string]
+                           ↑ tr() key     ↑ fallback              ↑ string.format args
+```
+```
+
+### Opcode 0xC1 (193) - LocalizedError
+Dialog/error z kluczem i18n (pod istniejący handler `onServerError`) + opcjonalne argumenty formatowania.
+
+```
+[0xC1][code:u8][fallbackText:string][i18nKey:string][argc:u8][arg1:string]..[argN:string]
+  ↑ jak w 0xED       ↑ fallback     ↑ tr() key        ↑ string.format args
 ```
 
 ---
@@ -267,11 +304,11 @@ find i18n/ -name "*.json" -exec cat {} \; | \
 
 ### Krok 2: Generowanie plików locales
 ```bash
-# Skrypt Python: json_to_lua_locales.py
+# Skrypt Python: json_to_lua_locales.py (wariant compact)
 python3 tools/json_to_lua_locales.py \
-  --input i18n/pl/npc.json \
-  --output testyy/data/locales/game_i18n_pl.lua \
-  --prefix "npc."
+  --lang pl \
+  --compact-keys \
+  --i18n-dir i18n
 ```
 
 ### Krok 3: Weryfikacja

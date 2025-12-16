@@ -44,6 +44,7 @@
 #include "lua/modules/modules.hpp"
 #include "server/network/message/outputmessage.hpp"
 #include "utils/tools.hpp"
+#include "utils/i18n/keymap.hpp"
 #include "creatures/players/vocations/vocation.hpp"
 
 #include "enums/account_coins.hpp"
@@ -4819,8 +4820,20 @@ void ProtocolGame::sendLocalizedTextMessage(const LocalizedTextMessage &message)
 		return;
 	}
 
+	const bool sendFallbackText = g_configManager().getBoolean(I18N_SEND_FALLBACK_TEXT);
+
+	std::string keyToSend = message.i18nKey;
+	if (!keyToSend.empty() && g_configManager().getBoolean(I18N_COMPACT_KEYS_ENABLED)) {
+		i18n::g_keymap().configure(true, g_configManager().getString(I18N_KEYMAP_PATH));
+		keyToSend = i18n::g_keymap().toCompactOrSelf(keyToSend);
+	}
+
 	NetworkMessage msg;
-	msg.addByte(0xBC);  // New opcode for localized messages
+	if (g_configManager().getBoolean(I18N_SEND_ARGS)) {
+		msg.addByte(0xC5);  // GameServerLocalizedTextMessageArgs (197)
+	} else {
+		msg.addByte(0xBC);  // GameServerLocalizedTextMessage (188)
+	}
 	msg.addByte(message.type);
 	
 	// Add position/channel data based on message type (same as sendTextMessage)
@@ -4855,8 +4868,15 @@ void ProtocolGame::sendLocalizedTextMessage(const LocalizedTextMessage &message)
 			break;
 	}
 	
-	msg.addString(message.text);      // Fallback text (for old clients or missing translations)
-	msg.addString(message.i18nKey);   // Translation key for client-side lookup
+	msg.addString(sendFallbackText ? message.text : std::string{}); // Fallback text (optional)
+	msg.addString(keyToSend);        // Translation key for client-side lookup (optionally compact)
+	if (g_configManager().getBoolean(I18N_SEND_ARGS)) {
+		const uint8_t argc = static_cast<uint8_t>(std::min<size_t>(message.args.size(), 255));
+		msg.addByte(argc);
+		for (size_t i = 0; i < argc; ++i) {
+			msg.addString(message.args[i]);
+		}
+	}
 	writeToOutputBuffer(msg);
 }
 
@@ -6601,9 +6621,20 @@ void ProtocolGame::sendCreatureSay(const std::shared_ptr<Creature> &creature, Sp
 
 // I18N: Send localized creature speech (monster/NPC voices)
 // Uses opcode 0x99 (153) to send i18nKey for client-side translation
-void ProtocolGame::sendCreatureLocalizedSay(const std::shared_ptr<Creature> &creature, SpeakClasses type, const std::string &i18nKey, const std::string &fallbackText, const Position* pos /* = nullptr*/) {
+void ProtocolGame::sendCreatureLocalizedSay(const std::shared_ptr<Creature> &creature, SpeakClasses type, const std::string &i18nKey, const std::string &fallbackText, const std::vector<std::string> &args, const Position* pos /* = nullptr*/) {
 	NetworkMessage msg;
-	msg.addByte(0x99);  // I18N opcode for localized creature say (153)
+	const bool sendFallbackTextEnabled = g_configManager().getBoolean(I18N_SEND_FALLBACK_TEXT);
+	if (g_configManager().getBoolean(I18N_SEND_ARGS)) {
+		msg.addByte(0xC4);  // GameServerLocalizedCreatureSayArgs (196)
+	} else {
+		msg.addByte(0x99);  // GameServerLocalizedCreatureSay (153)
+	}
+
+	std::string keyToSend = i18nKey;
+	if (!keyToSend.empty() && g_configManager().getBoolean(I18N_COMPACT_KEYS_ENABLED)) {
+		i18n::g_keymap().configure(true, g_configManager().getString(I18N_KEYMAP_PATH));
+		keyToSend = i18n::g_keymap().toCompactOrSelf(keyToSend);
+	}
 
 	static uint32_t statementId = 0;
 	msg.add<uint32_t>(++statementId);
@@ -6634,8 +6665,15 @@ void ProtocolGame::sendCreatureLocalizedSay(const std::shared_ptr<Creature> &cre
 	}
 
 	// I18N: Send both key and fallback
-	msg.addString(i18nKey);        // Key for client translation
-	msg.addString(fallbackText);   // Fallback for non-i18n clients
+	msg.addString(keyToSend);      // Key for client translation (optionally compact)
+	msg.addString(sendFallbackTextEnabled ? fallbackText : std::string{});   // Fallback for non-i18n clients (optional)
+	if (g_configManager().getBoolean(I18N_SEND_ARGS)) {
+		const uint8_t argc = static_cast<uint8_t>(std::min<size_t>(args.size(), 255));
+		msg.addByte(argc);
+		for (size_t i = 0; i < argc; ++i) {
+			msg.addString(args[i]);
+		}
+	}
 	writeToOutputBuffer(msg);
 }
 
@@ -8546,6 +8584,36 @@ void ProtocolGame::sendMessageDialog(const std::string &message) {
 	msg.addByte(0xED);
 	msg.addByte(0x14); // Unknown type
 	msg.addString(message);
+	writeToOutputBuffer(msg);
+}
+
+// I18N: Send server error/dialog with translation key (client-side translation)
+// Opcode 0xC1 (193) - GameServerLocalizedError
+// Format: [u8 opcode][u8 code][string fallbackText][string i18nKey][u8 argc][string arg1..argN]
+void ProtocolGame::sendLocalizedError(uint8_t code, const std::string &i18nKey, const std::string &fallbackText, const std::vector<std::string> &args /* = {} */) {
+	const bool sendFallbackTextEnabled = g_configManager().getBoolean(I18N_SEND_FALLBACK_TEXT);
+
+	std::string keyToSend = i18nKey;
+	if (!keyToSend.empty() && g_configManager().getBoolean(I18N_COMPACT_KEYS_ENABLED)) {
+		i18n::g_keymap().configure(true, g_configManager().getString(I18N_KEYMAP_PATH));
+		keyToSend = i18n::g_keymap().toCompactOrSelf(keyToSend);
+	}
+
+	NetworkMessage msg;
+	msg.addByte(0xC1);
+	msg.addByte(code);
+	msg.addString(sendFallbackTextEnabled ? fallbackText : std::string{});
+	msg.addString(keyToSend);
+
+	uint8_t argc = 0;
+	if (g_configManager().getBoolean(I18N_SEND_ARGS)) {
+		argc = static_cast<uint8_t>(std::min<size_t>(args.size(), 255));
+	}
+	msg.addByte(argc);
+	for (uint8_t i = 0; i < argc; ++i) {
+		msg.addString(args[i]);
+	}
+
 	writeToOutputBuffer(msg);
 }
 

@@ -136,6 +136,7 @@ namespace Proto
         GameServerEditList = 151,
         GameServerSendGameNews = 152,
         GameServerLocalizedCreatureSay = 153,  // I18N: creature speech with translation key
+        GameServerLocalizedCreatureSayArgs = 196,  // I18N: creature speech with translation key + args
         GameServerSendBlessDialog = 155,
         GameServerBlessings = 156,
         GameServerPreset = 157,
@@ -170,10 +171,12 @@ namespace Proto
         GameServerTaskHuntingBasicData = 186,
         GameServerTaskHuntingData = 187,
         GameServerLocalizedTextMessage = 188,  // I18N: text message with translation key
+        GameServerLocalizedTextMessageArgs = 197,  // I18N: text message with translation key + args
         GameServerBosstiaryCooldownTimer = 189,
         GameServerFloorChangeUp = 190,
         GameServerFloorChangeDown = 191,
         GameServerLootContainers = 192,
+        GameServerLocalizedError = 193,  // I18N: error/dialog with translation key (fallback + key + args)
         GameServerCyclopediaHouseAuctionMessage = 195,
         GameServerCyclopediaHousesInfo = 198,
         GameServerCyclopediaHouseList = 199,

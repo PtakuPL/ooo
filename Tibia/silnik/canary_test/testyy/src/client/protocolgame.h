@@ -281,8 +281,8 @@ private:
     void parseCounterTrade(const InputMessagePtr& msg);
     void parseCloseTrade(const InputMessagePtr&);
     void parseTextMessage(const InputMessagePtr& msg);
-    void parseLocalizedTextMessage(const InputMessagePtr& msg);  // I18N: text with translation key
-    void parseLocalizedCreatureSay(const InputMessagePtr& msg);  // I18N: creature speech with translation key
+    void parseLocalizedTextMessage(const InputMessagePtr& msg, bool hasArgs = false);  // I18N: text with translation key
+    void parseLocalizedCreatureSay(const InputMessagePtr& msg, bool hasArgs = false);  // I18N: creature speech with translation key
     void parseCancelWalk(const InputMessagePtr& msg);
     void parseWalkWait(const InputMessagePtr& msg) const;
     void parseFloorChangeUp(const InputMessagePtr& msg);
@@ -340,6 +340,7 @@ private:
     void parsePreyRerollPrice(const InputMessagePtr& msg);
     void parseImbuementWindow(const InputMessagePtr& msg);
     void parseCloseImbuementWindow(const InputMessagePtr& msg);
+    void parseLocalizedError(const InputMessagePtr& msg);  // I18N: server error/dialog with translation key
     void parseError(const InputMessagePtr& msg);
     void parseMarketEnter(const InputMessagePtr& msg);
     void parseMarketEnterOld(const InputMessagePtr& msg);

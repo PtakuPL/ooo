@@ -32,6 +32,102 @@ NO_GIT=false                # Flaga --no-git: wyłącza git add/commit/push
 TRANSLATE_LIMIT=0           # --translate-limit N: max kluczy do przetłumaczenia na cykl (0=brak limitu)
 TRANSLATIONS_ONLY=false     # --translations-only: tylko tłumaczenia, bez migracji kodu
 
+# Zakres pracy workera:
+# - server (domyślnie): tylko serwer canary (bez html_copy i testyy/OTClient)
+# - all: wszystkie zdefiniowane kategorie
+I18N_SCOPE="${I18N_SCOPE:-server}"
+export I18N_SCOPE
+
+# Statusy (LIVE + zdarzenia + daily) - docelowo źródło prawdy dla I18N_STATUS.md
+STATUS_DIR="$I18N_DIR/status"
+
+status_update_activity() {
+    # Użycie:
+    #   status_update_activity <status> <cycle> <phase> <stage> <category> <file> <message> <done> <total> <unit> <eta>
+    local st="${1:-running}"; shift || true
+    local cycle="${1:-0}"; shift || true
+    local phase="${1:-IDLE}"; shift || true
+    local stage="${1:--}"; shift || true
+    local category="${1:--}"; shift || true
+    local file="${1:--}"; shift || true
+    local message="${1:-}"; shift || true
+    local done="${1:-0}"; shift || true
+    local total="${1:-0}"; shift || true
+    local unit="${1:-units}"; shift || true
+    local eta="${1:-0}"; shift || true
+
+    mkdir -p "$STATUS_DIR" "$STATUS_DIR/categories" "$STATUS_DIR/daily" 2>/dev/null
+    python3 tools/i18n_status.py --status-dir "$STATUS_DIR" update-activity \
+        --status "$st" \
+        --cycle "$cycle" \
+        --phase "$phase" \
+        --stage "$stage" \
+        --category "$category" \
+        --file "$file" \
+        --message "$message" \
+        --progress-done "$done" \
+        --progress-total "$total" \
+        --progress-unit "$unit" \
+        --eta-seconds "$eta" \
+        >/dev/null 2>&1 || true
+}
+
+status_log_op() {
+    # Użycie:
+    #   status_log_op <cycle> <phase> <stage> <category> <file> <result> <detail> [keys_added] [files_changed] [mapped_new] [translated] [skipped]
+    local cycle="${1:-0}"; shift || true
+    local phase="${1:-IDLE}"; shift || true
+    local stage="${1:--}"; shift || true
+    local category="${1:--}"; shift || true
+    local file="${1:--}"; shift || true
+    local result="${1:-ok}"; shift || true
+    local detail="${1:-}"; shift || true
+    local keys_added="${1:-}"; shift || true
+    local files_changed="${1:-}"; shift || true
+    local mapped_new="${1:-}"; shift || true
+    local translated="${1:-}"; shift || true
+    local skipped="${1:-}"; shift || true
+
+    mkdir -p "$STATUS_DIR" 2>/dev/null
+    local args=(--status-dir "$STATUS_DIR" log-op --cycle "$cycle" --phase "$phase" --stage "$stage" --category "$category" --file "$file" --result "$result")
+    [ -n "$detail" ] && args+=(--detail "$detail")
+    [ -n "$keys_added" ] && args+=(--keys-added "$keys_added")
+    [ -n "$files_changed" ] && args+=(--files-changed "$files_changed")
+    [ -n "$mapped_new" ] && args+=(--mapped-new "$mapped_new")
+    [ -n "$translated" ] && args+=(--translated "$translated")
+    [ -n "$skipped" ] && args+=(--skipped "$skipped")
+    python3 tools/i18n_status.py "${args[@]}" >/dev/null 2>&1 || true
+}
+
+status_log_error() {
+    # Użycie:
+    #   status_log_error <cycle> <phase> <stage> <category> <file> <error> <action>
+    local cycle="${1:-0}"; shift || true
+    local phase="${1:--}"; shift || true
+    local stage="${1:--}"; shift || true
+    local category="${1:--}"; shift || true
+    local file="${1:--}"; shift || true
+    local error="${1:-error}"; shift || true
+    local action="${1:-}"; shift || true
+
+    mkdir -p "$STATUS_DIR" 2>/dev/null
+    python3 tools/i18n_status.py --status-dir "$STATUS_DIR" log-error \
+        --cycle "$cycle" --phase "$phase" --stage "$stage" --category "$category" --file "$file" \
+        --error "$error" --action "$action" \
+        >/dev/null 2>&1 || true
+}
+
+status_build_daily() {
+    # Użycie: status_build_daily [YYYY-MM-DD]
+    local date_utc="${1:-}"
+    mkdir -p "$STATUS_DIR/daily" 2>/dev/null
+    if [ -n "$date_utc" ]; then
+        python3 tools/i18n_status.py --status-dir "$STATUS_DIR" build-daily --date "$date_utc" >/dev/null 2>&1 || true
+    else
+        python3 tools/i18n_status.py --status-dir "$STATUS_DIR" build-daily >/dev/null 2>&1 || true
+    fi
+}
+
 #===============================================================================
 # GET_UNPROCESSED_FILES - Znajdź pliki które jeszcze nie były przetwarzane
 #===============================================================================
@@ -236,16 +332,34 @@ run_with_mini_batch() {
     
     # NAPRAWIONE: Logi do stderr (>&2) żeby nie mieszać z return value
     echo "📦 Mini-batch mode: $total_batch total, $mini_batch per batch, ${mini_pause}s pause" >&2
+
+    # LIVE snapshot dla mini-batch (ogarnia wszystkie kategorie korzystające z wrappera)
+    status_update_activity "running" "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "mini_batch_start" "$category" "-" "mini-batch" 0 "$total_batch" "items" 0
     
     while [ $processed -lt $total_batch ]; do
         local current_mini=$mini_batch
         [ $((processed + mini_batch)) -gt $total_batch ] && current_mini=$((total_batch - processed))
+
+        status_update_activity "running" "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "mini_batch" "$category" "-" "batch $((mini_count + 1)) size=$current_mini" "$processed" "$total_batch" "items" 0
         
         # Zlicz klucze przed
         local keys_before=$(python3 -c "import json,os; print(sum(len(json.load(open(f'i18n/en/{f}'))) for f in os.listdir('i18n/en') if f.endswith('.json')))" 2>/dev/null || echo 0)
         
         # Wywołaj funkcję przetwarzania (przekieruj jej output do stderr)
-        $process_func "$current_mini" >&2
+        # UWAGA: process_generic_category ma inny podpis: (category, batch)
+        if [ "$process_func" = "process_generic_category" ]; then
+            if ! $process_func "$category" "$current_mini" >&2; then
+                local rc=$?
+                echo "   ❌ Mini-batch: $process_func failed (rc=$rc)" >&2
+                status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "mini_batch" "$category" "-" "mini-batch failed rc=$rc" "func=$process_func"
+                break
+            fi
+        elif ! $process_func "$current_mini" >&2; then
+            local rc=$?
+            echo "   ❌ Mini-batch: $process_func failed (rc=$rc)" >&2
+            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "mini_batch" "$category" "-" "mini-batch failed rc=$rc" "func=$process_func"
+            break
+        fi
         
         # Zlicz klucze po
         local keys_after=$(python3 -c "import json,os; print(sum(len(json.load(open(f'i18n/en/{f}'))) for f in os.listdir('i18n/en') if f.endswith('.json')))" 2>/dev/null || echo 0)
@@ -256,6 +370,9 @@ run_with_mini_batch() {
         mini_count=$((mini_count + 1))
         
         echo "   📦 Mini-batch #$mini_count: +$added kluczy (suma: $total_added)" >&2
+
+        status_log_op "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "mini_batch_done" "$category" "-" "ok" "mini_batch=$mini_count processed=$processed/$total_batch" "$added" ""
+        status_update_activity "running" "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "mini_batch_done" "$category" "-" "+$added keys" "$processed" "$total_batch" "items" 0
         
         # Pauza między mini-batch (ale nie po ostatnim i nie gdy nic nie dodano)
         if [ $processed -lt $total_batch ] && [ "$added" -gt 0 ]; then
@@ -266,11 +383,14 @@ run_with_mini_batch() {
         # Jeśli nie dodano nic, przerwij wcześniej
         if [ "$added" -eq 0 ]; then
             echo "   ⚠️ Brak nowych danych, kończę wcześniej" >&2
+            status_log_op "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "mini_batch_stop" "$category" "-" "ok" "no new data" "0" ""
             break
         fi
     done
     
     echo "✅ Zakończono: +$total_added kluczy w $mini_count mini-batch" >&2
+
+    status_update_activity "running" "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "mini_batch_end" "$category" "-" "done" "$processed" "$total_batch" "items" 0
     
     # Zwróć TYLKO liczbę dodanych kluczy (do stdout)
     echo "$total_added"
@@ -281,12 +401,18 @@ run_with_mini_batch() {
 #===============================================================================
 update_github_status() {
     log "${CYAN}📊 Aktualizuję I18N_STATUS.md...${NC}"
+
+    # Utrzymuj kanoniczne źródła statusu (JSON) w i18n/status/.
+    # - daily/YYYY-MM-DD.json: "co zrobił dziś"
+    # - worker_state.json: trwały stan (schema 3.0)
+    python3 tools/i18n_status.py --status-dir "$STATUS_DIR" build-daily >/dev/null 2>&1 || true
+    python3 tools/i18n_status.py --status-dir "$STATUS_DIR" build-worker-state --repo-root "$WORK_DIR" >/dev/null 2>&1 || true
     
     python3 << 'STATUSPY'
 import json
 import os
 import subprocess
-from datetime import datetime
+from datetime import datetime, timezone
 
 WORK_DIR = os.getcwd()
 STATUS_FILE = "i18n_file_status.json"
@@ -295,10 +421,18 @@ PROCESSED_FILE = "i18n_processed_files.txt"
 EXCLUDED_FILE = "i18n_excluded_files.txt"
 
 # Git root - tam gdzie jest .git (dla pushowania I18N_STATUS.md)
-try:
-    GIT_ROOT = "/home/ptaku/serweryt"
-except:
-    GIT_ROOT = WORK_DIR
+def _detect_git_root(work_dir: str) -> str:
+    try:
+        out = subprocess.check_output(
+            ["git", "-C", work_dir, "rev-parse", "--show-toplevel"],
+            stderr=subprocess.DEVNULL,
+            text=True,
+        ).strip()
+        return out or work_dir
+    except Exception:
+        return work_dir
+
+GIT_ROOT = _detect_git_root(WORK_DIR)
 
 # Wczytaj status workera
 try:
@@ -428,6 +562,18 @@ otclient_src_keys = count_keys("otclient_src.json")
 otclient_mods_keys = count_keys("otclient_mods.json")
 otclient_tools_keys = count_keys("otclient_tools.json")
 
+# Zakres pracy (spójny z dispatcherem): domyślnie liczymy tylko serwer canary
+SCOPE = (os.environ.get("I18N_SCOPE", "server") or "server").strip().lower()
+if SCOPE in ("server", "canary", "server_only", "server-only"):
+    php_keys = 0
+    html_keys = 0
+    client_keys = 0
+    otclient_modules_keys = 0
+    otclient_data_keys = 0
+    otclient_src_keys = 0
+    otclient_mods_keys = 0
+    otclient_tools_keys = 0
+
 total_keys = (game_keys + items_keys + misc_keys + monsters_keys + npc_keys + 
               player_keys + quests_keys + scripts_keys + server_keys + spells_keys + 
               system_keys + ui_keys + startup_keys + raids_keys + world_keys + 
@@ -437,25 +583,43 @@ total_keys = (game_keys + items_keys + misc_keys + monsters_keys + npc_keys +
               otclient_modules_keys + otclient_data_keys + otclient_src_keys + 
               otclient_mods_keys + otclient_tools_keys)
 
-# Zlicz języki (wszystkie dostępne)
-ALL_LANGUAGES = ["en", "pl", "de", "es", "pt", "fr", "it", "ru", "uk", "zh", "ja", "ko", "ar", "tr", "nl", "sv", "da", "no", "fi", "cs", "sk", "hu", "ro", "bg", "el", "he", "hi", "th", "vi", "id", "ms", "tl", "sw", "bn", "ta", "te", "ml", "ka", "hy", "az", "kk", "uz", "sr", "hr", "sl", "bs", "mk", "sq", "lv", "lt", "et", "fa", "zh_TW"]
+# Zlicz języki (foldery w i18n/; pomijamy foldery techniczne typu i18n/status)
+def _list_language_dirs(i18n_dir: str):
+    if not os.path.isdir(i18n_dir):
+        return []
+    langs = []
+    for name in os.listdir(i18n_dir):
+        if name.startswith('.'):
+            continue
+        if name in ("status",):
+            continue
+        path = os.path.join(i18n_dir, name)
+        if os.path.isdir(path):
+            langs.append(name)
+    return sorted(langs)
+
+ALL_LANGUAGES = _list_language_dirs(I18N_DIR)
 langs_count = len(ALL_LANGUAGES)
 
 langs_with_data = []
-if os.path.isdir(I18N_DIR):
-    for lang in os.listdir(I18N_DIR):
-        lang_path = f"{I18N_DIR}/{lang}"
-        if os.path.isdir(lang_path):
-            for jf in os.listdir(lang_path):
-                if jf.endswith(".json"):
-                    try:
-                        with open(f"{lang_path}/{jf}") as f:
-                            if len(json.load(f)) > 0:
-                                if lang not in langs_with_data:
-                                    langs_with_data.append(lang)
-                                break
-                    except:
-                        pass
+for lang in ALL_LANGUAGES:
+    lang_path = f"{I18N_DIR}/{lang}"
+    try:
+        for jf in os.listdir(lang_path):
+            if jf.endswith(".json"):
+                try:
+                    with open(f"{lang_path}/{jf}") as f:
+                        if len(json.load(f)) > 0:
+                            langs_with_data.append(lang)
+                            raise StopIteration
+                except StopIteration:
+                    raise
+                except Exception:
+                    pass
+    except StopIteration:
+        pass
+    except Exception:
+        pass
 
 # Zlicz pliki NPC
 npc_dir = "data-otservbr-global/npc"
@@ -740,8 +904,115 @@ try:
 except:
     pass
 
+# ============ NOWY KANONICZNY LIVE STATUS (i18n/status/activity.json) ==========
+status_dir = os.path.join(I18N_DIR, "status")
+activity_path = os.path.join(status_dir, "activity.json")
+worker_state_path = os.path.join(status_dir, "worker_state.json")
+activity = {}
+activity_present = False
+worker_state = {}
+worker_state_present = False
+try:
+    if os.path.exists(activity_path):
+        with open(activity_path) as f:
+            activity = json.load(f)
+        if isinstance(activity, dict) and activity.get("phase"):
+            activity_present = True
+    if os.path.exists(worker_state_path):
+        with open(worker_state_path) as f:
+            worker_state = json.load(f)
+        if isinstance(worker_state, dict) and worker_state.get("worker"):
+            worker_state_present = True
+except:
+    activity_present = False
+
+def _parse_iso_z(s: str):
+    try:
+        if isinstance(s, str) and s.endswith('Z'):
+            s = s[:-1] + '+00:00'
+        return datetime.fromisoformat(s)
+    except Exception:
+        return None
+
+def _heartbeat_age_seconds(iso: str) -> int:
+    dt = _parse_iso_z(iso)
+    if not dt:
+        return 0
+    try:
+        now = datetime.now(timezone.utc)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return max(0, int((now - dt).total_seconds()))
+    except Exception:
+        return 0
+
+# ============ DAILY SUMMARY (i18n/status/daily/YYYY-MM-DD.json) ==========
+daily_section = ""
+try:
+    today_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    daily_path = os.path.join(status_dir, "daily", f"{today_utc}.json")
+    if os.path.exists(daily_path):
+        with open(daily_path) as f:
+            daily = json.load(f)
+
+        work = daily.get("work", {}) if isinstance(daily.get("work", {}), dict) else {}
+        mig = work.get("migration", {}) if isinstance(work.get("migration", {}), dict) else {}
+        errs = daily.get("errors", {}) if isinstance(daily.get("errors", {}), dict) else {}
+
+        mig_keys = int(mig.get("keys_added", 0) or 0)
+        mig_files = int(mig.get("files_changed", 0) or 0)
+        mig_cats = mig.get("categories_touched", []) if isinstance(mig.get("categories_touched", []), list) else []
+        cycles = int(daily.get("cycles", 0) or 0)
+        err_count = int(errs.get("count", 0) or 0)
+
+        cats_preview = ", ".join([str(c) for c in mig_cats[:10]])
+        if len(mig_cats) > 10:
+            cats_preview += "..."
+
+        daily_section = f"""
+
+## 📅 Dziś (UTC)
+
+- Cykle: **{cycles}**
+- MIGRATION: **+{mig_keys}** kluczy, **{mig_files}** plików `.lua`
+- Kategorie dotknięte: {cats_preview if cats_preview else '-'}
+- Błędy: **{err_count}**
+"""
+except:
+    daily_section = ""
+
 last_mode = global_stats.get("mode", "MIGRATION")
 last_category = global_stats.get("category", "npc")
+
+# Preferuj kanoniczny worker_state.json (trwały stan) jeśli istnieje.
+if worker_state_present:
+    try:
+        _cur = (worker_state.get("worker", {}) or {}).get("current", {}) or {}
+        last_mode = _cur.get("phase") or last_mode
+        last_category = _cur.get("category") or last_category
+        cycle_count = int((worker_state.get("worker", {}) or {}).get("cycle", cycle_count) or cycle_count)
+    except Exception:
+        pass
+
+# Jeśli mamy activity.json, traktuj to jako źródło prawdy dla LIVE.
+if activity_present:
+    last_mode = (activity.get("phase") or last_mode)
+    last_category = (activity.get("category") or last_category)
+    try:
+        cycle_count = int(activity.get("cycle", cycle_count) or cycle_count)
+    except Exception:
+        pass
+
+# Heartbeat/stale: preferuj activity.generated_at_utc, potem worker_state.worker.heartbeat_at_utc.
+heartbeat_iso = None
+if activity_present:
+    heartbeat_iso = activity.get("generated_at_utc")
+if not heartbeat_iso and worker_state_present:
+    heartbeat_iso = (worker_state.get("worker", {}) or {}).get("heartbeat_at_utc")
+
+heartbeat_age = _heartbeat_age_seconds(heartbeat_iso) if heartbeat_iso else 0
+stale_threshold_seconds = 120
+is_stale = bool(heartbeat_iso) and heartbeat_age >= stale_threshold_seconds
 
 # Dane specyficzne dla trybu
 migration_data = global_stats.get("migration", {})
@@ -750,7 +1021,55 @@ auto_translate_data = global_stats.get("auto_translate", {})
 idle_data = global_stats.get("idle", {})
 
 # ============ GENERUJ LIVE DISPLAY W ZALEŻNOŚCI OD TRYBU ============
-if last_mode == "MIGRATION":
+def fit(text: str, width: int = 61) -> str:
+    text = str(text)
+    if len(text) > width:
+        text = "…" + text[-(width - 1):]
+    return text.ljust(width)
+
+def line(text: str) -> str:
+    return f"│ {fit(text)} │"
+
+if activity_present:
+    phase = str(activity.get("phase") or "?").upper()
+    stage = str(activity.get("stage") or "-")
+    category = str(activity.get("category") or "-")
+    file_path = str(activity.get("file") or "-")
+    msg = str(activity.get("message") or "")
+    prog = activity.get("progress", {}) if isinstance(activity.get("progress", {}), dict) else {}
+    done = int(prog.get("done", 0) or 0)
+    total = int(prog.get("total", 0) or 0)
+    unit = str(prog.get("unit") or "units")
+    status_txt = str(activity.get("status") or "running")
+
+    icon = {
+        "MIGRATION": "🔧",
+        "TRANSLATION_SYNC": "🌍",
+        "AUTO_TRANSLATE": "🤖",
+        "COMPACT_KEYS": "🔑",
+        "VALIDATION": "🧪",
+        "IDLE": "✅",
+    }.get(phase, "🔴")
+
+    mode_display = f"{icon} {phase} ({stage})"
+    category_display = f"📁 {category.upper()}" if category and category != "-" else "-"
+
+    live_details = "\n".join(
+        [
+            line(f"Status: {status_txt}"),
+            line(f"Plik: {file_path}"),
+            line(f"Postęp: {done}/{total} {unit}"),
+            line(f"Info: {msg}"),
+        ]
+    )
+
+    summary_phase = phase
+    summary_stage = stage
+    summary_category = category
+    summary_file = file_path
+    summary_eta = int(activity.get("eta_seconds") or 0) if str(activity.get("eta_seconds") or "").isdigit() else activity.get("eta_seconds")
+
+elif last_mode == "MIGRATION":
     mode_display = "🔧 MIGRATION (skanowanie plików)"
     category_display = f"📁 {last_category.upper()}"
     
@@ -773,6 +1092,12 @@ if last_mode == "MIGRATION":
 │    ├─ Kategoria {last_category.upper():>6}: {current_cat_keys:>6} kluczy EN                    │
 │    └─ Total kluczy EN: {total_keys:>6}                                 │"""
 
+    summary_phase = "MIGRATION"
+    summary_stage = "-"
+    summary_category = last_category
+    summary_file = "-"
+    summary_eta = "-"
+
 elif last_mode == "TRANSLATION_SYNC":
     mode_display = "🌍 TRANSLATION_SYNC (synchronizacja)"
     sync_lang = translation_sync_data_gs.get("language", "?")
@@ -783,6 +1108,12 @@ elif last_mode == "TRANSLATION_SYNC":
     live_details = f"""│ 📊 Synchronizacja kluczy EN → {sync_lang.upper()}                           │
 │    ├─ Plik:           {sync_file:>20}                       │
 │    └─ Kluczy do sync: {sync_keys:>6}                                 │"""
+
+    summary_phase = "TRANSLATION_SYNC"
+    summary_stage = "-"
+    summary_category = f"{sync_lang}/{sync_file}"
+    summary_file = "-"
+    summary_eta = "-"
 
 elif last_mode == "AUTO_TRANSLATE":
     mode_display = "🤖 AUTO_TRANSLATE (tłumaczenie)"
@@ -796,6 +1127,60 @@ elif last_mode == "AUTO_TRANSLATE":
 │    ├─ Plik:           {at_file:>20}                       │
 │    └─ Kluczy:         {at_keys:>6}                                 │"""
 
+    summary_phase = "AUTO_TRANSLATE"
+    summary_stage = "-"
+    summary_category = f"{at_lang}/{at_file}"
+    summary_file = "-"
+    summary_eta = "-"
+
+elif last_mode == "COMPACT_KEYS":
+    mode_display = "🔑 COMPACT_KEYS (keymap + export)"
+    category_display = "🔑 keymap/export"
+
+    km_total = 0
+    try:
+        km_path = os.path.join(I18N_DIR, "keymap.json")
+        if os.path.exists(km_path):
+            with open(km_path) as f:
+                km_total = len(json.load(f))
+    except:
+        km_total = 0
+
+    missing = (total_keys - km_total) if isinstance(total_keys, int) else 0
+    if missing < 0:
+        missing = 0
+
+    live_details = f"""│ 📊 Keymap: {km_total:>6}/{total_keys:>6} (brakuje {missing:>6})                  │
+│    └─ Użyj: tools/i18n_keymap.py sync/verify + json_to_lua_locales.py │"""
+
+    summary_phase = "COMPACT_KEYS"
+    summary_stage = "-"
+    summary_category = "keymap"
+    summary_file = "-"
+    summary_eta = "-"
+
+elif last_mode == "VALIDATION":
+    mode_display = "🧪 VALIDATION (quality/validator)"
+    category_display = "🧪 quality"
+
+    total_issues = 0
+    try:
+        qp = os.path.join(I18N_DIR, "quality_report.json")
+        if os.path.exists(qp):
+            with open(qp) as f:
+                total_issues = int((json.load(f) or {}).get("total_issues", 0) or 0)
+    except:
+        total_issues = 0
+
+    live_details = f"""│ 📊 Quality issues: {total_issues:>6}                                      │
+│    └─ Raport: i18n/quality_report.json                               │"""
+
+    summary_phase = "VALIDATION"
+    summary_stage = "-"
+    summary_category = "quality"
+    summary_file = "-"
+    summary_eta = "-"
+
 elif last_mode == "IDLE":
     mode_display = "✅ IDLE (oczekiwanie)"
     category_display = "📋 Skanowanie nowych plików"
@@ -807,10 +1192,22 @@ elif last_mode == "IDLE":
 │    ├─ Nowe pliki:     {new_files:>6} {'(restart!)' if new_files > 0 else '(brak)'}             │
 │    └─ Problemy TM:    {quality_issues:>6}                                 │"""
 
+    summary_phase = "IDLE"
+    summary_stage = "-"
+    summary_category = "idle"
+    summary_file = "-"
+    summary_eta = "-"
+
 else:
     mode_display = f"❓ {last_mode}"
     category_display = f"📁 {last_category}"
     live_details = "│ 📊 Brak szczegółowych danych                                      │"
+
+    summary_phase = str(last_mode or "?")
+    summary_stage = "-"
+    summary_category = str(last_category or "-")
+    summary_file = "-"
+    summary_eta = "-"
 
 # TM coverage (do notki o placeholderach)
 try:
@@ -823,13 +1220,94 @@ sync_langs = set(sync_stats.keys()) if isinstance(sync_stats, dict) else set()
 known_langs = sorted(tm_langs | sync_langs | {"pl", "de", "es", "pt", "ru", "fr", "tr"})
 no_tm_langs = [lang for lang in known_langs if lang not in tm_langs]
 
+status_display = ("🟢 RUNNING" if str(last_mode).upper() != "IDLE" else "✅ IDLE")
+if is_stale:
+    status_display = f"🟠 STALE (heartbeat {heartbeat_age}s temu)"
+elif activity_present:
+    act_phase = str(activity.get("phase") or "").upper()
+    st = str(activity.get("status") or "running").lower()
+    if st in ("interrupted", "stopped"):
+        status_display = "⛔ INTERRUPTED"
+    elif st in ("error", "failed"):
+        status_display = "🔴 ERROR"
+    elif st in ("idle",) or act_phase == "IDLE":
+        status_display = "✅ IDLE"
+    else:
+        status_display = "🟢 RUNNING"
+
+# Per-cycle ops from i18n/status/ops.jsonl ("W tym cyklu" / historia).
+cycle_ops_md = "- Brak operacji"
+try:
+    ops_path = os.path.join(status_dir, "ops.jsonl")
+    ops = []
+    if os.path.exists(ops_path):
+        with open(ops_path, "r", encoding="utf-8") as f:
+            for _line in f:
+                _line = _line.strip()
+                if not _line:
+                    continue
+                try:
+                    ev = json.loads(_line)
+                except Exception:
+                    continue
+                try:
+                    if int(ev.get("cycle", 0) or 0) != int(cycle_count or 0):
+                        continue
+                except Exception:
+                    continue
+                ops.append(ev)
+
+    if ops:
+        ops = ops[-10:]
+
+        def _icon(phase_name: str) -> str:
+            phase_name = str(phase_name or "").upper()
+            return {
+                "MIGRATION": "🔧",
+                "COMPACT_KEYS": "🔑",
+                "TRANSLATION_SYNC": "🌍",
+                "AUTO_TRANSLATE": "🤖",
+                "VALIDATION": "🧪",
+                "IDLE": "✅",
+            }.get(phase_name, "•")
+
+        lines = []
+        for ev in reversed(ops):
+            ph = ev.get("phase")
+            stg = ev.get("stage")
+            cat = ev.get("category")
+            res = ev.get("result")
+            detail = ev.get("detail")
+            delta = ev.get("delta") if isinstance(ev.get("delta"), dict) else {}
+
+            delta_bits = []
+            if "keys_added" in delta:
+                delta_bits.append(f"keys+{int(delta.get('keys_added') or 0)}")
+            if "files_changed" in delta:
+                delta_bits.append(f"files+{int(delta.get('files_changed') or 0)}")
+            if "translated" in delta:
+                delta_bits.append(f"translated+{int(delta.get('translated') or 0)}")
+            if "skipped" in delta:
+                delta_bits.append(f"skipped+{int(delta.get('skipped') or 0)}")
+            if "mapped_new" in delta:
+                delta_bits.append(f"mapped_new+{int(delta.get('mapped_new') or 0)}")
+
+            delta_txt = (" (" + ", ".join(delta_bits) + ")") if delta_bits else ""
+            detail_txt = f" — {detail}" if detail else ""
+            lines.append(f"- {_icon(ph)} {ph}.{stg} [{cat}] {res}{delta_txt}{detail_txt}")
+
+        cycle_ops_md = "\n".join(lines)
+except Exception:
+    cycle_ops_md = "- Brak operacji"
+
 # ==================== GENERUJ PEŁNY I18N_STATUS.md ====================
 md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 
 {targets_comment}
 
 > **Aktualizacja:** {timestamp} UTC  
-> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** {langs_count} | **Klucze EN:** {total_keys}
+> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** {langs_count} | **Klucze EN:** {total_keys}  
+> **LIVE:** Cykl #{cycle_count} | Status: {status_display} | Faza: {summary_phase} | Etap: {summary_stage} | Kategoria: {summary_category} | Plik: {summary_file} | ETA: {summary_eta} | Heartbeat: {str(heartbeat_iso or '-')}
 
 ---
 
@@ -980,15 +1458,24 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #{cycle_count:>6} │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    {("🟢 RUNNING" if last_mode != "IDLE" else "✅ IDLE"):40} │
+│ Status:    {status_display:40} │
 │ Tryb:      {mode_display:40} │
 │ Kategoria: {category_display:40} │
 ├─────────────────────────────────────────────────────────────────┤
 {live_details}
 ├─────────────────────────────────────────────────────────────────┤
-│ 📅 Ostatnia aktualizacja: {timestamp:30} │
+│ ❤️ Heartbeat: {str(heartbeat_iso or '-'):30} │
 └─────────────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## 🔁 W tym cyklu
+
+{cycle_ops_md}
+
+
+{daily_section}
 
 ---
 
@@ -1002,13 +1489,6 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 | 🔑 Kluczy wyciągniętych | **{total_keys_extracted}** | przez workera w tej sesji |
 | 🌍 Języków | **{langs_count}** | EN + tłumaczenia |
 | 🔄 Cykli wykonanych | **#{cycle_count}** | continuous mode |
-
----
-
-## 📜 Historia ostatnich operacji
-
-{chr(10).join([f"- {'🌍' if op.get('type')=='translation_sync' else '🎒' if op['category']=='items' else '🧙' if op['category']=='npc' else '📜' if op['category']=='scripts' else '👹' if op['category']=='monsters' else '⚡'} `{op['category']}` +{op['count']} kluczy @ {op['time_str']}" for op in recent_operations[:8]]) if recent_operations else "- Brak operacji"}
-
 
 ---
 
@@ -1314,13 +1794,24 @@ md += f'''
 *Wygenerowano automatycznie przez i18n_worker_simple.sh v1.1*
 '''
 
-# Zapisz do git root (nie do lokalnego katalogu!)
-status_path = os.path.join(GIT_ROOT, "I18N_STATUS.md")
-with open(status_path, "w") as f:
-    f.write(md)
+# Zapisz do git root (dla GitHub) + do lokalnego katalogu workera (dla podglądu w workspace)
+status_paths = []
+status_paths.append(os.path.join(GIT_ROOT, "I18N_STATUS.md"))
+status_paths.append(os.path.join(WORK_DIR, "I18N_STATUS.md"))
+
+written = []
+for p in status_paths:
+    p = os.path.abspath(p)
+    if p in written:
+        continue
+    os.makedirs(os.path.dirname(p), exist_ok=True)
+    with open(p, "w") as f:
+        f.write(md)
+    written.append(p)
 
 print(f"✅ I18N_STATUS.md zaktualizowany: {timestamp}")
-print(f"   Ścieżka: {status_path}")
+for p in written:
+    print(f"   Ścieżka: {p}")
 print(f"   NPC: {npc_keys} kluczy, {completed} zmigrowanych, {needs_migration_npc} do zrobienia")
 print(f"   Total: {total_keys} kluczy | Języki: {len(langs_with_data)}/{langs_count}")
 STATUSPY
@@ -2221,33 +2712,44 @@ process_scripts_file() {
     [ ! -f "$json_file" ] && echo '{}' > "$json_file"
     
     log "${CYAN}📜 Processing script: $base${NC}"
-    
-    # Wyciągnij stringi z sendTextMessage
-    local count=0
-    while IFS= read -r text; do
-        [ -z "$text" ] && continue
-        [ ${#text} -lt 10 ] && continue
-        
-        local key="scripts.${safe}.msg_$((count + 1))"
-        
-        # Dodaj do JSON
-        python3 -c "
-import json
-try:
-    with open('$json_file') as f: d = json.load(f)
-except: d = {}
-d['$key'] = '''$text'''
-with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
-" 2>/dev/null
-        
-        count=$((count + 1))
-        log "   🔑 $key"
-    done < <(grep -oP 'sendTextMessage\s*\([^,]+,\s*"\K[^"]+' "$file" 2>/dev/null | head -20)
-    
+
+    # FIZYCZNA MIGRACJA: przepisz :sendTextMessage(...) -> :sendLocalizedTextMessage(...)
+    # i dopisz EN klucze do i18n/en/scripts.json
+    local _out _rc
+    _out=$(python3 tools/i18n_migrate_lua_sendtext.py \
+        --file "$file" \
+        --json "$json_file" \
+        --key-prefix "scripts.${safe}" \
+        --backup-dir "$BACKUP_DIR/scripts" \
+        2>&1)
+    _rc=$?
+    if [ "$_rc" -ne 0 ]; then
+        status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "scripts_migrate" "scripts" "$file" "i18n_migrate_lua_sendtext.py failed" "rc=$_rc"
+        return 1
+    fi
+
+    local keys_added calls_migrated file_changed
+    keys_added=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+    calls_migrated=$(echo "$_out" | grep -oE 'calls_migrated=[0-9]+' | tail -n 1 | cut -d= -f2)
+    file_changed=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+    keys_added=${keys_added:-0}
+    calls_migrated=${calls_migrated:-0}
+    file_changed=${file_changed:-0}
+
+    # Walidacja syntaktyczna Lua po transformacji (jeśli mamy lua w PATH)
+    if [ "$file_changed" = "1" ]; then
+        if ! validate_lua_file "$file"; then
+            log "${RED}❌ Walidacja Lua nieudana, przywracam backup${NC}"
+            restore_backup_file "$file"
+            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "scripts_validate" "scripts" "$file" "lua validation failed" "restored backup"
+            return 1
+        fi
+    fi
+
     # Oznacz jako przetworzony (do obu plików!)
-    mark_file_completed "$file" "scripts" "$count"
-    
-    log "${GREEN}✅ Scripts: $count kluczy z $base${NC}"
+    mark_file_completed "$file" "scripts" "$keys_added"
+
+    log "${GREEN}✅ Scripts: migrated=$calls_migrated calls, +$keys_added keys (${base})${NC}"
     return 0
 }
 
@@ -3506,6 +4008,8 @@ import json
 import os
 import re
 import glob
+    import subprocess
+    import shlex
 
 category = "$category"
 BATCH = int("$BATCH")
@@ -3572,18 +4076,34 @@ for dir_path in dirs:
         try:
             with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
                 content = f.read()
-        except:
+        except Exception:
             continue
         
-        # Pomiń jeśli ma już i18n
-        if 'i18n' in content.lower() or 'sendLocalizedTextMessage' in content:
-            continue
-        
-        # Wyciągnij stringi
+        # Wyciągnij stringi + spróbuj FIZYCZNIE zmigrować sendTextMessage
         basename = os.path.basename(filepath).replace('.lua', '').replace('.xml', '').replace('.cpp', '').replace('.hpp', '')
         safe_name = re.sub(r'[^a-z0-9_]', '_', basename.lower())
         
         local_keys = 0
+
+        # 1) Lua: zamień :sendTextMessage(...) na :sendLocalizedTextMessage(...)
+        if filepath.endswith('.lua') and 'sendTextMessage' in content:
+            key_prefix = f"{category}.{safe_name}"
+            cmd = [
+                'python3', 'tools/i18n_migrate_lua_sendtext.py',
+                '--file', filepath,
+                '--json', json_file,
+                '--key-prefix', key_prefix,
+                '--backup-dir', os.path.join('backups', category),
+            ]
+            try:
+                out = subprocess.check_output(cmd, stderr=subprocess.STDOUT, text=True)
+                m = re.search(r'keys_added=(\d+)', out)
+                if m:
+                    local_keys += int(m.group(1))
+                    keys_added += int(m.group(1))
+            except subprocess.CalledProcessError:
+                # w razie błędu nie blokuj całej kategorii; zostaw tylko extraction
+                pass
         
         # Pattern: sendTextMessage(TYPE, "text")
         stm_matches = re.findall(r'sendTextMessage\s*\([^,]+,\s*"([^"]{10,})"', content)
@@ -3652,10 +4172,12 @@ sync_translation_keys() {
     
     log "${CYAN}🌍 SYNC KEYS: $target_lang <- en/$json_file (batch: $batch_size)${NC}"
     
-    python3 << SYNCPY
+    local _sync_out _sync_rc _synced
+    _sync_out=$(python3 << SYNCPY
 import json
 import os
 import time
+import sys
 
 I18N_DIR = "i18n"
 target_lang = "$target_lang"
@@ -3668,7 +4190,8 @@ UNTRANSLATED_PREFIX = "[EN] "
 en_path = f"{I18N_DIR}/en/{json_file}"
 if not os.path.exists(en_path):
     print(f"   ❌ Brak pliku źródłowego: {en_path}")
-    exit(1)
+    print("__SYNC_RESULT__ synced=0")
+    sys.exit(1)
 
 with open(en_path, 'r', encoding='utf-8') as f:
     en_data = json.load(f)
@@ -3695,7 +4218,8 @@ print(f"   🔍 Brakujących: {len(missing_keys)}")
 
 if not missing_keys:
     print(f"   ✅ Wszystkie klucze zsynchronizowane dla {target_lang}/{json_file}")
-    exit(0)
+    print("__SYNC_RESULT__ synced=0")
+    sys.exit(0)
 
 # Synchronizuj batch kluczy
 synced = 0
@@ -3772,7 +4296,17 @@ with open(CATEGORY_STATE_FILE, 'w') as f:
     json.dump(state, f, indent=2)
 
 print(f"   💾 State zapisany")
+
+print(f"__SYNC_RESULT__ synced={synced}")
 SYNCPY
+    2>&1)
+    _sync_rc=$?
+
+    # Loguj pełny output do stderr, ale zwróć tylko liczbę zsynchronizowanych kluczy na stdout.
+    echo "$_sync_out" >&2
+    _synced=$(echo "$_sync_out" | awk -F'synced=' '/__SYNC_RESULT__/{print $2}' | tail -n 1 | tr -dc '0-9')
+    _synced=${_synced:-0}
+    echo "$_synced"
     
     log "${GREEN}✅ Sync: Zakończono batch${NC}"
 }
@@ -3787,16 +4321,24 @@ auto_translate_keys() {
     local target_lang="$1"
     local json_file="$2"
     local keys_count="$3"
-    # Jeśli TRANSLATE_LIMIT nie ustawiony, użyj keys_count jako limitu
-    local translate_limit="${TRANSLATE_LIMIT:-${keys_count:-0}}"  # 0 = brak limitu
+    # Jeśli TRANSLATE_LIMIT > 0, użyj go; w przeciwnym razie użyj keys_count.
+    # (TRANSLATE_LIMIT bywa ustawiony na 0, a wtedy nie powinien nadpisywać keys_count)
+    local translate_limit="0"
+    if [ "${TRANSLATE_LIMIT:-0}" -gt 0 ] 2>/dev/null; then
+        translate_limit="$TRANSLATE_LIMIT"
+    else
+        translate_limit="${keys_count:-0}"
+    fi  # 0 = brak limitu
     
     log "${CYAN}🌍 AUTO TRANSLATE: $target_lang <- $json_file (limit: $translate_limit)${NC}"
     
-    python3 << AUTOTRANSPY
+    local _at_out _at_rc _translated _placeholders
+    _at_out=$(python3 << AUTOTRANSPY
 import json
 import os
 import re
 import hashlib
+import sys
 
 I18N_DIR = "i18n"
 target_lang = "$target_lang"
@@ -4004,7 +4546,21 @@ if tm_updates > 0:
         json.dump(tm_data, f, indent=2, ensure_ascii=False)
 
 print(f"✅ {target_lang}/{json_file}: {translated} przetłumaczonych, {placeholders} placeholder'ów, TM+{tm_updates}, guard_fail={guard_fail}")
+
+print(f"__AUTO_RESULT__ translated={translated} placeholders={placeholders}")
 AUTOTRANSPY
+    2>&1)
+    _at_rc=$?
+
+    echo "$_at_out" >&2
+
+    _translated=$(echo "$_at_out" | awk -F'translated=' '/__AUTO_RESULT__/{print $2}' | awk '{print $1}' | tail -n 1 | tr -dc '0-9')
+    _placeholders=$(echo "$_at_out" | awk -F'placeholders=' '/__AUTO_RESULT__/{print $2}' | tail -n 1 | tr -dc '0-9')
+    _translated=${_translated:-0}
+    _placeholders=${_placeholders:-0}
+
+    # stdout: "translated placeholders" (dla status_log_op)
+    echo "$_translated $_placeholders"
     
     log "${GREEN}✅ Auto-translate zakończone${NC}"
 }
@@ -5111,6 +5667,14 @@ CATEGORIES = {
     }
 }
 
+# ============================================================================
+# SCOPE: domyślnie tylko serwer canary (bez website + OTClient/testyy)
+# ============================================================================
+SCOPE = (os.environ.get("I18N_SCOPE", "server") or "server").strip().lower()
+if SCOPE in ("server", "canary", "server_only", "server-only"):
+    excluded = {"php", "html"}
+    CATEGORIES = {k: v for k, v in CATEGORIES.items() if k not in excluded and not k.startswith("otclient_")}
+
 # Plik komend sterowania workerem
 COMMAND_FILE = ".worker_command"
 # Plik stanu kategorii (skip po 0 przetworzonych)
@@ -5157,7 +5721,10 @@ def read_category_state():
             if now - last_time > reset_threshold:
                 state["skip_until"].pop(cat_name, None)
                 state["consecutive_zeros"][cat_name] = 0
-                print(f"🔄 Auto-reset kategorii '{cat_name}' po 24h")
+                # Ważne: nie wypisuj na stdout (stdout jest parsowany jako wynik dispatchera)
+                if cat_name in CATEGORIES:
+                    import sys
+                    print(f"🔄 Auto-reset kategorii '{cat_name}' po 24h", file=sys.stderr)
         
         return state
     except:
@@ -5392,6 +5959,59 @@ if pending_skip:
 # Jeśli tu doszliśmy: brak pracy migracyjnej → uznaj migracje za zakończone
 cat_state["migrations_done"] = True
 write_category_state(cat_state)
+
+# 1.5) COMPACT_KEYS (po zakończeniu migracji): sync keymap + export compact locales
+def count_en_keys_total():
+    en_dir = os.path.join(I18N_DIR, "en")
+    if not os.path.isdir(en_dir):
+        return 0
+    total = 0
+    for jf in os.listdir(en_dir):
+        if not jf.endswith(".json"):
+            continue
+        try:
+            with open(os.path.join(en_dir, jf), "r", encoding="utf-8") as f:
+                data = json.load(f)
+            if isinstance(data, dict):
+                total += len(data)
+        except:
+            pass
+    return total
+
+def count_keymap_total():
+    km_path = os.path.join(I18N_DIR, "keymap.json")
+    if not os.path.exists(km_path):
+        return 0
+    try:
+        with open(km_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return len(data) if isinstance(data, dict) else 0
+    except:
+        return 0
+
+def compact_locales_missing():
+    # Minimalny check: czy są wygenerowane locale compact dla podstawowych języków.
+    langs = ["en", "pl", "de", "es", "pt", "fr", "it", "ru", "tr", "sv", "nl"]
+    base = os.path.join("testyy", "data", "locales")
+    missing = []
+    for lang in langs:
+        p = os.path.join(base, f"game_i18n_{lang}_compact.lua")
+        if not os.path.exists(p):
+            missing.append(lang)
+    return missing
+
+en_total = count_en_keys_total()
+km_total = count_keymap_total()
+missing_langs = compact_locales_missing()
+
+if km_total < en_total or missing_langs:
+    reason = []
+    if km_total < en_total:
+        reason.append(f"keymap_missing={en_total - km_total}")
+    if missing_langs:
+        reason.append("export_missing=" + ",".join(missing_langs[:6]) + ("..." if len(missing_langs) > 6 else ""))
+    print(f"COMPACT_KEYS:all:{en_total - km_total if en_total > km_total else 0}:{'|'.join(reason) if reason else 'needed'}")
+    exit(0)
 
 # 2. Migracja zakończona - sprawdź TRANSLATION_SYNC (Etap 1)
 # Jeśli migracje nie są oficjalnie zakończone, zatrzymaj się tutaj
@@ -5796,14 +6416,17 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
         CYCLE=0
         
         # Obsługa Ctrl+C
-        trap 'echo ""; echo "⛔ Zatrzymuję worker..."; update_github_status; rm -f "$PID_FILE"; exit 0' SIGINT SIGTERM
+        trap 'echo ""; echo "⛔ Zatrzymuję worker..."; status_update_activity "interrupted" "${CYCLE:-0}" "${MODE_TYPE:-IDLE}" "signal" "${MODE_CAT:-}" "-" "stopping" 0 0 "units" 0; update_github_status; rm -f "$PID_FILE"; exit 0' SIGINT SIGTERM
         
         while true; do
             CYCLE=$((CYCLE + 1))
+            STOP_AFTER_CYCLE="false"
             echo ""
             echo "═══════════════════════════════════════════════════════════════"
             echo "🔄 CYKL #$CYCLE - $(date '+%Y-%m-%d %H:%M:%S')"
             echo "═══════════════════════════════════════════════════════════════"
+
+            status_update_activity "running" "$CYCLE" "${MODE_TYPE:-IDLE}" "cycle_start" "${MODE_CAT:-}" "-" "cycle start" 0 0 "units" 0
             
             # Sprawdź komendy sterowania z plików
             # Najpierw sprawdź worker_commands.txt (dla GitHub), potem .worker_command (lokalny)
@@ -5814,7 +6437,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             # 1. Sprawdź worker_commands.txt (można edytować przez GitHub)
             if [ -f "$COMMANDS_TXT" ]; then
                 # Znajdź pierwszą odkomentowaną komendę (bez # na początku)
-                CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|AUTO:|RANDOM|STATUS|SKIP|PAUSE:|NOTE:)' | head -1)
+                CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|AUTO:|SYNC:|COMPACT_KEYS|IDLE|RANDOM|STATUS|SKIP|PAUSE:|NOTE:)' | head -1)
                 
                 if [ -n "$CMD" ]; then
                     echo "📨 Odebrano z worker_commands.txt: $CMD"
@@ -5837,6 +6460,13 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             
             # 3. Wykonaj komendę jeśli jest
             if [ -n "$CMD" ]; then
+                # Opcja: zakończ po tym cyklu (dla testów faz i weryfikacji dashboardu)
+                if [[ "$CMD" == *":ONCE" ]]; then
+                    STOP_AFTER_CYCLE="true"
+                    CMD="${CMD%:ONCE}"
+                    echo "🛑 Tryb testowy: zakończę po tym cyklu"
+                fi
+
                 case "$CMD" in
                     FORCE:*)
                         FORCED_CAT=$(echo "$CMD" | cut -d: -f2)
@@ -5845,6 +6475,33 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                         MODE_CAT="$FORCED_CAT"
                         MODE_COUNT="forced"
                         MODE_EXTRA="FORCED"
+                        ;;
+                    COMPACT_KEYS)
+                        echo "🔑 Wymuszam COMPACT_KEYS"
+                        MODE_TYPE="COMPACT_KEYS"
+                        MODE_CAT="-"
+                        MODE_COUNT="forced"
+                        MODE_EXTRA="FORCED"
+                        ;;
+                    IDLE)
+                        echo "✅ Wymuszam IDLE"
+                        MODE_TYPE="IDLE"
+                        MODE_CAT="-"
+                        MODE_COUNT="forced"
+                        MODE_EXTRA="FORCED"
+                        ;;
+                    SYNC:*)
+                        # Format: SYNC:<lang>:<json_file>
+                        SYNC_LANG=$(echo "$CMD" | cut -d: -f2)
+                        SYNC_JSON=$(echo "$CMD" | cut -d: -f3)
+                        SYNC_LANG=${SYNC_LANG:-pl}
+                        SYNC_JSON=${SYNC_JSON:-npc.json}
+                        echo "🌐 Wymuszam TRANSLATION_SYNC: $SYNC_LANG / $SYNC_JSON"
+                        MODE_TYPE="TRANSLATION_SYNC"
+                        MODE_CAT="$SYNC_LANG"
+                        MODE_COUNT="$SYNC_JSON"
+                        MODE_EXTRA="forced"
+                        MODE_EXTRA2="SYNC"  # znacznik żeby nie nadpisywać dispatchera
                         ;;
                     RANDOM)
                         echo "🎲 Losowanie kategorii..."
@@ -5899,7 +6556,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             fi
             
             # Jeśli nie było wymuszenia, użyj dispatchera
-            if [ "$MODE_EXTRA2" = "AUTO" ]; then
+            if [ "$MODE_EXTRA2" = "AUTO" ] || [ "$MODE_EXTRA2" = "SYNC" ]; then
                 :
             elif [ -z "$MODE_EXTRA" ] || [ "$MODE_EXTRA" != "FORCED" -a "$MODE_EXTRA" != "RANDOM" ]; then
                 MODE_RESULT=$(select_work_mode)
@@ -5919,6 +6576,8 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             
             echo "📋 Dispatcher: $MODE_TYPE | Kategoria: $MODE_CAT | Ilość: ${MODE_COUNT:-0}"
             echo ""
+
+            status_update_activity "running" "$CYCLE" "${MODE_TYPE:-IDLE}" "dispatch" "${MODE_CAT:-}" "-" "selected" 0 "${MODE_COUNT:-0}" "items" 0
             
             # Zlicz klucze PRZED przetwarzaniem (do wykrycia czy coś dodano)
             KEYS_BEFORE=$(python3 -c "import json,os; print(sum(len(json.load(open(f'i18n/en/{f}'))) for f in os.listdir('i18n/en') if f.endswith('.json')))" 2>/dev/null || echo 0)
@@ -5926,10 +6585,18 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             case "$MODE_TYPE" in
                 MIGRATION)
                     echo "🔧 TRYB: MIGRACJA kategorii '$MODE_CAT' ($MODE_COUNT plików do zrobienia)"
+
+                    status_update_activity "running" "$CYCLE" "MIGRATION" "migration_start" "$MODE_CAT" "-" "migration" 0 "${MODE_COUNT:-0}" "files" 0
+
+                    # Zapisz stan diff przed kategorią (żeby liczyć tylko zmiany z tego przebiegu).
+                    TMP_DIFF_BEFORE="$(mktemp)"
+                    TMP_DIFF_AFTER="$(mktemp)"
+                    git diff --name-only 2>/dev/null >"$TMP_DIFF_BEFORE" || true
                     
                     # Specjalny przypadek: wszystkie kategorie są na skip
                     if [ "$MODE_CAT" = "pending_skip" ]; then
                         echo "   ⏳ Wszystkie kategorie są tymczasowo pominięte (skip), czekam..."
+                        status_update_activity "running" "$CYCLE" "MIGRATION" "pending_skip" "$MODE_CAT" "-" "all categories skipped" 0 0 "files" 0
                         sleep 30
                         continue
                     fi
@@ -5979,14 +6646,16 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                                     fi
                                     
                                     if [ "$NEEDS_WORK" = "true" ]; then
-                                        process_file "$f"
+                                        status_update_activity "running" "$CYCLE" "MIGRATION" "file" "npc" "$f" "processing" "$COUNT" "${MODE_COUNT:-0}" "files" 0
+                                        if ! process_file "$f"; then
+                                            status_log_error "$CYCLE" "MIGRATION" "file" "npc" "$f" "process_file failed" "continue"
+                                        fi
                                         COUNT=$((COUNT + 1))
                                         [ "$COUNT" -ge "$BATCH" ] && break 2
                                     fi
                                 done
                             done
                             echo "   📊 NPC: Zmigrowano $COUNT plików"
-                            update_category_state "npc" "$COUNT"
                             ;;
                         scripts)
                             echo "   📜 Przetwarzam SCRIPTS..."
@@ -6005,172 +6674,143 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                                 grep -qF "$f" "$PROCESSED_FILE" 2>/dev/null && continue
                                 grep -qF "$(pwd)/$f" "$PROCESSED_FILE" 2>/dev/null && continue
                                 
-                                # Szukaj sendTextMessage z jakimkolwiek stringiem (czystym lub konkatenowanym)
+                                # Szukaj sendTextMessage ze stringiem ("...")
+                                # Nie pomijaj plików tylko dlatego, że mają już gdzieś sendLocalizedTextMessage
+                                # (mogą być częściowo zmigrowane).
                                 if grep -qE 'sendTextMessage\s*\([^,]+,\s*"' "$f" 2>/dev/null; then
-                                    if ! grep -q "sendLocalizedTextMessage" "$f" 2>/dev/null; then
-                                        process_scripts_file "$f"
-                                        COUNT=$((COUNT + 1))
-                                        [ "$COUNT" -ge "$BATCH" ] && break
+                                    status_update_activity "running" "$CYCLE" "MIGRATION" "file" "scripts" "$f" "processing" "$COUNT" "${MODE_COUNT:-0}" "files" 0
+                                    if ! process_scripts_file "$f"; then
+                                        status_log_error "$CYCLE" "MIGRATION" "file" "scripts" "$f" "process_scripts_file failed" "continue"
                                     fi
+                                    COUNT=$((COUNT + 1))
+                                    [ "$COUNT" -ge "$BATCH" ] && break
                                 fi
-                            done < <(find data-otservbr-global/scripts data/scripts -name "*.lua" 2>/dev/null)
+                            done < <(find data-otservbr-global/scripts data-canary/scripts data/scripts -name "*.lua" 2>/dev/null)
                             echo "   📊 Scripts: Przetworzono $COUNT plików"
-                            update_category_state "scripts" "$COUNT"
                             ;;
                         monsters)
                             echo "   👹 Przetwarzam MONSTERS z mini-batch..."
                             COUNT=$(run_with_mini_batch "monsters" "process_monsters_category" "$BATCH")
-                            update_category_state "monsters" "$COUNT"
                             ;;
                         spells)
                             echo "   ✨ Przetwarzam SPELLS z mini-batch..."
                             COUNT=$(run_with_mini_batch "spells" "process_spells_category" "$BATCH")
-                            update_category_state "spells" "$COUNT"
                             ;;
                         items)
                             echo "   🎒 Przetwarzam ITEMS z mini-batch..."
                             COUNT=$(run_with_mini_batch "items" "process_items_category" "$BATCH")
-                            update_category_state "items" "$COUNT"
                             ;;
                         raids)
                             echo "   ⚔️ Przetwarzam RAIDS z mini-batch..."
                             COUNT=$(run_with_mini_batch "raids" "process_raids_category" "$BATCH")
-                            update_category_state "raids" "$COUNT"
                             ;;
                         world)
                             echo "   🗺️ Przetwarzam WORLD z mini-batch..."
                             COUNT=$(run_with_mini_batch "world" "process_world_category" "$BATCH")
-                            update_category_state "world" "$COUNT"
                             ;;
                         libs)
                             echo "   📚 Przetwarzam LIBS z mini-batch..."
                             COUNT=$(run_with_mini_batch "libs" "process_libs_category" "$BATCH")
-                            update_category_state "libs" "$COUNT"
                             ;;
                         events)
                             echo "   🎉 Przetwarzam EVENTS z mini-batch..."
                             COUNT=$(run_with_mini_batch "events" "process_events_category" "$BATCH")
-                            update_category_state "events" "$COUNT"
                             ;;
                         chatchannels)
                             echo "   💬 Przetwarzam CHATCHANNELS z mini-batch..."
                             COUNT=$(run_with_mini_batch "chatchannels" "process_chatchannels_category" "$BATCH")
-                            update_category_state "chatchannels" "$COUNT"
                             ;;
                         modules)
                             echo "   📦 Przetwarzam MODULES z mini-batch..."
                             COUNT=$(run_with_mini_batch "modules" "process_modules_category" "$BATCH")
-                            update_category_state "modules" "$COUNT"
                             ;;
                         startup)
                             echo "   🚀 Przetwarzam STARTUP z mini-batch..."
                             COUNT=$(run_with_mini_batch "startup" "process_startup_category" "$BATCH")
-                            update_category_state "startup" "$COUNT"
                             ;;
                         npclib)
                             echo "   📖 Przetwarzam NPCLIB z mini-batch..."
                             COUNT=$(run_with_mini_batch "npclib" "process_npclib_category" "$BATCH")
-                            update_category_state "npclib" "$COUNT"
                             ;;
                         php)
                             echo "   🐘 Przetwarzam PHP z mini-batch..."
                             COUNT=$(run_with_mini_batch "php" "process_php_category" "$BATCH")
-                            update_category_state "php" "$COUNT"
                             ;;
                         html)
                             echo "   📄 Przetwarzam HTML/Twig z mini-batch..."
                             COUNT=$(run_with_mini_batch "html" "process_html_category" "$BATCH")
-                            update_category_state "html" "$COUNT"
                             ;;
                         cpp)
                             echo "   ⚙️ Przetwarzam C++ z mini-batch..."
                             COUNT=$(run_with_mini_batch "cpp" "process_cpp_category" "$BATCH")
-                            update_category_state "cpp" "$COUNT"
                             ;;
                         client)
                             echo "   🎮 Przetwarzam OTClient z mini-batch..."
                             COUNT=$(run_with_mini_batch "client" "process_client_category" "$BATCH")
-                            update_category_state "client" "$COUNT"
                             ;;
                         actions)
                             echo "   🎯 Przetwarzam ACTIONS z mini-batch..."
                             COUNT=$(run_with_mini_batch "actions" "process_generic_category" "$BATCH")
-                            update_category_state "actions" "$COUNT"
                             ;;
                         quests)
                             echo "   🏆 Przetwarzam QUESTS z mini-batch..."
                             COUNT=$(run_with_mini_batch "quests" "process_generic_category" "$BATCH")
-                            update_category_state "quests" "$COUNT"
                             ;;
                         talkactions)
                             echo "   💬 Przetwarzam TALKACTIONS z mini-batch..."
                             COUNT=$(run_with_mini_batch "talkactions" "process_generic_category" "$BATCH")
-                            update_category_state "talkactions" "$COUNT"
                             ;;
                         movements)
                             echo "   🚶 Przetwarzam MOVEMENTS z mini-batch..."
                             COUNT=$(run_with_mini_batch "movements" "process_generic_category" "$BATCH")
-                            update_category_state "movements" "$COUNT"
                             ;;
                         creaturescripts)
                             echo "   👹 Przetwarzam CREATURESCRIPTS z mini-batch..."
                             COUNT=$(run_with_mini_batch "creaturescripts" "process_generic_category" "$BATCH")
-                            update_category_state "creaturescripts" "$COUNT"
                             ;;
                         globalevents)
                             echo "   🌍 Przetwarzam GLOBALEVENTS z mini-batch..."
                             COUNT=$(run_with_mini_batch "globalevents" "process_generic_category" "$BATCH")
-                            update_category_state "globalevents" "$COUNT"
                             ;;
                         mounts)
                             echo "   🐴 Przetwarzam MOUNTS z mini-batch..."
                             COUNT=$(run_with_mini_batch "mounts" "process_generic_category" "$BATCH")
-                            update_category_state "mounts" "$COUNT"
                             ;;
                         dataroot)
                             echo "   📁 Przetwarzam DATA ROOT z mini-batch..."
                             COUNT=$(run_with_mini_batch "dataroot" "process_generic_category" "$BATCH")
-                            update_category_state "dataroot" "$COUNT"
                             ;;
                         server)
                             echo "   🖥️ Przetwarzam SERVER z mini-batch..."
                             COUNT=$(run_with_mini_batch "server" "process_generic_category" "$BATCH")
-                            update_category_state "server" "$COUNT"
                             ;;
                         otclient_modules)
                             echo "   🎮 Przetwarzam OTCLIENT MODULES z mini-batch..."
                             COUNT=$(run_with_mini_batch "otclient_modules" "process_generic_category" "$BATCH")
-                            update_category_state "otclient_modules" "$COUNT"
                             ;;
                         otclient_data)
                             echo "   📦 Przetwarzam OTCLIENT DATA z mini-batch..."
                             COUNT=$(run_with_mini_batch "otclient_data" "process_generic_category" "$BATCH")
-                            update_category_state "otclient_data" "$COUNT"
                             ;;
                         otclient_src)
                             echo "   ⚙️ Przetwarzam OTCLIENT SRC (C++) z mini-batch..."
                             COUNT=$(run_with_mini_batch "otclient_src" "process_generic_category" "$BATCH")
-                            update_category_state "otclient_src" "$COUNT"
                             ;;
                         otclient_mods)
                             echo "   🔧 Przetwarzam OTCLIENT MODS z mini-batch..."
                             COUNT=$(run_with_mini_batch "otclient_mods" "process_generic_category" "$BATCH")
-                            update_category_state "otclient_mods" "$COUNT"
                             ;;
                         otclient_tools)
                             echo "   🛠️ Przetwarzam OTCLIENT TOOLS z mini-batch..."
                             COUNT=$(run_with_mini_batch "otclient_tools" "process_generic_category" "$BATCH")
-                            update_category_state "otclient_tools" "$COUNT"
                             ;;
                         errors)
                             echo "   🐛 Przetwarzam ERRORS z mini-batch..."
                             COUNT=$(run_with_mini_batch "errors" "process_generic_category" "$BATCH")
-                            update_category_state "errors" "$COUNT"
                             ;;
                         *)
                             echo "   ⚠️ Nieznana kategoria: $MODE_CAT - próbuję generyczną obsługę..."
                             COUNT=$(run_with_mini_batch "$MODE_CAT" "process_generic_category" "$BATCH")
-                            update_category_state "$MODE_CAT" "$COUNT"
                             ;;
                     esac
                     
@@ -6179,27 +6819,90 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                     KEYS_AFTER=$(python3 -c "import json,os; print(sum(len(json.load(open(f'i18n/en/{f}'))) for f in os.listdir('i18n/en') if f.endswith('.json')))" 2>/dev/null || echo "0")
                     KEYS_ADDED=$((KEYS_AFTER - KEYS_BEFORE))
                     
-                    # Sprawdź też zmiany w git (pliki .lua zmodyfikowane)
-                    FILES_CHANGED=$(git diff --name-only 2>/dev/null | grep "\.lua$" | wc -l)
+                    # Sprawdź zmiany w git wprowadzone TYLKO przez tę kategorię (delta).
+                    git diff --name-only 2>/dev/null >"$TMP_DIFF_AFTER" || true
+                    FILES_CHANGED=$(comm -13 <(sort "$TMP_DIFF_BEFORE") <(sort "$TMP_DIFF_AFTER") | grep "\.lua$" | wc -l)
                     FILES_CHANGED=${FILES_CHANGED:-0}
+                    rm -f "$TMP_DIFF_BEFORE" "$TMP_DIFF_AFTER" 2>/dev/null || true
                     
-                    # Jeśli ani kluczy nie dodano, ani plików nie zmieniono - kategoria jest "pusta"
+                    # Za "realną pracę" uznajemy tylko zmiany: dodane klucze + zmodyfikowane pliki .lua.
+                    # COUNT bywa niespójny między kategoriami (czasem to pliki, czasem klucze z mini-batch),
+                    # więc nie używamy go do backoff/skip.
                     COUNT=${COUNT:-0}
-                    EFFECTIVE_COUNT=$((KEYS_ADDED + FILES_CHANGED + COUNT))
+                    EFFECTIVE_COUNT=$((KEYS_ADDED + FILES_CHANGED))
                     echo "   📈 Wynik: +$KEYS_ADDED kluczy, $FILES_CHANGED plików .lua, COUNT=$COUNT"
                     update_category_state "$MODE_CAT" "$EFFECTIVE_COUNT"
+
+                    status_log_op "$CYCLE" "MIGRATION" "category_done" "$MODE_CAT" "-" "ok" "migration finished" "$KEYS_ADDED" "$FILES_CHANGED"
+                    status_update_activity "running" "$CYCLE" "MIGRATION" "migration_done" "$MODE_CAT" "-" "+$KEYS_ADDED keys, $FILES_CHANGED files" "$EFFECTIVE_COUNT" "$EFFECTIVE_COUNT" "items" 0
                     ;;
+
+                COMPACT_KEYS)
+                    echo "🔑 TRYB: COMPACT_KEYS - keymap + export client locales (compact)"
+                    echo "   Powód: ${MODE_EXTRA:-auto} | brak mapowań: ${MODE_COUNT:-0}"
+
+                    status_update_activity "running" "$CYCLE" "COMPACT_KEYS" "keymap_sync" "-" "-" "sync keymap" 0 0 "keys" 0
+                    SYNC_OUT=$(python3 tools/i18n_keymap.py sync --i18n-dir i18n --min-len 2 --max-len 7 2>&1)
+                    SYNC_RC=$?
+                    if [ "$SYNC_RC" -ne 0 ]; then
+                        echo "   ❌ keymap sync failed"
+                        echo "$SYNC_OUT" | tail -n 5
+                        status_log_error "$CYCLE" "COMPACT_KEYS" "keymap_sync" "-" "-" "i18n_keymap.py sync failed" "rc=$SYNC_RC"
+                        break
+                    fi
+
+                    # Spróbuj wyciągnąć liczbę nowo dodanych mappingów
+                    MAPPED_NEW=$(echo "$SYNC_OUT" | grep -oE 'created [0-9]+' | awk '{print $2}' | tail -n 1)
+                    MAPPED_NEW=${MAPPED_NEW:-0}
+                    status_log_op "$CYCLE" "COMPACT_KEYS" "keymap_sync" "-" "-" "ok" "${MODE_EXTRA:-auto}" "" "" "$MAPPED_NEW"
+
+                    status_update_activity "running" "$CYCLE" "COMPACT_KEYS" "keymap_verify" "-" "-" "verify keymap" 0 0 "keys" 0
+                    if ! python3 tools/i18n_keymap.py verify --i18n-dir i18n >/dev/null 2>&1; then
+                        status_log_error "$CYCLE" "COMPACT_KEYS" "keymap_verify" "-" "-" "i18n_keymap.py verify failed" "fix keymap"
+                        break
+                    fi
+
+                    status_update_activity "running" "$CYCLE" "COMPACT_KEYS" "export" "-" "-" "export compact locales" 0 0 "langs" 0
+                    if ! python3 tools/json_to_lua_locales.py --all --server-dir i18n --client-dir testyy/data/locales --compact-keys --i18n-dir i18n >/dev/null 2>&1; then
+                        status_log_error "$CYCLE" "COMPACT_KEYS" "export" "-" "-" "json_to_lua_locales.py compact export failed" "check tool"
+                        break
+                    fi
+                    status_log_op "$CYCLE" "COMPACT_KEYS" "export_done" "-" "-" "ok" "export compact locales" "" "" "0"
+                    status_update_activity "running" "$CYCLE" "COMPACT_KEYS" "done" "-" "-" "compact keys ready" "$MAPPED_NEW" "$MAPPED_NEW" "mapped" 0
+                    ;;
+
                 TRANSLATION_SYNC)
                     echo "🌍 TRYB: TRANSLATION_SYNC - Etap 1 (język: $MODE_CAT, plik: $MODE_COUNT, brakuje: $MODE_EXTRA)"
                     
                     # Synchronizuj klucze EN → LANG z prefixem [EN]
-                    sync_translation_keys "$MODE_CAT" "$MODE_COUNT" "${MODE_EXTRA:-300}"
+                    status_update_activity "running" "$CYCLE" "TRANSLATION_SYNC" "sync_start" "$MODE_CAT" "$MODE_COUNT" "syncing" 0 0 "keys" 0
+                    SYNCED_KEYS=$(sync_translation_keys "$MODE_CAT" "$MODE_COUNT" "${MODE_EXTRA:-300}")
+                    SYNCED_KEYS=${SYNCED_KEYS:-0}
+                    SYNC_FILES_CHANGED=0
+                    if [ "$SYNCED_KEYS" -gt 0 ] 2>/dev/null; then
+                        SYNC_FILES_CHANGED=1
+                    fi
+                    status_log_op "$CYCLE" "TRANSLATION_SYNC" "SYNC_FILE_DONE" "$MODE_CAT" "$MODE_COUNT" "ok" "lang=${MODE_CAT} file=${MODE_COUNT}" "$SYNCED_KEYS" "$SYNC_FILES_CHANGED"
+
+                    # LIVE: zakończ etap sync dla czytelnego dashboardu
+                    status_update_activity "running" "$CYCLE" "TRANSLATION_SYNC" "sync_done" "$MODE_CAT" "$MODE_COUNT" "synced" "$SYNCED_KEYS" "$SYNCED_KEYS" "keys" 0
                     ;;
                 AUTO_TRANSLATE)
                     echo "🌍 TRYB: AUTO TRANSLATE (język: $MODE_CAT, plik: $MODE_COUNT, kluczy: $MODE_EXTRA)"
                     
                     # Automatyczne tłumaczenie BEZ interakcji!
-                    auto_translate_keys "$MODE_CAT" "$MODE_COUNT" "$MODE_EXTRA"
+                    status_update_activity "running" "$CYCLE" "AUTO_TRANSLATE" "auto_start" "$MODE_CAT" "$MODE_COUNT" "auto translate" 0 0 "keys" 0
+                    read -r AT_TRANSLATED AT_PLACEHOLDERS <<< "$(auto_translate_keys "$MODE_CAT" "$MODE_COUNT" "$MODE_EXTRA")"
+                    AT_TRANSLATED=${AT_TRANSLATED:-0}
+                    AT_PLACEHOLDERS=${AT_PLACEHOLDERS:-0}
+                    AT_FILES_CHANGED=0
+                    if [ "$AT_TRANSLATED" -gt 0 ] 2>/dev/null || [ "$AT_PLACEHOLDERS" -gt 0 ] 2>/dev/null; then
+                        AT_FILES_CHANGED=1
+                    fi
+                    status_log_op "$CYCLE" "AUTO_TRANSLATE" "AUTO_TRANSLATE_DONE" "$MODE_CAT" "$MODE_COUNT" "ok" "lang=${MODE_CAT} file=${MODE_COUNT}" "" "$AT_FILES_CHANGED" "" "$AT_TRANSLATED" "$AT_PLACEHOLDERS"
+
+                    # LIVE: zakończ etap auto dla czytelnego dashboardu
+                    status_update_activity "running" "$CYCLE" "AUTO_TRANSLATE" "auto_done" "$MODE_CAT" "$MODE_COUNT" "translated" "$AT_TRANSLATED" "$AT_TRANSLATED" "keys" 0
                     ;;
                 IDLE)
                     echo "✅ TRYB: IDLE - Wszystko zrobione!"
@@ -6207,19 +6910,28 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                     echo ""
                     
                     # Pełny cykl IDLE: skan + walidacja + dokumentacja + raporty
+                    status_update_activity "running" "$CYCLE" "IDLE" "idle_cycle" "-" "-" "idle cycle" 0 0 "steps" 0
                     idle_full_cycle
+
+                    status_log_op "$CYCLE" "IDLE" "IDLE_CYCLE_DONE" "-" "-" "ok" "idle cycle complete"
                     
                     # Sprawdź czy wykryto nowe pliki do migracji
                     if [[ -f "i18n/new_files_detected.json" ]]; then
-                        local new_count=$(python3 -c "import json; print(json.load(open('i18n/new_files_detected.json')).get('needs_migration', 0))" 2>/dev/null || echo "0")
+                        new_count=$(python3 -c "import json; print(json.load(open('i18n/new_files_detected.json')).get('needs_migration', 0))" 2>/dev/null || echo "0")
                         if [[ "$new_count" -gt 0 ]]; then
                             echo "⚠️ Wykryto $new_count nowych plików - restart cyklu!"
+                            status_log_op "$CYCLE" "IDLE" "IDLE_NEW_WORK_DETECTED" "-" "-" "ok" "needs_migration=$new_count"
                             continue  # Restart pętli od MIGRATION
                         fi
                     fi
                     
                     echo "   Następny skan za 5 minut..."
-                    sleep 300
+                    status_log_op "$CYCLE" "IDLE" "IDLE_SLEEP" "-" "-" "ok" "sleep_seconds=300"
+                    if [ "${STOP_AFTER_CYCLE:-false}" = "true" ]; then
+                        echo "🛑 ONCE: pomijam IDLE sleep"
+                    else
+                        sleep 300
+                    fi
                     ;;
                 *)
                     echo "⚠️ Nieznany tryb: $MODE_TYPE"
@@ -6317,6 +7029,10 @@ elif '$MODE_TYPE' == 'IDLE':
 with open('i18n_global_stats.json', 'w') as f:
     json.dump(data, f, indent=2)
 SAVEPY
+
+            # Daily agregacja (UTC) na podstawie ops/errors
+            status_build_daily
+            status_update_activity "running" "$CYCLE" "${MODE_TYPE:-IDLE}" "cycle_end" "${MODE_CAT:-}" "-" "cycle end" 0 0 "units" 0
             
             # Aktualizuj status co cykl
             update_github_status
@@ -6346,6 +7062,14 @@ print(total)
             
             echo ""
             echo "💤 Przerwa ${DELAY}s przed następnym cyklem..."
+
+            if [ "$STOP_AFTER_CYCLE" = "true" ]; then
+                echo "🛑 Kończę po cyklu (ONCE)"
+                status_update_activity "stopped" "${CYCLE:-0}" "${MODE_TYPE:-IDLE}" "stop_after_cycle" "${MODE_CAT:-}" "-" "stop after cycle" 0 0 "units" 0
+                update_github_status
+                rm -f "$PID_FILE" 2>/dev/null || true
+                exit 0
+            fi
             
             # Reset zmiennych wymuszenia przed następnym cyklem
             MODE_EXTRA=""

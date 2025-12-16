@@ -1,7 +1,7 @@
 {
-  "scan_time": "2025-12-11T19:20:27.297179",
-  "total_new": 2712,
-  "needs_migration": 153,
+  "scan_time": "2025-12-16T05:59:36.864231",
+  "total_new": 2689,
+  "needs_migration": 152,
   "files": [
     {
       "file": "data-otservbr-global/npc/lothar.lua",

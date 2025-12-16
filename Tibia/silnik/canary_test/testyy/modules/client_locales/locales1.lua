@@ -160,28 +160,33 @@ function installLocale(locale)
     local installedLocale = installedLocales[locale.name]
     if installedLocale then
         for word, translation in pairs(locale.translation) do
-            installedLocale.translation[word] = translation
-        end
-    else
-        installedLocales[locale.name] = locale
-    end
-end
+            if tostring(text) then
+                local translation = currentLocale.translation[text]
+                if translation then
+                    return string.format(translation, ...)
+                end
 
-function installLocales(directory)
-    dofiles(directory)
-end
+                -- If there is no translation, we can still format numbers (kept for legacy usage).
+                if tonumber(text) and currentLocale.formatNumbers then
+                    local number = tostring(text):split('.')
+                    local out = ''
+                    local reverseNumber = number[1]:reverse()
+                    for i = 1, #reverseNumber do
+                        out = out .. reverseNumber:sub(i, i)
+                        if i % 3 == 0 and i ~= #number then
+                            out = out .. currentLocale.thousandsSeperator
+                        end
+                    end
+                    if number[2] then
+                        out = number[2] .. currentLocale.decimalSeperator .. out
+                    end
+                    return out:reverse()
+                end
 
-function setLocale(name)
-    local locale = installedLocales[name]
-    if locale == currentLocale then
-        g_settings.set('locale', name)
-        return
-    end
-    if not locale then
-        pwarning('Locale ' .. name .. ' does not exist.')
-        return false
-    end
-    if currentLocale then
+                if currentLocale.name ~= defaultLocaleName then
+                    pdebug('Unable to translate: "' .. text .. '"')
+                end
+                return string.format(text, ...)
         sendLocale(locale.name)
     end
     currentLocale = locale

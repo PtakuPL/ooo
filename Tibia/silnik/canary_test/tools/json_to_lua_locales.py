@@ -23,11 +23,36 @@ except Exception:
     load_keymap_files = None
     save_keymap_files = None
 
-# Supported languages
-LANGUAGES = ['en', 'pl', 'de', 'es', 'pt', 'fr', 'it', 'ru', 'tr', 'sv', 'nl']
+def discover_languages(server_dir: str):
+    """Discover available language directories under server_dir.
 
-# Categories to process
-CATEGORIES = ['npc', 'monster', 'item', 'spell', 'system', 'quest', 'combat']
+    We intentionally avoid a hardcoded list because this repo supports many languages.
+    """
+    base = Path(server_dir)
+    if not base.is_dir():
+        return []
+
+    langs = []
+    for child in base.iterdir():
+        if not child.is_dir():
+            continue
+        name = child.name
+        # Accept common patterns: en, pl, zh_TW, etc.
+        if len(name) < 2:
+            continue
+        # Must contain at least one JSON file to be considered a locale directory.
+        if any(p.suffix == ".json" for p in child.iterdir() if p.is_file()):
+            langs.append(name)
+    return sorted(langs)
+
+
+def iter_lang_json_files(lang_dir: Path):
+    """Yield JSON translation files for a given lang directory, skipping backups/corrupted files."""
+    for p in sorted(lang_dir.glob("*.json")):
+        name = p.name
+        if ".bak" in name or ".corrupted" in name:
+            continue
+        yield p
 
 def escape_lua_string(s):
     """Escape special characters for Lua string literals"""
@@ -81,18 +106,25 @@ def generate_game_i18n(lang, server_i18n_dir, client_locales_dir, *, compact_key
     all_translations = {}
     stats = {}
     
-    # Collect translations from all categories
-    for category in CATEGORIES:
-        json_file = os.path.join(server_i18n_dir, lang, f'{category}.json')
-        if os.path.exists(json_file):
-            try:
-                with open(json_file, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                    all_translations.update(data)
-                    stats[category] = len(data)
-                    print(f"    [{category}] {len(data)} keys")
-            except json.JSONDecodeError as e:
-                print(f"    [{category}] ERROR: {e}")
+    lang_dir = Path(server_i18n_dir) / lang
+    if not lang_dir.is_dir():
+        print(f"  No translations found for {lang}")
+        return 0
+
+    # Collect translations from all JSON files in the language directory.
+    for json_path in iter_lang_json_files(lang_dir):
+        category = json_path.stem
+        try:
+            with open(json_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                if not isinstance(data, dict):
+                    print(f"    [{category}] WARN: expected object/dict, got {type(data)}")
+                    continue
+                all_translations.update(data)
+                stats[category] = len(data)
+                print(f"    [{category}] {len(data)} keys")
+        except json.JSONDecodeError as e:
+            print(f"    [{category}] ERROR: {e}")
     
     if not all_translations:
         print(f"  No translations found for {lang}")
@@ -181,12 +213,11 @@ def process_all_languages(server_dir, client_dir):
     
     total_stats = {}
     
-    for lang in LANGUAGES:
-        lang_dir = os.path.join(server_dir, lang)
-        if os.path.isdir(lang_dir):
-            print(f"\n[{lang.upper()}]")
-            count = generate_game_i18n(lang, server_dir, client_dir)
-            total_stats[lang] = count
+    langs = discover_languages(server_dir)
+    for lang in langs:
+        print(f"\n[{lang.upper()}]")
+        count = generate_game_i18n(lang, server_dir, client_dir)
+        total_stats[lang] = count
     
     print("\n" + "=" * 50)
     print("SUMMARY")
@@ -217,18 +248,17 @@ def main():
     if args.all:
         if args.compact_keys:
             total_stats = {}
-            for lang in LANGUAGES:
-                lang_dir = os.path.join(args.server_dir, lang)
-                if os.path.isdir(lang_dir):
-                    print(f"\n[{lang.upper()} - COMPACT]")
-                    count = generate_game_i18n(
-                        lang,
-                        args.server_dir,
-                        args.client_dir,
-                        compact_keys=True,
-                        i18n_dir=args.i18n_dir,
-                    )
-                    total_stats[lang] = count
+            langs = discover_languages(args.server_dir)
+            for lang in langs:
+                print(f"\n[{lang.upper()} - COMPACT]")
+                count = generate_game_i18n(
+                    lang,
+                    args.server_dir,
+                    args.client_dir,
+                    compact_keys=True,
+                    i18n_dir=args.i18n_dir,
+                )
+                total_stats[lang] = count
             print("\n" + "=" * 50)
             print("SUMMARY (COMPACT)")
             print("=" * 50)

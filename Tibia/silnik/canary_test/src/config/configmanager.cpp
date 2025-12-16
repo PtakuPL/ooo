@@ -100,6 +100,10 @@ bool ConfigManager::load() {
 	loadBoolConfig(L, HOUSE_OWNED_BY_ACCOUNT, "houseOwnedByAccount", false);
 	loadBoolConfig(L, HOUSE_PURSHASED_SHOW_PRICE, "housePurchasedShowPrice", false);
 	loadBoolConfig(L, INVENTORY_GLOW, "inventoryGlowOnFiveBless", false);
+	loadBoolConfig(L, I18N_USE_LOCALIZED_TEXT_PROTOCOL, "i18nUseLocalizedTextProtocol", false);
+	loadBoolConfig(L, I18N_SEND_FALLBACK_TEXT, "i18nSendFallbackText", true);
+	loadBoolConfig(L, I18N_SEND_ARGS, "i18nSendArgs", false);
+	loadBoolConfig(L, I18N_COMPACT_KEYS_ENABLED, "i18nCompactKeysEnabled", false);
 	loadBoolConfig(L, LOYALTY_ENABLED, "loyaltyEnabled", true);
 	loadBoolConfig(L, MARKET_PREMIUM, "premiumToCreateMarketOffer", true);
 	loadBoolConfig(L, METRICS_ENABLE_OSTREAM, "metricsEnableOstream", false);
@@ -359,6 +363,7 @@ bool ConfigManager::load() {
 	loadStringConfig(L, CORE_DIRECTORY, "coreDirectory", "data");
 	loadStringConfig(L, DATA_DIRECTORY, "dataPackDirectory", "data-otservbr-global");
 	loadStringConfig(L, DEFAULT_LOCALE, "defaultLocale", "en");
+	loadStringConfig(L, I18N_KEYMAP_PATH, "i18nKeymapPath", "i18n/keymap.json");
 	loadStringConfig(L, DEFAULT_PRIORITY, "defaultPriority", "high");
 	loadStringConfig(L, DISCORD_WEBHOOK_URL, "discordWebhookURL", "");
 	loadStringConfig(L, FORGE_FIENDISH_INTERVAL_TIME, "forgeFiendishIntervalTime", "1");

@@ -1,14 +1,29 @@
 {
-  "total_cycles": 363,
+  "total_cycles": 1,
   "mode": "MIGRATION",
-  "category": "errors",
-  "last_update": "2025-12-12T06:06:55.976771",
+  "category": "scripts",
+  "last_update": "2025-12-16T06:22:08.108334",
   "migration": {
-    "files_scanned": 39,
-    "files_with_keys": 19,
+    "files_scanned": 47,
+    "files_with_keys": 27,
     "files_without_keys": 20,
-    "keys_extracted": 19,
-    "current_category": "errors",
-    "batch_size": 22
+    "keys_extracted": 45,
+    "current_category": "scripts",
+    "batch_size": 0
+  },
+  "translation_sync": {
+    "language": "pl",
+    "json_file": "npc.json",
+    "keys_to_sync": 0
+  },
+  "auto_translate": {
+    "language": "pl",
+    "json_file": "npc.json",
+    "keys_to_translate": 2
+  },
+  "idle": {
+    "new_files_detected": 152,
+    "quality_issues": 2875,
+    "last_scan": "2025-12-16T05:59:39.875505"
   }
 }

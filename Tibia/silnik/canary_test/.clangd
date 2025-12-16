@@ -1,0 +1,9 @@
+CompileFlags:
+ add: [-std=c++20]
+ Remove: [-W*]
+
+Index:
+  Background: false
+
+Diagnostics:
+ UnusedIncludes: Strict

@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja (UTC):** 2025-12-16 18:48:43  |  **Lokalnie:** 2025-12-16 19:48:43 CET  
+> **Aktualizacja (UTC):** 2025-12-16 18:50:52  |  **Lokalnie:** 2025-12-16 19:50:52 CET  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 24448  
-> **LIVE:** Cykl #13 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: cycle_end | Kategoria: de | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T18:48:43Z
+> **LIVE:** Cykl #21 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: mini_batch | Kategoria: creaturescripts | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T18:50:51Z
 
 ---
 
@@ -80,7 +80,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#13** | od uruchomienia |
+| 🔄 Cykl aktualny | **#21** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **574** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -181,44 +181,44 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    13 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    21 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🤖 AUTO_TRANSLATE (cycle_end)             │
-│ Kategoria: 📁 DE                                     │
+│ Tryb:      🔧 MIGRATION (mini_batch)                 │
+│ Kategoria: 📁 CREATURESCRIPTS                        │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
-│ Postęp: 0/0 units                                             │
-│ Info: cycle end                                               │
+│ Postęp: 0/20 items                                            │
+│ Info: batch 1 size=10                                         │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-16T18:48:43Z           │
+│ ❤️ Heartbeat: 2025-12-16T18:50:51Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2025-12-16 18:48:43 UTC | AUTO_TRANSLATE:auto_done | de | ok | libs.json
-- 2025-12-16 18:48:43 UTC | AUTO_TRANSLATE:auto_start | de | ok | libs.json
-- 2025-12-16 18:48:26 UTC | AUTO_TRANSLATE:auto_done | de | ok | items.json
-- 2025-12-16 18:48:25 UTC | AUTO_TRANSLATE:auto_start | de | ok | items.json
-- 2025-12-16 18:48:09 UTC | AUTO_TRANSLATE:auto_done | de | ok | events.json
-- 2025-12-16 18:48:09 UTC | AUTO_TRANSLATE:auto_start | de | ok | events.json
+- 2025-12-16 18:50:36 UTC | AUTO_TRANSLATE:auto_done | de | ok | dataroot.json
+- 2025-12-16 18:50:35 UTC | AUTO_TRANSLATE:auto_start | de | ok | dataroot.json
+- 2025-12-16 18:50:19 UTC | AUTO_TRANSLATE:auto_done | de | ok | creaturescripts.json
+- 2025-12-16 18:50:18 UTC | AUTO_TRANSLATE:auto_start | de | ok | creaturescripts.json
+- 2025-12-16 18:50:02 UTC | AUTO_TRANSLATE:auto_done | de | ok | chatchannels.json
+- 2025-12-16 18:50:02 UTC | AUTO_TRANSLATE:auto_start | de | ok | chatchannels.json
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=libs.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → ok (files+1, translated+0, skipped+7) — lang=pl file=chatchannels.json
+- 🔧 MIGRATION: mini-batch [creaturescripts] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → ok (files+1, translated+0, skipped+3060) — lang=pl file=npc.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
-- 🔧 MIGRATION: zakończono kategorię [raids] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [raids] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [raids] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION: zakończono kategorię [items] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [items] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [items] → ok (keys+0) — mini_batch=1 processed=10/20
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
-- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [ml] → ok (keys+23, files+1) — lang=ml file=startup.json
+- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [sw] → ok (keys+16, files+1) — lang=sw file=modules.json
+- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [vi] → ok (keys+16, files+1) — lang=vi file=modules.json
 
 
 
@@ -242,7 +242,7 @@
 | ⬜ Plików bez kluczy | **123** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **574** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#13** | continuous mode |
+| 🔄 Cykli wykonanych | **#21** | continuous mode |
 
 ---
 
@@ -448,7 +448,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #13 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #21 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -491,7 +491,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-16 18:48:43 | Local: 2025-12-16 19:48:43 CET  
+📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-16 18:50:52 | Local: 2025-12-16 19:50:52 CET  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

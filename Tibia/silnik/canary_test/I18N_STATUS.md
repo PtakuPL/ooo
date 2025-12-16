@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja (UTC):** 2025-12-16 23:40:22  |  **Lokalnie:** 2025-12-17 00:40:22 CET  
+> **Aktualizacja (UTC):** 2025-12-16 23:42:36  |  **Lokalnie:** 2025-12-17 00:42:36 CET  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 24449  
-> **LIVE:** Cykl #3 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T23:40:02Z
+> **LIVE:** Cykl #3 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T23:42:24Z
 
 ---
 
@@ -192,18 +192,18 @@
 │ Postęp: 0/0 files                                             │
 │ Info: all categories skipped                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-16T23:40:02Z           │
+│ ❤️ Heartbeat: 2025-12-16T23:42:24Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2025-12-16 23:39:21 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/alesar.lua
-- 2025-12-16 23:39:20 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/al_dee.lua
-- 2025-12-16 23:39:20 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/albinius.lua
-- 2025-12-16 23:39:20 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/ajax.lua
-- 2025-12-16 23:39:20 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/ahmet.lua
-- 2025-12-16 23:39:19 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/a_ghostly_woman.lua
+- 2025-12-16 23:42:14 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/alesar.lua
+- 2025-12-16 23:42:14 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/al_dee.lua
+- 2025-12-16 23:42:13 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/albinius.lua
+- 2025-12-16 23:42:13 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/ajax.lua
+- 2025-12-16 23:42:13 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/ahmet.lua
+- 2025-12-16 23:42:13 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/a_ghostly_woman.lua
 
 ---
 
@@ -491,7 +491,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-16 23:40:22 | Local: 2025-12-17 00:40:22 CET  
+📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-16 23:42:36 | Local: 2025-12-17 00:42:36 CET  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-16 08:49:48 UTC  
+> **Aktualizacja:** 2025-12-16 08:51:50 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 24448  
-> **LIVE:** Cykl #65 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T07:49:36Z
+> **LIVE:** Cykl #75 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T07:51:36Z
 
 ---
 
@@ -70,7 +70,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#65** | od uruchomienia |
+| 🔄 Cykl aktualny | **#75** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **574** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -171,7 +171,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    65 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    75 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (pending_skip)               │
@@ -182,7 +182,7 @@
 │ Postęp: 0/0 files                                             │
 │ Info: all categories skipped                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-16T07:49:36Z           │
+│ ❤️ Heartbeat: 2025-12-16T07:51:36Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -190,16 +190,16 @@
 
 ## 🔁 W tym cyklu
 
-- 🔧 MIGRATION.category_done [dataroot] ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION.mini_batch_stop [dataroot] ok (keys+0) — no new data
-- 🔧 MIGRATION.mini_batch_done [dataroot] ok (keys+0) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION.category_done [world] ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION.mini_batch_stop [world] ok (keys+0) — no new data
+- 🔧 MIGRATION.mini_batch_done [world] ok (keys+0) — mini_batch=1 processed=10/20
 
 
 
 
 ## 📅 Dziś (UTC)
 
-- Cykle: **95**
+- Cykle: **99**
 - MIGRATION: **+5078** kluczy, **554** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, globalevents, items, libs...
 - Błędy: **0**
@@ -216,7 +216,7 @@
 | ⬜ Plików bez kluczy | **123** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **574** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#65** | continuous mode |
+| 🔄 Cykli wykonanych | **#75** | continuous mode |
 
 ---
 
@@ -422,7 +422,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #65 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #75 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -465,23 +465,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-16 08:49:48  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-16 08:51:50  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `items.cpp` - ukończono 2025-12-16 08:20
-- ✅ `items_classification.hpp` - ukończono 2025-12-16 08:20
-- ✅ `pch.hpp` - ukończono 2025-12-16 08:20
-- ✅ `canary_server.cpp` - ukończono 2025-12-16 08:20
-- ✅ `account.cpp` - ukończono 2025-12-16 08:20
-- ✅ `account_info.hpp` - ukończono 2025-12-16 08:20
-- ✅ `account_repository_db.hpp` - ukończono 2025-12-16 08:20
-- ✅ `account.hpp` - ukończono 2025-12-16 08:20
-- ✅ `game_definitions.hpp` - ukończono 2025-12-16 08:20
-- ✅ `zone.hpp` - ukończono 2025-12-16 08:20
+- ✅ `items.cpp` - ukończono 2025-12-16 08:50
+- ✅ `items_classification.hpp` - ukończono 2025-12-16 08:50
+- ✅ `pch.hpp` - ukończono 2025-12-16 08:50
+- ✅ `canary_server.cpp` - ukończono 2025-12-16 08:50
+- ✅ `account.cpp` - ukończono 2025-12-16 08:50
+- ✅ `account_info.hpp` - ukończono 2025-12-16 08:50
+- ✅ `account_repository_db.hpp` - ukończono 2025-12-16 08:50
+- ✅ `account.hpp` - ukończono 2025-12-16 08:50
+- ✅ `game_definitions.hpp` - ukończono 2025-12-16 08:50
+- ✅ `zone.hpp` - ukończono 2025-12-16 08:50
 
 ---
 

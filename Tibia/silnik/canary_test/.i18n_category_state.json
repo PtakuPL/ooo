@@ -118,8 +118,8 @@
       "timestamp": 1765489694.90867
     },
     "otclient_data": {
-      "count": 0,
-      "timestamp": 1765516007.2532675
+      "count": 80,
+      "timestamp": 1765867678.1505785
     },
     "otclient_src": {
       "count": 0,
@@ -177,7 +177,8 @@
     "npc": 4,
     "scripts": 172,
     "actions": 11,
-    "otclient_modules": 861
+    "otclient_modules": 861,
+    "otclient_data": 80
   },
   "migrations_done": false
 }

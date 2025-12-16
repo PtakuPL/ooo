@@ -70,7 +70,7 @@ ConsolePanel < Panel
 
   CheckBox
     id: toggleChat
-    !tooltip: tr("otclient_data.40_console_otui.tr_6")
+    !tooltip: tr('Disable chat mode, allow to walk using ASDW')
     anchors.left: parent.left
     anchors.top: parent.top
     margin-left: 13
@@ -106,7 +106,7 @@ ConsolePanel < Panel
 
   TabButton
     id: closeChannelButton
-    !tooltip: tr("otclient_data.40_console_otui.tr_5") .. ' (Ctrl+E)'
+    !tooltip: tr('Close this channel') .. ' (Ctrl+E)'
     icon: /images/game/console/closechannel
     anchors.right: next.left
     anchors.top: parent.top
@@ -117,7 +117,7 @@ ConsolePanel < Panel
 
   TabButton
     id: clearChannelButton
-    !tooltip: tr("otclient_data.40_console_otui.tr_4")
+    !tooltip: tr('Clear current message window')
     icon: /images/game/console/clearchannel
     anchors.right: next.left
     anchors.top: parent.top
@@ -129,7 +129,7 @@ ConsolePanel < Panel
 
   TabButton
     id: channelsButton
-    !tooltip: tr("otclient_data.40_console_otui.tr_3") .. ' (Ctrl+O)'
+    !tooltip: tr('Open new channel') .. ' (Ctrl+O)'
     icon: /images/game/console/channels
     anchors.right: next.left
     anchors.top: parent.top
@@ -139,7 +139,7 @@ ConsolePanel < Panel
 
   TabButton
     id: ignoreButton
-    !tooltip: tr("otclient_data.40_console_otui.tr_2")
+    !tooltip: tr('Ignore players')
     icon: /images/game/console/ignore
     anchors.right: parent.right
     anchors.top: parent.top
@@ -164,7 +164,7 @@ ConsolePanel < Panel
   TabButton
     id: sayModeButton
     icon: /images/game/console/say
-    !tooltip: tr("otclient_data.40_console_otui.tr_1")
+    !tooltip: tr('Adjust volume')
     &sayMode: 2
     size: 20 20
     anchors.left: parent.left

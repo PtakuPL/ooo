@@ -1,3 +1,3 @@
 EnterGameWindow < StaticMainWindow
-  !text: tr('Enter Game')
+  !text: tr("otclient_data.40_entergame_otui.tr_1")
   size: 260 354

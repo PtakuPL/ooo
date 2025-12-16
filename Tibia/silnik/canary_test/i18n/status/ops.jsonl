@@ -68,3 +68,7 @@
 {"category": "otclient_modules", "cycle": 1, "delta": {"keys_added": 192}, "detail": "mini_batch=4 processed=40/50", "file": "-", "phase": "MIGRATION", "result": "ok", "stage": "mini_batch_done", "t": "2025-12-16T05:50:54Z"}
 {"category": "otclient_modules", "cycle": 1, "delta": {"keys_added": 91}, "detail": "mini_batch=5 processed=50/50", "file": "-", "phase": "MIGRATION", "result": "ok", "stage": "mini_batch_done", "t": "2025-12-16T05:50:58Z"}
 {"category": "otclient_modules", "cycle": 1, "delta": {"files_changed": 50, "keys_added": 811}, "detail": "migration finished", "file": "-", "phase": "MIGRATION", "result": "ok", "stage": "category_done", "t": "2025-12-16T05:50:59Z"}
+{"category": "otclient_data", "cycle": 1, "delta": {"keys_added": 72}, "detail": "mini_batch=1 processed=10/50", "file": "-", "phase": "MIGRATION", "result": "ok", "stage": "mini_batch_done", "t": "2025-12-16T06:47:54Z"}
+{"category": "otclient_data", "cycle": 1, "delta": {"keys_added": 0}, "detail": "mini_batch=2 processed=20/50", "file": "-", "phase": "MIGRATION", "result": "ok", "stage": "mini_batch_done", "t": "2025-12-16T06:47:57Z"}
+{"category": "otclient_data", "cycle": 1, "delta": {"keys_added": 0}, "detail": "no new data", "file": "-", "phase": "MIGRATION", "result": "ok", "stage": "mini_batch_stop", "t": "2025-12-16T06:47:57Z"}
+{"category": "otclient_data", "cycle": 1, "delta": {"files_changed": 8, "keys_added": 72}, "detail": "migration finished", "file": "-", "phase": "MIGRATION", "result": "ok", "stage": "category_done", "t": "2025-12-16T06:47:58Z"}

@@ -104,7 +104,7 @@ CalendarGrid < MiniQtWindow
     id: calendarCurrentDate
     anchors.right: parent.right
     anchors.verticalCenter: calendarCurrentMonth.verticalCenter
-    !text: tr('otclient_modules.calendar.otui_text_1')
+    !text: '2023-11-23, 11:23 CET'
     margin-right: 16
     height: 16
     text-align: right

@@ -4350,6 +4350,9 @@ for dir_path in dirs:
             files.extend(glob.glob(f"{dir_path}/**/*{ext}", recursive=True))
     
     for filepath in files:
+        # Pomiń backupy / stare kopie
+        if '/backups/' in filepath or filepath.endswith('.bak') or '/styles.bak/' in filepath:
+            continue
         marker = f"{category.upper()}:{filepath}"
         if marker in processed:
             continue
@@ -4435,6 +4438,34 @@ for dir_path in dirs:
                 '--json', json_file,
                 '--key-prefix', key_prefix,
                 '--backup-dir', os.path.join('backups', category),
+            ]
+            try:
+                out = subprocess.check_output(cmd, stderr=subprocess.STDOUT, text=True)
+                m = re.search(r'keys_added=(\d+)', out)
+                if m:
+                    local_keys += int(m.group(1))
+                    keys_added += int(m.group(1))
+                m2 = re.search(r'file_changed=([01])', out)
+                if m2 and m2.group(1) == '1':
+                    file_changed_by_tool = True
+                try:
+                    with open(json_file, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                except Exception:
+                    pass
+            except subprocess.CalledProcessError:
+                pass
+
+        # 4) OTClient/Testyy (.otui): zamień text: "literal" -> text: tr('key')
+        if category.startswith('otclient_') and filepath.endswith('.otui') and ('text:' in content):
+            key_prefix = f"{category}.{safe_name}"
+            cmd = [
+                'python3', 'tools/i18n_migrate_otclient_otui_text.py',
+                '--file', filepath,
+                '--json', json_file,
+                '--key-prefix', key_prefix,
+                '--backup-dir', os.path.join('backups', category),
+                '--suffix', 'otui_text',
             ]
             try:
                 out = subprocess.check_output(cmd, stderr=subprocess.STDOUT, text=True)
@@ -7178,7 +7209,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                     
                     # Sprawdź zmiany w git wprowadzone TYLKO przez tę kategorię (delta).
                     git diff --name-only 2>/dev/null >"$TMP_DIFF_AFTER" || true
-                    FILES_CHANGED=$(comm -13 <(sort "$TMP_DIFF_BEFORE") <(sort "$TMP_DIFF_AFTER") | grep "\.lua$" | wc -l)
+                    FILES_CHANGED=$(comm -13 <(sort "$TMP_DIFF_BEFORE") <(sort "$TMP_DIFF_AFTER") | grep -E '\.(lua|otui|otmod|xml|cpp|hpp)$' | wc -l)
                     FILES_CHANGED=${FILES_CHANGED:-0}
                     rm -f "$TMP_DIFF_BEFORE" "$TMP_DIFF_AFTER" 2>/dev/null || true
                     

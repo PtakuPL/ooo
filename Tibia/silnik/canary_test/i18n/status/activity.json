@@ -1,9 +1,9 @@
 {
-  "category": "otclient_modules",
+  "category": "otclient_data",
   "cycle": 1,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2025-12-16T05:50:59Z",
+  "generated_at_utc": "2025-12-16T06:47:58Z",
   "message": "cycle end",
   "phase": "MIGRATION",
   "progress": {
@@ -14,103 +14,103 @@
   "recent": [
     {
       "action": "update",
-      "category": "otclient_modules",
+      "category": "otclient_data",
       "cycle": 1,
       "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
       "stage": "cycle_end",
-      "t": "2025-12-16T05:50:59Z"
+      "t": "2025-12-16T06:47:58Z"
     },
     {
       "action": "update",
-      "category": "otclient_modules",
+      "category": "otclient_data",
       "cycle": 1,
       "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
       "stage": "migration_done",
-      "t": "2025-12-16T05:50:59Z"
+      "t": "2025-12-16T06:47:58Z"
     },
     {
       "action": "update",
-      "category": "otclient_modules",
+      "category": "otclient_data",
       "cycle": 1,
       "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
       "stage": "mini_batch_end",
-      "t": "2025-12-16T05:50:59Z"
+      "t": "2025-12-16T06:47:57Z"
     },
     {
       "action": "update",
-      "category": "otclient_modules",
+      "category": "otclient_data",
       "cycle": 1,
       "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
       "stage": "mini_batch_done",
-      "t": "2025-12-16T05:50:59Z"
+      "t": "2025-12-16T06:47:57Z"
     },
     {
       "action": "update",
-      "category": "otclient_modules",
+      "category": "otclient_data",
       "cycle": 1,
       "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
       "stage": "mini_batch",
-      "t": "2025-12-16T05:50:57Z"
+      "t": "2025-12-16T06:47:57Z"
     },
     {
       "action": "update",
-      "category": "otclient_modules",
+      "category": "otclient_data",
       "cycle": 1,
       "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
       "stage": "mini_batch_done",
-      "t": "2025-12-16T05:50:54Z"
+      "t": "2025-12-16T06:47:54Z"
     },
     {
       "action": "update",
-      "category": "otclient_modules",
+      "category": "otclient_data",
       "cycle": 1,
       "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
       "stage": "mini_batch",
-      "t": "2025-12-16T05:50:53Z"
+      "t": "2025-12-16T06:47:52Z"
     },
     {
       "action": "update",
-      "category": "otclient_modules",
+      "category": "otclient_data",
       "cycle": 1,
       "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
-      "stage": "mini_batch_done",
-      "t": "2025-12-16T05:50:50Z"
+      "stage": "mini_batch_start",
+      "t": "2025-12-16T06:47:52Z"
     },
     {
       "action": "update",
-      "category": "otclient_modules",
+      "category": "otclient_data",
       "cycle": 1,
       "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
-      "stage": "mini_batch",
-      "t": "2025-12-16T05:50:49Z"
+      "stage": "migration_start",
+      "t": "2025-12-16T06:47:51Z"
     },
     {
       "action": "update",
-      "category": "otclient_modules",
+      "category": "otclient_data",
       "cycle": 1,
       "file": "-",
       "phase": "MIGRATION",
       "result": "ok",
-      "stage": "mini_batch_done",
-      "t": "2025-12-16T05:50:46Z"
+      "stage": "dispatch",
+      "t": "2025-12-16T06:47:51Z"
     }
   ],
   "stage": "cycle_end",

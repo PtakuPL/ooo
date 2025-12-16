@@ -109,7 +109,7 @@ HealthOverlay < UIWidget
   
 HealthInfoWindow < MiniWindow
   icon: /images/topbuttons/healthinfo
-  !text: tr("otclient_data.40_healthinfo_otui.tr_1")
+  !text: tr('Health Info')
   height: 123
 
   MiniWindowContents

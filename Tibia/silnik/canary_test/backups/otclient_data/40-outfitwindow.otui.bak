@@ -83,7 +83,7 @@ PresetButton < Panel
       anchors.bottom: parent.bottom
       anchors.left: parent.left
       width: 150
-      !placeholder: tr("otclient_data.40_outfitwindow_otui.tr_44")
+      !placeholder: tr('Preset Name')
       max-length: 24
     
     Button
@@ -92,7 +92,7 @@ PresetButton < Panel
       anchors.right: parent.right
       anchors.left: prev.right
       margin-left: 5
-      !text: tr("otclient_data.40_outfitwindow_otui.tr_43")
+      !text: tr('Save')
 
 SelectionButton < Panel
   image-source:  /images/ui/button-grey-qt
@@ -131,7 +131,7 @@ SelectionButton < Panel
 
 OutfitWindow < MainWindow
   size: 735 575
-  !text: tr("otclient_data.40_outfitwindow_otui.tr_42")
+  !text: tr('Customise Character')
   color: #929292
   @onEnter: modules.game_outfit.accept()
   @onEscape: modules.game_outfit.destroy()
@@ -141,7 +141,7 @@ OutfitWindow < MainWindow
     anchors.top: parent.top
     anchors.left: parent.left
     size: 469 220
-    !text: tr("otclient_data.40_outfitwindow_otui.tr_41")
+    !text: tr('Preview')
 
     Panel
       id: options
@@ -163,7 +163,7 @@ OutfitWindow < MainWindow
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           anchors.right: parent.right
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_40")
+          !text: tr('Show Floor')
 
       FlatPanel
         id: showOutfit
@@ -175,7 +175,7 @@ OutfitWindow < MainWindow
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           anchors.right: parent.right
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_39")
+          !text: tr('Show Outfit')
           checked: true
 
       FlatPanel
@@ -188,7 +188,7 @@ OutfitWindow < MainWindow
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           anchors.right: parent.right
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_38")
+          !text: tr('Show Mount')
 
       FlatPanel
         id: showFamiliar
@@ -206,7 +206,7 @@ OutfitWindow < MainWindow
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           anchors.right: parent.right
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_37")
+          !text: tr('Show Familiar')
           @onSetup: |
             if not g_game.getFeature(GamePlayerFamiliars) then
               self:hide()
@@ -223,7 +223,7 @@ OutfitWindow < MainWindow
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           anchors.right: parent.right
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_36")
+          !text: tr('Show Wings')
 
       FlatPanel
         id: showAura
@@ -235,7 +235,7 @@ OutfitWindow < MainWindow
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           anchors.right: parent.right
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_35")
+          !text: tr('Show Aura')
 
       FlatPanel
         id: showShader
@@ -247,7 +247,7 @@ OutfitWindow < MainWindow
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           anchors.right: parent.right
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_34")
+          !text: tr('Show Shader')
 
       FlatPanel
         id: showBars
@@ -259,7 +259,7 @@ OutfitWindow < MainWindow
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           anchors.right: parent.right
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_33")
+          !text: tr('Show Bars')
           
       FlatPanel
         id: showTitle
@@ -271,7 +271,7 @@ OutfitWindow < MainWindow
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           anchors.right: parent.right
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_32")
+          !text: tr('Show Title')
 
       FlatPanel
         id: showEffects
@@ -283,7 +283,7 @@ OutfitWindow < MainWindow
           anchors.verticalCenter: parent.verticalCenter
           anchors.left: parent.left
           anchors.right: parent.right
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_31")
+          !text: tr('Show Effects')
 
     FlatPanel
       id: panel
@@ -368,7 +368,7 @@ OutfitWindow < MainWindow
         margin-top: 3
         margin-left: 3
         image-color: #dfdfdf
-        !tooltip: tr("otclient_data.40_outfitwindow_otui.tr_30")
+        !tooltip: tr('Enable/Disable movement animation')
 
         $hover:
           image-color: #ffffff
@@ -399,7 +399,7 @@ OutfitWindow < MainWindow
     width: 130
     margin-top: 5
     margin-bottom: 5
-    !text: tr("otclient_data.40_outfitwindow_otui.tr_29")
+    !text: tr('Configure')
     layout:
       type: verticalBox
       spacing: 5
@@ -414,7 +414,7 @@ OutfitWindow < MainWindow
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
         anchors.right: parent.right
-        !text: tr("otclient_data.40_outfitwindow_otui.tr_28")
+        !text: tr('Addon 1')
 
     FlatPanel
       id: addon2
@@ -426,7 +426,7 @@ OutfitWindow < MainWindow
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
         anchors.right: parent.right
-        !text: tr("otclient_data.40_outfitwindow_otui.tr_27")
+        !text: tr('Addon 2')
 
     FlatPanel
       id: mount
@@ -438,7 +438,7 @@ OutfitWindow < MainWindow
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
         anchors.right: parent.right
-        !text: tr("otclient_data.40_outfitwindow_otui.tr_26")
+        !text: tr('Mount')
 
   MiniPanel
     id: appearance
@@ -448,7 +448,7 @@ OutfitWindow < MainWindow
     anchors.bottom: prev.bottom
     margin-top: 5
     margin-left: 5
-    !text: tr("otclient_data.40_outfitwindow_otui.tr_25")
+    !text: tr('Change Appearance')
 
     ScrollablePanel
       id: settings
@@ -475,7 +475,7 @@ OutfitWindow < MainWindow
           anchors.left: parent.left
           image-source: /images/ui/outfits/checkbox_round
           text-offset: 15 0
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_24")
+          !text: tr('Preset:')
           width: 84
         
         FlatPanel
@@ -496,7 +496,7 @@ OutfitWindow < MainWindow
           anchors.left: parent.left
           image-source: /images/ui/outfits/checkbox_round
           text-offset: 15 0
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_23")
+          !text: tr('Outfit:')
           width: 84
         
         FlatPanel
@@ -516,7 +516,7 @@ OutfitWindow < MainWindow
           anchors.left: parent.left
           image-source: /images/ui/outfits/checkbox_round
           text-offset: 15 0
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_22")
+          !text: tr('Mount:')
           width: 84
         
         FlatPanel
@@ -541,7 +541,7 @@ OutfitWindow < MainWindow
           anchors.left: parent.left
           image-source: /images/ui/outfits/checkbox_round
           text-offset: 15 0
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_21")
+          !text: tr('Familiar:')
           width: 84
           @onSetup: |
             if not g_game.getFeature(GamePlayerFamiliars) then
@@ -569,7 +569,7 @@ OutfitWindow < MainWindow
           anchors.left: parent.left
           image-source: /images/ui/outfits/checkbox_round
           text-offset: 15 0
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_20")
+          !text: tr('Wings:')
           width: 84
         
         FlatPanel
@@ -589,7 +589,7 @@ OutfitWindow < MainWindow
           anchors.left: parent.left
           image-source: /images/ui/outfits/checkbox_round
           text-offset: 15 0
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_19")
+          !text: tr('Aura:')
           width: 84
         
         FlatPanel
@@ -609,7 +609,7 @@ OutfitWindow < MainWindow
           anchors.left: parent.left
           image-source: /images/ui/outfits/checkbox_round
           text-offset: 15 0
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_18")
+          !text: tr('Shader:')
           width: 84
         
         FlatPanel
@@ -629,7 +629,7 @@ OutfitWindow < MainWindow
           anchors.left: parent.left
           image-source: /images/ui/outfits/checkbox_round
           text-offset: 15 0
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_17")
+          !text: tr('Health Bar:')
           width: 84
         
         FlatPanel
@@ -649,7 +649,7 @@ OutfitWindow < MainWindow
           anchors.left: parent.left
           image-source: /images/ui/outfits/checkbox_round
           text-offset: 15 0
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_16")
+          !text: tr('Effects:')
           width: 84
         
         FlatPanel
@@ -669,7 +669,7 @@ OutfitWindow < MainWindow
           anchors.left: parent.left
           image-source: /images/ui/outfits/checkbox_round 
           text-offset: 15 0
-          !text: tr("otclient_data.40_outfitwindow_otui.tr_15")
+          !text: tr('Title:')
           width: 84
         
         FlatPanel
@@ -700,19 +700,19 @@ OutfitWindow < MainWindow
       ButtonBox
         id: head
         width: 80
-        !text: tr("otclient_data.40_outfitwindow_otui.tr_14")
+        !text: tr('Head')
       ButtonBox
         id: primary
         width: 80
-        !text: tr("otclient_data.40_outfitwindow_otui.tr_13")
+        !text: tr('Primary')
       ButtonBox
         id: secondary
         width: 80
-        !text: tr("otclient_data.40_outfitwindow_otui.tr_12")
+        !text: tr('Secondary')
       ButtonBox
         id: detail
         width: 81
-        !text: tr("otclient_data.40_outfitwindow_otui.tr_11")
+        !text: tr('Detail')
 
     Panel
       id: colorBoxPanel
@@ -735,31 +735,31 @@ OutfitWindow < MainWindow
     margin-left: 5
     padding-left: 21
     height: 50
-    !text: tr("otclient_data.40_outfitwindow_otui.tr_10")
+    !text: tr('Manage Presets')
     layout:
       type: horizontalBox
       spacing: 5
 
     Button
-      !text: tr("otclient_data.40_outfitwindow_otui.tr_9")
+      !text: tr('New')
       width: 43
       font: noto-12
       @onClick: modules.game_outfit.newPreset()
 
     Button
-      !text: tr("otclient_data.40_outfitwindow_otui.tr_8")
+      !text: tr('Rename')
       width: 43
       font: noto-12
       @onClick: modules.game_outfit.renamePreset()
 
     Button
-      !text: tr("otclient_data.40_outfitwindow_otui.tr_7")
+      !text: tr('Save')
       width: 43
       font: noto-12
       @onClick: modules.game_outfit.savePreset()
 
     Button
-      !text: tr("otclient_data.40_outfitwindow_otui.tr_6")
+      !text: tr('Delete')
       width: 43
       font: noto-12
       @onClick: modules.game_outfit.deletePreset()
@@ -771,20 +771,20 @@ OutfitWindow < MainWindow
     anchors.right: parent.right
     margin-left: 5
     height: 50
-    !text: tr("otclient_data.40_outfitwindow_otui.tr_5")
+    !text: tr('Filter')
     
     QtCheckBox
       id: onlyMine
       anchors.verticalCenter: parent.verticalCenter
       anchors.left: parent.left
-      !text: tr("otclient_data.40_outfitwindow_otui.tr_4")
+      !text: tr('Only mine')
       width: 84
 
     TextEdit
       id: search
       anchors.left: prev.right
       anchors.right: parent.right
-      !placeholder: tr("otclient_data.40_outfitwindow_otui.tr_3")
+      !placeholder: tr('Search by name')
       placeholder-color: #c0c0c0c0
 
   ScrollablePanel
@@ -852,14 +852,14 @@ OutfitWindow < MainWindow
   Button
     anchors.bottom: parent.bottom
     anchors.right: parent.right
-    !text: tr("otclient_data.40_outfitwindow_otui.tr_2")
+    !text: tr('Cancel')
     width: 65
     @onClick: modules.game_outfit.destroy()
   
   Button
     anchors.bottom: parent.bottom
     anchors.right: prev.left
-    !text: tr("otclient_data.40_outfitwindow_otui.tr_1")
+    !text: tr('Ok')
     width: 55
     margin-right: 5
     @onClick: modules.game_outfit.accept()

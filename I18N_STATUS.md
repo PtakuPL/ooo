@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-16 07:47:59 UTC  
-> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 22655  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: cycle_end | Kategoria: otclient_data | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T06:47:58Z
+> **Aktualizacja:** 2025-12-16 08:23:43 UTC  
+> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 24448  
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T07:23:41Z
 
 ---
 
@@ -25,10 +25,10 @@
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
-| 📂 **Wszystkie pliki** | **16,567** | 100% | cały projekt |
-| 📜 Do skanowania (kod) | **7,833** | 47.3% | pliki z kodem/tekstami |
-| 🔍 **Przeskanowane** | **2,713** | **34.6%** | historia workera |
-| ⏳ Nie przeskanowane | **5,120** | 65.4% | czekają na skan |
+| 📂 **Wszystkie pliki** | **17,002** | 100% | cały projekt |
+| 📜 Do skanowania (kod) | **7,841** | 46.1% | pliki z kodem/tekstami |
+| 🔍 **Przeskanowane** | **4,973** | **63.4%** | historia workera |
+| ⏳ Nie przeskanowane | **2,868** | 36.6% | czekają na skan |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -39,25 +39,25 @@
 | 🌐 HTML (.html) | 6 | widoki |
 | 📦 JavaScript (.js) | 0 | frontend |
 | ⚙️ C++ (.cpp/.hpp/.h) | 839 | silnik serwera |
-| 📋 JSON (.json) | 952 | konfiguracje |
+| 📋 JSON (.json) | 960 | konfiguracje |
 
 ### ✅ Status Migracji
 | Status | Ilość | Procent | Opis |
 |--------|-------|---------|------|
-| ✅ Zmigrowane | **82** | 3.0% | mają klucze i18n |
+| ✅ Zmigrowane | **353** | 7.1% | mają klucze i18n |
 | 🔄 Wymaga migracji | **0** | - | trzeba dodać i18n |
-| ⚪ Czyste | **65** | - | bez tekstów |
+| ⚪ Czyste | **123** | - | bez tekstów |
 | 🔧 W trakcie | **0** | - | obecnie przetwarzane |
 
 ### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔑 **Klucze EN (źródłowe)** | **22,655** | wszystkie kategorie |
+| 🔑 **Klucze EN (źródłowe)** | **24,448** | wszystkie kategorie |
 | 📊 NPC | 5,339 | dialogi NPC |
 | 📊 Items | 13,749 | przedmioty |
 | 📊 Monsters | 132 | potwory |
 | 📊 HTML | 1,495 | widoki web |
-| 📊 Pozostałe | 1,940 | scripts, spells, etc. |
+| 📊 Pozostałe | 3,733 | scripts, spells, etc. |
 
 ### 🌍 Języki i Tłumaczenia
 | Metryka | Wartość | Procent | Info |
@@ -71,7 +71,7 @@
 | Metryka | Wartość | Info |
 |---------|---------|------|
 | 🔄 Cykl aktualny | **#1** | od uruchomienia |
-| 🔑 Kluczy wyekstrahowanych | **134** | w tej sesji |
+| 🔑 Kluczy wyekstrahowanych | **574** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
 ---
@@ -110,11 +110,11 @@
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
 | 🧙 NPC Dialogs | 🔄 | 5339/15000 (36%) | 15000 |
-| 📜 Lua Scripts | 🔄 | 212/1000 (21%) | 1000 |
+| 📜 Lua Scripts | 🔄 | 634/1000 (63%) | 1000 |
 | 🎒 Items Database | 🔄 | 13749/40000 (34%) | 40000 |
 | 👹 Monsters | 🔄 | 132/5000 (3%) | 5000 |
 | ✨ Spells & Magic | 🔄 | 304/400 (76%) | 400 |
-| ⚙️ Server C++ | ⏳ | 0/300 (0%) | 300 |
+| ⚙️ Server C++ | 🔄 | 66/300 (22%) | 300 |
 
 ### ⏳ Faza 2: 🌐 Website (AAC)
 
@@ -130,7 +130,7 @@
 |-----------|--------|--------|-----|
 | 🖥️ Client UI | ⏳ | 0/200 (0%) | 200 |
 | 💿 Server C++ | ⏳ | 0/500 (0%) | 500 |
-| 🎮 OTClient Modules | ✅ | 812/500 (162%) | 500 |
+| 🎮 OTClient Modules | ✅ | 1987/500 (397%) | 500 |
 | 📦 OTClient Data | 🔄 | 72/200 (36%) | 200 |
 | ⚙️ OTClient Src | ⏳ | 0/300 (0%) | 300 |
 | 🔧 OTClient Mods | ⏳ | 0/100 (0%) | 100 |
@@ -174,15 +174,15 @@
 │ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (cycle_end)                  │
-│ Kategoria: 📁 OTCLIENT_DATA                          │
+│ Tryb:      🔧 MIGRATION (pending_skip)               │
+│ Kategoria: 📁 PENDING_SKIP                           │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
-│ Postęp: 0/0 units                                             │
-│ Info: cycle end                                               │
+│ Postęp: 0/0 files                                             │
+│ Info: all categories skipped                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-16T06:47:58Z           │
+│ ❤️ Heartbeat: 2025-12-16T07:23:41Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -190,6 +190,8 @@
 
 ## 🔁 W tym cyklu
 
+- 🔧 MIGRATION.category_done [scripts] ok (keys+29, files+17) — migration finished
+- 🔧 MIGRATION.category_done [npc] ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION.category_done [otclient_data] ok (keys+72, files+8) — migration finished
 - 🔧 MIGRATION.mini_batch_stop [otclient_data] ok (keys+0) — no new data
 - 🔧 MIGRATION.mini_batch_done [otclient_data] ok (keys+0) — mini_batch=2 processed=20/50
@@ -198,17 +200,15 @@
 - 🔧 MIGRATION.mini_batch_done [otclient_modules] ok (keys+91) — mini_batch=5 processed=50/50
 - 🔧 MIGRATION.mini_batch_done [otclient_modules] ok (keys+192) — mini_batch=4 processed=40/50
 - 🔧 MIGRATION.mini_batch_done [otclient_modules] ok (keys+245) — mini_batch=3 processed=30/50
-- 🔧 MIGRATION.mini_batch_done [otclient_modules] ok (keys+165) — mini_batch=2 processed=20/50
-- 🔧 MIGRATION.mini_batch_done [otclient_modules] ok (keys+118) — mini_batch=1 processed=10/50
 
 
 
 
 ## 📅 Dziś (UTC)
 
-- Cykle: **13**
-- MIGRATION: **+1904** kluczy, **119** plików `.lua`
-- Kategorie dotknięte: actions, creaturescripts, globalevents, items, monsters, mounts, movements, npc, otclient_data, otclient_modules...
+- Cykle: **95**
+- MIGRATION: **+5078** kluczy, **554** plików `.lua`
+- Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, globalevents, items, libs...
 - Błędy: **0**
 
 
@@ -218,10 +218,10 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **147** | w tej sesji |
-| ✅ Plików z kluczami | **82** | zawierały hardcoded strings |
-| ⬜ Plików bez kluczy | **65** | czyste (brak hardcoded) |
-| 🔑 Kluczy wyciągniętych | **134** | przez workera w tej sesji |
+| 📁 Plików przeskanowanych | **476** | w tej sesji |
+| ✅ Plików z kluczami | **353** | zawierały hardcoded strings |
+| ⬜ Plików bez kluczy | **123** | czyste (brak hardcoded) |
+| 🔑 Kluczy wyciągniętych | **574** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
 | 🔄 Cykli wykonanych | **#1** | continuous mode |
 
@@ -305,37 +305,37 @@
 </details>
 
 <details>
-<summary>📜 7. Quests - ⏳ (0%)</summary>
+<summary>📜 7. Quests - 🔄 (23%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 0 |
+| 🔑 Kluczy | 117 |
 | 🎯 Cel | 500 |
-| 📊 Postęp | 0% |
+| 📊 Postęp | 23% |
 | 📁 Plik | i18n/en/quests.json |
 
 </details>
 
 <details>
-<summary>📜 8. Scripts - 🔄 (21%)</summary>
+<summary>📜 8. Scripts - 🔄 (63%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 212 |
+| 🔑 Kluczy | 634 |
 | 🎯 Cel | 1000 |
-| 📊 Postęp | 21% |
+| 📊 Postęp | 63% |
 | 📁 Plik | i18n/en/scripts.json |
 
 </details>
 
 <details>
-<summary>⚙️ 9. Server - ⏳ (0%)</summary>
+<summary>⚙️ 9. Server - 🔄 (22%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 0 |
+| 🔑 Kluczy | 66 |
 | 🎯 Cel | 300 |
-| 📊 Postęp | 0% |
+| 📊 Postęp | 22% |
 | 📁 Plik | i18n/en/server.json |
 
 </details>
@@ -384,28 +384,36 @@
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 0 | 0 | ✅ Active |
 | npc | 5339 | 0 | 0 | ✅ Active |
+| otclient_modules | 1987 | 0 | 0 | ✅ Active |
 | html | 1495 | 0 | 0 | ✅ Active |
-| otclient_modules | 812 | 0 | 0 | ✅ Active |
+| scripts | 634 | 0 | 0 | ✅ Active |
 | spells | 304 | 0 | 0 | ✅ Active |
 | client | 242 | 0 | 0 | ✅ Active |
-| scripts | 212 | 0 | 0 | ✅ Active |
 | raids | 147 | 0 | 0 | ✅ Active |
 | monsters | 132 | 0 | 0 | ✅ Active |
+| quests | 117 | 0 | 0 | ✅ Active |
 | otclient_data | 72 | 0 | 0 | ✅ Active |
+| server | 66 | 0 | 0 | ✅ Active |
 | php | 59 | 0 | 0 | ✅ Active |
 | startup | 23 | 0 | 0 | ✅ Active |
+| actions | 21 | 0 | 0 | ✅ Active |
 | libs | 21 | 0 | 0 | ✅ Active |
 | modules | 16 | 0 | 0 | ✅ Active |
 | example_merchant | 14 | 0 | 0 | ✅ Active |
 | messages | 11 | 0 | 0 | ✅ Active |
-| actions | 8 | 0 | 0 | ✅ Active |
 | chatchannels | 8 | 0 | 0 | ✅ Active |
 | events | 5 | 0 | 0 | ✅ Active |
+| dataroot | 3 | 0 | 0 | ✅ Active |
+| creaturescripts | 2 | 0 | 0 | ✅ Active |
 | cpp | 0 | 0 | 0 | ⏳ Empty |
 | errors | 0 | 0 | 0 | ⏳ Empty |
+| globalevents | 0 | 0 | 0 | ⏳ Empty |
+| mounts | 0 | 0 | 0 | ⏳ Empty |
+| movements | 0 | 0 | 0 | ⏳ Empty |
 | npclib | 0 | 0 | 0 | ⏳ Empty |
-| quests | 0 | 0 | 0 | ⏳ Empty |
-| server | 0 | 0 | 0 | ⏳ Empty |
+| otclient_src | 0 | 0 | 0 | ⏳ Empty |
+| otclient_tools | 0 | 0 | 0 | ⏳ Empty |
+| talkactions | 0 | 0 | 0 | ⏳ Empty |
 | ui | 0 | 0 | 0 | ⏳ Empty |
 | world | 0 | 0 | 0 | ⏳ Empty |
 
@@ -454,33 +462,33 @@
 |-----------|--------|--------|-----|--------|
 | 🎒 Items | 13749 | ██████░░░░░░░░░░░░░░ | 40000 | 🔄 34% |
 | 🧙 NPC | 5339 | ███████░░░░░░░░░░░░░ | 15000 | 🔄 36% |
-| 📜 Scripts | 212 | ████░░░░░░░░░░░░░░░░ | 1000 | 🔄 21% |
+| 📜 Scripts | 634 | ████████████░░░░░░░░ | 1000 | 🔄 63% |
 | 👹 Monsters | 132 | ░░░░░░░░░░░░░░░░░░░░ | 5000 | 🔄 3% |
 | ✨ Spells | 304 | ███████████████░░░░░ | 400 | 🔄 76% |
-| ⚙️ Server | 0 | ░░░░░░░░░░░░░░░░░░░░ | 300 | ⏳ 0% |
+| ⚙️ Server | 66 | ████░░░░░░░░░░░░░░░░ | 300 | 🔄 22% |
 | 🖥️ System | 0 | ░░░░░░░░░░░░░░░░░░░░ | 2000 | ⏳ 0% |
 | 🎨 UI | 0 | ░░░░░░░░░░░░░░░░░░░░ | 200 | ⏳ 0% |
 
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-16 07:47:59  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-16 08:23:43  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `mirror` - ukończono 2025-12-16 06:49
-- ✅ `actions_formula` - ukończono 2025-12-16 06:49
-- ✅ `quara_leader_kill` - ukończono 2025-12-16 06:49
-- ✅ `movements_last_fight_teleport` - ukończono 2025-12-16 06:49
-- ✅ `movements_quara_vortex` - ukończono 2025-12-16 06:49
-- ✅ `creaturescritps_diseased_trio_kill` - ukończono 2025-12-16 06:49
-- ✅ `actions_matrix` - ukończono 2025-12-16 06:49
-- ✅ `creaturescritps_azerus_kill` - ukończono 2025-12-16 06:49
-- ✅ `movements_morik` - ukończono 2025-12-16 06:49
-- ✅ `movements_demon_teleport` - ukończono 2025-12-16 06:49
+- ✅ `items.cpp` - ukończono 2025-12-16 08:20
+- ✅ `items_classification.hpp` - ukończono 2025-12-16 08:20
+- ✅ `pch.hpp` - ukończono 2025-12-16 08:20
+- ✅ `canary_server.cpp` - ukończono 2025-12-16 08:20
+- ✅ `account.cpp` - ukończono 2025-12-16 08:20
+- ✅ `account_info.hpp` - ukończono 2025-12-16 08:20
+- ✅ `account_repository_db.hpp` - ukończono 2025-12-16 08:20
+- ✅ `account.hpp` - ukończono 2025-12-16 08:20
+- ✅ `game_definitions.hpp` - ukończono 2025-12-16 08:20
+- ✅ `zone.hpp` - ukończono 2025-12-16 08:20
 
 ---
 

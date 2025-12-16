@@ -33,9 +33,10 @@ TRANSLATE_LIMIT=0           # --translate-limit N: max kluczy do przetłumaczeni
 TRANSLATIONS_ONLY=false     # --translations-only: tylko tłumaczenia, bez migracji kodu
 
 # Zakres pracy workera:
-# - server (domyślnie): tylko serwer canary (bez html_copy i testyy/OTClient)
-# - all: wszystkie zdefiniowane kategorie
-I18N_SCOPE="${I18N_SCOPE:-server}"
+# - server: tylko serwer (bez website + OTClient/testyy)
+# - full (domyślnie): serwer + instalka (OTClient/testyy), bez website
+# - all: wszystkie zdefiniowane kategorie (w tym website)
+I18N_SCOPE="${I18N_SCOPE:-full}"
 export I18N_SCOPE
 
 # Statusy (LIVE + zdarzenia + daily) - docelowo źródło prawdy dla I18N_STATUS.md
@@ -2746,10 +2747,45 @@ process_scripts_file() {
         fi
     fi
 
-    # Oznacz jako przetworzony (do obu plików!)
-    mark_file_completed "$file" "scripts" "$keys_added"
+    # FIZYCZNA MIGRACJA: creature/player/npc :say("...") -> :sayLocalized("key", ...)
+    _out=$(python3 tools/i18n_migrate_lua_say.py \
+        --target creature \
+        --file "$file" \
+        --json "$json_file" \
+        --key-prefix "scripts.${safe}" \
+        --backup-dir "$BACKUP_DIR/scripts" \
+        --suffix "say" \
+        2>&1)
+    _rc=$?
+    if [ "$_rc" -ne 0 ]; then
+        status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "scripts_say_migrate" "scripts" "$file" "i18n_migrate_lua_say.py failed" "rc=$_rc"
+        return 1
+    fi
+    local say_keys_added say_calls_migrated say_file_changed
+    say_keys_added=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+    say_calls_migrated=$(echo "$_out" | grep -oE 'calls_migrated=[0-9]+' | tail -n 1 | cut -d= -f2)
+    say_file_changed=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+    say_keys_added=${say_keys_added:-0}
+    say_calls_migrated=${say_calls_migrated:-0}
+    say_file_changed=${say_file_changed:-0}
+    if [ "$say_file_changed" = "1" ]; then
+        if ! validate_lua_file "$file"; then
+            log "${RED}❌ Walidacja Lua nieudana po sayLocalized, przywracam backup${NC}"
+            restore_backup_file "$file"
+            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "scripts_say_validate" "scripts" "$file" "lua validation failed" "restored backup"
+            return 1
+        fi
+    fi
 
-    log "${GREEN}✅ Scripts: migrated=$calls_migrated calls, +$keys_added keys (${base})${NC}"
+    local total_keys_added total_calls_migrated
+    total_keys_added=$((keys_added + say_keys_added))
+    total_calls_migrated=$((calls_migrated + say_calls_migrated))
+
+    # Oznacz jako przetworzony (do obu plików!)
+    mark_file_completed "$file" "scripts" "$total_keys_added"
+
+    log "${GREEN}✅ Scripts: migrated=$total_calls_migrated calls, +$total_keys_added keys (${base})${NC}"
+
     return 0
 }
 
@@ -3096,8 +3132,66 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
                 done <<< "$strings"
                 count=$((count + 1))
             fi
+
+            # FIZYCZNA MIGRACJA: sendTextMessage + :say w LIBS
+            local _out _rc keys_added_total
+            keys_added_total=0
+
+            if grep -qE '([:.])sendTextMessage\s*\(|\bsendTextMessage\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_sendtext.py \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "lib.${safe}" \
+                    --backup-dir "$BACKUP_DIR/libs" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "libs_migrate_sendtext" "libs" "$file" "i18n_migrate_lua_sendtext.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "libs_validate_sendtext" "libs" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
+
+            if grep -qE ':say\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_say.py \
+                    --target creature \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "lib.${safe}" \
+                    --backup-dir "$BACKUP_DIR/libs" \
+                    --suffix "say" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "libs_migrate_say" "libs" "$file" "i18n_migrate_lua_say.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "libs_validate_say" "libs" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
             
-            mark_file_completed "$file" "libs" "1"
+            mark_file_completed "$file" "libs" "$keys_added_total"
             [ "$count" -ge "$batch" ] && break
         done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
@@ -3146,8 +3240,66 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
 " 2>/dev/null
                 count=$((count + 1))
             fi
+
+            # FIZYCZNA MIGRACJA: sendTextMessage + :say w EVENTS
+            local _out _rc keys_added_total
+            keys_added_total=0
+
+            if grep -qE '([:.])sendTextMessage\s*\(|\bsendTextMessage\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_sendtext.py \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "event.${safe}" \
+                    --backup-dir "$BACKUP_DIR/events" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "events_migrate_sendtext" "events" "$file" "i18n_migrate_lua_sendtext.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "events_validate_sendtext" "events" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
+
+            if grep -qE ':say\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_say.py \
+                    --target creature \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "event.${safe}" \
+                    --backup-dir "$BACKUP_DIR/events" \
+                    --suffix "say" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "events_migrate_say" "events" "$file" "i18n_migrate_lua_say.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "events_validate_say" "events" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
             
-            mark_file_completed "$file" "events" "1"
+            mark_file_completed "$file" "events" "$keys_added_total"
             [ "$count" -ge "$batch" ] && break
         done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
@@ -3237,8 +3389,66 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
 " 2>/dev/null
                 count=$((count + 1))
             fi
+
+            # FIZYCZNA MIGRACJA: sendTextMessage + :say w MODULES
+            local _out _rc keys_added_total
+            keys_added_total=0
+
+            if grep -qE '([:.])sendTextMessage\s*\(|\bsendTextMessage\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_sendtext.py \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "module.${safe}" \
+                    --backup-dir "$BACKUP_DIR/modules" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "modules_migrate_sendtext" "modules" "$file" "i18n_migrate_lua_sendtext.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "modules_validate_sendtext" "modules" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
+
+            if grep -qE ':say\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_say.py \
+                    --target creature \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "module.${safe}" \
+                    --backup-dir "$BACKUP_DIR/modules" \
+                    --suffix "say" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "modules_migrate_say" "modules" "$file" "i18n_migrate_lua_say.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "modules_validate_say" "modules" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
             
-            mark_file_completed "$file" "movements" "1"
+            mark_file_completed "$file" "modules" "$keys_added_total"
             [ "$count" -ge "$batch" ] && break
         done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
@@ -3287,8 +3497,66 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
 " 2>/dev/null
                 count=$((count + 1))
             fi
+
+            # FIZYCZNA MIGRACJA: sendTextMessage + :say w STARTUP
+            local _out _rc keys_added_total
+            keys_added_total=0
+
+            if grep -qE '([:.])sendTextMessage\s*\(|\bsendTextMessage\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_sendtext.py \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "startup.${safe}" \
+                    --backup-dir "$BACKUP_DIR/startup" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "startup_migrate_sendtext" "startup" "$file" "i18n_migrate_lua_sendtext.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "startup_validate_sendtext" "startup" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
+
+            if grep -qE ':say\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_say.py \
+                    --target creature \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "startup.${safe}" \
+                    --backup-dir "$BACKUP_DIR/startup" \
+                    --suffix "say" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "startup_migrate_say" "startup" "$file" "i18n_migrate_lua_say.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "startup_validate_say" "startup" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
             
-            mark_file_completed "$file" "talkactions" "1"
+            mark_file_completed "$file" "startup" "$keys_added_total"
             [ "$count" -ge "$batch" ] && break
         done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
         [ "$count" -ge "$batch" ] && break
@@ -4008,8 +4276,7 @@ import json
 import os
 import re
 import glob
-    import subprocess
-    import shlex
+import subprocess
 
 category = "$category"
 BATCH = int("$BATCH")
@@ -4027,7 +4294,14 @@ CATEGORY_DIRS = {
     "globalevents": ["data-otservbr-global/scripts/globalevents", "data-canary/scripts/globalevents"],
     "mounts": ["data/XML"],
     "dataroot": ["data"],
-    "server": ["src"]
+    "server": ["src"],
+
+    # OTClient/Testyy (instalka)
+    "otclient_modules": ["testyy/modules"],
+    "otclient_mods": ["testyy/mods"],
+    "otclient_data": ["testyy/data"],
+    "otclient_tools": ["testyy/tools"],
+    "otclient_src": ["testyy/src"],
 }
 
 dirs = CATEGORY_DIRS.get(category, [])
@@ -4053,7 +4327,14 @@ keys_added = 0
 files_processed = 0
 
 # Rozszerzenia plików
-extensions = [".lua"] if category not in ["mounts", "server"] else [".xml", ".cpp", ".hpp"]
+if category in ["mounts"]:
+    extensions = [".xml"]
+elif category in ["server", "otclient_src"]:
+    extensions = [".cpp", ".hpp"]
+elif category.startswith("otclient_"):
+    extensions = [".lua", ".otui", ".otmod"]
+else:
+    extensions = [".lua"]
 
 for dir_path in dirs:
     if not os.path.isdir(dir_path):
@@ -4079,11 +4360,13 @@ for dir_path in dirs:
         except Exception:
             continue
         
-        # Wyciągnij stringi + spróbuj FIZYCZNIE zmigrować sendTextMessage
+        # Wyciągnij stringi + spróbuj FIZYCZNIE zmigrować sendTextMessage / say / tr()
         basename = os.path.basename(filepath).replace('.lua', '').replace('.xml', '').replace('.cpp', '').replace('.hpp', '')
         safe_name = re.sub(r'[^a-z0-9_]', '_', basename.lower())
         
         local_keys = 0
+
+        file_changed_by_tool = False
 
         # 1) Lua: zamień :sendTextMessage(...) na :sendLocalizedTextMessage(...)
         if filepath.endswith('.lua') and 'sendTextMessage' in content:
@@ -4101,8 +4384,73 @@ for dir_path in dirs:
                 if m:
                     local_keys += int(m.group(1))
                     keys_added += int(m.group(1))
+                m2 = re.search(r'file_changed=([01])', out)
+                if m2 and m2.group(1) == '1':
+                    file_changed_by_tool = True
+                # Tool mógł dopisać klucze do JSON -> przeładuj
+                try:
+                    with open(json_file, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                except Exception:
+                    pass
             except subprocess.CalledProcessError:
                 # w razie błędu nie blokuj całej kategorii; zostaw tylko extraction
+                pass
+
+        # 2) Lua: zamień :say("...") na :sayLocalized("key", ...)
+        if filepath.endswith('.lua') and ':say' in content and not category.startswith('otclient_'):
+            key_prefix = f"{category}.{safe_name}"
+            cmd = [
+                'python3', 'tools/i18n_migrate_lua_say.py',
+                '--target', 'creature',
+                '--file', filepath,
+                '--json', json_file,
+                '--key-prefix', key_prefix,
+                '--backup-dir', os.path.join('backups', category),
+                '--suffix', 'say',
+            ]
+            try:
+                out = subprocess.check_output(cmd, stderr=subprocess.STDOUT, text=True)
+                m = re.search(r'keys_added=(\d+)', out)
+                if m:
+                    local_keys += int(m.group(1))
+                    keys_added += int(m.group(1))
+                m2 = re.search(r'file_changed=([01])', out)
+                if m2 and m2.group(1) == '1':
+                    file_changed_by_tool = True
+                try:
+                    with open(json_file, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                except Exception:
+                    pass
+            except subprocess.CalledProcessError:
+                pass
+
+        # 3) OTClient/Testyy: zamień tr("literal") -> tr("key") i dopisz do JSON
+        if category.startswith('otclient_') and ('tr(' in content):
+            key_prefix = f"{category}.{safe_name}"
+            cmd = [
+                'python3', 'tools/i18n_migrate_otclient_tr.py',
+                '--file', filepath,
+                '--json', json_file,
+                '--key-prefix', key_prefix,
+                '--backup-dir', os.path.join('backups', category),
+            ]
+            try:
+                out = subprocess.check_output(cmd, stderr=subprocess.STDOUT, text=True)
+                m = re.search(r'keys_added=(\d+)', out)
+                if m:
+                    local_keys += int(m.group(1))
+                    keys_added += int(m.group(1))
+                m2 = re.search(r'file_changed=([01])', out)
+                if m2 and m2.group(1) == '1':
+                    file_changed_by_tool = True
+                try:
+                    with open(json_file, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                except Exception:
+                    pass
+            except subprocess.CalledProcessError:
                 pass
         
         # Pattern: sendTextMessage(TYPE, "text")
@@ -4135,9 +4483,12 @@ for dir_path in dirs:
         # Zapisz marker
         processed.add(marker)
         
-        if local_keys > 0:
+        if local_keys > 0 or file_changed_by_tool:
             files_processed += 1
-            print(f"   📄 {basename}: +{local_keys} kluczy")
+            if local_keys > 0:
+                print(f"   📄 {basename}: +{local_keys} kluczy")
+            else:
+                print(f"   📄 {basename}: zmieniono plik (0 nowych kluczy)")
         
         if files_processed >= BATCH:
             break
@@ -5330,13 +5681,19 @@ I18N_DIR = "i18n"
 LANG_PRIORITY = ["pl", "de", "es", "pt", "fr", "it", "ru", "nl", "sv", "cs"]
 ALL_LANGUAGES = ["pl", "de", "es", "pt", "fr", "it", "ru", "uk", "nl", "sv", "da", "no", "fi", "cs", "sk", "hu", "ro", "bg", "el", "tr", "ar", "he", "hi", "zh", "ja", "ko", "th", "vi", "id", "ms"]
 
-# ============================================================================
-# PEŁNA DEFINICJA KATEGORII - WSZYSTKIE FOLDERY CANARY_TEST
-# ============================================================================
-CATEGORIES = {
-    # === NPC (priorytet 1) ===
-    "npc": {
-        "dirs": ["data-otservbr-global/npc", "data-canary/npc"],
+# ==========================================================================
+# SCOPE:
+# - server: serwer bez website + OTClient/testyy
+# - full: serwer + OTClient/testyy (bez website)
+# - all: wszystko
+# ==========================================================================
+SCOPE = (os.environ.get("I18N_SCOPE", "full") or "full").strip().lower()
+if SCOPE in ("server", "canary", "server_only", "server-only"):
+    excluded = {"php", "html"}
+    CATEGORIES = {k: v for k, v in CATEGORIES.items() if k not in excluded and not k.startswith("otclient_")}
+elif SCOPE in ("full", "installer", "server+installer"):
+    excluded = {"php", "html"}
+    CATEGORIES = {k: v for k, v in CATEGORIES.items() if k not in excluded}
         "patterns": [r'StdModule\.say', r'npcHandler:say\(', r'npcConfig\.voices'],
         "exclude_if": ["i18nKey", "NPC_LIB.i18n.npcSay"],
         "json": "npc.json",
@@ -6674,10 +7031,10 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                                 grep -qF "$f" "$PROCESSED_FILE" 2>/dev/null && continue
                                 grep -qF "$(pwd)/$f" "$PROCESSED_FILE" 2>/dev/null && continue
                                 
-                                # Szukaj sendTextMessage ze stringiem ("...")
+                                # Szukaj sendTextMessage i/lub :say (fizyczne migracje)
                                 # Nie pomijaj plików tylko dlatego, że mają już gdzieś sendLocalizedTextMessage
                                 # (mogą być częściowo zmigrowane).
-                                if grep -qE 'sendTextMessage\s*\([^,]+,\s*"' "$f" 2>/dev/null; then
+                                if grep -qE '([:.])sendTextMessage\s*\(|\bsendTextMessage\s*\(|:say\s*\(|npcHandler:say\s*\(' "$f" 2>/dev/null; then
                                     status_update_activity "running" "$CYCLE" "MIGRATION" "file" "scripts" "$f" "processing" "$COUNT" "${MODE_COUNT:-0}" "files" 0
                                     if ! process_scripts_file "$f"; then
                                         status_log_error "$CYCLE" "MIGRATION" "file" "scripts" "$f" "process_scripts_file failed" "continue"

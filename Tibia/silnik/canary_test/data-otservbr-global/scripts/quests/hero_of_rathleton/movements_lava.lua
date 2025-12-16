@@ -71,18 +71,18 @@ function lava.onStepIn(creature, item, position, fromPosition)
 		player:teleportTo(Position(33371, 31955, 15))
 		position:sendMagicEffect(CONST_ME_TELEPORT)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:say("You haven't permission to use this teleport.", TALKTYPE_MONSTER_SAY, false, nil, position)
+		player:sayLocalized("scripts.movements_lava.say_3", TALKTYPE_MONSTER_SAY, false, nil, position)
 		return true
 	end
 	if Game.getStorageValue(GlobalStorage.HeroRathleton.LavaRunning) == 1 then
-		player:say("Has someone trying active the machine. Try again later.", TALKTYPE_MONSTER_SAY, false, nil, position)
+		player:sayLocalized("scripts.movements_lava.say_2", TALKTYPE_MONSTER_SAY, false, nil, position)
 		player:teleportTo(Position(33371, 31955, 15))
 		position:sendMagicEffect(CONST_ME_TELEPORT)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		return true
 	end
 	if Game.getStorageValue(GlobalStorage.HeroRathleton.FourthMachines) < 7 then
-		player:say("Not enough energy to use this teleport!", TALKTYPE_MONSTER_SAY, false, nil, position)
+		player:sayLocalized("scripts.movements_lava.say_1", TALKTYPE_MONSTER_SAY, false, nil, position)
 		player:teleportTo(Position(33371, 31955, 15))
 		position:sendMagicEffect(CONST_ME_TELEPORT)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)

@@ -34,7 +34,7 @@ local encounter = Encounter("Magma Bubble", {
 
 function encounter:onReset(position)
 	encounter:removeMonsters()
-	bossZone:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("The Magma Bubble has been defeated. You have %i seconds to leave the room.", config.timeToLeftAfterKill))
+	bossZone:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.magma_bubble_fight.msg_1", {config.timeToLeftAfterKill})
 	self:addEvent(function(zn)
 		zn:refresh()
 		zn:removePlayers()

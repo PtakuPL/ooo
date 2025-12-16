@@ -7,7 +7,7 @@ function whatFoolishWorn.onUse(player, item, fromPosition, target, toPosition, i
 		end
 
 		player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.OldWornCloth, 1)
-		player:say("Amazing! That was quite fast!", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.action_worn_cloth.say_1", TALKTYPE_MONSTER_SAY)
 		toPosition:sendMagicEffect(CONST_ME_BLOCKHIT)
 		item:transform(143)
 		return true

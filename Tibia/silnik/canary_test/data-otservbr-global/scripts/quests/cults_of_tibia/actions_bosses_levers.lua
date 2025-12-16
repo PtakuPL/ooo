@@ -120,7 +120,7 @@ local function activateGeyser(player)
 				addEvent(function()
 					local player1 = Game.getPlayers()[1]
 					Game.createItem(25510, 1, geyserPos)
-					player1:say("SPLASH!", TALKTYPE_MONSTER_SAY, false, false, geyserPos)
+					player1:sayLocalized("scripts.actions_bosses_levers.say_1", TALKTYPE_MONSTER_SAY, false, false, geyserPos)
 					addEvent(function()
 						local check2 = Tile(Position(geyserPos)):getItemById(25510)
 						if check2 then

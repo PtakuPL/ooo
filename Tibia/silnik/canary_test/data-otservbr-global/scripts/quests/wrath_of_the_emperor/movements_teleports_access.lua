@@ -59,7 +59,7 @@ local function tpX(i, player, position)
 				config[i].itemPos:removeItem(11673, 1)
 				return config[i].destinationA
 			else
-				player:say("This teleporter constantly flickers. It seems to be instable and completely unworking.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.movements_teleports_access.say_1", TALKTYPE_MONSTER_SAY)
 				return false
 			end
 		else

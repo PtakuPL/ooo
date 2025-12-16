@@ -60,3 +60,5 @@
 {"category": "-", "cycle": 1, "detail": "sleep_seconds=300", "file": "-", "phase": "IDLE", "result": "ok", "stage": "IDLE_SLEEP", "t": "2025-12-16T04:59:39Z"}
 {"category": "scripts", "cycle": 1, "delta": {"files_changed": 0, "keys_added": 2}, "detail": "migration finished", "file": "-", "phase": "MIGRATION", "result": "ok", "stage": "category_done", "t": "2025-12-16T05:00:24Z"}
 {"category": "scripts", "cycle": 1, "delta": {"files_changed": 0, "keys_added": 0}, "detail": "migration finished", "file": "-", "phase": "MIGRATION", "result": "ok", "stage": "category_done", "t": "2025-12-16T05:22:07Z"}
+{"category": "scripts", "cycle": 1, "delta": {"files_changed": 10, "keys_added": 10}, "detail": "migration finished", "file": "-", "phase": "MIGRATION", "result": "ok", "stage": "category_done", "t": "2025-12-16T05:23:05Z"}
+{"category": "scripts", "cycle": 1, "delta": {"files_changed": 45, "keys_added": 79}, "detail": "migration finished", "file": "-", "phase": "MIGRATION", "result": "ok", "stage": "category_done", "t": "2025-12-16T05:49:36Z"}

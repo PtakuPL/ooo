@@ -7,7 +7,7 @@ function wrathEmperorMiss3Keeper.onUse(player, item, fromPosition, target, toPos
 	if item.itemid == 11364 and target.actionid == 8026 then
 		if Game.getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission03) < 5 then
 			Game.setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission03, math.max(0, Game.getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission03)) + 1)
-			player:say("The plant twines and twiggles even more than before, it almost looks as it would scream great pain.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_mission03_the_keeper.say_1", TALKTYPE_MONSTER_SAY)
 		elseif Game.getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission03) == 5 then
 			player:removeItem(11364, 1)
 			Game.setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission03, 6)

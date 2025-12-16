@@ -95,7 +95,7 @@ function soulPrism.onUse(player, item, fromPosition, target, toPosition, isHotke
 	else
 		player:addItem(newSoulCoreItem, 1)
 		target:remove(1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You have received a %s soul core.", newMonsterType:getName()))
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.soul_prism.msg_1", {newMonsterType:getName()})
 	end
 	item:remove(1)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)

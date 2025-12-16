@@ -21,9 +21,9 @@ function whatFoolishCat.onUse(player, item, fromPosition, target, toPosition, is
 	end
 
 	player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.CatBasket, 1)
-	player:say("The queen's cat is not amused!", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.action_cat_basket.say_2", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_DRAWBLOOD)
-	player:say("Fchhhhh", TALKTYPE_MONSTER_SAY, false, player, effectPositions[1])
+	player:sayLocalized("scripts.action_cat_basket.say_1", TALKTYPE_MONSTER_SAY, false, player, effectPositions[1])
 
 	for i = 1, #effectPositions do
 		effectPositions[i]:sendMagicEffect(CONST_ME_POFF)

@@ -15,7 +15,7 @@ function mirror.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 				itemToRemove:remove()
 				toPosition:sendMagicEffect(CONST_ME_MAGIC_POWDER)
 				player:setStorageValue(Storage.Quest.U8_1.ToBlindTheEnemy.Questline, 2)
-				player:say("KABOOM !!", TALKTYPE_MONSTER_SAY, false, player, toPosition)
+				player:sayLocalized("scripts.mirror.say_1", TALKTYPE_MONSTER_SAY, false, player, toPosition)
 				addEvent(revertItem, 60 * 1000, toPosition, 132)
 				item:remove(1)
 			end

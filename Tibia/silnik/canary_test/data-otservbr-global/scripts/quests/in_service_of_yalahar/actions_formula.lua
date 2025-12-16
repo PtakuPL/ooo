@@ -6,7 +6,7 @@ function inServiceYalaharFormula.onUse(player, item, fromPosition, target, toPos
 	player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.GoodSide, 0)
 	item:remove(1)
 	toPosition:sendMagicEffect(CONST_ME_MAGIC_GREEN)
-	player:say("You burned the alchemist formula.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.actions_formula.say_1", TALKTYPE_MONSTER_SAY)
 	return true
 end
 

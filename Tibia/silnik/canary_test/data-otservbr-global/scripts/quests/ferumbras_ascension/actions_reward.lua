@@ -28,7 +28,7 @@ function ferumbrasAscendantReward.onUse(player, item, fromPosition, target, toPo
 	if player:addItemEx(bag) ~= RETURNVALUE_NOERROR then
 		local weight = bag:getWeight()
 		if player:getFreeCapacity() < weight then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You have found %s weighing %.2f oz. You have no capacity.", bag:getName(), (weight / 100)))
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_reward.msg_1", {bag:getName(), (weight / 100)})
 		else
 			player:sendCancelMessage("You have found a bag, but you have no room to take it.")
 		end

@@ -5,7 +5,7 @@ function inServiceYalaharMatrix.onUse(player, item, fromPosition, target, toPosi
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.MatrixState, 1)
 			item:remove(1)
 			toPosition:sendMagicEffect(CONST_ME_MAGIC_BLUE)
-			player:say("The machine was activated.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_matrix.say_1", TALKTYPE_MONSTER_SAY)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 46)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission08, 3) -- StorageValue for Questlog "Mission 08: Dangerous Machinations"
 		end

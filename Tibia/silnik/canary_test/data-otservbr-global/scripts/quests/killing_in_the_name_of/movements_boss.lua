@@ -414,7 +414,7 @@ function boss.onStepIn(creature, item, position, fromPosition)
 				return true
 			end
 			addEvent(clearBossRoom, 60 * 10 * 1000, player.uid, bosses[a].centerPosition, false, bosses[a].rangeX, bosses[a].rangeY, fromPosition)
-			player:say("You have ten minutes to kill and loot this boss. Otherwise you will lose that chance and will be kicked out.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.movements_boss.say_1", TALKTYPE_MONSTER_SAY)
 		end
 	end
 	return true

@@ -327,16 +327,16 @@
     },
     "scripts": {
       "backoff": {
-        "consecutive_zeros": 1,
-        "skip_until_utc": "2025-12-16T05:27:07Z"
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
       },
       "last": {
         "delta": {
-          "files_migrated": 0
+          "files_migrated": 124
         },
-        "updated_at_utc": "2025-12-16T05:22:07Z"
+        "updated_at_utc": "2025-12-16T05:49:36Z"
       },
-      "status": "backoff"
+      "status": "idle"
     },
     "server": {
       "backoff": {
@@ -404,11 +404,11 @@
       "status": "backoff"
     }
   },
-  "generated_at_utc": "2025-12-16T05:22:08Z",
+  "generated_at_utc": "2025-12-16T05:49:36Z",
   "global": {
-    "en_keys_total": 21696,
+    "en_keys_total": 21785,
     "errors_total": 0,
-    "files_processed_total": 2303,
+    "files_processed_total": 2403,
     "languages_total": 53
   },
   "legacy": {
@@ -424,14 +424,14 @@
         "new_files_detected": 152,
         "quality_issues": 2875
       },
-      "last_update": "2025-12-16T06:22:08.108334",
+      "last_update": "2025-12-16T06:49:36.359278",
       "migration": {
         "batch_size": 0,
         "current_category": "scripts",
-        "files_scanned": 47,
-        "files_with_keys": 27,
-        "files_without_keys": 20,
-        "keys_extracted": 45
+        "files_scanned": 147,
+        "files_with_keys": 82,
+        "files_without_keys": 65,
+        "keys_extracted": 134
       },
       "mode": "MIGRATION",
       "total_cycles": 1,
@@ -465,11 +465,11 @@
       "stage": "cycle_end"
     },
     "cycle": 1,
-    "heartbeat_at_utc": "2025-12-16T05:22:08Z",
+    "heartbeat_at_utc": "2025-12-16T05:49:36Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",
-    "pid": 175094,
+    "pid": 202936,
     "status": "running",
     "version": "unknown"
   }

@@ -35,7 +35,7 @@ function deathEvent.onDeath(creature, _corpse, _lastHitKiller, mostDamageKiller)
 		end
 	end
 	player:setStorageValue(Storage.Quest.U8_0.BarbarianArena.PitDoor, pit + 1)
-	player:say("Victory! Head through the new teleporter into the next room.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.creaturescripts_arena_kill.say_1", TALKTYPE_MONSTER_SAY)
 	return true
 end
 

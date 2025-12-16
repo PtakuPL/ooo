@@ -22,7 +22,7 @@ local function clearArea()
 		if spectator:isPlayer() then
 			spectator:teleportTo(Position(33573, 31949, 15))
 			spectator:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			spectator:say("Time out!", TALKTYPE_MONSTER_SAY)
+			spectator:sayLocalized("scripts.movements_glooth_horror.say_4", TALKTYPE_MONSTER_SAY)
 		elseif spectator:isMonster() then
 			spectator:remove()
 		end
@@ -42,18 +42,18 @@ function gloothHorror.onStepIn(creature, item, position, fromPosition)
 		player:teleportTo(Position(33571, 31947, 15))
 		position:sendMagicEffect(CONST_ME_TELEPORT)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:say("You haven't permission to use this teleport.", TALKTYPE_MONSTER_SAY, false, nil, position)
+		player:sayLocalized("scripts.movements_glooth_horror.say_3", TALKTYPE_MONSTER_SAY, false, nil, position)
 		return true
 	end
 	if Game.getStorageValue(GlobalStorage.HeroRathleton.HorrorRunning) == 1 then
-		player:say("Has someone fighting against Glooth Horror. \nTry again later.", TALKTYPE_MONSTER_SAY, false, nil, position)
+		player:sayLocalized("scripts.movements_glooth_horror.say_2", TALKTYPE_MONSTER_SAY, false, nil, position)
 		player:teleportTo(Position(33571, 31947, 15))
 		position:sendMagicEffect(CONST_ME_TELEPORT)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		return true
 	end
 	if Game.getStorageValue(GlobalStorage.HeroRathleton.SecondMachines) < 8 then
-		player:say("Not enough energy to use this teleport!", TALKTYPE_MONSTER_SAY, false, nil, position)
+		player:sayLocalized("scripts.movements_glooth_horror.say_1", TALKTYPE_MONSTER_SAY, false, nil, position)
 		player:teleportTo(Position(33571, 31947, 15))
 		position:sendMagicEffect(CONST_ME_TELEPORT)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)

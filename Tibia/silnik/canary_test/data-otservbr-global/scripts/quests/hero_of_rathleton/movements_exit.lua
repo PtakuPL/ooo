@@ -8,7 +8,7 @@ function exit.onStepIn(creature, item, position, fromPosition)
 
 	player:teleportTo(Position(33623, 31901, 6))
 	player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-	player:say("Slurp!", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.movements_exit.say_1", TALKTYPE_MONSTER_SAY)
 	return true
 end
 

@@ -8,7 +8,7 @@ function whatFoolishContract.onUse(player, item, fromPosition, target, toPositio
 		return false
 	end
 
-	player:say("You sign the contract", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.action_contract.say_1", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 	item:remove()
 	target:transform(128)

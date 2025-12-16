@@ -23,7 +23,7 @@ local function clearArea()
 		if spectator:isPlayer() then
 			spectator:teleportTo(Position(33724, 31953, 14))
 			spectator:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			spectator:say("Time out!", TALKTYPE_MONSTER_SAY)
+			spectator:sayLocalized("scripts.movements_deep_terror.say_3", TALKTYPE_MONSTER_SAY)
 		elseif spectator:isMonster() then
 			spectator:remove()
 		end
@@ -40,14 +40,14 @@ function deepTerror.onStepIn(creature, item, position, fromPosition)
 	end
 
 	if Game.getStorageValue(GlobalStorage.HeroRathleton.DeepRunning) == 1 then
-		player:say("Has someone fighting against Deep Terror. \nTry again later.", TALKTYPE_MONSTER_SAY, false, nil, position)
+		player:sayLocalized("scripts.movements_deep_terror.say_2", TALKTYPE_MONSTER_SAY, false, nil, position)
 		player:teleportTo(Position(33724, 31951, 14))
 		position:sendMagicEffect(CONST_ME_TELEPORT)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		return true
 	end
 	if Game.getStorageValue(GlobalStorage.HeroRathleton.FirstMachines) < 8 then
-		player:say("Not enough energy to use this teleport!", TALKTYPE_MONSTER_SAY, false, nil, position)
+		player:sayLocalized("scripts.movements_deep_terror.say_1", TALKTYPE_MONSTER_SAY, false, nil, position)
 		player:teleportTo(Position(33724, 31951, 14))
 		position:sendMagicEffect(CONST_ME_TELEPORT)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)

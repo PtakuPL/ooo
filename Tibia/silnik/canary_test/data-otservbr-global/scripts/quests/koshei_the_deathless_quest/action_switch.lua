@@ -29,7 +29,7 @@ function kosheiSwitch.onUse(player, item, fromPosition, target, toPosition, isHo
 	end
 
 	if not statuesInOrder or Tile(coffinPosition):getItemById(167) then
-		player:say("Nothing happens", TALKTYPE_MONSTER_SAY, false, player, toPosition)
+		player:sayLocalized("scripts.action_switch.say_2", TALKTYPE_MONSTER_SAY, false, player, toPosition)
 		return true
 	end
 
@@ -37,7 +37,7 @@ function kosheiSwitch.onUse(player, item, fromPosition, target, toPosition, isHo
 	if coffinItem then
 		coffinItem:transform(167)
 		addEvent(revertCoffin, 2 * 60 * 1000)
-		player:say("CLICK", TALKTYPE_MONSTER_SAY, false, player, coffinPosition)
+		player:sayLocalized("scripts.action_switch.say_1", TALKTYPE_MONSTER_SAY, false, player, coffinPosition)
 	end
 	return true
 end

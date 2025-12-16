@@ -23,7 +23,7 @@ function inServiceYalaharGhost.onUse(player, item, fromPosition, target, toPosit
 
 	toPosition:sendMagicEffect(CONST_ME_ENERGYHIT)
 	item:remove()
-	player:say("The ghost charm is charging.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.actions_ghost.say_1", TALKTYPE_MONSTER_SAY)
 
 	if target.itemid == 8859 then
 		player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 37)

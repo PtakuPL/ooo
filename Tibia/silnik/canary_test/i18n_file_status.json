@@ -845,10 +845,1810 @@
       "overall_status": "completed",
       "completed_at": "2025-12-16T06:00:24.524509",
       "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/cults_of_tibia/actions_cult_symbol.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:42.647481",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/cults_of_tibia/movements_tar.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:42.831368",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/cults_of_tibia/movements_ice.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:43.216576",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/svargrond_arena/movements_arena_pit.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:43.828852",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/svargrond_arena/movements_arena_enter.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:44.035025",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/kilmaresh_quest/1-fafnars-wrath/7-four-masks.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:45.170785",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/kilmaresh_quest/actions_scissorsfun.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:45.397286",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/rotten_blood_quest/actions_entrances.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:47.015655",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_secret_library_quest/liquid_death/movements_teleportTo.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:50.590090",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_secret_library_quest/liquid_death/actions_usableItens.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:50.791788",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_secret_library_quest/liquid_death/movements_bossWay.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:50.995210",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/adventures_of_galthen/actions_galthens_tree.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:51.392082",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/ferumbras_ascension/actions_reward.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:51.851311",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/ferumbras_ascension/movements_blue_gem.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:52.169284",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/ferumbras_ascension/movements_green_gem.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:52.454460",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/ferumbras_ascension/movements_red_gem.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:53.010229",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_first_dragon/movements_zorvorax_secrets.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:53.639744",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/spike_tasks/actions_spirit_shovel.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:53.918158",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/forgotten_knowledge/actions_lantern.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:54.287798",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/forgotten_knowledge/actions_servants_mechanism.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:54.634734",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_rookie_guard/mission02_defence.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:55.009570",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_rookie_guard/mission05_web_terror.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:55.235426",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_rookie_guard/mission11_sweet_poison.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:55.448179",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_rookie_guard/missions.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:55.656842",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_rookie_guard/mission04_home_brewed.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:55.875917",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/grave_danger_quest/actions_grave_sanctify.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:56.216068",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/threatened_dreams/action_starlight_vial.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:56.517856",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/threatened_dreams/action_sun_catcher.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:56.722544",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/threatened_dreams/movement_swan_feathers.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:56.944046",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/threatened_dreams/action_moon_mirror.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:57.162343",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/threatened_dreams/action_fairies_release.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:57.365669",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/threatened_dreams/event_raven_herb_bush.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:57.591533",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/soulpit/soul_prism.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:57.949218",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/soulpit/exalted_core.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:58.210942",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/lions_rock/actions_lions_rock.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:58.434754",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/lions_rock/movements_lions_rock.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:58.635783",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/primal_ordeal_quest/magma_bubble_fight.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:22:58.964960",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/marapur/actions_boss_timira_fight.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:23:00.018121",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_hunt_for_the_sea_serpent/actions_bait.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:23:00.299991",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_gravedigger_of_drefia/actions_monks.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:23:00.853827",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_gravedigger_of_drefia/actions_blood.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:23:01.189856",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_dream_courts_quest/actions_containerRewards.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:23:02.216256",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_dream_courts_quest/actions_sequenceSkulls.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:23:02.649476",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_dream_courts_quest/movements_acessTeleports.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:23:02.949530",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_dream_courts_quest/actions_sequenceBooks.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:23:03.163242",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_dream_courts_quest/actions_dreamTalisman.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:23:03.837554",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/actions/worldchanges/deeplings/bosses_reward.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:23:04.814072",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/actions/other/gems.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:23:05.090468",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/actions/other/world_board.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:23:05.316811",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/actions/other/construction_kits.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:23:05.608360",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/cults_of_tibia/creaturescripts_evaporate.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:15.533505",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/cults_of_tibia/movements_task_teleport.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:15.930808",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/cults_of_tibia/creaturescripts_splash.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:16.308694",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/cults_of_tibia/creaturescripts_sandking.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 3
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:16.708688",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/cults_of_tibia/actions_bosses_levers.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:17.180114",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/koshei_the_deathless_quest/action_boss.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:17.703786",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/koshei_the_deathless_quest/action_switch.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 2
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:18.120028",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/hero_of_rathleton/movements_deep_terror.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 3
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:18.616787",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/hero_of_rathleton/movements_glooth_horror.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 4
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:19.104642",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/hero_of_rathleton/actions_machines_lava.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 3
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:19.594277",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/hero_of_rathleton/actions_machines_glooth_horror.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 3
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:19.959286",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/hero_of_rathleton/actions_machines_deep_terror.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 3
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:20.355813",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/hero_of_rathleton/movements_fast_way.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:20.735520",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/hero_of_rathleton/actions_machines_professor_maxxen.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 3
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:21.101091",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/hero_of_rathleton/movements_exit.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:21.459368",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/hero_of_rathleton/movements_professor_maxxen.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 4
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:21.822915",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/hero_of_rathleton/movements_lava.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 3
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:22.158945",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_shattered_isles_quest/action_nargor_maps.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:22.590843",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/killing_in_the_name_of/movements_boss.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:22.996710",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/svargrond_arena/creaturescripts_arena_kill.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:23.391857",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_postman_missions_quest/actions_present.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:23.779152",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/what_a_foolish_quest/movements_destroy_pies.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 2
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:24.161848",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/what_a_foolish_quest/action_contract.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:24.532151",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/what_a_foolish_quest/action_watch.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:24.852256",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/what_a_foolish_quest/action_cushion.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 2
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:25.180303",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/what_a_foolish_quest/action_crate.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:25.508400",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/what_a_foolish_quest/action_disguise.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:25.792129",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/what_a_foolish_quest/action_cat_basket.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 2
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:26.102725",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/what_a_foolish_quest/action_worn_cloth.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:26.393326",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/wrath_of_the_emperor/movements_crate.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 3
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:26.711336",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/wrath_of_the_emperor/actions_mission01_crate.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:27.012128",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/wrath_of_the_emperor/creaturescripts_zalamon_kill.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:27.544991",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/wrath_of_the_emperor/movements_teleports_access.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:27.993801",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/wrath_of_the_emperor/actions_mission10_a_message_of_freedom_sceptre.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 6
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:28.349931",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/wrath_of_the_emperor/actions_mission03_the_keeper.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:28.706325",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/wrath_of_the_emperor/actions_mission02_firstcontact_repair_teleport.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 4
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:29.167084",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_thieves_guild_quest/actions_fish_napping_door.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:29.475262",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/the_thieves_guild_quest/actions_fish_napping_key.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:29.846495",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/in_service_of_yalahar/actions_ghost.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:30.209090",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/in_service_of_yalahar/actions_yalahar_machine_war_golems.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:31.637043",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/in_service_of_yalahar/movements_demon_teleport.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:32.296579",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/in_service_of_yalahar/movements_morik.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:32.721925",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/in_service_of_yalahar/creaturescritps_azerus_kill.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:33.115600",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/in_service_of_yalahar/actions_matrix.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:33.393017",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/in_service_of_yalahar/creaturescritps_diseased_trio_kill.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:33.617232",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/in_service_of_yalahar/movements_quara_vortex.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:34.066571",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/in_service_of_yalahar/movements_last_fight_teleport.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:34.893287",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/in_service_of_yalahar/quara_leader_kill.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 0
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:35.193371",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/in_service_of_yalahar/actions_formula.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:35.492616",
+      "category": "scripts"
+    },
+    "data-otservbr-global/scripts/quests/to_blind_the_enemy_quest/mirror.lua": {
+      "stages": {
+        "1_started": {
+          "status": "completed",
+          "type": "scripts"
+        },
+        "5_extraction_en": {
+          "status": "completed",
+          "keys_added": 1
+        },
+        "8_sync": {
+          "status": "completed"
+        }
+      },
+      "overall_status": "completed",
+      "completed_at": "2025-12-16T06:49:35.835268",
+      "category": "scripts"
     }
   },
   "global_stats": {
-    "files_completed": 47,
+    "files_completed": 147,
     "total_keys": 0
   }
 }

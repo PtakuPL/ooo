@@ -57,7 +57,7 @@ function telescope.onUse(player, item, fromPosition, target, toPosition, isHotke
 				randDirection = math.random(#words.direction)
 				phase = words.phase[randPhase]
 				direction = words.direction[randDirection]
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You see %s under the surface%s.", phase, direction))
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_bait.msg_1", {phase, direction})
 				player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Direction, randDirection)
 				if randBait == 2 then
 					player:setStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Bait, 0)

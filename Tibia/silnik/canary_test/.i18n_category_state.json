@@ -10,8 +10,7 @@
     "creaturescripts": 1765860306.6185336,
     "globalevents": 1765860310.927419,
     "items": 1765860320.0957081,
-    "mounts": 1765860325.184398,
-    "scripts": 1765862827.924359
+    "mounts": 1765860325.184398
   },
   "last_processed": {
     "npc": {
@@ -19,8 +18,8 @@
       "timestamp": 1765860204.2901607
     },
     "scripts": {
-      "count": 0,
-      "timestamp": 1765862527.9243548
+      "count": 124,
+      "timestamp": 1765864176.1741755
     },
     "monsters": {
       "count": 0,
@@ -141,7 +140,7 @@
   },
   "consecutive_zeros": {
     "npc": 2,
-    "scripts": 1,
+    "scripts": 0,
     "monsters": 1,
     "actions": 0,
     "quests": 1,
@@ -176,7 +175,7 @@
     "monsters": 349888,
     "mounts": -43324,
     "npc": 4,
-    "scripts": 28,
+    "scripts": 172,
     "actions": 11
   },
   "migrations_done": false

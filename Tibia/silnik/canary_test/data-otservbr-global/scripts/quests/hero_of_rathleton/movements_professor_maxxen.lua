@@ -37,7 +37,7 @@ local function clearArea()
 		if spectator:isPlayer() then
 			spectator:teleportTo(Position(33661, 32058, 15))
 			spectator:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			spectator:say("Time out!", TALKTYPE_MONSTER_SAY)
+			spectator:sayLocalized("scripts.movements_professor_maxxen.say_4", TALKTYPE_MONSTER_SAY)
 		elseif spectator:isMonster() then
 			spectator:remove()
 		end
@@ -57,18 +57,18 @@ function professorMaxxen.onStepIn(creature, item, position, fromPosition)
 		player:teleportTo(Position(33661, 32058, 15))
 		position:sendMagicEffect(CONST_ME_TELEPORT)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:say("You haven't permission to use this teleport.", TALKTYPE_MONSTER_SAY, false, nil, position)
+		player:sayLocalized("scripts.movements_professor_maxxen.say_3", TALKTYPE_MONSTER_SAY, false, nil, position)
 		return true
 	end
 	if Game.getStorageValue(GlobalStorage.HeroRathleton.MaxxenRunning) == 1 then
-		player:say("Has someone fighting against Professor Maxxen.\nTry again later.", TALKTYPE_MONSTER_SAY, false, nil, position)
+		player:sayLocalized("scripts.movements_professor_maxxen.say_2", TALKTYPE_MONSTER_SAY, false, nil, position)
 		player:teleportTo(Position(33661, 32058, 15))
 		position:sendMagicEffect(CONST_ME_TELEPORT)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		return true
 	end
 	if Game.getStorageValue(GlobalStorage.HeroRathleton.ThirdMachines) < 8 then
-		player:say("Not enough energy to use this teleport!", TALKTYPE_MONSTER_SAY, false, nil, position)
+		player:sayLocalized("scripts.movements_professor_maxxen.say_1", TALKTYPE_MONSTER_SAY, false, nil, position)
 		player:teleportTo(Position(33661, 32058, 15))
 		position:sendMagicEffect(CONST_ME_TELEPORT)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)

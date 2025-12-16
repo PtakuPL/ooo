@@ -59,11 +59,7 @@ function greenGem.onStepIn(creature, item, position, fromPosition)
 		player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Elements.Second, 3) -- blue
 		player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Elements.Third, 1) -- red
 		player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Elements.Four, 6) -- ice
-		player:sendTextMessage(
-			MESSAGE_EVENT_ADVANCE,
-			"You hear a whisper: \z
-		'You will not be guided but your path shines in the colours green, blue and red. Heed this hierarchy.'"
-		)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.movements_green_gem.msg_1")
 		if not leverFirst or not leverSecond or not leverThird or not leverFour then
 			return false
 		end

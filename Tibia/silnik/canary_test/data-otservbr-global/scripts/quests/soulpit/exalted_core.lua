@@ -82,7 +82,7 @@ function exaltedCore.onUse(player, item, fromPosition, target, toPosition, isHot
 
 	player:addItem(newSoulCoreItem, 1)
 	target:remove(1)
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You have received a %s soul core.", newMonsterType:getName()))
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.exalted_core.msg_1", {newMonsterType:getName()})
 	item:remove(1)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 	return true

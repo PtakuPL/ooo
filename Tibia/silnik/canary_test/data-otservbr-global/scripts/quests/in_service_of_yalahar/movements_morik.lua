@@ -10,11 +10,7 @@ function morik.onStepIn(creature, item, position, fromPosition)
 		-- StorageValue for Questlog 'Mission 10: The Final Battle'
 		player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission10, 3)
 		player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 52)
-		player:say(
-			"It seems by defeating Azerus you have stopped this army from entering your world! \z
-			Better leave this ghastly place forever.",
-			TALKTYPE_MONSTER_SAY
-		)
+		player:sayLocalized("scripts.movements_morik.say_1", TALKTYPE_MONSTER_SAY)
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 	end
 	return true

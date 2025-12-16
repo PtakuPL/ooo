@@ -221,7 +221,7 @@ function catchPlayer(player)
 	player:removeItem(11328, 1)
 	player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.GuardcaughtYou, 1)
 	player:teleportTo({ x = 33361, y = 31206, z = 8 }, false)
-	player:say("The guards have spotted you. You were forcibly dragged into a small cell. It looks like you need to build another disguise.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.movements_crate.say_3", TALKTYPE_MONSTER_SAY)
 	return true
 end
 
@@ -258,7 +258,7 @@ function crate.onStepIn(creature, item, position, fromPosition, toPosition)
 			end
 		elseif j >= 21 and j <= 25 then
 			if player:getPosition() == Position(positions[j]) and player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Message) ~= 1 then
-				player:say("Guards heavily patrol this area. Try to stay hidden and do not draw any attention to yourself by trying to attack.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.movements_crate.say_2", TALKTYPE_MONSTER_SAY)
 				player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Message, 1)
 			end
 		elseif j >= 26 and j <= 175 then
@@ -286,7 +286,7 @@ function crate.onStepIn(creature, item, position, fromPosition, toPosition)
 		elseif j == 205 then
 			if player:getPosition() == Position(positions[j]) then
 				if player:removeCondition(CONDITION_OUTFIT) then
-					player:say("On reaching the watchtower you remove your temporary disguise.", TALKTYPE_MONSTER_SAY)
+					player:sayLocalized("scripts.movements_crate.say_1", TALKTYPE_MONSTER_SAY)
 				end
 			end
 		end

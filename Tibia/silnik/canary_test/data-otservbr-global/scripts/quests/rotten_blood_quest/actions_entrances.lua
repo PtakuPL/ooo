@@ -83,7 +83,7 @@ function bakragoreEntrance.onUse(player, item, fromPosition, target, toPosition,
 
 	local taints = player:kv():scoped("rotten-blood-quest"):get("taints") or 0
 	if taints < 4 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You have %i taints.", taints))
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_entrances.msg_1", {taints})
 		player:teleportTo(fromPosition, true)
 		return false
 	end

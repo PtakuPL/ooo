@@ -32,7 +32,7 @@ local function spawnSandBoss(name, frompos, topos)
 		boss:registerEvent("SandkingThink")
 	end
 	Game.setStorageValue("sandking", str + 1)
-	boss:say("THE BROOD RETREATS AND THE SANDKING REMERGES TO PROTECT HIS OFFSPRING!", TALKTYPE_MONSTER_SAY)
+	boss:sayLocalized("scripts.creaturescripts_sandking.say_3", TALKTYPE_MONSTER_SAY)
 	return true
 end
 local function spawnSandMonster(name, _time)
@@ -59,7 +59,7 @@ function sandkingThink.onThink(creature)
 	local str = Game.getStorageValue("sandking")
 	if str <= 3 then
 		if (maxhealth * 0.95) > creature:getHealth() then
-			creature:say("THE SANDKING VANISHES INTO THE SAND AND HIS BROOD EMERGES!", TALKTYPE_MONSTER_SAY)
+			creature:sayLocalized("scripts.creaturescripts_sandking.say_2", TALKTYPE_MONSTER_SAY)
 			creature:remove()
 			local positions = {
 				Position(33095, 31854, 15),
@@ -76,7 +76,7 @@ function sandkingThink.onThink(creature)
 	elseif str == 4 then
 		local tm = os.time()
 		if (maxhealth * 0.50) > creature:getHealth() then
-			creature:say("THE SANDKING VANISHES INTO THE SAND AND HIS BROOD EMERGES!", TALKTYPE_MONSTER_SAY)
+			creature:sayLocalized("scripts.creaturescripts_sandking.say_1", TALKTYPE_MONSTER_SAY)
 			creature:remove()
 			local ps = {
 				Position(33097, 31857, 15),

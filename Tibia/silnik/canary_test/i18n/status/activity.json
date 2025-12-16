@@ -3,7 +3,7 @@
   "cycle": 1,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2025-12-16T05:22:08Z",
+  "generated_at_utc": "2025-12-16T05:49:36Z",
   "message": "cycle end",
   "phase": "MIGRATION",
   "progress": {
@@ -20,7 +20,7 @@
       "phase": "MIGRATION",
       "result": "ok",
       "stage": "cycle_end",
-      "t": "2025-12-16T05:22:08Z"
+      "t": "2025-12-16T05:49:36Z"
     },
     {
       "action": "update",
@@ -30,87 +30,87 @@
       "phase": "MIGRATION",
       "result": "ok",
       "stage": "migration_done",
-      "t": "2025-12-16T05:22:08Z"
+      "t": "2025-12-16T05:49:36Z"
     },
     {
       "action": "update",
       "category": "scripts",
       "cycle": 1,
-      "file": "-",
-      "phase": "MIGRATION",
-      "result": "ok",
-      "stage": "migration_start",
-      "t": "2025-12-16T05:21:50Z"
-    },
-    {
-      "action": "update",
-      "category": "scripts",
-      "cycle": 1,
-      "file": "-",
-      "phase": "MIGRATION",
-      "result": "ok",
-      "stage": "dispatch",
-      "t": "2025-12-16T05:21:50Z"
-    },
-    {
-      "action": "update",
-      "category": "-",
-      "cycle": 1,
-      "file": "-",
-      "phase": "IDLE",
-      "result": "ok",
-      "stage": "cycle_start",
-      "t": "2025-12-16T05:21:50Z"
-    },
-    {
-      "action": "update",
-      "category": "scripts",
-      "cycle": 1,
-      "file": "-",
-      "phase": "MIGRATION",
-      "result": "ok",
-      "stage": "stop_after_cycle",
-      "t": "2025-12-16T05:00:26Z"
-    },
-    {
-      "action": "update",
-      "category": "scripts",
-      "cycle": 1,
-      "file": "-",
-      "phase": "MIGRATION",
-      "result": "ok",
-      "stage": "cycle_end",
-      "t": "2025-12-16T05:00:25Z"
-    },
-    {
-      "action": "update",
-      "category": "scripts",
-      "cycle": 1,
-      "file": "-",
-      "phase": "MIGRATION",
-      "result": "ok",
-      "stage": "migration_done",
-      "t": "2025-12-16T05:00:24Z"
-    },
-    {
-      "action": "update",
-      "category": "scripts",
-      "cycle": 1,
-      "file": "data-canary/scripts/creaturescripts/free_quest.lua",
+      "file": "data-otservbr-global/scripts/quests/to_blind_the_enemy_quest/mirror.lua",
       "phase": "MIGRATION",
       "result": "ok",
       "stage": "file",
-      "t": "2025-12-16T05:00:24Z"
+      "t": "2025-12-16T05:49:35Z"
     },
     {
       "action": "update",
       "category": "scripts",
       "cycle": 1,
-      "file": "-",
+      "file": "data-otservbr-global/scripts/quests/in_service_of_yalahar/actions_formula.lua",
       "phase": "MIGRATION",
       "result": "ok",
-      "stage": "migration_start",
-      "t": "2025-12-16T05:00:10Z"
+      "stage": "file",
+      "t": "2025-12-16T05:49:35Z"
+    },
+    {
+      "action": "update",
+      "category": "scripts",
+      "cycle": 1,
+      "file": "data-otservbr-global/scripts/quests/in_service_of_yalahar/quara_leader_kill.lua",
+      "phase": "MIGRATION",
+      "result": "ok",
+      "stage": "file",
+      "t": "2025-12-16T05:49:34Z"
+    },
+    {
+      "action": "update",
+      "category": "scripts",
+      "cycle": 1,
+      "file": "data-otservbr-global/scripts/quests/in_service_of_yalahar/movements_last_fight_teleport.lua",
+      "phase": "MIGRATION",
+      "result": "ok",
+      "stage": "file",
+      "t": "2025-12-16T05:49:34Z"
+    },
+    {
+      "action": "update",
+      "category": "scripts",
+      "cycle": 1,
+      "file": "data-otservbr-global/scripts/quests/in_service_of_yalahar/movements_quara_vortex.lua",
+      "phase": "MIGRATION",
+      "result": "ok",
+      "stage": "file",
+      "t": "2025-12-16T05:49:33Z"
+    },
+    {
+      "action": "update",
+      "category": "scripts",
+      "cycle": 1,
+      "file": "data-otservbr-global/scripts/quests/in_service_of_yalahar/creaturescritps_diseased_trio_kill.lua",
+      "phase": "MIGRATION",
+      "result": "ok",
+      "stage": "file",
+      "t": "2025-12-16T05:49:33Z"
+    },
+    {
+      "action": "update",
+      "category": "scripts",
+      "cycle": 1,
+      "file": "data-otservbr-global/scripts/quests/in_service_of_yalahar/actions_matrix.lua",
+      "phase": "MIGRATION",
+      "result": "ok",
+      "stage": "file",
+      "t": "2025-12-16T05:49:33Z"
+    },
+    {
+      "action": "update",
+      "category": "scripts",
+      "cycle": 1,
+      "file": "data-otservbr-global/scripts/quests/in_service_of_yalahar/creaturescritps_azerus_kill.lua",
+      "phase": "MIGRATION",
+      "result": "ok",
+      "stage": "file",
+      "t": "2025-12-16T05:49:32Z"
     }
   ],
   "stage": "cycle_end",

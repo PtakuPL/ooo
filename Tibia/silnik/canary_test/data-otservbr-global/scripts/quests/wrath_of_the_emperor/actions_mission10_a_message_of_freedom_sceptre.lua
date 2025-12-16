@@ -16,25 +16,25 @@ function wrathEmperorMiss10Message.onUse(player, item, fromPosition, target, toP
 			if player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.BossStatus) == 1 then
 				player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.BossStatus, 2)
 				player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission10, 3) --Questlog, Wrath of the Emperor "Mission 10: A Message of Freedom"
-				player:say("The sceptre is almost torn from your hand as you banish the presence of the emperor.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.actions_mission10_a_message_of_freedom_sceptre.say_6", TALKTYPE_MONSTER_SAY)
 			end
 		elseif toPosition.x > 33080 and toPosition.x < 33111 and toPosition.y > 31079 and toPosition.y < 31100 then
 			if player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.BossStatus) == 2 then
 				player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.BossStatus, 3)
 				player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission10, 4) --Questlog, Wrath of the Emperor "Mission 10: A Message of Freedom"
-				player:say("The sceptre is almost torn from your hand as you banish the presence of the emperor.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.actions_mission10_a_message_of_freedom_sceptre.say_5", TALKTYPE_MONSTER_SAY)
 			end
 		elseif toPosition.x > 33078 and toPosition.x < 33112 and toPosition.y > 31106 and toPosition.y < 31127 then
 			if player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.BossStatus) == 3 then
 				player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.BossStatus, 4)
 				player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission10, 5) --Questlog, Wrath of the Emperor "Mission 10: A Message of Freedom"
-				player:say("The sceptre is almost torn from your hand as you banish the presence of the emperor.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.actions_mission10_a_message_of_freedom_sceptre.say_4", TALKTYPE_MONSTER_SAY)
 			end
 		elseif toPosition.x > 33035 and toPosition.x < 33069 and toPosition.y > 31107 and toPosition.y < 31127 then
 			if player:getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.BossStatus) == 4 then
 				player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.BossStatus, 5)
 				player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission10, 6) --Questlog, Wrath of the Emperor "Mission 10: A Message of Freedom"
-				player:say("The sceptre is almost torn from your hand as you banish the presence of the emperor.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.actions_mission10_a_message_of_freedom_sceptre.say_3", TALKTYPE_MONSTER_SAY)
 			end
 		end
 	elseif target.itemid == 11429 then
@@ -42,8 +42,8 @@ function wrathEmperorMiss10Message.onUse(player, item, fromPosition, target, toP
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline, 32)
 			player:setStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Mission11, 2) --Questlog, Wrath of the Emperor "Mission 11: Payback Time"
 		end
-		player:say("NOOOoooooooo...!", TALKTYPE_MONSTER_SAY, false, player, toPosition)
-		player:say("This should have dealt the deathblow to the snake things' ambitions.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.actions_mission10_a_message_of_freedom_sceptre.say_2", TALKTYPE_MONSTER_SAY, false, player, toPosition)
+		player:sayLocalized("scripts.actions_mission10_a_message_of_freedom_sceptre.say_1", TALKTYPE_MONSTER_SAY)
 	end
 	return true
 end

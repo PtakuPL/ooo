@@ -43,7 +43,7 @@ function inServiceYalaharWarGolem.onUse(player, item, fromPosition, target, toPo
 	addEvent(disableMachine, 60 * 60 * 1000, machineGroup.storage)
 	player:removeItem(8775, 4)
 	for i = 1, #machineGroup.machines do
-		player:say("*CLICK*", TALKTYPE_MONSTER_YELL, false, player, machineGroup.machines[i])
+		player:sayLocalized("scripts.actions_yalahar_machine_war_golems.say_1", TALKTYPE_MONSTER_YELL, false, player, machineGroup.machines[i])
 	end
 
 	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_yalahar_machine_war_golems.msg_2")

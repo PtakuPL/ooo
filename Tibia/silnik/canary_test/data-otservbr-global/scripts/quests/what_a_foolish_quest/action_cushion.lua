@@ -9,9 +9,9 @@ function whatFoolishCushion.onUse(player, item, fromPosition, target, toPosition
 	end
 
 	player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.WhoopeeCushion, 1)
-	player:say("*chuckles maniacally*", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.action_cushion.say_2", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_POFF)
-	player:say("Woooosh!", TALKTYPE_MONSTER_SAY, false, player, toPosition)
+	player:sayLocalized("scripts.action_cushion.say_1", TALKTYPE_MONSTER_SAY, false, player, toPosition)
 	item:remove()
 	return true
 end

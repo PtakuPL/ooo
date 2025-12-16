@@ -15,7 +15,7 @@ function azerus.onDeath(creature)
 	if item:isTeleport() then
 		item:setDestination(teleportToPosition)
 	end
-	creature:say("Azerus ran into teleporter! It will disappear in 2 minutes. Enter it!", TALKTYPE_MONSTER_SAY, 0, 0, position)
+	creature:sayLocalized("scripts.creaturescritps_azerus_kill.say_1", TALKTYPE_MONSTER_SAY, 0, 0, position)
 	--remove portal after 2 min
 	addEvent(removeTeleport, 2 * 60 * 1000, position)
 

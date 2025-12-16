@@ -242,6 +242,20 @@ function _G.tr(text, ...)
     if tostring(text) then
       local translation = currentLocale.translation[text]
       if translation then
+        -- Support both legacy printf-style (%d/%s) and newer brace-style ({}) formatting.
+        -- Prefer brace-style when present, to be compatible with server-side i18n keys.
+        if translation:find("{}", 1, true) then
+          local idx = 0
+          return (translation:gsub("%{%}", function()
+            idx = idx + 1
+            local v = select(idx, ...)
+            if v == nil then
+              return "{}"
+            end
+            return tostring(v)
+          end))
+        end
+
         return string.format(translation, ...)
       end
 

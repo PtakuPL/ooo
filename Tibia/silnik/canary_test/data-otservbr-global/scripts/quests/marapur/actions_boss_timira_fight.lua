@@ -233,7 +233,7 @@ end
 
 function encounter:onReset(position)
 	encounter:removeMonsters()
-	fightZone:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("Timira the Many-Headed has been defeated. You have %i seconds to leave the room.", 60))
+	fightZone:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_boss_timira_fight.msg_1", {60})
 	self:addEvent(function(zn)
 		zn:refresh()
 		zn:removePlayers()

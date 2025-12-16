@@ -34,7 +34,7 @@ function demonTeleport.onStepIn(creature, item, position, fromPosition)
 	if not soilRemoved then
 		player:teleportTo(fromPosition)
 		fromPosition:sendMagicEffect(CONST_ME_ENERGYHIT)
-		player:say("You may not enter without a sacrifice of a elemental soil.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.movements_demon_teleport.say_1", TALKTYPE_MONSTER_SAY)
 		return true
 	end
 

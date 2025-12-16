@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja (UTC):** 2025-12-16 23:33:55  |  **Lokalnie:** 2025-12-17 00:33:55 CET  
+> **Aktualizacja (UTC):** 2025-12-16 23:36:02  |  **Lokalnie:** 2025-12-17 00:36:02 CET  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 24449  
-> **LIVE:** Cykl #2 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T23:33:53Z
+> **LIVE:** Cykl #4 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T23:35:47Z
 
 ---
 
@@ -31,8 +31,8 @@
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
-| 📂 **Wszystkie pliki** | **17,316** | 100% | cały projekt |
-| 📜 Do skanowania (kod) | **8,150** | 47.1% | pliki z kodem/tekstami |
+| 📂 **Wszystkie pliki** | **17,331** | 100% | cały projekt |
+| 📜 Do skanowania (kod) | **8,150** | 47.0% | pliki z kodem/tekstami |
 | 🔍 **Przeskanowane** | **4,973** | **61.0%** | historia workera |
 | ⏳ Nie przeskanowane | **3,177** | 39.0% | czekają na skan |
 
@@ -53,7 +53,7 @@
 | ✅ Zmigrowane | **354** | 7.1% | mają klucze i18n |
 | 🔄 Wymaga migracji | **0** | - | trzeba dodać i18n |
 | ⚪ Czyste | **123** | - | bez tekstów |
-| 🔧 W trakcie | **0** | - | obecnie przetwarzane |
+| 🔧 W trakcie | **20** | - | obecnie przetwarzane |
 
 ### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
@@ -80,7 +80,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#2** | od uruchomienia |
+| 🔄 Cykl aktualny | **#4** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **575** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -181,7 +181,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     2 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     4 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (pending_skip)               │
@@ -192,33 +192,33 @@
 │ Postęp: 0/0 files                                             │
 │ Info: all categories skipped                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-16T23:33:53Z           │
+│ ❤️ Heartbeat: 2025-12-16T23:35:47Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2025-12-16 21:58:53 UTC | AUTO_TRANSLATE:auto_done | el | ok | actions.json
-- 2025-12-16 21:58:52 UTC | AUTO_TRANSLATE:auto_start | el | ok | actions.json
-- 2025-12-16 21:58:42 UTC | AUTO_TRANSLATE:auto_done | bg | ok | startup.json
-- 2025-12-16 21:58:42 UTC | AUTO_TRANSLATE:auto_start | bg | ok | startup.json
-- 2025-12-16 21:58:31 UTC | AUTO_TRANSLATE:auto_done | bg | ok | spells.json
-- 2025-12-16 21:58:30 UTC | AUTO_TRANSLATE:auto_start | bg | ok | spells.json
+- 2025-12-16 23:34:35 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/alesar.lua
+- 2025-12-16 23:34:35 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/al_dee.lua
+- 2025-12-16 23:34:35 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/albinius.lua
+- 2025-12-16 23:34:34 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/ajax.lua
+- 2025-12-16 23:34:34 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/ahmet.lua
+- 2025-12-16 23:34:34 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/a_ghostly_woman.lua
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [bg] → ok (files+1, translated+0, skipped+23) — lang=bg file=startup.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [ro] → ok (files+1, translated+0, skipped+13749) — lang=ro file=items.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [ro] → ok (files+1, translated+0, skipped+2) — lang=ro file=creaturescripts.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lt] → ok (files+1, translated+0, skipped+66) — lang=lt file=server.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lt] → ok (files+1, translated+0, skipped+117) — lang=lt file=quests.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → ok (files+1, translated+0, skipped+1927) — lang=pl file=otclient_modules.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lt] → ok (files+1, translated+0, skipped+304) — lang=lt file=spells.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lv] → ok (files+1, translated+0, skipped+21) — lang=lv file=actions.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lv] → ok (files+1, translated+0, skipped+21) — lang=lv file=actions.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [et] → ok (files+1, translated+0, skipped+634) — lang=et file=scripts.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [ro] → ok (files+1, translated+0, skipped+16) — lang=ro file=modules.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lt] → ok (files+1, translated+0, skipped+23) — lang=lt file=startup.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → ok (files+1, translated+0, skipped+145) — lang=pl file=raids.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [ro] → ok (files+1, translated+0, skipped+21) — lang=ro file=actions.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lv] → ok (files+1, translated+0, skipped+2) — lang=lv file=creaturescripts.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lv] → ok (files+1, translated+0, skipped+2) — lang=lv file=creaturescripts.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [et] → ok (files+1, translated+0, skipped+304) — lang=et file=spells.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [et] → ok (files+1, translated+0, skipped+5) — lang=et file=events.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+7) — lang=de file=chatchannels.json
+- 🔧 MIGRATION: zakończono kategorię [chatchannels] → ok (keys+0, files+0) — migration finished
 
 
 
@@ -237,12 +237,12 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **477** | w tej sesji |
+| 📁 Plików przeskanowanych | **497** | w tej sesji |
 | ✅ Plików z kluczami | **354** | zawierały hardcoded strings |
-| ⬜ Plików bez kluczy | **123** | czyste (brak hardcoded) |
+| ⬜ Plików bez kluczy | **143** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **575** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#2** | continuous mode |
+| 🔄 Cykli wykonanych | **#4** | continuous mode |
 
 ---
 
@@ -448,7 +448,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #2 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #4 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -491,7 +491,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-16 23:33:55 | Local: 2025-12-17 00:33:55 CET  
+📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-16 23:36:02 | Local: 2025-12-17 00:36:02 CET  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

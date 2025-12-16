@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-16 09:00:08 UTC  
+> **Aktualizacja:** 2025-12-16 09:02:12 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 24448  
-> **LIVE:** Cykl #5 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T08:00:06Z
+> **LIVE:** Cykl #8 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T08:01:42Z
 
 ---
 
@@ -76,7 +76,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#5** | od uruchomienia |
+| 🔄 Cykl aktualny | **#8** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **574** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -177,7 +177,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     5 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     8 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (pending_skip)               │
@@ -188,30 +188,30 @@
 │ Postęp: 0/0 files                                             │
 │ Info: all categories skipped                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-16T08:00:06Z           │
+│ ❤️ Heartbeat: 2025-12-16T08:01:42Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2025-12-16 08:00:06 | MIGRATION:pending_skip | pending_skip | ok | -
-- 2025-12-16 08:00:06 | MIGRATION:migration_start | pending_skip | ok | -
-- 2025-12-16 08:00:06 | MIGRATION:dispatch | pending_skip | ok | -
-- 2025-12-16 08:00:05 | MIGRATION:cycle_start | pending_skip | ok | -
-- 2025-12-16 07:59:35 | MIGRATION:pending_skip | pending_skip | ok | -
-- 2025-12-16 07:59:34 | MIGRATION:migration_start | pending_skip | ok | -
+- 2025-12-16 08:01:42 | MIGRATION:pending_skip | pending_skip | ok | -
+- 2025-12-16 08:01:41 | MIGRATION:migration_start | pending_skip | ok | -
+- 2025-12-16 08:01:41 | MIGRATION:dispatch | pending_skip | ok | -
+- 2025-12-16 08:01:40 | MIGRATION:cycle_start | pending_skip | ok | -
+- 2025-12-16 08:01:10 | MIGRATION:pending_skip | pending_skip | ok | -
+- 2025-12-16 08:01:10 | MIGRATION:migration_start | pending_skip | ok | -
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🔧 MIGRATION.category_done [otclient_src] ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION.mini_batch_stop [otclient_src] ok (keys+0) — no new data
-- 🔧 MIGRATION.mini_batch_done [otclient_src] ok (keys+0) — mini_batch=1 processed=10/20
-- 🔧 MIGRATION.category_done [scripts] ok (keys+31, files+17) — migration finished
-- 🔧 MIGRATION.category_done [raids] ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION.mini_batch_stop [raids] ok (keys+0) — no new data
-- 🔧 MIGRATION.mini_batch_done [raids] ok (keys+0) — mini_batch=1 processed=1/1
+- 🔧 MIGRATION.category_done [otclient_tools] ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION.mini_batch_stop [otclient_tools] ok (keys+0) — no new data
+- 🔧 MIGRATION.mini_batch_done [otclient_tools] ok (keys+0) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION.category_done [scripts] ok (keys+29, files+17) — migration finished
+- 🔧 MIGRATION.category_done [movements] ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION.mini_batch_stop [movements] ok (keys+0) — no new data
+- 🔧 MIGRATION.mini_batch_done [movements] ok (keys+0) — mini_batch=1 processed=1/1
 
 
 
@@ -235,7 +235,7 @@
 | ⬜ Plików bez kluczy | **123** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **574** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#5** | continuous mode |
+| 🔄 Cykli wykonanych | **#8** | continuous mode |
 
 ---
 
@@ -441,7 +441,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #5 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #8 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -484,7 +484,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-16 09:00:08  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-16 09:02:12  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

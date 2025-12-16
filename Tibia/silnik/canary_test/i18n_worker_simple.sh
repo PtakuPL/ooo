@@ -563,8 +563,8 @@ otclient_src_keys = count_keys("otclient_src.json")
 otclient_mods_keys = count_keys("otclient_mods.json")
 otclient_tools_keys = count_keys("otclient_tools.json")
 
-# Zakres pracy (spójny z dispatcherem): domyślnie liczymy tylko serwer canary
-SCOPE = (os.environ.get("I18N_SCOPE", "server") or "server").strip().lower()
+# Zakres pracy (spójny z dispatcherem): domyślnie pełny (serwer + instalka), bez website
+SCOPE = (os.environ.get("I18N_SCOPE", "full") or "full").strip().lower()
 if SCOPE in ("server", "canary", "server_only", "server-only"):
     php_keys = 0
     html_keys = 0
@@ -1273,9 +1273,21 @@ try:
             }.get(phase_name, "•")
 
         lines = []
+        def _nice_stage(stg: str) -> str:
+            stg = str(stg or "-")
+            mapping = {
+                "category_done": "zakończono kategorię",
+                "mini_batch_done": "mini-batch",
+                "mini_batch_stop": "mini-batch stop",
+                "migration_start": "start migracji",
+                "file": "plik",
+                "dispatch": "wybór",
+            }
+            return mapping.get(stg, stg)
+
         for ev in reversed(ops):
             ph = ev.get("phase")
-            stg = ev.get("stage")
+            stg = _nice_stage(ev.get("stage"))
             cat = ev.get("category")
             res = ev.get("result")
             detail = ev.get("detail")
@@ -1295,7 +1307,8 @@ try:
 
             delta_txt = (" (" + ", ".join(delta_bits) + ")") if delta_bits else ""
             detail_txt = f" — {detail}" if detail else ""
-            lines.append(f"- {_icon(ph)} {ph}.{stg} [{cat}] {res}{delta_txt}{detail_txt}")
+            cat_txt = f"[{cat}]" if cat else ""
+            lines.append(f"- {_icon(ph)} {ph}: {stg} {cat_txt} → {res}{delta_txt}{detail_txt}")
 
         cycle_ops_md = "\n".join(lines)
 except Exception:
@@ -1321,6 +1334,12 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 │  Worker: i18n_worker_simple.sh                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
+
+### 🕹️ Komendy przez GitHub (sterowanie workerem)
+
+- Edytuj plik: `Tibia/silnik/canary_test/.github/worker_commands.txt`
+- Wpisz **jedną** komendę w nowej linii (bez `#`), np.: `FORCE:scripts:ONCE` lub `COMPACT_KEYS:ONCE`
+- Worker sam zakomentuje wykonaną komendę i dopisze historię.
 
 ---
 
@@ -1468,6 +1487,10 @@ md = f'''# 🌍 I18N Internationalization System - Live Dashboard
 │ ❤️ Heartbeat: {str(heartbeat_iso or '-'):30} │
 └─────────────────────────────────────────────────────────────────┘
 ```
+
+### 🧾 Ostatnie akcje (dla czytelności)
+
+{(lambda _a: '\n'.join([f"- {_it.get('t','')[:19].replace('T',' ')} | {_it.get('phase','')}:{_it.get('stage','')} | {_it.get('category','')} | {_it.get('result','')} | {_it.get('file','-')}" for _it in (_a.get('recent', []) if isinstance(_a.get('recent', []), list) else [])][:6]) or '- brak danych')(activity if activity_present else {})}
 
 ---
 
@@ -5713,19 +5736,17 @@ LANG_PRIORITY = ["pl", "de", "es", "pt", "fr", "it", "ru", "nl", "sv", "cs"]
 ALL_LANGUAGES = ["pl", "de", "es", "pt", "fr", "it", "ru", "uk", "nl", "sv", "da", "no", "fi", "cs", "sk", "hu", "ro", "bg", "el", "tr", "ar", "he", "hi", "zh", "ja", "ko", "th", "vi", "id", "ms"]
 
 # ==========================================================================
-# SCOPE:
-# - server: serwer bez website + OTClient/testyy
-# - full: serwer + OTClient/testyy (bez website)
-# - all: wszystko
+# Kategorie (kolejność wg priority)
 # ==========================================================================
-SCOPE = (os.environ.get("I18N_SCOPE", "full") or "full").strip().lower()
-if SCOPE in ("server", "canary", "server_only", "server-only"):
-    excluded = {"php", "html"}
-    CATEGORIES = {k: v for k, v in CATEGORIES.items() if k not in excluded and not k.startswith("otclient_")}
-elif SCOPE in ("full", "installer", "server+installer"):
-    excluded = {"php", "html"}
-    CATEGORIES = {k: v for k, v in CATEGORIES.items() if k not in excluded}
-        "patterns": [r'StdModule\.say', r'npcHandler:say\(', r'npcConfig\.voices'],
+CATEGORIES = {
+
+    # === NPC (priorytet 1) ===
+    "npc": {
+        "dirs": [
+            "data-otservbr-global/npc",
+            "data-canary/npc"
+        ],
+        "patterns": [r'StdModule\\.say', r'npcHandler:say\\(', r'npcConfig\\.voices'],
         "exclude_if": ["i18nKey", "NPC_LIB.i18n.npcSay"],
         "json": "npc.json",
         "priority": 1
@@ -6056,12 +6077,23 @@ elif SCOPE in ("full", "installer", "server+installer"):
 }
 
 # ============================================================================
-# SCOPE: domyślnie tylko serwer canary (bez website + OTClient/testyy)
+# SCOPE:
+# - server: serwer bez website + OTClient/testyy
+# - full: serwer + OTClient/testyy (bez website)
+# - all: wszystko
 # ============================================================================
-SCOPE = (os.environ.get("I18N_SCOPE", "server") or "server").strip().lower()
+SCOPE = (os.environ.get("I18N_SCOPE", "full") or "full").strip().lower()
 if SCOPE in ("server", "canary", "server_only", "server-only"):
     excluded = {"php", "html"}
     CATEGORIES = {k: v for k, v in CATEGORIES.items() if k not in excluded and not k.startswith("otclient_")}
+elif SCOPE in ("full", "installer", "server+installer", "server_installer", "server+otclient"):
+    excluded = {"php", "html"}
+    CATEGORIES = {k: v for k, v in CATEGORIES.items() if k not in excluded}
+elif SCOPE in ("all", "everything"):
+    pass
+else:
+    excluded = {"php", "html"}
+    CATEGORIES = {k: v for k, v in CATEGORIES.items() if k not in excluded}
 
 # Plik komend sterowania workerem
 COMMAND_FILE = ".worker_command"
@@ -6149,6 +6181,8 @@ def count_files_needing_work(category):
     config = CATEGORIES.get(category, {})
     if not config:
         return 0
+
+    exts = config.get("file_ext") or [".lua", ".xml"]
     
     needs_work = 0
     for dir_path in config["dirs"]:
@@ -6156,7 +6190,7 @@ def count_files_needing_work(category):
             continue
         for root, dirs, files in os.walk(dir_path):
             for f in files:
-                if not f.endswith(".lua") and not f.endswith(".xml"):
+                if not any(f.endswith(ext) for ext in exts):
                     continue
                 fpath = os.path.join(root, f)
                 
@@ -6818,26 +6852,27 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             
             # Sprawdź komendy sterowania z plików
             # Najpierw sprawdź worker_commands.txt (dla GitHub), potem .worker_command (lokalny)
-            COMMANDS_TXT="worker_commands.txt"
+            COMMANDS_TXT_PRIMARY=".github/worker_commands.txt"
+            COMMANDS_TXT_FALLBACK="worker_commands.txt"
             COMMAND_FILE=".worker_command"
             CMD=""
             
-            # 1. Sprawdź worker_commands.txt (można edytować przez GitHub)
-            if [ -f "$COMMANDS_TXT" ]; then
-                # Znajdź pierwszą odkomentowaną komendę (bez # na początku)
-                CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|AUTO:|SYNC:|COMPACT_KEYS|IDLE|RANDOM|STATUS|SKIP|PAUSE:|NOTE:)' | head -1)
-                
-                if [ -n "$CMD" ]; then
-                    echo "📨 Odebrano z worker_commands.txt: $CMD"
-                    
-                    # Zakomentuj wykonaną komendę i dodaj do historii
-                    TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
-                    sed -i "s/^$CMD/#$CMD  # Wykonano $TIMESTAMP/" "$COMMANDS_TXT" 2>/dev/null
-                    
-                    # Dodaj do historii na końcu sekcji
-                    echo "# [$TIMESTAMP] Wykonano: $CMD" >> "$COMMANDS_TXT"
+            # 1. Sprawdź komendy z GitHuba (preferuj .github/worker_commands.txt, fallback: worker_commands.txt)
+            for COMMANDS_TXT in "$COMMANDS_TXT_PRIMARY" "$COMMANDS_TXT_FALLBACK"; do
+                [ -n "$CMD" ] && break
+                if [ -f "$COMMANDS_TXT" ]; then
+                    # Znajdź pierwszą odkomentowaną komendę (bez # na początku)
+                    CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|AUTO:|SYNC:|COMPACT_KEYS|IDLE|RANDOM|STATUS|SKIP|PAUSE:|NOTE:)' | head -1)
+                    if [ -n "$CMD" ]; then
+                        echo "📨 Odebrano z $COMMANDS_TXT: $CMD"
+                        # Zakomentuj wykonaną komendę i dodaj do historii
+                        TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
+                        sed -i "s/^$CMD/#$CMD  # Wykonano $TIMESTAMP/" "$COMMANDS_TXT" 2>/dev/null
+                        echo "# [$TIMESTAMP] Wykonano: $CMD" >> "$COMMANDS_TXT"
+                        break
+                    fi
                 fi
-            fi
+            done
             
             # 2. Sprawdź .worker_command (szybsze, lokalne)
             if [ -z "$CMD" ] && [ -f "$COMMAND_FILE" ]; then
@@ -7218,7 +7253,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                     # więc nie używamy go do backoff/skip.
                     COUNT=${COUNT:-0}
                     EFFECTIVE_COUNT=$((KEYS_ADDED + FILES_CHANGED))
-                    echo "   📈 Wynik: +$KEYS_ADDED kluczy, $FILES_CHANGED plików .lua, COUNT=$COUNT"
+                    echo "   📈 Wynik: +$KEYS_ADDED kluczy, $FILES_CHANGED plików źródłowych, COUNT=$COUNT"
                     update_category_state "$MODE_CAT" "$EFFECTIVE_COUNT"
 
                     status_log_op "$CYCLE" "MIGRATION" "category_done" "$MODE_CAT" "-" "ok" "migration finished" "$KEYS_ADDED" "$FILES_CHANGED"

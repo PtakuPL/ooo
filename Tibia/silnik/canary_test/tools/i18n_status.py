@@ -160,7 +160,7 @@ def cmd_update_activity(args: argparse.Namespace) -> None:
     prev = load_json(paths.activity_json) or {}
     prev_recent = prev.get("recent") if isinstance(prev.get("recent"), list) else []
 
-    if args.recent_action or args.file:
+    if args.recent_action or (args.file and args.file != "-"):
         recent_item = {
             "t": current["generated_at_utc"],
             "cycle": current["cycle"],

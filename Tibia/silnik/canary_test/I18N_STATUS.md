@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja:** 2025-12-16 08:55:56 UTC  
+> **Aktualizacja:** 2025-12-16 08:58:02 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 24448  
-> **LIVE:** Cykl #85 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T07:55:46Z
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-16T07:58:00Z
 
 ---
 
@@ -17,6 +17,12 @@
 │  Worker: i18n_worker_simple.sh                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
+
+### 🕹️ Komendy przez GitHub (sterowanie workerem)
+
+- Edytuj plik: `Tibia/silnik/canary_test/.github/worker_commands.txt`
+- Wpisz **jedną** komendę w nowej linii (bez `#`), np.: `FORCE:scripts:ONCE` lub `COMPACT_KEYS:ONCE`
+- Worker sam zakomentuje wykonaną komendę i dopisze historię.
 
 ---
 
@@ -70,7 +76,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#85** | od uruchomienia |
+| 🔄 Cykl aktualny | **#1** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **574** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -171,7 +177,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    85 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (pending_skip)               │
@@ -182,15 +188,33 @@
 │ Postęp: 0/0 files                                             │
 │ Info: all categories skipped                                  │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-16T07:55:46Z           │
+│ ❤️ Heartbeat: 2025-12-16T07:58:00Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
+
+### 🧾 Ostatnie akcje (dla czytelności)
+
+- 2025-12-16 07:58:00 | MIGRATION:pending_skip | pending_skip | ok | -
+- 2025-12-16 07:58:00 | MIGRATION:migration_start | pending_skip | ok | -
+- 2025-12-16 07:58:00 | MIGRATION:dispatch | pending_skip | ok | -
+- 2025-12-16 07:57:59 | IDLE:cycle_start | - | ok | -
+- 2025-12-16 07:57:45 | MIGRATION:pending_skip | pending_skip | ok | -
+- 2025-12-16 07:57:45 | MIGRATION:migration_start | pending_skip | ok | -
 
 ---
 
 ## 🔁 W tym cyklu
 
-- Brak operacji
+- 🔧 MIGRATION.category_done [scripts] ok (keys+29, files+17) — migration finished
+- 🔧 MIGRATION.category_done [npc] ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION.category_done [otclient_data] ok (keys+72, files+8) — migration finished
+- 🔧 MIGRATION.mini_batch_stop [otclient_data] ok (keys+0) — no new data
+- 🔧 MIGRATION.mini_batch_done [otclient_data] ok (keys+0) — mini_batch=2 processed=20/50
+- 🔧 MIGRATION.mini_batch_done [otclient_data] ok (keys+72) — mini_batch=1 processed=10/50
+- 🔧 MIGRATION.category_done [otclient_modules] ok (keys+811, files+50) — migration finished
+- 🔧 MIGRATION.mini_batch_done [otclient_modules] ok (keys+91) — mini_batch=5 processed=50/50
+- 🔧 MIGRATION.mini_batch_done [otclient_modules] ok (keys+192) — mini_batch=4 processed=40/50
+- 🔧 MIGRATION.mini_batch_done [otclient_modules] ok (keys+245) — mini_batch=3 processed=30/50
 
 
 
@@ -214,7 +238,7 @@
 | ⬜ Plików bez kluczy | **123** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **574** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#85** | continuous mode |
+| 🔄 Cykli wykonanych | **#1** | continuous mode |
 
 ---
 
@@ -420,7 +444,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #85 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -463,7 +487,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2025-12-16 08:55:56  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-16 08:58:02  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

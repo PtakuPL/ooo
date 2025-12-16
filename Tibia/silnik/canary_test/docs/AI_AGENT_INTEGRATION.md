@@ -20,14 +20,17 @@ System i18n został zaprojektowany z myślą o współpracy z AI agentami:
 │         │                 │                  │                     │
 │         ▼                 ▼                  ▼                     │
 │  ┌───────────────────────────────────────────────────────────┐    │
+│  │              Status & Monitoring (kanoniczne)              │    │
+│  │  ├── I18N_STATUS.md                 (dashboard GitHub)      │    │
+│  │  ├── i18n_worker_state.json         (stan workera)          │    │
+│  │  └── .i18n_category_state.json      (backoff per kategoria) │    │
+│  └───────────────────────────────────────────────────────────┘    │
+│                                                                    │
+│  (Docelowo / opcjonalnie)                                          │
+│  ┌───────────────────────────────────────────────────────────┐    │
 │  │                  i18n/status/                              │    │
-│  │  ├── worker_state.json     (main status)                   │    │
-│  │  └── categories/                                           │    │
-│  │      ├── npc_details.json                                  │    │
-│  │      ├── scripts_details.json                              │    │
-│  │      ├── items_details.json                                │    │
-│  │      ├── monsters_details.json                             │    │
-│  │      └── server_details.json                               │    │
+│  │  ├── worker_state.json     (machine-readable, schema)       │    │
+│  │  └── categories/*.json     (szczegóły per kategoria)         │    │
 │  └───────────────────────────────────────────────────────────┘    │
 │                                                                    │
 └────────────────────────────────────────────────────────────────────┘
@@ -40,15 +43,31 @@ System i18n został zaprojektowany z myślą o współpracy z AI agentami:
 ### 1. Sprawdzenie aktualnego stanu
 
 ```bash
-# Odczytaj główny status
-cat i18n/status/worker_state.json | jq '.'
+# Dashboard (dla ludzi)
+sed -n '1,120p' I18N_STATUS.md
 
-# Sprawdź która kategoria jest aktywna
-cat i18n/status/worker_state.json | jq '.categories | to_entries[] | select(.value.status == "in_progress")'
+# Stan workera (dla automatyzacji)
+cat i18n_worker_state.json | jq '.'
 
-# Sprawdź postęp konkretnej kategorii
-cat i18n/status/categories/scripts_details.json | jq '.summary'
+# Backoff per kategoria
+cat .i18n_category_state.json | jq '.'
+
+# (Docelowo) kanoniczne statusy do AI (LIVE + pełny stan):
+# cat i18n/status/activity.json | jq '.'
+# cat i18n/status/worker_state.json | jq '.worker.current'
+
+# (Docelowo) jeśli wdrożymy i18n/status/worker_state.json:
+# cat i18n/status/worker_state.json | jq '.categories | to_entries[] | select(.value.status == "in_progress")'
+
+# (Docelowo) szczegóły per kategoria:
+# cat i18n/status/categories/scripts.json | jq '.summary'
 ```
+
+**Wymagania obserwowalności (dla AI):**
+- LIVE musi zawsze zawierać: `phase`, `stage`, `category`, `file`, `message`, `progress`, `eta_seconds`.
+- AI nie ma zgadywać na podstawie logów — status ma być jednoznaczny.
+
+Kanoniczny plan statusów: `docs/i18n/STATUS_AND_DASHBOARD_PLAN.md`
 
 ### 2. Walidacja tłumaczeń
 
@@ -102,6 +121,14 @@ Gdy znajdziesz problem:
     "total_files_processed": 877,
     "total_keys": 44449,
     "total_languages": 53
+  },
+  "compact_keys": {
+    "enabled": true,
+    "min_length": 2,
+    "max_length": 7,
+    "mapped_keys": 28967,
+    "en_keys_total": 28967,
+    "next_id": 28968
   },
   "categories": {
     "npc": { "status": "completed", ... },
@@ -172,6 +199,7 @@ Gdy znajdziesz problem:
 - [ ] Zaproponuj lepsze tłumaczenia
 - [ ] Zgłoś problematyczne wzorce
 - [ ] Zoptymalizuj klucze i18n
+- [ ] Weryfikuj stabilność compact mappingu (append-only) i brak kolizji
 
 ---
 
@@ -208,13 +236,19 @@ Błędne tłumaczenie / literówka / brakujący klucz
 ├──────────────────────────────────────────────────────────────┤
 │                                                              │
 │  1. FETCH STATUS                                             │
-│     └─► cat i18n/status/worker_state.json                    │
+│     └─► cat i18n_worker_state.json                           │
+│         + (opcjonalnie) cat .i18n_category_state.json         │
+│         + I18N_STATUS.md (dashboard)                          │
+│         + (docelowo) i18n/status/activity.json                 │
+│         + (docelowo) i18n/status/daily/YYYY-MM-DD.json         │
 │                                                              │
 │  2. IDENTIFY ACTIVE CATEGORY                                 │
 │     └─► Sprawdź: categories[x].status == "in_progress"       │
 │                                                              │
 │  3. READ CATEGORY DETAILS                                    │
 │     └─► cat i18n/status/categories/{category}_details.json   │
+
+UWAGA: docelowo szczegóły kategorii są w `i18n/status/categories/{category}.json`.
 │                                                              │
 │  4. CHECK RECENT FILES                                       │
 │     └─► recent_files[] - ostatnio przetworzone               │
@@ -227,6 +261,18 @@ Błędne tłumaczenie / literówka / brakujący klucz
 │                                                              │
 └──────────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## 📅 Jak raportować „co zrobiono dziś” (UTC)
+
+Docelowo worker utrzymuje dzienny plik agregacyjny:
+- `i18n/status/daily/YYYY-MM-DD.json`
+
+Źródło agregacji:
+- `i18n/status/ops.jsonl` (zdarzenia) + `i18n/status/errors.jsonl` (błędy)
+
+To jest *jedna prawda* do raportowania postępu dziennego (migracja, sync, auto-translate, compact keys).
 
 ---
 

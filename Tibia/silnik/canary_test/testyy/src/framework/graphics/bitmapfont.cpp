@@ -204,17 +204,20 @@ if (m_isTTF && m_ttf) {
     const auto text32 = otc::text::utf8ToU32(text);
     const auto sp = otc::text::LocaleShaping::paramsFromUtf8(text, otc::text::LocaleShaping::getDefaultLocaleTag());
     const float w = m_ttf->measureTextWidth(text32, sp);
-    const float h = static_cast<float>(std::max(m_ttf->lineHeight(), m_glyphHeight));
+    const int ascentPx = std::max(0, m_ttf->ascent());
+    const int descentPx = std::max(0, m_ttf->descent());
+    const int lineHeightPx = std::max({ m_ttf->lineHeight(), m_glyphHeight, ascentPx + descentPx });
+    const float h = static_cast<float>(lineHeightPx);
 
     // baseline at top-left by default
     float bx = static_cast<float>(screenCoords.left());
-    float by = static_cast<float>(screenCoords.top()) + h;
+    float by = static_cast<float>(screenCoords.top()) + static_cast<float>(ascentPx);
 
     // vertical align
     if (align & Fw::AlignBottom) {
-        by = static_cast<float>(screenCoords.bottom());
+        by = static_cast<float>(screenCoords.bottom()) - static_cast<float>(descentPx);
     } else if (align & Fw::AlignVerticalCenter) {
-        by = static_cast<float>(screenCoords.top()) + (screenCoords.height() - h) * 0.5f + h;
+        by = static_cast<float>(screenCoords.top()) + (screenCoords.height() - h) * 0.5f + static_cast<float>(ascentPx);
     }
 
     // horizontal align
@@ -276,17 +279,20 @@ void BitmapFont::drawColoredText(const std::string_view text, const Rect& screen
         
         // Calculate total width for alignment
         const float totalWidth = m_ttf->measureTextWidth(text32, sp);
-        const float h = static_cast<float>(std::max(m_ttf->lineHeight(), m_glyphHeight));
+        const int ascentPx = std::max(0, m_ttf->ascent());
+        const int descentPx = std::max(0, m_ttf->descent());
+        const int lineHeightPx = std::max({ m_ttf->lineHeight(), m_glyphHeight, ascentPx + descentPx });
+        const float h = static_cast<float>(lineHeightPx);
         
         // Calculate baseline position
         float baseX = static_cast<float>(screenCoords.left());
-        float baseY = static_cast<float>(screenCoords.top()) + h;
+        float baseY = static_cast<float>(screenCoords.top()) + static_cast<float>(ascentPx);
         
         // Vertical align
         if (align & Fw::AlignBottom) {
-            baseY = static_cast<float>(screenCoords.bottom());
+            baseY = static_cast<float>(screenCoords.bottom()) - static_cast<float>(descentPx);
         } else if (align & Fw::AlignVerticalCenter) {
-            baseY = static_cast<float>(screenCoords.top()) + (screenCoords.height() - h) * 0.5f + h;
+            baseY = static_cast<float>(screenCoords.top()) + (screenCoords.height() - h) * 0.5f + static_cast<float>(ascentPx);
         }
         
         // Horizontal align

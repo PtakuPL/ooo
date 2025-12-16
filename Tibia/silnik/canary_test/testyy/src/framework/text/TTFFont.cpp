@@ -258,8 +258,19 @@ int TTFFont::ensureAtlas() {
  * @return const AtlasGlyph* Pointer to the cached or newly rasterized AtlasGlyph on success, `nullptr` if no glyph could be rendered.
  */
 const AtlasGlyph* TTFFont::cacheGlyph(uint32_t glyphIndex, char32_t codepoint) {
-  // First check cache by glyph index (main font)
-  auto it = m_glyphs.find(glyphIndex);
+  // Cache key for main face.
+  // IMPORTANT: glyphIndex==0 is the .notdef glyph and can be returned for many different codepoints.
+  // If we cache/look up purely by glyphIndex, the first missing glyph would poison the cache and
+  // prevent fallback fonts from being tried for subsequent missing characters.
+  uint32_t mainCacheKey = glyphIndex;
+  if (glyphIndex == 0 && codepoint != 0) {
+    // Use a dedicated namespace for "missing in main face" entries keyed by codepoint.
+    // High bit marks this as a main-face-missing sentinel entry.
+    mainCacheKey = 0x80000000u | (static_cast<uint32_t>(codepoint) & 0x7FFFFFFFu);
+  }
+
+  // First check cache
+  auto it = m_glyphs.find(mainCacheKey);
   if (it != m_glyphs.end()) return &it->second;
 
   // Try to render from main font
@@ -268,13 +279,13 @@ const AtlasGlyph* TTFFont::cacheGlyph(uint32_t glyphIndex, char32_t codepoint) {
     // Check if glyph was found (not the .notdef glyph with index 0, or has actual bitmap)
     FT_GlyphSlot g = m_face->glyph;
     if (glyphIndex != 0 || g->bitmap.width > 0) {
-      return rasterizeGlyph(m_face, glyphIndex, glyphIndex);
+      return rasterizeGlyph(m_face, glyphIndex, mainCacheKey);
     }
   }
 
   // Main font failed - try fallback fonts using codepoint
   if (codepoint != 0) {
-    static bool s_warnedFallback = false;
+    static bool s_loggedFirstFallback = false;
     for (size_t fbIdx = 0; fbIdx < m_fallbackFaces.size(); ++fbIdx) {
       FT_Face fallbackFace = m_fallbackFaces[fbIdx];
       // Get glyph index for this codepoint in fallback font
@@ -283,22 +294,36 @@ const AtlasGlyph* TTFFont::cacheGlyph(uint32_t glyphIndex, char32_t codepoint) {
 
       if (FT_Load_Glyph(fallbackFace, fbGlyphIndex, FT_LOAD_DEFAULT) == 0 &&
           FT_Render_Glyph(fallbackFace->glyph, FT_RENDER_MODE_NORMAL) == 0) {
-        // Use unique cache key: high bits for fallback index, low bits for glyph
-        const uint32_t cacheKey = static_cast<uint32_t>((fbIdx + 1) << 24) | (fbGlyphIndex & 0xFFFFFF);
-        if (!s_warnedFallback) {
+        // IMPORTANT: Use mainCacheKey so subsequent lookups for this codepoint hit cache!
+        // The mainCacheKey already encodes the codepoint when glyphIndex==0.
+        if (!s_loggedFirstFallback) {
           g_logger.info(fmt::format("TTFFont: using fallback font #{} for codepoint U+{:04X}", fbIdx, static_cast<uint32_t>(codepoint)));
-          s_warnedFallback = true;
+          s_loggedFirstFallback = true;
         }
-        return rasterizeGlyph(fallbackFace, fbGlyphIndex, cacheKey);
+        return rasterizeGlyph(fallbackFace, fbGlyphIndex, mainCacheKey);
       }
     }
     
     // No fallback font found - this will render as .notdef (square)
-    if (!s_warnedFallback && codepoint != 0) {
+    static bool s_loggedMissingOnce = false;
+    if (!s_loggedMissingOnce) {
       g_logger.warning(fmt::format("TTFFont: no fallback font has glyph for codepoint U+{:04X} ({} fallbacks checked)", 
                                    static_cast<uint32_t>(codepoint), m_fallbackFaces.size()));
-      s_warnedFallback = true;
+      s_loggedMissingOnce = true;
     }
+  }
+
+  // Cache a sentinel "missing" entry for this codepoint so we don't re-scan fallbacks every frame.
+  // (Advance comes from HarfBuzz; this entry is only used to decide whether to emit a quad.)
+  if (mainCacheKey != 0) {
+    AtlasGlyph ag{};
+    ag.texture = nullptr;
+    ag.x = ag.y = ag.w = ag.h = 0;
+    ag.bearingX = 0;
+    ag.bearingY = 0;
+    ag.advance = 0;
+    m_glyphs.emplace(mainCacheKey, ag);
+    return &m_glyphs.find(mainCacheKey)->second;
   }
 
   return nullptr;

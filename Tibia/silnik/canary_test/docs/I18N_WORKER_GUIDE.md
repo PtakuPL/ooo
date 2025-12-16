@@ -13,6 +13,7 @@ Worker ma za zadanie:
 2. **Konwersję** słowników JSON → Lua locales
 3. **Generowanie** plików `game_i18n_*.lua` dla klienta
 4. **Weryfikację** kompletności tłumaczeń
+5. **(Opcjonalnie) Optymalizację bandwidth** przez generowanie krótkich kluczy compact (2–7 znaków)
 
 ---
 
@@ -25,6 +26,14 @@ SERWER                          WORKER                         KLIENT
 │ i18n/pl/npc.json │           │ Konwersja      │           │ game_i18n_pl   │
 │ NPC Lua files    │           │ Generowanie    │           │ game_i18n_de   │
 └──────────────────┘           └────────────────┘           └────────────────┘
+
+Opcja (bandwidth):
+
+SERWER (semantyczne)            WORKER (mapowanie)            KLIENT (compact)
+┌──────────────────┐           ┌────────────────┐           ┌────────────────────────┐
+│ i18n/en/*.json   │  ──────►  │ keymap sync    │  ──────►  │ game_i18n_*_compact.lua│
+│ (source-of-truth)│           │ export compact │           │ locale.translation[ID] │
+└──────────────────┘           └────────────────┘           └────────────────────────┘
 ```
 
 ---
@@ -79,6 +88,25 @@ if locale and locale.translation then
     locale.translation[key] = value
   end
 end
+
+### Pliki game_i18n_*_compact.lua (opcjonalnie)
+
+Wariant compact nie zmienia źródeł na serwerze — mapuje tylko klucze po stronie eksportu:
+
+```lua
+-- game_i18n_pl_compact.lua
+local gameTranslations = {
+    ["Aa"] = "WRÓĆ KIEDY OSIĄGNIESZ POZIOM 8!",
+    ["Ab"] = "JUŻ WYBRAŁEŚ SWOJĄ DROGĘ. ŻEGNAJ!",
+}
+```
+
+Mapping (source-of-truth):
+- `i18n/keymap.json`: semantyczny → compact
+- `i18n/keymap_rev.json`: compact → semantyczny (debug)
+- `i18n/keymap_meta.json`: parametry + licznik `next_id`
+
+Dokładny plan wdrożenia: `docs/i18n/COMPACT_KEYS_PLAN.md`
 ```
 
 ---
@@ -118,6 +146,28 @@ def json_to_lua(input_file, output_file, category=""):
         data = json.load(f)
     
     lines = []
+
+---
+
+## 🔑 COMPACT KEYS (2–7) — kiedy i jak
+
+### Kiedy używać
+- Gdy priorytetem jest zmniejszenie payload serwer→klient (protokół i18n wysyła krótkie ID).
+- Gdy chcemy zachować czytelne klucze semantyczne w kodzie i repo.
+
+### Jak wygenerować mapping
+```bash
+python3 tools/i18n_keymap.py sync --i18n-dir i18n --min-len 2 --max-len 7
+python3 tools/i18n_keymap.py verify --i18n-dir i18n
+```
+
+### Jak wygenerować locale compact dla klienta
+```bash
+python3 tools/json_to_lua_locales.py --lang en --compact-keys --i18n-dir i18n
+python3 tools/json_to_lua_locales.py --lang pl --compact-keys --i18n-dir i18n
+```
+
+Uwaga: worker powinien traktować mapping jako **append-only** — nie wolno regenerować od zera.
     lines.append(f"-- Generated from: {os.path.basename(input_file)}")
     lines.append("local translations = {")
     

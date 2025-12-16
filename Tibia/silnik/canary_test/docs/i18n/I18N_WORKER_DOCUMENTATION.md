@@ -20,7 +20,8 @@
 │         v                  v                  v             │
 │  ┌─────────────────────────────────────────────────┐       │
 │  │              Status & Monitoring                │       │
-│  │          i18n/status/*.json                     │       │
+│  │   I18N_STATUS.md + i18n_worker_state.json       │       │
+│  │   + .i18n_category_state.json (backoff)         │       │
 │  └─────────────────────────────────────────────────┘       │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -74,10 +75,13 @@ local text = t("server.welcome_message", {name = player:getName()}, player)
 
 ```
 canary_test/
-├── i18n_autonomous_worker.sh      # Główny skrypt workera
+├── i18n_worker_simple.sh          # Główny skrypt workera (dispatcher, continuous)
+├── i18n_autonomous_worker.sh      # (legacy) starszy worker
 ├── i18n_worker.log                # Log działania
 ├── .worker.pid                    # PID procesu
 ├── i18n_worker_state.json         # Stan workera
+├── .i18n_category_state.json      # Backoff per kategoria
+├── I18N_STATUS.md                 # Dashboard GitHub
 ├── i18n_processed_files.txt       # Lista przetworzonych plików
 ├── i18n_excluded_files.txt        # Pliki wykluczone z migracji
 │
@@ -90,10 +94,9 @@ canary_test/
 │   │   └── ...
 │   ├── pl/                        # Tłumaczenia polskie
 │   ├── es/, de/, pt/, ...         # Pozostałe języki (53 total)
-│   └── status/
-│       ├── npc.json              # Status kategorii NPC
-│       ├── scripts.json          # Status skryptów
-│       └── activity.json         # Aktywność workera
+│   ├── keymap.json               # compact keys: semantic → compact
+│   ├── keymap_rev.json           # compact keys: compact → semantic (debug)
+│   └── keymap_meta.json          # compact keys: parametry + next_id
 │
 └── data-otservbr-global/
     ├── lib/npc/i18n.lua          # Biblioteka NPC i18n (NIE MODYFIKOWAĆ)
@@ -198,7 +201,7 @@ keywordHandler:addKeyword({"help"}, StdModule.say, {
 
 ```bash
 cd /home/ptaku/serweryt/Tibia/silnik/canary_test
-./i18n_autonomous_worker.sh &
+./i18n_worker_simple.sh --continuous 10 15 &
 ```
 
 ### Zatrzymanie
@@ -215,9 +218,27 @@ kill $(cat .worker.pid)
 # Logi na żywo
 tail -f i18n_worker.log
 
-# Status
-cat i18n/status/npc.json | jq .
+# Dashboard
+sed -n '1,120p' I18N_STATUS.md
+
+# Stan workera / backoff
+cat i18n_worker_state.json | jq .
+cat .i18n_category_state.json | jq .
 ```
+
+---
+
+## 🔑 COMPACT KEYS (2–7) — plan i integracja
+
+Cel: zmniejszyć payload serwer→klient, wysyłając krótkie ID zamiast długich kluczy/tekstów.
+
+Założenie: klucze semantyczne pozostają source-of-truth w `i18n/en/*.json` i w kodzie.
+
+Narzędzia repo:
+- `tools/i18n_keymap.py` — mapping EN → compact (append-only, 2–7)
+- `tools/json_to_lua_locales.py --compact-keys` — eksport client locales pod compact ID
+
+Dokument wdrożenia: `docs/i18n/COMPACT_KEYS_PLAN.md`
 
 ---
 
@@ -292,6 +313,22 @@ cat i18n/status/npc.json | jq .
 8) **Smoke-test**: szybki test po batchu (np. `lua -e 'dofile(\"<plik>\")'` lub istniejący validator).  
 9) **Status sync**: `--update-status` ma brać liczby z `i18n/en/*.json` i `i18n_global_stats.json`, by uniknąć rozjazdów.  
 10) **Tryb tylko tłumaczeń**: `--translations-only` odcina migrację przy code-freeze.  
+
+---
+
+## 📊 Plan integracji statusu (LIVE + daily)
+
+Wymaganie nadrzędne: `I18N_STATUS.md` ma pokazywać **dokładnie** co worker robi teraz (LIVE), co zrobił w bieżącym cyklu, oraz co zrobił dziś.
+
+**Kanoniczny dokument:** `docs/i18n/STATUS_AND_DASHBOARD_PLAN.md`
+
+Docelowe źródła danych (machine-readable):
+- `i18n/status/activity.json` — snapshot LIVE (phase+stage+category+file+ETA)
+- `i18n/status/worker_state.json` — pełny stan (schema 3.0)
+- `i18n/status/ops.jsonl` — zdarzenia (append-only)
+- `i18n/status/daily/YYYY-MM-DD.json` — agregacja dzienna
+
+Minimalna zasada: LIVE zawsze raportuje **phase + stage** (nie tylko tryb), a przy pracy per plik zawsze podaje `file`.
 
 ---
 

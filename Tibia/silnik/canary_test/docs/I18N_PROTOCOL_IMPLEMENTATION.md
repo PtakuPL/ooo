@@ -10,7 +10,7 @@
 
 ## 📋 PODSUMOWANIE
 
-**Cel**: Zmodyfikować protokół komunikacji serwer↔klient tak, aby serwer wysyłał **krótkie klucze i18n** (1, 2, a, b, ^, 12...), a klient tłumaczył teksty lokalnie.
+**Cel**: Zmodyfikować protokół komunikacji serwer↔klient tak, aby serwer wysyłał **krótkie klucze i18n (compact)** (2–7 znaków), a klient tłumaczył teksty lokalnie.
 
 **Dlaczego to robimy:**
 - **MEGA OPTYMALIZACJA** - klucze "1", "a" zamiast "Hello adventurer, welcome to..."
@@ -43,29 +43,46 @@
 ### Klucze krótkie (optymalizacja bandwidth)
 ```
 Zamiast:  "npc.oracle.greeting_welcome_adventurer_to_tibia" (47 bajtów)
-Używamy:  "1" lub "a" lub "^" (1 bajt)
+Używamy:  "Aa" lub "KkKk31" (2–7 znaków)
 
 Oszczędność: 46 bajtów × 1000 wiadomości = 46 KB per gracz!
 ```
+
+**Ważne założenie architektury (docelowe):**
+- W kodzie i repo trzymamy **klucze semantyczne** (czytelne, stabilne w PR-ach).
+- Dopiero na granicy protokołu mapujemy je do **kluczy compact**.
 
 ### Mapowanie kluczy (na kliencie)
 ```lua
 -- testyy/data/locales/pl.lua
 locale.translation = {
-    ["1"] = "Witaj wędrowcze! Zapraszam do Tibii...",
-    ["2"] = "Żegnaj!",
-    ["a"] = "Dragon",
-    ["b"] = "Rat",
+    ["Aa"] = "Witaj wędrowcze! Zapraszam do Tibii...",
+    ["Ab"] = "Żegnaj!",
+    ["Ba"] = "Dragon",
+    ["Bb"] = "Rat",
     -- ...
 }
 ```
 
 ### Generowanie kluczy (skrypt)
-```python
-# Generuj krótkie klucze: 1-9, a-z, A-Z, kombinacje
-keys = list("123456789") + list("abcdefghijklmnopqrstuvwxyz") + list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-# Dla >62 elementów: "10", "11", "aa", "ab", ...
+
+Generator musi zapewnić:
+- długość **2–7** znaków
+- wyczerpanie przestrzeni 2-znakowej przed 3-znakową itd.
+- stabilność (append-only)
+
+W repo używamy gotowego narzędzia:
+```bash
+python3 tools/i18n_keymap.py sync --i18n-dir i18n --min-len 2 --max-len 7
+python3 tools/i18n_keymap.py verify --i18n-dir i18n
 ```
+
+Pliki mappingu:
+- `i18n/keymap.json` (semantic → compact)
+- `i18n/keymap_rev.json` (compact → semantic, debug)
+- `i18n/keymap_meta.json` (min/max len, alphabet, next_id)
+
+Szczegółowy plan: `docs/i18n/COMPACT_KEYS_PLAN.md`
 
 ---
 
@@ -138,6 +155,16 @@ keys = list("123456789") + list("abcdefghijklmnopqrstuvwxyz") + list("ABCDEFGHIJ
 
 ### ETAP 4: Migracja kluczy (DO ZROBIENIA)
 - [ ] Przenieść klucze z `i18n/en/*.json` (serwer) do formatu klienta
+
+### ETAP 4.5: COMPACT KEYS (nowy etap – przed rolloutem protokołu)
+- [ ] Wygenerować mapping EN → compact (2–7) i zweryfikować unikalność
+- [ ] Wygenerować `game_i18n_{lang}_compact.lua` dla co najmniej `en` i `pl`
+- [ ] Dodać plan fallbacku: jeśli brak mappingu / brak tłumaczenia
+
+### ETAP 5: Rollout protokołu na compact ID
+- [ ] Serwer mapuje semantyczny klucz do compact ID przed wysyłką
+- [ ] Klient tłumaczy po compact ID (ładuje `*_compact.lua`)
+- [ ] Feature flag (config) na przełączanie semantyczne/compact na czas migracji
 - [ ] Stworzyć skrypt konwersji JSON → Lua locales
 - [ ] Wygenerować pliki dla wszystkich języków
 

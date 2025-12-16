@@ -276,7 +276,7 @@ i18n/en/
 ### Sugestie operacyjne (dla agenta)
 - Dodaj do `StdModule.say` obsługę parametru `i18nKey` (jeśli jeszcze nie na wszystkich maszynach) i preferuj Opcję A/C – zmniejszy to liczbę zmian w plikach NPC.
 - W workerze dołóż walidację syntaktyczną Lua po transformacji (np. `luacheck` lub szybki `lua -p <plik>`), zanim batch trafi do git.
-- Przed masową migracją stwórz krótką listę kanałów powiadomień (log + plik `i18n/status/activity.json`) z wynikiem każdego cyklu, żeby agent wiedział czy batch przeszedł.
+- Przed masową migracją wdroż spójne statusy: `i18n/status/activity.json` (LIVE) + `i18n/status/ops.jsonl` (zdarzenia). Dashboard `I18N_STATUS.md` ma być generowany wyłącznie z tych danych.
 - Przy transformacji `sendTextMessage` grupuj klucze w kategoriach (`quests.*`, `system.*`, `combat.*`) – ułatwi tłumaczenia i kontrolę jakości.
 - Dodaj mały smoke test: uruchomienie `./canary-debug --validate-i18n` (lub istniejący odpowiednik) na zestawie zmigrowanych plików, aby złapać brakujące klucze zanim pójdą tłumaczenia.
 - Utrzymuj świeży raport “hard strings” i “translation backlog”: dwa pliki CSV/MD generowane co cykl continuous (lista nowych literalnych tekstów + lista braków tłumaczeń per język).
@@ -296,6 +296,7 @@ i18n/en/
 ## 📚 Powiązane dokumenty
 
 - `docs/i18n/I18N_WORKER_DOCUMENTATION.md` - dokumentacja workera
+- `docs/i18n/STATUS_AND_DASHBOARD_PLAN.md` - plan statusów (LIVE + daily summary + per-kategoria)
 - `docs/i18n/NPC_MIGRATION_STATUS.md` - status migracji NPC
 - `docs/I18N_DEVELOPMENT_ROADMAP.md` - ogólny plan rozwoju
 - `data-otservbr-global/lib/npc/i18n.lua` - biblioteka i18n dla NPC

@@ -52,6 +52,57 @@ Worker pracuje w trybie `--continuous` non-stop:
 
 ---
 
+## 📡 STATUS / DASHBOARD (wymagania jakości)
+
+**Cel:** Każdy cykl workera ma być w 100% obserwowalny: co robi teraz, co zrobił w cyklu, co zrobił dziś.
+
+**Kanoniczny plan:** `docs/i18n/STATUS_AND_DASHBOARD_PLAN.md`
+
+### Wymagania wspólne (dla każdej fazy)
+- **Heartbeat:** worker aktualizuje stan co etap (min: start/koniec etapu). Brak heartbeat ma być widoczny jako "stale".
+- **Phase + Stage:** zawsze raportuj oba pola (faza = co, etap = jaki krok).
+- **Kategoria + Plik:** jeśli faza jest per-kategoria/per-plik — te pola muszą być ustawione.
+- **Delta:** każda faza raportuje "co zmieniła" (keys_added/files_changed/translated/etc.).
+- **Wynik:** `ok|skip|backoff|error` na poziomie etapu.
+
+### Wymagania do I18N_STATUS.md
+- Sekcja **🔴 LIVE** pokazuje *aktualny* `phase`, `stage`, `category`, `file`, `message`, `progress`, `ETA`.
+- Sekcja **W tym cyklu** pokazuje krótką listę kroków wykonanych w cyklu (max 5–10 ostatnich).
+- Sekcja **Dziś (UTC)** pokazuje agregację dzienną (pliki/klucze/tłumaczenia/błędy).
+- Sekcje kategorii mają **spójny format**: te same pola niezależnie od statusu (nawet 0).
+
+### FAZA 1.5: COMPACT_KEYS (optymalizacja bandwidth)
+**Cel:** Stabilne mapowanie kluczy semantycznych (EN) → krótkie ID (2–7 znaków) + eksport słowników klienta pod compact ID.
+
+**Założenia:**
+- Kod i dane serwera dalej używają kluczy semantycznych (`npc.rashid.greeting`).
+- Protokół i klient docelowo używają kluczy compact (2–7 znaków), aby zmniejszyć payload.
+
+**Artefakty (kanoniczne):**
+- `i18n/keymap.json`, `i18n/keymap_rev.json`, `i18n/keymap_meta.json`
+- `testyy/data/locales/game_i18n_{lang}_compact.lua`
+
+**Logika (na cykl / w IDLE między większymi pracami):**
+```
+1. Keymap sync: uzupełnij mapping dla wszystkich kluczy EN (append-only)
+2. Keymap verify: sprawdź unikalność i zakres 2–7
+3. Eksport client locales: generuj game_i18n_{lang}_compact.lua (min: en, pl)
+4. Zapisz metryki do statusu: mapped/en_total, next_id, min..max
+```
+
+**Wymagania statusu (COMPACT_KEYS):**
+- LIVE: `mapped_new` w cyklu, `mapped_total/en_total`, `next_id`, `exported_langs`.
+- Eventy: `KEYMAP_SYNC`, `KEYMAP_VERIFY`, `EXPORT_COMPACT_LOCALES`.
+
+**Narzędzia:**
+- `python3 tools/i18n_keymap.py sync --i18n-dir i18n --min-len 2 --max-len 7`
+- `python3 tools/i18n_keymap.py verify --i18n-dir i18n`
+- `python3 tools/json_to_lua_locales.py --lang pl --compact-keys --i18n-dir i18n`
+
+**Dokument docelowy:** `docs/i18n/COMPACT_KEYS_PLAN.md`
+
+---
+
 ### FAZA 2: TRANSLATION_SYNC (przygotowanie tłumaczeń)
 **Cel:** Synchronizacja kluczy EN → wszystkie 55 języków z prefixem [LANG]
 
@@ -76,6 +127,10 @@ Inne: bn, ta, te, ml, sw
       - Jeśli > 0 → skopiuj z EN z prefixem [LANG]
 2. Gdy wszystkie zsynchronizowane → FAZA 3
 ```
+
+**Wymagania statusu (TRANSLATION_SYNC):**
+- LIVE: `lang`, `json_file/category`, `keys_to_sync`, `keys_synced`.
+- Eventy: `SYNC_START`, `SYNC_FILE_DONE`, `SYNC_LANG_DONE`.
 
 **Format placeholdera:**
 ```json
@@ -112,6 +167,10 @@ Inne: bn, ta, te, ml, sw
    d. Jeśli brak → zostaw [LANG]
 2. Gdy wszystko przetłumaczone → FAZA 4
 ```
+
+**Wymagania statusu (AUTO_TRANSLATE):**
+- LIVE: `lang`, `json_file`, `translated/skipped`, `validator_result` (placeholders).
+- Eventy: `AUTO_TRANSLATE_START`, `AUTO_TRANSLATE_KEY_OK`, `AUTO_TRANSLATE_KEY_SKIP`, `AUTO_TRANSLATE_DONE`.
 
 ---
 
@@ -158,6 +217,10 @@ Inne: bn, ta, te, ml, sw
 4. Jeśli nie → powtórz od 4.1
 ```
 
+**Wymagania statusu (IDLE):**
+- LIVE: `sleep_seconds`, `next_check_at`, `new_files_detected`.
+- Eventy: `IDLE_SLEEP`, `IDLE_SCAN`, `IDLE_NEW_WORK_DETECTED`.
+
 ---
 
 ## 🔄 FLOWCHART GŁÓWNY
@@ -172,6 +235,7 @@ Inne: bn, ta, te, ml, sw
 │  DISPATCHER: select_work_mode()                              │
 │  ├─ Sprawdź komendy sterowania (.worker_command)             │
 │  ├─ Sprawdź kategorie MIGRATION                              │
+│  ├─ Sprawdź COMPACT_KEYS (keymap sync/export)                │
 │  ├─ Sprawdź TRANSLATION_SYNC                                 │
 │  ├─ Sprawdź AUTO_TRANSLATE                                   │
 │  └─ Zwróć tryb: MIGRATION|TRANSLATION_SYNC|AUTO_TRANSLATE|IDLE│
@@ -181,9 +245,16 @@ Inne: bn, ta, te, ml, sw
               │               │               │               │
               ▼               ▼               ▼               ▼
         ┌─────────┐    ┌───────────┐   ┌────────────┐   ┌──────────┐
-        │MIGRATION│    │TRANSLATION│   │AUTO_TRANSLATE│   │   IDLE   │
-        │(Faza 1) │    │  _SYNC    │   │  (Faza 3)  │   │(Faza 4)  │
-        └────┬────┘    │ (Faza 2)  │   └─────┬──────┘   └────┬─────┘
+      │MIGRATION│    │COMPACT_KEYS│   │TRANSLATION │   │AUTO_TRANSLATE│
+      │(Faza 1) │    │ (Faza 1.5) │   │  _SYNC    │   │  (Faza 3)    │
+      └────┬────┘    └─────┬─────┘   │ (Faza 2)  │   └─────┬────────┘
+           │               │         └─────┬─────┘         │
+           │               │               │                │
+           ▼               ▼               ▼                ▼
+                         ┌──────────┐
+                         │   IDLE   │
+                         │(Faza 4)  │
+                         └────┬─────┘
              │         └─────┬─────┘         │                │
              │               │               │                │
              ▼               ▼               ▼                ▼
@@ -205,6 +276,14 @@ Inne: bn, ta, te, ml, sw
 5. [x] Rozszerzona detekcja NPC (npcHandler:say, NpcHandler:say)
 
 ### ❌ Do zaimplementowania:
+
+#### 0. COMPACT_KEYS (Faza 1.5) - do spięcia w dispatcher/status
+```text
+# Potrzebne:
+- Job: keymap sync/verify (tools/i18n_keymap.py)
+- Job: export compact locales (tools/json_to_lua_locales.py --compact-keys)
+- Status: metryki mappingu w I18N_STATUS.md + JSON status (jeśli wdrożymy)
+```
 
 #### 1. AUTO_TRANSLATE (Faza 3) - obecnie brak automatyzacji
 ```python
@@ -238,6 +317,13 @@ Inne: bn, ta, te, ml, sw
 
 ### Etap 1: Napraw detekcję (✅ DONE)
 - Rozszerzona detekcja npcHandler:say
+
+### Etap 1.5: Wdroż COMPACT_KEYS
+- [ ] Ustalić mapowanie EN→compact jako append-only (2–7 znaków)
+- [ ] Dodać cykliczny `keymap sync` i `keymap verify`
+- [ ] Generować `game_i18n_{lang}_compact.lua` (min: en + pl)
+- [ ] Dopisać sekcję do `I18N_STATUS.md` z metrykami compact keys
+- [ ] (Opcjonalnie) ujednolicić ścieżki statusu: `i18n/status/*.json` vs realne pliki workera
 
 ### Etap 2: Uzupełnij AUTO_TRANSLATE
 - [ ] Dodaj tryb AUTO_TRANSLATE do dispatcher
@@ -286,7 +372,7 @@ Inne: bn, ta, te, ml, sw
 ## ❓ PYTANIA DO ZATWIERDZENIA
 
 1. **Czy zgadzasz się z 4 fazami pracy?**
-   - MIGRATION → TRANSLATION_SYNC → AUTO_TRANSLATE → IDLE
+   - MIGRATION → COMPACT_KEYS → TRANSLATION_SYNC → AUTO_TRANSLATE → IDLE
 
 2. **Czy 55 języków to docelowa lista?**
    - Mogę dodać/usunąć według potrzeb
@@ -299,6 +385,9 @@ Inne: bn, ta, te, ml, sw
 
 5. **Jakie raporty w trybie IDLE?**
    - Dzienne? Tygodniowe? Per-język?
+
+6. **Czy compact keys mają być używane tylko w protokole i słownikach klienta?**
+   - Domyślnie: TAK (kod i JSON na serwerze zostają semantyczne).
 
 ---
 

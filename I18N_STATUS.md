@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja (UTC):** 2025-12-17 01:24:43  |  **Lokalnie:** 2025-12-17 02:24:43 CET  
+> **Aktualizacja (UTC):** 2025-12-17 01:26:48  |  **Lokalnie:** 2025-12-17 02:26:48 CET  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 25989  
-> **LIVE:** Cykl #105 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-17T01:24:36Z
+> **LIVE:** Cykl #109 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: file | Kategoria: npc | Plik: data-otservbr-global/npc/charos.lua | ETA: 0 | Heartbeat: 2025-12-17T01:26:48Z
 
 ---
 
@@ -80,7 +80,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#105** | od uruchomienia |
+| 🔄 Cykl aktualny | **#109** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **100** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -181,44 +181,44 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   105 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   109 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (pending_skip)               │
-│ Kategoria: 📁 PENDING_SKIP                           │
+│ Tryb:      🔧 MIGRATION (file)                       │
+│ Kategoria: 📁 NPC                                    │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: -                                                       │
-│ Postęp: 0/0 files                                             │
-│ Info: all categories skipped                                  │
+│ Plik: data-otservbr-global/npc/charos.lua                     │
+│ Postęp: 0/30 files                                            │
+│ Info: processing                                              │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-17T01:24:36Z           │
+│ ❤️ Heartbeat: 2025-12-17T01:26:48Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2025-12-17 01:26:48 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/charos.lua
 - 2025-12-17 00:56:11 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/xodet.lua
 - 2025-12-17 00:56:09 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/topsy.lua
 - 2025-12-17 00:56:05 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/ser_tybald.lua
 - 2025-12-17 00:56:03 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/rafzan.lua
 - 2025-12-17 00:56:02 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/plunderpurse.lua
-- 2025-12-17 00:55:53 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/hamish.lua
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+3143) — lang=de file=npc.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [it] → ok (files+1, translated+0, skipped+16) — lang=it file=modules.json
+- 🔧 MIGRATION: zakończono kategorię [creaturescripts] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [creaturescripts] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [creaturescripts] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+147) — lang=de file=raids.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [it] → ok (files+1, translated+0, skipped+1987) — lang=it file=otclient_modules.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
-- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [ta] → ok (keys+8, files+1) — lang=ta file=chatchannels.json
-- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [da] → ok (keys+21, files+1) — lang=da file=actions.json
-- 🔧 MIGRATION: zakończono kategorię [npclib] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [npclib] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [npclib] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [ta] → ok (keys+13749, files+1) — lang=ta file=items.json
+- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [da] → ok (keys+72, files+1) — lang=da file=otclient_data.json
 
 
 
@@ -242,7 +242,7 @@
 | ⬜ Plików bez kluczy | **11** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **100** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#105** | continuous mode |
+| 🔄 Cykli wykonanych | **#109** | continuous mode |
 
 ---
 
@@ -448,7 +448,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #105 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #109 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -491,7 +491,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 01:24:43 | Local: 2025-12-17 02:24:43 CET  
+📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 01:26:48 | Local: 2025-12-17 02:26:48 CET  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

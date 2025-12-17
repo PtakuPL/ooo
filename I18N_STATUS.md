@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja (UTC):** 2025-12-17 05:50:54  |  **Lokalnie:** 2025-12-17 06:50:54 CET  
+> **Aktualizacja (UTC):** 2025-12-17 05:53:14  |  **Lokalnie:** 2025-12-17 06:53:14 CET  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 26055  
-> **LIVE:** Cykl #16 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: cycle_end | Kategoria: server | Plik: - | ETA: 0 | Heartbeat: 2025-12-17T05:50:53Z
+> **LIVE:** Cykl #16 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: file | Kategoria: npc | Plik: data-otservbr-global/npc/mr_morris.lua | ETA: 0 | Heartbeat: 2025-12-17T05:53:11Z
 
 ---
 
@@ -31,7 +31,7 @@
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
-| 📂 **Wszystkie pliki** | **17,772** | 100% | cały projekt |
+| 📂 **Wszystkie pliki** | **17,771** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **8,153** | 45.9% | pliki z kodem/tekstami |
 | 🔍 **Przeskanowane** | **5,592** | **68.6%** | historia workera |
 | ⏳ Nie przeskanowane | **2,561** | 31.4% | czekają na skan |
@@ -184,26 +184,26 @@
 │ 🔴 LIVE: Worker v2.0                          Cykl #    16 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (cycle_end)                  │
-│ Kategoria: 📁 SERVER                                 │
+│ Tryb:      🔧 MIGRATION (file)                       │
+│ Kategoria: 📁 NPC                                    │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: -                                                       │
-│ Postęp: 0/0 units                                             │
-│ Info: cycle end                                               │
+│ Plik: data-otservbr-global/npc/mr_morris.lua                  │
+│ Postęp: 10/14 files                                           │
+│ Info: processing                                              │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-17T05:50:53Z           │
+│ ❤️ Heartbeat: 2025-12-17T05:53:11Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2025-12-17 05:46:21 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/woblin.lua
-- 2025-12-17 05:46:12 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/ser_tybald.lua
-- 2025-12-17 05:46:09 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/riddler.lua
-- 2025-12-17 05:46:08 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/rafzan.lua
-- 2025-12-17 05:46:06 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/plunderpurse.lua
-- 2025-12-17 05:46:03 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/oressa.lua
+- 2025-12-17 05:53:11 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/mr_morris.lua
+- 2025-12-17 05:52:56 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/inigo.lua
+- 2025-12-17 05:52:47 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/garamond.lua
+- 2025-12-17 05:52:45 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/flora.lua
+- 2025-12-17 05:52:42 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/emma.lua
+- 2025-12-17 05:52:40 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/elathriel.lua
 
 ---
 
@@ -227,7 +227,7 @@
 
 - Cykle: **695**
 - MIGRATION: **+1368** kluczy, **515** plików `.lua`
-- Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, events, globalevents, items, libs, modules...
+- Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, globalevents, items, libs...
 - Błędy: **0**
 
 
@@ -492,7 +492,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 05:50:54 | Local: 2025-12-17 06:50:54 CET  
+📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 05:53:14 | Local: 2025-12-17 06:53:14 CET  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

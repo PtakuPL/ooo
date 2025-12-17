@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja (UTC):** 2025-12-17 00:10:48  |  **Lokalnie:** 2025-12-17 01:10:48 CET  
+> **Aktualizacja (UTC):** 2025-12-17 00:13:10  |  **Lokalnie:** 2025-12-17 01:13:10 CET  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 25955  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: file | Kategoria: npc | Plik: data-otservbr-global/npc/charos.lua | ETA: 0 | Heartbeat: 2025-12-17T00:10:47Z
+> **LIVE:** Cykl #1 | Status: ✅ IDLE | Faza: IDLE | Etap: cycle_end | Kategoria: - | Plik: - | ETA: 0 | Heartbeat: 2025-12-17T00:13:05Z
 
 ---
 
@@ -31,7 +31,7 @@
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
-| 📂 **Wszystkie pliki** | **17,764** | 100% | cały projekt |
+| 📂 **Wszystkie pliki** | **17,766** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **8,151** | 45.9% | pliki z kodem/tekstami |
 | 🔍 **Przeskanowane** | **5,576** | **68.4%** | historia workera |
 | ⏳ Nie przeskanowane | **2,575** | 31.6% | czekają na skan |
@@ -53,7 +53,7 @@
 | ✅ Zmigrowane | **40** | 0.7% | mają klucze i18n |
 | 🔄 Wymaga migracji | **0** | - | trzeba dodać i18n |
 | ⚪ Czyste | **0** | - | bez tekstów |
-| 🔧 W trakcie | **6** | - | obecnie przetwarzane |
+| 🔧 W trakcie | **9** | - | obecnie przetwarzane |
 
 ### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
@@ -183,35 +183,35 @@
 ┌─────────────────────────────────────────────────────────────────┐
 │ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (file)                       │
-│ Kategoria: 📁 NPC                                    │
+│ Status:    ✅ IDLE                                   │
+│ Tryb:      ✅ IDLE (cycle_end)                       │
+│ Kategoria: -                                        │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: data-otservbr-global/npc/charos.lua                     │
-│ Postęp: 0/70 files                                            │
-│ Info: processing                                              │
+│ Plik: -                                                       │
+│ Postęp: 0/0 units                                             │
+│ Info: cycle end                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-17T00:10:47Z           │
+│ ❤️ Heartbeat: 2025-12-17T00:13:05Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2025-12-17 00:10:47 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/charos.lua
-- 2025-12-17 00:10:41 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/zora.lua
-- 2025-12-17 00:10:39 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/zoltan.lua
-- 2025-12-17 00:10:38 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/znozel.lua
-- 2025-12-17 00:10:36 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/zlak.lua
-- 2025-12-17 00:10:35 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/zizzle.lua
+- 2025-12-17 00:11:03 UTC | MIGRATION:file | npc | ok | data-canary/npc/canary.lua
+- 2025-12-17 00:11:03 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/zumtah.lua
+- 2025-12-17 00:11:02 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/ztiss.lua
+- 2025-12-17 00:11:02 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/zora.lua
+- 2025-12-17 00:10:58 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/ser_tybald.lua
+- 2025-12-17 00:10:50 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/garamond.lua
 
 ---
 
 ## 🔁 W tym cyklu
 
+- 🔧 MIGRATION: zakończono kategorię [scripts] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+44, files+18) — migration finished
-- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
@@ -225,9 +225,9 @@
 
 ## 📅 Dziś (UTC)
 
-- Cykle: **11**
+- Cykle: **13**
 - MIGRATION: **+1268** kluczy, **473** plików `.lua`
-- Kategorie dotknięte: npc
+- Kategorie dotknięte: movements, npc, scripts
 - Błędy: **0**
 
 
@@ -237,9 +237,9 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **46** | w tej sesji |
+| 📁 Plików przeskanowanych | **49** | w tej sesji |
 | ✅ Plików z kluczami | **40** | zawierały hardcoded strings |
-| ⬜ Plików bez kluczy | **6** | czyste (brak hardcoded) |
+| ⬜ Plików bez kluczy | **9** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **40** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
 | 🔄 Cykli wykonanych | **#1** | continuous mode |
@@ -491,7 +491,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 00:10:48 | Local: 2025-12-17 01:10:48 CET  
+📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 00:13:10 | Local: 2025-12-17 01:13:10 CET  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja (UTC):** 2025-12-17 05:22:04  |  **Lokalnie:** 2025-12-17 06:22:04 CET  
+> **Aktualizacja (UTC):** 2025-12-17 05:24:14  |  **Lokalnie:** 2025-12-17 06:24:14 CET  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 26055  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: file | Kategoria: npc | Plik: data-otservbr-global/npc/a_prisoner.lua | ETA: 0 | Heartbeat: 2025-12-17T05:22:03Z
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: file | Kategoria: npc | Plik: data-otservbr-global/npc/woblin.lua | ETA: 0 | Heartbeat: 2025-12-17T05:24:14Z
 
 ---
 
@@ -188,27 +188,28 @@
 │ Kategoria: 📁 NPC                                    │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: data-otservbr-global/npc/a_prisoner.lua                 │
-│ Postęp: 0/52 files                                            │
+│ Plik: data-otservbr-global/npc/woblin.lua                     │
+│ Postęp: 16/52 files                                           │
 │ Info: processing                                              │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-17T05:22:03Z           │
+│ ❤️ Heartbeat: 2025-12-17T05:24:14Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2025-12-17 05:22:03 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/a_prisoner.lua
-- 2025-12-17 05:21:25 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/oressa.lua
-- 2025-12-17 05:21:20 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/mr_morris.lua
-- 2025-12-17 05:21:12 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/inigo.lua
-- 2025-12-17 05:21:06 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/garamond.lua
-- 2025-12-17 05:21:06 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/flora.lua
+- 2025-12-17 05:24:14 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/woblin.lua
+- 2025-12-17 05:24:09 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/ser_tybald.lua
+- 2025-12-17 05:24:07 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/riddler.lua
+- 2025-12-17 05:24:06 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/rafzan.lua
+- 2025-12-17 05:24:06 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/plunderpurse.lua
+- 2025-12-17 05:24:04 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/oressa.lua
 
 ---
 
 ## 🔁 W tym cyklu
 
+- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
@@ -218,7 +219,6 @@
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pt] → ok (files+1, translated+0, skipped+15) — lang=pt file=modules.json
 - 🔧 MIGRATION: zakończono kategorię [scripts] → ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+44, files+18) — migration finished
 
 
 
@@ -491,7 +491,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 05:22:04 | Local: 2025-12-17 06:22:04 CET  
+📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 05:24:14 | Local: 2025-12-17 06:24:14 CET  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

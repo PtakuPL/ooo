@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 1500, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja (UTC):** 2025-12-17 06:53:55  |  **Lokalnie:** 2025-12-17 07:53:55 CET  
+> **Aktualizacja (UTC):** 2025-12-17 06:56:05  |  **Lokalnie:** 2025-12-17 07:56:05 CET  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 27177  
-> **LIVE:** Cykl #155 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: file | Kategoria: npc | Plik: data-otservbr-global/npc/emma.lua | ETA: 0 | Heartbeat: 2025-12-17T06:53:54Z
+> **LIVE:** Cykl #11 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: cycle_end | Kategoria: events | Plik: - | ETA: 0 | Heartbeat: 2025-12-17T06:55:57Z
 
 ---
 
@@ -80,7 +80,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#155** | od uruchomienia |
+| 🔄 Cykl aktualny | **#11** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **715** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -181,46 +181,51 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   155 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #    11 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (file)                       │
-│ Kategoria: 📁 NPC                                    │
+│ Tryb:      🔧 MIGRATION (cycle_end)                  │
+│ Kategoria: 📁 EVENTS                                 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: data-otservbr-global/npc/emma.lua                       │
-│ Postęp: 6/14 files                                            │
-│ Info: processing                                              │
+│ Plik: -                                                       │
+│ Postęp: 0/0 units                                             │
+│ Info: cycle end                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-17T06:53:54Z           │
+│ ❤️ Heartbeat: 2025-12-17T06:55:57Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2025-12-17 06:53:54 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/emma.lua
-- 2025-12-17 06:53:52 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/elathriel.lua
-- 2025-12-17 06:53:46 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/dalbrect.lua
-- 2025-12-17 06:53:45 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/costello.lua
-- 2025-12-17 06:53:43 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/charos.lua
-- 2025-12-17 06:53:38 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/bertram.lua
+- 2025-12-17 06:54:36 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/woblin.lua
+- 2025-12-17 06:54:29 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/ser_tybald.lua
+- 2025-12-17 06:54:27 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/riddler.lua
+- 2025-12-17 06:54:26 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/rafzan.lua
+- 2025-12-17 06:54:25 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/plunderpurse.lua
+- 2025-12-17 06:54:23 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/oressa.lua
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pt] → ok (files+1, translated+0, skipped+13019) — lang=pt file=items.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [sk] → ok (files+1, translated+0, skipped+3) — lang=sk file=dataroot.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
-- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [lt] → ok (keys+21, files+1) — lang=lt file=actions.json
+- 🔧 MIGRATION: zakończono kategorię [events] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [events] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [events] → ok (keys+0) — mini_batch=1 processed=10/10
+- 🔧 MIGRATION: zakończono kategorię [spells] → ok (keys+16, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch [spells] → ok (keys+8) — mini_batch=2 processed=20/20
+- 🔧 MIGRATION: mini-batch [spells] → ok (keys+8) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION: zakończono kategorię [otclient_mods] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [otclient_mods] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [otclient_mods] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION: zakończono kategorię [dataroot] → ok (keys+0, files+0) — migration finished
 
 
 
 
 ## 📅 Dziś (UTC)
 
-- Cykle: **731**
+- Cykle: **738**
 - MIGRATION: **+3612** kluczy, **515** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, globalevents, items, libs...
 - Błędy: **0**
@@ -237,7 +242,7 @@
 | ⬜ Plików bez kluczy | **17** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **715** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#155** | continuous mode |
+| 🔄 Cykli wykonanych | **#11** | continuous mode |
 
 ---
 
@@ -444,7 +449,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #155 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #11 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -487,16 +492,16 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 06:53:55 | Local: 2025-12-17 07:53:55 CET  
+📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 06:56:05 | Local: 2025-12-17 07:56:05 CET  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `extended_holy_chain` - ukończono 2025-12-17 07:26
-- ✅ `root` - ukończono 2025-12-17 07:26
-- ✅ `elder_bonelord_paralyze` - ukończono 2025-12-17 07:26
+- ✅ `extended_holy_chain` - ukończono 2025-12-17 07:55
+- ✅ `root` - ukończono 2025-12-17 07:55
+- ✅ `elder_bonelord_paralyze` - ukończono 2025-12-17 07:55
 - ✅ `poison_field_rune` - ukończono 2025-12-17 07:11
 - ✅ `enchant_staff` - ukończono 2025-12-17 07:11
 - ✅ `conjure_wand_of_darkness` - ukończono 2025-12-17 07:10

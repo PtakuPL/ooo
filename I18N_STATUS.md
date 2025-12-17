@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja (UTC):** 2025-12-17 00:30:00  |  **Lokalnie:** 2025-12-17 01:30:00 CET  
+> **Aktualizacja (UTC):** 2025-12-17 00:32:12  |  **Lokalnie:** 2025-12-17 01:32:12 CET  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 25955  
-> **LIVE:** Cykl #12 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-17T00:29:44Z
+> **LIVE:** Cykl #2 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: migration_start | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-17T00:32:11Z
 
 ---
 
@@ -80,7 +80,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#12** | od uruchomienia |
+| 🔄 Cykl aktualny | **#2** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **40** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -181,18 +181,18 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #    12 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     2 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (pending_skip)               │
+│ Tryb:      🔧 MIGRATION (migration_start)            │
 │ Kategoria: 📁 PENDING_SKIP                           │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
-│ Postęp: 0/0 files                                             │
-│ Info: all categories skipped                                  │
+│ Postęp: 0/104 files                                           │
+│ Info: migration                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-17T00:29:44Z           │
+│ ❤️ Heartbeat: 2025-12-17T00:32:11Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -209,16 +209,16 @@
 
 ## 🔁 W tym cyklu
 
-- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+75, files+27) — migration finished
-- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+53, files+21) — migration finished
 - 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [ro] → ok (files+1, translated+0, skipped+66) — lang=ro file=server.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → ok (files+1, translated+0, skipped+3) — lang=es file=dataroot.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [ro] → ok (files+1, translated+0, skipped+132) — lang=ro file=monsters.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lv] → ok (files+1, translated+0, skipped+147) — lang=lv file=raids.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lv] → ok (files+1, translated+0, skipped+117) — lang=lv file=quests.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [et] → ok (files+1, translated+0, skipped+117) — lang=et file=quests.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+3) — lang=de file=dataroot.json
+- 🔧 MIGRATION: zakończono kategorię [movements] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [movements] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [movements] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+81, files+28) — migration finished
+- 🔧 MIGRATION: zakończono kategorię [movements] → ok (keys+2, files+1) — migration finished
+- 🔧 MIGRATION: mini-batch stop [movements] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [movements] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [bg] → ok (files+1, translated+0, skipped+23) — lang=bg file=startup.json
 
 
 
@@ -242,7 +242,7 @@
 | ⬜ Plików bez kluczy | **28** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **40** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#12** | continuous mode |
+| 🔄 Cykli wykonanych | **#2** | continuous mode |
 
 ---
 
@@ -448,7 +448,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #12 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #2 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -491,7 +491,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 00:30:00 | Local: 2025-12-17 01:30:00 CET  
+📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 00:32:12 | Local: 2025-12-17 01:32:12 CET  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

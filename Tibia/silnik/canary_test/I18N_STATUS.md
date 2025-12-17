@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja (UTC):** 2025-12-17 05:35:19  |  **Lokalnie:** 2025-12-17 06:35:19 CET  
+> **Aktualizacja (UTC):** 2025-12-17 05:37:36  |  **Lokalnie:** 2025-12-17 06:37:36 CET  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 26055  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: file | Kategoria: npc | Plik: data-otservbr-global/npc/a_prisoner.lua | ETA: 0 | Heartbeat: 2025-12-17T05:35:16Z
+> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: file | Kategoria: npc | Plik: data-otservbr-global/npc/a_prisoner.lua | ETA: 0 | Heartbeat: 2025-12-17T05:37:35Z
 
 ---
 
@@ -31,7 +31,7 @@
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
-| 📂 **Wszystkie pliki** | **17,769** | 100% | cały projekt |
+| 📂 **Wszystkie pliki** | **17,770** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **8,152** | 45.9% | pliki z kodem/tekstami |
 | 🔍 **Przeskanowane** | **5,581** | **68.5%** | historia workera |
 | ⏳ Nie przeskanowane | **2,571** | 31.5% | czekają na skan |
@@ -192,18 +192,18 @@
 │ Postęp: 0/52 files                                            │
 │ Info: processing                                              │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-17T05:35:16Z           │
+│ ❤️ Heartbeat: 2025-12-17T05:37:35Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2025-12-17 05:35:16 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/a_prisoner.lua
-- 2025-12-17 05:35:09 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/charos.lua
-- 2025-12-17 05:35:06 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/bertram.lua
-- 2025-12-17 05:35:03 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/a_prisoner.lua
-- 2025-12-17 05:34:43 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/woblin.lua
-- 2025-12-17 05:34:34 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/ser_tybald.lua
+- 2025-12-17 05:37:35 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/a_prisoner.lua
+- 2025-12-17 05:37:28 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/inigo.lua
+- 2025-12-17 05:37:20 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/garamond.lua
+- 2025-12-17 05:37:18 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/flora.lua
+- 2025-12-17 05:37:16 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/emma.lua
+- 2025-12-17 05:37:15 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/elathriel.lua
 
 ---
 
@@ -491,7 +491,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 05:35:19 | Local: 2025-12-17 06:35:19 CET  
+📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 05:37:36 | Local: 2025-12-17 06:37:36 CET  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 1500, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja (UTC):** 2025-12-17 08:53:00  |  **Lokalnie:** 2025-12-17 09:53:00 CET  
+> **Aktualizacja (UTC):** 2025-12-17 08:55:05  |  **Lokalnie:** 2025-12-17 09:55:05 CET  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 27177  
-> **LIVE:** Cykl #211 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-17T08:52:43Z
+> **LIVE:** Cykl #223 | Status: 🟢 RUNNING | Faza: TRANSLATION_SYNC | Etap: cycle_end | Kategoria: cs | Plik: - | ETA: 0 | Heartbeat: 2025-12-17T08:54:58Z
 
 ---
 
@@ -66,7 +66,7 @@
 | 📊 Pozostałe | 4,855 | scripts, spells, etc. |
 
 ### 🔐 COMPACT_KEYS (2–7 znaków)
-> **Status:** ✅ OK (keymap 33,523 ≥ EN 27,177; export missing: -)  
+> **Status:** ✅ OK (keymap 34,711 ≥ EN 27,177; export missing: -)  
 > **Dlaczego czasem nie uruchamia COMPACT_KEYS:** gdy status jest OK, worker przechodzi dalej do `TRANSLATION_SYNC` / `AUTO_TRANSLATE`.
 
 ### 🌍 Języki i Tłumaczenia
@@ -80,7 +80,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#211** | od uruchomienia |
+| 🔄 Cykl aktualny | **#223** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **3** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -181,46 +181,47 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   211 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   223 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (pending_skip)               │
-│ Kategoria: 📁 PENDING_SKIP                           │
+│ Tryb:      🌍 TRANSLATION_SYNC (cycle_end)           │
+│ Kategoria: 📁 CS                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
-│ Postęp: 0/0 files                                             │
-│ Info: all categories skipped                                  │
+│ Postęp: 0/0 units                                             │
+│ Info: cycle end                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-17T08:52:43Z           │
+│ ❤️ Heartbeat: 2025-12-17T08:54:58Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2025-12-17 08:06:38 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/woblin.lua
-- 2025-12-17 08:06:33 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/ser_tybald.lua
-- 2025-12-17 08:06:31 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/riddler.lua
-- 2025-12-17 08:06:31 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/rafzan.lua
-- 2025-12-17 08:06:30 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/plunderpurse.lua
-- 2025-12-17 08:06:29 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/oressa.lua
+- 2025-12-17 08:54:58 UTC | TRANSLATION_SYNC:sync_done | cs | ok | spells.json
+- 2025-12-17 08:54:57 UTC | TRANSLATION_SYNC:sync_start | cs | ok | spells.json
+- 2025-12-17 08:54:48 UTC | TRANSLATION_SYNC:sync_done | cs | ok | npc.json
+- 2025-12-17 08:54:48 UTC | TRANSLATION_SYNC:sync_start | cs | ok | npc.json
+- 2025-12-17 08:54:40 UTC | TRANSLATION_SYNC:sync_done | nl | ok | spells.json
+- 2025-12-17 08:54:40 UTC | TRANSLATION_SYNC:sync_start | nl | ok | spells.json
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=libs.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [da] → ok (files+1, translated+0, skipped+13749) — lang=da file=items.json
+- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [cs] → ok (keys+1122, files+1) — lang=cs file=spells.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+7) — lang=de file=chatchannels.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [da] → ok (files+1, translated+0, skipped+23) — lang=da file=startup.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
-- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [sl] → ok (keys+117, files+1) — lang=sl file=quests.json
+- 🌍 TRANSLATION_SYNC: SYNC_FILE_DONE [bs] → ok (keys+66, files+1) — lang=bs file=server.json
 
 
 
 
 ## 📅 Dziś (UTC)
 
-- Cykle: **774**
+- Cykle: **786**
 - MIGRATION: **+30808** kluczy, **515** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, globalevents, items, libs...
 - Błędy: **0**
@@ -237,7 +238,7 @@
 | ⬜ Plików bez kluczy | **17** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **3** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#211** | continuous mode |
+| 🔄 Cykli wykonanych | **#223** | continuous mode |
 
 ---
 
@@ -444,7 +445,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #211 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #223 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -487,7 +488,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 08:53:00 | Local: 2025-12-17 09:53:00 CET  
+📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 08:55:05 | Local: 2025-12-17 09:55:05 CET  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

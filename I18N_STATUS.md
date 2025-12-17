@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja (UTC):** 2025-12-17 05:42:07  |  **Lokalnie:** 2025-12-17 06:42:07 CET  
+> **Aktualizacja (UTC):** 2025-12-17 05:44:17  |  **Lokalnie:** 2025-12-17 06:44:17 CET  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 26055  
-> **LIVE:** Cykl #2 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: file | Kategoria: npc | Plik: data-otservbr-global/npc/bertram.lua | ETA: 0 | Heartbeat: 2025-12-17T05:42:01Z
+> **LIVE:** Cykl #3 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: file | Kategoria: npc | Plik: data-otservbr-global/npc/a_prisoner.lua | ETA: 0 | Heartbeat: 2025-12-17T05:44:15Z
 
 ---
 
@@ -53,7 +53,7 @@
 | ✅ Zmigrowane | **0** | 0.0% | mają klucze i18n |
 | 🔄 Wymaga migracji | **0** | - | trzeba dodać i18n |
 | ⚪ Czyste | **0** | - | bez tekstów |
-| 🔧 W trakcie | **17** | - | obecnie przetwarzane |
+| 🔧 W trakcie | **10** | - | obecnie przetwarzane |
 
 ### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
@@ -80,7 +80,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#2** | od uruchomienia |
+| 🔄 Cykl aktualny | **#3** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych | **0** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
@@ -181,29 +181,29 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     2 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     3 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
 │ Tryb:      🔧 MIGRATION (file)                       │
 │ Kategoria: 📁 NPC                                    │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: data-otservbr-global/npc/bertram.lua                    │
-│ Postęp: 1/52 files                                            │
+│ Plik: data-otservbr-global/npc/a_prisoner.lua                 │
+│ Postęp: 0/52 files                                            │
 │ Info: processing                                              │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-17T05:42:01Z           │
+│ ❤️ Heartbeat: 2025-12-17T05:44:15Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2025-12-17 05:42:01 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/bertram.lua
-- 2025-12-17 05:41:57 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/a_prisoner.lua
-- 2025-12-17 05:41:56 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/ser_tybald.lua
-- 2025-12-17 05:41:53 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/riddler.lua
-- 2025-12-17 05:41:51 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/rafzan.lua
-- 2025-12-17 05:41:49 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/plunderpurse.lua
+- 2025-12-17 05:44:15 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/a_prisoner.lua
+- 2025-12-17 05:44:06 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/dalbrect.lua
+- 2025-12-17 05:44:05 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/costello.lua
+- 2025-12-17 05:44:03 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/charos.lua
+- 2025-12-17 05:43:58 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/bertram.lua
+- 2025-12-17 05:43:53 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/a_prisoner.lua
 
 ---
 
@@ -213,11 +213,11 @@
 - 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
 - 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+17, files+0) — migration finished
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pt] → ok (files+1, translated+0, skipped+615) — lang=pt file=scripts.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pt] → ok (files+1, translated+0, skipped+1933) — lang=pt file=otclient_modules.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pt] → ok (files+1, translated+0, skipped+132) — lang=pt file=monsters.json
+- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+15, files+0) — migration finished
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pt] → ok (files+1, translated+0, skipped+117) — lang=pt file=quests.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pt] → ok (files+1, translated+0, skipped+6880) — lang=pt file=npc.json
+- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+61, files+27) — migration finished
+- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+77, files+28) — migration finished
 - 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
 
 
@@ -237,12 +237,12 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **17** | w tej sesji |
+| 📁 Plików przeskanowanych | **10** | w tej sesji |
 | ✅ Plików z kluczami | **0** | zawierały hardcoded strings |
-| ⬜ Plików bez kluczy | **17** | czyste (brak hardcoded) |
+| ⬜ Plików bez kluczy | **10** | czyste (brak hardcoded) |
 | 🔑 Kluczy wyciągniętych | **0** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#2** | continuous mode |
+| 🔄 Cykli wykonanych | **#3** | continuous mode |
 
 ---
 
@@ -448,7 +448,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #2 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #3 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -491,7 +491,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 05:42:07 | Local: 2025-12-17 06:42:07 CET  
+📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 05:44:17 | Local: 2025-12-17 06:44:17 CET  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

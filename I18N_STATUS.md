@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja (UTC):** 2025-12-17 05:57:31  |  **Lokalnie:** 2025-12-17 06:57:31 CET  
-> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 26055  
-> **LIVE:** Cykl #1 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-17T05:57:29Z
+> **Aktualizacja (UTC):** 2025-12-17 05:59:37  |  **Lokalnie:** 2025-12-17 06:59:37 CET  
+> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 26121  
+> **LIVE:** Cykl #7 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: cycle_end | Kategoria: spells | Plik: - | ETA: 0 | Heartbeat: 2025-12-17T05:59:32Z
 
 ---
 
@@ -33,8 +33,8 @@
 |---------|---------|---------|------|
 | 📂 **Wszystkie pliki** | **17,772** | 100% | cały projekt |
 | 📜 Do skanowania (kod) | **8,153** | 45.9% | pliki z kodem/tekstami |
-| 🔍 **Przeskanowane** | **5,592** | **68.6%** | historia workera |
-| ⏳ Nie przeskanowane | **2,561** | 31.4% | czekają na skan |
+| 🔍 **Przeskanowane** | **5,656** | **69.4%** | historia workera |
+| ⏳ Nie przeskanowane | **2,497** | 30.6% | czekają na skan |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -50,7 +50,7 @@
 ### ✅ Status Migracji
 | Status | Ilość | Procent | Opis |
 |--------|-------|---------|------|
-| ✅ Zmigrowane | **22** | 0.4% | mają klucze i18n |
+| ✅ Zmigrowane | **87** | 1.5% | mają klucze i18n |
 | 🔄 Wymaga migracji | **0** | - | trzeba dodać i18n |
 | ⚪ Czyste | **0** | - | bez tekstów |
 | 🔧 W trakcie | **17** | - | obecnie przetwarzane |
@@ -58,15 +58,15 @@
 ### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔑 **Klucze EN (źródłowe)** | **26,055** | wszystkie kategorie |
+| 🔑 **Klucze EN (źródłowe)** | **26,121** | wszystkie kategorie |
 | 📊 NPC | 6,946 | dialogi NPC |
 | 📊 Items | 13,749 | przedmioty |
 | 📊 Monsters | 132 | potwory (pliki źródłowe: 1,704) |
 | 📊 HTML | 1,495 | widoki web |
-| 📊 Pozostałe | 3,733 | scripts, spells, etc. |
+| 📊 Pozostałe | 3,799 | scripts, spells, etc. |
 
 ### 🔐 COMPACT_KEYS (2–7 znaków)
-> **Status:** ✅ OK (keymap 33,523 ≥ EN 26,055; export missing: -)  
+> **Status:** ✅ OK (keymap 33,523 ≥ EN 26,121; export missing: -)  
 > **Dlaczego czasem nie uruchamia COMPACT_KEYS:** gdy status jest OK, worker przechodzi dalej do `TRANSLATION_SYNC` / `AUTO_TRANSLATE`.
 
 ### 🌍 Języki i Tłumaczenia
@@ -80,8 +80,8 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#1** | od uruchomienia |
-| 🔑 Kluczy wyekstrahowanych | **22** | w tej sesji |
+| 🔄 Cykl aktualny | **#7** | od uruchomienia |
+| 🔑 Kluczy wyekstrahowanych | **87** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
 ---
@@ -123,7 +123,7 @@
 | 📜 Lua Scripts | 🔄 | 634/1000 (63%) | 1000 |
 | 🎒 Items Database | 🔄 | 13749/40000 (34%) | 40000 |
 | 👹 Monsters | 🔄 | 132/5000 (3%) | 5000 |
-| ✨ Spells & Magic | 🔄 | 304/400 (76%) | 400 |
+| ✨ Spells & Magic | ✅ | 370/400 (92%) | 400 |
 | ⚙️ Server C++ | 🔄 | 66/300 (22%) | 300 |
 
 ### ⏳ Faza 2: 🌐 Website (AAC)
@@ -181,18 +181,18 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     1 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     7 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (pending_skip)               │
-│ Kategoria: 📁 PENDING_SKIP                           │
+│ Tryb:      🔧 MIGRATION (cycle_end)                  │
+│ Kategoria: 📁 SPELLS                                 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
-│ Postęp: 0/0 files                                             │
-│ Info: all categories skipped                                  │
+│ Postęp: 0/0 units                                             │
+│ Info: cycle end                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-17T05:57:29Z           │
+│ ❤️ Heartbeat: 2025-12-17T05:59:32Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -209,15 +209,15 @@
 
 ## 🔁 W tym cyklu
 
-- 🔧 MIGRATION: zakończono kategorię [world] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [world] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [world] → ok (keys+0) — mini_batch=1 processed=3/3
-- 🔧 MIGRATION: zakończono kategorię [world] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [world] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [world] → ok (keys+0) — mini_batch=1 processed=10/20
-- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: zakończono kategorię [spells] → ok (keys+16, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch [spells] → ok (keys+8) — mini_batch=2 processed=20/20
+- 🔧 MIGRATION: mini-batch [spells] → ok (keys+8) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION: zakończono kategorię [events] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [events] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [events] → ok (keys+0) — mini_batch=1 processed=10/20
+- 🔧 MIGRATION: zakończono kategorię [libs] → ok (keys+0, files+0) — migration finished
+- 🔧 MIGRATION: mini-batch stop [libs] → ok (keys+0) — no new data
+- 🔧 MIGRATION: mini-batch [libs] → ok (keys+0) — mini_batch=1 processed=3/3
 - 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+0, files+0) — migration finished
 
 
@@ -226,7 +226,7 @@
 ## 📅 Dziś (UTC)
 
 - Cykle: **697**
-- MIGRATION: **+1368** kluczy, **515** plików `.lua`
+- MIGRATION: **+1500** kluczy, **515** plików `.lua`
 - Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, globalevents, items, libs...
 - Błędy: **0**
 
@@ -237,12 +237,12 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **39** | w tej sesji |
-| ✅ Plików z kluczami | **22** | zawierały hardcoded strings |
+| 📁 Plików przeskanowanych | **104** | w tej sesji |
+| ✅ Plików z kluczami | **87** | zawierały hardcoded strings |
 | ⬜ Plików bez kluczy | **17** | czyste (brak hardcoded) |
-| 🔑 Kluczy wyciągniętych | **22** | przez workera w tej sesji |
+| 🔑 Kluczy wyciągniętych | **87** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#1** | continuous mode |
+| 🔄 Cykli wykonanych | **#7** | continuous mode |
 
 ---
 
@@ -360,13 +360,13 @@
 </details>
 
 <details>
-<summary>✨ 10. Spells - 🔄 (76%)</summary>
+<summary>✨ 10. Spells - ✅ (92%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 304 |
+| 🔑 Kluczy | 370 |
 | 🎯 Cel | 400 |
-| 📊 Postęp | 76% |
+| 📊 Postęp | 92% |
 | 📁 Plik | i18n/en/spells.json |
 
 </details>
@@ -406,7 +406,7 @@
 | otclient_modules | 1987 | 0 | 0 | ✅ Active |
 | html | 1495 | 0 | 0 | ✅ Active |
 | scripts | 634 | 0 | 0 | ✅ Active |
-| spells | 304 | 0 | 0 | ✅ Active |
+| spells | 370 | 0 | 0 | ✅ Active |
 | client | 242 | 0 | 0 | ✅ Active |
 | raids | 147 | 0 | 0 | ✅ Active |
 | monsters | 132 | 0 | 0 | ✅ Active |
@@ -449,7 +449,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #1 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #7 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -484,7 +484,7 @@
 | 🧙 NPC | 6946 | █████████░░░░░░░░░░░ | 15000 | 🔄 46% |
 | 📜 Scripts | 634 | ████████████░░░░░░░░ | 1000 | 🔄 63% |
 | 👹 Monsters | 132 | ░░░░░░░░░░░░░░░░░░░░ | 5000 | 🔄 3% |
-| ✨ Spells | 304 | ███████████████░░░░░ | 400 | 🔄 76% |
+| ✨ Spells | 370 | ██████████████████░░ | 400 | ✅ 92% |
 | ⚙️ Server | 66 | ████░░░░░░░░░░░░░░░░ | 300 | 🔄 22% |
 | 🖥️ System | 0 | ░░░░░░░░░░░░░░░░░░░░ | 2000 | ⏳ 0% |
 | 🎨 UI | 0 | ░░░░░░░░░░░░░░░░░░░░ | 200 | ⏳ 0% |
@@ -492,23 +492,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 05:57:31 | Local: 2025-12-17 06:57:31 CET  
+📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 05:59:37 | Local: 2025-12-17 06:59:37 CET  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `items_classification.hpp` - ukończono 2025-12-17 06:50
-- ✅ `pch.hpp` - ukończono 2025-12-17 06:50
-- ✅ `canary_server.cpp` - ukończono 2025-12-17 06:50
-- ✅ `account.cpp` - ukończono 2025-12-17 06:50
-- ✅ `account_info.hpp` - ukończono 2025-12-17 06:50
-- ✅ `account_repository_db.hpp` - ukończono 2025-12-17 06:50
-- ✅ `account.hpp` - ukończono 2025-12-17 06:50
-- ✅ `pch.cpp` - ukończono 2025-12-17 06:50
-- ✅ `game_definitions.hpp` - ukończono 2025-12-17 06:50
-- ✅ `zone.hpp` - ukończono 2025-12-17 06:50
+- ✅ `worm_priestess_paralyze` - ukończono 2025-12-17 06:59
+- ✅ `the_welter_summon2` - ukończono 2025-12-17 06:59
+- ✅ `blast_ring` - ukończono 2025-12-17 06:59
+- ✅ `the_welter_heal2` - ukończono 2025-12-17 06:59
+- ✅ `terofar_skill_reducer_2` - ukończono 2025-12-17 06:59
+- ✅ `frozen_minion_wave` - ukończono 2025-12-17 06:59
+- ✅ `brimstone_bug_wave` - ukończono 2025-12-17 06:59
+- ✅ `energy_barrage` - ukończono 2025-12-17 06:59
+- ✅ `root` - ukończono 2025-12-17 06:59
+- ✅ `elder_bonelord_paralyze` - ukończono 2025-12-17 06:59
 
 ---
 

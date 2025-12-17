@@ -2,9 +2,9 @@
 
 <!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 400, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja (UTC):** 2025-12-17 00:34:16  |  **Lokalnie:** 2025-12-17 01:34:16 CET  
-> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 25955  
-> **LIVE:** Cykl #5 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: pending_skip | Kategoria: pending_skip | Plik: - | ETA: 0 | Heartbeat: 2025-12-17T00:33:47Z
+> **Aktualizacja (UTC):** 2025-12-17 00:36:21  |  **Lokalnie:** 2025-12-17 01:36:21 CET  
+> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 25973  
+> **LIVE:** Cykl #8 | Status: 🟢 RUNNING | Faza: MIGRATION | Etap: file | Kategoria: npc | Plik: data-otservbr-global/npc/plunderpurse.lua | ETA: 0 | Heartbeat: 2025-12-17T00:36:20Z
 
 ---
 
@@ -50,23 +50,23 @@
 ### ✅ Status Migracji
 | Status | Ilość | Procent | Opis |
 |--------|-------|---------|------|
-| ✅ Zmigrowane | **40** | 0.7% | mają klucze i18n |
-| 🔄 Wymaga migracji | **0** | - | trzeba dodać i18n |
+| ✅ Zmigrowane | **80** | 1.4% | mają klucze i18n |
+| 🔄 Wymaga migracji | **1** | - | trzeba dodać i18n |
 | ⚪ Czyste | **0** | - | bez tekstów |
-| 🔧 W trakcie | **28** | - | obecnie przetwarzane |
+| 🔧 W trakcie | **11** | - | obecnie przetwarzane |
 
 ### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔑 **Klucze EN (źródłowe)** | **25,955** | wszystkie kategorie |
-| 📊 NPC | 6,846 | dialogi NPC |
+| 🔑 **Klucze EN (źródłowe)** | **25,973** | wszystkie kategorie |
+| 📊 NPC | 6,864 | dialogi NPC |
 | 📊 Items | 13,749 | przedmioty |
 | 📊 Monsters | 132 | potwory (pliki źródłowe: 1,704) |
 | 📊 HTML | 1,495 | widoki web |
 | 📊 Pozostałe | 3,733 | scripts, spells, etc. |
 
 ### 🔐 COMPACT_KEYS (2–7 znaków)
-> **Status:** ✅ OK (keymap 31,982 ≥ EN 25,955; export missing: -)  
+> **Status:** ✅ OK (keymap 31,982 ≥ EN 25,973; export missing: -)  
 > **Dlaczego czasem nie uruchamia COMPACT_KEYS:** gdy status jest OK, worker przechodzi dalej do `TRANSLATION_SYNC` / `AUTO_TRANSLATE`.
 
 ### 🌍 Języki i Tłumaczenia
@@ -80,8 +80,8 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#5** | od uruchomienia |
-| 🔑 Kluczy wyekstrahowanych | **40** | w tej sesji |
+| 🔄 Cykl aktualny | **#8** | od uruchomienia |
+| 🔑 Kluczy wyekstrahowanych | **80** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
 ---
@@ -119,7 +119,7 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 6846/15000 (46%) | 15000 |
+| 🧙 NPC Dialogs | 🔄 | 6864/15000 (46%) | 15000 |
 | 📜 Lua Scripts | 🔄 | 634/1000 (63%) | 1000 |
 | 🎒 Items Database | 🔄 | 13749/40000 (34%) | 40000 |
 | 👹 Monsters | 🔄 | 132/5000 (3%) | 5000 |
@@ -181,52 +181,52 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #     5 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #     8 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 RUNNING                                │
-│ Tryb:      🔧 MIGRATION (pending_skip)               │
-│ Kategoria: 📁 PENDING_SKIP                           │
+│ Tryb:      🔧 MIGRATION (file)                       │
+│ Kategoria: 📁 NPC                                    │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: -                                                       │
-│ Postęp: 0/0 files                                             │
-│ Info: all categories skipped                                  │
+│ Plik: data-otservbr-global/npc/plunderpurse.lua               │
+│ Postęp: 12/68 files                                           │
+│ Info: processing                                              │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-17T00:33:47Z           │
+│ ❤️ Heartbeat: 2025-12-17T00:36:20Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2025-12-17 00:27:18 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/frederik.lua
-- 2025-12-17 00:27:17 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/frans.lua
-- 2025-12-17 00:27:16 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/erayo.lua
-- 2025-12-17 00:27:15 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/emma.lua
-- 2025-12-17 00:27:13 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/doubleday.lua
-- 2025-12-17 00:27:11 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/coltrayne.lua
+- 2025-12-17 00:36:20 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/plunderpurse.lua
+- 2025-12-17 00:36:19 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/penny.lua
+- 2025-12-17 00:36:18 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/oressa.lua
+- 2025-12-17 00:36:16 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/omrabas.lua
+- 2025-12-17 00:36:15 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/ocelus.lua
+- 2025-12-17 00:36:14 UTC | MIGRATION:file | npc | ok | data-otservbr-global/npc/nurik.lua
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🔧 MIGRATION: zakończono kategorię [movements] → ok (keys+0, files+0) — migration finished
-- 🔧 MIGRATION: mini-batch stop [movements] → ok (keys+0) — no new data
-- 🔧 MIGRATION: mini-batch [movements] → ok (keys+0) — mini_batch=1 processed=10/20
-- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+75, files+28) — migration finished
-- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+44, files+23) — migration finished
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [ro] → ok (files+1, translated+0, skipped+132) — lang=ro file=monsters.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [ro] → ok (files+1, translated+0, skipped+21) — lang=ro file=actions.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → ok (files+1, translated+0, skipped+615) — lang=pl file=scripts.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [ro] → ok (files+1, translated+0, skipped+8) — lang=ro file=chatchannels.json
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lv] → ok (files+1, translated+0, skipped+3) — lang=lv file=dataroot.json
+- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+66, files+29) — migration finished
+- 🔧 MIGRATION: zakończono kategorię [npc] → ok (keys+64, files+27) — migration finished
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [ro] → ok (files+1, translated+0, skipped+1987) — lang=ro file=otclient_modules.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pl] → ok (files+1, translated+0, skipped+17) — lang=pl file=startup.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [ro] → ok (files+1, translated+0, skipped+5) — lang=ro file=events.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lv] → ok (files+1, translated+0, skipped+21) — lang=lv file=libs.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lv] → ok (files+1, translated+0, skipped+21) — lang=lv file=libs.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [et] → ok (files+1, translated+0, skipped+132) — lang=et file=monsters.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+13749) — lang=de file=items.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+3) — lang=de file=dataroot.json
 
 
 
 
 ## 📅 Dziś (UTC)
 
-- Cykle: **16**
-- MIGRATION: **+1268** kluczy, **473** plików `.lua`
+- Cykle: **17**
+- MIGRATION: **+1286** kluczy, **487** plików `.lua`
 - Kategorie dotknięte: movements, npc, scripts
 - Błędy: **0**
 
@@ -237,12 +237,12 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **68** | w tej sesji |
-| ✅ Plików z kluczami | **40** | zawierały hardcoded strings |
-| ⬜ Plików bez kluczy | **28** | czyste (brak hardcoded) |
-| 🔑 Kluczy wyciągniętych | **40** | przez workera w tej sesji |
+| 📁 Plików przeskanowanych | **92** | w tej sesji |
+| ✅ Plików z kluczami | **80** | zawierały hardcoded strings |
+| ⬜ Plików bez kluczy | **12** | czyste (brak hardcoded) |
+| 🔑 Kluczy wyciągniętych | **80** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#5** | continuous mode |
+| 🔄 Cykli wykonanych | **#8** | continuous mode |
 
 ---
 
@@ -301,7 +301,7 @@
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 6846 |
+| 🔑 Kluczy | 6864 |
 | 🎯 Cel | 15000 |
 | 📊 Postęp | 46% |
 | 📁 Plik | i18n/en/npc.json |
@@ -402,7 +402,7 @@
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 0 | 0 | ✅ Active |
-| npc | 6846 | 0 | 0 | ✅ Active |
+| npc | 6864 | 0 | 0 | ✅ Active |
 | otclient_modules | 1987 | 0 | 0 | ✅ Active |
 | html | 1495 | 0 | 0 | ✅ Active |
 | scripts | 634 | 0 | 0 | ✅ Active |
@@ -448,7 +448,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #5 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #8 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -480,7 +480,7 @@
 | Kategoria | Kluczy | Postęp | Cel | Status |
 |-----------|--------|--------|-----|--------|
 | 🎒 Items | 13749 | ██████░░░░░░░░░░░░░░ | 40000 | 🔄 34% |
-| 🧙 NPC | 6846 | █████████░░░░░░░░░░░ | 15000 | 🔄 46% |
+| 🧙 NPC | 6864 | █████████░░░░░░░░░░░ | 15000 | 🔄 46% |
 | 📜 Scripts | 634 | ████████████░░░░░░░░ | 1000 | 🔄 63% |
 | 👹 Monsters | 132 | ░░░░░░░░░░░░░░░░░░░░ | 5000 | 🔄 3% |
 | ✨ Spells | 304 | ███████████████░░░░░ | 400 | 🔄 76% |
@@ -491,23 +491,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 00:34:16 | Local: 2025-12-17 01:34:16 CET  
+📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 00:36:21 | Local: 2025-12-17 01:36:21 CET  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `zoltan` - ukończono 2025-12-17 01:10
-- ✅ `znozel` - ukończono 2025-12-17 01:10
-- ✅ `zlak` - ukończono 2025-12-17 01:10
-- ✅ `zizzle` - ukończono 2025-12-17 01:10
-- ✅ `ziyad` - ukończono 2025-12-17 01:10
-- ✅ `zirella` - ukończono 2025-12-17 01:10
-- ✅ `zerbrus` - ukończono 2025-12-17 01:10
-- ✅ `zedrulon_the_fallen` - ukończono 2025-12-17 01:10
-- ✅ `zebron` - ukończono 2025-12-17 01:10
-- ✅ `zarifan` - ukończono 2025-12-17 01:10
+- ✅ `oressa` - ukończono 2025-12-17 01:36
+- ✅ `omrabas` - ukończono 2025-12-17 01:36
+- ✅ `ocelus` - ukończono 2025-12-17 01:36
+- ✅ `nurik` - ukończono 2025-12-17 01:36
+- ✅ `noozer` - ukończono 2025-12-17 01:36
+- ✅ `nomad` - ukończono 2025-12-17 01:36
+- ✅ `nokmir` - ukończono 2025-12-17 01:36
+- ✅ `nelly` - ukończono 2025-12-17 01:35
+- ✅ `mr_morris` - ukończono 2025-12-17 01:35
+- ✅ `mordecai` - ukończono 2025-12-17 01:35
 
 ---
 

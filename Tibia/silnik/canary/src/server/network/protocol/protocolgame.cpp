@@ -43,6 +43,7 @@
 #include "lua/creature/creatureevent.hpp"
 #include "lua/modules/modules.hpp"
 #include "server/network/message/outputmessage.hpp"
+#include "utils/i18n/translator.hpp"
 #include "utils/tools.hpp"
 #include "creatures/players/vocations/vocation.hpp"
 
@@ -2866,17 +2867,21 @@ void ProtocolGame::parseLeaderFinderWindow(NetworkMessage &msg) {
 				}
 			}
 
+			const std::string fallbackLocale = g_configManager().getString(DEFAULT_LOCALE);
+			const auto &memberLocale = member->getLocale();
+			const std::string &activeLocale = memberLocale.empty() ? fallbackLocale : memberLocale;
+
 			switch (memberStatus) {
 				case 2: {
-					member->sendTextMessage(MESSAGE_STATUS, "You are invited to a new team.");
+					member->sendTextMessage(MESSAGE_STATUS, i18n::g_translator().get("src.server.network.protocol.protocolgame.L2871.2411", activeLocale));
 					break;
 				}
 				case 3: {
-					member->sendTextMessage(MESSAGE_STATUS, "Your team finder request was accepted.");
+					member->sendTextMessage(MESSAGE_STATUS, i18n::g_translator().get("src.server.network.protocol.protocolgame.L2875.2412", activeLocale));
 					break;
 				}
 				case 4: {
-					member->sendTextMessage(MESSAGE_STATUS, "Your team finder request was denied.");
+					member->sendTextMessage(MESSAGE_STATUS, i18n::g_translator().get("src.server.network.protocol.protocolgame.L2879.2413", activeLocale));
 					break;
 				}
 
@@ -2918,7 +2923,10 @@ void ProtocolGame::parseMemberFinderWindow(NetworkMessage &msg) {
 		}
 
 		if (action == 1) {
-			leader->sendTextMessage(MESSAGE_STATUS, "There is a new request to join your team.");
+			const std::string fallbackLocale = g_configManager().getString(DEFAULT_LOCALE);
+			const auto &leaderLocale = leader->getLocale();
+			const std::string &activeLocale = leaderLocale.empty() ? fallbackLocale : leaderLocale;
+			leader->sendTextMessage(MESSAGE_STATUS, i18n::g_translator().get("src.server.network.protocol.protocolgame.L2921.2414", activeLocale));
 			teamAssemble->membersMap.insert({ player->getGUID(), 1 });
 		} else {
 			for (auto itt = teamAssemble->membersMap.begin(), end = teamAssemble->membersMap.end(); itt != end; ++itt) {
@@ -4704,7 +4712,10 @@ void ProtocolGame::sendPremiumTrigger() {
 void ProtocolGame::sendTextMessage(const TextMessage &message) {
 	if (message.type == MESSAGE_NONE) {
 		g_logger().error("[ProtocolGame::sendTextMessage] - Message type is wrong, missing or invalid for player with name {}, on position {}", player->getName(), player->getPosition().toString());
-		player->sendTextMessage(MESSAGE_ADMINISTRATOR, "There was a problem requesting your message, please contact the administrator");
+		const std::string fallbackLocale = g_configManager().getString(DEFAULT_LOCALE);
+		const auto &playerLocale = player->getLocale();
+		const std::string &activeLocale = playerLocale.empty() ? fallbackLocale : playerLocale;
+		player->sendTextMessage(MESSAGE_ADMINISTRATOR, i18n::g_translator().get("src.server.network.protocol.protocolgame.L4707.2415", activeLocale));
 		return;
 	}
 

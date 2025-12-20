@@ -43,7 +43,6 @@
 #include "lua/creature/creatureevent.hpp"
 #include "lua/modules/modules.hpp"
 #include "server/network/message/outputmessage.hpp"
-#include "utils/i18n/translator.hpp"
 #include "utils/tools.hpp"
 #include "creatures/players/vocations/vocation.hpp"
 
@@ -147,19 +146,6 @@ namespace {
 			msg.addDouble(0);
 			msg.addByte(0);
 		}
-	}
-
-	std::string getActiveLocale(const std::shared_ptr<Player> &player) {
-		const std::string fallbackLocale = g_configManager().getString(DEFAULT_LOCALE);
-		if (!player) {
-			return fallbackLocale;
-		}
-
-		const auto &playerLocale = player->getLocale();
-		if (playerLocale.empty()) {
-			return fallbackLocale;
-		}
-		return playerLocale;
 	}
 
 	/**
@@ -2880,19 +2866,17 @@ void ProtocolGame::parseLeaderFinderWindow(NetworkMessage &msg) {
 				}
 			}
 
-			const auto activeLocale = getActiveLocale(member);
-
 			switch (memberStatus) {
 				case 2: {
-					member->sendTextMessage(MESSAGE_STATUS, i18n::g_translator().get("src.server.network.protocol.protocolgame.L2871.2411", activeLocale));
+					member->sendLocalizedTextMessage(MESSAGE_STATUS, "src.server.network.protocol.protocolgame.L2871.2411", {});
 					break;
 				}
 				case 3: {
-					member->sendTextMessage(MESSAGE_STATUS, i18n::g_translator().get("src.server.network.protocol.protocolgame.L2875.2412", activeLocale));
+					member->sendLocalizedTextMessage(MESSAGE_STATUS, "src.server.network.protocol.protocolgame.L2875.2412", {});
 					break;
 				}
 				case 4: {
-					member->sendTextMessage(MESSAGE_STATUS, i18n::g_translator().get("src.server.network.protocol.protocolgame.L2879.2413", activeLocale));
+					member->sendLocalizedTextMessage(MESSAGE_STATUS, "src.server.network.protocol.protocolgame.L2879.2413", {});
 					break;
 				}
 
@@ -2934,8 +2918,7 @@ void ProtocolGame::parseMemberFinderWindow(NetworkMessage &msg) {
 		}
 
 		if (action == 1) {
-			const auto activeLocale = getActiveLocale(leader);
-			leader->sendTextMessage(MESSAGE_STATUS, i18n::g_translator().get("src.server.network.protocol.protocolgame.L2921.2414", activeLocale));
+			leader->sendLocalizedTextMessage(MESSAGE_STATUS, "src.server.network.protocol.protocolgame.L2921.2414", {});
 			teamAssemble->membersMap.insert({ player->getGUID(), 1 });
 		} else {
 			for (auto itt = teamAssemble->membersMap.begin(), end = teamAssemble->membersMap.end(); itt != end; ++itt) {
@@ -4721,8 +4704,7 @@ void ProtocolGame::sendPremiumTrigger() {
 void ProtocolGame::sendTextMessage(const TextMessage &message) {
 	if (message.type == MESSAGE_NONE) {
 		g_logger().error("[ProtocolGame::sendTextMessage] - Message type is wrong, missing or invalid for player with name {}, on position {}", player->getName(), player->getPosition().toString());
-		const auto activeLocale = getActiveLocale(player);
-		player->sendTextMessage(MESSAGE_ADMINISTRATOR, i18n::g_translator().get("src.server.network.protocol.protocolgame.L4707.2415", activeLocale));
+		player->sendLocalizedTextMessage(MESSAGE_ADMINISTRATOR, "src.server.network.protocol.protocolgame.L4707.2415", {});
 		return;
 	}
 

@@ -58,9 +58,9 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "marlene" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.bruno.stdmod_6" })
 keywordHandler:addKeyword({ "graubart" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.bruno.stdmod_7" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Ahoi, |PLAYERNAME|. You want to buy some fresh fish?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and come again!")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Buy all the fish you want. It's fresh and healthy, promised.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.bruno.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.bruno.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.bruno.sendtrade_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

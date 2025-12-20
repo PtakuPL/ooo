@@ -6,7 +6,7 @@ function basin.onUse(player, item, frompos, item2, topos)
 		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_basin.msg_1")
 		player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Eleven.Basin, 1)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Sorry")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_basin.msg_1")
 	end
 	return true
 end

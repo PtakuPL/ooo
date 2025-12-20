@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Stop by and rest a while, tired adventurer! Have a look at my wares!" },
+	{ i18nKey = "npc.lubo.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -153,9 +153,9 @@ keywordHandler:addKeyword({ "hat" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "finger" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lubo.stdmod_7" })
 keywordHandler:addKeyword({ "pet" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lubo.stdmod_8" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to my adventurer shop, |PLAYERNAME|! What do you need? Ask me for a {trade} to look at my wares.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.lubo.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.lubo.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.lubo.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

@@ -85,7 +85,7 @@ end
 -- Function called by the callback "npcHandler:setCallback(CALLBACK_GREET, greetCallback)" in end of file
 local function greetCallback(npc, creature)
 	local playerId = creature:getId()
-	npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|, you need more info about {canary}?")
+	NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.canary.greet_msg_1")
 	return true
 end
 
@@ -116,9 +116,9 @@ npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
 -- Bye message
-npcHandler:setMessage(MESSAGE_FAREWELL, "Yeah, good bye and don't come again!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.canary.farewell_msg_1")
 -- Walkaway message
-npcHandler:setMessage(MESSAGE_WALKAWAY, "You not have education?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.canary.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

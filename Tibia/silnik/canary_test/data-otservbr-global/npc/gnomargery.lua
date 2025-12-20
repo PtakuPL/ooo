@@ -147,11 +147,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	/////////////////////]]
 	if MsgContains(message, "deliver") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Parcel_Daily) >= os.time() then
-			return npcHandler:say("Sorry, you have to wait " .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Parcel_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_1", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Parcel_Daily) - os.time()) })
 		end
 
 		if player:getLevel() < level then
-			return npcHandler:say("Sorry, you are not on the required minimum level [" .. level .. "].", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_2", { level })
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Parcel_Main) == -1 then
@@ -179,11 +179,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	////////////////]]
 	if MsgContains(message, "undercover") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Undercover_Daily) >= os.time() then
-			return npcHandler:say("Sorry, you have to wait " .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Undercover_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_3", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Undercover_Daily) - os.time()) })
 		end
 
 		if player:getLevel() < level then
-			return npcHandler:say("Sorry, you are not on the required minimum level [" .. level .. "].", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_4", { level })
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Undercover_Main) == -1 then
@@ -210,11 +210,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	//////////////////]]
 	if MsgContains(message, "temperature") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Lava_Daily) >= os.time() then
-			return npcHandler:say("Sorry, you have to wait " .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Lava_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_5", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Lava_Daily) - os.time()) })
 		end
 
 		if player:getLevel() < level then
-			return npcHandler:say("Sorry, you are not on the required minimum level [" .. level .. "].", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_6", { level })
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Lava_Main) == -1 then
@@ -242,11 +242,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	///////////]]
 	if MsgContains(message, "kill") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Kill_Daily) >= os.time() then
-			return npcHandler:say("Sorry, you have to wait " .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Kill_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_7", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Kill_Daily) - os.time()) })
 		end
 
 		if player:getLevel() < level then
-			return npcHandler:say("Sorry, you are not on the required minimum level [" .. level .. "].", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_8", { level })
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Kill_Main) == -1 then
@@ -270,7 +270,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Hi!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gnomargery.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

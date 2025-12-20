@@ -16,7 +16,7 @@ UIWindow
   anchors.fill: parent
 
   LocalesMainLabel
-    !text: tr('Select your language')
+    !text: tr("otclient_modules.locales_otui.tr_1")
     text-auto-resize: true
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.verticalCenter: parent.verticalCenter

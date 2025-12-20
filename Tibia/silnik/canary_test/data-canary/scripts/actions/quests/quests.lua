@@ -26,7 +26,7 @@ function quests.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 				player:sendTextMessage(MESSAGE_LOOK, "You have found a " .. itemType:getName() .. " weighing " .. itemWeight .. " oz it's too heavy.")
 			end
 		else
-			player:sendTextMessage(MESSAGE_LOOK, "It is empty.")
+			player:sendLocalizedTextMessage(MESSAGE_LOOK, "actions.quests.msg_2")
 		end
 	elseif player:getStorageValue(item.uid) == -1 then
 		if playerCap >= itemWeight then
@@ -37,7 +37,7 @@ function quests.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			player:sendTextMessage(MESSAGE_LOOK, "You have found a " .. itemType:getName() .. " weighing " .. itemWeight .. " oz it's too heavy.")
 		end
 	else
-		player:sendTextMessage(MESSAGE_LOOK, "It is empty.")
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "actions.quests.msg_1")
 	end
 	return true
 end

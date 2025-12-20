@@ -1,1 +1,910 @@
-{}
+{
+  "de": {
+    "channel.help.name": {
+      "src_hash": "6a26f548831e6a8c26bfbbd9f6ec61e0",
+      "text": "Hilfe"
+    },
+    "otclient_modules.character.tr_56": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.character.tr_57": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.charms.tr_1": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.charms.tr_10": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.charms.tr_13": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.charms.tr_14": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.charms.tr_17": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.charms.tr_18": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.charms.tr_2": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.charms.tr_5": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.charms.tr_6": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.charms.tr_9": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.game_shop.tr_16": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kaufen"
+    },
+    "otclient_modules.game_shop.tr_17": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kaufen"
+    },
+    "otclient_modules.game_shop.tr_18": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kaufen"
+    },
+    "otclient_modules.game_shop.tr_3": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.game_shop.tr_4": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.game_shop.tr_5": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.game_shop.tr_6": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.game_store.tr_2": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kaufen"
+    },
+    "otclient_modules.gameinterface.tr_43": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.gameinterface.tr_44": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.house.tr_31": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.house.tr_32": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.house.tr_39": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.house.tr_40": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.house.tr_43": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.house.tr_44": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.house.tr_49": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.house.tr_50": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.house.tr_55": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.house.tr_56": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.house.tr_61": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.house.tr_62": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.imbuing.tr_2": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.imbuing.tr_3": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.imbuing.tr_5": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.imbuing.tr_6": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.items.tr_26": {
+      "src_hash": "9768feb3fdb1f267b06093bc572952dd",
+      "text": "Gold"
+    },
+    "otclient_modules.market.tr_16": {
+      "src_hash": "e07e81c20cf5935f5225765f0af81755",
+      "text": "Gold"
+    },
+    "otclient_modules.market.tr_20": {
+      "src_hash": "3068c5a98c003498f1fec0c489212e8b",
+      "text": "Verkaufen"
+    },
+    "otclient_modules.market.tr_21": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kaufen"
+    },
+    "otclient_modules.npctrade.tr_1": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kaufen"
+    },
+    "otclient_modules.npctrade_otui.tr_14": {
+      "src_hash": "3068c5a98c003498f1fec0c489212e8b",
+      "text": "Verkaufen"
+    },
+    "otclient_modules.npctrade_otui.tr_16": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kaufen"
+    },
+    "otclient_modules.npctrade_otui.tr_2": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kaufen"
+    },
+    "otclient_modules.serverlist.tr_1": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.serverlist.tr_2": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.spelllist_otui.tr_1": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.spelllist_otui.tr_2": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.tasks.tr_10": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Ja"
+    },
+    "otclient_modules.tasks.tr_9": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nein"
+    },
+    "otclient_modules.tradewindow_otui.tr_3": {
+      "src_hash": "5f390d80b20daad8f5d2f483fb0ae9d8",
+      "text": "Handel"
+    },
+    "otclient_modules.ui_otui.tr_2": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kaufen"
+    }
+  },
+  "pl": {
+    "otclient_modules.character.tr_56": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.character.tr_57": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.character_otui.tr_89": {
+      "src_hash": "02fcc64668dd1b6a85e60ac9797f2dc7",
+      "text": "Mana"
+    },
+    "otclient_modules.charms.tr_1": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.charms.tr_10": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.charms.tr_13": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.charms.tr_14": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.charms.tr_17": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.charms.tr_18": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.charms.tr_2": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.charms.tr_5": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.charms.tr_6": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.charms.tr_9": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.cooldown_otui.tr_9": {
+      "src_hash": "dcfafcb4323b102c7e204555d313ba0a",
+      "text": "Atak"
+    },
+    "otclient_modules.game_shop.tr_16": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kup"
+    },
+    "otclient_modules.game_shop.tr_17": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kup"
+    },
+    "otclient_modules.game_shop.tr_18": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kup"
+    },
+    "otclient_modules.game_shop.tr_3": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.game_shop.tr_4": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.game_shop.tr_5": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.game_shop.tr_6": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.game_store.tr_2": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kup"
+    },
+    "otclient_modules.gameinterface.tr_23": {
+      "src_hash": "dcfafcb4323b102c7e204555d313ba0a",
+      "text": "Atak"
+    },
+    "otclient_modules.gameinterface.tr_43": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.gameinterface.tr_44": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.house.tr_31": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.house.tr_32": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.house.tr_39": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.house.tr_40": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.house.tr_43": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.house.tr_44": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.house.tr_49": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.house.tr_50": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.house.tr_55": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.house.tr_56": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.house.tr_61": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.house.tr_62": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.imbuing.tr_2": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.imbuing.tr_3": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.imbuing.tr_5": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.imbuing.tr_6": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.items.tr_26": {
+      "src_hash": "9768feb3fdb1f267b06093bc572952dd",
+      "text": "Złoto"
+    },
+    "otclient_modules.market.tr_16": {
+      "src_hash": "e07e81c20cf5935f5225765f0af81755",
+      "text": "Złoto"
+    },
+    "otclient_modules.market.tr_20": {
+      "src_hash": "3068c5a98c003498f1fec0c489212e8b",
+      "text": "Sprzedaj"
+    },
+    "otclient_modules.market.tr_21": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kup"
+    },
+    "otclient_modules.npctrade.tr_1": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kup"
+    },
+    "otclient_modules.npctrade_otui.tr_14": {
+      "src_hash": "3068c5a98c003498f1fec0c489212e8b",
+      "text": "Sprzedaj"
+    },
+    "otclient_modules.npctrade_otui.tr_16": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kup"
+    },
+    "otclient_modules.npctrade_otui.tr_2": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kup"
+    },
+    "otclient_modules.serverlist.tr_1": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.serverlist.tr_2": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.skills_otui.tr_54": {
+      "src_hash": "02fcc64668dd1b6a85e60ac9797f2dc7",
+      "text": "Mana"
+    },
+    "otclient_modules.spelllist_otui.tr_1": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.spelllist_otui.tr_19": {
+      "src_hash": "02fcc64668dd1b6a85e60ac9797f2dc7",
+      "text": "Mana"
+    },
+    "otclient_modules.spelllist_otui.tr_2": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.spelllist_otui.tr_7": {
+      "src_hash": "dcfafcb4323b102c7e204555d313ba0a",
+      "text": "Atak"
+    },
+    "otclient_modules.tasks.tr_10": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Tak"
+    },
+    "otclient_modules.tasks.tr_9": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Nie"
+    },
+    "otclient_modules.tradewindow_otui.tr_3": {
+      "src_hash": "5f390d80b20daad8f5d2f483fb0ae9d8",
+      "text": "Handel"
+    },
+    "otclient_modules.ui_otui.tr_2": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Kup"
+    }
+  },
+  "es": {
+    "channel.help.name": {
+      "src_hash": "6a26f548831e6a8c26bfbbd9f6ec61e0",
+      "text": "Ayuda"
+    },
+    "otclient_modules.character.tr_56": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.character.tr_57": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.charms.tr_1": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.charms.tr_10": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.charms.tr_13": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.charms.tr_14": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.charms.tr_17": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.charms.tr_18": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.charms.tr_2": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.charms.tr_5": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.charms.tr_6": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.charms.tr_9": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.game_shop.tr_16": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    },
+    "otclient_modules.game_shop.tr_17": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    },
+    "otclient_modules.game_shop.tr_18": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    },
+    "otclient_modules.game_shop.tr_3": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.game_shop.tr_4": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.game_shop.tr_5": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.game_shop.tr_6": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.game_store.tr_2": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    },
+    "otclient_modules.gameinterface.tr_43": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.gameinterface.tr_44": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.house.tr_31": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.house.tr_32": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.house.tr_39": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.house.tr_40": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.house.tr_43": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.house.tr_44": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.house.tr_49": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.house.tr_50": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.house.tr_55": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.house.tr_56": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.house.tr_61": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.house.tr_62": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.imbuing.tr_2": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.imbuing.tr_3": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.imbuing.tr_5": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.imbuing.tr_6": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.items.tr_26": {
+      "src_hash": "9768feb3fdb1f267b06093bc572952dd",
+      "text": "Oro"
+    },
+    "otclient_modules.market.tr_16": {
+      "src_hash": "e07e81c20cf5935f5225765f0af81755",
+      "text": "Oro"
+    },
+    "otclient_modules.market.tr_20": {
+      "src_hash": "3068c5a98c003498f1fec0c489212e8b",
+      "text": "Vender"
+    },
+    "otclient_modules.market.tr_21": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    },
+    "otclient_modules.npctrade.tr_1": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    },
+    "otclient_modules.npctrade_otui.tr_14": {
+      "src_hash": "3068c5a98c003498f1fec0c489212e8b",
+      "text": "Vender"
+    },
+    "otclient_modules.npctrade_otui.tr_16": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    },
+    "otclient_modules.npctrade_otui.tr_2": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    },
+    "otclient_modules.serverlist.tr_1": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.serverlist.tr_2": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.spelllist_otui.tr_1": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.spelllist_otui.tr_2": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.tasks.tr_10": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sí"
+    },
+    "otclient_modules.tasks.tr_9": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "No"
+    },
+    "otclient_modules.tradewindow_otui.tr_3": {
+      "src_hash": "5f390d80b20daad8f5d2f483fb0ae9d8",
+      "text": "Comercio"
+    },
+    "otclient_modules.ui_otui.tr_2": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    }
+  },
+  "pt": {
+    "channel.help.name": {
+      "src_hash": "6a26f548831e6a8c26bfbbd9f6ec61e0",
+      "text": "Ajuda"
+    },
+    "otclient_modules.character.tr_56": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.character.tr_57": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.charms.tr_1": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.charms.tr_10": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.charms.tr_13": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.charms.tr_14": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.charms.tr_17": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.charms.tr_18": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.charms.tr_2": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.charms.tr_5": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.charms.tr_6": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.charms.tr_9": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.game_shop.tr_16": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    },
+    "otclient_modules.game_shop.tr_17": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    },
+    "otclient_modules.game_shop.tr_18": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    },
+    "otclient_modules.game_shop.tr_3": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.game_shop.tr_4": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.game_shop.tr_5": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.game_shop.tr_6": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.game_store.tr_2": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    },
+    "otclient_modules.gameinterface.tr_43": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.gameinterface.tr_44": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.house.tr_31": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.house.tr_32": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.house.tr_39": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.house.tr_40": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.house.tr_43": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.house.tr_44": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.house.tr_49": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.house.tr_50": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.house.tr_55": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.house.tr_56": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.house.tr_61": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.house.tr_62": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.imbuing.tr_2": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.imbuing.tr_3": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.imbuing.tr_5": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.imbuing.tr_6": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.items.tr_26": {
+      "src_hash": "9768feb3fdb1f267b06093bc572952dd",
+      "text": "Ouro"
+    },
+    "otclient_modules.market.tr_16": {
+      "src_hash": "e07e81c20cf5935f5225765f0af81755",
+      "text": "Ouro"
+    },
+    "otclient_modules.market.tr_20": {
+      "src_hash": "3068c5a98c003498f1fec0c489212e8b",
+      "text": "Vender"
+    },
+    "otclient_modules.market.tr_21": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    },
+    "otclient_modules.npctrade.tr_1": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    },
+    "otclient_modules.npctrade_otui.tr_14": {
+      "src_hash": "3068c5a98c003498f1fec0c489212e8b",
+      "text": "Vender"
+    },
+    "otclient_modules.npctrade_otui.tr_16": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    },
+    "otclient_modules.npctrade_otui.tr_2": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    },
+    "otclient_modules.serverlist.tr_1": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.serverlist.tr_2": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.spelllist_otui.tr_1": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.spelllist_otui.tr_2": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.tasks.tr_10": {
+      "src_hash": "93cba07454f06a4a960172bbd6e2a435",
+      "text": "Sim"
+    },
+    "otclient_modules.tasks.tr_9": {
+      "src_hash": "bafd7322c6e97d25b6299b5d6fe8920b",
+      "text": "Não"
+    },
+    "otclient_modules.tradewindow_otui.tr_3": {
+      "src_hash": "5f390d80b20daad8f5d2f483fb0ae9d8",
+      "text": "Comércio"
+    },
+    "otclient_modules.ui_otui.tr_2": {
+      "src_hash": "831a28f1e8df07c553fcd59546465d13",
+      "text": "Comprar"
+    }
+  }
+}

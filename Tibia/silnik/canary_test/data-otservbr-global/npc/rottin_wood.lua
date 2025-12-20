@@ -195,7 +195,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Hunter's greeting! I assume you want something from me since you came all the way out here on your own. This is a dangerous place to be, I doubt that all my men will accept strangers like I do. You don't seem to have any problems with that, though.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.rottin_wood.greet_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "It's a wise idea to store your money in your bank account.", yell = false },
+	{ i18nKey = "npc.naji.voice_1", yell = false },
 }
 
 local keywordHandler = KeywordHandler:new()

@@ -42,17 +42,17 @@ npcConfig.voices = {
 	interval = 15000,  -- 15 seconds
 	chance = 50,       -- 50% chance
 	{
-		text = "Best potions in town!",  -- Fallback for old clients
+		i18nKey = "npc.example_merchant_i18n.voice_1",  -- Fallback for old clients
 		yell = false,
 		i18nKey = "nv.example_merchant.1"  -- Key for translation
 	},
 	{
-		text = "Quality weapons and armor!",
+		i18nKey = "npc.example_merchant_i18n.voice_2",
 		yell = false,
 		i18nKey = "nv.example_merchant.2"
 	},
 	{
-		text = "SPECIAL OFFERS TODAY!",
+		i18nKey = "npc.example_merchant_i18n.voice_3",
 		yell = true,  -- This is a yell
 		i18nKey = "nv.example_merchant.3"
 	},
@@ -164,7 +164,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		-- Option 1: Server formats, sends plain text
 		local discount = 20
 		local itemName = "Magic Sword"
-		npcHandler:say("Today's special: " .. itemName .. " with " .. discount .. "% discount!", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.example_merchant_i18n.say_1", { itemName, discount })
 		
 		-- Option 2 (future): Send key with args to client
 		-- player:sendLocalizedTextMessage(MESSAGE_NPC_FROM, "npc.example_merchant.special", {discount, itemName})
@@ -183,13 +183,13 @@ npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 -- Add basic keywords with i18n
 keywordHandler:addKeyword({"bye"}, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Farewell, %N. Visit me again!",
+	i18nKey = "npc.example_merchant_i18n.stdmod_1",
 	i18nKey = "npc.example_merchant.farewell"  -- I18N key for this response
 })
 
 keywordHandler:addKeyword({"trade"}, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Of course! Here are my offers.",
+	i18nKey = "npc.example_merchant_i18n.stdmod_2",
 	i18nKey = "npc.example_merchant.trade",
 	-- This would also open trade window
 	-- onSay = function(npc, creature)

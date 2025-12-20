@@ -114,14 +114,14 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.multi_2")
 	elseif config[message] then
 		local itemType = ItemType(config[message].itemid)
-		npcHandler:say(string.format("Do you want to trade %s %s for %d %s tokens?", (itemType:getArticle() ~= "" and itemType:getArticle() or ""), itemType:getName(), config[message].token.count, config[message].token.type), npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_1", { (itemType:getArticle() ~= "" and itemType:getArticle() or ""), itemType:getName(), config[message].token.count, config[message].token.type })
 		npcHandler:setTopic(playerId, 1)
 		topic[playerId] = message
 	elseif MsgContains(message, "relations") then
 		local player = Player(creature)
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) >= 25 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_1")
-			npcHandler:say("Your renown amongst us gnomes is currently {" .. math.max(0, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank)) .. "}. Do you want to improve your standing by sacrificing tokens? One token will raise your renown by 5 points. ", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_2", { math.max(0, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank)) })
 			npcHandler:setTopic(playerId, 2)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_2")
@@ -129,7 +129,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif npcHandler:getTopic(playerId) == 3 then
 		local amount = getMoneyCount(message)
 		if amount > 0 then
-			npcHandler:say("Do you really want to trade " .. amount .. " minor tokens for " .. amount * 5 .. " renown?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_3", { amount, amount * 5 })
 			renown[playerId] = amount
 			npcHandler:setTopic(playerId, 4)
 		end
@@ -140,7 +140,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		if npcHandler:getTopic(playerId) == 1 then
 			local player, targetTable = Player(creature), config[topic[playerId]]
 			if player:getItemCount(targetTable.token.id) < targetTable.token.count then
-				npcHandler:say("Sorry, you don't have enough " .. targetTable.token.type .. " tokens with you.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_4", { targetTable.token.type })
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -160,7 +160,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 
 			player:removeItem(targetTable.token.id, targetTable.token.count)
-			npcHandler:say("Here have one of our " .. item:getPluralName() .. ".", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_5", { item:getPluralName() })
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_8")
@@ -170,7 +170,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:removeItem(16128, renown[playerId]) then
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank, math.max(0, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank)) + renown[playerId] * 5)
 				player:checkGnomeRank()
-				npcHandler:say("As you wish! Your new renown is {" .. player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) .. "}.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_6", { player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) })
 			else
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_9")
 			end
@@ -192,7 +192,7 @@ local function onReleaseFocus(npc, creature)
 	topic[playerId], renown[playerId] = nil, nil
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Oh, hello! I'm the gnome-human relations assistant. I am here for you to trade your tokens for {equipment}, resupply you with mission {items} and talk to you about your {relations} to us gnomes! ...")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gnomally.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

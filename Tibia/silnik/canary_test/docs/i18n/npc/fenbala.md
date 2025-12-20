@@ -1,7 +1,7 @@
 # NPC: fenbala
 
 **Plik:** `data-otservbr-global/npc/fenbala.lua`
-**Data migracji:** 2025-12-10 14:11
+**Data migracji:** 2025-12-17 00:57
 **Liczba tekstów:** 2
 
 ## Klucze i18n

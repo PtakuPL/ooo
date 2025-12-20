@@ -140,27 +140,27 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.multi_2")
 		npcHandler:setTopic(playerId, 1)
 	elseif table.contains({ "pendulet", "sleep shawl", "blister ring", "theurgic amulet", "ring of souls", "turtle amulet" }, message:lower()) and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say("Should I enchant the item " .. message .. " for 2 " .. ItemType(npc:getCurrency()):getPluralName():lower() .. "?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_1", { message, ItemType(npc:getCurrency()):getPluralName():lower() })
 		charge = message:lower()
 		chargePrice = 2
 		npcHandler:setTopic(playerId, 2)
 	elseif table.contains({ "spiritthorn ring", "alicorn ring", "arcanomancer sigil", "arboreal ring" }, message:lower()) and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say("Should I enchant the item " .. message .. " for 5 " .. ItemType(npc:getCurrency()):getPluralName():lower() .. "?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_2", { message, ItemType(npc:getCurrency()):getPluralName():lower() })
 		charge = message:lower()
 		chargePrice = 5
 		npcHandler:setTopic(playerId, 2)
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "yes") then
 			if not chargeItem[charge] then
-				npcHandler:say("Sorry, you don't have an unenchanted " .. charge .. ".", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_3", { charge })
 			else
 				if (player:getItemCount(npc:getCurrency()) >= chargePrice) and (player:getItemCount(chargeItem[charge].noChargeID) >= 1) then
 					player:removeItem(npc:getCurrency(), chargePrice)
 					player:removeItem(chargeItem[charge].noChargeID, 1)
 					local itemAdd = player:addItem(chargeItem[charge].ChargeID, 1)
-					npcHandler:say("Ah, excellent. Here is your " .. itemAdd:getName():lower() .. ".", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_4", { itemAdd:getName():lower() })
 				else
-					npcHandler:say("Sorry, friend, but one good turn deserves another. Bring enough " .. ItemType(npc:getCurrency()):getPluralName():lower() .. " and it's a deal.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_5", { ItemType(npc:getCurrency()):getPluralName():lower() })
 				end
 				npcHandler:setTopic(playerId, 0)
 			end
@@ -186,7 +186,7 @@ local function creatureSayCallback(npc, creature, type, message)
 						player:addAchievement("Rift Warrior")
 					end
 				else
-					npcHandler:say("Sorry, friend, but one good turn deserves another. Bring enough " .. ItemType(npc:getCurrency()):getPluralName():lower() .. " and it's a deal.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_6", { ItemType(npc:getCurrency()):getPluralName():lower() })
 				end
 			else
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_9")
@@ -201,7 +201,7 @@ local function creatureSayCallback(npc, creature, type, message)
 						player:addAchievement("Rift Warrior")
 					end
 				else
-					npcHandler:say("Sorry, friend, but one good turn deserves another. Bring enough " .. ItemType(npc:getCurrency()):getPluralName():lower() .. " and it's a deal.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_7", { ItemType(npc:getCurrency()):getPluralName():lower() })
 				end
 			else
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_11")
@@ -212,7 +212,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Blessings, Player! How may I be of service? Do you wish to trade some {token}s, or would you like some {information} or {talk}? Should I {enchant} certain items for you?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.cledwyn.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

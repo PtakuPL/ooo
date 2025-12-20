@@ -82,9 +82,9 @@ keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandle
 keywordHandler:addKeyword({ "darashia" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.petros.stdmod_7" })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.petros.stdmod_8" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Bye.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Bye")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.petros.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.petros.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.petros.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

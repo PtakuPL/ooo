@@ -15,7 +15,7 @@ function northernFishburger.onUse(player, item, fromPosition, target, toPosition
 
 	player:addCondition(fishingCondition)
 	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.northern_fishburger.msg_2")
-	player:say("Smack.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.northern_fishburger.say_1", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)
 	item:remove(1)

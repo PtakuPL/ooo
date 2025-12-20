@@ -1,6 +1,6 @@
 MarketWindow < MainWindow
   id: marketWindow
-  !text: tr('Market')
+  !text: tr("otclient_modules.market_otui.tr_6")
   size: 700 530
 
   @onEscape: Market.close()
@@ -27,7 +27,7 @@ MarketWindow < MainWindow
 
   Label
     id: balanceLabel
-    !text: tr('Balance') .. ':'
+    !text: tr("otclient_modules.market_otui.tr_5") .. ':'
     font: noto-12
     text-offset: 0 2
     anchors.top: parent.top
@@ -35,7 +35,7 @@ MarketWindow < MainWindow
 
   Button
     id: closeButton
-    !text: tr('Close')
+    !text: tr("otclient_modules.market_otui.tr_4")
     anchors.top: mainTabContent.bottom
     anchors.horizontalCenter: mainTabContent.horizontalCenter
     margin-top: 5
@@ -44,7 +44,7 @@ MarketWindow < MainWindow
 
   Button
     id: refreshOffersButton
-    !text: tr('Refresh Offers')
+    !text: tr("otclient_modules.market_otui.tr_3")
     anchors.top: mainTabContent.bottom
     anchors.right: mainTabContent.right
     margin-top: 5
@@ -53,8 +53,8 @@ MarketWindow < MainWindow
 
   Button
     id: resetButton
-    !text: tr('Reset Market')
-    !tooltip: tr('Reset selection, filters & search')
+    !text: tr("otclient_modules.market_otui.tr_2")
+    !tooltip: tr("otclient_modules.market_otui.tr_1")
     anchors.top: mainTabContent.bottom
     anchors.left: mainTabContent.left
     margin-top: 5

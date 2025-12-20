@@ -156,8 +156,8 @@ end
 
 keywordHandler:addCustomGreetKeyword({ "djanni'hah" }, greetCallback, { npcHandler = npcHandler })
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Farewell human!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Farewell human!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.ubaid.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.ubaid.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)

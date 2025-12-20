@@ -54,7 +54,7 @@ PanelCreateYourAccount < Panel
 MainWindow
   id: mainWindow
   size: 513 390
-  !text: tr('Start Your Journey')
+  !text: tr("otclient_modules.createaccount_otui.tr_39")
   @onEscape: destroyCreateAccount()
 
   Panel
@@ -100,7 +100,7 @@ MainWindow
     MiniPanel
       id: createYourAccount
       size: 712 123
-      !text: tr('Create Your Account')
+      !text: tr("otclient_modules.createaccount_otui.tr_38")
       anchors.top: parent.top
       anchors.left: parent.left
       anchors.right: parent.right
@@ -113,7 +113,7 @@ MainWindow
         anchors.right: parent.right
         anchors.top: parent.top
         Label:
-          !text: tr('Email:')
+          !text: tr("otclient_modules.createaccount_otui.tr_37")
           margin-left: 100
           width: 160
 
@@ -126,7 +126,7 @@ MainWindow
         anchors.right: parent.right
         anchors.top: prev.bottom
         Label:
-          !text: tr('Password:')
+          !text: tr("otclient_modules.createaccount_otui.tr_36")
           margin-left: 76
           width: 183
 
@@ -137,7 +137,7 @@ MainWindow
         anchors.right: parent.right
         anchors.top: prev.bottom
         Label:
-          !text: tr('Repeat Password:')
+          !text: tr("otclient_modules.createaccount_otui.tr_35")
           margin-left: 32
           width: 227
       Panel
@@ -152,7 +152,7 @@ MainWindow
           spacing: 2
         QtCheckBox
           id: checkboxPrivacy
-          !text: tr('I agree to the Tibia Service Agreement,\n Tibia Rules and Tibia Privacy Policy.')
+          !text: tr("otclient_modules.createaccount_otui.tr_34")
           width: 273
           margin-left: 50
 
@@ -168,7 +168,7 @@ MainWindow
     MiniPanel
       id: createYourCharacter
       height: 95
-      !text: tr('Create Your Character')
+      !text: tr("otclient_modules.createaccount_otui.tr_33")
       margin-top: 5
       anchors.top: prev.bottom
       anchors.left: parent.left
@@ -190,7 +190,7 @@ MainWindow
           text-offset: 0 2
           margin-left: 38
           font: noto-12
-          !text: tr('Character Name:')
+          !text: tr("otclient_modules.createaccount_otui.tr_32")
         
         Label
           id: characterTextEdit
@@ -207,7 +207,7 @@ MainWindow
             image-source: /images/ui/createaccount/icon-no
 
         Button
-          !text: tr('Suggest Name')
+          !text: tr("otclient_modules.createaccount_otui.tr_31")
           font: noto-12
           @onClick: onClickSuggestName()
       Panel
@@ -223,17 +223,17 @@ MainWindow
           type: horizontalBox
           spacing:26
         Label
-          !text: tr('Character Sex:')
+          !text: tr("otclient_modules.createaccount_otui.tr_30")
         RadioBox
           id: Male
           text-horizontal-auto-resize: true
-          !text: tr("male")
+          !text: tr("otclient_modules.createaccount_otui.tr_29")
           margin-bottom: -5
           text-offset: 20 -3
         RadioBox
           id: Female
           text-horizontal-auto-resize: true
-          !text: tr("female")
+          !text: tr("otclient_modules.createaccount_otui.tr_28")
           margin-bottom: -5
           text-offset: 20 -5
           width: 100
@@ -256,11 +256,11 @@ MainWindow
           type: horizontalBox
           spacing: 35
         Label
-          !text: tr('Recommended World:')
+          !text: tr("otclient_modules.createaccount_otui.tr_27")
         Label
           id: worldLabel
           margin-left:-25
-          !text: tr("Canary (America)")
+          !text: tr("otclient_modules.createaccount_otui.tr_26")
           text-auto-resize: true
         UIWidget
           id: icons
@@ -270,7 +270,7 @@ MainWindow
           $disabled:
             image-source: /images/ui/createaccount/icon-no
         Button
-          !text: tr('Change World')
+          !text: tr("otclient_modules.createaccount_otui.tr_25")
           font: noto-12
           margin-left: -30
           @onClick: toggleMainPanels(true)
@@ -281,7 +281,7 @@ MainWindow
       anchors.left: parent.left
       anchors.right: parent.right
     Button
-      !text: tr('Already Registered')
+      !text: tr("otclient_modules.createaccount_otui.tr_24")
       size: 115 22
       margin-top: 15
       margin-left: 5
@@ -291,7 +291,7 @@ MainWindow
       @onClick: toggleCreateAccount(true)
     UIButton
       id: buttonStartPlaying
-      !text: tr('Start Playing')
+      !text: tr("otclient_modules.createaccount_otui.tr_23")
       size: 120 33
       margin-top: 10
       margin-right: 5
@@ -317,7 +317,7 @@ MainWindow
       anchors.left: parent.left
       anchors.right: parent.right
     Label
-      !text: tr('This site is protected by ReCAPTCHA and  the google Privacy Policy and Terms of Services apply.')
+      !text: tr("otclient_modules.createaccount_otui.tr_22")
       margin-top: 5
       font: noto-12
       anchors.top: prev.bottom
@@ -408,7 +408,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          !text: tr('Password Requirements')
+          !text: tr("otclient_modules.createaccount_otui.tr_21")
           text-offset: 5 5
       Panel
         height: 14
@@ -428,7 +428,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          !text: tr('10 - 29 Characters')
+          !text: tr("otclient_modules.createaccount_otui.tr_20")
           text-offset: 10 2
 
       Panel
@@ -449,7 +449,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          !text: tr('No invalid Character')
+          !text: tr("otclient_modules.createaccount_otui.tr_19")
           text-offset: 10 2
 
       Panel
@@ -470,7 +470,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          !text: tr('At least one lower case letter (a-z)')
+          !text: tr("otclient_modules.createaccount_otui.tr_18")
           text-offset: 10 2
       Panel
         height: 14
@@ -490,7 +490,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          !text: tr('At least one upper case letter (A-Z)')
+          !text: tr("otclient_modules.createaccount_otui.tr_17")
           text-offset: 10 2
       Panel
         height: 14
@@ -510,7 +510,7 @@ MainWindow
         Label
           text-auto-resize: true
           color: #3F3F3F
-          !text: tr('At least one number(0-9)')
+          !text: tr("otclient_modules.createaccount_otui.tr_16")
           text-offset: 10 2
   Panel
     id: mainPanelSelectAGameWorldToPlayOn
@@ -540,7 +540,7 @@ MainWindow
     MiniPanel
       id: panelSelectAGameWorldToPlayOn
       size: 712 215
-      !text: tr('Select a Game World to Play On')
+      !text: tr("otclient_modules.createaccount_otui.tr_15")
       anchors.top: parent.top
       anchors.left: parent.left
       anchors.right: parent.right
@@ -560,11 +560,11 @@ MainWindow
           text-offset: 0 2
           margin-left: 38
           font: noto-12
-          !text: tr('World Location:')
+          !text: tr("otclient_modules.createaccount_otui.tr_14")
         QtComboBox
           id: comboBoxWorld
         Label
-          !text: tr('Pvp Type:')
+          !text: tr("otclient_modules.createaccount_otui.tr_13")
         QtComboBox
           id: comboBoxPvp
 
@@ -587,7 +587,7 @@ MainWindow
         pixels-scroll: true
       MiniPanel
         id: worldInfo
-        !text: tr('World Name')
+        !text: tr("otclient_modules.createaccount_otui.tr_12")
         background-color: #404040
         anchors.top: panelSelectworldAndPvp.bottom
         anchors.left: textListAllWorlds.right
@@ -595,7 +595,7 @@ MainWindow
         anchors.bottom: parent.bottom
         margin-left: 5
         margin-top: 5
-        !text: tr('Information')
+        !text: tr("otclient_modules.createaccount_otui.tr_11")
         layout: verticalBox
 
         Panel
@@ -605,7 +605,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            !text: tr('Player Online:')
+            !text: tr("otclient_modules.createaccount_otui.tr_10")
 
           Label
             id: PlayersOnline
@@ -620,7 +620,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            !text: tr('PvP Type:')
+            !text: tr("otclient_modules.createaccount_otui.tr_9")
 
           Label
             id: PvPType
@@ -635,7 +635,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            !text: tr('World Locations:')
+            !text: tr("otclient_modules.createaccount_otui.tr_8")
 
           Label
             id: Region
@@ -650,7 +650,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            !text: tr('Creation Date')
+            !text: tr("otclient_modules.createaccount_otui.tr_7")
 
           Label
             id: CreationDate
@@ -665,7 +665,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            !text: tr('BattleEye Status:')
+            !text: tr("otclient_modules.createaccount_otui.tr_6")
 
           Label
             id: BattlEyeActivationTimestamp
@@ -680,7 +680,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            !text: tr('Premium Only:')
+            !text: tr("otclient_modules.createaccount_otui.tr_5")
 
           Label
             id: PremiumOnly
@@ -695,7 +695,7 @@ MainWindow
           Label
             width: 110
             color: #dfdfdf
-            !text: tr('Transfer Type:')
+            !text: tr("otclient_modules.createaccount_otui.tr_4")
 
           Label
             id: TransferType
@@ -710,7 +710,7 @@ MainWindow
       anchors.right: parent.right
 
     Button
-      !text: tr('Back')
+      !text: tr("otclient_modules.createaccount_otui.tr_3")
       size: 115 22
       margin-top: 10
       margin-left: 5
@@ -720,7 +720,7 @@ MainWindow
       @onClick: toggleMainPanels(false)
 
     Button
-      !text: tr('Ok')
+      !text: tr("otclient_modules.createaccount_otui.tr_2")
       size: 115 22
       margin-top: 10
       margin-left: 5
@@ -730,7 +730,7 @@ MainWindow
       @onClick: onClickOkChangeWorld()
 
     Button
-      !text: tr('Reset')
+      !text: tr("otclient_modules.createaccount_otui.tr_1")
       size: 115 22
       margin-top: 10
       margin-right: 5

@@ -56,7 +56,7 @@ function oreWagons.onUse(player, item, fromPosition, target, toPosition, isHotke
 	end
 
 	if item.actionid < 50245 and player:getStorageValue(Storage.WagonTicket) < os.time() then
-		player:say("Purchase a weekly ticket from Gewen, Lokur in the post office, The Lukosch brothers or from Brodrosch on the steamboat.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.ore_wagons.say_1", TALKTYPE_MONSTER_SAY)
 		return true
 	end
 

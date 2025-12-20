@@ -17,7 +17,7 @@ function dark_remains.onUse(player, item, fromPosition, target, toPosition, isHo
 	if target:getName():lower() == "count vlarkorth" then
 		item:remove(1)
 		target:setStorageValue(3, target:getStorageValue(3) - 1)
-		target:say("The magic shield of protection is weakened!")
+		target:sayLocalized("scripts.actions_dark_remains.say_1")
 		toPosition:sendMagicEffect(CONST_ME_HOLYAREA)
 	end
 

@@ -207,9 +207,9 @@ local function greetCallback(npc, creature)
 	end
 
 	if player:getStorageValue(Storage.EruaranGreeting) > 0 then
-		npcHandler:setMessage(MESSAGE_GREET, "Ashari Lillithy, so we meet {again}! What brings you here this time, general {information}, {transform}, {improve}, {create}, {outfit}, or {talk}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.eruaran.greet_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome |PLAYERNAME|.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.eruaran.greet_msg_2")
 		player:setStorageValue(Storage.EruaranGreeting, 1)
 	end
 	return true
@@ -459,13 +459,13 @@ node2:addChildKeyword({ "yes" }, dreamSecond, {})
 node2:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, i18nKey = "npc.eruaran.stdmod_5", reset = true })
 
 -- Greeting message
-keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Greetings, |PLAYERNAME|." })
+keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Greetings, |PLAYERNAME|.", i18nKey = "npc.eruaran.greet_1" })
 --Farewell message
-keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Goodbye, |PLAYERNAME|." })
+keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Goodbye, |PLAYERNAME|.", i18nKey = "npc.eruaran.farewell_1" })
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.eruaran.farewell_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

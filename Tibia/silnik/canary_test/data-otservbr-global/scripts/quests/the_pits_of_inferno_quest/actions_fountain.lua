@@ -8,7 +8,7 @@ function pitsOfInfernoFountain.onUse(player, item, fromPosition, target, toPosit
 	player:addMana(player:getMaxMana())
 	player:addAchievement("Fountain of Life")
 	player:setStorageValue(Storage.FountainOfLife, 1)
-	player:say("You feel very refreshed and relaxed.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.actions_fountain.say_1", TALKTYPE_MONSTER_SAY)
 	return true
 end
 

@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Ah." },
-	{ text = "We need more volunteers!" },
+	{ i18nKey = "npc.klom_stonecutter.voice_1" },
+	{ i18nKey = "npc.klom_stonecutter.voice_2" },
 	{ text = 'And they call this "deep"...' },
-	{ text = "Preparation is paramount." },
+	{ i18nKey = "npc.klom_stonecutter.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -223,8 +223,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-keywordHandler:addKeyword({ "help" }, StdModule.say, { npcHandler = npcHandler, text = "Well, the biggest problem we need to address are the ever charging {subterraneans} around here. And on top of that, there's the threat of the Lost, who quite made themselves at {home} in these parts." })
-keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, text = "Maintainin' this whole operation, the dwarven involvement 'course. Don't know about them gnomes but if I ain't gettin' those dwarves in line, there'll be chaos down here. I also oversee the {defences} and {counterattacks}." })
+keywordHandler:addKeyword({ "help" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.klom_stonecutter.stdmod_1" })
+keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.klom_stonecutter.stdmod_2" })
 keywordHandler:addKeyword({ "defences" }, StdModule.say, {
 	npcHandler = npcHandler,
 	text = {
@@ -247,13 +247,13 @@ keywordHandler:addKeyword({ "enemy" }, StdModule.say, {
 		"But even if we knew nothing more about them, the fact alone that they employ the help of those mockeries of all things dwarfish, marks them as an enemy of the dwarves and it's our obligation to annihilate them.",
 	},
 })
-keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, text = "Klom Stonecutter's the name. " })
+keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.klom_stonecutter.stdmod_3" })
 
 npcHandler:setMessage(MESSAGE_GREET, {
 	"Greetings. A warning straight ahead: I don't like loiterin'. If you're not here to {help} us, you're here to waste my time. Which I consider loiterin'. Now, try and prove your {worth} to our alliance. ... ",
 	"I have sealed some of the areas far too dangerous for anyone to enter. If you can prove you're capable, you'll get an opportunity to help destroy the weird machines, pumping lava into the caves leading to the most dangerous enemies.",
 })
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Well, bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.klom_stonecutter.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_SET_INTERACTION, onAddFocus)
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)

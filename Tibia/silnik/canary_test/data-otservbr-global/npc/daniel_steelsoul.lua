@@ -82,7 +82,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.TrollTask, 1)
 				return true
 			else
-				npcHandler:say("Your current task is to kill 100 trolls. You have already killed " .. player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.TrollCount) .. " of them. Keep going!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.say_1", { player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.TrollCount) })
 				return true
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.GoblinTask) == 0 then
@@ -93,7 +93,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.GoblinTask, 1)
 				return true
 			else
-				npcHandler:say("Your current task is to kill 150 goblins. You have already killed " .. player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.GoblinCount) .. " of them. Keep going!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.say_2", { player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.GoblinCount) })
 				return true
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.RotwormTask) == 0 then
@@ -104,7 +104,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.RotwormTask, 1)
 				return true
 			else
-				npcHandler:say("Your current task is to kill 300 rotworms. You have already killed " .. player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.RotwormCount) .. " of them. Keep going!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.say_3", { player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.RotwormCount) })
 				return true
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.CyclopsTask) == 0 then
@@ -115,7 +115,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.CyclopsTask, 1)
 				return true
 			else
-				npcHandler:say("Your current task is to kill 500 cyclops. You have already killed " .. player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.CyclopsCount) .. " of them. Keep going!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.say_4", { player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.CyclopsCount) })
 				return true
 			end
 		end
@@ -235,9 +235,9 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "king" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.daniel_steelsoul.stdmod_2" })
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_GREET, "Greetings and {Banor} be with you, |PLAYERNAME|!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "PRAISE TO BANOR!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "PRAISE TO BANOR!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.daniel_steelsoul.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.daniel_steelsoul.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.daniel_steelsoul.walkaway_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

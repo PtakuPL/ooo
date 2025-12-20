@@ -66,7 +66,7 @@ keywordHandler:addKeyword({ "port hope" }, StdModule.say, { npcHandler = npcHand
 
 local function greetCallback(npc, creature)
 	local playerId = creature:getId()
-	npcHandler:setMessage(MESSAGE_GREET, "Be greeted, friend of the apes.")
+	NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.the_blind_prophet.greet_msg_1")
 	return true
 end
 

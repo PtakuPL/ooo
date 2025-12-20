@@ -94,7 +94,7 @@ keywordHandler:addKeyword({ "name" }, StdModule.say, {
 	},
 })
 
-npcHandler:setMessage(MESSAGE_GREET, "|PLAYERNAME|. I have been watching your fate for quite some time. It's about time you came here. Do you seek to enter the riven island of Quirefang or travel back from where you came?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.scrutinon.greet_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

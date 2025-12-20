@@ -1,13 +1,10 @@
 # NPC: valindara
 
 **Plik:** `data-otservbr-global/npc/valindara.lua`
-**Data migracji:** 2025-12-11 16:33
-**Liczba tekstów:** 3
+**Data migracji:** 2025-12-17 05:32
+**Liczba tekstów:** 0
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.valindara.stdmod_1` | Im eager for a bath in the lake. |
-| `npc.valindara.stdmod_2` | Im interested in shiny precious things, if you have some. |
-| `npc.valindara.stdmod_3` | No, you cant have this cloak. |

@@ -147,30 +147,30 @@ function skinning.onUse(player, item, fromPosition, target, toPosition, isHotkey
 			-- Wrath of the emperor quest
 		elseif target.itemid == 11339 then
 			target:transform(11331)
-			player:say("You carve a solid bowl of the chunk of wood.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.skinning.say_9", TALKTYPE_MONSTER_SAY)
 			return true
 			-- An Interest In Botany Quest
 		elseif target.itemid == 10735 and player:getItemCount(11699) > 0 and player:getStorageValue(Storage.Quest.U8_6.AnInterestInBotany.Questline) == 1 then
-			player:say("The plant feels cold but dry and very soft. You streak the plant gently with your knife and put a fragment in the almanach.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.skinning.say_8", TALKTYPE_MONSTER_SAY)
 			player:setStorageValue(Storage.Quest.U8_6.AnInterestInBotany.Questline, 2)
 			return true
 		elseif target.itemid == 10697 and player:getItemCount(11699) > 0 and player:getStorageValue(Storage.Quest.U8_6.AnInterestInBotany.Questline) == 2 then
-			player:say("You cut a leaf from a branch and put it in the almanach. It smells strangely sweet and awfully bitter at the same time.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.skinning.say_7", TALKTYPE_MONSTER_SAY)
 			player:setStorageValue(Storage.Quest.U8_6.AnInterestInBotany.Questline, 3)
 			return true
 		elseif target.itemid == 8181 and player:getStorageValue(789100) <= 1 then
-			player:say("You got Neutral matter.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.skinning.say_6", TALKTYPE_MONSTER_SAY)
 			player:addItem(954, 1)
 			player:setStorageValue(789100, 1)
 			return true
 		elseif target.itemid == 8182 and player:getStorageValue(789100) <= 1 then
-			player:say("You got Neutral matter.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.skinning.say_5", TALKTYPE_MONSTER_SAY)
 			player:addItem(954, 1)
 			player:setStorageValue(789100, 2)
 			return true
 		-- Rottin Wood and the Married Men Quest
 		elseif target.itemid == 4301 then
-			player:say("You successfully gathered a rabbit's food in excellent condition.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.skinning.say_4", TALKTYPE_MONSTER_SAY)
 			player:addItem(12172, 1)
 			return true
 		end
@@ -183,7 +183,7 @@ function skinning.onUse(player, item, fromPosition, target, toPosition, isHotkey
 		end
 
 		player:setStorageValue(Storage.Quest.U8_2.TheMutatedPumpkin.Skinned, os.time() + 4 * 60 * 60)
-		player:say("Happy Halloween!", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.skinning.say_3", TALKTYPE_MONSTER_SAY)
 		player:getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)
 		player:addAchievement("Mutated Presents")
 		local reward = math.random(1, #skin)
@@ -236,7 +236,7 @@ function skinning.onUse(player, item, fromPosition, target, toPosition, isHotkey
 
 		if not added and target.itemid == 10426 then
 			effect = CONST_ME_HITAREA
-			player:say("Your attempt at shaping that marble rock failed miserably.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.skinning.say_2", TALKTYPE_MONSTER_SAY)
 			transform = false
 			target:remove()
 		end
@@ -264,7 +264,7 @@ function skinning.onUse(player, item, fromPosition, target, toPosition, isHotkey
 		end
 	else
 		if isInArray({ 7441, 7442, 7444, 7445 }, target.itemid) then
-			player:say("The attempt of sculpting failed miserably.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.skinning.say_1", TALKTYPE_MONSTER_SAY)
 			effect = CONST_ME_HITAREA
 			target:remove()
 		else

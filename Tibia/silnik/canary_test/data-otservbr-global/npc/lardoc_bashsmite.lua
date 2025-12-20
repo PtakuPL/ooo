@@ -168,7 +168,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if amount[playerId] > 1 then
 				plural = plural .. "s"
 			end
-			npcHandler:say("You want to offer " .. amount[playerId] .. " suspicious device" .. plural .. ". Which leader shall have it, (Gnomus) of the {gnomes}, (Klom Stonecutter) of the {dwarves} or the {scouts} (Lardoc Bashsmite)?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.say_1", { amount[playerId], plural })
 			npcHandler:setTopic(playerId, 56)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.say_9")
@@ -219,11 +219,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.say_16")
 		npcHandler:setTopic(playerId, 5)
 	elseif MsgContains(message, "gnomes") and npcHandler:getTopic(playerId) == 5 then
-		npcHandler:say("The gnomes are still in need of your help, member of Bigfoot's Brigade. Prove your worth by answering their calls! (" .. math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points), 0) .. "/10)", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.say_2", { math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points), 0) })
 	elseif MsgContains(message, "dwarves") and npcHandler:getTopic(playerId) == 5 then
-		npcHandler:say("The dwarves are still in need of your help, member of Bigfoot's Brigade. Prove your worth by answering their calls! (" .. math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points), 0) .. "/10)", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.say_3", { math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points), 0) })
 	elseif MsgContains(message, "scouts") and npcHandler:getTopic(playerId) == 5 then
-		npcHandler:say("The scouts are still in need of your help, member of Bigfoot's Brigade. Prove your worth by answering their calls! (" .. math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points), 0) .. "/10)", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lardoc_bashsmite.say_4", { math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points), 0) })
 	end
 
 	return true
@@ -248,8 +248,8 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, {
 })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lardoc_bashsmite.stdmod_2" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Since you are obviously not one of my relatives who pays me a long overdue visit, we should get {work} right away. We'll see if you can prove your {worth} to our alliance.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Well, bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.lardoc_bashsmite.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.lardoc_bashsmite.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_SET_INTERACTION, onAddFocus)
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)

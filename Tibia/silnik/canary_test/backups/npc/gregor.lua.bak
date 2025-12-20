@@ -122,13 +122,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
-			npcHandler:say({
-				"Well then, listen closely. First, you will have to prove that you are a fierce and restless warrior by bringing me 100 perfect behemoth fangs. ...",
-				"Secondly, please retrieve a helmet for us which has been lost a long time ago. The famous Ramsay the Reckless wore it when exploring an ape settlement. ...",
-				"Third, we need a new flask of warrior's sweat. We've run out of it recently, but we need a small amount for the show battles in our arena. ...",
-				"Lastly, I will have our smith refine your helmet if you bring me royal steel, an especially noble metal. ...",
-				"Did you understand everything I told you and are willing to handle this task?",
-			}, npc, creature, 100)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.gregor.say_1", "npc.gregor.say_2", "npc.gregor.say_3", "npc.gregor.say_4", "npc.gregor.say_5"}, 100)
 			npcHandler:setTopic(playerId, 2)
 		elseif MsgContains(message, "no") then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_18")
@@ -244,104 +238,104 @@ keywordHandler:addSpellKeyword({ "great", "light" }, {
 
 keywordHandler:addKeyword({ "healing", "spells" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "In this category I have '{Wound Cleansing}' and '{Cure Poison}'.",
+	i18nKey = "npc.gregor.stdmod_1",
 })
 keywordHandler:addKeyword({ "support", "spells" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "In this category I have '{Light}', '{Find Person}' and '{Great Light}'.",
+	i18nKey = "npc.gregor.stdmod_2",
 })
 keywordHandler:addKeyword({ "spells" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I can teach you {healing spells} and {support spells}. What kind of spell do you wish to learn? You can also tell me for which level you would like to learn a spell, if you prefer that.",
+	i18nKey = "npc.gregor.stdmod_3",
 })
 
 keywordHandler:addKeyword({ "job" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I am the first knight. I trained some of the greatest heroes of Tibia.",
+	i18nKey = "npc.gregor.stdmod_4",
 })
 keywordHandler:addKeyword({ "heroes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Of course, you heard of them. Knights are the best fighters in Tibia.",
+	i18nKey = "npc.gregor.stdmod_5",
 })
 keywordHandler:addKeyword({ "king" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Hail to our King!",
+	i18nKey = "npc.gregor.stdmod_6",
 })
 keywordHandler:addKeyword({ "name" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "You are joking, eh? Of course, you know me. I am Gregor, the first knight.",
+	i18nKey = "npc.gregor.stdmod_7",
 })
 keywordHandler:addKeyword({ "gregor" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "A great name, isn't it?",
+	i18nKey = "npc.gregor.stdmod_8",
 })
 keywordHandler:addKeyword({ "tibia" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Beautiful Tibia. And with our help everyone is save.",
+	i18nKey = "npc.gregor.stdmod_9",
 })
 keywordHandler:addKeyword({ "time" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "It is time to join the Knights!",
+	i18nKey = "npc.gregor.stdmod_10",
 })
 keywordHandler:addKeyword({ "knights" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Knights are the warriors of Tibia. Without us, no one would be safe. Every brave and strong man or woman can join us.",
+	i18nKey = "npc.gregor.stdmod_11",
 })
 keywordHandler:addKeyword({ "bozo" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Some day someone will make something happen to him...",
+	i18nKey = "npc.gregor.stdmod_12",
 })
 keywordHandler:addKeyword({ "elane" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "A bow might be a fine weapon for someone not strong enough to wield a REAL weapon.",
+	i18nKey = "npc.gregor.stdmod_13",
 })
 keywordHandler:addKeyword({ "frodo" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I and my students often share a cask of beer or wine at Frodo's hut.",
+	i18nKey = "npc.gregor.stdmod_14",
 })
 keywordHandler:addKeyword({ "gorn" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Always concerned with his profit. What a loss! He was adventuring with baxter in the old days.",
+	i18nKey = "npc.gregor.stdmod_15",
 })
 keywordHandler:addKeyword({ "baxter" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "He was an adventurer once.",
+	i18nKey = "npc.gregor.stdmod_16",
 })
 keywordHandler:addKeyword({ "lynda" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Before she became a priest she won the Miss Tibia contest three times in a row.",
+	i18nKey = "npc.gregor.stdmod_17",
 })
 keywordHandler:addKeyword({ "mcronald" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Peaceful farmers.",
+	i18nKey = "npc.gregor.stdmod_18",
 })
 keywordHandler:addKeyword({ "ferumbras" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "A fine game to hunt. But be careful, he cheats!",
+	i18nKey = "npc.gregor.stdmod_19",
 })
 keywordHandler:addKeyword({ "muriel" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Bah, go away with these sorcerer tricks. Only cowards use tricks.",
+	i18nKey = "npc.gregor.stdmod_20",
 })
 keywordHandler:addKeyword({ "oswald" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "What an idiot.",
+	i18nKey = "npc.gregor.stdmod_21",
 })
 keywordHandler:addKeyword({ "quentin" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I will never understand this peaceful monks and priests.",
+	i18nKey = "npc.gregor.stdmod_22",
 })
 keywordHandler:addKeyword({ "sam" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "He has the muscles, but lacks the guts.",
+	i18nKey = "npc.gregor.stdmod_23",
 })
 keywordHandler:addKeyword({ "tibianus" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Hail to our King!",
+	i18nKey = "npc.gregor.stdmod_24",
 })
 keywordHandler:addKeyword({ "outfit" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Only the bravest warriors may wear adorned helmets. They are traditionally awarded after having completed a difficult task for our guild.",
+	i18nKey = "npc.gregor.stdmod_25",
 })
 
 npcHandler:setMessage(MESSAGE_GREET, "Greetings, |PLAYERNAME|. What do you want?")

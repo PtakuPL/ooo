@@ -3,7 +3,7 @@ UIWidget
   visible: false
 
   Label
-    !text: tr('Antialiasing Mode:')
+    !text: tr("otclient_modules.graphics_otui.tr_15")
     anchors.left: parent.left
     margin-left: 18
     color: #c0c0c0ff
@@ -26,7 +26,7 @@ UIWidget
   
     OptionCheckBoxMarked
       id: fullscreen
-      !text: tr('Full Screen Mode')
+      !text: tr("otclient_modules.graphics_otui.tr_14")
       !tooltip: 'Ctrl+Shift+F'
 
   SmallReversedQtPanel
@@ -38,19 +38,19 @@ UIWidget
     
     OptionCheckBoxMarked
       id: vsync
-      !text: tr('V-Sync')
-      !tooltip: tr('Limits your fps based on monitor refresh rate')
+      !text: tr("otclient_modules.graphics_otui.tr_13")
+      !tooltip: tr("otclient_modules.graphics_otui.tr_12")
 
   
     OptionCheckBoxMarked
       id: showFps
-      !tooltip: tr('Show frame rate')
-      !text: tr('Show frame rate')
+      !tooltip: tr("otclient_modules.graphics_otui.tr_11")
+      !text: tr("otclient_modules.graphics_otui.tr_10")
       anchors.top: prev.bottom
 
     OptionScaleScroll
       id: backgroundFrameRate
-      !text: tr('Game framerate limit: %s', 'max')
+      !text: tr("otclient_modules.graphics_otui.tr_9", 'max')
       anchors.top: prev.bottom
       margin-top: 5
       &minimumScrollValue: 10
@@ -63,7 +63,7 @@ UIWidget
           text = 'max'
         end
 
-        self:setText(tr('Game framerate limit: %s', text))
+        self:setText(tr("otclient_modules.graphics_otui.tr_8", text))
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -74,8 +74,8 @@ UIWidget
   
     OptionCheckBoxMarked
       id: optimizeFps
-      !text: tr('Optimize FPS')
-      !tooltip: tr('Try to optimize when the frame rate is below 60. VISUAL PROBLEMS MAY OCCUR')
+      !text: tr("otclient_modules.graphics_otui.tr_7")
+      !tooltip: tr("otclient_modules.graphics_otui.tr_6")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -86,8 +86,8 @@ UIWidget
   
     OptionCheckBoxMarked
       id: forceEffectOptimization
-      !text: tr('Force Effect Optimization')
-      !tooltip: tr('Will avoid drawing effects on certain occasions.')
+      !text: tr("otclient_modules.graphics_otui.tr_5")
+      !tooltip: tr("otclient_modules.graphics_otui.tr_4")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -98,8 +98,8 @@ UIWidget
   
     OptionCheckBoxMarked
       id: asyncTxtLoading
-      !text: tr('Async texture loading')
-      !tooltip: tr('This option makes textures load asynchronously and uses less RAM.')
+      !text: tr("otclient_modules.graphics_otui.tr_3")
+      !tooltip: tr("otclient_modules.graphics_otui.tr_2")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -110,4 +110,4 @@ UIWidget
   
     OptionCheckBox
       id: dontStretchShrink
-      !text: tr('Don\'t stretch/shrink Game Window')
+      !text: tr("otclient_modules.graphics_otui.tr_1")

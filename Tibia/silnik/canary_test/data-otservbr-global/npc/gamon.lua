@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Any time's a good time to buy some furniture!" },
+	{ i18nKey = "npc.gamon.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -72,10 +72,10 @@ stakeKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler
 stakeKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.gamon.stdmod_4", reset = true })
 
 -- Others
-npcHandler:setMessage(MESSAGE_GREET, "Nice to meet you, Mister |PLAYERNAME|! Looking for furniture? You've come to the right place!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "You'll come back. They all do.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Have a look. Most furniture comes in handy kits. Just use them in your house to assemble the furniture. Do you want to see only a certain type of furniture?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gamon.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.gamon.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.gamon.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.gamon.sendtrade_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

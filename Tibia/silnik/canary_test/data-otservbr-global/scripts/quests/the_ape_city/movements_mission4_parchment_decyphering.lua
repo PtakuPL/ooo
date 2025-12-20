@@ -10,7 +10,7 @@ function mission4ParchmentDecyphering.onStepIn(creature, item, position, fromPos
 		player:setStorageValue(Storage.Quest.U7_6.TheApeCity.ParchmentDecyphering, 1)
 	end
 
-	player:say("!-! -O- I_I (/( --I Morgathla", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.movements_mission4_parchment_decyphering.say_1", TALKTYPE_MONSTER_SAY)
 	return true
 end
 

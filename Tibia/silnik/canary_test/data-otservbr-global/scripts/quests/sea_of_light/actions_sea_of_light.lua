@@ -32,7 +32,7 @@ function collectorCorpse.onUse(player, item, fromPosition, target, toPosition, i
 		return false
 	end
 
-	player:say("You carefully put the mirror crystal into the astronomers's device.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.actions_sea_of_light.say_1", TALKTYPE_MONSTER_SAY)
 	player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline, 9)
 	player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Mission3, 3)
 	item:transform(9699)

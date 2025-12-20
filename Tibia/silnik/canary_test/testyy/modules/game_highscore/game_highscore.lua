@@ -156,7 +156,7 @@ function highscoreController:onGameStart()
         return
     end
 
-    highscoreButton = modules.client_topmenu.addRightGameToggleButton('highscore', tr('Highscores'),
+    highscoreButton = modules.client_topmenu.addRightGameToggleButton('highscore', tr("otclient_modules.game_highscore.tr_2"),
         '/images/options/highscores', toggle, false)
     highscoreButton:setOn(false)
 end
@@ -209,7 +209,7 @@ function createHighscores(list)
         row:setBackgroundColor(index % 2 == 0 and "#ffffff12" or "#00000012")
         row.rank:setText(entry[1] .. ".")
         row.name:setText(entry[2])
-        row.voc:setText(entry[4] == 0 and tr("None") or getVocation(entry[4] == 1 and entry[4] + 3 or (entry[4] < 3 and entry[4] + 1 or entry[4] - 2)))
+        row.voc:setText(entry[4] == 0 and tr("otclient_modules.game_highscore.tr_1") or getVocation(entry[4] == 1 and entry[4] + 3 or (entry[4] < 3 and entry[4] + 1 or entry[4] - 2)))
         row.world:setText(entry[5])
         row.level:setText(entry[6])
         row.points:setText(comma_value(entry[8]))

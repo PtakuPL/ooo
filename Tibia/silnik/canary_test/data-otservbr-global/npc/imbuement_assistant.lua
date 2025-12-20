@@ -317,7 +317,7 @@ local imbuementPackagesData = {
 local function purchaseItems(npc, player, message)
 	local packageData = imbuementPackagesData[message]
 	if packageData and npcHandler:getTopic(player:getId()) == 1 then
-		npcHandler:say("Do you want to buy items for " .. packageData.text .. " imbuement for " .. packageData.moneyRequired .. " gold?", npc, player)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.imbuement_assistant.say_1", { packageData.text, packageData.moneyRequired })
 		npcHandler:setTopic(player:getId(), 2)
 		playerImbuementData[player:getId()] = {
 			moneyRequired = packageData.moneyRequired,
@@ -356,9 +356,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|, say {imbuement packages} or {trade} for buy imbuement items.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "See you later |PLAYERNAME| come back soon.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "See you later |PLAYERNAME| come back soon.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.imbuement_assistant.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.imbuement_assistant.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.imbuement_assistant.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

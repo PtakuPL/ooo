@@ -6,10 +6,10 @@ function catchFish.onUse(player, item, fromPosition, target, toPosition, isHotke
 	end
 
 	if math.random(10) ~= 1 then
-		player:say("The golden fish escaped.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.catch_fish.say_2", TALKTYPE_MONSTER_SAY)
 		return true
 	end
-	player:say("You catch a golden fish in the bowl.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.catch_fish.say_1", TALKTYPE_MONSTER_SAY)
 	item:transform(5929)
 	toPosition:sendMagicEffect(CONST_ME_MAGIC_BLUE)
 	return true

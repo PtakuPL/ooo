@@ -36,7 +36,7 @@ function othersFireBug.onUse(player, item, fromPosition, target, toPosition, isH
 			player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.BasinCounter, 0)
 		end
 		if player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.BasinCounter) == 7 then
-			player:say("You ascended the last basin.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_fire_bug.say_2", TALKTYPE_MONSTER_SAY)
 			item:remove()
 			player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.MonsterDoor, 1)
 		end
@@ -104,7 +104,7 @@ function othersFireBug.onUse(player, item, fromPosition, target, toPosition, isH
 		return true
 	elseif random == 1 then --it explode on the user 1% chance
 		doTargetCombatHealth(0, player, COMBAT_FIREDAMAGE, -5, -5, CONST_ME_HITBYFIRE)
-		player:say("OUCH!", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.actions_fire_bug.say_1", TALKTYPE_MONSTER_SAY)
 		item:remove(1)
 		return true
 	else

@@ -20,7 +20,7 @@ function votingOramond.onStepIn(creature, item, position, fromPosition)
 	if teleport then
 		player:teleportTo(teleport)
 		fromPosition:sendMagicEffect(CONST_ME_TELEPORT)
-		player:say("Slrrp!", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.voting_oramond.say_1", TALKTYPE_MONSTER_SAY)
 	end
 	return true
 end

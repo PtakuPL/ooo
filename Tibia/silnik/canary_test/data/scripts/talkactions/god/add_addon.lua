@@ -284,8 +284,8 @@ function addaddon.onSay(player, words, param)
 			target:addOutfitAddon(looktype, addonValue)
 		end
 
-		target:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("%s has added addon %d to all your looktypes.", player:getName(), addonValue))
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You have successfully added addon %d to all looktypes of player %s.", addonValue, target:getName()))
+		target:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_addon.msg_4", {player:getName(), addonValue})
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_addon.msg_3", {addonValue, target:getName()})
 	else
 		local looktype = tonumber(addonParam)
 		if not looktype then
@@ -294,8 +294,8 @@ function addaddon.onSay(player, words, param)
 		end
 
 		target:addOutfitAddon(looktype, addonValue)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("Addon %d for looktype %d set for player %s.", addonValue, looktype, target:getName()))
-		target:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("%s has added addon %d for looktype %d to you.", player:getName(), addonValue, looktype))
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_addon.msg_2", {addonValue, looktype, target:getName()})
+		target:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_addon.msg_1", {player:getName(), addonValue, looktype})
 	end
 	return true
 end

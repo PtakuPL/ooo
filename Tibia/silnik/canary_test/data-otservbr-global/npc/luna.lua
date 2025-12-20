@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Selling herbs, mushrooms and flowers, all picked under the light of the full moon!" },
+	{ i18nKey = "npc.luna.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -58,10 +58,10 @@ end
 
 keywordHandler:addKeyword({ "offers" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.luna.stdmod_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, traveller. Maybe you'd like to take a look at my {offers}...")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Goodbye, traveller.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Goodbye, traveller.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my wares.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.luna.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.luna.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.luna.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.luna.sendtrade_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {

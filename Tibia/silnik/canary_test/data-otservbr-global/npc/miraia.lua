@@ -181,8 +181,8 @@ end
 keywordHandler:addKeyword({ "drink" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.miraia.stdmod_1" })
 keywordHandler:addKeyword({ "food" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.miraia.stdmod_2" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Daraman's blessings, |PLAYERNAME|. Welcome to the Enlightened Oasis. Sit down, have a {drink} or some {food}!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Daraman's blessings. Come back soon.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.miraia.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.miraia.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)

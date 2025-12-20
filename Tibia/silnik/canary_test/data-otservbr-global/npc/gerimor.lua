@@ -55,7 +55,7 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player then
-		npcHandler:setMessage(MESSAGE_GREET, "Greeting, |PLAYERNAME|! I welcome you to this sacred {place}. If you are interested in {missions} just ask.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gerimor.greet_msg_1")
 	end
 
 	return true
@@ -445,7 +445,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Farewell, |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.gerimor.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_SET_INTERACTION, onAddFocus)
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)

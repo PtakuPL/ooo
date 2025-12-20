@@ -117,7 +117,7 @@ function ferumbrasAscendantTheShattererLevers.onUse(player, item, fromPosition, 
 				end
 			end
 		end
-		player:say("CLICK", TALKTYPE_MONSTER_SAY, false, nil, toPosition)
+		player:sayLocalized("scripts.actions_the_shatterer_levers.say_1", TALKTYPE_MONSTER_SAY, false, nil, toPosition)
 	elseif item.itemid == 8912 then
 		player:sendCancelMessage("Sorry, not possible.")
 		return true

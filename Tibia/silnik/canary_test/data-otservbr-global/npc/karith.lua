@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "This weather is killing me. If I only had enough money to retire." },
+	{ i18nKey = "npc.karith.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -61,10 +61,10 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter) == -1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Hello! Tell me what's on your mind. Time is money.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.karith.greet_msg_1")
 		player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SearoutesAroundYalahar.TownsCounter, 0)
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Hello! Tell me what's on your mind. Time is money.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.karith.greet_msg_2")
 	end
 	return true
 end
@@ -315,8 +315,8 @@ keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "
 --Farewell message
 keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Goodbye, |PLAYERNAME|.", i18nKey = "npc.karith.farewell_1" })
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.karith.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.karith.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

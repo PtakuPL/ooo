@@ -35,7 +35,7 @@ function creaturescripts_library_ghulosh.onThink(creature, interval)
 		creature:remove()
 		if monster then
 			monster:addHealth(-(monster:getHealth() - cHealth))
-			monster:say("FEEL MY WRATH!!", TALKTYPE_MONSTER_SAY)
+			monster:sayLocalized("scripts.creaturescripts_ghulosh.say_1", TALKTYPE_MONSTER_SAY)
 		end
 	end
 end

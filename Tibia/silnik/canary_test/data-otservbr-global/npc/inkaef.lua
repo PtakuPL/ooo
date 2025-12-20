@@ -67,10 +67,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "first rod") or MsgContains(message, "first wand") then
 		if player:isMage() then
 			if player:getStorageValue(Storage.FirstMageWeapon) == -1 then
-				npcHandler:say("So you ask me for a {" .. ItemType(itemId):getName() .. "} to begin your adventure?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.inkaef.say_1", { ItemType(itemId):getName() })
 				npcHandler:setTopic(playerId, 1)
 			else
-				npcHandler:say("What? I have already gave you one {" .. ItemType(itemId):getName() .. "}!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.inkaef.say_2", { ItemType(itemId):getName() })
 			end
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.inkaef.say_1")

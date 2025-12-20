@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Precisely." },
-	{ text = "So my initial calculations had been correct!" },
-	{ text = "Looks like I have to find another way then." },
-	{ text = "Hm, I need to recapitulate my equipment..." },
+	{ i18nKey = "npc.spectulus.voice_1" },
+	{ i18nKey = "npc.spectulus.voice_2" },
+	{ i18nKey = "npc.spectulus.voice_3" },
+	{ i18nKey = "npc.spectulus.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -64,10 +64,10 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 
 	if player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) < 10 then
-		npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|! You're late, do you have no concept of time? My mission is of utmost importance. If you are not interested in helping me, you might as well just leave.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.spectulus.greet_msg_1")
 		npcHandler:setTopic(playerId, 0)
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Ah hello again |PLAYERNAME|! I still have one or two other {missions} for you. There are also some {tasks} someone needs to attend to.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.spectulus.greet_msg_2")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true
@@ -443,9 +443,9 @@ keywordHandler:addKeyword({ "collector" }, StdModule.say, {
 	i18nKey = "npc.spectulus.stdmod_7",
 })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|! You're late, do you have no concept of time? My mission is of utmost importance. If you are not interested in helping me, you might as well just leave.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Yes yes. Goodbye |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Yes yes. Goodbye |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.spectulus.greet_msg_3")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.spectulus.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.spectulus.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

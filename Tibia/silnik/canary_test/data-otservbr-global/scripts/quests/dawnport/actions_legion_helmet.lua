@@ -18,14 +18,14 @@ function sacredSnake.onUse(player, item, fromPosition, target, toPosition, isHot
 				if not player:kv():scoped("lizard-god-teleport"):get("discovered") then
 					player:removeItem(21469, 1)
 					player:kv():scoped("lizard-god-teleport"):set("discovered", true)
-					player:say("The lizard god accepts your offer! You may enter the santuary!", TALKTYPE_MONSTER_SAY, false, player, toPosition)
+					player:sayLocalized("scripts.actions_legion_helmet.say_2", TALKTYPE_MONSTER_SAY, false, player, toPosition)
 					toPosition:sendMagicEffect(CONST_ME_MORTAREA)
 					item:remove(1)
 					for i = 1, #effectPosition do
 						effectPosition[i]:sendMagicEffect(CONST_ME_FIREAREA)
 					end
 				else
-					player:say("You have already discovered this teleport.", TALKTYPE_MONSTER_SAY, false, player, toPosition)
+					player:sayLocalized("scripts.actions_legion_helmet.say_1", TALKTYPE_MONSTER_SAY, false, player, toPosition)
 				end
 				return true
 			end

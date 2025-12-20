@@ -51,7 +51,7 @@ function actions_mono_detector.onUse(player, item, fromPosition, target, toPosit
 		end
 		MONO_DETECTOR_MAP[player:getGuid()] = random
 		current = random
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The probe has been adjusted.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_mono_detector_strange_probing_device.msg_4")
 		return true
 	end
 
@@ -61,9 +61,9 @@ function actions_mono_detector.onUse(player, item, fromPosition, target, toPosit
 	local dz = math.abs(playerPos.z - current.z)
 
 	if dx <= 15 and dy <= 15 and dz == 0 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The device reads: 'abnormal glooth structure detected, possible probing location'")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_mono_detector_strange_probing_device.msg_3")
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Hm... the device reads: 0,0,zero,0,zero which may roughly translate to: NOTHING OF INTEREST HERE")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_mono_detector_strange_probing_device.msg_2")
 	end
 
 	return true
@@ -95,7 +95,7 @@ function actions_strange_probing_device.onUse(player, item, fromPosition, target
 		if dx <= 15 and dy <= 15 and dz == 0 then
 			item:remove()
 			player:setStorageValue(Storage.Quest.U10_50.OramondQuest.Probing.Mission, 2)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have successfully gathered the data.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_mono_detector_strange_probing_device.msg_1")
 		end
 	end
 

@@ -26,13 +26,13 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Add one fresh dead rat and stir it well... " },
-	{ text = "Argh, if I only had a pan!" },
-	{ text = "Bread, cheese, ham and meat! All fresh!" },
-	{ text = "Buying fresh dead rats!" },
-	{ text = "Buying many types of food and ingredients, too!" },
-	{ text = "Hmm, hmm, now which ingredients do I need..." },
-	{ text = "Need food? I have plenty for sale!" },
+	{ i18nKey = "npc.billy.voice_1" },
+	{ i18nKey = "npc.billy.voice_2" },
+	{ i18nKey = "npc.billy.voice_3" },
+	{ i18nKey = "npc.billy.voice_4" },
+	{ i18nKey = "npc.billy.voice_5" },
+	{ i18nKey = "npc.billy.voice_6" },
+	{ i18nKey = "npc.billy.voice_7" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -141,10 +141,10 @@ end)
 panKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.billy.stdmod_51", reset = true })
 panKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.billy.stdmod_52", reset = true })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "HOW RUDE!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Bye.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Sure.")
-npcHandler:setMessage(MESSAGE_GREET, "Howdy |PLAYERNAME|. I'm a farmer and cook, maybe I can interest you in a {trade} with food? You can also ask me for general {hints} about the game.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.billy.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.billy.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.billy.sendtrade_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.billy.greet_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

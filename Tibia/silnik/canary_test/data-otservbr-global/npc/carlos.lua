@@ -83,42 +83,42 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage) < 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Be greeted, |PLAYERNAME|! As a tailor and merchant I have to say - we need to do something about your {outfit}, shall we?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.carlos.greet_msg_1")
 		player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage, 1)
 		player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosQuestLog, 1)
 		storeTalkCid[playerId] = 1
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Hey, I thought you were going to run away, but luckily you came back. I'll show you how to change your {outfit}, okay?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.carlos.greet_msg_2")
 		storeTalkCid[playerId] = 1
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage) == 2 then
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome back! You know, after providing my little outfit service, I like to ask a little favour of you. Can you {help} me?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.carlos.greet_msg_3")
 		storeTalkCid[playerId] = 2
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage) == 3 then
-		npcHandler:setMessage(MESSAGE_GREET, "Oh hey |PLAYERNAME|, you didn't answer my question yet - could you help me get some {food}? I'll even give you some gold for it.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.carlos.greet_msg_4")
 		storeTalkCid[playerId] = 3
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage) == 4 then
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome back |PLAYERNAME|, I hope you changed your mind and will bring me some {meat}? I'll even give you some gold for it.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.carlos.greet_msg_5")
 		storeTalkCid[playerId] = 4
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage) == 5 then
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome back, |PLAYERNAME|! Did you have a successful hunt and carry a piece of {meat} or ham with you?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.carlos.greet_msg_6")
 		storeTalkCid[playerId] = 5
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage) == 6 then
 		if player:getItemCount(3577) > 0 or player:getItemCount(3582) > 0 then
-			npcHandler:setMessage(MESSAGE_GREET, "Welcome back, Isleth Eagonst! Do you still have that piece of meat or ham? If so, please ask me for a {trade} and I'll give you some gold for it.")
+			NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.carlos.greet_msg_7")
 			storeTalkCid[playerId] = 6
 		else
-			npcHandler:setMessage(MESSAGE_GREET, "Welcome back, |PLAYERNAME|! Where did you put that delicious piece of food? Did you eat it yourself? Well, if you find another one, please come back.")
+			NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.carlos.greet_msg_8")
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		end
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage) == 7 then
-		npcHandler:setMessage(MESSAGE_GREET, "Hey there, |PLAYERNAME|! Well, that's how trading with NPCs like me works. I think you are ready now to cross the bridge to Rookgaard! Take care!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.carlos.greet_msg_9")
 		player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosQuestLog, 7)
 		player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage, 8)
 		npcHandler:removeInteraction(npc, creature)
 		npcHandler:resetNpc(creature)
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.CarlosNpcGreetStorage) == 8 then
-		npcHandler:setMessage(MESSAGE_GREET, "Hello again, |PLAYERNAME|! What are you still doing here? You should head over the bridge to Rookgaard village now!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.carlos.greet_msg_10")
 		npcHandler:removeInteraction(npc, creature)
 		npcHandler:resetNpc(creature)
 	end
@@ -232,9 +232,9 @@ end
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Very nice! Food for me! Sell it to me, fast! Once you sold your food to me, just say {ready} to let me know you are done.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye |PLAYERNAME|!.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye traveller and enjoy your stay on Rookgaard.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.carlos.sendtrade_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.carlos.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.carlos.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

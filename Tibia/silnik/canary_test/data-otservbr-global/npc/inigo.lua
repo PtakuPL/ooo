@@ -94,14 +94,14 @@ local hints = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I know the ways and lays of Dawnport. Talk to me if you want to know more!" },
-	{ text = "Troll hair, wolf fur, lumps of dirt - bring them to me!" },
-	{ text = "Come to me if you need help!" },
-	{ text = "Hey there, young adventurer! Need a hint?" },
-	{ text = "You came through the portal? Talk to me!" },
-	{ text = "You're going out? Make sure you have a rope with you!" },
-	{ text = "Buying all sorts of creature products!" },
-	{ text = "You're looking thoughtful. Maybe I can help you?" },
+	{ i18nKey = "npc.inigo.voice_1" },
+	{ i18nKey = "npc.inigo.voice_2" },
+	{ i18nKey = "npc.inigo.voice_3" },
+	{ i18nKey = "npc.inigo.voice_4" },
+	{ i18nKey = "npc.inigo.voice_5" },
+	{ i18nKey = "npc.inigo.voice_6" },
+	{ i18nKey = "npc.inigo.voice_7" },
+	{ i18nKey = "npc.inigo.voice_8" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -130,11 +130,7 @@ end
 npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
-npcHandler:setMessage(
-	MESSAGE_GREET,
-	"You came through the {portal}! \z
-	Though it must be different from where you came from, I'm sure you can help us. But first, I can {help} YOU."
-)
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.inigo.greet_msg_1")
 
 keywordHandler:addKeyword({ "name" }, StdModule.say, {
 	npcHandler = npcHandler,

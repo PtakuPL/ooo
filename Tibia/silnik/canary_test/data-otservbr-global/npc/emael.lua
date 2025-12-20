@@ -92,8 +92,8 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 npcHandler:setMessage(MESSAGE_GREET, { "Hello! Ever asked yourself who killed all the monsters for the wall trophies? Yeah, that was me, Emael the Beasthunter! I am an expert in displaying trophies. ...", "So if you have at least some dangerous monster to show off I strongly advise you to aquire a {podium} of vigour." })
-npcHandler:setMessage(MESSAGE_FAREWELL, "I wish you a good hunt. Goodbye!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good hunting!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.emael.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.emael.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

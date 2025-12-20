@@ -54,7 +54,7 @@ local eventDoDamage = function(creatureid, attackerid, type)
 	end
 
 	local damage = creature:getMaxHealth() / 4
-	creature:say("AHHHHHHHHHHH!", TALKTYPE_MONSTER_SAY)
+	creature:sayLocalized("scripts.creaturescripts_scarlett.say_2", TALKTYPE_MONSTER_SAY)
 	doTargetCombatHealth(attackerid, creature, type, -damage, -damage, CONST_ME_POFF, ORIGIN_NONE)
 
 	combat:execute(creature, Variant(creature:getPosition()))
@@ -82,7 +82,7 @@ local function changeScarlett(creatureid)
 		return
 	end
 
-	creature:say("Galthen... is that you?", TALKTYPE_MONSTER_SAY)
+	creature:sayLocalized("scripts.creaturescripts_scarlett.say_1", TALKTYPE_MONSTER_SAY)
 	SCARLETT_MAY_DIE = 1
 	SCARLETT_MAY_TRANSFORM = 0
 	creature:setMoveLocked(true)

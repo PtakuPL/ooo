@@ -9,7 +9,7 @@ MainWindow
     font: noto-12
     text-align: center
     color: #c0c0c0
-    !text: tr('Mode: "Chat On"')
+    !text: tr("otclient_modules.key_edit_otui.tr_6")
   
   FlatPanel
     id: keyCombo
@@ -29,7 +29,7 @@ MainWindow
     id: alone
     font: noto-12
     color: #c0c0c0
-    !text: tr("This action must be bound to a single key.")
+    !text: tr("otclient_modules.key_edit_otui.tr_5")
     visible: false
   
   Label
@@ -37,7 +37,7 @@ MainWindow
     font: noto-12
     text-align: center
     color: #f75f5f
-    !text: tr("This hotkey is already in use.")
+    !text: tr("otclient_modules.key_edit_otui.tr_4")
     visible: false
 
   HorizontalSeparator
@@ -53,14 +53,14 @@ MainWindow
     SmallButton
       id: ok
       width: 40
-      !text: tr("Ok")
+      !text: tr("otclient_modules.key_edit_otui.tr_3")
     
     SmallButton
       id: clear
       width: 45
-      !text: tr("Clear")
+      !text: tr("otclient_modules.key_edit_otui.tr_2")
     SmallButton
       id: cancel
       width: 45
-      !text: tr("Cancel")
+      !text: tr("otclient_modules.key_edit_otui.tr_1")
 

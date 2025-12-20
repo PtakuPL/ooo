@@ -1,11 +1,10 @@
 # NPC: feizuhl
 
 **Plik:** `data-otservbr-global/npc/feizuhl.lua`
-**Data migracji:** 2025-12-11 16:25
-**Liczba tekstów:** 1
+**Data migracji:** 2025-12-17 05:29
+**Liczba tekstów:** 0
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.feizuhl.stdmod_1` | I sell furniture both to the mourned and the enlightened. |

@@ -21,8 +21,8 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Hum hum, huhum" },
-	{ text = "Silly lil' human" },
+	{ i18nKey = "npc.a_sweaty_cyclops.voice_1" },
+	{ i18nKey = "npc.a_sweaty_cyclops.voice_2" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -224,8 +224,8 @@ keywordHandler:addKeyword({ "cyclops" }, StdModule.say, { npcHandler = npcHandle
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
-npcHandler:setMessage(MESSAGE_GREET, "Hum Humm! Welcume lil' |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye lil' one.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_sweaty_cyclops.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.a_sweaty_cyclops.farewell_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

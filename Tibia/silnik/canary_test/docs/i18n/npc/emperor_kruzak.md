@@ -1,7 +1,7 @@
 # NPC: emperor_kruzak
 
 **Plik:** `data-otservbr-global/npc/emperor_kruzak.lua`
-**Data migracji:** 2025-12-10 14:05
+**Data migracji:** 2025-12-17 00:56
 **Liczba tekstów:** 3
 
 ## Klucze i18n

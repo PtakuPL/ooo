@@ -79,7 +79,7 @@ end
 
 function online()
     if g_game.getFeature(GameSpellList) and not spelllistButton then
-        spelllistButton = modules.game_mainpanel.addToggleButton('spelllistButton', tr('Spell List'),
+        spelllistButton = modules.game_mainpanel.addToggleButton('spelllistButton', tr("otclient_modules.spelllist.tr_1"),
         '/images/options/button_spells', toggle, false, 4)
         spelllistButton:setOn(false)
     end

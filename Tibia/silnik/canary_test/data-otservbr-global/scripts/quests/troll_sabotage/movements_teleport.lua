@@ -2,14 +2,14 @@ local function boots(player, item, fromPosition, position)
 	local bootsItem = player:getSlotItem(CONST_SLOT_FEET)
 	if not bootsItem then
 		player:teleportTo(position)
-		player:say("You don't dare jump over the gap.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.movements_teleport.say_2", TALKTYPE_MONSTER_SAY)
 		return true
 	end
 	if bootsItem and bootsItem.itemid == 3079 then
 		if fromPosition == config[4] then
 			if player:getStorageValue(Storage.Quest.U8_2.TrollSabotageQuest.JumpTimer) < os.time() then
 				player:teleportTo(position)
-				player:say("You don't dare jump over the gap.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.movements_teleport.say_1", TALKTYPE_MONSTER_SAY)
 				return true
 			end
 			player:teleportTo(Position(33231, 31759, 2))

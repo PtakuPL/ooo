@@ -81,8 +81,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Farewell, stranger. May Uman the Wise guide your steps in this treacherous land.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Farewell, stranger. May Uman the Wise guide your steps in this treacherous land.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.melchior.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.melchior.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

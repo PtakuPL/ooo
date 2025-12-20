@@ -195,9 +195,9 @@ end
 
 keywordHandler:addCustomGreetKeyword({ "djanni'hah" }, greetCallback, { npcHandler = npcHandler })
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Finally.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Finally.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "At your service, just browse through my wares.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.alesar.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.alesar.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.alesar.sendtrade_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_ON_TRADE_REQUEST, onTradeRequest)

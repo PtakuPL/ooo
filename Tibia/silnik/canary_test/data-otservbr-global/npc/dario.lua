@@ -25,8 +25,8 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Increase your knowledge of spells here, young paladin." },
-	{ text = "Need ammunition, bows or crossbows? Have a look at my wares." },
+	{ i18nKey = "npc.dario.voice_1" },
+	{ i18nKey = "npc.dario.voice_2" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -61,9 +61,9 @@ keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "
 --Farewell message
 keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Asha Thrazi, |PLAYERNAME|.", i18nKey = "npc.dario.farewell_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Ashari, |PLAYERNAME|. If you're a distance fighter, you might want to have a look at my wares and spells.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Asha Thrazi, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Asha Thrazi, |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.dario.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.dario.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.dario.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 npcConfig.shop = {

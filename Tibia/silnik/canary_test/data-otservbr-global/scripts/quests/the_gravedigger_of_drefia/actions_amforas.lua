@@ -4,15 +4,15 @@ function gravediggerAmforas.onUse(player, item, fromPosition, target, toPosition
 		local chances = math.random(30)
 		if chances == 13 then
 			player:setStorageValue(Storage.Quest.U10_10.TheGravediggerOfDrefia.Mission06, 1)
-			player:say("You've got an amazing heart!", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_amforas.say_3", TALKTYPE_MONSTER_SAY)
 			player:getPosition():sendMagicEffect(CONST_ME_HEARTS)
 			player:addItem(19077, 1)
 		else
-			player:say("Keep it trying!", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_amforas.say_2", TALKTYPE_MONSTER_SAY)
 			player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		end
 	else
-		player:say("You've already got your heart", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.actions_amforas.say_1", TALKTYPE_MONSTER_SAY)
 	end
 	return true
 end

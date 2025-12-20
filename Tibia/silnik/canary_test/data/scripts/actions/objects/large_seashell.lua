@@ -2,7 +2,7 @@ local largeSeashell = Action()
 
 function largeSeashell.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:hasExhaustion("delay-large-seashell") then
-		player:say("You have already opened a shell today.", TALKTYPE_MONSTER_SAY, false, player, item:getPosition())
+		player:sayLocalized("scripts.large_seashell.say_1", TALKTYPE_MONSTER_SAY, false, player, item:getPosition())
 		return true
 	end
 

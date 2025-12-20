@@ -1,184 +1,755 @@
 {
   "skip_until": {
-    "npc": 1765860804.2901664,
-    "monsters": 1765860276.925475,
-    "quests": 1765860286.0499613,
-    "raids": 1765860290.1479974,
-    "world": 1765860294.2222526,
-    "talkactions": 1765860298.3258448,
-    "movements": 1765860302.375571,
-    "creaturescripts": 1765860306.6185336,
-    "globalevents": 1765860310.927419,
-    "items": 1765860320.0957081,
-    "mounts": 1765860325.184398
+    "npc": 1765965999.8994849,
+    "scripts": 1765967433.3161507,
+    "monsters": 1765968051.4173195,
+    "actions": 1765966230.3931904,
+    "quests": 1765966239.3058949,
+    "raids": 1765966247.9581125,
+    "world": 1765967474.0396717,
+    "spells": 1765967483.3023405,
+    "talkactions": 1765967492.0606544,
+    "movements": 1765967500.9279718,
+    "creaturescripts": 1765967509.9869711,
+    "globalevents": 1765967519.4048953,
+    "mounts": 1765968186.5395372,
+    "libs": 1765967560.1945305,
+    "events": 1765967811.084914,
+    "chatchannels": 1765967820.6620967,
+    "modules": 1765954881.3465712,
+    "startup": 1765954883.982409,
+    "npclib": 1765954891.2007701,
+    "dataroot": 1765954893.4171572,
+    "cpp": 1765955206.5254543,
+    "otclient_modules": 1765967601.0357666,
+    "otclient_mods": 1765954918.239609,
+    "otclient_data": 1765967612.6246326,
+    "otclient_src": 1765954930.4491873,
+    "otclient_tools": 1765954937.7025886,
+    "server": 1765954941.7744484,
+    "errors": 1765954947.6153712,
+    "items": 1765968797.621003
   },
   "last_processed": {
     "npc": {
       "count": 0,
-      "timestamp": 1765860204.2901607
+      "timestamp": 1765958799.899481
     },
     "scripts": {
-      "count": 124,
-      "timestamp": 1765864176.1741755
+      "count": 0,
+      "timestamp": 1765960233.316147
     },
     "monsters": {
       "count": 0,
-      "timestamp": 1765859976.925471
+      "timestamp": 1765960851.4173157
     },
     "actions": {
-      "count": 2,
-      "timestamp": 1765860593.1385262
+      "count": 0,
+      "timestamp": 1765959030.393187
     },
     "quests": {
       "count": 0,
-      "timestamp": 1765859986.0499554
+      "timestamp": 1765959039.305891
     },
     "raids": {
       "count": 0,
-      "timestamp": 1765859990.1479936
+      "timestamp": 1765959047.958109
     },
     "world": {
       "count": 0,
-      "timestamp": 1765859994.2222493
+      "timestamp": 1765960274.0396683
     },
     "spells": {
       "count": 0,
-      "timestamp": 1765489504.1049697
+      "timestamp": 1765960283.302337
     },
     "talkactions": {
       "count": 0,
-      "timestamp": 1765859998.3258383
+      "timestamp": 1765960292.0606508
     },
     "movements": {
       "count": 0,
-      "timestamp": 1765860002.3755677
+      "timestamp": 1765960300.9279678
     },
     "creaturescripts": {
       "count": 0,
-      "timestamp": 1765860006.618528
+      "timestamp": 1765960309.986967
     },
     "globalevents": {
       "count": 0,
-      "timestamp": 1765860010.9274154
+      "timestamp": 1765960319.4048903
     },
     "items": {
       "count": 0,
-      "timestamp": 1765860020.0957034
+      "timestamp": 1765961597.620999
     },
     "mounts": {
       "count": 0,
-      "timestamp": 1765860025.1843946
+      "timestamp": 1765960986.5395336
     },
     "libs": {
       "count": 0,
-      "timestamp": 1765515952.4791906
+      "timestamp": 1765960360.194527
     },
     "events": {
       "count": 0,
-      "timestamp": 1765515953.3688107
+      "timestamp": 1765960611.0849104
     },
     "chatchannels": {
       "count": 0,
-      "timestamp": 1765515954.679142
+      "timestamp": 1765960620.6620934
     },
     "modules": {
       "count": 0,
-      "timestamp": 1765515961.7880714
+      "timestamp": 1765954581.3465674
     },
     "startup": {
       "count": 0,
-      "timestamp": 1765515963.3394125
+      "timestamp": 1765954583.9824054
     },
     "npclib": {
       "count": 0,
-      "timestamp": 1765515972.922175
+      "timestamp": 1765954591.2007663
     },
     "dataroot": {
       "count": 0,
-      "timestamp": 1765515980.9075325
-    },
-    "php": {
-      "count": 0,
-      "timestamp": 1765515996.413094
-    },
-    "html": {
-      "count": 0,
-      "timestamp": 1765516002.1360102
+      "timestamp": 1765954593.4171536
     },
     "cpp": {
       "count": 0,
-      "timestamp": 1765489677.0664437
+      "timestamp": 1765954606.5254488
     },
     "otclient_modules": {
-      "count": 861,
-      "timestamp": 1765864259.486552
+      "count": 0,
+      "timestamp": 1765960401.035763
     },
     "otclient_mods": {
       "count": 0,
-      "timestamp": 1765489694.90867
+      "timestamp": 1765954618.239589
     },
     "otclient_data": {
-      "count": 80,
-      "timestamp": 1765867678.1505785
+      "count": 0,
+      "timestamp": 1765960412.6246293
     },
     "otclient_src": {
       "count": 0,
-      "timestamp": 1765489712.7852297
+      "timestamp": 1765954630.4491827
     },
     "otclient_tools": {
       "count": 0,
-      "timestamp": 1765516012.7019596
+      "timestamp": 1765954637.7025843
     },
     "server": {
       "count": 0,
-      "timestamp": 1765489739.4466455
+      "timestamp": 1765954641.7744439
     },
     "errors": {
       "count": 0,
-      "timestamp": 1765516015.91782
+      "timestamp": 1765954647.6153667
     }
   },
   "consecutive_zeros": {
-    "npc": 2,
-    "scripts": 0,
-    "monsters": 1,
-    "actions": 0,
-    "quests": 1,
-    "raids": 1,
-    "world": 1,
-    "spells": 0,
-    "talkactions": 1,
-    "movements": 1,
-    "creaturescripts": 1,
-    "globalevents": 1,
-    "items": 1,
-    "mounts": 1,
-    "libs": 0,
-    "events": 0,
-    "chatchannels": 0,
-    "modules": 0,
-    "startup": 0,
-    "npclib": 0,
-    "dataroot": 0,
-    "php": 0,
-    "html": 0,
-    "cpp": 0,
-    "otclient_modules": 0,
-    "otclient_mods": 0,
-    "otclient_data": 0,
-    "otclient_src": 0,
-    "otclient_tools": 0,
-    "server": 0,
-    "errors": 0
+    "npc": 5,
+    "scripts": 5,
+    "monsters": 5,
+    "actions": 5,
+    "quests": 5,
+    "raids": 5,
+    "world": 5,
+    "spells": 5,
+    "talkactions": 5,
+    "movements": 5,
+    "creaturescripts": 5,
+    "globalevents": 5,
+    "items": 5,
+    "mounts": 5,
+    "libs": 5,
+    "events": 5,
+    "chatchannels": 5,
+    "modules": 1,
+    "startup": 1,
+    "npclib": 1,
+    "dataroot": 1,
+    "cpp": 2,
+    "otclient_modules": 5,
+    "otclient_mods": 1,
+    "otclient_data": 5,
+    "otclient_src": 1,
+    "otclient_tools": 1,
+    "server": 1,
+    "errors": 1
   },
   "total_processed": {
-    "monsters": 349888,
-    "mounts": -43324,
-    "npc": 4,
-    "scripts": 172,
-    "actions": 11,
-    "otclient_modules": 861,
-    "otclient_data": 80
+    "items": 27196
   },
-  "migrations_done": false
+  "migrations_done": true,
+  "docs_done": false,
+  "translation_sync": {
+    "current_lang": "sw",
+    "current_category": "spells.json",
+    "languages_done": [],
+    "stats": {
+      "de": {
+        "spells": 1426,
+        "total": 1426
+      },
+      "pl": {
+        "spells": 1426,
+        "total": 1426
+      },
+      "es": {
+        "spells": 1426,
+        "total": 1426
+      },
+      "pt": {
+        "spells": 1426,
+        "total": 1426
+      },
+      "fr": {
+        "spells": 1426,
+        "total": 1426
+      },
+      "it": {
+        "spells": 1426,
+        "total": 1426
+      },
+      "nl": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "cs": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "sk": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "hu": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "sv": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "da": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "no": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "fi": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "et": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "lv": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "lt": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "ro": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "bg": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "el": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "hr": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "sl": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "bs": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "sr": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "mk": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "sq": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "ru": {
+        "spells": 1426,
+        "total": 1426
+      },
+      "uk": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "kk": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "uz": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "az": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "hy": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "ka": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "tr": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "ar": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "he": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "fa": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "zh": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "zh_TW": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "ja": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "ko": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "hi": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "th": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "vi": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "id": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "ms": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "tl": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "bn": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "ta": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "te": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "ml": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      },
+      "sw": {
+        "npc": 6946,
+        "total": 8372,
+        "spells": 1426
+      }
+    },
+    "last_sync": 1765962487.171484
+  },
+  "auto_translate_done": [
+    "de:actions.json",
+    "de:chatchannels.json",
+    "de:creaturescripts.json",
+    "de:dataroot.json",
+    "de:events.json",
+    "de:items.json",
+    "de:libs.json",
+    "de:modules.json",
+    "de:monsters.json",
+    "de:npc.json",
+    "de:otclient_data.json",
+    "de:otclient_modules.json",
+    "de:quests.json",
+    "de:raids.json",
+    "de:scripts.json",
+    "de:server.json",
+    "de:spells.json",
+    "de:startup.json",
+    "pl:actions.json",
+    "pl:chatchannels.json",
+    "pl:creaturescripts.json",
+    "pl:dataroot.json",
+    "pl:events.json",
+    "pl:items.json",
+    "pl:libs.json",
+    "pl:modules.json",
+    "pl:monsters.json",
+    "pl:npc.json",
+    "pl:otclient_data.json",
+    "pl:otclient_modules.json",
+    "pl:quests.json",
+    "pl:raids.json",
+    "pl:scripts.json",
+    "pl:server.json",
+    "pl:spells.json",
+    "pl:startup.json",
+    "es:actions.json",
+    "es:chatchannels.json",
+    "es:creaturescripts.json",
+    "es:dataroot.json",
+    "es:events.json",
+    "es:items.json",
+    "es:libs.json",
+    "es:modules.json",
+    "es:monsters.json",
+    "es:npc.json",
+    "es:otclient_data.json",
+    "es:otclient_modules.json",
+    "es:quests.json",
+    "es:raids.json",
+    "es:scripts.json",
+    "es:server.json",
+    "es:spells.json",
+    "es:startup.json",
+    "pt:actions.json",
+    "pt:chatchannels.json",
+    "pt:creaturescripts.json",
+    "pt:dataroot.json",
+    "pt:events.json",
+    "pt:items.json",
+    "pt:libs.json",
+    "pt:modules.json",
+    "pt:monsters.json",
+    "pt:npc.json",
+    "pt:otclient_data.json",
+    "pt:otclient_modules.json",
+    "pt:quests.json",
+    "pt:raids.json",
+    "pt:scripts.json",
+    "pt:server.json",
+    "pt:spells.json",
+    "pt:startup.json",
+    "fr:actions.json",
+    "fr:chatchannels.json",
+    "fr:creaturescripts.json",
+    "fr:dataroot.json",
+    "fr:events.json",
+    "fr:items.json",
+    "fr:libs.json",
+    "fr:modules.json",
+    "fr:monsters.json",
+    "fr:npc.json",
+    "fr:otclient_data.json",
+    "fr:otclient_modules.json",
+    "fr:quests.json",
+    "fr:raids.json",
+    "fr:scripts.json",
+    "fr:server.json",
+    "fr:spells.json",
+    "fr:startup.json",
+    "it:actions.json",
+    "it:chatchannels.json",
+    "it:creaturescripts.json",
+    "it:dataroot.json",
+    "it:events.json",
+    "it:items.json",
+    "it:libs.json",
+    "it:modules.json",
+    "it:monsters.json",
+    "it:npc.json",
+    "it:otclient_data.json",
+    "it:otclient_modules.json",
+    "it:quests.json",
+    "it:raids.json",
+    "it:scripts.json",
+    "it:server.json",
+    "it:spells.json",
+    "it:startup.json",
+    "nl:actions.json",
+    "nl:chatchannels.json",
+    "nl:creaturescripts.json",
+    "nl:dataroot.json",
+    "nl:events.json",
+    "nl:items.json",
+    "nl:libs.json",
+    "nl:modules.json",
+    "nl:monsters.json",
+    "nl:npc.json",
+    "nl:otclient_data.json",
+    "nl:otclient_modules.json",
+    "nl:quests.json",
+    "nl:raids.json",
+    "nl:scripts.json",
+    "nl:server.json",
+    "nl:spells.json",
+    "nl:startup.json",
+    "cs:actions.json",
+    "cs:chatchannels.json",
+    "cs:creaturescripts.json",
+    "cs:dataroot.json",
+    "cs:events.json",
+    "cs:items.json",
+    "cs:libs.json",
+    "cs:modules.json",
+    "cs:monsters.json",
+    "cs:npc.json",
+    "cs:otclient_data.json",
+    "cs:otclient_modules.json",
+    "cs:quests.json",
+    "cs:raids.json",
+    "cs:scripts.json",
+    "cs:server.json",
+    "cs:spells.json",
+    "cs:startup.json",
+    "sk:actions.json",
+    "sk:chatchannels.json",
+    "sk:creaturescripts.json",
+    "sk:dataroot.json",
+    "sk:events.json",
+    "sk:items.json",
+    "sk:libs.json",
+    "sk:modules.json",
+    "sk:monsters.json",
+    "sk:npc.json",
+    "sk:otclient_data.json",
+    "sk:otclient_modules.json",
+    "sk:quests.json",
+    "sk:raids.json",
+    "sk:scripts.json",
+    "sk:server.json",
+    "sk:spells.json",
+    "sk:startup.json",
+    "hu:actions.json",
+    "hu:chatchannels.json",
+    "hu:creaturescripts.json",
+    "hu:dataroot.json",
+    "hu:events.json",
+    "hu:items.json",
+    "hu:libs.json",
+    "hu:modules.json",
+    "hu:monsters.json",
+    "hu:npc.json",
+    "hu:otclient_data.json",
+    "hu:otclient_modules.json",
+    "hu:quests.json",
+    "hu:raids.json",
+    "hu:scripts.json",
+    "hu:server.json",
+    "hu:spells.json",
+    "hu:startup.json",
+    "sv:actions.json",
+    "sv:chatchannels.json",
+    "sv:creaturescripts.json",
+    "sv:dataroot.json",
+    "sv:events.json",
+    "sv:items.json",
+    "sv:libs.json",
+    "sv:modules.json",
+    "sv:monsters.json",
+    "sv:npc.json",
+    "sv:otclient_data.json",
+    "sv:otclient_modules.json",
+    "sv:quests.json",
+    "sv:raids.json",
+    "sv:scripts.json",
+    "sv:server.json",
+    "sv:spells.json",
+    "sv:startup.json",
+    "da:actions.json",
+    "da:chatchannels.json",
+    "da:creaturescripts.json",
+    "da:dataroot.json",
+    "da:events.json",
+    "da:items.json",
+    "da:libs.json",
+    "da:modules.json",
+    "da:monsters.json",
+    "da:npc.json",
+    "da:otclient_data.json",
+    "da:otclient_modules.json",
+    "da:quests.json",
+    "da:raids.json",
+    "da:scripts.json",
+    "da:server.json",
+    "da:spells.json",
+    "da:startup.json",
+    "no:actions.json",
+    "no:chatchannels.json",
+    "no:creaturescripts.json",
+    "no:dataroot.json",
+    "no:events.json",
+    "no:items.json",
+    "no:libs.json",
+    "no:modules.json",
+    "no:monsters.json",
+    "no:npc.json",
+    "no:otclient_data.json",
+    "no:otclient_modules.json",
+    "no:quests.json",
+    "no:raids.json",
+    "no:scripts.json",
+    "no:server.json",
+    "no:spells.json",
+    "no:startup.json",
+    "fi:actions.json",
+    "fi:chatchannels.json",
+    "fi:creaturescripts.json",
+    "fi:dataroot.json",
+    "fi:events.json",
+    "fi:items.json",
+    "fi:libs.json",
+    "fi:modules.json",
+    "fi:monsters.json",
+    "fi:npc.json",
+    "fi:otclient_data.json",
+    "fi:otclient_modules.json",
+    "fi:quests.json",
+    "fi:raids.json",
+    "fi:scripts.json",
+    "fi:server.json",
+    "fi:spells.json",
+    "fi:startup.json",
+    "et:actions.json",
+    "et:chatchannels.json",
+    "et:creaturescripts.json",
+    "et:dataroot.json",
+    "et:events.json",
+    "et:items.json",
+    "et:libs.json",
+    "et:modules.json",
+    "et:monsters.json",
+    "et:npc.json",
+    "et:otclient_data.json",
+    "et:otclient_modules.json",
+    "et:quests.json",
+    "et:raids.json",
+    "et:scripts.json",
+    "et:server.json",
+    "et:spells.json",
+    "et:startup.json",
+    "lv:actions.json",
+    "lv:chatchannels.json",
+    "lv:creaturescripts.json",
+    "lv:dataroot.json",
+    "lv:events.json",
+    "lv:items.json",
+    "lv:libs.json",
+    "lv:modules.json",
+    "lv:monsters.json",
+    "lv:npc.json",
+    "lv:otclient_data.json",
+    "lv:otclient_modules.json",
+    "lv:quests.json",
+    "lv:raids.json",
+    "lv:scripts.json",
+    "lv:server.json",
+    "lv:spells.json",
+    "lv:startup.json",
+    "lt:actions.json",
+    "lt:chatchannels.json",
+    "lt:creaturescripts.json",
+    "lt:dataroot.json",
+    "lt:events.json",
+    "lt:items.json",
+    "lt:libs.json",
+    "lt:modules.json",
+    "lt:monsters.json",
+    "lt:npc.json",
+    "lt:otclient_data.json",
+    "lt:otclient_modules.json",
+    "lt:quests.json",
+    "lt:raids.json",
+    "lt:scripts.json",
+    "lt:server.json",
+    "lt:spells.json"
+  ]
 }

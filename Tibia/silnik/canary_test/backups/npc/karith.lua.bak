@@ -311,9 +311,9 @@ keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addKeyword({ "yalahar" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.karith.stdmod_4" })
 
 -- Greeting message
-keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Hello! Tell me what's on your mind. Time is money." })
+keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Hello! Tell me what's on your mind. Time is money.", i18nKey = "npc.karith.greet_1" })
 --Farewell message
-keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Goodbye, |PLAYERNAME|." })
+keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Goodbye, |PLAYERNAME|.", i18nKey = "npc.karith.farewell_1" })
 
 npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye.")
 npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")

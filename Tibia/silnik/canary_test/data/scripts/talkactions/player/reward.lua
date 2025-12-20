@@ -36,7 +36,7 @@ local function sendExerciseRewardModal(player)
 						player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.reward.msg_1")
 						return
 					end
-					player:sendTextMessage(MESSAGE_LOOK, string.format("Congratulations, you received a %s with %i charges in your store inbox.", iType:getName(), it.charges))
+					player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.reward.msg_1", {iType:getName(), it.charges})
 					player:setStorageValue(config.storage, 1)
 				else
 					player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.reward.msg_2")

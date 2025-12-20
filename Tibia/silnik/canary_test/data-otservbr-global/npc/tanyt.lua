@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Feel the wind in your hair during one of my carpet rides!" },
+	{ i18nKey = "npc.tanyt.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -97,9 +97,9 @@ keywordHandler:addKeyword({ "destination" }, StdModule.say, { npcHandler = npcHa
 keywordHandler:addKeyword({ "sail" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tanyt.stdmod_10" })
 keywordHandler:addKeyword({ "go" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tanyt.stdmod_11" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Ah, the wind brings in another visitor. Welcome, dear guest. Are you looking for a {passage} with my carpet?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye. Recommend us if you were satisfied with our service.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.tanyt.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.tanyt.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.tanyt.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

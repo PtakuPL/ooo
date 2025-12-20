@@ -161,7 +161,7 @@ function onUsePickAtTunnelPillar(player, item, fromPosition, itemEx, toPosition)
 				player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.mission09_rock_troll.msg_5")
 				player:addExperience(100, true)
 			end
-			player:say("<crack>", TALKTYPE_MONSTER_SAY, false, player, toPosition)
+			player:sayLocalized("quests.mission09_rock_troll.say_1", TALKTYPE_MONSTER_SAY, false, player, toPosition)
 			toPosition:sendMagicEffect(CONST_ME_HITAREA)
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission09, newMissionState)
 			player:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.TunnelPillars, pillarsState + pillarId)

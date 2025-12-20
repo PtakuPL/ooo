@@ -31,11 +31,11 @@ function statuesActions.onUse(player, item, fromPosition, target, toPosition, is
 	end
 
 	if player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Sixth.Favor) >= 5 and not testFlag(player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Sixth.BlessedStatues), key.storage) then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You bless the statue.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.8_blessing_the_statues.msg_2")
 		player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Sixth.Favor, player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Sixth.Favor) + 1)
 		player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Sixth.BlessedStatues, player:getStorageValue(Storage.Quest.U12_20.KilmareshQuest.Sixth.BlessedStatues) + key.storage)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You already blessed this statue.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.8_blessing_the_statues.msg_1")
 	end
 
 	return true

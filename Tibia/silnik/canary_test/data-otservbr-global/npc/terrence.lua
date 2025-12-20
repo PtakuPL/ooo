@@ -72,7 +72,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, " Hey there, you are surely interested in helping the Rathleton city guard, right? Right - especially now since the dreaded minotaurs gain more ground every day.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.terrence.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

@@ -121,9 +121,9 @@ keywordHandler:addKeyword({ "rebellion" }, StdModule.say, { npcHandler = npcHand
 keywordHandler:addKeyword({ "alcohol" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.shauna.stdmod_34" })
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_GREET, "Howdy, |PLAYERNAME|!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "LONG LIVE THE QUEEN!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "LONG LIVE THE QUEEN!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.shauna.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.shauna.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.shauna.walkaway_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

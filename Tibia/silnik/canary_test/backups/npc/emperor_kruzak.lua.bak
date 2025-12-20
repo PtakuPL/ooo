@@ -176,8 +176,8 @@ node1:addChildKeyword({ "yes" }, StdModule.promotePlayer, { npcHandler = npcHand
 node1:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, i18nKey = "npc.emperor_kruzak.stdmod_2", reset = true })
 
 -- Greeting message
-keywordHandler:addGreetKeyword({ "hail emperor" }, { npcHandler = npcHandler, text = "Hiho, may fire and earth bless you, my child. Are you looking for a promotion?" })
-keywordHandler:addGreetKeyword({ "salutations emperor" }, { npcHandler = npcHandler, text = "Hiho, may fire and earth bless you, my child. Are you looking for a promotion?" })
+keywordHandler:addGreetKeyword({ "hail emperor" }, { npcHandler = npcHandler, text = "Hiho, may fire and earth bless you, my child. Are you looking for a promotion?", i18nKey = "npc.emperor_kruzak.greet_1" })
+keywordHandler:addGreetKeyword({ "salutations emperor" }, { npcHandler = npcHandler, text = "Hiho, may fire and earth bless you, my child. Are you looking for a promotion?", i18nKey = "npc.emperor_kruzak.greet_2" })
 
 npcHandler:setMessage(MESSAGE_WALKAWAY, "Farewell, |PLAYERNAME|, my child!")
 

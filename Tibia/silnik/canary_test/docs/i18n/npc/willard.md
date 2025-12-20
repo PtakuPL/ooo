@@ -1,11 +1,10 @@
 # NPC: willard
 
 **Plik:** `data-otservbr-global/npc/willard.lua`
-**Data migracji:** 2025-12-11 16:33
-**Liczba tekstów:** 1
+**Data migracji:** 2025-12-17 05:32
+**Liczba tekstów:** 0
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.willard.stdmod_1` | Selling weapons, ammunition and armor. Special offers only a... |

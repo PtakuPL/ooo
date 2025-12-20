@@ -25,7 +25,7 @@ local spell = Spell("instant")
 
 function spell.onCastSpell(creature, var)
 	if creature:getHealth() < creature:getMaxHealth() * 0.4 then
-		creature:say("Back in black!", TALKTYPE_MONSTER_SAY)
+		creature:sayLocalized("scripts.furyosa_deathball.say_1", TALKTYPE_MONSTER_SAY)
 		return combat:execute(creature, var)
 	end
 	return false

@@ -1,7 +1,7 @@
 # NPC: shanar
 
 **Plik:** `data-otservbr-global/npc/shanar.lua`
-**Data migracji:** 2025-12-10 14:15
+**Data migracji:** 2025-12-17 01:06
 **Liczba tekstów:** 4
 
 ## Klucze i18n

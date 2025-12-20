@@ -54,9 +54,9 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.MotA.Mission) == 13 then
-		npcHandler:setMessage(MESSAGE_GREET, "Enter answers for the following {questions}:")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.denominator.greet_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Greetings.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.denominator.greet_msg_2")
 	end
 	return true
 end
@@ -166,7 +166,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:say(quiz1[questionId].p, npc, creature)
 		npcHandler:setTopic(playerId, 3)
 	elseif npcHandler:getTopic(playerId) == 3 then
-		npcHandler:say(string.format("Your answer is %s, do you want to continue?", message), npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.denominator.say_1", { message })
 		playerLastResp[playerId] = tonumber(message)
 		npcHandler:setTopic(playerId, 4)
 	elseif npcHandler:getTopic(playerId) == 4 then
@@ -235,7 +235,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.denominator.say_9")
 		npcHandler:setTopic(playerId, 10)
 	elseif npcHandler:getTopic(playerId) == 10 then
-		npcHandler:say(string.format("Your answer is %s, do you want to continue?", message), npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.denominator.say_2", { message })
 		playerLastResp[playerId] = tonumber(message)
 		npcHandler:setTopic(playerId, 11)
 	elseif npcHandler:getTopic(playerId) == 11 then
@@ -262,7 +262,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Well, bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.denominator.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_SET_INTERACTION, onAddFocus)
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)

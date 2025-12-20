@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "You need to find some heroes. Find, find, find!!" },
+	{ i18nKey = "npc.myzzi.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

@@ -74,11 +74,11 @@ function lowerRoshamuulChamber.onUse(cid, item, fromPosition, itemEx, toPosition
 
 	if Game.getStorageValue(config.storage) <= 0 then
 		if math.random(0, 10000) < 7000 then
-			player:say("PRRRR...*crackle*", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_resonance_chamber.say_2", TALKTYPE_MONSTER_SAY)
 			item:remove(1)
 			return true
 		else
-			player:say("PRRRROOOOOAAAAAHHHH!!!", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_resonance_chamber.say_1", TALKTYPE_MONSTER_SAY)
 		end
 
 		local raid = config.raid

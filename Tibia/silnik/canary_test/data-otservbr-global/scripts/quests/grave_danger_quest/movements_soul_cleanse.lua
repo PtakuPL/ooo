@@ -9,7 +9,7 @@ function soul_cleanse.onStepIn(creature, item, position, fromPosition)
 		local health = (creature:getHealth() / creature:getMaxHealth()) * 100
 
 		if health == 100 then
-			creature:say("The broken Soul absorbs the power of the soul splinter and gains strength!")
+			creature:sayLocalized("scripts.movements_soul_cleanse.say_1")
 			creature:teleportTo(config.soulPos)
 			item:remove()
 			removeTainted()

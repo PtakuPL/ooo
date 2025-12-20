@@ -50,7 +50,7 @@ function displayDeadMessage()
         return
     end
 
-    modules.game_textmessage.displayGameMessage(tr('You are dead.'))
+    modules.game_textmessage.displayGameMessage(tr("otclient_modules.playerdeath.tr_1"))
 end
 
 function openWindow(deathType, penalty)

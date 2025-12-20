@@ -63,9 +63,9 @@ npcType.onCheckItem = function(npc, player, clientId, subType) end
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Trading tokens! First-class bargains!" },
-	{ text = "Bespoke armor for all vocations! For the cost of some tokens only!" },
-	{ text = "Tokens! Bring your tokens!" },
+	{ i18nKey = "npc.cledwyn.voice_1" },
+	{ i18nKey = "npc.cledwyn.voice_2" },
+	{ i18nKey = "npc.cledwyn.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -212,7 +212,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Blessings, Player! How may I be of service? Do you wish to trade some {token}s, or would you like some {information} or {talk}? Should I {enchant} certain items for you?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.cledwyn.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

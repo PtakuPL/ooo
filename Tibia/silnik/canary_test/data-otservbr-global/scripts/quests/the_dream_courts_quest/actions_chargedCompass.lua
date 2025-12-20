@@ -24,7 +24,7 @@ function actions_chargedCompass.onUse(player, item, fromPosition, target, toPosi
 		if isInQuest == 3 and player:getStorageValue(storage) < 1 then
 			player:setStorageValue(count, player:getStorageValue(count) + 1)
 			player:setStorageValue(storage, 1)
-			player:say("The energy is transferred to the rune stone. It glows now!", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_chargedcompass.say_1", TALKTYPE_MONSTER_SAY)
 			target:getPosition():sendMagicEffect(CONST_ME_THUNDER)
 			target:transform(29335)
 			item:transform(29291)

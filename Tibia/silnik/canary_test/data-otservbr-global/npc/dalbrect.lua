@@ -173,9 +173,9 @@ keywordHandler:addKeyword({ "ship" }, StdModule.say, {
 	i18nKey = "npc.dalbrect.stdmod_13",
 })
 
-npcHandler:setMessage(MESSAGE_GREET, "Be greeted, traveller |PLAYERNAME|. Welcome to my {hut}.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye. You are welcome.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.dalbrect.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.dalbrect.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.dalbrect.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

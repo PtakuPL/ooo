@@ -15,7 +15,7 @@ function carrotCake.onUse(player, item, fromPosition, target, toPosition, isHotk
 
 	player:addCondition(distanceCondition)
 	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.carrot_cake.msg_2")
-	player:say("Mmmm.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.carrot_cake.say_1", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)
 	item:remove(1)

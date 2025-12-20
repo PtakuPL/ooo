@@ -54,9 +54,9 @@ keywordHandler:addKeyword({ "quest" }, StdModule.say, { npcHandler = npcHandler,
 keywordHandler:addKeyword({ "pyrale" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.a_frog.stdmod_7" })
 keywordHandler:addKeyword({ "ribbit" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.a_frog.stdmod_8" })
 
-npcHandler:setMessage(MESSAGE_GREET, "*sigh* Yet another dumb adventurer.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Yeah, good bye and don't come again!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Hah! That idiot finally left.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_frog.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.a_frog.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.a_frog.walkaway_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

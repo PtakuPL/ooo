@@ -34,7 +34,7 @@ local leverDeathPriestShargon = Action()
 function leverDeathPriestShargon.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if item.itemid == 2772 then
 		if roomIsOccupied(setting.centerRoom, false, setting.range, setting.range) then
-			player:say("Someone is fighting against the boss! You need to wait awhile.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_lever_death_priest_shargon.say_1", TALKTYPE_MONSTER_SAY)
 			return true
 		end
 

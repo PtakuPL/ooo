@@ -21,9 +21,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Hm? What is the meaning of all this?" },
-	{ text = "What have I become? What is slime if it's not for everyone?" },
-	{ text = "Slime! Everywhere! SLIME TIME! Or... not?" },
+	{ i18nKey = "npc.sane_mage.voice_1" },
+	{ i18nKey = "npc.sane_mage.voice_2" },
+	{ i18nKey = "npc.sane_mage.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -82,9 +82,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "...er... hello? Yes...? Well, if... if you have any questions - I am not even here.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Yes... then, goodbye.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Yes... then, goodbye.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.sane_mage.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.sane_mage.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.sane_mage.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

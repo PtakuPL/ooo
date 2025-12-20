@@ -1,1 +1,23 @@
-{}
+{
+  "actions.arena_10x10.say_1": "[PL] Please wait for the fighters come out of the arena.",
+  "actions.arena_10x10.say_2": "[PL] You need 10 players for enter in the arena.",
+  "actions.arena_10x10.say_3": "[PL] You need 10 players for enter in the arena.",
+  "actions.arena_2x2.say_1": "[PL] Please wait for the fighters come out of the arena.",
+  "actions.arena_2x2.say_2": "[PL] You need 2 players for enter in the arena.",
+  "actions.arena_2x2.say_3": "[PL] You need 2 players for enter in the arena.",
+  "actions.construction_kits.msg_1": "[PL] You may construct this only inside a house.",
+  "actions.construction_kits.msg_2": "[PL] Put the construction kit on the floor first.",
+  "actions.fishing.msg_1": "[PL] You are not the owner.",
+  "actions.fluids.msg_1": "[PL] It is empty.",
+  "actions.fluids.msg_2": "[PL] It is empty.",
+  "actions.golden.msg_1": "[PL] Someone is fighting against the boss! You need wait awhile.",
+  "actions.golden.msg_2": "[PL] You need 5 players to fight with this boss.",
+  "actions.imbuement_shrine.msg_1": "[PL] You can only use the shrine on an valid item.",
+  "actions.imbuement_shrine.msg_2": "[PL] You did not collect enough knowledge from the ancient Shapers. Visit the Shaper temple in Montag for help.",
+  "actions.keys.msg_1": "[PL] You have fifteen minutes to kill and loot this boss, else you will lose that chance.",
+  "actions.keys.msg_2": "[PL] You have entered an ancient demon prison cell!",
+  "actions.quests.msg_1": "[PL] It is empty.",
+  "actions.quests.msg_2": "[PL] It is empty.",
+  "actions.random_items.say_1": "[PL] You found ",
+  "actions.random_items.say_2": "[PL] You found nothing useful."
+}

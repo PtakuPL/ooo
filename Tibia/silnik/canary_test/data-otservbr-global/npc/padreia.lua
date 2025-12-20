@@ -128,9 +128,9 @@ keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addKeyword({ "druids" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.padreia.stdmod_6" })
 keywordHandler:addKeyword({ "sorcerers" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.padreia.stdmod_7" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to our humble guild, wanderer. May I be of any assistance to you?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Farewell.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Farewell.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.padreia.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.padreia.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.padreia.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

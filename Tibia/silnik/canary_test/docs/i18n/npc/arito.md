@@ -1,11 +1,10 @@
 # NPC: arito
 
 **Plik:** `data-otservbr-global/npc/arito.lua`
-**Data migracji:** 2025-12-11 16:25
-**Liczba tekstów:** 1
+**Data migracji:** 2025-12-17 05:28
+**Liczba tekstów:** 0
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.arito.stdmod_1` | Come in, have a drink and something to eat. |

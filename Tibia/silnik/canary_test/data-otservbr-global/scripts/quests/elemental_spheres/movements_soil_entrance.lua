@@ -17,7 +17,7 @@ function soilEntrance.onStepIn(creature, item, position, fromPosition)
 	if not teleport or player:getVocation():getBaseId() ~= teleport.vocation or player:getLevel() < 10 then
 		player:teleportTo(fromPosition, true)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:say("Your vocation cant enter in this teleport.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.movements_soil_entrance.say_1", TALKTYPE_MONSTER_SAY)
 		return true
 	end
 

@@ -5,7 +5,7 @@ HouseBidArea < UIWidget
   height: 100
   margin-top: 2
   Label
-    !text: tr('Set bid limit:')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_37")
     color: #909090
     text-align: right
     size: 90 15
@@ -54,13 +54,13 @@ House < UICheckBox
   Label
     id: size
     size: 100 15
-    !text: tr('Size: 17sqm')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_36")
     color: #909090
     anchors.top: parent.top
     anchors.left: parent.left
   Label
     id: status
-    !text: tr('Status: auctioned (no bid yet)')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_35")
     text-auto-resize: true
     color: #909090
     anchors.top: size.bottom
@@ -69,13 +69,13 @@ House < UICheckBox
   Label
     id: beds
     size: 95 15
-    !text: tr('Max. Beds: 1')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_34")
     color: #909090
     anchors.top: size.top
     anchors.left: size.right
   Label
     text-auto-resize: true
-    !text: tr('Rent:   ')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_33")
     color: #909090
     anchors.top: beds.top
     anchors.left: beds.right
@@ -141,7 +141,7 @@ CharacterGridItem < UIWidget
     anchors.fill: ItemBackground
   Label
     id: amount
-    !text: tr('0')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_32")
     color: #C0C0C0
     font: noto-12
     text-auto-resize: true
@@ -166,7 +166,7 @@ CharacterListItem < UIWidget
     anchors.fill: ItemBackground
   Label
     id: name
-    !text: tr('Boots')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_31")
     color: #C0C0C0
     text-auto-resize: true
     anchors.verticalCenter: item.verticalCenter
@@ -182,7 +182,7 @@ CharacterListItem < UIWidget
     margin-right: 135
   Label
     id: amount
-    !text: tr('1')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_30")
     color: #C0C0C0
     text-auto-resize: true
     anchors.verticalCenter: item.verticalCenter
@@ -296,7 +296,7 @@ CharacterElementReduction < UIWidget
   height: 20
   Label
     id: name
-    !text: tr('Physical')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_29")
     text-auto-resize: true
     anchors.top: parent.top
     anchors.left: parent.left
@@ -343,7 +343,7 @@ SelectBossBossSlots < UICheckBox
   text-offset: 0 3
   text-align: top
   image-border: 5
-  !text: tr('?')
+  !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_28")
   color: #BEBEBE
   border: 0 white
   @onClick: modules.game_cyclopedia.Cyclopedia.bossSlotSelectBoss(self)
@@ -375,7 +375,7 @@ SlotBossSlots < UIWidget
     id: LockLabel
     anchors.centerIn: parent
     text-auto-resize: true
-    !text: tr('Unlocks if you reach the\nProwess level for any boss')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_27")
     text-align: center
     visible: true
   UIWidget
@@ -422,7 +422,7 @@ SlotBossSlots < UIWidget
       margin-top: 6
       padding-top: 2
       padding-right: 15
-      !placeholder: tr('Type to search')
+      !placeholder: tr("otclient_modules.cyclopedia_widgets_otui.tr_26")
       placeholder-color: #6E706F
       @onTextChange: modules.game_cyclopedia.Cyclopedia.SelectBossSearchText(self:getText())
     UIWidget
@@ -440,7 +440,7 @@ SlotBossSlots < UIWidget
       size: 43 20
       anchors.bottom: parent.bottom
       anchors.right: parent.right
-      !text: tr('Select')
+      !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_25")
       //font: noto-12
       text-offset: 0 -1
       color: #C0C0C0
@@ -477,7 +477,7 @@ SlotBossSlots < UIWidget
       anchors.bottom: Progress.top
       margin-bottom: 3
       text-auto-resize: true
-      !text: tr('Total Kills')
+      !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_24")
       color: #BEBEBE
     Label
       id: EquipmentLabel
@@ -512,7 +512,7 @@ SlotBossSlots < UIWidget
       anchors.right: ValueBackground.right
       anchors.left: ValueBackground.left
       margin-bottom: 25
-      !text: tr('Remove')
+      !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_23")
       //font: noto-12
       text-offset: 0 -1
       color: #C0C0C0
@@ -590,7 +590,7 @@ BossSlotProgress < UIWidget
     id: ProgressValue
     anchors.centerIn: ProgressBorder2
     text-auto-resize: true
-    !text: tr('0')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_22")
 ProgressBackground < UIWidget
   image-source: /images/game/actionbar/1pixel-down-frame
   image-border: 5
@@ -643,7 +643,7 @@ ItemsListBaseItem < UIWidget
     anchors.verticalCenter: ItemBackground.verticalCenter
     margin-left: 5
     text-auto-resize: true
-    !text: tr('Item Name')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_21")
     color: #C0C0C0
 ItemBasicDetail < UIWidget
   UIWidget
@@ -661,7 +661,7 @@ ItemBasicDetail < UIWidget
       anchors.right: separator.left
       anchors.verticalCenter: parent.verticalCenter
       margin-right: 3
-      !text: tr('Name')
+      !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_20")
       text-auto-resize: true
       color: #BDBDBD
     Label
@@ -669,11 +669,11 @@ ItemBasicDetail < UIWidget
       anchors.left: separator.right
       anchors.verticalCenter: parent.verticalCenter
       margin-left: 10
-      !text: tr('0')
+      !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_19")
       text-auto-resize: true
       color: #BDBDBD
 CharmItem < UICheckBox
-  !text: tr('Title')
+  !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_18")
   image-source: /images/ui/outfits/minipanel
   image-border: 3
   image-border-top: 22
@@ -717,7 +717,7 @@ CharmItem < UICheckBox
     Label
       id: Value
       anchors.centerIn: parent
-      !text: tr('0')
+      !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_17")
       text-auto-resize: true
       margin-right: 3
     UIWidget
@@ -815,7 +815,7 @@ CharacterCategoryItem < UIWidget
       anchors.verticalCenter: Icon.verticalCenter
       margin-left: 10
       text-auto-resize: true
-      !text: tr('General Stats')
+      !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_16")
       //font: noto-12
       color: #C0C0C0
       $checked:
@@ -834,7 +834,7 @@ CharacterCategoryItem < UIWidget
 BestiaryCategory < UIWidget
   image-source: /images/ui/outfits/minipanel
   image-border: 20
-  !text: tr('Name')
+  !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_15")
   text-align: top
   text-offset: 0 4
   color: #909090
@@ -857,19 +857,19 @@ BestiaryCategory < UIWidget
     anchors.bottom: parent.bottom
     anchors.horizontalCenter: parent.horizontalCenter
     margin-bottom: 5
-    !text: tr('Known: ') .. '00'
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_14") .. '00'
     color: #C2C2C2
   Label
     id: TotalValue
     anchors.bottom: KnownValue.top
     anchors.horizontalCenter: parent.horizontalCenter
     margin-bottom: 0
-    !text: tr('Total: ') .. '00'
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_13") .. '00'
     color: #C2C2C2
 BosstiaryItem < UIWidget
   image-source: /images/ui/outfits/minipanel
   image-border: 20
-  !text: tr('?')
+  !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_12")
   text-align: top
   text-offset: 0 4
   color: #919191
@@ -933,7 +933,7 @@ BosstiaryItem < UIWidget
     id: ProgressValue
     anchors.centerIn: ProgressBorder2
     text-auto-resize: true
-    !text: tr('0')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_11")
   UIWidget
     id: bronzeStar
     anchors.top: ProgressBorder1.bottom
@@ -962,7 +962,7 @@ BosstiaryItem < UIWidget
     anchors.left: ProgressBorder1.left
     anchors.bottom: ProgressBorder1.top
     margin-bottom: 5
-    !text: tr('Total Kills')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_10")
     text-auto-resize: true
     color: #C1C1C1
   CheckBox
@@ -970,7 +970,7 @@ BosstiaryItem < UIWidget
     anchors.right: ProgressBorder3.right
     anchors.bottom: ProgressBorder1.top
     margin-bottom: 5
-    !text: tr('Track')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_9")
     text-auto-resize: true
     color: #C1C1C1
     @onCheckChange: |
@@ -1026,7 +1026,7 @@ BestiaryCreature < UIWidget
     anchors.horizontalCenter: ClassBase.horizontalCenter
     anchors.top: ClassBase.bottom
     margin-top: 5
-    !text: tr('?')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_8")
     text-auto-resize: true
     color: #C1C1C1
   UIWidget
@@ -1094,7 +1094,7 @@ BestiaryItemGroup < UIWidget
     anchors.left: parent.left
     anchors.verticalCenter: parent.verticalCenter
     margin-left: 5
-    !text: tr('Common') .. ':'
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_7") .. ':'
     text-auto-resize: true
 CharmCreatureName < UICheckBox
   color: #C0C0C0
@@ -1292,7 +1292,7 @@ TrackerButton < Panel
 
 BestiaryTracker < MiniWindow
   id: BestiaryTracker
-  !text: tr('Bestiary Tracker')
+  !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_6")
   icon: /images/topbuttons/bestiaryTracker
   icon-offset: 4 2
   icon-size: 12 12
@@ -1348,25 +1348,25 @@ bestiaryTrackerMenu < PopupMenu
 
   ImbuementTrackerMenuOption
     id: sortByName
-    !text: tr('sort by name')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_5")
 
   ImbuementTrackerMenuOption
     id: ShortByPercentage
-    !text: tr('Short by completion percentage')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_4")
 
   ImbuementTrackerMenuOption
     id: sortByKills
-    !text: tr('sort by remaining kills')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_3")
 
   HorizontalSeparator
 
   ImbuementTrackerMenuOption
     id: sortByAscending
-    !text: tr('sort by ascending')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_2")
 
   ImbuementTrackerMenuOption
     id: sortByDescending
-    !text: tr('sort by descending')
+    !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_1")
 StoreFlatPanel < UIWidget
   phantom: true
   auto-focus: first

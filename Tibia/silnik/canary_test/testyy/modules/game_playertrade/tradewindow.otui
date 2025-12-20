@@ -1,5 +1,5 @@
 TradeWindow < MiniWindow
-  !text: tr('Trade')
+  !text: tr("otclient_modules.tradewindow_otui.tr_3")
   height: 150
 
   Item
@@ -88,7 +88,7 @@ TradeWindow < MiniWindow
       margin-bottom: 2
 
     Button
-      !text: tr('Accept')
+      !text: tr("otclient_modules.tradewindow_otui.tr_2")
       id: acceptButton
       anchors.bottom: parent.bottom
       anchors.left: parent.left
@@ -98,7 +98,7 @@ TradeWindow < MiniWindow
       @onClick: g_game.acceptTrade(); self:disable()
 
     Button
-      !text: tr('Reject')
+      !text: tr("otclient_modules.tradewindow_otui.tr_1")
       id: rejectButton
       anchors.bottom: parent.bottom
       anchors.right: parent.right

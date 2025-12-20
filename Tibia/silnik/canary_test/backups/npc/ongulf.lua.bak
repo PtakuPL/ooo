@@ -22,10 +22,10 @@ npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
 	{
-		text = "Great, another supply ship is due. How is a dwarf supposed to work under these conditions?",
+		i18nKey = "npc.ongulf.voice_1",
 	},
 	{
-		text = "Ah, there's nothing like the sound of hammers in the morning.",
+		i18nKey = "npc.ongulf.voice_2",
 	},
 }
 

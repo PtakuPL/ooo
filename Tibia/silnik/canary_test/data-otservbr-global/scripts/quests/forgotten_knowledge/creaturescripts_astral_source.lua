@@ -4,7 +4,7 @@ function astralSource.onThink(creature)
 	local health, difference, glyph, pos = 0, 0, Tile(Position(31989, 32823, 15)):getTopCreature(), creature:getPosition()
 	if hp < 5.5 and Game.getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.AstralGlyph) >= 1 then
 		sourcePos = creature:getPosition()
-		creature:say("Your damage distorted the source and prevents the Glyph to draw on its power.", TALKTYPE_MONSTER_SAY)
+		creature:sayLocalized("scripts.creaturescripts_astral_source.say_2", TALKTYPE_MONSTER_SAY)
 		creature:remove()
 		local source = Tile(Position(31986, 32823, 15)):getTopCreature()
 		if source then
@@ -20,7 +20,7 @@ function astralSource.onThink(creature)
 				spec:teleportTo(Position(31989, 32823, 15))
 				glyph:addHealth(-difference)
 				glyph:teleportTo(pos)
-				glyph:say("Without the power of the source the Glyph loses its protection!", TALKTYPE_MONSTER_SAY)
+				glyph:sayLocalized("scripts.creaturescripts_astral_source.say_1", TALKTYPE_MONSTER_SAY)
 			end
 		end
 	elseif Game.getStorageValue(Storage.Quest.U11_02.ForgottenKnowledge.AstralGlyph) < 1 then

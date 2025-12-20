@@ -50,10 +50,10 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) < 37 then
-		npcHandler:setMessage(MESSAGE_GREET, "Uhhhh...")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_restless_soul.greet_msg_1")
 		return false
 	elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 37 then
-		npcHandler:setMessage(MESSAGE_GREET, "Ahhhh! At last someone that can listen to my {story}!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_restless_soul.greet_msg_1")
 	end
 	return true
 end

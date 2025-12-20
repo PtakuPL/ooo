@@ -26,12 +26,12 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "...the arithmetical paradox has the same value in a metaphysical way, then..." },
-	{ text = "Oh my! Alverus!! Did you really...?!?! I have to recalculate it to make sure that I made no mistake." },
-	{ text = "<mumbles>" },
-	{ text = "...the minimum square deviation could cause a dislocation, in a matter of fact..." },
-	{ text = "...it could be possible to bring the sphere to a destination where..." },
-	{ text = "Yes, that's it! The elementary particle are corresponding to the... the ... UNBELIEVEABLE!!!" },
+	{ i18nKey = "npc.arkulius.voice_1" },
+	{ i18nKey = "npc.arkulius.voice_2" },
+	{ i18nKey = "npc.arkulius.voice_3" },
+	{ i18nKey = "npc.arkulius.voice_4" },
+	{ i18nKey = "npc.arkulius.voice_5" },
+	{ i18nKey = "npc.arkulius.voice_6" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -137,7 +137,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_6")
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.multi_7")
 			else
-				npcHandler:say("You need some kind of pure elemental soil from the " .. (player:isSorcerer() and "Fire" or player:isDruid() and "Earth" or player:isPaladin() and "Ice" or player:isKnight() and "Energy") .. " Overlord. Come back when you've got it.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.arkulius.say_1", { (player:isSorcerer() and "Fire" or player:isDruid() and "Earth" or player:isPaladin() and "Ice" or player:isKnight() and "Energy") })
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif value == 2 then
@@ -162,8 +162,8 @@ keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addKeyword({ "weapon" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.arkulius.stdmod_5" }) -- < Knight; FIXME !!!
 keywordHandler:addKeyword({ "pits of inferno" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.arkulius.stdmod_6" })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye and please stay away, okay?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "At last! Good things come to those who wait.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.arkulius.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.arkulius.farewell_msg_1")
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

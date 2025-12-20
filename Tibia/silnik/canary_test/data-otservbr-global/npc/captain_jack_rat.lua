@@ -54,9 +54,9 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 
 	if player:getStorageValue(Storage.Quest.U12_60.APiratesTail.TentuglyKilled) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Hail, pirat! Come on board to go home! Welcome on board of the ship Flying Bat. Should I set {sail}s?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.captain_jack_rat.greet_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "...")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.captain_jack_rat.greet_msg_1")
 	end
 	return true
 end

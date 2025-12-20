@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Pssst!" },
+	{ i18nKey = "npc.gamel.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -68,7 +68,7 @@ local function greetCallback(npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Pssst! Be silent. Do you wish to {buy} something?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gamel.greet_msg_1")
 	end
 	return true
 end

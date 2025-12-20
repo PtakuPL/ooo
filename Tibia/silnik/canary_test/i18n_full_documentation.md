@@ -8,6 +8,463 @@ Automatyczna dokumentacja wszystkich zmian internacjonalizacji.
 
 ---
 
+# 🔧 CHANGELOG POPRAWEK WORKERA
+
+## [2025-12-17 06:00-07:00] Naprawa dynamicznych tekstów i przechodzenia między kategoriami
+
+### 📋 Podsumowanie sesji nocnej
+
+Sesja naprawcza workera skupiona na:
+1. Oznaczaniu plików z dynamicznymi tekstami (konkatenacja Lua) do ręcznej edycji
+2. Naprawie dispatchera żeby pomijał pliki z konkatenacją w liczniku
+3. Naprawie błędów parsowania (`integer expression expected`)
+4. Weryfikacji przechodzenia między kategoriami
+
+---
+
+### 🐛 PROBLEM 1: Pliki z dynamicznymi tekstami (konkatenacja Lua)
+
+**Opis problemu:**
+- Pliki jak `a_dead_bureaucrat1.lua` mają teksty z konkatenacją: `"Hello " .. player:getName()`
+- Worker nie może automatycznie zmigrować takich tekstów (wymagają interpolacji)
+- Dispatcher pokazywał 52 pliki NPC do pracy, ale tylko ~14 było realnie migrowalne
+- 135 plików NPC ma konkatenację ` .. ` i wymaga ręcznej edycji
+
+**Przykład problematycznego kodu:**
+```lua
+npcHandler:setMessage(MESSAGE_GREET, "Hello " .. creature:getName() .. "! How can I help?")
+```
+
+**Rozwiązanie:**
+
+1. **Dodano wykrywanie konkatenacji w dispatcherze** (~linia 6563):
+```python
+# Pomiń pliki z konkatenacją Lua (wymagają ręcznej edycji)
+if ' .. ' in content:
+    continue
+```
+
+2. **Dodano plik `i18n_manual_review.txt`** (~linia 2466-2471):
+```bash
+# Sprawdź czy plik ma dynamiczne teksty (konkatenacja Lua)
+has_dynamic=$(grep -cE ' \.\. ' "$file" 2>/dev/null | head -1 | tr -d '\n\r ' || echo "0")
+[[ ! "$has_dynamic" =~ ^[0-9]+$ ]] && has_dynamic=0
+if [ "$has_dynamic" -gt 0 ]; then
+    echo "$file" >> "$WORK_DIR/i18n_manual_review.txt"
+    log "${CYAN}📝 Plik wymaga ręcznej edycji (dynamiczne teksty)${NC}"
+fi
+```
+
+**Wynik:**
+- Dispatcher pokazuje teraz 14 plików NPC zamiast 52 (realna liczba)
+- Pliki z konkatenacją są dodawane do `i18n_manual_review.txt`
+- Pattern ` .. ` (ze spacjami) nie matchuje `...` (wielokropek w tekście)
+
+---
+
+### 🐛 PROBLEM 2: Błąd parsowania `integer expression expected`
+
+**Opis problemu:**
+- Błąd: `i18n_worker_simple.sh: line 2466: [: 0\n0: integer expression expected`
+- Zmienna `has_dynamic` z `grep -c` czasem zawierała newline lub niespodziewane znaki
+- Również błąd był z `$WORKSPACE` który nie był zdefiniowany (powinno być `$WORK_DIR`)
+
+**Rozwiązanie:**
+
+1. **Sanityzacja wartości** (~linia 2466-2468):
+```bash
+local has_dynamic
+has_dynamic=$(grep -cE ' \.\. ' "$file" 2>/dev/null | head -1 | tr -d '\n\r ' || echo "0")
+[[ ! "$has_dynamic" =~ ^[0-9]+$ ]] && has_dynamic=0
+```
+
+2. **Poprawiono zmienną ścieżki**:
+```bash
+# PRZED: echo "$file" >> "$WORKSPACE/i18n_manual_review.txt"  # WORKSPACE undefined!
+# PO:    echo "$file" >> "$WORK_DIR/i18n_manual_review.txt"
+```
+
+---
+
+### 🐛 PROBLEM 3: Worker zawsze przetwarzał tylko NPC
+
+**Opis problemu:**
+- Użytkownik zauważył że worker zawsze pokazuje kategorię NPC
+- Worker nie przechodził do innych kategorii (monsters, quests, scripts)
+
+**Wyjaśnienie:**
+- NPC ma priorytet 1 w dispatcherze - musi być ukończone przed innymi
+- Dispatcher pokazywał 52 pliki (zawyżona liczba przez pliki z konkatenacją)
+- Po naprawie dispatchera, NPC ma tylko 14 plików i worker szybciej przechodzi dalej
+
+**Wynik po naprawie:**
+Worker teraz przechodzi przez kategorie w kolejności priorytetów:
+- NPC (14 plików) → world (11) → spells (0) → talkactions (0) → movements (4) → ...
+- Kategorie z 0 przetworzonych są automatycznie pomijane na 5-10 minut
+
+---
+
+### 🐛 PROBLEM 4: MESSAGE_SENDTRADE nieobsługiwany
+
+**Opis problemu:**
+- 91 plików używało `npcHandler:setMessage(MESSAGE_SENDTRADE, "...")`
+- Ten wzorzec nie był obsługiwany przez transformację
+
+**Rozwiązanie:**
+- Dodano MESSAGE_SENDTRADE do TRANSFORMACJA 5 (~linia 2350)
+- Dodano ekstrakcję do EKSTRAKCJA 5 (~linia 2590)
+- Dodano wzorzec do detekcji w dispatcherze (~linia 6612)
+
+**Uwaga:** Większość plików z MESSAGE_SENDTRADE ma również konkatenację,
+więc trafią do `i18n_manual_review.txt` zamiast automatycznej migracji.
+
+---
+
+### 📊 Statystyki zmian
+
+| Metryka | Przed | Po |
+|---------|-------|-----|
+| NPC pliki wykryte przez dispatcher | 52 | 14 |
+| Pliki z konkatenacją (manual review) | 0 | 135 |
+| Kategorie przetwarzane | tylko NPC | NPC→world→spells→... |
+| Błędy parsowania | tak | nie |
+
+---
+
+### 📁 Zmodyfikowane pliki
+
+1. **i18n_worker_simple.sh**:
+   - Linia ~2463-2472: Dodano wykrywanie dynamicznych tekstów i zapis do manual_review
+   - Linia ~6563: Pomijanie plików z konkatenacją w dispatcherze NPC
+
+2. **i18n_npc_detector.py**: (już wcześniej)
+   - Funkcja `has_concatenation()` - zwraca False dla plików z ` .. `
+
+3. **Nowy plik: i18n_manual_review.txt**:
+   - Lista plików wymagających ręcznej edycji (dynamiczne teksty)
+
+---
+
+## [2025-12-17] Wielka naprawa detekcji NPC i wsparcie setMessage
+
+### 📋 Podsumowanie sesji
+
+Sesja naprawcza workera `i18n_worker_simple.sh` skupiona na poprawie detekcji plików NPC wymagających migracji oraz dodaniu wsparcia dla nowego wzorca `setMessage()`.
+
+**Przed naprawą:** Worker wykrywał ~19-20 plików do migracji  
+**Po naprawie:** Worker wykrywa **633+ plików** do migracji  
+**Nowe klucze dodane:** 50+ w pierwszych minutach pracy
+
+---
+
+### 🐛 PROBLEM 1: Brak wsparcia dla setMessage()
+
+**Opis problemu:**
+- 621 plików NPC używało `npcHandler:setMessage(MESSAGE_GREET, "...")`, `MESSAGE_FAREWELL`, `MESSAGE_WALKAWAY`
+- Worker całkowicie ignorował ten wzorzec - żaden z tych plików nie był migrowany
+
+**Przykład nieobsługiwanego kodu:**
+```lua
+npcHandler:setMessage(MESSAGE_GREET, "GET ME OUT OF HERE! NOW!")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Goodbye!")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "...")
+```
+
+**Rozwiązanie:**
+
+1. **Dodano TRANSFORMACJA 5** (~linia 2315-2370):
+```python
+# TRANSFORMACJA 5: npcHandler:setMessage(MESSAGE_GREET/FAREWELL, "...") → NPC_LIB.i18n.setLocalizedMessage()
+pattern_setmsg_greet = r'npcHandler:setMessage\s*\(\s*MESSAGE_GREET\s*,\s*"([^"]+)"\s*\)'
+
+def safe_replace_setmsg_greet(match):
+    text = match.group(1)
+    if '..' in text or '\\' in text:  # Pomiń konkatenacje
+        return match.group(0)
+    setmsg_greet_counter[0] += 1
+    key = f"npc.{safe_name}.greet_msg_{setmsg_greet_counter[0]}"
+    return f'NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "{key}")'
+```
+
+2. **Dodano EKSTRAKCJA 5** (~linia 2551-2600):
+   - Ekstrakcja tekstów z setMessage do `i18n/en/npc.json`
+   - Klucze: `npc.{name}.greet_msg_N`, `farewell_msg_N`, `walkaway_msg_N`
+
+**Wynik transformacji:**
+```lua
+-- PRZED:
+npcHandler:setMessage(MESSAGE_GREET, "GET ME OUT OF HERE! NOW!")
+
+-- PO:
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_bearded_woman.greet_msg_1")
+```
+
+---
+
+### 🐛 PROBLEM 2: Wadliwa logika detekcji per-plik zamiast per-linia
+
+**Opis problemu:**
+- Stara logika: `if 'i18nKey' not in content` - sprawdzała CAŁY plik
+- Pliki częściowo zmigrowane (np. 8 z i18nKey, 3 bez) były pomijane
+- Jeśli plik miał CHOĆBY JEDEN `i18nKey`, wszystkie pozostałe wzorce były ignorowane
+
+**Przykład problemu:**
+```lua
+-- Plik ma mieszane wzorce:
+keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.test.stdmod_1" })  -- OK
+keywordHandler:addKeyword({ "pirate" }, StdModule.say, { npcHandler = npcHandler, text = { "In a just world..." } })  -- IGNOROWANY!
+```
+
+**Rozwiązanie:**
+
+Zmieniono detekcję na sprawdzanie **per-linię** w trzech miejscach:
+
+1. **count_files_needing_work()** (~linia 6467-6495):
+```python
+# StdModule.say z text= BEZ i18nKey W TEJ SAMEJ LINII
+lines = content.split('\n')
+for line in lines:
+    if 'StdModule.say' in line and 'text' in line and 'i18nKey' not in line:
+        if re.search(r'text\s*=\s*["{]', line):
+            needs = True
+            break
+```
+
+2. **stage_2 (ANALYSIS)** (~linia 2015-2030):
+```bash
+# Sprawdź per-linię czy jest StdModule.say z text= bez i18nKey
+local stdmod_needs=$(python3 -c "
+import re
+with open('$file', 'r', errors='ignore') as f:
+    lines = f.readlines()
+for line in lines:
+    if 'StdModule.say' in line and 'text' in line and 'i18nKey' not in line:
+        if re.search(r'text\s*=\s*[\"{]', line):
+            print('true')
+            exit(0)
+print('false')
+" 2>/dev/null || echo "false")
+```
+
+3. **Dashboard** (~linia 6955-6990):
+   - Ta sama logika per-linię dla spójnego raportowania
+
+---
+
+### 🐛 PROBLEM 3: Wadliwa detekcja voices - sprawdzanie całego pliku
+
+**Opis problemu:**
+- Stara logika: `if 'text = "' in content and 'i18nKey' not in content`
+- Nie uwzględniała że `i18nKey` może być w INNEJ sekcji pliku (np. w keywords)
+- 124 pliki z voices były pomijane mimo że sekcja voices nie była zmigrowana
+
+**Rozwiązanie:**
+
+Sprawdzanie **per-sekcję** (tylko blok voices):
+
+```python
+# npcConfig.voices z text bez i18nKey W TEJ SEKCJI
+if re.search(r'npcConfig\.voices\s*=\s*\{', content):
+    voices_match = re.search(
+        r'npcConfig\.voices\s*=\s*\{([^}]*(?:\{[^}]*\}[^}]*)*)\}', 
+        content, re.DOTALL
+    )
+    if voices_match:
+        voices_block = voices_match.group(1)
+        if re.search(r'text\s*=\s*"', voices_block) and 'i18nKey' not in voices_block:
+            needs = True
+```
+
+---
+
+### 🐛 PROBLEM 4: Niespójność między detekcją a batch processingiem
+
+**Opis problemu:**
+- `count_files_needing_work()` używało nowej logiki (Python)
+- Batch processing NPC (`case npc)`) używało starej logiki (bash grep)
+- Worker wykrywał 633 plików, ale przetwarzał 0!
+
+**Lokalizacja w kodzie:** ~linia 7433-7470
+
+**Stara logika (bash):**
+```bash
+if grep -q "StdModule\.say" "$f" 2>/dev/null; then
+    if ! grep -q "i18nKey" "$f" 2>/dev/null; then
+        if grep -q 'text = "' "$f" 2>/dev/null; then
+            NEEDS_WORK=true
+        fi
+    fi
+fi
+```
+
+**Nowa logika (Python heredoc):**
+```bash
+NEEDS_WORK=$(python3 << NEEDSWORK
+import re
+with open("$f", "r", errors="ignore") as fp:
+    content = fp.read()
+needs = False
+
+# 1. StdModule.say z text= BEZ i18nKey W TEJ SAMEJ LINII
+lines = content.split('\n')
+for line in lines:
+    if 'StdModule.say' in line and 'text' in line and 'i18nKey' not in line:
+        if re.search(r'text\s*=\s*["{]', line):
+            needs = True
+            break
+
+# 2. npcHandler:say( bez NPC_LIB
+if 'npcHandler:say(' in content and 'NPC_LIB.i18n.npcSay' not in content:
+    needs = True
+
+# 3. voices per-sekcja
+if re.search(r'npcConfig\.voices\s*=\s*\{', content):
+    voices_match = re.search(r'npcConfig\.voices\s*=\s*\{([^}]*(?:\{[^}]*\}[^}]*)*)\}', content, re.DOTALL)
+    if voices_match:
+        voices_block = voices_match.group(1)
+        if re.search(r'text\s*=\s*"', voices_block) and 'i18nKey' not in voices_block:
+            needs = True
+
+# 4. setMessage bez NPC_LIB
+if re.search(r'setMessage\s*\(\s*MESSAGE_(GREET|FAREWELL|WALKAWAY)\s*,\s*"[^"]+"', content):
+    if 'NPC_LIB.i18n.setLocalizedMessage' not in content:
+        needs = True
+
+print("true" if needs else "false")
+NEEDSWORK
+)
+```
+
+---
+
+### 🐛 PROBLEM 5: Brakujące pole w output transformacji
+
+**Opis problemu:**
+- Transformacja wypisywała 6 pól: `total|stdmod|npcsay|greetfare|voices|setmsg`
+- Fallback (brak zmian) wypisywał tylko 5: `0|0|0|0|0`
+- Parser bash gubił się przy parsowaniu
+
+**Rozwiązanie:**
+```python
+# PRZED:
+else:
+    print("0|0|0|0|0")
+
+# PO:
+else:
+    print("0|0|0|0|0|0")
+```
+
+Oraz aktualizacja parsera bash:
+```bash
+local setmsg_t=$(echo "$transformed" | cut -d'|' -f6)
+[ -z "$setmsg_t" ] && setmsg_t=0
+log "... setMsg=$setmsg_t, Total=$total_t"
+```
+
+---
+
+### 🐛 PROBLEM 6: stage_2 (ANALYSIS) nie wykrywała setMessage
+
+**Opis problemu:**
+- Etap ANALYSIS decyduje czy plik `needs=true/false`
+- Brak detekcji setMessage powodował `needs=false` dla 621 plików!
+
+**Rozwiązanie - dodano na końcu stage_2():**
+```bash
+# setMessage(MESSAGE_GREET/FAREWELL/WALKAWAY, "...") bez NPC_LIB.i18n.setLocalizedMessage
+if grep -qE 'setMessage\s*\(\s*MESSAGE_(GREET|FAREWELL|WALKAWAY)' "$file" 2>/dev/null; then
+    if ! grep -q "NPC_LIB.i18n.setLocalizedMessage" "$file" 2>/dev/null; then
+        if grep -qE 'setMessage\s*\(\s*MESSAGE_(GREET|FAREWELL|WALKAWAY)\s*,\s*"[^"]+"' "$file" 2>/dev/null; then
+            needs="true"
+        fi
+    fi
+fi
+```
+
+---
+
+### 📁 PLIKI ZMODYFIKOWANE
+
+| Plik | Linie | Opis zmian |
+|------|-------|------------|
+| `i18n_worker_simple.sh` | ~2015-2030 | stage_2: per-liniowa detekcja StdModule |
+| `i18n_worker_simple.sh` | ~2035-2065 | stage_2: per-sekcyjna detekcja voices + setMessage |
+| `i18n_worker_simple.sh` | ~2315-2370 | TRANSFORMACJA 5: setMessage |
+| `i18n_worker_simple.sh` | ~2380-2382 | Output format fix (6 pól) |
+| `i18n_worker_simple.sh` | ~2390-2405 | Parser setmsg_t |
+| `i18n_worker_simple.sh` | ~2551-2600 | EKSTRAKCJA 5: setMessage |
+| `i18n_worker_simple.sh` | ~6467-6500 | count_files_needing_work: pełna logika |
+| `i18n_worker_simple.sh` | ~6955-6990 | Dashboard: spójna logika |
+| `i18n_worker_simple.sh` | ~7433-7470 | Batch NPC: Python zamiast bash |
+
+---
+
+### ✅ WYNIKI PO NAPRAWIE
+
+| Metryka | Przed | Po | Zmiana |
+|---------|-------|-----|--------|
+| Pliki do migracji | 19 | 633 | +614 |
+| Detekcja setMessage | ❌ | ✅ | Nowe |
+| Detekcja per-linia | ❌ | ✅ | Poprawione |
+| Detekcja voices | Częściowa | ✅ | Poprawione |
+| Spójność detekcji | ❌ | ✅ | 4 miejsca zsynchronizowane |
+
+---
+
+### 📝 NOTATKI DLA PRZYSZŁYCH NAPRAW
+
+1. **Zawsze synchronizuj logikę detekcji w 4 miejscach:**
+   - `count_files_needing_work()` - dispatcher
+   - `stage_2()` - ANALYSIS
+   - Batch processing (`case npc)`)
+   - Dashboard statistics
+
+2. **Per-linia vs per-plik:**
+   - Pliki mogą być częściowo zmigrowane
+   - NIGDY nie używaj `if 'x' not in content` dla detekcji migracji
+   - Zawsze sprawdzaj kontekst (ta sama linia, ta sama sekcja)
+
+3. **Nowe wzorce:**
+   - Dodając nowy wzorzec (jak setMessage), zaktualizuj WSZYSTKIE 4 miejsca
+   - Dodaj TRANSFORMACJĘ + EKSTRAKCJĘ + OUTPUT FIELD
+
+4. **Testowanie:**
+   - `bash i18n_worker_simple.sh --file <plik>` - test pojedynczego pliku
+   - `bash i18n_worker_simple.sh --auto 5` - test batch 5 plików
+   - `bash i18n_worker_simple.sh --status` - dashboard
+
+5. **State management:**
+   - `skip_until` - timestamp kiedy kategoria może być ponownie sprawdzona
+   - `last_processed` - info o ostatnim przetwarzaniu (count, timestamp)
+   - `consecutive_zeros` - ile razy z rzędu kategoria dała 0 wyników
+   - Reset: usuń kategorię z WSZYSTKICH trzech słowników!
+
+---
+
+### 🔍 WZORCE OBSŁUGIWANE PO NAPRAWIE
+
+| Wzorzec | Transformacja | Ekstrakcja |
+|---------|---------------|------------|
+| `StdModule.say, { text = "..." }` | → `i18nKey = "..."` | ✅ |
+| `StdModule.say, { text = { "...", "..." } }` | → `i18nKey = "..."` | ✅ |
+| `npcHandler:say("...")` | → `NPC_LIB.i18n.npcSay()` | ✅ |
+| `addGreetKeyword(..., text = "...")` | → `i18nKey = "..."` | ✅ |
+| `addFarewellKeyword(..., text = "...")` | → `i18nKey = "..."` | ✅ |
+| `npcConfig.voices = { { text = "..." } }` | → `{ i18nKey = "..." }` | ✅ |
+| `npcHandler:setMessage(MESSAGE_GREET, "...")` | → `NPC_LIB.i18n.setLocalizedMessage()` | ✅ **NOWE** |
+| `npcHandler:setMessage(MESSAGE_FAREWELL, "...")` | → `NPC_LIB.i18n.setLocalizedMessage()` | ✅ **NOWE** |
+| `npcHandler:setMessage(MESSAGE_WALKAWAY, "...")` | → `NPC_LIB.i18n.setLocalizedMessage()` | ✅ **NOWE** |
+
+### ⚠️ WZORCE CELOWO POMIJANE
+
+| Wzorzec | Powód |
+|---------|-------|
+| `npcHandler:say("..." .. variable)` | Konkatenacja - wymaga ręcznej migracji |
+| `setMessage(MESSAGE_SENDTRADE, ...)` | Zwykle z konkatenacją |
+| Stringi z `\\` (escape sequences) | Mogą zawierać specjalne formatowanie |
+
+---
 
 ## [2025-12-08 18:03:20] MIGRACJA LUA
 

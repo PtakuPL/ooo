@@ -87,7 +87,7 @@ function mounts.onUse(cid, item, fromPosition, itemEx, toPosition)
 	--Monster Mount
 	if targetMonster ~= nil and mount.TYPE == TYPE_MONSTER then
 		if Creature(itemEx.uid):getMaster() then
-			player:say("You can't tame a summon!", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.mounts.say_1", TALKTYPE_MONSTER_SAY)
 			return true
 		end
 

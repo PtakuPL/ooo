@@ -53,17 +53,17 @@ end
 local function creatureSayCallback(npc, player, type, message)
 	local categoryTable = SupplyShopConfigTable[message:lower()]
 	if MsgContains(message, "shop options") then
-		npcHandler:say("I sell a selection of " .. GetFormattedShopCategoryNames(SupplyShopConfigTable), npc, player)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.battlemart.say_1", { GetFormattedShopCategoryNames(SupplyShopConfigTable) })
 	elseif categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), SupplyShopConfigTable)
-		npcHandler:say("Of course, just browse through my wares. You can also look at " .. remainingCategories .. ".", npc, player)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.battlemart.say_2", { remainingCategories })
 		npc:openShopWindowTable(player, categoryTable)
 	end
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "It is good to see you. I'm always at your {shop options}")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Farewell, |PLAYERNAME|, I'll be here if you need me again.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Come back soon!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.battlemart.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.battlemart.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.battlemart.walkaway_msg_1")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my wares. Or do you want to look only at " .. GetFormattedShopCategoryNames(SupplyShopConfigTable) .. ".")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

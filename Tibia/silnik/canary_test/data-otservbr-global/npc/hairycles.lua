@@ -53,9 +53,9 @@ end
 local function greetCallback(npc, creature)
 	local playerId = creature:getId()
 	if Player(creature):getStorageValue(Storage.Quest.U7_6.TheApeCity.Questline) < 12 then
-		npcHandler:setMessage(MESSAGE_GREET, "Oh! Hello! Hello! Did not notice!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.hairycles.greet_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Be greeted, friend of the ape people. If you want to {trade}, just ask for my offers. If you are injured, ask for healing.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.hairycles.greet_msg_2")
 	end
 	return true
 end

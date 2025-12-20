@@ -9,7 +9,7 @@ UIWidget
 
     OptionCheckBox
       id: enableHighlightMouseTarget
-      !text: tr('Highlight mouse target')
+      !text: tr("otclient_modules.interface_otui.tr_15")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -25,7 +25,7 @@ UIWidget
   
     OptionCheckBox
       id: showLeftPanel
-      !text: tr('Show left panel')
+      !text: tr("otclient_modules.interface_otui.tr_14")
 
       $mobile:
         visible: false
@@ -39,7 +39,7 @@ UIWidget
   
     OptionCheckBox
       id: showRightExtraPanel
-      !text: tr('Show an extra right panel')
+      !text: tr("otclient_modules.interface_otui.tr_13")
       
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -50,7 +50,7 @@ UIWidget
 
     OptionCheckBox
       id: showActionbar
-      !text: tr('Show action bar')
+      !text: tr("otclient_modules.interface_otui.tr_12")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -61,8 +61,8 @@ UIWidget
 
     OptionCheckBoxMarked
       id: showSpellGroupCooldowns
-      !text: tr('Show spell group cooldowns')
-      !tooltip: tr('Can be enabled only in version 8.7x or higher')
+      !text: tr("otclient_modules.interface_otui.tr_11")
+      !tooltip: tr("otclient_modules.interface_otui.tr_10")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -72,7 +72,7 @@ UIWidget
     height: 32
   
     Label
-      !text: tr('Crosshair:')
+      !text: tr("otclient_modules.interface_otui.tr_9")
       anchors.left: parent.left
       margin-left: 18
       color: #c0c0c0ff
@@ -94,7 +94,7 @@ UIWidget
     height: 86
 
     Label
-      !text: tr('Colourise Loot Value: ')
+      !text: tr("otclient_modules.interface_otui.tr_8")
       anchors.left: parent.left
       anchors.top: parent.top
       margin-left: 10
@@ -117,26 +117,26 @@ UIWidget
       size: 12 12  
       anchors.right: parent.right
       margin-right: 3
-      !tooltip: tr('If you select Frames or Corners, your loot will be marked with \ndifferent colours in loot messages, containers and the Bestiary.\n\nThe colour depends on the loot value, which can be determined in\n the Items Cyclopedia, either using the NPC buy value, the average\n Market price or your own preferred value.')
+      !tooltip: tr("otclient_modules.interface_otui.tr_7")
       
     OptionCheckBoxMarked
       id: showExpiryInInvetory
       anchors.top: frames.bottom
       margin-top: 5
-      !text: tr('Show Expiry In Inventory')
-      !tooltip: tr('Check this box to see how much time or how many charges are left \non your equipped items')
+      !text: tr("otclient_modules.interface_otui.tr_6")
+      !tooltip: tr("otclient_modules.interface_otui.tr_5")
 
     OptionCheckBoxMarked
       id: showExpiryInContainers
       anchors.top: prev.bottom
       margin-top: 5
-      !text: tr('Show Expiry In Containers')
-      !tooltip: tr('Check this box to see how mmuch time or how many charges the \nitems in your open containers have left')
+      !text: tr("otclient_modules.interface_otui.tr_4")
+      !tooltip: tr("otclient_modules.interface_otui.tr_3")
 
     OptionCheckBoxMarked
       id: showExpiryOnUnusedItems
       anchors.top: prev.bottom
       margin-top: 5
-      !text: tr('Show Expiry On Unused Items')
-      !tooltip: tr('Check this box to see how much time or how many charges are left\n on items that have not been used yet')
+      !text: tr("otclient_modules.interface_otui.tr_2")
+      !tooltip: tr("otclient_modules.interface_otui.tr_1")
       enabled: false

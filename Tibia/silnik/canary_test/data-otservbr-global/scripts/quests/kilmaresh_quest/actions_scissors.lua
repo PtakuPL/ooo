@@ -6,7 +6,7 @@ function scissors.onUse(player, item, frompos, item2, topos)
 		player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Set.Ritual, 2)
 		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_scissors.msg_1")
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Empty.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_scissors.msg_1")
 	end
 
 	return true

@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Passages to Nostalgia" },
+	{ i18nKey = "npc.kendra_thais.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -80,9 +80,9 @@ keywordHandler:addKeyword({ "go" }, StdModule.say, { npcHandler = npcHandler, i1
 keywordHandler:addKeyword({ "Nostalgia" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.kendra_thais.stdmod_8" })
 keywordHandler:addKeyword({ "Horror Village" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.kendra_thais.stdmod_9" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye. Recommend us if you were satisfied with our service.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.kendra_thais.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.kendra_thais.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.kendra_thais.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

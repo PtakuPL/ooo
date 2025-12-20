@@ -55,7 +55,7 @@ function movements_museum_teleportTo.onStepIn(creature, item, position, fromPosi
 			if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.Questline) < 6 then
 				player:setStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.TrialTimer, os.time() + 3 * 60)
 				player:setStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.Questline, 6)
-				player:say("rkawdmawfjawkjnfjkawnkjnawkdjawkfmalkwmflkmawkfnzxc", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.movements_teleportto.say_1", TALKTYPE_MONSTER_SAY)
 			end
 		end
 	end

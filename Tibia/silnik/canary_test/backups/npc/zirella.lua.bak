@@ -26,9 +26,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I wish someone could spare a minute and help me..." },
-	{ text = "This is too hard for an old woman like me." },
-	{ text = "Hello, young adventurer, you look strong enough to help me!" },
+	{ i18nKey = "npc.zirella.voice_1" },
+	{ i18nKey = "npc.zirella.voice_2" },
+	{ i18nKey = "npc.zirella.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()

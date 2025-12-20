@@ -57,15 +57,15 @@ end
 
 -- Travel
 local function addTravelKeyword(keyword, cost, destination, action)
-	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = "Do you seek a passage to " .. keyword:titleCase() .. " for |TRAVELCOST|?", cost = cost, discount = "postman" })
+	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.rapanaio_isle_of_evil.stdmod_1" .. keyword:titleCase() .. " for |TRAVELCOST|?", cost = cost, discount = "postman" })
 	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, cost = cost, discount = "postman", destination = destination }, nil, action)
-	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, text = "We would like to serve you some time.", reset = true })
+	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.rapanaio_isle_of_evil.stdmod_2", reset = true })
 end
 
 addTravelKeyword("kazordoon", 0, Position(32699, 31993, 14))
 -- Basic
-keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, text = "My name is Rapanaio from the Royal Tibia Line." })
-keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, text = "I am the captain of this sailing-ship." })
+keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.rapanaio_isle_of_evil.stdmod_3" })
+keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.rapanaio_isle_of_evil.stdmod_4" })
 
 npcHandler:setMessage(MESSAGE_GREET, "Welcome on board, |PLAYERNAME|. I can travel you to {kazordoon}.")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye. Recommend us if you were satisfied with our service.")

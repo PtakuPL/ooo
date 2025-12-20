@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Come visit my little pawnshop! General equipment and such. Don't miss it!" },
+	{ i18nKey = "npc.red_lilly.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -135,9 +135,9 @@ keywordHandler:addKeyword({ "wyrmslicer" }, StdModule.say, { npcHandler = npcHan
 -- keywordHandler:addKeyword({'vial'}, StdModule.say, {npcHandler = npcHandler, i18nKey = "npc.red_lilly.stdmod_23"})
 -- keywordHandler:addKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, i18nKey = "npc.red_lilly.stdmod_24"})
 -- keywordHandler:addKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, i18nKey = "npc.red_lilly.stdmod_25"})
-npcHandler:setMessage(MESSAGE_GREET, "Hello sweetie. If you need general equipment, stuff like that, let me know.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye sweetie.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my wares. Remember that if you buy vials of oil, there's a deposit of 5 gold on the empty one.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.red_lilly.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.red_lilly.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.red_lilly.sendtrade_msg_1")
 -- On buy npc shop message
 npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBackpacks, totalCost)
 	npc:sellItem(player, itemId, amount, subType, 0, ignore, inBackpacks)

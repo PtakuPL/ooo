@@ -1,13 +1,13 @@
 MainWindow
   size: 400 110
-  !text: tr('Enter player name')
+  !text: tr("otclient_modules.gift_otui.tr_3")
   @onEnter: modules.game_shop.confirmGift()
 
   Button
     id: buttonConfirm
     anchors.bottom: parent.bottom
     anchors.right: parent.right
-    !text: tr('Confirm')
+    !text: tr("otclient_modules.gift_otui.tr_2")
     width: 64
     @onClick: modules.game_shop.confirmGift()
 
@@ -15,7 +15,7 @@ MainWindow
     id: buttonCancel
     anchors.bottom: parent.bottom
     anchors.left: parent.left
-    !text: tr('Cancel')
+    !text: tr("otclient_modules.gift_otui.tr_1")
     width: 64
     @onClick: modules.game_shop.cancelGift()
 

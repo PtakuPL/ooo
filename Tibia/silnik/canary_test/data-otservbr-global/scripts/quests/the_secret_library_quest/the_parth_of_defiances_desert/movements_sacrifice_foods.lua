@@ -221,7 +221,7 @@ function foodSacrifice.onAddItem(moveitem, tileitem, position)
 						if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.Questlog) < 6 then
 							player:setStorageValue(Storage.Quest.U11_80.TheSecretLibrary.Darashia.Questline, 6)
 						end
-						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have completed the food offering ritual!")
+						player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.movements_sacrifice_foods.msg_1")
 					end
 				end
 

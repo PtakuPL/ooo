@@ -26,9 +26,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = " I'll have to write that idea down." },
-	{ text = "So many ideas, so little time" },
-	{ text = "Muhahaha!" },
+	{ i18nKey = "npc.gnomadness.voice_1" },
+	{ i18nKey = "npc.gnomadness.voice_2" },
+	{ i18nKey = "npc.gnomadness.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -71,7 +71,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	local maximum = hazard:getPlayerMaxLevel(player)
 
 	if MsgContains(message, "hazard") then
-		npcHandler:say("I can change your hazard level to spice up your hunt in the gardens. Your current level is set to " .. current .. ". And your maximum unlocked level is {" .. maximum .. "}. What level would you like to hunt in?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomadness.say_1", { current, maximum })
 		npcHandler:setTopic(playerId, 1)
 	else
 		if npcHandler:getTopic(playerId) == 1 then
@@ -82,7 +82,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				return true
 			end
 			if hazard:setPlayerCurrentLevel(player, desiredLevel) then
-				npcHandler:say("Your hazard level has been set to " .. desiredLevel .. ". Good luck!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomadness.say_2", { desiredLevel })
 				if desiredLevel >= 6 and not player:kv():scoped("primal-ordeal"):get("received-prize") then
 					player:addMount(202)
 					player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "system.mount.received", {"Noxious Ripptor"})
@@ -102,7 +102,7 @@ end
 keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "Hello and welcome in the Gnomprona Gardens. If you want to change your {hazard} level, I 'm who you're looking for.", i18nKey = "npc.gnomadness.greet_1" })
 keywordHandler:addAliasKeyword({ "hello" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello and welcome in the Gnomprona Gardens")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gnomadness.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

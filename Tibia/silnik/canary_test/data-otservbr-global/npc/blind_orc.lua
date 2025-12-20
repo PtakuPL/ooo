@@ -99,7 +99,7 @@ addBuyableKeyword("burka", 3294, 1, 30, "Maruk goshak ta?")
 -- Hatchet
 addBuyableKeyword("hakhak", 3276, 1, 85, "Maruk goshak ta?")
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Futchi.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.blind_orc.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 

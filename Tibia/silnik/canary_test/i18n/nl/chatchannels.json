@@ -1,10 +1,10 @@
 {
-  "channel.advertising.name": "[EN] Advertising",
-  "channel.advertising_rook.name": "[EN] Advertising-Rook",
-  "channel.english_chat.name": "[EN] English Chat",
-  "channel.gamemaster.name": "[EN] Gamemaster",
-  "channel.guild_leaders.name": "[EN] Guild Leaders",
-  "channel.help.name": "[EN] Help",
-  "channel.tutor.name": "[EN] Tutor",
-  "channel.world_chat.name": "[EN] World Chat"
+  "channel.advertising.name": "[NL] Advertising",
+  "channel.advertising_rook.name": "[NL] Advertising-Rook",
+  "channel.english_chat.name": "[NL] English Chat",
+  "channel.gamemaster.name": "[NL] Gamemaster",
+  "channel.guild_leaders.name": "[NL] Guild Leaders",
+  "channel.help.name": "[NL] Help",
+  "channel.tutor.name": "[NL] Tutor",
+  "channel.world_chat.name": "[NL] World Chat"
 }

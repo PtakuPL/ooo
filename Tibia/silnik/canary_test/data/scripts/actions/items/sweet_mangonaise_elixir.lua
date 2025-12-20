@@ -42,7 +42,7 @@ function sweetMangonaiseElixir.onUse(player, item, fromPosition, target, toPosit
 	end
 
 	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.sweet_mangonaise_elixir.msg_4")
-	player:say("Slurp.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.sweet_mangonaise_elixir.say_1", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)
 	item:remove(1)

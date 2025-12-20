@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Selling all sorts of magic equipment. Come and have a look" },
+	{ i18nKey = "npc.alexander.voice_1" },
 }
 
 local itemsTable = {
@@ -165,12 +165,12 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-keywordHandler:addKeyword({ "magic" }, StdModule.say, { npcHandler = npcHandler, text = "I'm selling runes, life rings, wands, rods and crystal balls. I also buy powerful spellbooks. If you like to see my offers, ask me for a {trade}." })
+keywordHandler:addKeyword({ "magic" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.alexander.stdmod_1" })
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_GREET, "Hi there |PLAYERNAME|, and welcome to the {magic} store.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "See you, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "See you, |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.alexander.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.alexander.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.alexander.walkaway_msg_1")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my wares. Or do you want to look only at " .. GetFormattedShopCategoryNames(itemsTable) .. ".")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
@@ -180,7 +180,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

@@ -63,7 +63,7 @@ function gloothFairyLever.onUse(player, item, fromPosition, target, toPosition, 
 		return true
 	end
 
-	player:say("Everyone in this place will be teleported into Glooth Fairy's hideout in one minute. No way back!!!", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.actions_glooth_fairy_lever.say_1", TALKTYPE_MONSTER_SAY)
 	Game.setStorageValue(GlobalStorage.GloothFairyTimer, os.time() + 15 * 60)
 	addEvent(clearMonstersAndTeleportPlayers, 60 * 1000)
 	return true

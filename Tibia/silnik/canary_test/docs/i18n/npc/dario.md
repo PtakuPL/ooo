@@ -1,7 +1,7 @@
 # NPC: dario
 
 **Plik:** `data-otservbr-global/npc/dario.lua`
-**Data migracji:** 2025-12-10 14:05
+**Data migracji:** 2025-12-17 00:55
 **Liczba tekstów:** 4
 
 ## Klucze i18n

@@ -10,7 +10,7 @@ UIWidget
   
     OptionCheckBox
       id: displayNames
-      !text: tr('Display creature names')
+      !text: tr("otclient_modules.hud_otui.tr_4")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -21,7 +21,7 @@ UIWidget
   
     OptionCheckBox
       id: displayHealth
-      !text: tr('Display creature health bars')
+      !text: tr("otclient_modules.hud_otui.tr_3")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -32,7 +32,7 @@ UIWidget
   
     OptionCheckBox
       id: displayMana
-      !text: tr('Display player mana bar')
+      !text: tr("otclient_modules.hud_otui.tr_2")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -48,7 +48,7 @@ UIWidget
   
     OptionCheckBox
       id: rightJoystick
-      !text: tr('Joystick in RightPanel')
+      !text: tr("otclient_modules.hud_otui.tr_1")
 
       $!mobile:
         visible: false

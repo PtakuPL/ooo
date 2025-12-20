@@ -111,9 +111,9 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "captain" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_fate_goroma.stdmod_3" })
 keywordHandler:addKeyword({ "goroma" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_fate_goroma.stdmod_4" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello, Sir |PLAYERNAME|. Where can I {sail} you today?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jack_fate_goroma.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.jack_fate_goroma.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.jack_fate_goroma.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

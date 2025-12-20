@@ -59,8 +59,8 @@ keywordHandler:addKeyword({ "alcohol" }, StdModule.say, { npcHandler = npcHandle
 keywordHandler:addKeyword({ "beer" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dane.stdmod_7" })
 keywordHandler:addKeyword({ "wine" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dane.stdmod_8" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to the wave cellar, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Please come back from time to time.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.dane.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.dane.farewell_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {

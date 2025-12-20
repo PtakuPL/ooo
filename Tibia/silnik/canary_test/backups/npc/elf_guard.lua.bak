@@ -55,9 +55,9 @@ keywordHandler:addKeyword({ "magic" }, StdModule.say, { npcHandler = npcHandler,
 keywordHandler:addKeyword({ "thais" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.elf_guard.stdmod_8" })
 
 -- Greeting message
-keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Ashari, |PLAYERNAME|." })
+keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Ashari, |PLAYERNAME|.", i18nKey = "npc.elf_guard.greet_1" })
 --Farewell message
-keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Asha Thrazi, |PLAYERNAME|." })
+keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Asha Thrazi, |PLAYERNAME|.", i18nKey = "npc.elf_guard.farewell_1" })
 
 npcHandler:setMessage(MESSAGE_GREET, "Ashari |PLAYERNAME|.")
 npcHandler:setMessage(MESSAGE_WALKAWAY, "Asha Thrazi, |PLAYERNAME|!")

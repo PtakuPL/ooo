@@ -9,9 +9,9 @@ local chatModeGroup
 
 -- controls and keybinds
 function addNewPreset()
-    presetWindow:setText(tr('Add hotkey preset'))
+    presetWindow:setText(tr("otclient_modules.keybins.tr_14"))
 
-    presetWindow.info:setText(tr('Enter a name for the new preset:'))
+    presetWindow.info:setText(tr("otclient_modules.keybins.tr_13"))
 
     presetWindow.field:clearText()
     presetWindow.field:show()
@@ -29,9 +29,9 @@ function addNewPreset()
 end
 
 function copyPreset()
-    presetWindow:setText(tr('Copy hotkey preset'))
+    presetWindow:setText(tr("otclient_modules.keybins.tr_12"))
 
-    presetWindow.info:setText(tr('Enter a name for the new preset:'))
+    presetWindow.info:setText(tr("otclient_modules.keybins.tr_11"))
 
     presetWindow.field:clearText()
     presetWindow.field:show()
@@ -48,9 +48,9 @@ function copyPreset()
 end
 
 function renamePreset()
-    presetWindow:setText(tr('Rename hotkey preset'))
+    presetWindow:setText(tr("otclient_modules.keybins.tr_10"))
 
-    presetWindow.info:setText(tr('Enter a name for the preset:'))
+    presetWindow.info:setText(tr("otclient_modules.keybins.tr_9"))
 
     presetWindow.field:setText(panels.keybindsPanel.presets.list:getCurrentOption().text)
     presetWindow.field:setCursorPos(1000)
@@ -68,10 +68,9 @@ function renamePreset()
 end
 
 function removePreset()
-    presetWindow:setText(tr('Warning'))
+    presetWindow:setText(tr("otclient_modules.keybins.tr_8"))
 
-    presetWindow.info:setText(tr('Do you really want to delete the hotkey preset %s?',
-        panels.keybindsPanel.presets.list:getCurrentOption().text))
+    presetWindow.info:setText(tr("otclient_modules.keybins.tr_7", panels.keybindsPanel.presets.list:getCurrentOption().text))
     presetWindow.field:hide()
     presetWindow.action = 'remove'
 
@@ -159,9 +158,7 @@ function editKeybind(keybind)
         show()
     end
 
-    keyEditWindow.info:setText(tr(
-        'Click \'Ok\' to assign the keybind. Click \'Clear\' to remove the keybind from \'%s: %s\'.', keybind.category,
-        keybind.action))
+    keyEditWindow.info:setText(tr("otclient_modules.keybins.tr_6", keybind.category, keybind.action))
     keyEditWindow.alone:setVisible(keybind.alone)
 
     connect(keyEditWindow, {
@@ -187,7 +184,7 @@ function editKeybindPrimary(button)
         action = row.action
     }
 
-    keyEditWindow:setText(tr('Edit Primary Key for \'%s\'', string.format('%s: %s', keybind.category, keybind.action)))
+    keyEditWindow:setText(tr("otclient_modules.keybins.tr_5", string.format('%s: %s', keybind.category, keybind.action)))
     keyEditWindow.keyCombo:setText(Keybind.getKeybindKeys(row.category, row.action, getChatMode(), preset).primary)
 
     editKeybind(keybind)
@@ -255,7 +252,7 @@ function editKeybindSecondary(button)
         action = row.action
     }
 
-    keyEditWindow:setText(tr('Edit Secondary Key for \'%s\'', string.format('%s: %s', keybind.category, keybind.action)))
+    keyEditWindow:setText(tr("otclient_modules.keybins.tr_4", string.format('%s: %s', keybind.category, keybind.action)))
     keyEditWindow.keyCombo:setText(Keybind.getKeybindKeys(row.category, row.action, getChatMode(), preset).secondary)
 
     editKeybind(keybind)
@@ -442,8 +439,7 @@ function editHotkeyKey(text)
         show()
     end
 
-    keyEditWindow.info:setText(tr(
-        'Click \'Ok\' to assign the keybind. Click \'Clear\' to remove the keybind from \'%s\'.', text))
+    keyEditWindow.info:setText(tr("otclient_modules.keybins.tr_3", text))
     keyEditWindow.alone:setVisible(false)
 
     connect(keyEditWindow, {
@@ -464,7 +460,7 @@ function editHotkeyPrimary(button)
     local hotkeyId = row.hotkeyId
     local preset = panels.keybindsPanel.presets.list:getCurrentOption().text
 
-    keyEditWindow:setText(tr('Edit Primary Key for \'%s\'', text))
+    keyEditWindow:setText(tr("otclient_modules.keybins.tr_2", text))
     keyEditWindow.keyCombo:setText(Keybind.getHotkeyKeys(hotkeyId, preset, getChatMode()).primary)
 
     editHotkeyKey(text)
@@ -532,7 +528,7 @@ function editHotkeySecondary(button)
     local hotkeyId = row.hotkeyId
     local preset = panels.keybindsPanel.presets.list:getCurrentOption().text
 
-    keyEditWindow:setText(tr('Edit Secondary Key for \'%s\'', text))
+    keyEditWindow:setText(tr("otclient_modules.keybins.tr_1", text))
     keyEditWindow.keyCombo:setText(Keybind.getHotkeyKeys(hotkeyId, preset, getChatMode()).secondary)
 
     editHotkeyKey(text)

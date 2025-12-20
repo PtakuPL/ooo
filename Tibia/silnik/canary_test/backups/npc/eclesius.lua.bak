@@ -26,12 +26,12 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I'm looking for a new assistant!" },
-	{ text = "Err, what was it again that I wanted...?" },
-	{ text = "Do come in! Mind the step of the magical door, though." },
-	{ text = "I'm so sorry... I promise it won't happen again. Problem is, I can't remember where I made the error..." },
-	{ text = "Actually, I STILL prefer inexperienced assistants. They're easier to keep an eye on and don't tend to backstab you." },
-	{ text = "So much to do, so much to do... uh... where should I start?" },
+	{ i18nKey = "npc.eclesius.voice_1" },
+	{ i18nKey = "npc.eclesius.voice_2" },
+	{ i18nKey = "npc.eclesius.voice_3" },
+	{ i18nKey = "npc.eclesius.voice_4" },
+	{ i18nKey = "npc.eclesius.voice_5" },
+	{ i18nKey = "npc.eclesius.voice_6" },
 }
 
 local keywordHandler = KeywordHandler:new()

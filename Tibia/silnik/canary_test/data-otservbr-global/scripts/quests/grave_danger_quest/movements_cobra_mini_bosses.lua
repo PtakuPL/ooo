@@ -16,7 +16,7 @@ function FireWall.onStepIn(creature, item, position, fromPosition)
 	elseif fromPosition.x == 33385 then
 		if creature:getStorageValue(Storage.Quest.U12_20.GraveDanger.CustodianKilled) >= 1 then
 			creature:setStorageValue(Storage.Quest.U12_20.GraveDanger.FireWall, 1)
-			creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You pass the fire without taking any damage. It's now or never...")
+			creature:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.movements_cobra_mini_bosses.msg_1")
 		else
 			creature:teleportTo(fromPosition)
 		end

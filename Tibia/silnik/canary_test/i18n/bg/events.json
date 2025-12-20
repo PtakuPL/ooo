@@ -1,7 +1,7 @@
 {
-  "event.player.msg1": "[EN] You can't move that item so fast.",
-  "event.player.msg2": "[EN] daily-reward-xp-boost",
-  "event.player.msg3": "[EN] daily-reward-xp-boost",
-  "event.player.msg4": "[EN] daily-reward-xp-boost",
-  "event.player.msg5": "[EN] daily-reward-xp-boost"
+  "event.player.msg1": "[BG] You can't move that item so fast.",
+  "event.player.msg2": "[BG] daily-reward-xp-boost",
+  "event.player.msg3": "[BG] daily-reward-xp-boost",
+  "event.player.msg4": "[BG] daily-reward-xp-boost",
+  "event.player.msg5": "[BG] daily-reward-xp-boost"
 }

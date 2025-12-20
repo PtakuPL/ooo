@@ -48,11 +48,11 @@ local config = {
 			local nictros = Creature("Sir Nictros")
 
 			if baeloc then
-				baeloc:say("Ah look my Brother! Challengers! After all this time finally a chance to prove our skills!")
+				baeloc:sayLocalized("scripts.actions_baeloc_nictros.say_7")
 				addEvent(function()
 					local nictros = Creature("Sir Nictros")
 					if nictros then
-						nictros:say("Indeed! It has been a while! As the elder one I request the right of the first battle!")
+						nictros:sayLocalized("scripts.actions_baeloc_nictros.say_6")
 					end
 				end, 6 * 1000)
 			end
@@ -61,7 +61,7 @@ local config = {
 				local baeloc = Creature("Sir Baeloc")
 				local nictros = Creature("Sir Nictros")
 				if baeloc then
-					baeloc:say("Oh, man! You always get the fun!")
+					baeloc:sayLocalized("scripts.actions_baeloc_nictros.say_5")
 					baeloc:setMoveLocked(true)
 				end
 				if nictros then
@@ -99,7 +99,7 @@ function BossHealthCheck.onHealthChange(creature, attacker, primaryDamage, prima
 	if name == "Sir Nictros" and not healthStates.nictros85 and healthPercent <= 85 then
 		healthStates.nictros85 = true
 
-		creature:say("I'll step back now. Let's see how you handle my brother!")
+		creature:sayLocalized("scripts.actions_baeloc_nictros.say_4")
 		creature:teleportTo(nictrosPosition)
 		creature:setMoveLocked(true)
 
@@ -109,19 +109,19 @@ function BossHealthCheck.onHealthChange(creature, attacker, primaryDamage, prima
 			baeloc:teleportTo(Position(33426, 31435, 13))
 			baeloc:setDirection(DIRECTION_SOUTH)
 			baeloc:setMoveLocked(false)
-			baeloc:say("My turn! Let me show you my skills!")
+			baeloc:sayLocalized("scripts.actions_baeloc_nictros.say_3")
 		end
 	elseif name == "Sir Baeloc" and healthStates.nictros85 and not healthStates.baeloc85 and healthPercent <= 85 then
 		healthStates.baeloc85 = true
 
-		creature:say("Brother! I need your assistance!")
+		creature:sayLocalized("scripts.actions_baeloc_nictros.say_2")
 
 		-- Release Nictros to join the fight
 		local nictros = Creature("Sir Nictros")
 		if nictros then
 			nictros:setMoveLocked(false)
 			nictros:teleportTo(Position(33424, 31435, 13))
-			nictros:say("Now we fight together, brother!")
+			nictros:sayLocalized("scripts.actions_baeloc_nictros.say_1")
 		end
 	end
 

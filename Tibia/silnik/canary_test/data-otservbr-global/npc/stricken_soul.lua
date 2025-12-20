@@ -50,9 +50,9 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.HauntedHouse.Questline) < 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "This place is... haunted... heed my warning... there are... ghooooooosts here...! Why are you giving me that... look? I am certain, there aaaaaaare ghosts here - I've seen them! Do you believe me?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.stricken_soul.greet_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Gree... tings.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.stricken_soul.greet_msg_2")
 	end
 
 	return true

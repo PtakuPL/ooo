@@ -13,21 +13,21 @@ function actions_museum_levers.onUse(player, item, fromPosition, target, toPosit
 	if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.LeverPermission) ~= 6 then
 		if item:getPosition() == boneLever then
 			if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.Questline) == 3 then
-				player:say("You don't know what to do.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.actions_levers.say_4", TALKTYPE_MONSTER_SAY)
 				player:setStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.Questline, 4)
 			elseif player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.Questline) == 5 then
 				if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.MuseumTimer) > os.time() then
-					player:say("back, back, up, right, left", TALKTYPE_MONSTER_SAY)
+					player:sayLocalized("scripts.actions_levers.say_3", TALKTYPE_MONSTER_SAY)
 					player:setStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.LeverPermission, 1)
 				else
-					player:say("You're too late.", TALKTYPE_MONSTER_SAY)
+					player:sayLocalized("scripts.actions_levers.say_2", TALKTYPE_MONSTER_SAY)
 					return true
 				end
 			end
 		elseif item:getPosition() == middleLever then
 			if item.itemid == 9110 then
 				if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.Questline) == 5 and player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.MuseumTimer) < os.time() then
-					player:say("As you turn the lever you can heart it ticking. Maybe you should hurry up!", TALKTYPE_MONSTER_SAY)
+					player:sayLocalized("scripts.actions_levers.say_1", TALKTYPE_MONSTER_SAY)
 					player:setStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.MuseumTimer, os.time() + 2 * 60)
 					item:transform(item.itemid + 1)
 				end

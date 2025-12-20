@@ -24,7 +24,7 @@ function potOfBlackjack.onUse(player, item, fromPosition, target, toPosition, is
 
 	player:addHealth(5000)
 	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.pot_of_blackjack.msg_2")
-	player:say("Gulp.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.pot_of_blackjack.say_1", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)
 	item:remove(1)

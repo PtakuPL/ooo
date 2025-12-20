@@ -15,7 +15,7 @@ function tropicalFriedTerrorbird.onUse(player, item, fromPosition, target, toPos
 
 	player:addCondition(magicLevelCondition)
 	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.tropical_fried_terrorbird.msg_2")
-	player:say("Chomp.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.tropical_fried_terrorbird.say_1", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)
 	item:remove(1)

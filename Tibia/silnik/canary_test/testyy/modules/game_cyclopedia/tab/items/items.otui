@@ -8,7 +8,7 @@ UIWidget
     anchors.top: parent.top
     anchors.left: parent.left
     margin-top: 10
-    !text: tr('Categories') .. ':'
+    !text: tr("otclient_modules.items_otui.tr_23") .. ':'
     text-auto-resize: true
     color: #BDBDBD
   TextList
@@ -46,7 +46,7 @@ UIWidget
     anchors.left: parent.left
     anchors.top: CategoryList.bottom
     margin-top: 40
-    !text: tr("Level")
+    !text: tr("otclient_modules.items_otui.tr_22")
     //font: noto-12
     text-offset: 13 6
     color: #C0C0C0
@@ -69,7 +69,7 @@ UIWidget
     anchors.top: LevelButton.top
     margin-left: 5
     text-offset: 13 6
-    !text: tr("1H")
+    !text: tr("otclient_modules.items_otui.tr_21")
     //font: noto-12
     color: #C0C0C0
     @onCheckChange: modules.game_cyclopedia.Cyclopedia.handFilter(self:isChecked(), false)
@@ -79,7 +79,7 @@ UIWidget
     anchors.left: H1Button.right
     anchors.top: LevelButton.top
     margin-left: 5
-    !text: tr("2H")
+    !text: tr("otclient_modules.items_otui.tr_20")
 
     //font: noto-12
     text-offset: 13 6
@@ -97,7 +97,7 @@ UIWidget
     anchors.top: ItemFilter.bottom
     anchors.left: parent.left
     margin-top: 5
-    !text: tr("Items") .. ':'
+    !text: tr("otclient_modules.items_otui.tr_19") .. ':'
     text-auto-resize: true
     color: #BDBDBD
   Panel
@@ -145,7 +145,7 @@ UIWidget
     anchors.left: SelectedItem.right
     anchors.top: SelectedItem.top
     margin-left: 5
-    !text: tr('Search') .. ':'
+    !text: tr("otclient_modules.items_otui.tr_18") .. ':'
     text-auto-resize: true
     color: #BDBDBD
   TextEdit
@@ -158,7 +158,7 @@ UIWidget
     padding-right: 15
     margin-left: 5
     height: 17
-    !placeholder: tr('Type to search')
+    !placeholder: tr("otclient_modules.items_otui.tr_17")
     placeholder-color: #6E706F
     @onTextChange: modules.game_cyclopedia.Cyclopedia.ItemSearch(self:getText())
   UIWidget
@@ -189,7 +189,7 @@ UIWidget
       anchors.top: parent.top
       margin-top: 15
       margin-left: 25
-      !text: tr('Loot Value Source') .. ':'
+      !text: tr("otclient_modules.items_otui.tr_16") .. ':'
       text-auto-resize: true
       color: #BDBDBD
     CheckBox
@@ -199,7 +199,7 @@ UIWidget
       margin-top: 4
 
       text-offset: 15 0
-      !text: tr('NPC Buy Value')
+      !text: tr("otclient_modules.items_otui.tr_15")
       width: 130
       checked: true
     CheckBox
@@ -209,7 +209,7 @@ UIWidget
       margin-top: 4
 
       text-offset: 15 0
-      !text: tr('Market Average Value')
+      !text: tr("otclient_modules.items_otui.tr_14")
       width: 150
   Label
     id: EmptyLabel
@@ -217,7 +217,7 @@ UIWidget
     anchors.left: MidSep.right
     margin-top: 10
     margin-left: 10
-    !text: tr('Please select an item from the list to see its details here.')
+    !text: tr("otclient_modules.items_otui.tr_13")
     color: #C0C0C0
     text-auto-resize: true
   UIWidget
@@ -233,7 +233,7 @@ UIWidget
       anchors.top: parent.top
       margin-left: 15
       margin-top: 15
-      !text: tr('Basic Item Details') .. ':'
+      !text: tr("otclient_modules.items_otui.tr_12") .. ':'
       text-auto-resize: true
       color: #BEBEBE
     Panel
@@ -258,7 +258,7 @@ UIWidget
           cell-spacing: 2
           flow: true
         UIWidget
-          !text: tr('Status: Loading, please wait...')
+          !text: tr("otclient_modules.items_otui.tr_11")
       VerticalScrollBar
         id: ListScrollbar
         anchors.top: List.top
@@ -300,7 +300,7 @@ UIWidget
       anchors.bottom: SellBase.top
       anchors.left: SellBase.left
       margin-bottom: 4
-      !text: tr('Sell To') .. ':'
+      !text: tr("otclient_modules.items_otui.tr_10") .. ':'
       text-auto-resize: true
       color: #BEBEBE
     Panel
@@ -336,7 +336,7 @@ UIWidget
       anchors.bottom: BuyBase.top
       anchors.left: BuyBase.left
       margin-bottom: 4
-      !text: tr('Buy From') .. ':'
+      !text: tr("otclient_modules.items_otui.tr_9") .. ':'
       text-auto-resize: true
       color: #BEBEBE
     UIWidget
@@ -358,14 +358,14 @@ UIWidget
         anchors.right: Icon.left
         anchors.verticalCenter: parent.verticalCenter
         margin-right: 4
-        !text: tr('0')
+        !text: tr("otclient_modules.items_otui.tr_8")
         text-auto-resize: true
         color: #BDBDBD
     Label
       id: MarketPriceLabel
       anchors.left: SellBase.left
       anchors.bottom: MarketGoldPriceBase.bottom
-      !text: tr('Average Market Price') .. ':'
+      !text: tr("otclient_modules.items_otui.tr_7") .. ':'
       text-auto-resize: true
       color: #BEBEBE
     TextEdit
@@ -374,13 +374,13 @@ UIWidget
       anchors.right: parent.right
       anchors.left: MarketGoldPriceBase.left
       margin-top: 2
-      !placeholder: tr('Type to set')
+      !placeholder: tr("otclient_modules.items_otui.tr_6")
       placeholder-color: #6E706F
     Label
       id: OwnLootLabel
       anchors.left: SellBase.left
       anchors.bottom: OwnValueEdit.bottom
-      !text: tr('Prefer Own Loot Value') .. ':'
+      !text: tr("otclient_modules.items_otui.tr_5") .. ':'
       text-auto-resize: true
       color: #BEBEBE
     UIWidget
@@ -407,14 +407,14 @@ UIWidget
         anchors.right: Icon.left
         anchors.verticalCenter: parent.verticalCenter
         margin-right: 4
-        !text: tr('0')
+        !text: tr("otclient_modules.items_otui.tr_4")
         text-auto-resize: true
         color: #BDBDBD
     Label
       id: ResultLabel
       anchors.left: SellBase.left
       anchors.bottom: ResultGoldBase.bottom
-      !text: tr('Resulting Value') .. ':'
+      !text: tr("otclient_modules.items_otui.tr_3") .. ':'
       text-auto-resize: true
       color: #BEBEBE
     CheckBox
@@ -422,7 +422,7 @@ UIWidget
       anchors.left: SellBase.left
       anchors.bottom: parent.bottom
       margin-bottom: 35
-      !text: tr('Track drops of this item')
+      !text: tr("otclient_modules.items_otui.tr_2")
       text-auto-resize: true
     CheckBox
       id: quickLootCheck
@@ -442,7 +442,7 @@ UIWidget
     size: 120 20
     anchors.left: parent.left
     anchors.bottom: parent.bottom
-    !text: tr('Manage Containers')
+    !text: tr("otclient_modules.items_otui.tr_1")
     //font: noto-12
     text-offset: 0 -1
     color: #C0C0C0

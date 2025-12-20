@@ -9,7 +9,7 @@ UIWidget
 
     OptionCheckBox
       id: autoChaseOverride
-      !text: tr('Allow auto chase override')
+      !text: tr("otclient_modules.misc_otui.tr_2")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -18,7 +18,7 @@ UIWidget
     height: 55
     margin-top: 10
     Label
-      !text: tr('Client user features profile')
+      !text: tr("otclient_modules.misc_otui.tr_1")
       anchors.left: parent.left
       anchors.right: parent.right
       anchors.top: parent.top

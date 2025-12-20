@@ -26,11 +26,11 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Team up with others to defeat monsters!" },
-	{ text = "Get your gear and help us defend Dawnport against the monsters!" },
-	{ text = "Better weapons equal more damage - get yourself some gear right here!" },
-	{ text = "Gird youselves! Chain mail, bows, spears, swords - we've got it all!" },
-	{ text = "Skill comes with practice - get out there and kill some beasts!" },
+	{ i18nKey = "npc.coltrayne.voice_1" },
+	{ i18nKey = "npc.coltrayne.voice_2" },
+	{ i18nKey = "npc.coltrayne.voice_3" },
+	{ i18nKey = "npc.coltrayne.voice_4" },
+	{ i18nKey = "npc.coltrayne.voice_5" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -109,8 +109,8 @@ keywordHandler:addKeyword({ "plunderpurse" }, StdModule.say, {
 	i18nKey = "npc.coltrayne.stdmod_12",
 })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hey there. Need some armor or weapon? Then ask me for a {trade}.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Yeah, bye..")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.coltrayne.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.coltrayne.farewell_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

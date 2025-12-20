@@ -71,14 +71,14 @@ fi
 if ! worker_running; then
     log_guardian "⚠️ Worker nie działa - restartuję..."
     restart_worker
-else
-    # Worker działa - cichy log co 5 minut
-    MINUTE=$(date +%M)
-    if [ $((MINUTE % 5)) -eq 0 ]; then
-        PID=$(cat "$PID_FILE" 2>/dev/null)
-        log_guardian "✓ Worker OK (PID: $PID)"
+    else
+        # Worker działa - cichy log co 5 minut
+        MINUTE=$((10#$(date +%M)))
+        if [ $((MINUTE % 5)) -eq 0 ]; then
+            PID=$(cat "$PID_FILE" 2>/dev/null)
+            log_guardian "✓ Worker OK (PID: $PID)"
+        fi
     fi
-fi
 
 # Co ~2 minuty - push dashboardu do GitHub (zależne od czasu, nie od minuty zegara)
 now_ts=$(date +%s)
@@ -91,10 +91,9 @@ if [ "$last_ts" -eq 0 ] || [ $((now_ts - last_ts)) -ge "$PUSH_INTERVAL_SECONDS" 
     # Git operations MUSZĄ być w repo root (PtakuPL/ooo)
     cd "$REPO_ROOT" || exit 1
 
-        # Pobierz najnowsze komendy z GitHub bez robienia merge (bezpieczne przy lokalnych zmianach)
+        # Pobierz najnowsze komendy z GitHub bez robienia merge/pull (bezpieczne przy lokalnych zmianach)
+        # Worker odczyta komendy z origin/master (git show) i zapisze ACK lokalnie.
         git fetch origin master -q 2>/dev/null || true
-        git checkout -q origin/master -- Tibia/silnik/canary_test/.github/worker_commands.txt 2>/dev/null || true
-        git checkout -q origin/master -- Tibia/silnik/canary_test/worker_commands.txt 2>/dev/null || true
 
     # Staging TYLKO plików statusu (bez przypadkowego commitowania migracji/kodu)
         git add \

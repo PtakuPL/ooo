@@ -48,7 +48,7 @@ function lloydPrepareDeath.onPrepareDeath(creature, lastHitKiller, mostDamageKil
 		creature:teleportTo(Position(32799, 32826, 14))
 		creature:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		creature:addHealth(300000, true)
-		creature:say("The cosmic energies in the chamber refocus on Lloyd.", TALKTYPE_MONSTER_SAY)
+		creature:sayLocalized("scripts.creaturescripts_lloyd_preparedeath.say_1", TALKTYPE_MONSTER_SAY)
 		Storage.Quest.U11_02.ForgottenKnowledge.LloydEvent = addEvent(revertLloyd, 10 * 1000, prismCount)
 	end
 	return true

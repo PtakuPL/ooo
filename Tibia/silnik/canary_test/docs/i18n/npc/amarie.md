@@ -1,7 +1,7 @@
 # NPC: amarie
 
 **Plik:** `data-otservbr-global/npc/amarie.lua`
-**Data migracji:** 2025-12-10 12:53
+**Data migracji:** 2025-12-17 00:52
 **Liczba tekstów:** 3
 
 ## Klucze i18n

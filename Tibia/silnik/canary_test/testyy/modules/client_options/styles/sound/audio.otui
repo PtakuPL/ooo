@@ -9,7 +9,7 @@ UIWidget
 
     OptionCheckBox
       id: enableAudio
-      !text: tr('Enable audio')
+      !text: tr("otclient_modules.audio_otui.tr_3")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -20,7 +20,7 @@ UIWidget
   
     OptionCheckBox
       id: enableMusicSound
-      !text: tr('Enable music sound')
+      !text: tr("otclient_modules.audio_otui.tr_2")
 
     OptionScaleScroll
       id: musicSoundVolume
@@ -33,4 +33,4 @@ UIWidget
       &scrollSize: 21
       @onSetup: |
         local value = modules.client_options.getOption('musicSoundVolume')
-        self:setText(tr('Music volume: %d', value))
+        self:setText(tr("otclient_modules.audio_otui.tr_1", value))

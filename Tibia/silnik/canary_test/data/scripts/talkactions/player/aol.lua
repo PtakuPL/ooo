@@ -5,7 +5,7 @@ function aol.onSay(player, words, param)
 	if player:removeMoneyBank(totalCost) then
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 		player:addItem(3057, 1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You have bought an amulet of loss for %i gold!", totalCost))
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.aol.msg_1", {totalCost})
 	else
 		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 		player:sendCancelMessage(string.format("You do not have enough money. You need %i gold to buy aol!", totalCost))

@@ -52,7 +52,7 @@ function overchargeDeath.onDeath(creature)
 
 	if Game.getStorageValue(14321) == 5 then
 		setStorage()
-		creature:say("You have reached enough charges to pass further into the destruction!", TALKTYPE_MONSTER_YELL, isInGhostMode, pid, { x = 32162, y = 31356, z = 15 })
+		creature:sayLocalized("scripts.creaturescripts_overcharge_death.say_1", TALKTYPE_MONSTER_YELL, isInGhostMode, pid, { x = 32162, y = 31356, z = 15 })
 		Game.setStorageValue(14321, -1)
 	end
 

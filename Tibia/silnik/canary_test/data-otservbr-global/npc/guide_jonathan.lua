@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Free escort to the depot for newcomers!" },
-	{ text = "Hello, is this your first visit to Thais? I can show you around a little." },
-	{ text = "Need some help finding your way through Thais? Let me assist you." },
-	{ text = "Talk to me if you need directions." },
+	{ i18nKey = "npc.guide_jonathan.voice_1" },
+	{ i18nKey = "npc.guide_jonathan.voice_2" },
+	{ i18nKey = "npc.guide_jonathan.voice_3" },
+	{ i18nKey = "npc.guide_jonathan.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -99,9 +99,9 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "town" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_jonathan.stdmod_6" })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_jonathan.stdmod_7" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello there, |PLAYERNAME| and welcome to Edron! Would you like some {information} and a {map} guide?")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and enjoy your stay in Edron, |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.guide_jonathan.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.guide_jonathan.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.guide_jonathan.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

@@ -184,8 +184,8 @@ keywordHandler:addKeyword({ "slumber" }, StdModule.say, {
 		"In this state we can serve the Great Snake in a more suitable way. You have to understand that it is an honour and a privilege, not a sacrifice.",
 	},
 })
-npcHandler:setMessage(MESSAGE_FAREWELL, "Bye.")
-npcHandler:setMessage(MESSAGE_GREET, "Greetings {mortal}.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.ghost_of_a_priest.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.ghost_of_a_priest.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -197,13 +197,13 @@ function teleportMain.onStepIn(creature, item, position, fromPosition)
 		else
 			player:teleportTo(Position(33165, 31709, 14))
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			player:say("Escaping back to the Retreat.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.movements_teleport_main.say_2", TALKTYPE_MONSTER_SAY)
 			return true
 		end
 	elseif teleport.storage and player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.EnterTeleport) < teleport.storage then
 		player:teleportTo(fromPosition)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:say("You don't have enough energy to enter this portal", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.movements_teleport_main.say_1", TALKTYPE_MONSTER_SAY)
 		return true
 	end
 

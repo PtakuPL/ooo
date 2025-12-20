@@ -46,7 +46,7 @@ function onlineTokensEvent.onThink(interval)
 				local tokensMath = math.floor(tokens)
 				local item = player:addItem(config.tokenItemId, tokensMath)
 				if item then
-					player:sendTextMessage(MESSAGE_FAILURE, string.format("Congratulations %s!\z You have received %d %s for being online.", player:getName(), tokensMath, "tokens"))
+					player:sendLocalizedTextMessage(MESSAGE_FAILURE, "scripts.online_tokens.msg_1", {player:getName(), tokensMath, "tokens"})
 				end
 				player:setStorageValue(config.storage, (tokens - tokensMath) * 10000000)
 			end

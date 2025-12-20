@@ -9,7 +9,7 @@ function thirdFloorGhoul.onStepIn(creature, item, position, fromPosition)
 			-- If ghoul step in tile, create the ladder
 			item:transform(430)
 			Position(ladderPosition):createItem(1948)
-			monster:say("<click>")
+			monster:sayLocalized("scripts.movement_third_floor_ghoul.say_2")
 		end
 	end
 	return true
@@ -27,7 +27,7 @@ function thirdFloorGhoul.onStepOut(creature, item, position, fromPosition)
 			item:transform(431)
 			-- If ghoul step in tile, remove the ladder
 			Position(ladderPosition):removeItem(1948)
-			monster:say("<click>")
+			monster:sayLocalized("scripts.movement_third_floor_ghoul.say_1")
 		end
 	end
 	return true

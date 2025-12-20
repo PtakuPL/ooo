@@ -54,7 +54,7 @@ Panel
 
     Label
       id: showOffWindowText
-      !text: tr('Random Hint')
+      !text: tr("otclient_modules.bottommenu_otui.tr_7")
       font: noto-12
       text-offset: 0 2
       text-align: top
@@ -74,7 +74,7 @@ Panel
     draggable: false
 
     Label
-      !text: tr('Event Schedule')
+      !text: tr("otclient_modules.bottommenu_otui.tr_6")
       font: noto-12
       text-offset: 0 2
       text-align: top
@@ -98,7 +98,7 @@ Panel
       @onClick: onClickOnCalendar()
 
       CalendarTopMark
-        !text: tr('Active')
+        !text: tr("otclient_modules.bottommenu_otui.tr_5")
         &disableLeftBright: true
         anchors.top: parent.top
         anchors.left: parent.left
@@ -112,7 +112,7 @@ Panel
         anchors.bottom: parent.bottom
 
       CalendarTopMark
-        !text: tr('Upcoming')
+        !text: tr("otclient_modules.bottommenu_otui.tr_4")
         anchors.top: parent.top
         anchors.right: parent.right
         anchors.left: parent.horizontalCenter
@@ -136,7 +136,7 @@ Panel
     draggable: false
 
     Label
-      !text: tr('Boosted')
+      !text: tr("otclient_modules.bottommenu_otui.tr_3")
       font: noto-12
       text-offset: 0 2
       text-align: top
@@ -170,7 +170,7 @@ Panel
         visible: false
 
     Label
-      !text: tr('Creature')
+      !text: tr("otclient_modules.bottommenu_otui.tr_2")
       anchors.horizontalCenter: prev.horizontalCenter
       anchors.top: prev.bottom
       margin-top: 3
@@ -199,7 +199,7 @@ Panel
         visible: false
 
     Label
-      !text: tr('Boss')
+      !text: tr("otclient_modules.bottommenu_otui.tr_1")
       anchors.horizontalCenter: prev.horizontalCenter
       anchors.top: prev.bottom
       margin-top: 3

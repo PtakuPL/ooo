@@ -32,24 +32,24 @@ RVTextEdit < TextEdit
 MainWindow
   id: ruleViolationWindow
   size: 400 445
-  !text: tr('Rule Violation')
+  !text: tr("otclient_modules.ruleviolation_otui.tr_9")
   @onEscape: hide()
 
   RVLabel
-    !text: tr('Name') .. ':'
+    !text: tr("otclient_modules.ruleviolation_otui.tr_8") .. ':'
 
   RVTextEdit
     id: nameText
 
   RVLabel
-    !text: tr('Statement') .. ':'
+    !text: tr("otclient_modules.ruleviolation_otui.tr_7") .. ':'
 
   RVTextEdit
     id: statementText
     enabled: false
 
   RVLabel
-    !text: tr('Reason') .. ':'
+    !text: tr("otclient_modules.ruleviolation_otui.tr_6") .. ':'
 
   TextList
     id: reasonList
@@ -70,7 +70,7 @@ MainWindow
     pixels-scroll: true
 
   RVLabel
-    !text: tr('Action') .. ':'
+    !text: tr("otclient_modules.ruleviolation_otui.tr_5") .. ':'
 
   TextList
     id: actionList
@@ -92,27 +92,27 @@ MainWindow
 
   CheckBox
     id: ipBanCheckBox
-    !text: tr('IP Address Banishment')
+    !text: tr("otclient_modules.ruleviolation_otui.tr_4")
     margin-top: 10
     anchors.top: prev.bottom
     anchors.left: parent.left
     anchors.right: parent.right
 
   RVLabel
-    !text: tr('Comment') .. ':'
+    !text: tr("otclient_modules.ruleviolation_otui.tr_3") .. ':'
 
   RVTextEdit
     id: commentText
 
   Button
-    !text: tr('Cancel')
+    !text: tr("otclient_modules.ruleviolation_otui.tr_2")
     width: 64
     anchors.right: parent.right
     anchors.bottom: parent.bottom
     @onClick: hide()
 
   Button
-    !text: tr('Ok')
+    !text: tr("otclient_modules.ruleviolation_otui.tr_1")
     width: 64
     margin-right: 5
     anchors.right: prev.left

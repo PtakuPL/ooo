@@ -1,7 +1,7 @@
 # NPC: anerui
 
 **Plik:** `data-otservbr-global/npc/anerui.lua`
-**Data migracji:** 2025-12-10 13:57
+**Data migracji:** 2025-12-17 00:52
 **Liczba tekstów:** 2
 
 ## Klucze i18n

@@ -21,7 +21,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Chchch" },
+	{ i18nKey = "npc.a_fluffy_squirrel.voice_1" },
 }
 npcConfig.shop = { -- Sellable items
 	{ itemName = "acorn", clientId = 10296, sell = 10 },
@@ -68,10 +68,10 @@ end
 
 keywordHandler:addKeyword({ "acorn" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.a_fluffy_squirrel.stdmod_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Chhchh?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Chh...")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Chh...")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_fluffy_squirrel.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.a_fluffy_squirrel.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.a_fluffy_squirrel.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.a_fluffy_squirrel.sendtrade_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -243,10 +243,10 @@ keywordHandler:addKeyword({ "venore" }, StdModule.say, { npcHandler = npcHandler
 keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.rashid.stdmod_21" })
 keywordHandler:addKeyword({ "king" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.rashid.stdmod_22" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Ah, a customer! Be greeted, |PLAYERNAME|!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Farewell, |PLAYERNAME|, may the winds guide your way.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Come back soon!")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Take all the time you need to decide what you want!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.rashid.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.rashid.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.rashid.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.rashid.sendtrade_msg_1")
 
 local function onTradeRequest(npc, creature)
 	if Player(creature):getStorageValue(Storage.Quest.U8_1.TheTravellingTrader.Mission07) ~= 1 then

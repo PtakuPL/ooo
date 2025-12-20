@@ -13,7 +13,7 @@ function helheim.onStepIn(creature, item, position, fromPosition)
 	-- Questlog The Ice Islands Quest, The Secret of Helheim
 	player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission07, 3)
 	player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 31)
-	player:say("You discovered the necromantic altar and should report about it.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.movements_helheim.say_1", TALKTYPE_MONSTER_SAY)
 	position:sendMagicEffect(CONST_ME_MAGIC_RED)
 
 	for x = -1, 1 do

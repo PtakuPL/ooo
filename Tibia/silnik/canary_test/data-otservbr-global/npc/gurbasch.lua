@@ -21,7 +21,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Passages to Kazordoon! Gotta try the beer there." },
+	{ i18nKey = "npc.gurbasch.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -90,9 +90,9 @@ addTravelKeyword("kazordoon", { "Do you want to go to Kazordoon to try the beer 
 addTravelKeyword("gnomprona", { "Would you like to travel to Gnomprona for |TRAVELCOST|?", "Full steam ahead!", "Then not." }, 200, "postman", Position(33516, 32856, 14))
 keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.gurbasch.stdmod_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome, |PLAYERNAME|! Lovely steamboat, ain't it? I can even offer you a {passage} if you like.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Until next time.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Until next time.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gurbasch.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.gurbasch.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.gurbasch.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

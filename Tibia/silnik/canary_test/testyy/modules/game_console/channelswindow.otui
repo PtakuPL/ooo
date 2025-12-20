@@ -10,7 +10,7 @@ ChannelListLabel < Label
 
 MainWindow
   id: channelsWindow
-  !text: tr('Channels')
+  !text: tr("otclient_modules.channelswindow_otui.tr_4")
   size: 250 238
   @onEscape: self:destroy()
 
@@ -25,7 +25,7 @@ MainWindow
 
   Label
     id: openPrivateChannelWithLabel
-    !text: tr('Open a private message channel') .. ':'
+    !text: tr("otclient_modules.channelswindow_otui.tr_3") .. ':'
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.bottom: next.top
@@ -41,7 +41,7 @@ MainWindow
 
   Button
     id: buttonOpen
-    !text: tr('Open')
+    !text: tr("otclient_modules.channelswindow_otui.tr_2")
     width: 64
     anchors.right: next.left
     anchors.bottom: parent.bottom
@@ -50,7 +50,7 @@ MainWindow
 
   Button
     id: buttonCancel
-    !text: tr('Cancel')
+    !text: tr("otclient_modules.channelswindow_otui.tr_1")
     width: 64
     anchors.right: parent.right
     anchors.bottom: parent.bottom

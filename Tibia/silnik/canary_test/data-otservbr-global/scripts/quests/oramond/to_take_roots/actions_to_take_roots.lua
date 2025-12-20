@@ -10,7 +10,7 @@ function toTakeRoots.onUse(player, item, fromPosition, target, toPosition, isHot
 	local rand = math.random(1, 100)
 	if item.itemid == 21104 then
 		if rand <= 50 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You successfully harvest some juicy roots.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_to_take_roots.msg_5")
 			player:addItem(21291, 1)
 			item:transform(item.itemid + 2)
 			addEvent(revertRoot, 120000, toPosition, 21106, 21104)
@@ -23,14 +23,14 @@ function toTakeRoots.onUse(player, item, fromPosition, target, toPosition, isHot
 			end
 			player:setStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Count, player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Count) > 0 and player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Count) + 1 or 1)
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your harvesting attempt destroyed more of the juicy roots than you could salvage.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_to_take_roots.msg_4")
 			item:transform(item.itemid + 2)
 			addEvent(revertRoot, 120000, toPosition, 21106, 21104)
 			toPosition:sendMagicEffect(CONST_ME_GREEN_RINGS)
 		end
 	elseif item.itemid == 21105 then
 		if rand <= 50 then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You successfully harvest some juicy roots.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_to_take_roots.msg_3")
 			player:addItem(21291, 1)
 			item:transform(item.itemid + 2)
 			addEvent(revertRoot, 120000, toPosition, 21107, 21105)
@@ -43,13 +43,13 @@ function toTakeRoots.onUse(player, item, fromPosition, target, toPosition, isHot
 			end
 			player:setStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Count, player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Count) > 0 and player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Count) + 1 or 1)
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your harvesting attempt destroyed more of the juicy roots than you could salvage.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_to_take_roots.msg_2")
 			item:transform(item.itemid + 2)
 			addEvent(revertRoot, 120000, toPosition, 21107, 21105)
 			toPosition:sendMagicEffect(CONST_ME_GREEN_RINGS)
 		end
 	elseif item.itemid == 21106 or item.itemid == 21107 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This root has already been harvested, nothing to gain here.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_to_take_roots.msg_1")
 	end
 	return true
 end

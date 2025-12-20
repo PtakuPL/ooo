@@ -21,9 +21,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I wish I could learn more about this strange world." },
-	{ text = "Those different cultures are amazing." },
-	{ text = "What an interesting continent." },
+	{ i18nKey = "npc.cael.voice_1" },
+	{ i18nKey = "npc.cael.voice_2" },
+	{ i18nKey = "npc.cael.voice_3" },
 }
 
 local tomes = Storage.Quest.U8_54.TheNewFrontier.TomeofKnowledge
@@ -365,7 +365,7 @@ local function onTradeRequest(npc, creature)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, |PLAYERNAME|! You must have come around quite a bit. I'm always interested in learning new things about Zao.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.cael.greet_msg_1")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Keep in mind you won't find better offers here. Just browse through my wares.")
 
 npcHandler:setCallback(CALLBACK_ON_TRADE_REQUEST, onTradeRequest)

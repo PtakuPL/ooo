@@ -29,7 +29,7 @@ function depolarizedDeath.onDeath(creature)
 	Game.setStorageValue(14323, Game.getStorageValue(14323) + 1)
 	if Game.getStorageValue(14323) == 10 then
 		setStorage()
-		creature:say("You have reached enough charges to pass further into the destruction!", TALKTYPE_MONSTER_YELL, isInGhostMode, pid, { x = 32209, y = 31326, z = 14 })
+		creature:sayLocalized("scripts.creaturescripts_depolarized_death.say_1", TALKTYPE_MONSTER_YELL, isInGhostMode, pid, { x = 32209, y = 31326, z = 14 })
 		Game.setStorageValue(14323, -1)
 	end
 	return true

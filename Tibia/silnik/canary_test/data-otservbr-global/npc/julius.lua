@@ -55,9 +55,9 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 
 	if player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.QuestLine) < 0 then
-		npcHandler:setMessage(MESSAGE_GREET, "Be greeted, adventurer |PLAYERNAME|. I assume you have read the {note} about the {vampire} threat in this city.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.julius.greet_msg_1")
 	elseif player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.QuestLine) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Be greeted, adventurer |PLAYERNAME|. Please excuse me if I appear {distracted}!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.julius.greet_msg_2")
 	end
 	return true
 end
@@ -242,8 +242,8 @@ keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addKeyword({ "news" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.julius.stdmod_6" })
 keywordHandler:addKeyword({ "thank" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.julius.stdmod_7" })
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye, |PLAYERNAME|. Never trust anyone.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "I'll reward you for every pair of vampire teeth you bring me.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.julius.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.julius.sendtrade_msg_1")
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

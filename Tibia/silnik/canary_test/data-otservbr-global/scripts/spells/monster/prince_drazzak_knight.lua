@@ -47,7 +47,7 @@ local function delayedCastSpell(cid, var)
 	if not creature then
 		return
 	end
-	creature:say("DIE!", TALKTYPE_MONSTER_SAY)
+	creature:sayLocalized("scripts.prince_drazzak_knight.say_2", TALKTYPE_MONSTER_SAY)
 	return combat:execute(creature, positionToVariant(creature:getPosition()))
 end
 
@@ -56,7 +56,7 @@ local spell = Spell("instant")
 function spell.onCastSpell(creature, var)
 	local value = Game.getStorageValue(storage)
 	if os.time() - value >= 4 then
-		creature:say("All KNIGHTS must DIE!", TALKTYPE_MONSTER_SAY)
+		creature:sayLocalized("scripts.prince_drazzak_knight.say_1", TALKTYPE_MONSTER_SAY)
 		addEvent(delayedCastSpell, 4000, creature:getId(), var)
 		Game.setStorageValue(storage, os.time())
 	end

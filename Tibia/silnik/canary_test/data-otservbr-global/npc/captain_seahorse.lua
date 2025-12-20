@@ -83,9 +83,9 @@ keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addKeyword({ "edron" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.captain_seahorse.stdmod_6" })
 keywordHandler:addKeyword({ "yalahar" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.captain_seahorse.stdmod_7" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome on board, |PLAYERNAME|. Where may I {sail} you today?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye. Recommend us if you were satisfied with our service.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.captain_seahorse.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.captain_seahorse.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.captain_seahorse.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

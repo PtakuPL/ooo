@@ -279,7 +279,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), itemsTable)
-		npcHandler:say("Of course, just browse through my wares. You can also look at " .. remainingCategories .. ".", npc, player)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.rock_in_a_hard_place.say_1", { remainingCategories })
 		npc:openShopWindowTable(player, categoryTable)
 	end
 	return true
@@ -289,7 +289,7 @@ local function onTradeRequest(npc, creature)
 	local player = Player(creature)
 	local playerId = player:getId()
 
-	npcHandler:say("You would be surprised how many things are washed ashore here. I trade " .. GetFormattedShopCategoryNames(itemsTable) .. ".", npc, creature)
+	NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rock_in_a_hard_place.say_2", { GetFormattedShopCategoryNames(itemsTable) })
 	return true
 end
 
@@ -298,9 +298,9 @@ keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addKeyword({ "help" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.rock_in_a_hard_place.stdmod_3" })
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.rock_in_a_hard_place.stdmod_4" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Everyone on this island has gone crazy! Except for me and you, it seems. Let's {trade} like normal people would.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Promise to come back sometime, will ya?")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Hey! Don't leave me alone with all these lunatics!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.rock_in_a_hard_place.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.rock_in_a_hard_place.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.rock_in_a_hard_place.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_ON_TRADE_REQUEST, onTradeRequest)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

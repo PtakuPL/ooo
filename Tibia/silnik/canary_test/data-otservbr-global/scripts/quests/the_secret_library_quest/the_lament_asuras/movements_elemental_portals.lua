@@ -89,7 +89,7 @@ local function expelPlayerFromRoom(cid, fromPos, toPos, exitPos)
 		if player:getPosition():isInRange(fromPos, toPos) then
 			player:teleportTo(exitPos)
 			exitPos:sendMagicEffect(CONST_ME_TELEPORT)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You took too long, the battle has ended.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.movements_elemental_portals.msg_3")
 		end
 	end
 end
@@ -108,7 +108,7 @@ function movements_asura_elemental_portals.onStepIn(creature, item, position, fr
 			if player:getStorageValue(quest) >= 5 then
 				player:teleportTo(toPosition_l)
 			else
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can not use this portal yet.")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.movements_elemental_portals.msg_2")
 				player:teleportTo(fromPosition, true)
 			end
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
@@ -139,7 +139,7 @@ function movements_asura_elemental_portals.onStepIn(creature, item, position, fr
 		if position == hiddenMap1 or hiddenMap2 then
 			if player:getStorageValue(quest) == 5 then
 				player:addItem(28908, 1)
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have discovered an old writing desk that contains an ancient map.")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.movements_elemental_portals.msg_1")
 				player:setStorageValue(quest, 6)
 			end
 		end

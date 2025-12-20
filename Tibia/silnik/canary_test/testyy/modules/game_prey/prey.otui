@@ -207,7 +207,7 @@ ActivePreyPanel < Panel
       image-border: 1
       size: 155 15
       font: noto-12
-      !text: tr('Automatic Bonus Rer...')
+      !text: tr("otclient_modules.prey_otui.tr_10")
       margin-left: 5
 
   CardLabel
@@ -234,7 +234,7 @@ ActivePreyPanel < Panel
       image-border: 1
       size: 155 15
       font: noto-12
-      !text: tr('Lock Prey')
+      !text: tr("otclient_modules.prey_otui.tr_9")
       margin-left: 5
 
   CardLabel
@@ -449,7 +449,7 @@ CardLabel < FlatPanel
     anchors.right: parent.right
     anchors.verticalCenter: parent.verticalCenter
     image-source: /images/game/prey/prey_wildcard
-    !tooltip: tr('Prey Wildcards')
+    !tooltip: tr("otclient_modules.prey_otui.tr_8")
 
   UIWidget
     id: text
@@ -469,7 +469,7 @@ GoldLabel < FlatPanel
     anchors.right: parent.right
     anchors.verticalCenter: parent.verticalCenter
     image-source: /images/game/prey/prey_gold
-    !tooltip: tr('Gold Coins')
+    !tooltip: tr("otclient_modules.prey_otui.tr_7")
 
   UIWidget
     id: text
@@ -538,7 +538,7 @@ SlotPanel < Panel
 
 MainWindow
   id: preyWindow
-  !text: tr('Preys')
+  !text: tr("otclient_modules.prey_otui.tr_6")
   size: 688 520
   @onEscape: modules.game_prey.hide()
   padding: 20
@@ -584,7 +584,7 @@ MainWindow
     anchors.right: parent.right
     anchors.bottom: parent.bottom
     size: 45 21
-    !text: tr('Close')
+    !text: tr("otclient_modules.prey_otui.tr_5")
     font: noto-12
     @onClick: modules.game_prey.hide()
 
@@ -607,7 +607,7 @@ MainWindow
     margin-left: 10
     size: 26 20
     anchors.verticalCenter: closeButton.verticalCenter
-    !tooltip: tr('Go to the Store to get more Prey Wildcards!')
+    !tooltip: tr("otclient_modules.prey_otui.tr_4")
     image-source: /images/game/prey/prey_smallstore
     image-clip: 0 0 26 20
     background-color: #17354e
@@ -652,7 +652,7 @@ PreyCreature < Panel
     anchors.bottom: prev.bottom
     margin-bottom: 7
     anchors.right: parent.right
-    !text: tr('Inactive')
+    !text: tr("otclient_modules.prey_otui.tr_3")
     font: noto-12
     text-align: left
 
@@ -668,7 +668,7 @@ PreyCreature < Panel
 
 PreyTracker < MiniWindow
   id: preyTracker
-  !text: tr('Preys')
+  !text: tr("otclient_modules.prey_otui.tr_2")
   height: 95
   icon: /images/topbuttons/prey
 
@@ -679,7 +679,7 @@ PreyTracker < MiniWindow
     layout: verticalBox
 
     Label
-      !text: tr('Prey Creatures')
+      !text: tr("otclient_modules.prey_otui.tr_1")
       font: noto-12
 
     HorizontalSeparator

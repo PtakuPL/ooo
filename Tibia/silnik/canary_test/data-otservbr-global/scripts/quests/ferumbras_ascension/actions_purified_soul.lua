@@ -6,7 +6,7 @@ function ferumbrasAscendantPurifiedSoul.onUse(player, item, fromPosition, target
 	end
 
 	target:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
-	target:say("The Sin Devourer has been driven out!", TALKTYPE_MONSTER_SAY)
+	target:sayLocalized("scripts.actions_purified_soul.say_1", TALKTYPE_MONSTER_SAY)
 	target:remove()
 	item:remove()
 	return true

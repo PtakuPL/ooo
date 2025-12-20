@@ -13,7 +13,7 @@ function actions_museum_bony_rod.onUse(player, item, fromPosition, target, toPos
 	elseif item.itemid == 28708 then
 		if target.itemid == basin then
 			item:setAttribute(ITEM_ATTRIBUTE_DURATION, 15 * 1000)
-			player:say("Recharging...", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_bony_rod.say_1", TALKTYPE_MONSTER_SAY)
 		else
 			if target:getPosition() == finalBasin and player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.MoTA.FinalBasin) ~= 1 then
 				target:getPosition():sendMagicEffect(CONST_ME_DRAWBLOOD)

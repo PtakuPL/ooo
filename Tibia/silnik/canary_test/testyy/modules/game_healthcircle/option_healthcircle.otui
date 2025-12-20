@@ -9,8 +9,8 @@ UIWidget
 
     OptionCheckBoxMarked
       id: healthCheckBox
-      !text: tr('Health circle')
-      !tooltip: tr('Show health red circle.')
+      !text: tr("otclient_modules.option_healthcircle_otui.tr_13")
+      !tooltip: tr("otclient_modules.option_healthcircle_otui.tr_12")
       @onCheckChange: |
         if self:isChecked() then
           modules.game_healthcircle.setHealthCircle(true)
@@ -27,8 +27,8 @@ UIWidget
   
     OptionCheckBoxMarked
       id: manaCheckBox
-      !text: tr('Mana circle')
-      !tooltip: tr('Show mana blue circle.')
+      !text: tr("otclient_modules.option_healthcircle_otui.tr_11")
+      !tooltip: tr("otclient_modules.option_healthcircle_otui.tr_10")
       @onCheckChange: |
         if self:isChecked() then
           modules.game_healthcircle.setManaCircle(true)
@@ -45,8 +45,8 @@ UIWidget
   
     OptionCheckBoxMarked
       id: experienceCheckBox
-      !text: tr('Experience circle')
-      !tooltip: tr('Show experience yellow circle.')
+      !text: tr("otclient_modules.option_healthcircle_otui.tr_9")
+      !tooltip: tr("otclient_modules.option_healthcircle_otui.tr_8")
       @onCheckChange: |
         if self:isChecked() then
           modules.game_healthcircle.setExpCircle(true)
@@ -63,8 +63,8 @@ UIWidget
   
     OptionCheckBoxMarked
       id: skillCheckBox
-      !text: tr('Skill circle')
-      !tooltip: tr('Show skill purple circle.')
+      !text: tr("otclient_modules.option_healthcircle_otui.tr_7")
+      !tooltip: tr("otclient_modules.option_healthcircle_otui.tr_6")
       @onCheckChange: |
         if self:isChecked() then
           modules.game_healthcircle.setSkillCircle(true)
@@ -80,7 +80,7 @@ UIWidget
     height: 32
   
     Label
-      !text: tr('Skill:')
+      !text: tr("otclient_modules.option_healthcircle_otui.tr_5")
       anchors.left: parent.left
       margin-left: 18
       color: #c0c0c0ff
@@ -96,7 +96,7 @@ UIWidget
       @onTextChange: modules.game_healthcircle.setSkillType(self:getCurrentOption().data)
 
     UIWidget
-      !tooltip: tr('Choose skill to show in skill circle.')
+      !tooltip: tr("otclient_modules.option_healthcircle_otui.tr_4")
       image-source: /images/icons/show_gui_help_grey
       size: 12 12
       anchors.right: parent.right
@@ -113,7 +113,7 @@ UIWidget
     OptionScaleScrollMarked
       id: distFromCenScrollbar
       !text: tr('Distance from center' .. ':')
-      !tooltip: tr('Set distance from center.')
+      !tooltip: tr("otclient_modules.option_healthcircle_otui.tr_3")
       anchors.fill: parent
       &minimumScrollValue: 0
       &maximumScrollValue: 100
@@ -128,7 +128,7 @@ UIWidget
     OptionScaleScrollMarked
       id: opacityScrollbar
       !text: tr('Opacity' .. ':')
-      !tooltip: tr('Set circle opacity.')
+      !tooltip: tr("otclient_modules.option_healthcircle_otui.tr_2")
       anchors.fill: parent
       &minimumScrollValue: 0
       &maximumScrollValue: 100
@@ -141,7 +141,7 @@ UIWidget
     height: 32
   
     Label
-      !text: tr('Bar Style:')
+      !text: tr("otclient_modules.option_healthcircle_otui.tr_1")
       anchors.left: parent.left
       margin-left: 18
       color: #c0c0c0ff

@@ -39,7 +39,7 @@ function parasiteWarzone.onDeath(creature)
 
 	local config = warzoneConfig.findByName("Gnomevil")
 	if config.locked then
-		creature:say("It seems that someone has already destroyed the walls in the last 30 minutes.", TALKTYPE_MONSTER_SAY)
+		creature:sayLocalized("scripts.creaturescripts_parasite.say_1", TALKTYPE_MONSTER_SAY)
 		return false
 	end
 

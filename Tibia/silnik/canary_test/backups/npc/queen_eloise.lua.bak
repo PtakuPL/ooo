@@ -177,8 +177,8 @@ end, function(player)
 end)
 
 -- Greeting
-keywordHandler:addGreetKeyword({ "hail queen" }, { npcHandler = npcHandler, text = "I greet thee, my loyal {subject}." })
-keywordHandler:addGreetKeyword({ "salutations queen" }, { npcHandler = npcHandler, text = "I greet thee, my loyal {subject}." })
+keywordHandler:addGreetKeyword({ "hail queen" }, { npcHandler = npcHandler, text = "I greet thee, my loyal {subject}.", i18nKey = "npc.queen_eloise.greet_1" })
+keywordHandler:addGreetKeyword({ "salutations queen" }, { npcHandler = npcHandler, text = "I greet thee, my loyal {subject}.", i18nKey = "npc.queen_eloise.greet_2" })
 
 keywordHandler:addKeyword({ "uniforms" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.queen_eloise.stdmod_4" })
 

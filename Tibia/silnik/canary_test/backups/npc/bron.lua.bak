@@ -61,7 +61,7 @@ local function greetCallback(npc, creature)
 	return true
 end
 
-keywordHandler:addKeyword({ "gelagos" }, StdModule.say, { npcHandler = npcHandler, text = "This... person... makes me want to... say something bad... must... control myself. <sweats>" })
+keywordHandler:addKeyword({ "gelagos" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.bron.stdmod_1" })
 
 local function creatureSayCallback(npc, creature, type, message)
 	local player = Player(creature)

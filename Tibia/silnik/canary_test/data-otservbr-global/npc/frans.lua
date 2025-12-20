@@ -120,16 +120,16 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), itemsTable)
-		npcHandler:say("Of course, just browse through my wares. You can also look at " .. remainingCategories .. ".", npc, player)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.frans.say_1", { remainingCategories })
 		npc:openShopWindowTable(player, categoryTable)
 	end
 	return true
 end
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_GREET, "Beeee greeeeted, Simula! What is your neeeed?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Bye.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Bye.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.frans.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.frans.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.frans.walkaway_msg_1")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my wares. Or do you want to look only at " .. GetFormattedShopCategoryNames(itemsTable) .. ".")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

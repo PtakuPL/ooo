@@ -1,7 +1,7 @@
 # NPC: ukea
 
 **Plik:** `data-otservbr-global/npc/ukea.lua`
-**Data migracji:** 2025-12-10 14:15
+**Data migracji:** 2025-12-17 01:09
 **Liczba tekstów:** 2
 
 ## Klucze i18n

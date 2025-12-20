@@ -36,7 +36,7 @@ HighScoreData < UIWidget
     anchors.bottom : parent.bottom
     id: rank
     width: 55
-    !text: tr('1')
+    !text: tr("otclient_modules.game_highscore_otui.tr_23")
     text-align: left
     color: #dfdfdfcf
     phantom: false
@@ -49,7 +49,7 @@ HighScoreData < UIWidget
     id: name
     width: 216
 
-    !text: tr('-')
+    !text: tr("otclient_modules.game_highscore_otui.tr_22")
     text-align: left
     color: #dfdfdfcf
     phantom: true
@@ -62,7 +62,7 @@ HighScoreData < UIWidget
     text-align: center
     id: voc
     width: 115
-    !text: tr('-')
+    !text: tr("otclient_modules.game_highscore_otui.tr_21")
     color: #dfdfdfcf
     phantom: true
 
@@ -72,7 +72,7 @@ HighScoreData < UIWidget
     anchors.bottom : parent.bottom
     id: world
     width: 98
-    !text: tr('-')
+    !text: tr("otclient_modules.game_highscore_otui.tr_20")
     text-align: center
     color: #dfdfdfcf
     phantom: true
@@ -83,7 +83,7 @@ HighScoreData < UIWidget
     anchors.bottom : parent.bottom
     id: level
     width: 65
-    !text: tr('-')
+    !text: tr("otclient_modules.game_highscore_otui.tr_19")
     text-align: center
     color: #dfdfdfcf
     phantom: true
@@ -101,7 +101,7 @@ HighScoreData < UIWidget
 
 MainWindow
   id: highscoresWindow
-  !text: tr('Highscores')
+  !text: tr("otclient_modules.game_highscore_otui.tr_18")
   size: 698 590
   text-offset: 0 1
   @onEscape: modules.game_highscore.hide()
@@ -113,7 +113,7 @@ MainWindow
     anchors.right: parent.right
     height: 125
     text-offset: 0 -54
-    !text: tr('Highscores Filter')
+    !text: tr("otclient_modules.game_highscore_otui.tr_17")
     padding-top: 21
     margin-bottom: 21
     image-source: /images/ui/window_new
@@ -125,7 +125,7 @@ MainWindow
       anchors.top: parent.top
       anchors.left: parent.left
       margin-left: 15
-      !text: tr('Game World:')
+      !text: tr("otclient_modules.game_highscore_otui.tr_16")
       text-offset: 0 4
       text-auto-resize: true
       color: #BFBFBF
@@ -143,7 +143,7 @@ MainWindow
       anchors.top: parent.top
       anchors.left: prev.right
       margin-left: 14
-      !text: tr('BattlEye:')
+      !text: tr("otclient_modules.game_highscore_otui.tr_15")
       text-offset: 0 4
       text-auto-resize: true
       color: #BFBFBF
@@ -164,7 +164,7 @@ MainWindow
       anchors.left: parent.left
       margin-left: 15
       margin-top: 25
-      !text: tr('Vocation:')
+      !text: tr("otclient_modules.game_highscore_otui.tr_14")
       text-offset: 0 4
       text-auto-resize: true
       color: #BFBFBF
@@ -184,7 +184,7 @@ MainWindow
       anchors.left: prev.right
       margin-left: 14
       margin-top: 25
-      !text: tr('Category:')
+      !text: tr("otclient_modules.game_highscore_otui.tr_13")
       text-offset: 0 4
       text-auto-resize: true
       color: #BFBFBF
@@ -203,7 +203,7 @@ MainWindow
       anchors.left: parent.left
       margin-left: 15
       margin-top: 55
-      !text: tr('World Type:')
+      !text: tr("otclient_modules.game_highscore_otui.tr_12")
       text-offset: 0 4
       text-auto-resize: true
       color: #BFBFBF
@@ -232,7 +232,7 @@ MainWindow
       width: 70
       margin-right: 12
       margin-bottom: 12
-      !text: tr('Submit')
+      !text: tr("otclient_modules.game_highscore_otui.tr_11")
       @onClick: modules.game_highscore.submit()
 
   Panel
@@ -258,7 +258,7 @@ MainWindow
       anchors.fill: parent
       font: noto-12
       color: #dfdfdf88
-      !text: tr('Rank')
+      !text: tr("otclient_modules.game_highscore_otui.tr_10")
       text-offset: 5 3
 
   PlayersTableHeaderColumn
@@ -270,13 +270,13 @@ MainWindow
       anchors.fill: parent
       font: noto-12
       color: #dfdfdf88
-      !text: tr('Character')
+      !text: tr("otclient_modules.game_highscore_otui.tr_9")
       text-offset: 5 3
 
   PlayersTableHeaderColumn
     anchors.top: data.top
     anchors.left: prev.right
-    !text: tr('Vocation')
+    !text: tr("otclient_modules.game_highscore_otui.tr_8")
     size: 116 20
     font: noto-12
     color: #dfdfdf88
@@ -284,7 +284,7 @@ MainWindow
   PlayersTableHeaderColumn
     anchors.top: data.top
     anchors.left: prev.right
-    !text: tr('Game World')  
+    !text: tr("otclient_modules.game_highscore_otui.tr_7")  
     size: 96 20
     font: noto-12
     color: #dfdfdf88
@@ -292,7 +292,7 @@ MainWindow
   PlayersTableHeaderColumn
     anchors.top: data.top
     anchors.left: prev.right
-    !text: tr('Level')  
+    !text: tr("otclient_modules.game_highscore_otui.tr_6")  
     size: 66 20
     font: noto-12
     color: #dfdfdf88
@@ -310,7 +310,7 @@ MainWindow
       anchors.right: parent.right
       font: noto-12
       color: #dfdfdf88
-      !text: tr('Points')  
+      !text: tr("otclient_modules.game_highscore_otui.tr_5")  
       margin-right: 6
       text-offset: 0 3
 
@@ -318,7 +318,7 @@ MainWindow
     id: page
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.top: data.bottom
-    !text: tr('1 / 50')
+    !text: tr("otclient_modules.game_highscore_otui.tr_4")
     margin-top: 20
     text-offset: 0 -5
     text-align: center
@@ -349,7 +349,7 @@ MainWindow
     id: last_update
     anchors.left: prev.right
     anchors.top: prev.top
-    !text: tr('Last Update: 9999999 Second Ago')
+    !text: tr("otclient_modules.game_highscore_otui.tr_3")
     text-align: center
     text-offset: 10 2
 
@@ -378,7 +378,7 @@ MainWindow
     id: ownRankButton
     anchors.right: prev.left
     anchors.top: prev.top
-    !text: tr('Show Own Rank')
+    !text: tr("otclient_modules.game_highscore_otui.tr_2")
     width: 100
     @onClick: modules.game_highscore.showOwnRank()
 
@@ -393,6 +393,6 @@ MainWindow
   Button
     anchors.right: separator.right
     anchors.top: separator.top
-    !text: tr('Close')
+    !text: tr("otclient_modules.game_highscore_otui.tr_1")
     @onClick: modules.game_highscore.hide()
     margin-top: 10

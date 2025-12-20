@@ -4,7 +4,7 @@ UIWidget
   visible: false
   MiniPanel
     id: InformationBase
-    !text: tr('carnage')
+    !text: tr("otclient_modules.charms1410_otui.tr_13")
     anchors.top: parent.top
     anchors.left: parent.left
     size: 551 122
@@ -14,7 +14,7 @@ UIWidget
 
     Label
       id: TextBase
-      !text: tr('killin a monster has 10% chance to deal physical damage equal to 15& of its maximum health to all monsters in a small rabius')
+      !text: tr("otclient_modules.charms1410_otui.tr_12")
       width: 165
       text-wrap: true
       margin-top: 25
@@ -60,7 +60,7 @@ UIWidget
         anchors.top: parent.top
         anchors.left: parent.left
         anchors.right: parent.right
-        !text: tr('UnLock')
+        !text: tr("otclient_modules.charms1410_otui.tr_11")
         @onClick: modules.game_cyclopedia.Cyclopedia.actionCharmButton(self)
       UIWidget
         id: PriceBaseCharm
@@ -75,7 +75,7 @@ UIWidget
         Label
           id: Value
           anchors.centerIn: parent
-          !text: tr('0')
+          !text: tr("otclient_modules.charms1410_otui.tr_10")
           text-auto-resize: true
         UIWidget
           id: Charm
@@ -89,9 +89,9 @@ UIWidget
         anchors.top: prev.bottom
         anchors.left: parent.left
         anchors.right: parent.right
-        !text: tr('Addon 1')
+        !text: tr("otclient_modules.charms1410_otui.tr_9")
         margin-top:3
-        !text: tr('Clear Charm')
+        !text: tr("otclient_modules.charms1410_otui.tr_8")
 
 
       UIWidget
@@ -107,7 +107,7 @@ UIWidget
         Label
           id: Value
           anchors.centerIn: parent
-          !text: tr('0')
+          !text: tr("otclient_modules.charms1410_otui.tr_7")
           text-auto-resize: true
         UIWidget
           id: Gold
@@ -169,7 +169,7 @@ UIWidget
       QtButton 
         id: CreaturesLabel
         height: 20
-        !text: tr('Select Creature')
+        !text: tr("otclient_modules.charms1410_otui.tr_6")
         anchors.top: parent.top
         anchors.left: parent.left
         anchors.right: parent.right
@@ -197,7 +197,7 @@ UIWidget
     margin-left: 5
 
     QtButton
-      !text: tr('Reset all charms')
+      !text: tr("otclient_modules.charms1410_otui.tr_5")
       anchors.left: parent.left
       anchors.right: parent.right
       anchors.verticalCenter: parent.verticalCenter
@@ -212,7 +212,7 @@ UIWidget
       image-border: 10
       margin-top: 15
       size: 100 20
-      !tooltip: tr("Minor Charm echoes\nEarned by unlocking or upgrading major charm and promotion your character")
+      !tooltip: tr("otclient_modules.charms1410_otui.tr_4")
       UIWidget
         id: Icon
         anchors.right: parent.right
@@ -224,7 +224,7 @@ UIWidget
         anchors.right: Icon.left
         anchors.verticalCenter: parent.verticalCenter
         margin-right: 4
-        !text: tr('0')
+        !text: tr("otclient_modules.charms1410_otui.tr_3")
         text-auto-resize: true
         color: #BDBDBD
 
@@ -244,7 +244,7 @@ UIWidget
       anchors.right: parent.right
       QtButton
         id: MajorCharms
-        !text: tr('Major Charms')
+        !text: tr("otclient_modules.charms1410_otui.tr_2")
         font: noto-12
         anchors.left: parent.left
         anchors.top: parent.top
@@ -264,7 +264,7 @@ UIWidget
           phantom: true
       QtButton
         id: MinorCharms
-        !text: tr('Minor Charms')
+        !text: tr("otclient_modules.charms1410_otui.tr_1")
         font: noto-12
         width: 322
         anchors.top: parent.top

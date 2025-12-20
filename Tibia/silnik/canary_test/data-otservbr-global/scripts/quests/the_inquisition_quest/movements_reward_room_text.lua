@@ -13,7 +13,7 @@ function rewardRoomText.onStepIn(creature, item, position, fromPosition)
 	end
 
 	player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.RewardRoomText, 1)
-	player:say("You can choose exactly one of these chests. Choose wisely!", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.movements_reward_room_text.say_1", TALKTYPE_MONSTER_SAY)
 	return true
 end
 

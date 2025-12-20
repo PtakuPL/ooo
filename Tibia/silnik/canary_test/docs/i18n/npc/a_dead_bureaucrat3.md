@@ -1,12 +1,10 @@
 # NPC: a_dead_bureaucrat3
 
-**Plik:** `data-otservbr-global/npc/a_dead_bureaucrat3.lua`
-**Data migracji:** 2025-12-11 16:25
-**Liczba tekstów:** 2
+**Plik:** 
+**Data migracji:** 2025-12-20 20:23
+**Liczba tekstów:** 0
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.a_dead_bureaucrat3.stdmod_1` | Now where did I put that form? |
-| `npc.a_dead_bureaucrat3.stdmod_2` | Hail Pumin. Yes, hail. |

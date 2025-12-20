@@ -39,7 +39,7 @@ npcType.onSay = function(npc, creature, type, message)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 5 then
-		npcHandler:setMessage(MESSAGE_GREET, "Stand still on the examination platform |PLAYERNAME|.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.doctor_gnomedix.greet_msg_1")
 		player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine, 6)
 	end
 	npcHandler:onSay(npc, creature, type, message)

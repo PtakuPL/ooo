@@ -21,10 +21,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Feeling lost, my child? Ask me for hints or help!" },
-	{ text = "Come to me if you need healing!" },
-	{ text = "Welcome to the temple of Rookgaard!" },
-	{ text = "Don't despair! Help is near!" },
+	{ i18nKey = "npc.cipfried.voice_1" },
+	{ i18nKey = "npc.cipfried.voice_2" },
+	{ i18nKey = "npc.cipfried.voice_3" },
+	{ i18nKey = "npc.cipfried.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -61,7 +61,7 @@ local function greetCallback(npc, creature)
 	local lowHealth = health < 65
 	local poisoned = player:getCondition(CONDITION_POISON)
 	if lowHealth or poisoned then
-		npcHandler:setMessage(MESSAGE_GREET, "Hello, |PLAYERNAME|! You are looking really bad. Let me heal your wounds. It's my job after all.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.cipfried.greet_msg_1")
 		if lowHealth then
 			player:addHealth(65 - health)
 		end
@@ -70,7 +70,7 @@ local function greetCallback(npc, creature)
 		end
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Hello, |PLAYERNAME|! I'll {heal} you if you are injured or poisoned. Feel free to ask me for {help} or general {hints}.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.cipfried.greet_msg_2")
 	end
 	return true
 end
@@ -173,8 +173,8 @@ keywordHandler:addKeyword({ "dallheim" }, StdModule.say, { npcHandler = npcHandl
 keywordHandler:addAliasKeyword({ "zerbrus" })
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Well, bye then.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Farewell, |PLAYERNAME|!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.cipfried.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.cipfried.farewell_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

@@ -20,7 +20,7 @@ function pitsOfInfernoBlackMirror.onUse(player, item, fromPosition, target, toPo
 	if useItem.teleportPlayer then
 		player:teleportTo(Position(32712, 32392, 13))
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:say("Beauty has to be rewarded! Muahahaha!", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.actions_bazir_mirror.say_1", TALKTYPE_MONSTER_SAY)
 	end
 
 	local tapestry = Tile(useItem.fromPosition):getItemById(6433)

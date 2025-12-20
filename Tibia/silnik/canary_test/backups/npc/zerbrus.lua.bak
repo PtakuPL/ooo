@@ -61,7 +61,7 @@ npcType.onCloseChannel = function(npc, creature)
 end
 
 -- Greeting and Farewell
-keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "Greetings, |PLAYERNAME|! You're looking really bad. Let me heal your wounds." }, function(player)
+keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "Greetings, |PLAYERNAME|! You're looking really bad. Let me heal your wounds.", i18nKey = "npc.zerbrus.greet_1" }, function(player)
 	return player:getHealth() < 65 or player:getCondition(CONDITION_POISON) ~= nil
 end, function(player)
 	local health = player:getHealth()
@@ -73,12 +73,12 @@ end, function(player)
 end)
 keywordHandler:addAliasKeyword({ "hello" })
 
-keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "<nods> At your service, |PLAYERNAME|, protecting the {village} from {monsters}." }, function(player)
+keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "<nods> At your service, |PLAYERNAME|, protecting the {village} from {monsters}.", i18nKey = "npc.zerbrus.greet_2" }, function(player)
 	return player:getSex() == PLAYERSEX_FEMALE
 end)
 keywordHandler:addAliasKeyword({ "hello" })
 
-keywordHandler:addFarewellKeyword({ "bye" }, { npcHandler = npcHandler, text = "Bye, |PLAYERNAME|." })
+keywordHandler:addFarewellKeyword({ "bye" }, { npcHandler = npcHandler, text = "Bye, |PLAYERNAME|.", i18nKey = "npc.zerbrus.farewell_1" })
 keywordHandler:addAliasKeyword({ "farewell" })
 
 local function addMonsterKeyword(level, text, marks)

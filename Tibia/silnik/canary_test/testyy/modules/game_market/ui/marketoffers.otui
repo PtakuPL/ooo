@@ -47,7 +47,7 @@ Panel
 
   Label
     id: nameLabel
-    !text: tr('No item selected.')
+    !text: tr("otclient_modules.marketoffers_otui.tr_9")
     font: noto-12
     text-offset: 0 2
     anchors.top: prev.top
@@ -57,7 +57,7 @@ Panel
 
   Label
     id: createLabel
-    !text: tr('Create New Offer')
+    !text: tr("otclient_modules.marketoffers_otui.tr_8")
     font: noto-12
     text-offset: 0 2
     anchors.top: rightTabBar.top
@@ -67,7 +67,7 @@ Panel
 
   Label
     id: offerTypeLabel
-    !text: tr('Offer Type') .. ':'
+    !text: tr("otclient_modules.marketoffers_otui.tr_7") .. ':'
     font: noto-12
     text-offset: 0 2
     anchors.top: prev.bottom
@@ -76,7 +76,7 @@ Panel
 
   MarketComboBox
     id: offerTypeComboBox
-    !text: tr('Please Select')
+    !text: tr("otclient_modules.marketoffers_otui.tr_6")
     anchors.top: prev.bottom
     anchors.left: createLabel.left
     margin-top: 3
@@ -87,7 +87,7 @@ Panel
 
   Label
     id: totalPriceLabel
-    !text: tr('Total Price') .. ':'
+    !text: tr("otclient_modules.marketoffers_otui.tr_5") .. ':'
     font: noto-12
     text-offset: 0 2
     anchors.top: offerTypeLabel.top
@@ -109,7 +109,7 @@ Panel
 
   Label
     id: piecePriceLabel
-    !text: tr('Piece Price') .. ':'
+    !text: tr("otclient_modules.marketoffers_otui.tr_4") .. ':'
     font: noto-12
     text-offset: 0 2
     anchors.top: offerTypeLabel.top
@@ -131,7 +131,7 @@ Panel
 
   Label
     id: amountLabel
-    !text: tr('Amount') .. ':'
+    !text: tr("otclient_modules.marketoffers_otui.tr_3") .. ':'
     font: noto-12
     text-offset: 0 2
     anchors.top: offerTypeLabel.top
@@ -164,7 +164,7 @@ Panel
 
   Button
     id: createOfferButton
-    !text: tr('Create Offer')
+    !text: tr("otclient_modules.marketoffers_otui.tr_2")
     anchors.verticalCenter: prev.verticalCenter
     anchors.left: prev.right
     margin-left: 7
@@ -172,7 +172,7 @@ Panel
 
   CheckBox
     id: anonymousCheckBox
-    !text: tr('Anonymous')
+    !text: tr("otclient_modules.marketoffers_otui.tr_1")
     anchors.left: prev.left
     anchors.bottom: prev.top
     margin-bottom: 6

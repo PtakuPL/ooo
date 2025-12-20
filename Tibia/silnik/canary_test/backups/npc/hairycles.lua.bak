@@ -462,15 +462,15 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-keywordHandler:addKeyword({ "busy" }, StdModule.say, { npcHandler = npcHandler, text = "Me great {wizard}. Me great doctor of {ape people}. Me know many plants. Me old and me have seen many things." })
-keywordHandler:addKeyword({ "wizard" }, StdModule.say, { npcHandler = npcHandler, text = "We see many things and learning quick. Merlkin magic learn quick, quick. We just watch and learn. Sometimes we try and learn." })
-keywordHandler:addKeyword({ "things" }, StdModule.say, { npcHandler = npcHandler, text = "Things not good now. Need helper to do {mission} for me people." })
-keywordHandler:addKeyword({ "ape people" }, StdModule.say, { npcHandler = npcHandler, text = "We be {kongra}, {sibang} and {merlkin}. Strange hairless ape people live in city called Port Hope." })
-keywordHandler:addKeyword({ "kongra" }, StdModule.say, { npcHandler = npcHandler, text = "Kongra verry strong. Kongra verry angry verry fast. Take care when kongra comes. Better climb on highest tree." })
-keywordHandler:addKeyword({ "sibang" }, StdModule.say, { npcHandler = npcHandler, text = "Sibang verry fast and funny. Sibang good gather food. Sibang know {jungle} well." })
-keywordHandler:addKeyword({ "merlkin" }, StdModule.say, { npcHandler = npcHandler, text = "Merlkin we are. Merlkin verry wise, merlkin learn many things quick. Teach other apes things a lot. Making {heal} and making {magic}." })
-keywordHandler:addKeyword({ "magic" }, StdModule.say, { npcHandler = npcHandler, text = "We see many things and learning quick. Merlkin magic learn quick, quick. We just watch and learn. Sometimes we try and learn." })
-keywordHandler:addKeyword({ "jungle" }, StdModule.say, { npcHandler = npcHandler, text = "Jungle is dangerous. Jungle also provides us food. Take care when in jungle and safe you be." })
+keywordHandler:addKeyword({ "busy" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.hairycles.stdmod_1" })
+keywordHandler:addKeyword({ "wizard" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.hairycles.stdmod_2" })
+keywordHandler:addKeyword({ "things" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.hairycles.stdmod_3" })
+keywordHandler:addKeyword({ "ape people" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.hairycles.stdmod_4" })
+keywordHandler:addKeyword({ "kongra" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.hairycles.stdmod_5" })
+keywordHandler:addKeyword({ "sibang" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.hairycles.stdmod_6" })
+keywordHandler:addKeyword({ "merlkin" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.hairycles.stdmod_7" })
+keywordHandler:addKeyword({ "magic" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.hairycles.stdmod_8" })
+keywordHandler:addKeyword({ "jungle" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.hairycles.stdmod_9" })
 
 local function onTradeRequest(npc, creature)
 	if Player(creature):getStorageValue(Storage.Quest.U7_6.TheApeCity.Questline) < 18 then
@@ -497,7 +497,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

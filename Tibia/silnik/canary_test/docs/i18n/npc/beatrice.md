@@ -1,11 +1,10 @@
 # NPC: beatrice
 
 **Plik:** `data-otservbr-global/npc/beatrice.lua`
-**Data migracji:** 2025-12-11 16:25
-**Liczba tekstów:** 1
+**Data migracji:** 2025-12-17 05:28
+**Liczba tekstów:** 0
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.beatrice.stdmod_1` | Selling general goods and paperware! Come to my shop! |

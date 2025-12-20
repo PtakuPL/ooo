@@ -27,15 +27,14 @@ npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
 	{
-		text = "You can't take it all with you - sell your Dawnport things before \z
-		you receive the gear of your definite vocation!",
+		i18nKey = "npc.oressa.voice_1",
 	},
-	{ text = "Leave all Dawnport things behind you and choose your destiny!" },
-	{ text = "Come to me if you need healing!" },
-	{ text = "Choose your vocation and explore the mainland!" },
-	{ text = "Talk to me to choose your definite vocation! Become a knight, paladin, druid or sorcerer!" },
-	{ text = "World needs brave adventurers like you. Choose your vocation and sail to the mainland!" },
-	{ text = "Poisoned? Bleeding? Wounded? I can help!" },
+	{ i18nKey = "npc.oressa.voice_2" },
+	{ i18nKey = "npc.oressa.voice_3" },
+	{ i18nKey = "npc.oressa.voice_4" },
+	{ i18nKey = "npc.oressa.voice_5" },
+	{ i18nKey = "npc.oressa.voice_6" },
+	{ i18nKey = "npc.oressa.voice_7" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -68,20 +67,19 @@ end
 -- Basic keywords
 keywordHandler:addKeyword({ "name" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I am Oressa Fourwinds, the {healer}. ",
+	i18nKey = "npc.oressa.stdmod_1",
 })
 keywordHandler:addKeyword({ "healer" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "If you are hurt my child, I will {heal} your wounds.",
+	i18nKey = "npc.oressa.stdmod_2",
 })
 keywordHandler:addKeyword({ "job" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I can {heal} you if you are hurt. I can also help you choose your {vocation}. ",
+	i18nKey = "npc.oressa.stdmod_3",
 })
 keywordHandler:addKeyword({ "doors" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Behind each of those doors, the equipment and skills of one vocation lies - \z
-		sorcerer, paladin, knight or druid. ...",
+	i18nKey = "npc.oressa.stdmod_4",
 	"When you have reached level 8, you can choose your definite vocation. You have to talk to me to receive it, \z
 		and then you may open one of the doors, take up your vocation's gear, and leave the island. But be aware: ...",
 	"Once you have chosen your vocation and stepped through a door, you cannot go back or choose a different vocation. \z
@@ -89,24 +87,23 @@ keywordHandler:addKeyword({ "doors" }, StdModule.say, {
 })
 keywordHandler:addKeyword({ "inigo" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "He has seen much, and likes to help the younger ones. If you have questions about what to do, \z
-			or whom to ask for anything, go to Inigo.",
+	i18nKey = "npc.oressa.stdmod_5",
 })
 keywordHandler:addKeyword({ "richard" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Found a new way of living and took to it like a fish to water.",
+	i18nKey = "npc.oressa.stdmod_6",
 })
 keywordHandler:addKeyword({ "coltrayne" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Ah. Some wounds never heal. <sighs> Shipwrecked in body and mind. Nowhere to go, so he doesn't leave.",
+	i18nKey = "npc.oressa.stdmod_7",
 })
 keywordHandler:addKeyword({ "morris" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "He broods over problems he won't share. But maybe you can help him with a little quest or two.",
+	i18nKey = "npc.oressa.stdmod_8",
 })
 keywordHandler:addKeyword({ "hamish" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "He lives only for his experiments and potions",
+	i18nKey = "npc.oressa.stdmod_9",
 })
 keywordHandler:addKeyword({ "dawnport" }, StdModule.say, {
 	npcHandler = npcHandler,
@@ -118,7 +115,7 @@ keywordHandler:addKeyword({ "dawnport" }, StdModule.say, {
 })
 keywordHandler:addKeyword({ "rookgaard" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I have heard of it, yes.",
+	i18nKey = "npc.oressa.stdmod_10",
 })
 
 --From topic of vocation to topic of the "yes" message (choosing vocation)
@@ -216,27 +213,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 3)
 		-- knight
 	elseif MsgContains(message, "close") and npcHandler:getTopic(playerId) == 2 then
-		npcHandler:say({
-			"Then you should choose the {vocation} of a knight and become a valiant fighter with sword and shield. ...",
-			"Knights are the toughest of all vocations. They can take more damage and carry more items than the other \z
-					vocations, but they will deal less damage than paladins, druids or sorcerers. ...",
-			"Knights can wield one- or two-handed swords, axes and clubs, and they can cast a few spells to draw a \z
-					monster's attention to them. ...",
-			"So tell me: DO YOU WISH TO BECOME A VALIANT KNIGHT? Answer with a proud {YES} if that is your choice!",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_1", "npc.oressa.say_2", "npc.oressa.say_3", "npc.oressa.say_4"}, 10)
 		npcHandler:setTopic(playerId, 5)
 		-- Paladin
 	elseif MsgContains(message, "bow") or MsgContains(message, "spear") and npcHandler:getTopic(playerId) == 3 then
-		npcHandler:say({
-			"Then you should join the ranks of the paladins, noble hunters and rangers of the wild, who rely on the \z
-					swiftness of movement and ranged attacks. ...",
-			"Paladins are jacks of all trades. They are tougher than the magically gifted and can carry more items \z
-					than druids or sorcerers, but they can take not as much damage as a knight can. ...",
-			"Paladins deal more damage than knights but less than druids or sorcerers, and have the longest range \z
-					in their distance attacks. ...",
-			"They can also use holy magic to slay the unholy and undead in particular. ...",
-			"DO YOU WISH TO BECOME A DARING PALADIN? Answer with a proud {YES} if that is your choice!",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_5", "npc.oressa.say_6", "npc.oressa.say_7", "npc.oressa.say_8", "npc.oressa.say_9"}, 10)
 		npcHandler:setTopic(playerId, 6)
 		-- Mage
 	elseif MsgContains(message, "magic") and npcHandler:getTopic(playerId) == 3 then
@@ -249,25 +230,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 4)
 		-- Druid
 	elseif MsgContains(message, "heal") and npcHandler:getTopic(playerId) == 4 then
-		npcHandler:say({
-			"Then you should learn the ways of the druids, healers and powerful masters of natural magic. ...",
-			"Druids can heal their friends and allies, but they can also cast powerful ice and earth magic \z
-					to kill their enemies. They can do a little energy, fire or death damage as well. ...",
-			"Druids cannot take much damage or carry many items, but they deal \z
-					much more damage than paladins or knights. ...",
-			"So tell me: DO YOU WISH TO BECOME A SAGACIOUS DRUID? Answer with a proud {YES} if that is your choice!",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_10", "npc.oressa.say_11", "npc.oressa.say_12", "npc.oressa.say_13"}, 10)
 		npcHandler:setTopic(playerId, 7)
 		-- Sorcerer
 	elseif MsgContains(message, "death") and npcHandler:getTopic(playerId) == 4 then
-		npcHandler:say({
-			"Then you should become a sorcerer, a mighty wielder of deathly energies and arcane fire. ...",
-			"Sorcerers are powerful casters of magic. They use fire, energy and death magic to lay low their enemies. \z
-					They can do a little ice or earth damage as well. ...",
-			"Sorcerers cannot take much damage or carry many items, \z
-					but they deal much more damage than paladins or knights. ...",
-			"So tell me: DO YOU WISH TO BECOME A POWERFUL SORCERER? Answer with a proud {YES} if that is your choice!",
-		}, npc, creature, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_14", "npc.oressa.say_15", "npc.oressa.say_16", "npc.oressa.say_17"}, 10)
 		npcHandler:setTopic(playerId, 8)
 		-- Choosing dialog start
 	elseif MsgContains(message, "decided") and npcHandler:getTopic(playerId) == 0 then
@@ -366,12 +333,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 			-- Remove Mainland smuggling items
 			removeMainlandSmugglingItems(player)
-			npcHandler:say({
-				"SO BE IT. CAST OFF YOUR TRAINING GEAR AND RISE, NOBLE " .. player:getVocation():getName():upper() .. "! ...",
-				"Go through the second door from the right. Open the chest and take the equipment inside \z
-						before you leave to the north. ...",
-				"Take the ship to reach the Mainland. Farewell, friend and good luck in all you undertake!",
-			}, npc, creature, 10)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_18", "npc.oressa.say_19", "npc.oressa.say_20", "npc.oressa.say_21"}, 10)
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
 			local vocationMessage = {
@@ -380,9 +342,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				[7] = "{knight}, {paladin} or {sorcerer}",
 				[8] = "{knight}, {paladin} or {druid}",
 			}
-			npcHandler:say({
-				"As you wish. If you wish to learn something about the " .. vocationMessage[npcHandler:getTopic(playerId)] .. " vocation, tell me.",
-			}, npc, creature, 10)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_22", "npc.oressa.say_23"}, 10)
 			npcHandler:setTopic(playerId, 0)
 		end
 	end
@@ -394,24 +354,16 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getLevel() >= 8 then
-		npcHandler:setMessage(
-			MESSAGE_GREET,
-			"Welcome, young adventurer. Tell me if you need help in \z
-												{choosing} your {vocation}, or if you have {decided} on the {vocation} you want to choose."
-		)
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.oressa.greet_msg_1")
 	else
-		npcHandler:setMessage(
-			MESSAGE_GREET,
-			"Welcome to the temple of Dawnport, child. \z
-												If you need {healing}, I can help you. Ask me about a {vocation} if you need counsel."
-		)
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.oressa.greet_msg_2")
 	end
 	return true
 end
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye, child.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.oressa.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

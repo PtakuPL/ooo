@@ -52,8 +52,8 @@ end
 
 keywordHandler:addKeyword({ "food" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.imalas.stdmod_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|! What do you need? If it's {food}, you've come to the right place.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Yep, take a good look.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.imalas.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.imalas.sendtrade_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {

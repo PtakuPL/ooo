@@ -75,7 +75,7 @@ PhantomMiniWindow
     UIButton
       id: purseButton
       image-source: /images/inventory/purse
-      !tooltip: tr('Open purse')
+      !tooltip: tr("otclient_modules.inventory_otui.tr_7")
       anchors.left: backpack.left
       anchors.bottom: backpack.top   
       size: 34 12
@@ -232,7 +232,7 @@ PhantomMiniWindow
 
     TopToggleButton
       id: stop
-      !text: tr('Stop')
+      !text: tr("otclient_modules.inventory_otui.tr_6")
       anchors.left: defense.left
       anchors.right: standPosture.right
       anchors.bottom: parent.bottom
@@ -336,7 +336,7 @@ PhantomMiniWindow
       margin-top: 3
 
       Label
-        !text: tr('Soul')
+        !text: tr("otclient_modules.inventory_otui.tr_5")
         text.align: center
         font: noto-12
         anchors.horizontalCenter: parent.horizontalCenter
@@ -362,7 +362,7 @@ PhantomMiniWindow
       margin-top: 3
 
       Label
-        !text: tr('Cap')
+        !text: tr("otclient_modules.inventory_otui.tr_4")
         text.align: center
         font: noto-12
         anchors.horizontalCenter: parent.horizontalCenter
@@ -406,7 +406,7 @@ PhantomMiniWindow
       size: 30 44
 
       Label
-        !text: tr('Cap')
+        !text: tr("otclient_modules.inventory_otui.tr_3")
         text.align: center
         font: noto-12
         anchors.horizontalCenter: parent.horizontalCenter
@@ -426,7 +426,7 @@ PhantomMiniWindow
         color: #c0c0c0ff
 
       Label
-        !text: tr('Soul')
+        !text: tr("otclient_modules.inventory_otui.tr_2")
         text.align: center
         font: noto-12
         anchors.horizontalCenter: parent.horizontalCenter
@@ -574,7 +574,7 @@ PhantomMiniWindow
 
     TopToggleButton
       id: stop
-      !text: tr('Stop')
+      !text: tr("otclient_modules.inventory_otui.tr_1")
       anchors.right: parent.right
       margin-right: 7
       anchors.bottom: icons.bottom

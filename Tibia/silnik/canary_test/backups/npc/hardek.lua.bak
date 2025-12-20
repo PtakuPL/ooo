@@ -56,7 +56,7 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, text = "I am buying some weapons and armors." })
+keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.hardek.stdmod_1" })
 
 npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|! Do you need my services?")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye. Visit me whenever you want to sell something.")
@@ -149,7 +149,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

@@ -188,13 +188,13 @@ function controller:onInit()
         g_settings.setDefault(k, obj.value)
     end
 
-    extraWidgets.audioButton = modules.client_topmenu.addTopRightToggleButton('audioButton', tr('Audio'),
+    extraWidgets.audioButton = modules.client_topmenu.addTopRightToggleButton('audioButton', tr("otclient_modules.options.tr_4"),
         '/images/topbuttons/button_mute_up', function() toggleOption('enableAudio') end)
 
-    extraWidgets.optionsButton = modules.client_topmenu.addTopRightToggleButton('optionsButton', tr('Options'),
+    extraWidgets.optionsButton = modules.client_topmenu.addTopRightToggleButton('optionsButton', tr("otclient_modules.options.tr_3"),
         '/images/topbuttons/button_options', toggle)
 
-    extraWidgets.logoutButton = modules.client_topmenu.addTopRightToggleButton('logoutButton', tr('Exit'),
+    extraWidgets.logoutButton = modules.client_topmenu.addTopRightToggleButton('logoutButton', tr("otclient_modules.options.tr_2"),
         '/images/topbuttons/logout', toggle)
 
     panels.generalPanel = g_ui.loadUI('styles/controls/general', controller.ui.optionsTabContent)
@@ -314,7 +314,7 @@ function setupOptionsMainButton()
         return
     end
 
-    extraWidgets.optionsButtons = modules.game_mainpanel.addSpecialToggleButton('optionsMainButton', tr('Options'),
+    extraWidgets.optionsButtons = modules.game_mainpanel.addSpecialToggleButton('optionsMainButton', tr("otclient_modules.options.tr_1"),
         '/images/options/button_options', toggle, true)
 end
 

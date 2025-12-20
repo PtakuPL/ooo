@@ -7,7 +7,7 @@ function flowerBowl.onStepIn(creature, item, position, fromPosition)
 
 	if item.uid == 1066 then
 		if creature:getName() == "Unbeatable Dragon" then
-			creature:say("An allergic reaction weakens the dragon!", TALKTYPE_MONSTER_SAY)
+			creature:sayLocalized("scripts.movements_flower_bowl.say_1", TALKTYPE_MONSTER_SAY)
 			creature:remove()
 			Game.createMonster("Somewhat Beatable", position, true, true)
 		end

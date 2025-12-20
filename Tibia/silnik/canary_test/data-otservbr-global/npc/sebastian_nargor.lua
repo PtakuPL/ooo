@@ -65,9 +65,9 @@ keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandle
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.sebastian_nargor.stdmod_4" })
 keywordHandler:addKeyword({ "captain" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.sebastian_nargor.stdmod_5" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, daring adventurer. If you need a {passage}, let me know.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Oh well.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.sebastian_nargor.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.sebastian_nargor.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.sebastian_nargor.walkaway_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

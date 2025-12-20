@@ -4,7 +4,7 @@ Slot < Button
   anchors.verticalCenter: parent.verticalCenter
   enabled: false
   text-wrap: true
-  !tooltip: tr('Items can have up to three imbuements slots. This slot is not available for this item.')
+  !tooltip: tr("otclient_modules.imbuing_otui.tr_16")
 
 RequiredItem < Panel
   width: 66
@@ -36,7 +36,7 @@ ItemInformation < Panel
     anchors.left: parent.left
     anchors.right: parent.right
     text-align: center
-    !text: tr("Item Information")
+    !text: tr("otclient_modules.imbuing_otui.tr_15")
 
   UIItem
     id: item
@@ -59,20 +59,20 @@ ItemInformation < Panel
 
     Slot
       id: slot0
-      !text: tr("Slot 1")
+      !text: tr("otclient_modules.imbuing_otui.tr_14")
       text-align: center
       anchors.left: parent.left
 
     Slot
       id: slot1
-      !text: tr("Slot 2")
+      !text: tr("otclient_modules.imbuing_otui.tr_13")
       text-align: center
       margin-left: 10
       anchors.left: prev.right
 
     Slot
       id: slot2
-      !text: tr("Slot 3")
+      !text: tr("otclient_modules.imbuing_otui.tr_12")
       text-align: center
       margin-left: 10
       anchors.left: prev.right
@@ -82,7 +82,7 @@ ItemInformation < Panel
     margin-right: 15
     anchors.right: slots.left
     anchors.VerticalCenter: parent.VerticalCenter
-    !text: tr("Select Slot:")
+    !text: tr("otclient_modules.imbuing_otui.tr_11")
 
 EmptyImbue < Panel
   height: 240
@@ -95,7 +95,7 @@ EmptyImbue < Panel
     anchors.left: parent.left
     anchors.right: parent.right
     text-align: center
-    !text: tr("Imbue Empty Slot")
+    !text: tr("otclient_modules.imbuing_otui.tr_10")
 
   ComboBox
     id: groups
@@ -125,7 +125,7 @@ EmptyImbue < Panel
     id: info
     anchors.bottom: prev.bottom
     anchors.left: parent.left
-    !text: tr('Requires the following astral sources:')
+    !text: tr("otclient_modules.imbuing_otui.tr_9")
 
   Label
     id: successRate
@@ -139,7 +139,7 @@ EmptyImbue < Panel
     anchors.top: info.top
     anchors.right: successRate.left
     margin-right: 15
-    !text: tr('Success Rate:')
+    !text: tr("otclient_modules.imbuing_otui.tr_8")
 
   Panel
     id: requiredItems
@@ -202,7 +202,7 @@ EmptyImbue < Panel
     image-source: /images/game/imbuing/imbue_empty
     image-clip: 0 0 128 66
     margin-left: 15
-    !tooltip: tr("Click here to carry out the selected imbuement. This will consume the required astral sources and gold.")
+    !tooltip: tr("otclient_modules.imbuing_otui.tr_7")
 
     $pressed:
       image-clip: 0 66 128 66
@@ -226,7 +226,7 @@ ClearImbue < Panel
     anchors.left: parent.left
     anchors.right: parent.right
     text-align: center
-    !text: tr("Clear Imbuement")
+    !text: tr("otclient_modules.imbuing_otui.tr_6")
 
   ComboBox
     id: groups
@@ -257,13 +257,13 @@ ClearImbue < Panel
     id: info
     anchors.bottom: prev.bottom
     anchors.left: parent.left
-    !text: tr('Time remaining:')
+    !text: tr("otclient_modules.imbuing_otui.tr_5")
 
   Label
     id: clearImbuementTitle
     anchors.top: info.top
     anchors.right: parent.right
-    !text: tr('Clear imbuement:')
+    !text: tr("otclient_modules.imbuing_otui.tr_4")
 
   Panel
     id: time
@@ -290,7 +290,7 @@ ClearImbue < Panel
     image-source: /images/game/imbuing/clear
     image-clip: 0 0 128 66
     margin-left: 15
-    !tooltip: tr("Your needs have changed? Click here to clear the imbuement from your item for a fee.")
+    !tooltip: tr("otclient_modules.imbuing_otui.tr_3")
 
     $pressed:
       image-clip: 0 66 128 66
@@ -306,7 +306,7 @@ ClearImbue < Panel
 
 MainWindow
   id: imbuingWindow
-  !text: tr('Imbue Item')
+  !text: tr("otclient_modules.imbuing_otui.tr_2")
   size: 550 430
   background-color: #AAAAAA
   @onEscape: modules.game_imbuing.hide()
@@ -332,7 +332,7 @@ MainWindow
 
   Button
     id: close
-    !text: tr('Close')
+    !text: tr("otclient_modules.imbuing_otui.tr_1")
     width: 50
     anchors.right: parent.right
     anchors.bottom: parent.bottom

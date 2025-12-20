@@ -225,10 +225,10 @@ local function creatureSayCallback(npc, creature, type, message)
 					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_5")
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("I'm sorry but it seems you don't have enough " .. ItemType(npc:getCurrency()):getPluralName():lower() .. " ..? yet. Bring me " .. products[answerType[playerId]][answerLevel[playerId]].value .. " of them and we'll make a trade.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_1", { ItemType(npc:getCurrency()):getPluralName():lower(), products[answerType[playerId]][answerLevel[playerId]].value })
 				end
 			else
-				npcHandler:say("You don't have enough capacity. You must have " .. neededCap .. " oz.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_2", { neededCap })
 			end
 		elseif MsgContains(message, "no") then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.yana.say_7")

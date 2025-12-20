@@ -480,7 +480,7 @@ local ferumbrasAscendantHabitatRoshamuul = Action()
 function ferumbrasAscendantHabitatRoshamuul.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if item.itemid == 9125 then
 		if player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Habitats.Roshamuul) >= 1 then
-			player:say("The lever are stuck, need some time to it can be movable again.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_habitat_roshamuul.say_1", TALKTYPE_MONSTER_SAY)
 			return true
 		end
 		Game.createMonster("lovely deer", Position(33619, 32666, 12), true, true)

@@ -954,7 +954,7 @@ end
 local spell = Spell("instant")
 
 function spell.onCastSpell(creature, var)
-	creature:say("THE GROUND BEGINS TO HEAT UP RAPIDLY!", TALKTYPE_MONSTER_YELL)
+	creature:sayLocalized("scripts.mazoran_fire.say_1", TALKTYPE_MONSTER_YELL)
 	addEvent(lavaGrounds, 3 * 1000, creature:getId())
 	return
 end

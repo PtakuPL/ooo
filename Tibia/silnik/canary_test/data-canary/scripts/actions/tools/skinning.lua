@@ -380,7 +380,7 @@ function skinning.onUse(player, item, fromPosition, target, toPosition, isHotkey
 		end
 		if not added and target.itemid == 10426 then
 			effect = CONST_ME_HITAREA
-			player:say("Your attempt at shaping that marble rock failed miserably.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.skinning.say_11", TALKTYPE_MONSTER_SAY)
 			transform = false
 			target:remove()
 		end
@@ -393,7 +393,7 @@ function skinning.onUse(player, item, fromPosition, target, toPosition, isHotkey
 		end
 	else
 		if table.contains({ 7441, 7442, 7444, 7445 }, target.itemid) then
-			player:say("The attempt of sculpting failed miserably.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.skinning.say_10", TALKTYPE_MONSTER_SAY)
 			effect = CONST_ME_HITAREA
 			target:remove()
 		else

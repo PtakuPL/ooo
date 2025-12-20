@@ -56,10 +56,10 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Be mourned pilgrim in flesh. Talking of flesh, maybe you'd enjoy some {food}?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "May enlightenment be your path.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "May enlightenment be your path.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Sure, take a look at my offers.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jezzara.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.jezzara.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.jezzara.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.jezzara.sendtrade_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {

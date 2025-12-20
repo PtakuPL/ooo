@@ -192,7 +192,7 @@ Panel
 
   TabButton
     id: extendedViewDraggable
-    !tooltip: tr('Enable/ Disable draggable chat')
+    !tooltip: tr("otclient_modules.console_otui.tr_18")
     image-source: /images/ui/console_buttons
     image-clip: 0 64 16 16
     anchors.right: extendedViewHide.left
@@ -215,7 +215,7 @@ Panel
 
   TabButton
     id: extendedViewHide
-    !tooltip: tr('Hide Chat')
+    !tooltip: tr("otclient_modules.console_otui.tr_17")
     image-source: /images/ui/console_buttons
     image-clip: 0 80 16 16
     anchors.right: closeChannelButton.left
@@ -237,7 +237,7 @@ Panel
 
   TabButton
     id: closeChannelButton
-    !tooltip: tr('Close this channel') .. ' (Ctrl+E)'
+    !tooltip: tr("otclient_modules.console_otui.tr_16") .. ' (Ctrl+E)'
     image-source: /images/ui/console_buttons
     image-clip: 0 48 16 16
     anchors.right: channelsButton.left
@@ -255,7 +255,7 @@ Panel
 
   TabButton
     id: channelsButton
-    !tooltip: tr('Open new channel') .. ' (Ctrl+O)'
+    !tooltip: tr("otclient_modules.console_otui.tr_15") .. ' (Ctrl+O)'
     image-source: /images/ui/console_buttons
     image-clip: 0 0 16 16
     anchors.right: ignoreButton.left
@@ -273,7 +273,7 @@ Panel
 
   TabButton
     id: ignoreButton
-    !tooltip: tr('Ignore players')
+    !tooltip: tr("otclient_modules.console_otui.tr_14")
     image-source: /images/ui/console_buttons
     image-clip: 0 32 16 16
     anchors.right: readOnlyButton.left
@@ -320,7 +320,7 @@ Panel
     size: 18 18
     image-source: /images/ui/console_say
     image-clip: 0 0 18 18
-    !tooltip: tr('Set talk type')
+    !tooltip: tr("otclient_modules.console_otui.tr_13")
     &sayMode: 2
     @onClick: sayModeChange()
 
@@ -351,14 +351,14 @@ Panel
     size: 64 18
     color: #c0c0c0ff
     font: noto-12
-    !text: tr('Chat Off')
+    !text: tr("otclient_modules.console_otui.tr_12")
     &isChecked: false
     @onClick: |
       if self.isChecked then
         self.isChecked = false
-        self:setText(tr('Chat On'))
+        self:setText(tr("otclient_modules.console_otui.tr_11"))
       else
         self.isChecked = true
-        self:setText(tr('Chat Off'))
+        self:setText(tr("otclient_modules.console_otui.tr_10"))
       end
       updateChatMode()

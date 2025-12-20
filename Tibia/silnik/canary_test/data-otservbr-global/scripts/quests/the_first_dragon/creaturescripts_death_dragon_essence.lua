@@ -9,7 +9,7 @@ function deathDragonEssence.onDeath(creature, corpse, lasthitkiller, mostdamagek
 		end
 	end
 	Game.createMonster("The First Dragon", Position(33617, 31023, 14), true, true)
-	creature:say("BEWARE! THE FIRST DRAGON APROACHES!", TALKTYPE_MONSTER_SAY, false, nil, Position(33617, 31023, 14))
+	creature:sayLocalized("scripts.creaturescripts_death_dragon_essence.say_1", TALKTYPE_MONSTER_SAY, false, nil, Position(33617, 31023, 14))
 	return true
 end
 

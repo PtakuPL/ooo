@@ -10,7 +10,7 @@ HotkeyListLabel < UILabel
 
 MainWindow
   id: hotkeysWindow
-  !text: tr('Hotkeys')
+  !text: tr("otclient_modules.hotkeys_manager_otui.tr_20")
   size: 340 470
 
   @onEnter: modules.game_hotkeys.ok()
@@ -18,7 +18,7 @@ MainWindow
 
   Label
     id: currentHotkeysLabel
-    !text: tr('Current hotkeys') .. ':'
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_19") .. ':'
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: parent.top
@@ -43,7 +43,7 @@ MainWindow
   Button
     id: resetButton
     width: 96
-    !text: tr('Reset All')
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_18")
     anchors.left: parent.left
     anchors.top: next.top
     @onClick: modules.game_hotkeys.reset()
@@ -51,7 +51,7 @@ MainWindow
 
   Button
     id: addHotkeyButton
-    !text: tr('Add')
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_17")
     width: 64
     anchors.right: next.left
     anchors.top: next.top
@@ -60,7 +60,7 @@ MainWindow
 
   Button
     id: removeHotkeyButton
-    !text: tr('Remove')
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_16")
     width: 64
     enabled: false
     anchors.right: parent.right
@@ -70,7 +70,7 @@ MainWindow
 
   Label
     id: hotKeyActionLabel
-    !text: tr('Hotkey Action') .. ':'
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_15") .. ':'
     enable: false
     anchors.left: parent.left
     anchors.right: parent.right
@@ -88,7 +88,7 @@ MainWindow
 
   Label
     id: hotKeyTextLabel
-    !text: tr('Edit hotkey text') .. ':'
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_14") .. ':'
     enable: false
     anchors.left: parent.left
     anchors.right: parent.right
@@ -106,7 +106,7 @@ MainWindow
 
   CheckBox
     id: sendAutomatically
-    !text: tr('Send automatically')
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_13")
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
@@ -123,7 +123,7 @@ MainWindow
 
   Button
     id: selectObjectButton
-    !text: tr('Select object')
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_12")
     width: 128
     enabled: false
     anchors.left: prev.right
@@ -133,7 +133,7 @@ MainWindow
 
   Button
     id: clearObjectButton
-    !text: tr('Clear object')
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_11")
     width: 128
     enabled: false
     anchors.left: prev.left
@@ -144,7 +144,7 @@ MainWindow
 
   ButtonBox
     id: useOnSelf
-    !text: tr('Use on yourself')
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_10")
     width: 128
     enabled: false
     anchors.left: selectObjectButton.right
@@ -155,7 +155,7 @@ MainWindow
 
   ButtonBox
     id: useOnTarget
-    !text: tr('Use on target')
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_9")
     width: 128
     enabled: false
     anchors.left: prev.left
@@ -166,7 +166,7 @@ MainWindow
 
   ButtonBox
     id: useWith
-    !text: tr('With crosshair')
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_8")
     width: 128
     enabled: false
     anchors.left: prev.left
@@ -184,7 +184,7 @@ MainWindow
 
   Button
     id: okButton
-    !text: tr('Ok')
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_7")
     width: 64
     anchors.right: next.left
     anchors.bottom: parent.bottom
@@ -193,7 +193,7 @@ MainWindow
 
   Button
     id: cancelButton
-    !text: tr('Cancel')
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_6")
     width: 64
     anchors.right: parent.right
     anchors.bottom: parent.bottom
@@ -201,12 +201,12 @@ MainWindow
 
 HotkeyAssignWindow < MainWindow
   id: assignWindow
-  !text: tr('Button Assign')
+  !text: tr("otclient_modules.hotkeys_manager_otui.tr_5")
   size: 360 150
   @onEscape: self:destroy()
 
   Label
-    !text: tr('Please, press the key you wish to add onto your hotkeys manager')
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_4")
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: parent.top
@@ -215,7 +215,7 @@ HotkeyAssignWindow < MainWindow
 
   Label
     id: comboPreview
-    !text: tr('Current hotkey to add: %s', 'none')
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_3", 'none')
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.top: prev.bottom
     margin-top: 10
@@ -230,7 +230,7 @@ HotkeyAssignWindow < MainWindow
 
   Button
     id: addButton
-    !text: tr('Add')
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_2")
     width: 64
     anchors.right: next.left
     anchors.bottom: parent.bottom
@@ -239,7 +239,7 @@ HotkeyAssignWindow < MainWindow
 
   Button
     id: cancelButton
-    !text: tr('Cancel')
+    !text: tr("otclient_modules.hotkeys_manager_otui.tr_1")
     width: 64
     anchors.right: parent.right
     anchors.bottom: parent.bottom

@@ -6,14 +6,14 @@ function crystaldeepling.onUse(player, item, fromPosition, target, toPosition, i
 		Game.createMonster("Deepling Worker", posMonster)
 		player:setStorageValue(Storage.DeeplingsWorldChange.Crystal, 10)
 	elseif player:getStorageValue(Storage.DeeplingsWorldChange.Crystal) == 10 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Fail.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_coral.msg_3")
 		player:setStorageValue(Storage.DeeplingsWorldChange.Crystal, 11)
 	elseif player:getStorageValue(Storage.DeeplingsWorldChange.Crystal) == 11 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Yeah.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_coral.msg_2")
 		player:addItem(14165, 1)
 		player:setStorageValue(Storage.DeeplingsWorldChange.Crystal, 12)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Sorry.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_coral.msg_1")
 	end
 	return true
 end

@@ -13,7 +13,7 @@ local function completeTest(cid)
 		player:teleportTo(setting.successPosition)
 		player:setStorageValue(TheNewFrontier.Questline, 18)
 		player:setStorageValue(TheNewFrontier.Mission06, 3) --Questlog, The New Frontier Quest "Mission 06: Days Of Doom"
-		player:say("You have braved the tiral of the Mooh'tah master.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.movement_minotaur_boss.say_1", TALKTYPE_MONSTER_SAY)
 	end
 end
 

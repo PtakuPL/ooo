@@ -23,7 +23,7 @@ function checkThrone.onStepIn(creature, item, position, fromPosition)
 
 	if player:getStorageValue(thrones.storage) ~= thrones.value then
 		player:teleportTo(fromPosition, true)
-		player:say("You've not absorbed energy from this throne.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.movements_check_throne.say_1", TALKTYPE_MONSTER_SAY)
 	end
 	return true
 end

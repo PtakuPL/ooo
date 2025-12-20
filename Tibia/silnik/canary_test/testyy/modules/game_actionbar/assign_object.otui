@@ -7,7 +7,7 @@ PreviewItem < Item
 MainWindow
   id: assignWindow
   size: 260 208
-  !text: tr('Assign Object')
+  !text: tr("otclient_modules.assign_object_otui.tr_9")
   @onEnter: modules.game_actionbar.objectAssignAccept()
   PreviewItem
     id: previewItem
@@ -18,7 +18,7 @@ MainWindow
     id: useOnYourselfCheckbox
     anchors.left: prev.right
     anchors.top: prev.top
-    !text: tr('Use on yourself')
+    !text: tr("otclient_modules.assign_object_otui.tr_8")
     text-auto-resize: true
     margin-left: 5
     enabled: false
@@ -27,7 +27,7 @@ MainWindow
     id: useOnTargetCheckbox
     anchors.left: prev.left
     anchors.top: prev.bottom
-    !text: tr('Use on target')
+    !text: tr("otclient_modules.assign_object_otui.tr_7")
     text-auto-resize: true
     margin-top: 5
     enabled: false
@@ -36,7 +36,7 @@ MainWindow
     id: useWithCrosshairCheckbox
     anchors.left: prev.left
     anchors.top: prev.bottom
-    !text: tr('Use with crosshair')
+    !text: tr("otclient_modules.assign_object_otui.tr_6")
     text-auto-resize: true
     margin-top: 5
     enabled: false
@@ -45,7 +45,7 @@ MainWindow
     id: equipCheckbox
     anchors.left: prev.left
     anchors.top: prev.bottom
-    !text: tr('Equip/unequip')
+    !text: tr("otclient_modules.assign_object_otui.tr_5")
     text-auto-resize: true
     margin-top: 5
     enabled: false
@@ -54,7 +54,7 @@ MainWindow
     id: useCheckbox
     anchors.left: prev.left
     anchors.top: prev.bottom
-    !text: tr('Use')
+    !text: tr("otclient_modules.assign_object_otui.tr_4")
     text-auto-resize: true
     margin-top: 5
     enabled: false
@@ -64,7 +64,7 @@ MainWindow
     anchors.left: parent.left
     anchors.top: previewItem.bottom
     anchors.right: previewItem.right
-    !text: tr('Select Object')
+    !text: tr("otclient_modules.assign_object_otui.tr_3")
     margin-top: 5
     @onClick: modules.game_actionbar.startChooseItem()
 
@@ -79,12 +79,12 @@ MainWindow
     id: applyButton
     anchors.left: parent.left
     anchors.bottom: parent.bottom
-    !text: tr('Apply')
+    !text: tr("otclient_modules.assign_object_otui.tr_2")
     @onClick: modules.game_actionbar.objectAssignAccept()
 
   Button
     id: cancelButton
     anchors.right: parent.right
     anchors.bottom: parent.bottom
-    !text: tr('Cancel')
+    !text: tr("otclient_modules.assign_object_otui.tr_1")
     @onClick: modules.game_actionbar.closeObjectAssignWindow()

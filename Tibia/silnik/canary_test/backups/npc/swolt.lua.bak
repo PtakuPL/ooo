@@ -93,13 +93,13 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end
 -- Basic
-keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, text = "Well, you see me standing behind a bar. Selling drinks. Food. And stuff. Now try figuring out what I could be making a living of down here." })
-keywordHandler:addKeyword({ "food" }, StdModule.say, { npcHandler = npcHandler, text = "I can offer you bread, cheese, ham, or meat. And as drinks we serve beer and water. If you'd like to see what we have to offer, just ask me for a trade." })
+keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.swolt.stdmod_1" })
+keywordHandler:addKeyword({ "food" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.swolt.stdmod_2" })
 keywordHandler:addAliasKeyword({ "offer" })
 keywordHandler:addAliasKeyword({ "drinks" })
 keywordHandler:addAliasKeyword({ "buy" })
@@ -108,7 +108,7 @@ keywordHandler:addAliasKeyword({ "equipment" })
 keywordHandler:addAliasKeyword({ "goods" })
 keywordHandler:addAliasKeyword({ "stuff" })
 keywordHandler:addAliasKeyword({ "ware" })
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Take a look, but not a sip before you've paid. And I hope it stays like this and you don't get any strange ideas about {rice}.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.swolt.sendtrade_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
 npcType:register(npcConfig)

@@ -13,6 +13,11 @@ Krótki zestaw testów do potwierdzenia, że serwerowa internacjonalizacja dzia�
    - Nazwy przedmiotów: komenda/akcja pokazująca item tooltip/name ma tłumaczenie.
    - Komunikaty systemowe (błędne hasło, brak uprawnień, wiadomości serwera) są w danym języku.
    - Dialog NPC (przynajmniej 1 NPC) zwraca tekst w locale gracza.
+   - Dialog NPC z konkatenacją (`npcHandler:say("..." .. var .. "...")`) wstawia argumenty poprawnie.
+   - Dialog NPC z tablicą (`npcHandler:say({ ... })`) wysyła sekwencję i18n (`npcSayMultiple`) z poprawnym opóźnieniem.
+   - Potwory: nazwa/description potwora i losowe `monster.voices` są lokalizowane (gdy `i18nKey` jest ustawiony).
+   - Broadcast: globalny komunikat (np. server save) używa `Game.broadcastLocalizedMessage` i wyświetla tłumaczenie w locale gracza.
+   - Skrypty: przykładowa akcja/quest z `player:sayLocalized` lub `sendLocalizedTextMessage` zwraca klucz i tłumaczenie.
 3. Jeśli brak klucza, upewnij się, że następuje fallback do EN bez crasha; zanotuj brak w raporcie.
 
 ## Test formatowania
@@ -28,3 +33,8 @@ Krótki zestaw testów do potwierdzenia, że serwerowa internacjonalizacja dzia�
 ## Raportowanie
 - Po każdej aktualizacji danych/locale dołącz raport CSV z `i18n_report.py` do PR (lub jako artefakt CI).
 - W opisie PR zapisz: lista dotkniętych języków, liczba brakujących kluczy przed/po, ewentualne fallbacki.
+
+## TODO po integracji runtime (testy zablokowane)
+- Spells: nazwa/words/desc w UI klienta po podpięciu kluczy i18n w runtime.
+- Items: nazwy/opisy z `items.xml` po wprowadzeniu i18nKey lub Lua hooków (`Item:setLocalizedName/Description`).
+- Chatchannels: lokalizowane nazwy kanałów po stronie serwera/klienta.

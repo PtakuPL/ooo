@@ -67,7 +67,7 @@ function versperothSpawn.onStepIn(creature, item, position, fromPosition)
 	end
 
 	if Game.getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Versperoth.Battle) >= 1 then
-		player:say("Versperoth has already been defeated in the last 30 minutes.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.movements_versperoth_spawn.say_1", TALKTYPE_MONSTER_SAY)
 		return true
 	end
 	player:teleportTo(Position(33072, 31877, 12))

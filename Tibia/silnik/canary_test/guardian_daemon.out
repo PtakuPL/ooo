@@ -1,0 +1,1503 @@
+nohup: ignoring input
+[master 27b7917fe] 📊 I18N status (guardian) | migrated=476 | 08:31:04 UTC
+ 3 files changed, 38 insertions(+), 25 deletions(-)
+[master 104889892] 📊 I18N status (guardian) | migrated=476 | 08:33:07 UTC
+ 2 files changed, 36 insertions(+), 42 deletions(-)
+[master dab403abd] 📊 I18N status (guardian) | migrated=476 | 08:35:10 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 2a8528b37] 📊 I18N status (guardian) | migrated=476 | 08:37:13 UTC
+ 2 files changed, 24 insertions(+), 30 deletions(-)
+[master cad8104d7] 📊 I18N status (guardian) | migrated=476 | 08:39:17 UTC
+ 2 files changed, 18 insertions(+), 24 deletions(-)
+[master f864f7f4f] 📊 I18N status (guardian) | migrated=476 | 08:41:21 UTC
+ 2 files changed, 22 insertions(+), 18 deletions(-)
+[master 1a0460cf7] 📊 I18N status (guardian) | migrated=476 | 08:43:26 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master a3dd4a57f] 📊 I18N status (guardian) | migrated=476 | 08:45:30 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+./i18n_guardian.sh: line 31: 473957 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1  (wd: ~/serweryt/Tibia/silnik/canary_test)
+[master 378ee5a4b] 📊 I18N status (guardian) | migrated=476 | 08:47:37 UTC
+ 2 files changed, 38 insertions(+), 28 deletions(-)
+./i18n_guardian.sh: line 31: 484276 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 31: 485292 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master f2c6f1719] 📊 I18N status (guardian) | migrated=476 | 08:49:46 UTC
+ 2 files changed, 14 insertions(+), 14 deletions(-)
+[master 3018e1c55] 📊 I18N status (guardian) | migrated=476 | 08:51:49 UTC
+ 2 files changed, 30 insertions(+), 32 deletions(-)
+[master 011c4d93e] 📊 I18N status (guardian) | migrated=476 | 08:53:56 UTC
+ 2 files changed, 32 insertions(+), 30 deletions(-)
+[master 7b8f357f9] 📊 I18N status (guardian) | migrated=476 | 08:56:01 UTC
+ 2 files changed, 24 insertions(+), 32 deletions(-)
+[master cbd9ac976] 📊 I18N status (guardian) | migrated=476 | 08:58:08 UTC
+ 2 files changed, 46 insertions(+), 52 deletions(-)
+[master b9cc57291] 📊 I18N status (guardian) | migrated=476 | 09:00:12 UTC
+ 2 files changed, 58 insertions(+), 46 deletions(-)
+[master 0617e2912] 📊 I18N status (guardian) | migrated=476 | 09:02:15 UTC
+ 2 files changed, 52 insertions(+), 52 deletions(-)
+[master 8cb3f987a] 📊 I18N status (guardian) | migrated=476 | 09:04:18 UTC
+ 2 files changed, 56 insertions(+), 58 deletions(-)
+[master f1ead4023] 📊 I18N status (guardian) | migrated=476 | 09:06:21 UTC
+ 2 files changed, 60 insertions(+), 58 deletions(-)
+[master 19e3aa4e9] 📊 I18N status (guardian) | migrated=476 | 09:08:24 UTC
+ 2 files changed, 48 insertions(+), 54 deletions(-)
+[master 54ca390f0] 📊 I18N status (guardian) | migrated=476 | 09:10:27 UTC
+ 2 files changed, 44 insertions(+), 50 deletions(-)
+[master d399439be] 📊 I18N status (guardian) | migrated=476 | 09:12:56 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master 04dcad697] 📊 I18N status (guardian) | migrated=476 | 09:14:59 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master db99dc8cc] 📊 I18N status (guardian) | migrated=476 | 09:17:02 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master ccbac5fab] 📊 I18N status (guardian) | migrated=476 | 09:19:05 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master f29c51029] 📊 I18N status (guardian) | migrated=476 | 09:21:08 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master 560732c45] 📊 I18N status (guardian) | migrated=476 | 09:23:11 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master a3ef02287] 📊 I18N status (guardian) | migrated=476 | 09:25:17 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master ed7b5af66] 📊 I18N status (guardian) | migrated=476 | 09:27:20 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master da7363737] 📊 I18N status (guardian) | migrated=476 | 09:29:23 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master def03ea54] 📊 I18N status (guardian) | migrated=476 | 09:31:26 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master 3802bbe6e] 📊 I18N status (guardian) | migrated=476 | 09:33:29 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master b25de36fd] 📊 I18N status (guardian) | migrated=476 | 09:37:33 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master 441c7cd19] 📊 I18N status (guardian) | migrated=476 | 09:39:36 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master d9596dc86] 📊 I18N status (guardian) | migrated=476 | 09:41:40 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+./i18n_guardian.sh: line 31: 492724 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 42a1d1c5a] 📊 I18N status (guardian) | migrated=476 | 09:43:49 UTC
+ 2 files changed, 60 insertions(+), 42 deletions(-)
+[master 408296c62] 📊 I18N status (guardian) | migrated=476 | 09:45:54 UTC
+ 2 files changed, 48 insertions(+), 64 deletions(-)
+[master af3a6ee76] 📊 I18N status (guardian) | migrated=476 | 09:47:59 UTC
+ 2 files changed, 56 insertions(+), 44 deletions(-)
+./i18n_guardian.sh: line 31: 561936 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master b0477ecb8] 📊 I18N status (guardian) | migrated=476 | 09:50:10 UTC
+ 2 files changed, 64 insertions(+), 60 deletions(-)
+./i18n_guardian.sh: line 31: 567419 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 31: 571430 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 31: 572000 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 0a2025d93] 📊 I18N status (guardian) | migrated=476 | 09:56:34 UTC
+ 2 files changed, 64 insertions(+), 64 deletions(-)
+[master 7b294d1cf] 📊 I18N status (guardian) | migrated=476 | 09:58:39 UTC
+ 2 files changed, 58 insertions(+), 66 deletions(-)
+./i18n_guardian.sh: line 31: 573151 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master f87ed5c4f] 📊 I18N status (guardian) | migrated=476 | 10:00:49 UTC
+ 2 files changed, 64 insertions(+), 56 deletions(-)
+./i18n_guardian.sh: line 31: 578237 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master e6f9b6780] 📊 I18N status (guardian) | migrated=476 | 10:02:58 UTC
+ 2 files changed, 58 insertions(+), 58 deletions(-)
+[master a05a738c3] 📊 I18N status (guardian) | migrated=476 | 10:05:04 UTC
+ 2 files changed, 58 insertions(+), 58 deletions(-)
+[master 3dbdcf6dd] 📊 I18N status (guardian) | migrated=476 | 10:07:07 UTC
+ 2 files changed, 50 insertions(+), 60 deletions(-)
+[master 18767f390] 📊 I18N status (guardian) | migrated=476 | 10:09:10 UTC
+ 2 files changed, 50 insertions(+), 48 deletions(-)
+[master 6c37de366] 📊 I18N status (guardian) | migrated=476 | 10:11:13 UTC
+ 2 files changed, 50 insertions(+), 52 deletions(-)
+[master 2c0c10e29] 📊 I18N status (guardian) | migrated=476 | 10:13:16 UTC
+ 2 files changed, 44 insertions(+), 50 deletions(-)
+[master 339dd9699] 📊 I18N status (guardian) | migrated=476 | 10:15:21 UTC
+ 2 files changed, 50 insertions(+), 46 deletions(-)
+[master a47aaa511] 📊 I18N status (guardian) | migrated=476 | 10:17:26 UTC
+ 2 files changed, 46 insertions(+), 50 deletions(-)
+[master 95fb7361f] 📊 I18N status (guardian) | migrated=476 | 10:19:30 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+./i18n_guardian.sh: line 31: 579516 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 894b97af0] 📊 I18N status (guardian) | migrated=476 | 10:21:39 UTC
+ 2 files changed, 68 insertions(+), 52 deletions(-)
+[master 7bc2d9d2c] 📊 I18N status (guardian) | migrated=476 | 10:23:44 UTC
+ 2 files changed, 58 insertions(+), 64 deletions(-)
+[master 81b995c85] 📊 I18N status (guardian) | migrated=476 | 10:25:52 UTC
+ 2 files changed, 58 insertions(+), 54 deletions(-)
+[master 257d967b1] 📊 I18N status (guardian) | migrated=476 | 10:27:56 UTC
+ 2 files changed, 52 insertions(+), 58 deletions(-)
+[master bb827152b] 📊 I18N status (guardian) | migrated=476 | 10:30:01 UTC
+ 2 files changed, 48 insertions(+), 44 deletions(-)
+./i18n_guardian.sh: line 31: 611442 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 4c4ea26e4] 📊 I18N status (guardian) | migrated=476 | 10:32:10 UTC
+ 2 files changed, 44 insertions(+), 48 deletions(-)
+./i18n_guardian.sh: line 31: 630552 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 31: 631455 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 315810460] 📊 I18N status (guardian) | migrated=476 | 10:38:31 UTC
+ 2 files changed, 54 insertions(+), 46 deletions(-)
+./i18n_guardian.sh: line 31: 636984 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 1842d5e14] 📊 I18N status (guardian) | migrated=476 | 10:40:41 UTC
+ 2 files changed, 58 insertions(+), 50 deletions(-)
+./i18n_guardian.sh: line 31: 640794 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 1d2496d51] 📊 I18N status (guardian) | migrated=476 | 10:42:48 UTC
+ 2 files changed, 52 insertions(+), 52 deletions(-)
+[master 4a14cbaa9] 📊 I18N status (guardian) | migrated=476 | 10:44:55 UTC
+ 2 files changed, 46 insertions(+), 46 deletions(-)
+[master b40e6f819] 📊 I18N status (guardian) | migrated=476 | 10:46:59 UTC
+ 2 files changed, 50 insertions(+), 50 deletions(-)
+[master 27769fa20] 📊 I18N status (guardian) | migrated=476 | 10:49:03 UTC
+ 2 files changed, 46 insertions(+), 46 deletions(-)
+[master 1e99a588e] 📊 I18N status (guardian) | migrated=476 | 10:51:08 UTC
+ 2 files changed, 50 insertions(+), 54 deletions(-)
+[master 1d18160bb] 📊 I18N status (guardian) | migrated=476 | 10:53:13 UTC
+ 2 files changed, 46 insertions(+), 50 deletions(-)
+[master 750343f3c] 📊 I18N status (guardian) | migrated=476 | 10:55:18 UTC
+ 2 files changed, 44 insertions(+), 38 deletions(-)
+[master 50466452b] 📊 I18N status (guardian) | migrated=476 | 10:57:25 UTC
+ 2 files changed, 36 insertions(+), 50 deletions(-)
+[master 4651ac67c] 📊 I18N status (guardian) | migrated=476 | 10:59:30 UTC
+ 2 files changed, 38 insertions(+), 36 deletions(-)
+./i18n_guardian.sh: line 31: 642355 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 6fea973f4] 📊 I18N status (guardian) | migrated=476 | 11:01:38 UTC
+ 2 files changed, 46 insertions(+), 32 deletions(-)
+[master 800f334ff] 📊 I18N status (guardian) | migrated=476 | 11:03:42 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master 62f4fe6a4] 📊 I18N status (guardian) | migrated=476 | 11:05:47 UTC
+ 2 files changed, 50 insertions(+), 50 deletions(-)
+[master 68444a782] 📊 I18N status (guardian) | migrated=476 | 11:07:51 UTC
+ 2 files changed, 46 insertions(+), 50 deletions(-)
+[master daf940b39] 📊 I18N status (guardian) | migrated=476 | 11:09:56 UTC
+ 2 files changed, 42 insertions(+), 46 deletions(-)
+[master 0c8702548] 📊 I18N status (guardian) | migrated=476 | 11:12:00 UTC
+ 2 files changed, 50 insertions(+), 42 deletions(-)
+[master b572a3213] 📊 I18N status (guardian) | migrated=476 | 11:14:04 UTC
+ 2 files changed, 38 insertions(+), 44 deletions(-)
+[master 2edbd881d] 📊 I18N status (guardian) | migrated=476 | 11:16:09 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master b318d1e22] 📊 I18N status (guardian) | migrated=476 | 11:18:13 UTC
+ 2 files changed, 42 insertions(+), 44 deletions(-)
+[master 9e5ee4f70] 📊 I18N status (guardian) | migrated=476 | 11:20:17 UTC
+ 2 files changed, 36 insertions(+), 42 deletions(-)
+[master ae8ec6895] 📊 I18N status (guardian) | migrated=476 | 11:22:23 UTC
+ 2 files changed, 36 insertions(+), 38 deletions(-)
+[master 133ac8d8b] 📊 I18N status (guardian) | migrated=476 | 11:26:30 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master edda9303e] 📊 I18N status (guardian) | migrated=476 | 11:28:35 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 9c292e8d7] 📊 I18N status (guardian) | migrated=476 | 11:30:39 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master fd94b1c3e] 📊 I18N status (guardian) | migrated=476 | 11:32:43 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 05c950054] 📊 I18N status (guardian) | migrated=476 | 11:34:51 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master ead84ff14] 📊 I18N status (guardian) | migrated=476 | 11:36:56 UTC
+ 2 files changed, 36 insertions(+), 34 deletions(-)
+[master 5dc0e0ce9] 📊 I18N status (guardian) | migrated=476 | 11:39:00 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master 622119e1f] 📊 I18N status (guardian) | migrated=476 | 11:41:04 UTC
+ 2 files changed, 36 insertions(+), 34 deletions(-)
+[master e9f8812de] 📊 I18N status (guardian) | migrated=476 | 11:43:08 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master 1494d36f2] 📊 I18N status (guardian) | migrated=476 | 11:47:16 UTC
+ 2 files changed, 36 insertions(+), 34 deletions(-)
+[master 8cdb6df88] 📊 I18N status (guardian) | migrated=476 | 11:49:21 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master c114e6534] 📊 I18N status (guardian) | migrated=476 | 11:51:25 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 1bc148c07] 📊 I18N status (guardian) | migrated=476 | 11:53:30 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 33e7ed6a5] 📊 I18N status (guardian) | migrated=476 | 11:55:34 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master 18754f331] 📊 I18N status (guardian) | migrated=476 | 11:57:39 UTC
+ 2 files changed, 36 insertions(+), 34 deletions(-)
+[master 8cc406401] 📊 I18N status (guardian) | migrated=476 | 11:59:44 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master 6346ceb59] 📊 I18N status (guardian) | migrated=476 | 12:01:48 UTC
+ 2 files changed, 36 insertions(+), 34 deletions(-)
+[master 2ea6eada5] 📊 I18N status (guardian) | migrated=476 | 12:03:53 UTC
+ 2 files changed, 38 insertions(+), 40 deletions(-)
+[master 82b7828cd] 📊 I18N status (guardian) | migrated=476 | 12:05:57 UTC
+ 2 files changed, 40 insertions(+), 38 deletions(-)
+[master ef791c5b4] 📊 I18N status (guardian) | migrated=476 | 12:08:01 UTC
+ 2 files changed, 36 insertions(+), 38 deletions(-)
+[master c4fc281c5] 📊 I18N status (guardian) | migrated=476 | 12:10:06 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 125b79e6e] 📊 I18N status (guardian) | migrated=476 | 12:12:10 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 8db08752d] 📊 I18N status (guardian) | migrated=476 | 12:14:16 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 5862d8651] 📊 I18N status (guardian) | migrated=476 | 12:16:22 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master bc632238b] 📊 I18N status (guardian) | migrated=476 | 12:18:26 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 5d91cc42c] 📊 I18N status (guardian) | migrated=476 | 12:20:31 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master bb49c31f3] 📊 I18N status (guardian) | migrated=476 | 12:22:37 UTC
+ 2 files changed, 40 insertions(+), 40 deletions(-)
+[master 9792f639d] 📊 I18N status (guardian) | migrated=476 | 12:24:41 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master 746ea8366] 📊 I18N status (guardian) | migrated=476 | 12:26:45 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master 8a49c90e0] 📊 I18N status (guardian) | migrated=476 | 12:28:50 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master c83d7cedf] 📊 I18N status (guardian) | migrated=476 | 12:30:55 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master d4a39b843] 📊 I18N status (guardian) | migrated=476 | 12:32:59 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master d089846f9] 📊 I18N status (guardian) | migrated=476 | 12:35:04 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 97528db6d] 📊 I18N status (guardian) | migrated=476 | 12:37:08 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 847f8b09d] 📊 I18N status (guardian) | migrated=476 | 12:39:12 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 2a2216cd9] 📊 I18N status (guardian) | migrated=476 | 12:41:16 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master f172541c4] 📊 I18N status (guardian) | migrated=476 | 12:43:21 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 560b61bc2] 📊 I18N status (guardian) | migrated=476 | 12:45:25 UTC
+ 2 files changed, 40 insertions(+), 36 deletions(-)
+[master e096243a2] 📊 I18N status (guardian) | migrated=476 | 12:47:30 UTC
+ 2 files changed, 36 insertions(+), 40 deletions(-)
+[master f7012628e] 📊 I18N status (guardian) | migrated=476 | 12:49:35 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master cf3f4724c] 📊 I18N status (guardian) | migrated=476 | 12:51:40 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master d3d395f4d] 📊 I18N status (guardian) | migrated=476 | 12:53:46 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 93d6d7a9e] 📊 I18N status (guardian) | migrated=476 | 12:55:51 UTC
+ 2 files changed, 40 insertions(+), 36 deletions(-)
+[master d103a9d23] 📊 I18N status (guardian) | migrated=476 | 12:57:55 UTC
+ 2 files changed, 38 insertions(+), 42 deletions(-)
+[master 7ad4e26a5] 📊 I18N status (guardian) | migrated=476 | 13:00:00 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master d59a233bb] 📊 I18N status (guardian) | migrated=476 | 13:02:04 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 58ed01680] 📊 I18N status (guardian) | migrated=476 | 13:04:08 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 37b10a487] 📊 I18N status (guardian) | migrated=476 | 13:06:12 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master f270a6e78] 📊 I18N status (guardian) | migrated=476 | 13:08:17 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 50892df02] 📊 I18N status (guardian) | migrated=476 | 13:10:22 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 812082839] 📊 I18N status (guardian) | migrated=476 | 13:12:27 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 11cd90c6c] 📊 I18N status (guardian) | migrated=476 | 13:14:31 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 6c81960ed] 📊 I18N status (guardian) | migrated=476 | 13:16:35 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 620d7fcdf] 📊 I18N status (guardian) | migrated=476 | 13:18:39 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 8a33af735] 📊 I18N status (guardian) | migrated=476 | 13:20:44 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master c4e03a1b1] 📊 I18N status (guardian) | migrated=476 | 13:22:51 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master cebc429e2] 📊 I18N status (guardian) | migrated=476 | 13:24:55 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 45788b104] 📊 I18N status (guardian) | migrated=476 | 13:26:59 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master c913ca380] 📊 I18N status (guardian) | migrated=476 | 13:29:04 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master cc924a577] 📊 I18N status (guardian) | migrated=476 | 13:31:09 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 12f3d767b] 📊 I18N status (guardian) | migrated=476 | 13:33:13 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master e7bdc0e58] 📊 I18N status (guardian) | migrated=476 | 13:35:19 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 2cc1ff4ee] 📊 I18N status (guardian) | migrated=476 | 13:37:24 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master cf98fb665] 📊 I18N status (guardian) | migrated=476 | 13:41:31 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 13d332bcb] 📊 I18N status (guardian) | migrated=476 | 13:43:35 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master d51180774] 📊 I18N status (guardian) | migrated=476 | 13:45:41 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master a13dcfa39] 📊 I18N status (guardian) | migrated=476 | 13:47:45 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master 6d47a456d] 📊 I18N status (guardian) | migrated=476 | 13:49:54 UTC
+ 2 files changed, 40 insertions(+), 40 deletions(-)
+[master 167006dc7] 📊 I18N status (guardian) | migrated=476 | 13:51:58 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master b027fa7d3] 📊 I18N status (guardian) | migrated=476 | 13:54:02 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master ed0756c15] 📊 I18N status (guardian) | migrated=476 | 13:58:11 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master bda63c084] 📊 I18N status (guardian) | migrated=476 | 14:00:15 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master e2b447e3a] 📊 I18N status (guardian) | migrated=476 | 14:02:20 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 87f87b701] 📊 I18N status (guardian) | migrated=476 | 14:04:26 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 79680fbf2] 📊 I18N status (guardian) | migrated=476 | 14:06:30 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master b8488eef2] 📊 I18N status (guardian) | migrated=476 | 14:08:34 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 4618e1168] 📊 I18N status (guardian) | migrated=476 | 14:10:39 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master dd536cdd0] 📊 I18N status (guardian) | migrated=476 | 14:12:44 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master a8704888a] 📊 I18N status (guardian) | migrated=476 | 14:14:49 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 4e5a5281d] 📊 I18N status (guardian) | migrated=476 | 14:16:54 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master fc175cda5] 📊 I18N status (guardian) | migrated=476 | 14:18:59 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master 3cb9a9298] 📊 I18N status (guardian) | migrated=476 | 14:21:03 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master 0a98e28d7] 📊 I18N status (guardian) | migrated=476 | 14:23:09 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 1956a191a] 📊 I18N status (guardian) | migrated=476 | 14:25:13 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 03c190a66] 📊 I18N status (guardian) | migrated=476 | 14:29:21 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master a69d371bc] 📊 I18N status (guardian) | migrated=476 | 14:31:27 UTC
+ 2 files changed, 40 insertions(+), 40 deletions(-)
+[master d7d578e56] 📊 I18N status (guardian) | migrated=476 | 14:33:32 UTC
+ 2 files changed, 40 insertions(+), 40 deletions(-)
+[master d0159c560] 📊 I18N status (guardian) | migrated=476 | 14:35:37 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master b7bbaa2ab] 📊 I18N status (guardian) | migrated=476 | 14:37:42 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 54ab22247] 📊 I18N status (guardian) | migrated=476 | 14:39:48 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master 668a96aeb] 📊 I18N status (guardian) | migrated=476 | 14:41:52 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master 02aa46ea3] 📊 I18N status (guardian) | migrated=476 | 14:43:59 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master a6cc5126e] 📊 I18N status (guardian) | migrated=476 | 14:46:03 UTC
+ 2 files changed, 40 insertions(+), 36 deletions(-)
+[master 28bce24cc] 📊 I18N status (guardian) | migrated=476 | 14:48:09 UTC
+ 2 files changed, 38 insertions(+), 42 deletions(-)
+[master 75491991d] 📊 I18N status (guardian) | migrated=476 | 14:50:13 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 9397042f9] 📊 I18N status (guardian) | migrated=476 | 14:52:17 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master b91026271] 📊 I18N status (guardian) | migrated=476 | 14:54:23 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 73eedfbd1] 📊 I18N status (guardian) | migrated=476 | 14:56:27 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 1ea24a90b] 📊 I18N status (guardian) | migrated=476 | 14:58:32 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 4a1a2e823] 📊 I18N status (guardian) | migrated=476 | 15:00:39 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master f19eaf0dd] 📊 I18N status (guardian) | migrated=476 | 15:02:47 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 8de2a412b] 📊 I18N status (guardian) | migrated=476 | 15:04:53 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 2a96c173f] 📊 I18N status (guardian) | migrated=476 | 15:06:58 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 442108e98] 📊 I18N status (guardian) | migrated=476 | 15:09:02 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master abe770eac] 📊 I18N status (guardian) | migrated=476 | 15:11:09 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 7171a8405] 📊 I18N status (guardian) | migrated=476 | 15:13:14 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 0e03c2009] 📊 I18N status (guardian) | migrated=476 | 15:15:19 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master edc375d86] 📊 I18N status (guardian) | migrated=476 | 15:17:25 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master d964a263f] 📊 I18N status (guardian) | migrated=476 | 15:19:31 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 25facc3b3] 📊 I18N status (guardian) | migrated=476 | 15:21:42 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 797056928] 📊 I18N status (guardian) | migrated=476 | 15:23:47 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 827e5008b] 📊 I18N status (guardian) | migrated=476 | 15:25:51 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 6e0054682] 📊 I18N status (guardian) | migrated=476 | 15:27:56 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 0c0c51f20] 📊 I18N status (guardian) | migrated=476 | 15:30:00 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 6805f74e0] 📊 I18N status (guardian) | migrated=476 | 15:32:05 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master b4989163a] 📊 I18N status (guardian) | migrated=476 | 15:34:10 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 9a25515dd] 📊 I18N status (guardian) | migrated=476 | 15:36:14 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 89f78f13d] 📊 I18N status (guardian) | migrated=476 | 15:38:19 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master ac8d7b697] 📊 I18N status (guardian) | migrated=476 | 15:40:26 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master efc56aaf6] 📊 I18N status (guardian) | migrated=476 | 15:42:31 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 172d32d96] 📊 I18N status (guardian) | migrated=476 | 15:44:38 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master e40ac7529] 📊 I18N status (guardian) | migrated=476 | 15:46:44 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 2f8387963] 📊 I18N status (guardian) | migrated=476 | 15:48:50 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 3c5683667] 📊 I18N status (guardian) | migrated=476 | 15:50:54 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 99aff35c2] 📊 I18N status (guardian) | migrated=476 | 15:52:59 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 953957178] 📊 I18N status (guardian) | migrated=476 | 15:55:03 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 109b1155e] 📊 I18N status (guardian) | migrated=476 | 15:57:09 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 27a534173] 📊 I18N status (guardian) | migrated=476 | 15:59:13 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master bc863f81e] 📊 I18N status (guardian) | migrated=476 | 16:01:18 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 4d9be8e75] 📊 I18N status (guardian) | migrated=476 | 16:03:22 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 6168cb176] 📊 I18N status (guardian) | migrated=476 | 16:05:31 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 990435a46] 📊 I18N status (guardian) | migrated=476 | 16:07:35 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 76c128f41] 📊 I18N status (guardian) | migrated=476 | 16:09:40 UTC
+ 2 files changed, 40 insertions(+), 40 deletions(-)
+[master 893adee16] 📊 I18N status (guardian) | migrated=476 | 16:11:45 UTC
+ 2 files changed, 40 insertions(+), 40 deletions(-)
+[master 56dbc23aa] 📊 I18N status (guardian) | migrated=476 | 16:13:49 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 32adec19a] 📊 I18N status (guardian) | migrated=476 | 16:15:54 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 4d6bac2bd] 📊 I18N status (guardian) | migrated=476 | 16:17:59 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 3c7b6171f] 📊 I18N status (guardian) | migrated=476 | 16:20:05 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 5dcdf4331] 📊 I18N status (guardian) | migrated=476 | 16:22:09 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 390ddfa97] 📊 I18N status (guardian) | migrated=476 | 16:24:13 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 9a2288668] 📊 I18N status (guardian) | migrated=476 | 16:26:18 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master a77a5dab2] 📊 I18N status (guardian) | migrated=476 | 16:28:23 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master f38d27859] 📊 I18N status (guardian) | migrated=476 | 16:30:28 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 455ec01f2] 📊 I18N status (guardian) | migrated=476 | 16:32:32 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 90273ee07] 📊 I18N status (guardian) | migrated=476 | 16:34:37 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 6be74db66] 📊 I18N status (guardian) | migrated=476 | 16:36:42 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 4196b7ec2] 📊 I18N status (guardian) | migrated=476 | 16:38:46 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 2411ba862] 📊 I18N status (guardian) | migrated=476 | 16:42:54 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 450f83f19] 📊 I18N status (guardian) | migrated=476 | 16:44:59 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 13b73f0f6] 📊 I18N status (guardian) | migrated=476 | 16:47:06 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 8fce0d1f5] 📊 I18N status (guardian) | migrated=476 | 16:49:11 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master b075a38ab] 📊 I18N status (guardian) | migrated=476 | 16:51:15 UTC
+ 2 files changed, 40 insertions(+), 36 deletions(-)
+[master 43704bf87] 📊 I18N status (guardian) | migrated=476 | 16:53:29 UTC
+ 2 files changed, 38 insertions(+), 42 deletions(-)
+[master 5c2bf2068] 📊 I18N status (guardian) | migrated=476 | 16:55:34 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 439ef06a1] 📊 I18N status (guardian) | migrated=476 | 16:57:42 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 08614c37e] 📊 I18N status (guardian) | migrated=476 | 16:59:46 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master ac209c667] 📊 I18N status (guardian) | migrated=476 | 17:01:52 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master c60be9105] 📊 I18N status (guardian) | migrated=476 | 17:03:57 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master f8973293d] 📊 I18N status (guardian) | migrated=476 | 17:06:01 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 337da414c] 📊 I18N status (guardian) | migrated=476 | 17:08:06 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master f363b4222] 📊 I18N status (guardian) | migrated=476 | 17:10:10 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 2e573d418] 📊 I18N status (guardian) | migrated=476 | 17:12:16 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 6cd115aa0] 📊 I18N status (guardian) | migrated=476 | 17:14:20 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 99358225b] 📊 I18N status (guardian) | migrated=476 | 17:18:28 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+./i18n_guardian.sh: line 31: 669350 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 936d9e3df] 📊 I18N status (guardian) | migrated=476 | 17:20:40 UTC
+ 2 files changed, 48 insertions(+), 30 deletions(-)
+[master fcf9e622e] 📊 I18N status (guardian) | migrated=476 | 17:22:45 UTC
+ 2 files changed, 40 insertions(+), 40 deletions(-)
+[master 47e8529be] 📊 I18N status (guardian) | migrated=476 | 17:24:49 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master 1c5ca93a8] 📊 I18N status (guardian) | migrated=476 | 17:26:54 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master 7fd1db80e] 📊 I18N status (guardian) | migrated=476 | 17:28:59 UTC
+ 2 files changed, 48 insertions(+), 50 deletions(-)
+[master 02cd485cb] 📊 I18N status (guardian) | migrated=476 | 17:31:03 UTC
+ 2 files changed, 50 insertions(+), 48 deletions(-)
+[master 73f06097e] 📊 I18N status (guardian) | migrated=476 | 17:33:08 UTC
+ 2 files changed, 38 insertions(+), 42 deletions(-)
+[master 1a3fd8037] 📊 I18N status (guardian) | migrated=476 | 17:35:11 UTC
+ 2 files changed, 34 insertions(+), 38 deletions(-)
+[master 1406977d2] 📊 I18N status (guardian) | migrated=476 | 17:37:16 UTC
+ 2 files changed, 46 insertions(+), 42 deletions(-)
+[master 45a47b1e7] 📊 I18N status (guardian) | migrated=476 | 17:39:21 UTC
+ 2 files changed, 40 insertions(+), 48 deletions(-)
+[master d404783e5] 📊 I18N status (guardian) | migrated=476 | 17:41:26 UTC
+ 2 files changed, 36 insertions(+), 38 deletions(-)
+[master e27387808] 📊 I18N status (guardian) | migrated=476 | 17:43:30 UTC
+ 2 files changed, 38 insertions(+), 36 deletions(-)
+[master 057a372d8] 📊 I18N status (guardian) | migrated=476 | 17:45:36 UTC
+ 2 files changed, 34 insertions(+), 38 deletions(-)
+[master f7fb36c18] 📊 I18N status (guardian) | migrated=476 | 17:47:42 UTC
+ 2 files changed, 36 insertions(+), 34 deletions(-)
+[master 40aef0935] 📊 I18N status (guardian) | migrated=476 | 17:49:50 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master bed2ee180] 📊 I18N status (guardian) | migrated=476 | 17:51:56 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master f334062cb] 📊 I18N status (guardian) | migrated=476 | 17:56:04 UTC
+ 2 files changed, 36 insertions(+), 34 deletions(-)
+[master 035c9b017] 📊 I18N status (guardian) | migrated=476 | 17:58:13 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 8885556b5] 📊 I18N status (guardian) | migrated=476 | 18:00:17 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master 1d24eb37e] 📊 I18N status (guardian) | migrated=476 | 18:02:21 UTC
+ 2 files changed, 36 insertions(+), 34 deletions(-)
+[master 8718dd0aa] 📊 I18N status (guardian) | migrated=476 | 18:04:27 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master 05cb1f123] 📊 I18N status (guardian) | migrated=476 | 18:06:31 UTC
+ 2 files changed, 36 insertions(+), 34 deletions(-)
+[master eb36a5a47] 📊 I18N status (guardian) | migrated=476 | 18:08:36 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master af2300b51] 📊 I18N status (guardian) | migrated=476 | 18:10:41 UTC
+ 2 files changed, 36 insertions(+), 34 deletions(-)
+[master 15b50e49e] 📊 I18N status (guardian) | migrated=476 | 18:12:46 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master c4d86a48c] 📊 I18N status (guardian) | migrated=476 | 18:14:51 UTC
+ 2 files changed, 36 insertions(+), 34 deletions(-)
+[master 1d77eba7d] 📊 I18N status (guardian) | migrated=476 | 18:16:58 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master ff435c25a] 📊 I18N status (guardian) | migrated=476 | 18:19:02 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 118023978] 📊 I18N status (guardian) | migrated=476 | 18:21:08 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 8f0fecf0b] 📊 I18N status (guardian) | migrated=476 | 18:23:12 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 610953fde] 📊 I18N status (guardian) | migrated=476 | 18:25:22 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master 3c02d97a5] 📊 I18N status (guardian) | migrated=476 | 18:27:33 UTC
+ 2 files changed, 50 insertions(+), 34 deletions(-)
+./i18n_guardian.sh: line 31: 1235377 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 134: 1352945 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 1351fb619] 📊 I18N status (guardian) | migrated=476 | 18:29:45 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+./i18n_guardian.sh: line 134: 1353452 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 46f0897e0] 📊 I18N status (guardian) | migrated=476 | 18:31:55 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master eec8fecb5] 📊 I18N status (guardian) | migrated=476 | 18:33:59 UTC
+ 2 files changed, 46 insertions(+), 46 deletions(-)
+[master 1e8bf7d79] 📊 I18N status (guardian) | migrated=476 | 18:36:04 UTC
+ 2 files changed, 60 insertions(+), 60 deletions(-)
+[master 5f94da622] 📊 I18N status (guardian) | migrated=476 | 18:38:09 UTC
+ 2 files changed, 50 insertions(+), 50 deletions(-)
+[master e092fce9e] 📊 I18N status (guardian) | migrated=476 | 18:40:17 UTC
+ 2 files changed, 54 insertions(+), 54 deletions(-)
+[master 0eb7dbb97] 📊 I18N status (guardian) | migrated=476 | 18:42:24 UTC
+ 2 files changed, 50 insertions(+), 54 deletions(-)
+[master e719ccd54] 📊 I18N status (guardian) | migrated=476 | 18:44:29 UTC
+ 2 files changed, 48 insertions(+), 44 deletions(-)
+./i18n_guardian.sh: line 134: 1355025 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 4eef19bce] 📊 I18N status (guardian) | migrated=476 | 18:46:38 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master ddfb53e63] 📊 I18N status (guardian) | migrated=476 | 18:48:44 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master a0561148c] 📊 I18N status (guardian) | migrated=476 | 18:50:54 UTC
+ 2 files changed, 50 insertions(+), 50 deletions(-)
+[master ecc35df09] 📊 I18N status (guardian) | migrated=476 | 18:53:07 UTC
+ 2 files changed, 50 insertions(+), 50 deletions(-)
+[master 79ee71dac] 📊 I18N status (guardian) | migrated=476 | 18:55:12 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+./i18n_guardian.sh: line 134: 1382609 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 49de4d77d] 📊 I18N status (guardian) | migrated=476 | 18:57:14 UTC
+ 2 files changed, 46 insertions(+), 46 deletions(-)
+[master db821c9fc] 📊 I18N status (guardian) | migrated=476 | 18:59:19 UTC
+ 2 files changed, 46 insertions(+), 46 deletions(-)
+[master 574589579] 📊 I18N status (guardian) | migrated=476 | 19:01:23 UTC
+ 2 files changed, 50 insertions(+), 50 deletions(-)
+[master 85f76652a] 📊 I18N status (guardian) | migrated=476 | 19:03:30 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master cfc8c3d34] 📊 I18N status (guardian) | migrated=476 | 19:05:35 UTC
+ 2 files changed, 48 insertions(+), 48 deletions(-)
+[master 9e965b95c] 📊 I18N status (guardian) | migrated=476 | 19:07:40 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master 8e6b2779c] 📊 I18N status (guardian) | migrated=476 | 19:09:51 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master de464bbc8] 📊 I18N status (guardian) | migrated=476 | 19:11:57 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master 7897a99a3] 📊 I18N status (guardian) | migrated=476 | 19:14:05 UTC
+ 2 files changed, 42 insertions(+), 46 deletions(-)
+[master 13e8def5b] 📊 I18N status (guardian) | migrated=476 | 19:16:12 UTC
+ 2 files changed, 46 insertions(+), 44 deletions(-)
+[master 725bb2c6f] 📊 I18N status (guardian) | migrated=476 | 19:18:21 UTC
+ 2 files changed, 42 insertions(+), 50 deletions(-)
+[master dd868efea] 📊 I18N status (guardian) | migrated=476 | 19:20:26 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master 0a1dca866] 📊 I18N status (guardian) | migrated=476 | 19:22:31 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 0569a8adc] 📊 I18N status (guardian) | migrated=476 | 19:24:36 UTC
+ 2 files changed, 38 insertions(+), 42 deletions(-)
+[master 2c99fac49] 📊 I18N status (guardian) | migrated=476 | 19:26:41 UTC
+ 2 files changed, 38 insertions(+), 36 deletions(-)
+[master c801a978f] 📊 I18N status (guardian) | migrated=476 | 19:28:46 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master e598039e2] 📊 I18N status (guardian) | migrated=476 | 19:30:52 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master 44522ef13] 📊 I18N status (guardian) | migrated=476 | 19:32:57 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master add158fd6] 📊 I18N status (guardian) | migrated=476 | 19:35:02 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master cf238fb6a] 📊 I18N status (guardian) | migrated=476 | 19:37:07 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master e52810af3] 📊 I18N status (guardian) | migrated=476 | 19:39:15 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master f40d87b14] 📊 I18N status (guardian) | migrated=476 | 19:41:31 UTC
+ 2 files changed, 36 insertions(+), 38 deletions(-)
+[master fdd06f963] 📊 I18N status (guardian) | migrated=476 | 19:43:37 UTC
+ 2 files changed, 36 insertions(+), 34 deletions(-)
+./i18n_guardian.sh: line 134: 1390219 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master e80c69045] 📊 I18N status (guardian) | migrated=476 | 19:45:42 UTC
+ 2 files changed, 50 insertions(+), 38 deletions(-)
+[master 778ca6ff0] 📊 I18N status (guardian) | migrated=476 | 19:47:55 UTC
+ 2 files changed, 52 insertions(+), 52 deletions(-)
+./i18n_guardian.sh: line 134: 1436046 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 1dce94dc4] 📊 I18N status (guardian) | migrated=476 | 19:50:07 UTC
+ 2 files changed, 48 insertions(+), 48 deletions(-)
+[master 00a4e1714] 📊 I18N status (guardian) | migrated=476 | 19:52:17 UTC
+ 2 files changed, 50 insertions(+), 50 deletions(-)
+./i18n_guardian.sh: line 31: 1437378 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 70a6c3939] 📊 I18N status (guardian) | migrated=476 | 19:54:29 UTC
+ 2 files changed, 54 insertions(+), 54 deletions(-)
+[master e54e136df] 📊 I18N status (guardian) | migrated=476 | 19:56:35 UTC
+ 2 files changed, 54 insertions(+), 54 deletions(-)
+[master 1805921ef] 📊 I18N status (guardian) | migrated=476 | 19:58:40 UTC
+ 2 files changed, 46 insertions(+), 46 deletions(-)
+[master 04ed383ef] 📊 I18N status (guardian) | migrated=476 | 20:00:45 UTC
+ 2 files changed, 46 insertions(+), 46 deletions(-)
+[master 5402f3133] 📊 I18N status (guardian) | migrated=476 | 20:02:53 UTC
+ 2 files changed, 46 insertions(+), 46 deletions(-)
+[master af2c3a9d0] 📊 I18N status (guardian) | migrated=476 | 20:04:59 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+./i18n_guardian.sh: line 31: 1445800 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 134: 1475618 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master d7972afed] 📊 I18N status (guardian) | migrated=476 | 20:11:26 UTC
+ 2 files changed, 56 insertions(+), 56 deletions(-)
+[master 8bb27476e] 📊 I18N status (guardian) | migrated=476 | 20:13:31 UTC
+ 2 files changed, 50 insertions(+), 50 deletions(-)
+[master 7e5e578d7] 📊 I18N status (guardian) | migrated=476 | 20:15:37 UTC
+ 2 files changed, 48 insertions(+), 48 deletions(-)
+[master 824a9ef08] 📊 I18N status (guardian) | migrated=476 | 20:17:43 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master a927c89f2] 📊 I18N status (guardian) | migrated=476 | 20:20:05 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master 6ba3c13fd] 📊 I18N status (guardian) | migrated=476 | 20:22:10 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master 9d84369c6] 📊 I18N status (guardian) | migrated=476 | 20:24:14 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master d3a254bf4] 📊 I18N status (guardian) | migrated=476 | 20:26:19 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master c3fa9372f] 📊 I18N status (guardian) | migrated=476 | 20:28:23 UTC
+ 2 files changed, 38 insertions(+), 44 deletions(-)
+[master 0d1fc89f5] 📊 I18N status (guardian) | migrated=476 | 20:30:29 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master aa3bd796b] 📊 I18N status (guardian) | migrated=476 | 20:32:33 UTC
+ 2 files changed, 38 insertions(+), 40 deletions(-)
+[master 8cf265892] 📊 I18N status (guardian) | migrated=476 | 20:34:38 UTC
+ 2 files changed, 40 insertions(+), 42 deletions(-)
+[master 6a23b63e3] 📊 I18N status (guardian) | migrated=476 | 20:36:46 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master 9d93c23d6] 📊 I18N status (guardian) | migrated=476 | 20:38:50 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master e00b47d37] 📊 I18N status (guardian) | migrated=476 | 20:40:56 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master f4dc28bb9] 📊 I18N status (guardian) | migrated=476 | 20:43:00 UTC
+ 2 files changed, 38 insertions(+), 40 deletions(-)
+[master 6abfc0324] 📊 I18N status (guardian) | migrated=476 | 20:45:11 UTC
+ 2 files changed, 38 insertions(+), 36 deletions(-)
+[master d196acb9b] 📊 I18N status (guardian) | migrated=476 | 20:47:15 UTC
+ 2 files changed, 40 insertions(+), 40 deletions(-)
+[master bea9161fc] 📊 I18N status (guardian) | migrated=476 | 20:49:21 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master e709c0397] 📊 I18N status (guardian) | migrated=476 | 20:51:25 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master 8e8e26b52] 📊 I18N status (guardian) | migrated=476 | 20:53:31 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master b42d92bb3] 📊 I18N status (guardian) | migrated=476 | 20:55:36 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 783657d8c] 📊 I18N status (guardian) | migrated=476 | 20:57:42 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master 072d34568] 📊 I18N status (guardian) | migrated=476 | 20:59:47 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master 5ec573388] 📊 I18N status (guardian) | migrated=476 | 21:01:52 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master cf7007075] 📊 I18N status (guardian) | migrated=476 | 21:04:01 UTC
+ 2 files changed, 38 insertions(+), 36 deletions(-)
+[master b6b84bcd7] 📊 I18N status (guardian) | migrated=476 | 21:06:05 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master 78561d589] 📊 I18N status (guardian) | migrated=476 | 21:08:09 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master 73703ff51] 📊 I18N status (guardian) | migrated=476 | 21:10:14 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master a1f0190af] 📊 I18N status (guardian) | migrated=476 | 21:12:19 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master b715c53fd] 📊 I18N status (guardian) | migrated=476 | 21:14:24 UTC
+ 2 files changed, 40 insertions(+), 38 deletions(-)
+[master d69507c5b] 📊 I18N status (guardian) | migrated=476 | 21:16:29 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master b2705dab2] 📊 I18N status (guardian) | migrated=476 | 21:18:33 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master 88f53cb99] 📊 I18N status (guardian) | migrated=476 | 21:20:38 UTC
+ 2 files changed, 30 insertions(+), 32 deletions(-)
+[master 740b1fd44] 📊 I18N status (guardian) | migrated=476 | 21:22:46 UTC
+ 2 files changed, 34 insertions(+), 38 deletions(-)
+[master 562087ec9] 📊 I18N status (guardian) | migrated=476 | 21:24:51 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 6c7eb2407] 📊 I18N status (guardian) | migrated=476 | 21:26:56 UTC
+ 2 files changed, 28 insertions(+), 28 deletions(-)
+[master 4bc82a7f3] 📊 I18N status (guardian) | migrated=476 | 21:29:01 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 467069872] 📊 I18N status (guardian) | migrated=476 | 21:31:07 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 4af7e0efe] 📊 I18N status (guardian) | migrated=476 | 21:33:12 UTC
+ 2 files changed, 28 insertions(+), 28 deletions(-)
+[master 77c3e69c7] 📊 I18N status (guardian) | migrated=476 | 21:35:17 UTC
+ 2 files changed, 36 insertions(+), 34 deletions(-)
+[master 65c5034e3] 📊 I18N status (guardian) | migrated=476 | 21:37:21 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master f98ea18fc] 📊 I18N status (guardian) | migrated=476 | 21:40:52 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 9e9407779] 📊 I18N status (guardian) | migrated=476 | 21:42:58 UTC
+ 2 files changed, 40 insertions(+), 40 deletions(-)
+[master 66defd2b6] 📊 I18N status (guardian) | migrated=476 | 21:45:03 UTC
+ 2 files changed, 36 insertions(+), 38 deletions(-)
+[master 9dd78bbe7] 📊 I18N status (guardian) | migrated=476 | 21:47:07 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 747416b67] 📊 I18N status (guardian) | migrated=476 | 21:49:14 UTC
+ 2 files changed, 36 insertions(+), 34 deletions(-)
+./i18n_guardian.sh: line 31: 1612861 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 1f3107bfe] 📊 I18N status (guardian) | migrated=476 | 21:51:27 UTC
+ 2 files changed, 56 insertions(+), 40 deletions(-)
+./i18n_guardian.sh: line 31: 1620145 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 31: 1626359 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master ad196a309] 📊 I18N status (guardian) | migrated=476 | 21:53:38 UTC
+ 2 files changed, 60 insertions(+), 60 deletions(-)
+[master b6b474951] 📊 I18N status (guardian) | migrated=476 | 21:55:43 UTC
+ 2 files changed, 58 insertions(+), 58 deletions(-)
+[master db8680b75] 📊 I18N status (guardian) | migrated=476 | 21:57:53 UTC
+ 2 files changed, 52 insertions(+), 52 deletions(-)
+./i18n_guardian.sh: line 31: 1626994 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 31: 1634051 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 31: 1634733 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master d00b9014b] 📊 I18N status (guardian) | migrated=476 | 22:00:07 UTC
+ 2 files changed, 56 insertions(+), 56 deletions(-)
+[master 5f886a966] 📊 I18N status (guardian) | migrated=476 | 22:02:12 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master d134cb1e4] 📊 I18N status (guardian) | migrated=476 | 22:04:16 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master a40d00cd1] 📊 I18N status (guardian) | migrated=476 | 22:06:20 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master b4a4a85ef] 📊 I18N status (guardian) | migrated=476 | 22:08:24 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master f21c98fc9] 📊 I18N status (guardian) | migrated=476 | 22:10:28 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master 2207be6e9] 📊 I18N status (guardian) | migrated=476 | 22:12:32 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 65afff69f] 📊 I18N status (guardian) | migrated=476 | 22:14:37 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master ab2063591] 📊 I18N status (guardian) | migrated=476 | 22:16:42 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 32c9b29d5] 📊 I18N status (guardian) | migrated=476 | 22:18:47 UTC
+ 2 files changed, 28 insertions(+), 28 deletions(-)
+[master 1f9cc842b] 📊 I18N status (guardian) | migrated=476 | 22:20:52 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 89a8950fd] 📊 I18N status (guardian) | migrated=476 | 22:22:56 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 11c2c1d02] 📊 I18N status (guardian) | migrated=476 | 22:25:00 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master b6e3ae993] 📊 I18N status (guardian) | migrated=476 | 22:27:04 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master a7831cd10] 📊 I18N status (guardian) | migrated=476 | 22:29:08 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master 20fb804d6] 📊 I18N status (guardian) | migrated=476 | 22:31:12 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 5e0c78d2e] 📊 I18N status (guardian) | migrated=476 | 22:33:17 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 1f5cd4d5c] 📊 I18N status (guardian) | migrated=476 | 22:35:21 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 639aa2bac] 📊 I18N status (guardian) | migrated=476 | 22:37:26 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 733dce851] 📊 I18N status (guardian) | migrated=476 | 22:39:29 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 7785a0dca] 📊 I18N status (guardian) | migrated=476 | 22:41:34 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 8971f70f7] 📊 I18N status (guardian) | migrated=476 | 22:43:38 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master cd89b5b1d] 📊 I18N status (guardian) | migrated=476 | 22:45:43 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master ef8aa6b24] 📊 I18N status (guardian) | migrated=476 | 22:47:47 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 5f56d159e] 📊 I18N status (guardian) | migrated=476 | 22:49:51 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 15e711eb5] 📊 I18N status (guardian) | migrated=476 | 22:51:56 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master c6a5a5ce7] 📊 I18N status (guardian) | migrated=476 | 22:54:00 UTC
+ 2 files changed, 32 insertions(+), 40 deletions(-)
+[master 1a92ccce0] 📊 I18N status (guardian) | migrated=476 | 22:56:04 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master 9c9e98d7a] 📊 I18N status (guardian) | migrated=476 | 22:58:09 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master 026d88102] 📊 I18N status (guardian) | migrated=476 | 23:00:13 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master 76d6adbc9] 📊 I18N status (guardian) | migrated=476 | 23:02:19 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master 9f912e399] 📊 I18N status (guardian) | migrated=476 | 23:04:23 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master ddd563d25] 📊 I18N status (guardian) | migrated=476 | 23:06:27 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master 6d8719a6f] 📊 I18N status (guardian) | migrated=476 | 23:08:31 UTC
+ 2 files changed, 22 insertions(+), 24 deletions(-)
+[master adc4b9f5e] 📊 I18N status (guardian) | migrated=476 | 23:10:35 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master 4ef0123e5] 📊 I18N status (guardian) | migrated=476 | 23:12:40 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master 64fb43100] 📊 I18N status (guardian) | migrated=476 | 23:14:44 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master 85061c022] 📊 I18N status (guardian) | migrated=476 | 23:16:48 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+./i18n_guardian.sh: line 134: 1634806 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master ceab0952f] 📊 I18N status (guardian) | migrated=476 | 23:18:55 UTC
+ 2 files changed, 36 insertions(+), 26 deletions(-)
+./i18n_guardian.sh: line 31: 1723353 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 134: 1739200 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 31: 1739629 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 51833e0c0] 📊 I18N status (guardian) | migrated=476 | 23:21:09 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master f740763b3] 📊 I18N status (guardian) | migrated=476 | 23:23:15 UTC
+ 2 files changed, 40 insertions(+), 40 deletions(-)
+./i18n_guardian.sh: line 134: 1747211 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 2a25bcaa2] 📊 I18N status (guardian) | migrated=476 | 23:25:23 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+./i18n_guardian.sh: line 31: 1750392 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 49aa0def6] 📊 I18N status (guardian) | migrated=476 | 23:27:30 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master a23eb9340] 📊 I18N status (guardian) | migrated=476 | 23:29:34 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+./i18n_guardian.sh: line 134: 1765395 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 1b32c68a0] 📊 I18N status (guardian) | migrated=476 | 23:31:44 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+./i18n_guardian.sh: line 134: 1768659 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 31: 1776992 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master a1f36757f] 📊 I18N status (guardian) | migrated=477 | 23:33:55 UTC
+ 2 files changed, 74 insertions(+), 74 deletions(-)
+./i18n_guardian.sh: line 31: 1777566 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 875c58d0a] 📊 I18N status (guardian) | migrated=477 | 23:36:03 UTC
+ 2 files changed, 58 insertions(+), 58 deletions(-)
+[master 1cb9f3fb6] 📊 I18N status (guardian) | migrated=477 | 23:38:09 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+./i18n_guardian.sh: line 134: 1780949 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 134: 1784811 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master c6a2f87a8] 📊 I18N status (guardian) | migrated=477 | 23:40:23 UTC
+ 2 files changed, 48 insertions(+), 48 deletions(-)
+./i18n_guardian.sh: line 47: 1785293 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 134: 1787647 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master e2f97f936] 📊 I18N status (guardian) | migrated=477 | 23:42:37 UTC
+ 2 files changed, 20 insertions(+), 20 deletions(-)
+./i18n_guardian.sh: line 134: 1787942 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master fd5c9366d] 📊 I18N status (guardian) | migrated=478 | 23:44:59 UTC
+ 2 files changed, 33 insertions(+), 32 deletions(-)
+[master 6b0b7e165] 📊 I18N status (guardian) | migrated=478 | 23:47:06 UTC
+ 2 files changed, 65 insertions(+), 66 deletions(-)
+[master f3cece74c] 📊 I18N status (guardian) | migrated=478 | 23:49:12 UTC
+ 2 files changed, 54 insertions(+), 54 deletions(-)
+./i18n_guardian.sh: line 31: 1791077 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 31: 1798454 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 134: 1798913 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 687ec01ff] 📊 I18N status (guardian) | migrated=? | 23:51:28 UTC
+ 2 files changed, 92 insertions(+), 110 deletions(-)
+[master 7c0f1c84b] 📊 I18N status (guardian) | migrated=? | 23:53:40 UTC
+ 2 files changed, 122 insertions(+), 104 deletions(-)
+[master d7121755f] 📊 I18N status (guardian) | migrated=3 | 23:55:51 UTC
+ 2 files changed, 98 insertions(+), 116 deletions(-)
+[master c298f0d90] 📊 I18N status (guardian) | migrated=4 | 23:58:00 UTC
+ 2 files changed, 90 insertions(+), 90 deletions(-)
+[master 350fdf446] 📊 I18N status (guardian) | migrated=6 | 00:00:05 UTC
+ 2 files changed, 102 insertions(+), 96 deletions(-)
+[master 18f34f63c] 📊 I18N status (guardian) | migrated=1 | 00:02:13 UTC
+ 2 files changed, 102 insertions(+), 108 deletions(-)
+[master 9a25c0b39] 📊 I18N status (guardian) | migrated=43 | 00:04:19 UTC
+ 2 files changed, 122 insertions(+), 104 deletions(-)
+[master ce6b21cac] 📊 I18N status (guardian) | migrated=18 | 00:06:26 UTC
+ 2 files changed, 118 insertions(+), 118 deletions(-)
+[master 9a6068874] 📊 I18N status (guardian) | migrated=66 | 00:08:33 UTC
+ 2 files changed, 116 insertions(+), 116 deletions(-)
+./i18n_guardian.sh: line 31: 1799200 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 31: 1957092 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 31: 1962376 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 5f2d6d0ef] 📊 I18N status (guardian) | migrated=40 | 00:10:49 UTC
+ 2 files changed, 114 insertions(+), 114 deletions(-)
+./i18n_guardian.sh: line 31: 1968007 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 31: 1979871 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master db32196e4] 📊 I18N status (guardian) | migrated=40 | 00:13:11 UTC
+ 2 files changed, 48 insertions(+), 48 deletions(-)
+./i18n_guardian.sh: line 31: 1990376 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 44422dced] 📊 I18N status (guardian) | migrated=40 | 00:15:20 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+./i18n_guardian.sh: line 31: 1992099 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 8297ea4b9] 📊 I18N status (guardian) | migrated=40 | 00:17:28 UTC
+ 2 files changed, 62 insertions(+), 62 deletions(-)
+[master 7e3a14ddd] 📊 I18N status (guardian) | migrated=40 | 00:19:32 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master 1e9c9d34d] 📊 I18N status (guardian) | migrated=40 | 00:21:36 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+./i18n_guardian.sh: line 31: 1994480 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 4c683931d] 📊 I18N status (guardian) | migrated=40 | 00:23:44 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+./i18n_guardian.sh: line 31: 2002346 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 0342a3780] 📊 I18N status (guardian) | migrated=40 | 00:25:52 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master b36eaf693] 📊 I18N status (guardian) | migrated=40 | 00:27:56 UTC
+ 2 files changed, 46 insertions(+), 46 deletions(-)
+[master 94bdc8993] 📊 I18N status (guardian) | migrated=40 | 00:30:01 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+./i18n_guardian.sh: line 31: 2003065 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master af75399e4] 📊 I18N status (guardian) | migrated=40 | 00:32:12 UTC
+ 2 files changed, 40 insertions(+), 40 deletions(-)
+[master 2f03dc6c8] 📊 I18N status (guardian) | migrated=40 | 00:34:17 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 919972347] 📊 I18N status (guardian) | migrated=82 | 00:36:21 UTC
+ 2 files changed, 114 insertions(+), 114 deletions(-)
+[master 1e9ad998c] 📊 I18N status (guardian) | migrated=96 | 00:38:26 UTC
+ 2 files changed, 112 insertions(+), 112 deletions(-)
+[master 2d1989e7f] 📊 I18N status (guardian) | migrated=100 | 00:40:31 UTC
+ 2 files changed, 98 insertions(+), 98 deletions(-)
+[master 45b0ae544] 📊 I18N status (guardian) | migrated=100 | 00:42:35 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 5b86307d3] 📊 I18N status (guardian) | migrated=100 | 00:44:40 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master a60244b59] 📊 I18N status (guardian) | migrated=100 | 00:46:47 UTC
+ 2 files changed, 48 insertions(+), 48 deletions(-)
+[master 56fb61cb0] 📊 I18N status (guardian) | migrated=100 | 00:48:54 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master 523de24d7] 📊 I18N status (guardian) | migrated=100 | 00:51:01 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master 8a0888fcc] 📊 I18N status (guardian) | migrated=100 | 00:53:12 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master fdcc38de7] 📊 I18N status (guardian) | migrated=100 | 00:55:24 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master 61446f4a6] 📊 I18N status (guardian) | migrated=100 | 00:57:35 UTC
+ 2 files changed, 48 insertions(+), 48 deletions(-)
+[master 0fbf4ea7a] 📊 I18N status (guardian) | migrated=100 | 00:59:40 UTC
+ 2 files changed, 40 insertions(+), 40 deletions(-)
+[master 4001c5660] 📊 I18N status (guardian) | migrated=100 | 01:01:46 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master 79203fd98] 📊 I18N status (guardian) | migrated=100 | 01:03:52 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 2aefc58d1] 📊 I18N status (guardian) | migrated=100 | 01:05:58 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master e5bc8e07a] 📊 I18N status (guardian) | migrated=100 | 01:08:06 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 98d49a6ba] 📊 I18N status (guardian) | migrated=100 | 01:10:10 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 079ddcaec] 📊 I18N status (guardian) | migrated=100 | 01:12:14 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master b5effbeef] 📊 I18N status (guardian) | migrated=100 | 01:14:21 UTC
+ 2 files changed, 28 insertions(+), 30 deletions(-)
+[master 562d9aac4] 📊 I18N status (guardian) | migrated=100 | 01:16:26 UTC
+ 2 files changed, 30 insertions(+), 28 deletions(-)
+[master 1c55f357c] 📊 I18N status (guardian) | migrated=100 | 01:18:31 UTC
+ 2 files changed, 24 insertions(+), 30 deletions(-)
+[master 4cbffa1d3] 📊 I18N status (guardian) | migrated=100 | 01:20:35 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master 0d3d8f690] 📊 I18N status (guardian) | migrated=100 | 01:22:39 UTC
+ 2 files changed, 30 insertions(+), 24 deletions(-)
+[master 3525d5811] 📊 I18N status (guardian) | migrated=100 | 01:24:43 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master f9ac26f45] 📊 I18N status (guardian) | migrated=100 | 01:26:48 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master 4e153011c] 📊 I18N status (guardian) | migrated=100 | 01:28:54 UTC
+ 2 files changed, 54 insertions(+), 54 deletions(-)
+[master 0b25345ce] 📊 I18N status (guardian) | migrated=100 | 01:30:59 UTC
+ 2 files changed, 24 insertions(+), 32 deletions(-)
+[master e2aefc2d4] 📊 I18N status (guardian) | migrated=100 | 01:33:03 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master 25df67244] 📊 I18N status (guardian) | migrated=100 | 01:35:09 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master ca0382b84] 📊 I18N status (guardian) | migrated=100 | 01:37:14 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master 4538745c3] 📊 I18N status (guardian) | migrated=100 | 01:39:18 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master e346fffb3] 📊 I18N status (guardian) | migrated=100 | 01:41:22 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master 4f07e1172] 📊 I18N status (guardian) | migrated=100 | 01:43:26 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master 307bf7f05] 📊 I18N status (guardian) | migrated=100 | 01:45:30 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master 7dda799eb] 📊 I18N status (guardian) | migrated=100 | 01:47:36 UTC
+ 2 files changed, 22 insertions(+), 24 deletions(-)
+[master e249be330] 📊 I18N status (guardian) | migrated=100 | 01:49:40 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master a865a171d] 📊 I18N status (guardian) | migrated=100 | 01:51:44 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master 3a3a3d089] 📊 I18N status (guardian) | migrated=100 | 01:53:48 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master e90e2beba] 📊 I18N status (guardian) | migrated=100 | 01:55:52 UTC
+ 2 files changed, 28 insertions(+), 28 deletions(-)
+[master 6aeb74b3e] 📊 I18N status (guardian) | migrated=100 | 01:57:57 UTC
+ 2 files changed, 28 insertions(+), 28 deletions(-)
+[master 71eb92c47] 📊 I18N status (guardian) | migrated=100 | 02:00:05 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master bef9de2a8] 📊 I18N status (guardian) | migrated=100 | 02:02:09 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master e5d304b0c] 📊 I18N status (guardian) | migrated=100 | 02:04:14 UTC
+ 2 files changed, 26 insertions(+), 22 deletions(-)
+[master bae67ee10] 📊 I18N status (guardian) | migrated=100 | 02:06:18 UTC
+ 2 files changed, 22 insertions(+), 26 deletions(-)
+[master 862e32d0f] 📊 I18N status (guardian) | migrated=100 | 02:08:22 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master 1dd558757] 📊 I18N status (guardian) | migrated=100 | 02:10:26 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master 29c0f1004] 📊 I18N status (guardian) | migrated=100 | 02:12:30 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master 950f94441] 📊 I18N status (guardian) | migrated=100 | 02:14:34 UTC
+ 2 files changed, 28 insertions(+), 24 deletions(-)
+[master 14eeb529c] 📊 I18N status (guardian) | migrated=100 | 02:16:38 UTC
+ 2 files changed, 26 insertions(+), 26 deletions(-)
+[master d815ce1df] 📊 I18N status (guardian) | migrated=100 | 02:18:43 UTC
+ 2 files changed, 22 insertions(+), 26 deletions(-)
+[master 6361e3f3f] 📊 I18N status (guardian) | migrated=100 | 02:20:47 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master 6661e1de6] 📊 I18N status (guardian) | migrated=100 | 02:22:51 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master 9c7cf6b9d] 📊 I18N status (guardian) | migrated=100 | 02:24:55 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master 0b4a141a3] 📊 I18N status (guardian) | migrated=100 | 02:27:00 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master af00561cd] 📊 I18N status (guardian) | migrated=100 | 02:29:04 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master c0c52def0] 📊 I18N status (guardian) | migrated=100 | 02:31:08 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master 2023bd358] 📊 I18N status (guardian) | migrated=100 | 02:33:13 UTC
+ 2 files changed, 44 insertions(+), 42 deletions(-)
+[master 3cf69a9b4] 📊 I18N status (guardian) | migrated=100 | 02:35:18 UTC
+ 2 files changed, 38 insertions(+), 40 deletions(-)
+[master 7a0e17bd9] 📊 I18N status (guardian) | migrated=100 | 02:37:24 UTC
+ 2 files changed, 40 insertions(+), 42 deletions(-)
+[master 37dc4062b] 📊 I18N status (guardian) | migrated=100 | 02:39:30 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master 4cf9322d3] 📊 I18N status (guardian) | migrated=100 | 02:43:38 UTC
+ 2 files changed, 40 insertions(+), 38 deletions(-)
+[master 4ba0fd096] 📊 I18N status (guardian) | migrated=100 | 02:45:43 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 4613c0ddc] 📊 I18N status (guardian) | migrated=100 | 02:47:48 UTC
+ 2 files changed, 40 insertions(+), 42 deletions(-)
+[master 7ecd15b42] 📊 I18N status (guardian) | migrated=100 | 02:49:52 UTC
+ 2 files changed, 46 insertions(+), 44 deletions(-)
+[master 49a568211] 📊 I18N status (guardian) | migrated=100 | 02:51:58 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master 12eb70163] 📊 I18N status (guardian) | migrated=100 | 02:54:17 UTC
+ 2 files changed, 38 insertions(+), 40 deletions(-)
+[master fa7ea591a] 📊 I18N status (guardian) | migrated=100 | 02:56:23 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master 59fefea44] 📊 I18N status (guardian) | migrated=100 | 02:58:27 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master 40f5eb899] 📊 I18N status (guardian) | migrated=100 | 03:02:36 UTC
+ 2 files changed, 36 insertions(+), 38 deletions(-)
+[master ce70badf7] 📊 I18N status (guardian) | migrated=100 | 03:06:45 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master d25c1d180] 📊 I18N status (guardian) | migrated=100 | 03:08:51 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 52d58f7bb] 📊 I18N status (guardian) | migrated=100 | 03:10:58 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 710218325] 📊 I18N status (guardian) | migrated=100 | 03:13:04 UTC
+ 2 files changed, 36 insertions(+), 38 deletions(-)
+[master f2481e3a8] 📊 I18N status (guardian) | migrated=100 | 03:15:09 UTC
+ 2 files changed, 40 insertions(+), 38 deletions(-)
+[master 9993a38dd] 📊 I18N status (guardian) | migrated=100 | 03:17:14 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 7694849dc] 📊 I18N status (guardian) | migrated=100 | 03:19:19 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master bac0fc594] 📊 I18N status (guardian) | migrated=100 | 03:21:26 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master b5050ded8] 📊 I18N status (guardian) | migrated=100 | 03:23:34 UTC
+ 2 files changed, 38 insertions(+), 40 deletions(-)
+[master a567f4a61] 📊 I18N status (guardian) | migrated=100 | 03:25:38 UTC
+ 2 files changed, 38 insertions(+), 36 deletions(-)
+[master d7160aacb] 📊 I18N status (guardian) | migrated=100 | 03:27:44 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master 7a0547942] 📊 I18N status (guardian) | migrated=100 | 03:29:51 UTC
+ 2 files changed, 36 insertions(+), 38 deletions(-)
+[master b6d805360] 📊 I18N status (guardian) | migrated=100 | 03:31:56 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 4985ed048] 📊 I18N status (guardian) | migrated=100 | 03:34:10 UTC
+ 2 files changed, 38 insertions(+), 36 deletions(-)
+[master f9be15f00] 📊 I18N status (guardian) | migrated=100 | 03:36:16 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master d9f9eb954] 📊 I18N status (guardian) | migrated=100 | 03:38:24 UTC
+ 2 files changed, 36 insertions(+), 38 deletions(-)
+[master 80dc0f4be] 📊 I18N status (guardian) | migrated=100 | 03:40:33 UTC
+ 2 files changed, 36 insertions(+), 34 deletions(-)
+[master 9e847ba71] 📊 I18N status (guardian) | migrated=100 | 03:42:38 UTC
+ 2 files changed, 36 insertions(+), 38 deletions(-)
+[master 8b4e63e6c] 📊 I18N status (guardian) | migrated=100 | 03:44:43 UTC
+ 2 files changed, 38 insertions(+), 36 deletions(-)
+[master 523dcbf99] 📊 I18N status (guardian) | migrated=100 | 03:46:48 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master 60b70c298] 📊 I18N status (guardian) | migrated=100 | 03:48:57 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master c5489a837] 📊 I18N status (guardian) | migrated=100 | 03:51:05 UTC
+ 2 files changed, 36 insertions(+), 38 deletions(-)
+[master ed8637c8e] 📊 I18N status (guardian) | migrated=100 | 03:53:10 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 43de72775] 📊 I18N status (guardian) | migrated=100 | 03:55:16 UTC
+ 2 files changed, 38 insertions(+), 36 deletions(-)
+[master 4bef17d6a] 📊 I18N status (guardian) | migrated=100 | 03:57:21 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master 1f8827386] 📊 I18N status (guardian) | migrated=100 | 03:59:27 UTC
+ 2 files changed, 38 insertions(+), 36 deletions(-)
+[master af06ca2a7] 📊 I18N status (guardian) | migrated=100 | 04:01:33 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master 35ad7b3f1] 📊 I18N status (guardian) | migrated=100 | 04:03:38 UTC
+ 2 files changed, 38 insertions(+), 36 deletions(-)
+[master e85167d47] 📊 I18N status (guardian) | migrated=100 | 04:05:43 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master 338f0ef5e] 📊 I18N status (guardian) | migrated=100 | 04:07:49 UTC
+ 2 files changed, 36 insertions(+), 38 deletions(-)
+[master 4f15e18ec] 📊 I18N status (guardian) | migrated=100 | 04:09:54 UTC
+ 2 files changed, 38 insertions(+), 36 deletions(-)
+[master d90d4e671] 📊 I18N status (guardian) | migrated=100 | 04:12:02 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master d5df8b51b] 📊 I18N status (guardian) | migrated=100 | 04:14:10 UTC
+ 2 files changed, 38 insertions(+), 36 deletions(-)
+[master bdc6c862d] 📊 I18N status (guardian) | migrated=100 | 04:16:18 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master f0319552f] 📊 I18N status (guardian) | migrated=100 | 04:18:25 UTC
+ 2 files changed, 38 insertions(+), 36 deletions(-)
+[master 4ff34e31b] 📊 I18N status (guardian) | migrated=100 | 04:20:35 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master 1bca1b0d1] 📊 I18N status (guardian) | migrated=100 | 04:22:45 UTC
+ 2 files changed, 36 insertions(+), 38 deletions(-)
+[master bcfdda9ad] 📊 I18N status (guardian) | migrated=100 | 04:24:50 UTC
+ 2 files changed, 42 insertions(+), 40 deletions(-)
+./i18n_guardian.sh: line 31: 2214291 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 880bf9227] 📊 I18N status (guardian) | migrated=100 | 04:27:02 UTC
+ 2 files changed, 56 insertions(+), 40 deletions(-)
+./i18n_guardian.sh: line 31: 2214974 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 31: 2215770 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master fcec6c7cb] 📊 I18N status (guardian) | migrated=116 | 04:29:15 UTC
+ 2 files changed, 106 insertions(+), 106 deletions(-)
+[master e8e522b6a] 📊 I18N status (guardian) | migrated=147 | 04:31:23 UTC
+ 2 files changed, 108 insertions(+), 108 deletions(-)
+[master eff70cbcc] 📊 I18N status (guardian) | migrated=160 | 04:33:32 UTC
+ 2 files changed, 110 insertions(+), 110 deletions(-)
+[master daf633d15] 📊 I18N status (guardian) | migrated=160 | 04:35:36 UTC
+ 2 files changed, 46 insertions(+), 46 deletions(-)
+[master 61cfe1850] 📊 I18N status (guardian) | migrated=160 | 04:37:40 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master a2be09ae4] 📊 I18N status (guardian) | migrated=160 | 04:39:47 UTC
+ 2 files changed, 48 insertions(+), 48 deletions(-)
+[master 98b201e0e] 📊 I18N status (guardian) | migrated=160 | 04:41:55 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 2787fdcaa] 📊 I18N status (guardian) | migrated=160 | 04:44:00 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master 5695b2126] 📊 I18N status (guardian) | migrated=160 | 04:46:04 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master 9655c1349] 📊 I18N status (guardian) | migrated=160 | 04:48:08 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master 78aaf1eb8] 📊 I18N status (guardian) | migrated=160 | 04:52:18 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master 095e2a1c8] 📊 I18N status (guardian) | migrated=160 | 04:54:22 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 8a531131c] 📊 I18N status (guardian) | migrated=160 | 04:56:27 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 25109ecbc] 📊 I18N status (guardian) | migrated=160 | 04:58:35 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master d8b5f43c4] 📊 I18N status (guardian) | migrated=160 | 05:00:41 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 864f383c6] 📊 I18N status (guardian) | migrated=160 | 05:02:45 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master f089bb4d9] 📊 I18N status (guardian) | migrated=160 | 05:04:49 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 79736aa92] 📊 I18N status (guardian) | migrated=160 | 05:06:53 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+./i18n_guardian.sh: line 31: 2216521 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 31: 2269714 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 47ec1908f] 📊 I18N status (guardian) | migrated=160 | 05:09:11 UTC
+ 2 files changed, 56 insertions(+), 56 deletions(-)
+./i18n_guardian.sh: line 134: 2272056 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 111a4e763] 📊 I18N status (guardian) | migrated=160 | 05:11:22 UTC
+ 2 files changed, 60 insertions(+), 60 deletions(-)
+./i18n_guardian.sh: line 31: 2275090 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 482aca5d8] 📊 I18N status (guardian) | migrated=159 | 05:13:33 UTC
+ 2 files changed, 66 insertions(+), 66 deletions(-)
+[master cddc5e587] 📊 I18N status (guardian) | migrated=? | 05:15:40 UTC
+ 2 files changed, 48 insertions(+), 48 deletions(-)
+./i18n_guardian.sh: line 31: 2281875 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 3afa3f7c5] 📊 I18N status (guardian) | migrated=159 | 05:17:50 UTC
+ 2 files changed, 50 insertions(+), 50 deletions(-)
+[master 316e180d2] 📊 I18N status (guardian) | migrated=155 | 05:19:57 UTC
+ 2 files changed, 62 insertions(+), 62 deletions(-)
+[master 58c5b53aa] 📊 I18N status (guardian) | migrated=155 | 05:22:05 UTC
+ 2 files changed, 48 insertions(+), 48 deletions(-)
+./i18n_guardian.sh: line 31: 2325144 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 20f467abb] 📊 I18N status (guardian) | migrated=155 | 05:24:15 UTC
+ 2 files changed, 26 insertions(+), 26 deletions(-)
+./i18n_guardian.sh: line 31: 2340398 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master c33078eda] 📊 I18N status (guardian) | migrated=155 | 05:26:26 UTC
+ 2 files changed, 46 insertions(+), 46 deletions(-)
+[master c09881026] 📊 I18N status (guardian) | migrated=155 | 05:28:36 UTC
+ 2 files changed, 50 insertions(+), 50 deletions(-)
+./i18n_guardian.sh: line 31: 2354052 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 2b60ae16f] 📊 I18N status (guardian) | migrated=0 | 05:30:46 UTC
+ 2 files changed, 62 insertions(+), 80 deletions(-)
+./i18n_guardian.sh: line 31: 2360926 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 8448c7c47] 📊 I18N status (guardian) | migrated=0 | 05:33:04 UTC
+ 2 files changed, 48 insertions(+), 48 deletions(-)
+[master bd9bbe15c] 📊 I18N status (guardian) | migrated=0 | 05:35:20 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+./i18n_guardian.sh: line 31: 2388562 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 31: 2395528 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 8d99dd363] 📊 I18N status (guardian) | migrated=0 | 05:37:37 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+./i18n_guardian.sh: line 31: 2397815 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 31: 2400943 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 44e04d267] 📊 I18N status (guardian) | migrated=0 | 05:39:53 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+./i18n_guardian.sh: line 134: 2403324 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master a858056ac] 📊 I18N status (guardian) | migrated=0 | 05:42:09 UTC
+ 2 files changed, 40 insertions(+), 40 deletions(-)
+[master edbb79dfa] 📊 I18N status (guardian) | migrated=0 | 05:44:18 UTC
+ 2 files changed, 48 insertions(+), 48 deletions(-)
+./i18n_guardian.sh: line 134: 2411828 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master b49221d10] 📊 I18N status (guardian) | migrated=0 | 05:46:33 UTC
+ 2 files changed, 52 insertions(+), 52 deletions(-)
+./i18n_guardian.sh: line 134: 2433482 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 582f89477] 📊 I18N status (guardian) | migrated=12 | 05:48:46 UTC
+ 2 files changed, 70 insertions(+), 52 deletions(-)
+[master 84edbc8d4] 📊 I18N status (guardian) | migrated=22 | 05:50:54 UTC
+ 2 files changed, 84 insertions(+), 82 deletions(-)
+[master e58c49195] 📊 I18N status (guardian) | migrated=22 | 05:53:16 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master 0cae3c6b4] 📊 I18N status (guardian) | migrated=22 | 05:55:21 UTC
+ 2 files changed, 62 insertions(+), 62 deletions(-)
+./i18n_guardian.sh: line 31: 2449750 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+./i18n_guardian.sh: line 134: 2479999 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master 5b3c036d7] 📊 I18N status (guardian) | migrated=22 | 05:57:32 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master e55af4eb7] 📊 I18N status (guardian) | migrated=87 | 05:59:37 UTC
+ 2 files changed, 98 insertions(+), 98 deletions(-)
+[master 78b5814d4] 📊 I18N status (guardian) | migrated=231 | 06:01:46 UTC
+ 2 files changed, 88 insertions(+), 88 deletions(-)
+[master 20b14cf9c] 📊 I18N status (guardian) | migrated=327 | 06:03:51 UTC
+ 2 files changed, 98 insertions(+), 98 deletions(-)
+[master fb847746a] 📊 I18N status (guardian) | migrated=438 | 06:05:56 UTC
+ 2 files changed, 100 insertions(+), 100 deletions(-)
+[master 3b4fe4190] 📊 I18N status (guardian) | migrated=552 | 06:08:02 UTC
+ 2 files changed, 104 insertions(+), 104 deletions(-)
+[master 75f4b6c22] 📊 I18N status (guardian) | migrated=664 | 06:10:07 UTC
+ 2 files changed, 86 insertions(+), 86 deletions(-)
+[master bc1056287] 📊 I18N status (guardian) | migrated=715 | 06:12:12 UTC
+ 2 files changed, 96 insertions(+), 96 deletions(-)
+[master 29141586d] 📊 I18N status (guardian) | migrated=715 | 06:14:16 UTC
+ 2 files changed, 46 insertions(+), 46 deletions(-)
+[master 394c45731] 📊 I18N status (guardian) | migrated=715 | 06:16:22 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master bd79be145] 📊 I18N status (guardian) | migrated=715 | 06:18:26 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master 0b86fd049] 📊 I18N status (guardian) | migrated=715 | 06:20:34 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 08fd89234] 📊 I18N status (guardian) | migrated=715 | 06:22:38 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 7f965827a] 📊 I18N status (guardian) | migrated=715 | 06:26:48 UTC
+ 2 files changed, 38 insertions(+), 44 deletions(-)
+[master 33039da34] 📊 I18N status (guardian) | migrated=715 | 06:28:52 UTC
+ 2 files changed, 38 insertions(+), 32 deletions(-)
+[master 37d275e2e] 📊 I18N status (guardian) | migrated=715 | 06:30:57 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master d5f387ff3] 📊 I18N status (guardian) | migrated=715 | 06:33:02 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 7c8649438] 📊 I18N status (guardian) | migrated=715 | 06:35:06 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master ac7b96994] 📊 I18N status (guardian) | migrated=715 | 06:37:11 UTC
+ 2 files changed, 24 insertions(+), 32 deletions(-)
+[master 1b1f2229c] 📊 I18N status (guardian) | migrated=715 | 06:39:15 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master 614ef68fb] 📊 I18N status (guardian) | migrated=715 | 06:41:20 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master 80f76a213] 📊 I18N status (guardian) | migrated=715 | 06:43:26 UTC
+ 2 files changed, 26 insertions(+), 26 deletions(-)
+[master af1d35876] 📊 I18N status (guardian) | migrated=715 | 06:45:31 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master 98f2790a2] 📊 I18N status (guardian) | migrated=715 | 06:47:38 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master f4052acdc] 📊 I18N status (guardian) | migrated=715 | 06:49:43 UTC
+ 2 files changed, 22 insertions(+), 24 deletions(-)
+[master 7bad6f411] 📊 I18N status (guardian) | migrated=715 | 06:51:47 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master 085ecf7c8] 📊 I18N status (guardian) | migrated=715 | 06:53:56 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master 6111871ca] 📊 I18N status (guardian) | migrated=715 | 06:56:06 UTC
+ 2 files changed, 66 insertions(+), 56 deletions(-)
+[master 2c396b318] 📊 I18N status (guardian) | migrated=715 | 06:58:11 UTC
+ 2 files changed, 66 insertions(+), 66 deletions(-)
+[master 1bdfde375] 📊 I18N status (guardian) | migrated=715 | 07:00:17 UTC
+ 2 files changed, 44 insertions(+), 44 deletions(-)
+[master 6b9d8237a] 📊 I18N status (guardian) | migrated=715 | 07:02:21 UTC
+ 2 files changed, 50 insertions(+), 50 deletions(-)
+[master 7ff2c3ec5] 📊 I18N status (guardian) | migrated=715 | 07:04:27 UTC
+ 2 files changed, 28 insertions(+), 34 deletions(-)
+[master cd9638c1c] 📊 I18N status (guardian) | migrated=0 | 07:06:31 UTC
+ 2 files changed, 52 insertions(+), 74 deletions(-)
+[master 382f58652] 📊 I18N status (guardian) | migrated=0 | 07:08:36 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master c592fefd0] 📊 I18N status (guardian) | migrated=0 | 07:10:43 UTC
+ 2 files changed, 42 insertions(+), 32 deletions(-)
+[master 395f29e1b] 📊 I18N status (guardian) | migrated=0 | 07:12:47 UTC
+ 2 files changed, 48 insertions(+), 48 deletions(-)
+./i18n_guardian.sh: line 31: 2480310 Killed                  nohup bash "$WORK_DIR/$WORKER_SCRIPT" --continuous --batch 20 --delay 4 --no-git >> "$LOG_FILE" 2>&1
+[master f1fa1ea3b] 📊 I18N status (guardian) | migrated=0 | 07:15:00 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master 8e4ef72e9] 📊 I18N status (guardian) | migrated=0 | 07:17:04 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master c1beb29d2] 📊 I18N status (guardian) | migrated=0 | 07:19:10 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 7c80df011] 📊 I18N status (guardian) | migrated=0 | 07:21:18 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master b12f44b8d] 📊 I18N status (guardian) | migrated=0 | 07:23:25 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master 6d7f561b0] 📊 I18N status (guardian) | migrated=0 | 07:25:29 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master 6399111f2] 📊 I18N status (guardian) | migrated=0 | 07:27:35 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master 1d39a4c2d] 📊 I18N status (guardian) | migrated=0 | 07:29:39 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 7134969c7] 📊 I18N status (guardian) | migrated=3 | 07:31:43 UTC
+ 2 files changed, 50 insertions(+), 46 deletions(-)
+[master 0eae1fd43] 📊 I18N status (guardian) | migrated=3 | 07:33:50 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master 6717f4c2d] 📊 I18N status (guardian) | migrated=3 | 07:35:54 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 506949740] 📊 I18N status (guardian) | migrated=3 | 07:37:59 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master bfdd2f7c0] 📊 I18N status (guardian) | migrated=3 | 07:40:04 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 7eaeb2a2c] 📊 I18N status (guardian) | migrated=3 | 07:42:08 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 10ecc8124] 📊 I18N status (guardian) | migrated=3 | 07:44:13 UTC
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+[master 7125c4bd5] 📊 I18N status (guardian) | migrated=3 | 07:46:18 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 5072ff183] 📊 I18N status (guardian) | migrated=3 | 07:48:22 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 180b532f7] 📊 I18N status (guardian) | migrated=3 | 07:50:29 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 54f60390f] 📊 I18N status (guardian) | migrated=3 | 07:52:34 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master c6f351674] 📊 I18N status (guardian) | migrated=3 | 07:54:38 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master 3b134187b] 📊 I18N status (guardian) | migrated=3 | 07:56:44 UTC
+ 2 files changed, 26 insertions(+), 32 deletions(-)
+[master 15fe81a93] 📊 I18N status (guardian) | migrated=3 | 07:58:48 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master c3435bc8c] 📊 I18N status (guardian) | migrated=3 | 08:00:52 UTC
+ 2 files changed, 30 insertions(+), 24 deletions(-)
+[master 13f3347fd] 📊 I18N status (guardian) | migrated=3 | 08:02:58 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 7a2651250] 📊 I18N status (guardian) | migrated=3 | 08:05:04 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master d0c77505d] 📊 I18N status (guardian) | migrated=3 | 08:07:14 UTC
+ 2 files changed, 50 insertions(+), 50 deletions(-)
+[master 578b2075f] 📊 I18N status (guardian) | migrated=3 | 08:09:19 UTC
+ 2 files changed, 24 insertions(+), 32 deletions(-)
+[master e8e3ed332] 📊 I18N status (guardian) | migrated=3 | 08:11:23 UTC
+ 2 files changed, 32 insertions(+), 26 deletions(-)
+[master 54348c4bc] 📊 I18N status (guardian) | migrated=3 | 08:13:29 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 138b1dd9a] 📊 I18N status (guardian) | migrated=3 | 08:15:35 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 79c78aafe] 📊 I18N status (guardian) | migrated=3 | 08:17:39 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 0ad75b4fa] 📊 I18N status (guardian) | migrated=3 | 08:19:44 UTC
+ 2 files changed, 24 insertions(+), 30 deletions(-)
+[master 3e798c656] 📊 I18N status (guardian) | migrated=3 | 08:21:49 UTC
+ 2 files changed, 24 insertions(+), 24 deletions(-)
+[master c78b47219] 📊 I18N status (guardian) | migrated=3 | 08:23:53 UTC
+ 2 files changed, 22 insertions(+), 24 deletions(-)
+[master 4b753a129] 📊 I18N status (guardian) | migrated=3 | 08:25:57 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master 0690d5f4d] 📊 I18N status (guardian) | migrated=3 | 08:28:02 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master 6c95c37c9] 📊 I18N status (guardian) | migrated=3 | 08:30:07 UTC
+ 2 files changed, 28 insertions(+), 22 deletions(-)
+[master 76959feaa] 📊 I18N status (guardian) | migrated=3 | 08:32:12 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master 78bfe1e29] 📊 I18N status (guardian) | migrated=3 | 08:34:16 UTC
+ 2 files changed, 26 insertions(+), 30 deletions(-)
+[master d2766497f] 📊 I18N status (guardian) | migrated=3 | 08:36:22 UTC
+ 2 files changed, 28 insertions(+), 24 deletions(-)
+[master e85440aa4] 📊 I18N status (guardian) | migrated=3 | 08:38:26 UTC
+ 2 files changed, 28 insertions(+), 28 deletions(-)
+[master 0c37b8d30] 📊 I18N status (guardian) | migrated=3 | 08:40:31 UTC
+ 2 files changed, 28 insertions(+), 28 deletions(-)
+[master 3e164de2c] 📊 I18N status (guardian) | migrated=3 | 08:42:39 UTC
+ 2 files changed, 30 insertions(+), 30 deletions(-)
+[master 052bc7443] 📊 I18N status (guardian) | migrated=3 | 08:44:44 UTC
+ 2 files changed, 24 insertions(+), 30 deletions(-)
+[master 13f816f06] 📊 I18N status (guardian) | migrated=3 | 08:46:48 UTC
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+[master 6a596e77a] 📊 I18N status (guardian) | migrated=3 | 08:48:52 UTC
+ 2 files changed, 28 insertions(+), 22 deletions(-)
+[master 7cd8fd10c] 📊 I18N status (guardian) | migrated=3 | 08:50:56 UTC
+ 2 files changed, 28 insertions(+), 28 deletions(-)
+[master da85b7237] 📊 I18N status (guardian) | migrated=3 | 08:53:01 UTC
+ 2 files changed, 22 insertions(+), 28 deletions(-)
+[master f55d981a5] 📊 I18N status (guardian) | migrated=3 | 08:55:05 UTC
+ 2 files changed, 48 insertions(+), 46 deletions(-)
+[master 239f4ec83] 📊 I18N status (guardian) | migrated=3 | 08:57:11 UTC
+ 2 files changed, 40 insertions(+), 38 deletions(-)
+[master a58cddf2e] 📊 I18N status (guardian) | migrated=3 | 08:59:16 UTC
+ 2 files changed, 40 insertions(+), 40 deletions(-)
+[master da9750f6c] 📊 I18N status (guardian) | migrated=3 | 09:01:22 UTC
+ 2 files changed, 38 insertions(+), 40 deletions(-)
+[master 1b7012c1c] 📊 I18N status (guardian) | migrated=3 | 09:03:26 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master b9b2a5fc4] 📊 I18N status (guardian) | migrated=3 | 09:05:32 UTC
+ 2 files changed, 40 insertions(+), 42 deletions(-)
+[master 7c80f1a30] 📊 I18N status (guardian) | migrated=3 | 09:07:38 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 855cec70c] 📊 I18N status (guardian) | migrated=3 | 09:09:42 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master 9fa8a15c0] 📊 I18N status (guardian) | migrated=3 | 09:11:47 UTC
+ 2 files changed, 40 insertions(+), 36 deletions(-)
+[master b97d93a57] 📊 I18N status (guardian) | migrated=3 | 09:13:53 UTC
+ 2 files changed, 44 insertions(+), 42 deletions(-)
+[master 879558c3b] 📊 I18N status (guardian) | migrated=3 | 09:15:59 UTC
+ 2 files changed, 38 insertions(+), 42 deletions(-)
+[master 3c9a68ce6] 📊 I18N status (guardian) | migrated=3 | 09:18:06 UTC
+ 2 files changed, 38 insertions(+), 40 deletions(-)
+[master fc4c341b5] 📊 I18N status (guardian) | migrated=3 | 09:20:12 UTC
+ 2 files changed, 40 insertions(+), 38 deletions(-)
+[master 550eb95e0] 📊 I18N status (guardian) | migrated=3 | 09:22:19 UTC
+ 2 files changed, 38 insertions(+), 38 deletions(-)
+[master 871cf17da] 📊 I18N status (guardian) | migrated=3 | 09:24:26 UTC
+ 2 files changed, 36 insertions(+), 38 deletions(-)
+[master 590e8404b] 📊 I18N status (guardian) | migrated=3 | 09:26:31 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master c5c3fc6f1] 📊 I18N status (guardian) | migrated=3 | 09:28:36 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 2f58641dc] 📊 I18N status (guardian) | migrated=3 | 09:30:40 UTC
+ 2 files changed, 36 insertions(+), 38 deletions(-)
+[master c214d2073] 📊 I18N status (guardian) | migrated=3 | 09:32:48 UTC
+ 2 files changed, 40 insertions(+), 38 deletions(-)
+[master 70418cd06] 📊 I18N status (guardian) | migrated=3 | 09:34:54 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 66f306795] 📊 I18N status (guardian) | migrated=3 | 09:36:59 UTC
+ 2 files changed, 36 insertions(+), 38 deletions(-)
+[master 36d2730c7] 📊 I18N status (guardian) | migrated=3 | 09:39:05 UTC
+ 2 files changed, 40 insertions(+), 38 deletions(-)
+[master 6cca4050d] 📊 I18N status (guardian) | migrated=3 | 09:41:11 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master a3efedd92] 📊 I18N status (guardian) | migrated=3 | 09:43:16 UTC
+ 2 files changed, 34 insertions(+), 34 deletions(-)
+[master feb56babc] 📊 I18N status (guardian) | migrated=3 | 09:45:25 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master 97ce7033d] 📊 I18N status (guardian) | migrated=3 | 09:47:30 UTC
+ 2 files changed, 38 insertions(+), 40 deletions(-)
+[master 761591d8e] 📊 I18N status (guardian) | migrated=3 | 09:49:37 UTC
+ 2 files changed, 38 insertions(+), 36 deletions(-)
+[master 3baf616e0] 📊 I18N status (guardian) | migrated=3 | 09:51:44 UTC
+ 2 files changed, 36 insertions(+), 36 deletions(-)
+[master ffcc37239] 📊 I18N status (guardian) | migrated=3 | 09:55:55 UTC
+ 2 files changed, 34 insertions(+), 36 deletions(-)
+[master 2da98a922] 📊 I18N status (guardian) | migrated=3 | 09:58:00 UTC
+ 2 files changed, 42 insertions(+), 42 deletions(-)
+[master ea2b44240] 📊 I18N status (guardian) | migrated=3 | 10:00:05 UTC
+ 2 files changed, 40 insertions(+), 40 deletions(-)
+[master 8e260d46c] 📊 I18N status (guardian) | migrated=3 | 10:02:10 UTC
+ 2 files changed, 36 insertions(+), 38 deletions(-)

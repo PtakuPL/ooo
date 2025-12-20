@@ -102,9 +102,9 @@ keywordHandler:addKeyword({ "fish" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addKeyword({ "cormaya" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.pemaret.stdmod_6" })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.pemaret.stdmod_7" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, young man. Looking for a passage or some fish, |PLAYERNAME|?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.pemaret.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.pemaret.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.pemaret.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

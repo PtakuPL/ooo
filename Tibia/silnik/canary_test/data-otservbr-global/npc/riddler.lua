@@ -167,9 +167,9 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "key" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.riddler.stdmod_6" })
 keywordHandler:addAliasKeyword({ "door" })
 
-npcHandler:setMessage(MESSAGE_GREET, "|PLAYERNAME| HEHEHEHE! Another fool visits the {tower}! Excellent!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "HEHEHE! I knew you don't have the stomach.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "COWARD! CHICKEN! HEHEHEHE!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.riddler.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.riddler.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.riddler.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

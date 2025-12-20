@@ -69,9 +69,9 @@ keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandle
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.maris_fenrock.stdmod_5" })
 keywordHandler:addKeyword({ "captain" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.maris_fenrock.stdmod_6" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Oh, you're still alive. Hello, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Yeah, bye or whatever.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Bye.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.maris_fenrock.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.maris_fenrock.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.maris_fenrock.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -50,14 +50,14 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, text = "I am the owner of this place of relaxation." })
-keywordHandler:addKeyword({ "wave cellar" }, StdModule.say, { npcHandler = npcHandler, text = "It's pretty, isn't it?" })
-keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, text = "I am Dane." })
-keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, text = "It is exactly |TIME|." })
-keywordHandler:addKeyword({ "offer" }, StdModule.say, { npcHandler = npcHandler, text = "I can offer you milk, water, and lemonade." })
-keywordHandler:addKeyword({ "alcohol" }, StdModule.say, { npcHandler = npcHandler, text = "Alcohol makes people too aggressive. We don't need such stuff in Carlin." })
-keywordHandler:addKeyword({ "beer" }, StdModule.say, { npcHandler = npcHandler, text = "Alcohol makes people too aggressive. We don't need such stuff in Carlin." })
-keywordHandler:addKeyword({ "wine" }, StdModule.say, { npcHandler = npcHandler, text = "Alcohol makes people too aggressive. We don't need such stuff in Carlin." })
+keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dane.stdmod_1" })
+keywordHandler:addKeyword({ "wave cellar" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dane.stdmod_2" })
+keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dane.stdmod_3" })
+keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dane.stdmod_4" })
+keywordHandler:addKeyword({ "offer" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dane.stdmod_5" })
+keywordHandler:addKeyword({ "alcohol" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dane.stdmod_6" })
+keywordHandler:addKeyword({ "beer" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dane.stdmod_7" })
+keywordHandler:addKeyword({ "wine" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dane.stdmod_8" })
 
 npcHandler:setMessage(MESSAGE_GREET, "Welcome to the wave cellar, |PLAYERNAME|.")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Please come back from time to time.")
@@ -74,7 +74,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

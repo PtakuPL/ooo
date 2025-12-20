@@ -156,9 +156,9 @@ local function tryEngage(npc, creature, message, keywords, parameters, node)
 	local playerStatus = getPlayerMarriageStatus(player:getGuid())
 	local playerSpouse = getPlayerSpouse(player:getGuid())
 	if playerStatus == MARRIED_STATUS then -- check if the player is already married
-		npcHandler:say("You are already married to {" .. player:getName() .. "}.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_1", { player:getName() })
 	elseif playerStatus == PROPOSED_STATUS then --check if the player already made a proposal to some1 else
-		npcHandler:say("You already made a wedding proposal to {" .. player:getName() .. "}. You can always remove the proposal by saying {remove} proposal.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_2", { player:getName() })
 	else
 		local candidate = getPlayerGUIDByName(message)
 		if candidate == 0 then -- check if there is actually a player called like this
@@ -172,9 +172,9 @@ local function tryEngage(npc, creature, message, keywords, parameters, node)
 				local candidateStatus = getPlayerMarriageStatus(candidate)
 				local candidateSpouse = getPlayerSpouse(candidate)
 				if candidateStatus == MARRIED_STATUS then -- if the player you want to marry is already married and to whom
-					npcHandler:say("{" .. getPlayerNameById(candidate) .. "} is already married to {" .. getPlayerNameById(candidateSpouse) .. "}.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_3", { getPlayerNameById(candidate), getPlayerNameById(candidateSpouse) })
 				elseif candidateStatus == PROPACCEPT_STATUS then -- if the player you want to marry is already going to marry some1 else
-					npcHandler:say("{" .. getPlayerNameById(candidate) .. "} is already engaged to {" .. getPlayerNameById(candidateSpouse) .. "} and they will going to marry soon.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_4", { getPlayerNameById(candidate), getPlayerNameById(candidateSpouse) })
 				elseif candidateStatus == PROPOSED_STATUS then -- if he/she already made a proposal to some1
 					if candidateSpouse == player:getGuid() then -- if this someone is you.
 						-- if this some1 is not you
@@ -190,10 +190,10 @@ local function tryEngage(npc, creature, message, keywords, parameters, node)
 						player:addOutfit(329)
 						player:addOutfit(328)
 					else
-						npcHandler:say("{" .. getPlayerNameById(candidate) .. "} already made a wedding proposal to {" .. getPlayerNameById(candidateSpouse) .. "}.", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_5", { getPlayerNameById(candidate), getPlayerNameById(candidateSpouse) })
 					end
 				else -- if the player i want to propose doesn't have other proposal
-					npcHandler:say("Ok, now let's wait and see if {" .. getPlayerNameById(candidate) .. "} accepts your proposal. I'll give you back your wedding ring as soon as {" .. getPlayerNameById(candidate) .. "} accepts your proposal or you {remove} it.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_6", { getPlayerNameById(candidate), getPlayerNameById(candidate) })
 					player:removeItem(ITEM_WEDDING_RING, 1)
 					player:removeItem(9586, 1)
 					setPlayerMarriageStatus(player:getGuid(), PROPOSED_STATUS)
@@ -217,16 +217,7 @@ local function confirmWedding(npc, creature, message, keywords, parameters, node
 		setPlayerSpouse(player:getGuid(), candidate)
 		setPlayerSpouse(candidate, player:getGuid())
 		local itemAttribute = Item(doPlayerAddItem(creature, ITEM_ENGRAVED_WEDDING_RING, 1))
-		npcHandler:say({
-			"Dear friends and family, we are gathered here today to witness and celebrate the union of " .. getPlayerNameById(candidate) .. " and " .. player:getName() .. " in marriage.",
-			"Through their time together, they have come to realize that their personal dreams, hopes, and goals are more attainable and more meaningful through the combined effort and mutual support provided in love, commitment, and family;",
-			"and so they have decided to live together as husband and wife. And now, by the power vested in me by the Gods of Tibia, I hereby pronounce you husband and wife.",
-			"*After a whispered blessing opens an hand towards " .. player:getName() .. "* Take these two engraved wedding rings and give one of them to your spouse.",
-			"You may now kiss your bride.",
-			npc,
-			creature,
-			10000,
-		})
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { { "npc.lynda.say_7", { getPlayerNameById(candidate), player:getName() } }, "npc.lynda.say_8", "npc.lynda.say_9", { "npc.lynda.say_10", { player:getName() } }, "npc.lynda.say_11" }, 10000)
 		itemAttribute:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, player:getName() .. " & " .. getPlayerNameById(candidate) .. " forever - married on " .. os.date("%B %d, %Y."))
 		itemAttribute:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, player:getName() .. " & " .. getPlayerNameById(candidate) .. " forever - married on " .. os.date("%B %d, %Y."))
 	else
@@ -241,7 +232,7 @@ local function confirmRemoveEngage(npc, creature, message, keywords, parameters,
 	local playerStatus = getPlayerMarriageStatus(player:getGuid())
 	local playerSpouse = getPlayerSpouse(player:getGuid())
 	if playerStatus == PROPOSED_STATUS then
-		npcHandler:say("Are you sure you want to remove your wedding proposal with {" .. getPlayerNameById(playerSpouse) .. "}?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_12", { getPlayerNameById(playerSpouse) })
 		node:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 3, i18nKey = "npc.lynda.stdmod_1" })
 
 		local function removeEngage(creature, message, keywords, parameters, node)
@@ -265,7 +256,7 @@ local function confirmDivorce(npc, creature, message, keywords, parameters, node
 	local playerStatus = getPlayerMarriageStatus(player:getGuid())
 	local playerSpouse = getPlayerSpouse(player:getGuid())
 	if playerStatus == MARRIED_STATUS then
-		npcHandler:say("Are you sure you want to divorce of {" .. getPlayerNameById(playerSpouse) .. "}?", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_13", { getPlayerNameById(playerSpouse) })
 		node:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 3, i18nKey = "npc.lynda.stdmod_2" })
 
 		local function divorce(creature, message, keywords, parameters, node)

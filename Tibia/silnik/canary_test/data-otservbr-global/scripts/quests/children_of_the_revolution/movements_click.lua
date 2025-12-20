@@ -79,14 +79,14 @@ function click.onStepIn(creature, item, position, fromPosition)
 	end
 
 	for i = 1, #players do
-		players[i]:say("A clicking sound tatters the silence.", TALKTYPE_MONSTER_SAY)
+		players[i]:sayLocalized("scripts.movements_click.say_2", TALKTYPE_MONSTER_SAY)
 	end
 
 	if #players ~= #config.positions then
 		return true
 	end
 
-	player:say("The army is complete again. You hear a hatch opening elsewhere, followed by a grinding sound.", TALKTYPE_MONSTER_SAY, false, 0, Position(33261, 31081, 8))
+	player:sayLocalized("scripts.movements_click.say_1", TALKTYPE_MONSTER_SAY, false, 0, Position(33261, 31081, 8))
 
 	local stair = Tile(config.stairPosition):getItemById(1897)
 	if stair then

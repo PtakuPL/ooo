@@ -25,7 +25,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "<mumble>" },
+	{ i18nKey = "npc.malunga.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

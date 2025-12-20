@@ -56,7 +56,7 @@ function pitsOfInfernoLevers.onUse(player, item, fromPosition, target, toPositio
 		player:say("You flipped the " .. text[number] .. " lever. Hurry up and find the next one!", TALKTYPE_MONSTER_SAY, false, player, toPosition)
 	elseif item.uid == 2065 then
 		if leverCount ~= 15 then
-			player:say("The final lever won't budge... yet.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_levers.say_5", TALKTYPE_MONSTER_SAY)
 			return true
 		end
 

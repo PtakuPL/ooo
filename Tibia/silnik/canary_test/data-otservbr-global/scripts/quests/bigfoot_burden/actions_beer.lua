@@ -5,7 +5,7 @@ function bigfootBeer.onUse(player, item, fromPosition, target, toPosition, isHot
 		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.bigfoot_burden.mind_refreshed")
 	end
 
-	player:say("Gulp!", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.actions_beer.say_1", TALKTYPE_MONSTER_SAY)
 	item:remove(1)
 	return true
 end

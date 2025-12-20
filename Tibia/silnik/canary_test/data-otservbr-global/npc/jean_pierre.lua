@@ -113,7 +113,7 @@ local function greetCallback(npc, creature)
 	local currentDateTable = os.date("*t", currentDate)
 
 	if currentDateTable.month == 8 then
-		npcHandler:setMessage(MESSAGE_GREET, "Greetings, |PLAYERNAME|. What are you doing out here?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jean_pierre.greet_msg_1")
 	else
 		endConversationWithDelay(npcHandler, npc, creature)
 	end

@@ -21,7 +21,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Now, where was I..." },
+	{ i18nKey = "npc.bo_ques.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

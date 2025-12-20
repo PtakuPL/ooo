@@ -1,7 +1,7 @@
 # NPC: llathriel
 
 **Plik:** `data-otservbr-global/npc/llathriel.lua`
-**Data migracji:** 2025-12-10 14:15
+**Data migracji:** 2025-12-17 01:02
 **Liczba tekstów:** 2
 
 ## Klucze i18n

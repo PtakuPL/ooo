@@ -48,9 +48,9 @@ end
 local function greetCallback(npc, creature)
 	local playerId = creature:getId()
 	if Player(creature):getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline) == 27 then
-		npcHandler:setMessage(MESSAGE_GREET, "ZzzzZzzZz...chrrr...")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_sleeping_dragon.greet_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Greetings, {wayfarer}.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_sleeping_dragon.greet_msg_1")
 	end
 	return true
 end

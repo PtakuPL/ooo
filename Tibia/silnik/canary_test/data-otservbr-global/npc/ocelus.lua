@@ -60,7 +60,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "eleonore") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.APoemForTheMermaid) == 2 and player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove) < 1 then
-			npcHandler:say("I heard the birds sing about her beauty. But how could a human rival the enchanting beauty of a {mermaid}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ocelus.say_1")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "mermaid") or MsgContains(message, "marina") then
@@ -69,42 +69,42 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ocelus.multi_2")
 			npcHandler:setTopic(playerId, 2)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove) == 2 then
-			npcHandler:say("Oh my. Its not easy to impress a mermaid I guess. Please get me a {love poem}. I think elves are the greatest poets so their city seems like a good place to look for one.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ocelus.say_2")
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove, 3)
 		end
 	elseif MsgContains(message, "date") then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("Will you ask the mermaid Marina if she would date me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ocelus.say_3")
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 3 then
-			npcHandler:say("Thank you. How ironic, a human granting a djinn a wish.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ocelus.say_4")
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove, 1)
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:removeItem(6119, 1) then
-				npcHandler:say("Excellent. Here, with this little spell I enable you to recite the poem like a true elven poet. Now go and ask her for a date again.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ocelus.say_5")
 				player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove, 4)
 				player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.APoemForTheMermaid, 3)
 				npcHandler:setTopic(playerId, 0)
 			else
 				npcHandler:setTopic(playerId, 0)
-				npcHandler:say("You don't have it...", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ocelus.say_1")
 			end
 		end
 	elseif MsgContains(message, "love poem") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove) == 3 then
-			npcHandler:say("Did you get a love poem from Ab'Dendriel?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ocelus.say_6")
 			npcHandler:setTopic(playerId, 4)
 		end
 	end
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, dear visitor |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Oh well.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.ocelus.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.ocelus.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.ocelus.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

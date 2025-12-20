@@ -52,7 +52,7 @@ function furyGatesTeleports.onStepIn(creature, item, position, fromPosition)
 		if not player:isPremium() or not player:isPromoted() or player:getLevel() < 60 then
 			player:teleportTo(fromPosition)
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			player:say("Only Premium promoted players of level 60 or higher are able to enter this portal.", TALKTYPE_MONSTER_SAY, false, player, fromPosition)
+			player:sayLocalized("scripts.fury_gates.say_1", TALKTYPE_MONSTER_SAY, false, player, fromPosition)
 			return true
 		end
 

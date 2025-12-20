@@ -64,23 +64,23 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 end
 
-keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, text = "I am... a traveler. Just leave me alone if you have nothing {interesting} to talk about." })
-keywordHandler:addKeyword({ "want" }, StdModule.say, { npcHandler = npcHandler, text = "I am... a traveler. Just leave me alone if you have nothing {interesting} to talk about." })
-keywordHandler:addKeyword({ "head" }, StdModule.say, { npcHandler = npcHandler, text = "Uhhh ohhhh one of the beers yesterday must have been bad." })
-keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, text = "My Name? I am To... ahm... hum... My name is {Hugo}." })
-keywordHandler:addKeyword({ "hugo" }, StdModule.say, { npcHandler = npcHandler, text = "Yes, that's my name of course." })
-keywordHandler:addKeyword({ "todd" }, StdModule.say, { npcHandler = npcHandler, text = "Uh .. I... I met a Todd on the road. He told me he was traveling to Venore, look there for your Todd." })
-keywordHandler:addKeyword({ "thais" }, StdModule.say, { npcHandler = npcHandler, text = "I love that city." })
-keywordHandler:addKeyword({ "carlin" }, StdModule.say, { npcHandler = npcHandler, text = "I never was there. Now leave me alone." })
-keywordHandler:addKeyword({ "resistance" }, StdModule.say, { npcHandler = npcHandler, text = "Resistance is futile... uhm... I wonder where I picked that saying up. Oh my head..." })
-keywordHandler:addKeyword({ "money" }, StdModule.say, { npcHandler = npcHandler, text = "I don't know anything about money, missing or not." })
-keywordHandler:addKeyword({ "eclesius" }, StdModule.say, { npcHandler = npcHandler, text = "He often comes here. But his constant confusion gives me a worse headache than Frodo's beer. I rather avoid him." })
-keywordHandler:addKeyword({ "karl" }, StdModule.say, { npcHandler = npcHandler, text = "Uhm, never heard about him... and you can't prove otherwise." })
-keywordHandler:addKeyword({ "william" }, StdModule.say, { npcHandler = npcHandler, text = "Thats a common name, perhaps I met a William, not sure about that." })
+keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.todd.stdmod_1" })
+keywordHandler:addKeyword({ "want" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.todd.stdmod_2" })
+keywordHandler:addKeyword({ "head" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.todd.stdmod_3" })
+keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.todd.stdmod_4" })
+keywordHandler:addKeyword({ "hugo" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.todd.stdmod_5" })
+keywordHandler:addKeyword({ "todd" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.todd.stdmod_6" })
+keywordHandler:addKeyword({ "thais" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.todd.stdmod_7" })
+keywordHandler:addKeyword({ "carlin" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.todd.stdmod_8" })
+keywordHandler:addKeyword({ "resistance" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.todd.stdmod_9" })
+keywordHandler:addKeyword({ "money" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.todd.stdmod_10" })
+keywordHandler:addKeyword({ "eclesius" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.todd.stdmod_11" })
+keywordHandler:addKeyword({ "karl" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.todd.stdmod_12" })
+keywordHandler:addKeyword({ "william" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.todd.stdmod_13" })
 
 npcHandler:setMessage(MESSAGE_GREET, "Uhm oh hello |PLAYERNAME|... not so loud please... my {head}... What ... do you {want}?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Yes, goodbye |PLAYERNAME|, just leave me alone.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Silence at last.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.todd.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.todd.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
@@ -95,7 +95,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

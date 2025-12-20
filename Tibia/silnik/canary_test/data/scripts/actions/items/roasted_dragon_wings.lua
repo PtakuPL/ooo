@@ -15,7 +15,7 @@ function roastedDragonWings.onUse(player, item, fromPosition, target, toPosition
 
 	player:addCondition(defenseCondition)
 	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.roasted_dragon_wings.msg_2")
-	player:say("Chomp.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.roasted_dragon_wings.say_1", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)
 	item:remove(1)

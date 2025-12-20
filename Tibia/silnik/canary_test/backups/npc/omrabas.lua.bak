@@ -21,10 +21,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Typical. Easy come, easy go." },
-	{ text = "He will PAY for this... They will ALL pay!" },
-	{ text = "<groan>" },
-	{ text = "If I ever lay hands on him again..." },
+	{ i18nKey = "npc.omrabas.voice_1" },
+	{ i18nKey = "npc.omrabas.voice_2" },
+	{ i18nKey = "npc.omrabas.voice_3" },
+	{ i18nKey = "npc.omrabas.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()

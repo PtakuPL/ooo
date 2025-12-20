@@ -37,7 +37,7 @@ function childrenGrease.onUse(player, item, fromPosition, target, toPosition, is
 			puzzle(puzzlePositions[3], 9939, 9934)
 		end
 		if Tile(puzzlePositions[1]):getItemById(9933) and Tile(puzzlePositions[2]):getItemById(9936) and Tile(puzzlePositions[3]):getItemById(9939) and Tile(puzzlePositions[4]):getItemById(9938) then
-			player:say("After a cracking noise a deep humming suddenly starts from somewhere below.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_mission4_levers_puzzle.say_1", TALKTYPE_MONSTER_SAY)
 			player:setStorageValue(Storage.Quest.U8_54.ChildrenOfTheRevolution.Questline, 17)
 			player:setStorageValue(Storage.Quest.U8_54.ChildrenOfTheRevolution.Mission04, 5)
 		end

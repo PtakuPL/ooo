@@ -27,7 +27,7 @@ function soulPitAction.onUse(player, item, fromPosition, target, toPosition, isH
 	end
 
 	if target and target:getId() == SoulPit.obeliskActive then
-		creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Someone is fighting in the soulpit!")
+		creature:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soulpit_fight.msg_2")
 		return false
 	end
 	if not target or target:getId() ~= SoulPit.obeliskInactive then
@@ -101,7 +101,7 @@ function soulPitAction.onUse(player, item, fromPosition, target, toPosition, isH
 
 		for _, player in pairs(SoulPit.zone:getPlayers()) do
 			player:addAnimusMastery(monsterName)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You have defeated the core of the %s soul and unlocked its animus mastery!", monsterName))
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soulpit_fight.msg_1", {monsterName})
 		end
 
 		SoulPit.zone:removePlayers()

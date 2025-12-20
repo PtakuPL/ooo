@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Come chat with ol' Bozo!" },
-	{ text = "Do you know the one with the dragon? Where - and then ... hahahaha! Oh no, I guess I ruined it." },
-	{ text = "The fools' guild? Are you serious? No, of course not! Hahaha!" },
-	{ text = "Welcome, welcome, step closer!" },
+	{ i18nKey = "npc.bozo.voice_1" },
+	{ i18nKey = "npc.bozo.voice_2" },
+	{ i18nKey = "npc.bozo.voice_3" },
+	{ i18nKey = "npc.bozo.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -605,9 +605,9 @@ local value = {}
 local function greetCallback(npc, creature)
 	local playerId = creature:getId()
 	if Player(creature):getSex() == PLAYERSEX_MALE then
-		npcHandler:setMessage(MESSAGE_GREET, "Hi there, how's it hanging, |PLAYERNAME|! What brings you {here}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.bozo.greet_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Hello, hello, hello, little lady |PLAYERNAME|! What brings you {here}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.bozo.greet_msg_2")
 	end
 	value[playerId] = nil
 	return true
@@ -913,8 +913,8 @@ local ladyKeyword = keywordHandler:addKeyword({ "lady" }, StdModule.say, { npcHa
 ladyKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.bozo.stdmod_75", reset = true })
 ladyKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.bozo.stdmod_76", reset = true })
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Remember: A joke a day keeps the ghouls away!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Hey! Fools have feelings too.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.bozo.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.bozo.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

@@ -1,11 +1,10 @@
 # NPC: fenech
 
-**Plik:** `data-otservbr-global/npc/fenech.lua`
-**Data migracji:** 2025-12-11 16:25
-**Liczba tekstów:** 1
+**Plik:** 
+**Data migracji:** 2025-12-20 20:24
+**Liczba tekstów:** 0
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.fenech.stdmod_1` | Offering all sorts of magic equipment. |

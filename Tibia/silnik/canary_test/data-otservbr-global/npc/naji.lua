@@ -73,9 +73,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to the Tibian bank, |PLAYERNAME| What can I do for you?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.naji.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.naji.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.naji.walkaway_msg_1")
 npcHandler:setCallback(CALLBACK_GREET, NpcBankGreetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

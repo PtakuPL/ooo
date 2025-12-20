@@ -143,9 +143,9 @@ keywordHandler:addKeyword({ "shearton softbeard" }, StdModule.say, {
 })
 keywordHandler:addKeyword({ "grothmok" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.budrik.stdmod_10" })
 keywordHandler:addKeyword({ "deeper mines" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.budrik.stdmod_11" })
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Bye, bye.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Bye, bye.")
-npcHandler:setMessage(MESSAGE_GREET, "Hiho, hiho |PLAYERNAME|. Why do you {disturb} me?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.budrik.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.budrik.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.budrik.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

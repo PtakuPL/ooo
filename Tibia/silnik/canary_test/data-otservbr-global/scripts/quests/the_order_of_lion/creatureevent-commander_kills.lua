@@ -16,7 +16,7 @@ function lionCommanderDeath.onPrepareDeath(creature)
 			if spectator:isMonster() and not spectator:getMaster() then
 				spectator:remove()
 			elseif spectator:isPlayer() then
-				spectator:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You lost the skirmish.")
+				spectator:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.creatureevent_commander_kills.msg_1")
 				spectator:teleportTo(config.exitPosition)
 			end
 		end

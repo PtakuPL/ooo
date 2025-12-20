@@ -55,10 +55,10 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon) == 2 and player:getStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddonWaitTimer) < os.time() then
-		npcHandler:setMessage(MESSAGE_GREET, "You back. You know, you right. Brother is right. Fist not always good. Tell him that!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.ajax.greet_msg_1")
 		player:setStorageValue(Storage.Quest.U7_8.BarbarianOutfits.BarbarianAddon, 3)
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Whatcha do in my place?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.ajax.greet_msg_2")
 	end
 
 	return true

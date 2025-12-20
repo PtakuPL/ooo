@@ -171,12 +171,12 @@ optionsController = Controller:new()
 optionsController:setUI('mainoptionspanel', modules.game_interface.getMainRightPanel())
 
 function optionsController:onInit()
-    createButton_large('Store shop', tr('Store shop'), '/images/options/store_large', toggleStore,
+    createButton_large('Store shop', tr("otclient_modules.mainpanel.tr_8"), '/images/options/store_large', toggleStore,
     false, 8)
 
     if not optionPanel then
         optionPanel = g_ui.loadUI('option_control_buttons', modules.client_options:getPanel())
-        modules.client_options.addButton(tr("Interface"), tr("Control Buttons"), optionPanel, function() initControlButtons() end)
+        modules.client_options.addButton(tr("otclient_modules.mainpanel.tr_7"), tr("otclient_modules.mainpanel.tr_6"), optionPanel, function() initControlButtons() end)
     end
 end
 
@@ -192,7 +192,7 @@ function optionsController:onTerminate()
     if optionPanel then
         optionPanel:destroy()
         optionPanel = nil
-        modules.client_options.removeButton(tr("Interface"), tr("Control Buttons"))  -- hot reload
+        modules.client_options.removeButton(tr("otclient_modules.mainpanel.tr_5"), tr("otclient_modules.mainpanel.tr_4"))  -- hot reload
     end
     if controlButton1400 then
         controlButton1400:destroy()
@@ -232,8 +232,8 @@ function optionsController:onGameStart()
         end
     end, 50, "onGameStart")
     if g_game.getClientVersion() >= 1400 and not controlButton1400 then
-        controlButton1400 = modules.game_mainpanel.addToggleButton('controButtons', tr('Manage control buttons'),
-        '/images/options/button_control', function() modules.client_options.openOptionsCategory(tr("Interface"), tr("Control Buttons")) end, false, 1)
+        controlButton1400 = modules.game_mainpanel.addToggleButton('controButtons', tr("otclient_modules.mainpanel.tr_3"),
+        '/images/options/button_control', function() modules.client_options.openOptionsCategory(tr("otclient_modules.mainpanel.tr_2"), tr("otclient_modules.mainpanel.tr_1")) end, false, 1)
         controlButton1400:setOn(false)
     end
 end

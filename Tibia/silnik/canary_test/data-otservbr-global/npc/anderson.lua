@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Passages to Tibia, Folda and Vega." },
+	{ i18nKey = "npc.anderson.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -97,8 +97,8 @@ keywordHandler:addKeyword({ "captain" }, StdModule.say, {
 	i18nKey = "npc.anderson.stdmod_5",
 })
 
-npcHandler:setMessage(MESSAGE_GREET, "Ahoi, young man |PLAYERNAME| and welcome to the Nordic Tibia Ferries. If you need a {passage}, let me know.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye. You are welcome.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.anderson.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.anderson.farewell_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

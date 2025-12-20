@@ -1,5 +1,5 @@
 local function sendBoostMessage(player, category, isIncreased)
-	return player:sendTextMessage(MESSAGE_BOOSTED_CREATURE, string.format("Event! %s is %screased. Happy Hunting!", category, isIncreased and "in" or "de"))
+	return player:sendLocalizedTextMessage(MESSAGE_BOOSTED_CREATURE, "scripts.login.msg_4", {category, isIncreased and "in" or "de"})
 end
 
 local playerLoginGlobal = CreatureEvent("PlayerLoginGlobal")
@@ -34,13 +34,13 @@ function playerLoginGlobal.onLogin(player)
 	end
 
 	-- Boosted
-	player:sendTextMessage(MESSAGE_BOOSTED_CREATURE, string.format("Today's boosted creature: %s.\nBoosted creatures yield more experience points, carry more loot than usual, and respawn at a faster rate.", Game.getBoostedCreature()))
-	player:sendTextMessage(MESSAGE_BOOSTED_CREATURE, string.format("Today's boosted boss: %s.\nBoosted bosses contain more loot and count more kills for your Bosstiary.", Game.getBoostedBoss()))
+	player:sendLocalizedTextMessage(MESSAGE_BOOSTED_CREATURE, "scripts.login.msg_3", {Game.getBoostedCreature()})
+	player:sendLocalizedTextMessage(MESSAGE_BOOSTED_CREATURE, "scripts.login.msg_2", {Game.getBoostedBoss()})
 
 	-- Rewards
 	local rewards = #player:getRewardList()
 	if rewards > 0 then
-		player:sendTextMessage(MESSAGE_LOGIN, string.format("You have %d reward%s in your reward chest.", rewards, rewards > 1 and "s" or ""))
+		player:sendLocalizedTextMessage(MESSAGE_LOGIN, "scripts.login.msg_1", {rewards, rewards > 1 and "s" or ""})
 	end
 
 	-- Rate events:

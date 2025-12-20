@@ -14,7 +14,7 @@ function distortedSource.onThink(creature)
 				spec:teleportTo(Position(31989, 32823, 15))
 				glyph:addHealth(-difference)
 				glyph:teleportTo(pos2)
-				glyph:say("Drawing upon the power of the source, the Glyph becomes shielded again!", TALKTYPE_MONSTER_SAY)
+				glyph:sayLocalized("scripts.creaturescripts_distorted_source.say_2", TALKTYPE_MONSTER_SAY)
 				return true
 			end
 		end
@@ -31,7 +31,7 @@ function distortedSource.onThink(creature)
 				spec2:teleportTo(Position(31989, 32823, 15))
 				glyph:addHealth(-difference)
 				glyph:teleportTo(pos3)
-				glyph:say("Without the power of the source the Glyph loses its protection!", TALKTYPE_MONSTER_SAY)
+				glyph:sayLocalized("scripts.creaturescripts_distorted_source.say_1", TALKTYPE_MONSTER_SAY)
 				return true
 			end
 		end

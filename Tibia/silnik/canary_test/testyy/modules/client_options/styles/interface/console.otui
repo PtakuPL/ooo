@@ -9,7 +9,7 @@ UIWidget
 
     OptionCheckBox
       id: showInfoMessagesInConsole
-      !text: tr('Show info messages')
+      !text: tr("otclient_modules.console_otui.tr_9")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -20,7 +20,7 @@ UIWidget
   
     OptionCheckBox
       id: showEventMessagesInConsole
-      !text: tr('Show event messages')
+      !text: tr("otclient_modules.console_otui.tr_8")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -31,7 +31,7 @@ UIWidget
   
     OptionCheckBox
       id: showStatusMessagesInConsole
-      !text: tr('Show status messages')
+      !text: tr("otclient_modules.console_otui.tr_7")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -42,7 +42,7 @@ UIWidget
   
     OptionCheckBox
       id: showOthersStatusMessagesInConsole
-      !text: tr('Show others status messages in console')
+      !text: tr("otclient_modules.console_otui.tr_6")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -53,7 +53,7 @@ UIWidget
   
     OptionCheckBox
       id: showTimestampsInConsole
-      !text: tr('Show timestamps')
+      !text: tr("otclient_modules.console_otui.tr_5")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -64,7 +64,7 @@ UIWidget
   
     OptionCheckBox
       id: showLevelsInConsole
-      !text: tr('Show levels')
+      !text: tr("otclient_modules.console_otui.tr_4")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -75,7 +75,7 @@ UIWidget
   
     OptionCheckBox
       id: showPrivateMessagesInConsole
-      !text: tr('Show private messages')
+      !text: tr("otclient_modules.console_otui.tr_3")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -86,7 +86,7 @@ UIWidget
   
     OptionCheckBox
       id: showPrivateMessagesOnScreen
-      !text: tr('Show private messages on screen')
+      !text: tr("otclient_modules.console_otui.tr_2")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -97,5 +97,5 @@ UIWidget
   
     OptionCheckBox
       id: showLootMessagesOnScreen
-      !text: tr('Show loot messages on screen')
+      !text: tr("otclient_modules.console_otui.tr_1")
 

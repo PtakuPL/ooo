@@ -25,7 +25,7 @@ function vipGod.onSay(player, words, param)
 
 	local target = Player(targetName)
 	if not target then
-		player:sendTextMessage(MESSAGE_LOOK, string.format('Player "%s" is not online or does not exist!', targetName))
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.manage_vip.msg_7", {targetName})
 		return true
 	end
 
@@ -33,7 +33,7 @@ function vipGod.onSay(player, words, param)
 	targetName = target:getName()
 
 	if action == "check" then
-		player:sendTextMessage(MESSAGE_STATUS, string.format('"%s" has %s VIP day(s) left.', targetName, (targetVipDays == 0xFFFF and "infinite" or targetVipDays)))
+		player:sendLocalizedTextMessage(MESSAGE_STATUS, "scripts.manage_vip.msg_6", {targetName, (targetVipDays == 0xFFFF and "infinite" or targetVipDays)})
 	elseif action == "adddays" then
 		local amount = tonumber(params[3])
 		if not amount or amount <= 0 then
@@ -42,14 +42,14 @@ function vipGod.onSay(player, words, param)
 		end
 
 		if amount < config.minDays or amount > config.maxDays then
-			player:sendTextMessage(MESSAGE_LOOK, string.format("You can only add %d to %d VIP days at a time.", config.minDays, config.maxDays))
+			player:sendLocalizedTextMessage(MESSAGE_LOOK, "scripts.manage_vip.msg_5", {config.minDays, config.maxDays})
 			return true
 		end
 
 		target:addPremiumDays(amount)
 		target:onAddVip(amount)
 		target:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
-		player:sendTextMessage(MESSAGE_STATUS, string.format('"%s" received %d VIP day(s) and now has %d VIP day(s)', targetName, amount, target:getVipDays()))
+		player:sendLocalizedTextMessage(MESSAGE_STATUS, "scripts.manage_vip.msg_4", {targetName, amount, target:getVipDays()})
 	elseif action == "removedays" then
 		local amount = tonumber(params[3])
 		if not amount then
@@ -60,16 +60,16 @@ function vipGod.onSay(player, words, param)
 			target:removePremiumDays(targetVipDays)
 			target:onRemoveVip()
 			target:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
-			player:sendTextMessage(MESSAGE_STATUS, string.format("You removed all VIP days from %s.", targetName))
+			player:sendLocalizedTextMessage(MESSAGE_STATUS, "scripts.manage_vip.msg_3", {targetName})
 		else
 			target:removePremiumDays(amount)
-			player:sendTextMessage(MESSAGE_STATUS, string.format("%s lost %s VIP day(s) and now has %s VIP day(s).", targetName, amount, target:getVipDays()))
+			player:sendLocalizedTextMessage(MESSAGE_STATUS, "scripts.manage_vip.msg_2", {targetName, amount, target:getVipDays()})
 		end
 	elseif action == "remove" then
 		target:removePremiumDays(targetVipDays)
 		target:onRemoveVip()
 		target:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
-		player:sendTextMessage(MESSAGE_STATUS, string.format("You removed all VIP days from %s.", targetName))
+		player:sendLocalizedTextMessage(MESSAGE_STATUS, "scripts.manage_vip.msg_1", {targetName})
 	else
 		player:sendLocalizedMessage(MESSAGE_LOOK, "scripts.manage_vip.msg_3")
 		return true

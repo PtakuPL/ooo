@@ -19,7 +19,7 @@ function actions_desert_doors.onUse(player, item, fromPosition, target, toPositi
 				player:teleportTo(toPosition, true)
 				item:transform(item.itemid + 1)
 			else
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The door seems to be sealed against unwanted intruders.")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_doors.msg_4")
 			end
 		end
 	end

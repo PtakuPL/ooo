@@ -31,9 +31,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Im eager for a bath in the lake." },
-	{ text = "Im interested in shiny precious things, if you have some." },
-	{ text = "No, you cant have this cloak." },
+	{ i18nKey = "npc.valindara.voice_1" },
+	{ i18nKey = "npc.valindara.voice_2" },
+	{ i18nKey = "npc.valindara.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -63,9 +63,9 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Greatings, mortal beigin.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.valindara.greet_msg_1")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Yes, i have some potions and runes if you are interested. Or do you want to buy only potions or only runes?oh if you want sell or buy gems, your may also ask me.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "May enlightenment be your path, |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.valindara.farewell_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {

@@ -25,7 +25,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Passage to {Kazordoon}." },
+	{ i18nKey = "npc.rapanaio_isle_of_evil.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -67,9 +67,9 @@ addTravelKeyword("kazordoon", 0, Position(32699, 31993, 14))
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.rapanaio_isle_of_evil.stdmod_3" })
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.rapanaio_isle_of_evil.stdmod_4" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome on board, |PLAYERNAME|. I can travel you to {kazordoon}.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye. Recommend us if you were satisfied with our service.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.rapanaio_isle_of_evil.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.rapanaio_isle_of_evil.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.rapanaio_isle_of_evil.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -207,9 +207,9 @@ local function greetCallback(npc, creature)
 	end
 
 	if player:getStorageValue(Storage.EruaranGreeting) > 0 then
-		npcHandler:setMessage(MESSAGE_GREET, "Ashari Lillithy, so we meet {again}! What brings you here this time, general {information}, {transform}, {improve}, {create}, {outfit}, or {talk}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.eruaran.greet_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome |PLAYERNAME|.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.eruaran.greet_msg_2")
 		player:setStorageValue(Storage.EruaranGreeting, 1)
 	end
 	return true
@@ -254,13 +254,13 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "blade") or MsgContains(message, "slayer") and npcHandler:getTopic(playerId) == 2 then
 		weapon_sub[playerId] = (MsgContains(message, "blade") and SUB_TYPES.BLADE or SUB_TYPES.SLAYER)
 		if action[playerId] == ACTION.CREATE then
-			npcHandler:say("Do you want to spend " .. (Config.Create.DreamMatter == 1 and "your" or Config.Create.DreamMatter) .. " dream matter with " .. (Config.Create.Clusters > 1 and "those" or "your") .. " " .. Config.Create.Clusters .. " clusters of {solace} and give a shot. {Yes} or {no}", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_1", { (Config.Create.DreamMatter == 1 and "your" or Config.Create.DreamMatter), (Config.Create.Clusters > 1 and "those" or "your"), Config.Create.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.IMPROVE then
-			npcHandler:say("Do you want to spend your crude umbral " .. (weapon_sub[playerId] == SUB_TYPES.BLADE and "blade" or "slayer") .. " with " .. (Config.Improve.Clusters > 1 and "those" or "your") .. " " .. Config.Improve.Clusters .. " clusters of {solace} and give a shot. {Yes} or {no}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_2", { (weapon_sub[playerId] == SUB_TYPES.BLADE and "blade" or "slayer"), (Config.Improve.Clusters > 1 and "those" or "your"), Config.Improve.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.TRANSFORM then
-			npcHandler:say("Do you want to spend your umbral " .. (weapon_sub[playerId] == SUB_TYPES.BLADE and "blade" or "slayer") .. " with " .. (Config.Transform.Clusters > 1 and "those" or "your") .. " " .. Config.Transform.Clusters .. " clusters of {solace} and give it a shot. {Yes} or {no}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_3", { (weapon_sub[playerId] == SUB_TYPES.BLADE and "blade" or "slayer"), (Config.Transform.Clusters > 1 and "those" or "your"), Config.Transform.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "axe") and npcHandler:getTopic(playerId) == 1 then
@@ -281,10 +281,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_10")
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.IMPROVE then
-			npcHandler:say("Do you want to spend your crude umbral " .. (weapon_sub[playerId] == SUB_TYPES.AXE and "axe" or "chopper") .. " with " .. (Config.Improve.Clusters > 1 and "those" or "your") .. " " .. Config.Improve.Clusters .. " clusters of {solace} and give a shot. {Yes} or {no}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_4", { (weapon_sub[playerId] == SUB_TYPES.AXE and "axe" or "chopper"), (Config.Improve.Clusters > 1 and "those" or "your"), Config.Improve.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.TRANSFORM then
-			npcHandler:say("Do you want to spend your umbral " .. (weapon_sub[playerId] == SUB_TYPES.AXE and "axe" or "chopper") .. " with " .. (Config.Transform.Clusters > 1 and "those" or "your") .. " " .. Config.Transform.Clusters .. " clusters of {solace} and give it a shot. {Yes} or {no}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_5", { (weapon_sub[playerId] == SUB_TYPES.AXE and "axe" or "chopper"), (Config.Transform.Clusters > 1 and "those" or "your"), Config.Transform.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "club") and npcHandler:getTopic(playerId) == 1 then
@@ -302,49 +302,49 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif table.contains({ "mace", "hammer" }, message) and npcHandler:getTopic(playerId) == 2 then
 		weapon_sub[playerId] = (MsgContains(message, "mace") and SUB_TYPES.MACE or SUB_TYPES.HAMMER)
 		if action[playerId] == ACTION.CREATE then
-			npcHandler:say("Do you want to spend your dream matter with " .. (Config.Create.Clusters > 1 and "those" or "your") .. " " .. Config.Create.Clusters .. " clusters of {solace} and give a shot. {Yes} or {no}", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_6", { (Config.Create.Clusters > 1 and "those" or "your"), Config.Create.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.IMPROVE then
-			npcHandler:say("Do you want to spend your crude umbral " .. (weapon_sub[playerId] == SUB_TYPES.MACE and "mace" or "hammer") .. " with " .. (Config.Improve.Clusters > 1 and "those" or "your") .. " " .. Config.Improve.Clusters .. " clusters of {solace} and give a shot. {Yes} or {no}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_7", { (weapon_sub[playerId] == SUB_TYPES.MACE and "mace" or "hammer"), (Config.Improve.Clusters > 1 and "those" or "your"), Config.Improve.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.TRANSFORM then
-			npcHandler:say("Do you want to spend your umbral " .. (weapon_sub[playerId] == SUB_TYPES.MACE and "mace" or "hammer") .. " with " .. (Config.Transform.Clusters > 1 and "those" or "your") .. " " .. Config.Transform.Clusters .. " clusters of {solace} and give it a shot. {Yes} or {no}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_8", { (weapon_sub[playerId] == SUB_TYPES.MACE and "mace" or "hammer"), (Config.Transform.Clusters > 1 and "those" or "your"), Config.Transform.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "bow") and npcHandler:getTopic(playerId) == 1 then
 		weapon[playerId] = TYPES.BOW
 		if action[playerId] == ACTION.CREATE then
-			npcHandler:say("Do you want to spend your dream matter with " .. (Config.Create.Clusters > 1 and "those" or "your") .. " " .. Config.Create.Clusters .. " clusters of {solace} and give a shot. {Yes} or {no}", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_9", { (Config.Create.Clusters > 1 and "those" or "your"), Config.Create.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.IMPROVE then
-			npcHandler:say("Do you want to spend your crude umbral bow with " .. (Config.Improve.Clusters > 1 and "those" or "your") .. " " .. Config.Improve.Clusters .. " clusters of {solace} and give a shot. {Yes} or {no}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_10", { (Config.Improve.Clusters > 1 and "those" or "your"), Config.Improve.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.TRANSFORM then
-			npcHandler:say("Do you want to spend your umbral bow with " .. (Config.Transform.Clusters > 1 and "those" or "your") .. " " .. Config.Transform.Clusters .. " clusters of {solace} and give it a shot. {Yes} or {no}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_11", { (Config.Transform.Clusters > 1 and "those" or "your"), Config.Transform.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "crossbow") and npcHandler:getTopic(playerId) == 1 then
 		weapon[playerId] = TYPES.CROSSBOW
 		if action[playerId] == ACTION.CREATE then
-			npcHandler:say("Do you want to spend your dream matter with " .. (Config.Create.Clusters > 1 and "those" or "your") .. " " .. Config.Create.Clusters .. " clusters of {solace} and give a shot. {Yes} or {no}", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_12", { (Config.Create.Clusters > 1 and "those" or "your"), Config.Create.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.IMPROVE then
-			npcHandler:say("Do you want to spend your crude umbral crossbow with " .. (Config.Improve.Clusters > 1 and "those" or "your") .. " " .. Config.Improve.Clusters .. " clusters of {solace} and give a shot. {Yes} or {no}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_13", { (Config.Improve.Clusters > 1 and "those" or "your"), Config.Improve.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.TRANSFORM then
-			npcHandler:say("Do you want to spend your umbral crossbow with " .. (Config.Transform.Clusters > 1 and "those" or "your") .. " " .. Config.Transform.Clusters .. " clusters of {solace} and give it a shot. {Yes} or {no}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_14", { (Config.Transform.Clusters > 1 and "those" or "your"), Config.Transform.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "spellbook") and npcHandler:getTopic(playerId) == 1 then
 		weapon[playerId] = TYPES.SPELLBOOK
 		if action[playerId] == ACTION.CREATE then
-			npcHandler:say("Do you want to spend your dream matter with " .. (Config.Create.Clusters > 1 and "those" or "your") .. " " .. Config.Create.Clusters .. " clusters of {solace} and give a shot. {Yes} or {no}", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_15", { (Config.Create.Clusters > 1 and "those" or "your"), Config.Create.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.IMPROVE then
-			npcHandler:say("Do you want to spend your crude umbral spellbook with " .. (Config.Improve.Clusters > 1 and "those" or "your") .. " " .. Config.Improve.Clusters .. " clusters of {solace} and give a shot. {Yes} or {no}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_16", { (Config.Improve.Clusters > 1 and "those" or "your"), Config.Improve.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.TRANSFORM then
-			npcHandler:say("Do you want to spend your umbral spellbook with " .. (Config.Transform.Clusters > 1 and "those" or "your") .. " " .. Config.Transform.Clusters .. " clusters of {solace} and give it a shot. {Yes} or {no}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_17", { (Config.Transform.Clusters > 1 and "those" or "your"), Config.Transform.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 3 then
@@ -364,7 +364,7 @@ local function creatureSayCallback(npc, creature, type, message)
 						player:addItem(newItemId)
 						player:removeItem(IDS.DREAM_MATTER, Config.Create.DreamMatter)
 						player:removeItem(IDS.CLUSTER_OF_SOLACE, Config.Create.Clusters)
-						npcHandler:say("Your dreams are strong, the creation was successful. Take your " .. ItemType(newItemId):getName() .. ".", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_18", { ItemType(newItemId):getName() })
 					else
 						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_14")
 					end
@@ -393,14 +393,14 @@ local function creatureSayCallback(npc, creature, type, message)
 							player:removeItem(oldItemId, 1)
 							player:addItem(newItemId)
 							player:removeItem(IDS.CLUSTER_OF_SOLACE, Config.Improve.Clusters)
-							npcHandler:say("Your dreams are strong, the improvement was successful. Take your " .. ItemType(newItemId):getName() .. ".", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_19", { ItemType(newItemId):getName() })
 						else
 							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_17")
 							local rand = math.random(100)
 							player:removeItem((rand <= Config.Improve.BreakChance and oldItemId or IDS.CLUSTER_OF_SOLACE), (rand <= Config.Improve.BreakChance and 1 or Config.Improve.Clusters))
 						end
 					else
-						npcHandler:say("You do not have " .. ItemType(oldItemId):getArticle() .. " " .. ItemType(oldItemId):getName() .. " with you.", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_20", { ItemType(oldItemId):getArticle(), ItemType(oldItemId):getName() })
 					end
 				else
 					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_18")
@@ -424,7 +424,7 @@ local function creatureSayCallback(npc, creature, type, message)
 							player:removeItem(oldItemId, 1)
 							player:addItem(newItemId)
 							player:removeItem(IDS.CLUSTER_OF_SOLACE, Config.Transform.Clusters)
-							npcHandler:say("Your dreams are strong, the transforming was successful. Take your " .. ItemType(newItemId):getName() .. ".", npc, creature)
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_21", { ItemType(newItemId):getName() })
 						else
 							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_19")
 							local rand = math.random(100)
@@ -437,7 +437,7 @@ local function creatureSayCallback(npc, creature, type, message)
 							end
 						end
 					else
-						npcHandler:say("You do not have " .. ItemType(oldItemId):getArticle() .. " " .. ItemType(oldItemId):getName() .. " with you.", npc, creature)
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_22", { ItemType(oldItemId):getArticle(), ItemType(oldItemId):getName() })
 					end
 				else
 					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_20")
@@ -465,7 +465,7 @@ keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler,
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.eruaran.farewell_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

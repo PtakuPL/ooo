@@ -11,7 +11,7 @@ end
 local thornKnightDeath = CreatureEvent("ThornKnightDeath")
 function thornKnightDeath.onDeath(creature, corpse, lasthitkiller, mostdamagekiller, lasthitunjustified, mostdamageunjustified)
 	if creature:getName():lower() == "mounted thorn knight" then
-		creature:say("The thorn knight unmounts!", TALKTYPE_MONSTER_SAY)
+		creature:sayLocalized("scripts.creaturescripts_thorn_knight_death.say_1", TALKTYPE_MONSTER_SAY)
 		Game.createMonster("the shielded thorn knight", creature:getPosition(), true, true)
 		Game.createMonster("thorn steed", creature:getPosition(), false, true)
 		addEvent(checkBlood, 1, creature:getPosition())

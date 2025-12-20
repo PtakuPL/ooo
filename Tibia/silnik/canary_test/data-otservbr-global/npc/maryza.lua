@@ -105,7 +105,7 @@ end
 -- Greeting
 keywordHandler:addCustomGreetKeyword({ "hi maryza" }, greetCallback, { npcHandler = npcHandler })
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.maryza.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)

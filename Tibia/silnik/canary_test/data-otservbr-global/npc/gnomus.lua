@@ -225,7 +225,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if amount[playerId] > 1 then
 				plural = plural .. "s"
 			end
-			npcHandler:say("You want to offer " .. amount[playerId] .. " suspicious device" .. plural .. ". Which leader shall have it, (Gnomus) of the {gnomes}, (Klom Stonecutter) of the {dwarves} or the {scouts} (Lardoc Bashsmite)?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_1", { amount[playerId], plural })
 			npcHandler:setTopic(playerId, 56)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_10")
@@ -276,11 +276,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_17")
 		npcHandler:setTopic(playerId, 5)
 	elseif MsgContains(message, "gnomes") and npcHandler:getTopic(playerId) == 5 then
-		npcHandler:say("The gnomes are still in need of your help, member of Bigfoot's Brigade. Prove your worth by answering their calls! (" .. math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points), 0) .. "/10)", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_2", { math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points), 0) })
 	elseif MsgContains(message, "dwarves") and npcHandler:getTopic(playerId) == 5 then
-		npcHandler:say("The dwarves are still in need of your help, member of Bigfoot's Brigade. Prove your worth by answering their calls! (" .. math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points), 0) .. "/10)", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_3", { math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points), 0) })
 	elseif MsgContains(message, "scouts") and npcHandler:getTopic(playerId) == 5 then
-		npcHandler:say("The scouts are still in need of your help, member of Bigfoot's Brigade. Prove your worth by answering their calls! (" .. math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points), 0) .. "/10)", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_4", { math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points), 0) })
 	end
 
 	return true
@@ -310,8 +310,8 @@ keywordHandler:addKeyword({ "efforts" }, StdModule.say, {
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.gnomus.stdmod_2" })
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.gnomus.stdmod_3" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, member of the Bigfoot Brigade. We could really use some {help} from you right now. You should prove {worthy} to our alliance.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Well, bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gnomus.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.gnomus.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_SET_INTERACTION, onAddFocus)
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)

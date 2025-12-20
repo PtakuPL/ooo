@@ -5,7 +5,7 @@ function actions_ceirons_waterskin.onUse(player, item, fromPosition, target, toP
 		toPosition:sendMagicEffect(CONST_ME_LOSEENERGY)
 		item:transform(5939)
 		player:setStorageValue(Storage.Quest.U7_8.DruidOutfits.CeironsWaterskin, 1)
-		player:say("You have successfully collected a special water sample from the hydra cave.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.actions_ceirons_waterskin.say_1", TALKTYPE_MONSTER_SAY)
 	end
 
 	return true

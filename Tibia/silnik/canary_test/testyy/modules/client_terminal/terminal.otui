@@ -29,7 +29,7 @@ UIWindow
 
   Label
     id: titleBar
-    !text: tr('Terminal')
+    !text: tr("otclient_modules.terminal_otui.tr_1")
     border: 1 black
     color: white
     anchors.top: parent.top

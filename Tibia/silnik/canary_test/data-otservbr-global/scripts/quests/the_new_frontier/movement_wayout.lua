@@ -11,7 +11,7 @@ function wayOut.onStepIn(creature, item, position, fromPosition)
 	if player:getStorageValue(TheNewFrontier.Questline) == 1 then
 		player:setStorageValue(TheNewFrontier.Mission01, 2) -- Questlog, Quest "Mission 01: New Land"
 		player:setStorageValue(TheNewFrontier.Questline, 2)
-		player:say("You have found the passage through the mountains and can report about your success.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.movement_wayout.say_1", TALKTYPE_MONSTER_SAY)
 	end
 	return true
 end

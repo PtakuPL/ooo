@@ -18,7 +18,7 @@ function beaverTrees.onUse(player, item, fromPosition, target, toPosition, isHot
 				toPosition:sendMagicEffect(CONST_ME_TELEPORT)
 			end
 			player:setStorageValue(TheNewFrontier.Mission02.Beaver1, 1)
-			player:say("You have marked the tree, but you also angered the aquirrel family who lived on it!", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.action_beaver.say_3", TALKTYPE_MONSTER_SAY)
 		elseif toPosition == config.treesBeaver[2] and player:getStorageValue(TheNewFrontier.Mission02.Beaver2) < 1 then
 			for i = 1, 5 do
 				position = toPosition
@@ -28,12 +28,12 @@ function beaverTrees.onUse(player, item, fromPosition, target, toPosition, isHot
 			Game.createMonster("war wolf", toPosition)
 			toPosition:sendMagicEffect(CONST_ME_TELEPORT)
 			player:setStorageValue(TheNewFrontier.Mission02.Beaver2, 1)
-			player:say("You have marked the tree but it seems someone marked it already! He is not happy with your actions and he brought friends!", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.action_beaver.say_2", TALKTYPE_MONSTER_SAY)
 		elseif toPosition == config.treesBeaver[3] and player:getStorageValue(TheNewFrontier.Mission02.Beaver3) < 1 then
 			Game.createMonster("thieving squirrel", toPosition)
 			toPosition:sendMagicEffect(CONST_ME_TELEPORT)
 			player:setStorageValue(TheNewFrontier.Mission02.Beaver3, 1)
-			player:say("You've marked the tree, but its former inhabitant has stolen your bait! Get it before it runs away!", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.action_beaver.say_1", TALKTYPE_MONSTER_SAY)
 			item:remove()
 		end
 	end

@@ -1,5 +1,5 @@
 MainWindow
-  !text: tr('Edit Hotkey')
+  !text: tr("otclient_modules.edit_hotkey_otui.tr_7")
   size: 360 160
   @onEscape: modules.game_actionbar.closeEditHotkeyWindow()
 
@@ -10,7 +10,7 @@ MainWindow
     height: 25
     Label
       id: comboPreview
-      !text: tr('Current hotkey to change: %s', 'none')
+      !text: tr("otclient_modules.edit_hotkey_otui.tr_6", 'none')
       anchors.horizontalCenter: parent.horizontalCenter
       anchors.top: parent.top
       anchors.bottom: parent.bottom
@@ -18,14 +18,14 @@ MainWindow
       text-align: left
 
   Label
-    !text: tr('Click "Apply" to assign the hotkey.\nClick "Clear" to remove the hotkey.')
+    !text: tr("otclient_modules.edit_hotkey_otui.tr_5")
     anchors.top: prev.bottom
     margin-top: 10
     text-auto-resize: true
 
   Label
     id: errorLabel
-    !text: tr('This hotkey is already in use and will be overwritten.')
+    !text: tr("otclient_modules.edit_hotkey_otui.tr_4")
     color: red
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.top: prev.bottom
@@ -41,7 +41,7 @@ MainWindow
 
   Button
     id: applyButton
-    !text: tr('Apply')
+    !text: tr("otclient_modules.edit_hotkey_otui.tr_3")
     anchors.left: parent.left
     width: 80
     anchors.bottom: parent.bottom
@@ -50,7 +50,7 @@ MainWindow
 
   Button
     id: clearButton
-    !text: tr('Clear')
+    !text: tr("otclient_modules.edit_hotkey_otui.tr_2")
     width: 80
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.bottom: parent.bottom
@@ -58,7 +58,7 @@ MainWindow
 
   Button
     id: cancelButton
-    !text: tr('Cancel')
+    !text: tr("otclient_modules.edit_hotkey_otui.tr_1")
     width: 80
     anchors.right: parent.right
     anchors.bottom: parent.bottom

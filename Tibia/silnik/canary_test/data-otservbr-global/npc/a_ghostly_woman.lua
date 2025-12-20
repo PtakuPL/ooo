@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Alone ... so alone. So cold." },
+	{ i18nKey = "npc.a_ghostly_woman.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -59,9 +59,9 @@ end
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.a_ghostly_woman.stdmod_1" })
 keywordHandler:addKeyword({ "boots" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.a_ghostly_woman.stdmod_2" })
 
-npcHandler:setMessage(MESSAGE_GREET, "I feel you. I hear your thoughts. You are ... alive.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Alone ... so alone. So cold.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Alone ... so alone. So cold.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_ghostly_woman.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.a_ghostly_woman.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.a_ghostly_woman.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

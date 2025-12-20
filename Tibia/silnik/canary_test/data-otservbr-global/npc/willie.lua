@@ -46,10 +46,10 @@ npcType.onCheckItem = function(npc, player, clientId, subType) end
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Ah, what the heck.Make sure you know what you want before you bug me." },
-	{ text = "Buying and selling food!" },
-	{ text = "Make sure you know what you want before you bug me." },
-	{ text = "You, over there! Stop sniffing around my farm! Either trade with me or leave!" },
+	{ i18nKey = "npc.willie.voice_1" },
+	{ i18nKey = "npc.willie.voice_2" },
+	{ i18nKey = "npc.willie.voice_3" },
+	{ i18nKey = "npc.willie.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -280,10 +280,10 @@ bananaKeyword:addChildKeyword({ "" }, StdModule.say, {
 	reset = true,
 })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Yeah go away!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Yeah, bye |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Ya take a good look.")
-npcHandler:setMessage(MESSAGE_GREET, "Hiho |PLAYERNAME|. I hope you're here to {trade}.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.willie.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.willie.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.willie.sendtrade_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.willie.greet_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

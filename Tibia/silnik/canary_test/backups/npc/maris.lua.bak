@@ -71,20 +71,20 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 -- Travel
 local function addTravelKeyword(keyword, cost, destination)
-	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = "Do you want go to the " .. keyword:titleCase() .. " for |TRAVELCOST|?", cost = cost })
+	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.maris.stdmod_1" .. keyword:titleCase() .. " for |TRAVELCOST|?", cost = cost })
 	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, cost = cost, destination = destination })
-	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, text = "Alright then!", reset = true })
+	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.maris.stdmod_2", reset = true })
 end
 
 addTravelKeyword("fenrock", 100, Position(32563, 31313, 7))
 addTravelKeyword("mistrock", 100, Position(32640, 31439, 7))
 
 -- Basic
-keywordHandler:addKeyword({ "offer" }, StdModule.say, { npcHandler = npcHandler, text = "I can take you to {Fenrock} and {Mistrock}!" })
+keywordHandler:addKeyword({ "offer" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.maris.stdmod_3" })
 keywordHandler:addAliasKeyword({ "passage" })
-keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, text = "I am Maris, Captain of this ship." })
+keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.maris.stdmod_4" })
 keywordHandler:addAliasKeyword({ "captain" })
-keywordHandler:addKeyword({ "alori mort" }, StdModule.say, { npcHandler = npcHandler, text = "Stop mumbling and don't bug me." }, function(player)
+keywordHandler:addKeyword({ "alori mort" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.maris.stdmod_5" }, function(player)
 	return player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission03) == 1
 end)
 

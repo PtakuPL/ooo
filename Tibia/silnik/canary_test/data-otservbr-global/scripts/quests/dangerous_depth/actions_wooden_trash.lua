@@ -9,7 +9,7 @@ function dangerousDepthWooden.onUse(creature, item)
 
 	if creature:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Home) == 1 and stgValueP < 3 then
 		if r <= 25 then
-			creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You started an escort, get your prisoner to the dwarf outpost!")
+			creature:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_wooden_trash.msg_2")
 			local prisoner = Game.createMonster("Captured Dwarf", item:getPosition())
 			item:getPosition():sendMagicEffect(CONST_ME_POFF)
 			item:remove()
@@ -21,7 +21,7 @@ function dangerousDepthWooden.onUse(creature, item)
 				end
 			end, 5 * 60 * 1000, creatureid)
 		else
-			creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You find nothing of interest beneath the rubble.")
+			creature:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_wooden_trash.msg_1")
 			item:getPosition():sendMagicEffect(CONST_ME_POFF)
 			item:remove()
 		end

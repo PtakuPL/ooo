@@ -311,7 +311,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_1")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "have") then
-		npcHandler:say("Right now you have " .. player:getTaskHuntingPoints() .. " HTP.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_1", { player:getTaskHuntingPoints() })
 		npcHandler:setTopic(playerId, 0)
 
 		-- Add task hunting points history here.
@@ -329,7 +329,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_4")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("I offer you the " .. getOffersString(config.outifts, false) .. " outfit" .. (#config.outifts >= 1 and "s." or "."), npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_2", { getOffersString(config.outifts, false), (#config.outifts >= 1 and "s." or ".") })
 				npcHandler:setTopic(playerId, config.topics.outfit)
 			end
 		elseif MsgContains(message, "mount") then
@@ -337,7 +337,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_5")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("I offer you the " .. getOffersString(config.mounts, false) .. " mount" .. (#config.mounts >= 1 and "s." or "."), npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_3", { getOffersString(config.mounts, false), (#config.mounts >= 1 and "s." or ".") })
 				npcHandler:setTopic(playerId, config.topics.mount)
 			end
 		elseif MsgContains(message, "trophies") then
@@ -345,7 +345,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_6")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("I offer you the " .. getOffersString(config.trophies, true) .. ".", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_4", { getOffersString(config.trophies, true) })
 				npcHandler:setTopic(playerId, config.topics.trophy)
 			end
 		elseif MsgContains(message, "furniture") then
@@ -353,7 +353,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_7")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("I offer you the " .. getOffersString(config.furniture, true) .. ".", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_5", { getOffersString(config.furniture, true) })
 				npcHandler:setTopic(playerId, config.topics.furniture)
 			end
 		end
@@ -479,9 +479,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Good hunting! I can offer you some lovely {rewards} for finishing prey hunting tasks! Furthermore I can tell you how many hunting task points (HTP) you actually {have} and you have already {spent}.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Keep on hunting!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Keep on hunting!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.walter_jaeger.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.walter_jaeger.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.walter_jaeger.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

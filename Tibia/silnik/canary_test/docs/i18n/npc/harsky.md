@@ -1,7 +1,7 @@
 # NPC: harsky
 
 **Plik:** `data-otservbr-global/npc/harsky.lua`
-**Data migracji:** 2025-12-10 14:15
+**Data migracji:** 2025-12-17 01:00
 **Liczba tekstów:** 2
 
 ## Klucze i18n

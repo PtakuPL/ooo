@@ -1,7 +1,7 @@
 # NPC: dallheim
 
 **Plik:** `data-otservbr-global/npc/dallheim.lua`
-**Data migracji:** 2025-12-10 12:59
+**Data migracji:** 2025-12-17 00:55
 **Liczba tekstów:** 8
 
 ## Klucze i18n

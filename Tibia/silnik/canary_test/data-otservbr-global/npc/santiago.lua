@@ -67,27 +67,27 @@ local function greetCallback(npc, creature)
 	if player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) < 1 then
 		player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage, 1)
 		player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoQuestLog, 1)
-		npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|, nice to see you on Rookgaard! I saw you walking by and wondered if you could help me. Could you? Please, say {yes}!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.santiago.greet_msg_1")
 		storeTalkCid[playerId] = 0
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Oh, |PLAYERNAME|, it's you again! It's probably impolite to disturb a busy adventurer like you, but I really need help. Please, say {yes}!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.santiago.greet_msg_2")
 		storeTalkCid[playerId] = 0
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 2 then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.santiago.say_1")
 		Position(32033, 32277, 6):sendMagicEffect(CONST_ME_TUTORIALARROW)
 		return false
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 3 then
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome back, |PLAYERNAME|! Ahh, you found my chest. Let me take a look at you. You put on that coat, {yes}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.santiago.greet_msg_3")
 		storeTalkCid[playerId] = 2
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 4 then
-		npcHandler:setMessage(MESSAGE_GREET, "Hey, I want to give you a weapon for free! You should not refuse that, in fact you should say '{yes}'!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.santiago.greet_msg_4")
 		storeTalkCid[playerId] = 2
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 5 then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.santiago.say_2")
 		return false
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 6 then
 		if player:removeItem(7882, 3) then
-			npcHandler:setMessage(MESSAGE_GREET, "Good job! For that, I'll grant you 100 experience points! Oh - what was that? I think you advanced a level, {right}?")
+			NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.santiago.greet_msg_5")
 			player:addExperience(100, true)
 			player:getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)
 			player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoQuestLog, 5)
@@ -98,25 +98,25 @@ local function greetCallback(npc, creature)
 			return false
 		end
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 7 then
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome back! Where were we... ? Ah, right, I asked you if you saw your 'level up'! You did, {right}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.santiago.greet_msg_1")
 		storeTalkCid[playerId] = 4
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 8 then
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome back! Where were we... ? Ah, right, I asked you if those nasty cockroaches {hurt} you! Did they?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.santiago.greet_msg_2")
 		storeTalkCid[playerId] = 5
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 9 then
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome back! Where were we... ? Ah, right, I asked you if I should demonstrate some damage on you. Let's do it, {okay}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.santiago.greet_msg_3")
 		storeTalkCid[playerId] = 6
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 10 then
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome back! Where were we... ? Ah, right, I was about to show you how you regain health, right?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.santiago.greet_msg_4")
 		storeTalkCid[playerId] = 7
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 11 then
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome back! Where were we... ? Ah, right, I gave you a fish to eat?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.santiago.greet_msg_5")
 		storeTalkCid[playerId] = 8
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 12 then
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome back! Where were we... ? Ah, right, I asked you if you saw Zirella! Did you?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.santiago.greet_msg_6")
 		storeTalkCid[playerId] = 9
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.SantiagoNpcGreetStorage) == 13 then
-		npcHandler:setMessage(MESSAGE_GREET, "Hello again, |PLAYERNAME|! It's great to see you. If you like, we can chat a little. Just use the highlighted {keywords} again to choose a {topic}.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.santiago.greet_msg_6")
 	end
 	return true
 end
@@ -245,8 +245,8 @@ end
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
-npcHandler:setMessage(MESSAGE_FAREWELL, "Take care, |PLAYERNAME|!.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye traveller, and enjoy your stay on Rookgaard.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.santiago.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.santiago.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

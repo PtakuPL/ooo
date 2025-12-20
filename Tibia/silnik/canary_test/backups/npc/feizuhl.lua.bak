@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I sell furniture both to the mourned and the enlightened." },
+	{ i18nKey = "npc.feizuhl.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -56,7 +56,7 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Be mourned pilgrim in flesh and welcome to the furniture store.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.feizuhl.greet_msg_1")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Have a look. Most furniture comes in handy kits. Just use them in your house to assemble the furniture. Do you want to see only a certain type of furniture?")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -16,7 +16,7 @@ local wallMirror = Action()
 
 function wallMirror.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:hasExhaustion("delay-wall-mirror") then
-		player:say("Don't be so vain about your appearance.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.wall_mirror.say_1", TALKTYPE_MONSTER_SAY)
 		return true
 	end
 

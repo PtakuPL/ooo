@@ -57,7 +57,7 @@ npcType.onCloseChannel = function(npc, creature)
 end
 
 -- Sniper Gloves
-keywordHandler:addKeyword({ "sniper gloves" }, StdModule.say, { npcHandler = npcHandler, text = "We are always looking for sniper gloves. They are supposed to raise accuracy. If you find a pair, bring them here. Maybe I can offer you a nice trade." }, function(player)
+keywordHandler:addKeyword({ "sniper gloves" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.legola.stdmod_1" }, function(player)
 	return player:getItemCount(5875) == 0
 end)
 
@@ -122,7 +122,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

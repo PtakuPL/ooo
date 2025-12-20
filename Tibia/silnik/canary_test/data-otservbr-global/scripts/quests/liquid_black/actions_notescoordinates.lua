@@ -6,7 +6,7 @@ function notescoordinates.onUse(player, item, frompos, item2, topos)
 		player:addItem(14176, 1)
 		player:setStorageValue(Storage.Quest.U9_4.LiquidBlackQuest.Visitor, 2)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Empty.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_notescoordinates.msg_1")
 	end
 
 	return true

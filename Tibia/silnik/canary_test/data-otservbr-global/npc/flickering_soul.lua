@@ -152,7 +152,7 @@ end
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, playerSayCallback)
 
-npcHandler:setMessage(MESSAGE_GREET, "Be greeted, living soul!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.flickering_soul.greet_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

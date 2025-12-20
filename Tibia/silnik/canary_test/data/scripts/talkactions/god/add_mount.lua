@@ -29,8 +29,8 @@ function addmount.onSay(player, words, param)
 			target:addMount(mountId)
 		end
 
-		target:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("%s has added all mounts to you.", player:getName()))
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You have successfully added all mounts to player %s.", target:getName()))
+		target:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_mount.msg_4", {player:getName()})
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_mount.msg_3", {target:getName()})
 	else
 		local mountId = tonumber(mountParam)
 		if not mountId then
@@ -39,8 +39,8 @@ function addmount.onSay(player, words, param)
 		end
 
 		target:addMount(mountId)
-		target:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("%s has added a new mount for you.", player:getName()))
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You have successfully added mount %d to player %s.", mountId, target:getName()))
+		target:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_mount.msg_2", {player:getName()})
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_mount.msg_1", {mountId, target:getName()})
 	end
 	return true
 end

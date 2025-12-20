@@ -684,7 +684,7 @@ function createHirelingType(HirelingName)
 			local categoryTable = itemsTable[message:lower()]
 			if categoryTable then
 				npc:closeShopWindow(player)
-				npcHandler:say("Here are the items for the category " .. message .. ".", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_1", { message })
 				npc:openShopWindowTable(player, categoryTable)
 				return true
 			end
@@ -776,7 +776,7 @@ function createHirelingType(HirelingName)
 			local categoryTable = itemsTable[message:lower()]
 			if categoryTable then
 				local remainingCategories = npc:getRemainingShopCategories(message:lower(), itemsTable)
-				npcHandler:say("Of course, just browse through my wares. You can also look at " .. remainingCategories .. ".", npc, player)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.hireling.say_2", { remainingCategories })
 				npc:openShopWindowTable(player, categoryTable)
 			end
 		end
@@ -789,9 +789,9 @@ function createHirelingType(HirelingName)
 		return true
 	end
 
-	npcHandler:setMessage(MESSAGE_GREET, "It is good to see you. I'm always at your {service}.")
-	npcHandler:setMessage(MESSAGE_FAREWELL, "Farewell, |PLAYERNAME|, I'll be here if you need me again.")
-	npcHandler:setMessage(MESSAGE_WALKAWAY, "Come back soon!")
+	NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.hireling.greet_msg_1")
+	NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.hireling.farewell_msg_1")
+	NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.hireling.walkaway_msg_1")
 
 	npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 	npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

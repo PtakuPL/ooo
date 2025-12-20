@@ -21,10 +21,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Hm." },
-	{ text = "Yes. I listen, master." },
-	{ text = "I understand." },
-	{ text = "Not yet, my brothers. Wait." },
+	{ i18nKey = "npc.oblivion.voice_1" },
+	{ i18nKey = "npc.oblivion.voice_2" },
+	{ i18nKey = "npc.oblivion.voice_3" },
+	{ i18nKey = "npc.oblivion.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()

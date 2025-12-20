@@ -1,7 +1,7 @@
 # NPC: faluae
 
 **Plik:** `data-otservbr-global/npc/faluae.lua`
-**Data migracji:** 2025-12-10 14:05
+**Data migracji:** 2025-12-17 00:57
 **Liczba tekstów:** 2
 
 ## Klucze i18n

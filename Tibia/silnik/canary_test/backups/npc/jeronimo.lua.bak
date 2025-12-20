@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Change your Bar of Gold's for Items here!" },
+	{ i18nKey = "npc.jeronimo.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

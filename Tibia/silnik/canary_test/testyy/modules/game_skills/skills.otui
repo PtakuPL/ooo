@@ -87,7 +87,7 @@ XpBoostButton < UIWidget
 
 MiniWindow
   id: skillWindow
-  !text: tr('Skills')
+  !text: tr("otclient_modules.skills_otui.tr_59")
   height: 150
   icon: /images/topbuttons/skills
   @onOpen: modules.game_skills.onMiniWindowOpen()
@@ -103,7 +103,7 @@ MiniWindow
       margin-top: 5
       id: level
       SkillNameLabel
-        !text: tr('Level')
+        !text: tr("otclient_modules.skills_otui.tr_58")
       SkillValueLabel
       RedPercentPanel
 
@@ -111,14 +111,14 @@ MiniWindow
       id: experience
       height: 15
       SkillNameLabel
-        !text: tr('Experience')
+        !text: tr("otclient_modules.skills_otui.tr_57")
       SkillValueLabel
 
     SkillButton
       id: xpGainRate
       height: 15
       SkillNameLabel
-        !text: tr('XP Gain Rate')
+        !text: tr("otclient_modules.skills_otui.tr_56")
       SkillValueLabel
 
     XpBoostButton
@@ -129,55 +129,55 @@ MiniWindow
       id: health
       height: 15
       SkillNameLabel
-        !text: tr('Hit Points')
+        !text: tr("otclient_modules.skills_otui.tr_55")
       SkillValueLabel
 
     SkillButton
       id: mana
       height: 15
       SkillNameLabel
-        !text: tr('Mana')
+        !text: tr("otclient_modules.skills_otui.tr_54")
       SkillValueLabel
 
     SkillButton
       id: soul
       height: 15
       SkillNameLabel
-        !text: tr('Soul Points')
+        !text: tr("otclient_modules.skills_otui.tr_53")
       SkillValueLabel
 
     SkillButton
       id: capacity
       height: 15
       SkillNameLabel
-        !text: tr('Capacity')
+        !text: tr("otclient_modules.skills_otui.tr_52")
       SkillValueLabel
 
     SkillButton
       id: speed
       height: 15
       SkillNameLabel
-        !text: tr('Speed')
+        !text: tr("otclient_modules.skills_otui.tr_51")
       SkillValueLabel
 
     SkillButton
       id: regenerationTime
       height: 15
       SkillNameLabel
-        !text: tr('Regeneration Time')
+        !text: tr("otclient_modules.skills_otui.tr_50")
       SkillValueLabel
 
     SkillButton
       id: stamina
       SkillNameLabel
-        !text: tr('Stamina')
+        !text: tr("otclient_modules.skills_otui.tr_49")
       SkillValueLabel
       RedPercentPanel
 
     SkillButton
       id: offlineTraining
       SkillNameLabel
-        !text: tr('Offline Training')
+        !text: tr("otclient_modules.skills_otui.tr_48")
       SkillValueLabel
       RedPercentPanel
 
@@ -188,7 +188,7 @@ MiniWindow
     SkillButton
       id: magiclevel
       SkillNameLabel
-        !text: tr('Magic Level')
+        !text: tr("otclient_modules.skills_otui.tr_47")
       SkillValueLabel
       ImageSkill
         image-source: /images/icons/icon_magic
@@ -199,7 +199,7 @@ MiniWindow
     SkillButton
       id: skillId0
       SkillNameLabel
-        !text: tr('Fist Fighting')
+        !text: tr("otclient_modules.skills_otui.tr_46")
       SkillValueLabel
       ImageSkill
         image-source: /images/icons/icon_fist
@@ -209,7 +209,7 @@ MiniWindow
     SkillButton
       id: skillId1
       SkillNameLabel
-        !text: tr('Club Fighting')
+        !text: tr("otclient_modules.skills_otui.tr_45")
       SkillValueLabel
       ImageSkill
         image-source: /images/icons/icon_club
@@ -219,7 +219,7 @@ MiniWindow
     SkillButton
       id: skillId2
       SkillNameLabel
-        !text: tr('Sword Fighting')
+        !text: tr("otclient_modules.skills_otui.tr_44")
       SkillValueLabel
       ImageSkill
         image-source: /images/icons/icon_sword
@@ -229,7 +229,7 @@ MiniWindow
     SkillButton
       id: skillId3
       SkillNameLabel
-        !text: tr('Axe Fighting')
+        !text: tr("otclient_modules.skills_otui.tr_43")
       SkillValueLabel
       ImageSkill
         image-source: /images/icons/icon_axe
@@ -239,7 +239,7 @@ MiniWindow
     SkillButton
       id: skillId4
       SkillNameLabel
-        !text: tr('Distance Fighting')
+        !text: tr("otclient_modules.skills_otui.tr_42")
       SkillValueLabel
       ImageSkill
         image-source: /images/icons/icon_distance
@@ -249,7 +249,7 @@ MiniWindow
     SkillButton
       id: skillId5
       SkillNameLabel
-        !text: tr('Shielding')
+        !text: tr("otclient_modules.skills_otui.tr_41")
       SkillValueLabel
       ImageSkill
         image-source: /images/icons/icon_shielding
@@ -259,7 +259,7 @@ MiniWindow
     SkillButton
       id: skillId6
       SkillNameLabel
-        !text: tr('Fishing')
+        !text: tr("otclient_modules.skills_otui.tr_40")
       SkillValueLabel
       ImageSkill
         image-source: /images/icons/icon_fishing
@@ -273,61 +273,61 @@ MiniWindow
     SmallSkillButton
       id: skillId7
       SkillNameLabel
-        !text: tr('Critical Hit Chance')
+        !text: tr("otclient_modules.skills_otui.tr_39")
       SkillValueLabel
 
     SmallSkillButton
       id: skillId8
       SkillNameLabel
-        !text: tr('Critical Hit Damage')
+        !text: tr("otclient_modules.skills_otui.tr_38")
       SkillValueLabel
 
     SmallSkillButton
       id: skillId9
       SkillNameLabel
-        !text: tr('Life Leech Chance')
+        !text: tr("otclient_modules.skills_otui.tr_37")
       SkillValueLabel
 
     SmallSkillButton
       id: skillId10
       SkillNameLabel
-        !text: tr('Life Leech Amount')
+        !text: tr("otclient_modules.skills_otui.tr_36")
       SkillValueLabel
 
     SmallSkillButton
       id: skillId11
       SkillNameLabel
-        !text: tr('Mana Leech Chance')
+        !text: tr("otclient_modules.skills_otui.tr_35")
       SkillValueLabel
 
     SmallSkillButton
       id: skillId12
       SkillNameLabel
-        !text: tr('Mana Leech Amount')
+        !text: tr("otclient_modules.skills_otui.tr_34")
       SkillValueLabel
 
     SmallSkillButton
       id: skillId13
       SkillNameLabel
-        !text: tr('Fatal')
+        !text: tr("otclient_modules.skills_otui.tr_33")
       SkillValueLabel
 
     SmallSkillButton
       id: skillId14
       SkillNameLabel
-        !text: tr('Dodge')
+        !text: tr("otclient_modules.skills_otui.tr_32")
       SkillValueLabel
 
     SmallSkillButton
       id: skillId15
       SkillNameLabel
-        !text: tr('Momentum')
+        !text: tr("otclient_modules.skills_otui.tr_31")
       SkillValueLabel
 
     SmallSkillButton
       id: skillId16
       SkillNameLabel
-        !text: tr('Transcendence')
+        !text: tr("otclient_modules.skills_otui.tr_30")
       SkillValueLabel
 
 // 14.12
@@ -335,14 +335,14 @@ MiniWindow
       id: damageHealing
       visible: false
       SkillNameLabel
-        !text: tr('Damage/Healing')
+        !text: tr("otclient_modules.skills_otui.tr_29")
       SkillValueLabel
 
     SmallSkillButton
       id: attackValue
       visible: false
       SkillNameLabel
-        !text: tr('Attack Value')
+        !text: tr("otclient_modules.skills_otui.tr_28")
       SkillValueLabel
         margin-right: 12
       ImageAbsorb
@@ -351,52 +351,52 @@ MiniWindow
       visible: false
       id: convertedDamage
       SkillNameLabel
-        !text: tr('converted Damage')
+        !text: tr("otclient_modules.skills_otui.tr_27")
       SkillValueLabel
     SmallSkillButton
       visible: false
       id: convertedElement
       SkillNameLabel
-        !text: tr('converted Element')
+        !text: tr("otclient_modules.skills_otui.tr_26")
       SkillValueLabel
       
     SmallSkillButton
       id: lifeLeech
       visible: false
       SkillNameLabel
-        !text: tr('Life Leech')
+        !text: tr("otclient_modules.skills_otui.tr_25")
       SkillValueLabel
     SmallSkillButton
       id: manaLeech
       visible: false
       SkillNameLabel
-        !text: tr('Mana Leech')
+        !text: tr("otclient_modules.skills_otui.tr_24")
       SkillValueLabel
     SmallSkillButton
       visible: false
       id: criticalHit
       SkillNameLabel
-        !text: tr('Critical Hit:')
+        !text: tr("otclient_modules.skills_otui.tr_23")
     SmallSkillButton
       id: criticalChance
       visible: false
       SkillNameLabel
         margin-left: 15
-        !text: tr('Chance')
+        !text: tr("otclient_modules.skills_otui.tr_22")
       SkillValueLabel
     SmallSkillButton
       id: criticalExtraDamage
       visible: false
       SkillNameLabel
         margin-left: 15
-        !text: tr('Extra Damage')
+        !text: tr("otclient_modules.skills_otui.tr_21")
       SkillValueLabel
 
     SmallSkillButton
       id: onslaught
       visible: false
       SkillNameLabel
-        !text: tr('Onslaught')
+        !text: tr("otclient_modules.skills_otui.tr_20")
       SkillValueLabel
     HorizontalSeparator
       id: separadorOnDefenseInfoChange
@@ -408,7 +408,7 @@ MiniWindow
       id: physicalResist
       visible: false
       SkillNameLabel
-        !text: tr('Physical')
+        !text: tr("otclient_modules.skills_otui.tr_19")
       SkillValueLabel
         margin-right: 12
       ImageAbsorb
@@ -417,7 +417,7 @@ MiniWindow
       id: fireResist
       visible: false
       SkillNameLabel
-        !text: tr('Fire')
+        !text: tr("otclient_modules.skills_otui.tr_18")
       SkillValueLabel
         margin-right: 12
       ImageAbsorb
@@ -427,7 +427,7 @@ MiniWindow
       id: earthResist
       visible: false
       SkillNameLabel
-        !text: tr('Earth')
+        !text: tr("otclient_modules.skills_otui.tr_17")
       SkillValueLabel
         margin-right: 12
       ImageAbsorb
@@ -436,7 +436,7 @@ MiniWindow
       id: energyResist
       visible: false
       SkillNameLabel
-        !text: tr('Energy')
+        !text: tr("otclient_modules.skills_otui.tr_16")
       SkillValueLabel
         margin-right: 12
       ImageAbsorb
@@ -445,7 +445,7 @@ MiniWindow
       id: IceResist
       visible: false
       SkillNameLabel
-        !text: tr('Ice')
+        !text: tr("otclient_modules.skills_otui.tr_15")
       SkillValueLabel
         margin-right: 12
       ImageAbsorb
@@ -454,7 +454,7 @@ MiniWindow
       id: HolyResist
       visible: false
       SkillNameLabel
-        !text: tr('Holy')
+        !text: tr("otclient_modules.skills_otui.tr_14")
       SkillValueLabel
         margin-right: 12
       ImageAbsorb
@@ -464,7 +464,7 @@ MiniWindow
       id: deathResist
       visible: false
       SkillNameLabel
-        !text: tr('Death')
+        !text: tr("otclient_modules.skills_otui.tr_13")
       SkillValueLabel
         margin-right: 12
       ImageAbsorb
@@ -473,7 +473,7 @@ MiniWindow
       id: HealingResist
       visible: false
       SkillNameLabel
-        !text: tr('Healing')
+        !text: tr("otclient_modules.skills_otui.tr_12")
       SkillValueLabel
         margin-right: 12
       ImageAbsorb
@@ -483,7 +483,7 @@ MiniWindow
       id: drowResist
       visible: false
       SkillNameLabel
-        !text: tr('Drown')
+        !text: tr("otclient_modules.skills_otui.tr_11")
       SkillValueLabel
         margin-right: 12
       ImageAbsorb
@@ -492,7 +492,7 @@ MiniWindow
       id: lifedrainResist
       visible: false
       SkillNameLabel
-        !text: tr('Lifedrain')
+        !text: tr("otclient_modules.skills_otui.tr_10")
       SkillValueLabel
         margin-right: 12
       ImageAbsorb
@@ -501,7 +501,7 @@ MiniWindow
       id: manadRainResist
       visible: false
       SkillNameLabel
-        !text: tr('manadrain')
+        !text: tr("otclient_modules.skills_otui.tr_9")
       SkillValueLabel
         margin-right: 12
       ImageAbsorb
@@ -515,33 +515,33 @@ MiniWindow
       id: defenceValue
       visible: false
       SkillNameLabel
-        !text: tr('Defence Value')
+        !text: tr("otclient_modules.skills_otui.tr_8")
       SkillValueLabel
       
     SmallSkillButton
       id: armorValue
       visible: false
       SkillNameLabel
-        !text: tr('Armor Value')
+        !text: tr("otclient_modules.skills_otui.tr_7")
       SkillValueLabel
 
     SmallSkillButton
       id: mitigation
       visible: false
       SkillNameLabel
-        !text: tr('Mitigation')
+        !text: tr("otclient_modules.skills_otui.tr_6")
       SkillValueLabel
     SmallSkillButton
       id: dodge
       visible: false
       SkillNameLabel
-        !text: tr('Dodge')
+        !text: tr("otclient_modules.skills_otui.tr_5")
       SkillValueLabel    
     SmallSkillButton
       id: damageReflection
       visible: false
       SkillNameLabel
-        !text: tr('Damage Reflection')
+        !text: tr("otclient_modules.skills_otui.tr_4")
       SkillValueLabel  
 
     HorizontalSeparator
@@ -554,19 +554,19 @@ MiniWindow
       id: momentum
       visible: false
       SkillNameLabel
-        !text: tr('Momentum')
+        !text: tr("otclient_modules.skills_otui.tr_3")
       SkillValueLabel  
     SmallSkillButton
       id: transcendence
       visible: false
       SkillNameLabel
-        !text: tr('Transcendence')
+        !text: tr("otclient_modules.skills_otui.tr_2")
       SkillValueLabel  
     SmallSkillButton
       id: amplification
       visible: false
       SkillNameLabel
-        !text: tr('Amplification')
+        !text: tr("otclient_modules.skills_otui.tr_1")
       SkillValueLabel  
 
   UIWidget

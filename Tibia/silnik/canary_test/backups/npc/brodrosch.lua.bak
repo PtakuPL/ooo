@@ -21,7 +21,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Passage to Cormaya! Unforgettable steamboat ride!" },
+	{ i18nKey = "npc.brodrosch.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -129,11 +129,11 @@ addTravelKeyword("cormaya", { "Do you seek a ride to Cormaya for |TRAVELCOST|?",
 end)
 
 addTravelKeyword("gnomprona", { "Would you like to travel to Gnomprona for |TRAVELCOST|?", "Full steam ahead!", "Then not." }, 200, "postman", Position(33516, 32856, 14))
-keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandler, text = "Do you want me take you to {Cormaya}, {Farmine} or to {Gnomprona}?" })
+keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.brodrosch.stdmod_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome, |PLAYERNAME|! May earth protect you on the rocky grounds. If you need a {passage}, I can help you.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.brodrosch.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.brodrosch.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.brodrosch.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

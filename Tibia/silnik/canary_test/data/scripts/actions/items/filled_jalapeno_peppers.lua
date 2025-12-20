@@ -12,7 +12,7 @@ function filledJalapenoPeppers.onUse(player, item, fromPosition, target, toPosit
 
 	player:addCondition(speedCondition)
 	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.filled_jalapeno_peppers.msg_2")
-	player:say("Munch.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.filled_jalapeno_peppers.say_1", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)
 	item:remove(1)

@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "*mumbles*" },
-	{ text = "That astronomer of the academy simply has no idea what he is dealing with..." },
-	{ text = "Some secrets should better be left uncovered." },
-	{ text = "Ha, ha... *mumbles* Hmm." },
+	{ i18nKey = "npc.shoddy_beggar.voice_1" },
+	{ i18nKey = "npc.shoddy_beggar.voice_2" },
+	{ i18nKey = "npc.shoddy_beggar.voice_3" },
+	{ i18nKey = "npc.shoddy_beggar.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -169,9 +169,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "What do you want? Listen to the old madman? If you have nothing to spare, leave me alone.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Yes, whatever.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Yes, whatever.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.shoddy_beggar.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.shoddy_beggar.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.shoddy_beggar.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

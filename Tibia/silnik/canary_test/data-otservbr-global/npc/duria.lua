@@ -55,9 +55,9 @@ keywordHandler:addKeyword({ "healing", "spells" }, StdModule.say, { npcHandler =
 keywordHandler:addKeyword({ "support", "spells" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.duria.stdmod_2" })
 keywordHandler:addKeyword({ "spells" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.duria.stdmod_3" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hiho, fellow knight |PLAYERNAME|!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Goodbye.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Be carefull out there, jawoll.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.duria.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.duria.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.duria.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

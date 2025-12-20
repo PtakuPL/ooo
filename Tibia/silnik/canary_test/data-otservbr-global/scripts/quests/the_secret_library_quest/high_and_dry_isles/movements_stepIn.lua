@@ -63,7 +63,7 @@ function movements_isle_stepIn.onStepIn(creature, item, position, fromPosition)
 		if Game.getStorageValue(turtle.storageTimer) > os.time() then
 			player:teleportTo(turtle.toPosition)
 		else
-			player:say("The turtle is hungry... You must feed it.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("quests.movements_stepin.say_1", TALKTYPE_MONSTER_SAY)
 			player:teleportTo(fromPosition, true)
 		end
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)

@@ -26,8 +26,8 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Always be on guard." },
-	{ text = "Hmm." },
+	{ i18nKey = "npc.jack_springer.voice_1" },
+	{ i18nKey = "npc.jack_springer.voice_2" },
 }
 
 npcConfig.shop = {
@@ -80,14 +80,14 @@ local function greetCallback(npc, creature)
 	if player then
 		if player:getLevel() >= 250 then
 			if player:getStorageValue(Storage.Quest.U12_20.GraveDanger.Questline) < 1 then
-				npcHandler:setMessage(MESSAGE_GREET, "Welcome, |PLAYERNAME|! There is much we have to {discuss}.")
+				NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jack_springer.greet_msg_1")
 			elseif player:getStorageValue(Storage.Quest.U12_20.GraveDanger.Questline) >= 3 then
-				npcHandler:setMessage(MESSAGE_GREET, "Hello, stranger! You look suspicious to me. I don't think we have anything to discuss.")
+				NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jack_springer.greet_msg_2")
 			else
-				npcHandler:setMessage(MESSAGE_GREET, "Welcome, |PLAYERNAME|! Is there anything to {report}?")
+				NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jack_springer.greet_msg_3")
 			end
 		else
-			npcHandler:setMessage(MESSAGE_GREET, "Hello, stranger! Sorry, but I never heard about you. I'm looking for more experienced help.")
+			NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jack_springer.greet_msg_4")
 		end
 	end
 
@@ -191,7 +191,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, my friend.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.jack_springer.sendtrade_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

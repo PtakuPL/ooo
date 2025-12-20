@@ -84,10 +84,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 0)
 		local itemId, itemCount, itemPrice = eventShopItems[message][1], eventShopItems[message][2], eventShopItems[message][3]
 		if player:getItemCount(14112) > 0 then
-			npcHandler:say("You want buy {" .. message .. "} for " .. itemPrice .. "x?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jeronimo.say_1", { message, itemPrice })
 			npcHandler:setTopic(message)
 		else
-			npcHandler:say("You don't have " .. itemPrice .. " {Bar of Gold(s)}!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jeronimo.say_2", { itemPrice })
 			return true
 		end
 	end
@@ -99,7 +99,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		elseif message == "yes" then
 			if player:getItemCount(14112) >= itemPrice then
-				npcHandler:say("You bought {" .. npcHandler:getTopic(playerId) .. "} " .. itemCount .. "x for " .. itemPrice .. " {Bar of Gold(s)}!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jeronimo.say_3", { npcHandler:getTopic(playerId), itemCount, itemPrice })
 				player:removeItem(14112, itemPrice)
 				player:addItem(itemId, itemCount)
 			else

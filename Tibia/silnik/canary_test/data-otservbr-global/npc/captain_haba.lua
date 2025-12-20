@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Is this a mutiny or what? Move, move!!" },
-	{ text = "In the rigging ya lazy fools!" },
-	{ text = "I wanna see you movin' ya lazy fools!!" },
-	{ text = "Full sails!! There's a sea serpent to catch!!" },
+	{ i18nKey = "npc.captain_haba.voice_1" },
+	{ i18nKey = "npc.captain_haba.voice_2" },
+	{ i18nKey = "npc.captain_haba.voice_3" },
+	{ i18nKey = "npc.captain_haba.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -65,9 +65,9 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 
 	if player:getStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.QuestLine) == 2 then
-		npcHandler:setMessage(MESSAGE_GREET, "Harrr, landlubber wha'd ya want? Askin' for a {passage}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.captain_haba.greet_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Harrr, landlubber wha'd ya want?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.captain_haba.greet_msg_2")
 	end
 	return true
 end
@@ -187,8 +187,8 @@ keywordHandler:addKeyword({ "raiders" }, StdModule.say, { npcHandler = npcHandle
 keywordHandler:addKeyword({ "shaman" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.captain_haba.stdmod_23" })
 keywordHandler:addKeyword({ "story" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.captain_haba.stdmod_24" })
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Bye.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Bye.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.captain_haba.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.captain_haba.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

@@ -188,7 +188,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				local count = player:getItemCount(7290)
 				player:addMoney(count * 2000)
 				player:removeItem(7290, count)
-				npcHandler:say("Here your are. " .. count * 2000 .. " gold coins for " .. count .. " shards.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hjaern.say_1", { count * 2000, count })
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 6 then
@@ -217,7 +217,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Be greeted, |PLAYERNAME|. The {spiritual} world looks upon you and your deeds.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.hjaern.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

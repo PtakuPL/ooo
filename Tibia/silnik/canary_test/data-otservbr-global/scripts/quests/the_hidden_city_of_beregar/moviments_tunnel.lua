@@ -7,7 +7,7 @@ function tunnel.onStepIn(creature, item, position, fromPosition)
 	end
 
 	player:teleportTo(Position(32616, 31514, 9))
-	player:say("Use the ore wagon to pass this spot.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.moviments_tunnel.say_1", TALKTYPE_MONSTER_SAY)
 	return true
 end
 

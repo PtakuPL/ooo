@@ -23,19 +23,19 @@ WhiteListLabel < Label
 
 MainWindow
   id: communicationWindow
-  !text: tr('Ignore List')
+  !text: tr("otclient_modules.communicationwindow_otui.tr_16")
   size: 515 410
   @onEscape: self:destroy()
 
   CheckBox
     id: checkboxUseIgnoreList
-    !text: tr('Activate ignorelist')
+    !text: tr("otclient_modules.communicationwindow_otui.tr_15")
     anchors.left: parent.left
     anchors.top: parent.top
     width: 180
 
   Label
-    !text: tr('Ignored Players') .. ':'
+    !text: tr("otclient_modules.communicationwindow_otui.tr_14") .. ':'
     anchors.left: parent.left
     anchors.top: prev.bottom
     margin-top: 10
@@ -61,7 +61,7 @@ MainWindow
 
   Button
     id: buttonIgnoreAdd
-    !text: tr('Add')
+    !text: tr("otclient_modules.communicationwindow_otui.tr_13")
     width: 48
     height: 20
     margin-left: 5
@@ -70,7 +70,7 @@ MainWindow
 
   Button
     id: buttonIgnoreRemove
-    !text: tr('Remove')
+    !text: tr("otclient_modules.communicationwindow_otui.tr_12")
     width: 64
     height: 20
     margin-left: 5
@@ -78,14 +78,14 @@ MainWindow
     anchors.left: prev.right
 
   Label
-    !text: tr('Global ignore settings')
+    !text: tr("otclient_modules.communicationwindow_otui.tr_11")
     anchors.left: parent.left
     anchors.top: prev.bottom
     margin-top: 20
 
   CheckBox
     id: checkboxIgnorePrivateMessages
-    !text: tr('Ignore Private Messages')
+    !text: tr("otclient_modules.communicationwindow_otui.tr_10")
     anchors.left: parent.left
     anchors.top: prev.bottom
     width: 180
@@ -93,7 +93,7 @@ MainWindow
 
   CheckBox
     id: checkboxIgnoreYelling
-    !text: tr('Ignore Yelling')
+    !text: tr("otclient_modules.communicationwindow_otui.tr_9")
     anchors.left: parent.left
     anchors.top: prev.bottom
     width: 180
@@ -101,14 +101,14 @@ MainWindow
 
   CheckBox
     id: checkboxUseWhiteList
-    !text: tr('Activate whitelist')
+    !text: tr("otclient_modules.communicationwindow_otui.tr_8")
     anchors.top: parent.top
     anchors.left: ignoreList.right
     margin-left: 20
     width: 180
 
   Label
-    !text: tr('Allowed Players') .. ':'
+    !text: tr("otclient_modules.communicationwindow_otui.tr_7") .. ':'
     anchors.top: prev.bottom
     anchors.left: prev.left
     margin-top: 10
@@ -134,7 +134,7 @@ MainWindow
 
   Button
     id: buttonWhitelistAdd
-    !text: tr('Add')
+    !text: tr("otclient_modules.communicationwindow_otui.tr_6")
     width: 48
     height: 20
     margin-left: 5
@@ -143,7 +143,7 @@ MainWindow
 
   Button
     id: buttonWhitelistRemove
-    !text: tr('Remove')
+    !text: tr("otclient_modules.communicationwindow_otui.tr_5")
     width: 64
     height: 20
     margin-left: 5
@@ -151,14 +151,14 @@ MainWindow
     anchors.left: prev.right
 
   Label
-    !text: tr('Global whitelist settings')
+    !text: tr("otclient_modules.communicationwindow_otui.tr_4")
     anchors.left: whiteList.left
     anchors.top: prev.bottom
     margin-top: 20
 
   CheckBox
     id: checkboxAllowVIPs
-    !text: tr('Allow VIPs to message you')
+    !text: tr("otclient_modules.communicationwindow_otui.tr_3")
     anchors.left: prev.left
     anchors.top: prev.bottom
     width: 180
@@ -176,14 +176,14 @@ MainWindow
 
       Button
         id: buttonSave
-        !text: tr('Save')
+        !text: tr("otclient_modules.communicationwindow_otui.tr_2")
         width: 75
         anchors.top: parent.top
         anchors.left: parent.left
 
       Button
         id: buttonCancel
-        !text: tr('Cancel')
+        !text: tr("otclient_modules.communicationwindow_otui.tr_1")
         width: 75
         anchors.top: parent.top
         anchors.left: prev.right

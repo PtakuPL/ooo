@@ -13,7 +13,7 @@ function crystaldeepling.onUse(player, item, fromPosition, target, toPosition, i
 		player:addItem(14162, 1)
 		player:setStorageValue(Storage.DeeplingsWorldChange.Crystal, 4)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Sorry.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_crystal.msg_1")
 	end
 	return true
 end

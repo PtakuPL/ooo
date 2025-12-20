@@ -1,6 +1,6 @@
 MainWindow
   width: 360
-  !text: tr('Add hotkey preset')
+  !text: tr("otclient_modules.preset_otui.tr_4")
   layout:
     type: verticalBox
     fit-children: true
@@ -9,7 +9,7 @@ MainWindow
     id: info
     font: noto-12
     color: #c0c0c0
-    !text: tr('Enter a name for the new preset:')
+    !text: tr("otclient_modules.preset_otui.tr_3")
   
   TextEdit
     id: field
@@ -34,10 +34,10 @@ MainWindow
     SmallButton
       id: ok
       width: 40
-      !text: tr("Ok")
+      !text: tr("otclient_modules.preset_otui.tr_2")
     
     SmallButton
       id: cancel
       width: 45
-      !text: tr("Cancel")
+      !text: tr("otclient_modules.preset_otui.tr_1")
   

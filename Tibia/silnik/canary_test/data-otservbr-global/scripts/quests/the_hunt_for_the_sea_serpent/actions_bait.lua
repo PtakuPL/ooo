@@ -5,7 +5,7 @@ function bait.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:getStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.QuestLine) == 1 then
 		if target.itemid == 3496 then -- crane
 			if player:getStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.Bait) == 1 then
-				player:say("The bait is already set. Go up to the lookout and check the telescope!", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("quests.actions_bait.say_1", TALKTYPE_MONSTER_SAY)
 			else
 				item:remove(1)
 				toPosition:sendMagicEffect(CONST_ME_WATERSPLASH)

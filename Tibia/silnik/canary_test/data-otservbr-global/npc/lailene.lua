@@ -52,10 +52,10 @@ end
 
 keywordHandler:addKeyword({ "brotherhood of bones" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lailene.stdmod_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "What do you want in my magical robe store? I doubt I have anything that's of interest to you.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "See ya, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "See ya, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Here.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.lailene.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.lailene.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.lailene.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.lailene.sendtrade_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {

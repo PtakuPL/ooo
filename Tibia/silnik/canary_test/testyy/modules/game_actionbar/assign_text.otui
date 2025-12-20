@@ -1,11 +1,11 @@
 MainWindow
-  !text: tr('Assign Text')
+  !text: tr("otclient_modules.assign_text_otui.tr_5")
   size: 250 165
   @onEscape: modules.game_actionbar.closeTextAssignWindow()
   @onEnter: modules.game_actionbar.textAssignAccept()
   Label
     id: textLabel
-    !text: tr('Text:')
+    !text: tr("otclient_modules.assign_text_otui.tr_4")
     text-auto-resize: true
     height: 20
     anchors.top: parent.top
@@ -27,7 +27,7 @@ MainWindow
       margin-top: 2
       margin-left: 2
       id: sendAutomaticallyCheckBox
-      !text: tr('Send automatically')
+      !text: tr("otclient_modules.assign_text_otui.tr_3")
       anchors.fill: parent
       text-auto-resize: true
       @onSetup: self:setChecked(true)
@@ -39,13 +39,13 @@ MainWindow
     margin-top: 10
   Button
     id: applyButton
-    !text: tr('Apply')
+    !text: tr("otclient_modules.assign_text_otui.tr_2")
     anchors.bottom: parent.bottom
     anchors.left: parent.left
     @onClick: modules.game_actionbar.textAssignAccept()
   Button
     id: cancelButton
-    !text: tr('Cancel')
+    !text: tr("otclient_modules.assign_text_otui.tr_1")
     anchors.bottom: parent.bottom
     anchors.right: parent.right
     @onClick: modules.game_actionbar.closeTextAssignWindow()

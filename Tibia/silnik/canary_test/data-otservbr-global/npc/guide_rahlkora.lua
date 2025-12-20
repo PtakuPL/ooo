@@ -26,11 +26,11 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Need some help finding your way through Ankrahmun? Let me assist you." },
-	{ text = "Free escort to the depot for newcomers!" },
-	{ text = "Need to know something about the status of this world? Let me answer your questions." },
-	{ text = "Hello, is this your first visit to Ankrahmun? I can show you around a little." },
-	{ text = "Talk to me if you need directions." },
+	{ i18nKey = "npc.guide_rahlkora.voice_1" },
+	{ i18nKey = "npc.guide_rahlkora.voice_2" },
+	{ i18nKey = "npc.guide_rahlkora.voice_3" },
+	{ i18nKey = "npc.guide_rahlkora.voice_4" },
+	{ i18nKey = "npc.guide_rahlkora.voice_5" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -101,9 +101,9 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "town" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_rahlkora.stdmod_7" })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_rahlkora.stdmod_8" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to Ankrahmun, |PLAYERNAME| This city can be a bit confusing at first. Would you like some information and a map guide?")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and enjoy your stay in Ankrahmun, |PLAYERNAME|")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.guide_rahlkora.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.guide_rahlkora.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.guide_rahlkora.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

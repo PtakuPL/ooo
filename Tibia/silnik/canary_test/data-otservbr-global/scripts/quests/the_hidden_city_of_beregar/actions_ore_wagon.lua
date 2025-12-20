@@ -110,13 +110,13 @@ function wagons.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 				if not tile:getItemById(7122) then
 					player:teleportTo(table.destination)
 					player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-					player:say("You need to build a bridge to pass the gap.", TALKTYPE_MONSTER_SAY)
+					player:sayLocalized("scripts.actions_ore_wagon.say_4", TALKTYPE_MONSTER_SAY)
 					return true
 				end
 				player:setStorageValue(story, 2)
 				player:teleportTo(table.destination2)
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-				player:say("You safely passed the gap but your bridge collapsed behind you.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.actions_ore_wagon.say_3", TALKTYPE_MONSTER_SAY)
 				tile:getItemById(7122):transform(4597)
 				Game.createItem(295, 1, position):setActionId(40021)
 				Game.createItem(291, 1, position)
@@ -126,7 +126,7 @@ function wagons.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 					player:setStorageValue(story, 3)
 					player:teleportTo(table.destination2)
 					player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-					player:say("You safely passed the tunnel.", TALKTYPE_MONSTER_SAY)
+					player:sayLocalized("scripts.actions_ore_wagon.say_2", TALKTYPE_MONSTER_SAY)
 					Game.createItem(5709, 1, Position(32619, 31514, 9)):setActionId(40028) --rubble
 					local archwayItem = Tile(Position(32617, 31514, 9)):getItemById(1624)
 					if archwayItem then
@@ -142,7 +142,7 @@ function wagons.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 				else
 					player:teleportTo(table.destination)
 					player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-					player:say("You need to remove rubble to safely passed the tunnel.", TALKTYPE_MONSTER_SAY)
+					player:sayLocalized("scripts.actions_ore_wagon.say_1", TALKTYPE_MONSTER_SAY)
 					return true
 				end
 			elseif travel[i] == travel[15] then

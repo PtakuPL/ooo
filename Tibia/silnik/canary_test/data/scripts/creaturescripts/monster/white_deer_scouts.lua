@@ -15,7 +15,7 @@ function whiteDeerScoutsDeath.onDeath(creature, corpse, killer, mostDamageKiller
 			end
 		end
 
-		targetMonster:say("The elves came too late to save the deer, however they might avenge it.", TALKTYPE_MONSTER_SAY)
+		targetMonster:sayLocalized("scripts.white_deer_scouts.say_1", TALKTYPE_MONSTER_SAY)
 	end
 	return true
 end

@@ -33,7 +33,7 @@ Panel
 
   Button
     id: buyButton
-    !text: tr('Buy Now')
+    !text: tr("otclient_modules.itemoffers_otui.tr_14")
     anchors.right: parent.right
     anchors.bottom: next.bottom
     margin-right: 6
@@ -41,7 +41,7 @@ Panel
     enabled: false
 
   Label
-    !text: tr('Sell Offers')
+    !text: tr("otclient_modules.itemoffers_otui.tr_13")
     font: noto-12
     text-offset: 0 2
     anchors.top: parent.top
@@ -72,19 +72,19 @@ Panel
     OfferTableHeaderRow
       id: header
       OfferTableHeaderColumn
-        !text: tr('Buyer Name')
+        !text: tr("otclient_modules.itemoffers_otui.tr_12")
         width: 100
       OfferTableHeaderColumn
-        !text: tr('Amount')
+        !text: tr("otclient_modules.itemoffers_otui.tr_11")
         width: 60
       OfferTableHeaderColumn
-        !text: tr('Total Price')
+        !text: tr("otclient_modules.itemoffers_otui.tr_10")
         width: 90
       OfferTableHeaderColumn
-        !text: tr('Piece Price')
+        !text: tr("otclient_modules.itemoffers_otui.tr_9")
         width: 80
       OfferTableHeaderColumn
-        !text: tr('Auction End')
+        !text: tr("otclient_modules.itemoffers_otui.tr_8")
         width: 120
 
   TableData
@@ -105,7 +105,7 @@ Panel
 
   Button
     id: sellButton
-    !text: tr('Sell Now')
+    !text: tr("otclient_modules.itemoffers_otui.tr_7")
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 5
@@ -114,7 +114,7 @@ Panel
     enabled: false
 
   Label
-    !text: tr('Buy Offers')
+    !text: tr("otclient_modules.itemoffers_otui.tr_6")
     font: noto-12
     text-offset: 0 2
     anchors.top: prev.top
@@ -145,19 +145,19 @@ Panel
     OfferTableHeaderRow
       id: header
       OfferTableHeaderColumn
-        !text: tr('Seller Name')
+        !text: tr("otclient_modules.itemoffers_otui.tr_5")
         width: 100
       OfferTableHeaderColumn
-        !text: tr('Amount')
+        !text: tr("otclient_modules.itemoffers_otui.tr_4")
         width: 60
       OfferTableHeaderColumn
-        !text: tr('Total Price')
+        !text: tr("otclient_modules.itemoffers_otui.tr_3")
         width: 90
       OfferTableHeaderColumn
-        !text: tr('Piece Price')
+        !text: tr("otclient_modules.itemoffers_otui.tr_2")
         width: 80
       OfferTableHeaderColumn
-        !text: tr('Auction End')
+        !text: tr("otclient_modules.itemoffers_otui.tr_1")
         width: 120
 
   TableData

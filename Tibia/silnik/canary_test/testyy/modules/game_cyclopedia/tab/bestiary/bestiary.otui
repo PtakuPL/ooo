@@ -9,7 +9,7 @@ UIWidget
     anchors.bottom: parent.bottom
     anchors.right: parent.right
     margin-bottom: 35
-    !text: tr('Search')
+    !text: tr("otclient_modules.bestiary_otui.tr_16")
     font: noto-12
     text-offset: 0 -1
     color: #C0C0C0
@@ -20,7 +20,7 @@ UIWidget
     anchors.right: SearchButton.left
     anchors.bottom: SearchButton.bottom
     margin-bottom: 1
-    !placeholder: tr('Type to search')
+    !placeholder: tr("otclient_modules.bestiary_otui.tr_15")
     placeholder-color: #6E706F
     font: noto-12
     color: #C0C0C0
@@ -34,7 +34,7 @@ UIWidget
     margin-bottom: 34
     size: 50 20
     text-align: center
-    !text: tr('1 / 1')
+    !text: tr("otclient_modules.bestiary_otui.tr_14")
     color: #C2C2C2
   Button
     id: NextPageButton
@@ -106,7 +106,7 @@ UIWidget
       image-source: /images/ui/outfits/minipanel
       image-border: 20
       visible: false
-      !text: tr('Creature Name')
+      !text: tr("otclient_modules.bestiary_otui.tr_13")
       text-align: top
       text-offset: 0 4
       color: #919191
@@ -131,7 +131,7 @@ UIWidget
           id: TrackCheck
           anchors.bottom: parent.bottom
           anchors.horizontalCenter: parent.horizontalCenter
-          !text: tr('Track Kills')
+          !text: tr("otclient_modules.bestiary_otui.tr_12")
           text-auto-resize: true
           color: #C7C7C7
           @onCheckChange: |
@@ -206,14 +206,14 @@ UIWidget
         anchors.centerIn: ProgressBorder2
 
         text-auto-resize: true
-        !text: tr('0')
+        !text: tr("otclient_modules.bestiary_otui.tr_11")
       Label
         id: TotalLabel
         anchors.bottom: ProgressBorder2.top
         anchors.left: ProgressBorder1.right
 
         margin-bottom: 2
-        !text: tr('Total Kills')
+        !text: tr("otclient_modules.bestiary_otui.tr_10")
         color: #C7C7C7
       UIWidget
         id: StarBase
@@ -264,7 +264,7 @@ UIWidget
         anchors.left: BonusIcon.right
         margin-left: 5
         text-auto-resize: true
-        !text: tr('?')
+        !text: tr("otclient_modules.bestiary_otui.tr_9")
         color: #C7C7C7
       UIWidget
         id: CharmBase
@@ -279,7 +279,7 @@ UIWidget
         anchors.left: CharmBase.right
         anchors.bottom: CharmBase.bottom
         margin-left: 5
-        !text: tr('Select')
+        !text: tr("otclient_modules.bestiary_otui.tr_8")
         //font: noto-12
         text-offset: 0 -1
         color: #C0C0C0
@@ -320,7 +320,7 @@ UIWidget
         anchors.left: CharmBase.left
         margin-bottom: 3
         text-auto-resize: true
-        !text: tr('Charm Selection:')
+        !text: tr("otclient_modules.bestiary_otui.tr_7")
         color: #C7C7C7
       VerticalSeparator
         id: IconsSep
@@ -343,7 +343,7 @@ UIWidget
         margin-left: 5
         margin-bottom: 1
         text-auto-resize: true
-        !text: tr('?')
+        !text: tr("otclient_modules.bestiary_otui.tr_6")
         color: #C7C7C7
       UIWidget
         id: Icon2
@@ -359,7 +359,7 @@ UIWidget
         margin-left: 5
         margin-bottom: 1
         text-auto-resize: true
-        !text: tr('?')
+        !text: tr("otclient_modules.bestiary_otui.tr_5")
         color: #C7C7C7
       UIWidget
         id: Icon3
@@ -375,7 +375,7 @@ UIWidget
         margin-left: 5
         margin-bottom: 1
         text-auto-resize: true
-        !text: tr('?')
+        !text: tr("otclient_modules.bestiary_otui.tr_4")
         color: #C7C7C7
       UIWidget
         id: Icon4
@@ -391,7 +391,7 @@ UIWidget
         margin-left: 5
         margin-bottom: 1
         text-auto-resize: true
-        !text: tr('?')
+        !text: tr("otclient_modules.bestiary_otui.tr_3")
         color: #C7C7C7
       UIWidget
         id: Icon5
@@ -407,7 +407,7 @@ UIWidget
         margin-left: 5
         margin-bottom: 1
         text-auto-resize: true
-        !text: tr('?')
+        !text: tr("otclient_modules.bestiary_otui.tr_2")
         color: #C7C7C7
       UIWidget
         id: LocationField
@@ -455,7 +455,7 @@ UIWidget
         anchors.bottom: LocationField.top
         margin-bottom: 3
         text-auto-resize: true
-        !text: tr('Location(s)') .. ':'
+        !text: tr("otclient_modules.bestiary_otui.tr_1") .. ':'
         color: #C7C7C7
       UIWidget
         id: PhysicalResist

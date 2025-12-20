@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Selling general goods and paperware! Come to my shop!" },
+	{ i18nKey = "npc.beatrice.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -84,8 +84,8 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_FAREWELL, "See you later, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "See you later, |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.beatrice.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.beatrice.walkaway_msg_1")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my wares.")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -79,7 +79,7 @@ function shrineEntrance.onStepIn(creature, item, position, fromPosition)
 	if player:getLevel() < 30 then
 		player:teleportTo(fromPosition, true)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:say("Only players of level 30 or higher may enter this portal.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.shrine_entrance.say_1", TALKTYPE_MONSTER_SAY)
 		return true
 	end
 	toShrine(player, shrinesEntrance.ice, Position(32192, 31419, 2))

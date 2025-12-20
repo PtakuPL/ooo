@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Behave yourself as long as you are in Carlin, commoner!" },
+	{ i18nKey = "npc.busty_bonecrusher.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

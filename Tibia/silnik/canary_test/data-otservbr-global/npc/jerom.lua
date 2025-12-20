@@ -26,9 +26,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "My house! Uahahahaha <sniffs>." },
-	{ text = "Dear gods! My precious house, DESTROYED!!" },
-	{ text = "Oh no!! What am I supposed to do now?!?" },
+	{ i18nKey = "npc.jerom.voice_1" },
+	{ i18nKey = "npc.jerom.voice_2" },
+	{ i18nKey = "npc.jerom.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -127,9 +127,9 @@ keywordHandler:addKeyword({ "what" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addAliasKeyword({ "happen" })
 keywordHandler:addAliasKeyword({ "house" })
 keywordHandler:addAliasKeyword({ "accident" })
-npcHandler:setMessage(MESSAGE_FAREWELL, "Bye.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Bye.")
-npcHandler:setMessage(MESSAGE_GREET, "Hello. Sorry, but I'm not in the best {mood} today.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.jerom.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.jerom.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jerom.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

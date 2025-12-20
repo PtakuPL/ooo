@@ -5,14 +5,7 @@ function ragingMage2.onDeath(creature, corpse, killer, mostDamageKiller, unjusti
 	The dimensional portal quakes.",
 		MESSAGE_EVENT_ADVANCE
 	)
-	creature:say(
-		"I WILL RETURN!! My death will just be a door to await my homecoming, \z
-	my physical hull will be... my... argh...",
-		TALKTYPE_MONSTER_SAY,
-		0,
-		0,
-		Position(33142, 31529, 2)
-	)
+	creature:sayLocalized("scripts.creaturescripts_raging_mage_2.say_1", TALKTYPE_MONSTER_SAY, 0, 0, Position(33142, 31529, 2))
 	addEvent(function()
 		local tilePos = Tile(Position(33143, 31527, 2)):getItemById(10840)
 		if not tilePos then

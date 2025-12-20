@@ -39,7 +39,7 @@ local function doChangeAzerus()
 	for i = 1, #spectators do
 		spectator = spectators[i]
 		if spectator:isMonster() and spectator:getName():lower() == "azerus" then
-			spectator:say("No! I am losing my energy!", TALKTYPE_MONSTER_SAY)
+			spectator:sayLocalized("quests.actions_last_fight.say_2", TALKTYPE_MONSTER_SAY)
 			Game.createMonster("Azerus", spectator:getPosition(), false, true)
 			spectator:remove()
 			return true
@@ -57,7 +57,7 @@ end
 local inServiceYalaharLastFight = Action()
 function inServiceYalaharLastFight.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if Game.getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.LastFight) == 1 then
-		player:say("You have to wait some time before this globe charges.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("quests.actions_last_fight.say_1", TALKTYPE_MONSTER_SAY)
 		return true
 	end
 

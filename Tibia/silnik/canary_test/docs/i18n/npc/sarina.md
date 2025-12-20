@@ -1,11 +1,10 @@
 # NPC: sarina
 
 **Plik:** `data-otservbr-global/npc/sarina.lua`
-**Data migracji:** 2025-12-11 16:28
-**Liczba tekstów:** 1
+**Data migracji:** 2025-12-17 05:31
+**Liczba tekstów:** 0
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.sarina.stdmod_1` | General equipment and all sorts of goods. Visit my store! |

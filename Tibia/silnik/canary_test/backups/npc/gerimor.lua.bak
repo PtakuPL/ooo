@@ -55,7 +55,7 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player then
-		npcHandler:setMessage(MESSAGE_GREET, "Greeting, |PLAYERNAME|! I welcome you to this sacred {place}. If you are interested in {missions} just ask.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gerimor.greet_msg_1")
 	end
 
 	return true
@@ -64,7 +64,7 @@ end
 -- Keywords
 keywordHandler:addKeyword({ "place" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "This place is a sanctuary of Crunor and provides me with a opportunity of spiritual contemplation.",
+	i18nKey = "npc.gerimor.stdmod_1",
 })
 
 keywordHandler:addKeyword({ "me" }, StdModule.say, {
@@ -78,7 +78,7 @@ keywordHandler:addKeyword({ "me" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "circle" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "We focus our interest on this we see as threatening for live and the laws of nature itself.",
+	i18nKey = "npc.gerimor.stdmod_2",
 })
 
 keywordHandler:addKeyword({ "persons" }, StdModule.say, {
@@ -91,7 +91,7 @@ keywordHandler:addKeyword({ "persons" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "approaches" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "We might not be many but we are diverse. Our rather informal order came together in the dawn of time, when the wars of the gods ravaged the world.",
+	i18nKey = "npc.gerimor.stdmod_3",
 })
 
 keywordHandler:addKeyword({ "dawn" }, StdModule.say, {
@@ -121,12 +121,12 @@ keywordHandler:addKeyword({ "direct" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "interfere" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Interference comes in different forms. In this particular case there is sadly little time for subtlety and a more direct approach is necessary.",
+	i18nKey = "npc.gerimor.stdmod_4",
 })
 
 keywordHandler:addKeyword({ "feyrist" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The fae granted me permission to enter their hidden realm. As a druid I'm in close touch with nature so I could gain their trust. The nature spirits are inhabiting this peninsula for ages.",
+	i18nKey = "npc.gerimor.stdmod_5",
 })
 
 keywordHandler:addKeyword({ "fae" }, StdModule.say, {
@@ -224,15 +224,15 @@ keywordHandler:addKeyword({ "worst" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "investigate" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Those cults have to be stopped by any means possible. These are desperate times and they demand desperate actions.",
+	i18nKey = "npc.gerimor.stdmod_6",
 })
 keywordHandler:addKeyword({ "actions" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Spare lives where you see it fit but the cults may not be allowed to exist and disrupt the fabric of the world even more.",
+	i18nKey = "npc.gerimor.stdmod_7",
 })
 keywordHandler:addKeyword({ "fabric" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The weakened fabric of our reality still repels the unnatural intruder. The cults provide the thing a hold and supply it with more power, even if we couldn't figure out yet, how this works at all.",
+	i18nKey = "npc.gerimor.stdmod_8",
 })
 
 keywordHandler:addKeyword({ "works" }, StdModule.say, {
@@ -248,7 +248,7 @@ keywordHandler:addKeyword({ "works" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "ties" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I have several missions available that deal with servering the ties of the corrupting influence on our world.",
+	i18nKey = "npc.gerimor.stdmod_9",
 })
 
 local config = {
@@ -431,8 +431,8 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addExperience(50000)
 			player:addItem(26186)
 			player:addAchievement("Corruption Contained")
-			player:sendTextMessage(MESSAGE_EXPERIENCE, "You gained 50000 experience points.")
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You gained a mystery box.")
+			player:sendLocalizedTextMessage(MESSAGE_EXPERIENCE, "system.experience.gained", {"50000"})
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "system.item.received", {"mystery box"})
 			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You gained a " .. item .. ".")
 			player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.FinalBoss.Mission, 3)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gerimor.say_5")
@@ -445,7 +445,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Farewell, |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.gerimor.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_SET_INTERACTION, onAddFocus)
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)

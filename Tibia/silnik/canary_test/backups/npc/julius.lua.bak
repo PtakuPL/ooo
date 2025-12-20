@@ -55,9 +55,9 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 
 	if player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.QuestLine) < 0 then
-		npcHandler:setMessage(MESSAGE_GREET, "Be greeted, adventurer |PLAYERNAME|. I assume you have read the {note} about the {vampire} threat in this city.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.julius.greet_msg_1")
 	elseif player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.QuestLine) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Be greeted, adventurer |PLAYERNAME|. Please excuse me if I appear {distracted}!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.julius.greet_msg_2")
 	end
 	return true
 end
@@ -233,16 +233,16 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 end
 --Basic
-keywordHandler:addKeyword({ "distracted" }, StdModule.say, { npcHandler = npcHandler, text = "I come from a family of {vampire} hunters, but to be honest, I'm more into the theoretic part and strategic planning." })
+keywordHandler:addKeyword({ "distracted" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.julius.stdmod_1" })
 keywordHandler:addAliasKeyword({ "job" })
-keywordHandler:addKeyword({ "yalahar" }, StdModule.say, { npcHandler = npcHandler, text = "A better name would be Gomorrah, if you ask me." })
-keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, text = "My name is Julius." })
-keywordHandler:addKeyword({ "storkus" }, StdModule.say, { npcHandler = npcHandler, text = "Storkus? Oh yes, I know him. A long time ago we used to hunt together... sometimes." })
-keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, text = "It's about time you showed the vampires that they should never bother the citizens again." })
-keywordHandler:addKeyword({ "news" }, StdModule.say, { npcHandler = npcHandler, text = "Another vampire raid last night. But then again, that's nothing new." })
-keywordHandler:addKeyword({ "thank" }, StdModule.say, { npcHandler = npcHandler, text = "Well, I should be the one to thank you I guess." })
+keywordHandler:addKeyword({ "yalahar" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.julius.stdmod_2" })
+keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.julius.stdmod_3" })
+keywordHandler:addKeyword({ "storkus" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.julius.stdmod_4" })
+keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.julius.stdmod_5" })
+keywordHandler:addKeyword({ "news" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.julius.stdmod_6" })
+keywordHandler:addKeyword({ "thank" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.julius.stdmod_7" })
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye, |PLAYERNAME|. Never trust anyone.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.julius.farewell_msg_1")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "I'll reward you for every pair of vampire teeth you bring me.")
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
@@ -258,7 +258,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

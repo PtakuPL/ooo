@@ -92,7 +92,7 @@ npcHandler:setMessage(MESSAGE_GREET, {
 	"Ah, ze human everyone iz talking about. Your victory over ze champion waz quite imprezzive. ...",
 	"Alzough, for many ziz only provez what a huge zreat you blank-zkinz ztill poze. What do you {want}?",
 })
-npcHandler:setMessage(MESSAGE_FAREWELL, "Juzt leave me alone.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.zlak.farewell_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -30,7 +30,7 @@ UIWidget
         color: #929292
         text-offset: 0 3
         text-align: top
-        !text: tr('Display')
+        !text: tr("otclient_modules.map_otui.tr_8")
         UIScrollArea
           id: MarkList
           anchors.left: parent.left
@@ -166,7 +166,7 @@ UIWidget
           margin-left: 5
           margin-bottom: 5
           text-auto-resize: true
-          !text: tr('Show All')
+          !text: tr("otclient_modules.map_otui.tr_7")
           @onCheckChange: modules.game_cyclopedia.Cyclopedia.showAllFlags(self:isChecked())
         Label
           id: MarkLabel
@@ -175,7 +175,7 @@ UIWidget
           margin-bottom: 5
           text-auto-resize: true
           color: #BEBEBE
-          !text: tr('Filter Marks')
+          !text: tr("otclient_modules.map_otui.tr_6")
         UIWidget
           id: ViewBase1
           anchors.left: parent.left
@@ -196,7 +196,7 @@ UIWidget
             margin-left: 7
             image-source: /images/ui/outfits/checkbox_round
             text-offset: 15 0
-            !text: tr('Surface View')
+            !text: tr("otclient_modules.map_otui.tr_5")
             text-auto-resize: true
           CheckBox
             id: MapCheck
@@ -205,7 +205,7 @@ UIWidget
             margin-top: 7
             image-source: /images/ui/outfits/checkbox_round
             text-offset: 15 0
-            !text: tr('Map View')
+            !text: tr("otclient_modules.map_otui.tr_4")
             text-auto-resize: true
           HorizontalScrollBar
             id: SeparatorScroll
@@ -220,7 +220,7 @@ UIWidget
             anchors.left: SeparatorScroll.left
             anchors.bottom: SeparatorScroll.top
             margin-bottom: 6
-            !text: tr('Level separator')
+            !text: tr("otclient_modules.map_otui.tr_3")
             color: #767676
             $checked:
               color: #BFBFBF
@@ -231,7 +231,7 @@ UIWidget
           margin-bottom: 5
           text-auto-resize: true
           color: #BEBEBE
-          !text: tr('Filter Marks')
+          !text: tr("otclient_modules.map_otui.tr_2")
           visible: false
       UIWidget
         id: NavigationBase
@@ -241,7 +241,7 @@ UIWidget
         color: #929292
         text-offset: 0 3
         text-align: top
-        !text: tr('Navigation')
+        !text: tr("otclient_modules.map_otui.tr_1")
         UIWidget
           id: rosePanel
           anchors.top: parent.top

@@ -107,11 +107,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 --Basic
-keywordHandler:addKeyword({ "mortal" }, StdModule.say, { npcHandler = npcHandler, text = "We are the {guardians}. We are all what is left from the glory of the past." })
-keywordHandler:addKeyword({ "guardians" }, StdModule.say, { npcHandler = npcHandler, text = "We are the keepers of this old temple and the guardians of its sacred {secrets}." })
-keywordHandler:addKeyword({ "secrets" }, StdModule.say, { npcHandler = npcHandler, text = "We are keepers of the {lore} of the Great {Snake} and we guard some of its {relics}." })
-keywordHandler:addKeyword({ "lore" }, StdModule.say, { npcHandler = npcHandler, text = "The lore of the Great {Snake} is contorted like a snake. Although we feel you are touched by the snake's essence, you are not ready yet to receive the blessing of the deeper wisdom." })
-keywordHandler:addKeyword({ "relics" }, StdModule.say, { npcHandler = npcHandler, text = "Once the powerful relics of the Great {Snake} were abundant. Most got lost to the ravages of time and our enemies. What is {left} is all the more precious." })
+keywordHandler:addKeyword({ "mortal" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_1" })
+keywordHandler:addKeyword({ "guardians" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_2" })
+keywordHandler:addKeyword({ "secrets" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_3" })
+keywordHandler:addKeyword({ "lore" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_4" })
+keywordHandler:addKeyword({ "relics" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_5" })
 keywordHandler:addKeyword({ "left" }, StdModule.say, {
 	npcHandler = npcHandler,
 	text = {
@@ -119,9 +119,9 @@ keywordHandler:addKeyword({ "left" }, StdModule.say, {
 		"The Great {Snake} approves that you acquire its holy {sceptre}. We will not question the wisdom of the god to hand this relic to one of the false-born.",
 	},
 })
-keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, text = "We are the guardians. We are all what is left from the glory of the past." })
-keywordHandler:addKeyword({ "banuta" }, StdModule.say, { npcHandler = npcHandler, text = "What you call Banuta was once a centre of our civilisation and culture. We gave those {apes} so much, but they wanted more. In the end, the Great {Snake} used them as a tool to teach our people a painful but necessary lesson." })
-keywordHandler:addKeyword({ "apes" }, StdModule.say, { npcHandler = npcHandler, text = "In their vanity our descendants thought they could use those false-born as servants. They paid a terrible price. Their downfall might only be temporary though if we can {redeem} our race in the eyes of the snake god." })
+keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_6" })
+keywordHandler:addKeyword({ "banuta" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_7" })
+keywordHandler:addKeyword({ "apes" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_8" })
 keywordHandler:addKeyword({ "redeem" }, StdModule.say, {
 	npcHandler = npcHandler,
 	text = {
@@ -130,8 +130,8 @@ keywordHandler:addKeyword({ "redeem" }, StdModule.say, {
 		"The god has cast us down only to elevate us to new heights if we are worthy.",
 	},
 })
-keywordHandler:addKeyword({ "dragon" }, StdModule.say, { npcHandler = npcHandler, text = "Dragons are one of the greatest creations of the Great {Snake}. Yet, they are still distanced from the Great {Snake} and susceptible for {corruption} and the lies of the egg stealers." })
-keywordHandler:addKeyword({ "corruption" }, StdModule.say, { npcHandler = npcHandler, text = "There are many forms of corruption in this world. All of it is the work of the egg stealers who spread their taint. The creation hatched by the Great {Snake} was perfect without even the option of corruption." })
+keywordHandler:addKeyword({ "dragon" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_9" })
+keywordHandler:addKeyword({ "corruption" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_10" })
 keywordHandler:addKeyword({ "zalamon" }, StdModule.say, {
 	npcHandler = npcHandler,
 	text = {
@@ -147,7 +147,7 @@ keywordHandler:addKeyword({ "snake" }, StdModule.say, {
 	},
 })
 keywordHandler:addAliasKeyword({ "gods" })
-keywordHandler:addKeyword({ "egg stealers" }, StdModule.say, { npcHandler = npcHandler, text = "Creatures from beyond. Greedy and traitorous, they stole parts of the world and of life for themselves. They corrupted the world by their deceptions and stole our {birthright}." })
+keywordHandler:addKeyword({ "egg stealers" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_11" })
 keywordHandler:addKeyword({ "birthright" }, StdModule.say, {
 	npcHandler = npcHandler,
 	text = {
@@ -155,11 +155,11 @@ keywordHandler:addKeyword({ "birthright" }, StdModule.say, {
 		"We have failed the Great {Snake} and our {decline} is its punishment.",
 	},
 })
-keywordHandler:addKeyword({ "decline" }, StdModule.say, { npcHandler = npcHandler, text = "We were overthrown by those of who we vainly thought we could use for our advantage, even though we knew about the foulness of the false-born." })
-keywordHandler:addKeyword({ "false born" }, StdModule.say, { npcHandler = npcHandler, text = "Everything that lacks scales is no true litter of the Great Snake. They are the corrupted kin of the egg stealers." })
-keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, text = "Such concepts are of little consequence for the dead." })
-keywordHandler:addKeyword({ "serpent spawn" }, StdModule.say, { npcHandler = npcHandler, text = "They are a manifestation of the snake god's power. They are its avatars in some way." })
-keywordHandler:addKeyword({ "lizard" }, StdModule.say, { npcHandler = npcHandler, text = "We are the true-born. We are the children of the snake. But as children we have yet much to learn. One day we might take our rightful place in creation, but only if we prove {worthy}." })
+keywordHandler:addKeyword({ "decline" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_12" })
+keywordHandler:addKeyword({ "false born" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_13" })
+keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_14" })
+keywordHandler:addKeyword({ "serpent spawn" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_15" })
+keywordHandler:addKeyword({ "lizard" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_16" })
 keywordHandler:addKeyword({ "worthy" }, StdModule.say, {
 	npcHandler = npcHandler,
 	text = {
@@ -167,9 +167,9 @@ keywordHandler:addKeyword({ "worthy" }, StdModule.say, {
 		"Only when we overcome all obstacles cast into our way, we will become worthy to serve the Great Snake in all eternity.",
 	},
 })
-keywordHandler:addKeyword({ "creatures" }, StdModule.say, { npcHandler = npcHandler, text = "They are the false-born. They hatched from foul eggs - poisoned by the egg stealers. They are numerous and like a plague for the world." })
-keywordHandler:addKeyword({ "temple" }, StdModule.say, { npcHandler = npcHandler, text = "This was once the centre of power of our religion. From here we ruled Tiquanda in the name of the snake god." })
-keywordHandler:addKeyword({ "zao" }, StdModule.say, { npcHandler = npcHandler, text = "We were not aware of another civilisation that was left. Only recently the awareness of the Great Snake touched us in our slumber and we learnt through visions of its other children." })
+keywordHandler:addKeyword({ "creatures" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_17" })
+keywordHandler:addKeyword({ "temple" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_18" })
+keywordHandler:addKeyword({ "zao" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_19" })
 keywordHandler:addKeyword({ "left" }, StdModule.say, {
 	npcHandler = npcHandler,
 	text = {

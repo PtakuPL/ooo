@@ -109,12 +109,12 @@ local function onTradeRequest(npc, creature)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Farewell.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just have a look.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.tarun.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.tarun.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.tarun.sendtrade_msg_1")
 npcHandler:setCallback(CALLBACK_ON_TRADE_REQUEST, onTradeRequest)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Farewell.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.tarun.walkaway_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {

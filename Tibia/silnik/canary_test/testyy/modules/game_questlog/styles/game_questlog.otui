@@ -68,7 +68,7 @@ TextEditQuestLog < Panel
     anchors.fill: parent
     margin-left: 5
     height: 17
-    !placeholder: tr('Type to search')
+    !placeholder: tr("otclient_modules.game_questlog_otui.tr_4")
     placeholder-color: #6E706F
     @onTextChange : onSearchTextChange(self:getText())
 
@@ -118,7 +118,7 @@ QuestLogLabel < UIWidget
 
 QuestLogTracker < MiniWindow
   id: QuestLogTracker
-  !text: tr('Quest Tracker')
+  !text: tr("otclient_modules.game_questlog_otui.tr_3")
   icon: /images/topbuttons/icon-questtracker-widget
   icon-offset: 4 2
   icon-size: 12 12
@@ -186,7 +186,7 @@ QuestLogTracker < MiniWindow
       QtButton
         margin-top: 8
         anchors.fill: parent
-        !text: tr('Add Tracked Quest')
+        !text: tr("otclient_modules.game_questlog_otui.tr_2")
         margin-left: 20
         margin-right: 20
         color: white
@@ -230,4 +230,4 @@ TrackerWindowsMenu < PopupMenu
 
   ButtonTrackerMenuOption
     id: remove
-    !text: tr('remove')
+    !text: tr("otclient_modules.game_questlog_otui.tr_1")

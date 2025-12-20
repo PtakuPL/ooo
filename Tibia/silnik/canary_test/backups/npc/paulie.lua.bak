@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Don't forget to deposit your money here in the Global Bank before you head out for adventure.", yell = false },
+	{ i18nKey = "npc.paulie.voice_1", yell = false },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -63,9 +63,9 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 	-- Mission 8: The Rookie Guard Quest
 	if player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission08) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome |PLAYERNAME|! Special newcomer offer, today only! Deposit some money - or {deposit ALL} of your money! - and get 50 gold for free!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.paulie.greet_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Yes? What may I do for you, |PLAYERNAME|? Bank business, perhaps?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.paulie.greet_msg_2")
 	end
 	return true
 end
@@ -332,8 +332,8 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
-npcHandler:setMessage(MESSAGE_FAREWELL, "Have a nice day.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Have a nice day.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.paulie.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.paulie.walkaway_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

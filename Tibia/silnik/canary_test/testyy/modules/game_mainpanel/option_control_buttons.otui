@@ -3,7 +3,7 @@ UIWidget
   visible: false
   QtButton
     id: reset
-    !text: tr('Reset')
+    !text: tr("otclient_modules.option_control_buttons_otui.tr_3")
     anchors.right: parent.right
     anchors.bottom: parent.bottom
     @onClick: reset()
@@ -25,7 +25,7 @@ UIWidget
     
     Label
       id: displayedButtonsLabel
-      !text: tr('Displayed Buttons')
+      !text: tr("otclient_modules.option_control_buttons_otui.tr_2")
       anchors.top: parent.top
       anchors.left: parent.left
       margin-top: 5
@@ -106,7 +106,7 @@ UIWidget
     border-color-right: #747474
     Label
       id: displayedButtonsLabel
-      !text: tr('Available Buttons')
+      !text: tr("otclient_modules.option_control_buttons_otui.tr_1")
       anchors.top: parent.top
       anchors.left: parent.left
       margin-top: 5

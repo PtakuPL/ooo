@@ -113,8 +113,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello, worshiper of the Astral Shapers! Welcome to the temple! While you are here to pay tribute, you can also learn something about the ancient art of imbuing.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Oh... farewell, child.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.ivalisse.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.ivalisse.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

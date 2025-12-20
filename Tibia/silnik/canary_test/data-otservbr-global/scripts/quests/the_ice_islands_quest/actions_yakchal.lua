@@ -17,9 +17,9 @@ function iceYakchal.onUse(player, item, fromPosition, target, toPosition, isHotk
 		if Game.getStorageValue(GlobalStorage.Yakchal) < os.time() then
 			Game.setStorageValue(GlobalStorage.Yakchal, os.time() + 24 * 60 * 60)
 			if math.random(2) == 2 then
-				player:say("You have awoken the icewitch Yakchal from her slumber! She seems not amused...", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.actions_yakchal.say_3", TALKTYPE_MONSTER_SAY)
 			else
-				player:say("The frozen starlight shattered, but you have awoken the icewitch Yakchal from her slumber! She seems not amused...", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.actions_yakchal.say_2", TALKTYPE_MONSTER_SAY)
 				item:remove(1)
 			end
 			Game.createMonster("Yakchal", toPosition)
@@ -35,7 +35,7 @@ function iceYakchal.onUse(player, item, fromPosition, target, toPosition, isHotk
 				end
 			end
 		else
-			player:say("Yakchal has already been awakened today. You should try again tomorrow.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_yakchal.say_1", TALKTYPE_MONSTER_SAY)
 		end
 	end
 	return true

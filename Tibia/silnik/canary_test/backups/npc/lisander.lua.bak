@@ -70,7 +70,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 end
 --Basic
-keywordHandler:addKeyword({ "alori mort" }, StdModule.say, { npcHandler = npcHandler, text = "Hold your tongue." }, function(player)
+keywordHandler:addKeyword({ "alori mort" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lisander.stdmod_1" }, function(player)
 	return player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission03) == 1
 end)
 

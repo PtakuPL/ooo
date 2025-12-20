@@ -52,7 +52,7 @@ function fishing.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 				player:addItem(randomItem.itemId, 1)
 			end
 			if chance > 1115 then
-				player:say("There was just rubbish in it.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.fishing.say_1", TALKTYPE_MONSTER_SAY)
 				return true
 			end
 		end

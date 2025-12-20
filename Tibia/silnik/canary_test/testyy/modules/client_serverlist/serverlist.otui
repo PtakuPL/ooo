@@ -55,7 +55,7 @@ ServerWidget < UIWidget
 
 MainWindow
   id: serverListWindow
-  !text: tr('Server List')
+  !text: tr("otclient_modules.serverlist_otui.tr_4")
   size: 340 290
   visible: false
   @onEnter: ServerList.select()
@@ -87,14 +87,14 @@ MainWindow
 
   AddButton
     id: buttonAdd
-    !tooltip: tr('Add new server')
+    !tooltip: tr("otclient_modules.serverlist_otui.tr_3")
     anchors.left: parent.left
     anchors.bottom: parent.bottom
     @onClick: AddServer.show()
 
   Button
     id: buttonOk
-    !text: tr('Select')
+    !text: tr("otclient_modules.serverlist_otui.tr_2")
     width: 64
     anchors.right: next.left
     anchors.bottom: parent.bottom
@@ -103,7 +103,7 @@ MainWindow
 
   Button
     id: buttonCancel
-    !text: tr('Cancel')
+    !text: tr("otclient_modules.serverlist_otui.tr_1")
     width: 64
     anchors.right: parent.right
     anchors.bottom: parent.bottom

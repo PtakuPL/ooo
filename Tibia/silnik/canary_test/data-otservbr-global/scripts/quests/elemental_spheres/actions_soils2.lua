@@ -27,7 +27,7 @@ function elementalSpheresSoils2.onUse(player, item, fromPosition, target, toPosi
 	end
 
 	if table.contains({ 7917, 7918 }, target.itemid) then
-		player:say("Turn off the machine first.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.actions_soils2.say_1", TALKTYPE_MONSTER_SAY)
 		return true
 	end
 

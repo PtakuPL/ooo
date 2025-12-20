@@ -1,7 +1,7 @@
 # NPC: the_lootmonger
 
-**Plik:** `data-otservbr-global/npc/the_lootmonger.lua`
-**Data migracji:** 2025-12-11 22:14
+**Plik:** 
+**Data migracji:** 2025-12-20 20:16
 **Liczba tekstów:** 0
 
 ## Klucze i18n

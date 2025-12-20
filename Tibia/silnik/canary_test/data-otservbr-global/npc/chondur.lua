@@ -306,8 +306,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	return false
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Be greeted, child.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.chondur.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.chondur.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

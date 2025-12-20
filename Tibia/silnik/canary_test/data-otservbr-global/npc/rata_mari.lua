@@ -98,9 +98,9 @@ keywordHandler:addKeyword({ "rat" }, StdModule.say, { npcHandler = npcHandler, i
 -- Greeting message
 keywordHandler:addGreetKeyword({ "piedpiper" }, { npcHandler = npcHandler, text = "Meep? I mean - hello! Sorry, |PLAYERNAME|... Being a {rat} has kind of grown on me.", i18nKey = "npc.rata_mari.greet_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Meep? I mean - hello! Sorry, |PLAYERNAME|... Being a {rat} has kind of grown on me.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Meep!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Meep!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.rata_mari.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.rata_mari.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.rata_mari.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

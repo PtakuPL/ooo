@@ -24,8 +24,8 @@ function addTitle.onSay(player, words, param)
 	split[2] = split[2]:trimSpace()
 	local id = tonumber(split[2])
 	if target:addTitle(id) then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format('You added a title with ID "%i" to player "%s".', id, target:getName()))
-		target:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("%s added a title to you.", player:getName()))
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_title.msg_2", {id, target:getName()})
+		target:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.manage_title.msg_1", {player:getName()})
 	end
 
 	return true

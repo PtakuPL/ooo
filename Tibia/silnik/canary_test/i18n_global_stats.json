@@ -1,25 +1,25 @@
 {
-  "total_cycles": 1,
-  "mode": "MIGRATION",
-  "category": "otclient_data",
-  "last_update": "2025-12-16T07:47:58.331361",
+  "total_cycles": 615,
+  "mode": "AUTO_TRANSLATE",
+  "category": "lt",
+  "last_update": "2025-12-17T11:03:04.152072",
   "migration": {
-    "files_scanned": 147,
-    "files_with_keys": 82,
-    "files_without_keys": 65,
-    "keys_extracted": 134,
-    "current_category": "otclient_data",
-    "batch_size": 0
+    "files_scanned": 3,
+    "files_with_keys": 3,
+    "files_without_keys": 0,
+    "keys_extracted": 3,
+    "current_category": "items",
+    "batch_size": 10
   },
   "translation_sync": {
-    "language": "pl",
-    "json_file": "npc.json",
-    "keys_to_sync": 0
+    "language": "sw",
+    "json_file": "spells.json",
+    "keys_to_sync": 1122
   },
   "auto_translate": {
-    "language": "pl",
-    "json_file": "npc.json",
-    "keys_to_translate": 2
+    "language": "lt",
+    "json_file": "spells.json",
+    "keys_to_translate": 1426
   },
   "idle": {
     "new_files_detected": 152,

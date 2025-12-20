@@ -56,7 +56,7 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.MarkwinGreeting) < 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Intruder! Guards, take him down!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.markwin.greet_msg_1")
 		player:setStorageValue(Storage.MarkwinGreeting, 1)
 		local position
 		for x = -1, 1 do
@@ -69,10 +69,10 @@ local function greetCallback(npc, creature)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.markwin.say_1")
 		return false
 	elseif player:getStorageValue(Storage.MarkwinGreeting) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Well ... you defeated my guards! Now everything is over! I guess I will have to answer your questions now.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.markwin.greet_msg_1")
 		player:setStorageValue(Storage.MarkwinGreeting, 2)
 	elseif player:getStorageValue(Storage.MarkwinGreeting) == 2 then
-		npcHandler:setMessage(MESSAGE_GREET, "Oh its you again. What du you want, hornless messenger?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.markwin.greet_msg_2")
 	end
 	return true
 end

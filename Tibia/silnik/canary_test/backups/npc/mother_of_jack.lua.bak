@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?" },
-	{ text = "Oh dear, I can't find anything in here!" },
-	{ text = "There is still some dust on the drawer over there. What where you thinking, Jane?" },
-	{ text = "Jane!" },
+	{ i18nKey = "npc.mother_of_jack.voice_1" },
+	{ i18nKey = "npc.mother_of_jack.voice_2" },
+	{ i18nKey = "npc.mother_of_jack.voice_3" },
+	{ i18nKey = "npc.mother_of_jack.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()

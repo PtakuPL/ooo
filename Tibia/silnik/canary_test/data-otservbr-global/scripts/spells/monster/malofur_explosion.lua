@@ -64,8 +64,8 @@ function spell.onCastSpell(creature, var)
 	local exaust = math.random(11, 41)
 
 	if creature:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.Malofur) ~= 1 then
-		creature:say("RAAAARGH! I'M MASHING YE TO DUST!", TALKTYPE_MONSTER_SAY)
-		creature:say("BOOM!", TALKTYPE_MONSTER_SAY)
+		creature:sayLocalized("scripts.malofur_explosion.say_6", TALKTYPE_MONSTER_SAY)
+		creature:sayLocalized("scripts.malofur_explosion.say_5", TALKTYPE_MONSTER_SAY)
 		creature:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.Malofur, 1)
 
 		addEvent(function(cid)
@@ -73,7 +73,7 @@ function spell.onCastSpell(creature, var)
 			if c then
 				local var = Variant(c:getPosition())
 				BOOOM:execute(c, var)
-				c:say("BOOOM!", TALKTYPE_MONSTER_SAY)
+				c:sayLocalized("scripts.malofur_explosion.say_4", TALKTYPE_MONSTER_SAY)
 			end
 		end, 3 * 1000, creature:getId())
 
@@ -82,7 +82,7 @@ function spell.onCastSpell(creature, var)
 			if c then
 				local var = Variant(c:getPosition())
 				BOOOOM:execute(c, var)
-				c:say("BOOOOM!", TALKTYPE_MONSTER_SAY)
+				c:sayLocalized("scripts.malofur_explosion.say_3", TALKTYPE_MONSTER_SAY)
 			end
 		end, 5 * 1000, creature:getId())
 
@@ -91,7 +91,7 @@ function spell.onCastSpell(creature, var)
 			if c then
 				local var = Variant(c:getPosition())
 				BOOOOOM:execute(c, var)
-				c:say("BOOOOOM!", TALKTYPE_MONSTER_SAY)
+				c:sayLocalized("scripts.malofur_explosion.say_2", TALKTYPE_MONSTER_SAY)
 			end
 		end, 7 * 1000, creature:getId())
 
@@ -100,7 +100,7 @@ function spell.onCastSpell(creature, var)
 			if c then
 				local var = Variant(c:getPosition())
 				BOOOOOOM:execute(c, var)
-				c:say("BOOOOOOM!", TALKTYPE_MONSTER_SAY)
+				c:sayLocalized("scripts.malofur_explosion.say_1", TALKTYPE_MONSTER_SAY)
 			end
 		end, 9 * 1000, creature:getId())
 

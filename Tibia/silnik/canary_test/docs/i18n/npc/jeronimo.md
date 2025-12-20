@@ -1,11 +1,10 @@
 # NPC: jeronimo
 
-**Plik:** `data-otservbr-global/npc/jeronimo.lua`
-**Data migracji:** 2025-12-11 16:26
-**Liczba tekstów:** 1
+**Plik:** 
+**Data migracji:** 2025-12-20 20:25
+**Liczba tekstów:** 0
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.jeronimo.stdmod_1` | Change your Bar of Gold's for Items here! |

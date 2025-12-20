@@ -70,9 +70,9 @@ addTravelKeyword("kazordoon", { "<the dwarf smiles slightly, shows you a piece o
 addTravelKeyword("cormaya", { "<the dwarf smiles slightly, shows you a piece of paper with |TRAVELCOST| written on it, as expecting a {yes} or {no}>", "<the dwarf nods>", "<the dwarf just shrugs>" }, 200, "postman", Position(33311, 31989, 15))
 keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.urks_the_mute.stdmod_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome, |PLAYERNAME|! Lovely steamboat, ain't it? I can even offer you a {passage} if you like.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Until next time.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Until next time.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.urks_the_mute.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.urks_the_mute.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.urks_the_mute.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

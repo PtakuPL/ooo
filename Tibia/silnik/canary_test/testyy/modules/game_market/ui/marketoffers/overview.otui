@@ -3,7 +3,7 @@ Panel
   margin: 1
 
   Label
-    !text: tr('Reserved for more functionality later.')
+    !text: tr("otclient_modules.overview_otui.tr_1")
     anchors.top: parent.top
     anchors.left: parent.left
     anchors.right: parent.right

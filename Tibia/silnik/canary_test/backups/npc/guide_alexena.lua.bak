@@ -92,14 +92,14 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-keywordHandler:addKeyword({ "information" }, StdModule.say, { npcHandler = npcHandler, text = "Currently, I can tell you all about the town, its temple, the bank, shops, spell trainers and the depot, as well as about the world status." })
-keywordHandler:addKeyword({ "temple" }, StdModule.say, { npcHandler = npcHandler, text = "The temple can be found in one of the uptown districts. Look for stairs up from the lower city, you'll find the temple in the northwest of the upper city." })
-keywordHandler:addKeyword({ "bank" }, StdModule.say, { npcHandler = npcHandler, text = "The bank is on the left side of the depot. Eva will be at your service there." })
-keywordHandler:addKeyword({ "shops" }, StdModule.say, { npcHandler = npcHandler, text = "You can buy weapons, armor, tools, gems, magical equipment, furniture, spells and food here." })
-keywordHandler:addKeyword({ "depot" }, StdModule.say, { npcHandler = npcHandler, text = "The depot is a place where you can safely store your belongings. You are also protected against attacks there. I escort newcomers there." })
-keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, text = "I'll help you find your way through Carlin, the amazon town. I can mark important locations on your map and give you some information about the town and the world status." })
-keywordHandler:addKeyword({ "town" }, StdModule.say, { npcHandler = npcHandler, text = "This city is ruled by Queen Eloise with the help of her female brigade. We have a lot of shops here as well as the usual facilities like depot, temple and so on." })
-keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, text = "I'm Alexena, at your service!" })
+keywordHandler:addKeyword({ "information" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_alexena.stdmod_1" })
+keywordHandler:addKeyword({ "temple" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_alexena.stdmod_2" })
+keywordHandler:addKeyword({ "bank" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_alexena.stdmod_3" })
+keywordHandler:addKeyword({ "shops" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_alexena.stdmod_4" })
+keywordHandler:addKeyword({ "depot" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_alexena.stdmod_5" })
+keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_alexena.stdmod_6" })
+keywordHandler:addKeyword({ "town" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_alexena.stdmod_7" })
+keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_alexena.stdmod_8" })
 
 npcHandler:setMessage(MESSAGE_GREET, "Welcome to Carlin, |PLAYERNAME| Would you like some information and a map guide?")
 npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")

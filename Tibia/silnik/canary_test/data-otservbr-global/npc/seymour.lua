@@ -240,7 +240,7 @@ keywordHandler:addKeyword({ "tom" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "dallheim" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.seymour.stdmod_102" })
 keywordHandler:addKeyword({ "zerbrus" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.seymour.stdmod_103" })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye! And remember: No running up and down in the academy!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.seymour.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

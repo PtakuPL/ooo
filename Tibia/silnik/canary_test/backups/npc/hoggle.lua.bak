@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Oh, this misery..." },
+	{ i18nKey = "npc.hoggle.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

@@ -25,7 +25,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Welcome to Ab'Dendriel's store for general goods." },
+	{ i18nKey = "npc.bashira.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -60,10 +60,10 @@ keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "
 --Farewell message
 keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Good bye, |PLAYERNAME|.", i18nKey = "npc.bashira.farewell_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good Bye, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "May God show you the path, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my offers.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.bashira.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.bashira.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.bashira.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.bashira.sendtrade_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 npcConfig.shop = {

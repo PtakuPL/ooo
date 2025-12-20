@@ -52,13 +52,13 @@ end
 
 local function greetCallback(npc, player)
 	if player:getStorageValue(Storage.Quest.U8_0.BarbarianTest.Questline) < 8 then
-		npcHandler:setMessage(MESSAGE_GREET, "You are not one of us. I don't want to talk to you.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.iskan.greet_msg_1")
 	elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.HuskyKill) >= 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "I was told you have been killing huskies here in Svargrond! Never do that again, okay? They are precious animals for us. Give me 500 gold and I will forget that incident without telling it to Jarl Sven. Okay?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.iskan.greet_msg_2")
 	elseif player:hasAchievement("Warlord of Svargrond") then
-		npcHandler:setMessage(MESSAGE_GREET, "HAIL to the Warlord of the arena! |PLAYERNAME|, Hero of Svargrond! What can I {do for you}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.iskan.greet_msg_3")
 	elseif player:getStorageValue(Storage.Quest.U8_0.BarbarianTest.Questline) == 8 then
-		npcHandler:setMessage(MESSAGE_GREET, "Greetings. What can I {do for you}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.iskan.greet_msg_4")
 	end
 	return true
 end

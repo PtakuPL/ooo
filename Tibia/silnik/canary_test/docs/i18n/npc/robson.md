@@ -1,12 +1,10 @@
 # NPC: robson
 
 **Plik:** `data-otservbr-global/npc/robson.lua`
-**Data migracji:** 2025-12-11 16:28
-**Liczba tekstów:** 2
+**Data migracji:** 2025-12-17 01:06
+**Liczba tekstów:** 0
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.robson.stdmod_1` | <mumbles> |
-| `npc.robson.stdmod_2` | Just great. Getting stranded on a remote underground isle wa... |

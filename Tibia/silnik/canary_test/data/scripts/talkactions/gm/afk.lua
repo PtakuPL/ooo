@@ -15,7 +15,7 @@ local function showAfkMessage(playerPosition)
 	local spectators = Game.getSpectators(playerPosition, false, true, 8, 8, 8, 8)
 	if #spectators > 0 then
 		for _, spectator in ipairs(spectators) do
-			spectator:say("AFK !", TALKTYPE_MONSTER_SAY, false, spectator, playerPosition)
+			spectator:sayLocalized("scripts.afk.say_1", TALKTYPE_MONSTER_SAY, false, spectator, playerPosition)
 		end
 	end
 end

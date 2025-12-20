@@ -21,7 +21,7 @@ function explorerSocietyBotanist.onUse(player, item, fromPosition, target, toPos
 		item:transform(5937)
 		target:transform(5687)
 		player:setStorageValue(Storage.Quest.U7_8.DruidOutfits.GriffinclawFlower, 1)
-		player:say("You successfully took a sample of the rare griffinclaw flower.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.actions_botanist.say_1", TALKTYPE_MONSTER_SAY)
 	end
 
 	return true

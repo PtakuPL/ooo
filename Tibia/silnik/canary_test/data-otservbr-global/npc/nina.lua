@@ -58,9 +58,9 @@ keywordHandler:addAliasKeyword({ "shadow nina" })
 keywordHandler:addAliasKeyword({ "nina" })
 keywordHandler:addAliasKeyword({ "grey shadow clan" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Beware, if you go any further you will have to fight a large group of Chosen. This place is called the Fire Dragon Dojo. Tread carefully since these are lizard training grounds.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Goodbye. Human. Being!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Goodbye. Human. Being!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.nina.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.nina.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.nina.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -20,7 +20,7 @@ function lostExiles.onStepIn(creature, position, fromPosition, toPosition)
 									if creature:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Home) == 1 then
 										if creature:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Prisoners) < 3 then
 											creature:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Prisoners, creature:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Prisoners) + 1)
-											creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your escort has end.")
+											creature:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.movements_lost_exiles.msg_1")
 										end
 									end
 								end

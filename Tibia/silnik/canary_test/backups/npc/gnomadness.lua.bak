@@ -26,9 +26,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = " I'll have to write that idea down." },
-	{ text = "So many ideas, so little time" },
-	{ text = "Muhahaha!" },
+	{ i18nKey = "npc.gnomadness.voice_1" },
+	{ i18nKey = "npc.gnomadness.voice_2" },
+	{ i18nKey = "npc.gnomadness.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -85,7 +85,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:say("Your hazard level has been set to " .. desiredLevel .. ". Good luck!", npc, creature)
 				if desiredLevel >= 6 and not player:kv():scoped("primal-ordeal"):get("received-prize") then
 					player:addMount(202)
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Congratulations you received the Noxious Ripptor mount.")
+					player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "system.mount.received", {"Noxious Ripptor"})
 					player:addAchievement("Ripp-Ripp Hooray!")
 					player:addItem(PRIMAL_BAG, 1)
 					player:kv():scoped("primal-ordeal"):set("received-prize", true)
@@ -99,10 +99,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "Hello and welcome in the Gnomprona Gardens. If you want to change your {hazard} level, I 'm who you're looking for." })
+keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "Hello and welcome in the Gnomprona Gardens. If you want to change your {hazard} level, I 'm who you're looking for.", i18nKey = "npc.gnomadness.greet_1" })
 keywordHandler:addAliasKeyword({ "hello" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello and welcome in the Gnomprona Gardens")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gnomadness.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

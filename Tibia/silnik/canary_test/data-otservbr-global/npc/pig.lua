@@ -45,8 +45,8 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Oink.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Bye.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.pig.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.pig.farewell_msg_1")
 
 local function creatureSayCallback(npc, creature, type, message)
 	local player = Player(creature)

@@ -21,7 +21,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Uhhhhhh...." },
+	{ i18nKey = "npc.the_queen_of_the_banshees.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -212,9 +212,9 @@ keywordHandler:addKeyword({ "banshee" }, StdModule.say, {
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
-npcHandler:setMessage(MESSAGE_GREET, "Be greeted, dear visitor. Come and {stay} ... a while.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "We will meet again, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Yes, flee from death. But know it shall be always one step behind you.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.the_queen_of_the_banshees.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.the_queen_of_the_banshees.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.the_queen_of_the_banshees.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

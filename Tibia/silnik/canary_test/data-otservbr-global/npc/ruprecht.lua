@@ -96,11 +96,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		local table = itemsTable[message]
 		if table then
 			if table.itemId ~= 6496 then
-				npcHandler:say("So you want to exchange " .. message .. ", for " .. table.count .. " christmas tokens?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_1", { message, table.count })
 				storeTable[playerId] = message
 				npcHandler:setTopic(playerId, 1)
 			else
-				npcHandler:say("So you want to exchange " .. message .. " to " .. table.count .. " christmas token(s)?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_2", { message, table.count })
 				storeTable[playerId] = 6526
 				npcHandler:setTopic(playerId, 1)
 			end
@@ -119,7 +119,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				return false
 			end
 			if player:removeItem(6526, itemsTable[storeTable[playerId]].count) then
-				npcHandler:say("Thank you, here is your " .. storeTable[playerId] .. ".", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_3", { storeTable[playerId] })
 				player:addItem(itemsTable[storeTable[playerId]].itemId, 1)
 				npcHandler:setTopic(playerId, 0)
 			else

@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Only quality steel and wood used for my weapons!" },
-	{ text = "Buy your weapons here!" },
-	{ text = "Selling and buying all sorts of weapons, come and have a look!" },
-	{ text = "Give those monsters a good whipping with my weapons!" },
+	{ i18nKey = "npc.obi.voice_1" },
+	{ i18nKey = "npc.obi.voice_2" },
+	{ i18nKey = "npc.obi.voice_3" },
+	{ i18nKey = "npc.obi.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -126,10 +126,10 @@ keywordHandler:addKeyword({ "tom" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "dallheim" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.obi.stdmod_47" })
 keywordHandler:addAliasKeyword({ "zerbrus" })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Um yeah, good day.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Farewell, I hope you were satisfied with our service.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my wares.")
-npcHandler:setMessage(MESSAGE_GREET, "Hello, hello, |PLAYERNAME|! Please come in, look, and buy! If you like to see my offers, ask me for a {trade}!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.obi.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.obi.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.obi.sendtrade_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.obi.greet_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

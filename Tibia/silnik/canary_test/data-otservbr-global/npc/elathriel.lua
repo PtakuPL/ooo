@@ -215,19 +215,19 @@ end
 -- Greeting message
 keywordHandler:addGreetKeyword({ "ashari" }, {
 	npcHandler = npcHandler,
-	text = "Be greeted |PLAYERNAME|. What is your {business} near the {hellgate}?",
+	text = "Be greeted |PLAYERNAME|. What is your {business} near the {hellgate}?", i18nKey = "npc.elathriel.greet_1",
 })
 --Farewell message
 keywordHandler:addFarewellKeyword({ "asgha thrazi" }, {
 	npcHandler = npcHandler,
-	text = "Asha Thrazi, |PLAYERNAME|.",
+	text = "Asha Thrazi, |PLAYERNAME|.", i18nKey = "npc.elathriel.farewell_1",
 })
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
-npcHandler:setMessage(MESSAGE_GREET, "Be greeted |PLAYERNAME|. What is your {business} near the {hellgate}?")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Asha Thrazi, stranger!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Asha Thrazi, stranger!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.elathriel.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.elathriel.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.elathriel.farewell_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

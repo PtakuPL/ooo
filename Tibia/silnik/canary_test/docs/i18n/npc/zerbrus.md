@@ -1,7 +1,7 @@
 # NPC: zerbrus
 
 **Plik:** `data-otservbr-global/npc/zerbrus.lua`
-**Data migracji:** 2025-12-10 14:15
+**Data migracji:** 2025-12-17 01:38
 **Liczba tekstów:** 8
 
 ## Klucze i18n

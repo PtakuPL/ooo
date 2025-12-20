@@ -29,7 +29,7 @@ function movements_desert_color_puzzle.onStepIn(creature, item, position, fromPo
 			end
 			if player:getStorageValue(color[1].storage) == color[1].value and player:getStorageValue(color[2].storage) == color[2].value and player:getStorageValue(color[3].storage) == color[3].value then
 				player:setStorageValue(Storage.Quest.U11_80.TheSecretLibrary.Darashia.ColorPuzzle, 1)
-				player:say("Access granted!", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.movements_color_puzzle.say_1", TALKTYPE_MONSTER_SAY)
 			end
 		end
 	end

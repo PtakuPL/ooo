@@ -21,10 +21,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Interesting reaction. Bloodcurdling. Must inspect further." },
-	{ text = "This is really sanguine!" },
-	{ text = "Hmm... the conductors are too dry to transmit energy." },
-	{ text = "Ah, fresh blood. My favourite." },
+	{ i18nKey = "npc.tomruk_the_ruddy.voice_1" },
+	{ i18nKey = "npc.tomruk_the_ruddy.voice_2" },
+	{ i18nKey = "npc.tomruk_the_ruddy.voice_3" },
+	{ i18nKey = "npc.tomruk_the_ruddy.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()

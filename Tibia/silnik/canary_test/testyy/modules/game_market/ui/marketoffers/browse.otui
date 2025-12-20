@@ -53,8 +53,8 @@ Panel
   MarketButtonBox
     id: filterLevel
     &default: false
-    !text: tr('Level')
-    !tooltip: tr('Filter list to match your level')
+    !text: tr("otclient_modules.browse_otui.tr_8")
+    !tooltip: tr("otclient_modules.browse_otui.tr_7")
     anchors.top: prev.bottom
     anchors.left: parent.left
     margin-top: 3
@@ -67,7 +67,7 @@ Panel
     id: filterVocation
     &default: false
     !text: tr('Voc.')
-    !tooltip: tr('Filter list to match your vocation')
+    !tooltip: tr("otclient_modules.browse_otui.tr_6")
     anchors.top: prev.top
     anchors.left: prev.right
     margin-right: 3
@@ -89,8 +89,8 @@ Panel
   MarketButtonBox
     id: filterDepot
     &default: false
-    !text: tr('Show Depot Only')
-    !tooltip: tr('Show your depot items only')
+    !text: tr("otclient_modules.browse_otui.tr_5")
+    !tooltip: tr("otclient_modules.browse_otui.tr_4")
     anchors.top: prev.bottom
     anchors.left: parent.left
     anchors.right: parent.right
@@ -131,7 +131,7 @@ Panel
         auto-spacing: true
 
   Label
-    !text: tr('Find') .. ':'
+    !text: tr("otclient_modules.browse_otui.tr_3") .. ':'
     anchors.top: prev.bottom
     anchors.left: prev.left
     margin-top: 9
@@ -150,8 +150,8 @@ Panel
   MarketButtonBox
     id: filterSearchAll
     &default: true
-    !text: tr('All')
-    !tooltip: tr('Search all items')
+    !text: tr("otclient_modules.browse_otui.tr_2")
+    !tooltip: tr("otclient_modules.browse_otui.tr_1")
     anchors.verticalCenter: prev.verticalCenter
     anchors.left: prev.right
     anchors.right: itemsContainer.right

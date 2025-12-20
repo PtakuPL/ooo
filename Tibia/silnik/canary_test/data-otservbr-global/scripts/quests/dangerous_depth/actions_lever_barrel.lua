@@ -110,13 +110,13 @@ local function explode(item)
 			end
 		end
 		checkPos(item)
-		c:say("KABOOM!!", TALKTYPE_MONSTER_SAY, false, false, position)
+		c:sayLocalized("scripts.actions_lever_barrel.say_2", TALKTYPE_MONSTER_SAY, false, false, position)
 		if item then
 			item:remove()
 		end
 	end, 2 * 1000)
 	item:transform(27491)
-	c:say("Tsssss...!", TALKTYPE_MONSTER_SAY, false, false, position)
+	c:sayLocalized("scripts.actions_lever_barrel.say_1", TALKTYPE_MONSTER_SAY, false, false, position)
 end
 
 local dangerousDepthLever = Action()

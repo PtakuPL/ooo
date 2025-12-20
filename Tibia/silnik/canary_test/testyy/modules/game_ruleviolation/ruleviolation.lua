@@ -1,34 +1,34 @@
 rvreasons = {}
-rvreasons[1] = tr('1a) Offensive Name')
-rvreasons[2] = tr('1b) Invalid Name Format')
-rvreasons[3] = tr('1c) Unsuitable Name')
-rvreasons[4] = tr('1d) Name Inciting Rule Violation')
-rvreasons[5] = tr('2a) Offensive Statement')
-rvreasons[6] = tr('2b) Spamming')
-rvreasons[7] = tr('2c) Illegal Advertising')
-rvreasons[8] = tr('2d) Off-Topic Public Statement')
-rvreasons[9] = tr('2e) Non-English Public Statement')
-rvreasons[10] = tr('2f) Inciting Rule Violation')
-rvreasons[11] = tr('3a) Bug Abuse')
-rvreasons[12] = tr('3b) Game Weakness Abuse')
-rvreasons[13] = tr('3c) Using Unofficial Software to Play')
-rvreasons[14] = tr('3d) Hacking')
-rvreasons[15] = tr('3e) Multi-Clienting')
-rvreasons[16] = tr('3f) Account Trading or Sharing')
-rvreasons[17] = tr('4a) Threatening Gamemaster')
-rvreasons[18] = tr('4b) Pretending to Have Influence on Rule Enforcement')
-rvreasons[19] = tr('4c) False Report to Gamemaster')
-rvreasons[20] = tr('Destructive Behaviour')
-rvreasons[21] = tr('Excessive Unjustified Player Killing')
+rvreasons[1] = tr("otclient_modules.ruleviolation.tr_36")
+rvreasons[2] = tr("otclient_modules.ruleviolation.tr_35")
+rvreasons[3] = tr("otclient_modules.ruleviolation.tr_34")
+rvreasons[4] = tr("otclient_modules.ruleviolation.tr_33")
+rvreasons[5] = tr("otclient_modules.ruleviolation.tr_32")
+rvreasons[6] = tr("otclient_modules.ruleviolation.tr_31")
+rvreasons[7] = tr("otclient_modules.ruleviolation.tr_30")
+rvreasons[8] = tr("otclient_modules.ruleviolation.tr_29")
+rvreasons[9] = tr("otclient_modules.ruleviolation.tr_28")
+rvreasons[10] = tr("otclient_modules.ruleviolation.tr_27")
+rvreasons[11] = tr("otclient_modules.ruleviolation.tr_26")
+rvreasons[12] = tr("otclient_modules.ruleviolation.tr_25")
+rvreasons[13] = tr("otclient_modules.ruleviolation.tr_24")
+rvreasons[14] = tr("otclient_modules.ruleviolation.tr_23")
+rvreasons[15] = tr("otclient_modules.ruleviolation.tr_22")
+rvreasons[16] = tr("otclient_modules.ruleviolation.tr_21")
+rvreasons[17] = tr("otclient_modules.ruleviolation.tr_20")
+rvreasons[18] = tr("otclient_modules.ruleviolation.tr_19")
+rvreasons[19] = tr("otclient_modules.ruleviolation.tr_18")
+rvreasons[20] = tr("otclient_modules.ruleviolation.tr_17")
+rvreasons[21] = tr("otclient_modules.ruleviolation.tr_16")
 
 rvactions = {}
-rvactions[0] = tr('Notation')
-rvactions[1] = tr('Name Report')
-rvactions[2] = tr('Banishment')
-rvactions[3] = tr('Name Report + Banishment')
-rvactions[4] = tr('Banishment + Final Warning')
-rvactions[5] = tr('Name Report + Banishment + Final Warning')
-rvactions[6] = tr('Statement Report')
+rvactions[0] = tr("otclient_modules.ruleviolation.tr_15")
+rvactions[1] = tr("otclient_modules.ruleviolation.tr_14")
+rvactions[2] = tr("otclient_modules.ruleviolation.tr_13")
+rvactions[3] = tr("otclient_modules.ruleviolation.tr_12")
+rvactions[4] = tr("otclient_modules.ruleviolation.tr_11")
+rvactions[5] = tr("otclient_modules.ruleviolation.tr_10")
+rvactions[6] = tr("otclient_modules.ruleviolation.tr_9")
 
 ruleViolationWindow = nil
 reasonsTextList = nil
@@ -124,13 +124,13 @@ end
 function report()
     local reasonLabel = reasonsTextList:getFocusedChild()
     if not reasonLabel then
-        displayErrorBox(tr('Error'), tr('You must select a reason.'))
+        displayErrorBox(tr("otclient_modules.ruleviolation.tr_8"), tr("otclient_modules.ruleviolation.tr_7"))
         return
     end
 
     local actionLabel = actionsTextList:getFocusedChild()
     if not actionLabel then
-        displayErrorBox(tr('Error'), tr('You must select an action.'))
+        displayErrorBox(tr("otclient_modules.ruleviolation.tr_6"), tr("otclient_modules.ruleviolation.tr_5"))
         return
     end
 
@@ -142,9 +142,9 @@ function report()
     local statementId = 0 -- TODO: message unique id ?
     local ipBanishment = ruleViolationWindow:getChildById('ipBanCheckBox'):isChecked()
     if action == 6 and statement == '' then
-        displayErrorBox(tr('Error'), tr('No statement has been selected.'))
+        displayErrorBox(tr("otclient_modules.ruleviolation.tr_4"), tr("otclient_modules.ruleviolation.tr_3"))
     elseif comment == '' then
-        displayErrorBox(tr('Error'), tr('You must enter a comment.'))
+        displayErrorBox(tr("otclient_modules.ruleviolation.tr_2"), tr("otclient_modules.ruleviolation.tr_1"))
     else
         g_game.reportRuleViolation(target, reason, action, comment, statement, statementId, ipBanishment)
         hide()

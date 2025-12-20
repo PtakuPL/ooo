@@ -13,10 +13,10 @@ function actions_asura_doors.onUse(player, item, fromPosition, target, toPositio
 					player:teleportTo(toPosition, true)
 					item:transform(item.itemid + 1)
 				else
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You do not have enough level.")
+					player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_doors.msg_6")
 				end
 			else
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The door seems to be sealed against unwanted intruders.")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_doors.msg_5")
 			end
 		end
 	end

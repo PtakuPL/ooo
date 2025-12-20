@@ -31,7 +31,7 @@ function arenaEnter.onStepIn(creature, item, position, fromPosition)
 
 	player:teleportTo(PITS[pitId].center)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
-	player:say("FIGHT!", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("quests.movements_arena_enter.say_1", TALKTYPE_MONSTER_SAY)
 	return true
 end
 

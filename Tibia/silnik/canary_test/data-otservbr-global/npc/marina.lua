@@ -121,7 +121,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Oh, hello |PLAYERNAME|. A visitor, how nice!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.marina.greet_msg_1")
 
 keywordHandler:addKeyword({ "mermaid comb" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.marina.stdmod_1" })
 

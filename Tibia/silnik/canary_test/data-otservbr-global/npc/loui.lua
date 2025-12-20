@@ -21,9 +21,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "BEWARE! Beware of that hole!" },
-	{ text = "STAY AWAY FROM THAT HOLE!" },
-	{ text = "What are you doing here?? Get away from that hole!" },
+	{ i18nKey = "npc.loui.voice_1" },
+	{ i18nKey = "npc.loui.voice_2" },
+	{ i18nKey = "npc.loui.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -102,9 +102,9 @@ keywordHandler:addKeyword({ "tom" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "dallheim" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.loui.stdmod_36" })
 keywordHandler:addAliasKeyword({ "zerbrus" })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "STAY AWAY FROM THAT HOLE!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "May the gods protect you! And stay away from that hole!")
-npcHandler:setMessage(MESSAGE_GREET, "BEWARE! Beware of that {hole}!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.loui.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.loui.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.loui.greet_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -98,25 +98,25 @@ UIWidget
     SmallButton
       id: add
       width: 30
-      !text: tr("Add")
+      !text: tr("otclient_modules.keybinds_otui.tr_16")
       @onClick: addNewPreset()
 
     SmallButton
       id: copy
       width: 35
-      !text: tr("Copy")
+      !text: tr("otclient_modules.keybinds_otui.tr_15")
       @onClick: copyPreset()
 
     SmallButton
       id: rename
       width: 45
-      !text: tr("Rename")
+      !text: tr("otclient_modules.keybinds_otui.tr_14")
       @onClick : renamePreset()
 
     SmallButton
       id: remove
       width: 45
-      !text: tr("Remove")
+      !text: tr("otclient_modules.keybinds_otui.tr_13")
       @onClick : removePreset()
   
   SmallReversedQtPanel
@@ -128,8 +128,8 @@ UIWidget
     
     OptionCheckBoxMarked
       id: autoSwitchPreset
-      !text: tr('Auto-Switch Hotkey Preset')
-      !tooltip: tr('If you have named your hotkey presets the same like your\ncharacters and have checked this option, the preset with the same\nname as the corresponding character will be activated upon login\nautomatically.')
+      !text: tr("otclient_modules.keybinds_otui.tr_12")
+      !tooltip: tr("otclient_modules.keybinds_otui.tr_11")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -142,7 +142,7 @@ UIWidget
       anchors.left: parent.left
       anchors.right: parent.right
       image-source: ""
-      !tooltip: tr('There are two chat modes for each hotkey preset: Chat On and Chat\n Off.You can find a small button that tells you which chat mode is\n currently active on the right side of the entry line of the chat console.Press this button to switch between the two chat modes.\nOf course, you can also set a hotkey to toggle between Chat On and Off.\n- Chat On\nIn this mode, you will be able to write text in the entry line of the chat console.\nHowever, if you have assigned an action to a letter key, the action will be triggered.\n- Chat On*\nThis is the temporary Chat On mode.\nIn the default hotkey preset, the Return key switches between Chat Off and this mode.\nIf the chat mode is off and you press this hotkey, it temporarily activates the chat mode so that you can write one message in the console.\nAs soon as you press Return to send the message, your chat mode will be set to Chat Off again so that you can continue walking with WASD, for example.\n- Chat Off\nIn this mode, you will not be able to write any text in the entry line of the console, but you can use your predefined hotkeys to walk or cast spells, for example.\nYou can assign functions to all keys of your keyboard, e.g. walk with WASD.')
+      !tooltip: tr("otclient_modules.keybinds_otui.tr_10")
 
       id: chatMode
       $!first:
@@ -154,13 +154,13 @@ UIWidget
       RadioBox
         id: on
         text-horizontal-auto-resize: true
-        !text: tr("Chat Mode On")
+        !text: tr("otclient_modules.keybinds_otui.tr_9")
         margin-bottom: -5
         text-offset: 20 -3
       RadioBox
         id: off
         text-horizontal-auto-resize: true
-        !text: tr("Chat Mode Off")
+        !text: tr("otclient_modules.keybinds_otui.tr_8")
         margin-bottom: -5
         text-offset: 20 -3
         $mobile:
@@ -171,7 +171,7 @@ UIWidget
       size: 12 12  
       anchors.right: parent.right
       margin-right: 3
-      !tooltip: tr('There are two chat modes for each hotkey preset: Chat On and Chat \nOff. You can find a small button that tells you which chat mode is \ncurrently active on the right side of the entry line of the chat \nconsole. Press this button to switch between the two chat modes. Of \ncourse, you can also set a hotkey to toggle between Chat On and Off.\n\tChat On\n\t\tIn this mode, you will be able to write text in the entry line of\n the chat console. However, if you have assigned an action to \na letter key, the action will be \t\ttriggered.\n\n\n\tChat On\n\t\tThis is the temporary Chat On mode. In the default hotkey \npreset, the Return key switches between Chat Off and this\n mode. If the chat mode is off and you press \t\tthis hotkey, it \ntemporarily activates the chat mode so that you can write \none message in the console. As soon as you press Return to \nsend the message, your chat \t\tmode will be set to \nChat Off again so that you can continue walking with WASD, for\n example.\n\n\tChat Off\n\t\tIn this mode, you will not be able to write any text in the entry line of the\n console, but you can use your predefined\n hotkeys to walk or cast spells, for \t\texample. You can assign\n functions to all keys of your keyboard, e.g. walk with WASD')
+      !tooltip: tr("otclient_modules.keybinds_otui.tr_7")
      
   Panel
     anchors.left: parent.left
@@ -187,7 +187,7 @@ UIWidget
     Label
       text-offset: 0 3
       font: noto-12
-      !text: tr('Type to search for a hotkey:')
+      !text: tr("otclient_modules.keybinds_otui.tr_6")
     
     TextEdit
       id: field
@@ -231,19 +231,19 @@ UIWidget
         id: header
 
         KeybindsTableHeaderColumn
-          !text: tr("Action")
+          !text: tr("otclient_modules.keybinds_otui.tr_5")
           width: 286
         
         VerticalSeparator
 
         KeybindsTableHeaderColumn
-          !text: tr("Primary Key")
+          !text: tr("otclient_modules.keybinds_otui.tr_4")
           width: 100
         
         VerticalSeparator
 
         KeybindsTableHeaderColumn
-          !text: tr("Secondary Key")
+          !text: tr("otclient_modules.keybinds_otui.tr_3")
           width: 100
     
       HorizontalSeparator
@@ -275,7 +275,7 @@ UIWidget
       anchors.top: parent.top
       anchors.left: parent.left
       width: 75
-      !text: tr('New Action')
+      !text: tr("otclient_modules.keybinds_otui.tr_2")
       visible: false
       @onClick : newHotkeyAction()
 
@@ -285,5 +285,5 @@ UIWidget
       anchors.right: parent.right
       width: 45
       margin-top: 8
-      !text: tr('Reset')
+      !text: tr("otclient_modules.keybinds_otui.tr_1")
       @onClick : resetActions()

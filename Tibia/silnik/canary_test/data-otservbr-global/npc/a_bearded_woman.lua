@@ -26,13 +26,13 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I am a MAN! Get me out you drunken fools!" },
-	{ text = "GET ME OUT OF HERE!" },
-	{ text = "Get me out! It was all part of the plan, you fools!" },
-	{ text = "If I ever get out of here, I'll kill you all! All of you!" },
-	{ text = "I am NOT Princess Lumelia, you fools!" },
-	{ text = "Get a locksmith and free me or you will regret it, you foolish pirates!" },
-	{ text = "I am not a princess, I am an actor!" },
+	{ i18nKey = "npc.a_bearded_woman.voice_1" },
+	{ i18nKey = "npc.a_bearded_woman.voice_2" },
+	{ i18nKey = "npc.a_bearded_woman.voice_3" },
+	{ i18nKey = "npc.a_bearded_woman.voice_4" },
+	{ i18nKey = "npc.a_bearded_woman.voice_5" },
+	{ i18nKey = "npc.a_bearded_woman.voice_6" },
+	{ i18nKey = "npc.a_bearded_woman.voice_7" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -141,7 +141,7 @@ keywordHandler:addKeyword({ "plundering" }, StdModule.say, {
 	},
 })
 
-npcHandler:setMessage(MESSAGE_GREET, "GET ME OUT OF HERE! NOW!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_bearded_woman.greet_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

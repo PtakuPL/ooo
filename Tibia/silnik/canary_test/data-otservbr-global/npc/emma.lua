@@ -274,7 +274,7 @@ keywordHandler:addKeyword({ "liberty bay" }, StdModule.say, {
 })
 keywordHandler:addKeyword({ "port hope" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.emma.stdmod_11" })
 keywordHandler:addKeyword({ "kazordoon" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.emma.stdmod_12" })
-npcHandler:setMessage(MESSAGE_GREET, "HAIL TO THE QUEEN!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "LONG LIVE THE QUEEN! You may leave now!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.emma.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.emma.farewell_msg_1")
 -- npcType registering the npcConfig table
 npcType:register(npcConfig)

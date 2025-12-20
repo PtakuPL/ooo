@@ -1,11 +1,10 @@
 # NPC: ariella
 
 **Plik:** `data-otservbr-global/npc/ariella.lua`
-**Data migracji:** 2025-12-11 16:25
-**Liczba tekstów:** 1
+**Data migracji:** 2025-12-17 00:52
+**Liczba tekstów:** 0
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.ariella.stdmod_1` | Have a drink in Meriana's only tavern! |

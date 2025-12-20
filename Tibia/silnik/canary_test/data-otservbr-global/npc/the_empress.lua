@@ -75,13 +75,13 @@ local function greetCallback(npc, creature)
 		player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Sixth.BlessedStatues, 0)
 		player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fifth.Memories, 6)
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Greetings.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.the_empress.greet_msg_1")
 	end
 
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Well, bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.the_empress.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_SET_INTERACTION, onAddFocus)
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)

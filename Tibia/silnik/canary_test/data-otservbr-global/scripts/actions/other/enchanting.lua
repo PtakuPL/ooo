@@ -53,7 +53,7 @@ function enchanting.onUse(player, item, fromPosition, target, toPosition, isHotk
 		if not table.contains(spheres[item.itemid], player:getVocation():getBaseId()) then
 			return false
 		elseif table.contains({ 842, 843 }, target.itemid) then
-			player:say("Turn off the machine first.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.enchanting.say_2", TALKTYPE_MONSTER_SAY)
 			return true
 		else
 			player:setStorageValue(Storage.Quest.U8_2.ElementalSpheres.MachineGemCount, math.max(1, player:getStorageValue(Storage.Quest.U8_2.ElementalSpheres.MachineGemCount) + 1))
@@ -86,7 +86,7 @@ function enchanting.onUse(player, item, fromPosition, target, toPosition, isHotk
 
 		local mana = config.manaCost * subtype
 		if player:getMana() < mana then
-			player:say("Not enough mana, separate one gem in your backpack and try again.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.enchanting.say_1", TALKTYPE_MONSTER_SAY)
 			return false
 		end
 

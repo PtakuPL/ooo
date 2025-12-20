@@ -61,9 +61,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-keywordHandler:addKeyword({ "need" }, StdModule.say, { npcHandler = npcHandler, text = "I am a jeweller. Maybe you want to have a look at my wonderful {offers}." })
-keywordHandler:addKeyword({ "offers" }, StdModule.say, { npcHandler = npcHandler, text = "Well, I sell gems and {goblets}. If you'd like to see my offers, ask me for a {trade}." })
-keywordHandler:addKeyword({ "goblets" }, StdModule.say, { npcHandler = npcHandler, text = "Ah, our newest import! We have golden goblets, silver goblets and bronze goblets. All of them have space for a hand-written dedication." })
+keywordHandler:addKeyword({ "need" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.eliyas.stdmod_1" })
+keywordHandler:addKeyword({ "offers" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.eliyas.stdmod_2" })
+keywordHandler:addKeyword({ "goblets" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.eliyas.stdmod_3" })
 
 npcHandler:setMessage(MESSAGE_GREET, "Be greeted, |PLAYERNAME|. Which of my fine gems do you {need}?")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Daraman's blessings and good bye.")
@@ -106,7 +106,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

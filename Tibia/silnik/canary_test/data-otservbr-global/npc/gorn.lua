@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "General goods and paperware for sale!" },
+	{ i18nKey = "npc.gorn.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -106,10 +106,10 @@ keywordHandler:addKeyword({ "oswald" }, StdModule.say, { npcHandler = npcHandler
 keywordHandler:addKeyword({ "quentin" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.gorn.stdmod_19" })
 keywordHandler:addKeyword({ "sam" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.gorn.stdmod_20" })
 keywordHandler:addKeyword({ "xodet" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.gorn.stdmod_21" })
-npcHandler:setMessage(MESSAGE_GREET, "Oh, please come in, |PLAYERNAME|. What do you need?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my wares. {Footballs} have to be purchased separately.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gorn.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.gorn.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.gorn.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.gorn.sendtrade_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

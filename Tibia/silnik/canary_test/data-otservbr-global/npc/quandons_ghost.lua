@@ -62,7 +62,7 @@ local function greetCallback(npc, creature)
 		})
 		player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission16, 1)
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Hi!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.quandons_ghost.greet_msg_1")
 	end
 
 	return true

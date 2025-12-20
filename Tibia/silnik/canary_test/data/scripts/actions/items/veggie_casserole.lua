@@ -15,7 +15,7 @@ function veggieCasserole.onUse(player, item, fromPosition, target, toPosition, i
 
 	player:addCondition(meleeCondition)
 	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.veggie_casserole.msg_2")
-	player:say("Yum.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.veggie_casserole.say_1", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)
 	item:remove(1)

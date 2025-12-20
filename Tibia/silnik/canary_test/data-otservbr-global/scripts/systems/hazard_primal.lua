@@ -64,7 +64,7 @@ local spawnFungosaurus = function(position)
 		if podItem then
 			local monster = Game.createMonster("Fungosaurus", position, false, true)
 			if monster then
-				monster:say("The primal pod explode and wild emerges from it.")
+				monster:sayLocalized("scripts.hazard_primal.say_2")
 			end
 			podItem:remove()
 		end
@@ -121,7 +121,7 @@ function deathEvent.onDeath(creature)
 		local closestFreePosition = player:getClosestFreePosition(monster:getPosition(), 4, true)
 		local monster = Game.createMonster("Plunder Patriarch", closestFreePosition.x == 0 and monster:getPosition() or closestFreePosition, false, true)
 		if monster then
-			monster:say("The Plunder Patriarch rises from the ashes.")
+			monster:sayLocalized("scripts.hazard_primal.say_1")
 		end
 		return true
 	end

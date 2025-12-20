@@ -445,14 +445,14 @@ keywordHandler:addAliasKeyword({ "marvik" })
 -- Greeting message
 keywordHandler:addGreetKeyword({ "hail king" }, {
 	npcHandler = npcHandler,
-	text = "I greet thee, my loyal subject |PLAYERNAME|.",
+	text = "I greet thee, my loyal subject |PLAYERNAME|.", i18nKey = "npc.king_tibianus.greet_1",
 })
 keywordHandler:addGreetKeyword({ "salutations king" }, {
 	npcHandler = npcHandler,
-	text = "I greet thee, my loyal subject |PLAYERNAME|.",
+	text = "I greet thee, my loyal subject |PLAYERNAME|.", i18nKey = "npc.king_tibianus.greet_2",
 })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "How rude!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.king_tibianus.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)

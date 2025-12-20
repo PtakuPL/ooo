@@ -6,7 +6,7 @@ function cagekey.onUse(player, item, frompos, item2, topos)
 		player:addItem(31379, 1) -- Wooden Cage Key
 		player:setStorageValue(Storage.Quest.U12_20.KilmareshQuest.Fourteen.Remains, 3)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Empty.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_cagekey.msg_1")
 	end
 
 	return true

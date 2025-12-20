@@ -13,7 +13,7 @@ UIWidget
     color: #929292
     text-offset: 0 3
     text-align: top
-    !text: tr('Player Name')
+    !text: tr("otclient_modules.character_otui.tr_97")
     change-cursor-image: true
     cursor: pointer
     @onClick: modules.game_cyclopedia.Cyclopedia.selectCharacterPage()
@@ -22,7 +22,7 @@ UIWidget
       anchors.horizontalCenter: parent.horizontalCenter
       anchors.bottom: parent.bottom
       margin-bottom: 5
-      !text: tr('Level: 1\nKnight')
+      !text: tr("otclient_modules.character_otui.tr_96")
       text-auto-resize: true
       text-align: center
       color: #C1C1C1
@@ -156,7 +156,7 @@ UIWidget
           cell-spacing: 2
           flow: true
         UIWidget
-          !text: tr('Status: Loading, please wait...')
+          !text: tr("otclient_modules.character_otui.tr_95")
           color: #BEBEBE
       VerticalScrollBar
         id: ListScrollbar
@@ -171,7 +171,7 @@ UIWidget
       anchors.left: DetailsBase.left
       margin-bottom: 5
       text-auto-resize: true
-      !text: tr('You are inspecting') .. ": " .. "Player Name"
+      !text: tr("otclient_modules.character_otui.tr_94") .. ": " .. "Player Name"
       color: #BEBEBE
   BorderBox
     id: CharacterStats
@@ -194,7 +194,7 @@ UIWidget
       anchors.left: parent.left
       anchors.right: separator.right
       SkillNameLabel
-        !text: tr('Level')
+        !text: tr("otclient_modules.character_otui.tr_93")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -207,7 +207,7 @@ UIWidget
       anchors.right: separator.right
       margin-top: 10
       SkillNameLabel
-        !text: tr('Experience')
+        !text: tr("otclient_modules.character_otui.tr_92")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -218,7 +218,7 @@ UIWidget
       anchors.right: separator.right
       margin-top: 1
       SkillNameLabel
-        !text: tr('XP Gain Rate')
+        !text: tr("otclient_modules.character_otui.tr_91")
         color: #C0C0C0
       SkillValueLabel
         color: #44AD25
@@ -251,7 +251,7 @@ UIWidget
       anchors.right: separator.right
       margin-top: 10
       SkillNameLabel
-        !text: tr('Hit Points')
+        !text: tr("otclient_modules.character_otui.tr_90")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -262,7 +262,7 @@ UIWidget
       anchors.right: separator.right
       margin-top: 1
       SkillNameLabel
-        !text: tr('Mana')
+        !text: tr("otclient_modules.character_otui.tr_89")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -273,7 +273,7 @@ UIWidget
       anchors.right: separator.right
       margin-top: 1
       SkillNameLabel
-        !text: tr('Soul Points')
+        !text: tr("otclient_modules.character_otui.tr_88")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -284,7 +284,7 @@ UIWidget
       anchors.right: separator.right
       margin-top: 1
       SkillNameLabel
-        !text: tr('Capacity')
+        !text: tr("otclient_modules.character_otui.tr_87")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -295,7 +295,7 @@ UIWidget
       anchors.right: separator.right
       margin-top: 1
       SkillNameLabel
-        !text: tr('Speed')
+        !text: tr("otclient_modules.character_otui.tr_86")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -306,7 +306,7 @@ UIWidget
       anchors.right: separator.right
       margin-top: 1
       SkillNameLabel
-        !text: tr('Food')
+        !text: tr("otclient_modules.character_otui.tr_85")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -317,7 +317,7 @@ UIWidget
       anchors.right: separator.right
       margin-top: 1
       SkillNameLabel
-        !text: tr('Stamina')
+        !text: tr("otclient_modules.character_otui.tr_84")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -330,7 +330,7 @@ UIWidget
       anchors.right: separator.right
       margin-top: 5
       SkillNameLabel
-        !text: tr('Offline Training')
+        !text: tr("otclient_modules.character_otui.tr_83")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -352,10 +352,10 @@ UIWidget
       anchors.right: separator.right
       margin-top: 10
       SkillNameLabel
-        !text: tr('Account Status')
+        !text: tr("otclient_modules.character_otui.tr_82")
         color: #C0C0C0
       SkillValueLabel
-        !text: tr('33')
+        !text: tr("otclient_modules.character_otui.tr_81")
         color: #C0C0C0
     CharacterSkillBase
       id: accountOnline
@@ -364,10 +364,10 @@ UIWidget
       anchors.right: separator.right
       margin-top: 5
       SkillNameLabel
-        !text: tr('Account Premium')
+        !text: tr("otclient_modules.character_otui.tr_80")
         color: #C0C0C0
       SkillValueLabel
-        !text: tr('33')
+        !text: tr("otclient_modules.character_otui.tr_79")
         color: #C0C0C0
     CharacterSkillBase
       id: loyaltyTitle
@@ -376,15 +376,15 @@ UIWidget
       anchors.right: separator.right
       margin-top: 5
       SkillNameLabel
-        !text: tr('Loyalty Title')
+        !text: tr("otclient_modules.character_otui.tr_78")
         color: #C0C0C0
       SkillValueLabel
-        !text: tr('33')
+        !text: tr("otclient_modules.character_otui.tr_77")
         color: #C0C0C0
 
     Label
       id: skillsLabel
-      !text: tr('Skills')
+      !text: tr("otclient_modules.character_otui.tr_76")
       color: #C0C0C0
       anchors.top: level.top
       anchors.horizontalCenter: parent.horizontalCenter
@@ -396,7 +396,7 @@ UIWidget
       anchors.right: parent.right
       margin-top: 10
       SkillNameLabel
-        !text: tr('Magic')
+        !text: tr("otclient_modules.character_otui.tr_75")
         color: #C0C0C0
       SkillValueLabel
       SkillCharacterIcon
@@ -414,7 +414,7 @@ UIWidget
       anchors.right: parent.right
       margin-top: 13
       SkillNameLabel
-        !text: tr('Fist')
+        !text: tr("otclient_modules.character_otui.tr_74")
         color: #C0C0C0
       SkillValueLabel
       SkillCharacterIcon
@@ -432,7 +432,7 @@ UIWidget
       anchors.right: parent.right
       margin-top: 13
       SkillNameLabel
-        !text: tr('Club')
+        !text: tr("otclient_modules.character_otui.tr_73")
         color: #C0C0C0
       SkillValueLabel
       SkillCharacterIcon
@@ -450,7 +450,7 @@ UIWidget
       anchors.right: parent.right
       margin-top: 13
       SkillNameLabel
-        !text: tr('Sword')
+        !text: tr("otclient_modules.character_otui.tr_72")
         color: #C0C0C0
       SkillValueLabel
       SkillCharacterIcon
@@ -468,7 +468,7 @@ UIWidget
       anchors.right: parent.right
       margin-top: 13
       SkillNameLabel
-        !text: tr('Axe')
+        !text: tr("otclient_modules.character_otui.tr_71")
         color: #C0C0C0
       SkillValueLabel
       SkillCharacterIcon
@@ -486,7 +486,7 @@ UIWidget
       anchors.right: parent.right
       margin-top: 13
       SkillNameLabel
-        !text: tr('Distance')
+        !text: tr("otclient_modules.character_otui.tr_70")
         color: #C0C0C0
       SkillValueLabel
       SkillCharacterIcon
@@ -504,7 +504,7 @@ UIWidget
       anchors.right: parent.right
       margin-top: 13
       SkillNameLabel
-        !text: tr('Shielding')
+        !text: tr("otclient_modules.character_otui.tr_69")
         color: #C0C0C0
       SkillValueLabel
       SkillCharacterIcon
@@ -522,7 +522,7 @@ UIWidget
       anchors.right: parent.right
       margin-top: 13
       SkillNameLabel
-        !text: tr('Fishing')
+        !text: tr("otclient_modules.character_otui.tr_68")
         color: #C0C0C0
       SkillValueLabel
       SkillCharacterIcon
@@ -534,7 +534,7 @@ UIWidget
         margin-left: 5
         background-color: #00C000
     Label
-      !text: tr('Account Badges')
+      !text: tr("otclient_modules.character_otui.tr_67")
       margin-top: 12
       anchors.top: skillId6.bottom
       anchors.left: separator.left
@@ -595,7 +595,7 @@ UIWidget
       margin-top: 5
       margin-left: 5
       SkillNameLabel
-        !text: tr('Attack Value:')
+        !text: tr("otclient_modules.character_otui.tr_66")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -612,12 +612,12 @@ UIWidget
       anchors.right: separator.right
       margin-top: 0
       SkillNameLabel
-        !text: tr('Converted Damage:')
+        !text: tr("otclient_modules.character_otui.tr_65")
         color: #C0C0C0
       SkillValueLabel
         id: none
         color: #C0C0C0
-        !text: tr('None')
+        !text: tr("otclient_modules.character_otui.tr_64")
         margin-right: 2
         visible: false
       SkillValueLabel
@@ -635,7 +635,7 @@ UIWidget
       anchors.right: separator.right
       margin-top: 0
       SkillNameLabel
-        !text: tr('Defence Value:')
+        !text: tr("otclient_modules.character_otui.tr_63")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -647,7 +647,7 @@ UIWidget
       anchors.right: separator.right
       margin-top: 1
       SkillNameLabel
-        !text: tr('Armor Value:')
+        !text: tr("otclient_modules.character_otui.tr_62")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -659,7 +659,7 @@ UIWidget
       anchors.right: separator.right
       margin-top: 0
       SkillNameLabel
-        !text: tr('Mitigation:')
+        !text: tr("otclient_modules.character_otui.tr_61")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -671,7 +671,7 @@ UIWidget
       anchors.right: separator.right
       margin-top: 1
       SkillNameLabel
-        !text: tr('Blessings:')
+        !text: tr("otclient_modules.character_otui.tr_60")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -702,7 +702,7 @@ UIWidget
       anchors.right: separator.right
       margin-top: 1
       SkillNameLabel
-        !text: tr('Damage Reduction:')
+        !text: tr("otclient_modules.character_otui.tr_59")
         color: #C0C0C0
     Panel
       id: reductionNone
@@ -728,7 +728,7 @@ UIWidget
       anchors.right: separator.right
       margin-top: 1
       SkillNameLabel
-        !text: tr('Concoctions:')
+        !text: tr("otclient_modules.character_otui.tr_58")
         color: #C0C0C0  
     CharacterSkillBase
       id: concoctionPanel
@@ -748,7 +748,7 @@ UIWidget
       anchors.right: parent.right
       margin-top: 1
       SkillNameLabel
-        !text: tr('Critical Hit:')
+        !text: tr("otclient_modules.character_otui.tr_57")
         color: #C0C0C0
     CharacterSkillBase
       id: criticalChance
@@ -758,7 +758,7 @@ UIWidget
       margin-left: 15
       margin-top: 0
       SkillNameLabel
-        !text: tr('Chance')
+        !text: tr("otclient_modules.character_otui.tr_56")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -771,7 +771,7 @@ UIWidget
       margin-left: 0
       margin-top: 0
       SkillNameLabel
-        !text: tr('Extra Damage')
+        !text: tr("otclient_modules.character_otui.tr_55")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -784,7 +784,7 @@ UIWidget
       margin-left: 0
       margin-top: 0
       SkillNameLabel
-        !text: tr('Life Leech:')
+        !text: tr("otclient_modules.character_otui.tr_54")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -797,7 +797,7 @@ UIWidget
       margin-left: 0
       margin-top: 0
       SkillNameLabel
-        !text: tr('Mana Leech:')
+        !text: tr("otclient_modules.character_otui.tr_53")
         color: #C0C0C0
       SkillValueLabel
         color: #C0C0C0
@@ -827,7 +827,7 @@ UIWidget
           margin: 1
           background-color: #363636
         Label
-          !text: tr('Data and Time')
+          !text: tr("otclient_modules.character_otui.tr_52")
           anchors.top: parent.top
           anchors.bottom: parent.bottom
           anchors.left: parent.left
@@ -841,7 +841,7 @@ UIWidget
           anchors.bottom: parent.bottom
           anchors.left: prev.right
         Label
-          !text: tr('Cause of Death')
+          !text: tr("otclient_modules.character_otui.tr_51")
           anchors.top: parent.top
           anchors.bottom: parent.bottom
           anchors.left: separator.left
@@ -872,7 +872,7 @@ UIWidget
     Button
       id: previous
       size: 86 20
-      !text: tr('Previous')
+      !text: tr("otclient_modules.character_otui.tr_50")
       //font: noto-12
       anchors.top: ListBase.bottom
       anchors.left: parent.left
@@ -883,7 +883,7 @@ UIWidget
     Button
       id: next
       size: 86 20
-      !text: tr('Next')
+      !text: tr("otclient_modules.character_otui.tr_49")
       //font: noto-12
       anchors.top: ListBase.bottom
       anchors.right: parent.right
@@ -894,7 +894,7 @@ UIWidget
       enabled: false
     Label
       id: pages
-      !text: tr('Page 1 / 1')
+      !text: tr("otclient_modules.character_otui.tr_48")
       color: #C0C0C0
       anchors.verticalCenter: previous.verticalCenter
       anchors.horizontalCenter: parent.horizontalCenter
@@ -923,7 +923,7 @@ UIWidget
           margin: 1
           background-color: #363636
         Label
-          !text: tr('Data and Time')
+          !text: tr("otclient_modules.character_otui.tr_47")
           anchors.top: parent.top
           anchors.bottom: parent.bottom
           anchors.left: parent.left
@@ -937,7 +937,7 @@ UIWidget
           anchors.bottom: parent.bottom
           anchors.left: prev.right
         Label
-          !text: tr('Description')
+          !text: tr("otclient_modules.character_otui.tr_46")
           anchors.top: parent.top
           anchors.bottom: parent.bottom
           anchors.left: separator.left
@@ -952,7 +952,7 @@ UIWidget
           anchors.right: parent.right
           margin-right: 100
         Label
-          !text: tr('Status')
+          !text: tr("otclient_modules.character_otui.tr_45")
           anchors.top: parent.top
           anchors.bottom: parent.bottom
           anchors.left: separatorTwo.left
@@ -983,7 +983,7 @@ UIWidget
     Button
       id: previous
       size: 86 20
-      !text: tr('Previous')
+      !text: tr("otclient_modules.character_otui.tr_44")
       //font: noto-12
       anchors.top: ListBase.bottom
       anchors.left: parent.left
@@ -994,7 +994,7 @@ UIWidget
     Button
       id: next
       size: 86 20
-      !text: tr('Next')
+      !text: tr("otclient_modules.character_otui.tr_43")
       //font: noto-12
       anchors.top: ListBase.bottom
       anchors.right: parent.right
@@ -1005,7 +1005,7 @@ UIWidget
       enabled: false
     Label
       id: pages
-      !text: tr('Page 1 / 1')
+      !text: tr("otclient_modules.character_otui.tr_42")
       color: #C0C0C0
       anchors.verticalCenter: previous.verticalCenter
       anchors.horizontalCenter: parent.horizontalCenter
@@ -1026,14 +1026,14 @@ UIWidget
       Label
         id: Points
         text-auto-resize: true
-        !text: tr('Achievements Points: ') .. 0
+        !text: tr("otclient_modules.character_otui.tr_41") .. 0
         color: #C0C0C0
         anchors.top: parent.top
         anchors.left: parent.left
       Label
         id: gradeOne
         text-auto-resize: true
-        !text: tr('Grade 1: ') .. 0
+        !text: tr("otclient_modules.character_otui.tr_40") .. 0
         color: #C0C0C0
         anchors.top: prev.bottom
         anchors.right: parent.right
@@ -1047,7 +1047,7 @@ UIWidget
       Label
         id: gradeTwo
         text-auto-resize: true
-        !text: tr('Grade 2: ') .. 0
+        !text: tr("otclient_modules.character_otui.tr_39") .. 0
         color: #C0C0C0
         anchors.top: gradeOne.bottom
         anchors.right: gradeOne.right
@@ -1062,7 +1062,7 @@ UIWidget
       Label
         id: gradeThree
         text-auto-resize: true
-        !text: tr('Grade 3: ') .. 0
+        !text: tr("otclient_modules.character_otui.tr_38") .. 0
         color: #C0C0C0
         anchors.top: gradeTwo.bottom
         anchors.right: gradeTwo.right
@@ -1077,7 +1077,7 @@ UIWidget
       Label
         id: gradeFour
         text-auto-resize: true
-        !text: tr('Grade 4: ') .. 0
+        !text: tr("otclient_modules.character_otui.tr_37") .. 0
         color: #C0C0C0
         anchors.top: gradeThree.bottom
         anchors.right: gradeThree.right
@@ -1102,7 +1102,7 @@ UIWidget
       RoundCheckBox
         id: all
         width: 85
-        !text: tr('All')
+        !text: tr("otclient_modules.character_otui.tr_36")
         color: #C0C0C0
         text-offset: 15 0
         anchors.top: parent.top
@@ -1113,7 +1113,7 @@ UIWidget
       RoundCheckBox
         id: locked
         width: 85
-        !text: tr('Locked')
+        !text: tr("otclient_modules.character_otui.tr_35")
         color: #C0C0C0
         text-offset: 15 0
         anchors.top: all.bottom
@@ -1123,7 +1123,7 @@ UIWidget
       RoundCheckBox
         id: accomplished
         width: 100
-        !text: tr('Accomplished')
+        !text: tr("otclient_modules.character_otui.tr_34")
         color: #C0C0C0
         text-offset: 15 0
         anchors.top: locked.bottom
@@ -1139,7 +1139,7 @@ UIWidget
       margin-top: -5
       @onOptionChange: modules.game_cyclopedia.Cyclopedia.achievementSort(self:getCurrentOption().data)
     Label
-      !text: tr('Sort')
+      !text: tr("otclient_modules.character_otui.tr_33")
       anchors.top: sort.top
       anchors.right: sort.left
       margin-right: 5
@@ -1164,7 +1164,7 @@ UIWidget
         !text: ('0/329')
         anchors.centerIn: parent
     Label
-      !text: tr('Regular')
+      !text: tr("otclient_modules.character_otui.tr_32")
       anchors.top: regular.top
       anchors.right: regular.left
       margin-right: 5
@@ -1189,7 +1189,7 @@ UIWidget
         !text: ('0/0')
         anchors.centerIn: parent
     Label
-      !text: tr('Secret')
+      !text: tr("otclient_modules.character_otui.tr_31")
       anchors.top: secret.top
       anchors.right: secret.left
       margin-right: 5
@@ -1269,7 +1269,7 @@ UIWidget
           margin: 1
           background-color: #363636
         Label
-          !text: tr('Name')
+          !text: tr("otclient_modules.character_otui.tr_30")
           anchors.top: parent.top
           anchors.bottom: parent.bottom
           anchors.left: parent.left
@@ -1284,7 +1284,7 @@ UIWidget
           anchors.right: parent.right
           margin-right: 150
         Label
-          !text: tr('Amount')
+          !text: tr("otclient_modules.character_otui.tr_29")
           anchors.top: parent.top
           anchors.bottom: parent.bottom
           anchors.left: separator.left
@@ -1324,7 +1324,7 @@ UIWidget
       CheckBox
         id: inventory
         width: 85
-        !text: tr('Inventory')
+        !text: tr("otclient_modules.character_otui.tr_28")
         color: #C0C0C0
         text-offset: 15 0
         anchors.top: parent.top
@@ -1335,7 +1335,7 @@ UIWidget
       CheckBox
         id: depot
         width: 85
-        !text: tr('Depot')
+        !text: tr("otclient_modules.character_otui.tr_27")
         color: #C0C0C0
         text-offset: 15 0
         anchors.top: inventory.top
@@ -1345,7 +1345,7 @@ UIWidget
       CheckBox
         id: stash
         width: 100
-        !text: tr('Supply Stash')
+        !text: tr("otclient_modules.character_otui.tr_26")
         color: #C0C0C0
         text-offset: 15 0
         anchors.top: depot.bottom
@@ -1355,7 +1355,7 @@ UIWidget
       CheckBox
         id: inbox
         width: 100
-        !text: tr('Inbox')
+        !text: tr("otclient_modules.character_otui.tr_25")
         color: #C0C0C0
         text-offset: 15 0
         anchors.top: depot.top
@@ -1365,7 +1365,7 @@ UIWidget
       CheckBox
         id: store
         width: 100
-        !text: tr('Store Inbox')
+        !text: tr("otclient_modules.character_otui.tr_24")
         color: #C0C0C0
         text-offset: 15 0
         anchors.top: inbox.bottom
@@ -1381,7 +1381,7 @@ UIWidget
         padding-top: 2
         padding-right: 15
         padding-bottom: 0
-        !placeholder: tr('Type to search')
+        !placeholder: tr("otclient_modules.character_otui.tr_23")
         placeholder-color: #6E706F
         @onTextChange: modules.game_cyclopedia.Cyclopedia.characterItemsSearch(self:getText())
     UIWidget
@@ -1396,7 +1396,7 @@ UIWidget
       RoundCheckBox
         id: list
         width: 85
-        !text: tr('show as list')
+        !text: tr("otclient_modules.character_otui.tr_22")
         color: #C0C0C0
         text-offset: 15 0
         anchors.centerIn: parent
@@ -1405,7 +1405,7 @@ UIWidget
       RoundCheckBox
         id: grid
         width: 100
-        !text: tr('show as grid')
+        !text: tr("otclient_modules.character_otui.tr_21")
         color: #C0C0C0
         text-offset: 15 0
         anchors.verticalCenter: parent.verticalCenter
@@ -1432,7 +1432,7 @@ UIWidget
       RoundCheckBox
         id: outfits
         width: 85
-        !text: tr('Outfits')
+        !text: tr("otclient_modules.character_otui.tr_20")
         color: #C0C0C0
         text-offset: 15 0
         anchors.verticalCenter: parent.verticalCenter
@@ -1442,7 +1442,7 @@ UIWidget
       RoundCheckBox
         id: mounts
         width: 85
-        !text: tr('Mounts')
+        !text: tr("otclient_modules.character_otui.tr_19")
         color: #C0C0C0
         text-offset: 15 0
         margin-bottom: 3
@@ -1452,7 +1452,7 @@ UIWidget
       RoundCheckBox
         id: familiars
         width: 85
-        !text: tr('Familiars')
+        !text: tr("otclient_modules.character_otui.tr_18")
         color: #C0C0C0
         text-offset: 15 0
         anchors.verticalCenter: parent.verticalCenter
@@ -1530,7 +1530,7 @@ UIWidget
           padding-bottom: 5
           margin: 5
           margin-bottom: 1
-          !text: tr('XP Boosts')
+          !text: tr("otclient_modules.character_otui.tr_17")
 
           Label
             id: RemainingStoreXPBoostTime
@@ -1539,7 +1539,7 @@ UIWidget
             anchors.top: parent.top
             anchors.left: parent.left
             margin-top: 2
-            !text: tr('Remaining Store XP Boost Time:')
+            !text: tr("otclient_modules.character_otui.tr_16")
 
           Label
             id: RemainingStoreXPBoostTimeValue
@@ -1556,7 +1556,7 @@ UIWidget
             anchors.top: RemainingStoreXPBoostTime.bottom
             anchors.left: RemainingStoreXPBoostTime.left
             margin-top: 2
-            !text: tr('Remaining Daily Reward XP Boost Time:')
+            !text: tr("otclient_modules.character_otui.tr_15")
 
           Label
             id: RemainingDailyRewardXPBoostTimeValue
@@ -1574,7 +1574,7 @@ UIWidget
           padding-bottom: 5
           margin: 5
           margin-bottom: 1
-          !text: tr('Blessings')
+          !text: tr("otclient_modules.character_otui.tr_14")
           size: 225 135
 
           Label
@@ -1584,7 +1584,7 @@ UIWidget
             anchors.top: parent.top
             anchors.left: parent.left
             margin-top: 2
-            !text: tr('Available Blessings:')
+            !text: tr("otclient_modules.character_otui.tr_13")
 
           Panel
             id: PurchasedHouseItems
@@ -1607,7 +1607,7 @@ UIWidget
           padding-bottom: 5
           margin: 5
           margin-bottom: 1
-          !text: tr('Prey')
+          !text: tr("otclient_modules.character_otui.tr_12")
 
           Label
             id: PermanentPreySlots
@@ -1616,7 +1616,7 @@ UIWidget
             anchors.top: parent.top
             anchors.left: parent.left
             margin-top: 2
-            !text: tr('Permanent Prey Slots:')
+            !text: tr("otclient_modules.character_otui.tr_11")
 
           Label
             id: PermanentPreySlotsValue
@@ -1633,7 +1633,7 @@ UIWidget
             anchors.top: PermanentPreySlots.bottom
             anchors.left: parent.left
             margin-top: 2
-            !text: tr('Prey Wildcards:')
+            !text: tr("otclient_modules.character_otui.tr_10")
 
           Label
             id: PreyWildcardsValue
@@ -1652,7 +1652,7 @@ UIWidget
           padding-bottom: 5
           margin: 5
           margin-bottom: 1
-          !text: tr('Daily Reward')
+          !text: tr("otclient_modules.character_otui.tr_9")
 
           Label
             id: InstantRewardAccess
@@ -1661,7 +1661,7 @@ UIWidget
             anchors.top: parent.top
             anchors.left: parent.left
             margin-top: 2
-            !text: tr('Instant Reward Access:')
+            !text: tr("otclient_modules.character_otui.tr_8")
 
           Label
             id: InstantRewardAccessValue
@@ -1679,7 +1679,7 @@ UIWidget
           padding-bottom: 5
           margin: 5
           margin-bottom: 1
-          !text: tr('Charm')
+          !text: tr("otclient_modules.character_otui.tr_7")
 
           Label
             id: CharmExpansion
@@ -1688,7 +1688,7 @@ UIWidget
             anchors.top: parent.top
             anchors.left: parent.left
             margin-top: 2
-            !text: tr('Charm Expansion:')
+            !text: tr("otclient_modules.character_otui.tr_6")
 
           Label
             id: CharmExpansionValue
@@ -1706,7 +1706,7 @@ UIWidget
           padding-bottom: 5
           margin: 5
           margin-bottom: 1
-          !text: tr('Hirelings')
+          !text: tr("otclient_modules.character_otui.tr_5")
 
           Label
             id: PurchasedHireLings
@@ -1715,7 +1715,7 @@ UIWidget
             anchors.top: parent.top
             anchors.left: parent.left
             margin-top: 2
-            !text: tr('Purchased Hirelings:')
+            !text: tr("otclient_modules.character_otui.tr_4")
 
           Label
             id: PurchasedHirelingsValue
@@ -1732,7 +1732,7 @@ UIWidget
             anchors.top: PurchasedHireLings.bottom
             anchors.left: parent.left
             margin-top: 2
-            !text: tr('Hireling Jobs:')
+            !text: tr("otclient_modules.character_otui.tr_3")
 
           Label
             id: hirelingOutfits
@@ -1741,7 +1741,7 @@ UIWidget
             anchors.top: prev.bottom
             anchors.left: parent.left
             margin-top: 2
-            !text: tr('Hireling Outfits:')
+            !text: tr("otclient_modules.character_otui.tr_2")
 
         MiniPanel
           id: houseItems
@@ -1753,7 +1753,7 @@ UIWidget
           margin: 5
           margin-bottom: 1
           size: 530 407
-          !text: tr('Purchased House Items')
+          !text: tr("otclient_modules.character_otui.tr_1")
 
           Panel
             id: PurchasedHouseItems

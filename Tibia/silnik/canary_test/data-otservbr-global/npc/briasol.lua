@@ -25,7 +25,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Come and take a look at the finest gems in the lands of Tibia." },
+	{ i18nKey = "npc.briasol.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

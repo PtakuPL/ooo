@@ -58,8 +58,8 @@ keywordHandler:addKeyword({ "sorcerer" }, StdModule.say, { npcHandler = npcHandl
 keywordHandler:addKeyword({ "power" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lea.stdmod_6" })
 keywordHandler:addKeyword({ "arcane" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lea.stdmod_7" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Take care on your journeys.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.lea.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.lea.farewell_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

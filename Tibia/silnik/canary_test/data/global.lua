@@ -147,7 +147,7 @@ function addStamina(playerId, ...)
 					staminaBonus.eventsTrainer[playerId] = nil
 				else
 					player:setStamina(player:getStamina() + staminaBonus.bonus)
-					player:sendTextMessage(MESSAGE_FAILURE, string.format("%i of stamina has been refilled.", configManager.getNumber(configKeys.STAMINA_TRAINER_GAIN)))
+					player:sendLocalizedTextMessage(MESSAGE_FAILURE, "dataroot.global.msg_3", {configManager.getNumber(configKeys.STAMINA_TRAINER_GAIN)})
 					staminaBonus.eventsTrainer[playerId] = addEvent(addStamina, staminaBonus.period, playerId)
 				end
 			end
@@ -175,18 +175,14 @@ function addStamina(playerId, ...)
 		if actualStamina > 2340 and actualStamina < 2520 then
 			delay = configManager.getNumber(configKeys.STAMINA_GREEN_DELAY) * 60 * 1000 -- Stamina Green 12 min.
 		elseif actualStamina == 2520 then
-			player:sendTextMessage(
-				MESSAGE_STATUS,
-				"You are no longer refilling stamina, \z
-                                                         because your stamina is already full."
-			)
+			player:sendLocalizedTextMessage(MESSAGE_STATUS, "dataroot.global.msg_2")
 			staminaBonus.eventsPz[localPlayerId] = nil
 			return false
 		end
 
 		local regen = configManager.getNumber(configKeys.STAMINA_PZ_GAIN)
 		player:setStamina(player:getStamina() + regen)
-		player:sendTextMessage(MESSAGE_FAILURE, string.format("%i minute%s of stamina has been refilled.", regen, regen == 1 and "" or "s"))
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "dataroot.global.msg_1", {regen, regen == 1 and "" or "s"})
 		staminaBonus.eventsPz[localPlayerId] = addEvent(addStamina, delay, nil, localPlayerId, delay)
 		return true
 	end

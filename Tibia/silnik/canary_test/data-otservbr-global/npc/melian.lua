@@ -91,9 +91,9 @@ keywordHandler:addKeyword({ "continent" }, StdModule.say, { npcHandler = npcHand
 keywordHandler:addKeyword({ "femur" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.melian.stdmod_22" })
 keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.melian.stdmod_23" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, traveller |PLAYERNAME|. Where do you want me to {fly} you?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.melian.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.melian.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.melian.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

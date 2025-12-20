@@ -1,7 +1,7 @@
 # NPC: gnomish_operative_raiders
 
 **Plik:** `data-otservbr-global/npc/gnomish_operative_raiders.lua`
-**Data migracji:** 2025-12-10 14:14
+**Data migracji:** 2025-12-17 00:58
 **Liczba tekstów:** 1
 
 ## Klucze i18n

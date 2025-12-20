@@ -84,7 +84,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 
 		if ARENA[arenaId] then
-			npcHandler:say("So you agree with the {rules} and want to participate in the {challenge}? The {fee} for one try in {" .. ARENA[arenaId].name .. "} is " .. ARENA[arenaId].price .. " gold pieces. Do you really want to participate and pay the {fee}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.halvar.say_1", { ARENA[arenaId].name, ARENA[arenaId].price })
 			npcHandler:setTopic(playerId, 1)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.halvar.say_15")
@@ -116,7 +116,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello competitor! Do you want to {fight} in the arena or shall I explain the {rules} first?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.halvar.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

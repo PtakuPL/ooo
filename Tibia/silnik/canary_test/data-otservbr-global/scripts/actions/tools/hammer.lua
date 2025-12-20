@@ -53,7 +53,7 @@ function hammer.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		if player:getItemCount(5901) >= 3 and player:getItemCount(953) >= 3 then
 			player:removeItem(5901, 3)
 			player:removeItem(953, 3)
-			player:say("KLING KLONG!", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.hammer.say_2", TALKTYPE_MONSTER_SAY)
 			tile:getItemById(295):remove()
 			tile:getItemById(291):remove()
 			Game.createItem(5770, 1, position):setActionId(40021)
@@ -65,7 +65,7 @@ function hammer.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			player:removeItem(9114, 1)
 			player:removeItem(9115, 2)
 			player:removeItem(953, 3)
-			player:say("KLING KLONG!", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.hammer.say_1", TALKTYPE_MONSTER_SAY)
 			Game.createItem(7122, 1, position)
 		end
 		return true

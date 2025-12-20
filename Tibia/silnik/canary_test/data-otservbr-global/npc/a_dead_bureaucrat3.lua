@@ -80,7 +80,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, vocation:getName()) then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("I was a " .. vocation:getName() .. ", too, before I died!! What do you want from me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_dead_bureaucrat3.say_1", { vocation:getName() })
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "145") then
@@ -96,8 +96,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye and don't forget me!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and don't forget me!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.a_dead_bureaucrat3.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.a_dead_bureaucrat3.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

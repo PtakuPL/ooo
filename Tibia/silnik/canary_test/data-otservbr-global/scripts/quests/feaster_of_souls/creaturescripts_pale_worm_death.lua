@@ -11,7 +11,7 @@ function event.onPrepareDeath(creature)
 	for _, specCreature in pairs(spectators) do
 		if specCreature:isPlayer() then
 			if specCreature:getStorageValue(Storage.Quest.U12_30.PoltergeistOutfits.Received) == -1 then
-				specCreature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Congratulations you received the Poltergeist Outfit.")
+				specCreature:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.creaturescripts_pale_worm_death.msg_1")
 				specCreature:addOutfit(1271, 0)
 				specCreature:addOutfit(1270, 0)
 				specCreature:setStorageValue(Storage.Quest.U12_30.PoltergeistOutfits.Received, 1)

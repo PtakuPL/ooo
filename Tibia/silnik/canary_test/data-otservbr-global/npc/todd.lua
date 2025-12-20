@@ -78,9 +78,9 @@ keywordHandler:addKeyword({ "eclesius" }, StdModule.say, { npcHandler = npcHandl
 keywordHandler:addKeyword({ "karl" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.todd.stdmod_12" })
 keywordHandler:addKeyword({ "william" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.todd.stdmod_13" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Uhm oh hello |PLAYERNAME|... not so loud please... my {head}... What ... do you {want}?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Yes, goodbye |PLAYERNAME|, just leave me alone.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Silence at last.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.todd.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.todd.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.todd.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

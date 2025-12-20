@@ -10,7 +10,7 @@ function gravediggerBrain.onUse(player, item, fromPosition, target, toPosition, 
 			rightbrain:getItemById(9659):remove()
 			Game.createItem(19078, 1, Position(33022, 32332, 10))
 		else
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "No brains")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_brain.msg_1")
 		end
 	else
 		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_brain.msg_2")

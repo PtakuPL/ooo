@@ -13,7 +13,7 @@ function spellwand.onUse(player, item, fromPosition, target, toPosition, isHotke
 	end
 	if math.random(100) <= 33 then
 		item:remove()
-		player:say("The spellwand broke.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.spellwand.say_1", TALKTYPE_MONSTER_SAY)
 		if math.random(100) <= 75 then
 			Game.createMonster("Mad Sheep", fromPosition)
 		end

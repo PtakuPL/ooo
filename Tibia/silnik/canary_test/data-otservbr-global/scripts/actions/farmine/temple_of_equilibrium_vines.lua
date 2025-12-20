@@ -6,9 +6,9 @@ function templeOfEquilibriumVines.onUse(player, item, fromPosition, target, toPo
 		player:teleportTo(destination)
 		destination:sendMagicEffect(CONST_ME_POFF)
 		fromPosition:sendMagicEffect(CONST_ME_POFF)
-		player:say("The slippery vines barely hold your weight and you rather slide than climb down.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.temple_of_equilibrium_vines.say_2", TALKTYPE_MONSTER_SAY)
 	else
-		player:say("The vines are too slippery down here to climb them.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.temple_of_equilibrium_vines.say_1", TALKTYPE_MONSTER_SAY)
 		fromPosition:sendMagicEffect(CONST_ME_SMALLPLANTS)
 	end
 	return true

@@ -122,7 +122,7 @@ function demonOak.onUse(player, item, fromPosition, target, toPosition, isHotkey
 	player:say(isLastCut and "HOW IS THAT POSSIBLE?!? MY MASTER WILL CRUSH YOU!! AHRRGGG!" or config.sounds[math.random(#config.sounds)], TALKTYPE_MONSTER_YELL, false, player, DEMON_OAK_POSITION)
 	toPosition:sendMagicEffect(CONST_ME_DRAWBLOOD)
 	player:setStorageValue(cStorage, progress + 1)
-	player:say("-krrrrak-", TALKTYPE_MONSTER_YELL, false, player, toPosition)
+	player:sayLocalized("scripts.actions_demon_oak.say_1", TALKTYPE_MONSTER_YELL, false, player, toPosition)
 	doTargetCombatHealth(0, player, COMBAT_EARTHDAMAGE, -170, -210, CONST_ME_BIGPLANTS)
 	return true
 end

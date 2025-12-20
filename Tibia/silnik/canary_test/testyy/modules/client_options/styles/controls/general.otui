@@ -9,8 +9,8 @@ UIWidget
 
     OptionCheckBoxMarked
       id: showPing
-      !text: tr('Show connection ping')
-      !tooltip: tr('Display connection speed to the server (milliseconds)')
+      !text: tr("otclient_modules.general_otui.tr_18")
+      !tooltip: tr("otclient_modules.general_otui.tr_17")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -26,7 +26,7 @@ UIWidget
 
     OptionCheckBox
       id: classicControl
-      !text: tr('Classic control')
+      !text: tr("otclient_modules.general_otui.tr_16")
 
       $mobile:
         visible: false
@@ -40,7 +40,7 @@ UIWidget
   
     OptionCheckBox
       id: autoChaseOverride
-      !text: tr('Allow auto chase override')
+      !text: tr("otclient_modules.general_otui.tr_15")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -51,7 +51,7 @@ UIWidget
   
     OptionCheckBox
       id: moveStack
-      !text: tr('Move stacks directly')
+      !text: tr("otclient_modules.general_otui.tr_14")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -62,8 +62,8 @@ UIWidget
   
     OptionCheckBoxMarked
       id: smartWalk
-      !text: tr('Enable smart walking')
-      !tooltip: tr('Will detect when to use diagonal step based on the\nkeys you are pressing')
+      !text: tr("otclient_modules.general_otui.tr_13")
+      !tooltip: tr("otclient_modules.general_otui.tr_12")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -74,7 +74,7 @@ UIWidget
   
     OptionCheckBox
       id: openMaximized
-      !text: tr('Open containers maximized')
+      !text: tr("otclient_modules.general_otui.tr_11")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -85,7 +85,7 @@ UIWidget
   
     OptionCheckBox
       id: displayText
-      !text: tr('Display text messages')
+      !text: tr("otclient_modules.general_otui.tr_10")
       
   SmallReversedQtPanel
     id: hotkeyDelay_label
@@ -97,14 +97,14 @@ UIWidget
 
     OptionScaleScroll
       id: hotkeyDelay
-      !text: tr('Hotkey delay: 30ms')
+      !text: tr("otclient_modules.general_otui.tr_9")
       anchors.fill: parent
       &minimumScrollValue: 30
       &maximumScrollValue: 250
       &scrollSize: 21
       @onSetup: |
         local value = modules.client_options.getOption('hotkeyDelay')
-        self:setText(tr('Hotkey delay: %dms', value))
+        self:setText(tr("otclient_modules.general_otui.tr_8", value))
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -115,14 +115,14 @@ UIWidget
 
     OptionScaleScroll
       id: walkTurnDelay
-      !text: tr('Walk delay after turn: 50ms')
+      !text: tr("otclient_modules.general_otui.tr_7")
       anchors.fill: parent
       &minimumScrollValue: 10
       &maximumScrollValue: 500
       &scrollSize: 21
       @onSetup: |
         local value = modules.client_options.getOption('walkTurnDelay')
-        self:setText(tr('Walk delay after turn: %dms', value))
+        self:setText(tr("otclient_modules.general_otui.tr_6", value))
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -133,14 +133,14 @@ UIWidget
 
     OptionScaleScroll
       id: walkTeleportDelay
-      !text: tr('Walk delay after teleport: 200ms')
+      !text: tr("otclient_modules.general_otui.tr_5")
       anchors.fill: parent
       &minimumScrollValue: 50
       &maximumScrollValue: 500
       &scrollSize: 21
       @onSetup: |
         local value = modules.client_options.getOption('walkTeleportDelay')
-        self:setText(tr('Walk delay after turn: %dms', value))
+        self:setText(tr("otclient_modules.general_otui.tr_4", value))
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -151,18 +151,18 @@ UIWidget
 
     OptionScaleScroll
       id: walkStairsDelay
-      !text: tr('Walk delay after floor change: 200ms')
+      !text: tr("otclient_modules.general_otui.tr_3")
       anchors.fill: parent
       &minimumScrollValue: 50
       &maximumScrollValue: 500
       &scrollSize: 21
       @onSetup: |
         local value = modules.client_options.getOption('walkStairsDelay')
-        self:setText(tr('Walk delay after turn: %dms', value))
+        self:setText(tr("otclient_modules.general_otui.tr_2", value))
 
   QtButton
     id: hotkeysButton
-    !text: tr('Hotkeys Manager')
+    !text: tr("otclient_modules.general_otui.tr_1")
     @onClick: modules.game_hotkeys.show()
     anchors.top: prev.bottom
     anchors.left: parent.left

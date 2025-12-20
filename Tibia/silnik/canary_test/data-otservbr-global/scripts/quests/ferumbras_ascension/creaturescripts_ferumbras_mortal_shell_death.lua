@@ -11,8 +11,8 @@ function ferumbrasMortalShell.onDeath(creature, corpse, lasthitkiller, mostdamag
 	if not monster then
 		return true
 	end
-	monster:say("AAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHH!", TALKTYPE_MONSTER_SAY)
-	lasthitkiller:say("FINALY YOU FORCED FERUMBRAS BACK INTO A MORTAL FORM - HE IS NOT AMUSED!", TALKTYPE_MONSTER_SAY, nil, nil, config.bossPos)
+	monster:sayLocalized("scripts.creaturescripts_ferumbras_mortal_shell_death.say_2", TALKTYPE_MONSTER_SAY)
+	lasthitkiller:sayLocalized("scripts.creaturescripts_ferumbras_mortal_shell_death.say_1", TALKTYPE_MONSTER_SAY, nil, nil, config.bossPos)
 	return true
 end
 

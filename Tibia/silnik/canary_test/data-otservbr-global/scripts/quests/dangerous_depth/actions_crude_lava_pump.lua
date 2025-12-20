@@ -20,7 +20,7 @@ function dangerousDepthPump.onUse(player, item)
 				end
 			end
 		end
-		player:say("With the pump destroyed, the lava stream has been stopped. Zone VI is acessible now!", TALKTYPE_MONSTER_SAY, false, false, positionItem)
+		player:sayLocalized("scripts.actions_crude_lava_pump.say_3", TALKTYPE_MONSTER_SAY, false, false, positionItem)
 		item:transform(transformid[item:getId()])
 		addEvent(function()
 			if item then
@@ -38,7 +38,7 @@ function dangerousDepthPump.onUse(player, item)
 				end
 			end
 		end
-		player:say("With the pump destroyed, the lava stream has been stopped. Zone V is acessible now!", TALKTYPE_MONSTER_SAY, false, false, positionItem)
+		player:sayLocalized("scripts.actions_crude_lava_pump.say_2", TALKTYPE_MONSTER_SAY, false, false, positionItem)
 		item:transform(transformid[item:getId()])
 		addEvent(function()
 			if item then
@@ -56,7 +56,7 @@ function dangerousDepthPump.onUse(player, item)
 				end
 			end
 		end
-		player:say("With the pump destroyed, the lava stream has been stopped. Zone IV is acessible now!", TALKTYPE_MONSTER_SAY, false, false, positionItem)
+		player:sayLocalized("scripts.actions_crude_lava_pump.say_1", TALKTYPE_MONSTER_SAY, false, false, positionItem)
 		item:transform(transformid[item:getId()])
 		addEvent(function()
 			if item then

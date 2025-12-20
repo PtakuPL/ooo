@@ -79,7 +79,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			elseif (sleightInfo[message].cost > 0) and table.maxn(sleightInfo[message].items) then
 				text = items_list .. " and " .. sleightInfo[message].cost .. " gp"
 			end
-			npcHandler:say("For a " .. message .. " you will need " .. text .. ". Do you have it with you?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.frosty.say_1", { message, text })
 			rtnt[playerId] = message
 			talkState[playerId] = sleightInfo[message].storageID
 			return true
@@ -116,7 +116,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			return true
 		end
 	elseif MsgContains(message, "mount") or MsgContains(message, "mounts") or MsgContains(message, "sleigh") or MsgContains(message, "sleighs") then
-		npcHandler:say("I can give you one of the following sleighs: {" .. table.concat(monsterName, "}, {") .. "}.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.frosty.say_2", { table.concat(monsterName, "}, {") })
 		rtnt[playerId] = nil
 		talkState[playerId] = 0
 		npcHandler:resetNpc(player)
@@ -145,7 +145,7 @@ keywordHandler:addKeyword({ "carrot" }, StdModule.say, { npcHandler = npcHandler
 keywordHandler:addKeyword({ "percht skull" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.frosty.stdmod_2" })
 keywordHandler:addKeyword({ "bunnies" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.frosty.stdmod_3" })
 
-npcHandler:setMessage(MESSAGE_GREET, "No, you can't have my nose! If you're in need of a {carrot}, go to the market or just dig up one! Or did you come to bring me a {percht skull}?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.frosty.greet_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

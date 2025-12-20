@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Trading tokens! First-class equipment available!" },
+	{ i18nKey = "npc.yana.voice_1" },
 }
 
 npcConfig.currency = 22721

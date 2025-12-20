@@ -26,11 +26,11 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Too many possibilities to become a servant of darkness to trust ANYONE!" },
-	{ text = "Don't tell me I didn't warn you." },
-	{ text = "It's all a big conspiracy, mark my words." },
-	{ text = "Not everything that walks our streets is human ... or even living." },
-	{ text = "We are surrounded by myths, living and dead." },
+	{ i18nKey = "npc.chester_kahs.voice_1" },
+	{ i18nKey = "npc.chester_kahs.voice_2" },
+	{ i18nKey = "npc.chester_kahs.voice_3" },
+	{ i18nKey = "npc.chester_kahs.voice_4" },
+	{ i18nKey = "npc.chester_kahs.voice_5" },
 }
 
 local keywordHandler = KeywordHandler:new()

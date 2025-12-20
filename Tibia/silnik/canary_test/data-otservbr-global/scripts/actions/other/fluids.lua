@@ -40,7 +40,7 @@ local function graveStoneTeleport(cid, fromPosition, toPosition)
 	end
 
 	player:teleportTo(toPosition)
-	player:say("Muahahahaha..", TALKTYPE_MONSTER_SAY, false, player)
+	player:sayLocalized("scripts.fluids.say_1", TALKTYPE_MONSTER_SAY, false, player)
 	fromPosition:sendMagicEffect(CONST_ME_DRAWBLOOD)
 	toPosition:sendMagicEffect(CONST_ME_MORTAREA)
 end

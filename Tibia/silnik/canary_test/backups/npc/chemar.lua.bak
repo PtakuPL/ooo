@@ -61,12 +61,12 @@ end
 local TheNewFrontier = Storage.Quest.U8_54.TheNewFrontier
 local function addTravelKeyword(keyword, text, cost, destination, condition, action)
 	if condition then
-		keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = "Never heard about a place like this." }, condition)
+		keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.chemar.stdmod_1" }, condition)
 	end
 
-	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = "Do you seek a ride to " .. keyword:titleCase() .. " for |TRAVELCOST|?", cost = cost, discount = "postman" })
+	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.chemar.stdmod_2" .. keyword:titleCase() .. " for |TRAVELCOST|?", cost = cost, discount = "postman" })
 	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, text = "Hold on!", cost = cost, discount = "postman", destination = destination })
-	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, text = "You shouldn't miss the experience.", reset = true })
+	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.chemar.stdmod_3", reset = true })
 end
 
 addTravelKeyword("farmine", "Do you seek a ride to Farmine for |TRAVELCOST|?", 60, Position(32983, 31539, 1), function(player)
@@ -85,7 +85,7 @@ addTravelKeyword("issavi", "", 100, Position(33957, 31515, 0))
 addTravelKeyword("marapur", "Marapur", 70, Position(33805, 32767, 2))
 
 npcHandler:setMessage(MESSAGE_GREET, "Daraman's blessings, traveller |PLAYERNAME|.")
-keywordHandler:addKeyword({ "fly" }, StdModule.say, { npcHandler = npcHandler, text = "I can fly you to {Edron}, {Issavi}, {Svargrond}, {Kazordoon}, {Zao}, {Femor Hills} or to {Marapur} if you like. Where do you want to go?" })
+keywordHandler:addKeyword({ "fly" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.chemar.stdmod_4" })
 npcHandler:setMessage(MESSAGE_FAREWELL, "It was a pleasure to help you, |PLAYERNAME|.")
 npcHandler:setMessage(MESSAGE_WALKAWAY, "It was a pleasure to help you, |PLAYERNAME|.")
 
@@ -102,7 +102,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

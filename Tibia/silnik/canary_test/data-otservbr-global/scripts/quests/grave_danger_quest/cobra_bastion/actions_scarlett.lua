@@ -74,7 +74,7 @@ local graveScarlettAid = Action()
 
 function graveScarlettAid.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:getStorageValue(Storage.Quest.U12_20.GraveDanger.GaffirKilled) ~= 1 and player:getStorageValue(Storage.Quest.U12_20.GraveDanger.CustodianKilled) ~= 1 and player:getStorageValue(Storage.Quest.U12_20.GraveDanger.QuaidKilled) ~= 1 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are not allowed to use this yet.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_scarlett.msg_2")
 		return true
 	end
 
@@ -87,7 +87,7 @@ function graveScarlettAid.onUse(player, item, fromPosition, target, toPosition, 
 	elseif item.itemid == armorId then
 		item:getPosition():sendMagicEffect(CONST_ME_THUNDER)
 		item:remove(1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You hold the old chestplate of Galthein in front of you. It does not fit and far too old to withstand any attack.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_scarlett.msg_1")
 		addEvent(createArmor, 20 * 1000, armorId, 1, armorPos)
 		addEvent(backMirror, 10 * 1000)
 		SCARLETT_MAY_TRANSFORM = 1

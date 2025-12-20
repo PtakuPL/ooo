@@ -211,9 +211,9 @@ keywordHandler:addKeyword({ "spells" }, StdModule.say, {
 	i18nKey = "npc.puffels.stdmod_3",
 })
 
-npcHandler:setMessage(MESSAGE_GREET, "Yeah, another fool {disturbing} me, what a joy.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Whatever.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Whatever.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.puffels.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.puffels.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.puffels.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

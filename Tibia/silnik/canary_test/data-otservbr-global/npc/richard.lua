@@ -72,14 +72,13 @@ npcType.onCheckItem = function(npc, player, clientId, subType) end
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Don't forget to always have a rope with you! Buy one here, only the best quality!" },
-	{ text = "Don't complain to ME when you fell down a hole without a rope to get you out! You can buy one here now!" },
-	{ text = "Everything an adventurer needs!" },
-	{ text = "A rope is the adventurer's best friend!" },
-	{ text = "Fresh meat! Durable provisions! Ropes and shovels!" },
+	{ i18nKey = "npc.richard.voice_1" },
+	{ i18nKey = "npc.richard.voice_2" },
+	{ i18nKey = "npc.richard.voice_3" },
+	{ i18nKey = "npc.richard.voice_4" },
+	{ i18nKey = "npc.richard.voice_5" },
 	{
-		text = "Feeling like a bit of treasure-seeking? \z
-		Buy a shovel or a pick and investigate likely-looking stone piles and cracks!",
+		i18nKey = "npc.richard.voice_6",
 	},
 }
 
@@ -127,7 +126,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 0)
 	elseif categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), itemsTable)
-		npcHandler:say("Of course, just browse through my wares. You can also look at " .. remainingCategories .. ".", npc, player)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.richard.say_1", { remainingCategories })
 		npc:openShopWindowTable(player, categoryTable)
 	end
 	return true
@@ -178,9 +177,9 @@ keywordHandler:addKeyword({ "hamish" }, StdModule.say, {
 	i18nKey = "npc.richard.stdmod_11",
 })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello there, mate. Here for a {trade}? My stock's just been refilled.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.richard.greet_msg_1")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my wares. Or do you want to look only at " .. GetFormattedShopCategoryNames(itemsTable) .. ".")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Have fun!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.richard.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

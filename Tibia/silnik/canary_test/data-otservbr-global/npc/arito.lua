@@ -52,9 +52,9 @@ end
 
 local function greetCallback(npc, player)
 	if player:getStorageValue(Storage.Quest.U8_1.TibiaTales.AritosTask) == 2 then
-		npcHandler:setMessage(MESSAGE_GREET, "Thank god you are back!! Did you find....err...what we were talking about??")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.arito.greet_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Be mourned, pilgrim in flesh. Be mourned in my tavern.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.arito.greet_msg_1")
 	end
 
 	return true
@@ -110,9 +110,9 @@ npcConfig.voices = {
 	{ i18nKey = "npc.arito.voice_1" },
 }
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Do visit us again.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Do visit us again.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Sure, browse through my offers.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.arito.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.arito.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.arito.sendtrade_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)

@@ -26,11 +26,11 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Great drinks and snacks at fair prices!" },
-	{ text = "You know you want a party after all that tiring hunting!" },
-	{ text = "<sings> ... are a girl's best friieeend..." },
-	{ text = "Sing and dance at my bar! Yeah!" },
-	{ text = "Best place in town! Come to my bar!" },
+	{ i18nKey = "npc.norma.voice_1" },
+	{ i18nKey = "npc.norma.voice_2" },
+	{ i18nKey = "npc.norma.voice_3" },
+	{ i18nKey = "npc.norma.voice_4" },
+	{ i18nKey = "npc.norma.voice_5" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -183,10 +183,10 @@ keywordHandler:addKeyword({ "cipfried" }, StdModule.say, { npcHandler = npcHandl
 keywordHandler:addKeyword({ "dallheim" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.norma.stdmod_38" })
 keywordHandler:addAliasKeyword({ "zerbrus" })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Hey, where are you going? We've just started!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Come back soon!")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Take all the time you need to decide what you want!")
-npcHandler:setMessage(MESSAGE_GREET, "Welcome, welcome! Have a seat! If you like a drink or something to eat, just ask me for a {trade}!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.norma.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.norma.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.norma.sendtrade_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.norma.greet_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

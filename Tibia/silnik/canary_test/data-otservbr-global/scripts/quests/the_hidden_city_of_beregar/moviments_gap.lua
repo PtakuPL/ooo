@@ -7,7 +7,7 @@ function gap.onStepIn(creature, item, position, fromPosition)
 	end
 
 	player:teleportTo(Position(32569, 31507, 9))
-	player:say("Use the wagon to pass the gap.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.moviments_gap.say_1", TALKTYPE_MONSTER_SAY)
 	return true
 end
 

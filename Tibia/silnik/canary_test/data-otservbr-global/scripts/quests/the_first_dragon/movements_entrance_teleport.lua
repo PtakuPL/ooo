@@ -53,7 +53,7 @@ function entranceTeleport.onStepIn(creature, item, position, fromPosition)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		player:teleportTo(fromPosition)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:say("Someone is fighting against the boss! You need wait a while.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.movements_entrance_teleport.say_4", TALKTYPE_MONSTER_SAY)
 		return true
 	end
 
@@ -61,7 +61,7 @@ function entranceTeleport.onStepIn(creature, item, position, fromPosition)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		player:teleportTo(fromPosition)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:say("You have to wait to challenge this enemy again!", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.movements_entrance_teleport.say_3", TALKTYPE_MONSTER_SAY)
 		return true
 	end
 
@@ -69,7 +69,7 @@ function entranceTeleport.onStepIn(creature, item, position, fromPosition)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		player:teleportTo(fromPosition)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:say("You don't have permission to use this portal", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.movements_entrance_teleport.say_2", TALKTYPE_MONSTER_SAY)
 		return true
 	end
 
@@ -82,7 +82,7 @@ function entranceTeleport.onStepIn(creature, item, position, fromPosition)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		player:teleportTo(setting.newPos)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:say("You have ten minutes to kill and loot this boss. Otherwise you will lose that chance and will be kicked out.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.movements_entrance_teleport.say_1", TALKTYPE_MONSTER_SAY)
 		player:setBossCooldown(setting.bossName, os.time() + 2 * 3600)
 		addEvent(clearBossRoom, 60 * 30 * 1000, player.uid, setting.bossPos, false, setting.range, setting.range, fromPosition)
 		return true

@@ -1,13 +1,13 @@
 MainWindow
   size: 400 125
-  !text: tr('Enter New Character Name')
+  !text: tr("otclient_modules.changename_otui.tr_8")
   @onEnter: modules.game_shop.confirmChangeName()
 
   Button
     id: buttonCancel
     anchors.bottom: parent.bottom
     anchors.right: parent.right
-    !text: tr('Cancel')
+    !text: tr("otclient_modules.changename_otui.tr_7")
     width: 64
     @onClick: modules.game_shop.cancelChangeName()
 
@@ -16,7 +16,7 @@ MainWindow
     anchors.bottom: parent.bottom
     anchors.right: prev.left
     margin-right: 13
-    !text: tr('Ok')
+    !text: tr("otclient_modules.changename_otui.tr_6")
     width: 64
     @onClick: modules.game_shop.confirmChangeName()
 
@@ -31,7 +31,7 @@ MainWindow
     anchors.left: parent.left
     anchors.right: parent.right
     text-align: top
-    !text: tr('Please enter the new name for your character:')
+    !text: tr("otclient_modules.changename_otui.tr_5")
 
   TextEdit
     id: targetName

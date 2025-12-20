@@ -26,7 +26,7 @@ function golden.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		for i = 1, #playerPositions do
 			local creature = Tile(playerPositions[i].fromPos):getTopCreature()
 			if not creature then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need 5 players to fight with this boss.")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "actions.golden.msg_2")
 				return true
 			end
 		end
@@ -34,7 +34,7 @@ function golden.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 
 	if toPosition == setting.leverPosition then
 		if roomIsOccupied(setting.centerRoom, false, setting.range, setting.range) then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Someone is fighting against the boss! You need wait awhile.")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "actions.golden.msg_1")
 			return true
 		end
 		if Game.getStorageValue(setting.clearRoomStorage) == 1 then

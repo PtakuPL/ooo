@@ -24,7 +24,7 @@ combat:setArea(area)
 local spell = Spell("instant")
 
 function spell.onCastSpell(creature, var)
-	creature:say("Chill out!", TALKTYPE_MONSTER_SAY)
+	creature:sayLocalized("scripts.gaz'haragoth_iceball.say_1", TALKTYPE_MONSTER_SAY)
 	return combat:execute(creature, var)
 end
 

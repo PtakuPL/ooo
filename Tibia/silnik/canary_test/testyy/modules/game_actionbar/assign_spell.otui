@@ -23,7 +23,7 @@ SpellListLabel < Label
     color: #ffffff
 
 MainWindow
-  !text: tr('Assign Spell')
+  !text: tr("otclient_modules.assign_spell_otui.tr_7")
   size: 280 480
   @onEscape: modules.game_actionbar.closeSpellAssignWindow()
   @onEnter: modules.game_actionbar.spellAssignAccept()
@@ -37,13 +37,13 @@ MainWindow
     anchors.top: parent.top
     margin-top: 6
     margin-left: 5
-    !text: tr('name')
+    !text: tr("otclient_modules.assign_spell_otui.tr_6")
     text-auto-resize: true
   Label
     id: previewSpellWords
     anchors.left: previewSpell.right
     anchors.top: previewSpellName.bottom
-    !text: tr('words')
+    !text: tr("otclient_modules.assign_spell_otui.tr_5")
     margin-left: 5
     text-auto-resize: true
   HorizontalSeparator
@@ -56,7 +56,7 @@ MainWindow
 
   Label
     id: filterLabel
-    !text: tr('Filter')
+    !text: tr("otclient_modules.assign_spell_otui.tr_4")
     anchors.left: parent.left
     anchors.top: splitter.bottom
     margin-top: 8
@@ -91,7 +91,7 @@ MainWindow
 
   Label
     id: parameterLabel
-    !text: tr('Parameter')
+    !text: tr("otclient_modules.assign_spell_otui.tr_3")
     anchors.left: parent.left
     anchors.bottom: applyButton.top
     margin-bottom: 8
@@ -107,11 +107,11 @@ MainWindow
     id: applyButton
     anchors.bottom: parent.bottom
     anchors.left: parent.left
-    !text: tr('Apply')
+    !text: tr("otclient_modules.assign_spell_otui.tr_2")
     @onClick: modules.game_actionbar.spellAssignAccept()
   Button
     id: cancelButton
     anchors.bottom: parent.bottom
     anchors.right: parent.right
-    !text: tr('Cancel')
+    !text: tr("otclient_modules.assign_spell_otui.tr_1")
     @onClick: modules.game_actionbar.closeSpellAssignWindow()

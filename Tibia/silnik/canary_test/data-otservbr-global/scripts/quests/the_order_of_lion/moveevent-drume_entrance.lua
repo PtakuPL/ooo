@@ -2,7 +2,7 @@ local drumeEntrance = MoveEvent()
 function drumeEntrance.onStepIn(creature, item, position, fromPosition)
 	if creature:isPlayer() and not creature:canFightBoss("Drume") then
 		creature:teleportTo(fromPosition, true)
-		creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You've been into the skirmish in the last 10 hours.")
+		creature:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.moveevent_drume_entrance.msg_1")
 	end
 	return true
 end

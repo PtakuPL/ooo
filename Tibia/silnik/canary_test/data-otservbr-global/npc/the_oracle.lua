@@ -82,8 +82,7 @@ local function greetCallback(npc, creature)
 		npcHandler:resetNpc(creature)
 		return false
 	elseif level > 10 then
-		npcHandler:say(player:getName() .. ", I CAN'T LET YOU LEAVE - YOU ARE TOO STRONG ALREADY! \z
-		YOU CAN ONLY LEAVE WITH LEVEL 9 OR LOWER.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_oracle.say_1", { player:getName() })
 		npcHandler:resetNpc(creature)
 		return false
 	elseif player:getVocation():getId() > VOCATION.ID.NONE then
@@ -113,8 +112,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		local cityTable = config.towns[message:lower()]
 		if cityTable then
 			town[playerId] = cityTable
-			npcHandler:say("IN " .. string.upper(message) .. "! AND WHAT PROFESSION HAVE YOU CHOSEN: \z
-			{KNIGHT}, {PALADIN}, {SORCERER}, OR {DRUID}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_oracle.say_2", { string.upper(message) })
 			npcHandler:setTopic(playerId, 2)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_oracle.say_4")
@@ -161,8 +159,8 @@ npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "COME BACK WHEN YOU ARE PREPARED TO FACE YOUR DESTINY!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "COME BACK WHEN YOU ARE PREPARED TO FACE YOUR DESTINY!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.the_oracle.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.the_oracle.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -16,7 +16,7 @@ function stringOfMending.onUse(player, item, fromPosition, target, toPosition, i
 	target:getPosition():sendMagicEffect(CONST_ME_BLOCKHIT)
 	item:remove(1)
 	target:remove()
-	player:say("50% chance, the item was broken.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.string_of_mending.say_1", TALKTYPE_MONSTER_SAY)
 	return true
 end
 

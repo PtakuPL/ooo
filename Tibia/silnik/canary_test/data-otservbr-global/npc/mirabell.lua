@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "The Horn of Plenty is always open for tired adventurers." },
+	{ i18nKey = "npc.mirabell.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -115,10 +115,10 @@ end
 keywordHandler:addKeyword({ "drink" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.mirabell.stdmod_1" })
 keywordHandler:addKeyword({ "food" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.mirabell.stdmod_2" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to the Horn of Plenty, |PLAYERNAME|. Sit down, have a {drink} or some {food}!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Come back soon, traveller.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Come back soon, traveller.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, take a look at my tasty offers.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.mirabell.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.mirabell.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.mirabell.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.mirabell.sendtrade_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

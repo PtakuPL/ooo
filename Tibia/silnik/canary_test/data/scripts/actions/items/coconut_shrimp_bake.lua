@@ -19,7 +19,7 @@ function coconutShrimpBake.onUse(player, item, fromPosition, target, toPosition,
 	end
 
 	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.coconut_shrimp_bake.msg_4" .. headItem:getName() .. " has increased for twenty-four hours.")
-	player:say("Yum.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.coconut_shrimp_bake.say_1", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)
 	player:setExhaustion("coconut-shrimp-bake", 24 * 60 * 60)

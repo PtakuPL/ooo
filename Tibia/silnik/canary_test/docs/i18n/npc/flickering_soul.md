@@ -1,7 +1,7 @@
 # NPC: flickering_soul
 
-**Plik:** `data-otservbr-global/npc/flickering_soul.lua`
-**Data migracji:** 2025-12-10 12:18
+**Plik:** 
+**Data migracji:** 2025-12-20 20:24
 **Liczba tekstów:** 0
 
 ## Klucze i18n

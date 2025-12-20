@@ -82,7 +82,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 end
 
-keywordHandler:addKeyword({ "mission" }, StdModule.say, { npcHandler = npcHandler, text = "..what about {magic}.." })
+keywordHandler:addKeyword({ "mission" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.zarifan.stdmod_1" })
 
 npcHandler:setMessage(MESSAGE_GREET, "... ... hello...magic... words?")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

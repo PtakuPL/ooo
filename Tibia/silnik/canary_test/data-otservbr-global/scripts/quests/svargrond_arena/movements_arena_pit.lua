@@ -16,7 +16,7 @@ function arenaPit.onStepIn(creature, item, position, fromPosition)
 
 		player:setStorageValue(Storage.Quest.U8_0.BarbarianArena.PitDoor, -1)
 		player:teleportTo(SvargrondArena.kickPosition)
-		player:say("Coward!", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("quests.movements_arena_pit.say_5", TALKTYPE_MONSTER_SAY)
 		SvargrondArena.cancelEvents(playerId)
 		return true
 	end
@@ -30,15 +30,15 @@ function arenaPit.onStepIn(creature, item, position, fromPosition)
 		if arenaId == 1 then
 			SvargrondArena.rewardPosition:sendMagicEffect(CONST_ME_FIREWORK_BLUE)
 			player:setStorageValue(Storage.Quest.U8_0.BarbarianArena.GreenhornDoor, 1)
-			player:say("Welcome back, little hero!", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("quests.movements_arena_pit.say_4", TALKTYPE_MONSTER_SAY)
 		elseif arenaId == 2 then
 			SvargrondArena.rewardPosition:sendMagicEffect(CONST_ME_FIREWORK_YELLOW)
 			player:setStorageValue(Storage.Quest.U8_0.BarbarianArena.ScrapperDoor, 1)
-			player:say("Congratulations, brave warrior!", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("quests.movements_arena_pit.say_3", TALKTYPE_MONSTER_SAY)
 		elseif arenaId == 3 then
 			SvargrondArena.rewardPosition:sendMagicEffect(CONST_ME_FIREWORK_RED)
 			player:setStorageValue(Storage.Quest.U8_0.BarbarianArena.WarlordDoor, 1)
-			player:say("Respect and honour to you, champion!", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("quests.movements_arena_pit.say_2", TALKTYPE_MONSTER_SAY)
 		end
 
 		player:setStorageValue(Storage.Quest.U8_0.BarbarianArena.Arena, player:getStorageValue(Storage.Quest.U8_0.BarbarianArena.Arena) + 1)
@@ -63,7 +63,7 @@ function arenaPit.onStepIn(creature, item, position, fromPosition)
 
 	player:teleportTo(PITS[pitId].center)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
-	player:say("Fight!", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("quests.movements_arena_pit.say_1", TALKTYPE_MONSTER_SAY)
 	return true
 end
 

@@ -192,11 +192,7 @@ function tutorialTile4.onStepIn(creature, item, position, fromPosition)
 		return true
 	end
 	if player:getStorageValue(Storage.Dawnport.MessageStair) < 1 then
-		player:sendTextMessage(
-			MESSAGE_EVENT_ADVANCE,
-			"To ATTACK, click on a target in the battle list next to the game window. \z
-			A red frame shows which enemy you're attacking."
-		)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.dawnport_tiles.msg_1")
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		player:setStorageValue(Storage.Dawnport.MessageStair, 1)
 	end

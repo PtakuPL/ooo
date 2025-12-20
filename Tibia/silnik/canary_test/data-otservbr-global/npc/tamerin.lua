@@ -55,11 +55,11 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 30 then
-		npcHandler:setMessage(MESSAGE_GREET, "Have you the {animal cure}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.tamerin.greet_msg_1")
 	elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 31 then
-		npcHandler:setMessage(MESSAGE_GREET, "Have you killed {morik}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.tamerin.greet_msg_2")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Hello, what brings you here?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.tamerin.greet_msg_3")
 	end
 	return true
 end

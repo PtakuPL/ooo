@@ -118,11 +118,11 @@ npcHandler:setMessage(MESSAGE_GREET, "I greet you, human. This is a time of dist
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
 -- Don't forget npcHandler = npcHandler in the parameters. It is required for all StdModule functions!
-keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, text = "My name is now known only to the wind and it shall remain like this until I will return to my kin." })
-keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, text = "I was a guardian of this glade. I am the last one... everyone had to leave." })
-keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, text = "This glade's time is growing short if nothing will be done soon." })
-keywordHandler:addKeyword({ "forest fury" }, StdModule.say, { npcHandler = npcHandler, text = "Take care, guardian." })
-keywordHandler:addKeyword({ "orclops" }, StdModule.say, { npcHandler = npcHandler, text = "Cruel beings. Large and monstrous, with a single eye, staring at their prey. " })
+keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.a_weakened_forest_fury.stdmod_1" })
+keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.a_weakened_forest_fury.stdmod_2" })
+keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.a_weakened_forest_fury.stdmod_3" })
+keywordHandler:addKeyword({ "forest fury" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.a_weakened_forest_fury.stdmod_4" })
+keywordHandler:addKeyword({ "orclops" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.a_weakened_forest_fury.stdmod_5" })
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

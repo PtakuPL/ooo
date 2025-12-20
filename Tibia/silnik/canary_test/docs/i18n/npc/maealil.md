@@ -1,7 +1,7 @@
 # NPC: maealil
 
 **Plik:** `data-otservbr-global/npc/maealil.lua`
-**Data migracji:** 2025-12-10 14:15
+**Data migracji:** 2025-12-17 01:03
 **Liczba tekstów:** 3
 
 ## Klucze i18n

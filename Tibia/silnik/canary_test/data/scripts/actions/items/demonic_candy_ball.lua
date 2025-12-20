@@ -61,7 +61,7 @@ function demonicCandyBall.onUse(player, item, fromPosition, target, toPosition, 
 		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.demonic_candy_ball.msg_5")
 	end
 
-	player:say("Smack.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.demonic_candy_ball.say_1", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)
 	item:remove(1)

@@ -74,7 +74,7 @@ end
 -- Wisdom of Solitude
 local blessKeyword = keywordHandler:addKeyword({ "solitude" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Would you like to receive that protection for a sacrifice of |BLESSCOST| gold, child?",
+	i18nKey = "npc.eremo.stdmod_1",
 })
 blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, {
 	npcHandler = npcHandler,
@@ -84,7 +84,7 @@ blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, {
 })
 blessKeyword:addChildKeyword({ "" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Fine. You are free to decline my offer.",
+	i18nKey = "npc.eremo.stdmod_2",
 	reset = true,
 })
 keywordHandler:addAliasKeyword({ "wisdom" })
@@ -108,7 +108,7 @@ addHealKeyword("You are electrified, my child. Let me help you to stop trembling
 
 keywordHandler:addKeyword({ "heal" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "You are hurt, my child. I will heal your wounds.",
+	i18nKey = "npc.eremo.stdmod_3",
 }, function(player)
 	return player:getHealth() < 40
 end, function(player)
@@ -120,14 +120,13 @@ end, function(player)
 end)
 keywordHandler:addKeyword({ "heal" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "You aren't looking that bad. Sorry, I can't help you. But if you are looking for additional \
-		protection you should go on the {pilgrimage} of ashes or get the protection of the {twist of fate} here.",
+	i18nKey = "npc.eremo.stdmod_4",
 })
 
 -- Teleport back
 local teleportKeyword = keywordHandler:addKeyword({ "cormaya" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Should I teleport you back to Pemaret?",
+	i18nKey = "npc.eremo.stdmod_5",
 })
 teleportKeyword:addChildKeyword({ "yes" }, StdModule.travel, {
 	npcHandler = npcHandler,
@@ -137,7 +136,7 @@ teleportKeyword:addChildKeyword({ "yes" }, StdModule.travel, {
 })
 teleportKeyword:addChildKeyword({ "" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Maybe later.",
+	i18nKey = "npc.eremo.stdmod_6",
 	ungreet = true,
 })
 
@@ -148,71 +147,65 @@ keywordHandler:addAliasKeyword({ "pemaret" })
 -- Basic
 keywordHandler:addKeyword({ "pilgrimage" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Whenever you receive a lethal wound, your vital force is damaged and there is a \
-		chance that you lose some of your equipment. With every single of the five {blessings} you have, \
-		this damage and chance of loss will be reduced.",
+	i18nKey = "npc.eremo.stdmod_7",
 })
 keywordHandler:addKeyword({ "blessings" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "There are five blessings available in five sacred places: the {spiritual} shielding, \
-		the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}. \
-		Additionally, you can receive the {twist of fate} here.",
+	i18nKey = "npc.eremo.stdmod_8",
 })
 keywordHandler:addKeyword({ "spiritual" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I see you received the spiritual shielding in the whiteflower temple south of Thais.",
+	i18nKey = "npc.eremo.stdmod_9",
 }, function(player)
 	return player:hasBlessing(1)
 end)
 keywordHandler:addAliasKeyword({ "shield" })
 keywordHandler:addKeyword({ "embrace" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I can sense that the druids north of Carlin have provided you with the Embrace of Tibia.",
+	i18nKey = "npc.eremo.stdmod_10",
 }, function(player)
 	return player:hasBlessing(2)
 end)
 keywordHandler:addKeyword({ "suns" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I can see you received the blessing of the two suns in the suntower near Ab'Dendriel.",
+	i18nKey = "npc.eremo.stdmod_11",
 }, function(player)
 	return player:hasBlessing(3)
 end)
 keywordHandler:addAliasKeyword({ "fire" })
 keywordHandler:addKeyword({ "phoenix" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I can sense that the spark of the phoenix already was given to you by \
-		the dwarven priests of earth and fire in Kazordoon.",
+	i18nKey = "npc.eremo.stdmod_12",
 }, function(player)
 	return player:hasBlessing(4)
 end)
 keywordHandler:addAliasKeyword({ "spark" })
 keywordHandler:addKeyword({ "spiritual" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "You can ask for the blessing of spiritual shielding in the whiteflower temple south of Thais.",
+	i18nKey = "npc.eremo.stdmod_13",
 })
 keywordHandler:addAliasKeyword({ "shield" })
 keywordHandler:addKeyword({ "embrace" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The druids north of Carlin will provide you with the embrace of Tibia.",
+	i18nKey = "npc.eremo.stdmod_14",
 })
 keywordHandler:addKeyword({ "suns" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "You can ask for the blessing of the two suns in the suntower near Ab'Dendriel.",
+	i18nKey = "npc.eremo.stdmod_15",
 })
 keywordHandler:addAliasKeyword({ "fire" })
 keywordHandler:addKeyword({ "phoenix" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.",
+	i18nKey = "npc.eremo.stdmod_16",
 })
 keywordHandler:addAliasKeyword({ "spark" })
 keywordHandler:addKeyword({ "job" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I teach some spells, provide one of the five blessings, and sell some amulets. \
-		Ask me for a trade if you like.",
+	i18nKey = "npc.eremo.stdmod_17",
 })
 keywordHandler:addKeyword({ "name" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I am Eremo, an old man who has seen many things.",
+	i18nKey = "npc.eremo.stdmod_18",
 })
 
 npcHandler:setMessage(MESSAGE_GREET, "Welcome to my little garden, adventurer |PLAYERNAME|!")
@@ -234,7 +227,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

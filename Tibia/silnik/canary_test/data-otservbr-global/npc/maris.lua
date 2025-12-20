@@ -88,9 +88,9 @@ keywordHandler:addKeyword({ "alori mort" }, StdModule.say, { npcHandler = npcHan
 	return player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission03) == 1
 end)
 
-npcHandler:setMessage(MESSAGE_GREET, "I hope you have a good reason to step near my {ship}, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Yeah, bye or whatever.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Bye.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.maris.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.maris.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.maris.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

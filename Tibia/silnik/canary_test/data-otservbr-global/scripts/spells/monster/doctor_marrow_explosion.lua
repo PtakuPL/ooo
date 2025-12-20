@@ -46,7 +46,7 @@ function spell.onCastSpell(creature, var)
 		return false
 	end
 	local targetPos = target:getPosition()
-	target:say("You are being targeted by Doctor Marrow's explosion!", TALKTYPE_MONSTER_SAY, false, target)
+	target:sayLocalized("scripts.doctor_marrow_explosion.say_1", TALKTYPE_MONSTER_SAY, false, target)
 	creature:getPosition():sendMagicEffect(CONST_ME_ORANGE_ENERGY_SPARK)
 	targetPos:sendMagicEffect(CONST_ME_ORANGETELEPORT)
 

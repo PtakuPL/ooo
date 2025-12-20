@@ -9,7 +9,7 @@ function ultimateBoozer.onUse(player, item, fromPosition, target, toPosition, is
 	end
 	player:removeItem(138, 1)
 	player:addItem(136, 1)
-	player:say("GULP, GULP, GULP", TALKTYPE_MONSTER_SAY, false, 0, toPosition)
+	player:sayLocalized("scripts.actions_ultimate_booze_beer_bottle.say_1", TALKTYPE_MONSTER_SAY, false, 0, toPosition)
 	toPosition:sendMagicEffect(CONST_ME_SOUND_YELLOW)
 	return true
 end

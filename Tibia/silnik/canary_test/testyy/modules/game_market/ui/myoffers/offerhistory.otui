@@ -3,13 +3,13 @@ Panel
   margin: 1
 
   Label
-    !text: tr('Offer History')
+    !text: tr("otclient_modules.offerhistory_otui.tr_13")
     anchors.top: parent.top
     anchors.left: parent.left
     margin-left: 10
 
   Label
-    !text: tr('Sell History')
+    !text: tr("otclient_modules.offerhistory_otui.tr_12")
     font: noto-12
     text-offset: 0 2
     anchors.top: parent.top
@@ -40,19 +40,19 @@ Panel
     OfferTableHeaderRow
       id: header
       OfferTableHeaderColumn
-        !text: tr('Item Name')
+        !text: tr("otclient_modules.offerhistory_otui.tr_11")
         width: 160
       OfferTableHeaderColumn
-        !text: tr('Total Price')
+        !text: tr("otclient_modules.offerhistory_otui.tr_10")
         width: 125
       OfferTableHeaderColumn
-        !text: tr('Piece Price')
+        !text: tr("otclient_modules.offerhistory_otui.tr_9")
         width: 125
       OfferTableHeaderColumn
-        !text: tr('Amount')
+        !text: tr("otclient_modules.offerhistory_otui.tr_8")
         width: 110
       OfferTableHeaderColumn
-        !text: tr('Action')
+        !text: tr("otclient_modules.offerhistory_otui.tr_7")
         width: 110
 
   TableData
@@ -72,7 +72,7 @@ Panel
     pixels-scroll: true
 
   Label
-    !text: tr('Buy History')
+    !text: tr("otclient_modules.offerhistory_otui.tr_6")
     font: noto-12
     text-offset: 0 2
     anchors.top: myHistorySellingTable.bottom
@@ -103,19 +103,19 @@ Panel
     OfferTableHeaderRow
       id: header
       OfferTableHeaderColumn
-        !text: tr('Item Name')
+        !text: tr("otclient_modules.offerhistory_otui.tr_5")
         width: 160
       OfferTableHeaderColumn
-        !text: tr('Total Price')
+        !text: tr("otclient_modules.offerhistory_otui.tr_4")
         width: 125
       OfferTableHeaderColumn
-        !text: tr('Piece Price')
+        !text: tr("otclient_modules.offerhistory_otui.tr_3")
         width: 125
       OfferTableHeaderColumn
-        !text: tr('Amount')
+        !text: tr("otclient_modules.offerhistory_otui.tr_2")
         width: 110
       OfferTableHeaderColumn
-        !text: tr('Action')
+        !text: tr("otclient_modules.offerhistory_otui.tr_1")
         width: 110
 
   TableData

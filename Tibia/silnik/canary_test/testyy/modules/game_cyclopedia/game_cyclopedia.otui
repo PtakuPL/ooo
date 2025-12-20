@@ -1,7 +1,7 @@
 
 MainWindow
   size: 700 560
-  !text: tr('Cyclopedia')
+  !text: tr("otclient_modules.game_cyclopedia_otui.tr_8")
   visible: false
   @onEscape: toggle()
 
@@ -233,7 +233,7 @@ MainWindow
     size: 40 20
     anchors.bottom: parent.bottom
     anchors.right: parent.right
-    !text: tr('Close')
+    !text: tr("otclient_modules.game_cyclopedia_otui.tr_7")
     //font: noto-12
     text-offset: 0 -1
     color: #C0C0C0
@@ -244,7 +244,7 @@ MainWindow
     anchors.bottom: parent.bottom
     anchors.right: CloseButton.left
     margin-right: 10
-    !text: tr('Back')
+    !text: tr("otclient_modules.game_cyclopedia_otui.tr_6")
     //font: noto-12
     text-offset: 0 -1
     color: #C0C0C0
@@ -274,7 +274,7 @@ MainWindow
       anchors.right: Icon.left
       anchors.verticalCenter: parent.verticalCenter
       margin-right: 4
-      !text: tr('0')
+      !text: tr("otclient_modules.game_cyclopedia_otui.tr_5")
       text-auto-resize: true
       color: #BDBDBD
   UIWidget
@@ -296,7 +296,7 @@ MainWindow
       anchors.right: Icon.left
       anchors.verticalCenter: parent.verticalCenter
       margin-right: 4
-      !text: tr('0')
+      !text: tr("otclient_modules.game_cyclopedia_otui.tr_4")
       text-auto-resize: true
       color: #BDBDBD
 
@@ -309,7 +309,7 @@ MainWindow
     image-source: /images/ui/item
     image-border: 10
     size: 100 20
-    !tooltip: tr("Minor Charm echoes\nEarned by unlocking or upgrading major charm and promotion your character")
+    !tooltip: tr("otclient_modules.game_cyclopedia_otui.tr_3")
     UIWidget
       id: Icon
       anchors.right: parent.right
@@ -321,7 +321,7 @@ MainWindow
       anchors.right: Icon.left
       anchors.verticalCenter: parent.verticalCenter
       margin-right: 4
-      !text: tr('0 / 0')
+      !text: tr("otclient_modules.game_cyclopedia_otui.tr_2")
       text-auto-resize: true
       color: #BDBDBD
   Button
@@ -330,7 +330,7 @@ MainWindow
     anchors.bottom: parent.bottom
     anchors.left: prev.right
     margin-left: 5
-    !text: tr('Bestiary Tracker')
+    !text: tr("otclient_modules.game_cyclopedia_otui.tr_1")
     font: noto-12
     @onClick: modules.game_cyclopedia.Cyclopedia.toggleBestiaryTracker()
     text-offset: 0 -1

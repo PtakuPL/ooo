@@ -1,0 +1,196 @@
+EnterGameWindow
+  id: enterGame
+  @onEnter: EnterGame.doLogin()
+
+  MenuLabel
+    id: emailLabel
+    !text: tr('Acc Name:')
+    anchors.left: parent.left
+    anchors.top: parent.top
+    text-auto-resize: true
+
+  TextEdit
+    id: accountNameTextEdit
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 2
+
+  MenuLabel
+    !text: tr('Password')
+    anchors.left: prev.left
+    anchors.top: prev.bottom
+    margin-top: 8
+    text-auto-resize: true
+
+  PasswordTextEdit
+    id: accountPasswordTextEdit
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 2
+
+  MenuLabel
+    id: authenticatorTokenLabel
+    !text: tr('Token')
+    anchors.left: prev.left
+    anchors.top: prev.bottom
+    text-auto-resize: true
+    margin-top: 8
+
+  TextEdit
+    id: authenticatorTokenTextEdit
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 2
+
+  HorizontalSeparator
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 10
+
+  MenuLabel
+    id: serverLabel
+    !text: tr('Server')
+    anchors.left: parent.left
+    anchors.top: prev.bottom
+    margin-top: 8
+    text-auto-resize: true
+
+  MenuLabel
+    id: portLabel
+    !text: tr('Port')
+    anchors.right: parent.right
+    anchors.top: serverLabel.top
+    text-auto-resize: true
+
+  TextEdit
+    id: serverPortTextEdit
+    anchors.right: parent.right
+    anchors.top: serverLabel.bottom
+    margin-top: 2
+    width: 60
+
+  TextEdit
+    id: serverHostTextEdit
+    anchors.left: parent.left
+    anchors.right: serverPortTextEdit.left
+    anchors.top: serverLabel.bottom
+    margin-top: 2
+    margin-right: 6
+
+  Button
+    id: serverListButton
+    !text: tr('Server List')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 6
+    @onClick: |
+      if ServerList and ServerList.show then
+        ServerList.show()
+      end
+
+  MenuLabel
+    id: clientLabel
+    !text: tr('Client version')
+    anchors.left: parent.left
+    anchors.top: prev.bottom
+    margin-top: 8
+    text-auto-resize: true
+
+  ComboBox
+    id: clientComboBox
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 2
+    menu-scroll: true
+    menu-height: 150
+    menu-scroll-step: 25
+
+  HorizontalSeparator
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 10
+
+  CheckBox
+    id: rememberEmailBox
+    !text: tr('Remember password:')
+    !tooltip: tr('Remember account and password when starts client')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 8
+
+  CheckBox
+    id: autoLoginBox
+    !text: tr('Auto login')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 4
+
+  CheckBox
+    id: stayLoggedBox
+    !text: tr('Stay logged in')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 4
+
+  CheckBox
+    id: httpLoginBox
+    !text: tr('HTTP login')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 4
+
+  HorizontalSeparator
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 10
+
+  Panel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 10
+    height: 26
+
+    Button
+      !text: tr('Login')
+      anchors.left: parent.left
+      anchors.right: parent.horizontalCenter
+      anchors.top: parent.top
+      anchors.bottom: parent.bottom
+      margin-right: 4
+      @onClick: EnterGame.doLogin()
+
+    Button
+      id: btnCreateNewAccount
+      !text: tr('Create Account')
+      anchors.left: parent.horizontalCenter
+      anchors.right: parent.right
+      anchors.top: parent.top
+      anchors.bottom: parent.bottom
+      margin-left: 4
+      enabled: false
+      @onClick: |
+        if toggleCreateAccount then
+          toggleCreateAccount(false)
+        end
+
+  Label
+    id: serverInfoLabel
+    font: noto-12
+    anchors.top: prev.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    color: green
+    text-auto-resize: true

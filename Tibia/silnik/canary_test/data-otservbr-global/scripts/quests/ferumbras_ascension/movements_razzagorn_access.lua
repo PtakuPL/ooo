@@ -14,7 +14,7 @@ function razzagornAccess.onStepIn(creature, item, position, fromPosition)
 		pos.x = pos.x + 2
 		player:teleportTo(pos)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:say("You don't have access to this teleport yet.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.movements_razzagorn_access.say_1", TALKTYPE_MONSTER_SAY)
 	end
 	return true
 end

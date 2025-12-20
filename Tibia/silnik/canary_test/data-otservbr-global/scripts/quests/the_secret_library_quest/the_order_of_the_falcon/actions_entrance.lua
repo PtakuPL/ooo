@@ -14,11 +14,11 @@ function actions_entrance.onUse(player, item, fromPosition, target, toPosition, 
 		if target:getPosition() == Position(33201, 31763, 1) then
 			player:teleportTo(Position(33356, 31309, 4), true)
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Once more you mix the chalk with a drop of your blood and a bit of water and renew the symbol on the floor...")
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_entrance.msg_2")
 			item:transform(2873, 0)
 		end
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can only use this entrance during the night.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_entrance.msg_1")
 	end
 
 	return true

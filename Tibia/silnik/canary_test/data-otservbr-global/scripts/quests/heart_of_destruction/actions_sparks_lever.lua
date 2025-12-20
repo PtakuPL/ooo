@@ -183,7 +183,7 @@ function heartDestructionSparks.onUse(player, item, fromPosition, itemEx, toPosi
 
 					unstableSparksCount = 0
 					--Game.createMonster("Crackler", {x = 32200, y = 31322, z = 14}, false, true)
-					player:say("The room slowly beginns to crackle. An erruption seems imanent!", TALKTYPE_MONSTER_YELL, isInGhostMode, pid, { x = 32143, y = 31308, z = 14 })
+					player:sayLocalized("scripts.actions_sparks_lever.say_1", TALKTYPE_MONSTER_YELL, isInGhostMode, pid, { x = 32143, y = 31308, z = 14 })
 				else
 					player:sendLocalizedMessage(19, "scripts.actions_sparks_lever.msg_1")
 				end

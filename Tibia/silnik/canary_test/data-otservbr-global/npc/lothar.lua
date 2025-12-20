@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I enjoy the peace and solitude out here. You're welcome to be my guest as long as you behave in a quiet and tolerable manner." },
+	{ i18nKey = "npc.lothar.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -118,8 +118,8 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to my humble hut, |PLAYERNAME|. What brings you {here}?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Take care of yourself.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.lothar.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.lothar.farewell_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

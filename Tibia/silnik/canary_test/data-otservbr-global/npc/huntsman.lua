@@ -96,9 +96,9 @@ end
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.huntsman.stdmod_1" })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.huntsman.stdmod_2" })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye. Take care.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "I can still see you.")
-npcHandler:setMessage(MESSAGE_GREET, "Howdy partner.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.huntsman.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.huntsman.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.huntsman.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

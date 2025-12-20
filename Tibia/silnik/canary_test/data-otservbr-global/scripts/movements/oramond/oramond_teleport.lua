@@ -20,7 +20,7 @@ function oramondTeleport.onStepIn(creature, item, position, fromPosition)
 		player:teleportTo(teleport)
 		fromPosition:sendMagicEffect(CONST_ME_GREEN_RINGS)
 		teleport:sendMagicEffect(CONST_ME_GREEN_RINGS)
-		player:say("Slrrp!", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.oramond_teleport.say_1", TALKTYPE_MONSTER_SAY)
 	end
 	return true
 end

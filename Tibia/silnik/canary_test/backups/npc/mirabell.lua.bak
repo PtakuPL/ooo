@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "The Horn of Plenty is always open for tired adventurers." },
+	{ i18nKey = "npc.mirabell.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -112,12 +112,12 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-keywordHandler:addKeyword({ "drink" }, StdModule.say, { npcHandler = npcHandler, text = "I can offer you beer, wine, lemonade and water. If you'd like to see my offers, ask me for a {trade}." })
-keywordHandler:addKeyword({ "food" }, StdModule.say, { npcHandler = npcHandler, text = "Are you looking for food? I have bread, cheese, ham, and meat. If you'd like to see my offers, ask me for a {trade}." })
+keywordHandler:addKeyword({ "drink" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.mirabell.stdmod_1" })
+keywordHandler:addKeyword({ "food" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.mirabell.stdmod_2" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to the Horn of Plenty, |PLAYERNAME|. Sit down, have a {drink} or some {food}!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Come back soon, traveller.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Come back soon, traveller.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.mirabell.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.mirabell.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.mirabell.walkaway_msg_1")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, take a look at my tasty offers.")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
@@ -139,7 +139,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

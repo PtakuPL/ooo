@@ -6,7 +6,7 @@ function fireworksRocket.onUse(player, item, fromPosition, target, toPosition, i
 	else
 		player:getPosition():sendMagicEffect(CONST_ME_FIREAREA)
 		player:getPosition():sendMagicEffect(CONST_ME_HITBYFIRE)
-		player:say("Ouch! Rather place it on the ground next time.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.fireworks_rocket.say_1", TALKTYPE_MONSTER_SAY)
 		player:addAchievementProgress("Rocket in Pocket", 3)
 		player:addHealth(-10, COMBAT_PHYSICALDAMAGE)
 	end

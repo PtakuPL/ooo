@@ -89,7 +89,7 @@ function spell.onCastSpell(creature, var)
 		end
 	end
 
-	creature:say("LADY TENEBRIS BEGINS TO CHANNEL A POWERFULL SPELL! TAKE COVER!", TALKTYPE_MONSTER_YELL)
+	creature:sayLocalized("scripts.tenebris_ultimate.say_1", TALKTYPE_MONSTER_YELL)
 	addEvent(delayedCastSpell, 4000, creature:getId(), var)
 	return true
 end

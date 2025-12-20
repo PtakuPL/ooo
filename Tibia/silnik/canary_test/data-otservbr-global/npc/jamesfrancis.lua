@@ -61,10 +61,10 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.Mission) < 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Gerimor is right. As an expert for minotaurs I am researching these creatures for years. I thought I already knew a lot but the monsters in this cave are {different}. It's a big {mystery}.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jamesfrancis.greet_msg_1")
 		npcHandler:setTopic(playerId, 0)
 	elseif player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.JamesfrancisTask) <= 50 and player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.Mission) < 3 then
-		npcHandler:setMessage(MESSAGE_GREET, "How is your {mission} going?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jamesfrancis.greet_msg_2")
 		npcHandler:setTopic(playerId, 0)
 	elseif player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.Mission) == 4 then
 		npcHandler:setMessage(MESSAGE_GREET, {
@@ -113,7 +113,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Well, bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.jamesfrancis.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_SET_INTERACTION, onAddFocus)
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)

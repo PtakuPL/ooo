@@ -33,8 +33,8 @@ function riftInvaderDeath.onDeath(creature, corpse, lasthitkiller, mostdamagekil
 			end
 			if player:getStorageValue(Storage.Quest.U10_90.FerumbrasAscension.Crystals.AllCrystals) == 8 then
 				local creature = Tile(config.bossPos):getTopCreature()
-				creature:say("NOOOOOOOOOOO!", TALKTYPE_MONSTER_YELL)
-				creature:say("FERUMBRAS BURSTS INTO SOUL SPLINTERS!", TALKTYPE_MONSTER_YELL, nil, nil, Position(33392, 31475, 14))
+				creature:sayLocalized("scripts.creaturescripts_rift_invader_death.say_4", TALKTYPE_MONSTER_YELL)
+				creature:sayLocalized("scripts.creaturescripts_rift_invader_death.say_3", TALKTYPE_MONSTER_YELL, nil, nil, Position(33392, 31475, 14))
 				creature:remove()
 				for a = 1, #crystals do
 					local crystalEffect = crystals[i]
@@ -43,8 +43,8 @@ function riftInvaderDeath.onDeath(creature, corpse, lasthitkiller, mostdamagekil
 				end
 			end
 			player:setStorageValue(crystal.globalStorage, player:getStorageValue(crystal.globalStorage) + 1)
-			lasthitkiller:say("The negative energy of the rift creature is absorbed by the crystal!", TALKTYPE_MONSTER_SAY, nil, nil, crystal.crystalPosition)
-			lasthitkiller:say("ARGH!", TALKTYPE_MONSTER_SAY, nil, nil, Position(33392, 31473, 14))
+			lasthitkiller:sayLocalized("scripts.creaturescripts_rift_invader_death.say_2", TALKTYPE_MONSTER_SAY, nil, nil, crystal.crystalPosition)
+			lasthitkiller:sayLocalized("scripts.creaturescripts_rift_invader_death.say_1", TALKTYPE_MONSTER_SAY, nil, nil, Position(33392, 31473, 14))
 		end
 	end
 

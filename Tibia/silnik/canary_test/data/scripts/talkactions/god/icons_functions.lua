@@ -171,7 +171,7 @@ function creatureIconAction.onSay(player, words, param)
 	local key = "player-test-icon"
 	local category = CreatureIconCategory_Quests
 
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("Applied icon '%s' in %s mode with quantity: %d", iconName, direction, count))
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.icons_functions.msg_1", {iconName, direction, count})
 
 	local function updateIcon(current, target, step)
 		if not player or not player:isPlayer() then

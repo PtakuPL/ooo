@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Potions brewed by the leading alchemists of the land!" },
+	{ i18nKey = "npc.mehkesh.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -56,9 +56,9 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Be mourned, |PLAYERNAME|, pilgrim in flesh. If you are looking for potions, seek no further.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "May enlightenment be your path, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "May enlightenment be your path, |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.mehkesh.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.mehkesh.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.mehkesh.walkaway_msg_1")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Sure.")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

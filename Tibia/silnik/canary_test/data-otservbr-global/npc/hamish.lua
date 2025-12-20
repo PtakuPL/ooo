@@ -26,16 +26,16 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "That's the spirit!" },
-	{ text = "Potions! Wands! Runes! Get them here!" },
-	{ text = "You levelled up but your wand is old? Come and buy a new one here!" },
-	{ text = "Ran out of mana or a little kablooie? Come to me to resupply!" },
-	{ text = "Low on magic and need a little extra? Get yourself a rune!" },
-	{ text = "Pack of monsters give you trouble? Throw an area rune at them!" },
-	{ text = "Health potions to refill your health in combat!" },
-	{ text = "Taking back empty potion flasks! Get your deposit back here!" },
-	{ text = "Careful with that! That's a highly reactive potion you have there!" },
-	{ text = "Mana potions to refill your magic power!" },
+	{ i18nKey = "npc.hamish.voice_1" },
+	{ i18nKey = "npc.hamish.voice_2" },
+	{ i18nKey = "npc.hamish.voice_3" },
+	{ i18nKey = "npc.hamish.voice_4" },
+	{ i18nKey = "npc.hamish.voice_5" },
+	{ i18nKey = "npc.hamish.voice_6" },
+	{ i18nKey = "npc.hamish.voice_7" },
+	{ i18nKey = "npc.hamish.voice_8" },
+	{ i18nKey = "npc.hamish.voice_9" },
+	{ i18nKey = "npc.hamish.voice_10" },
 }
 
 local itemsTable = {
@@ -161,23 +161,19 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.hamish.say_5", "npc.hamish.say_6"}, 200)
 	elseif categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), itemsTable)
-		npcHandler:say("Of course, just browse through my wares. You can also look at " .. remainingCategories .. ".", npc, player)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.hamish.say_1", { remainingCategories })
 		npc:openShopWindowTable(player, categoryTable)
 	end
 	return true
 end
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(
-	MESSAGE_GREET,
-	"Hi there, fellow adventurer. \z
-	What's your need? Say {trade} and we'll soon get you fixed up. Or ask me about {potions}, {wands}, or {runes}."
-)
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.hamish.greet_msg_1")
 
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my wares. Or do you want to look only at " .. GetFormattedShopCategoryNames(itemsTable) .. ".")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Use your runes wisely!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Use your runes wisely!")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Take your pick! Or maybe you want to look only at {potions}, {wands} or {runes}?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.hamish.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.hamish.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.hamish.sendtrade_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- On buy npc shop message

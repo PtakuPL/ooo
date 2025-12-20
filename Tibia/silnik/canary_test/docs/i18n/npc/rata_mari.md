@@ -1,7 +1,7 @@
 # NPC: rata_mari
 
 **Plik:** `data-otservbr-global/npc/rata_mari.lua`
-**Data migracji:** 2025-12-10 14:15
+**Data migracji:** 2025-12-17 01:36
 **Liczba tekstów:** 1
 
 ## Klucze i18n

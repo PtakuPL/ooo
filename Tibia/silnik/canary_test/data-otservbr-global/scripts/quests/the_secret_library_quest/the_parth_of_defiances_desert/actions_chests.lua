@@ -19,7 +19,7 @@ function actions_desert_chests.onUse(player, item, fromPosition, target, toPosit
 				player:setStorageValue(k.storage, 1)
 				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have found a " .. ItemType(k.reward):getName():lower() .. ".")
 			else
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "It is empty.")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_chests.msg_1")
 			end
 		end
 	end

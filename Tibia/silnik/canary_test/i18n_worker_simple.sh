@@ -13,6 +13,9 @@
 cd "$(dirname "$0")"
 WORK_DIR="$(pwd)"
 
+# Repo root (do odczytu komend z origin/master bez robienia pull)
+REPO_ROOT="$(git -C "$WORK_DIR" rev-parse --show-toplevel 2>/dev/null || echo "")"
+
 STATUS_FILE="i18n_file_status.json"
 I18N_DIR="i18n"
 BACKUP_DIR="backups"
@@ -129,21 +132,222 @@ status_build_daily() {
     fi
 }
 
+status_lock_acquire() {
+    if command -v flock >/dev/null 2>&1; then
+        exec 9>".i18n_status.lock"
+        flock -w 10 9 || return 1
+    fi
+    return 0
+}
+
+status_lock_release() {
+    if command -v flock >/dev/null 2>&1; then
+        flock -u 9 2>/dev/null || true
+        exec 9>&-
+    fi
+}
+
+category_lock_acquire() {
+    if command -v flock >/dev/null 2>&1; then
+        exec 8>".i18n_category_state.lock"
+        flock -w 10 8 || return 1
+    fi
+    return 0
+}
+
+category_lock_release() {
+    if command -v flock >/dev/null 2>&1; then
+        flock -u 8 2>/dev/null || true
+        exec 8>&-
+    fi
+}
+
+#===============================================================================
+# SELF_CHECK - szybki sanity check środowiska i statusów
+#===============================================================================
+self_check() {
+    local ok=1
+    local script_path="$WORK_DIR/i18n_worker_simple.sh"
+    local tools=(
+        "tools/i18n_status.py"
+        "tools/i18n_migrate_lua_sendtext.py"
+        "tools/i18n_migrate_lua_say.py"
+        "tools/i18n_migrate_lua_broadcast.py"
+        "tools/i18n_keymap.py"
+        "tools/json_to_lua_locales.py"
+    )
+    local json_files=(
+        "$STATUS_FILE"
+        ".i18n_category_state.json"
+        "i18n_global_stats.json"
+        "i18n/new_files_detected.json"
+        "i18n/quality_report.json"
+    )
+
+    echo "🔎 SELF-CHECK: $script_path"
+
+    if command -v bash >/dev/null 2>&1; then
+        if bash -n "$script_path" >/dev/null 2>&1; then
+            echo "✅ bash -n: OK"
+        else
+            echo "❌ bash -n: FAILED"
+            ok=0
+        fi
+    else
+        echo "❌ bash: brak w PATH"
+        ok=0
+    fi
+
+    if command -v python3 >/dev/null 2>&1; then
+        echo "✅ python3: OK"
+    else
+        echo "❌ python3: brak w PATH"
+        ok=0
+    fi
+
+    for tool in "${tools[@]}"; do
+        if [ -f "$tool" ]; then
+            echo "✅ tool: $tool"
+        else
+            echo "❌ tool: brak $tool"
+            ok=0
+        fi
+    done
+
+    for jf in "${json_files[@]}"; do
+        if [ -f "$jf" ]; then
+            if python3 -m json.tool "$jf" >/dev/null 2>&1; then
+                echo "✅ json: $jf"
+            else
+                echo "❌ json: niepoprawny $jf"
+                ok=0
+            fi
+        else
+            echo "⚠️ json: brak $jf"
+        fi
+    done
+
+    local state_file=".i18n_category_state.json"
+    local state_backup=""
+    local had_state=0
+    if [ -f "$state_file" ]; then
+        had_state=1
+        state_backup="$(mktemp)"
+        cp "$state_file" "$state_backup"
+    fi
+
+    local mode_result=""
+    mode_result=$(select_work_mode 2>/dev/null || true)
+
+    if [ "$had_state" -eq 1 ] && [ -n "$state_backup" ]; then
+        mv "$state_backup" "$state_file"
+    elif [ "$had_state" -eq 0 ]; then
+        rm -f "$state_file" 2>/dev/null || true
+    fi
+
+    if [[ "$mode_result" =~ ^[A-Z_]+: ]]; then
+        echo "✅ dispatcher: $mode_result"
+    else
+        echo "❌ dispatcher: niepoprawny output: ${mode_result:-<empty>}"
+        ok=0
+    fi
+
+    if [ "$ok" -eq 1 ]; then
+        echo "✅ SELF-CHECK: OK"
+        return 0
+    fi
+
+    echo "❌ SELF-CHECK: FAIL"
+    return 1
+}
+
 #===============================================================================
 # GET_UNPROCESSED_FILES - Znajdź pliki które jeszcze nie były przetwarzane
 #===============================================================================
-# Użycie: get_unprocessed_files <find_pattern> <batch_size>
-# Przykład: get_unprocessed_files "data-otservbr-global/monster -name *.lua" 50
+# Użycie: get_unprocessed_files <find_args...> <batch_size>
+# Przykład: get_unprocessed_files data-otservbr-global/monster -name "*.lua" 50
 # Zwraca listę plików które NIE są w PROCESSED_FILE, max batch_size
 #===============================================================================
 get_unprocessed_files() {
-    local find_args="$1"
-    local batch="${2:-50}"
-    
+    local batch=50
+    local find_args=()
+
+    if [ "$#" -ge 1 ]; then
+        local last_arg="${@: -1}"
+        if [[ "$last_arg" =~ ^[0-9]+$ ]]; then
+            batch="$last_arg"
+            if [ "$#" -gt 1 ]; then
+                find_args=("${@:1:$#-1}")
+            fi
+        else
+            find_args=("$@")
+        fi
+    fi
+
+    if [ "${#find_args[@]}" -eq 0 ]; then
+        return 1
+    fi
+
     # Filtruj processed i weź batch
-    eval "find $find_args 2>/dev/null" | while read -r f; do
+    find "${find_args[@]}" 2>/dev/null | while read -r f; do
         grep -qF "$f" "$PROCESSED_FILE" 2>/dev/null || echo "$f"
-    done | head -$batch
+    done | head -n "$(sanitize_batch "$batch" 50)"
+}
+
+sanitize_batch() {
+    local value="${1:-}"
+    local default="${2:-10}"
+    if [[ "$value" =~ ^[0-9]+$ ]] && [ "$value" -gt 0 ]; then
+        echo "$value"
+    else
+        echo "$default"
+    fi
+}
+
+py_regex_matches() {
+    local file="$1"
+    local pattern="$2"
+    local limit="${3:-1}"
+    python3 - "$file" "$pattern" "$limit" << 'PY'
+import re
+import sys
+from pathlib import Path
+
+path = Path(sys.argv[1])
+pattern = sys.argv[2]
+try:
+    limit = int(sys.argv[3])
+except Exception:
+    limit = 1
+
+try:
+    text = path.read_text(encoding="utf-8", errors="ignore")
+except Exception:
+    sys.exit(0)
+
+count = 0
+for m in re.finditer(pattern, text, re.DOTALL):
+    if m.groups():
+        val = m.group(1)
+    else:
+        val = m.group(0)
+    if val is None:
+        continue
+    print(val)
+    count += 1
+    if limit > 0 and count >= limit:
+        break
+PY
+}
+
+title_case() {
+    local text="$1"
+    python3 - "$text" << 'PY'
+import sys
+
+value = sys.argv[1] if len(sys.argv) > 1 else ""
+print(value.title())
+PY
 }
 
 #===============================================================================
@@ -159,9 +363,14 @@ mark_file_completed() {
         echo "$file" >> "$PROCESSED_FILE"
     fi
     
-    # 2. Dodaj do i18n_file_status.json
+    # 2. Dodaj do i18n_file_status.json (nie nadpisuj istniejących etapów)
+    if ! status_lock_acquire; then
+        return 1
+    fi
     python3 << PYMARK
 import json
+import os
+import shutil
 from datetime import datetime
 
 status_file = "$STATUS_FILE"
@@ -181,25 +390,45 @@ if "files" not in status:
 if "global_stats" not in status:
     status["global_stats"] = {"files_completed": 0, "total_keys": 0}
 
-status["files"][file_path] = {
-    "stages": {
-        "1_started": {"status": "completed", "type": category},
-        "5_extraction_en": {"status": "completed", "keys_added": keys_added},
-        "8_sync": {"status": "completed"}
-    },
-    "overall_status": "completed",
-    "completed_at": datetime.now().isoformat(),
-    "category": category
-}
+file_info = status["files"].get(file_path, {})
+stages = file_info.get("stages", {})
+
+if "1_started" not in stages:
+    stages["1_started"] = {"status": "completed", "type": category}
+
+stage_5 = stages.get("5_extraction_en", {})
+if keys_added > 0:
+    stage_5["keys_added"] = max(keys_added, stage_5.get("keys_added", 0))
+if stage_5:
+    stage_5.setdefault("status", "completed")
+    stages["5_extraction_en"] = stage_5
+
+stages["8_sync"] = {"status": "completed"}
+
+file_info["stages"] = stages
+file_info["overall_status"] = "completed"
+file_info["completed_at"] = datetime.now().isoformat()
+file_info.setdefault("category", category)
+status["files"][file_path] = file_info
 
 status["global_stats"]["files_completed"] = len([
     f for f, info in status["files"].items() 
     if info.get("overall_status") == "completed"
 ])
 
-with open(status_file, "w") as f:
+tmp_file = status_file + ".tmp"
+if os.path.exists(status_file):
+    try:
+        shutil.copy2(status_file, status_file + ".bak")
+    except Exception:
+        pass
+with open(tmp_file, "w") as f:
     json.dump(status, f, indent=2)
+os.replace(tmp_file, status_file)
 PYMARK
+    local rc=$?
+    status_lock_release
+    return $rc
 }
 
 # Kolory
@@ -211,7 +440,7 @@ CYAN='\033[0;36m'
 NC='\033[0m'
 
 # NAPRAWIONE: Log do stderr żeby nie mieszać z return values w subshell
-log() { echo -e "$1" >&2; }
+log() { printf '%b\n' "$1" >&2; }
 
 #===============================================================================
 # VALIDATION HELPERS
@@ -227,12 +456,17 @@ restore_backup_file() {
 
 validate_lua_file() {
     local file="$1"
-    if command -v lua >/dev/null 2>&1; then
-        lua -p "$file" >/dev/null 2>&1
-    else
-        # Brak lua w PATH – nie blokuj, ale sygnalizuj przez exit 0
-        return 0
+    if command -v luac >/dev/null 2>&1; then
+        luac -p "$file" >/dev/null 2>&1
+        return $?
     fi
+    if command -v lua >/dev/null 2>&1; then
+        # Fallback: loadfile bez wykonywania
+        lua -e "local f = loadfile('$file'); if not f then os.exit(1) end" >/dev/null 2>&1
+        return $?
+    fi
+    # Brak lua/luac w PATH – nie blokuj
+    return 0
 }
 
 # Smoke-test: próba załadowania pliku Lua (bardziej rygorystyczny test)
@@ -254,14 +488,22 @@ update_category_state() {
     local CATEGORY="$1"
     local PROCESSED_COUNT="$2"
     
-    python3 << CATSTATEPY
+    if ! category_lock_acquire; then
+        return 1
+    fi
+    python3 - "$CATEGORY" "$PROCESSED_COUNT" << 'CATSTATEPY'
 import json
-import time
 import os
+import shutil
+import sys
+import time
 
 CATEGORY_STATE_FILE = ".i18n_category_state.json"
-CATEGORY = "$CATEGORY"
-PROCESSED_COUNT = $PROCESSED_COUNT
+CATEGORY = sys.argv[1] if len(sys.argv) > 1 else ""
+try:
+    PROCESSED_COUNT = int(sys.argv[2])
+except Exception:
+    PROCESSED_COUNT = 0
 
 # Progresywne czasy skip (w sekundach)
 SKIP_TIMES = [300, 600, 1800, 3600, 7200]  # 5min, 10min, 30min, 1h, 2h
@@ -309,9 +551,19 @@ else:
     print(f"✅ Kategoria '{CATEGORY}': +{PROCESSED_COUNT} (total: {prev_total + PROCESSED_COUNT})")
 
 # Zapisz stan
-with open(CATEGORY_STATE_FILE, 'w') as f:
+tmp_file = CATEGORY_STATE_FILE + ".tmp"
+if os.path.exists(CATEGORY_STATE_FILE):
+    try:
+        shutil.copy2(CATEGORY_STATE_FILE, CATEGORY_STATE_FILE + ".bak")
+    except Exception:
+        pass
+with open(tmp_file, 'w') as f:
     json.dump(state, f, indent=2)
+os.replace(tmp_file, CATEGORY_STATE_FILE)
 CATSTATEPY
+    local rc=$?
+    category_lock_release
+    return $rc
 }
 
 #===============================================================================
@@ -349,23 +601,30 @@ run_with_mini_batch() {
         # Wywołaj funkcję przetwarzania (przekieruj jej output do stderr)
         # UWAGA: process_generic_category ma inny podpis: (category, batch)
         if [ "$process_func" = "process_generic_category" ]; then
-            if ! $process_func "$category" "$current_mini" >&2; then
+            if $process_func "$category" "$current_mini" >&2; then
+                :
+            else
                 local rc=$?
                 echo "   ❌ Mini-batch: $process_func failed (rc=$rc)" >&2
                 status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "mini_batch" "$category" "-" "mini-batch failed rc=$rc" "func=$process_func"
                 break
             fi
-        elif ! $process_func "$current_mini" >&2; then
-            local rc=$?
-            echo "   ❌ Mini-batch: $process_func failed (rc=$rc)" >&2
-            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "mini_batch" "$category" "-" "mini-batch failed rc=$rc" "func=$process_func"
-            break
+        else
+            if $process_func "$current_mini" >&2; then
+                :
+            else
+                local rc=$?
+                echo "   ❌ Mini-batch: $process_func failed (rc=$rc)" >&2
+                status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "mini_batch" "$category" "-" "mini-batch failed rc=$rc" "func=$process_func"
+                break
+            fi
         fi
         
         # Zlicz klucze po
         local keys_after=$(python3 -c "import json,os; print(sum(len(json.load(open(f'i18n/en/{f}'))) for f in os.listdir('i18n/en') if f.endswith('.json')))" 2>/dev/null || echo 0)
         
         local added=$((keys_after - keys_before))
+        [ "$added" -lt 0 ] && added=0
         total_added=$((total_added + added))
         processed=$((processed + current_mini))
         mini_count=$((mini_count + 1))
@@ -1850,21 +2109,48 @@ stage_1() {
     
     [ ! -f "$file" ] && { log "${RED}Plik nie istnieje${NC}"; return 1; }
     
-    local hash=$(md5sum "$file" | cut -d' ' -f1)
+    local hash=""
+    if command -v md5sum >/dev/null 2>&1; then
+        hash=$(md5sum "$file" | cut -d' ' -f1)
+    elif command -v sha256sum >/dev/null 2>&1; then
+        hash=$(sha256sum "$file" | cut -d' ' -f1)
+    elif command -v python3 >/dev/null 2>&1; then
+        hash=$(python3 - "$file" <<'PY'
+import hashlib
+import sys
+
+path = sys.argv[1]
+h = hashlib.md5()
+with open(path, "rb") as f:
+    for chunk in iter(lambda: f.read(8192), b""):
+        h.update(chunk)
+print(h.hexdigest())
+PY
+)
+    else
+        hash="unknown"
+    fi
     local type="other"
     [[ "$file" == *"/npc/"* ]] && type="npc"
     [[ "$file" == *"/scripts/"* ]] && type="scripts"
     
     mkdir -p "$BACKUP_DIR/$type"
-    cp "$file" "$BACKUP_DIR/$type/$(basename $file).bak"
+    cp "$file" "$BACKUP_DIR/$type/$(basename "$file").bak"
     
     # Zapisz do JSON
+    if ! status_lock_acquire; then
+        log "${RED}❌ Brak locka statusu (stage_1)${NC}"
+        return 1
+    fi
     python3 -c "
 import json
+import os
+import shutil
 from datetime import datetime
 
+status_file = '$STATUS_FILE'
 try:
-    with open('$STATUS_FILE', 'r') as f: data = json.load(f)
+    with open(status_file, 'r') as f: data = json.load(f)
 except: data = {'files': {}}
 
 data['files']['$file'] = {
@@ -1874,9 +2160,19 @@ data['files']['$file'] = {
     'overall_status': 'in_progress'
 }
 
-with open('$STATUS_FILE', 'w') as f: json.dump(data, f, indent=2)
+tmp_file = status_file + '.tmp'
+if os.path.exists(status_file):
+    try:
+        shutil.copy2(status_file, status_file + '.bak')
+    except Exception:
+        pass
+with open(tmp_file, 'w') as f: json.dump(data, f, indent=2)
+os.replace(tmp_file, status_file)
 print('OK')
 "
+    local rc=$?
+    status_lock_release
+    [ "$rc" -ne 0 ] && return $rc
     log "${GREEN}✓ Etap 1 OK${NC}: hash=$hash type=$type"
 }
 
@@ -1928,8 +2224,9 @@ stage_2() {
         needs="true"
     fi
     
-    # npcHandler:say wymaga migracji jeśli brak NPC_LIB.i18n.npcSay
-    if [ "$npcsay" -gt 0 ] && [ "$npcsaylib" -eq 0 ]; then
+    # npcHandler:say wymaga migracji jeśli są jakiekolwiek stare wywołania
+    # (nawet jeśli część została już przekonwertowana na NPC_LIB.i18n.npcSay)
+    if [ "$npcsay" -gt 0 ]; then
         needs="true"
     fi
     
@@ -1951,12 +2248,19 @@ stage_2() {
         fi
     fi
     
+    if ! status_lock_acquire; then
+        log "${RED}❌ Brak locka statusu (stage_2)${NC}"
+        return 1
+    fi
     python3 -c "
 import json
+import os
+import shutil
 
 needs_bool = True if '$needs' == 'true' else False
+status_file = '$STATUS_FILE'
 
-with open('$STATUS_FILE', 'r') as f: data = json.load(f)
+with open(status_file, 'r') as f: data = json.load(f)
 
 data['files']['$file']['stages']['2_analysis'] = {
     'status': 'completed',
@@ -1972,9 +2276,19 @@ data['files']['$file']['stages']['2_analysis'] = {
     'needs_migration': needs_bool
 }
 
-with open('$STATUS_FILE', 'w') as f: json.dump(data, f, indent=2)
+tmp_file = status_file + '.tmp'
+if os.path.exists(status_file):
+    try:
+        shutil.copy2(status_file, status_file + '.bak')
+    except Exception:
+        pass
+with open(tmp_file, 'w') as f: json.dump(data, f, indent=2)
+os.replace(tmp_file, status_file)
 print('OK')
 "
+    local rc=$?
+    status_lock_release
+    [ "$rc" -ne 0 ] && return $rc
     log "${GREEN}✓ Etap 2 OK${NC}: StdModule=$stdmod, greet/farewell=$greet_farewell, needs=$needs"
     [ "$needs" = "true" ] && return 0 || return 2
 }
@@ -1989,16 +2303,23 @@ stage_3() {
     local base=$(basename "$file" .lua)
     local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
     local doc_dir="docs/i18n/npc"
+    local backup_file="$BACKUP_DIR/npc/$(basename "$file").bak"
     
     mkdir -p "$doc_dir"
     
+    if ! status_lock_acquire; then
+        log "${RED}❌ Brak locka statusu (stage_3)${NC}"
+        return 1
+    fi
     python3 << EOF
 import json
+import os
 import re
+import shutil
 from datetime import datetime
 
 # Wczytaj backup z oryginalnymi tekstami
-backup_file = "$BACKUP_DIR/npc/$(basename $file).bak"
+backup_file = "$backup_file"
 try:
     with open(backup_file, "r") as f:
         content = f.read()
@@ -2012,7 +2333,7 @@ texts = re.findall(r'text\s*=\s*"([^"]+)"', content)
 doc_file = "$doc_dir/${safe}.md"
 with open(doc_file, "w") as f:
     f.write(f"# NPC: $base\n\n")
-    f.write(f"**Plik:** \`$file\`\n")
+    f.write(f"**Plik:** `$file`\n")
     f.write(f"**Data migracji:** {datetime.now().strftime('%Y-%m-%d %H:%M')}\n")
     f.write(f"**Liczba tekstów:** {len(texts)}\n\n")
     f.write("## Klucze i18n\n\n")
@@ -2021,7 +2342,7 @@ with open(doc_file, "w") as f:
     for i, text in enumerate(texts, 1):
         if len(text) >= 5:
             key = f"npc.$safe.stdmod_{i}"
-            f.write(f"| \`{key}\` | {text[:60]}{'...' if len(text) > 60 else ''} |\n")
+            f.write(f"| `{key}` | {text[:60]}{'...' if len(text) > 60 else ''} |\n")
 
 # Update status
 with open("$STATUS_FILE", "r") as f:
@@ -2031,11 +2352,22 @@ status["files"]["$file"]["stages"]["3_documentation"] = {
     "doc_file": doc_file,
     "keys_documented": len([t for t in texts if len(t) >= 5])
 }
-with open("$STATUS_FILE", "w") as f:
+status_file = "$STATUS_FILE"
+tmp_file = status_file + ".tmp"
+if os.path.exists(status_file):
+    try:
+        shutil.copy2(status_file, status_file + ".bak")
+    except Exception:
+        pass
+with open(tmp_file, "w") as f:
     json.dump(status, f, indent=2)
+os.replace(tmp_file, status_file)
 
 print(f"Utworzono: {doc_file}")
 EOF
+    local rc=$?
+    status_lock_release
+    [ "$rc" -ne 0 ] && return $rc
     
     log "${GREEN}✓ Etap 3 OK${NC}"
     return 0
@@ -2067,60 +2399,784 @@ original_content = content
 total_transformed = 0
 
 #==============================================================================
-# TRANSFORMACJA 1: StdModule.say z text = "..." → i18nKey = "..."
+# TRANSFORMACJA 1: StdModule.say / StdModule.promotePlayer (text=... lub text={...}) → i18nKey
 #==============================================================================
 stdmod_counter = [0]
-
-def replace_stdmod_with_i18n(match):
-    stdmod_counter[0] += 1
-    key = f"npc.{safe_name}.stdmod_{stdmod_counter[0]}"
-    before = match.group(1)
-    after = match.group(3)
-    return f'{before}i18nKey = "{key}"{after}'
-
-# Pattern dla multi-line StdModule.say z text = "..."
-pattern_stdmod = r'(StdModule\.say\s*,\s*\{[^}]*?)text\s*=\s*"([^"]{5,})"([^}]*?\})'
-content = re.sub(pattern_stdmod, replace_stdmod_with_i18n, content, flags=re.DOTALL)
-total_transformed += stdmod_counter[0]
+promote_counter = [0]
 
 #==============================================================================
-# TRANSFORMACJA 2: npcHandler:say("text", npc, creature) → NPC_LIB.i18n.npcSay()
-# Wzorce:
-#   npcHandler:say("Hello world", npc, creature)
-#   npcHandler:say("Hello world", npc, player)
-#   return npcHandler:say("Hello world", npc, creature)
+# TRANSFORMACJA 2: npcHandler:say(...) → NPC_LIB.i18n.npcSay / npcSayMultiple
+# Obsługa:
+#   - literal "..."
+#   - string.format("...", ...)
+#   - konkatenacje "..." .. expr .. "..."
+#   - tablice npcHandler:say({ ... }, npc, creature, delay) lub tablica z npc/creature/delay na końcu
 # NIE transformujemy:
-#   npcHandler:say({...})  - tablice
-#   npcHandler:say("..." .. var ..) - konkatenacje
-#   npcHandler:say(zmienna, ...) - zmienne
+#   - message jako zmienna bez literalów
+#   - wywołania z dodatkowymi parametrami (poza delay przy tablicach)
 #==============================================================================
-npcsay_counter = [0]
+npcsay_calls = 0
+npcsay_keys = 0
+npcsay_concat = 0
+npcsay_arrays = 0
+npcsay_format = 0
+npcsay_simple = 0
 
-# Pattern: opcjonalnie "return ", potem npcHandler:say("prosty tekst bez konkatenacji", npc, creature/player)
-pattern_npcsay = r'((?:return\s+)?)?npcHandler:say\(\s*"([^"]{5,})"\s*,\s*npc\s*,\s*(?:creature|player)\s*\)'
+_STRING_LITERAL_RE = re.compile(
+    r"^(?P<q>['\"])(?P<body>(?:\\.|(?!\1).)*)\1$",
+    re.DOTALL,
+)
+_FMT_SPEC_RE = re.compile(r"%(?:[0-9#+\\-\\.]*)(?:[diuoxXfFeEgGaAcsp])")
 
-# Transformuj wszystkie npcHandler:say("...") - nawet jeśli już są jakieś NPC_LIB w pliku
-if 'npcHandler:say("' in content:
-    # Filtruj - nie transformujemy konkatenacji
-    def safe_replace_npcsay(match):
-        full_match = match.group(0)
-        text = match.group(2) if match.lastindex >= 2 else ""
-        
-        # Pomiń jeśli to konkatenacja (.. przed lub po cudzysłowiu)
-        start = match.start()
-        end = match.end()
-        
-        if '.."' in full_match or '"..' in content[end:end+10]:
-            return full_match  # Nie transformuj konkatenacji
-        
-        npcsay_counter[0] += 1
-        key = f"npc.{safe_name}.say_{npcsay_counter[0]}"
-        prefix = match.group(1) or ""
-        
-        return f'{prefix}NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "{key}")'
-    
-    content = re.sub(pattern_npcsay, safe_replace_npcsay, content)
-    total_transformed += npcsay_counter[0]
+def _scan_matching_paren_in_expr(expr, open_idx):
+    depth = 1
+    i = open_idx + 1
+    in_str = None
+    esc = False
+    while i < len(expr):
+        ch = expr[i]
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\\\":
+                esc = True
+            elif ch == in_str:
+                in_str = None
+            i += 1
+            continue
+        if ch == '"' or ch == "'":
+            in_str = ch
+            i += 1
+            continue
+        if ch == "(":
+            depth += 1
+        elif ch == ")":
+            depth -= 1
+            if depth == 0:
+                return i
+        i += 1
+    return None
+
+def _strip_wrapping_parens(expr):
+    expr = expr.strip()
+    while expr.startswith("(") and expr.endswith(")"):
+        idx = _scan_matching_paren_in_expr(expr, 0)
+        if idx == len(expr) - 1:
+            expr = expr[1:-1].strip()
+        else:
+            break
+    return expr
+
+def _is_comment_call(content, idx):
+    line_start = content.rfind("\n", 0, idx) + 1
+    return "--" in content[line_start:idx]
+
+def _scan_matching_paren(content, open_paren_idx):
+    depth = 1
+    i = open_paren_idx + 1
+    in_str = None
+    esc = False
+    while i < len(content):
+        ch = content[i]
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\\\":
+                esc = True
+            elif ch == in_str:
+                in_str = None
+            i += 1
+            continue
+        if ch == '"' or ch == "'":
+            in_str = ch
+            i += 1
+            continue
+        if ch == "(":
+            depth += 1
+        elif ch == ")":
+            depth -= 1
+            if depth == 0:
+                return i
+        i += 1
+    return None
+
+def _scan_matching_brace(content, open_brace_idx):
+    depth = 1
+    i = open_brace_idx + 1
+    in_str = None
+    esc = False
+    while i < len(content):
+        ch = content[i]
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\\\":
+                esc = True
+            elif ch == in_str:
+                in_str = None
+            i += 1
+            continue
+        if ch == '"' or ch == "'":
+            in_str = ch
+            i += 1
+            continue
+        if ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0:
+                return i
+        i += 1
+    return None
+
+def _split_top_level_args(arg_str):
+    args = []
+    buf = []
+    depth_paren = 0
+    depth_brace = 0
+    depth_bracket = 0
+    in_str = None
+    esc = False
+    i = 0
+    while i < len(arg_str):
+        ch = arg_str[i]
+        if in_str:
+            buf.append(ch)
+            if esc:
+                esc = False
+            elif ch == "\\\\":
+                esc = True
+            elif ch == in_str:
+                in_str = None
+            i += 1
+            continue
+        if ch == '"' or ch == "'":
+            in_str = ch
+            buf.append(ch)
+            i += 1
+            continue
+        if ch == "(":
+            depth_paren += 1
+        elif ch == ")":
+            depth_paren = max(0, depth_paren - 1)
+        elif ch == "{":
+            depth_brace += 1
+        elif ch == "}":
+            depth_brace = max(0, depth_brace - 1)
+        elif ch == "[":
+            depth_bracket += 1
+        elif ch == "]":
+            depth_bracket = max(0, depth_bracket - 1)
+        if ch == "," and depth_paren == 0 and depth_brace == 0 and depth_bracket == 0:
+            args.append("".join(buf).strip())
+            buf = []
+            i += 1
+            continue
+        buf.append(ch)
+        i += 1
+    tail = "".join(buf).strip()
+    if tail:
+        args.append(tail)
+    return args
+
+def _infer_inner_indent(table_block, base_indent):
+    lines = table_block.splitlines()
+    for line in lines[1:]:
+        stripped = line.strip()
+        if stripped and not stripped.startswith("}"):
+            return line[: len(line) - len(line.lstrip())]
+    return base_indent + ("\t" if "\t" in base_indent else "    ")
+
+def _find_table_field_span(table_block, field_name):
+    depth_brace = 0
+    depth_paren = 0
+    depth_bracket = 0
+    in_str = None
+    esc = False
+    i = 0
+    while i < len(table_block):
+        ch = table_block[i]
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\\\":
+                esc = True
+            elif ch == in_str:
+                in_str = None
+            i += 1
+            continue
+        if ch == '"' or ch == "'":
+            in_str = ch
+            i += 1
+            continue
+        if ch == "{":
+            depth_brace += 1
+        elif ch == "}":
+            depth_brace = max(0, depth_brace - 1)
+        elif ch == "(":
+            depth_paren += 1
+        elif ch == ")":
+            depth_paren = max(0, depth_paren - 1)
+        elif ch == "[":
+            depth_bracket += 1
+        elif ch == "]":
+            depth_bracket = max(0, depth_bracket - 1)
+
+        if depth_brace == 1 and depth_paren == 0 and depth_bracket == 0:
+            if table_block.startswith(field_name, i):
+                prev = table_block[i - 1] if i > 0 else " "
+                if prev.isalnum() or prev == "_":
+                    i += 1
+                    continue
+                j = i + len(field_name)
+                while j < len(table_block) and table_block[j].isspace():
+                    j += 1
+                if j >= len(table_block) or table_block[j] != "=":
+                    i += 1
+                    continue
+                k = j + 1
+                while k < len(table_block) and table_block[k].isspace():
+                    k += 1
+                if k >= len(table_block):
+                    return None
+                if table_block[k] == "{":
+                    close_idx = _scan_matching_brace(table_block, k)
+                    if close_idx is None:
+                        return None
+                    return k, close_idx + 1
+
+                depth_p = 0
+                depth_b = 0
+                depth_br = 0
+                in_str2 = None
+                esc2 = False
+                l = k
+                while l < len(table_block):
+                    ch2 = table_block[l]
+                    if in_str2:
+                        if esc2:
+                            esc2 = False
+                        elif ch2 == "\\\\":
+                            esc2 = True
+                        elif ch2 == in_str2:
+                            in_str2 = None
+                        l += 1
+                        continue
+                    if ch2 == '"' or ch2 == "'":
+                        in_str2 = ch2
+                        l += 1
+                        continue
+                    if ch2 == "(":
+                        depth_p += 1
+                    elif ch2 == ")":
+                        depth_p = max(0, depth_p - 1)
+                    elif ch2 == "{":
+                        depth_b += 1
+                    elif ch2 == "}":
+                        if depth_b == 0 and depth_p == 0 and depth_br == 0:
+                            return k, l
+                        depth_b = max(0, depth_b - 1)
+                    elif ch2 == "[":
+                        depth_br += 1
+                    elif ch2 == "]":
+                        depth_br = max(0, depth_br - 1)
+                    if ch2 == "," and depth_b == 0 and depth_p == 0 and depth_br == 0:
+                        return k, l
+                    l += 1
+                return k, len(table_block)
+        i += 1
+    return None
+
+def _collect_module_tables(content, module_name):
+    tables = []
+    start = 0
+    while True:
+        idx = content.find(module_name, start)
+        if idx == -1:
+            break
+        if _is_comment_call(content, idx):
+            start = idx + len(module_name)
+            continue
+        line_start = content.rfind("\n", 0, idx) + 1
+        line_prefix = content[line_start:idx]
+        if re.search(r"\\bfunction\\s+" + re.escape(module_name) + r"\\b", line_prefix):
+            start = idx + len(module_name)
+            continue
+        p = idx + len(module_name)
+        while p < len(content) and content[p].isspace():
+            p += 1
+        if p >= len(content) or content[p] != ",":
+            start = idx + len(module_name)
+            continue
+        p += 1
+        while p < len(content) and content[p].isspace():
+            p += 1
+        if p >= len(content) or content[p] != "{":
+            start = idx + len(module_name)
+            continue
+        brace_start = p
+        brace_end = _scan_matching_brace(content, brace_start)
+        if brace_end is None:
+            start = idx + len(module_name)
+            continue
+        tables.append((brace_start, brace_end))
+        start = brace_end + 1
+    return tables
+
+def _parse_index_expr(expr):
+    expr = expr.strip()
+    m = re.match(r"^([A-Za-z_][A-Za-z0-9_]*)\\s*\\[(.+)\\]\\s*$", expr, re.DOTALL)
+    if not m:
+        return None
+    return {"var": m.group(1), "index": m.group(2).strip()}
+
+def _collect_literal_tables(content):
+    tables = {}
+    pattern = re.compile(r"(^[ \\t]*)(local\\s+)?([A-Za-z_][A-Za-z0-9_]*)\\s*=\\s*\\{", re.MULTILINE)
+    for m in pattern.finditer(content):
+        name = m.group(3)
+        if name.endswith("_i18n"):
+            continue
+        brace_start = m.end() - 1
+        brace_end = _scan_matching_brace(content, brace_start)
+        if brace_end is None:
+            continue
+        table_block = content[brace_start:brace_end + 1]
+        inner = table_block[1:-1].strip()
+        if not inner:
+            continue
+        elements = [e.strip() for e in _split_top_level_args(inner) if e.strip()]
+        if not elements:
+            continue
+        texts = []
+        ok = True
+        for elem in elements:
+            lit = _extract_string_literal(elem)
+            if lit is None:
+                ok = False
+                break
+            texts.append(lit)
+        if not ok:
+            continue
+        indent = m.group(1) or ""
+        is_local = bool(m.group(2))
+        inner_indent = _infer_inner_indent(table_block, indent)
+        tables[name] = {
+            "texts": texts,
+            "indent": indent,
+            "inner_indent": inner_indent,
+            "is_local": is_local,
+        }
+    return tables
+
+def _build_i18n_table_def(var_name, info, safe_name):
+    indent = info["indent"]
+    inner_indent = info["inner_indent"]
+    prefix = "local " if info["is_local"] else ""
+    lines = [f"{indent}{prefix}{var_name}_i18n = {{"]
+    for i in range(1, len(info["texts"]) + 1):
+        key = f"npc.{safe_name}.{var_name}_{i}"
+        lines.append(f'{inner_indent}"{key}",')
+    lines.append(f"{indent}}}")
+    return "\n".join(lines) + "\n"
+
+def _find_table_definition(content, var_name):
+    pattern = re.compile(r"(^[ \\t]*)(local\\s+)?%s\\s*=\\s*\\{" % re.escape(var_name), re.MULTILINE)
+    m = pattern.search(content)
+    if not m:
+        return None
+    brace_start = m.end() - 1
+    brace_end = _scan_matching_brace(content, brace_start)
+    if brace_end is None:
+        return None
+    table_block = content[brace_start:brace_end + 1]
+    return {
+        "brace_end": brace_end,
+        "indent": m.group(1) or "",
+        "inner_indent": _infer_inner_indent(table_block, m.group(1) or ""),
+        "is_local": bool(m.group(2)),
+        "table_block": table_block,
+    }
+
+def _insert_i18n_tables(content, literal_tables, used_names, safe_name):
+    insertions = []
+    for name in sorted(used_names):
+        if re.search(r"\\b" + re.escape(name) + r"_i18n\\s*=", content):
+            continue
+        info = literal_tables.get(name)
+        if not info:
+            continue
+        defn = _find_table_definition(content, name)
+        if not defn:
+            continue
+        info = dict(info)
+        info["indent"] = defn["indent"]
+        info["inner_indent"] = defn["inner_indent"]
+        info["is_local"] = defn["is_local"]
+        table_def = _build_i18n_table_def(name, info, safe_name)
+        pos = defn["brace_end"] + 1
+        pad = "\n"
+        if pos < len(content) and content[pos:pos + 1] in "\r\n":
+            pad = ""
+        insertions.append((pos, pad + table_def))
+    if insertions:
+        for pos, text in sorted(insertions, key=lambda x: x[0], reverse=True):
+            content = content[:pos] + text + content[pos:]
+    return content
+
+def _extract_string_literal(expr):
+    expr = _strip_wrapping_parens(expr)
+    m = _STRING_LITERAL_RE.match(expr)
+    if not m:
+        return None
+    return m.group("body")
+
+def _printf_to_braces(s):
+    s = s.replace("%%", "%")
+    return _FMT_SPEC_RE.sub("{}", s)
+
+def _split_concat(expr):
+    parts = []
+    buf = []
+    depth_paren = 0
+    depth_brace = 0
+    depth_bracket = 0
+    in_str = None
+    esc = False
+    i = 0
+    while i < len(expr):
+        ch = expr[i]
+        if in_str:
+            buf.append(ch)
+            if esc:
+                esc = False
+            elif ch == "\\\\":
+                esc = True
+            elif ch == in_str:
+                in_str = None
+            i += 1
+            continue
+        if ch == '"' or ch == "'":
+            in_str = ch
+            buf.append(ch)
+            i += 1
+            continue
+        if ch == "(":
+            depth_paren += 1
+        elif ch == ")":
+            depth_paren = max(0, depth_paren - 1)
+        elif ch == "{":
+            depth_brace += 1
+        elif ch == "}":
+            depth_brace = max(0, depth_brace - 1)
+        elif ch == "[":
+            depth_bracket += 1
+        elif ch == "]":
+            depth_bracket = max(0, depth_bracket - 1)
+        if depth_paren == 0 and depth_brace == 0 and depth_bracket == 0 and ch == ".":
+            if i + 1 < len(expr) and expr[i + 1] == ".":
+                if i + 2 < len(expr) and expr[i + 2] == ".":
+                    buf.append(ch)
+                    i += 1
+                    continue
+                parts.append("".join(buf).strip())
+                buf = []
+                i += 2
+                continue
+        buf.append(ch)
+        i += 1
+    tail = "".join(buf).strip()
+    if tail:
+        parts.append(tail)
+    return [p for p in parts if p]
+
+def _has_top_level_bool_or_compare(expr):
+    depth_paren = 0
+    depth_brace = 0
+    depth_bracket = 0
+    in_str = None
+    esc = False
+    i = 0
+    while i < len(expr):
+        ch = expr[i]
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\\\":
+                esc = True
+            elif ch == in_str:
+                in_str = None
+            i += 1
+            continue
+        if ch == '"' or ch == "'":
+            in_str = ch
+            i += 1
+            continue
+        if ch == "(":
+            depth_paren += 1
+            i += 1
+            continue
+        if ch == ")":
+            depth_paren = max(0, depth_paren - 1)
+            i += 1
+            continue
+        if ch == "{":
+            depth_brace += 1
+            i += 1
+            continue
+        if ch == "}":
+            depth_brace = max(0, depth_brace - 1)
+            i += 1
+            continue
+        if ch == "[":
+            depth_bracket += 1
+            i += 1
+            continue
+        if ch == "]":
+            depth_bracket = max(0, depth_bracket - 1)
+            i += 1
+            continue
+        if depth_paren == 0 and depth_brace == 0 and depth_bracket == 0:
+            if expr.startswith("==", i) or expr.startswith("~=", i) or expr.startswith("<=", i) or expr.startswith(">=", i):
+                return True
+            if ch == "<" or ch == ">":
+                return True
+            if expr.startswith("and", i):
+                prev = expr[i - 1] if i > 0 else " "
+                nxt = expr[i + 3] if i + 3 < len(expr) else " "
+                if not (prev.isalnum() or prev == "_") and not (nxt.isalnum() or nxt == "_"):
+                    return True
+            if expr.startswith("or", i):
+                prev = expr[i - 1] if i > 0 else " "
+                nxt = expr[i + 2] if i + 2 < len(expr) else " "
+                if not (prev.isalnum() or prev == "_") and not (nxt.isalnum() or nxt == "_"):
+                    return True
+        i += 1
+    return False
+
+def _normalize_text(text):
+    return " ".join(text.split())
+
+def _parse_string_format(expr):
+    expr = _strip_wrapping_parens(expr)
+    m = re.match(r"^string\\.format\\s*\\((.*)\\)\\s*$", expr, re.DOTALL)
+    if not m:
+        return None
+    inner = m.group(1)
+    parts = _split_top_level_args(inner)
+    if not parts:
+        return None
+    fmt_literal = _extract_string_literal(parts[0])
+    if fmt_literal is None:
+        return None
+    translation = _printf_to_braces(fmt_literal)
+    args = [p.strip() for p in parts[1:] if p.strip()]
+    return {"text": translation, "args": args, "kind": "format"}
+
+def _parse_concat(expr):
+    expr = _strip_wrapping_parens(expr)
+    parts = _split_concat(expr)
+    if len(parts) <= 1:
+        return None
+    text_parts = []
+    args = []
+    literal_seen = False
+    for part in parts:
+        lit = _extract_string_literal(part)
+        if lit is not None:
+            text_parts.append(lit)
+            literal_seen = True
+        else:
+            text_parts.append("{}")
+            args.append(part.strip())
+    if not literal_seen:
+        return None
+    translation = "".join(text_parts)
+    return {"text": translation, "args": args, "kind": "concat"}
+
+def _parse_message_expr(expr):
+    expr = expr.strip()
+    if not expr:
+        return None
+    literal = _extract_string_literal(expr)
+    if literal is not None:
+        return {"text": literal, "args": [], "kind": "literal"}
+    fmt = _parse_string_format(expr)
+    if fmt:
+        return fmt
+    concat = _parse_concat(expr)
+    if concat:
+        return concat
+    return None
+
+def _is_target_expr(expr):
+    return expr in ("creature", "player")
+
+def _is_delay_expr(expr):
+    if re.match(r"^\\d+(?:\\.\\d+)?$", expr):
+        return True
+    return re.match(r"^[A-Za-z_][A-Za-z0-9_]*$", expr) is not None
+
+def _parse_table_expr(expr):
+    expr = expr.strip()
+    if not (expr.startswith("{") and expr.endswith("}")):
+        return None
+    inner = expr[1:-1].strip()
+    elements = [e.strip() for e in _split_top_level_args(inner) if e.strip()]
+    npc_arg = None
+    target_arg = None
+    delay_arg = None
+    if len(elements) >= 3 and _is_delay_expr(elements[-1]) and _is_target_expr(elements[-2]) and elements[-3] == "npc":
+        delay_arg = elements[-1]
+        target_arg = elements[-2]
+        npc_arg = elements[-3]
+        elements = elements[:-3]
+    elif len(elements) >= 2 and _is_target_expr(elements[-1]) and elements[-2] == "npc":
+        target_arg = elements[-1]
+        npc_arg = elements[-2]
+        elements = elements[:-2]
+    return elements, npc_arg, target_arg, delay_arg
+
+def _collect_npcsay_calls(content):
+    calls = []
+    needle = "npcHandler:say"
+    start = 0
+    while True:
+        idx = content.find(needle, start)
+        if idx == -1:
+            break
+        if content.startswith("npcHandler:sayLocalized", idx):
+            start = idx + len(needle)
+            continue
+        if _is_comment_call(content, idx):
+            start = idx + len(needle)
+            continue
+        p = idx + len(needle)
+        while p < len(content) and content[p].isspace():
+            p += 1
+        if p >= len(content) or content[p] != "(":
+            start = idx + len(needle)
+            continue
+        close_idx = _scan_matching_paren(content, p)
+        if close_idx is None:
+            start = idx + len(needle)
+            continue
+        calls.append((idx, p, close_idx))
+        start = close_idx + 1
+    return calls
+
+def _build_npcsay_replacements(content, safe_name):
+    replacements = []
+    say_index = 0
+    call_counts = {"simple": 0, "format": 0, "concat": 0, "array": 0, "keys": 0}
+
+    calls = _collect_npcsay_calls(content)
+    for idx, open_idx, close_idx in calls:
+        args_str = content[open_idx + 1 : close_idx]
+        args = _split_top_level_args(args_str)
+        if not args:
+            continue
+        msg_expr = args[0].strip()
+        table_info = _parse_table_expr(msg_expr)
+        if table_info is not None:
+            table_elements, table_npc, table_target, table_delay = table_info
+            npc_arg = None
+            target_arg = None
+            delay_arg = None
+            if len(args) >= 3:
+                npc_arg = args[1].strip()
+                target_arg = args[2].strip()
+                if len(args) >= 4:
+                    delay_arg = args[3].strip()
+                if len(args) > 4:
+                    continue
+            else:
+                npc_arg = table_npc
+                target_arg = table_target
+                delay_arg = table_delay
+
+            if not npc_arg or not target_arg:
+                continue
+
+            parsed_entries = []
+            ok = True
+            for elem in table_elements:
+                info = _parse_message_expr(elem)
+                if not info:
+                    ok = False
+                    break
+                text_clean = _normalize_text(info["text"])
+                if not text_clean:
+                    ok = False
+                    break
+                parsed_entries.append(info)
+            if not ok or not parsed_entries:
+                continue
+
+            entries = []
+            for info in parsed_entries:
+                say_index += 1
+                key = f"npc.{safe_name}.say_{say_index}"
+                call_counts["keys"] += 1
+                if info["args"]:
+                    args_table = "{ " + ", ".join(info["args"]) + " }"
+                    entries.append(f'{{ "{key}", {args_table} }}')
+                else:
+                    entries.append(f'"{key}"')
+
+            keys_table = "{ " + ", ".join(entries) + " }"
+            new_call = f"NPC_LIB.i18n.npcSayMultiple(npcHandler, {npc_arg}, {target_arg}, {keys_table}"
+            if delay_arg:
+                new_call += f", {delay_arg}"
+            new_call += ")"
+
+            replacements.append((idx, close_idx + 1, new_call))
+            call_counts["array"] += 1
+            continue
+
+        info = _parse_message_expr(msg_expr)
+        if not info:
+            continue
+
+        if len(args) < 3:
+            continue
+        if len(args) > 3:
+            continue
+
+        text_clean = _normalize_text(info["text"])
+        if len(text_clean) < 5:
+            continue
+
+        npc_arg = args[1].strip()
+        target_arg = args[2].strip()
+
+        say_index += 1
+        key = f"npc.{safe_name}.say_{say_index}"
+        call_counts["keys"] += 1
+
+        if info["args"]:
+            args_table = "{ " + ", ".join(info["args"]) + " }"
+            new_call = f'NPC_LIB.i18n.npcSay(npcHandler, {npc_arg}, {target_arg}, "{key}", {args_table})'
+        else:
+            new_call = f'NPC_LIB.i18n.npcSay(npcHandler, {npc_arg}, {target_arg}, "{key}")'
+
+        replacements.append((idx, close_idx + 1, new_call))
+        call_counts[info["kind"]] += 1
+
+    return replacements, call_counts
+
+if "npcHandler:say" in content:
+    replacements, call_counts = _build_npcsay_replacements(content, safe_name)
+    if replacements:
+        for start, end, new_call in sorted(replacements, key=lambda x: x[0], reverse=True):
+            content = content[:start] + new_call + content[end:]
+        npcsay_calls = call_counts["simple"] + call_counts["format"] + call_counts["concat"] + call_counts["array"]
+        npcsay_keys = call_counts["keys"]
+        npcsay_simple = call_counts["simple"]
+        npcsay_format = call_counts["format"]
+        npcsay_concat = call_counts["concat"]
+        npcsay_arrays = call_counts["array"]
+        total_transformed += npcsay_calls
 
 #==============================================================================
 # TRANSFORMACJA 3: addGreetKeyword/addFarewellKeyword text = "..." → i18nKey = "..."
@@ -2229,7 +3285,7 @@ voices_total = voices_counter[0]
 if total_transformed > 0 and content != original_content:
     with open(file_path, 'w') as f:
         f.write(content)
-    print(f"{total_transformed}|{stdmod_counter[0]}|{npcsay_counter[0]}|{greet_fare_total}|{voices_total}")
+    print(f"{total_transformed}|{stdmod_counter[0]}|{npcsay_calls}|{greet_fare_total}|{voices_total}")
 else:
     print("0|0|0|0|0")
 TRANSFORM_PY
@@ -2247,6 +3303,10 @@ TRANSFORM_PY
     [ -z "$npcsay_t" ] && npcsay_t=0
     [ -z "$greetfare_t" ] && greetfare_t=0
     [ -z "$voices_t" ] && voices_t=0
+
+    if [ "${I18N_DEBUG_STAGE4:-0}" = "1" ]; then
+        printf '%s\n' "stage_4: file=$file total=$total_t stdmod=$stdmod_t npcsay=$npcsay_t greetfare=$greetfare_t voices=$voices_t" >> /tmp/i18n_debug.log
+    fi
     
     if [ "$total_t" -gt 0 ] 2>/dev/null; then
         log "${GREEN}✓ Etap 4 OK${NC}: StdModule=$stdmod_t, npcHandler:say=$npcsay_t, greet/farewell=$greetfare_t, voices=$voices_t, Total=$total_t"
@@ -2255,17 +3315,34 @@ TRANSFORM_PY
         log "${YELLOW}⏭ Etap 4${NC}: Brak zmian"
     fi
     
+    if ! status_lock_acquire; then
+        log "${RED}❌ Brak locka statusu (stage_4)${NC}"
+        return 1
+    fi
     python3 -c "
 import json
-with open('$STATUS_FILE', 'r') as f: data = json.load(f)
+import os
+import shutil
+status_file = '$STATUS_FILE'
+with open(status_file, 'r') as f: data = json.load(f)
 data['files']['$file']['stages']['4_transformation'] = {
     'status': 'completed', 
     'transformed': $total_t,
     'stdmod_transformed': $stdmod_t,
     'npcsay_transformed': $npcsay_t
 }
-with open('$STATUS_FILE', 'w') as f: json.dump(data, f, indent=2)
+tmp_file = status_file + '.tmp'
+if os.path.exists(status_file):
+    try:
+        shutil.copy2(status_file, status_file + '.bak')
+    except Exception:
+        pass
+with open(tmp_file, 'w') as f: json.dump(data, f, indent=2)
+os.replace(tmp_file, status_file)
 "
+    local rc=$?
+    status_lock_release
+    [ "$rc" -ne 0 ] && return $rc
     return 0
 }
 
@@ -2283,13 +3360,19 @@ stage_5() {
     local type="npc"
     [[ "$file" == *"/scripts/"* ]] && type="scripts"
     
-    local backup="$BACKUP_DIR/$type/$(basename $file).bak"
+    local backup="$BACKUP_DIR/$type/$(basename "$file").bak"
     [ ! -f "$backup" ] && { log "${RED}Brak backupu${NC}"; return 1; }
     
     # Wyciągnij teksty z backupu i dodaj do JSON
+    if ! status_lock_acquire; then
+        log "${RED}❌ Brak locka statusu (stage_5)${NC}"
+        return 1
+    fi
     python3 << EOF
 import json
+import os
 import re
+import shutil
 
 # Wczytaj backup (oryginalne teksty przed transformacją)
 with open("$backup", "r") as f:
@@ -2326,26 +3409,441 @@ for i, text in enumerate(texts_stdmod, 1):
             stdmod_count += 1
 
 #==============================================================================
-# EKSTRAKCJA 2: npcHandler:say("text", npc, creature/player)
-# Multi-line aware - tekst może być rozciągnięty na wiele linii w pliku
+# EKSTRAKCJA 2: npcHandler:say(...) (literal / concat / format / arrays)
 #==============================================================================
-# Pattern dla npcHandler:say("tekst", npc, creature/player)
-# Szuka całego wywołania z tekstem
-pattern_npcsay = r'npcHandler:say\(\s*"([^"]+)"\s*,\s*npc\s*,\s*(?:creature|player)\s*\)'
-texts_npcsay = re.findall(pattern_npcsay, content, re.DOTALL)
+_STRING_LITERAL_RE = re.compile(
+    r"^(?P<q>['\"])(?P<body>(?:\\.|(?!\1).)*)\1$",
+    re.DOTALL,
+)
+_FMT_SPEC_RE = re.compile(r"%(?:[0-9#+\\-\\.]*)(?:[diuoxXfFeEgGaAcsp])")
 
-for i, text in enumerate(texts_npcsay, 1):
-    # Wyczyść ewentualne newline'y w tekście (artifact zawijania linii)
-    text_clean = ' '.join(text.split())
-    
-    # Pomiń konkatenacje Lua (np. " .. variable .. ") ale NIE wielokropki (...)
-    # Konkatenacja Lua to " .. " ze spacjami, wielokropek to "..."
-    if ' .. ' not in text_clean and len(text_clean) >= 5:
-        key = f"npc.$safe.say_{i}"
-        if key not in data:
-            data[key] = text_clean
-            added += 1
-            npcsay_count += 1
+def _scan_matching_paren_in_expr(expr, open_idx):
+    depth = 1
+    i = open_idx + 1
+    in_str = None
+    esc = False
+    while i < len(expr):
+        ch = expr[i]
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\\\":
+                esc = True
+            elif ch == in_str:
+                in_str = None
+            i += 1
+            continue
+        if ch == '"' or ch == "'":
+            in_str = ch
+            i += 1
+            continue
+        if ch == "(":
+            depth += 1
+        elif ch == ")":
+            depth -= 1
+            if depth == 0:
+                return i
+        i += 1
+    return None
+
+def _strip_wrapping_parens(expr):
+    expr = expr.strip()
+    while expr.startswith("(") and expr.endswith(")"):
+        idx = _scan_matching_paren_in_expr(expr, 0)
+        if idx == len(expr) - 1:
+            expr = expr[1:-1].strip()
+        else:
+            break
+    return expr
+
+def _is_comment_call(content, idx):
+    line_start = content.rfind("\n", 0, idx) + 1
+    return "--" in content[line_start:idx]
+
+def _scan_matching_paren(content, open_paren_idx):
+    depth = 1
+    i = open_paren_idx + 1
+    in_str = None
+    esc = False
+    while i < len(content):
+        ch = content[i]
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\\\":
+                esc = True
+            elif ch == in_str:
+                in_str = None
+            i += 1
+            continue
+        if ch == '"' or ch == "'":
+            in_str = ch
+            i += 1
+            continue
+        if ch == "(":
+            depth += 1
+        elif ch == ")":
+            depth -= 1
+            if depth == 0:
+                return i
+        i += 1
+    return None
+
+def _split_top_level_args(arg_str):
+    args = []
+    buf = []
+    depth_paren = 0
+    depth_brace = 0
+    depth_bracket = 0
+    in_str = None
+    esc = False
+    i = 0
+    while i < len(arg_str):
+        ch = arg_str[i]
+        if in_str:
+            buf.append(ch)
+            if esc:
+                esc = False
+            elif ch == "\\\\":
+                esc = True
+            elif ch == in_str:
+                in_str = None
+            i += 1
+            continue
+        if ch == '"' or ch == "'":
+            in_str = ch
+            buf.append(ch)
+            i += 1
+            continue
+        if ch == "(":
+            depth_paren += 1
+        elif ch == ")":
+            depth_paren = max(0, depth_paren - 1)
+        elif ch == "{":
+            depth_brace += 1
+        elif ch == "}":
+            depth_brace = max(0, depth_brace - 1)
+        elif ch == "[":
+            depth_bracket += 1
+        elif ch == "]":
+            depth_bracket = max(0, depth_bracket - 1)
+        if ch == "," and depth_paren == 0 and depth_brace == 0 and depth_bracket == 0:
+            args.append("".join(buf).strip())
+            buf = []
+            i += 1
+            continue
+        buf.append(ch)
+        i += 1
+    tail = "".join(buf).strip()
+    if tail:
+        args.append(tail)
+    return args
+
+def _extract_string_literal(expr):
+    expr = _strip_wrapping_parens(expr)
+    m = _STRING_LITERAL_RE.match(expr)
+    if not m:
+        return None
+    return m.group("body")
+
+def _printf_to_braces(s):
+    s = s.replace("%%", "%")
+    return _FMT_SPEC_RE.sub("{}", s)
+
+def _split_concat(expr):
+    parts = []
+    buf = []
+    depth_paren = 0
+    depth_brace = 0
+    depth_bracket = 0
+    in_str = None
+    esc = False
+    i = 0
+    while i < len(expr):
+        ch = expr[i]
+        if in_str:
+            buf.append(ch)
+            if esc:
+                esc = False
+            elif ch == "\\\\":
+                esc = True
+            elif ch == in_str:
+                in_str = None
+            i += 1
+            continue
+        if ch == '"' or ch == "'":
+            in_str = ch
+            buf.append(ch)
+            i += 1
+            continue
+        if ch == "(":
+            depth_paren += 1
+        elif ch == ")":
+            depth_paren = max(0, depth_paren - 1)
+        elif ch == "{":
+            depth_brace += 1
+        elif ch == "}":
+            depth_brace = max(0, depth_brace - 1)
+        elif ch == "[":
+            depth_bracket += 1
+        elif ch == "]":
+            depth_bracket = max(0, depth_bracket - 1)
+        if depth_paren == 0 and depth_brace == 0 and depth_bracket == 0 and ch == ".":
+            if i + 1 < len(expr) and expr[i + 1] == ".":
+                if i + 2 < len(expr) and expr[i + 2] == ".":
+                    buf.append(ch)
+                    i += 1
+                    continue
+                parts.append("".join(buf).strip())
+                buf = []
+                i += 2
+                continue
+        buf.append(ch)
+        i += 1
+    tail = "".join(buf).strip()
+    if tail:
+        parts.append(tail)
+    return [p for p in parts if p]
+
+def _has_top_level_bool_or_compare(expr):
+    depth_paren = 0
+    depth_brace = 0
+    depth_bracket = 0
+    in_str = None
+    esc = False
+    i = 0
+    while i < len(expr):
+        ch = expr[i]
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\\\":
+                esc = True
+            elif ch == in_str:
+                in_str = None
+            i += 1
+            continue
+        if ch == '"' or ch == "'":
+            in_str = ch
+            i += 1
+            continue
+        if ch == "(":
+            depth_paren += 1
+            i += 1
+            continue
+        if ch == ")":
+            depth_paren = max(0, depth_paren - 1)
+            i += 1
+            continue
+        if ch == "{":
+            depth_brace += 1
+            i += 1
+            continue
+        if ch == "}":
+            depth_brace = max(0, depth_brace - 1)
+            i += 1
+            continue
+        if ch == "[":
+            depth_bracket += 1
+            i += 1
+            continue
+        if ch == "]":
+            depth_bracket = max(0, depth_bracket - 1)
+            i += 1
+            continue
+        if depth_paren == 0 and depth_brace == 0 and depth_bracket == 0:
+            if expr.startswith("==", i) or expr.startswith("~=", i) or expr.startswith("<=", i) or expr.startswith(">=", i):
+                return True
+            if ch == "<" or ch == ">":
+                return True
+            if expr.startswith("and", i):
+                prev = expr[i - 1] if i > 0 else " "
+                nxt = expr[i + 3] if i + 3 < len(expr) else " "
+                if not (prev.isalnum() or prev == "_") and not (nxt.isalnum() or nxt == "_"):
+                    return True
+            if expr.startswith("or", i):
+                prev = expr[i - 1] if i > 0 else " "
+                nxt = expr[i + 2] if i + 2 < len(expr) else " "
+                if not (prev.isalnum() or prev == "_") and not (nxt.isalnum() or nxt == "_"):
+                    return True
+        i += 1
+    return False
+
+def _normalize_text(text):
+    return " ".join(text.split())
+
+def _parse_string_format(expr):
+    expr = _strip_wrapping_parens(expr)
+    m = re.match(r"^string\\.format\\s*\\((.*)\\)\\s*$", expr, re.DOTALL)
+    if not m:
+        return None
+    inner = m.group(1)
+    parts = _split_top_level_args(inner)
+    if not parts:
+        return None
+    fmt_literal = _extract_string_literal(parts[0])
+    if fmt_literal is None:
+        return None
+    translation = _printf_to_braces(fmt_literal)
+    args = [p.strip() for p in parts[1:] if p.strip()]
+    return {"text": translation, "args": args, "kind": "format"}
+
+def _parse_concat(expr):
+    expr = _strip_wrapping_parens(expr)
+    if _has_top_level_bool_or_compare(expr):
+        return None
+    parts = _split_concat(expr)
+    if len(parts) <= 1:
+        return None
+    text_parts = []
+    args = []
+    literal_seen = False
+    for part in parts:
+        lit = _extract_string_literal(part)
+        if lit is not None:
+            text_parts.append(lit)
+            literal_seen = True
+        else:
+            text_parts.append("{}")
+            args.append(part.strip())
+    if not literal_seen:
+        return None
+    translation = "".join(text_parts)
+    return {"text": translation, "args": args, "kind": "concat"}
+
+def _parse_message_expr(expr):
+    expr = expr.strip()
+    if not expr:
+        return None
+    literal = _extract_string_literal(expr)
+    if literal is not None:
+        return {"text": literal, "args": [], "kind": "literal"}
+    fmt = _parse_string_format(expr)
+    if fmt:
+        return fmt
+    concat = _parse_concat(expr)
+    if concat:
+        return concat
+    return None
+
+def _is_target_expr(expr):
+    return expr in ("creature", "player")
+
+def _is_delay_expr(expr):
+    if re.match(r"^\\d+(?:\\.\\d+)?$", expr):
+        return True
+    return re.match(r"^[A-Za-z_][A-Za-z0-9_]*$", expr) is not None
+
+def _parse_table_expr(expr):
+    expr = expr.strip()
+    if not (expr.startswith("{") and expr.endswith("}")):
+        return None
+    inner = expr[1:-1].strip()
+    elements = [e.strip() for e in _split_top_level_args(inner) if e.strip()]
+    npc_arg = None
+    target_arg = None
+    delay_arg = None
+    if len(elements) >= 3 and _is_delay_expr(elements[-1]) and _is_target_expr(elements[-2]) and elements[-3] == "npc":
+        delay_arg = elements[-1]
+        target_arg = elements[-2]
+        npc_arg = elements[-3]
+        elements = elements[:-3]
+    elif len(elements) >= 2 and _is_target_expr(elements[-1]) and elements[-2] == "npc":
+        target_arg = elements[-1]
+        npc_arg = elements[-2]
+        elements = elements[:-2]
+    return elements, npc_arg, target_arg, delay_arg
+
+def _collect_npcsay_calls(content):
+    calls = []
+    needle = "npcHandler:say"
+    start = 0
+    while True:
+        idx = content.find(needle, start)
+        if idx == -1:
+            break
+        if content.startswith("npcHandler:sayLocalized", idx):
+            start = idx + len(needle)
+            continue
+        if _is_comment_call(content, idx):
+            start = idx + len(needle)
+            continue
+        p = idx + len(needle)
+        while p < len(content) and content[p].isspace():
+            p += 1
+        if p >= len(content) or content[p] != "(":
+            start = idx + len(needle)
+            continue
+        close_idx = _scan_matching_paren(content, p)
+        if close_idx is None:
+            start = idx + len(needle)
+            continue
+        calls.append((idx, p, close_idx))
+        start = close_idx + 1
+    return calls
+
+say_index = 0
+calls = _collect_npcsay_calls(content)
+for idx, open_idx, close_idx in calls:
+    args_str = content[open_idx + 1 : close_idx]
+    args = _split_top_level_args(args_str)
+    if not args:
+        continue
+    msg_expr = args[0].strip()
+    table_info = _parse_table_expr(msg_expr)
+    if table_info is not None:
+        table_elements, table_npc, table_target, _table_delay = table_info
+        npc_arg = None
+        target_arg = None
+        if len(args) >= 3:
+            if len(args) > 4:
+                continue
+            npc_arg = args[1].strip()
+            target_arg = args[2].strip()
+        else:
+            npc_arg = table_npc
+            target_arg = table_target
+        if not npc_arg or not target_arg:
+            continue
+
+        parsed_entries = []
+        ok = True
+        for elem in table_elements:
+            info = _parse_message_expr(elem)
+            if not info:
+                ok = False
+                break
+            text_clean = _normalize_text(info["text"])
+            if not text_clean:
+                ok = False
+                break
+            parsed_entries.append(text_clean)
+        if not ok or not parsed_entries:
+            continue
+
+        for text_clean in parsed_entries:
+            say_index += 1
+            key = f"npc.$safe.say_{say_index}"
+            if key not in data:
+                data[key] = text_clean
+                added += 1
+                npcsay_count += 1
+        continue
+
+    info = _parse_message_expr(msg_expr)
+    if not info:
+        continue
+    if len(args) < 3 or len(args) > 3:
+        continue
+    text_clean = _normalize_text(info["text"])
+    if len(text_clean) < 5:
+        continue
+    say_index += 1
+    key = f"npc.$safe.say_{say_index}"
+    if key not in data:
+        data[key] = text_clean
+        added += 1
+        npcsay_count += 1
 
 #==============================================================================
 # EKSTRAKCJA 3: addGreetKeyword/addFarewellKeyword text = "..."
@@ -2415,9 +3913,20 @@ status["files"]["$file"]["stages"]["5_extraction_en"] = {
     "farewell_keys": farewell_count,
     "voices_keys": voices_count
 }
-with open("$STATUS_FILE", "w") as f:
+status_file = "$STATUS_FILE"
+tmp_file = status_file + ".tmp"
+if os.path.exists(status_file):
+    try:
+        shutil.copy2(status_file, status_file + ".bak")
+    except Exception:
+        pass
+with open(tmp_file, "w") as f:
     json.dump(status, f, indent=2)
+os.replace(tmp_file, status_file)
 EOF
+    local rc=$?
+    status_lock_release
+    [ "$rc" -ne 0 ] && return $rc
     
     log "${GREEN}✓ Etap 5 OK${NC}"
     return 0
@@ -2434,9 +3943,14 @@ stage_6() {
     local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
     
     # Etap 6 tylko tworzy placeholdery [LANG] - prawdziwe tłumaczenia w trybie TRANSLATION
+    if ! status_lock_acquire; then
+        log "${RED}❌ Brak locka statusu (stage_6)${NC}"
+        return 1
+    fi
     python3 << PYEOF
 import json
 import os
+import shutil
 
 safe_name = "$safe"
 status_file = "$STATUS_FILE"
@@ -2495,11 +4009,21 @@ status["files"][file_path]["stages"]["6_placeholder"] = {
     "keys_per_lang": len(npc_keys),
     "note": "Placeholdery - do przetłumaczenia w trybie --translate"
 }
-with open(status_file, "w") as f:
+tmp_file = status_file + ".tmp"
+if os.path.exists(status_file):
+    try:
+        shutil.copy2(status_file, status_file + ".bak")
+    except Exception:
+        pass
+with open(tmp_file, "w") as f:
     json.dump(status, f, indent=2)
+os.replace(tmp_file, status_file)
 
 print(f"Placeholdery: {len(langs_done)} języków, {len(npc_keys)} kluczy każdy")
 PYEOF
+    local rc=$?
+    status_lock_release
+    [ "$rc" -ne 0 ] && return $rc
     
     log "${GREEN}✓ Etap 6 OK${NC}"
     return 0
@@ -2515,10 +4039,15 @@ stage_7() {
     local base=$(basename "$file" .lua)
     local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
     
+    if ! status_lock_acquire; then
+        log "${RED}❌ Brak locka statusu (stage_7)${NC}"
+        return 1
+    fi
     python3 << PYEOF
 import json
 import os
 import re
+import shutil
 
 safe_name = "$safe"
 status_file = "$STATUS_FILE"
@@ -2583,8 +4112,15 @@ status["files"][file_path]["stages"]["7_validation"] = {
     "keys_in_lua": len(i18n_keys_in_lua),
     "validation_passed": validation_ok
 }
-with open(status_file, "w") as f:
+tmp_file = status_file + ".tmp"
+if os.path.exists(status_file):
+    try:
+        shutil.copy2(status_file, status_file + ".bak")
+    except Exception:
+        pass
+with open(tmp_file, "w") as f:
     json.dump(status, f, indent=2)
+os.replace(tmp_file, status_file)
 
 if errors:
     print(f"BŁĘDY: {len(errors)}")
@@ -2597,6 +4133,9 @@ if warnings:
 if not errors and not warnings:
     print("Walidacja OK - brak błędów")
 PYEOF
+    local rc=$?
+    status_lock_release
+    [ "$rc" -ne 0 ] && return $rc
     
     log "${GREEN}✓ Etap 7 OK${NC}"
     return 0
@@ -2612,9 +4151,14 @@ stage_8() {
     local base=$(basename "$file" .lua)
     local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
     
+    if ! status_lock_acquire; then
+        log "${RED}❌ Brak locka statusu (stage_8)${NC}"
+        return 1
+    fi
     python3 << PYEOF
 import json
 import os
+import shutil
 from datetime import datetime
 
 status_file = "$STATUS_FILE"
@@ -2646,8 +4190,15 @@ status["global_stats"]["files_completed"] = len([
 ])
 
 # Zapisz
-with open(status_file, "w") as f:
+tmp_file = status_file + ".tmp"
+if os.path.exists(status_file):
+    try:
+        shutil.copy2(status_file, status_file + ".bak")
+    except Exception:
+        pass
+with open(tmp_file, "w") as f:
     json.dump(status, f, indent=2)
+os.replace(tmp_file, status_file)
 
 # Aktualizuj I18N_STATUS.md
 status_md = "I18N_STATUS.md"
@@ -2659,7 +4210,7 @@ except:
 
 # Znajdź lub dodaj sekcję NPC
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M')
-new_entry = "- ✅ \`" + safe_name + "\` - ukończono " + timestamp + "\\n"
+new_entry = "- ✅ `" + safe_name + "` - ukończono " + timestamp + "\\n"
 
 if "## Ostatnio zmigrowane NPC" not in content:
     content += "\\n## Ostatnio zmigrowane NPC\\n\\n"
@@ -2676,6 +4227,9 @@ if safe_name not in content:
 
 print(f"SYNC OK - plik oznaczony jako completed")
 PYEOF
+    local rc=$?
+    status_lock_release
+    [ "$rc" -ne 0 ] && return $rc
     
     log "${GREEN}✓ Etap 8 OK${NC}"
     return 0
@@ -2696,7 +4250,12 @@ process_file() {
     local ret=$?
     
     if [ $ret -eq 2 ]; then
-        log "${YELLOW}Plik nie wymaga migracji${NC}"
+        if ! stage_3 "$file"; then
+            return 1
+        fi
+        # Oznacz jako przetworzony nawet jeśli nie wymaga migracji (analysis/doc wykonane)
+        mark_file_completed "$file" "npc" "0"
+        log "${YELLOW}Plik nie wymaga migracji (analysis/doc zaktualizowane)${NC}"
         return 0
     fi
     
@@ -2800,8 +4359,35 @@ process_scripts_file() {
         fi
     fi
 
+    # FIZYCZNA MIGRACJA: broadcastMessage -> Game.broadcastLocalizedMessage
+    _out=$(python3 tools/i18n_migrate_lua_broadcast.py \
+        --file "$file" \
+        --json "$json_file" \
+        --key-prefix "scripts.${safe}" \
+        --backup-dir "$BACKUP_DIR/scripts" \
+        --suffix "broadcast" \
+        2>&1)
+    _rc=$?
+    if [ "$_rc" -ne 0 ]; then
+        status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "scripts_broadcast_migrate" "scripts" "$file" "i18n_migrate_lua_broadcast.py failed" "rc=$_rc"
+        return 1
+    fi
+    local broadcast_keys_added broadcast_file_changed
+    broadcast_keys_added=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+    broadcast_file_changed=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+    broadcast_keys_added=${broadcast_keys_added:-0}
+    broadcast_file_changed=${broadcast_file_changed:-0}
+    if [ "$broadcast_file_changed" = "1" ]; then
+        if ! validate_lua_file "$file"; then
+            log "${RED}❌ Walidacja Lua nieudana po broadcastLocalized, przywracam backup${NC}"
+            restore_backup_file "$file"
+            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "scripts_broadcast_validate" "scripts" "$file" "lua validation failed" "restored backup"
+            return 1
+        fi
+    fi
+
     local total_keys_added total_calls_migrated
-    total_keys_added=$((keys_added + say_keys_added))
+    total_keys_added=$((keys_added + say_keys_added + broadcast_keys_added))
     total_calls_migrated=$((calls_migrated + say_calls_migrated))
 
     # Oznacz jako przetworzony (do obu plików!)
@@ -2817,8 +4403,11 @@ process_monsters_category() {
     local batch="${1:-10}"
     local json_file="$I18N_DIR/en/monsters.json"
     local count=0
+    local total_keys_added=0
+    local backup_dir="$BACKUP_DIR/monsters"
     
     [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    mkdir -p "$backup_dir" 2>/dev/null
     
     log "${CYAN}👹 Processing monsters...${NC}"
     
@@ -2826,42 +4415,243 @@ process_monsters_category() {
     for dir in data-otservbr-global/monster data-canary/monster; do
         [ ! -d "$dir" ] && continue
         
-        # NAPRAWIONE: Najpierw odfiltruj processed, POTEM weź batch
+        # NAPRAWIONE: Nie filtruj po PROCESSED_FILE (monsters mogą dostać nowe wzorce)
         while IFS= read -r file; do
             [ -f "$file" ] || continue
             
             local base=$(basename "$file" | sed 's/\.\(lua\|xml\)$//')
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
+            local base_title
+            base_title=$(title_case "${base//_/ }")
             
-            # NAPRAWIONE: Szukaj nazwy w createMonsterType("Name") lub monster.description
-            local name=$(grep -oP 'createMonsterType\s*\(\s*"\K[^"]+' "$file" 2>/dev/null | head -1)
-            local desc=$(grep -oP 'monster\.description\s*=\s*"\K[^"]+' "$file" 2>/dev/null | head -1)
-            
-            # Domyślnie użyj nazwy pliku jako name
-            [ -z "$name" ] && name=$(echo "$base" | tr '_' ' ' | sed 's/\b\(.\)/\u\1/g')
-            
-            if [ -n "$name" ]; then
-                python3 -c "
+            local result rc
+            result=$(python3 - "$file" "$json_file" "$safe" "$base_title" "$backup_dir" << 'MONSPY'
 import json
+import os
+import re
+import shutil
+import sys
+
+file_path = sys.argv[1]
+json_file = sys.argv[2]
+safe = sys.argv[3]
+base_title = sys.argv[4]
+backup_dir = sys.argv[5]
+
 try:
-    with open('$json_file') as f: d = json.load(f)
-except: d = {}
-d['monster.$safe.name'] = '''$name'''
-if '''$desc''':
-    d['monster.$safe.desc'] = '''$desc'''
-with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
-" 2>/dev/null
-                count=$((count + 1))
-                log "   👹 monster.$safe.name = $name"
+    with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+        content = f.read()
+except Exception as exc:
+    print(f"ERROR: read failed: {exc}")
+    sys.exit(1)
+
+try:
+    with open(json_file, "r", encoding="utf-8") as f:
+        data = json.load(f)
+except Exception as exc:
+    print(f"ERROR: json load failed: {exc}")
+    sys.exit(1)
+
+changed_file = False
+json_changed = False
+keys_added = 0
+name_added = 0
+desc_added = 0
+voice_added = 0
+
+def atomic_write_json(path, payload):
+    tmp_path = path + ".tmp"
+    if os.path.exists(path):
+        try:
+            shutil.copy2(path, path + ".bak")
+        except Exception:
+            pass
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    os.replace(tmp_path, path)
+
+# === NAME (prefer monster.name, fallback createMonsterType, fallback base title) ===
+name = None
+match = re.search(r'monster\.name\s*=\s*"([^"]+)"', content)
+if match:
+    name = match.group(1)
+else:
+    match = re.search(r'createMonsterType\s*\(\s*"([^"]+)"', content)
+    if match:
+        name = match.group(1)
+if not name:
+    name = base_title
+
+name_key = f"monster.{safe}.name"
+if name and name_key not in data:
+    data[name_key] = name
+    keys_added += 1
+    name_added += 1
+    json_changed = True
+
+# === DESCRIPTION ===
+desc = None
+match = re.search(r'monster\.description\s*=\s*"([^"]+)"', content)
+if match:
+    desc = match.group(1)
+desc_key = f"monster.{safe}.desc"
+if desc and desc_key not in data:
+    data[desc_key] = desc
+    keys_added += 1
+    desc_added += 1
+    json_changed = True
+
+# === VOICES (add i18nKey + add keys to JSON) ===
+voice_key_prefix = f"monster.{safe}.voice_"
+state = {
+    "voice_index": 0,
+    "changed_file": False,
+    "json_changed": False,
+    "keys_added": 0,
+    "voice_added": 0,
+}
+for key in data:
+    if key.startswith(voice_key_prefix):
+        try:
+            state["voice_index"] = max(state["voice_index"], int(key.rsplit("_", 1)[1]))
+        except Exception:
+            pass
+
+def extract_voices_block(text):
+    start = text.find("monster.voices")
+    if start < 0:
+        return None, None, None
+    brace_start = text.find("{", start)
+    if brace_start < 0:
+        return None, None, None
+    depth = 0
+    brace_end = None
+    for idx in range(brace_start, len(text)):
+        c = text[idx]
+        if c == "{":
+            depth += 1
+        elif c == "}":
+            depth -= 1
+            if depth == 0:
+                brace_end = idx
+                break
+    if brace_end is None:
+        return None, None, None
+    return brace_start, brace_end, text[brace_start:brace_end + 1]
+
+def voice_text_from_block(block):
+    m = re.search(r'text\s*=\s*"([^"]*)"', block)
+    if m:
+        return m.group(1)
+    m = re.search(r"text\s*=\s*'([^']*)'", block)
+    if m:
+        return m.group(1)
+    return None
+
+brace_start, brace_end, voices_block = extract_voices_block(content)
+if voices_block:
+    voice_pattern = re.compile(r'(\{[^{}]*?text\s*=\s*[^{}]*?\})(\s*)', re.DOTALL)
+
+    def repl(match):
+        block = match.group(1)
+        ws = match.group(2)
+
+        text = voice_text_from_block(block)
+        if not text:
+            return block + ws
+
+        key_match = re.search(r'i18nKey\s*=\s*"([^"]+)"', block)
+        if key_match:
+            key = key_match.group(1)
+        else:
+            state["voice_index"] += 1
+            key = f"{voice_key_prefix}{state['voice_index']}"
+            block = block[:-1] + f', i18nKey = "{key}"' + "}"
+            state["changed_file"] = True
+
+        if key and key not in data:
+            data[key] = text
+            state["keys_added"] += 1
+            state["voice_added"] += 1
+            state["json_changed"] = True
+
+        return block + ws
+
+    new_block = voice_pattern.sub(repl, voices_block)
+    if new_block != voices_block:
+        content = content[:brace_start] + new_block + content[brace_end + 1:]
+        state["changed_file"] = True
+
+if state["changed_file"]:
+    changed_file = True
+if state["json_changed"]:
+    json_changed = True
+if state["keys_added"]:
+    keys_added += state["keys_added"]
+if state["voice_added"]:
+    voice_added += state["voice_added"]
+
+if changed_file:
+    os.makedirs(backup_dir, exist_ok=True)
+    backup_path = os.path.join(backup_dir, os.path.basename(file_path) + ".bak")
+    try:
+        shutil.copy2(file_path, backup_path)
+    except Exception:
+        pass
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.write(content)
+
+if json_changed:
+    atomic_write_json(json_file, data)
+
+changed = 1 if (changed_file or json_changed) else 0
+file_changed = 1 if changed_file else 0
+print(f"__MONSTER_RESULT__ changed={changed} file_changed={file_changed} keys_added={keys_added} name_added={name_added} desc_added={desc_added} voice_added={voice_added}")
+MONSPY
+            )
+            rc=$?
+            if [ "$rc" -ne 0 ]; then
+                status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "monsters_process" "monsters" "$file" "python processing failed" "skip mark"
+                continue
             fi
-            
-            mark_file_completed "$file" "monsters" "1"
+
+            local changed file_changed keys_added name_added desc_added voice_added
+            changed=$(echo "$result" | awk -F'changed=' '/__MONSTER_RESULT__/{print $2}' | awk '{print $1}' | tr -dc '0-9')
+            file_changed=$(echo "$result" | awk -F'file_changed=' '/__MONSTER_RESULT__/{print $2}' | awk '{print $1}' | tr -dc '0-9')
+            keys_added=$(echo "$result" | awk -F'keys_added=' '/__MONSTER_RESULT__/{print $2}' | awk '{print $1}' | tr -dc '0-9')
+            name_added=$(echo "$result" | awk -F'name_added=' '/__MONSTER_RESULT__/{print $2}' | awk '{print $1}' | tr -dc '0-9')
+            desc_added=$(echo "$result" | awk -F'desc_added=' '/__MONSTER_RESULT__/{print $2}' | awk '{print $1}' | tr -dc '0-9')
+            voice_added=$(echo "$result" | awk -F'voice_added=' '/__MONSTER_RESULT__/{print $2}' | awk '{print $1}' | tr -dc '0-9')
+
+            changed=${changed:-0}
+            file_changed=${file_changed:-0}
+            keys_added=${keys_added:-0}
+            name_added=${name_added:-0}
+            desc_added=${desc_added:-0}
+            voice_added=${voice_added:-0}
+
+            if [ "$file_changed" -gt 0 ] 2>/dev/null && [[ "$file" == *.lua ]]; then
+                if ! validate_lua_file "$file"; then
+                    local backup="$backup_dir/$(basename "$file").bak"
+                    [ -f "$backup" ] && cp "$backup" "$file"
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "monsters_validate" "monsters" "$file" "lua validation failed" "restored backup"
+                    continue
+                fi
+            fi
+
+            if [ "$changed" -gt 0 ] 2>/dev/null; then
+                count=$((count + 1))
+                total_keys_added=$((total_keys_added + keys_added))
+                mark_file_completed "$file" "monsters" "$keys_added"
+                log "   👹 ${base} (+$keys_added keys; name=$name_added desc=$desc_added voices=$voice_added)"
+            fi
+
             [ "$count" -ge "$batch" ] && break
-        done < <(find "$dir" -name "*.lua" -o -name "*.xml" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
+        done < <(find "$dir" -name "*.lua" -o -name "*.xml" 2>/dev/null)
         [ "$count" -ge "$batch" ] && break
     done
     
-    log "${GREEN}✅ Monsters: $count kluczy${NC}"
+    log "${GREEN}✅ Monsters: pliki=$count, klucze=$total_keys_added${NC}"
     echo "$count"
 }
 
@@ -2870,49 +4660,225 @@ process_spells_category() {
     local batch="${1:-10}"
     local json_file="$I18N_DIR/en/spells.json"
     local count=0
+    local total_keys_added=0
+    local backup_dir="$BACKUP_DIR/spells"
     
     [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    mkdir -p "$backup_dir" 2>/dev/null
     
     log "${CYAN}✨ Processing spells...${NC}"
     
     for dir in data-otservbr-global/scripts/spells data/scripts/spells; do
         [ ! -d "$dir" ] && continue
         
-        # NAPRAWIONE: Filtruj processed PRZED head
         while IFS= read -r file; do
             [ -f "$file" ] || continue
             
             local base=$(basename "$file" .lua)
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
-            local name=$(echo "$base" | tr '_' ' ' | sed 's/\b\(.\)/\u\1/g')
+            local base_title
+            base_title=$(title_case "${base//_/ }")
             
-            # Wyciągnij words (słowa do rzucenia spella)
-            local words=$(grep -oP 'words\s*=\s*"\K[^"]+' "$file" 2>/dev/null | head -1)
-            local desc=$(grep -oP 'description\s*=\s*"\K[^"]+' "$file" 2>/dev/null | head -1)
+            # NAPRAWIONE: Obsłuż nowy format spell:name("...") i spell:words("...")
+            # oraz stary format words = "..." i description = "..."
+            local name words desc
+            name=$(py_regex_matches "$file" 'spell:name\s*\(\s*"([^"]+)"' 1)
+            [ -z "$name" ] && name=$(py_regex_matches "$file" 'name\s*=\s*"([^"]+)"' 1)
+            [ -z "$name" ] && name="$base_title"
             
-            python3 -c "
+            words=$(py_regex_matches "$file" 'spell:words\s*\(\s*"([^"]+)"' 1)
+            [ -z "$words" ] && words=$(py_regex_matches "$file" 'words\s*=\s*"([^"]+)"' 1)
+            
+            desc=$(py_regex_matches "$file" 'spell:description\s*\(\s*"([^"]+)"' 1)
+            [ -z "$desc" ] && desc=$(py_regex_matches "$file" 'description\s*=\s*"([^"]+)"' 1)
+            
+            local result rc
+            result=$(python3 - "$json_file" "$safe" "$name" "$words" "$desc" << 'SPELLPY'
 import json
+import os
+import shutil
+import sys
+
+json_file = sys.argv[1]
+safe = sys.argv[2]
+name = sys.argv[3]
+words = sys.argv[4]
+desc = sys.argv[5]
+
 try:
-    with open('$json_file') as f: d = json.load(f)
-except: d = {}
-d['spell.$safe.name'] = '''$name'''
-if '''$words''':
-    d['spell.$safe.words'] = '''$words'''
-if '''$desc''':
-    d['spell.$safe.desc'] = '''$desc'''
-with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
-" 2>/dev/null
-            
-            mark_file_completed "$file" "spells" "1"
-            count=$((count + 1))
-            log "   ✨ spell.$safe.name = $name"
+    with open(json_file, "r", encoding="utf-8") as f:
+        data = json.load(f)
+except Exception:
+    data = {}
+
+changed = False
+keys_added = 0
+name_added = 0
+words_added = 0
+desc_added = 0
+
+def atomic_write(path, payload):
+    tmp_path = path + ".tmp"
+    if os.path.exists(path):
+        try:
+            shutil.copy2(path, path + ".bak")
+        except Exception:
+            pass
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    os.replace(tmp_path, path)
+
+name_key = f"spell.{safe}.name"
+if name and name_key not in data:
+    data[name_key] = name
+    keys_added += 1
+    name_added += 1
+    changed = True
+
+words_key = f"spell.{safe}.words"
+if words and words_key not in data:
+    data[words_key] = words
+    keys_added += 1
+    words_added += 1
+    changed = True
+
+desc_key = f"spell.{safe}.desc"
+if desc and desc_key not in data:
+    data[desc_key] = desc
+    keys_added += 1
+    desc_added += 1
+    changed = True
+
+if changed:
+    atomic_write(json_file, data)
+
+print(
+    f"__SPELL_RESULT__ keys_added={keys_added} "
+    f"name_added={name_added} words_added={words_added} desc_added={desc_added}"
+)
+SPELLPY
+)
+            rc=$?
+            if [ "$rc" -ne 0 ]; then
+                status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "spells_json_update" "spells" "$file" "python json update failed" "skip mark"
+                continue
+            fi
+
+            local keys_added name_added words_added desc_added
+            keys_added=$(echo "$result" | awk -F'keys_added=' '/__SPELL_RESULT__/{print $2}' | awk '{print $1}' | tr -dc '0-9')
+            name_added=$(echo "$result" | awk -F'name_added=' '/__SPELL_RESULT__/{print $2}' | awk '{print $1}' | tr -dc '0-9')
+            words_added=$(echo "$result" | awk -F'words_added=' '/__SPELL_RESULT__/{print $2}' | awk '{print $1}' | tr -dc '0-9')
+            desc_added=$(echo "$result" | awk -F'desc_added=' '/__SPELL_RESULT__/{print $2}' | awk '{print $1}' | tr -dc '0-9')
+
+            keys_added=${keys_added:-0}
+            name_added=${name_added:-0}
+            words_added=${words_added:-0}
+            desc_added=${desc_added:-0}
+
+            local keys_added_total file_changed
+            keys_added_total=$keys_added
+            file_changed=0
+
+            # FIZYCZNA MIGRACJA: sendTextMessage + :say + broadcastMessage w SPELLS
+            local _out _rc
+
+            if grep -qE '([:.])sendTextMessage\s*\(|\bsendTextMessage\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_sendtext.py \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "spell.${safe}" \
+                    --backup-dir "$backup_dir" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "spells_migrate_sendtext" "spells" "$file" "i18n_migrate_lua_sendtext.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        file_changed=1
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "spells_validate_sendtext" "spells" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
+
+            if grep -qE ':say\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_say.py \
+                    --target creature \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "spell.${safe}" \
+                    --backup-dir "$backup_dir" \
+                    --suffix "say" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "spells_migrate_say" "spells" "$file" "i18n_migrate_lua_say.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        file_changed=1
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "spells_validate_say" "spells" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
+
+            if grep -qE 'broadcastMessage\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_broadcast.py \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "spell.${safe}" \
+                    --backup-dir "$backup_dir" \
+                    --suffix "broadcast" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "spells_migrate_broadcast" "spells" "$file" "i18n_migrate_lua_broadcast.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        file_changed=1
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "spells_validate_broadcast" "spells" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
+
+            if [ "$keys_added_total" -gt 0 ] 2>/dev/null || [ "$file_changed" -gt 0 ] 2>/dev/null; then
+                mark_file_completed "$file" "spells" "$keys_added_total"
+                count=$((count + 1))
+                total_keys_added=$((total_keys_added + keys_added_total))
+                log "   ✨ spell.$safe (+$keys_added_total keys; name=$name_added words=$words_added desc=$desc_added)"
+            fi
             
             [ "$count" -ge "$batch" ] && break
-        done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
+        done < <(find "$dir" -name "*.lua" 2>/dev/null)
         [ "$count" -ge "$batch" ] && break
     done
     
-    log "${GREEN}✅ Spells: $count kluczy${NC}"
+    log "${GREEN}✅ Spells: pliki=$count, klucze=$total_keys_added${NC}"
     echo "$count"
 }
 
@@ -2941,66 +4907,116 @@ process_items_category() {
             local current_mini=$mini_batch
             [ $((processed + mini_batch)) -gt $batch ] && current_mini=$((batch - processed))
             
-            # Wyciągnij mini-batch itemów
-            python3 << ITEMSPY
+            # Wyciągnij mini-batch itemów (name + desc)
+            local result rc
+            result=$(python3 - "$json_file" "$items_xml" "$current_mini" << 'PY'
 import json
+import os
 import re
+import shutil
+import sys
 
-json_file = "$json_file"
-items_xml = "$items_xml"
-mini_batch = $current_mini
-skip = $processed
+json_file = sys.argv[1]
+items_xml = sys.argv[2]
+mini_batch = int(sys.argv[3])
 
 try:
-    with open(json_file) as f:
+    with open(json_file, "r", encoding="utf-8") as f:
         data = json.load(f)
-except:
+except Exception:
     data = {}
 
-existing_keys = len(data)
-
 try:
-    with open(items_xml, 'r', errors='ignore') as f:
+    with open(items_xml, "r", encoding="utf-8", errors="ignore") as f:
         content = f.read()
-    
-    # Znajdź wszystkie <item id="..." name="...">
-    items = re.findall(r'<item\s+id="(\d+)"[^>]*name="([^"]+)"', content)
-    
-    # Przefiltruj tylko te które nie istnieją
-    new_items = [(id, name) for id, name in items if f"item.{id}.name" not in data]
-    
-    count = 0
-    for item_id, name in new_items[skip:skip+mini_batch]:
-        key = f"item.{item_id}.name"
-        data[key] = name
-        count += 1
-    
-    with open(json_file, 'w') as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-    
-    print(f"{count}")
-except Exception as e:
-    print(f"0")
-ITEMSPY
-            
-            added=$(python3 -c "
-import json
-import re
-with open('$json_file') as f: data = json.load(f)
-with open('$items_xml', 'r', errors='ignore') as f: content = f.read()
-items = re.findall(r'<item\s+id=\"(\d+)\"[^>]*name=\"([^\"]+)\"', content)
-new_items = [(id, name) for id, name in items if f'item.{id}.name' not in data]
-batch = min($current_mini, len(new_items))
-for item_id, name in new_items[:batch]:
-    data[f'item.{item_id}.name'] = name
-with open('$json_file', 'w') as f: json.dump(data, f, indent=2, ensure_ascii=False)
-print(batch)
-" 2>/dev/null || echo "0")
+except Exception:
+    print("__ITEMS_RESULT__ keys_added=0 items_processed=0")
+    sys.exit(1)
+
+items = []
+seen_ids = set()
+
+block_pattern = re.compile(r'<item\s+id="(\d+)"[^>]*name="([^"]+)"[^>]*>(.*?)</item>', re.DOTALL)
+for m in block_pattern.finditer(content):
+    item_id = m.group(1)
+    name = m.group(2)
+    block = m.group(3)
+    desc = None
+    desc_match = re.search(r'<attribute\s+key="description"\s+value="([^"]+)"', block)
+    if desc_match:
+        desc = desc_match.group(1)
+    items.append((item_id, name, desc))
+    seen_ids.add(item_id)
+
+self_close_pattern = re.compile(r'<item\s+id="(\d+)"[^>]*name="([^"]+)"[^>]*/>')
+for m in self_close_pattern.finditer(content):
+    item_id = m.group(1)
+    if item_id in seen_ids:
+        continue
+    name = m.group(2)
+    items.append((item_id, name, None))
+
+candidates = []
+for item_id, name, desc in items:
+    need = False
+    if name and f"item.{item_id}.name" not in data:
+        need = True
+    if desc and f"item.{item_id}.desc" not in data:
+        need = True
+    if need:
+        candidates.append((item_id, name, desc))
+
+batch_items = candidates[:mini_batch]
+keys_added = 0
+items_processed = 0
+
+for item_id, name, desc in batch_items:
+    added_any = False
+    name_key = f"item.{item_id}.name"
+    if name and name_key not in data:
+        data[name_key] = name
+        keys_added += 1
+        added_any = True
+    desc_key = f"item.{item_id}.desc"
+    if desc and desc_key not in data:
+        data[desc_key] = desc
+        keys_added += 1
+        added_any = True
+    if added_any:
+        items_processed += 1
+
+def atomic_write(path, payload):
+    tmp_path = path + ".tmp"
+    if os.path.exists(path):
+        try:
+            shutil.copy2(path, path + ".bak")
+        except Exception:
+            pass
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    os.replace(tmp_path, path)
+
+if keys_added > 0:
+    atomic_write(json_file, data)
+
+print(f"__ITEMS_RESULT__ keys_added={keys_added} items_processed={items_processed}")
+PY
+)
+            rc=$?
+            if [ "$rc" -ne 0 ]; then
+                status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "items_json_update" "items" "$items_xml" "python items update failed" "break"
+                break
+            fi
+            local added items_done
+            added=$(echo "$result" | awk -F'keys_added=' '/__ITEMS_RESULT__/{print $2}' | awk '{print $1}' | tr -dc '0-9')
+            items_done=$(echo "$result" | awk -F'items_processed=' '/__ITEMS_RESULT__/{print $2}' | awk '{print $1}' | tr -dc '0-9')
+            added=${added:-0}
+            items_done=${items_done:-0}
             
             total_added=$((total_added + added))
-            processed=$((processed + current_mini))
+            processed=$((processed + items_done))
             
-            log "   📦 Mini-batch: +$added items (total: $total_added)"
+            log "   📦 Mini-batch: +$added keys (items: $items_done, total keys: $total_added)"
             
             # Pauza między mini-batch (ale nie po ostatnim)
             if [ $processed -lt $batch ] && [ "$added" -gt 0 ]; then
@@ -3008,10 +5024,10 @@ print(batch)
             fi
             
             # Jeśli nie dodano nic, zakończ wcześniej
-            [ "$added" -eq 0 ] && break
+            [ "$items_done" -eq 0 ] && break
         done
         
-        log "${GREEN}✅ Items: +$total_added kluczy w $((processed / mini_batch)) mini-batch${NC}"
+        log "${GREEN}✅ Items: +$total_added kluczy (items processed: $processed)${NC}"
     else
         log "${YELLOW}⚠️ Brak pliku items.xml${NC}"
     fi
@@ -3022,46 +5038,204 @@ process_raids_category() {
     local batch="${1:-10}"
     local json_file="$I18N_DIR/en/raids.json"
     local count=0
+    local total_keys_added=0
+    local backup_dir="$BACKUP_DIR/raids"
     
     [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    mkdir -p "$backup_dir" 2>/dev/null
     
     log "${CYAN}⚔️ Processing raids...${NC}"
     
     for dir in data-otservbr-global/raids data-canary/raids data/raids; do
         [ ! -d "$dir" ] && continue
         
-        # NAPRAWIONE: Filtruj processed PRZED head
         while IFS= read -r file; do
             [ -f "$file" ] || continue
             
             local base=$(basename "$file" | sed 's/\.\(lua\|xml\)$//')
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
-            local name=$(echo "$base" | tr '_' ' ' | sed 's/\b\(.\)/\u\1/g')
+            local name=$(title_case "${base//_/ }")
             
             # Wyciągnij komunikaty raidów
-            local announce=$(grep -oP '(?:broadcast|announce|message)[^"]*"\K[^"]+' "$file" 2>/dev/null | head -1)
+            local announce=$(py_regex_matches "$file" '(?:broadcast|announce|message)[^"]*"([^"]+)"' 1)
             
-            python3 -c "
+            local result rc
+            result=$(python3 - "$json_file" "$safe" "$name" "$announce" << 'RAIDSPY'
 import json
+import os
+import shutil
+import sys
+
+json_file = sys.argv[1]
+safe = sys.argv[2]
+name = sys.argv[3]
+announce = sys.argv[4]
+
 try:
-    with open('$json_file') as f: d = json.load(f)
-except: d = {}
-d['raid.$safe.name'] = '''$name'''
-if '''$announce''':
-    d['raid.$safe.announce'] = '''$announce'''
-with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
-" 2>/dev/null
+    with open(json_file, "r", encoding="utf-8") as f:
+        data = json.load(f)
+except Exception:
+    data = {}
+
+changed = False
+keys_added = 0
+name_added = 0
+announce_added = 0
+
+def atomic_write(path, payload):
+    tmp_path = path + ".tmp"
+    if os.path.exists(path):
+        try:
+            shutil.copy2(path, path + ".bak")
+        except Exception:
+            pass
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    os.replace(tmp_path, path)
+
+name_key = f"raid.{safe}.name"
+if name and name_key not in data:
+    data[name_key] = name
+    keys_added += 1
+    name_added += 1
+    changed = True
+
+announce_key = f"raid.{safe}.announce"
+if announce and announce_key not in data:
+    data[announce_key] = announce
+    keys_added += 1
+    announce_added += 1
+    changed = True
+
+if changed:
+    atomic_write(json_file, data)
+
+print(
+    f"__RAID_RESULT__ keys_added={keys_added} "
+    f"name_added={name_added} announce_added={announce_added}"
+)
+RAIDSPY
+)
+            rc=$?
+            if [ "$rc" -ne 0 ]; then
+                status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "raids_json_update" "raids" "$file" "python json update failed" "skip mark"
+                continue
+            fi
             
-            mark_file_completed "$file" "raids" "1"
-            count=$((count + 1))
-            log "   ⚔️ raid.$safe.name = $name"
+            local keys_added name_added announce_added
+            keys_added=$(echo "$result" | awk -F'keys_added=' '/__RAID_RESULT__/{print $2}' | awk '{print $1}' | tr -dc '0-9')
+            name_added=$(echo "$result" | awk -F'name_added=' '/__RAID_RESULT__/{print $2}' | awk '{print $1}' | tr -dc '0-9')
+            announce_added=$(echo "$result" | awk -F'announce_added=' '/__RAID_RESULT__/{print $2}' | awk '{print $1}' | tr -dc '0-9')
+
+            keys_added=${keys_added:-0}
+            name_added=${name_added:-0}
+            announce_added=${announce_added:-0}
+
+            local keys_added_total file_changed
+            keys_added_total=$keys_added
+            file_changed=0
+
+            # FIZYCZNA MIGRACJA: sendTextMessage + :say + broadcastMessage w RAIDS (lua)
+            if [[ "$file" == *.lua ]]; then
+                local _out _rc
+                if grep -qE '([:.])sendTextMessage\s*\(|\bsendTextMessage\s*\(' "$file" 2>/dev/null; then
+                    _out=$(python3 tools/i18n_migrate_lua_sendtext.py \
+                        --file "$file" \
+                        --json "$json_file" \
+                        --key-prefix "raid.${safe}" \
+                        --backup-dir "$backup_dir" \
+                        2>&1)
+                    _rc=$?
+                    if [ "$_rc" -ne 0 ]; then
+                        status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "raids_migrate_sendtext" "raids" "$file" "i18n_migrate_lua_sendtext.py failed" "rc=$_rc"
+                    else
+                        local k fc
+                        k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                        fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                        k=${k:-0}
+                        fc=${fc:-0}
+                        keys_added_total=$((keys_added_total + k))
+                        if [ "$fc" = "1" ]; then
+                            file_changed=1
+                            if ! validate_lua_file "$file"; then
+                                restore_backup_file "$file"
+                                status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "raids_validate_sendtext" "raids" "$file" "lua validation failed" "restored backup"
+                            fi
+                        fi
+                    fi
+                fi
+
+                if grep -qE ':say\s*\(' "$file" 2>/dev/null; then
+                    _out=$(python3 tools/i18n_migrate_lua_say.py \
+                        --target creature \
+                        --file "$file" \
+                        --json "$json_file" \
+                        --key-prefix "raid.${safe}" \
+                        --backup-dir "$backup_dir" \
+                        --suffix "say" \
+                        2>&1)
+                    _rc=$?
+                    if [ "$_rc" -ne 0 ]; then
+                        status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "raids_migrate_say" "raids" "$file" "i18n_migrate_lua_say.py failed" "rc=$_rc"
+                    else
+                        local k fc
+                        k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                        fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                        k=${k:-0}
+                        fc=${fc:-0}
+                        keys_added_total=$((keys_added_total + k))
+                        if [ "$fc" = "1" ]; then
+                            file_changed=1
+                            if ! validate_lua_file "$file"; then
+                                restore_backup_file "$file"
+                                status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "raids_validate_say" "raids" "$file" "lua validation failed" "restored backup"
+                            fi
+                        fi
+                    fi
+                fi
+
+                if grep -qE 'broadcastMessage\s*\(' "$file" 2>/dev/null; then
+                    _out=$(python3 tools/i18n_migrate_lua_broadcast.py \
+                        --file "$file" \
+                        --json "$json_file" \
+                        --key-prefix "raid.${safe}" \
+                        --backup-dir "$backup_dir" \
+                        --suffix "broadcast" \
+                        2>&1)
+                    _rc=$?
+                    if [ "$_rc" -ne 0 ]; then
+                        status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "raids_migrate_broadcast" "raids" "$file" "i18n_migrate_lua_broadcast.py failed" "rc=$_rc"
+                    else
+                        local k fc
+                        k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                        fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                        k=${k:-0}
+                        fc=${fc:-0}
+                        keys_added_total=$((keys_added_total + k))
+                        if [ "$fc" = "1" ]; then
+                            file_changed=1
+                            if ! validate_lua_file "$file"; then
+                                restore_backup_file "$file"
+                                status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "raids_validate_broadcast" "raids" "$file" "lua validation failed" "restored backup"
+                            fi
+                        fi
+                    fi
+                fi
+            fi
+
+            if [ "$keys_added_total" -gt 0 ] 2>/dev/null || [ "$file_changed" -gt 0 ] 2>/dev/null; then
+                mark_file_completed "$file" "raids" "$keys_added_total"
+                count=$((count + 1))
+                total_keys_added=$((total_keys_added + keys_added_total))
+                log "   ⚔️ raid.$safe (+$keys_added_total keys; name=$name_added announce=$announce_added)"
+            fi
             
             [ "$count" -ge "$batch" ] && break
-        done < <(find "$dir" -name "*.lua" -o -name "*.xml" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
+        done < <(find "$dir" -name "*.lua" -o -name "*.xml" 2>/dev/null)
         [ "$count" -ge "$batch" ] && break
     done
     
-    log "${GREEN}✅ Raids: $count kluczy${NC}"
+    log "${GREEN}✅ Raids: pliki=$count, klucze=$total_keys_added${NC}"
     echo "$count"
 }
 
@@ -3070,49 +5244,208 @@ process_world_category() {
     local batch="${1:-10}"
     local json_file="$I18N_DIR/en/world.json"
     local count=0
+    local total_keys_added=0
+    local backup_dir="$BACKUP_DIR/world"
     
     [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    mkdir -p "$backup_dir" 2>/dev/null
     
     log "${CYAN}🗺️ Processing world...${NC}"
     
     for dir in data-otservbr-global/world data-canary/world data/world; do
         [ ! -d "$dir" ] && continue
         
-        # NAPRAWIONE: Filtruj processed PRZED head
         while IFS= read -r file; do
             [ -f "$file" ] || continue
             
-            # Wyciągnij teksty z plików świata
-            local texts=$(grep -oP '"[^"]{10,}"' "$file" 2>/dev/null | head -5)
             local base=$(basename "$file" .lua)
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
             
-            if [ -n "$texts" ]; then
-                python3 -c "
+            local result rc
+            result=$(python3 - "$json_file" "$safe" "$file" << 'WORLDPY'
 import json
+import os
 import re
-try:
-    with open('$json_file') as f: d = json.load(f)
-except: d = {}
+import shutil
+import sys
 
-texts = '''$texts'''.strip().split('\n')
-for i, t in enumerate(texts[:5]):
-    t = t.strip('\"')
-    if len(t) > 5:
-        key = f'world.$safe.text{i+1}'
-        d[key] = t
-with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
-" 2>/dev/null
-                count=$((count + 1))
+json_file = sys.argv[1]
+safe = sys.argv[2]
+file_path = sys.argv[3]
+
+try:
+    with open(json_file, "r", encoding="utf-8") as f:
+        data = json.load(f)
+except Exception:
+    data = {}
+
+try:
+    with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+        content = f.read()
+except Exception:
+    print("__WORLD_RESULT__ keys_added=0")
+    sys.exit(1)
+
+texts = []
+for m in re.finditer(r'"([^"]{10,})"', content, re.DOTALL):
+    val = m.group(1).strip()
+    if len(val) > 5:
+        texts.append(val)
+    if len(texts) >= 5:
+        break
+
+prefix = f"world.{safe}.text"
+existing = [k for k in data.keys() if k.startswith(prefix)]
+max_idx = 0
+for k in existing:
+    m = re.match(rf"^{re.escape(prefix)}(\d+)$", k)
+    if m:
+        try:
+            max_idx = max(max_idx, int(m.group(1)))
+        except Exception:
+            pass
+
+keys_added = 0
+idx = max_idx + 1
+for text in texts:
+    key = f"{prefix}{idx}"
+    if key not in data:
+        data[key] = text
+        keys_added += 1
+    idx += 1
+
+def atomic_write(path, payload):
+    tmp_path = path + ".tmp"
+    if os.path.exists(path):
+        try:
+            shutil.copy2(path, path + ".bak")
+        except Exception:
+            pass
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    os.replace(tmp_path, path)
+
+if keys_added > 0:
+    atomic_write(json_file, data)
+
+print(f"__WORLD_RESULT__ keys_added={keys_added}")
+WORLDPY
+)
+            rc=$?
+            if [ "$rc" -ne 0 ]; then
+                status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "world_json_update" "world" "$file" "python json update failed" "skip mark"
+                continue
+            fi
+
+            local keys_added
+            keys_added=$(echo "$result" | awk -F'keys_added=' '/__WORLD_RESULT__/{print $2}' | awk '{print $1}' | tr -dc '0-9')
+            keys_added=${keys_added:-0}
+
+            local keys_added_total file_changed
+            keys_added_total=$keys_added
+            file_changed=0
+
+            # FIZYCZNA MIGRACJA: sendTextMessage + :say + broadcastMessage w WORLD (lua)
+            if [[ "$file" == *.lua ]]; then
+                local _out _rc
+                if grep -qE '([:.])sendTextMessage\s*\(|\bsendTextMessage\s*\(' "$file" 2>/dev/null; then
+                    _out=$(python3 tools/i18n_migrate_lua_sendtext.py \
+                        --file "$file" \
+                        --json "$json_file" \
+                        --key-prefix "world.${safe}" \
+                        --backup-dir "$backup_dir" \
+                        2>&1)
+                    _rc=$?
+                    if [ "$_rc" -ne 0 ]; then
+                        status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "world_migrate_sendtext" "world" "$file" "i18n_migrate_lua_sendtext.py failed" "rc=$_rc"
+                    else
+                        local k fc
+                        k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                        fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                        k=${k:-0}
+                        fc=${fc:-0}
+                        keys_added_total=$((keys_added_total + k))
+                        if [ "$fc" = "1" ]; then
+                            file_changed=1
+                            if ! validate_lua_file "$file"; then
+                                restore_backup_file "$file"
+                                status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "world_validate_sendtext" "world" "$file" "lua validation failed" "restored backup"
+                            fi
+                        fi
+                    fi
+                fi
+
+                if grep -qE ':say\s*\(' "$file" 2>/dev/null; then
+                    _out=$(python3 tools/i18n_migrate_lua_say.py \
+                        --target creature \
+                        --file "$file" \
+                        --json "$json_file" \
+                        --key-prefix "world.${safe}" \
+                        --backup-dir "$backup_dir" \
+                        --suffix "say" \
+                        2>&1)
+                    _rc=$?
+                    if [ "$_rc" -ne 0 ]; then
+                        status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "world_migrate_say" "world" "$file" "i18n_migrate_lua_say.py failed" "rc=$_rc"
+                    else
+                        local k fc
+                        k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                        fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                        k=${k:-0}
+                        fc=${fc:-0}
+                        keys_added_total=$((keys_added_total + k))
+                        if [ "$fc" = "1" ]; then
+                            file_changed=1
+                            if ! validate_lua_file "$file"; then
+                                restore_backup_file "$file"
+                                status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "world_validate_say" "world" "$file" "lua validation failed" "restored backup"
+                            fi
+                        fi
+                    fi
+                fi
+
+                if grep -qE 'broadcastMessage\s*\(' "$file" 2>/dev/null; then
+                    _out=$(python3 tools/i18n_migrate_lua_broadcast.py \
+                        --file "$file" \
+                        --json "$json_file" \
+                        --key-prefix "world.${safe}" \
+                        --backup-dir "$backup_dir" \
+                        --suffix "broadcast" \
+                        2>&1)
+                    _rc=$?
+                    if [ "$_rc" -ne 0 ]; then
+                        status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "world_migrate_broadcast" "world" "$file" "i18n_migrate_lua_broadcast.py failed" "rc=$_rc"
+                    else
+                        local k fc
+                        k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                        fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                        k=${k:-0}
+                        fc=${fc:-0}
+                        keys_added_total=$((keys_added_total + k))
+                        if [ "$fc" = "1" ]; then
+                            file_changed=1
+                            if ! validate_lua_file "$file"; then
+                                restore_backup_file "$file"
+                                status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "world_validate_broadcast" "world" "$file" "lua validation failed" "restored backup"
+                            fi
+                        fi
+                    fi
+                fi
             fi
             
-            mark_file_completed "$file" "world" "1"
+            if [ "$keys_added_total" -gt 0 ] 2>/dev/null || [ "$file_changed" -gt 0 ] 2>/dev/null; then
+                mark_file_completed "$file" "world" "$keys_added_total"
+                count=$((count + 1))
+                total_keys_added=$((total_keys_added + keys_added_total))
+                log "   🗺️ world.$safe (+$keys_added_total keys)"
+            fi
+
             [ "$count" -ge "$batch" ] && break
-        done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
+        done < <(find "$dir" -name "*.lua" 2>/dev/null)
         [ "$count" -ge "$batch" ] && break
     done
     
-    log "${GREEN}✅ World: $count plików${NC}"
+    log "${GREEN}✅ World: pliki=$count, klucze=$total_keys_added${NC}"
     echo "$count"
 }
 
@@ -3129,30 +5462,38 @@ process_libs_category() {
     for dir in data/libs data-otservbr-global/lib data-canary/lib; do
         [ ! -d "$dir" ] && continue
         
-        # NAPRAWIONE: Filtruj processed PRZED head
         while IFS= read -r file; do
             [ -f "$file" ] || continue
             
             # Wyciągnij stringi z bibliotek
-            local strings=$(grep -oP 'sendTextMessage\s*\([^,]+,\s*"\K[^"]+' "$file" 2>/dev/null | head -5)
+            local strings=$(py_regex_matches "$file" 'sendTextMessage\s*\([^,]+,\s*"([^"]+)"' 5)
             local base=$(basename "$file" .lua)
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
             
             if [ -n "$strings" ]; then
                 local i=1
+                local json_ok=1
                 while IFS= read -r str; do
                     if [ -n "$str" ] && [ ${#str} -gt 5 ]; then
-                        python3 -c "
+                        if python3 -c "
 import json
 try:
     with open('$json_file') as f: d = json.load(f)
 except: d = {}
 d['lib.$safe.msg$i'] = '''$str'''
 with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
-" 2>/dev/null
-                        i=$((i + 1))
+"; then
+                            i=$((i + 1))
+                        else
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "libs_json_update" "libs" "$file" "python json update failed" "skip mark"
+                            json_ok=0
+                            break
+                        fi
                     fi
                 done <<< "$strings"
+                if [ "$json_ok" -eq 0 ]; then
+                    continue
+                fi
                 count=$((count + 1))
             fi
 
@@ -3213,10 +5554,37 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
                     fi
                 fi
             fi
+
+            if grep -qE 'broadcastMessage\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_broadcast.py \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "lib.${safe}" \
+                    --backup-dir "$BACKUP_DIR/libs" \
+                    --suffix "broadcast" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "libs_migrate_broadcast" "libs" "$file" "i18n_migrate_lua_broadcast.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "libs_validate_broadcast" "libs" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
             
             mark_file_completed "$file" "libs" "$keys_added_total"
             [ "$count" -ge "$batch" ] && break
-        done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
+        done < <(find "$dir" -name "*.lua" 2>/dev/null | head -n "$(sanitize_batch "$batch" 10)")
         [ "$count" -ge "$batch" ] && break
     done
     
@@ -3237,7 +5605,6 @@ process_events_category() {
     for dir in data/events data-otservbr-global/events; do
         [ ! -d "$dir" ] && continue
         
-        # NAPRAWIONE: Filtruj processed PRZED head
         while IFS= read -r file; do
             [ -f "$file" ] || continue
             
@@ -3245,10 +5612,10 @@ process_events_category() {
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
             
             # Wyciągnij komunikaty eventów
-            local messages=$(grep -oP '"[^"]{10,}"' "$file" 2>/dev/null | head -5)
+            local messages=$(py_regex_matches "$file" '"([^"]{10,})"' 5)
             
             if [ -n "$messages" ]; then
-                python3 -c "
+                if python3 -c "
 import json
 try:
     with open('$json_file') as f: d = json.load(f)
@@ -3260,8 +5627,12 @@ for i, t in enumerate(texts[:5]):
     if len(t) > 5:
         d[f'event.$safe.msg{i+1}'] = t
 with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
-" 2>/dev/null
-                count=$((count + 1))
+"; then
+                    count=$((count + 1))
+                else
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "events_json_update" "events" "$file" "python json update failed" "skip mark"
+                    continue
+                fi
             fi
 
             # FIZYCZNA MIGRACJA: sendTextMessage + :say w EVENTS
@@ -3321,10 +5692,37 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
                     fi
                 fi
             fi
+
+            if grep -qE 'broadcastMessage\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_broadcast.py \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "event.${safe}" \
+                    --backup-dir "$BACKUP_DIR/events" \
+                    --suffix "broadcast" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "events_migrate_broadcast" "events" "$file" "i18n_migrate_lua_broadcast.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "events_validate_broadcast" "events" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
             
             mark_file_completed "$file" "events" "$keys_added_total"
             [ "$count" -ge "$batch" ] && break
-        done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
+        done < <(find "$dir" -name "*.lua" 2>/dev/null | head -n "$(sanitize_batch "$batch" 10)")
         [ "$count" -ge "$batch" ] && break
     done
     
@@ -3337,8 +5735,11 @@ process_chatchannels_category() {
     local batch="${1:-10}"
     local json_file="$I18N_DIR/en/chatchannels.json"
     local count=0
+    local total_keys_added=0
+    local backup_dir="$BACKUP_DIR/chatchannels"
     
     [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    mkdir -p "$backup_dir" 2>/dev/null
     
     log "${CYAN}💬 Processing chatchannels...${NC}"
     
@@ -3350,27 +5751,168 @@ process_chatchannels_category() {
             
             local base=$(basename "$file" .lua)
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
-            local name=$(echo "$base" | tr '_' ' ' | sed 's/\b\(.\)/\u\1/g')
+            local base_title
+            base_title=$(title_case "${base//_/ }")
+            local name
+            name=$(py_regex_matches "$file" '(?:channel\.)?name\s*=\s*"([^"]+)"' 1)
+            [ -z "$name" ] && name="$base_title"
             
-            python3 -c "
+            local result rc
+            result=$(python3 - "$json_file" "$safe" "$name" << 'CHATPY'
 import json
+import os
+import shutil
+import sys
+
+json_file = sys.argv[1]
+safe = sys.argv[2]
+name = sys.argv[3]
+
 try:
-    with open('$json_file') as f: d = json.load(f)
-except: d = {}
-d['channel.$safe.name'] = '''$name'''
-with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
-" 2>/dev/null
+    with open(json_file, "r", encoding="utf-8") as f:
+        data = json.load(f)
+except Exception:
+    data = {}
+
+changed = False
+keys_added = 0
+
+def atomic_write(path, payload):
+    tmp_path = path + ".tmp"
+    if os.path.exists(path):
+        try:
+            shutil.copy2(path, path + ".bak")
+        except Exception:
+            pass
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    os.replace(tmp_path, path)
+
+name_key = f"channel.{safe}.name"
+if name and name_key not in data:
+    data[name_key] = name
+    keys_added += 1
+    changed = True
+
+if changed:
+    atomic_write(json_file, data)
+
+print(f"__CHAT_RESULT__ keys_added={keys_added}")
+CHATPY
+)
+            rc=$?
+            if [ "$rc" -ne 0 ]; then
+                status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "chatchannels_json_update" "chatchannels" "$file" "python json update failed" "skip mark"
+                continue
+            fi
             
-            mark_file_completed "$file" "actions" "1"
-            count=$((count + 1))
-            log "   💬 channel.$safe.name = $name"
+            local keys_added
+            keys_added=$(echo "$result" | awk -F'keys_added=' '/__CHAT_RESULT__/{print $2}' | awk '{print $1}' | tr -dc '0-9')
+            keys_added=${keys_added:-0}
+
+            local keys_added_total file_changed
+            keys_added_total=$keys_added
+            file_changed=0
+
+            # FIZYCZNA MIGRACJA: sendTextMessage + :say + broadcastMessage w CHATCHANNELS
+            local _out _rc
+            if grep -qE '([:.])sendTextMessage\s*\(|\bsendTextMessage\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_sendtext.py \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "channel.${safe}" \
+                    --backup-dir "$backup_dir" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "chatchannels_migrate_sendtext" "chatchannels" "$file" "i18n_migrate_lua_sendtext.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        file_changed=1
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "chatchannels_validate_sendtext" "chatchannels" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
+
+            if grep -qE ':say\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_say.py \
+                    --target creature \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "channel.${safe}" \
+                    --backup-dir "$backup_dir" \
+                    --suffix "say" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "chatchannels_migrate_say" "chatchannels" "$file" "i18n_migrate_lua_say.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        file_changed=1
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "chatchannels_validate_say" "chatchannels" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
+
+            if grep -qE 'broadcastMessage\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_broadcast.py \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "channel.${safe}" \
+                    --backup-dir "$backup_dir" \
+                    --suffix "broadcast" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "chatchannels_migrate_broadcast" "chatchannels" "$file" "i18n_migrate_lua_broadcast.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        file_changed=1
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "chatchannels_validate_broadcast" "chatchannels" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
+
+            if [ "$keys_added_total" -gt 0 ] 2>/dev/null || [ "$file_changed" -gt 0 ] 2>/dev/null; then
+                mark_file_completed "$file" "chatchannels" "$keys_added_total"
+                count=$((count + 1))
+                total_keys_added=$((total_keys_added + keys_added_total))
+                log "   💬 channel.$safe (+$keys_added_total keys)"
+            fi
             
             [ "$count" -ge "$batch" ] && break
-        done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
+        done < <(find "$dir" -name "*.lua" 2>/dev/null | head -n "$(sanitize_batch "$batch" 10)")
         [ "$count" -ge "$batch" ] && break
     done
     
-    log "${GREEN}✅ Chatchannels: $count kluczy${NC}"
+    log "${GREEN}✅ Chatchannels: pliki=$count, klucze=$total_keys_added${NC}"
     echo "$count"
 }
 
@@ -3394,10 +5936,10 @@ process_modules_category() {
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
             
             # Wyciągnij teksty z modułów
-            local texts=$(grep -oP '"[^"]{10,}"' "$file" 2>/dev/null | head -5)
+            local texts=$(py_regex_matches "$file" '"([^"]{10,})"' 5)
             
             if [ -n "$texts" ]; then
-                python3 -c "
+                if python3 -c "
 import json
 try:
     with open('$json_file') as f: d = json.load(f)
@@ -3409,8 +5951,12 @@ for i, t in enumerate(texts[:5]):
     if len(t) > 5:
         d[f'module.$safe.text{i+1}'] = t
 with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
-" 2>/dev/null
-                count=$((count + 1))
+"; then
+                    count=$((count + 1))
+                else
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "modules_json_update" "modules" "$file" "python json update failed" "skip mark"
+                    continue
+                fi
             fi
 
             # FIZYCZNA MIGRACJA: sendTextMessage + :say w MODULES
@@ -3470,10 +6016,37 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
                     fi
                 fi
             fi
+
+            if grep -qE 'broadcastMessage\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_broadcast.py \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "module.${safe}" \
+                    --backup-dir "$BACKUP_DIR/modules" \
+                    --suffix "broadcast" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "modules_migrate_broadcast" "modules" "$file" "i18n_migrate_lua_broadcast.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "modules_validate_broadcast" "modules" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
             
             mark_file_completed "$file" "modules" "$keys_added_total"
             [ "$count" -ge "$batch" ] && break
-        done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
+        done < <(find "$dir" -name "*.lua" 2>/dev/null | head -n "$(sanitize_batch "$batch" 10)")
         [ "$count" -ge "$batch" ] && break
     done
     
@@ -3501,11 +6074,11 @@ process_startup_category() {
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
             
             # Wyciągnij komunikaty startowe
-            local messages=$(grep -oP 'print\s*\(\s*"\K[^"]+' "$file" 2>/dev/null | head -5)
-            [ -z "$messages" ] && messages=$(grep -oP '"[^"]{10,}"' "$file" 2>/dev/null | head -5)
+            local messages=$(py_regex_matches "$file" 'print\s*\(\s*"([^"]+)"' 5)
+            [ -z "$messages" ] && messages=$(py_regex_matches "$file" '"([^"]{10,})"' 5)
             
             if [ -n "$messages" ]; then
-                python3 -c "
+                if python3 -c "
 import json
 try:
     with open('$json_file') as f: d = json.load(f)
@@ -3517,8 +6090,12 @@ for i, t in enumerate(texts[:5]):
     if len(t) > 5:
         d[f'startup.$safe.msg{i+1}'] = t
 with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
-" 2>/dev/null
-                count=$((count + 1))
+"; then
+                    count=$((count + 1))
+                else
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "startup_json_update" "startup" "$file" "python json update failed" "skip mark"
+                    continue
+                fi
             fi
 
             # FIZYCZNA MIGRACJA: sendTextMessage + :say w STARTUP
@@ -3578,10 +6155,37 @@ with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
                     fi
                 fi
             fi
+
+            if grep -qE 'broadcastMessage\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_broadcast.py \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "startup.${safe}" \
+                    --backup-dir "$BACKUP_DIR/startup" \
+                    --suffix "broadcast" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "startup_migrate_broadcast" "startup" "$file" "i18n_migrate_lua_broadcast.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "startup_validate_broadcast" "startup" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
             
             mark_file_completed "$file" "startup" "$keys_added_total"
             [ "$count" -ge "$batch" ] && break
-        done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
+        done < <(find "$dir" -name "*.lua" 2>/dev/null | head -n "$(sanitize_batch "$batch" 10)")
         [ "$count" -ge "$batch" ] && break
     done
     
@@ -3594,8 +6198,11 @@ process_npclib_category() {
     local batch="${1:-10}"
     local json_file="$I18N_DIR/en/npclib.json"
     local count=0
+    local total_keys_added=0
+    local backup_dir="$BACKUP_DIR/npclib"
     
     [ ! -f "$json_file" ] && echo '{}' > "$json_file"
+    mkdir -p "$backup_dir" 2>/dev/null
     
     log "${CYAN}📖 Processing npclib...${NC}"
     
@@ -3609,33 +6216,131 @@ process_npclib_category() {
             local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
             
             # Wyciągnij stałe tekstowe z biblioteki NPC
-            local strings=$(grep -oP '(?:TEXT_|MSG_)[A-Z_]+\s*=\s*"\K[^"]+' "$file" 2>/dev/null | head -10)
+            local strings=$(py_regex_matches "$file" '(?:TEXT_|MSG_)[A-Z_]+\s*=\s*"([^"]+)"' 10)
             
             if [ -n "$strings" ]; then
                 local i=1
+                local json_ok=1
                 while IFS= read -r str; do
                     if [ -n "$str" ] && [ ${#str} -gt 3 ]; then
-                        python3 -c "
+                        if python3 -c "
 import json
 try:
     with open('$json_file') as f: d = json.load(f)
 except: d = {}
 d['npclib.$safe.const$i'] = '''$str'''
 with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
-" 2>/dev/null
-                        i=$((i + 1))
+"; then
+                            i=$((i + 1))
+                        else
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "npclib_json_update" "npclib" "$file" "python json update failed" "skip mark"
+                            json_ok=0
+                            break
+                        fi
                     fi
                 done <<< "$strings"
+                if [ "$json_ok" -eq 0 ]; then
+                    continue
+                fi
                 count=$((count + 1))
             fi
-            
-            mark_file_completed "$file" "globalevents" "1"
+
+            # FIZYCZNA MIGRACJA: sendTextMessage + :say + broadcastMessage w NPCLIB
+            local _out _rc keys_added_total
+            keys_added_total=0
+
+            if grep -qE '([:.])sendTextMessage\s*\(|\bsendTextMessage\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_sendtext.py \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "npclib.${safe}" \
+                    --backup-dir "$backup_dir" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "npclib_migrate_sendtext" "npclib" "$file" "i18n_migrate_lua_sendtext.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "npclib_validate_sendtext" "npclib" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
+
+            if grep -qE ':say\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_say.py \
+                    --target creature \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "npclib.${safe}" \
+                    --backup-dir "$backup_dir" \
+                    --suffix "say" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "npclib_migrate_say" "npclib" "$file" "i18n_migrate_lua_say.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "npclib_validate_say" "npclib" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
+
+            if grep -qE 'broadcastMessage\s*\(' "$file" 2>/dev/null; then
+                _out=$(python3 tools/i18n_migrate_lua_broadcast.py \
+                    --file "$file" \
+                    --json "$json_file" \
+                    --key-prefix "npclib.${safe}" \
+                    --backup-dir "$backup_dir" \
+                    --suffix "broadcast" \
+                    2>&1)
+                _rc=$?
+                if [ "$_rc" -ne 0 ]; then
+                    status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "npclib_migrate_broadcast" "npclib" "$file" "i18n_migrate_lua_broadcast.py failed" "rc=$_rc"
+                else
+                    local k fc
+                    k=$(echo "$_out" | grep -oE 'keys_added=[0-9]+' | tail -n 1 | cut -d= -f2)
+                    fc=$(echo "$_out" | grep -oE 'file_changed=[01]' | tail -n 1 | cut -d= -f2)
+                    k=${k:-0}
+                    fc=${fc:-0}
+                    keys_added_total=$((keys_added_total + k))
+                    if [ "$fc" = "1" ]; then
+                        if ! validate_lua_file "$file"; then
+                            restore_backup_file "$file"
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "npclib_validate_broadcast" "npclib" "$file" "lua validation failed" "restored backup"
+                        fi
+                    fi
+                fi
+            fi
+
+            if [ "$keys_added_total" -gt 0 ] 2>/dev/null; then
+                total_keys_added=$((total_keys_added + keys_added_total))
+            fi
+
+            mark_file_completed "$file" "npclib" "$keys_added_total"
             [ "$count" -ge "$batch" ] && break
-        done < <(find "$dir" -name "*.lua" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
+        done < <(find "$dir" -name "*.lua" 2>/dev/null | head -n "$(sanitize_batch "$batch" 10)")
         [ "$count" -ge "$batch" ] && break
     done
     
-    log "${GREEN}✅ NpcLib: $count plików${NC}"
+    log "${GREEN}✅ NpcLib: pliki=$count, klucze=$total_keys_added${NC}"
     echo "$count"
 }
 
@@ -3692,10 +6397,12 @@ PYCODE
         
         if [ -n "$strings" ]; then
             local i=1
+            local keys_added_file=0
+            local json_ok=1
             while IFS= read -r str; do
                 str=$(echo "$str" | tr -d '"'"'" | head -c 200)
                 if [ -n "$str" ] && [ ${#str} -gt 15 ]; then
-                    python3 -c "
+                    if python3 -c "
 import json
 try:
     with open('$json_file') as f: d = json.load(f)
@@ -3704,16 +6411,25 @@ key = f'php.$safe.text$i'
 if key not in d:
     d[key] = '''$str'''[:200]
     with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
-" 2>/dev/null
-                    i=$((i + 1))
+"; then
+                        i=$((i + 1))
+                        keys_added_file=$((keys_added_file + 1))
+                    else
+                        status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "php_json_update" "php" "$file" "python json update failed" "skip mark"
+                        json_ok=0
+                        break
+                    fi
                 fi
             done <<< "$strings"
+            if [ "$json_ok" -eq 0 ]; then
+                continue
+            fi
             count=$((count + 1))
         fi
         
-        mark_file_completed "$file" "quests" "$q_keys"
+        mark_file_completed "$file" "php" "${keys_added_file:-0}"
         [ "$count" -ge "$batch" ] && break
-    done < <(find html_copy -name "*.php" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
+    done < <(find html_copy -name "*.php" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -n "$(sanitize_batch "$batch" 5)")
     
     log "${GREEN}✅ PHP: $count plików${NC}"
     echo "$count"
@@ -3736,14 +6452,16 @@ process_html_category() {
         local safe=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr ' -' '_')
         
         # Wyciągnij teksty między tagami
-        local strings=$(grep -oP '>([^<]{20,})<' "$file" 2>/dev/null | tr -d '><' | head -5)
+        local strings=$(py_regex_matches "$file" '>([^<]{20,})<' 5 | tr -d '><')
         
         if [ -n "$strings" ]; then
             local i=1
+            local keys_added_file=0
+            local json_ok=1
             while IFS= read -r str; do
                 str=$(echo "$str" | head -c 200)
                 if [ -n "$str" ] && [ ${#str} -gt 15 ]; then
-                    python3 -c "
+                    if python3 -c "
 import json
 try:
     with open('$json_file') as f: d = json.load(f)
@@ -3752,16 +6470,25 @@ key = f'html.$safe.text$i'
 if key not in d:
     d[key] = '''$str'''[:200]
     with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
-" 2>/dev/null
-                    i=$((i + 1))
+"; then
+                        i=$((i + 1))
+                        keys_added_file=$((keys_added_file + 1))
+                    else
+                        status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "html_json_update" "html" "$file" "python json update failed" "skip mark"
+                        json_ok=0
+                        break
+                    fi
                 fi
             done <<< "$strings"
+            if [ "$json_ok" -eq 0 ]; then
+                continue
+            fi
             count=$((count + 1))
         fi
         
-        mark_file_completed "$file" "creaturescripts" "1"
+        mark_file_completed "$file" "html" "${keys_added_file:-0}"
         [ "$count" -ge "$batch" ] && break
-    done < <(find html_copy -name "*.html" -o -name "*.twig" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
+    done < <(find html_copy -name "*.html" -o -name "*.twig" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -n "$(sanitize_batch "$batch" 10)")
     
     log "${GREEN}✅ HTML: $count plików${NC}"
     echo "$count"
@@ -3785,7 +6512,7 @@ process_cpp_category() {
         
         # Wyciągnij stringi > 10 znaków
         # FILTRUJ: pomiń kod, formaty, ścieżki
-        local strings=$(grep -oP '"[^"]{10,100}"' "$file" 2>/dev/null \
+        local strings=$(py_regex_matches "$file" '"([^"]{10,100})"' 5 \
             | tr -d '"' \
             | grep -v '%' \
             | grep -v '\\' \
@@ -3798,10 +6525,12 @@ process_cpp_category() {
         
         if [ -n "$strings" ]; then
             local i=1
+            local keys_added_file=0
+            local json_ok=1
             while IFS= read -r str; do
                 # Tylko tekst z literami i spacjami, bez camelCase
                 if [ -n "$str" ] && [ ${#str} -gt 8 ] && [[ "$str" =~ [a-zA-Z].*[[:space:]].*[a-zA-Z] ]]; then
-                    python3 -c "
+                    if python3 -c "
 import json
 try:
     with open('$json_file') as f: d = json.load(f)
@@ -3810,16 +6539,25 @@ key = f'cpp.$safe.str$i'
 if key not in d:
     d[key] = '''$str'''
     with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
-" 2>/dev/null
-                    i=$((i + 1))
+"; then
+                        i=$((i + 1))
+                        keys_added_file=$((keys_added_file + 1))
+                    else
+                        status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "cpp_json_update" "cpp" "$file" "python json update failed" "skip mark"
+                        json_ok=0
+                        break
+                    fi
                 fi
             done <<< "$strings"
+            if [ "$json_ok" -eq 0 ]; then
+                continue
+            fi
             count=$((count + 1))
         fi
         
-        mark_file_completed "$file" "weapons" "1"
+        mark_file_completed "$file" "cpp" "${keys_added_file:-0}"
         [ "$count" -ge "$batch" ] && break
-    done < <(find src -name "*.cpp" -o -name "*.hpp" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
+    done < <(find src -name "*.cpp" -o -name "*.hpp" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -n "$(sanitize_batch "$batch" 5)")
     
     log "${GREEN}✅ C++: $count plików${NC}"
     echo "$count"
@@ -3877,10 +6615,12 @@ PYCODE
             
             if [ -n "$strings" ]; then
                 local i=1
+                local keys_added_file=0
+                local json_ok=1
                 while IFS= read -r str; do
                     # Pomiń jeśli wygląda jak kod lub nazwa pliku
                     if [ -n "$str" ] && [ ${#str} -gt 8 ] && [[ ! "$str" =~ ^[a-z]+[A-Z] ]] && [[ ! "$str" =~ ^[A-Z_]+$ ]]; then
-                        python3 -c "
+                        if python3 -c "
 import json
 try:
     with open('$json_file') as f: d = json.load(f)
@@ -3889,16 +6629,25 @@ key = f'client.$safe.text$i'
 if key not in d:
     d[key] = '''$str'''
     with open('$json_file', 'w') as f: json.dump(d, f, indent=2, ensure_ascii=False)
-" 2>/dev/null
-                        i=$((i + 1))
+"; then
+                            i=$((i + 1))
+                            keys_added_file=$((keys_added_file + 1))
+                        else
+                            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "client_json_update" "client" "$file" "python json update failed" "skip mark"
+                            json_ok=0
+                            break
+                        fi
                     fi
                 done <<< "$strings"
+                if [ "$json_ok" -eq 0 ]; then
+                    continue
+                fi
                 count=$((count + 1))
             fi
             
-            mark_file_completed "$file" "php" "1"
+            mark_file_completed "$file" "client" "${keys_added_file:-0}"
             [ "$count" -ge "$batch" ] && break
-        done < <(find "$dir" -name "*.lua" -o -name "*.otui" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -$batch)
+        done < <(find "$dir" -name "*.lua" -o -name "*.otui" 2>/dev/null | grep -vFf "$PROCESSED_FILE" 2>/dev/null | head -n "$(sanitize_batch "$batch" 10)")
         [ "$count" -ge "$batch" ] && break
     done
     
@@ -3921,28 +6670,9 @@ process_sendTextMessage_category() {
     [ ! -f "$json_file" ] && echo '{}' > "$json_file"
     
     log "${CYAN}📨 Processing sendTextMessage patterns...${NC}"
-    
-    # Pattern 1: Główny pattern "Sold %ix %s for %i gold." (304 plików!)
-    local sold_pattern='player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))'
-    local sold_replace='player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})'
-    
-    for file in $(find data-otservbr-global/npc -name "*.lua" 2>/dev/null); do
-        [ -f "$file" ] || continue
-        
-        # Sprawdź czy plik ma pattern
-        if grep -q 'string\.format("Sold %ix %s for %i gold\."' "$file" 2>/dev/null; then
-            # Zamień
-            sed -i 's|player:sendTextMessage(MESSAGE_TRADE, string\.format("Sold %ix %s for %i gold\.", amount, name, totalCost))|player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})|g' "$file"
-            modified=$((modified + 1))
-            log "   📨 Zamieniono w: $(basename $file)"
-        fi
-        
-        count=$((count + 1))
-        [ "$modified" -ge "$batch" ] && break
-    done
-    
+
     # Dodaj klucz do messages.json jeśli nie istnieje
-    python3 << 'MSGPY'
+    if ! python3 << 'MSGPY'
 import json
 json_file = "i18n/en/messages.json"
 try:
@@ -3976,26 +6706,77 @@ with open(json_file, 'w') as f:
 if added > 0:
     print(f"   📝 Dodano {added} kluczy do messages.json")
 MSGPY
-    
-    # Pattern 2: Proste teksty bez zmiennych
-    local simple_patterns=(
-        'MESSAGE_STATUS|"You are already blessed."|system.blessing.already'
-        'MESSAGE_GAME_HIGHLIGHT|"Venture the path of decay!"|system.venture.decay'
-    )
-    
-    for pattern_line in "${simple_patterns[@]}"; do
-        IFS='|' read -r msg_type old_text new_key <<< "$pattern_line"
-        
-        for file in $(find data-otservbr-global/npc -name "*.lua" 2>/dev/null); do
-            [ -f "$file" ] || continue
-            
-            if grep -q "sendTextMessage($msg_type, $old_text)" "$file" 2>/dev/null; then
-                sed -i "s|player:sendTextMessage($msg_type, $old_text)|player:sendLocalizedTextMessage($msg_type, \"$new_key\")|g" "$file"
-                modified=$((modified + 1))
-                log "   📨 Simple pattern w: $(basename $file)"
-            fi
-        done
-    done
+    then
+        status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "messages_seed" "messages" "$json_file" "python json seed failed" "continue without seed"
+    fi
+
+    local marker_prefix="STM:"
+    local max_modified
+    max_modified=$(sanitize_batch "$batch" 10)
+
+    while IFS= read -r -d '' file; do
+        [ -f "$file" ] || continue
+
+        local marker="${marker_prefix}${file}"
+        if grep -qF "$marker" "$PROCESSED_FILE" 2>/dev/null; then
+            continue
+        fi
+
+        local _out _rc
+        _out=$(python3 - "$file" << 'PYCODE'
+import sys
+from pathlib import Path
+
+path = Path(sys.argv[1])
+try:
+    text = path.read_text(encoding="utf-8", errors="ignore")
+except Exception:
+    sys.exit(2)
+
+replacements = [
+    (
+        'player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))',
+        'player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})',
+    ),
+    (
+        'player:sendTextMessage(MESSAGE_STATUS, "You are already blessed.")',
+        'player:sendLocalizedTextMessage(MESSAGE_STATUS, "system.blessing.already")',
+    ),
+    (
+        'player:sendTextMessage(MESSAGE_GAME_HIGHLIGHT, "Venture the path of decay!")',
+        'player:sendLocalizedTextMessage(MESSAGE_GAME_HIGHLIGHT, "system.venture.decay")',
+    ),
+]
+
+new_text = text
+changed = False
+for old, new in replacements:
+    if old in new_text:
+        new_text = new_text.replace(old, new)
+        changed = True
+
+if changed:
+    path.write_text(new_text, encoding="utf-8")
+    print("modified=1")
+else:
+    print("modified=0")
+PYCODE
+)
+        _rc=$?
+        if [ "$_rc" -ne 0 ]; then
+            status_log_error "${CYCLE:-0}" "${MODE_TYPE:-MIGRATION}" "sendtext_replace" "sendtext" "$file" "python replace failed" "skip mark"
+            continue
+        fi
+
+        if echo "$_out" | grep -q "modified=1"; then
+            modified=$((modified + 1))
+            log "   sendTextMessage: $(basename "$file")"
+        fi
+
+        echo "$marker" >> "$PROCESSED_FILE"
+        count=$((count + 1))
+        [ "$modified" -ge "$max_modified" ] && break
+    done < <(find data-otservbr-global/npc -name "*.lua" -print0 2>/dev/null)
     
     log "${GREEN}✅ sendTextMessage: $modified plików zmodyfikowanych${NC}"
 }
@@ -4015,7 +6796,9 @@ process_keywordHandler_category() {
     log "${CYAN}🔑 Processing keywordHandler without i18nKey...${NC}"
     
     # Python script do przetwarzania plików
-    python3 << 'KWPY'
+    local max_batch
+    max_batch=$(sanitize_batch "$batch" 5)
+    python3 - "$max_batch" << 'KWPY'
 import json
 import re
 import os
@@ -4171,7 +6954,9 @@ process_twig_category() {
     
     log "${CYAN}🎨 Processing Twig templates...${NC}"
     
-    python3 << 'TWIGPY'
+    local max_batch
+    max_batch=$(sanitize_batch "$batch" 10)
+    python3 - "$max_batch" << 'TWIGPY'
 import json
 import re
 import os
@@ -4338,6 +7123,15 @@ if os.path.exists(PROCESSED_FILE):
     with open(PROCESSED_FILE) as f:
         processed = set(line.strip() for line in f)
 
+repeat_categories = {
+    "actions",
+    "quests",
+    "talkactions",
+    "movements",
+    "creaturescripts",
+    "globalevents",
+}
+
 # Wczytaj/stwórz JSON dla kategorii
 json_file = f"{I18N_DIR}/en/{category}.json"
 if os.path.exists(json_file):
@@ -4377,7 +7171,7 @@ for dir_path in dirs:
         if '/backups/' in filepath or filepath.endswith('.bak') or '/styles.bak/' in filepath:
             continue
         marker = f"{category.upper()}:{filepath}"
-        if marker in processed:
+        if category not in repeat_categories and marker in processed:
             continue
         
         try:
@@ -4434,6 +7228,34 @@ for dir_path in dirs:
                 '--key-prefix', key_prefix,
                 '--backup-dir', os.path.join('backups', category),
                 '--suffix', 'say',
+            ]
+            try:
+                out = subprocess.check_output(cmd, stderr=subprocess.STDOUT, text=True)
+                m = re.search(r'keys_added=(\d+)', out)
+                if m:
+                    local_keys += int(m.group(1))
+                    keys_added += int(m.group(1))
+                m2 = re.search(r'file_changed=([01])', out)
+                if m2 and m2.group(1) == '1':
+                    file_changed_by_tool = True
+                try:
+                    with open(json_file, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                except Exception:
+                    pass
+            except subprocess.CalledProcessError:
+                pass
+
+        # 2b) Lua: zamień broadcastMessage(...) na Game.broadcastLocalizedMessage(...)
+        if filepath.endswith('.lua') and 'broadcastMessage' in content and not category.startswith('otclient_'):
+            key_prefix = f"{category}.{safe_name}"
+            cmd = [
+                'python3', 'tools/i18n_migrate_lua_broadcast.py',
+                '--file', filepath,
+                '--json', json_file,
+                '--key-prefix', key_prefix,
+                '--backup-dir', os.path.join('backups', category),
+                '--suffix', 'broadcast',
             ]
             try:
                 out = subprocess.check_output(cmd, stderr=subprocess.STDOUT, text=True)
@@ -5502,12 +8324,52 @@ import json
 import os
 import re
 import sys
+import shutil
 
 target_lang = os.environ.get("TRANSLATE_LANG", "pl")
 i18n_dir = os.environ.get("TRANSLATE_I18N_DIR", "i18n")
 status_file = os.environ.get("TRANSLATE_STATUS_FILE", "i18n_file_status.json")
 batch_size = int(os.environ.get("TRANSLATE_BATCH", "50"))
 substage_size = int(os.environ.get("TRANSLATE_SUBSTAGE", "4"))
+
+def atomic_write_json(path, data, ensure_ascii=True):
+    tmp_path = path + ".tmp"
+    if os.path.exists(path):
+        try:
+            shutil.copy2(path, path + ".bak")
+        except Exception:
+            pass
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=ensure_ascii)
+    os.replace(tmp_path, path)
+
+def update_translation_status(status_path, payload):
+    lock_f = None
+    try:
+        import fcntl
+        lock_f = open(os.path.join(os.getcwd(), ".i18n_status.lock"), "w")
+        fcntl.flock(lock_f, fcntl.LOCK_EX)
+    except Exception:
+        lock_f = None
+
+    try:
+        with open(status_path, encoding="utf-8") as f:
+            status = json.load(f)
+    except Exception:
+        status = {}
+
+    if "translation_status" not in status:
+        status["translation_status"] = {}
+
+    status["translation_status"][target_lang] = payload
+    atomic_write_json(status_path, status, ensure_ascii=True)
+
+    if lock_f:
+        try:
+            fcntl.flock(lock_f, fcntl.LOCK_UN)
+        except Exception:
+            pass
+        lock_f.close()
 
 # [1/6] SELECT_SOURCE
 print("[1/6] SELECT_SOURCE: en/npc.json")
@@ -5644,8 +8506,7 @@ for idx, (key, en_text) in enumerate(keys_batch):
     elif translation.upper() == "SAVE":
         print("  💾 Zapisuję dotychczasowe i kontynuuję...")
         lang_data = dict(sorted(lang_data.items()))
-        with open(lang_file, "w") as f:
-            json.dump(lang_data, f, indent=2, ensure_ascii=False)
+        atomic_write_json(lang_file, lang_data, ensure_ascii=False)
         print(f"  ✅ Zapisano {len(lang_data)} kluczy")
         continue
     elif not translation:
@@ -5678,8 +8539,7 @@ print("═" * 70)
 # [5/6] SAVE_TRANSLATIONS
 print(f"[5/6] SAVE_TRANSLATIONS: Zapisuję {translated_count} tłumaczeń")
 lang_data = dict(sorted(lang_data.items()))
-with open(lang_file, "w") as f:
-    json.dump(lang_data, f, indent=2, ensure_ascii=False)
+atomic_write_json(lang_file, lang_data, ensure_ascii=False)
 
 # Statystyki
 placeholders = len([v for v in lang_data.values() if v.startswith("[")])
@@ -5688,23 +8548,14 @@ real_total = len(lang_data) - placeholders
 # [6/6] SYNC
 print(f"[6/6] SYNC: Aktualizacja statusu")
 
-# Aktualizuj status
-with open(status_file) as f:
-    status = json.load(f)
-
-if "translation_status" not in status:
-    status["translation_status"] = {}
-
-status["translation_status"][target_lang] = {
+payload = {
     "total_keys": len(lang_data),
     "translated": real_total,
     "placeholders": placeholders,
     "last_batch": translated_count,
     "last_update": __import__("datetime").datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 }
-
-with open(status_file, "w") as f:
-    json.dump(status, f, indent=2)
+update_translation_status(status_file, payload)
 
 print(f"\n✅ SESJA TŁUMACZENIA ZAKOŃCZONA: {target_lang}")
 print(f"   Przetłumaczono: {translated_count}")
@@ -5807,7 +8658,7 @@ CATEGORIES = {
         "patterns": [r'message="[^"]+', r'<message>[^<]+'],
         "exclude_if": ["i18n:"],
         "json": "raids.json",
-        "file_ext": [".xml"],
+        "file_ext": [".xml", ".lua"],
         "priority": 6
     },
     
@@ -5817,7 +8668,7 @@ CATEGORIES = {
         "patterns": [r'name="[^"]+', r'description="[^"]+'],
         "exclude_if": [],
         "json": "world.json",
-        "file_ext": [".xml", ".lua"],
+        "file_ext": [".lua"],
         "priority": 7
     },
     
@@ -6176,6 +9027,28 @@ try:
 except:
     pass
 
+REPEAT_CATEGORIES = {
+    "npc",
+    "monsters",
+    "scripts",
+    "actions",
+    "quests",
+    "talkactions",
+    "movements",
+    "creaturescripts",
+    "globalevents",
+    "spells",
+    "items",
+    "raids",
+    "world",
+    "libs",
+    "events",
+    "chatchannels",
+    "modules",
+    "startup",
+    "npclib",
+}
+
 def count_files_needing_work(category):
     """Zlicz pliki wymagające migracji w danej kategorii"""
     config = CATEGORIES.get(category, {})
@@ -6183,6 +9056,70 @@ def count_files_needing_work(category):
         return 0
 
     exts = config.get("file_ext") or [".lua", ".xml"]
+    monsters_data = None
+    spells_data = None
+    raids_data = None
+    world_data = None
+    chatchannels_data = None
+    npclib_data = None
+    if category == "monsters":
+        try:
+            with open(f"{I18N_DIR}/en/monsters.json") as mf:
+                monsters_data = json.load(mf)
+        except:
+            monsters_data = {}
+
+    if category == "items":
+        items_xml = None
+        for path in ["data/items/items.xml", "data-otservbr-global/items/items.xml"]:
+            if os.path.exists(path):
+                items_xml = path
+                break
+        if not items_xml:
+            return 0
+        try:
+            with open(f"{I18N_DIR}/en/items.json") as jf:
+                items_data = json.load(jf)
+        except:
+            items_data = {}
+        try:
+            with open(items_xml, "r", encoding="utf-8", errors="ignore") as f:
+                content = f.read()
+        except:
+            return 0
+
+        block_pattern = re.compile(r'<item\s+id="(\d+)"[^>]*name="([^"]+)"[^>]*>(.*?)</item>', re.DOTALL)
+        for m in block_pattern.finditer(content):
+            item_id = m.group(1)
+            name = m.group(2)
+            block = m.group(3)
+            if name and f"item.{item_id}.name" not in items_data:
+                return 1
+            desc_match = re.search(r'<attribute\s+key="description"\s+value="([^"]+)"', block)
+            if desc_match and f"item.{item_id}.desc" not in items_data:
+                return 1
+
+        self_close_pattern = re.compile(r'<item\s+id="(\d+)"[^>]*name="([^"]+)"[^>]*/>')
+        for m in self_close_pattern.finditer(content):
+            item_id = m.group(1)
+            name = m.group(2)
+            if name and f"item.{item_id}.name" not in items_data:
+                return 1
+        return 0
+
+    text_call_categories = {
+        "scripts",
+        "actions",
+        "quests",
+        "talkactions",
+        "movements",
+        "creaturescripts",
+        "globalevents",
+        "libs",
+        "events",
+        "modules",
+        "startup",
+    }
     
     needs_work = 0
     for dir_path in config["dirs"]:
@@ -6194,8 +9131,8 @@ def count_files_needing_work(category):
                     continue
                 fpath = os.path.join(root, f)
                 
-                # Sprawdź czy plik nie jest już oznaczony jako completed (dla NPC pozwól na ponowne przetwarzanie, np. voices)
-                if category != "npc" and fpath in completed_files:
+                # Sprawdź czy plik nie jest już oznaczony jako completed (dla kategorii z nowymi wzorcami pozwól na ponowne przetwarzanie)
+                if category not in REPEAT_CATEGORIES and fpath in completed_files:
                     continue
                 
                 try:
@@ -6220,6 +9157,180 @@ def count_files_needing_work(category):
                                 if 'i18nKey' not in content:
                                     needs = True
                         if needs:
+                            needs_work += 1
+                        continue
+
+                    # Specjalna logika dla monsters
+                    if category == "monsters":
+                        safe_base = os.path.splitext(os.path.basename(fpath))[0]
+                        safe_name = safe_base.lower().replace(" ", "_").replace("-", "_")
+                        name_key = f"monster.{safe_name}.name"
+                        desc_key = f"monster.{safe_name}.desc"
+
+                        name_in_file = bool(re.search(r'monster\.name\s*=\s*"', content) or re.search(r'createMonsterType\s*\(\s*"[^"]+"', content))
+                        desc_in_file = bool(re.search(r'monster\.description\s*=\s*"', content))
+
+                        def voices_missing_i18n(text):
+                            start = text.find("monster.voices")
+                            if start < 0:
+                                return False
+                            brace_start = text.find("{", start)
+                            if brace_start < 0:
+                                return False
+                            depth = 0
+                            brace_end = None
+                            for idx in range(brace_start, len(text)):
+                                c = text[idx]
+                                if c == "{":
+                                    depth += 1
+                                elif c == "}":
+                                    depth -= 1
+                                    if depth == 0:
+                                        brace_end = idx
+                                        break
+                            if brace_end is None:
+                                return False
+                            block = text[brace_start:brace_end + 1]
+                            for entry in re.findall(r'\{[^{}]*?text\s*=\s*[^{}]*?\}', block, re.DOTALL):
+                                if "i18nKey" not in entry:
+                                    return True
+                            return False
+
+                        needs = False
+                        if name_in_file and name_key not in monsters_data:
+                            needs = True
+                        if desc_in_file and desc_key not in monsters_data:
+                            needs = True
+                        if voices_missing_i18n(content):
+                            needs = True
+
+                        if needs:
+                            needs_work += 1
+                        continue
+
+                    if category == "spells":
+                        if spells_data is None:
+                            try:
+                                with open(f"{I18N_DIR}/en/spells.json") as sf:
+                                    spells_data = json.load(sf)
+                            except:
+                                spells_data = {}
+                        safe_base = os.path.splitext(os.path.basename(fpath))[0]
+                        safe_name = safe_base.lower().replace(" ", "_").replace("-", "_")
+                        name_key = f"spell.{safe_name}.name"
+                        words_key = f"spell.{safe_name}.words"
+                        desc_key = f"spell.{safe_name}.desc"
+
+                        name_in_file = bool(re.search(r'spell\.name\s*=\s*"[^"]+"', content) or re.search(r'spell:name\s*\(\s*"[^"]+"', content) or re.search(r'name\s*=\s*"[^"]+"', content))
+                        words_in_file = bool(re.search(r'spell:words\s*\(\s*"[^"]+"', content) or re.search(r'words\s*=\s*"[^"]+"', content))
+                        desc_in_file = bool(re.search(r'spell:description\s*\(\s*"[^"]+"', content) or re.search(r'description\s*=\s*"[^"]+"', content))
+
+                        needs = False
+                        if name_in_file and name_key not in spells_data:
+                            needs = True
+                        if words_in_file and words_key not in spells_data:
+                            needs = True
+                        if desc_in_file and desc_key not in spells_data:
+                            needs = True
+                        if re.search(r'sendTextMessage\s*\(', content) or re.search(r':say\s*\(', content) or re.search(r'broadcastMessage\s*\(', content):
+                            needs = True
+
+                        if needs:
+                            needs_work += 1
+                        continue
+
+                    if category == "raids":
+                        if raids_data is None:
+                            try:
+                                with open(f"{I18N_DIR}/en/raids.json") as rf:
+                                    raids_data = json.load(rf)
+                            except:
+                                raids_data = {}
+                        safe_base = os.path.splitext(os.path.basename(fpath))[0]
+                        safe_name = safe_base.lower().replace(" ", "_").replace("-", "_")
+                        name_key = f"raid.{safe_name}.name"
+                        announce_key = f"raid.{safe_name}.announce"
+
+                        announce_in_file = bool(re.search(r'(?:broadcast|announce|message)[^"]*"[^"]+"', content))
+                        needs = False
+                        if name_key not in raids_data:
+                            needs = True
+                        if announce_in_file and announce_key not in raids_data:
+                            needs = True
+                        if re.search(r'sendTextMessage\s*\(', content) or re.search(r':say\s*\(', content) or re.search(r'broadcastMessage\s*\(', content):
+                            needs = True
+
+                        if needs:
+                            needs_work += 1
+                        continue
+
+                    if category == "world":
+                        if world_data is None:
+                            try:
+                                with open(f"{I18N_DIR}/en/world.json") as wf:
+                                    world_data = json.load(wf)
+                            except:
+                                world_data = {}
+                        safe_base = os.path.splitext(os.path.basename(fpath))[0]
+                        safe_name = safe_base.lower().replace(" ", "_").replace("-", "_")
+                        prefix = f"world.{safe_name}.text"
+                        has_text_key = any(k.startswith(prefix) for k in world_data.keys())
+
+                        needs = False
+                        if re.search(r'sendTextMessage\s*\(', content) or re.search(r':say\s*\(', content) or re.search(r'broadcastMessage\s*\(', content):
+                            needs = True
+                        if not has_text_key and re.search(r'"[^"]{10,}"', content):
+                            needs = True
+
+                        if needs:
+                            needs_work += 1
+                        continue
+
+                    if category == "chatchannels":
+                        if chatchannels_data is None:
+                            try:
+                                with open(f"{I18N_DIR}/en/chatchannels.json") as cf:
+                                    chatchannels_data = json.load(cf)
+                            except:
+                                chatchannels_data = {}
+                        safe_base = os.path.splitext(os.path.basename(fpath))[0]
+                        safe_name = safe_base.lower().replace(" ", "_").replace("-", "_")
+                        name_key = f"channel.{safe_name}.name"
+
+                        needs = False
+                        if name_key not in chatchannels_data:
+                            needs = True
+                        if re.search(r'sendTextMessage\s*\(', content) or re.search(r':say\s*\(', content) or re.search(r'broadcastMessage\s*\(', content):
+                            needs = True
+
+                        if needs:
+                            needs_work += 1
+                        continue
+
+                    if category == "npclib":
+                        if npclib_data is None:
+                            try:
+                                with open(f"{I18N_DIR}/en/npclib.json") as nf:
+                                    npclib_data = json.load(nf)
+                            except:
+                                npclib_data = {}
+                        safe_base = os.path.splitext(os.path.basename(fpath))[0]
+                        safe_name = safe_base.lower().replace(" ", "_").replace("-", "_")
+                        consts = re.findall(r'(?:TEXT_|MSG_)[A-Z_]+\s*=\s*"[^"]+"', content)
+                        existing = [k for k in npclib_data.keys() if k.startswith(f"npclib.{safe_name}.const")]
+
+                        needs = False
+                        if consts and len(existing) < len(consts):
+                            needs = True
+                        if re.search(r'sendTextMessage\s*\(', content) or re.search(r':say\s*\(', content) or re.search(r'broadcastMessage\s*\(', content):
+                            needs = True
+
+                        if needs:
+                            needs_work += 1
+                        continue
+
+                    if category in text_call_categories:
+                        if re.search(r'sendTextMessage\s*\(', content) or re.search(r':say\s*\(', content) or re.search(r'broadcastMessage\s*\(', content):
                             needs_work += 1
                         continue
                     
@@ -6554,6 +9665,10 @@ case "${1:-}" in
         mode_translation "$LANG"
         update_github_status
         ;;
+    --self-check)
+        self_check
+        exit $?
+        ;;
     --status)
         python3 << 'STATUSEOF'
 import json
@@ -6751,11 +9866,10 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                 fi
             fi
             
-            # Sprawdź npcHandler:say("...") bez NPC_LIB.i18n.npcSay
-            if grep -qE 'npcHandler:say\(\s*"[^"]{5,}"' "$f" 2>/dev/null; then
-                if ! grep -q "NPC_LIB.i18n.npcSay" "$f" 2>/dev/null; then
-                    NEEDS_WORK=true
-                fi
+            # Sprawdź npcHandler:say (wszystkie formy - literały, konkatenacje itp.)
+            # Jeśli plik ma jakiekolwiek npcHandler:say, wymaga migracji
+            if grep -q 'npcHandler:say(' "$f" 2>/dev/null; then
+                NEEDS_WORK=true
             fi
             
             # Sprawdź npcConfig.voices z text = "..." bez i18nKey
@@ -6788,6 +9902,13 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
     --continuous)
         # Tryb ciągły - pracuje cały czas, przełącza się między trybami
         PID_FILE=".worker_simple.pid"
+        if [ -f "$PID_FILE" ]; then
+            existing_pid=$(cat "$PID_FILE" 2>/dev/null || echo "")
+            if [[ "$existing_pid" =~ ^[0-9]+$ ]] && kill -0 "$existing_pid" 2>/dev/null; then
+                echo "Inny worker już działa (PID: $existing_pid). Zatrzymuję uruchomienie."
+                exit 1
+            fi
+        fi
         echo $$ > "$PID_FILE"
         
         # Parsuj opcje
@@ -6857,22 +9978,59 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             COMMAND_FILE=".worker_command"
             CMD=""
             
-            # 1. Sprawdź komendy z GitHuba (preferuj .github/worker_commands.txt, fallback: worker_commands.txt)
-            for COMMANDS_TXT in "$COMMANDS_TXT_PRIMARY" "$COMMANDS_TXT_FALLBACK"; do
-                [ -n "$CMD" ] && break
-                if [ -f "$COMMANDS_TXT" ]; then
-                    # Znajdź pierwszą odkomentowaną komendę (bez # na początku)
-                    CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|AUTO:|SYNC:|COMPACT_KEYS|IDLE|RANDOM|STATUS|SKIP|PAUSE:|NOTE:)' | head -1)
+            # 1. Komendy z GitHub:
+            # Preferuj .github/worker_commands.txt z origin/master (działa bez git pull)
+            CMD_SOURCE=""
+            if [ -n "$REPO_ROOT" ]; then
+                REMOTE_CMDS=$(git -C "$REPO_ROOT" show "origin/master:Tibia/silnik/canary_test/.github/worker_commands.txt" 2>/dev/null || true)
+                if [ -n "$REMOTE_CMDS" ]; then
+                    CMD=$(echo "$REMOTE_CMDS" | grep -v '^#' | grep -v '^$' | grep -E '^(FORCE:|AUTO:|SYNC:|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:)' | head -1)
                     if [ -n "$CMD" ]; then
-                        echo "📨 Odebrano z $COMMANDS_TXT: $CMD"
-                        # Zakomentuj wykonaną komendę i dodaj do historii
+                        CMD_SOURCE="github"
+                        echo "📨 Odebrano z GitHub (.github/worker_commands.txt): $CMD"
                         TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
-                        sed -i "s/^$CMD/#$CMD  # Wykonano $TIMESTAMP/" "$COMMANDS_TXT" 2>/dev/null
-                        echo "# [$TIMESTAMP] Wykonano: $CMD" >> "$COMMANDS_TXT"
-                        break
+                        # Zapisz ACK lokalnie (guardian wypchnie commit/push w swoim cyklu)
+                        mkdir -p .github 2>/dev/null || true
+                        UPDATED_CMDS=$(printf '%s\n' "$REMOTE_CMDS" | awk -v ts="$TIMESTAMP" '
+BEGIN { done=0 }
+{
+    line=$0
+    if (line ~ /^[[:space:]]*#/ || line ~ /^[[:space:]]*$/) {
+        print line
+        next
+    }
+    if (!done && line ~ /^(FORCE:|AUTO:|SYNC:|COMPACT_KEYS|IDLE|RANDOM|STATUS|SKIP|PAUSE:|NOTE:)/) {
+        print "#" line "  # Wykonano " ts
+        done=1
+        next
+    }
+    print line
+}
+')
+                        {
+                            printf '%s\n' "$UPDATED_CMDS"
+                            printf '# [%s] Wykonano: %s\n' "$TIMESTAMP" "$CMD"
+                        } > "$COMMANDS_TXT_PRIMARY"
                     fi
                 fi
-            done
+            fi
+
+            # Fallback: lokalne pliki (jeśli nie ma komendy z GitHub)
+            if [ -z "$CMD" ]; then
+                for COMMANDS_TXT in "$COMMANDS_TXT_PRIMARY" "$COMMANDS_TXT_FALLBACK"; do
+                    [ -n "$CMD" ] && break
+                    if [ -f "$COMMANDS_TXT" ]; then
+                        CMD=$(grep -v '^#' "$COMMANDS_TXT" | grep -v '^$' | grep -E '^(FORCE:|AUTO:|SYNC:|COMPACT_KEYS|IDLE|RANDOM|STATUS|SELFTEST|SELF_CHECK|SKIP|PAUSE:|NOTE:)' | head -1)
+                        if [ -n "$CMD" ]; then
+                            echo "📨 Odebrano z $COMMANDS_TXT: $CMD"
+                            TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
+                            sed -i "s/^$CMD/#$CMD  # Wykonano $TIMESTAMP/" "$COMMANDS_TXT" 2>/dev/null
+                            echo "# [$TIMESTAMP] Wykonano: $CMD" >> "$COMMANDS_TXT"
+                            break
+                        fi
+                    fi
+                done
+            fi
             
             # 2. Sprawdź .worker_command (szybsze, lokalne)
             if [ -z "$CMD" ] && [ -f "$COMMAND_FILE" ]; then
@@ -6972,6 +10130,13 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                         MODE_EXTRA="${AUTO_LIMIT:-0}"
                         MODE_EXTRA2="AUTO"  # znacznik żeby nie nadpisywać dispatchera
                         ;;
+                    SELFTEST|SELF_CHECK)
+                        echo "🧪 Wymuszam SELFTEST"
+                        MODE_TYPE="SELFTEST"
+                        MODE_CAT="-"
+                        MODE_COUNT="0"
+                        MODE_EXTRA="FORCED"
+                        ;;
                     *)
                         echo "⚠️ Nieznana komenda: $CMD"
                         ;;
@@ -6981,7 +10146,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
             # Jeśli nie było wymuszenia, użyj dispatchera
             if [ "$MODE_EXTRA2" = "AUTO" ] || [ "$MODE_EXTRA2" = "SYNC" ]; then
                 :
-            elif [ -z "$MODE_EXTRA" ] || [ "$MODE_EXTRA" != "FORCED" -a "$MODE_EXTRA" != "RANDOM" ]; then
+            elif [[ -z "$MODE_EXTRA" || ( "$MODE_EXTRA" != "FORCED" && "$MODE_EXTRA" != "RANDOM" ) ]]; then
                 MODE_RESULT=$(select_work_mode)
                 MODE_TYPE=$(echo "$MODE_RESULT" | cut -d: -f1)
                 MODE_CAT=$(echo "$MODE_RESULT" | cut -d: -f2)
@@ -7031,6 +10196,47 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                             COUNT=0
                             # Wczytaj completed files raz na początku
                             COMPLETED_LIST=$(python3 -c "import json; d=json.load(open('$STATUS_FILE')); print(' '.join([f for f,v in d.get('files',{}).items() if v.get('overall_status')=='completed']))" 2>/dev/null)
+                            NEEDS_ANALYSIS_DOC_FILE="$(mktemp)"
+                            python3 - "$STATUS_FILE" << 'PY' > "$NEEDS_ANALYSIS_DOC_FILE"
+import json
+import os
+import sys
+
+status_file = sys.argv[1]
+try:
+    with open(status_file, "r", encoding="utf-8") as f:
+        data = json.load(f)
+except Exception:
+    data = {}
+
+files = data.get("files", {})
+npc_dirs = ["data-otservbr-global/npc", "data-canary/npc"]
+
+for npc_dir in npc_dirs:
+    if not os.path.isdir(npc_dir):
+        continue
+    for fname in os.listdir(npc_dir):
+        if not fname.endswith(".lua"):
+            continue
+        path = os.path.join(npc_dir, fname)
+        info = files.get(path)
+        if not info:
+            print(path)
+            continue
+        stages = info.get("stages", {})
+        if "2_analysis" not in stages or "3_documentation" not in stages:
+            print(path)
+            continue
+        doc_file = stages.get("3_documentation", {}).get("doc_file")
+        if doc_file:
+            if not os.path.exists(doc_file):
+                print(path)
+            continue
+        base = os.path.splitext(os.path.basename(path))[0]
+        safe = base.lower().replace(" ", "_").replace("-", "_")
+        if not os.path.exists(os.path.join("docs", "i18n", "npc", f"{safe}.md")):
+            print(path)
+PY
                             
                             # Przetwórz oba katalogi NPC
                             for npc_dir in data-otservbr-global/npc data-canary/npc; do
@@ -7038,9 +10244,16 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                                 for f in "$npc_dir"/*.lua; do
                                     [ -f "$f" ] || continue
                                     
-                                    # NAPRAWIONE: Pomiń już przetworzone pliki!
-                                    echo "$COMPLETED_LIST" | grep -qF "$f" && continue
-                                    grep -qF "$f" "$PROCESSED_FILE" 2>/dev/null && continue
+                                    NEEDS_ANALYSIS_DOC=false
+                                    if grep -qF "$f" "$NEEDS_ANALYSIS_DOC_FILE" 2>/dev/null; then
+                                        NEEDS_ANALYSIS_DOC=true
+                                    fi
+
+                                    if [ "$NEEDS_ANALYSIS_DOC" != "true" ]; then
+                                        # NAPRAWIONE: Pomiń już przetworzone pliki!
+                                        echo "$COMPLETED_LIST" | grep -qF "$f" && continue
+                                        grep -qF "$f" "$PROCESSED_FILE" 2>/dev/null && continue
+                                    fi
                                     
                                     NEEDS_WORK=false
                                     
@@ -7068,7 +10281,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                                         fi
                                     fi
                                     
-                                    if [ "$NEEDS_WORK" = "true" ]; then
+                                    if [ "$NEEDS_WORK" = "true" ] || [ "$NEEDS_ANALYSIS_DOC" = "true" ]; then
                                         status_update_activity "running" "$CYCLE" "MIGRATION" "file" "npc" "$f" "processing" "$COUNT" "${MODE_COUNT:-0}" "files" 0
                                         if ! process_file "$f"; then
                                             status_log_error "$CYCLE" "MIGRATION" "file" "npc" "$f" "process_file failed" "continue"
@@ -7078,6 +10291,7 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                                     fi
                                 done
                             done
+                            rm -f "$NEEDS_ANALYSIS_DOC_FILE" 2>/dev/null || true
                             echo "   📊 NPC: Zmigrowano $COUNT plików"
                             ;;
                         scripts)
@@ -7356,44 +10570,67 @@ for lang_dir in sorted(os.listdir('$I18N_DIR')):
                         sleep 300
                     fi
                     ;;
+                SELFTEST)
+                    echo "🧪 TRYB: SELFTEST"
+                    if ! self_check; then
+                        status_log_error "$CYCLE" "SELFTEST" "self_check" "-" "-" "self_check failed" "check logs"
+                    fi
+                    ;;
                 *)
                     echo "⚠️ Nieznany tryb: $MODE_TYPE"
                     ;;
             esac
             
             # Zapisz licznik cykli do pliku (dla statusu) - ROZSZERZONE DANE
-            python3 << SAVEPY
+            python3 - "$CYCLE" "$MODE_TYPE" "$MODE_CAT" "$MODE_COUNT" "$MODE_EXTRA" << 'SAVEPY'
 import json
 import os
+import sys
+import shutil
 from datetime import datetime
+
+try:
+    cycle = int(sys.argv[1])
+except Exception:
+    cycle = 0
+mode_type = sys.argv[2] if len(sys.argv) > 2 else ""
+mode_cat = sys.argv[3] if len(sys.argv) > 3 else ""
+mode_count = sys.argv[4] if len(sys.argv) > 4 else "0"
+mode_extra = sys.argv[5] if len(sys.argv) > 5 else "0"
+
+def to_int(value):
+    try:
+        return int(value)
+    except Exception:
+        return 0
 
 try:
     with open('i18n_global_stats.json', 'r') as f:
         data = json.load(f)
-except:
+except Exception:
     data = {}
 
 # Podstawowe dane cyklu
-data['total_cycles'] = $CYCLE
+data['total_cycles'] = cycle
 data['last_update'] = datetime.now().isoformat()
-data['mode'] = '$MODE_TYPE'
-data['category'] = '$MODE_CAT'
+data['mode'] = mode_type
+data['category'] = mode_cat
 
 # === DANE SPECYFICZNE DLA TRYBU ===
-if '$MODE_TYPE' == 'MIGRATION':
+if mode_type == 'MIGRATION':
     # Statystyki migracji plików
     status_file = 'i18n_file_status.json'
     try:
         with open(status_file) as f:
             status_data = json.load(f)
         files = status_data.get('files', {})
-        
+
         # Zlicz pliki
         completed = [f for f, info in files.items() if info.get('overall_status') == 'completed']
         files_with_keys = 0
         files_without_keys = 0
         total_keys_extracted = 0
-        
+
         for fpath in completed:
             keys = files[fpath].get('stages', {}).get('5_extraction_en', {}).get('keys_added', 0)
             if keys > 0:
@@ -7401,56 +10638,64 @@ if '$MODE_TYPE' == 'MIGRATION':
                 total_keys_extracted += keys
             else:
                 files_without_keys += 1
-        
+
         data['migration'] = {
             'files_scanned': len(completed),
             'files_with_keys': files_with_keys,
             'files_without_keys': files_without_keys,
             'keys_extracted': total_keys_extracted,
-            'current_category': '$MODE_CAT',
-            'batch_size': int('${MODE_COUNT:-0}') if '${MODE_COUNT:-0}'.isdigit() else 0
+            'current_category': mode_cat,
+            'batch_size': to_int(mode_count)
         }
     except Exception as e:
         data['migration'] = {'error': str(e)}
 
-elif '$MODE_TYPE' == 'TRANSLATION_SYNC':
+elif mode_type == 'TRANSLATION_SYNC':
     data['translation_sync'] = {
-        'language': '$MODE_CAT',
-        'json_file': '$MODE_COUNT',
-        'keys_to_sync': int('${MODE_EXTRA:-0}') if '${MODE_EXTRA:-0}'.isdigit() else 0
+        'language': mode_cat,
+        'json_file': mode_count,
+        'keys_to_sync': to_int(mode_extra)
     }
 
-elif '$MODE_TYPE' == 'AUTO_TRANSLATE':
+elif mode_type == 'AUTO_TRANSLATE':
     data['auto_translate'] = {
-        'language': '$MODE_CAT',
-        'json_file': '$MODE_COUNT',
-        'keys_to_translate': int('${MODE_EXTRA:-0}') if '${MODE_EXTRA:-0}'.isdigit() else 0
+        'language': mode_cat,
+        'json_file': mode_count,
+        'keys_to_translate': to_int(mode_extra)
     }
 
-elif '$MODE_TYPE' == 'IDLE':
+elif mode_type == 'IDLE':
     # Sprawdź wyniki skanowania
     new_files_count = 0
     quality_issues = 0
     try:
         with open('i18n/new_files_detected.json') as f:
             new_files_count = json.load(f).get('needs_migration', 0)
-    except:
+    except Exception:
         pass
     try:
         with open('i18n/quality_report.json') as f:
             quality_issues = json.load(f).get('total_issues', 0)
-    except:
+    except Exception:
         pass
-    
+
     data['idle'] = {
         'new_files_detected': new_files_count,
         'quality_issues': quality_issues,
         'last_scan': datetime.now().isoformat()
     }
 
-# Zapisz
-with open('i18n_global_stats.json', 'w') as f:
+# Zapisz atomowo
+output_file = 'i18n_global_stats.json'
+tmp_file = output_file + '.tmp'
+if os.path.exists(output_file):
+    try:
+        shutil.copy2(output_file, output_file + '.bak')
+    except Exception:
+        pass
+with open(tmp_file, 'w') as f:
     json.dump(data, f, indent=2)
+os.replace(tmp_file, output_file)
 SAVEPY
 
             # Daily agregacja (UTC) na podstawie ops/errors
@@ -7465,9 +10710,18 @@ SAVEPY
                 if [ "$NO_GIT" = "true" ]; then
                     echo "🚫 --no-git: pomijam git add/commit/push"
                 else
-                    git add -A 2>/dev/null
-                    # Zlicz TOTAL kluczy ze wszystkich JSON (nie tylko NPC completed)
-                    TOTAL_KEYS=$(python3 -c "
+                    (
+                        GIT_LOCK_FILE=".i18n_git.lock"
+                        if command -v flock >/dev/null 2>&1; then
+                            exec 9>"$GIT_LOCK_FILE"
+                            if ! flock -n 9; then
+                                echo "🔒 Repo zablokowane (git lock), pomijam git w tym cyklu"
+                                exec 9>&-
+                                exit 0
+                            fi
+                            git add -A 2>/dev/null
+                            # Zlicz TOTAL kluczy ze wszystkich JSON (nie tylko NPC completed)
+                            TOTAL_KEYS=$(python3 -c "
 import json, os
 total = 0
 for f in os.listdir('i18n/en'):
@@ -7478,8 +10732,33 @@ for f in os.listdir('i18n/en'):
         except: pass
 print(total)
 " 2>/dev/null || echo "?")
-                    git commit -m "📊 I18N: $TOTAL_KEYS kluczy, $MODE_TYPE - Cykl #$CYCLE" 2>/dev/null
-                    git push origin master 2>/dev/null && echo "📤 Push OK" || echo "⚠️ Push failed"
+                            git commit -m "📊 I18N: $TOTAL_KEYS kluczy, $MODE_TYPE - Cykl #$CYCLE" 2>/dev/null
+                            git push origin master 2>/dev/null && echo "📤 Push OK" || echo "⚠️ Push failed"
+                            flock -u 9 2>/dev/null || true
+                            exec 9>&-
+                        else
+                            if ! mkdir "$GIT_LOCK_FILE" 2>/dev/null; then
+                                echo "🔒 Repo zablokowane (git lock), pomijam git w tym cyklu"
+                                exit 0
+                            fi
+                            git add -A 2>/dev/null
+                            # Zlicz TOTAL kluczy ze wszystkich JSON (nie tylko NPC completed)
+                            TOTAL_KEYS=$(python3 -c "
+import json, os
+total = 0
+for f in os.listdir('i18n/en'):
+    if f.endswith('.json'):
+        try:
+            with open(f'i18n/en/{f}') as jf:
+                total += len(json.load(jf))
+        except: pass
+print(total)
+" 2>/dev/null || echo "?")
+                            git commit -m "📊 I18N: $TOTAL_KEYS kluczy, $MODE_TYPE - Cykl #$CYCLE" 2>/dev/null
+                            git push origin master 2>/dev/null && echo "📤 Push OK" || echo "⚠️ Push failed"
+                            rmdir "$GIT_LOCK_FILE" 2>/dev/null || true
+                        fi
+                    )
                 fi
             fi
             
@@ -7519,6 +10798,7 @@ print(total)
         echo "Użycie:"
         echo "  $0 --file <path>        Przetwórz jeden plik (MIGRATION)"
         echo "  $0 --translate [lang]   Interaktywne tłumaczenia (domyślnie: pl)"
+        echo "  $0 --self-check         Szybki sanity check"
         echo "  $0 --status             Pokaż dashboard statusu"
         echo "  $0 --stats              Szczegółowe statystyki języków"
         echo "  $0 --auto [N]           Automatyczna migracja N plików"

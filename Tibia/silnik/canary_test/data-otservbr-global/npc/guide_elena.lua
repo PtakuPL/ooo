@@ -26,11 +26,11 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I can inform you about the status of this world, if you're interested." },
-	{ text = "Hello, is this your first visit to Venore? I can show you around a little." },
-	{ text = "Talk to me if you need directions." },
-	{ text = "Need some help finding your way through Venore? Let me assist you." },
-	{ text = "Free escort to the depot for newcomers!" },
+	{ i18nKey = "npc.guide_elena.voice_1" },
+	{ i18nKey = "npc.guide_elena.voice_2" },
+	{ i18nKey = "npc.guide_elena.voice_3" },
+	{ i18nKey = "npc.guide_elena.voice_4" },
+	{ i18nKey = "npc.guide_elena.voice_5" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -104,9 +104,9 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "town" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_elena.stdmod_7" })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_elena.stdmod_8" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to Venore, |PLAYERNAME| Would you like some information and a map guide?")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and enjoy your stay in Venore, |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.guide_elena.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.guide_elena.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.guide_elena.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

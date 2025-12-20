@@ -5,7 +5,7 @@ condition:setOutfit({ lookType = 137, lookHead = 113, lookBody = 120, lookLegs =
 local secretServiceKit = Action()
 function secretServiceKit.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	player:addCondition(condition)
-	player:say("You disguise yourself as a beautiful amazon!", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.actions_amazon_disguise_kit.say_1", TALKTYPE_MONSTER_SAY)
 	item:remove()
 	return true
 end

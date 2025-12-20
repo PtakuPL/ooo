@@ -147,10 +147,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "first rod") or MsgContains(message, "first wand") then
 		if player:isMage() then
 			if player:getStorageValue(Storage.FirstMageWeapon) == -1 then
-				npcHandler:say("So you ask me for a {" .. ItemType(itemId):getName() .. "} to begin your adventure?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rachel.say_1", { ItemType(itemId):getName() })
 				npcHandler:setTopic(playerId, 1)
 			else
-				npcHandler:say("What? I have already gave you one {" .. ItemType(itemId):getName() .. "}!", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rachel.say_2", { ItemType(itemId):getName() })
 			end
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.rachel.say_1")
@@ -167,16 +167,16 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 0)
 	elseif categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), itemsTable)
-		npcHandler:say("Of course, just browse through my wares. You can also look at " .. remainingCategories .. ".", npc, player)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.rachel.say_3", { remainingCategories })
 		npc:openShopWindowTable(player, categoryTable)
 	end
 	return true
 end
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_GREET, "Welcome |PLAYERNAME|! Whats your need?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye, |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.rachel.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.rachel.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.rachel.walkaway_msg_1")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my wares. Or do you want to look only at " .. GetFormattedShopCategoryNames(itemsTable) .. ".")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

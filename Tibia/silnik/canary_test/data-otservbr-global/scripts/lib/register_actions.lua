@@ -425,7 +425,7 @@ function onUseShovel(player, item, fromPosition, target, toPosition, isHotkey)
 		-- Wrath of the Emperor Quest
 	elseif target.actionid == 8024 then
 		player:addItem(11341, 1)
-		player:say("You dig out a handful of earth from this sacred place.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.register_actions.say_17", TALKTYPE_MONSTER_SAY)
 	elseif target.itemid == 7749 and player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.TutorialHintsStorage) < 20 then
 		player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_7")
 		player:setStorageValue(Storage.Quest.U8_2.TheBeginningQuest.TutorialHintsStorage, 19)
@@ -638,7 +638,7 @@ function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 				if player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) == 4 then
 					player:addItem(9697, 1)
 					player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline, player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) + 1)
-					player:say("*crush*", TALKTYPE_MONSTER_SAY)
+					player:sayLocalized("scripts.register_actions.say_16", TALKTYPE_MONSTER_SAY)
 				end
 			else
 				player:getPosition():sendMagicEffect(CONST_ME_POFF)
@@ -649,28 +649,16 @@ function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 		if player:getStorageValue(Storage.Quest.U10_80.GrimvaleQuest.SilverVein) < os.time() then
 			local chance = math.random(1, 10)
 			if chance >= 5 then
-				player:sendTextMessage(
-					MESSAGE_EVENT_ADVANCE,
-					"Even after a thorough and frustrating \z
-				search you could not find enough liquified silver in this vein to fill a flask."
-				)
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_6")
 			elseif chance <= 4 then
-				player:sendTextMessage(
-					MESSAGE_EVENT_ADVANCE,
-					"Carefully you gather some of the liquified \z
-				silver from this vein in a small flask. You now feel strangely affected to the moon."
-				)
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_5")
 				player:addItem(22058)
 				target:transform(4464)
 				addEvent(revertItem, 10 * 60 * 1000, toPosition, 4464, 22075)
 			end
 			player:setStorageValue(Storage.Quest.U10_80.GrimvaleQuest.SilverVein, os.time() + 2 * 60)
 		else
-			player:sendTextMessage(
-				MESSAGE_EVENT_ADVANCE,
-				"You are still exhausted from earlier attempts. \z
-				Getting liquid silver out of the mountain needs concentration and a steady hand."
-			)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.register_actions.msg_4")
 		end
 	elseif target and target.getActionId and target:getActionId() == 60000 then
 		--The Ice Islands Quest, Nibelor 1: Breaking the Ice
@@ -801,7 +789,7 @@ function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 	elseif target.itemid == 11340 then
 		-- Wrath of the emperor quest
 		player:addItem(11339, 1)
-		player:say("The cracked part of the table lets you cut out a large chunk of wood with your pick.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.register_actions.say_15", TALKTYPE_MONSTER_SAY)
 	elseif target.itemid == 372 then
 		target:transform(394)
 		target:decay()
@@ -898,7 +886,7 @@ function onUseCrowbar(player, item, fromPosition, target, toPosition, isHotkey)
 		end
 	elseif target.uid == 3073 then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SewerPipe03) < 1 then
-			player:say("You have used the crowbar on a grate.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.register_actions.say_14", TALKTYPE_MONSTER_SAY)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SewerPipe03, 1)
 			-- StorageValue for Questlog "Mission 01: Something Rotten"
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission01, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission01) + 1)
@@ -906,7 +894,7 @@ function onUseCrowbar(player, item, fromPosition, target, toPosition, isHotkey)
 	elseif target.uid == 3074 then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SewerPipe04) < 1 then
 			doSetMonsterOutfit(player, "bog raider", 5 * 1000)
-			player:say("You have used the crowbar on a knot.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.register_actions.say_13", TALKTYPE_MONSTER_SAY)
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.SewerPipe04, 1)
 			-- StorageValue for Questlog "Mission 01: Something Rotten"
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission01, player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission01) + 1)
@@ -935,7 +923,7 @@ function onUseCrowbar(player, item, fromPosition, target, toPosition, isHotkey)
 		if player:getOutfit().lookType == 137 then
 			player:setStorageValue(Storage.Quest.U8_1.SecretService.TBIMission06, 2)
 			Game.createMonster("barbarian skullhunter", yellPosition)
-			player:say("Nooooo! What have you done??", TALKTYPE_MONSTER_SAY, false, 0, yellPosition)
+			player:sayLocalized("scripts.register_actions.say_12", TALKTYPE_MONSTER_SAY, false, 0, yellPosition)
 			yellPosition.y = yellPosition.y - 1
 			Game.createMonster("barbarian skullhunter", yellPosition)
 		end
@@ -956,7 +944,7 @@ function onUseSpoon(player, item, fromPosition, target, toPosition, isHotkey)
 			player:addItem(7251, 1)
 			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.SporesMushroom, 1)
 			toPosition:sendMagicEffect(CONST_ME_MAGIC_RED)
-			player:say("You retrieve spores from a mushroom.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.register_actions.say_11", TALKTYPE_MONSTER_SAY)
 			return true
 		end
 	elseif targetId == 390 then
@@ -966,7 +954,7 @@ function onUseSpoon(player, item, fromPosition, target, toPosition, isHotkey)
 				player:addItem(7247, 1) -- fine sulphur
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.SulphurLava, 1)
 				toPosition:sendMagicEffect(CONST_ME_MAGIC_RED)
-				player:say("You retrieve a fine sulphur from a lava hole.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.register_actions.say_10", TALKTYPE_MONSTER_SAY)
 			end
 		-- What a Foolish Quest - Mission 8 (sulphur)
 		elseif player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.Questline) == 21 then
@@ -990,11 +978,11 @@ function onUseSpikedSquelcher(player, item, fromPosition, target, toPosition, is
 		local rand = math.random(100)
 		if rand <= 10 then
 			toPosition:sendMagicEffect(CONST_ME_BLUE_FIREWORKS)
-			player:say("Success! Within the chest, you discover the fabled golem grench.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.register_actions.say_9", TALKTYPE_MONSTER_SAY)
 			player:addItem(16251, 1)
 		else
 			toPosition:sendMagicEffect(CONST_ME_WHITE_SMOKES)
-			player:say("The spiked squelcher vanishes into the chest's abyss.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.register_actions.say_8", TALKTYPE_MONSTER_SAY)
 		end
 	else
 		return false
@@ -1086,7 +1074,7 @@ function onUseKitchenKnife(player, item, fromPosition, target, toPosition, isHot
 				player:addItem(7248, 1)
 				player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.FrostbiteHerb, 1)
 				toPosition:sendMagicEffect(CONST_ME_MAGIC_BLUE)
-				player:say("You cut a leaf from a frostbite herb.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.register_actions.say_7", TALKTYPE_MONSTER_SAY)
 			end
 		end
 	elseif targetId == 3647 then
@@ -1097,7 +1085,7 @@ function onUseKitchenKnife(player, item, fromPosition, target, toPosition, isHot
 				target:transform(3646)
 				addEvent(revertItem, 60 * 1000, toPosition, 3646, 3647)
 				toPosition:sendMagicEffect(CONST_ME_MAGIC_GREEN)
-				player:say("You cut a flower from a cactus.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.register_actions.say_6", TALKTYPE_MONSTER_SAY)
 			end
 		end
 	elseif targetId == 3753 then
@@ -1108,27 +1096,27 @@ function onUseKitchenKnife(player, item, fromPosition, target, toPosition, isHot
 				target:transform(3750)
 				addEvent(revertItem, 60 * 1000, toPosition, 3750, 3753)
 				toPosition:sendMagicEffect(CONST_ME_MAGIC_GREEN)
-				player:say("You cut a flower from a bush.", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.register_actions.say_5", TALKTYPE_MONSTER_SAY)
 			end
 		end
 		-- What a foolish Quest (Mission 1)
 	elseif target.actionid == 4200 then
 		if toPosition.x == 32349 and toPosition.y == 32361 and toPosition.z == 7 then
 			player:addItem(102, 1)
-			player:say("The stubborn flower has ruined your knife but at least you got it.", TALKTYPE_MONSTER_SAY, false, player, toPosition)
+			player:sayLocalized("scripts.register_actions.say_4", TALKTYPE_MONSTER_SAY, false, player, toPosition)
 			item:remove(1)
 		else
-			player:say("This flower is too pathetic.", TALKTYPE_MONSTER_SAY, false, player, toPosition)
+			player:sayLocalized("scripts.register_actions.say_3", TALKTYPE_MONSTER_SAY, false, player, toPosition)
 		end
 		-- What a foolish quest (mission 5)
 	elseif targetId == 114 then
 		if player:getStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.EmperorBeardShave) == 1 then
-			player:say("God shave the emperor. Some fool already did it.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.register_actions.say_2", TALKTYPE_MONSTER_SAY)
 			return true
 		end
 
 		player:setStorageValue(Storage.Quest.U8_1.WhatAFoolishQuest.EmperorBeardShave, 1)
-		player:say("This is probably the most foolish thing you've ever done!", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.register_actions.say_1", TALKTYPE_MONSTER_SAY)
 		player:addItem(113, 1)
 		Game.createMonster("dwarf guard", Position(32656, 31853, 13))
 		-- What a foolish quest (mission 8)

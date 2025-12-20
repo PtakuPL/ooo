@@ -1,6 +1,6 @@
 StaticMainWindow
   id: updaterWindow
-  !text: tr('Updater')
+  !text: tr("otclient_modules.updater_otui.tr_4")
   width: 350
 
   layout:
@@ -9,7 +9,7 @@ StaticMainWindow
       
   Label
     id: status
-    !text: tr('Checking for updates')
+    !text: tr("otclient_modules.updater_otui.tr_3")
     text-align: center
 
   ProgressBar
@@ -40,7 +40,7 @@ StaticMainWindow
     margin-right: 50
     margin-top: 5
     margin-bottom: 10
-    !text: tr('Change updater URL')
+    !text: tr("otclient_modules.updater_otui.tr_2")
     @onClick: Updater.changeUrl()
     $!mobile:
       visible: false
@@ -48,6 +48,6 @@ StaticMainWindow
   Button
     margin-left: 90
     margin-right: 90
-    !text: tr('Cancel')
+    !text: tr("otclient_modules.updater_otui.tr_1")
     @onClick: Updater.abort()
 

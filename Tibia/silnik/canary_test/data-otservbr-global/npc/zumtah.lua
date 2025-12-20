@@ -136,8 +136,8 @@ keywordHandler:addKeyword({ "lizard" }, StdModule.say, { npcHandler = npcHandler
 keywordHandler:addKeyword({ "zalamon" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.zumtah.stdmod_6" })
 keywordHandler:addKeyword({ "emperor" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.zumtah.stdmod_7" })
 keywordHandler:addKeyword({ "resistance" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.zumtah.stdmod_8" })
-npcHandler:setMessage(MESSAGE_GREET, "Another visitor to this constricted, cosy, calm realm, perfect except for an {exit}. Muhaha.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Muhahaha.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.zumtah.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.zumtah.farewell_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

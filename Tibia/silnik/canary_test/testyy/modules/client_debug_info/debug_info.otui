@@ -18,7 +18,7 @@ DebugLabel < Label
 MainWindow
   id: debugWindow
   size: 600 150
-  !text: tr('Debug Info')
+  !text: tr("otclient_modules.debug_info_otui.tr_2")
   @onClose: modules.client_debug_info.onMiniWindowClose()
   &save: false
   margin: 0 0 0 0
@@ -39,7 +39,7 @@ MainWindow
     vertical-scrollbar: debugScroll
 
     DebugLabel
-      !text: tr('Proxies')
+      !text: tr("otclient_modules.debug_info_otui.tr_1")
       anchors.top: parent.top
 
     DebugText

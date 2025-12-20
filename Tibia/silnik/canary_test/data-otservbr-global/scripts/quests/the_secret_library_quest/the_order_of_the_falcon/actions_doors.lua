@@ -44,7 +44,7 @@ function actions_falcon_doors.onUse(player, item, fromPosition, target, toPositi
 					player:teleportTo(toPosition, true)
 					item:transform(item.itemid + 1)
 				else
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The door seems to be sealed against unwanted intruders.")
+					player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_doors.msg_3")
 				end
 			end
 		end
@@ -62,7 +62,7 @@ function actions_falcon_doors.onUse(player, item, fromPosition, target, toPositi
 						player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
 					end
 				else
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can not use this boat yet.")
+					player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_doors.msg_2")
 				end
 			end
 		end

@@ -14,10 +14,10 @@ local function summonHungry(creature)
 		end
 		if monster and monster:getName():lower() == "the hungry baron from below" then
 			monster:addHealth(-(monster:getHealth() - oldBossHealth))
-			monster:say("Gulp!", TALKTYPE_MONSTER_SAY)
+			monster:sayLocalized("scripts.creaturescripts_the_baron_from_below.say_2", TALKTYPE_MONSTER_SAY)
 			addEvent(function()
 				if monster then
-					monster:say("Gulp!", TALKTYPE_MONSTER_SAY)
+					monster:sayLocalized("scripts.creaturescripts_the_baron_from_below.say_1", TALKTYPE_MONSTER_SAY)
 				end
 			end, 2 * 1000)
 			addEvent(function()

@@ -26,8 +26,8 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Equipment and general goods!" },
-	{ text = "Selling ammunition and buying bows and crossbows!" },
+	{ i18nKey = "npc.timur.voice_1" },
+	{ i18nKey = "npc.timur.voice_2" },
 }
 
 local keywordHandler = KeywordHandler:new()

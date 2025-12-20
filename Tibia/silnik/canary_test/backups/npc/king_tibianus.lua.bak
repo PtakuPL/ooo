@@ -194,7 +194,7 @@ end
 local node1 = keywordHandler:addKeyword({ "promot" }, StdModule.say, {
 	npcHandler = npcHandler,
 	onlyFocus = true,
-	text = "I can promote you for 20000 gold coins. Do you want me to promote you?",
+	i18nKey = "npc.king_tibianus.stdmod_1",
 })
 node1:addChildKeyword({ "yes" }, StdModule.promotePlayer, {
 	npcHandler = npcHandler,
@@ -205,240 +205,240 @@ node1:addChildKeyword({ "yes" }, StdModule.promotePlayer, {
 node1:addChildKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,
 	onlyFocus = true,
-	text = "Alright then, come back when you are ready.",
+	i18nKey = "npc.king_tibianus.stdmod_2",
 	reset = true,
 })
 -- Basic
 keywordHandler:addKeyword({ "eremo" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "It is said that he lives on a small island near Edron. Maybe the people there know more about him.",
+	i18nKey = "npc.king_tibianus.stdmod_3",
 })
 keywordHandler:addKeyword({ "otbr" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Awesome! Please pay a visit to www.otserv.com.br!",
+	i18nKey = "npc.king_tibianus.stdmod_4",
 })
 keywordHandler:addKeyword({ "baah" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Baah is awesome dude that rewrote my outfit script.",
+	i18nKey = "npc.king_tibianus.stdmod_5",
 })
 keywordHandler:addKeyword({ "job" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I am your sovereign, King Tibianus III, and it's my duty to uphold {justice} and provide guidance for my subjects.",
+	i18nKey = "npc.king_tibianus.stdmod_6",
 })
 keywordHandler:addKeyword({ "justice" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I try my best to be just and fair to our citizens. The army and the {TBI} are a great help in fulfilling this duty.",
+	i18nKey = "npc.king_tibianus.stdmod_7",
 })
 keywordHandler:addKeyword({ "name" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Preposterous! You must know the name of your own King!",
+	i18nKey = "npc.king_tibianus.stdmod_8",
 })
 keywordHandler:addKeyword({ "news" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The latest news is usually brought to our magnificent town by brave adventurers. They recount tales of their journeys at Frodo's tavern.",
+	i18nKey = "npc.king_tibianus.stdmod_9",
 })
 keywordHandler:addKeyword({ "how", "are", "you" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Thank you, I'm fine.",
+	i18nKey = "npc.king_tibianus.stdmod_10",
 })
 keywordHandler:addKeyword({ "castle" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Rain Castle is my home.",
+	i18nKey = "npc.king_tibianus.stdmod_11",
 })
 keywordHandler:addKeyword({ "sell" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Sell? Sell what? My kingdom isn't for sale!",
+	i18nKey = "npc.king_tibianus.stdmod_12",
 })
 keywordHandler:addKeyword({ "god" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Honour the Gods and above all pay your {taxes}.",
+	i18nKey = "npc.king_tibianus.stdmod_13",
 })
 keywordHandler:addKeyword({ "zathroth" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Please ask a priest about the gods.",
+	i18nKey = "npc.king_tibianus.stdmod_14",
 })
 keywordHandler:addKeyword({ "citizen" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The citizens of Tibia are my subjects. Ask the old monk Quentin if you want to learn more about them.",
+	i18nKey = "npc.king_tibianus.stdmod_15",
 })
 keywordHandler:addKeyword({ "sam" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "He is a skilled blacksmith and a loyal subject.",
+	i18nKey = "npc.king_tibianus.stdmod_16",
 })
 keywordHandler:addKeyword({ "frodo" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "He is the owner of Frodo's Hut and a faithful tax-payer.",
+	i18nKey = "npc.king_tibianus.stdmod_17",
 })
 keywordHandler:addKeyword({ "gorn" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "He was once one of Tibia's greatest fighters. Now he sells equipment.",
+	i18nKey = "npc.king_tibianus.stdmod_18",
 })
 keywordHandler:addKeyword({ "benjamin" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "He was once my greatest general. Now he is very old and senile so we assigned him to work for the Royal Tibia Mail.",
+	i18nKey = "npc.king_tibianus.stdmod_19",
 })
 keywordHandler:addKeyword({ "noodles" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The royal poodle Noodles is my greatest {treasure}!",
+	i18nKey = "npc.king_tibianus.stdmod_20",
 })
 keywordHandler:addKeyword({ "ferumbras" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "He is a follower of the evil God Zathroth and responsible for many attacks on us. Kill him on sight!",
+	i18nKey = "npc.king_tibianus.stdmod_21",
 })
 keywordHandler:addKeyword({ "bozo" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "He is my royal jester and cheers me up now and then.",
+	i18nKey = "npc.king_tibianus.stdmod_22",
 })
 keywordHandler:addKeyword({ "treasure" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The royal poodle Noodles is my greatest treasure!",
+	i18nKey = "npc.king_tibianus.stdmod_23",
 })
 keywordHandler:addKeyword({ "monster" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Go and hunt them! For king and country!",
+	i18nKey = "npc.king_tibianus.stdmod_24",
 })
 keywordHandler:addKeyword({ "help" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Visit Quentin the monk for help.",
+	i18nKey = "npc.king_tibianus.stdmod_25",
 })
 keywordHandler:addKeyword({ "sewer" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "What a disgusting topic!",
+	i18nKey = "npc.king_tibianus.stdmod_26",
 })
 keywordHandler:addKeyword({ "dungeon" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Dungeons are no places for kings.",
+	i18nKey = "npc.king_tibianus.stdmod_27",
 })
 keywordHandler:addKeyword({ "equipment" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Feel free to buy it in our town's fine shops.",
+	i18nKey = "npc.king_tibianus.stdmod_28",
 })
 keywordHandler:addKeyword({ "food" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Ask the royal cook for some food.",
+	i18nKey = "npc.king_tibianus.stdmod_29",
 })
 keywordHandler:addKeyword({ "tax collector" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "That tax collector is the bane of my life. He is so lazy. I bet you haven't payed any taxes at all.",
+	i18nKey = "npc.king_tibianus.stdmod_30",
 })
 keywordHandler:addKeyword({ "king" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I am the king, so watch what you say!",
+	i18nKey = "npc.king_tibianus.stdmod_31",
 })
 keywordHandler:addKeyword({ "army" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Ask the soldiers about that.",
+	i18nKey = "npc.king_tibianus.stdmod_32",
 })
 keywordHandler:addKeyword({ "shop" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Visit the shops of our merchants and craftsmen.",
+	i18nKey = "npc.king_tibianus.stdmod_33",
 })
 keywordHandler:addKeyword({ "guild" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The four major guilds are the knights, the paladins, the druids, and the sorcerers.",
+	i18nKey = "npc.king_tibianus.stdmod_34",
 })
 keywordHandler:addKeyword({ "minotaur" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Vile monsters, but I must admit they are strong and sometimes even cunning ... in their own bestial way.",
+	i18nKey = "npc.king_tibianus.stdmod_35",
 })
 keywordHandler:addKeyword({ "good" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The forces of good are hard pressed in these dark times.",
+	i18nKey = "npc.king_tibianus.stdmod_36",
 })
 keywordHandler:addKeyword({ "evil" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "We need all strength we can muster to smite evil!",
+	i18nKey = "npc.king_tibianus.stdmod_37",
 })
 keywordHandler:addKeyword({ "order" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "We need order to survive!",
+	i18nKey = "npc.king_tibianus.stdmod_38",
 })
 keywordHandler:addKeyword({ "chaos" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Chaos arises from selfishness.",
+	i18nKey = "npc.king_tibianus.stdmod_39",
 })
 keywordHandler:addKeyword({ "excalibug" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "It's the sword of the Kings. If you return this weapon to me I will {reward} you beyond your wildest dreams.",
+	i18nKey = "npc.king_tibianus.stdmod_40",
 })
 keywordHandler:addKeyword({ "reward" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Well, if you want a reward, go on a quest to bring me Excalibug!",
+	i18nKey = "npc.king_tibianus.stdmod_41",
 })
 keywordHandler:addKeyword({ "chester" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "A very competent person. A little nervous but very competent.",
+	i18nKey = "npc.king_tibianus.stdmod_42",
 })
 keywordHandler:addKeyword({ "tbi" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "This organisation is an essential tool for holding our enemies in check. Its headquarter is located in the bastion in the northwall.",
+	i18nKey = "npc.king_tibianus.stdmod_43",
 })
 keywordHandler:addKeyword({ "tibia" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Soon the whole land will be ruled by me once again!",
+	i18nKey = "npc.king_tibianus.stdmod_44",
 })
 keywordHandler:addAliasKeyword({ "land" })
 keywordHandler:addKeyword({ "harkath" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Harkath Bloodblade is the general of our glorious {army}.",
+	i18nKey = "npc.king_tibianus.stdmod_45",
 })
 keywordHandler:addAliasKeyword({ "bloodblade" })
 keywordHandler:addAliasKeyword({ "general" })
 keywordHandler:addKeyword({ "quest" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I will call for heroes as soon as the need arises again and then reward them appropriately.",
+	i18nKey = "npc.king_tibianus.stdmod_46",
 })
 keywordHandler:addAliasKeyword({ "mission" })
 keywordHandler:addKeyword({ "gold" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "To pay your taxes, visit the royal tax collector.",
+	i18nKey = "npc.king_tibianus.stdmod_47",
 })
 keywordHandler:addAliasKeyword({ "money" })
 keywordHandler:addAliasKeyword({ "tax" })
 keywordHandler:addAliasKeyword({ "collector" })
 keywordHandler:addKeyword({ "time" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "It's a time for heroes!",
+	i18nKey = "npc.king_tibianus.stdmod_48",
 })
 keywordHandler:addAliasKeyword({ "hero" })
 keywordHandler:addAliasKeyword({ "adventurer" })
 keywordHandler:addKeyword({ "enemy" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Our enemies are numerous. The evil minotaurs, Ferumbras, and the renegade city of Carlin to the north are just some of them.",
+	i18nKey = "npc.king_tibianus.stdmod_49",
 })
 keywordHandler:addAliasKeyword({ "enemies" })
 keywordHandler:addKeyword({ "carlin" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "They dare to reject my reign over the whole continent!",
+	i18nKey = "npc.king_tibianus.stdmod_50",
 })
 keywordHandler:addKeyword({ "thais" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Our beloved city has some fine shops, guildhouses and a modern sewerage system.",
+	i18nKey = "npc.king_tibianus.stdmod_51",
 })
 keywordHandler:addAliasKeyword({ "city" })
 keywordHandler:addKeyword({ "merchant" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Ask around about them.",
+	i18nKey = "npc.king_tibianus.stdmod_52",
 })
 keywordHandler:addAliasKeyword({ "craftsmen" })
 keywordHandler:addKeyword({ "paladin" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The paladins are great protectors for Thais.",
+	i18nKey = "npc.king_tibianus.stdmod_53",
 })
 keywordHandler:addAliasKeyword({ "elane" })
 keywordHandler:addKeyword({ "knight" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The brave knights are necessary for human survival in Thais.",
+	i18nKey = "npc.king_tibianus.stdmod_54",
 })
 keywordHandler:addAliasKeyword({ "gregor" })
 keywordHandler:addKeyword({ "sorcerer" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The magic of the sorcerers is a powerful tool to smite our enemies.",
+	i18nKey = "npc.king_tibianus.stdmod_55",
 })
 keywordHandler:addAliasKeyword({ "muriel" })
 keywordHandler:addKeyword({ "druid" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "We need the druidic healing powers to fight evil.",
+	i18nKey = "npc.king_tibianus.stdmod_56",
 })
 keywordHandler:addAliasKeyword({ "marvik" })
 

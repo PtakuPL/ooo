@@ -27,16 +27,16 @@ npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
 	{
-		text = "<mumbles> So where was I again?",
+		i18nKey = "npc.wyrdin.voice_1",
 	},
 	{
-		text = "<mumbles> Typical - you can never find a hero when you need one!",
+		i18nKey = "npc.wyrdin.voice_2",
 	},
 	{
-		text = "<mumbles> Could the bonelord language be the invention of some madman?",
+		i18nKey = "npc.wyrdin.voice_3",
 	},
 	{
-		text = "<mumbles> The curse algorithm of triplex shadowing has to be two times higher than an overcharged nanoquorx on the peripheral...",
+		i18nKey = "npc.wyrdin.voice_4",
 	},
 }
 

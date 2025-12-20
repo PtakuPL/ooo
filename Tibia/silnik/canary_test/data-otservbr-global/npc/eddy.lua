@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Have you moved to a new home? I'm the specialist for equipping it." },
+	{ i18nKey = "npc.eddy.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -58,8 +58,8 @@ end
 
 keywordHandler:addKeyword({ "furniture" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.eddy.stdmod_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|! Do you need some equipment for your house?")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Have a look. Most furniture comes in handy kits. Just use them in your house to assemble the furniture. Do you want to see only a certain {type} of furniture?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.eddy.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.eddy.sendtrade_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

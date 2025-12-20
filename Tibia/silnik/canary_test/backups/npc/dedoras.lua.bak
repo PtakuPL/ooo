@@ -213,12 +213,12 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-keywordHandler:addKeyword({ "looking" }, StdModule.say, { npcHandler = npcHandler, text = "I need the help of some competent {adventurers} to handle a threat to all creation." })
-keywordHandler:addKeyword({ "value" }, StdModule.say, { npcHandler = npcHandler, text = "This leaves us with no choice but to take action into our own {hands}." })
-keywordHandler:addKeyword({ "threat" }, StdModule.say, { npcHandler = npcHandler, text = "I guess you know about the {background} and there is no need to tell you that the forces from beyond managed to acquire the parts of the godbreaker in a coup." })
-keywordHandler:addKeyword({ "disassembled" }, StdModule.say, { npcHandler = npcHandler, text = "The secret locations of the godbreaker {parts} were revealed and due to trickery, the minions of Variphor aquired all of them." })
-keywordHandler:addKeyword({ "obscure" }, StdModule.say, { npcHandler = npcHandler, text = "Those pieces of knowledge come in several forms and shapes. For most I can give you more or less specific hints where to start your {search}." })
-keywordHandler:addKeyword({ "hands" }, StdModule.say, { npcHandler = npcHandler, text = "You have to {find} the veiled hoard of Zathroth, breach it and destroy the knowledge how to use the godbreaker." })
+keywordHandler:addKeyword({ "looking" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dedoras.stdmod_1" })
+keywordHandler:addKeyword({ "value" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dedoras.stdmod_2" })
+keywordHandler:addKeyword({ "threat" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dedoras.stdmod_3" })
+keywordHandler:addKeyword({ "disassembled" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dedoras.stdmod_4" })
+keywordHandler:addKeyword({ "obscure" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dedoras.stdmod_5" })
+keywordHandler:addKeyword({ "hands" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dedoras.stdmod_6" })
 keywordHandler:addKeyword(
 	{ "adventurer" },
 	StdModule.say,
@@ -292,8 +292,8 @@ keywordHandler:addKeyword({ "rumors" }, StdModule.say, {
 	},
 })
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings seekers of knowledge. You seem to be just the person I'm {looking} for.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Well, bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.dedoras.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.dedoras.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

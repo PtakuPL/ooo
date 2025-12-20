@@ -32,7 +32,7 @@ function mission3DanceDanceEvolution.onStepIn(creature, item, position, fromPosi
 
 	if position ~= dancePosition then
 		player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.DanceStatus, 1)
-		player:say("You did it wrong. now you have to start again.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.movements_mission3_dance_dance_evolution.say_3", TALKTYPE_MONSTER_SAY)
 		config[1]:sendMagicEffect(CONST_ME_SMALLPLANTS)
 		config[1]:sendMagicEffect(CONST_ME_CARNIPHILA) -- Adicionando o efeito CARNIPHILA aqui
 		return true
@@ -40,7 +40,7 @@ function mission3DanceDanceEvolution.onStepIn(creature, item, position, fromPosi
 
 	local danceStatus = player:getStorageValue(Storage.Quest.U8_54.UnnaturalSelection.DanceStatus)
 	if danceStatus == 1 then
-		player:say("Dance for the mighty Krunus!", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.movements_mission3_dance_dance_evolution.say_2", TALKTYPE_MONSTER_SAY)
 	end
 
 	--Questlog, Unnatural Selection Quest "Mission 2: All Around the World"
@@ -56,7 +56,7 @@ function mission3DanceDanceEvolution.onStepIn(creature, item, position, fromPosi
 		--Questlog, Unnatural Selection Quest "Mission 3: Dance Dance Evolution"
 		player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Mission03, 3)
 		player:setStorageValue(Storage.Quest.U8_54.UnnaturalSelection.Questline, 7)
-		player:say("Krunus should be pleased.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.movements_mission3_dance_dance_evolution.say_1", TALKTYPE_MONSTER_SAY)
 		player:addAchievement("Talented Dancer")
 	end
 	return true

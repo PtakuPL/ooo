@@ -101,7 +101,7 @@ local topic = {}
 
 local function greetCallback(npc, creature)
 	local playerId = creature:getId()
-	npcHandler:setMessage(MESSAGE_GREET, "Welcome back, knight |PLAYERNAME|!")
+	NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.trisha.greet_msg_1")
 	topic[playerId] = nil
 	return true
 end
@@ -140,15 +140,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
-			npcHandler:say({
-				"Okay, who knows, maybe you have a chance. A really small one though. Listen up: ...",
-				"First, you have to prove your guts by bringing me 100 hardened bones. ...",
-				"Next, if you actually managed to collect that many, please complete a small task for our guild and bring us 100 turtle shells. ...",
-				"It is said that excellent shields can be created from these. ...",
-				"Alright, um, afterwards show me that you have fighting spirit. Any true hero needs plenty of that. ...",
-				"The last task is the hardest. You will need to bring me a claw from a mighty dragon king. ...",
-				"Did you understand everything I told you and are willing to handle this task?",
-			}, npc, creature, 100)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.trisha.say_1", "npc.trisha.say_2", "npc.trisha.say_3", "npc.trisha.say_4", "npc.trisha.say_5", "npc.trisha.say_6", "npc.trisha.say_7"}, 100)
 			npcHandler:setTopic(playerId, 2)
 		elseif MsgContains(message, "no") then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.trisha.say_5")
@@ -220,19 +212,19 @@ keywordHandler:addSpellKeyword({ "great", "light" }, {
 })
 keywordHandler:addKeyword({ "healing", "spells" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "In this category I have '{Wound Cleansing}'' and '{Cure Poison}''.",
+	i18nKey = "npc.trisha.stdmod_1",
 })
 keywordHandler:addKeyword({ "support", "spells" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "In this category I have '{Light}', '{Find Person}' and '{Great Light}'.",
+	i18nKey = "npc.trisha.stdmod_2",
 })
 keywordHandler:addKeyword({ "spells" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I can teach you {healing spells} and {support spells}. What kind of spell do you wish to learn? You can also tell me for which level you would like to learn a spell, if you prefer that.",
+	i18nKey = "npc.trisha.stdmod_3",
 })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Be careful on your journeys.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Don't hurt yourself with that weapon, little one.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.trisha.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.trisha.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

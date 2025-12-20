@@ -123,7 +123,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				if getPlayerItemCount(creature, 19083) >= 20 then
 					doPlayerRemoveItem(creature, 19083, 20)
 					doPlayerAddItem(creature, items[i].id, 1)
-					npcHandler:say("You just swapped 20 silver raid tokens for 1 " .. items[i].name .. ".", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jorge.say_1", { items[i].name })
 				else
 					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jorge.say_2")
 				end

@@ -16,7 +16,7 @@ QuicLootIgnoreItem < UIWidget
   background-color: #484848
   Label
     id: label
-    !text: tr('bag')
+    !text: tr("otclient_modules.quickloot_otui.tr_15")
     color: #C0C0C0
     anchors.verticalCenter: parent.verticalCenter
     anchors.left: parent.left
@@ -41,7 +41,7 @@ QuicklootBagLabel < UIWidget
 
   Label
     id: label
-    !text: tr('Unassigned Loot')
+    !text: tr("otclient_modules.quickloot_otui.tr_14")
     color: #C0C0C0
     anchors.verticalCenter: parent.verticalCenter
     anchors.left: parent.left
@@ -110,7 +110,7 @@ QuicklootBagLabel < UIWidget
       opacity: 0.5
 Window
   id: main
-  !text: tr('Manage Containers')
+  !text: tr("otclient_modules.quickloot_otui.tr_13")
   color: #C0C0C0
   size: 700 425
   anchors.centerIn: parent
@@ -127,12 +127,12 @@ Window
       anchors.left: parent.left
       margin-left: 5
       @onCheckChange: QuickLoot.fallback(self, self:isChecked())
-      !text: tr('Use main container as fallback')
-      !tooltip: tr('Tick this check box to loot into your main container if you cannot \nloot into the container for the particular loot category and \nunassigned loot. Note that "Auto-Sort \nPurchases" and "Auto-Sort Stash into Containers" are not afflected by this option.')
+      !text: tr("otclient_modules.quickloot_otui.tr_12")
+      !tooltip: tr("otclient_modules.quickloot_otui.tr_11")
 
   Label
 
-    !text: tr('Loot')
+    !text: tr("otclient_modules.quickloot_otui.tr_10")
     color: #C0C0C0
     anchors.top: fallbackPanel.bottom
     anchors.left: parent.left
@@ -140,7 +140,7 @@ Window
 
   Label
 
-    !text: tr('Obtain')
+    !text: tr("otclient_modules.quickloot_otui.tr_9")
     color: #C0C0C0
     margin-right: 15
     anchors.top: fallbackPanel.bottom
@@ -185,7 +185,7 @@ Window
     image-size: 140 111
     Label
       id: label
-      !text: tr('Quick Loot Filter:')
+      !text: tr("otclient_modules.quickloot_otui.tr_8")
       color: #C0C0C0
       anchors.top: parent.top
       anchors.left: parent.left
@@ -196,7 +196,7 @@ Window
       margin-top: 5
       anchors.top: label.bottom
       anchors.left: parent.left
-      !text: tr('Skipped Loot')
+      !text: tr("otclient_modules.quickloot_otui.tr_7")
       color: #C0C0C0
       width: 84
       checked: true
@@ -208,14 +208,14 @@ Window
       margin-top: 5
       anchors.top: skipped.bottom
       anchors.left: parent.left
-      !text: tr('Accepted Loot')
+      !text: tr("otclient_modules.quickloot_otui.tr_6")
       color: #C0C0C0
       width: 84
       @onClick: QuickLoot.filter(self, self:isChecked())
     QtButton
       id: clear
       size: 128 20
-      !text: tr('Clear Skipped Loot List')
+      !text: tr("otclient_modules.quickloot_otui.tr_5")
       color: #C0C0C0
       font: noto-12
       anchors.top: accepted.bottom
@@ -225,7 +225,7 @@ Window
     QtButton
       id: add
       size: 128 20
-      !text: tr('Add to Skipped Loot List')
+      !text: tr("otclient_modules.quickloot_otui.tr_4")
       color: #C0C0C0
       font: noto-12
       anchors.bottom: parent.bottom
@@ -243,7 +243,7 @@ Window
     color: #C0C0C0
     text-align: left
     text-offset: 5 -50
-    !text: tr('Select containers for your loot!\n\nRefine your Quick Looting by setting objects on your skipped loot or accepted loot list!')
+    !text: tr("otclient_modules.quickloot_otui.tr_3")
     anchors.top: filters.bottom
     anchors.bottom: list.bottom
     anchors.left: filters.left
@@ -280,7 +280,7 @@ Window
           opacity: 0.8
       Label
         id: label
-        !text: tr('Premium')
+        !text: tr("otclient_modules.quickloot_otui.tr_2")
         text-auto-resize: true
         anchors.verticalCenter: premium.verticalCenter
         anchors.left: premium.right
@@ -331,7 +331,7 @@ Window
     pixels-scroll: true
   QtButton
     size: 43 20
-    !text: tr('Close')
+    !text: tr("otclient_modules.quickloot_otui.tr_1")
     color: #C0C0C0
     anchors.bottom: parent.bottom
     anchors.right: parent.right

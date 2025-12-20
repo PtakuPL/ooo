@@ -1,7 +1,7 @@
 # NPC: blind_orc
 
 **Plik:** `data-otservbr-global/npc/blind_orc.lua`
-**Data migracji:** 2025-12-10 14:05
+**Data migracji:** 2025-12-17 00:53
 **Liczba tekstów:** 2
 
 ## Klucze i18n

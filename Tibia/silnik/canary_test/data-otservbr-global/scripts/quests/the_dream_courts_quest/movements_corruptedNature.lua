@@ -16,7 +16,7 @@ function movements_corruptedNature.onStepIn(creature, item, position, fromPositi
 
 		if abomination then
 			abomination:registerEvent("dreamCourtsDeath")
-			abomination:say("The vile energy changes the attendant horribly!", TALKTYPE_MONSTER_SAY)
+			abomination:sayLocalized("scripts.movements_corruptednature.say_1", TALKTYPE_MONSTER_SAY)
 		end
 	elseif cName:lower() == "plagueroot" then
 		creature:addHealth(r)

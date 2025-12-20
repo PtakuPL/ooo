@@ -47,9 +47,9 @@ end
 
 local function greetCallback(npc, creature)
 	if Player(creature):getStorageValue(Storage.Quest.U8_6.WrathOfTheEmperor.Questline) < 31 then
-		npcHandler:setMessage(MESSAGE_GREET, "I am not here to fight you, fool. Like it or not, we will have to work together to stop the catastrophe you and that priest have initiated.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.awarness_of_the_emperor.greet_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Greetings, mortal. Be aware that you are trying my patience while we are talking.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.awarness_of_the_emperor.greet_msg_2")
 	end
 	return true
 end

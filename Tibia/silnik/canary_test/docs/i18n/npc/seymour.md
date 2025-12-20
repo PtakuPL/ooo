@@ -1,12 +1,12 @@
 # NPC: seymour
 
-**Plik:** `data-otservbr-global/npc/seymour.lua`
-**Data migracji:** 2025-12-11 22:14
+**Plik:** 
+**Data migracji:** 2025-12-20 20:25
 **Liczba tekstów:** 2
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.seymour.stdmod_1` | Hello, |PLAYERNAME|. Welcome to the Academy of Rookgaard. Ma... |
-| `npc.seymour.stdmod_2` | Good bye, |PLAYERNAME|! And remember: No running up and down... |
+|  | Hello, |PLAYERNAME|. Welcome to the Academy of Rookgaard. Ma... |
+|  | Good bye, |PLAYERNAME|! And remember: No running up and down... |

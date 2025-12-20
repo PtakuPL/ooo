@@ -10,7 +10,7 @@ function spell.onCastSpell(creature, var)
 	local rand = math.random(1, 4)
 	local generators = generator[rand]
 	local monster = Game.createMonster("glooth-generator", generators.pos, true, true)
-	monster:say("THE GLOOTH GENERATOR CHARGES UP FOR A LETHAL EXPLOSION!", TALKTYPE_MONSTER_YELL)
+	monster:sayLocalized("scripts.generator.say_1", TALKTYPE_MONSTER_YELL)
 	return
 end
 

@@ -8,7 +8,7 @@ UIWidget
     height: 60
 
     QtButton
-      !text: tr('Wiki')
+      !text: tr("otclient_modules.help_otui.tr_4")
       anchors.left: parent.left
       anchors.top: parent.top
       size: 130 20
@@ -17,7 +17,7 @@ UIWidget
       @onClick: g_platform.openUrl("https://github.com/mehah/otclient/wiki")
 
     QtButton
-      !text: tr('Info')
+      !text: tr("otclient_modules.help_otui.tr_3")
       size: 130 20
       margin-top: 5
      
@@ -34,7 +34,7 @@ UIWidget
     margin-top: 5
 
     QtButton
-      !text: tr('Clear Cache')
+      !text: tr("otclient_modules.help_otui.tr_2")
       size: 130 20
       margin-bottom: 10
       margin-right: 10
@@ -46,7 +46,7 @@ UIWidget
           g_app.restart()
         end, 1000)
     QtButton
-      !text: tr('Change language')
+      !text: tr("otclient_modules.help_otui.tr_1")
       size: 130 20
       margin-top: 5
       anchors.top: prev.bottom

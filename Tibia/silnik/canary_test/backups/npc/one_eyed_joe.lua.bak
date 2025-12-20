@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Did you hear that, too?" },
+	{ i18nKey = "npc.one_eyed_joe.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Hey there, up for a chat?" },
+	{ i18nKey = "npc.aruda.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

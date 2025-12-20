@@ -56,7 +56,7 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 
 	if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Barkless.Mission) < 2 then
-		npcHandler:setMessage(MESSAGE_GREET, "There, there initiate. You will now become one of us, as so many before you. One of the {Barkless}. Walk with us and you will walk tall my friend.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.tigo.greet_msg_1")
 		npcHandler:setTopic(playerId, 1)
 	end
 
@@ -91,7 +91,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Well, bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.tigo.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_SET_INTERACTION, onAddFocus)
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)

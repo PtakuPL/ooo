@@ -3,7 +3,7 @@ Panel
   margin: 1
 
   Label
-    !text: tr('Item Offers')
+    !text: tr("otclient_modules.itemoffers_otui.tr_15")
     anchors.top: parent.top
     anchors.left: parent.left
     margin-left: 10

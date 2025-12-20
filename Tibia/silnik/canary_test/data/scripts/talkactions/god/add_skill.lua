@@ -47,8 +47,8 @@ function addSkill.onSay(player, words, param)
 		local levelText = (skillIncreaseAmount > 1) and "levels" or "level"
 
 		targetPlayer:addExperience(experienceToAdd, false)
-		targetPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("%s has added %d %s to you.", player:getName(), skillIncreaseAmount, levelText))
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You have successfully added %d %s to player %s.", skillIncreaseAmount, levelText, targetPlayer:getName()))
+		targetPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_skill.msg_6", {player:getName(), skillIncreaseAmount, levelText})
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_skill.msg_5", {skillIncreaseAmount, levelText, targetPlayer:getName()})
 	elseif skillPrefix == "m" then
 		for _ = 1, skillIncreaseAmount do
 			local requiredManaSpent = targetPlayer:getVocation():getRequiredManaSpent(targetPlayer:getBaseMagicLevel() + 1)
@@ -56,8 +56,8 @@ function addSkill.onSay(player, words, param)
 		end
 
 		local magicText = (skillIncreaseAmount > 1) and "magic levels" or "magic level"
-		targetPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("%s has added %d %s to you.", player:getName(), skillIncreaseAmount, magicText))
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You have successfully added %d %s to player %s.", skillIncreaseAmount, magicText, targetPlayer:getName()))
+		targetPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_skill.msg_4", {player:getName(), skillIncreaseAmount, magicText})
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_skill.msg_3", {skillIncreaseAmount, magicText, targetPlayer:getName()})
 	else
 		local skillId = getSkillId(skillParam)
 		for _ = 1, skillIncreaseAmount do
@@ -66,8 +66,8 @@ function addSkill.onSay(player, words, param)
 		end
 
 		local skillText = (skillIncreaseAmount > 1) and "skill levels" or "skill level"
-		targetPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("%s has added %d %s %s to you.", player:getName(), skillIncreaseAmount, skillParam, skillText))
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, string.format("You have successfully added %d %s %s to player %s.", skillIncreaseAmount, skillParam, skillText, targetPlayer:getName()))
+		targetPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_skill.msg_2", {player:getName(), skillIncreaseAmount, skillParam, skillText})
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.add_skill.msg_1", {skillIncreaseAmount, skillParam, skillText, targetPlayer:getName()})
 	end
 	return true
 end

@@ -115,7 +115,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "maeryn") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_9")
 	elseif MsgContains(message, "time") then
-		npcHandler:say("It's exactly " .. getFormattedWorldTime() .. ".", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_1", { getFormattedWorldTime() })
 	elseif MsgContains(message, "job") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.maeryn.say_10")
 	elseif MsgContains(message, "grimvale") then
@@ -172,7 +172,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, visitor. I wonder what may lead you to this {dangerous} place.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.maeryn.greet_msg_1")
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

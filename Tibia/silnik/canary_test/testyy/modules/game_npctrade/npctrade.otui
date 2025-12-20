@@ -32,14 +32,14 @@ NPCItemBox < UICheckBox
 
 MainWindow
   id: npcWindow
-  !text: tr('NPC Trade')
+  !text: tr("otclient_modules.npctrade_otui.tr_18")
   size: 550 515
   @onEscape: modules.game_npctrade.closeNpcTrade()
 
   TabButton
     id: buyTab
-    !tooltip: tr("List of items that you're able to buy")
-    !text: tr('Buy')
+    !tooltip: tr("otclient_modules.npctrade_otui.tr_17")
+    !text: tr("otclient_modules.npctrade_otui.tr_16")
     checked: true
     on: true
     anchors.left: parent.left
@@ -50,8 +50,8 @@ MainWindow
 
   TabButton
     id: sellTab
-    !tooltip: tr("List of items that you're able to sell")
-    !text: tr('Sell')
+    !tooltip: tr("otclient_modules.npctrade_otui.tr_15")
+    !text: tr("otclient_modules.npctrade_otui.tr_14")
     anchors.left: parent.horizontalCenter
     anchors.right: parent.right
     anchors.top: parent.top
@@ -101,7 +101,7 @@ MainWindow
     image-color: #ffffff88
 
     Label
-      !text: tr('Name') .. ':'
+      !text: tr("otclient_modules.npctrade_otui.tr_13") .. ':'
       anchors.left: parent.left
       anchors.top: parent.top
       margin-top: 5
@@ -112,7 +112,7 @@ MainWindow
       id: name
 
     Label
-      !text: tr('Price') .. ':'
+      !text: tr("otclient_modules.npctrade_otui.tr_12") .. ':'
       anchors.left: parent.left
       anchors.top: prev.bottom
       margin-top: 5
@@ -123,7 +123,7 @@ MainWindow
       id: price
 
     Label
-      !text: tr('Your Money') .. ':'
+      !text: tr("otclient_modules.npctrade_otui.tr_11") .. ':'
       anchors.left: parent.left
       anchors.top: prev.bottom
       margin-top: 5
@@ -135,7 +135,7 @@ MainWindow
 
     Label
       id: weightDesc
-      !text: tr('Weight') .. ':'
+      !text: tr("otclient_modules.npctrade_otui.tr_10") .. ':'
       anchors.left: parent.left
       anchors.top: prev.bottom
       margin-top: 5
@@ -147,7 +147,7 @@ MainWindow
 
     Label
       id: capacityDesc
-      !text: tr('Your Capacity') .. ':'
+      !text: tr("otclient_modules.npctrade_otui.tr_9") .. ':'
       anchors.left: parent.left
       anchors.top: prev.bottom
       margin-top: 5
@@ -182,7 +182,7 @@ MainWindow
 
     Label
       id: searchLabel
-      !text: tr('Search') .. ':'
+      !text: tr("otclient_modules.npctrade_otui.tr_8") .. ':'
       anchors.left: parent.left
       anchors.top: parent.top
       text-auto-resize: true
@@ -201,7 +201,7 @@ MainWindow
 
     CheckBox
       id: buyWithBackpack
-      !text: tr('Buy with backpack')
+      !text: tr("otclient_modules.npctrade_otui.tr_7")
       anchors.top: searchText.bottom
       anchors.left: parent.left
       anchors.right: parent.right
@@ -211,7 +211,7 @@ MainWindow
 
     CheckBox
       id: ignoreCapacity
-      !text: tr('Ignore capacity')
+      !text: tr("otclient_modules.npctrade_otui.tr_6")
       anchors.top: prev.bottom
       anchors.left: parent.left
       anchors.right: parent.right
@@ -221,7 +221,7 @@ MainWindow
 
     CheckBox
       id: ignoreEquipped
-      !text: tr('Ignore equipped')
+      !text: tr("otclient_modules.npctrade_otui.tr_5")
       anchors.top: searchText.bottom
       anchors.left: parent.left
       anchors.right: parent.right
@@ -233,7 +233,7 @@ MainWindow
 
     CheckBox
       id: showAllItems
-      !text: tr('Show all items')
+      !text: tr("otclient_modules.npctrade_otui.tr_4")
       anchors.top: prev.bottom
       anchors.left: parent.left
       anchors.right: parent.right
@@ -245,7 +245,7 @@ MainWindow
 
   Button
     id: sellAllButton
-    !text: tr('Sell All')
+    !text: tr("otclient_modules.npctrade_otui.tr_3")
     width: 64
     anchors.right: next.left
     anchors.bottom: parent.bottom
@@ -255,7 +255,7 @@ MainWindow
 
   Button
     id: tradeButton
-    !text: tr('Buy')
+    !text: tr("otclient_modules.npctrade_otui.tr_2")
     width: 64
     anchors.right: next.left
     anchors.bottom: parent.bottom
@@ -263,7 +263,7 @@ MainWindow
     @onClick: modules.game_npctrade.onTradeClick()
 
   Button
-    !text: tr('Close')
+    !text: tr("otclient_modules.npctrade_otui.tr_1")
     width: 64
     anchors.right: parent.right
     anchors.bottom: parent.bottom

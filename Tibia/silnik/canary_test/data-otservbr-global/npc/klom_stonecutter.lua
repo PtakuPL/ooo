@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Ah." },
-	{ text = "We need more volunteers!" },
+	{ i18nKey = "npc.klom_stonecutter.voice_1" },
+	{ i18nKey = "npc.klom_stonecutter.voice_2" },
 	{ text = 'And they call this "deep"...' },
-	{ text = "Preparation is paramount." },
+	{ i18nKey = "npc.klom_stonecutter.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -162,7 +162,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if count[playerId] > 1 then
 				plural = plural .. "s"
 			end
-			npcHandler:say("You want to offer " .. count[playerId] .. " suspicious device" .. plural .. ". Which leader shall have it, (Gnomus) of the {gnomes}, (Klom Stonecutter) of the {dwarves} or the {scouts} (Lardoc Bashsmite)?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_1", { count[playerId], plural })
 			npcHandler:setTopic(playerId, 56)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_11")
@@ -213,11 +213,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_18")
 		npcHandler:setTopic(playerId, 5)
 	elseif MsgContains(message, "gnomes") and npcHandler:getTopic(playerId) == 5 then
-		npcHandler:say("The gnomes are still in need of your help, member of Bigfoot's Brigade. Prove your worth by answering their calls! (" .. math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points), 0) .. "/10)", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_2", { math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points), 0) })
 	elseif MsgContains(message, "dwarves") and npcHandler:getTopic(playerId) == 5 then
-		npcHandler:say("The dwarves are still in need of your help, member of Bigfoot's Brigade. Prove your worth by answering their calls! (" .. math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points), 0) .. "/10)", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_3", { math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points), 0) })
 	elseif MsgContains(message, "scouts") and npcHandler:getTopic(playerId) == 5 then
-		npcHandler:say("The scouts are still in need of your help, member of Bigfoot's Brigade. Prove your worth by answering their calls! (" .. math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points), 0) .. "/10)", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.klom_stonecutter.say_4", { math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points), 0) })
 	end
 
 	return true
@@ -253,7 +253,7 @@ npcHandler:setMessage(MESSAGE_GREET, {
 	"Greetings. A warning straight ahead: I don't like loiterin'. If you're not here to {help} us, you're here to waste my time. Which I consider loiterin'. Now, try and prove your {worth} to our alliance. ... ",
 	"I have sealed some of the areas far too dangerous for anyone to enter. If you can prove you're capable, you'll get an opportunity to help destroy the weird machines, pumping lava into the caves leading to the most dangerous enemies.",
 })
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Well, bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.klom_stonecutter.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_SET_INTERACTION, onAddFocus)
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)

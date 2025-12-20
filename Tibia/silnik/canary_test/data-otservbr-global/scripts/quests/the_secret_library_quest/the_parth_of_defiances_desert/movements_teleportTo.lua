@@ -67,7 +67,7 @@ local function startBattle(pid, position, b_name, middle)
 	if player then
 		player:teleportTo(position)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		player:say("You have to master this very last challenge within 5 minutes!", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("quests.movements_teleportto.say_3", TALKTYPE_MONSTER_SAY)
 		local monster = Game.createMonster(b_name, middle)
 	end
 end
@@ -124,7 +124,7 @@ function movements_desert_teleportTo.onStepIn(creature, item, position, fromPosi
 						player:teleportTo(fromPosition, true)
 					end
 				else
-					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You must wait. Someone is challenging Furious Scorpion now.")
+					player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.movements_teleportto.msg_1")
 					player:teleportTo(fromPosition, true)
 				end
 			else
@@ -135,7 +135,7 @@ function movements_desert_teleportTo.onStepIn(creature, item, position, fromPosi
 								player:teleportTo(k.destination)
 							else
 								if k.challenge then
-									player:say("You have to master the challenge first!", TALKTYPE_MONSTER_SAY)
+									player:sayLocalized("quests.movements_teleportto.say_2", TALKTYPE_MONSTER_SAY)
 								end
 								player:teleportTo(fromPosition, true)
 							end
@@ -160,7 +160,7 @@ function movements_desert_teleportTo.onStepIn(creature, item, position, fromPosi
 							player:getPosition():sendMagicEffect(CONST_ME_SOUND_WHITE)
 
 							if currentStep + 1 == #puzzle then
-								player:say("Access granted!", TALKTYPE_MONSTER_SAY)
+								player:sayLocalized("quests.movements_teleportto.say_1", TALKTYPE_MONSTER_SAY)
 							end
 						else
 							player:setStorageValue(Storage.Quest.U11_80.TheSecretLibrary.Darashia.PuzzleSqm, 0)

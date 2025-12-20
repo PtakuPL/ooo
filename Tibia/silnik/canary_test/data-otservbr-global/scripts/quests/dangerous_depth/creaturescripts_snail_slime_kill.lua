@@ -59,7 +59,7 @@ snailSlimeThink:register()
 
 local snailSlimeKill = CreatureEvent("SnailSlimeDeath")
 function snailSlimeKill.onDeath(creature)
-	creature:say("!!", TALKTYPE_MONSTER_YELL)
+	creature:sayLocalized("scripts.creaturescripts_snail_slime_kill.say_1", TALKTYPE_MONSTER_YELL)
 	local var = { type = 1, number = creature:getId() }
 	combat:execute(creature, var)
 	return true

@@ -1,12 +1,12 @@
 # NPC: eruaran
 
-**Plik:** `data-otservbr-global/npc/eruaran.lua`
-**Data migracji:** 2025-12-10 14:05
+**Plik:** 
+**Data migracji:** 2025-12-20 20:24
 **Liczba tekstów:** 2
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.eruaran.stdmod_1` | Greetings, |PLAYERNAME|. |
-| `npc.eruaran.stdmod_2` | Goodbye, |PLAYERNAME|. |
+|  | Greetings, |PLAYERNAME|. |
+|  | Goodbye, |PLAYERNAME|. |

@@ -59,18 +59,18 @@ end
 -- Travel
 local function addTravelKeyword(keyword, cost, destination, text, condition)
 	if condition then
-		keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = "I'm sorry but I don't sail there." }, condition)
+		keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_fate.stdmod_1" }, condition)
 	end
 
 	if keyword == "goroma" then
-		keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = "Never heard about a place like this." }, function(player)
+		keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_fate.stdmod_2" }, function(player)
 			return player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.AccessToGoroma) ~= 1
 		end)
 	end
 
 	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = (text or "Do you seek a passage to ") .. keyword:titleCase() .. " for |TRAVELCOST|?", cost = cost, discount = "postman" })
 	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, cost = cost, discount = "postman", destination = destination })
-	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, text = "We would like to serve you some time.", reset = true })
+	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_fate.stdmod_3", reset = true })
 end
 
 addTravelKeyword("edron", 170, Position(33173, 31764, 6))
@@ -84,8 +84,8 @@ addTravelKeyword("yalahar", 275, Position(32816, 31272, 6), nil, function(player
 end)
 
 -- Thais
-local travelKeyword = keywordHandler:addKeyword({ "thais" }, StdModule.say, { npcHandler = npcHandler, text = "Do you seek a passage to Thais for |TRAVELCOST|?", cost = 180, discount = "postman" })
-local childTravelKeyword = travelKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, text = "I have to warn you - we might get into a tropical storm on that route. I'm not sure if my ship will withstand it. Do you really want to travel to Thais?" })
+local travelKeyword = keywordHandler:addKeyword({ "thais" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_fate.stdmod_4", cost = 180, discount = "postman" })
+local childTravelKeyword = travelKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_fate.stdmod_5" })
 childTravelKeyword:addChildKeyword({ "yes" }, StdModule.travel, {
 	npcHandler = npcHandler,
 	premium = false,
@@ -95,16 +95,16 @@ childTravelKeyword:addChildKeyword({ "yes" }, StdModule.travel, {
 		return math.random(8) == 1 and Position(32161, 32558, 6) or Position(32310, 32210, 6)
 	end,
 })
-childTravelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, reset = true, text = "We would like to serve you some time." })
-travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, reset = true, text = "We would like to serve you some time." })
+childTravelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, reset = true, i18nKey = "npc.jack_fate.stdmod_6" })
+travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, reset = true, i18nKey = "npc.jack_fate.stdmod_7" })
 
 -- Basic
-keywordHandler:addKeyword({ "sail" }, StdModule.say, { npcHandler = npcHandler, text = "Where do you want to go? To {Edron}, {Thais}, {Venore}, {Darashia}, {Ankrahmun}, {Yalahar} or {Port Hope}?" })
-keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandler, text = "Where do you want to go? To {Edron}, {Thais}, {Venore}, {Darashia}, {Ankrahmun}, {Yalahar} or {Port Hope}?" })
-keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, text = "My name is Jack Fate from the Royal Tibia Line." })
-keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, text = "I'm the captain of this sailing ship." })
-keywordHandler:addKeyword({ "captain" }, StdModule.say, { npcHandler = npcHandler, text = "I'm the captain of this sailing ship." })
-keywordHandler:addKeyword({ "liberty bay" }, StdModule.say, { npcHandler = npcHandler, text = "That's where we are." })
+keywordHandler:addKeyword({ "sail" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_fate.stdmod_8" })
+keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_fate.stdmod_9" })
+keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_fate.stdmod_10" })
+keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_fate.stdmod_11" })
+keywordHandler:addKeyword({ "captain" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_fate.stdmod_12" })
+keywordHandler:addKeyword({ "liberty bay" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.jack_fate.stdmod_13" })
 
 npcHandler:setMessage(MESSAGE_GREET, "Welcome on board, Sir |PLAYERNAME|.")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye. Recommend us if you were satisfied with our service.")

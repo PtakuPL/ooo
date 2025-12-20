@@ -25,7 +25,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Please leave me alone... I have to study." },
+	{ i18nKey = "npc.amarie.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

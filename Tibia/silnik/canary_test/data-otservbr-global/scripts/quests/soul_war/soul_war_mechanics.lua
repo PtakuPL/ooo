@@ -75,7 +75,7 @@ function fourthTaintBossesDeath.onPrepareDeath(creature, killer, realDamage)
 			if isInZone ~= nil then
 				-- 10% of chance to heal
 				if math.random(1, 10) == 1 then
-					creature:say("Health restored by the mystic powers of Zarganash!")
+					creature:sayLocalized("quests.soul_war_mechanics.say_4")
 					creature:addHealth(creature:getMaxHealth())
 				end
 			end
@@ -214,7 +214,7 @@ function checkTaint.onSay(player, words, param)
 	if taintLevel ~= nil and taintName ~= nil then
 		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your current taint level is: " .. taintLevel .. " name: " .. taintName)
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You currently have no taint.")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war_mechanics.msg_3")
 	end
 
 	return true
@@ -229,7 +229,7 @@ function setTaint.onSay(player, words, param)
 	local split = param:split(",")
 	local target = Player(split[1])
 	if not target then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Player is offline")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war_mechanics.msg_2")
 		return false
 	end
 
@@ -280,7 +280,7 @@ function setTaint.onSay(player, words, param)
 	local split = param:split(",")
 	local target = Player(split[1])
 	if not target then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Player is offline")
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.soul_war_mechanics.msg_1")
 		return false
 	end
 
@@ -568,7 +568,7 @@ function goshnarsHatredSorrow.onUse(player, item, fromPosition, target, toPositi
 	local actualTime = SoulWarQuest.kvBurning:get("time") or 0
 	SoulWarQuest.kvBurning:set("time", actualTime + 10)
 	logger.debug("Player {} used the item on the monster {}, oldTime {}, newTime {}.", player:getName(), target:getName(), actualTime, actualTime + 10)
-	player:say("The flame of hatred is doused!", TALKTYPE_MONSTER_SAY, 0, 0, target:getPosition())
+	player:sayLocalized("quests.soul_war_mechanics.say_3", TALKTYPE_MONSTER_SAY, 0, 0, target:getPosition())
 	return true
 end
 
@@ -599,7 +599,7 @@ function burningChangeForm.onThink(creature)
 			logger.debug("Changing monster to {} on currentTime {}.", newType, currentTime)
 
 			if newType == "Ashes of Burning Hatred" then
-				monster:say("The fire of hatred fuels and empowers Goshnar's Hate!", TALKTYPE_MONSTER_SAY, 0, 0, monster:getPosition())
+				monster:sayLocalized("quests.soul_war_mechanics.say_2", TALKTYPE_MONSTER_SAY, 0, 0, monster:getPosition())
 				local boss = Creature("Goshnar's Hatred")
 				if boss then
 					logger.debug("Increasing hatred damage multiplier.")
@@ -660,7 +660,7 @@ function condensedRemorse.onStepIn(creature, item, position, fromPosition)
 	soulWarKV:set("condensed-remorse", remorseCount + 1)
 	if remorseCount + 1 == 2 then
 		player:resetGoshnarSymbolTormentCounter()
-		player:say("The remorse calms your dread!", TALKTYPE_MONSTER_SAY, 0, 0, item:getPosition())
+		player:sayLocalized("quests.soul_war_mechanics.say_1", TALKTYPE_MONSTER_SAY, 0, 0, item:getPosition())
 		player:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 		soulWarKV:remove("condensed-remorse")
 	end

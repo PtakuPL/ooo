@@ -18,7 +18,7 @@ function fibula.onStepIn(creature, item, position, fromPosition)
 
 		fromPosition:sendMagicEffect(teleport.effectTeleport)
 		newPosition:sendMagicEffect(teleport.effectTeleport)
-		player:say("Slrrp!", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.fibula.say_1", TALKTYPE_MONSTER_SAY)
 	end
 	return true
 end

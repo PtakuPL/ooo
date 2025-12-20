@@ -23,7 +23,7 @@ function stair.onStepIn(creature, item, position, fromPosition)
 		addEvent(revertStairs, 5 * 30 * 1000)
 	end
 
-	player:say("The area around the gate is suspiciously quiet, you have a bad feeling about this.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.movements_stair.say_1", TALKTYPE_MONSTER_SAY)
 	if player:getStorageValue(Storage.Quest.U8_54.ChildrenOfTheRevolution.Mission05) == 1 then
 		--Questlog, Children of the Revolution 'Mission 5: Phantom Army'
 		player:setStorageValue(Storage.Quest.U8_54.ChildrenOfTheRevolution.Mission05, 2)

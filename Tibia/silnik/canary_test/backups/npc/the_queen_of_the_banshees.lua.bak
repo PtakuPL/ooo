@@ -21,7 +21,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Uhhhhhh...." },
+	{ i18nKey = "npc.the_queen_of_the_banshees.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -179,42 +179,42 @@ end
 
 keywordHandler:addKeyword({ "stay" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "It's my curse to be the eternal {guardian} of this ancient {place}.",
+	i18nKey = "npc.the_queen_of_the_banshees.stdmod_1",
 })
 keywordHandler:addKeyword({ "guardian" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I'm the {guardian} of the {SEVENTH} and final seal. The seal to open the last door before ... but perhaps it's better to see it with your own eyes.",
+	i18nKey = "npc.the_queen_of_the_banshees.stdmod_2",
 })
 keywordHandler:addKeyword({ "place" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "It served as a temple, a source of power and ... as a sender for an ancient {race} which lived a long time ago and has long been forgotten.",
+	i18nKey = "npc.the_queen_of_the_banshees.stdmod_3",
 })
 keywordHandler:addKeyword({ "race" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The race that built this edifice came to this place from the stars. They ran from an enemy even more horrible than themselves. But they carried the {seed} of their own destruction in them.",
+	i18nKey = "npc.the_queen_of_the_banshees.stdmod_4",
 })
 keywordHandler:addKeyword({ "seed" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "This ancient race was annihilated by its own doings, that's all I know. Aeons have passed since then, but the sheer presence of this {complex} is still defiling and desecrating this area.",
+	i18nKey = "npc.the_queen_of_the_banshees.stdmod_5",
 })
 keywordHandler:addKeyword({ "complex" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Its constructors were too strange for you or even me to understand. We don't know what this ... thing they built was supposed to be good for. I feel a constant twisting and binding of souls, though, that is probably only a side-effect.",
+	i18nKey = "npc.the_queen_of_the_banshees.stdmod_6",
 })
 keywordHandler:addKeyword({ "ghostlands" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The place you know as the Ghostlands had a different name once ... and many names after. Too many to remember them all.",
+	i18nKey = "npc.the_queen_of_the_banshees.stdmod_7",
 })
 keywordHandler:addKeyword({ "banshee" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "They are my maidens. They give me comfort in my eternal watch over the last seal.",
+	i18nKey = "npc.the_queen_of_the_banshees.stdmod_8",
 })
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
 npcHandler:setMessage(MESSAGE_GREET, "Be greeted, dear visitor. Come and {stay} ... a while.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "We will meet again, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Yes, flee from death. But know it shall be always one step behind you.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.the_queen_of_the_banshees.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.the_queen_of_the_banshees.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

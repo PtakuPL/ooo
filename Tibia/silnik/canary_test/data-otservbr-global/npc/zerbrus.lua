@@ -26,11 +26,11 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Are you injured or poisoned? I can help you." },
-	{ text = "For Rookgaard! For Tibia!" },
-	{ text = "No monster shall go past me." },
-	{ text = "The premium side of Rookgaard lies beyond." },
-	{ text = "Want to know what monsters are good for you at your level? Just ask me!" },
+	{ i18nKey = "npc.zerbrus.voice_1" },
+	{ i18nKey = "npc.zerbrus.voice_2" },
+	{ i18nKey = "npc.zerbrus.voice_3" },
+	{ i18nKey = "npc.zerbrus.voice_4" },
+	{ i18nKey = "npc.zerbrus.voice_5" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -207,7 +207,7 @@ end, function(player)
 end)
 keywordHandler:addKeyword({ "heal" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.zerbrus.stdmod_58" })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Hm.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.zerbrus.walkaway_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

@@ -498,7 +498,7 @@ end
 function extendedView(extendedView)
     if extendedView then
         if not iconTopMenu then
-            iconTopMenu = modules.client_topmenu.addTopRightToggleButton('inventory', tr('Show inventory'),
+            iconTopMenu = modules.client_topmenu.addTopRightToggleButton('inventory', tr("otclient_modules.inventory.tr_1"),
                 '/images/topbuttons/inventory', toggle)
             iconTopMenu:setOn(inventoryController.ui:isVisible())
             inventoryController.ui:setBorderColor('black')

@@ -142,11 +142,11 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "charges") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Daily) >= os.time() then
-			return npcHandler:say("Sorry, you have to wait " .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_1", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Daily) - os.time()) })
 		end
 
 		if (player:getLevel() < levels[1]) or (player:getLevel() > levels[2]) then
-			return npcHandler:say("Sorry, you are not on the required range of levels [" .. levels[1] .. "-" .. levels[2] .. "].", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_2", { levels[1], levels[2] })
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Main) == -1 then
@@ -162,11 +162,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			player:addItem(19207, 1)
 			player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Main, 0)
-			npcHandler:say(
-				{ "Gnometastic! Charge this magnet at three monoliths in the cave system. With three charges, the magnet will disintegrate and charge you with its gathered energies. Step on the magnetic extractor here to deliver the charge to us, then report to me.", "If you lose the magnet you'll have to bring your own. Gnomux sells all the equipment that is required for our missions." },
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.gnombold.say_3", "npc.gnombold.say_4" })
 			talkState[playerId] = nil
 		elseif MsgContains(message, "no") then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_21")
@@ -179,11 +175,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	///////////////]]
 	if MsgContains(message, "fertilise") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Mushroom_Daily) >= os.time() then
-			return npcHandler:say("Sorry, you have to wait " .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Mushroom_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_5", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Mushroom_Daily) - os.time()) })
 		end
 
 		if (player:getLevel() < levels[1]) or (player:getLevel() > levels[2]) then
-			return npcHandler:say("Sorry, you are not on the required range of levels [" .. levels[1] .. "-" .. levels[2] .. "].", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_6", { levels[1], levels[2] })
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Mushroom_Main) == -1 then
@@ -211,11 +207,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	////////////////////]]
 	if MsgContains(message, "nests") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Daily) >= os.time() then
-			return npcHandler:say("Sorry, you have to wait " .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_7", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Daily) - os.time()) })
 		end
 
 		if (player:getLevel() < levels[1]) or (player:getLevel() > levels[2]) then
-			return npcHandler:say("Sorry, you are not on the required range of levels [" .. levels[1] .. "-" .. levels[2] .. "].", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_8", { levels[1], levels[2] })
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Main) == -1 then
@@ -242,11 +238,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	///////////]]
 	if MsgContains(message, "kill") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Daily) >= os.time() then
-			return npcHandler:say("Sorry, you have to wait " .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_9", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Daily) - os.time()) })
 		end
 
 		if (player:getLevel() < levels[1]) or (player:getLevel() > levels[2]) then
-			return npcHandler:say("Sorry, you are not on the required range of levels [" .. levels[1] .. "-" .. levels[2] .. "].", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_10", { levels[1], levels[2] })
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Main) == -1 then
@@ -270,7 +266,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Hi!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gnombold.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -487,7 +487,7 @@ function missionLevers.onUse(player, item, position, itemEx, toPosition)
 			end
 			addEvent(energyBarrierRestore, 60000, lever.barrier)
 		else
-			player:say("<click>", TALKTYPE_MONSTER_SAY, false, player, position)
+			player:sayLocalized("quests.mission12_into_fortress.say_1", TALKTYPE_MONSTER_SAY, false, player, position)
 		end
 	end
 	return true

@@ -36,7 +36,7 @@ local function summonDarks()
 				end
 			end
 		end
-		boss:say("Face your own darkness!")
+		boss:sayLocalized("scripts.creaturescripts_count_vlarkorth.say_1")
 	end
 
 	return true

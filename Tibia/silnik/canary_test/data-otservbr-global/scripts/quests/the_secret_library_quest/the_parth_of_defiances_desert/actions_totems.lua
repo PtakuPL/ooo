@@ -40,7 +40,7 @@ function actions_desert_totems.onUse(player, item, fromPosition, target, toPosit
 			end
 			if isQuestComplete(player:getId()) then
 				player:setStorageValue(Storage.Quest.U11_80.TheSecretLibrary.Darashia.Questline, 7)
-				player:say("Access granted!", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.actions_totems.say_1", TALKTYPE_MONSTER_SAY)
 			end
 		end
 	end

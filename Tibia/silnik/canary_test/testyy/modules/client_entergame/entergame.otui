@@ -4,7 +4,7 @@ EnterGameWindow
 
   MenuLabel
     id: emailLabel
-    !text: tr('Acc Name:')
+    !text: tr("otclient_modules.entergame_otui.tr_14")
     anchors.left: parent.left
     anchors.top: parent.top
     text-auto-resize: true
@@ -17,7 +17,7 @@ EnterGameWindow
     margin-top: 2
 
   MenuLabel
-    !text: tr('Password')
+    !text: tr("otclient_modules.entergame_otui.tr_13")
     anchors.left: prev.left
     anchors.top: prev.bottom
     margin-top: 8
@@ -32,7 +32,7 @@ EnterGameWindow
 
   MenuLabel
     id: authenticatorTokenLabel
-    !text: tr('Token')
+    !text: tr("otclient_modules.entergame_otui.tr_12")
     anchors.left: prev.left
     anchors.top: prev.bottom
     text-auto-resize: true
@@ -53,7 +53,7 @@ EnterGameWindow
 
   MenuLabel
     id: serverLabel
-    !text: tr('Server')
+    !text: tr("otclient_modules.entergame_otui.tr_11")
     anchors.left: parent.left
     anchors.top: prev.bottom
     margin-top: 8
@@ -61,7 +61,7 @@ EnterGameWindow
 
   MenuLabel
     id: portLabel
-    !text: tr('Port')
+    !text: tr("otclient_modules.entergame_otui.tr_10")
     anchors.right: parent.right
     anchors.top: serverLabel.top
     text-auto-resize: true
@@ -83,7 +83,7 @@ EnterGameWindow
 
   Button
     id: serverListButton
-    !text: tr('Server List')
+    !text: tr("otclient_modules.entergame_otui.tr_9")
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
@@ -95,7 +95,7 @@ EnterGameWindow
 
   MenuLabel
     id: clientLabel
-    !text: tr('Client version')
+    !text: tr("otclient_modules.entergame_otui.tr_8")
     anchors.left: parent.left
     anchors.top: prev.bottom
     margin-top: 8
@@ -119,8 +119,8 @@ EnterGameWindow
 
   CheckBox
     id: rememberEmailBox
-    !text: tr('Remember password:')
-    !tooltip: tr('Remember account and password when starts client')
+    !text: tr("otclient_modules.entergame_otui.tr_7")
+    !tooltip: tr("otclient_modules.entergame_otui.tr_6")
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
@@ -128,7 +128,7 @@ EnterGameWindow
 
   CheckBox
     id: autoLoginBox
-    !text: tr('Auto login')
+    !text: tr("otclient_modules.entergame_otui.tr_5")
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
@@ -136,7 +136,7 @@ EnterGameWindow
 
   CheckBox
     id: stayLoggedBox
-    !text: tr('Stay logged in')
+    !text: tr("otclient_modules.entergame_otui.tr_4")
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
@@ -144,7 +144,7 @@ EnterGameWindow
 
   CheckBox
     id: httpLoginBox
-    !text: tr('HTTP login')
+    !text: tr("otclient_modules.entergame_otui.tr_3")
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
@@ -164,7 +164,7 @@ EnterGameWindow
     height: 26
 
     Button
-      !text: tr('Login')
+      !text: tr("otclient_modules.entergame_otui.tr_2")
       anchors.left: parent.left
       anchors.right: parent.horizontalCenter
       anchors.top: parent.top
@@ -174,7 +174,7 @@ EnterGameWindow
 
     Button
       id: btnCreateNewAccount
-      !text: tr('Create Account')
+      !text: tr("otclient_modules.entergame_otui.tr_1")
       anchors.left: parent.horizontalCenter
       anchors.right: parent.right
       anchors.top: parent.top

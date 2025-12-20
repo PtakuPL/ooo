@@ -1,0 +1,5 @@
+{
+  "dataroot.global.msg_1": "[ES] {} minute{} of stamina has been refilled.",
+  "dataroot.global.msg_2": "[ES] You are no longer refilling stamina, \\z\n                                                         because your stamina is already full.",
+  "dataroot.global.msg_3": "[ES] {} of stamina has been refilled."
+}

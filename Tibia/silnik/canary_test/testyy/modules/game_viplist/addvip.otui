@@ -1,11 +1,11 @@
 MainWindow
   size: 256 128
-  !text: tr('Add to VIP list')
+  !text: tr("otclient_modules.addvip_otui.tr_4")
   @onEnter: modules.game_viplist.addVip()
   @onEscape: modules.game_viplist.destroyAddWindow()
 
   Label
-    !text: tr('Please enter a character name') .. ':'
+    !text: tr("otclient_modules.addvip_otui.tr_3") .. ':'
     anchors.top: parent.top
     anchors.left: parent.left
     anchors.right: parent.right
@@ -24,7 +24,7 @@ MainWindow
     margin-bottom: 10
 
   Button
-    !text: tr('Ok')
+    !text: tr("otclient_modules.addvip_otui.tr_2")
     width: 64
     anchors.right: next.left
     anchors.bottom: parent.bottom
@@ -32,7 +32,7 @@ MainWindow
     @onClick: modules.game_viplist.addVip()
 
   Button
-    !text: tr('Cancel')
+    !text: tr("otclient_modules.addvip_otui.tr_1")
     width: 64
     anchors.right: parent.right
     anchors.bottom: parent.bottom

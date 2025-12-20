@@ -61,10 +61,10 @@ local price = {}
 local function greetCallback(npc, creature)
 	local playerId = creature:getId()
 	if Player(creature):getSex() == PLAYERSEX_FEMALE then
-		npcHandler:setMessage(MESSAGE_GREET, "Suon's and Bastesh's blessings! Welcome to {Issavi}, traveller.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.guard_saros.greet_msg_1")
 		npcHandler:setTopic(playerId, 1)
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Suon's and Bastesh's blessings! Welcome to {Issavi}, traveller.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.guard_saros.greet_msg_2")
 		npcHandler:setTopic(playerId, nil)
 	end
 	price[playerId] = nil
@@ -253,8 +253,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "I hope to see you soon.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye, |PLAYERNAME|. I really hope we'll talk again soon.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.guard_saros.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.guard_saros.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

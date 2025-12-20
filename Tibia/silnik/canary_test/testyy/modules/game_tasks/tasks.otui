@@ -83,7 +83,7 @@ SelectionButton < Panel
 MainWindow
   size: 549 509
   id: tasksWindow
-  !text: tr('Tasks')
+  !text: tr("otclient_modules.tasks_otui.tr_7")
 
   @onEnter: modules.game_tasks.toggleWindow()
   @onEscape: modules.game_tasks.toggleWindow()
@@ -95,12 +95,12 @@ MainWindow
     anchors.right: parent.right
     margin-left: 5
     height: 50
-    !text: tr('Filter')
+    !text: tr("otclient_modules.tasks_otui.tr_6")
 
     TextEdit
       id: search
       anchors.fill: parent
-      !placeholder: tr('Search by name')
+      !placeholder: tr("otclient_modules.tasks_otui.tr_5")
 
   ScrollablePanel
     id: selectionList
@@ -149,7 +149,7 @@ MainWindow
     id: toggleButton
     anchors.bottom: parent.bottom
     anchors.right: parent.right
-    !text: tr('Close')
+    !text: tr("otclient_modules.tasks_otui.tr_4")
     width: 65
     @onClick: modules.game_tasks.toggleWindow()
 
@@ -157,7 +157,7 @@ MainWindow
     id: finishButton
     anchors.bottom: parent.bottom
     anchors.right: toggleButton.left
-    !text: tr('Finish')
+    !text: tr("otclient_modules.tasks_otui.tr_3")
     width: 55
     margin-right: 5
     @onClick: modules.game_tasks.finish()
@@ -166,7 +166,7 @@ MainWindow
     id: startButton
     anchors.bottom: parent.bottom
     anchors.right: toggleButton.left
-    !text: tr('Start')
+    !text: tr("otclient_modules.tasks_otui.tr_2")
     width: 55
     margin-right: 5
     @onClick: modules.game_tasks.start()
@@ -175,7 +175,7 @@ MainWindow
     id: abortButton
     anchors.bottom: parent.bottom
     anchors.right: toggleButton.left
-    !text: tr('Abort')
+    !text: tr("otclient_modules.tasks_otui.tr_1")
     width: 55
     margin-right: 5
     @onClick: modules.game_tasks.abort()

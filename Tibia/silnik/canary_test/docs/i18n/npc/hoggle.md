@@ -1,11 +1,10 @@
 # NPC: hoggle
 
 **Plik:** `data-otservbr-global/npc/hoggle.lua`
-**Data migracji:** 2025-12-11 16:26
-**Liczba tekstów:** 1
+**Data migracji:** 2025-12-17 01:00
+**Liczba tekstów:** 0
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.hoggle.stdmod_1` | Oh, this misery... |

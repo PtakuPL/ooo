@@ -117,9 +117,9 @@ keywordHandler:addKeyword({ "fae" }, StdModule.say, {
 	},
 })
 
-npcHandler:setMessage(MESSAGE_GREET, "Nature's blessing, traveller! May you not be affected by any sinister force.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "May your path always be even.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "May your path always be even.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.alkestios.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.alkestios.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.alkestios.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

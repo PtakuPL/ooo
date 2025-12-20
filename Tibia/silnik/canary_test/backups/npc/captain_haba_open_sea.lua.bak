@@ -55,9 +55,9 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 
 	if player:getStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.QuestLine) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Wha'd ya want? Ask me 'bout the {instructions} if you don't know what to do! If you wanna head back to {Svargrond}, let me know.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.captain_haba_open_sea.greet_msg_1")
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheHuntForTheSeaSerpent.QuestLine) == 2 then
-		npcHandler:setMessage(MESSAGE_GREET, "You found the spot |PLAYERNAME|!! Grab yourself a helmet of the deep and go explore the {caves} down there.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.captain_haba_open_sea.greet_msg_2")
 	end
 	return true
 end
@@ -155,7 +155,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 		npcHandler:setTopic(playerId, 4)
 	elseif message:lower() == "yes" and npcHandler:getTopic(playerId) == 4 then
-		npcHandler:setMessage(MESSAGE_WALKAWAY, "See ya, landlubber!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.captain_haba_open_sea.walkaway_msg_1")
 		player:teleportTo(Position(32342, 31123, 6))
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		npcHandler:setTopic(playerId, 0)
@@ -163,13 +163,13 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 --Basic
-keywordHandler:addKeyword({ "caves" }, StdModule.say, { npcHandler = npcHandler, text = "I'd go by myself and tear that beast's heart out if I were younger. I hope ya can do that for me. Now go and good luck to ya!" })
-keywordHandler:addKeyword({ "wares" }, StdModule.say, { npcHandler = npcHandler, text = "Ya're a coward, aren't ya? Prove that I'm wrong and get your lazy bones up to the lookout!!" })
+keywordHandler:addKeyword({ "caves" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.captain_haba_open_sea.stdmod_1" })
+keywordHandler:addKeyword({ "wares" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.captain_haba_open_sea.stdmod_2" })
 keywordHandler:addAliasKeyword({ "go" })
-keywordHandler:addKeyword({ "bait" }, StdModule.say, { npcHandler = npcHandler, text = "Just ask me for a trade if you need a bait." })
-keywordHandler:addKeyword({ "test" }, StdModule.say, { npcHandler = npcHandler, text = "I can give ya a challenge to test if ya have the guts to be a real sailor. Go up to the lookout and remain there for 24 hours during a storm! Harharhar!" })
+keywordHandler:addKeyword({ "bait" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.captain_haba_open_sea.stdmod_3" })
+keywordHandler:addKeyword({ "test" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.captain_haba_open_sea.stdmod_4" })
 
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Here ya go! Use it on the crane when you see the monster. Then refill it every time you use the telescope.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.captain_haba_open_sea.sendtrade_msg_1")
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
@@ -183,7 +183,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

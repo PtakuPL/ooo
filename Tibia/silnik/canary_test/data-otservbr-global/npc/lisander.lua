@@ -74,7 +74,7 @@ keywordHandler:addKeyword({ "alori mort" }, StdModule.say, { npcHandler = npcHan
 	return player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.Mission03) == 1
 end)
 
-npcHandler:setMessage(MESSAGE_GREET, "I'd rather be left in {peace}. Keep it short.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.lisander.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

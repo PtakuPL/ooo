@@ -52,9 +52,9 @@ end
 
 keywordHandler:addKeyword({ "meat" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lector.stdmod_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to my humble {meat} shop, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Please come and buy again, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, take a good look at my meat.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.lector.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.lector.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.lector.sendtrade_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {

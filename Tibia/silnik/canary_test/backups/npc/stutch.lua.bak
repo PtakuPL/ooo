@@ -78,8 +78,8 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 -- Greeting
-keywordHandler:addGreetKeyword({ "hail king" }, { npcHandler = npcHandler, text = "HAIL TO THE KING!" })
-keywordHandler:addGreetKeyword({ "salutations king" }, { npcHandler = npcHandler, text = "HAIL TO THE KING!" })
+keywordHandler:addGreetKeyword({ "hail king" }, { npcHandler = npcHandler, text = "HAIL TO THE KING!", i18nKey = "npc.stutch.greet_1" })
+keywordHandler:addGreetKeyword({ "salutations king" }, { npcHandler = npcHandler, text = "HAIL TO THE KING!", i18nKey = "npc.stutch.greet_2" })
 
 npcHandler:setMessage(MESSAGE_WALKAWAY, "LONG LIVE THE KING!")
 npcHandler:setMessage(MESSAGE_FAREWELL, "LONG LIVE THE KING! You may leave now!")

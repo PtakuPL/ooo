@@ -34,7 +34,7 @@ function actions_goldenIdol.onUse(player, item, fromPosition, target, toPosition
 				item:remove(1)
 				Game.createItem(blockedItem, 1, altar.position)
 				tPos:sendMagicEffect(CONST_ME_POFF)
-				player:say("**placing idol**", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.actions_goldenidol.say_1", TALKTYPE_MONSTER_SAY)
 
 				local currentCount = player:getStorageValue(storageIdolCount)
 

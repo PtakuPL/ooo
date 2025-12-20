@@ -65,8 +65,8 @@ function keys.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	end
 
 	-- Send message
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have entered an ancient demon prison cell!")
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have fifteen minutes to kill and loot this boss, else you will lose that chance.")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "actions.keys.msg_2")
+	player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "actions.keys.msg_1")
 
 	-- Let's roll
 	addEvent(clearBossRoom, 60 * tmpConfig.time * 1000, player:getId(), tmpConfig.centerPosition, false, tmpConfig.rangeX, tmpConfig.rangeY, tmpConfig.exitPosition)

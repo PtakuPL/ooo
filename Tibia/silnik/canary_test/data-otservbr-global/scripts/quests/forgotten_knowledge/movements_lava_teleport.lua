@@ -27,7 +27,7 @@ function lavaTeleport.onStepIn(creature, item, position, fromPosition)
 		item:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		pos.y = pos.y - 2
 		player:teleportTo(pos)
-		player:say("You haven't permission to use this teleport.", TALKTYPE_MONSTER_SAY, false, nil, position)
+		player:sayLocalized("scripts.movements_lava_teleport.say_1", TALKTYPE_MONSTER_SAY, false, nil, position)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 	end
 	return true

@@ -25,7 +25,7 @@ combat:setArea(area)
 local spell = Spell("instant")
 
 function spell.onCastSpell(creature, var)
-	creature:say("Feel the hungry kiss of death!", TALKTYPE_MONSTER_SAY)
+	creature:sayLocalized("scripts.the_pale_count_bomb.say_1", TALKTYPE_MONSTER_SAY)
 	return combat:execute(creature, var)
 end
 

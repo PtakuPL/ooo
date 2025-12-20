@@ -24,7 +24,7 @@ GroupCooldownParticles < UIParticles
 
 Panel
   id: cooldownWindow
-  !text: tr('')
+  !text: tr("otclient_modules.cooldown_otui.tr_10")
   size: 220 28
   anchors.top: parent.top
   anchors.left: parent.left
@@ -46,7 +46,7 @@ Panel
     SpellProgressRect
       id: progressRectAttack
       anchors.fill: groupIconAttack
-      !tooltip: tr('Attack')
+      !tooltip: tr("otclient_modules.cooldown_otui.tr_9")
 
     SpellGroupIcon
       id: groupIconHealing
@@ -60,7 +60,7 @@ Panel
     SpellProgressRect
       id: progressRectHealing
       anchors.fill: groupIconHealing
-      !tooltip: tr('Healing')
+      !tooltip: tr("otclient_modules.cooldown_otui.tr_8")
 
     SpellGroupIcon
       id: groupIconSupport
@@ -74,7 +74,7 @@ Panel
     SpellProgressRect
       id: progressRectSupport
       anchors.fill: groupIconSupport
-      !tooltip: tr('Support')
+      !tooltip: tr("otclient_modules.cooldown_otui.tr_7")
 
     SpellGroupIcon
       id: groupIconSpecial
@@ -88,7 +88,7 @@ Panel
     SpellProgressRect
       id: progressRectSpecial
       anchors.fill: groupIconSpecial
-      !tooltip: tr('Special')
+      !tooltip: tr("otclient_modules.cooldown_otui.tr_6")
 
     SpellGroupIcon
       id: groupIconCrippling
@@ -102,7 +102,7 @@ Panel
     SpellProgressRect
       id: progressRectCrippling
       anchors.fill: groupIconCrippling
-      !tooltip: tr('Crippling')
+      !tooltip: tr("otclient_modules.cooldown_otui.tr_5")
 
     SpellGroupIcon
       id: groupIconFocus
@@ -116,7 +116,7 @@ Panel
     SpellProgressRect
       id: progressRectFocus
       anchors.fill: groupIconFocus
-      !tooltip: tr('Focus')
+      !tooltip: tr("otclient_modules.cooldown_otui.tr_4")
 
     SpellGroupIcon
       id: groupIconUltimateStrike
@@ -130,7 +130,7 @@ Panel
     SpellProgressRect
       id: progressRectUltimateStrike
       anchors.fill: groupIconUltimateStrike
-      !tooltip: tr('Ultimate Strike')
+      !tooltip: tr("otclient_modules.cooldown_otui.tr_3")
 
     SpellGroupIcon
       id: groupIconGreatBeams
@@ -144,7 +144,7 @@ Panel
     SpellProgressRect
       id: progressRectGreatBeams
       anchors.fill: groupIconGreatBeams
-      !tooltip: tr('Great Beams')
+      !tooltip: tr("otclient_modules.cooldown_otui.tr_2")
 
     SpellGroupIcon
       id: groupIconBurstOfNature
@@ -158,7 +158,7 @@ Panel
     SpellProgressRect
       id: progressRectBurstOfNature
       anchors.fill: groupIconBurstOfNature
-      !tooltip: tr('Burst of Nature')
+      !tooltip: tr("otclient_modules.cooldown_otui.tr_1")
 
     Panel
       id: cooldownPanel

@@ -10,7 +10,7 @@ function ladder.onStepIn(creature, item, position, fromPosition)
 	local ladderItem = Tile(ladderPosition):getItemById(5542)
 	if not ladderItem then
 		Game.createItem(5542, 1, ladderPosition)
-		player:say("You hear a rumbling from far away.", TALKTYPE_MONSTER_SAY, false, player)
+		player:sayLocalized("scripts.movements_ladder.say_2", TALKTYPE_MONSTER_SAY, false, player)
 	end
 	return item:transform(item.itemid - 1)
 end
@@ -30,7 +30,7 @@ function ladder.onStepOut(creature, item, position, fromPosition)
 	local ladderItem = Tile(Position(32854, 32321, 11)):getItemById(5542)
 	if ladderItem then
 		ladderItem:remove()
-		player:say("You hear a rumbling from far away.", TALKTYPE_MONSTER_SAY, false, player)
+		player:sayLocalized("scripts.movements_ladder.say_1", TALKTYPE_MONSTER_SAY, false, player)
 	end
 	return item:transform(item.itemid + 1)
 end

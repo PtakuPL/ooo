@@ -24,7 +24,7 @@ function inquisitionBossKill.onDeath(creature)
 
 	if newValue == 2 then
 		onDeathForDamagingPlayers(creature, function(creature, player)
-			player:say("You now have 10 minutes to exit this room through the teleporter. It will bring you to the next room.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.creaturescripts_inquisition_boss.say_1", TALKTYPE_MONSTER_SAY)
 		end)
 		addEvent(Game.setStorageValue, 10 * 60 * 1000, bossStorage, 0)
 	end

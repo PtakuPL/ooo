@@ -18,7 +18,7 @@ Panel
   margin: 1
 
   Label
-    !text: tr('Buy Offers')
+    !text: tr("otclient_modules.itemstats_otui.tr_2")
     font: noto-12
     text-offset: 0 2
     anchors.top: parent.top
@@ -62,7 +62,7 @@ Panel
     pixels-scroll: true
 
   Label
-    !text: tr('Sell Offers')
+    !text: tr("otclient_modules.itemstats_otui.tr_1")
     font: noto-12
     text-offset: 0 2
     anchors.top: buyStatsTable.bottom

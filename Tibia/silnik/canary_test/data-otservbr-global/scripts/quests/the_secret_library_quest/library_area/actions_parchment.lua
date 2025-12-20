@@ -7,7 +7,7 @@ local function isStuck(mustFree)
 	if c and c:isMonster() then
 		if c:getName():lower() == "lokathmor" and c:getSpeed() == 0 then
 			if mustFree then
-				c:say("THE DISCHARGE OF THE BOOK BREAKS LOKATHMORS STANCE!", TALKTYPE_MONSTER_SAY)
+				c:sayLocalized("scripts.actions_parchment.say_2", TALKTYPE_MONSTER_SAY)
 				local cHealth = c:getHealth()
 				local monster = Game.createMonster("Lokathmor", center, true)
 				c:remove()
@@ -41,7 +41,7 @@ local actions_library_parchment = Action()
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if toPosition == deskPosition then
 		if isStuck(false) then
-			player:say("THE DARK KNOWLEDGE PILLS THE BOOK WITH RAW POWER. READY TO BE UNLEASHED!", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_parchment.say_1", TALKTYPE_MONSTER_SAY)
 			freeRoom()
 			item:remove(1)
 		end

@@ -26,9 +26,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Buying fresh corpses of rats, rabbits and wolves." },
-	{ text = "Oh yeah, I'm also interested in wolf paws and bear paws." },
-	{ text = "Also buying minotaur leather." },
+	{ i18nKey = "npc.tom.voice_1" },
+	{ i18nKey = "npc.tom.voice_2" },
+	{ i18nKey = "npc.tom.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -63,15 +63,15 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 	-- Starting mission 6
 	if player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Hey there, |PLAYERNAME|. Did Vascalir send you to me for a {mission}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.tom.greet_msg_1")
 		-- Not finished mission 6
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) > 1 and player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) < 6 then
-		npcHandler:setMessage(MESSAGE_GREET, "Now, now - we can't work with that. Go back to that wolf den and fulfil your mission! Unless there is anything else I can help you with.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.tom.greet_msg_2")
 		-- Finishing mission 6
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) == 6 then
-		npcHandler:setMessage(MESSAGE_GREET, "Hey there, |PLAYERNAME|. You look... exhausted. Did you run a lot? And more importantly, were you able to find some war wolf leather?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.tom.greet_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Hey there, |PLAYERNAME|. I'm Tom the tanner. If you have fresh {corpses}, leather, paws or other animal body parts, {trade} with me.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.tom.greet_msg_3")
 	end
 	return true
 end
@@ -81,9 +81,9 @@ local function farewellCallback(creature)
 	local playerId = player:getId()
 
 	if player:getSex() == PLAYERSEX_FEMALE then
-		npcHandler:setMessage(MESSAGE_FAREWELL, "Good hunting, child.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.tom.farewell_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_FAREWELL, "Good hunting, son.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.tom.farewell_msg_2")
 	end
 	return true
 end
@@ -108,7 +108,7 @@ keywordHandler:addAliasKeyword({ "mission" })
 -- Mission 6: Decline start
 keywordHandler:addKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Alright. Can I help you with something else then?",
+	i18nKey = "npc.tom.stdmod_1",
 }, function(player)
 	return player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) == 1
 end)
@@ -119,7 +119,7 @@ mission6:addChildKeyword(
 	StdModule.say,
 	{
 		npcHandler = npcHandler,
-		text = "That's what I thought. I marked the wolf den on your map. To go there, exit the village to the north and walk north-east. Good luck finding that poacher and figuring out a plan to take those skins! Hehe.",
+		i18nKey = "npc.tom.stdmod_2",
 		ungreet = true,
 	},
 	nil,
@@ -132,7 +132,7 @@ mission6:addChildKeyword(
 -- Mission 6: Decline
 mission6:addChildKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Well, then walk Rookgaard barefoot. It's up to you!",
+	i18nKey = "npc.tom.stdmod_3",
 	reset = true,
 })
 
@@ -157,39 +157,39 @@ end)
 -- Mission 6: Finish - Decline (Give skin)
 keywordHandler:addKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Are you sure? I think I see some war wolf leather on you. You should reply with {yes}.",
+	i18nKey = "npc.tom.stdmod_4",
 }, function(player)
 	return player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) == 6 and player:getItemCount(12740) >= 1
 end)
 
 -- Basic keywords
 keywordHandler:addKeyword({ "hint" }, StdModule.rookgaardHints, { npcHandler = npcHandler })
-keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, text = "My name is Tom the tanner." })
-keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, text = "I'm the local {tanner}. I buy fresh animal {corpses}, tan them, and convert them into fine leather clothes which I then sell to {merchants}." })
-keywordHandler:addKeyword({ "merchant" }, StdModule.say, { npcHandler = npcHandler, text = "{Dixi} and {Lee'Delle} sell my leather clothes in their shops." })
-keywordHandler:addKeyword({ "tanner" }, StdModule.say, { npcHandler = npcHandler, text = "That's my job. It can be dirty at times but it provides enough income for my living." })
-keywordHandler:addKeyword({ "information" }, StdModule.say, { npcHandler = npcHandler, text = "Do I look like a tourist information centre? Go ask someone else." })
-keywordHandler:addKeyword({ "help" }, StdModule.say, { npcHandler = npcHandler, text = "Help? I will give you a few gold coins if you have some fresh dead {animals} for me. Note the word {fresh}." })
-keywordHandler:addKeyword({ "fresh" }, StdModule.say, { npcHandler = npcHandler, text = "Fresh means: shortly after their death." })
-keywordHandler:addKeyword({ "how", "are", "you" }, StdModule.say, { npcHandler = npcHandler, text = "Much to do these days." })
-keywordHandler:addKeyword({ "monster" }, StdModule.say, { npcHandler = npcHandler, text = "Good monsters to start with are rats. They live in the {sewers} under the village of {Rookgaard}." })
-keywordHandler:addKeyword({ "dungeon" }, StdModule.say, { npcHandler = npcHandler, text = "Dungeons can be dangerous without proper {equipment}." })
-keywordHandler:addKeyword({ "equipment" }, StdModule.say, { npcHandler = npcHandler, text = "You need at least a {backpack}, a {rope}, a {shovel}, a {weapon}, an {armor} and a {shield}." })
-keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, text = "Sorry, I haven't been outside for a while, so I don't know." })
+keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_1" })
+keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_2" })
+keywordHandler:addKeyword({ "merchant" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_3" })
+keywordHandler:addKeyword({ "tanner" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_4" })
+keywordHandler:addKeyword({ "information" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_5" })
+keywordHandler:addKeyword({ "help" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_6" })
+keywordHandler:addKeyword({ "fresh" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_7" })
+keywordHandler:addKeyword({ "how", "are", "you" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_8" })
+keywordHandler:addKeyword({ "monster" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_9" })
+keywordHandler:addKeyword({ "dungeon" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_10" })
+keywordHandler:addKeyword({ "equipment" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_11" })
+keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_12" })
 
-keywordHandler:addKeyword({ "troll" }, StdModule.say, { npcHandler = npcHandler, text = "Troll leather stinks. Can't use it." })
-keywordHandler:addKeyword({ "orc" }, StdModule.say, { npcHandler = npcHandler, text = "I don't buy orcs. Their skin is too scratchy." })
-keywordHandler:addKeyword({ "human" }, StdModule.say, { npcHandler = npcHandler, text = "Are you crazy?!", ungreet = true })
+keywordHandler:addKeyword({ "troll" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_13" })
+keywordHandler:addKeyword({ "orc" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_14" })
+keywordHandler:addKeyword({ "human" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_15", ungreet = true })
 
-keywordHandler:addKeyword({ "backpack" }, StdModule.say, { npcHandler = npcHandler, text = "Nope, sorry, don't sell that. Go see {Al Dee} or {Lee'Delle}." })
+keywordHandler:addKeyword({ "backpack" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_16" })
 keywordHandler:addAliasKeyword({ "rope" })
 
-keywordHandler:addKeyword({ "armor" }, StdModule.say, { npcHandler = npcHandler, text = "Nope, sorry, don't sell that. Ask {Dixi} or {Lee'Delle}." })
+keywordHandler:addKeyword({ "armor" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_17" })
 keywordHandler:addAliasKeyword({ "shield" })
 
-keywordHandler:addKeyword({ "weapon" }, StdModule.say, { npcHandler = npcHandler, text = "Nope, sorry, don't sell that. Ask {Obi} or {Lee'Delle}." })
+keywordHandler:addKeyword({ "weapon" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_18" })
 
-keywordHandler:addKeyword({ "corpse" }, StdModule.say, { npcHandler = npcHandler, text = "I'm buying fresh {corpses} of rats, rabbits and wolves. I don't buy half-decayed ones. If you have any for sale, {trade} with me." })
+keywordHandler:addKeyword({ "corpse" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_19" })
 keywordHandler:addAliasKeyword({ "wares" })
 keywordHandler:addAliasKeyword({ "animal" })
 keywordHandler:addAliasKeyword({ "sell" })
@@ -197,24 +197,24 @@ keywordHandler:addAliasKeyword({ "buy" })
 keywordHandler:addAliasKeyword({ "offer" })
 
 -- Names
-keywordHandler:addKeyword({ "al", "dee" }, StdModule.say, { npcHandler = npcHandler, text = "He's an apple polisher." })
-keywordHandler:addKeyword({ "amber" }, StdModule.say, { npcHandler = npcHandler, text = "Now that's an interesting woman." })
-keywordHandler:addKeyword({ "billy" }, StdModule.say, { npcHandler = npcHandler, text = "He's a better cook than his cousin {Willie}, actually." })
-keywordHandler:addKeyword({ "willie" }, StdModule.say, { npcHandler = npcHandler, text = "I kinda like him. At least he says what he thinks." })
+keywordHandler:addKeyword({ "al", "dee" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_20" })
+keywordHandler:addKeyword({ "amber" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_21" })
+keywordHandler:addKeyword({ "billy" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_22" })
+keywordHandler:addKeyword({ "willie" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_23" })
 keywordHandler:addKeyword({ "tom" }, StdModule.say, { npcHandler = npcHandler, text = "Yep." })
-keywordHandler:addKeyword({ "seymour" }, StdModule.say, { npcHandler = npcHandler, text = "He sticks his nose too much in books." })
-keywordHandler:addKeyword({ "zirella" }, StdModule.say, { npcHandler = npcHandler, text = "My mother?? Did you meet my mother??" })
-keywordHandler:addKeyword({ "santiago" }, StdModule.say, { npcHandler = npcHandler, text = "I don't have a problem with him." })
-keywordHandler:addKeyword({ "paulie" }, StdModule.say, { npcHandler = npcHandler, text = "Typical pencil pusher." })
-keywordHandler:addKeyword({ "oracle" }, StdModule.say, { npcHandler = npcHandler, text = "It's in the academy, just above Seymour. Go there once you are level 8 to leave this place." })
-keywordHandler:addKeyword({ "obi" }, StdModule.say, { npcHandler = npcHandler, text = "He is such a hypocrite." })
-keywordHandler:addKeyword({ "norma" }, StdModule.say, { npcHandler = npcHandler, text = "I like her beer." })
-keywordHandler:addKeyword({ "dixi" }, StdModule.say, { npcHandler = npcHandler, text = "She buys my fine leather clothes." })
-keywordHandler:addKeyword({ "loui" }, StdModule.say, { npcHandler = npcHandler, text = "I wonder what spectacular monsters he has found." })
-keywordHandler:addKeyword({ "lee'delle" }, StdModule.say, { npcHandler = npcHandler, text = "Her nose is a little high in the air, I think. She never shakes my hand." })
-keywordHandler:addKeyword({ "hyacinth" }, StdModule.say, { npcHandler = npcHandler, text = "I wonder if he's angry because his potion monopoly fell." })
-keywordHandler:addKeyword({ "cipfried" }, StdModule.say, { npcHandler = npcHandler, text = "I'm not what you'd call a 'believer'." })
-keywordHandler:addKeyword({ "dallheim" }, StdModule.say, { npcHandler = npcHandler, text = "He's okay." })
+keywordHandler:addKeyword({ "seymour" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_24" })
+keywordHandler:addKeyword({ "zirella" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_25" })
+keywordHandler:addKeyword({ "santiago" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_26" })
+keywordHandler:addKeyword({ "paulie" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_27" })
+keywordHandler:addKeyword({ "oracle" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_28" })
+keywordHandler:addKeyword({ "obi" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_29" })
+keywordHandler:addKeyword({ "norma" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_30" })
+keywordHandler:addKeyword({ "dixi" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_31" })
+keywordHandler:addKeyword({ "loui" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_32" })
+keywordHandler:addKeyword({ "lee'delle" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_33" })
+keywordHandler:addKeyword({ "hyacinth" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_34" })
+keywordHandler:addKeyword({ "cipfried" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_35" })
+keywordHandler:addKeyword({ "dallheim" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_36" })
 keywordHandler:addAliasKeyword({ "zerbrus" })
 
 local function creatureSayCallback(npc, creature, type, message)
@@ -261,7 +261,7 @@ end
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_FAREWELL, farewellCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_WALKAWAY, "D'oh?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.tom.walkaway_msg_1")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Sure, check what I buy.")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
@@ -291,7 +291,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

@@ -827,7 +827,7 @@ local function onTradeRequest(npc, creature, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Si, jema ze harun. <waves>")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.yasir.farewell_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:setCallback(CALLBACK_ON_TRADE_REQUEST, onTradeRequest)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

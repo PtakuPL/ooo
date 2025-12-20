@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Love is beautiful, we are loved." },
+	{ i18nKey = "npc.valentina.voice_1" },
 }
 
 npcConfig.shop = {
@@ -80,9 +80,9 @@ end
 -- Basic
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.valentina.stdmod_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to Valentine's Store. Let's {trade} something?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Please come back from time to time.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Please come back from time to time.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.valentina.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.valentina.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.valentina.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

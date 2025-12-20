@@ -11,7 +11,7 @@ function ferumbrasAscendantLeverSecond.onUse(player, item, fromPosition, target,
 					local spec = spectators[i]
 					spec:teleportTo(Position(33646, 32654, 14))
 					spec:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-					spec:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Something clicked at same time a booming sound almost deafens you.")
+					spec:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_lever_second.msg_1")
 				end
 			end
 			revertStorages()

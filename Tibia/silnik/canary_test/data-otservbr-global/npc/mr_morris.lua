@@ -26,17 +26,16 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I have a quest that needs doing. Interested?" },
-	{ text = "Hmmm. Interesting. If only someone could help investigate this." },
-	{ text = "There's a task for an intrepid adventurer open! Any volunteers?" },
-	{ text = "Hey, you. Yes, you. I could use your help." },
+	{ i18nKey = "npc.mr_morris.voice_1" },
+	{ i18nKey = "npc.mr_morris.voice_2" },
+	{ i18nKey = "npc.mr_morris.voice_3" },
+	{ i18nKey = "npc.mr_morris.voice_4" },
 	{
-		text = "<sigh> The Adventurers' Guild really should have equipped me with more man power. \z
-		Who's to keep all those monsters in check?",
+		i18nKey = "npc.mr_morris.voice_5",
 	},
-	{ text = "So much to investigate, so little time..." },
-	{ text = "Buying all sorts of creature products!" },
-	{ text = "You're looking thoughtful. Maybe I can help you?" },
+	{ i18nKey = "npc.mr_morris.voice_6" },
+	{ i18nKey = "npc.mr_morris.voice_7" },
+	{ i18nKey = "npc.mr_morris.voice_8" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -343,11 +342,7 @@ keywordHandler:addKeyword({ "woblin" }, StdModule.say, {
 	i18nKey = "npc.mr_morris.stdmod_21",
 })
 
-npcHandler:setMessage(
-	MESSAGE_GREET,
-	"Welcome, young adventurer. \z
-If you seek to help me with some things, I might have a little {quest} or {mission} for you."
-)
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.mr_morris.greet_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

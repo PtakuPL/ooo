@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Selling weapons and armors to protect mortal souls." },
+	{ i18nKey = "npc.memech.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

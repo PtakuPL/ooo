@@ -56,10 +56,10 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Feel welcome to my gem store, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Bye, bye.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Bye, bye.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Here, take a look.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.iwan.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.iwan.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.iwan.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.iwan.sendtrade_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {

@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "The Edron academy is always in need of magical ingredients!" },
+	{ i18nKey = "npc.fiona.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -58,10 +58,10 @@ end
 
 keywordHandler:addKeyword({ "magical ingredients" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.fiona.stdmod_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Good day, |PLAYERNAME|. I hope you bring a lot of {magical ingredients} with you.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and please come back soon.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye and please come back soon.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Sure, take a look. Apart from those, I also buy some of the possessions from famous demonlords and bosses. Ask me about it if you found anything interesting.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.fiona.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.fiona.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.fiona.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.fiona.sendtrade_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {

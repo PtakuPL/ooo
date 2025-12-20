@@ -153,21 +153,21 @@ local function changeArea()
 					online:setStorageValue(14334, -1)
 					online:setStorageValue(14336, 1)
 					online:teleportTo({ x = 32299, y = 31372, z = 14 })
-					online:say("A polarity shift moves you into another part of the heart of destruction.", TALKTYPE_MONSTER_SAY)
+					online:sayLocalized("scripts.actions_final_lever.say_4", TALKTYPE_MONSTER_SAY)
 					Position({ x = 32299, y = 31372, z = 14 }):sendMagicEffect(11)
 					-- Teleport players from The Destruction to The Hunger
 				elseif online:getStorageValue(14335) >= 1 then
 					online:setStorageValue(14335, -1)
 					online:setStorageValue(14334, 1)
 					online:teleportTo({ x = 32244, y = 31372, z = 14 })
-					online:say("A polarity shift moves you into another part of the heart of destruction.", TALKTYPE_MONSTER_SAY)
+					online:sayLocalized("scripts.actions_final_lever.say_3", TALKTYPE_MONSTER_SAY)
 					Position({ x = 32244, y = 31372, z = 14 }):sendMagicEffect(11)
 					-- Teleport players from The Rage to The Destruction
 				elseif online:getStorageValue(14336) >= 1 then
 					online:setStorageValue(14336, -1)
 					online:setStorageValue(14335, 1)
 					online:teleportTo({ x = 32271, y = 31316, z = 14 })
-					online:say("A polarity shift moves you into another part of the heart of destruction.", TALKTYPE_MONSTER_SAY)
+					online:sayLocalized("scripts.actions_final_lever.say_2", TALKTYPE_MONSTER_SAY)
 					Position({ x = 32271, y = 31316, z = 14 }):sendMagicEffect(11)
 				end
 			end
@@ -204,7 +204,7 @@ local function changeArea()
 		local spectators = Game.getSpectators(Position(32271, 31348, 14), false, true, 10, 10, 10, 10)
 		if #spectators > 0 then
 			for i = 1, #spectators do
-				spectators[i]:say("With the Rage, Hunger and Destruction gone, you're sucked into the heart of destruction!! THE WORLD DEVOURER AWAITS YOU!", TALKTYPE_MONSTER_YELL, false, spectators[i], Position(32271, 31348, 14))
+				spectators[i]:sayLocalized("scripts.actions_final_lever.say_1", TALKTYPE_MONSTER_YELL, false, spectators[i], Position(32271, 31348, 14))
 			end
 		end
 

@@ -59,12 +59,12 @@ end
 -- Travel
 local function addTravelKeyword(keyword, cost, destination, action, condition)
 	if condition then
-		keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = "I'm sorry but I don't sail there." }, condition)
+		keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.kendra_thais.stdmod_1" }, condition)
 	end
 
-	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = "Do you seek a passage to " .. keyword:titleCase() .. " for |TRAVELCOST|?", cost = cost, discount = "postman" })
+	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.kendra_thais.stdmod_2" .. keyword:titleCase() .. " for |TRAVELCOST|?", cost = cost, discount = "postman" })
 	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = true, cost = cost, discount = "postman", destination = destination }, nil, action)
-	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, text = "We would like to serve you some time.", reset = true })
+	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.kendra_thais.stdmod_3", reset = true })
 end
 
 addTravelKeyword("nostalgia", 180, Position(33494, 31059, 7))
@@ -73,12 +73,12 @@ addTravelKeyword("nostalgia", 180, Position(33494, 31059, 7))
 --keywordHandler:addKeyword({'kick'}, StdModule.kick, {npcHandler = npcHandler, destination = {Position(32320, 32219, 6), Position(32321, 32210, 6)}})
 
 -- Basic
-keywordHandler:addKeyword({ "passenger" }, StdModule.say, { npcHandler = npcHandler, text = "We would like to welcome you on board." })
-keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandler, text = "Where do you want to go? To {Nostalgia}, {Horror Village}" })
-keywordHandler:addKeyword({ "sail" }, StdModule.say, { npcHandler = npcHandler, text = "Where do you want to go? To {Nostalgia}, {Horror Village}" })
-keywordHandler:addKeyword({ "go" }, StdModule.say, { npcHandler = npcHandler, text = "Where do you want to go? To {Nostalgia}, {Horror Village}" })
-keywordHandler:addKeyword({ "Nostalgia" }, StdModule.say, { npcHandler = npcHandler, text = "This is Nostalgia. Where do you want to go?" })
-keywordHandler:addKeyword({ "Horror Village" }, StdModule.say, { npcHandler = npcHandler, text = "This is Horror Village. Where do you want to go?" })
+keywordHandler:addKeyword({ "passenger" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.kendra_thais.stdmod_4" })
+keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.kendra_thais.stdmod_5" })
+keywordHandler:addKeyword({ "sail" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.kendra_thais.stdmod_6" })
+keywordHandler:addKeyword({ "go" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.kendra_thais.stdmod_7" })
+keywordHandler:addKeyword({ "Nostalgia" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.kendra_thais.stdmod_8" })
+keywordHandler:addKeyword({ "Horror Village" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.kendra_thais.stdmod_9" })
 
 npcHandler:setMessage(MESSAGE_GREET, "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye. Recommend us if you were satisfied with our service.")

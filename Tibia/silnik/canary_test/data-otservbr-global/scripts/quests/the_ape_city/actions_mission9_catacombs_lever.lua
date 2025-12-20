@@ -24,7 +24,7 @@ end
 local lever = Action()
 function lever.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if item.itemid == 2773 then
-		player:say("It doesn't move.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.actions_mission9_catacombs_lever.say_3", TALKTYPE_MONSTER_SAY)
 		return true
 	end
 	addEvent(revertLever, 10 * 60 * 1000, toPosition)
@@ -42,7 +42,7 @@ local function wallRemove(player, item)
 		addEvent(revertWall, 10 * 1000, toPosition)
 		return item:transform(item.itemid == 2772 and 2773 or 2772)
 	else
-		player:say("The lever won't budge", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.actions_mission9_catacombs_lever.say_2", TALKTYPE_MONSTER_SAY)
 		return true
 	end
 end
@@ -57,7 +57,7 @@ function gate.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 				wallRemove(player, item)
 				return true
 			end
-			return player:say("It doesn't move.", TALKTYPE_MONSTER_SAY)
+			return player:sayLocalized("scripts.actions_mission9_catacombs_lever.say_1", TALKTYPE_MONSTER_SAY)
 		elseif i == #config then
 			wallRemove(player, item)
 			return true

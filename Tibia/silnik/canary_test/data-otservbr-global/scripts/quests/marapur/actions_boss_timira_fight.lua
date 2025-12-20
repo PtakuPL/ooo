@@ -304,11 +304,11 @@ function timiraBucket.onUse(player, item, fromPosition, target, toPosition, isHo
 			firstStagePoints = firstStagePoints + 1
 
 			if activeStage == stages.FIRST and firstStagePoints >= fightZone:countPlayers() * timiraFightConfig.bucketsRequiredPerPlayerInFight then
-				player:say("The water has formed into a shape!", TALKTYPE_MONSTER_SAY, false, 0, firstStageConfig.shatteredWaterPosition)
+				player:sayLocalized("quests.actions_boss_timira_fight.say_2", TALKTYPE_MONSTER_SAY, false, 0, firstStageConfig.shatteredWaterPosition)
 				startSecondStage()
 				return true
 			end
-			player:say("The pieces are shining!", TALKTYPE_MONSTER_SAY, false, 0, firstStageConfig.shatteredWaterPosition)
+			player:sayLocalized("quests.actions_boss_timira_fight.say_1", TALKTYPE_MONSTER_SAY, false, 0, firstStageConfig.shatteredWaterPosition)
 		end
 		return true
 	end

@@ -1,0 +1,14 @@
+# NPC: the_oracle
+
+**Plik:** 
+**Data migracji:** 2025-12-20 20:26
+**Liczba tekstów:** 4
+
+## Klucze i18n
+
+| Klucz | Tekst EN |
+|-------|----------|
+|  | A SORCERER! ARE YOU SURE? THIS DECISION IS IRREVERSIBLE! |
+|  | A DRUID! ARE YOU SURE? THIS DECISION IS IRREVERSIBLE! |
+|  | A PALADIN! ARE YOU SURE? THIS DECISION IS IRREVERSIBLE! |
+|  | A KNIGHT! ARE YOU SURE? THIS DECISION IS IRREVERSIBLE! |

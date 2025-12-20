@@ -312,7 +312,7 @@ registerMonsterType.voices = function(mtype, mask)
 		end
 		for k, v in pairs(mask.voices) do
 			if type(v) == "table" then
-				mtype:addVoice(v.text, interval, chance, v.yell)
+				mtype:addVoice(v.text, interval, chance, v.yell, v.i18nKey)
 			end
 		end
 	end

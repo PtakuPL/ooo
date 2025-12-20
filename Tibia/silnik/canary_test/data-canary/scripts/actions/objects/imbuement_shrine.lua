@@ -2,11 +2,11 @@ local imbuement = Action()
 
 function imbuement.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if configManager.getBoolean(configKeys.TOGGLE_IMBUEMENT_SHRINE_STORAGE) and player:getStorageValue(Storage.Imbuement) ~= 1 then
-		return player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You did not collect enough knowledge from the ancient Shapers. Visit the Shaper temple in Montag for help.")
+		return player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "actions.imbuement_shrine.msg_2")
 	end
 
 	if not target or type(target) ~= "userdata" or not target:isItem() then
-		return player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can only use the shrine on an valid item.")
+		return player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "actions.imbuement_shrine.msg_1")
 	end
 
 	player:openImbuementWindow(target)

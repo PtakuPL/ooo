@@ -30,7 +30,7 @@ local maxsummons = 10
 local spell = Spell("instant")
 
 function spell.onCastSpell(creature, var)
-	creature:say("RISE MY SERVANTS! RISE!!", TALKTYPE_MONSTER_SAY)
+	creature:sayLocalized("scripts.feroxa_summon.say_1", TALKTYPE_MONSTER_SAY)
 
 	local summoncount = creature:getSummons()
 	local creaturePos = creature:getPosition()

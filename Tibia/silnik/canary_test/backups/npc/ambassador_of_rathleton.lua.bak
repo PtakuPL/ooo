@@ -26,9 +26,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "What a beautiful palace. The Kilmareshians are highly skilful architects." },
-	{ text = "The new treaty of amity and commerce with Kilmaresh is of utmost importance." },
-	{ text = "The pending freight from the saffron coasts is overdue." },
+	{ i18nKey = "npc.ambassador_of_rathleton.voice_1" },
+	{ i18nKey = "npc.ambassador_of_rathleton.voice_2" },
+	{ i18nKey = "npc.ambassador_of_rathleton.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()

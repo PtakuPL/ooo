@@ -99,7 +99,7 @@ function online()
     if g_game.getFeature(GameUnjustifiedPoints) and not unjustifiedPointsButton then
         unjustifiedPointsWindow:setupOnStart() -- load character window configuration
         unjustifiedPointsButton = modules.game_mainpanel.addToggleButton('unjustifiedPointsButton',
-            tr('Unjustified Points'), '/images/options/button_frags', toggle)
+            tr("otclient_modules.unjustifiedpoints.tr_7"), '/images/options/button_frags', toggle)
         unjustifiedPointsButton:setOn(false)
     end
 
@@ -134,10 +134,10 @@ function onSkullChange(localPlayer, skull)
 
     if skull == SkullRed or skull == SkullBlack then
         currentSkullWidget:setIcon(getSkullImagePath(skull))
-        currentSkullWidget:setTooltip(tr('Remaining skull time'))
+        currentSkullWidget:setTooltip(tr("otclient_modules.unjustifiedpoints.tr_6"))
     else
         currentSkullWidget:setIcon('')
-        currentSkullWidget:setTooltip(tr('You have no skull'))
+        currentSkullWidget:setTooltip(tr("otclient_modules.unjustifiedpoints.tr_5"))
     end
 
     daySkullWidget:setIcon(getSkullImagePath(getNextSkullId(skull)))
@@ -170,11 +170,11 @@ end
 --   - killsMonthRemaining (number): kills remaining until next skull for the 30-day window.
 function onUnjustifiedPointsChange(unjustifiedPoints)
     if unjustifiedPoints.skullTime == 0 then
-        skullTimeLabel:setText(tr('No skull'))
-        skullTimeLabel:setTooltip(tr('You have no skull'))
+        skullTimeLabel:setText(tr("otclient_modules.unjustifiedpoints.tr_4"))
+        skullTimeLabel:setTooltip(tr("otclient_modules.unjustifiedpoints.tr_3"))
     else
-        skullTimeLabel:setText(unjustifiedPoints.skullTime .. ' ' .. tr('days'))
-        skullTimeLabel:setTooltip(tr('Remaining skull time'))
+        skullTimeLabel:setText(unjustifiedPoints.skullTime .. ' ' .. tr("otclient_modules.unjustifiedpoints.tr_2"))
+        skullTimeLabel:setTooltip(tr("otclient_modules.unjustifiedpoints.tr_1"))
     end
 
     dayProgressBar:setValue(unjustifiedPoints.killsDay, 0, 100)

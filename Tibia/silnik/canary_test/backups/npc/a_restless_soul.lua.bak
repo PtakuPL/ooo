@@ -1,0 +1,89 @@
+local internalNpcName = "A Restless Soul"
+local npcType = Game.createNpcType(internalNpcName)
+local npcConfig = {}
+
+npcConfig.name = internalNpcName
+npcConfig.description = internalNpcName
+
+npcConfig.health = 100
+npcConfig.maxHealth = npcConfig.health
+npcConfig.walkInterval = 2000
+npcConfig.walkRadius = 2
+
+npcConfig.outfit = {
+	lookType = 48,
+}
+
+npcConfig.flags = {
+	floorchange = false,
+}
+
+local keywordHandler = KeywordHandler:new()
+local npcHandler = NpcHandler:new(keywordHandler)
+
+npcType.onThink = function(npc, interval)
+	npcHandler:onThink(npc, interval)
+end
+
+npcType.onAppear = function(npc, creature)
+	npcHandler:onAppear(npc, creature)
+end
+
+npcType.onDisappear = function(npc, creature)
+	npcHandler:onDisappear(npc, creature)
+end
+
+npcType.onMove = function(npc, creature, fromPosition, toPosition)
+	npcHandler:onMove(npc, creature, fromPosition, toPosition)
+end
+
+npcType.onSay = function(npc, creature, type, message)
+	npcHandler:onSay(npc, creature, type, message)
+end
+
+npcType.onCloseChannel = function(npc, creature)
+	npcHandler:onCloseChannel(npc, creature)
+end
+
+local function greetCallback(npc, creature)
+	local player = Player(creature)
+	local playerId = player:getId()
+
+	if player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) < 37 then
+		npcHandler:setMessage(MESSAGE_GREET, "Uhhhh...")
+		return false
+	elseif player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 37 then
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_restless_soul.greet_msg_1")
+	end
+	return true
+end
+
+local function creatureSayCallback(npc, creature, type, message)
+	local player = Player(creature)
+	local playerId = player:getId()
+
+	if not npcHandler:checkInteraction(npc, creature) then
+		return false
+	end
+
+	if MsgContains(message, "story") then
+		local player = Player(creature)
+		if player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline) == 37 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_restless_soul.multi_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_restless_soul.multi_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_restless_soul.multi_3")
+			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Questline, 38)
+			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission10, 2) -- Questlog The Ice Islands Quest, Formorgar Mines 2: Ghostwhisperer
+			player:setStorageValue(Storage.Quest.U8_0.TheIceIslands.Mission11, 1) -- Questlog The Ice Islands Quest, Formorgar Mines 3: The Secret
+		end
+	end
+
+	return true
+end
+
+npcHandler:setCallback(CALLBACK_GREET, greetCallback)
+npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
+npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
+
+-- npcType registering the npcConfig table
+npcType:register(npcConfig)

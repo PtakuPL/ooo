@@ -79,7 +79,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			local realRoll = math.random(30)
 			local roll = math.random(5)
 			if realRoll < 30 then
-				npcHandler:say("Ok, here we go ... " .. roll .. "! You have lost. Bad luck. One more game?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zebron.say_1", { roll })
 			else
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zebron.say_4")
 				player:addItem(5792, 1)
@@ -118,9 +118,9 @@ local function creatureSayCallback(npc, creature, type, message)
 		npc:getPosition():sendMagicEffect(CONST_ME_CRAPS)
 		local roll = math.random(6)
 		if roll < 6 then
-			npcHandler:say("Ok, here we go ... " .. roll .. "! You have lost. Bad luck. One more game?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zebron.say_2", { roll })
 		else
-			npcHandler:say("Ok, here we go ... 6! You have won " .. amount * 5 .. ", congratulations. One more game?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zebron.say_3", { amount * 5 })
 			player:addMoney(amount * 5)
 		end
 		npcHandler:setTopic(playerId, 0)
@@ -131,9 +131,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, high roller. So you care for a game, |PLAYERNAME|?")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Hey, you can't leave. Luck is smiling on you. I can feel it!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Hey, you can't leave, |PLAYERNAME|. Luck is smiling on you. I can feel it!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.zebron.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.zebron.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.zebron.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

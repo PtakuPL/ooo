@@ -149,7 +149,7 @@ function teleportToCrackler()
 						for _, c in pairs(creatures) do
 							if c == team[1] or c == team[2] then
 								c:teleportTo({ x = c:getPosition().x, y = c:getPosition().y, z = c:getPosition().z + 1 })
-								c:say("A shift in polarity switches creatures with coresponding polarity into another phase of existence!", TALKTYPE_MONSTER_YELL, isInGhostMode, pid, { x = 32158, y = 31355, z = 14 })
+								c:sayLocalized("scripts.actions_charges_lever.say_1", TALKTYPE_MONSTER_YELL, isInGhostMode, pid, { x = 32158, y = 31355, z = 14 })
 							end
 						end
 					end

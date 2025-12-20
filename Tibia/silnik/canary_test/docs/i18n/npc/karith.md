@@ -1,7 +1,7 @@
 # NPC: karith
 
 **Plik:** `data-otservbr-global/npc/karith.lua`
-**Data migracji:** 2025-12-10 14:15
+**Data migracji:** 2025-12-17 01:01
 **Liczba tekstów:** 3
 
 ## Klucze i18n

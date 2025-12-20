@@ -1,6 +1,6 @@
 CountWindow < MainWindow
   id: countWindow
-  !text: tr('Move Stackable Item')
+  !text: tr("otclient_modules.countwindow_otui.tr_3")
   size: 196 90
 
   SpinBox
@@ -33,7 +33,7 @@ CountWindow < MainWindow
 
   Button
     id: buttonCancel
-    !text: tr('Cancel')
+    !text: tr("otclient_modules.countwindow_otui.tr_2")
     height: 20
     anchors.left: countScrollBar.horizontalCenter
     anchors.right: countScrollBar.right
@@ -43,7 +43,7 @@ CountWindow < MainWindow
 
   Button
     id: buttonOk
-    !text: tr('Ok')
+    !text: tr("otclient_modules.countwindow_otui.tr_1")
     height: 20
     anchors.right: countScrollBar.horizontalCenter
     anchors.left: countScrollBar.left

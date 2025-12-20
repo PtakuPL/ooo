@@ -74,7 +74,7 @@ UIWidget
       id: showTopMenuButton
       anchors.top: parent.top
       anchors.left: parent.left
-      !text: tr('Show Top Menu')
+      !text: tr("otclient_modules.gameinterface_otui.tr_1")
       height: 32
       visible: false
 

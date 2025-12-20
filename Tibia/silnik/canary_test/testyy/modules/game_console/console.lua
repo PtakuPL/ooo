@@ -341,9 +341,9 @@ end
 function toggleChat()
     consoleToggleChat.isChecked = not consoleToggleChat.isChecked
     if consoleToggleChat.isChecked then
-        consoleToggleChat:setText(tr('Chat Off'))
+        consoleToggleChat:setText(tr("otclient_modules.console.tr_40"))
     else
-        consoleToggleChat:setText(tr('Chat On'))
+        consoleToggleChat:setText(tr("otclient_modules.console.tr_39"))
     end
 end
 
@@ -398,11 +398,11 @@ function switchChat(enabled)
 
     if enabled then
         unbindMovingKeys()
-        consoleToggleChat:setTooltip(tr('Disable chat mode, allow to walk using WASD'))
+        consoleToggleChat:setTooltip(tr("otclient_modules.console.tr_38"))
         Keybind.setChatMode(CHAT_MODE.ON)
     else
         bindMovingKeys()
-        consoleToggleChat:setTooltip(tr('Enable chat mode'))
+        consoleToggleChat:setTooltip(tr("otclient_modules.console.tr_37"))
         Keybind.setChatMode(CHAT_MODE.OFF)
     end
 end
@@ -518,9 +518,9 @@ function load()
         messageHistory = settings.messageHistory or {}
         consoleToggleChat.isChecked = settings.wasdMode or false
         if consoleToggleChat.isChecked then
-            consoleToggleChat:setText(tr('Chat Off'))
+            consoleToggleChat:setText(tr("otclient_modules.console.tr_36"))
         else
-            consoleToggleChat:setText(tr('Chat On'))
+            consoleToggleChat:setText(tr("otclient_modules.console.tr_35"))
         end
         updateChatMode()
     end
@@ -655,8 +655,8 @@ function openPlayerReportRuleViolationWindow()
     violationWindow.onEnter = function()
         local text = violationWindow:getChildById('text'):getText()
         g_game.talkChannel(MessageModes.RVRChannel, 0, text)
-        violationReportTab = addTab(tr('Report Rule') .. '...', true)
-        addTabText(tr('Please wait patiently for a gamemaster to reply') .. '.', SpeakTypesSettings.privateRed,
+        violationReportTab = addTab(tr("otclient_modules.console.tr_34") .. '...', true)
+        addTabText(tr("otclient_modules.console.tr_33") .. '.', SpeakTypesSettings.privateRed,
             violationReportTab)
         addTabText(applyMessagePrefixies(g_game.getCharacterName(), 0, text), SpeakTypesSettings.say,
             violationReportTab, g_game.getCharacterName())
@@ -1288,26 +1288,26 @@ function processChannelTabMenu(tab, mousePos, mouseButton)
     local characterName = g_game.getCharacterName()
     channelName = tab:getText()
     if tab ~= defaultTab and tab ~= serverTab then
-        menu:addOption(tr('Close'), function()
+        menu:addOption(tr("otclient_modules.console.tr_32"), function()
             removeTab(channelName)
         end)
         menu:addSeparator()
     end
     if readOnlyModeEnabled and activeactiveReadOnlyTabName == channelName then
-        menu:addOption(tr("Close read-only"), function()
+        menu:addOption(tr("otclient_modules.console.tr_31"), function()
             clearReadOnlyTab()
             toggleReadOnlyMode()
         end)
     else
-        menu:addOption(tr("Open read-only"), function()
+        menu:addOption(tr("otclient_modules.console.tr_30"), function()
             activateReadOnlyMode(channelName)
         end)
     end
     if consoleTabBar:getCurrentTab() == tab then
-        menu:addOption(tr('Clear Messages'), function()
+        menu:addOption(tr("otclient_modules.console.tr_29"), function()
             clearChannel(consoleTabBar)
         end)
-        menu:addOption(tr('Save Messages'), function()
+        menu:addOption(tr("otclient_modules.console.tr_28"), function()
             saveChannelMessages(tab, worldName, characterName, channelName)
         end)
     end
@@ -1325,61 +1325,61 @@ function processMessageMenu(mousePos, mouseButton, creatureName, text, label, ta
                     g_game.openPrivateChannel(creatureName)
                 end)
                 if not g_game.getLocalPlayer():hasVip(creatureName) then
-                    menu:addOption(tr('Add to VIP list'), function()
+                    menu:addOption(tr("otclient_modules.console.tr_27"), function()
                         g_game.addVip(creatureName)
                     end)
                 end
                 if modules.game_console.getOwnPrivateTab() then
                     menu:addSeparator()
-                    menu:addOption(tr('Invite to private chat'), function()
+                    menu:addOption(tr("otclient_modules.console.tr_26"), function()
                         g_game.inviteToOwnChannel(creatureName)
                     end)
-                    menu:addOption(tr('Exclude from private chat'), function()
+                    menu:addOption(tr("otclient_modules.console.tr_25"), function()
                         g_game.excludeFromOwnChannel(creatureName)
                     end)
                 end
                 if isIgnored(creatureName) then
-                    menu:addOption(tr('Unignore') .. ' ' .. creatureName, function()
+                    menu:addOption(tr("otclient_modules.console.tr_24") .. ' ' .. creatureName, function()
                         removeIgnoredPlayer(creatureName)
                     end)
                 else
-                    menu:addOption(tr('Ignore') .. ' ' .. creatureName, function()
+                    menu:addOption(tr("otclient_modules.console.tr_23") .. ' ' .. creatureName, function()
                         addIgnoredPlayer(creatureName)
                     end)
                 end
                 menu:addSeparator()
             end
             if modules.game_ruleviolation.hasWindowAccess() then
-                menu:addOption(tr('Rule Violation'), function()
+                menu:addOption(tr("otclient_modules.console.tr_22"), function()
                     modules.game_ruleviolation.show(creatureName, text:match('.+%:%s(.+)'))
                 end)
                 menu:addSeparator()
             end
 
-            menu:addOption(tr('Copy name'), function()
+            menu:addOption(tr("otclient_modules.console.tr_21"), function()
                 g_window.setClipboardText(creatureName)
             end)
         end
         local selection = tab.tabPanel:getChildById('consoleBuffer').selectionText
         if selection and #selection > 0 then
-            menu:addOption(tr('Copy'), function()
+            menu:addOption(tr("otclient_modules.console.tr_20"), function()
                 g_window.setClipboardText(selection)
             end, '(Ctrl+C)')
         end
         if text then
-            menu:addOption(tr('Copy message'), function()
+            menu:addOption(tr("otclient_modules.console.tr_19"), function()
                 g_window.setClipboardText(text)
             end)
         end
-        menu:addOption(tr('Select all'), function()
+        menu:addOption(tr("otclient_modules.console.tr_18"), function()
             selectAll(tab.tabPanel:getChildById('consoleBuffer'))
         end)
         if tab.violations and creatureName then
             menu:addSeparator()
-            menu:addOption(tr('Process') .. ' ' .. creatureName, function()
+            menu:addOption(tr("otclient_modules.console.tr_17") .. ' ' .. creatureName, function()
                 processViolation(creatureName, text)
             end)
-            menu:addOption(tr('Remove') .. ' ' .. creatureName, function()
+            menu:addOption(tr("otclient_modules.console.tr_16") .. ' ' .. creatureName, function()
                 g_game.closeRuleViolation(creatureName)
             end)
         end
@@ -1533,7 +1533,7 @@ function sendMessage(message, tab)
                 dontAdd = true
             else
                 speaktypedesc = 'rvrContinue'
-                tabname = tr('Report Rule') .. '...'
+                tabname = tr("otclient_modules.console.tr_15") .. '...'
             end
         elseif tab.violationChatName then
             speaktypedesc = 'rvrAnswerTo'
@@ -1694,7 +1694,7 @@ function onTalk(name, level, mode, message, channelId, creaturePos)
             modules.game_textmessage.displayPrivateMessage(name .. ':\n' .. message)
         end
     else
-        local channel = tr('Local Chat')
+        local channel = tr("otclient_modules.console.tr_14")
         if not defaultMessage then
             channel = channels[channelId]
         end
@@ -1751,7 +1751,7 @@ end
 
 function onRuleViolationChannel(channelId)
     violationsChannelId = channelId
-    local tab = addChannel(tr('Rule Violations'), channelId)
+    local tab = addChannel(tr("otclient_modules.console.tr_13"), channelId)
     tab.violations = true
 end
 
@@ -1768,7 +1768,7 @@ function onRuleViolationCancel(name)
     if not tab then
         return
     end
-    addTabText(tr('%s has finished the request', name) .. '.', SpeakTypesSettings.privateRed, tab)
+    addTabText(tr("otclient_modules.console.tr_12", name) .. '.', SpeakTypesSettings.privateRed, tab)
     tab.locked = true
 end
 
@@ -1777,7 +1777,7 @@ function onRuleViolationLock()
         return
     end
     violationReportTab.locked = false
-    addTabText(tr('Your request has been closed') .. '.', SpeakTypesSettings.privateRed, violationReportTab)
+    addTabText(tr("otclient_modules.console.tr_11") .. '.', SpeakTypesSettings.privateRed, violationReportTab)
     violationReportTab.locked = true
 end
 
@@ -2083,11 +2083,11 @@ function onClickIgnoreButton()
 end
 
 function online()
-    defaultTab = addTab(tr('Local Chat'), true)
-    serverTab = addTab(tr('Server Log'), false)
+    defaultTab = addTab(tr("otclient_modules.console.tr_10"), true)
+    serverTab = addTab(tr("otclient_modules.console.tr_9"), false)
 
     if g_game.getClientVersion() >= 820 then
-        local tab = addTab(tr('NPCs'), false)
+        local tab = addTab(tr("otclient_modules.console.tr_8"), false)
         tab.npcChat = true
     end
     if g_game.getClientVersion() < 862 then
@@ -2349,7 +2349,7 @@ function onReadOnlyMouseClick()
             })
             contextMenu:addSeparator()
         end
-        contextMenu:addOption(tr("Close Read-Only Tab"), function()
+        contextMenu:addOption(tr("otclient_modules.console.tr_7"), function()
             clearReadOnlyTab()
             toggleReadOnlyMode()
         end)
@@ -2431,18 +2431,18 @@ function addClonedMenuOptions(sourceTab, targetMenu, excludedOptions)
     local currentCharacterName = g_game.getCharacterName()
     local currentChannelName = sourceTab:getText()
     if not excludedOptions["close"] then
-        targetMenu:addOption(tr('Close'), function()
+        targetMenu:addOption(tr("otclient_modules.console.tr_6"), function()
             removeTab(currentChannelName)
         end)
     end
     if not excludedOptions["readonly"] then
         if readOnlyModeEnabled and activeactiveReadOnlyTabName == currentChannelName then
-            targetMenu:addOption(tr("Close read-only"), function()
+            targetMenu:addOption(tr("otclient_modules.console.tr_5"), function()
                 clearReadOnlyTab()
                 toggleReadOnlyMode()
             end)
         else
-            targetMenu:addOption(tr("Open read-only"), function()
+            targetMenu:addOption(tr("otclient_modules.console.tr_4"), function()
                 activateReadOnlyMode(currentChannelName)
             end)
         end
@@ -2451,7 +2451,7 @@ function addClonedMenuOptions(sourceTab, targetMenu, excludedOptions)
         targetMenu:addSeparator()
     end
     if not excludedOptions["clear"] then
-        targetMenu:addOption(tr('Clear Messages'), function()
+        targetMenu:addOption(tr("otclient_modules.console.tr_3"), function()
             if readOnlyModeEnabled and activeactiveReadOnlyTabName == currentChannelName then
                 clearTabByName(currentChannelName)
                 copyMessagesToReadOnlyPanel(currentChannelName)
@@ -2461,7 +2461,7 @@ function addClonedMenuOptions(sourceTab, targetMenu, excludedOptions)
         end)
     end
     if not excludedOptions["save"] then
-        targetMenu:addOption(tr('Save Messages'), function()
+        targetMenu:addOption(tr("otclient_modules.console.tr_2"), function()
             saveChannelMessages(sourceTab, currentWorldName, currentCharacterName, currentChannelName)
         end)
     end
@@ -2482,7 +2482,7 @@ function saveChannelMessages(tab, worldName, characterName, channelName)
         table.insert(messageLines, 1, existingContent)
     end
     g_resources.writeFileContents(filePath, table.concat(messageLines, '\n'))
-    modules.game_textmessage.displayStatusMessage(tr('Channel appended to %s', fileName))
+    modules.game_textmessage.displayStatusMessage(tr("otclient_modules.console.tr_1", fileName))
 end
 
 function clearTabByName(tabName)

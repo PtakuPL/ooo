@@ -10,7 +10,7 @@ function movements_library_mazzinor.onStepIn(creature, item, position, fromPosit
 	end
 
 	creature:addCondition(outfit)
-	creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The remains deporalize you temporaly.")
+	creature:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.movements_mazzinor.msg_1")
 	creature:getPosition():sendMagicEffect(CONST_ME_ENERGYHIT)
 	item:remove(1)
 

@@ -26,9 +26,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Talk to me if you need directions." },
-	{ text = "Hello, is this your first visit to Rathleton? I can show you around a little." },
-	{ text = "Free escort to the depot for newcomers!" },
+	{ i18nKey = "npc.guide_kunibert.voice_1" },
+	{ i18nKey = "npc.guide_kunibert.voice_2" },
+	{ i18nKey = "npc.guide_kunibert.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -98,9 +98,9 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "town" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_kunibert.stdmod_7" })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_kunibert.stdmod_8" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to Rathleton, |PLAYERNAME|! Looking for a transport to the main isle of Oramond or would you like some information and a mapguide?")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and enjoy your stay in Rathleton, |PLAYERNAME|")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.guide_kunibert.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.guide_kunibert.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.guide_kunibert.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

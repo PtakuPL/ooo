@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I'm just an old man, but I know a lot about Tibia." },
+	{ i18nKey = "npc.edowir.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -58,9 +58,9 @@ end
 
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.edowir.stdmod_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Oh, hello |PLAYERNAME|! How nice of you to visit an old man like me.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Come back whenever you're in need of wisdom.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Come back whenever you're in need of wisdom.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.edowir.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.edowir.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.edowir.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

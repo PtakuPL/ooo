@@ -111,7 +111,7 @@ keywordHandler:addKeyword({ "precious" }, StdModule.say, {
 	i18nKey = "npc.woblin.stdmod_3",
 })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hi there human!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.woblin.greet_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

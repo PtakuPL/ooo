@@ -62,7 +62,7 @@ function spell.onCastSpell(creature, var)
 	local fromPos = { x = centerPos.x - 7, y = centerPos.y - 5, z = centerPos.z }
 	local toPos = { x = centerPos.x + 7, y = centerPos.y + 5, z = centerPos.z }
 
-	creature:say("PLAGUEROOT TUNNELS TO ANOTHER PLACE!", TALKTYPE_MONSTER_SAY)
+	creature:sayLocalized("scripts.plagueroot_teleport.say_1", TALKTYPE_MONSTER_SAY)
 	teleportMonster(creature, centerPos, fromPos, toPos)
 
 	var = { type = 2, pos = { x = creature:getPosition().x, y = creature:getPosition().y, z = creature:getPosition().z } }

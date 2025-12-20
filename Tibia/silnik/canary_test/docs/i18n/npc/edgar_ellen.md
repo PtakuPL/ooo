@@ -1,8 +1,8 @@
 # NPC: edgar-ellen
 
 **Plik:** `data-otservbr-global/npc/edgar-ellen.lua`
-**Data migracji:** 2025-12-10 06:59
-**Liczba tekstów:** 25
+**Data migracji:** 2025-12-17 00:56
+**Liczba tekstów:** 20
 
 ## Klucze i18n
 
@@ -28,8 +28,3 @@
 | `npc.edgar_ellen.stdmod_18` | One morning frosty fresh and nice, a knight was fishing on t... |
 | `npc.edgar_ellen.stdmod_19` | A paladin slaying dragons on Antica's soil, when a lord char... |
 | `npc.edgar_ellen.stdmod_20` | Through Rookgaard's sewer there swarmed no fewer than a hund... |
-| `npc.edgar_ellen.stdmod_21` | Our world, our home, our very own plane of existence. We hav... |
-| `npc.edgar_ellen.stdmod_22` | A king and a beggar know more than a king alone... ahem, exc... |
-| `npc.edgar_ellen.stdmod_23` | So, you're on a mission. Aren't we all? A quest to savour th... |
-| `npc.edgar_ellen.stdmod_24` | So, you're on a mission. Aren't we all? A quest to savour th... |
-| `npc.edgar_ellen.stdmod_25` | Rather a calling. The weight of words is something not easil... |

@@ -82,7 +82,7 @@ local function lavaHoles(i)
 				local ativado = Tile(position):getItemById(391)
 				if ativado then
 					local c = Game.getPlayers()[1]
-					c:say("BOOOOM!", TALKTYPE_MONSTER_SAY, false, false, position)
+					c:sayLocalized("quests.actions_using_crystals.say_2", TALKTYPE_MONSTER_SAY, false, false, position)
 					for x = position.x - 4, position.x + 4 do
 						for y = position.y - 4, position.y + 4 do
 							for z = position.z, position.z do
@@ -351,7 +351,7 @@ local function checarSala(qnt)
 							for _, boss in pairs(spectators) do
 								if boss:isMonster() then
 									if boss:getName():lower() == "the count of the core" then
-										boss:say("The count absorbs he power of the beast and becomes stronger.", TALKTYPE_MONSTER_YELL)
+										boss:sayLocalized("quests.actions_using_crystals.say_1", TALKTYPE_MONSTER_YELL)
 										boss:addHealth(math.random(0, 15000))
 									end
 								end
@@ -431,7 +431,7 @@ function dangerousDepthCrystals.onUse(player, item, fromPosition, target, toPosi
 				local spectators = Game.getSpectators(targetPosition, false, true, 3, 3, 3, 3)
 				for _, spectator in pairs(spectators) do
 					if spectator:isPlayer() then
-						spectator:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This crystal geode is shaking from a battle nearby.")
+						spectator:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_using_crystals.msg_3")
 					end
 				end
 				local stalagmites = Tile(Position(33460, 32267, 15)):getItemById(388)
@@ -466,7 +466,7 @@ function dangerousDepthCrystals.onUse(player, item, fromPosition, target, toPosi
 				local spectators = Game.getSpectators(targetPosition, false, true, 3, 3, 3, 3)
 				for _, spectator in pairs(spectators) do
 					if spectator:isPlayer() then
-						spectator:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This crystal geode is shaking from a battle nearby.")
+						spectator:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_using_crystals.msg_2")
 					end
 				end
 				local stalagmites = Tile(Position(33324, 32109, 15)):getItemById(388)
@@ -501,7 +501,7 @@ function dangerousDepthCrystals.onUse(player, item, fromPosition, target, toPosi
 				local spectators = Game.getSpectators(targetPosition, false, true, 3, 3, 3, 3)
 				for _, spectator in pairs(spectators) do
 					if spectator:isPlayer() then
-						spectator:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This crystal geode is shaking from a battle nearby.")
+						spectator:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_using_crystals.msg_1")
 					end
 				end
 				local stalagmites = Tile(Position(33275, 32316, 15)):getItemById(388)

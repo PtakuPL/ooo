@@ -12,7 +12,7 @@ function secretServiceTools.onUse(player, item, fromPosition, target, toPosition
 	end
 
 	player:addItem(useItem)
-	player:say("You've found a useful little tool for secret agents in the parcel.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.actions_tools.say_1", TALKTYPE_MONSTER_SAY)
 
 	item:remove()
 	return true

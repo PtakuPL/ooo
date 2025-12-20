@@ -69,7 +69,7 @@ local function creatureSayCallback(npc, player, type, message)
 end
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_GREET, "Ah, a customer! Be greeted, |PLAYERNAME|! I buy all kinds of loot, would you like a {trade}? I can also show you my {shop options}.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.the_lootmonger.greet_msg_1")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Ah, a customer! Be greeted, |PLAYERNAME|! I buy all kinds of loot, would you look at " .. GetFormattedShopCategoryNames(LootShopConfigTable) .. ".")
 
 -- On buy npc shop message

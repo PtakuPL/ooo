@@ -71,7 +71,7 @@ UIWidget
       anchors.left: Star1_1.right
       margin-left: 5
       text-auto-resize: true
-      !text: tr('Prowess')
+      !text: tr("otclient_modules.bosstiary_otui.tr_14")
       color: #BCBCBC
     Label
       id: Text2
@@ -79,7 +79,7 @@ UIWidget
       anchors.left: Star2_1.right
       margin-left: 5
       text-auto-resize: true
-      !text: tr('Expertise')
+      !text: tr("otclient_modules.bosstiary_otui.tr_13")
       color: #BCBCBC
     Label
       id: Text3
@@ -87,7 +87,7 @@ UIWidget
       anchors.left: Star3_1.right
       margin-left: 5
       text-auto-resize: true
-      !text: tr('Mastery')
+      !text: tr("otclient_modules.bosstiary_otui.tr_12")
       color: #BCBCBC
   UIWidget
     id: FilterBase
@@ -99,7 +99,7 @@ UIWidget
     image-source: /images/ui/window_new
     image-border: 10
     height: 70
-    !text: tr('Filter')
+    !text: tr("otclient_modules.bosstiary_otui.tr_11")
     text-align: top
     text-offset: 0 4
     color: #919191
@@ -109,7 +109,7 @@ UIWidget
       anchors.left: parent.left
       margin-top: 25
       margin-left: 10
-      !text: tr('Bane')
+      !text: tr("otclient_modules.bosstiary_otui.tr_10")
       text-auto-resize: true
       text-offset: 30 -1
       checked: true
@@ -125,7 +125,7 @@ UIWidget
       anchors.top: BaneCheck.top
       anchors.left: BaneCheck.right
       margin-left: 30
-      !text: tr('Archfoe')
+      !text: tr("otclient_modules.bosstiary_otui.tr_9")
       text-auto-resize: true
       text-offset: 30 -1
       checked: true
@@ -141,7 +141,7 @@ UIWidget
       anchors.top: ArchfoeCheck.top
       anchors.left: ArchfoeCheck.right
       margin-left: 30
-      !text: tr('Nemesis')
+      !text: tr("otclient_modules.bosstiary_otui.tr_8")
       text-auto-resize: true
       text-offset: 30 -1
       checked: true
@@ -158,7 +158,7 @@ UIWidget
       anchors.left: parent.left
       margin-top: 10
       margin-left: 10
-      !text: tr('No Kills')
+      !text: tr("otclient_modules.bosstiary_otui.tr_7")
       text-auto-resize: true
       checked: true
       @onClick: modules.game_cyclopedia.Cyclopedia.changeBosstiaryFilter(self, self:isChecked())
@@ -167,7 +167,7 @@ UIWidget
       anchors.top: BaneCheck.bottom
       anchors.left: ArchfoeCheck.left
       margin-top: 10
-      !text: tr('Few Kills')
+      !text: tr("otclient_modules.bosstiary_otui.tr_6")
       text-auto-resize: true
       checked: true
       @onClick: modules.game_cyclopedia.Cyclopedia.changeBosstiaryFilter(self, self:isChecked())
@@ -176,7 +176,7 @@ UIWidget
       anchors.top: BaneCheck.bottom
       anchors.left: NemesisCheck.left
       margin-top: 10
-      !text: tr('Prowess')
+      !text: tr("otclient_modules.bosstiary_otui.tr_5")
       text-auto-resize: true
       checked: true
       @onClick: modules.game_cyclopedia.Cyclopedia.changeBosstiaryFilter(self, self:isChecked())
@@ -186,7 +186,7 @@ UIWidget
       anchors.left: ProwessCheck.right
       margin-top: 10
       margin-left: 30
-      !text: tr('Expertise')
+      !text: tr("otclient_modules.bosstiary_otui.tr_4")
       text-auto-resize: true
       checked: true
       @onClick: modules.game_cyclopedia.Cyclopedia.changeBosstiaryFilter(self, self:isChecked())
@@ -196,7 +196,7 @@ UIWidget
       anchors.left: ExpertiseCheck.right
       margin-top: 10
       margin-left: 30
-      !text: tr('Mastery')
+      !text: tr("otclient_modules.bosstiary_otui.tr_3")
       text-auto-resize: true
       checked: true
       @onClick: modules.game_cyclopedia.Cyclopedia.changeBosstiaryFilter(self, self:isChecked())
@@ -229,7 +229,7 @@ UIWidget
     padding-right: 15
     margin-bottom: 5
     size: 150 20
-    !placeholder: tr('Type to search')
+    !placeholder: tr("otclient_modules.bosstiary_otui.tr_2")
     placeholder-color: #6E706F
     @onTextChange: modules.game_cyclopedia.Cyclopedia.BosstiarySearchText(self:getText())
   UIWidget
@@ -249,7 +249,7 @@ UIWidget
     margin-bottom: 5
     size: 60 20
     text-align: center
-    !text: tr('1 / 1')
+    !text: tr("otclient_modules.bosstiary_otui.tr_1")
     color: #C2C2C2
   Button
     id: NextPageButton

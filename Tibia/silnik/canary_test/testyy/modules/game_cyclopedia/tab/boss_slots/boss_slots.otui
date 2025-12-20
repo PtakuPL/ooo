@@ -14,14 +14,14 @@ UIWidget
     color: #929292
     text-offset: 0 3
     text-align: top
-    !text: tr('Progress')
+    !text: tr("otclient_modules.boss_slots_otui.tr_10")
     Label
       id: PointsLabel
       anchors.left: parent.left
       anchors.bottom: parent.bottom
       margin-left: 10
       margin-bottom: 10
-      !text: tr('Boss Points')
+      !text: tr("otclient_modules.boss_slots_otui.tr_9")
       color: #C0C0C0
       text-auto-resize: true
     ProgressBackground
@@ -41,7 +41,7 @@ UIWidget
         id: Value
         anchors.centerIn: parent
         text-auto-resize: true
-        !text: tr('0 / 0')
+        !text: tr("otclient_modules.boss_slots_otui.tr_8")
     UIWidget
       id: InfoIcon
       anchors.right: parent.right
@@ -49,7 +49,7 @@ UIWidget
       margin-right: 10
       margin-bottom: 10
       image-source:/images/icons/show_gui_help_grey
-      !tooltip: tr('Whenever you defeat a creature, it drops a set of loot with a\ncertain chance. The equipment loot bonus shows your chance to\nget a second set of loot, but limited to equipment.')
+      !tooltip: tr("otclient_modules.boss_slots_otui.tr_7")
     Label
       id: InfoLabel
       anchors.right: InfoIcon.left
@@ -57,10 +57,10 @@ UIWidget
       margin-right: 35
       margin-bottom: 9
       text-auto-resize: true
-      !text: tr('')
+      !text: tr("otclient_modules.boss_slots_otui.tr_6")
   SlotBossSlots
     id: LeftBase
-    !text: tr('Slot 1: Locked')
+    !text: tr("otclient_modules.boss_slots_otui.tr_5")
     anchors.left: parent.left
     anchors.top: TopBase.bottom
     margin-top: 10
@@ -71,13 +71,13 @@ UIWidget
     anchors.top: TopBase.bottom
     margin-top: 10
     margin-bottom: 10
-    !text: tr('Slot 2: Locked')
+    !text: tr("otclient_modules.boss_slots_otui.tr_4")
   Label
     id: MidTitle
     anchors.left: LeftBase.right
     anchors.right: RightBase.left
     anchors.top: RightBase.top
-    !text: tr('Boosted Boss: The Source Of Co...')
+    !text: tr("otclient_modules.boss_slots_otui.tr_3")
     color: #C0C0C0
     margin-left: 5
   UIWidget
@@ -109,7 +109,7 @@ UIWidget
     anchors.bottom: BoostedProgress.top
     margin-bottom: 3
     text-auto-resize: true
-    !text: tr('Total Kills')
+    !text: tr("otclient_modules.boss_slots_otui.tr_2")
     color: #BEBEBE
   Label
     id: MainLabel
@@ -117,5 +117,5 @@ UIWidget
     margin-top: 45
     text-auto-resize: true
     text-align: center
-    !text: tr('')
+    !text: tr("otclient_modules.boss_slots_otui.tr_1")
     color: #C2C2C2

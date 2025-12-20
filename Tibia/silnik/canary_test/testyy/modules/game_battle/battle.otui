@@ -38,7 +38,7 @@ BattleParty < BattleIcon
 
 MiniWindow
   id: battleWindow
-  !text: tr('Battle')
+  !text: tr("otclient_modules.battle_otui.tr_6")
   color: #ffffff
   height: 166
   icon: /images/topbuttons/battle
@@ -65,27 +65,27 @@ MiniWindow
 
       BattlePlayers
         id: hidePlayers
-        !tooltip: tr('Hide players')
+        !tooltip: tr("otclient_modules.battle_otui.tr_5")
         @onCheckChange: modules.game_battle.checkCreatures()
 
       BattleNPCs
         id: hideNPCs
-        !tooltip: tr('Hide Npcs')
+        !tooltip: tr("otclient_modules.battle_otui.tr_4")
         @onCheckChange: modules.game_battle.checkCreatures()
 
       BattleMonsters
         id: hideMonsters
-        !tooltip: tr('Hide monsters')
+        !tooltip: tr("otclient_modules.battle_otui.tr_3")
         @onCheckChange: modules.game_battle.checkCreatures()
 
       BattleSkulls
         id: hideSkulls
-        !tooltip: tr('Hide non-skull players')
+        !tooltip: tr("otclient_modules.battle_otui.tr_2")
         @onCheckChange: modules.game_battle.checkCreatures()
 
       BattleParty
         id: hideParty
-        !tooltip: tr('Hide party members')
+        !tooltip: tr("otclient_modules.battle_otui.tr_1")
         @onCheckChange: modules.game_battle.checkCreatures()
 
     Panel

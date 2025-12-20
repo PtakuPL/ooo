@@ -67,7 +67,7 @@ function libraryVaultSteps.onStepIn(creature, item, position, fromPosition)
 		return true
 	end
 	if math.random(100) <= 20 then
-		player:say("<cough>", TALKTYPE_MONSTER_SAY, false, player, position)
+		player:sayLocalized("quests.mission07_attack.say_1", TALKTYPE_MONSTER_SAY, false, player, position)
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 		player:addHealth(-1, COMBAT_PHYSICALDAMAGE)
 		local health, maxHealth = player:getHealth(), player:getMaxHealth()

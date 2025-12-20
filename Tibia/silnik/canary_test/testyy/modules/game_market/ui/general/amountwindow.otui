@@ -1,6 +1,6 @@
 AmountWindow < MainWindow
   id: amountWindow
-  !text: tr('Amount')
+  !text: tr("otclient_modules.amountwindow_otui.tr_3")
   size: 270 90
 
   Item
@@ -24,7 +24,7 @@ AmountWindow < MainWindow
 
   Button
     id: buttonCancel
-    !text: tr('Cancel')
+    !text: tr("otclient_modules.amountwindow_otui.tr_2")
     height: 20
     anchors.left: amountScrollBar.horizontalCenter
     anchors.right: amountScrollBar.right
@@ -34,7 +34,7 @@ AmountWindow < MainWindow
 
   Button
     id: buttonOk
-    !text: tr('Ok')
+    !text: tr("otclient_modules.amountwindow_otui.tr_1")
     height: 20
     anchors.right: amountScrollBar.horizontalCenter
     anchors.left: amountScrollBar.left

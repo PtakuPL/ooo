@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Are you looking for the best trades? Come to my shop!" },
-	{ text = "Feeling lost? You can always ask me about general hints!" },
-	{ text = "Tools and general equipment at Al Dee's!" },
-	{ text = "Don't head for adventure without a rope and torches! Buy your supplies here!" },
+	{ i18nKey = "npc.al_dee.voice_1" },
+	{ i18nKey = "npc.al_dee.voice_2" },
+	{ i18nKey = "npc.al_dee.voice_3" },
+	{ i18nKey = "npc.al_dee.voice_4" },
 }
 npcConfig.shop = { -- Sellable items
 	{ itemName = "backpack", clientId = 2854, buy = 10 },
@@ -163,9 +163,9 @@ pickKeyword:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler,
 pickKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.al_dee.stdmod_57", reset = true })
 keywordHandler:addAliasKeyword({ "small", "axe" })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Bye, bye.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Bye, bye |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Take a look in the trade window to your left.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.al_dee.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.al_dee.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.al_dee.sendtrade_msg_1")
 npcHandler:setMessage(MESSAGE_GREET, {
 	"Hello, hello, |PLAYERNAME|! Please come in, look, and buy! I'm a specialist for all sorts of {tools}. Just ask me for a {trade} to see my offers! You can also ask me for general {hints} about the game. ...",
 	"You can also ask me about each {citizen} of the isle.",

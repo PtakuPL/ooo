@@ -1,0 +1,278 @@
+local internalNpcName = "Gnomargery"
+local npcType = Game.createNpcType(internalNpcName)
+local npcConfig = {}
+
+npcConfig.name = internalNpcName
+npcConfig.description = internalNpcName
+
+npcConfig.health = 100
+npcConfig.maxHealth = npcConfig.health
+npcConfig.walkInterval = 2000
+npcConfig.walkRadius = 2
+
+npcConfig.outfit = {
+	lookType = 507,
+	lookHead = 96,
+	lookBody = 92,
+	lookLegs = 96,
+	lookFeet = 114,
+	lookAddons = 0,
+}
+
+npcConfig.flags = {
+	floorchange = false,
+}
+
+local keywordHandler = KeywordHandler:new()
+local npcHandler = NpcHandler:new(keywordHandler)
+
+local talkState = {}
+local level = 80
+npcType.onAppear = function(npc, creature)
+	npcHandler:onAppear(npc, creature)
+end
+
+npcType.onDisappear = function(npc, creature)
+	npcHandler:onDisappear(npc, creature)
+end
+
+npcType.onSay = function(npc, creature, type, message)
+	npcHandler:onSay(npc, creature, type, message)
+end
+
+npcType.onCloseChannel = function(npc, creature)
+	npcHandler:onCloseChannel(npc, creature)
+end
+
+npcType.onThink = function(npc, interval)
+	npcHandler:onThink(npc, interval)
+end
+
+local function creatureSayCallback(npc, creature, type, message)
+	local player = Player(creature)
+	local playerId = player:getId()
+
+	if MsgContains(message, "job") then
+		return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_1")
+	end
+
+	if MsgContains(message, "gnome") then
+		return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_2")
+	end
+
+	if MsgContains(message, "area") then
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.multi_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.multi_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.multi_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.multi_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.multi_5")
+	end
+
+	if MsgContains(message, "spike") then
+		return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_3")
+	end
+
+	if MsgContains(message, "mission") then
+		if player:getLevel() < level then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_4")
+		else
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_5")
+		end
+		return
+	end
+
+	if MsgContains(message, "report") then
+		talkState[playerId] = "report"
+		return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_6")
+	end
+
+	if talkState[playerId] == "report" then
+		if MsgContains(message, "delivery") then
+			if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Parcel_Main) == -1 then
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_7")
+			elseif player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Parcel_Main) == 4 then
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_8")
+				player:addFamePoint()
+				player:addExperience(3500, true)
+				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Parcel_Main, -1)
+				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Parcel_Daily, os.time() + 72000)
+			else
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_9")
+			end
+		elseif MsgContains(message, "undercover") then
+			if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Undercover_Main) == -1 then
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_10")
+			elseif player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Undercover_Main) == 3 then
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_11")
+				player:addFamePoint()
+				player:addExperience(3500, true)
+				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Undercover_Main, -1)
+				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Undercover_Daily, os.time() + 72000)
+			else
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_12")
+			end
+		elseif MsgContains(message, "temperature") then
+			if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Lava_Main) == -1 then
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_13")
+			elseif player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Lava_Main) == 1 then
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_14")
+				player:addFamePoint()
+				player:addExperience(3500, true)
+				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Lava_Main, -1)
+				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Lava_Daily, os.time() + 72000)
+			else
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_15")
+			end
+		elseif MsgContains(message, "kill") then
+			if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Kill_Main) == -1 then
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_16")
+			elseif player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Kill_Main) == 7 then
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_17")
+				player:addFamePoint()
+				player:addExperience(3500, true)
+				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Kill_Main, -1)
+				player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Kill_Daily, os.time() + 72000)
+			else
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_18")
+			end
+		else
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_19")
+		end
+		talkState[playerId] = nil
+		return
+	end
+
+	--[[///////////////////
+	////PARCEL DELIVERY////
+	/////////////////////]]
+	if MsgContains(message, "deliver") then
+		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Parcel_Daily) >= os.time() then
+			return npcHandler:say("Sorry, you have to wait " .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Parcel_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
+		end
+
+		if player:getLevel() < level then
+			return npcHandler:say("Sorry, you are not on the required minimum level [" .. level .. "].", npc, creature)
+		end
+
+		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Parcel_Main) == -1 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_21")
+			talkState[playerId] = "delivery"
+		else
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_22")
+		end
+	end
+
+	if talkState[playerId] == "delivery" then
+		if MsgContains(message, "yes") then
+			player:addItem(19219, 4)
+			player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Parcel_Main, 0)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_23")
+			talkState[playerId] = nil
+		elseif MsgContains(message, "no") then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_24")
+			talkState[playerId] = nil
+		end
+	end
+
+	--[[//////////////
+	////UNDERCOVER////
+	////////////////]]
+	if MsgContains(message, "undercover") then
+		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Undercover_Daily) >= os.time() then
+			return npcHandler:say("Sorry, you have to wait " .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Undercover_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
+		end
+
+		if player:getLevel() < level then
+			return npcHandler:say("Sorry, you are not on the required minimum level [" .. level .. "].", npc, creature)
+		end
+
+		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Undercover_Main) == -1 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_26")
+			talkState[playerId] = "undercover"
+		else
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_27")
+		end
+	end
+
+	if talkState[playerId] == "undercover" then
+		if MsgContains(message, "yes") then
+			player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Undercover_Main, 0)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_28")
+			talkState[playerId] = nil
+		elseif MsgContains(message, "no") then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_29")
+			talkState[playerId] = nil
+		end
+	end
+
+	--[[////////////////
+	////TEMPERATURE/////
+	//////////////////]]
+	if MsgContains(message, "temperature") then
+		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Lava_Daily) >= os.time() then
+			return npcHandler:say("Sorry, you have to wait " .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Lava_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
+		end
+
+		if player:getLevel() < level then
+			return npcHandler:say("Sorry, you are not on the required minimum level [" .. level .. "].", npc, creature)
+		end
+
+		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Lava_Main) == -1 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_31")
+			talkState[playerId] = "temperature"
+		else
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_32")
+		end
+	end
+
+	if talkState[playerId] == "temperature" then
+		if MsgContains(message, "yes") then
+			player:addItem(19206, 1)
+			player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Lava_Main, 0)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_33")
+			talkState[playerId] = nil
+		elseif MsgContains(message, "no") then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_34")
+			talkState[playerId] = nil
+		end
+	end
+
+	--[[/////////
+	////KILL/////
+	///////////]]
+	if MsgContains(message, "kill") then
+		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Kill_Daily) >= os.time() then
+			return npcHandler:say("Sorry, you have to wait " .. string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Kill_Daily) - os.time()) .. " before this task gets available again.", npc, creature)
+		end
+
+		if player:getLevel() < level then
+			return npcHandler:say("Sorry, you are not on the required minimum level [" .. level .. "].", npc, creature)
+		end
+
+		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Kill_Main) == -1 then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_36")
+			talkState[playerId] = "kill"
+		else
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_37")
+		end
+	end
+
+	if talkState[playerId] == "kill" then
+		if MsgContains(message, "yes") then
+			player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Lower_Kill_Main, 0)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_38")
+			talkState[playerId] = nil
+		elseif MsgContains(message, "no") then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomargery.say_39")
+			talkState[playerId] = nil
+		end
+	end
+	return true
+end
+
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gnomargery.greet_msg_1")
+npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
+npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
+
+-- npcType registering the npcConfig table
+npcType:register(npcConfig)

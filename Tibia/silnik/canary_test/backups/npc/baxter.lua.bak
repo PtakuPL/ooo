@@ -26,8 +26,8 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "People of Thais, bring honour to your king by fighting in the orc war!" },
-	{ text = "The orcs are preparing for war!!!" },
+	{ i18nKey = "npc.baxter.voice_1" },
+	{ i18nKey = "npc.baxter.voice_2" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -57,9 +57,9 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "LONG LIVE KING TIBIANUS!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "LONG LIVE THE KING!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "LONG LIVE THE KING!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.baxter.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.baxter.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.baxter.walkaway_msg_1")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Do you bring freshly killed rats for a bounty of 1 gold each? By the way, I also buy orc teeth and other stuff you ripped from their bloody corp... I mean... well, you know what I mean.")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

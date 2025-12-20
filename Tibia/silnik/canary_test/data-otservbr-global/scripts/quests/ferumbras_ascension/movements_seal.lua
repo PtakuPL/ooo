@@ -82,7 +82,7 @@ function seal.onStepIn(creature, item, position, fromPosition)
 			else
 				player:teleportTo(Position(33675, 32690, 13))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-				player:say("You have to wait to challenge this enemy again!", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.movements_seal.say_2", TALKTYPE_MONSTER_SAY)
 				return true
 			end
 		else
@@ -101,7 +101,7 @@ function seal.onStepIn(creature, item, position, fromPosition)
 			else
 				player:teleportTo(Position(33477, 32701, 14))
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-				player:say("You have to wait to challenge this enemy again!", TALKTYPE_MONSTER_SAY)
+				player:sayLocalized("scripts.movements_seal.say_1", TALKTYPE_MONSTER_SAY)
 				return true
 			end
 		else

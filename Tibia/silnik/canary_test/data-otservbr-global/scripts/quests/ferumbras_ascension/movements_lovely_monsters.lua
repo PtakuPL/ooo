@@ -23,7 +23,7 @@ function lovelyMonsters.onStepIn(creature, item, position, fromPosition)
 
 	local monster = creature:getMonster()
 	if monster:getName():lower() == monsterConfig.name then
-		monster:say("That seemed correct!", TALKTYPE_MONSTER_SAY)
+		monster:sayLocalized("scripts.movements_lovely_monsters.say_1", TALKTYPE_MONSTER_SAY)
 		monster:getPosition():sendMagicEffect(CONST_ME_THUNDER)
 		monster:remove()
 

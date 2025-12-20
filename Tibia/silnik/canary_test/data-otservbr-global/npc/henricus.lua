@@ -71,7 +71,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "blessing") or MsgContains(message, "bless") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 25 then --if quest is done
-			npcHandler:say("Do you want to receive the blessing of the inquisition - which means " .. (missing == 5 and "all five available" or missing) .. " blessings - for " .. totalBlessPrice .. " gold?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_1", { (missing == 5 and "all five available" or missing), totalBlessPrice })
 			npcHandler:setTopic(playerId, 7)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_3")
@@ -79,7 +79,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "flask") or MsgContains(message, "special flask") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) >= 12 then -- give player the ability to purchase the flask.
-			npcHandler:say("Do you want to buy the special flask of holy water for " .. flaskCost .. " gold?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_2", { flaskCost })
 			npcHandler:setTopic(playerId, 8)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_5")
@@ -342,9 +342,9 @@ keywordHandler:addKeyword({ "believer" }, StdModule.say, { npcHandler = npcHandl
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.henricus.stdmod_20" })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.henricus.stdmod_21" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, fellow {believer} |PLAYERNAME|!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Always be on guard, |PLAYERNAME|!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "This ungraceful haste is most suspicious!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.henricus.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.henricus.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.henricus.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

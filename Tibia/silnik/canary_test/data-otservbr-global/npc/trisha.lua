@@ -101,7 +101,7 @@ local topic = {}
 
 local function greetCallback(npc, creature)
 	local playerId = creature:getId()
-	npcHandler:setMessage(MESSAGE_GREET, "Welcome back, knight |PLAYERNAME|!")
+	NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.trisha.greet_msg_1")
 	topic[playerId] = nil
 	return true
 end
@@ -223,8 +223,8 @@ keywordHandler:addKeyword({ "spells" }, StdModule.say, {
 	i18nKey = "npc.trisha.stdmod_3",
 })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Be careful on your journeys.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Don't hurt yourself with that weapon, little one.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.trisha.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.trisha.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

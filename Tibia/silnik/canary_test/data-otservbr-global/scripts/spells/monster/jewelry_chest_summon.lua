@@ -19,7 +19,7 @@ function spell.onCastSpell(creature, var)
 			if not mid then
 				return
 			end
-			mid:say("FREEZE! LET ME SEE YOUR HANDS UP!", TALKTYPE_MONSTER_YELL)
+			mid:sayLocalized("scripts.jewelry_chest_summon.say_1", TALKTYPE_MONSTER_YELL)
 		end
 	end
 	return combat:execute(creature, var)

@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Ask me if you need help!" },
-	{ text = "Buy and sell everything you want here!" },
-	{ text = "No need to run from shop to shop, my place is all that's needed!" },
-	{ text = "Special offers for premium customers!" },
+	{ i18nKey = "npc.lee_delle.voice_1" },
+	{ i18nKey = "npc.lee_delle.voice_2" },
+	{ i18nKey = "npc.lee_delle.voice_3" },
+	{ i18nKey = "npc.lee_delle.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -147,10 +147,10 @@ end, function(player)
 end)
 keywordHandler:addKeyword({ "honey", "flower" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lee_delle.stdmod_53" })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Bye, bye.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Bye, bye, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Sure, take a look, honey.")
-npcHandler:setMessage(MESSAGE_GREET, "Nice to see you, |PLAYERNAME|! Ask me for a {trade} if you like to see my exclusive offers.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.lee_delle.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.lee_delle.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.lee_delle.sendtrade_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.lee_delle.greet_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

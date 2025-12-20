@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Precisely." },
-	{ text = "So my initial calculations had been correct!" },
-	{ text = "Looks like I have to find another way then." },
-	{ text = "Hm, I need to recapitulate my equipment..." },
+	{ i18nKey = "npc.spectulus.voice_1" },
+	{ i18nKey = "npc.spectulus.voice_2" },
+	{ i18nKey = "npc.spectulus.voice_3" },
+	{ i18nKey = "npc.spectulus.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -64,10 +64,10 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 
 	if player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) < 10 then
-		npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|! You're late, do you have no concept of time? My mission is of utmost importance. If you are not interested in helping me, you might as well just leave.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.spectulus.greet_msg_1")
 		npcHandler:setTopic(playerId, 0)
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Ah hello again |PLAYERNAME|! I still have one or two other {missions} for you. There are also some {tasks} someone needs to attend to.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.spectulus.greet_msg_2")
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true
@@ -416,36 +416,36 @@ end
 
 keywordHandler:addKeyword({ "device" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I heard of a device which would allow man to sail the sea of light. I call it the {Lightboat}, probably the most important invention in our history. And I will not rest until I have found a way to put the plan of its inventor into action.",
+	i18nKey = "npc.spectulus.stdmod_1",
 })
 keywordHandler:addKeyword({ "lightboat" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I heard of a device which would allow man to sail the sea of light. I call it the {Lightboat}, probably the most important invention in our history. And I will not rest until I have found a way to put the plan of its inventor into action.",
+	i18nKey = "npc.spectulus.stdmod_2",
 })
 keywordHandler:addKeyword({ "magic device" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I heard of a device which would allow man to sail the sea of light. I call it the {Lightboat}, probably the most important invention in our history. And I will not rest until I have found a way to put the plan of its inventor into action.",
+	i18nKey = "npc.spectulus.stdmod_3",
 })
 keywordHandler:addKeyword({ "sea of light" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The sea of light is what I call the endless arrangement of shiny stars in the night sky. If we fail to complete the {magic device}, science will probably never uncover its secrets.",
+	i18nKey = "npc.spectulus.stdmod_4",
 })
 keywordHandler:addKeyword({ "mirror crystal" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I found the cause of the initial failure. A rare component, a mirror crystal was used to store magical energy. Miscalculations within the construction damaged this fragile power source. The unleashed energy must have been devastating.",
+	i18nKey = "npc.spectulus.stdmod_5",
 })
 keywordHandler:addKeyword({ "lost mines" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "The people of Edron were digging there for minerals and gold. It seemed all that work was of no avail when they finally hit the motherlode. Gems, rare crystals and... water. So much that it flooded the whole system. And not a single soul escaped.",
+	i18nKey = "npc.spectulus.stdmod_6",
 })
 keywordHandler:addKeyword({ "collector" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I heard rumours of a fabled creature whose traces were found on an island near Carlin. It lives solely to collect all kinds of rare gems, crystals and minerals. Offering an item it does not already own, reportedly allows passage into its lair.",
+	i18nKey = "npc.spectulus.stdmod_7",
 })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|! You're late, do you have no concept of time? My mission is of utmost importance. If you are not interested in helping me, you might as well just leave.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Yes yes. Goodbye |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Yes yes. Goodbye |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.spectulus.greet_msg_3")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.spectulus.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.spectulus.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

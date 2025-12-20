@@ -1,10 +1,10 @@
 # 🌍 I18N Internationalization System - Live Dashboard
 
-<!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 1500, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 2000, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
+<!-- TARGETS {'game': 100, 'items': 40000, 'misc': 100, 'monsters': 5000, 'npc': 15000, 'player': 200, 'quests': 500, 'scripts': 1000, 'server': 300, 'spells': 1500, 'system': 2000, 'ui': 200, 'php': 3000, 'cpp': 500, 'html': 1500, 'client': 300, 'otclient_modules': 500, 'otclient_data': 200, 'otclient_src': 300, 'otclient_mods': 100, 'otclient_tools': 50} -->
 
-> **Aktualizacja (UTC):** 2025-12-17 10:02:10  |  **Lokalnie:** 2025-12-17 11:02:10 CET  
-> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 27177  
-> **LIVE:** Cykl #610 | Status: 🟢 RUNNING | Faza: AUTO_TRANSLATE | Etap: cycle_start | Kategoria: lt | Plik: - | ETA: 0 | Heartbeat: 2025-12-17T10:02:06Z
+> **Aktualizacja:** 2025-12-20 20:26:26 UTC  
+> **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 54 | **Klucze EN:** 27481  
+> **LIVE:** Cykl #615 | Status: 🟠 STALE (heartbeat 293002s temu) | Faza: AUTO_TRANSLATE | Etap: cycle_end | Kategoria: lt | Plik: - | ETA: 0 | Heartbeat: 2025-12-17T10:03:04Z
 
 ---
 
@@ -31,10 +31,10 @@
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
-| 📂 **Wszystkie pliki** | **17,772** | 100% | cały projekt |
-| 📜 Do skanowania (kod) | **8,153** | 45.9% | pliki z kodem/tekstami |
-| 🔍 **Przeskanowane** | **6,283** | **77.1%** | historia workera |
-| ⏳ Nie przeskanowane | **1,870** | 22.9% | czekają na skan |
+| 📂 **Wszystkie pliki** | **17,792** | 100% | cały projekt |
+| 📜 Do skanowania (kod) | **8,155** | 45.8% | pliki z kodem/tekstami |
+| 🔍 **Przeskanowane** | **6,293** | **77.2%** | historia workera |
+| ⏳ Nie przeskanowane | **1,862** | 22.8% | czekają na skan |
 
 ### 📊 Podział plików do skanowania
 | Typ | Ilość | Info |
@@ -45,29 +45,25 @@
 | 🌐 HTML (.html) | 6 | widoki |
 | 📦 JavaScript (.js) | 0 | frontend |
 | ⚙️ C++ (.cpp/.hpp/.h) | 839 | silnik serwera |
-| 📋 JSON (.json) | 1,271 | konfiguracje |
+| 📋 JSON (.json) | 1,272 | konfiguracje |
 
 ### ✅ Status Migracji
 | Status | Ilość | Procent | Opis |
 |--------|-------|---------|------|
-| ✅ Zmigrowane | **3** | 0.0% | mają klucze i18n |
+| ✅ Zmigrowane | **120** | 1.9% | mają klucze i18n |
 | 🔄 Wymaga migracji | **0** | - | trzeba dodać i18n |
 | ⚪ Czyste | **0** | - | bez tekstów |
-| 🔧 W trakcie | **17** | - | obecnie przetwarzane |
+| 🔧 W trakcie | **4** | - | obecnie przetwarzane |
 
 ### 🔑 Klucze i18n
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔑 **Klucze EN (źródłowe)** | **27,177** | wszystkie kategorie |
-| 📊 NPC | 6,946 | dialogi NPC |
+| 🔑 **Klucze EN (źródłowe)** | **27,481** | wszystkie kategorie |
+| 📊 NPC | 7,243 | dialogi NPC |
 | 📊 Items | 13,749 | przedmioty |
-| 📊 Monsters | 132 | potwory (pliki źródłowe: 1,704) |
+| 📊 Monsters | 132 | potwory |
 | 📊 HTML | 1,495 | widoki web |
-| 📊 Pozostałe | 4,855 | scripts, spells, etc. |
-
-### 🔐 COMPACT_KEYS (2–7 znaków)
-> **Status:** ✅ OK (keymap 34,711 ≥ EN 27,177; export missing: -)  
-> **Dlaczego czasem nie uruchamia COMPACT_KEYS:** gdy status jest OK, worker przechodzi dalej do `TRANSLATION_SYNC` / `AUTO_TRANSLATE`.
+| 📊 Pozostałe | 4,862 | scripts, spells, etc. |
 
 ### 🌍 Języki i Tłumaczenia
 | Metryka | Wartość | Procent | Info |
@@ -80,8 +76,8 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#610** | od uruchomienia |
-| 🔑 Kluczy wyekstrahowanych | **3** | w tej sesji |
+| 🔄 Cykl aktualny | **#615** | od uruchomienia |
+| 🔑 Kluczy wyekstrahowanych | **285** | w tej sesji |
 | ⚠️ Konfliktów | **0** | merge conflicts |
 
 ---
@@ -89,8 +85,8 @@
 ## 🔀 Etap 1 vs Etap 2
 
 ### 📦 Etap 1: Przygotowanie (SYNC kluczy EN → pliki językowe)
-- Języki z plikami przygotowanymi: 0/54  
-- Ostatni sync: -
+- Języki z plikami przygotowanymi: 52/54  
+- Ostatni sync: SW/spells.json
 
 ### 🌍 Etap 2: Tłumaczenia (AUTO + TM)
 | Język | TM wpisy | Status |
@@ -106,7 +102,7 @@
 | SV | 0 | ⚠️ placeholdery (brak TM) |
 | TR | 0 | ⚠️ placeholdery (brak TM) |
 
-**Języki bez TM (AUTO → placeholdery):** fr, ru, tr
+**Języki bez TM (AUTO → placeholdery):** ar, az, bg, bn, bs, cs, da, el...
 
 ---
 
@@ -119,8 +115,8 @@
 
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
-| 🧙 NPC Dialogs | 🔄 | 6946/15000 (46%) | 15000 |
-| 📜 Lua Scripts | 🔄 | 634/1000 (63%) | 1000 |
+| 🧙 NPC Dialogs | 🔄 | 7243/15000 (48%) | 15000 |
+| 📜 Lua Scripts | 🔄 | 641/1000 (64%) | 1000 |
 | 🎒 Items Database | 🔄 | 13749/40000 (34%) | 40000 |
 | 👹 Monsters | 🔄 | 132/5000 (3%) | 5000 |
 | ✨ Spells & Magic | ✅ | 1426/1500 (95%) | 1500 |
@@ -131,7 +127,7 @@
 | Kategoria | Status | Postęp | Cel |
 |-----------|--------|--------|-----|
 | 🐘 PHP Backend | 🔄 | 59/3000 (2%) | 3000 |
-| 📄 HTML Views | ✅ | 1495/1500 (100%) | 1500 |
+| 📄 HTML Views | ✅ | 1495/300 (498%) | 300 |
 | 📦 JavaScript | 🔄 | 242/300 (81%) | 300 |
 
 ### ⏳ Faza 3: 📱 OTClient / Testyy
@@ -140,7 +136,7 @@
 |-----------|--------|--------|-----|
 | 🖥️ Client UI | ⏳ | 0/200 (0%) | 200 |
 | 💿 Server C++ | ⏳ | 0/500 (0%) | 500 |
-| 🎮 OTClient Modules | ✅ | 1987/2000 (99%) | 2000 |
+| 🎮 OTClient Modules | ✅ | 1987/500 (397%) | 500 |
 | 📦 OTClient Data | 🔄 | 72/200 (36%) | 200 |
 | ⚙️ OTClient Src | ⏳ | 0/300 (0%) | 300 |
 | 🔧 OTClient Mods | ⏳ | 0/100 (0%) | 100 |
@@ -150,15 +146,15 @@
 
 | Język | Status | Kluczy | Etap |
 |-------|--------|--------|------|
-| 🇩🇪 Niemiecki | ⏳ Czeka | 0 | nie rozpoczęto |
-| 🇵🇱 Polski | ⏳ Czeka | 0 | nie rozpoczęto |
-| 🇪🇸 Hiszpański | ⏳ Czeka | 0 | nie rozpoczęto |
-| 🇫🇷 Francuski | ⏳ Czeka | 0 | nie rozpoczęto |
-| 🌐 Pozostałe (0/53) | ⏳ | 0 | nie rozpoczęto |
+| 🇩🇪 Niemiecki | 📊 1426 kluczy | 1426 | [EN] prefix |
+| 🇵🇱 Polski | 📊 1426 kluczy | 1426 | [EN] prefix |
+| 🇪🇸 Hiszpański | 📊 1426 kluczy | 1426 | [EN] prefix |
+| 🇫🇷 Francuski | 📊 1426 kluczy | 1426 | [EN] prefix |
+| 🌐 Pozostałe (0/53) | 🔄 | 386722 | Aktualnie: SW |
 
 ### 📦 Etap 1: Przygotowanie (SYNC)
-- Języki z plikami przygotowanymi: 0/54
-- Ostatni sync: -
+- Języki z plikami przygotowanymi: 52/54
+- Ostatni sync: SW/spells.json
 
 ### 🌍 Etap 2: Tłumaczenia (AUTO)
 | Język | TM wpisy | Status |
@@ -174,42 +170,43 @@
 | SV | 0 | ⚠️ placeholdery (brak TM) |
 | TR | 0 | ⚠️ placeholdery (brak TM) |
 
-**Języki bez TM (AUTO → placeholdery):** fr, ru, tr
+**Języki bez TM (AUTO → placeholdery):** ar, az, bg, bn, bs, cs, da, el...
 ---
 
 ## 🔴 LIVE: Aktualna Aktywność
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #   610 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #   615 │
 ├─────────────────────────────────────────────────────────────────┤
-│ Status:    🟢 RUNNING                                │
-│ Tryb:      🤖 AUTO_TRANSLATE (cycle_start)           │
+│ Status:    🟠 STALE (heartbeat 293002s temu)         │
+│ Tryb:      🤖 AUTO_TRANSLATE (cycle_end)             │
 │ Kategoria: 📁 LT                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: -                                                       │
 │ Postęp: 0/0 units                                             │
-│ Info: cycle start                                             │
+│ Info: cycle end                                               │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2025-12-17T10:02:06Z           │
+│ ❤️ Heartbeat: 2025-12-17T10:03:04Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2025-12-17 10:01:59 UTC | AUTO_TRANSLATE:auto_done | lt | ok | otclient_data.json
-- 2025-12-17 10:01:58 UTC | AUTO_TRANSLATE:auto_start | lt | ok | otclient_data.json
-- 2025-12-17 10:01:47 UTC | AUTO_TRANSLATE:auto_done | lt | ok | npc.json
-- 2025-12-17 10:01:47 UTC | AUTO_TRANSLATE:auto_start | lt | ok | npc.json
-- 2025-12-17 10:01:37 UTC | AUTO_TRANSLATE:auto_done | lt | ok | monsters.json
-- 2025-12-17 10:01:37 UTC | AUTO_TRANSLATE:auto_start | lt | ok | monsters.json
+- 2025-12-17 10:03:04 | AUTO_TRANSLATE:auto_done | lt | ok | spells.json
+- 2025-12-17 10:03:03 | AUTO_TRANSLATE:auto_start | lt | ok | spells.json
+- 2025-12-17 10:02:53 | AUTO_TRANSLATE:auto_done | lt | ok | server.json
+- 2025-12-17 10:02:53 | AUTO_TRANSLATE:auto_start | lt | ok | server.json
+- 2025-12-17 10:02:42 | AUTO_TRANSLATE:auto_done | lt | ok | scripts.json
+- 2025-12-17 10:02:42 | AUTO_TRANSLATE:auto_start | lt | ok | scripts.json
 
 ---
 
 ## 🔁 W tym cyklu
 
-- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [da] → ok (files+1, translated+0, skipped+634) — lang=da file=scripts.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [lt] → ok (files+1, translated+0, skipped+1426) — lang=lt file=spells.json
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [no] → ok (files+1, translated+0, skipped+8) — lang=no file=chatchannels.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [de] → ok (files+1, translated+0, skipped+21) — lang=de file=actions.json
 
 
@@ -217,9 +214,9 @@
 
 ## 📅 Dziś (UTC)
 
-- Cykle: **787**
-- MIGRATION: **+30808** kluczy, **515** plików `.lua`
-- Kategorie dotknięte: actions, chatchannels, cpp, creaturescripts, dataroot, errors, events, globalevents, items, libs...
+- Cykle: **0**
+- MIGRATION: **+0** kluczy, **0** plików `.lua`
+- Kategorie dotknięte: -
 - Błędy: **0**
 
 
@@ -229,12 +226,12 @@
 
 | Metryka | Wartość | Szczegóły |
 |---------|---------|-----------|
-| 📁 Plików przeskanowanych | **20** | w tej sesji |
-| ✅ Plików z kluczami | **3** | zawierały hardcoded strings |
-| ⬜ Plików bez kluczy | **17** | czyste (brak hardcoded) |
-| 🔑 Kluczy wyciągniętych | **3** | przez workera w tej sesji |
+| 📁 Plików przeskanowanych | **124** | w tej sesji |
+| ✅ Plików z kluczami | **120** | zawierały hardcoded strings |
+| ⬜ Plików bez kluczy | **4** | czyste (brak hardcoded) |
+| 🔑 Kluczy wyciągniętych | **285** | przez workera w tej sesji |
 | 🌍 Języków | **54** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#610** | continuous mode |
+| 🔄 Cykli wykonanych | **#615** | continuous mode |
 
 ---
 
@@ -289,17 +286,17 @@
 </details>
 
 <details>
-<summary>🧙 5. NPC - 🔄 (46%)</summary>
+<summary>🧙 5. NPC - 🔄 (48%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 6946 |
+| 🔑 Kluczy | 7243 |
 | 🎯 Cel | 15000 |
-| 📊 Postęp | 46% |
+| 📊 Postęp | 48% |
 | 📁 Plik | i18n/en/npc.json |
 | 📁 Plików NPC | 1027 |
-| ✅ Zmigrowanych | 678 |
-| 🔄 Do migracji | 19 |
+| ✅ Zmigrowanych | 695 |
+| 🔄 Do migracji | 2 |
 
 </details>
 
@@ -328,13 +325,13 @@
 </details>
 
 <details>
-<summary>📜 8. Scripts - 🔄 (63%)</summary>
+<summary>📜 8. Scripts - 🔄 (64%)</summary>
 
 | Metryka | Wartość |
 |---------|---------|
-| 🔑 Kluczy | 634 |
+| 🔑 Kluczy | 641 |
 | 🎯 Cel | 1000 |
-| 📊 Postęp | 63% |
+| 📊 Postęp | 64% |
 | 📁 Plik | i18n/en/scripts.json |
 
 </details>
@@ -394,11 +391,11 @@
 | Kategoria | Kluczy | Przetworzono | Seria zer | Status |
 |-----------|--------|--------------|-----------|--------|
 | items | 13749 | 0 | 0 | ✅ Active |
-| npc | 6946 | 0 | 0 | ✅ Active |
+| npc | 7243 | 0 | 0 | ✅ Active |
 | otclient_modules | 1987 | 0 | 0 | ✅ Active |
 | html | 1495 | 0 | 0 | ✅ Active |
 | spells | 1426 | 0 | 0 | ✅ Active |
-| scripts | 634 | 0 | 0 | ✅ Active |
+| scripts | 641 | 0 | 0 | ✅ Active |
 | client | 242 | 0 | 0 | ✅ Active |
 | raids | 147 | 0 | 0 | ✅ Active |
 | monsters | 132 | 0 | 0 | ✅ Active |
@@ -441,7 +438,7 @@
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 RUNNING | Cykl #610 |
+| Worker v1.1 | 🟢 RUNNING | Cykl #615 |
 | Guardian v2.0 | 🟢 ACTIVE | Push co 2 min |
 
 ---
@@ -473,8 +470,8 @@
 | Kategoria | Kluczy | Postęp | Cel | Status |
 |-----------|--------|--------|-----|--------|
 | 🎒 Items | 13749 | ██████░░░░░░░░░░░░░░ | 40000 | 🔄 34% |
-| 🧙 NPC | 6946 | █████████░░░░░░░░░░░ | 15000 | 🔄 46% |
-| 📜 Scripts | 634 | ████████████░░░░░░░░ | 1000 | 🔄 63% |
+| 🧙 NPC | 7243 | █████████░░░░░░░░░░░ | 15000 | 🔄 48% |
+| 📜 Scripts | 641 | ████████████░░░░░░░░ | 1000 | 🔄 64% |
 | 👹 Monsters | 132 | ░░░░░░░░░░░░░░░░░░░░ | 5000 | 🔄 3% |
 | ✨ Spells | 1426 | ███████████████████░ | 1500 | ✅ 95% |
 | ⚙️ Server | 66 | ████░░░░░░░░░░░░░░░░ | 300 | 🔄 22% |
@@ -484,16 +481,23 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last (UTC): 2025-12-17 10:02:10 | Local: 2025-12-17 11:02:10 CET  
+📅 Auto-updated by Worker v1.1 | Last: 2025-12-20 20:26:26  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---
 
 ## Ostatnio zmigrowane NPC
 
-- ✅ `extended_holy_chain` - ukończono 2025-12-17 09:31
-- ✅ `root` - ukończono 2025-12-17 09:31
-- ✅ `elder_bonelord_paralyze` - ukończono 2025-12-17 09:31
+- ✅ `zebron` - ukończono 2025-12-20 20:26
+- ✅ `yana` - ukończono 2025-12-20 20:26
+- ✅ `xodet` - ukończono 2025-12-20 20:26
+- ✅ `woblin` - ukończono 2025-12-20 20:26
+- ✅ `wentworth` - ukończono 2025-12-20 20:26
+- ✅ `walter_jaeger` - ukończono 2025-12-20 20:26
+- ✅ `vescu` - ukończono 2025-12-20 20:26
+- ✅ `vascalir` - ukończono 2025-12-20 20:26
+- ✅ `trisha` - ukończono 2025-12-20 20:26
+- ✅ `topsy` - ukończono 2025-12-20 20:26
 
 ---
 

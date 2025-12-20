@@ -1,11 +1,10 @@
 # NPC: florentine
 
 **Plik:** `data-otservbr-global/npc/florentine.lua`
-**Data migracji:** 2025-12-11 16:26
-**Liczba tekstów:** 1
+**Data migracji:** 2025-12-17 05:29
+**Liczba tekstów:** 0
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.florentine.stdmod_1` | Embellish your home with flowers! |

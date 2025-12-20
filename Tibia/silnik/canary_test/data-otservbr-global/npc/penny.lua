@@ -66,8 +66,8 @@ keywordHandler:addKeyword({ "mail" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addKeyword({ "?" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.penny.stdmod_8" })
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
-npcHandler:setMessage(MESSAGE_FAREWELL, "Farewell, and may Justice be with you!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Wait... will you take me a diamond when you're back?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.penny.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.penny.walkaway_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {

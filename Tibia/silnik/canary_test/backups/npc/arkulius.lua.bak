@@ -26,12 +26,12 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "...the arithmetical paradox has the same value in a metaphysical way, then..." },
-	{ text = "Oh my! Alverus!! Did you really...?!?! I have to recalculate it to make sure that I made no mistake." },
-	{ text = "<mumbles>" },
-	{ text = "...the minimum square deviation could cause a dislocation, in a matter of fact..." },
-	{ text = "...it could be possible to bring the sphere to a destination where..." },
-	{ text = "Yes, that's it! The elementary particle are corresponding to the... the ... UNBELIEVEABLE!!!" },
+	{ i18nKey = "npc.arkulius.voice_1" },
+	{ i18nKey = "npc.arkulius.voice_2" },
+	{ i18nKey = "npc.arkulius.voice_3" },
+	{ i18nKey = "npc.arkulius.voice_4" },
+	{ i18nKey = "npc.arkulius.voice_5" },
+	{ i18nKey = "npc.arkulius.voice_6" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -155,15 +155,15 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, text = "How dare you asking me this?!? I'm Arkulius - Master of Elements, the HEADMASTER of this academy!!" })
-keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, text = "I'm Arkulius - Master of Elements, the headmaster of this academy." })
-keywordHandler:addKeyword({ "help" }, StdModule.say, { npcHandler = npcHandler, text = "I have better things to do than helping you. See that ice statue over there? My dear friend Alverus needs to be revived!" })
-keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, text = "Time is an illusion and completely irrelevant to me." })
-keywordHandler:addKeyword({ "weapon" }, StdModule.say, { npcHandler = npcHandler, text = "Weapons are for those people who aren't able to use their heads or better what's INSIDE their heads. No offence <coughs>." }) -- < Knight; FIXME !!!
-keywordHandler:addKeyword({ "pits of inferno" }, StdModule.say, { npcHandler = npcHandler, text = "Yeye, I believe you almost feel like home among all those brainless creatures!" })
+keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.arkulius.stdmod_1" })
+keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.arkulius.stdmod_2" })
+keywordHandler:addKeyword({ "help" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.arkulius.stdmod_3" })
+keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.arkulius.stdmod_4" })
+keywordHandler:addKeyword({ "weapon" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.arkulius.stdmod_5" }) -- < Knight; FIXME !!!
+keywordHandler:addKeyword({ "pits of inferno" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.arkulius.stdmod_6" })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye and please stay away, okay?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "At last! Good things come to those who wait.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.arkulius.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.arkulius.farewell_msg_1")
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
@@ -185,7 +185,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

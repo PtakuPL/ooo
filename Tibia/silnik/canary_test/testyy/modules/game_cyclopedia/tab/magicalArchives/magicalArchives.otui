@@ -16,7 +16,7 @@ UIWidget
       image-border: 10
       padding-right: 16
       margin-bottom: 25
-      !text: tr('Select Spell')
+      !text: tr("otclient_modules.magicalarchives_otui.tr_4")
       layout:
         type: verticalBox
         spacing: 6
@@ -28,7 +28,7 @@ UIWidget
 
   MiniPanel
     id: spellAndRune
-    !text: tr('Spell / Rune Information')
+    !text: tr("otclient_modules.magicalarchives_otui.tr_3")
     anchors.top: InformationBase.top
     anchors.left: InformationBase.right
     anchors.right: parent.right
@@ -38,11 +38,11 @@ UIWidget
 
     Label
       anchors.centerIn: parent
-      !text: tr('select a spell to view detailed information.') 
+      !text: tr("otclient_modules.magicalarchives_otui.tr_2") 
     Label
       id: deleteme
       anchors.centerIn: parent
-      !text: tr("\nis this in the protobuf ?\n in http post ? \nor modify gamelib/spells.lua?")
+      !text: tr("otclient_modules.magicalarchives_otui.tr_1")
       font-scale: 2
       margin-top: 32
       text-auto-resize: true

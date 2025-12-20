@@ -7,7 +7,7 @@ function bananaChocolateShake.onUse(player, item, fromPosition, target, toPositi
 	end
 
 	player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.banana_chocolate_shake.msg_2")
-	player:say("Slurp.", TALKTYPE_MONSTER_SAY)
+	player:sayLocalized("scripts.banana_chocolate_shake.say_1", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_HEARTS)
 	player:setExhaustion("special-foods-cooldown", 10 * 60)
 	item:remove(1)

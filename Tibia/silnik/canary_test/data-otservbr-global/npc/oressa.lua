@@ -27,15 +27,14 @@ npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
 	{
-		text = "You can't take it all with you - sell your Dawnport things before \z
-		you receive the gear of your definite vocation!",
+		i18nKey = "npc.oressa.voice_1",
 	},
-	{ text = "Leave all Dawnport things behind you and choose your destiny!" },
-	{ text = "Come to me if you need healing!" },
-	{ text = "Choose your vocation and explore the mainland!" },
-	{ text = "Talk to me to choose your definite vocation! Become a knight, paladin, druid or sorcerer!" },
-	{ text = "World needs brave adventurers like you. Choose your vocation and sail to the mainland!" },
-	{ text = "Poisoned? Bleeding? Wounded? I can help!" },
+	{ i18nKey = "npc.oressa.voice_2" },
+	{ i18nKey = "npc.oressa.voice_3" },
+	{ i18nKey = "npc.oressa.voice_4" },
+	{ i18nKey = "npc.oressa.voice_5" },
+	{ i18nKey = "npc.oressa.voice_6" },
+	{ i18nKey = "npc.oressa.voice_7" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -355,24 +354,16 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getLevel() >= 8 then
-		npcHandler:setMessage(
-			MESSAGE_GREET,
-			"Welcome, young adventurer. Tell me if you need help in \z
-												{choosing} your {vocation}, or if you have {decided} on the {vocation} you want to choose."
-		)
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.oressa.greet_msg_1")
 	else
-		npcHandler:setMessage(
-			MESSAGE_GREET,
-			"Welcome to the temple of Dawnport, child. \z
-												If you need {healing}, I can help you. Ask me about a {vocation} if you need counsel."
-		)
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.oressa.greet_msg_2")
 	end
 	return true
 end
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye, child.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.oressa.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

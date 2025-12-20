@@ -21,9 +21,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Heed. Your. Will. We. Will." },
-	{ text = "Intruder. Intrude. Must. Explain." },
-	{ text = "Ssssttttoooopppp." },
+	{ i18nKey = "npc.servant_sentry.voice_1" },
+	{ i18nKey = "npc.servant_sentry.voice_2" },
+	{ i18nKey = "npc.servant_sentry.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -91,9 +91,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "The. Slime. Has. Entered. Our. Master. Has. Left! We. Must. Help.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Goodbye. Human. Being!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Goodbye. Human. Being!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.servant_sentry.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.servant_sentry.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.servant_sentry.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

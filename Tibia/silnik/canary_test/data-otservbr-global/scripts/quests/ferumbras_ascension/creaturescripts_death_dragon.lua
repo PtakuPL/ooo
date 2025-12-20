@@ -13,7 +13,7 @@ function deathDragon.onDeath(creature, corpse, lasthitkiller, mostdamagekiller, 
 	for i = 1, #spectators do
 		local spectator = spectators[i]
 		if spectator:isMonster() and spectator:getName():lower() == "ragiaz" then
-			spectator:say("Ragiaz power revives his minion!", TALKTYPE_MONSTER_SAY)
+			spectator:sayLocalized("scripts.creaturescripts_death_dragon.say_1", TALKTYPE_MONSTER_SAY)
 			return true
 		end
 	end

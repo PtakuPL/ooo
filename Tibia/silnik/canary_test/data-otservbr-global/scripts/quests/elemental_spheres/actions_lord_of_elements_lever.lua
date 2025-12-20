@@ -114,7 +114,7 @@ local function warnPlayers(players)
 		return
 	end
 
-	player:say("You have 5 minutes from now on until you get teleported out.", TALKTYPE_MONSTER_YELL, false, 0, Position(33266, 31835, 13))
+	player:sayLocalized("scripts.actions_lord_of_elements_lever.say_3", TALKTYPE_MONSTER_YELL, false, 0, Position(33266, 31835, 13))
 end
 
 local function areMachinesCharged()
@@ -159,7 +159,7 @@ function elementalSpheresLordLever.onUse(player, item, fromPosition, target, toP
 			Game.createItem(walls.wallId, 1, Position(x, y, walls.from.z))
 		end
 	end
-	player:say("ZOOOOOOOOM", TALKTYPE_MONSTER_SAY, false, 0, walls.soundPosition)
+	player:sayLocalized("scripts.actions_lord_of_elements_lever.say_2", TALKTYPE_MONSTER_SAY, false, 0, walls.soundPosition)
 
 	if leverCount ~= #config.leverPositions then
 		return true
@@ -175,7 +175,7 @@ function elementalSpheresLordLever.onUse(player, item, fromPosition, target, toP
 
 	Game.setStorageValue(Storage.Quest.U8_2.ElementalSpheres.BossRoom, 1)
 	Game.createMonster("Lord of the Elements", config.centerPosition)
-	player:say("You have 10 minutes from now on until you get teleported out.", TALKTYPE_MONSTER_YELL, false, 0, config.centerPosition)
+	player:sayLocalized("scripts.actions_lord_of_elements_lever.say_1", TALKTYPE_MONSTER_YELL, false, 0, config.centerPosition)
 	addEvent(warnPlayers, 5 * 60 * 1000, players)
 	addEvent(resetRoom, 10 * 60 * 1000, players)
 

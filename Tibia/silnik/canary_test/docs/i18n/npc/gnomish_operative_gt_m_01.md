@@ -1,7 +1,7 @@
 # NPC: gnomish_operative_gt-m-01
 
 **Plik:** `data-otservbr-global/npc/gnomish_operative_gt-m-01.lua`
-**Data migracji:** 2025-12-10 14:11
+**Data migracji:** 2025-12-17 00:58
 **Liczba tekstów:** 1
 
 ## Klucze i18n

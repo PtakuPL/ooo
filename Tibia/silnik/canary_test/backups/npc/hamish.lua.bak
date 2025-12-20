@@ -26,16 +26,16 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "That's the spirit!" },
-	{ text = "Potions! Wands! Runes! Get them here!" },
-	{ text = "You levelled up but your wand is old? Come and buy a new one here!" },
-	{ text = "Ran out of mana or a little kablooie? Come to me to resupply!" },
-	{ text = "Low on magic and need a little extra? Get yourself a rune!" },
-	{ text = "Pack of monsters give you trouble? Throw an area rune at them!" },
-	{ text = "Health potions to refill your health in combat!" },
-	{ text = "Taking back empty potion flasks! Get your deposit back here!" },
-	{ text = "Careful with that! That's a highly reactive potion you have there!" },
-	{ text = "Mana potions to refill your magic power!" },
+	{ i18nKey = "npc.hamish.voice_1" },
+	{ i18nKey = "npc.hamish.voice_2" },
+	{ i18nKey = "npc.hamish.voice_3" },
+	{ i18nKey = "npc.hamish.voice_4" },
+	{ i18nKey = "npc.hamish.voice_5" },
+	{ i18nKey = "npc.hamish.voice_6" },
+	{ i18nKey = "npc.hamish.voice_7" },
+	{ i18nKey = "npc.hamish.voice_8" },
+	{ i18nKey = "npc.hamish.voice_9" },
+	{ i18nKey = "npc.hamish.voice_10" },
 }
 
 local itemsTable = {
@@ -154,27 +154,11 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	local categoryTable = itemsTable[message:lower()]
 	if MsgContains(message, "dawnport") then
-		npcHandler:say({
-			"Small and deceptively friendly-looking island. Well, I used to study the plants and herbs here for my potions.",
-			"Nowadays, I leave that to Oressa, she has a better way with that horrible wildlife here. \z
-				I prefer to distil potions in the quiet of my lab. \z
-				If you need some potions, runes or other magic equipment, ask for a trade.",
-		}, npc, creature, 200)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.hamish.say_1", "npc.hamish.say_2"}, 200)
 	elseif MsgContains(message, "mainland") then
-		npcHandler:say({
-			"Dawnport is not far off from the coast of the Tibian Mainland. Lots of cities, monsters, bandits, \z
-				brigands, mean folk and people of low understanding with no sense of respect towards alchemical genius. \z
-				<mutters to himself>",
-			"Ahem. Once you're level 8, you should be experienced enough to choose your definite vocation and leave \z
-				Dawnport for Main - and Tibia definitely needs more skilled adventurers to keep those monsters in check \z
-				which roam our lands!",
-		}, npc, creature, 200)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.hamish.say_3", "npc.hamish.say_4"}, 200)
 	elseif MsgContains(message, "ser tybald") then
-		npcHandler:say({
-			"I wish I had thought of changing my name to that of a hero. Would have smoothed my way no end!",
-			"Anyway, whatever he was before he joined, Tybald now fits the bill of the legendary hero. \z
-				He even has a crush on lady Oressa. Cute. <chuckles>",
-		}, npc, creature, 200)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.hamish.say_5", "npc.hamish.say_6"}, 200)
 	elseif categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), itemsTable)
 		npcHandler:say("Of course, just browse through my wares. You can also look at " .. remainingCategories .. ".", npc, player)
@@ -184,16 +168,12 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(
-	MESSAGE_GREET,
-	"Hi there, fellow adventurer. \z
-	What's your need? Say {trade} and we'll soon get you fixed up. Or ask me about {potions}, {wands}, or {runes}."
-)
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.hamish.greet_msg_1")
 
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my wares. Or do you want to look only at " .. GetFormattedShopCategoryNames(itemsTable) .. ".")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Use your runes wisely!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Use your runes wisely!")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Take your pick! Or maybe you want to look only at {potions}, {wands} or {runes}?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.hamish.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.hamish.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.hamish.sendtrade_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- On buy npc shop message
@@ -202,7 +182,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

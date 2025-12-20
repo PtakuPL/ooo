@@ -11,7 +11,7 @@ UIWidget
   
     OptionCheckBox
       id: enableLights
-      !text: tr('Enable lights')
+      !text: tr("otclient_modules.effects_otui.tr_8")
 
     OptionScaleScroll
       id: ambientLight
@@ -41,7 +41,7 @@ UIWidget
       &scrollSize: 21
       @onSetup: |
         local value = modules.client_options.getOption('floorFading')
-        self:setText(tr('Floor Fading: %s ms', value))
+        self:setText(tr("otclient_modules.effects_otui.tr_7", value))
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -51,7 +51,7 @@ UIWidget
     height: 32
   
     Label
-      !text: tr('Floor View Mode:')
+      !text: tr("otclient_modules.effects_otui.tr_6")
       anchors.left: parent.left
       margin-left: 18
       color: #c0c0c0ff
@@ -74,8 +74,8 @@ UIWidget
 
     OptionCheckBoxMarked
       id: drawEffectOnTop
-      !text: tr('Draw Effect On Top')
-      !tooltip: tr('Draw effect after drawing the entire floor.')
+      !text: tr("otclient_modules.effects_otui.tr_5")
+      !tooltip: tr("otclient_modules.effects_otui.tr_4")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -86,8 +86,8 @@ UIWidget
   
     OptionCheckBoxMarked
       id: limitVisibleDimension
-      !text: tr('Limit Visible Dimension')
-      !tooltip: tr('The limit is based on your maximum range.')
+      !text: tr("otclient_modules.effects_otui.tr_3")
+      !tooltip: tr("otclient_modules.effects_otui.tr_2")
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -98,7 +98,7 @@ UIWidget
   
     OptionCheckBox
       id: floatingEffect
-      !text: tr('Draw Floating Effects')
+      !text: tr("otclient_modules.effects_otui.tr_1")
       
   SmallReversedQtPanel
     anchors.left: parent.left

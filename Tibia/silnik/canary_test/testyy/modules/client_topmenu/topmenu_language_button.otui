@@ -3,7 +3,7 @@
 Button < GameTopButton
   id: langTopButton
   icon-source: /images/topbuttons/language
-  tooltip: tr('Change language')
+  tooltip: tr("otclient_modules.topmenu_language_button_otui.tr_1")
   anchors.left: prev.right
   margin-left: 4
   onClick: modules.client_locales.openLanguagePicker()

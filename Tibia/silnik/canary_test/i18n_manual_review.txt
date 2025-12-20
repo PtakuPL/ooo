@@ -1,0 +1,6 @@
+data-otservbr-global/npc/oressa.lua
+data-otservbr-global/npc/oressa.lua
+data-otservbr-global/npc/oressa.lua
+data-otservbr-global/npc/oressa.lua
+data-otservbr-global/npc/oressa.lua
+data-otservbr-global/npc/oressa.lua

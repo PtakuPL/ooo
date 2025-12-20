@@ -12,7 +12,7 @@ function disgustingOozeDeath.onDeath(creature, corpse, lasthitkiller, mostdamage
 			end
 			monster:setMaster(creature:getMaster())
 		end
-		creature:say("The ooze splits and regenerates.", TALKTYPE_MONSTER_SAY)
+		creature:sayLocalized("scripts.creaturescripts_disgusting_ooze_death.say_1", TALKTYPE_MONSTER_SAY)
 	end
 	return true
 end

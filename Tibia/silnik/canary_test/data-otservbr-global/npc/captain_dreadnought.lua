@@ -26,11 +26,11 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "No smuggling aboard this ship! Only 20 pieces of any creature product allowed!" },
-	{ text = "No fear! The Sea Cat will ship you safely to the mainland!" },
-	{ text = "All aboard! Prepare to sail!" },
-	{ text = "Come hell or high water, we'll reach any port I sail you to!" },
-	{ text = "This island is too small. I need sea water around me." },
+	{ i18nKey = "npc.captain_dreadnought.voice_1" },
+	{ i18nKey = "npc.captain_dreadnought.voice_2" },
+	{ i18nKey = "npc.captain_dreadnought.voice_3" },
+	{ i18nKey = "npc.captain_dreadnought.voice_4" },
+	{ i18nKey = "npc.captain_dreadnought.voice_5" },
 }
 
 npcConfig.moneyToNeedDonation = 500 --value in gold coins (ex: 500 = 500gp, 10000 = 10k)
@@ -227,26 +227,18 @@ local function donationHandler(npc, creature, message, keywords, parameters, nod
 	local playerId = player:getId()
 
 	if (parameters.confirm ~= true) and (parameters.decline ~= true) then
-		npcHandler:say("So you want to donate " .. (player:getMoney() - npcConfig.moneyToNeedDonation) .. " gold coins? \z
-			The little kiddies are going to appreciate it.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_1", { (player:getMoney() - npcConfig.moneyToNeedDonation) })
 	elseif parameters.confirm == true then
 		if player:getMoney() > npcConfig.moneyToNeedDonation then
 			player:removeMoney((player:getMoney() - npcConfig.moneyToNeedDonation))
-			npcHandler:say(
-				"Well, that's really generous of you. That'll feed a lot of hungry mouths for a while. \z
-				Right, now which {city} did you say you wanted to go to?",
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_1")
 			npcHandler:resetNpc(creature)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_1")
 		end
 	elseif parameters.decline == true then
 		if player:getMoney() > npcConfig.moneyToNeedDonation then
-			npcHandler:say("By tempest! What's all this gold weighing us down? Don't you think that's a little risky with all \z
-				these pirates around? You can take " .. npcConfig.moneyToNeedDonation .. " with you, but that's it. Drop the rest or {donate} it to the \z
-				Adventurers' Orphans Fund, really.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_2", { npcConfig.moneyToNeedDonation })
 		end
 	end
 	return true
@@ -261,26 +253,19 @@ local function townTravelHandler(npc, creature, message, keywords, parameters, n
 		local town = towns[parameters.townId]
 		if town.canBeSailed == false then
 			if player:isPremium() then
-				npcHandler:say("What? Whatever that is, it's not a port I sail to. " .. townNames.premium .. "?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_3", { townNames.premium })
 			else
-				npcHandler:say("What? Whatever that is, it's not a port I sail to. " .. townNames.free .. "?", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_4", { townNames.free })
 			end
 		elseif town.isPremium == true and not player:isPremium() then
-			npcHandler:say(
-				"Negative, can't bring you there without a premium account. \z
-				You should be glad you get to travel by ship - usually that's a premium service too, you know.",
-				npc,
-				creature
-			)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_2")
 		else
-			npcHandler:say(town.message .. " What do you say, {yes} or {no}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_5", { town.message })
 		end
 	elseif parameters.confirm == true then
 		-- Handle money excess at confirm or it may be dropped and picked up in previous steps
 		if player:getMoney() > npcConfig.moneyToNeedDonation then
-			npcHandler:say("By tempest! What's all this gold weighing us down? Don't you think that's a little risky with all \z
-				these pirates around? You can take " .. npcConfig.moneyToNeedDonation .. " with you, but that's it. Drop the rest or {donate} it to the \z
-				Adventurers' Orphans Fund, really.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_6", { npcConfig.moneyToNeedDonation })
 			return true
 		end
 		local parentNode = node:getParent()
@@ -291,19 +276,14 @@ local function townTravelHandler(npc, creature, message, keywords, parameters, n
 		player:teleportTo(towns[townId].destination)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		player:setStorageValue(Storage.Dawnport.Mainland, 1)
-		npcHandler:say(
-			"Cast off! Don't forget to talk to the guide at the port for directions to nearest bars... err, shops and \z
-			bank and such!",
-			npc,
-			creature
-		)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_3")
 		npcHandler:resetNpc(creature)
 		npcHandler:removeInteraction(npc, creature)
 	elseif parameters.decline == true then
 		if player:isPremium() then
-			npcHandler:say("Changed your mind? Which city do you want to head to, " .. townNames.premium .. "?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_7", { townNames.premium })
 		else
-			npcHandler:say("Changed your mind? Which city do you want to head to, " .. townNames.free .. "?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_8", { townNames.free })
 		end
 		npcHandler.keywordHandler:moveUp(creature, 1)
 	elseif (parameters.sailableTowns == true) and parameters.text then
@@ -443,12 +423,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	local currentNode = keywordHandler:getLastNode(creature)
 	-- Handle other words for nodes while still handling (bye, farewell) keywords
 	if #currentNode.children == 0 then
-		npcHandler:say(
-			"Kid, listen. Answering with a clear {yes} or {no} will get you much further in Tibia. \z
-			Most people are not as sharp-eared as I am. Got that?",
-			npc,
-			creature
-		)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_4")
 	elseif currentNode == readyNode then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.captain_dreadnought.say_6")
 	elseif currentNode == notReadyNode then
@@ -459,7 +434,7 @@ end
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_FAREWELL, "You sure you want to spend time on this piece of rock? I can show you the world! Huh.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.captain_dreadnought.farewell_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

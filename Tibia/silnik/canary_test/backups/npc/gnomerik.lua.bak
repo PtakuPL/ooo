@@ -50,7 +50,7 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "Hello and welcome in the gnomish {recruitment} office." }, function(player)
+keywordHandler:addGreetKeyword({ "hi" }, { npcHandler = npcHandler, text = "Hello and welcome in the gnomish {recruitment} office.", i18nKey = "npc.gnomerik.greet_1" }, function(player)
 	if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) == 1 then
 		player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine, 3)
 	end
@@ -287,7 +287,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello and welcome in the gnomish {recruitment} office.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gnomerik.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

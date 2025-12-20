@@ -143,11 +143,11 @@ end
 
 keywordHandler:addKeyword({ "addon" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I can forge the finest {weapons} for knights and warriors. They may wear them proudly and visible to everyone.",
+	i18nKey = "npc.morgan.stdmod_1",
 })
 keywordHandler:addKeyword({ "weapons" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Would you rather be interested in a {knight's sword} or in a {warrior's sword}?",
+	i18nKey = "npc.morgan.stdmod_2",
 })
 
 npcHandler:setMessage(MESSAGE_GREET, "Hello there.")

@@ -53,9 +53,9 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-keywordHandler:addKeyword({ "master" }, StdModule.say, { npcHandler = npcHandler, text = "Our. Master. Is. Gone. You. Can. Not. Visit. Him! We. Stand. {Sentry}!" })
-keywordHandler:addKeyword({ "sentry" }, StdModule.say, { npcHandler = npcHandler, text = "{Master}. Conducted. Experiments. Great. Problems. You. Must. Go!" })
-keywordHandler:addKeyword({ "slime" }, StdModule.say, { npcHandler = npcHandler, text = "{Slime}. Dangerous. We. Have. It. Under. Control. ... We. Will. Stand. {Sentry}." }, function(player)
+keywordHandler:addKeyword({ "master" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.servant_sentry.stdmod_1" })
+keywordHandler:addKeyword({ "sentry" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.servant_sentry.stdmod_2" })
+keywordHandler:addKeyword({ "slime" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.servant_sentry.stdmod_3" }, function(player)
 	return player:getStorageValue(Storage.Quest.U9_1.TheirMastersVoiceWorldChange.SlimeGobblerReceived) == 1
 end)
 

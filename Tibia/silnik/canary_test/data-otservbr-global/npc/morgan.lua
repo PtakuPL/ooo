@@ -150,8 +150,8 @@ keywordHandler:addKeyword({ "weapons" }, StdModule.say, {
 	i18nKey = "npc.morgan.stdmod_2",
 })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello there.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.morgan.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.morgan.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

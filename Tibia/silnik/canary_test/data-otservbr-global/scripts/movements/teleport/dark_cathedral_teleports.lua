@@ -17,7 +17,7 @@ end
 local lever = Action()
 function lever.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if item.itemid == 2773 then
-		player:say("It doesn't move.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.dark_cathedral_teleports.say_1", TALKTYPE_MONSTER_SAY)
 		return true
 	end
 	addEvent(revertLever, 10 * 60 * 1000, toPosition)

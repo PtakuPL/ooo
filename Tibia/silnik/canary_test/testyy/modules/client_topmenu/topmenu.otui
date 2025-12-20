@@ -69,7 +69,7 @@ TopMenuPanel
 
     Label
       id: topLeftOnlinePlayersLabel
-      !text: '- ' .. tr('players online')
+      !text: '- ' .. tr("otclient_modules.topmenu_otui.tr_1")
       anchors.left: prev.right
       margin-left: 5
       anchors.verticalCenter: prev.verticalCenter

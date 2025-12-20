@@ -12,15 +12,15 @@ function ferumbrasAscendantBoneFlute.onUse(player, item, fromPosition, target, t
 	if target:getName():lower() == "snake" or target:getName():lower() == "lion" or target:getName():lower() == "bear" or target:getName():lower() == "seagull" or target:getName():lower() == "pig" then
 		local rand = math.random(100)
 		if rand <= 5 then
-			player:say("Finally this one reveal your spirit animal.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_bone_flute.say_3", TALKTYPE_MONSTER_SAY)
 			player:setStorageValue(Storage.Quest.U10_90.FerumbrasAscension.BoneFlute, 1)
 			item:remove()
 			return true
 		elseif rand > 5 and rand <= 50 then
-			player:say("This one has shaken its head. This probably means it's not your spirit animal.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_bone_flute.say_2", TALKTYPE_MONSTER_SAY)
 			return true
 		elseif rand > 50 then
-			player:say("This one's still unwilling reveal whether it's your spirit animal.", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.actions_bone_flute.say_1", TALKTYPE_MONSTER_SAY)
 			return true
 		end
 	end

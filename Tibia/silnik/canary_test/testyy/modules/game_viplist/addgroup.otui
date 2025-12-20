@@ -1,6 +1,6 @@
 MainWindow
   size: 360 121
-  !text: tr('Add VIP group (User-Created groups left: %s)')
+  !text: tr("otclient_modules.addgroup_otui.tr_4")
   text-offset: 0 1
   @onEnter: modules.game_viplist.addGroup()
   @onEscape: |
@@ -9,7 +9,7 @@ MainWindow
 
   Label
     id: header
-    !text: tr('Please enter a group name:')
+    !text: tr("otclient_modules.addgroup_otui.tr_3")
     anchors.top: parent.top
     anchors.left: parent.left
     anchors.right: parent.right
@@ -35,7 +35,7 @@ MainWindow
 
   Button
     id: okButton
-    !text: tr('Ok')
+    !text: tr("otclient_modules.addgroup_otui.tr_2")
     anchors.right: next.left
     anchors.bottom: parent.bottom
     margin-right: 11
@@ -43,7 +43,7 @@ MainWindow
     @onClick: modules.game_viplist.addGroup()
 
   Button
-    !text: tr('Cancel')
+    !text: tr("otclient_modules.addgroup_otui.tr_1")
     anchors.right: parent.right
     anchors.bottom: parent.bottom
     margin-bottom: 6

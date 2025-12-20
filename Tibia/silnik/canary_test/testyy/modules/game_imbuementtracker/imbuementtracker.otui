@@ -18,19 +18,19 @@ ImbuementTrackerMenu < PopupMenu
 
   ImbuementTrackerMenuOption
     id: showLessThan1h
-    !text: tr('Show imbuements that last less than 1h')
+    !text: tr("otclient_modules.imbuementtracker_otui.tr_5")
   
   ImbuementTrackerMenuOption
     id: showBetween1hAnd3h
-    !text: tr('Show imbuements that last between 1h and 3h')
+    !text: tr("otclient_modules.imbuementtracker_otui.tr_4")
   
   ImbuementTrackerMenuOption
     id: showMoreThan3h
-    !text: tr('Show imbuements that last more than 3h')
+    !text: tr("otclient_modules.imbuementtracker_otui.tr_3")
   
   ImbuementTrackerMenuOption
     id: showNoImbuements
-    !text: tr('Show items with no active imbuement')
+    !text: tr("otclient_modules.imbuementtracker_otui.tr_2")
 
 ImbuementSlot < Panel
   image-source: /images/game/imbuing/icons/0
@@ -72,7 +72,7 @@ InventoryItem < Panel
 
 ImbuementTracker < MiniWindow
   id: imbuementTracker
-  !text: tr('Imbuements')
+  !text: tr("otclient_modules.imbuementtracker_otui.tr_1")
   icon: /images/icons/icon-imbuementtracker-widget
   icon-offset: 4 2
   icon-size: 12 12

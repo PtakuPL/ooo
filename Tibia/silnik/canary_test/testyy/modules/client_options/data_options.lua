@@ -52,7 +52,7 @@ return {
                 v = 0
             end
 
-            panels.graphicsPanel:recursiveGetChildById('backgroundFrameRate'):setText(tr('Game framerate limit: %s', text))
+            panels.graphicsPanel:recursiveGetChildById('backgroundFrameRate'):setText(tr("otclient_modules.data_options.tr_7", text))
             g_app.setMaxFps(v)
         end
     },
@@ -84,7 +84,7 @@ return {
             if g_sounds then
                 g_sounds.getChannel(SoundChannels.Music):setGain(value / 100)
             end
-            panels.soundPanel:recursiveGetChildById('musicSoundVolume'):setText(tr('Music volume: %d', value))
+            panels.soundPanel:recursiveGetChildById('musicSoundVolume'):setText(tr("otclient_modules.data_options.tr_6", value))
         end
     },
     enableLights                      = {
@@ -321,7 +321,7 @@ return {
             end
             g_app.setAnimatedTextScale(math.max(value + 0.5, 1))
             panels.interfaceHUD:recursiveGetChildById('animatedTextScale'):setText(
-                tr('Animated Message Scale: %sx', math.max(value + 0.5, 1)))
+                tr("otclient_modules.data_options.tr_5", math.max(value + 0.5, 1)))
         end
     },
     showLeftExtraPanel                = {
@@ -366,23 +366,21 @@ return {
         value = 100,
         action = function(value, options, controller, panels, extraWidgets)
             g_client.setEffectAlpha(value / 100)
-            panels.graphicsEffectsPanel:recursiveGetChildById('setEffectAlphaScroll'):setText(tr('Opacity Effect: %s%%',
-                value))
+            panels.graphicsEffectsPanel:recursiveGetChildById('setEffectAlphaScroll'):setText(tr("otclient_modules.data_options.tr_4", value))
         end
     },
     setMissileAlphaScroll             = {
         value = 100,
         action = function(value, options, controller, panels, extraWidgets)
             g_client.setMissileAlpha(value / 100)
-            panels.graphicsEffectsPanel:recursiveGetChildById('setMissileAlphaScroll'):setText(tr(
-                'Opacity Missile: %s%%', value))
+            panels.graphicsEffectsPanel:recursiveGetChildById('setMissileAlphaScroll'):setText(tr("otclient_modules.data_options.tr_3", value))
         end
     },
     distFromCenScrollbar              = {
         value = 0,
         action = function(value, options, controller, panels, extraWidgets)
             local bar = modules.game_healthcircle.optionPanel:recursiveGetChildById('distFromCenScrollbar')
-            bar:setText(tr('Distance: %s', bar:recursiveGetChildById('valueBar'):getValue()))
+            bar:setText(tr("otclient_modules.data_options.tr_2", bar:recursiveGetChildById('valueBar'):getValue()))
             modules.game_healthcircle.setDistanceFromCenter(bar:recursiveGetChildById('valueBar'):getValue())
         end
     },
@@ -390,7 +388,7 @@ return {
         value = 0,
         action = function(value, options, controller, panels, extraWidgets)
             local bar = modules.game_healthcircle.optionPanel:recursiveGetChildById('opacityScrollbar')
-            bar:setText(tr('Opacity: %s', bar:recursiveGetChildById('valueBar'):getValue() / 100))
+            bar:setText(tr("otclient_modules.data_options.tr_1", bar:recursiveGetChildById('valueBar'):getValue() / 100))
             modules.game_healthcircle.setCircleOpacity(bar:recursiveGetChildById('valueBar'):getValue() / 100)
         end
     },

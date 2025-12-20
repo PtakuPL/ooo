@@ -26,11 +26,11 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "<clears throat> Get your armor and shields heeeeeeere! Upstairs!", yell = true },
-	{ text = "Need some help? Just ask me, I can show you around!" },
-	{ text = "Don't forget to protect yourself with a shield!" },
-	{ text = "Selling the finest armors on Rookgaard!" },
-	{ text = "Don't let these mean monsters hurt you - get better equipment now!" },
+	{ i18nKey = "npc.dixi.voice_1", yell = true },
+	{ i18nKey = "npc.dixi.voice_2" },
+	{ i18nKey = "npc.dixi.voice_3" },
+	{ i18nKey = "npc.dixi.voice_4" },
+	{ i18nKey = "npc.dixi.voice_5" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -143,8 +143,8 @@ keywordHandler:addKeyword({ "tom" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "dallheim" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.dixi.stdmod_47" })
 keywordHandler:addAliasKeyword({ "zerbrus" })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Um yeah, good day.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Here, take a look and choose something nice for you!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.dixi.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.dixi.sendtrade_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

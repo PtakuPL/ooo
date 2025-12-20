@@ -1,6 +1,6 @@
 // todo change to css/html
 MainWindow
-  !text: tr('Pick reward')
+  !text: tr("otclient_modules.pickreward_otui.tr_6")
   size: 451 390
   @onEscape: modules.game_rewardwall.destroyPickReward()
   padding: 20
@@ -12,7 +12,7 @@ MainWindow
     anchors.right: parent.right
     anchors.top: parent.top
     margin-top: 10
-    !text: tr('you have selected 0 of 2 reward items.')
+    !text: tr("otclient_modules.pickreward_otui.tr_5")
 
   TextList
     id: rewardList
@@ -39,14 +39,14 @@ MainWindow
     anchors.left: parent.left
     anchors.top: rewardList.bottom
     margin-top: 10
-    !text: tr('Free capacity: 737.60 oz')
+    !text: tr("otclient_modules.pickreward_otui.tr_4")
 
   Label
     id: weight
     anchors.right: parent.right
     anchors.top: rewardList.bottom
     margin-top: 10
-    !text: tr('Total weight: 0.00 oz')
+    !text: tr("otclient_modules.pickreward_otui.tr_3")
 
   HorizontalSeparator
     id: separator
@@ -61,7 +61,7 @@ MainWindow
     anchors.top: prev.bottom
     size: 45 20
     margin-top: 5
-    !text: tr('Close')
+    !text: tr("otclient_modules.pickreward_otui.tr_2")
     font: noto-12
     @onClick: modules.game_rewardwall.destroyPickReward(true)
 
@@ -72,7 +72,7 @@ MainWindow
     size: 60 20
     margin-top: 5
     margin-right: 10
-    !text: tr('Ok')
+    !text: tr("otclient_modules.pickreward_otui.tr_1")
     color: #FFFFFF
     font: noto-12
     enabled: false

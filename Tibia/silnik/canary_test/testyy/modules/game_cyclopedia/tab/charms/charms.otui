@@ -10,7 +10,7 @@ UIWidget
     margin-bottom: 30
     margin-top: 10
     width: 163
-    !text: tr('Information')
+    !text: tr("otclient_modules.charms_otui.tr_7")
     UIWidget
       id: TextBase
       anchors.top: parent.top
@@ -43,7 +43,7 @@ UIWidget
       anchors.left: parent.left
       margin-left: 10
       margin-right: 10
-      !text: tr('Unlock')
+      !text: tr("otclient_modules.charms_otui.tr_6")
       //font: noto-12
       text-offset: 0 -1
       color: #C0C0C0
@@ -75,7 +75,7 @@ UIWidget
       Label
         id: Value
         anchors.centerIn: parent
-        !text: tr('0')
+        !text: tr("otclient_modules.charms_otui.tr_5")
         text-auto-resize: true
       UIWidget
         id: Charm
@@ -107,14 +107,14 @@ UIWidget
       anchors.verticalCenter: StoreButton.verticalCenter
       margin-right: 5
       image-source: /images/icons/show_gui_help_grey
-      !tooltip: tr('You can assign 4 more Charms to creatures.\\nBuy a \"Charm Expansion\" to assign your unlocked Charms to\\ncreatures nearly unlimitedly and to get a 25% discount whenever\\nyou are removing a Charm.')
+      !tooltip: tr("otclient_modules.charms_otui.tr_4")
     TextEdit
       id: SearchEdit
       anchors.horizontalCenter: parent.horizontalCenter
       anchors.bottom: parent.bottom
       margin-bottom: 10
       color: #C0C0C0
-      !placeholder: tr('Type to search')
+      !placeholder: tr("otclient_modules.charms_otui.tr_3")
       placeholder-color: #6E706F
       padding-top: 1
       size: 140 17
@@ -125,7 +125,7 @@ UIWidget
       anchors.bottom: SearchEdit.top
       margin-bottom: 5
       color: #C0C0C0
-      !text: tr('Search') .. ':'
+      !text: tr("otclient_modules.charms_otui.tr_2") .. ':'
     BorderBox
       id: CreaturesBase
       anchors.bottom: SearchEdit.top
@@ -166,7 +166,7 @@ UIWidget
       anchors.bottom: CreaturesBase.top
       margin-bottom: 5
       color: #C0C0C0
-      !text: tr('Select Creature') .. ':'
+      !text: tr("otclient_modules.charms_otui.tr_1") .. ':'
   BorderBox
     id: ListBase
     anchors.bottom: InformationBase.bottom

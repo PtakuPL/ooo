@@ -51,7 +51,7 @@ function actions_dreamcatcher_curse.onUse(player, item, fromPosition, target, to
 					target:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.NightmareCurse, 0)
 					target:removeCondition(CONDITION_OUTFIT)
 					target:unregisterEvent(Storage.Quest.U12_00.TheDreamCourts.NightmareCurse)
-					target:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have a feeling of dread.")
+					target:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.actions_dreamcatcher_curse.msg_1")
 					player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.NightmareCurse, 1)
 					player:registerEvent(Storage.Quest.U12_00.TheDreamCourts.NightmareCurse)
 					player:sendLocalizedMessage(MESSAGE_EVENT_ADVANCE, "scripts.actions_dreamcatcher_curse.msg_2")

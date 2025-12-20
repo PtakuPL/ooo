@@ -66,7 +66,7 @@ function throne.onStepIn(creature, item, position, fromPosition)
 		else
 			player:teleportTo(throne.toPosition)
 			player:getPosition():sendMagicEffect(CONST_ME_MORTAREA)
-			player:say("Begone!", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.movements_throne.say_2", TALKTYPE_MONSTER_SAY)
 		end
 	else
 		-- Default behavior for other UIDs
@@ -78,7 +78,7 @@ function throne.onStepIn(creature, item, position, fromPosition)
 		else
 			player:teleportTo(throne.toPosition)
 			player:getPosition():sendMagicEffect(CONST_ME_MORTAREA)
-			player:say("Begone!", TALKTYPE_MONSTER_SAY)
+			player:sayLocalized("scripts.movements_throne.say_1", TALKTYPE_MONSTER_SAY)
 		end
 	end
 	return true

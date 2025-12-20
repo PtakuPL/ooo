@@ -78,7 +78,7 @@ end
 local function addTravelKeyword(keyword, cost, destination)
 	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, {
 		npcHandler = npcHandler,
-		text = "Do you want to sail " .. keyword:titleCase() .. " for |TRAVELCOST|?",
+		i18nKey = "npc.sebastian.stdmod_1" .. keyword:titleCase() .. " for |TRAVELCOST|?",
 		cost = cost,
 		discount = "postman",
 	})
@@ -91,7 +91,7 @@ local function addTravelKeyword(keyword, cost, destination)
 	})
 	travelKeyword:addChildKeyword({ "no" }, StdModule.say, {
 		npcHandler = npcHandler,
-		text = "We would like to serve you some time.",
+		i18nKey = "npc.sebastian.stdmod_2",
 		reset = true,
 	})
 end
@@ -102,15 +102,15 @@ addTravelKeyword("nargor", 50, Position(32025, 32812, 7))
 -- Basic
 keywordHandler:addKeyword({ "passage" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Where do you want to go? To {Liberty bay} or to {Nargor}?",
+	i18nKey = "npc.sebastian.stdmod_3",
 })
 keywordHandler:addKeyword({ "job" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I am the captain of this ship.",
+	i18nKey = "npc.sebastian.stdmod_4",
 })
 keywordHandler:addKeyword({ "captain" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "I am the captain of this ship.",
+	i18nKey = "npc.sebastian.stdmod_5",
 })
 
 npcHandler:setMessage(MESSAGE_GREET, "Greetings, daring adventurer. If you need a {passage}, let me know.")

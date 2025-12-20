@@ -10,7 +10,7 @@ function citizenSvargrond.onStepIn(creature, item, position, fromPosition)
 		player:teleportTo(Position(32212, 31131, 5))
 	else
 		player:teleportTo(Position(32210, 31134, 7))
-		player:say("You have to be a honorary barbarian to access the roof. Talk to the Jarl about it.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.citizen_svargrond.say_1", TALKTYPE_MONSTER_SAY)
 	end
 
 	player:setDirection(DIRECTION_EAST)

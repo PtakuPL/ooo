@@ -21,7 +21,7 @@ function servantTeleport.onStepIn(creature, item, position, fromPosition)
 		player:teleportTo(Position(32815, 32872, 13))
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		position:sendMagicEffect(CONST_ME_TELEPORT)
-		player:say("Seems that you don't absorb enough energy to use this portal.", TALKTYPE_MONSTER_SAY, false, nil, position)
+		player:sayLocalized("scripts.movements_servant_teleport.say_1", TALKTYPE_MONSTER_SAY, false, nil, position)
 	end
 	return true
 end

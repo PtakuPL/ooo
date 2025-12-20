@@ -56,9 +56,9 @@ keywordHandler:addKeyword({ "human" }, StdModule.say, { npcHandler = npcHandler,
 keywordHandler:addKeyword({ "plants" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.brasith.stdmod_9" })
 keywordHandler:addKeyword({ "tree" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.brasith.stdmod_10" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Ashari, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Asha Thrazi.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Asha Thrazi.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.brasith.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.brasith.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.brasith.walkaway_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {

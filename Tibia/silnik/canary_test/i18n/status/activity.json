@@ -1,11 +1,11 @@
 {
-  "category": "otclient_data",
-  "cycle": 1,
+  "category": "lt",
+  "cycle": 615,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2025-12-16T06:47:58Z",
+  "generated_at_utc": "2025-12-17T10:03:04Z",
   "message": "cycle end",
-  "phase": "MIGRATION",
+  "phase": "AUTO_TRANSLATE",
   "progress": {
     "done": 0,
     "total": 0,
@@ -14,103 +14,103 @@
   "recent": [
     {
       "action": "update",
-      "category": "otclient_data",
-      "cycle": 1,
-      "file": "-",
-      "phase": "MIGRATION",
+      "category": "lt",
+      "cycle": 615,
+      "file": "spells.json",
+      "phase": "AUTO_TRANSLATE",
       "result": "ok",
-      "stage": "cycle_end",
-      "t": "2025-12-16T06:47:58Z"
+      "stage": "auto_done",
+      "t": "2025-12-17T10:03:04Z"
     },
     {
       "action": "update",
-      "category": "otclient_data",
-      "cycle": 1,
-      "file": "-",
-      "phase": "MIGRATION",
+      "category": "lt",
+      "cycle": 615,
+      "file": "spells.json",
+      "phase": "AUTO_TRANSLATE",
       "result": "ok",
-      "stage": "migration_done",
-      "t": "2025-12-16T06:47:58Z"
+      "stage": "auto_start",
+      "t": "2025-12-17T10:03:03Z"
     },
     {
       "action": "update",
-      "category": "otclient_data",
-      "cycle": 1,
-      "file": "-",
-      "phase": "MIGRATION",
+      "category": "lt",
+      "cycle": 614,
+      "file": "server.json",
+      "phase": "AUTO_TRANSLATE",
       "result": "ok",
-      "stage": "mini_batch_end",
-      "t": "2025-12-16T06:47:57Z"
+      "stage": "auto_done",
+      "t": "2025-12-17T10:02:53Z"
     },
     {
       "action": "update",
-      "category": "otclient_data",
-      "cycle": 1,
-      "file": "-",
-      "phase": "MIGRATION",
+      "category": "lt",
+      "cycle": 614,
+      "file": "server.json",
+      "phase": "AUTO_TRANSLATE",
       "result": "ok",
-      "stage": "mini_batch_done",
-      "t": "2025-12-16T06:47:57Z"
+      "stage": "auto_start",
+      "t": "2025-12-17T10:02:53Z"
     },
     {
       "action": "update",
-      "category": "otclient_data",
-      "cycle": 1,
-      "file": "-",
-      "phase": "MIGRATION",
+      "category": "lt",
+      "cycle": 613,
+      "file": "scripts.json",
+      "phase": "AUTO_TRANSLATE",
       "result": "ok",
-      "stage": "mini_batch",
-      "t": "2025-12-16T06:47:57Z"
+      "stage": "auto_done",
+      "t": "2025-12-17T10:02:42Z"
     },
     {
       "action": "update",
-      "category": "otclient_data",
-      "cycle": 1,
-      "file": "-",
-      "phase": "MIGRATION",
+      "category": "lt",
+      "cycle": 613,
+      "file": "scripts.json",
+      "phase": "AUTO_TRANSLATE",
       "result": "ok",
-      "stage": "mini_batch_done",
-      "t": "2025-12-16T06:47:54Z"
+      "stage": "auto_start",
+      "t": "2025-12-17T10:02:42Z"
     },
     {
       "action": "update",
-      "category": "otclient_data",
-      "cycle": 1,
-      "file": "-",
-      "phase": "MIGRATION",
+      "category": "lt",
+      "cycle": 612,
+      "file": "raids.json",
+      "phase": "AUTO_TRANSLATE",
       "result": "ok",
-      "stage": "mini_batch",
-      "t": "2025-12-16T06:47:52Z"
+      "stage": "auto_done",
+      "t": "2025-12-17T10:02:32Z"
     },
     {
       "action": "update",
-      "category": "otclient_data",
-      "cycle": 1,
-      "file": "-",
-      "phase": "MIGRATION",
+      "category": "lt",
+      "cycle": 612,
+      "file": "raids.json",
+      "phase": "AUTO_TRANSLATE",
       "result": "ok",
-      "stage": "mini_batch_start",
-      "t": "2025-12-16T06:47:52Z"
+      "stage": "auto_start",
+      "t": "2025-12-17T10:02:31Z"
     },
     {
       "action": "update",
-      "category": "otclient_data",
-      "cycle": 1,
-      "file": "-",
-      "phase": "MIGRATION",
+      "category": "lt",
+      "cycle": 611,
+      "file": "quests.json",
+      "phase": "AUTO_TRANSLATE",
       "result": "ok",
-      "stage": "migration_start",
-      "t": "2025-12-16T06:47:51Z"
+      "stage": "auto_done",
+      "t": "2025-12-17T10:02:21Z"
     },
     {
       "action": "update",
-      "category": "otclient_data",
-      "cycle": 1,
-      "file": "-",
-      "phase": "MIGRATION",
+      "category": "lt",
+      "cycle": 611,
+      "file": "quests.json",
+      "phase": "AUTO_TRANSLATE",
       "result": "ok",
-      "stage": "dispatch",
-      "t": "2025-12-16T06:47:51Z"
+      "stage": "auto_start",
+      "t": "2025-12-17T10:02:21Z"
     }
   ],
   "stage": "cycle_end",

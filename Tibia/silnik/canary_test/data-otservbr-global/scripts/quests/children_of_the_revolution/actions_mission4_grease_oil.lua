@@ -9,7 +9,7 @@ function childrenGrease.onUse(player, item, fromPosition, target, toPosition, is
 		player:setStorageValue(Storage.Quest.U8_54.ChildrenOfTheRevolution.Questline, 14)
 		player:setStorageValue(Storage.Quest.U8_54.ChildrenOfTheRevolution.Mission04, 4) --Questlog, Children of the Revolution "Mission 4: Zze Way of Zztonezz"
 		item:remove()
-		player:say("Due to being extra greasy, the leavers can now be moved.", TALKTYPE_MONSTER_SAY)
+		player:sayLocalized("scripts.actions_mission4_grease_oil.say_1", TALKTYPE_MONSTER_SAY)
 	end
 	return true
 end

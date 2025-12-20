@@ -50,11 +50,11 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-keywordHandler:addKeyword({ "brotherhood of bones" }, StdModule.say, { npcHandler = npcHandler, text = "... what?! Uh - no, no. Of course I wouldn't have anything to do with... them." })
+keywordHandler:addKeyword({ "brotherhood of bones" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lailene.stdmod_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "What do you want in my magical robe store? I doubt I have anything that's of interest to you.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "See ya, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "See ya, |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.lailene.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.lailene.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.lailene.walkaway_msg_1")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Here.")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
@@ -74,7 +74,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
+	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

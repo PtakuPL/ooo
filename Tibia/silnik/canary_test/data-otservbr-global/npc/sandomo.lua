@@ -131,7 +131,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "record") then
 		local v = player:getStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Gold_Record)
 		if v > 0 then
-			npcHandler:say("You have " .. v .. " inquisition gold registered in my book.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.say_1", { v })
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.say_4")
 		end
@@ -139,7 +139,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		local v = player:getStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Gold_Record)
 		if v >= 100 then
 			npcHandler:setTopic(playerId, 6)
-			npcHandler:say("Ah yes, you currently have " .. v .. " of righteously earned inquisition gold in my book. 100 inquisition gold equals one cluster. How many clusters do you want in exchange?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.say_2", { v })
 		else
 			npcHandler:setTopic(playerId, nil)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.say_6")
@@ -152,13 +152,13 @@ local function creatureSayCallback(npc, creature, type, message)
 
 		local max = math.floor(player:getStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Gold_Record) / 100)
 		if v > max then
-			return npcHandler:say("You do not have enough inquisition gold for that, so far you can ask for up to " .. max .. " clusters.", npc, creature)
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.say_3", { max })
 		end
 
 		player:addItem(20062, v)
 		npcHandler:setTopic(playerId, nil)
 		player:setStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Gold_Record, player:getStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Gold_Record) - (v * 100))
-		npcHandler:say("There you are. Now I register " .. player:getStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Gold_Record) .. " inquisition gold of yours in my book.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sandomo.say_4", { player:getStorageValue(Storage.Quest.U10_30.RoshamuulQuest.Roshamuul_Gold_Record) })
 	end
 
 	if MsgContains(message, "bucket") or MsgContains(message, "supplies") then
@@ -169,8 +169,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Hm. Greetings.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Praise the gods, I bid you farewell.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.sandomo.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.sandomo.farewell_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, false)
 

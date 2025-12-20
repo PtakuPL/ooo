@@ -273,7 +273,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.multi_2")
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.multi_3")
 			else
-				npcHandler:say("You have passed the test with " .. player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) .. " of 112 possible points. Congratulations. You are ready to proceed with the more physical parts of your examination! Go and talk to Gnomespector about it.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomerik.say_1", { player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Test) })
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine, 6)
 			end
 		end
@@ -287,7 +287,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello and welcome in the gnomish {recruitment} office.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.gnomerik.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

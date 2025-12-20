@@ -1,12 +1,10 @@
 # NPC: faloriel
 
 **Plik:** `data-otservbr-global/npc/faloriel.lua`
-**Data migracji:** 2025-12-11 16:25
-**Liczba tekstów:** 2
+**Data migracji:** 2025-12-17 00:57
+**Liczba tekstów:** 0
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-| `npc.faloriel.stdmod_1` | Health potions! Mana potions! Buy them here! |
-| `npc.faloriel.stdmod_2` | All kinds of potions available here! |

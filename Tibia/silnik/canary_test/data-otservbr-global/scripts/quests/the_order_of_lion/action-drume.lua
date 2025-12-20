@@ -29,7 +29,7 @@ local function clearRoomDrume(centerPosition, rangeX, rangeY, resetGlobalStorage
 		end
 		if spectator:isPlayer() then
 			spectator:teleportTo(config.exitPosition)
-			spectator:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your time is over.")
+			spectator:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.action_drume.msg_1")
 		end
 	end
 	if Game.getStorageValue(resetGlobalStorage) == 1 then

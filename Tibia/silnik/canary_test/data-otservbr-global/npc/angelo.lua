@@ -55,13 +55,13 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 
 	if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Life.Mission) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "The Druid of Crunor? He told you that a new cave appeared here? That's right. I'm the head of a {project} that tries to find out more about this new {area}.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.angelo.greet_msg_1")
 	elseif player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Life.Mission) == 9 then
-		npcHandler:setMessage(MESSAGE_GREET, "Just get out of my way! You killed this beautiful creature. I have nothing more to say. Damn druid of Crunor!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.angelo.greet_msg_2")
 	elseif player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Life.Mission) > 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "How is your {mission} going?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.angelo.greet_msg_3")
 	elseif player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Life.Mission) < 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "The Druid of Crunor? He told you that a new cave appeared here? That's right. I'm the head of a project that tries to find out more about this new area.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.angelo.greet_msg_4")
 	end
 
 	return true
@@ -150,7 +150,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Well, bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.angelo.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_SET_INTERACTION, onAddFocus)
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)

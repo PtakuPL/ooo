@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Hey mate, up for a game of dice?" },
+	{ i18nKey = "npc.zebron.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -131,9 +131,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, high roller. So you care for a game, |PLAYERNAME|?")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Hey, you can't leave. Luck is smiling on you. I can feel it!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Hey, you can't leave, |PLAYERNAME|. Luck is smiling on you. I can feel it!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.zebron.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.zebron.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.zebron.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

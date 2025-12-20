@@ -91,14 +91,14 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-keywordHandler:addKeyword({ "information" }, StdModule.say, { npcHandler = npcHandler, text = "Currently, I can tell you all about the town, its temple, the bank, shops, spell trainers and the depot, as well as about the world status." })
-keywordHandler:addKeyword({ "temple" }, StdModule.say, { npcHandler = npcHandler, text = "The temple is in the north-eastern part of town, left of the depot. The priest there has a little alcohol problem, though. It's sad." })
-keywordHandler:addKeyword({ "bank" }, StdModule.say, { npcHandler = npcHandler, text = "Our bank can be found one floor above the depot. Just talk to Ferks." })
-keywordHandler:addKeyword({ "shops" }, StdModule.say, { npcHandler = npcHandler, text = "The shops here are very close to one another. I can mark them for you if you'd like." })
-keywordHandler:addKeyword({ "depot" }, StdModule.say, { npcHandler = npcHandler, text = "The depot is a place where you can safely store your belongings. You are also protected against attacks there. I escort newcomers there." })
-keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, text = "I'll help you not to get lost in Port Hope. I can mark important locations on your map and give you some information about the town and the world status." })
-keywordHandler:addKeyword({ "town" }, StdModule.say, { npcHandler = npcHandler, text = "The inhabitants of Port Hope are bravely facing the constant threat from the jungle. The town is built on pile dwellings and most shops are close to each other." })
-keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, text = "I'm Tiko and your guide today. Have a good day!" })
+keywordHandler:addKeyword({ "information" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_tiko.stdmod_1" })
+keywordHandler:addKeyword({ "temple" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_tiko.stdmod_2" })
+keywordHandler:addKeyword({ "bank" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_tiko.stdmod_3" })
+keywordHandler:addKeyword({ "shops" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_tiko.stdmod_4" })
+keywordHandler:addKeyword({ "depot" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_tiko.stdmod_5" })
+keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_tiko.stdmod_6" })
+keywordHandler:addKeyword({ "town" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_tiko.stdmod_7" })
+keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_tiko.stdmod_8" })
 
 npcHandler:setMessage(MESSAGE_GREET, "Hello there, and welcome to Port Hope! Would you like some information and a map guide?")
 npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")

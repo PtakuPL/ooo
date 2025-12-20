@@ -20,7 +20,7 @@ function gnomesOrdnanceEnd.onStepIn(creature, position, fromPosition, toPosition
 									if c:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Ordnance) == 2 then
 										if c:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.GnomesCount) < 5 then
 											c:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.GnomesCount, c:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.GnomesCount) + 1)
-											c:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your escort has end.")
+											c:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.movements_gnomes_ordnance_end.msg_2")
 										end
 									end
 								end
@@ -44,7 +44,7 @@ function gnomesOrdnanceEnd.onStepIn(creature, position, fromPosition, toPosition
 									if c:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Ordnance) == 2 then
 										if c:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.CrawlersCount) < 3 then
 											c:setStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.CrawlersCount, c:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.CrawlersCount) + 1)
-											c:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your escort has end.")
+											c:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "quests.movements_gnomes_ordnance_end.msg_1")
 										end
 									end
 								end

@@ -21,10 +21,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "<sigh> lost... word..." },
-	{ text = "<sigh> ohhhh.... memories..." },
-	{ text = "The secrets... too many... sleep..." },
-	{ text = "Loneliness..." },
+	{ i18nKey = "npc.zarifan.voice_1" },
+	{ i18nKey = "npc.zarifan.voice_2" },
+	{ i18nKey = "npc.zarifan.voice_3" },
+	{ i18nKey = "npc.zarifan.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -84,7 +84,7 @@ end
 
 keywordHandler:addKeyword({ "mission" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.zarifan.stdmod_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "... ... hello...magic... words?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.zarifan.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

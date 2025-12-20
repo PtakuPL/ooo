@@ -24,7 +24,7 @@ function sir_baeloc_health.onHealthChange(creature, attacker, primaryDamage, pri
 
 	if creature:getStorageValue(2) < 1 and creature:getStorageValue(1) >= health then
 		creature:setStorageValue(2, 1)
-		creature:say("Join me in battle my brother. Let's share the fun!")
+		creature:sayLocalized("scripts.creaturescripts_sir_baeloc_health.say_1")
 		local nictros = Creature("Sir Nictros")
 		if nictros then
 			nictros:teleportTo(Position(33426, 31438, 13))

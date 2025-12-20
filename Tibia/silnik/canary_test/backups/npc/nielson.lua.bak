@@ -60,7 +60,7 @@ end
 local function addTravelKeyword(keyword, cost, destination)
 	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, {
 		npcHandler = npcHandler,
-		text = "Do you want a round-trip passage to " .. keyword:titleCase() .. " for |TRAVELCOST|?",
+		i18nKey = "npc.nielson.stdmod_1" .. keyword:titleCase() .. " for |TRAVELCOST|?",
 		cost = cost,
 		discount = "postman",
 	})
@@ -74,7 +74,7 @@ local function addTravelKeyword(keyword, cost, destination)
 	})
 	travelKeyword:addChildKeyword({ "no" }, StdModule.say, {
 		npcHandler = npcHandler,
-		text = "You shouldn't miss the experience.",
+		i18nKey = "npc.nielson.stdmod_2",
 		reset = true,
 	})
 end
@@ -86,15 +86,15 @@ addTravelKeyword("folda", 20, { x = 32046, y = 31578, z = 7 })
 -- Basic
 keywordHandler:addKeyword({ "passage" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Where do you want to go today? We serve the routes to {Folda}, {Senja} and {Vega} and back to Tibia.",
+	i18nKey = "npc.nielson.stdmod_3",
 })
 keywordHandler:addKeyword({ "job" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "We are ferrymen. We transport goods and passengers to the Ice Islands.",
+	i18nKey = "npc.nielson.stdmod_4",
 })
 keywordHandler:addKeyword({ "captain" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "We are ferrymen. We transport goods and passengers to the Ice Islands.",
+	i18nKey = "npc.nielson.stdmod_5",
 })
 
 npcHandler:setMessage(MESSAGE_GREET, "Ahoi, young man |PLAYERNAME| and welcome to the Nordic Tibia Ferries. If you need a {passage}, let me know.")

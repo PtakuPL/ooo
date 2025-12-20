@@ -44,7 +44,7 @@ function pythiusBossTeleport.onStepIn(creature, item, position, fromPosition)
 
 		local monster = Game.createMonster("pythius the rotten", Position(32571, 31406, 15))
 		if monster then
-			monster:say("WHO IS SNEAKING AROUND BEHIND MY TREASURE?", TALKTYPE_MONSTER_YELL, false, player)
+			monster:sayLocalized("scripts.moviments_pythius_boss_teleport.say_1", TALKTYPE_MONSTER_YELL, false, player)
 		end
 	else
 		local spectators, spectator = Game.getSpectators(Position(32566, 31406, 15), false, false, 7, 7)

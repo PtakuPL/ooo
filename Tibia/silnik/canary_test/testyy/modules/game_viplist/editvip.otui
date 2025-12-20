@@ -1,5 +1,5 @@
 VipGroupBox < CheckBox
-  !text: tr('Empty')
+  !text: tr("otclient_modules.editvip_otui.tr_10")
   color: #f4ecec
   text-offset: 15 -1
   $hover !disabled:
@@ -34,11 +34,11 @@ IconButton < CheckBox
 
 MainWindow
   size: 272 170
-  !text: tr('Edit VIP')
+  !text: tr("otclient_modules.editvip_otui.tr_9")
 
   Label
     id: nameLabel
-    !text: tr('Name')
+    !text: tr("otclient_modules.editvip_otui.tr_8")
     anchors.top: parent.top
     anchors.left: parent.left
     color: green
@@ -49,7 +49,7 @@ MainWindow
     anchors.bottom: prev.bottom
     margin-bottom: -5
   Label
-    !text: tr('Description') .. ':'
+    !text: tr("otclient_modules.editvip_otui.tr_7") .. ':'
     anchors.top: prev.bottom
     anchors.left: parent.left
     text-offset: 0 3
@@ -72,7 +72,7 @@ MainWindow
         self:setHeight(0)
       end
   Label
-    !text: tr('Notify-Login') .. ':'
+    !text: tr("otclient_modules.editvip_otui.tr_6") .. ':'
     anchors.top: prev.bottom
     anchors.left: parent.left
     text-offset: 0 3
@@ -145,7 +145,7 @@ MainWindow
       icon-clip: 120 0 12 12
   
   Label
-    !text: tr('Enter a short description:')
+    !text: tr("otclient_modules.editvip_otui.tr_5")
     anchors.top: prev.bottom
     anchors.left: parent.left
     margin-left: -1
@@ -182,7 +182,7 @@ MainWindow
       end
     OptionCheckBox
       id: checkBoxNotify
-      !text: tr('Notify on login')
+      !text: tr("otclient_modules.editvip_otui.tr_4")
       anchors.left: parent.left
       anchors.right: parent.right
       anchors.verticalCenter: parent.verticalCenter
@@ -199,7 +199,7 @@ MainWindow
         self:hide()
       end
   Label
-    !text: tr('Member of the following groups:')
+    !text: tr("otclient_modules.editvip_otui.tr_3")
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
@@ -238,7 +238,7 @@ MainWindow
 
   Button
     id: buttonOK
-    !text: tr('Ok')
+    !text: tr("otclient_modules.editvip_otui.tr_2")
     width: 64
     anchors.right: next.left
     anchors.bottom: parent.bottom
@@ -246,7 +246,7 @@ MainWindow
 
   Button
     id: buttonCancel
-    !text: tr('Cancel')
+    !text: tr("otclient_modules.editvip_otui.tr_1")
     width: 64
     anchors.right: parent.right
     anchors.bottom: parent.bottom

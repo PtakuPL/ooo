@@ -58,7 +58,7 @@ local function greetCallback(npc, creature)
 		npcHandler:say("Arrrrgh! A dirty paleskin! To me my children! Kill them my guards!", npc, creature, 1000, TALKTYPE_SAY)
 		return false
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Harrrrk! You think you are strong now? You shall never escape my wrath! I am immortal!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.the_orc_king.greet_msg_1")
 	end
 	return true
 end

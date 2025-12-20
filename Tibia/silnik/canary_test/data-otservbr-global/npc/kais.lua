@@ -47,7 +47,7 @@ end
 
 -- Blood of the Mountain
 local blessKeyword = keywordHandler:addKeyword({ "enhanced" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.kais.stdmod_1" })
-blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, text = "So receive the blood of the mountain, master.", cost = "|BLESSCOST|", bless = 8 })
+blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, i18nKey = "npc.kais.keyword_1", cost = "|BLESSCOST|", bless = 8 })
 blessKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.kais.stdmod_2", reset = true })
 
 -- Healing
@@ -85,7 +85,7 @@ keywordHandler:addAliasKeyword({ "job" })
 
 keywordHandler:addKeyword({ "blessing" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Besides the {enhanced} blessing available from me, I know of one other, granted by a solitary {nomad} far west of Svargrond. There are also five different other blessings available, each in a sacred place. ...\nThese blessings are: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}.",
+	i18nKey = "npc.kais.stdmod_1",
 })
 
 keywordHandler:addKeyword({ "spiritual" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.kais.stdmod_7" })
@@ -101,9 +101,9 @@ keywordHandler:addAliasKeyword({ "tibia" })
 
 keywordHandler:addKeyword({ "nomad" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.kais.stdmod_12" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hmm... surely you are in need of {help} - will you let me? I am {Kais} the Bound and I can lend you a hand in {healing} your body and soul or even grant an {enhanced} blessing!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Fare you well... |PLAYERNAME|")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Fare you well... |PLAYERNAME|")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.kais.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.kais.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.kais.farewell_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

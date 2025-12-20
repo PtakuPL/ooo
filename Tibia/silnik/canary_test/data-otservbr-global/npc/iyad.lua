@@ -26,8 +26,8 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "A... aargh. I wish I had some e... earmuffs to put over this useless t... turban." },
-	{ text = "Oh p.. please. P... lease let me fly us out of this c... cold." },
+	{ i18nKey = "npc.iyad.voice_1" },
+	{ i18nKey = "npc.iyad.voice_2" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -65,7 +65,7 @@ local function addTravelKeyword(keyword, text, cost, destination, condition, act
 	end
 
 	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.iyad.stdmod_2" .. text .. " for |TRAVELCOST|?", cost = cost, discount = "postman" })
-	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, text = "Hold on!", cost = cost, discount = "postman", destination = destination })
+	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, i18nKey = "npc.iyad.keyword_1", cost = cost, discount = "postman", destination = destination })
 	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.iyad.stdmod_3", reset = true })
 end
 
@@ -104,9 +104,9 @@ keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addKeyword({ "trade" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.iyad.stdmod_19" })
 keywordHandler:addKeyword({ "earmuffs" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.iyad.stdmod_20" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Finally! A c...c...customer! Wh... where do you want to f...f...{fly}?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "D...Daraman's blessings... oh, how I m...miss my warm Darashia...")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.iyad.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.iyad.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.iyad.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

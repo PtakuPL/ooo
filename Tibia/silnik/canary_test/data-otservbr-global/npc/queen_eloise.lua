@@ -167,7 +167,7 @@ end
 
 -- Promotion
 local node1 = keywordHandler:addKeyword({ "promot" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, i18nKey = "npc.queen_eloise.stdmod_1" })
-node1:addChildKeyword({ "yes" }, StdModule.promotePlayer, { npcHandler = npcHandler, cost = 20000, level = 20, text = "Congratulations! You are now promoted." })
+node1:addChildKeyword({ "yes" }, StdModule.promotePlayer, { npcHandler = npcHandler, cost = 20000, level = 20, i18nKey = "npc.queen_eloise.promote_success" })
 node1:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, i18nKey = "npc.queen_eloise.stdmod_2", reset = true })
 -- Postman
 keywordHandler:addKeyword({ "uniforms" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.queen_eloise.stdmod_3" }, function(player)
@@ -244,7 +244,7 @@ keywordHandler:addKeyword({ "reward" }, StdModule.say, { npcHandler = npcHandler
 keywordHandler:addKeyword({ "tbi" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.queen_eloise.stdmod_48" })
 keywordHandler:addKeyword({ "eremo" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.queen_eloise.stdmod_49" })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Farewell, |PLAYERNAME|!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.queen_eloise.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)

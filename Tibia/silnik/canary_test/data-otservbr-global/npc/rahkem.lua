@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Please, not so loud, not so loud. Some of us are trying to rest in peace here." },
+	{ i18nKey = "npc.rahkem.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -66,7 +66,7 @@ local blessKeyword = keywordHandler:addKeyword({ "twist of fate" }, StdModule.sa
 		"Would you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
 	},
 })
-blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, text = "So receive the protection of the twist of fate, pilgrim.", cost = "|PVPBLESSCOST|", bless = 6 })
+blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, i18nKey = "npc.rahkem.keyword_1", cost = "|PVPBLESSCOST|", bless = 6 })
 blessKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.rahkem.stdmod_1", reset = true })
 
 -- Adventurer Stone

@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "What a beautiful day for a little boat trip." },
+	{ i18nKey = "npc.tonar.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -63,13 +63,13 @@ local function addTravelKeyword(keyword, text, cost, destination, action, condit
 	end
 
 	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = text, cost = cost, discount = "postman" })
-	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, text = "Alright, off we go!", cost = cost, discount = "postman", destination = destination }, nil, action)
+	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, i18nKey = "npc.tonar.keyword_1", cost = cost, discount = "postman", destination = destination }, nil, action)
 	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tonar.stdmod_2", reset = true })
 end
 
 addTravelKeyword("passage", "A passage to Oskayaat? Shall we cast off?", 0, Position(33070, 32916, 7))
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome, Sir.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.tonar.greet_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

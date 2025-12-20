@@ -124,14 +124,14 @@ end, function(player)
 	return player:removeItem(3097, 1)
 end)
 -- Kick
-keywordHandler:addKeyword({ "kick" }, StdModule.kick, { npcHandler = npcHandler, text = "Get out o' here!*HICKS*", destination = { Position(32255, 31193, 7), Position(32256, 31193, 7), Position(32257, 31193, 7) } })
+keywordHandler:addKeyword({ "kick" }, StdModule.kick, { npcHandler = npcHandler, i18nKey = "npc.buddel.keyword_1", destination = { Position(32255, 31193, 7), Position(32256, 31193, 7), Position(32257, 31193, 7) } })
 
 keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.buddel.stdmod_6" })
 keywordHandler:addAliasKeyword({ "trip" })
 keywordHandler:addAliasKeyword({ "go" })
 keywordHandler:addAliasKeyword({ "sail" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hey big guys. You? {Here}? *HICKS*")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.buddel.greet_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

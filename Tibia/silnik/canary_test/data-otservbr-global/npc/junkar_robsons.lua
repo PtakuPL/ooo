@@ -21,8 +21,8 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "So much to do. So many things to be fixed." },
-	{ text = "Still so much work." },
+	{ i18nKey = "npc.junkar_robsons.voice_1" },
+	{ i18nKey = "npc.junkar_robsons.voice_2" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -55,7 +55,7 @@ end
 -- Travel
 local function addTravelKeyword(keyword, cost, destination)
 	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = (text or "So you wish for a trip to ") .. keyword:titleCase() .. "? |TRAVELCOST|?", cost = cost, discount = "postman" })
-	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, text = "Full speed ahead!", cost = cost, discount = "postman", destination = destination })
+	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, i18nKey = "npc.junkar_robsons.keyword_1", cost = cost, discount = "postman", destination = destination })
 	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.junkar_robsons.stdmod_1", reset = true })
 end
 
@@ -65,9 +65,9 @@ addTravelKeyword("mines", 70, Position(32555, 32069, 10))
 
 keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.junkar_robsons.stdmod_2" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome, |PLAYERNAME|! You are lucky that the service is running right now. Save your coal for the days to come though!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "See you next time!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "<Sigh> No patience!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.junkar_robsons.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.junkar_robsons.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.junkar_robsons.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

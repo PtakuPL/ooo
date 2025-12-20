@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Feel the wind in your hair during one of my carpet rides!" },
+	{ i18nKey = "npc.pino.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -64,7 +64,7 @@ local function addTravelKeyword(keyword, text, cost, destination, condition, act
 	end
 
 	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.pino.stdmod_2" .. text .. " for |TRAVELCOST|?", cost = cost, discount = "postman" })
-	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, text = "Hold on!", cost = cost, discount = "postman", destination = destination })
+	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, i18nKey = "npc.pino.keyword_1", cost = cost, discount = "postman", destination = destination })
 	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.pino.stdmod_3", reset = true })
 end
 
@@ -84,10 +84,10 @@ addTravelKeyword("svargrond", "Svargrond", 60, Position(32253, 31097, 4))
 addTravelKeyword("issavi", "Issavi", 100, Position(33957, 31515, 0))
 addTravelKeyword("marapur", "Marapur", 70, Position(33805, 32767, 2))
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, traveller |PLAYERNAME|. Where do you want me to {fly} you?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.pino.greet_msg_1")
 keywordHandler:addKeyword({ "fly" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.pino.stdmod_4" })
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.pino.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.pino.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

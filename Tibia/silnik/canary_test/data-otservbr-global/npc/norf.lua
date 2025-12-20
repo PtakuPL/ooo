@@ -47,7 +47,7 @@ end
 
 -- Spiritual Shielding
 local blessKeyword = keywordHandler:addKeyword({ "spiritual" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.norf.stdmod_1" })
-blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, text = "So receive the shielding of your spirit, pilgrim.", cost = "|BLESSCOST|", bless = 5 })
+blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, i18nKey = "npc.norf.keyword_1", cost = "|BLESSCOST|", bless = 5 })
 blessKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.norf.stdmod_2", reset = true })
 keywordHandler:addAliasKeyword({ "shield" })
 
@@ -102,7 +102,7 @@ keywordHandler:addAliasKeyword({ "spark" })
 keywordHandler:addKeyword({ "solitude" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.norf.stdmod_14" })
 keywordHandler:addAliasKeyword({ "wisdom" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome, pilgrim. How may I {help} you? Are you in need of {healing}?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.norf.greet_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

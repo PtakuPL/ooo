@@ -52,7 +52,7 @@ end
 
 -- Spark of the Phoenix
 local blessKeyword = keywordHandler:addKeyword({ "spark of the phoenix" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.pydar.stdmod_1" })
-blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, text = "So receive the spark of the phoenix, pilgrim.", cost = "|BLESSCOST|", bless = 3 })
+blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, i18nKey = "npc.pydar.keyword_1", cost = "|BLESSCOST|", bless = 3 })
 blessKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.pydar.stdmod_2", reset = true })
 keywordHandler:addAliasKeyword({ "spark" })
 keywordHandler:addAliasKeyword({ "phoenix" })
@@ -93,9 +93,9 @@ keywordHandler:addKeyword({ "pilgrimage" }, StdModule.say, { npcHandler = npcHan
 keywordHandler:addKeyword({ "blessing" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.pydar.stdmod_32" })
 keywordHandler:addKeyword({ "pyromancer" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.pydar.stdmod_33" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Be greeted |PLAYERNAME|! I can smell the scent of a phoenix on you!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "May the fire in your heart never die, |PLAYERNAME|!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "May the fire in your heart never die.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.pydar.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.pydar.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.pydar.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -26,9 +26,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Buying fresh corpses of rats, rabbits and wolves." },
-	{ text = "Oh yeah, I'm also interested in wolf paws and bear paws." },
-	{ text = "Also buying minotaur leather." },
+	{ i18nKey = "npc.tom.voice_1" },
+	{ i18nKey = "npc.tom.voice_2" },
+	{ i18nKey = "npc.tom.voice_3" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -63,15 +63,15 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 	-- Starting mission 6
 	if player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Hey there, |PLAYERNAME|. Did Vascalir send you to me for a {mission}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.tom.greet_msg_1")
 		-- Not finished mission 6
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) > 1 and player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) < 6 then
-		npcHandler:setMessage(MESSAGE_GREET, "Now, now - we can't work with that. Go back to that wolf den and fulfil your mission! Unless there is anything else I can help you with.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.tom.greet_msg_2")
 		-- Finishing mission 6
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) == 6 then
-		npcHandler:setMessage(MESSAGE_GREET, "Hey there, |PLAYERNAME|. You look... exhausted. Did you run a lot? And more importantly, were you able to find some war wolf leather?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.tom.greet_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Hey there, |PLAYERNAME|. I'm Tom the tanner. If you have fresh {corpses}, leather, paws or other animal body parts, {trade} with me.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.tom.greet_msg_3")
 	end
 	return true
 end
@@ -81,9 +81,9 @@ local function farewellCallback(creature)
 	local playerId = player:getId()
 
 	if player:getSex() == PLAYERSEX_FEMALE then
-		npcHandler:setMessage(MESSAGE_FAREWELL, "Good hunting, child.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.tom.farewell_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_FAREWELL, "Good hunting, son.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.tom.farewell_msg_2")
 	end
 	return true
 end
@@ -108,7 +108,7 @@ keywordHandler:addAliasKeyword({ "mission" })
 -- Mission 6: Decline start
 keywordHandler:addKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Alright. Can I help you with something else then?",
+	i18nKey = "npc.tom.stdmod_1",
 }, function(player)
 	return player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) == 1
 end)
@@ -119,7 +119,7 @@ mission6:addChildKeyword(
 	StdModule.say,
 	{
 		npcHandler = npcHandler,
-		text = "That's what I thought. I marked the wolf den on your map. To go there, exit the village to the north and walk north-east. Good luck finding that poacher and figuring out a plan to take those skins! Hehe.",
+		i18nKey = "npc.tom.stdmod_2",
 		ungreet = true,
 	},
 	nil,
@@ -132,7 +132,7 @@ mission6:addChildKeyword(
 -- Mission 6: Decline
 mission6:addChildKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Well, then walk Rookgaard barefoot. It's up to you!",
+	i18nKey = "npc.tom.stdmod_3",
 	reset = true,
 })
 
@@ -157,7 +157,7 @@ end)
 -- Mission 6: Finish - Decline (Give skin)
 keywordHandler:addKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Are you sure? I think I see some war wolf leather on you. You should reply with {yes}.",
+	i18nKey = "npc.tom.stdmod_4",
 }, function(player)
 	return player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission06) == 6 and player:getItemCount(12740) >= 1
 end)
@@ -201,7 +201,7 @@ keywordHandler:addKeyword({ "al", "dee" }, StdModule.say, { npcHandler = npcHand
 keywordHandler:addKeyword({ "amber" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_21" })
 keywordHandler:addKeyword({ "billy" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_22" })
 keywordHandler:addKeyword({ "willie" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_23" })
-keywordHandler:addKeyword({ "tom" }, StdModule.say, { npcHandler = npcHandler, text = "Yep." })
+keywordHandler:addKeyword({ "tom" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.keyword_1" })
 keywordHandler:addKeyword({ "seymour" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_24" })
 keywordHandler:addKeyword({ "zirella" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_25" })
 keywordHandler:addKeyword({ "santiago" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tom.stdmod_26" })
@@ -261,8 +261,8 @@ end
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_FAREWELL, farewellCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_WALKAWAY, "D'oh?")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Sure, check what I buy.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.tom.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.tom.sendtrade_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -252,7 +252,7 @@ local function confirmRemoveEngage(npc, creature, message, keywords, parameters,
 			npcHandler:say(parameters.text, npc, creature)
 			keywordHandler:moveUp(player, parameters.moveup)
 		end
-		node:addChildKeyword({ "yes" }, removeEngage, { moveup = 3, text = "Ok, your marriage proposal to {" .. getPlayerNameById(playerSpouse) .. "} has been removed. Take your wedding ring back." })
+		node:addChildKeyword({ "yes" }, removeEngage, { moveup = 3, i18nKey = "npc.lynda.keyword_1" .. getPlayerNameById(playerSpouse) .. "} has been removed. Take your wedding ring back." })
 	else
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_18")
 		keywordHandler:moveUp(player, 2)
@@ -278,7 +278,7 @@ local function confirmDivorce(npc, creature, message, keywords, parameters, node
 			npcHandler:say(parameters.text, npc, creature)
 			keywordHandler:moveUp(player, parameters.moveup)
 		end
-		node:addChildKeyword({ "yes" }, divorce, { moveup = 3, text = "Ok, you are now divorced of {" .. getPlayerNameById(playerSpouse) .. "}. Think better next time after marrying someone." })
+		node:addChildKeyword({ "yes" }, divorce, { moveup = 3, i18nKey = "npc.lynda.keyword_2" .. getPlayerNameById(playerSpouse) .. "}. Think better next time after marrying someone." })
 	else
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_20")
 		keywordHandler:moveUp(player, 2)
@@ -300,9 +300,9 @@ keywordHandler:addKeyword({ "remove" }, confirmRemoveEngage, {})
 
 keywordHandler:addKeyword({ "divorce" }, confirmDivorce, {})
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome in the name of the gods, pilgrim |PLAYERNAME|!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Be careful on your journeys.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Be careful on your journeys.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.lynda.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.lynda.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.lynda.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

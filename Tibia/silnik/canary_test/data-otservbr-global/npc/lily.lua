@@ -26,12 +26,12 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Are you injured or poisoned? Get your potions here! All natural, no artificial ingredients!" },
-	{ text = "Hey you, over there! Let's have a little chat, shall we?" },
-	{ text = "Oh, just in case you are looking for the marketplace and dungeons, just follow the path to the east." },
-	{ text = "Anyone got some cookies for me?" },
-	{ text = "Do you need help? Just ask me about anything you'd like to know!" },
-	{ text = "I'm buying all of your blueberries for my famous blueberry juice!" },
+	{ i18nKey = "npc.lily.voice_1" },
+	{ i18nKey = "npc.lily.voice_2" },
+	{ i18nKey = "npc.lily.voice_3" },
+	{ i18nKey = "npc.lily.voice_4" },
+	{ i18nKey = "npc.lily.voice_5" },
+	{ i18nKey = "npc.lily.voice_6" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -66,12 +66,12 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 	-- Continue mission 4
 	if player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission04) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Oh hey, |PLAYERNAME|! Vascalir must have sent you to help me with a little {mission}, right?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.lily.greet_msg_1")
 		-- Not finished mission 4
 	elseif player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission04) == 2 then
-		npcHandler:setMessage(MESSAGE_GREET, "Hello, |PLAYERNAME|! Back so soon? Have you delivered the herbs to Hyacinth?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.lily.greet_msg_2")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome, |PLAYERNAME|! You look a little stressed today. If you like to view my offers of potions, just ask me for a {trade}. In case you're looking for the marketplace and dungeons, just follow the path to the east!")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.lily.greet_msg_3")
 	end
 	return true
 end
@@ -93,7 +93,7 @@ keywordHandler:addAliasKeyword({ "mission" })
 -- Mission 4: Decline
 keywordHandler:addKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Oh. In that case, maybe you're interested in a {trade} - I sell potions and buy a few other things.",
+	i18nKey = "npc.lily.stdmod_1",
 	reset = true,
 }, function(player)
 	return player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission04) == 1
@@ -122,14 +122,14 @@ mission4:addChildKeyword(
 -- Mission 4: Decline
 mission4:addChildKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Oh. Well, if you change your mind, let me know.",
+	i18nKey = "npc.lily.stdmod_2",
 	reset = true,
 })
 
 -- Mission 4: Confirm Delivered (Without)
 keywordHandler:addKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "No, you haven't. If you're looking for the way to Hyacinth, just leave the village to the north and then go east. I've marked it on your map!",
+	i18nKey = "npc.lily.stdmod_3",
 }, function(player)
 	return player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission04) == 2
 end)
@@ -137,7 +137,7 @@ end)
 -- Mission 4: Confirm Not Delivered (Without)
 local mission4LostHerbs = keywordHandler:addKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Is something... wrong? You didn't lose the herbs, did you?",
+	i18nKey = "npc.lily.stdmod_4",
 }, function(player)
 	return player:getStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission04) == 2
 end)
@@ -145,13 +145,13 @@ end)
 -- Mission 4: Confirm Lost Herbs
 local mission4AcceptAnotherHerbs = mission4LostHerbs:addChildKeyword({ "yes" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Well, at least you're honest. I can give you another sack, but only if you promise not to lose them this time. Okay?",
+	i18nKey = "npc.lily.stdmod_5",
 })
 
 -- Mission 4: Decline Lost Herbs
 mission4LostHerbs:addChildKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Phew. That's a relief. Well, don't forget to deliver them to Hyacinth! They have to be fresh to create potions.",
+	i18nKey = "npc.lily.stdmod_6",
 	reset = true,
 })
 
@@ -176,7 +176,7 @@ mission4AcceptAnotherHerbs:addChildKeyword(
 -- Mission 4: Reject Lost Herbs
 mission4AcceptAnotherHerbs:addChildKeyword({ "no" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Oh. Well, if you change your mind, let me know.",
+	i18nKey = "npc.lily.stdmod_7",
 	reset = true,
 })
 
@@ -269,7 +269,7 @@ keywordHandler:addKeyword({ "cipfried" }, StdModule.say, { npcHandler = npcHandl
 keywordHandler:addKeyword({ "dixi" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_54" })
 keywordHandler:addKeyword({ "hyacinth" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_55" })
 keywordHandler:addKeyword({ "lee'delle" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_56" })
-keywordHandler:addKeyword({ "lily" }, StdModule.say, { npcHandler = npcHandler, text = "Yes?" })
+keywordHandler:addKeyword({ "lily" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.keyword_1" })
 keywordHandler:addKeyword({ "oracle" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_57" })
 keywordHandler:addKeyword({ "paulie" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_58" })
 keywordHandler:addKeyword({ "seymour" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_59" })
@@ -280,9 +280,9 @@ keywordHandler:addAliasKeyword({ "zerbrus" })
 keywordHandler:addKeyword({ "billy" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.lily.stdmod_62" })
 keywordHandler:addAliasKeyword({ "willie" })
 
-npcHandler:setMessage(MESSAGE_WALKAWAY, "May Crunor bless you!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Take care, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Of course, just browse through my offers. If you buy a potion, don't forget that there's a {deposit} of 5 gold on the empty flask.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.lily.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.lily.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.lily.sendtrade_msg_1")
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

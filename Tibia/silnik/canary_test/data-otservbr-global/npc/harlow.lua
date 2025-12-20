@@ -64,20 +64,20 @@ local travelNode = keywordHandler:addKeyword({ "vengoth" }, StdModule.say, { npc
 end)
 travelNode:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, reset = true, i18nKey = "npc.harlow.stdmod_2" })
 local travelNodeYes = travelNode:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.harlow.stdmod_3" })
-travelNodeYes:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, text = "Okay. Enjoy.", premium = false, cost = 100, destination = Position(32858, 31549, 7) })
+travelNodeYes:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, i18nKey = "npc.harlow.keyword_1", premium = false, cost = 100, destination = Position(32858, 31549, 7) })
 travelNodeYes:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, reset = true, i18nKey = "npc.harlow.stdmod_4" })
 travelNode = keywordHandler:addKeyword({ "transportation" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.harlow.stdmod_5" }, function(player)
 	return player:getStorageValue(Storage.Quest.U8_4.BloodBrothers.VengothAccess) == 1
 end)
-travelNode:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, text = "Okay. Enjoy.", premium = false, cost = 100, destination = Position(32858, 31549, 7) })
+travelNode:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, i18nKey = "npc.harlow.keyword_2", premium = false, cost = 100, destination = Position(32858, 31549, 7) })
 travelNode:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, reset = true, i18nKey = "npc.harlow.stdmod_6" })
 --Basic
 keywordHandler:addKeyword({ "busy" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.harlow.stdmod_7" })
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.harlow.stdmod_8" })
 
-npcHandler:setMessage(MESSAGE_GREET, "What do you want, |PLAYERNAME|? I'm a {busy} man.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.harlow.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.harlow.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.harlow.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

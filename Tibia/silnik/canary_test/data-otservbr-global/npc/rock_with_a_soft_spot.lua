@@ -55,7 +55,7 @@ local blessKeyword = keywordHandler:addKeyword({ "twist of fate" }, StdModule.sa
 		"Would you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
 	},
 })
-blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, text = "So receive the protection of the twist of fate, pilgrim.", cost = "|PVPBLESSCOST|", bless = 6 })
+blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, i18nKey = "npc.rock_with_a_soft_spot.keyword_1", cost = "|PVPBLESSCOST|", bless = 6 })
 blessKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.rock_with_a_soft_spot.stdmod_1", reset = true })
 
 -- Adventurer Stone
@@ -140,9 +140,9 @@ keywordHandler:addAliasKeyword({ "spark" })
 keywordHandler:addKeyword({ "solitude" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.rock_with_a_soft_spot.stdmod_23" })
 keywordHandler:addAliasKeyword({ "wisdom" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome, this is the {Gray Beach temple}, |PLAYERNAME|. Whether you are wounded, poisoned - or wait, don't tell me - yes, this is probably a case of being more emotionally hurt, I will do my best to {heal} you.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Only the best for you.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Goodbye then, |PLAYERNAME|!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.rock_with_a_soft_spot.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.rock_with_a_soft_spot.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.rock_with_a_soft_spot.farewell_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

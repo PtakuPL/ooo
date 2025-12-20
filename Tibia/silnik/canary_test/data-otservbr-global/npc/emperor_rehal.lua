@@ -122,7 +122,7 @@ end
 keywordHandler:addCustomGreetKeyword({ "hail emperor" }, greetCallback, { npcHandler = npcHandler })
 
 local node1 = keywordHandler:addKeyword({ "promot" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, i18nKey = "npc.emperor_rehal.stdmod_1" })
-node1:addChildKeyword({ "yes" }, StdModule.promotePlayer, { npcHandler = npcHandler, cost = 20000, level = 20, promotion = 1, text = "Congratulations! You are now promoted." })
+node1:addChildKeyword({ "yes" }, StdModule.promotePlayer, { npcHandler = npcHandler, cost = 20000, level = 20, promotion = 1, i18nKey = "npc.emperor_rehal.promote_success" })
 node1:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, i18nKey = "npc.emperor_rehal.stdmod_2", reset = true })
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

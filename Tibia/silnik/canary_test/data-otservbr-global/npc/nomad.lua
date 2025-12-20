@@ -51,7 +51,7 @@ end
 
 -- Heart of the Mountain
 local blessKeyword = keywordHandler:addKeyword({ "enhanced" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.nomad.stdmod_1" })
-blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, text = "Receive the heart of the mountain then.", cost = "|BLESSCOST|", bless = 7 })
+blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, i18nKey = "npc.nomad.keyword_1", cost = "|BLESSCOST|", bless = 7 })
 blessKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.nomad.stdmod_2", reset = true })
 
 -- Healing
@@ -84,7 +84,7 @@ keywordHandler:addAliasKeyword({ "help" })
 -- Basic
 keywordHandler:addKeyword({ "blessing" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = "Besides the {enhanced} blessing available from me, I know of one other, granted by a solitary {nomad} far west of Svargrond. There are also five different other blessings available, each in a sacred place. ...\nThese blessings are: the {spiritual} shielding, the spark of the {phoenix}, the {embrace} of Tibia, the fire of the {suns} and the wisdom of {solitude}.",
+	i18nKey = "npc.nomad.stdmod_1",
 })
 
 keywordHandler:addKeyword({ "pilgrimage" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.nomad.stdmod_5" })
@@ -105,9 +105,9 @@ keywordHandler:addKeyword({ "djinn" }, StdModule.say, { npcHandler = npcHandler,
 keywordHandler:addKeyword({ "nomad" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.nomad.stdmod_12" })
 keywordHandler:addKeyword({ "training" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.nomad.stdmod_13" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Ah, another diciple of the extreme... surviving the icy outdoors? Let me {help}! If you need some first aid out here, I can provide {healing} or grant you an {enhanced} blessing!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Keep a stiff upper lip!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Keep a stiff upper lip!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.nomad.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.nomad.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.nomad.farewell_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

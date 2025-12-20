@@ -222,7 +222,7 @@ keywordHandler:addKeyword({ "baxter" }, StdModule.say, { npcHandler = npcHandler
 keywordHandler:addKeyword({ "bozo" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.elane.stdmod_14" })
 keywordHandler:addKeyword({ "mcronald" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.elane.stdmod_15" })
 keywordHandler:addKeyword({ "eclesius" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.elane.stdmod_16" })
-keywordHandler:addKeyword({ "elane" }, StdModule.say, { npcHandler = npcHandler, text = "Yes?" })
+keywordHandler:addKeyword({ "elane" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.elane.keyword_1" })
 keywordHandler:addKeyword({ "frodo" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.elane.stdmod_17" })
 keywordHandler:addKeyword({ "galuna" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.elane.stdmod_18" })
 keywordHandler:addKeyword({ "gorn" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.elane.stdmod_19" })
@@ -237,9 +237,9 @@ keywordHandler:addKeyword({ "oswald" }, StdModule.say, { npcHandler = npcHandler
 keywordHandler:addKeyword({ "quentin" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.elane.stdmod_28" })
 keywordHandler:addKeyword({ "sam" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.elane.stdmod_29" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to the paladins' guild, |PLAYERNAME|! How can I help you?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Bye, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Bye, |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.elane.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.elane.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.elane.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

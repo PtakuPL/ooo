@@ -19,7 +19,7 @@ function spell.onCastSpell(creature, var)
 		newPlayer:registerEvent("nightmareCurse")
 		newPlayer:setStorageValue("nightmareCurse", 1)
 		newPlayer:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.DreamScar.LastBossCurse, 1)
-		newPlayer:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The beast laid a terrible curse on you!")
+		newPlayer:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.spells.monster.nightmare_beast_curse_1")
 
 		Game.setStorageValue(Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.LastBossCurse, 1)
 	end

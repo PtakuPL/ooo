@@ -81,7 +81,7 @@ function spell.onCastSpell(creature, var)
 	local target = creature:getTarget()
 
 	if target:isPlayer() then
-		target:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You feel a powerfull eletric charge building up!")
+		target:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.spells.monster.maxxenius_energy_elemental_1")
 		doAddCondition(target, looktype)
 	end
 

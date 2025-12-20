@@ -14,7 +14,7 @@ function pushTown.onSay(player, words, param)
 		end
 		player:sendLocalizedMessage(MESSAGE_STATUS, "scripts.push_town.msg_1" .. targetPlayer:getName() .. " to temple.")
 		targetPlayer:teleportTo(targetPlayer:getTown():getTemplePosition())
-		targetPlayer:sendTextMessage(MESSAGE_STATUS, "You have been teleported to your temple.")
+		targetPlayer:sendLocalizedTextMessage(MESSAGE_STATUS, "scripts.talkactions.gm.push_town_1")
 		targetPlayer:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 		local text = "Player " .. targetPlayer:getName() .. " has been teleported to temple by " .. player:getName() .. "."
 		logger.info("[pushTown.onSay] - {}", text)

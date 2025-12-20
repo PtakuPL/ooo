@@ -25,7 +25,7 @@ function spell.onCastSpell(creature, var)
 	if target and target:isPlayer() then
 		if combat:execute(creature, var) then
 			target:addCondition(conditionOutfit)
-			target:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The spider queen caught you in her net and paralysed you!")
+			target:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.spells.monster.spider_queen_wrap_1")
 			target:setStorageValue(Storage.Quest.U9_1.TheRookieGuard.Mission05, 4)
 			addEvent(moveToSpiderNest, 4500, target:getId())
 			return true

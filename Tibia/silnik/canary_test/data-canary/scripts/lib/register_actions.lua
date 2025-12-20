@@ -189,13 +189,13 @@ function onUseShovel(player, item, fromPosition, target, toPosition, isHotkey)
 		if not player:hasExhaustion("swamp-digging") then
 			local chance = math.random(1, 100)
 			if chance <= 42 then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a dead snake.")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.lib.register_actions_1")
 				player:addItem(4259)
 			elseif chance >= 43 and chance <= 79 then
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a small diamond.")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.lib.register_actions_2")
 				player:addItem(3028)
 			else
-				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You dug up a leech.")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "scripts.lib.register_actions_3")
 				player:addItem(17858)
 			end
 
